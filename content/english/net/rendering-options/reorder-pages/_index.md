@@ -1,0 +1,42 @@
+---
+title: Reorder Pages in Document
+linktitle: Reorder Pages in Document
+second_title: GroupDocs.Viewer .NET API
+description: 
+type: docs
+weight: 19
+url: /net/rendering-options/reorder-pages/
+---
+
+## Complete Source Code
+```csharp
+using System;
+using System.IO;
+using GroupDocs.Viewer.Options;
+
+namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Rendering.CommonRenderingOptions
+{
+    /// <summary>
+    /// This example demonstrates how to reorder pages in the output PDF document.
+    /// </summary>
+    class ReorderPages
+    {
+        public static void Run()
+        {                       
+            string outputDirectory = "Your Document Directory";
+            string outputFilePath = Path.Combine(outputDirectory, "output.pdf");
+
+            using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
+            {
+                PdfViewOptions options = new PdfViewOptions(outputFilePath);
+
+                // Pass page numbers in the order you want to render them
+                viewer.View(options, 2, 1);
+            }
+
+            Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
+        }
+    }
+}
+
+```

@@ -1,0 +1,42 @@
+---
+title: Replace Missing Font
+linktitle: Replace Missing Font
+second_title: GroupDocs.Viewer .NET API
+description: 
+type: docs
+weight: 20
+url: /net/rendering-options/replace-missing-font/
+---
+
+## Complete Source Code
+```csharp
+using System;
+using System.IO;
+using GroupDocs.Viewer.Options;
+
+namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Rendering.CommonRenderingOptions
+{
+    /// <summary>
+    /// This example demonstrates how to use pre-defined font instead of missing font.
+    /// </summary>
+    class ReplaceMissingFont
+    {
+        public static void Run()
+        {
+            string outputDirectory = "Your Document Directory";
+            string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
+
+            using (Viewer viewer = new Viewer(TestFiles.MISSING_FONT_PPTX))
+            {
+                HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
+                options.DefaultFontName = "Courier New";
+
+                viewer.View(options);
+            }
+
+            Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
+        }
+    }
+}
+
+```
