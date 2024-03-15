@@ -12,7 +12,7 @@ Groupdocs.Viewer for .NET is a powerful tool that allows developers to seamlessl
 
 In this tutorial, we'll explore how to utilize Groupdocs.Viewer for .NET to render APNG images step by step. By following these instructions, you'll be able to integrate APNG image rendering capabilities into your .NET applications effortlessly.
 
-##Prerequisites:
+## Prerequisites
 
 Before we dive into the tutorial, make sure you have the following prerequisites in place:
 
