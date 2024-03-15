@@ -5,7 +5,7 @@ second_title: GroupDocs.Viewer .NET API
 description: Master rendering MS Project documents with GroupDocs.Viewer for .NET. Render notes, adjust time units, and explore various output formats effortlessly.
 type: docs
 weight: 11
-url: /net/groupdocs-viewer-net-rendering-ms-project-documents/groupdocs-viewer-net-render-notes-and-adjust-time-ms-project/
+url: /net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful document rendering API that allows developers to view and manipulate various document formats within their .NET applications. In this tutorial, we will focus on rendering notes and adjusting time units specifically for MS Project documents.

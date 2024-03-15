@@ -5,7 +5,7 @@ second_title: GroupDocs.Viewer .NET API
 description: Explore the comprehensive tutorial on leveraging Groupdocs.Viewer for .NET to retrieve view information for Microsoft Project documents effortlessly.
 type: docs
 weight: 10
-url: /net/groupdocs-viewer-net-rendering-ms-project-documents/groupdocs-viewer-net-get-view-info-ms-project/
+url: /net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
 ## Introduction
 In the realm of document management and viewing solutions, Groupdocs.Viewer for .NET stands out as a versatile and robust tool. Whether you're a developer seeking to integrate document viewing capabilities into your .NET applications or an enthusiast eager to explore its functionalities, this tutorial will guide you through the process of leveraging Groupdocs.Viewer for .NET to retrieve view information for Microsoft Project documents.
