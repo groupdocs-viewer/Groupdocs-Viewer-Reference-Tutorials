@@ -1,0 +1,106 @@
+---
+title: Hiển thị các trang đã chọn
+linktitle: Hiển thị các trang đã chọn
+second_title: API GroupDocs.Viewer .NET
+description: Tìm hiểu cách hiển thị các trang đã chọn từ tài liệu bằng Groupdocs.Viewer cho .NET. Hướng dẫn từng bước kèm theo các ví dụ về mã.
+type: docs
+weight: 17
+url: /vi/net/rendering-options/render-selected-pages/
+---
+## Giới thiệu
+
+Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sử dụng Groupdocs.Viewer cho .NET để hiển thị các trang đã chọn từ một tài liệu. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ hướng dẫn bạn thực hiện quy trình một cách dễ dàng.
+
+## Điều kiện tiên quyết
+
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+
+### 1. Cài đặt
+
+ Đảm bảo rằng bạn đã cài đặt Groupdocs.Viewer cho .NET trong môi trường phát triển của mình. Nếu không, bạn có thể tải xuống từ[Liên kết tải xuống](https://releases.groupdocs.com/viewer/net/).
+
+## Nhập không gian tên
+
+Trong tệp mã C# của bạn, hãy nhập các vùng tên cần thiết để truy cập các lớp và phương thức được yêu cầu. Bạn có thể thực hiện việc này bằng cách sử dụng`using` chỉ thị:
+
+```csharp
+using System;
+using System.IO;
+using GroupDocs.Viewer.Options;
+```
+
+Bây giờ hãy chia mã ví dụ được cung cấp thành nhiều bước:
+
+## Bước 1: Đặt thư mục đầu ra
+
+ Xác định thư mục nơi bạn muốn lưu các trang được hiển thị. Thay thế`"Your Document Directory"` với đường dẫn thư mục mong muốn.
+
+```csharp
+string outputDirectory = "Your Document Directory";
+```
+
+## Bước 2: Xác định định dạng đường dẫn tệp trang
+
+Chỉ định định dạng cho đường dẫn tệp của các trang được hiển thị. Điều này sẽ được sử dụng để lưu mỗi trang dưới dạng tệp HTML trong thư mục đầu ra.
+
+```csharp
+string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
+```
+
+## Bước 3: Khởi tạo đối tượng người xem
+
+Tạo một phiên bản của lớp Viewer, chuyển đường dẫn của tài liệu bạn muốn hiển thị làm đối số.
+
+```csharp
+using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
+```
+
+## Bước 4: Định cấu hình tùy chọn chế độ xem HTML
+
+Thiết lập các tùy chọn chế độ xem HTML để hiển thị. Trong ví dụ này, chúng tôi đang định cấu hình các tùy chọn để nhúng tài nguyên vào đầu ra HTML.
+
+```csharp
+HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
+```
+
+## Bước 5: Hiển thị các trang đã chọn
+
+Chỉ định số trang bạn muốn hiển thị. Trong trường hợp này, chúng tôi đang hiển thị các trang từ 1 đến 3. Sau đó, gọi phương thức View trên đối tượng Viewer, chuyển các tùy chọn và số trang làm đối số.
+
+```csharp
+viewer.View(options, 1, 3);
+```
+
+## Bước 6: Kết quả đầu ra
+
+Cuối cùng, hiển thị thông báo cho biết việc hiển thị tài liệu thành công và vị trí lưu tệp đầu ra.
+
+```csharp
+Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
+```
+
+## Phần kết luận
+
+Chúc mừng! Bạn đã học thành công cách hiển thị các trang đã chọn từ tài liệu bằng Groupdocs.Viewer cho .NET. Với kiến thức này, giờ đây bạn có thể tích hợp khả năng kết xuất tài liệu vào các ứng dụng .NET của mình một cách dễ dàng.
+
+## Câu hỏi thường gặp
+
+### Hỏi: Tôi có thể kết xuất các trang từ các loại tài liệu khác nhau, chẳng hạn như PDF hoặc hình ảnh không?
+
+Trả lời: Có, Groupdocs.Viewer dành cho .NET hỗ trợ hiển thị các trang từ nhiều định dạng tài liệu khác nhau, bao gồm tệp PDF, tài liệu Microsoft Office và tệp hình ảnh.
+
+### Hỏi: Có phiên bản dùng thử nào để kiểm tra trước khi mua không?
+
+ Đáp: Có, bạn có thể truy cập phiên bản dùng thử miễn phí của Groupdocs.Viewer dành cho .NET từ[trang mạng](https://releases.groupdocs.com/).
+
+### Hỏi: Tôi có thể tùy chỉnh định dạng đầu ra ngoài HTML không?
+
+Đáp: Hoàn toàn có thể, Groupdocs.Viewer dành cho .NET cung cấp các tùy chọn để hiển thị các trang dưới dạng hình ảnh, tệp PDF, v.v., ngoài HTML.
+
+### Hỏi: Làm cách nào tôi có thể xin được giấy phép tạm thời cho mục đích thử nghiệm?
+
+Đáp: Giấy phép tạm thời có thể được lấy từ[trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) trên trang web Groupdocs.
+
+### H: Tôi có thể tìm kiếm sự hỗ trợ hoặc nhận trợ giúp ở đâu cho bất kỳ vấn đề nào tôi gặp phải?
+
+ Đáp: Bạn có thể ghé thăm[Diễn đàn Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) để được hỗ trợ và hướng dẫn từ cộng đồng và nhà phát triển.

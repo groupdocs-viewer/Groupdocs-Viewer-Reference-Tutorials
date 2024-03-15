@@ -1,0 +1,90 @@
+---
+title: XML स्प्रेडशीटएमएल का प्रतिपादन
+linktitle: XML स्प्रेडशीटएमएल का प्रतिपादन
+second_title: GroupDocs.Viewer .NET API
+description: .NET के लिए GroupDocs.Viewer का उपयोग करके विभिन्न प्रारूपों में XML स्प्रेडशीटML फ़ाइलों के निर्बाध प्रतिपादन का अन्वेषण करें। आसानी से अपने अनुप्रयोगों में एकीकृत करें।
+type: docs
+weight: 16
+url: /hi/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
+---
+## परिचय
+.NET के लिए GroupDocs.Viewer की दुनिया में आपका स्वागत है! इस ट्यूटोरियल में, हम GroupDocs.Viewer, एक शक्तिशाली .NET लाइब्रेरी का उपयोग करके आसानी से XML स्प्रेडशीटML फ़ाइलों को प्रस्तुत करने में आपका मार्गदर्शन करेंगे। चाहे आप एक अनुभवी डेवलपर हों या अभी शुरुआत कर रहे हों, यह चरण-दर-चरण मार्गदर्शिका आपके अनुप्रयोगों में XML स्प्रेडशीटएमएल रेंडरिंग को सहजता से एकीकृत करने में आपकी सहायता करेगी।
+## आवश्यक शर्तें
+ट्यूटोरियल में जाने से पहले, सुनिश्चित करें कि आपने निम्नलिखित आवश्यक शर्तें स्थापित कर ली हैं:
+- .NET समर्थन के साथ एक विकास वातावरण।
+-  .NET लाइब्रेरी के लिए GroupDocs.Viewer स्थापित। आप इसे डाउनलोड कर सकते हैं[यहाँ](https://releases.groupdocs.com/viewer/net/).
+- C# प्रोग्रामिंग की बुनियादी समझ।
+## नामस्थान आयात करें
+अपने C# प्रोजेक्ट में आवश्यक नामस्थान आयात करके प्रारंभ करें। यह सुनिश्चित करता है कि आपके पास GroupDocs.Viewer द्वारा प्रदान की गई कार्यक्षमताओं तक पहुंच है।
+```csharp
+using GroupDocs.Viewer.Options;
+using System;
+using System.IO;
+```
+## चरण 1: अपनी दस्तावेज़ निर्देशिका सेट करें
+अपने दस्तावेज़ निर्देशिका का पथ परिभाषित करें जहां आउटपुट सहेजा जाएगा।
+```csharp
+string outputDirectory = "Your Document Directory";
+```
+## चरण 2: आउटपुट फ़ाइल पथ निर्दिष्ट करें
+HTML, JPG, PNG और PDF आउटपुट फ़ाइलों के लिए पूर्ण पथ सेट करें।
+```csharp
+string pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.html");
+```
+## चरण 3: लोड विकल्प निर्दिष्ट करें
+इसे सटीक रूप से प्रस्तुत करने के लिए फ़ाइल प्रकार को Excel 2003 XML स्प्रेडशीटML के रूप में स्पष्ट रूप से निर्दिष्ट करें।
+```csharp
+LoadOptions loadOptions = new LoadOptions(FileType.Excel2003XML);
+```
+## चरण 4: बहु-पृष्ठ HTML पर प्रस्तुत करें
+XML स्प्रेडशीटML फ़ाइल को एक बहु-पृष्ठ HTML दस्तावेज़ में प्रस्तुत करने के लिए HTML दृश्य विकल्पों का उपयोग करें।
+```csharp
+using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOptions))
+{
+    HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFileFullPath);
+    viewer.View(options);
+}
+```
+## चरण 5: JPG में प्रस्तुत करें
+निर्दिष्ट विकल्पों का उपयोग करके XML स्प्रेडशीटML फ़ाइल को JPG छवि में प्रस्तुत करें।
+```csharp
+pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.jpg");
+using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOptions))
+{
+    JpgViewOptions options = new JpgViewOptions(pageFileFullPath);
+    viewer.View(options);
+}
+```
+## चरण 6: पीएनजी को प्रस्तुत करें
+इसी तरह, निर्दिष्ट विकल्पों के साथ फ़ाइल को पीएनजी छवि में प्रस्तुत करें।
+```csharp
+pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.png");
+using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOptions))
+{
+    PngViewOptions options = new PngViewOptions(pageFileFullPath);
+    viewer.View(options);
+}
+```
+## चरण 7: पीडीएफ में प्रस्तुत करें
+अंत में, निर्दिष्ट विकल्पों का उपयोग करके XML स्प्रेडशीटML फ़ाइल को एक पीडीएफ दस्तावेज़ में प्रस्तुत करें।
+```csharp
+pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.pdf");
+using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOptions))
+{
+    PdfViewOptions options = new PdfViewOptions(pageFileFullPath);
+    viewer.View(options);
+}
+```
+## निष्कर्ष
+बधाई हो! आपने .NET के लिए GroupDocs.Viewer का उपयोग करके XML स्प्रेडशीटML फ़ाइलों को प्रस्तुत करना सफलतापूर्वक सीख लिया है। इस बहुमुखी लाइब्रेरी द्वारा प्रदान की गई अधिक सुविधाओं और विकल्पों की खोज करके अपनी दस्तावेज़ देखने की क्षमताओं को बढ़ाएँ।
+## पूछे जाने वाले प्रश्न
+### क्या GroupDocs.Viewer अन्य फ़ाइल स्वरूपों के साथ संगत है?
+हां, GroupDocs.Viewer पीडीएफ, वर्ड, एक्सेल और अन्य सहित दस्तावेज़ प्रारूपों की एक विस्तृत श्रृंखला का समर्थन करता है।
+### क्या मैं प्रस्तुत दस्तावेज़ों के स्वरूप को अनुकूलित कर सकता हूँ?
+बिल्कुल! GroupDocs.Viewer विभिन्न अनुकूलन विकल्प प्रदान करता है, जिससे आप आउटपुट को अपनी विशिष्ट आवश्यकताओं के अनुरूप बना सकते हैं।
+### मुझे अतिरिक्त सहायता और संसाधन कहां मिल सकते हैं?
+ दौरा करना[GroupDocs.Viewer फ़ोरम](https://forum.groupdocs.com/c/viewer/9) सामुदायिक समर्थन के लिए और अन्वेषण करें[प्रलेखन](https://reference.groupdocs.com/viewer/net/)विस्तृत जानकारी के लिए.
+### क्या कोई निःशुल्क परीक्षण उपलब्ध है?
+ हाँ, आप नि:शुल्क परीक्षण का उपयोग कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
+### मैं अस्थायी लाइसेंस कैसे प्राप्त करूं?
+ आपको अस्थायी लाइसेंस मिल सकता है[यहाँ](https://purchase.groupdocs.com/temporary-license/).
