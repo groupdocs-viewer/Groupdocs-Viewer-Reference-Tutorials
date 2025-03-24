@@ -3,10 +3,12 @@ title: Regola le dimensioni della pagina durante il rendering dei messaggi e-mai
 linktitle: Regola le dimensioni della pagina durante il rendering dei messaggi e-mail
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come regolare le dimensioni della pagina durante il rendering dei messaggi e-mail in PDF utilizzando GroupDocs.Viewer per .NET. Migliora l'efficienza della visualizzazione dei documenti.
-type: docs
 weight: 10
 url: /it/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Regola le dimensioni della pagina durante il rendering dei messaggi e-mail
+
 ## introduzione
 Nell'ambito dello sviluppo .NET, GroupDocs.Viewer fornisce una soluzione completa per il rendering di vari formati di documenti, inclusi i messaggi di posta elettronica. Questo tutorial si concentra sulla regolazione delle dimensioni della pagina durante il rendering dei messaggi di posta elettronica in formato PDF utilizzando GroupDocs.Viewer per .NET. Seguendo i passaggi descritti in questa guida, imparerai come manipolare facilmente le dimensioni della pagina per soddisfare i tuoi requisiti specifici.
 ## Prerequisiti

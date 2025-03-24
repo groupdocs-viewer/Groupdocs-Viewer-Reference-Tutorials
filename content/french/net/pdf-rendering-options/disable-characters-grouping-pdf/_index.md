@@ -3,10 +3,12 @@ title: Désactiver le regroupement de caractères dans un PDF
 linktitle: Désactiver le regroupement de caractères dans un PDF
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment désactiver le regroupement de caractères dans les PDF à l'aide de GroupDocs.Viewer pour .NET. Suivez notre didacticiel étape par étape pour un rendu fluide des documents.
-type: docs
 weight: 11
 url: /fr/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Désactiver le regroupement de caractères dans un PDF
+
 ## Introduction
 Dans le monde du développement .NET, la gestion de la visualisation des documents peut parfois s'avérer un défi, en particulier lorsqu'il s'agit de formats tels que les PDF. Cependant, avec les bons outils et connaissances, vous pouvez rationaliser ce processus efficacement. Un de ces outils qui vient à la rescousse est GroupDocs.Viewer pour .NET. Cette puissante bibliothèque permet aux développeurs de restituer et d'afficher de manière transparente divers types de documents dans leurs applications .NET.
 ## Conditions préalables

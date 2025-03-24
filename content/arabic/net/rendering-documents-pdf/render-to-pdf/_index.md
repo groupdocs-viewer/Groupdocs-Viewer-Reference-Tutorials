@@ -3,10 +3,12 @@ title: تقديم الوثيقة إلى PDF
 linktitle: تقديم الوثيقة إلى PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تقديم المستندات إلى PDF باستخدام GroupDocs.Viewer لـ .NET. دليل خطوة بخطوة يتضمن المتطلبات الأساسية والأسئلة الشائعة.
-type: docs
 weight: 10
 url: /ar/net/rendering-documents-pdf/render-to-pdf/
 ---
+
+# تقديم الوثيقة إلى PDF
+
 ## مقدمة
 يعد GroupDocs.Viewer for .NET أداة قوية لعرض تنسيقات المستندات المختلفة في PDF. في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة.
 ## المتطلبات الأساسية

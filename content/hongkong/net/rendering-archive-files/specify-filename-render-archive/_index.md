@@ -3,10 +3,12 @@ title: 渲染存檔檔案時指定檔案名
 linktitle: 渲染存檔檔案時指定檔案名
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 在 .NET 中呈現存檔文件，從而增強文件管理功能。
-type: docs
 weight: 14
 url: /zh-hant/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# 渲染存檔檔案時指定檔案名
+
 ## 介紹
 在 .NET 開發領域，GroupDocs.Viewer 作為呈現各種格式文件的多功能工具脫穎而出。憑藉其強大的功能和靈活性，它簡化了查看文件（包括存檔文件）的過程。在本教學中，我們將深入研究使用 GroupDocs.Viewer for .NET 呈現存檔檔案的細節。透過遵循這些逐步說明，您將了解如何在呈現存檔文件時指定文件名，從而在 .NET 應用程式中實現無縫文件管理。
 ## 先決條件

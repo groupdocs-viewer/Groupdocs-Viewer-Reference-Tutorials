@@ -3,10 +3,12 @@ title: Render PDF with Original Page Size
 linktitle: Render PDF with Original Page Size
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render PDFs with original page sizes using GroupDocs.Viewer for .NET. Follow our step-by-step guide and seamlessly integrate this functionality.
-type: docs
 weight: 17
 url: /net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# Render PDF with Original Page Size
+
 ## Introduction
 In the realm of .NET development, GroupDocs.Viewer stands out as a powerful tool for rendering various document formats, including PDFs. One common requirement in document handling is to render PDFs while preserving their original page sizes. Achieving this task seamlessly requires a comprehensive understanding of GroupDocs.Viewer for .NET and its functionalities.
 ## Prerequisites

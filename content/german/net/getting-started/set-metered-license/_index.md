@@ -3,10 +3,12 @@ title: Legen Sie die gemessene Lizenz fest
 linktitle: Legen Sie die gemessene Lizenz fest
 second_title: GroupDocs.Viewer .NET-API
 description: Erweitern Sie Ihre .NET-Anwendungen mit GroupDocs.Viewer für eine nahtlose Dokumentenanzeige. Integrieren Sie Funktionen zum Rendern von Dokumenten ganz einfach in Ihre Projekte.
-type: docs
 weight: 12
 url: /de/net/getting-started/set-metered-license/
 ---
+
+# Legen Sie die gemessene Lizenz fest
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist die Integration leistungsstarker Dokumentanzeigefunktionen in Ihre Anwendungen für die Verbesserung des Benutzererlebnisses und der Funktionalität von entscheidender Bedeutung. GroupDocs.Viewer für .NET bietet eine robuste Lösung für die nahtlose Integration von Dokumentanzeigefunktionen in Ihre .NET-Projekte. Ganz gleich, ob Sie mit PDFs, Microsoft Office-Dokumenten oder verschiedenen Bildformaten arbeiten, GroupDocs.Viewer vereinfacht den Prozess des Renderns und Anzeigens dieser Dokumente in Ihren Anwendungen.
 ## Voraussetzungen
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Zusammenfassend bietet GroupDocs.Viewer für .NET eine umfassende Lösung für die Integration von Dokumentanzeigefunktionen in Ihre .NET-Anwendungen. Indem Sie die beschriebenen Schritte befolgen, können Sie ganz einfach eine getaktete Lizenz einrichten und damit beginnen, die Funktionen von GroupDocs.Viewer in Ihren Projekten zu nutzen.
 ## FAQs
 ### F: Wo finde ich Dokumentation für GroupDocs.Viewer für .NET?
- Die Dokumentation finden Sie hier[Hier](https://reference.groupdocs.com/viewer/net/).
+ Die Dokumentation finden Sie hier[Hier](https://tutorials.groupdocs.com/viewer/net/).
 ### F: Gibt es eine kostenlose Testversion für GroupDocs.Viewer für .NET?
  Ja, Sie können auf die kostenlose Testversion zugreifen[Hier](https://releases.groupdocs.com/).
 ### F: Wie kann ich temporäre Lizenzen zu Testzwecken erhalten?

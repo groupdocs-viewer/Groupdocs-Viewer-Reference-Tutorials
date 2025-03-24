@@ -3,10 +3,12 @@ title: 渲染註解並調整時間單位 (MS Project)
 linktitle: 渲染註解並調整時間單位 (MS Project)
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 掌握 MS Project 文件的渲染。輕鬆渲染註解、調整時間單位並探索各種輸出格式。
-type: docs
 weight: 11
 url: /zh-hant/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# 渲染註解並調整時間單位 (MS Project)
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的文件呈現 API，可讓開發人員在其 .NET 應用程式中檢視和操作各種文件格式。在本教程中，我們將重點放在專門針對 MS Project 文件渲染註解和調整時間單位。
 ## 先決條件
@@ -87,6 +89,6 @@ viewer.View(options);
 ### 如何取得 GroupDocs.Viewer for .NET 的臨時許可？
 訪問[這個連結](https://purchase.groupdocs.com/temporary-license/)獲得臨時許可證。
 ### 在哪裡可以找到 GroupDocs.Viewer for .NET 的文檔？
-參考文檔[這裡](https://reference.groupdocs.com/viewer/net/).
+參考文檔[這裡](https://tutorials.groupdocs.com/viewer/net/).
 ### 我可以在哪裡尋求與 GroupDocs.Viewer for .NET 相關的支援或提出問題？
 您可以造訪支援論壇[這裡](https://forum.groupdocs.com/c/viewer/9).

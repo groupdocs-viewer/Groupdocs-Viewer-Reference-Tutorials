@@ -3,10 +3,12 @@ title: 在文件中新增浮水印
 linktitle: 在文件中新增浮水印
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 為文件無縫新增浮水印。透過這個易於理解的教學增強文件安全性和品牌形象。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-options/add-watermark/
 ---
+
+# 在文件中新增浮水印
+
 ## 介紹
 在當今的數位時代，無縫管理和查看各種文件格式對於許多企業和個人來說都是必需的。幸運的是，借助 GroupDocs.Viewer for .NET 等工具，處理文件變得輕而易舉。這個強大的 .NET 程式庫使開發人員能夠輕鬆地將文件檢視功能整合到他們的應用程式中，從而允許使用者無需使用建立文件的原始軟體即可查看文件。
 ## 先決條件

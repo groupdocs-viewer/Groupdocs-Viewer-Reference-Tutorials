@@ -3,10 +3,12 @@ title: การใช้งานขั้นสูง (แคช)
 linktitle: การใช้งานขั้นสูง (แคช)
 second_title: GroupDocs.Viewer .NET API
 description: ค้นพบเทคนิคขั้นสูงในการเพิ่มความเร็วการประมวลผลเอกสารในแอปพลิเคชัน .NET ด้วย GroupDocs.Viewer เรียนรู้วิธีเปิดใช้งานการแคชเพื่อประสิทธิภาพที่เร็วขึ้นทันที!
-type: docs
 weight: 22
 url: /th/net/advanced-usage-caching/
 ---
+
+# การใช้งานขั้นสูง (แคช)
+
 
 ## การแนะนำ
 

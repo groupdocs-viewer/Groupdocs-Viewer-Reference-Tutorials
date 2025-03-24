@@ -3,10 +3,12 @@ title: Rendu de documents en images
 linktitle: Rendu de documents en images
 second_title: API GroupDocs.Viewer .NET
 description: Explorez des didacticiels sur le rendu de documents en images à l'aide de GroupDocs.Viewer pour .NET. Optimisez la qualité de l'image, extrayez les coordonnées du texte et améliorez l'expérience utilisateur.
-type: docs
 weight: 30
 url: /fr/net/rendering-documents-images/
 ---
+
+# Rendu de documents en images
+
 ## Introduction
 
 Dans le domaine du développement .NET, la maîtrise du rendu des documents en images est primordiale. GroupDocs.Viewer propose une gamme complète de didacticiels pour rationaliser ce processus. Du rendu des documents aux formats JPG/PNG au réglage fin de la qualité de l'image et à l'optimisation de la superposition de texte, ces didacticiels couvrent tout.

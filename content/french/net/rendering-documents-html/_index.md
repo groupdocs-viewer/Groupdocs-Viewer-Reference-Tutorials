@@ -3,10 +3,12 @@ title: Rendu de documents au format HTML
 linktitle: Rendu de documents au format HTML
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez des didacticiels complets sur le rendu de documents au format HTML à l'aide de GroupDocs.Viewer pour .NET. Apprenez les techniques d’affichage des documents et d’expérience utilisateur améliorée.
-type: docs
 weight: 31
 url: /fr/net/rendering-documents-html/
 ---
+
+# Rendu de documents au format HTML
+
 
 ## Introduction
 

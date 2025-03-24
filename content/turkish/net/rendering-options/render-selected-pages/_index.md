@@ -3,10 +3,12 @@ title: Seçilen Sayfaları Oluştur
 linktitle: Seçilen Sayfaları Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: Groupdocs.Viewer for .NET'i kullanarak belgelerden seçilen sayfaları nasıl oluşturacağınızı öğrenin. Kod örnekleri içeren adım adım eğitim.
-type: docs
 weight: 17
 url: /tr/net/rendering-options/render-selected-pages/
 ---
+
+# Seçilen Sayfaları Oluştur
+
 ## giriiş
 
 Bu eğitimde, bir belgeden seçilen sayfaları oluşturmak için Groupdocs.Viewer for .NET'in nasıl kullanılacağını inceleyeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz süreç boyunca size kolaylıkla yol gösterecektir.

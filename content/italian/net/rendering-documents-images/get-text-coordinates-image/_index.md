@@ -3,10 +3,12 @@ title: Ottieni le coordinate del testo per il rendering delle immagini
 linktitle: Ottieni le coordinate del testo per il rendering delle immagini
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come estrarre le coordinate del testo per il rendering delle immagini utilizzando GroupDocs.Viewer per .NET. Migliora le tue capacità di elaborazione dei documenti senza sforzo.
-type: docs
 weight: 12
 url: /it/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# Ottieni le coordinate del testo per il rendering delle immagini
+
 ## introduzione
 GroupDocs.Viewer per .NET è una potente API per il rendering di documenti che consente agli sviluppatori di eseguire il rendering di documenti in vari formati come PDF, Microsoft Office e molti altri. Una delle sue funzionalità chiave è la capacità di estrarre le coordinate del testo per un rendering preciso delle immagini.
 ## Prerequisiti

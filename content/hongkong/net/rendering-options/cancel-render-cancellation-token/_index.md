@@ -3,10 +3,12 @@ title: 使用取消令牌取消渲染
 linktitle: 使用取消令牌取消渲染
 second_title: GroupDocs.Viewer .NET API
 description: 將 Groupdocs.Viewer for .NET 無縫整合到您的 .NET 專案中，以實現高效的文件檢視。
-type: docs
 weight: 11
 url: /zh-hant/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# 使用取消令牌取消渲染
+
 ## 介紹
 Groupdocs.Viewer for .NET 是一款功能強大的工具，旨在簡化 .NET 應用程式中的文件檢視和處理。無論您處理的是 PDF、Microsoft Office 文件還是其他常見格式，該程式庫都提供了強大的功能，可將文件檢視功能無縫整合到您的 .NET 專案中。
 ## 先決條件

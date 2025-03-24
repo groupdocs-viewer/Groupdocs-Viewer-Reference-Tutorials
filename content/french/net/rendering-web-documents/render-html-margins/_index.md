@@ -3,10 +3,12 @@ title: Rendre du HTML avec des marges définies par l'utilisateur
 linktitle: Rendre du HTML avec des marges définies par l'utilisateur
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment afficher du HTML avec des marges personnalisées dans .NET à l'aide de GroupDocs.Viewer. Améliorez la présentation des documents sans effort.
-type: docs
 weight: 11
 url: /fr/net/rendering-web-documents/render-html-margins/
 ---
+
+# Rendre du HTML avec des marges définies par l'utilisateur
+
 ## Introduction
 Dans le domaine du développement .NET, le rendu HTML avec des marges définies par l'utilisateur est un aspect crucial de la création de documents visuellement attrayants. Qu'il s'agisse d'ajuster les marges d'un site Web ou de configurer des mises en page d'impression, un contrôle précis des marges améliore la présentation globale du contenu. Dans ce didacticiel, nous aborderons l'utilisation de GroupDocs.Viewer pour .NET pour réaliser cette fonctionnalité de manière transparente.
 ## Conditions préalables

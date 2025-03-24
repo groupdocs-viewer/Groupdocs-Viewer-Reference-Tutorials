@@ -3,10 +3,12 @@ title: 调整单元格中的文本溢出
 linktitle: 调整单元格中的文本溢出
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 轻松管理 .NET 文档中的文本溢出。增强可读性和用户体验。立即下载免费试用版。
-type: docs
 weight: 10
 url: /zh/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# 调整单元格中的文本溢出
+
 ## 介绍
 在 .NET 开发的动态世界中，管理单元格中的文本溢出对于创建具有视觉吸引力和可读性的文档至关重要。 GroupDocs.Viewer for .NET 为开发人员提供了一套全面的工具来无缝处理电子表格文档中的文本溢出。本教程将指导您完成使用 GroupDocs.Viewer for .NET 调整单元格中文本溢出的过程。
 ## 先决条件
@@ -57,7 +59,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 总之，GroupDocs.Viewer for .NET 简化了处理单元格中文本溢出的任务，确保您的文档不仅功能齐全，而且在视觉上也很美观。通过这些步骤，您可以轻松增强电子表格文档的用户体验和可读性。
 ## 常见问题解答
 ### 1. 我可以将 GroupDocs.Viewer for .NET 用于任何类型的文档吗？
-是的，GroupDocs.Viewer for .NET 支持多种文档格式，包括电子表格、演示文稿等。请参阅[文档](https://reference.groupdocs.com/viewer/net/)获取完整列表。
+是的，GroupDocs.Viewer for .NET 支持多种文档格式，包括电子表格、演示文稿等。请参阅[文档](https://tutorials.groupdocs.com/viewer/net/)获取完整列表。
 ### 2. 有免费试用吗？
 是的，您可以通过下载 GroupDocs.Viewer for .NET 来探索 GroupDocs.Viewer 的功能[免费试用](https://releases.groupdocs.com/).
 ### 3. 对于任何问题，我如何获得支持？

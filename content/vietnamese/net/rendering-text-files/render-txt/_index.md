@@ -3,10 +3,12 @@ title: Kết xuất tệp văn bản (.txt)
 linktitle: Kết xuất tệp văn bản (.txt)
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá khả năng chuyển đổi liền mạch các tệp văn bản thành nhiều định dạng bằng GroupDocs.Viewer cho .NET. Nâng cao khả năng quản lý tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/rendering-text-files/render-txt/
 ---
+
+# Kết xuất tệp văn bản (.txt)
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, GroupDocs.Viewer dành cho .NET nổi lên như một công cụ mạnh mẽ, cung cấp vô số chức năng để hiển thị các định dạng tài liệu khác nhau một cách hiệu quả. Bài viết này đi sâu vào sự phức tạp của việc sử dụng GroupDocs.Viewer cho .NET để hiển thị các tệp văn bản (.txt) thành nhiều định dạng. Cho dù bạn muốn chuyển đổi tệp văn bản thành HTML, JPG, PNG hay PDF, GroupDocs.Viewer đều trang bị cho bạn những công cụ cần thiết để hoàn thành các tác vụ này một cách liền mạch.
 ## Điều kiện tiên quyết

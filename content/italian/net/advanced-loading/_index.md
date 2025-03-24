@@ -3,10 +3,12 @@ title: Opzioni di caricamento avanzate
 linktitle: Opzioni di caricamento avanzate
 second_title: API GroupDocs.Viewer .NET
 description: Migliora le tue app .NET con i tutorial GroupDocs.Viewer per .NET. Impara a specificare i tipi di file, a gestire le codifiche, a caricare documenti protetti da password e altro ancora.
-type: docs
 weight: 21
 url: /it/net/advanced-loading/
 ---
+
+# Opzioni di caricamento avanzate
+
 ## introduzione
 
 Nell'ambito dello sviluppo di applicazioni .NET, l'integrazione di funzionalità efficienti di visualizzazione dei documenti è fondamentale. GroupDocs.Viewer per .NET si distingue come una soluzione completa, offrendo una miriade di funzionalità per semplificare il rendering dei documenti. Questo articolo funge da guida curata per esercitazioni avanzate sulle opzioni di caricamento, consentendo agli sviluppatori di sfruttare tutto il potenziale di GroupDocs.Viewer per .NET.

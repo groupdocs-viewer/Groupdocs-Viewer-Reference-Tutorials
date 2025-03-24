@@ -3,10 +3,12 @@ title: Vykreslit soubory CHM
 linktitle: Vykreslit soubory CHM
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat soubory CHM v .NET pomocí GroupDocs.Viewer. Převeďte CHM do formátů HTML, JPG, PNG a PDF bez námahy.
-type: docs
 weight: 10
 url: /cs/net/rendering-web-documents/render-chm/
 ---
+
+# Vykreslit soubory CHM
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak vykreslit soubory CHM (Compiled HTML Help) pomocí GroupDocs.Viewer pro .NET. GroupDocs.Viewer for .NET je výkonné rozhraní API pro vykreslování dokumentů, které umožňuje vývojářům zobrazovat více než 170 typů dokumentů v rámci jejich aplikací .NET, aniž by vyžadovali instalaci externího softwaru.
 

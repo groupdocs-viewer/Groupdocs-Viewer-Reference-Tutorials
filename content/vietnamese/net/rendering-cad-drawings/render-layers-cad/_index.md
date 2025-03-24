@@ -3,10 +3,12 @@ title: Kết xuất các lớp trong bản vẽ CAD
 linktitle: Kết xuất các lớp trong bản vẽ CAD
 second_title: API GroupDocs.Viewer .NET
 description: Kết xuất bản vẽ CAD một cách liền mạch trong các ứng dụng .NET bằng GroupDocs.Viewer dành cho .NET. Khám phá các tùy chọn kết xuất, tùy chỉnh các lớp và hơn thế nữa.
-type: docs
 weight: 13
 url: /vi/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Kết xuất các lớp trong bản vẽ CAD
+
 ## Giới thiệu
 GroupDocs.Viewer dành cho .NET là một công cụ mạnh mẽ cho phép các nhà phát triển tích hợp liền mạch khả năng kết xuất tài liệu vào các ứng dụng .NET của họ. Cho dù bạn cần kết xuất bản vẽ CAD, tệp PDF, tài liệu Microsoft Office hay hơn thế nữa, GroupDocs.Viewer đều cung cấp giải pháp toàn diện.
 ## Điều kiện tiên quyết
@@ -14,7 +16,7 @@ Trước khi bắt đầu sử dụng GroupDocs.Viewer cho .NET, hãy đảm b�
 - Hiểu biết cơ bản về ngôn ngữ lập trình C#.
 - Môi trường phát triển .NET được thiết lập trên máy của bạn.
 -  Đã cài đặt GroupDocs.Viewer cho .NET. Bạn có thể tải nó xuống từ[đây](https://releases.groupdocs.com/viewer/net/).
--  Truy cập vào tài liệu GroupDocs.Viewer cho .NET để tham khảo, có thể tìm thấy[đây](https://reference.groupdocs.com/viewer/net/).
+-  Truy cập vào tài liệu GroupDocs.Viewer cho .NET để tham khảo, có thể tìm thấy[đây](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Nhập không gian tên
 Để bắt đầu sử dụng GroupDocs.Viewer cho .NET, bạn cần nhập các vùng tên cần thiết trong dự án của mình. Thực hiện theo các bước sau:

@@ -3,10 +3,12 @@ title: 渲染特定 CAD 格式 (CF2)
 linktitle: 渲染特定 CAD 格式 (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 將特定 CAD 格式（如 CF2）渲染為 HTML、JPG、PNG 和 PDF。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-cad-drawings/render-specific-cad-formats/
 ---
+
+# 渲染特定 CAD 格式 (CF2)
+
 ## 介紹
 在本教學中，我們將探討如何使用 Groupdocs.Viewer for .NET 呈現特定的 CAD 格式。 Groupdocs.Viewer 是一個功能強大的文件檢視器 API，可讓開發人員在其應用程式中顯示 170 多種文件類型，而無需安裝任何外部軟體。具體來說，我們將重點放在將 CAD 格式（例如 CF2）渲染為各種輸出格式（例如 HTML、JPG、PNG 和 PDF）。
 ## 先決條件

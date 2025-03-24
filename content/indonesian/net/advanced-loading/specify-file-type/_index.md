@@ -3,10 +3,12 @@ title: Tentukan Jenis File Saat Memuat Dokumen
 linktitle: Tentukan Jenis File Saat Memuat Dokumen
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menentukan jenis file saat memuat dokumen menggunakan GroupDocs.Viewer untuk .NET. Render berbagai format secara akurat di aplikasi .NET Anda.
-type: docs
 weight: 10
 url: /id/net/advanced-loading/specify-file-type/
 ---
+
+# Tentukan Jenis File Saat Memuat Dokumen
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah API rendering dokumen serbaguna yang mendukung berbagai format file, termasuk DOCX, PDF, PPTX, dan banyak lagi. Dengan menentukan jenis file saat memuat dokumen, Anda dapat memastikan rendering yang akurat dan pengalaman menonton yang lancar bagi pengguna Anda.
 ## Prasyarat

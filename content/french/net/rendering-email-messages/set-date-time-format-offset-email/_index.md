@@ -3,10 +3,12 @@ title: Définir le format DateHeure et le décalage horaire (e-mail)
 linktitle: Définir le format DateHeure et le décalage horaire (e-mail)
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez GroupDocs.Viewer pour .NET de manière transparente dans vos applications pour bénéficier de puissantes fonctionnalités de visualisation de documents. Améliorez l'expérience utilisateur avec des options personnalisables.
-type: docs
 weight: 11
 url: /fr/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
+
+# Définir le format DateHeure et le décalage horaire (e-mail)
+
 
 ## Introduction
 GroupDocs.Viewer for .NET est un outil puissant qui permet aux développeurs d'intégrer de manière transparente des fonctionnalités de visualisation de documents dans leurs applications .NET. Avec GroupDocs.Viewer, vous pouvez afficher un large éventail de formats de documents, notamment des PDF, des documents Microsoft Office, des images et bien plus encore, directement dans votre application, sans avoir besoin de plugins ou de visionneuses externes. Dans ce didacticiel complet, nous vous guiderons tout au long du processus de configuration de GroupDocs.Viewer pour .NET, en explorant ses fonctionnalités et en démontrant comment l'utiliser efficacement pour améliorer les capacités d'affichage de documents de votre application.

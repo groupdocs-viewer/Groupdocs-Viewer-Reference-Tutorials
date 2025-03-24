@@ -3,10 +3,12 @@ title: Imposta il timeout di caricamento delle risorse (avanzato)
 linktitle: Imposta il timeout di caricamento delle risorse (avanzato)
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come configurare in modo efficiente i timeout di caricamento delle risorse in GroupDocs.Viewer per .NET. Rendering di documenti master con precisione e stabilità.
-type: docs
 weight: 13
 url: /it/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Imposta il timeout di caricamento delle risorse (avanzato)
+
 ## introduzione
 Nell'ambito dello sviluppo .NET, GroupDocs.Viewer fornisce un potente set di strumenti per il rendering di documenti e immagini con precisione ed efficienza. Per sfruttare le sue capacità è necessario comprenderne le complessità, inclusa l'impostazione dei timeout di caricamento delle risorse. In questo tutorial approfondiremo il processo di configurazione dei timeout di caricamento delle risorse in GroupDocs.Viewer per .NET.
 ## Prerequisiti

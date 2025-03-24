@@ -3,10 +3,12 @@ title: 渲染存檔資料夾
 linktitle: 渲染存檔資料夾
 second_title: GroupDocs.Viewer .NET API
 description: 將 GroupDocs.Viewer for .NET 無縫整合到您的 .NET 應用程式中，以實現高效的文件呈現和檢視功能。
-type: docs
 weight: 11
 url: /zh-hant/net/rendering-archive-files/render-archive-folder/
 ---
+
+# 渲染存檔資料夾
+
 ## 介紹
 在當今的數位時代，無縫存取和查看文件對於企業和個人都至關重要。幸運的是，隨著技術的進步，開發人員現在擁有強大的工具可以輕鬆地將文件檢視功能整合到他們的應用程式中。其中一個工具是 GroupDocs.Viewer for .NET，它是一個多功能函式庫，使開發人員能夠在其 .NET 應用程式中呈現各種文件格式。
 ## 先決條件

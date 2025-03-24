@@ -3,10 +3,12 @@ title: Rendera utskriftsområden med GroupDocs.Viewer för .NET
 linktitle: Rendera utskriftsområden
 second_title: GroupDocs.Viewer .NET API
 description: Utforska GroupDocs.Viewer för .NET och rendera utskriftsområden utan ansträngning i olika dokumentformat. Prova den kostnadsfria provperioden nu! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /sv/net/spreadsheet-rendering-options/render-print-areas/
 ---
+
+# Rendera utskriftsområden med GroupDocs.Viewer för .NET
+
 ## Introduktion
 Välkommen till den här omfattande guiden om hur du använder GroupDocs.Viewer för .NET för att återge utskriftsområden i dina dokument. Om du är en .NET-utvecklare som letar efter en robust lösning för dokumentrendering, är du på rätt plats. I den här självstudien går vi igenom processen att rendera utskriftsområden med GroupDocs.Viewer, vilket säkerställer en sömlös upplevelse i dina applikationer.
 ## Förutsättningar
@@ -57,7 +59,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Grattis! Du har framgångsrikt lärt dig hur du använder GroupDocs.Viewer för .NET för att återge utskriftsområden i dina dokument. Detta kraftfulla verktyg öppnar upp nya möjligheter för dokumentrendering i dina .NET-applikationer.
 ## Vanliga frågor
 ### Är GroupDocs.Viewer kompatibel med olika dokumentformat?
- Ja, GroupDocs.Viewer stöder ett brett utbud av dokumentformat, inklusive PDF, DOCX, XLSX och mer. Referera till[dokumentation](https://reference.groupdocs.com/viewer/net/) för en komplett lista.
+ Ja, GroupDocs.Viewer stöder ett brett utbud av dokumentformat, inklusive PDF, DOCX, XLSX och mer. Referera till[dokumentation](https://tutorials.groupdocs.com/viewer/net/) för en komplett lista.
 ### Kan jag prova GroupDocs.Viewer innan jag köper?
  Absolut! Du kan utforska verktyget med en gratis provperiod tillgänglig[här](https://releases.groupdocs.com/).
 ### Var kan jag hitta support eller söka hjälp för eventuella problem?

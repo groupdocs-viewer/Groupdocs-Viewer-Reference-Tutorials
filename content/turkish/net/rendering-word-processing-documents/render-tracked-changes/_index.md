@@ -3,10 +3,12 @@ title: İzlenen Değişiklikleri Oluştur
 linktitle: İzlenen Değişiklikleri Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak belgelerde izlenen değişiklikleri zahmetsizce nasıl oluşturacağınızı keşfedin. Belge yönetimi verimliliğinizi artırın.
-type: docs
 weight: 10
 url: /tr/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# İzlenen Değişiklikleri Oluştur
+
 ## giriiş
 Günümüzün dijital çağında belgeleri verimli bir şekilde yönetmek ve görüntülemek hem işletmeler hem de bireyler için çok önemlidir. Gelişmiş teknolojilerin ortaya çıkışıyla birlikte, GroupDocs.Viewer for .NET gibi çözümler, Word belgeleri, PDF'ler ve daha fazlası dahil olmak üzere çeşitli belge formatlarıyla etkileşimde bulunma şeklimizde devrim yarattı. Bu kapsamlı kılavuzda, belgelerinizde izlenen değişiklikleri sorunsuz bir şekilde oluşturmak için GroupDocs.Viewer for .NET'ten nasıl yararlanabileceğinizi ayrıntılı olarak ele alacağız.
 ## Önkoşullar

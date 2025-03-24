@@ -3,10 +3,12 @@ title: Geef WMZ- en WMF-afbeeldingen weer
 linktitle: Geef WMZ- en WMF-afbeeldingen weer
 second_title: GroupDocs.Viewer .NET-API
 description: Geef moeiteloos WMZ- en WMF-afbeeldingen weer in .NET-toepassingen met GroupDocs.Viewer voor .NET. Verbeter eenvoudig de documentverwerkingsmogelijkheden.
-type: docs
 weight: 18
 url: /nl/net/image-rendering/render-wmz-wmf-images/
 ---
+
+# Geef WMZ- en WMF-afbeeldingen weer
+
 ## Invoering
 
 Op het gebied van softwareontwikkeling is een efficiënte verwerking en weergave van verschillende documentformaten van het grootste belang. GroupDocs.Viewer voor .NET is een krachtige tool die de weergave van een breed scala aan documentformaten vergemakkelijkt, waardoor een naadloze integratie en verbeterde gebruikerservaring binnen .NET-toepassingen wordt gegarandeerd. Een van de mogelijkheden is de weergave van WMZ- en WMF-afbeeldingen, een taak die vaak voorkomt in scenario's voor documentverwerking.
@@ -21,7 +23,7 @@ Voordat u ingaat op het weergaveproces van WMZ- en WMF-afbeeldingen met GroupDoc
 
 3. Bekendheid met de .NET-omgeving: Een fundamenteel begrip van het .NET-framework en de programmeertaal C# is essentieel voor het effectief implementeren van het weergaveproces.
 
-4.  Integratie in uw project: Zorg ervoor dat GroupDocs.Viewer voor .NET correct is geïntegreerd in uw .NET-project. Raadpleeg de documentatie voor gedetailleerde instructies over integratie:[Documentatie](https://reference.groupdocs.com/viewer/net/).
+4.  Integratie in uw project: Zorg ervoor dat GroupDocs.Viewer voor .NET correct is geïntegreerd in uw .NET-project. Raadpleeg de documentatie voor gedetailleerde instructies over integratie:[Documentatie](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Naamruimten importeren
 

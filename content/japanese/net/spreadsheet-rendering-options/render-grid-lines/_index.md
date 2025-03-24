@@ -3,10 +3,12 @@ title: グリッド線をレンダリングする
 linktitle: グリッド線をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してドキュメントの視覚化を強化します。グリッド線を簡単にレンダリングします。今すぐ無料トライアルを試してください! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /ja/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# グリッド線をレンダリングする
+
 ## 導入
 GroupDocs.Viewer for .NET を使用してドキュメント内にグリッド線をレンダリングするためのこのステップバイステップ ガイドへようこそ。経験豊富な開発者でも、.NET Framework の初心者でも、このチュートリアルでは、詳細な説明とわかりやすい例を使用してプロセスを順を追って説明します。
 ## 前提条件
@@ -66,6 +68,6 @@ viewer.View(options, 1, 2, 3);
 ### GroupDocs.Viewer for .NET の一時ライセンスは利用できますか?
 はい、入手できます[仮免許](https://purchase.groupdocs.com/temporary-license/).NET 用 GroupDocs.Viewer の場合。
 ### GroupDocs.Viewer for .NET の詳細なドキュメントを見つけることはできますか?
-絶対に！を参照してください。[公式ドキュメント](https://reference.groupdocs.com/viewer/net/) GroupDocs.Viewer for .NET の使用方法の詳細については、「GroupDocs.Viewer for .NET」を参照してください。
+絶対に！を参照してください。[公式ドキュメント](https://tutorials.groupdocs.com/viewer/net/) GroupDocs.Viewer for .NET の使用方法の詳細については、「GroupDocs.Viewer for .NET」を参照してください。
 ### .NET 用の GroupDocs.Viewer の最新バージョンはどこでダウンロードできますか?
 からライブラリをダウンロードします。[公式リリースページ](https://releases.groupdocs.com/viewer/net/).

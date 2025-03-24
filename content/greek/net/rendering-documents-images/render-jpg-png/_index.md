@@ -3,10 +3,12 @@ title: Απόδοση εγγράφου σε JPGPNG
 linktitle: Απόδοση εγγράφου σε JPGPNG
 second_title: GroupDocs.Viewer .NET API
 description: Ανακαλύψτε πώς μπορείτε να αποδώσετε απρόσκοπτα έγγραφα σε JPG/PNG στο .NET χρησιμοποιώντας το GroupDocs.Viewer για βελτιωμένη εμπειρία χρήστη και παραγωγικότητα.
-type: docs
 weight: 10
 url: /el/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Απόδοση εγγράφου σε JPGPNG
+
 ## Εισαγωγή
 
 Στον κόσμο της ανάπτυξης .NET, ο αποτελεσματικός χειρισμός εγγράφων είναι απαραίτητος για διάφορες εφαρμογές. Είτε δημιουργείτε ένα σύστημα διαχείρισης εγγράφων, μια πλατφόρμα ηλεκτρονικού εμπορίου ή μια εφαρμογή πλούσια σε περιεχόμενο, η δυνατότητα απρόσκοπτης προβολής εγγράφων είναι ζωτικής σημασίας. Εδώ παίζει ρόλο το GroupDocs.Viewer για .NET, προσφέροντας μια ολοκληρωμένη λύση για την απόδοση εγγράφων σε διάφορες μορφές, όπως JPG και PNG.
@@ -106,7 +108,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ### Ε: Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Viewer για .NET;
 
- Α: Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.groupdocs.com/viewer/net/).
+ Α: Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://tutorials.groupdocs.com/viewer/net/).
 
 ### Ε: Πού μπορώ να λάβω υποστήριξη ή να κάνω ερωτήσεις σχετικά με το GroupDocs.Viewer για .NET;
 

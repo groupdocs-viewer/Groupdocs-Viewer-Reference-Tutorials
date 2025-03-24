@@ -3,10 +3,12 @@ title: Disable Text Selection in PDF
 linktitle: Disable Text Selection in PDF
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to disable text selection in PDF using GroupDocs.Viewer for .NET. Follow our step-by-step guide for seamless integration.
-type: docs
 weight: 13
 url: /net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# Disable Text Selection in PDF
+
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful document rendering API that allows developers to integrate document viewing capabilities into their .NET applications effortlessly. One of the key functionalities provided by GroupDocs.Viewer is the ability to disable text selection in PDF documents. This feature is particularly useful in scenarios where you need to prevent users from copying text from sensitive documents, ensuring document security and integrity.
 ## Prerequisites

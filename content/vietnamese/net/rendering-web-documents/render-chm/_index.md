@@ -3,10 +3,12 @@ title: Kết xuất tệp CHM
 linktitle: Kết xuất tệp CHM
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tệp CHM trong .NET bằng GroupDocs.Viewer. Chuyển đổi CHM sang các định dạng HTML, JPG, PNG và PDF một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/rendering-web-documents/render-chm/
 ---
+
+# Kết xuất tệp CHM
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị các tệp CHM (Trợ giúp HTML được biên dịch) bằng GroupDocs.Viewer cho .NET. GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị hơn 170 loại tài liệu trong ứng dụng .NET của họ mà không yêu cầu bất kỳ cài đặt phần mềm bên ngoài nào.
 

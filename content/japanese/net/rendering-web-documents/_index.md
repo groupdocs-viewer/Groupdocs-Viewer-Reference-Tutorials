@@ -3,10 +3,12 @@ title: Web ドキュメントのレンダリング
 linktitle: Web ドキュメントのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して、.NET でカスタム マージンを使用して CHM ファイルと HTML をレンダリングする方法を学びます。 CHM を HTML、JPG、PNG、PDF 形式にシームレスに変換します。
-type: docs
 weight: 35
 url: /ja/net/rendering-web-documents/
 ---
+
+# Web ドキュメントのレンダリング
+
 ## 導入
 
 包括的なチュートリアルを通じて、GroupDocs.Viewer for .NET を使用した Web ドキュメントのレンダリングの複雑さを解明します。 CHM ファイルのレンダリングと HTML マージンのカスタマイズは、ドキュメント処理機能を大幅に強化できる重要な機能です。

@@ -3,10 +3,12 @@ title: Uzyskaj współrzędne tekstu do renderowania obrazu
 linktitle: Uzyskaj współrzędne tekstu do renderowania obrazu
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak wyodrębnić współrzędne tekstu na potrzeby renderowania obrazu za pomocą programu GroupDocs.Viewer dla platformy .NET. Bez wysiłku zwiększ swoje możliwości przetwarzania dokumentów.
-type: docs
 weight: 12
 url: /pl/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# Uzyskaj współrzędne tekstu do renderowania obrazu
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to potężny interfejs API do renderowania dokumentów, który umożliwia programistom płynne renderowanie dokumentów w różnych formatach, takich jak PDF, Microsoft Office i wielu innych. Jedną z jego kluczowych funkcjonalności jest możliwość wyodrębnienia współrzędnych tekstu w celu precyzyjnego renderowania obrazu.
 ## Warunki wstępne

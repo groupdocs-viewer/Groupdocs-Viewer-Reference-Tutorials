@@ -3,10 +3,12 @@ title: Điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD
 linktitle: Điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD bằng GroupDocs.Viewer cho .NET. Nâng cao khả năng hiển thị và khả năng sử dụng một cách dễ dàng.
-type: docs
 weight: 15
 url: /vi/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD
+
 ## Giới thiệu
 Bản vẽ CAD thường yêu cầu điều chỉnh cụ thể để xem và trình bày tối ưu. GroupDocs.Viewer for .NET cung cấp bộ công cụ mạnh mẽ để quản lý và tùy chỉnh đầu ra bản vẽ CAD. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước quy trình điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD.
 ## Điều kiện tiên quyết

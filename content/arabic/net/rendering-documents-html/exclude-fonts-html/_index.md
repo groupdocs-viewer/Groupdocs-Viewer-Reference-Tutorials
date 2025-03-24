@@ -3,10 +3,12 @@ title: استبعاد الخطوط من HTML المقدم
 linktitle: استبعاد الخطوط من HTML المقدم
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية استبعاد الخطوط من HTML المعروض باستخدام GroupDocs.Viewer لـ .NET. اتبع هذا الدليل المفصّل خطوة بخطوة لعرض المستندات بسلاسة.
-type: docs
 weight: 10
 url: /ar/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# استبعاد الخطوط من HTML المقدم
+
 ## مقدمة
 تعد GroupDocs.Viewer for .NET مكتبة قوية لعرض المستندات تسمح للمطورين بعرض أكثر من 50 تنسيقًا للمستندات في تطبيقات .NET الخاصة بهم دون الحاجة إلى تبعيات خارجية. في هذا البرنامج التعليمي، سنركز على ميزة معينة في GroupDocs.Viewer: وهي استبعاد الخطوط من مخرجات HTML المعروضة. 
 ## المتطلبات الأساسية

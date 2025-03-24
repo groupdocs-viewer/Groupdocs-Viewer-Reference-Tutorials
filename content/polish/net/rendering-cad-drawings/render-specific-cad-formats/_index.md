@@ -3,10 +3,12 @@ title: Renderuj określone formaty CAD (CF2)
 linktitle: Renderuj określone formaty CAD (CF2)
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować określone formaty CAD, takie jak CF2, do formatu HTML, JPG, PNG i PDF przy użyciu programu Groupdocs.Viewer dla platformy .NET.
-type: docs
 weight: 12
 url: /pl/net/rendering-cad-drawings/render-specific-cad-formats/
 ---
+
+# Renderuj określone formaty CAD (CF2)
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak renderować określone formaty CAD za pomocą Groupdocs.Viewer dla .NET. Groupdocs.Viewer to potężny interfejs API przeglądarki dokumentów, który umożliwia programistom wyświetlanie w aplikacjach ponad 170 typów dokumentów bez konieczności instalowania zewnętrznego oprogramowania. W szczególności skupimy się na renderowaniu formatów CAD, takich jak CF2, do różnych formatów wyjściowych, takich jak HTML, JPG, PNG i PDF.
 ## Warunki wstępne

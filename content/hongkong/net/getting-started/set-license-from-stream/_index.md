@@ -3,10 +3,12 @@ title: 從 Stream 設定許可證
 linktitle: 從 Stream 設定許可證
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 增強您的 .NET 應用程序，以實現無縫文件檢視。按照我們的逐步指南，輕鬆整合強大的文件檢視功能。
-type: docs
 weight: 11
 url: /zh-hant/net/getting-started/set-license-from-stream/
 ---
+
+# 從 Stream 設定許可證
+
 ## 介紹
 您是否希望為您的 .NET 應用程式提供進階文件檢視功能？ GroupDocs.Viewer for .NET 提供了一個全面的解決方案，可將文件檢視功能無縫整合到您的專案中。在本教程中，我們將深入研究利用 GroupDocs.Viewer for .NET 透過強大的文件查看功能豐富您的應用程式的過程。 
 ## 先決條件
@@ -14,7 +16,7 @@ url: /zh-hant/net/getting-started/set-license-from-stream/
 1. .NET 開發的基本知識：熟悉 C# 和 .NET 框架對於學習本教程至關重要。
    
 2.  GroupDocs.Viewer for .NET 軟體套件：確保您已下載並安裝 GroupDocs.Viewer for .NET 軟體套件。您可以從[下載連結](https://releases.groupdocs.com/viewer/net/).
-3. 存取 GroupDocs 文件：保留[文件](https://reference.groupdocs.com/viewer/net/)方便集成過程中參考。
+3. 存取 GroupDocs 文件：保留[文件](https://tutorials.groupdocs.com/viewer/net/)方便集成過程中參考。
 
 ## 導入命名空間
 首先，將必要的命名空間匯入到您的 .NET 應用程式中。按著這些次序：

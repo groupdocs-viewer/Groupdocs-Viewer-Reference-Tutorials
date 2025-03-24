@@ -3,10 +3,12 @@ title: Outlook データ ファイルで表示するアイテムの数を制限�
 linktitle: Outlook データ ファイルで表示するアイテムの数を制限する
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を使用して、Outlook データ ファイルに表示されるアイテムの数を制限する方法を学習します。シームレスな統合については、ステップバイステップに従ってください。
-type: docs
 weight: 12
 url: /ja/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---
+
+# Outlook データ ファイルで表示するアイテムの数を制限する
+
 ## 導入
 Groupdocs.Viewer for .NET は、ドキュメント表示機能を .NET アプリケーションにシームレスに統合したいと考えている開発者にとって強力なツールです。アプリケーション内で PDF、Microsoft Office ドキュメント、または Outlook データ ファイルを表示する必要がある場合でも、Groupdocs.Viewer は堅牢なソリューションを提供します。このチュートリアルでは、Outlook データ ファイル内でレンダリングされるアイテムの数を制限する方法について、段階的な手順を使用して詳しく説明します。
 ## 前提条件

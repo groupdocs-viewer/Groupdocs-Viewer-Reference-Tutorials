@@ -3,10 +3,12 @@ title: Tetapkan Lisensi Terukur
 linktitle: Tetapkan Lisensi Terukur
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan aplikasi .NET Anda dengan GroupDocs.Viewer untuk tampilan dokumen yang lancar. Integrasikan fungsi rendering dokumen dengan mudah ke dalam proyek Anda.
-type: docs
 weight: 12
 url: /id/net/getting-started/set-metered-license/
 ---
+
+# Tetapkan Lisensi Terukur
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, menggabungkan kemampuan melihat dokumen yang kuat ke dalam aplikasi Anda sangat penting untuk meningkatkan pengalaman dan fungsionalitas pengguna. GroupDocs.Viewer untuk .NET menawarkan solusi tangguh untuk mengintegrasikan fungsionalitas tampilan dokumen dengan lancar ke dalam proyek .NET Anda. Baik Anda bekerja dengan PDF, dokumen Microsoft Office, atau berbagai format gambar, GroupDocs.Viewer menyederhanakan proses rendering dan menampilkan dokumen-dokumen ini dalam aplikasi Anda.
 ## Prasyarat
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Kesimpulannya, GroupDocs.Viewer untuk .NET memberikan solusi komprehensif untuk menggabungkan fungsionalitas tampilan dokumen ke dalam aplikasi .NET Anda. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat dengan mudah menyiapkan lisensi terukur dan mulai memanfaatkan kemampuan GroupDocs.Viewer dalam proyek Anda.
 ## FAQ
 ### T: Di mana saya dapat menemukan dokumentasi GroupDocs.Viewer untuk .NET?
- Anda dapat menemukan dokumentasinya[Di Sini](https://reference.groupdocs.com/viewer/net/).
+ Anda dapat menemukan dokumentasinya[Di Sini](https://tutorials.groupdocs.com/viewer/net/).
 ### T: Apakah tersedia uji coba gratis untuk GroupDocs.Viewer untuk .NET?
  Ya, Anda dapat mengakses uji coba gratis[Di Sini](https://releases.groupdocs.com/).
 ### T: Bagaimana cara mendapatkan lisensi sementara untuk tujuan pengujian?

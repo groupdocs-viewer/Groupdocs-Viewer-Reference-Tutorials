@@ -3,10 +3,12 @@ title: Geef verborgen pagina's weer
 linktitle: Geef verborgen pagina's weer
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter uw .NET-toepassing met GroupDocs.Viewer voor naadloze documentweergave. Volg onze stapsgewijze handleiding om verborgen pagina's moeiteloos weer te geven.
-type: docs
 weight: 15
 url: /nl/net/rendering-options/render-hidden-pages/
 ---
+
+# Geef verborgen pagina's weer
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het efficiënt beheren en weergeven van documenten cruciaal. Of het nu voor intern gebruik, klantpresentaties of webapplicaties is, de mogelijkheid om verschillende documentformaten naadloos te kunnen bekijken is een noodzaak. Dit is waar GroupDocs.Viewer voor .NET in het spel komt. Met zijn krachtige functies en intuïtieve interface vereenvoudigt GroupDocs.Viewer het proces van het weergeven van documenten in uw .NET-toepassingen.
 ## Vereisten

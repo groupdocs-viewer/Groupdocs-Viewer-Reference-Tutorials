@@ -3,10 +3,12 @@ title: تقديم الوثيقة إلى JPGPNG
 linktitle: تقديم الوثيقة إلى JPGPNG
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف كيفية عرض المستندات بسلاسة إلى JPG/PNG في .NET باستخدام GroupDocs.Viewer لتحسين تجربة المستخدم والإنتاجية.
-type: docs
 weight: 10
 url: /ar/net/rendering-documents-images/render-jpg-png/
 ---
+
+# تقديم الوثيقة إلى JPGPNG
+
 ## مقدمة
 
 في عالم تطوير .NET، يعد التعامل مع المستندات بكفاءة أمرًا ضروريًا لمختلف التطبيقات. سواء كنت تقوم بإنشاء نظام لإدارة المستندات، أو منصة للتجارة الإلكترونية، أو تطبيق غني بالمحتوى، فإن القدرة على عرض المستندات بسلاسة أمر بالغ الأهمية. وهنا يأتي دور GroupDocs.Viewer for .NET، حيث يقدم حلاً شاملاً لعرض المستندات بتنسيقات مختلفة مثل JPG وPNG.
@@ -106,7 +108,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ### س: أين يمكنني العثور على وثائق GroupDocs.Viewer لـ .NET؟
 
- ج: الوثائق التفصيلية متاحة[هنا](https://reference.groupdocs.com/viewer/net/).
+ ج: الوثائق التفصيلية متاحة[هنا](https://tutorials.groupdocs.com/viewer/net/).
 
 ### س: أين يمكنني الحصول على الدعم أو طرح الأسئلة المتعلقة بـ GroupDocs.Viewer لـ .NET؟
 

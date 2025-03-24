@@ -3,10 +3,12 @@ title: Rendering di aree di stampa con GroupDocs.Viewer per .NET
 linktitle: Rendering delle aree di stampa
 second_title: API GroupDocs.Viewer .NET
 description: Esplora GroupDocs.Viewer per .NET ed esegui il rendering senza sforzo di aree di stampa in vari formati di documenti. Prova subito la prova gratuita! #GroupDocs.Visualizzatore
-type: docs
 weight: 17
 url: /it/net/spreadsheet-rendering-options/render-print-areas/
 ---
+
+# Rendering di aree di stampa con GroupDocs.Viewer per .NET
+
 ## introduzione
 Benvenuti in questa guida completa su come sfruttare GroupDocs.Viewer per .NET per eseguire il rendering delle aree di stampa nei documenti. Se sei uno sviluppatore .NET alla ricerca di una soluzione solida per il rendering dei documenti, sei nel posto giusto. In questo tutorial ti guideremo attraverso il processo di rendering delle aree di stampa utilizzando GroupDocs.Viewer, garantendo un'esperienza senza interruzioni nelle tue applicazioni.
 ## Prerequisiti
@@ -57,7 +59,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Congratulazioni! Hai imparato con successo come utilizzare GroupDocs.Viewer per .NET per eseguire il rendering delle aree di stampa nei tuoi documenti. Questo potente strumento apre nuove possibilità per il rendering dei documenti nelle tue applicazioni .NET.
 ## Domande frequenti
 ### GroupDocs.Viewer è compatibile con diversi formati di documenti?
- Sì, GroupDocs.Viewer supporta un'ampia gamma di formati di documenti, inclusi PDF, DOCX, XLSX e altri. Fare riferimento al[documentazione](https://reference.groupdocs.com/viewer/net/) per un elenco completo.
+ Sì, GroupDocs.Viewer supporta un'ampia gamma di formati di documenti, inclusi PDF, DOCX, XLSX e altri. Fare riferimento al[documentazione](https://tutorials.groupdocs.com/viewer/net/) per un elenco completo.
 ### Posso provare GroupDocs.Viewer prima di effettuare un acquisto?
  Assolutamente! Puoi esplorare lo strumento con una prova gratuita disponibile[Qui](https://releases.groupdocs.com/).
 ### Dove posso trovare supporto o chiedere assistenza per eventuali problemi?

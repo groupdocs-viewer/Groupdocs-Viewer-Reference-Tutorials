@@ -3,10 +3,12 @@ title: CAD rajzok renderelése
 linktitle: CAD rajzok renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel az oktatóanyagokat a CAD-rajzok megjelenítéséhez a GroupDocs.Viewer for .NET használatával. Ismerje meg a .NET-alkalmazások tökéletesítését a zökkenőmentes CAD-fájlkezeléssel.
-type: docs
 weight: 25
 url: /hu/net/rendering-cad-drawings/
 ---
+
+# CAD rajzok renderelése
+
 
 ## Bevezetés
 

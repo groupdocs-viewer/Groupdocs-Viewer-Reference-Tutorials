@@ -3,10 +3,12 @@ title: Rendu de documents Web
 linktitle: Rendu de documents Web
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des fichiers CHM et HTML avec des marges personnalisées dans .NET à l'aide de GroupDocs.Viewer. Convertissez CHM aux formats HTML, JPG, PNG et PDF en toute transparence.
-type: docs
 weight: 35
 url: /fr/net/rendering-web-documents/
 ---
+
+# Rendu de documents Web
+
 ## Introduction
 
 Découvrez les subtilités du rendu de documents Web avec GroupDocs.Viewer pour .NET grâce à des didacticiels complets. Le rendu des fichiers CHM et la personnalisation des marges HTML sont des fonctionnalités essentielles qui peuvent grandement améliorer vos capacités de traitement de documents.

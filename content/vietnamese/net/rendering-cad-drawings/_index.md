@@ -3,10 +3,12 @@ title: Kết xuất bản vẽ CAD
 linktitle: Kết xuất bản vẽ CAD
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá các hướng dẫn hiển thị bản vẽ CAD bằng GroupDocs.Viewer cho .NET. Tìm hiểu cách nâng cao các ứng dụng .NET bằng khả năng xử lý tệp CAD liền mạch.
-type: docs
 weight: 25
 url: /vi/net/rendering-cad-drawings/
 ---
+
+# Kết xuất bản vẽ CAD
+
 
 ## Giới thiệu
 

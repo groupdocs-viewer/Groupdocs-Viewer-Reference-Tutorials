@@ -3,10 +3,12 @@ title: Habilite o cache para processamento mais rápido de documentos
 linktitle: Habilite o cache para processamento mais rápido de documentos
 second_title: API GroupDocs.Viewer .NET
 description: Aumente a velocidade de processamento de documentos em aplicativos .NET com GroupDocs.Viewer aproveitando o cache. Otimize o desempenho sem esforço.
-type: docs
 weight: 10
 url: /pt/net/advanced-usage-caching/enable-caching/
 ---
+
+# Habilite o cache para processamento mais rápido de documentos
+
 ## Introdução
 No domínio do processamento de documentos .NET, otimizar o desempenho é fundamental. Imagine um cenário em que você precise renderizar várias páginas de um documento rapidamente. É aqui que o cache entra em ação. Neste tutorial, nos aprofundaremos no aproveitamento do cache para aumentar a velocidade de processamento de documentos usando GroupDocs.Viewer for .NET.
 ## Pré-requisitos

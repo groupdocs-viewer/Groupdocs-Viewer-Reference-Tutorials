@@ -3,10 +3,12 @@ title: Representar documentos a HTML
 linktitle: Representar documentos a HTML
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriales completos sobre cómo representar documentos en HTML utilizando GroupDocs.Viewer para .NET. Aprenda técnicas para la visualización de documentos y una experiencia de usuario mejorada.
-type: docs
 weight: 31
 url: /es/net/rendering-documents-html/
 ---
+
+# Representar documentos a HTML
+
 
 ## Introducción
 

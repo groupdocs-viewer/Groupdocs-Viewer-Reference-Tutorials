@@ -3,10 +3,12 @@ title: Nastavte měřenou licenci
 linktitle: Nastavte měřenou licenci
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete své aplikace .NET pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Snadno integrujte funkce vykreslování dokumentů do svých projektů.
-type: docs
 weight: 12
 url: /cs/net/getting-started/set-metered-license/
 ---
+
+# Nastavte měřenou licenci
+
 ## Úvod
 Ve světě vývoje .NET je začlenění výkonných možností prohlížení dokumentů do vašich aplikací zásadní pro zlepšení uživatelské zkušenosti a funkčnosti. GroupDocs.Viewer for .NET nabízí robustní řešení pro bezproblémovou integraci funkcí prohlížení dokumentů do vašich projektů .NET. Ať už pracujete s PDF, dokumenty Microsoft Office nebo různými formáty obrázků, GroupDocs.Viewer zjednodušuje proces vykreslování a zobrazování těchto dokumentů ve vašich aplikacích.
 ## Předpoklady
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Na závěr, GroupDocs.Viewer for .NET poskytuje komplexní řešení pro začlenění funkcí pro prohlížení dokumentů do vašich aplikací .NET. Podle nastíněných kroků můžete snadno nastavit měřenou licenci a začít využívat možnosti GroupDocs.Viewer ve svých projektech.
 ## FAQ
 ### Otázka: Kde najdu dokumentaci k GroupDocs.Viewer pro .NET?
- Dokumentaci najdete[tady](https://reference.groupdocs.com/viewer/net/).
+ Dokumentaci najdete[tady](https://tutorials.groupdocs.com/viewer/net/).
 ### Otázka: Je k dispozici bezplatná zkušební verze pro GroupDocs.Viewer pro .NET?
  Ano, máte přístup k bezplatné zkušební verzi[tady](https://releases.groupdocs.com/).
 ### Otázka: Jak mohu získat dočasné licence pro testovací účely?

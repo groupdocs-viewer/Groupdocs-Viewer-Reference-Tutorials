@@ -3,10 +3,12 @@ title: Återge ordbehandlingsdokument
 linktitle: Återge ordbehandlingsdokument
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du effektivt renderar spårade ändringar i ordbehandlingsdokument med GroupDocs.Viewer för .NET. Lyft dina färdigheter i dokumenthantering.
-type: docs
 weight: 36
 url: /sv/net/rendering-word-processing-documents/
 ---
+
+# Återge ordbehandlingsdokument
+
 
 ## Introduktion
 

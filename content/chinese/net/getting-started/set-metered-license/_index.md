@@ -3,10 +3,12 @@ title: 设置计量许可证
 linktitle: 设置计量许可证
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 增强您的 .NET 应用程序，以实现无缝文档查看。轻松将文档渲染功能集成到您的项目中。
-type: docs
 weight: 12
 url: /zh/net/getting-started/set-metered-license/
 ---
+
+# 设置计量许可证
+
 ## 介绍
 在 .NET 开发领域，将强大的文档查看功能集成到应用程序中对于增强用户体验和功能至关重要。 GroupDocs.Viewer for .NET 提供了一个强大的解决方案，可将文档查看功能无缝集成到您的 .NET 项目中。无论您使用的是 PDF、Microsoft Office 文档还是各种图像格式，GroupDocs.Viewer 都可以简化在应用程序中渲染和显示这些文档的过程。
 ## 先决条件
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 总之，GroupDocs.Viewer for .NET 提供了一个全面的解决方案，可将文档查看功能合并到 .NET 应用程序中。通过遵循概述的步骤，您可以轻松设置计量许可证并开始在项目中利用 GroupDocs.Viewer 的功能。
 ## 常见问题解答
 ### 问：在哪里可以找到 GroupDocs.Viewer for .NET 的文档？
-你可以找到文档[这里](https://reference.groupdocs.com/viewer/net/).
+你可以找到文档[这里](https://tutorials.groupdocs.com/viewer/net/).
 ### 问：GroupDocs.Viewer for .NET 是否有免费试用版？
 是的，您可以免费试用[这里](https://releases.groupdocs.com/).
 ### 问：如何获得用于测试目的的临时许可证？

@@ -3,10 +3,12 @@ title: Disable Font License Verifications in PDF
 linktitle: Disable Font License Verifications in PDF
 second_title: GroupDocs.Viewer .NET API
 description: Unlock seamless document viewing capabilities in your .NET with GroupDocs.Viewer for .NET. Easily integrate and customize document rendering with minimal dependencies.
-type: docs
 weight: 12
 url: /net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Disable Font License Verifications in PDF
+
 ## Introduction
 In the realm of .NET development, managing and manipulating documents is often a crucial aspect of many applications. Whether it's viewing PDFs, Word documents, or other file types, having robust tools to handle these tasks efficiently is essential. This is where GroupDocs.Viewer for .NET comes into play. This powerful library provides developers with the capability to seamlessly integrate document viewing functionality into their .NET applications.
 ## Prerequisites

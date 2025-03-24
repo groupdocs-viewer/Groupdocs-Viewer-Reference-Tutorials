@@ -3,10 +3,12 @@ title: Rendering Visio Documents
 linktitle: Rendering Visio Documents
 second_title: GroupDocs.Viewer .NET API
 description: Explore tutorials on rendering Visio documents with GroupDocs.Viewer for .NET. Learn to enhance document viewing capabilities in your .NET applications effortlessly.
-type: docs
 weight: 34
 url: /net/rendering-visio-documents/
 ---
+
+# Rendering Visio Documents
+
 ## Introduction
 
 Are you looking to delve deeper into rendering Visio documents within your .NET applications? Look no further than GroupDocs.Viewer for .NET tutorials. In this comprehensive guide, we will walk you through the process step by step, empowering you to enhance your document viewing capabilities seamlessly.

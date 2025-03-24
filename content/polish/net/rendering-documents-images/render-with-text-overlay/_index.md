@@ -3,10 +3,12 @@ title: Renderuj z nałożonym tekstem w celu wyświetlenia
 linktitle: Renderuj z nałożonym tekstem w celu wyświetlenia
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo renderuj dokumenty w aplikacjach .NET za pomocą GroupDocs.Viewer, obsługującego różne formaty w celu zwiększenia komfortu użytkownika.
-type: docs
 weight: 13
 url: /pl/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Renderuj z nałożonym tekstem w celu wyświetlenia
+
 ## Wstęp
 W dziedzinie programowania .NET płynne zarządzanie różnymi formatami dokumentów i ich wyświetlanie ma kluczowe znaczenie dla wielu aplikacji. GroupDocs.Viewer dla .NET okazuje się potężnym rozwiązaniem do łatwego renderowania dokumentów w aplikacjach .NET. Niezależnie od tego, czy są to pliki PDF, dokumenty programu Word, arkusze kalkulacyjne programu Excel czy prezentacje programu PowerPoint, GroupDocs.Viewer upraszcza ten proces, oferując szereg funkcji usprawniających przeglądanie dokumentów.
 ## Warunki wstępne

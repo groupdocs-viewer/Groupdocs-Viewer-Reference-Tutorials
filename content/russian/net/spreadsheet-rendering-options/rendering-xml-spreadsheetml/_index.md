@@ -3,10 +3,12 @@ title: Рендеринг XML SpreadSheetML
 linktitle: Рендеринг XML SpreadSheetML
 second_title: GroupDocs.Viewer .NET API
 description: Изучите беспрепятственный рендеринг файлов XML SpreadSheetML в различных форматах с помощью GroupDocs.Viewer для .NET. Легко интегрируйтесь в ваши приложения.
-type: docs
 weight: 16
 url: /ru/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
+
+# Рендеринг XML SpreadSheetML
+
 ## Введение
 Добро пожаловать в мир GroupDocs.Viewer для .NET! В этом руководстве мы покажем вам, как с легкостью визуализировать XML-файлы SpreadSheetML с помощью GroupDocs.Viewer, мощной библиотеки .NET. Независимо от того, являетесь ли вы опытным разработчиком или только начинаете, это пошаговое руководство поможет вам легко интегрировать рендеринг XML SpreadSheetML в ваши приложения.
 ## Предварительные условия
@@ -83,7 +85,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
 ### Могу ли я настроить внешний вид отображаемых документов?
 Абсолютно! GroupDocs.Viewer предлагает различные варианты настройки, позволяющие адаптировать вывод к вашим конкретным потребностям.
 ### Где я могу найти дополнительную поддержку и ресурсы?
- Посетить[Форум GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) за поддержку сообщества и изучить[документация](https://reference.groupdocs.com/viewer/net/)для получения подробной информации.
+ Посетить[Форум GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) за поддержку сообщества и изучить[документация](https://tutorials.groupdocs.com/viewer/net/)для получения подробной информации.
 ### Доступна ли бесплатная пробная версия?
  Да, вы можете получить доступ к бесплатной пробной версии[здесь](https://releases.groupdocs.com/).
 ### Как получить временную лицензию?

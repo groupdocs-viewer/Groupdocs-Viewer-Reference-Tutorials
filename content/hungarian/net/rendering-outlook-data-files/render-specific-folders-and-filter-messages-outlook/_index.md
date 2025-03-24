@@ -3,10 +3,12 @@ title: Adott mappák és szűrőüzenetek renderelése (Outlook)
 linktitle: Adott mappák és szűrőüzenetek renderelése (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg bizonyos mappákat és szűrhet üzeneteket az Outlook programban a GroupDocs.Viewer for .NET segítségével. Egyszerűsítse a dokumentumkezelést .NET-alkalmazásokban.
-type: docs
 weight: 11
 url: /hu/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Adott mappák és szűrőüzenetek renderelése (Outlook)
+
 ## Bevezetés
 A .NET fejlesztés világában a dokumentumok hatékony kezelése és megjelenítése kulcsfontosságú. A GroupDocs.Viewer for .NET leegyszerűsíti ezt a feladatot, mivel hatékony funkciókat biztosít a különböző dokumentumformátumok zökkenőmentes megjelenítéséhez. Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet adott mappákat megjeleníteni és üzeneteket szűrni az Outlookban a GroupDocs.Viewer for .NET segítségével.
 ## Előfeltételek

@@ -3,10 +3,12 @@ title: 調整 CAD 工程圖的輸出影像尺寸
 linktitle: 調整 CAD 工程圖的輸出影像尺寸
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 調整 CAD 繪圖的輸出影像大小。輕鬆增強可見性和可用性。
-type: docs
 weight: 15
 url: /zh-hant/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# 調整 CAD 工程圖的輸出影像尺寸
+
 ## 介紹
 CAD 繪圖通常需要進行特定調整才能獲得最佳檢視和呈現效果。 GroupDocs.Viewer for .NET 提供了強大的工具集來管理和自訂 CAD 繪圖輸出。在本教學中，我們將引導您逐步完成調整 CAD 工程圖的輸出影像尺寸的過程。
 ## 先決條件

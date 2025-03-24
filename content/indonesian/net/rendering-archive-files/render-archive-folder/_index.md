@@ -3,10 +3,12 @@ title: Render Folder Arsip
 linktitle: Render Folder Arsip
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan GroupDocs.Viewer untuk .NET dengan lancar ke dalam aplikasi .NET Anda untuk kemampuan rendering dan tampilan dokumen yang efisien.
-type: docs
 weight: 11
 url: /id/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Render Folder Arsip
+
 ## Perkenalan
 Di era digital saat ini, mengakses dan melihat dokumen dengan lancar sangatlah penting bagi bisnis dan individu. Untungnya, dengan kemajuan teknologi, pengembang kini memiliki alat canggih untuk mengintegrasikan kemampuan melihat dokumen ke dalam aplikasi mereka dengan mudah. Salah satu alat tersebut adalah GroupDocs.Viewer untuk .NET, perpustakaan serbaguna yang memberdayakan pengembang untuk merender berbagai format dokumen dalam aplikasi .NET mereka.
 ## Prasyarat

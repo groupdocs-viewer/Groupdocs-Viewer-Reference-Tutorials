@@ -3,16 +3,18 @@ title: ページの反転と回転
 linktitle: ページの反転と回転
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET をアプリケーションに統合して、シームレスなドキュメントのレンダリング、反転、回転を行う方法を学びます。
-type: docs
 weight: 12
 url: /ja/net/rendering-options/flip-rotate-pages/
 ---
+
+# ページの反転と回転
+
 ## 導入
 このチュートリアルでは、Groupdocs.Viewer for .NET の機能を詳しく掘り下げ、特にページの反転と回転に焦点を当てます。 Groupdocs.Viewer for .NET は、.NET アプリケーション内でドキュメントをさまざまな形式でレンダリングするように設計された強力なツールです。ドキュメント管理システムを開発している場合でも、ドキュメント表示機能をソフトウェアに統合する必要がある場合でも、Groupdocs.Viewer for .NET は効率的なソリューションを提供します。
 ## 前提条件
 始める前に、次の前提条件が設定されていることを確認してください。
 ### .NET 用 Groupdocs.Viewer のインストール
-Groupdocs.Viewer for .NET を使用するには、NuGet パッケージ マネージャーを介してパッケージをインストールする必要があります。詳細なインストール手順については、[ドキュメンテーション](https://reference.groupdocs.com/viewer/net/).
+Groupdocs.Viewer for .NET を使用するには、NuGet パッケージ マネージャーを介してパッケージをインストールする必要があります。詳細なインストール手順については、[ドキュメンテーション](https://tutorials.groupdocs.com/viewer/net/).
 
 ## 名前空間のインポート
 Groupdocs.Viewer for .NET を効果的に利用するには、必要な名前空間がプロジェクトにインポートされていることを確認してください。

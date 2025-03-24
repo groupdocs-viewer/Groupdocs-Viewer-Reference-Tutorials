@@ -3,10 +3,12 @@ title: Definir tempo limite de carregamento de recursos (avançado)
 linktitle: Definir tempo limite de carregamento de recursos (avançado)
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como configurar tempos limite de carregamento de recursos no GroupDocs.Viewer for .NET com eficiência. Domine a renderização de documentos com precisão e estabilidade.
-type: docs
 weight: 13
 url: /pt/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Definir tempo limite de carregamento de recursos (avançado)
+
 ## Introdução
 No domínio do desenvolvimento .NET, GroupDocs.Viewer fornece um conjunto de ferramentas poderoso para renderizar documentos e imagens com precisão e eficiência. Aproveitar seus recursos requer a compreensão de suas complexidades, incluindo a definição de tempos limite de carregamento de recursos. Neste tutorial, nos aprofundaremos no processo de configuração de tempos limite de carregamento de recursos no GroupDocs.Viewer for .NET.
 ## Pré-requisitos

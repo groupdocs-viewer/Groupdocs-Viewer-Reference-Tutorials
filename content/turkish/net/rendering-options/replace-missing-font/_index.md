@@ -3,10 +3,12 @@ title: Eksik Yazı Tipini Değiştir
 linktitle: Eksik Yazı Tipini Değiştir
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak .NET belgelerindeki eksik yazı tiplerini zahmetsizce nasıl değiştireceğinizi öğrenin. Basit adımlarla doğru işlemeyi sağlayın.
-type: docs
 weight: 20
 url: /tr/net/rendering-options/replace-missing-font/
 ---
+
+# Eksik Yazı Tipini Değiştir
+
 ## giriiş
 .NET geliştirme dünyasında, verimli belge yönetimi çok önemlidir. GroupDocs.Viewer for .NET, .NET uygulamalarınızdaki çeşitli belge formatlarını görüntülemek için güçlü bir çözüm sağlar. Bu öğreticide, belgelerdeki eksik yazı tiplerini değiştirmek için GroupDocs.Viewer for .NET'in nasıl kullanılacağını keşfedeceğiz. İster PDF'lerle, ister PowerPoint sunumlarıyla, ister Word belgeleriyle çalışıyor olun, GroupDocs.Viewer süreci basitleştirerek yazı tipleri eksik olsa bile belgelerinizin doğru şekilde oluşturulmasını sağlar.
 ## Önkoşullar

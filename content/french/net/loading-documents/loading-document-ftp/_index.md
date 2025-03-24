@@ -3,10 +3,12 @@ title: Charger des documents depuis FTP (avancé)
 linktitle: Charger des documents depuis FTP (avancé)
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez GroupDocs.Viewer pour .NET de manière transparente dans vos applications pour une visualisation efficace des documents. Rendre des documents à partir de FTP sans effort.
-type: docs
 weight: 13
 url: /fr/net/loading-documents/loading-document-ftp/
 ---
+
+# Charger des documents depuis FTP (avancé)
+
 ## Introduction
 GroupDocs.Viewer for .NET est une API puissante qui permet aux développeurs d'intégrer de manière transparente des fonctionnalités de visualisation de documents dans leurs applications .NET. Que vous travailliez avec des PDF, des documents Microsoft Office ou d'autres formats de fichiers populaires, GroupDocs.Viewer simplifie le processus de rendu des documents à afficher, facilitant ainsi plus que jamais l'offre aux utilisateurs d'une expérience de visualisation riche.
 ## Conditions préalables

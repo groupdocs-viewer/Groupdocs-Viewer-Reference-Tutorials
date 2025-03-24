@@ -3,10 +3,12 @@ title: Définir la licence à partir du flux
 linktitle: Définir la licence à partir du flux
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez vos applications .NET avec GroupDocs.Viewer pour une visualisation transparente des documents. Suivez notre guide étape par étape et intégrez sans effort de puissantes fonctionnalités de visualisation de documents.
-type: docs
 weight: 11
 url: /fr/net/getting-started/set-license-from-stream/
 ---
+
+# Définir la licence à partir du flux
+
 ## Introduction
 Cherchez-vous à doter vos applications .NET de fonctionnalités avancées de visualisation de documents ? GroupDocs.Viewer for .NET offre une solution complète pour intégrer de manière transparente les fonctionnalités de visualisation de documents dans vos projets. Dans ce didacticiel, nous approfondirons le processus d'exploitation de GroupDocs.Viewer pour .NET pour enrichir vos applications avec de puissantes fonctionnalités de visualisation de documents. 
 ## Conditions préalables
@@ -14,7 +16,7 @@ Avant de nous lancer dans le processus d'intégration, assurez-vous que les cond
 1. Connaissance de base du développement .NET : une connaissance du framework C# et .NET est essentielle pour suivre ce didacticiel.
    
 2.  Package GroupDocs.Viewer pour .NET : assurez-vous d'avoir téléchargé et installé le package GroupDocs.Viewer pour .NET. Vous pouvez l'obtenir auprès du[lien de téléchargement](https://releases.groupdocs.com/viewer/net/).
-3.  Accès à la Documentation GroupDocs : conservez le[documentation](https://reference.groupdocs.com/viewer/net/) pratique pour référence pendant le processus d’intégration.
+3.  Accès à la Documentation GroupDocs : conservez le[documentation](https://tutorials.groupdocs.com/viewer/net/) pratique pour référence pendant le processus d’intégration.
 
 ## Importer des espaces de noms
 Pour commencer, importez les espaces de noms nécessaires dans votre application .NET. Suivez ces étapes:

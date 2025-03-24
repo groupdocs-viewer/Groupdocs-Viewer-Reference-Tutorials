@@ -3,10 +3,12 @@ title: Archiefbestanden renderen
 linktitle: Archiefbestanden renderen
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek uitgebreide tutorials voor het renderen van archiefbestanden met GroupDocs.Viewer voor .NET. Integreer naadloos en efficiënt in uw .NET-applicaties.
-type: docs
 weight: 24
 url: /nl/net/rendering-archive-files/
 ---
+
+# Archiefbestanden renderen
+
 ## Invoering
 
 Bent u op zoek naar een naadloze integratie van GroupDocs.Viewer voor .NET in uw toepassingen voor efficiënte weergave- en weergavemogelijkheden van documenten? Zoek niet verder! Onze tutorials behandelen alles wat u moet weten om het maximale uit het renderen van archiefbestanden te halen. Laten we in de details duiken.

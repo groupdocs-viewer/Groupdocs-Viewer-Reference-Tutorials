@@ -3,10 +3,12 @@ title: Render Gambar CDR
 linktitle: Render Gambar CDR
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender gambar CDR ke HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk .NET. Konversi file CorelDRAW dengan mudah menggunakan tutorial ini.
-type: docs
 weight: 12
 url: /id/net/image-rendering/render-cdr-images/
 ---
+
+# Render Gambar CDR
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses rendering gambar CDR (CorelDRAW) menggunakan GroupDocs.Viewer untuk .NET. CDR adalah format file yang terutama dikaitkan dengan CorelDRAW, editor grafis vektor. Dengan GroupDocs.Viewer, Anda dapat dengan mudah mengonversi file CDR ke berbagai format seperti HTML, JPG, PNG, dan PDF.
 ## Prasyarat

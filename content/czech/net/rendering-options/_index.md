@@ -3,10 +3,12 @@ title: Možnosti vykreslování
 linktitle: Možnosti vykreslování
 second_title: GroupDocs.Viewer .NET API
 description: Bez námahy integrujte GroupDocs.Viewer pro .NET do svých aplikací pomocí výukových programů o možnostech vykreslování, od přidávání vodoznaků po přizpůsobení písem.
-type: docs
 weight: 23
 url: /cs/net/rendering-options/
 ---
+
+# Možnosti vykreslování
+
 
 ## Úvod
 

@@ -3,10 +3,12 @@ title: عرض الصورة
 linktitle: عرض الصورة
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف البرامج التعليمية الشاملة حول عرض تنسيقات الصور المختلفة باستخدام GroupDocs.Viewer لـ .NET. من الذكاء الاصطناعي إلى WMF، تعلم التكامل السلس وأمثلة الترميز.
-type: docs
 weight: 28
 url: /ar/net/image-rendering/
 ---
+
+# عرض الصورة
+
 
 ## مقدمة
 

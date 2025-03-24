@@ -3,10 +3,12 @@ title: خيارات عرض PDF
 linktitle: خيارات عرض PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تحسين عرض ملفات PDF باستخدام البرامج التعليمية GroupDocs.Viewer .NET. استكشف خيارات عرض PDF مثل ضبط جودة الصورة وتعطيل تحديد النص.
-type: docs
 weight: 38
 url: /ar/net/pdf-rendering-options/
 ---
+
+# خيارات عرض PDF
+
 
 ## مقدمة
 

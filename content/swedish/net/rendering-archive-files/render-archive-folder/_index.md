@@ -3,10 +3,12 @@ title: Render arkivmapp
 linktitle: Render arkivmapp
 second_title: GroupDocs.Viewer .NET API
 description: Integrera GroupDocs.Viewer för .NET sömlöst i dina .NET-applikationer för effektiv dokumentåtergivning och visningsmöjligheter.
-type: docs
 weight: 11
 url: /sv/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Render arkivmapp
+
 ## Introduktion
 I dagens digitala tidsålder är det avgörande för både företag och privatpersoner att få tillgång till och se dokument sömlöst. Lyckligtvis, med teknikens framsteg, har utvecklare nu kraftfulla verktyg till sitt förfogande för att enkelt integrera dokumentvisningsmöjligheter i sina applikationer. Ett sådant verktyg är GroupDocs.Viewer för .NET, ett mångsidigt bibliotek som ger utvecklare möjlighet att rendera olika dokumentformat i sina .NET-applikationer.
 ## Förutsättningar

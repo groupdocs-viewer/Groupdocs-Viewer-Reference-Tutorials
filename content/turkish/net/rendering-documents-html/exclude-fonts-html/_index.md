@@ -3,10 +3,12 @@ title: Yazı Tiplerini İşlenen HTML'den Hariç Tut
 linktitle: Yazı Tiplerini İşlenen HTML'den Hariç Tut
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak yazı tiplerini oluşturulan HTML'den nasıl hariç tutacağınızı öğrenin. Sorunsuz belge görüntüleme için bu adım adım kılavuzu izleyin.
-type: docs
 weight: 10
 url: /tr/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Yazı Tiplerini İşlenen HTML'den Hariç Tut
+
 ## giriiş
 GroupDocs.Viewer for .NET, geliştiricilerin harici bağımlılıklara ihtiyaç duymadan .NET uygulamalarında 50'den fazla belge formatını görüntülemesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Bu öğreticide GroupDocs.Viewer'ın belirli bir özelliğine odaklanacağız: yazı tiplerini oluşturulan HTML çıktısından hariç tutmak. 
 ## Önkoşullar

@@ -3,10 +3,12 @@ title: Render Gambar WMZ dan WMF
 linktitle: Render Gambar WMZ dan WMF
 second_title: GroupDocs.Viewer .NET API
 description: Render gambar WMZ dan WMF dengan mudah dalam aplikasi .NET menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan kemampuan pemrosesan dokumen dengan mudah.
-type: docs
 weight: 18
 url: /id/net/image-rendering/render-wmz-wmf-images/
 ---
+
+# Render Gambar WMZ dan WMF
+
 ## Perkenalan
 
 Dalam bidang pengembangan perangkat lunak, penanganan dan rendering berbagai format dokumen secara efisien adalah hal yang terpenting. GroupDocs.Viewer untuk .NET adalah alat canggih yang memfasilitasi rendering beragam format dokumen, memastikan integrasi lancar dan meningkatkan pengalaman pengguna dalam aplikasi .NET. Di antara kemampuannya adalah rendering gambar WMZ dan WMF, tugas yang sering ditemui dalam skenario pemrosesan dokumen.
@@ -21,7 +23,7 @@ Sebelum mendalami proses rendering gambar WMZ dan WMF menggunakan GroupDocs.View
 
 3. Keakraban dengan Lingkungan .NET: Pemahaman mendasar tentang kerangka .NET dan bahasa pemrograman C# sangat penting untuk mengimplementasikan proses rendering secara efektif.
 
-4.  Integrasi ke dalam Proyek Anda: Pastikan GroupDocs.Viewer untuk .NET terintegrasi dengan benar ke dalam proyek .NET Anda. Lihat dokumentasi untuk petunjuk rinci tentang integrasi:[Dokumentasi](https://reference.groupdocs.com/viewer/net/).
+4.  Integrasi ke dalam Proyek Anda: Pastikan GroupDocs.Viewer untuk .NET terintegrasi dengan benar ke dalam proyek .NET Anda. Lihat dokumentasi untuk petunjuk rinci tentang integrasi:[Dokumentasi](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Impor Namespace
 

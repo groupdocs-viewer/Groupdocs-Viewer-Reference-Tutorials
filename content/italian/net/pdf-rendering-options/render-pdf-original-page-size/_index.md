@@ -3,10 +3,12 @@ title: Visualizza il PDF con la dimensione della pagina originale
 linktitle: Visualizza il PDF con la dimensione della pagina originale
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering dei PDF con le dimensioni di pagina originali utilizzando GroupDocs.Viewer per .NET. Segui la nostra guida passo passo e integra perfettamente questa funzionalità.
-type: docs
 weight: 17
 url: /it/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# Visualizza il PDF con la dimensione della pagina originale
+
 ## introduzione
 Nell'ambito dello sviluppo .NET, GroupDocs.Viewer si distingue come un potente strumento per il rendering di vari formati di documenti, inclusi i PDF. Un requisito comune nella gestione dei documenti è eseguire il rendering dei PDF preservando le dimensioni della pagina originale. Il raggiungimento di questo compito senza problemi richiede una conoscenza approfondita di GroupDocs.Viewer per .NET e delle sue funzionalità.
 ## Prerequisiti

@@ -3,10 +3,12 @@ title: 渲染响应式 HTML
 linktitle: 渲染响应式 HTML
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 呈现响应式 HTML，确保跨设备的最佳查看体验。
-type: docs
 weight: 13
 url: /zh/net/rendering-documents-html/render-responsive-html/
 ---
+
+# 渲染响应式 HTML
+
 ## 介绍
 Groupdocs.Viewer for .NET 是一个功能强大的库，允许开发人员将各种文档格式呈现为响应式 HTML。本教程将指导您完成使用 Groupdocs.Viewer for .NET 呈现响应式 HTML 的过程。学完本教程后，您将能够将文档无缝转换为适应不同屏幕尺寸的 HTML，从而确保跨设备的最佳查看体验。
 ## 先决条件

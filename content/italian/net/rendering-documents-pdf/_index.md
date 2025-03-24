@@ -3,10 +3,12 @@ title: Rendering di documenti in PDF
 linktitle: Rendering di documenti in PDF
 second_title: API GroupDocs.Viewer .NET
 description: Impara a eseguire il rendering dei documenti in PDF, regola la qualità delle immagini JPG e proteggi i PDF con password utilizzando i tutorial di GroupDocs.Viewer per .NET.
-type: docs
 weight: 29
 url: /it/net/rendering-documents-pdf/
 ---
+
+# Rendering di documenti in PDF
+
 
 ## introduzione
 

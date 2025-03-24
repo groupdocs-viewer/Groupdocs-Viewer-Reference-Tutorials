@@ -3,10 +3,12 @@ title: Renderizando documentos para HTML
 linktitle: Renderizando documentos para HTML
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriais abrangentes sobre renderização de documentos em HTML usando GroupDocs.Viewer for .NET. Aprenda técnicas para exibição de documentos e experiência aprimorada do usuário.
-type: docs
 weight: 31
 url: /pt/net/rendering-documents-html/
 ---
+
+# Renderizando documentos para HTML
+
 
 ## Introdução
 

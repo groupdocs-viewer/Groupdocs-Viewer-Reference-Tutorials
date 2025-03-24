@@ -3,10 +3,12 @@ title: Начиная
 linktitle: Начиная
 second_title: GroupDocs.Viewer .NET API
 description: Откройте для себя пошаговые руководства по плавной интеграции GroupDocs.Viewer для .NET в ваши приложения. Узнайте, как устанавливать лицензии и настраивать внешний вид средства просмотра.
-type: docs
 weight: 26
 url: /ru/net/getting-started/
 ---
+
+# Начиная
+
 
 ## Введение
 

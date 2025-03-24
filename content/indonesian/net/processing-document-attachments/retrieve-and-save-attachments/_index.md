@@ -3,10 +3,12 @@ title: Ambil dan Simpan Lampiran Dokumen
 linktitle: Ambil dan Simpan Lampiran Dokumen
 second_title: GroupDocs.Viewer .NET API
 description: Kelola lampiran dokumen secara efisien dalam aplikasi .NET menggunakan GroupDocs.Viewer. Ambil dan simpan lampiran tanpa repot.
-type: docs
 weight: 12
 url: /id/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Ambil dan Simpan Lampiran Dokumen
+
 ## Perkenalan
 Di era digital, penanganan dokumen yang efisien sangat penting bagi bisnis dan individu. Baik itu mengelola email, melihat kontrak, atau mengakses laporan, memiliki alat yang andal untuk visualisasi dokumen sangatlah penting. GroupDocs.Viewer untuk .NET muncul sebagai solusi tangguh, memberdayakan pengguna untuk dengan mudah melihat dan berinteraksi dengan berbagai format dokumen langsung dalam aplikasi .NET mereka.
 ## Prasyarat
@@ -65,6 +67,6 @@ Ya, GroupDocs.Viewer mendukung berbagai format dokumen, termasuk PDF, dokumen Mi
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Viewer untuk .NET?
  Lisensi sementara dapat diperoleh dari[Link ini](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Viewer untuk .NET?
- Dokumentasi komprehensif tersedia[Di Sini](https://reference.groupdocs.com/viewer/net/).
+ Dokumentasi komprehensif tersedia[Di Sini](https://tutorials.groupdocs.com/viewer/net/).
 ### Opsi dukungan apa yang tersedia untuk GroupDocs.Viewer untuk .NET?
  Anda dapat mencari bantuan dari forum komunitas[Di Sini](https://forum.groupdocs.com/c/viewer/9).

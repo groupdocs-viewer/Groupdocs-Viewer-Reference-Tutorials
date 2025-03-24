@@ -3,10 +3,12 @@ title: Gemeten licentie instellen
 linktitle: Gemeten licentie instellen
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter uw .NET-toepassingen met GroupDocs.Viewer voor naadloze documentweergave. Integreer eenvoudig functionaliteiten voor documentweergave in uw projecten.
-type: docs
 weight: 12
 url: /nl/net/getting-started/set-metered-license/
 ---
+
+# Gemeten licentie instellen
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het integreren van krachtige documentweergavemogelijkheden in uw applicaties essentieel voor het verbeteren van de gebruikerservaring en functionaliteit. GroupDocs.Viewer voor .NET biedt een robuuste oplossing voor het naadloos integreren van documentweergavefunctionaliteiten in uw .NET-projecten. Of u nu werkt met PDF's, Microsoft Office-documenten of verschillende afbeeldingsformaten, GroupDocs.Viewer vereenvoudigt het proces van het weergeven en weergeven van deze documenten in uw toepassingen.
 ## Vereisten
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Concluderend biedt GroupDocs.Viewer voor .NET een uitgebreide oplossing voor het integreren van functionaliteit voor het bekijken van documenten in uw .NET-toepassingen. Door de beschreven stappen te volgen, kunt u eenvoudig een gemeten licentie instellen en de mogelijkheden van GroupDocs.Viewer binnen uw projecten gaan benutten.
 ## Veelgestelde vragen
 ### Vraag: Waar kan ik documentatie vinden voor GroupDocs.Viewer voor .NET?
- U kunt de documentatie vinden[hier](https://reference.groupdocs.com/viewer/net/).
+ U kunt de documentatie vinden[hier](https://tutorials.groupdocs.com/viewer/net/).
 ### Vraag: Is er een gratis proefversie beschikbaar voor GroupDocs.Viewer voor .NET?
  Ja, u heeft toegang tot de gratis proefperiode[hier](https://releases.groupdocs.com/).
 ### Vraag: Hoe kan ik tijdelijke licenties verkrijgen voor testdoeleinden?

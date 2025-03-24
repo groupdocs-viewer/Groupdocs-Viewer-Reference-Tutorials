@@ -3,10 +3,12 @@ title: Vykreslování pomocí vlastních písem
 linktitle: Vykreslování pomocí vlastních písem
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat dokumenty pomocí vlastních písem pomocí GroupDocs.Viewer for .NET. Vylepšete vizuální prezentace bez námahy.
-type: docs
 weight: 18
 url: /cs/net/rendering-options/render-custom-fonts/
 ---
+
+# Vykreslování pomocí vlastních písem
+
 ## Úvod
 oblasti vývoje .NET nabízí GroupDocs.Viewer výkonné řešení pro vykreslování dokumentů různých formátů. Mezi mnoha funkcemi GroupDocs.Viewer umožňuje vykreslování dokumentů pomocí vlastních písem a přidává vašim aplikacím vrstvu personalizace a flexibility.
 ## Předpoklady

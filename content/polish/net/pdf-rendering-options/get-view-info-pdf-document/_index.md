@@ -3,10 +3,12 @@ title: Uzyskaj informacje o wyświetleniu dokumentu PDF
 linktitle: Uzyskaj informacje o wyświetleniu dokumentu PDF
 second_title: GroupDocs.Viewer API .NET
 description: Z tego obszernego samouczka dowiesz się, jak wyodrębnić informacje o widoku z dokumentów PDF za pomocą programu GroupDocs.Viewer dla platformy .NET.
-type: docs
 weight: 16
 url: /pl/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Uzyskaj informacje o wyświetleniu dokumentu PDF
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to potężne narzędzie zaprojektowane w celu usprawnienia przeglądania dokumentów w aplikacjach .NET. Niezależnie od tego, czy masz do czynienia z plikami PDF, dokumentami programu Word, arkuszami kalkulacyjnymi programu Excel czy prezentacjami programu PowerPoint, ta biblioteka upraszcza proces renderowania i interakcji z różnymi formatami plików. W tym samouczku skupimy się na wykorzystaniu możliwości programu GroupDocs.Viewer specjalnie do wyodrębniania informacji o widoku z dokumentów PDF.
 ## Warunki wstępne

@@ -3,10 +3,12 @@ title: Render s vloženými nebo externími zdroji
 linktitle: Render s vloženými nebo externími zdroji
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete prohlížení .NET dokumentů pomocí GroupDocs.Viewer pro bezproblémové vykreslování. Postupujte podle našeho výukového programu pro efektivní integraci a vynikající uživatelskou zkušenost.
-type: docs
 weight: 12
 url: /cs/net/rendering-documents-html/render-html-resources/
 ---
+
+# Render s vloženými nebo externími zdroji
+
 ## Úvod
 
 Ve světě vývoje .NET je efektivní prohlížení dokumentů klíčovým aspektem mnoha aplikací. GroupDocs.Viewer for .NET poskytuje výkonné řešení pro vykreslování dokumentů s vloženými nebo externími zdroji. V tomto tutoriálu prozkoumáme, jak využít GroupDocs.Viewer k bezproblémovému vykreslování dokumentů, přičemž každý krok rozebereme pro jasnost a porozumění.

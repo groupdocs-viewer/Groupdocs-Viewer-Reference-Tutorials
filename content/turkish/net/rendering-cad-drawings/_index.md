@@ -3,10 +3,12 @@ title: CAD Çizimlerinin Oluşturulması
 linktitle: CAD Çizimlerinin Oluşturulması
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak CAD çizimlerini oluşturmaya yönelik eğitimleri keşfedin. Sorunsuz CAD dosya işlemeyle .NET uygulamalarını geliştirmeyi öğrenin.
-type: docs
 weight: 25
 url: /tr/net/rendering-cad-drawings/
 ---
+
+# CAD Çizimlerinin Oluşturulması
+
 
 ## giriiş
 

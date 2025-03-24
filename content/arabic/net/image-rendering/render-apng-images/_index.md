@@ -3,10 +3,12 @@ title: عرض صور APNG
 linktitle: عرض صور APNG
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور APNG بتنسيقات مختلفة باستخدام Groupdocs.Viewer لـ .NET. تم تضمين دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 11
 url: /ar/net/image-rendering/render-apng-images/
 ---
+
+# عرض صور APNG
+
 ## مقدمة
 يعد Groupdocs.Viewer for .NET أداة قوية تسمح للمطورين بعرض تنسيقات المستندات المختلفة بسلاسة في تطبيقات .NET الخاصة بهم. ومن بين ميزاته العديدة، يوفر وظائف قوية لعرض صور APNG (رسومات الشبكة المحمولة المتحركة)، مما يتيح للمطورين عرض صور APNG بتنسيقات مختلفة مثل HTML وJPG وPNG وPDF.
 

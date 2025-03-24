@@ -3,10 +3,12 @@ title: Đặt giới hạn kích thước hình ảnh
 linktitle: Đặt giới hạn kích thước hình ảnh
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách đặt giới hạn kích thước hình ảnh trong các ứng dụng .NET một cách dễ dàng bằng GroupDocs.Viewer dành cho .NET, nâng cao trải nghiệm xem tài liệu.
-type: docs
 weight: 21
 url: /vi/net/rendering-options/set-image-size-limits/
 ---
+
+# Đặt giới hạn kích thước hình ảnh
+
 ## Giới thiệu
 GroupDocs.Viewer dành cho .NET là một công cụ mạnh mẽ được thiết kế để tạo điều kiện thuận lợi cho việc xem tài liệu liền mạch trong các ứng dụng .NET. Với các tính năng mạnh mẽ và giao diện trực quan, các nhà phát triển có thể dễ dàng tích hợp khả năng xem tài liệu vào dự án của mình, nâng cao trải nghiệm và năng suất của người dùng. Trong hướng dẫn này, chúng ta sẽ khám phá cách đặt giới hạn kích thước hình ảnh bằng GroupDocs.Viewer cho .NET, đảm bảo hiển thị tài liệu tối ưu trong khi vẫn duy trì hiệu suất và hiệu quả.
 ## Điều kiện tiên quyết

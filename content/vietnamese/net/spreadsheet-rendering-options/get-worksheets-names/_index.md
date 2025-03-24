@@ -3,10 +3,12 @@ title: Nhận tên bảng tính
 linktitle: Nhận tên bảng tính
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá sự kỳ diệu của GroupDocs.Viewer dành cho .NET – tích hợp liền mạch việc xem tài liệu vào ứng dụng của bạn. Hãy thử dùng thử miễn phí ngay bây giờ!
-type: docs
 weight: 11
 url: /vi/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Nhận tên bảng tính
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới hấp dẫn của GroupDocs.Viewer dành cho .NET! Nếu bạn là nhà phát triển hoặc người đam mê khám phá các khả năng xem tài liệu mạnh mẽ trong các ứng dụng .NET của mình thì bạn sẽ rất thích thú. Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào sự phức tạp của việc truy xuất tên bảng tính bằng GroupDocs.Viewer. Vì vậy, hãy thắt dây an toàn và bắt tay vào cuộc hành trình thú vị này!
 ## Điều kiện tiên quyết
@@ -63,4 +65,4 @@ Tuyệt đối! GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu, 
 ### Tôi có thể xin được giấy phép tạm thời không?
  Chắc chắn! Thăm nom[liên kết này](https://purchase.groupdocs.com/temporary-license/) để có được giấy phép tạm thời của bạn.
 ### Có sẵn nguồn tài liệu chi tiết không?
- Tuyệt đối! Kiểm tra[tài liệu chính thức](https://reference.groupdocs.com/viewer/net/) để biết thông tin và hướng dẫn chuyên sâu.
+ Tuyệt đối! Kiểm tra[tài liệu chính thức](https://tutorials.groupdocs.com/viewer/net/) để biết thông tin và hướng dẫn chuyên sâu.

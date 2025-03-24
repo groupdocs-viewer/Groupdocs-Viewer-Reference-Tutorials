@@ -3,10 +3,12 @@ title: Obtener información de visualización para un documento PDF
 linktitle: Obtener información de visualización para un documento PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a extraer información de visualización de documentos PDF utilizando GroupDocs.Viewer para .NET en este completo tutorial.
-type: docs
 weight: 16
 url: /es/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Obtener información de visualización para un documento PDF
+
 ## Introducción
 GroupDocs.Viewer para .NET es una poderosa herramienta diseñada para optimizar la visualización de documentos dentro de aplicaciones .NET. Ya sea que trabaje con archivos PDF, documentos de Word, hojas de cálculo de Excel o presentaciones de PowerPoint, esta biblioteca simplifica el proceso de renderizado e interacción con varios formatos de archivos. En este tutorial, nos centraremos en aprovechar las capacidades de GroupDocs.Viewer específicamente para extraer información de visualización de documentos PDF.
 ## Requisitos previos

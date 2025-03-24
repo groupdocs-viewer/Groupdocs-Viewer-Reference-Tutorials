@@ -3,10 +3,12 @@ title: 리소스 로딩 시간 초과 설정(고급)
 linktitle: 리소스 로딩 시간 초과 설정(고급)
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer에서 리소스 로드 시간 초과를 효율적으로 구성하는 방법을 알아보세요. 정밀하고 안정적인 마스터 문서 렌더링.
-type: docs
 weight: 13
 url: /ko/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# 리소스 로딩 시간 초과 설정(고급)
+
 ## 소개
 .NET 개발 영역에서 GroupDocs.Viewer는 문서와 이미지를 정확하고 효율적으로 렌더링하기 위한 강력한 도구 세트를 제공합니다. 해당 기능을 활용하려면 리소스 로딩 시간 제한 설정을 포함한 복잡성을 이해해야 합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer에서 리소스 로드 시간 제한을 구성하는 프로세스를 자세히 살펴보겠습니다.
 ## 전제조건

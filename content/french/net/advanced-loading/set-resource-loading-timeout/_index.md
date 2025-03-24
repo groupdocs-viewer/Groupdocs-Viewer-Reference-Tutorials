@@ -3,10 +3,12 @@ title: Définir le délai d'expiration du chargement des ressources (avancé)
 linktitle: Définir le délai d'expiration du chargement des ressources (avancé)
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment configurer efficacement les délais d’attente de chargement des ressources dans GroupDocs.Viewer pour .NET. Maîtrisez le rendu des documents avec précision et stabilité.
-type: docs
 weight: 13
 url: /fr/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Définir le délai d'expiration du chargement des ressources (avancé)
+
 ## Introduction
 Dans le domaine du développement .NET, GroupDocs.Viewer fournit un ensemble d'outils puissants pour restituer des documents et des images avec précision et efficacité. Pour tirer parti de ses capacités, il faut comprendre ses subtilités, notamment la définition de délais d'attente pour le chargement des ressources. Dans ce didacticiel, nous aborderons le processus de configuration des délais d'attente de chargement des ressources dans GroupDocs.Viewer pour .NET.
 ## Conditions préalables

@@ -3,10 +3,12 @@ title: Ladda dokument från Stream
 linktitle: Ladda dokument från Stream
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du sömlöst laddar dokument från strömmar med GroupDocs.Viewer för .NET. Förbättra dina .NET-applikationer med kraftfulla dokumentvisningsmöjligheter.
-type: docs
 weight: 12
 url: /sv/net/loading-documents/loading-document-stream/
 ---
+
+# Ladda dokument från Stream
+
 ## Introduktion
 När det gäller .NET-utveckling är hantering och visning av dokument effektivt av största vikt. Med tillkomsten av avancerade verktyg och bibliotek har uppgifter som en gång verkade skrämmande nu förenklats. Bland dessa verktyg utmärker sig GroupDocs.Viewer för .NET som en mångsidig lösning för att sömlöst hantera olika dokumentformat. I den här omfattande guiden fördjupar vi oss i krångligheterna med att använda GroupDocs.Viewer för .NET för att ladda dokument från en ström. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer denna handledning att utrusta dig med kunskapen för att utnyttja kraften i GroupDocs.Viewer effektivt.
 ## Förutsättningar

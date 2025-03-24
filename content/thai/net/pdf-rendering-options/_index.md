@@ -3,10 +3,12 @@ title: ตัวเลือกการเรนเดอร์ PDF
 linktitle: ตัวเลือกการเรนเดอร์ PDF
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเพิ่มประสิทธิภาพการดู PDF ด้วยบทช่วยสอน GroupDocs.Viewer .NET สำรวจตัวเลือกการเรนเดอร์ PDF เช่น การปรับคุณภาพของภาพและการปิดใช้งานการเลือกข้อความ
-type: docs
 weight: 38
 url: /th/net/pdf-rendering-options/
 ---
+
+# ตัวเลือกการเรนเดอร์ PDF
+
 
 ## การแนะนำ
 

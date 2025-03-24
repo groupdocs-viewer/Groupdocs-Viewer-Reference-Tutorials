@@ -3,10 +3,12 @@ title: การเรนเดอร์แบบ CAD
 linktitle: การเรนเดอร์แบบ CAD
 second_title: GroupDocs.Viewer .NET API
 description: ค้นพบบทช่วยสอนสำหรับการเรนเดอร์ภาพวาด CAD โดยใช้ GroupDocs.Viewer สำหรับ .NET เรียนรู้การปรับปรุงแอปพลิเคชัน .NET ด้วยการจัดการไฟล์ CAD ที่ราบรื่น
-type: docs
 weight: 25
 url: /th/net/rendering-cad-drawings/
 ---
+
+# การเรนเดอร์แบบ CAD
+
 
 ## การแนะนำ
 

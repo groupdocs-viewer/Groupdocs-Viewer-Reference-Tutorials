@@ -3,10 +3,12 @@ title: Hiển thị các cột và hàng ẩn
 linktitle: Hiển thị các cột và hàng ẩn
 second_title: API GroupDocs.Viewer .NET
 description: Dễ dàng mở khóa dữ liệu ẩn trong bảng tính bằng GroupDocs.Viewer cho .NET. Làm theo hướng dẫn từng bước của chúng tôi để hiển thị các cột và hàng bị ẩn.
-type: docs
 weight: 13
 url: /vi/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Hiển thị các cột và hàng ẩn
+
 ## Giới thiệu
 Trong lĩnh vực trực quan hóa tài liệu, GroupDocs.Viewer dành cho .NET nổi bật như một công cụ mạnh mẽ tạo điều kiện hiển thị liền mạch các định dạng tài liệu khác nhau. Một khả năng hấp dẫn là khả năng hiển thị các cột và hàng ẩn trong bảng tính. Trong hướng dẫn này, chúng tôi sẽ đi sâu vào các bước để mở khóa tính năng này và giải phóng tiềm năng dữ liệu của bạn.
 ## Điều kiện tiên quyết

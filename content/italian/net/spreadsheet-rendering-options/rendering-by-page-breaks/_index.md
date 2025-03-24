@@ -3,10 +3,12 @@ title: Rendering tramite interruzioni di pagina
 linktitle: Rendering tramite interruzioni di pagina
 second_title: API GroupDocs.Viewer .NET
 description: Esplora la potenza di GroupDocs.Viewer per .NET nel rendering di documenti con precisione. Segui il nostro tutorial passo passo per il rendering tramite interruzioni di pagina.
-type: docs
 weight: 14
 url: /it/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Rendering tramite interruzioni di pagina
+
 ## introduzione
 Benvenuti nel tutorial di GroupDocs.Viewer per .NET sul rendering dei documenti mediante interruzioni di pagina! In questa guida passo passo, esploreremo come utilizzare le potenti funzionalità di GroupDocs.Viewer per eseguire il rendering dei documenti con precisione, concentrandoci in particolare sulle interruzioni di pagina. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial ti guiderà attraverso il processo, fornendo una chiara comprensione di ogni passaggio.
 ## Prerequisiti

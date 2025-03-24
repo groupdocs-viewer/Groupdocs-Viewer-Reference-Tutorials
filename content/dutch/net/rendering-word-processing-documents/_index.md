@@ -3,10 +3,12 @@ title: Tekstverwerkingsdocumenten weergeven
 linktitle: Tekstverwerkingsdocumenten weergeven
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u op efficiënte wijze bijgehouden wijzigingen in tekstverwerkingsdocumenten kunt weergeven met GroupDocs.Viewer voor .NET. Verbeter uw vaardigheden op het gebied van documentbeheer.
-type: docs
 weight: 36
 url: /nl/net/rendering-word-processing-documents/
 ---
+
+# Tekstverwerkingsdocumenten weergeven
+
 
 ## Invoering
 

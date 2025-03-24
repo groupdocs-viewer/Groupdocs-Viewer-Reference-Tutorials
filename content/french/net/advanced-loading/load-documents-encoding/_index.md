@@ -3,10 +3,12 @@ title: Charger des documents avec un encodage spécifique
 linktitle: Charger des documents avec un encodage spécifique
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez vos applications .NET avec une visualisation transparente des documents à l'aide de GroupDocs.Viewer pour .NET. Chargez sans effort des documents avec un encodage spécifique et personnalisez l'expérience de visualisation.
-type: docs
 weight: 11
 url: /fr/net/advanced-loading/load-documents-encoding/
 ---
+
+# Charger des documents avec un encodage spécifique
+
 ## Introduction
 Êtes-vous à la recherche d'un outil puissant pour afficher de manière transparente des documents dans vos applications .NET ? Ne cherchez pas plus loin que GroupDocs.Viewer pour .NET ! Cette bibliothèque robuste offre aux développeurs la possibilité d'afficher sans effort divers formats de documents directement dans leurs applications, offrant ainsi une expérience de visualisation intuitive et conviviale.
 ## Conditions préalables

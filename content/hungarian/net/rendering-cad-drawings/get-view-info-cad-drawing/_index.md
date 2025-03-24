@@ -3,10 +3,12 @@ title: Megtekintési információk a CAD-rajzokhoz
 linktitle: Megtekintési információk a CAD-rajzokhoz
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan kérheti le a CAD-rajzok nézeti adatait a GroupDocs.Viewer for .NET segítségével. Bővítse .NET-alkalmazásait a zökkenőmentes CAD-fájlkezeléssel.
-type: docs
 weight: 10
 url: /hu/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Megtekintési információk a CAD-rajzokhoz
+
 ## Bevezetés
 szoftverfejlesztés világában a CAD-rajzok hatékony kezelése kulcsfontosságú. Függetlenül attól, hogy építészek, mérnökök vagy tervezők számára készít alkalmazásokat, a CAD-fájlok zökkenőmentes megtekintési élménye nagymértékben növelheti a felhasználók elégedettségét. A GroupDocs.Viewer for .NET hatékony megoldást kínál a CAD-fájlmegtekintési képességek .NET-alkalmazásaiba való erőfeszítés nélküli integrálásához. Ebben az oktatóanyagban végigvezetjük a CAD-rajzok nézeti információinak megszerzésének folyamatán a GroupDocs.Viewer for .NET használatával.
 ## Előfeltételek

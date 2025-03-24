@@ -3,10 +3,12 @@ title: 按分页符渲染
 linktitle: 按分页符渲染
 second_title: GroupDocs.Viewer .NET API
 description: 探索 GroupDocs.Viewer for .NET 在精确呈现文档方面的强大功能。请按照我们的分页符渲染分步教程进行操作。
-type: docs
 weight: 14
 url: /zh/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# 按分页符渲染
+
 ## 介绍
 欢迎来到 GroupDocs.Viewer for .NET 关于按分页符渲染文档的教程！在本分步指南中，我们将探索如何利用 GroupDocs.Viewer 的强大功能来精确呈现文档，特别关注分页符。无论您是经验丰富的开发人员还是新手，本教程都将引导您完成整个过程，让您清楚地了解每个步骤。
 ## 先决条件

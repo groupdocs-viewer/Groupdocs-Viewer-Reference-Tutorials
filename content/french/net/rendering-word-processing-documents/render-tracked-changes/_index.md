@@ -3,10 +3,12 @@ title: Rendre les modifications suivies
 linktitle: Rendre les modifications suivies
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer facilement les modifications suivies dans les documents à l'aide de GroupDocs.Viewer pour .NET. Améliorez l’efficacité de votre gestion documentaire.
-type: docs
 weight: 10
 url: /fr/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Rendre les modifications suivies
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, gérer et visualiser efficacement les documents est crucial pour les entreprises comme pour les particuliers. Avec l'avènement des technologies avancées, des solutions telles que GroupDocs.Viewer pour .NET ont révolutionné la façon dont nous interagissons avec divers formats de documents, notamment les documents Word, les PDF, etc. Dans ce guide complet, nous verrons comment exploiter GroupDocs.Viewer pour .NET pour restituer de manière transparente les modifications suivies dans vos documents.
 ## Conditions préalables

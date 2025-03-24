@@ -3,10 +3,12 @@ title: Kết xuất ghi chú và điều chỉnh đơn vị thời gian (MS Proj
 linktitle: Kết xuất ghi chú và điều chỉnh đơn vị thời gian (MS Project)
 second_title: API GroupDocs.Viewer .NET
 description: Kết xuất chính các tài liệu MS Project bằng GroupDocs.Viewer cho .NET. Kết xuất ghi chú, điều chỉnh đơn vị thời gian và khám phá các định dạng đầu ra khác nhau một cách dễ dàng.
-type: docs
 weight: 11
 url: /vi/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# Kết xuất ghi chú và điều chỉnh đơn vị thời gian (MS Project)
+
 ## Giới thiệu
 GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển xem và thao tác các định dạng tài liệu khác nhau trong ứng dụng .NET của họ. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc hiển thị ghi chú và điều chỉnh đơn vị thời gian cụ thể cho tài liệu MS Project.
 ## Điều kiện tiên quyết
@@ -87,6 +89,6 @@ Có, GroupDocs.Viewer for .NET hỗ trợ hiển thị sang nhiều định dạ
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Viewer cho .NET?
  Thăm nom[liên kết này](https://purchase.groupdocs.com/temporary-license/) để có được giấy phép tạm thời.
 ### Tôi có thể tìm tài liệu về GroupDocs.Viewer cho .NET ở đâu?
- Tham khảo tài liệu[đây](https://reference.groupdocs.com/viewer/net/).
+ Tham khảo tài liệu[đây](https://tutorials.groupdocs.com/viewer/net/).
 ### Tôi có thể tìm kiếm hỗ trợ hoặc đặt câu hỏi liên quan đến GroupDocs.Viewer cho .NET ở đâu?
  Bạn có thể truy cập diễn đàn hỗ trợ[đây](https://forum.groupdocs.com/c/viewer/9).

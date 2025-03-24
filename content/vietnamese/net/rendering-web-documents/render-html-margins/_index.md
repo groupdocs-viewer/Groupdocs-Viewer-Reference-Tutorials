@@ -3,10 +3,12 @@ title: Kết xuất HTML với lề do người dùng xác định
 linktitle: Kết xuất HTML với lề do người dùng xác định
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị HTML với lề tùy chỉnh trong .NET bằng GroupDocs.Viewer. Tăng cường trình bày tài liệu một cách dễ dàng.
-type: docs
 weight: 11
 url: /vi/net/rendering-web-documents/render-html-margins/
 ---
+
+# Kết xuất HTML với lề do người dùng xác định
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc hiển thị HTML với lề do người dùng xác định là một khía cạnh quan trọng trong việc tạo ra các tài liệu hấp dẫn về mặt hình ảnh. Cho dù đó là điều chỉnh lề cho trang web hay định cấu hình bố cục in, việc kiểm soát chính xác lề sẽ nâng cao khả năng trình bày nội dung tổng thể. Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc sử dụng GroupDocs.Viewer cho .NET để đạt được chức năng này một cách liền mạch.
 ## Điều kiện tiên quyết

@@ -3,10 +3,12 @@ title: 电子表格渲染选项
 linktitle: 电子表格渲染选项
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 教程轻松增强 .NET 中的文档可视化。学习调整文本溢出、渲染网格线等。
-type: docs
 weight: 37
 url: /zh/net/spreadsheet-rendering-options/
 ---
+
+# 电子表格渲染选项
+
 ## 介绍
 
 您准备好提升 .NET 中的文档查看体验了吗？ GroupDocs.Viewer for .NET 提供了一套全面的教程，使您能够优化电子表格的呈现。从调整文本溢出到渲染隐藏的列和行，我们都能满足您的要求。让我们深入了解电子表格呈现选项的世界，并释放 GroupDocs.Viewer for .NET 的全部潜力。

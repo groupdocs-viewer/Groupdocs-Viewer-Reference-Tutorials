@@ -3,10 +3,12 @@ title: Deaktivieren Sie die Zeichengruppierung in PDF
 linktitle: Deaktivieren Sie die Zeichengruppierung in PDF
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie die Zeichengruppierung in PDFs mit GroupDocs.Viewer für .NET deaktivieren. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentenwiedergabe.
-type: docs
 weight: 11
 url: /de/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Deaktivieren Sie die Zeichengruppierung in PDF
+
 ## Einführung
 In der Welt der .NET-Entwicklung kann die Handhabung der Dokumentenanzeige manchmal eine Herausforderung sein, insbesondere wenn es um Formate wie PDFs geht. Mit den richtigen Tools und Kenntnissen können Sie diesen Prozess jedoch effizient optimieren. Ein solches Tool, das Abhilfe schafft, ist GroupDocs.Viewer für .NET. Diese leistungsstarke Bibliothek ermöglicht Entwicklern das nahtlose Rendern und Anzeigen verschiedener Dokumenttypen in ihren .NET-Anwendungen.
 ## Voraussetzungen

@@ -3,10 +3,12 @@ title: Abilita il suggerimento sui caratteri nel PDF
 linktitle: Abilita il suggerimento sui caratteri nel PDF
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come abilitare i suggerimenti sui caratteri nei documenti PDF utilizzando GroupDocs.Viewer per .NET. Segui il nostro tutorial passo passo per un'integrazione perfetta.
-type: docs
 weight: 14
 url: /it/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Abilita il suggerimento sui caratteri nel PDF
+
 ## introduzione
 GroupDocs.Viewer per .NET è un potente strumento per visualizzare e manipolare vari formati di documenti all'interno delle applicazioni .NET. Che tu stia lavorando con PDF, documenti di Microsoft Office, immagini o altri formati, GroupDocs.Viewer fornisce una soluzione perfetta per il rendering e l'interazione con questi file.
 ## Prerequisiti

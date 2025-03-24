@@ -3,10 +3,12 @@ title: ドキュメントをロードする
 linktitle: ドキュメントをロードする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer .NET を使用してドキュメントを効率的にロードおよびレンダリングする方法を説明します。拡張された .NET アプリのローカル ディスク、ストリーム、FTP 読み込みチュートリアルをご覧ください。
-type: docs
 weight: 20
 url: /ja/net/loading-documents/
 ---
+
+# ドキュメントをロードする
+
 ## 導入
 
 GroupDocs.Viewer for .NET を使用したドキュメントのロードに関する包括的なガイドへようこそ。経験豊富な開発者であっても、.NET アプリケーションの初心者であっても、私たちのチュートリアルでは、プロジェクトを強化するためにドキュメントを効率的にロードおよびレンダリングするためのあらゆる側面をカバーしています。

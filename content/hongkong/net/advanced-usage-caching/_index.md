@@ -3,10 +3,12 @@ title: 高級用法（快取）
 linktitle: 高級用法（快取）
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 探索優化 .NET 應用程式中文件處理速度的先進技術。立即了解如何啟用快取以獲得更快的效能！
-type: docs
 weight: 22
 url: /zh-hant/net/advanced-usage-caching/
 ---
+
+# 高級用法（快取）
+
 
 ## 介紹
 

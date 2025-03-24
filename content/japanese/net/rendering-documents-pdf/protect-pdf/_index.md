@@ -3,10 +3,12 @@ title: レンダリングされた PDF をパスワードで保護する
 linktitle: レンダリングされた PDF をパスワードで保護する
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を使用して、レンダリングされた PDF をパスワードで簡単に保護します。文書を安全かつ機密に保ちます。
-type: docs
 weight: 12
 url: /ja/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# レンダリングされた PDF をパスワードで保護する
+
 ## 導入
 このチュートリアルでは、Groupdocs.Viewer for .NET を使用して、レンダリングされた PDF をパスワードで保護する方法を学習します。セキュリティ対策を追加することで、PDF ドキュメントへのアクセスを制御し、機密性と整合性を確保できます。
 ## 前提条件

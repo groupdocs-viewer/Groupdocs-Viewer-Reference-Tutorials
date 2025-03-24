@@ -3,10 +3,12 @@ title: 使用自訂字體渲染
 linktitle: 使用自訂字體渲染
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 使用自訂字型呈現文件。輕鬆增強視覺演示。
-type: docs
 weight: 18
 url: /zh-hant/net/rendering-options/render-custom-fonts/
 ---
+
+# 使用自訂字體渲染
+
 ## 介紹
 在.NET 開發領域，GroupDocs.Viewer 提供了呈現各種格式文件的強大解決方案。在其眾多功能中，GroupDocs.Viewer 可以使用自訂字體呈現文檔，為您的應用程式添加一層個人化和靈活性。
 ## 先決條件

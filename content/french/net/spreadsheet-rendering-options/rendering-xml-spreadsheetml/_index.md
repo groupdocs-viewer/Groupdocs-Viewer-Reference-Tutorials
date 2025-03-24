@@ -3,10 +3,12 @@ title: Rendu XML SpreadSheetML
 linktitle: Rendu XML SpreadSheetML
 second_title: API GroupDocs.Viewer .NET
 description: Explorez le rendu transparent des fichiers XML SpreadSheetML dans différents formats à l'aide de GroupDocs.Viewer pour .NET. Intégrez-le sans effort à vos applications.
-type: docs
 weight: 16
 url: /fr/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
+
+# Rendu XML SpreadSheetML
+
 ## Introduction
 Bienvenue dans le monde de GroupDocs.Viewer pour .NET ! Dans ce didacticiel, nous vous guiderons dans le rendu facile des fichiers XML SpreadSheetML à l'aide de GroupDocs.Viewer, une puissante bibliothèque .NET. Que vous soyez un développeur chevronné ou débutant, ce guide étape par étape vous aidera à intégrer sans effort le rendu XML SpreadSheetML dans vos applications.
 ## Conditions préalables
@@ -83,7 +85,7 @@ Oui, GroupDocs.Viewer prend en charge un large éventail de formats de documents
 ### Puis-je personnaliser l’apparence des documents rendus ?
 Absolument! GroupDocs.Viewer propose diverses options de personnalisation, vous permettant d'adapter la sortie à vos besoins spécifiques.
 ### Où puis-je trouver une assistance et des ressources supplémentaires ?
- Visiter le[Forum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) pour obtenir le soutien de la communauté et explorer les[Documentation](https://reference.groupdocs.com/viewer/net/)pour des informations détaillées.
+ Visiter le[Forum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) pour obtenir le soutien de la communauté et explorer les[Documentation](https://tutorials.groupdocs.com/viewer/net/)pour des informations détaillées.
 ### Existe-t-il un essai gratuit disponible ?
  Oui, vous pouvez accéder à l'essai gratuit[ici](https://releases.groupdocs.com/).
 ### Comment obtenir un permis temporaire ?

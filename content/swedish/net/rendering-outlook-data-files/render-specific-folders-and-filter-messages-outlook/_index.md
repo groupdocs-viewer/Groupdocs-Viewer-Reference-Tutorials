@@ -3,10 +3,12 @@ title: Rendera specifika mappar och filtrera meddelanden (Outlook)
 linktitle: Rendera specifika mappar och filtrera meddelanden (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar specifika mappar och filtrerar meddelanden i Outlook med GroupDocs.Viewer för .NET. Förenkla dokumenthanteringen i .NET-applikationer.
-type: docs
 weight: 11
 url: /sv/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Rendera specifika mappar och filtrera meddelanden (Outlook)
+
 ## Introduktion
 I en värld av .NET-utveckling är effektiv hantering och visning av dokument avgörande. GroupDocs.Viewer för .NET förenklar denna uppgift genom att tillhandahålla kraftfulla funktioner för att rendera olika dokumentformat sömlöst. I den här handledningen kommer vi att fördjupa oss i hur man renderar specifika mappar och filtrerar meddelanden i Outlook med GroupDocs.Viewer för .NET.
 ## Förutsättningar

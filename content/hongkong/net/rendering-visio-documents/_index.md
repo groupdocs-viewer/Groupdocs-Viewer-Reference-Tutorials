@@ -3,10 +3,12 @@ title: 渲染 Visio 文檔
 linktitle: 渲染 Visio 文檔
 second_title: GroupDocs.Viewer .NET API
 description: 探索使用 GroupDocs.Viewer for .NET 呈現 Visio 文件的教學課程。了解如何輕鬆增強 .NET 應用程式中的文件檢視功能。
-type: docs
 weight: 34
 url: /zh-hant/net/rendering-visio-documents/
 ---
+
+# 渲染 Visio 文檔
+
 ## 介紹
 
 您是否希望更深入地研究在 .NET 應用程式中渲染 Visio 文件？ .NET 教學的 GroupDocs.Viewer 就是您的最佳選擇。在這份綜合指南中，我們將逐步引導您完成整個過程，使您能夠無縫地增強文件檢視功能。

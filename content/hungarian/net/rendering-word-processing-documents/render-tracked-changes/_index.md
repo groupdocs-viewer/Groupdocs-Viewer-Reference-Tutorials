@@ -3,10 +3,12 @@ title: Nyomon követett változások megjelenítése
 linktitle: Nyomon követett változások megjelenítése
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel, hogyan jelenítheti meg könnyedén a nyomon követett változásokat a dokumentumokban a GroupDocs.Viewer for .NET segítségével. Növelje dokumentumkezelésének hatékonyságát.
-type: docs
 weight: 10
 url: /hu/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Nyomon követett változások megjelenítése
+
 ## Bevezetés
 A mai digitális korszakban a dokumentumok hatékony kezelése és megtekintése döntő fontosságú a vállalkozások és a magánszemélyek számára egyaránt. A fejlett technológiák megjelenésével az olyan megoldások, mint a GroupDocs.Viewer for .NET, forradalmasították a különféle dokumentumformátumokkal való interakciót, beleértve a Word dokumentumokat, PDF-eket és sok mást. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan használhatja fel a GroupDocs.Viewer for .NET-et a dokumentumok nyomon követett változásainak zökkenőmentes megjelenítéséhez.
 ## Előfeltételek

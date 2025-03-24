@@ -3,10 +3,12 @@ title: Ölçülü Lisansı Ayarla
 linktitle: Ölçülü Lisansı Ayarla
 second_title: GroupDocs.Viewer .NET API'si
 description: Kusursuz belge görüntüleme için .NET uygulamalarınızı GroupDocs.Viewer ile geliştirin. Belge oluşturma işlevlerini projelerinize kolayca entegre edin.
-type: docs
 weight: 12
 url: /tr/net/getting-started/set-metered-license/
 ---
+
+# Ölçülü Lisansı Ayarla
+
 ## giriiş
 .NET geliştirme dünyasında, güçlü belge görüntüleme yeteneklerini uygulamalarınıza dahil etmek, kullanıcı deneyimini ve işlevselliğini geliştirmek için çok önemlidir. GroupDocs.Viewer for .NET, belge görüntüleme işlevlerini .NET projelerinize sorunsuz bir şekilde entegre etmek için güçlü bir çözüm sunar. İster PDF'lerle, Microsoft Office belgeleriyle ister çeşitli görüntü formatlarıyla çalışıyor olun, GroupDocs.Viewer bu belgeleri uygulamalarınız içinde oluşturma ve görüntüleme sürecini basitleştirir.
 ## Önkoşullar
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Sonuç olarak GroupDocs.Viewer for .NET, belge görüntüleme işlevlerini .NET uygulamalarınıza dahil etmek için kapsamlı bir çözüm sunar. Belirtilen adımları izleyerek kolayca ölçülü bir lisans ayarlayabilir ve projelerinizde GroupDocs.Viewer'ın özelliklerinden yararlanmaya başlayabilirsiniz.
 ## SSS'ler
 ### S: GroupDocs.Viewer for .NET belgelerini nerede bulabilirim?
- Belgeleri bulabilirsiniz[Burada](https://reference.groupdocs.com/viewer/net/).
+ Belgeleri bulabilirsiniz[Burada](https://tutorials.groupdocs.com/viewer/net/).
 ### S: GroupDocs.Viewer for .NET'in ücretsiz deneme sürümü mevcut mu?
  Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### S: Test amaçlı geçici lisansları nasıl alabilirim?

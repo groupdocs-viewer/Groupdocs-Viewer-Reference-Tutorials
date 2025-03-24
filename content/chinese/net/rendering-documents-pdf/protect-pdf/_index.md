@@ -3,10 +3,12 @@ title: 使用密码保护渲染的 PDF
 linktitle: 使用密码保护渲染的 PDF
 second_title: GroupDocs.Viewer .NET API
 description: 使用 Groupdocs.Viewer for .NET，使用密码轻松保护渲染的 PDF。确保您的文档安全且保密。
-type: docs
 weight: 12
 url: /zh/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# 使用密码保护渲染的 PDF
+
 ## 介绍
 在本教程中，您将学习如何使用 Groupdocs.Viewer for .NET 通过密码保护渲染的 PDF。通过添加安全措施，您可以控制对 PDF 文档的访问，确保机密性和完整性。
 ## 先决条件

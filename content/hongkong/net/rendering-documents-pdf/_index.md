@@ -3,10 +3,12 @@ title: 將文件渲染為 PDF
 linktitle: 將文件渲染為 PDF
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 教學課程學習將文件呈現為 PDF、調整 JPG 影像品質以及使用密碼保護 PDF。
-type: docs
 weight: 29
 url: /zh-hant/net/rendering-documents-pdf/
 ---
+
+# 將文件渲染為 PDF
+
 
 ## 介紹
 

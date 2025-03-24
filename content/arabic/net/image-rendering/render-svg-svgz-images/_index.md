@@ -3,10 +3,12 @@ title: عرض صور SVG وSVGZ
 linktitle: عرض صور SVG وSVGZ
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. قم بتحويل الرسومات المتجهة إلى HTML وJPG وPNG وPDF بسهولة.
-type: docs
 weight: 16
 url: /ar/net/image-rendering/render-svg-svgz-images/
 ---
+
+# عرض صور SVG وSVGZ
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنرشدك خلال عملية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. يعد GroupDocs.Viewer for .NET واجهة برمجة تطبيقات قوية لعرض المستندات والتي تمكن المطورين من عرض تنسيقات المستندات المختلفة في تطبيقات .NET الخاصة بهم. يعد SVG وSVGZ من تنسيقات الصور الشائعة المستخدمة للرسومات المتجهة، ومع GroupDocs.Viewer لـ .NET، يمكنك بسهولة تحويلها إلى تنسيقات إخراج مختلفة مثل HTML وJPG وPNG وPDF.
 ## المتطلبات الأساسية

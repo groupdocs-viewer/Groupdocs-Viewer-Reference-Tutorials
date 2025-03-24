@@ -3,10 +3,12 @@ title: Loại trừ phông chữ khỏi HTML được hiển thị
 linktitle: Loại trừ phông chữ khỏi HTML được hiển thị
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách loại trừ phông chữ khỏi HTML được hiển thị bằng GroupDocs.Viewer cho .NET. Hãy làm theo hướng dẫn từng bước này để hiển thị tài liệu liền mạch.
-type: docs
 weight: 10
 url: /vi/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Loại trừ phông chữ khỏi HTML được hiển thị
+
 ## Giới thiệu
 GroupDocs.Viewer for .NET là thư viện kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị hơn 50 định dạng tài liệu trong ứng dụng .NET của họ mà không cần phụ thuộc bên ngoài. Trong hướng dẫn này, chúng tôi sẽ tập trung vào một tính năng cụ thể của GroupDocs.Viewer: loại trừ phông chữ khỏi đầu ra HTML được hiển thị. 
 ## Điều kiện tiên quyết

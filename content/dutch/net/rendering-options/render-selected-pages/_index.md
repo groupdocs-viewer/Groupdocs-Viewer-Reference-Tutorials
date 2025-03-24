@@ -3,10 +3,12 @@ title: Geef geselecteerde pagina's weer
 linktitle: Geef geselecteerde pagina's weer
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u geselecteerde pagina's uit documenten kunt weergeven met Groupdocs.Viewer voor .NET. Stapsgewijze zelfstudie met codevoorbeelden inbegrepen.
-type: docs
 weight: 17
 url: /nl/net/rendering-options/render-selected-pages/
 ---
+
+# Geef geselecteerde pagina's weer
+
 ## Invoering
 
 In deze zelfstudie gaan we dieper in op het gebruik van Groupdocs.Viewer voor .NET om geselecteerde pagina's uit een document weer te geven. Of u nu een doorgewinterde ontwikkelaar bent of net begint, deze stapsgewijze handleiding leidt u gemakkelijk door het proces.

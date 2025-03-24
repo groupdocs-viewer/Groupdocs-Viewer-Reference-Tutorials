@@ -3,10 +3,12 @@ title: Especificar el nombre del archivo al renderizar archivos comprimidos
 linktitle: Especificar el nombre del archivo al renderizar archivos comprimidos
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar archivos comprimidos en .NET usando GroupDocs.Viewer, mejorando las capacidades de administración de documentos.
-type: docs
 weight: 14
 url: /es/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Especificar el nombre del archivo al renderizar archivos comprimidos
+
 ## Introducción
 En el ámbito del desarrollo .NET, GroupDocs.Viewer se destaca como una herramienta versátil para representar documentos de varios formatos. Con sus sólidas funciones y flexibilidad, simplifica el proceso de visualización de archivos, incluidos los archivos comprimidos. En este tutorial, profundizaremos en los detalles de la representación de archivos comprimidos utilizando GroupDocs.Viewer para .NET. Siguiendo estas instrucciones paso a paso, aprenderá cómo especificar un nombre de archivo al representar archivos comprimidos, lo que permitirá una gestión de documentos perfecta dentro de sus aplicaciones .NET.
 ## Requisitos previos

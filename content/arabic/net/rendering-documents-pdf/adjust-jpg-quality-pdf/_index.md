@@ -3,10 +3,12 @@ title: ضبط جودة صورة JPG في ملف PDF المعروض
 linktitle: ضبط جودة صورة JPG في ملف PDF المعروض
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية ضبط جودة صورة JPG في مستندات PDF المعروضة باستخدام GroupDocs.Viewer لـ .NET. تعزيز تجربة عرض المستندات الخاصة بك.
-type: docs
 weight: 11
 url: /ar/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# ضبط جودة صورة JPG في ملف PDF المعروض
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنتعلم كيفية ضبط جودة صور JPG عند عرض ملف PDF باستخدام GroupDocs.Viewer لـ .NET. تسمح لك هذه المكتبة القوية بعرض ومعالجة تنسيقات المستندات المختلفة في تطبيقات .NET الخاصة بك بسلاسة.
 ## المتطلبات الأساسية

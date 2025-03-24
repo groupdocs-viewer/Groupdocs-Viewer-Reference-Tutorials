@@ -3,10 +3,12 @@ title: Απόδοση αρχείων CHM
 linktitle: Απόδοση αρχείων CHM
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε αρχεία CHM στο .NET χρησιμοποιώντας το GroupDocs.Viewer. Μετατρέψτε το CHM σε μορφές HTML, JPG, PNG και PDF χωρίς κόπο.
-type: docs
 weight: 10
 url: /el/net/rendering-web-documents/render-chm/
 ---
+
+# Απόδοση αρχείων CHM
+
 ## Εισαγωγή
 Σε αυτό το σεμινάριο, θα εξερευνήσουμε τον τρόπο απόδοσης αρχείων CHM (Compiled HTML Help) χρησιμοποιώντας το GroupDocs.Viewer για .NET. Το GroupDocs.Viewer για .NET είναι ένα ισχυρό API απόδοσης εγγράφων που επιτρέπει στους προγραμματιστές να εμφανίζουν πάνω από 170 τύπους εγγράφων στις εφαρμογές τους .NET χωρίς να απαιτούν εγκατάσταση εξωτερικού λογισμικού.
 

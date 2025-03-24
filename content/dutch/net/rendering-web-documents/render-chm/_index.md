@@ -3,10 +3,12 @@ title: Geef CHM-bestanden weer
 linktitle: Geef CHM-bestanden weer
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u CHM-bestanden kunt renderen in .NET met GroupDocs.Viewer. Converteer CHM moeiteloos naar HTML-, JPG-, PNG- en PDF-formaten.
-type: docs
 weight: 10
 url: /nl/net/rendering-web-documents/render-chm/
 ---
+
+# Geef CHM-bestanden weer
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u CHM-bestanden (Compiled HTML Help) kunt weergeven met GroupDocs.Viewer voor .NET. GroupDocs.Viewer voor .NET is een krachtige API voor documentweergave waarmee ontwikkelaars meer dan 170 documenttypen binnen hun .NET-applicaties kunnen weergeven zonder dat hiervoor externe software-installaties nodig zijn.
 

@@ -3,10 +3,12 @@ title: FODG और ODG छवियाँ प्रस्तुत करें
 linktitle: FODG और ODG छवियाँ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके HTML, JPG, PNG और PDF में FODG और ODG छवियों को प्रस्तुत करना सीखें। अपने दस्तावेज़ प्रबंधन को बेहतर बनाएं.
-type: docs
 weight: 15
 url: /hi/net/image-rendering/render-fodg-odg-images/
 ---
+
+# FODG और ODG छवियाँ प्रस्तुत करें
+
 ## परिचय
 सॉफ़्टवेयर विकास की दुनिया में, दस्तावेज़ प्रारूपों का कुशल संचालन सर्वोपरि है। .NET के लिए GroupDocs.Viewer एक शक्तिशाली उपकरण है जिसे .NET अनुप्रयोगों के भीतर FODG और ODG छवियों को प्रस्तुत करने की प्रक्रिया को सरल बनाने के लिए डिज़ाइन किया गया है। यह ट्यूटोरियल आपको .NET के लिए GroupDocs.Viewer का उपयोग करके इन छवियों को HTML, JPG, PNG और PDF जैसे विभिन्न प्रारूपों में प्रस्तुत करने के लिए आवश्यक चरणों के बारे में बताएगा।
 ## आवश्यक शर्तें

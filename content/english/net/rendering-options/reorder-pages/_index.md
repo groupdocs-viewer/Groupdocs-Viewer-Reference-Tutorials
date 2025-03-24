@@ -3,10 +3,12 @@ title: Reorder Pages in Document
 linktitle: Reorder Pages in Document
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to reorder pages in a document using GroupDocs.Viewer for .NET. Follow our step-by-step tutorial for seamless document management.
-type: docs
 weight: 19
 url: /net/rendering-options/reorder-pages/
 ---
+
+# Reorder Pages in Document
+
 ## Introduction
 In the world of .NET development, managing and manipulating documents efficiently is crucial. GroupDocs.Viewer for .NET provides a powerful solution for viewing various document formats within your applications. One of the essential tasks developers often encounter is reordering pages within a document. Whether you're working with PDFs, Word documents, or other formats, being able to rearrange pages can streamline workflows and enhance user experience. In this tutorial, we'll delve into how to reorder pages in a document using GroupDocs.Viewer for .NET.
 ## Prerequisites

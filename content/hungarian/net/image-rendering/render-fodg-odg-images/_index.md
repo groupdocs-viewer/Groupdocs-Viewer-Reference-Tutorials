@@ -3,10 +3,12 @@ title: Rendereljen FODG és ODG képeket
 linktitle: Rendereljen FODG és ODG képeket
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet FODG és ODG képeket HTML, JPG, PNG és PDF formátumba renderelni a GroupDocs.Viewer for .NET segítségével. Javítsa a dokumentumkezelést.
-type: docs
 weight: 15
 url: /hu/net/image-rendering/render-fodg-odg-images/
 ---
+
+# Rendereljen FODG és ODG képeket
+
 ## Bevezetés
 A szoftverfejlesztés világában a dokumentumformátumok hatékony kezelése a legfontosabb. A GroupDocs.Viewer for .NET egy hatékony eszköz, amelyet arra terveztek, hogy leegyszerűsítse a FODG- és ODG-képek .NET-alkalmazásokon belüli megjelenítési folyamatát. Ez az oktatóanyag végigvezeti azokon a lépéseken, amelyek szükségesek ahhoz, hogy ezeket a képeket különféle formátumokba, például HTML, JPG, PNG és PDF formátumba renderelje a GroupDocs.Viewer for .NET használatával.
 ## Előfeltételek

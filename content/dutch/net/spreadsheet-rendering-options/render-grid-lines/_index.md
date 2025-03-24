@@ -3,10 +3,12 @@ title: Render rasterlijnen
 linktitle: Render rasterlijnen
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter de documentvisualisatie met GroupDocs.Viewer voor .NET. Render rasterlijnen moeiteloos. Probeer nu de gratis proefperiode! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /nl/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Render rasterlijnen
+
 ## Invoering
 Welkom bij deze stapsgewijze handleiding over het gebruik van GroupDocs.Viewer voor .NET om rasterlijnen in uw documenten weer te geven. Of u nu een doorgewinterde ontwikkelaar bent of een nieuwkomer in het .NET-framework, deze tutorial begeleidt u door het proces met gedetailleerde uitleg en eenvoudig te volgen voorbeelden.
 ## Vereisten
@@ -66,6 +68,6 @@ In deze zelfstudie hebben we het proces van het weergeven van rasterlijnen in do
 ### Zijn er tijdelijke licenties beschikbaar voor GroupDocs.Viewer voor .NET?
  Ja, u kunt een[tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) voor GroupDocs.Viewer voor .NET.
 ### Kan ik gedetailleerde documentatie voor GroupDocs.Viewer voor .NET vinden?
- Absoluut! Verwijs naar de[officiële documentatie](https://reference.groupdocs.com/viewer/net/) voor uitgebreide informatie over het gebruik van GroupDocs.Viewer voor .NET.
+ Absoluut! Verwijs naar de[officiële documentatie](https://tutorials.groupdocs.com/viewer/net/) voor uitgebreide informatie over het gebruik van GroupDocs.Viewer voor .NET.
 ### Waar kan ik de nieuwste versie van GroupDocs.Viewer voor .NET downloaden?
  Download de bibliotheek van de[officiële releasepagina](https://releases.groupdocs.com/viewer/net/).

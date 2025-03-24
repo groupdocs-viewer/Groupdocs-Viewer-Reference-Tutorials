@@ -3,16 +3,18 @@ title: Przewracaj i obracaj strony
 linktitle: Przewracaj i obracaj strony
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak zintegrować Groupdocs.Viewer dla .NET z aplikacjami, aby zapewnić płynne renderowanie, odwracanie i obracanie dokumentów.
-type: docs
 weight: 12
 url: /pl/net/rendering-options/flip-rotate-pages/
 ---
+
+# Przewracaj i obracaj strony
+
 ## Wstęp
 tym samouczku zagłębimy się w funkcjonalności Groupdocs.Viewer dla .NET, ze szczególnym uwzględnieniem przerzucania i obracania stron. Groupdocs.Viewer dla .NET to potężne narzędzie przeznaczone do renderowania dokumentów w różnych formatach w aplikacjach .NET. Niezależnie od tego, czy tworzysz system zarządzania dokumentami, czy chcesz zintegrować funkcje przeglądania dokumentów ze swoim oprogramowaniem, Groupdocs.Viewer dla .NET stanowi wydajne rozwiązanie.
 ## Warunki wstępne
 Zanim zaczniemy, upewnij się, że masz skonfigurowane następujące wymagania wstępne:
 ### Instalowanie Groupdocs.Viewer dla .NET
- Aby używać Groupdocs.Viewer dla .NET, musisz zainstalować pakiet za pomocą Menedżera pakietów NuGet. Szczegółowe instrukcje dotyczące instalacji można znaleźć w pliku[dokumentacja](https://reference.groupdocs.com/viewer/net/).
+ Aby używać Groupdocs.Viewer dla .NET, musisz zainstalować pakiet za pomocą Menedżera pakietów NuGet. Szczegółowe instrukcje dotyczące instalacji można znaleźć w pliku[dokumentacja](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importuj przestrzenie nazw
 Upewnij się, że w projekcie zaimportowano niezbędne przestrzenie nazw, aby efektywnie korzystać z Groupdocs.Viewer dla .NET.

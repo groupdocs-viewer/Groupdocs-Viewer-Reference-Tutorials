@@ -3,10 +3,12 @@ title: Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
 linktitle: Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
 second_title: GroupDocs.Viewer .NET API
 description: Integrálja a GroupDocs.Viewer for .NET-et zökkenőmentesen alkalmazásaiba a hatékony dokumentummegtekintési lehetőségek érdekében. Növelje a felhasználói élményt testreszabható opciókkal.
-type: docs
 weight: 11
 url: /hu/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
+
+# Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
+
 
 ## Bevezetés
 GroupDocs.Viewer for .NET egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési képességeket .NET-alkalmazásaikba. A GroupDocs.Viewer segítségével a dokumentumformátumok széles skáláját jelenítheti meg, beleértve a PDF-eket, Microsoft Office dokumentumokat, képeket és még sok mást, közvetlenül az alkalmazáson belül, anélkül, hogy külső bővítményekre vagy megjelenítőkre lenne szüksége. Ebben az átfogó oktatóanyagban végigvezetjük a GroupDocs.Viewer for .NET beállításának folyamatán, feltárjuk annak funkcióit, és bemutatjuk, hogyan lehet hatékonyan felhasználni az alkalmazás dokumentummegtekintési képességeinek javítására.

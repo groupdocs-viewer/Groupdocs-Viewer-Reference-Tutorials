@@ -3,10 +3,12 @@ title: Hiển thị tập tin lưu trữ
 linktitle: Hiển thị tập tin lưu trữ
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá các hướng dẫn toàn diện về cách hiển thị tệp lưu trữ bằng GroupDocs.Viewer cho .NET. Tích hợp liền mạch và hiệu quả vào các ứng dụng .NET của bạn.
-type: docs
 weight: 24
 url: /vi/net/rendering-archive-files/
 ---
+
+# Hiển thị tập tin lưu trữ
+
 ## Giới thiệu
 
 Bạn đang tìm kiếm sự tích hợp liền mạch của GroupDocs.Viewer dành cho .NET vào các ứng dụng của mình để có khả năng hiển thị và xem tài liệu hiệu quả? Đừng tìm đâu xa! Hướng dẫn của chúng tôi bao gồm mọi thứ bạn cần biết để tận dụng tối đa khả năng hiển thị các tệp lưu trữ. Hãy đi sâu vào chi tiết.

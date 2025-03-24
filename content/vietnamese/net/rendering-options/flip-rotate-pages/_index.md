@@ -3,16 +3,18 @@ title: Lật và xoay trang
 linktitle: Lật và xoay trang
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tích hợp Groupdocs.Viewer dành cho .NET vào các ứng dụng của bạn để hiển thị, lật và xoay tài liệu liền mạch.
-type: docs
 weight: 12
 url: /vi/net/rendering-options/flip-rotate-pages/
 ---
+
+# Lật và xoay trang
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào các chức năng của Groupdocs.Viewer dành cho .NET, đặc biệt tập trung vào việc lật và xoay các trang. Groupdocs.Viewer cho .NET là một công cụ mạnh mẽ được thiết kế để hiển thị tài liệu ở nhiều định dạng khác nhau trong các ứng dụng .NET. Cho dù bạn đang phát triển hệ thống quản lý tài liệu hay cần tích hợp khả năng xem tài liệu vào phần mềm của mình, Groupdocs.Viewer for .NET đều cung cấp giải pháp hiệu quả.
 ## Điều kiện tiên quyết
 Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn đã thiết lập các điều kiện tiên quyết sau:
 ### Cài đặt Groupdocs.Viewer cho .NET
- Để sử dụng Groupdocs.Viewer cho .NET, bạn cần cài đặt gói thông qua Trình quản lý gói NuGet. Bạn có thể tìm thấy hướng dẫn cài đặt chi tiết trong[tài liệu](https://reference.groupdocs.com/viewer/net/).
+ Để sử dụng Groupdocs.Viewer cho .NET, bạn cần cài đặt gói thông qua Trình quản lý gói NuGet. Bạn có thể tìm thấy hướng dẫn cài đặt chi tiết trong[tài liệu](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Nhập không gian tên
 Đảm bảo bạn đã nhập các không gian tên cần thiết vào dự án của mình để sử dụng Groupdocs.Viewer cho .NET một cách hiệu quả.

@@ -3,10 +3,12 @@ title: Vykreslování čísel
 linktitle: Vykreslování čísel
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte sílu Groupdocs.Viewer pro .NET při bezproblémovém vykreslování souborů Numbers. Převeďte do HTML, JPG, PNG a PDF bez námahy.
-type: docs
 weight: 15
 url: /cs/net/spreadsheet-rendering-options/rendering-numbers/
 ---
+
+# Vykreslování čísel
+
 ## Úvod
 Vítejte v tomto podrobném návodu k vykreslování souborů Numbers pomocí Groupdocs.Viewer pro .NET. Ať už jste zkušený vývojář nebo začátečník, tato příručka vás provede procesem převodu dokumentů Numbers do různých formátů. Groupdocs.Viewer for .NET je výkonný nástroj, který vám umožňuje bezproblémově integrovat možnosti prohlížení dokumentů do vašich aplikací .NET.
 ## Předpoklady

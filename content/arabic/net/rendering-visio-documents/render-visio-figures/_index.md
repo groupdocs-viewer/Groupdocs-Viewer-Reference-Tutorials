@@ -3,10 +3,12 @@ title: تقديم أرقام Visio
 linktitle: تقديم أرقام Visio
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET مع هذا البرنامج الشامل. تعزيز إمكانيات عرض المستندات في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 10
 url: /ar/net/rendering-visio-documents/render-visio-figures/
 ---
+
+# تقديم أرقام Visio
+
 ## مقدمة
 في العصر الرقمي الحالي، يلعب عرض المستندات دورًا حاسمًا في التطبيقات المختلفة. سواء أكان ذلك عرض المستندات على موقع ويب أو تحويلها إلى تنسيقات مختلفة، فإن العرض الفعال أمر ضروري. يوفر GroupDocs.Viewer for .NET حلاً قويًا لعرض المستندات ومعالجتها داخل تطبيقات .NET. في هذا البرنامج التعليمي، سوف نتعمق في عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET، مع تقسيم العملية إلى خطوات بسيطة.
 ## المتطلبات الأساسية

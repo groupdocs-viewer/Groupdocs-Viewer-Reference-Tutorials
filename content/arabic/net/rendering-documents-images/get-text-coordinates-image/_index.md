@@ -3,10 +3,12 @@ title: احصل على إحداثيات النص لعرض الصور
 linktitle: احصل على إحداثيات النص لعرض الصور
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية استخراج إحداثيات النص لعرض الصور باستخدام GroupDocs.Viewer لـ .NET. تعزيز قدرات معالجة المستندات الخاصة بك دون عناء.
-type: docs
 weight: 12
 url: /ar/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# احصل على إحداثيات النص لعرض الصور
+
 ## مقدمة
 GroupDocs.Viewer for .NET عبارة عن واجهة برمجة تطبيقات قوية لعرض المستندات تتيح للمطورين عرض المستندات بتنسيقات مختلفة بسلاسة مثل PDF وMicrosoft Office وغير ذلك الكثير. إحدى وظائفه الرئيسية هي القدرة على استخراج إحداثيات النص لعرض الصورة بدقة.
 ## المتطلبات الأساسية

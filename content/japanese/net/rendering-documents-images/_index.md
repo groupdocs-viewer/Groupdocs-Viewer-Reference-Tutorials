@@ -3,10 +3,12 @@ title: ドキュメントを画像にレンダリングする
 linktitle: ドキュメントを画像にレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してドキュメントを画像にレンダリングするチュートリアルをご覧ください。画質を最適化し、テキスト座標を抽出し、ユーザー エクスペリエンスを向上させます。
-type: docs
 weight: 30
 url: /ja/net/rendering-documents-images/
 ---
+
+# ドキュメントを画像にレンダリングする
+
 ## 導入
 
 .NET 開発の領域では、ドキュメントの画像へのレンダリングをマスターすることが最も重要です。 GroupDocs.Viewer は、このプロセスを効率化するための包括的な一連のチュートリアルを提供します。これらのチュートリアルでは、ドキュメントの JPG/PNG 形式へのレンダリングから、画質の微調整、テキスト オーバーレイの最適化まで、すべてをカバーしています。

@@ -3,10 +3,12 @@ title: Renderizar documentos a PDF
 linktitle: Renderizar documentos a PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a procesar documentos en PDF, ajustar la calidad de la imagen JPG y proteger archivos PDF con contraseñas utilizando los tutoriales de GroupDocs.Viewer para .NET.
-type: docs
 weight: 29
 url: /es/net/rendering-documents-pdf/
 ---
+
+# Renderizar documentos a PDF
+
 
 ## Introducción
 

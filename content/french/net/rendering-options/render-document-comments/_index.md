@@ -3,10 +3,12 @@ title: Rendre le document avec des commentaires
 linktitle: Rendre le document avec des commentaires
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des documents avec des commentaires à l'aide de GroupDocs.Viewer pour .NET. Suivez notre guide étape par étape pour une intégration transparente.
-type: docs
 weight: 13
 url: /fr/net/rendering-options/render-document-comments/
 ---
+
+# Rendre le document avec des commentaires
+
 ## Introduction
 GroupDocs.Viewer for .NET est une bibliothèque puissante qui permet aux développeurs d'intégrer de manière transparente des fonctionnalités de rendu de documents dans leurs applications .NET. Que vous ayez besoin d'afficher des documents Word, des feuilles de calcul Excel, des présentations PowerPoint, des fichiers PDF ou d'autres formats, GroupDocs.Viewer fournit une solution simple.
 Dans ce didacticiel, nous nous concentrerons sur le rendu des documents avec des commentaires à l'aide de GroupDocs.Viewer pour .NET. Nous vous expliquerons les conditions préalables, l'importation d'espaces de noms et vous fournirons un guide étape par étape pour rendre les documents avec des commentaires, en veillant à ce que vous compreniez parfaitement chaque concept.

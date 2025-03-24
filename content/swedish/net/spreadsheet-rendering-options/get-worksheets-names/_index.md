@@ -3,10 +3,12 @@ title: Få kalkylbladsnamn
 linktitle: Få kalkylbladsnamn
 second_title: GroupDocs.Viewer .NET API
 description: Utforska magin med GroupDocs.Viewer för .NET – integrera dokumentvisning sömlöst i dina applikationer. Prova den kostnadsfria provperioden nu!
-type: docs
 weight: 11
 url: /sv/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Få kalkylbladsnamn
+
 ## Introduktion
 Välkommen till den fascinerande världen av GroupDocs.Viewer för .NET! Om du är en utvecklare eller entusiast som är sugen på att utforska kraftfulla dokumentvisningsmöjligheter i dina .NET-applikationer, har du en njutning. I den här omfattande guiden kommer vi att fördjupa oss i krångligheterna med att hämta kalkylbladsnamn med GroupDocs.Viewer. Så spänn fast säkerhetsbältet och låt oss ge oss ut på denna spännande resa!
 ## Förutsättningar
@@ -63,4 +65,4 @@ Absolut! GroupDocs.Viewer stöder ett brett utbud av dokumentformat, inklusive P
 ### Kan jag få en tillfällig licens?
  Säkert! Besök[den här länken](https://purchase.groupdocs.com/temporary-license/) för att få din tillfälliga licens.
 ### Finns det detaljerade dokumentationsresurser tillgängliga?
- Absolut! Kolla in[officiell dokumentation](https://reference.groupdocs.com/viewer/net/) för djupgående information och guider.
+ Absolut! Kolla in[officiell dokumentation](https://tutorials.groupdocs.com/viewer/net/) för djupgående information och guider.

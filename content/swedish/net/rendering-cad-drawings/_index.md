@@ -3,10 +3,12 @@ title: Rendering av CAD-ritningar
 linktitle: Rendering av CAD-ritningar
 second_title: GroupDocs.Viewer .NET API
 description: Upptäck självstudiekurser för att rendera CAD-ritningar med GroupDocs.Viewer för .NET. Lär dig att förbättra .NET-applikationer med sömlös CAD-filhantering.
-type: docs
 weight: 25
 url: /sv/net/rendering-cad-drawings/
 ---
+
+# Rendering av CAD-ritningar
+
 
 ## Introduktion
 

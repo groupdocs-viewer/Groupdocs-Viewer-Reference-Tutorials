@@ -3,10 +3,12 @@ title: ابدء
 linktitle: ابدء
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف البرامج التعليمية خطوة بخطوة لدمج GroupDocs.Viewer لـ .NET بسلاسة في تطبيقاتك. تعلم كيفية تعيين التراخيص وتخصيص مظهر المشاهد.
-type: docs
 weight: 26
 url: /ar/net/getting-started/
 ---
+
+# ابدء
+
 
 ## مقدمة
 

@@ -3,10 +3,12 @@ title: 呈現電子郵件訊息
 linktitle: 呈現電子郵件訊息
 second_title: GroupDocs.Viewer .NET API
 description: 了解 GroupDocs.Viewer for .NET 如何簡化將電子郵件訊息渲染為 PDF 的過程。了解如何有效調整頁面大小、設定日期時間格式以及重新命名欄位。
-type: docs
 weight: 27
 url: /zh-hant/net/rendering-email-messages/
 ---
+
+# 呈現電子郵件訊息
+
 ## 介紹
 
 在文件呈現領域，GroupDocs.Viewer for .NET 成為一種關鍵工具，提供了在應用程式中操作電子郵件訊息的無縫途徑。本文深入探討了使用 GroupDocs.Viewer for .NET 呈現電子郵件訊息的複雜性，並提供了一系列教程，旨在為開發人員提供優化文件檢視體驗的知識。

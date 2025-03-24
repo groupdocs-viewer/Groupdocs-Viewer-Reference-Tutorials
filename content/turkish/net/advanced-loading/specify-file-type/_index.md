@@ -3,10 +3,12 @@ title: Belgeleri Yüklerken Dosya Türünü Belirtin
 linktitle: Belgeleri Yüklerken Dosya Türünü Belirtin
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak belgeleri yüklerken dosya türünü nasıl belirleyeceğinizi öğrenin. .NET uygulamalarınızda çeşitli formatları doğru şekilde işleyin.
-type: docs
 weight: 10
 url: /tr/net/advanced-loading/specify-file-type/
 ---
+
+# Belgeleri Yüklerken Dosya Türünü Belirtin
+
 ## giriiş
 GroupDocs.Viewer for .NET, DOCX, PDF, PPTX ve daha fazlası dahil çok çeşitli dosya formatlarını destekleyen çok yönlü bir belge işleme API'sidir. Belgeleri yüklerken dosya türünü belirterek kullanıcılarınıza doğru oluşturma ve sorunsuz görüntüleme deneyimi sağlayabilirsiniz.
 ## Önkoşullar

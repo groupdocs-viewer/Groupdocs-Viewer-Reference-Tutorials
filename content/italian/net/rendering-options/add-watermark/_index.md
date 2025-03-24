@@ -3,10 +3,12 @@ title: Aggiungi filigrana nel documento
 linktitle: Aggiungi filigrana nel documento
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come aggiungere facilmente filigrane ai documenti utilizzando GroupDocs.Viewer per .NET. Migliora la sicurezza e il branding dei documenti con questo tutorial facile da seguire.
-type: docs
 weight: 10
 url: /it/net/rendering-options/add-watermark/
 ---
+
+# Aggiungi filigrana nel documento
+
 ## introduzione
 Nell'era digitale di oggi, la gestione e la visualizzazione fluida di vari formati di documenti è una necessità per molte aziende e privati. Fortunatamente, con strumenti come GroupDocs.Viewer per .NET, gestire i documenti diventa un gioco da ragazzi. Questa potente libreria .NET consente agli sviluppatori di integrare facilmente la funzionalità di visualizzazione dei documenti nelle loro applicazioni, consentendo agli utenti di visualizzare i documenti senza bisogno del software originale che li ha creati.
 ## Prerequisiti

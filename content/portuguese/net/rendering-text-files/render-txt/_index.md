@@ -3,10 +3,12 @@ title: Renderizar arquivos de texto (.txt)
 linktitle: Renderizar arquivos de texto (.txt)
 second_title: API GroupDocs.Viewer .NET
 description: Explore a conversão perfeita de arquivos de texto em vários formatos usando GroupDocs.Viewer for .NET. Aprimore seus recursos de gerenciamento de documentos sem esforço.
-type: docs
 weight: 10
 url: /pt/net/rendering-text-files/render-txt/
 ---
+
+# Renderizar arquivos de texto (.txt)
+
 ## Introdução
 No domínio do gerenciamento e manipulação de documentos, GroupDocs.Viewer for .NET surge como uma ferramenta poderosa, oferecendo uma infinidade de funcionalidades para renderizar vários formatos de documentos de forma eficiente. Este artigo investiga as complexidades da utilização do GroupDocs.Viewer for .NET para renderizar arquivos de texto (.txt) em vários formatos. Quer você pretenda converter arquivos de texto em HTML, JPG, PNG ou PDF, o GroupDocs.Viewer fornece as ferramentas necessárias para realizar essas tarefas perfeitamente.
 ## Pré-requisitos

@@ -3,10 +3,12 @@ title: Get View Info for PDF Document
 linktitle: Get View Info for PDF Document
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to extract view information from PDF documents using GroupDocs.Viewer for .NET in this comprehensive tutorial.
-type: docs
 weight: 16
 url: /net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Get View Info for PDF Document
+
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool designed to streamline document viewing within .NET applications. Whether you're dealing with PDFs, Word documents, Excel spreadsheets, or PowerPoint presentations, this library simplifies the process of rendering and interacting with various file formats. In this tutorial, we'll focus on harnessing the capabilities of GroupDocs.Viewer specifically for extracting view information from PDF documents.
 ## Prerequisites

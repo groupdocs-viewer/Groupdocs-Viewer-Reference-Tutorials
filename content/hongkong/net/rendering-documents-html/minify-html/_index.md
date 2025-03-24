@@ -3,10 +3,12 @@ title: 縮小渲染的 HTML 文件
 linktitle: 縮小渲染的 HTML 文件
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 .NET 應用程式中無縫呈現 HTML 文件。
-type: docs
 weight: 11
 url: /zh-hant/net/rendering-documents-html/minify-html/
 ---
+
+# 縮小渲染的 HTML 文件
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的工具，使開發人員能夠在其 .NET 應用程式中無縫呈現 HTML 文件。憑藉其直覺的 API 和強大的功能，開發人員可以輕鬆地將文件檢視功能整合到他們的應用程式中，從而增強使用者體驗和生產力。
 ## 先決條件

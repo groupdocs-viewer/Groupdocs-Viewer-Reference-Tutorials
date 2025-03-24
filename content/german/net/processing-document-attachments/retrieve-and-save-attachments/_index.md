@@ -3,10 +3,12 @@ title: Dokumentanhänge abrufen und speichern
 linktitle: Dokumentanhänge abrufen und speichern
 second_title: GroupDocs.Viewer .NET-API
 description: Verwalten Sie Dokumentanhänge in .NET-Anwendungen effizient mit GroupDocs.Viewer. Anhänge problemlos abrufen und speichern.
-type: docs
 weight: 12
 url: /de/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Dokumentanhänge abrufen und speichern
+
 ## Einführung
 Im digitalen Zeitalter ist eine effiziente Dokumentenverarbeitung für Unternehmen und Privatpersonen gleichermaßen von entscheidender Bedeutung. Ob es darum geht, E-Mails zu verwalten, Verträge anzuzeigen oder auf Berichte zuzugreifen, ein zuverlässiges Tool zur Dokumentenvisualisierung ist unerlässlich. GroupDocs.Viewer für .NET erweist sich als robuste Lösung, die es Benutzern ermöglicht, verschiedene Dokumentformate mühelos direkt in ihren .NET-Anwendungen anzuzeigen und mit ihnen zu interagieren.
 ## Voraussetzungen
@@ -65,6 +67,6 @@ Ja, GroupDocs.Viewer unterstützt eine Vielzahl von Dokumentformaten, darunter P
 ### Wie kann ich temporäre Lizenzen für GroupDocs.Viewer für .NET erhalten?
  Temporäre Lizenzen können bei erworben werden[dieser Link](https://purchase.groupdocs.com/temporary-license/).
 ### Wo finde ich Dokumentation für GroupDocs.Viewer für .NET?
- Eine umfassende Dokumentation ist vorhanden[Hier](https://reference.groupdocs.com/viewer/net/).
+ Eine umfassende Dokumentation ist vorhanden[Hier](https://tutorials.groupdocs.com/viewer/net/).
 ### Welche Supportoptionen stehen für GroupDocs.Viewer für .NET zur Verfügung?
  Sie können Hilfe im Community-Forum suchen[Hier](https://forum.groupdocs.com/c/viewer/9).

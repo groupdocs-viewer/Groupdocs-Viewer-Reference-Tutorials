@@ -3,10 +3,12 @@ title: Abilita la memorizzazione nella cache per un'elaborazione dei documenti p
 linktitle: Abilita la memorizzazione nella cache per un'elaborazione dei documenti più rapida
 second_title: API GroupDocs.Viewer .NET
 description: Migliora la velocità di elaborazione dei documenti nelle app .NET con GroupDocs.Viewer sfruttando la memorizzazione nella cache. Ottimizza le prestazioni senza sforzo.
-type: docs
 weight: 10
 url: /it/net/advanced-usage-caching/enable-caching/
 ---
+
+# Abilita la memorizzazione nella cache per un'elaborazione dei documenti più rapida
+
 ## introduzione
 Nell'ambito dell'elaborazione dei documenti .NET, l'ottimizzazione delle prestazioni è fondamentale. Immagina uno scenario in cui è necessario eseguire rapidamente il rendering di più pagine di un documento. È qui che entra in gioco la memorizzazione nella cache. In questo tutorial, approfondiremo l'utilizzo della memorizzazione nella cache per migliorare la velocità di elaborazione dei documenti utilizzando GroupDocs.Viewer per .NET.
 ## Prerequisiti

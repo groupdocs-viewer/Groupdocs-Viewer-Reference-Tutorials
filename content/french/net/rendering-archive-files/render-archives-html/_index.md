@@ -3,10 +3,12 @@ title: Rendre les archives sur une ou plusieurs pages HTML
 linktitle: Rendre les archives sur une ou plusieurs pages HTML
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des archives sur des pages HTML à l'aide de GroupDocs.Viewer pour .NET. Intégrez sans effort les fonctionnalités de visualisation de documents dans vos applications .NET.
-type: docs
 weight: 12
 url: /fr/net/rendering-archive-files/render-archives-html/
 ---
+
+# Rendre les archives sur une ou plusieurs pages HTML
+
 ## Introduction
 GroupDocs.Viewer for .NET est une puissante bibliothèque de rendu de documents qui permet aux développeurs d'intégrer sans effort des fonctionnalités de visualisation de documents dans leurs applications .NET. Que vous ayez besoin de restituer des archives sur une ou plusieurs pages HTML, ce didacticiel vous guidera étape par étape tout au long du processus.
 ## Conditions préalables

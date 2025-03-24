@@ -3,10 +3,12 @@ title: CAD 工程圖中的渲染圖層
 linktitle: CAD 工程圖中的渲染圖層
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 在 .NET 應用程式中無縫渲染 CAD 繪圖。探索渲染選項、自訂圖層等。
-type: docs
 weight: 13
 url: /zh-hant/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# CAD 工程圖中的渲染圖層
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的工具，使開發人員能夠將文件呈現功能無縫整合到他們的 .NET 應用程式中。無論您需要渲染 CAD 繪圖、PDF、Microsoft Office 文件或其他文檔，GroupDocs.Viewer 都能提供全面的解決方案。
 ## 先決條件
@@ -14,7 +16,7 @@ GroupDocs.Viewer for .NET 是一個功能強大的工具，使開發人員能夠
 - 對 C# 程式語言有基本了解。
 - 在您的電腦上設定.NET 開發環境。
 - 安裝了適用於 .NET 的 GroupDocs.Viewer。您可以從以下位置下載：[這裡](https://releases.groupdocs.com/viewer/net/).
-- 造訪 GroupDocs.Viewer for .NET 文件以供參考，可找到[這裡](https://reference.groupdocs.com/viewer/net/).
+- 造訪 GroupDocs.Viewer for .NET 文件以供參考，可找到[這裡](https://tutorials.groupdocs.com/viewer/net/).
 
 ## 導入命名空間
 若要開始使用 GroupDocs.Viewer for .NET，您需要在專案中匯入所需的命名空間。按著這些次序：

@@ -3,10 +3,12 @@ title: Set License from Stream
 linktitle: Set License from Stream
 second_title: GroupDocs.Viewer .NET API
 description: Enhance your .NET applications with GroupDocs.Viewer for seamless document viewing. Follow our step-by-step guide and integrate powerful document viewing capabilities effortlessly.
-type: docs
 weight: 11
 url: /net/getting-started/set-license-from-stream/
 ---
+
+# Set License from Stream
+
 ## Introduction
 Are you looking to empower your .NET applications with advanced document viewing capabilities? GroupDocs.Viewer for .NET offers a comprehensive solution to seamlessly integrate document viewing functionalities into your projects. In this tutorial, we'll delve into the process of leveraging GroupDocs.Viewer for .NET to enrich your applications with powerful document viewing capabilities. 
 ## Prerequisites
@@ -14,7 +16,7 @@ Before we dive into the integration process, ensure that you have the following 
 1. Basic Knowledge of .NET Development: Familiarity with C# and .NET framework is essential to follow along with this tutorial.
    
 2. GroupDocs.Viewer for .NET Package: Make sure you have downloaded and installed the GroupDocs.Viewer for .NET package. You can obtain it from the [download link](https://releases.groupdocs.com/viewer/net/).
-3. Access to GroupDocs Documentation: Keep the [documentation](https://reference.groupdocs.com/viewer/net/) handy for reference during the integration process.
+3. Access to GroupDocs Documentation: Keep the [documentation](https://tutorials.groupdocs.com/viewer/net/) handy for tutorials during the integration process.
 
 ## Import Namespaces
 To begin with, import the necessary namespaces into your .NET application. Follow these steps:

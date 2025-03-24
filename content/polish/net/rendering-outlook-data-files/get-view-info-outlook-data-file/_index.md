@@ -3,10 +3,12 @@ title: Uzyskaj informacje o wyświetlaniu plików danych programu Outlook (PST, 
 linktitle: Uzyskaj informacje o wyświetlaniu plików danych programu Outlook (PST, OST)
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak wyodrębnić informacje o widoku z plików danych programu Outlook (PST, OST) za pomocą programu GroupDocs.Viewer dla platformy .NET. Bez wysiłku zwiększ swoje możliwości zarządzania dokumentami.
-type: docs
 weight: 10
 url: /pl/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---
+
+# Uzyskaj informacje o wyświetlaniu plików danych programu Outlook (PST, OST)
+
 ## Wstęp
 W dziedzinie zarządzania i przeglądania dokumentów GroupDocs.Viewer dla .NET jest potężnym narzędziem, szczególnie jeśli chodzi o obsługę plików danych programu Outlook (PST, OST). W tym samouczku szczegółowo omówimy proces wyodrębniania informacji o widoku tych plików krok po kroku.
 ## Warunki wstępne

@@ -3,10 +3,12 @@ title: 入门
 linktitle: 入门
 second_title: GroupDocs.Viewer .NET API
 description: 了解将 GroupDocs.Viewer for .NET 无缝集成到您的应用程序中的分步教程。了解设置许可证和自定义查看器外观。
-type: docs
 weight: 26
 url: /zh/net/getting-started/
 ---
+
+# 入门
+
 
 ## 介绍
 

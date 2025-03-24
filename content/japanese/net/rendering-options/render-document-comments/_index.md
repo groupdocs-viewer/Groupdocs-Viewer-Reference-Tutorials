@@ -3,10 +3,12 @@ title: コメント付きドキュメントのレンダリング
 linktitle: コメント付きドキュメントのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してコメント付きドキュメントをレンダリングする方法を学びます。シームレスな統合については、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 13
 url: /ja/net/rendering-options/render-document-comments/
 ---
+
+# コメント付きドキュメントのレンダリング
+
 ## 導入
 GroupDocs.Viewer for .NET は、開発者がドキュメント レンダリング機能を .NET アプリケーションにシームレスに統合できるようにする強力なライブラリです。 Word 文書、Excel スプレッドシート、PowerPoint プレゼンテーション、PDF ファイル、またはその他の形式を表示する必要がある場合でも、GroupDocs.Viewer は簡単なソリューションを提供します。
 このチュートリアルでは、GroupDocs.Viewer for .NET を使用してコメント付きドキュメントをレンダリングすることに焦点を当てます。前提条件、名前空間のインポートについて説明し、コメント付きのドキュメントをレンダリングするためのステップバイステップのガイドを提供して、各概念を完全に理解できるようにします。

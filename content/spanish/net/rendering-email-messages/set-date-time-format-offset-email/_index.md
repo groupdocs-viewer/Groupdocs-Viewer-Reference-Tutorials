@@ -3,10 +3,12 @@ title: Establecer formato de fecha y hora y compensación de zona horaria (corre
 linktitle: Establecer formato de fecha y hora y compensación de zona horaria (correo electrónico)
 second_title: API GroupDocs.Viewer .NET
 description: Integre GroupDocs.Viewer para .NET sin problemas en sus aplicaciones para obtener potentes capacidades de visualización de documentos. Mejore la experiencia del usuario con opciones personalizables.
-type: docs
 weight: 11
 url: /es/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
+
+# Establecer formato de fecha y hora y compensación de zona horaria (correo electrónico)
+
 
 ## Introducción
 GroupDocs.Viewer para .NET es una poderosa herramienta que permite a los desarrolladores integrar perfectamente capacidades de visualización de documentos en sus aplicaciones .NET. Con GroupDocs.Viewer, puede mostrar una amplia gama de formatos de documentos, incluidos PDF, documentos de Microsoft Office, imágenes y más, directamente dentro de su aplicación, sin la necesidad de complementos o visores externos. En este completo tutorial, lo guiaremos a través del proceso de configuración de GroupDocs.Viewer para .NET, exploraremos sus características y demostraremos cómo utilizarlo de manera efectiva para mejorar las capacidades de visualización de documentos de su aplicación.

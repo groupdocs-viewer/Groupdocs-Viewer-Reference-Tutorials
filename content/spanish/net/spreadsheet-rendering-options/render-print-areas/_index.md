@@ -3,10 +3,12 @@ title: Renderizar áreas de impresión con GroupDocs.Viewer para .NET
 linktitle: Renderizar áreas de impresión
 second_title: API GroupDocs.Viewer .NET
 description: Explore GroupDocs.Viewer para .NET y renderice sin esfuerzo áreas de impresión en varios formatos de documentos. ¡Pruebe la prueba gratuita ahora! #GroupDocs.Visor
-type: docs
 weight: 17
 url: /es/net/spreadsheet-rendering-options/render-print-areas/
 ---
+
+# Renderizar áreas de impresión con GroupDocs.Viewer para .NET
+
 ## Introducción
 Bienvenido a esta guía completa sobre cómo aprovechar GroupDocs.Viewer para .NET para representar áreas de impresión en sus documentos. Si es un desarrollador .NET que busca una solución sólida para la representación de documentos, está en el lugar correcto. En este tutorial, lo guiaremos a través del proceso de renderizado de áreas de impresión usando GroupDocs.Viewer, garantizando una experiencia perfecta en sus aplicaciones.
 ## Requisitos previos
@@ -57,7 +59,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ¡Felicidades! Ha aprendido con éxito cómo utilizar GroupDocs.Viewer para .NET para representar áreas de impresión en sus documentos. Esta poderosa herramienta abre nuevas posibilidades para la representación de documentos en sus aplicaciones .NET.
 ## Preguntas frecuentes
 ### ¿GroupDocs.Viewer es compatible con diferentes formatos de documentos?
- Sí, GroupDocs.Viewer admite una amplia gama de formatos de documentos, incluidos PDF, DOCX, XLSX y más. Referirse a[documentación](https://reference.groupdocs.com/viewer/net/) para obtener una lista completa.
+ Sí, GroupDocs.Viewer admite una amplia gama de formatos de documentos, incluidos PDF, DOCX, XLSX y más. Referirse a[documentación](https://tutorials.groupdocs.com/viewer/net/) para obtener una lista completa.
 ### ¿Puedo probar GroupDocs.Viewer antes de realizar una compra?
  ¡Absolutamente! Puede explorar la herramienta con una prueba gratuita disponible[aquí](https://releases.groupdocs.com/).
 ### ¿Dónde puedo encontrar soporte o buscar asistencia para cualquier problema?

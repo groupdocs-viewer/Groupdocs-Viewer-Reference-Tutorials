@@ -3,10 +3,12 @@ title: Renderelésspecifikus CAD-formátumok (CF2)
 linktitle: Renderelésspecifikus CAD-formátumok (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet meghatározott CAD-formátumokat, például CF2-t HTML-, JPG-, PNG- és PDF-formátumba renderelni a Groupdocs.Viewer for .NET segítségével.
-type: docs
 weight: 12
 url: /hu/net/rendering-cad-drawings/render-specific-cad-formats/
 ---
+
+# Renderelésspecifikus CAD-formátumok (CF2)
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet adott CAD-formátumokat előállítani a Groupdocs.Viewer for .NET segítségével. A Groupdocs.Viewer egy hatékony dokumentumnézegető API, amely lehetővé teszi a fejlesztők számára, hogy több mint 170 dokumentumtípust jelenítsenek meg alkalmazásaikban külső szoftver telepítése nélkül. Konkrétan a CAD formátumok, például a CF2 megjelenítésére fogunk összpontosítani különféle kimeneti formátumokká, például HTML, JPG, PNG és PDF.
 ## Előfeltételek

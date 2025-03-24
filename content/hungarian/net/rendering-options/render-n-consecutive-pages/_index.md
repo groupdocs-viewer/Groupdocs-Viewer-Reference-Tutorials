@@ -3,10 +3,12 @@ title: Rendereljen le N egymást követő oldalt
 linktitle: Rendereljen le N egymást követő oldalt
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan integrálhatja a GroupDocs.Viewer for .NET programot alkalmazásaiba, hogy könnyedén, N egymást követő oldalt tartalmazó dokumentumokat jelenítsen meg.
-type: docs
 weight: 16
 url: /hu/net/rendering-options/render-n-consecutive-pages/
 ---
+
+# Rendereljen le N egymást követő oldalt
+
 ## Bevezetés
 A .NET fejlesztés területén a dokumentummegtekintési képességek alkalmazásaiba való integrálása jelentősen javíthatja a felhasználói élményt és a funkcionalitást. Az egyik ilyen eszköz, amely megkönnyíti a dokumentumok zökkenőmentes megjelenítését, a GroupDocs.Viewer for .NET. Ez a hatékony könyvtár lehetővé teszi a fejlesztők számára, hogy a különféle dokumentumformátumokat könnyedén jelenítsék meg alkalmazásaikban.
 ## Előfeltételek

@@ -3,10 +3,12 @@ title: Muat Dokumen dari FTP (Lanjutan)
 linktitle: Muat Dokumen dari FTP (Lanjutan)
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan GroupDocs.Viewer untuk .NET dengan lancar ke dalam aplikasi Anda untuk tampilan dokumen yang efisien. Render dokumen dari FTP dengan mudah.
-type: docs
 weight: 13
 url: /id/net/loading-documents/loading-document-ftp/
 ---
+
+# Muat Dokumen dari FTP (Lanjutan)
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah API canggih yang memungkinkan pengembang mengintegrasikan kemampuan melihat dokumen dengan lancar ke dalam aplikasi .NET mereka. Baik Anda bekerja dengan PDF, dokumen Microsoft Office, atau format file populer lainnya, GroupDocs.Viewer menyederhanakan proses rendering dokumen untuk ditampilkan, sehingga lebih mudah untuk memberikan pengalaman menonton yang kaya kepada pengguna.
 ## Prasyarat

@@ -3,10 +3,12 @@ title: 이미지 렌더링
 linktitle: 이미지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 다양한 이미지 형식을 렌더링하는 방법에 대한 포괄적인 자습서를 살펴보세요. AI부터 WMF까지 원활한 통합 및 코딩 예제를 알아보세요.
-type: docs
 weight: 28
 url: /ko/net/image-rendering/
 ---
+
+# 이미지 렌더링
+
 
 ## 소개
 

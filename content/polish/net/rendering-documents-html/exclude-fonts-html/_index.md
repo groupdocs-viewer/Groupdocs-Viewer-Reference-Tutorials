@@ -3,10 +3,12 @@ title: Wyklucz czcionki z renderowanego kodu HTML
 linktitle: Wyklucz czcionki z renderowanego kodu HTML
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak wykluczać czcionki z renderowanego kodu HTML przy użyciu narzędzia GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby uzyskać płynne wyświetlanie dokumentów.
-type: docs
 weight: 10
 url: /pl/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Wyklucz czcionki z renderowanego kodu HTML
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to potężna biblioteka do renderowania dokumentów, która umożliwia programistom wyświetlanie ponad 50 formatów dokumentów w aplikacjach .NET bez konieczności stosowania zewnętrznych zależności. W tym samouczku skupimy się na konkretnej funkcji GroupDocs.Viewer: wykluczaniu czcionek z renderowanego wyniku HTML. 
 ## Warunki wstępne

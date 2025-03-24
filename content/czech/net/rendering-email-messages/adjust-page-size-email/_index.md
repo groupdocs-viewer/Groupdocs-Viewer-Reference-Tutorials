@@ -3,10 +3,12 @@ title: Upravte velikost stránky při vykreslování e-mailových zpráv
 linktitle: Upravte velikost stránky při vykreslování e-mailových zpráv
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak upravit velikost stránky při vykreslování e-mailových zpráv do PDF pomocí GroupDocs.Viewer for .NET. Zvyšte efektivitu prohlížení dokumentů.
-type: docs
 weight: 10
 url: /cs/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Upravte velikost stránky při vykreslování e-mailových zpráv
+
 ## Úvod
 V oblasti vývoje .NET poskytuje GroupDocs.Viewer komplexní řešení pro vykreslování různých formátů dokumentů, včetně e-mailových zpráv. Tento výukový program se zaměřuje na úpravu velikosti stránky při vykreslování e-mailových zpráv do formátu PDF pomocí GroupDocs.Viewer for .NET. Podle kroků uvedených v této příručce se naučíte, jak plynule manipulovat s velikostí stránky tak, aby vyhovovala vašim konkrétním požadavkům.
 ## Předpoklady

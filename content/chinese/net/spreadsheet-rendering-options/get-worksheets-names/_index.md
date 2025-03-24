@@ -3,10 +3,12 @@ title: 获取工作表名称
 linktitle: 获取工作表名称
 second_title: GroupDocs.Viewer .NET API
 description: 探索 GroupDocs.Viewer for .NET 的魔力 – 将文档查看无缝集成到您的应用程序中。立即免费试用！
-type: docs
 weight: 11
 url: /zh/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# 获取工作表名称
+
 ## 介绍
 欢迎来到 GroupDocs.Viewer for .NET 的迷人世界！如果您是一位开发人员或爱好者，热衷于探索 .NET 应用程序中强大的文档查看功能，那么您将会大饱口福。在本综合指南中，我们将深入研究使用 GroupDocs.Viewer 检索工作表名称的复杂性。那么，系好安全带，让我们踏上这段激动人心的旅程吧！
 ## 先决条件
@@ -63,4 +65,4 @@ foreach (Page page in viewInfo.Pages)
 ### 我可以获得临时许可证吗？
 当然！访问[这个链接](https://purchase.groupdocs.com/temporary-license/)获得您的临时许可证。
 ### 有详细的文档资源吗？
-绝对地！查看[官方文档](https://reference.groupdocs.com/viewer/net/)获取深入的信息和指南。
+绝对地！查看[官方文档](https://tutorials.groupdocs.com/viewer/net/)获取深入的信息和指南。

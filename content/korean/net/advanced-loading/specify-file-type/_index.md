@@ -3,10 +3,12 @@ title: 문서를 로드할 때 파일 형식 지정
 linktitle: 문서를 로드할 때 파일 형식 지정
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서를 로드할 때 파일 형식을 지정하는 방법을 알아보세요. .NET 애플리케이션에서 다양한 형식을 정확하게 렌더링합니다.
-type: docs
 weight: 10
 url: /ko/net/advanced-loading/specify-file-type/
 ---
+
+# 문서를 로드할 때 파일 형식 지정
+
 ## 소개
 .NET용 GroupDocs.Viewer는 DOCX, PDF, PPTX 등을 포함한 광범위한 파일 형식을 지원하는 다목적 문서 렌더링 API입니다. 문서를 로드할 때 파일 형식을 지정하면 사용자에게 정확한 렌더링과 원활한 보기 경험을 보장할 수 있습니다.
 ## 전제조건

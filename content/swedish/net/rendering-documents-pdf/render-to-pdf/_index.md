@@ -3,10 +3,12 @@ title: Gör dokument till PDF
 linktitle: Gör dokument till PDF
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar dokument till PDF med GroupDocs.Viewer för .NET. Steg-för-steg-guide med förutsättningar och vanliga frågor inkluderade.
-type: docs
 weight: 10
 url: /sv/net/rendering-documents-pdf/render-to-pdf/
 ---
+
+# Gör dokument till PDF
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt verktyg för att rendera olika dokumentformat till PDF. I den här handledningen guidar vi dig genom processen steg för steg.
 ## Förutsättningar

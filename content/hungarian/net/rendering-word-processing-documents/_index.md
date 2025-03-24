@@ -3,10 +3,12 @@ title: Szövegszerkesztő dokumentumok renderelése
 linktitle: Szövegszerkesztő dokumentumok renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Tanulja meg, hogyan lehet hatékonyan megjeleníteni a nyomon követett változásokat a szövegszerkesztő dokumentumokban a GroupDocs.Viewer for .NET segítségével. Növelje dokumentumkezelési készségeit.
-type: docs
 weight: 36
 url: /hu/net/rendering-word-processing-documents/
 ---
+
+# Szövegszerkesztő dokumentumok renderelése
+
 
 ## Bevezetés
 

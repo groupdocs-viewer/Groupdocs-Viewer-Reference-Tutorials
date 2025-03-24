@@ -1,12 +1,14 @@
 ---
 title: Átfogó oktatóanyagok és példák a GroupDocs.Viewer for .NET-hez
 linktitle: GroupDocs.Viewer .NET oktatóanyagokhoz
-type: docs
 weight: 10
 url: /hu/net/
 description: Fedezzen fel átfogó oktatóanyagokat és példákat a GroupDocs.Viewer .NET alkalmazásaiba való integrálásához. Ismerje meg lépésről lépésre a továbbfejlesztett dokumentumkezelés technikáit.
 is_root: true
 ---
+
+# Átfogó oktatóanyagok és példák a GroupDocs.Viewer for .NET-hez
+
 ## Bevezetés
 
 Üdvözöljük a GroupDocs.Viewer for .NET oktatóanyagok világában! Akár csak most kezdi, akár haladó technikákat keres, mi mindent megtalálunk. Merüljünk el a számtalan oktatóanyagban, amelyek célja dokumentumkezelési készségei fejlesztése ezzel a hatékony eszközzel.

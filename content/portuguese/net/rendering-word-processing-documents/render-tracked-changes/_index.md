@@ -3,10 +3,12 @@ title: Renderizar alterações rastreadas
 linktitle: Renderizar alterações rastreadas
 second_title: API GroupDocs.Viewer .NET
 description: Descubra como renderizar alterações controladas em documentos sem esforço usando GroupDocs.Viewer for .NET. Aumente a eficiência do gerenciamento de documentos.
-type: docs
 weight: 10
 url: /pt/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Renderizar alterações rastreadas
+
 ## Introdução
 Na era digital de hoje, a gestão e visualização eficiente de documentos é crucial tanto para empresas como para indivíduos. Com o advento de tecnologias avançadas, soluções como GroupDocs.Viewer for .NET revolucionaram a forma como interagimos com vários formatos de documentos, incluindo documentos Word, PDFs e muito mais. Neste guia abrangente, nos aprofundaremos em como aproveitar o GroupDocs.Viewer for .NET para renderizar alterações controladas em seus documentos de maneira integrada.
 ## Pré-requisitos

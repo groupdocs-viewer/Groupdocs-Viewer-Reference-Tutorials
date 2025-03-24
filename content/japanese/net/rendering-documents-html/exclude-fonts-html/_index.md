@@ -3,10 +3,12 @@ title: レンダリングされた HTML からフォントを除外する
 linktitle: レンダリングされた HTML からフォントを除外する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、レンダリングされた HTML からフォントを除外する方法を学びます。シームレスなドキュメント表示については、このステップバイステップのガイドに従ってください。
-type: docs
 weight: 10
 url: /ja/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# レンダリングされた HTML からフォントを除外する
+
 ## 導入
 GroupDocs.Viewer for .NET は、開発者が外部の依存関係を必要とせずに .NET アプリケーションで 50 を超えるドキュメント形式を表示できる強力なドキュメント レンダリング ライブラリです。このチュートリアルでは、GroupDocs.Viewer の特定の機能、つまりレンダリングされた HTML 出力からフォントを除外する機能に焦点を当てます。 
 ## 前提条件

@@ -3,10 +3,12 @@ title: Renderizar com recursos incorporados ou externos
 linktitle: Renderizar com recursos incorporados ou externos
 second_title: API GroupDocs.Viewer .NET
 description: Aprimore a visualização de documentos .NET com GroupDocs.Viewer para renderização perfeita. Siga nosso tutorial para integração eficiente e experiência de usuário superior.
-type: docs
 weight: 12
 url: /pt/net/rendering-documents-html/render-html-resources/
 ---
+
+# Renderizar com recursos incorporados ou externos
+
 ## Introdução
 
 No mundo do desenvolvimento .NET, a visualização eficiente de documentos é um aspecto crucial de muitos aplicativos. GroupDocs.Viewer for .NET fornece uma solução poderosa para renderizar documentos com recursos incorporados ou externos. Neste tutorial, exploraremos como utilizar GroupDocs.Viewer para renderizar documentos perfeitamente, detalhando cada etapa para maior clareza e compreensão.

@@ -3,10 +3,12 @@ title: Utilisation avancée (mise en cache)
 linktitle: Utilisation avancée (mise en cache)
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez des techniques avancées pour optimiser la vitesse de traitement des documents dans les applications .NET avec GroupDocs.Viewer. Découvrez dès maintenant comment activer la mise en cache pour des performances plus rapides !
-type: docs
 weight: 22
 url: /fr/net/advanced-usage-caching/
 ---
+
+# Utilisation avancée (mise en cache)
+
 
 ## Introduction
 

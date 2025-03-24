@@ -3,10 +3,12 @@ title: Renderuj prześledzone zmiany
 linktitle: Renderuj prześledzone zmiany
 second_title: GroupDocs.Viewer API .NET
 description: Odkryj, jak bez wysiłku renderować prześledzone zmiany w dokumentach za pomocą GroupDocs.Viewer dla .NET. Zwiększ efektywność zarządzania dokumentami.
-type: docs
 weight: 10
 url: /pl/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Renderuj prześledzone zmiany
+
 ## Wstęp
 W dzisiejszej erze cyfrowej wydajne zarządzanie dokumentami i przeglądanie ich ma kluczowe znaczenie zarówno dla firm, jak i osób prywatnych. Wraz z pojawieniem się zaawansowanych technologii rozwiązania takie jak GroupDocs.Viewer dla .NET zrewolucjonizowały sposób interakcji z różnymi formatami dokumentów, w tym dokumentami programu Word, plikami PDF i nie tylko. W tym obszernym przewodniku omówimy, jak wykorzystać GroupDocs.Viewer dla .NET do płynnego renderowania prześledzonych zmian w dokumentach.
 ## Warunki wstępne

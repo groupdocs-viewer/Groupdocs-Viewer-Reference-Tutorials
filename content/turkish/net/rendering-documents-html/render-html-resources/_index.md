@@ -3,10 +3,12 @@ title: Gömülü veya Harici Kaynaklarla İşleme
 linktitle: Gömülü veya Harici Kaynaklarla İşleme
 second_title: GroupDocs.Viewer .NET API'si
 description: Kusursuz işleme için GroupDocs.Viewer ile .NET belge görüntülemeyi geliştirin. Verimli entegrasyon ve üstün kullanıcı deneyimi için eğitimimizi takip edin.
-type: docs
 weight: 12
 url: /tr/net/rendering-documents-html/render-html-resources/
 ---
+
+# Gömülü veya Harici Kaynaklarla İşleme
+
 ## giriiş
 
 .NET geliştirme dünyasında, verimli belge görüntüleme birçok uygulamanın çok önemli bir yönüdür. GroupDocs.Viewer for .NET, yerleşik veya harici kaynaklarla belgelerin işlenmesi için güçlü bir çözüm sağlar. Bu eğitimde, belgeleri sorunsuz bir şekilde oluşturmak için GroupDocs.Viewer'ı nasıl kullanacağımızı keşfedeceğiz ve netlik ve anlayış için her adımı parçalara ayıracağız.

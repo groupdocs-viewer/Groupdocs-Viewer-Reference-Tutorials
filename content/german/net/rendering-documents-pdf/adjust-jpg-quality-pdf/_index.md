@@ -3,10 +3,12 @@ title: Passen Sie die JPG-Bildqualität im gerenderten PDF an
 linktitle: Passen Sie die JPG-Bildqualität im gerenderten PDF an
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie die JPG-Bildqualität in gerenderten PDF-Dokumenten mit GroupDocs.Viewer für .NET anpassen. Verbessern Sie Ihr Erlebnis beim Anzeigen von Dokumenten.
-type: docs
 weight: 11
 url: /de/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Passen Sie die JPG-Bildqualität im gerenderten PDF an
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie die Qualität von JPG-Bildern beim Rendern einer PDF-Datei mit GroupDocs.Viewer für .NET anpassen. Mit dieser leistungsstarken Bibliothek können Sie verschiedene Dokumentformate in Ihren .NET-Anwendungen nahtlos anzeigen und bearbeiten.
 ## Voraussetzungen

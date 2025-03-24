@@ -3,10 +3,12 @@ title: Zakázat seskupování znaků v PDF
 linktitle: Zakázat seskupování znaků v PDF
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak zakázat seskupování znaků v souborech PDF pomocí GroupDocs.Viewer for .NET. Postupujte podle našeho podrobného návodu pro bezproblémové vykreslování dokumentů.
-type: docs
 weight: 11
 url: /cs/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Zakázat seskupování znaků v PDF
+
 ## Úvod
 Ve světě vývoje .NET může být někdy problém se zobrazením dokumentů, zejména při práci s formáty, jako jsou PDF. Se správnými nástroji a znalostmi však můžete tento proces efektivně zefektivnit. Jedním z takových nástrojů, který přichází na pomoc, je GroupDocs.Viewer for .NET. Tato výkonná knihovna umožňuje vývojářům bezproblémově vykreslovat a zobrazovat různé typy dokumentů v rámci jejich aplikací .NET.
 ## Předpoklady

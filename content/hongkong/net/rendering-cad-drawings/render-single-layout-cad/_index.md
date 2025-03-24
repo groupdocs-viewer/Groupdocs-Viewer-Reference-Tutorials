@@ -3,10 +3,12 @@ title: 在 CAD 工程圖中渲染單一佈局
 linktitle: 在 CAD 工程圖中渲染單一佈局
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 CAD 繪圖中渲染單一佈局。在 .NET 應用程式中無縫整合的簡單步驟。
-type: docs
 weight: 14
 url: /zh-hant/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# 在 CAD 工程圖中渲染單一佈局
+
 ## 介紹
 在 .NET 開發領域，處理和檢視 CAD 繪圖是一項常見需求。 GroupDocs.Viewer for .NET 透過提供在 .NET 應用程式中渲染 CAD 繪圖的全面解決方案來簡化此任務。在本教程中，我們將深入研究使用 GroupDocs.Viewer for .NET 在 CAD 繪圖中渲染單一佈局。
 ## 先決條件

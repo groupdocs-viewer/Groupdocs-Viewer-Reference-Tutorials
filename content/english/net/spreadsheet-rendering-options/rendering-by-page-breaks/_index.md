@@ -3,10 +3,12 @@ title: Rendering by Page Breaks
 linktitle: Rendering by Page Breaks
 second_title: GroupDocs.Viewer .NET API
 description: Explore the power of GroupDocs.Viewer for .NET in rendering documents with precision. Follow our step-by-step tutorial for rendering by page breaks.
-type: docs
 weight: 14
 url: /net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Rendering by Page Breaks
+
 ## Introduction
 Welcome to the GroupDocs.Viewer for .NET tutorial on rendering documents by page breaks! In this step-by-step guide, we'll explore how to utilize the powerful features of GroupDocs.Viewer to render documents with precision, specifically focusing on page breaks. Whether you're a seasoned developer or just starting, this tutorial will walk you through the process, providing a clear understanding of each step.
 ## Prerequisites

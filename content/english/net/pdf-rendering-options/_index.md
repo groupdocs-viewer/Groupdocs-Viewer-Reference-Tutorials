@@ -3,10 +3,12 @@ title: PDF Rendering Options
 linktitle: PDF Rendering Options
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to optimize PDF viewing with GroupDocs.Viewer .NET tutorials. Explore PDF rendering options such as adjusting image quality and disabling text selection.
-type: docs
 weight: 38
 url: /net/pdf-rendering-options/
 ---
+
+# PDF Rendering Options
+
 
 ## Introduction
 

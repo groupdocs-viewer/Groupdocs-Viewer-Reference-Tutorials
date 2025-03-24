@@ -3,10 +3,12 @@ title: Renderizar documento con notas
 linktitle: Renderizar documento con notas
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar documentos con notas usando GroupDocs.Viewer para .NET. Tutorial paso a paso para una integración perfecta en sus aplicaciones .NET.
-type: docs
 weight: 14
 url: /es/net/rendering-options/render-document-notes/
 ---
+
+# Renderizar documento con notas
+
 ## Introducción
 En el ámbito de la manipulación y visualización de documentos, GroupDocs.Viewer para .NET se presenta como una solución sólida que ofrece una integración perfecta y potentes funcionalidades. Este tutorial tiene como objetivo guiarlo a través del proceso de renderizado de documentos con notas usando GroupDocs.Viewer para .NET. Si es un desarrollador experimentado o simplemente se está sumergiendo en el mundo de .NET, esta guía paso a paso lo ayudará a explorar las complejidades de la representación de documentos con facilidad.
 ## Requisitos previos

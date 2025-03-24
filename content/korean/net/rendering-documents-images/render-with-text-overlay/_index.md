@@ -3,10 +3,12 @@ title: 표시를 위해 텍스트가 오버레이된 렌더링
 linktitle: 표시를 위해 텍스트가 오버레이된 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: 향상된 사용자 경험을 위해 다양한 형식을 지원하는 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램에서 문서를 원활하게 렌더링합니다.
-type: docs
 weight: 13
 url: /ko/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# 표시를 위해 텍스트가 오버레이된 렌더링
+
 ## 소개
 .NET 개발 영역에서 다양한 문서 형식을 원활하게 관리하고 표시하는 것은 많은 응용 프로그램에 매우 중요합니다. .NET용 GroupDocs.Viewer는 .NET 응용 프로그램 내에서 문서를 쉽게 렌더링할 수 있는 강력한 솔루션으로 등장합니다. PDF, Word 문서, Excel 스프레드시트, PowerPoint 프리젠테이션 등 무엇이든 GroupDocs.Viewer는 향상된 문서 보기를 위한 다양한 기능을 제공하여 프로세스를 단순화합니다.
 ## 전제조건

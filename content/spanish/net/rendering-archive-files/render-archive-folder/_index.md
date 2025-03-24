@@ -3,10 +3,12 @@ title: Carpeta de archivo de renderizado
 linktitle: Carpeta de archivo de renderizado
 second_title: API GroupDocs.Viewer .NET
 description: Integre GroupDocs.Viewer para .NET sin problemas en sus aplicaciones .NET para obtener capacidades eficientes de representación y visualización de documentos.
-type: docs
 weight: 11
 url: /es/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Carpeta de archivo de renderizado
+
 ## Introducción
 En la era digital actual, acceder y ver documentos sin problemas es crucial tanto para las empresas como para los particulares. Afortunadamente, con el avance de la tecnología, los desarrolladores ahora tienen poderosas herramientas a su disposición para integrar capacidades de visualización de documentos en sus aplicaciones sin esfuerzo. Una de esas herramientas es GroupDocs.Viewer para .NET, una biblioteca versátil que permite a los desarrolladores representar varios formatos de documentos dentro de sus aplicaciones .NET.
 ## Requisitos previos

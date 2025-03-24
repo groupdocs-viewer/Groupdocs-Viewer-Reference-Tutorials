@@ -3,10 +3,12 @@ title: Opciones de renderizado de hojas de cálculo
 linktitle: Opciones de renderizado de hojas de cálculo
 second_title: API GroupDocs.Viewer .NET
 description: Mejore sin esfuerzo la visualización de documentos en .NET con los tutoriales de GroupDocs.Viewer. Aprenda a ajustar el desbordamiento del texto, representar líneas de cuadrícula y más.
-type: docs
 weight: 37
 url: /es/net/spreadsheet-rendering-options/
 ---
+
+# Opciones de renderizado de hojas de cálculo
+
 ## Introducción
 
 ¿Está listo para mejorar su experiencia de visualización de documentos en .NET? GroupDocs.Viewer para .NET ofrece un conjunto completo de tutoriales que le permiten optimizar la representación de hojas de cálculo. Desde ajustar el desbordamiento del texto hasta representar columnas y filas ocultas, lo tenemos cubierto. Sumerjámonos en el mundo de las opciones de representación de hojas de cálculo y liberemos todo el potencial de GroupDocs.Viewer para .NET.

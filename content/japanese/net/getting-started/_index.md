@@ -3,10 +3,12 @@ title: はじめる
 linktitle: はじめる
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET をアプリケーションにシームレスに統合するためのステップバイステップのチュートリアルをご覧ください。ライセンスを設定し、ビューアの外観をカスタマイズする方法を学びます。
-type: docs
 weight: 26
 url: /ja/net/getting-started/
 ---
+
+# はじめる
+
 
 ## 導入
 

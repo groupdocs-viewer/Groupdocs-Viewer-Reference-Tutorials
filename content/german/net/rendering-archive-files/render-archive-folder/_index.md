@@ -3,10 +3,12 @@ title: Archivordner rendern
 linktitle: Archivordner rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Integrieren Sie GroupDocs.Viewer für .NET nahtlos in Ihre .NET-Anwendungen für effiziente Funktionen zum Rendern und Anzeigen von Dokumenten.
-type: docs
 weight: 11
 url: /de/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Archivordner rendern
+
 ## Einführung
 Im heutigen digitalen Zeitalter ist der reibungslose Zugriff auf und die Anzeige von Dokumenten für Unternehmen und Privatpersonen gleichermaßen von entscheidender Bedeutung. Glücklicherweise stehen Entwicklern mit der Weiterentwicklung der Technologie jetzt leistungsstarke Tools zur Verfügung, mit denen sie Funktionen zur Dokumentenanzeige mühelos in ihre Anwendungen integrieren können. Ein solches Tool ist GroupDocs.Viewer für .NET, eine vielseitige Bibliothek, die es Entwicklern ermöglicht, verschiedene Dokumentformate in ihren .NET-Anwendungen zu rendern.
 ## Voraussetzungen

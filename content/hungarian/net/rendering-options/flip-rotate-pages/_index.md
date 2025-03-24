@@ -3,16 +3,18 @@ title: Lapok átfordítása és forgatása
 linktitle: Lapok átfordítása és forgatása
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan integrálhatja a Groupdocs.Viewer for .NET-et alkalmazásaiba a zökkenőmentes dokumentum-megjelenítés, lapozás és elforgatás érdekében.
-type: docs
 weight: 12
 url: /hu/net/rendering-options/flip-rotate-pages/
 ---
+
+# Lapok átfordítása és forgatása
+
 ## Bevezetés
 Ebben az oktatóanyagban a Groupdocs.Viewer for .NET funkcióival foglalkozunk, különös tekintettel az oldalak lapozására és forgatására. A Groupdocs.Viewer for .NET egy hatékony eszköz, amelyet különféle formátumú dokumentumok megjelenítésére terveztek .NET-alkalmazásokon belül. Akár dokumentumkezelő rendszert fejleszt, akár dokumentummegtekintési képességeket szeretne szoftverébe integrálni, a Groupdocs.Viewer for .NET hatékony megoldást kínál.
 ## Előfeltételek
 Mielőtt elkezdené, győződjön meg arról, hogy beállította a következő előfeltételeket:
 ### A Groupdocs.Viewer for .NET telepítése
- A Groupdocs.Viewer for .NET használatához telepítenie kell a csomagot a NuGet Package Manageren keresztül. A részletes telepítési útmutatót a[dokumentáció](https://reference.groupdocs.com/viewer/net/).
+ A Groupdocs.Viewer for .NET használatához telepítenie kell a csomagot a NuGet Package Manageren keresztül. A részletes telepítési útmutatót a[dokumentáció](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Névterek importálása
 Győződjön meg arról, hogy a szükséges névtereket importálta a projektbe a Groupdocs.Viewer for .NET hatékony használatához.

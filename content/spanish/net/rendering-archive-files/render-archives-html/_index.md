@@ -3,10 +3,12 @@ title: Representar archivos en una o varias páginas HTML
 linktitle: Representar archivos en una o varias páginas HTML
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar archivos en páginas HTML utilizando GroupDocs.Viewer para .NET. Integre sin esfuerzo capacidades de visualización de documentos en sus aplicaciones .NET.
-type: docs
 weight: 12
 url: /es/net/rendering-archive-files/render-archives-html/
 ---
+
+# Representar archivos en una o varias páginas HTML
+
 ## Introducción
 GroupDocs.Viewer para .NET es una poderosa biblioteca de representación de documentos que permite a los desarrolladores integrar sin esfuerzo capacidades de visualización de documentos en sus aplicaciones .NET. Ya sea que necesite representar archivos en una o varias páginas HTML, este tutorial lo guiará a través del proceso paso a paso.
 ## Requisitos previos

@@ -3,10 +3,12 @@ title: Få Visa information för CAD-ritningar
 linktitle: Få Visa information för CAD-ritningar
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du hämtar vyinformation för CAD-ritningar med GroupDocs.Viewer för .NET. Förbättra dina .NET-applikationer med sömlös CAD-filhantering.
-type: docs
 weight: 10
 url: /sv/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Få Visa information för CAD-ritningar
+
 ## Introduktion
 en värld av mjukvaruutveckling är det avgörande att hantera CAD-ritningar effektivt. Oavsett om du bygger applikationer för arkitekter, ingenjörer eller designers, kan en sömlös visningsupplevelse för CAD-filer förbättra användarnas tillfredsställelse avsevärt. GroupDocs.Viewer för .NET erbjuder en kraftfull lösning för att enkelt integrera CAD-filvisningsmöjligheter i dina .NET-applikationer. I den här handledningen går vi igenom processen för att få vyinformation för CAD-ritningar med GroupDocs.Viewer för .NET.
 ## Förutsättningar

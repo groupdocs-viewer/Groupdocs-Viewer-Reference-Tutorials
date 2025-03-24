@@ -3,10 +3,12 @@ title: 載入受密碼保護的文檔
 linktitle: 載入受密碼保護的文檔
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 輕鬆地將受密碼保護的文件檢視整合到 .NET 應用程式中。按照我們的逐步教學進行無縫操作。
-type: docs
 weight: 12
 url: /zh-hant/net/advanced-loading/load-password-protected-document/
 ---
+
+# 載入受密碼保護的文檔
+
 ## 介紹
 在當今的數位時代，無縫管理和查看各種文件格式對於許多企業和個人來說都是必需的。幸運的是，GroupDocs.Viewer for .NET 為 .NET 開發人員提供了全面的解決方案，可以輕鬆地將文件檢視功能整合到他們的應用程式中。在本教學中，我們將深入研究 GroupDocs.Viewer 的基本功能之一：載入受密碼保護的文件。我們將逐步分解該過程，確保開發人員可以輕鬆遵循並將此功能實現到他們的專案中。
 ## 先決條件

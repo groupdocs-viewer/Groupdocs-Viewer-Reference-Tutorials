@@ -3,10 +3,12 @@ title: Renderizar imagens TGA
 linktitle: Renderizar imagens TGA
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar imagens TGA sem esforço em aplicativos .NET usando GroupDocs.Viewer. Aprimore seus recursos de renderização de imagens.
-type: docs
 weight: 17
 url: /pt/net/image-rendering/render-tga-images/
 ---
+
+# Renderizar imagens TGA
+
 ## Introdução
 No cenário digital atual, a capacidade de renderizar perfeitamente vários formatos de imagem é essencial para muitas aplicações. Um desses formatos é o TGA (Truevision Graphics Adapter), conhecido por suas imagens de alta qualidade e amplo uso em indústrias com uso intensivo de gráficos. Se você é um desenvolvedor .NET e deseja incorporar a renderização de imagens TGA em seus aplicativos, você está no lugar certo. Neste tutorial, exploraremos como aproveitar o GroupDocs.Viewer for .NET para renderizar imagens TGA sem esforço.
 ## Pré-requisitos

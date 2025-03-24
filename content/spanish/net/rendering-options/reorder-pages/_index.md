@@ -3,10 +3,12 @@ title: Reordenar páginas en un documento
 linktitle: Reordenar páginas en un documento
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a reordenar páginas en un documento usando GroupDocs.Viewer para .NET. Siga nuestro tutorial paso a paso para una gestión de documentos perfecta.
-type: docs
 weight: 19
 url: /es/net/rendering-options/reorder-pages/
 ---
+
+# Reordenar páginas en un documento
+
 ## Introducción
 En el mundo del desarrollo .NET, gestionar y manipular documentos de forma eficiente es crucial. GroupDocs.Viewer para .NET proporciona una poderosa solución para ver varios formatos de documentos dentro de sus aplicaciones. Una de las tareas esenciales que suelen encontrar los desarrolladores es reordenar las páginas de un documento. Ya sea que esté trabajando con archivos PDF, documentos de Word u otros formatos, poder reorganizar las páginas puede optimizar los flujos de trabajo y mejorar la experiencia del usuario. En este tutorial, profundizaremos en cómo reordenar páginas en un documento usando GroupDocs.Viewer para .NET.
 ## Requisitos previos

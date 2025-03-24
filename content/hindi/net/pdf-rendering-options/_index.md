@@ -3,10 +3,12 @@ title: पीडीएफ रेंडरिंग विकल्प
 linktitle: पीडीएफ रेंडरिंग विकल्प
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer .NET ट्यूटोरियल के साथ पीडीएफ देखने को अनुकूलित करना सीखें। छवि गुणवत्ता को समायोजित करने और पाठ चयन को अक्षम करने जैसे पीडीएफ रेंडरिंग विकल्पों का अन्वेषण करें।
-type: docs
 weight: 38
 url: /hi/net/pdf-rendering-options/
 ---
+
+# पीडीएफ रेंडरिंग विकल्प
+
 
 ## परिचय
 

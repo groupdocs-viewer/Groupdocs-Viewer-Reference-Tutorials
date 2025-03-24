@@ -3,10 +3,12 @@ title: Render Gambar TGA
 linktitle: Render Gambar TGA
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender gambar TGA dengan mudah di aplikasi .NET menggunakan GroupDocs.Viewer. Tingkatkan kemampuan rendering gambar Anda.
-type: docs
 weight: 17
 url: /id/net/image-rendering/render-tga-images/
 ---
+
+# Render Gambar TGA
+
 ## Perkenalan
 Dalam lanskap digital saat ini, kemampuan merender berbagai format gambar dengan lancar sangat penting untuk banyak aplikasi. Salah satu format tersebut adalah TGA (Truevision Graphics Adapter), yang dikenal dengan gambar berkualitas tinggi dan digunakan secara luas dalam industri intensif grafis. Jika Anda seorang pengembang .NET yang ingin memasukkan rendering gambar TGA ke dalam aplikasi Anda, Anda berada di tempat yang tepat. Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Viewer untuk .NET untuk merender gambar TGA dengan mudah.
 ## Prasyarat

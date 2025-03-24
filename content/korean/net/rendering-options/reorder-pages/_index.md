@@ -3,10 +3,12 @@ title: 문서의 페이지 재정렬
 linktitle: 문서의 페이지 재정렬
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서의 페이지 순서를 바꾸는 방법을 알아보세요. 원활한 문서 관리를 위한 단계별 튜토리얼을 따라해보세요.
-type: docs
 weight: 19
 url: /ko/net/rendering-options/reorder-pages/
 ---
+
+# 문서의 페이지 재정렬
+
 ## 소개
 .NET 개발 세계에서는 문서를 효율적으로 관리하고 조작하는 것이 중요합니다. .NET용 GroupDocs.Viewer는 응용 프로그램 내에서 다양한 문서 형식을 볼 수 있는 강력한 솔루션을 제공합니다. 개발자가 자주 접하는 필수 작업 중 하나는 문서 내의 페이지 순서를 바꾸는 것입니다. PDF, Word 문서 또는 기타 형식으로 작업하는 경우 페이지를 재정렬하면 작업 흐름을 간소화하고 사용자 경험을 향상시킬 수 있습니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 문서의 페이지 순서를 바꾸는 방법을 자세히 살펴보겠습니다.
 ## 전제조건

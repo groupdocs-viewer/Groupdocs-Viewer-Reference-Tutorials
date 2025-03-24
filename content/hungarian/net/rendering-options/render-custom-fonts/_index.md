@@ -3,10 +3,12 @@ title: Rendereljen egyedi betűtípusokkal
 linktitle: Rendereljen egyedi betűtípusokkal
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg dokumentumokat egyéni betűtípusokkal a GroupDocs.Viewer for .NET segítségével. Fokozza a vizuális prezentációkat könnyedén.
-type: docs
 weight: 18
 url: /hu/net/rendering-options/render-custom-fonts/
 ---
+
+# Rendereljen egyedi betűtípusokkal
+
 ## Bevezetés
 .NET fejlesztés területén a GroupDocs.Viewer hatékony megoldást kínál különféle formátumú dokumentumok megjelenítésére. Számos funkciója mellett a GroupDocs.Viewer lehetővé teszi a dokumentumok egyedi betűtípusokkal történő megjelenítését, személyre szabottabb és rugalmasabb alkalmazásokat biztosítva.
 ## Előfeltételek

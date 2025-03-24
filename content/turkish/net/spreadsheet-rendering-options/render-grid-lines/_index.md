@@ -3,10 +3,12 @@ title: Izgara Çizgilerini Oluştur
 linktitle: Izgara Çizgilerini Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: .NET için GroupDocs.Viewer ile belge görselleştirmesini geliştirin. Izgara çizgilerini zahmetsizce oluşturun. Ücretsiz denemeyi şimdi deneyin! #GrupDocs #Görüntüleyici
-type: docs
 weight: 12
 url: /tr/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Izgara Çizgilerini Oluştur
+
 ## giriiş
 Belgelerinizde kılavuz çizgileri oluşturmak için GroupDocs.Viewer for .NET'in kullanımına ilişkin bu adım adım kılavuza hoş geldiniz. İster deneyimli bir geliştirici olun ister .NET framework'e yeni başlayan biri olun, bu eğitim ayrıntılı açıklamalar ve takip edilmesi kolay örneklerle süreç boyunca size yol gösterecektir.
 ## Önkoşullar
@@ -66,6 +68,6 @@ Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak belgelerdeki kılavuz ç
 ### GroupDocs.Viewer for .NET için geçici lisanslar mevcut mu?
  Evet, alabilirsiniz[geçici lisans](https://purchase.groupdocs.com/temporary-license/) .NET için GroupDocs.Viewer için.
 ### GroupDocs.Viewer for .NET'e ilişkin ayrıntılı belgeler bulabilir miyim?
- Kesinlikle! Bakın[resmi belgeler](https://reference.groupdocs.com/viewer/net/) .NET için GroupDocs.Viewer'ın kullanımına ilişkin ayrıntılı bilgi için.
+ Kesinlikle! Bakın[resmi belgeler](https://tutorials.groupdocs.com/viewer/net/) .NET için GroupDocs.Viewer'ın kullanımına ilişkin ayrıntılı bilgi için.
 ### GroupDocs.Viewer for .NET'in en son sürümünü nereden indirebilirim?
  Kütüphaneyi şuradan indirin:[resmi yayın sayfası](https://releases.groupdocs.com/viewer/net/).

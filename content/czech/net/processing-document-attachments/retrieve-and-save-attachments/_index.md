@@ -3,10 +3,12 @@ title: Načíst a uložit přílohy dokumentů
 linktitle: Načíst a uložit přílohy dokumentů
 second_title: GroupDocs.Viewer .NET API
 description: Efektivně spravujte přílohy dokumentů v rámci aplikací .NET pomocí GroupDocs.Viewer. Bezproblémové načítání a ukládání příloh.
-type: docs
 weight: 12
 url: /cs/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Načíst a uložit přílohy dokumentů
+
 ## Úvod
 V digitální éře je efektivní zpracování dokumentů zásadní pro podniky i jednotlivce. Ať už jde o správu e-mailů, prohlížení smluv nebo přístup k sestavám, mít spolehlivý nástroj pro vizualizaci dokumentů je zásadní. GroupDocs.Viewer for .NET se ukazuje jako robustní řešení, které uživatelům umožňuje bez námahy prohlížet různé formáty dokumentů a pracovat s nimi přímo v jejich aplikacích .NET.
 ## Předpoklady
@@ -65,6 +67,6 @@ Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně 
 ### Jak mohu získat dočasné licence pro GroupDocs.Viewer for .NET?
  Dočasné licence lze získat od[tento odkaz](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu dokumentaci k GroupDocs.Viewer pro .NET?
- K dispozici je obsáhlá dokumentace[tady](https://reference.groupdocs.com/viewer/net/).
+ K dispozici je obsáhlá dokumentace[tady](https://tutorials.groupdocs.com/viewer/net/).
 ### Jaké možnosti podpory jsou k dispozici pro GroupDocs.Viewer pro .NET?
  Můžete požádat o pomoc na fóru komunity[tady](https://forum.groupdocs.com/c/viewer/9).

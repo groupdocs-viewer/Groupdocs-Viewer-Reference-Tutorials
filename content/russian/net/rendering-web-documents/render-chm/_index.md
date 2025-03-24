@@ -3,10 +3,12 @@ title: Рендеринг файлов CHM
 linktitle: Рендеринг файлов CHM
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как отображать файлы CHM в .NET с помощью GroupDocs.Viewer. Легко конвертируйте CHM в форматы HTML, JPG, PNG и PDF.
-type: docs
 weight: 10
 url: /ru/net/rendering-web-documents/render-chm/
 ---
+
+# Рендеринг файлов CHM
+
 ## Введение
 В этом руководстве мы рассмотрим, как отображать файлы CHM (скомпилированная HTML-справка) с помощью GroupDocs.Viewer для .NET. GroupDocs.Viewer для .NET — это мощный API рендеринга документов, который позволяет разработчикам отображать более 170 типов документов в своих приложениях .NET, не требуя установки какого-либо внешнего программного обеспечения.
 

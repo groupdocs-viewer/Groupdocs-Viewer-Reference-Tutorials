@@ -3,10 +3,12 @@ title: Získejte informace o zobrazení výkresů CAD
 linktitle: Získejte informace o zobrazení výkresů CAD
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak získat informace o zobrazení pro výkresy CAD pomocí GroupDocs.Viewer pro .NET. Vylepšete své aplikace .NET bezproblémovou manipulací se soubory CAD.
-type: docs
 weight: 10
 url: /cs/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Získejte informace o zobrazení výkresů CAD
+
 ## Úvod
 Ve světě vývoje softwaru je efektivní zpracování CAD výkresů zásadní. Bez ohledu na to, zda vytváříte aplikace pro architekty, inženýry nebo designéry, poskytování bezproblémového prohlížení souborů CAD může výrazně zvýšit spokojenost uživatelů. GroupDocs.Viewer for .NET nabízí výkonné řešení pro snadnou integraci možností prohlížení souborů CAD do vašich aplikací .NET. V tomto tutoriálu vás provedeme procesem získání informací o zobrazení výkresů CAD pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady

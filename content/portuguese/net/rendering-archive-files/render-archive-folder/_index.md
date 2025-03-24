@@ -3,10 +3,12 @@ title: Pasta de arquivo de renderização
 linktitle: Pasta de arquivo de renderização
 second_title: API GroupDocs.Viewer .NET
 description: Integre o GroupDocs.Viewer for .NET perfeitamente em seus aplicativos .NET para obter recursos eficientes de renderização e visualização de documentos.
-type: docs
 weight: 11
 url: /pt/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Pasta de arquivo de renderização
+
 ## Introdução
 Na era digital de hoje, acessar e visualizar documentos de forma integrada é crucial para empresas e indivíduos. Felizmente, com o avanço da tecnologia, os desenvolvedores agora têm ferramentas poderosas à sua disposição para integrar facilmente recursos de visualização de documentos em seus aplicativos. Uma dessas ferramentas é o GroupDocs.Viewer for .NET, uma biblioteca versátil que permite aos desenvolvedores renderizar vários formatos de documentos em seus aplicativos .NET.
 ## Pré-requisitos

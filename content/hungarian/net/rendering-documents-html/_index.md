@@ -3,10 +3,12 @@ title: Dokumentumok renderelése HTML-be
 linktitle: Dokumentumok renderelése HTML-be
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel az átfogó oktatóanyagokat a dokumentumok HTML-formátumba történő megjelenítéséről a GroupDocs.Viewer for .NET használatával. Tanuljon meg technikákat a dokumentumok megjelenítéséhez és a jobb felhasználói élményhez.
-type: docs
 weight: 31
 url: /hu/net/rendering-documents-html/
 ---
+
+# Dokumentumok renderelése HTML-be
+
 
 ## Bevezetés
 

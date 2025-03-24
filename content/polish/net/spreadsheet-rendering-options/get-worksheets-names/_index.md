@@ -3,10 +3,12 @@ title: Pobierz nazwy arkuszy
 linktitle: Pobierz nazwy arkuszy
 second_title: GroupDocs.Viewer API .NET
 description: Odkryj magię GroupDocs.Viewer dla .NET – bezproblemowo zintegruj przeglądanie dokumentów ze swoimi aplikacjami. Wypróbuj bezpłatną wersję próbną już teraz!
-type: docs
 weight: 11
 url: /pl/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Pobierz nazwy arkuszy
+
 ## Wstęp
 Witamy w fascynującym świecie GroupDocs.Viewer dla .NET! Jeśli jesteś programistą lub entuzjastą chcącym poznać zaawansowane możliwości przeglądania dokumentów w aplikacjach .NET, czeka Cię gratka. W tym obszernym przewodniku zagłębimy się w zawiłości pobierania nazw arkuszy za pomocą GroupDocs.Viewer. Zatem zapnij pasy i wyrusz w tę ekscytującą podróż!
 ## Warunki wstępne
@@ -63,4 +65,4 @@ Absolutnie! GroupDocs.Viewer obsługuje szeroką gamę formatów dokumentów, w 
 ### Czy mogę uzyskać licencję tymczasową?
  Z pewnością! Odwiedzać[ten link](https://purchase.groupdocs.com/temporary-license/) aby otrzymać tymczasową licencję.
 ### Czy dostępne są szczegółowe źródła dokumentacji?
- Absolutnie! Sprawdź[oficjalna dokumentacja](https://reference.groupdocs.com/viewer/net/) aby uzyskać szczegółowe informacje i przewodniki.
+ Absolutnie! Sprawdź[oficjalna dokumentacja](https://tutorials.groupdocs.com/viewer/net/) aby uzyskać szczegółowe informacje i przewodniki.

@@ -3,10 +3,12 @@ title: Kết xuất hình ảnh EMZ và EMF
 linktitle: Kết xuất hình ảnh EMZ và EMF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị hình ảnh EMZ và EMF sang các định dạng khác nhau bằng GroupDocs.Viewer cho .NET. Hướng dẫn dễ làm theo dành cho nhà phát triển.
-type: docs
 weight: 14
 url: /vi/net/image-rendering/render-emz-emf-images/
 ---
+
+# Kết xuất hình ảnh EMZ và EMF
+
 ## Giới thiệu
 
 GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị nhiều loại tài liệu khác nhau, bao gồm hình ảnh EMZ (Siêu tệp Windows nâng cao) và EMF (Siêu tệp nâng cao) trong các ứng dụng .NET của họ. Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị hình ảnh EMZ và EMF sang các định dạng khác nhau như HTML, JPG, PNG và PDF bằng GroupDocs.Viewer cho .NET.
@@ -97,4 +99,4 @@ Trả lời: Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu
  Đáp: Có, giấy phép tạm thời có sẵn để mua[đây](https://purchase.groupdocs.com/temporary-license/).
 
 ### Câu hỏi: Tôi có thể tìm tài liệu chi tiết về GroupDocs.Viewer dành cho .NET ở đâu?
- Đáp: Bạn có thể tham khảo tài liệu[đây](https://reference.groupdocs.com/viewer/net/)để được hướng dẫn toàn diện về cách sử dụng API.
+ Đáp: Bạn có thể tham khảo tài liệu[đây](https://tutorials.groupdocs.com/viewer/net/)để được hướng dẫn toàn diện về cách sử dụng API.

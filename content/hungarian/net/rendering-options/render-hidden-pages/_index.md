@@ -3,10 +3,12 @@ title: Rejtett oldalak megjelenítése
 linktitle: Rejtett oldalak megjelenítése
 second_title: GroupDocs.Viewer .NET API
 description: Bővítse .NET-alkalmazását a GroupDocs.Viewer segítségével a zökkenőmentes dokumentummegjelenítés érdekében. Kövesse lépésenkénti útmutatónkat a rejtett oldalak egyszerű megjelenítéséhez.
-type: docs
 weight: 15
 url: /hu/net/rendering-options/render-hidden-pages/
 ---
+
+# Rejtett oldalak megjelenítése
+
 ## Bevezetés
 A .NET fejlesztés világában a dokumentumok hatékony kezelése és megjelenítése kulcsfontosságú. Legyen szó belső használatról, ügyfélbemutatókról vagy webalkalmazásokról, a különböző dokumentumformátumok zökkenőmentes megtekintésének képessége elengedhetetlen. Itt jön képbe a GroupDocs.Viewer for .NET. Hatékony funkcióival és intuitív kezelőfelületével a GroupDocs.Viewer leegyszerűsíti a dokumentumok megjelenítésének folyamatát a .NET-alkalmazásokban.
 ## Előfeltételek

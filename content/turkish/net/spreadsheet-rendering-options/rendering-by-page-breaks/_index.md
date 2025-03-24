@@ -3,10 +3,12 @@ title: Sayfa Sonlarına Göre Oluşturma
 linktitle: Sayfa Sonlarına Göre Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: Belgeleri hassas bir şekilde işleme konusunda GroupDocs.Viewer for .NET'in gücünü keşfedin. Sayfa sonlarına göre işleme için adım adım eğitimimizi izleyin.
-type: docs
 weight: 14
 url: /tr/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Sayfa Sonlarına Göre Oluşturma
+
 ## giriiş
 Belgeleri sayfa sonlarına göre işlemeye ilişkin GroupDocs.Viewer for .NET eğitimine hoş geldiniz! Bu adım adım kılavuzda, özellikle sayfa sonlarına odaklanarak belgeleri hassas bir şekilde oluşturmak için GroupDocs.Viewer'ın güçlü özelliklerinden nasıl yararlanacağımızı keşfedeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu eğitim size süreç boyunca yol gösterecek ve her adımın net bir şekilde anlaşılmasını sağlayacaktır.
 ## Önkoşullar

@@ -3,10 +3,12 @@ title: Állítsa be a licencet a fájlból
 linktitle: Állítsa be a licencet a fájlból
 second_title: GroupDocs.Viewer .NET API
 description: Tanulja meg, hogyan integrálhatja a GroupDocs.View for .NET-et könnyedén alkalmazásaiba. Állítsa be a licencet, tekintse meg a dokumentumokat és szabja testre a megtekintő megjelenését.
-type: docs
 weight: 10
 url: /hu/net/getting-started/set-license-from-file/
 ---
+
+# Állítsa be a licencet a fájlból
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony dokumentumnézegető API, amely lehetővé teszi a .NET-fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési képességeket alkalmazásaikba. Akár különféle formátumú dokumentumokat kell megjelenítenie, mint például PDF, Microsoft Office vagy képek, a GroupDocs.Viewer megbízható megoldást kínál széles körű testreszabási lehetőségekkel.
 ## Előfeltételek

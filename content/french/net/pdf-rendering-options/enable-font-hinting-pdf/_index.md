@@ -3,10 +3,12 @@ title: Activer l'indication de police dans un PDF
 linktitle: Activer l'indication de police dans un PDF
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment activer les indications de police dans les documents PDF à l'aide de GroupDocs.Viewer pour .NET. Suivez notre tutoriel étape par étape pour une intégration transparente.
-type: docs
 weight: 14
 url: /fr/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Activer l'indication de police dans un PDF
+
 ## Introduction
 GroupDocs.Viewer pour .NET est un outil puissant permettant d'afficher et de manipuler divers formats de documents dans les applications .NET. Que vous travailliez avec des PDF, des documents Microsoft Office, des images ou d'autres formats, GroupDocs.Viewer fournit une solution transparente pour le rendu et l'interaction avec ces fichiers.
 ## Conditions préalables

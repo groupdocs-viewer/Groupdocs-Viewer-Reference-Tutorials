@@ -3,10 +3,12 @@ title: A karaktercsoportok letiltása a PDF-ben
 linktitle: A karaktercsoportok letiltása a PDF-ben
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan tilthatja le a karakterek csoportosítását a PDF-fájlokban a GroupDocs.Viewer for .NET segítségével. Kövesse lépésenkénti oktatóanyagunkat a zökkenőmentes dokumentummegjelenítéshez.
-type: docs
 weight: 11
 url: /hu/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# A karaktercsoportok letiltása a PDF-ben
+
 ## Bevezetés
 .NET-fejlesztés világában a dokumentumok megtekintésének kezelése néha kihívást jelenthet, különösen akkor, ha olyan formátumokkal kell foglalkozni, mint a PDF-ek. A megfelelő eszközökkel és tudással azonban hatékonyan racionalizálhatja ezt a folyamatot. Az egyik ilyen segédeszköz a GroupDocs.Viewer for .NET. Ez a hatékony könyvtár lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen rendereljék és jelenítsék meg a különféle dokumentumtípusokat .NET-alkalmazásaikon belül.
 ## Előfeltételek

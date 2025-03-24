@@ -3,10 +3,12 @@ title: Cserélje ki a hiányzó betűtípust
 linktitle: Cserélje ki a hiányzó betűtípust
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan pótolhatja könnyedén a hiányzó betűtípusokat a .NET-dokumentumokban a GroupDocs.Viewer segítségével. Biztosítsa a pontos megjelenítést egyszerű lépésekkel.
-type: docs
 weight: 20
 url: /hu/net/rendering-options/replace-missing-font/
 ---
+
+# Cserélje ki a hiányzó betűtípust
+
 ## Bevezetés
 A .NET fejlesztés világában a hatékony dokumentumkezelés kulcsfontosságú. A GroupDocs.Viewer for .NET hatékony megoldást kínál a különféle dokumentumformátumok megtekintésére a .NET-alkalmazásokon belül. Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatjuk a GroupDocs.Viewer for .NET alkalmazást a hiányzó betűtípusok pótlására a dokumentumokban. Függetlenül attól, hogy PDF-ekkel, PowerPoint-prezentációkkal vagy Word-dokumentumokkal foglalkozik, a GroupDocs.Viewer leegyszerűsíti a folyamatot, és biztosítja, hogy a dokumentumok pontosan jelenjenek meg, még akkor is, ha hiányoznak a betűtípusok.
 ## Előfeltételek

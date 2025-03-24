@@ -3,10 +3,12 @@ title: 문서를 이미지로 렌더링
 linktitle: 문서를 이미지로 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서를 이미지로 렌더링하는 방법에 대한 자습서를 살펴보세요. 이미지 품질을 최적화하고, 텍스트 좌표를 추출하고, 사용자 경험을 향상시킵니다.
-type: docs
 weight: 30
 url: /ko/net/rendering-documents-images/
 ---
+
+# 문서를 이미지로 렌더링
+
 ## 소개
 
 .NET 개발 영역에서는 문서 렌더링을 이미지로 마스터하는 것이 가장 중요합니다. GroupDocs.Viewer는 이 프로세스를 간소화하기 위한 포괄적인 자습서 배열을 제공합니다. 문서 렌더링부터 JPG/PNG 형식, 이미지 품질 미세 조정 및 텍스트 오버레이 최적화에 이르기까지 이 튜토리얼에서는 모든 내용을 다룹니다.

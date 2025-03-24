@@ -3,10 +3,12 @@ title: Render dengan Hamparan Teks untuk Tampilan
 linktitle: Render dengan Hamparan Teks untuk Tampilan
 second_title: GroupDocs.Viewer .NET API
 description: Render dokumen dengan lancar dalam aplikasi .NET dengan GroupDocs.Viewer, mendukung berbagai format untuk meningkatkan pengalaman pengguna.
-type: docs
 weight: 13
 url: /id/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Render dengan Hamparan Teks untuk Tampilan
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, mengelola dan menampilkan berbagai format dokumen dengan lancar sangatlah penting untuk banyak aplikasi. GroupDocs.Viewer untuk .NET muncul sebagai solusi ampuh untuk merender dokumen dengan mudah dalam aplikasi .NET Anda. Baik itu PDF, dokumen Word, spreadsheet Excel, atau presentasi PowerPoint, GroupDocs.Viewer menyederhanakan prosesnya, menawarkan serangkaian fitur untuk tampilan dokumen yang lebih baik.
 ## Prasyarat

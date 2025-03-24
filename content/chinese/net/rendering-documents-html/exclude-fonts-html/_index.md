@@ -3,10 +3,12 @@ title: 从渲染的 HTML 中排除字体
 linktitle: 从渲染的 HTML 中排除字体
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 从呈现的 HTML 中排除字体。请按照此分步指南进行无缝文档显示。
-type: docs
 weight: 10
 url: /zh/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# 从渲染的 HTML 中排除字体
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个功能强大的文档呈现库，允许开发人员在其 .NET 应用程序中显示 50 多种文档格式，而无需外部依赖项。在本教程中，我们将重点介绍 GroupDocs.Viewer 的一个特定功能：从渲染的 HTML 输出中排除字体。 
 ## 先决条件

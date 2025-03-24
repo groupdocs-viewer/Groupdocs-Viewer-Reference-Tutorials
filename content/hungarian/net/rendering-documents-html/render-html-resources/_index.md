@@ -3,10 +3,12 @@ title: Renderelés beágyazott vagy külső erőforrásokkal
 linktitle: Renderelés beágyazott vagy külső erőforrásokkal
 second_title: GroupDocs.Viewer .NET API
 description: Javítsa a .NET-dokumentumok megtekintését a GroupDocs.Viewer segítségével a zökkenőmentes megjelenítés érdekében. Kövesse oktatóanyagunkat a hatékony integráció és a kiváló felhasználói élmény érdekében.
-type: docs
 weight: 12
 url: /hu/net/rendering-documents-html/render-html-resources/
 ---
+
+# Renderelés beágyazott vagy külső erőforrásokkal
+
 ## Bevezetés
 
 .NET fejlesztés világában a hatékony dokumentummegtekintés számos alkalmazás kulcsfontosságú szempontja. A GroupDocs.Viewer for .NET hatékony megoldást kínál a beágyazott vagy külső erőforrásokkal rendelkező dokumentumok megjelenítésére. Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatjuk a GroupDocs.Viewer-t a dokumentumok zökkenőmentes megjelenítéséhez, az egyes lépéseket lebontva az egyértelműség és a megértés érdekében.

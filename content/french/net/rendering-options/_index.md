@@ -3,10 +3,12 @@ title: Options de rendu
 linktitle: Options de rendu
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez sans effort GroupDocs.Viewer pour .NET dans vos applications avec des didacticiels sur les options de rendu, de l'ajout de filigranes à la personnalisation des polices.
-type: docs
 weight: 23
 url: /fr/net/rendering-options/
 ---
+
+# Options de rendu
+
 
 ## Introduction
 

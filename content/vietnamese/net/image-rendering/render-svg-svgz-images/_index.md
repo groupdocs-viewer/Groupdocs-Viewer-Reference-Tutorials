@@ -3,10 +3,12 @@ title: Hiển thị hình ảnh SVG và SVGZ
 linktitle: Hiển thị hình ảnh SVG và SVGZ
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị hình ảnh SVG và SVGZ bằng GroupDocs.Viewer cho .NET. Chuyển đổi đồ họa vector thành HTML, JPG, PNG và PDF một cách dễ dàng.
-type: docs
 weight: 16
 url: /vi/net/image-rendering/render-svg-svgz-images/
 ---
+
+# Hiển thị hình ảnh SVG và SVGZ
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình hiển thị hình ảnh SVG và SVGZ bằng GroupDocs.Viewer cho .NET. GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị các định dạng tài liệu khác nhau trong ứng dụng .NET của họ. SVG và SVGZ là các định dạng hình ảnh phổ biến được sử dụng cho đồ họa vector và với GroupDocs.Viewer dành cho .NET, bạn có thể dễ dàng hiển thị chúng thành các định dạng đầu ra khác nhau như HTML, JPG, PNG và PDF.
 ## Điều kiện tiên quyết

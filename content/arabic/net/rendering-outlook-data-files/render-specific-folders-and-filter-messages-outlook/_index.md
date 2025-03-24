@@ -3,10 +3,12 @@ title: عرض مجلدات محددة وتصفية الرسائل (Outlook)
 linktitle: عرض مجلدات محددة وتصفية الرسائل (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض مجلدات معينة وتصفية الرسائل في Outlook باستخدام GroupDocs.Viewer لـ .NET. تبسيط إدارة المستندات في تطبيقات .NET.
-type: docs
 weight: 11
 url: /ar/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# عرض مجلدات محددة وتصفية الرسائل (Outlook)
+
 ## مقدمة
 في عالم تطوير .NET، تعد إدارة المستندات وعرضها بكفاءة أمرًا بالغ الأهمية. يعمل GroupDocs.Viewer for .NET على تبسيط هذه المهمة من خلال توفير وظائف قوية لعرض تنسيقات المستندات المختلفة بسلاسة. في هذا البرنامج التعليمي، سوف نتعمق في كيفية عرض مجلدات معينة وتصفية الرسائل في Outlook باستخدام GroupDocs.Viewer لـ .NET.
 ## المتطلبات الأساسية

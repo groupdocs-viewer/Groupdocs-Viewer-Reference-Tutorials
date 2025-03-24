@@ -3,10 +3,12 @@ title: Rendu des nombres
 linktitle: Rendu des nombres
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez la puissance de Groupdocs.Viewer pour .NET pour restituer les fichiers Numbers de manière transparente. Convertissez en HTML, JPG, PNG et PDF sans effort.
-type: docs
 weight: 15
 url: /fr/net/spreadsheet-rendering-options/rendering-numbers/
 ---
+
+# Rendu des nombres
+
 ## Introduction
 Bienvenue dans ce didacticiel étape par étape sur le rendu des fichiers Numbers à l'aide de Groupdocs.Viewer pour .NET. Que vous soyez un développeur chevronné ou un débutant, ce guide vous guidera tout au long du processus de conversion de documents Numbers dans différents formats. Groupdocs.Viewer for .NET est un outil puissant qui vous permet d'intégrer de manière transparente des fonctionnalités de visualisation de documents dans vos applications .NET.
 ## Conditions préalables

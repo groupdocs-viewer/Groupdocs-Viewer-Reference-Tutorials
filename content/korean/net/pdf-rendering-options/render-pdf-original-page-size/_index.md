@@ -3,10 +3,12 @@ title: 원본 페이지 크기로 PDF 렌더링
 linktitle: 원본 페이지 크기로 PDF 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 원본 페이지 크기로 PDF를 렌더링하는 방법을 알아보세요. 단계별 가이드를 따라 이 기능을 원활하게 통합하세요.
-type: docs
 weight: 17
 url: /ko/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# 원본 페이지 크기로 PDF 렌더링
+
 ## 소개
 .NET 개발 영역에서 GroupDocs.Viewer는 PDF를 포함한 다양한 문서 형식을 렌더링하는 강력한 도구로 돋보입니다. 문서 처리의 일반적인 요구 사항 중 하나는 원본 페이지 크기를 유지하면서 PDF를 렌더링하는 것입니다. 이 작업을 원활하게 수행하려면 .NET용 GroupDocs.Viewer와 해당 기능에 대한 포괄적인 이해가 필요합니다.
 ## 전제조건

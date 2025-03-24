@@ -3,10 +3,12 @@ title: Återge PDF med original sidstorlek
 linktitle: Återge PDF med original sidstorlek
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar PDF-filer med ursprungliga sidstorlekar med GroupDocs.Viewer för .NET. Följ vår steg-för-steg-guide och integrera denna funktion sömlöst.
-type: docs
 weight: 17
 url: /sv/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# Återge PDF med original sidstorlek
+
 ## Introduktion
 Inom .NET-utvecklingen framstår GroupDocs.Viewer som ett kraftfullt verktyg för att rendera olika dokumentformat, inklusive PDF-filer. Ett vanligt krav vid dokumenthantering är att rendera PDF-filer samtidigt som de behåller sina ursprungliga sidstorlekar. För att uppnå denna uppgift sömlöst krävs en omfattande förståelse av GroupDocs.Viewer för .NET och dess funktioner.
 ## Förutsättningar

@@ -3,10 +3,12 @@ title: Ustaw licencję ze strumienia
 linktitle: Ustaw licencję ze strumienia
 second_title: GroupDocs.Viewer API .NET
 description: Ulepsz swoje aplikacje .NET za pomocą GroupDocs.Viewer, aby zapewnić płynne przeglądanie dokumentów. Postępuj zgodnie z naszym przewodnikiem krok po kroku i bez trudu zintegruj zaawansowane funkcje przeglądania dokumentów.
-type: docs
 weight: 11
 url: /pl/net/getting-started/set-license-from-stream/
 ---
+
+# Ustaw licencję ze strumienia
+
 ## Wstęp
 Czy chcesz wyposażyć swoje aplikacje .NET w zaawansowane możliwości przeglądania dokumentów? GroupDocs.Viewer dla .NET oferuje kompleksowe rozwiązanie umożliwiające bezproblemową integrację funkcji przeglądania dokumentów z Twoimi projektami. W tym samouczku zagłębimy się w proces wykorzystania GroupDocs.Viewer dla .NET w celu wzbogacenia aplikacji o zaawansowane możliwości przeglądania dokumentów. 
 ## Warunki wstępne
@@ -14,7 +16,7 @@ Zanim zagłębimy się w proces integracji, upewnij się, że spełnione są nas
 1. Podstawowa wiedza na temat programowania .NET: Znajomość C# i frameworku .NET jest niezbędna do korzystania z tego samouczka.
    
 2.  Pakiet GroupDocs.Viewer dla .NET: Upewnij się, że pobrałeś i zainstalowałeś pakiet GroupDocs.Viewer dla .NET. Można go uzyskać od[link do pobrania](https://releases.groupdocs.com/viewer/net/).
-3.  Dostęp do dokumentacji GroupDocs: Zachowaj plik[dokumentacja](https://reference.groupdocs.com/viewer/net/) przydatne w celach informacyjnych podczas procesu integracji.
+3.  Dostęp do dokumentacji GroupDocs: Zachowaj plik[dokumentacja](https://tutorials.groupdocs.com/viewer/net/) przydatne w celach informacyjnych podczas procesu integracji.
 
 ## Importuj przestrzenie nazw
 Na początek zaimportuj niezbędne przestrzenie nazw do swojej aplikacji .NET. Wykonaj następujące kroki:

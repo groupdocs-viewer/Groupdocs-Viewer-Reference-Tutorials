@@ -3,10 +3,12 @@ title: 設定日期時間格式和時區偏移量（電子郵件）
 linktitle: 設定日期時間格式和時區偏移量（電子郵件）
 second_title: GroupDocs.Viewer .NET API
 description: 將 GroupDocs.Viewer for .NET 無縫整合到您的應用程式中，以獲得強大的文件檢視功能。透過可自訂的選項增強使用者體驗。
-type: docs
 weight: 11
 url: /zh-hant/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
+
+# 設定日期時間格式和時區偏移量（電子郵件）
+
 
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的工具，使開發人員能夠將文件檢視功能無縫整合到他們的 .NET 應用程式中。透過 GroupDocs.Viewer，您可以直接在應用程式中顯示各種文件格式，包括 PDF、Microsoft Office 文件、圖像等，而無需任何外部外掛程式或檢視器。在這個綜合教學中，我們將引導您完成為 .NET 設定 GroupDocs.Viewer 的過程，探索其功能，並示範如何有效地利用它來增強應用程式的文件檢視功能。

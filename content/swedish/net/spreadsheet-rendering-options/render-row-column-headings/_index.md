@@ -3,10 +3,12 @@ title: Återge rad- och kolumnrubriker
 linktitle: Återge rad- och kolumnrubriker
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dokumentvisning i .NET! Lär dig att återge rad- och kolumnrubriker med GroupDocs.Viewer för .NET. Utforska HTML-, JPG-, PNG- och PDF-utdata.
-type: docs
 weight: 18
 url: /sv/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Återge rad- och kolumnrubriker
+
 ## Introduktion
 Vill du förbättra din dokumentvisningsupplevelse i .NET-applikationer? Med GroupDocs.Viewer för .NET kan du sömlöst återge rad- och kolumnrubriker från dina kalkylbladsfiler. I den här självstudien guidar vi dig genom processen att rendera rad- och kolumnrubriker med olika utdataformat som HTML, JPG, PNG och PDF.
 ## Förutsättningar

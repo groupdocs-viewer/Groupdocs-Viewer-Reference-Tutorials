@@ -3,10 +3,12 @@ title: SVG 및 SVGZ 이미지 렌더링
 linktitle: SVG 및 SVGZ 이미지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 SVG 및 SVGZ 이미지를 렌더링하는 방법을 알아보세요. 벡터 그래픽을 HTML, JPG, PNG 및 PDF로 손쉽게 변환하세요.
-type: docs
 weight: 16
 url: /ko/net/image-rendering/render-svg-svgz-images/
 ---
+
+# SVG 및 SVGZ 이미지 렌더링
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Viewer를 사용하여 SVG 및 SVGZ 이미지를 렌더링하는 과정을 안내합니다. .NET용 GroupDocs.Viewer는 개발자가 .NET 응용 프로그램에서 다양한 문서 형식을 렌더링할 수 있게 해주는 강력한 문서 렌더링 API입니다. SVG 및 SVGZ는 벡터 그래픽에 사용되는 널리 사용되는 이미지 형식이며, .NET용 GroupDocs.Viewer를 사용하면 이를 HTML, JPG, PNG 및 PDF와 같은 다양한 출력 형식으로 쉽게 렌더링할 수 있습니다.
 ## 전제조건

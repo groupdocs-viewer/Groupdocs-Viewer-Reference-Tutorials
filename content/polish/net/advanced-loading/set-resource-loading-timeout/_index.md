@@ -3,10 +3,12 @@ title: Ustaw limit czasu ładowania zasobów (zaawansowane)
 linktitle: Ustaw limit czasu ładowania zasobów (zaawansowane)
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak efektywnie konfigurować limity czasu ładowania zasobów w programie GroupDocs.Viewer dla platformy .NET. Opanuj renderowanie dokumentów z precyzją i stabilnością.
-type: docs
 weight: 13
 url: /pl/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Ustaw limit czasu ładowania zasobów (zaawansowane)
+
 ## Wstęp
 dziedzinie programowania .NET GroupDocs.Viewer zapewnia potężny zestaw narzędzi do renderowania dokumentów i obrazów z precyzją i wydajnością. Wykorzystanie jego możliwości wymaga zrozumienia jego zawiłości, w tym ustawiania limitów czasu ładowania zasobów. W tym samouczku omówimy proces konfigurowania limitów czasu ładowania zasobów w programie GroupDocs.Viewer dla platformy .NET.
 ## Warunki wstępne

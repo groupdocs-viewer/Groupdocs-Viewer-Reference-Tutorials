@@ -3,10 +3,12 @@ title: Lindungi PDF yang Dirender dengan Kata Sandi
 linktitle: Lindungi PDF yang Dirender dengan Kata Sandi
 second_title: GroupDocs.Viewer .NET API
 description: Lindungi PDF Anda yang dirender dengan kata sandi dengan mudah menggunakan Groupdocs.Viewer untuk .NET. Jaga dokumen Anda tetap aman dan rahasia.
-type: docs
 weight: 12
 url: /id/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Lindungi PDF yang Dirender dengan Kata Sandi
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara menggunakan Groupdocs.Viewer untuk .NET untuk melindungi PDF yang dirender dengan kata sandi. Dengan menambahkan langkah-langkah keamanan, Anda dapat mengontrol akses ke dokumen PDF Anda, memastikan kerahasiaan dan integritas.
 ## Prasyarat

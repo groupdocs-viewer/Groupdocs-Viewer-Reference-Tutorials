@@ -3,10 +3,12 @@ title: CAD 図面のレンダリング
 linktitle: CAD 図面のレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して CAD 図面をレンダリングするためのチュートリアルをご覧ください。シームレスな CAD ファイル処理により .NET アプリケーションを強化する方法を学びます。
-type: docs
 weight: 25
 url: /ja/net/rendering-cad-drawings/
 ---
+
+# CAD 図面のレンダリング
+
 
 ## 導入
 

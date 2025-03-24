@@ -3,10 +3,12 @@ title: 渲染并叠加文本以进行显示
 linktitle: 渲染并叠加文本以进行显示
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 在 .NET 应用程序中无缝呈现文档，支持各种格式以增强用户体验。
-type: docs
 weight: 13
 url: /zh/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# 渲染并叠加文本以进行显示
+
 ## 介绍
 在 .NET 开发领域，无缝管理和显示各种文档格式对于许多应用程序至关重要。 GroupDocs.Viewer for .NET 作为一个强大的解决方案出现，可以轻松地在 .NET 应用程序中呈现文档。无论是 PDF、Word 文档、Excel 电子表格还是 PowerPoint 演示文稿，GroupDocs.Viewer 都能简化流程，提供一系列增强文档查看功能。
 ## 先决条件

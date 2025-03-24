@@ -3,10 +3,12 @@ title: ストリームからライセンスを設定
 linktitle: ストリームからライセンスを設定
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET アプリケーションを強化し、シームレスなドキュメント表示を実現します。ステップバイステップのガイドに従って、強力なドキュメント表示機能を簡単に統合します。
-type: docs
 weight: 11
 url: /ja/net/getting-started/set-license-from-stream/
 ---
+
+# ストリームからライセンスを設定
+
 ## 導入
 .NET アプリケーションに高度なドキュメント表示機能を強化したいと考えていますか? GroupDocs.Viewer for .NET は、ドキュメント表示機能をプロジェクトにシームレスに統合するための包括的なソリューションを提供します。このチュートリアルでは、GroupDocs.Viewer for .NET を活用して強力なドキュメント表示機能でアプリケーションを強化するプロセスを詳しく説明します。 
 ## 前提条件
@@ -14,7 +16,7 @@ url: /ja/net/getting-started/set-license-from-stream/
 1. .NET 開発の基本知識: このチュートリアルを進めるには、C# および .NET Framework に精通していることが不可欠です。
    
 2.  GroupDocs.Viewer for .NET パッケージ: GroupDocs.Viewer for .NET パッケージをダウンロードしてインストールしていることを確認してください。から入手できます。[ダウンロードリンク](https://releases.groupdocs.com/viewer/net/).
-3.  GroupDocs ドキュメントへのアクセス:[ドキュメンテーション](https://reference.groupdocs.com/viewer/net/)統合プロセス中の参照に便利です。
+3.  GroupDocs ドキュメントへのアクセス:[ドキュメンテーション](https://tutorials.groupdocs.com/viewer/net/)統合プロセス中の参照に便利です。
 
 ## 名前空間のインポート
 まず、必要な名前空間を .NET アプリケーションにインポートします。次の手順を実行します：

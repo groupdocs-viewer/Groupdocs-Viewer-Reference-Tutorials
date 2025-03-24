@@ -3,10 +3,12 @@ title: Možnosti vykreslování PDF
 linktitle: Možnosti vykreslování PDF
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se optimalizovat prohlížení PDF pomocí GroupDocs.Viewer .NET výukových programů. Prozkoumejte možnosti vykreslování PDF, jako je úprava kvality obrazu a zakázání výběru textu.
-type: docs
 weight: 38
 url: /cs/net/pdf-rendering-options/
 ---
+
+# Možnosti vykreslování PDF
+
 
 ## Úvod
 

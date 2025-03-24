@@ -3,10 +3,12 @@ title: Geef verborgen kolommen en rijen weer
 linktitle: Geef verborgen kolommen en rijen weer
 second_title: GroupDocs.Viewer .NET-API
 description: Ontgrendel moeiteloos verborgen gegevens in spreadsheets met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze handleiding om verborgen kolommen en rijen zichtbaar te maken.
-type: docs
 weight: 13
 url: /nl/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Geef verborgen kolommen en rijen weer
+
 ## Invoering
 Op het gebied van documentvisualisatie staat GroupDocs.Viewer voor .NET overeind als een robuust hulpmiddel dat een naadloze weergave van verschillende documentformaten mogelijk maakt. Een intrigerende mogelijkheid is de mogelijkheid om verborgen kolommen en rijen in spreadsheets zichtbaar te maken. In deze zelfstudie gaan we dieper in op de stappen om deze functie te ontgrendelen en het potentieel van uw gegevens te benutten.
 ## Vereisten

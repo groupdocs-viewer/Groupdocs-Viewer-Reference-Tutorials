@@ -3,10 +3,12 @@ title: Při načítání dokumentů zadejte typ souboru
 linktitle: Při načítání dokumentů zadejte typ souboru
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak určit typ souboru při načítání dokumentů pomocí GroupDocs.Viewer for .NET. Vykreslujte přesně různé formáty ve vašich aplikacích .NET.
-type: docs
 weight: 10
 url: /cs/net/advanced-loading/specify-file-type/
 ---
+
+# Při načítání dokumentů zadejte typ souboru
+
 ## Úvod
 GroupDocs.Viewer for .NET je všestranné rozhraní API pro vykreslování dokumentů, které podporuje širokou škálu formátů souborů, včetně DOCX, PDF, PPTX a dalších. Zadáním typu souboru při načítání dokumentů můžete uživatelům zajistit přesné vykreslování a plynulé zobrazení.
 ## Předpoklady

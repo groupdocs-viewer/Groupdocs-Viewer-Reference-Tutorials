@@ -3,10 +3,12 @@ title: Render PDF dengan Ukuran Halaman Asli
 linktitle: Render PDF dengan Ukuran Halaman Asli
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender PDF dengan ukuran halaman asli menggunakan GroupDocs.Viewer untuk .NET. Ikuti panduan langkah demi langkah kami dan integrasikan fungsi ini dengan lancar.
-type: docs
 weight: 17
 url: /id/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# Render PDF dengan Ukuran Halaman Asli
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, GroupDocs.Viewer menonjol sebagai alat yang ampuh untuk merender berbagai format dokumen, termasuk PDF. Salah satu persyaratan umum dalam penanganan dokumen adalah merender PDF dengan tetap mempertahankan ukuran halaman aslinya. Untuk mencapai tugas ini dengan lancar memerlukan pemahaman komprehensif tentang GroupDocs.Viewer untuk .NET dan fungsinya.
 ## Prasyarat

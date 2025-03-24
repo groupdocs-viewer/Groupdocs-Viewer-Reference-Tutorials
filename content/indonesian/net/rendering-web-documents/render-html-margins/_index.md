@@ -3,10 +3,12 @@ title: Render HTML dengan Margin Buatan Pengguna
 linktitle: Render HTML dengan Margin Buatan Pengguna
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender HTML dengan margin khusus di .NET menggunakan GroupDocs.Viewer. Sempurnakan presentasi dokumen dengan mudah.
-type: docs
 weight: 11
 url: /id/net/rendering-web-documents/render-html-margins/
 ---
+
+# Render HTML dengan Margin Buatan Pengguna
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, merender HTML dengan margin yang ditentukan pengguna merupakan aspek penting dalam membuat dokumen yang menarik secara visual. Baik itu menyesuaikan margin untuk situs web atau mengonfigurasi tata letak cetak, kontrol margin yang tepat akan meningkatkan presentasi konten secara keseluruhan. Dalam tutorial ini, kita akan mempelajari penggunaan GroupDocs.Viewer untuk .NET untuk mencapai fungsi ini dengan lancar.
 ## Prasyarat

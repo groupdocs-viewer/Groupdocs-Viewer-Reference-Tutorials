@@ -3,10 +3,12 @@ title: Tùy chọn tải nâng cao
 linktitle: Tùy chọn tải nâng cao
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao ứng dụng .NET của bạn với GroupDocs.Viewer để có hướng dẫn về .NET. Tìm hiểu cách chỉ định loại tệp, quản lý mã hóa, tải tài liệu được bảo vệ bằng mật khẩu, v.v.
-type: docs
 weight: 21
 url: /vi/net/advanced-loading/
 ---
+
+# Tùy chọn tải nâng cao
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển ứng dụng .NET, việc tích hợp khả năng xem tài liệu hiệu quả là điều tối quan trọng. GroupDocs.Viewer dành cho .NET nổi bật như một giải pháp toàn diện, cung cấp vô số chức năng để hợp lý hóa việc hiển thị tài liệu. Bài viết này đóng vai trò là hướng dẫn tuyển chọn cho các hướng dẫn về tùy chọn tải nâng cao, trao quyền cho các nhà phát triển khai thác toàn bộ tiềm năng của GroupDocs.Viewer cho .NET.

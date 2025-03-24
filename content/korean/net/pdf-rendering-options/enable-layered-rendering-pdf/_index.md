@@ -3,10 +3,12 @@ title: PDF에서 계층화된 렌더링 활성화
 linktitle: PDF에서 계층화된 렌더링 활성화
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 PDF 문서에서 계층화된 렌더링을 활성화하는 방법을 알아보세요. 손쉽게 문서 보기 경험을 향상하세요.
-type: docs
 weight: 15
 url: /ko/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# PDF에서 계층화된 렌더링 활성화
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 PDF 문서에서 계층화된 렌더링을 활성화하는 프로세스를 자세히 살펴보겠습니다. 계층화된 렌더링을 통해 향상된 문서 표시 및 조작이 가능해 사용자에게 보다 대화형 보기 환경을 제공합니다.
 ## 전제조건

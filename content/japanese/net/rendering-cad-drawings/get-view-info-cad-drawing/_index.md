@@ -3,10 +3,12 @@ title: CAD 図面のビュー情報を取得する
 linktitle: CAD 図面のビュー情報を取得する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して CAD 図面のビュー情報を取得する方法を学びます。シームレスな CAD ファイル処理により .NET アプリケーションを強化します。
-type: docs
 weight: 10
 url: /ja/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# CAD 図面のビュー情報を取得する
+
 ## 導入
 ソフトウェア開発の世界では、CAD 図面を効率的に処理することが非常に重要です。建築家、エンジニア、デザイナー向けのアプリケーションを構築している場合でも、CAD ファイルのシームレスな表示エクスペリエンスを提供すると、ユーザーの満足度が大幅に向上します。 GroupDocs.Viewer for .NET は、CAD ファイル表示機能を .NET アプリケーションに簡単に統合するための強力なソリューションを提供します。このチュートリアルでは、GroupDocs.Viewer for .NET を使用して CAD 図面のビュー情報を取得するプロセスを説明します。
 ## 前提条件

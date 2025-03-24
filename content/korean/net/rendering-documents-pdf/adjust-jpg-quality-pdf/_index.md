@@ -3,10 +3,12 @@ title: 렌더링된 PDF에서 JPG 이미지 품질 조정
 linktitle: 렌더링된 PDF에서 JPG 이미지 품질 조정
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 렌더링된 PDF 문서에서 JPG 이미지 품질을 조정하는 방법을 알아보세요. 문서 보기 경험을 향상시키세요.
-type: docs
 weight: 11
 url: /ko/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# 렌더링된 PDF에서 JPG 이미지 품질 조정
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 PDF를 렌더링할 때 JPG 이미지의 품질을 조정하는 방법을 알아봅니다. 이 강력한 라이브러리를 사용하면 .NET 애플리케이션에서 다양한 문서 형식을 원활하게 보고 조작할 수 있습니다.
 ## 전제조건

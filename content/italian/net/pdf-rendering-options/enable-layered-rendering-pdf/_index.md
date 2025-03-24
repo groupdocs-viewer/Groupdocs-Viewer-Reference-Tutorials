@@ -3,10 +3,12 @@ title: Abilita il rendering a livelli nel PDF
 linktitle: Abilita il rendering a livelli nel PDF
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come abilitare il rendering a livelli nei documenti PDF utilizzando GroupDocs.Viewer per .NET. Migliora l'esperienza di visualizzazione dei documenti senza sforzo.
-type: docs
 weight: 15
 url: /it/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Abilita il rendering a livelli nel PDF
+
 ## introduzione
 In questo tutorial, approfondiremo il processo di abilitazione del rendering a livelli nei documenti PDF utilizzando GroupDocs.Viewer per .NET. Il rendering a più livelli consente una migliore visualizzazione e manipolazione dei documenti, offrendo agli utenti un'esperienza di visualizzazione più interattiva.
 ## Prerequisiti

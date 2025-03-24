@@ -3,10 +3,12 @@ title: Ausgeblendete Seiten rendern
 linktitle: Ausgeblendete Seiten rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Erweitern Sie Ihre .NET-Anwendung mit GroupDocs.Viewer für eine nahtlose Dokumentenwiedergabe. Befolgen Sie unsere Schritt-für-Schritt-Anleitung, um versteckte Seiten mühelos zu rendern.
-type: docs
 weight: 15
 url: /de/net/rendering-options/render-hidden-pages/
 ---
+
+# Ausgeblendete Seiten rendern
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist die effiziente Verwaltung und Anzeige von Dokumenten von entscheidender Bedeutung. Ob für den internen Gebrauch, Kundenpräsentationen oder Webanwendungen – die Möglichkeit, verschiedene Dokumentformate nahtlos anzeigen zu können, ist eine Notwendigkeit. Hier kommt GroupDocs.Viewer für .NET ins Spiel. Mit seinen leistungsstarken Funktionen und der intuitiven Benutzeroberfläche vereinfacht GroupDocs.Viewer das Rendern von Dokumenten in Ihren .NET-Anwendungen.
 ## Voraussetzungen

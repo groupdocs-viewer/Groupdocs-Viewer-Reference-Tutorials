@@ -3,10 +3,12 @@ title: تقديم ملفات CHM
 linktitle: تقديم ملفات CHM
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض ملفات CHM في .NET باستخدام GroupDocs.Viewer. قم بتحويل CHM إلى تنسيقات HTML وJPG وPNG وPDF دون عناء.
-type: docs
 weight: 10
 url: /ar/net/rendering-web-documents/render-chm/
 ---
+
+# تقديم ملفات CHM
+
 ## مقدمة
 في هذا البرنامج التعليمي، سوف نستكشف كيفية عرض ملفات CHM (تعليمات HTML المترجمة) باستخدام GroupDocs.Viewer لـ .NET. GroupDocs.Viewer for .NET عبارة عن واجهة برمجة تطبيقات قوية لعرض المستندات تسمح للمطورين بعرض أكثر من 170 نوعًا من المستندات داخل تطبيقات .NET الخاصة بهم دون الحاجة إلى أي عمليات تثبيت خارجية للبرامج.
 

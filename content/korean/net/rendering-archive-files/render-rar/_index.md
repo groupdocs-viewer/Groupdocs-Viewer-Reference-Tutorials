@@ -3,10 +3,12 @@ title: RAR 아카이브 렌더링
 linktitle: RAR 아카이브 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 RAR 아카이브를 HTML, JPG, PNG 또는 PDF 형식으로 렌더링하는 방법을 알아보세요. RAR 아카이브의 내용을 쉽게 보고 공유할 수 있습니다.
-type: docs
 weight: 13
 url: /ko/net/rendering-archive-files/render-rar/
 ---
+
+# RAR 아카이브 렌더링
+
 ## 소개
 RAR 아카이브는 여러 파일과 폴더를 단일 컨테이너로 압축하고 저장하는 데 널리 사용되는 형식입니다. 이러한 아카이브의 내용을 보거나 공유하려면 RAR 아카이브를 HTML, JPG, PNG 또는 PDF와 같은 다양한 형식으로 렌더링하는 것이 필수적일 수 있습니다. 이 튜토리얼에서는 .NET용 GroupDocs.Viewer를 사용하여 RAR 아카이브를 렌더링하는 방법을 살펴보겠습니다.
 ## 전제조건

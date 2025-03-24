@@ -3,10 +3,12 @@ title: Komma igång
 linktitle: Komma igång
 second_title: GroupDocs.Viewer .NET API
 description: Upptäck steg-för-steg handledning för att integrera GroupDocs.Viewer för .NET sömlöst i dina applikationer. Lär dig att ställa in licenser och anpassa tittarens utseende.
-type: docs
 weight: 26
 url: /sv/net/getting-started/
 ---
+
+# Komma igång
+
 
 ## Introduktion
 

@@ -3,10 +3,12 @@ title: 在 PDF 中啟用字體提示
 linktitle: 在 PDF 中啟用字體提示
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 PDF 文件中啟用字體提示。請按照我們的逐步教學進行無縫整合。
-type: docs
 weight: 14
 url: /zh-hant/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# 在 PDF 中啟用字體提示
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個強大的工具，用於在 .NET 應用程式中檢視和操作各種文件格式。無論您使用 PDF、Microsoft Office 文件、圖像或其他格式，GroupDocs.Viewer 都可以提供無縫的解決方案來渲染這些文件並與這些文件互動。
 ## 先決條件

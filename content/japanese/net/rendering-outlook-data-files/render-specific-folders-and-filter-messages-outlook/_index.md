@@ -3,10 +3,12 @@ title: 特定のフォルダーのレンダリングとメッセージのフィ�
 linktitle: 特定のフォルダーのレンダリングとメッセージのフィルター (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して Outlook で特定のフォルダーを表示し、メッセージをフィルターする方法を学びます。 .NET アプリケーションでのドキュメント管理を簡素化します。
-type: docs
 weight: 11
 url: /ja/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# 特定のフォルダーのレンダリングとメッセージのフィルター (Outlook)
+
 ## 導入
 .NET 開発の世界では、ドキュメントを効率的に管理および表示することが非常に重要です。 GroupDocs.Viewer for .NET は、さまざまなドキュメント形式をシームレスにレンダリングするための強力な機能を提供することで、このタスクを簡素化します。このチュートリアルでは、GroupDocs.Viewer for .NET を使用して Outlook で特定のフォルダーを表示し、メッセージをフィルターする方法について詳しく説明します。
 ## 前提条件

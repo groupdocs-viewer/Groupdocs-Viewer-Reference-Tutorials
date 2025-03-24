@@ -3,10 +3,12 @@ title: Mulai
 linktitle: Mulai
 second_title: GroupDocs.Viewer .NET API
 description: Temukan tutorial langkah demi langkah untuk mengintegrasikan GroupDocs.Viewer untuk .NET dengan lancar ke dalam aplikasi Anda. Pelajari cara menyetel lisensi dan menyesuaikan tampilan penampil.
-type: docs
 weight: 26
 url: /id/net/getting-started/
 ---
+
+# Mulai
+
 
 ## Perkenalan
 

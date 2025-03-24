@@ -3,10 +3,12 @@ title: Hiển thị tệp dữ liệu Outlook (PST, OST)
 linktitle: Hiển thị tệp dữ liệu Outlook (PST, OST)
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá hướng dẫn hiển thị Tệp Dữ liệu Outlook (PST, OST) bằng GroupDocs.Viewer cho .NET. Khám phá các kỹ thuật quản lý tài liệu hiệu quả một cách dễ dàng.
-type: docs
 weight: 39
 url: /vi/net/rendering-outlook-data-files/
 ---
+
+# Hiển thị tệp dữ liệu Outlook (PST, OST)
+
 ## Giới thiệu
 
 Trong bối cảnh kỹ thuật số ngày nay, việc quản lý Tệp Dữ liệu Outlook (PST, OST) một cách hiệu quả là điều tối quan trọng. GroupDocs.Viewer dành cho .NET trao quyền cho các nhà phát triển trích xuất thông tin chế độ xem một cách liền mạch, hiển thị các thư mục cụ thể, lọc thư và giới hạn số lượng mục trong tệp dữ liệu Outlook. Hãy bắt tay vào cuộc hành trình khám phá sự phức tạp của những hướng dẫn này.

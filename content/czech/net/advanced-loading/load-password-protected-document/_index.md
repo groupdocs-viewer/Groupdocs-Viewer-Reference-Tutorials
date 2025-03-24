@@ -3,10 +3,12 @@ title: Načíst dokumenty chráněné heslem
 linktitle: Načíst dokumenty chráněné heslem
 second_title: GroupDocs.Viewer .NET API
 description: Bez námahy integrujte prohlížení dokumentů chráněných heslem do aplikací .NET pomocí GroupDocs.Viewer pro .NET. Postupujte podle našeho podrobného návodu pro bezproblémový provoz.
-type: docs
 weight: 12
 url: /cs/net/advanced-loading/load-password-protected-document/
 ---
+
+# Načíst dokumenty chráněné heslem
+
 ## Úvod
 dnešní digitální době je bezproblémová správa a prohlížení různých formátů dokumentů nutností pro mnoho firem i jednotlivců. Naštěstí GroupDocs.Viewer for .NET poskytuje komplexní řešení pro vývojáře .NET, aby mohli bez námahy integrovat možnosti prohlížení dokumentů do svých aplikací. V tomto tutoriálu se ponoříme do jedné ze základních funkcí GroupDocs.Viewer: načítání dokumentů chráněných heslem. Postup rozebereme krok za krokem a zajistíme, aby vývojáři mohli snadno sledovat a implementovat tuto funkci do svých projektů.
 ## Předpoklady

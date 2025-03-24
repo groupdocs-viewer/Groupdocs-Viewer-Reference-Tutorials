@@ -3,10 +3,12 @@ title: Rendering door pagina-einden
 linktitle: Rendering door pagina-einden
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek de kracht van GroupDocs.Viewer voor .NET bij het nauwkeurig weergeven van documenten. Volg onze stapsgewijze zelfstudie voor weergave op pagina-einden.
-type: docs
 weight: 14
 url: /nl/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Rendering door pagina-einden
+
 ## Invoering
 Welkom bij de GroupDocs.Viewer voor .NET-tutorial over het weergeven van documenten op pagina-einden! In deze stapsgewijze handleiding onderzoeken we hoe u de krachtige functies van GroupDocs.Viewer kunt gebruiken om documenten nauwkeurig weer te geven, waarbij de nadruk vooral ligt op pagina-einden. Of u nu een doorgewinterde ontwikkelaar bent of net begint, deze tutorial leidt u door het proces en geeft u een duidelijk inzicht in elke stap.
 ## Vereisten

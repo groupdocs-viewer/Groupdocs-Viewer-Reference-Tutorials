@@ -3,10 +3,12 @@ title: Gör rutnätslinjer
 linktitle: Gör rutnätslinjer
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dokumentvisualiseringen med GroupDocs.Viewer för .NET. Gör rutnätslinjer utan ansträngning. Prova den kostnadsfria provperioden nu! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /sv/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Gör rutnätslinjer
+
 ## Introduktion
 Välkommen till den här steg-för-steg-guiden om hur du använder GroupDocs.Viewer för .NET för att återge rutnätslinjer i dina dokument. Oavsett om du är en erfaren utvecklare eller en nykomling i .NET-ramverket, kommer den här handledningen att leda dig genom processen med detaljerade förklaringar och lätta att följa exempel.
 ## Förutsättningar
@@ -66,6 +68,6 @@ I den här handledningen utforskade vi processen att rendera rutnätslinjer i do
 ### Finns tillfälliga licenser tillgängliga för GroupDocs.Viewer för .NET?
  Ja, du kan få en[tillfällig licens](https://purchase.groupdocs.com/temporary-license/) för GroupDocs.Viewer för .NET.
 ### Kan jag hitta detaljerad dokumentation för GroupDocs.Viewer för .NET?
- Absolut! Referera till[officiell dokumentation](https://reference.groupdocs.com/viewer/net/) för djupgående information om hur du använder GroupDocs.Viewer för .NET.
+ Absolut! Referera till[officiell dokumentation](https://tutorials.groupdocs.com/viewer/net/) för djupgående information om hur du använder GroupDocs.Viewer för .NET.
 ### Var kan jag ladda ner den senaste versionen av GroupDocs.Viewer för .NET?
  Ladda ner biblioteket från[officiella utgivningssida](https://releases.groupdocs.com/viewer/net/).

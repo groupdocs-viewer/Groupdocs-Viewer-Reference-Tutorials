@@ -3,10 +3,12 @@ title: 將文件渲染為 HTML
 linktitle: 將文件渲染為 HTML
 second_title: GroupDocs.Viewer .NET API
 description: 了解使用 GroupDocs.Viewer for .NET 將文件呈現為 HTML 的綜合教學課程。學習文件顯示和增強使用者體驗的技術。
-type: docs
 weight: 31
 url: /zh-hant/net/rendering-documents-html/
 ---
+
+# 將文件渲染為 HTML
+
 
 ## 介紹
 

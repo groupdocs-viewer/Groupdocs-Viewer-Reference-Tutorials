@@ -3,10 +3,12 @@ title: Rendering CAD Drawings
 linktitle: Rendering CAD Drawings
 second_title: GroupDocs.Viewer .NET API
 description: Discover tutorials for rendering CAD drawings using GroupDocs.Viewer for .NET. Learn to enhance .NET applications with seamless CAD file handling.
-type: docs
 weight: 25
 url: /net/rendering-cad-drawings/
 ---
+
+# Rendering CAD Drawings
+
 
 ## Introduction
 

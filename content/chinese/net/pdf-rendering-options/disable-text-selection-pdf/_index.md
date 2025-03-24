@@ -3,10 +3,12 @@ title: 禁用 PDF 中的文本选择
 linktitle: 禁用 PDF 中的文本选择
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 禁用 PDF 中的文本选择。请按照我们的分步指南进行无缝集成。
-type: docs
 weight: 13
 url: /zh/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# 禁用 PDF 中的文本选择
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个功能强大的文档呈现 API，允许开发人员轻松地将文档查看功能集成到他们的 .NET 应用程序中。 GroupDocs.Viewer 提供的关键功能之一是能够禁用 PDF 文档中的文本选择。当您需要防止用户复制敏感文档中的文本，确保文档的安全性和完整性时，此功能特别有用。
 ## 先决条件

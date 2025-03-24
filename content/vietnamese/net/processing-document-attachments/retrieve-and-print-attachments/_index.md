@@ -3,10 +3,12 @@ title: Truy xuất và in tệp đính kèm tài liệu
 linktitle: Truy xuất và in tệp đính kèm tài liệu
 second_title: API GroupDocs.Viewer .NET
 description: Tích hợp liền mạch khả năng xem tài liệu vào các ứng dụng .NET của bạn với GroupDocs.Viewer dành cho .NET. Truy xuất và in các tệp đính kèm tài liệu một cách dễ dàng.
-type: docs
 weight: 11
 url: /vi/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# Truy xuất và in tệp đính kèm tài liệu
+
 ## Giới thiệu
 Trong thế giới phát triển phần mềm, việc quản lý và hiển thị tài liệu hiệu quả trong các ứng dụng là rất quan trọng. GroupDocs.Viewer dành cho .NET cung cấp giải pháp mạnh mẽ cho các nhà phát triển để tích hợp khả năng xem tài liệu vào các ứng dụng .NET của họ một cách liền mạch. Cho dù bạn đang xây dựng hệ thống quản lý tài liệu cấp doanh nghiệp hay trình xem tài liệu đơn giản, GroupDocs.Viewer đều cung cấp một bộ tính năng toàn diện để đáp ứng nhu cầu của bạn.
 ## Điều kiện tiên quyết

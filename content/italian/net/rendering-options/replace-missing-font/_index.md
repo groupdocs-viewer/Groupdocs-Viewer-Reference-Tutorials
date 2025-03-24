@@ -3,10 +3,12 @@ title: Sostituisci carattere mancante
 linktitle: Sostituisci carattere mancante
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come sostituire facilmente i caratteri mancanti nei documenti .NET utilizzando GroupDocs.Viewer. Garantisci un rendering accurato con semplici passaggi.
-type: docs
 weight: 20
 url: /it/net/rendering-options/replace-missing-font/
 ---
+
+# Sostituisci carattere mancante
+
 ## introduzione
 Nel mondo dello sviluppo .NET, la gestione efficiente dei documenti è fondamentale. GroupDocs.Viewer per .NET fornisce una potente soluzione per visualizzare vari formati di documenti all'interno delle applicazioni .NET. In questo tutorial esploreremo come utilizzare GroupDocs.Viewer per .NET per sostituire i caratteri mancanti nei documenti. Che tu abbia a che fare con PDF, presentazioni PowerPoint o documenti Word, GroupDocs.Viewer semplifica il processo, garantendo che i tuoi documenti vengano visualizzati in modo accurato, anche quando mancano i caratteri.
 ## Prerequisiti

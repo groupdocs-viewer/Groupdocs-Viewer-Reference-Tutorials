@@ -3,10 +3,12 @@ title: Renderuj kod HTML z marginesami zdefiniowanymi przez użytkownika
 linktitle: Renderuj kod HTML z marginesami zdefiniowanymi przez użytkownika
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować HTML z niestandardowymi marginesami w .NET przy użyciu GroupDocs.Viewer. Ulepsz prezentację dokumentów bez wysiłku.
-type: docs
 weight: 11
 url: /pl/net/rendering-web-documents/render-html-margins/
 ---
+
+# Renderuj kod HTML z marginesami zdefiniowanymi przez użytkownika
+
 ## Wstęp
 dziedzinie programowania .NET renderowanie HTML z marginesami zdefiniowanymi przez użytkownika jest kluczowym aspektem tworzenia atrakcyjnych wizualnie dokumentów. Niezależnie od tego, czy chodzi o dostosowywanie marginesów witryny internetowej, czy konfigurowanie układów wydruku, precyzyjna kontrola nad marginesami poprawia ogólną prezentację treści. W tym samouczku omówimy wykorzystanie programu GroupDocs.Viewer dla platformy .NET w celu bezproblemowego osiągnięcia tej funkcjonalności.
 ## Warunki wstępne

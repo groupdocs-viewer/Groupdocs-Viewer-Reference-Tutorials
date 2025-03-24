@@ -3,10 +3,12 @@ title: Render Lapisan dalam Gambar CAD
 linktitle: Render Lapisan dalam Gambar CAD
 second_title: GroupDocs.Viewer .NET API
 description: Render gambar CAD dengan mulus di aplikasi .NET dengan GroupDocs.Viewer untuk .NET. Jelajahi opsi rendering, sesuaikan lapisan, dan banyak lagi.
-type: docs
 weight: 13
 url: /id/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Render Lapisan dalam Gambar CAD
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah alat canggih yang memungkinkan pengembang mengintegrasikan kemampuan rendering dokumen dengan lancar ke dalam aplikasi .NET mereka. Baik Anda perlu merender gambar CAD, PDF, dokumen Microsoft Office, atau lainnya, GroupDocs.Viewer menyediakan solusi komprehensif.
 ## Prasyarat
@@ -14,7 +16,7 @@ Sebelum mulai menggunakan GroupDocs.Viewer untuk .NET, pastikan Anda memiliki pr
 - Pemahaman dasar bahasa pemrograman C#.
 - Lingkungan pengembangan .NET disiapkan di mesin Anda.
 -  GroupDocs.Viewer untuk .NET diinstal. Anda dapat mengunduhnya dari[Di Sini](https://releases.groupdocs.com/viewer/net/).
--  Akses ke dokumentasi GroupDocs.Viewer untuk .NET untuk referensi, yang dapat ditemukan[Di Sini](https://reference.groupdocs.com/viewer/net/).
+-  Akses ke dokumentasi GroupDocs.Viewer untuk .NET untuk referensi, yang dapat ditemukan[Di Sini](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Impor Namespace
 Untuk mulai menggunakan GroupDocs.Viewer untuk .NET, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda. Ikuti langkah ini:

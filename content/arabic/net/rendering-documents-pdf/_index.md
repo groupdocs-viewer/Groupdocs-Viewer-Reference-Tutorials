@@ -3,10 +3,12 @@ title: تقديم المستندات إلى PDF
 linktitle: تقديم المستندات إلى PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرّف على كيفية تحويل المستندات إلى PDF، وضبط جودة صورة JPG، وحماية ملفات PDF بكلمات مرور باستخدام GroupDocs.Viewer لبرامج .NET التعليمية.
-type: docs
 weight: 29
 url: /ar/net/rendering-documents-pdf/
 ---
+
+# تقديم المستندات إلى PDF
+
 
 ## مقدمة
 

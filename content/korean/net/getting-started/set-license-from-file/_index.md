@@ -3,10 +3,12 @@ title: 파일에서 라이센스 설정
 linktitle: 파일에서 라이센스 설정
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 응용 프로그램에 손쉽게 통합하는 방법을 알아보세요. 라이센스를 설정하고, 문서를 보고, 뷰어 모양을 사용자 정의하세요.
-type: docs
 weight: 10
 url: /ko/net/getting-started/set-license-from-file/
 ---
+
+# 파일에서 라이센스 설정
+
 ## 소개
 .NET용 GroupDocs.Viewer는 .NET 개발자가 문서 보기 기능을 응용 프로그램에 원활하게 통합할 수 있게 해주는 강력한 문서 뷰어 API입니다. PDF, Microsoft Office 또는 이미지와 같은 다양한 형식의 문서를 표시해야 하는 경우 GroupDocs.Viewer는 광범위한 사용자 정의 옵션을 갖춘 안정적인 솔루션을 제공합니다.
 ## 전제조건

@@ -3,10 +3,12 @@ title: 渲染网格线
 linktitle: 渲染网格线
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 增强文档可视化。轻松渲染网格线。立即免费试用！ #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /zh/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# 渲染网格线
+
 ## 介绍
 欢迎阅读本分步指南，了解如何使用 GroupDocs.Viewer for .NET 在文档中呈现网格线。无论您是经验丰富的开发人员还是 .NET 框架的新手，本教程都将通过详细的解释和易于理解的示例引导您完成整个过程。
 ## 先决条件
@@ -66,6 +68,6 @@ viewer.View(options, 1, 2, 3);
 ### GroupDocs.Viewer for .NET 是否有临时许可证？
 是的，您可以获得[临时执照](https://purchase.groupdocs.com/temporary-license/)适用于 .NET 的 GroupDocs.Viewer。
 ### 我可以找到 GroupDocs.Viewer for .NET 的详细文档吗？
-绝对地！请参阅[官方文档](https://reference.groupdocs.com/viewer/net/)有关使用 GroupDocs.Viewer for .NET 的深入信息。
+绝对地！请参阅[官方文档](https://tutorials.groupdocs.com/viewer/net/)有关使用 GroupDocs.Viewer for .NET 的深入信息。
 ### 在哪里可以下载最新版本的 .NET 版 GroupDocs.Viewer？
 从以下位置下载库[官方发布页面](https://releases.groupdocs.com/viewer/net/).

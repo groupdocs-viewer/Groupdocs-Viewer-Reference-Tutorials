@@ -3,10 +3,12 @@ title: Aktifkan Rendering Berlapis dalam PDF
 linktitle: Aktifkan Rendering Berlapis dalam PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengaktifkan rendering berlapis dalam dokumen PDF menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan pengalaman melihat dokumen dengan mudah.
-type: docs
 weight: 15
 url: /id/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Aktifkan Rendering Berlapis dalam PDF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari proses mengaktifkan rendering berlapis dalam dokumen PDF menggunakan GroupDocs.Viewer untuk .NET. Render berlapis memungkinkan tampilan dan manipulasi dokumen yang ditingkatkan, memberikan pengalaman menonton yang lebih interaktif kepada pengguna.
 ## Prasyarat

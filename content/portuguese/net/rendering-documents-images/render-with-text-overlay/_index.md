@@ -3,10 +3,12 @@ title: Renderizar com texto sobreposto para exibição
 linktitle: Renderizar com texto sobreposto para exibição
 second_title: API GroupDocs.Viewer .NET
 description: Renderize documentos perfeitamente em aplicativos .NET com GroupDocs.Viewer, suportando vários formatos para aprimorar a experiência do usuário.
-type: docs
 weight: 13
 url: /pt/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Renderizar com texto sobreposto para exibição
+
 ## Introdução
 No domínio do desenvolvimento .NET, gerenciar e exibir vários formatos de documentos de maneira integrada é crucial para muitos aplicativos. GroupDocs.Viewer for .NET surge como uma solução poderosa para renderizar documentos sem esforço em seus aplicativos .NET. Quer se trate de PDFs, documentos do Word, planilhas do Excel ou apresentações do PowerPoint, o GroupDocs.Viewer simplifica o processo, oferecendo uma variedade de recursos para visualização aprimorada de documentos.
 ## Pré-requisitos

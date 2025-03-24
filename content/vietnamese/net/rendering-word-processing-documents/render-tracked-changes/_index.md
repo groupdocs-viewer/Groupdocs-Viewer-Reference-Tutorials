@@ -3,10 +3,12 @@ title: Hiển thị các thay đổi được theo dõi
 linktitle: Hiển thị các thay đổi được theo dõi
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá cách hiển thị các thay đổi được theo dõi trong tài liệu một cách dễ dàng bằng GroupDocs.Viewer dành cho .NET. Nâng cao hiệu quả quản lý tài liệu của bạn.
-type: docs
 weight: 10
 url: /vi/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Hiển thị các thay đổi được theo dõi
+
 ## Giới thiệu
 Trong kỷ nguyên kỹ thuật số ngày nay, việc quản lý và xem tài liệu một cách hiệu quả là rất quan trọng đối với các doanh nghiệp cũng như cá nhân. Với sự ra đời của các công nghệ tiên tiến, các giải pháp như GroupDocs.Viewer dành cho .NET đã cách mạng hóa cách chúng ta tương tác với nhiều định dạng tài liệu khác nhau, bao gồm tài liệu Word, PDF, v.v. Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào cách tận dụng GroupDocs.Viewer dành cho .NET để hiển thị liền mạch các thay đổi được theo dõi trong tài liệu của bạn.
 ## Điều kiện tiên quyết

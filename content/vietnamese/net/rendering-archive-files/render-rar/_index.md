@@ -3,10 +3,12 @@ title: Kết xuất kho lưu trữ RAR
 linktitle: Kết xuất kho lưu trữ RAR
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị kho lưu trữ RAR thành định dạng HTML, JPG, PNG hoặc PDF bằng GroupDocs.Viewer cho .NET. Dễ dàng xem và chia sẻ nội dung của kho lưu trữ RAR.
-type: docs
 weight: 13
 url: /vi/net/rendering-archive-files/render-rar/
 ---
+
+# Kết xuất kho lưu trữ RAR
+
 ## Giới thiệu
 Kho lưu trữ RAR là định dạng phổ biến để nén và lưu trữ nhiều tệp và thư mục vào một vùng chứa duy nhất. Việc hiển thị các kho lưu trữ RAR thành nhiều định dạng khác nhau như HTML, JPG, PNG hoặc PDF có thể cần thiết để xem hoặc chia sẻ nội dung của các kho lưu trữ này. Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị các kho lưu trữ RAR bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

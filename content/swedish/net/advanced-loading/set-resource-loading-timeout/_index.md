@@ -3,10 +3,12 @@ title: Ange timeout för resursladdning (avancerat)
 linktitle: Ange timeout för resursladdning (avancerat)
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du konfigurerar tidsgränser för resursladdning i GroupDocs.Viewer för .NET effektivt. Masterdokumentåtergivning med precision och stabilitet.
-type: docs
 weight: 13
 url: /sv/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Ange timeout för resursladdning (avancerat)
+
 ## Introduktion
 Inom .NET-utvecklingsområdet tillhandahåller GroupDocs.Viewer en kraftfull verktygsuppsättning för att rendera dokument och bilder med precision och effektivitet. Att utnyttja dess kapacitet kräver att du förstår dess krångligheter, inklusive att ställa in tidsgränser för resursladdning. I den här självstudien kommer vi att fördjupa oss i processen att konfigurera resursladdningstidsgränser i GroupDocs.Viewer för .NET.
 ## Förutsättningar

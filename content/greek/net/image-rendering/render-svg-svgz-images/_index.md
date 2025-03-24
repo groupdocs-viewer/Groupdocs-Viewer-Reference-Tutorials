@@ -3,10 +3,12 @@ title: Απόδοση εικόνων SVG και SVGZ
 linktitle: Απόδοση εικόνων SVG και SVGZ
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε εικόνες SVG και SVGZ χρησιμοποιώντας το GroupDocs.Viewer για .NET. Μετατρέψτε τα διανυσματικά γραφικά σε HTML, JPG, PNG και PDF χωρίς κόπο.
-type: docs
 weight: 16
 url: /el/net/image-rendering/render-svg-svgz-images/
 ---
+
+# Απόδοση εικόνων SVG και SVGZ
+
 ## Εισαγωγή
 Σε αυτό το σεμινάριο, θα σας καθοδηγήσουμε στη διαδικασία απόδοσης εικόνων SVG και SVGZ χρησιμοποιώντας το GroupDocs.Viewer για .NET. Το GroupDocs.Viewer για .NET είναι ένα ισχυρό API απόδοσης εγγράφων που επιτρέπει στους προγραμματιστές να αποδίδουν διάφορες μορφές εγγράφων στις εφαρμογές τους .NET. Τα SVG και SVGZ είναι δημοφιλείς μορφές εικόνας που χρησιμοποιούνται για διανυσματικά γραφικά και με το GroupDocs.Viewer για .NET, μπορείτε εύκολα να τις αποδώσετε σε διαφορετικές μορφές εξόδου όπως HTML, JPG, PNG και PDF.
 ## Προαπαιτούμενα

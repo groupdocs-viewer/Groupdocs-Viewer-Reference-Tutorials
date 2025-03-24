@@ -3,10 +3,12 @@ title: 渲染带有注释的文档
 linktitle: 渲染带有注释的文档
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 呈现带有注释的文档。无缝集成到 .NET 应用程序中的分步教程。
-type: docs
 weight: 14
 url: /zh/net/rendering-options/render-document-notes/
 ---
+
+# 渲染带有注释的文档
+
 ## 介绍
 在文档操作和查看领域，GroupDocs.Viewer for .NET 是一个强大的解决方案，提供无缝集成和强大的功能。本教程旨在指导您完成使用 GroupDocs.Viewer for .NET 呈现带有注释的文档的过程。无论您是经验丰富的开发人员还是刚刚进入 .NET 世界，本分步指南都将帮助您轻松应对文档呈现的复杂性。
 ## 先决条件

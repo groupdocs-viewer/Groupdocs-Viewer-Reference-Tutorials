@@ -3,10 +3,12 @@ title: 렌더링 그리드 선
 linktitle: 렌더링 그리드 선
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서 시각화를 향상하세요. 그리드 선을 쉽게 렌더링할 수 있습니다. 지금 무료 평가판을 사용해 보세요! #GroupDocs #뷰어
-type: docs
 weight: 12
 url: /ko/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# 렌더링 그리드 선
+
 ## 소개
 .NET용 GroupDocs.Viewer를 사용하여 문서에서 격자선을 렌더링하는 방법에 대한 단계별 가이드에 오신 것을 환영합니다. 숙련된 개발자이든 .NET 프레임워크를 처음 접하는 사람이든 관계없이 이 자습서에서는 자세한 설명과 따라하기 쉬운 예제를 통해 프로세스를 안내합니다.
 ## 전제조건
@@ -66,6 +68,6 @@ viewer.View(options, 1, 2, 3);
 ### .NET용 GroupDocs.Viewer에 임시 라이센스를 사용할 수 있습니까?
  예, 다음을 얻을 수 있습니다.[임시 면허증](https://purchase.groupdocs.com/temporary-license/) .NET용 GroupDocs.Viewer용.
 ### .NET용 GroupDocs.Viewer에 대한 자세한 설명서를 찾을 수 있습니까?
- 전적으로! 다음을 참조하세요.[공식 문서](https://reference.groupdocs.com/viewer/net/) .NET용 GroupDocs.Viewer 사용에 대한 자세한 정보를 보려면
+ 전적으로! 다음을 참조하세요.[공식 문서](https://tutorials.groupdocs.com/viewer/net/) .NET용 GroupDocs.Viewer 사용에 대한 자세한 정보를 보려면
 ### .NET용 GroupDocs.Viewer의 최신 버전은 어디에서 다운로드할 수 있나요?
  다음에서 라이브러리를 다운로드하세요.[공식 출시 페이지](https://releases.groupdocs.com/viewer/net/).

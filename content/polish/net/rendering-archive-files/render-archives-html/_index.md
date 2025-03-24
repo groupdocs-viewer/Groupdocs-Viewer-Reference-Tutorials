@@ -3,10 +3,12 @@ title: Renderuj archiwa na jednej lub wielu stronach HTML
 linktitle: Renderuj archiwa na jednej lub wielu stronach HTML
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować archiwa na stronach HTML za pomocą GroupDocs.Viewer dla .NET. Bezproblemowo integruj możliwości przeglądania dokumentów z aplikacjami .NET.
-type: docs
 weight: 12
 url: /pl/net/rendering-archive-files/render-archives-html/
 ---
+
+# Renderuj archiwa na jednej lub wielu stronach HTML
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to potężna biblioteka do renderowania dokumentów, która umożliwia programistom bezproblemową integrację funkcji przeglądania dokumentów z aplikacjami .NET. Niezależnie od tego, czy chcesz renderować archiwa na jedną, czy na wiele stron HTML, ten samouczek przeprowadzi Cię przez ten proces krok po kroku.
 ## Warunki wstępne

@@ -3,10 +3,12 @@ title: Merender Dokumen ke PDF
 linktitle: Merender Dokumen ke PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender dokumen ke PDF, menyesuaikan kualitas gambar JPG, dan melindungi PDF dengan kata sandi menggunakan tutorial GroupDocs.Viewer untuk .NET.
-type: docs
 weight: 29
 url: /id/net/rendering-documents-pdf/
 ---
+
+# Merender Dokumen ke PDF
+
 
 ## Perkenalan
 

@@ -3,10 +3,12 @@ title: Merender Dokumen menjadi Gambar
 linktitle: Merender Dokumen menjadi Gambar
 second_title: GroupDocs.Viewer .NET API
 description: Jelajahi tutorial tentang merender dokumen menjadi gambar menggunakan GroupDocs.Viewer untuk .NET. Optimalkan kualitas gambar, ekstrak koordinat teks, dan tingkatkan pengalaman pengguna.
-type: docs
 weight: 30
 url: /id/net/rendering-documents-images/
 ---
+
+# Merender Dokumen menjadi Gambar
+
 ## Perkenalan
 
 Dalam bidang pengembangan .NET, menguasai rendering dokumen menjadi gambar adalah hal yang terpenting. GroupDocs.Viewer menawarkan serangkaian tutorial komprehensif untuk menyederhanakan proses ini. Dari merender dokumen ke format JPG/PNG hingga menyempurnakan kualitas gambar dan mengoptimalkan hamparan teks, tutorial ini mencakup semuanya.

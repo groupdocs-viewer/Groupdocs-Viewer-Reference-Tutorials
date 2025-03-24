@@ -3,10 +3,12 @@ title: Ställ in bildstorleksgränser
 linktitle: Ställ in bildstorleksgränser
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du ställer in bildstorleksgränser i .NET-program utan ansträngning med GroupDocs.Viewer för .NET, vilket förbättrar dokumentvisningsupplevelsen.
-type: docs
 weight: 21
 url: /sv/net/rendering-options/set-image-size-limits/
 ---
+
+# Ställ in bildstorleksgränser
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt verktyg utformat för att underlätta sömlös dokumentvisning i .NET-applikationer. Med sina robusta funktioner och intuitiva gränssnitt kan utvecklare enkelt integrera dokumentvisningsmöjligheter i sina projekt, vilket förbättrar användarupplevelsen och produktiviteten. I den här handledningen kommer vi att utforska hur man ställer in bildstorleksgränser med GroupDocs.Viewer för .NET, vilket säkerställer optimal visning av dokument samtidigt som prestanda och effektivitet bibehålls.
 ## Förutsättningar

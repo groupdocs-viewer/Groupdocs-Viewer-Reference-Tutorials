@@ -3,10 +3,12 @@ title: Web Belgelerini Oluşturma
 linktitle: Web Belgelerini Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak .NET'te CHM dosyalarını ve HTML'yi özel kenar boşluklarıyla nasıl oluşturacağınızı öğrenin. CHM'yi sorunsuz bir şekilde HTML, JPG, PNG ve PDF formatlarına dönüştürün.
-type: docs
 weight: 35
 url: /tr/net/rendering-web-documents/
 ---
+
+# Web Belgelerini Oluşturma
+
 ## giriiş
 
 Kapsamlı eğitimler aracılığıyla GroupDocs.Viewer for .NET ile web belgelerini işlemenin karmaşıklıklarını ortaya çıkarın. CHM dosyalarını oluşturmak ve HTML kenar boşluklarını özelleştirmek, belge işleme yeteneklerinizi büyük ölçüde artırabilecek hayati işlevlerdir.

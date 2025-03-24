@@ -3,10 +3,12 @@ title: APNG画像をレンダリングする
 linktitle: APNG画像をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を使用して、APNG 画像をさまざまな形式でレンダリングする方法を学びます。コード例を含むステップバイステップのガイド。
-type: docs
 weight: 11
 url: /ja/net/image-rendering/render-apng-images/
 ---
+
+# APNG画像をレンダリングする
+
 ## 導入
 Groupdocs.Viewer for .NET は、開発者が .NET アプリケーションでさまざまなドキュメント形式をシームレスにレンダリングできるようにする強力なツールです。多くの機能の中でも、APNG (アニメーション ポータブル ネットワーク グラフィックス) 画像をレンダリングするための強力な機能が提供されており、開発者は HTML、JPG、PNG、PDF などのさまざまな形式で APNG 画像を表示できます。
 

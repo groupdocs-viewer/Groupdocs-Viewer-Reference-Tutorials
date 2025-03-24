@@ -3,10 +3,12 @@ title: 添付文書の取得と保存
 linktitle: 添付文書の取得と保存
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して、.NET アプリケーション内のドキュメント添付ファイルを効率的に管理します。添付ファイルを簡単に取得して保存できます。
-type: docs
 weight: 12
 url: /ja/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# 添付文書の取得と保存
+
 ## 導入
 デジタル時代において、効率的な文書処理は企業にとっても個人にとっても同様に重要です。電子メールの管理、契約書の表示、レポートへのアクセスのいずれの場合でも、文書を視覚化するための信頼できるツールが不可欠です。 GroupDocs.Viewer for .NET は堅牢なソリューションとして登場し、ユーザーが .NET アプリケーション内でさまざまなドキュメント形式を直接簡単に表示および操作できるようにします。
 ## 前提条件
@@ -65,6 +67,6 @@ GroupDocs.Viewer for .NET をドキュメント処理ワークフローに組み
 ### GroupDocs.Viewer for .NET の一時ライセンスを取得するにはどうすればよいですか?
 一時ライセンスは以下から取得できます。[このリンク](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Viewer for .NET のドキュメントはどこで見つけられますか?
-包括的なドキュメントが利用可能です[ここ](https://reference.groupdocs.com/viewer/net/).
+包括的なドキュメントが利用可能です[ここ](https://tutorials.groupdocs.com/viewer/net/).
 ### GroupDocs.Viewer for .NET ではどのようなサポート オプションが利用できますか?
 コミュニティ フォーラムから支援を求めることができます[ここ](https://forum.groupdocs.com/c/viewer/9).

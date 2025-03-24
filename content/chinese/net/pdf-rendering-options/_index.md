@@ -3,10 +3,12 @@ title: PDF 渲染选项
 linktitle: PDF 渲染选项
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何通过 GroupDocs.Viewer .NET 教程优化 PDF 查看。探索 PDF 渲染选项，例如调整图像质量和禁用文本选择。
-type: docs
 weight: 38
 url: /zh/net/pdf-rendering-options/
 ---
+
+# PDF 渲染选项
+
 
 ## 介绍
 

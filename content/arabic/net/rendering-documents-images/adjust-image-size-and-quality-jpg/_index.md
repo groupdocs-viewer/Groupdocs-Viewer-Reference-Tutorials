@@ -3,10 +3,12 @@ title: ضبط حجم الصورة وجودتها (JPG)
 linktitle: ضبط حجم الصورة وجودتها (JPG)
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تحسين حجم الصورة وجودتها بتنسيق JPEG باستخدام Groupdocs.Viewer لـ .NET. تعزيز تجربة عرض المستندات الخاصة بك.
-type: docs
 weight: 11
 url: /ar/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---
+
+# ضبط حجم الصورة وجودتها (JPG)
+
 ## مقدمة
 تعد Groupdocs.Viewer for .NET مكتبة قوية تمكن المطورين من دمج وظيفة عرض المستندات بسلاسة في تطبيقات .NET الخاصة بهم. أحد المتطلبات الشائعة في تطبيقات عرض المستندات هو القدرة على ضبط حجم الصور وجودتها، خاصة عند التعامل مع صور JPEG (JPG). في هذا البرنامج التعليمي، سنرشدك خلال عملية ضبط حجم الصورة وجودتها باستخدام Groupdocs.Viewer for .NET.
 ## المتطلبات الأساسية

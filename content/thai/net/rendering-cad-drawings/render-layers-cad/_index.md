@@ -3,10 +3,12 @@ title: เรนเดอร์เลเยอร์ในแบบร่าง 
 linktitle: เรนเดอร์เลเยอร์ในแบบร่าง CAD
 second_title: GroupDocs.Viewer .NET API
 description: เรนเดอร์ภาพวาด CAD ได้อย่างราบรื่นในแอปพลิเคชัน .NET ด้วย GroupDocs.Viewer สำหรับ .NET สำรวจตัวเลือกการเรนเดอร์ ปรับแต่งเลเยอร์ และอื่นๆ
-type: docs
 weight: 13
 url: /th/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# เรนเดอร์เลเยอร์ในแบบร่าง CAD
+
 ## การแนะนำ
 GroupDocs.Viewer สำหรับ .NET เป็นเครื่องมืออันทรงพลังที่ช่วยให้นักพัฒนาสามารถผสานรวมความสามารถในการเรนเดอร์เอกสารเข้ากับแอปพลิเคชัน .NET ของตนได้อย่างราบรื่น ไม่ว่าคุณจะต้องเรนเดอร์ภาพวาด CAD, PDF, เอกสาร Microsoft Office หรืออื่นๆ GroupDocs.Viewer ก็มีโซลูชันที่ครอบคลุม
 ## ข้อกำหนดเบื้องต้น
@@ -14,7 +16,7 @@ GroupDocs.Viewer สำหรับ .NET เป็นเครื่องมื
 - ความเข้าใจพื้นฐานเกี่ยวกับภาษาการเขียนโปรแกรม C#
 - สภาพแวดล้อมการพัฒนา .NET ที่ตั้งค่าบนเครื่องของคุณ
 -  ติดตั้ง GroupDocs.Viewer สำหรับ .NET แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.groupdocs.com/viewer/net/).
--  เข้าถึงเอกสาร GroupDocs.Viewer สำหรับ .NET เพื่อใช้อ้างอิง ซึ่งสามารถพบได้[ที่นี่](https://reference.groupdocs.com/viewer/net/).
+-  เข้าถึงเอกสาร GroupDocs.Viewer สำหรับ .NET เพื่อใช้อ้างอิง ซึ่งสามารถพบได้[ที่นี่](https://tutorials.groupdocs.com/viewer/net/).
 
 ## นำเข้าเนมสเปซ
 หากต้องการเริ่มใช้ GroupDocs.Viewer สำหรับ .NET คุณจะต้องนำเข้าเนมสเปซที่จำเป็นในโปรเจ็กต์ของคุณ ทำตามขั้นตอนเหล่านี้:

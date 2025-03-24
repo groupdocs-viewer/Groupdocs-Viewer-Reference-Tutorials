@@ -3,10 +3,12 @@ title: Render Gambar SVG dan SVGZ
 linktitle: Render Gambar SVG dan SVGZ
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender gambar SVG dan SVGZ menggunakan GroupDocs.Viewer untuk .NET. Ubah grafik vektor menjadi HTML, JPG, PNG, dan PDF dengan mudah.
-type: docs
 weight: 16
 url: /id/net/image-rendering/render-svg-svgz-images/
 ---
+
+# Render Gambar SVG dan SVGZ
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses rendering gambar SVG dan SVGZ menggunakan GroupDocs.Viewer untuk .NET. GroupDocs.Viewer untuk .NET adalah API rendering dokumen canggih yang memungkinkan pengembang merender berbagai format dokumen dalam aplikasi .NET mereka. SVG dan SVGZ adalah format gambar populer yang digunakan untuk grafik vektor, dan dengan GroupDocs.Viewer untuk .NET, Anda dapat dengan mudah merendernya ke dalam format keluaran berbeda seperti HTML, JPG, PNG, dan PDF.
 ## Prasyarat

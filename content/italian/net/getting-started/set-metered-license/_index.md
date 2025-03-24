@@ -3,10 +3,12 @@ title: Imposta la licenza a consumo
 linktitle: Imposta la licenza a consumo
 second_title: API GroupDocs.Viewer .NET
 description: Migliora le tue applicazioni .NET con GroupDocs.Viewer per una visualizzazione fluida dei documenti. Integra facilmente le funzionalità di rendering dei documenti nei tuoi progetti.
-type: docs
 weight: 12
 url: /it/net/getting-started/set-metered-license/
 ---
+
+# Imposta la licenza a consumo
+
 ## introduzione
 Nel mondo dello sviluppo .NET, incorporare potenti funzionalità di visualizzazione dei documenti nelle applicazioni è essenziale per migliorare l'esperienza e la funzionalità dell'utente. GroupDocs.Viewer per .NET offre una soluzione solida per integrare perfettamente le funzionalità di visualizzazione dei documenti nei tuoi progetti .NET. Che tu stia lavorando con PDF, documenti di Microsoft Office o vari formati di immagine, GroupDocs.Viewer semplifica il processo di rendering e visualizzazione di questi documenti all'interno delle tue applicazioni.
 ## Prerequisiti
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 In conclusione, GroupDocs.Viewer per .NET fornisce una soluzione completa per incorporare funzionalità di visualizzazione di documenti nelle applicazioni .NET. Seguendo i passaggi descritti, puoi facilmente impostare una licenza a consumo e iniziare a sfruttare le funzionalità di GroupDocs.Viewer nei tuoi progetti.
 ## Domande frequenti
 ### D: Dove posso trovare la documentazione per GroupDocs.Viewer per .NET?
- Puoi trovare la documentazione[Qui](https://reference.groupdocs.com/viewer/net/).
+ Puoi trovare la documentazione[Qui](https://tutorials.groupdocs.com/viewer/net/).
 ### D: È disponibile una prova gratuita per GroupDocs.Viewer per .NET?
  Sì, puoi accedere alla prova gratuita[Qui](https://releases.groupdocs.com/).
 ### D: Come posso ottenere licenze temporanee a scopo di test?

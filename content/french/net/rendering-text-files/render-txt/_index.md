@@ -3,10 +3,12 @@ title: Rendre les fichiers texte (.txt)
 linktitle: Rendre les fichiers texte (.txt)
 second_title: API GroupDocs.Viewer .NET
 description: Explorez la conversion transparente de fichiers texte en plusieurs formats à l'aide de GroupDocs.Viewer pour .NET. Améliorez vos capacités de gestion de documents sans effort.
-type: docs
 weight: 10
 url: /fr/net/rendering-text-files/render-txt/
 ---
+
+# Rendre les fichiers texte (.txt)
+
 ## Introduction
 Dans le domaine de la gestion et de la manipulation de documents, GroupDocs.Viewer pour .NET apparaît comme un outil puissant, offrant une multitude de fonctionnalités pour restituer efficacement divers formats de documents. Cet article explore les subtilités de l'utilisation de GroupDocs.Viewer pour .NET pour restituer des fichiers texte (.txt) dans plusieurs formats. Que vous souhaitiez convertir des fichiers texte en HTML, JPG, PNG ou PDF, GroupDocs.Viewer vous fournit les outils nécessaires pour accomplir ces tâches de manière transparente.
 ## Conditions préalables

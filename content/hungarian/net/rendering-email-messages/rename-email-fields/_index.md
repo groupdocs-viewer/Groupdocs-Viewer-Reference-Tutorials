@@ -3,10 +3,12 @@ title: E-mail mezők átnevezése a renderelés során
 linktitle: E-mail mezők átnevezése a renderelés során
 second_title: GroupDocs.Viewer .NET API
 description: Növelje a dokumentummegtekintési élményt a GroupDocs.Viewer for .NET segítségével. Az e-mailek zökkenőmentes megjelenítése és testreszabása.
-type: docs
 weight: 12
 url: /hu/net/rendering-email-messages/rename-email-fields/
 ---
+
+# E-mail mezők átnevezése a renderelés során
+
 ## Bevezetés
 
 Napjaink digitális korában a dokumentumok hatékony kezelése és megtekintése kiemelten fontos a vállalkozások és a magánszemélyek számára egyaránt. Legyen szó szerződésekről, jelentésekről vagy e-mailekről, a dokumentumok zökkenőmentes navigálása nagymértékben növelheti a termelékenységet. Itt jön képbe a GroupDocs.Viewer for .NET. Ez a nagy teljesítményű könyvtár lehetővé teszi a fejlesztők számára, hogy dokumentummegtekintési képességeiket közvetlenül .NET-alkalmazásaikba integrálják, és a funkciók széles skáláját kínálja a különböző dokumentumformátumok megjelenítéséhez.

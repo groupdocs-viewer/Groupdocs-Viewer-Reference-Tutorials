@@ -3,10 +3,12 @@ title: Đặt giấy phép đo lường
 linktitle: Đặt giấy phép đo lường
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao các ứng dụng .NET của bạn với GroupDocs.Viewer để xem tài liệu liền mạch. Dễ dàng tích hợp các chức năng kết xuất tài liệu vào dự án của bạn.
-type: docs
 weight: 12
 url: /vi/net/getting-started/set-metered-license/
 ---
+
+# Đặt giấy phép đo lường
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc kết hợp khả năng xem tài liệu mạnh mẽ vào ứng dụng của bạn là điều cần thiết để nâng cao trải nghiệm và chức năng của người dùng. GroupDocs.Viewer dành cho .NET cung cấp giải pháp mạnh mẽ để tích hợp liền mạch các chức năng xem tài liệu vào các dự án .NET của bạn. Cho dù bạn đang làm việc với tệp PDF, tài liệu Microsoft Office hay các định dạng hình ảnh khác nhau, GroupDocs.Viewer sẽ đơn giản hóa quá trình kết xuất và hiển thị các tài liệu này trong ứng dụng của bạn.
 ## Điều kiện tiên quyết
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Tóm lại, GroupDocs.Viewer dành cho .NET cung cấp giải pháp toàn diện để kết hợp các chức năng xem tài liệu vào các ứng dụng .NET của bạn. Bằng cách làm theo các bước đã nêu, bạn có thể dễ dàng thiết lập giấy phép được đo lường và bắt đầu tận dụng các khả năng của GroupDocs.Viewer trong các dự án của mình.
 ## Câu hỏi thường gặp
 ### Câu hỏi: Tôi có thể tìm tài liệu về GroupDocs.Viewer dành cho .NET ở đâu?
- Bạn có thể tìm thấy tài liệu[đây](https://reference.groupdocs.com/viewer/net/).
+ Bạn có thể tìm thấy tài liệu[đây](https://tutorials.groupdocs.com/viewer/net/).
 ### Câu hỏi: Có bản dùng thử miễn phí GroupDocs.Viewer dành cho .NET không?
  Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
 ### Hỏi: Làm cách nào tôi có thể xin được giấy phép tạm thời cho mục đích thử nghiệm?

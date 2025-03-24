@@ -3,10 +3,12 @@ title: Đặt giấy phép từ tệp
 linktitle: Đặt giấy phép từ tệp
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tích hợp GroupDocs.Viewer dành cho .NET vào ứng dụng của bạn một cách dễ dàng. Đặt giấy phép, xem tài liệu và tùy chỉnh giao diện của người xem.
-type: docs
 weight: 10
 url: /vi/net/getting-started/set-license-from-file/
 ---
+
+# Đặt giấy phép từ tệp
+
 ## Giới thiệu
 GroupDocs.Viewer dành cho .NET là API trình xem tài liệu mạnh mẽ cho phép các nhà phát triển .NET tích hợp liền mạch khả năng xem tài liệu vào ứng dụng của họ. Cho dù bạn cần hiển thị tài liệu ở nhiều định dạng khác nhau như PDF, Microsoft Office hay hình ảnh, GroupDocs.Viewer đều cung cấp giải pháp đáng tin cậy với các tùy chọn tùy chỉnh mở rộng.
 ## Điều kiện tiên quyết

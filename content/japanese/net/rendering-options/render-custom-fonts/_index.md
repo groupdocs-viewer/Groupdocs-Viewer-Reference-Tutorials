@@ -3,10 +3,12 @@ title: カスタム フォントを使用してレンダリングする
 linktitle: カスタム フォントを使用してレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してカスタム フォントでドキュメントをレンダリングする方法を学びます。視覚的なプレゼンテーションを簡単に強化します。
-type: docs
 weight: 18
 url: /ja/net/rendering-options/render-custom-fonts/
 ---
+
+# カスタム フォントを使用してレンダリングする
+
 ## 導入
 .NET 開発の分野では、GroupDocs.Viewer は、さまざまな形式のドキュメントをレンダリングするための強力なソリューションを提供します。その多くの機能の中でも、GroupDocs.Viewer はカスタム フォントを使用したドキュメントのレンダリングを可能にし、アプリケーションにパーソナライゼーションと柔軟性のレイヤーを追加します。
 ## 前提条件

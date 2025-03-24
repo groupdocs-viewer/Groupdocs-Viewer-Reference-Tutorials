@@ -3,10 +3,12 @@ title: Obtener nombres de hojas de trabajo
 linktitle: Obtener nombres de hojas de trabajo
 second_title: API GroupDocs.Viewer .NET
 description: Explore la magia de GroupDocs.Viewer para .NET integre perfectamente la visualización de documentos en sus aplicaciones. ¡Pruebe la prueba gratuita ahora!
-type: docs
 weight: 11
 url: /es/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Obtener nombres de hojas de trabajo
+
 ## Introducción
 ¡Bienvenido al fascinante mundo de GroupDocs.Viewer para .NET! Si es un desarrollador o un entusiasta interesado en explorar potentes capacidades de visualización de documentos dentro de sus aplicaciones .NET, está de enhorabuena. En esta guía completa, profundizaremos en las complejidades de recuperar nombres de hojas de trabajo usando GroupDocs.Viewer. ¡Abróchate el cinturón y embárcate en este emocionante viaje!
 ## Requisitos previos
@@ -63,4 +65,4 @@ Recorra las páginas recuperadas e imprima el nombre de cada hoja de trabajo en 
 ### ¿Puedo obtener una licencia temporal?
  ¡Ciertamente! Visita[este enlace](https://purchase.groupdocs.com/temporary-license/) para obtener su licencia temporal.
 ### ¿Hay recursos de documentación detallada disponibles?
- ¡Absolutamente! Revisar la[documentación oficial](https://reference.groupdocs.com/viewer/net/) para obtener información detallada y guías.
+ ¡Absolutamente! Revisar la[documentación oficial](https://tutorials.groupdocs.com/viewer/net/) para obtener información detallada y guías.

@@ -3,10 +3,12 @@ title: قم بإلغاء العرض باستخدام رمز الإلغاء
 linktitle: قم بإلغاء العرض باستخدام رمز الإلغاء
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج Groupdocs.Viewer لـ .NET بسلاسة في مشاريع .NET الخاصة بك لعرض المستندات بكفاءة.
-type: docs
 weight: 11
 url: /ar/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# قم بإلغاء العرض باستخدام رمز الإلغاء
+
 ## مقدمة
 يعد Groupdocs.Viewer for .NET أداة قوية مصممة لتبسيط عرض المستندات ومعالجتها داخل تطبيقات .NET. سواء كنت تتعامل مع ملفات PDF، أو مستندات Microsoft Office، أو التنسيقات الشائعة الأخرى، توفر هذه المكتبة وظائف قوية لدمج إمكانات عرض المستندات بسلاسة في مشاريع .NET الخاصة بك.
 ## المتطلبات الأساسية

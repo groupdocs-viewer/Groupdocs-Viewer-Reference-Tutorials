@@ -3,10 +3,12 @@ title: Speciális betöltési beállítások
 linktitle: Speciális betöltési beállítások
 second_title: GroupDocs.Viewer .NET API
 description: Bővítse .NET-alkalmazásait a GroupDocs.Viewer for .NET oktatóanyaggal. Ismerje meg a fájltípusok megadását, a kódolások kezelését, a jelszóval védett dokumentumok betöltését stb.
-type: docs
 weight: 21
 url: /hu/net/advanced-loading/
 ---
+
+# Speciális betöltési beállítások
+
 ## Bevezetés
 
 A .NET-alkalmazások fejlesztése terén a hatékony dokumentummegtekintési képességek integrálása a legfontosabb. A GroupDocs.Viewer for .NET átfogó megoldásként tűnik ki, és számtalan funkciót kínál a dokumentumok megjelenítésének egyszerűsítésére. Ez a cikk válogatott útmutatóként szolgál a speciális betöltési beállításokkal kapcsolatos oktatóanyagokhoz, lehetővé téve a fejlesztők számára, hogy kiaknázzák a GroupDocs.Viewer for .NET-hez való teljes potenciálját.

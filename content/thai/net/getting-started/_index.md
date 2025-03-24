@@ -3,10 +3,12 @@ title: เริ่มต้นใช้งาน
 linktitle: เริ่มต้นใช้งาน
 second_title: GroupDocs.Viewer .NET API
 description: ค้นพบบทช่วยสอนทีละขั้นตอนสำหรับการผสานรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชันของคุณได้อย่างราบรื่น เรียนรู้การตั้งค่าใบอนุญาตและปรับแต่งรูปลักษณ์ของผู้ดู
-type: docs
 weight: 26
 url: /th/net/getting-started/
 ---
+
+# เริ่มต้นใช้งาน
+
 
 ## การแนะนำ
 

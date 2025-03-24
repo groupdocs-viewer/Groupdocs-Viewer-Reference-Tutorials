@@ -3,10 +3,12 @@ title: Kết xuất bằng tài nguyên nhúng hoặc bên ngoài
 linktitle: Kết xuất bằng tài nguyên nhúng hoặc bên ngoài
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao khả năng xem tài liệu .NET bằng GroupDocs.Viewer để hiển thị liền mạch. Hãy làm theo hướng dẫn của chúng tôi để tích hợp hiệu quả và mang lại trải nghiệm người dùng vượt trội.
-type: docs
 weight: 12
 url: /vi/net/rendering-documents-html/render-html-resources/
 ---
+
+# Kết xuất bằng tài nguyên nhúng hoặc bên ngoài
+
 ## Giới thiệu
 
 Trong thế giới phát triển .NET, việc xem tài liệu hiệu quả là một khía cạnh quan trọng của nhiều ứng dụng. GroupDocs.Viewer dành cho .NET cung cấp giải pháp mạnh mẽ để hiển thị tài liệu có tài nguyên được nhúng hoặc bên ngoài. Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Viewer để hiển thị tài liệu một cách liền mạch, chia nhỏ từng bước cho rõ ràng và dễ hiểu.

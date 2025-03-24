@@ -3,10 +3,12 @@ title: Schakel gelaagde weergave in PDF in
 linktitle: Schakel gelaagde weergave in PDF in
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u gelaagde weergave in PDF-documenten kunt inschakelen met GroupDocs.Viewer voor .NET. Verbeter moeiteloos de kijkervaring van documenten.
-type: docs
 weight: 15
 url: /nl/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Schakel gelaagde weergave in PDF in
+
 ## Invoering
 In deze zelfstudie verdiepen we ons in het proces van het inschakelen van gelaagde weergave in PDF-documenten met behulp van GroupDocs.Viewer voor .NET. Gelaagde weergave maakt een verbeterde weergave en manipulatie van documenten mogelijk, waardoor gebruikers een meer interactieve kijkervaring krijgen.
 ## Vereisten

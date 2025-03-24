@@ -3,10 +3,12 @@ title: 渲染隱藏頁面
 linktitle: 渲染隱藏頁面
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 增強您的 .NET 應用程序，以實現無縫文件呈現。按照我們的逐步指南輕鬆渲染隱藏頁面。
-type: docs
 weight: 15
 url: /zh-hant/net/rendering-options/render-hidden-pages/
 ---
+
+# 渲染隱藏頁面
+
 ## 介紹
 在 .NET 開發領域，有效管理和顯示文件至關重要。無論是內部使用、客戶演示還是 Web 應用程序，都必須能夠無縫查看各種文件格式。這就是 GroupDocs.Viewer for .NET 發揮作用的地方。憑藉其強大的功能和直覺的介面，GroupDocs.Viewer 簡化了在 .NET 應用程式中呈現文件的過程。
 ## 先決條件

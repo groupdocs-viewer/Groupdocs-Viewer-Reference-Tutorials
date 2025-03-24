@@ -3,10 +3,12 @@ title: Merender Dokumen Pemrosesan Kata
 linktitle: Merender Dokumen Pemrosesan Kata
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender perubahan terlacak secara efisien dalam dokumen pemrosesan Word menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan keterampilan manajemen dokumen Anda.
-type: docs
 weight: 36
 url: /id/net/rendering-word-processing-documents/
 ---
+
+# Merender Dokumen Pemrosesan Kata
+
 
 ## Perkenalan
 

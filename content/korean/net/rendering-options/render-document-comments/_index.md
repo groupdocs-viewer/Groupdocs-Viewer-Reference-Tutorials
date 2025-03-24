@@ -3,10 +3,12 @@ title: 주석이 포함된 문서 렌더링
 linktitle: 주석이 포함된 문서 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 주석이 포함된 문서를 렌더링하는 방법을 알아보세요. 원활한 통합을 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 13
 url: /ko/net/rendering-options/render-document-comments/
 ---
+
+# 주석이 포함된 문서 렌더링
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 문서 렌더링 기능을 .NET 응용 프로그램에 원활하게 통합할 수 있게 해주는 강력한 라이브러리입니다. Word 문서, Excel 스프레드시트, PowerPoint 프리젠테이션, PDF 파일 또는 기타 형식을 표시해야 하는 경우 GroupDocs.Viewer는 간단한 솔루션을 제공합니다.
 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 주석이 포함된 문서를 렌더링하는 방법에 중점을 둡니다. 전제 조건, 네임스페이스 가져오기를 안내하고 주석이 포함된 문서를 렌더링하는 단계별 가이드를 제공하여 각 개념을 철저하게 이해할 수 있도록 돕습니다.

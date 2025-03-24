@@ -3,10 +3,12 @@ title: Nonaktifkan Pengelompokan Karakter dalam PDF
 linktitle: Nonaktifkan Pengelompokan Karakter dalam PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menonaktifkan pengelompokan karakter dalam PDF menggunakan GroupDocs.Viewer untuk .NET. Ikuti tutorial langkah demi langkah kami untuk rendering dokumen yang lancar.
-type: docs
 weight: 11
 url: /id/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Nonaktifkan Pengelompokan Karakter dalam PDF
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, menangani tampilan dokumen terkadang menjadi sebuah tantangan, terutama ketika berhadapan dengan format seperti PDF. Namun, dengan alat dan pengetahuan yang tepat, Anda dapat menyederhanakan proses ini secara efisien. Salah satu alat yang bisa membantu adalah GroupDocs.Viewer untuk .NET. Pustaka canggih ini memberdayakan pengembang untuk merender dan menampilkan berbagai jenis dokumen dengan lancar dalam aplikasi .NET mereka.
 ## Prasyarat

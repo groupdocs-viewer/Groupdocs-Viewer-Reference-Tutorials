@@ -3,10 +3,12 @@ title: 将档案渲染到单个或多个 HTML 页面
 linktitle: 将档案渲染到单个或多个 HTML 页面
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 将存档呈现为 HTML 页面。轻松地将文档查看功能集成到您的 .NET 应用程序中。
-type: docs
 weight: 12
 url: /zh/net/rendering-archive-files/render-archives-html/
 ---
+
+# 将档案渲染到单个或多个 HTML 页面
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个功能强大的文档呈现库，允许开发人员轻松地将文档查看功能集成到他们的 .NET 应用程序中。无论您需要将存档呈现为单个还是多个 HTML 页面，本教程都将逐步指导您完成该过程。
 ## 先决条件

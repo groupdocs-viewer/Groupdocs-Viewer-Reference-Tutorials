@@ -3,10 +3,12 @@ title: Renderização de imagem
 linktitle: Renderização de imagem
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriais abrangentes sobre renderização de vários formatos de imagem usando GroupDocs.Viewer for .NET. Da IA ao WMF, aprenda exemplos de integração e codificação perfeitas.
-type: docs
 weight: 28
 url: /pt/net/image-rendering/
 ---
+
+# Renderização de imagem
+
 
 ## Introdução
 

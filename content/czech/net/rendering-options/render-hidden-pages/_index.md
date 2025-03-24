@@ -3,10 +3,12 @@ title: Vykreslit skryté stránky
 linktitle: Vykreslit skryté stránky
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete svou aplikaci .NET pomocí GroupDocs.Viewer pro bezproblémové vykreslování dokumentů. Postupujte podle našeho podrobného průvodce a vykreslete skryté stránky bez námahy.
-type: docs
 weight: 15
 url: /cs/net/rendering-options/render-hidden-pages/
 ---
+
+# Vykreslit skryté stránky
+
 ## Úvod
 Ve světě vývoje .NET je efektivní správa a zobrazování dokumentů zásadní. Ať už se jedná o interní použití, klientské prezentace nebo webové aplikace, možnost bezproblémového prohlížení různých formátů dokumentů je nutností. Zde vstupuje do hry GroupDocs.Viewer for .NET. Se svými výkonnými funkcemi a intuitivním rozhraním GroupDocs.Viewer zjednodušuje proces vykreslování dokumentů ve vašich aplikacích .NET.
 ## Předpoklady

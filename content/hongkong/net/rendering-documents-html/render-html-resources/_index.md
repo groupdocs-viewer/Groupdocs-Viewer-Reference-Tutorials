@@ -3,10 +3,12 @@ title: 使用嵌入式或外部資源進行渲染
 linktitle: 使用嵌入式或外部資源進行渲染
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 增強 .NET 文件檢視以實現無縫渲染。按照我們的教學進行高效整合和卓越的用戶體驗。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-documents-html/render-html-resources/
 ---
+
+# 使用嵌入式或外部資源進行渲染
+
 ## 介紹
 
 在 .NET 開發領域，高效的文件檢視是許多應用程式的重要面向。 GroupDocs.Viewer for .NET 提供了一個強大的解決方案，用於呈現具有嵌入或外部資源的文件。在本教程中，我們將探索如何利用 GroupDocs.Viewer 無縫呈現文檔，並分解每個步驟以使其清晰易懂。

@@ -3,10 +3,12 @@ title: Rename Email Fields During Rendering
 linktitle: Rename Email Fields During Rendering
 second_title: GroupDocs.Viewer .NET API
 description: Enhance document viewing experience with GroupDocs.Viewer for .NET. Render and customize emails seamlessly.
-type: docs
 weight: 12
 url: /net/rendering-email-messages/rename-email-fields/
 ---
+
+# Rename Email Fields During Rendering
+
 ## Introduction
 
 In today's digital age, managing and viewing documents efficiently is paramount for businesses and individuals alike. Whether it's contracts, reports, or emails, having the ability to navigate through these documents seamlessly can greatly enhance productivity. This is where GroupDocs.Viewer for .NET comes into play. This powerful library allows developers to integrate document viewing capabilities directly into their .NET applications, offering a wide range of features for rendering various document formats.

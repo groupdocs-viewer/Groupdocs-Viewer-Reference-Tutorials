@@ -3,10 +3,12 @@ title: Definir licença medida
 linktitle: Definir licença medida
 second_title: API GroupDocs.Viewer .NET
 description: Aprimore seus aplicativos .NET com GroupDocs.Viewer para visualização perfeita de documentos. Integre facilmente funcionalidades de renderização de documentos em seus projetos.
-type: docs
 weight: 12
 url: /pt/net/getting-started/set-metered-license/
 ---
+
+# Definir licença medida
+
 ## Introdução
 No mundo do desenvolvimento .NET, incorporar recursos avançados de visualização de documentos em seus aplicativos é essencial para aprimorar a experiência e a funcionalidade do usuário. GroupDocs.Viewer for .NET oferece uma solução robusta para integrar perfeitamente funcionalidades de visualização de documentos em seus projetos .NET. Esteja você trabalhando com PDFs, documentos do Microsoft Office ou vários formatos de imagem, o GroupDocs.Viewer simplifica o processo de renderização e exibição desses documentos em seus aplicativos.
 ## Pré-requisitos
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Concluindo, GroupDocs.Viewer for .NET fornece uma solução abrangente para incorporar funcionalidades de visualização de documentos em seus aplicativos .NET. Seguindo as etapas descritas, você pode configurar facilmente uma licença limitada e começar a aproveitar os recursos do GroupDocs.Viewer em seus projetos.
 ## Perguntas frequentes
 ### P: Onde posso encontrar a documentação do GroupDocs.Viewer for .NET?
- Você pode encontrar a documentação[aqui](https://reference.groupdocs.com/viewer/net/).
+ Você pode encontrar a documentação[aqui](https://tutorials.groupdocs.com/viewer/net/).
 ### P: Existe uma avaliação gratuita disponível para GroupDocs.Viewer for .NET?
  Sim, você pode acessar o teste gratuito[aqui](https://releases.groupdocs.com/).
 ### P: Como posso obter licenças temporárias para fins de teste?

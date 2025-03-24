@@ -3,10 +3,12 @@ title: Szöveg túlcsordulás beállítása a cellákban
 linktitle: Szöveg túlcsordulás beállítása a cellákban
 second_title: GroupDocs.Viewer .NET API
 description: A GroupDocs.Viewer segítségével könnyedén kezelheti a szövegtúlcsordulást .NET dokumentumokban. Növelje az olvashatóságot és a felhasználói élményt. Töltse le most ingyenes próbaverzióját.
-type: docs
 weight: 10
 url: /hu/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Szöveg túlcsordulás beállítása a cellákban
+
 ## Bevezetés
 A .NET-fejlesztés dinamikus világában a cellákban található szövegtúlcsordulás kezelése kulcsfontosságú a tetszetős és olvasható dokumentumok létrehozásához. A GroupDocs.Viewer for .NET átfogó eszközkészlettel ruházza fel a fejlesztőket a táblázatos dokumentumok szövegtúlcsordulásainak zökkenőmentes kezelésére. Ez az oktatóanyag végigvezeti a cellákban lévő szövegtúlcsordulás beállításának folyamatán a GroupDocs.Viewer for .NET használatával.
 ## Előfeltételek
@@ -57,7 +59,7 @@ Sikeresen beállította a szöveg túlcsordulást a cellákban a GroupDocs.Viewe
 Összefoglalva, a GroupDocs.Viewer for .NET leegyszerűsíti a cellákban előforduló szövegtúlcsordulás kezelését, biztosítva, hogy a dokumentumok ne csak funkcionálisak, hanem vizuálisan is csiszoltak legyenek. Ezekkel a lépésekkel könnyedén javíthatja a felhasználói élményt és a táblázatkezelő dokumentumok olvashatóságát.
 ## GYIK
 ### 1. Használhatom a GroupDocs.Viewer for .NET programot bármilyen típusú dokumentumhoz?
- Igen, a GroupDocs.Viewer for .NET a dokumentumformátumok széles skáláját támogatja, beleértve a táblázatokat, prezentációkat és egyebeket. Utal[dokumentáció](https://reference.groupdocs.com/viewer/net/) a teljes listához.
+ Igen, a GroupDocs.Viewer for .NET a dokumentumformátumok széles skáláját támogatja, beleértve a táblázatokat, prezentációkat és egyebeket. Utal[dokumentáció](https://tutorials.groupdocs.com/viewer/net/) a teljes listához.
 ### 2. Van-e ingyenes próbaverzió?
  Igen, felfedezheti a GroupDocs.Viewer for .NET lehetőségeit, ha letölti a[ingyenes próbaverzió](https://releases.groupdocs.com/).
 ### 3. Hogyan kaphatok támogatást bármilyen probléma esetén?

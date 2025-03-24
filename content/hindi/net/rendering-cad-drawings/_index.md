@@ -3,10 +3,12 @@ title: सीएडी चित्र प्रस्तुत करना
 linktitle: सीएडी चित्र प्रस्तुत करना
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके CAD चित्र प्रस्तुत करने के लिए ट्यूटोरियल खोजें। निर्बाध CAD फ़ाइल प्रबंधन के साथ .NET अनुप्रयोगों को बेहतर बनाना सीखें।
-type: docs
 weight: 25
 url: /hi/net/rendering-cad-drawings/
 ---
+
+# सीएडी चित्र प्रस्तुत करना
+
 
 ## परिचय
 

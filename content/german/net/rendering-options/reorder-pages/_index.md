@@ -3,10 +3,12 @@ title: Seiten im Dokument neu anordnen
 linktitle: Seiten im Dokument neu anordnen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie Seiten in einem Dokument mit GroupDocs.Viewer für .NET neu anordnen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentenverwaltung.
-type: docs
 weight: 19
 url: /de/net/rendering-options/reorder-pages/
 ---
+
+# Seiten im Dokument neu anordnen
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist die effiziente Verwaltung und Bearbeitung von Dokumenten von entscheidender Bedeutung. GroupDocs.Viewer für .NET bietet eine leistungsstarke Lösung zum Anzeigen verschiedener Dokumentformate in Ihren Anwendungen. Eine der wesentlichen Aufgaben, mit denen Entwickler häufig konfrontiert werden, ist die Neuordnung der Seiten innerhalb eines Dokuments. Unabhängig davon, ob Sie mit PDFs, Word-Dokumenten oder anderen Formaten arbeiten, kann die Möglichkeit, Seiten neu anzuordnen, Arbeitsabläufe optimieren und die Benutzererfahrung verbessern. In diesem Tutorial befassen wir uns mit der Neuordnung von Seiten in einem Dokument mithilfe von GroupDocs.Viewer für .NET.
 ## Voraussetzungen

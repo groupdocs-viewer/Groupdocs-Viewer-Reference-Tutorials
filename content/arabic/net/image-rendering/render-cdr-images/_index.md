@@ -3,10 +3,12 @@ title: تقديم صور CDR
 linktitle: تقديم صور CDR
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور CDR إلى HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لـ .NET. قم بتحويل ملفات CorelDRAW بسهولة باستخدام هذا البرنامج التعليمي.
-type: docs
 weight: 12
 url: /ar/net/image-rendering/render-cdr-images/
 ---
+
+# تقديم صور CDR
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنرشدك خلال عملية عرض صور CDR (CorelDRAW) باستخدام GroupDocs.Viewer لـ .NET. CDR هو تنسيق ملف يرتبط أساسًا بـ CorelDRAW، وهو محرر رسومات متجهة. باستخدام GroupDocs.Viewer، يمكنك بسهولة تحويل ملفات CDR إلى تنسيقات مختلفة مثل HTML وJPG وPNG وPDF.
 ## المتطلبات الأساسية

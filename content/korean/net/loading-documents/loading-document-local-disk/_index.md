@@ -3,10 +3,12 @@ title: 로컬 디스크에서 문서 로드
 linktitle: 로컬 디스크에서 문서 로드
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 Groupdocs.Viewer를 사용하여 로컬 디스크에서 문서를 원활하게 렌더링하는 방법을 알아보세요. 효율적인 문서로 .NET 애플리케이션을 강화하세요.
-type: docs
 weight: 10
 url: /ko/net/loading-documents/loading-document-local-disk/
 ---
+
+# 로컬 디스크에서 문서 로드
+
 ## 소개
 오늘날의 디지털 시대에는 다양한 애플리케이션에 효율적인 문서 렌더링이 필수적입니다. .NET용 Groupdocs.Viewer는 로컬 디스크에서 직접 문서를 렌더링하기 위한 강력한 솔루션을 제공합니다. 이 자습서에서는 .NET용 Groupdocs.Viewer를 사용하여 로컬 디스크에서 문서를 로드하는 과정을 안내합니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 단계별 가이드는 문서 렌더링을 .NET 애플리케이션에 원활하게 통합하는 데 도움이 될 것입니다.
 ## 전제조건

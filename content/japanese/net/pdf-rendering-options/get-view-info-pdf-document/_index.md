@@ -3,10 +3,12 @@ title: PDF ドキュメントの表示情報を取得する
 linktitle: PDF ドキュメントの表示情報を取得する
 second_title: GroupDocs.Viewer .NET API
 description: この包括的なチュートリアルでは、GroupDocs.Viewer for .NET を使用して PDF ドキュメントからビュー情報を抽出する方法を学びます。
-type: docs
 weight: 16
 url: /ja/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# PDF ドキュメントの表示情報を取得する
+
 ## 導入
 GroupDocs.Viewer for .NET は、.NET アプリケーション内でのドキュメントの表示を効率化するように設計された強力なツールです。 PDF、Word ドキュメント、Excel スプレッドシート、PowerPoint プレゼンテーションのいずれを扱う場合でも、このライブラリを使用すると、さまざまなファイル形式のレンダリングと操作のプロセスが簡素化されます。このチュートリアルでは、特に PDF ドキュメントからビュー情報を抽出するために、GroupDocs.Viewer の機能を活用することに焦点を当てます。
 ## 前提条件

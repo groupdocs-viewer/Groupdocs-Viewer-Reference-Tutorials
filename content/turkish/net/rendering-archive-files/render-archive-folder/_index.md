@@ -3,10 +3,12 @@ title: Arşiv Klasörünü Oluştur
 linktitle: Arşiv Klasörünü Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: Verimli belge oluşturma ve görüntüleme yetenekleri için GroupDocs.Viewer for .NET'i .NET uygulamalarınıza sorunsuz bir şekilde entegre edin.
-type: docs
 weight: 11
 url: /tr/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Arşiv Klasörünü Oluştur
+
 ## giriiş
 Günümüzün dijital çağında belgelere sorunsuz bir şekilde erişmek ve görüntülemek, hem işletmeler hem de bireyler için çok önemlidir. Neyse ki, teknolojinin ilerlemesiyle birlikte geliştiricilerin elinde artık belge görüntüleme yeteneklerini zahmetsizce uygulamalarına entegre edebilecek güçlü araçlar var. Böyle bir araç, geliştiricilerin .NET uygulamalarında çeşitli belge formatlarını oluşturmasına olanak tanıyan çok yönlü bir kitaplık olan GroupDocs.Viewer for .NET'tir.
 ## Önkoşullar

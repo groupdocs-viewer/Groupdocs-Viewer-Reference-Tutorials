@@ -3,10 +3,12 @@ title: Minify Rendered HTML Document
 linktitle: Minify Rendered HTML Document
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to seamlessly render HTML documents in .NET applications using GroupDocs.Viewer for .NET.
-type: docs
 weight: 11
 url: /net/rendering-documents-html/minify-html/
 ---
+
+# Minify Rendered HTML Document
+
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool that enables developers to seamlessly render HTML documents within their .NET applications. With its intuitive API and robust functionality, developers can easily integrate document viewing capabilities into their applications, enhancing user experience and productivity.
 ## Prerequisites

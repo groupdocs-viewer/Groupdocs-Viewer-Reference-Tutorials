@@ -3,10 +3,12 @@ title: Ενεργοποίηση Font Hinting σε PDF
 linktitle: Ενεργοποίηση Font Hinting σε PDF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να ενεργοποιείτε την υπόδειξη γραμματοσειράς σε έγγραφα PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε το βήμα προς βήμα σεμινάριο μας για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 14
 url: /el/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Ενεργοποίηση Font Hinting σε PDF
+
 ## Εισαγωγή
 Το GroupDocs.Viewer για .NET είναι ένα ισχυρό εργαλείο για την προβολή και το χειρισμό διαφόρων μορφών εγγράφων σε εφαρμογές .NET. Είτε εργάζεστε με αρχεία PDF, έγγραφα του Microsoft Office, εικόνες ή άλλες μορφές, το GroupDocs.Viewer παρέχει μια απρόσκοπτη λύση για απόδοση και αλληλεπίδραση με αυτά τα αρχεία.
 ## Προαπαιτούμενα

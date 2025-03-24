@@ -3,10 +3,12 @@ title: Rácsvonalak renderelése
 linktitle: Rácsvonalak renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Javítsa a dokumentumok megjelenítését a GroupDocs.Viewer for .NET segítségével. A rácsvonalakat könnyedén rendereli. Próbálja ki most az ingyenes próbaverziót! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /hu/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Rácsvonalak renderelése
+
 ## Bevezetés
 Üdvözöljük ebben a lépésről lépésre szóló útmutatóban a GroupDocs.Viewer for .NET használatáról a rácsvonalak megjelenítéséhez a dokumentumokban. Akár tapasztalt fejlesztő, akár újonc a .NET keretrendszerben, ez az oktatóanyag részletes magyarázatokkal és könnyen követhető példákkal végigvezeti a folyamaton.
 ## Előfeltételek
@@ -66,6 +68,6 @@ Ebben az oktatóanyagban megvizsgáltuk a rácsvonalak dokumentumokban való meg
 ### Vannak ideiglenes licencek a GroupDocs.Viewer for .NET számára?
  Igen, megszerezheti a[ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) a GroupDocs.Viewer for .NET számára.
 ### Megtalálhatom a GroupDocs.Viewer for .NET részletes dokumentációját?
- Teljesen! Utal[hivatalos dokumentáció](https://reference.groupdocs.com/viewer/net/) a GroupDocs.Viewer for .NET használatával kapcsolatos részletes információkért.
+ Teljesen! Utal[hivatalos dokumentáció](https://tutorials.groupdocs.com/viewer/net/) a GroupDocs.Viewer for .NET használatával kapcsolatos részletes információkért.
 ### Honnan tölthetem le a GroupDocs.Viewer .NET-hez legújabb verzióját?
  Töltse le a könyvtárat a[hivatalos megjelenési oldal](https://releases.groupdocs.com/viewer/net/).

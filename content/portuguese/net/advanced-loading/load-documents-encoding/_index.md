@@ -3,10 +3,12 @@ title: Carregar documentos com codificação específica
 linktitle: Carregar documentos com codificação específica
 second_title: API GroupDocs.Viewer .NET
 description: Aprimore seus aplicativos .NET com visualização perfeita de documentos usando GroupDocs.Viewer for .NET. Carregue facilmente documentos com codificação específica e personalize a experiência de visualização.
-type: docs
 weight: 11
 url: /pt/net/advanced-loading/load-documents-encoding/
 ---
+
+# Carregar documentos com codificação específica
+
 ## Introdução
 Você está procurando uma ferramenta poderosa para visualizar documentos perfeitamente em seus aplicativos .NET? Não procure mais, GroupDocs.Viewer para .NET! Esta biblioteca robusta oferece aos desenvolvedores a capacidade de exibir sem esforço vários formatos de documentos diretamente em seus aplicativos, oferecendo uma experiência de visualização intuitiva e fácil de usar.
 ## Pré-requisitos

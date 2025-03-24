@@ -3,10 +3,12 @@ title: 渲染 AI 图像
 linktitle: 渲染 AI 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 .NET 应用程序中轻松渲染 AI 图像。请按照我们的分步教程进行无缝集成。
-type: docs
 weight: 10
 url: /zh/net/image-rendering/render-ai-images/
 ---
+
+# 渲染 AI 图像
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个功能强大的库，使开发人员能够在其 .NET 应用程序中轻松呈现各种文档格式。无论您需要显示 AI 图像、PDF 还是其他文档类型，GroupDocs.Viewer 都能简化流程，提供多种输出格式，以便无缝集成到您的项目中。本教程将指导您使用 GroupDocs.Viewer for .NET 逐步渲染 AI 图像。
 ## 先决条件

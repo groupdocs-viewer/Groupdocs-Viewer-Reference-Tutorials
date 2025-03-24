@@ -3,10 +3,12 @@ title: Dostosuj rozmiar strony podczas renderowania wiadomości e-mail
 linktitle: Dostosuj rozmiar strony podczas renderowania wiadomości e-mail
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak dostosować rozmiar strony podczas renderowania wiadomości e-mail do formatu PDF przy użyciu programu GroupDocs.Viewer dla platformy .NET. Zwiększ wydajność przeglądania dokumentów.
-type: docs
 weight: 10
 url: /pl/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Dostosuj rozmiar strony podczas renderowania wiadomości e-mail
+
 ## Wstęp
 W dziedzinie programowania .NET GroupDocs.Viewer zapewnia kompleksowe rozwiązanie do renderowania różnych formatów dokumentów, w tym wiadomości e-mail. W tym samouczku skupiono się na dostosowywaniu rozmiaru strony podczas renderowania wiadomości e-mail do formatu PDF przy użyciu programu GroupDocs.Viewer dla platformy .NET. Wykonując kroki opisane w tym przewodniku, dowiesz się, jak płynnie manipulować rozmiarem strony, aby spełnić Twoje specyficzne wymagania.
 ## Warunki wstępne

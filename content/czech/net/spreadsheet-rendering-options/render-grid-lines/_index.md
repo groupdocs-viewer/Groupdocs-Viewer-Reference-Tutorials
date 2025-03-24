@@ -3,10 +3,12 @@ title: Vykreslit čáry mřížky
 linktitle: Vykreslit čáry mřížky
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete vizualizaci dokumentů pomocí GroupDocs.Viewer pro .NET. Vykreslete čáry mřížky bez námahy. Vyzkoušejte bezplatnou zkušební verzi nyní! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /cs/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Vykreslit čáry mřížky
+
 ## Úvod
 Vítejte v tomto podrobném průvodci používáním GroupDocs.Viewer pro .NET k vykreslování čar mřížky ve vašich dokumentech. Ať už jste ostřílený vývojář nebo nováček v rámci .NET, tento tutoriál vás provede celým procesem s podrobnými vysvětleními a snadno pochopitelnými příklady.
 ## Předpoklady
@@ -66,6 +68,6 @@ V tomto tutoriálu jsme prozkoumali proces vykreslování čar mřížky v dokum
 ### Jsou k dispozici dočasné licence pro GroupDocs.Viewer for .NET?
  Ano, můžete získat a[dočasná licence](https://purchase.groupdocs.com/temporary-license/) pro GroupDocs.Viewer pro .NET.
 ### Mohu najít podrobnou dokumentaci pro GroupDocs.Viewer pro .NET?
- Absolutně! Odkazovat na[oficiální dokumentace](https://reference.groupdocs.com/viewer/net/) pro podrobné informace o používání GroupDocs.Viewer pro .NET.
+ Absolutně! Odkazovat na[oficiální dokumentace](https://tutorials.groupdocs.com/viewer/net/) pro podrobné informace o používání GroupDocs.Viewer pro .NET.
 ### Kde si mohu stáhnout nejnovější verzi GroupDocs.Viewer pro .NET?
  Stáhněte si knihovnu z[oficiální stránka vydání](https://releases.groupdocs.com/viewer/net/).

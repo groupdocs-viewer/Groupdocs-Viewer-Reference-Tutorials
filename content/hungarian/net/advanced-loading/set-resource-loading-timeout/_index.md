@@ -3,10 +3,12 @@ title: Erőforrás betöltési időtúllépés beállítása (speciális)
 linktitle: Erőforrás betöltési időtúllépés beállítása (speciális)
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan konfigurálhatja hatékonyan az erőforrás-betöltési időtúllépéseket a GroupDocs.Viewer for .NET alkalmazásban. Mesterdokumentum renderelés precízen és stabilan.
-type: docs
 weight: 13
 url: /hu/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Erőforrás betöltési időtúllépés beállítása (speciális)
+
 ## Bevezetés
 .NET fejlesztés területén a GroupDocs.Viewer hatékony eszközkészletet biztosít a dokumentumok és képek precíz és hatékony megjelenítéséhez. Képességeinek kiaknázásához meg kell érteni annak bonyolultságát, beleértve az erőforrás-betöltési időtúllépések beállítását. Ebben az oktatóanyagban az erőforrás-betöltési időtúllépések konfigurálásának folyamatát mutatjuk be a GroupDocs.Viewer for .NET-ben.
 ## Előfeltételek

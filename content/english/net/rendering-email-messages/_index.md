@@ -3,10 +3,12 @@ title: Rendering Email Messages
 linktitle: Rendering Email Messages
 second_title: GroupDocs.Viewer .NET API
 description: Discover how GroupDocs.Viewer for .NET simplifies rendering email messages into PDFs. Learn to adjust page size, set DateTime format, and rename fields efficiently.
-type: docs
 weight: 27
 url: /net/rendering-email-messages/
 ---
+
+# Rendering Email Messages
+
 ## Introduction
 
 In the realm of document rendering, GroupDocs.Viewer for .NET emerges as a pivotal tool, offering a seamless pathway to manipulate email messages within your applications. This article delves into the intricacies of rendering email messages using GroupDocs.Viewer for .NET, presenting a series of tutorials designed to empower developers with the knowledge to optimize document viewing experiences.

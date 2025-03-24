@@ -3,10 +3,12 @@ title: Renderelje le a RAR archívumot
 linktitle: Renderelje le a RAR archívumot
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet RAR archívumokat HTML, JPG, PNG vagy PDF formátumba renderelni a GroupDocs.Viewer for .NET segítségével. Könnyen megtekintheti és megoszthatja a RAR archívum tartalmát.
-type: docs
 weight: 13
 url: /hu/net/rendering-archive-files/render-rar/
 ---
+
+# Renderelje le a RAR archívumot
+
 ## Bevezetés
 A RAR archívumok népszerű formátumok több fájl és mappa egyetlen tárolóba való tömörítésére és tárolására. A RAR-archívumok különféle formátumokba, például HTML-, JPG-, PNG- vagy PDF-formátumba való renderelése elengedhetetlen lehet ezen archívumok tartalmának megtekintéséhez vagy megosztásához. Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet RAR-archívumokat előállítani a GroupDocs.Viewer for .NET segítségével.
 ## Előfeltételek

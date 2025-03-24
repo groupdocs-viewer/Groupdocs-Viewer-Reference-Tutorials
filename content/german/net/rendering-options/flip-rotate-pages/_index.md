@@ -3,16 +3,18 @@ title: Seiten spiegeln und drehen
 linktitle: Seiten spiegeln und drehen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie Groupdocs.Viewer für .NET in Ihre Anwendungen integrieren, um ein nahtloses Rendern, Spiegeln und Drehen von Dokumenten zu ermöglichen.
-type: docs
 weight: 12
 url: /de/net/rendering-options/flip-rotate-pages/
 ---
+
+# Seiten spiegeln und drehen
+
 ## Einführung
 In diesem Tutorial befassen wir uns mit den Funktionen von Groupdocs.Viewer für .NET und konzentrieren uns dabei insbesondere auf das Umblättern und Drehen von Seiten. Groupdocs.Viewer für .NET ist ein leistungsstarkes Tool zum Rendern von Dokumenten in verschiedenen Formaten in .NET-Anwendungen. Unabhängig davon, ob Sie ein Dokumentenverwaltungssystem entwickeln oder Funktionen zur Dokumentenanzeige in Ihre Software integrieren müssen, bietet Groupdocs.Viewer für .NET eine effiziente Lösung.
 ## Voraussetzungen
 Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 ### Groupdocs.Viewer für .NET installieren
- Um Groupdocs.Viewer für .NET verwenden zu können, müssen Sie das Paket über den NuGet Package Manager installieren. Eine ausführliche Installationsanleitung finden Sie im[Dokumentation](https://reference.groupdocs.com/viewer/net/).
+ Um Groupdocs.Viewer für .NET verwenden zu können, müssen Sie das Paket über den NuGet Package Manager installieren. Eine ausführliche Installationsanleitung finden Sie im[Dokumentation](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Namespaces importieren
 Stellen Sie sicher, dass Sie die erforderlichen Namespaces in Ihr Projekt importiert haben, um Groupdocs.Viewer für .NET effektiv nutzen zu können.

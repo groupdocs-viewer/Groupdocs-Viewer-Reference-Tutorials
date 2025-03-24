@@ -3,10 +3,12 @@ title: Visio の図をレンダリングする
 linktitle: Visio の図をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: この包括的な内容で、GroupDocs.Viewer for .NET を使用して Visio Figure をレンダリングする方法を学習します。 .NET アプリケーションのドキュメント表示機能を強化します。
-type: docs
 weight: 10
 url: /ja/net/rendering-visio-documents/render-visio-figures/
 ---
+
+# Visio の図をレンダリングする
+
 ## 導入
 今日のデジタル時代では、ドキュメントのレンダリングはさまざまなアプリケーションで重要な役割を果たしています。 Web サイトにドキュメントを表示する場合でも、ドキュメントを別の形式に変換する場合でも、効率的なレンダリングが不可欠です。 GroupDocs.Viewer for .NET は、.NET アプリケーション内でドキュメントを表示および操作するための堅牢なソリューションを提供します。このチュートリアルでは、GroupDocs.Viewer for .NET を使用して Visio Figure をレンダリングする方法を詳しく説明し、プロセスを簡単な手順に分けて説明します。
 ## 前提条件

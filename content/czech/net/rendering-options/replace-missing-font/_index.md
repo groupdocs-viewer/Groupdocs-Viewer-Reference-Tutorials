@@ -3,10 +3,12 @@ title: Nahradit chybějící písmo
 linktitle: Nahradit chybějící písmo
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak nahradit chybějící písma v dokumentech .NET bez námahy pomocí GroupDocs.Viewer. Zajistěte přesné vykreslování pomocí jednoduchých kroků.
-type: docs
 weight: 20
 url: /cs/net/rendering-options/replace-missing-font/
 ---
+
+# Nahradit chybějící písmo
+
 ## Úvod
 Ve světě vývoje .NET je efektivní manipulace s dokumenty zásadní. GroupDocs.Viewer for .NET poskytuje výkonné řešení pro prohlížení různých formátů dokumentů v rámci vašich aplikací .NET. V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Viewer pro .NET k nahrazení chybějících písem v dokumentech. Ať už pracujete s PDF, PowerPoint prezentacemi nebo dokumenty Wordu, GroupDocs.Viewer zjednodušuje proces a zajišťuje, že vaše dokumenty budou vykresleny přesně, i když chybí písma.
 ## Předpoklady

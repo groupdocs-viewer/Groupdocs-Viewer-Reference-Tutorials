@@ -3,10 +3,12 @@ title: Dokumentummellékletek lekérése és mentése
 linktitle: Dokumentummellékletek lekérése és mentése
 second_title: GroupDocs.Viewer .NET API
 description: Hatékonyan kezelheti a dokumentummellékleteket a .NET-alkalmazásokon belül a GroupDocs.Viewer segítségével. A mellékleteket problémamentesen letöltheti és mentheti.
-type: docs
 weight: 12
 url: /hu/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Dokumentummellékletek lekérése és mentése
+
 ## Bevezetés
 A digitális korszakban a hatékony dokumentumkezelés kulcsfontosságú a vállalkozások és a magánszemélyek számára egyaránt. Legyen szó e-mailek kezeléséről, szerződések megtekintéséről vagy jelentések eléréséről, elengedhetetlen egy megbízható eszköz a dokumentumok megjelenítéséhez. A GroupDocs.Viewer for .NET robusztus megoldásként jelenik meg, amely lehetővé teszi a felhasználók számára, hogy könnyedén megtekintsenek és kezeljenek különféle dokumentumformátumokat közvetlenül .NET-alkalmazásaikon belül.
 ## Előfeltételek
@@ -65,6 +67,6 @@ Igen, a GroupDocs.Viewer a dokumentumformátumok széles skáláját támogatja,
 ### Hogyan szerezhetek ideiglenes licenceket a GroupDocs.Viewer for .NET számára?
  Ideiglenes jogosítványok szerezhetők be[ez a link](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találom a GroupDocs.Viewer for .NET dokumentációját?
- Átfogó dokumentáció áll rendelkezésre[itt](https://reference.groupdocs.com/viewer/net/).
+ Átfogó dokumentáció áll rendelkezésre[itt](https://tutorials.groupdocs.com/viewer/net/).
 ### Milyen támogatási lehetőségek állnak rendelkezésre a GroupDocs.Viewer for .NET számára?
  Segítséget kérhet a közösségi fórumon[itt](https://forum.groupdocs.com/c/viewer/9).

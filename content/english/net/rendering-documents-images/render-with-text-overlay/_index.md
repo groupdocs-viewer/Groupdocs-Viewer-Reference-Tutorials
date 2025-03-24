@@ -3,10 +3,12 @@ title: Render with Text Overlaid for Display
 linktitle: Render with Text Overlaid for Display
 second_title: GroupDocs.Viewer .NET API
 description: Render documents seamlessly in .NET applications with GroupDocs.Viewer, supporting various formats for enhanced user experience.
-type: docs
 weight: 13
 url: /net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Render with Text Overlaid for Display
+
 ## Introduction
 In the realm of .NET development, managing and displaying various document formats seamlessly is crucial for many applications. GroupDocs.Viewer for .NET emerges as a powerful solution to effortlessly render documents within your .NET applications. Whether it's PDFs, Word documents, Excel spreadsheets, or PowerPoint presentations, GroupDocs.Viewer simplifies the process, offering an array of features for enhanced document viewing.
 ## Prerequisites
@@ -18,7 +20,7 @@ Before delving into the integration of GroupDocs.Viewer for .NET into your proje
 3. .NET Framework: Ensure that your project targets a compatible version of the .NET Framework.
 ### GroupDocs.Viewer Installation
 1. Download GroupDocs.Viewer: Visit the [download link](https://releases.groupdocs.com/viewer/net/) to acquire the latest version of GroupDocs.Viewer for .NET.
-2. Add GroupDocs.Viewer to Your Project: Extract the downloaded files and add the necessary GroupDocs.Viewer assemblies to your project references.
+2. Add GroupDocs.Viewer to Your Project: Extract the downloaded files and add the necessary GroupDocs.Viewer assemblies to your project tutorialss.
 
 ## Import Namespaces
 To utilize GroupDocs.Viewer functionalities in your .NET application, import the required namespaces:

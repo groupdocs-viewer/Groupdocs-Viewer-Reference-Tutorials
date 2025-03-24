@@ -3,10 +3,12 @@ title: Vykreslování EMZ a EMF obrázků
 linktitle: Vykreslování EMZ a EMF obrázků
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat obrázky EMZ a EMF do různých formátů pomocí GroupDocs.Viewer pro .NET. Snadno sledovatelný tutoriál pro vývojáře.
-type: docs
 weight: 14
 url: /cs/net/image-rendering/render-emz-emf-images/
 ---
+
+# Vykreslování EMZ a EMF obrázků
+
 ## Úvod
 
 GroupDocs.Viewer for .NET je výkonné rozhraní API pro vykreslování dokumentů, které umožňuje vývojářům zobrazovat různé typy dokumentů, včetně obrázků EMZ (Enhanced Windows Metafile) a EMF (Enhanced Metafile) v jejich aplikacích .NET. V tomto tutoriálu prozkoumáme, jak vykreslit obrázky EMZ a EMF do různých formátů, jako jsou HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro .NET.
@@ -97,4 +99,4 @@ Odpověď: Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů
  Odpověď: Ano, dočasné licence je možné zakoupit[tady](https://purchase.groupdocs.com/temporary-license/).
 
 ### Otázka: Kde najdu podrobnou dokumentaci k GroupDocs.Viewer pro .NET?
- Odpověď: Můžete se podívat do dokumentace[tady](https://reference.groupdocs.com/viewer/net/)pro komplexní návod k používání API.
+ Odpověď: Můžete se podívat do dokumentace[tady](https://tutorials.groupdocs.com/viewer/net/)pro komplexní návod k používání API.

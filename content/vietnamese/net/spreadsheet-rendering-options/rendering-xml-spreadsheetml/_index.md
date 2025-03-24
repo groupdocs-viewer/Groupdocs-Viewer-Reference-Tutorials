@@ -3,10 +3,12 @@ title: Hiển thị bảng tính XML
 linktitle: Hiển thị bảng tính XML
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá khả năng hiển thị liền mạch của các tệp XML SpreadSheetML ở nhiều định dạng khác nhau bằng cách sử dụng GroupDocs.Viewer cho .NET. Dễ dàng tích hợp vào các ứng dụng của bạn.
-type: docs
 weight: 16
 url: /vi/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
+
+# Hiển thị bảng tính XML
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới GroupDocs.Viewer dành cho .NET! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách hiển thị các tệp XML SpreadSheetML một cách dễ dàng bằng cách sử dụng GroupDocs.Viewer, một thư viện .NET mạnh mẽ. Cho dù bạn là nhà phát triển dày dặn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn từng bước này sẽ giúp bạn dễ dàng tích hợp kết xuất XML SpreadSheetML vào ứng dụng của mình.
 ## Điều kiện tiên quyết
@@ -83,7 +85,7 @@ Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu, bao gồm P
 ### Tôi có thể tùy chỉnh giao diện của tài liệu được hiển thị không?
 Tuyệt đối! GroupDocs.Viewer cung cấp nhiều tùy chọn tùy chỉnh khác nhau, cho phép bạn điều chỉnh đầu ra theo nhu cầu cụ thể của mình.
 ### Tôi có thể tìm thêm sự hỗ trợ và nguồn lực ở đâu?
- Tham quan[Diễn đàn GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) để được hỗ trợ cộng đồng và khám phá[tài liệu](https://reference.groupdocs.com/viewer/net/)để biết thông tin chi tiết.
+ Tham quan[Diễn đàn GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) để được hỗ trợ cộng đồng và khám phá[tài liệu](https://tutorials.groupdocs.com/viewer/net/)để biết thông tin chi tiết.
 ### Có bản dùng thử miễn phí không?
  Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
 ### Làm cách nào để có được giấy phép tạm thời?

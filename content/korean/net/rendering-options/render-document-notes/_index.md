@@ -3,10 +3,12 @@ title: 메모가 포함된 문서 렌더링
 linktitle: 메모가 포함된 문서 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 메모가 포함된 문서를 렌더링하는 방법을 알아보세요. .NET 애플리케이션에 원활하게 통합하기 위한 단계별 튜토리얼입니다.
-type: docs
 weight: 14
 url: /ko/net/rendering-options/render-document-notes/
 ---
+
+# 메모가 포함된 문서 렌더링
+
 ## 소개
 문서 조작 및 보기 영역에서 .NET용 GroupDocs.Viewer는 원활한 통합과 강력한 기능을 제공하는 강력한 솔루션입니다. 이 자습서의 목적은 .NET용 GroupDocs.Viewer를 사용하여 메모가 포함된 문서를 렌더링하는 과정을 안내하는 것입니다. 숙련된 개발자이거나 .NET의 세계에 뛰어든 경우에도 이 단계별 가이드는 복잡한 문서 렌더링을 쉽게 탐색하는 데 도움이 될 것입니다.
 ## 전제조건

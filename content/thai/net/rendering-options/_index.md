@@ -3,10 +3,12 @@ title: ตัวเลือกการเรนเดอร์
 linktitle: ตัวเลือกการเรนเดอร์
 second_title: GroupDocs.Viewer .NET API
 description: ผสานรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชันของคุณได้อย่างง่ายดายด้วยบทช่วยสอนเกี่ยวกับตัวเลือกการเรนเดอร์ ตั้งแต่การเพิ่มลายน้ำไปจนถึงการปรับแต่งแบบอักษร
-type: docs
 weight: 23
 url: /th/net/rendering-options/
 ---
+
+# ตัวเลือกการเรนเดอร์
+
 
 ## การแนะนำ
 

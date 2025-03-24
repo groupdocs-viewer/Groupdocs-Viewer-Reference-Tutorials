@@ -3,10 +3,12 @@ title: 문서를 JPGPNG로 렌더링
 linktitle: 문서를 JPGPNG로 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: 향상된 사용자 경험과 생산성을 위해 GroupDocs.Viewer를 사용하여 .NET에서 문서를 JPG/PNG로 원활하게 렌더링하는 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-documents-images/render-jpg-png/
 ---
+
+# 문서를 JPGPNG로 렌더링
+
 ## 소개
 
 .NET 개발 세계에서는 문서를 효율적으로 처리하는 것이 다양한 애플리케이션에 필수적입니다. 문서 관리 시스템, 전자 상거래 플랫폼 또는 콘텐츠가 풍부한 애플리케이션을 구축하는 경우 문서를 원활하게 보는 기능은 매우 중요합니다. JPG 및 PNG와 같은 다양한 형식으로 문서를 렌더링하기 위한 포괄적인 솔루션을 제공하는 .NET용 GroupDocs.Viewer가 활용되는 곳입니다.
@@ -106,7 +108,7 @@ A: 임시 라이센스를 요청할 수 있습니다.[여기](https://purchase.g
 
 ### 질문: .NET용 GroupDocs.Viewer에 대한 설명서는 어디에서 찾을 수 있습니까?
 
- A: 자세한 문서가 제공됩니다.[여기](https://reference.groupdocs.com/viewer/net/).
+ A: 자세한 문서가 제공됩니다.[여기](https://tutorials.groupdocs.com/viewer/net/).
 
 ### 질문: .NET용 GroupDocs.Viewer와 관련된 지원을 받거나 질문을 할 수 있는 곳은 어디입니까?
 

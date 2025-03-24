@@ -3,10 +3,12 @@ title: CMX イメージのレンダリング
 linktitle: CMX イメージのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、CMX イメージをさまざまな形式に簡単にレンダリングする方法を学びます。文書管理を強化します。
-type: docs
 weight: 13
 url: /ja/net/image-rendering/render-cmx-images/
 ---
+
+# CMX イメージのレンダリング
+
 ## 導入
 ドキュメントの管理と操作の分野では、さまざまな形式の画像をレンダリングすることが極めて重要なタスクです。 GroupDocs.Viewer for .NET は、CMX 画像を HTML、JPG、PNG、PDF などのさまざまな形式にレンダリングするための包括的な機能を提供することで、このプロセスを簡素化します。このチュートリアルでは、GroupDocs.Viewer for .NET を使用して CMX イメージをレンダリングするプロセスを段階的に説明します。
 ## 前提条件

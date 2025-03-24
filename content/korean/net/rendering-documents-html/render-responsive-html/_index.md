@@ -3,10 +3,12 @@ title: 반응형 HTML 렌더링
 linktitle: 반응형 HTML 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 Groupdocs.Viewer를 사용하여 반응형 HTML을 렌더링하여 여러 장치에서 최적의 보기 환경을 보장하는 방법을 알아보세요.
-type: docs
 weight: 13
 url: /ko/net/rendering-documents-html/render-responsive-html/
 ---
+
+# 반응형 HTML 렌더링
+
 ## 소개
 .NET용 Groupdocs.Viewer는 개발자가 다양한 문서 형식을 반응형 HTML로 렌더링할 수 있는 강력한 라이브러리입니다. 이 자습서에서는 .NET용 Groupdocs.Viewer를 사용하여 반응형 HTML을 렌더링하는 과정을 안내합니다. 이 튜토리얼이 끝나면 문서를 다양한 화면 크기에 맞게 조정되는 HTML로 원활하게 변환하여 여러 장치에서 최적의 보기 환경을 보장할 수 있습니다.
 ## 전제조건

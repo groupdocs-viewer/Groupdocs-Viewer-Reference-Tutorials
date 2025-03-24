@@ -3,10 +3,12 @@ title: Muat Dokumen dari Stream
 linktitle: Muat Dokumen dari Stream
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara memuat dokumen dari aliran dengan lancar menggunakan GroupDocs.Viewer untuk .NET. Sempurnakan aplikasi .NET Anda dengan kemampuan melihat dokumen yang canggih.
-type: docs
 weight: 12
 url: /id/net/loading-documents/loading-document-stream/
 ---
+
+# Muat Dokumen dari Stream
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, mengelola dan melihat dokumen secara efisien adalah hal yang terpenting. Dengan munculnya alat dan perpustakaan canggih, tugas-tugas yang dulunya tampak menakutkan kini menjadi lebih sederhana. Di antara alat-alat ini, GroupDocs.Viewer untuk .NET menonjol sebagai solusi serbaguna untuk menangani berbagai format dokumen dengan lancar. Dalam panduan komprehensif ini, kami mempelajari seluk-beluk penggunaan GroupDocs.Viewer untuk .NET untuk memuat dokumen dari aliran. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial ini akan membekali Anda dengan pengetahuan untuk memanfaatkan kekuatan GroupDocs.Viewer secara efektif.
 ## Prasyarat

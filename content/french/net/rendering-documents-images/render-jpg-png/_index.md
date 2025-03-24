@@ -3,10 +3,12 @@ title: Rendre le document au format JPGPNG
 linktitle: Rendre le document au format JPGPNG
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer de manière transparente des documents au format JPG/PNG dans .NET à l'aide de GroupDocs.Viewer pour une expérience utilisateur et une productivité améliorées.
-type: docs
 weight: 10
 url: /fr/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Rendre le document au format JPGPNG
+
 ## Introduction
 
 Dans le monde du développement .NET, la gestion efficace des documents est essentielle pour diverses applications. Que vous construisiez un système de gestion de documents, une plateforme de commerce électronique ou une application riche en contenu, la possibilité de visualiser les documents de manière transparente est cruciale. C'est là qu'intervient GroupDocs.Viewer pour .NET, offrant une solution complète pour le rendu de documents dans différents formats tels que JPG et PNG.
@@ -106,7 +108,7 @@ R : Vous pouvez demander une licence temporaire auprès de[ici](https://purchas
 
 ### Q : Où puis-je trouver de la documentation pour GroupDocs.Viewer pour .NET ?
 
- R : Une documentation détaillée est disponible[ici](https://reference.groupdocs.com/viewer/net/).
+ R : Une documentation détaillée est disponible[ici](https://tutorials.groupdocs.com/viewer/net/).
 
 ### Q : Où puis-je obtenir de l'aide ou poser des questions relatives à GroupDocs.Viewer pour .NET ?
 

@@ -3,10 +3,12 @@ title: Återgivning med sidbrytningar
 linktitle: Återgivning med sidbrytningar
 second_title: GroupDocs.Viewer .NET API
 description: Utforska kraften i GroupDocs.Viewer för .NET för att rendera dokument med precision. Följ vår steg-för-steg handledning för att rendera med sidbrytningar.
-type: docs
 weight: 14
 url: /sv/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Återgivning med sidbrytningar
+
 ## Introduktion
 Välkommen till GroupDocs.Viewer för .NET handledning om att rendera dokument med sidbrytningar! I den här steg-för-steg-guiden kommer vi att utforska hur man använder de kraftfulla funktionerna i GroupDocs.Viewer för att rendera dokument med precision, speciellt med fokus på sidbrytningar. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här handledningen att leda dig genom processen och ge en tydlig förståelse för varje steg.
 ## Förutsättningar

@@ -3,10 +3,12 @@ title: Nastavit licenci ze streamu
 linktitle: Nastavit licenci ze streamu
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete své aplikace .NET pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Postupujte podle našeho podrobného průvodce a bez námahy integrujte výkonné funkce pro prohlížení dokumentů.
-type: docs
 weight: 11
 url: /cs/net/getting-started/set-license-from-stream/
 ---
+
+# Nastavit licenci ze streamu
+
 ## Úvod
 Chcete svým aplikacím .NET rozšířit možnosti pokročilého prohlížení dokumentů? GroupDocs.Viewer for .NET nabízí komplexní řešení pro bezproblémovou integraci funkcí prohlížení dokumentů do vašich projektů. V tomto tutoriálu se ponoříme do procesu využití GroupDocs.Viewer for .NET k obohacení vašich aplikací o výkonné možnosti prohlížení dokumentů. 
 ## Předpoklady
@@ -14,7 +16,7 @@ Než se ponoříme do procesu integrace, ujistěte se, že máte splněny násle
 1. Základní znalost vývoje .NET: Znalost jazyka C# a .NET frameworku je nezbytná pro dodržení tohoto návodu.
    
 2.  Balíček GroupDocs.Viewer for .NET: Ujistěte se, že jste si stáhli a nainstalovali balíček GroupDocs.Viewer for .NET. Můžete jej získat z[odkaz ke stažení](https://releases.groupdocs.com/viewer/net/).
-3.  Přístup k dokumentaci GroupDocs: Uschovejte[dokumentace](https://reference.groupdocs.com/viewer/net/) užitečné pro referenci během integračního procesu.
+3.  Přístup k dokumentaci GroupDocs: Uschovejte[dokumentace](https://tutorials.groupdocs.com/viewer/net/) užitečné pro referenci během integračního procesu.
 
 ## Importovat jmenné prostory
 Nejprve importujte potřebné jmenné prostory do vaší aplikace .NET. Následuj tyto kroky:

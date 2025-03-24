@@ -3,10 +3,12 @@ title: 设置资源加载超时（高级）
 linktitle: 设置资源加载超时（高级）
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何在 GroupDocs.Viewer for .NET 中高效配置资源加载超时。精准稳定地掌握文档渲染。
-type: docs
 weight: 13
 url: /zh/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# 设置资源加载超时（高级）
+
 ## 介绍
 在 .NET 开发领域，GroupDocs.Viewer 提供了强大的工具集，可以精确、高效地呈现文档和图像。利用其功能需要了解其复杂性，包括设置资源加载超时。在本教程中，我们将深入研究在 GroupDocs.Viewer for .NET 中配置资源加载超时的过程。
 ## 先决条件

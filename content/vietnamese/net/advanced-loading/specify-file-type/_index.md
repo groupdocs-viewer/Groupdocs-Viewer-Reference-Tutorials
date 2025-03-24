@@ -3,10 +3,12 @@ title: Chỉ định loại tệp khi tải tài liệu
 linktitle: Chỉ định loại tệp khi tải tài liệu
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách chỉ định loại tệp khi tải tài liệu bằng GroupDocs.Viewer cho .NET. Hiển thị chính xác các định dạng khác nhau trong ứng dụng .NET của bạn.
-type: docs
 weight: 10
 url: /vi/net/advanced-loading/specify-file-type/
 ---
+
+# Chỉ định loại tệp khi tải tài liệu
+
 ## Giới thiệu
 GroupDocs.Viewer cho .NET là API kết xuất tài liệu linh hoạt hỗ trợ nhiều định dạng tệp, bao gồm DOCX, PDF, PPTX, v.v. Bằng cách chỉ định loại tệp khi tải tài liệu, bạn có thể đảm bảo hiển thị chính xác và trải nghiệm xem mượt mà cho người dùng của mình.
 ## Điều kiện tiên quyết

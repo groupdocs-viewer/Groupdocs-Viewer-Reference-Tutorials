@@ -3,10 +3,12 @@ title: 渲染 WMZ 和 WMF 影像
 linktitle: 渲染 WMZ 和 WMF 影像
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 在 .NET 應用程式中輕鬆渲染 WMZ 和 WMF 映像。輕鬆增強文件處理能力。
-type: docs
 weight: 18
 url: /zh-hant/net/image-rendering/render-wmz-wmf-images/
 ---
+
+# 渲染 WMZ 和 WMF 影像
+
 ## 介紹
 
 在軟體開發領域，有效處理和呈現各種文件格式至關重要。 GroupDocs.Viewer for .NET 是一款功能強大的工具，可促進各種文件格式的呈現，確保 .NET 應用程式內的無縫整合和增強的使用者體驗。其功能之一是渲染 WMZ 和 WMF 影像，這是文件處理場景中經常遇到的任務。
@@ -21,7 +23,7 @@ url: /zh-hant/net/image-rendering/render-wmz-wmf-images/
 
 3. 熟悉 .NET 環境：對 .NET 框架和 C# 程式語言的基本了解對於有效實現渲染過程至關重要。
 
-4. 整合到您的專案中：確保 GroupDocs.Viewer for .NET 正確整合到您的 .NET 專案中。有關整合的詳細說明，請參閱文件：[文件](https://reference.groupdocs.com/viewer/net/).
+4. 整合到您的專案中：確保 GroupDocs.Viewer for .NET 正確整合到您的 .NET 專案中。有關整合的詳細說明，請參閱文件：[文件](https://tutorials.groupdocs.com/viewer/net/).
 
 ## 導入命名空間
 

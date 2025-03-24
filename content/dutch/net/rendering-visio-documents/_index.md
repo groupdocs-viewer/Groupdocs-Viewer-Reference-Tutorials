@@ -3,10 +3,12 @@ title: Visio-documenten renderen
 linktitle: Visio-documenten renderen
 second_title: GroupDocs.Viewer .NET-API
 description: Bekijk zelfstudies over het renderen van Visio-documenten met GroupDocs.Viewer voor .NET. Leer hoe u moeiteloos de documentweergavemogelijkheden in uw .NET-toepassingen kunt verbeteren.
-type: docs
 weight: 34
 url: /nl/net/rendering-visio-documents/
 ---
+
+# Visio-documenten renderen
+
 ## Invoering
 
 Wilt u dieper ingaan op het weergeven van Visio-documenten binnen uw .NET-toepassingen? Zoek niet verder dan GroupDocs.Viewer voor .NET-tutorials. In deze uitgebreide handleiding leiden we u stap voor stap door het proces, zodat u uw documentweergavemogelijkheden naadloos kunt verbeteren.

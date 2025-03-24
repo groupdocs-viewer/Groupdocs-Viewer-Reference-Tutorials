@@ -3,10 +3,12 @@ title: Načíst dokumenty z místního disku
 linktitle: Načíst dokumenty z místního disku
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak plynule vykreslovat dokumenty z místního disku pomocí Groupdocs.Viewer for .NET. Vylepšete své aplikace .NET pomocí efektivních dokumentů.
-type: docs
 weight: 10
 url: /cs/net/loading-documents/loading-document-local-disk/
 ---
+
+# Načíst dokumenty z místního disku
+
 ## Úvod
 dnešní digitální době je efektivní vykreslování dokumentů zásadní pro různé aplikace. Groupdocs.Viewer for .NET nabízí výkonné řešení pro vykreslování dokumentů přímo z vašeho lokálního disku. V tomto tutoriálu vás provedeme procesem načítání dokumentů z místního disku pomocí Groupdocs.Viewer for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný průvodce vám pomůže bezproblémově integrovat vykreslování dokumentů do vašich aplikací .NET.
 ## Předpoklady

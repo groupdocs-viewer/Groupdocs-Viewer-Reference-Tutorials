@@ -3,10 +3,12 @@ title: Ausgewählte Seiten rendern
 linktitle: Ausgewählte Seiten rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie ausgewählte Seiten aus Dokumenten mit Groupdocs.Viewer für .NET rendern. Schritt-für-Schritt-Anleitung mit Codebeispielen.
-type: docs
 weight: 17
 url: /de/net/rendering-options/render-selected-pages/
 ---
+
+# Ausgewählte Seiten rendern
+
 ## Einführung
 
 In diesem Tutorial befassen wir uns mit der Verwendung von Groupdocs.Viewer für .NET zum Rendern ausgewählter Seiten aus einem Dokument. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, diese Schritt-für-Schritt-Anleitung führt Sie mühelos durch den Prozess.

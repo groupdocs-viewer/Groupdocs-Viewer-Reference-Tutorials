@@ -3,10 +3,12 @@ title: เรนเดอร์รูปแบบ CAD เฉพาะ (CF2)
 linktitle: เรนเดอร์รูปแบบ CAD เฉพาะ (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์รูปแบบ CAD เฉพาะ เช่น CF2 เป็น HTML, JPG, PNG และ PDF โดยใช้ Groupdocs.Viewer สำหรับ .NET
-type: docs
 weight: 12
 url: /th/net/rendering-cad-drawings/render-specific-cad-formats/
 ---
+
+# เรนเดอร์รูปแบบ CAD เฉพาะ (CF2)
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะสำรวจวิธีการเรนเดอร์รูปแบบ CAD เฉพาะโดยใช้ Groupdocs.Viewer สำหรับ .NET Groupdocs.Viewer เป็น API โปรแกรมดูเอกสารอันทรงพลังที่ช่วยให้นักพัฒนาสามารถแสดงเอกสารมากกว่า 170 ประเภทในแอปพลิเคชันของตน โดยไม่ต้องติดตั้งซอฟต์แวร์ภายนอกใดๆ โดยเฉพาะ เราจะเน้นไปที่การเรนเดอร์รูปแบบ CAD เช่น CF2 เป็นรูปแบบเอาต์พุตต่างๆ เช่น HTML, JPG, PNG และ PDF
 ## ข้อกำหนดเบื้องต้น

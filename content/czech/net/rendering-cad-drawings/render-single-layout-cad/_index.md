@@ -3,10 +3,12 @@ title: Render Single Layout ve výkresech CAD
 linktitle: Render Single Layout ve výkresech CAD
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat jednotlivé rozvržení ve výkresech CAD pomocí GroupDocs.Viewer pro .NET. Snadné kroky pro bezproblémovou integraci do vašich aplikací .NET.
-type: docs
 weight: 14
 url: /cs/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# Render Single Layout ve výkresech CAD
+
 ## Úvod
 oblasti vývoje .NET je manipulace a prohlížení CAD výkresů běžným požadavkem. GroupDocs.Viewer for .NET tento úkol zjednodušuje tím, že poskytuje komplexní řešení pro vykreslování CAD výkresů v aplikacích .NET. V tomto tutoriálu se ponoříme do vykreslování jediného rozvržení ve výkresech CAD pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady

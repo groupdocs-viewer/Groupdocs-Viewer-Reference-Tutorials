@@ -3,10 +3,12 @@ title: 对文档中的页面重新排序
 linktitle: 对文档中的页面重新排序
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 对文档中的页面重新排序。按照我们的分步教程进行无缝文档管理。
-type: docs
 weight: 19
 url: /zh/net/rendering-options/reorder-pages/
 ---
+
+# 对文档中的页面重新排序
+
 ## 介绍
 在 .NET 开发领域，有效管理和操作文档至关重要。 GroupDocs.Viewer for .NET 提供了一个强大的解决方案，用于在应用程序中查看各种文档格式。开发人员经常遇到的基本任务之一是对文档中的页面进行重新排序。无论您使用的是 PDF、Word 文档还是其他格式，重新排列页面都可以简化工作流程并增强用户体验。在本教程中，我们将深入研究如何使用 GroupDocs.Viewer for .NET 对文档中的页面重新排序。
 ## 先决条件

@@ -3,10 +3,12 @@ title: تحميل المستندات من FTP (متقدم)
 linktitle: تحميل المستندات من FTP (متقدم)
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج GroupDocs.Viewer لـ .NET بسلاسة في تطبيقاتك لعرض المستندات بكفاءة. قم بتقديم المستندات من FTP دون عناء.
-type: docs
 weight: 13
 url: /ar/net/loading-documents/loading-document-ftp/
 ---
+
+# تحميل المستندات من FTP (متقدم)
+
 ## مقدمة
 يعد GroupDocs.Viewer for .NET واجهة برمجة تطبيقات قوية تمكن المطورين من دمج إمكانات عرض المستندات بسلاسة في تطبيقات .NET الخاصة بهم. سواء كنت تعمل مع ملفات PDF أو مستندات Microsoft Office أو تنسيقات الملفات الشائعة الأخرى، يعمل GroupDocs.Viewer على تبسيط عملية عرض المستندات للعرض، مما يجعل تزويد المستخدمين بتجربة عرض غنية أسهل من أي وقت مضى.
 ## المتطلبات الأساسية

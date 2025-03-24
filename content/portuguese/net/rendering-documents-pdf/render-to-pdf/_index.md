@@ -3,10 +3,12 @@ title: Renderizar documento para PDF
 linktitle: Renderizar documento para PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar documentos em PDF usando GroupDocs.Viewer for .NET. Guia passo a passo com pré-requisitos e perguntas frequentes incluídas.
-type: docs
 weight: 10
 url: /pt/net/rendering-documents-pdf/render-to-pdf/
 ---
+
+# Renderizar documento para PDF
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma ferramenta poderosa para renderizar vários formatos de documentos em PDF. Neste tutorial, guiaremos você pelo processo passo a passo.
 ## Pré-requisitos

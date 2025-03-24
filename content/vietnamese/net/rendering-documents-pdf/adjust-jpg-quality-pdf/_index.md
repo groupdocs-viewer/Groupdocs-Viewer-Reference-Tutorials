@@ -3,10 +3,12 @@ title: Điều chỉnh chất lượng hình ảnh JPG trong PDF được hiển
 linktitle: Điều chỉnh chất lượng hình ảnh JPG trong PDF được hiển thị
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách điều chỉnh chất lượng hình ảnh JPG trong tài liệu PDF được hiển thị bằng GroupDocs.Viewer cho .NET. Nâng cao trải nghiệm xem tài liệu của bạn.
-type: docs
 weight: 11
 url: /vi/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Điều chỉnh chất lượng hình ảnh JPG trong PDF được hiển thị
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách điều chỉnh chất lượng hình ảnh JPG khi hiển thị tệp PDF bằng GroupDocs.Viewer cho .NET. Thư viện mạnh mẽ này cho phép bạn xem và thao tác các định dạng tài liệu khác nhau trong các ứng dụng .NET của mình một cách liền mạch.
 ## Điều kiện tiên quyết

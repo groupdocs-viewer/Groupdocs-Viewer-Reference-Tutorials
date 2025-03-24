@@ -3,10 +3,12 @@ title: Charger des documents protégés par mot de passe
 linktitle: Charger des documents protégés par mot de passe
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez sans effort la visualisation de documents protégés par mot de passe dans les applications .NET à l'aide de GroupDocs.Viewer for .NET. Suivez notre tutoriel étape par étape pour plus de fluidité.
-type: docs
 weight: 12
 url: /fr/net/advanced-loading/load-password-protected-document/
 ---
+
+# Charger des documents protégés par mot de passe
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, gérer et visualiser de manière transparente différents formats de documents est une nécessité pour de nombreuses entreprises et particuliers. Heureusement, GroupDocs.Viewer pour .NET fournit une solution complète permettant aux développeurs .NET d'intégrer sans effort des fonctionnalités de visualisation de documents dans leurs applications. Dans ce tutoriel, nous aborderons l'une des fonctionnalités essentielles de GroupDocs.Viewer : le chargement de documents protégés par mot de passe. Nous détaillerons le processus étape par étape, afin de garantir que les développeurs puissent facilement suivre et implémenter cette fonctionnalité dans leurs projets.
 ## Conditions préalables

@@ -3,10 +3,12 @@ title: 影像渲染
 linktitle: 影像渲染
 second_title: GroupDocs.Viewer .NET API
 description: 了解使用 GroupDocs.Viewer for .NET 渲染各種影像格式的綜合教學。從 AI 到 WMF，學習無縫整合和編碼範例。
-type: docs
 weight: 28
 url: /zh-hant/net/image-rendering/
 ---
+
+# 影像渲染
+
 
 ## 介紹
 

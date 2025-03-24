@@ -3,10 +3,12 @@ title: Điều chỉnh kích thước trang khi hiển thị tin nhắn email
 linktitle: Điều chỉnh kích thước trang khi hiển thị tin nhắn email
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách điều chỉnh kích thước trang khi hiển thị email thành PDF bằng GroupDocs.Viewer dành cho .NET. Nâng cao hiệu quả xem tài liệu.
-type: docs
 weight: 10
 url: /vi/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Điều chỉnh kích thước trang khi hiển thị tin nhắn email
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, GroupDocs.Viewer cung cấp giải pháp toàn diện để hiển thị các định dạng tài liệu khác nhau, bao gồm cả email. Hướng dẫn này tập trung vào việc điều chỉnh kích thước trang khi hiển thị email sang định dạng PDF bằng GroupDocs.Viewer cho .NET. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn sẽ học cách thao tác liền mạch kích thước trang để đáp ứng các yêu cầu cụ thể của mình.
 ## Điều kiện tiên quyết

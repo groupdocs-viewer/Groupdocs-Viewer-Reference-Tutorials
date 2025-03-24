@@ -3,10 +3,12 @@ title: Webdocumenten renderen
 linktitle: Webdocumenten renderen
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u CHM-bestanden en HTML met aangepaste marges in .NET kunt weergeven met GroupDocs.Viewer. Converteer CHM naadloos naar HTML-, JPG-, PNG- en PDF-formaten.
-type: docs
 weight: 35
 url: /nl/net/rendering-web-documents/
 ---
+
+# Webdocumenten renderen
+
 ## Invoering
 
 Ontrafel de fijne kneepjes van het renderen van webdocumenten met GroupDocs.Viewer voor .NET via uitgebreide tutorials. Het renderen van CHM-bestanden en het aanpassen van HTML-marges zijn essentiële functionaliteiten die uw documentverwerkingsmogelijkheden aanzienlijk kunnen verbeteren.

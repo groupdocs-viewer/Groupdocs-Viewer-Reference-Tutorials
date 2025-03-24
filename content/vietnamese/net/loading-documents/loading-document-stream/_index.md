@@ -3,10 +3,12 @@ title: Tải tài liệu từ luồng
 linktitle: Tải tài liệu từ luồng
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tải tài liệu từ luồng một cách liền mạch bằng GroupDocs.Viewer dành cho .NET. Nâng cao ứng dụng .NET của bạn với khả năng xem tài liệu mạnh mẽ.
-type: docs
 weight: 12
 url: /vi/net/loading-documents/loading-document-stream/
 ---
+
+# Tải tài liệu từ luồng
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc quản lý và xem tài liệu một cách hiệu quả là điều tối quan trọng. Với sự ra đời của các công cụ và thư viện tiên tiến, những công việc từng có vẻ khó khăn nay đã được đơn giản hóa. Trong số các công cụ này, GroupDocs.Viewer dành cho .NET nổi bật như một giải pháp linh hoạt để xử lý liền mạch các định dạng tài liệu khác nhau. Trong hướng dẫn toàn diện này, chúng tôi đi sâu vào những điểm phức tạp của việc sử dụng GroupDocs.Viewer dành cho .NET để tải tài liệu từ một luồng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ trang bị cho bạn kiến thức để khai thác sức mạnh của GroupDocs.Viewer một cách hiệu quả.
 ## Điều kiện tiên quyết

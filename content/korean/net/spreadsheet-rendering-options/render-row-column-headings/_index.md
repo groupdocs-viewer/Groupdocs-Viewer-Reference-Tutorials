@@ -3,10 +3,12 @@ title: 행 및 열 제목 렌더링
 linktitle: 행 및 열 제목 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET에서 문서 보기를 향상시키세요! .NET용 GroupDocs.Viewer를 사용하여 행 및 열 머리글을 렌더링하는 방법을 알아보세요. HTML, JPG, PNG 및 PDF 출력을 살펴보세요.
-type: docs
 weight: 18
 url: /ko/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# 행 및 열 제목 렌더링
+
 ## 소개
 .NET 애플리케이션에서 문서 보기 환경을 향상시키고 싶으십니까? .NET용 GroupDocs.Viewer를 사용하면 스프레드시트 파일에서 행 및 열 제목을 원활하게 렌더링할 수 있습니다. 이 튜토리얼에서는 HTML, JPG, PNG 및 PDF와 같은 다양한 출력 형식을 사용하여 행 및 열 제목을 렌더링하는 프로세스를 안내합니다.
 ## 전제조건

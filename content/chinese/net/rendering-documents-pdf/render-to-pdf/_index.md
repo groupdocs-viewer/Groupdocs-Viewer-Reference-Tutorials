@@ -3,10 +3,12 @@ title: 将文档渲染为 PDF
 linktitle: 将文档渲染为 PDF
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 将文档呈现为 PDF。包含先决条件和常见问题解答的分步指南。
-type: docs
 weight: 10
 url: /zh/net/rendering-documents-pdf/render-to-pdf/
 ---
+
+# 将文档渲染为 PDF
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个将各种文档格式呈现为 PDF 的强大工具。在本教程中，我们将逐步指导您完成该过程。
 ## 先决条件

@@ -3,10 +3,12 @@ title: JPGPNG को दस्तावेज़ प्रस्तुत कर
 linktitle: JPGPNG को दस्तावेज़ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: उन्नत उपयोगकर्ता अनुभव और उत्पादकता के लिए GroupDocs.Viewer का उपयोग करके .NET में दस्तावेज़ों को JPG/PNG में निर्बाध रूप से प्रस्तुत करने का तरीका जानें।
-type: docs
 weight: 10
 url: /hi/net/rendering-documents-images/render-jpg-png/
 ---
+
+# JPGPNG को दस्तावेज़ प्रस्तुत करें
+
 ## परिचय
 
 .NET विकास की दुनिया में, विभिन्न अनुप्रयोगों के लिए दस्तावेज़ों को कुशलतापूर्वक संभालना आवश्यक है। चाहे आप दस्तावेज़ प्रबंधन प्रणाली, ई-कॉमर्स प्लेटफ़ॉर्म, या सामग्री-समृद्ध एप्लिकेशन बना रहे हों, दस्तावेज़ों को निर्बाध रूप से देखने की क्षमता महत्वपूर्ण है। यहीं पर .NET के लिए GroupDocs.Viewer काम में आता है, जो JPG और PNG जैसे विभिन्न प्रारूपों में दस्तावेज़ों को प्रस्तुत करने के लिए एक व्यापक समाधान प्रदान करता है।
@@ -106,7 +108,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ### प्रश्न: मुझे .NET के लिए GroupDocs.Viewer के लिए दस्तावेज़ कहां मिल सकते हैं?
 
- उत्तर: विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.groupdocs.com/viewer/net/).
+ उत्तर: विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://tutorials.groupdocs.com/viewer/net/).
 
 ### प्रश्न: मैं .NET के लिए GroupDocs.Viewer से संबंधित सहायता कहां से प्राप्त कर सकता हूं या प्रश्न पूछ सकता हूं?
 

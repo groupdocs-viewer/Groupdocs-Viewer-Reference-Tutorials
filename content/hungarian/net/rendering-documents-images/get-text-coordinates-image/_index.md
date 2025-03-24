@@ -3,10 +3,12 @@ title: Szerezzen szövegkoordinátákat a képmegjelenítéshez
 linktitle: Szerezzen szövegkoordinátákat a képmegjelenítéshez
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan bonthat ki szövegkoordinátákat képmegjelenítéshez a GroupDocs.Viewer for .NET segítségével. Fokozatmentesen fokozza dokumentumfeldolgozási képességeit.
-type: docs
 weight: 12
 url: /hu/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# Szerezzen szövegkoordinátákat a képmegjelenítéshez
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony dokumentum-megjelenítő API, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen rendereljenek dokumentumokat különféle formátumokban, például PDF, Microsoft Office és sok más formátumban. Egyik kulcsfontosságú funkciója a szöveg koordinátáinak kinyerése a precíz képmegjelenítés érdekében.
 ## Előfeltételek

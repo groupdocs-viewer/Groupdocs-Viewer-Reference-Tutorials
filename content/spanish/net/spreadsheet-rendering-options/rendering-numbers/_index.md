@@ -3,10 +3,12 @@ title: Representar números
 linktitle: Representar números
 second_title: API GroupDocs.Viewer .NET
 description: Explore el poder de Groupdocs.Viewer para .NET para renderizar archivos de Numbers sin problemas. Convierta a HTML, JPG, PNG y PDF sin esfuerzo.
-type: docs
 weight: 15
 url: /es/net/spreadsheet-rendering-options/rendering-numbers/
 ---
+
+# Representar números
+
 ## Introducción
 Bienvenido a este tutorial paso a paso sobre cómo renderizar archivos de Numbers usando Groupdocs.Viewer para .NET. Ya seas un desarrollador experimentado o un principiante, esta guía te guiará a través del proceso de conversión de documentos de Numbers a varios formatos. Groupdocs.Viewer para .NET es una poderosa herramienta que le permite integrar perfectamente capacidades de visualización de documentos en sus aplicaciones .NET.
 ## Requisitos previos

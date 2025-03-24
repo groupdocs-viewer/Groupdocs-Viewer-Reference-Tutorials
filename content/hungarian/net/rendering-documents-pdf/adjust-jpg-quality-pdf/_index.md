@@ -3,10 +3,12 @@ title: Állítsa be a JPG képminőséget a renderelt PDF-ben
 linktitle: Állítsa be a JPG képminőséget a renderelt PDF-ben
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan állíthatja be a JPG képminőséget renderelt PDF-dokumentumokban a GroupDocs.Viewer for .NET segítségével. Fokozza a dokumentummegtekintési élményt.
-type: docs
 weight: 11
 url: /hu/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Állítsa be a JPG képminőséget a renderelt PDF-ben
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudjuk, hogyan állíthatja be a JPG-képek minőségét PDF-formátumban a GroupDocs.Viewer for .NET használatával. Ez a hatékony könyvtár lehetővé teszi a különböző dokumentumformátumok zökkenőmentes megtekintését és kezelését .NET-alkalmazásaiban.
 ## Előfeltételek

@@ -3,10 +3,12 @@ title: Rendre les pages sélectionnées
 linktitle: Rendre les pages sélectionnées
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment afficher des pages sélectionnées à partir de documents à l'aide de Groupdocs.Viewer pour .NET. Tutoriel étape par étape avec des exemples de code inclus.
-type: docs
 weight: 17
 url: /fr/net/rendering-options/render-selected-pages/
 ---
+
+# Rendre les pages sélectionnées
+
 ## Introduction
 
 Dans ce didacticiel, nous verrons comment utiliser Groupdocs.Viewer pour .NET pour afficher les pages sélectionnées à partir d'un document. Que vous soyez un développeur chevronné ou un débutant, ce guide étape par étape vous guidera facilement tout au long du processus.

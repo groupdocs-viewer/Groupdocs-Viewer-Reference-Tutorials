@@ -3,10 +3,12 @@ title: Render met aangepaste lettertypen
 linktitle: Render met aangepaste lettertypen
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u documenten met aangepaste lettertypen kunt weergeven met GroupDocs.Viewer voor .NET. Verbeter visuele presentaties moeiteloos.
-type: docs
 weight: 18
 url: /nl/net/rendering-options/render-custom-fonts/
 ---
+
+# Render met aangepaste lettertypen
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling biedt GroupDocs.Viewer een krachtige oplossing voor het weergeven van documenten van verschillende formaten. Naast de vele mogelijkheden maakt GroupDocs.Viewer de weergave van documenten met aangepaste lettertypen mogelijk, waardoor een laag personalisatie en flexibiliteit aan uw toepassingen wordt toegevoegd.
 ## Vereisten

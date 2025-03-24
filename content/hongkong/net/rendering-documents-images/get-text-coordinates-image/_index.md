@@ -3,10 +3,12 @@ title: 取得影像渲染的文字座標
 linktitle: 取得影像渲染的文字座標
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 擷取文字座標以進行影像渲染。輕鬆增強您的文件處理能力。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# 取得影像渲染的文字座標
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的文檔呈現 API，可讓開發人員無縫呈現各種格式的文檔，例如 PDF、Microsoft Office 等。其關鍵功能之一是能夠提取文字座標以進行精確的圖像渲染。
 ## 先決條件

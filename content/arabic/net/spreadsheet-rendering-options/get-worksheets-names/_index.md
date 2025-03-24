@@ -3,10 +3,12 @@ title: الحصول على أسماء أوراق العمل
 linktitle: الحصول على أسماء أوراق العمل
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف سحر GroupDocs.Viewer لـ .NET - قم بدمج عرض المستندات في تطبيقاتك بسلاسة. جرب النسخة التجريبية المجانية الآن!
-type: docs
 weight: 11
 url: /ar/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# الحصول على أسماء أوراق العمل
+
 ## مقدمة
 مرحبًا بك في عالم GroupDocs.Viewer الرائع لـ .NET! إذا كنت مطورًا أو متحمسًا لاستكشاف إمكانيات عرض المستندات القوية ضمن تطبيقات .NET الخاصة بك، فأنت في المكان المناسب. في هذا الدليل الشامل، سوف نتعمق في تعقيدات استرداد أسماء أوراق العمل باستخدام GroupDocs.Viewer. لذا، اربط حزام الأمان ودعنا نبدأ هذه الرحلة المثيرة!
 ## المتطلبات الأساسية
@@ -63,4 +65,4 @@ foreach (Page page in viewInfo.Pages)
 ### هل يمكنني الحصول على ترخيص مؤقت؟
  بالتأكيد! يزور[هذا الرابط](https://purchase.groupdocs.com/temporary-license/) للحصول على ترخيصك المؤقت.
 ### هل هناك موارد توثيقية مفصلة متاحة؟
- قطعاً! تفحص ال[الوثائق الرسمية](https://reference.groupdocs.com/viewer/net/) للحصول على معلومات وأدلة متعمقة.
+ قطعاً! تفحص ال[الوثائق الرسمية](https://tutorials.groupdocs.com/viewer/net/) للحصول على معلومات وأدلة متعمقة.

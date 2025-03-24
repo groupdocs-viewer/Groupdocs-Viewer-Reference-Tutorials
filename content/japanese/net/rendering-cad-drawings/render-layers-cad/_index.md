@@ -3,10 +3,12 @@ title: CAD 図面のレイヤーをレンダリングする
 linktitle: CAD 図面のレイヤーをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、.NET アプリケーションで CAD 図面をシームレスにレンダリングします。レンダリング オプションを調べたり、レイヤーをカスタマイズしたりできます。
-type: docs
 weight: 13
 url: /ja/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# CAD 図面のレイヤーをレンダリングする
+
 ## 導入
 GroupDocs.Viewer for .NET は、開発者がドキュメント レンダリング機能を .NET アプリケーションにシームレスに統合できるようにする強力なツールです。 CAD 図面、PDF、Microsoft Office ドキュメントなどをレンダリングする必要がある場合でも、GroupDocs.Viewer は包括的なソリューションを提供します。
 ## 前提条件
@@ -14,7 +16,7 @@ GroupDocs.Viewer for .NET の使用に入る前に、次の前提条件を満た
 - C# プログラミング言語の基本的な理解。
 - マシン上にセットアップされた .NET 開発環境。
 -  .NET 用の GroupDocs.Viewer がインストールされています。からダウンロードできます[ここ](https://releases.groupdocs.com/viewer/net/).
-- 参照用の GroupDocs.Viewer for .NET ドキュメントへのアクセス (次の場所にあります)[ここ](https://reference.groupdocs.com/viewer/net/).
+- 参照用の GroupDocs.Viewer for .NET ドキュメントへのアクセス (次の場所にあります)[ここ](https://tutorials.groupdocs.com/viewer/net/).
 
 ## 名前空間のインポート
 GroupDocs.Viewer for .NET の使用を開始するには、必要な名前空間をプロジェクトにインポートする必要があります。次の手順を実行します：

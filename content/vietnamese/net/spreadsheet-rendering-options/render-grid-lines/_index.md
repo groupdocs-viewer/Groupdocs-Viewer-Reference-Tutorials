@@ -3,10 +3,12 @@ title: Kết xuất các đường lưới
 linktitle: Kết xuất các đường lưới
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao khả năng trực quan hóa tài liệu với GroupDocs.Viewer dành cho .NET. Hiển thị các đường lưới một cách dễ dàng. Hãy thử dùng thử miễn phí ngay bây giờ! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /vi/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Kết xuất các đường lưới
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn từng bước này về cách sử dụng GroupDocs.Viewer dành cho .NET để hiển thị các đường lưới trong tài liệu của bạn. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay người mới làm quen với .NET framework, hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình với các giải thích chi tiết và ví dụ dễ làm theo.
 ## Điều kiện tiên quyết
@@ -66,6 +68,6 @@ Trong hướng dẫn này, chúng ta đã khám phá quy trình hiển thị cá
 ### Giấy phép tạm thời có sẵn cho GroupDocs.Viewer cho .NET không?
  Có, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) cho GroupDocs.Viewer dành cho .NET.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Viewer cho .NET không?
- Tuyệt đối! Tham khảo đến[tài liệu chính thức](https://reference.groupdocs.com/viewer/net/) để biết thông tin chuyên sâu về cách sử dụng GroupDocs.Viewer cho .NET.
+ Tuyệt đối! Tham khảo đến[tài liệu chính thức](https://tutorials.groupdocs.com/viewer/net/) để biết thông tin chuyên sâu về cách sử dụng GroupDocs.Viewer cho .NET.
 ### Tôi có thể tải xuống phiên bản mới nhất của GroupDocs.Viewer cho .NET ở đâu?
  Tải xuống thư viện từ[trang phát hành chính thức](https://releases.groupdocs.com/viewer/net/).

@@ -3,10 +3,12 @@ title: Ganti Nama Bidang Email Selama Rendering
 linktitle: Ganti Nama Bidang Email Selama Rendering
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan pengalaman melihat dokumen dengan GroupDocs.Viewer untuk .NET. Render dan sesuaikan email dengan lancar.
-type: docs
 weight: 12
 url: /id/net/rendering-email-messages/rename-email-fields/
 ---
+
+# Ganti Nama Bidang Email Selama Rendering
+
 ## Perkenalan
 
 Di era digital saat ini, mengelola dan melihat dokumen secara efisien adalah hal yang terpenting bagi bisnis dan individu. Baik itu kontrak, laporan, atau email, kemampuan menavigasi dokumen-dokumen ini dengan lancar dapat sangat meningkatkan produktivitas. Di sinilah GroupDocs.Viewer untuk .NET berperan. Pustaka yang kuat ini memungkinkan pengembang untuk mengintegrasikan kemampuan melihat dokumen langsung ke dalam aplikasi .NET mereka, menawarkan berbagai fitur untuk merender berbagai format dokumen.

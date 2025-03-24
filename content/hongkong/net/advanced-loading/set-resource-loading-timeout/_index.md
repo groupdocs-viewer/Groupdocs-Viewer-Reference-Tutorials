@@ -3,10 +3,12 @@ title: 設定資源載入超時（進階）
 linktitle: 設定資源載入超時（進階）
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何在 GroupDocs.Viewer for .NET 中有效地配置資源載入逾時。精準穩定地掌握文件渲染。
-type: docs
 weight: 13
 url: /zh-hant/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# 設定資源載入超時（進階）
+
 ## 介紹
 在 .NET 開發領域，GroupDocs.Viewer 提供了強大的工具集，可以精確、有效率地呈現文件和影像。利用其功能需要了解其複雜性，包括設定資源載入逾時。在本教程中，我們將深入研究在 GroupDocs.Viewer for .NET 中配置資源載入逾時的過程。
 ## 先決條件

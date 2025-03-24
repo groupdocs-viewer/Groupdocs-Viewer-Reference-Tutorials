@@ -3,10 +3,12 @@ title: Muat Dokumen dengan Pengkodean Tertentu
 linktitle: Muat Dokumen dengan Pengkodean Tertentu
 second_title: GroupDocs.Viewer .NET API
 description: Sempurnakan aplikasi .NET Anda dengan tampilan dokumen yang lancar menggunakan GroupDocs.Viewer untuk .NET. Muat dokumen dengan pengkodean khusus dengan mudah dan sesuaikan pengalaman menonton.
-type: docs
 weight: 11
 url: /id/net/advanced-loading/load-documents-encoding/
 ---
+
+# Muat Dokumen dengan Pengkodean Tertentu
+
 ## Perkenalan
 Apakah Anda mencari alat canggih untuk melihat dokumen dalam aplikasi .NET Anda dengan lancar? Kunjungi GroupDocs.Viewer untuk .NET! Pustaka yang kuat ini memberi pengembang kemampuan untuk dengan mudah menampilkan berbagai format dokumen langsung dalam aplikasi mereka, menawarkan pengalaman menonton yang intuitif dan ramah pengguna.
 ## Prasyarat

@@ -3,10 +3,12 @@ title: 렌더 아카이브 폴더
 linktitle: 렌더 아카이브 폴더
 second_title: GroupDocs.Viewer .NET API
 description: 효율적인 문서 렌더링 및 보기 기능을 위해 .NET용 GroupDocs.Viewer를 .NET 응용 프로그램에 완벽하게 통합하세요.
-type: docs
 weight: 11
 url: /ko/net/rendering-archive-files/render-archive-folder/
 ---
+
+# 렌더 아카이브 폴더
+
 ## 소개
 오늘날의 디지털 시대에 문서에 원활하게 액세스하고 보는 것은 기업과 개인 모두에게 중요합니다. 다행스럽게도 기술이 발전함에 따라 이제 개발자는 문서 보기 기능을 응용 프로그램에 손쉽게 통합할 수 있는 강력한 도구를 갖게 되었습니다. 그러한 도구 중 하나가 .NET용 GroupDocs.Viewer입니다. 이 라이브러리는 개발자가 .NET 응용 프로그램 내에서 다양한 문서 형식을 렌더링할 수 있도록 지원하는 다목적 라이브러리입니다.
 ## 전제조건

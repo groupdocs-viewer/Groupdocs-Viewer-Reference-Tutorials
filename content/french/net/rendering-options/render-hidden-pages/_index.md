@@ -3,10 +3,12 @@ title: Rendre les pages masquées
 linktitle: Rendre les pages masquées
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez votre application .NET avec GroupDocs.Viewer pour un rendu transparent des documents. Suivez notre guide étape par étape pour afficher les pages cachées sans effort.
-type: docs
 weight: 15
 url: /fr/net/rendering-options/render-hidden-pages/
 ---
+
+# Rendre les pages masquées
+
 ## Introduction
 Dans le monde du développement .NET, la gestion et l’affichage efficaces des documents sont cruciaux. Que ce soit pour un usage interne, des présentations clients ou des applications Web, avoir la possibilité de visualiser différents formats de documents de manière transparente est une nécessité. C'est là qu'intervient GroupDocs.Viewer pour .NET. Avec ses fonctionnalités puissantes et son interface intuitive, GroupDocs.Viewer simplifie le processus de rendu des documents dans vos applications .NET.
 ## Conditions préalables

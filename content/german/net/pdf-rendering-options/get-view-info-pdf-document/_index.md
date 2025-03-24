@@ -3,10 +3,12 @@ title: Informationen zum Anzeigen von PDF-Dokumenten abrufen
 linktitle: Informationen zum Anzeigen von PDF-Dokumenten abrufen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie in diesem umfassenden Tutorial, wie Sie mit GroupDocs.Viewer für .NET Ansichtsinformationen aus PDF-Dokumenten extrahieren.
-type: docs
 weight: 16
 url: /de/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Informationen zum Anzeigen von PDF-Dokumenten abrufen
+
 ## Einführung
 GroupDocs.Viewer für .NET ist ein leistungsstarkes Tool zur Optimierung der Dokumentanzeige in .NET-Anwendungen. Unabhängig davon, ob Sie mit PDFs, Word-Dokumenten, Excel-Tabellen oder PowerPoint-Präsentationen arbeiten, vereinfacht diese Bibliothek den Prozess des Renderns und Interagierens mit verschiedenen Dateiformaten. In diesem Tutorial konzentrieren wir uns auf die Nutzung der Funktionen von GroupDocs.Viewer speziell zum Extrahieren von Ansichtsinformationen aus PDF-Dokumenten.
 ## Voraussetzungen

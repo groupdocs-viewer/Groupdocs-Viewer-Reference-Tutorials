@@ -3,10 +3,12 @@ title: Kết xuất bố cục đơn trong bản vẽ CAD
 linktitle: Kết xuất bố cục đơn trong bản vẽ CAD
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị bố cục đơn trong bản vẽ CAD bằng GroupDocs.Viewer cho .NET. Các bước dễ dàng để tích hợp liền mạch trong các ứng dụng .NET của bạn.
-type: docs
 weight: 14
 url: /vi/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# Kết xuất bố cục đơn trong bản vẽ CAD
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc xử lý và xem các bản vẽ CAD là một yêu cầu chung. GroupDocs.Viewer dành cho .NET đơn giản hóa tác vụ này bằng cách cung cấp giải pháp toàn diện để hiển thị bản vẽ CAD trong các ứng dụng .NET. Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc hiển thị một bố cục duy nhất trong bản vẽ CAD bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

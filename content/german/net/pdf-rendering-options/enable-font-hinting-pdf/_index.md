@@ -3,10 +3,12 @@ title: Aktivieren Sie Schriftartenhinweise in PDF
 linktitle: Aktivieren Sie Schriftartenhinweise in PDF
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Schriftartenhinweise in PDF-Dokumenten aktivieren. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Integration.
-type: docs
 weight: 14
 url: /de/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Aktivieren Sie Schriftartenhinweise in PDF
+
 ## Einführung
 GroupDocs.Viewer für .NET ist ein leistungsstarkes Tool zum Anzeigen und Bearbeiten verschiedener Dokumentformate in .NET-Anwendungen. Unabhängig davon, ob Sie mit PDFs, Microsoft Office-Dokumenten, Bildern oder anderen Formaten arbeiten, bietet GroupDocs.Viewer eine nahtlose Lösung für das Rendern und Interagieren mit diesen Dateien.
 ## Voraussetzungen

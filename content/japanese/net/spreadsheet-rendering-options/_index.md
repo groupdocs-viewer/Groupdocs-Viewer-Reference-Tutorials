@@ -3,10 +3,12 @@ title: スプレッドシートのレンダリング オプション
 linktitle: スプレッドシートのレンダリング オプション
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer チュートリアルを使用して、.NET でのドキュメントの視覚化を簡単に強化します。テキストのオーバーフローを調整したり、グリッド線をレンダリングしたりする方法を学びます。
-type: docs
 weight: 37
 url: /ja/net/spreadsheet-rendering-options/
 ---
+
+# スプレッドシートのレンダリング オプション
+
 ## 導入
 
 .NET でのドキュメント表示エクスペリエンスを向上させる準備はできていますか? GroupDocs.Viewer for .NET は、スプレッドシートのレンダリングを最適化するための包括的なチュートリアル セットを提供します。テキストのオーバーフローの調整から非表示の列や行のレンダリングまで、すべてをカバーします。スプレッドシートのレンダリング オプションの世界に飛び込んで、GroupDocs.Viewer for .NET の可能性を最大限に引き出してみましょう。

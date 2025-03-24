@@ -3,10 +3,12 @@ title: 노트 렌더링 및 시간 단위 조정(MS 프로젝트)
 linktitle: 노트 렌더링 및 시간 단위 조정(MS 프로젝트)
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 MS 프로젝트 문서를 마스터 렌더링합니다. 노트를 렌더링하고, 시간 단위를 조정하고, 다양한 출력 형식을 쉽게 탐색할 수 있습니다.
-type: docs
 weight: 11
 url: /ko/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# 노트 렌더링 및 시간 단위 조정(MS 프로젝트)
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 .NET 응용 프로그램 내에서 다양한 문서 형식을 보고 조작할 수 있는 강력한 문서 렌더링 API입니다. 이 튜토리얼에서는 특히 MS 프로젝트 문서에 대한 노트 렌더링 및 시간 단위 조정에 중점을 둘 것입니다.
 ## 전제조건
@@ -87,6 +89,6 @@ viewer.View(options);
 ### .NET용 GroupDocs.Viewer에 대한 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  방문하다[이 링크](https://purchase.groupdocs.com/temporary-license/) 임시면허를 취득하기 위해
 ### .NET용 GroupDocs.Viewer에 대한 설명서는 어디서 찾을 수 있나요?
- 문서를 참조하세요[여기](https://reference.groupdocs.com/viewer/net/).
+ 문서를 참조하세요[여기](https://tutorials.groupdocs.com/viewer/net/).
 ### .NET용 GroupDocs.Viewer와 관련된 지원을 받거나 질문을 할 수 있는 곳은 어디입니까?
  지원 포럼을 방문할 수 있습니다.[여기](https://forum.groupdocs.com/c/viewer/9).

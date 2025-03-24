@@ -3,10 +3,12 @@ title: 从 Stream 设置许可证
 linktitle: 从 Stream 设置许可证
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 增强您的 .NET 应用程序，以实现无缝文档查看。按照我们的分步指南，轻松集成强大的文档查看功能。
-type: docs
 weight: 11
 url: /zh/net/getting-started/set-license-from-stream/
 ---
+
+# 从 Stream 设置许可证
+
 ## 介绍
 您是否希望为您的 .NET 应用程序提供高级文档查看功能？ GroupDocs.Viewer for .NET 提供了一个全面的解决方案，可将文档查看功能无缝集成到您的项目中。在本教程中，我们将深入研究利用 GroupDocs.Viewer for .NET 通过强大的文档查看功能丰富您的应用程序的过程。 
 ## 先决条件
@@ -14,7 +16,7 @@ url: /zh/net/getting-started/set-license-from-stream/
 1. .NET 开发的基本知识：熟悉 C# 和 .NET 框架对于学习本教程至关重要。
    
 2.  GroupDocs.Viewer for .NET 软件包：确保您已下载并安装 GroupDocs.Viewer for .NET 软件包。您可以从[下载链接](https://releases.groupdocs.com/viewer/net/).
-3. 访问 GroupDocs 文档：保留[文档](https://reference.groupdocs.com/viewer/net/)方便集成过程中参考。
+3. 访问 GroupDocs 文档：保留[文档](https://tutorials.groupdocs.com/viewer/net/)方便集成过程中参考。
 
 ## 导入命名空间
 首先，将必要的命名空间导入到您的 .NET 应用程序中。按着这些次序：

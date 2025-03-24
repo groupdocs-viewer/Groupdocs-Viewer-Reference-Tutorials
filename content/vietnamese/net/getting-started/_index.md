@@ -3,10 +3,12 @@ title: Bắt đầu
 linktitle: Bắt đầu
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá hướng dẫn từng bước để tích hợp GroupDocs.Viewer dành cho .NET vào ứng dụng của bạn một cách liền mạch. Tìm hiểu cách đặt giấy phép và tùy chỉnh giao diện của người xem.
-type: docs
 weight: 26
 url: /vi/net/getting-started/
 ---
+
+# Bắt đầu
+
 
 ## Giới thiệu
 

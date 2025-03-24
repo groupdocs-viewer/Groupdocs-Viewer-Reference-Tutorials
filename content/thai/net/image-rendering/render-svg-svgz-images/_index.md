@@ -3,10 +3,12 @@ title: เรนเดอร์รูปภาพ SVG และ SVGZ
 linktitle: เรนเดอร์รูปภาพ SVG และ SVGZ
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์รูปภาพ SVG และ SVGZ โดยใช้ GroupDocs.Viewer สำหรับ .NET แปลงกราฟิกแบบเวกเตอร์เป็น HTML, JPG, PNG และ PDF ได้อย่างง่ายดาย
-type: docs
 weight: 16
 url: /th/net/image-rendering/render-svg-svgz-images/
 ---
+
+# เรนเดอร์รูปภาพ SVG และ SVGZ
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดกระบวนการเรนเดอร์รูปภาพ SVG และ SVGZ โดยใช้ GroupDocs.Viewer สำหรับ .NET GroupDocs.Viewer สำหรับ .NET เป็น API การเรนเดอร์เอกสารอันทรงพลังที่ช่วยให้นักพัฒนาสามารถเรนเดอร์รูปแบบเอกสารที่หลากหลายในแอปพลิเคชัน .NET ของตนได้ SVG และ SVGZ เป็นรูปแบบรูปภาพยอดนิยมที่ใช้สำหรับกราฟิกแบบเวกเตอร์ และด้วย GroupDocs.Viewer สำหรับ .NET คุณสามารถเรนเดอร์เป็นรูปแบบเอาต์พุตต่างๆ เช่น HTML, JPG, PNG และ PDF ได้อย่างง่ายดาย
 ## ข้อกำหนดเบื้องต้น

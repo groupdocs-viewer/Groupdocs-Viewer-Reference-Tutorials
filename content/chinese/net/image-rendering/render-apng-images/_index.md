@@ -3,10 +3,12 @@ title: 渲染 APNG 图像
 linktitle: 渲染 APNG 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 以各种格式呈现 APNG 图像。包含代码示例的分步指南。
-type: docs
 weight: 11
 url: /zh/net/image-rendering/render-apng-images/
 ---
+
+# 渲染 APNG 图像
+
 ## 介绍
 Groupdocs.Viewer for .NET 是一个功能强大的工具，允许开发人员在其 .NET 应用程序中无缝呈现各种文档格式。在其众多功能中，它提供了渲染 APNG（动画便携式网络图形）图像的强大功能，使开发人员能够以不同格式（例如 HTML、JPG、PNG 和 PDF）显示 APNG 图像。
 

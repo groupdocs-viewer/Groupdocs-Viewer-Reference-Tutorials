@@ -3,10 +3,12 @@ title: 셀의 텍스트 오버플로 조정
 linktitle: 셀의 텍스트 오버플로 조정
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하면 .NET 문서의 텍스트 오버플로를 쉽게 관리할 수 있습니다. 가독성과 사용자 경험을 향상시킵니다. 지금 무료 평가판을 다운로드하세요.
-type: docs
 weight: 10
 url: /ko/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# 셀의 텍스트 오버플로 조정
+
 ## 소개
 .NET 개발의 역동적인 세계에서 셀의 텍스트 오버플로를 관리하는 것은 시각적으로 매력적이고 읽기 쉬운 문서를 만드는 데 중요합니다. .NET용 GroupDocs.Viewer는 개발자에게 스프레드시트 문서의 텍스트 오버플로를 원활하게 처리할 수 있는 포괄적인 도구 세트를 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 셀의 텍스트 오버플로를 조정하는 과정을 안내합니다.
 ## 전제조건
@@ -57,7 +59,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 결론적으로 .NET용 GroupDocs.Viewer는 셀의 텍스트 오버플로를 처리하는 작업을 단순화하여 문서가 기능적일 뿐만 아니라 시각적으로도 세련되도록 보장합니다. 이러한 단계를 통해 스프레드시트 문서의 사용자 경험과 가독성을 쉽게 향상시킬 수 있습니다.
 ## 자주 묻는 질문
 ### 1. 모든 유형의 문서에 .NET용 GroupDocs.Viewer를 사용할 수 있습니까?
- 예, .NET용 GroupDocs.Viewer는 스프레드시트, 프리젠테이션 등을 포함한 광범위한 문서 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/viewer/net/) 전체 목록을 보려면.
+ 예, .NET용 GroupDocs.Viewer는 스프레드시트, 프리젠테이션 등을 포함한 광범위한 문서 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/viewer/net/) 전체 목록을 보려면.
 ### 2. 무료 평가판이 있나요?
  예, 다음을 다운로드하여 .NET용 GroupDocs.Viewer의 기능을 탐색할 수 있습니다.[무료 시험판](https://releases.groupdocs.com/).
 ### 3. 문제가 있는 경우 어떻게 지원을 받을 수 있나요?

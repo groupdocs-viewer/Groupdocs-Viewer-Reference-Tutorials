@@ -3,10 +3,12 @@ title: Afficher les en-têtes de lignes et de colonnes
 linktitle: Afficher les en-têtes de lignes et de colonnes
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez l'affichage des documents dans .NET ! Apprenez à afficher les en-têtes de lignes et de colonnes à l'aide de GroupDocs.Viewer pour .NET. Explorez les sorties HTML, JPG, PNG et PDF.
-type: docs
 weight: 18
 url: /fr/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Afficher les en-têtes de lignes et de colonnes
+
 ## Introduction
 Cherchez-vous à améliorer votre expérience de visualisation de documents dans les applications .NET ? Avec GroupDocs.Viewer pour .NET, vous pouvez afficher de manière transparente les en-têtes de lignes et de colonnes à partir de vos feuilles de calcul. Dans ce didacticiel, nous vous guiderons tout au long du processus de rendu des en-têtes de lignes et de colonnes à l'aide de différents formats de sortie tels que HTML, JPG, PNG et PDF.
 ## Conditions préalables

@@ -3,10 +3,12 @@ title: เรนเดอร์เส้นกริด
 linktitle: เรนเดอร์เส้นกริด
 second_title: GroupDocs.Viewer .NET API
 description: ปรับปรุงการแสดงภาพเอกสารด้วย GroupDocs.Viewer สำหรับ .NET เรนเดอร์เส้นตารางได้อย่างง่ายดาย ลองทดลองใช้ฟรีทันที! #GroupDocs #ผู้ดู
-type: docs
 weight: 12
 url: /th/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# เรนเดอร์เส้นกริด
+
 ## การแนะนำ
 ยินดีต้อนรับสู่คำแนะนำทีละขั้นตอนเกี่ยวกับการใช้ GroupDocs.Viewer สำหรับ .NET เพื่อแสดงเส้นตารางในเอกสารของคุณ ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มใช้ .NET Framework บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการพร้อมคำอธิบายโดยละเอียดและตัวอย่างที่ปฏิบัติตามได้ง่าย
 ## ข้อกำหนดเบื้องต้น
@@ -66,6 +68,6 @@ viewer.View(options, 1, 2, 3);
 ### มีใบอนุญาตชั่วคราวสำหรับ GroupDocs.Viewer สำหรับ .NET หรือไม่
  ใช่ คุณสามารถได้รับ[ใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/) สำหรับ GroupDocs.Viewer สำหรับ .NET
 ### ฉันสามารถค้นหาเอกสารโดยละเอียดสำหรับ GroupDocs.Viewer สำหรับ .NET ได้หรือไม่
- อย่างแน่นอน! อ้างถึง[เอกสารอย่างเป็นทางการ](https://reference.groupdocs.com/viewer/net/) สำหรับข้อมูลเชิงลึกเกี่ยวกับการใช้ GroupDocs.Viewer สำหรับ .NET
+ อย่างแน่นอน! อ้างถึง[เอกสารอย่างเป็นทางการ](https://tutorials.groupdocs.com/viewer/net/) สำหรับข้อมูลเชิงลึกเกี่ยวกับการใช้ GroupDocs.Viewer สำหรับ .NET
 ### ฉันจะดาวน์โหลด GroupDocs.Viewer สำหรับ .NET เวอร์ชันล่าสุดได้ที่ไหน
  ดาวน์โหลดไลบรารีได้จาก[หน้าเปิดตัวอย่างเป็นทางการ](https://releases.groupdocs.com/viewer/net/).

@@ -3,10 +3,12 @@ title: Vykreslování dokumentů Microsoft Project
 linktitle: Vykreslování dokumentů Microsoft Project
 second_title: GroupDocs.Viewer .NET API
 description: Pomocí GroupDocs.Viewer pro .NET můžete snadno získat informace o zobrazení dokumentů Microsoft Project. Zvyšte produktivitu pomocí všestranných možností vykreslování.
-type: docs
 weight: 40
 url: /cs/net/rendering-ms-project-documents/
 ---
+
+# Vykreslování dokumentů Microsoft Project
+
 ## Úvod
 
 V oblasti vývoje softwaru je prvořadá efektivní správa a prohlížení dokumentů Microsoft Project. S příchodem GroupDocs.Viewer pro .NET se tento proces zjednodušuje a nabízí vývojářům komplexní sadu nástrojů pro snadné zvládnutí těchto úkolů.

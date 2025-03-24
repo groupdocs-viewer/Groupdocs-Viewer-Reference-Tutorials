@@ -3,10 +3,12 @@ title: Kết xuất PDF với kích thước trang gốc
 linktitle: Kết xuất PDF với kích thước trang gốc
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tệp PDF với kích thước trang gốc bằng GroupDocs.Viewer dành cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi và tích hợp liền mạch chức năng này.
-type: docs
 weight: 17
 url: /vi/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# Kết xuất PDF với kích thước trang gốc
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, GroupDocs.Viewer nổi bật như một công cụ mạnh mẽ để hiển thị các định dạng tài liệu khác nhau, bao gồm cả tệp PDF. Một yêu cầu phổ biến trong việc xử lý tài liệu là hiển thị các tệp PDF trong khi vẫn giữ nguyên kích thước trang gốc của chúng. Để đạt được nhiệm vụ này một cách liền mạch đòi hỏi sự hiểu biết toàn diện về GroupDocs.Viewer cho .NET và các chức năng của nó.
 ## Điều kiện tiên quyết

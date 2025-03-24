@@ -3,10 +3,12 @@ title: Visio 문서 렌더링
 linktitle: Visio 문서 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 Visio 문서를 렌더링하는 방법에 대한 자습서를 살펴보세요. .NET 애플리케이션에서 문서 보기 기능을 손쉽게 향상시키는 방법을 알아보세요.
-type: docs
 weight: 34
 url: /ko/net/rendering-visio-documents/
 ---
+
+# Visio 문서 렌더링
+
 ## 소개
 
 .NET 응용 프로그램 내에서 Visio 문서를 렌더링하는 방법을 더 자세히 알아보고 싶으십니까? .NET 자습서용 GroupDocs.Viewer만 있으면 됩니다. 이 종합 가이드에서는 프로세스를 단계별로 안내하여 문서 보기 기능을 원활하게 향상시킬 수 있도록 지원합니다.

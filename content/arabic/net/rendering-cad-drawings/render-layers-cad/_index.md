@@ -3,10 +3,12 @@ title: تقديم الطبقات في رسومات CAD
 linktitle: تقديم الطبقات في رسومات CAD
 second_title: GroupDocs.Viewer .NET API
 description: قم بعرض رسومات CAD بسلاسة في تطبيقات .NET باستخدام GroupDocs.Viewer لـ .NET. استكشف خيارات العرض، وقم بتخصيص الطبقات، والمزيد.
-type: docs
 weight: 13
 url: /ar/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# تقديم الطبقات في رسومات CAD
+
 ## مقدمة
 تعد GroupDocs.Viewer for .NET أداة قوية تمكن المطورين من دمج إمكانات عرض المستندات بسلاسة في تطبيقات .NET الخاصة بهم. سواء كنت بحاجة إلى عرض رسومات CAD أو ملفات PDF أو مستندات Microsoft Office أو أكثر، فإن GroupDocs.Viewer يوفر حلاً شاملاً.
 ## المتطلبات الأساسية
@@ -14,7 +16,7 @@ url: /ar/net/rendering-cad-drawings/render-layers-cad/
 - الفهم الأساسي للغة البرمجة C#.
 - تم إعداد بيئة تطوير .NET على جهازك.
 -  تم تثبيت GroupDocs.Viewer لـ .NET. يمكنك تنزيله من[هنا](https://releases.groupdocs.com/viewer/net/).
--  يمكنك الوصول إلى GroupDocs.Viewer للحصول على وثائق .NET كمرجع، والتي يمكن العثور عليها[هنا](https://reference.groupdocs.com/viewer/net/).
+-  يمكنك الوصول إلى GroupDocs.Viewer للحصول على وثائق .NET كمرجع، والتي يمكن العثور عليها[هنا](https://tutorials.groupdocs.com/viewer/net/).
 
 ## استيراد مساحات الأسماء
 لبدء استخدام GroupDocs.Viewer لـ .NET، تحتاج إلى استيراد مساحات الأسماء المطلوبة في مشروعك. اتبع الخطوات التالية:

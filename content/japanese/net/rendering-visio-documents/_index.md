@@ -3,10 +3,12 @@ title: Visio ドキュメントのレンダリング
 linktitle: Visio ドキュメントのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して Visio ドキュメントをレンダリングするチュートリアルをご覧ください。 .NET アプリケーションのドキュメント表示機能を簡単に強化する方法を学びます。
-type: docs
 weight: 34
 url: /ja/net/rendering-visio-documents/
 ---
+
+# Visio ドキュメントのレンダリング
+
 ## 導入
 
 .NET アプリケーション内での Visio ドキュメントのレンダリングについてさらに詳しく調べたいと考えていますか? GroupDocs.Viewer for .NET チュートリアル以外に探す必要はありません。この包括的なガイドでは、プロセスを段階的に説明し、ドキュメントの表示機能をシームレスに強化できるようにします。

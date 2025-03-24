@@ -3,10 +3,12 @@ title: Chargement de documents
 linktitle: Chargement de documents
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment charger et restituer efficacement des documents à l'aide de GroupDocs.Viewer .NET. Explorez les didacticiels de chargement de disque local, de flux et de FTP pour des applications .NET améliorées.
-type: docs
 weight: 20
 url: /fr/net/loading-documents/
 ---
+
+# Chargement de documents
+
 ## Introduction
 
 Bienvenue dans le guide complet sur le chargement de documents avec GroupDocs.Viewer pour .NET ! Que vous soyez un développeur chevronné ou un nouveau venu dans les applications .NET, nos didacticiels couvrent tous les aspects du chargement et du rendu efficaces des documents pour améliorer vos projets.

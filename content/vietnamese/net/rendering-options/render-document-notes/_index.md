@@ -3,10 +3,12 @@ title: Kết xuất tài liệu có ghi chú
 linktitle: Kết xuất tài liệu có ghi chú
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tài liệu có ghi chú bằng GroupDocs.Viewer cho .NET. Hướng dẫn từng bước để tích hợp liền mạch vào các ứng dụng .NET của bạn.
-type: docs
 weight: 14
 url: /vi/net/rendering-options/render-document-notes/
 ---
+
+# Kết xuất tài liệu có ghi chú
+
 ## Giới thiệu
 Trong lĩnh vực thao tác và xem tài liệu, GroupDocs.Viewer dành cho .NET là một giải pháp mạnh mẽ, cung cấp khả năng tích hợp liền mạch và các chức năng mạnh mẽ. Hướng dẫn này nhằm mục đích hướng dẫn bạn trong quá trình hiển thị tài liệu có ghi chú bằng GroupDocs.Viewer cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bước chân vào thế giới .NET, hướng dẫn từng bước này sẽ giúp bạn điều hướng những điểm phức tạp của việc kết xuất tài liệu một cách dễ dàng.
 ## Điều kiện tiên quyết

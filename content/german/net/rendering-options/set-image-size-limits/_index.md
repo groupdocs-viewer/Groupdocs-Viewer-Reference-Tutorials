@@ -3,10 +3,12 @@ title: Legen Sie Bildgrößenbeschränkungen fest
 linktitle: Legen Sie Bildgrößenbeschränkungen fest
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET mühelos Bildgrößenbeschränkungen in .NET-Anwendungen festlegen und so das Anzeigeerlebnis von Dokumenten verbessern.
-type: docs
 weight: 21
 url: /de/net/rendering-options/set-image-size-limits/
 ---
+
+# Legen Sie Bildgrößenbeschränkungen fest
+
 ## Einführung
 GroupDocs.Viewer für .NET ist ein leistungsstarkes Tool, das die nahtlose Anzeige von Dokumenten in .NET-Anwendungen ermöglicht. Mit seinen robusten Funktionen und der intuitiven Benutzeroberfläche können Entwickler mühelos Dokumentanzeigefunktionen in ihre Projekte integrieren und so das Benutzererlebnis und die Produktivität verbessern. In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Bildgrößenbeschränkungen festlegen, um eine optimale Anzeige von Dokumenten bei gleichzeitiger Beibehaltung von Leistung und Effizienz sicherzustellen.
 ## Voraussetzungen

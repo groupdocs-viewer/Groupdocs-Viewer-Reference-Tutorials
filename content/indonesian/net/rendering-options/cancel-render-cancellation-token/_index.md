@@ -3,10 +3,12 @@ title: Batalkan Render dengan Token Pembatalan
 linktitle: Batalkan Render dengan Token Pembatalan
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan Groupdocs.Viewer untuk .NET dengan lancar ke dalam proyek .NET Anda untuk tampilan dokumen yang efisien.
-type: docs
 weight: 11
 url: /id/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# Batalkan Render dengan Token Pembatalan
+
 ## Perkenalan
 Groupdocs.Viewer untuk .NET adalah alat canggih yang dirancang untuk menyederhanakan tampilan dan pemrosesan dokumen dalam aplikasi .NET. Baik Anda berurusan dengan PDF, dokumen Microsoft Office, atau format umum lainnya, perpustakaan ini menawarkan fungsionalitas yang kuat untuk mengintegrasikan kemampuan melihat dokumen dengan lancar ke dalam proyek .NET Anda.
 ## Prasyarat

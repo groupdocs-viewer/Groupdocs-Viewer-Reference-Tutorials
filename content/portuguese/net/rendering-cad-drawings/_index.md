@@ -3,10 +3,12 @@ title: Renderizando desenhos CAD
 linktitle: Renderizando desenhos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriais para renderizar desenhos CAD usando GroupDocs.Viewer for .NET. Aprenda a aprimorar aplicativos .NET com manipulação perfeita de arquivos CAD.
-type: docs
 weight: 25
 url: /pt/net/rendering-cad-drawings/
 ---
+
+# Renderizando desenhos CAD
+
 
 ## Introdução
 

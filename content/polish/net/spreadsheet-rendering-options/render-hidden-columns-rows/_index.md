@@ -3,10 +3,12 @@ title: Renderuj ukryte kolumny i wiersze
 linktitle: Renderuj ukryte kolumny i wiersze
 second_title: GroupDocs.Viewer API .NET
 description: Odblokuj ukryte dane w arkuszach kalkulacyjnych bez wysiłku, korzystając z GroupDocs.Viewer dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby odsłonić ukryte kolumny i wiersze.
-type: docs
 weight: 13
 url: /pl/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Renderuj ukryte kolumny i wiersze
+
 ## Wstęp
 W dziedzinie wizualizacji dokumentów GroupDocs.Viewer dla .NET jest solidnym narzędziem, które ułatwia płynne renderowanie różnych formatów dokumentów. Jedną z intrygujących możliwości jest możliwość ujawniania ukrytych kolumn i wierszy w arkuszach kalkulacyjnych. W tym samouczku omówimy kroki umożliwiające odblokowanie tej funkcji i uwolnienie potencjału Twoich danych.
 ## Warunki wstępne

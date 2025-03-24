@@ -3,10 +3,12 @@ title: Dostosuj jakość obrazu w formacie PDF
 linktitle: Dostosuj jakość obrazu w formacie PDF
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak dostosować jakość obrazu w dokumentach PDF za pomocą programu GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby zapewnić bezproblemową integrację.
-type: docs
 weight: 10
 url: /pl/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# Dostosuj jakość obrazu w formacie PDF
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to potężna biblioteka, która umożliwia programistom bezproblemową integrację możliwości renderowania dokumentów z aplikacjami .NET. Jedną z kluczowych funkcji tej biblioteki jest możliwość dostosowania jakości obrazu podczas renderowania dokumentów PDF. W tym samouczku przeprowadzimy Cię krok po kroku przez proces dostosowywania jakości obrazu przy użyciu programu GroupDocs.Viewer dla platformy .NET.
 ## Warunki wstępne

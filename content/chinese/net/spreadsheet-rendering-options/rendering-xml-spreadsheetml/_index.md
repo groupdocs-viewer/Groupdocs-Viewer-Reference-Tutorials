@@ -3,10 +3,12 @@ title: 呈现 XML SpreadSheetML
 linktitle: 呈现 XML SpreadSheetML
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 探索各种格式的 XML SpreadSheetML 文件的无缝呈现。轻松集成到您的应用程序中。
-type: docs
 weight: 16
 url: /zh/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
+
+# 呈现 XML SpreadSheetML
+
 ## 介绍
 欢迎来到 GroupDocs.Viewer for .NET 的世界！在本教程中，我们将指导您使用强大的 .NET 库 GroupDocs.Viewer 轻松渲染 XML SpreadSheetML 文件。无论您是经验丰富的开发人员还是新手，本分步指南都将帮助您轻松地将 XML SpreadSheetML 渲染集成到您的应用程序中。
 ## 先决条件
@@ -83,7 +85,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
 ### 我可以自定义渲染文档的外观吗？
 绝对地！ GroupDocs.Viewer 提供各种自定义选项，允许您根据您的特定需求定制输出。
 ### 我在哪里可以找到额外的支持和资源？
-参观[GroupDocs.Viewer 论坛](https://forum.groupdocs.com/c/viewer/9)寻求社区支持并探索[文档](https://reference.groupdocs.com/viewer/net/)获取详细信息。
+参观[GroupDocs.Viewer 论坛](https://forum.groupdocs.com/c/viewer/9)寻求社区支持并探索[文档](https://tutorials.groupdocs.com/viewer/net/)获取详细信息。
 ### 有免费试用吗？
 是的，您可以免费试用[这里](https://releases.groupdocs.com/).
 ### 如何获得临时许可证？

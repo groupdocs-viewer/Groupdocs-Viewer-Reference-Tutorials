@@ -3,10 +3,12 @@ title: Justera textspill i celler
 linktitle: Justera textspill i celler
 second_title: GroupDocs.Viewer .NET API
 description: Hantera textspill utan problem i .NET-dokument med GroupDocs.Viewer. Förbättra läsbarheten och användarupplevelsen. Ladda ner din kostnadsfria testversion nu.
-type: docs
 weight: 10
 url: /sv/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Justera textspill i celler
+
 ## Introduktion
 I den dynamiska .NET-utvecklingsvärlden är hantering av textspill i celler avgörande för att skapa visuellt tilltalande och läsbara dokument. GroupDocs.Viewer för .NET ger utvecklare en omfattande uppsättning verktyg för att sömlöst hantera textspill i kalkylarksdokument. Denna handledning guidar dig genom processen att justera textspill i celler med GroupDocs.Viewer för .NET.
 ## Förutsättningar
@@ -57,7 +59,7 @@ Nu har du justerat textspill i celler med hjälp av GroupDocs.Viewer för .NET. 
 Sammanfattningsvis förenklar GroupDocs.Viewer för .NET uppgiften att hantera textspill i celler, vilket säkerställer att dina dokument inte bara är funktionella utan också visuellt polerade. Med dessa steg kan du förbättra användarupplevelsen och läsbarheten för dina kalkylarksdokument utan ansträngning.
 ## Vanliga frågor
 ### 1. Kan jag använda GroupDocs.Viewer för .NET med någon typ av dokument?
- Ja, GroupDocs.Viewer för .NET stöder ett brett utbud av dokumentformat, inklusive kalkylblad, presentationer och mer. Referera till[dokumentation](https://reference.groupdocs.com/viewer/net/) för hela listan.
+ Ja, GroupDocs.Viewer för .NET stöder ett brett utbud av dokumentformat, inklusive kalkylblad, presentationer och mer. Referera till[dokumentation](https://tutorials.groupdocs.com/viewer/net/) för hela listan.
 ### 2. Finns det en gratis provperiod?
  Ja, du kan utforska funktionerna i GroupDocs.Viewer för .NET genom att ladda ner[gratis provperiod](https://releases.groupdocs.com/).
 ### 3. Hur kan jag få support för eventuella problem?

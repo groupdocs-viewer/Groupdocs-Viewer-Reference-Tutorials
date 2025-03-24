@@ -3,10 +3,12 @@ title: Render Grid Lines
 linktitle: Render Grid Lines
 second_title: GroupDocs.Viewer .NET API
 description: Βελτιώστε την οπτικοποίηση εγγράφων με το GroupDocs.Viewer για .NET. Αποδώστε τις γραμμές πλέγματος χωρίς κόπο. Δοκιμάστε τη δωρεάν δοκιμή τώρα! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /el/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Render Grid Lines
+
 ## Εισαγωγή
 Καλώς ορίσατε σε αυτόν τον αναλυτικό οδηγό σχετικά με τη χρήση του GroupDocs.Viewer για .NET για την απόδοση γραμμών πλέγματος στα έγγραφά σας. Είτε είστε έμπειρος προγραμματιστής είτε νέος χρήστης στο πλαίσιο .NET, αυτός ο οδηγός θα σας καθοδηγήσει στη διαδικασία με λεπτομερείς επεξηγήσεις και εύχρηστα παραδείγματα.
 ## Προαπαιτούμενα
@@ -66,6 +68,6 @@ viewer.View(options, 1, 2, 3);
 ### Είναι διαθέσιμες προσωρινές άδειες για το GroupDocs.Viewer για .NET;
  Ναι, μπορείτε να αποκτήσετε ένα[προσωρινή άδεια](https://purchase.groupdocs.com/temporary-license/) για το GroupDocs.Viewer για .NET.
 ### Μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Viewer για .NET;
- Απολύτως! Αναφέρομαι στο[επίσημη τεκμηρίωση](https://reference.groupdocs.com/viewer/net/) για εις βάθος πληροφορίες σχετικά με τη χρήση του GroupDocs.Viewer για .NET.
+ Απολύτως! Αναφέρομαι στο[επίσημη τεκμηρίωση](https://tutorials.groupdocs.com/viewer/net/) για εις βάθος πληροφορίες σχετικά με τη χρήση του GroupDocs.Viewer για .NET.
 ### Πού μπορώ να κατεβάσω την πιο πρόσφατη έκδοση του GroupDocs.Viewer για .NET;
  Κατεβάστε τη βιβλιοθήκη από το[επίσημη σελίδα έκδοσης](https://releases.groupdocs.com/viewer/net/).

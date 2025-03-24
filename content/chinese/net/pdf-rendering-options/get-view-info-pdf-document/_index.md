@@ -3,10 +3,12 @@ title: 获取 PDF 文档的查看信息
 linktitle: 获取 PDF 文档的查看信息
 second_title: GroupDocs.Viewer .NET API
 description: 在这个综合教程中了解如何使用 GroupDocs.Viewer for .NET 从 PDF 文档中提取视图信息。
-type: docs
 weight: 16
 url: /zh/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# 获取 PDF 文档的查看信息
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一款功能强大的工具，旨在简化 .NET 应用程序中的文档查看。无论您是处理 PDF、Word 文档、Excel 电子表格还是 PowerPoint 演示文稿，该库都可以简化各种文件格式的渲染和交互过程。在本教程中，我们将重点关注如何利用 GroupDocs.Viewer 的功能专门从 PDF 文档中提取视图信息。
 ## 先决条件

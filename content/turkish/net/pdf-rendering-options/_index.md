@@ -3,10 +3,12 @@ title: PDF Oluşturma Seçenekleri
 linktitle: PDF Oluşturma Seçenekleri
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer .NET eğitimleriyle PDF görüntülemeyi nasıl optimize edeceğinizi öğrenin. Görüntü kalitesini ayarlama ve metin seçimini devre dışı bırakma gibi PDF oluşturma seçeneklerini keşfedin.
-type: docs
 weight: 38
 url: /tr/net/pdf-rendering-options/
 ---
+
+# PDF Oluşturma Seçenekleri
+
 
 ## giriiş
 

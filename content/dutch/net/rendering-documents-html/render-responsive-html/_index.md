@@ -3,10 +3,12 @@ title: Geef responsieve HTML weer
 linktitle: Geef responsieve HTML weer
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u responsieve HTML kunt weergeven met Groupdocs.Viewer voor .NET, zodat u een optimale kijkervaring op alle apparaten kunt garanderen.
-type: docs
 weight: 13
 url: /nl/net/rendering-documents-html/render-responsive-html/
 ---
+
+# Geef responsieve HTML weer
+
 ## Invoering
 Groupdocs.Viewer voor .NET is een krachtige bibliotheek waarmee ontwikkelaars verschillende documentformaten kunnen omzetten in responsieve HTML. Deze tutorial begeleidt u bij het renderen van responsieve HTML met Groupdocs.Viewer voor .NET. Aan het einde van deze zelfstudie kunt u documenten naadloos converteren naar HTML die zich aanpast aan verschillende schermformaten, waardoor een optimale kijkervaring op alle apparaten wordt gegarandeerd.
 ## Vereisten

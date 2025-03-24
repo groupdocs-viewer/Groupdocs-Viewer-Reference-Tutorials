@@ -3,10 +3,12 @@ title: 將文件渲染為圖像
 linktitle: 將文件渲染為圖像
 second_title: GroupDocs.Viewer .NET API
 description: 探索使用 GroupDocs.Viewer for .NET 將文件渲染為圖像的教學課程。優化影像質量，提取文字座標，增強使用者體驗。
-type: docs
 weight: 30
 url: /zh-hant/net/rendering-documents-images/
 ---
+
+# 將文件渲染為圖像
+
 ## 介紹
 
 在 .NET 開發領域，掌握文件對影像的渲染至關重要。 GroupDocs.Viewer 提供了一系列全面的教學來簡化此過程。從將文件渲染為 JPG/PNG 格式，到微調圖像品質和優化文字疊加，這些教程涵蓋了所有內容。

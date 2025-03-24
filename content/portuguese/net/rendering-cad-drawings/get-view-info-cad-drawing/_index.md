@@ -3,10 +3,12 @@ title: Obtenha informações de visualização para desenhos CAD
 linktitle: Obtenha informações de visualização para desenhos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como recuperar informações de visualização para desenhos CAD usando GroupDocs.Viewer for .NET. Aprimore seus aplicativos .NET com manipulação perfeita de arquivos CAD.
-type: docs
 weight: 10
 url: /pt/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Obtenha informações de visualização para desenhos CAD
+
 ## Introdução
 No mundo do desenvolvimento de software, o manuseio eficiente de desenhos CAD é crucial. Esteja você criando aplicativos para arquitetos, engenheiros ou designers, fornecer uma experiência de visualização perfeita para arquivos CAD pode aumentar muito a satisfação do usuário. GroupDocs.Viewer for .NET oferece uma solução poderosa para integrar facilmente recursos de visualização de arquivos CAD em seus aplicativos .NET. Neste tutorial, orientaremos você no processo de obtenção de informações de visualização para desenhos CAD usando GroupDocs.Viewer for .NET.
 ## Pré-requisitos

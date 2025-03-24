@@ -3,10 +3,12 @@ title: Laden Sie passwortgeschützte Dokumente
 linktitle: Laden Sie passwortgeschützte Dokumente
 second_title: GroupDocs.Viewer .NET-API
 description: Integrieren Sie mühelos die passwortgeschützte Dokumentenanzeige in .NET-Anwendungen mit GroupDocs.Viewer für .NET. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine reibungslose Installation.
-type: docs
 weight: 12
 url: /de/net/advanced-loading/load-password-protected-document/
 ---
+
+# Laden Sie passwortgeschützte Dokumente
+
 ## Einführung
 Im heutigen digitalen Zeitalter ist die nahtlose Verwaltung und Anzeige verschiedener Dokumentformate für viele Unternehmen und Privatpersonen gleichermaßen eine Notwendigkeit. Glücklicherweise bietet GroupDocs.Viewer für .NET eine umfassende Lösung für .NET-Entwickler, mit der sie Funktionen zur Dokumentenanzeige mühelos in ihre Anwendungen integrieren können. In diesem Tutorial befassen wir uns mit einer der wesentlichen Funktionen von GroupDocs.Viewer: dem Laden passwortgeschützter Dokumente. Wir werden den Prozess Schritt für Schritt aufschlüsseln, um sicherzustellen, dass Entwickler problemlos mitmachen und diese Funktion in ihre Projekte implementieren können.
 ## Voraussetzungen

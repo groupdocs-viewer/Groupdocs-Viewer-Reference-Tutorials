@@ -3,10 +3,12 @@ title: Vykreslit dokument do formátu JPGPNG
 linktitle: Vykreslit dokument do formátu JPGPNG
 second_title: GroupDocs.Viewer .NET API
 description: Objevte, jak plynule vykreslovat dokumenty do formátu JPG/PNG v .NET pomocí GroupDocs.Viewer pro lepší uživatelský zážitek a produktivitu.
-type: docs
 weight: 10
 url: /cs/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Vykreslit dokument do formátu JPGPNG
+
 ## Úvod
 
 Ve světě vývoje .NET je efektivní nakládání s dokumenty pro různé aplikace zásadní. Ať už budujete systém správy dokumentů, platformu elektronického obchodování nebo aplikaci s bohatým obsahem, schopnost bezproblémového prohlížení dokumentů je zásadní. Zde vstupuje do hry GroupDocs.Viewer for .NET, který nabízí komplexní řešení pro vykreslování dokumentů do různých formátů, jako jsou JPG a PNG.
@@ -106,7 +108,7 @@ Odpověď: Můžete požádat o dočasnou licenci od[tady](https://purchase.grou
 
 ### Otázka: Kde najdu dokumentaci k GroupDocs.Viewer pro .NET?
 
- Odpověď: K dispozici je podrobná dokumentace[tady](https://reference.groupdocs.com/viewer/net/).
+ Odpověď: K dispozici je podrobná dokumentace[tady](https://tutorials.groupdocs.com/viewer/net/).
 
 ### Otázka: Kde mohu získat podporu nebo klást otázky týkající se GroupDocs.Viewer pro .NET?
 

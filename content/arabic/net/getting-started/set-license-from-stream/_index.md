@@ -3,10 +3,12 @@ title: قم بتعيين الترخيص من الدفق
 linktitle: قم بتعيين الترخيص من الدفق
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين تطبيقات .NET الخاصة بك باستخدام GroupDocs.Viewer لعرض المستندات بسلاسة. اتبع دليلنا خطوة بخطوة وقم بدمج إمكانات عرض المستندات القوية دون عناء.
-type: docs
 weight: 11
 url: /ar/net/getting-started/set-license-from-stream/
 ---
+
+# قم بتعيين الترخيص من الدفق
+
 ## مقدمة
 هل تتطلع إلى تمكين تطبيقات .NET الخاصة بك من خلال إمكانيات عرض المستندات المتقدمة؟ يقدم GroupDocs.Viewer for .NET حلاً شاملاً لدمج وظائف عرض المستندات في مشروعاتك بسلاسة. في هذا البرنامج التعليمي، سنتعمق في عملية الاستفادة من GroupDocs.Viewer لـ .NET لإثراء تطبيقاتك بإمكانيات قوية لعرض المستندات. 
 ## المتطلبات الأساسية
@@ -14,7 +16,7 @@ url: /ar/net/getting-started/set-license-from-stream/
 1. المعرفة الأساسية بتطوير .NET: يعد الإلمام بـ C# و.NET Framework ضروريًا للمتابعة مع هذا البرنامج التعليمي.
    
 2.  GroupDocs.Viewer لحزمة .NET: تأكد من تنزيل وتثبيت GroupDocs.Viewer لحزمة .NET. يمكنك الحصول عليه من[رابط التحميل](https://releases.groupdocs.com/viewer/net/).
-3.  الوصول إلى وثائق GroupDocs: احتفظ بملف[توثيق](https://reference.groupdocs.com/viewer/net/) مفيد للرجوع إليه أثناء عملية التكامل.
+3.  الوصول إلى وثائق GroupDocs: احتفظ بملف[توثيق](https://tutorials.groupdocs.com/viewer/net/) مفيد للرجوع إليه أثناء عملية التكامل.
 
 ## استيراد مساحات الأسماء
 للبدء، قم باستيراد مساحات الأسماء الضرورية إلى تطبيق .NET الخاص بك. اتبع الخطوات التالية:

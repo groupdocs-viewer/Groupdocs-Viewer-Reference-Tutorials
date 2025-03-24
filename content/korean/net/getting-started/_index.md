@@ -3,10 +3,12 @@ title: 시작하기
 linktitle: 시작하기
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 응용 프로그램에 원활하게 통합하기 위한 단계별 자습서를 살펴보세요. 라이센스를 설정하고 뷰어 모양을 사용자 정의하는 방법을 알아보세요.
-type: docs
 weight: 26
 url: /ko/net/getting-started/
 ---
+
+# 시작하기
+
 
 ## 소개
 

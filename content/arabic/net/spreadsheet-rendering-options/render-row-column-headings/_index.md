@@ -3,10 +3,12 @@ title: عرض عناوين الصفوف والأعمدة
 linktitle: عرض عناوين الصفوف والأعمدة
 second_title: GroupDocs.Viewer .NET API
 description: تحسين عرض المستندات في .NET! تعرف على كيفية عرض عناوين الصفوف والأعمدة باستخدام GroupDocs.Viewer لـ .NET. استكشف مخرجات HTML وJPG وPNG وPDF.
-type: docs
 weight: 18
 url: /ar/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# عرض عناوين الصفوف والأعمدة
+
 ## مقدمة
 هل تتطلع إلى تحسين تجربة عرض المستندات في تطبيقات .NET؟ باستخدام GroupDocs.Viewer for .NET، يمكنك عرض عناوين الصفوف والأعمدة بسلاسة من ملفات جداول البيانات الخاصة بك. في هذا البرنامج التعليمي، سنرشدك خلال عملية عرض عناوين الصفوف والأعمدة باستخدام تنسيقات مخرجات مختلفة مثل HTML وJPG وPNG وPDF.
 ## المتطلبات الأساسية

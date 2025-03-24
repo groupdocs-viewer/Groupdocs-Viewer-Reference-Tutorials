@@ -3,10 +3,12 @@ title: Render Semua Tata Letak dalam Gambar CAD
 linktitle: Render Semua Tata Letak dalam Gambar CAD
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender semua tata letak dalam gambar CAD menggunakan GroupDocs.Viewer untuk .NET. Ikuti tutorial komprehensif kami untuk integrasi yang lancar.
-type: docs
 weight: 11
 url: /id/net/rendering-cad-drawings/render-all-layouts-cad/
 ---
+
+# Render Semua Tata Letak dalam Gambar CAD
+
 ## Perkenalan
 Dalam bidang manajemen dan visualisasi dokumen, GroupDocs.Viewer untuk .NET berdiri sebagai solusi serbaguna, memberdayakan pengembang untuk dengan mudah merender berbagai jenis dokumen dalam aplikasi .NET mereka. Di antara segudang kemampuannya terdapat kemampuan untuk merender gambar CAD secara efisien, termasuk tata letak rumit yang diperlukan. Dalam tutorial ini, kita akan mempelajari proses memanfaatkan GroupDocs.Viewer untuk .NET untuk merender semua tata letak yang ada dalam gambar CAD. 
 ## Prasyarat

@@ -3,10 +3,12 @@ title: Weergaveopties
 linktitle: Weergaveopties
 second_title: GroupDocs.Viewer .NET-API
 description: Integreer GroupDocs.Viewer voor .NET moeiteloos in uw toepassingen met tutorials over weergaveopties, van het toevoegen van watermerken tot het aanpassen van lettertypen.
-type: docs
 weight: 23
 url: /nl/net/rendering-options/
 ---
+
+# Weergaveopties
+
 
 ## Invoering
 

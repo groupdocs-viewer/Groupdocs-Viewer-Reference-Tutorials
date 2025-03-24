@@ -3,10 +3,12 @@ title: Nastavit licenci ze souboru
 linktitle: Nastavit licenci ze souboru
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak bez námahy integrovat GroupDocs.Viewer pro .NET do vašich aplikací. Nastavte licenci, prohlížejte dokumenty a přizpůsobte vzhled prohlížeče.
-type: docs
 weight: 10
 url: /cs/net/getting-started/set-license-from-file/
 ---
+
+# Nastavit licenci ze souboru
+
 ## Úvod
 GroupDocs.Viewer for .NET je výkonné rozhraní API pro prohlížeč dokumentů, které umožňuje vývojářům .NET bezproblémově integrovat možnosti prohlížení dokumentů do jejich aplikací. Ať už potřebujete zobrazovat dokumenty v různých formátech, jako je PDF, Microsoft Office nebo obrázky, GroupDocs.Viewer poskytuje spolehlivé řešení s rozsáhlými možnostmi přizpůsobení.
 ## Předpoklady

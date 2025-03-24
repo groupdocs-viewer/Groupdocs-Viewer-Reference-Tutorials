@@ -3,10 +3,12 @@ title: Rendering di pagine nascoste
 linktitle: Rendering di pagine nascoste
 second_title: API GroupDocs.Viewer .NET
 description: Migliora la tua applicazione .NET con GroupDocs.Viewer per un rendering dei documenti senza interruzioni. Segui la nostra guida passo passo per eseguire il rendering delle pagine nascoste senza sforzo.
-type: docs
 weight: 15
 url: /it/net/rendering-options/render-hidden-pages/
 ---
+
+# Rendering di pagine nascoste
+
 ## introduzione
 Nel mondo dello sviluppo .NET, la gestione e la visualizzazione efficiente dei documenti è fondamentale. Che si tratti di uso interno, presentazioni ai clienti o applicazioni Web, avere la possibilità di visualizzare diversi formati di documenti senza problemi è una necessità. È qui che entra in gioco GroupDocs.Viewer per .NET. Con le sue potenti funzionalità e l'interfaccia intuitiva, GroupDocs.Viewer semplifica il processo di rendering dei documenti nelle tue applicazioni .NET.
 ## Prerequisiti

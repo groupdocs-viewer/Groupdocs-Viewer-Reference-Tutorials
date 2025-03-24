@@ -3,10 +3,12 @@ title: Renderizar diseño único en dibujos CAD
 linktitle: Renderizar diseño único en dibujos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar un diseño único en dibujos CAD usando GroupDocs.Viewer para .NET. Pasos sencillos para una integración perfecta en sus aplicaciones .NET.
-type: docs
 weight: 14
 url: /es/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# Renderizar diseño único en dibujos CAD
+
 ## Introducción
 En el ámbito del desarrollo .NET, manipular y visualizar dibujos CAD es un requisito común. GroupDocs.Viewer para .NET simplifica esta tarea al proporcionar una solución integral para representar dibujos CAD dentro de aplicaciones .NET. En este tutorial, profundizaremos en la representación de un diseño único en dibujos CAD usando GroupDocs.Viewer para .NET.
 ## Requisitos previos

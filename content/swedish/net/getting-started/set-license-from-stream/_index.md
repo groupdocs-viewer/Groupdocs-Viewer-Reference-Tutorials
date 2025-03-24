@@ -3,10 +3,12 @@ title: Ställ in licens från Stream
 linktitle: Ställ in licens från Stream
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dina .NET-applikationer med GroupDocs.Viewer för sömlös dokumentvisning. Följ vår steg-för-steg-guide och integrera kraftfulla dokumentvisningsmöjligheter utan ansträngning.
-type: docs
 weight: 11
 url: /sv/net/getting-started/set-license-from-stream/
 ---
+
+# Ställ in licens från Stream
+
 ## Introduktion
 Vill du ge dina .NET-applikationer avancerade dokumentvisningsmöjligheter? GroupDocs.Viewer för .NET erbjuder en heltäckande lösning för att sömlöst integrera dokumentvisningsfunktioner i dina projekt. I den här självstudien kommer vi att fördjupa oss i processen att utnyttja GroupDocs.Viewer för .NET för att berika dina applikationer med kraftfulla dokumentvisningsmöjligheter. 
 ## Förutsättningar
@@ -14,7 +16,7 @@ Innan vi dyker in i integrationsprocessen, se till att du har följande föruts�
 1. Grundläggande kunskaper om .NET-utveckling: Bekantskap med C# och .NET framework är viktigt för att följa med i denna handledning.
    
 2.  GroupDocs.Viewer for .NET-paketet: Se till att du har laddat ner och installerat GroupDocs.Viewer for .NET-paketet. Du kan få det från[nedladdningslänk](https://releases.groupdocs.com/viewer/net/).
-3.  Tillgång till GroupDocs-dokumentation: Behåll[dokumentation](https://reference.groupdocs.com/viewer/net/) praktiskt som referens under integrationsprocessen.
+3.  Tillgång till GroupDocs-dokumentation: Behåll[dokumentation](https://tutorials.groupdocs.com/viewer/net/) praktiskt som referens under integrationsprocessen.
 
 ## Importera namnområden
 Till att börja med, importera de nödvändiga namnområdena till din .NET-applikation. Följ dessa steg:

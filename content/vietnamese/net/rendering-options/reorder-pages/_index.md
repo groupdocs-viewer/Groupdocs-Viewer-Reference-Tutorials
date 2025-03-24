@@ -3,10 +3,12 @@ title: Sắp xếp lại các trang trong tài liệu
 linktitle: Sắp xếp lại các trang trong tài liệu
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách sắp xếp lại các trang trong tài liệu bằng GroupDocs.Viewer dành cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tài liệu liền mạch.
-type: docs
 weight: 19
 url: /vi/net/rendering-options/reorder-pages/
 ---
+
+# Sắp xếp lại các trang trong tài liệu
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc quản lý và thao tác tài liệu một cách hiệu quả là rất quan trọng. GroupDocs.Viewer dành cho .NET cung cấp giải pháp mạnh mẽ để xem các định dạng tài liệu khác nhau trong ứng dụng của bạn. Một trong những nhiệm vụ thiết yếu mà các nhà phát triển thường gặp phải là sắp xếp lại các trang trong tài liệu. Cho dù bạn đang làm việc với tệp PDF, tài liệu Word hay các định dạng khác, khả năng sắp xếp lại các trang có thể hợp lý hóa quy trình làm việc và nâng cao trải nghiệm người dùng. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách sắp xếp lại thứ tự các trang trong tài liệu bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

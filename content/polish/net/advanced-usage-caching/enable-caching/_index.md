@@ -3,10 +3,12 @@ title: Włącz buforowanie, aby przyspieszyć przetwarzanie dokumentów
 linktitle: Włącz buforowanie, aby przyspieszyć przetwarzanie dokumentów
 second_title: GroupDocs.Viewer API .NET
 description: Zwiększ szybkość przetwarzania dokumentów w aplikacjach .NET dzięki GroupDocs.Viewer, wykorzystując buforowanie. Optymalizuj wydajność bez wysiłku.
-type: docs
 weight: 10
 url: /pl/net/advanced-usage-caching/enable-caching/
 ---
+
+# Włącz buforowanie, aby przyspieszyć przetwarzanie dokumentów
+
 ## Wstęp
 W obszarze przetwarzania dokumentów .NET optymalizacja wydajności jest najważniejsza. Wyobraź sobie scenariusz, w którym musisz szybko wyrenderować wiele stron dokumentu. Tutaj w grę wchodzi buforowanie. W tym samouczku omówimy wykorzystanie buforowania w celu zwiększenia szybkości przetwarzania dokumentów przy użyciu programu GroupDocs.Viewer dla platformy .NET.
 ## Warunki wstępne

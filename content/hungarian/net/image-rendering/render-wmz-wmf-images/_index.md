@@ -3,10 +3,12 @@ title: Rendereljen WMZ és WMF képeket
 linktitle: Rendereljen WMZ és WMF képeket
 second_title: GroupDocs.Viewer .NET API
 description: Könnyedén renderelhet WMZ és WMF képeket .NET alkalmazásokban a GroupDocs.Viewer for .NET segítségével. Fokozza könnyedén a dokumentumfeldolgozási képességeket.
-type: docs
 weight: 18
 url: /hu/net/image-rendering/render-wmz-wmf-images/
 ---
+
+# Rendereljen WMZ és WMF képeket
+
 ## Bevezetés
 
 A szoftverfejlesztés területén a különböző dokumentumformátumok hatékony kezelése és renderelése a legfontosabb. A GroupDocs.Viewer for .NET egy hatékony eszköz, amely megkönnyíti a dokumentumformátumok széles skálájának megjelenítését, zökkenőmentes integrációt és jobb felhasználói élményt biztosítva a .NET-alkalmazásokon belül. Lehetőségei közé tartozik a WMZ- és WMF-képek renderelése, amely gyakran előforduló feladat a dokumentumfeldolgozás során.
@@ -21,7 +23,7 @@ Mielőtt belemerülne a WMZ- és WMF-képek megjelenítési folyamatába a Group
 
 3. A .NET környezet ismerete: A .NET keretrendszer és a C# programozási nyelv alapvető ismerete elengedhetetlen a renderelési folyamat hatékony megvalósításához.
 
-4.  Integráció a projektbe: Győződjön meg arról, hogy a GroupDocs.Viewer for .NET megfelelően integrálva van a .NET-projektbe. Az integrációval kapcsolatos részletes utasításokért tekintse meg a dokumentációt:[Dokumentáció](https://reference.groupdocs.com/viewer/net/).
+4.  Integráció a projektbe: Győződjön meg arról, hogy a GroupDocs.Viewer for .NET megfelelően integrálva van a .NET-projektbe. Az integrációval kapcsolatos részletes utasításokért tekintse meg a dokumentációt:[Dokumentáció](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Névterek importálása
 

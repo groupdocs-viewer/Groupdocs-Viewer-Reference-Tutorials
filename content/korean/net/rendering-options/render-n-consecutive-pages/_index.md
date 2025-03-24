@@ -3,10 +3,12 @@ title: N 연속 페이지 렌더링
 linktitle: N 연속 페이지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 응용 프로그램에 통합하여 N개의 연속 페이지로 문서를 손쉽게 렌더링하는 방법을 알아보세요.
-type: docs
 weight: 16
 url: /ko/net/rendering-options/render-n-consecutive-pages/
 ---
+
+# N 연속 페이지 렌더링
+
 ## 소개
 .NET 개발 영역에서 문서 보기 기능을 애플리케이션에 통합하면 사용자 경험과 기능이 크게 향상될 수 있습니다. 원활한 문서 렌더링을 용이하게 하는 도구 중 하나는 .NET용 GroupDocs.Viewer입니다. 이 강력한 라이브러리를 통해 개발자는 애플리케이션 내에서 다양한 문서 형식을 쉽게 표시할 수 있습니다.
 ## 전제조건

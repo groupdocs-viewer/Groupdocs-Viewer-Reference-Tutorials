@@ -3,10 +3,12 @@ title: Réteges megjelenítés engedélyezése PDF-ben
 linktitle: Réteges megjelenítés engedélyezése PDF-ben
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan engedélyezheti a réteges megjelenítést PDF-dokumentumokban a GroupDocs.Viewer for .NET segítségével. Fokozza a dokumentummegtekintési élményt könnyedén.
-type: docs
 weight: 15
 url: /hu/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Réteges megjelenítés engedélyezése PDF-ben
+
 ## Bevezetés
 Ebben az oktatóanyagban a GroupDocs.Viewer for .NET használatával lehetővé teszi a réteges megjelenítést PDF dokumentumokban. A réteges megjelenítés lehetővé teszi a dokumentumok jobb megjelenítését és kezelését, így a felhasználók interaktívabb megtekintési élményt nyújtanak.
 ## Előfeltételek

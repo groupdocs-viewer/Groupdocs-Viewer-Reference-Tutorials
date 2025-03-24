@@ -3,10 +3,12 @@ title: Ładowanie dokumentów
 linktitle: Ładowanie dokumentów
 second_title: GroupDocs.Viewer API .NET
 description: Odkryj, jak efektywnie ładować i renderować dokumenty przy użyciu GroupDocs.Viewer .NET. Zapoznaj się z samouczkami dotyczącymi ładowania dysku lokalnego, strumienia i protokołu FTP dla ulepszonych aplikacji .NET.
-type: docs
 weight: 20
 url: /pl/net/loading-documents/
 ---
+
+# Ładowanie dokumentów
+
 ## Wstęp
 
 Witamy w kompleksowym przewodniku dotyczącym ładowania dokumentów za pomocą GroupDocs.Viewer dla .NET! Niezależnie od tego, czy jesteś doświadczonym programistą, czy nowicjuszem w aplikacjach .NET, nasze samouczki obejmują wszystkie aspekty wydajnego ładowania i renderowania dokumentów w celu ulepszenia Twoich projektów.

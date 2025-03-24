@@ -3,10 +3,12 @@ title: 在渲染期間重命名電子郵件字段
 linktitle: 在渲染期間重命名電子郵件字段
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 增強文件檢視體驗。無縫渲染和自訂電子郵件。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-email-messages/rename-email-fields/
 ---
+
+# 在渲染期間重命名電子郵件字段
+
 ## 介紹
 
 在當今的數位時代，有效管理和查看文件對於企業和個人來說至關重要。無論是合約、報告或電子郵件，能夠無縫瀏覽這些文件都可以大大提高工作效率。這就是 GroupDocs.Viewer for .NET 發揮作用的地方。這個強大的程式庫允許開發人員將文件檢視功能直接整合到他們的 .NET 應用程式中，提供用於呈現各種文件格式的廣泛功能。

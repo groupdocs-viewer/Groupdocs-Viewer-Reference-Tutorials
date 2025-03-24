@@ -3,10 +3,12 @@ title: Obtenir des informations sur les dessins CAO
 linktitle: Obtenir des informations sur les dessins CAO
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment récupérer des informations de vue pour les dessins CAO à l'aide de GroupDocs.Viewer for .NET. Améliorez vos applications .NET avec une gestion transparente des fichiers CAO.
-type: docs
 weight: 10
 url: /fr/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Obtenir des informations sur les dessins CAO
+
 ## Introduction
 Dans le monde du développement de logiciels, la gestion efficace des dessins CAO est cruciale. Que vous créiez des applications pour des architectes, des ingénieurs ou des concepteurs, offrir une expérience de visualisation transparente des fichiers CAO peut grandement améliorer la satisfaction des utilisateurs. GroupDocs.Viewer pour .NET offre une solution puissante pour intégrer sans effort les capacités de visualisation de fichiers CAO dans vos applications .NET. Dans ce didacticiel, nous vous guiderons tout au long du processus d'obtention d'informations d'affichage pour les dessins CAO à l'aide de GroupDocs.Viewer for .NET.
 ## Conditions préalables

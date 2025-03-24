@@ -3,10 +3,12 @@ title: Vykreslování XML SpreadSheetML
 linktitle: Vykreslování XML SpreadSheetML
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte bezproblémové vykreslování souborů XML SpreadSheetML v různých formátech pomocí GroupDocs.Viewer pro .NET. Snadná integrace do vašich aplikací.
-type: docs
 weight: 16
 url: /cs/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
+
+# Vykreslování XML SpreadSheetML
+
 ## Úvod
 Vítejte ve světě GroupDocs.Viewer pro .NET! V tomto tutoriálu vás provedeme jednoduchým vykreslováním souborů XML SpreadSheetML pomocí GroupDocs.Viewer, výkonné knihovny .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný průvodce vám pomůže bez námahy integrovat vykreslování XML SpreadSheetML do vašich aplikací.
 ## Předpoklady
@@ -83,7 +85,7 @@ Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně 
 ### Mohu upravit vzhled vykreslených dokumentů?
 Absolutně! GroupDocs.Viewer nabízí různé možnosti přizpůsobení, které vám umožní přizpůsobit výstup vašim konkrétním potřebám.
 ### Kde najdu další podporu a zdroje?
- Navštivte[Fórum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) za podporu komunity a prozkoumejte[dokumentace](https://reference.groupdocs.com/viewer/net/)pro podrobné informace.
+ Navštivte[Fórum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) za podporu komunity a prozkoumejte[dokumentace](https://tutorials.groupdocs.com/viewer/net/)pro podrobné informace.
 ### Je k dispozici bezplatná zkušební verze?
  Ano, máte přístup k bezplatné zkušební verzi[tady](https://releases.groupdocs.com/).
 ### Jak získám dočasnou licenci?

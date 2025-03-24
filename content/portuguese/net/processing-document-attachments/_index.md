@@ -3,10 +3,12 @@ title: Processando anexos de documentos
 linktitle: Processando anexos de documentos
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como integrar facilmente recursos de visualização de documentos em seus aplicativos .NET usando GroupDocs.Viewer. Gerencie anexos de documentos com eficiência.
-type: docs
 weight: 32
 url: /pt/net/processing-document-attachments/
 --- 
+
+# Processando anexos de documentos
+
 ## Introdução
 
 No domínio do desenvolvimento de aplicativos .NET, incorporar recursos eficientes de visualização de documentos é fundamental. Com o GroupDocs.Viewer for .NET, esse processo se torna não apenas simplificado, mas também extremamente intuitivo. Este artigo investiga as complexidades do manuseio perfeito de anexos de documentos em seus aplicativos .NET.

@@ -3,10 +3,12 @@ title: TGA 이미지 렌더링
 linktitle: TGA 이미지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET 응용 프로그램에서 TGA 이미지를 쉽게 렌더링하는 방법을 알아보세요. 이미지 렌더링 기능을 강화하세요.
-type: docs
 weight: 17
 url: /ko/net/image-rendering/render-tga-images/
 ---
+
+# TGA 이미지 렌더링
+
 ## 소개
 오늘날의 디지털 환경에서 다양한 이미지 형식을 원활하게 렌더링하는 기능은 많은 애플리케이션에 필수적입니다. 그러한 형식 중 하나가 TGA(Truevision Graphics Adapter)입니다. TGA(Truevision Graphics Adapter)는 고품질 이미지로 알려져 있으며 그래픽 집약적인 산업에서 널리 사용됩니다. TGA 이미지 렌더링을 애플리케이션에 통합하려는 .NET 개발자라면 잘 찾아오셨습니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 활용하여 TGA 이미지를 손쉽게 렌더링하는 방법을 살펴보겠습니다.
 ## 전제조건

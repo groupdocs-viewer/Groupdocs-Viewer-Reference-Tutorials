@@ -3,10 +3,12 @@ title: Vô hiệu hóa lựa chọn văn bản trong PDF
 linktitle: Vô hiệu hóa lựa chọn văn bản trong PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tắt tính năng chọn văn bản trong PDF bằng GroupDocs.Viewer dành cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp liền mạch.
-type: docs
 weight: 13
 url: /vi/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# Vô hiệu hóa lựa chọn văn bản trong PDF
+
 ## Giới thiệu
 GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển tích hợp khả năng xem tài liệu vào các ứng dụng .NET của họ một cách dễ dàng. Một trong những chức năng chính được GroupDocs.Viewer cung cấp là khả năng tắt tính năng chọn văn bản trong tài liệu PDF. Tính năng này đặc biệt hữu ích trong các tình huống mà bạn cần ngăn người dùng sao chép văn bản từ các tài liệu nhạy cảm, đảm bảo tính bảo mật và toàn vẹn của tài liệu.
 ## Điều kiện tiên quyết

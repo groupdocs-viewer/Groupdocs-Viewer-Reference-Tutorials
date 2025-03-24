@@ -3,10 +3,12 @@ title: Uso avanzado (almacenamiento en caché)
 linktitle: Uso avanzado (almacenamiento en caché)
 second_title: API GroupDocs.Viewer .NET
 description: Descubra técnicas avanzadas para optimizar la velocidad de procesamiento de documentos en aplicaciones .NET con GroupDocs.Viewer. ¡Aprenda cómo habilitar el almacenamiento en caché para un rendimiento más rápido ahora!
-type: docs
 weight: 22
 url: /es/net/advanced-usage-caching/
 ---
+
+# Uso avanzado (almacenamiento en caché)
+
 
 ## Introducción
 

@@ -3,10 +3,12 @@ title: Aktifkan Caching untuk Pemrosesan Dokumen Lebih Cepat
 linktitle: Aktifkan Caching untuk Pemrosesan Dokumen Lebih Cepat
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan kecepatan pemrosesan dokumen di aplikasi .NET dengan GroupDocs.Viewer dengan memanfaatkan caching. Optimalkan kinerja dengan mudah.
-type: docs
 weight: 10
 url: /id/net/advanced-usage-caching/enable-caching/
 ---
+
+# Aktifkan Caching untuk Pemrosesan Dokumen Lebih Cepat
+
 ## Perkenalan
 Dalam bidang pemrosesan dokumen .NET, mengoptimalkan kinerja adalah hal yang terpenting. Bayangkan sebuah skenario di mana Anda perlu merender beberapa halaman dokumen dengan cepat. Di sinilah caching berperan. Dalam tutorial ini, kita akan mempelajari cara memanfaatkan caching untuk meningkatkan kecepatan pemrosesan dokumen menggunakan GroupDocs.Viewer untuk .NET.
 ## Prasyarat

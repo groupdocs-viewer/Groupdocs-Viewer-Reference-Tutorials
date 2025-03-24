@@ -3,10 +3,12 @@ title: Image Rendering
 linktitle: Image Rendering
 second_title: GroupDocs.Viewer .NET API
 description: Discover comprehensive tutorials on rendering various image formats using GroupDocs.Viewer for .NET. From AI to WMF, learn seamless integration and coding examples.
-type: docs
 weight: 28
 url: /net/image-rendering/
 ---
+
+# Image Rendering
+
 
 ## Introduction
 

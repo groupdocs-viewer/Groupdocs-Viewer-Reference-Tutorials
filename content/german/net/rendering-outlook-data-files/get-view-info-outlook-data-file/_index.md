@@ -3,10 +3,12 @@ title: Ansichtsinformationen für Outlook-Datendateien (PST, OST) abrufen
 linktitle: Ansichtsinformationen für Outlook-Datendateien (PST, OST) abrufen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Ansichtsinformationen aus Outlook-Datendateien (PST, OST) extrahieren. Erweitern Sie mühelos Ihre Dokumentenverwaltungsfunktionen.
-type: docs
 weight: 10
 url: /de/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---
+
+# Ansichtsinformationen für Outlook-Datendateien (PST, OST) abrufen
+
 ## Einführung
 Im Bereich der Dokumentenverwaltung und -anzeige erweist sich GroupDocs.Viewer für .NET als leistungsstarkes Tool, insbesondere wenn es um den Umgang mit Outlook-Datendateien (PST, OST) geht. In diesem Tutorial befassen wir uns Schritt für Schritt mit dem Extrahieren von Ansichtsinformationen für diese Dateien.
 ## Voraussetzungen

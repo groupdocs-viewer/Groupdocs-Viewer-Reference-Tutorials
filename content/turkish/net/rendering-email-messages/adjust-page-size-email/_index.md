@@ -3,10 +3,12 @@ title: E-posta Mesajlarını Oluştururken Sayfa Boyutunu Ayarlayın
 linktitle: E-posta Mesajlarını Oluştururken Sayfa Boyutunu Ayarlayın
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak e-posta mesajlarını PDF'ye dönüştürürken sayfa boyutunu nasıl ayarlayacağınızı öğrenin. Belge görüntüleme verimliliğini artırın.
-type: docs
 weight: 10
 url: /tr/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# E-posta Mesajlarını Oluştururken Sayfa Boyutunu Ayarlayın
+
 ## giriiş
 .NET geliştirme alanında GroupDocs.Viewer, e-posta mesajları da dahil olmak üzere çeşitli belge formatlarının oluşturulmasına yönelik kapsamlı bir çözüm sunar. Bu eğitim, GroupDocs.Viewer for .NET kullanılarak e-posta iletilerini PDF biçiminde görüntülerken sayfa boyutunu ayarlamaya odaklanır. Bu kılavuzda özetlenen adımları izleyerek, özel gereksinimlerinizi karşılamak için sayfa boyutunu sorunsuz bir şekilde nasıl değiştireceğinizi öğreneceksiniz.
 ## Önkoşullar

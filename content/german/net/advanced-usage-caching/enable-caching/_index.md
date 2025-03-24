@@ -3,10 +3,12 @@ title: Aktivieren Sie Caching für eine schnellere Dokumentenverarbeitung
 linktitle: Aktivieren Sie Caching für eine schnellere Dokumentenverarbeitung
 second_title: GroupDocs.Viewer .NET-API
 description: Erhöhen Sie die Geschwindigkeit der Dokumentverarbeitung in .NET-Apps mit GroupDocs.Viewer durch die Nutzung von Caching. Optimieren Sie die Leistung mühelos.
-type: docs
 weight: 10
 url: /de/net/advanced-usage-caching/enable-caching/
 ---
+
+# Aktivieren Sie Caching für eine schnellere Dokumentenverarbeitung
+
 ## Einführung
 Im Bereich der .NET-Dokumentverarbeitung ist die Optimierung der Leistung von größter Bedeutung. Stellen Sie sich ein Szenario vor, in dem Sie mehrere Dokumentseiten schnell rendern müssen. Hier kommt Caching ins Spiel. In diesem Tutorial befassen wir uns mit der Nutzung von Caching zur Verbesserung der Verarbeitungsgeschwindigkeit von Dokumenten mithilfe von GroupDocs.Viewer für .NET.
 ## Voraussetzungen

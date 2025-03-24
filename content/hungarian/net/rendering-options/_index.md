@@ -3,10 +3,12 @@ title: Renderelési beállítások
 linktitle: Renderelési beállítások
 second_title: GroupDocs.Viewer .NET API
 description: Könnyedén integrálhatja a GroupDocs.Viewer for .NET-et alkalmazásaiba a megjelenítési lehetőségekről szóló oktatóanyagokkal, a vízjelek hozzáadásával a betűtípusok testreszabásáig.
-type: docs
 weight: 23
 url: /hu/net/rendering-options/
 ---
+
+# Renderelési beállítások
+
 
 ## Bevezetés
 

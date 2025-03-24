@@ -3,10 +3,12 @@ title: Ganti Font yang Hilang
 linktitle: Ganti Font yang Hilang
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengganti font yang hilang di dokumen .NET dengan mudah menggunakan GroupDocs.Viewer. Pastikan rendering akurat dengan langkah sederhana.
-type: docs
 weight: 20
 url: /id/net/rendering-options/replace-missing-font/
 ---
+
+# Ganti Font yang Hilang
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, penanganan dokumen yang efisien sangatlah penting. GroupDocs.Viewer untuk .NET memberikan solusi ampuh untuk melihat berbagai format dokumen dalam aplikasi .NET Anda. Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Viewer untuk .NET untuk mengganti font yang hilang di dokumen. Baik Anda menangani PDF, presentasi PowerPoint, atau dokumen Word, GroupDocs.Viewer menyederhanakan prosesnya, memastikan bahwa dokumen Anda ditampilkan secara akurat, bahkan ketika font hilang.
 ## Prasyarat

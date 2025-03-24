@@ -3,10 +3,12 @@ title: Imposta il formato data/ora e la differenza del fuso orario (e-mail)
 linktitle: Imposta il formato data/ora e la differenza del fuso orario (e-mail)
 second_title: API GroupDocs.Viewer .NET
 description: Integra GroupDocs.Viewer for .NET perfettamente nelle tue applicazioni per potenti funzionalità di visualizzazione dei documenti. Migliora l'esperienza utente con opzioni personalizzabili.
-type: docs
 weight: 11
 url: /it/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
+
+# Imposta il formato data/ora e la differenza del fuso orario (e-mail)
+
 
 ## introduzione
 GroupDocs.Viewer per .NET è un potente strumento che consente agli sviluppatori di integrare perfettamente le funzionalità di visualizzazione dei documenti nelle loro applicazioni .NET. Con GroupDocs.Viewer puoi visualizzare un'ampia gamma di formati di documenti tra cui PDF, documenti di Microsoft Office, immagini e altro direttamente all'interno della tua applicazione, senza la necessità di plug-in o visualizzatori esterni. In questo tutorial completo ti guideremo attraverso il processo di configurazione di GroupDocs.Viewer per .NET, esplorandone le funzionalità e dimostrando come utilizzarlo in modo efficace per migliorare le capacità di visualizzazione dei documenti della tua applicazione.

@@ -3,10 +3,12 @@ title: 高级用法（缓存）
 linktitle: 高级用法（缓存）
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 探索优化 .NET 应用程序中文档处理速度的先进技术。立即了解如何启用缓存以获得更快的性能！
-type: docs
 weight: 22
 url: /zh/net/advanced-usage-caching/
 ---
+
+# 高级用法（缓存）
+
 
 ## 介绍
 

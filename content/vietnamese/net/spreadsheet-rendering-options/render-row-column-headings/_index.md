@@ -3,10 +3,12 @@ title: Hiển thị tiêu đề hàng và cột
 linktitle: Hiển thị tiêu đề hàng và cột
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao khả năng xem tài liệu trong .NET! Tìm hiểu cách hiển thị tiêu đề hàng và cột bằng GroupDocs.Viewer cho .NET. Khám phá các kết quả đầu ra HTML, JPG, PNG và PDF.
-type: docs
 weight: 18
 url: /vi/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Hiển thị tiêu đề hàng và cột
+
 ## Giới thiệu
 Bạn đang tìm cách nâng cao trải nghiệm xem tài liệu của mình trong các ứng dụng .NET? Với GroupDocs.Viewer dành cho .NET, bạn có thể hiển thị liền mạch các tiêu đề hàng và cột từ tệp bảng tính của mình. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình hiển thị tiêu đề hàng và cột bằng các định dạng đầu ra khác nhau như HTML, JPG, PNG và PDF.
 ## Điều kiện tiên quyết

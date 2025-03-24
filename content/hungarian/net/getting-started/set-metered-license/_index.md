@@ -3,10 +3,12 @@ title: Állítsa be a mért licencet
 linktitle: Állítsa be a mért licencet
 second_title: GroupDocs.Viewer .NET API
 description: Bővítse .NET-alkalmazásait a GroupDocs.Viewer segítségével a zökkenőmentes dokumentummegtekintés érdekében. Könnyen integrálhatja a dokumentum-renderelő funkciókat projektjeibe.
-type: docs
 weight: 12
 url: /hu/net/getting-started/set-metered-license/
 ---
+
+# Állítsa be a mért licencet
+
 ## Bevezetés
 .NET-fejlesztés világában a hatékony dokumentummegtekintési képességek alkalmazása az alkalmazásokba elengedhetetlen a felhasználói élmény és a funkcionalitás javításához. A GroupDocs.Viewer for .NET robusztus megoldást kínál a dokumentummegtekintési funkciók zökkenőmentes integrálására a .NET-projektekbe. Függetlenül attól, hogy PDF-ekkel, Microsoft Office-dokumentumokkal vagy különféle képformátumokkal dolgozik, a GroupDocs.Viewer leegyszerűsíti ezeknek a dokumentumoknak az alkalmazásaiban való megjelenítését és megjelenítését.
 ## Előfeltételek
@@ -55,7 +57,7 @@ Console.WriteLine("License set successfully.");
 Összefoglalva, a GroupDocs.Viewer for .NET átfogó megoldást kínál a dokumentummegtekintési funkciók beépítésére a .NET-alkalmazásokba. A vázolt lépések követésével könnyedén beállíthat egy mért licencet, és elkezdheti kiaknázni a GroupDocs.Viewer képességeit projektjein belül.
 ## GYIK
 ### K: Hol találom a GroupDocs.Viewer for .NET dokumentációját?
- A dokumentációt megtalálod[itt](https://reference.groupdocs.com/viewer/net/).
+ A dokumentációt megtalálod[itt](https://tutorials.groupdocs.com/viewer/net/).
 ### K: Elérhető ingyenes próbaverzió a GroupDocs.Viewer for .NET számára?
  Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.groupdocs.com/).
 ### K: Hogyan szerezhetek ideiglenes licenceket tesztelési célokra?

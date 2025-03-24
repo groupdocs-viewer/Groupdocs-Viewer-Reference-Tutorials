@@ -3,10 +3,12 @@ title: 加载受密码保护的文档
 linktitle: 加载受密码保护的文档
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 轻松地将受密码保护的文档查看集成到 .NET 应用程序中。按照我们的分步教程进行无缝操作。
-type: docs
 weight: 12
 url: /zh/net/advanced-loading/load-password-protected-document/
 ---
+
+# 加载受密码保护的文档
+
 ## 介绍
 在当今的数字时代，无缝管理和查看各种文档格式对于许多企业和个人来说都是必需的。幸运的是，GroupDocs.Viewer for .NET 为 .NET 开发人员提供了全面的解决方案，可以轻松地将文档查看功能集成到他们的应用程序中。在本教程中，我们将深入研究 GroupDocs.Viewer 的基本功能之一：加载受密码保护的文档。我们将逐步分解该过程，确保开发人员可以轻松地遵循并将此功能实现到他们的项目中。
 ## 先决条件

@@ -3,10 +3,12 @@ title: تقديم رسومات CAD
 linktitle: تقديم رسومات CAD
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف البرامج التعليمية لعرض رسومات CAD باستخدام GroupDocs.Viewer لـ .NET. تعلم كيفية تحسين تطبيقات .NET من خلال التعامل السلس مع ملفات CAD.
-type: docs
 weight: 25
 url: /ar/net/rendering-cad-drawings/
 ---
+
+# تقديم رسومات CAD
+
 
 ## مقدمة
 

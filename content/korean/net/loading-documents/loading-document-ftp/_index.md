@@ -3,10 +3,12 @@ title: FTP에서 문서 로드(고급)
 linktitle: FTP에서 문서 로드(고급)
 second_title: GroupDocs.Viewer .NET API
 description: 효율적인 문서 보기를 위해 .NET용 GroupDocs.Viewer를 응용 프로그램에 완벽하게 통합하세요. FTP에서 문서를 쉽게 렌더링할 수 있습니다.
-type: docs
 weight: 13
 url: /ko/net/loading-documents/loading-document-ftp/
 ---
+
+# FTP에서 문서 로드(고급)
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 문서 보기 기능을 .NET 응용 프로그램에 원활하게 통합할 수 있도록 하는 강력한 API입니다. PDF, Microsoft Office 문서 또는 기타 널리 사용되는 파일 형식으로 작업하는 경우 GroupDocs.Viewer는 표시할 문서 렌더링 프로세스를 단순화하여 사용자에게 풍부한 보기 환경을 그 어느 때보다 쉽게 제공할 수 있습니다.
 ## 전제조건

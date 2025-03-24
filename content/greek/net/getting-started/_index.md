@@ -3,10 +3,12 @@ title: Ξεκινώντας
 linktitle: Ξεκινώντας
 second_title: GroupDocs.Viewer .NET API
 description: Ανακαλύψτε οδηγίες βήμα προς βήμα για την ενσωμάτωση του GroupDocs.Viewer για .NET απρόσκοπτα στις εφαρμογές σας. Μάθετε να ορίζετε άδειες και να προσαρμόζετε την εμφάνιση του θεατή.
-type: docs
 weight: 26
 url: /el/net/getting-started/
 ---
+
+# Ξεκινώντας
+
 
 ## Εισαγωγή
 

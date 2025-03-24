@@ -3,10 +3,12 @@ title: 埋め込みリソースまたは外部リソースを使用してレン�
 linktitle: 埋め込みリソースまたは外部リソースを使用してレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET ドキュメントの表示を強化し、シームレスなレンダリングを実現します。効率的な統合と優れたユーザー エクスペリエンスを実現するには、チュートリアルに従ってください。
-type: docs
 weight: 12
 url: /ja/net/rendering-documents-html/render-html-resources/
 ---
+
+# 埋め込みリソースまたは外部リソースを使用してレンダリングする
+
 ## 導入
 
 .NET 開発の世界では、ドキュメントの効率的な表示は多くのアプリケーションにとって重要な側面です。 GroupDocs.Viewer for .NET は、埋め込みリソースまたは外部リソースを使用してドキュメントをレンダリングするための強力なソリューションを提供します。このチュートリアルでは、GroupDocs.Viewer を利用してドキュメントをシームレスに表示する方法を説明し、明確にして理解するために各ステップに分けて説明します。

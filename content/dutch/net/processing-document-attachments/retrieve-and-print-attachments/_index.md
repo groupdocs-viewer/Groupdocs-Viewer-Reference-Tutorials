@@ -3,10 +3,12 @@ title: Documentbijlagen ophalen en afdrukken
 linktitle: Documentbijlagen ophalen en afdrukken
 second_title: GroupDocs.Viewer .NET-API
 description: Integreer de mogelijkheden voor documentweergave naadloos in uw .NET-toepassingen met GroupDocs.Viewer voor .NET. Documentbijlagen moeiteloos ophalen en afdrukken.
-type: docs
 weight: 11
 url: /nl/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# Documentbijlagen ophalen en afdrukken
+
 ## Invoering
 In de wereld van softwareontwikkeling is het efficiënt beheren en weergeven van documenten binnen applicaties cruciaal. GroupDocs.Viewer voor .NET biedt ontwikkelaars een krachtige oplossing om de weergavemogelijkheden van documenten naadloos in hun .NET-toepassingen te integreren. Of u nu een documentbeheersysteem op bedrijfsniveau of een eenvoudige documentviewer bouwt, GroupDocs.Viewer biedt een uitgebreide reeks functies om aan uw behoeften te voldoen.
 ## Vereisten

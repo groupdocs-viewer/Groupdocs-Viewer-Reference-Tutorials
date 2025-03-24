@@ -3,10 +3,12 @@ title: Změňte pořadí stránek v dokumentu
 linktitle: Změňte pořadí stránek v dokumentu
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak změnit pořadí stránek v dokumentu pomocí GroupDocs.Viewer for .NET. Postupujte podle našeho podrobného návodu pro bezproblémovou správu dokumentů.
-type: docs
 weight: 19
 url: /cs/net/rendering-options/reorder-pages/
 ---
+
+# Změňte pořadí stránek v dokumentu
+
 ## Úvod
 Ve světě vývoje .NET je efektivní správa a manipulace s dokumenty zásadní. GroupDocs.Viewer for .NET poskytuje výkonné řešení pro prohlížení různých formátů dokumentů ve vašich aplikacích. Jedním ze základních úkolů, s nimiž se vývojáři často setkávají, je změna pořadí stránek v dokumentu. Ať už pracujete s PDF, dokumenty Wordu nebo jinými formáty, možnost přeskupit stránky může zjednodušit pracovní postupy a zlepšit uživatelský komfort. V tomto tutoriálu se ponoříme do toho, jak změnit pořadí stránek v dokumentu pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady

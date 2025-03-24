@@ -3,10 +3,12 @@ title: Vykreslit obrázky APNG
 linktitle: Vykreslit obrázky APNG
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat obrázky APNG v různých formátech pomocí Groupdocs.Viewer pro .NET. Podrobný průvodce včetně příkladů kódu.
-type: docs
 weight: 11
 url: /cs/net/image-rendering/render-apng-images/
 ---
+
+# Vykreslit obrázky APNG
+
 ## Úvod
 Groupdocs.Viewer for .NET je výkonný nástroj, který umožňuje vývojářům bezproblémově vykreslovat různé formáty dokumentů v jejich aplikacích .NET. Mezi jeho mnoha funkcemi poskytuje robustní funkce pro vykreslování obrázků APNG (Animated Portable Network Graphics), což umožňuje vývojářům zobrazovat obrázky APNG v různých formátech, jako jsou HTML, JPG, PNG a PDF.
 

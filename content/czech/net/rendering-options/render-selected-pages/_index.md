@@ -3,10 +3,12 @@ title: Vykreslit vybrané stránky
 linktitle: Vykreslit vybrané stránky
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat vybrané stránky z dokumentů pomocí Groupdocs.Viewer pro .NET. Výukový program krok za krokem včetně příkladů kódu.
-type: docs
 weight: 17
 url: /cs/net/rendering-options/render-selected-pages/
 ---
+
+# Vykreslit vybrané stránky
+
 ## Úvod
 
 V tomto tutoriálu se ponoříme do toho, jak využít Groupdocs.Viewer pro .NET k vykreslení vybraných stránek z dokumentu. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný průvodce vás procesem snadno provede.

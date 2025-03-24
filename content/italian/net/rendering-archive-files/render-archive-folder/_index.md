@@ -3,10 +3,12 @@ title: Cartella di archivio di rendering
 linktitle: Cartella di archivio di rendering
 second_title: API GroupDocs.Viewer .NET
 description: Integra GroupDocs.Viewer for .NET perfettamente nelle tue applicazioni .NET per funzionalità efficienti di rendering e visualizzazione dei documenti.
-type: docs
 weight: 11
 url: /it/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Cartella di archivio di rendering
+
 ## introduzione
 Nell'era digitale di oggi, accedere e visualizzare i documenti senza problemi è fondamentale sia per le aziende che per i privati. Fortunatamente, con il progresso della tecnologia, gli sviluppatori hanno ora a disposizione potenti strumenti per integrare facilmente le funzionalità di visualizzazione dei documenti nelle loro applicazioni. Uno di questi strumenti è GroupDocs.Viewer per .NET, una libreria versatile che consente agli sviluppatori di eseguire il rendering di vari formati di documenti all'interno delle loro applicazioni .NET.
 ## Prerequisiti

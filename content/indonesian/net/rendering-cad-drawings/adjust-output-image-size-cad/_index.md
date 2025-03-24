@@ -3,10 +3,12 @@ title: Sesuaikan Ukuran Gambar Output untuk Gambar CAD
 linktitle: Sesuaikan Ukuran Gambar Output untuk Gambar CAD
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menyesuaikan ukuran gambar keluaran untuk gambar CAD menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan visibilitas dan kegunaan dengan mudah.
-type: docs
 weight: 15
 url: /id/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Sesuaikan Ukuran Gambar Output untuk Gambar CAD
+
 ## Perkenalan
 Gambar CAD seringkali memerlukan penyesuaian khusus untuk tampilan dan presentasi yang optimal. GroupDocs.Viewer untuk .NET menyediakan perangkat canggih untuk mengelola dan menyesuaikan keluaran gambar CAD. Dalam tutorial ini, kami akan memandu Anda melalui proses penyesuaian ukuran gambar keluaran untuk gambar CAD langkah demi langkah.
 ## Prasyarat

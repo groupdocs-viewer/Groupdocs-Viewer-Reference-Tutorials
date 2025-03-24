@@ -3,10 +3,12 @@ title: Információ megtekintése PDF-dokumentumhoz
 linktitle: Információ megtekintése PDF-dokumentumhoz
 second_title: GroupDocs.Viewer .NET API
 description: Ebben az átfogó oktatóanyagban megtudhatja, hogyan nyerhet ki nézeti információkat PDF-dokumentumokból a GroupDocs.Viewer for .NET segítségével.
-type: docs
 weight: 16
 url: /hu/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Információ megtekintése PDF-dokumentumhoz
+
 ## Bevezetés
 GroupDocs.Viewer for .NET egy hatékony eszköz, amelyet a .NET-alkalmazásokon belüli dokumentumok megtekintésének egyszerűsítésére terveztek. Függetlenül attól, hogy PDF-ekkel, Word-dokumentumokkal, Excel-táblázatokkal vagy PowerPoint-prezentációkkal foglalkozik, ez a könyvtár leegyszerűsíti a különböző fájlformátumok megjelenítésének és interakciójának folyamatát. Ebben az oktatóanyagban a GroupDocs.Viewer képességeinek kiaknázására összpontosítunk, kifejezetten a nézeti információk PDF-dokumentumokból való kinyerésére.
 ## Előfeltételek

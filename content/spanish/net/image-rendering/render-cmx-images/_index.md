@@ -3,10 +3,12 @@ title: Renderizar imágenes CMX
 linktitle: Renderizar imágenes CMX
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar sin esfuerzo imágenes CMX en varios formatos utilizando GroupDocs.Viewer para .NET. Mejora tu gestión documental.
-type: docs
 weight: 13
 url: /es/net/image-rendering/render-cmx-images/
 ---
+
+# Renderizar imágenes CMX
+
 ## Introducción
 En el ámbito de la gestión y manipulación de documentos, renderizar imágenes en varios formatos es una tarea fundamental. GroupDocs.Viewer para .NET simplifica este proceso al proporcionar funcionalidades integrales para representar imágenes CMX en diferentes formatos, como HTML, JPG, PNG y PDF. Este tutorial lo guiará a través del proceso paso a paso de renderizar imágenes CMX usando GroupDocs.Viewer para .NET.
 ## Requisitos previos

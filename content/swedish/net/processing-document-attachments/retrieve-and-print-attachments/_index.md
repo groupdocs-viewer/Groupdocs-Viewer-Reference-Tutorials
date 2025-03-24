@@ -3,10 +3,12 @@ title: Hämta och skriv ut dokumentbilagor
 linktitle: Hämta och skriv ut dokumentbilagor
 second_title: GroupDocs.Viewer .NET API
 description: Integrera dokumentvisningsmöjligheter i dina .NET-applikationer sömlöst med GroupDocs.Viewer för .NET. Hämta och skriv ut dokumentbilagor utan ansträngning.
-type: docs
 weight: 11
 url: /sv/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# Hämta och skriv ut dokumentbilagor
+
 ## Introduktion
 en värld av mjukvaruutveckling är hantering och visning av dokument effektivt inom applikationer avgörande. GroupDocs.Viewer för .NET tillhandahåller en kraftfull lösning för utvecklare att integrera dokumentvisningsmöjligheter i sina .NET-applikationer sömlöst. Oavsett om du bygger ett dokumenthanteringssystem på företagsnivå eller en enkel dokumentvisare, erbjuder GroupDocs.Viewer en omfattande uppsättning funktioner för att möta dina behov.
 ## Förutsättningar

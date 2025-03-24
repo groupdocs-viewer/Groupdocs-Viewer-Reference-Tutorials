@@ -3,10 +3,12 @@ title: Vykreslování vrstev ve výkresech CAD
 linktitle: Vykreslování vrstev ve výkresech CAD
 second_title: GroupDocs.Viewer .NET API
 description: Bezproblémově vykreslujte výkresy CAD v aplikacích .NET pomocí GroupDocs.Viewer pro .NET. Prozkoumejte možnosti vykreslování, přizpůsobte vrstvy a další.
-type: docs
 weight: 13
 url: /cs/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Vykreslování vrstev ve výkresech CAD
+
 ## Úvod
 GroupDocs.Viewer for .NET je výkonný nástroj, který umožňuje vývojářům bezproblémově integrovat funkce vykreslování dokumentů do jejich aplikací .NET. Ať už potřebujete vykreslit výkresy CAD, soubory PDF, dokumenty Microsoft Office nebo další, GroupDocs.Viewer poskytuje komplexní řešení.
 ## Předpoklady
@@ -14,7 +16,7 @@ Než se pustíte do používání GroupDocs.Viewer pro .NET, ujistěte se, že m
 - Základní znalost programovacího jazyka C#.
 - Vývojové prostředí .NET nastavené na vašem počítači.
 -  GroupDocs.Viewer pro .NET nainstalován. Můžete si jej stáhnout z[tady](https://releases.groupdocs.com/viewer/net/).
--  Přístup k dokumentaci GroupDocs.Viewer for .NET pro referenci, kterou lze nalézt[tady](https://reference.groupdocs.com/viewer/net/).
+-  Přístup k dokumentaci GroupDocs.Viewer for .NET pro referenci, kterou lze nalézt[tady](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importovat jmenné prostory
 Chcete-li začít používat GroupDocs.Viewer pro .NET, musíte do projektu importovat požadované jmenné prostory. Následuj tyto kroky:

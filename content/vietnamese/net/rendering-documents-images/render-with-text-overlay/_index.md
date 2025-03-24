@@ -3,10 +3,12 @@ title: Kết xuất với văn bản được phủ để hiển thị
 linktitle: Kết xuất với văn bản được phủ để hiển thị
 second_title: API GroupDocs.Viewer .NET
 description: Kết xuất tài liệu một cách liền mạch trong các ứng dụng .NET bằng GroupDocs.Viewer, hỗ trợ nhiều định dạng khác nhau để nâng cao trải nghiệm người dùng.
-type: docs
 weight: 13
 url: /vi/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Kết xuất với văn bản được phủ để hiển thị
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc quản lý và hiển thị liền mạch các định dạng tài liệu khác nhau là rất quan trọng đối với nhiều ứng dụng. GroupDocs.Viewer dành cho .NET nổi lên như một giải pháp mạnh mẽ để dễ dàng hiển thị tài liệu trong các ứng dụng .NET của bạn. Cho dù đó là tệp PDF, tài liệu Word, bảng tính Excel hay bản trình bày PowerPoint, GroupDocs.Viewer đều đơn giản hóa quy trình, cung cấp một loạt tính năng để nâng cao khả năng xem tài liệu.
 ## Điều kiện tiên quyết

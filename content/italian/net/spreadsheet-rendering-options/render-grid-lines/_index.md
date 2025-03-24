@@ -3,10 +3,12 @@ title: Rendering delle linee della griglia
 linktitle: Rendering delle linee della griglia
 second_title: API GroupDocs.Viewer .NET
 description: Migliora la visualizzazione dei documenti con GroupDocs.Viewer per .NET. Renderizza le linee della griglia senza sforzo. Prova subito la prova gratuita! #GroupDocs #Visualizzatore
-type: docs
 weight: 12
 url: /it/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Rendering delle linee della griglia
+
 ## introduzione
 Benvenuto in questa guida passo passo sull'utilizzo di GroupDocs.Viewer per .NET per eseguire il rendering delle linee della griglia nei tuoi documenti. Che tu sia uno sviluppatore esperto o un nuovo arrivato nel framework .NET, questo tutorial ti guiderà attraverso il processo con spiegazioni dettagliate ed esempi facili da seguire.
 ## Prerequisiti
@@ -66,6 +68,6 @@ In questo tutorial, abbiamo esplorato il processo di rendering delle linee della
 ### Sono disponibili licenze temporanee per GroupDocs.Viewer per .NET?
  Sì, puoi ottenere un[licenza temporanea](https://purchase.groupdocs.com/temporary-license/) per GroupDocs.Viewer per .NET.
 ### È possibile trovare la documentazione dettagliata per GroupDocs.Viewer per .NET?
- Assolutamente! Fare riferimento al[documentazione ufficiale](https://reference.groupdocs.com/viewer/net/) per informazioni approfondite sull'utilizzo di GroupDocs.Viewer per .NET.
+ Assolutamente! Fare riferimento al[documentazione ufficiale](https://tutorials.groupdocs.com/viewer/net/) per informazioni approfondite sull'utilizzo di GroupDocs.Viewer per .NET.
 ### Dove posso scaricare la versione più recente di GroupDocs.Viewer per .NET?
  Scarica la libreria da[pagina di rilascio ufficiale](https://releases.groupdocs.com/viewer/net/).

@@ -3,10 +3,12 @@ title: Folder archiwum renderowania
 linktitle: Folder archiwum renderowania
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo zintegruj GroupDocs.Viewer for .NET z aplikacjami .NET, aby uzyskać wydajne możliwości renderowania i przeglądania dokumentów.
-type: docs
 weight: 11
 url: /pl/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Folder archiwum renderowania
+
 ## Wstęp
 W dzisiejszej epoce cyfrowej bezproblemowy dostęp do dokumentów i przeglądanie ich ma kluczowe znaczenie zarówno dla firm, jak i osób prywatnych. Na szczęście wraz z postępem technologii programiści mają teraz do dyspozycji potężne narzędzia umożliwiające bezproblemową integrację funkcji przeglądania dokumentów ze swoimi aplikacjami. Jednym z takich narzędzi jest GroupDocs.Viewer dla .NET, wszechstronna biblioteka, która umożliwia programistom renderowanie różnych formatów dokumentów w aplikacjach .NET.
 ## Warunki wstępne

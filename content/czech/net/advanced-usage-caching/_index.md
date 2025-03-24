@@ -3,10 +3,12 @@ title: Pokročilé použití (ukládání do mezipaměti)
 linktitle: Pokročilé použití (ukládání do mezipaměti)
 second_title: GroupDocs.Viewer .NET API
 description: Objevte pokročilé techniky pro optimalizaci rychlosti zpracování dokumentů v aplikacích .NET s GroupDocs.Viewer. Zjistěte, jak nyní povolit ukládání do mezipaměti pro rychlejší výkon!
-type: docs
 weight: 22
 url: /cs/net/advanced-usage-caching/
 ---
+
+# Pokročilé použití (ukládání do mezipaměti)
+
 
 ## Úvod
 

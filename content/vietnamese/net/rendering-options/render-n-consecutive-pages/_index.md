@@ -3,10 +3,12 @@ title: Hiển thị N trang liên tiếp
 linktitle: Hiển thị N trang liên tiếp
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tích hợp GroupDocs.Viewer dành cho .NET vào ứng dụng của bạn để dễ dàng hiển thị tài liệu có N trang liên tiếp.
-type: docs
 weight: 16
 url: /vi/net/rendering-options/render-n-consecutive-pages/
 ---
+
+# Hiển thị N trang liên tiếp
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc tích hợp khả năng xem tài liệu vào ứng dụng của bạn có thể nâng cao đáng kể trải nghiệm và chức năng của người dùng. Một công cụ hỗ trợ việc hiển thị tài liệu liền mạch là GroupDocs.Viewer dành cho .NET. Thư viện mạnh mẽ này cho phép các nhà phát triển hiển thị các định dạng tài liệu khác nhau trong ứng dụng của họ một cách dễ dàng.
 ## Điều kiện tiên quyết

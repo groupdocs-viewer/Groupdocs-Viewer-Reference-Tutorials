@@ -3,10 +3,12 @@ title: Określ typ pliku podczas ładowania dokumentów
 linktitle: Określ typ pliku podczas ładowania dokumentów
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak określić typ pliku podczas ładowania dokumentów za pomocą programu GroupDocs.Viewer dla platformy .NET. Dokładne renderowanie różnych formatów w aplikacjach .NET.
-type: docs
 weight: 10
 url: /pl/net/advanced-loading/specify-file-type/
 ---
+
+# Określ typ pliku podczas ładowania dokumentów
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to wszechstronny interfejs API do renderowania dokumentów, który obsługuje szeroką gamę formatów plików, w tym DOCX, PDF, PPTX i inne. Określając typ pliku podczas ładowania dokumentów, możesz zapewnić użytkownikom dokładne renderowanie i płynne przeglądanie.
 ## Warunki wstępne

@@ -3,10 +3,12 @@ title: PDF Belgesi için Görüntüleme Bilgisini Alın
 linktitle: PDF Belgesi için Görüntüleme Bilgisini Alın
 second_title: GroupDocs.Viewer .NET API'si
 description: Bu kapsamlı eğitimde GroupDocs.Viewer for .NET'i kullanarak PDF belgelerinden görünüm bilgilerini nasıl çıkaracağınızı öğrenin.
-type: docs
 weight: 16
 url: /tr/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# PDF Belgesi için Görüntüleme Bilgisini Alın
+
 ## giriiş
 GroupDocs.Viewer for .NET, .NET uygulamalarında belge görüntülemeyi kolaylaştırmak için tasarlanmış güçlü bir araçtır. İster PDF'ler, Word belgeleri, Excel elektronik tabloları veya PowerPoint sunumlarıyla çalışıyor olun, bu kitaplık çeşitli dosya formatlarını oluşturma ve bunlarla etkileşim kurma sürecini basitleştirir. Bu eğitimde, özellikle PDF belgelerinden görünüm bilgilerinin çıkarılmasına yönelik GroupDocs.Viewer'ın özelliklerinden yararlanmaya odaklanacağız.
 ## Önkoşullar

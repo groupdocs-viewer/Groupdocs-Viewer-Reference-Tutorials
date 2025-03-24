@@ -3,10 +3,12 @@ title: Rendering di intestazioni di righe e colonne
 linktitle: Rendering di intestazioni di righe e colonne
 second_title: API GroupDocs.Viewer .NET
 description: Migliora la visualizzazione dei documenti in .NET! Impara a eseguire il rendering delle intestazioni di righe e colonne utilizzando GroupDocs.Viewer per .NET. Esplora gli output HTML, JPG, PNG e PDF.
-type: docs
 weight: 18
 url: /it/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Rendering di intestazioni di righe e colonne
+
 ## introduzione
 Desideri migliorare la tua esperienza di visualizzazione di documenti nelle applicazioni .NET? Con GroupDocs.Viewer per .NET, puoi eseguire senza problemi il rendering delle intestazioni di righe e colonne dai file dei fogli di calcolo. In questo tutorial ti guideremo attraverso il processo di rendering delle intestazioni di righe e colonne utilizzando diversi formati di output come HTML, JPG, PNG e PDF.
 ## Prerequisiti

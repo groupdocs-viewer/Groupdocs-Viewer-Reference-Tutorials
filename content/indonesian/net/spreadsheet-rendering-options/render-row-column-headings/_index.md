@@ -3,10 +3,12 @@ title: Render Judul Baris dan Kolom
 linktitle: Render Judul Baris dan Kolom
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan tampilan dokumen di .NET! Pelajari cara merender judul baris dan kolom menggunakan GroupDocs.Viewer untuk .NET. Jelajahi keluaran HTML, JPG, PNG, dan PDF.
-type: docs
 weight: 18
 url: /id/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Render Judul Baris dan Kolom
+
 ## Perkenalan
 Apakah Anda ingin meningkatkan pengalaman melihat dokumen di aplikasi .NET? Dengan GroupDocs.Viewer untuk .NET, Anda dapat merender judul baris dan kolom dengan lancar dari file spreadsheet Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses rendering judul baris dan kolom menggunakan format output berbeda seperti HTML, JPG, PNG, dan PDF.
 ## Prasyarat

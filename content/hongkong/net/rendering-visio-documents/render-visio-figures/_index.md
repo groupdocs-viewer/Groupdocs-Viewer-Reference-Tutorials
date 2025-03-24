@@ -3,10 +3,12 @@ title: 渲染 Visio 圖形
 linktitle: 渲染 Visio 圖形
 second_title: GroupDocs.Viewer .NET API
 description: 全面了解如何使用 GroupDocs.Viewer for .NET 呈現 Visio 數字。增強 .NET 應用程式中的文件檢視功能。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-visio-documents/render-visio-figures/
 ---
+
+# 渲染 Visio 圖形
+
 ## 介紹
 在當今的數位時代，文件渲染在各種應用程式中發揮著至關重要的作用。無論是在網站上顯示文件還是將其轉換為不同的格式，高效的渲染都是至關重要的。 GroupDocs.Viewer for .NET 提供了一個強大的解決方案，可在 .NET 應用程式中檢視和操作文件。在本教程中，我們將深入研究使用 GroupDocs.Viewer for .NET 渲染 Visio 圖形，並將流程分解為簡單的步驟。
 ## 先決條件

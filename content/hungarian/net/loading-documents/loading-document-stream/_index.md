@@ -3,10 +3,12 @@ title: Dokumentumok betöltése a Streamből
 linktitle: Dokumentumok betöltése a Streamből
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan tölthet be zökkenőmentesen dokumentumokat adatfolyamokból a GroupDocs.Viewer for .NET segítségével. Bővítse .NET-alkalmazásait hatékony dokumentummegtekintési lehetőségekkel.
-type: docs
 weight: 12
 url: /hu/net/loading-documents/loading-document-stream/
 ---
+
+# Dokumentumok betöltése a Streamből
+
 ## Bevezetés
 .NET fejlesztés területén a dokumentumok hatékony kezelése és megtekintése a legfontosabb. A fejlett eszközök és könyvtárak megjelenésével az egykor ijesztőnek tűnő feladatok leegyszerűsödtek. Ezen eszközök közül a GroupDocs.Viewer for .NET kiemelkedik sokoldalú megoldásként a különféle dokumentumformátumok zökkenőmentes kezelésére. Ebben az átfogó útmutatóban a GroupDocs.Viewer for .NET használatának trükkjeit mutatjuk be dokumentumok adatfolyamból történő betöltéséhez. Akár tapasztalt fejlesztő, akár most kezdő, ez az oktatóanyag felvértezi a GroupDocs.Viewer erejének hatékony kihasználásához szükséges ismereteket.
 ## Előfeltételek

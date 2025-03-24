@@ -3,10 +3,12 @@ title: خيارات العرض
 linktitle: خيارات العرض
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج GroupDocs.Viewer for .NET بسهولة في تطبيقاتك من خلال البرامج التعليمية حول خيارات العرض، بدءًا من إضافة العلامات المائية إلى تخصيص الخطوط.
-type: docs
 weight: 23
 url: /ar/net/rendering-options/
 ---
+
+# خيارات العرض
+
 
 ## مقدمة
 

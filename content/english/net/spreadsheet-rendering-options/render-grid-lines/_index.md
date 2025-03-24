@@ -3,10 +3,12 @@ title: Render Grid Lines
 linktitle: Render Grid Lines
 second_title: GroupDocs.Viewer .NET API
 description: Enhance document visualization with GroupDocs.Viewer for .NET. Render grid lines effortlessly. Try the free trial now! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Render Grid Lines
+
 ## Introduction
 Welcome to this step-by-step guide on using GroupDocs.Viewer for .NET to render grid lines in your documents. Whether you're a seasoned developer or a newcomer to the .NET framework, this tutorial will walk you through the process with detailed explanations and easy-to-follow examples.
 ## Prerequisites
@@ -66,6 +68,6 @@ Visit the [GroupDocs.Viewer forum](https://forum.groupdocs.com/c/viewer/9) to se
 ### Are temporary licenses available for GroupDocs.Viewer for .NET?
 Yes, you can obtain a [temporary license](https://purchase.groupdocs.com/temporary-license/) for GroupDocs.Viewer for .NET.
 ### Can I find detailed documentation for GroupDocs.Viewer for .NET?
-Absolutely! Refer to the [official documentation](https://reference.groupdocs.com/viewer/net/) for in-depth information on using GroupDocs.Viewer for .NET.
+Absolutely! Refer to the [official documentation](https://tutorials.groupdocs.com/viewer/net/) for in-depth information on using GroupDocs.Viewer for .NET.
 ### Where can I download the latest version of GroupDocs.Viewer for .NET?
 Download the library from the [official release page](https://releases.groupdocs.com/viewer/net/).

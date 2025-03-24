@@ -3,10 +3,12 @@ title: Adjust Text Overflow in Cells
 linktitle: Adjust Text Overflow in Cells
 second_title: GroupDocs.Viewer .NET API
 description: Effortlessly manage text overflow in .NET documents with GroupDocs.Viewer. Enhance readability and user experience. Download your free trial now.
-type: docs
 weight: 10
 url: /net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Adjust Text Overflow in Cells
+
 ## Introduction
 In the dynamic world of .NET development, managing text overflow in cells is crucial for creating visually appealing and readable documents. GroupDocs.Viewer for .NET empowers developers with a comprehensive set of tools to seamlessly handle text overflow in spreadsheet documents. This tutorial will guide you through the process of adjusting text overflow in cells using GroupDocs.Viewer for .NET.
 ## Prerequisites
@@ -57,7 +59,7 @@ Now you've successfully adjusted text overflow in cells using GroupDocs.Viewer f
 In conclusion, GroupDocs.Viewer for .NET simplifies the task of handling text overflow in cells, ensuring that your documents are not only functional but also visually polished. With these steps, you can enhance the user experience and readability of your spreadsheet documents effortlessly.
 ## FAQs
 ### 1. Can I use GroupDocs.Viewer for .NET with any type of document?
-Yes, GroupDocs.Viewer for .NET supports a wide range of document formats, including spreadsheets, presentations, and more. Refer to the [documentation](https://reference.groupdocs.com/viewer/net/) for the complete list.
+Yes, GroupDocs.Viewer for .NET supports a wide range of document formats, including spreadsheets, presentations, and more. Refer to the [documentation](https://tutorials.groupdocs.com/viewer/net/) for the complete list.
 ### 2. Is there a free trial available?
 Yes, you can explore the capabilities of GroupDocs.Viewer for .NET by downloading the [free trial](https://releases.groupdocs.com/).
 ### 3. How can I get support for any issues?

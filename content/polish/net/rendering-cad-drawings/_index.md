@@ -3,10 +3,12 @@ title: Renderowanie rysunków CAD
 linktitle: Renderowanie rysunków CAD
 second_title: GroupDocs.Viewer API .NET
 description: Odkryj samouczki dotyczące renderowania rysunków CAD przy użyciu GroupDocs.Viewer dla .NET. Dowiedz się, jak ulepszyć aplikacje .NET dzięki płynnej obsłudze plików CAD.
-type: docs
 weight: 25
 url: /pl/net/rendering-cad-drawings/
 ---
+
+# Renderowanie rysunków CAD
+
 
 ## Wstęp
 

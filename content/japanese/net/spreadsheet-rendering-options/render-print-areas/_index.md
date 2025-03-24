@@ -3,10 +3,12 @@ title: GroupDocs.Viewer for .NET を使用して印刷領域をレンダリン�
 linktitle: 印刷領域のレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を探索し、さまざまなドキュメント形式で印刷領域を簡単にレンダリングします。今すぐ無料トライアルを試してください! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /ja/net/spreadsheet-rendering-options/render-print-areas/
 ---
+
+# GroupDocs.Viewer for .NET を使用して印刷領域をレンダリングする
+
 ## 導入
 GroupDocs.Viewer for .NET を活用してドキュメント内の印刷領域をレンダリングするためのこの包括的なガイドへようこそ。ドキュメント レンダリングのための堅牢なソリューションを探している .NET 開発者にとって、ここは正しい場所です。このチュートリアルでは、GroupDocs.Viewer を使用して印刷領域をレンダリングするプロセスを説明し、アプリケーションでのシームレスなエクスペリエンスを確保します。
 ## 前提条件
@@ -57,7 +59,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 おめでとう！ GroupDocs.Viewer for .NET を利用してドキュメント内の印刷領域をレンダリングする方法を学習しました。この強力なツールは、.NET アプリケーションでのドキュメント レンダリングの新たな可能性を開きます。
 ## よくある質問
 ### GroupDocs.Viewer はさまざまなドキュメント形式と互換性がありますか?
-はい。GroupDocs.Viewer は、PDF、DOCX、XLSX などを含む幅広いドキュメント形式をサポートしています。を参照してください。[ドキュメンテーション](https://reference.groupdocs.com/viewer/net/)完全なリストについては、
+はい。GroupDocs.Viewer は、PDF、DOCX、XLSX などを含む幅広いドキュメント形式をサポートしています。を参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/viewer/net/)完全なリストについては、
 ### 購入する前に GroupDocs.Viewer を試すことはできますか?
 絶対に！無料トライアルを利用してツールを試すことができます[ここ](https://releases.groupdocs.com/).
 ### 問題がある場合、どこでサポートを見つけたり支援を求めたりできますか?

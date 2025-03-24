@@ -3,10 +3,12 @@ title: ユーザー定義のマージンを使用して HTML をレンダリン�
 linktitle: ユーザー定義のマージンを使用して HTML をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して、.NET でカスタム マージンを使用して HTML をレンダリングする方法を学びます。ドキュメントのプレゼンテーションを簡単に強化します。
-type: docs
 weight: 11
 url: /ja/net/rendering-web-documents/render-html-margins/
 ---
+
+# ユーザー定義のマージンを使用して HTML をレンダリングする
+
 ## 導入
 .NET 開発の分野では、ユーザー定義のマージンを使用して HTML をレンダリングすることは、視覚的に魅力的なドキュメントを作成する上で重要な要素です。 Web サイトの余白を調整する場合でも、印刷レイアウトを構成する場合でも、余白を正確に制御することで、コンテンツ全体のプレゼンテーションが向上します。このチュートリアルでは、GroupDocs.Viewer for .NET を利用してこの機能をシームレスに実現する方法について詳しく説明します。
 ## 前提条件

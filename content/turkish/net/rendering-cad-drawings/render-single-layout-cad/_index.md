@@ -3,10 +3,12 @@ title: CAD Çizimlerinde Tek Düzen Oluşturma
 linktitle: CAD Çizimlerinde Tek Düzen Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak CAD çizimlerinde tek mizanpajın nasıl oluşturulacağını öğrenin. .NET uygulamalarınızla kusursuz entegrasyon için kolay adımlar.
-type: docs
 weight: 14
 url: /tr/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# CAD Çizimlerinde Tek Düzen Oluşturma
+
 ## giriiş
 .NET geliştirme alanında, CAD çizimlerinin işlenmesi ve görüntülenmesi ortak bir gereksinimdir. GroupDocs.Viewer for .NET, .NET uygulamalarında CAD çizimlerinin işlenmesi için kapsamlı bir çözüm sağlayarak bu görevi basitleştirir. Bu eğitimde, GroupDocs.Viewer for .NET'i kullanarak CAD çizimlerinde tek bir düzenin görüntülenmesini ele alacağız.
 ## Önkoşullar

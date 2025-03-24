@@ -3,10 +3,12 @@ title: Bildwiedergabe
 linktitle: Bildwiedergabe
 second_title: GroupDocs.Viewer .NET-API
 description: Entdecken Sie umfassende Tutorials zum Rendern verschiedener Bildformate mit GroupDocs.Viewer für .NET. Lernen Sie nahtlose Integrations- und Codierungsbeispiele von KI bis WMF.
-type: docs
 weight: 28
 url: /de/net/image-rendering/
 ---
+
+# Bildwiedergabe
+
 
 ## Einführung
 

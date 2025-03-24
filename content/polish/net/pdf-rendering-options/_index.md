@@ -3,10 +3,12 @@ title: Opcje renderowania plików PDF
 linktitle: Opcje renderowania plików PDF
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak zoptymalizować przeglądanie plików PDF, korzystając z samouczków GroupDocs.Viewer .NET. Poznaj opcje renderowania plików PDF, takie jak dostosowywanie jakości obrazu i wyłączanie zaznaczania tekstu.
-type: docs
 weight: 38
 url: /pl/net/pdf-rendering-options/
 ---
+
+# Opcje renderowania plików PDF
+
 
 ## Wstęp
 

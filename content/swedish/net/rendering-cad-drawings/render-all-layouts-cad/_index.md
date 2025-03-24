@@ -3,10 +3,12 @@ title: Gör alla layouter i CAD-ritningar
 linktitle: Gör alla layouter i CAD-ritningar
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar alla layouter i CAD-ritningar med GroupDocs.Viewer för .NET. Följ vår omfattande handledning för sömlös integration.
-type: docs
 weight: 11
 url: /sv/net/rendering-cad-drawings/render-all-layouts-cad/
 ---
+
+# Gör alla layouter i CAD-ritningar
+
 ## Introduktion
 När det gäller dokumenthantering och visualisering står GroupDocs.Viewer för .NET högt som en mångsidig lösning som ger utvecklare möjlighet att utan ansträngning rendera olika dokumenttyper i sina .NET-applikationer. Bland dess otaliga funktioner finns förmågan att effektivt rendera CAD-ritningar, inklusive de intrikata layouter de innebär. I den här handledningen kommer vi att fördjupa oss i processen att utnyttja GroupDocs.Viewer för .NET för att rendera alla layouter som finns i CAD-ritningar. 
 ## Förutsättningar

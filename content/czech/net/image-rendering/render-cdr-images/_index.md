@@ -3,10 +3,12 @@ title: Vykreslování CDR obrázků
 linktitle: Vykreslování CDR obrázků
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat obrázky CDR do HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro .NET. Pomocí tohoto výukového programu můžete snadno převádět soubory CorelDRAW.
-type: docs
 weight: 12
 url: /cs/net/image-rendering/render-cdr-images/
 ---
+
+# Vykreslování CDR obrázků
+
 ## Úvod
 V tomto tutoriálu vás provedeme procesem vykreslování obrázků CDR (CorelDRAW) pomocí GroupDocs.Viewer pro .NET. CDR je formát souboru primárně spojený s CorelDRAW, editorem vektorové grafiky. Pomocí GroupDocs.Viewer můžete snadno převádět soubory CDR do různých formátů, jako jsou HTML, JPG, PNG a PDF.
 ## Předpoklady

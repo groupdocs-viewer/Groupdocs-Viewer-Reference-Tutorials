@@ -3,10 +3,12 @@ title: Daha Hızlı Belge İşleme için Önbelleğe Alma'yı Etkinleştirin
 linktitle: Daha Hızlı Belge İşleme için Önbelleğe Alma'yı Etkinleştirin
 second_title: GroupDocs.Viewer .NET API'si
 description: Önbelleğe alma özelliğini kullanarak GroupDocs.Viewer ile .NET uygulamalarında belge işleme hızını artırın. Performansı zahmetsizce optimize edin.
-type: docs
 weight: 10
 url: /tr/net/advanced-usage-caching/enable-caching/
 ---
+
+# Daha Hızlı Belge İşleme için Önbelleğe Alma'yı Etkinleştirin
+
 ## giriiş
 .NET belge işleme alanında performansı optimize etmek çok önemlidir. Birden fazla belge sayfasını hızlı bir şekilde oluşturmanız gereken bir senaryo düşünün. Önbelleklemenin devreye girdiği yer burasıdır. Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak belgelerin işlem hızını artırmak için önbelleğe alma özelliğinden yararlanmayı inceleyeceğiz.
 ## Önkoşullar

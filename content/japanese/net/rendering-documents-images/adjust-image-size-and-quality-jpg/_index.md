@@ -3,10 +3,12 @@ title: 画像のサイズと品質を調整する (JPG)
 linktitle: 画像のサイズと品質を調整する (JPG)
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を使用して JPEG 形式の画像サイズと品質を最適化する方法を学びます。ドキュメントの表示エクスペリエンスを向上させます。
-type: docs
 weight: 11
 url: /ja/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---
+
+# 画像のサイズと品質を調整する (JPG)
+
 ## 導入
 Groupdocs.Viewer for .NET は、開発者がドキュメント表示機能を .NET アプリケーションにシームレスに統合できるようにする強力なライブラリです。ドキュメント表示アプリケーションにおける一般的な要件の 1 つは、特に JPEG (JPG) 画像を扱う場合に、画像のサイズと品質を調整できることです。このチュートリアルでは、Groupdocs.Viewer for .NET を使用して画像のサイズと品質を調整するプロセスを説明します。
 ## 前提条件

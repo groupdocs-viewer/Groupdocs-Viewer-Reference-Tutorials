@@ -3,10 +3,12 @@ title: Rendern Sie CDR-Bilder
 linktitle: Rendern Sie CDR-Bilder
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie CDR-Bilder mit GroupDocs.Viewer für .NET in HTML, JPG, PNG und PDF rendern. Mit diesem Tutorial können Sie CorelDRAW-Dateien ganz einfach konvertieren.
-type: docs
 weight: 12
 url: /de/net/image-rendering/render-cdr-images/
 ---
+
+# Rendern Sie CDR-Bilder
+
 ## Einführung
 In diesem Tutorial führen wir Sie durch den Prozess des Renderns von CDR-Bildern (CorelDRAW) mit GroupDocs.Viewer für .NET. CDR ist ein Dateiformat, das hauptsächlich mit CorelDRAW, einem Vektorgrafikeditor, in Verbindung gebracht wird. Mit GroupDocs.Viewer können Sie CDR-Dateien ganz einfach in verschiedene Formate wie HTML, JPG, PNG und PDF konvertieren.
 ## Voraussetzungen

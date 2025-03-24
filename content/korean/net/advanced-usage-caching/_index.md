@@ -3,10 +3,12 @@ title: 고급 사용법(캐싱)
 linktitle: 고급 사용법(캐싱)
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET 응용 프로그램에서 문서 처리 속도를 최적화하는 고급 기술을 알아보세요. 더 빠른 성능을 위해 캐싱을 활성화하는 방법을 지금 알아보세요!
-type: docs
 weight: 22
 url: /ko/net/advanced-usage-caching/
 ---
+
+# 고급 사용법(캐싱)
+
 
 ## 소개
 

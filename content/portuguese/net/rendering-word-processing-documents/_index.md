@@ -3,10 +3,12 @@ title: Renderizando documentos de processamento de texto
 linktitle: Renderizando documentos de processamento de texto
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar com eficiência alterações controladas em documentos de processamento de texto usando GroupDocs.Viewer for .NET. Eleve suas habilidades de gerenciamento de documentos.
-type: docs
 weight: 36
 url: /pt/net/rendering-word-processing-documents/
 ---
+
+# Renderizando documentos de processamento de texto
+
 
 ## Introdução
 

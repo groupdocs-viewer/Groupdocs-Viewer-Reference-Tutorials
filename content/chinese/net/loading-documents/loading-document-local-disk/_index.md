@@ -3,10 +3,12 @@ title: 从本地磁盘加载文档
 linktitle: 从本地磁盘加载文档
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 从本地磁盘无缝呈现文档。使用高效的文档增强您的 .NET 应用程序。
-type: docs
 weight: 10
 url: /zh/net/loading-documents/loading-document-local-disk/
 ---
+
+# 从本地磁盘加载文档
+
 ## 介绍
 在当今的数字时代，高效的文档渲染对于各种应用程序至关重要。 Groupdocs.Viewer for .NET 提供了一个强大的解决方案，可以直接从本地磁盘呈现文档。在本教程中，我们将指导您完成使用 Groupdocs.Viewer for .NET 从本地磁盘加载文档的过程。无论您是经验丰富的开发人员还是新手，本分步指南都将帮助您将文档呈现无缝集成到 .NET 应用程序中。
 ## 先决条件

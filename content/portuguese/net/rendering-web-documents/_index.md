@@ -3,10 +3,12 @@ title: Renderizando documentos da Web
 linktitle: Renderizando documentos da Web
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar arquivos CHM e HTML com margens personalizadas em .NET usando GroupDocs.Viewer. Converta CHM em formatos HTML, JPG, PNG e PDF perfeitamente.
-type: docs
 weight: 35
 url: /pt/net/rendering-web-documents/
 ---
+
+# Renderizando documentos da Web
+
 ## Introdução
 
 Desvende as complexidades da renderização de documentos da web com GroupDocs.Viewer for .NET por meio de tutoriais abrangentes. A renderização de arquivos CHM e a personalização de margens HTML são funcionalidades vitais que podem aprimorar muito suas capacidades de processamento de documentos.

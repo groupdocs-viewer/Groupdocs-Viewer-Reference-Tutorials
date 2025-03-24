@@ -3,10 +3,12 @@ title: Nhận thông tin xem cho tài liệu PDF
 linktitle: Nhận thông tin xem cho tài liệu PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách trích xuất thông tin xem từ tài liệu PDF bằng GroupDocs.Viewer dành cho .NET trong hướng dẫn toàn diện này.
-type: docs
 weight: 16
 url: /vi/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Nhận thông tin xem cho tài liệu PDF
+
 ## Giới thiệu
 GroupDocs.Viewer cho .NET là một công cụ mạnh mẽ được thiết kế để hợp lý hóa việc xem tài liệu trong các ứng dụng .NET. Cho dù bạn đang xử lý tệp PDF, tài liệu Word, bảng tính Excel hay bản trình bày PowerPoint, thư viện này sẽ đơn giản hóa quá trình hiển thị và tương tác với các định dạng tệp khác nhau. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc khai thác các khả năng của GroupDocs.Viewer đặc biệt để trích xuất thông tin chế độ xem từ tài liệu PDF.
 ## Điều kiện tiên quyết

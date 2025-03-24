@@ -3,10 +3,12 @@ title: Hiển thị tài liệu sang PDF
 linktitle: Hiển thị tài liệu sang PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tài liệu thành PDF, điều chỉnh chất lượng hình ảnh JPG và bảo vệ tệp PDF bằng mật khẩu bằng hướng dẫn GroupDocs.Viewer for .NET.
-type: docs
 weight: 29
 url: /vi/net/rendering-documents-pdf/
 ---
+
+# Hiển thị tài liệu sang PDF
+
 
 ## Giới thiệu
 

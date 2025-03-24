@@ -3,10 +3,12 @@ title: Desativar verificações de licença de fonte em PDF
 linktitle: Desativar verificações de licença de fonte em PDF
 second_title: API GroupDocs.Viewer .NET
 description: Desbloqueie recursos integrados de visualização de documentos em seu .NET com GroupDocs.Viewer for .NET. Integre e personalize facilmente a renderização de documentos com dependências mínimas.
-type: docs
 weight: 12
 url: /pt/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Desativar verificações de licença de fonte em PDF
+
 ## Introdução
 No domínio do desenvolvimento .NET, o gerenciamento e a manipulação de documentos costumam ser um aspecto crucial de muitos aplicativos. Seja para visualizar PDFs, documentos do Word ou outros tipos de arquivo, é essencial ter ferramentas robustas para lidar com essas tarefas com eficiência. É aqui que o GroupDocs.Viewer for .NET entra em ação. Esta poderosa biblioteca oferece aos desenvolvedores a capacidade de integrar perfeitamente a funcionalidade de visualização de documentos em seus aplicativos .NET.
 ## Pré-requisitos

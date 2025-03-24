@@ -3,10 +3,12 @@ title: Cancel Render with Cancellation Token
 linktitle: Cancel Render with Cancellation Token
 second_title: GroupDocs.Viewer .NET API
 description: Integrate Groupdocs.Viewer for .NET seamlessly into your .NET projects for efficient document viewing.
-type: docs
 weight: 11
 url: /net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# Cancel Render with Cancellation Token
+
 ## Introduction
 Groupdocs.Viewer for .NET is a powerful tool designed to simplify document viewing and processing within .NET applications. Whether you're dealing with PDFs, Microsoft Office documents, or other common formats, this library offers robust functionality to seamlessly integrate document viewing capabilities into your .NET projects.
 ## Prerequisites

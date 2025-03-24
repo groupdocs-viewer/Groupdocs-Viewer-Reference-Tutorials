@@ -3,10 +3,12 @@ title: Ottieni nomi di fogli di lavoro
 linktitle: Ottieni nomi di fogli di lavoro
 second_title: API GroupDocs.Viewer .NET
 description: Esplora la magia di GroupDocs.Viewer per .NET integra perfettamente la visualizzazione dei documenti nelle tue applicazioni. Prova subito la prova gratuita!
-type: docs
 weight: 11
 url: /it/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Ottieni nomi di fogli di lavoro
+
 ## introduzione
 Benvenuti nell'affascinante mondo di GroupDocs.Viewer per .NET! Se sei uno sviluppatore o un appassionato desideroso di esplorare potenti funzionalità di visualizzazione di documenti all'interno delle tue applicazioni .NET, sei pronto per una sorpresa. In questa guida completa, approfondiremo le complessità del recupero dei nomi dei fogli di lavoro utilizzando GroupDocs.Viewer. Quindi, allacciate la cintura di sicurezza e intraprendiamo questo emozionante viaggio!
 ## Prerequisiti
@@ -63,4 +65,4 @@ Assolutamente! GroupDocs.Viewer supporta un'ampia gamma di formati di documenti,
 ### Posso ottenere una licenza temporanea?
  Certamente! Visita[questo link](https://purchase.groupdocs.com/temporary-license/) per ottenere la tua licenza temporanea.
 ### Sono disponibili risorse di documentazione dettagliate?
- Assolutamente! Dai un'occhiata a[documentazione ufficiale](https://reference.groupdocs.com/viewer/net/) per approfondimenti e guide.
+ Assolutamente! Dai un'occhiata a[documentazione ufficiale](https://tutorials.groupdocs.com/viewer/net/) per approfondimenti e guide.

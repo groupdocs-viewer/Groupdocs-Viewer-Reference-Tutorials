@@ -3,10 +3,12 @@ title: Thay thế phông chữ bị thiếu
 linktitle: Thay thế phông chữ bị thiếu
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách thay thế phông chữ bị thiếu trong tài liệu .NET một cách dễ dàng bằng GroupDocs.Viewer. Đảm bảo hiển thị chính xác với các bước đơn giản.
-type: docs
 weight: 20
 url: /vi/net/rendering-options/replace-missing-font/
 ---
+
+# Thay thế phông chữ bị thiếu
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc xử lý tài liệu hiệu quả là rất quan trọng. GroupDocs.Viewer cho .NET cung cấp giải pháp mạnh mẽ để xem các định dạng tài liệu khác nhau trong các ứng dụng .NET của bạn. Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Viewer cho .NET để thay thế các phông chữ bị thiếu trong tài liệu. Cho dù bạn đang xử lý tệp PDF, bản trình bày PowerPoint hay tài liệu Word, GroupDocs.Viewer đều đơn giản hóa quy trình, đảm bảo rằng tài liệu của bạn được hiển thị chính xác, ngay cả khi thiếu phông chữ.
 ## Điều kiện tiên quyết

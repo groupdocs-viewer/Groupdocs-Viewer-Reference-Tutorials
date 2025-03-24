@@ -3,10 +3,12 @@ title: Renderizar PDF con tamaño de página original
 linktitle: Renderizar PDF con tamaño de página original
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a renderizar archivos PDF con tamaños de página originales usando GroupDocs.Viewer para .NET. Siga nuestra guía paso a paso e integre perfectamente esta funcionalidad.
-type: docs
 weight: 17
 url: /es/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# Renderizar PDF con tamaño de página original
+
 ## Introducción
 En el ámbito del desarrollo de .NET, GroupDocs.Viewer se destaca como una poderosa herramienta para representar varios formatos de documentos, incluidos PDF. Un requisito común en el manejo de documentos es renderizar archivos PDF conservando sus tamaños de página originales. Lograr esta tarea sin problemas requiere una comprensión integral de GroupDocs.Viewer para .NET y sus funcionalidades.
 ## Requisitos previos

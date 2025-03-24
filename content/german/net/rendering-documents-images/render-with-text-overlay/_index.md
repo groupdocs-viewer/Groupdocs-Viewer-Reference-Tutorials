@@ -3,10 +3,12 @@ title: Zur Anzeige mit überlagertem Text rendern
 linktitle: Zur Anzeige mit überlagertem Text rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Rendern Sie Dokumente nahtlos in .NET-Anwendungen mit GroupDocs.Viewer und unterstützen Sie dabei verschiedene Formate für ein verbessertes Benutzererlebnis.
-type: docs
 weight: 13
 url: /de/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Zur Anzeige mit überlagertem Text rendern
+
 ## Einführung
 Im Bereich der .NET-Entwicklung ist die nahtlose Verwaltung und Anzeige verschiedener Dokumentformate für viele Anwendungen von entscheidender Bedeutung. GroupDocs.Viewer für .NET erweist sich als leistungsstarke Lösung zum mühelosen Rendern von Dokumenten in Ihren .NET-Anwendungen. Ganz gleich, ob es sich um PDFs, Word-Dokumente, Excel-Tabellen oder PowerPoint-Präsentationen handelt, GroupDocs.Viewer vereinfacht den Prozess und bietet eine Reihe von Funktionen für eine verbesserte Dokumentenanzeige.
 ## Voraussetzungen

@@ -3,10 +3,12 @@ title: Retrieve and Save Document Attachments
 linktitle: Retrieve and Save Document Attachments
 second_title: GroupDocs.Viewer .NET API
 description: Efficiently manage document attachments within .NET applications using GroupDocs.Viewer. Retrieve and save attachments hassle-free.
-type: docs
 weight: 12
 url: /net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Retrieve and Save Document Attachments
+
 ## Introduction
 In the digital era, efficient document handling is crucial for businesses and individuals alike. Whether it's managing emails, viewing contracts, or accessing reports, having a reliable tool for document visualization is essential. GroupDocs.Viewer for .NET emerges as a robust solution, empowering users to effortlessly view and interact with various document formats directly within their .NET applications.
 ## Prerequisites
@@ -65,6 +67,6 @@ Yes, you can access the free trial from [here](https://releases.groupdocs.com/).
 ### How can I obtain temporary licenses for GroupDocs.Viewer for .NET?
 Temporary licenses can be acquired from [this link](https://purchase.groupdocs.com/temporary-license/).
 ### Where can I find documentation for GroupDocs.Viewer for .NET?
-Comprehensive documentation is available [here](https://reference.groupdocs.com/viewer/net/).
+Comprehensive documentation is available [here](https://tutorials.groupdocs.com/viewer/net/).
 ### What support options are available for GroupDocs.Viewer for .NET?
 You can seek assistance from the community forum [here](https://forum.groupdocs.com/c/viewer/9).

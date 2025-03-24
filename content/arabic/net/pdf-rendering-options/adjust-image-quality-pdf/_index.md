@@ -3,10 +3,12 @@ title: ضبط جودة الصورة في PDF
 linktitle: ضبط جودة الصورة في PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية ضبط جودة الصورة في مستندات PDF باستخدام GroupDocs.Viewer لـ .NET. اتبع البرنامج التعليمي خطوة بخطوة لتحقيق التكامل السلس.
-type: docs
 weight: 10
 url: /ar/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# ضبط جودة الصورة في PDF
+
 ## مقدمة
 تعد GroupDocs.Viewer for .NET مكتبة قوية تسمح للمطورين بدمج إمكانات عرض المستندات في تطبيقات .NET الخاصة بهم دون عناء. إحدى الميزات الرئيسية لهذه المكتبة هي القدرة على ضبط جودة الصورة عند عرض مستندات PDF. في هذا البرنامج التعليمي، سنرشدك خلال عملية ضبط جودة الصورة خطوة بخطوة باستخدام GroupDocs.Viewer لـ .NET.
 ## المتطلبات الأساسية

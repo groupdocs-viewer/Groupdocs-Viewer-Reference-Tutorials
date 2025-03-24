@@ -3,10 +3,12 @@ title: Establecer licencia desde archivo
 linktitle: Establecer licencia desde archivo
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda cómo integrar GroupDocs.Viewer para .NET en sus aplicaciones sin esfuerzo. Establezca licencias, vea documentos y personalice la apariencia del visor.
-type: docs
 weight: 10
 url: /es/net/getting-started/set-license-from-file/
 ---
+
+# Establecer licencia desde archivo
+
 ## Introducción
 GroupDocs.Viewer para .NET es una potente API de visualización de documentos que permite a los desarrolladores de .NET integrar perfectamente capacidades de visualización de documentos en sus aplicaciones. Ya sea que necesite mostrar documentos en varios formatos, como PDF, Microsoft Office o imágenes, GroupDocs.Viewer proporciona una solución confiable con amplias opciones de personalización.
 ## Requisitos previos

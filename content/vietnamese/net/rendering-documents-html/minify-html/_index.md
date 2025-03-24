@@ -3,10 +3,12 @@ title: Giảm thiểu tài liệu HTML được hiển thị
 linktitle: Giảm thiểu tài liệu HTML được hiển thị
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị liền mạch các tài liệu HTML trong ứng dụng .NET bằng GroupDocs.Viewer cho .NET.
-type: docs
 weight: 11
 url: /vi/net/rendering-documents-html/minify-html/
 ---
+
+# Giảm thiểu tài liệu HTML được hiển thị
+
 ## Giới thiệu
 GroupDocs.Viewer cho .NET là một công cụ mạnh mẽ cho phép các nhà phát triển hiển thị liền mạch các tài liệu HTML trong các ứng dụng .NET của họ. Với API trực quan và chức năng mạnh mẽ, các nhà phát triển có thể dễ dàng tích hợp khả năng xem tài liệu vào ứng dụng của họ, nâng cao trải nghiệm và năng suất của người dùng.
 ## Điều kiện tiên quyết

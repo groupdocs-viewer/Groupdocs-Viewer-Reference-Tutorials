@@ -3,10 +3,12 @@ title: Rendu avec des polices personnalisées
 linktitle: Rendu avec des polices personnalisées
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des documents avec des polices personnalisées à l'aide de GroupDocs.Viewer pour .NET. Améliorez les présentations visuelles sans effort.
-type: docs
 weight: 18
 url: /fr/net/rendering-options/render-custom-fonts/
 ---
+
+# Rendu avec des polices personnalisées
+
 ## Introduction
 Dans le domaine du développement .NET, GroupDocs.Viewer offre une solution puissante pour le rendu de documents de différents formats. Parmi ses nombreuses fonctionnalités, GroupDocs.Viewer permet le rendu de documents avec des polices personnalisées, ajoutant ainsi une couche de personnalisation et de flexibilité à vos applications.
 ## Conditions préalables

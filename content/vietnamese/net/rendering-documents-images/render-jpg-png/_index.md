@@ -3,10 +3,12 @@ title: Kết xuất tài liệu sang JPGPNG
 linktitle: Kết xuất tài liệu sang JPGPNG
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá cách kết xuất liền mạch các tài liệu sang JPG/PNG trong .NET bằng GroupDocs.Viewer để nâng cao trải nghiệm và năng suất của người dùng.
-type: docs
 weight: 10
 url: /vi/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Kết xuất tài liệu sang JPGPNG
+
 ## Giới thiệu
 
 Trong thế giới phát triển .NET, việc xử lý tài liệu một cách hiệu quả là điều cần thiết cho nhiều ứng dụng khác nhau. Cho dù bạn đang xây dựng hệ thống quản lý tài liệu, nền tảng thương mại điện tử hay ứng dụng giàu nội dung thì khả năng xem tài liệu một cách liền mạch là rất quan trọng. Đây là lúc GroupDocs.Viewer dành cho .NET phát huy tác dụng, cung cấp giải pháp toàn diện để hiển thị tài liệu sang nhiều định dạng khác nhau như JPG và PNG.
@@ -106,7 +108,7 @@ Trả lời: Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu
 
 ### Câu hỏi: Tôi có thể tìm tài liệu về GroupDocs.Viewer dành cho .NET ở đâu?
 
- A: Tài liệu chi tiết có sẵn[đây](https://reference.groupdocs.com/viewer/net/).
+ A: Tài liệu chi tiết có sẵn[đây](https://tutorials.groupdocs.com/viewer/net/).
 
 ### Câu hỏi: Tôi có thể nhận hỗ trợ hoặc đặt câu hỏi liên quan đến GroupDocs.Viewer cho .NET ở đâu?
 

@@ -3,10 +3,12 @@ title: تقديم خطوط الشبكة
 linktitle: تقديم خطوط الشبكة
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين عرض المستندات باستخدام GroupDocs.Viewer لـ .NET. تقديم خطوط الشبكة دون عناء. جرب النسخة التجريبية المجانية الآن! #مستندات المجموعة #عارض
-type: docs
 weight: 12
 url: /ar/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# تقديم خطوط الشبكة
+
 ## مقدمة
 مرحبًا بك في هذا الدليل التفصيلي حول استخدام GroupDocs.Viewer لـ .NET لعرض خطوط الشبكة في مستنداتك. سواء كنت مطورًا متمرسًا أو وافدًا جديدًا إلى إطار عمل .NET، فسيرشدك هذا البرنامج التعليمي خلال العملية مع شرح تفصيلي وأمثلة سهلة المتابعة.
 ## المتطلبات الأساسية
@@ -66,6 +68,6 @@ viewer.View(options, 1, 2, 3);
 ### هل التراخيص المؤقتة متاحة لـ GroupDocs.Viewer لـ .NET؟
  نعم يمكنك الحصول على[ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/) لـ GroupDocs.Viewer لـ .NET.
 ### هل يمكنني العثور على وثائق تفصيلية لـ GroupDocs.Viewer لـ .NET؟
- قطعاً! الرجوع إلى[الوثائق الرسمية](https://reference.groupdocs.com/viewer/net/) للحصول على معلومات تفصيلية حول استخدام GroupDocs.Viewer لـ .NET.
+ قطعاً! الرجوع إلى[الوثائق الرسمية](https://tutorials.groupdocs.com/viewer/net/) للحصول على معلومات تفصيلية حول استخدام GroupDocs.Viewer لـ .NET.
 ### أين يمكنني تنزيل أحدث إصدار من GroupDocs.Viewer لـ .NET؟
  تحميل المكتبة من[صفحة الإصدار الرسمية](https://releases.groupdocs.com/viewer/net/).

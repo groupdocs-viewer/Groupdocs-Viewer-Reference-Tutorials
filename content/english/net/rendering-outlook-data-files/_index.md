@@ -3,10 +3,12 @@ title: Rendering Outlook Data Files (PST, OST)
 linktitle: Rendering Outlook Data Files (PST, OST)
 second_title: GroupDocs.Viewer .NET API
 description: Explore rendering Outlook Data Files (PST, OST) tutorials with GroupDocs.Viewer for .NET. Discover efficient document management techniques effortlessly.
-type: docs
 weight: 39
 url: /net/rendering-outlook-data-files/
 ---
+
+# Rendering Outlook Data Files (PST, OST)
+
 ## Introduction
 
 In today's digital landscape, managing Outlook Data Files (PST, OST) efficiently is paramount. GroupDocs.Viewer for .NET empowers developers to seamlessly extract view information, render specific folders, filter messages, and limit the number of items in Outlook data files. Let's embark on a journey to explore the intricacies of these tutorials.

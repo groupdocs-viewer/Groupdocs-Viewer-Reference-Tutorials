@@ -3,10 +3,12 @@ title: Começando
 linktitle: Começando
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriais passo a passo para integrar perfeitamente o GroupDocs.Viewer for .NET aos seus aplicativos. Aprenda a definir licenças e personalizar a aparência do visualizador.
-type: docs
 weight: 26
 url: /pt/net/getting-started/
 ---
+
+# Começando
+
 
 ## Introdução
 

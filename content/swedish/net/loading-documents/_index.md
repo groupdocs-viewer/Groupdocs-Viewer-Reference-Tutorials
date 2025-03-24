@@ -3,10 +3,12 @@ title: Laddar dokument
 linktitle: Laddar dokument
 second_title: GroupDocs.Viewer .NET API
 description: Upptäck hur du effektivt laddar och renderar dokument med GroupDocs.Viewer .NET. Utforska självstudier för lokal disk, stream och FTP-laddning för förbättrade .NET-appar.
-type: docs
 weight: 20
 url: /sv/net/loading-documents/
 ---
+
+# Laddar dokument
+
 ## Introduktion
 
 Välkommen till den omfattande guiden om att ladda dokument med GroupDocs.Viewer för .NET! Oavsett om du är en erfaren utvecklare eller en nykomling av .NET-applikationer, täcker våra tutorials alla aspekter av att effektivt ladda och rendera dokument för att förbättra dina projekt.

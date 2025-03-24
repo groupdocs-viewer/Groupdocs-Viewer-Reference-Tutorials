@@ -3,10 +3,12 @@ title: Renderowanie dokumentów edytora tekstu
 linktitle: Renderowanie dokumentów edytora tekstu
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak efektywnie renderować prześledzone zmiany w dokumentach edytora tekstu przy użyciu programu GroupDocs.Viewer dla platformy .NET. Podnieś swoje umiejętności zarządzania dokumentami.
-type: docs
 weight: 36
 url: /pl/net/rendering-word-processing-documents/
 ---
+
+# Renderowanie dokumentów edytora tekstu
+
 
 ## Wstęp
 

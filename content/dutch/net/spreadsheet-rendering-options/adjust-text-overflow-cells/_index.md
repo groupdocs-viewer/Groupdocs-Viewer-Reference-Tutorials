@@ -3,10 +3,12 @@ title: Pas de tekstoverloop in cellen aan
 linktitle: Pas de tekstoverloop in cellen aan
 second_title: GroupDocs.Viewer .NET-API
 description: Beheer moeiteloos tekstoverloop in .NET-documenten met GroupDocs.Viewer. Verbeter de leesbaarheid en gebruikerservaring. Download nu uw gratis proefperiode.
-type: docs
 weight: 10
 url: /nl/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Pas de tekstoverloop in cellen aan
+
 ## Invoering
 In de dynamische wereld van .NET-ontwikkeling is het beheren van tekstoverloop in cellen cruciaal voor het maken van visueel aantrekkelijke en leesbare documenten. GroupDocs.Viewer voor .NET biedt ontwikkelaars een uitgebreide set tools om tekstoverloop in spreadsheetdocumenten naadloos af te handelen. Deze zelfstudie leidt u door het proces van het aanpassen van de tekstoverloop in cellen met behulp van GroupDocs.Viewer voor .NET.
 ## Vereisten
@@ -57,7 +59,7 @@ Nu hebt u met succes de tekstoverloop in cellen aangepast met GroupDocs.Viewer v
 Concluderend vereenvoudigt GroupDocs.Viewer voor .NET de taak van het omgaan met tekstoverloop in cellen, waardoor ervoor wordt gezorgd dat uw documenten niet alleen functioneel zijn, maar ook visueel gepolijst. Met deze stappen kunt u de gebruikerservaring en leesbaarheid van uw spreadsheetdocumenten moeiteloos verbeteren.
 ## Veelgestelde vragen
 ### 1. Kan ik GroupDocs.Viewer voor .NET gebruiken met elk type document?
- Ja, GroupDocs.Viewer voor .NET ondersteunt een breed scala aan documentformaten, waaronder spreadsheets, presentaties en meer. Verwijs naar de[documentatie](https://reference.groupdocs.com/viewer/net/) voor de volledige lijst.
+ Ja, GroupDocs.Viewer voor .NET ondersteunt een breed scala aan documentformaten, waaronder spreadsheets, presentaties en meer. Verwijs naar de[documentatie](https://tutorials.groupdocs.com/viewer/net/) voor de volledige lijst.
 ### 2. Is er een gratis proefperiode beschikbaar?
  Ja, u kunt de mogelijkheden van GroupDocs.Viewer voor .NET verkennen door het bestand[gratis proefperiode](https://releases.groupdocs.com/).
 ### 3. Hoe kan ik ondersteuning krijgen bij eventuele problemen?

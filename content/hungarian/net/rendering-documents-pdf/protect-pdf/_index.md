@@ -3,10 +3,12 @@ title: A renderelt PDF védelme jelszóval
 linktitle: A renderelt PDF védelme jelszóval
 second_title: GroupDocs.Viewer .NET API
 description: A Groupdocs.Viewer for .NET segítségével egyszerűen jelszavakkal védheti renderelt PDF-fájljait. Tartsa biztonságban és bizalmasan dokumentumait.
-type: docs
 weight: 12
 url: /hu/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# A renderelt PDF védelme jelszóval
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan használhatja a Groupdocs.Viewer for .NET alkalmazást a renderelt PDF jelszóval történő védelmére. Biztonsági intézkedések hozzáadásával szabályozhatja a PDF-dokumentumokhoz való hozzáférést, biztosítva a bizalmasságot és az integritást.
 ## Előfeltételek

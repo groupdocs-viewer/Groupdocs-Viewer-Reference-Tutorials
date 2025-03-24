@@ -3,10 +3,12 @@ title: 渲染隐藏的列和行
 linktitle: 渲染隐藏的列和行
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 轻松解锁电子表格中的隐藏数据。按照我们的分步指南来揭示隐藏的列和行。
-type: docs
 weight: 13
 url: /zh/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# 渲染隐藏的列和行
+
 ## 介绍
 在文档可视化领域，GroupDocs.Viewer for .NET 是一款强大的工具，可促进各种文档格式的无缝呈现。一项有趣的功能是能够显示电子表格中隐藏的列和行。在本教程中，我们将深入探讨解锁此功能并释放数据潜力的步骤。
 ## 先决条件

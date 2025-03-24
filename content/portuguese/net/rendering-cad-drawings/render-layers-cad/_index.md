@@ -3,10 +3,12 @@ title: Renderizar camadas em desenhos CAD
 linktitle: Renderizar camadas em desenhos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Renderize desenhos CAD perfeitamente em aplicativos .NET com GroupDocs.Viewer for .NET. Explore opções de renderização, personalize camadas e muito mais.
-type: docs
 weight: 13
 url: /pt/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Renderizar camadas em desenhos CAD
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma ferramenta poderosa que permite aos desenvolvedores integrar perfeitamente recursos de renderização de documentos em seus aplicativos .NET. Se você precisa renderizar desenhos CAD, PDFs, documentos do Microsoft Office ou mais, o GroupDocs.Viewer oferece uma solução abrangente.
 ## Pré-requisitos
@@ -14,7 +16,7 @@ Antes de começar a usar o GroupDocs.Viewer for .NET, certifique-se de ter os se
 - Compreensão básica da linguagem de programação C#.
 - Ambiente de desenvolvimento .NET configurado em sua máquina.
 -  GroupDocs.Viewer para .NET instalado. Você pode baixá-lo em[aqui](https://releases.groupdocs.com/viewer/net/).
--  Acesso à documentação do GroupDocs.Viewer for .NET para referência, que pode ser encontrada[aqui](https://reference.groupdocs.com/viewer/net/).
+-  Acesso à documentação do GroupDocs.Viewer for .NET para referência, que pode ser encontrada[aqui](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importar namespaces
 Para começar a usar o GroupDocs.Viewer for .NET, você precisa importar os namespaces necessários em seu projeto. Siga esses passos:

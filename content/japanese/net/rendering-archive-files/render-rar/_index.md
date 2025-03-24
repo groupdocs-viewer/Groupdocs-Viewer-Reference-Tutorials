@@ -3,10 +3,12 @@ title: RAR アーカイブをレンダリングする
 linktitle: RAR アーカイブをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、RAR アーカイブを HTML、JPG、PNG、または PDF 形式にレンダリングする方法を学びます。 RAR アーカイブのコンテンツを簡単に表示および共有できます。
-type: docs
 weight: 13
 url: /ja/net/rendering-archive-files/render-rar/
 ---
+
+# RAR アーカイブをレンダリングする
+
 ## 導入
 RAR アーカイブは、複数のファイルやフォルダーを圧縮して 1 つのコンテナーに保存するための一般的な形式です。 RAR アーカイブを HTML、JPG、PNG、PDF などのさまざまな形式にレンダリングすることは、これらのアーカイブのコンテンツを表示または共有するために不可欠な場合があります。このチュートリアルでは、GroupDocs.Viewer for .NET を使用して RAR アーカイブをレンダリングする方法を検討します。
 ## 前提条件

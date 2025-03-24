@@ -3,10 +3,12 @@ title: CAD 도면의 레이어 렌더링
 linktitle: CAD 도면의 레이어 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램에서 CAD 도면을 원활하게 렌더링합니다. 렌더링 옵션을 살펴보고 레이어를 사용자 정의하는 등의 작업을 수행해 보세요.
-type: docs
 weight: 13
 url: /ko/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# CAD 도면의 레이어 렌더링
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 문서 렌더링 기능을 .NET 응용 프로그램에 원활하게 통합할 수 있게 해주는 강력한 도구입니다. CAD 도면, PDF, Microsoft Office 문서 등을 렌더링해야 하는 경우 GroupDocs.Viewer는 포괄적인 솔루션을 제공합니다.
 ## 전제조건
@@ -14,7 +16,7 @@ url: /ko/net/rendering-cad-drawings/render-layers-cad/
 - C# 프로그래밍 언어에 대한 기본 이해.
 - .NET 개발 환경이 컴퓨터에 설정되었습니다.
 -  .NET용 GroupDocs.Viewer가 설치되었습니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.groupdocs.com/viewer/net/).
--  참조용으로 .NET용 GroupDocs.Viewer 문서에 액세스할 수 있습니다.[여기](https://reference.groupdocs.com/viewer/net/).
+-  참조용으로 .NET용 GroupDocs.Viewer 문서에 액세스할 수 있습니다.[여기](https://tutorials.groupdocs.com/viewer/net/).
 
 ## 네임스페이스 가져오기
 .NET용 GroupDocs.Viewer 사용을 시작하려면 프로젝트에 필요한 네임스페이스를 가져와야 합니다. 다음과 같이하세요:

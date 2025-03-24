@@ -3,10 +3,12 @@ title: TGA Görüntülerini Oluşturun
 linktitle: TGA Görüntülerini Oluşturun
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak .NET uygulamalarında TGA görüntülerini zahmetsizce nasıl oluşturacağınızı öğrenin. Görüntü oluşturma yeteneklerinizi geliştirin.
-type: docs
 weight: 17
 url: /tr/net/image-rendering/render-tga-images/
 ---
+
+# TGA Görüntülerini Oluşturun
+
 ## giriiş
 Günümüzün dijital ortamında, çeşitli görüntü formatlarını sorunsuz bir şekilde oluşturma yeteneği birçok uygulama için çok önemlidir. Bu tür formatlardan biri, yüksek kaliteli görüntüleri ve grafik yoğunluklu sektörlerde yaygın kullanımıyla bilinen TGA'dır (Truevision Grafik Bağdaştırıcısı). TGA görüntü oluşturmayı uygulamalarınıza dahil etmek isteyen bir .NET geliştiricisiyseniz doğru yerdesiniz. Bu eğitimde, TGA görüntülerini zahmetsizce işlemek için GroupDocs.Viewer for .NET'ten nasıl yararlanacağımızı keşfedeceğiz.
 ## Önkoşullar

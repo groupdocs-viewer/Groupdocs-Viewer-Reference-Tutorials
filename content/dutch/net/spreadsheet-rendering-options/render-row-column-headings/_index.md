@@ -3,10 +3,12 @@ title: Geef rij- en kolomkoppen weer
 linktitle: Geef rij- en kolomkoppen weer
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter de documentweergave in .NET! Leer rij- en kolomkoppen weergeven met GroupDocs.Viewer voor .NET. Ontdek HTML-, JPG-, PNG- en PDF-uitvoer.
-type: docs
 weight: 18
 url: /nl/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Geef rij- en kolomkoppen weer
+
 ## Invoering
 Wilt u uw documentkijkervaring in .NET-toepassingen verbeteren? Met GroupDocs.Viewer voor .NET kunt u naadloos rij- en kolomkoppen uit uw spreadsheetbestanden weergeven. In deze zelfstudie begeleiden we u bij het renderen van rij- en kolomkoppen met behulp van verschillende uitvoerformaten, zoals HTML, JPG, PNG en PDF.
 ## Vereisten

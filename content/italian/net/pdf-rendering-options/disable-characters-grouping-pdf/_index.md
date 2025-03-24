@@ -3,10 +3,12 @@ title: Disabilita il raggruppamento dei caratteri nel PDF
 linktitle: Disabilita il raggruppamento dei caratteri nel PDF
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come disabilitare il raggruppamento di caratteri nei PDF utilizzando GroupDocs.Viewer per .NET. Segui il nostro tutorial passo passo per un rendering fluido dei documenti.
-type: docs
 weight: 11
 url: /it/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Disabilita il raggruppamento dei caratteri nel PDF
+
 ## introduzione
 Nel mondo dello sviluppo .NET, la gestione della visualizzazione dei documenti a volte può rappresentare una sfida, soprattutto quando si ha a che fare con formati come i PDF. Tuttavia, con gli strumenti e le conoscenze giuste, è possibile semplificare questo processo in modo efficiente. Uno di questi strumenti che viene in soccorso è GroupDocs.Viewer per .NET. Questa potente libreria consente agli sviluppatori di eseguire il rendering e visualizzare senza problemi vari tipi di documenti all'interno delle loro applicazioni .NET.
 ## Prerequisiti

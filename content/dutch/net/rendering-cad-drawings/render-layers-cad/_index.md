@@ -3,10 +3,12 @@ title: Render lagen in CAD-tekeningen
 linktitle: Render lagen in CAD-tekeningen
 second_title: GroupDocs.Viewer .NET-API
 description: Geef CAD-tekeningen naadloos weer in .NET-toepassingen met GroupDocs.Viewer voor .NET. Ontdek weergaveopties, pas lagen aan en meer.
-type: docs
 weight: 13
 url: /nl/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Render lagen in CAD-tekeningen
+
 ## Invoering
 GroupDocs.Viewer voor .NET is een krachtig hulpmiddel waarmee ontwikkelaars de mogelijkheden voor documentweergave naadloos kunnen integreren in hun .NET-toepassingen. Of u nu CAD-tekeningen, PDF's, Microsoft Office-documenten of meer moet renderen, GroupDocs.Viewer biedt een uitgebreide oplossing.
 ## Vereisten
@@ -14,7 +16,7 @@ Voordat u GroupDocs.Viewer voor .NET gaat gebruiken, moet u ervoor zorgen dat u 
 - Basiskennis van de programmeertaal C#.
 - .NET-ontwikkelomgeving die op uw computer is ingesteld.
 -  GroupDocs.Viewer voor .NET geïnstalleerd. Je kunt het downloaden van[hier](https://releases.groupdocs.com/viewer/net/).
--  Toegang tot de GroupDocs.Viewer voor .NET-documentatie ter referentie, die u kunt vinden[hier](https://reference.groupdocs.com/viewer/net/).
+-  Toegang tot de GroupDocs.Viewer voor .NET-documentatie ter referentie, die u kunt vinden[hier](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Naamruimten importeren
 Om GroupDocs.Viewer voor .NET te gaan gebruiken, moet u de vereiste naamruimten in uw project importeren. Volg deze stappen:

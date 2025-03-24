@@ -3,10 +3,12 @@ title: Rendering Gambar
 linktitle: Rendering Gambar
 second_title: GroupDocs.Viewer .NET API
 description: Temukan tutorial komprehensif tentang merender berbagai format gambar menggunakan GroupDocs.Viewer untuk .NET. Dari AI hingga WMF, pelajari integrasi lancar dan contoh pengkodean.
-type: docs
 weight: 28
 url: /id/net/image-rendering/
 ---
+
+# Rendering Gambar
+
 
 ## Perkenalan
 

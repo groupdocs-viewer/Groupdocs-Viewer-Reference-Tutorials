@@ -3,10 +3,12 @@ title: Passen Sie die Ausgabebildgröße für CAD-Zeichnungen an
 linktitle: Passen Sie die Ausgabebildgröße für CAD-Zeichnungen an
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie die Ausgabebildgröße für CAD-Zeichnungen mit GroupDocs.Viewer für .NET anpassen. Verbessern Sie mühelos Sichtbarkeit und Benutzerfreundlichkeit.
-type: docs
 weight: 15
 url: /de/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Passen Sie die Ausgabebildgröße für CAD-Zeichnungen an
+
 ## Einführung
 CAD-Zeichnungen erfordern häufig spezifische Anpassungen für eine optimale Anzeige und Präsentation. GroupDocs.Viewer für .NET bietet ein leistungsstarkes Toolset zum Verwalten und Anpassen der CAD-Zeichnungsausgabe. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess der Anpassung der Ausgabebildgröße für CAD-Zeichnungen.
 ## Voraussetzungen

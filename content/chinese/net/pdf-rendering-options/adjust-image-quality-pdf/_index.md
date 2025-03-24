@@ -3,10 +3,12 @@ title: 调整 PDF 中的图像质量
 linktitle: 调整 PDF 中的图像质量
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 调整 PDF 文档中的图像质量。请按照我们的分步教程进行无缝集成。
-type: docs
 weight: 10
 url: /zh/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# 调整 PDF 中的图像质量
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个功能强大的库，允许开发人员轻松地将文档呈现功能集成到他们的 .NET 应用程序中。该库的主要功能之一是能够在渲染 PDF 文档时调整图像质量。在本教程中，我们将引导您使用 GroupDocs.Viewer for .NET 逐步完成调整图像质量的过程。
 ## 先决条件

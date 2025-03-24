@@ -3,10 +3,12 @@ title: Gör dolda kolumner och rader
 linktitle: Gör dolda kolumner och rader
 second_title: GroupDocs.Viewer .NET API
 description: Lås upp dolda data i kalkylblad utan ansträngning med GroupDocs.Viewer för .NET. Följ vår steg-för-steg-guide för att avslöja dolda kolumner och rader.
-type: docs
 weight: 13
 url: /sv/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Gör dolda kolumner och rader
+
 ## Introduktion
 När det gäller dokumentvisualisering står GroupDocs.Viewer för .NET högt som ett robust verktyg som underlättar sömlös rendering av olika dokumentformat. En spännande förmåga är möjligheten att avslöja dolda kolumner och rader i kalkylblad. I den här handledningen kommer vi att fördjupa oss i stegen för att låsa upp den här funktionen och frigöra potentialen i din data.
 ## Förutsättningar

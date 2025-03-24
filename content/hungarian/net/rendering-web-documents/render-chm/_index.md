@@ -3,10 +3,12 @@ title: Rendereljen CHM fájlokat
 linktitle: Rendereljen CHM fájlokat
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet CHM-fájlokat előállítani .NET-ben a GroupDocs.Viewer segítségével. Konvertálja a CHM-et HTML, JPG, PNG és PDF formátumokba könnyedén.
-type: docs
 weight: 10
 url: /hu/net/rendering-web-documents/render-chm/
 ---
+
+# Rendereljen CHM fájlokat
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet CHM (összeállított HTML-súgó) fájlokat előállítani a GroupDocs.Viewer for .NET segítségével. A GroupDocs.Viewer for .NET egy hatékony dokumentum-megjelenítő API, amely lehetővé teszi a fejlesztők számára, hogy több mint 170 dokumentumtípust jelenítsenek meg .NET-alkalmazásaikon belül külső szoftver telepítése nélkül.
 

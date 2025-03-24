@@ -3,10 +3,12 @@ title: Thêm hình mờ vào tài liệu
 linktitle: Thêm hình mờ vào tài liệu
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách thêm hình mờ vào tài liệu một cách liền mạch bằng GroupDocs.Viewer dành cho .NET. Tăng cường bảo mật tài liệu và xây dựng thương hiệu bằng hướng dẫn dễ thực hiện này.
-type: docs
 weight: 10
 url: /vi/net/rendering-options/add-watermark/
 ---
+
+# Thêm hình mờ vào tài liệu
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc quản lý và xem các định dạng tài liệu khác nhau một cách liền mạch là điều cần thiết đối với nhiều doanh nghiệp cũng như cá nhân. May mắn thay, với các công cụ như GroupDocs.Viewer dành cho .NET, việc xử lý tài liệu trở nên dễ dàng. Thư viện .NET mạnh mẽ này cho phép các nhà phát triển tích hợp dễ dàng chức năng xem tài liệu vào ứng dụng của họ, cho phép người dùng xem tài liệu mà không cần phần mềm gốc đã tạo ra chúng.
 ## Điều kiện tiên quyết

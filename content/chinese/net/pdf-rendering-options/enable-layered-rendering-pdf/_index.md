@@ -3,10 +3,12 @@ title: 在 PDF 中启用分层渲染
 linktitle: 在 PDF 中启用分层渲染
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 PDF 文档中启用分层渲染。轻松增强文档查看体验。
-type: docs
 weight: 15
 url: /zh/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# 在 PDF 中启用分层渲染
+
 ## 介绍
 在本教程中，我们将深入研究使用 GroupDocs.Viewer for .NET 在 PDF 文档中启用分层渲染的过程。分层渲染可以增强文档显示和操作，为用户提供更具交互性的查看体验。
 ## 先决条件

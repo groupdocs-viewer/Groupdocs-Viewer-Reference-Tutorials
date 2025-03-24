@@ -3,10 +3,12 @@ title: 보다 빠른 문서 처리를 위해 캐싱 활성화
 linktitle: 보다 빠른 문서 처리를 위해 캐싱 활성화
 second_title: GroupDocs.Viewer .NET API
 description: 캐싱을 활용하여 GroupDocs.Viewer를 사용하여 .NET 앱의 문서 처리 속도를 향상시킵니다. 손쉽게 성능을 최적화하세요.
-type: docs
 weight: 10
 url: /ko/net/advanced-usage-caching/enable-caching/
 ---
+
+# 보다 빠른 문서 처리를 위해 캐싱 활성화
+
 ## 소개
 .NET 문서 처리 영역에서는 성능 최적화가 가장 중요합니다. 여러 문서 페이지를 신속하게 렌더링해야 하는 시나리오를 상상해 보세요. 캐싱이 작동하는 곳입니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 문서 처리 속도를 향상시키기 위해 캐싱을 활용하는 방법을 자세히 살펴보겠습니다.
 ## 전제조건

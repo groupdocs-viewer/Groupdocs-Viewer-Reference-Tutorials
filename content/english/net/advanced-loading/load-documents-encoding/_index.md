@@ -3,10 +3,12 @@ title: Load Documents with Specific Encoding
 linktitle: Load Documents with Specific Encoding
 second_title: GroupDocs.Viewer .NET API
 description: Enhance your .NET applications with seamless document viewing using GroupDocs.Viewer for .NET. Effortlessly load documents with specific encoding and customize the viewing experience.
-type: docs
 weight: 11
 url: /net/advanced-loading/load-documents-encoding/
 ---
+
+# Load Documents with Specific Encoding
+
 ## Introduction
 Are you looking for a powerful tool to seamlessly view documents within your .NET applications? Look no further than GroupDocs.Viewer for .NET! This robust library provides developers with the capability to effortlessly display various document formats directly within their applications, offering an intuitive and user-friendly viewing experience.
 ## Prerequisites

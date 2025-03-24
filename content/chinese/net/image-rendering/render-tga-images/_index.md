@@ -3,10 +3,12 @@ title: 渲染 TGA 图像
 linktitle: 渲染 TGA 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 在 .NET 应用程序中轻松渲染 TGA 图像。增强您的图像渲染能力。
-type: docs
 weight: 17
 url: /zh/net/image-rendering/render-tga-images/
 ---
+
+# 渲染 TGA 图像
+
 ## 介绍
 在当今的数字环境中，无缝渲染各种图像格式的能力对于许多应用程序至关重要。其中一种格式是 TGA（Truevision 图形适配器），以其高质量图像和在图形密集型行业中的广泛使用而闻名。如果您是一名 .NET 开发人员，希望将 TGA 图像渲染合并到您的应用程序中，那么您来对地方了。在本教程中，我们将探讨如何利用 GroupDocs.Viewer for .NET 轻松渲染 TGA 图像。
 ## 先决条件

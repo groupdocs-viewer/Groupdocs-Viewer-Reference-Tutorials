@@ -3,10 +3,12 @@ title: Ladda dokument från FTP (avancerat)
 linktitle: Ladda dokument från FTP (avancerat)
 second_title: GroupDocs.Viewer .NET API
 description: Integrera GroupDocs.Viewer för .NET sömlöst i dina applikationer för effektiv dokumentvisning. Återge dokument från FTP utan ansträngning.
-type: docs
 weight: 13
 url: /sv/net/loading-documents/loading-document-ftp/
 ---
+
+# Ladda dokument från FTP (avancerat)
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt API som gör det möjligt för utvecklare att sömlöst integrera dokumentvisningsmöjligheter i sina .NET-applikationer. Oavsett om du arbetar med PDF-filer, Microsoft Office-dokument eller andra populära filformat, förenklar GroupDocs.Viewer processen att rendera dokument för visning, vilket gör det enklare än någonsin att ge användarna en rik visningsupplevelse.
 ## Förutsättningar

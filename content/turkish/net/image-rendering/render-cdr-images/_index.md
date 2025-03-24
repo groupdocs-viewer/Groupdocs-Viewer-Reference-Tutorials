@@ -3,10 +3,12 @@ title: CDR Görüntülerini Oluştur
 linktitle: CDR Görüntülerini Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak CDR görüntülerini HTML, JPG, PNG ve PDF'ye nasıl dönüştüreceğinizi öğrenin. Bu eğitimle CorelDRAW dosyalarını kolayca dönüştürün.
-type: docs
 weight: 12
 url: /tr/net/image-rendering/render-cdr-images/
 ---
+
+# CDR Görüntülerini Oluştur
+
 ## giriiş
 Bu eğitimde, GroupDocs.Viewer for .NET'i kullanarak CDR (CorelDRAW) görüntülerini oluşturma sürecinde size rehberlik edeceğiz. CDR, öncelikle bir vektör grafik düzenleyicisi olan CorelDRAW ile ilişkili bir dosya formatıdır. GroupDocs.Viewer ile CDR dosyalarını HTML, JPG, PNG ve PDF gibi çeşitli formatlara kolayca dönüştürebilirsiniz.
 ## Önkoşullar

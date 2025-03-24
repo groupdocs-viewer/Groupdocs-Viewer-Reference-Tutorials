@@ -3,10 +3,12 @@ title: تقديم صور EMZ وEMF
 linktitle: تقديم صور EMZ وEMF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور EMZ وEMF إلى تنسيقات مختلفة باستخدام GroupDocs.Viewer لـ .NET. برنامج تعليمي سهل المتابعة للمطورين.
-type: docs
 weight: 14
 url: /ar/net/image-rendering/render-emz-emf-images/
 ---
+
+# تقديم صور EMZ وEMF
+
 ## مقدمة
 
 GroupDocs.Viewer for .NET عبارة عن واجهة برمجة تطبيقات قوية لعرض المستندات تسمح للمطورين بعرض أنواع مختلفة من المستندات، بما في ذلك صور EMZ (ملف تعريف Windows المحسن) وصور EMF (ملف تعريف محسّن) في تطبيقات .NET الخاصة بهم. في هذا البرنامج التعليمي، سوف نستكشف كيفية عرض صور EMZ وEMF إلى تنسيقات مختلفة مثل HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لـ .NET.
@@ -97,4 +99,4 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
  ج: نعم، التراخيص المؤقتة متاحة للشراء[هنا](https://purchase.groupdocs.com/temporary-license/).
 
 ### س: أين يمكنني العثور على الوثائق التفصيلية الخاصة بـ GroupDocs.Viewer لـ .NET؟
- ج: يمكنك الرجوع إلى الوثائق[هنا](https://reference.groupdocs.com/viewer/net/)للحصول على إرشادات شاملة حول استخدام واجهة برمجة التطبيقات.
+ ج: يمكنك الرجوع إلى الوثائق[هنا](https://tutorials.groupdocs.com/viewer/net/)للحصول على إرشادات شاملة حول استخدام واجهة برمجة التطبيقات.

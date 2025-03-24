@@ -3,10 +3,12 @@ title: Töltsön be dokumentumokat meghatározott kódolással
 linktitle: Töltsön be dokumentumokat meghatározott kódolással
 second_title: GroupDocs.Viewer .NET API
 description: Bővítse .NET-alkalmazásait a zökkenőmentes dokumentummegtekintéssel a GroupDocs.Viewer for .NET segítségével. Könnyedén betöltheti a dokumentumokat speciális kódolással, és testreszabhatja a megtekintési élményt.
-type: docs
 weight: 11
 url: /hu/net/advanced-loading/load-documents-encoding/
 ---
+
+# Töltsön be dokumentumokat meghatározott kódolással
+
 ## Bevezetés
 Hatékony eszközt keres a dokumentumok zökkenőmentes megtekintésére .NET-alkalmazásaiban? Ne keressen tovább, mint a GroupDocs.Viewer for .NET! Ez a robusztus könyvtár lehetővé teszi a fejlesztők számára, hogy könnyedén jelenítsék meg a különböző dokumentumformátumokat közvetlenül az alkalmazásaikban, intuitív és felhasználóbarát megtekintési élményt kínálva.
 ## Előfeltételek

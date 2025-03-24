@@ -3,10 +3,12 @@ title: CHM ファイルをレンダリングする
 linktitle: CHM ファイルをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET で CHM ファイルをレンダリングする方法を学びます。 CHM を HTML、JPG、PNG、PDF 形式に簡単に変換します。
-type: docs
 weight: 10
 url: /ja/net/rendering-web-documents/render-chm/
 ---
+
+# CHM ファイルをレンダリングする
+
 ## 導入
 このチュートリアルでは、GroupDocs.Viewer for .NET を使用して CHM (コンパイルされた HTML ヘルプ) ファイルをレンダリングする方法を説明します。 GroupDocs.Viewer for .NET は、開発者が外部ソフトウェアをインストールすることなく、.NET アプリケーション内で 170 を超えるドキュメント タイプを表示できる強力なドキュメント レンダリング API です。
 

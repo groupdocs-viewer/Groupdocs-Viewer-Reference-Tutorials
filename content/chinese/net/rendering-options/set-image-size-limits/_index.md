@@ -3,10 +3,12 @@ title: 设置图像大小限制
 linktitle: 设置图像大小限制
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 .NET 应用程序中轻松设置图像大小限制，从而增强文档查看体验。
-type: docs
 weight: 21
 url: /zh/net/rendering-options/set-image-size-limits/
 ---
+
+# 设置图像大小限制
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一款功能强大的工具，旨在促进 .NET 应用程序内的无缝文档查看。凭借其强大的功能和直观的界面，开发人员可以轻松地将文档查看功能集成到他们的项目中，从而增强用户体验和生产力。在本教程中，我们将探讨如何使用 GroupDocs.Viewer for .NET 设置图像大小限制，确保文档的最佳显示，同时保持性能和效率。
 ## 先决条件

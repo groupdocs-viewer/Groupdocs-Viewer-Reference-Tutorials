@@ -3,10 +3,12 @@ title: Aktivera cachelagring för snabbare dokumentbehandling
 linktitle: Aktivera cachelagring för snabbare dokumentbehandling
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dokumentbehandlingshastigheten i .NET-appar med GroupDocs.Viewer genom att utnyttja cachelagring. Optimera prestanda utan ansträngning.
-type: docs
 weight: 10
 url: /sv/net/advanced-usage-caching/enable-caching/
 ---
+
+# Aktivera cachelagring för snabbare dokumentbehandling
+
 ## Introduktion
 Inom området för .NET-dokumentbehandling är optimering av prestanda av största vikt. Föreställ dig ett scenario där du behöver rendera flera dokumentsidor snabbt. Det är här caching kommer in i bilden. I den här handledningen kommer vi att fördjupa oss i hur vi använder cachelagring för att förbättra bearbetningshastigheten för dokument med GroupDocs.Viewer för .NET.
 ## Förutsättningar

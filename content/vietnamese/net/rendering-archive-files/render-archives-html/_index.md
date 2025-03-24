@@ -3,10 +3,12 @@ title: Hiển thị kho lưu trữ thành một hoặc nhiều trang HTML
 linktitle: Hiển thị kho lưu trữ thành một hoặc nhiều trang HTML
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị các bản lưu trữ thành các trang HTML bằng GroupDocs.Viewer dành cho .NET. Dễ dàng tích hợp khả năng xem tài liệu vào các ứng dụng .NET của bạn.
-type: docs
 weight: 12
 url: /vi/net/rendering-archive-files/render-archives-html/
 ---
+
+# Hiển thị kho lưu trữ thành một hoặc nhiều trang HTML
+
 ## Giới thiệu
 GroupDocs.Viewer dành cho .NET là thư viện kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển tích hợp dễ dàng khả năng xem tài liệu vào các ứng dụng .NET của họ. Cho dù bạn cần hiển thị các kho lưu trữ thành một hay nhiều trang HTML, hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình từng bước.
 ## Điều kiện tiên quyết

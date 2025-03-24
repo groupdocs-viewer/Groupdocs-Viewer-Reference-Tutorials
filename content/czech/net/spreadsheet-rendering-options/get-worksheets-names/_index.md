@@ -3,10 +3,12 @@ title: Získejte názvy pracovních listů
 linktitle: Získejte názvy pracovních listů
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte kouzlo GroupDocs.Viewer pro .NET – bezproblémově integrujte zobrazování dokumentů do svých aplikací. Vyzkoušejte bezplatnou zkušební verzi nyní!
-type: docs
 weight: 11
 url: /cs/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Získejte názvy pracovních listů
+
 ## Úvod
 Vítejte ve fascinujícím světě GroupDocs.Viewer pro .NET! Pokud jste vývojář nebo nadšenec, který má zájem prozkoumávat výkonné možnosti prohlížení dokumentů ve svých aplikacích .NET, máte se na co těšit. V tomto komplexním průvodci se ponoříme do složitosti získávání názvů listů pomocí GroupDocs.Viewer. Zapněte si bezpečnostní pás a vydejte se na tuto vzrušující cestu!
 ## Předpoklady
@@ -63,4 +65,4 @@ Absolutně! GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, v�
 ### Mohu získat dočasnou licenci?
  Rozhodně! Návštěva[tento odkaz](https://purchase.groupdocs.com/temporary-license/) získat dočasnou licenci.
 ### Jsou k dispozici podrobné zdroje dokumentace?
- Absolutně! Podívejte se na[oficiální dokumentace](https://reference.groupdocs.com/viewer/net/) pro podrobné informace a průvodce.
+ Absolutně! Podívejte se na[oficiální dokumentace](https://tutorials.groupdocs.com/viewer/net/) pro podrobné informace a průvodce.

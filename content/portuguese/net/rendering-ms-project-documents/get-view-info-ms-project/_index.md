@@ -3,10 +3,12 @@ title: Obtenha informações de visualização para documentos do Microsoft Proj
 linktitle: Obtenha informações de visualização para documentos do Microsoft Project
 second_title: API GroupDocs.Viewer .NET
 description: Explore o tutorial abrangente sobre como aproveitar o Groupdocs.Viewer for .NET para recuperar informações de visualização de documentos do Microsoft Project sem esforço.
-type: docs
 weight: 10
 url: /pt/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Obtenha informações de visualização para documentos do Microsoft Project
+
 ## Introdução
 No domínio das soluções de gerenciamento e visualização de documentos, o Groupdocs.Viewer for .NET se destaca como uma ferramenta versátil e robusta. Seja você um desenvolvedor que busca integrar recursos de visualização de documentos em seus aplicativos .NET ou um entusiasta ansioso para explorar suas funcionalidades, este tutorial irá guiá-lo através do processo de aproveitamento do Groupdocs.Viewer for .NET para recuperar informações de visualização de documentos do Microsoft Project. .
 ## Pré-requisitos
