@@ -6,6 +6,9 @@ description: Khám phá cách kết xuất liền mạch các tài liệu sang J
 weight: 10
 url: /vi/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Kết xuất tài liệu sang JPGPNG
+
 ## Giới thiệu
 
 Trong thế giới phát triển .NET, việc xử lý tài liệu một cách hiệu quả là điều cần thiết cho nhiều ứng dụng khác nhau. Cho dù bạn đang xây dựng hệ thống quản lý tài liệu, nền tảng thương mại điện tử hay ứng dụng giàu nội dung thì khả năng xem tài liệu một cách liền mạch là rất quan trọng. Đây là lúc GroupDocs.Viewer dành cho .NET phát huy tác dụng, cung cấp giải pháp toàn diện để hiển thị tài liệu sang nhiều định dạng khác nhau như JPG và PNG.

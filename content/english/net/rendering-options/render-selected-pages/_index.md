@@ -6,6 +6,9 @@ description: Learn how to render selected pages from documents using Groupdocs.V
 weight: 17
 url: /net/rendering-options/render-selected-pages/
 ---
+
+# Render Selected Pages
+
 ## Introduction
 
 In this tutorial, we'll delve into how to utilize Groupdocs.Viewer for .NET to render selected pages from a document. Whether you're a seasoned developer or just starting out, this step-by-step guide will walk you through the process with ease.

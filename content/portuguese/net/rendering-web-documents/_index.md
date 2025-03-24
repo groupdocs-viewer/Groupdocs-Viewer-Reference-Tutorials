@@ -6,6 +6,9 @@ description: Aprenda como renderizar arquivos CHM e HTML com margens personaliza
 weight: 35
 url: /pt/net/rendering-web-documents/
 ---
+
+# Renderizando documentos da Web
+
 ## Introdução
 
 Desvende as complexidades da renderização de documentos da web com GroupDocs.Viewer for .NET por meio de tutoriais abrangentes. A renderização de arquivos CHM e a personalização de margens HTML são funcionalidades vitais que podem aprimorar muito suas capacidades de processamento de documentos.

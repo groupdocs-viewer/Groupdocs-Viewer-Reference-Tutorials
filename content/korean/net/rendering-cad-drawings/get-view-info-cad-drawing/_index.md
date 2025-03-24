@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 CAD 도면에 대한 보�
 weight: 10
 url: /ko/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# CAD 도면에 대한 보기 정보 얻기
+
 ## 소개
 소프트웨어 개발 세계에서는 CAD 도면을 효율적으로 처리하는 것이 중요합니다. 건축가, 엔지니어 또는 디자이너를 위한 애플리케이션을 구축하는 경우 CAD 파일에 대한 원활한 보기 환경을 제공하면 사용자 만족도를 크게 높일 수 있습니다. .NET용 GroupDocs.Viewer는 CAD 파일 보기 기능을 .NET 응용 프로그램에 쉽게 통합할 수 있는 강력한 솔루션을 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 CAD 도면에 대한 보기 정보를 얻는 과정을 안내합니다.
 ## 전제조건

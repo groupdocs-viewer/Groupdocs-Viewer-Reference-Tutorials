@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET の魅力を体験してください – 
 weight: 11
 url: /ja/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# ワークシート名の取得
+
 ## 導入
 GroupDocs.Viewer for .NET の魅力的な世界へようこそ! .NET アプリケーション内の強力なドキュメント表示機能を探索することに熱心な開発者や愛好家なら、きっと満足できるでしょう。この包括的なガイドでは、GroupDocs.Viewer を使用したワークシート名の取得の複雑さを詳しく説明します。さあ、シートベルトを締めて、このエキサイティングな旅に出かけましょう!
 ## 前提条件

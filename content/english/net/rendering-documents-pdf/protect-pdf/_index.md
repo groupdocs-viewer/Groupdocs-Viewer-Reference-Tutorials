@@ -6,6 +6,9 @@ description: Protect your rendered PDFs with passwords easily using Groupdocs.Vi
 weight: 12
 url: /net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Protect Rendered PDF with Password
+
 ## Introduction
 In this tutorial, you'll learn how to use Groupdocs.Viewer for .NET to protect a rendered PDF with a password. By adding security measures, you can control access to your PDF documents, ensuring confidentiality and integrity.
 ## Prerequisites

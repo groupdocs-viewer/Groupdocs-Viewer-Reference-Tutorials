@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 CMX 이미지를 다양한
 weight: 13
 url: /ko/net/image-rendering/render-cmx-images/
 ---
+
+# CMX 이미지 렌더링
+
 ## 소개
 문서 관리 및 조작 영역에서 다양한 형식의 이미지를 렌더링하는 것은 중요한 작업입니다. .NET용 GroupDocs.Viewer는 CMX 이미지를 HTML, JPG, PNG 및 PDF와 같은 다양한 형식으로 렌더링하기 위한 포괄적인 기능을 제공하여 이 프로세스를 단순화합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 CMX 이미지를 렌더링하는 단계별 프로세스를 안내합니다.
 ## 전제조건

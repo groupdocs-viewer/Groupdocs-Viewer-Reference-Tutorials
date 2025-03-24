@@ -6,6 +6,9 @@ description: GroupDocs.Viewer'ı kullanarak .NET uygulamaları içindeki belge e
 weight: 12
 url: /tr/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Belge Eklerini Alma ve Kaydetme
+
 ## giriiş
 Dijital çağda, verimli belge yönetimi hem işletmeler hem de bireyler için çok önemlidir. E-postaları yönetmek, sözleşmeleri görüntülemek veya raporlara erişmek olsun, belge görselleştirme için güvenilir bir araca sahip olmak çok önemlidir. GroupDocs.Viewer for .NET, kullanıcıların çeşitli belge formatlarını doğrudan .NET uygulamalarında zahmetsizce görüntülemesine ve bunlarla etkileşime girmesine olanak tanıyan güçlü bir çözüm olarak ortaya çıkıyor.
 ## Önkoşullar

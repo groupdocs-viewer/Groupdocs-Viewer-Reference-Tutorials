@@ -6,6 +6,9 @@ description: Tìm hiểu cách dễ dàng hiển thị hình ảnh TGA trong cá
 weight: 17
 url: /vi/net/image-rendering/render-tga-images/
 ---
+
+# Kết xuất hình ảnh TGA
+
 ## Giới thiệu
 Trong bối cảnh kỹ thuật số ngày nay, khả năng hiển thị liền mạch các định dạng hình ảnh khác nhau là điều cần thiết cho nhiều ứng dụng. Một định dạng như vậy là TGA (Truevision Graphics Adapter), được biết đến với hình ảnh chất lượng cao và được sử dụng rộng rãi trong các ngành sử dụng nhiều đồ họa. Nếu bạn là nhà phát triển .NET đang tìm cách kết hợp kết xuất hình ảnh TGA vào ứng dụng của mình thì bạn đã đến đúng nơi. Trong hướng dẫn này, chúng ta sẽ khám phá cách tận dụng GroupDocs.Viewer dành cho .NET để hiển thị hình ảnh TGA một cách dễ dàng.
 ## Điều kiện tiên quyết

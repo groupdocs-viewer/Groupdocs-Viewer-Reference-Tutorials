@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램�
 weight: 21
 url: /ko/net/rendering-options/set-image-size-limits/
 ---
+
+# 이미지 크기 제한 설정
+
 ## 소개
 .NET용 GroupDocs.Viewer는 .NET 응용 프로그램 내에서 문서를 원활하게 볼 수 있도록 설계된 강력한 도구입니다. 강력한 기능과 직관적인 인터페이스를 통해 개발자는 문서 보기 기능을 프로젝트에 쉽게 통합하여 사용자 경험과 생산성을 향상시킬 수 있습니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 이미지 크기 제한을 설정하여 성능과 효율성을 유지하면서 최적의 문서 표시를 보장하는 방법을 살펴보겠습니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan zárhat ki betűtípusokat a megjelenített HTM
 weight: 10
 url: /hu/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Betűtípusok kizárása a renderelt HTML-ből
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony dokumentum-megjelenítő könyvtár, amely lehetővé teszi a fejlesztők számára, hogy több mint 50 dokumentumformátumot jelenítsenek meg .NET-alkalmazásaikban anélkül, hogy külső függőségekre lenne szükségük. Ebben az oktatóanyagban a GroupDocs.Viewer egy speciális funkciójára összpontosítunk: a betűtípusok kizárására a renderelt HTML-kimenetből. 
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Poznaj bezproblemową konwersję plików tekstowych na wiele format
 weight: 10
 url: /pl/net/rendering-text-files/render-txt/
 ---
+
+# Renderuj pliki tekstowe (.txt)
+
 ## Wstęp
 dziedzinie zarządzania dokumentami i manipulacji nimi GroupDocs.Viewer dla .NET okazuje się potężnym narzędziem, oferującym mnóstwo funkcji do wydajnego renderowania różnych formatów dokumentów. W tym artykule opisano zawiłości korzystania z programu GroupDocs.Viewer dla platformy .NET w celu renderowania plików tekstowych (.txt) do wielu formatów. Niezależnie od tego, czy chcesz konwertować pliki tekstowe do formatu HTML, JPG, PNG czy PDF, GroupDocs.Viewer zapewnia narzędzia niezbędne do bezproblemowej realizacji tych zadań.
 ## Warunki wstępne

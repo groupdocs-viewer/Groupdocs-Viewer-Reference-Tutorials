@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak bir belgedeki sayfaları nas
 weight: 19
 url: /tr/net/rendering-options/reorder-pages/
 ---
+
+# Belgedeki Sayfaları Yeniden Sıralama
+
 ## giriiş
 .NET geliştirme dünyasında, belgeleri verimli bir şekilde yönetmek ve değiştirmek çok önemlidir. GroupDocs.Viewer for .NET, uygulamalarınızdaki çeşitli belge formatlarını görüntülemek için güçlü bir çözüm sunar. Geliştiricilerin sıklıkla karşılaştığı temel görevlerden biri, bir belgedeki sayfaları yeniden sıralamaktır. İster PDF'lerle, ister Word belgeleriyle, ister diğer formatlarla çalışıyor olun, sayfaları yeniden düzenleyebilmek iş akışlarını kolaylaştırabilir ve kullanıcı deneyimini geliştirebilir. Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak bir belgedeki sayfaların nasıl yeniden sıralanacağını açıklayacağız.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị HTML phản hồi bằng Groupdocs.V
 weight: 13
 url: /vi/net/rendering-documents-html/render-responsive-html/
 ---
+
+# Hiển thị HTML đáp ứng
+
 ## Giới thiệu
 Groupdocs.Viewer cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển hiển thị các định dạng tài liệu khác nhau thành HTML đáp ứng. Hướng dẫn này sẽ hướng dẫn bạn qua quá trình hiển thị HTML đáp ứng bằng Groupdocs.Viewer cho .NET. Khi kết thúc hướng dẫn này, bạn sẽ có thể chuyển đổi liền mạch các tài liệu thành HTML để thích ứng với các kích thước màn hình khác nhau, đảm bảo trải nghiệm xem tối ưu trên các thiết bị.
 ## Điều kiện tiên quyết

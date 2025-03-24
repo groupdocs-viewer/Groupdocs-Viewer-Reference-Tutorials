@@ -6,6 +6,9 @@ description: Pelajari cara mengambil informasi tampilan untuk gambar CAD menggun
 weight: 10
 url: /id/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Dapatkan Lihat Informasi untuk Gambar CAD
+
 ## Perkenalan
 Dalam dunia pengembangan perangkat lunak, menangani gambar CAD secara efisien sangatlah penting. Baik Anda sedang membangun aplikasi untuk arsitek, insinyur, atau desainer, memberikan pengalaman menonton file CAD yang lancar dapat sangat meningkatkan kepuasan pengguna. GroupDocs.Viewer untuk .NET menawarkan solusi ampuh untuk dengan mudah mengintegrasikan kemampuan melihat file CAD ke dalam aplikasi .NET Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses mendapatkan informasi tampilan untuk gambar CAD menggunakan GroupDocs.Viewer untuk .NET.
 ## Prasyarat

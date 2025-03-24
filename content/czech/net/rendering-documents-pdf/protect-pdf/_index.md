@@ -6,6 +6,9 @@ description: Chraňte své vykreslené PDF pomocí hesel snadno pomocí Groupdoc
 weight: 12
 url: /cs/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Chraňte vykreslené PDF heslem
+
 ## Úvod
 tomto tutoriálu se naučíte, jak používat Groupdocs.Viewer pro .NET k ochraně vykresleného PDF heslem. Přidáním bezpečnostních opatření můžete řídit přístup ke svým dokumentům PDF a zajistit důvěrnost a integritu.
 ## Předpoklady

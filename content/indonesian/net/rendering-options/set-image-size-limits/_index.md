@@ -6,6 +6,9 @@ description: Pelajari cara menetapkan batas ukuran gambar dalam aplikasi .NET de
 weight: 21
 url: /id/net/rendering-options/set-image-size-limits/
 ---
+
+# Tetapkan Batas Ukuran Gambar
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah alat canggih yang dirancang untuk memfasilitasi tampilan dokumen tanpa hambatan dalam aplikasi .NET. Dengan fitur-fitur canggih dan antarmuka intuitif, pengembang dapat dengan mudah mengintegrasikan kemampuan melihat dokumen ke dalam proyek mereka, sehingga meningkatkan pengalaman pengguna dan produktivitas. Dalam tutorial ini, kita akan mempelajari cara menetapkan batas ukuran gambar menggunakan GroupDocs.Viewer untuk .NET, memastikan tampilan dokumen yang optimal dengan tetap menjaga kinerja dan efisiensi.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Dowiedz się, jak dostosować rozmiar obrazu wyjściowego dla rysun
 weight: 15
 url: /pl/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Dostosuj rozmiar obrazu wyjściowego dla rysunków CAD
+
 ## Wstęp
 Rysunki CAD często wymagają specyficznych dostosowań w celu zapewnienia optymalnego przeglądania i prezentacji. GroupDocs.Viewer dla .NET zapewnia potężny zestaw narzędzi do zarządzania i dostosowywania wyników rysunków CAD. W tym samouczku przeprowadzimy Cię krok po kroku przez proces dostosowywania rozmiaru obrazu wyjściowego dla rysunków CAD.
 ## Warunki wstępne

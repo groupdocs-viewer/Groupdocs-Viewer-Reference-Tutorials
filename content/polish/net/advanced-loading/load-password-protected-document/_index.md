@@ -6,6 +6,9 @@ description: Bezproblemowo integruj przeglądanie dokumentów chronionych hasłe
 weight: 12
 url: /pl/net/advanced-loading/load-password-protected-document/
 ---
+
+# Załaduj dokumenty chronione hasłem
+
 ## Wstęp
 dzisiejszej erze cyfrowej płynne zarządzanie różnymi formatami dokumentów i przeglądanie ich jest koniecznością zarówno dla wielu firm, jak i osób prywatnych. Na szczęście GroupDocs.Viewer dla .NET zapewnia kompleksowe rozwiązanie dla programistów .NET, umożliwiające bezproblemową integrację funkcji przeglądania dokumentów z ich aplikacjami. W tym samouczku zagłębimy się w jedną z podstawowych funkcjonalności GroupDocs.Viewer: ładowanie dokumentów chronionych hasłem. Podzielimy proces krok po kroku, zapewniając programistom łatwe śledzenie i wdrażanie tej funkcji w swoich projektach.
 ## Warunki wstępne

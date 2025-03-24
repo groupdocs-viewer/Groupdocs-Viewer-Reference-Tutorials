@@ -6,6 +6,9 @@ description: Kết xuất bản vẽ CAD một cách liền mạch trong các �
 weight: 13
 url: /vi/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Kết xuất các lớp trong bản vẽ CAD
+
 ## Giới thiệu
 GroupDocs.Viewer dành cho .NET là một công cụ mạnh mẽ cho phép các nhà phát triển tích hợp liền mạch khả năng kết xuất tài liệu vào các ứng dụng .NET của họ. Cho dù bạn cần kết xuất bản vẽ CAD, tệp PDF, tài liệu Microsoft Office hay hơn thế nữa, GroupDocs.Viewer đều cung cấp giải pháp toàn diện.
 ## Điều kiện tiên quyết

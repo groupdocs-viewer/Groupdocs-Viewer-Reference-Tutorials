@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 在 PDF 文件中啟�
 weight: 15
 url: /zh-hant/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# 在 PDF 中啟用分層渲染
+
 ## 介紹
 在本教學中，我們將深入研究使用 GroupDocs.Viewer for .NET 在 PDF 文件中啟用分層渲染的過程。分層渲染可以增強文件顯示和操作，為使用者提供更具互動性的檢視體驗。
 ## 先決條件

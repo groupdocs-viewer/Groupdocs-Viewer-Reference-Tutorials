@@ -6,6 +6,9 @@ description: Explore tutoriales sobre cómo representar documentos en imágenes 
 weight: 30
 url: /es/net/rendering-documents-images/
 ---
+
+# Representar documentos en imágenes
+
 ## Introducción
 
 En el ámbito del desarrollo .NET, dominar la representación de documentos en imágenes es primordial. GroupDocs.Viewer ofrece una amplia gama de tutoriales para agilizar este proceso. Desde renderizar documentos a formatos JPG/PNG hasta ajustar la calidad de la imagen y optimizar la superposición de texto, estos tutoriales lo cubren todo.

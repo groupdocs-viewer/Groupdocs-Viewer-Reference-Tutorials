@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램�
 weight: 10
 url: /ko/net/image-rendering/render-ai-images/
 ---
+
+# AI 이미지 렌더링
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 .NET 응용 프로그램 내에서 다양한 문서 형식을 손쉽게 렌더링할 수 있게 해주는 강력한 라이브러리입니다. AI 이미지, PDF 또는 기타 문서 유형을 표시해야 하는 경우 GroupDocs.Viewer는 프로젝트에 원활하게 통합할 수 있도록 다양한 출력 형식을 제공하여 프로세스를 단순화합니다. 이 튜토리얼에서는 .NET용 GroupDocs.Viewer를 사용하여 AI 이미지를 렌더링하는 과정을 단계별로 안내합니다.
 ## 전제조건

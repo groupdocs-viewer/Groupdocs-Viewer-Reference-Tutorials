@@ -6,6 +6,9 @@ description: Temukan cara merender perubahan terlacak dalam dokumen dengan mudah
 weight: 10
 url: /id/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Render Perubahan yang Dilacak
+
 ## Perkenalan
 Di era digital saat ini, mengelola dan melihat dokumen secara efisien sangat penting bagi bisnis dan individu. Dengan kemajuan teknologi canggih, solusi seperti GroupDocs.Viewer untuk .NET telah merevolusi cara kita berinteraksi dengan berbagai format dokumen, termasuk dokumen Word, PDF, dan banyak lagi. Dalam panduan komprehensif ini, kami akan mempelajari cara memanfaatkan GroupDocs.Viewer untuk .NET untuk merender perubahan terlacak dalam dokumen Anda dengan lancar.
 ## Prasyarat

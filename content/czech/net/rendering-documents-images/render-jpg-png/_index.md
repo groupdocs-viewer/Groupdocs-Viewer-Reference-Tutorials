@@ -6,6 +6,9 @@ description: Objevte, jak plynule vykreslovat dokumenty do formátu JPG/PNG v .N
 weight: 10
 url: /cs/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Vykreslit dokument do formátu JPGPNG
+
 ## Úvod
 
 Ve světě vývoje .NET je efektivní nakládání s dokumenty pro různé aplikace zásadní. Ať už budujete systém správy dokumentů, platformu elektronického obchodování nebo aplikaci s bohatým obsahem, schopnost bezproblémového prohlížení dokumentů je zásadní. Zde vstupuje do hry GroupDocs.Viewer for .NET, který nabízí komplexní řešení pro vykreslování dokumentů do různých formátů, jako jsou JPG a PNG.

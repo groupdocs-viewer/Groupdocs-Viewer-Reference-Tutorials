@@ -6,6 +6,9 @@ description: Améliorez la visualisation des documents avec GroupDocs.Viewer pou
 weight: 12
 url: /fr/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Rendu des lignes de grille
+
 ## Introduction
 Bienvenue dans ce guide étape par étape sur l'utilisation de GroupDocs.Viewer pour .NET pour afficher des lignes de grille dans vos documents. Que vous soyez un développeur chevronné ou un nouveau venu dans le framework .NET, ce didacticiel vous guidera tout au long du processus avec des explications détaillées et des exemples faciles à suivre.
 ## Conditions préalables

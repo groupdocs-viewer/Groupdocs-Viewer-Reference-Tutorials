@@ -6,6 +6,9 @@ description: GroupDocs.Viewer を使用して、.NET アプリケーション内
 weight: 12
 url: /ja/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# 添付文書の取得と保存
+
 ## 導入
 デジタル時代において、効率的な文書処理は企業にとっても個人にとっても同様に重要です。電子メールの管理、契約書の表示、レポートへのアクセスのいずれの場合でも、文書を視覚化するための信頼できるツールが不可欠です。 GroupDocs.Viewer for .NET は堅牢なソリューションとして登場し、ユーザーが .NET アプリケーション内でさまざまなドキュメント形式を直接簡単に表示および操作できるようにします。
 ## 前提条件

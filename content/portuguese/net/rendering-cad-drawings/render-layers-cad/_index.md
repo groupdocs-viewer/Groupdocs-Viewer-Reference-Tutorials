@@ -6,6 +6,9 @@ description: Renderize desenhos CAD perfeitamente em aplicativos .NET com GroupD
 weight: 13
 url: /pt/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Renderizar camadas em desenhos CAD
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma ferramenta poderosa que permite aos desenvolvedores integrar perfeitamente recursos de renderização de documentos em seus aplicativos .NET. Se você precisa renderizar desenhos CAD, PDFs, documentos do Microsoft Office ou mais, o GroupDocs.Viewer oferece uma solução abrangente.
 ## Pré-requisitos

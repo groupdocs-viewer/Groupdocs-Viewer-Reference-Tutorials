@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 輕鬆管理 .NET 文件中的文字溢位�
 weight: 10
 url: /zh-hant/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# 調整儲存格中的文字溢出
+
 ## 介紹
 在 .NET 開發的動態世界中，管理單元格中的文字溢出對於創建具有視覺吸引力和可讀性的文件至關重要。 GroupDocs.Viewer for .NET 為開發人員提供了一套全面的工具來無縫處理電子表格文件中的文字溢出。本教學將引導您完成使用 GroupDocs.Viewer for .NET 調整儲存格中文字溢位的過程。
 ## 先決條件

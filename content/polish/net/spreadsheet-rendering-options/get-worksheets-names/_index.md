@@ -6,6 +6,9 @@ description: Odkryj magię GroupDocs.Viewer dla .NET – bezproblemowo zintegruj
 weight: 11
 url: /pl/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Pobierz nazwy arkuszy
+
 ## Wstęp
 Witamy w fascynującym świecie GroupDocs.Viewer dla .NET! Jeśli jesteś programistą lub entuzjastą chcącym poznać zaawansowane możliwości przeglądania dokumentów w aplikacjach .NET, czeka Cię gratka. W tym obszernym przewodniku zagłębimy się w zawiłości pobierania nazw arkuszy za pomocą GroupDocs.Viewer. Zatem zapnij pasy i wyrusz w tę ekscytującą podróż!
 ## Warunki wstępne

@@ -7,6 +7,9 @@ weight: 22
 url: /id/net/advanced-usage-caching/
 ---
 
+# Penggunaan Lanjutan (Caching)
+
+
 ## Perkenalan
 
 Dalam bidang pengembangan aplikasi .NET, yang mengutamakan efisiensi dan kecepatan, menguasai teknik tingkat lanjut seperti caching dapat meningkatkan kinerja secara signifikan. Selamat datang di dunia GroupDocs.Viewer, tempat Anda dapat memanfaatkan kekuatan caching untuk menyederhanakan pemrosesan dokumen dan mengoptimalkan kinerja aplikasi Anda dengan mudah.

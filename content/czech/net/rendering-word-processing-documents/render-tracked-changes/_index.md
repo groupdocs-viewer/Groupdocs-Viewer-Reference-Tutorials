@@ -6,6 +6,9 @@ description: Objevte, jak bez námahy vykreslit sledované změny v dokumentech 
 weight: 10
 url: /cs/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Vykreslit sledované změny
+
 ## Úvod
 V dnešní digitální éře je efektivní správa a prohlížení dokumentů zásadní pro podniky i jednotlivce. S příchodem pokročilých technologií přinesla řešení jako GroupDocs.Viewer for .NET revoluci ve způsobu, jakým pracujeme s různými formáty dokumentů, včetně dokumentů Word, PDF a dalších. V tomto komplexním průvodci se ponoříme do toho, jak využít GroupDocs.Viewer pro .NET k bezproblémovému vykreslování sledovaných změn ve vašich dokumentech.
 ## Předpoklady

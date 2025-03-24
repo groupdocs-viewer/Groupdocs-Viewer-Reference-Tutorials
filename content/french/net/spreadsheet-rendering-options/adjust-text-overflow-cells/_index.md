@@ -6,6 +6,9 @@ description: Gérez sans effort le débordement de texte dans les documents .NET
 weight: 10
 url: /fr/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Ajuster le débordement de texte dans les cellules
+
 ## Introduction
 Dans le monde dynamique du développement .NET, la gestion du débordement de texte dans les cellules est cruciale pour créer des documents visuellement attrayants et lisibles. GroupDocs.Viewer pour .NET offre aux développeurs un ensemble complet d'outils pour gérer de manière transparente le débordement de texte dans les feuilles de calcul. Ce didacticiel vous guidera tout au long du processus d'ajustement du débordement de texte dans les cellules à l'aide de GroupDocs.Viewer pour .NET.
 ## Conditions préalables

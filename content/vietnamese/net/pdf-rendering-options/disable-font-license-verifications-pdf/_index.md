@@ -6,6 +6,9 @@ description: Mở khóa khả năng xem tài liệu liền mạch trong .NET c�
 weight: 12
 url: /vi/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Tắt xác minh giấy phép phông chữ trong PDF
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc quản lý và thao tác với tài liệu thường là một khía cạnh quan trọng của nhiều ứng dụng. Cho dù đó là xem tệp PDF, tài liệu Word hay các loại tệp khác, việc có các công cụ mạnh mẽ để xử lý các tác vụ này một cách hiệu quả là điều cần thiết. Đây là lúc GroupDocs.Viewer dành cho .NET phát huy tác dụng. Thư viện mạnh mẽ này cung cấp cho các nhà phát triển khả năng tích hợp liền mạch chức năng xem tài liệu vào các ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

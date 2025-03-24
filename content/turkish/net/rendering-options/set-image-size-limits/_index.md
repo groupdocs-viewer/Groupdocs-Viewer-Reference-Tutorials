@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak .NET uygulamalarında görü
 weight: 21
 url: /tr/net/rendering-options/set-image-size-limits/
 ---
+
+# Resim Boyutu Sınırlarını Ayarlayın
+
 ## giriiş
 GroupDocs.Viewer for .NET, .NET uygulamalarında kusursuz belge görüntülemeyi kolaylaştırmak için tasarlanmış güçlü bir araçtır. Sağlam özellikleri ve sezgisel arayüzü sayesinde geliştiriciler, belge görüntüleme yeteneklerini projelerine zahmetsizce entegre ederek kullanıcı deneyimini ve üretkenliğini artırabilir. Bu eğitimde, GroupDocs.Viewer for .NET'i kullanarak görüntü boyutu sınırlarının nasıl ayarlanacağını keşfedeceğiz, böylece performansı ve verimliliği korurken belgelerin en iyi şekilde görüntülenmesini sağlayacağız.
 ## Önkoşullar

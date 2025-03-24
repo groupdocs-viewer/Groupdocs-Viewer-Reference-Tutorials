@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET を使用して PDF を元のページ �
 weight: 17
 url: /ja/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# 元のページ サイズで PDF をレンダリングする
+
 ## 導入
 .NET 開発の分野では、GroupDocs.Viewer は、PDF を含むさまざまなドキュメント形式をレンダリングするための強力なツールとして際立っています。ドキュメント処理における一般的な要件の 1 つは、元のページ サイズを維持しながら PDF をレンダリングすることです。このタスクをシームレスに実行するには、GroupDocs.Viewer for .NET とその機能を包括的に理解する必要があります。
 ## 前提条件

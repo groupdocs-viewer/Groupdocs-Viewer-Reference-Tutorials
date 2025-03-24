@@ -6,6 +6,9 @@ description: Leer hoe u de JPG-beeldkwaliteit in gerenderde PDF-documenten kunt 
 weight: 11
 url: /nl/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Pas de JPG-afbeeldingskwaliteit aan in gerenderde PDF
+
 ## Invoering
 In deze zelfstudie leren we hoe u de kwaliteit van JPG-afbeeldingen kunt aanpassen bij het renderen van een PDF met GroupDocs.Viewer voor .NET. Met deze krachtige bibliotheek kunt u verschillende documentformaten in uw .NET-applicaties naadloos bekijken en manipuleren.
 ## Vereisten

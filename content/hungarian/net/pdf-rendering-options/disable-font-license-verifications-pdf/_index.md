@@ -6,6 +6,9 @@ description: A GroupDocs.Viewer for .NET segítségével zökkenőmentes dokumen
 weight: 12
 url: /hu/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Betűtípus-licenc-ellenőrzés letiltása PDF-ben
+
 ## Bevezetés
 A .NET fejlesztés területén a dokumentumok kezelése és manipulálása gyakran számos alkalmazás kulcsfontosságú eleme. Legyen szó PDF-fájlok, Word-dokumentumok vagy más fájltípusok megtekintéséről, elengedhetetlen, hogy hatékony eszközökkel rendelkezzenek ezeknek a feladatoknak a hatékony kezeléséhez. Itt jön képbe a GroupDocs.Viewer for .NET. Ez a hatékony könyvtár lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési funkciókat .NET-alkalmazásaikba.
 ## Előfeltételek

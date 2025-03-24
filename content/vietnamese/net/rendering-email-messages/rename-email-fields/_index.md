@@ -6,6 +6,9 @@ description: Nâng cao trải nghiệm xem tài liệu với GroupDocs.Viewer d�
 weight: 12
 url: /vi/net/rendering-email-messages/rename-email-fields/
 ---
+
+# Đổi tên các trường email trong khi hiển thị
+
 ## Giới thiệu
 
 Trong thời đại kỹ thuật số ngày nay, việc quản lý và xem tài liệu một cách hiệu quả là điều tối quan trọng đối với các doanh nghiệp cũng như cá nhân. Cho dù đó là hợp đồng, báo cáo hay email, khả năng điều hướng qua các tài liệu này một cách liền mạch có thể nâng cao năng suất đáng kể. Đây là lúc GroupDocs.Viewer dành cho .NET phát huy tác dụng. Thư viện mạnh mẽ này cho phép các nhà phát triển tích hợp khả năng xem tài liệu trực tiếp vào các ứng dụng .NET của họ, cung cấp nhiều tính năng để hiển thị các định dạng tài liệu khác nhau.

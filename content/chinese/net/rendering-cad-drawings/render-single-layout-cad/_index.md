@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 在 CAD 绘图中渲�
 weight: 14
 url: /zh/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# 在 CAD 工程图中渲染单一布局
+
 ## 介绍
 在 .NET 开发领域，处理和查看 CAD 绘图是一项常见要求。 GroupDocs.Viewer for .NET 通过提供在 .NET 应用程序中渲染 CAD 绘图的全面解决方案来简化此任务。在本教程中，我们将深入研究使用 GroupDocs.Viewer for .NET 在 CAD 绘图中渲染单个布局。
 ## 先决条件

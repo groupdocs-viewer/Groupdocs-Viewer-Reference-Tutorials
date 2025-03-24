@@ -6,6 +6,9 @@ description: Pelajari cara merender halaman yang dipilih dari dokumen menggunaka
 weight: 17
 url: /id/net/rendering-options/render-selected-pages/
 ---
+
+# Render Halaman yang Dipilih
+
 ## Perkenalan
 
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan Groupdocs.Viewer untuk .NET untuk merender halaman yang dipilih dari dokumen. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan langkah demi langkah ini akan memandu Anda melalui prosesnya dengan mudah.

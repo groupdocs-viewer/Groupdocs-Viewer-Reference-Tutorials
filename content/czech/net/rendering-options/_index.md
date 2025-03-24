@@ -7,6 +7,9 @@ weight: 23
 url: /cs/net/rendering-options/
 ---
 
+# Možnosti vykreslování
+
+
 ## Úvod
 
 V oblasti vývoje aplikací .NET je efektivní vykreslování dokumentů často zásadním aspektem. Ať už vytváříte redakční systém, prohlížeč dokumentů nebo jakoukoli jinou aplikaci zabývající se zobrazováním dokumentů, robustní možnosti vykreslování mohou výrazně zlepšit uživatelský komfort a funkčnost.

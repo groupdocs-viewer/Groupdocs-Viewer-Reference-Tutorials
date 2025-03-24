@@ -7,6 +7,9 @@ weight: 23
 url: /pt/net/rendering-options/
 ---
 
+# Opções de renderização
+
+
 ## Introdução
 
 No domínio do desenvolvimento de aplicativos .NET, a renderização eficaz de documentos costuma ser um aspecto crucial. Esteja você construindo um sistema de gerenciamento de conteúdo, um visualizador de documentos ou qualquer outro aplicativo que lide com a exibição de documentos, ter opções de renderização robustas pode melhorar significativamente a experiência e a funcionalidade do usuário.

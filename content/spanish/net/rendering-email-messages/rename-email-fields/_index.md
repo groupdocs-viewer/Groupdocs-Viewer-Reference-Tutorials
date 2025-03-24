@@ -6,6 +6,9 @@ description: Mejore la experiencia de visualización de documentos con GroupDocs
 weight: 12
 url: /es/net/rendering-email-messages/rename-email-fields/
 ---
+
+# Cambiar el nombre de los campos de correo electrónico durante el renderizado
+
 ## Introducción
 
 En la era digital actual, administrar y visualizar documentos de manera eficiente es primordial tanto para empresas como para individuos. Ya sean contratos, informes o correos electrónicos, tener la capacidad de navegar por estos documentos sin problemas puede mejorar enormemente la productividad. Aquí es donde entra en juego GroupDocs.Viewer para .NET. Esta potente biblioteca permite a los desarrolladores integrar capacidades de visualización de documentos directamente en sus aplicaciones .NET, ofreciendo una amplia gama de funciones para representar varios formatos de documentos.

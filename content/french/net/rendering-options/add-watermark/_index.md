@@ -6,6 +6,9 @@ description: Découvrez comment ajouter de manière transparente des filigranes 
 weight: 10
 url: /fr/net/rendering-options/add-watermark/
 ---
+
+# Ajouter un filigrane dans le document
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, gérer et visualiser de manière transparente différents formats de documents est une nécessité pour de nombreuses entreprises et particuliers. Heureusement, avec des outils comme GroupDocs.Viewer pour .NET, la gestion des documents devient un jeu d'enfant. Cette puissante bibliothèque .NET permet aux développeurs d'intégrer sans effort la fonctionnalité de visualisation de documents dans leurs applications, permettant ainsi aux utilisateurs de visualiser des documents sans avoir besoin du logiciel d'origine qui les a créés.
 ## Conditions préalables

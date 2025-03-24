@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar visningsinformation från PDF-dokument m
 weight: 16
 url: /sv/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Få Visa information för PDF-dokument
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt verktyg utformat för att effektivisera dokumentvisning i .NET-applikationer. Oavsett om du har att göra med PDF-filer, Word-dokument, Excel-kalkylblad eller PowerPoint-presentationer, förenklar detta bibliotek processen att rendera och interagera med olika filformat. I den här handledningen kommer vi att fokusera på att utnyttja funktionerna i GroupDocs.Viewer specifikt för att extrahera visningsinformation från PDF-dokument.
 ## Förutsättningar

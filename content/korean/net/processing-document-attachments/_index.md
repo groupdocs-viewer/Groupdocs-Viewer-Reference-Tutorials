@@ -6,6 +6,9 @@ description: GroupDocs.Viewer를 사용하여 문서 보기 기능을 .NET 응�
 weight: 32
 url: /ko/net/processing-document-attachments/
 --- 
+
+# 문서 첨부 처리
+
 ## 소개
 
 .NET 애플리케이션 개발 영역에서는 효율적인 문서 보기 기능을 통합하는 것이 무엇보다 중요합니다. .NET용 GroupDocs.Viewer를 사용하면 이 프로세스가 간소화될 뿐만 아니라 매우 직관적입니다. 이 문서에서는 .NET 애플리케이션 내에서 문서 첨부 파일을 원활하게 처리하는 복잡한 과정을 자세히 설명합니다.

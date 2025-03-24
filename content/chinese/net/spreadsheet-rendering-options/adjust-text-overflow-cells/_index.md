@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 轻松管理 .NET 文档中的文本溢出�
 weight: 10
 url: /zh/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# 调整单元格中的文本溢出
+
 ## 介绍
 在 .NET 开发的动态世界中，管理单元格中的文本溢出对于创建具有视觉吸引力和可读性的文档至关重要。 GroupDocs.Viewer for .NET 为开发人员提供了一套全面的工具来无缝处理电子表格文档中的文本溢出。本教程将指导您完成使用 GroupDocs.Viewer for .NET 调整单元格中文本溢出的过程。
 ## 先决条件

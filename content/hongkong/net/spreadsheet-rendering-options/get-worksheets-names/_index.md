@@ -6,6 +6,9 @@ description: 探索 GroupDocs.Viewer for .NET 的魔力 – 將文件檢視無�
 weight: 11
 url: /zh-hant/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# 取得工作表名稱
+
 ## 介紹
 歡迎來到 GroupDocs.Viewer for .NET 的迷人世界！如果您是開發人員或愛好者，熱衷於探索 .NET 應用程式中強大的文件檢視功能，那麼您將會大飽口福。在本綜合指南中，我們將深入研究使用 GroupDocs.Viewer 擷取工作表名稱的複雜性。那麼，繫好安全帶，讓我們踏上這段令人興奮的旅程吧！
 ## 先決條件

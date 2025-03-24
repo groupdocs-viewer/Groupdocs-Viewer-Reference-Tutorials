@@ -6,6 +6,9 @@ description: Gerencie facilmente o excesso de texto em documentos .NET com Group
 weight: 10
 url: /pt/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Ajustar o estouro de texto nas células
+
 ## Introdução
 No mundo dinâmico do desenvolvimento .NET, gerenciar o excesso de texto nas células é crucial para a criação de documentos visualmente atraentes e legíveis. GroupDocs.Viewer for .NET capacita os desenvolvedores com um conjunto abrangente de ferramentas para lidar perfeitamente com o excesso de texto em documentos de planilha. Este tutorial irá guiá-lo através do processo de ajuste do excesso de texto nas células usando GroupDocs.Viewer for .NET.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: 了解如何將 GroupDocs.Viewer for .NET 整合到您的應用程�
 weight: 16
 url: /zh-hant/net/rendering-options/render-n-consecutive-pages/
 ---
+
+# 渲染 N 個連續頁面
+
 ## 介紹
 在 .NET 開發領域，將文件檢視功能整合到應用程式中可以大大增強使用者體驗和功能。 GroupDocs.Viewer for .NET 是一種促進無縫文件呈現的工具。這個強大的程式庫使開發人員能夠輕鬆地在其應用程式中顯示各種文件格式。
 ## 先決條件

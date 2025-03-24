@@ -6,6 +6,9 @@ description: Naučte se extrahovat souřadnice textu pro vykreslování obrázk�
 weight: 12
 url: /cs/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# Získejte souřadnice textu pro vykreslování obrázků
+
 ## Úvod
 GroupDocs.Viewer for .NET je výkonné rozhraní API pro vykreslování dokumentů, které umožňuje vývojářům bezproblémově vykreslovat dokumenty v různých formátech, jako je PDF, Microsoft Office a mnoho dalších. Jednou z jeho klíčových funkcí je schopnost extrahovat souřadnice textu pro přesné vykreslení obrázku.
 ## Předpoklady

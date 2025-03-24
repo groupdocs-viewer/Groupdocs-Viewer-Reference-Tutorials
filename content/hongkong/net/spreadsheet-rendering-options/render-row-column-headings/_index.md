@@ -6,6 +6,9 @@ description: 增強 .NET 中的文件檢視功能！了解使用 GroupDocs.Viewe
 weight: 18
 url: /zh-hant/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# 渲染行和列標題
+
 ## 介紹
 您是否希望增強 .NET 應用程式中的文件檢視體驗？透過 GroupDocs.Viewer for .NET，您可以無縫地呈現電子表格檔案中的行標題和列標題。在本教學中，我們將引導您完成使用不同輸出格式（例如 HTML、JPG、PNG 和 PDF）呈現行標題和列標題的過程。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyłączyć grupowanie znaków w plikach PDF przy
 weight: 11
 url: /pl/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Wyłącz grupowanie znaków w formacie PDF
+
 ## Wstęp
 świecie programowania .NET przeglądanie dokumentów może czasami stanowić wyzwanie, szczególnie w przypadku formatów takich jak pliki PDF. Posiadając jednak odpowiednie narzędzia i wiedzę, można skutecznie usprawnić ten proces. Jednym z takich narzędzi, które przychodzi na ratunek, jest GroupDocs.Viewer dla .NET. Ta potężna biblioteka umożliwia programistom płynne renderowanie i wyświetlanie różnych typów dokumentów w aplikacjach .NET.
 ## Warunki wstępne

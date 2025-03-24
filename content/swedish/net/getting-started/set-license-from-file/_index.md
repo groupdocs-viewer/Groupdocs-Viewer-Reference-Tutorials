@@ -6,6 +6,9 @@ description: Lär dig hur du enkelt integrerar GroupDocs.Viewer för .NET i dina
 weight: 10
 url: /sv/net/getting-started/set-license-from-file/
 ---
+
+# Ställ in licens från fil
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt API för dokumentvisning som gör det möjligt för .NET-utvecklare att sömlöst integrera dokumentvisningsmöjligheter i sina applikationer. Oavsett om du behöver visa dokument i olika format som PDF, Microsoft Office eller bilder, erbjuder GroupDocs.Viewer en pålitlig lösning med omfattande anpassningsmöjligheter.
 ## Förutsättningar

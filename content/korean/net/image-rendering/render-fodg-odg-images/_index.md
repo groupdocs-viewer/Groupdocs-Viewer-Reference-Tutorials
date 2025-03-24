@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 FODG 및 ODG 이미지를 
 weight: 15
 url: /ko/net/image-rendering/render-fodg-odg-images/
 ---
+
+# FODG 및 ODG 이미지 렌더링
+
 ## 소개
 소프트웨어 개발 세계에서는 문서 형식을 효율적으로 처리하는 것이 무엇보다 중요합니다. .NET용 GroupDocs.Viewer는 .NET 응용 프로그램 내에서 FODG 및 ODG 이미지 렌더링 프로세스를 단순화하도록 설계된 강력한 도구입니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 이러한 이미지를 HTML, JPG, PNG 및 PDF와 같은 다양한 형식으로 렌더링하는 데 필요한 단계를 안내합니다.
 ## 전제조건

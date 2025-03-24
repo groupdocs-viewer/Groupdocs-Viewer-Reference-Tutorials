@@ -6,6 +6,9 @@ description: Pelajari cara mengonfigurasi batas waktu pemuatan sumber daya di Gr
 weight: 13
 url: /id/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Tetapkan Batas Waktu Pemuatan Sumber Daya (Lanjutan)
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, GroupDocs.Viewer menyediakan perangkat canggih untuk merender dokumen dan gambar dengan presisi dan efisiensi. Memanfaatkan kemampuannya memerlukan pemahaman seluk-beluknya, termasuk menetapkan batas waktu pemuatan sumber daya. Dalam tutorial ini, kita akan mempelajari proses mengonfigurasi batas waktu pemuatan sumber daya di GroupDocs.Viewer untuk .NET.
 ## Prasyarat

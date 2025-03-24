@@ -6,6 +6,9 @@ description: A GroupDocs.Viewer segítségével könnyedén kezelheti a szövegt
 weight: 10
 url: /hu/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Szöveg túlcsordulás beállítása a cellákban
+
 ## Bevezetés
 A .NET-fejlesztés dinamikus világában a cellákban található szövegtúlcsordulás kezelése kulcsfontosságú a tetszetős és olvasható dokumentumok létrehozásához. A GroupDocs.Viewer for .NET átfogó eszközkészlettel ruházza fel a fejlesztőket a táblázatos dokumentumok szövegtúlcsordulásainak zökkenőmentes kezelésére. Ez az oktatóanyag végigvezeti a cellákban lévő szövegtúlcsordulás beállításának folyamatán a GroupDocs.Viewer for .NET használatával.
 ## Előfeltételek

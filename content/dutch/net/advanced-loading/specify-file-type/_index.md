@@ -6,6 +6,9 @@ description: Leer hoe u het bestandstype kunt opgeven bij het laden van document
 weight: 10
 url: /nl/net/advanced-loading/specify-file-type/
 ---
+
+# Specificeer het bestandstype bij het laden van documenten
+
 ## Invoering
 GroupDocs.Viewer voor .NET is een veelzijdige API voor documentweergave die een breed scala aan bestandsindelingen ondersteunt, waaronder DOCX, PDF, PPTX en meer. Door het bestandstype op te geven bij het laden van documenten, kunt u een nauwkeurige weergave en een soepele kijkervaring voor uw gebruikers garanderen.
 ## Vereisten

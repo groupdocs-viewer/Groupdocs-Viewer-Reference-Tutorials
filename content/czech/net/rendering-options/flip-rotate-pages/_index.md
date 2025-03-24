@@ -6,6 +6,9 @@ description: Naučte se, jak integrovat Groupdocs.Viewer for .NET do vašich apl
 weight: 12
 url: /cs/net/rendering-options/flip-rotate-pages/
 ---
+
+# Otočit a otočit stránky
+
 ## Úvod
 tomto tutoriálu se ponoříme do funkcí Groupdocs.Viewer pro .NET, konkrétně se zaměříme na překlápění a otáčení stránek. Groupdocs.Viewer for .NET je výkonný nástroj určený k vykreslování dokumentů v různých formátech v rámci aplikací .NET. Ať už vyvíjíte systém správy dokumentů nebo potřebujete integrovat možnosti prohlížení dokumentů do svého softwaru, Groupdocs.Viewer for .NET poskytuje efektivní řešení.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer for .NET 掌握 MS Project 文档的渲染�
 weight: 11
 url: /zh/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# 渲染注释并调整时间单位 (MS Project)
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个功能强大的文档呈现 API，允许开发人员在其 .NET 应用程序中查看和操作各种文档格式。在本教程中，我们将重点关注专门针对 MS Project 文档渲染注释和调整时间单位。
 ## 先决条件

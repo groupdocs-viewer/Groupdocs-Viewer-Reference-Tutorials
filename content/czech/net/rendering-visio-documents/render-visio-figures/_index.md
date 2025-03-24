@@ -6,6 +6,9 @@ description: Naučte se vykreslovat obrázky aplikace Visio pomocí GroupDocs.Vi
 weight: 10
 url: /cs/net/rendering-visio-documents/render-visio-figures/
 ---
+
+# Vykreslení obrázků aplikace Visio
+
 ## Úvod
 V dnešní digitální době hraje vykreslování dokumentů zásadní roli v různých aplikacích. Ať už se jedná o zobrazování dokumentů na webových stránkách nebo jejich převod do různých formátů, efektivní vykreslování je zásadní. GroupDocs.Viewer for .NET poskytuje robustní řešení pro prohlížení a manipulaci s dokumenty v aplikacích .NET. V tomto kurzu se ponoříme do vykreslování obrázků Visio pomocí GroupDocs.Viewer pro .NET a rozdělíme proces do jednoduchých kroků.
 ## Předpoklady

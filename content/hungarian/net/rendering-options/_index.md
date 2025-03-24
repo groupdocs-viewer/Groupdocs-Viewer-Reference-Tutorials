@@ -7,6 +7,9 @@ weight: 23
 url: /hu/net/rendering-options/
 ---
 
+# Renderelési beállítások
+
+
 ## Bevezetés
 
 A .NET-alkalmazások fejlesztése során a hatékony dokumentum-megjelenítés gyakran kulcsfontosságú szempont. Akár tartalomkezelő rendszert, dokumentumnézegetőt vagy bármilyen más, dokumentummegjelenítéssel foglalkozó alkalmazást épít, a robusztus megjelenítési opciók jelentősen javíthatják a felhasználói élményt és a funkcionalitást.

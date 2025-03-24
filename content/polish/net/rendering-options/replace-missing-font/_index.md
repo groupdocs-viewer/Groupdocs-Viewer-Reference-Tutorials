@@ -6,6 +6,9 @@ description: Dowiedz się, jak łatwo zastąpić brakujące czcionki w dokumenta
 weight: 20
 url: /pl/net/rendering-options/replace-missing-font/
 ---
+
+# Zastąp brakującą czcionkę
+
 ## Wstęp
 W świecie programowania .NET wydajna obsługa dokumentów ma kluczowe znaczenie. GroupDocs.Viewer dla .NET zapewnia zaawansowane rozwiązanie do przeglądania różnych formatów dokumentów w aplikacjach .NET. W tym samouczku omówimy, jak używać programu GroupDocs.Viewer dla platformy .NET do zastępowania brakujących czcionek w dokumentach. Niezależnie od tego, czy masz do czynienia z plikami PDF, prezentacjami programu PowerPoint czy dokumentami programu Word, GroupDocs.Viewer upraszcza ten proces, zapewniając dokładne renderowanie dokumentów, nawet jeśli brakuje czcionek.
 ## Warunki wstępne

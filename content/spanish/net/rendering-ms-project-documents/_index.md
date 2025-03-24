@@ -6,6 +6,9 @@ description: Recupere sin esfuerzo información de visualización de documentos 
 weight: 40
 url: /es/net/rendering-ms-project-documents/
 ---
+
+# Representación de documentos de Microsoft Project
+
 ## Introducción
 
 En el ámbito del desarrollo de software, administrar y visualizar documentos de Microsoft Project de manera eficiente es primordial. Con la llegada de GroupDocs.Viewer para .NET, este proceso se simplifica y ofrece a los desarrolladores un conjunto completo de herramientas para manejar estas tareas sin esfuerzo.

@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak e-tablolardaki gizli veriler
 weight: 13
 url: /tr/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Gizli Sütunları ve Satırları Oluştur
+
 ## giriiş
 Belge görselleştirme alanında, GroupDocs.Viewer for .NET, çeşitli belge formatlarının kusursuz şekilde oluşturulmasını kolaylaştıran güçlü bir araç olarak öne çıkıyor. İlgi çekici yeteneklerden biri, e-tablolardaki gizli sütunları ve satırları ortaya çıkarma yeteneğidir. Bu eğitimde, bu özelliğin kilidini açmak ve verilerinizin potansiyelini ortaya çıkarmak için gereken adımları inceleyeceğiz.
 ## Önkoşullar

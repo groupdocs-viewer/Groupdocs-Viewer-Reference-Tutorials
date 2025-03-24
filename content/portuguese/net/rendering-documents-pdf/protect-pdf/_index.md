@@ -6,6 +6,9 @@ description: Proteja facilmente seus PDFs renderizados com senhas usando Groupdo
 weight: 12
 url: /pt/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Proteja PDF renderizado com senha
+
 ## Introdução
 Neste tutorial, você aprenderá como usar o Groupdocs.Viewer for .NET para proteger um PDF renderizado com uma senha. Ao adicionar medidas de segurança, você pode controlar o acesso aos seus documentos PDF, garantindo confidencialidade e integridade.
 ## Pré-requisitos

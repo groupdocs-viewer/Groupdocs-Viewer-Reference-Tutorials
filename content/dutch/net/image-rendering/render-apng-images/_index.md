@@ -6,6 +6,9 @@ description: Leer hoe u APNG-afbeeldingen in verschillende formaten kunt weergev
 weight: 11
 url: /nl/net/image-rendering/render-apng-images/
 ---
+
+# Geef APNG-afbeeldingen weer
+
 ## Invoering
 Groupdocs.Viewer voor .NET is een krachtige tool waarmee ontwikkelaars verschillende documentformaten naadloos kunnen weergeven in hun .NET-applicaties. Onder de vele functies biedt het robuuste functionaliteit voor het weergeven van APNG-afbeeldingen (Animated Portable Network Graphics), waardoor ontwikkelaars APNG-afbeeldingen in verschillende formaten kunnen weergeven, zoals HTML, JPG, PNG en PDF.
 

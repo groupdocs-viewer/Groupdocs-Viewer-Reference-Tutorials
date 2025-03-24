@@ -6,6 +6,9 @@ description: Découvrez comment restituer des documents avec des notes à l'aide
 weight: 14
 url: /fr/net/rendering-options/render-document-notes/
 ---
+
+# Rendre le document avec des notes
+
 ## Introduction
 Dans le domaine de la manipulation et de la visualisation de documents, GroupDocs.Viewer for .NET se présente comme une solution robuste, offrant une intégration transparente et des fonctionnalités puissantes. Ce didacticiel vise à vous guider tout au long du processus de rendu de documents avec des notes à l'aide de GroupDocs.Viewer pour .NET. Que vous soyez un développeur chevronné ou que vous plongez simplement dans le monde de .NET, ce guide étape par étape vous aidera à naviguer facilement dans les subtilités du rendu de documents.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Kelola luapan teks dengan mudah di dokumen .NET dengan GroupDocs.Vi
 weight: 10
 url: /id/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Sesuaikan Luapan Teks di Sel
+
 ## Perkenalan
 Dalam dunia pengembangan .NET yang dinamis, mengelola luapan teks dalam sel sangat penting untuk membuat dokumen yang menarik secara visual dan mudah dibaca. GroupDocs.Viewer untuk .NET memberdayakan pengembang dengan seperangkat alat komprehensif untuk menangani luapan teks dalam dokumen spreadsheet dengan lancar. Tutorial ini akan memandu Anda melalui proses menyesuaikan luapan teks di sel menggunakan GroupDocs.Viewer untuk .NET.
 ## Prasyarat

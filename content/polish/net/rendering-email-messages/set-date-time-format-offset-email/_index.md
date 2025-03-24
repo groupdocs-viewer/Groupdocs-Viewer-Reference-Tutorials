@@ -7,6 +7,9 @@ weight: 11
 url: /pl/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
 
+# Ustawianie formatu daty i godziny oraz przesunięcia strefy czasowej (e-mail)
+
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to potężne narzędzie, które umożliwia programistom bezproblemową integrację możliwości przeglądania dokumentów z aplikacjami .NET. Dzięki GroupDocs.Viewer możesz wyświetlać szeroką gamę formatów dokumentów, w tym pliki PDF, dokumenty Microsoft Office, obrazy i inne, bezpośrednio w aplikacji, bez potrzeby stosowania jakichkolwiek zewnętrznych wtyczek lub przeglądarek. W tym kompleksowym samouczku przeprowadzimy Cię przez proces konfigurowania programu GroupDocs.Viewer dla platformy .NET, poznajemy jego funkcje i pokażemy, jak efektywnie go wykorzystać w celu zwiększenia możliwości przeglądania dokumentów w aplikacji.
 ## Warunki wstępne

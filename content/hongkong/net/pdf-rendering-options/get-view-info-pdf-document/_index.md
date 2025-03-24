@@ -6,6 +6,9 @@ description: 在這個綜合教學中了解如何使用 GroupDocs.Viewer for .NE
 weight: 16
 url: /zh-hant/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# 取得 PDF 文件的檢視信息
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一款功能強大的工具，旨在簡化 .NET 應用程式中的文件檢視。無論您是處理 PDF、Word 文件、Excel 電子表格還是 PowerPoint 簡報，該程式庫都可以簡化各種文件格式的渲染和互動流程。在本教程中，我們將重點放在如何利用 GroupDocs.Viewer 的功能專門從 PDF 文件中提取視圖資訊。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Ansichtsinform
 weight: 10
 url: /de/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Rufen Sie Ansichtsinformationen für CAD-Zeichnungen ab
+
 ## Einführung
 In der Welt der Softwareentwicklung ist der effiziente Umgang mit CAD-Zeichnungen von entscheidender Bedeutung. Unabhängig davon, ob Sie Anwendungen für Architekten, Ingenieure oder Designer erstellen, kann die Bereitstellung eines nahtlosen Anzeigeerlebnisses für CAD-Dateien die Benutzerzufriedenheit erheblich steigern. GroupDocs.Viewer für .NET bietet eine leistungsstarke Lösung zur mühelosen Integration von CAD-Dateianzeigefunktionen in Ihre .NET-Anwendungen. In diesem Tutorial führen wir Sie durch den Prozess zum Abrufen von Ansichtsinformationen für CAD-Zeichnungen mithilfe von GroupDocs.Viewer für .NET.
 ## Voraussetzungen

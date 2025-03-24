@@ -6,6 +6,9 @@ description: Learn how to adjust page size when rendering email messages to PDF 
 weight: 10
 url: /net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Adjust Page Size When Rendering Email Messages
+
 ## Introduction
 In the realm of .NET development, GroupDocs.Viewer provides a comprehensive solution for rendering various document formats, including email messages. This tutorial focuses on adjusting page size when rendering email messages to PDF format using GroupDocs.Viewer for .NET. By following the steps outlined in this guide, you will learn how to seamlessly manipulate the page size to meet your specific requirements.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Tìm hiểu cách tích hợp dễ dàng khả năng xem tài liệ
 weight: 32
 url: /vi/net/processing-document-attachments/
 --- 
+
+# Xử lý tệp đính kèm tài liệu
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển ứng dụng .NET, việc kết hợp khả năng xem tài liệu hiệu quả là điều tối quan trọng. Với GroupDocs.Viewer dành cho .NET, quá trình này không chỉ được sắp xếp hợp lý mà còn cực kỳ trực quan. Bài viết này đi sâu vào sự phức tạp của việc xử lý các tệp đính kèm tài liệu một cách liền mạch trong các ứng dụng .NET của bạn.

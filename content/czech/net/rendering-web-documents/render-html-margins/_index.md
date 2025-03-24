@@ -6,6 +6,9 @@ description: Naučte se vykreslovat HTML s vlastními okraji v .NET pomocí Grou
 weight: 11
 url: /cs/net/rendering-web-documents/render-html-margins/
 ---
+
+# Vykreslování HTML s uživatelsky definovanými okraji
+
 ## Úvod
 oblasti vývoje .NET je vykreslování HTML s uživatelsky definovanými okraji zásadním aspektem vytváření vizuálně přitažlivých dokumentů. Ať už se jedná o úpravu okrajů pro web nebo konfiguraci rozvržení tisku, přesná kontrola nad okraji zlepšuje celkovou prezentaci obsahu. V tomto tutoriálu se ponoříme do využití GroupDocs.Viewer pro .NET k bezproblémovému dosažení této funkce.
 ## Předpoklady

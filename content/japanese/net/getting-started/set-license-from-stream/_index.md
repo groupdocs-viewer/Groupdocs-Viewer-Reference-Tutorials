@@ -6,6 +6,9 @@ description: GroupDocs.Viewer を使用して .NET アプリケーションを�
 weight: 11
 url: /ja/net/getting-started/set-license-from-stream/
 ---
+
+# ストリームからライセンスを設定
+
 ## 導入
 .NET アプリケーションに高度なドキュメント表示機能を強化したいと考えていますか? GroupDocs.Viewer for .NET は、ドキュメント表示機能をプロジェクトにシームレスに統合するための包括的なソリューションを提供します。このチュートリアルでは、GroupDocs.Viewer for .NET を活用して強力なドキュメント表示機能でアプリケーションを強化するプロセスを詳しく説明します。 
 ## 前提条件

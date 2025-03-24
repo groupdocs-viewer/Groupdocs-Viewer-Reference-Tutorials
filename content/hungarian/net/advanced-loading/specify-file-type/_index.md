@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat meg fájltípust dokumentumok betöltése
 weight: 10
 url: /hu/net/advanced-loading/specify-file-type/
 ---
+
+# Adja meg a fájl típusát a dokumentumok betöltésekor
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy sokoldalú dokumentum-megjelenítő API, amely a fájlformátumok széles skáláját támogatja, beleértve a DOCX, PDF, PPTX stb. Ha a dokumentumok betöltésekor megadja a fájltípust, pontos megjelenítést és zökkenőmentes megtekintési élményt biztosíthat a felhasználók számára.
 ## Előfeltételek

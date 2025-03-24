@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET を使用して CDR イメージを HTML�
 weight: 12
 url: /ja/net/image-rendering/render-cdr-images/
 ---
+
+# CDR イメージのレンダリング
+
 ## 導入
 このチュートリアルでは、GroupDocs.Viewer for .NET を使用して CDR (CorelDRAW) イメージをレンダリングするプロセスを説明します。 CDR は、主にベクトル グラフィック エディターである CorelDRAW に関連するファイル形式です。 GroupDocs.Viewer を使用すると、CDR ファイルを HTML、JPG、PNG、PDF などのさまざまな形式に簡単に変換できます。
 ## 前提条件

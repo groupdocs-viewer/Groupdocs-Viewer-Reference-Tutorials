@@ -6,6 +6,9 @@ description: Khám phá các hướng dẫn toàn diện về cách hiển thị
 weight: 24
 url: /vi/net/rendering-archive-files/
 ---
+
+# Hiển thị tập tin lưu trữ
+
 ## Giới thiệu
 
 Bạn đang tìm kiếm sự tích hợp liền mạch của GroupDocs.Viewer dành cho .NET vào các ứng dụng của mình để có khả năng hiển thị và xem tài liệu hiệu quả? Đừng tìm đâu xa! Hướng dẫn của chúng tôi bao gồm mọi thứ bạn cần biết để tận dụng tối đa khả năng hiển thị các tệp lưu trữ. Hãy đi sâu vào chi tiết.

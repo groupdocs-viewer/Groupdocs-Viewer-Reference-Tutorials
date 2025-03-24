@@ -6,6 +6,9 @@ description: Descubra tutoriais abrangentes para renderizar arquivos compactados
 weight: 24
 url: /pt/net/rendering-archive-files/
 ---
+
+# Renderizando arquivos compactados
+
 ## Introdução
 
 Você está buscando uma integração perfeita do GroupDocs.Viewer for .NET em seus aplicativos para obter recursos eficientes de renderização e visualização de documentos? Não procure mais! Nossos tutoriais cobrem tudo o que você precisa saber para aproveitar ao máximo a renderização de arquivos compactados. Vamos nos aprofundar nos detalhes.

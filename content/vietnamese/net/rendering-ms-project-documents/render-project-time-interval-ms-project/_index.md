@@ -6,6 +6,9 @@ description: Tích hợp GroupDocs.Viewer dành cho .NET vào các ứng dụng 
 weight: 12
 url: /vi/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---
+
+# Kết xuất khoảng thời gian dự án cụ thể (MS Project)
+
 ## Giới thiệu
 Trong lĩnh vực phát triển phần mềm, việc xử lý và hiển thị hiệu quả các định dạng tài liệu khác nhau là điều tối quan trọng. Cho dù đó là để xem hay thao tác tài liệu, việc có các công cụ phù hợp có thể nâng cao đáng kể năng suất và hợp lý hóa các quy trình. GroupDocs.Viewer dành cho .NET nổi bật như một giải pháp linh hoạt, cung cấp cho các nhà phát triển khả năng tích hợp liền mạch khả năng xem tài liệu vào các ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

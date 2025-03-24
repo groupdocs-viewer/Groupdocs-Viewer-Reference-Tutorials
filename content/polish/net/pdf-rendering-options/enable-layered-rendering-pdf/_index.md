@@ -6,6 +6,9 @@ description: Dowiedz się, jak włączyć renderowanie warstwowe w dokumentach P
 weight: 15
 url: /pl/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Włącz renderowanie warstwowe w formacie PDF
+
 ## Wstęp
 W tym samouczku zagłębimy się w proces włączania renderowania warstwowego w dokumentach PDF za pomocą GroupDocs.Viewer dla .NET. Renderowanie warstwowe umożliwia ulepszone wyświetlanie i manipulowanie dokumentami, zapewniając użytkownikom bardziej interaktywne wrażenia wizualne.
 ## Warunki wstępne

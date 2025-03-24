@@ -6,6 +6,9 @@ description: Jelajahi keajaiban GroupDocs.Viewer untuk .NET – integrasikan tam
 weight: 11
 url: /id/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Dapatkan Nama Lembar Kerja
+
 ## Perkenalan
 Selamat datang di dunia GroupDocs.Viewer untuk .NET yang menakjubkan! Jika Anda seorang pengembang atau penggila yang ingin menjelajahi kemampuan melihat dokumen yang canggih dalam aplikasi .NET, Anda siap menikmatinya. Dalam panduan komprehensif ini, kita akan mempelajari seluk-beluk mengambil nama lembar kerja menggunakan GroupDocs.Viewer. Jadi, kencangkan sabuk pengaman Anda dan mari memulai perjalanan mengasyikkan ini!
 ## Prasyarat

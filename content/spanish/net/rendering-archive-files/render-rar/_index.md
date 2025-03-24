@@ -6,6 +6,9 @@ description: Aprenda a procesar archivos RAR en formatos HTML, JPG, PNG o PDF ut
 weight: 13
 url: /es/net/rendering-archive-files/render-rar/
 ---
+
+# Renderizar archivos RAR
+
 ## Introducción
 Los archivos RAR son un formato popular para comprimir y almacenar varios archivos y carpetas en un solo contenedor. Representar archivos RAR en varios formatos, como HTML, JPG, PNG o PDF, puede ser esencial para ver o compartir el contenido de estos archivos. En este tutorial, exploraremos cómo renderizar archivos RAR usando GroupDocs.Viewer para .NET.
 ## Requisitos previos

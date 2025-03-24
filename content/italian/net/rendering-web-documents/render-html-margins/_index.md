@@ -6,6 +6,9 @@ description: Scopri come eseguire il rendering di HTML con margini personalizzat
 weight: 11
 url: /it/net/rendering-web-documents/render-html-margins/
 ---
+
+# Rendering HTML con margini definiti dall'utente
+
 ## introduzione
 Nell'ambito dello sviluppo .NET, il rendering dell'HTML con margini definiti dall'utente è un aspetto cruciale della creazione di documenti visivamente accattivanti. Che si tratti di regolare i margini per un sito Web o di configurare layout di stampa, il controllo preciso sui margini migliora la presentazione complessiva dei contenuti. In questo tutorial, approfondiremo l'utilizzo di GroupDocs.Viewer per .NET per ottenere questa funzionalità senza problemi.
 ## Prerequisiti

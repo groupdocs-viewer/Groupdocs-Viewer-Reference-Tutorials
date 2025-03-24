@@ -6,6 +6,9 @@ description: A GroupDocs.Viewer for .NET segítségével könnyedén integrálha
 weight: 12
 url: /hu/net/advanced-loading/load-password-protected-document/
 ---
+
+# Jelszóval védett dokumentumok betöltése
+
 ## Bevezetés
 mai digitális korban a különféle dokumentumformátumok zökkenőmentes kezelése és megtekintése sok vállalkozás és magánszemély számára egyaránt elengedhetetlen. Szerencsére a GroupDocs.Viewer for .NET átfogó megoldást kínál a .NET-fejlesztők számára, hogy könnyedén integrálják a dokumentummegtekintési képességeket alkalmazásaikba. Ebben az oktatóanyagban a GroupDocs.Viewer egyik alapvető funkciójával foglalkozunk: a jelszóval védett dokumentumok betöltésével. Lépésről lépésre lebontjuk a folyamatot, biztosítva, hogy a fejlesztők könnyen követhessék és beépíthessék ezt a funkciót projektjeikbe.
 ## Előfeltételek

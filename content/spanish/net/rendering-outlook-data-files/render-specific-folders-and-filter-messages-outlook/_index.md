@@ -6,6 +6,9 @@ description: Aprenda a representar carpetas específicas y filtrar mensajes en O
 weight: 11
 url: /es/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Representar carpetas específicas y filtrar mensajes (Outlook)
+
 ## Introducción
 En el mundo del desarrollo .NET, administrar y mostrar documentos de manera eficiente es crucial. GroupDocs.Viewer para .NET simplifica esta tarea al proporcionar potentes funcionalidades para representar varios formatos de documentos sin problemas. En este tutorial, profundizaremos en cómo representar carpetas específicas y filtrar mensajes en Outlook usando GroupDocs.Viewer para .NET.
 ## Requisitos previos

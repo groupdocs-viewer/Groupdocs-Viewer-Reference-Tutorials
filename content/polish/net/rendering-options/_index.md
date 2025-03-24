@@ -7,6 +7,9 @@ weight: 23
 url: /pl/net/rendering-options/
 ---
 
+# Opcje renderowania
+
+
 ## Wstęp
 
 W dziedzinie tworzenia aplikacji .NET efektywne renderowanie dokumentów jest często kluczowym aspektem. Niezależnie od tego, czy tworzysz system zarządzania treścią, przeglądarkę dokumentów, czy jakąkolwiek inną aplikację obsługującą wyświetlanie dokumentów, posiadanie solidnych opcji renderowania może znacząco poprawić komfort użytkownika i funkcjonalność.

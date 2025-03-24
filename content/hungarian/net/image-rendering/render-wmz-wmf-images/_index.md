@@ -6,6 +6,9 @@ description: Könnyedén renderelhet WMZ és WMF képeket .NET alkalmazásokban 
 weight: 18
 url: /hu/net/image-rendering/render-wmz-wmf-images/
 ---
+
+# Rendereljen WMZ és WMF képeket
+
 ## Bevezetés
 
 A szoftverfejlesztés területén a különböző dokumentumformátumok hatékony kezelése és renderelése a legfontosabb. A GroupDocs.Viewer for .NET egy hatékony eszköz, amely megkönnyíti a dokumentumformátumok széles skálájának megjelenítését, zökkenőmentes integrációt és jobb felhasználói élményt biztosítva a .NET-alkalmazásokon belül. Lehetőségei közé tartozik a WMZ- és WMF-képek renderelése, amely gyakran előforduló feladat a dokumentumfeldolgozás során.

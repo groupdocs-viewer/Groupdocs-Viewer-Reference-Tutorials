@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak belgeleri yüklerken dosya t
 weight: 10
 url: /tr/net/advanced-loading/specify-file-type/
 ---
+
+# Belgeleri Yüklerken Dosya Türünü Belirtin
+
 ## giriiş
 GroupDocs.Viewer for .NET, DOCX, PDF, PPTX ve daha fazlası dahil çok çeşitli dosya formatlarını destekleyen çok yönlü bir belge işleme API'sidir. Belgeleri yüklerken dosya türünü belirterek kullanıcılarınıza doğru oluşturma ve sorunsuz görüntüleme deneyimi sağlayabilirsiniz.
 ## Önkoşullar

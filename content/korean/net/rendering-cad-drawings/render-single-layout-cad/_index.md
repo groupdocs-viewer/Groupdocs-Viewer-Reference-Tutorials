@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 CAD 도면에서 단일 �
 weight: 14
 url: /ko/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# CAD 도면에서 단일 레이아웃 렌더링
+
 ## 소개
 .NET 개발 영역에서는 CAD 도면을 처리하고 보는 것이 일반적인 요구 사항입니다. .NET용 GroupDocs.Viewer는 .NET 응용 프로그램 내에서 CAD 도면을 렌더링하기 위한 포괄적인 솔루션을 제공하여 이 작업을 단순화합니다. 이 튜토리얼에서는 .NET용 GroupDocs.Viewer를 사용하여 CAD 도면에서 단일 레이아웃을 렌더링하는 방법을 살펴보겠습니다.
 ## 전제조건

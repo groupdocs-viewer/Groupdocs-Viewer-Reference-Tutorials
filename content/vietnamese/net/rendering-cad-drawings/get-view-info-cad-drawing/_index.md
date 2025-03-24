@@ -6,6 +6,9 @@ description: Tìm hiểu cách truy xuất thông tin chế độ xem cho bản 
 weight: 10
 url: /vi/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Nhận thông tin xem cho bản vẽ CAD
+
 ## Giới thiệu
 Trong thế giới phát triển phần mềm, việc xử lý các bản vẽ CAD một cách hiệu quả là rất quan trọng. Cho dù bạn đang xây dựng ứng dụng cho kiến trúc sư, kỹ sư hay nhà thiết kế thì việc cung cấp trải nghiệm xem liền mạch cho các tệp CAD có thể nâng cao đáng kể sự hài lòng của người dùng. GroupDocs.Viewer dành cho .NET cung cấp một giải pháp mạnh mẽ để tích hợp dễ dàng khả năng xem tệp CAD vào các ứng dụng .NET của bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình lấy thông tin chế độ xem cho bản vẽ CAD bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

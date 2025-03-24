@@ -6,6 +6,9 @@ description: Groupdocs.Viewer for .NET を活用して Microsoft Project ドキ�
 weight: 10
 url: /ja/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Microsoft Project ドキュメントの表示情報を取得する
+
 ## 導入
 ドキュメント管理および表示ソリューションの分野では、Groupdocs.Viewer for .NET は多用途で堅牢なツールとして際立っています。ドキュメント表示機能を .NET アプリケーションに統合しようとしている開発者であっても、その機能を熱心に探索したい愛好家であっても、このチュートリアルでは、Groupdocs.Viewer for .NET を活用して Microsoft Project ドキュメントのビュー情報を取得するプロセスを説明します。 。
 ## 前提条件

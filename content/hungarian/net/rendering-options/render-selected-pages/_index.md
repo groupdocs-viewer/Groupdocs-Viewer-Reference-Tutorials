@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet dokumentumokból kiválasztott oldalakat 
 weight: 17
 url: /hu/net/rendering-options/render-selected-pages/
 ---
+
+# Kijelölt oldalak renderelése
+
 ## Bevezetés
 
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a Groupdocs.Viewer for .NET a dokumentum kiválasztott oldalainak megjelenítésére. Akár tapasztalt fejlesztő, akár csak most kezdi, ez a lépésről lépésre bemutató útmutató könnyedén végigvezeti a folyamaton.

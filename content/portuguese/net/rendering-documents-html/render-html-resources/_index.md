@@ -6,6 +6,9 @@ description: Aprimore a visualização de documentos .NET com GroupDocs.Viewer p
 weight: 12
 url: /pt/net/rendering-documents-html/render-html-resources/
 ---
+
+# Renderizar com recursos incorporados ou externos
+
 ## Introdução
 
 No mundo do desenvolvimento .NET, a visualização eficiente de documentos é um aspecto crucial de muitos aplicativos. GroupDocs.Viewer for .NET fornece uma solução poderosa para renderizar documentos com recursos incorporados ou externos. Neste tutorial, exploraremos como utilizar GroupDocs.Viewer para renderizar documentos perfeitamente, detalhando cada etapa para maior clareza e compreensão.

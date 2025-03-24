@@ -6,6 +6,9 @@ description: Odemkněte bezproblémové možnosti prohlížení dokumentů ve va
 weight: 12
 url: /cs/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Zakázat ověřování licencí písem v PDF
+
 ## Úvod
 V oblasti vývoje .NET je správa a manipulace s dokumenty často klíčovým aspektem mnoha aplikací. Ať už jde o prohlížení souborů PDF, dokumentů aplikace Word nebo jiných typů souborů, je nezbytné mít k dispozici robustní nástroje pro efektivní zpracování těchto úkolů. Zde vstupuje do hry GroupDocs.Viewer for .NET. Tato výkonná knihovna poskytuje vývojářům možnost bezproblémově integrovat funkce prohlížení dokumentů do jejich aplikací .NET.
 ## Předpoklady

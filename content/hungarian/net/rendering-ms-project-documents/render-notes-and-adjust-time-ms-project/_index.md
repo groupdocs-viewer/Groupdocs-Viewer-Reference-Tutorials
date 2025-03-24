@@ -6,6 +6,9 @@ description: Az MS Project dokumentumok elsajátítása a GroupDocs.Viewer for .
 weight: 11
 url: /hu/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# Jegyzetek renderelése és időegységek beállítása (MS Project)
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony dokumentum-megjelenítő API, amely lehetővé teszi a fejlesztők számára, hogy megtekintsenek és kezeljenek különféle dokumentumformátumokat .NET-alkalmazásaikon belül. Ebben az oktatóanyagban a megjegyzések renderelésére és az időegységek beállítására összpontosítunk kifejezetten az MS Project dokumentumokhoz.
 ## Előfeltételek

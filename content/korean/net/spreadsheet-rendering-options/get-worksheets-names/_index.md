@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer의 마법을 탐험해보세요. 문서 �
 weight: 11
 url: /ko/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# 워크시트 이름 가져오기
+
 ## 소개
 .NET용 GroupDocs.Viewer의 매혹적인 세계에 오신 것을 환영합니다! .NET 애플리케이션 내에서 강력한 문서 보기 기능을 탐색하는 데 관심이 있는 개발자이거나 열광적인 사람이라면 큰 도움이 될 것입니다. 이 종합 가이드에서는 GroupDocs.Viewer를 사용하여 워크시트 이름을 검색하는 복잡한 과정을 자세히 살펴보겠습니다. 그러니 안전벨트를 매시고 신나는 여행을 떠나보세요!
 ## 전제조건

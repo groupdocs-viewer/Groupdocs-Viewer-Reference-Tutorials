@@ -6,6 +6,9 @@ description: Förbättra dina .NET-applikationer med GroupDocs.Viewer för söml
 weight: 11
 url: /sv/net/getting-started/set-license-from-stream/
 ---
+
+# Ställ in licens från Stream
+
 ## Introduktion
 Vill du ge dina .NET-applikationer avancerade dokumentvisningsmöjligheter? GroupDocs.Viewer för .NET erbjuder en heltäckande lösning för att sömlöst integrera dokumentvisningsfunktioner i dina projekt. I den här självstudien kommer vi att fördjupa oss i processen att utnyttja GroupDocs.Viewer för .NET för att berika dina applikationer med kraftfulla dokumentvisningsmöjligheter. 
 ## Förutsättningar

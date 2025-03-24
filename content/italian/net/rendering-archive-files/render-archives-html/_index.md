@@ -6,6 +6,9 @@ description: Scopri come eseguire il rendering degli archivi in pagine HTML util
 weight: 12
 url: /it/net/rendering-archive-files/render-archives-html/
 ---
+
+# Rendering di archivi su pagine HTML singole o multiple
+
 ## introduzione
 GroupDocs.Viewer per .NET è una potente libreria di rendering di documenti che consente agli sviluppatori di integrare facilmente le funzionalità di visualizzazione dei documenti nelle loro applicazioni .NET. Se devi eseguire il rendering degli archivi su pagine HTML singole o multiple, questo tutorial ti guiderà passo dopo passo attraverso il processo.
 ## Prerequisiti

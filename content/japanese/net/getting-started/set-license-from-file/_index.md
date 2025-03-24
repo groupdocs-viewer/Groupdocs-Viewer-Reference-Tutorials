@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET をアプリケーションに簡単に�
 weight: 10
 url: /ja/net/getting-started/set-license-from-file/
 ---
+
+# ファイルからライセンスを設定
+
 ## 導入
 GroupDocs.Viewer for .NET は、.NET 開発者がドキュメント表示機能をアプリケーションにシームレスに統合できるようにする強力なドキュメント ビューア API です。 PDF、Microsoft Office、画像などのさまざまな形式でドキュメントを表示する必要がある場合でも、GroupDocs.Viewer は広範なカスタマイズ オプションを備えた信頼性の高いソリューションを提供します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: Lär dig hur du renderar en enkel layout i CAD-ritningar med GroupD
 weight: 14
 url: /sv/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# Gör enkel layout i CAD-ritningar
+
 ## Introduktion
 Inom området .NET-utveckling är hantering och visning av CAD-ritningar ett vanligt krav. GroupDocs.Viewer för .NET förenklar denna uppgift genom att tillhandahålla en heltäckande lösning för att rendera CAD-ritningar i .NET-applikationer. I den här handledningen kommer vi att fördjupa oss i att rendera en enskild layout i CAD-ritningar med GroupDocs.Viewer för .NET.
 ## Förutsättningar

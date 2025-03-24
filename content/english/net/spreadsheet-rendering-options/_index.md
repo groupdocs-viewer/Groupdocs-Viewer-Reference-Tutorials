@@ -6,6 +6,9 @@ description: Effortlessly enhance document visualization in .NET with GroupDocs.
 weight: 37
 url: /net/spreadsheet-rendering-options/
 ---
+
+# Spreadsheet Rendering Options
+
 ## Introduction
 
 Are you ready to elevate your document viewing experience in .NET? GroupDocs.Viewer for .NET offers a comprehensive set of tutorials, empowering you to optimize the rendering of spreadsheets. From adjusting text overflow to rendering hidden columns and rows, we've got you covered. Let's dive into the world of spreadsheet rendering options and unlock the full potential of GroupDocs.Viewer for .NET.

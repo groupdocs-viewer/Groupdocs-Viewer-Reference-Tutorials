@@ -6,6 +6,9 @@ description: قم بعرض رسومات CAD بسلاسة في تطبيقات .NE
 weight: 13
 url: /ar/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# تقديم الطبقات في رسومات CAD
+
 ## مقدمة
 تعد GroupDocs.Viewer for .NET أداة قوية تمكن المطورين من دمج إمكانات عرض المستندات بسلاسة في تطبيقات .NET الخاصة بهم. سواء كنت بحاجة إلى عرض رسومات CAD أو ملفات PDF أو مستندات Microsoft Office أو أكثر، فإن GroupDocs.Viewer يوفر حلاً شاملاً.
 ## المتطلبات الأساسية

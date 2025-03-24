@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak PDF'leri orijinal sayfa boyu
 weight: 17
 url: /tr/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# PDF'yi Orijinal Sayfa Boyutuyla Oluştur
+
 ## giriiş
 .NET geliştirme alanında GroupDocs.Viewer, PDF'ler de dahil olmak üzere çeşitli belge formatlarını işlemek için güçlü bir araç olarak öne çıkıyor. Belge işlemede yaygın bir gereksinim, PDF'lerin orijinal sayfa boyutlarını koruyarak oluşturulmasıdır. Bu görevi sorunsuz bir şekilde gerçekleştirmek, GroupDocs.Viewer for .NET ve işlevlerinin kapsamlı bir şekilde anlaşılmasını gerektirir.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 문서 보기 기능을 .N
 weight: 11
 url: /ko/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# 문서 첨부 파일 검색 및 인쇄
+
 ## 소개
 소프트웨어 개발 세계에서는 애플리케이션 내에서 문서를 효율적으로 관리하고 표시하는 것이 중요합니다. .NET용 GroupDocs.Viewer는 개발자가 문서 보기 기능을 .NET 응용 프로그램에 원활하게 통합할 수 있는 강력한 솔루션을 제공합니다. 기업 수준의 문서 관리 시스템을 구축하든 간단한 문서 뷰어를 구축하든 GroupDocs.Viewer는 귀하의 요구 사항을 충족하는 포괄적인 기능 세트를 제공합니다.
 ## 전제조건

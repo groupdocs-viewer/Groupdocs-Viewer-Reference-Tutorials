@@ -6,6 +6,9 @@ description: Learn how to disable characters grouping in PDFs using GroupDocs.Vi
 weight: 11
 url: /net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Disable Characters Grouping in PDF
+
 ## Introduction
 In the world of .NET development, handling document viewing can sometimes be a challenge, especially when dealing with formats like PDFs. However, with the right tools and knowledge, you can streamline this process efficiently. One such tool that comes to the rescue is GroupDocs.Viewer for .NET. This powerful library empowers developers to seamlessly render and display various document types within their .NET applications.
 ## Prerequisites

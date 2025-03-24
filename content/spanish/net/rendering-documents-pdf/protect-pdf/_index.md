@@ -6,6 +6,9 @@ description: Proteja sus archivos PDF renderizados con contraseñas fácilmente 
 weight: 12
 url: /es/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Proteger PDF renderizado con contraseña
+
 ## Introducción
 En este tutorial, aprenderá cómo usar Groupdocs.Viewer para .NET para proteger un PDF renderizado con una contraseña. Al agregar medidas de seguridad, puede controlar el acceso a sus documentos PDF, garantizando la confidencialidad e integridad.
 ## Requisitos previos

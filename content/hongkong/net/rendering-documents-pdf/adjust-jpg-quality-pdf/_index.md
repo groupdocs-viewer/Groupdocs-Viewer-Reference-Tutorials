@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 調整渲染的 PDF �
 weight: 11
 url: /zh-hant/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# 調整渲染 PDF 中的 JPG 影像質量
+
 ## 介紹
 在本教程中，我們將學習如何在使用 GroupDocs.Viewer for .NET 渲染 PDF 時調整 JPG 影像的品質。這個功能強大的程式庫可讓您無縫地檢視和操作 .NET 應用程式中的各種文件格式。
 ## 先決條件

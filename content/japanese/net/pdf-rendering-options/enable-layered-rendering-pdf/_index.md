@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET を使用して PDF ドキュメントで
 weight: 15
 url: /ja/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# PDF でのレイヤー化レンダリングを有効にする
+
 ## 導入
 このチュートリアルでは、GroupDocs.Viewer for .NET を使用して PDF ドキュメントのレイヤー化レンダリングを有効にするプロセスを詳しく説明します。レイヤー化されたレンダリングにより、ドキュメントの表示と操作が強化され、よりインタラクティブな表示エクスペリエンスがユーザーに提供されます。
 ## 前提条件

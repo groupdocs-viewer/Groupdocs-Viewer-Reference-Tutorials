@@ -6,6 +6,9 @@ description: Sblocca funzionalità di visualizzazione dei documenti senza interr
 weight: 12
 url: /it/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Disabilita le verifiche della licenza dei caratteri in PDF
+
 ## introduzione
 Nell'ambito dello sviluppo .NET, la gestione e la manipolazione dei documenti è spesso un aspetto cruciale di molte applicazioni. Che si tratti di visualizzare PDF, documenti Word o altri tipi di file, è essenziale disporre di strumenti robusti per gestire queste attività in modo efficiente. È qui che entra in gioco GroupDocs.Viewer per .NET. Questa potente libreria offre agli sviluppatori la possibilità di integrare perfettamente la funzionalità di visualizzazione dei documenti nelle loro applicazioni .NET.
 ## Prerequisiti

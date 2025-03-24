@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 아카이브를 HTML 페�
 weight: 12
 url: /ko/net/rendering-archive-files/render-archives-html/
 ---
+
+# 아카이브를 단일 또는 다중 HTML 페이지로 렌더링
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 문서 보기 기능을 .NET 응용 프로그램에 쉽게 통합할 수 있게 해주는 강력한 문서 렌더링 라이브러리입니다. 아카이브를 단일 HTML 페이지로 렌더링해야 하는지 아니면 여러 HTML 페이지로 렌더링해야 하는지에 관계없이 이 튜토리얼은 프로세스를 단계별로 안내합니다.
 ## 전제조건

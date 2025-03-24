@@ -6,6 +6,9 @@ description: Verbeter uw .NET-toepassingen met GroupDocs.Viewer voor naadloze do
 weight: 12
 url: /nl/net/getting-started/set-metered-license/
 ---
+
+# Gemeten licentie instellen
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het integreren van krachtige documentweergavemogelijkheden in uw applicaties essentieel voor het verbeteren van de gebruikerservaring en functionaliteit. GroupDocs.Viewer voor .NET biedt een robuuste oplossing voor het naadloos integreren van documentweergavefunctionaliteiten in uw .NET-projecten. Of u nu werkt met PDF's, Microsoft Office-documenten of verschillende afbeeldingsformaten, GroupDocs.Viewer vereenvoudigt het proces van het weergeven en weergeven van deze documenten in uw toepassingen.
 ## Vereisten

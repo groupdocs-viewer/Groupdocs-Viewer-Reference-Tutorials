@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị tài liệu có nhận xét bằng G
 weight: 13
 url: /vi/net/rendering-options/render-document-comments/
 ---
+
+# Kết xuất tài liệu có nhận xét
+
 ## Giới thiệu
 GroupDocs.Viewer dành cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tích hợp liền mạch khả năng kết xuất tài liệu vào các ứng dụng .NET của họ. Cho dù bạn cần hiển thị tài liệu Word, bảng tính Excel, bản trình bày PowerPoint, tệp PDF hay các định dạng khác, GroupDocs.Viewer đều cung cấp giải pháp đơn giản.
 Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc hiển thị tài liệu có nhận xét bằng GroupDocs.Viewer cho .NET. Chúng tôi sẽ hướng dẫn bạn các điều kiện tiên quyết, nhập không gian tên và cung cấp hướng dẫn từng bước để hiển thị tài liệu có nhận xét, đảm bảo rằng bạn nắm bắt kỹ từng khái niệm.

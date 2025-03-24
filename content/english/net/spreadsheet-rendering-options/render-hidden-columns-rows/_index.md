@@ -6,6 +6,9 @@ description: Unlock hidden data in spreadsheets effortlessly using GroupDocs.Vie
 weight: 13
 url: /net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Render Hidden Columns and Rows
+
 ## Introduction
 In the realm of document visualization, GroupDocs.Viewer for .NET stands tall as a robust tool that facilitates seamless rendering of various document formats. One intriguing capability is the ability to reveal hidden columns and rows within spreadsheets. In this tutorial, we'll delve into the steps to unlock this feature and unleash the potential of your data.
 ## Prerequisites

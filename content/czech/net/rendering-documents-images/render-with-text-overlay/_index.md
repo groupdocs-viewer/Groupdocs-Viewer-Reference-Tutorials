@@ -6,6 +6,9 @@ description: Bezproblémově vykreslujte dokumenty v aplikacích .NET pomocí Gr
 weight: 13
 url: /cs/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Vykreslení s překrytím textu pro zobrazení
+
 ## Úvod
 V oblasti vývoje .NET je bezproblémová správa a zobrazování různých formátů dokumentů pro mnoho aplikací zásadní. GroupDocs.Viewer for .NET se ukazuje jako výkonné řešení pro snadné vykreslování dokumentů ve vašich aplikacích .NET. Ať už se jedná o soubory PDF, dokumenty aplikace Word, tabulky aplikace Excel nebo prezentace v PowerPointu, GroupDocs.Viewer celý proces zjednodušuje a nabízí řadu funkcí pro vylepšené prohlížení dokumentů.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak .NET uygulamalarınızı kus
 weight: 11
 url: /tr/net/advanced-loading/load-documents-encoding/
 ---
+
+# Belirli Kodlamaya Sahip Belgeleri Yükleme
+
 ## giriiş
 .NET uygulamalarınızdaki belgeleri sorunsuz bir şekilde görüntülemek için güçlü bir araç mı arıyorsunuz? .NET için GroupDocs.Viewer'dan başka bir yere bakmayın! Bu güçlü kitaplık, geliştiricilere çeşitli belge formatlarını doğrudan uygulamaları içinde zahmetsizce görüntüleme olanağı sağlayarak sezgisel ve kullanıcı dostu bir görüntüleme deneyimi sunar.
 ## Önkoşullar

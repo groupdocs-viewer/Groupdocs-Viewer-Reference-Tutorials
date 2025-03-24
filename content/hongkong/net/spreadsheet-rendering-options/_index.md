@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 教學課程輕鬆增強 .NET 中的文件�
 weight: 37
 url: /zh-hant/net/spreadsheet-rendering-options/
 ---
+
+# 電子表格渲染選項
+
 ## 介紹
 
 您準備好提升 .NET 中的文件檢視體驗了嗎？ GroupDocs.Viewer for .NET 提供了一套全面的教程，使您能夠優化電子表格的呈現。從調整文字溢位到渲染隱藏的列和行，我們都能滿足您的要求。讓我們深入了解電子表格呈現選項的世界，並釋放 GroupDocs.Viewer for .NET 的全部潛力。

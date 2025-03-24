@@ -6,6 +6,9 @@ description: Learn how to render FODG and ODG images to HTML, JPG, PNG, and PDF 
 weight: 15
 url: /net/image-rendering/render-fodg-odg-images/
 ---
+
+# Render FODG and ODG Images
+
 ## Introduction
 In the world of software development, efficient handling of document formats is paramount. GroupDocs.Viewer for .NET is a powerful tool designed to simplify the process of rendering FODG and ODG images within .NET applications. This tutorial will walk you through the steps required to render these images into various formats, such as HTML, JPG, PNG, and PDF, using GroupDocs.Viewer for .NET.
 ## Prerequisites

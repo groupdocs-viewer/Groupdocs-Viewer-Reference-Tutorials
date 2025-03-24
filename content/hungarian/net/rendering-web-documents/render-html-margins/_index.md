@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan jeleníthet meg HTML-t egyéni margókkal a .NE
 weight: 11
 url: /hu/net/rendering-web-documents/render-html-margins/
 ---
+
+# Rendereljen HTML-t felhasználó által meghatározott margókkal
+
 ## Bevezetés
 .NET fejlesztés területén a HTML felhasználó által definiált margókkal történő megjelenítése kulcsfontosságú szempont a tetszetős dokumentumok létrehozásában. Legyen szó egy webhely margóinak beállításáról vagy nyomtatási elrendezések konfigurálásáról, a margók pontos szabályozása javítja a tartalom általános megjelenítését. Ebben az oktatóanyagban elmélyülünk a GroupDocs.Viewer for .NET használatával e funkció zökkenőmentes elérése érdekében.
 ## Előfeltételek

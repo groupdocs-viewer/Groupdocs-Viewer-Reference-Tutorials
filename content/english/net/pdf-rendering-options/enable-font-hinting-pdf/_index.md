@@ -6,6 +6,9 @@ description: Learn how to enable font hinting in PDF documents using GroupDocs.V
 weight: 14
 url: /net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Enable Font Hinting in PDF
+
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool for viewing and manipulating various document formats within .NET applications. Whether you're working with PDFs, Microsoft Office documents, images, or other formats, GroupDocs.Viewer provides a seamless solution for rendering and interacting with these files.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Z łatwością zarządzaj przepełnieniem tekstu w dokumentach .NET
 weight: 10
 url: /pl/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Dostosuj przepełnienie tekstu w komórkach
+
 ## Wstęp
 W dynamicznym świecie rozwoju .NET zarządzanie przepełnieniem tekstu w komórkach ma kluczowe znaczenie dla tworzenia atrakcyjnych wizualnie i czytelnych dokumentów. GroupDocs.Viewer dla .NET udostępnia programistom kompleksowy zestaw narzędzi do płynnej obsługi nadmiaru tekstu w dokumentach arkuszy kalkulacyjnych. Ten samouczek poprowadzi Cię przez proces dostosowywania przepełnienia tekstu w komórkach przy użyciu programu GroupDocs.Viewer dla platformy .NET.
 ## Warunki wstępne

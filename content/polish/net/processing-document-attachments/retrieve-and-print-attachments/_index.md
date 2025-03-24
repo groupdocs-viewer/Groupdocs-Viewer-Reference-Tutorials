@@ -6,6 +6,9 @@ description: Bezproblemowo integruj możliwości przeglądania dokumentów z apl
 weight: 11
 url: /pl/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# Pobierz i wydrukuj załączniki do dokumentów
+
 ## Wstęp
 świecie tworzenia oprogramowania kluczowe znaczenie ma efektywne zarządzanie dokumentami i ich wyświetlanie w aplikacjach. GroupDocs.Viewer dla .NET zapewnia programistom zaawansowane rozwiązanie umożliwiające bezproblemową integrację możliwości przeglądania dokumentów z aplikacjami .NET. Niezależnie od tego, czy tworzysz system zarządzania dokumentami na poziomie przedsiębiorstwa, czy prostą przeglądarkę dokumentów, GroupDocs.Viewer oferuje kompleksowy zestaw funkcji spełniających Twoje potrzeby.
 ## Warunki wstępne

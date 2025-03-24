@@ -6,6 +6,9 @@ description: Descubra cómo representar cambios rastreados en documentos sin esf
 weight: 10
 url: /es/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Representar cambios rastreados
+
 ## Introducción
 En la era digital actual, administrar y visualizar documentos de manera eficiente es crucial tanto para las empresas como para los individuos. Con la llegada de tecnologías avanzadas, soluciones como GroupDocs.Viewer para .NET han revolucionado la forma en que interactuamos con varios formatos de documentos, incluidos documentos de Word, PDF y más. En esta guía completa, profundizaremos en cómo aprovechar GroupDocs.Viewer para .NET para representar los cambios rastreados en sus documentos sin problemas.
 ## Requisitos previos

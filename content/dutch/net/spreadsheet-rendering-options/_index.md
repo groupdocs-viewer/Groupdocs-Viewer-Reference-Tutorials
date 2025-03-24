@@ -6,6 +6,9 @@ description: Verbeter moeiteloos de documentvisualisatie in .NET met GroupDocs.V
 weight: 37
 url: /nl/net/spreadsheet-rendering-options/
 ---
+
+# Opties voor weergave van spreadsheets
+
 ## Invoering
 
 Bent u klaar om uw documentweergave-ervaring in .NET te verbeteren? GroupDocs.Viewer voor .NET biedt een uitgebreide reeks zelfstudies, waarmee u de weergave van spreadsheets kunt optimaliseren. Van het aanpassen van de tekstoverloop tot het weergeven van verborgen kolommen en rijen, wij staan voor u klaar. Laten we een duik nemen in de wereld van opties voor het renderen van spreadsheets en het volledige potentieel van GroupDocs.Viewer voor .NET ontsluiten.

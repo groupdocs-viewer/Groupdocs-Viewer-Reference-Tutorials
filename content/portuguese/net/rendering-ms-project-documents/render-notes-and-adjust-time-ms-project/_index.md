@@ -6,6 +6,9 @@ description: Domine a renderização de documentos do MS Project com GroupDocs.V
 weight: 11
 url: /pt/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# Renderizar notas e ajustar unidades de tempo (MS Project)
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma poderosa API de renderização de documentos que permite aos desenvolvedores visualizar e manipular vários formatos de documentos em seus aplicativos .NET. Neste tutorial, focaremos na renderização de notas e no ajuste de unidades de tempo especificamente para documentos do MS Project.
 ## Pré-requisitos

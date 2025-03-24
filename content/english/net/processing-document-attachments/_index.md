@@ -6,6 +6,9 @@ description: Learn how to effortlessly integrate document viewing capabilities i
 weight: 32
 url: /net/processing-document-attachments/
 --- 
+
+# Processing Document Attachments
+
 ## Introduction
 
 In the realm of .NET application development, incorporating efficient document viewing capabilities is paramount. With GroupDocs.Viewer for .NET, this process becomes not just streamlined but also remarkably intuitive. This article delves into the intricacies of handling document attachments seamlessly within your .NET applications.

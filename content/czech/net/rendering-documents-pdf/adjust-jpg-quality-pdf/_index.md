@@ -6,6 +6,9 @@ description: Zjistěte, jak upravit kvalitu obrazu JPG ve vykreslených dokument
 weight: 11
 url: /cs/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Upravte kvalitu obrázku JPG ve vykresleném PDF
+
 ## Úvod
 tomto tutoriálu se naučíme, jak upravit kvalitu obrázků JPG při vykreslování PDF pomocí GroupDocs.Viewer for .NET. Tato výkonná knihovna vám umožňuje bezproblémově prohlížet a manipulovat s různými formáty dokumentů ve vašich aplikacích .NET.
 ## Předpoklady

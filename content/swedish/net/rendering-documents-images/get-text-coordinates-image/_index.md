@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar textkoordinater för bildrendering med G
 weight: 12
 url: /sv/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# Få textkoordinater för bildrendering
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt dokumentåtergivnings-API som låter utvecklare sömlöst rendera dokument i olika format som PDF, Microsoft Office och många fler. En av dess nyckelfunktioner är möjligheten att extrahera textkoordinater för exakt bildåtergivning.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Oluşturulan PDF'lerinizi Groupdocs.Viewer for .NET'i kullanarak ko
 weight: 12
 url: /tr/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Oluşturulan PDF'yi Şifreyle Koruyun
+
 ## giriiş
 Bu öğreticide, oluşturulmuş bir PDF'yi parolayla korumak için Groupdocs.Viewer for .NET'i nasıl kullanacağınızı öğreneceksiniz. Güvenlik önlemleri ekleyerek PDF belgelerinize erişimi kontrol edebilir, gizliliği ve bütünlüğü sağlayabilirsiniz.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: 使用 Groupdocs.Viewer for .NET，使用密碼輕鬆保護渲染�
 weight: 12
 url: /zh-hant/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# 使用密碼保護渲染的 PDF
+
 ## 介紹
 在本教學中，您將學習如何使用 Groupdocs.Viewer for .NET 透過密碼保護渲染的 PDF。透過新增安全措施，您可以控制對 PDF 文件的訪問，確保機密性和完整性。
 ## 先決條件

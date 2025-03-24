@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 增强您的 .NET 应用程序，以实现�
 weight: 12
 url: /zh/net/getting-started/set-metered-license/
 ---
+
+# 设置计量许可证
+
 ## 介绍
 在 .NET 开发领域，将强大的文档查看功能集成到应用程序中对于增强用户体验和功能至关重要。 GroupDocs.Viewer for .NET 提供了一个强大的解决方案，可将文档查看功能无缝集成到您的 .NET 项目中。无论您使用的是 PDF、Microsoft Office 文档还是各种图像格式，GroupDocs.Viewer 都可以简化在应用程序中渲染和显示这些文档的过程。
 ## 先决条件

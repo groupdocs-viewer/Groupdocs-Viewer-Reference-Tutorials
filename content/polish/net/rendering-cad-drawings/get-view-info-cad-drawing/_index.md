@@ -6,6 +6,9 @@ description: Dowiedz się, jak pobierać informacje o widokach rysunków CAD za 
 weight: 10
 url: /pl/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Uzyskaj informacje o widoku rysunków CAD
+
 ## Wstęp
 świecie tworzenia oprogramowania wydajna obsługa rysunków CAD ma kluczowe znaczenie. Niezależnie od tego, czy tworzysz aplikacje dla architektów, inżynierów czy projektantów, zapewnienie płynnego przeglądania plików CAD może znacznie zwiększyć satysfakcję użytkowników. GroupDocs.Viewer dla .NET oferuje potężne rozwiązanie umożliwiające bezproblemową integrację możliwości przeglądania plików CAD z aplikacjami .NET. W tym samouczku przeprowadzimy Cię przez proces uzyskiwania informacji o widokach rysunków CAD przy użyciu programu GroupDocs.Viewer dla platformy .NET.
 ## Warunki wstępne

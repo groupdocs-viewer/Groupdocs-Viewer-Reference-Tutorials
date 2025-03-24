@@ -6,6 +6,9 @@ description: Lär dig hur du renderar HTML med anpassade marginaler i .NET med G
 weight: 11
 url: /sv/net/rendering-web-documents/render-html-margins/
 ---
+
+# Återge HTML med användardefinierade marginaler
+
 ## Introduktion
 När det gäller .NET-utveckling är rendering av HTML med användardefinierade marginaler en avgörande aspekt för att skapa visuellt tilltalande dokument. Oavsett om det gäller att justera marginaler för en webbplats eller konfigurera utskriftslayouter, förbättrar exakt kontroll över marginaler den övergripande presentationen av innehåll. I den här handledningen kommer vi att fördjupa oss i att använda GroupDocs.Viewer för .NET för att uppnå den här funktionen sömlöst.
 ## Förutsättningar

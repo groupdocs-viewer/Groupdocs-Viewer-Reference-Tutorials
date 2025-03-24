@@ -6,6 +6,9 @@ description: Aprenda a establecer límites de tamaño de imagen en aplicaciones 
 weight: 21
 url: /es/net/rendering-options/set-image-size-limits/
 ---
+
+# Establecer límites de tamaño de imagen
+
 ## Introducción
 GroupDocs.Viewer para .NET es una poderosa herramienta diseñada para facilitar la visualización perfecta de documentos dentro de aplicaciones .NET. Con sus sólidas funciones y su interfaz intuitiva, los desarrolladores pueden integrar sin esfuerzo capacidades de visualización de documentos en sus proyectos, mejorando la experiencia del usuario y la productividad. En este tutorial, exploraremos cómo establecer límites de tamaño de imagen usando GroupDocs.Viewer para .NET, garantizando una visualización óptima de los documentos manteniendo el rendimiento y la eficiencia.
 ## Requisitos previos

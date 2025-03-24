@@ -6,6 +6,9 @@ description: Verbeter uw .NET-toepassingen met GroupDocs.Viewer voor naadloze do
 weight: 11
 url: /nl/net/getting-started/set-license-from-stream/
 ---
+
+# Licentie instellen vanuit Stream
+
 ## Invoering
 Wilt u uw .NET-applicaties uitrusten met geavanceerde mogelijkheden voor documentweergave? GroupDocs.Viewer voor .NET biedt een uitgebreide oplossing om de functionaliteit voor het bekijken van documenten naadloos in uw projecten te integreren. In deze zelfstudie verdiepen we ons in het proces van het gebruik van GroupDocs.Viewer voor .NET om uw toepassingen te verrijken met krachtige documentweergavemogelijkheden. 
 ## Vereisten

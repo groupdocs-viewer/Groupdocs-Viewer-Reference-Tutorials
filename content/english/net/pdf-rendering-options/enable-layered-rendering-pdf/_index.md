@@ -6,6 +6,9 @@ description: Learn how to enable layered rendering in PDF documents using GroupD
 weight: 15
 url: /net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Enable Layered Rendering in PDF
+
 ## Introduction
 In this tutorial, we'll delve into the process of enabling layered rendering in PDF documents using GroupDocs.Viewer for .NET. Layered rendering allows for enhanced document display and manipulation, providing users with a more interactive viewing experience.
 ## Prerequisites

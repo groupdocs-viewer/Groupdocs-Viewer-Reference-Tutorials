@@ -7,6 +7,9 @@ weight: 22
 url: /es/net/advanced-usage-caching/
 ---
 
+# Uso avanzado (almacenamiento en caché)
+
+
 ## Introducción
 
 En el ámbito del desarrollo de aplicaciones .NET, donde la eficiencia y la velocidad son primordiales, dominar técnicas avanzadas como el almacenamiento en caché puede mejorar significativamente el rendimiento. Bienvenido al mundo de GroupDocs.Viewer, donde puede aprovechar el poder del almacenamiento en caché para agilizar el procesamiento de documentos y optimizar el rendimiento de su aplicación sin esfuerzo.

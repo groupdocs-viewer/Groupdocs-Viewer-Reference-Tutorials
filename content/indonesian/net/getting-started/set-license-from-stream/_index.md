@@ -6,6 +6,9 @@ description: Tingkatkan aplikasi .NET Anda dengan GroupDocs.Viewer untuk tampila
 weight: 11
 url: /id/net/getting-started/set-license-from-stream/
 ---
+
+# Tetapkan Lisensi dari Stream
+
 ## Perkenalan
 Apakah Anda ingin memberdayakan aplikasi .NET Anda dengan kemampuan melihat dokumen tingkat lanjut? GroupDocs.Viewer untuk .NET menawarkan solusi komprehensif untuk mengintegrasikan fungsi tampilan dokumen ke dalam proyek Anda dengan lancar. Dalam tutorial ini, kita akan mempelajari proses memanfaatkan GroupDocs.Viewer untuk .NET untuk memperkaya aplikasi Anda dengan kemampuan melihat dokumen yang canggih. 
 ## Prasyarat

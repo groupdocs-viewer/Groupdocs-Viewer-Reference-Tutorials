@@ -6,6 +6,9 @@ description: Learn how to render RAR archives into HTML, JPG, PNG, or PDF format
 weight: 13
 url: /net/rendering-archive-files/render-rar/
 ---
+
+# Render RAR Archives
+
 ## Introduction
 RAR archives are a popular format for compressing and storing multiple files and folders into a single container. Rendering RAR archives into various formats such as HTML, JPG, PNG, or PDF can be essential for viewing or sharing the contents of these archives. In this tutorial, we will explore how to render RAR archives using GroupDocs.Viewer for .NET.
 ## Prerequisites

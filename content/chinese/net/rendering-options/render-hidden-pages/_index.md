@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 增强您的 .NET 应用程序，以实现�
 weight: 15
 url: /zh/net/rendering-options/render-hidden-pages/
 ---
+
+# 渲染隐藏页面
+
 ## 介绍
 在 .NET 开发领域，有效管理和显示文档至关重要。无论是内部使用、客户演示还是 Web 应用程序，都必须能够无缝查看各种文档格式。这就是 GroupDocs.Viewer for .NET 发挥作用的地方。凭借其强大的功能和直观的界面，GroupDocs.Viewer 简化了在 .NET 应用程序中呈现文档的过程。
 ## 先决条件

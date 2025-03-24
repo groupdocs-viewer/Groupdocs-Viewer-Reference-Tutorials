@@ -6,6 +6,9 @@ description: Aprenda como carregar documentos de fluxos de maneira transparente 
 weight: 12
 url: /pt/net/loading-documents/loading-document-stream/
 ---
+
+# Carregar documentos do stream
+
 ## Introdução
 No domínio do desenvolvimento .NET, gerenciar e visualizar documentos com eficiência é fundamental. Com o advento de ferramentas e bibliotecas avançadas, tarefas que antes pareciam assustadoras agora são simplificadas. Dentre essas ferramentas, GroupDocs.Viewer for .NET se destaca como uma solução versátil para lidar perfeitamente com diversos formatos de documentos. Neste guia abrangente, nos aprofundamos nas complexidades do uso do GroupDocs.Viewer for .NET para carregar documentos de um fluxo. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este tutorial irá equipá-lo com o conhecimento para aproveitar o poder do GroupDocs.Viewer de forma eficaz.
 ## Pré-requisitos

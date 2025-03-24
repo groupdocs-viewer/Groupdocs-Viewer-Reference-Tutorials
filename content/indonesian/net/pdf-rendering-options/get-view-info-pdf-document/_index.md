@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak informasi tampilan dari dokumen PDF mengg
 weight: 16
 url: /id/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# Dapatkan Lihat Info untuk Dokumen PDF
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah alat canggih yang dirancang untuk menyederhanakan tampilan dokumen dalam aplikasi .NET. Baik Anda menangani PDF, dokumen Word, spreadsheet Excel, atau presentasi PowerPoint, pustaka ini menyederhanakan proses rendering dan interaksi dengan berbagai format file. Dalam tutorial ini, kami akan fokus memanfaatkan kemampuan GroupDocs.Viewer khusus untuk mengekstrak informasi tampilan dari dokumen PDF.
 ## Prasyarat

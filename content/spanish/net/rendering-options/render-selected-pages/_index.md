@@ -6,6 +6,9 @@ description: Aprenda a representar páginas seleccionadas de documentos usando G
 weight: 17
 url: /es/net/rendering-options/render-selected-pages/
 ---
+
+# Representar páginas seleccionadas
+
 ## Introducción
 
 En este tutorial, profundizaremos en cómo utilizar Groupdocs.Viewer para .NET para representar páginas seleccionadas de un documento. Ya sea que sea un desarrollador experimentado o esté comenzando, esta guía paso a paso lo guiará a través del proceso con facilidad.

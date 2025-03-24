@@ -6,6 +6,9 @@ description: Pelajari cara merender dokumen HTML dengan lancar di aplikasi .NET 
 weight: 11
 url: /id/net/rendering-documents-html/minify-html/
 ---
+
+# Perkecil Dokumen HTML yang Dirender
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah alat canggih yang memungkinkan pengembang merender dokumen HTML dengan lancar dalam aplikasi .NET mereka. Dengan API intuitif dan fungsionalitas yang kuat, pengembang dapat dengan mudah mengintegrasikan kemampuan melihat dokumen ke dalam aplikasi mereka, sehingga meningkatkan pengalaman pengguna dan produktivitas.
 ## Prasyarat

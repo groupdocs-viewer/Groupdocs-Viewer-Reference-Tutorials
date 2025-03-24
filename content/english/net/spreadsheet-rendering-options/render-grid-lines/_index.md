@@ -6,6 +6,9 @@ description: Enhance document visualization with GroupDocs.Viewer for .NET. Rend
 weight: 12
 url: /net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Render Grid Lines
+
 ## Introduction
 Welcome to this step-by-step guide on using GroupDocs.Viewer for .NET to render grid lines in your documents. Whether you're a seasoned developer or a newcomer to the .NET framework, this tutorial will walk you through the process with detailed explanations and easy-to-follow examples.
 ## Prerequisites

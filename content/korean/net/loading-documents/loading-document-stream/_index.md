@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 스트림에서 문서를 
 weight: 12
 url: /ko/net/loading-documents/loading-document-stream/
 ---
+
+# 스트림에서 문서 로드
+
 ## 소개
 .NET 개발 영역에서는 문서를 효율적으로 관리하고 보는 것이 가장 중요합니다. 고급 도구와 라이브러리의 출현으로 한때 어렵게 보였던 작업이 이제는 단순화되었습니다. 이러한 도구 중에서 .NET용 GroupDocs.Viewer는 다양한 문서 형식을 원활하게 처리할 수 있는 다목적 솔루션으로 돋보입니다. 이 포괄적인 가이드에서는 .NET용 GroupDocs.Viewer를 사용하여 스트림에서 문서를 로드하는 복잡한 과정을 자세히 살펴봅니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼을 통해 GroupDocs.Viewer의 기능을 효과적으로 활용하는 데 필요한 지식을 얻을 수 있습니다.
 ## 전제조건

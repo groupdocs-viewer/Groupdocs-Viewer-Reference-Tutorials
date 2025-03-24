@@ -6,6 +6,9 @@ description: Intégrez GroupDocs.Viewer pour .NET de manière transparente dans 
 weight: 11
 url: /fr/net/rendering-archive-files/render-archive-folder/
 ---
+
+# Dossier d'archive de rendu
+
 ## Introduction
 À l’ère numérique d’aujourd’hui, accéder et visualiser les documents de manière transparente est crucial pour les entreprises comme pour les particuliers. Heureusement, avec les progrès de la technologie, les développeurs disposent désormais d’outils puissants pour intégrer sans effort des fonctionnalités de visualisation de documents dans leurs applications. L'un de ces outils est GroupDocs.Viewer pour .NET, une bibliothèque polyvalente qui permet aux développeurs de restituer différents formats de documents dans leurs applications .NET.
 ## Conditions préalables

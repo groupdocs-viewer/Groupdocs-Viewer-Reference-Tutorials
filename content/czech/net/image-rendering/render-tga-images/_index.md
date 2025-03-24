@@ -6,6 +6,9 @@ description: Naučte se, jak bez námahy vykreslovat obrázky TGA v aplikacích 
 weight: 17
 url: /cs/net/image-rendering/render-tga-images/
 ---
+
+# Vykreslování obrázků TGA
+
 ## Úvod
 V dnešní digitální krajině je schopnost bezproblémového vykreslování různých obrazových formátů nezbytná pro mnoho aplikací. Jedním z takových formátů je TGA (Truevision Graphics Adapter), známý pro své vysoce kvalitní obrázky a široké použití v graficky náročných odvětvích. Pokud jste vývojář .NET a chcete do svých aplikací začlenit vykreslování obrázků TGA, jste na správném místě. V tomto tutoriálu prozkoumáme, jak využít GroupDocs.Viewer pro .NET k snadnému vykreslování obrázků TGA.
 ## Předpoklady

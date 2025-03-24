@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 将 RAR 存档呈现�
 weight: 13
 url: /zh/net/rendering-archive-files/render-rar/
 ---
+
+# 渲染 RAR 档案
+
 ## 介绍
 RAR 存档是一种流行的格式，用于将多个文件和文件夹压缩并存储到单个容器中。将 RAR 存档呈现为各种格式（例如 HTML、JPG、PNG 或 PDF）对于查看或共享这些存档的内容至关重要。在本教程中，我们将探讨如何使用 GroupDocs.Viewer for .NET 呈现 RAR 存档。
 ## 先决条件

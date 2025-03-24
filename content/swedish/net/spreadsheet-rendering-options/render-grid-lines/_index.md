@@ -6,6 +6,9 @@ description: Förbättra dokumentvisualiseringen med GroupDocs.Viewer för .NET.
 weight: 12
 url: /sv/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Gör rutnätslinjer
+
 ## Introduktion
 Välkommen till den här steg-för-steg-guiden om hur du använder GroupDocs.Viewer för .NET för att återge rutnätslinjer i dina dokument. Oavsett om du är en erfaren utvecklare eller en nykomling i .NET-ramverket, kommer den här handledningen att leda dig genom processen med detaljerade förklaringar och lätta att följa exempel.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Descubra como renderizar documentos em JPG/PNG em .NET usando Group
 weight: 10
 url: /pt/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Renderizar documento para JPGPNG
+
 ## Introdução
 
 No mundo do desenvolvimento .NET, o manuseio eficiente de documentos é essencial para diversas aplicações. Esteja você construindo um sistema de gerenciamento de documentos, uma plataforma de comércio eletrônico ou um aplicativo rico em conteúdo, a capacidade de visualizar documentos perfeitamente é crucial. É aqui que entra o GroupDocs.Viewer for .NET, oferecendo uma solução abrangente para renderizar documentos em vários formatos, como JPG e PNG.

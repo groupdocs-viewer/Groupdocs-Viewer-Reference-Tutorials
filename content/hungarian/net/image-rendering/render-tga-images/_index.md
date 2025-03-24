@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet könnyedén TGA-képeket renderelni .NET-
 weight: 17
 url: /hu/net/image-rendering/render-tga-images/
 ---
+
+# Rendereljen TGA képeket
+
 ## Bevezetés
 A mai digitális környezetben a különféle képformátumok zökkenőmentes megjelenítésének képessége számos alkalmazás számára elengedhetetlen. Az egyik ilyen formátum a TGA (Truevision Graphics Adapter), amely kiváló minőségű képeiről és a grafika-intenzív iparágakban elterjedt használatáról ismert. Ha Ön .NET-fejlesztő, aki TGA képmegjelenítést szeretne beépíteni alkalmazásaiba, akkor jó helyen jár. Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan lehet kihasználni a GroupDocs.Viewer for .NET alkalmazást a TGA-képek egyszerű megjelenítéséhez.
 ## Előfeltételek

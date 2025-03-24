@@ -6,6 +6,9 @@ description: Aprenda cómo integrar Groupdocs.Viewer para .NET en sus aplicacion
 weight: 12
 url: /es/net/rendering-options/flip-rotate-pages/
 ---
+
+# Voltear y rotar páginas
+
 ## Introducción
 En este tutorial, profundizaremos en las funcionalidades de Groupdocs.Viewer para .NET, centrándonos específicamente en voltear y rotar páginas. Groupdocs.Viewer para .NET es una poderosa herramienta diseñada para representar documentos en varios formatos dentro de aplicaciones .NET. Ya sea que esté desarrollando un sistema de gestión de documentos o necesite integrar capacidades de visualización de documentos en su software, Groupdocs.Viewer para .NET proporciona una solución eficiente.
 ## Requisitos previos

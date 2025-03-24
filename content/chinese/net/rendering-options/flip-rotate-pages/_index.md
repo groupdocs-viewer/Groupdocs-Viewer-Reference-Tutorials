@@ -6,6 +6,9 @@ description: 了解如何将 Groupdocs.Viewer for .NET 集成到您的应用程�
 weight: 12
 url: /zh/net/rendering-options/flip-rotate-pages/
 ---
+
+# 翻转和旋转页面
+
 ## 介绍
 在本教程中，我们将深入研究 Groupdocs.Viewer for .NET 的功能，特别关注翻转和旋转页面。 Groupdocs.Viewer for .NET 是一个功能强大的工具，旨在在 .NET 应用程序中呈现各种格式的文档。无论您是在开发文档管理系统还是需要将文档查看功能集成到您的软件中，Groupdocs.Viewer for .NET 都能提供高效的解决方案。
 ## 先决条件

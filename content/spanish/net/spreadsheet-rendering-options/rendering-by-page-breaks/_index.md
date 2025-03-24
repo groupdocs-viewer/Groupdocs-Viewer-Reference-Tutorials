@@ -6,6 +6,9 @@ description: Explore el poder de GroupDocs.Viewer para .NET a la hora de represe
 weight: 14
 url: /es/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Representación por saltos de página
+
 ## Introducción
 ¡Bienvenido al tutorial de GroupDocs.Viewer para .NET sobre cómo representar documentos mediante saltos de página! En esta guía paso a paso, exploraremos cómo utilizar las potentes funciones de GroupDocs.Viewer para representar documentos con precisión, centrándonos específicamente en los saltos de página. Ya sea que sea un desarrollador experimentado o recién esté comenzando, este tutorial lo guiará a través del proceso y le brindará una comprensión clara de cada paso.
 ## Requisitos previos

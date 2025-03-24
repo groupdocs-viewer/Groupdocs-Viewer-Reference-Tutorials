@@ -6,6 +6,9 @@ description: Naučte se, jak vyloučit písma z vykreslovaného HTML pomocí Gro
 weight: 10
 url: /cs/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Vyloučit písma z vykresleného HTML
+
 ## Úvod
 GroupDocs.Viewer for .NET je výkonná knihovna pro vykreslování dokumentů, která umožňuje vývojářům zobrazovat více než 50 formátů dokumentů v jejich aplikacích .NET bez nutnosti externích závislostí. V tomto tutoriálu se zaměříme na specifickou funkci GroupDocs.Viewer: vyloučení písem z vykresleného výstupu HTML. 
 ## Předpoklady

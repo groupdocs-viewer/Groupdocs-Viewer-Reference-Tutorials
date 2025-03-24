@@ -7,6 +7,9 @@ weight: 11
 url: /ko/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
 
+# 날짜/시간 형식 및 시간대 오프셋 설정(이메일)
+
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 문서 보기 기능을 .NET 응용 프로그램에 원활하게 통합할 수 있게 해주는 강력한 도구입니다. GroupDocs.Viewer를 사용하면 외부 플러그인이나 뷰어 없이도 PDF, Microsoft Office 문서, 이미지 등을 포함한 다양한 문서 형식을 응용 프로그램 내에서 직접 표시할 수 있습니다. 이 포괄적인 자습서에서는 .NET용 GroupDocs.Viewer를 설정하고 해당 기능을 탐색하며 이를 효과적으로 활용하여 응용 프로그램의 문서 보기 기능을 향상시키는 과정을 안내합니다.
 ## 전제조건

@@ -6,6 +6,9 @@ description: Khám phá hướng dẫn toàn diện về cách tận dụng Grou
 weight: 10
 url: /vi/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Nhận thông tin xem cho tài liệu dự án Microsoft
+
 ## Giới thiệu
 Trong lĩnh vực giải pháp xem và quản lý tài liệu, Groupdocs.Viewer dành cho .NET nổi bật như một công cụ linh hoạt và mạnh mẽ. Cho dù bạn là nhà phát triển đang tìm cách tích hợp khả năng xem tài liệu vào các ứng dụng .NET của mình hay là người đam mê khám phá các chức năng của nó, hướng dẫn này sẽ hướng dẫn bạn quy trình tận dụng Groupdocs.Viewer cho .NET để truy xuất thông tin xem cho các tài liệu Microsoft Project .
 ## Điều kiện tiên quyết

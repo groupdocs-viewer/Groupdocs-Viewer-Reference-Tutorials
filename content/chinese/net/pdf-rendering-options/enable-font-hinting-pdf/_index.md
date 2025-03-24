@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 在 PDF 文档中启�
 weight: 14
 url: /zh/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# 在 PDF 中启用字体提示
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个强大的工具，用于在 .NET 应用程序中查看和操作各种文档格式。无论您使用 PDF、Microsoft Office 文档、图像还是其他格式，GroupDocs.Viewer 都可以提供无缝的解决方案来渲染这些文件并与这些文件交互。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Intégrez GroupDocs.Viewer pour .NET de manière transparente dans 
 weight: 12
 url: /fr/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---
+
+# Intervalle de temps spécifique au rendu du projet (MS Project)
+
 ## Introduction
 Dans le domaine du développement de logiciels, une gestion et un rendu efficaces de divers formats de documents sont primordiaux. Qu'il s'agisse de visualiser ou de manipuler des documents, disposer des bons outils peut améliorer considérablement la productivité et rationaliser les processus. GroupDocs.Viewer pour .NET se distingue comme une solution polyvalente, offrant aux développeurs la possibilité d'intégrer de manière transparente des fonctionnalités de visualisation de documents dans leurs applications .NET.
 ## Conditions préalables

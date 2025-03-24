@@ -6,6 +6,9 @@ description: Pelajari cara menambahkan tanda air ke dokumen dengan lancar menggu
 weight: 10
 url: /id/net/rendering-options/add-watermark/
 ---
+
+# Tambahkan Tanda Air di Dokumen
+
 ## Perkenalan
 Di era digital saat ini, mengelola dan melihat berbagai format dokumen dengan lancar merupakan kebutuhan bagi banyak bisnis dan individu. Untungnya, dengan alat seperti GroupDocs.Viewer untuk .NET, penanganan dokumen menjadi mudah. Pustaka .NET yang kuat ini memungkinkan pengembang dengan mudah mengintegrasikan fungsionalitas tampilan dokumen ke dalam aplikasi mereka, memungkinkan pengguna untuk melihat dokumen tanpa memerlukan perangkat lunak asli yang membuatnya.
 ## Prasyarat

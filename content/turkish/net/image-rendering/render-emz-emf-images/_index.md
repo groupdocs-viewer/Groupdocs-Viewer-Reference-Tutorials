@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak EMZ ve EMF görüntülerini 
 weight: 14
 url: /tr/net/image-rendering/render-emz-emf-images/
 ---
+
+# EMZ ve EMF Görüntülerini Oluşturun
+
 ## giriiş
 
 GroupDocs.Viewer for .NET, geliştiricilerin .NET uygulamalarında EMZ (Gelişmiş Windows Meta Dosyası) ve EMF (Gelişmiş Meta Dosyası) görüntüleri de dahil olmak üzere çeşitli belge türlerini görüntülemelerine olanak tanıyan güçlü bir belge işleme API'sidir. Bu eğitimde, GroupDocs.Viewer for .NET'i kullanarak EMZ ve EMF görüntülerinin HTML, JPG, PNG ve PDF gibi farklı formatlara nasıl dönüştürüleceğini keşfedeceğiz.

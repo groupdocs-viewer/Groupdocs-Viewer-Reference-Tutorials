@@ -6,6 +6,9 @@ description: Förbättra dina .NET-applikationer med sömlös dokumentvisning me
 weight: 11
 url: /sv/net/advanced-loading/load-documents-encoding/
 ---
+
+# Ladda dokument med specifik kodning
+
 ## Introduktion
 Letar du efter ett kraftfullt verktyg för att sömlöst visa dokument i dina .NET-applikationer? Leta inte längre än till GroupDocs.Viewer för .NET! Detta robusta bibliotek ger utvecklare möjligheten att utan ansträngning visa olika dokumentformat direkt i sina applikationer, vilket ger en intuitiv och användarvänlig visningsupplevelse.
 ## Förutsättningar

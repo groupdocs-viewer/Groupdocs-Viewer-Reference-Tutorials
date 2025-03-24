@@ -7,6 +7,9 @@ weight: 22
 url: /sv/net/advanced-usage-caching/
 ---
 
+# Avancerad användning (cachelagring)
+
+
 ## Introduktion
 
 Inom området för .NET-applikationsutveckling, där effektivitet och hastighet är av största vikt, kan behärskning av avancerade tekniker som cachning förbättra prestandan avsevärt. Välkommen till världen av GroupDocs.Viewer, där du kan utnyttja kraften i cachelagring för att effektivisera dokumentbehandlingen och optimera din applikations prestanda utan ansträngning.

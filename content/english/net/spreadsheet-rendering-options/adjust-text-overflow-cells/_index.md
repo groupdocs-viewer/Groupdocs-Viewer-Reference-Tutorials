@@ -6,6 +6,9 @@ description: Effortlessly manage text overflow in .NET documents with GroupDocs.
 weight: 10
 url: /net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Adjust Text Overflow in Cells
+
 ## Introduction
 In the dynamic world of .NET development, managing text overflow in cells is crucial for creating visually appealing and readable documents. GroupDocs.Viewer for .NET empowers developers with a comprehensive set of tools to seamlessly handle text overflow in spreadsheet documents. This tutorial will guide you through the process of adjusting text overflow in cells using GroupDocs.Viewer for .NET.
 ## Prerequisites

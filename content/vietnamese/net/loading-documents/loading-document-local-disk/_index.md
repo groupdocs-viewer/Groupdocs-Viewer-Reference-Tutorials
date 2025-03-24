@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị liền mạch các tài liệu từ 
 weight: 10
 url: /vi/net/loading-documents/loading-document-local-disk/
 ---
+
+# Tải tài liệu từ đĩa cục bộ
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc hiển thị tài liệu hiệu quả là điều cần thiết cho nhiều ứng dụng khác nhau. Groupdocs.Viewer for .NET cung cấp giải pháp mạnh mẽ để hiển thị tài liệu trực tiếp từ đĩa cục bộ của bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tải tài liệu từ đĩa cục bộ của bạn bằng Groupdocs.Viewer cho .NET. Cho dù bạn là nhà phát triển dày dặn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ giúp bạn tích hợp liền mạch việc hiển thị tài liệu vào các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết

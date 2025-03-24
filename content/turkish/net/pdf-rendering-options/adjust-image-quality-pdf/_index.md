@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak PDF belgelerinde görüntü 
 weight: 10
 url: /tr/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# PDF'de Görüntü Kalitesini Ayarlayın
+
 ## giriiş
 GroupDocs.Viewer for .NET, geliştiricilerin belge işleme yeteneklerini .NET uygulamalarına zahmetsizce entegre etmelerine olanak tanıyan güçlü bir kitaplıktır. Bu kitaplığın en önemli özelliklerinden biri, PDF belgeleri oluşturulurken görüntü kalitesini ayarlama yeteneğidir. Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak görüntü kalitesini adım adım ayarlama sürecinde size yol göstereceğiz.
 ## Önkoşullar

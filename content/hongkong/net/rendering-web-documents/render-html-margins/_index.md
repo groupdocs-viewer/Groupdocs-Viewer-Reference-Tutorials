@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer 在 .NET 中呈現具有自訂�
 weight: 11
 url: /zh-hant/net/rendering-web-documents/render-html-margins/
 ---
+
+# 使用使用者定義的邊距渲染 HTML
+
 ## 介紹
 在 .NET 開發領域，使用使用者定義的邊距呈現 HTML 是建立具有視覺吸引力的文件的重要方面。無論是調整網站的邊距還是配置列印佈局，對邊距的精確控制都可以增強內容的整體呈現效果。在本教程中，我們將深入研究如何利用 GroupDocs.Viewer for .NET 來無縫地實現此功能。
 ## 先決條件

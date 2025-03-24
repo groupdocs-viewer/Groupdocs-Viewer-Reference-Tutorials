@@ -6,6 +6,9 @@ description: Beheer documentbijlagen efficiënt binnen .NET-applicaties met Grou
 weight: 12
 url: /nl/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Documentbijlagen ophalen en opslaan
+
 ## Invoering
 In het digitale tijdperk is efficiënte documentverwerking cruciaal voor zowel bedrijven als particulieren. Of het nu gaat om het beheren van e-mails, het bekijken van contracten of het openen van rapporten: het hebben van een betrouwbare tool voor documentvisualisatie is essentieel. GroupDocs.Viewer voor .NET komt naar voren als een robuuste oplossing, waarmee gebruikers moeiteloos verschillende documentformaten kunnen bekijken en ermee kunnen communiceren, rechtstreeks binnen hun .NET-applicaties.
 ## Vereisten

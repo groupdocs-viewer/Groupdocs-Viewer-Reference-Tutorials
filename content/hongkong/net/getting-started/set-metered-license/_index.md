@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 增強您的 .NET 應用程序，以實現�
 weight: 12
 url: /zh-hant/net/getting-started/set-metered-license/
 ---
+
+# 設定計量許可證
+
 ## 介紹
 在 .NET 開發領域，將強大的文件檢視功能整合到應用程式中對於增強使用者體驗和功能至關重要。 GroupDocs.Viewer for .NET 提供了一個強大的解決方案，可將文件檢視功能無縫整合到您的 .NET 專案中。無論您使用的是 PDF、Microsoft Office 文件還是各種圖像格式，GroupDocs.Viewer 都可以簡化在應用程式中渲染和顯示這些文件的過程。
 ## 先決條件

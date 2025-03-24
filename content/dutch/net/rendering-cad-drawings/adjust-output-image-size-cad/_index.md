@@ -6,6 +6,9 @@ description: Leer hoe u de uitvoerafbeeldingsgrootte voor CAD-tekeningen kunt aa
 weight: 15
 url: /nl/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Pas de uitvoerafbeeldingsgrootte aan voor CAD-tekeningen
+
 ## Invoering
 CAD-tekeningen vereisen vaak specifieke aanpassingen voor een optimale weergave en presentatie. GroupDocs.Viewer voor .NET biedt een krachtige toolset voor het beheren en aanpassen van de uitvoer van CAD-tekeningen. In deze zelfstudie begeleiden we u stap voor stap bij het aanpassen van de uitvoerafbeeldingsgrootte voor CAD-tekeningen.
 ## Vereisten

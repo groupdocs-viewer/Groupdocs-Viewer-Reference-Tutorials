@@ -6,6 +6,9 @@ description: Master rendering MS Project-documenten met GroupDocs.Viewer voor .N
 weight: 11
 url: /nl/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# Notities renderen en tijdseenheden aanpassen (MS Project)
+
 ## Invoering
 GroupDocs.Viewer voor .NET is een krachtige API voor documentweergave waarmee ontwikkelaars verschillende documentformaten binnen hun .NET-applicaties kunnen bekijken en manipuleren. In deze zelfstudie concentreren we ons op het weergeven van notities en het aanpassen van tijdseenheden specifiek voor MS Project-documenten.
 ## Vereisten

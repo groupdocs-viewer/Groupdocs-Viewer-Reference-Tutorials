@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer 轻松替换 .NET 文档中缺�
 weight: 20
 url: /zh/net/rendering-options/replace-missing-font/
 ---
+
+# 替换丢失的字体
+
 ## 介绍
 在 .NET 开发领域，高效的文档处理至关重要。 GroupDocs.Viewer for .NET 提供了一个强大的解决方案，用于在 .NET 应用程序中查看各种文档格式。在本教程中，我们将探讨如何使用 GroupDocs.Viewer for .NET 替换文档中丢失的字体。无论您是处理 PDF、PowerPoint 演示文稿还是 Word 文档，GroupDocs.Viewer 都能简化流程，确保即使在字体缺失的情况下也能准确呈现文档。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Αποδώστε απρόσκοπτα σχέδια CAD σε εφα�
 weight: 13
 url: /el/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Render Layers σε σχέδια CAD
+
 ## Εισαγωγή
 Το GroupDocs.Viewer για .NET είναι ένα ισχυρό εργαλείο που επιτρέπει στους προγραμματιστές να ενσωματώνουν απρόσκοπτα τις δυνατότητες απόδοσης εγγράφων στις εφαρμογές τους .NET. Είτε θέλετε να αποδώσετε σχέδια CAD, PDF, έγγραφα του Microsoft Office ή περισσότερα, το GroupDocs.Viewer παρέχει μια ολοκληρωμένη λύση.
 ## Προαπαιτούμενα

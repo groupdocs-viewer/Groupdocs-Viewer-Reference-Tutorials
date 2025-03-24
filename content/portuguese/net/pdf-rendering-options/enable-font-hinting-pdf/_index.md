@@ -6,6 +6,9 @@ description: Aprenda como ativar dicas de fonte em documentos PDF usando GroupDo
 weight: 14
 url: /pt/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Habilitar dicas de fonte em PDF
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma ferramenta poderosa para visualizar e manipular vários formatos de documentos em aplicativos .NET. Esteja você trabalhando com PDFs, documentos do Microsoft Office, imagens ou outros formatos, o GroupDocs.Viewer oferece uma solução perfeita para renderizar e interagir com esses arquivos.
 ## Pré-requisitos

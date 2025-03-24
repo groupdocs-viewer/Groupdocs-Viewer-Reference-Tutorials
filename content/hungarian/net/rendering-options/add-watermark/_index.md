@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan adhat zökkenőmentesen vízjeleket a dokumentu
 weight: 10
 url: /hu/net/rendering-options/add-watermark/
 ---
+
+# Vízjel hozzáadása a dokumentumhoz
+
 ## Bevezetés
 A mai digitális korban a különféle dokumentumformátumok zökkenőmentes kezelése és megtekintése sok vállalkozás és magánszemély számára egyaránt elengedhetetlen. Szerencsére az olyan eszközökkel, mint a GroupDocs.Viewer for .NET, a dokumentumok kezelése gyerekjáték lesz. Ez a nagy teljesítményű .NET-könyvtár lehetővé teszi a fejlesztők számára, hogy a dokumentummegtekintési funkciókat könnyedén integrálják alkalmazásaikba, így a felhasználók anélkül tekinthetik meg a dokumentumokat, hogy szükségük lenne az azokat létrehozó eredeti szoftverre.
 ## Előfeltételek

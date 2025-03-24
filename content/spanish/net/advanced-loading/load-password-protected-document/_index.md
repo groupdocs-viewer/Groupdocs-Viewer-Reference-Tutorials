@@ -6,6 +6,9 @@ description: Integre sin esfuerzo la visualización de documentos protegidos con
 weight: 12
 url: /es/net/advanced-loading/load-password-protected-document/
 ---
+
+# Cargar documentos protegidos con contraseña
+
 ## Introducción
 En la era digital actual, gestionar y visualizar varios formatos de documentos sin problemas es una necesidad tanto para muchas empresas como para particulares. Afortunadamente, GroupDocs.Viewer para .NET proporciona una solución integral para que los desarrolladores de .NET integren sin esfuerzo capacidades de visualización de documentos en sus aplicaciones. En este tutorial, profundizaremos en una de las funcionalidades esenciales de GroupDocs.Viewer: cargar documentos protegidos con contraseña. Desglosaremos el proceso paso a paso, asegurando que los desarrolladores puedan seguir e implementar fácilmente esta característica en sus proyectos.
 ## Requisitos previos

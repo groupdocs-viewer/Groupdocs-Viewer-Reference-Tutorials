@@ -6,6 +6,9 @@ description: GroupDocs.Viewer を使用して .NET アプリケーションで�
 weight: 13
 url: /ja/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# 表示用にテキストをオーバーレイしてレンダリングする
+
 ## 導入
 .NET 開発の領域では、さまざまなドキュメント形式をシームレスに管理および表示することが、多くのアプリケーションにとって重要です。 GroupDocs.Viewer for .NET は、.NET アプリケーション内でドキュメントを簡単にレンダリングするための強力なソリューションとして登場します。 PDF、Word 文書、Excel スプレッドシート、PowerPoint プレゼンテーションのいずれであっても、GroupDocs.Viewer はプロセスを簡素化し、文書表示を強化するための一連の機能を提供します。
 ## 前提条件

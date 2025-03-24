@@ -6,6 +6,9 @@ description: Leer hoe u het aantal weergegeven items in Outlook-gegevensbestande
 weight: 12
 url: /nl/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---
+
+# Beperk het aantal items dat moet worden weergegeven in Outlook-gegevensbestanden
+
 ## Invoering
 Groupdocs.Viewer voor .NET is een krachtig hulpmiddel voor ontwikkelaars die de weergavemogelijkheden van documenten naadloos in hun .NET-toepassingen willen integreren. Of u nu PDF's, Microsoft Office-documenten of Outlook-gegevensbestanden binnen uw applicatie wilt weergeven, Groupdocs.Viewer biedt een robuuste oplossing. In deze zelfstudie gaan we in op hoe u het aantal items kunt beperken dat specifiek in Outlook-gegevensbestanden wordt weergegeven, met behulp van stapsgewijze instructies.
 ## Vereisten

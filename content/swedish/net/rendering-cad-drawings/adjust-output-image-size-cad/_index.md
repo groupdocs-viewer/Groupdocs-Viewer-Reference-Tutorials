@@ -6,6 +6,9 @@ description: Lär dig hur du justerar storleken på utdatabilden för CAD-ritnin
 weight: 15
 url: /sv/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Justera bildstorleken för CAD-ritningar
+
 ## Introduktion
 CAD-ritningar kräver ofta specifika justeringar för optimal visning och presentation. GroupDocs.Viewer för .NET tillhandahåller en kraftfull verktygsuppsättning för att hantera och anpassa CAD-ritningar. I den här handledningen kommer vi att guida dig genom processen att justera utdatabildstorleken för CAD-ritningar steg för steg.
 ## Förutsättningar

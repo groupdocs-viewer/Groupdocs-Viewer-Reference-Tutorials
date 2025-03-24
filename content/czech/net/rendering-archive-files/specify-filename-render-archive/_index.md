@@ -6,6 +6,9 @@ description: Naučte se vykreslovat archivní soubory v .NET pomocí GroupDocs.V
 weight: 14
 url: /cs/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Při vykreslování archivních souborů zadejte název souboru
+
 ## Úvod
 oblasti vývoje .NET GroupDocs.Viewer vyniká jako všestranný nástroj pro vykreslování dokumentů různých formátů. Díky svým robustním funkcím a flexibilitě zjednodušuje proces prohlížení souborů, včetně archivních souborů. V tomto tutoriálu se ponoříme do specifik vykreslování archivních souborů pomocí GroupDocs.Viewer pro .NET. Podle těchto podrobných pokynů se naučíte, jak zadat název souboru při vykreslování archivních souborů, což umožní bezproblémovou správu dokumentů ve vašich aplikacích .NET.
 ## Předpoklady

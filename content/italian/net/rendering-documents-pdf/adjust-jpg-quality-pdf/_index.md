@@ -6,6 +6,9 @@ description: Scopri come regolare la qualità dell'immagine JPG nei documenti PD
 weight: 11
 url: /it/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Regola la qualità dell'immagine JPG nel PDF renderizzato
+
 ## introduzione
 In questo tutorial impareremo come regolare la qualità delle immagini JPG durante il rendering di un PDF utilizzando GroupDocs.Viewer per .NET. Questa potente libreria ti consente di visualizzare e manipolare senza problemi vari formati di documenti nelle tue applicazioni .NET.
 ## Prerequisiti

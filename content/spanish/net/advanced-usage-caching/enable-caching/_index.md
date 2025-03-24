@@ -6,6 +6,9 @@ description: Mejore la velocidad de procesamiento de documentos en aplicaciones 
 weight: 10
 url: /es/net/advanced-usage-caching/enable-caching/
 ---
+
+# Habilite el almacenamiento en caché para un procesamiento de documentos más rápido
+
 ## Introducción
 En el ámbito del procesamiento de documentos .NET, optimizar el rendimiento es primordial. Imagine un escenario en el que necesita renderizar varias páginas de un documento rápidamente. Aquí es donde entra en juego el almacenamiento en caché. En este tutorial, profundizaremos en cómo aprovechar el almacenamiento en caché para mejorar la velocidad de procesamiento de documentos usando GroupDocs.Viewer para .NET.
 ## Requisitos previos

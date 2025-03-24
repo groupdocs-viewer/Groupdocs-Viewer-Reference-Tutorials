@@ -6,6 +6,9 @@ description: Mejore la visualización de documentos con GroupDocs.Viewer para .N
 weight: 12
 url: /es/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Renderizar líneas de cuadrícula
+
 ## Introducción
 Bienvenido a esta guía paso a paso sobre el uso de GroupDocs.Viewer para .NET para representar líneas de cuadrícula en sus documentos. Ya sea que sea un desarrollador experimentado o un recién llegado al marco .NET, este tutorial lo guiará a través del proceso con explicaciones detalladas y ejemplos fáciles de seguir.
 ## Requisitos previos

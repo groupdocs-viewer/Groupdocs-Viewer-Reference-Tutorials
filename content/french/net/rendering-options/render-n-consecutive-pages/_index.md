@@ -6,6 +6,9 @@ description: Découvrez comment intégrer GroupDocs.Viewer pour .NET dans vos ap
 weight: 16
 url: /fr/net/rendering-options/render-n-consecutive-pages/
 ---
+
+# Rendre N pages consécutives
+
 ## Introduction
 Dans le domaine du développement .NET, l'intégration de fonctionnalités de visualisation de documents dans vos applications peut considérablement améliorer l'expérience utilisateur et les fonctionnalités. L'un de ces outils qui facilite le rendu transparent des documents est GroupDocs.Viewer pour .NET. Cette puissante bibliothèque permet aux développeurs d’afficher sans effort différents formats de documents dans leurs applications.
 ## Conditions préalables

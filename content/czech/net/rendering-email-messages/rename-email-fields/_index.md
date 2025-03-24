@@ -6,6 +6,9 @@ description: Vylepšete prohlížení dokumentů pomocí GroupDocs.Viewer pro .N
 weight: 12
 url: /cs/net/rendering-email-messages/rename-email-fields/
 ---
+
+# Přejmenujte pole e-mailu během vykreslování
+
 ## Úvod
 
 dnešní digitální době je efektivní správa a prohlížení dokumentů prvořadé pro firmy i jednotlivce. Ať už se jedná o smlouvy, sestavy nebo e-maily, možnost bezproblémového procházení těmito dokumenty může výrazně zvýšit produktivitu. Zde vstupuje do hry GroupDocs.Viewer for .NET. Tato výkonná knihovna umožňuje vývojářům integrovat možnosti prohlížení dokumentů přímo do jejich aplikací .NET a nabízí širokou škálu funkcí pro vykreslování různých formátů dokumentů.

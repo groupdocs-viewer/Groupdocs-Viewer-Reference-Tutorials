@@ -6,6 +6,9 @@ description: Aprenda a representar HTML con márgenes personalizados en .NET usa
 weight: 11
 url: /es/net/rendering-web-documents/render-html-margins/
 ---
+
+# Renderizar HTML con márgenes definidos por el usuario
+
 ## Introducción
 En el ámbito del desarrollo .NET, representar HTML con márgenes definidos por el usuario es un aspecto crucial para crear documentos visualmente atractivos. Ya sea ajustando los márgenes de un sitio web o configurando diseños de impresión, el control preciso de los márgenes mejora la presentación general del contenido. En este tutorial, profundizaremos en la utilización de GroupDocs.Viewer para .NET para lograr esta funcionalidad sin problemas.
 ## Requisitos previos

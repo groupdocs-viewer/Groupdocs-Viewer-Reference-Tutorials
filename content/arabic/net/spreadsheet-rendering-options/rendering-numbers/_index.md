@@ -6,6 +6,9 @@ description: اكتشف قوة Groupdocs.Viewer لـ .NET في عرض ملفات
 weight: 15
 url: /ar/net/spreadsheet-rendering-options/rendering-numbers/
 ---
+
+# أرقام التقديم
+
 ## مقدمة
 مرحبًا بك في هذا البرنامج التعليمي خطوة بخطوة حول عرض ملفات Numbers باستخدام Groupdocs.Viewer لـ .NET. سواء كنت مطورًا متمرسًا أو مبتدئًا، سيرشدك هذا الدليل خلال عملية تحويل مستندات Numbers إلى تنسيقات مختلفة. يعد Groupdocs.Viewer for .NET أداة قوية تسمح لك بدمج إمكانيات عرض المستندات في تطبيقات .NET الخاصة بك بسلاسة.
 ## المتطلبات الأساسية

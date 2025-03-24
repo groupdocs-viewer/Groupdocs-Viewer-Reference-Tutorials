@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 将 EMZ 和 EMF 图像
 weight: 14
 url: /zh/net/image-rendering/render-emz-emf-images/
 ---
+
+# 渲染 EMZ 和 EMF 图像
+
 ## 介绍
 
 GroupDocs.Viewer for .NET 是一个功能强大的文档呈现 API，允许开发人员在其 .NET 应用程序中显示各种文档类型，包括 EMZ（增强型 Windows 图元文件）和 EMF（增强型图元文件）图像。在本教程中，我们将探索如何使用 GroupDocs.Viewer for .NET 将 EMZ 和 EMF 图像渲染为不同的格式，例如 HTML、JPG、PNG 和 PDF。

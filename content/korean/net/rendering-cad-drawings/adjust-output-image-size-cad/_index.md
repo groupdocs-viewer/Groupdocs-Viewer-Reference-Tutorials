@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 CAD 도면의 출력 이�
 weight: 15
 url: /ko/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# CAD 도면의 출력 이미지 크기 조정
+
 ## 소개
 CAD 도면은 최적의 보기 및 프리젠테이션을 위해 특정 조정이 필요한 경우가 많습니다. .NET용 GroupDocs.Viewer는 CAD 도면 출력을 관리하고 사용자 정의할 수 있는 강력한 도구 세트를 제공합니다. 이 튜토리얼에서는 CAD 도면의 출력 이미지 크기를 조정하는 과정을 단계별로 안내합니다.
 ## 전제조건

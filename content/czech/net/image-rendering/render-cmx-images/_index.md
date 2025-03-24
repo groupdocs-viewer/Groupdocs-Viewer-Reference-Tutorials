@@ -6,6 +6,9 @@ description: Naučte se, jak bez námahy vykreslovat obrázky CMX do různých f
 weight: 13
 url: /cs/net/image-rendering/render-cmx-images/
 ---
+
+# Vykreslování CMX obrázků
+
 ## Úvod
 V oblasti správy a manipulace s dokumenty je klíčovým úkolem vykreslování obrázků z různých formátů. GroupDocs.Viewer for .NET zjednodušuje tento proces tím, že poskytuje komplexní funkce pro vykreslování CMX obrázků do různých formátů, jako jsou HTML, JPG, PNG a PDF. Tento tutoriál vás provede procesem vykreslování obrázků CMX krok za krokem pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady

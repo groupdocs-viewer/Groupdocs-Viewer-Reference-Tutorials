@@ -6,6 +6,9 @@ description: Explore a magia do GroupDocs.Viewer for .NET – integre perfeitame
 weight: 11
 url: /pt/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Obtenha nomes de planilhas
+
 ## Introdução
 Bem-vindo ao fascinante mundo do GroupDocs.Viewer for .NET! Se você é um desenvolvedor ou entusiasta interessado em explorar recursos poderosos de visualização de documentos em seus aplicativos .NET, você terá uma surpresa. Neste guia abrangente, nos aprofundaremos nas complexidades da recuperação de nomes de planilhas usando GroupDocs.Viewer. Então, aperte o cinto e vamos embarcar nessa emocionante jornada!
 ## Pré-requisitos

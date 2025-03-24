@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan állíthat be könnyedén képméret-korlátoka
 weight: 21
 url: /hu/net/rendering-options/set-image-size-limits/
 ---
+
+# Állítsa be a képméret-korlátokat
+
 ## Bevezetés
 GroupDocs.Viewer for .NET egy hatékony eszköz, amely megkönnyíti a .NET-alkalmazásokon belüli dokumentumok zökkenőmentes megtekintését. Robusztus funkcióinak és intuitív kezelőfelületének köszönhetően a fejlesztők könnyedén integrálhatják projektjeikbe a dokumentummegtekintési lehetőségeket, javítva a felhasználói élményt és a termelékenységet. Ebben az oktatóanyagban megvizsgáljuk, hogyan állíthatunk be képméret-korlátokat a GroupDocs.Viewer for .NET segítségével, így biztosítva a dokumentumok optimális megjelenítését a teljesítmény és a hatékonyság megőrzése mellett.
 ## Előfeltételek

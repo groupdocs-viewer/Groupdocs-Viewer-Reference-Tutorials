@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak PDF'lerde karakter gruplamas
 weight: 11
 url: /tr/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# PDF'de Karakter Gruplamasını Devre Dışı Bırak
+
 ## giriiş
 .NET geliştirme dünyasında, özellikle PDF gibi formatlarla çalışırken belge görüntülemeyi yönetmek bazen zorlayıcı olabilir. Ancak doğru araçlar ve bilgiyle bu süreci verimli bir şekilde kolaylaştırabilirsiniz. Kurtarmaya gelen araçlardan biri de GroupDocs.Viewer for .NET'tir. Bu güçlü kitaplık, geliştiricilerin .NET uygulamalarında çeşitli belge türlerini sorunsuz bir şekilde oluşturmasına ve görüntülemesine olanak tanır.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Tìm hiểu cách điều chỉnh kích thước hình ảnh đầu
 weight: 15
 url: /vi/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD
+
 ## Giới thiệu
 Bản vẽ CAD thường yêu cầu điều chỉnh cụ thể để xem và trình bày tối ưu. GroupDocs.Viewer for .NET cung cấp bộ công cụ mạnh mẽ để quản lý và tùy chỉnh đầu ra bản vẽ CAD. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước quy trình điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD.
 ## Điều kiện tiên quyết

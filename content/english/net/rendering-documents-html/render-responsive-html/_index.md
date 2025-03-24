@@ -6,6 +6,9 @@ description: Learn how to render responsive HTML using Groupdocs.Viewer for .NET
 weight: 13
 url: /net/rendering-documents-html/render-responsive-html/
 ---
+
+# Render Responsive HTML
+
 ## Introduction
 Groupdocs.Viewer for .NET is a powerful library that allows developers to render various document formats into responsive HTML. This tutorial will guide you through the process of rendering responsive HTML using Groupdocs.Viewer for .NET. By the end of this tutorial, you will be able to seamlessly convert documents into HTML that adapts to different screen sizes, ensuring optimal viewing experience across devices.
 ## Prerequisites

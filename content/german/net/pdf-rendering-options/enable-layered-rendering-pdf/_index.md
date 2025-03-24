@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET das Layer-Rend
 weight: 15
 url: /de/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Aktivieren Sie Layer-Rendering in PDF
+
 ## Einführung
 In diesem Tutorial befassen wir uns mit dem Prozess der Aktivierung des Layer-Rendering in PDF-Dokumenten mithilfe von GroupDocs.Viewer für .NET. Das mehrschichtige Rendering ermöglicht eine verbesserte Anzeige und Bearbeitung von Dokumenten und bietet Benutzern ein interaktiveres Anzeigeerlebnis.
 ## Voraussetzungen

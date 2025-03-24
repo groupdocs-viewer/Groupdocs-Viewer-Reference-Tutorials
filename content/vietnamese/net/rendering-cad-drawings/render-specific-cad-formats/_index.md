@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị các định dạng CAD cụ thể n
 weight: 12
 url: /vi/net/rendering-cad-drawings/render-specific-cad-formats/
 ---
+
+# Kết xuất các định dạng CAD cụ thể (CF2)
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị các định dạng CAD cụ thể bằng Groupdocs.Viewer cho .NET. Groupdocs.Viewer là API trình xem tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị hơn 170 loại tài liệu trong ứng dụng của họ mà không yêu cầu bất kỳ cài đặt phần mềm bên ngoài nào. Cụ thể, chúng tôi sẽ tập trung vào việc hiển thị các định dạng CAD như CF2 sang các định dạng đầu ra khác nhau như HTML, JPG, PNG và PDF.
 ## Điều kiện tiên quyết

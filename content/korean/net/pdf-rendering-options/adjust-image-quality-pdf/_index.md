@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 PDF 문서의 이미지 �
 weight: 10
 url: /ko/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# PDF의 이미지 품질 조정
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 문서 렌더링 기능을 .NET 응용 프로그램에 쉽게 통합할 수 있게 해주는 강력한 라이브러리입니다. 이 라이브러리의 주요 기능 중 하나는 PDF 문서를 렌더링할 때 이미지 품질을 조정하는 기능입니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 이미지 품질을 조정하는 과정을 단계별로 안내합니다.
 ## 전제조건

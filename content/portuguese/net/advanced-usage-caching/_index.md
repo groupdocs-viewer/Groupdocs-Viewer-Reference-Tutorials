@@ -7,6 +7,9 @@ weight: 22
 url: /pt/net/advanced-usage-caching/
 ---
 
+# Uso avançado (cache)
+
+
 ## Introdução
 
 No domínio do desenvolvimento de aplicativos .NET, onde eficiência e velocidade são fundamentais, dominar técnicas avançadas como cache pode melhorar significativamente o desempenho. Bem-vindo ao mundo do GroupDocs.Viewer, onde você pode aproveitar o poder do cache para agilizar o processamento de documentos e otimizar o desempenho do seu aplicativo sem esforço.

@@ -6,6 +6,9 @@ description: Verimli belge görüntüleme için Groupdocs.Viewer for .NET'i .NET
 weight: 11
 url: /tr/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# İptal Jetonuyla İşlemeyi İptal Et
+
 ## giriiş
 Groupdocs.Viewer for .NET, .NET uygulamalarında belge görüntülemeyi ve işlemeyi basitleştirmek için tasarlanmış güçlü bir araçtır. İster PDF'lerle, Microsoft Office belgeleriyle, ister diğer yaygın formatlarla çalışıyor olun, bu kitaplık, belge görüntüleme yeteneklerini .NET projelerinize sorunsuz bir şekilde entegre etmek için güçlü işlevsellik sunar.
 ## Önkoşullar

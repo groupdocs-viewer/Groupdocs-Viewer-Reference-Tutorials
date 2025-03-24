@@ -6,6 +6,9 @@ description: 원활한 렌더링을 위해 GroupDocs.Viewer를 사용하여 .NET
 weight: 12
 url: /ko/net/rendering-documents-html/render-html-resources/
 ---
+
+# 내장 또는 외부 리소스를 사용하여 렌더링
+
 ## 소개
 
 .NET 개발 세계에서 효율적인 문서 보기는 많은 응용 프로그램의 중요한 측면입니다. .NET용 GroupDocs.Viewer는 포함된 리소스 또는 외부 리소스가 있는 문서를 렌더링하기 위한 강력한 솔루션을 제공합니다. 이 자습서에서는 GroupDocs.Viewer를 활용하여 문서를 원활하게 렌더링하는 방법을 살펴보고 명확성과 이해를 위해 각 단계를 세분화합니다.

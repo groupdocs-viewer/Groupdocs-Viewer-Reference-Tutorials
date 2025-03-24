@@ -6,6 +6,9 @@ description: Ontdek de uitgebreide tutorial over het gebruik van Groupdocs.Viewe
 weight: 10
 url: /nl/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Bekijk informatie voor Microsoft Project-documenten
+
 ## Invoering
 Op het gebied van documentbeheer en weergaveoplossingen onderscheidt Groupdocs.Viewer voor .NET zich als een veelzijdige en robuuste tool. Of u nu een ontwikkelaar bent die de weergavemogelijkheden van documenten wil integreren in uw .NET-toepassingen of een liefhebber bent die graag de functionaliteiten ervan wil verkennen, deze tutorial leidt u door het proces van het gebruik van Groupdocs.Viewer voor .NET om weergave-informatie voor Microsoft Project-documenten op te halen. .
 ## Vereisten

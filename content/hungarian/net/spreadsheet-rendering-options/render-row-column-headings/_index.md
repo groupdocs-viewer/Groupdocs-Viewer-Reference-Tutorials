@@ -6,6 +6,9 @@ description: Javítsa a dokumentumok megtekintését .NET-ben! Ismerje meg a sor
 weight: 18
 url: /hu/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Sorok és oszlopok fejléceinek megjelenítése
+
 ## Bevezetés
 Szeretné javítani a dokumentummegtekintési élményt .NET-alkalmazásokban? A GroupDocs.Viewer for .NET segítségével zökkenőmentesen jelenítheti meg a sorok és oszlopok fejléceit a táblázatfájljaiból. Ebben az oktatóanyagban végigvezetjük a sor- és oszlopfejlécek különböző kimeneti formátumok (például HTML, JPG, PNG és PDF) használatával történő megjelenítésének folyamatán.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer 轻松地将文档查看功能�
 weight: 32
 url: /zh/net/processing-document-attachments/
 --- 
+
+# 处理文档附件
+
 ## 介绍
 
 在 .NET 应用程序开发领域，整合高效的文档查看功能至关重要。借助 GroupDocs.Viewer for .NET，此过程不仅变得精简，而且变得非常直观。本文深入探讨了在 .NET 应用程序中无缝处理文档附件的复杂性。

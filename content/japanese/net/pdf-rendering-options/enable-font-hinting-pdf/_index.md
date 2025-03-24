@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET を使用して PDF ドキュメントで
 weight: 14
 url: /ja/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# PDF でフォントヒントを有効にする
+
 ## 導入
 GroupDocs.Viewer for .NET は、.NET アプリケーション内のさまざまなドキュメント形式を表示および操作するための強力なツールです。 PDF、Microsoft Office ドキュメント、画像、その他の形式で作業している場合でも、GroupDocs.Viewer は、これらのファイルのレンダリングと操作のためのシームレスなソリューションを提供します。
 ## 前提条件

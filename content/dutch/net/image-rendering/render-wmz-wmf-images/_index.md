@@ -6,6 +6,9 @@ description: Geef moeiteloos WMZ- en WMF-afbeeldingen weer in .NET-toepassingen 
 weight: 18
 url: /nl/net/image-rendering/render-wmz-wmf-images/
 ---
+
+# Geef WMZ- en WMF-afbeeldingen weer
+
 ## Invoering
 
 Op het gebied van softwareontwikkeling is een efficiënte verwerking en weergave van verschillende documentformaten van het grootste belang. GroupDocs.Viewer voor .NET is een krachtige tool die de weergave van een breed scala aan documentformaten vergemakkelijkt, waardoor een naadloze integratie en verbeterde gebruikerservaring binnen .NET-toepassingen wordt gegarandeerd. Een van de mogelijkheden is de weergave van WMZ- en WMF-afbeeldingen, een taak die vaak voorkomt in scenario's voor documentverwerking.

@@ -6,6 +6,9 @@ description: Learn how to adjust output image size for CAD drawings using GroupD
 weight: 15
 url: /net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Adjust Output Image Size for CAD Drawings
+
 ## Introduction
 CAD drawings often require specific adjustments for optimal viewing and presentation. GroupDocs.Viewer for .NET provides a powerful toolset to manage and customize CAD drawings output. In this tutorial, we will guide you through the process of adjusting output image size for CAD drawings step by step.
 ## Prerequisites

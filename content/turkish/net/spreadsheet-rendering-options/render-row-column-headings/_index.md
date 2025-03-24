@@ -6,6 +6,9 @@ description: .NET'te belge görüntülemeyi geliştirin! GroupDocs.Viewer for .N
 weight: 18
 url: /tr/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Satır ve Sütun Başlıklarını Oluştur
+
 ## giriiş
 .NET uygulamalarında belge görüntüleme deneyiminizi geliştirmek mi istiyorsunuz? GroupDocs.Viewer for .NET ile elektronik tablo dosyalarınızdaki satır ve sütun başlıklarını sorunsuz bir şekilde oluşturabilirsiniz. Bu eğitimde size HTML, JPG, PNG ve PDF gibi farklı çıktı formatlarını kullanarak satır ve sütun başlıklarını oluşturma sürecinde rehberlik edeceğiz.
 ## Önkoşullar

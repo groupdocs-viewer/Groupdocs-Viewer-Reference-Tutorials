@@ -6,6 +6,9 @@ description: Desbloquee datos ocultos en hojas de cálculo sin esfuerzo utilizan
 weight: 13
 url: /es/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Representar columnas y filas ocultas
+
 ## Introducción
 En el ámbito de la visualización de documentos, GroupDocs.Viewer para .NET se destaca como una herramienta sólida que facilita la representación perfecta de varios formatos de documentos. Una capacidad intrigante es la capacidad de revelar columnas y filas ocultas dentro de las hojas de cálculo. En este tutorial, profundizaremos en los pasos para desbloquear esta función y liberar el potencial de sus datos.
 ## Requisitos previos

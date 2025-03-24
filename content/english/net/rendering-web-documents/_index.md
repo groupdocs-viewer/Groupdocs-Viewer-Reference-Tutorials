@@ -6,6 +6,9 @@ description: Learn how to render CHM files and HTML with custom margins in .NET 
 weight: 35
 url: /net/rendering-web-documents/
 ---
+
+# Rendering Web Documents
+
 ## Introduction
 
 Unravel the intricacies of rendering web documents with GroupDocs.Viewer for .NET through comprehensive tutorials. Rendering CHM files and customizing HTML margins are vital functionalities that can greatly enhance your document processing capabilities.

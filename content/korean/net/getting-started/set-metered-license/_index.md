@@ -6,6 +6,9 @@ description: 원활한 문서 보기를 위해 GroupDocs.Viewer를 사용하여 
 weight: 12
 url: /ko/net/getting-started/set-metered-license/
 ---
+
+# 측정 라이센스 설정
+
 ## 소개
 .NET 개발 세계에서 강력한 문서 보기 기능을 애플리케이션에 통합하는 것은 사용자 경험과 기능을 향상시키는 데 필수적입니다. .NET용 GroupDocs.Viewer는 문서 보기 기능을 .NET 프로젝트에 원활하게 통합하기 위한 강력한 솔루션을 제공합니다. PDF, Microsoft Office 문서 또는 다양한 이미지 형식으로 작업하는 경우 GroupDocs.Viewer는 응용 프로그램 내에서 이러한 문서를 렌더링하고 표시하는 프로세스를 단순화합니다.
 ## 전제조건

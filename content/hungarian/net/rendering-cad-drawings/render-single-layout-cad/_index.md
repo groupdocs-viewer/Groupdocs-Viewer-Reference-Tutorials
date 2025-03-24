@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan jeleníthet meg egyetlen elrendezést CAD-rajzo
 weight: 14
 url: /hu/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# Egyetlen elrendezés renderelése CAD-rajzokban
+
 ## Bevezetés
 .NET fejlesztés területén általános követelmény a CAD-rajzok kezelése és megtekintése. A GroupDocs.Viewer for .NET leegyszerűsíti ezt a feladatot, mivel átfogó megoldást kínál a CAD-rajzok .NET-alkalmazásokon belüli megjelenítésére. Ebben az oktatóanyagban a GroupDocs.Viewer for .NET segítségével egyetlen elrendezés CAD-rajzokban történő megjelenítésével foglalkozunk.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Dowiedz się, jak renderować wybrane strony z dokumentów za pomoc
 weight: 17
 url: /pl/net/rendering-options/render-selected-pages/
 ---
+
+# Renderuj wybrane strony
+
 ## Wstęp
 
 W tym samouczku omówimy, jak wykorzystać Groupdocs.Viewer dla .NET do renderowania wybranych stron z dokumentu. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik krok po kroku z łatwością przeprowadzi Cię przez ten proces.

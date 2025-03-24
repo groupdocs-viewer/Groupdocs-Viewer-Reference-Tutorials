@@ -6,6 +6,9 @@ description: Khám phá khả năng hiển thị liền mạch của các tệp 
 weight: 16
 url: /vi/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
+
+# Hiển thị bảng tính XML
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới GroupDocs.Viewer dành cho .NET! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách hiển thị các tệp XML SpreadSheetML một cách dễ dàng bằng cách sử dụng GroupDocs.Viewer, một thư viện .NET mạnh mẽ. Cho dù bạn là nhà phát triển dày dặn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn từng bước này sẽ giúp bạn dễ dàng tích hợp kết xuất XML SpreadSheetML vào ứng dụng của mình.
 ## Điều kiện tiên quyết

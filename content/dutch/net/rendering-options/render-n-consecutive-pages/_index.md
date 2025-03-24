@@ -6,6 +6,9 @@ description: Leer hoe u GroupDocs.Viewer voor .NET in uw toepassingen kunt integ
 weight: 16
 url: /nl/net/rendering-options/render-n-consecutive-pages/
 ---
+
+# Geef N opeenvolgende pagina's weer
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling kan het integreren van documentweergavemogelijkheden in uw toepassingen de gebruikerservaring en functionaliteit enorm verbeteren. Een voorbeeld van zo'n tool die naadloze documentweergave mogelijk maakt, is GroupDocs.Viewer voor .NET. Deze krachtige bibliotheek stelt ontwikkelaars in staat om moeiteloos verschillende documentformaten in hun applicaties weer te geven.
 ## Vereisten

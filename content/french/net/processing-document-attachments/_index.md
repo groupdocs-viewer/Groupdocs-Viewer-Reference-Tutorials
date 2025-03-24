@@ -6,6 +6,9 @@ description: Découvrez comment intégrer sans effort les fonctionnalités de vi
 weight: 32
 url: /fr/net/processing-document-attachments/
 --- 
+
+# Traitement des pièces jointes aux documents
+
 ## Introduction
 
 Dans le domaine du développement d'applications .NET, l'intégration de fonctionnalités efficaces de visualisation de documents est primordiale. Avec GroupDocs.Viewer pour .NET, ce processus devient non seulement rationalisé mais aussi remarquablement intuitif. Cet article explore les subtilités de la gestion transparente des pièces jointes aux documents au sein de vos applications .NET.

@@ -6,6 +6,9 @@ description: Ontdek hoe u weergavegegevens uit Outlook-gegevensbestanden (PST, O
 weight: 10
 url: /nl/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---
+
+# Bekijk informatie voor Outlook-gegevensbestanden (PST, OST)
+
 ## Invoering
 Op het gebied van documentbeheer en -weergave is GroupDocs.Viewer voor .NET een krachtig hulpmiddel, vooral als het gaat om het omgaan met Outlook-gegevensbestanden (PST, OST). In deze zelfstudie gaan we stap voor stap dieper in op het proces van het extraheren van weergavegegevens voor deze bestanden.
 ## Vereisten

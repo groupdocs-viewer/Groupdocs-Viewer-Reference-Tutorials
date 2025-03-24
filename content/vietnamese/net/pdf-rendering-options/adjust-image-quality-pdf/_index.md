@@ -6,6 +6,9 @@ description: Tìm hiểu cách điều chỉnh chất lượng hình ảnh trong
 weight: 10
 url: /vi/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# Điều chỉnh chất lượng hình ảnh trong PDF
+
 ## Giới thiệu
 GroupDocs.Viewer cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tích hợp khả năng kết xuất tài liệu vào các ứng dụng .NET của họ một cách dễ dàng. Một trong những tính năng chính của thư viện này là khả năng điều chỉnh chất lượng hình ảnh khi hiển thị tài liệu PDF. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước quy trình điều chỉnh chất lượng hình ảnh bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

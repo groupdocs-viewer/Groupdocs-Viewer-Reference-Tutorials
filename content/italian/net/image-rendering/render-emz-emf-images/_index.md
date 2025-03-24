@@ -6,6 +6,9 @@ description: Scopri come eseguire il rendering di immagini EMZ ed EMF in vari fo
 weight: 14
 url: /it/net/image-rendering/render-emz-emf-images/
 ---
+
+# Rendering di immagini EMZ e EMF
+
 ## introduzione
 
 GroupDocs.Viewer per .NET è una potente API per il rendering di documenti che consente agli sviluppatori di visualizzare vari tipi di documenti, tra cui immagini EMZ (Enhanced Windows Metafile) ed EMF (Enhanced Metafile), nelle loro applicazioni .NET. In questo tutorial esploreremo come eseguire il rendering di immagini EMZ ed EMF in diversi formati come HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per .NET.

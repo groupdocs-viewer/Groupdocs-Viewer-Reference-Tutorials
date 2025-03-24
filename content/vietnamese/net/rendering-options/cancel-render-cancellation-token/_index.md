@@ -6,6 +6,9 @@ description: Tích hợp Groupdocs.Viewer cho .NET một cách liền mạch và
 weight: 11
 url: /vi/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# Hủy kết xuất bằng mã thông báo hủy
+
 ## Giới thiệu
 Groupdocs.Viewer for .NET là một công cụ mạnh mẽ được thiết kế để đơn giản hóa việc xem và xử lý tài liệu trong các ứng dụng .NET. Cho dù bạn đang xử lý các tệp PDF, tài liệu Microsoft Office hay các định dạng phổ biến khác, thư viện này đều cung cấp chức năng mạnh mẽ để tích hợp liền mạch khả năng xem tài liệu vào các dự án .NET của bạn.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Pelajari cara merender file CHM di .NET menggunakan GroupDocs.Viewe
 weight: 10
 url: /id/net/rendering-web-documents/render-chm/
 ---
+
+# Render File CHM
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara merender file CHM (Bantuan HTML Terkompilasi) menggunakan GroupDocs.Viewer untuk .NET. GroupDocs.Viewer untuk .NET adalah API rendering dokumen canggih yang memungkinkan pengembang menampilkan lebih dari 170 jenis dokumen dalam aplikasi .NET mereka tanpa memerlukan instalasi perangkat lunak eksternal apa pun.
 

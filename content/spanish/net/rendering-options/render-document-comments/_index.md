@@ -6,6 +6,9 @@ description: Aprenda a representar documentos con comentarios usando GroupDocs.V
 weight: 13
 url: /es/net/rendering-options/render-document-comments/
 ---
+
+# Representar documento con comentarios
+
 ## Introducción
 GroupDocs.Viewer para .NET es una potente biblioteca que permite a los desarrolladores integrar perfectamente capacidades de representación de documentos en sus aplicaciones .NET. Ya sea que necesite mostrar documentos de Word, hojas de cálculo de Excel, presentaciones de PowerPoint, archivos PDF u otros formatos, GroupDocs.Viewer proporciona una solución sencilla.
 En este tutorial, nos centraremos en representar documentos con comentarios utilizando GroupDocs.Viewer para .NET. Lo guiaremos a través de los requisitos previos, la importación de espacios de nombres y le brindaremos una guía paso a paso para representar documentos con comentarios, asegurándonos de que comprenda cada concepto a fondo.

@@ -6,6 +6,9 @@ description: Μάθετε πώς να αποδίδετε εικόνες EMZ κα
 weight: 14
 url: /el/net/image-rendering/render-emz-emf-images/
 ---
+
+# Απόδοση εικόνων EMZ και EMF
+
 ## Εισαγωγή
 
 Το GroupDocs.Viewer για .NET είναι ένα ισχυρό API απόδοσης εγγράφων που επιτρέπει στους προγραμματιστές να εμφανίζουν διάφορους τύπους εγγράφων, συμπεριλαμβανομένων εικόνων EMZ (Enhanced Metafile των Windows) και EMF (Enhanced Metafile), στις εφαρμογές τους .NET. Σε αυτό το σεμινάριο, θα εξερευνήσουμε πώς να αποδίδουμε εικόνες EMZ και EMF σε διαφορετικές μορφές όπως HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET.

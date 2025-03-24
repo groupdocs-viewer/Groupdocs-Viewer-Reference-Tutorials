@@ -6,6 +6,9 @@ description: ¡Mejore la visualización de documentos en .NET! Aprenda a represe
 weight: 18
 url: /es/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Representar encabezados de filas y columnas
+
 ## Introducción
 ¿Está buscando mejorar su experiencia de visualización de documentos en aplicaciones .NET? Con GroupDocs.Viewer para .NET, puede representar sin problemas encabezados de filas y columnas desde sus archivos de hoja de cálculo. En este tutorial, lo guiaremos a través del proceso de renderizar encabezados de filas y columnas usando diferentes formatos de salida como HTML, JPG, PNG y PDF.
 ## Requisitos previos

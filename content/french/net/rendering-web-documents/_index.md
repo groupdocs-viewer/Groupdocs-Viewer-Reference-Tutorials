@@ -6,6 +6,9 @@ description: Découvrez comment restituer des fichiers CHM et HTML avec des marg
 weight: 35
 url: /fr/net/rendering-web-documents/
 ---
+
+# Rendu de documents Web
+
 ## Introduction
 
 Découvrez les subtilités du rendu de documents Web avec GroupDocs.Viewer pour .NET grâce à des didacticiels complets. Le rendu des fichiers CHM et la personnalisation des marges HTML sont des fonctionnalités essentielles qui peuvent grandement améliorer vos capacités de traitement de documents.

@@ -6,6 +6,9 @@ description: Lås upp sömlösa dokumentvisningsmöjligheter i ditt .NET med Gro
 weight: 12
 url: /sv/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Inaktivera teckensnittslicensverifieringar i PDF
+
 ## Introduktion
 När det gäller .NET-utveckling är hantering och manipulering av dokument ofta en avgörande aspekt av många applikationer. Oavsett om det handlar om att visa PDF-filer, Word-dokument eller andra filtyper är det viktigt att ha robusta verktyg för att hantera dessa uppgifter effektivt. Det är här GroupDocs.Viewer för .NET kommer in i bilden. Detta kraftfulla bibliotek ger utvecklare möjlighet att sömlöst integrera dokumentvisningsfunktioner i sina .NET-applikationer.
 ## Förutsättningar

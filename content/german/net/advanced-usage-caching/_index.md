@@ -7,6 +7,9 @@ weight: 22
 url: /de/net/advanced-usage-caching/
 ---
 
+# Erweiterte Nutzung (Caching)
+
+
 ## Einführung
 
 Im Bereich der .NET-Anwendungsentwicklung, wo Effizienz und Geschwindigkeit an erster Stelle stehen, kann die Beherrschung fortschrittlicher Techniken wie Caching die Leistung erheblich steigern. Willkommen in der Welt von GroupDocs.Viewer, wo Sie die Leistungsfähigkeit des Caching nutzen können, um die Dokumentenverarbeitung zu rationalisieren und die Leistung Ihrer Anwendung mühelos zu optimieren.

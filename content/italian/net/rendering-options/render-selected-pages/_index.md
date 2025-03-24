@@ -6,6 +6,9 @@ description: Scopri come eseguire il rendering delle pagine selezionate dai docu
 weight: 17
 url: /it/net/rendering-options/render-selected-pages/
 ---
+
+# Rendering delle pagine selezionate
+
 ## introduzione
 
 In questo tutorial, approfondiremo come utilizzare Groupdocs.Viewer per .NET per eseguire il rendering delle pagine selezionate da un documento. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida passo passo ti guiderà attraverso il processo con facilità.

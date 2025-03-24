@@ -6,6 +6,9 @@ description: Naučte se, jak plynule přidávat vodoznaky do dokumentů pomocí 
 weight: 10
 url: /cs/net/rendering-options/add-watermark/
 ---
+
+# Přidat vodoznak do dokumentu
+
 ## Úvod
 V dnešní digitální době je bezproblémová správa a prohlížení různých formátů dokumentů nutností pro mnoho firem i jednotlivců. Naštěstí s nástroji jako GroupDocs.Viewer pro .NET se manipulace s dokumenty stává hračkou. Tato výkonná knihovna .NET umožňuje vývojářům bez námahy integrovat funkci prohlížení dokumentů do svých aplikací, což uživatelům umožňuje prohlížet dokumenty, aniž by potřebovali původní software, který je vytvořil.
 ## Předpoklady

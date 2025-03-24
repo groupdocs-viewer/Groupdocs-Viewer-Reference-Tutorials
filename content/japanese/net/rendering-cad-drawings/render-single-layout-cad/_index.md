@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET を使用して CAD 図面で単一のレ
 weight: 14
 url: /ja/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# CAD 図面での単一レイアウトのレンダリング
+
 ## 導入
 .NET 開発の領域では、CAD 図面の処理と表示が一般的な要件です。 GroupDocs.Viewer for .NET は、.NET アプリケーション内で CAD 図面をレンダリングするための包括的なソリューションを提供することで、このタスクを簡素化します。このチュートリアルでは、GroupDocs.Viewer for .NET を使用して CAD 図面内の単一レイアウトをレンダリングする方法について詳しく説明します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'te kaynak yükleme zaman aşımlarını v
 weight: 13
 url: /tr/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Kaynak Yükleme Zaman Aşımını Ayarlama (Gelişmiş)
+
 ## giriiş
 .NET geliştirme alanında GroupDocs.Viewer, belgeleri ve görüntüleri hassas ve verimli bir şekilde işlemek için güçlü bir araç seti sağlar. Yeteneklerinden yararlanmak, kaynak yükleme zaman aşımlarını ayarlamak da dahil olmak üzere karmaşıklıklarını anlamayı gerektirir. Bu öğreticide, GroupDocs.Viewer for .NET'te kaynak yükleme zaman aşımlarını yapılandırma sürecini ayrıntılı olarak ele alacağız.
 ## Önkoşullar

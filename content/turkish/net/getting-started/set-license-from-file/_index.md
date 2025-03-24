@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i uygulamalarınıza zahmetsizce nasıl e
 weight: 10
 url: /tr/net/getting-started/set-license-from-file/
 ---
+
+# Lisansı Dosyadan Ayarla
+
 ## giriiş
 GroupDocs.Viewer for .NET, .NET geliştiricilerinin belge görüntüleme yeteneklerini uygulamalarına sorunsuz bir şekilde entegre etmelerini sağlayan güçlü bir belge görüntüleme API'sidir. Belgeleri PDF, Microsoft Office veya görseller gibi çeşitli formatlarda görüntülemeniz gerekiyorsa GroupDocs.Viewer kapsamlı özelleştirme seçenekleriyle güvenilir bir çözüm sunar.
 ## Önkoşullar

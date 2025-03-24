@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Textkoordinate
 weight: 12
 url: /de/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# Erhalten Sie Textkoordinaten für die Bildwiedergabe
+
 ## Einführung
 GroupDocs.Viewer für .NET ist eine leistungsstarke API zum Rendern von Dokumenten, die Entwicklern das nahtlose Rendern von Dokumenten in verschiedenen Formaten wie PDF, Microsoft Office und vielen mehr ermöglicht. Eine seiner Hauptfunktionen ist die Möglichkeit, Textkoordinaten für eine präzise Bildwiedergabe zu extrahieren.
 ## Voraussetzungen

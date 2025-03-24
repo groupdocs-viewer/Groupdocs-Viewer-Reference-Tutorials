@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET を使用すると、.NET でのシーム
 weight: 12
 url: /ja/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# PDF でのフォント ライセンス検証を無効にする
+
 ## 導入
 .NET 開発の領域では、多くのアプリケーションにとってドキュメントの管理と操作が重要な側面となります。 PDF、Word ドキュメント、その他の種類のファイルを表示する場合でも、これらのタスクを効率的に処理する強力なツールが不可欠です。ここで、GroupDocs.Viewer for .NET が活躍します。この強力なライブラリは、開発者にドキュメント表示機能を .NET アプリケーションにシームレスに統合する機能を提供します。
 ## 前提条件

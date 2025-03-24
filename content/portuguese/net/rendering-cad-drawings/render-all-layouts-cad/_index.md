@@ -6,6 +6,9 @@ description: Aprenda como renderizar todos os layouts em desenhos CAD usando Gro
 weight: 11
 url: /pt/net/rendering-cad-drawings/render-all-layouts-cad/
 ---
+
+# Renderizar todos os layouts em desenhos CAD
+
 ## Introdução
 No domínio do gerenciamento e visualização de documentos, o GroupDocs.Viewer for .NET se destaca como uma solução versátil, capacitando os desenvolvedores a renderizar sem esforço vários tipos de documentos em seus aplicativos .NET. Entre suas inúmeras capacidades está a capacidade de renderizar desenhos CAD com eficiência, incluindo os layouts complexos que eles envolvem. Neste tutorial, nos aprofundaremos no processo de aproveitamento do GroupDocs.Viewer for .NET para renderizar todos os layouts presentes em desenhos CAD. 
 ## Pré-requisitos

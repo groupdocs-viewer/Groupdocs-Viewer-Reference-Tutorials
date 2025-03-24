@@ -6,6 +6,9 @@ description: Lär dig hur du inaktiverar teckengruppering i PDF-filer med GroupD
 weight: 11
 url: /sv/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Inaktivera teckengruppering i PDF
+
 ## Introduktion
 en värld av .NET-utveckling kan det ibland vara en utmaning att hantera dokumentvisning, särskilt när man hanterar format som PDF-filer. Men med rätt verktyg och kunskap kan du effektivisera denna process effektivt. Ett sådant verktyg som kommer till undsättning är GroupDocs.Viewer för .NET. Detta kraftfulla bibliotek ger utvecklare möjlighet att sömlöst rendera och visa olika dokumenttyper i sina .NET-applikationer.
 ## Förutsättningar

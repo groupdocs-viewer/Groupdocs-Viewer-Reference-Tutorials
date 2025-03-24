@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 在 .NET 應用程式中無縫呈現文檔�
 weight: 13
 url: /zh-hant/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# 渲染並疊加文字以進行顯示
+
 ## 介紹
 在 .NET 開發領域，無縫管理和顯示各種文件格式對於許多應用程式至關重要。 GroupDocs.Viewer for .NET 作為一個強大的解決方案出現，可以輕鬆地在 .NET 應用程式中呈現文件。無論是 PDF、Word 文件、Excel 電子表格或 PowerPoint 簡報，GroupDocs.Viewer 都能簡化流程，提供一系列增強文件檢視功能。
 ## 先決條件

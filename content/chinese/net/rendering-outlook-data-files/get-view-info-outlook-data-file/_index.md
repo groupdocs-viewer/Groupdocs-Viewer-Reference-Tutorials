@@ -6,6 +6,9 @@ description: 探索如何使用 GroupDocs.Viewer for .NET 从 Outlook 数据文�
 weight: 10
 url: /zh/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---
+
+# 获取 Outlook 数据文件（PST、OST）的查看信息
+
 ## 介绍
 在文档管理和查看领域，GroupDocs.Viewer for .NET 是一个强大的工具，特别是在处理 Outlook 数据文件（PST、OST）时。在本教程中，我们将逐步深入研究提取这些文件的视图信息的过程。
 ## 先决条件

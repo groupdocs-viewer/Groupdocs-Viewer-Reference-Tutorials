@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET をアプリケーションにシーム�
 weight: 13
 url: /ja/net/loading-documents/loading-document-ftp/
 ---
+
+# FTP からドキュメントをロードする (上級)
+
 ## 導入
 GroupDocs.Viewer for .NET は、開発者がドキュメント表示機能を .NET アプリケーションにシームレスに統合できるようにする強力な API です。 PDF、Microsoft Office ドキュメント、またはその他の一般的なファイル形式を使用しているかどうかに関係なく、GroupDocs.Viewer は表示用にドキュメントをレンダリングするプロセスを簡素化し、ユーザーに豊かな表示エクスペリエンスを提供することをこれまでより簡単にします。
 ## 前提条件

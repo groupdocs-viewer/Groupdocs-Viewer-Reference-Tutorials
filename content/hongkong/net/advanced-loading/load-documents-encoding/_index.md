@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer for .NET 透過無縫文件檢視來增強�
 weight: 11
 url: /zh-hant/net/advanced-loading/load-documents-encoding/
 ---
+
+# 載入具有特定編碼的文檔
+
 ## 介紹
 您是否正在尋找一個強大的工具來無縫查看 .NET 應用程式中的文件？ .NET 的 GroupDocs.Viewer 就是您的最佳選擇！這個強大的程式庫使開發人員能夠直接在其應用程式中輕鬆顯示各種文件格式，從而提供直覺且用戶友好的檢視體驗。
 ## 先決條件

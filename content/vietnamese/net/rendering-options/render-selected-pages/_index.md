@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị các trang đã chọn từ tài li�
 weight: 17
 url: /vi/net/rendering-options/render-selected-pages/
 ---
+
+# Hiển thị các trang đã chọn
+
 ## Giới thiệu
 
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sử dụng Groupdocs.Viewer cho .NET để hiển thị các trang đã chọn từ một tài liệu. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ hướng dẫn bạn thực hiện quy trình một cách dễ dàng.

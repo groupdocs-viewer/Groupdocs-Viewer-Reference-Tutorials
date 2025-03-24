@@ -6,6 +6,9 @@ description: Tìm hiểu cách tích hợp Groupdocs.Viewer dành cho .NET vào 
 weight: 12
 url: /vi/net/rendering-options/flip-rotate-pages/
 ---
+
+# Lật và xoay trang
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào các chức năng của Groupdocs.Viewer dành cho .NET, đặc biệt tập trung vào việc lật và xoay các trang. Groupdocs.Viewer cho .NET là một công cụ mạnh mẽ được thiết kế để hiển thị tài liệu ở nhiều định dạng khác nhau trong các ứng dụng .NET. Cho dù bạn đang phát triển hệ thống quản lý tài liệu hay cần tích hợp khả năng xem tài liệu vào phần mềm của mình, Groupdocs.Viewer for .NET đều cung cấp giải pháp hiệu quả.
 ## Điều kiện tiên quyết

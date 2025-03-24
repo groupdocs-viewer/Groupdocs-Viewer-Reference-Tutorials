@@ -6,6 +6,9 @@ description: Gérez efficacement les pièces jointes aux documents dans les appl
 weight: 12
 url: /fr/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Récupérer et enregistrer les pièces jointes de documents
+
 ## Introduction
 À l’ère du numérique, une gestion efficace des documents est cruciale pour les entreprises comme pour les particuliers. Qu'il s'agisse de gérer des e-mails, de consulter des contrats ou d'accéder à des rapports, disposer d'un outil fiable de visualisation de documents est essentiel. GroupDocs.Viewer pour .NET apparaît comme une solution robuste, permettant aux utilisateurs de visualiser et d'interagir sans effort avec divers formats de documents directement dans leurs applications .NET.
 ## Conditions préalables

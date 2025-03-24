@@ -6,6 +6,9 @@ description: Enhance your .NET applications with GroupDocs.Viewer for seamless d
 weight: 12
 url: /net/getting-started/set-metered-license/
 ---
+
+# Set Metered License
+
 ## Introduction
 In the world of .NET development, incorporating powerful document viewing capabilities into your applications is essential for enhancing user experience and functionality. GroupDocs.Viewer for .NET offers a robust solution for seamlessly integrating document viewing functionalities into your .NET projects. Whether you're working with PDFs, Microsoft Office documents, or various image formats, GroupDocs.Viewer simplifies the process of rendering and displaying these documents within your applications.
 ## Prerequisites

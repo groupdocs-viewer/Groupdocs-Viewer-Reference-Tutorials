@@ -6,6 +6,9 @@ description: Sorunsuz belge oluşturma, çevirme ve döndürme için Groupdocs.V
 weight: 12
 url: /tr/net/rendering-options/flip-rotate-pages/
 ---
+
+# Sayfaları Çevir ve Döndür
+
 ## giriiş
 Bu eğitimde, özellikle sayfaları çevirme ve döndürmeye odaklanarak Groupdocs.Viewer for .NET'in işlevlerini inceleyeceğiz. Groupdocs.Viewer for .NET, .NET uygulamaları içinde çeşitli formatlardaki belgeleri işlemek için tasarlanmış güçlü bir araçtır. İster bir belge yönetim sistemi geliştiriyor olun, ister belge görüntüleme yeteneklerini yazılımınıza entegre etmeye ihtiyaç duyuyor olun, Groupdocs.Viewer for .NET etkili bir çözüm sunar.
 ## Önkoşullar

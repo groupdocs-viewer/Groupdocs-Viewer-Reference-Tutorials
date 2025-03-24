@@ -6,6 +6,9 @@ description: Leer hoe u documenten met commentaar kunt weergeven met GroupDocs.V
 weight: 13
 url: /nl/net/rendering-options/render-document-comments/
 ---
+
+# Render document met opmerkingen
+
 ## Invoering
 GroupDocs.Viewer voor .NET is een krachtige bibliotheek waarmee ontwikkelaars de mogelijkheden voor documentweergave naadloos kunnen integreren in hun .NET-toepassingen. Of u nu Word-documenten, Excel-spreadsheets, PowerPoint-presentaties, PDF-bestanden of andere formaten wilt weergeven, GroupDocs.Viewer biedt een eenvoudige oplossing.
 In deze zelfstudie concentreren we ons op het weergeven van documenten met opmerkingen met behulp van GroupDocs.Viewer voor .NET. We begeleiden u bij de vereisten, het importeren van naamruimten en bieden een stapsgewijze handleiding voor het weergeven van documenten met commentaar, zodat u elk concept grondig begrijpt.

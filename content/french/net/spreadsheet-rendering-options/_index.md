@@ -6,6 +6,9 @@ description: Améliorez sans effort la visualisation des documents dans .NET ave
 weight: 37
 url: /fr/net/spreadsheet-rendering-options/
 ---
+
+# Options de rendu de feuille de calcul
+
 ## Introduction
 
 Êtes-vous prêt à améliorer votre expérience de visualisation de documents dans .NET ? GroupDocs.Viewer pour .NET propose un ensemble complet de didacticiels, vous permettant d'optimiser le rendu des feuilles de calcul. De l'ajustement du débordement de texte au rendu des colonnes et des lignes masquées, nous avons ce qu'il vous faut. Plongeons dans le monde des options de rendu de feuilles de calcul et libérons tout le potentiel de GroupDocs.Viewer pour .NET.

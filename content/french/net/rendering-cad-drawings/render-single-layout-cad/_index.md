@@ -6,6 +6,9 @@ description: Découvrez comment restituer une présentation unique dans des dess
 weight: 14
 url: /fr/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# Rendre une présentation unique dans les dessins CAO
+
 ## Introduction
 Dans le domaine du développement .NET, la gestion et la visualisation des dessins CAO sont une exigence courante. GroupDocs.Viewer pour .NET simplifie cette tâche en fournissant une solution complète pour le rendu des dessins CAO dans les applications .NET. Dans ce didacticiel, nous aborderons le rendu d'une seule présentation dans des dessins CAO à l'aide de GroupDocs.Viewer pour .NET.
 ## Conditions préalables

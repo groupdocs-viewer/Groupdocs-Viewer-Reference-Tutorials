@@ -7,6 +7,9 @@ weight: 31
 url: /fr/net/rendering-documents-html/
 ---
 
+# Rendu de documents au format HTML
+
+
 ## Introduction
 
 Cherchez-vous à améliorer vos applications .NET en rendant de manière transparente des documents au format HTML ? Avec GroupDocs.Viewer pour .NET, c’est exactement ce que vous pouvez réaliser. Dans cet article, nous vous présenterons différents tutoriels visant à optimiser l'affichage des documents et à améliorer l'expérience utilisateur.

@@ -6,6 +6,9 @@ description: Fedezze fel a GroupDocs.Viewer for .NET varázsát – zökkenőmen
 weight: 11
 url: /hu/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Get munkalapok nevek
+
 ## Bevezetés
 Üdvözöljük a GroupDocs.Viewer for .NET lenyűgöző világában! Ha Ön fejlesztő vagy rajongó, aki szeretné felfedezni a hatékony dokumentummegtekintési lehetőségeket .NET-alkalmazásaiban, akkor ez egy csemege. Ebben az átfogó útmutatóban a munkalapnevek GroupDocs.Viewer segítségével történő lekérésének bonyolultságába fogunk elmélyülni. Szóval, kapcsold be a biztonsági övet, és induljunk el erre az izgalmas utazásra!
 ## Előfeltételek

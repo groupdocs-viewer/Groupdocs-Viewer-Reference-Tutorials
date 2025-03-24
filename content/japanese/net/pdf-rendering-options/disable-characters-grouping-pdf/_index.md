@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET を使用して PDF 内の文字のグル
 weight: 11
 url: /ja/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# PDF での文字のグループ化を無効にする
+
 ## 導入
 .NET 開発の世界では、特に PDF などの形式を扱う場合、ドキュメントの表示の処理が困難になることがあります。ただし、適切なツールと知識があれば、このプロセスを効率的に合理化できます。このようなツールの 1 つが、GroupDocs.Viewer for .NET です。この強力なライブラリにより、開発者は .NET アプリケーション内でさまざまな種類のドキュメントをシームレスにレンダリングおよび表示できるようになります。
 ## 前提条件

@@ -6,6 +6,9 @@ description: 了解如何在使用 GroupDocs.Viewer for .NET 載入文件時指�
 weight: 10
 url: /zh-hant/net/advanced-loading/specify-file-type/
 ---
+
+# 載入文檔時指定文件類型
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一種多功能文件渲染 API，支援多種文件格式，包括 DOCX、PDF、PPTX 等。透過在載入文件時指定文件類型，您可以確保準確的渲染和使用者流暢的檢視體驗。
 ## 先決條件

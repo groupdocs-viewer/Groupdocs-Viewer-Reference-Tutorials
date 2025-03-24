@@ -6,6 +6,9 @@ description: Leer hoe u archiefbestanden in .NET kunt weergeven met GroupDocs.Vi
 weight: 14
 url: /nl/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Geef de bestandsnaam op bij het renderen van archiefbestanden
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling onderscheidt GroupDocs.Viewer zich als een veelzijdige tool voor het weergeven van documenten van verschillende formaten. Met zijn robuuste functies en flexibiliteit vereenvoudigt het het proces van het bekijken van bestanden, inclusief archiefbestanden. In deze zelfstudie gaan we dieper in op de details van het renderen van archiefbestanden met GroupDocs.Viewer voor .NET. Door deze stapsgewijze instructies te volgen, leert u hoe u een bestandsnaam kunt opgeven bij het renderen van archiefbestanden, waardoor naadloos documentbeheer binnen uw .NET-toepassingen mogelijk wordt.
 ## Vereisten

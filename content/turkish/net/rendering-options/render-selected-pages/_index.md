@@ -6,6 +6,9 @@ description: Groupdocs.Viewer for .NET'i kullanarak belgelerden seçilen sayfala
 weight: 17
 url: /tr/net/rendering-options/render-selected-pages/
 ---
+
+# Seçilen Sayfaları Oluştur
+
 ## giriiş
 
 Bu eğitimde, bir belgeden seçilen sayfaları oluşturmak için Groupdocs.Viewer for .NET'in nasıl kullanılacağını inceleyeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz süreç boyunca size kolaylıkla yol gösterecektir.

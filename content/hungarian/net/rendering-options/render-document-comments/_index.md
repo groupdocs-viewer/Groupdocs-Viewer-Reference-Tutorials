@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan jeleníthet meg dokumentumokat megjegyzésekkel
 weight: 13
 url: /hu/net/rendering-options/render-document-comments/
 ---
+
+# Dokumentum renderelése megjegyzésekkel
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentum-megjelenítési képességeket .NET-alkalmazásaikba. Akár Word-dokumentumokat, Excel-táblázatokat, PowerPoint-prezentációkat, PDF-fájlokat vagy más formátumokat kell megjelenítenie, a GroupDocs.Viewer egyszerű megoldást kínál.
 Ebben az oktatóanyagban a megjegyzésekkel ellátott dokumentumok megjelenítésére fogunk összpontosítani a GroupDocs.Viewer for .NET használatával. Végigvezetjük az előfeltételeken, a névterek importálásán, és lépésenkénti útmutatót adunk a megjegyzésekkel ellátott dokumentumok megjelenítéséhez, így biztosítva, hogy alaposan megértse az egyes fogalmakat.

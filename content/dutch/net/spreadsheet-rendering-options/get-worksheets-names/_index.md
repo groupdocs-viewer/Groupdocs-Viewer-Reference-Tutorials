@@ -6,6 +6,9 @@ description: Ontdek de magie van GroupDocs.Viewer voor .NET – integreer de wee
 weight: 11
 url: /nl/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Werkbladnamen ophalen
+
 ## Invoering
 Welkom in de fascinerende wereld van GroupDocs.Viewer voor .NET! Als u een ontwikkelaar of liefhebber bent en graag de krachtige mogelijkheden voor documentweergave binnen uw .NET-toepassingen wilt verkennen, staat u iets moois te wachten. In deze uitgebreide handleiding gaan we in op de fijne kneepjes van het ophalen van werkbladnamen met GroupDocs.Viewer. Dus maak je veiligheidsgordel vast en laten we aan deze spannende reis beginnen!
 ## Vereisten

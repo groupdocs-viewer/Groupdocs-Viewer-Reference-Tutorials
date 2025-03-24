@@ -6,6 +6,9 @@ description: Jelajahi kekuatan GroupDocs.Viewer untuk .NET dalam merender dokume
 weight: 14
 url: /id/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Render berdasarkan Page Breaks
+
 ## Perkenalan
 Selamat datang di tutorial GroupDocs.Viewer untuk .NET tentang merender dokumen berdasarkan hentian halaman! Dalam panduan langkah demi langkah ini, kita akan mempelajari cara memanfaatkan fitur canggih GroupDocs.Viewer untuk merender dokumen dengan presisi, khususnya berfokus pada hentian halaman. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial ini akan memandu Anda melalui prosesnya, memberikan pemahaman yang jelas tentang setiap langkah.
 ## Prasyarat

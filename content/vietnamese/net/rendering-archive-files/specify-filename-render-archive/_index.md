@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị các tệp lưu trữ trong .NET b�
 weight: 14
 url: /vi/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Chỉ định tên tệp khi hiển thị tệp lưu trữ
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, GroupDocs.Viewer nổi bật như một công cụ linh hoạt để hiển thị các tài liệu ở nhiều định dạng khác nhau. Với các tính năng mạnh mẽ và linh hoạt, nó đơn giản hóa quá trình xem tệp, bao gồm cả tệp lưu trữ. Trong hướng dẫn này, chúng tôi sẽ đi sâu vào chi tiết cụ thể về cách hiển thị tệp lưu trữ bằng GroupDocs.Viewer cho .NET. Bằng cách làm theo các hướng dẫn từng bước này, bạn sẽ tìm hiểu cách chỉ định tên tệp khi hiển thị các tệp lưu trữ, cho phép quản lý tài liệu liền mạch trong các ứng dụng .NET của bạn.
 ## Điều kiện tiên quyết

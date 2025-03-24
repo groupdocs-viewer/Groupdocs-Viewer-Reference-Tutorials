@@ -7,6 +7,9 @@ weight: 22
 url: /vi/net/advanced-usage-caching/
 ---
 
+# Cách sử dụng nâng cao (Bộ nhớ đệm)
+
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển ứng dụng .NET, nơi hiệu quả và tốc độ là tối quan trọng, việc nắm vững các kỹ thuật nâng cao như bộ nhớ đệm có thể nâng cao hiệu suất một cách đáng kể. Chào mừng bạn đến với thế giới của GroupDocs.Viewer, nơi bạn có thể khai thác sức mạnh của bộ nhớ đệm để hợp lý hóa quá trình xử lý tài liệu và tối ưu hóa hiệu suất ứng dụng của mình một cách dễ dàng.

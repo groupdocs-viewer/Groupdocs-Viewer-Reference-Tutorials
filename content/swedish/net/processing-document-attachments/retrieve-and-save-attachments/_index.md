@@ -6,6 +6,9 @@ description: Hantera dokumentbilagor effektivt i .NET-applikationer med GroupDoc
 weight: 12
 url: /sv/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Hämta och spara dokumentbilagor
+
 ## Introduktion
 I den digitala eran är effektiv dokumenthantering avgörande för både företag och privatpersoner. Oavsett om det handlar om att hantera e-postmeddelanden, visa kontrakt eller få tillgång till rapporter är det viktigt att ha ett tillförlitligt verktyg för dokumentvisualisering. GroupDocs.Viewer för .NET framstår som en robust lösning som ger användarna möjlighet att enkelt se och interagera med olika dokumentformat direkt i sina .NET-applikationer.
 ## Förutsättningar

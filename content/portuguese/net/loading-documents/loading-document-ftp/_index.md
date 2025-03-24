@@ -6,6 +6,9 @@ description: Integre o GroupDocs.Viewer for .NET perfeitamente em seus aplicativ
 weight: 13
 url: /pt/net/loading-documents/loading-document-ftp/
 ---
+
+# Carregar documentos do FTP (avançado)
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma API poderosa que permite aos desenvolvedores integrar perfeitamente recursos de visualização de documentos em seus aplicativos .NET. Esteja você trabalhando com PDFs, documentos do Microsoft Office ou outros formatos de arquivo populares, o GroupDocs.Viewer simplifica o processo de renderização de documentos para exibição, tornando mais fácil do que nunca fornecer aos usuários uma rica experiência de visualização.
 ## Pré-requisitos

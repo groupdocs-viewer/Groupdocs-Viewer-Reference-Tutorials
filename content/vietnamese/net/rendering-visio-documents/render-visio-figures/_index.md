@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị số liệu Visio bằng GroupDocs.V
 weight: 10
 url: /vi/net/rendering-visio-documents/render-visio-figures/
 ---
+
+# Kết xuất số liệu Visio
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc kết xuất tài liệu đóng một vai trò quan trọng trong nhiều ứng dụng khác nhau. Cho dù đó là hiển thị tài liệu trên trang web hay chuyển đổi chúng sang các định dạng khác nhau, việc hiển thị hiệu quả là điều cần thiết. GroupDocs.Viewer dành cho .NET cung cấp giải pháp mạnh mẽ để xem và thao tác tài liệu trong các ứng dụng .NET. Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc hiển thị các số liệu Visio bằng GroupDocs.Viewer cho .NET, chia nhỏ quy trình thành các bước đơn giản.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Tìm hiểu cách định cấu hình thời gian chờ tải tài 
 weight: 13
 url: /vi/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Đặt thời gian chờ tải tài nguyên (Nâng cao)
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, GroupDocs.Viewer cung cấp bộ công cụ mạnh mẽ để hiển thị tài liệu và hình ảnh với độ chính xác và hiệu quả. Việc tận dụng các khả năng của nó đòi hỏi phải hiểu được những điểm phức tạp của nó, bao gồm cả việc đặt thời gian chờ tải tài nguyên. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quá trình định cấu hình thời gian chờ tải tài nguyên trong GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'in büyüsünü keşfedin; belge görünt
 weight: 11
 url: /tr/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Çalışma Sayfası Adlarını Alma
+
 ## giriiş
 .NET için GroupDocs.Viewer'ın büyüleyici dünyasına hoş geldiniz! .NET uygulamalarınızdaki güçlü belge görüntüleme yeteneklerini keşfetmeye hevesli bir geliştirici veya meraklıysanız, büyük bir sürprizle karşı karşıyasınız. Bu kapsamlı kılavuzda, GroupDocs.Viewer'ı kullanarak çalışma sayfası adlarını almanın inceliklerini ele alacağız. O halde emniyet kemerinizi bağlayın ve bu heyecan verici yolculuğa başlayalım!
 ## Önkoşullar

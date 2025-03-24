@@ -6,6 +6,9 @@ description: Tìm hiểu cách điều chỉnh chất lượng hình ảnh JPG t
 weight: 11
 url: /vi/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Điều chỉnh chất lượng hình ảnh JPG trong PDF được hiển thị
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách điều chỉnh chất lượng hình ảnh JPG khi hiển thị tệp PDF bằng GroupDocs.Viewer cho .NET. Thư viện mạnh mẽ này cho phép bạn xem và thao tác các định dạng tài liệu khác nhau trong các ứng dụng .NET của mình một cách liền mạch.
 ## Điều kiện tiên quyết

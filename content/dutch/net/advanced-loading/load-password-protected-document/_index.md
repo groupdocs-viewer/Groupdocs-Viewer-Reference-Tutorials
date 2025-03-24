@@ -6,6 +6,9 @@ description: Integreer moeiteloos de met een wachtwoord beveiligde documentweerg
 weight: 12
 url: /nl/net/advanced-loading/load-password-protected-document/
 ---
+
+# Met wachtwoord beveiligde documenten laden
+
 ## Invoering
 In het huidige digitale tijdperk is het naadloos beheren en bekijken van verschillende documentformaten een noodzaak voor veel bedrijven en particulieren. Gelukkig biedt GroupDocs.Viewer voor .NET een uitgebreide oplossing voor .NET-ontwikkelaars om moeiteloos documentweergavemogelijkheden in hun toepassingen te integreren. In deze tutorial gaan we dieper in op een van de essentiële functionaliteiten van GroupDocs.Viewer: het laden van met een wachtwoord beveiligde documenten. We zullen het proces stap voor stap opsplitsen, zodat ontwikkelaars deze functie gemakkelijk kunnen volgen en in hun projecten kunnen implementeren.
 ## Vereisten

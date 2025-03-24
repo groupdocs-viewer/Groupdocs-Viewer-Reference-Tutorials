@@ -7,6 +7,9 @@ weight: 26
 url: /vi/net/getting-started/
 ---
 
+# Bắt đầu
+
+
 ## Giới thiệu
 
 Bạn đã sẵn sàng nâng cao các ứng dụng .NET của mình với khả năng xem tài liệu mạnh mẽ chưa? Đừng tìm đâu xa! Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn mọi điều bạn cần biết về việc tích hợp GroupDocs.Viewer cho .NET một cách liền mạch vào các dự án của bạn.

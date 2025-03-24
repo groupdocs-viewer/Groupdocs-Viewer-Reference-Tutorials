@@ -6,6 +6,9 @@ description: Scopri come eseguire il rendering senza problemi di documenti HTML 
 weight: 11
 url: /it/net/rendering-documents-html/minify-html/
 ---
+
+# Minimizza il documento HTML renderizzato
+
 ## introduzione
 GroupDocs.Viewer per .NET è un potente strumento che consente agli sviluppatori di eseguire il rendering di documenti HTML senza problemi all'interno delle loro applicazioni .NET. Grazie all'API intuitiva e alle robuste funzionalità, gli sviluppatori possono integrare facilmente le funzionalità di visualizzazione dei documenti nelle loro applicazioni, migliorando l'esperienza utente e la produttività.
 ## Prerequisiti

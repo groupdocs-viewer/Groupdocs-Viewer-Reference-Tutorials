@@ -6,6 +6,9 @@ description: Dowiedz się, jak włączyć podpowiedzi dotyczące czcionek w doku
 weight: 14
 url: /pl/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Włącz podpowiedzi dotyczące czcionek w formacie PDF
+
 ## Wstęp
 GroupDocs.Viewer dla .NET to potężne narzędzie do przeglądania i manipulowania różnymi formatami dokumentów w aplikacjach .NET. Niezależnie od tego, czy pracujesz z plikami PDF, dokumentami Microsoft Office, obrazami czy innymi formatami, GroupDocs.Viewer zapewnia płynne rozwiązanie do renderowania i interakcji z tymi plikami.
 ## Warunki wstępne

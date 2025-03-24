@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị hình ảnh EMZ và EMF sang các đ
 weight: 14
 url: /vi/net/image-rendering/render-emz-emf-images/
 ---
+
+# Kết xuất hình ảnh EMZ và EMF
+
 ## Giới thiệu
 
 GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị nhiều loại tài liệu khác nhau, bao gồm hình ảnh EMZ (Siêu tệp Windows nâng cao) và EMF (Siêu tệp nâng cao) trong các ứng dụng .NET của họ. Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị hình ảnh EMZ và EMF sang các định dạng khác nhau như HTML, JPG, PNG và PDF bằng GroupDocs.Viewer cho .NET.

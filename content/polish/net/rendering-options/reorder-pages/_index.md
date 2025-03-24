@@ -6,6 +6,9 @@ description: Dowiedz się, jak zmienić kolejność stron w dokumencie za pomoc�
 weight: 19
 url: /pl/net/rendering-options/reorder-pages/
 ---
+
+# Zmień kolejność stron w dokumencie
+
 ## Wstęp
 W świecie programowania .NET efektywne zarządzanie dokumentami i manipulowanie nimi ma kluczowe znaczenie. GroupDocs.Viewer dla .NET zapewnia zaawansowane rozwiązanie do przeglądania różnych formatów dokumentów w aplikacjach. Jednym z podstawowych zadań, z jakim często spotykają się programiści, jest zmiana kolejności stron w dokumencie. Niezależnie od tego, czy pracujesz z plikami PDF, dokumentami programu Word czy innymi formatami, możliwość zmiany układu stron może usprawnić przepływ pracy i zwiększyć wygodę użytkownika. W tym samouczku omówimy sposób zmiany kolejności stron w dokumencie za pomocą programu GroupDocs.Viewer dla platformy .NET.
 ## Warunki wstępne

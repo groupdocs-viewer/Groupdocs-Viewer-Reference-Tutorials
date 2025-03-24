@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 PDF에서 텍스트 선택
 weight: 13
 url: /ko/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# PDF에서 텍스트 선택 비활성화
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 문서 보기 기능을 .NET 응용 프로그램에 손쉽게 통합할 수 있게 해주는 강력한 문서 렌더링 API입니다. GroupDocs.Viewer가 제공하는 주요 기능 중 하나는 PDF 문서에서 텍스트 선택을 비활성화하는 기능입니다. 이 기능은 사용자가 중요한 문서에서 텍스트를 복사하지 못하도록 방지하여 문서 보안과 무결성을 보장해야 하는 시나리오에서 특히 유용합니다.
 ## 전제조건

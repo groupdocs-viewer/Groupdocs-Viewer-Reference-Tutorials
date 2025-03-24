@@ -6,6 +6,9 @@ description: Skydda dina återgivna PDF-filer med lösenord enkelt med Groupdocs
 weight: 12
 url: /sv/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Skydda renderad PDF med lösenord
+
 ## Introduktion
 den här handledningen får du lära dig hur du använder Groupdocs.Viewer för .NET för att skydda en renderad PDF med ett lösenord. Genom att lägga till säkerhetsåtgärder kan du kontrollera åtkomsten till dina PDF-dokument, vilket säkerställer konfidentialitet och integritet.
 ## Förutsättningar

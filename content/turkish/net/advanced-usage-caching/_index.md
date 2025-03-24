@@ -7,6 +7,9 @@ weight: 22
 url: /tr/net/advanced-usage-caching/
 ---
 
+# Gelişmiş Kullanım (Önbelleğe Alma)
+
+
 ## giriiş
 
 Verimlilik ve hızın çok önemli olduğu .NET uygulama geliştirme alanında, önbelleğe alma gibi gelişmiş tekniklerde uzmanlaşmak performansı önemli ölçüde artırabilir. Belge işlemeyi kolaylaştırmak ve uygulamanızın performansını zahmetsizce optimize etmek için önbelleğe almanın gücünden yararlanabileceğiniz GroupDocs.Viewer dünyasına hoş geldiniz.

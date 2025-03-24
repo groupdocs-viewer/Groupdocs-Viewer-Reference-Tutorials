@@ -6,6 +6,9 @@ description: Ulepsz przeglądanie dokumentów w .NET! Dowiedz się, jak renderow
 weight: 18
 url: /pl/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Renderuj nagłówki wierszy i kolumn
+
 ## Wstęp
 Czy chcesz poprawić jakość przeglądania dokumentów w aplikacjach .NET? Dzięki GroupDocs.Viewer dla .NET możesz płynnie renderować nagłówki wierszy i kolumn z plików arkuszy kalkulacyjnych. W tym samouczku przeprowadzimy Cię przez proces renderowania nagłówków wierszy i kolumn przy użyciu różnych formatów wyjściowych, takich jak HTML, JPG, PNG i PDF.
 ## Warunki wstępne

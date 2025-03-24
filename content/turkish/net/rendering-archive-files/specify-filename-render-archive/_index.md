@@ -6,6 +6,9 @@ description: GroupDocs.Viewer'ı kullanarak arşiv dosyalarını .NET'te nasıl 
 weight: 14
 url: /tr/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Arşiv Dosyalarını Oluştururken Dosya Adını Belirtin
+
 ## giriiş
 .NET geliştirme alanında GroupDocs.Viewer, çeşitli formatlardaki belgeleri işlemek için çok yönlü bir araç olarak öne çıkıyor. Sağlam özellikleri ve esnekliğiyle arşiv dosyaları da dahil olmak üzere dosyaları görüntüleme sürecini basitleştirir. Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak arşiv dosyalarını işlemenin ayrıntılarını inceleyeceğiz. Bu adım adım talimatları izleyerek, arşiv dosyalarını işlerken bir dosya adını nasıl belirleyeceğinizi öğrenecek ve .NET uygulamalarınızda kusursuz belge yönetimine olanak tanıyacaksınız.
 ## Önkoşullar

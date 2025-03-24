@@ -6,6 +6,9 @@ description: Integrera enkelt lösenordsskyddad dokumentvisning i .NET-applikati
 weight: 12
 url: /sv/net/advanced-loading/load-password-protected-document/
 ---
+
+# Ladda lösenordsskyddade dokument
+
 ## Introduktion
 dagens digitala tidsålder är hantering och visning av olika dokumentformat sömlöst en nödvändighet för många företag och privatpersoner. Lyckligtvis tillhandahåller GroupDocs.Viewer för .NET en heltäckande lösning för .NET-utvecklare för att enkelt integrera dokumentvisningsmöjligheter i sina applikationer. I den här handledningen kommer vi att fördjupa oss i en av de väsentliga funktionerna i GroupDocs.Viewer: ladda lösenordsskyddade dokument. Vi kommer att bryta ner processen steg för steg, för att säkerställa att utvecklare enkelt kan följa med och implementera den här funktionen i sina projekt.
 ## Förutsättningar

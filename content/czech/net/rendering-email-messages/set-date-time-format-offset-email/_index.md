@@ -7,6 +7,9 @@ weight: 11
 url: /cs/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
 
+# Nastavit formát data a času a posun časového pásma (e-mail)
+
+
 ## Úvod
 GroupDocs.Viewer for .NET je výkonný nástroj, který umožňuje vývojářům bezproblémově integrovat možnosti prohlížení dokumentů do jejich aplikací .NET. S GroupDocs.Viewer můžete zobrazit širokou škálu formátů dokumentů včetně PDF, dokumentů Microsoft Office, obrázků a dalších přímo ve vaší aplikaci, aniž byste potřebovali jakékoli externí pluginy nebo prohlížeče. V tomto obsáhlém tutoriálu vás provedeme procesem nastavení GroupDocs.Viewer pro .NET, prozkoumáme jeho funkce a předvedeme, jak jej efektivně využít ke zlepšení možností zobrazení dokumentů vaší aplikace.
 ## Předpoklady

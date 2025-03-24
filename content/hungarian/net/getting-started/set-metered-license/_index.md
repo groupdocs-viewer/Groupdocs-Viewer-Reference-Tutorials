@@ -6,6 +6,9 @@ description: Bővítse .NET-alkalmazásait a GroupDocs.Viewer segítségével a 
 weight: 12
 url: /hu/net/getting-started/set-metered-license/
 ---
+
+# Állítsa be a mért licencet
+
 ## Bevezetés
 .NET-fejlesztés világában a hatékony dokumentummegtekintési képességek alkalmazása az alkalmazásokba elengedhetetlen a felhasználói élmény és a funkcionalitás javításához. A GroupDocs.Viewer for .NET robusztus megoldást kínál a dokumentummegtekintési funkciók zökkenőmentes integrálására a .NET-projektekbe. Függetlenül attól, hogy PDF-ekkel, Microsoft Office-dokumentumokkal vagy különféle képformátumokkal dolgozik, a GroupDocs.Viewer leegyszerűsíti ezeknek a dokumentumoknak az alkalmazásaiban való megjelenítését és megjelenítését.
 ## Előfeltételek

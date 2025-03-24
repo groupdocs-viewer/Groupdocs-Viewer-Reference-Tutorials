@@ -6,6 +6,9 @@ description: Lär dig hur du sömlöst lägger till vattenstämplar i dokument m
 weight: 10
 url: /sv/net/rendering-options/add-watermark/
 ---
+
+# Lägg till vattenstämpel i dokument
+
 ## Introduktion
 I dagens digitala tidsålder är hantering och visning av olika dokumentformat sömlöst en nödvändighet för många företag och privatpersoner. Lyckligtvis blir det enkelt att hantera dokument med verktyg som GroupDocs.Viewer för .NET. Detta kraftfulla .NET-bibliotek gör det möjligt för utvecklare att enkelt integrera dokumentvisningsfunktioner i sina applikationer, så att användare kan se dokument utan att behöva originalprogramvaran som skapade dem.
 ## Förutsättningar

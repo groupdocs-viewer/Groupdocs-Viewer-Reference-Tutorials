@@ -6,6 +6,9 @@ description: Leer hoe u het groeperen van tekens in PDF's kunt uitschakelen met 
 weight: 11
 url: /nl/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Schakel tekengroepering in PDF uit
+
 ## Invoering
 In de wereld van .NET-ontwikkeling kan het bekijken van documenten soms een uitdaging zijn, vooral als het gaat om formaten zoals PDF's. Met de juiste tools en kennis kunt u dit proces echter efficiënt stroomlijnen. Een voorbeeld van zo'n tool die te hulp komt, is GroupDocs.Viewer voor .NET. Deze krachtige bibliotheek stelt ontwikkelaars in staat om naadloos verschillende documenttypen weer te geven en weer te geven binnen hun .NET-applicaties.
 ## Vereisten

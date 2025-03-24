@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak SVG ve SVGZ görüntülerini
 weight: 16
 url: /tr/net/image-rendering/render-svg-svgz-images/
 ---
+
+# SVG ve SVGZ Görüntülerini İşleme
+
 ## giriiş
 Bu eğitimde, GroupDocs.Viewer for .NET'i kullanarak SVG ve SVGZ görüntülerini oluşturma sürecinde size rehberlik edeceğiz. GroupDocs.Viewer for .NET, geliştiricilerin .NET uygulamalarında çeşitli belge formatlarını oluşturmasına olanak tanıyan güçlü bir belge işleme API'sidir. SVG ve SVGZ, vektör grafikleri için kullanılan popüler görüntü formatlarıdır ve GroupDocs.Viewer for .NET ile bunları kolayca HTML, JPG, PNG ve PDF gibi farklı çıktı formatlarına dönüştürebilirsiniz.
 ## Önkoşullar

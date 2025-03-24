@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak PDF belgelerinde yazı tipi 
 weight: 14
 url: /tr/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# PDF'de Yazı Tipi İpuçlarını Etkinleştir
+
 ## giriiş
 GroupDocs.Viewer for .NET, .NET uygulamaları içindeki çeşitli belge formatlarını görüntülemek ve değiştirmek için güçlü bir araçtır. İster PDF'ler, Microsoft Office belgeleri, resimler veya diğer formatlarla çalışıyor olun, GroupDocs.Viewer bu dosyaları oluşturmak ve bunlarla etkileşimde bulunmak için kusursuz bir çözüm sunar.
 ## Önkoşullar

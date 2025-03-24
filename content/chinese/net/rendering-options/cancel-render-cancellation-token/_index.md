@@ -6,6 +6,9 @@ description: 将 Groupdocs.Viewer for .NET 无缝集成到您的 .NET 项目中�
 weight: 11
 url: /zh/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# 使用取消令牌取消渲染
+
 ## 介绍
 Groupdocs.Viewer for .NET 是一款功能强大的工具，旨在简化 .NET 应用程序中的文档查看和处理。无论您处理的是 PDF、Microsoft Office 文档还是其他常见格式，该库都提供了强大的功能，可以将文档查看功能无缝集成到您的 .NET 项目中。
 ## 先决条件

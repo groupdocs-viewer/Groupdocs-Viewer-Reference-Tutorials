@@ -6,6 +6,9 @@ description: Ontdek hoe u moeiteloos bijgehouden wijzigingen in documenten kunt 
 weight: 10
 url: /nl/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Geef bijgehouden wijzigingen weer
+
 ## Invoering
 In het huidige digitale tijdperk is het efficiënt beheren en bekijken van documenten van cruciaal belang voor zowel bedrijven als particulieren. Met de komst van geavanceerde technologieën hebben oplossingen zoals GroupDocs.Viewer voor .NET een revolutie teweeggebracht in de manier waarop we omgaan met verschillende documentformaten, waaronder Word-documenten, PDF's en meer. In deze uitgebreide handleiding gaan we dieper in op de manier waarop u GroupDocs.Viewer voor .NET kunt gebruiken om bijgehouden wijzigingen in uw documenten naadloos weer te geven.
 ## Vereisten

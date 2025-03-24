@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị hình ảnh FODG và ODG thành HTML
 weight: 15
 url: /vi/net/image-rendering/render-fodg-odg-images/
 ---
+
+# Kết xuất hình ảnh FODG và ODG
+
 ## Giới thiệu
 Trong thế giới phát triển phần mềm, việc xử lý hiệu quả các định dạng tài liệu là điều tối quan trọng. GroupDocs.Viewer cho .NET là một công cụ mạnh mẽ được thiết kế để đơn giản hóa quá trình hiển thị hình ảnh FODG và ODG trong các ứng dụng .NET. Hướng dẫn này sẽ hướng dẫn bạn các bước cần thiết để hiển thị những hình ảnh này thành nhiều định dạng khác nhau, chẳng hạn như HTML, JPG, PNG và PDF, bằng cách sử dụng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

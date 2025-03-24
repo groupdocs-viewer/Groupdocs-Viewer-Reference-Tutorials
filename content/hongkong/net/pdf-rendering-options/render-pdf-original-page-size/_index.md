@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 以原始頁面大小�
 weight: 17
 url: /zh-hant/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# 使用原始頁面大小渲染 PDF
+
 ## 介紹
 在 .NET 開發領域，GroupDocs.Viewer 作為渲染各種文件格式（包括 PDF）的強大工具而脫穎而出。文件處理中的一個常見要求是渲染 PDF，同時保留其原始頁面大小。要無縫地完成此任務，需要全面了解 GroupDocs.Viewer for .NET 及其功能。
 ## 先決條件

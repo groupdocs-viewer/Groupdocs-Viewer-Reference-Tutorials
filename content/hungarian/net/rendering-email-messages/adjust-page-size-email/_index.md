@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan állíthatja be az oldalméretet, amikor az e-m
 weight: 10
 url: /hu/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Állítsa be az oldalméretet e-mail üzenetek megjelenítésekor
+
 ## Bevezetés
 A .NET fejlesztés területén a GroupDocs.Viewer átfogó megoldást kínál különféle dokumentumformátumok, köztük e-mail üzenetek megjelenítésére. Ez az oktatóanyag az oldalméret beállítására összpontosít, amikor az e-mail üzeneteket PDF formátumba rendereli a GroupDocs.Viewer for .NET segítségével. Az ebben az útmutatóban vázolt lépések követésével megtanulhatja, hogyan lehet zökkenőmentesen módosítani az oldalméretet, hogy megfeleljen az Ön sajátos követelményeinek.
 ## Előfeltételek

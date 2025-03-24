@@ -7,6 +7,9 @@ weight: 23
 url: /fr/net/rendering-options/
 ---
 
+# Options de rendu
+
+
 ## Introduction
 
 Dans le domaine du développement d'applications .NET, un rendu efficace des documents est souvent un aspect crucial. Que vous construisiez un système de gestion de contenu, une visionneuse de documents ou toute autre application traitant de l'affichage de documents, disposer d'options de rendu robustes peut améliorer considérablement l'expérience utilisateur et les fonctionnalités.

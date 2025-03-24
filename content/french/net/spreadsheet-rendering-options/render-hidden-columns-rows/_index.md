@@ -6,6 +6,9 @@ description: Déverrouillez facilement les données cachées dans les feuilles d
 weight: 13
 url: /fr/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Rendre les colonnes et les lignes masquées
+
 ## Introduction
 Dans le domaine de la visualisation de documents, GroupDocs.Viewer pour .NET se présente comme un outil robuste qui facilite le rendu transparent de divers formats de documents. Une fonctionnalité intéressante est la possibilité de révéler des colonnes et des lignes cachées dans des feuilles de calcul. Dans ce didacticiel, nous aborderons les étapes permettant de débloquer cette fonctionnalité et de libérer le potentiel de vos données.
 ## Conditions préalables

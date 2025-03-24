@@ -6,6 +6,9 @@ description: Effortlessly render WMZ and WMF images in .NET applications using G
 weight: 18
 url: /net/image-rendering/render-wmz-wmf-images/
 ---
+
+# Render WMZ and WMF Images
+
 ## Introduction
 
 In the realm of software development, efficient handling and rendering of various document formats are paramount. GroupDocs.Viewer for .NET is a powerful tool that facilitates the rendering of a wide array of document formats, ensuring seamless integration and enhanced user experience within .NET applications. Among its capabilities is the rendering of WMZ and WMF images, a task often encountered in document processing scenarios.

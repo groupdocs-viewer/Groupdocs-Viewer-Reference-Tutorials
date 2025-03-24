@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Viewer for .NET 呈現響應式 HTML�
 weight: 13
 url: /zh-hant/net/rendering-documents-html/render-responsive-html/
 ---
+
+# 渲染響應式 HTML
+
 ## 介紹
 Groupdocs.Viewer for .NET 是一個功能強大的程式庫，可讓開發人員將各種文件格式呈現為響應式 HTML。本教學將引導您完成使用 Groupdocs.Viewer for .NET 呈現響應式 HTML 的過程。學完本教學後，您將能夠將文件無縫轉換為適應不同螢幕尺寸的 HTML，確保跨裝置的最佳檢視體驗。
 ## 先決條件

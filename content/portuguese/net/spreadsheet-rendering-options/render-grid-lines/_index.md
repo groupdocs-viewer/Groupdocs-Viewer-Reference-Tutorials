@@ -6,6 +6,9 @@ description: Aprimore a visualização de documentos com GroupDocs.Viewer for .N
 weight: 12
 url: /pt/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Renderizar linhas de grade
+
 ## Introdução
 Bem-vindo a este guia passo a passo sobre como usar o GroupDocs.Viewer for .NET para renderizar linhas de grade em seus documentos. Quer você seja um desenvolvedor experiente ou um novato na estrutura .NET, este tutorial orientará você pelo processo com explicações detalhadas e exemplos fáceis de seguir.
 ## Pré-requisitos

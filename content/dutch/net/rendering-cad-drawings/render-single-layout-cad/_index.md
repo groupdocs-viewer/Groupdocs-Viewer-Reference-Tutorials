@@ -6,6 +6,9 @@ description: Leer hoe u een enkele lay-out in CAD-tekeningen kunt weergeven met 
 weight: 14
 url: /nl/net/rendering-cad-drawings/render-single-layout-cad/
 ---
+
+# Geef een enkele lay-out weer in CAD-tekeningen
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling is het hanteren en bekijken van CAD-tekeningen een veel voorkomende vereiste. GroupDocs.Viewer voor .NET vereenvoudigt deze taak door een uitgebreide oplossing te bieden voor het weergeven van CAD-tekeningen binnen .NET-toepassingen. In deze zelfstudie gaan we dieper in op het renderen van een enkele lay-out in CAD-tekeningen met behulp van GroupDocs.Viewer voor .NET.
 ## Vereisten

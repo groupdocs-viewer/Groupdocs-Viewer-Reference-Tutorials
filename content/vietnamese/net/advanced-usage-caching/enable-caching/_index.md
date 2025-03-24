@@ -6,6 +6,9 @@ description: Nâng cao tốc độ xử lý tài liệu trong ứng dụng .NET 
 weight: 10
 url: /vi/net/advanced-usage-caching/enable-caching/
 ---
+
+# Kích hoạt bộ nhớ đệm để xử lý tài liệu nhanh hơn
+
 ## Giới thiệu
 Trong lĩnh vực xử lý tài liệu .NET, tối ưu hóa hiệu suất là điều tối quan trọng. Hãy tưởng tượng một tình huống mà bạn cần hiển thị nhiều trang tài liệu một cách nhanh chóng. Đây là lúc bộ nhớ đệm phát huy tác dụng. Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc tận dụng bộ nhớ đệm để nâng cao tốc độ xử lý tài liệu bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

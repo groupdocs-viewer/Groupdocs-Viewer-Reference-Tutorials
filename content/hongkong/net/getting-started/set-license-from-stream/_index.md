@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 增強您的 .NET 應用程序，以實現�
 weight: 11
 url: /zh-hant/net/getting-started/set-license-from-stream/
 ---
+
+# 從 Stream 設定許可證
+
 ## 介紹
 您是否希望為您的 .NET 應用程式提供進階文件檢視功能？ GroupDocs.Viewer for .NET 提供了一個全面的解決方案，可將文件檢視功能無縫整合到您的專案中。在本教程中，我們將深入研究利用 GroupDocs.Viewer for .NET 透過強大的文件查看功能豐富您的應用程式的過程。 
 ## 先決條件

@@ -6,6 +6,9 @@ description: Leer hoe u moeiteloos limieten voor de afbeeldingsgrootte kunt inst
 weight: 21
 url: /nl/net/rendering-options/set-image-size-limits/
 ---
+
+# Stel de limieten voor de afbeeldingsgrootte in
+
 ## Invoering
 GroupDocs.Viewer voor .NET is een krachtig hulpmiddel dat is ontworpen om naadloze documentweergave binnen .NET-toepassingen te vergemakkelijken. Met de robuuste functies en intuïtieve interface kunnen ontwikkelaars moeiteloos de mogelijkheden voor het bekijken van documenten in hun projecten integreren, waardoor de gebruikerservaring en productiviteit worden verbeterd. In deze zelfstudie onderzoeken we hoe u limieten voor de afbeeldingsgrootte kunt instellen met GroupDocs.Viewer voor .NET, waardoor een optimale weergave van documenten wordt gegarandeerd met behoud van prestaties en efficiëntie.
 ## Vereisten

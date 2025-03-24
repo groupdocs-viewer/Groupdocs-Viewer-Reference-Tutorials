@@ -6,6 +6,9 @@ description: Dễ dàng tích hợp tính năng xem tài liệu được bảo v
 weight: 12
 url: /vi/net/advanced-loading/load-password-protected-document/
 ---
+
+# Tải tài liệu được bảo vệ bằng mật khẩu
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc quản lý và xem các định dạng tài liệu khác nhau một cách liền mạch là điều cần thiết đối với nhiều doanh nghiệp cũng như cá nhân. May mắn thay, GroupDocs.Viewer dành cho .NET cung cấp giải pháp toàn diện cho các nhà phát triển .NET để dễ dàng tích hợp khả năng xem tài liệu vào ứng dụng của họ. Trong hướng dẫn này, chúng ta sẽ đi sâu vào một trong những chức năng thiết yếu của GroupDocs.Viewer: tải tài liệu được bảo vệ bằng mật khẩu. Chúng tôi sẽ chia nhỏ quy trình này theo từng bước để đảm bảo rằng các nhà phát triển có thể dễ dàng theo dõi và triển khai tính năng này vào dự án của họ.
 ## Điều kiện tiên quyết

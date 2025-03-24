@@ -7,6 +7,9 @@ weight: 28
 url: /vi/net/image-rendering/
 ---
 
+# Kết xuất hình ảnh
+
+
 ## Giới thiệu
 
 GroupDocs.Viewer dành cho .NET cung cấp nhiều hướng dẫn phong phú dành cho các nhà phát triển muốn thành thạo việc hiển thị hình ảnh trong các ứng dụng .NET của họ. Đi sâu vào Hướng dẫn kết xuất hình ảnh của chúng tôi để khám phá hướng dẫn từng bước, đoạn mã và mẹo chuyên môn để xử lý các định dạng hình ảnh đa dạng một cách dễ dàng.

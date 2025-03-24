@@ -6,6 +6,9 @@ description: Learn how to seamlessly load documents from streams using GroupDocs
 weight: 12
 url: /net/loading-documents/loading-document-stream/
 ---
+
+# Load Documents from Stream
+
 ## Introduction
 In the realm of .NET development, managing and viewing documents efficiently is paramount. With the advent of advanced tools and libraries, tasks that once seemed daunting are now simplified. Among these tools, GroupDocs.Viewer for .NET stands out as a versatile solution for seamlessly handling various document formats. In this comprehensive guide, we delve into the intricacies of using GroupDocs.Viewer for .NET to load documents from a stream. Whether you're a seasoned developer or just starting, this tutorial will equip you with the knowledge to harness the power of GroupDocs.Viewer effectively.
 ## Prerequisites

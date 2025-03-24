@@ -6,6 +6,9 @@ description: GroupDocs.Viewer를 사용하여 .NET 문서에서 누락된 글꼴
 weight: 20
 url: /ko/net/rendering-options/replace-missing-font/
 ---
+
+# 누락된 글꼴 바꾸기
+
 ## 소개
 .NET 개발 세계에서는 효율적인 문서 처리가 매우 중요합니다. .NET용 GroupDocs.Viewer는 .NET 응용 프로그램 내에서 다양한 문서 형식을 볼 수 있는 강력한 솔루션을 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 문서에서 누락된 글꼴을 바꾸는 방법을 살펴보겠습니다. PDF, PowerPoint 프리젠테이션 또는 Word 문서를 처리하는 경우 GroupDocs.Viewer는 글꼴이 누락된 경우에도 문서가 정확하게 렌더링되도록 프로세스를 단순화합니다.
 ## 전제조건

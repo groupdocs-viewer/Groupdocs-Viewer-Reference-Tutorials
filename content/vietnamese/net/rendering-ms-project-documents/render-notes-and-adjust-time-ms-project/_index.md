@@ -6,6 +6,9 @@ description: Kết xuất chính các tài liệu MS Project bằng GroupDocs.Vi
 weight: 11
 url: /vi/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# Kết xuất ghi chú và điều chỉnh đơn vị thời gian (MS Project)
+
 ## Giới thiệu
 GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển xem và thao tác các định dạng tài liệu khác nhau trong ứng dụng .NET của họ. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc hiển thị ghi chú và điều chỉnh đơn vị thời gian cụ thể cho tài liệu MS Project.
 ## Điều kiện tiên quyết

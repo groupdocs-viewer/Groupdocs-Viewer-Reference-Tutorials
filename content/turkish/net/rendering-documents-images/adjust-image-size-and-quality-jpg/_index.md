@@ -6,6 +6,9 @@ description: Groupdocs.Viewer for .NET'i kullanarak JPEG formatında görüntü 
 weight: 11
 url: /tr/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---
+
+# Resim Boyutunu ve Kalitesini Ayarlayın (JPG)
+
 ## giriiş
 Groupdocs.Viewer for .NET, geliştiricilerin belge görüntüleme işlevselliğini .NET uygulamalarına sorunsuz bir şekilde entegre etmelerini sağlayan güçlü bir kitaplıktır. Belge görüntüleme uygulamalarında yaygın bir gereksinim, özellikle JPEG (JPG) görüntülerle çalışırken görüntülerin boyutunu ve kalitesini ayarlama yeteneğidir. Bu öğreticide, Groupdocs.Viewer for .NET'i kullanarak görüntü boyutunu ve kalitesini ayarlama sürecinde size yol göstereceğiz.
 ## Önkoşullar

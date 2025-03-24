@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet archív fájlokat renderelni .NET-ben a G
 weight: 14
 url: /hu/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Adja meg a fájlnevet az archív fájlok renderelésekor
+
 ## Bevezetés
 .NET fejlesztés területén a GroupDocs.Viewer sokoldalú eszközként tűnik ki a különböző formátumú dokumentumok megjelenítéséhez. Robusztus jellemzőinek és rugalmasságának köszönhetően leegyszerűsíti a fájlok, köztük az archív fájlok megtekintésének folyamatát. Ebben az oktatóanyagban az archív fájlok GroupDocs.Viewer for .NET segítségével történő megjelenítésének sajátosságaival foglalkozunk. Ha követi ezeket a lépésenkénti utasításokat, megtanulhatja, hogyan adjon meg fájlnevet az archív fájlok előállításakor, lehetővé téve a zökkenőmentes dokumentumkezelést .NET-alkalmazásaiban.
 ## Előfeltételek

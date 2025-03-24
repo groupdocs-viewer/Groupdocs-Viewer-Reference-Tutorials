@@ -6,6 +6,9 @@ description: Débloquez des capacités de visualisation transparentes de documen
 weight: 12
 url: /fr/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# Désactiver les vérifications de licence de police dans PDF
+
 ## Introduction
 Dans le domaine du développement .NET, la gestion et la manipulation de documents constituent souvent un aspect crucial de nombreuses applications. Qu'il s'agisse de visualiser des PDF, des documents Word ou d'autres types de fichiers, il est essentiel de disposer d'outils robustes pour gérer ces tâches efficacement. C'est là qu'intervient GroupDocs.Viewer pour .NET. Cette puissante bibliothèque offre aux développeurs la possibilité d'intégrer de manière transparente la fonctionnalité de visualisation de documents dans leurs applications .NET.
 ## Conditions préalables

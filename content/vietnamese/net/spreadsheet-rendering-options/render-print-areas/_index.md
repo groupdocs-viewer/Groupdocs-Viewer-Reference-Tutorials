@@ -6,6 +6,9 @@ description: Khám phá GroupDocs.Viewer dành cho .NET và dễ dàng hiển th
 weight: 17
 url: /vi/net/spreadsheet-rendering-options/render-print-areas/
 ---
+
+# Kết xuất vùng in bằng GroupDocs.Viewer cho .NET
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn toàn diện này về cách tận dụng GroupDocs.Viewer dành cho .NET để hiển thị các vùng in trong tài liệu của bạn. Nếu bạn là nhà phát triển .NET đang tìm kiếm giải pháp mạnh mẽ để kết xuất tài liệu thì bạn đã đến đúng nơi. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình hiển thị vùng in bằng GroupDocs.Viewer, đảm bảo trải nghiệm liền mạch trong ứng dụng của bạn.
 ## Điều kiện tiên quyết

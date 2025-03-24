@@ -7,6 +7,9 @@ weight: 23
 url: /vi/net/rendering-options/
 ---
 
+# Tùy chọn hiển thị
+
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển ứng dụng .NET, việc hiển thị tài liệu hiệu quả thường là một khía cạnh quan trọng. Cho dù bạn đang xây dựng hệ thống quản lý nội dung, trình xem tài liệu hay bất kỳ ứng dụng nào khác liên quan đến hiển thị tài liệu, việc có các tùy chọn kết xuất mạnh mẽ có thể nâng cao đáng kể trải nghiệm và chức năng của người dùng.

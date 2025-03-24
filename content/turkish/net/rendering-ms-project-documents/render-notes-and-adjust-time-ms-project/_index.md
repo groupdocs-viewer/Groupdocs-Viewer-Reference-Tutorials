@@ -6,6 +6,9 @@ description: .NET için GroupDocs.Viewer ile MS Project belgelerinin ana işlenm
 weight: 11
 url: /tr/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# Notları Oluşturma ve Zaman Birimlerini Ayarlama (MS Project)
+
 ## giriiş
 GroupDocs.Viewer for .NET, geliştiricilerin .NET uygulamaları içindeki çeşitli belge formatlarını görüntülemesine ve değiştirmesine olanak tanıyan güçlü bir belge işleme API'sidir. Bu eğitimde, özellikle MS Project belgeleri için notların oluşturulmasına ve zaman birimlerinin ayarlanmasına odaklanacağız.
 ## Önkoşullar

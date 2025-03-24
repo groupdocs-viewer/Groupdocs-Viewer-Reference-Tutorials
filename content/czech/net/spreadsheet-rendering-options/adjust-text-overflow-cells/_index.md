@@ -6,6 +6,9 @@ description: Pomocí GroupDocs.Viewer můžete bez námahy spravovat přetečen�
 weight: 10
 url: /cs/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Upravit přetečení textu v buňkách
+
 ## Úvod
 V dynamickém světě vývoje .NET je řízení přetečení textu v buňkách zásadní pro vytváření vizuálně přitažlivých a čitelných dokumentů. GroupDocs.Viewer for .NET dává vývojářům k dispozici komplexní sadu nástrojů pro bezproblémové zvládnutí přetečení textu v tabulkových dokumentech. Tento tutoriál vás provede procesem úpravy přetečení textu v buňkách pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady

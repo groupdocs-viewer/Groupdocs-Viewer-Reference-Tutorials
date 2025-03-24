@@ -6,6 +6,9 @@ description: Explorez la magie de GroupDocs.Viewer pour .NET – intégrez de ma
 weight: 11
 url: /fr/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Obtenir les noms des feuilles de calcul
+
 ## Introduction
 Bienvenue dans le monde fascinant de GroupDocs.Viewer pour .NET ! Si vous êtes un développeur ou un passionné désireux d'explorer de puissantes fonctionnalités de visualisation de documents au sein de vos applications .NET, vous allez vous régaler. Dans ce guide complet, nous aborderons les subtilités de la récupération des noms de feuilles de calcul à l'aide de GroupDocs.Viewer. Alors attachez votre ceinture et embarquons pour ce voyage passionnant !
 ## Conditions préalables

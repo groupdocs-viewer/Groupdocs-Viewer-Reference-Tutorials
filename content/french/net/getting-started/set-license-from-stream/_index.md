@@ -6,6 +6,9 @@ description: Améliorez vos applications .NET avec GroupDocs.Viewer pour une vis
 weight: 11
 url: /fr/net/getting-started/set-license-from-stream/
 ---
+
+# Définir la licence à partir du flux
+
 ## Introduction
 Cherchez-vous à doter vos applications .NET de fonctionnalités avancées de visualisation de documents ? GroupDocs.Viewer for .NET offre une solution complète pour intégrer de manière transparente les fonctionnalités de visualisation de documents dans vos projets. Dans ce didacticiel, nous approfondirons le processus d'exploitation de GroupDocs.Viewer pour .NET pour enrichir vos applications avec de puissantes fonctionnalités de visualisation de documents. 
 ## Conditions préalables

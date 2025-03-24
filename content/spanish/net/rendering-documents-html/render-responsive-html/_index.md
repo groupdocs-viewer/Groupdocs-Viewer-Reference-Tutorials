@@ -6,6 +6,9 @@ description: Aprenda a representar HTML responsivo usando Groupdocs.Viewer para 
 weight: 13
 url: /es/net/rendering-documents-html/render-responsive-html/
 ---
+
+# Renderizar HTML responsivo
+
 ## Introducción
 Groupdocs.Viewer para .NET es una poderosa biblioteca que permite a los desarrolladores representar varios formatos de documentos en HTML responsivo. Este tutorial lo guiará a través del proceso de renderizado HTML responsivo usando Groupdocs.Viewer para .NET. Al final de este tutorial, podrá convertir sin problemas documentos a HTML que se adapta a diferentes tamaños de pantalla, garantizando una experiencia de visualización óptima en todos los dispositivos.
 ## Requisitos previos

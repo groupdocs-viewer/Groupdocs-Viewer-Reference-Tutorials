@@ -6,6 +6,9 @@ description: GroupDocs.Viewer를 사용하여 .NET에서 CHM 파일을 렌더링
 weight: 10
 url: /ko/net/rendering-web-documents/render-chm/
 ---
+
+# CHM 파일 렌더링
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 CHM(컴파일된 HTML 도움말) 파일을 렌더링하는 방법을 살펴보겠습니다. .NET용 GroupDocs.Viewer는 개발자가 외부 소프트웨어를 설치할 필요 없이 .NET 응용 프로그램 내에서 170개 이상의 문서 유형을 표시할 수 있는 강력한 문서 렌더링 API입니다.
 

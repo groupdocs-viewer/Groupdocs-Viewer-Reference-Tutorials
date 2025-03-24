@@ -6,6 +6,9 @@ description: Kelola lampiran dokumen secara efisien dalam aplikasi .NET mengguna
 weight: 12
 url: /id/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Ambil dan Simpan Lampiran Dokumen
+
 ## Perkenalan
 Di era digital, penanganan dokumen yang efisien sangat penting bagi bisnis dan individu. Baik itu mengelola email, melihat kontrak, atau mengakses laporan, memiliki alat yang andal untuk visualisasi dokumen sangatlah penting. GroupDocs.Viewer untuk .NET muncul sebagai solusi tangguh, memberdayakan pengguna untuk dengan mudah melihat dan berinteraksi dengan berbagai format dokumen langsung dalam aplikasi .NET mereka.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Nâng cao ứng dụng .NET của bạn bằng khả năng xem tài
 weight: 11
 url: /vi/net/advanced-loading/load-documents-encoding/
 ---
+
+# Tải tài liệu với mã hóa cụ thể
+
 ## Giới thiệu
 Bạn đang tìm kiếm một công cụ mạnh mẽ để xem tài liệu một cách liền mạch trong các ứng dụng .NET của mình? Không cần tìm đâu xa ngoài GroupDocs.Viewer dành cho .NET! Thư viện mạnh mẽ này cung cấp cho các nhà phát triển khả năng hiển thị dễ dàng các định dạng tài liệu khác nhau trực tiếp trong ứng dụng của họ, mang lại trải nghiệm xem trực quan và thân thiện với người dùng.
 ## Điều kiện tiên quyết

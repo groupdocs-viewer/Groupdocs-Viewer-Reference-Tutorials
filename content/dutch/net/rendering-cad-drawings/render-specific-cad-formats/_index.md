@@ -6,6 +6,9 @@ description: Leer hoe u specifieke CAD-formaten zoals CF2 naar HTML, JPG, PNG en
 weight: 12
 url: /nl/net/rendering-cad-drawings/render-specific-cad-formats/
 ---
+
+# Render specifieke CAD-formaten (CF2)
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u specifieke CAD-indelingen kunt weergeven met Groupdocs.Viewer voor .NET. Groupdocs.Viewer is een krachtige documentviewer-API waarmee ontwikkelaars meer dan 170 documenttypen in hun applicaties kunnen weergeven zonder dat hiervoor externe software-installaties nodig zijn. We zullen ons specifiek concentreren op het renderen van CAD-formaten zoals CF2 naar verschillende uitvoerformaten zoals HTML, JPG, PNG en PDF.
 ## Vereisten

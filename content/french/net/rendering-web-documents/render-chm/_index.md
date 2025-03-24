@@ -6,6 +6,9 @@ description: Découvrez comment restituer des fichiers CHM dans .NET à l'aide d
 weight: 10
 url: /fr/net/rendering-web-documents/render-chm/
 ---
+
+# Rendre les fichiers CHM
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment restituer des fichiers CHM (Compiled HTML Help) à l'aide de GroupDocs.Viewer pour .NET. GroupDocs.Viewer for .NET est une puissante API de rendu de documents qui permet aux développeurs d'afficher plus de 170 types de documents dans leurs applications .NET sans nécessiter d'installation de logiciel externe.
 

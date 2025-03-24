@@ -7,6 +7,9 @@ weight: 11
 url: /vi/net/rendering-email-messages/set-date-time-format-offset-email/
 ---
 
+# Đặt định dạng ngày giờ và chênh lệch múi giờ (Email)
+
+
 ## Giới thiệu
 GroupDocs.Viewer dành cho .NET là một công cụ mạnh mẽ cho phép các nhà phát triển tích hợp liền mạch khả năng xem tài liệu vào các ứng dụng .NET của họ. Với GroupDocs.Viewer, bạn có thể hiển thị nhiều định dạng tài liệu bao gồm PDF, tài liệu Microsoft Office, hình ảnh, v.v. trực tiếp trong ứng dụng của mình mà không cần bất kỳ plugin hoặc trình xem bên ngoài nào. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn qua quá trình thiết lập GroupDocs.Viewer cho .NET, khám phá các tính năng của nó và trình bày cách sử dụng nó một cách hiệu quả để nâng cao khả năng xem tài liệu của ứng dụng của bạn.
 ## Điều kiện tiên quyết

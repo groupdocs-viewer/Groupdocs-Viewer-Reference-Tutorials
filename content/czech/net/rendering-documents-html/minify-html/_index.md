@@ -6,6 +6,9 @@ description: Naučte se, jak hladce vykreslovat dokumenty HTML v aplikacích .NE
 weight: 11
 url: /cs/net/rendering-documents-html/minify-html/
 ---
+
+# Minifikujte vykreslený dokument HTML
+
 ## Úvod
 GroupDocs.Viewer for .NET je výkonný nástroj, který umožňuje vývojářům bezproblémově vykreslovat dokumenty HTML v rámci jejich aplikací .NET. S jeho intuitivním rozhraním API a robustní funkčností mohou vývojáři snadno integrovat možnosti prohlížení dokumentů do svých aplikací a zlepšit tak uživatelskou zkušenost a produktivitu.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Integrasikan kemampuan melihat dokumen ke dalam aplikasi .NET Anda 
 weight: 11
 url: /id/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# Ambil dan Cetak Lampiran Dokumen
+
 ## Perkenalan
 Dalam dunia pengembangan perangkat lunak, mengelola dan menampilkan dokumen secara efisien dalam aplikasi sangatlah penting. GroupDocs.Viewer untuk .NET memberikan solusi ampuh bagi pengembang untuk mengintegrasikan kemampuan melihat dokumen ke dalam aplikasi .NET mereka dengan lancar. Baik Anda sedang membangun sistem manajemen dokumen tingkat perusahaan atau penampil dokumen sederhana, GroupDocs.Viewer menawarkan serangkaian fitur lengkap untuk memenuhi kebutuhan Anda.
 ## Prasyarat

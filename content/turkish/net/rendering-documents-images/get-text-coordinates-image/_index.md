@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak görüntü oluşturmaya yön
 weight: 12
 url: /tr/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# Görüntü Oluşturma için Metin Koordinatlarını Alma
+
 ## giriiş
 GroupDocs.Viewer for .NET, geliştiricilerin PDF, Microsoft Office ve çok daha fazlası gibi çeşitli formatlardaki belgeleri sorunsuz bir şekilde oluşturmasına olanak tanıyan güçlü bir belge işleme API'sidir. Temel işlevlerinden biri, hassas görüntü oluşturma için metin koordinatlarını çıkarma yeteneğidir.
 ## Önkoşullar

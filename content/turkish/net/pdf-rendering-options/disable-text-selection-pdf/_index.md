@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak PDF'de metin seçimini nası
 weight: 13
 url: /tr/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# PDF'de Metin Seçimini Devre Dışı Bırak
+
 ## giriiş
 GroupDocs.Viewer for .NET, geliştiricilerin belge görüntüleme yeteneklerini .NET uygulamalarına zahmetsizce entegre etmelerine olanak tanıyan güçlü bir belge işleme API'sidir. GroupDocs.Viewer tarafından sağlanan temel işlevlerden biri, PDF belgelerinde metin seçimini devre dışı bırakma yeteneğidir. Bu özellik özellikle kullanıcıların hassas belgelerden metin kopyalamasını engellemeniz gereken senaryolarda kullanışlıdır, böylece belge güvenliği ve bütünlüğü sağlanır.
 ## Önkoşullar

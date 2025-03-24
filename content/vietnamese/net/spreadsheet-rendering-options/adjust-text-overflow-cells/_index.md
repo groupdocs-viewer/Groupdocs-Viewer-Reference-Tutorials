@@ -6,6 +6,9 @@ description: Dễ dàng quản lý tình trạng tràn văn bản trong tài li�
 weight: 10
 url: /vi/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Điều chỉnh tràn văn bản trong ô
+
 ## Giới thiệu
 Trong thế giới phát triển .NET năng động, việc quản lý tràn văn bản trong các ô là rất quan trọng để tạo ra các tài liệu dễ đọc và hấp dẫn về mặt hình ảnh. GroupDocs.Viewer dành cho .NET trao quyền cho các nhà phát triển một bộ công cụ toàn diện để xử lý liền mạch tình trạng tràn văn bản trong tài liệu bảng tính. Hướng dẫn này sẽ hướng dẫn bạn quy trình điều chỉnh tràn văn bản trong các ô bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết

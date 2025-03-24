@@ -6,6 +6,9 @@ description: Khám phá sự kỳ diệu của GroupDocs.Viewer dành cho .NET �
 weight: 11
 url: /vi/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Nhận tên bảng tính
+
 ## Giới thiệu
 Chào mừng bạn đến với thế giới hấp dẫn của GroupDocs.Viewer dành cho .NET! Nếu bạn là nhà phát triển hoặc người đam mê khám phá các khả năng xem tài liệu mạnh mẽ trong các ứng dụng .NET của mình thì bạn sẽ rất thích thú. Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào sự phức tạp của việc truy xuất tên bảng tính bằng GroupDocs.Viewer. Vì vậy, hãy thắt dây an toàn và bắt tay vào cuộc hành trình thú vị này!
 ## Điều kiện tiên quyết

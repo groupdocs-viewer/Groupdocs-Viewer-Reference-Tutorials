@@ -6,6 +6,9 @@ description: 探索 GroupDocs.Viewer for .NET 在精確呈現文件方面的強�
 weight: 14
 url: /zh-hant/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# 按分頁符號渲染
+
 ## 介紹
 歡迎來到 GroupDocs.Viewer for .NET 關於按分頁符號渲染文件的教學！在本逐步指南中，我們將探索如何利用 GroupDocs.Viewer 的強大功能來精確呈現文檔，特別關注分頁符號。無論您是經驗豐富的開發人員還是新手，本教學都將引導您完成整個過程，讓您清楚地了解每個步驟。
 ## 先決條件

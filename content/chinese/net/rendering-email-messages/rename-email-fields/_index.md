@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer for .NET 增强文档查看体验。无缝�
 weight: 12
 url: /zh/net/rendering-email-messages/rename-email-fields/
 ---
+
+# 在渲染期间重命名电子邮件字段
+
 ## 介绍
 
 在当今的数字时代，有效管理和查看文档对于企业和个人来说至关重要。无论是合同、报告还是电子邮件，能够无缝浏览这些文档都可以大大提高工作效率。这就是 GroupDocs.Viewer for .NET 发挥作用的地方。这个强大的库允许开发人员将文档查看功能直接集成到他们的 .NET 应用程序中，提供用于呈现各种文档格式的广泛功能。

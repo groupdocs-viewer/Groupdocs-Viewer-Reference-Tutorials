@@ -6,6 +6,9 @@ description: Aprenda como renderizar arquivos em páginas HTML usando GroupDocs.
 weight: 12
 url: /pt/net/rendering-archive-files/render-archives-html/
 ---
+
+# Renderizar arquivos em páginas HTML únicas ou múltiplas
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma poderosa biblioteca de renderização de documentos que permite aos desenvolvedores integrar facilmente recursos de visualização de documentos em seus aplicativos .NET. Se você precisa renderizar arquivos em uma ou várias páginas HTML, este tutorial irá guiá-lo passo a passo pelo processo.
 ## Pré-requisitos

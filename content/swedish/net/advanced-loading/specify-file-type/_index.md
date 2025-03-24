@@ -6,6 +6,9 @@ description: Lär dig hur du anger filtyp när du laddar dokument med GroupDocs.
 weight: 10
 url: /sv/net/advanced-loading/specify-file-type/
 ---
+
+# Ange filtyp när du laddar dokument
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett mångsidigt API för dokumentrendering som stöder ett brett utbud av filformat, inklusive DOCX, PDF, PPTX och mer. Genom att ange filtypen när du laddar dokument kan du säkerställa korrekt rendering och smidig visningsupplevelse för dina användare.
 ## Förutsättningar

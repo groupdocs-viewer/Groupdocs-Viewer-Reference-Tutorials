@@ -7,6 +7,9 @@ weight: 26
 url: /fr/net/getting-started/
 ---
 
+# Commencer
+
+
 ## Introduction
 
 Êtes-vous prêt à améliorer vos applications .NET avec de puissantes fonctionnalités de visualisation de documents ? Cherchez pas plus loin! Dans ce guide complet, nous vous expliquerons tout ce que vous devez savoir pour intégrer de manière transparente GroupDocs.Viewer for .NET dans vos projets.

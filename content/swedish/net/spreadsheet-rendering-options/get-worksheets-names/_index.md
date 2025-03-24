@@ -6,6 +6,9 @@ description: Utforska magin med GroupDocs.Viewer för .NET – integrera dokumen
 weight: 11
 url: /sv/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Få kalkylbladsnamn
+
 ## Introduktion
 Välkommen till den fascinerande världen av GroupDocs.Viewer för .NET! Om du är en utvecklare eller entusiast som är sugen på att utforska kraftfulla dokumentvisningsmöjligheter i dina .NET-applikationer, har du en njutning. I den här omfattande guiden kommer vi att fördjupa oss i krångligheterna med att hämta kalkylbladsnamn med GroupDocs.Viewer. Så spänn fast säkerhetsbältet och låt oss ge oss ut på denna spännande resa!
 ## Förutsättningar

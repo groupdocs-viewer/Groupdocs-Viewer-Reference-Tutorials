@@ -7,6 +7,9 @@ weight: 22
 url: /pl/net/advanced-usage-caching/
 ---
 
+# Zaawansowane użycie (buforowanie)
+
+
 ## Wstęp
 
 W dziedzinie tworzenia aplikacji .NET, gdzie wydajność i szybkość są najważniejsze, opanowanie zaawansowanych technik, takich jak buforowanie, może znacznie zwiększyć wydajność. Witamy w świecie GroupDocs.Viewer, w którym możesz wykorzystać moc buforowania, aby bez wysiłku usprawnić przetwarzanie dokumentów i zoptymalizować wydajność aplikacji.

@@ -6,6 +6,9 @@ description: إتقان عرض مستندات MS Project باستخدام GroupD
 weight: 11
 url: /ar/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
+
+# تقديم الملاحظات وضبط وحدات الوقت (MS Project)
+
 ## مقدمة
 GroupDocs.Viewer for .NET عبارة عن واجهة برمجة تطبيقات قوية لعرض المستندات تسمح للمطورين بعرض تنسيقات المستندات المختلفة ومعالجتها داخل تطبيقات .NET الخاصة بهم. في هذا البرنامج التعليمي، سنركز على تقديم الملاحظات وضبط وحدات الوقت خصيصًا لمستندات MS Project.
 ## المتطلبات الأساسية

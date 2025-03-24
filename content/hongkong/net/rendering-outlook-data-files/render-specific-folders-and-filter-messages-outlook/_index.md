@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 在 Outlook 中呈現�
 weight: 11
 url: /zh-hant/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# 渲染特定資料夾並過濾訊息 (Outlook)
+
 ## 介紹
 在 .NET 開發領域，有效管理和顯示文件至關重要。 GroupDocs.Viewer for .NET 透過提供無縫呈現各種文件格式的強大功能來簡化此任務。在本教學中，我們將深入研究如何使用 GroupDocs.Viewer for .NET 在 Outlook 中呈現特定資料夾和篩選訊息。
 ## 先決條件

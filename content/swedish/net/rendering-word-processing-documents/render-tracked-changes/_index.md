@@ -6,6 +6,9 @@ description: Upptäck hur du renderar spårade ändringar i dokument utan anstr�
 weight: 10
 url: /sv/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# Gör spårade ändringar
+
 ## Introduktion
 I dagens digitala era är hantering och visning av dokument effektivt avgörande för både företag och privatpersoner. Med tillkomsten av avancerad teknik har lösningar som GroupDocs.Viewer för .NET revolutionerat hur vi interagerar med olika dokumentformat, inklusive Word-dokument, PDF-filer och mer. I den här omfattande guiden kommer vi att fördjupa oss i hur du kan utnyttja GroupDocs.Viewer för .NET för att sömlöst återge spårade ändringar i dina dokument.
 ## Förutsättningar

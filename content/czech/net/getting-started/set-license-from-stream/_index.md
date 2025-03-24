@@ -6,6 +6,9 @@ description: Vylepšete své aplikace .NET pomocí GroupDocs.Viewer pro bezprobl
 weight: 11
 url: /cs/net/getting-started/set-license-from-stream/
 ---
+
+# Nastavit licenci ze streamu
+
 ## Úvod
 Chcete svým aplikacím .NET rozšířit možnosti pokročilého prohlížení dokumentů? GroupDocs.Viewer for .NET nabízí komplexní řešení pro bezproblémovou integraci funkcí prohlížení dokumentů do vašich projektů. V tomto tutoriálu se ponoříme do procesu využití GroupDocs.Viewer for .NET k obohacení vašich aplikací o výkonné možnosti prohlížení dokumentů. 
 ## Předpoklady

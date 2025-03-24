@@ -6,6 +6,9 @@ description: Hantera textspill utan problem i .NET-dokument med GroupDocs.Viewer
 weight: 10
 url: /sv/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Justera textspill i celler
+
 ## Introduktion
 I den dynamiska .NET-utvecklingsvärlden är hantering av textspill i celler avgörande för att skapa visuellt tilltalande och läsbara dokument. GroupDocs.Viewer för .NET ger utvecklare en omfattande uppsättning verktyg för att sömlöst hantera textspill i kalkylarksdokument. Denna handledning guidar dig genom processen att justera textspill i celler med GroupDocs.Viewer för .NET.
 ## Förutsättningar

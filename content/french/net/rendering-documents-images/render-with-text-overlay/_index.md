@@ -6,6 +6,9 @@ description: Restituez des documents de manière transparente dans les applicati
 weight: 13
 url: /fr/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Rendu avec texte superposé pour l'affichage
+
 ## Introduction
 Dans le domaine du développement .NET, la gestion et l'affichage transparents de divers formats de documents sont cruciaux pour de nombreuses applications. GroupDocs.Viewer pour .NET apparaît comme une solution puissante pour restituer sans effort des documents dans vos applications .NET. Qu'il s'agisse de PDF, de documents Word, de feuilles de calcul Excel ou de présentations PowerPoint, GroupDocs.Viewer simplifie le processus en offrant une gamme de fonctionnalités pour une visualisation améliorée des documents.
 ## Conditions préalables

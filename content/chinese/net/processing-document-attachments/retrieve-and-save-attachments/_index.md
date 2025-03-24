@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer 有效管理 .NET 应用程序中的文档�
 weight: 12
 url: /zh/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# 检索并保存文档附件
+
 ## 介绍
 在数字时代，高效的文档处理对于企业和个人都至关重要。无论是管理电子邮件、查看合同还是访问报告，拥有可靠的文档可视化工具都是至关重要的。 GroupDocs.Viewer for .NET 作为一个强大的解决方案出现，使用户能够直接在其 .NET 应用程序中轻松查看各种文档格式并与之交互。
 ## 先决条件

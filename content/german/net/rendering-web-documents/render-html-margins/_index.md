@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mithilfe von GroupDocs.Viewer HTML mit benutz
 weight: 11
 url: /de/net/rendering-web-documents/render-html-margins/
 ---
+
+# Rendern Sie HTML mit benutzerdefinierten Rändern
+
 ## Einführung
 Im Bereich der .NET-Entwicklung ist das Rendern von HTML mit benutzerdefinierten Rändern ein entscheidender Aspekt bei der Erstellung optisch ansprechender Dokumente. Ganz gleich, ob es darum geht, die Ränder einer Website anzupassen oder Drucklayouts zu konfigurieren: Die präzise Kontrolle der Ränder verbessert die Gesamtdarstellung des Inhalts. In diesem Tutorial befassen wir uns intensiv mit der Verwendung von GroupDocs.Viewer für .NET, um diese Funktionalität nahtlos zu erreichen.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 轻松呈现文档中�
 weight: 10
 url: /zh/net/rendering-word-processing-documents/render-tracked-changes/
 ---
+
+# 渲染跟踪更改
+
 ## 介绍
 在当今的数字时代，有效管理和查看文档对于企业和个人都至关重要。随着先进技术的出现，GroupDocs.Viewer for .NET 等解决方案彻底改变了我们与各种文档格式（包括 Word 文档、PDF 等）交互的方式。在本综合指南中，我们将深入研究如何利用 GroupDocs.Viewer for .NET 无缝呈现文档中的跟踪更改。
 ## 先决条件

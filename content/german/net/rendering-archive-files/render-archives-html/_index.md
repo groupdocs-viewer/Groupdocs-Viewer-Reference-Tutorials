@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie Archive mit GroupDocs.Viewer für .NET in HTM
 weight: 12
 url: /de/net/rendering-archive-files/render-archives-html/
 ---
+
+# Rendern Sie Archive auf einer oder mehreren HTML-Seiten
+
 ## Einführung
 GroupDocs.Viewer für .NET ist eine leistungsstarke Dokument-Rendering-Bibliothek, mit der Entwickler mühelos Dokumentanzeigefunktionen in ihre .NET-Anwendungen integrieren können. Unabhängig davon, ob Sie Archive auf einer oder mehreren HTML-Seiten rendern müssen, führt Sie dieses Tutorial Schritt für Schritt durch den Prozess.
 ## Voraussetzungen

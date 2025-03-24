@@ -6,6 +6,9 @@ description: Découvrez comment ajuster la taille de la page lors du rendu des e
 weight: 10
 url: /fr/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Ajuster la taille de la page lors du rendu des messages électroniques
+
 ## Introduction
 Dans le domaine du développement .NET, GroupDocs.Viewer fournit une solution complète pour le rendu de divers formats de documents, y compris les messages électroniques. Ce didacticiel se concentre sur l'ajustement de la taille de la page lors du rendu des messages électroniques au format PDF à l'aide de GroupDocs.Viewer pour .NET. En suivant les étapes décrites dans ce guide, vous apprendrez à manipuler de manière transparente la taille de la page pour répondre à vos besoins spécifiques.
 ## Conditions préalables

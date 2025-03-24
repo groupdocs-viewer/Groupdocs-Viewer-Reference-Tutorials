@@ -6,6 +6,9 @@ description: Zwiększ komfort przeglądania dokumentów dzięki GroupDocs.Viewer
 weight: 12
 url: /pl/net/rendering-email-messages/rename-email-fields/
 ---
+
+# Zmień nazwę pól e-mail podczas renderowania
+
 ## Wstęp
 
 dzisiejszej epoce cyfrowej wydajne zarządzanie dokumentami i przeglądanie ich ma ogromne znaczenie zarówno dla firm, jak i osób prywatnych. Niezależnie od tego, czy są to umowy, raporty czy wiadomości e-mail, możliwość płynnego poruszania się po tych dokumentach może znacznie zwiększyć produktywność. W tym miejscu do gry wchodzi GroupDocs.Viewer dla .NET. Ta potężna biblioteka umożliwia programistom integrowanie możliwości przeglądania dokumentów bezpośrednio z aplikacjami .NET, oferując szeroką gamę funkcji do renderowania różnych formatów dokumentów.

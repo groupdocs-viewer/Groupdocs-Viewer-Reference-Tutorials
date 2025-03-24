@@ -6,6 +6,9 @@ description: 通过利用缓存，使用 GroupDocs.Viewer 提高 .NET 应用程�
 weight: 10
 url: /zh/net/advanced-usage-caching/enable-caching/
 ---
+
+# 启用缓存以加快文档处理速度
+
 ## 介绍
 在 .NET 文档处理领域，优化性能至关重要。想象一下您需要快速渲染多个文档页面的场景。这就是缓存发挥作用的地方。在本教程中，我们将深入研究利用缓存来提高使用 GroupDocs.Viewer for .NET 的文档处理速度。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Quản lý hiệu quả các tệp đính kèm tài liệu trong c�
 weight: 12
 url: /vi/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Truy xuất và lưu tệp đính kèm tài liệu
+
 ## Giới thiệu
 Trong kỷ nguyên kỹ thuật số, việc xử lý tài liệu hiệu quả là rất quan trọng đối với các doanh nghiệp và cá nhân. Cho dù đó là quản lý email, xem hợp đồng hay truy cập báo cáo, việc có một công cụ đáng tin cậy để trực quan hóa tài liệu là điều cần thiết. GroupDocs.Viewer dành cho .NET nổi lên như một giải pháp mạnh mẽ, trao quyền cho người dùng dễ dàng xem và tương tác với các định dạng tài liệu khác nhau trực tiếp trong ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

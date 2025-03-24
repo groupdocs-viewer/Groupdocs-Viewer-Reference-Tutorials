@@ -6,6 +6,9 @@ description: Fedezze fel az átfogó oktatóanyagot a Groupdocs.Viewer for .NET 
 weight: 10
 url: /hu/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Megtekintési információk a Microsoft Project dokumentumokhoz
+
 ## Bevezetés
 dokumentumkezelési és -megtekintési megoldások terén a Groupdocs.Viewer for .NET sokoldalú és robusztus eszközként tűnik ki. Függetlenül attól, hogy Ön fejlesztő, aki dokumentummegtekintési képességeket szeretne integrálni .NET-alkalmazásaiba, vagy lelkes, aki szeretné felfedezni annak funkcióit, ez az oktatóanyag végigvezeti Önt a Groupdocs.Viewer for .NET használatán a Microsoft Project dokumentumok megtekintési információinak lekéréséhez. .
 ## Előfeltételek

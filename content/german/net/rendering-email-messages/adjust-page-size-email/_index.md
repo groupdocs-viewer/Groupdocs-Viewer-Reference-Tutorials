@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie die Seitengröße anpassen, wenn Sie E-Mail-N
 weight: 10
 url: /de/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Passen Sie die Seitengröße beim Rendern von E-Mail-Nachrichten an
+
 ## Einführung
 Im Bereich der .NET-Entwicklung bietet GroupDocs.Viewer eine umfassende Lösung zum Rendern verschiedener Dokumentformate, einschließlich E-Mail-Nachrichten. Dieses Tutorial konzentriert sich auf die Anpassung der Seitengröße beim Rendern von E-Mail-Nachrichten im PDF-Format mit GroupDocs.Viewer für .NET. Indem Sie die in diesem Leitfaden beschriebenen Schritte befolgen, erfahren Sie, wie Sie die Seitengröße nahtlos an Ihre spezifischen Anforderungen anpassen können.
 ## Voraussetzungen

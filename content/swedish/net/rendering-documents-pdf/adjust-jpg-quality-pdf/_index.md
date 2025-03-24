@@ -6,6 +6,9 @@ description: Lär dig hur du justerar JPG-bildkvalitet i renderade PDF-dokument 
 weight: 11
 url: /sv/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---
+
+# Justera JPG-bildkvalitet i renderad PDF
+
 ## Introduktion
 den här handledningen kommer vi att lära oss hur du justerar kvaliteten på JPG-bilder när du renderar en PDF med GroupDocs.Viewer för .NET. Detta kraftfulla bibliotek låter dig se och manipulera olika dokumentformat i dina .NET-applikationer sömlöst.
 ## Förutsättningar

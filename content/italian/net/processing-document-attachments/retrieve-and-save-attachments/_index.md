@@ -6,6 +6,9 @@ description: Gestisci in modo efficiente i documenti allegati all'interno delle 
 weight: 12
 url: /it/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Recupera e salva gli allegati dei documenti
+
 ## introduzione
 Nell’era digitale, una gestione efficiente dei documenti è fondamentale sia per le aziende che per i privati. Che si tratti di gestire e-mail, visualizzare contratti o accedere a report, disporre di uno strumento affidabile per la visualizzazione dei documenti è essenziale. GroupDocs.Viewer per .NET emerge come una soluzione solida, che consente agli utenti di visualizzare e interagire facilmente con vari formati di documenti direttamente all'interno delle loro applicazioni .NET.
 ## Prerequisiti

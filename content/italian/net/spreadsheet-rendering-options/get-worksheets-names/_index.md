@@ -6,6 +6,9 @@ description: Esplora la magia di GroupDocs.Viewer per .NET integra perfettamente
 weight: 11
 url: /it/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Ottieni nomi di fogli di lavoro
+
 ## introduzione
 Benvenuti nell'affascinante mondo di GroupDocs.Viewer per .NET! Se sei uno sviluppatore o un appassionato desideroso di esplorare potenti funzionalità di visualizzazione di documenti all'interno delle tue applicazioni .NET, sei pronto per una sorpresa. In questa guida completa, approfondiremo le complessità del recupero dei nomi dei fogli di lavoro utilizzando GroupDocs.Viewer. Quindi, allacciate la cintura di sicurezza e intraprendiamo questo emozionante viaggio!
 ## Prerequisiti

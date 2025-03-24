@@ -6,6 +6,9 @@ description: Apprenez à restituer des figures Visio à l'aide de GroupDocs.View
 weight: 10
 url: /fr/net/rendering-visio-documents/render-visio-figures/
 ---
+
+# Rendu des figures Visio
+
 ## Introduction
 À l'ère numérique d'aujourd'hui, le rendu des documents joue un rôle crucial dans diverses applications. Qu'il s'agisse d'afficher des documents sur un site Web ou de les convertir dans différents formats, un rendu efficace est essentiel. GroupDocs.Viewer pour .NET fournit une solution robuste pour afficher et manipuler des documents dans les applications .NET. Dans ce didacticiel, nous aborderons le rendu des figures Visio à l'aide de GroupDocs.Viewer pour .NET, en décomposant le processus en étapes simples.
 ## Conditions préalables

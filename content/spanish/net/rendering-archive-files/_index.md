@@ -6,6 +6,9 @@ description: Descubra tutoriales completos para representar archivos comprimidos
 weight: 24
 url: /es/net/rendering-archive-files/
 ---
+
+# Representar archivos de almacenamiento
+
 ## Introducción
 
 ¿Está buscando una integración perfecta de GroupDocs.Viewer para .NET en sus aplicaciones para obtener capacidades eficientes de representación y visualización de documentos? ¡No busque más! Nuestros tutoriales cubren todo lo que necesita saber para aprovechar al máximo la renderización de archivos comprimidos. Profundicemos en los detalles.

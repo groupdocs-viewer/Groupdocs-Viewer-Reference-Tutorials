@@ -6,6 +6,9 @@ description: Återge CAD-ritningar sömlöst i .NET-applikationer med GroupDocs.
 weight: 13
 url: /sv/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Rendera lager i CAD-ritningar
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt verktyg som gör det möjligt för utvecklare att sömlöst integrera dokumentåtergivningsmöjligheter i sina .NET-applikationer. Oavsett om du behöver rendera CAD-ritningar, PDF-filer, Microsoft Office-dokument eller mer, erbjuder GroupDocs.Viewer en heltäckande lösning.
 ## Förutsättningar

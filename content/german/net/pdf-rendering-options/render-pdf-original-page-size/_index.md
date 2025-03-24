@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET PDFs mit Origi
 weight: 17
 url: /de/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# PDF mit Originalseitengröße rendern
+
 ## Einführung
 Im Bereich der .NET-Entwicklung zeichnet sich GroupDocs.Viewer als leistungsstarkes Tool zum Rendern verschiedener Dokumentformate, einschließlich PDFs, aus. Eine häufige Anforderung bei der Dokumentenverarbeitung besteht darin, PDFs unter Beibehaltung ihrer ursprünglichen Seitengröße darzustellen. Um diese Aufgabe reibungslos zu bewältigen, ist ein umfassendes Verständnis von GroupDocs.Viewer für .NET und seinen Funktionalitäten erforderlich.
 ## Voraussetzungen

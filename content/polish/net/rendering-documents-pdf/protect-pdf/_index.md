@@ -6,6 +6,9 @@ description: Chroń swoje renderowane pliki PDF za pomocą haseł, korzystając 
 weight: 12
 url: /pl/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Chroń renderowany plik PDF hasłem
+
 ## Wstęp
 tym samouczku dowiesz się, jak używać programu Groupdocs.Viewer dla platformy .NET do ochrony renderowanego pliku PDF hasłem. Dodając zabezpieczenia, możesz kontrolować dostęp do swoich dokumentów PDF, zapewniając poufność i integralność.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Entdecken Sie das umfassende Tutorial zur Nutzung von Groupdocs.Vie
 weight: 10
 url: /de/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Rufen Sie Ansichtsinformationen für Microsoft Project-Dokumente ab
+
 ## Einführung
 Im Bereich der Dokumentenverwaltungs- und Anzeigelösungen zeichnet sich Groupdocs.Viewer für .NET als vielseitiges und robustes Tool aus. Ganz gleich, ob Sie ein Entwickler sind, der Dokumentanzeigefunktionen in Ihre .NET-Anwendungen integrieren möchte, oder ein Enthusiast, der dessen Funktionalitäten erkunden möchte, dieses Tutorial führt Sie durch den Prozess der Nutzung von Groupdocs.Viewer für .NET zum Abrufen von Ansichtsinformationen für Microsoft Project-Dokumente .
 ## Voraussetzungen

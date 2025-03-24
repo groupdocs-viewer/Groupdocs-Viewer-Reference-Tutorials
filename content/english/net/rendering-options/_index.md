@@ -7,6 +7,9 @@ weight: 23
 url: /net/rendering-options/
 ---
 
+# Rendering Options
+
+
 ## Introduction
 
 In the realm of .NET application development, effective document rendering is often a crucial aspect. Whether you're building a content management system, a document viewer, or any other application dealing with document display, having robust rendering options can significantly enhance user experience and functionality.

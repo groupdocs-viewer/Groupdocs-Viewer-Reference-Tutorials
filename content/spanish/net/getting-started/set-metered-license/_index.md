@@ -6,6 +6,9 @@ description: Mejore sus aplicaciones .NET con GroupDocs.Viewer para una visualiz
 weight: 12
 url: /es/net/getting-started/set-metered-license/
 ---
+
+# Establecer licencia medida
+
 ## Introducción
 En el mundo del desarrollo .NET, incorporar potentes capacidades de visualización de documentos en sus aplicaciones es esencial para mejorar la experiencia y la funcionalidad del usuario. GroupDocs.Viewer para .NET ofrece una solución sólida para integrar perfectamente funcionalidades de visualización de documentos en sus proyectos .NET. Ya sea que esté trabajando con archivos PDF, documentos de Microsoft Office o varios formatos de imagen, GroupDocs.Viewer simplifica el proceso de renderización y visualización de estos documentos dentro de sus aplicaciones.
 ## Requisitos previos

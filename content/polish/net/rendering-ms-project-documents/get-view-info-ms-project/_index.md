@@ -6,6 +6,9 @@ description: Zapoznaj się z obszernym samouczkiem na temat wykorzystania progra
 weight: 10
 url: /pl/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Uzyskaj informacje o wyświetlaniu dokumentów projektu Microsoft
+
 ## Wstęp
 dziedzinie rozwiązań do zarządzania i przeglądania dokumentów Groupdocs.Viewer dla .NET wyróżnia się jako wszechstronne i solidne narzędzie. Niezależnie od tego, czy jesteś programistą chcącym zintegrować możliwości przeglądania dokumentów z aplikacjami .NET, czy entuzjastą pragnącym poznać jego funkcjonalności, ten samouczek poprowadzi Cię przez proces wykorzystania Groupdocs.Viewer dla .NET do pobierania informacji o widoku dokumentów Microsoft Project .
 ## Warunki wstępne

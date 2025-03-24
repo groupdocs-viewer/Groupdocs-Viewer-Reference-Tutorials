@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan engedélyezheti a betűtípus-utalást PDF-doku
 weight: 14
 url: /hu/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Engedélyezze a Font Hinting használatát PDF-ben
+
 ## Bevezetés
 GroupDocs.Viewer for .NET egy hatékony eszköz a .NET-alkalmazásokon belüli különféle dokumentumformátumok megtekintésére és kezelésére. Függetlenül attól, hogy PDF-ekkel, Microsoft Office dokumentumokkal, képekkel vagy más formátumokkal dolgozik, a GroupDocs.Viewer zökkenőmentes megoldást kínál ezeknek a fájloknak a megjelenítésére és a velük való interakcióra.
 ## Előfeltételek

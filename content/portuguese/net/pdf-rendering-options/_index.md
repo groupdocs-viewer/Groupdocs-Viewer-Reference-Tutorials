@@ -7,6 +7,9 @@ weight: 38
 url: /pt/net/pdf-rendering-options/
 ---
 
+# Opções de renderização de PDF
+
+
 ## Introdução
 
 Libere todo o potencial da renderização de PDF com os tutoriais do GroupDocs.Viewer for .NET. Mergulhe em várias opções para aprimorar sua experiência de visualização de documentos.

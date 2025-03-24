@@ -7,6 +7,9 @@ weight: 22
 url: /cs/net/advanced-usage-caching/
 ---
 
+# Pokročilé použití (ukládání do mezipaměti)
+
+
 ## Úvod
 
 V oblasti vývoje aplikací .NET, kde jsou prvořadé efektivita a rychlost, může zvládnutí pokročilých technik, jako je ukládání do mezipaměti, výrazně zvýšit výkon. Vítejte ve světě GroupDocs.Viewer, kde můžete využít sílu mezipaměti k zjednodušení zpracování dokumentů a optimalizaci výkonu vaší aplikace bez námahy.

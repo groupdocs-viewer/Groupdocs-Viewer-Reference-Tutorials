@@ -6,6 +6,9 @@ description: Hatékonyan kezelheti a dokumentummellékleteket a .NET-alkalmazás
 weight: 12
 url: /hu/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Dokumentummellékletek lekérése és mentése
+
 ## Bevezetés
 A digitális korszakban a hatékony dokumentumkezelés kulcsfontosságú a vállalkozások és a magánszemélyek számára egyaránt. Legyen szó e-mailek kezeléséről, szerződések megtekintéséről vagy jelentések eléréséről, elengedhetetlen egy megbízható eszköz a dokumentumok megjelenítéséhez. A GroupDocs.Viewer for .NET robusztus megoldásként jelenik meg, amely lehetővé teszi a felhasználók számára, hogy könnyedén megtekintsenek és kezeljenek különféle dokumentumformátumokat közvetlenül .NET-alkalmazásaikon belül.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị hình ảnh APNG ở nhiều định
 weight: 11
 url: /vi/net/image-rendering/render-apng-images/
 ---
+
+# Kết xuất hình ảnh APNG
+
 ## Giới thiệu
 Groupdocs.Viewer cho .NET là một công cụ mạnh mẽ cho phép các nhà phát triển hiển thị liền mạch các định dạng tài liệu khác nhau trong các ứng dụng .NET của họ. Trong số nhiều tính năng của nó, nó cung cấp chức năng mạnh mẽ để hiển thị hình ảnh APNG (Đồ họa mạng di động hoạt hình), cho phép các nhà phát triển hiển thị hình ảnh APNG ở các định dạng khác nhau như HTML, JPG, PNG và PDF.
 

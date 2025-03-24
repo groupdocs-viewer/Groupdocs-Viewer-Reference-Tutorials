@@ -6,6 +6,9 @@ description: 了解如何輕鬆地將 GroupDocs.Viewer for .NET 整合到您的�
 weight: 10
 url: /zh-hant/net/getting-started/set-license-from-file/
 ---
+
+# 從文件設定許可證
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的文件檢視器 API，它使 .NET 開發人員能夠將文件檢視功能無縫整合到他們的應用程式中。無論您需要顯示各種格式（例如 PDF、Microsoft Office 或圖像）的文檔，GroupDocs.Viewer 都能提供具有廣泛自訂選項的可靠解決方案。
 ## 先決條件

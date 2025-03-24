@@ -6,6 +6,9 @@ description: Buka kunci data tersembunyi di spreadsheet dengan mudah menggunakan
 weight: 13
 url: /id/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Render Kolom dan Baris Tersembunyi
+
 ## Perkenalan
 Dalam bidang visualisasi dokumen, GroupDocs.Viewer untuk .NET berdiri sebagai alat tangguh yang memfasilitasi rendering berbagai format dokumen dengan lancar. Salah satu kemampuan yang menarik adalah kemampuan untuk menampilkan kolom dan baris tersembunyi di dalam spreadsheet. Dalam tutorial ini, kami akan mempelajari langkah-langkah untuk membuka fitur ini dan mengeluarkan potensi data Anda.
 ## Prasyarat

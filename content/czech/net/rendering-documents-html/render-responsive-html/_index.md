@@ -6,6 +6,9 @@ description: Naučte se vykreslovat responzivní HTML pomocí Groupdocs.Viewer f
 weight: 13
 url: /cs/net/rendering-documents-html/render-responsive-html/
 ---
+
+# Render responzivní HTML
+
 ## Úvod
 Groupdocs.Viewer for .NET je výkonná knihovna, která umožňuje vývojářům vykreslovat různé formáty dokumentů do responzivního HTML. Tento tutoriál vás provede procesem vykreslování responzivního HTML pomocí Groupdocs.Viewer pro .NET. Na konci tohoto tutoriálu budete schopni plynule převádět dokumenty do HTML, které se přizpůsobí různým velikostem obrazovky a zajistí optimální zážitek ze sledování na různých zařízeních.
 ## Předpoklady

@@ -7,6 +7,9 @@ weight: 26
 url: /zh-hant/net/getting-started/
 ---
 
+# 入門
+
+
 ## 介紹
 
 您準備好透過強大的文件檢視功能來增強您的 .NET 應用程式了嗎？別再猶豫了！在這份綜合指南中，我們將引導您了解有關將 GroupDocs.Viewer for .NET 無縫整合到您的專案中所需了解的所有資訊。

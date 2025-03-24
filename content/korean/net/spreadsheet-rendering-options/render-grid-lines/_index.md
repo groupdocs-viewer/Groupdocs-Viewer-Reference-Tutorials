@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 문서 시각화를 향상
 weight: 12
 url: /ko/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# 렌더링 그리드 선
+
 ## 소개
 .NET용 GroupDocs.Viewer를 사용하여 문서에서 격자선을 렌더링하는 방법에 대한 단계별 가이드에 오신 것을 환영합니다. 숙련된 개발자이든 .NET 프레임워크를 처음 접하는 사람이든 관계없이 이 자습서에서는 자세한 설명과 따라하기 쉬운 예제를 통해 프로세스를 안내합니다.
 ## 전제조건

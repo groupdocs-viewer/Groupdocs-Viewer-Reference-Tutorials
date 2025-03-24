@@ -6,6 +6,9 @@ description: Intégrez les fonctionnalités de visualisation de documents dans v
 weight: 11
 url: /fr/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# Récupérer et imprimer les pièces jointes de documents
+
 ## Introduction
 Dans le monde du développement de logiciels, la gestion et l’affichage efficaces des documents au sein des applications sont essentiels. GroupDocs.Viewer pour .NET fournit une solution puissante permettant aux développeurs d'intégrer de manière transparente les fonctionnalités de visualisation de documents dans leurs applications .NET. Que vous construisiez un système de gestion de documents au niveau de l'entreprise ou une simple visionneuse de documents, GroupDocs.Viewer offre un ensemble complet de fonctionnalités pour répondre à vos besoins.
 ## Conditions préalables

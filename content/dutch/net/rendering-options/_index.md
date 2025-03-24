@@ -7,6 +7,9 @@ weight: 23
 url: /nl/net/rendering-options/
 ---
 
+# Weergaveopties
+
+
 ## Invoering
 
 Bij de ontwikkeling van .NET-applicaties is effectieve documentweergave vaak een cruciaal aspect. Of u nu een contentmanagementsysteem, een documentviewer of een andere toepassing bouwt die zich bezighoudt met de weergave van documenten, robuuste weergaveopties kunnen de gebruikerservaring en functionaliteit aanzienlijk verbeteren.

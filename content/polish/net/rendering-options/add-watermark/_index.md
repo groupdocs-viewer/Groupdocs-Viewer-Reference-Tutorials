@@ -6,6 +6,9 @@ description: Dowiedz się, jak bezproblemowo dodawać znaki wodne do dokumentów
 weight: 10
 url: /pl/net/rendering-options/add-watermark/
 ---
+
+# Dodaj znak wodny w dokumencie
+
 ## Wstęp
 W dzisiejszej erze cyfrowej płynne zarządzanie różnymi formatami dokumentów i przeglądanie ich jest koniecznością zarówno dla wielu firm, jak i osób prywatnych. Na szczęście dzięki narzędziom takim jak GroupDocs.Viewer dla .NET obsługa dokumentów staje się dziecinnie prosta. Ta potężna biblioteka .NET umożliwia programistom bezproblemową integrację funkcji przeglądania dokumentów z ich aplikacjami, umożliwiając użytkownikom przeglądanie dokumentów bez konieczności korzystania z oryginalnego oprogramowania, które je utworzyło.
 ## Warunki wstępne

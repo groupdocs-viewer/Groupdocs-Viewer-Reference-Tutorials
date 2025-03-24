@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 停用 PDF 中的字�
 weight: 11
 url: /zh-hant/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# 禁用 PDF 中的字元分組
+
 ## 介紹
 在 .NET 開發領域，處理文件檢視有時可能是一個挑戰，尤其是在處理 PDF 等格式時。但是，借助正確的工具和知識，您可以有效地簡化此過程。 GroupDocs.Viewer for .NET 就是一款可以解決這問題的工具。這個功能強大的程式庫使開發人員能夠在其 .NET 應用程式中無縫呈現和顯示各種文件類型。
 ## 先決條件

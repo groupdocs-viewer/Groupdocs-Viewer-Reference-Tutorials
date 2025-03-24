@@ -6,6 +6,9 @@ description: Aprenda como renderizar documentos com comentários usando GroupDoc
 weight: 13
 url: /pt/net/rendering-options/render-document-comments/
 ---
+
+# Renderizar documento com comentários
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma biblioteca poderosa que permite aos desenvolvedores integrar perfeitamente recursos de renderização de documentos em seus aplicativos .NET. Se você precisa exibir documentos do Word, planilhas do Excel, apresentações do PowerPoint, arquivos PDF ou outros formatos, o GroupDocs.Viewer oferece uma solução simples.
 Neste tutorial, focaremos na renderização de documentos com comentários usando GroupDocs.Viewer for .NET. Orientaremos você nos pré-requisitos, na importação de namespaces e forneceremos um guia passo a passo para renderizar documentos com comentários, garantindo que você compreenda cada conceito completamente.

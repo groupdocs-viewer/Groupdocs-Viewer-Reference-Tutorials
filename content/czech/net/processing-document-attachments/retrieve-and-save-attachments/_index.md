@@ -6,6 +6,9 @@ description: Efektivně spravujte přílohy dokumentů v rámci aplikací .NET p
 weight: 12
 url: /cs/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Načíst a uložit přílohy dokumentů
+
 ## Úvod
 V digitální éře je efektivní zpracování dokumentů zásadní pro podniky i jednotlivce. Ať už jde o správu e-mailů, prohlížení smluv nebo přístup k sestavám, mít spolehlivý nástroj pro vizualizaci dokumentů je zásadní. GroupDocs.Viewer for .NET se ukazuje jako robustní řešení, které uživatelům umožňuje bez námahy prohlížet různé formáty dokumentů a pracovat s nimi přímo v jejich aplikacích .NET.
 ## Předpoklady

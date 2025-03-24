@@ -6,6 +6,9 @@ description: Kusursuz belge görüntüleme için .NET uygulamalarınızı GroupD
 weight: 12
 url: /tr/net/getting-started/set-metered-license/
 ---
+
+# Ölçülü Lisansı Ayarla
+
 ## giriiş
 .NET geliştirme dünyasında, güçlü belge görüntüleme yeteneklerini uygulamalarınıza dahil etmek, kullanıcı deneyimini ve işlevselliğini geliştirmek için çok önemlidir. GroupDocs.Viewer for .NET, belge görüntüleme işlevlerini .NET projelerinize sorunsuz bir şekilde entegre etmek için güçlü bir çözüm sunar. İster PDF'lerle, Microsoft Office belgeleriyle ister çeşitli görüntü formatlarıyla çalışıyor olun, GroupDocs.Viewer bu belgeleri uygulamalarınız içinde oluşturma ve görüntüleme sürecini basitleştirir.
 ## Önkoşullar

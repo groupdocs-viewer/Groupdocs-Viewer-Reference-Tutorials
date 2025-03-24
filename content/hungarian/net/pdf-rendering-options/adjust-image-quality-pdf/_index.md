@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan állíthatja be a képminőséget PDF-dokumentu
 weight: 10
 url: /hu/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# Állítsa be a képminőséget PDF-ben
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén integrálják a dokumentum-megjelenítési képességeket .NET-alkalmazásaikba. Ennek a könyvtárnak az egyik legfontosabb jellemzője a képminőség beállítási lehetősége PDF-dokumentumok renderelésekor. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a képminőség beállításának folyamatán a GroupDocs.Viewer for .NET használatával.
 ## Előfeltételek

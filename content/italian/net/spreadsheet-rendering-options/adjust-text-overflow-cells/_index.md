@@ -6,6 +6,9 @@ description: Gestisci facilmente l'overflow del testo nei documenti .NET con Gro
 weight: 10
 url: /it/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# Regola l'eccesso di testo nelle celle
+
 ## introduzione
 Nel mondo dinamico dello sviluppo .NET, la gestione dell'overflow del testo nelle celle è fondamentale per creare documenti visivamente accattivanti e leggibili. GroupDocs.Viewer per .NET fornisce agli sviluppatori un set completo di strumenti per gestire senza problemi il testo in eccesso nei fogli di calcolo. Questo tutorial ti guiderà attraverso il processo di regolazione dell'overflow del testo nelle celle utilizzando GroupDocs.Viewer per .NET.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 PDF 문서에서 계층화
 weight: 15
 url: /ko/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# PDF에서 계층화된 렌더링 활성화
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 PDF 문서에서 계층화된 렌더링을 활성화하는 프로세스를 자세히 살펴보겠습니다. 계층화된 렌더링을 통해 향상된 문서 표시 및 조작이 가능해 사용자에게 보다 대화형 보기 환경을 제공합니다.
 ## 전제조건

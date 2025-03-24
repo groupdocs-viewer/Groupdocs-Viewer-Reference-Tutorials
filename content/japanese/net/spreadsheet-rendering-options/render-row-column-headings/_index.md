@@ -6,6 +6,9 @@ description: .NET でのドキュメント表示を強化します。 GroupDocs.
 weight: 18
 url: /ja/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# 行見出しと列見出しをレンダリングする
+
 ## 導入
 .NET アプリケーションでのドキュメントの表示エクスペリエンスを強化したいと考えていますか? GroupDocs.Viewer for .NET を使用すると、スプレッドシート ファイルから行見出しと列見出しをシームレスにレンダリングできます。このチュートリアルでは、HTML、JPG、PNG、PDF などのさまざまな出力形式を使用して行見出しと列見出しをレンダリングするプロセスを説明します。
 ## 前提条件

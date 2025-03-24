@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 呈現帶有註解的�
 weight: 13
 url: /zh-hant/net/rendering-options/render-document-comments/
 ---
+
+# 渲染帶有註釋的文檔
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的程式庫，使開發人員能夠將文件呈現功能無縫整合到他們的 .NET 應用程式中。無論您需要顯示 Word 文件、Excel 試算表、PowerPoint 簡報、PDF 文件或其他格式，GroupDocs.Viewer 都能提供簡單的解決方案。
 在本教程中，我們將重點放在使用 GroupDocs.Viewer for .NET 呈現帶有註解的文件。我們將引導您完成先決條件、匯入命名空間，並提供使用註釋呈現文件的逐步指南，確保您徹底掌握每個概念。

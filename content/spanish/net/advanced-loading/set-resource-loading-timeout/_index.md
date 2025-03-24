@@ -6,6 +6,9 @@ description: Aprenda a configurar tiempos de espera de carga de recursos en Grou
 weight: 13
 url: /es/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Establecer tiempo de espera de carga de recursos (avanzado)
+
 ## Introducción
 En el ámbito del desarrollo .NET, GroupDocs.Viewer proporciona un potente conjunto de herramientas para representar documentos e imágenes con precisión y eficiencia. Aprovechar sus capacidades requiere comprender sus complejidades, incluido el establecimiento de tiempos de espera de carga de recursos. En este tutorial, profundizaremos en el proceso de configuración de tiempos de espera de carga de recursos en GroupDocs.Viewer para .NET.
 ## Requisitos previos

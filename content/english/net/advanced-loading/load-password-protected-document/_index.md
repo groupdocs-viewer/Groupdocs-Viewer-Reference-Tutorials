@@ -6,6 +6,9 @@ description: Effortlessly integrate password-protected document viewing into .NE
 weight: 12
 url: /net/advanced-loading/load-password-protected-document/
 ---
+
+# Load Password-Protected Documents
+
 ## Introduction
 In today's digital age, managing and viewing various document formats seamlessly is a necessity for many businesses and individuals alike. Luckily, GroupDocs.Viewer for .NET provides a comprehensive solution for .NET developers to effortlessly integrate document viewing capabilities into their applications. In this tutorial, we'll delve into one of the essential functionalities of GroupDocs.Viewer: loading password-protected documents. We'll break down the process step by step, ensuring that developers can easily follow along and implement this feature into their projects.
 ## Prerequisites

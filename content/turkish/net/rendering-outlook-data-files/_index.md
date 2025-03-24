@@ -6,6 +6,9 @@ description: .NET için GroupDocs.Viewer ile Outlook Veri Dosyaları (PST, OST) 
 weight: 39
 url: /tr/net/rendering-outlook-data-files/
 ---
+
+# Outlook Veri Dosyalarını İşleme (PST, OST)
+
 ## giriiş
 
 Günümüzün dijital ortamında, Outlook Veri Dosyalarını (PST, OST) verimli bir şekilde yönetmek çok önemlidir. GroupDocs.Viewer for .NET, geliştiricilere görünüm bilgilerini sorunsuz bir şekilde çıkarma, belirli klasörleri oluşturma, mesajları filtreleme ve Outlook veri dosyalarındaki öğe sayısını sınırlama olanağı sağlar. Bu eğitimlerin inceliklerini keşfetmek için bir yolculuğa çıkalım.

@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị tệp CHM và HTML với lề tùy c
 weight: 35
 url: /vi/net/rendering-web-documents/
 ---
+
+# Hiển thị tài liệu web
+
 ## Giới thiệu
 
 Làm sáng tỏ sự phức tạp của việc hiển thị tài liệu web bằng GroupDocs.Viewer cho .NET thông qua các hướng dẫn toàn diện. Hiển thị tệp CHM và tùy chỉnh lề HTML là các chức năng quan trọng có thể nâng cao đáng kể khả năng xử lý tài liệu của bạn.

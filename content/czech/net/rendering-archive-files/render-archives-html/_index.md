@@ -6,6 +6,9 @@ description: Naučte se vykreslovat archivy na stránky HTML pomocí GroupDocs.V
 weight: 12
 url: /cs/net/rendering-archive-files/render-archives-html/
 ---
+
+# Vykreslit archivy na jednu nebo více stránek HTML
+
 ## Úvod
 GroupDocs.Viewer for .NET je výkonná knihovna pro vykreslování dokumentů, která umožňuje vývojářům bez námahy integrovat možnosti prohlížení dokumentů do jejich aplikací .NET. Ať už potřebujete vykreslit archivy na jednu nebo více stránek HTML, tento tutoriál vás provede procesem krok za krokem.
 ## Předpoklady

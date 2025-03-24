@@ -6,6 +6,9 @@ description: Verwalten Sie Dokumentanhänge in .NET-Anwendungen effizient mit Gr
 weight: 12
 url: /de/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
+
+# Dokumentanhänge abrufen und speichern
+
 ## Einführung
 Im digitalen Zeitalter ist eine effiziente Dokumentenverarbeitung für Unternehmen und Privatpersonen gleichermaßen von entscheidender Bedeutung. Ob es darum geht, E-Mails zu verwalten, Verträge anzuzeigen oder auf Berichte zuzugreifen, ein zuverlässiges Tool zur Dokumentenvisualisierung ist unerlässlich. GroupDocs.Viewer für .NET erweist sich als robuste Lösung, die es Benutzern ermöglicht, verschiedene Dokumentformate mühelos direkt in ihren .NET-Anwendungen anzuzeigen und mit ihnen zu interagieren.
 ## Voraussetzungen

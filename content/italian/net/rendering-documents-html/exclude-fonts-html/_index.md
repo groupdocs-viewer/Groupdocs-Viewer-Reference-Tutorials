@@ -6,6 +6,9 @@ description: Scopri come escludere i caratteri dall'HTML sottoposto a rendering 
 weight: 10
 url: /it/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Escludi caratteri dall'HTML renderizzato
+
 ## introduzione
 GroupDocs.Viewer per .NET è una potente libreria di rendering di documenti che consente agli sviluppatori di visualizzare oltre 50 formati di documenti nelle loro applicazioni .NET senza la necessità di dipendenze esterne. In questo tutorial, ci concentreremo su una funzionalità specifica di GroupDocs.Viewer: esclusione dei caratteri dall'output HTML renderizzato. 
 ## Prerequisiti

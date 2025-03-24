@@ -6,6 +6,9 @@ description: Bez námahy vykreslujte obrázky WMZ a WMF v aplikacích .NET pomoc
 weight: 18
 url: /cs/net/image-rendering/render-wmz-wmf-images/
 ---
+
+# Vykreslování obrázků WMZ a WMF
+
 ## Úvod
 
 V oblasti vývoje softwaru je prvořadá efektivní manipulace a vykreslování různých formátů dokumentů. GroupDocs.Viewer for .NET je výkonný nástroj, který usnadňuje vykreslování široké škály formátů dokumentů a zajišťuje bezproblémovou integraci a vylepšené uživatelské prostředí v rámci aplikací .NET. Mezi jeho schopnosti patří vykreslování obrázků WMZ a WMF, což je úkol, se kterým se často setkáváme ve scénářích zpracování dokumentů.

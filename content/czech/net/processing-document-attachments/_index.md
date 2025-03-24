@@ -6,6 +6,9 @@ description: Naučte se, jak bez námahy integrovat možnosti prohlížení doku
 weight: 32
 url: /cs/net/processing-document-attachments/
 --- 
+
+# Zpracování příloh dokumentů
+
 ## Úvod
 
 V oblasti vývoje aplikací .NET je prvořadé začlenění možností efektivního prohlížení dokumentů. S GroupDocs.Viewer for .NET se tento proces stává nejen zjednodušeným, ale také pozoruhodně intuitivním. Tento článek se ponoří do složitosti bezproblémové práce s přílohami dokumentů ve vašich aplikacích .NET.

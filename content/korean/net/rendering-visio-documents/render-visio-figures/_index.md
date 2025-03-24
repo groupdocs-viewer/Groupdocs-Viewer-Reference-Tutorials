@@ -6,6 +6,9 @@ description: 이 포괄적인 기능을 통해 .NET용 GroupDocs.Viewer를 사�
 weight: 10
 url: /ko/net/rendering-visio-documents/render-visio-figures/
 ---
+
+# Visio 그림 렌더링
+
 ## 소개
 오늘날의 디지털 시대에 문서 렌더링은 다양한 응용 프로그램에서 중요한 역할을 합니다. 웹사이트에 문서를 표시하거나 다른 형식으로 변환하는 경우 효율적인 렌더링이 필수적입니다. .NET용 GroupDocs.Viewer는 .NET 응용 프로그램 내에서 문서를 보고 조작하기 위한 강력한 솔루션을 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 Visio 그림을 렌더링하는 방법을 자세히 알아보고 프로세스를 간단한 단계로 나누어 보겠습니다.
 ## 전제조건

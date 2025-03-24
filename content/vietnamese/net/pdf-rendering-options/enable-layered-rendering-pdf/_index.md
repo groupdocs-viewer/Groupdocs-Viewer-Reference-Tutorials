@@ -6,6 +6,9 @@ description: Tìm hiểu cách bật hiển thị lớp trong tài liệu PDF b�
 weight: 15
 url: /vi/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Bật hiển thị lớp trong PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình cho phép hiển thị theo lớp trong tài liệu PDF bằng GroupDocs.Viewer cho .NET. Kết xuất theo lớp cho phép hiển thị và thao tác tài liệu nâng cao, cung cấp cho người dùng trải nghiệm xem tương tác hơn.
 ## Điều kiện tiên quyết

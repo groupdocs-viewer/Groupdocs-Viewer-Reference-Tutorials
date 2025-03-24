@@ -6,6 +6,9 @@ description: Découvrez comment afficher des dossiers spécifiques et filtrer de
 weight: 11
 url: /fr/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Rendre des dossiers spécifiques et filtrer les messages (Outlook)
+
 ## Introduction
 Dans le monde du développement .NET, une gestion et un affichage efficaces des documents sont cruciaux. GroupDocs.Viewer pour .NET simplifie cette tâche en fournissant des fonctionnalités puissantes pour restituer de manière transparente différents formats de documents. Dans ce didacticiel, nous verrons comment afficher des dossiers spécifiques et filtrer des messages dans Outlook à l'aide de GroupDocs.Viewer pour .NET.
 ## Conditions préalables

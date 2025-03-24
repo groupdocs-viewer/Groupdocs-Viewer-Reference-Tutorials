@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 이미지 렌더링을 위
 weight: 12
 url: /ko/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# 이미지 렌더링을 위한 텍스트 좌표 가져오기
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 PDF, Microsoft Office 등과 같은 다양한 형식의 문서를 원활하게 렌더링할 수 있는 강력한 문서 렌더링 API입니다. 주요 기능 중 하나는 정확한 이미지 렌더링을 위해 텍스트 좌표를 추출하는 기능입니다.
 ## 전제조건

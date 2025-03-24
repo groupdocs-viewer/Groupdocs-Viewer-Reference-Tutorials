@@ -6,6 +6,9 @@ description: .NET용 Groupdocs.Viewer를 사용하여 Outlook 데이터 파일�
 weight: 12
 url: /ko/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---
+
+# Outlook 데이터 파일에서 렌더링할 항목 수 제한
+
 ## 소개
 .NET용 Groupdocs.Viewer는 문서 보기 기능을 .NET 응용 프로그램에 원활하게 통합하려는 개발자를 위한 강력한 도구입니다. 응용 프로그램 내에서 PDF, Microsoft Office 문서 또는 Outlook 데이터 파일을 표시해야 하는 경우 Groupdocs.Viewer는 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 단계별 지침을 사용하여 Outlook 데이터 파일에서 특별히 렌더링되는 항목 수를 제한하는 방법을 살펴보겠습니다.
 ## 전제조건

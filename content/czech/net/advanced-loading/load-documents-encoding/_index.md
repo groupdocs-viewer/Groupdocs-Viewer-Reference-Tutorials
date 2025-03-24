@@ -6,6 +6,9 @@ description: Vylepšete své aplikace .NET bezproblémovým prohlížením dokum
 weight: 11
 url: /cs/net/advanced-loading/load-documents-encoding/
 ---
+
+# Načtěte dokumenty se specifickým kódováním
+
 ## Úvod
 Hledáte výkonný nástroj pro bezproblémové prohlížení dokumentů ve vašich aplikacích .NET? Nehledejte nic jiného než GroupDocs.Viewer pro .NET! Tato robustní knihovna poskytuje vývojářům možnost bez námahy zobrazovat různé formáty dokumentů přímo v jejich aplikacích a nabízí intuitivní a uživatelsky přívětivé prohlížení.
 ## Předpoklady

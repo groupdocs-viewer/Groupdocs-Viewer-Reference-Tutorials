@@ -6,6 +6,9 @@ description: Intégrez Groupdocs.Viewer pour .NET de manière transparente dans 
 weight: 11
 url: /fr/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# Annuler le rendu avec le jeton d'annulation
+
 ## Introduction
 Groupdocs.Viewer pour .NET est un outil puissant conçu pour simplifier la visualisation et le traitement des documents dans les applications .NET. Que vous traitiez de PDF, de documents Microsoft Office ou d'autres formats courants, cette bibliothèque offre des fonctionnalités robustes pour intégrer de manière transparente les capacités de visualisation de documents dans vos projets .NET.
 ## Conditions préalables

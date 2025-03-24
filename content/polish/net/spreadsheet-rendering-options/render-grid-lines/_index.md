@@ -6,6 +6,9 @@ description: Ulepsz wizualizację dokumentów za pomocą GroupDocs.Viewer dla .N
 weight: 12
 url: /pl/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Renderuj linie siatki
+
 ## Wstęp
 Witamy w tym przewodniku krok po kroku dotyczącym używania programu GroupDocs.Viewer dla platformy .NET do renderowania linii siatki w dokumentach. Niezależnie od tego, czy jesteś doświadczonym programistą, czy nowicjuszem w środowisku .NET, ten samouczek przeprowadzi Cię przez proces za pomocą szczegółowych wyjaśnień i łatwych do naśladowania przykładów.
 ## Warunki wstępne

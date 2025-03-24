@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 停用 PDF 中的文�
 weight: 13
 url: /zh-hant/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# 停用 PDF 中的文字選擇
+
 ## 介紹
 GroupDocs.Viewer for .NET 是一個功能強大的文件呈現 API，可讓開發人員輕鬆地將文件檢視功能整合到他們的 .NET 應用程式中。 GroupDocs.Viewer 提供的關鍵功能之一是能夠停用 PDF 文件中的文字選擇。當您需要防止使用者複製敏感文件中的文本，確保文件的安全性和完整性時，此功能特別有用。
 ## 先決條件

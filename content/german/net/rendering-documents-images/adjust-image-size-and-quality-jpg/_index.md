@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie Bildgröße und -qualität im JPEG-Format mit
 weight: 11
 url: /de/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---
+
+# Bildgröße und -qualität anpassen (JPG)
+
 ## Einführung
 Groupdocs.Viewer für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Funktionen zur Dokumentenanzeige nahtlos in ihre .NET-Anwendungen zu integrieren. Eine häufige Anforderung bei Dokumentenanzeigeanwendungen ist die Möglichkeit, die Größe und Qualität von Bildern anzupassen, insbesondere beim Umgang mit JPEG-Bildern (JPG). In diesem Tutorial führen wir Sie durch den Prozess der Anpassung der Bildgröße und -qualität mit Groupdocs.Viewer für .NET.
 ## Voraussetzungen

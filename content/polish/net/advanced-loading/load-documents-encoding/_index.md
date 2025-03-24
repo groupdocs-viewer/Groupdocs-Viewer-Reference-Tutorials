@@ -6,6 +6,9 @@ description: Ulepsz swoje aplikacje .NET dzięki płynnemu przeglądaniu dokumen
 weight: 11
 url: /pl/net/advanced-loading/load-documents-encoding/
 ---
+
+# Załaduj dokumenty z określonym kodowaniem
+
 ## Wstęp
 Szukasz potężnego narzędzia do płynnego przeglądania dokumentów w aplikacjach .NET? Nie szukaj dalej – GroupDocs.Viewer dla .NET! Ta solidna biblioteka zapewnia programistom możliwość łatwego wyświetlania różnych formatów dokumentów bezpośrednio w ich aplikacjach, oferując intuicyjne i przyjazne dla użytkownika doświadczenie przeglądania.
 ## Warunki wstępne

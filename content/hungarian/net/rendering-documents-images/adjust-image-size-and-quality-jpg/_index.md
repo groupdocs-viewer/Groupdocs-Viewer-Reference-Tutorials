@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan optimalizálhatja a képméretet és -minőség
 weight: 11
 url: /hu/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---
+
+# A kép méretének és minőségének beállítása (JPG)
+
 ## Bevezetés
 A Groupdocs.Viewer for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési funkciókat .NET-alkalmazásaikba. A dokumentummegjelenítő alkalmazások egyik általános követelménye a képek méretének és minőségének módosítása, különösen JPEG (JPG) képek kezelésekor. Ebben az oktatóanyagban végigvezetjük a képméret és -minőség beállításának folyamatán a Groupdocs.Viewer for .NET használatával.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Explore how to extract view information from Outlook Data Files (PS
 weight: 10
 url: /net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---
+
+# Get View Information for Outlook Data Files (PST, OST)
+
 ## Introduction
 In the realm of document management and viewing, GroupDocs.Viewer for .NET stands as a powerful tool, particularly when it comes to handling Outlook Data Files (PST, OST). In this tutorial, we'll delve into the process of extracting view information for these files step by step.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: GroupDocs.Viewer を使用して .NET アプリケーションを�
 weight: 12
 url: /ja/net/getting-started/set-metered-license/
 ---
+
+# 従量制ライセンスの設定
+
 ## 導入
 .NET 開発の世界では、ユーザー エクスペリエンスと機能を向上させるために、強力なドキュメント表示機能をアプリケーションに組み込むことが不可欠です。 GroupDocs.Viewer for .NET は、ドキュメント表示機能を .NET プロジェクトにシームレスに統合するための堅牢なソリューションを提供します。 PDF、Microsoft Office ドキュメント、またはさまざまな画像形式を扱う場合でも、GroupDocs.Viewer を使用すると、アプリケーション内でこれらのドキュメントをレンダリングおよび表示するプロセスが簡素化されます。
 ## 前提条件

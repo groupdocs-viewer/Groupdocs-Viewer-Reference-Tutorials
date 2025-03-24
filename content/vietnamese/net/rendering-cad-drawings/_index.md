@@ -7,6 +7,9 @@ weight: 25
 url: /vi/net/rendering-cad-drawings/
 ---
 
+# Kết xuất bản vẽ CAD
+
+
 ## Giới thiệu
 
 GroupDocs.Viewer dành cho .NET cung cấp các hướng dẫn toàn diện để hiển thị bản vẽ CAD, cung cấp cho các nhà phát triển những hiểu biết sâu sắc có giá trị trong việc tận dụng công cụ mạnh mẽ này. Trong bài viết này, chúng ta sẽ khám phá nhiều hướng dẫn khác nhau được liệt kê trong danh mục "Kết xuất bản vẽ CAD" để giúp bạn hiểu cách tích hợp kết xuất tệp CAD một cách liền mạch vào các ứng dụng .NET của bạn.

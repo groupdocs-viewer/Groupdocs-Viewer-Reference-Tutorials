@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan jeleníthet meg bizonyos mappákat és szűrhet
 weight: 11
 url: /hu/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Adott mappák és szűrőüzenetek renderelése (Outlook)
+
 ## Bevezetés
 A .NET fejlesztés világában a dokumentumok hatékony kezelése és megjelenítése kulcsfontosságú. A GroupDocs.Viewer for .NET leegyszerűsíti ezt a feladatot, mivel hatékony funkciókat biztosít a különböző dokumentumformátumok zökkenőmentes megjelenítéséhez. Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet adott mappákat megjeleníteni és üzeneteket szűrni az Outlookban a GroupDocs.Viewer for .NET segítségével.
 ## Előfeltételek

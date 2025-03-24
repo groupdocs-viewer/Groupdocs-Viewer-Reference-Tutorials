@@ -6,6 +6,9 @@ description: Aprenda a renderizar imágenes de IA sin esfuerzo en aplicaciones .
 weight: 10
 url: /es/net/image-rendering/render-ai-images/
 ---
+
+# Renderizar imágenes de IA
+
 ## Introducción
 GroupDocs.Viewer para .NET es una poderosa biblioteca que permite a los desarrolladores representar sin esfuerzo varios formatos de documentos dentro de sus aplicaciones .NET. Ya sea que necesite mostrar imágenes AI, archivos PDF u otros tipos de documentos, GroupDocs.Viewer simplifica el proceso y ofrece múltiples formatos de salida para una integración perfecta en sus proyectos. Este tutorial lo guiará a través de la representación de imágenes de IA paso a paso utilizando GroupDocs.Viewer para .NET.
 ## Requisitos previos

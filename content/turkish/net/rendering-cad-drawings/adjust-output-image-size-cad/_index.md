@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak CAD çizimleri için çıkt�
 weight: 15
 url: /tr/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# CAD Çizimleri için Çıktı Görüntü Boyutunu Ayarlama
+
 ## giriiş
 CAD çizimleri genellikle optimum görüntüleme ve sunum için özel ayarlamalar gerektirir. GroupDocs.Viewer for .NET, CAD çizimleri çıktısını yönetmek ve özelleştirmek için güçlü bir araç seti sağlar. Bu eğitimde, CAD çizimleri için çıktı görüntü boyutunu ayarlama sürecinde size adım adım rehberlik edeceğiz.
 ## Önkoşullar

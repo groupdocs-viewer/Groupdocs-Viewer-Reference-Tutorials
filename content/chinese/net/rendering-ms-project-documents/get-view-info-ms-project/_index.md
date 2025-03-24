@@ -6,6 +6,9 @@ description: 探索有关利用 Groupdocs.Viewer for .NET 轻松检索 Microsoft
 weight: 10
 url: /zh/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# 获取 Microsoft Project 文档的查看信息
+
 ## 介绍
 在文档管理和查看解决方案领域，Groupdocs.Viewer for .NET 作为一款多功能且强大的工具脱颖而出。无论您是寻求将文档查看功能集成到 .NET 应用程序中的开发人员，还是渴望探索其功能的爱好者，本教程都将指导您完成利用 Groupdocs.Viewer for .NET 检索 Microsoft Project 文档的视图信息的过程。
 ## 先决条件

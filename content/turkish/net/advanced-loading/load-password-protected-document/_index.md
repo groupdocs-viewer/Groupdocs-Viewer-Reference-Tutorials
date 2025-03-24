@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak parola korumalı belge gör�
 weight: 12
 url: /tr/net/advanced-loading/load-password-protected-document/
 ---
+
+# Parola Korumalı Belgeleri Yükleyin
+
 ## giriiş
 Günümüzün dijital çağında, çeşitli belge formatlarını sorunsuz bir şekilde yönetmek ve görüntülemek, birçok işletme ve benzer bireyler için bir zorunluluktur. Neyse ki GroupDocs.Viewer for .NET, .NET geliştiricilerinin belge görüntüleme yeteneklerini uygulamalarına zahmetsizce entegre etmeleri için kapsamlı bir çözüm sunuyor. Bu eğitimde GroupDocs.Viewer'ın temel işlevlerinden birini inceleyeceğiz: parola korumalı belgeleri yükleme. Geliştiricilerin bu özelliği kolayca takip edebilmelerini ve projelerine uygulayabilmelerini sağlamak için süreci adım adım inceleyeceğiz.
 ## Önkoşullar

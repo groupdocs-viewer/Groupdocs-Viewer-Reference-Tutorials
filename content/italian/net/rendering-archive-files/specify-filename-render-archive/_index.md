@@ -6,6 +6,9 @@ description: Scopri come eseguire il rendering dei file di archivio in .NET util
 weight: 14
 url: /it/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Specificare il nome file durante il rendering dei file di archivio
+
 ## introduzione
 Nell'ambito dello sviluppo .NET, GroupDocs.Viewer si distingue come uno strumento versatile per il rendering di documenti di vari formati. Con le sue funzionalità robuste e flessibilità, semplifica il processo di visualizzazione dei file, inclusi i file di archivio. In questo tutorial, approfondiremo le specifiche del rendering dei file di archivio utilizzando GroupDocs.Viewer per .NET. Seguendo queste istruzioni dettagliate, imparerai come specificare un nome file durante il rendering dei file di archivio, consentendo una gestione fluida dei documenti all'interno delle tue applicazioni .NET.
 ## Prerequisiti

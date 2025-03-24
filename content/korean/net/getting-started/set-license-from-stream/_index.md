@@ -6,6 +6,9 @@ description: 원활한 문서 보기를 위해 GroupDocs.Viewer를 사용하여 
 weight: 11
 url: /ko/net/getting-started/set-license-from-stream/
 ---
+
+# 스트림에서 라이선스 설정
+
 ## 소개
 고급 문서 보기 기능으로 .NET 애플리케이션을 강화하고 싶으십니까? .NET용 GroupDocs.Viewer는 문서 보기 기능을 프로젝트에 완벽하게 통합하는 포괄적인 솔루션을 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 활용하여 강력한 문서 보기 기능으로 응용 프로그램을 강화하는 프로세스를 자세히 살펴보겠습니다. 
 ## 전제조건

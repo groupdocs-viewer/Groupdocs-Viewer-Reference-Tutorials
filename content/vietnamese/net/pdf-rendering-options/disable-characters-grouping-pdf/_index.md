@@ -6,6 +6,9 @@ description: Tìm hiểu cách tắt tính năng nhóm ký tự trong tệp PDF 
 weight: 11
 url: /vi/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# Vô hiệu hóa nhóm ký tự trong PDF
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc xử lý việc xem tài liệu đôi khi có thể là một thách thức, đặc biệt là khi xử lý các định dạng như PDF. Tuy nhiên, với các công cụ và kiến thức phù hợp, bạn có thể hợp lý hóa quy trình này một cách hiệu quả. Một công cụ được giải cứu là GroupDocs.Viewer dành cho .NET. Thư viện mạnh mẽ này trao quyền cho các nhà phát triển kết xuất và hiển thị liền mạch các loại tài liệu khác nhau trong các ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

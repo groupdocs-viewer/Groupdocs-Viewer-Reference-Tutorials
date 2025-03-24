@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 Outlook에서 특정 폴�
 weight: 11
 url: /ko/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# 특정 폴더 렌더링 및 메시지 필터링(Outlook)
+
 ## 소개
 .NET 개발 세계에서는 문서를 효율적으로 관리하고 표시하는 것이 중요합니다. .NET용 GroupDocs.Viewer는 다양한 문서 형식을 원활하게 렌더링하기 위한 강력한 기능을 제공하여 이 작업을 단순화합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 Outlook에서 특정 폴더를 렌더링하고 메시지를 필터링하는 방법을 살펴보겠습니다.
 ## 전제조건

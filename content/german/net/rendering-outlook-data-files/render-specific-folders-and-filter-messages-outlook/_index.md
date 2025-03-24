@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET bestimmte Ordn
 weight: 11
 url: /de/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Bestimmte Ordner rendern und Nachrichten filtern (Outlook)
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist die effiziente Verwaltung und Anzeige von Dokumenten von entscheidender Bedeutung. GroupDocs.Viewer für .NET vereinfacht diese Aufgabe, indem es leistungsstarke Funktionen zum nahtlosen Rendern verschiedener Dokumentformate bereitstellt. In diesem Tutorial befassen wir uns mit der Darstellung bestimmter Ordner und dem Filtern von Nachrichten in Outlook mithilfe von GroupDocs.Viewer für .NET.
 ## Voraussetzungen

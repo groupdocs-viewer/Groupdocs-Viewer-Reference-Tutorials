@@ -6,6 +6,9 @@ description: Naučte se vykreslovat obrázky SVG a SVGZ pomocí GroupDocs.Viewer
 weight: 16
 url: /cs/net/image-rendering/render-svg-svgz-images/
 ---
+
+# Renderujte obrázky SVG a SVGZ
+
 ## Úvod
 tomto tutoriálu vás provedeme procesem vykreslování obrázků SVG a SVGZ pomocí GroupDocs.Viewer pro .NET. GroupDocs.Viewer for .NET je výkonné rozhraní API pro vykreslování dokumentů, které umožňuje vývojářům vykreslovat různé formáty dokumentů v jejich aplikacích .NET. SVG a SVGZ jsou oblíbené obrazové formáty používané pro vektorovou grafiku a pomocí GroupDocs.Viewer pro .NET je můžete snadno vykreslit do různých výstupních formátů, jako jsou HTML, JPG, PNG a PDF.
 ## Předpoklady

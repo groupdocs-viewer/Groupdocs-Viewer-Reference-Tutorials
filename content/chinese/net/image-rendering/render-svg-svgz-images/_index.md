@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 渲染 SVG 和 SVGZ �
 weight: 16
 url: /zh/net/image-rendering/render-svg-svgz-images/
 ---
+
+# 渲染 SVG 和 SVGZ 图像
+
 ## 介绍
 在本教程中，我们将指导您完成使用 GroupDocs.Viewer for .NET 渲染 SVG 和 SVGZ 图像的过程。 GroupDocs.Viewer for .NET 是一个功能强大的文档呈现 API，使开发人员能够在其 .NET 应用程序中呈现各种文档格式。 SVG 和 SVGZ 是用于矢量图形的流行图像格式，通过 GroupDocs.Viewer for .NET，您可以轻松将它们渲染为不同的输出格式，例如 HTML、JPG、PNG 和 PDF。
 ## 先决条件

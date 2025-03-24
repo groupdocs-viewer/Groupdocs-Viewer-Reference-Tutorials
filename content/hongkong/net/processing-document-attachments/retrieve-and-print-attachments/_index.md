@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer for .NET 將文件檢視功能無縫整合�
 weight: 11
 url: /zh-hant/net/processing-document-attachments/retrieve-and-print-attachments/
 ---
+
+# 檢索並列印文件附件
+
 ## 介紹
 在軟體開發領域，在應用程式中有效管理和顯示文件至關重要。 GroupDocs.Viewer for .NET 為開發人員提供了強大的解決方案，將文件檢視功能無縫整合到他們的 .NET 應用程式中。無論您是建立企業級文件管理系統還是簡單的文件檢視器，GroupDocs.Viewer 都提供了一套全面的功能來滿足您的需求。
 ## 先決條件

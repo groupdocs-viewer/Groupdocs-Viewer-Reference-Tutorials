@@ -6,6 +6,9 @@ description: CAD-rajzok zökkenőmentes megjelenítése .NET-alkalmazásokban a 
 weight: 13
 url: /hu/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Rétegek renderelése CAD rajzokban
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentum-megjelenítési képességeket .NET-alkalmazásaikba. Akár CAD-rajzokat, PDF-eket, Microsoft Office dokumentumokat vagy egyebeket kell renderelni, a GroupDocs.Viewer átfogó megoldást kínál.
 ## Előfeltételek

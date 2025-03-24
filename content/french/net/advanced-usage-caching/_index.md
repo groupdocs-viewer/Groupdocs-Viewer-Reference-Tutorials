@@ -7,6 +7,9 @@ weight: 22
 url: /fr/net/advanced-usage-caching/
 ---
 
+# Utilisation avancée (mise en cache)
+
+
 ## Introduction
 
 Dans le domaine du développement d'applications .NET, où l'efficacité et la rapidité sont primordiales, la maîtrise de techniques avancées telles que la mise en cache peut améliorer considérablement les performances. Bienvenue dans le monde de GroupDocs.Viewer, où vous pouvez exploiter la puissance de la mise en cache pour rationaliser le traitement des documents et optimiser les performances de votre application sans effort.

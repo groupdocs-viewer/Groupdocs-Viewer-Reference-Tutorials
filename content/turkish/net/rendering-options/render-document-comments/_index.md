@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak yorum içeren belgeleri nas�
 weight: 13
 url: /tr/net/rendering-options/render-document-comments/
 ---
+
+# Belgeyi Yorumlarla Oluştur
+
 ## giriiş
 GroupDocs.Viewer for .NET, geliştiricilerin belge işleme yeteneklerini .NET uygulamalarına sorunsuz bir şekilde entegre etmelerini sağlayan güçlü bir kitaplıktır. Word belgelerini, Excel elektronik tablolarını, PowerPoint sunumlarını, PDF dosyalarını veya diğer formatları görüntülemeniz gerekiyorsa, GroupDocs.Viewer basit bir çözüm sunar.
 Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak yorumları içeren belgeleri oluşturmaya odaklanacağız. Önkoşullar, ad alanlarının içe aktarılması konusunda size yol göstereceğiz ve her bir kavramı iyice kavramanızı sağlayacak şekilde, yorumları içeren belgeleri işlemek için adım adım bir kılavuz sunacağız.

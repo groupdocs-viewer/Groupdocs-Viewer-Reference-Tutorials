@@ -6,6 +6,9 @@ description: Odemkněte skrytá data v tabulkách bez námahy pomocí GroupDocs.
 weight: 13
 url: /cs/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Vykreslení skrytých sloupců a řádků
+
 ## Úvod
 V oblasti vizualizace dokumentů je GroupDocs.Viewer for .NET robustní nástroj, který usnadňuje bezproblémové vykreslování různých formátů dokumentů. Jednou ze zajímavých funkcí je schopnost odhalit skryté sloupce a řádky v tabulkách. V tomto tutoriálu se ponoříme do kroků k odemknutí této funkce a uvolnění potenciálu vašich dat.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet CDR-képeket renderelni HTML, JPG, PNG é
 weight: 12
 url: /hu/net/image-rendering/render-cdr-images/
 ---
+
+# Rendereljen CDR képeket
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük a CDR (CorelDRAW) képek GroupDocs.Viewer for .NET segítségével történő előállítási folyamatán. A CDR egy fájlformátum, amely elsősorban a CorelDRAW vektorgrafikus szerkesztőhöz kapcsolódik. A GroupDocs.Viewer segítségével könnyedén konvertálhat CDR fájlokat különféle formátumokba, például HTML, JPG, PNG és PDF formátumokba.
 ## Előfeltételek

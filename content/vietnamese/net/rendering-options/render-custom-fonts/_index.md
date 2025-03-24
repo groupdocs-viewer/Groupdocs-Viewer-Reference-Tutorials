@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị tài liệu bằng phông chữ tùy
 weight: 18
 url: /vi/net/rendering-options/render-custom-fonts/
 ---
+
+# Kết xuất với phông chữ tùy chỉnh
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, GroupDocs.Viewer cung cấp một giải pháp mạnh mẽ để hiển thị các tài liệu ở nhiều định dạng khác nhau. Trong số nhiều khả năng của nó, GroupDocs.Viewer cho phép hiển thị tài liệu với phông chữ tùy chỉnh, thêm một lớp cá nhân hóa và tính linh hoạt cho ứng dụng của bạn.
 ## Điều kiện tiên quyết

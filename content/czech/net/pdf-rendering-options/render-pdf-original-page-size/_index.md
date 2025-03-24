@@ -6,6 +6,9 @@ description: Naučte se vykreslovat soubory PDF s původními velikostmi stráne
 weight: 17
 url: /cs/net/pdf-rendering-options/render-pdf-original-page-size/
 ---
+
+# Vykreslit PDF s původní velikostí stránky
+
 ## Úvod
 V oblasti vývoje .NET GroupDocs.Viewer vyniká jako výkonný nástroj pro vykreslování různých formátů dokumentů, včetně PDF. Jedním z běžných požadavků při manipulaci s dokumenty je vykreslovat soubory PDF při zachování jejich původní velikosti stránky. Bezproblémové dosažení tohoto úkolu vyžaduje komplexní pochopení GroupDocs.Viewer for .NET a jeho funkcí.
 ## Předpoklady

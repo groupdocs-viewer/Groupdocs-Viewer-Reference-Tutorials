@@ -6,6 +6,9 @@ description: Aprenda como excluir fontes de HTML renderizado usando GroupDocs.Vi
 weight: 10
 url: /pt/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Excluir fontes do HTML renderizado
+
 ## Introdução
 GroupDocs.Viewer for .NET é uma poderosa biblioteca de renderização de documentos que permite aos desenvolvedores exibir mais de 50 formatos de documentos em seus aplicativos .NET sem a necessidade de dependências externas. Neste tutorial, vamos nos concentrar em um recurso específico do GroupDocs.Viewer: excluir fontes da saída HTML renderizada. 
 ## Pré-requisitos

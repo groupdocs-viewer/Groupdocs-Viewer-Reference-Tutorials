@@ -6,6 +6,9 @@ description: Leer hoe u weergavegegevens voor CAD-tekeningen kunt ophalen met Gr
 weight: 10
 url: /nl/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Bekijk weergave-informatie voor CAD-tekeningen
+
 ## Invoering
 In de wereld van softwareontwikkeling is het efficiënt omgaan met CAD-tekeningen cruciaal. Of u nu toepassingen bouwt voor architecten, ingenieurs of ontwerpers, het bieden van een naadloze kijkervaring voor CAD-bestanden kan de gebruikerstevredenheid aanzienlijk vergroten. GroupDocs.Viewer voor .NET biedt een krachtige oplossing om moeiteloos de weergavemogelijkheden van CAD-bestanden te integreren in uw .NET-toepassingen. In deze zelfstudie begeleiden we u bij het verkrijgen van weergavegegevens voor CAD-tekeningen met GroupDocs.Viewer voor .NET.
 ## Vereisten

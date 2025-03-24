@@ -6,6 +6,9 @@ description: Verbeter uw .NET-toepassing met GroupDocs.Viewer voor naadloze docu
 weight: 15
 url: /nl/net/rendering-options/render-hidden-pages/
 ---
+
+# Geef verborgen pagina's weer
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het efficiënt beheren en weergeven van documenten cruciaal. Of het nu voor intern gebruik, klantpresentaties of webapplicaties is, de mogelijkheid om verschillende documentformaten naadloos te kunnen bekijken is een noodzaak. Dit is waar GroupDocs.Viewer voor .NET in het spel komt. Met zijn krachtige functies en intuïtieve interface vereenvoudigt GroupDocs.Viewer het proces van het weergeven van documenten in uw .NET-toepassingen.
 ## Vereisten

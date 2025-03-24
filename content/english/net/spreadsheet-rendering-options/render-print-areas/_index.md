@@ -6,6 +6,9 @@ description: Explore GroupDocs.Viewer for .NET and effortlessly render print are
 weight: 17
 url: /net/spreadsheet-rendering-options/render-print-areas/
 ---
+
+# Render Print Areas with GroupDocs.Viewer for .NET
+
 ## Introduction
 Welcome to this comprehensive guide on leveraging GroupDocs.Viewer for .NET to render print areas in your documents. If you're a .NET developer seeking a robust solution for document rendering, you're in the right place. In this tutorial, we'll walk you through the process of rendering print areas using GroupDocs.Viewer, ensuring a seamless experience in your applications.
 ## Prerequisites

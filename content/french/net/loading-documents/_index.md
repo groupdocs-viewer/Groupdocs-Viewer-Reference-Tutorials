@@ -6,6 +6,9 @@ description: Découvrez comment charger et restituer efficacement des documents 
 weight: 20
 url: /fr/net/loading-documents/
 ---
+
+# Chargement de documents
+
 ## Introduction
 
 Bienvenue dans le guide complet sur le chargement de documents avec GroupDocs.Viewer pour .NET ! Que vous soyez un développeur chevronné ou un nouveau venu dans les applications .NET, nos didacticiels couvrent tous les aspects du chargement et du rendu efficaces des documents pour améliorer vos projets.

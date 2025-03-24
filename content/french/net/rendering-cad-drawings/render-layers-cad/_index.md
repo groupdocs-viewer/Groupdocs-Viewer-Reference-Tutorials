@@ -6,6 +6,9 @@ description: Restituez des dessins CAO de manière transparente dans les applica
 weight: 13
 url: /fr/net/rendering-cad-drawings/render-layers-cad/
 ---
+
+# Rendre les calques dans les dessins CAO
+
 ## Introduction
 GroupDocs.Viewer for .NET est un outil puissant qui permet aux développeurs d'intégrer de manière transparente des fonctionnalités de rendu de documents dans leurs applications .NET. Que vous ayez besoin de restituer des dessins CAO, des PDF, des documents Microsoft Office ou plus, GroupDocs.Viewer fournit une solution complète.
 ## Conditions préalables

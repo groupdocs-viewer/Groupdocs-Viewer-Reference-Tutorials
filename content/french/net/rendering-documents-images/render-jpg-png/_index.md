@@ -6,6 +6,9 @@ description: Découvrez comment restituer de manière transparente des documents
 weight: 10
 url: /fr/net/rendering-documents-images/render-jpg-png/
 ---
+
+# Rendre le document au format JPGPNG
+
 ## Introduction
 
 Dans le monde du développement .NET, la gestion efficace des documents est essentielle pour diverses applications. Que vous construisiez un système de gestion de documents, une plateforme de commerce électronique ou une application riche en contenu, la possibilité de visualiser les documents de manière transparente est cruciale. C'est là qu'intervient GroupDocs.Viewer pour .NET, offrant une solution complète pour le rendu de documents dans différents formats tels que JPG et PNG.

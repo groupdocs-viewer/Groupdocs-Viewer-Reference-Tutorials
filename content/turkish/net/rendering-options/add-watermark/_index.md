@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak belgelere sorunsuz bir şeki
 weight: 10
 url: /tr/net/rendering-options/add-watermark/
 ---
+
+# Belgeye Filigran Ekle
+
 ## giriiş
 Günümüzün dijital çağında, çeşitli belge formatlarını sorunsuz bir şekilde yönetmek ve görüntülemek, birçok işletme ve benzer bireyler için bir zorunluluktur. Neyse ki, GroupDocs.Viewer for .NET gibi araçlarla belgeleri yönetmek çocuk oyuncağı haline geliyor. Bu güçlü .NET kitaplığı, geliştiricilerin belge görüntüleme işlevini uygulamalarına zahmetsizce entegre etmelerine olanak tanıyarak, kullanıcıların belgeleri, onları oluşturan orijinal yazılıma ihtiyaç duymadan görüntülemelerine olanak tanır.
 ## Önkoşullar

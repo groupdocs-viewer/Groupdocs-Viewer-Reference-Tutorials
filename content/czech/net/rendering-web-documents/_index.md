@@ -6,6 +6,9 @@ description: Naučte se vykreslovat soubory CHM a HTML s vlastními okraji v .NE
 weight: 35
 url: /cs/net/rendering-web-documents/
 ---
+
+# Vykreslování webových dokumentů
+
 ## Úvod
 
 Odhalte složitosti vykreslování webových dokumentů pomocí GroupDocs.Viewer pro .NET prostřednictvím obsáhlých výukových programů. Vykreslování souborů CHM a přizpůsobení okrajů HTML jsou životně důležité funkce, které mohou výrazně zlepšit vaše možnosti zpracování dokumentů.

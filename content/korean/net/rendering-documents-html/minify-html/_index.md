@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램�
 weight: 11
 url: /ko/net/rendering-documents-html/minify-html/
 ---
+
+# 렌더링된 HTML 문서 축소
+
 ## 소개
 .NET용 GroupDocs.Viewer는 개발자가 .NET 응용 프로그램 내에서 HTML 문서를 원활하게 렌더링할 수 있게 해주는 강력한 도구입니다. 직관적인 API와 강력한 기능을 통해 개발자는 문서 보기 기능을 애플리케이션에 쉽게 통합하여 사용자 경험과 생산성을 향상시킬 수 있습니다.
 ## 전제조건

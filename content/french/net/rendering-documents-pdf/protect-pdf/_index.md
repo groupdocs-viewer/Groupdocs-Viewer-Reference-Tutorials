@@ -6,6 +6,9 @@ description: Protégez facilement vos PDF rendus avec des mots de passe à l'aid
 weight: 12
 url: /fr/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Protéger le PDF rendu avec un mot de passe
+
 ## Introduction
 Dans ce didacticiel, vous apprendrez à utiliser Groupdocs.Viewer for .NET pour protéger un PDF rendu avec un mot de passe. En ajoutant des mesures de sécurité, vous pouvez contrôler l'accès à vos documents PDF, garantissant ainsi la confidentialité et l'intégrité.
 ## Conditions préalables

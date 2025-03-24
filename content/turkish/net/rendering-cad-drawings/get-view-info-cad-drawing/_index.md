@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET'i kullanarak CAD çizimlerine yönelik g�
 weight: 10
 url: /tr/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# CAD Çizimleri için Görünüm Bilgilerini Alın
+
 ## giriiş
 Yazılım geliştirme dünyasında CAD çizimlerini verimli bir şekilde kullanmak çok önemlidir. İster mimarlar, mühendisler veya tasarımcılar için uygulamalar geliştiriyor olun, CAD dosyaları için kusursuz bir görüntüleme deneyimi sağlamak, kullanıcı memnuniyetini büyük ölçüde artırabilir. GroupDocs.Viewer for .NET, CAD dosya görüntüleme yeteneklerini .NET uygulamalarınıza zahmetsizce entegre etmek için güçlü bir çözüm sunar. Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak CAD çizimleri için görünüm bilgilerini alma sürecinde size yol göstereceğiz.
 ## Önkoşullar

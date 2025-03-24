@@ -6,6 +6,9 @@ description: Khai phá tiềm năng của GroupDocs.Viewer dành cho .NET bằng
 weight: 33
 url: /vi/net/rendering-text-files/
 ---
+
+# Hiển thị tệp văn bản
+
 ## Giới thiệu
 
 Bạn đang tìm cách nâng cao khả năng quản lý tài liệu của mình? Đi sâu vào hướng dẫn toàn diện của chúng tôi về GroupDocs.Viewer dành cho .NET, được thiết kế riêng để hiển thị tệp văn bản. Trong bài viết này, chúng tôi sẽ hướng dẫn bạn quy trình tận dụng sức mạnh của GroupDocs.Viewer dành cho .NET để chuyển đổi liền mạch các tệp .txt thành nhiều định dạng, mang lại cho bạn các giải pháp xử lý tài liệu hiệu quả.

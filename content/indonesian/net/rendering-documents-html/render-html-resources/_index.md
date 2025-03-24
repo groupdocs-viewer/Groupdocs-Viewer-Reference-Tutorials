@@ -6,6 +6,9 @@ description: Tingkatkan tampilan dokumen .NET dengan GroupDocs.Viewer untuk rend
 weight: 12
 url: /id/net/rendering-documents-html/render-html-resources/
 ---
+
+# Render dengan Sumber Daya Tertanam atau Eksternal
+
 ## Perkenalan
 
 Dalam dunia pengembangan .NET, tampilan dokumen yang efisien merupakan aspek penting dari banyak aplikasi. GroupDocs.Viewer untuk .NET memberikan solusi ampuh untuk merender dokumen dengan sumber daya tertanam atau eksternal. Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Viewer untuk merender dokumen dengan lancar, menguraikan setiap langkah untuk kejelasan dan pemahaman.

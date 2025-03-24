@@ -6,6 +6,9 @@ description: A GroupDocs.Viewer for .NET segítségével könnyedén feloldhatja
 weight: 13
 url: /hu/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Rejtett oszlopok és sorok megjelenítése
+
 ## Bevezetés
 A dokumentumvizualizáció területén a GroupDocs.Viewer for .NET robusztus eszköz, amely megkönnyíti a különféle dokumentumformátumok zökkenőmentes megjelenítését. Az egyik érdekes lehetőség a rejtett oszlopok és sorok felfedése a táblázatokban. Ebben az oktatóanyagban elmélyülünk a funkció feloldásához és az adatokban rejlő lehetőségek kiaknázásához szükséges lépésekbe.
 ## Előfeltételek

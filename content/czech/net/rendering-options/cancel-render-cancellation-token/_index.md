@@ -6,6 +6,9 @@ description: Integrujte Groupdocs.Viewer for .NET hladce do svých projektů .NE
 weight: 11
 url: /cs/net/rendering-options/cancel-render-cancellation-token/
 ---
+
+# Zrušte vykreslování pomocí tokenu zrušení
+
 ## Úvod
 Groupdocs.Viewer for .NET je výkonný nástroj navržený pro zjednodušení prohlížení a zpracování dokumentů v aplikacích .NET. Ať už pracujete s PDF, dokumenty Microsoft Office nebo jinými běžnými formáty, tato knihovna nabízí robustní funkce pro bezproblémovou integraci možností prohlížení dokumentů do vašich projektů .NET.
 ## Předpoklady

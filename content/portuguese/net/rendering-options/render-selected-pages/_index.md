@@ -6,6 +6,9 @@ description: Aprenda como renderizar páginas selecionadas de documentos usando 
 weight: 17
 url: /pt/net/rendering-options/render-selected-pages/
 ---
+
+# Renderizar páginas selecionadas
+
 ## Introdução
 
 Neste tutorial, nos aprofundaremos em como utilizar Groupdocs.Viewer for .NET para renderizar páginas selecionadas de um documento. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este guia passo a passo o guiará pelo processo com facilidade.

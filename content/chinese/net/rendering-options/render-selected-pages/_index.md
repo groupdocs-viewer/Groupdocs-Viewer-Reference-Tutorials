@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Viewer for .NET 从文档中呈现选�
 weight: 17
 url: /zh/net/rendering-options/render-selected-pages/
 ---
+
+# 渲染选定的页面
+
 ## 介绍
 
 在本教程中，我们将深入研究如何利用 Groupdocs.Viewer for .NET 呈现文档中的选定页面。无论您是经验丰富的开发人员还是刚刚起步，本分步指南都将引导您轻松完成整个过程。

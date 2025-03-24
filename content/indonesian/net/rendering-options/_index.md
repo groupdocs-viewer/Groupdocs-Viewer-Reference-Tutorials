@@ -7,6 +7,9 @@ weight: 23
 url: /id/net/rendering-options/
 ---
 
+# Opsi Rendering
+
+
 ## Perkenalan
 
 Dalam bidang pengembangan aplikasi .NET, rendering dokumen yang efektif sering kali merupakan aspek penting. Baik Anda sedang membangun sistem manajemen konten, penampil dokumen, atau aplikasi lain yang berhubungan dengan tampilan dokumen, memiliki opsi rendering yang kuat dapat meningkatkan pengalaman dan fungsionalitas pengguna secara signifikan.

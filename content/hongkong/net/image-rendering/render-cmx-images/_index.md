@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 輕鬆將 CMX 影像�
 weight: 13
 url: /zh-hant/net/image-rendering/render-cmx-images/
 ---
+
+# 渲染 CMX 影像
+
 ## 介紹
 在文件管理和操作領域，渲染各種格式的圖像是一項關鍵任務。 GroupDocs.Viewer for .NET 透過提供將 CMX 圖像渲染為不同格式（例如 HTML、JPG、PNG 和 PDF）的全面功能，簡化了此過程。本教學將引導您完成使用 GroupDocs.Viewer for .NET 渲染 CMX 影像的逐步流程。
 ## 先決條件

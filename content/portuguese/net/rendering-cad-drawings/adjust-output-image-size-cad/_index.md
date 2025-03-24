@@ -6,6 +6,9 @@ description: Aprenda como ajustar o tamanho da imagem de saída para desenhos CA
 weight: 15
 url: /pt/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Ajustar o tamanho da imagem de saída para desenhos CAD
+
 ## Introdução
 Os desenhos CAD geralmente exigem ajustes específicos para visualização e apresentação ideais. GroupDocs.Viewer for .NET fornece um conjunto de ferramentas poderoso para gerenciar e personalizar a saída de desenhos CAD. Neste tutorial, iremos guiá-lo passo a passo pelo processo de ajuste do tamanho da imagem de saída para desenhos CAD.
 ## Pré-requisitos

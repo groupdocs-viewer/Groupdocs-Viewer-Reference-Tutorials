@@ -6,6 +6,9 @@ description: Nâng cao các ứng dụng .NET của bạn với GroupDocs.Viewer
 weight: 11
 url: /vi/net/getting-started/set-license-from-stream/
 ---
+
+# Đặt giấy phép từ luồng
+
 ## Giới thiệu
 Bạn đang tìm cách trang bị cho các ứng dụng .NET của mình khả năng xem tài liệu nâng cao? GroupDocs.Viewer dành cho .NET cung cấp giải pháp toàn diện để tích hợp liền mạch các chức năng xem tài liệu vào dự án của bạn. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quá trình tận dụng GroupDocs.Viewer dành cho .NET để làm phong phú thêm ứng dụng của bạn bằng khả năng xem tài liệu mạnh mẽ. 
 ## Điều kiện tiên quyết

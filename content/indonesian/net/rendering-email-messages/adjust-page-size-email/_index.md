@@ -6,6 +6,9 @@ description: Pelajari cara menyesuaikan ukuran halaman saat merender pesan email
 weight: 10
 url: /id/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# Sesuaikan Ukuran Halaman Saat Merender Pesan Email
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, GroupDocs.Viewer menyediakan solusi komprehensif untuk merender berbagai format dokumen, termasuk pesan email. Tutorial ini berfokus pada penyesuaian ukuran halaman saat merender pesan email ke format PDF menggunakan GroupDocs.Viewer untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda akan mempelajari cara memanipulasi ukuran halaman dengan lancar untuk memenuhi kebutuhan spesifik Anda.
 ## Prasyarat

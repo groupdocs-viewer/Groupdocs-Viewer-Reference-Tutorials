@@ -6,6 +6,9 @@ description: Procese documentos sin problemas en aplicaciones .NET con GroupDocs
 weight: 13
 url: /es/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Renderizar con texto superpuesto para visualización
+
 ## Introducción
 En el ámbito del desarrollo .NET, administrar y mostrar varios formatos de documentos sin problemas es crucial para muchas aplicaciones. GroupDocs.Viewer para .NET surge como una poderosa solución para representar documentos sin esfuerzo dentro de sus aplicaciones .NET. Ya sean archivos PDF, documentos de Word, hojas de cálculo de Excel o presentaciones de PowerPoint, GroupDocs.Viewer simplifica el proceso y ofrece una variedad de funciones para mejorar la visualización de documentos.
 ## Requisitos previos

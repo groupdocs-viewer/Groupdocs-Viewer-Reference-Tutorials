@@ -6,6 +6,9 @@ description: Verbeter de weergave van .NET-documenten met GroupDocs.Viewer voor 
 weight: 12
 url: /nl/net/rendering-documents-html/render-html-resources/
 ---
+
+# Render met ingebedde of externe bronnen
+
 ## Invoering
 
 In de wereld van .NET-ontwikkeling is het efficiënt bekijken van documenten een cruciaal aspect van veel toepassingen. GroupDocs.Viewer voor .NET biedt een krachtige oplossing voor het weergeven van documenten met ingebouwde of externe bronnen. In deze zelfstudie onderzoeken we hoe u GroupDocs.Viewer kunt gebruiken om documenten naadloos weer te geven, waarbij we elke stap opsplitsen voor duidelijkheid en begrip.

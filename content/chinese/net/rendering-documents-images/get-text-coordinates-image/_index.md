@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 提取文本坐标以�
 weight: 12
 url: /zh/net/rendering-documents-images/get-text-coordinates-image/
 ---
+
+# 获取图像渲染的文本坐标
+
 ## 介绍
 GroupDocs.Viewer for .NET 是一个功能强大的文档呈现 API，允许开发人员无缝呈现各种格式的文档，例如 PDF、Microsoft Office 等。其关键功能之一是能够提取文本坐标以进行精确的图像渲染。
 ## 先决条件

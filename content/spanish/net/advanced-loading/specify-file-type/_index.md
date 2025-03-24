@@ -6,6 +6,9 @@ description: Aprenda a especificar el tipo de archivo al cargar documentos usand
 weight: 10
 url: /es/net/advanced-loading/specify-file-type/
 ---
+
+# Especificar el tipo de archivo al cargar documentos
+
 ## Introducción
 GroupDocs.Viewer para .NET es una API de representación de documentos versátil que admite una amplia gama de formatos de archivo, incluidos DOCX, PDF, PPTX y más. Al especificar el tipo de archivo al cargar documentos, puede garantizar una representación precisa y una experiencia de visualización fluida para sus usuarios.
 ## Requisitos previos

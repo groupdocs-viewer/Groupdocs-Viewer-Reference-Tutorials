@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan integrálhatja a Groupdocs.Viewer for .NET-et a
 weight: 12
 url: /hu/net/rendering-options/flip-rotate-pages/
 ---
+
+# Lapok átfordítása és forgatása
+
 ## Bevezetés
 Ebben az oktatóanyagban a Groupdocs.Viewer for .NET funkcióival foglalkozunk, különös tekintettel az oldalak lapozására és forgatására. A Groupdocs.Viewer for .NET egy hatékony eszköz, amelyet különféle formátumú dokumentumok megjelenítésére terveztek .NET-alkalmazásokon belül. Akár dokumentumkezelő rendszert fejleszt, akár dokumentummegtekintési képességeket szeretne szoftverébe integrálni, a Groupdocs.Viewer for .NET hatékony megoldást kínál.
 ## Előfeltételek

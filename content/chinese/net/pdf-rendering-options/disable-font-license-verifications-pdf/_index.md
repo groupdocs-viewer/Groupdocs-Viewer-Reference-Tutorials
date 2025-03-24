@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Viewer for .NET 解锁 .NET 中的无缝文档查�
 weight: 12
 url: /zh/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# 禁用 PDF 中的字体许可证验证
+
 ## 介绍
 在 .NET 开发领域，管理和操作文档通常是许多应用程序的一个重要方面。无论是查看 PDF、Word 文档还是其他文件类型，拥有强大的工具来高效处理这些任务都是至关重要的。这就是 GroupDocs.Viewer for .NET 发挥作用的地方。这个功能强大的库使开发人员能够将文档查看功能无缝集成到他们的 .NET 应用程序中。
 ## 先决条件

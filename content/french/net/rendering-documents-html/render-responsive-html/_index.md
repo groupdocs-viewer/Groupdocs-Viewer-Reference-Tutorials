@@ -6,6 +6,9 @@ description: Découvrez comment rendre du HTML réactif à l'aide de Groupdocs.V
 weight: 13
 url: /fr/net/rendering-documents-html/render-responsive-html/
 ---
+
+# Rendu HTML réactif
+
 ## Introduction
 Groupdocs.Viewer pour .NET est une bibliothèque puissante qui permet aux développeurs de restituer divers formats de documents en HTML réactif. Ce didacticiel vous guidera tout au long du processus de rendu HTML réactif à l'aide de Groupdocs.Viewer pour .NET. À la fin de ce didacticiel, vous serez en mesure de convertir de manière transparente des documents en HTML qui s'adaptent à différentes tailles d'écran, garantissant ainsi une expérience de visualisation optimale sur tous les appareils.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Vylepšete vizualizaci dokumentů pomocí GroupDocs.Viewer pro .NET
 weight: 12
 url: /cs/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Vykreslit čáry mřížky
+
 ## Úvod
 Vítejte v tomto podrobném průvodci používáním GroupDocs.Viewer pro .NET k vykreslování čar mřížky ve vašich dokumentech. Ať už jste ostřílený vývojář nebo nováček v rámci .NET, tento tutoriál vás provede celým procesem s podrobnými vysvětleními a snadno pochopitelnými příklady.
 ## Předpoklady

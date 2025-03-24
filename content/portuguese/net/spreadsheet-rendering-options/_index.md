@@ -6,6 +6,9 @@ description: Aprimore facilmente a visualização de documentos em .NET com os t
 weight: 37
 url: /pt/net/spreadsheet-rendering-options/
 ---
+
+# Opções de renderização de planilha
+
 ## Introdução
 
 Você está pronto para aprimorar sua experiência de visualização de documentos no .NET? GroupDocs.Viewer for .NET oferece um conjunto abrangente de tutoriais, permitindo otimizar a renderização de planilhas. Desde o ajuste do excesso de texto até a renderização de colunas e linhas ocultas, nós ajudamos você. Vamos mergulhar no mundo das opções de renderização de planilhas e desbloquear todo o potencial do GroupDocs.Viewer for .NET.

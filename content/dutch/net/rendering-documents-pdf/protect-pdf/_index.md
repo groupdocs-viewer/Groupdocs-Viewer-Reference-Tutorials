@@ -6,6 +6,9 @@ description: Bescherm uw weergegeven PDF's eenvoudig met wachtwoorden met Groupd
 weight: 12
 url: /nl/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Bescherm gerenderde PDF met wachtwoord
+
 ## Invoering
 In deze zelfstudie leert u hoe u Groupdocs.Viewer voor .NET kunt gebruiken om een weergegeven PDF met een wachtwoord te beveiligen. Door beveiligingsmaatregelen toe te voegen, kunt u de toegang tot uw PDF-documenten controleren, waardoor de vertrouwelijkheid en integriteit wordt gewaarborgd.
 ## Vereisten

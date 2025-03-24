@@ -6,6 +6,9 @@ description: Nâng cao các ứng dụng .NET của bạn với GroupDocs.Viewer
 weight: 12
 url: /vi/net/getting-started/set-metered-license/
 ---
+
+# Đặt giấy phép đo lường
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc kết hợp khả năng xem tài liệu mạnh mẽ vào ứng dụng của bạn là điều cần thiết để nâng cao trải nghiệm và chức năng của người dùng. GroupDocs.Viewer dành cho .NET cung cấp giải pháp mạnh mẽ để tích hợp liền mạch các chức năng xem tài liệu vào các dự án .NET của bạn. Cho dù bạn đang làm việc với tệp PDF, tài liệu Microsoft Office hay các định dạng hình ảnh khác nhau, GroupDocs.Viewer sẽ đơn giản hóa quá trình kết xuất và hiển thị các tài liệu này trong ứng dụng của bạn.
 ## Điều kiện tiên quyết

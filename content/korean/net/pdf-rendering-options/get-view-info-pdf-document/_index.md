@@ -6,6 +6,9 @@ description: 이 포괄적인 튜토리얼에서 .NET용 GroupDocs.Viewer를 사
 weight: 16
 url: /ko/net/pdf-rendering-options/get-view-info-pdf-document/
 ---
+
+# PDF 문서에 대한 정보 보기
+
 ## 소개
 .NET용 GroupDocs.Viewer는 .NET 응용 프로그램 내에서 문서 보기를 간소화하도록 설계된 강력한 도구입니다. PDF, Word 문서, Excel 스프레드시트 또는 PowerPoint 프레젠테이션을 처리하는 경우 이 라이브러리는 다양한 파일 형식의 렌더링 및 상호 작용 프로세스를 단순화합니다. 이 자습서에서는 특히 PDF 문서에서 보기 정보를 추출하기 위해 GroupDocs.Viewer의 기능을 활용하는 데 중점을 둘 것입니다.
 ## 전제조건

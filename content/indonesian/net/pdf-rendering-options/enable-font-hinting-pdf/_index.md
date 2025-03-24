@@ -6,6 +6,9 @@ description: Pelajari cara mengaktifkan petunjuk font dalam dokumen PDF mengguna
 weight: 14
 url: /id/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---
+
+# Aktifkan Petunjuk Font di PDF
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah alat yang ampuh untuk melihat dan memanipulasi berbagai format dokumen dalam aplikasi .NET. Baik Anda bekerja dengan PDF, dokumen Microsoft Office, gambar, atau format lainnya, GroupDocs.Viewer memberikan solusi yang lancar untuk merender dan berinteraksi dengan file-file ini.
 ## Prasyarat

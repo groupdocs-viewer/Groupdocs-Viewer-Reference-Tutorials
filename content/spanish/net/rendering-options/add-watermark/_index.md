@@ -6,6 +6,9 @@ description: Aprenda cómo agregar fácilmente marcas de agua a documentos usand
 weight: 10
 url: /es/net/rendering-options/add-watermark/
 ---
+
+# Agregar marca de agua en el documento
+
 ## Introducción
 En la era digital actual, gestionar y visualizar varios formatos de documentos sin problemas es una necesidad tanto para muchas empresas como para particulares. Afortunadamente, con herramientas como GroupDocs.Viewer para .NET, manejar documentos se vuelve muy sencillo. Esta potente biblioteca .NET permite a los desarrolladores integrar sin esfuerzo la funcionalidad de visualización de documentos en sus aplicaciones, lo que permite a los usuarios ver documentos sin necesidad del software original que los creó.
 ## Requisitos previos

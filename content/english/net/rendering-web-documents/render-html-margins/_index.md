@@ -6,6 +6,9 @@ description: Learn how to render HTML with custom margins in .NET using GroupDoc
 weight: 11
 url: /net/rendering-web-documents/render-html-margins/
 ---
+
+# Render HTML with User-Defined Margins
+
 ## Introduction
 In the realm of .NET development, rendering HTML with user-defined margins is a crucial aspect of creating visually appealing documents. Whether it's adjusting margins for a website or configuring print layouts, precise control over margins enhances the overall presentation of content. In this tutorial, we'll delve into utilizing GroupDocs.Viewer for .NET to achieve this functionality seamlessly.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Pelajari cara menyesuaikan kualitas gambar dalam dokumen PDF menggu
 weight: 10
 url: /id/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---
+
+# Sesuaikan Kualitas Gambar dalam PDF
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang mengintegrasikan kemampuan rendering dokumen ke dalam aplikasi .NET mereka dengan mudah. Salah satu fitur utama perpustakaan ini adalah kemampuan untuk menyesuaikan kualitas gambar saat merender dokumen PDF. Dalam tutorial ini, kami akan memandu Anda melalui proses penyesuaian kualitas gambar langkah demi langkah menggunakan GroupDocs.Viewer untuk .NET.
 ## Prasyarat

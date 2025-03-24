@@ -6,6 +6,9 @@ description: Scopri come recuperare le informazioni sulla visualizzazione dei di
 weight: 10
 url: /it/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---
+
+# Ottieni informazioni sulla visualizzazione dei disegni CAD
+
 ## introduzione
 Nel mondo dello sviluppo software, gestire i disegni CAD in modo efficiente è fondamentale. Che tu stia creando applicazioni per architetti, ingegneri o designer, fornire un'esperienza di visualizzazione fluida per i file CAD può migliorare notevolmente la soddisfazione degli utenti. GroupDocs.Viewer per .NET offre una potente soluzione per integrare facilmente le funzionalità di visualizzazione di file CAD nelle applicazioni .NET. In questo tutorial ti guideremo attraverso il processo per ottenere informazioni sulla visualizzazione dei disegni CAD utilizzando GroupDocs.Viewer per .NET.
 ## Prerequisiti

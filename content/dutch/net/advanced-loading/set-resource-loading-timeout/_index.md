@@ -6,6 +6,9 @@ description: Leer hoe u time-outs voor het laden van bronnen in GroupDocs.Viewer
 weight: 13
 url: /nl/net/advanced-loading/set-resource-loading-timeout/
 ---
+
+# Time-out voor het laden van bronnen instellen (geavanceerd)
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling biedt GroupDocs.Viewer een krachtige toolset voor het nauwkeurig en efficiënt weergeven van documenten en afbeeldingen. Om de mogelijkheden ervan te kunnen benutten, is inzicht nodig in de complexiteit ervan, inclusief het instellen van time-outs voor het laden van bronnen. In deze zelfstudie gaan we in op het proces van het configureren van time-outs voor het laden van bronnen in GroupDocs.Viewer voor .NET.
 ## Vereisten

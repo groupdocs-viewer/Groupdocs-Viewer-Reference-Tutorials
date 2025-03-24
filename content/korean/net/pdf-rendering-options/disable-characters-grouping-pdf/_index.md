@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Viewer를 사용하여 PDF에서 문자 그룹화
 weight: 11
 url: /ko/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---
+
+# PDF에서 문자 그룹화 비활성화
+
 ## 소개
 .NET 개발 세계에서는 문서 보기를 처리하는 것이 때로 어려울 수 있으며, 특히 PDF와 같은 형식을 처리할 때 더욱 그렇습니다. 그러나 올바른 도구와 지식을 사용하면 이 프로세스를 효율적으로 간소화할 수 있습니다. 이러한 문제를 해결해주는 도구 중 하나가 .NET용 GroupDocs.Viewer입니다. 이 강력한 라이브러리를 통해 개발자는 .NET 애플리케이션 내에서 다양한 문서 유형을 원활하게 렌더링하고 표시할 수 있습니다.
 ## 전제조건

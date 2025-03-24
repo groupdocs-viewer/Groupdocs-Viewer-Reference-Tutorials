@@ -6,6 +6,9 @@ description: Naučte se, jak upravit velikost výstupního obrázku pro výkresy
 weight: 15
 url: /cs/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
+
+# Upravte velikost výstupního obrázku pro výkresy CAD
+
 ## Úvod
 CAD výkresy často vyžadují specifické úpravy pro optimální zobrazení a prezentaci. GroupDocs.Viewer for .NET poskytuje výkonnou sadu nástrojů pro správu a přizpůsobení výstupu výkresů CAD. V tomto tutoriálu vás krok za krokem provedeme procesem úpravy velikosti výstupního obrázku pro výkresy CAD.
 ## Předpoklady

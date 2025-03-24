@@ -6,6 +6,9 @@ description: Naučte se vykreslovat vybrané stránky z dokumentů pomocí Group
 weight: 17
 url: /cs/net/rendering-options/render-selected-pages/
 ---
+
+# Vykreslit vybrané stránky
+
 ## Úvod
 
 V tomto tutoriálu se ponoříme do toho, jak využít Groupdocs.Viewer pro .NET k vykreslení vybraných stránek z dokumentu. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný průvodce vás procesem snadno provede.

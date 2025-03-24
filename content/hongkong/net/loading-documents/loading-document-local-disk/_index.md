@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Viewer for .NET 從本機磁碟無縫�
 weight: 10
 url: /zh-hant/net/loading-documents/loading-document-local-disk/
 ---
+
+# 從本機磁碟載入文檔
+
 ## 介紹
 在當今的數位時代，高效的文件渲染對於各種應用程式至關重要。 Groupdocs.Viewer for .NET 提供了一個強大的解決方案，可以直接從本機磁碟呈現文件。在本教學中，我們將引導您完成使用 Groupdocs.Viewer for .NET 從本機磁碟載入文件的過程。無論您是經驗豐富的開發人員還是新手，本逐步指南都將幫助您將文件呈現無縫整合到 .NET 應用程式中。
 ## 先決條件

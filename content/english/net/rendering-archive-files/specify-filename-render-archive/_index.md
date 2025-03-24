@@ -6,6 +6,9 @@ description: Learn how to render archive files in .NET using GroupDocs.Viewer, e
 weight: 14
 url: /net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Specify Filename When Rendering Archive Files
+
 ## Introduction
 In the realm of .NET development, GroupDocs.Viewer stands out as a versatile tool for rendering documents of various formats. With its robust features and flexibility, it simplifies the process of viewing files, including archive files. In this tutorial, we will delve into the specifics of rendering archive files using GroupDocs.Viewer for .NET. By following these step-by-step instructions, you'll learn how to specify a filename when rendering archive files, enabling seamless document management within your .NET applications.
 ## Prerequisites

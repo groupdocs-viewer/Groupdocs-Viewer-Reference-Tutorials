@@ -6,6 +6,9 @@ description: Khám phá sức mạnh của GroupDocs.Viewer dành cho .NET trong
 weight: 14
 url: /vi/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Hiển thị theo ngắt trang
+
 ## Giới thiệu
 Chào mừng bạn đến với hướng dẫn GroupDocs.Viewer for .NET về hiển thị tài liệu theo ngắt trang! Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng các tính năng mạnh mẽ của GroupDocs.Viewer để hiển thị tài liệu một cách chính xác, đặc biệt tập trung vào ngắt trang. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình, cung cấp sự hiểu biết rõ ràng về từng bước.
 ## Điều kiện tiên quyết

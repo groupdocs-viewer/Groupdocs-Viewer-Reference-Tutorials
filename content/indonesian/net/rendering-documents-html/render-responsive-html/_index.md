@@ -6,6 +6,9 @@ description: Pelajari cara merender HTML responsif menggunakan Groupdocs.Viewer 
 weight: 13
 url: /id/net/rendering-documents-html/render-responsive-html/
 ---
+
+# Render HTML Responsif
+
 ## Perkenalan
 Groupdocs.Viewer untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang merender berbagai format dokumen ke dalam HTML responsif. Tutorial ini akan memandu Anda melalui proses rendering HTML responsif menggunakan Groupdocs.Viewer untuk .NET. Di akhir tutorial ini, Anda akan dapat dengan mudah mengonversi dokumen menjadi HTML yang beradaptasi dengan berbagai ukuran layar, memastikan pengalaman menonton yang optimal di seluruh perangkat.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Aprimore seu aplicativo .NET com GroupDocs.Viewer para renderizaç�
 weight: 15
 url: /pt/net/rendering-options/render-hidden-pages/
 ---
+
+# Renderizar páginas ocultas
+
 ## Introdução
 No mundo do desenvolvimento .NET, gerenciar e exibir documentos de forma eficiente é crucial. Seja para uso interno, apresentações de clientes ou aplicativos da web, é necessário ter a capacidade de visualizar vários formatos de documentos perfeitamente. É aqui que o GroupDocs.Viewer for .NET entra em ação. Com seus recursos poderosos e interface intuitiva, GroupDocs.Viewer simplifica o processo de renderização de documentos em seus aplicativos .NET.
 ## Pré-requisitos

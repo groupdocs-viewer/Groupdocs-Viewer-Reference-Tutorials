@@ -6,6 +6,9 @@ description: Découvrez comment restituer toutes les mises en page dans des dess
 weight: 11
 url: /fr/net/rendering-cad-drawings/render-all-layouts-cad/
 ---
+
+# Rendre toutes les mises en page dans les dessins CAO
+
 ## Introduction
 Dans le domaine de la gestion et de la visualisation de documents, GroupDocs.Viewer pour .NET se présente comme une solution polyvalente, permettant aux développeurs de restituer sans effort divers types de documents dans leurs applications .NET. Parmi ses innombrables fonctionnalités, on trouve la possibilité de restituer efficacement des dessins CAO, y compris les mises en page complexes qu'ils impliquent. Dans ce didacticiel, nous approfondirons le processus d'exploitation de GroupDocs.Viewer pour .NET pour restituer toutes les mises en page présentes dans les dessins CAO. 
 ## Conditions préalables

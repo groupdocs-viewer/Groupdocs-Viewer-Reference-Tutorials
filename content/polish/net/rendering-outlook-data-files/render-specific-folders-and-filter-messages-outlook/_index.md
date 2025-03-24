@@ -6,6 +6,9 @@ description: Dowiedz się, jak renderować określone foldery i filtrować wiado
 weight: 11
 url: /pl/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Renderuj określone foldery i filtruj wiadomości (Outlook)
+
 ## Wstęp
 W świecie programowania .NET efektywne zarządzanie dokumentami i ich wyświetlanie ma kluczowe znaczenie. GroupDocs.Viewer dla .NET upraszcza to zadanie, udostępniając zaawansowane funkcje umożliwiające płynne renderowanie dokumentów w różnych formatach. W tym samouczku omówimy, jak renderować określone foldery i filtrować wiadomości w Outlooku za pomocą GroupDocs.Viewer dla .NET.
 ## Warunki wstępne

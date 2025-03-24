@@ -6,6 +6,9 @@ description: Integrasikan tampilan dokumen yang dilindungi kata sandi dengan mud
 weight: 12
 url: /id/net/advanced-loading/load-password-protected-document/
 ---
+
+# Muat Dokumen yang Dilindungi Kata Sandi
+
 ## Perkenalan
 Di era digital saat ini, mengelola dan melihat berbagai format dokumen dengan lancar merupakan kebutuhan bagi banyak bisnis dan individu. Untungnya, GroupDocs.Viewer untuk .NET memberikan solusi komprehensif bagi pengembang .NET untuk dengan mudah mengintegrasikan kemampuan melihat dokumen ke dalam aplikasi mereka. Dalam tutorial ini, kita akan mempelajari salah satu fungsi penting GroupDocs.Viewer: memuat dokumen yang dilindungi kata sandi. Kami akan menguraikan prosesnya langkah demi langkah, memastikan bahwa pengembang dapat dengan mudah mengikuti dan menerapkan fitur ini ke dalam proyek mereka.
 ## Prasyarat

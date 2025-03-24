@@ -7,6 +7,9 @@ weight: 38
 url: /vi/net/pdf-rendering-options/
 ---
 
+# Tùy chọn kết xuất PDF
+
+
 ## Giới thiệu
 
 Khai phá toàn bộ tiềm năng của khả năng hiển thị PDF với hướng dẫn GroupDocs.Viewer dành cho .NET. Đi sâu vào các tùy chọn khác nhau để nâng cao trải nghiệm xem tài liệu của bạn.

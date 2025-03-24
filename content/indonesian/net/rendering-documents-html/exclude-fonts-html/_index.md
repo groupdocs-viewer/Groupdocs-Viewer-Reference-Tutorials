@@ -6,6 +6,9 @@ description: Pelajari cara mengecualikan font dari HTML yang dirender menggunaka
 weight: 10
 url: /id/net/rendering-documents-html/exclude-fonts-html/
 ---
+
+# Kecualikan Font dari HTML yang Dirender
+
 ## Perkenalan
 GroupDocs.Viewer untuk .NET adalah pustaka rendering dokumen canggih yang memungkinkan pengembang menampilkan lebih dari 50 format dokumen dalam aplikasi .NET mereka tanpa memerlukan ketergantungan eksternal. Dalam tutorial ini, kita akan fokus pada fitur spesifik GroupDocs.Viewer: mengecualikan font dari keluaran HTML yang dirender. 
 ## Prasyarat

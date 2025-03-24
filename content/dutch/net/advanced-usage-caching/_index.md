@@ -7,6 +7,9 @@ weight: 22
 url: /nl/net/advanced-usage-caching/
 ---
 
+# Geavanceerd gebruik (caching)
+
+
 ## Invoering
 
 Op het gebied van de ontwikkeling van .NET-applicaties, waar efficiëntie en snelheid voorop staan, kan het beheersen van geavanceerde technieken zoals caching de prestaties aanzienlijk verbeteren. Welkom in de wereld van GroupDocs.Viewer, waar u de kracht van caching kunt benutten om de documentverwerking te stroomlijnen en de prestaties van uw applicatie moeiteloos te optimaliseren.

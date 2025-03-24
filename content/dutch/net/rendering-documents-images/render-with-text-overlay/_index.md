@@ -6,6 +6,9 @@ description: Geef documenten naadloos weer in .NET-toepassingen met GroupDocs.Vi
 weight: 13
 url: /nl/net/rendering-documents-images/render-with-text-overlay/
 ---
+
+# Render met tekstoverlay voor weergave
+
 ## Invoering
 Op het gebied van .NET-ontwikkeling is het naadloos beheren en weergeven van verschillende documentformaten voor veel toepassingen cruciaal. GroupDocs.Viewer voor .NET ontpopt zich als een krachtige oplossing om moeiteloos documenten weer te geven binnen uw .NET-applicaties. Of het nu gaat om PDF's, Word-documenten, Excel-spreadsheets of PowerPoint-presentaties, GroupDocs.Viewer vereenvoudigt het proces en biedt een scala aan functies voor een verbeterde documentweergave.
 ## Vereisten

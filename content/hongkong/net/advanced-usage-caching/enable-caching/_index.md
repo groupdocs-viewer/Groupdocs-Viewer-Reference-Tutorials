@@ -6,6 +6,9 @@ description: 透過利用緩存，使用 GroupDocs.Viewer 提高 .NET 應用程�
 weight: 10
 url: /zh-hant/net/advanced-usage-caching/enable-caching/
 ---
+
+# 啟用快取以加快文件處理速度
+
 ## 介紹
 在 .NET 文件處理領域，優化效能至關重要。想像一下您需要快速渲染多個文件頁面的場景。這就是快取發揮作用的地方。在本教學中，我們將深入研究利用快取來提高使用 GroupDocs.Viewer for .NET 的文件處理速度。
 ## 先決條件

@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Viewer for .NET 优化 JPEG 格式的�
 weight: 11
 url: /zh/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---
+
+# 调整图像尺寸和质量 (JPG)
+
 ## 介绍
 Groupdocs.Viewer for .NET 是一个功能强大的库，使开发人员能够将文档查看功能无缝集成到他们的 .NET 应用程序中。文档查看应用程序中的一项常见要求是能够调整图像的大小和质量，特别是在处理 JPEG (JPG) 图像时。在本教程中，我们将引导您完成使用 Groupdocs.Viewer for .NET 调整图像大小和质量的过程。
 ## 先决条件

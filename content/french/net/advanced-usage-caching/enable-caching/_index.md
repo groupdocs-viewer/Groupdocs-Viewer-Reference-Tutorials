@@ -6,6 +6,9 @@ description: Améliorez la vitesse de traitement des documents dans les applicat
 weight: 10
 url: /fr/net/advanced-usage-caching/enable-caching/
 ---
+
+# Activer la mise en cache pour un traitement plus rapide des documents
+
 ## Introduction
 Dans le domaine du traitement de documents .NET, l’optimisation des performances est primordiale. Imaginez un scénario dans lequel vous devez restituer rapidement plusieurs pages de document. C'est là que la mise en cache entre en jeu. Dans ce didacticiel, nous aborderons l'exploitation de la mise en cache pour améliorer la vitesse de traitement des documents à l'aide de GroupDocs.Viewer pour .NET.
 ## Conditions préalables

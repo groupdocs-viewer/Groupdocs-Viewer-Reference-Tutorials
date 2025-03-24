@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 将电子邮件呈现�
 weight: 10
 url: /zh/net/rendering-email-messages/adjust-page-size-email/
 ---
+
+# 渲染电子邮件时调整页面大小
+
 ## 介绍
 在 .NET 开发领域，GroupDocs.Viewer 提供了用于呈现各种文档格式（包括电子邮件）的全面解决方案。本教程重点介绍使用 GroupDocs.Viewer for .NET 将电子邮件呈现为 PDF 格式时调整页面大小。通过遵循本指南中概述的步骤，您将了解如何无缝地控制页面大小以满足您的特定要求。
 ## 先决条件

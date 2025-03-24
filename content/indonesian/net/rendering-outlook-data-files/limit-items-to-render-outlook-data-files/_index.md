@@ -6,6 +6,9 @@ description: Pelajari cara membatasi jumlah item yang dirender dalam file data O
 weight: 12
 url: /id/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---
+
+# Batasi Jumlah Item yang Akan Dirender di File Data Outlook
+
 ## Perkenalan
 Groupdocs.Viewer untuk .NET adalah alat yang ampuh bagi pengembang yang ingin mengintegrasikan kemampuan melihat dokumen ke dalam aplikasi .NET mereka dengan mulus. Baik Anda perlu menampilkan PDF, dokumen Microsoft Office, atau file data Outlook dalam aplikasi Anda, Groupdocs.Viewer menawarkan solusi yang tangguh. Dalam tutorial ini, kita akan mempelajari cara membatasi jumlah item yang dirender secara khusus di file data Outlook, menggunakan petunjuk langkah demi langkah.
 ## Prasyarat

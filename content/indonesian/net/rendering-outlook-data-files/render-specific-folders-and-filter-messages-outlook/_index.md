@@ -6,6 +6,9 @@ description: Pelajari cara merender folder tertentu dan memfilter pesan di Outlo
 weight: 11
 url: /id/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Render Folder Tertentu dan Pesan Filter (Outlook)
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, mengelola dan menampilkan dokumen secara efisien sangatlah penting. GroupDocs.Viewer untuk .NET menyederhanakan tugas ini dengan menyediakan fungsionalitas canggih untuk merender berbagai format dokumen dengan mulus. Dalam tutorial ini, kita akan mempelajari cara merender folder tertentu dan memfilter pesan di Outlook menggunakan GroupDocs.Viewer untuk .NET.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Naučte se vykreslovat konkrétní složky a filtrovat zprávy v Ou
 weight: 11
 url: /cs/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
+
+# Vykreslování konkrétních složek a filtrování zpráv (Outlook)
+
 ## Úvod
 Ve světě vývoje .NET je efektivní správa a zobrazování dokumentů zásadní. GroupDocs.Viewer for .NET tento úkol zjednodušuje tím, že poskytuje výkonné funkce pro bezproblémové vykreslování různých formátů dokumentů. V tomto tutoriálu se ponoříme do toho, jak vykreslit konkrétní složky a filtrovat zprávy v aplikaci Outlook pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady

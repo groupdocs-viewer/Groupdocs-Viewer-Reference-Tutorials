@@ -6,6 +6,9 @@ description: Enhance .NET document viewing with GroupDocs.Viewer for seamless re
 weight: 12
 url: /net/rendering-documents-html/render-html-resources/
 ---
+
+# Render with Embedded or External Resources
+
 ## Introduction
 
 In the world of .NET development, efficient document viewing is a crucial aspect of many applications. GroupDocs.Viewer for .NET provides a powerful solution for rendering documents with embedded or external resources. In this tutorial, we'll explore how to utilize GroupDocs.Viewer to render documents seamlessly, breaking down each step for clarity and understanding.

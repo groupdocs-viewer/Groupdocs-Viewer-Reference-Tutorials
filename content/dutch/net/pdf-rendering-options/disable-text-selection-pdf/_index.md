@@ -6,6 +6,9 @@ description: Leer hoe u tekstselectie in PDF kunt uitschakelen met GroupDocs.Vie
 weight: 13
 url: /nl/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# Schakel tekstselectie in PDF uit
+
 ## Invoering
 GroupDocs.Viewer voor .NET is een krachtige documentweergave-API waarmee ontwikkelaars de weergavemogelijkheden van documenten moeiteloos in hun .NET-applicaties kunnen integreren. Een van de belangrijkste functionaliteiten van GroupDocs.Viewer is de mogelijkheid om tekstselectie in PDF-documenten uit te schakelen. Deze functie is met name handig in scenario's waarin u moet voorkomen dat gebruikers tekst uit gevoelige documenten kopiëren, zodat de veiligheid en integriteit van documenten wordt gewaarborgd.
 ## Vereisten

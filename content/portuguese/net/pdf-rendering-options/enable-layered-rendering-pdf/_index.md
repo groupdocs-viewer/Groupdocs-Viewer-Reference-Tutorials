@@ -6,6 +6,9 @@ description: Aprenda como habilitar a renderização em camadas em documentos PD
 weight: 15
 url: /pt/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Habilitar renderização em camadas em PDF
+
 ## Introdução
 Neste tutorial, nos aprofundaremos no processo de ativação da renderização em camadas em documentos PDF usando GroupDocs.Viewer for .NET. A renderização em camadas permite exibição e manipulação aprimoradas de documentos, proporcionando aos usuários uma experiência de visualização mais interativa.
 ## Pré-requisitos

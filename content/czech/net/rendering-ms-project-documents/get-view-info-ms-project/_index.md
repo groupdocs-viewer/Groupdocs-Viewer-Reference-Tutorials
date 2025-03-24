@@ -6,6 +6,9 @@ description: Prozkoumejte komplexní výukový program o využití Groupdocs.Vie
 weight: 10
 url: /cs/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---
+
+# Získejte informace o zobrazení pro dokumenty Microsoft Project
+
 ## Úvod
 oblasti správy dokumentů a řešení pro prohlížení vyniká Groupdocs.Viewer for .NET jako všestranný a robustní nástroj. Ať už jste vývojář, který se snaží integrovat možnosti prohlížení dokumentů do svých aplikací .NET, nebo nadšenec, který touží prozkoumat jejich funkce, tento výukový program vás provede procesem využití Groupdocs.Viewer pro .NET k získání informací o zobrazení dokumentů Microsoft Project. .
 ## Předpoklady

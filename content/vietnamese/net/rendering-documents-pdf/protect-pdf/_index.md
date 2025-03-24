@@ -6,6 +6,9 @@ description: Dễ dàng bảo vệ các tệp PDF được hiển thị của b�
 weight: 12
 url: /vi/net/rendering-documents-pdf/protect-pdf/
 ---
+
+# Bảo vệ tệp PDF được hiển thị bằng mật khẩu
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách sử dụng Groupdocs.Viewer cho .NET để bảo vệ tệp PDF được hiển thị bằng mật khẩu. Bằng cách thêm các biện pháp bảo mật, bạn có thể kiểm soát quyền truy cập vào tài liệu PDF của mình, đảm bảo tính bảo mật và toàn vẹn.
 ## Điều kiện tiên quyết

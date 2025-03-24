@@ -6,6 +6,9 @@ description: Verbeter de documentvisualisatie met GroupDocs.Viewer voor .NET. Re
 weight: 12
 url: /nl/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Render rasterlijnen
+
 ## Invoering
 Welkom bij deze stapsgewijze handleiding over het gebruik van GroupDocs.Viewer voor .NET om rasterlijnen in uw documenten weer te geven. Of u nu een doorgewinterde ontwikkelaar bent of een nieuwkomer in het .NET-framework, deze tutorial begeleidt u door het proces met gedetailleerde uitleg en eenvoudig te volgen voorbeelden.
 ## Vereisten

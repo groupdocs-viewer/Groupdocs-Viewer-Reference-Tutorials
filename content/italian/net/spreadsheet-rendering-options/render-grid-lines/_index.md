@@ -6,6 +6,9 @@ description: Migliora la visualizzazione dei documenti con GroupDocs.Viewer per 
 weight: 12
 url: /it/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Rendering delle linee della griglia
+
 ## introduzione
 Benvenuto in questa guida passo passo sull'utilizzo di GroupDocs.Viewer per .NET per eseguire il rendering delle linee della griglia nei tuoi documenti. Che tu sia uno sviluppatore esperto o un nuovo arrivato nel framework .NET, questo tutorial ti guiderà attraverso il processo con spiegazioni dettagliate ed esempi facili da seguire.
 ## Prerequisiti

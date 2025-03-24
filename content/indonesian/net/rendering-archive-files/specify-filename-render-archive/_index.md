@@ -6,6 +6,9 @@ description: Pelajari cara merender file arsip di .NET menggunakan GroupDocs.Vie
 weight: 14
 url: /id/net/rendering-archive-files/specify-filename-render-archive/
 ---
+
+# Tentukan Nama File Saat Merender File Arsip
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, GroupDocs.Viewer menonjol sebagai alat serbaguna untuk merender dokumen dalam berbagai format. Dengan fitur-fitur canggih dan fleksibilitasnya, ini menyederhanakan proses melihat file, termasuk file arsip. Dalam tutorial ini, kita akan mempelajari secara spesifik rendering file arsip menggunakan GroupDocs.Viewer untuk .NET. Dengan mengikuti petunjuk langkah demi langkah ini, Anda akan mempelajari cara menentukan nama file saat merender file arsip, sehingga memungkinkan manajemen dokumen yang lancar dalam aplikasi .NET Anda.
 ## Prasyarat

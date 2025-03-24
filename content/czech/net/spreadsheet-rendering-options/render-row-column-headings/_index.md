@@ -6,6 +6,9 @@ description: Vylepšete prohlížení dokumentů v .NET! Naučte se vykreslovat 
 weight: 18
 url: /cs/net/spreadsheet-rendering-options/render-row-column-headings/
 ---
+
+# Vykreslit záhlaví řádků a sloupců
+
 ## Úvod
 Chcete vylepšit své možnosti prohlížení dokumentů v aplikacích .NET? S GroupDocs.Viewer for .NET můžete bez problémů vykreslovat záhlaví řádků a sloupců ze souborů tabulkového procesoru. V tomto tutoriálu vás provedeme procesem vykreslování záhlaví řádků a sloupců pomocí různých výstupních formátů, jako jsou HTML, JPG, PNG a PDF.
 ## Předpoklady

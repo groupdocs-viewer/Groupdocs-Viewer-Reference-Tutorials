@@ -6,6 +6,9 @@ description: Naučte se vykreslovat obrázky FODG a ODG do HTML, JPG, PNG a PDF 
 weight: 15
 url: /cs/net/image-rendering/render-fodg-odg-images/
 ---
+
+# Vykreslování obrázků FODG a ODG
+
 ## Úvod
 Ve světě vývoje softwaru je prvořadá efektivní manipulace s formáty dokumentů. GroupDocs.Viewer for .NET je výkonný nástroj navržený pro zjednodušení procesu vykreslování obrázků FODG a ODG v aplikacích .NET. Tento tutoriál vás provede kroky potřebnými k vykreslení těchto obrázků do různých formátů, jako jsou HTML, JPG, PNG a PDF, pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady

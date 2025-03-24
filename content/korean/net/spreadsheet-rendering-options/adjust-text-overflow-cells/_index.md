@@ -6,6 +6,9 @@ description: GroupDocs.Viewer를 사용하면 .NET 문서의 텍스트 오버플
 weight: 10
 url: /ko/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
+
+# 셀의 텍스트 오버플로 조정
+
 ## 소개
 .NET 개발의 역동적인 세계에서 셀의 텍스트 오버플로를 관리하는 것은 시각적으로 매력적이고 읽기 쉬운 문서를 만드는 데 중요합니다. .NET용 GroupDocs.Viewer는 개발자에게 스프레드시트 문서의 텍스트 오버플로를 원활하게 처리할 수 있는 포괄적인 도구 세트를 제공합니다. 이 자습서에서는 .NET용 GroupDocs.Viewer를 사용하여 셀의 텍스트 오버플로를 조정하는 과정을 안내합니다.
 ## 전제조건

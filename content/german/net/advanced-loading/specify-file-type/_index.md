@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie beim Laden von Dokumenten mit GroupDocs.Viewe
 weight: 10
 url: /de/net/advanced-loading/specify-file-type/
 ---
+
+# Geben Sie beim Laden von Dokumenten den Dateityp an
+
 ## Einführung
 GroupDocs.Viewer für .NET ist eine vielseitige API zum Rendern von Dokumenten, die eine Vielzahl von Dateiformaten unterstützt, darunter DOCX, PDF, PPTX und mehr. Durch die Angabe des Dateityps beim Laden von Dokumenten können Sie eine genaue Wiedergabe und ein reibungsloses Anzeigeerlebnis für Ihre Benutzer gewährleisten.
 ## Voraussetzungen

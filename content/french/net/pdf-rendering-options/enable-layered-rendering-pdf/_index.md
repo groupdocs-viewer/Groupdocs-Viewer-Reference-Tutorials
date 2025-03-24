@@ -6,6 +6,9 @@ description: Découvrez comment activer le rendu en couches dans les documents P
 weight: 15
 url: /fr/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---
+
+# Activer le rendu en couches dans PDF
+
 ## Introduction
 Dans ce didacticiel, nous aborderons le processus d'activation du rendu en couches dans les documents PDF à l'aide de GroupDocs.Viewer pour .NET. Le rendu en couches permet un affichage et une manipulation améliorés des documents, offrant aux utilisateurs une expérience de visualisation plus interactive.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: GroupDocs.Viewer for .NET ile .NET'inizdeki kusursuz belge görünt
 weight: 12
 url: /tr/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---
+
+# PDF'de Yazı Tipi Lisansı Doğrulamalarını Devre Dışı Bırak
+
 ## giriiş
 .NET geliştirme alanında, belgeleri yönetmek ve değiştirmek çoğu uygulamanın çoğu zaman çok önemli bir yönüdür. İster PDF'leri, Word belgelerini veya diğer dosya türlerini görüntülerken, bu görevleri verimli bir şekilde yerine getirecek güçlü araçlara sahip olmak çok önemlidir. GroupDocs.Viewer for .NET tam da burada devreye giriyor. Bu güçlü kitaplık, geliştiricilere belge görüntüleme işlevselliğini .NET uygulamalarına sorunsuz bir şekilde entegre etme yeteneği sağlar.
 ## Önkoşullar

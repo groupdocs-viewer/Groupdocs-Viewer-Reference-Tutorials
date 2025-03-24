@@ -6,6 +6,9 @@ description: Kusursuz belge görüntüleme için .NET uygulamalarınızı GroupD
 weight: 11
 url: /tr/net/getting-started/set-license-from-stream/
 ---
+
+# Lisansı Akıştan Ayarla
+
 ## giriiş
 .NET uygulamalarınızı gelişmiş belge görüntüleme yetenekleriyle güçlendirmek mi istiyorsunuz? GroupDocs.Viewer for .NET, belge görüntüleme işlevlerini projelerinize sorunsuz bir şekilde entegre etmek için kapsamlı bir çözüm sunar. Bu eğitimde, uygulamalarınızı güçlü belge görüntüleme özellikleriyle zenginleştirmek için GroupDocs.Viewer for .NET'ten yararlanma sürecini ayrıntılı olarak ele alacağız. 
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Leer hoe u alle lay-outs in CAD-tekeningen kunt weergeven met Group
 weight: 11
 url: /nl/net/rendering-cad-drawings/render-all-layouts-cad/
 ---
+
+# Render alle lay-outs in CAD-tekeningen
+
 ## Invoering
 Op het gebied van documentbeheer en visualisatie staat GroupDocs.Viewer voor .NET overeind als een veelzijdige oplossing, waarmee ontwikkelaars moeiteloos verschillende documenttypen binnen hun .NET-toepassingen kunnen weergeven. Tot de talloze mogelijkheden behoort de mogelijkheid om CAD-tekeningen efficiënt weer te geven, inclusief de ingewikkelde lay-outs die ze met zich meebrengen. In deze zelfstudie verdiepen we ons in het proces van het gebruik van GroupDocs.Viewer voor .NET om alle lay-outs in CAD-tekeningen weer te geven. 
 ## Vereisten

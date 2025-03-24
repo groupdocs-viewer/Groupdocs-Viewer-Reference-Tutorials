@@ -6,6 +6,9 @@ description: Découvrez des didacticiels complets pour le rendu des fichiers d'a
 weight: 24
 url: /fr/net/rendering-archive-files/
 ---
+
+# Rendu des fichiers d'archives
+
 ## Introduction
 
 Recherchez-vous une intégration transparente de GroupDocs.Viewer pour .NET dans vos applications pour des capacités efficaces de rendu et de visualisation de documents ? Cherchez pas plus loin! Nos didacticiels couvrent tout ce que vous devez savoir pour tirer le meilleur parti du rendu des fichiers d'archive. Entrons dans les détails.

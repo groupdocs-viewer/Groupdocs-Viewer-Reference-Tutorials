@@ -6,6 +6,9 @@ description: Découvrez comment restituer facilement des images IA dans des appl
 weight: 10
 url: /fr/net/image-rendering/render-ai-images/
 ---
+
+# Rendre des images IA
+
 ## Introduction
 GroupDocs.Viewer pour .NET est une bibliothèque puissante qui permet aux développeurs de restituer sans effort divers formats de documents dans leurs applications .NET. Que vous ayez besoin d'afficher des images IA, des PDF ou d'autres types de documents, GroupDocs.Viewer simplifie le processus en offrant plusieurs formats de sortie pour une intégration transparente dans vos projets. Ce didacticiel vous guidera pas à pas dans le rendu des images IA à l'aide de GroupDocs.Viewer pour .NET.
 ## Conditions préalables

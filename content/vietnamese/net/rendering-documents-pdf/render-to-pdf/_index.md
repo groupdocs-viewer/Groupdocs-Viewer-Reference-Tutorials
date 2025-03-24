@@ -6,6 +6,9 @@ description: Tìm hiểu cách hiển thị tài liệu sang PDF bằng GroupDoc
 weight: 10
 url: /vi/net/rendering-documents-pdf/render-to-pdf/
 ---
+
+# Kết xuất tài liệu thành PDF
+
 ## Giới thiệu
 GroupDocs.Viewer for .NET là một công cụ mạnh mẽ để hiển thị các định dạng tài liệu khác nhau thành PDF. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình.
 ## Điều kiện tiên quyết

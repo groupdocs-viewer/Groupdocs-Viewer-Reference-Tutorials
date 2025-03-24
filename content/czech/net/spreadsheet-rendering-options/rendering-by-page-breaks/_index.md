@@ -6,6 +6,9 @@ description: Prozkoumejte sílu GroupDocs.Viewer pro .NET při přesném vykresl
 weight: 14
 url: /cs/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---
+
+# Vykreslování podle konců stránek
+
 ## Úvod
 Vítejte ve výukovém programu GroupDocs.Viewer for .NET o vykreslování dokumentů podle zalomení stránek! V tomto podrobném průvodci prozkoumáme, jak využít výkonné funkce GroupDocs.Viewer k přesnému vykreslování dokumentů, konkrétně se zaměřením na konce stránek. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede celým procesem a poskytne jasné pochopení každého kroku.
 ## Předpoklady

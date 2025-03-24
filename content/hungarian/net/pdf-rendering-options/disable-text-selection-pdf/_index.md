@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan tilthatja le a szövegkijelölést PDF-ben a Gr
 weight: 13
 url: /hu/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# Szövegkijelölés letiltása PDF-ben
+
 ## Bevezetés
 A GroupDocs.Viewer for .NET egy hatékony dokumentum-megjelenítő API, amely lehetővé teszi a fejlesztők számára, hogy könnyedén integrálják a dokumentummegtekintési képességeket .NET-alkalmazásaikba. A GroupDocs.Viewer egyik kulcsfontosságú funkciója a szövegkiválasztás letiltása a PDF dokumentumokban. Ez a funkció különösen hasznos olyan esetekben, amikor meg kell akadályozni, hogy a felhasználók szöveget másoljanak érzékeny dokumentumokból, ezzel biztosítva a dokumentumok biztonságát és integritását.
 ## Előfeltételek

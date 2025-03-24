@@ -6,6 +6,9 @@ description: Tingkatkan visualisasi dokumen dengan GroupDocs.Viewer untuk .NET. 
 weight: 12
 url: /id/net/spreadsheet-rendering-options/render-grid-lines/
 ---
+
+# Render Garis Kisi
+
 ## Perkenalan
 Selamat datang di panduan langkah demi langkah tentang penggunaan GroupDocs.Viewer untuk .NET untuk merender garis kisi di dokumen Anda. Baik Anda seorang pengembang berpengalaman atau pendatang baru di kerangka .NET, tutorial ini akan memandu Anda melalui proses dengan penjelasan mendetail dan contoh yang mudah diikuti.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Lär dig hur du inaktiverar textval i PDF med GroupDocs.Viewer för
 weight: 13
 url: /sv/net/pdf-rendering-options/disable-text-selection-pdf/
 ---
+
+# Inaktivera textval i PDF
+
 ## Introduktion
 GroupDocs.Viewer för .NET är ett kraftfullt dokumentåtergivnings-API som tillåter utvecklare att integrera dokumentvisningsmöjligheter i sina .NET-applikationer utan ansträngning. En av nyckelfunktionerna som tillhandahålls av GroupDocs.Viewer är möjligheten att inaktivera textval i PDF-dokument. Den här funktionen är särskilt användbar i scenarier där du behöver förhindra användare från att kopiera text från känsliga dokument, vilket säkerställer dokumentsäkerhet och integritet.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: GroupDocs.Viewer を使用して .NET アプリケーションで T
 weight: 17
 url: /ja/net/image-rendering/render-tga-images/
 ---
+
+# TGA イメージをレンダリングする
+
 ## 導入
 今日のデジタル環境では、さまざまな画像形式をシームレスにレンダリングする機能が多くのアプリケーションにとって不可欠です。そのような形式の 1 つは、高品質の画像で知られ、グラフィックスを多用する業界で広く使用されている TGA (Truevision Graphics Adaptor) です。 TGA イメージ レンダリングをアプリケーションに組み込もうとしている .NET 開発者であれば、ここが正しい場所です。このチュートリアルでは、GroupDocs.Viewer for .NET を活用して TGA 画像を簡単にレンダリングする方法を検討します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Viewer for .NET 向文档无缝添加�
 weight: 10
 url: /zh/net/rendering-options/add-watermark/
 ---
+
+# 在文档中添加水印
+
 ## 介绍
 在当今的数字时代，无缝管理和查看各种文档格式对于许多企业和个人来说都是必需的。幸运的是，借助 GroupDocs.Viewer for .NET 等工具，处理文档变得轻而易举。这个强大的 .NET 库使开发人员能够轻松地将文档查看功能集成到他们的应用程序中，从而允许用户无需使用创建文档的原始软件即可查看文档。
 ## 先决条件

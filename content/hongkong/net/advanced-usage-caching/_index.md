@@ -7,6 +7,9 @@ weight: 22
 url: /zh-hant/net/advanced-usage-caching/
 ---
 
+# 高級用法（快取）
+
+
 ## 介紹
 
 在 .NET 應用程式開發領域，效率和速度至關重要，掌握快取等先進技術可以顯著提高效能。歡迎來到 GroupDocs.Viewer 的世界，在這裡您可以利用快取的強大功能來簡化文件處理並輕鬆優化應用程式的效能。

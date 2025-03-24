@@ -6,6 +6,9 @@ description: Prozkoumejte kouzlo GroupDocs.Viewer pro .NET – bezproblémově i
 weight: 11
 url: /cs/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
+
+# Získejte názvy pracovních listů
+
 ## Úvod
 Vítejte ve fascinujícím světě GroupDocs.Viewer pro .NET! Pokud jste vývojář nebo nadšenec, který má zájem prozkoumávat výkonné možnosti prohlížení dokumentů ve svých aplikacích .NET, máte se na co těšit. V tomto komplexním průvodci se ponoříme do složitosti získávání názvů listů pomocí GroupDocs.Viewer. Zapněte si bezpečnostní pás a vydejte se na tuto vzrušující cestu!
 ## Předpoklady

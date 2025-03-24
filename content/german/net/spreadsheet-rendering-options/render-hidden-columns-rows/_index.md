@@ -6,6 +6,9 @@ description: Entsperren Sie versteckte Daten in Tabellenkalkulationen mühelos m
 weight: 13
 url: /de/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---
+
+# Verborgene Spalten und Zeilen rendern
+
 ## Einführung
 Im Bereich der Dokumentvisualisierung gilt GroupDocs.Viewer für .NET als robustes Tool, das die nahtlose Darstellung verschiedener Dokumentformate ermöglicht. Eine interessante Funktion ist die Möglichkeit, versteckte Spalten und Zeilen in Tabellenkalkulationen anzuzeigen. In diesem Tutorial befassen wir uns mit den Schritten, mit denen Sie diese Funktion freischalten und das Potenzial Ihrer Daten freisetzen können.
 ## Voraussetzungen

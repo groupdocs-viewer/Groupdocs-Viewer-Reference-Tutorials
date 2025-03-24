@@ -6,6 +6,9 @@ description: Leer hoe u naadloos watermerken aan documenten kunt toevoegen met G
 weight: 10
 url: /nl/net/rendering-options/add-watermark/
 ---
+
+# Watermerk toevoegen aan document
+
 ## Invoering
 In het huidige digitale tijdperk is het naadloos beheren en bekijken van verschillende documentformaten een noodzaak voor veel bedrijven en particulieren. Gelukkig wordt het verwerken van documenten met tools als GroupDocs.Viewer voor .NET een fluitje van een cent. Met deze krachtige .NET-bibliotheek kunnen ontwikkelaars moeiteloos de functionaliteit voor het bekijken van documenten in hun applicaties integreren, waardoor gebruikers documenten kunnen bekijken zonder dat ze de originele software nodig hebben waarmee ze zijn gemaakt.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Tìm hiểu cách dễ dàng hiển thị hình ảnh CMX thành nh
 weight: 13
 url: /vi/net/image-rendering/render-cmx-images/
 ---
+
+# Kết xuất hình ảnh CMX
+
 ## Giới thiệu
 Trong lĩnh vực quản lý và thao tác tài liệu, việc hiển thị hình ảnh từ nhiều định dạng khác nhau là một nhiệm vụ then chốt. GroupDocs.Viewer dành cho .NET đơn giản hóa quy trình này bằng cách cung cấp các chức năng toàn diện để hiển thị hình ảnh CMX thành các định dạng khác nhau như HTML, JPG, PNG và PDF. Hướng dẫn này sẽ hướng dẫn bạn quy trình từng bước hiển thị hình ảnh CMX bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết
