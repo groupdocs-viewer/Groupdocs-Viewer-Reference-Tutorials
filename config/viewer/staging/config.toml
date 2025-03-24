@@ -1,4 +1,4 @@
-baseURL = "https://qa-tutorials.groupdocs.com/tutorials/viewer"
+baseURL = "https://qa-tutorials.groupdocs.com/viewer"
 
 [[deployment.targets]]
 name = "Stage"

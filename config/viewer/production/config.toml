@@ -1,4 +1,4 @@
-baseURL = "https://reference.groupdocs.com/tutorials/viewer"
+baseURL = "https://reference.groupdocs.com/viewer"
 
 # Google Tag Manager settings
 [params.gtm]
