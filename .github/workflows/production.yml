@@ -53,7 +53,7 @@ jobs:
       - name: Build
         run: hugo --configDir config/viewer --environment production --minify
         
-      - name: Deploy apireference2.groupdocs.com(tutorials-viewer)(family)(Production) to S3
+      - name: Deploy apiqa-tutorials.groupdocs.com(tutorials-viewer)(family)(Production) to S3
         run: hugo --configDir config/viewer --environment production deploy --target "Production" --maxDeletes 0
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}

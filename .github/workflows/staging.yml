@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: reference2.groupdocs.com(tutorials-viewer)(family)(Stage)
+name: qa-tutorials.groupdocs.com(tutorials-viewer)(family)(Stage)
 
 # Controls when the action will run. 
 on:
@@ -54,7 +54,7 @@ jobs:
       - name: Build
         run: hugo --configDir config/viewer --environment staging --minify
         
-      - name: Deploy apireference2.groupdocs.com(tutorials-viewer)(family)(Stage) to S3
+      - name: Deploy apiqa-tutorials.groupdocs.com(tutorials-viewer)(family)(Stage) to S3
         run: hugo --configDir config/viewer --environment staging deploy --target "Stage" --maxDeletes 0
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
