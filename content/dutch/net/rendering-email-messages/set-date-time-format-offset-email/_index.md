@@ -3,7 +3,6 @@ title: Datum/tijd-notatie en tijdzone-offset instellen (e-mail)
 linktitle: Datum/tijd-notatie en tijdzone-offset instellen (e-mail)
 second_title: GroupDocs.Viewer .NET-API
 description: Integreer GroupDocs.Viewer voor .NET naadloos in uw toepassingen voor krachtige documentweergavemogelijkheden. Verbeter de gebruikerservaring met aanpasbare opties.
-type: docs
 weight: 11
 url: /nl/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

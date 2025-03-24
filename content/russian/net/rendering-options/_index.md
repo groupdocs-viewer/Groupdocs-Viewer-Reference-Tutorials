@@ -3,7 +3,6 @@ title: Параметры рендеринга
 linktitle: Параметры рендеринга
 second_title: GroupDocs.Viewer .NET API
 description: Легко интегрируйте GroupDocs.Viewer для .NET в свои приложения с помощью учебных пособий по параметрам рендеринга, от добавления водяных знаков до настройки шрифтов.
-type: docs
 weight: 23
 url: /ru/net/rendering-options/
 ---

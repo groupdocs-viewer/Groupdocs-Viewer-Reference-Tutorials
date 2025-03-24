@@ -3,7 +3,6 @@ title: Render archieven naar enkele of meerdere HTML-pagina's
 linktitle: Render archieven naar enkele of meerdere HTML-pagina's
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u archieven naar HTML-pagina's kunt renderen met GroupDocs.Viewer voor .NET. Integreer moeiteloos de mogelijkheden voor documentweergave in uw .NET-toepassingen.
-type: docs
 weight: 12
 url: /nl/net/rendering-archive-files/render-archives-html/
 ---

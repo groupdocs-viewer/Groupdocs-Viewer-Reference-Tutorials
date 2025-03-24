@@ -3,7 +3,6 @@ title: Hernoem e-mailvelden tijdens het renderen
 linktitle: Hernoem e-mailvelden tijdens het renderen
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter de kijkervaring van documenten met GroupDocs.Viewer voor .NET. Geef e-mails naadloos weer en pas ze aan.
-type: docs
 weight: 12
 url: /nl/net/rendering-email-messages/rename-email-fields/
 ---

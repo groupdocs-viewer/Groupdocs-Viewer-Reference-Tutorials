@@ -3,7 +3,6 @@ title: Licenc beállítása a Streamből
 linktitle: Licenc beállítása a Streamből
 second_title: GroupDocs.Viewer .NET API
 description: Bővítse .NET-alkalmazásait a GroupDocs.Viewer segítségével a zökkenőmentes dokumentummegtekintés érdekében. Kövesse lépésről lépésre útmutatónkat, és könnyedén integrálja a hatékony dokumentummegtekintési funkciókat.
-type: docs
 weight: 11
 url: /hu/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ Mielőtt belevágnánk az integrációs folyamatba, győződjön meg arról, hog
 1. Alapvető ismeretek a .NET fejlesztésről: A C# és a .NET keretrendszer ismerete elengedhetetlen, hogy kövesse ezt az oktatóanyagot.
    
 2.  GroupDocs.Viewer for .NET Package: Győződjön meg arról, hogy letöltötte és telepítette a GroupDocs.Viewer for .NET csomagot. Beszerezheti a[letöltési link](https://releases.groupdocs.com/viewer/net/).
-3.  Hozzáférés a GroupDocs dokumentációjához: Tartsa meg a[dokumentáció](https://reference.groupdocs.com/viewer/net/) hasznos referenciaként szolgálhat az integrációs folyamat során.
+3.  Hozzáférés a GroupDocs dokumentációjához: Tartsa meg a[dokumentáció](https://tutorials.groupdocs.com/viewer/net/) hasznos referenciaként szolgálhat az integrációs folyamat során.
 
 ## Névterek importálása
 Először is importálja a szükséges névtereket .NET-alkalmazásába. Kovesd ezeket a lepeseket:

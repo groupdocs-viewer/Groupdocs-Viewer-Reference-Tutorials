@@ -3,7 +3,6 @@ title: PDF'de Metin Seçimini Devre Dışı Bırak
 linktitle: PDF'de Metin Seçimini Devre Dışı Bırak
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak PDF'de metin seçimini nasıl devre dışı bırakacağınızı öğrenin. Sorunsuz entegrasyon için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 13
 url: /tr/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

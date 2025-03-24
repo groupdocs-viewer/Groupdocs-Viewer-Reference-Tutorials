@@ -3,7 +3,6 @@ title: Render Arsip ke Satu atau Beberapa Halaman HTML
 linktitle: Render Arsip ke Satu atau Beberapa Halaman HTML
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender arsip ke halaman HTML menggunakan GroupDocs.Viewer untuk .NET. Integrasikan kemampuan melihat dokumen dengan mudah ke dalam aplikasi .NET Anda.
-type: docs
 weight: 12
 url: /id/net/rendering-archive-files/render-archives-html/
 ---

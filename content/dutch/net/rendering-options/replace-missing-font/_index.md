@@ -3,7 +3,6 @@ title: Vervang het ontbrekende lettertype
 linktitle: Vervang het ontbrekende lettertype
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u ontbrekende lettertypen in .NET-documenten moeiteloos kunt vervangen met GroupDocs.Viewer. Zorg voor een nauwkeurige weergave met eenvoudige stappen.
-type: docs
 weight: 20
 url: /nl/net/rendering-options/replace-missing-font/
 ---

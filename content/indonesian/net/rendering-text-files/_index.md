@@ -3,7 +3,6 @@ title: Merender File Teks
 linktitle: Merender File Teks
 second_title: GroupDocs.Viewer .NET API
 description: Buka potensi GroupDocs.Viewer untuk .NET dengan tutorial tentang merender file teks. Konversikan file .txt ke dalam berbagai format untuk meningkatkan pengelolaan dokumen.
-type: docs
 weight: 33
 url: /id/net/rendering-text-files/
 ---

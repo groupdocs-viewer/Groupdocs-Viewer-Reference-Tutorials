@@ -3,7 +3,6 @@ title: CAD 図面の出力画像サイズを調整する
 linktitle: CAD 図面の出力画像サイズを調整する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して CAD 図面の出力画像サイズを調整する方法を学びます。視認性と使いやすさを簡単に向上させます。
-type: docs
 weight: 15
 url: /ja/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

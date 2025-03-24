@@ -3,7 +3,6 @@ title: Renderuj linie siatki
 linktitle: Renderuj linie siatki
 second_title: GroupDocs.Viewer API .NET
 description: Ulepsz wizualizację dokumentów za pomocą GroupDocs.Viewer dla .NET. Renderuj linie siatki bez wysiłku. Wypróbuj bezpłatną wersję próbną już teraz! #Przeglądarka #GroupDocs
-type: docs
 weight: 12
 url: /pl/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ W tym samouczku omówiliśmy proces renderowania linii siatki w dokumentach przy
 ### Czy dostępne są licencje tymczasowe dla GroupDocs.Viewer dla .NET?
  Tak, możesz uzyskać[licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/) dla GroupDocs.Viewer dla .NET.
 ### Czy mogę znaleźć szczegółową dokumentację programu GroupDocs.Viewer dla platformy .NET?
- Absolutnie! Patrz[oficjalna dokumentacja](https://reference.groupdocs.com/viewer/net/) aby uzyskać szczegółowe informacje na temat korzystania z GroupDocs.Viewer dla .NET.
+ Absolutnie! Patrz[oficjalna dokumentacja](https://tutorials.groupdocs.com/viewer/net/) aby uzyskać szczegółowe informacje na temat korzystania z GroupDocs.Viewer dla .NET.
 ### Skąd mogę pobrać najnowszą wersję GroupDocs.Viewer dla .NET?
  Pobierz bibliotekę z[oficjalna strona wydania](https://releases.groupdocs.com/viewer/net/).

@@ -3,7 +3,6 @@ title: Belgeleri Yükleme
 linktitle: Belgeleri Yükleme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer .NET'i kullanarak belgeleri nasıl verimli bir şekilde yükleyeceğinizi ve oluşturacağınızı keşfedin. Gelişmiş .NET uygulamaları için yerel disk, akış ve FTP yükleme eğitimlerini keşfedin.
-type: docs
 weight: 20
 url: /tr/net/loading-documents/
 ---

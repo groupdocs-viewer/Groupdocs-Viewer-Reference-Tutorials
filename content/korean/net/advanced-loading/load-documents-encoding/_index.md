@@ -3,7 +3,6 @@ title: 특정 인코딩으로 문서 로드
 linktitle: 특정 인코딩으로 문서 로드
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 원활한 문서 보기로 .NET 응용 프로그램을 향상하세요. 특정 인코딩으로 문서를 쉽게 로드하고 보기 환경을 맞춤화하세요.
-type: docs
 weight: 11
 url: /ko/net/advanced-loading/load-documents-encoding/
 ---

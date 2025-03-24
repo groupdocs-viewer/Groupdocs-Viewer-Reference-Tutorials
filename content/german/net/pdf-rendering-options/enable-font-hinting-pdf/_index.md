@@ -3,7 +3,6 @@ title: Aktivieren Sie Schriftartenhinweise in PDF
 linktitle: Aktivieren Sie Schriftartenhinweise in PDF
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Schriftartenhinweise in PDF-Dokumenten aktivieren. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Integration.
-type: docs
 weight: 14
 url: /de/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

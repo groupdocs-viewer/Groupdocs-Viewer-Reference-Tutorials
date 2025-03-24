@@ -3,7 +3,6 @@ title: CAD 도면에 대한 보기 정보 얻기
 linktitle: CAD 도면에 대한 보기 정보 얻기
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 CAD 도면에 대한 보기 정보를 검색하는 방법을 알아보세요. 원활한 CAD 파일 처리로 .NET 애플리케이션을 강화하세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

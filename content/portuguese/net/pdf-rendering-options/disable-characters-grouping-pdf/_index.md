@@ -3,7 +3,6 @@ title: Desativar agrupamento de caracteres em PDF
 linktitle: Desativar agrupamento de caracteres em PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como desabilitar o agrupamento de caracteres em PDFs usando GroupDocs.Viewer for .NET. Siga nosso tutorial passo a passo para uma renderização perfeita de documentos.
-type: docs
 weight: 11
 url: /pt/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

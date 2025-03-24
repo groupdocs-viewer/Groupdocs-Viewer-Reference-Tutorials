@@ -3,7 +3,6 @@ title: ضبط تجاوز النص في الخلايا
 linktitle: ضبط تجاوز النص في الخلايا
 second_title: GroupDocs.Viewer .NET API
 description: قم بإدارة تجاوز النص بسهولة في مستندات .NET باستخدام GroupDocs.Viewer. تعزيز سهولة القراءة وتجربة المستخدم. تحميل النسخة التجريبية المجانية من الآن.
-type: docs
 weight: 10
 url: /ar/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 في الختام، يعمل GroupDocs.Viewer for .NET على تبسيط مهمة التعامل مع تجاوز النص في الخلايا، مما يضمن أن مستنداتك ليست وظيفية فحسب، بل مصقولة بصريًا أيضًا. باستخدام هذه الخطوات، يمكنك تحسين تجربة المستخدم وسهولة قراءة مستندات جدول البيانات الخاصة بك دون عناء.
 ## الأسئلة الشائعة
 ### 1. هل يمكنني استخدام GroupDocs.Viewer لـ .NET مع أي نوع من المستندات؟
- نعم، يدعم GroupDocs.Viewer for .NET نطاقًا واسعًا من تنسيقات المستندات، بما في ذلك جداول البيانات والعروض التقديمية والمزيد. الرجوع إلى[توثيق](https://reference.groupdocs.com/viewer/net/) للحصول على القائمة الكاملة.
+ نعم، يدعم GroupDocs.Viewer for .NET نطاقًا واسعًا من تنسيقات المستندات، بما في ذلك جداول البيانات والعروض التقديمية والمزيد. الرجوع إلى[توثيق](https://tutorials.groupdocs.com/viewer/net/) للحصول على القائمة الكاملة.
 ### 2. هل هناك نسخة تجريبية مجانية متاحة؟
  نعم، يمكنك استكشاف إمكانيات GroupDocs.Viewer لـ .NET عن طريق تنزيل ملف[تجربة مجانية](https://releases.groupdocs.com/).
 ### 3. كيف يمكنني الحصول على الدعم لأي مشكلة؟

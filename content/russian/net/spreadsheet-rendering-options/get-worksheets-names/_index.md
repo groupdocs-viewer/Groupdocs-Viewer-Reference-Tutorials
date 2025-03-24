@@ -3,7 +3,6 @@ title: Получить имена рабочих листов
 linktitle: Получить имена рабочих листов
 second_title: GroupDocs.Viewer .NET API
 description: Откройте для себя магию GroupDocs.Viewer для .NET — легко интегрируйте просмотр документов в свои приложения. Попробуйте бесплатную пробную версию прямо сейчас!
-type: docs
 weight: 11
 url: /ru/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ foreach (Page page in viewInfo.Pages)
 ### Могу ли я получить временную лицензию?
  Конечно! Посещать[эта ссылка](https://purchase.groupdocs.com/temporary-license/) чтобы получить временную лицензию.
 ### Доступны ли ресурсы с подробной документацией?
- Абсолютно! Проверьте[официальная документация](https://reference.groupdocs.com/viewer/net/) для получения подробной информации и руководств.
+ Абсолютно! Проверьте[официальная документация](https://tutorials.groupdocs.com/viewer/net/) для получения подробной информации и руководств.

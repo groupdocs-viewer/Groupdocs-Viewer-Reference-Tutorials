@@ -3,7 +3,6 @@ title: Upravte kvalitu obrázku JPG ve vykresleném PDF
 linktitle: Upravte kvalitu obrázku JPG ve vykresleném PDF
 second_title: GroupDocs.Viewer .NET API
 description: Zjistěte, jak upravit kvalitu obrazu JPG ve vykreslených dokumentech PDF pomocí GroupDocs.Viewer pro .NET. Vylepšete si zážitek ze sledování dokumentů.
-type: docs
 weight: 11
 url: /cs/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

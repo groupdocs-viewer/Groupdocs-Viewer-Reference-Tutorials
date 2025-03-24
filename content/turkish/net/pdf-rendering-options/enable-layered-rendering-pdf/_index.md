@@ -3,7 +3,6 @@ title: PDF'de Katmanlı İşlemeyi Etkinleştir
 linktitle: PDF'de Katmanlı İşlemeyi Etkinleştir
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak PDF belgelerinde katmanlı oluşturmayı nasıl etkinleştireceğinizi öğrenin. Belge görüntüleme deneyimini zahmetsizce geliştirin.
-type: docs
 weight: 15
 url: /tr/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

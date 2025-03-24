@@ -3,7 +3,6 @@ title: Gizli Sayfaları Oluştur
 linktitle: Gizli Sayfaları Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: Sorunsuz belge işleme için .NET uygulamanızı GroupDocs.Viewer ile geliştirin. Gizli sayfaları zahmetsizce oluşturmak için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 15
 url: /tr/net/rendering-options/render-hidden-pages/
 ---

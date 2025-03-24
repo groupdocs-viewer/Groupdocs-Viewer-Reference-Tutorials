@@ -3,7 +3,6 @@ title: 고급 로딩 옵션
 linktitle: 고급 로딩 옵션
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer 튜토리얼을 통해 .NET 앱을 향상하세요. 파일 형식 지정, 인코딩 관리, 비밀번호로 보호된 문서 로드 등의 방법을 알아보세요.
-type: docs
 weight: 21
 url: /ko/net/advanced-loading/
 ---

@@ -3,7 +3,6 @@ title: 사용자 정의 여백을 사용하여 HTML 렌더링
 linktitle: 사용자 정의 여백을 사용하여 HTML 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET에서 사용자 정의 여백을 사용하여 HTML을 렌더링하는 방법을 알아보세요. 손쉽게 문서 프레젠테이션을 향상해 보세요.
-type: docs
 weight: 11
 url: /ko/net/rendering-web-documents/render-html-margins/
 ---

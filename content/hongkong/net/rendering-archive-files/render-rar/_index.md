@@ -3,7 +3,6 @@ title: 渲染 RAR 檔案
 linktitle: 渲染 RAR 檔案
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 將 RAR 檔案呈現為 HTML、JPG、PNG 或 PDF 格式。輕鬆檢視和分享 RAR 存檔的內容。
-type: docs
 weight: 13
 url: /zh-hant/net/rendering-archive-files/render-rar/
 ---

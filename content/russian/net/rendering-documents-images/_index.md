@@ -3,7 +3,6 @@ title: Преобразование документов в изображени
 linktitle: Преобразование документов в изображения
 second_title: GroupDocs.Viewer .NET API
 description: Изучите руководства по преобразованию документов в изображения с помощью GroupDocs.Viewer для .NET. Оптимизируйте качество изображения, извлекайте координаты текста и улучшайте взаимодействие с пользователем.
-type: docs
 weight: 30
 url: /ru/net/rendering-documents-images/
 ---

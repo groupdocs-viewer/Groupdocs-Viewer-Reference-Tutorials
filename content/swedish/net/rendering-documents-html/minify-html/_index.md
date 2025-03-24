@@ -3,7 +3,6 @@ title: Förminska renderat HTML-dokument
 linktitle: Förminska renderat HTML-dokument
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du sömlöst renderar HTML-dokument i .NET-applikationer med GroupDocs.Viewer för .NET.
-type: docs
 weight: 11
 url: /sv/net/rendering-documents-html/minify-html/
 ---

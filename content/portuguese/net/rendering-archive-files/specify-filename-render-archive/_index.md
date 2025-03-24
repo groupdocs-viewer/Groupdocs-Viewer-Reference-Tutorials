@@ -3,7 +3,6 @@ title: Especifique o nome do arquivo ao renderizar arquivos compactados
 linktitle: Especifique o nome do arquivo ao renderizar arquivos compactados
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar arquivos compactados em .NET usando GroupDocs.Viewer, aprimorando os recursos de gerenciamento de documentos.
-type: docs
 weight: 14
 url: /pt/net/rendering-archive-files/specify-filename-render-archive/
 ---

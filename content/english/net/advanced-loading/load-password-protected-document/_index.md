@@ -3,7 +3,6 @@ title: Load Password-Protected Documents
 linktitle: Load Password-Protected Documents
 second_title: GroupDocs.Viewer .NET API
 description: Effortlessly integrate password-protected document viewing into .NET applications using GroupDocs.Viewer for .NET. Follow our step-by-step tutorial for seamless.
-type: docs
 weight: 12
 url: /net/advanced-loading/load-password-protected-document/
 ---

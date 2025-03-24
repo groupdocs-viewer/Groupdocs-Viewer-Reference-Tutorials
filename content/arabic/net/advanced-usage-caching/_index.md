@@ -3,7 +3,6 @@ title: الاستخدام المتقدم (التخزين المؤقت)
 linktitle: الاستخدام المتقدم (التخزين المؤقت)
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف التقنيات المتقدمة لتحسين سرعة معالجة المستندات في تطبيقات .NET باستخدام GroupDocs.Viewer. تعرف على كيفية تمكين التخزين المؤقت للحصول على أداء أسرع الآن!
-type: docs
 weight: 22
 url: /ar/net/advanced-usage-caching/
 ---

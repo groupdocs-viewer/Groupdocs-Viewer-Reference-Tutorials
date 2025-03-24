@@ -3,7 +3,6 @@ title: पीडीएफ में छवि गुणवत्ता समा
 linktitle: पीडीएफ में छवि गुणवत्ता समायोजित करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके PDF दस्तावेज़ों में छवि गुणवत्ता को समायोजित करना सीखें। निर्बाध एकीकरण के लिए हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 10
 url: /hi/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

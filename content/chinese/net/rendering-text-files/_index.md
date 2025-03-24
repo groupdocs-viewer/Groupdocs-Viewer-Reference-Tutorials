@@ -3,7 +3,6 @@ title: 渲染文本文件
 linktitle: 渲染文本文件
 second_title: GroupDocs.Viewer .NET API
 description: 通过渲染文本文件的教程释放 GroupDocs.Viewer for .NET 的潜力。将 .txt 文件转换为各种格式以增强文档管理。
-type: docs
 weight: 33
 url: /zh/net/rendering-text-files/
 ---

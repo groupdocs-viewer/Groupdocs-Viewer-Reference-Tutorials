@@ -3,7 +3,6 @@ title: Archiefmap renderen
 linktitle: Archiefmap renderen
 second_title: GroupDocs.Viewer .NET-API
 description: Integreer GroupDocs.Viewer voor .NET naadloos in uw .NET-toepassingen voor efficiënte documentweergave- en weergavemogelijkheden.
-type: docs
 weight: 11
 url: /nl/net/rendering-archive-files/render-archive-folder/
 ---

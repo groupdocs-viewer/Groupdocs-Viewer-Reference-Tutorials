@@ -3,7 +3,6 @@ title: เรนเดอร์รูปภาพ APNG
 linktitle: เรนเดอร์รูปภาพ APNG
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์รูปภาพ APNG ในรูปแบบต่างๆ โดยใช้ Groupdocs.Viewer สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ดรวมอยู่ด้วย
-type: docs
 weight: 11
 url: /th/net/image-rendering/render-apng-images/
 ---

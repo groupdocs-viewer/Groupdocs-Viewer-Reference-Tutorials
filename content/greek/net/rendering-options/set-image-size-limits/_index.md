@@ -3,7 +3,6 @@ title: Ορίστε όρια μεγέθους εικόνας
 linktitle: Ορίστε όρια μεγέθους εικόνας
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να ορίζετε όρια μεγέθους εικόνας σε εφαρμογές .NET χωρίς κόπο χρησιμοποιώντας το GroupDocs.Viewer για .NET, βελτιώνοντας τις εμπειρίες προβολής εγγράφων.
-type: docs
 weight: 21
 url: /el/net/rendering-options/set-image-size-limits/
 ---

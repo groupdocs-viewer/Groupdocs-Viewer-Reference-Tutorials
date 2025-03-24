@@ -3,7 +3,6 @@ title: 在文档中添加水印
 linktitle: 在文档中添加水印
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 向文档无缝添加水印。通过这个易于理解的教程增强文档安全性和品牌形象。
-type: docs
 weight: 10
 url: /zh/net/rendering-options/add-watermark/
 ---

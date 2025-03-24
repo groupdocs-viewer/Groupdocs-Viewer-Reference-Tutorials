@@ -3,7 +3,6 @@ title: 元のページ サイズで PDF をレンダリングする
 linktitle: 元のページ サイズで PDF をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して PDF を元のページ サイズでレンダリングする方法を学びます。ステップバイステップのガイドに従って、この機能をシームレスに統合してください。
-type: docs
 weight: 17
 url: /ja/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

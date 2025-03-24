@@ -3,7 +3,6 @@ title: ضبط تنسيق التاريخ والوقت وإزاحة المنطقة
 linktitle: ضبط تنسيق التاريخ والوقت وإزاحة المنطقة الزمنية (البريد الإلكتروني)
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج GroupDocs.Viewer لـ .NET بسلاسة في تطبيقاتك للحصول على إمكانات قوية لعرض المستندات. تعزيز تجربة المستخدم مع خيارات قابلة للتخصيص.
-type: docs
 weight: 11
 url: /ar/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

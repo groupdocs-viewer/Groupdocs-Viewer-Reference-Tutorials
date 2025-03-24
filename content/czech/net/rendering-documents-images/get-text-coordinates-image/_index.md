@@ -3,7 +3,6 @@ title: Získejte souřadnice textu pro vykreslování obrázků
 linktitle: Získejte souřadnice textu pro vykreslování obrázků
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se extrahovat souřadnice textu pro vykreslování obrázků pomocí GroupDocs.Viewer for .NET. Vylepšete své možnosti zpracování dokumentů bez námahy.
-type: docs
 weight: 12
 url: /cs/net/rendering-documents-images/get-text-coordinates-image/
 ---

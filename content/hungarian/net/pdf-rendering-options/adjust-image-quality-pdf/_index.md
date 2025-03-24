@@ -3,7 +3,6 @@ title: Állítsa be a képminőséget PDF-ben
 linktitle: Állítsa be a képminőséget PDF-ben
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan állíthatja be a képminőséget PDF-dokumentumokban a GroupDocs.Viewer for .NET segítségével. Kövesse lépésről lépésre bemutató oktatóanyagunkat a zökkenőmentes integráció érdekében.
-type: docs
 weight: 10
 url: /hu/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

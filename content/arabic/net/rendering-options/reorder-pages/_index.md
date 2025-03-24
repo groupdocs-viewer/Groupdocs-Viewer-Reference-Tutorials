@@ -3,7 +3,6 @@ title: إعادة ترتيب الصفحات في المستند
 linktitle: إعادة ترتيب الصفحات في المستند
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية إعادة ترتيب الصفحات في مستند باستخدام GroupDocs.Viewer لـ .NET. اتبع برنامجنا التعليمي خطوة بخطوة لإدارة المستندات بسلاسة.
-type: docs
 weight: 19
 url: /ar/net/rendering-options/reorder-pages/
 ---

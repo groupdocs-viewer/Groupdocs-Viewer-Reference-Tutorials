@@ -3,7 +3,6 @@ title: Rendering con caratteri personalizzati
 linktitle: Rendering con caratteri personalizzati
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering di documenti con caratteri personalizzati utilizzando GroupDocs.Viewer per .NET. Migliora le presentazioni visive senza sforzo.
-type: docs
 weight: 18
 url: /it/net/rendering-options/render-custom-fonts/
 ---

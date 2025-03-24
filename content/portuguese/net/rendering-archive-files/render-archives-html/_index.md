@@ -3,7 +3,6 @@ title: Renderizar arquivos em páginas HTML únicas ou múltiplas
 linktitle: Renderizar arquivos em páginas HTML únicas ou múltiplas
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar arquivos em páginas HTML usando GroupDocs.Viewer for .NET. Integre facilmente recursos de visualização de documentos aos seus aplicativos .NET.
-type: docs
 weight: 12
 url: /pt/net/rendering-archive-files/render-archives-html/
 ---

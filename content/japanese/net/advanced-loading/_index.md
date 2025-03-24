@@ -3,7 +3,6 @@ title: 高度な読み込みオプション
 linktitle: 高度な読み込みオプション
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET チュートリアルを使用して .NET アプリを強化します。ファイルの種類の指定、エンコーディングの管理、パスワードで保護されたドキュメントの読み込みなどの方法を学びます。
-type: docs
 weight: 21
 url: /ja/net/advanced-loading/
 ---

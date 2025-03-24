@@ -3,7 +3,6 @@ title: 不足しているフォントを置換する
 linktitle: 不足しているフォントを置換する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して、.NET ドキュメント内の不足しているフォントを簡単に置き換える方法を学びます。簡単な手順で正確なレンダリングを実現します。
-type: docs
 weight: 20
 url: /ja/net/rendering-options/replace-missing-font/
 ---

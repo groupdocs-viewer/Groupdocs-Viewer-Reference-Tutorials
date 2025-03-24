@@ -3,7 +3,6 @@ title: Настройка размера выходного изображени
 linktitle: Настройка размера выходного изображения для чертежей САПР
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как настроить размер выходного изображения для чертежей САПР с помощью GroupDocs.Viewer для .NET. Повысьте видимость и удобство использования без особых усилий.
-type: docs
 weight: 15
 url: /ru/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

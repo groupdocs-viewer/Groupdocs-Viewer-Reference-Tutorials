@@ -3,7 +3,6 @@ title: 使用密碼保護渲染的 PDF
 linktitle: 使用密碼保護渲染的 PDF
 second_title: GroupDocs.Viewer .NET API
 description: 使用 Groupdocs.Viewer for .NET，使用密碼輕鬆保護渲染的 PDF。確保您的文件安全且保密。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-documents-pdf/protect-pdf/
 ---

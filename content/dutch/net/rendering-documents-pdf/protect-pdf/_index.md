@@ -3,7 +3,6 @@ title: Bescherm gerenderde PDF met wachtwoord
 linktitle: Bescherm gerenderde PDF met wachtwoord
 second_title: GroupDocs.Viewer .NET-API
 description: Bescherm uw weergegeven PDF's eenvoudig met wachtwoorden met Groupdocs.Viewer voor .NET. Houd uw documenten veilig en vertrouwelijk.
-type: docs
 weight: 12
 url: /nl/net/rendering-documents-pdf/protect-pdf/
 ---

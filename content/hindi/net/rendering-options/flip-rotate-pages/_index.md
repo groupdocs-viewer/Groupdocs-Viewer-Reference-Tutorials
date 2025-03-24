@@ -3,7 +3,6 @@ title: पन्ने पलटें और घुमाएँ
 linktitle: पन्ने पलटें और घुमाएँ
 second_title: GroupDocs.Viewer .NET API
 description: निर्बाध दस्तावेज़ रेंडरिंग, फ़्लिपिंग और रोटेशन के लिए अपने अनुप्रयोगों में .NET के लिए Groupdocs.Viewer को एकीकृत करने का तरीका जानें।
-type: docs
 weight: 12
 url: /hi/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ url: /hi/net/rendering-options/flip-rotate-pages/
 ## आवश्यक शर्तें
 शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ स्थापित हैं:
 ### .NET के लिए Groupdocs.Viewer इंस्टॉल करना
- .NET के लिए Groupdocs.Viewer का उपयोग करने के लिए, आपको NuGet पैकेज मैनेजर के माध्यम से पैकेज इंस्टॉल करना होगा। आप विस्तृत इंस्टालेशन निर्देश यहां पा सकते हैं[प्रलेखन](https://reference.groupdocs.com/viewer/net/).
+ .NET के लिए Groupdocs.Viewer का उपयोग करने के लिए, आपको NuGet पैकेज मैनेजर के माध्यम से पैकेज इंस्टॉल करना होगा। आप विस्तृत इंस्टालेशन निर्देश यहां पा सकते हैं[प्रलेखन](https://tutorials.groupdocs.com/viewer/net/).
 
 ## नामस्थान आयात करें
 सुनिश्चित करें कि .NET के लिए Groupdocs.Viewer का प्रभावी ढंग से उपयोग करने के लिए आपके प्रोजेक्ट में आवश्यक नेमस्पेस आयात किए गए हैं।

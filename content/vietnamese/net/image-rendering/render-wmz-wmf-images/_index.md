@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh WMZ và WMF
 linktitle: Kết xuất hình ảnh WMZ và WMF
 second_title: API GroupDocs.Viewer .NET
 description: Dễ dàng hiển thị hình ảnh WMZ và WMF trong các ứng dụng .NET bằng GroupDocs.Viewer cho .NET. Nâng cao khả năng xử lý tài liệu một cách dễ dàng.
-type: docs
 weight: 18
 url: /vi/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ Trước khi đi sâu vào quá trình kết xuất hình ảnh WMZ và WMF bằ
 
 3. Làm quen với Môi trường .NET: Hiểu biết cơ bản về .NET framework và ngôn ngữ lập trình C# là điều cần thiết để triển khai quá trình kết xuất một cách hiệu quả.
 
-4.  Tích hợp vào Dự án của bạn: Đảm bảo rằng GroupDocs.Viewer dành cho .NET được tích hợp đúng cách vào dự án .NET của bạn. Tham khảo tài liệu để biết hướng dẫn chi tiết về tích hợp:[Tài liệu](https://reference.groupdocs.com/viewer/net/).
+4.  Tích hợp vào Dự án của bạn: Đảm bảo rằng GroupDocs.Viewer dành cho .NET được tích hợp đúng cách vào dự án .NET của bạn. Tham khảo tài liệu để biết hướng dẫn chi tiết về tích hợp:[Tài liệu](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Nhập không gian tên
 

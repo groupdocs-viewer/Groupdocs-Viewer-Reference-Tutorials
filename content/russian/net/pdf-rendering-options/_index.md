@@ -3,7 +3,6 @@ title: Параметры рендеринга PDF-файлов
 linktitle: Параметры рендеринга PDF-файлов
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как оптимизировать просмотр PDF-файлов с помощью учебных пособий по GroupDocs.Viewer .NET. Изучите параметры рендеринга PDF, такие как настройка качества изображения и отключение выделения текста.
-type: docs
 weight: 38
 url: /ru/net/pdf-rendering-options/
 ---

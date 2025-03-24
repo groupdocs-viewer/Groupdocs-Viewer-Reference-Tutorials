@@ -3,7 +3,6 @@ title: Απόδοση σημειώσεων και προσαρμογή μονά�
 linktitle: Απόδοση σημειώσεων και προσαρμογή μονάδων χρόνου (MS Project)
 second_title: GroupDocs.Viewer .NET API
 description: Κύρια απόδοση εγγράφων MS Project με το GroupDocs.Viewer για .NET. Αποδώστε σημειώσεις, προσαρμόστε τις μονάδες χρόνου και εξερευνήστε διάφορες μορφές εξόδου χωρίς κόπο.
-type: docs
 weight: 11
 url: /el/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ viewer.View(options);
 ### Πώς μπορώ να λάβω προσωρινή άδεια χρήσης για το GroupDocs.Viewer για .NET;
  Επίσκεψη[αυτός ο σύνδεσμος](https://purchase.groupdocs.com/temporary-license/) για την απόκτηση προσωρινής άδειας.
 ### Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Viewer για .NET;
- Ανατρέξτε στην τεκμηρίωση[εδώ](https://reference.groupdocs.com/viewer/net/).
+ Ανατρέξτε στην τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/viewer/net/).
 ### Πού μπορώ να αναζητήσω υποστήριξη ή να κάνω ερωτήσεις σχετικά με το GroupDocs.Viewer για .NET;
  Μπορείτε να επισκεφτείτε το φόρουμ υποστήριξης[εδώ](https://forum.groupdocs.com/c/viewer/9).

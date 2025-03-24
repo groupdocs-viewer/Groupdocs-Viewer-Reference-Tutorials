@@ -3,7 +3,6 @@ title: Načítání dokumentů
 linktitle: Načítání dokumentů
 second_title: GroupDocs.Viewer .NET API
 description: Objevte, jak efektivně načítat a vykreslovat dokumenty pomocí GroupDocs.Viewer .NET. Prozkoumejte výukové programy načítání místních disků, streamů a FTP pro vylepšené aplikace .NET.
-type: docs
 weight: 20
 url: /cs/net/loading-documents/
 ---

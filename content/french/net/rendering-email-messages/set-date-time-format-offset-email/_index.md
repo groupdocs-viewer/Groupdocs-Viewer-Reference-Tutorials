@@ -3,7 +3,6 @@ title: Définir le format DateHeure et le décalage horaire (e-mail)
 linktitle: Définir le format DateHeure et le décalage horaire (e-mail)
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez GroupDocs.Viewer pour .NET de manière transparente dans vos applications pour bénéficier de puissantes fonctionnalités de visualisation de documents. Améliorez l'expérience utilisateur avec des options personnalisables.
-type: docs
 weight: 11
 url: /fr/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

@@ -3,7 +3,6 @@ title: Vykreslení s překrytím textu pro zobrazení
 linktitle: Vykreslení s překrytím textu pro zobrazení
 second_title: GroupDocs.Viewer .NET API
 description: Bezproblémově vykreslujte dokumenty v aplikacích .NET pomocí GroupDocs.Viewer, který podporuje různé formáty pro lepší uživatelskou zkušenost.
-type: docs
 weight: 13
 url: /cs/net/rendering-documents-images/render-with-text-overlay/
 ---

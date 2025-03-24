@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh AI
 linktitle: Kết xuất hình ảnh AI
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị hình ảnh AI một cách dễ dàng trong các ứng dụng .NET bằng GroupDocs.Viewer cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp liền mạch.
-type: docs
 weight: 10
 url: /vi/net/image-rendering/render-ai-images/
 ---

@@ -3,7 +3,6 @@ title: Render Tata Letak Tunggal dalam Gambar CAD
 linktitle: Render Tata Letak Tunggal dalam Gambar CAD
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender tata letak tunggal dalam gambar CAD menggunakan GroupDocs.Viewer untuk .NET. Langkah mudah untuk integrasi yang lancar dalam aplikasi .NET Anda.
-type: docs
 weight: 14
 url: /id/net/rendering-cad-drawings/render-single-layout-cad/
 ---

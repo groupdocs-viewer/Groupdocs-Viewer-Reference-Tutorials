@@ -3,7 +3,6 @@ title: उत्तरदायी HTML प्रस्तुत करें
 linktitle: उत्तरदायी HTML प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए Groupdocs.Viewer का उपयोग करके रिस्पॉन्सिव HTML को कैसे प्रस्तुत किया जाए, जिससे सभी डिवाइसों में इष्टतम देखने का अनुभव सुनिश्चित हो सके।
-type: docs
 weight: 13
 url: /hi/net/rendering-documents-html/render-responsive-html/
 ---

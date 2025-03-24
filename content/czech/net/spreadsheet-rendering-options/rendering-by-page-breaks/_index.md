@@ -3,7 +3,6 @@ title: Vykreslování podle konců stránek
 linktitle: Vykreslování podle konců stránek
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte sílu GroupDocs.Viewer pro .NET při přesném vykreslování dokumentů. Postupujte podle našeho podrobného návodu pro vykreslování podle zalomení stránek.
-type: docs
 weight: 14
 url: /cs/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

@@ -3,7 +3,6 @@ title: Carica documenti dal disco locale
 linktitle: Carica documenti dal disco locale
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering dei documenti senza problemi dal disco locale utilizzando Groupdocs.Viewer per .NET. Migliora le tue applicazioni .NET con documenti efficienti.
-type: docs
 weight: 10
 url: /it/net/loading-documents/loading-document-local-disk/
 ---

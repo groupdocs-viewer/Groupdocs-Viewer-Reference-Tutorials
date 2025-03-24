@@ -3,7 +3,6 @@ title: Рендеринг выбранных страниц
 linktitle: Рендеринг выбранных страниц
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как визуализировать выбранные страницы документов с помощью Groupdocs.Viewer для .NET. Пошаговое руководство с примерами кода.
-type: docs
 weight: 17
 url: /ru/net/rendering-options/render-selected-pages/
 ---

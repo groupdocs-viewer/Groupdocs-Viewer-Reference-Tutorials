@@ -3,7 +3,6 @@ title: Limitar o número de itens a serem renderizados em arquivos de dados do O
 linktitle: Limitar o número de itens a serem renderizados em arquivos de dados do Outlook
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como limitar o número de itens renderizados em arquivos de dados do Outlook usando Groupdocs.Viewer for .NET. Siga nosso passo a passo para uma integração perfeita.
-type: docs
 weight: 12
 url: /pt/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

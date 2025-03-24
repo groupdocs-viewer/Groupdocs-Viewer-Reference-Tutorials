@@ -3,7 +3,6 @@ title: Χρονικό διάστημα απόδοσης συγκεκριμένο
 linktitle: Χρονικό διάστημα απόδοσης συγκεκριμένου έργου (MS Project)
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε απρόσκοπτα το GroupDocs.Viewer για .NET στις εφαρμογές σας για αποτελεσματική προβολή εγγράφων. Βελτιώστε την παραγωγικότητα με ευέλικτες δυνατότητες απόδοσης.
-type: docs
 weight: 12
 url: /el/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

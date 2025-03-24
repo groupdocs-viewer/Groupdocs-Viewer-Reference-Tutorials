@@ -3,7 +3,6 @@ title: Merender File Arsip
 linktitle: Merender File Arsip
 second_title: GroupDocs.Viewer .NET API
 description: Temukan tutorial komprehensif untuk merender file arsip menggunakan GroupDocs.Viewer untuk .NET. Integrasikan dengan lancar dan efisien ke dalam aplikasi .NET Anda.
-type: docs
 weight: 24
 url: /id/net/rendering-archive-files/
 ---

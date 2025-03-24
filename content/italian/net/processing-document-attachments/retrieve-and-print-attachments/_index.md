@@ -3,7 +3,6 @@ title: Recuperare e stampare allegati di documenti
 linktitle: Recuperare e stampare allegati di documenti
 second_title: API GroupDocs.Viewer .NET
 description: Integra perfettamente le funzionalità di visualizzazione dei documenti nelle tue applicazioni .NET con GroupDocs.Viewer per .NET. Recupera e stampa gli allegati dei documenti senza sforzo.
-type: docs
 weight: 11
 url: /it/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

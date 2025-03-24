@@ -3,7 +3,6 @@ title: Rufen Sie Ansichtsinformationen für CAD-Zeichnungen ab
 linktitle: Rufen Sie Ansichtsinformationen für CAD-Zeichnungen ab
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Ansichtsinformationen für CAD-Zeichnungen abrufen. Erweitern Sie Ihre .NET-Anwendungen durch nahtlose CAD-Dateiverarbeitung.
-type: docs
 weight: 10
 url: /de/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

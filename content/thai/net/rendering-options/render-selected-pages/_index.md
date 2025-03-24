@@ -3,7 +3,6 @@ title: แสดงผลหน้าที่เลือก
 linktitle: แสดงผลหน้าที่เลือก
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีการแสดงผลหน้าที่เลือกจากเอกสารโดยใช้ Groupdocs.Viewer สำหรับ .NET บทช่วยสอนทีละขั้นตอนพร้อมตัวอย่างโค้ดรวมอยู่ด้วย
-type: docs
 weight: 17
 url: /th/net/rendering-options/render-selected-pages/
 ---

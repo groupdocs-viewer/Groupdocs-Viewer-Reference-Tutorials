@@ -3,7 +3,6 @@ title: Рендеринг документа с примечаниями
 linktitle: Рендеринг документа с примечаниями
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как отображать документы с примечаниями с помощью GroupDocs.Viewer для .NET. Пошаговое руководство по плавной интеграции в ваши приложения .NET.
-type: docs
 weight: 14
 url: /ru/net/rendering-options/render-document-notes/
 ---

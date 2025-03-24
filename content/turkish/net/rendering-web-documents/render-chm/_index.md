@@ -3,7 +3,6 @@ title: CHM Dosyalarını İşleme
 linktitle: CHM Dosyalarını İşleme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak CHM dosyalarını .NET'te nasıl oluşturacağınızı öğrenin. CHM'yi zahmetsizce HTML, JPG, PNG ve PDF formatlarına dönüştürün.
-type: docs
 weight: 10
 url: /tr/net/rendering-web-documents/render-chm/
 ---

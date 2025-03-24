@@ -3,7 +3,6 @@ title: 特定のエンコーディングを使用してドキュメントをロ�
 linktitle: 特定のエンコーディングを使用してドキュメントをロードする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、シームレスなドキュメント表示により .NET アプリケーションを強化します。特定のエンコードを使用してドキュメントを簡単にロードし、表示エクスペリエンスをカスタマイズします。
-type: docs
 weight: 11
 url: /ja/net/advanced-loading/load-documents-encoding/
 ---

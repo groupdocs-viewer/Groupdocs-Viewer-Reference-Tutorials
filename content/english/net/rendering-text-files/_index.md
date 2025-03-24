@@ -3,7 +3,6 @@ title: Rendering Text Files
 linktitle: Rendering Text Files
 second_title: GroupDocs.Viewer .NET API
 description: Unlock the potential of GroupDocs.Viewer for .NET with tutorials on rendering text files. Convert .txt files into various formats for enhanced document management.
-type: docs
 weight: 33
 url: /net/rendering-text-files/
 ---

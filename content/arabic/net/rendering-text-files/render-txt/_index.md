@@ -3,7 +3,6 @@ title: تقديم الملفات النصية (.txt)
 linktitle: تقديم الملفات النصية (.txt)
 second_title: GroupDocs.Viewer .NET API
 description: استكشف التحويل السلس للملفات النصية إلى تنسيقات متعددة باستخدام GroupDocs.Viewer لـ .NET. تعزيز قدرات إدارة المستندات الخاصة بك دون عناء.
-type: docs
 weight: 10
 url: /ar/net/rendering-text-files/render-txt/
 ---

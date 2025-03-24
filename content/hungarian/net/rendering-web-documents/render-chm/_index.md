@@ -3,7 +3,6 @@ title: Rendereljen CHM fájlokat
 linktitle: Rendereljen CHM fájlokat
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet CHM-fájlokat előállítani .NET-ben a GroupDocs.Viewer segítségével. Konvertálja a CHM-et HTML, JPG, PNG és PDF formátumokba könnyedén.
-type: docs
 weight: 10
 url: /hu/net/rendering-web-documents/render-chm/
 ---

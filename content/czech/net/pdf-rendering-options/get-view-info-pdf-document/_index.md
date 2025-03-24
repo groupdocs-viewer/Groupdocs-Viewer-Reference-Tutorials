@@ -3,7 +3,6 @@ title: Získejte informace o zobrazení pro dokument PDF
 linktitle: Získejte informace o zobrazení pro dokument PDF
 second_title: GroupDocs.Viewer .NET API
 description: V tomto komplexním kurzu se dozvíte, jak extrahovat informace o zobrazení z dokumentů PDF pomocí GroupDocs.Viewer for .NET.
-type: docs
 weight: 16
 url: /cs/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

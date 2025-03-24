@@ -3,7 +3,6 @@ title: عرض الصفحات المحددة
 linktitle: عرض الصفحات المحددة
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض الصفحات المحددة من المستندات باستخدام Groupdocs.Viewer لـ .NET. تم تضمين البرنامج التعليمي خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 17
 url: /ar/net/rendering-options/render-selected-pages/
 ---

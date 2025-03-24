@@ -3,7 +3,6 @@ title: एकल या एकाधिक HTML पृष्ठों पर प
 linktitle: एकल या एकाधिक HTML पृष्ठों पर पुरालेख प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए GroupDocs.Viewer का उपयोग करके HTML पृष्ठों पर अभिलेख कैसे प्रस्तुत करें। दस्तावेज़ देखने की क्षमताओं को अपने .NET अनुप्रयोगों में सहजता से एकीकृत करें।
-type: docs
 weight: 12
 url: /hi/net/rendering-archive-files/render-archives-html/
 ---

@@ -3,7 +3,6 @@ title: Representación de dibujos CAD
 linktitle: Representación de dibujos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriales para renderizar dibujos CAD usando GroupDocs.Viewer para .NET. Aprenda a mejorar las aplicaciones .NET con un manejo perfecto de archivos CAD.
-type: docs
 weight: 25
 url: /es/net/rendering-cad-drawings/
 ---

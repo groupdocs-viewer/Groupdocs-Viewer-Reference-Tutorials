@@ -3,7 +3,6 @@ title: Изменение порядка страниц в документе
 linktitle: Изменение порядка страниц в документе
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как изменить порядок страниц в документе с помощью GroupDocs.Viewer для .NET. Следуйте нашему пошаговому руководству для эффективного управления документами.
-type: docs
 weight: 19
 url: /ru/net/rendering-options/reorder-pages/
 ---

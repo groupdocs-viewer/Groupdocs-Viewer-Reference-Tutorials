@@ -3,7 +3,6 @@ title: Aktifkan Petunjuk Font di PDF
 linktitle: Aktifkan Petunjuk Font di PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengaktifkan petunjuk font dalam dokumen PDF menggunakan GroupDocs.Viewer untuk .NET. Ikuti tutorial langkah demi langkah kami untuk integrasi yang lancar.
-type: docs
 weight: 14
 url: /id/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

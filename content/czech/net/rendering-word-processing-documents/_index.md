@@ -3,7 +3,6 @@ title: Vykreslování dokumentů pro zpracování textu
 linktitle: Vykreslování dokumentů pro zpracování textu
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak efektivně vykreslovat sledované změny v dokumentech pro zpracování textu pomocí GroupDocs.Viewer for .NET. Zvyšte své dovednosti v oblasti správy dokumentů.
-type: docs
 weight: 36
 url: /cs/net/rendering-word-processing-documents/
 ---

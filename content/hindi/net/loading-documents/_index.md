@@ -3,7 +3,6 @@ title: दस्तावेज़ लोड हो रहे हैं
 linktitle: दस्तावेज़ लोड हो रहे हैं
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer .NET का उपयोग करके दस्तावेज़ों को कुशलतापूर्वक लोड और रेंडर करने का तरीका जानें। उन्नत .NET ऐप्स के लिए स्थानीय डिस्क, स्ट्रीम और एफ़टीपी लोडिंग ट्यूटोरियल का अन्वेषण करें।
-type: docs
 weight: 20
 url: /hi/net/loading-documents/
 ---

@@ -3,7 +3,6 @@ title: تعيين الترخيص من الملف
 linktitle: تعيين الترخيص من الملف
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية دمج GroupDocs.Viewer لـ .NET في تطبيقاتك بسهولة. قم بتعيين الترخيص وعرض المستندات وتخصيص مظهر العارض.
-type: docs
 weight: 10
 url: /ar/net/getting-started/set-license-from-file/
 ---

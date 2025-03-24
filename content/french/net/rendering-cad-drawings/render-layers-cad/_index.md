@@ -3,7 +3,6 @@ title: Rendre les calques dans les dessins CAO
 linktitle: Rendre les calques dans les dessins CAO
 second_title: API GroupDocs.Viewer .NET
 description: Restituez des dessins CAO de manière transparente dans les applications .NET avec GroupDocs.Viewer pour .NET. Explorez les options de rendu, personnalisez les calques et bien plus encore.
-type: docs
 weight: 13
 url: /fr/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Avant de vous lancer dans l'utilisation de GroupDocs.Viewer pour .NET, assurez-v
 - Compréhension de base du langage de programmation C#.
 - Environnement de développement .NET configuré sur votre machine.
 -  GroupDocs.Viewer pour .NET installé. Vous pouvez le télécharger depuis[ici](https://releases.groupdocs.com/viewer/net/).
--  Accès à la documentation GroupDocs.Viewer pour .NET pour référence, disponible[ici](https://reference.groupdocs.com/viewer/net/).
+-  Accès à la documentation GroupDocs.Viewer pour .NET pour référence, disponible[ici](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importer des espaces de noms
 Pour commencer à utiliser GroupDocs.Viewer pour .NET, vous devez importer les espaces de noms requis dans votre projet. Suivez ces étapes:

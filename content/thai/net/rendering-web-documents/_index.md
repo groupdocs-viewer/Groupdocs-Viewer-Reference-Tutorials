@@ -3,7 +3,6 @@ title: การแสดงผลเอกสารเว็บ
 linktitle: การแสดงผลเอกสารเว็บ
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์ไฟล์ CHM และ HTML ด้วยระยะขอบที่กำหนดเองใน .NET โดยใช้ GroupDocs.Viewer แปลง CHM เป็นรูปแบบ HTML, JPG, PNG และ PDF ได้อย่างราบรื่น
-type: docs
 weight: 35
 url: /th/net/rendering-web-documents/
 ---

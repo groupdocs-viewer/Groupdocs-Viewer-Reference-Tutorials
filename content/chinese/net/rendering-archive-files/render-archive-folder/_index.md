@@ -3,7 +3,6 @@ title: 渲染存档文件夹
 linktitle: 渲染存档文件夹
 second_title: GroupDocs.Viewer .NET API
 description: 将 GroupDocs.Viewer for .NET 无缝集成到您的 .NET 应用程序中，以实现高效的文档呈现和查看功能。
-type: docs
 weight: 11
 url: /zh/net/rendering-archive-files/render-archive-folder/
 ---

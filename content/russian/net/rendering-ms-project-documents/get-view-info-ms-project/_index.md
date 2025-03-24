@@ -3,7 +3,6 @@ title: Получение информации о просмотре докум�
 linktitle: Получение информации о просмотре документов Microsoft Project
 second_title: GroupDocs.Viewer .NET API
 description: Изучите подробное руководство по использованию Groupdocs.Viewer для .NET для легкого получения информации о просмотре документов Microsoft Project.
-type: docs
 weight: 10
 url: /ru/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

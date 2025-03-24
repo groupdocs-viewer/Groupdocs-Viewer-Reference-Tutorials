@@ -3,7 +3,6 @@ title: Habilitar renderização em camadas em PDF
 linktitle: Habilitar renderização em camadas em PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como habilitar a renderização em camadas em documentos PDF usando GroupDocs.Viewer for .NET. Aprimore a experiência de visualização de documentos sem esforço.
-type: docs
 weight: 15
 url: /pt/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

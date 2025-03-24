@@ -3,7 +3,6 @@ title: تقديم صور WMZ وWMF
 linktitle: تقديم صور WMZ وWMF
 second_title: GroupDocs.Viewer .NET API
 description: قم بعرض صور WMZ وWMF بسهولة في تطبيقات .NET باستخدام GroupDocs.Viewer لـ .NET. تعزيز قدرات معالجة المستندات بسهولة.
-type: docs
 weight: 18
 url: /ar/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ url: /ar/net/image-rendering/render-wmz-wmf-images/
 
 3. الإلمام ببيئة .NET: يعد الفهم الأساسي لإطار عمل .NET ولغة البرمجة C# أمرًا ضروريًا لتنفيذ عملية العرض بفعالية.
 
-4.  التكامل في مشروعك: تأكد من دمج GroupDocs.Viewer لـ .NET بشكل صحيح في مشروع .NET الخاص بك. راجع الوثائق للحصول على تعليمات مفصلة حول التكامل:[توثيق](https://reference.groupdocs.com/viewer/net/).
+4.  التكامل في مشروعك: تأكد من دمج GroupDocs.Viewer لـ .NET بشكل صحيح في مشروع .NET الخاص بك. راجع الوثائق للحصول على تعليمات مفصلة حول التكامل:[توثيق](https://tutorials.groupdocs.com/viewer/net/).
 
 ## استيراد مساحات الأسماء
 

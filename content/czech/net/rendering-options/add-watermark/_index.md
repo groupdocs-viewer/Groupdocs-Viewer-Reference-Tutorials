@@ -3,7 +3,6 @@ title: Přidat vodoznak do dokumentu
 linktitle: Přidat vodoznak do dokumentu
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak plynule přidávat vodoznaky do dokumentů pomocí GroupDocs.Viewer pro .NET. Vylepšete zabezpečení dokumentů a branding pomocí tohoto snadno srozumitelného návodu.
-type: docs
 weight: 10
 url: /cs/net/rendering-options/add-watermark/
 ---

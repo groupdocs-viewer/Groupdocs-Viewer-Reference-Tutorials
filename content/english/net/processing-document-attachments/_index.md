@@ -3,7 +3,6 @@ title: Processing Document Attachments
 linktitle: Processing Document Attachments
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to effortlessly integrate document viewing capabilities into your .NET applications using GroupDocs.Viewer. Manage document attachments efficiently.
-type: docs
 weight: 32
 url: /net/processing-document-attachments/
 --- 

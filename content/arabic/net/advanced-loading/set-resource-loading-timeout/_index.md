@@ -3,7 +3,6 @@ title: تعيين مهلة تحميل الموارد (متقدم)
 linktitle: تعيين مهلة تحميل الموارد (متقدم)
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تكوين مهلات تحميل الموارد في GroupDocs.Viewer لـ .NET بكفاءة. عرض المستندات بشكل رئيسي بدقة وثبات.
-type: docs
 weight: 13
 url: /ar/net/advanced-loading/set-resource-loading-timeout/
 ---

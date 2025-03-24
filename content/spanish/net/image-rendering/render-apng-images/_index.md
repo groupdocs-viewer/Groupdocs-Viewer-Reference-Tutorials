@@ -3,7 +3,6 @@ title: Renderizar imágenes APNG
 linktitle: Renderizar imágenes APNG
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a renderizar imágenes APNG en varios formatos usando Groupdocs.Viewer para .NET. Guía paso a paso con ejemplos de código incluidos.
-type: docs
 weight: 11
 url: /es/net/image-rendering/render-apng-images/
 ---

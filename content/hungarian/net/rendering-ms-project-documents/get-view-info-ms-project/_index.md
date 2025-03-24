@@ -3,7 +3,6 @@ title: Megtekintési információk a Microsoft Project dokumentumokhoz
 linktitle: Megtekintési információk a Microsoft Project dokumentumokhoz
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel az átfogó oktatóanyagot a Groupdocs.Viewer for .NET használatáról a Microsoft Project dokumentumok nézeti információinak könnyű lekéréséhez.
-type: docs
 weight: 10
 url: /hu/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

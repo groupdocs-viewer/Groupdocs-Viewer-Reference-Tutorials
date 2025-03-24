@@ -3,7 +3,6 @@ title: Render Tracked Changes
 linktitle: Render Tracked Changes
 second_title: GroupDocs.Viewer .NET API
 description: Discover how to render tracked changes in documents effortlessly using GroupDocs.Viewer for .NET. Enhance your document management efficiency.
-type: docs
 weight: 10
 url: /net/rendering-word-processing-documents/render-tracked-changes/
 ---

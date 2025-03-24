@@ -3,7 +3,6 @@ title: Ajustar el tamaño de la imagen de salida para dibujos CAD
 linktitle: Ajustar el tamaño de la imagen de salida para dibujos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a ajustar el tamaño de la imagen de salida para dibujos CAD usando GroupDocs.Viewer para .NET. Mejore la visibilidad y la usabilidad sin esfuerzo.
-type: docs
 weight: 15
 url: /es/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

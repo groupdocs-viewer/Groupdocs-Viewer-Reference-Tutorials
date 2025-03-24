@@ -3,7 +3,6 @@ title: Enable Caching for Faster Document Processing
 linktitle: Enable Caching for Faster Document Processing
 second_title: GroupDocs.Viewer .NET API
 description: Enhance document processing speed in .NET apps with GroupDocs.Viewer by leveraging caching. Optimize performance effortlessly.
-type: docs
 weight: 10
 url: /net/advanced-usage-caching/enable-caching/
 ---

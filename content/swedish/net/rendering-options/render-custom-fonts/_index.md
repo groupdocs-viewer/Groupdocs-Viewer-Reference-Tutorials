@@ -3,7 +3,6 @@ title: Rendera med anpassade teckensnitt
 linktitle: Rendera med anpassade teckensnitt
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar dokument med anpassade teckensnitt med GroupDocs.Viewer för .NET. Förbättra visuella presentationer utan ansträngning.
-type: docs
 weight: 18
 url: /sv/net/rendering-options/render-custom-fonts/
 ---

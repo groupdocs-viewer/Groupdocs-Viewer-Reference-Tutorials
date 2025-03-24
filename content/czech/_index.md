@@ -3,7 +3,6 @@ title: Výukové programy GroupDocs.Viewer – mistrovské dovednosti pro prohl�
 linktitle: Výukové programy GroupDocs.Viewer
 additionalTitle: Reference API GroupDocs
 description: Prozkoumejte výukové programy GroupDocs.Viewer, kde najdete komplexní návod, jak maximalizovat možnosti prohlížení dokumentů. Odemkněte jeho plný potenciál ještě dnes!
-type: docs
 weight: 11
 url: /cs/
 is_root: true

@@ -3,7 +3,6 @@ title: SVG および SVGZ イメージのレンダリング
 linktitle: SVG および SVGZ イメージのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して SVG および SVGZ 画像をレンダリングする方法を学びます。ベクター グラフィックを HTML、JPG、PNG、PDF に簡単に変換します。
-type: docs
 weight: 16
 url: /ja/net/image-rendering/render-svg-svgz-images/
 ---

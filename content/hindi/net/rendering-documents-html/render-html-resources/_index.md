@@ -3,7 +3,6 @@ title: एंबेडेड या बाहरी संसाधनों क
 linktitle: एंबेडेड या बाहरी संसाधनों के साथ प्रस्तुत करना
 second_title: GroupDocs.Viewer .NET API
 description: निर्बाध रेंडरिंग के लिए GroupDocs.Viewer के साथ .NET दस्तावेज़ देखने को बेहतर बनाएं। कुशल एकीकरण और बेहतर उपयोगकर्ता अनुभव के लिए हमारे ट्यूटोरियल का अनुसरण करें।
-type: docs
 weight: 12
 url: /hi/net/rendering-documents-html/render-html-resources/
 ---

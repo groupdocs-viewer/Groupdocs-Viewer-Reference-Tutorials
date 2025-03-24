@@ -3,7 +3,6 @@ title: सीएडी ड्रॉइंग में सिंगल लेआ
 linktitle: सीएडी ड्रॉइंग में सिंगल लेआउट प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके CAD ड्रॉइंग में एकल लेआउट प्रस्तुत करना सीखें। आपके .NET अनुप्रयोगों में निर्बाध एकीकरण के लिए आसान चरण।
-type: docs
 weight: 14
 url: /hi/net/rendering-cad-drawings/render-single-layout-cad/
 ---

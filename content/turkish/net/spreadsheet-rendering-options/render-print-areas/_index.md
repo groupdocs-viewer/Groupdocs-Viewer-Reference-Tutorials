@@ -3,7 +3,6 @@ title: .NET için GroupDocs.Viewer ile Yazdırma Alanlarını İşleme
 linktitle: Yazdırma Alanlarını Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i keşfedin ve yazdırma alanlarını çeşitli belge formatlarında zahmetsizce işleyin. Ücretsiz denemeyi şimdi deneyin! #GrupDocs.Viewer
-type: docs
 weight: 17
 url: /tr/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Tebrikler! Belgelerinizdeki yazdırma alanlarını oluşturmak için GroupDocs.Viewer for .NET'i nasıl kullanacağınızı başarıyla öğrendiniz. Bu güçlü araç, .NET uygulamalarınızda belge oluşturma konusunda yeni olanakların kapısını açar.
 ## SSS
 ### GroupDocs.Viewer farklı belge formatlarıyla uyumlu mu?
- Evet, GroupDocs.Viewer, PDF, DOCX, XLSX ve daha fazlasını içeren çok çeşitli belge formatlarını destekler. Bakın[dokümantasyon](https://reference.groupdocs.com/viewer/net/) tam bir liste için.
+ Evet, GroupDocs.Viewer, PDF, DOCX, XLSX ve daha fazlasını içeren çok çeşitli belge formatlarını destekler. Bakın[dokümantasyon](https://tutorials.groupdocs.com/viewer/net/) tam bir liste için.
 ### Satın alma işlemi yapmadan önce GroupDocs.Viewer'ı deneyebilir miyim?
  Kesinlikle! Aracı ücretsiz deneme sürümüyle keşfedebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### Herhangi bir sorun için nereden destek bulabilirim veya yardım alabilirim?

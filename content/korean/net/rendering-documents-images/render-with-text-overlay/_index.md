@@ -3,7 +3,6 @@ title: 표시를 위해 텍스트가 오버레이된 렌더링
 linktitle: 표시를 위해 텍스트가 오버레이된 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: 향상된 사용자 경험을 위해 다양한 형식을 지원하는 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램에서 문서를 원활하게 렌더링합니다.
-type: docs
 weight: 13
 url: /ko/net/rendering-documents-images/render-with-text-overlay/
 ---

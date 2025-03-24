@@ -3,7 +3,6 @@ title: Erste Schritte
 linktitle: Erste Schritte
 second_title: GroupDocs.Viewer .NET-API
 description: Entdecken Sie Schritt-für-Schritt-Anleitungen für die nahtlose Integration von GroupDocs.Viewer für .NET in Ihre Anwendungen. Erfahren Sie, wie Sie Lizenzen festlegen und das Erscheinungsbild des Viewers anpassen.
-type: docs
 weight: 26
 url: /de/net/getting-started/
 ---

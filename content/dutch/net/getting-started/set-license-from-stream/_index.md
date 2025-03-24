@@ -3,7 +3,6 @@ title: Licentie instellen vanuit Stream
 linktitle: Licentie instellen vanuit Stream
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter uw .NET-toepassingen met GroupDocs.Viewer voor naadloze documentweergave. Volg onze stapsgewijze handleiding en integreer moeiteloos krachtige documentweergavemogelijkheden.
-type: docs
 weight: 11
 url: /nl/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ Voordat we ingaan op het integratieproces, moet je ervoor zorgen dat je aan de v
 1. Basiskennis van .NET-ontwikkeling: Bekendheid met C# en .NET-framework is essentieel om samen met deze tutorial te volgen.
    
 2.  GroupDocs.Viewer voor .NET-pakket: Zorg ervoor dat u het GroupDocs.Viewer voor .NET-pakket hebt gedownload en geïnstalleerd. U kunt deze verkrijgen bij de[download link](https://releases.groupdocs.com/viewer/net/).
-3.  Toegang tot GroupDocs-documentatie: Bewaar de[documentatie](https://reference.groupdocs.com/viewer/net/) handig als referentie tijdens het integratieproces.
+3.  Toegang tot GroupDocs-documentatie: Bewaar de[documentatie](https://tutorials.groupdocs.com/viewer/net/) handig als referentie tijdens het integratieproces.
 
 ## Naamruimten importeren
 Importeer om te beginnen de benodigde naamruimten in uw .NET-applicatie. Volg deze stappen:

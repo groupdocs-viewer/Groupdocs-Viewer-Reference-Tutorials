@@ -3,7 +3,6 @@ title: Ogranicz liczbę elementów do renderowania w plikach danych programu Out
 linktitle: Ogranicz liczbę elementów do renderowania w plikach danych programu Outlook
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak ograniczyć liczbę elementów renderowanych w plikach danych programu Outlook przy użyciu narzędzia Groupdocs.Viewer dla platformy .NET. Postępuj zgodnie z naszymi instrukcjami krok po kroku, aby zapewnić bezproblemową integrację.
-type: docs
 weight: 12
 url: /pl/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

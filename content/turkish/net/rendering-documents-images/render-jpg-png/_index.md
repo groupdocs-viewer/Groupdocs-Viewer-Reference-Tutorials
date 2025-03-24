@@ -3,7 +3,6 @@ title: Belgeyi JPGPNG'ye İşle
 linktitle: Belgeyi JPGPNG'ye İşle
 second_title: GroupDocs.Viewer .NET API'si
 description: Gelişmiş kullanıcı deneyimi ve üretkenlik için GroupDocs.Viewer'ı kullanarak belgeleri .NET'te JPG/PNG'ye sorunsuz bir şekilde nasıl dönüştürebileceğinizi keşfedin.
-type: docs
 weight: 10
 url: /tr/net/rendering-documents-images/render-jpg-png/
 ---
@@ -106,7 +105,7 @@ C: Geçici lisans talebinde bulunabilirsiniz.[Burada](https://purchase.groupdocs
 
 ### S: GroupDocs.Viewer for .NET belgelerini nerede bulabilirim?
 
- A: Ayrıntılı belgeler mevcut[Burada](https://reference.groupdocs.com/viewer/net/).
+ A: Ayrıntılı belgeler mevcut[Burada](https://tutorials.groupdocs.com/viewer/net/).
 
 ### S: GroupDocs.Viewer for .NET ile ilgili nereden destek alabilirim veya soru sorabilirim?
 

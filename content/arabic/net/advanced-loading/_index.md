@@ -3,7 +3,6 @@ title: خيارات التحميل المتقدمة
 linktitle: خيارات التحميل المتقدمة
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين تطبيقات .NET الخاصة بك باستخدام GroupDocs.Viewer للحصول على دروس .NET. تعلم كيفية تحديد أنواع الملفات وإدارة الترميزات وتحميل المستندات المحمية بكلمة مرور والمزيد.
-type: docs
 weight: 21
 url: /ar/net/advanced-loading/
 ---

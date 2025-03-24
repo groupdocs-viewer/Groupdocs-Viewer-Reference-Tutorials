@@ -3,7 +3,6 @@ title: تحميل المستندات
 linktitle: تحميل المستندات
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف كيفية تحميل المستندات وعرضها بكفاءة باستخدام GroupDocs.Viewer .NET. استكشف البرامج التعليمية الخاصة بتحميل القرص المحلي والدفق وFTP لتطبيقات .NET المحسنة.
-type: docs
 weight: 20
 url: /ar/net/loading-documents/
 ---

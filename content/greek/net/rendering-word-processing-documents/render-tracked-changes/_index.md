@@ -3,7 +3,6 @@ title: Απόδοση παρακολουθούμενων αλλαγών
 linktitle: Απόδοση παρακολουθούμενων αλλαγών
 second_title: GroupDocs.Viewer .NET API
 description: Ανακαλύψτε πώς να αποδώσετε τις παρακολουθούμενες αλλαγές σε έγγραφα χωρίς κόπο χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε την αποτελεσματικότητα διαχείρισης εγγράφων σας.
-type: docs
 weight: 10
 url: /el/net/rendering-word-processing-documents/render-tracked-changes/
 ---

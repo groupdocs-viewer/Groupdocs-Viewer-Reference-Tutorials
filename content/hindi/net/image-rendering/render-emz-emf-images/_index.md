@@ -3,7 +3,6 @@ title: EMZ और EMF छवियाँ प्रस्तुत करें
 linktitle: EMZ और EMF छवियाँ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके EMZ और EMF छवियों को विभिन्न प्रारूपों में प्रस्तुत करना सीखें। डेवलपर्स के लिए अनुसरण करने में आसान ट्यूटोरियल।
-type: docs
 weight: 14
 url: /hi/net/image-rendering/render-emz-emf-images/
 ---
@@ -97,4 +96,4 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
  उत्तर: हां, अस्थायी लाइसेंस खरीद के लिए उपलब्ध हैं[यहाँ](https://purchase.groupdocs.com/temporary-license/).
 
 ### प्रश्न: मुझे .NET के लिए GroupDocs.Viewer के लिए विस्तृत दस्तावेज़ कहां मिल सकते हैं?
- उत्तर: आप दस्तावेज़ का संदर्भ ले सकते हैं[यहाँ](https://reference.groupdocs.com/viewer/net/)एपीआई के उपयोग पर व्यापक मार्गदर्शन के लिए।
+ उत्तर: आप दस्तावेज़ का संदर्भ ले सकते हैं[यहाँ](https://tutorials.groupdocs.com/viewer/net/)एपीआई के उपयोग पर व्यापक मार्गदर्शन के लिए।

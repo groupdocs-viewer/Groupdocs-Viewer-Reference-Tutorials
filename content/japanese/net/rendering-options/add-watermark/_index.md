@@ -3,7 +3,6 @@ title: 文書に透かしを追加する
 linktitle: 文書に透かしを追加する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してドキュメントにウォーターマークをシームレスに追加する方法を学びます。このわかりやすいチュートリアルでドキュメントのセキュリティとブランド化を強化します。
-type: docs
 weight: 10
 url: /ja/net/rendering-options/add-watermark/
 ---

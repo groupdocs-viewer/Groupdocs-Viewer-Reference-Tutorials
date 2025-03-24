@@ -3,7 +3,6 @@ title: Belgeyi PDF'ye Dönüştür
 linktitle: Belgeyi PDF'ye Dönüştür
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak belgeleri PDF'ye nasıl dönüştüreceğinizi öğrenin. Önkoşulları ve SSS'leri içeren adım adım kılavuz.
-type: docs
 weight: 10
 url: /tr/net/rendering-documents-pdf/render-to-pdf/
 ---

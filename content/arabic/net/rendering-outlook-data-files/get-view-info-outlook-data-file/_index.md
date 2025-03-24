@@ -3,7 +3,6 @@ title: الحصول على معلومات العرض لملفات بيانات O
 linktitle: الحصول على معلومات العرض لملفات بيانات Outlook (PST، OST)
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف كيفية استخراج معلومات العرض من ملفات بيانات Outlook (PST وOST) باستخدام GroupDocs.Viewer لـ .NET. تعزيز قدرات إدارة المستندات الخاصة بك دون عناء.
-type: docs
 weight: 10
 url: /ar/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

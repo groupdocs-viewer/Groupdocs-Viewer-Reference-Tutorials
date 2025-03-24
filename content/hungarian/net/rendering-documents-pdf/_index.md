@@ -3,7 +3,6 @@ title: Dokumentumok renderelése PDF-be
 linktitle: Dokumentumok renderelése PDF-be
 second_title: GroupDocs.Viewer .NET API
 description: Tanuljon meg dokumentumokat PDF formátumba renderelni, beállítani a JPG képminőséget, és megvédeni a PDF-fájlokat jelszavakkal a GroupDocs.Viewer for .NET oktatóanyagaival.
-type: docs
 weight: 29
 url: /hu/net/rendering-documents-pdf/
 ---

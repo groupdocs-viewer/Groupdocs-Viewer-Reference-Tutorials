@@ -3,7 +3,6 @@ title: Schakel caching in voor snellere documentverwerking
 linktitle: Schakel caching in voor snellere documentverwerking
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter de documentverwerkingssnelheid in .NET-apps met GroupDocs.Viewer door gebruik te maken van caching. Optimaliseer de prestaties moeiteloos.
-type: docs
 weight: 10
 url: /nl/net/advanced-usage-caching/enable-caching/
 ---

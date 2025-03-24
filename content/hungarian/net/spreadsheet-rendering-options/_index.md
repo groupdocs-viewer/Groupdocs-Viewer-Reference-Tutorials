@@ -3,7 +3,6 @@ title: Táblázat megjelenítési beállítások
 linktitle: Táblázat megjelenítési beállítások
 second_title: GroupDocs.Viewer .NET API
 description: A GroupDocs.Viewer oktatóanyagaival könnyedén javíthatja a dokumentumok megjelenítését .NET-ben. Ismerje meg a szövegtúlcsordulás beállítását, a rácsvonalak renderelését és egyebeket.
-type: docs
 weight: 37
 url: /hu/net/spreadsheet-rendering-options/
 ---

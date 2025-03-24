@@ -3,7 +3,6 @@ title: Remplacer la police manquante
 linktitle: Remplacer la police manquante
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment remplacer facilement les polices manquantes dans les documents .NET à l'aide de GroupDocs.Viewer. Garantissez un rendu précis en quelques étapes simples.
-type: docs
 weight: 20
 url: /fr/net/rendering-options/replace-missing-font/
 ---

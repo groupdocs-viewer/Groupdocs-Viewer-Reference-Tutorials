@@ -3,7 +3,6 @@ title: Documenten uit Stream laden
 linktitle: Documenten uit Stream laden
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u naadloos documenten uit streams kunt laden met GroupDocs.Viewer voor .NET. Verbeter uw .NET-toepassingen met krachtige mogelijkheden voor documentweergave.
-type: docs
 weight: 12
 url: /nl/net/loading-documents/loading-document-stream/
 ---

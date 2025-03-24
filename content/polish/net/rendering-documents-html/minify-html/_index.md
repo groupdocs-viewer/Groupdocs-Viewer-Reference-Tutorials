@@ -3,7 +3,6 @@ title: Zminimalizuj renderowany dokument HTML
 linktitle: Zminimalizuj renderowany dokument HTML
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak bezproblemowo renderować dokumenty HTML w aplikacjach .NET przy użyciu GroupDocs.Viewer dla .NET.
-type: docs
 weight: 11
 url: /pl/net/rendering-documents-html/minify-html/
 ---

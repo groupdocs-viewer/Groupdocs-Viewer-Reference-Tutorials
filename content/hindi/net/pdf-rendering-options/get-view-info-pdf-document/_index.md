@@ -3,7 +3,6 @@ title: पीडीएफ दस्तावेज़ के लिए दृश
 linktitle: पीडीएफ दस्तावेज़ के लिए दृश्य जानकारी प्राप्त करें
 second_title: GroupDocs.Viewer .NET API
 description: इस व्यापक ट्यूटोरियल में .NET के लिए GroupDocs.Viewer का उपयोग करके PDF दस्तावेज़ों से दृश्य जानकारी निकालने का तरीका जानें।
-type: docs
 weight: 16
 url: /hi/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

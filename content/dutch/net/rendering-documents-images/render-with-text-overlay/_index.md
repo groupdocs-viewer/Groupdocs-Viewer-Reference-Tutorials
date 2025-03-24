@@ -3,7 +3,6 @@ title: Render met tekstoverlay voor weergave
 linktitle: Render met tekstoverlay voor weergave
 second_title: GroupDocs.Viewer .NET-API
 description: Geef documenten naadloos weer in .NET-toepassingen met GroupDocs.Viewer, die verschillende formaten ondersteunt voor een verbeterde gebruikerservaring.
-type: docs
 weight: 13
 url: /nl/net/rendering-documents-images/render-with-text-overlay/
 ---

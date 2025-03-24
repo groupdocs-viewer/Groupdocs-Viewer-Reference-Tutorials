@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh FODG và ODG
 linktitle: Kết xuất hình ảnh FODG và ODG
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị hình ảnh FODG và ODG thành HTML, JPG, PNG và PDF bằng GroupDocs.Viewer cho .NET. Tăng cường xử lý tài liệu của bạn.
-type: docs
 weight: 15
 url: /vi/net/image-rendering/render-fodg-odg-images/
 ---

@@ -3,7 +3,6 @@ title: 渲染帶有註釋的文檔
 linktitle: 渲染帶有註釋的文檔
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 呈現帶有註解的文件。請按照我們的逐步指南進行無縫整合。
-type: docs
 weight: 13
 url: /zh-hant/net/rendering-options/render-document-comments/
 ---

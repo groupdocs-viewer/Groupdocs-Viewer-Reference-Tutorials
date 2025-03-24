@@ -3,7 +3,6 @@ title: レンダリングされた HTML ドキュメントを縮小する
 linktitle: レンダリングされた HTML ドキュメントを縮小する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、.NET アプリケーションで HTML ドキュメントをシームレスにレンダリングする方法を学びます。
-type: docs
 weight: 11
 url: /ja/net/rendering-documents-html/minify-html/
 ---

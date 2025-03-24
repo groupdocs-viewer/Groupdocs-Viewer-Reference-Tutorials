@@ -3,7 +3,6 @@ title: 渲染存档文件
 linktitle: 渲染存档文件
 second_title: GroupDocs.Viewer .NET API
 description: 了解使用 GroupDocs.Viewer for .NET 呈现存档文件的综合教程。无缝、高效地集成到您的 .NET 应用程序中。
-type: docs
 weight: 24
 url: /zh/net/rendering-archive-files/
 ---

@@ -3,7 +3,6 @@ title: Renderizando arquivos de dados do Outlook (PST, OST)
 linktitle: Renderizando arquivos de dados do Outlook (PST, OST)
 second_title: API GroupDocs.Viewer .NET
 description: Explore tutoriais de renderização de arquivos de dados do Outlook (PST, OST) com GroupDocs.Viewer para .NET. Descubra técnicas eficientes de gerenciamento de documentos sem esforço.
-type: docs
 weight: 39
 url: /pt/net/rendering-outlook-data-files/
 ---

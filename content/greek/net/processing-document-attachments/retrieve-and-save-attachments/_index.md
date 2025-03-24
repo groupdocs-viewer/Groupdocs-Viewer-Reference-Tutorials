@@ -3,7 +3,6 @@ title: Ανάκτηση και αποθήκευση συνημμένων εγγ�
 linktitle: Ανάκτηση και αποθήκευση συνημμένων εγγράφων
 second_title: GroupDocs.Viewer .NET API
 description: Διαχειριστείτε αποτελεσματικά τα συνημμένα εγγράφων σε εφαρμογές .NET χρησιμοποιώντας το GroupDocs.Viewer. Ανακτήστε και αποθηκεύστε συνημμένα χωρίς προβλήματα.
-type: docs
 weight: 12
 url: /el/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Console.WriteLine($"\nAttachments saved successfully.\nCheck output in {outputDi
 ### Πώς μπορώ να αποκτήσω προσωρινές άδειες για το GroupDocs.Viewer για .NET;
  Οι προσωρινές άδειες μπορούν να αποκτηθούν από[αυτός ο σύνδεσμος](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Viewer για .NET;
- Διατίθεται ολοκληρωμένη τεκμηρίωση[εδώ](https://reference.groupdocs.com/viewer/net/).
+ Διατίθεται ολοκληρωμένη τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/viewer/net/).
 ### Ποιες επιλογές υποστήριξης είναι διαθέσιμες για το GroupDocs.Viewer για .NET;
  Μπορείτε να ζητήσετε βοήθεια από το φόρουμ της κοινότητας[εδώ](https://forum.groupdocs.com/c/viewer/9).

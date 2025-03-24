@@ -3,7 +3,6 @@ title: Representar documento con comentarios
 linktitle: Representar documento con comentarios
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar documentos con comentarios usando GroupDocs.Viewer para .NET. Siga nuestra guía paso a paso para una integración perfecta.
-type: docs
 weight: 13
 url: /es/net/rendering-options/render-document-comments/
 ---

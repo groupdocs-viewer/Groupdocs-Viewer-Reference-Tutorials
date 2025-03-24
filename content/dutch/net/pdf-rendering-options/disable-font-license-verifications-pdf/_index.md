@@ -3,7 +3,6 @@ title: Schakel lettertypelicentieverificaties in PDF uit
 linktitle: Schakel lettertypelicentieverificaties in PDF uit
 second_title: GroupDocs.Viewer .NET-API
 description: Ontgrendel naadloze documentweergavemogelijkheden in uw .NET met GroupDocs.Viewer voor .NET. Integreer en pas documentweergave eenvoudig aan met minimale afhankelijkheden.
-type: docs
 weight: 12
 url: /nl/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

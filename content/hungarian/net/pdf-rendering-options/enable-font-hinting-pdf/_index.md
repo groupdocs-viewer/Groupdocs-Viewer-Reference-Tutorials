@@ -3,7 +3,6 @@ title: Engedélyezze a Font Hinting használatát PDF-ben
 linktitle: Engedélyezze a Font Hinting használatát PDF-ben
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan engedélyezheti a betűtípus-utalást PDF-dokumentumokban a GroupDocs.Viewer for .NET segítségével. Kövesse lépésről lépésre bemutató oktatóanyagunkat a zökkenőmentes integráció érdekében.
-type: docs
 weight: 14
 url: /hu/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

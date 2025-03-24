@@ -3,7 +3,6 @@ title: Ladda dokument med specifik kodning
 linktitle: Ladda dokument med specifik kodning
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dina .NET-applikationer med sömlös dokumentvisning med GroupDocs.Viewer för .NET. Ladda enkelt dokument med specifik kodning och anpassa visningsupplevelsen.
-type: docs
 weight: 11
 url: /sv/net/advanced-loading/load-documents-encoding/
 ---

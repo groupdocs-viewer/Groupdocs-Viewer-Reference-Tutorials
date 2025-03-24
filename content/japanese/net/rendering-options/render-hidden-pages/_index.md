@@ -3,7 +3,6 @@ title: 隠しページのレンダリング
 linktitle: 隠しページのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET アプリケーションを強化し、シームレスなドキュメント レンダリングを実現します。ステップバイステップのガイドに従って、非表示のページを簡単にレンダリングします。
-type: docs
 weight: 15
 url: /ja/net/rendering-options/render-hidden-pages/
 ---

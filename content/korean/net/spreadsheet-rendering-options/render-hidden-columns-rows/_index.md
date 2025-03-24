@@ -3,7 +3,6 @@ title: 숨겨진 열과 행 렌더링
 linktitle: 숨겨진 열과 행 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 스프레드시트에 숨겨진 데이터를 손쉽게 잠금 해제하세요. 숨겨진 열과 행을 표시하려면 단계별 가이드를 따르세요.
-type: docs
 weight: 13
 url: /ko/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

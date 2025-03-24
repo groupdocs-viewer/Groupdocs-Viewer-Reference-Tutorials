@@ -3,7 +3,6 @@ title: Dokumentummellékletek feldolgozása
 linktitle: Dokumentummellékletek feldolgozása
 second_title: GroupDocs.Viewer .NET API
 description: Tanulja meg, hogyan integrálhatja könnyedén dokumentummegtekintési képességeit .NET-alkalmazásaiba a GroupDocs.Viewer segítségével. Hatékonyan kezelheti a dokumentummellékleteket.
-type: docs
 weight: 32
 url: /hu/net/processing-document-attachments/
 --- 

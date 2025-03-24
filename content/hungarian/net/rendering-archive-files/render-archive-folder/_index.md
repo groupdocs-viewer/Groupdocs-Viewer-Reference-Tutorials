@@ -3,7 +3,6 @@ title: Renderelő archív mappa
 linktitle: Renderelő archív mappa
 second_title: GroupDocs.Viewer .NET API
 description: Integrálja a GroupDocs.Viewer for .NET-et zökkenőmentesen .NET-alkalmazásaiba a hatékony dokumentummegjelenítési és -megtekintési lehetőségek érdekében.
-type: docs
 weight: 11
 url: /hu/net/rendering-archive-files/render-archive-folder/
 ---

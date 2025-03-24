@@ -3,7 +3,6 @@ title: Establecer formato de fecha y hora y compensación de zona horaria (corre
 linktitle: Establecer formato de fecha y hora y compensación de zona horaria (correo electrónico)
 second_title: API GroupDocs.Viewer .NET
 description: Integre GroupDocs.Viewer para .NET sin problemas en sus aplicaciones para obtener potentes capacidades de visualización de documentos. Mejore la experiencia del usuario con opciones personalizables.
-type: docs
 weight: 11
 url: /es/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

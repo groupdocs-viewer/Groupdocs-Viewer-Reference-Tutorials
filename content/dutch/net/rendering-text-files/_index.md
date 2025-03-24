@@ -3,7 +3,6 @@ title: Tekstbestanden renderen
 linktitle: Tekstbestanden renderen
 second_title: GroupDocs.Viewer .NET-API
 description: Ontgrendel het potentieel van GroupDocs.Viewer voor .NET met tutorials over het renderen van tekstbestanden. Converteer .txt-bestanden naar verschillende formaten voor verbeterd documentbeheer.
-type: docs
 weight: 33
 url: /nl/net/rendering-text-files/
 ---

@@ -3,7 +3,6 @@ title: 渲染文字处理文档
 linktitle: 渲染文字处理文档
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 高效呈现 Word 处理文档中的跟踪更改。提高您的文档管理技能。
-type: docs
 weight: 36
 url: /zh/net/rendering-word-processing-documents/
 ---

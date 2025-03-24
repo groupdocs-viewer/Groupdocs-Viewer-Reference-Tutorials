@@ -3,7 +3,6 @@ title: Lägg till vattenstämpel i dokument
 linktitle: Lägg till vattenstämpel i dokument
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du sömlöst lägger till vattenstämplar i dokument med GroupDocs.Viewer för .NET. Förbättra dokumentsäkerhet och varumärkesbyggande med denna lättanvända handledning.
-type: docs
 weight: 10
 url: /sv/net/rendering-options/add-watermark/
 ---

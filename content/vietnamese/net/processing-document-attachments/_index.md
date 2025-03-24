@@ -3,7 +3,6 @@ title: Xử lý tệp đính kèm tài liệu
 linktitle: Xử lý tệp đính kèm tài liệu
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tích hợp dễ dàng khả năng xem tài liệu vào các ứng dụng .NET của bạn bằng GroupDocs.Viewer. Quản lý tệp đính kèm tài liệu một cách hiệu quả.
-type: docs
 weight: 32
 url: /vi/net/processing-document-attachments/
 --- 

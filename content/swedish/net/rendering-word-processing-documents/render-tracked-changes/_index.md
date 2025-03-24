@@ -3,7 +3,6 @@ title: Gör spårade ändringar
 linktitle: Gör spårade ändringar
 second_title: GroupDocs.Viewer .NET API
 description: Upptäck hur du renderar spårade ändringar i dokument utan ansträngning med GroupDocs.Viewer för .NET. Förbättra din dokumenthanteringseffektivitet.
-type: docs
 weight: 10
 url: /sv/net/rendering-word-processing-documents/render-tracked-changes/
 ---

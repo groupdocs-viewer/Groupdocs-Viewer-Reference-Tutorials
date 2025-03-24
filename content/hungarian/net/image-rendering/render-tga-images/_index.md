@@ -3,7 +3,6 @@ title: Rendereljen TGA képeket
 linktitle: Rendereljen TGA képeket
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet könnyedén TGA-képeket renderelni .NET-alkalmazásokban a GroupDocs.Viewer segítségével. Növelje képmegjelenítési képességeit.
-type: docs
 weight: 17
 url: /hu/net/image-rendering/render-tga-images/
 ---

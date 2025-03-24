@@ -3,7 +3,6 @@ title: Rendering del documento con commenti
 linktitle: Rendering del documento con commenti
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering di documenti con commenti utilizzando GroupDocs.Viewer per .NET. Segui la nostra guida passo passo per un'integrazione perfetta.
-type: docs
 weight: 13
 url: /it/net/rendering-options/render-document-comments/
 ---

@@ -3,7 +3,6 @@ title: Vykreslit dokument s poznámkami
 linktitle: Vykreslit dokument s poznámkami
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat dokumenty s poznámkami pomocí GroupDocs.Viewer pro .NET. Výukový program krok za krokem pro bezproblémovou integraci do vašich aplikací .NET.
-type: docs
 weight: 14
 url: /cs/net/rendering-options/render-document-notes/
 ---

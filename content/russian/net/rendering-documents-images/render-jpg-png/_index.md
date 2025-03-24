@@ -3,7 +3,6 @@ title: Рендеринг документа в JPGPNG
 linktitle: Рендеринг документа в JPGPNG
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко преобразовать документы в формат JPG/PNG в .NET с помощью GroupDocs.Viewer для повышения удобства работы пользователей и повышения производительности.
-type: docs
 weight: 10
 url: /ru/net/rendering-documents-images/render-jpg-png/
 ---
@@ -106,7 +105,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ### Вопрос: Где я могу найти документацию по GroupDocs.Viewer для .NET?
 
- О: Подробная документация доступна.[здесь](https://reference.groupdocs.com/viewer/net/).
+ О: Подробная документация доступна.[здесь](https://tutorials.groupdocs.com/viewer/net/).
 
 ### Вопрос: Где я могу получить поддержку или задать вопросы, связанные с GroupDocs.Viewer для .NET?
 

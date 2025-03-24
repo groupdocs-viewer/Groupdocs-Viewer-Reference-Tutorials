@@ -3,7 +3,6 @@ title: Disabilita le verifiche della licenza dei caratteri in PDF
 linktitle: Disabilita le verifiche della licenza dei caratteri in PDF
 second_title: API GroupDocs.Viewer .NET
 description: Sblocca funzionalità di visualizzazione dei documenti senza interruzioni nel tuo .NET con GroupDocs.Viewer per .NET. Integra e personalizza facilmente il rendering dei documenti con dipendenze minime.
-type: docs
 weight: 12
 url: /it/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

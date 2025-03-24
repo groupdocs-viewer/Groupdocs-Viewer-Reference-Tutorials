@@ -3,7 +3,6 @@ title: Při načítání dokumentů zadejte typ souboru
 linktitle: Při načítání dokumentů zadejte typ souboru
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak určit typ souboru při načítání dokumentů pomocí GroupDocs.Viewer for .NET. Vykreslujte přesně různé formáty ve vašich aplikacích .NET.
-type: docs
 weight: 10
 url: /cs/net/advanced-loading/specify-file-type/
 ---

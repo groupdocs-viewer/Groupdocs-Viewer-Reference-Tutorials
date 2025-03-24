@@ -3,7 +3,6 @@ title: Параметры рендеринга электронных табли
 linktitle: Параметры рендеринга электронных таблиц
 second_title: GroupDocs.Viewer .NET API
 description: Легко улучшите визуализацию документов в .NET с помощью учебных пособий по GroupDocs.Viewer. Узнайте, как настроить переполнение текста, визуализировать линии сетки и многое другое.
-type: docs
 weight: 37
 url: /ru/net/spreadsheet-rendering-options/
 ---

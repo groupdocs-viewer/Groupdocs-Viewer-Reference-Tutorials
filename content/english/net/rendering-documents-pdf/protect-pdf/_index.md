@@ -3,7 +3,6 @@ title: Protect Rendered PDF with Password
 linktitle: Protect Rendered PDF with Password
 second_title: GroupDocs.Viewer .NET API
 description: Protect your rendered PDFs with passwords easily using Groupdocs.Viewer for .NET. Keep your documents secure and confidential.
-type: docs
 weight: 12
 url: /net/rendering-documents-pdf/protect-pdf/
 ---

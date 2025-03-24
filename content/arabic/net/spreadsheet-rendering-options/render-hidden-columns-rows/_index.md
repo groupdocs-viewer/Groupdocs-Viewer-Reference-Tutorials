@@ -3,7 +3,6 @@ title: عرض الأعمدة والصفوف المخفية
 linktitle: عرض الأعمدة والصفوف المخفية
 second_title: GroupDocs.Viewer .NET API
 description: قم بفتح البيانات المخفية في جداول البيانات بسهولة باستخدام GroupDocs.Viewer لـ .NET. اتبع دليلنا خطوة بخطوة للكشف عن الأعمدة والصفوف المخفية.
-type: docs
 weight: 13
 url: /ar/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

@@ -3,7 +3,6 @@ title: Vykreslování datových souborů aplikace Outlook (PST, OST)
 linktitle: Vykreslování datových souborů aplikace Outlook (PST, OST)
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte výukové programy vykreslování datových souborů aplikace Outlook (PST, OST) pomocí GroupDocs.Viewer pro .NET. Objevte efektivní techniky správy dokumentů bez námahy.
-type: docs
 weight: 39
 url: /cs/net/rendering-outlook-data-files/
 ---

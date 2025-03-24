@@ -3,7 +3,6 @@ title: Render PDF met origineel paginaformaat
 linktitle: Render PDF met origineel paginaformaat
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u PDF's met originele paginaformaten kunt renderen met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze handleiding en integreer deze functionaliteit naadloos.
-type: docs
 weight: 17
 url: /nl/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

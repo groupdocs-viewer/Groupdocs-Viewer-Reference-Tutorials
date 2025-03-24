@@ -3,7 +3,6 @@ title: Elaborazione degli allegati ai documenti
 linktitle: Elaborazione degli allegati ai documenti
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come integrare facilmente le funzionalità di visualizzazione dei documenti nelle tue applicazioni .NET utilizzando GroupDocs.Viewer. Gestisci gli allegati dei documenti in modo efficiente.
-type: docs
 weight: 32
 url: /it/net/processing-document-attachments/
 --- 

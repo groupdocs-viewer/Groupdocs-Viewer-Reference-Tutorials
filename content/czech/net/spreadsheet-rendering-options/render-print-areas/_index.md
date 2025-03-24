@@ -3,7 +3,6 @@ title: Vykreslování tiskových oblastí pomocí GroupDocs.Viewer pro .NET
 linktitle: Vykreslit oblasti tisku
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte GroupDocs.Viewer pro .NET a bez námahy vykreslujte oblasti tisku v různých formátech dokumentů. Vyzkoušejte bezplatnou zkušební verzi nyní! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /cs/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Gratulujeme! Úspěšně jste se naučili, jak používat GroupDocs.Viewer pro .NET k vykreslení oblastí tisku ve vašich dokumentech. Tento výkonný nástroj otevírá nové možnosti pro vykreslování dokumentů ve vašich aplikacích .NET.
 ## Nejčastější dotazy
 ### Je GroupDocs.Viewer kompatibilní s různými formáty dokumentů?
- Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně PDF, DOCX, XLSX a dalších. Odkazovat na[dokumentace](https://reference.groupdocs.com/viewer/net/) pro úplný seznam.
+ Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně PDF, DOCX, XLSX a dalších. Odkazovat na[dokumentace](https://tutorials.groupdocs.com/viewer/net/) pro úplný seznam.
 ### Mohu GroupDocs.Viewer před nákupem vyzkoušet?
  Absolutně! Nástroj můžete prozkoumat pomocí bezplatné zkušební verze[tady](https://releases.groupdocs.com/).
 ### Kde mohu najít podporu nebo vyhledat pomoc v případě jakýchkoli problémů?

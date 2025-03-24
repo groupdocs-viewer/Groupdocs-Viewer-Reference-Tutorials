@@ -3,7 +3,6 @@ title: Limiter le nombre d'éléments à afficher dans les fichiers de données 
 linktitle: Limiter le nombre d'éléments à afficher dans les fichiers de données Outlook
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment limiter le nombre d'éléments affichés dans les fichiers de données Outlook à l'aide de Groupdocs.Viewer pour .NET. Suivez notre étape par étape pour une intégration transparente.
-type: docs
 weight: 12
 url: /fr/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

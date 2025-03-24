@@ -3,7 +3,6 @@ title: Geef HTML weer met door de gebruiker gedefinieerde marges
 linktitle: Geef HTML weer met door de gebruiker gedefinieerde marges
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u HTML met aangepaste marges kunt weergeven in .NET met behulp van GroupDocs.Viewer. Verbeter de documentpresentatie moeiteloos.
-type: docs
 weight: 11
 url: /nl/net/rendering-web-documents/render-html-margins/
 ---

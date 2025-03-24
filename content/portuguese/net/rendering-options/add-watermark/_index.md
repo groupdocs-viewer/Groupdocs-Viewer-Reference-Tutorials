@@ -3,7 +3,6 @@ title: Adicionar marca d'água no documento
 linktitle: Adicionar marca d'água no documento
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como adicionar marcas d’água a documentos de maneira simples usando GroupDocs.Viewer for .NET. Melhore a segurança e a marca dos documentos com este tutorial fácil de seguir.
-type: docs
 weight: 10
 url: /pt/net/rendering-options/add-watermark/
 ---

@@ -3,7 +3,6 @@ title: Elektronik Tablo Oluşturma Seçenekleri
 linktitle: Elektronik Tablo Oluşturma Seçenekleri
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer eğitimleriyle .NET'te belge görselleştirmesini zahmetsizce geliştirin. Metin taşmasını ayarlamayı, kılavuz çizgileri oluşturmayı ve daha fazlasını öğrenin.
-type: docs
 weight: 37
 url: /tr/net/spreadsheet-rendering-options/
 ---

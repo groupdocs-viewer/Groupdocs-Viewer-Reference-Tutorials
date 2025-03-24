@@ -3,7 +3,6 @@ title: Vykreslování webových dokumentů
 linktitle: Vykreslování webových dokumentů
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat soubory CHM a HTML s vlastními okraji v .NET pomocí GroupDocs.Viewer. Bezproblémově převádějte CHM do formátů HTML, JPG, PNG a PDF.
-type: docs
 weight: 35
 url: /cs/net/rendering-web-documents/
 ---

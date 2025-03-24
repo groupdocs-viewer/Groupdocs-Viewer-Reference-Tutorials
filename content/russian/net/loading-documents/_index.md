@@ -3,7 +3,6 @@ title: Загрузка документов
 linktitle: Загрузка документов
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как эффективно загружать и отображать документы с помощью GroupDocs.Viewer .NET. Изучите руководства по загрузке на локальный диск, в потоковую передачу и по FTP для усовершенствованных приложений .NET.
-type: docs
 weight: 20
 url: /ru/net/loading-documents/
 ---

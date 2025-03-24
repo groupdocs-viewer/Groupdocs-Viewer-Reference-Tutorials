@@ -3,7 +3,6 @@ title: ईमेल संदेश प्रस्तुत करते सम
 linktitle: ईमेल संदेश प्रस्तुत करते समय पृष्ठ का आकार समायोजित करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके ईमेल संदेशों को पीडीएफ में प्रस्तुत करते समय पृष्ठ आकार को समायोजित करना सीखें। दस्तावेज़ देखने की दक्षता बढ़ाएँ।
-type: docs
 weight: 10
 url: /hi/net/rendering-email-messages/adjust-page-size-email/
 ---

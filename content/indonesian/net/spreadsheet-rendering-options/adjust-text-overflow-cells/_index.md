@@ -3,7 +3,6 @@ title: Sesuaikan Luapan Teks di Sel
 linktitle: Sesuaikan Luapan Teks di Sel
 second_title: GroupDocs.Viewer .NET API
 description: Kelola luapan teks dengan mudah di dokumen .NET dengan GroupDocs.Viewer. Meningkatkan keterbacaan dan pengalaman pengguna. Unduh uji coba gratis Anda sekarang.
-type: docs
 weight: 10
 url: /id/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Sekarang Anda telah berhasil menyesuaikan luapan teks di sel menggunakan GroupDo
 Kesimpulannya, GroupDocs.Viewer untuk .NET menyederhanakan tugas menangani luapan teks dalam sel, memastikan bahwa dokumen Anda tidak hanya berfungsi tetapi juga dipoles secara visual. Dengan langkah-langkah ini, Anda dapat meningkatkan pengalaman pengguna dan keterbacaan dokumen spreadsheet Anda dengan mudah.
 ## FAQ
 ### 1. Bisakah saya menggunakan GroupDocs.Viewer untuk .NET dengan jenis dokumen apa pun?
- Ya, GroupDocs.Viewer untuk .NET mendukung berbagai format dokumen, termasuk spreadsheet, presentasi, dan banyak lagi. Mengacu kepada[dokumentasi](https://reference.groupdocs.com/viewer/net/) untuk daftar lengkapnya.
+ Ya, GroupDocs.Viewer untuk .NET mendukung berbagai format dokumen, termasuk spreadsheet, presentasi, dan banyak lagi. Mengacu kepada[dokumentasi](https://tutorials.groupdocs.com/viewer/net/) untuk daftar lengkapnya.
 ### 2. Apakah tersedia uji coba gratis?
  Ya, Anda dapat menjelajahi kemampuan GroupDocs.Viewer untuk .NET dengan mengunduh[uji coba gratis](https://releases.groupdocs.com/).
 ### 3. Bagaimana saya bisa mendapatkan dukungan untuk masalah apa pun?

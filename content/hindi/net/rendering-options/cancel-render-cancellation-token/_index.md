@@ -3,7 +3,6 @@ title: कैंसिलेशन टोकन के साथ रेंडर
 linktitle: कैंसिलेशन टोकन के साथ रेंडर रद्द करें
 second_title: GroupDocs.Viewer .NET API
 description: कुशल दस्तावेज़ देखने के लिए .NET के लिए Groupdocs.Viewer को अपने .NET प्रोजेक्ट में सहजता से एकीकृत करें।
-type: docs
 weight: 11
 url: /hi/net/rendering-options/cancel-render-cancellation-token/
 ---

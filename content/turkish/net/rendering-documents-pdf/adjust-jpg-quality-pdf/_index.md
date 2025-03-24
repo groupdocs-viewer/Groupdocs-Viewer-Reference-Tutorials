@@ -3,7 +3,6 @@ title: İşlenen PDF'de JPG Görüntü Kalitesini Ayarlama
 linktitle: İşlenen PDF'de JPG Görüntü Kalitesini Ayarlama
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak oluşturulmuş PDF belgelerinde JPG görüntü kalitesini nasıl ayarlayacağınızı öğrenin. Belge görüntüleme deneyiminizi geliştirin.
-type: docs
 weight: 11
 url: /tr/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

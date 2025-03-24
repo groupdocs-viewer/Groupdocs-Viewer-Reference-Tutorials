@@ -3,7 +3,6 @@ title: Vízjel hozzáadása a dokumentumhoz
 linktitle: Vízjel hozzáadása a dokumentumhoz
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan adhat zökkenőmentesen vízjeleket a dokumentumokhoz a GroupDocs.Viewer for .NET segítségével. Fokozza a dokumentumok biztonságát és a márkaépítést ezzel a könnyen követhető oktatóanyaggal.
-type: docs
 weight: 10
 url: /hu/net/rendering-options/add-watermark/
 ---

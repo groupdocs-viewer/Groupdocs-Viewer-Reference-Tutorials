@@ -3,7 +3,6 @@ title: प्रतिपादन विकल्प
 linktitle: प्रतिपादन विकल्प
 second_title: GroupDocs.Viewer .NET API
 description: वॉटरमार्क जोड़ने से लेकर फ़ॉन्ट अनुकूलित करने तक, रेंडरिंग विकल्पों पर ट्यूटोरियल के साथ .NET के लिए GroupDocs.Viewer को आसानी से अपने अनुप्रयोगों में एकीकृत करें।
-type: docs
 weight: 23
 url: /hi/net/rendering-options/
 ---

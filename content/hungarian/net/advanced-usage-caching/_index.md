@@ -3,7 +3,6 @@ title: Speciális használat (gyorsítótárazás)
 linktitle: Speciális használat (gyorsítótárazás)
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel a .NET-alkalmazások dokumentumfeldolgozási sebességének optimalizálására szolgáló fejlett technikákat a GroupDocs.Viewer segítségével. Ismerje meg, hogyan engedélyezheti a gyorsítótárazást a gyorsabb teljesítmény érdekében!
-type: docs
 weight: 22
 url: /hu/net/advanced-usage-caching/
 ---

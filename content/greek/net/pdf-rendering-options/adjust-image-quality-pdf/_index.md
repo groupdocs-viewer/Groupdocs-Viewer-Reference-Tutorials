@@ -3,7 +3,6 @@ title: Προσαρμόστε την ποιότητα εικόνας σε PDF
 linktitle: Προσαρμόστε την ποιότητα εικόνας σε PDF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να προσαρμόζετε την ποιότητα εικόνας σε έγγραφα PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε το βήμα προς βήμα σεμινάριο μας για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 10
 url: /el/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

@@ -3,7 +3,6 @@ title: 設定計量許可證
 linktitle: 設定計量許可證
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 增強您的 .NET 應用程序，以實現無縫文件檢視。輕鬆將文件渲染功能整合到您的專案中。
-type: docs
 weight: 12
 url: /zh-hant/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 總而言之，GroupDocs.Viewer for .NET 提供了一個全面的解決方案，將文件檢視功能合併到 .NET 應用程式中。透過遵循概述的步驟，您可以輕鬆設定計量許可證並開始在專案中利用 GroupDocs.Viewer 的功能。
 ## 常見問題解答
 ### Q：在哪裡可以找到 GroupDocs.Viewer for .NET 的文檔？
-你可以找到文檔[這裡](https://reference.groupdocs.com/viewer/net/).
+你可以找到文檔[這裡](https://tutorials.groupdocs.com/viewer/net/).
 ### Q：GroupDocs.Viewer for .NET 是否有免費試用版？
 是的，您可以免費試用[這裡](https://releases.groupdocs.com/).
 ### Q：如何取得用於測試目的的臨時許可證？

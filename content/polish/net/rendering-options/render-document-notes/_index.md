@@ -3,7 +3,6 @@ title: Renderuj dokument z notatkami
 linktitle: Renderuj dokument z notatkami
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować dokumenty z notatkami przy użyciu programu GroupDocs.Viewer dla platformy .NET. Samouczek krok po kroku umożliwiający bezproblemową integrację z aplikacjami .NET.
-type: docs
 weight: 14
 url: /pl/net/rendering-options/render-document-notes/
 ---

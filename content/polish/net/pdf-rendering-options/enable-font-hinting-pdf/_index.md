@@ -3,7 +3,6 @@ title: Włącz podpowiedzi dotyczące czcionek w formacie PDF
 linktitle: Włącz podpowiedzi dotyczące czcionek w formacie PDF
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak włączyć podpowiedzi dotyczące czcionek w dokumentach PDF przy użyciu programu GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby zapewnić bezproblemową integrację.
-type: docs
 weight: 14
 url: /pl/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

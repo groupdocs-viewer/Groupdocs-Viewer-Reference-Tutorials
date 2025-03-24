@@ -3,7 +3,6 @@ title: Hiển thị các thư mục cụ thể và lọc tin nhắn (Outlook)
 linktitle: Hiển thị các thư mục cụ thể và lọc tin nhắn (Outlook)
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị các thư mục cụ thể và lọc thư trong Outlook bằng GroupDocs.Viewer dành cho .NET. Đơn giản hóa việc quản lý tài liệu trong các ứng dụng .NET.
-type: docs
 weight: 11
 url: /vi/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

@@ -3,7 +3,6 @@ title: تصغير مستند HTML المقدم
 linktitle: تصغير مستند HTML المقدم
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض مستندات HTML بسلاسة في تطبيقات .NET باستخدام GroupDocs.Viewer لـ .NET.
-type: docs
 weight: 11
 url: /ar/net/rendering-documents-html/minify-html/
 ---

@@ -3,7 +3,6 @@ title: Rendering di livelli nei disegni CAD
 linktitle: Rendering di livelli nei disegni CAD
 second_title: API GroupDocs.Viewer .NET
 description: Esegui il rendering dei disegni CAD senza problemi nelle applicazioni .NET con GroupDocs.Viewer per .NET. Esplora le opzioni di rendering, personalizza i livelli e altro ancora.
-type: docs
 weight: 13
 url: /it/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Prima di immergerti nell'utilizzo di GroupDocs.Viewer per .NET, assicurati di di
 - Conoscenza base del linguaggio di programmazione C#.
 - Ambiente di sviluppo .NET configurato sul tuo computer.
 -  GroupDocs.Viewer per .NET installato. Puoi scaricarlo da[Qui](https://releases.groupdocs.com/viewer/net/).
--  Accesso alla documentazione GroupDocs.Viewer per .NET come riferimento, che può essere trovata[Qui](https://reference.groupdocs.com/viewer/net/).
+-  Accesso alla documentazione GroupDocs.Viewer per .NET come riferimento, che può essere trovata[Qui](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importa spazi dei nomi
 Per iniziare a utilizzare GroupDocs.Viewer per .NET, devi importare gli spazi dei nomi richiesti nel tuo progetto. Segui questi passi:

@@ -3,7 +3,6 @@ title: Đặt định dạng ngày giờ và chênh lệch múi giờ (Email)
 linktitle: Đặt định dạng ngày giờ và chênh lệch múi giờ (Email)
 second_title: API GroupDocs.Viewer .NET
 description: Tích hợp GroupDocs.Viewer dành cho .NET vào các ứng dụng của bạn một cách liền mạch để có khả năng xem tài liệu mạnh mẽ. Nâng cao trải nghiệm người dùng với các tùy chọn tùy chỉnh.
-type: docs
 weight: 11
 url: /vi/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

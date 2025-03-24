@@ -3,7 +3,6 @@ title: Renderizar imagens SVG e SVGZ
 linktitle: Renderizar imagens SVG e SVGZ
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar imagens SVG e SVGZ usando GroupDocs.Viewer for .NET. Converta gráficos vetoriais em HTML, JPG, PNG e PDF sem esforço.
-type: docs
 weight: 16
 url: /pt/net/image-rendering/render-svg-svgz-images/
 ---

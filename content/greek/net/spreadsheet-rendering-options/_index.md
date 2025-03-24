@@ -3,7 +3,6 @@ title: Επιλογές απόδοσης υπολογιστικών φύλλων
 linktitle: Επιλογές απόδοσης υπολογιστικών φύλλων
 second_title: GroupDocs.Viewer .NET API
 description: Βελτιώστε την οπτικοποίηση εγγράφων χωρίς κόπο στο .NET με εκπαιδευτικά προγράμματα GroupDocs.Viewer. Μάθετε να προσαρμόζετε την υπερχείλιση κειμένου, να αποδίδετε γραμμές πλέγματος και πολλά άλλα.
-type: docs
 weight: 37
 url: /el/net/spreadsheet-rendering-options/
 ---

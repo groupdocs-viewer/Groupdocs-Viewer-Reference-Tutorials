@@ -3,7 +3,6 @@ title: Cargar documentos protegidos con contraseña
 linktitle: Cargar documentos protegidos con contraseña
 second_title: API GroupDocs.Viewer .NET
 description: Integre sin esfuerzo la visualización de documentos protegidos con contraseña en aplicaciones .NET utilizando GroupDocs.Viewer para .NET. Siga nuestro tutorial paso a paso para lograrlo sin problemas.
-type: docs
 weight: 12
 url: /es/net/advanced-loading/load-password-protected-document/
 ---

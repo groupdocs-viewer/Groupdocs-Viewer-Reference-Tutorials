@@ -3,7 +3,6 @@ title: Dapatkan Koordinat Teks untuk Rendering Gambar
 linktitle: Dapatkan Koordinat Teks untuk Rendering Gambar
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengekstrak koordinat teks untuk rendering gambar menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan kemampuan pemrosesan dokumen Anda dengan mudah.
-type: docs
 weight: 12
 url: /id/net/rendering-documents-images/get-text-coordinates-image/
 ---

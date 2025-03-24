@@ -3,7 +3,6 @@ title: 従量制ライセンスの設定
 linktitle: 従量制ライセンスの設定
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET アプリケーションを強化し、シームレスなドキュメント表示を実現します。ドキュメント レンダリング機能をプロジェクトに簡単に統合します。
-type: docs
 weight: 12
 url: /ja/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 結論として、GroupDocs.Viewer for .NET は、ドキュメント表示機能を .NET アプリケーションに組み込むための包括的なソリューションを提供します。概要を説明した手順に従うことで、従量制ライセンスを簡単に設定し、プロジェクト内で GroupDocs.Viewer の機能を活用し始めることができます。
 ## よくある質問
 ### Q: GroupDocs.Viewer for .NET のドキュメントはどこで見つけられますか?
-ドキュメントを見つけることができます[ここ](https://reference.groupdocs.com/viewer/net/).
+ドキュメントを見つけることができます[ここ](https://tutorials.groupdocs.com/viewer/net/).
 ### Q: GroupDocs.Viewer for .NET に利用できる無料トライアルはありますか?
 はい、無料トライアルにアクセスできます[ここ](https://releases.groupdocs.com/).
 ### Q: テスト目的で一時ライセンスを取得するにはどうすればよいですか?

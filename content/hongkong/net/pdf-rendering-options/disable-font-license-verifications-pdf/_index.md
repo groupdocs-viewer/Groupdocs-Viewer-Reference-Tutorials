@@ -3,7 +3,6 @@ title: 停用 PDF 中的字型許可證驗證
 linktitle: 停用 PDF 中的字型許可證驗證
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 解鎖 .NET 中的無縫文件檢視功能。以最小的依賴性輕鬆整合和自訂文件渲染。
-type: docs
 weight: 12
 url: /zh-hant/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

@@ -3,7 +3,6 @@ title: 加载具有特定编码的文档
 linktitle: 加载具有特定编码的文档
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 通过无缝文档查看来增强您的 .NET 应用程序。轻松加载具有特定编码的文档并自定义查看体验。
-type: docs
 weight: 11
 url: /zh/net/advanced-loading/load-documents-encoding/
 ---

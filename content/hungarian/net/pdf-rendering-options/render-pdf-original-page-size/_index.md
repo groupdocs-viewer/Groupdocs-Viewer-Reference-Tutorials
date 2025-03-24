@@ -3,7 +3,6 @@ title: Rendereljen PDF-et eredeti oldalmérettel
 linktitle: Rendereljen PDF-et eredeti oldalmérettel
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet eredeti oldalmérettel PDF-eket renderelni a GroupDocs.Viewer for .NET segítségével. Kövesse lépésről lépésre útmutatónkat, és zökkenőmentesen integrálja ezt a funkciót.
-type: docs
 weight: 17
 url: /hu/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

@@ -3,7 +3,6 @@ title: Hiển thị tin nhắn email
 linktitle: Hiển thị tin nhắn email
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá cách GroupDocs.Viewer dành cho .NET đơn giản hóa việc hiển thị email thành tệp PDF. Tìm hiểu cách điều chỉnh kích thước trang, đặt định dạng Ngày giờ và đổi tên các trường một cách hiệu quả.
-type: docs
 weight: 27
 url: /vi/net/rendering-email-messages/
 ---

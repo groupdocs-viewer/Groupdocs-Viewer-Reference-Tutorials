@@ -3,7 +3,6 @@ title: Render Catatan dan Sesuaikan Satuan Waktu (Proyek MS)
 linktitle: Render Catatan dan Sesuaikan Satuan Waktu (Proyek MS)
 second_title: GroupDocs.Viewer .NET API
 description: Master rendering dokumen MS Project dengan GroupDocs.Viewer untuk .NET. Render catatan, sesuaikan satuan waktu, dan jelajahi berbagai format keluaran dengan mudah.
-type: docs
 weight: 11
 url: /id/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ Ya, GroupDocs.Viewer untuk .NET mendukung rendering ke berbagai format seperti D
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Viewer untuk .NET?
  Mengunjungi[Link ini](https://purchase.groupdocs.com/temporary-license/) untuk mendapatkan izin sementara.
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Viewer untuk .NET?
- Lihat dokumentasi[Di Sini](https://reference.groupdocs.com/viewer/net/).
+ Lihat dokumentasi[Di Sini](https://tutorials.groupdocs.com/viewer/net/).
 ### Di mana saya dapat mencari dukungan atau mengajukan pertanyaan terkait GroupDocs.Viewer untuk .NET?
  Anda dapat mengunjungi forum dukungan[Di Sini](https://forum.groupdocs.com/c/viewer/9).

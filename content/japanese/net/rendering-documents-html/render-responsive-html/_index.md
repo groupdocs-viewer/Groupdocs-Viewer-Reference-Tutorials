@@ -3,7 +3,6 @@ title: レスポンシブ HTML のレンダリング
 linktitle: レスポンシブ HTML のレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を使用してレスポンシブ HTML をレンダリングし、デバイス間で最適な表示エクスペリエンスを確保する方法を学びます。
-type: docs
 weight: 13
 url: /ja/net/rendering-documents-html/render-responsive-html/
 ---

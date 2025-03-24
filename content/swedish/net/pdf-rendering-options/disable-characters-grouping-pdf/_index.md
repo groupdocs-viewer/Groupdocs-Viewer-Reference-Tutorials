@@ -3,7 +3,6 @@ title: Inaktivera teckengruppering i PDF
 linktitle: Inaktivera teckengruppering i PDF
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du inaktiverar teckengruppering i PDF-filer med GroupDocs.Viewer för .NET. Följ vår steg-för-steg handledning för sömlös dokumentrendering.
-type: docs
 weight: 11
 url: /sv/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

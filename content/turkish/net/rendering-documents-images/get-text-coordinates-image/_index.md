@@ -3,7 +3,6 @@ title: Görüntü Oluşturma için Metin Koordinatlarını Alma
 linktitle: Görüntü Oluşturma için Metin Koordinatlarını Alma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak görüntü oluşturmaya yönelik metin koordinatlarını nasıl çıkaracağınızı öğrenin. Belge işleme yeteneklerinizi zahmetsizce geliştirin.
-type: docs
 weight: 12
 url: /tr/net/rendering-documents-images/get-text-coordinates-image/
 ---

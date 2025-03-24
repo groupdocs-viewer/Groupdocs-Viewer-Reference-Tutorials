@@ -3,7 +3,6 @@ title: Kết xuất HTML với lề do người dùng xác định
 linktitle: Kết xuất HTML với lề do người dùng xác định
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị HTML với lề tùy chỉnh trong .NET bằng GroupDocs.Viewer. Tăng cường trình bày tài liệu một cách dễ dàng.
-type: docs
 weight: 11
 url: /vi/net/rendering-web-documents/render-html-margins/
 ---

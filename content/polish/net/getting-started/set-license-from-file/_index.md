@@ -3,7 +3,6 @@ title: Ustaw licencję z pliku
 linktitle: Ustaw licencję z pliku
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak bez wysiłku zintegrować GroupDocs.Viewer for .NET z aplikacjami. Ustaw licencję, przeglądaj dokumenty i dostosuj wygląd przeglądarki.
-type: docs
 weight: 10
 url: /pl/net/getting-started/set-license-from-file/
 ---

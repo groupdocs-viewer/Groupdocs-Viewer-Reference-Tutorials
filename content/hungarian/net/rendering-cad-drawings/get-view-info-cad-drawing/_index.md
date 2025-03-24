@@ -3,7 +3,6 @@ title: Megtekintési információk a CAD-rajzokhoz
 linktitle: Megtekintési információk a CAD-rajzokhoz
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan kérheti le a CAD-rajzok nézeti adatait a GroupDocs.Viewer for .NET segítségével. Bővítse .NET-alkalmazásait a zökkenőmentes CAD-fájlkezeléssel.
-type: docs
 weight: 10
 url: /hu/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

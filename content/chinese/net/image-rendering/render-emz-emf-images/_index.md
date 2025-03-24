@@ -3,7 +3,6 @@ title: 渲染 EMZ 和 EMF 图像
 linktitle: 渲染 EMZ 和 EMF 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 将 EMZ 和 EMF 图像呈现为各种格式。面向开发人员的易于理解的教程。
-type: docs
 weight: 14
 url: /zh/net/image-rendering/render-emz-emf-images/
 ---
@@ -97,4 +96,4 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
 答：是的，可以购买临时许可证[这里](https://purchase.groupdocs.com/temporary-license/).
 
 ### 问：在哪里可以找到 GroupDocs.Viewer for .NET 的详细文档？
-答：可以参考文档[这里](https://reference.groupdocs.com/viewer/net/)有关使用 API 的全面指导。
+答：可以参考文档[这里](https://tutorials.groupdocs.com/viewer/net/)有关使用 API 的全面指导。

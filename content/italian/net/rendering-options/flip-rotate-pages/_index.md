@@ -3,7 +3,6 @@ title: Capovolgi e ruota le pagine
 linktitle: Capovolgi e ruota le pagine
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come integrare Groupdocs.Viewer for .NET nelle tue applicazioni per il rendering, il capovolgimento e la rotazione dei documenti senza interruzioni.
-type: docs
 weight: 12
 url: /it/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ In questo tutorial, approfondiremo le funzionalità di Groupdocs.Viewer per .NET
 ## Prerequisiti
 Prima di iniziare, assicurati di aver configurato i seguenti prerequisiti:
 ### Installazione di Groupdocs.Viewer per .NET
- Per utilizzare Groupdocs.Viewer per .NET, è necessario installare il pacchetto tramite NuGet Package Manager. È possibile trovare istruzioni dettagliate per l'installazione nel file[documentazione](https://reference.groupdocs.com/viewer/net/).
+ Per utilizzare Groupdocs.Viewer per .NET, è necessario installare il pacchetto tramite NuGet Package Manager. È possibile trovare istruzioni dettagliate per l'installazione nel file[documentazione](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importa spazi dei nomi
 Assicurati di avere importati gli spazi dei nomi necessari nel tuo progetto per utilizzare Groupdocs.Viewer per .NET in modo efficace.

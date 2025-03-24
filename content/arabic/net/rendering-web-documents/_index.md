@@ -3,7 +3,6 @@ title: تقديم مستندات الويب
 linktitle: تقديم مستندات الويب
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض ملفات CHM وHTML بهوامش مخصصة في .NET باستخدام GroupDocs.Viewer. تحويل CHM إلى تنسيقات HTML وJPG وPNG وPDF بسلاسة.
-type: docs
 weight: 35
 url: /ar/net/rendering-web-documents/
 ---

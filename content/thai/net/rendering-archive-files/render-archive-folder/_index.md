@@ -3,7 +3,6 @@ title: เรนเดอร์โฟลเดอร์เก็บถาวร
 linktitle: เรนเดอร์โฟลเดอร์เก็บถาวร
 second_title: GroupDocs.Viewer .NET API
 description: ผสานรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชัน .NET ของคุณได้อย่างราบรื่น เพื่อความสามารถในการเรนเดอร์และดูเอกสารอย่างมีประสิทธิภาพ
-type: docs
 weight: 11
 url: /th/net/rendering-archive-files/render-archive-folder/
 ---

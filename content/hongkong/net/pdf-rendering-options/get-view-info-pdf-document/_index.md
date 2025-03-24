@@ -3,7 +3,6 @@ title: 取得 PDF 文件的檢視信息
 linktitle: 取得 PDF 文件的檢視信息
 second_title: GroupDocs.Viewer .NET API
 description: 在這個綜合教學中了解如何使用 GroupDocs.Viewer for .NET 從 PDF 文件中提取視圖資訊。
-type: docs
 weight: 16
 url: /zh-hant/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

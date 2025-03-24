@@ -3,7 +3,6 @@ title: Rendererje le a dokumentumot PDF-be
 linktitle: Rendererje le a dokumentumot PDF-be
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet dokumentumokat PDF formátumba renderelni a GroupDocs.Viewer for .NET segítségével. Lépésről lépésre, előfeltételekkel és GYIK-vel.
-type: docs
 weight: 10
 url: /hu/net/rendering-documents-pdf/render-to-pdf/
 ---

@@ -3,7 +3,6 @@ title: عرض الفاصل الزمني المحدد للمشروع (مشروع 
 linktitle: عرض الفاصل الزمني المحدد للمشروع (مشروع MS)
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج GroupDocs.Viewer لـ .NET بسلاسة في تطبيقاتك لعرض المستندات بكفاءة. عزز الإنتاجية من خلال إمكانيات العرض المتنوعة.
-type: docs
 weight: 12
 url: /ar/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

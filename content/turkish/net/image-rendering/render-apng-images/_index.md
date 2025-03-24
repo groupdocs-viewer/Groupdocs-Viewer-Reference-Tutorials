@@ -3,7 +3,6 @@ title: APNG Görüntülerini Oluştur
 linktitle: APNG Görüntülerini Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: Groupdocs.Viewer for .NET'i kullanarak APNG görüntülerini çeşitli formatlarda nasıl oluşturacağınızı öğrenin. Kod örneklerinin yer aldığı adım adım kılavuz.
-type: docs
 weight: 11
 url: /tr/net/image-rendering/render-apng-images/
 ---

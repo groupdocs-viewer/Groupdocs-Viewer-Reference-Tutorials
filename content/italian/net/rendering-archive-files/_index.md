@@ -3,7 +3,6 @@ title: Rendering dei file di archivio
 linktitle: Rendering dei file di archivio
 second_title: API GroupDocs.Viewer .NET
 description: Scopri tutorial completi per il rendering dei file di archivio utilizzando GroupDocs.Viewer per .NET. Integrazione perfetta ed efficiente nelle tue applicazioni .NET.
-type: docs
 weight: 24
 url: /it/net/rendering-archive-files/
 ---

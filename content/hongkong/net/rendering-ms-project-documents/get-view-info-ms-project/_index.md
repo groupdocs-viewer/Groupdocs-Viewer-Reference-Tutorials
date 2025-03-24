@@ -3,7 +3,6 @@ title: 取得 Microsoft Project 文件的檢視信息
 linktitle: 取得 Microsoft Project 文件的檢視信息
 second_title: GroupDocs.Viewer .NET API
 description: 探索利用 Groupdocs.Viewer for .NET 輕鬆檢索 Microsoft Project 文件的視圖資訊的綜合教學。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

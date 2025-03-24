@@ -3,7 +3,6 @@ title: 使用自定义字体渲染
 linktitle: 使用自定义字体渲染
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 使用自定义字体呈现文档。轻松增强视觉演示。
-type: docs
 weight: 18
 url: /zh/net/rendering-options/render-custom-fonts/
 ---

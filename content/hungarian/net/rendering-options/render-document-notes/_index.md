@@ -3,7 +3,6 @@ title: Dokumentum renderelése jegyzetekkel
 linktitle: Dokumentum renderelése jegyzetekkel
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg dokumentumokat jegyzetekkel a GroupDocs.Viewer for .NET segítségével. Lépésről lépésre bemutató útmutató a .NET-alkalmazásokba való zökkenőmentes integrációhoz.
-type: docs
 weight: 14
 url: /hu/net/rendering-options/render-document-notes/
 ---

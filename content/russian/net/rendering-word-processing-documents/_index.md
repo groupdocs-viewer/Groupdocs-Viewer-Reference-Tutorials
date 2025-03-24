@@ -3,7 +3,6 @@ title: Рендеринг текстовых документов
 linktitle: Рендеринг текстовых документов
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как эффективно визуализировать отслеживаемые изменения в документах Word с помощью GroupDocs.Viewer для .NET. Совершенствуйте свои навыки управления документами.
-type: docs
 weight: 36
 url: /ru/net/rendering-word-processing-documents/
 ---

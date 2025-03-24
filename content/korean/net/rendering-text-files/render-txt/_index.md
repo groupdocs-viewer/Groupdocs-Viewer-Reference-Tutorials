@@ -3,7 +3,6 @@ title: 렌더링 텍스트 파일(.txt)
 linktitle: 렌더링 텍스트 파일(.txt)
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 텍스트 파일을 다양한 형식으로 원활하게 변환하는 방법을 살펴보세요. 문서 관리 기능을 손쉽게 향상하세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-text-files/render-txt/
 ---

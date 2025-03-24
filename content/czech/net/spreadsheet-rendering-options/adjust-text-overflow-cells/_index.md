@@ -3,7 +3,6 @@ title: Upravit přetečení textu v buňkách
 linktitle: Upravit přetečení textu v buňkách
 second_title: GroupDocs.Viewer .NET API
 description: Pomocí GroupDocs.Viewer můžete bez námahy spravovat přetečení textu v dokumentech .NET. Vylepšete čitelnost a uživatelskou zkušenost. Stáhněte si bezplatnou zkušební verzi.
-type: docs
 weight: 10
 url: /cs/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Nyní jste úspěšně upravili přetečení textu v buňkách pomocí GroupDocs
 Na závěr, GroupDocs.Viewer for .NET zjednodušuje práci s přetečením textu v buňkách a zajišťuje, že vaše dokumenty budou nejen funkční, ale také vizuálně vyleštěné. Pomocí těchto kroků můžete bez námahy zlepšit uživatelské prostředí a čitelnost vašich tabulkových dokumentů.
 ## Nejčastější dotazy
 ### 1. Mohu použít GroupDocs.Viewer pro .NET s jakýmkoli typem dokumentu?
- Ano, GroupDocs.Viewer for .NET podporuje širokou škálu formátů dokumentů, včetně tabulek, prezentací a dalších. Odkazovat na[dokumentace](https://reference.groupdocs.com/viewer/net/) pro úplný seznam.
+ Ano, GroupDocs.Viewer for .NET podporuje širokou škálu formátů dokumentů, včetně tabulek, prezentací a dalších. Odkazovat na[dokumentace](https://tutorials.groupdocs.com/viewer/net/) pro úplný seznam.
 ### 2. Je k dispozici bezplatná zkušební verze?
  Ano, můžete prozkoumat možnosti GroupDocs.Viewer for .NET stažením souboru[zkušební verze zdarma](https://releases.groupdocs.com/).
 ### 3. Jak mohu získat podporu pro jakékoli problémy?

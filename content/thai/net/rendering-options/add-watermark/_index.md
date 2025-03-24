@@ -3,7 +3,6 @@ title: เพิ่มลายน้ำในเอกสาร
 linktitle: เพิ่มลายน้ำในเอกสาร
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเพิ่มลายน้ำให้กับเอกสารได้อย่างราบรื่นโดยใช้ GroupDocs.Viewer สำหรับ .NET ปรับปรุงความปลอดภัยของเอกสารและการสร้างแบรนด์ด้วยบทช่วยสอนที่ปฏิบัติตามง่ายนี้
-type: docs
 weight: 10
 url: /th/net/rendering-options/add-watermark/
 ---

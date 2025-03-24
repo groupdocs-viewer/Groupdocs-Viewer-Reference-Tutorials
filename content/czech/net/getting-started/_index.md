@@ -3,7 +3,6 @@ title: Začínáme
 linktitle: Začínáme
 second_title: GroupDocs.Viewer .NET API
 description: Objevte podrobné návody pro bezproblémovou integraci GroupDocs.Viewer pro .NET do vašich aplikací. Naučte se nastavovat licence a přizpůsobovat vzhled prohlížeče.
-type: docs
 weight: 26
 url: /cs/net/getting-started/
 ---

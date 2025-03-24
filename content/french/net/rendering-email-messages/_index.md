@@ -3,7 +3,6 @@ title: Rendu des messages électroniques
 linktitle: Rendu des messages électroniques
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment GroupDocs.Viewer pour .NET simplifie le rendu des messages électroniques au format PDF. Apprenez à ajuster la taille de la page, à définir le format DateTime et à renommer les champs efficacement.
-type: docs
 weight: 27
 url: /fr/net/rendering-email-messages/
 ---

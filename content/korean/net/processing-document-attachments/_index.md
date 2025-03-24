@@ -3,7 +3,6 @@ title: 문서 첨부 처리
 linktitle: 문서 첨부 처리
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 문서 보기 기능을 .NET 응용 프로그램에 손쉽게 통합하는 방법을 알아보세요. 문서 첨부 파일을 효율적으로 관리하세요.
-type: docs
 weight: 32
 url: /ko/net/processing-document-attachments/
 --- 

@@ -3,7 +3,6 @@ title: Λάβετε πληροφορίες προβολής για έγγραφ�
 linktitle: Λάβετε πληροφορίες προβολής για έγγραφο PDF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να εξάγετε πληροφορίες προβολής από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET σε αυτό το ολοκληρωμένο σεμινάριο.
-type: docs
 weight: 16
 url: /el/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

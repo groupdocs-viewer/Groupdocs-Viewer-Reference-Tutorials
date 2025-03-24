@@ -3,7 +3,6 @@ title: Απόδοση PDF με Αρχικό Μέγεθος Σελίδας
 linktitle: Απόδοση PDF με Αρχικό Μέγεθος Σελίδας
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε αρχεία PDF με πρωτότυπα μεγέθη σελίδας χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας και ενσωματώστε απρόσκοπτα αυτή τη λειτουργία.
-type: docs
 weight: 17
 url: /el/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

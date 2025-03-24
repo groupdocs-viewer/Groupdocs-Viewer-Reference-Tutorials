@@ -3,7 +3,6 @@ title: Ersätt saknad teckensnitt
 linktitle: Ersätt saknad teckensnitt
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du ersätter saknade teckensnitt i .NET-dokument utan ansträngning med GroupDocs.Viewer. Säkerställ korrekt rendering med enkla steg.
-type: docs
 weight: 20
 url: /sv/net/rendering-options/replace-missing-font/
 ---

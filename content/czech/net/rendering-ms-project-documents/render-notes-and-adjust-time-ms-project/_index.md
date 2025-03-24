@@ -3,7 +3,6 @@ title: Vykreslování poznámek a úprava časových jednotek (MS Project)
 linktitle: Vykreslování poznámek a úprava časových jednotek (MS Project)
 second_title: GroupDocs.Viewer .NET API
 description: Zvládněte vykreslování dokumentů MS Project pomocí GroupDocs.Viewer pro .NET. Vykreslujte poznámky, upravujte časové jednotky a prozkoumávejte různé výstupní formáty bez námahy.
-type: docs
 weight: 11
 url: /cs/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ Ano, GroupDocs.Viewer for .NET podporuje vykreslování do různých formátů, 
 ### Jak mohu získat dočasné licencování pro GroupDocs.Viewer pro .NET?
  Návštěva[tento odkaz](https://purchase.groupdocs.com/temporary-license/) získat dočasnou licenci.
 ### Kde najdu dokumentaci k GroupDocs.Viewer pro .NET?
- Viz dokumentace[tady](https://reference.groupdocs.com/viewer/net/).
+ Viz dokumentace[tady](https://tutorials.groupdocs.com/viewer/net/).
 ### Kde mohu hledat podporu nebo klást otázky týkající se GroupDocs.Viewer pro .NET?
  Můžete navštívit fórum podpory[tady](https://forum.groupdocs.com/c/viewer/9).

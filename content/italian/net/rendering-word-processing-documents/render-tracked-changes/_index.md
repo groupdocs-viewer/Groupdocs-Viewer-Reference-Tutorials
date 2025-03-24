@@ -3,7 +3,6 @@ title: Rendering delle modifiche tracciate
 linktitle: Rendering delle modifiche tracciate
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering delle modifiche tracciate nei documenti senza sforzo utilizzando GroupDocs.Viewer per .NET. Migliora l'efficienza della gestione dei documenti.
-type: docs
 weight: 10
 url: /it/net/rendering-word-processing-documents/render-tracked-changes/
 ---

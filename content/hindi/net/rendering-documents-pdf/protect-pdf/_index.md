@@ -3,7 +3,6 @@ title: प्रस्तुत पीडीएफ को पासवर्ड 
 linktitle: प्रस्तुत पीडीएफ को पासवर्ड से सुरक्षित रखें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए Groupdocs.Viewer का उपयोग करके आसानी से अपने रेंडर किए गए PDF को पासवर्ड से सुरक्षित रखें। अपने दस्तावेज़ सुरक्षित और गोपनीय रखें.
-type: docs
 weight: 12
 url: /hi/net/rendering-documents-pdf/protect-pdf/
 ---

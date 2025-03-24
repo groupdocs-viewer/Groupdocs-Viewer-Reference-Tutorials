@@ -3,7 +3,6 @@ title: Representar números
 linktitle: Representar números
 second_title: API GroupDocs.Viewer .NET
 description: Explore el poder de Groupdocs.Viewer para .NET para renderizar archivos de Numbers sin problemas. Convierta a HTML, JPG, PNG y PDF sin esfuerzo.
-type: docs
 weight: 15
 url: /es/net/spreadsheet-rendering-options/rendering-numbers/
 ---

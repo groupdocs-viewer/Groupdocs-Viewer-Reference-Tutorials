@@ -3,7 +3,6 @@ title: İşleme Seçenekleri
 linktitle: İşleme Seçenekleri
 second_title: GroupDocs.Viewer .NET API'si
 description: Filigran eklemekten yazı tiplerini özelleştirmeye kadar işleme seçeneklerine ilişkin eğitimlerle GroupDocs.Viewer for .NET'i uygulamalarınıza zahmetsizce entegre edin.
-type: docs
 weight: 23
 url: /tr/net/rendering-options/
 ---

@@ -3,7 +3,6 @@ title: Rufen Sie Ansichtsinformationen für Microsoft Project-Dokumente ab
 linktitle: Rufen Sie Ansichtsinformationen für Microsoft Project-Dokumente ab
 second_title: GroupDocs.Viewer .NET-API
 description: Entdecken Sie das umfassende Tutorial zur Nutzung von Groupdocs.Viewer für .NET zum mühelosen Abrufen von Ansichtsinformationen für Microsoft Project-Dokumente.
-type: docs
 weight: 10
 url: /de/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

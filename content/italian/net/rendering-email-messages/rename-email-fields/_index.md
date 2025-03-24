@@ -3,7 +3,6 @@ title: Rinominare i campi email durante il rendering
 linktitle: Rinominare i campi email durante il rendering
 second_title: API GroupDocs.Viewer .NET
 description: Migliora l'esperienza di visualizzazione dei documenti con GroupDocs.Viewer per .NET. Visualizza e personalizza le email senza problemi.
-type: docs
 weight: 12
 url: /it/net/rendering-email-messages/rename-email-fields/
 ---

@@ -3,7 +3,6 @@ title: Kết xuất thư mục lưu trữ
 linktitle: Kết xuất thư mục lưu trữ
 second_title: API GroupDocs.Viewer .NET
 description: Tích hợp GroupDocs.Viewer cho .NET một cách liền mạch vào các ứng dụng .NET của bạn để có khả năng hiển thị và xem tài liệu hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/rendering-archive-files/render-archive-folder/
 ---

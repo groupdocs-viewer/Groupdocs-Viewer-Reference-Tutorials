@@ -3,7 +3,6 @@ title: Documenten laden
 linktitle: Documenten laden
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek hoe u documenten efficiënt kunt laden en weergeven met GroupDocs.Viewer .NET. Ontdek lokale schijf-, stream- en FTP-laadtutorials voor verbeterde .NET-apps.
-type: docs
 weight: 20
 url: /nl/net/loading-documents/
 ---

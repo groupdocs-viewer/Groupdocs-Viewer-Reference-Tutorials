@@ -3,7 +3,6 @@ title: 加载文档时指定文件类型
 linktitle: 加载文档时指定文件类型
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何在使用 GroupDocs.Viewer for .NET 加载文档时指定文件类型。在 .NET 应用程序中准确呈现各种格式。
-type: docs
 weight: 10
 url: /zh/net/advanced-loading/specify-file-type/
 ---

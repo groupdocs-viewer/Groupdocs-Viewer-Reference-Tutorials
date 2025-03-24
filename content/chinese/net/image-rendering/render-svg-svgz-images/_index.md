@@ -3,7 +3,6 @@ title: 渲染 SVG 和 SVGZ 图像
 linktitle: 渲染 SVG 和 SVGZ 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 渲染 SVG 和 SVGZ 图像。轻松将矢量图形转换为 HTML、JPG、PNG 和 PDF。
-type: docs
 weight: 16
 url: /zh/net/image-rendering/render-svg-svgz-images/
 ---

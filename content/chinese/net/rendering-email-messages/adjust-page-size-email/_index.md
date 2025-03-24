@@ -3,7 +3,6 @@ title: 渲染电子邮件时调整页面大小
 linktitle: 渲染电子邮件时调整页面大小
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 将电子邮件呈现为 PDF 时调整页面大小。提高文档查看效率。
-type: docs
 weight: 10
 url: /zh/net/rendering-email-messages/adjust-page-size-email/
 ---

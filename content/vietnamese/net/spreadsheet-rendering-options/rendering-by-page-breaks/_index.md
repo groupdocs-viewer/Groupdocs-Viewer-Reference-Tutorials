@@ -3,7 +3,6 @@ title: Hiển thị theo ngắt trang
 linktitle: Hiển thị theo ngắt trang
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá sức mạnh của GroupDocs.Viewer dành cho .NET trong việc hiển thị tài liệu một cách chính xác. Hãy làm theo hướng dẫn từng bước của chúng tôi để hiển thị theo ngắt trang.
-type: docs
 weight: 14
 url: /vi/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

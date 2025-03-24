@@ -3,7 +3,6 @@ title: Render with Custom Fonts
 linktitle: Render with Custom Fonts
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render documents with custom fonts using GroupDocs.Viewer for .NET. Enhance visual presentations effortlessly.
-type: docs
 weight: 18
 url: /net/rendering-options/render-custom-fonts/
 ---

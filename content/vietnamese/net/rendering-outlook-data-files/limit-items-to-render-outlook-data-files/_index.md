@@ -3,7 +3,6 @@ title: Giới hạn số lượng mục cần hiển thị trong tệp dữ li�
 linktitle: Giới hạn số lượng mục cần hiển thị trong tệp dữ liệu Outlook
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách giới hạn số lượng mục được hiển thị trong tệp dữ liệu Outlook bằng Groupdocs.Viewer cho .NET. Hãy làm theo từng bước của chúng tôi để tích hợp liền mạch.
-type: docs
 weight: 12
 url: /vi/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

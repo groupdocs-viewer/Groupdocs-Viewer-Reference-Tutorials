@@ -3,7 +3,6 @@ title: Отменить рендеринг с помощью токена отм
 linktitle: Отменить рендеринг с помощью токена отмены
 second_title: GroupDocs.Viewer .NET API
 description: Легко интегрируйте Groupdocs.Viewer для .NET в свои проекты .NET для эффективного просмотра документов.
-type: docs
 weight: 11
 url: /ru/net/rendering-options/cancel-render-cancellation-token/
 ---

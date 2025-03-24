@@ -3,7 +3,6 @@ title: تمكين التخزين المؤقت لمعالجة المستندات 
 linktitle: تمكين التخزين المؤقت لمعالجة المستندات بشكل أسرع
 second_title: GroupDocs.Viewer .NET API
 description: يمكنك تحسين سرعة معالجة المستندات في تطبيقات .NET باستخدام GroupDocs.Viewer من خلال الاستفادة من التخزين المؤقت. تحسين الأداء دون عناء.
-type: docs
 weight: 10
 url: /ar/net/advanced-usage-caching/enable-caching/
 ---

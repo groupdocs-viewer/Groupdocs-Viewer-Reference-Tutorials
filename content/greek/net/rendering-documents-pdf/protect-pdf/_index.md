@@ -3,7 +3,6 @@ title: Προστατέψτε το Rendered PDF με κωδικό πρόσβασ
 linktitle: Προστατέψτε το Rendered PDF με κωδικό πρόσβασης
 second_title: GroupDocs.Viewer .NET API
 description: Προστατέψτε τα αποδοθέντα PDF σας με κωδικούς πρόσβασης εύκολα χρησιμοποιώντας το Groupdocs.Viewer για .NET. Διατηρήστε τα έγγραφά σας ασφαλή και εμπιστευτικά.
-type: docs
 weight: 12
 url: /el/net/rendering-documents-pdf/protect-pdf/
 ---

@@ -3,7 +3,6 @@ title: Απόδοση κρυφών στηλών και γραμμών
 linktitle: Απόδοση κρυφών στηλών και γραμμών
 second_title: GroupDocs.Viewer .NET API
 description: Ξεκλειδώστε τα κρυφά δεδομένα σε υπολογιστικά φύλλα χωρίς κόπο χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για να αποκαλύψετε κρυφές στήλες και σειρές.
-type: docs
 weight: 13
 url: /el/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

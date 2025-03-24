@@ -3,7 +3,6 @@ title: Outlook adatfájlok renderelése (PST, OST)
 linktitle: Outlook adatfájlok renderelése (PST, OST)
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel az Outlook Data Files (PST, OST) oktatóanyagainak megjelenítését a GroupDocs.Viewer for .NET segítségével. Fedezze fel a hatékony dokumentumkezelési technikákat könnyedén.
-type: docs
 weight: 39
 url: /hu/net/rendering-outlook-data-files/
 ---

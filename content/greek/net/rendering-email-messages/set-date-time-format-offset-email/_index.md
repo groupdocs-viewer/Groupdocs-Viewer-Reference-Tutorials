@@ -3,7 +3,6 @@ title: Ορισμός μορφής ημερομηνίας ώρας και μετ
 linktitle: Ορισμός μορφής ημερομηνίας ώρας και μετατόπισης ζώνης ώρας (email)
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε απρόσκοπτα το GroupDocs.Viewer για .NET στις εφαρμογές σας για ισχυρές δυνατότητες προβολής εγγράφων. Βελτιώστε την εμπειρία χρήστη με προσαρμόσιμες επιλογές.
-type: docs
 weight: 11
 url: /el/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

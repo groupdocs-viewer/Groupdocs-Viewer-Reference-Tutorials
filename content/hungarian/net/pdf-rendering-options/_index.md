@@ -3,7 +3,6 @@ title: PDF renderelési beállítások
 linktitle: PDF renderelési beállítások
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan optimalizálhatja a PDF-megtekintést a GroupDocs.Viewer .NET oktatóanyagaival. Fedezze fel a PDF-megjelenítési lehetőségeket, például a képminőség módosítását és a szövegkiválasztás letiltását.
-type: docs
 weight: 38
 url: /hu/net/pdf-rendering-options/
 ---

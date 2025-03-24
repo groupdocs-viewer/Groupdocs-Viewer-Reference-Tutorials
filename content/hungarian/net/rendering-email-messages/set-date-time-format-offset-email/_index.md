@@ -3,7 +3,6 @@ title: Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
 linktitle: Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
 second_title: GroupDocs.Viewer .NET API
 description: Integrálja a GroupDocs.Viewer for .NET-et zökkenőmentesen alkalmazásaiba a hatékony dokumentummegtekintési lehetőségek érdekében. Növelje a felhasználói élményt testreszabható opciókkal.
-type: docs
 weight: 11
 url: /hu/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

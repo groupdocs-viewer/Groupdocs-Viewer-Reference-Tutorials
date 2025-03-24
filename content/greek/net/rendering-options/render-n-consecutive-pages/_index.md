@@ -3,7 +3,6 @@ title: Απόδοση Ν διαδοχικών σελίδων
 linktitle: Απόδοση Ν διαδοχικών σελίδων
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να ενσωματώνετε το GroupDocs.Viewer για .NET στις εφαρμογές σας για να αποδίδετε εύκολα έγγραφα με Ν διαδοχικές σελίδες.
-type: docs
 weight: 16
 url: /el/net/rendering-options/render-n-consecutive-pages/
 ---

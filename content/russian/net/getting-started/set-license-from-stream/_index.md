@@ -3,7 +3,6 @@ title: Установить лицензию из потока
 linktitle: Установить лицензию из потока
 second_title: GroupDocs.Viewer .NET API
 description: Улучшите свои приложения .NET с помощью GroupDocs.Viewer для удобного просмотра документов. Следуйте нашему пошаговому руководству и легко интегрируйте мощные возможности просмотра документов.
-type: docs
 weight: 11
 url: /ru/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ url: /ru/net/getting-started/set-license-from-stream/
 1. Базовые знания разработки .NET. Для изучения этого руководства необходимо знание C# и .NET framework.
    
 2.  Пакет GroupDocs.Viewer для .NET. Убедитесь, что вы загрузили и установили пакет GroupDocs.Viewer для .NET. Вы можете получить его из[ссылка для скачивания](https://releases.groupdocs.com/viewer/net/).
-3.  Доступ к документации GroupDocs: сохраните[документация](https://reference.groupdocs.com/viewer/net/) удобно для справки в процессе интеграции.
+3.  Доступ к документации GroupDocs: сохраните[документация](https://tutorials.groupdocs.com/viewer/net/) удобно для справки в процессе интеграции.
 
 ## Импортировать пространства имен
 Для начала импортируйте необходимые пространства имен в ваше .NET-приложение. Следуй этим шагам:

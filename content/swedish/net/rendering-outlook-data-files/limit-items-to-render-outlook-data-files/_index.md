@@ -3,7 +3,6 @@ title: Begränsa antalet objekt att rendera i Outlook-datafiler
 linktitle: Begränsa antalet objekt att rendera i Outlook-datafiler
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du begränsar antalet objekt som återges i Outlook-datafiler med Groupdocs.Viewer för .NET. Följ våra steg-för-steg för sömlös integration.
-type: docs
 weight: 12
 url: /sv/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

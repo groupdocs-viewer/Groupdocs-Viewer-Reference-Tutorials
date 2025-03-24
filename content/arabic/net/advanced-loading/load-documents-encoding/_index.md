@@ -3,7 +3,6 @@ title: قم بتحميل المستندات بترميز محدد
 linktitle: قم بتحميل المستندات بترميز محدد
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين تطبيقات .NET الخاصة بك من خلال عرض المستندات بسلاسة باستخدام GroupDocs.Viewer لـ .NET. يمكنك بسهولة تحميل المستندات بتشفير محدد وتخصيص تجربة المشاهدة.
-type: docs
 weight: 11
 url: /ar/net/advanced-loading/load-documents-encoding/
 ---

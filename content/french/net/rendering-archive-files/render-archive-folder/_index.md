@@ -3,7 +3,6 @@ title: Dossier d'archive de rendu
 linktitle: Dossier d'archive de rendu
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez GroupDocs.Viewer pour .NET de manière transparente dans vos applications .NET pour des capacités efficaces de rendu et de visualisation de documents.
-type: docs
 weight: 11
 url: /fr/net/rendering-archive-files/render-archive-folder/
 ---

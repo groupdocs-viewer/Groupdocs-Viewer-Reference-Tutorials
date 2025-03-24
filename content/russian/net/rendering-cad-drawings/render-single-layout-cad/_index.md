@@ -3,7 +3,6 @@ title: Визуализация одного макета в чертежах С
 linktitle: Визуализация одного макета в чертежах САПР
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как визуализировать один макет в чертежах САПР с помощью GroupDocs.Viewer для .NET. Простые шаги для плавной интеграции в ваши .NET-приложения.
-type: docs
 weight: 14
 url: /ru/net/rendering-cad-drawings/render-single-layout-cad/
 ---

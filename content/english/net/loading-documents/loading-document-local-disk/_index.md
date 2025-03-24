@@ -3,7 +3,6 @@ title: Load Documents from Local Disk
 linktitle: Load Documents from Local Disk
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to seamlessly render documents from your local disk using Groupdocs.Viewer for .NET. Enhance your .NET applications with efficient document.
-type: docs
 weight: 10
 url: /net/loading-documents/loading-document-local-disk/
 ---

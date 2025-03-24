@@ -3,7 +3,6 @@ title: Muat Dokumen yang Dilindungi Kata Sandi
 linktitle: Muat Dokumen yang Dilindungi Kata Sandi
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan tampilan dokumen yang dilindungi kata sandi dengan mudah ke dalam aplikasi .NET menggunakan GroupDocs.Viewer untuk .NET. Ikuti tutorial langkah demi langkah kami agar lancar.
-type: docs
 weight: 12
 url: /id/net/advanced-loading/load-password-protected-document/
 ---

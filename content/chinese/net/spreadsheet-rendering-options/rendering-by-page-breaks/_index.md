@@ -3,7 +3,6 @@ title: 按分页符渲染
 linktitle: 按分页符渲染
 second_title: GroupDocs.Viewer .NET API
 description: 探索 GroupDocs.Viewer for .NET 在精确呈现文档方面的强大功能。请按照我们的分页符渲染分步教程进行操作。
-type: docs
 weight: 14
 url: /zh/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

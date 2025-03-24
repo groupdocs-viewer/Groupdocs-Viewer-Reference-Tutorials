@@ -3,7 +3,6 @@ title: Chỉ định tên tệp khi hiển thị tệp lưu trữ
 linktitle: Chỉ định tên tệp khi hiển thị tệp lưu trữ
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị các tệp lưu trữ trong .NET bằng GroupDocs.Viewer, nâng cao khả năng quản lý tài liệu.
-type: docs
 weight: 14
 url: /vi/net/rendering-archive-files/specify-filename-render-archive/
 ---

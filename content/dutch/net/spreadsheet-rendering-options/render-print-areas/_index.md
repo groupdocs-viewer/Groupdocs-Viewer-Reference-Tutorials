@@ -3,7 +3,6 @@ title: Geef afdrukgebieden weer met GroupDocs.Viewer voor .NET
 linktitle: Render afdrukgebieden
 second_title: GroupDocs.Viewer .NET-API
 description: Verken GroupDocs.Viewer voor .NET en render moeiteloos afdrukgebieden in verschillende documentformaten. Probeer nu de gratis proefperiode! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /nl/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Gefeliciteerd! U hebt met succes geleerd hoe u GroupDocs.Viewer voor .NET kunt gebruiken om afdrukgebieden in uw documenten weer te geven. Deze krachtige tool opent nieuwe mogelijkheden voor documentweergave in uw .NET-toepassingen.
 ## Veelgestelde vragen
 ### Is GroupDocs.Viewer compatibel met verschillende documentformaten?
- Ja, GroupDocs.Viewer ondersteunt een breed scala aan documentformaten, waaronder PDF, DOCX, XLSX en meer. Verwijs naar de[documentatie](https://reference.groupdocs.com/viewer/net/) voor een volledige lijst.
+ Ja, GroupDocs.Viewer ondersteunt een breed scala aan documentformaten, waaronder PDF, DOCX, XLSX en meer. Verwijs naar de[documentatie](https://tutorials.groupdocs.com/viewer/net/) voor een volledige lijst.
 ### Kan ik GroupDocs.Viewer uitproberen voordat ik een aankoop doe?
  Absoluut! U kunt de tool verkennen met een gratis proefversie[hier](https://releases.groupdocs.com/).
 ### Waar kan ik ondersteuning vinden of hulp zoeken bij eventuele problemen?

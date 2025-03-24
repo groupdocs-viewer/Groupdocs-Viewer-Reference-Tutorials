@@ -3,7 +3,6 @@ title: Définir la licence à partir du fichier
 linktitle: Définir la licence à partir du fichier
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment intégrer GroupDocs.Viewer pour .NET dans vos applications sans effort. Définissez la licence, affichez les documents et personnalisez l'apparence de la visionneuse.
-type: docs
 weight: 10
 url: /fr/net/getting-started/set-license-from-file/
 ---

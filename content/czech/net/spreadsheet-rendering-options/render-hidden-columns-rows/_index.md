@@ -3,7 +3,6 @@ title: Vykreslení skrytých sloupců a řádků
 linktitle: Vykreslení skrytých sloupců a řádků
 second_title: GroupDocs.Viewer .NET API
 description: Odemkněte skrytá data v tabulkách bez námahy pomocí GroupDocs.Viewer pro .NET. Postupujte podle našeho podrobného průvodce a odhalte skryté sloupce a řádky.
-type: docs
 weight: 13
 url: /cs/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

@@ -3,7 +3,6 @@ title: Sostituisci carattere mancante
 linktitle: Sostituisci carattere mancante
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come sostituire facilmente i caratteri mancanti nei documenti .NET utilizzando GroupDocs.Viewer. Garantisci un rendering accurato con semplici passaggi.
-type: docs
 weight: 20
 url: /it/net/rendering-options/replace-missing-font/
 ---

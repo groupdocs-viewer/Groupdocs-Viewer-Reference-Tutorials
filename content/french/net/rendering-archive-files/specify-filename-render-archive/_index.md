@@ -3,7 +3,6 @@ title: Spécifier le nom de fichier lors du rendu des fichiers d'archive
 linktitle: Spécifier le nom de fichier lors du rendu des fichiers d'archive
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des fichiers d'archives dans .NET à l'aide de GroupDocs.Viewer, améliorant ainsi les capacités de gestion de documents.
-type: docs
 weight: 14
 url: /fr/net/rendering-archive-files/specify-filename-render-archive/
 ---

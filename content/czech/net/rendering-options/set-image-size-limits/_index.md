@@ -3,7 +3,6 @@ title: Nastavte limity velikosti obrázku
 linktitle: Nastavte limity velikosti obrázku
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak nastavit limity velikosti obrázků v aplikacích .NET bez námahy pomocí GroupDocs.Viewer pro .NET, což vylepší zážitky při prohlížení dokumentů.
-type: docs
 weight: 21
 url: /cs/net/rendering-options/set-image-size-limits/
 ---

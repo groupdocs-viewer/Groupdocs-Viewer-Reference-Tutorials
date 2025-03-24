@@ -3,7 +3,6 @@ title: Hiển thị tài liệu Visio
 linktitle: Hiển thị tài liệu Visio
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá hướng dẫn về cách hiển thị tài liệu Visio bằng GroupDocs.Viewer cho .NET. Tìm hiểu cách nâng cao khả năng xem tài liệu trong các ứng dụng .NET của bạn một cách dễ dàng.
-type: docs
 weight: 34
 url: /vi/net/rendering-visio-documents/
 ---

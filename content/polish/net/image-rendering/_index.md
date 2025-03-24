@@ -3,7 +3,6 @@ title: Renderowanie obrazu
 linktitle: Renderowanie obrazu
 second_title: GroupDocs.Viewer API .NET
 description: Odkryj kompleksowe samouczki dotyczące renderowania różnych formatów obrazów przy użyciu GroupDocs.Viewer dla .NET. Od AI po WMF — poznaj przykłady bezproblemowej integracji i kodowania.
-type: docs
 weight: 28
 url: /pl/net/image-rendering/
 ---

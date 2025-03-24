@@ -3,7 +3,6 @@ title: Återge anteckningar och justera tidsenheter (MS Project)
 linktitle: Återge anteckningar och justera tidsenheter (MS Project)
 second_title: GroupDocs.Viewer .NET API
 description: Masterrendering av MS Project-dokument med GroupDocs.Viewer för .NET. Gör anteckningar, justera tidsenheter och utforska olika utdataformat utan ansträngning.
-type: docs
 weight: 11
 url: /sv/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ Ja, GroupDocs.Viewer för .NET stöder rendering till olika format som DOCX, XLS
 ### Hur kan jag få tillfällig licens för GroupDocs.Viewer för .NET?
  Besök[den här länken](https://purchase.groupdocs.com/temporary-license/) för att få en tillfällig licens.
 ### Var kan jag hitta dokumentation för GroupDocs.Viewer för .NET?
- Se dokumentationen[här](https://reference.groupdocs.com/viewer/net/).
+ Se dokumentationen[här](https://tutorials.groupdocs.com/viewer/net/).
 ### Var kan jag söka support eller ställa frågor relaterade till GroupDocs.Viewer för .NET?
  Du kan besöka supportforumet[här](https://forum.groupdocs.com/c/viewer/9).

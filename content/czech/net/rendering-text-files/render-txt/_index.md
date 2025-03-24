@@ -3,7 +3,6 @@ title: Vykreslit textové soubory (.txt)
 linktitle: Vykreslit textové soubory (.txt)
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte bezproblémový převod textových souborů do různých formátů pomocí GroupDocs.Viewer pro .NET. Vylepšete své možnosti správy dokumentů bez námahy.
-type: docs
 weight: 10
 url: /cs/net/rendering-text-files/render-txt/
 ---

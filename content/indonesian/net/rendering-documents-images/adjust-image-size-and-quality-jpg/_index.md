@@ -3,7 +3,6 @@ title: Sesuaikan Ukuran dan Kualitas Gambar (JPG)
 linktitle: Sesuaikan Ukuran dan Kualitas Gambar (JPG)
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengoptimalkan ukuran dan kualitas gambar dalam format JPEG menggunakan Groupdocs.Viewer untuk .NET. Tingkatkan pengalaman melihat dokumen Anda.
-type: docs
 weight: 11
 url: /id/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---

@@ -3,7 +3,6 @@ title: Verborgene Spalten und Zeilen rendern
 linktitle: Verborgene Spalten und Zeilen rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Entsperren Sie versteckte Daten in Tabellenkalkulationen mühelos mit GroupDocs.Viewer für .NET. Befolgen Sie unsere Schritt-für-Schritt-Anleitung, um verborgene Spalten und Zeilen freizulegen.
-type: docs
 weight: 13
 url: /de/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

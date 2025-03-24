@@ -3,7 +3,6 @@ title: Szövegkijelölés letiltása PDF-ben
 linktitle: Szövegkijelölés letiltása PDF-ben
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan tilthatja le a szövegkijelölést PDF-ben a GroupDocs.Viewer for .NET segítségével. Kövesse lépésenkénti útmutatónkat a zökkenőmentes integráció érdekében.
-type: docs
 weight: 13
 url: /hu/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

@@ -3,7 +3,6 @@ title: Render N Halaman Berturut-turut
 linktitle: Render N Halaman Berturut-turut
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengintegrasikan GroupDocs.Viewer untuk .NET ke dalam aplikasi Anda untuk merender dokumen dengan N halaman berturut-turut dengan mudah.
-type: docs
 weight: 16
 url: /id/net/rendering-options/render-n-consecutive-pages/
 ---

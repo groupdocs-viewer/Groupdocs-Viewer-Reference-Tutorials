@@ -3,7 +3,6 @@ title: حدد نوع الملف عند تحميل المستندات
 linktitle: حدد نوع الملف عند تحميل المستندات
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تحديد نوع الملف عند تحميل المستندات باستخدام GroupDocs.Viewer لـ .NET. عرض التنسيقات المختلفة بدقة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 10
 url: /ar/net/advanced-loading/specify-file-type/
 ---

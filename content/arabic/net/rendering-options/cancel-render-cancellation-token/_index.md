@@ -3,7 +3,6 @@ title: قم بإلغاء العرض باستخدام رمز الإلغاء
 linktitle: قم بإلغاء العرض باستخدام رمز الإلغاء
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج Groupdocs.Viewer لـ .NET بسلاسة في مشاريع .NET الخاصة بك لعرض المستندات بكفاءة.
-type: docs
 weight: 11
 url: /ar/net/rendering-options/cancel-render-cancellation-token/
 ---

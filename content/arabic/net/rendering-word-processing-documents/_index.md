@@ -3,7 +3,6 @@ title: تقديم مستندات معالجة النصوص
 linktitle: تقديم مستندات معالجة النصوص
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض التغييرات المتعقبة بكفاءة في مستندات معالجة Word باستخدام GroupDocs.Viewer لـ .NET. ارفع مهاراتك في إدارة المستندات.
-type: docs
 weight: 36
 url: /ar/net/rendering-word-processing-documents/
 ---

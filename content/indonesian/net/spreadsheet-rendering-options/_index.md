@@ -3,7 +3,6 @@ title: Opsi Rendering Spreadsheet
 linktitle: Opsi Rendering Spreadsheet
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan visualisasi dokumen dengan mudah di .NET dengan tutorial GroupDocs.Viewer. Pelajari cara menyesuaikan luapan teks, merender garis kisi, dan banyak lagi.
-type: docs
 weight: 37
 url: /id/net/spreadsheet-rendering-options/
 ---

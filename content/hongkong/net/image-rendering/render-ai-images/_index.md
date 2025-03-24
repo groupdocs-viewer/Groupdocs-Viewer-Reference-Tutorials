@@ -3,7 +3,6 @@ title: 渲染 AI 影像
 linktitle: 渲染 AI 影像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 .NET 應用程式中輕鬆渲染 AI 影像。請按照我們的逐步教學進行無縫整合。
-type: docs
 weight: 10
 url: /zh-hant/net/image-rendering/render-ai-images/
 ---

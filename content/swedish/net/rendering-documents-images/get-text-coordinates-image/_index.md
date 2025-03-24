@@ -3,7 +3,6 @@ title: Få textkoordinater för bildrendering
 linktitle: Få textkoordinater för bildrendering
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du extraherar textkoordinater för bildrendering med GroupDocs.Viewer för .NET. Förbättra dina dokumentbehandlingsmöjligheter utan ansträngning.
-type: docs
 weight: 12
 url: /sv/net/rendering-documents-images/get-text-coordinates-image/
 ---

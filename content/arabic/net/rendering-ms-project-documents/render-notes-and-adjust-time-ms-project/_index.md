@@ -3,7 +3,6 @@ title: تقديم الملاحظات وضبط وحدات الوقت (MS Project)
 linktitle: تقديم الملاحظات وضبط وحدات الوقت (MS Project)
 second_title: GroupDocs.Viewer .NET API
 description: إتقان عرض مستندات MS Project باستخدام GroupDocs.Viewer لـ .NET. قم بتدوين الملاحظات وضبط وحدات الوقت واستكشاف تنسيقات الإخراج المختلفة دون عناء.
-type: docs
 weight: 11
 url: /ar/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ viewer.View(options);
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Viewer لـ .NET؟
  يزور[هذا الرابط](https://purchase.groupdocs.com/temporary-license/) للحصول على ترخيص مؤقت.
 ### أين يمكنني العثور على وثائق GroupDocs.Viewer لـ .NET؟
- الرجوع إلى الوثائق[هنا](https://reference.groupdocs.com/viewer/net/).
+ الرجوع إلى الوثائق[هنا](https://tutorials.groupdocs.com/viewer/net/).
 ### أين يمكنني طلب الدعم أو طرح الأسئلة المتعلقة بـ GroupDocs.Viewer لـ .NET؟
  يمكنك زيارة منتدى الدعم[هنا](https://forum.groupdocs.com/c/viewer/9).

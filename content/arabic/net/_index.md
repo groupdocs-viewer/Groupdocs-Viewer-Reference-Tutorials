@@ -1,7 +1,6 @@
 ---
 title: برامج تعليمية شاملة وأمثلة لـ GroupDocs.Viewer لـ .NET
 linktitle: GroupDocs.Viewer لبرامج .NET التعليمية
-type: docs
 weight: 10
 url: /ar/net/
 description: اكتشف البرامج التعليمية والأمثلة الشاملة لدمج GroupDocs.Viewer .NET في تطبيقاتك. تعلم تقنيات خطوة بخطوة لتحسين إدارة المستندات.

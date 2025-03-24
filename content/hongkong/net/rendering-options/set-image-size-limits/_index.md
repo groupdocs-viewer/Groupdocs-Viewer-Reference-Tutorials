@@ -3,7 +3,6 @@ title: 設定圖像大小限制
 linktitle: 設定圖像大小限制
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 .NET 應用程式中輕鬆設定圖片大小限制，從而增強文件檢視體驗。
-type: docs
 weight: 21
 url: /zh-hant/net/rendering-options/set-image-size-limits/
 ---

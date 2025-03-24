@@ -3,7 +3,6 @@ title: تحميل المستندات من الدفق
 linktitle: تحميل المستندات من الدفق
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تحميل المستندات من التدفقات بسلاسة باستخدام GroupDocs.Viewer لـ .NET. قم بتحسين تطبيقات .NET الخاصة بك من خلال إمكانيات عرض المستندات القوية.
-type: docs
 weight: 12
 url: /ar/net/loading-documents/loading-document-stream/
 ---

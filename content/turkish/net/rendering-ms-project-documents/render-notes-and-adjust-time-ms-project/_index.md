@@ -3,7 +3,6 @@ title: Notları Oluşturma ve Zaman Birimlerini Ayarlama (MS Project)
 linktitle: Notları Oluşturma ve Zaman Birimlerini Ayarlama (MS Project)
 second_title: GroupDocs.Viewer .NET API'si
 description: .NET için GroupDocs.Viewer ile MS Project belgelerinin ana işlenmesi. Notları işleyin, zaman birimlerini ayarlayın ve çeşitli çıktı formatlarını zahmetsizce keşfedin.
-type: docs
 weight: 11
 url: /tr/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ Evet, GroupDocs.Viewer for .NET, DOCX, XLSX, PPTX ve daha fazlası gibi çeşitl
 ### GroupDocs.Viewer for .NET için nasıl geçici lisans alabilirim?
  Ziyaret etmek[bu bağlantı](https://purchase.groupdocs.com/temporary-license/) geçici lisans almak için.
 ### GroupDocs.Viewer for .NET belgelerini nerede bulabilirim?
- Belgelere bakın[Burada](https://reference.groupdocs.com/viewer/net/).
+ Belgelere bakın[Burada](https://tutorials.groupdocs.com/viewer/net/).
 ### GroupDocs.Viewer for .NET ile ilgili desteği nereden alabilirim veya soru sorabilirim?
  Destek forumunu ziyaret edebilirsiniz[Burada](https://forum.groupdocs.com/c/viewer/9).

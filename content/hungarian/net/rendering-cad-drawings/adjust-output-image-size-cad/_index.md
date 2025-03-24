@@ -3,7 +3,6 @@ title: Állítsa be a kimeneti kép méretét a CAD-rajzokhoz
 linktitle: Állítsa be a kimeneti kép méretét a CAD-rajzokhoz
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan állíthatja be a kimeneti képméretet CAD-rajzokhoz a GroupDocs.Viewer for .NET segítségével. Fokozatmentesen javítja a láthatóságot és a használhatóságot.
-type: docs
 weight: 15
 url: /hu/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

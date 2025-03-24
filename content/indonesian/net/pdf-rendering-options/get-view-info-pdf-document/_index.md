@@ -3,7 +3,6 @@ title: Dapatkan Lihat Info untuk Dokumen PDF
 linktitle: Dapatkan Lihat Info untuk Dokumen PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengekstrak informasi tampilan dari dokumen PDF menggunakan GroupDocs.Viewer untuk .NET dalam tutorial komprehensif ini.
-type: docs
 weight: 16
 url: /id/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

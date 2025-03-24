@@ -3,7 +3,6 @@ title: Απόδοση εικόνων CDR
 linktitle: Απόδοση εικόνων CDR
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε εικόνες CDR σε HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Μετατρέψτε εύκολα αρχεία CorelDRAW με αυτό το σεμινάριο.
-type: docs
 weight: 12
 url: /el/net/image-rendering/render-cdr-images/
 ---

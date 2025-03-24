@@ -3,7 +3,6 @@ title: احصل على معلومات العرض لرسومات CAD
 linktitle: احصل على معلومات العرض لرسومات CAD
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية استرداد معلومات العرض لرسومات CAD باستخدام GroupDocs.Viewer لـ .NET. قم بتحسين تطبيقات .NET الخاصة بك من خلال التعامل السلس مع ملفات CAD.
-type: docs
 weight: 10
 url: /ar/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

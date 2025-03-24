@@ -3,7 +3,6 @@ title: Απόδοση με προσαρμοσμένες γραμματοσειρ
 linktitle: Απόδοση με προσαρμοσμένες γραμματοσειρές
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε έγγραφα με προσαρμοσμένες γραμματοσειρές χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε τις οπτικές παρουσιάσεις χωρίς κόπο.
-type: docs
 weight: 18
 url: /el/net/rendering-options/render-custom-fonts/
 ---

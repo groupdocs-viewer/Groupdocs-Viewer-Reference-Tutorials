@@ -3,7 +3,6 @@ title: تقديم كافة التخطيطات في رسومات CAD
 linktitle: تقديم كافة التخطيطات في رسومات CAD
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض جميع التخطيطات في رسومات CAD باستخدام GroupDocs.Viewer لـ .NET. اتبع برنامجنا التعليمي الشامل لتحقيق التكامل السلس.
-type: docs
 weight: 11
 url: /ar/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

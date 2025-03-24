@@ -3,7 +3,6 @@ title: ट्रैक किए गए परिवर्तन प्रस्
 linktitle: ट्रैक किए गए परिवर्तन प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ों में ट्रैक किए गए परिवर्तनों को आसानी से कैसे प्रस्तुत किया जाए। अपनी दस्तावेज़ प्रबंधन दक्षता बढ़ाएँ।
-type: docs
 weight: 10
 url: /hi/net/rendering-word-processing-documents/render-tracked-changes/
 ---

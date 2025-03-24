@@ -3,7 +3,6 @@ title: 渲染 Outlook 数据文件（PST、OST）
 linktitle: 渲染 Outlook 数据文件（PST、OST）
 second_title: GroupDocs.Viewer .NET API
 description: 探索使用 GroupDocs.Viewer for .NET 渲染 Outlook 数据文件（PST、OST）教程。轻松发现高效的文档管理技术。
-type: docs
 weight: 39
 url: /zh/net/rendering-outlook-data-files/
 ---

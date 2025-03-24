@@ -3,7 +3,6 @@ title: Render Archives to Single or Multiple HTML Pages
 linktitle: Render Archives to Single or Multiple HTML Pages
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render archives to HTML pages using GroupDocs.Viewer for .NET. Effortlessly integrate document viewing capabilities into your .NET applications.
-type: docs
 weight: 12
 url: /net/rendering-archive-files/render-archives-html/
 ---

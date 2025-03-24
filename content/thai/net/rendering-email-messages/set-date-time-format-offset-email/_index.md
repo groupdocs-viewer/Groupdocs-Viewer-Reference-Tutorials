@@ -3,7 +3,6 @@ title: ตั้งค่ารูปแบบ DateTime และออฟเซ
 linktitle: ตั้งค่ารูปแบบ DateTime และออฟเซ็ตโซนเวลา (อีเมล)
 second_title: GroupDocs.Viewer .NET API
 description: ผสานรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชันของคุณได้อย่างราบรื่นเพื่อความสามารถในการดูเอกสารอันทรงพลัง ปรับปรุงประสบการณ์ผู้ใช้ด้วยตัวเลือกที่ปรับแต่งได้
-type: docs
 weight: 11
 url: /th/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

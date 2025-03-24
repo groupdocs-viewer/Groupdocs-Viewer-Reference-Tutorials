@@ -3,7 +3,6 @@ title: FODG ve ODG Görüntülerini Oluşturun
 linktitle: FODG ve ODG Görüntülerini Oluşturun
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak FODG ve ODG görüntülerini HTML, JPG, PNG ve PDF'ye nasıl dönüştüreceğinizi öğrenin. Belge işlemenizi geliştirin.
-type: docs
 weight: 15
 url: /tr/net/image-rendering/render-fodg-odg-images/
 ---

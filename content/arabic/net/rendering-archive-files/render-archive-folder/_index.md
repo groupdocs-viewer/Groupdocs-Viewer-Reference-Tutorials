@@ -3,7 +3,6 @@ title: تقديم مجلد الأرشيف
 linktitle: تقديم مجلد الأرشيف
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج GroupDocs.Viewer لـ .NET بسلاسة في تطبيقات .NET الخاصة بك للحصول على إمكانات عرض المستندات وعرضها بكفاءة.
-type: docs
 weight: 11
 url: /ar/net/rendering-archive-files/render-archive-folder/
 ---

@@ -3,7 +3,6 @@ title: Rendering di archivi RAR
 linktitle: Rendering di archivi RAR
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering degli archivi RAR nei formati HTML, JPG, PNG o PDF utilizzando GroupDocs.Viewer per .NET. Visualizza e condividi facilmente i contenuti degli archivi RAR.
-type: docs
 weight: 13
 url: /it/net/rendering-archive-files/render-rar/
 ---

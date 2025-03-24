@@ -3,7 +3,6 @@ title: عرض مناطق الطباعة باستخدام GroupDocs.Viewer لـ .
 linktitle: تقديم مناطق الطباعة
 second_title: GroupDocs.Viewer .NET API
 description: استكشف GroupDocs.Viewer لـ .NET واعرض مناطق الطباعة بتنسيقات مختلفة للمستندات دون عناء. جرب النسخة التجريبية المجانية الآن! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /ar/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 تهانينا! لقد تعلمت بنجاح كيفية استخدام GroupDocs.Viewer لـ .NET لعرض مناطق الطباعة في مستنداتك. تفتح هذه الأداة القوية إمكانيات جديدة لعرض المستندات في تطبيقات .NET الخاصة بك.
 ## الأسئلة الشائعة
 ### هل GroupDocs.Viewer متوافق مع تنسيقات المستندات المختلفة؟
- نعم، يدعم GroupDocs.Viewer مجموعة واسعة من تنسيقات المستندات، بما في ذلك PDF وDOCX وXLSX والمزيد. الرجوع إلى[توثيق](https://reference.groupdocs.com/viewer/net/) للحصول على قائمة كاملة.
+ نعم، يدعم GroupDocs.Viewer مجموعة واسعة من تنسيقات المستندات، بما في ذلك PDF وDOCX وXLSX والمزيد. الرجوع إلى[توثيق](https://tutorials.groupdocs.com/viewer/net/) للحصول على قائمة كاملة.
 ### هل يمكنني تجربة GroupDocs.Viewer قبل إجراء عملية الشراء؟
  قطعاً! يمكنك استكشاف الأداة من خلال الإصدار التجريبي المجاني المتاح[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على الدعم أو طلب المساعدة في أي مشكلة؟

@@ -3,7 +3,6 @@ title: Obtenha nomes de planilhas
 linktitle: Obtenha nomes de planilhas
 second_title: API GroupDocs.Viewer .NET
 description: Explore a magia do GroupDocs.Viewer for .NET – integre perfeitamente a visualização de documentos aos seus aplicativos. Experimente o teste gratuito agora!
-type: docs
 weight: 11
 url: /pt/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ Absolutamente! GroupDocs.Viewer oferece suporte a uma ampla variedade de formato
 ### Posso obter uma licença temporária?
  Certamente! Visita[esse link](https://purchase.groupdocs.com/temporary-license/) para obter sua licença temporária.
 ### Existem recursos de documentação detalhada disponíveis?
- Absolutamente! Confira a[documentação oficial](https://reference.groupdocs.com/viewer/net/) para obter informações e guias detalhados.
+ Absolutamente! Confira a[documentação oficial](https://tutorials.groupdocs.com/viewer/net/) para obter informações e guias detalhados.

@@ -3,7 +3,6 @@ title: تمكين تلميح الخط في PDF
 linktitle: تمكين تلميح الخط في PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تمكين تلميحات الخطوط في مستندات PDF باستخدام GroupDocs.Viewer لـ .NET. اتبع البرنامج التعليمي خطوة بخطوة لتحقيق التكامل السلس.
-type: docs
 weight: 14
 url: /ar/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

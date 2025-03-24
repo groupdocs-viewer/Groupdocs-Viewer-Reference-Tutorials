@@ -3,7 +3,6 @@ title: Vykreslování specifických CAD formátů (CF2)
 linktitle: Vykreslování specifických CAD formátů (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat konkrétní formáty CAD, jako je CF2, do HTML, JPG, PNG a PDF pomocí Groupdocs.Viewer pro .NET.
-type: docs
 weight: 12
 url: /cs/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

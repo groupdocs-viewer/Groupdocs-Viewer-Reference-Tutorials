@@ -3,7 +3,6 @@ title: Habilitar sugerencias de fuentes en PDF
 linktitle: Habilitar sugerencias de fuentes en PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda cómo habilitar sugerencias de fuentes en documentos PDF usando GroupDocs.Viewer para .NET. Siga nuestro tutorial paso a paso para una integración perfecta.
-type: docs
 weight: 14
 url: /es/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

@@ -3,7 +3,6 @@ title: Φόρτωση εγγράφων από τη ροή
 linktitle: Φόρτωση εγγράφων από τη ροή
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να φορτώνετε απρόσκοπτα έγγραφα από ροές χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε τις εφαρμογές σας .NET με ισχυρές δυνατότητες προβολής εγγράφων.
-type: docs
 weight: 12
 url: /el/net/loading-documents/loading-document-stream/
 ---

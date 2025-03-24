@@ -3,7 +3,6 @@ title: सीएडी चित्रों में सभी लेआउट
 linktitle: सीएडी चित्रों में सभी लेआउट प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके CAD ड्राइंग में सभी लेआउट को प्रस्तुत करना सीखें। निर्बाध एकीकरण के लिए हमारे व्यापक ट्यूटोरियल का अनुसरण करें।
-type: docs
 weight: 11
 url: /hi/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

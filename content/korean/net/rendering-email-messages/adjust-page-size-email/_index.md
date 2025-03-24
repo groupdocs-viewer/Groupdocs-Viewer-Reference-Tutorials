@@ -3,7 +3,6 @@ title: 이메일 메시지를 렌더링할 때 페이지 크기 조정
 linktitle: 이메일 메시지를 렌더링할 때 페이지 크기 조정
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 전자 메일 메시지를 PDF로 렌더링할 때 페이지 크기를 조정하는 방법을 알아보세요. 문서 보기 효율성을 향상시킵니다.
-type: docs
 weight: 10
 url: /ko/net/rendering-email-messages/adjust-page-size-email/
 ---

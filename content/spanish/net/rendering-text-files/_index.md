@@ -3,7 +3,6 @@ title: Representar archivos de texto
 linktitle: Representar archivos de texto
 second_title: API GroupDocs.Viewer .NET
 description: Descubra el potencial de GroupDocs.Viewer para .NET con tutoriales sobre cómo representar archivos de texto. Convierta archivos .txt a varios formatos para mejorar la gestión de documentos.
-type: docs
 weight: 33
 url: /es/net/rendering-text-files/
 ---

@@ -3,7 +3,6 @@ title: CAD Çizimlerindeki Tüm Düzenleri Oluşturun
 linktitle: CAD Çizimlerindeki Tüm Düzenleri Oluşturun
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak CAD çizimlerindeki tüm düzenleri nasıl oluşturacağınızı öğrenin. Sorunsuz entegrasyon için kapsamlı eğitimimizi takip edin.
-type: docs
 weight: 11
 url: /tr/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

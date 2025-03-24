@@ -3,7 +3,6 @@ title: PDF에서 텍스트 선택 비활성화
 linktitle: PDF에서 텍스트 선택 비활성화
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 PDF에서 텍스트 선택을 비활성화하는 방법을 알아보세요. 원활한 통합을 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 13
 url: /ko/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

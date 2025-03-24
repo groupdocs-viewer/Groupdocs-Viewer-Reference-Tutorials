@@ -3,7 +3,6 @@ title: Arşiv Dosyalarını Oluşturma
 linktitle: Arşiv Dosyalarını Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak arşiv dosyalarını oluşturmaya yönelik kapsamlı eğitimleri keşfedin. .NET uygulamalarınızla sorunsuz ve verimli bir şekilde bütünleştirin.
-type: docs
 weight: 24
 url: /tr/net/rendering-archive-files/
 ---

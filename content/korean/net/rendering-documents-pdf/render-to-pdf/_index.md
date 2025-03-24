@@ -3,7 +3,6 @@ title: 문서를 PDF로 렌더링
 linktitle: 문서를 PDF로 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서를 PDF로 렌더링하는 방법을 알아보세요. 전제 조건과 FAQ가 포함된 단계별 가이드입니다.
-type: docs
 weight: 10
 url: /ko/net/rendering-documents-pdf/render-to-pdf/
 ---

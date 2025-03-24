@@ -3,7 +3,6 @@ title: Hiển thị các trang ẩn
 linktitle: Hiển thị các trang ẩn
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao ứng dụng .NET của bạn với GroupDocs.Viewer để hiển thị tài liệu liền mạch. Hãy làm theo hướng dẫn từng bước của chúng tôi để hiển thị các trang ẩn một cách dễ dàng.
-type: docs
 weight: 15
 url: /vi/net/rendering-options/render-hidden-pages/
 ---

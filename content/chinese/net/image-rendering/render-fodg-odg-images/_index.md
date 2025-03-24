@@ -3,7 +3,6 @@ title: 渲染 FODG 和 ODG 图像
 linktitle: 渲染 FODG 和 ODG 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 将 FODG 和 ODG 图像渲染为 HTML、JPG、PNG 和 PDF。增强您的文档处理能力。
-type: docs
 weight: 15
 url: /zh/net/image-rendering/render-fodg-odg-images/
 ---

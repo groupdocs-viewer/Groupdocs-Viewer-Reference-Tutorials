@@ -3,7 +3,6 @@ title: Ενεργοποίηση προσωρινής αποθήκευσης γι
 linktitle: Ενεργοποίηση προσωρινής αποθήκευσης για ταχύτερη επεξεργασία εγγράφων
 second_title: GroupDocs.Viewer .NET API
 description: Βελτιώστε την ταχύτητα επεξεργασίας εγγράφων σε εφαρμογές .NET με το GroupDocs.Viewer αξιοποιώντας την προσωρινή αποθήκευση. Βελτιστοποιήστε την απόδοση χωρίς κόπο.
-type: docs
 weight: 10
 url: /el/net/advanced-usage-caching/enable-caching/
 ---

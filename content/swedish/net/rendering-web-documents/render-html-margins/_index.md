@@ -3,7 +3,6 @@ title: Återge HTML med användardefinierade marginaler
 linktitle: Återge HTML med användardefinierade marginaler
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar HTML med anpassade marginaler i .NET med GroupDocs.Viewer. Förbättra dokumentpresentationen utan ansträngning.
-type: docs
 weight: 11
 url: /sv/net/rendering-web-documents/render-html-margins/
 ---

@@ -3,7 +3,6 @@ title: Representar N páginas consecutivas
 linktitle: Representar N páginas consecutivas
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda cómo integrar GroupDocs.Viewer para .NET en sus aplicaciones para representar sin esfuerzo documentos con N páginas consecutivas.
-type: docs
 weight: 16
 url: /es/net/rendering-options/render-n-consecutive-pages/
 ---

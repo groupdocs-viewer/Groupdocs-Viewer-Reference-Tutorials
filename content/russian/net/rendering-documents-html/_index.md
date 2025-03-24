@@ -3,7 +3,6 @@ title: Рендеринг документов в HTML
 linktitle: Рендеринг документов в HTML
 second_title: GroupDocs.Viewer .NET API
 description: Ознакомьтесь с подробными руководствами по преобразованию документов в HTML с помощью GroupDocs.Viewer для .NET. Изучите методы отображения документов и повышения удобства работы пользователей.
-type: docs
 weight: 31
 url: /ru/net/rendering-documents-html/
 ---

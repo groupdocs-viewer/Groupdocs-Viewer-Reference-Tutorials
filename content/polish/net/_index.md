@@ -1,7 +1,6 @@
 ---
 title: Obszerne samouczki i przykłady GroupDocs.Viewer dla .NET
 linktitle: GroupDocs.Viewer dla samouczków .NET
-type: docs
 weight: 10
 url: /pl/net/
 description: Odkryj kompleksowe samouczki i przykłady integracji GroupDocs.Viewer .NET z aplikacjami. Poznaj techniki krok po kroku usprawniające zarządzanie dokumentami.

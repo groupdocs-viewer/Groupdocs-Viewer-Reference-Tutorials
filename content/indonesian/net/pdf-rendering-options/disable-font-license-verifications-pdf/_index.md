@@ -3,7 +3,6 @@ title: Nonaktifkan Verifikasi Lisensi Font di PDF
 linktitle: Nonaktifkan Verifikasi Lisensi Font di PDF
 second_title: GroupDocs.Viewer .NET API
 description: Buka kemampuan melihat dokumen tanpa hambatan di .NET Anda dengan GroupDocs.Viewer untuk .NET. Integrasikan dan sesuaikan rendering dokumen dengan mudah dengan ketergantungan minimal.
-type: docs
 weight: 12
 url: /id/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

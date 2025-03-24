@@ -3,7 +3,6 @@ title: Jelszóval védett dokumentumok betöltése
 linktitle: Jelszóval védett dokumentumok betöltése
 second_title: GroupDocs.Viewer .NET API
 description: A GroupDocs.Viewer for .NET segítségével könnyedén integrálhatja a jelszóval védett dokumentummegtekintést .NET-alkalmazásokba. Kövesse lépésről lépésre bemutató oktatóanyagunkat a zökkenőmentesség érdekében.
-type: docs
 weight: 12
 url: /hu/net/advanced-loading/load-password-protected-document/
 ---

@@ -3,7 +3,6 @@ title: 使用取消令牌取消渲染
 linktitle: 使用取消令牌取消渲染
 second_title: GroupDocs.Viewer .NET API
 description: 将 Groupdocs.Viewer for .NET 无缝集成到您的 .NET 项目中，以实现高效的文档查看。
-type: docs
 weight: 11
 url: /zh/net/rendering-options/cancel-render-cancellation-token/
 ---

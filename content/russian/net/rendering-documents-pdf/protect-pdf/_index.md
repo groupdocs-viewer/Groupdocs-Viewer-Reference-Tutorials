@@ -3,7 +3,6 @@ title: Защитите обработанный PDF-файл паролем
 linktitle: Защитите обработанный PDF-файл паролем
 second_title: GroupDocs.Viewer .NET API
 description: Легко защитите обработанные PDF-файлы с помощью паролей с помощью Groupdocs.Viewer для .NET. Обеспечьте безопасность и конфиденциальность ваших документов.
-type: docs
 weight: 12
 url: /ru/net/rendering-documents-pdf/protect-pdf/
 ---

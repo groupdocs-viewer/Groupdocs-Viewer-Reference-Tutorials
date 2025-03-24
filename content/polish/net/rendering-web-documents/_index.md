@@ -3,7 +3,6 @@ title: Renderowanie dokumentów internetowych
 linktitle: Renderowanie dokumentów internetowych
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować pliki CHM i HTML z niestandardowymi marginesami w .NET przy użyciu GroupDocs.Viewer. Bezproblemowo konwertuj CHM na formaty HTML, JPG, PNG i PDF.
-type: docs
 weight: 35
 url: /pl/net/rendering-web-documents/
 ---

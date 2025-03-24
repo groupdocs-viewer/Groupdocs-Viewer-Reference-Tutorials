@@ -3,7 +3,6 @@ title: Rendera textfiler (.txt)
 linktitle: Rendera textfiler (.txt)
 second_title: GroupDocs.Viewer .NET API
 description: Utforska den sömlösa konverteringen av textfiler till flera format med GroupDocs.Viewer för .NET. Förbättra dina dokumenthanteringsmöjligheter utan ansträngning.
-type: docs
 weight: 10
 url: /sv/net/rendering-text-files/render-txt/
 ---

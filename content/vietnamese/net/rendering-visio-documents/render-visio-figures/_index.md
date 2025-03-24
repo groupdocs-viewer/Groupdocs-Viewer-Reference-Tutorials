@@ -3,7 +3,6 @@ title: Kết xuất số liệu Visio
 linktitle: Kết xuất số liệu Visio
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị số liệu Visio bằng GroupDocs.Viewer cho .NET với tính năng toàn diện này. Nâng cao khả năng xem tài liệu trong các ứng dụng .NET của bạn.
-type: docs
 weight: 10
 url: /vi/net/rendering-visio-documents/render-visio-figures/
 ---

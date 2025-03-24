@@ -3,7 +3,6 @@ title: Opciones de carga avanzadas
 linktitle: Opciones de carga avanzadas
 second_title: API GroupDocs.Viewer .NET
 description: Mejore sus aplicaciones .NET con GroupDocs.Viewer para tutoriales de .NET. Aprenda a especificar tipos de archivos, administrar codificaciones, cargar documentos protegidos con contraseña y más.
-type: docs
 weight: 21
 url: /es/net/advanced-loading/
 ---

@@ -3,7 +3,6 @@ title: تقديم المستندات إلى الصور
 linktitle: تقديم المستندات إلى الصور
 second_title: GroupDocs.Viewer .NET API
 description: استكشف البرامج التعليمية حول تحويل المستندات إلى صور باستخدام GroupDocs.Viewer لـ .NET. تحسين جودة الصورة واستخراج إحداثيات النص وتحسين تجربة المستخدم.
-type: docs
 weight: 30
 url: /ar/net/rendering-documents-images/
 ---

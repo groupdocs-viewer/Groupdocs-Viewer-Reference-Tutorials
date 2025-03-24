@@ -3,7 +3,6 @@ title: Rendu de dessins CAO
 linktitle: Rendu de dessins CAO
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez des didacticiels pour le rendu de dessins CAO à l'aide de GroupDocs.Viewer pour .NET. Apprenez à améliorer les applications .NET avec une gestion transparente des fichiers CAO.
-type: docs
 weight: 25
 url: /fr/net/rendering-cad-drawings/
 ---

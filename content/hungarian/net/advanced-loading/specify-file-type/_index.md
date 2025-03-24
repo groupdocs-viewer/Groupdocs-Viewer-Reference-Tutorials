@@ -3,7 +3,6 @@ title: Adja meg a fájl típusát a dokumentumok betöltésekor
 linktitle: Adja meg a fájl típusát a dokumentumok betöltésekor
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan adhat meg fájltípust dokumentumok betöltésekor a GroupDocs.Viewer for .NET használatával. A különböző formátumokat pontosan jelenítse meg .NET-alkalmazásaiban.
-type: docs
 weight: 10
 url: /hu/net/advanced-loading/specify-file-type/
 ---

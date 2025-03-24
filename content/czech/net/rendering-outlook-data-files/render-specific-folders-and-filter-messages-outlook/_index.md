@@ -3,7 +3,6 @@ title: Vykreslování konkrétních složek a filtrování zpráv (Outlook)
 linktitle: Vykreslování konkrétních složek a filtrování zpráv (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat konkrétní složky a filtrovat zprávy v Outlooku pomocí GroupDocs.Viewer for .NET. Zjednodušte správu dokumentů v aplikacích .NET.
-type: docs
 weight: 11
 url: /cs/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

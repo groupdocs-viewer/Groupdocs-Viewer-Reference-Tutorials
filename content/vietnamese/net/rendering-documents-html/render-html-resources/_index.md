@@ -3,7 +3,6 @@ title: Kết xuất bằng tài nguyên nhúng hoặc bên ngoài
 linktitle: Kết xuất bằng tài nguyên nhúng hoặc bên ngoài
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao khả năng xem tài liệu .NET bằng GroupDocs.Viewer để hiển thị liền mạch. Hãy làm theo hướng dẫn của chúng tôi để tích hợp hiệu quả và mang lại trải nghiệm người dùng vượt trội.
-type: docs
 weight: 12
 url: /vi/net/rendering-documents-html/render-html-resources/
 ---

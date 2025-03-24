@@ -3,7 +3,6 @@ title: Ladda lösenordsskyddade dokument
 linktitle: Ladda lösenordsskyddade dokument
 second_title: GroupDocs.Viewer .NET API
 description: Integrera enkelt lösenordsskyddad dokumentvisning i .NET-applikationer med GroupDocs.Viewer för .NET. Följ vår steg-för-steg handledning för sömlös.
-type: docs
 weight: 12
 url: /sv/net/advanced-loading/load-password-protected-document/
 ---

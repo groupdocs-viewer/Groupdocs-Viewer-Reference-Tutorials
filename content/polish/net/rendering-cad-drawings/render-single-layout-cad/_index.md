@@ -3,7 +3,6 @@ title: Renderuj pojedynczy układ na rysunkach CAD
 linktitle: Renderuj pojedynczy układ na rysunkach CAD
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować pojedynczy układ na rysunkach CAD przy użyciu GroupDocs.Viewer dla .NET. Proste kroki umożliwiające bezproblemową integrację z aplikacjami .NET.
-type: docs
 weight: 14
 url: /pl/net/rendering-cad-drawings/render-single-layout-cad/
 ---

@@ -3,7 +3,6 @@ title: Renderizar archivos CHM
 linktitle: Renderizar archivos CHM
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a renderizar archivos CHM en .NET usando GroupDocs.Viewer. Convierta formatos CHM a HTML, JPG, PNG y PDF sin esfuerzo.
-type: docs
 weight: 10
 url: /es/net/rendering-web-documents/render-chm/
 ---

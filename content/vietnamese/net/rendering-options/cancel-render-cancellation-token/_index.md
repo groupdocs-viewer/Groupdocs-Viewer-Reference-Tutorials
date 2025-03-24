@@ -3,7 +3,6 @@ title: Hủy kết xuất bằng mã thông báo hủy
 linktitle: Hủy kết xuất bằng mã thông báo hủy
 second_title: API GroupDocs.Viewer .NET
 description: Tích hợp Groupdocs.Viewer cho .NET một cách liền mạch vào các dự án .NET của bạn để xem tài liệu hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/rendering-options/cancel-render-cancellation-token/
 ---

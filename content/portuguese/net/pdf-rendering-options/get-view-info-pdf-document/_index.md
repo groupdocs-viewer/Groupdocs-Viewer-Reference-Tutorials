@@ -3,7 +3,6 @@ title: Obtenha informações de visualização do documento PDF
 linktitle: Obtenha informações de visualização do documento PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como extrair informações de visualização de documentos PDF usando GroupDocs.Viewer for .NET neste tutorial abrangente.
-type: docs
 weight: 16
 url: /pt/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

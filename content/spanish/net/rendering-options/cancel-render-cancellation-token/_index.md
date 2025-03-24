@@ -3,7 +3,6 @@ title: Cancelar renderizado con token de cancelación
 linktitle: Cancelar renderizado con token de cancelación
 second_title: API GroupDocs.Viewer .NET
 description: Integre Groupdocs.Viewer para .NET sin problemas en sus proyectos .NET para una visualización eficiente de documentos.
-type: docs
 weight: 11
 url: /es/net/rendering-options/cancel-render-cancellation-token/
 ---

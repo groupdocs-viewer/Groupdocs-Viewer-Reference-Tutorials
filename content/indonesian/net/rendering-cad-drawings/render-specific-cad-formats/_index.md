@@ -3,7 +3,6 @@ title: Render Format CAD Tertentu (CF2)
 linktitle: Render Format CAD Tertentu (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender format CAD tertentu seperti CF2 ke HTML, JPG, PNG, dan PDF menggunakan Groupdocs.Viewer untuk .NET.
-type: docs
 weight: 12
 url: /id/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

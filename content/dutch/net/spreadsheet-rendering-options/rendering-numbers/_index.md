@@ -3,7 +3,6 @@ title: Cijfers weergeven
 linktitle: Cijfers weergeven
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek de kracht van Groupdocs.Viewer voor .NET bij het naadloos weergeven van Numbers-bestanden. Converteer moeiteloos naar HTML, JPG, PNG en PDF.
-type: docs
 weight: 15
 url: /nl/net/spreadsheet-rendering-options/rendering-numbers/
 ---

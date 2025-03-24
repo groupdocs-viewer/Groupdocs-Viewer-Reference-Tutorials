@@ -3,7 +3,6 @@ title: تقديم ملف PDF بحجم الصفحة الأصلي
 linktitle: تقديم ملف PDF بحجم الصفحة الأصلي
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض ملفات PDF بأحجام الصفحة الأصلية باستخدام GroupDocs.Viewer لـ .NET. اتبع دليلنا خطوة بخطوة وقم بدمج هذه الوظيفة بسلاسة.
-type: docs
 weight: 17
 url: /ar/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

@@ -3,7 +3,6 @@ title: एफ़टीपी से दस्तावेज़ लोड कर
 linktitle: एफ़टीपी से दस्तावेज़ लोड करें (उन्नत)
 second_title: GroupDocs.Viewer .NET API
 description: कुशल दस्तावेज़ देखने के लिए .NET के लिए GroupDocs.Viewer को अपने अनुप्रयोगों में सहजता से एकीकृत करें। एफ़टीपी से दस्तावेज़ आसानी से प्रस्तुत करें।
-type: docs
 weight: 13
 url: /hi/net/loading-documents/loading-document-ftp/
 ---

@@ -3,7 +3,6 @@ title: Rendering HTML con margini definiti dall'utente
 linktitle: Rendering HTML con margini definiti dall'utente
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering di HTML con margini personalizzati in .NET utilizzando GroupDocs.Viewer. Migliora la presentazione dei documenti senza sforzo.
-type: docs
 weight: 11
 url: /it/net/rendering-web-documents/render-html-margins/
 ---

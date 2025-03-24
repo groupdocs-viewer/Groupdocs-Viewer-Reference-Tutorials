@@ -3,7 +3,6 @@ title: GroupDocs.Viewer oktatóanyagok – Fődokumentum-megtekintési készség
 linktitle: GroupDocs.Viewer oktatóanyagok
 additionalTitle: GroupDocs API referenciák
 description: Fedezze fel a GroupDocs.Viewer oktatóanyagait, ahol átfogó útmutatást talál a dokumentummegtekintési képességek maximalizálásához. Használja ki teljes potenciálját még ma!
-type: docs
 weight: 11
 url: /hu/
 is_root: true

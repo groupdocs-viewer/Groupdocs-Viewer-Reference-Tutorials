@@ -3,7 +3,6 @@ title: 渲染 N 个连续页面
 linktitle: 渲染 N 个连续页面
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何将 GroupDocs.Viewer for .NET 集成到您的应用程序中，以轻松呈现具有 N 个连续页面的文档。
-type: docs
 weight: 16
 url: /zh/net/rendering-options/render-n-consecutive-pages/
 ---

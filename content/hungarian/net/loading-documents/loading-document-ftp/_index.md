@@ -3,7 +3,6 @@ title: Dokumentumok betöltése FTP-ről (speciális)
 linktitle: Dokumentumok betöltése FTP-ről (speciális)
 second_title: GroupDocs.Viewer .NET API
 description: Integrálja a GroupDocs.Viewer for .NET-et zökkenőmentesen alkalmazásaiba a hatékony dokumentummegtekintés érdekében. Könnyen rendereljen dokumentumokat FTP-ről.
-type: docs
 weight: 13
 url: /hu/net/loading-documents/loading-document-ftp/
 ---

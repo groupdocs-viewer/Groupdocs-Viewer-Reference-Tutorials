@@ -3,7 +3,6 @@ title: Ladda dokument från Stream
 linktitle: Ladda dokument från Stream
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du sömlöst laddar dokument från strömmar med GroupDocs.Viewer för .NET. Förbättra dina .NET-applikationer med kraftfulla dokumentvisningsmöjligheter.
-type: docs
 weight: 12
 url: /sv/net/loading-documents/loading-document-stream/
 ---

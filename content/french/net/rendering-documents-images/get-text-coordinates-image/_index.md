@@ -3,7 +3,6 @@ title: Obtenir les coordonnées du texte pour le rendu des images
 linktitle: Obtenir les coordonnées du texte pour le rendu des images
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment extraire des coordonnées de texte pour le rendu d'images à l'aide de GroupDocs.Viewer pour .NET. Améliorez vos capacités de traitement de documents sans effort.
-type: docs
 weight: 12
 url: /fr/net/rendering-documents-images/get-text-coordinates-image/
 ---

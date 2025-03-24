@@ -3,7 +3,6 @@ title: Ορισμός άδειας χρήσης από το Stream
 linktitle: Ορισμός άδειας χρήσης από το Stream
 second_title: GroupDocs.Viewer .NET API
 description: Βελτιώστε τις εφαρμογές σας .NET με το GroupDocs.Viewer για απρόσκοπτη προβολή εγγράφων. Ακολουθήστε τον βήμα προς βήμα οδηγό μας και ενσωματώστε πανίσχυρες δυνατότητες προβολής εγγράφων χωρίς κόπο.
-type: docs
 weight: 11
 url: /el/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ url: /el/net/getting-started/set-license-from-stream/
 1. Βασικές γνώσεις ανάπτυξης .NET: Η εξοικείωση με το C# και το .NET Framework είναι απαραίτητη για να ακολουθήσετε μαζί με αυτό το σεμινάριο.
    
 2.  Πακέτο GroupDocs.Viewer για .NET: Βεβαιωθείτε ότι έχετε κατεβάσει και εγκαταστήσει το πακέτο GroupDocs.Viewer για .NET. Μπορείτε να το προμηθευτείτε από το[σύνδεσμος λήψης](https://releases.groupdocs.com/viewer/net/).
-3.  Πρόσβαση στην τεκμηρίωση GroupDocs: Διατηρήστε το[τεκμηρίωση](https://reference.groupdocs.com/viewer/net/) χρήσιμο για αναφορά κατά τη διαδικασία ολοκλήρωσης.
+3.  Πρόσβαση στην τεκμηρίωση GroupDocs: Διατηρήστε το[τεκμηρίωση](https://tutorials.groupdocs.com/viewer/net/) χρήσιμο για αναφορά κατά τη διαδικασία ολοκλήρωσης.
 
 ## Εισαγωγή χώρων ονομάτων
 Αρχικά, εισαγάγετε τους απαραίτητους χώρους ονομάτων στην εφαρμογή σας .NET. Ακολουθήστε αυτά τα βήματα:

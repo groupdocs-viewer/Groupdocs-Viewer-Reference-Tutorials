@@ -3,7 +3,6 @@ title: Gör enkel layout i CAD-ritningar
 linktitle: Gör enkel layout i CAD-ritningar
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar en enkel layout i CAD-ritningar med GroupDocs.Viewer för .NET. Enkla steg för sömlös integration i dina .NET-applikationer.
-type: docs
 weight: 14
 url: /sv/net/rendering-cad-drawings/render-single-layout-cad/
 ---

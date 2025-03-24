@@ -3,7 +3,6 @@ title: Återge responsiv HTML
 linktitle: Återge responsiv HTML
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du återger responsiv HTML med Groupdocs.Viewer för .NET, vilket säkerställer en optimal visningsupplevelse på alla enheter.
-type: docs
 weight: 13
 url: /sv/net/rendering-documents-html/render-responsive-html/
 ---

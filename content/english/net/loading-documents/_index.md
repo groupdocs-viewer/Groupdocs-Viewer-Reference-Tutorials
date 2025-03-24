@@ -3,7 +3,6 @@ title: Loading Documents
 linktitle: Loading Documents
 second_title: GroupDocs.Viewer .NET API
 description: Discover how to efficiently load and render documents using GroupDocs.Viewer .NET. Explore local disk, stream, and FTP loading tutorials for enhanced .NET apps.
-type: docs
 weight: 20
 url: /net/loading-documents/
 ---

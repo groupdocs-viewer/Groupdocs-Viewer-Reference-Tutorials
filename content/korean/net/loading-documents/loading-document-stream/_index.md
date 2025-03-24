@@ -3,7 +3,6 @@ title: 스트림에서 문서 로드
 linktitle: 스트림에서 문서 로드
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 스트림에서 문서를 원활하게 로드하는 방법을 알아보세요. 강력한 문서 보기 기능으로 .NET 애플리케이션을 강화하세요.
-type: docs
 weight: 12
 url: /ko/net/loading-documents/loading-document-stream/
 ---

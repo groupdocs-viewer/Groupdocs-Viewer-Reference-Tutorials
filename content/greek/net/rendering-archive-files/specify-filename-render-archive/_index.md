@@ -3,7 +3,6 @@ title: Καθορίστε το όνομα αρχείου κατά την από�
 linktitle: Καθορίστε το όνομα αρχείου κατά την απόδοση αρχείων αρχειοθέτησης
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε αρχεία αρχειοθέτησης στο .NET χρησιμοποιώντας το GroupDocs.Viewer, βελτιώνοντας τις δυνατότητες διαχείρισης εγγράφων.
-type: docs
 weight: 14
 url: /el/net/rendering-archive-files/specify-filename-render-archive/
 ---

@@ -3,7 +3,6 @@ title: حماية ملف PDF المقدم بكلمة مرور
 linktitle: حماية ملف PDF المقدم بكلمة مرور
 second_title: GroupDocs.Viewer .NET API
 description: قم بحماية ملفات PDF المقدمة بكلمات مرور بسهولة باستخدام Groupdocs.Viewer لـ .NET. حافظ على مستنداتك آمنة وسرية.
-type: docs
 weight: 12
 url: /ar/net/rendering-documents-pdf/protect-pdf/
 ---

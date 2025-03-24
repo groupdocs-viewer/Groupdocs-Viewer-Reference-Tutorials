@@ -3,7 +3,6 @@ title: Nhận thông tin xem cho tệp dữ liệu Outlook (PST, OST)
 linktitle: Nhận thông tin xem cho tệp dữ liệu Outlook (PST, OST)
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá cách trích xuất thông tin chế độ xem từ Tệp dữ liệu Outlook (PST, OST) bằng GroupDocs.Viewer cho .NET. Nâng cao khả năng quản lý tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

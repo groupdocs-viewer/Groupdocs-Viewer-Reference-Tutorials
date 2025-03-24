@@ -3,7 +3,6 @@ title: 스트림에서 라이선스 설정
 linktitle: 스트림에서 라이선스 설정
 second_title: GroupDocs.Viewer .NET API
 description: 원활한 문서 보기를 위해 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램을 강화하세요. 단계별 가이드를 따라 강력한 문서 보기 기능을 손쉽게 통합하세요.
-type: docs
 weight: 11
 url: /ko/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ url: /ko/net/getting-started/set-license-from-stream/
 1. .NET 개발에 대한 기본 지식: 이 튜토리얼을 진행하려면 C# 및 .NET 프레임워크에 대한 지식이 필수적입니다.
    
 2.  .NET용 GroupDocs.Viewer 패키지: .NET용 GroupDocs.Viewer 패키지를 다운로드하여 설치했는지 확인하세요. 에서 얻으실 수 있습니다.[다운로드 링크](https://releases.groupdocs.com/viewer/net/).
-3.  GroupDocs 문서에 대한 액세스:[선적 서류 비치](https://reference.groupdocs.com/viewer/net/) 통합 과정에서 참고할 수 있어 편리합니다.
+3.  GroupDocs 문서에 대한 액세스:[선적 서류 비치](https://tutorials.groupdocs.com/viewer/net/) 통합 과정에서 참고할 수 있어 편리합니다.
 
 ## 네임스페이스 가져오기
 먼저 필요한 네임스페이스를 .NET 애플리케이션으로 가져옵니다. 다음과 같이하세요:

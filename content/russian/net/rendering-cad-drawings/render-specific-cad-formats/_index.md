@@ -3,7 +3,6 @@ title: Специальные форматы САПР для рендеринг�
 linktitle: Специальные форматы САПР для рендеринга (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как преобразовать определенные форматы САПР, такие как CF2, в HTML, JPG, PNG и PDF с помощью Groupdocs.Viewer для .NET.
-type: docs
 weight: 12
 url: /ru/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

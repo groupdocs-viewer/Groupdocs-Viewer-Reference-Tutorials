@@ -3,7 +3,6 @@ title: Рендеринг архивных файлов
 linktitle: Рендеринг архивных файлов
 second_title: GroupDocs.Viewer .NET API
 description: Ознакомьтесь с подробными руководствами по рендерингу архивных файлов с помощью GroupDocs.Viewer для .NET. Простая и эффективная интеграция с вашими .NET-приложениями.
-type: docs
 weight: 24
 url: /ru/net/rendering-archive-files/
 ---

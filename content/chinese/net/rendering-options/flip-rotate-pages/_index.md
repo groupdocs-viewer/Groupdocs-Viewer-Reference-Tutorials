@@ -3,7 +3,6 @@ title: 翻转和旋转页面
 linktitle: 翻转和旋转页面
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何将 Groupdocs.Viewer for .NET 集成到您的应用程序中，以实现无缝文档渲染、翻转和旋转。
-type: docs
 weight: 12
 url: /zh/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ url: /zh/net/rendering-options/flip-rotate-pages/
 ## 先决条件
 在我们开始之前，请确保您已设置以下先决条件：
 ### 安装适用于 .NET 的 Groupdocs.Viewer
-要使用适用于 .NET 的 Groupdocs.Viewer，您需要通过 NuGet 包管理器安装该包。您可以在以下位置找到详细的安装说明[文档](https://reference.groupdocs.com/viewer/net/).
+要使用适用于 .NET 的 Groupdocs.Viewer，您需要通过 NuGet 包管理器安装该包。您可以在以下位置找到详细的安装说明[文档](https://tutorials.groupdocs.com/viewer/net/).
 
 ## 导入命名空间
 确保您在项目中导入了必要的命名空间，以便有效地利用 Groupdocs.Viewer for .NET。

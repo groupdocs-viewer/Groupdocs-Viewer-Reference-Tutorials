@@ -3,7 +3,6 @@ title: Рендеринг N последовательных страниц
 linktitle: Рендеринг N последовательных страниц
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как интегрировать GroupDocs.Viewer для .NET в ваши приложения, чтобы без труда отображать документы, состоящие из N последовательных страниц.
-type: docs
 weight: 16
 url: /ru/net/rendering-options/render-n-consecutive-pages/
 ---

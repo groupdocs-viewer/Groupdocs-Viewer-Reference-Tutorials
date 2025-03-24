@@ -3,7 +3,6 @@ title: Elkezdeni
 linktitle: Elkezdeni
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel a lépésről lépésre bemutatott oktatóanyagokat a GroupDocs.Viewer for .NET zökkenőmentes alkalmazásaiba való integrálásához. Ismerje meg a licencek beállítását és a megtekintő megjelenésének testreszabását.
-type: docs
 weight: 26
 url: /hu/net/getting-started/
 ---

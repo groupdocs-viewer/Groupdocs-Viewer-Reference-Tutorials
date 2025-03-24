@@ -3,7 +3,6 @@ title: Återgivningsalternativ
 linktitle: Återgivningsalternativ
 second_title: GroupDocs.Viewer .NET API
 description: Integrera GroupDocs.Viewer för .NET enkelt i dina applikationer med handledning om renderingsalternativ, från att lägga till vattenstämplar till att anpassa teckensnitt.
-type: docs
 weight: 23
 url: /sv/net/rendering-options/
 ---

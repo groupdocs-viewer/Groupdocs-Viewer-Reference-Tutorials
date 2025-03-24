@@ -1,7 +1,6 @@
 ---
 title: Комплексные руководства и примеры GroupDocs.Viewer для .NET
 linktitle: GroupDocs.Viewer для учебных пособий по .NET
-type: docs
 weight: 10
 url: /ru/net/
 description: Откройте для себя подробные руководства и примеры по интеграции GroupDocs.Viewer .NET в ваши приложения. Изучите пошаговые методы улучшения управления документами.

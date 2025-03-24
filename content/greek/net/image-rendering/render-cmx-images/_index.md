@@ -3,7 +3,6 @@ title: Απόδοση εικόνων CMX
 linktitle: Απόδοση εικόνων CMX
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε εύκολα εικόνες CMX σε διάφορες μορφές χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε τη διαχείριση των εγγράφων σας.
-type: docs
 weight: 13
 url: /el/net/image-rendering/render-cmx-images/
 ---

@@ -3,7 +3,6 @@ title: Λάβετε ονόματα φύλλων εργασίας
 linktitle: Λάβετε ονόματα φύλλων εργασίας
 second_title: GroupDocs.Viewer .NET API
 description: Εξερευνήστε τη μαγεία του GroupDocs.Viewer για .NET – ενσωματώστε απρόσκοπτα την προβολή εγγράφων στις εφαρμογές σας. Δοκιμάστε τη δωρεάν δοκιμή τώρα!
-type: docs
 weight: 11
 url: /el/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ foreach (Page page in viewInfo.Pages)
 ### Μπορώ να αποκτήσω προσωρινή άδεια;
  Σίγουρα! Επίσκεψη[αυτός ο σύνδεσμος](https://purchase.groupdocs.com/temporary-license/) για να λάβετε την προσωρινή σας άδεια.
 ### Υπάρχουν διαθέσιμες λεπτομερείς πηγές τεκμηρίωσης;
- Απολύτως! Ελέγξτε το[επίσημη τεκμηρίωση](https://reference.groupdocs.com/viewer/net/) για εις βάθος πληροφορίες και οδηγούς.
+ Απολύτως! Ελέγξτε το[επίσημη τεκμηρίωση](https://tutorials.groupdocs.com/viewer/net/) για εις βάθος πληροφορίες και οδηγούς.

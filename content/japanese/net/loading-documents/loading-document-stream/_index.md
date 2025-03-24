@@ -3,7 +3,6 @@ title: ストリームからドキュメントをロードする
 linktitle: ストリームからドキュメントをロードする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してストリームからドキュメントをシームレスにロードする方法を学びます。強力なドキュメント表示機能で .NET アプリケーションを強化します。
-type: docs
 weight: 12
 url: /ja/net/loading-documents/loading-document-stream/
 ---

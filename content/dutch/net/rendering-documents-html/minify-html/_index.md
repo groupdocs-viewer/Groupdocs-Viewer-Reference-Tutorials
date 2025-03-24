@@ -3,7 +3,6 @@ title: Verklein het gerenderde HTML-document
 linktitle: Verklein het gerenderde HTML-document
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u HTML-documenten naadloos kunt weergeven in .NET-toepassingen met behulp van GroupDocs.Viewer voor .NET.
-type: docs
 weight: 11
 url: /nl/net/rendering-documents-html/minify-html/
 ---

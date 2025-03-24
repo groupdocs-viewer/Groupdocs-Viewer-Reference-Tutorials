@@ -3,7 +3,6 @@ title: Beeldweergave
 linktitle: Beeldweergave
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek uitgebreide tutorials over het renderen van verschillende afbeeldingsformaten met GroupDocs.Viewer voor .NET. Van AI tot WMF leer naadloze integratie- en codeervoorbeelden.
-type: docs
 weight: 28
 url: /nl/net/image-rendering/
 ---

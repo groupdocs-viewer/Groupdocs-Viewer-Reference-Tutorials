@@ -3,7 +3,6 @@ title: .NET용 GroupDocs.Viewer를 사용하여 인쇄 영역 렌더링
 linktitle: 렌더링 인쇄 영역
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 탐색하고 다양한 문서 형식으로 인쇄 영역을 손쉽게 렌더링하세요. 지금 무료 평가판을 사용해 보세요! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /ko/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 축하해요! .NET용 GroupDocs.Viewer를 활용하여 문서의 인쇄 영역을 렌더링하는 방법을 성공적으로 배웠습니다. 이 강력한 도구는 .NET 애플리케이션에서 문서 렌더링에 대한 새로운 가능성을 열어줍니다.
 ## 자주 묻는 질문
 ### GroupDocs.Viewer는 다른 문서 형식과 호환됩니까?
- 예, GroupDocs.Viewer는 PDF, DOCX, XLSX 등을 포함한 광범위한 문서 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/viewer/net/) 전체 목록을 보려면.
+ 예, GroupDocs.Viewer는 PDF, DOCX, XLSX 등을 포함한 광범위한 문서 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/viewer/net/) 전체 목록을 보려면.
 ### 구매하기 전에 GroupDocs.Viewer를 사용해 볼 수 있나요?
  전적으로! 무료 평가판을 통해 도구를 탐색할 수 있습니다.[여기](https://releases.groupdocs.com/).
 ### 문제에 대한 지원이나 도움을 어디서 찾을 수 있나요?

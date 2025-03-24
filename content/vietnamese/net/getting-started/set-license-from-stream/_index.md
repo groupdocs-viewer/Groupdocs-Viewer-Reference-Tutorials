@@ -3,7 +3,6 @@ title: Đặt giấy phép từ luồng
 linktitle: Đặt giấy phép từ luồng
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao các ứng dụng .NET của bạn với GroupDocs.Viewer để xem tài liệu liền mạch. Hãy làm theo hướng dẫn từng bước của chúng tôi và tích hợp khả năng xem tài liệu mạnh mẽ một cách dễ dàng.
-type: docs
 weight: 11
 url: /vi/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ Trước khi chúng ta đi sâu vào quá trình tích hợp, hãy đảm bảo 
 1. Kiến thức cơ bản về phát triển .NET: Cần phải làm quen với C# và .NET framework theo hướng dẫn này.
    
 2.  Gói GroupDocs.Viewer cho .NET: Đảm bảo bạn đã tải xuống và cài đặt gói GroupDocs.Viewer cho .NET. Bạn có thể lấy nó từ[Liên kết tải xuống](https://releases.groupdocs.com/viewer/net/).
-3.  Truy cập vào Tài liệu GroupDocs: Giữ nguyên[tài liệu](https://reference.groupdocs.com/viewer/net/) thuận tiện cho việc tham khảo trong quá trình hội nhập.
+3.  Truy cập vào Tài liệu GroupDocs: Giữ nguyên[tài liệu](https://tutorials.groupdocs.com/viewer/net/) thuận tiện cho việc tham khảo trong quá trình hội nhập.
 
 ## Nhập không gian tên
 Để bắt đầu, hãy nhập các vùng tên cần thiết vào ứng dụng .NET của bạn. Thực hiện theo các bước sau:

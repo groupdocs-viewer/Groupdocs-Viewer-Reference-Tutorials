@@ -3,7 +3,6 @@ title: Render Visio Figures
 linktitle: Render Visio Figures
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε στοιχεία του Visio χρησιμοποιώντας το GroupDocs.Viewer για .NET με αυτό το περιεκτικό. Βελτιώστε τις δυνατότητες προβολής εγγράφων στις εφαρμογές σας .NET.
-type: docs
 weight: 10
 url: /el/net/rendering-visio-documents/render-visio-figures/
 ---

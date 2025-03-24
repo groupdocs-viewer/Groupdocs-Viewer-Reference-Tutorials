@@ -3,7 +3,6 @@ title: Get Worksheets Names
 linktitle: Get Worksheets Names
 second_title: GroupDocs.Viewer .NET API
 description: Explore the magic of GroupDocs.Viewer for .NET – seamlessly integrate document viewing into your applications. Try the free trial now!
-type: docs
 weight: 11
 url: /net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ Head to the [GroupDocs.Viewer forum](https://forum.groupdocs.com/c/viewer/9) for
 ### Can I obtain a temporary license?
 Certainly! Visit [this link](https://purchase.groupdocs.com/temporary-license/) to get your temporary license.
 ### Are there detailed documentation resources available?
-Absolutely! Check out the [official documentation](https://reference.groupdocs.com/viewer/net/) for in-depth information and guides.
+Absolutely! Check out the [official documentation](https://tutorials.groupdocs.com/viewer/net/) for in-depth information and guides.

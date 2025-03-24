@@ -3,7 +3,6 @@ title: Sesuaikan Ukuran Halaman Saat Merender Pesan Email
 linktitle: Sesuaikan Ukuran Halaman Saat Merender Pesan Email
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menyesuaikan ukuran halaman saat merender pesan email ke PDF menggunakan GroupDocs.Viewer untuk .NET. Meningkatkan efisiensi tampilan dokumen.
-type: docs
 weight: 10
 url: /id/net/rendering-email-messages/adjust-page-size-email/
 ---

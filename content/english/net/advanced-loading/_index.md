@@ -3,7 +3,6 @@ title: Advanced Loading Options
 linktitle: Advanced Loading Options
 second_title: GroupDocs.Viewer .NET API
 description: Enhance your .NET apps with GroupDocs.Viewer for .NET tutorials. Learn to specify file types, manage encodings, load password-protected docs, and more. 
-type: docs
 weight: 21
 url: /net/advanced-loading/
 ---

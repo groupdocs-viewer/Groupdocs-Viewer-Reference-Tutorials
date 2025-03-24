@@ -3,7 +3,6 @@ title: Рендеринг с использованием пользовател
 linktitle: Рендеринг с использованием пользовательских шрифтов
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как отображать документы с использованием пользовательских шрифтов с помощью GroupDocs.Viewer для .NET. Улучшайте визуальные презентации без особых усилий.
-type: docs
 weight: 18
 url: /ru/net/rendering-options/render-custom-fonts/
 ---

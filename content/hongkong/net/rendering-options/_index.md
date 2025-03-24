@@ -3,7 +3,6 @@ title: 渲染選項
 linktitle: 渲染選項
 second_title: GroupDocs.Viewer .NET API
 description: 透過渲染選項（從新增浮水印到自訂字體）的教學課程，輕鬆將 GroupDocs.Viewer for .NET 整合到您的應用程式中。
-type: docs
 weight: 23
 url: /zh-hant/net/rendering-options/
 ---

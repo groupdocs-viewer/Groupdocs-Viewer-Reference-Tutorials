@@ -3,7 +3,6 @@ title: Metin Dosyalarını Oluşturma
 linktitle: Metin Dosyalarını Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: Metin dosyalarının işlenmesine ilişkin eğitimlerle GroupDocs.Viewer for .NET'in potansiyelini ortaya çıkarın. Gelişmiş belge yönetimi için .txt dosyalarını çeşitli formatlara dönüştürün.
-type: docs
 weight: 33
 url: /tr/net/rendering-text-files/
 ---

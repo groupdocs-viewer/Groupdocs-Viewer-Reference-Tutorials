@@ -3,7 +3,6 @@ title: Nhận tọa độ văn bản để hiển thị hình ảnh
 linktitle: Nhận tọa độ văn bản để hiển thị hình ảnh
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách trích xuất tọa độ văn bản để hiển thị hình ảnh bằng GroupDocs.Viewer cho .NET. Nâng cao khả năng xử lý tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 12
 url: /vi/net/rendering-documents-images/get-text-coordinates-image/
 ---

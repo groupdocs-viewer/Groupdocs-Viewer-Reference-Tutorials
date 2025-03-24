@@ -3,7 +3,6 @@ title: 문서에 워터마크 추가
 linktitle: 문서에 워터마크 추가
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서에 워터마크를 원활하게 추가하는 방법을 알아보세요. 따라하기 쉬운 튜토리얼을 통해 문서 보안과 브랜딩을 강화하세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-options/add-watermark/
 ---

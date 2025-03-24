@@ -3,7 +3,6 @@ title: Render document met notities
 linktitle: Render document met notities
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u documenten met notities kunt weergeven met GroupDocs.Viewer voor .NET. Stap-voor-stap handleiding voor naadloze integratie in uw .NET-applicaties.
-type: docs
 weight: 14
 url: /nl/net/rendering-options/render-document-notes/
 ---

@@ -3,7 +3,6 @@ title: استرجاع وطباعة مرفقات المستندات
 linktitle: استرجاع وطباعة مرفقات المستندات
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج إمكانات عرض المستندات في تطبيقات .NET الخاصة بك بسلاسة مع GroupDocs.Viewer لـ .NET. استرجاع وطباعة مرفقات المستندات دون عناء.
-type: docs
 weight: 11
 url: /ar/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

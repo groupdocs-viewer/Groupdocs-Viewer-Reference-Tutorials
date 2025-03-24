@@ -3,7 +3,6 @@ title: Geavanceerde laadopties
 linktitle: Geavanceerde laadopties
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter uw .NET-apps met GroupDocs.Viewer voor .NET-tutorials. Leer bestandstypen opgeven, coderingen beheren, met een wachtwoord beveiligde documenten laden en meer.
-type: docs
 weight: 21
 url: /nl/net/advanced-loading/
 ---

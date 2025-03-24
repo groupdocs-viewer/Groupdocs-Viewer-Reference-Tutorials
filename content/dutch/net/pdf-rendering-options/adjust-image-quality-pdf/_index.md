@@ -3,7 +3,6 @@ title: Pas de beeldkwaliteit in PDF aan
 linktitle: Pas de beeldkwaliteit in PDF aan
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u de beeldkwaliteit in PDF-documenten kunt aanpassen met GroupDocs.Viewer voor .NET. Volg onze stap-voor-stap handleiding voor een naadloze integratie.
-type: docs
 weight: 10
 url: /nl/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

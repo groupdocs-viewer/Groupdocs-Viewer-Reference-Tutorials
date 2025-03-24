@@ -3,7 +3,6 @@ title: चयनित पृष्ठ प्रस्तुत करें
 linktitle: चयनित पृष्ठ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए Groupdocs.Viewer का उपयोग करके दस्तावेज़ों से चयनित पृष्ठों को प्रस्तुत करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण ट्यूटोरियल शामिल है।
-type: docs
 weight: 17
 url: /hi/net/rendering-options/render-selected-pages/
 ---

@@ -3,7 +3,6 @@ title: Ακύρωση απόδοσης με διακριτικό ακύρωση�
 linktitle: Ακύρωση απόδοσης με διακριτικό ακύρωσης
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε απρόσκοπτα το Groupdocs.Viewer για .NET στα έργα σας .NET για αποτελεσματική προβολή εγγράφων.
-type: docs
 weight: 11
 url: /el/net/rendering-options/cancel-render-cancellation-token/
 ---

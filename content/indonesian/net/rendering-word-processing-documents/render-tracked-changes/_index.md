@@ -3,7 +3,6 @@ title: Render Perubahan yang Dilacak
 linktitle: Render Perubahan yang Dilacak
 second_title: GroupDocs.Viewer .NET API
 description: Temukan cara merender perubahan terlacak dalam dokumen dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan efisiensi manajemen dokumen Anda.
-type: docs
 weight: 10
 url: /id/net/rendering-word-processing-documents/render-tracked-changes/
 ---

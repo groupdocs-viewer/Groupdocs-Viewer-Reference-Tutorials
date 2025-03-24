@@ -3,7 +3,6 @@ title: Outlook Veri Dosyalarında İşlenecek Öğe Sayısını Sınırlayın
 linktitle: Outlook Veri Dosyalarında İşlenecek Öğe Sayısını Sınırlayın
 second_title: GroupDocs.Viewer .NET API'si
 description: Groupdocs.Viewer for .NET'i kullanarak Outlook veri dosyalarında oluşturulan öğe sayısını nasıl sınırlayacağınızı öğrenin. Kusursuz entegrasyon için adım adım izleyin.
-type: docs
 weight: 12
 url: /tr/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

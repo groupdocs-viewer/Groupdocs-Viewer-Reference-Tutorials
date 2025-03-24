@@ -3,7 +3,6 @@ title: Przetwarzanie załączników do dokumentów
 linktitle: Przetwarzanie załączników do dokumentów
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak bez wysiłku zintegrować możliwości przeglądania dokumentów z aplikacjami .NET za pomocą GroupDocs.Viewer. Efektywnie zarządzaj załącznikami dokumentów.
-type: docs
 weight: 32
 url: /pl/net/processing-document-attachments/
 --- 

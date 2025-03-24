@@ -3,7 +3,6 @@ title: レンダリング アーカイブ フォルダー
 linktitle: レンダリング アーカイブ フォルダー
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を .NET アプリケーションにシームレスに統合して、効率的なドキュメントのレンダリングと表示機能を実現します。
-type: docs
 weight: 11
 url: /ja/net/rendering-archive-files/render-archive-folder/
 ---

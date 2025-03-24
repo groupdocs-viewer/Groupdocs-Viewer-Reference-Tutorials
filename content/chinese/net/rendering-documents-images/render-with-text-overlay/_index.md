@@ -3,7 +3,6 @@ title: 渲染并叠加文本以进行显示
 linktitle: 渲染并叠加文本以进行显示
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 在 .NET 应用程序中无缝呈现文档，支持各种格式以增强用户体验。
-type: docs
 weight: 13
 url: /zh/net/rendering-documents-images/render-with-text-overlay/
 ---

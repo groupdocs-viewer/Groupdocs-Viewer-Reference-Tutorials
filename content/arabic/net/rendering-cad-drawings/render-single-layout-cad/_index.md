@@ -3,7 +3,6 @@ title: تقديم تخطيط واحد في رسومات CAD
 linktitle: تقديم تخطيط واحد في رسومات CAD
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض تخطيط فردي في رسومات CAD باستخدام GroupDocs.Viewer لـ .NET. خطوات سهلة للتكامل السلس في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 14
 url: /ar/net/rendering-cad-drawings/render-single-layout-cad/
 ---

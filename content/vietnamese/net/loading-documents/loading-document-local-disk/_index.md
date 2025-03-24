@@ -3,7 +3,6 @@ title: Tải tài liệu từ đĩa cục bộ
 linktitle: Tải tài liệu từ đĩa cục bộ
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị liền mạch các tài liệu từ ổ đĩa cục bộ của bạn bằng Groupdocs.Viewer dành cho .NET. Nâng cao ứng dụng .NET của bạn bằng tài liệu hiệu quả.
-type: docs
 weight: 10
 url: /vi/net/loading-documents/loading-document-local-disk/
 ---

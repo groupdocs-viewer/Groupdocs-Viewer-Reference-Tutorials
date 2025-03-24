@@ -3,7 +3,6 @@ title: Рендеринг архивов на одной или нескольк
 linktitle: Рендеринг архивов на одной или нескольких HTML-страницах
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как отображать архивы на HTML-страницах с помощью GroupDocs.Viewer для .NET. Легко интегрируйте возможности просмотра документов в свои приложения .NET.
-type: docs
 weight: 12
 url: /ru/net/rendering-archive-files/render-archives-html/
 ---

@@ -3,7 +3,6 @@ title: Get munkalapok nevek
 linktitle: Get munkalapok nevek
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel a GroupDocs.Viewer for .NET varázsát – zökkenőmentesen integrálja a dokumentumok megtekintését alkalmazásaiba. Próbálja ki most az ingyenes próbaverziót!
-type: docs
 weight: 11
 url: /hu/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ Teljesen! A GroupDocs.Viewer a dokumentumformátumok széles skáláját támoga
 ### Kaphatok ideiglenes engedélyt?
  Biztosan! Látogatás[ez a link](https://purchase.groupdocs.com/temporary-license/) hogy megszerezze az ideiglenes engedélyét.
 ### Rendelkezésre állnak-e részletes dokumentációs források?
- Teljesen! Nézze meg a[hivatalos dokumentáció](https://reference.groupdocs.com/viewer/net/) részletes információkért és útmutatókért.
+ Teljesen! Nézze meg a[hivatalos dokumentáció](https://tutorials.groupdocs.com/viewer/net/) részletes információkért és útmutatókért.

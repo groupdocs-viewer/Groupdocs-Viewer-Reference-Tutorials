@@ -3,7 +3,6 @@ title: विशिष्ट CAD प्रारूप प्रस्तुत 
 linktitle: विशिष्ट CAD प्रारूप प्रस्तुत करें (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए Groupdocs.Viewer का उपयोग करके CF2 जैसे विशिष्ट CAD प्रारूपों को HTML, JPG, PNG और PDF में प्रस्तुत करना सीखें।
-type: docs
 weight: 12
 url: /hi/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

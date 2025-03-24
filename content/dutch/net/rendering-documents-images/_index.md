@@ -3,7 +3,6 @@ title: Documenten omzetten in afbeeldingen
 linktitle: Documenten omzetten in afbeeldingen
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek tutorials over het renderen van documenten naar afbeeldingen met GroupDocs.Viewer voor .NET. Optimaliseer de beeldkwaliteit, extraheer tekstcoördinaten en verbeter de gebruikerservaring.
-type: docs
 weight: 30
 url: /nl/net/rendering-documents-images/
 ---

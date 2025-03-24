@@ -3,7 +3,6 @@ title: 渲染 CHM 文件
 linktitle: 渲染 CHM 文件
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 在 .NET 中呈現 CHM 檔案。輕鬆將 CHM 轉換為 HTML、JPG、PNG 和 PDF 格式。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-web-documents/render-chm/
 ---

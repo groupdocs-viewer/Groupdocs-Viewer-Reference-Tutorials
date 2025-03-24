@@ -3,7 +3,6 @@ title: Ajustar tamanho e qualidade da imagem (JPG)
 linktitle: Ajustar tamanho e qualidade da imagem (JPG)
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como otimizar o tamanho e a qualidade da imagem no formato JPEG usando Groupdocs.Viewer for .NET. Aprimore sua experiência de visualização de documentos.
-type: docs
 weight: 11
 url: /pt/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---

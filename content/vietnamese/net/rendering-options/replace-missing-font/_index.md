@@ -3,7 +3,6 @@ title: Thay thế phông chữ bị thiếu
 linktitle: Thay thế phông chữ bị thiếu
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách thay thế phông chữ bị thiếu trong tài liệu .NET một cách dễ dàng bằng GroupDocs.Viewer. Đảm bảo hiển thị chính xác với các bước đơn giản.
-type: docs
 weight: 20
 url: /vi/net/rendering-options/replace-missing-font/
 ---

@@ -3,7 +3,6 @@ title: Rendre les archives RAR
 linktitle: Rendre les archives RAR
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des archives RAR aux formats HTML, JPG, PNG ou PDF à l'aide de GroupDocs.Viewer pour .NET. Visualisez et partagez facilement le contenu des archives RAR.
-type: docs
 weight: 13
 url: /fr/net/rendering-archive-files/render-rar/
 ---

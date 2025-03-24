@@ -3,7 +3,6 @@ title: PDF의 이미지 품질 조정
 linktitle: PDF의 이미지 품질 조정
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 PDF 문서의 이미지 품질을 조정하는 방법을 알아보세요. 원활한 통합을 위해 단계별 튜토리얼을 따르세요.
-type: docs
 weight: 10
 url: /ko/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

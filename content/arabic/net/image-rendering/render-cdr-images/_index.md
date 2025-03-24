@@ -3,7 +3,6 @@ title: تقديم صور CDR
 linktitle: تقديم صور CDR
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور CDR إلى HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لـ .NET. قم بتحويل ملفات CorelDRAW بسهولة باستخدام هذا البرنامج التعليمي.
-type: docs
 weight: 12
 url: /ar/net/image-rendering/render-cdr-images/
 ---

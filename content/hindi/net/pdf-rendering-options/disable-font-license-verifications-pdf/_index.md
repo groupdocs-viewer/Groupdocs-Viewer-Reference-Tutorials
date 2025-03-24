@@ -3,7 +3,6 @@ title: पीडीएफ में फ़ॉन्ट लाइसेंस स
 linktitle: पीडीएफ में फ़ॉन्ट लाइसेंस सत्यापन अक्षम करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer के साथ अपने .NET में निर्बाध दस्तावेज़ देखने की क्षमताओं को अनलॉक करें। न्यूनतम निर्भरता के साथ दस्तावेज़ रेंडरिंग को आसानी से एकीकृत और अनुकूलित करें।
-type: docs
 weight: 12
 url: /hi/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

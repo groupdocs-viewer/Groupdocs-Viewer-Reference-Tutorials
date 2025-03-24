@@ -3,7 +3,6 @@ title: Pas de JPG-afbeeldingskwaliteit aan in gerenderde PDF
 linktitle: Pas de JPG-afbeeldingskwaliteit aan in gerenderde PDF
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u de JPG-beeldkwaliteit in gerenderde PDF-documenten kunt aanpassen met GroupDocs.Viewer voor .NET. Verbeter uw documentkijkervaring.
-type: docs
 weight: 11
 url: /nl/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

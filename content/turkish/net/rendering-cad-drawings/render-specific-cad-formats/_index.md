@@ -3,7 +3,6 @@ title: Render'a Özel CAD Formatları (CF2)
 linktitle: Render'a Özel CAD Formatları (CF2)
 second_title: GroupDocs.Viewer .NET API'si
 description: Groupdocs.Viewer for .NET'i kullanarak CF2 gibi belirli CAD formatlarını HTML, JPG, PNG ve PDF'ye nasıl dönüştüreceğinizi öğrenin.
-type: docs
 weight: 12
 url: /tr/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

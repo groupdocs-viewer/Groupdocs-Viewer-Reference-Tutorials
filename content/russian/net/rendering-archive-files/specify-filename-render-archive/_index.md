@@ -3,7 +3,6 @@ title: Укажите имя файла при рендеринге архивн
 linktitle: Укажите имя файла при рендеринге архивных файлов
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как визуализировать архивные файлы в .NET с помощью GroupDocs.Viewer, расширяя возможности управления документами.
-type: docs
 weight: 14
 url: /ru/net/rendering-archive-files/specify-filename-render-archive/
 ---

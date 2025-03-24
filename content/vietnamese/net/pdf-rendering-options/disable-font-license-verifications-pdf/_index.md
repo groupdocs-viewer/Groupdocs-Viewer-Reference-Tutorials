@@ -3,7 +3,6 @@ title: Tắt xác minh giấy phép phông chữ trong PDF
 linktitle: Tắt xác minh giấy phép phông chữ trong PDF
 second_title: API GroupDocs.Viewer .NET
 description: Mở khóa khả năng xem tài liệu liền mạch trong .NET của bạn với GroupDocs.Viewer dành cho .NET. Dễ dàng tích hợp và tùy chỉnh kết xuất tài liệu với mức độ phụ thuộc tối thiểu.
-type: docs
 weight: 12
 url: /vi/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

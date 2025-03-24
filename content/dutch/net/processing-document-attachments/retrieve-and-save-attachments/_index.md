@@ -3,7 +3,6 @@ title: Documentbijlagen ophalen en opslaan
 linktitle: Documentbijlagen ophalen en opslaan
 second_title: GroupDocs.Viewer .NET-API
 description: Beheer documentbijlagen efficiënt binnen .NET-applicaties met GroupDocs.Viewer. Haal bijlagen probleemloos op en sla ze op.
-type: docs
 weight: 12
 url: /nl/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Ja, GroupDocs.Viewer ondersteunt een breed scala aan documentformaten, waaronder
 ### Hoe kan ik tijdelijke licenties verkrijgen voor GroupDocs.Viewer voor .NET?
  Tijdelijke licenties kunnen worden verkregen via[deze link](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik documentatie vinden voor GroupDocs.Viewer voor .NET?
- Er is uitgebreide documentatie beschikbaar[hier](https://reference.groupdocs.com/viewer/net/).
+ Er is uitgebreide documentatie beschikbaar[hier](https://tutorials.groupdocs.com/viewer/net/).
 ### Welke ondersteuningsopties zijn beschikbaar voor GroupDocs.Viewer voor .NET?
  U kunt hulp zoeken op het communityforum[hier](https://forum.groupdocs.com/c/viewer/9).

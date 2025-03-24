@@ -3,7 +3,6 @@ title: Geef Visio-figuren weer
 linktitle: Geef Visio-figuren weer
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u Visio-cijfers kunt weergeven met GroupDocs.Viewer voor .NET met deze uitgebreide versie. Verbeter de mogelijkheden voor documentweergave in uw .NET-toepassingen.
-type: docs
 weight: 10
 url: /nl/net/rendering-visio-documents/render-visio-figures/
 ---

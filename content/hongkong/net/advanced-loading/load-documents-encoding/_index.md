@@ -3,7 +3,6 @@ title: 載入具有特定編碼的文檔
 linktitle: 載入具有特定編碼的文檔
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 透過無縫文件檢視來增強您的 .NET 應用程式。輕鬆載入具有特定編碼的文件並自訂檢視體驗。
-type: docs
 weight: 11
 url: /zh-hant/net/advanced-loading/load-documents-encoding/
 ---

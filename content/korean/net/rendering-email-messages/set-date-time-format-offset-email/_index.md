@@ -3,7 +3,6 @@ title: 날짜/시간 형식 및 시간대 오프셋 설정(이메일)
 linktitle: 날짜/시간 형식 및 시간대 오프셋 설정(이메일)
 second_title: GroupDocs.Viewer .NET API
 description: 강력한 문서 보기 기능을 위해 .NET용 GroupDocs.Viewer를 응용 프로그램에 완벽하게 통합하세요. 사용자 정의 가능한 옵션으로 사용자 경험을 향상하십시오.
-type: docs
 weight: 11
 url: /ko/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

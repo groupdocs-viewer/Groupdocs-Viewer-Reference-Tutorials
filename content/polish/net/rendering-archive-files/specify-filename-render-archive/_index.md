@@ -3,7 +3,6 @@ title: Określ nazwę pliku podczas renderowania plików archiwalnych
 linktitle: Określ nazwę pliku podczas renderowania plików archiwalnych
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować pliki archiwów w .NET przy użyciu GroupDocs.Viewer, zwiększając możliwości zarządzania dokumentami.
-type: docs
 weight: 14
 url: /pl/net/rendering-archive-files/specify-filename-render-archive/
 ---

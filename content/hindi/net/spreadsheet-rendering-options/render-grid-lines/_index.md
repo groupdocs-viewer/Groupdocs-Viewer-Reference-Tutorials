@@ -3,7 +3,6 @@ title: ग्रिड लाइनें प्रस्तुत करें
 linktitle: ग्रिड लाइनें प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer के साथ दस्तावेज़ विज़ुअलाइज़ेशन बढ़ाएँ। ग्रिड लाइनों को सहजता से प्रस्तुत करें। अभी निशुल्क परीक्षण आज़माएं! #ग्रुपडॉक्स #व्यूअर
-type: docs
 weight: 12
 url: /hi/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ viewer.View(options, 1, 2, 3);
 ### क्या .NET के लिए GroupDocs.Viewer के लिए अस्थायी लाइसेंस उपलब्ध हैं?
  हाँ, आप प्राप्त कर सकते हैं[अस्थायी लाइसेंस](https://purchase.groupdocs.com/temporary-license/) .NET के लिए GroupDocs.Viewer के लिए।
 ### क्या मुझे .NET के लिए GroupDocs.Viewer के लिए विस्तृत दस्तावेज़ मिल सकते हैं?
- बिल्कुल! को देखें[आधिकारिक दस्तावेज](https://reference.groupdocs.com/viewer/net/) .NET के लिए GroupDocs.Viewer का उपयोग करने के बारे में गहन जानकारी के लिए।
+ बिल्कुल! को देखें[आधिकारिक दस्तावेज](https://tutorials.groupdocs.com/viewer/net/) .NET के लिए GroupDocs.Viewer का उपयोग करने के बारे में गहन जानकारी के लिए।
 ### मैं .NET के लिए GroupDocs.Viewer का नवीनतम संस्करण कहां से डाउनलोड कर सकता हूं?
  से लाइब्रेरी डाउनलोड करें[आधिकारिक रिलीज़ पेज](https://releases.groupdocs.com/viewer/net/).

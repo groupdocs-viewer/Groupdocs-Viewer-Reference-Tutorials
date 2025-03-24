@@ -3,7 +3,6 @@ title: Rendu d'image
 linktitle: Rendu d'image
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez des didacticiels complets sur le rendu de différents formats d'image à l'aide de GroupDocs.Viewer pour .NET. De l’IA au WMF, découvrez des exemples d’intégration et de codage transparents.
-type: docs
 weight: 28
 url: /fr/net/image-rendering/
 ---

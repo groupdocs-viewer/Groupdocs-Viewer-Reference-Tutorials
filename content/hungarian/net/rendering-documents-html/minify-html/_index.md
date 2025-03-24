@@ -3,7 +3,6 @@ title: A renderelt HTML-dokumentum kicsinyítése
 linktitle: A renderelt HTML-dokumentum kicsinyítése
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet zökkenőmentesen előállítani HTML-dokumentumokat .NET-alkalmazásokban a GroupDocs.Viewer for .NET segítségével.
-type: docs
 weight: 11
 url: /hu/net/rendering-documents-html/minify-html/
 ---

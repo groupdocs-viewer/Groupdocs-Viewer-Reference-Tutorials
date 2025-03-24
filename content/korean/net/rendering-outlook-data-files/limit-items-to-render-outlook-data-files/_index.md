@@ -3,7 +3,6 @@ title: Outlook 데이터 파일에서 렌더링할 항목 수 제한
 linktitle: Outlook 데이터 파일에서 렌더링할 항목 수 제한
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 Groupdocs.Viewer를 사용하여 Outlook 데이터 파일에서 렌더링되는 항목 수를 제한하는 방법을 알아보세요. 원활한 통합을 위해 단계별로 따라해보세요.
-type: docs
 weight: 12
 url: /ko/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

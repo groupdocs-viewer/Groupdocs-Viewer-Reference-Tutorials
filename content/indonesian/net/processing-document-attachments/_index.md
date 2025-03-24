@@ -3,7 +3,6 @@ title: Memproses Lampiran Dokumen
 linktitle: Memproses Lampiran Dokumen
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengintegrasikan kemampuan melihat dokumen dengan mudah ke dalam aplikasi .NET Anda menggunakan GroupDocs.Viewer. Kelola lampiran dokumen secara efisien.
-type: docs
 weight: 32
 url: /id/net/processing-document-attachments/
 --- 

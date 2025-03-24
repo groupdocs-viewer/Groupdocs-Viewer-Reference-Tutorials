@@ -3,7 +3,6 @@ title: Ontvang tekstcoördinaten voor beeldweergave
 linktitle: Ontvang tekstcoördinaten voor beeldweergave
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u tekstcoördinaten kunt extraheren voor het renderen van afbeeldingen met GroupDocs.Viewer voor .NET. Verbeter moeiteloos uw documentverwerkingsmogelijkheden.
-type: docs
 weight: 12
 url: /nl/net/rendering-documents-images/get-text-coordinates-image/
 ---

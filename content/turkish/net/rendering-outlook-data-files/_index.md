@@ -3,7 +3,6 @@ title: Outlook Veri Dosyalarını İşleme (PST, OST)
 linktitle: Outlook Veri Dosyalarını İşleme (PST, OST)
 second_title: GroupDocs.Viewer .NET API'si
 description: .NET için GroupDocs.Viewer ile Outlook Veri Dosyaları (PST, OST) oluşturma eğitimlerini keşfedin. Verimli belge yönetimi tekniklerini zahmetsizce keşfedin.
-type: docs
 weight: 39
 url: /tr/net/rendering-outlook-data-files/
 ---

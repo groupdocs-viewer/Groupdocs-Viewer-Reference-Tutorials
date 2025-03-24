@@ -3,7 +3,6 @@ title: İptal Jetonuyla İşlemeyi İptal Et
 linktitle: İptal Jetonuyla İşlemeyi İptal Et
 second_title: GroupDocs.Viewer .NET API'si
 description: Verimli belge görüntüleme için Groupdocs.Viewer for .NET'i .NET projelerinize sorunsuz bir şekilde entegre edin.
-type: docs
 weight: 11
 url: /tr/net/rendering-options/cancel-render-cancellation-token/
 ---

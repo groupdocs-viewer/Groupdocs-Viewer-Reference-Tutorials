@@ -3,7 +3,6 @@ title: Povolit vrstvené vykreslování v PDF
 linktitle: Povolit vrstvené vykreslování v PDF
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak povolit vrstvené vykreslování v dokumentech PDF pomocí GroupDocs.Viewer pro .NET. Vylepšete zážitek ze sledování dokumentů bez námahy.
-type: docs
 weight: 15
 url: /cs/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

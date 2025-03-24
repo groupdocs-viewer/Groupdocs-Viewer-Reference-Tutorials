@@ -3,7 +3,6 @@ title: Rendereljen APNG képeket
 linktitle: Rendereljen APNG képeket
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg APNG-képeket különböző formátumokban a Groupdocs.Viewer for .NET használatával. Lépésről lépésre útmutató kódpéldákkal.
-type: docs
 weight: 11
 url: /hu/net/image-rendering/render-apng-images/
 ---

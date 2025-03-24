@@ -3,7 +3,6 @@ title: Állítsa be az oldalméretet e-mail üzenetek megjelenítésekor
 linktitle: Állítsa be az oldalméretet e-mail üzenetek megjelenítésekor
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan állíthatja be az oldalméretet, amikor az e-mail üzeneteket PDF-formátumba rendereli a GroupDocs.Viewer for .NET segítségével. Növelje a dokumentumok megtekintésének hatékonyságát.
-type: docs
 weight: 10
 url: /hu/net/rendering-email-messages/adjust-page-size-email/
 ---

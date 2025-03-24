@@ -3,7 +3,6 @@ title: Рендеринг по разрывам страниц
 linktitle: Рендеринг по разрывам страниц
 second_title: GroupDocs.Viewer .NET API
 description: Исследуйте возможности GroupDocs.Viewer для .NET в точном отображении документов. Следуйте нашему пошаговому руководству по рендерингу с помощью разрывов страниц.
-type: docs
 weight: 14
 url: /ru/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

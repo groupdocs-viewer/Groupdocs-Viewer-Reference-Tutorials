@@ -3,7 +3,6 @@ title: Legen Sie Bildgrößenbeschränkungen fest
 linktitle: Legen Sie Bildgrößenbeschränkungen fest
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET mühelos Bildgrößenbeschränkungen in .NET-Anwendungen festlegen und so das Anzeigeerlebnis von Dokumenten verbessern.
-type: docs
 weight: 21
 url: /de/net/rendering-options/set-image-size-limits/
 ---

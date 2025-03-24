@@ -3,7 +3,6 @@ title: ドキュメント内のページの順序を変更する
 linktitle: ドキュメント内のページの順序を変更する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してドキュメント内のページを並べ替える方法を学びます。シームレスなドキュメント管理については、段階的なチュートリアルに従ってください。
-type: docs
 weight: 19
 url: /ja/net/rendering-options/reorder-pages/
 ---

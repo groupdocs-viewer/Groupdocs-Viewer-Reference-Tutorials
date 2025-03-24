@@ -3,7 +3,6 @@ title: Sayıları Oluşturma
 linktitle: Sayıları Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: Numbers dosyalarını sorunsuz bir şekilde işlemek için Groupdocs.Viewer for .NET'in gücünü keşfedin. Zahmetsizce HTML, JPG, PNG ve PDF'ye dönüştürün.
-type: docs
 weight: 15
 url: /tr/net/spreadsheet-rendering-options/rendering-numbers/
 ---

@@ -3,7 +3,6 @@ title: Vykreslit dokument s komentáři
 linktitle: Vykreslit dokument s komentáři
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat dokumenty s komentáři pomocí GroupDocs.Viewer for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou integraci.
-type: docs
 weight: 13
 url: /cs/net/rendering-options/render-document-comments/
 ---

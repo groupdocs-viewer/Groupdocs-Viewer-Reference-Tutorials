@@ -3,7 +3,6 @@ title: Απενεργοποιήστε την ομαδοποίηση χαρακτ
 linktitle: Απενεργοποιήστε την ομαδοποίηση χαρακτήρων σε PDF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να απενεργοποιείτε την ομαδοποίηση χαρακτήρων σε αρχεία PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε το βήμα προς βήμα εκμάθησή μας για απρόσκοπτη απόδοση εγγράφων.
-type: docs
 weight: 11
 url: /el/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

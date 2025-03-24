@@ -3,7 +3,6 @@ title: Visio Şekillerini Oluştur
 linktitle: Visio Şekillerini Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: Bu kapsamlı içerikle GroupDocs.Viewer for .NET'i kullanarak Visio rakamlarını nasıl oluşturacağınızı öğrenin. .NET uygulamalarınızdaki belge görüntüleme yeteneklerini geliştirin.
-type: docs
 weight: 10
 url: /tr/net/rendering-visio-documents/render-visio-figures/
 ---

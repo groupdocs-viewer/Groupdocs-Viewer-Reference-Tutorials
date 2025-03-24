@@ -3,7 +3,6 @@ title: Přejmenujte pole e-mailu během vykreslování
 linktitle: Přejmenujte pole e-mailu během vykreslování
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete prohlížení dokumentů pomocí GroupDocs.Viewer pro .NET. Bezproblémově vykreslujte a přizpůsobujte e-maily.
-type: docs
 weight: 12
 url: /cs/net/rendering-email-messages/rename-email-fields/
 ---

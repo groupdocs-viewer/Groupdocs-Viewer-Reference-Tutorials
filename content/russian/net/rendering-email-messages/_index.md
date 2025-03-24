@@ -3,7 +3,6 @@ title: Рендеринг сообщений электронной почты
 linktitle: Рендеринг сообщений электронной почты
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как GroupDocs.Viewer для .NET упрощает преобразование сообщений электронной почты в файлы PDF. Научитесь настраивать размер страницы, устанавливать формат DateTime и эффективно переименовывать поля.
-type: docs
 weight: 27
 url: /ru/net/rendering-email-messages/
 ---

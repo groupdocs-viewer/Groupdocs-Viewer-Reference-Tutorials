@@ -3,7 +3,6 @@ title: Excluir fuentes del HTML renderizado
 linktitle: Excluir fuentes del HTML renderizado
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a excluir fuentes del HTML renderizado usando GroupDocs.Viewer para .NET. Siga esta guía paso a paso para una visualización perfecta de los documentos.
-type: docs
 weight: 10
 url: /es/net/rendering-documents-html/exclude-fonts-html/
 ---

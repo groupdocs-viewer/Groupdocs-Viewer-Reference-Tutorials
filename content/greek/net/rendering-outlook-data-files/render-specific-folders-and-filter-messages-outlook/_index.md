@@ -3,7 +3,6 @@ title: Απόδοση συγκεκριμένων φακέλων και φίλτ�
 linktitle: Απόδοση συγκεκριμένων φακέλων και φίλτρων μηνυμάτων (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε συγκεκριμένους φακέλους και να φιλτράρετε μηνύματα στο Outlook χρησιμοποιώντας το GroupDocs.Viewer για .NET. Απλοποιήστε τη διαχείριση εγγράφων σε εφαρμογές .NET.
-type: docs
 weight: 11
 url: /el/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

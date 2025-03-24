@@ -3,7 +3,6 @@ title: Папка архива рендеринга
 linktitle: Папка архива рендеринга
 second_title: GroupDocs.Viewer .NET API
 description: Легко интегрируйте GroupDocs.Viewer для .NET в свои приложения .NET для эффективного рендеринга и просмотра документов.
-type: docs
 weight: 11
 url: /ru/net/rendering-archive-files/render-archive-folder/
 ---

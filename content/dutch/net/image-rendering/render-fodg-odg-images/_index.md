@@ -3,7 +3,6 @@ title: Geef FODG- en ODG-afbeeldingen weer
 linktitle: Geef FODG- en ODG-afbeeldingen weer
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u FODG- en ODG-afbeeldingen kunt renderen naar HTML, JPG, PNG en PDF met GroupDocs.Viewer voor .NET. Verbeter uw documentverwerking.
-type: docs
 weight: 15
 url: /nl/net/image-rendering/render-fodg-odg-images/
 ---

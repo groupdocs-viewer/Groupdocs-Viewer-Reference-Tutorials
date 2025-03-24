@@ -3,7 +3,6 @@ title: Φόρτωση εγγράφων που προστατεύονται με 
 linktitle: Φόρτωση εγγράφων που προστατεύονται με κωδικό πρόσβασης
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε εύκολα την προβολή εγγράφων που προστατεύεται με κωδικό πρόσβασης σε εφαρμογές .NET χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε το βήμα προς βήμα σεμινάριο μας για απρόσκοπτη.
-type: docs
 weight: 12
 url: /el/net/advanced-loading/load-password-protected-document/
 ---

@@ -3,7 +3,6 @@ title: Při vykreslování archivních souborů zadejte název souboru
 linktitle: Při vykreslování archivních souborů zadejte název souboru
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat archivní soubory v .NET pomocí GroupDocs.Viewer, čímž se vylepšují možnosti správy dokumentů.
-type: docs
 weight: 14
 url: /cs/net/rendering-archive-files/specify-filename-render-archive/
 ---

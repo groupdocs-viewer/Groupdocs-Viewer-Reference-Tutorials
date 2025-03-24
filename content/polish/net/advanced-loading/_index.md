@@ -3,7 +3,6 @@ title: Zaawansowane opcje ładowania
 linktitle: Zaawansowane opcje ładowania
 second_title: GroupDocs.Viewer API .NET
 description: Ulepsz swoje aplikacje .NET dzięki samouczkom GroupDocs.Viewer for .NET. Dowiedz się, jak określać typy plików, zarządzać kodowaniem, ładować dokumenty chronione hasłem i nie tylko.
-type: docs
 weight: 21
 url: /pl/net/advanced-loading/
 ---

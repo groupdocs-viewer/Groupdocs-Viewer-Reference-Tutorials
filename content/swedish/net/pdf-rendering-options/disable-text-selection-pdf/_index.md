@@ -3,7 +3,6 @@ title: Inaktivera textval i PDF
 linktitle: Inaktivera textval i PDF
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du inaktiverar textval i PDF med GroupDocs.Viewer för .NET. Följ vår steg-för-steg-guide för sömlös integration.
-type: docs
 weight: 13
 url: /sv/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

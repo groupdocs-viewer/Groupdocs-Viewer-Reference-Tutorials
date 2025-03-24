@@ -3,7 +3,6 @@ title: Render Layers in CAD Drawings
 linktitle: Render Layers in CAD Drawings
 second_title: GroupDocs.Viewer .NET API
 description: Render CAD drawings seamlessly in .NET applications with GroupDocs.Viewer for .NET. Explore rendering options, customize layers, and more.
-type: docs
 weight: 13
 url: /net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Before diving into using GroupDocs.Viewer for .NET, ensure you have the followin
 - Basic understanding of C# programming language.
 - .NET development environment set up on your machine.
 - GroupDocs.Viewer for .NET installed. You can download it from [here](https://releases.groupdocs.com/viewer/net/).
-- Access to the GroupDocs.Viewer for .NET documentation for reference, which can be found [here](https://reference.groupdocs.com/viewer/net/).
+- Access to the GroupDocs.Viewer for .NET documentation for tutorials, which can be found [here](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Import Namespaces
 To start using GroupDocs.Viewer for .NET, you need to import the required namespaces in your project. Follow these steps:

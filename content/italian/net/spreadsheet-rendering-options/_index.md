@@ -3,7 +3,6 @@ title: Opzioni di rendering del foglio di calcolo
 linktitle: Opzioni di rendering del foglio di calcolo
 second_title: API GroupDocs.Viewer .NET
 description: Migliora facilmente la visualizzazione dei documenti in .NET con i tutorial di GroupDocs.Viewer. Impara a regolare l'overflow del testo, a eseguire il rendering delle linee della griglia e altro ancora.
-type: docs
 weight: 37
 url: /it/net/spreadsheet-rendering-options/
 ---

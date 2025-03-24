@@ -3,7 +3,6 @@ title: Merender Gambar CAD
 linktitle: Merender Gambar CAD
 second_title: GroupDocs.Viewer .NET API
 description: Temukan tutorial untuk merender gambar CAD menggunakan GroupDocs.Viewer untuk .NET. Pelajari cara menyempurnakan aplikasi .NET dengan penanganan file CAD yang lancar.
-type: docs
 weight: 25
 url: /id/net/rendering-cad-drawings/
 ---

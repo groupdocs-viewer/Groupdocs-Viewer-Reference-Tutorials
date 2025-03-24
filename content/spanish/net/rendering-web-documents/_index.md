@@ -3,7 +3,6 @@ title: Representación de documentos web
 linktitle: Representación de documentos web
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar archivos CHM y HTML con márgenes personalizados en .NET usando GroupDocs.Viewer. Convierta CHM a formatos HTML, JPG, PNG y PDF sin problemas.
-type: docs
 weight: 35
 url: /es/net/rendering-web-documents/
 ---

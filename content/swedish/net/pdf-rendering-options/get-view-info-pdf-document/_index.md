@@ -3,7 +3,6 @@ title: Få Visa information för PDF-dokument
 linktitle: Få Visa information för PDF-dokument
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du extraherar visningsinformation från PDF-dokument med GroupDocs.Viewer för .NET i den här omfattande självstudien.
-type: docs
 weight: 16
 url: /sv/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

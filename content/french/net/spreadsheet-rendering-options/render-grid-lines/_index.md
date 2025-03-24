@@ -3,7 +3,6 @@ title: Rendu des lignes de grille
 linktitle: Rendu des lignes de grille
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez la visualisation des documents avec GroupDocs.Viewer pour .NET. Rendre les lignes de quadrillage sans effort. Essayez l'essai gratuit maintenant ! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /fr/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ Dans ce didacticiel, nous avons exploré le processus de rendu des lignes de gri
 ### Des licences temporaires sont-elles disponibles pour GroupDocs.Viewer pour .NET ?
  Oui, vous pouvez obtenir un[permis temporaire](https://purchase.groupdocs.com/temporary-license/) pour GroupDocs.Viewer pour .NET.
 ### Puis-je trouver une documentation détaillée pour GroupDocs.Viewer pour .NET ?
- Absolument! Se référer au[documentation officielle](https://reference.groupdocs.com/viewer/net/) pour des informations détaillées sur l’utilisation de GroupDocs.Viewer pour .NET.
+ Absolument! Se référer au[documentation officielle](https://tutorials.groupdocs.com/viewer/net/) pour des informations détaillées sur l’utilisation de GroupDocs.Viewer pour .NET.
 ### Où puis-je télécharger la dernière version de GroupDocs.Viewer pour .NET ?
  Téléchargez la bibliothèque depuis le[page de sortie officielle](https://releases.groupdocs.com/viewer/net/).

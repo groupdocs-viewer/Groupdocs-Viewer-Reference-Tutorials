@@ -3,7 +3,6 @@ title: تقديم أرشيفات RAR
 linktitle: تقديم أرشيفات RAR
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض أرشيفات RAR إلى تنسيقات HTML أو JPG أو PNG أو PDF باستخدام GroupDocs.Viewer لـ .NET. عرض ومشاركة محتويات أرشيفات RAR بسهولة.
-type: docs
 weight: 13
 url: /ar/net/rendering-archive-files/render-rar/
 ---

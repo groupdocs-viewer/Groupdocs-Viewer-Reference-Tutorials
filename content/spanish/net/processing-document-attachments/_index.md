@@ -3,7 +3,6 @@ title: Procesamiento de documentos adjuntos
 linktitle: Procesamiento de documentos adjuntos
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda cómo integrar sin esfuerzo capacidades de visualización de documentos en sus aplicaciones .NET usando GroupDocs.Viewer. Administre los documentos adjuntos de manera eficiente.
-type: docs
 weight: 32
 url: /es/net/processing-document-attachments/
 --- 

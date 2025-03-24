@@ -3,7 +3,6 @@ title: Rendre les notes et ajuster les unités de temps (MS Project)
 linktitle: Rendre les notes et ajuster les unités de temps (MS Project)
 second_title: API GroupDocs.Viewer .NET
 description: Maîtrisez le rendu des documents MS Project avec GroupDocs.Viewer pour .NET. Restituez des notes, ajustez les unités de temps et explorez facilement différents formats de sortie.
-type: docs
 weight: 11
 url: /fr/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ Oui, GroupDocs.Viewer pour .NET prend en charge le rendu dans divers formats tel
 ### Comment puis-je obtenir une licence temporaire pour GroupDocs.Viewer pour .NET ?
  Visite[ce lien](https://purchase.groupdocs.com/temporary-license/) pour obtenir un permis temporaire.
 ### Où puis-je trouver de la documentation pour GroupDocs.Viewer pour .NET ?
- Se référer à la documentation[ici](https://reference.groupdocs.com/viewer/net/).
+ Se référer à la documentation[ici](https://tutorials.groupdocs.com/viewer/net/).
 ### Où puis-je demander de l'aide ou poser des questions relatives à GroupDocs.Viewer pour .NET ?
  Vous pouvez visiter le forum d'assistance[ici](https://forum.groupdocs.com/c/viewer/9).

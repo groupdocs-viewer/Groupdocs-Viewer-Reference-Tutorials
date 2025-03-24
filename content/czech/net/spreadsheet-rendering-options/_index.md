@@ -3,7 +3,6 @@ title: Možnosti vykreslování tabulky
 linktitle: Možnosti vykreslování tabulky
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete vizualizaci dokumentů v .NET bez námahy pomocí výukových programů GroupDocs.Viewer. Naučte se upravit přetečení textu, vykreslit čáry mřížky a další.
-type: docs
 weight: 37
 url: /cs/net/spreadsheet-rendering-options/
 ---

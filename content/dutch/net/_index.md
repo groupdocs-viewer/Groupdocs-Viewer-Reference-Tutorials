@@ -1,7 +1,6 @@
 ---
 title: Uitgebreide tutorials en voorbeelden van GroupDocs.Viewer voor .NET
 linktitle: GroupDocs.Viewer voor .NET-zelfstudies
-type: docs
 weight: 10
 url: /nl/net/
 description: Ontdek uitgebreide tutorials en voorbeelden voor het integreren van GroupDocs.Viewer .NET in uw apps. Leer stapsgewijze technieken voor verbeterd documentbeheer.

@@ -3,7 +3,6 @@ title: 获取图像渲染的文本坐标
 linktitle: 获取图像渲染的文本坐标
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 提取文本坐标以进行图像渲染。轻松增强您的文档处理能力。
-type: docs
 weight: 12
 url: /zh/net/rendering-documents-images/get-text-coordinates-image/
 ---

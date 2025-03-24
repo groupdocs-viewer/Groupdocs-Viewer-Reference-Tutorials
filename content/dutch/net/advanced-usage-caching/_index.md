@@ -3,7 +3,6 @@ title: Geavanceerd gebruik (caching)
 linktitle: Geavanceerd gebruik (caching)
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek geavanceerde technieken voor het optimaliseren van de documentverwerkingssnelheid in .NET-toepassingen met GroupDocs.Viewer. Leer nu hoe u caching inschakelt voor snellere prestaties!
-type: docs
 weight: 22
 url: /nl/net/advanced-usage-caching/
 ---

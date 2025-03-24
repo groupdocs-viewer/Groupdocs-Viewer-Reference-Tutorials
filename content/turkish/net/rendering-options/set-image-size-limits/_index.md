@@ -3,7 +3,6 @@ title: Resim Boyutu Sınırlarını Ayarlayın
 linktitle: Resim Boyutu Sınırlarını Ayarlayın
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak .NET uygulamalarında görüntü boyutu sınırlarını zahmetsizce nasıl ayarlayacağınızı öğrenin ve belge görüntüleme deneyimlerini geliştirin.
-type: docs
 weight: 21
 url: /tr/net/rendering-options/set-image-size-limits/
 ---

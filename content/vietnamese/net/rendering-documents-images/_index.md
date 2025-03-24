@@ -3,7 +3,6 @@ title: Hiển thị tài liệu thành hình ảnh
 linktitle: Hiển thị tài liệu thành hình ảnh
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá hướng dẫn về cách hiển thị tài liệu thành hình ảnh bằng GroupDocs.Viewer cho .NET. Tối ưu hóa chất lượng hình ảnh, trích xuất tọa độ văn bản và nâng cao trải nghiệm người dùng.
-type: docs
 weight: 30
 url: /vi/net/rendering-documents-images/
 ---

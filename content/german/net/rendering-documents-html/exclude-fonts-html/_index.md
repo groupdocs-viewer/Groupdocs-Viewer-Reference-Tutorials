@@ -3,7 +3,6 @@ title: Schließen Sie Schriftarten aus gerendertem HTML aus
 linktitle: Schließen Sie Schriftarten aus gerendertem HTML aus
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET Schriftarten aus gerendertem HTML ausschließen. Befolgen Sie diese Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentenanzeige.
-type: docs
 weight: 10
 url: /de/net/rendering-documents-html/exclude-fonts-html/
 ---

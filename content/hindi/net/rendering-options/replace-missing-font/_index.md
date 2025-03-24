@@ -3,7 +3,6 @@ title: गुम फ़ॉन्ट बदलें
 linktitle: गुम फ़ॉन्ट बदलें
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer का उपयोग करके .NET दस्तावेज़ों में गुम फ़ॉन्ट को आसानी से बदलने का तरीका जानें। सरल चरणों के साथ सटीक प्रतिपादन सुनिश्चित करें।
-type: docs
 weight: 20
 url: /hi/net/rendering-options/replace-missing-font/
 ---

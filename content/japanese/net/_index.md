@@ -1,7 +1,6 @@
 ---
 title: GroupDocs.Viewer for .NET の包括的なチュートリアルと例
 linktitle: GroupDocs.Viewer for .NET チュートリアル
-type: docs
 weight: 10
 url: /ja/net/
 description: GroupDocs.Viewer .NET をアプリに統合するための包括的なチュートリアルと例をご覧ください。ドキュメント管理を強化するためのテクニックを段階的に学習します。

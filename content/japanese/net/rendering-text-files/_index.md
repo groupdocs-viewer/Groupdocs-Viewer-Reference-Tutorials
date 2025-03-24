@@ -3,7 +3,6 @@ title: テキストファイルのレンダリング
 linktitle: テキストファイルのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: テキスト ファイルのレンダリングに関するチュートリアルで、GroupDocs.Viewer for .NET の可能性を解き放ちます。 .txt ファイルをさまざまな形式に変換して、ドキュメント管理を強化します。
-type: docs
 weight: 33
 url: /ja/net/rendering-text-files/
 ---

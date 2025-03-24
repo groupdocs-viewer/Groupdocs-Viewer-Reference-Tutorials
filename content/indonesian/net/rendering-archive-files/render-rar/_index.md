@@ -3,7 +3,6 @@ title: Render Arsip RAR
 linktitle: Render Arsip RAR
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender arsip RAR ke dalam format HTML, JPG, PNG, atau PDF menggunakan GroupDocs.Viewer untuk .NET. Lihat dan bagikan konten arsip RAR dengan mudah.
-type: docs
 weight: 13
 url: /id/net/rendering-archive-files/render-rar/
 ---

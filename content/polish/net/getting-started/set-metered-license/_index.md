@@ -3,7 +3,6 @@ title: Ustaw licencję taryfową
 linktitle: Ustaw licencję taryfową
 second_title: GroupDocs.Viewer API .NET
 description: Ulepsz swoje aplikacje .NET za pomocą GroupDocs.Viewer, aby zapewnić płynne przeglądanie dokumentów. Z łatwością integruj funkcje renderowania dokumentów ze swoimi projektami.
-type: docs
 weight: 12
 url: /pl/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 Podsumowując, GroupDocs.Viewer dla .NET zapewnia kompleksowe rozwiązanie umożliwiające włączenie funkcji przeglądania dokumentów do aplikacji .NET. Wykonując opisane kroki, możesz łatwo skonfigurować licencję licznikową i zacząć wykorzystywać możliwości GroupDocs.Viewer w swoich projektach.
 ## Często zadawane pytania
 ### P: Gdzie mogę znaleźć dokumentację GroupDocs.Viewer dla .NET?
- Można znaleźć dokumentację[Tutaj](https://reference.groupdocs.com/viewer/net/).
+ Można znaleźć dokumentację[Tutaj](https://tutorials.groupdocs.com/viewer/net/).
 ### P: Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Viewer dla platformy .NET?
  Tak, możesz uzyskać dostęp do bezpłatnego okresu próbnego[Tutaj](https://releases.groupdocs.com/).
 ### P: Jak mogę uzyskać licencje tymczasowe do celów testowych?

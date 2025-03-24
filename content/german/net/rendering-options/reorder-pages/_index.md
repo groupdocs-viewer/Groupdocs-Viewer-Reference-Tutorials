@@ -3,7 +3,6 @@ title: Seiten im Dokument neu anordnen
 linktitle: Seiten im Dokument neu anordnen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie Seiten in einem Dokument mit GroupDocs.Viewer für .NET neu anordnen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentenverwaltung.
-type: docs
 weight: 19
 url: /de/net/rendering-options/reorder-pages/
 ---

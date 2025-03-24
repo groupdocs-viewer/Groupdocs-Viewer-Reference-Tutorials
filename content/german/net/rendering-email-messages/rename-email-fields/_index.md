@@ -3,7 +3,6 @@ title: E-Mail-Felder beim Rendern umbenennen
 linktitle: E-Mail-Felder beim Rendern umbenennen
 second_title: GroupDocs.Viewer .NET-API
 description: Verbessern Sie das Anzeigeerlebnis von Dokumenten mit GroupDocs.Viewer für .NET. E-Mails nahtlos rendern und anpassen.
-type: docs
 weight: 12
 url: /de/net/rendering-email-messages/rename-email-fields/
 ---

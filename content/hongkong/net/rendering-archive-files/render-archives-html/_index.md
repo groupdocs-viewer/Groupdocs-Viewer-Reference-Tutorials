@@ -3,7 +3,6 @@ title: 將檔案渲染到單一或多個 HTML 頁面
 linktitle: 將檔案渲染到單一或多個 HTML 頁面
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 將檔案呈現為 HTML 頁面。輕鬆地將文件檢視功能整合到您的 .NET 應用程式中。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-archive-files/render-archives-html/
 ---

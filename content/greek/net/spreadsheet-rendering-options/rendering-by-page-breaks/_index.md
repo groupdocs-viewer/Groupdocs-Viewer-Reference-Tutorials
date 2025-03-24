@@ -3,7 +3,6 @@ title: Απόδοση με Διακοπές σελίδας
 linktitle: Απόδοση με Διακοπές σελίδας
 second_title: GroupDocs.Viewer .NET API
 description: Εξερευνήστε τη δύναμη του GroupDocs.Viewer για .NET στην απόδοση εγγράφων με ακρίβεια. Ακολουθήστε το βήμα-προς-βήμα σεμινάριο για απόδοση ανά αλλαγή σελίδας.
-type: docs
 weight: 14
 url: /el/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

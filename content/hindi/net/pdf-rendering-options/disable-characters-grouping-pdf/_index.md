@@ -3,7 +3,6 @@ title: पीडीएफ में वर्ण समूहन अक्षम
 linktitle: पीडीएफ में वर्ण समूहन अक्षम करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके PDF में वर्ण समूहन को अक्षम करने का तरीका जानें। निर्बाध दस्तावेज़ प्रतिपादन के लिए हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 11
 url: /hi/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

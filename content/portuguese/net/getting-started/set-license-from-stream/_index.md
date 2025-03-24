@@ -3,7 +3,6 @@ title: Definir licença do Stream
 linktitle: Definir licença do Stream
 second_title: API GroupDocs.Viewer .NET
 description: Aprimore seus aplicativos .NET com GroupDocs.Viewer para visualização perfeita de documentos. Siga nosso guia passo a passo e integre recursos poderosos de visualização de documentos sem esforço.
-type: docs
 weight: 11
 url: /pt/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ Antes de mergulharmos no processo de integração, certifique-se de ter os segui
 1. Conhecimento básico de desenvolvimento .NET: Familiaridade com C# e estrutura .NET é essencial para acompanhar este tutorial.
    
 2.  Pacote GroupDocs.Viewer for .NET: certifique-se de ter baixado e instalado o pacote GroupDocs.Viewer for .NET. Você pode obtê-lo no[Link para Download](https://releases.groupdocs.com/viewer/net/).
-3.  Acesso à documentação do GroupDocs: Mantenha o[documentação](https://reference.groupdocs.com/viewer/net/) útil para referência durante o processo de integração.
+3.  Acesso à documentação do GroupDocs: Mantenha o[documentação](https://tutorials.groupdocs.com/viewer/net/) útil para referência durante o processo de integração.
 
 ## Importar namespaces
 Para começar, importe os namespaces necessários para seu aplicativo .NET. Siga esses passos:

@@ -3,7 +3,6 @@ title: 渲染電子郵件時調整頁面大小
 linktitle: 渲染電子郵件時調整頁面大小
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 將電子郵件呈現為 PDF 時調整頁面大小。提高文檔查看效率。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-email-messages/adjust-page-size-email/
 ---

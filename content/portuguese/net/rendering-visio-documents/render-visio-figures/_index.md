@@ -3,7 +3,6 @@ title: Renderizar figuras do Visio
 linktitle: Renderizar figuras do Visio
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar figuras do Visio usando GroupDocs.Viewer for .NET com este tutorial abrangente. Aprimore os recursos de visualização de documentos em seus aplicativos .NET.
-type: docs
 weight: 10
 url: /pt/net/rendering-visio-documents/render-visio-figures/
 ---

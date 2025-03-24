@@ -1,7 +1,6 @@
 ---
 title: .NET için GroupDocs.Viewer'a ilişkin Kapsamlı Eğitimler ve Örnekler
 linktitle: .NET Eğitimleri için GroupDocs.Viewer
-type: docs
 weight: 10
 url: /tr/net/
 description: GroupDocs.Viewer .NET'i uygulamalarınıza entegre etmeye yönelik kapsamlı eğitimleri ve örnekleri keşfedin. Gelişmiş belge yönetimi için adım adım teknikleri öğrenin.

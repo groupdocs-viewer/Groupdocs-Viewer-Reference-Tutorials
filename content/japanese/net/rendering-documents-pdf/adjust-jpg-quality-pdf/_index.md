@@ -3,7 +3,6 @@ title: レンダリングされた PDF の JPG 画質を調整する
 linktitle: レンダリングされた PDF の JPG 画質を調整する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、レンダリングされた PDF ドキュメントの JPG 画質を調整する方法を学びます。ドキュメントの表示エクスペリエンスを向上させます。
-type: docs
 weight: 11
 url: /ja/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

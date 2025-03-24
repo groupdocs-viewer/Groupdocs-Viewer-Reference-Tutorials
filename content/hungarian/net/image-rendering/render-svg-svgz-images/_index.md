@@ -3,7 +3,6 @@ title: Rendereljen SVG és SVGZ képeket
 linktitle: Rendereljen SVG és SVGZ képeket
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet SVG- és SVGZ-képeket renderelni a GroupDocs.Viewer for .NET használatával. Könnyedén konvertálja a vektorgrafikát HTML, JPG, PNG és PDF formátumba.
-type: docs
 weight: 16
 url: /hu/net/image-rendering/render-svg-svgz-images/
 ---

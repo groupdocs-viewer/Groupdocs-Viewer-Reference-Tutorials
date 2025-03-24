@@ -3,7 +3,6 @@ title: Truy xuất và lưu tệp đính kèm tài liệu
 linktitle: Truy xuất và lưu tệp đính kèm tài liệu
 second_title: API GroupDocs.Viewer .NET
 description: Quản lý hiệu quả các tệp đính kèm tài liệu trong các ứng dụng .NET bằng GroupDocs.Viewer. Truy xuất và lưu tệp đính kèm một cách dễ dàng.
-type: docs
 weight: 12
 url: /vi/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu, bao gồm P
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Viewer cho .NET?
  Giấy phép tạm thời có thể được lấy từ[liên kết này](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Viewer cho .NET ở đâu?
- Tài liệu đầy đủ có sẵn[đây](https://reference.groupdocs.com/viewer/net/).
+ Tài liệu đầy đủ có sẵn[đây](https://tutorials.groupdocs.com/viewer/net/).
 ### Những tùy chọn hỗ trợ nào có sẵn cho GroupDocs.Viewer dành cho .NET?
  Bạn có thể tìm kiếm sự trợ giúp từ diễn đàn cộng đồng[đây](https://forum.groupdocs.com/c/viewer/9).

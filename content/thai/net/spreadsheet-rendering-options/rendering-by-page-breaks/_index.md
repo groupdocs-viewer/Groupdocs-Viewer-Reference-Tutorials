@@ -3,7 +3,6 @@ title: การแสดงผลโดยตัวแบ่งหน้า
 linktitle: การแสดงผลโดยตัวแบ่งหน้า
 second_title: GroupDocs.Viewer .NET API
 description: สำรวจพลังของ GroupDocs.Viewer สำหรับ .NET ในการเรนเดอร์เอกสารด้วยความแม่นยำ ปฏิบัติตามบทช่วยสอนทีละขั้นตอนของเราสำหรับการแสดงผลตามตัวแบ่งหน้า
-type: docs
 weight: 14
 url: /th/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

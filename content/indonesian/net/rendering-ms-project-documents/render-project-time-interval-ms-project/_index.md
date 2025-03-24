@@ -3,7 +3,6 @@ title: Render Interval Waktu Proyek Tertentu (Proyek MS)
 linktitle: Render Interval Waktu Proyek Tertentu (Proyek MS)
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan GroupDocs.Viewer untuk .NET dengan lancar ke dalam aplikasi Anda untuk tampilan dokumen yang efisien. Tingkatkan produktivitas dengan kemampuan rendering serbaguna.
-type: docs
 weight: 12
 url: /id/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

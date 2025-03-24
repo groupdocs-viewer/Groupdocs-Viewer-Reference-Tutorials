@@ -3,7 +3,6 @@ title: Ambil dan Cetak Lampiran Dokumen
 linktitle: Ambil dan Cetak Lampiran Dokumen
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan kemampuan melihat dokumen ke dalam aplikasi .NET Anda secara lancar dengan GroupDocs.Viewer untuk .NET. Ambil dan cetak lampiran dokumen dengan mudah.
-type: docs
 weight: 11
 url: /id/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

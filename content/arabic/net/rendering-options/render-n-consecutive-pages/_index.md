@@ -3,7 +3,6 @@ title: عرض N صفحات متتالية
 linktitle: عرض N صفحات متتالية
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية دمج GroupDocs.Viewer for .NET في تطبيقاتك لعرض المستندات بسهولة مع عدد N من الصفحات المتتالية.
-type: docs
 weight: 16
 url: /ar/net/rendering-options/render-n-consecutive-pages/
 ---

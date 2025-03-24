@@ -3,7 +3,6 @@ title: Reorder Pages in Document
 linktitle: Reorder Pages in Document
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to reorder pages in a document using GroupDocs.Viewer for .NET. Follow our step-by-step tutorial for seamless document management.
-type: docs
 weight: 19
 url: /net/rendering-options/reorder-pages/
 ---

@@ -3,7 +3,6 @@ title: Renderuj plik PDF z oryginalnym rozmiarem strony
 linktitle: Renderuj plik PDF z oryginalnym rozmiarem strony
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować pliki PDF z oryginalnymi rozmiarami stron przy użyciu programu GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku i bezproblemowo zintegruj tę funkcjonalność.
-type: docs
 weight: 17
 url: /pl/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

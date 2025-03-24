@@ -3,7 +3,6 @@ title: Belgeleri Yerel Diskten Yükleme
 linktitle: Belgeleri Yerel Diskten Yükleme
 second_title: GroupDocs.Viewer .NET API'si
 description: Groupdocs.Viewer for .NET'i kullanarak yerel diskinizdeki belgeleri sorunsuz bir şekilde nasıl oluşturacağınızı öğrenin. .NET uygulamalarınızı verimli belgelerle geliştirin.
-type: docs
 weight: 10
 url: /tr/net/loading-documents/loading-document-local-disk/
 ---

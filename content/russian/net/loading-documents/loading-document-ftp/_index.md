@@ -3,7 +3,6 @@ title: Загрузка документов с FTP (дополнительно)
 linktitle: Загрузка документов с FTP (дополнительно)
 second_title: GroupDocs.Viewer .NET API
 description: Интегрируйте GroupDocs.Viewer для .NET в свои приложения для эффективного просмотра документов. Рендеринг документов с FTP без особых усилий.
-type: docs
 weight: 13
 url: /ru/net/loading-documents/loading-document-ftp/
 ---

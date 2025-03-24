@@ -3,7 +3,6 @@ title: Återge dokument till bilder
 linktitle: Återge dokument till bilder
 second_title: GroupDocs.Viewer .NET API
 description: Utforska självstudier om hur du återger dokument till bilder med GroupDocs.Viewer för .NET. Optimera bildkvaliteten, extrahera textkoordinater och förbättra användarupplevelsen.
-type: docs
 weight: 30
 url: /sv/net/rendering-documents-images/
 ---

@@ -3,7 +3,6 @@ title: العرض عن طريق فواصل الصفحات
 linktitle: العرض عن طريق فواصل الصفحات
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف قوة GroupDocs.Viewer لـ .NET في عرض المستندات بدقة. اتبع برنامجنا التعليمي خطوة بخطوة للعرض حسب فواصل الصفحات.
-type: docs
 weight: 14
 url: /ar/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

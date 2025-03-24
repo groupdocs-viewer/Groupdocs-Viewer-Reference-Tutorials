@@ -3,7 +3,6 @@ title: Uzyskaj współrzędne tekstu do renderowania obrazu
 linktitle: Uzyskaj współrzędne tekstu do renderowania obrazu
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak wyodrębnić współrzędne tekstu na potrzeby renderowania obrazu za pomocą programu GroupDocs.Viewer dla platformy .NET. Bez wysiłku zwiększ swoje możliwości przetwarzania dokumentów.
-type: docs
 weight: 12
 url: /pl/net/rendering-documents-images/get-text-coordinates-image/
 ---

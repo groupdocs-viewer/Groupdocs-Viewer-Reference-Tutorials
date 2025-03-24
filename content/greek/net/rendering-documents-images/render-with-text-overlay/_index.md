@@ -3,7 +3,6 @@ title: Απόδοση με επικάλυψη κειμένου για προβο
 linktitle: Απόδοση με επικάλυψη κειμένου για προβολή
 second_title: GroupDocs.Viewer .NET API
 description: Αποδώστε έγγραφα απρόσκοπτα σε εφαρμογές .NET με το GroupDocs.Viewer, υποστηρίζοντας διάφορες μορφές για βελτιωμένη εμπειρία χρήστη.
-type: docs
 weight: 13
 url: /el/net/rendering-documents-images/render-with-text-overlay/
 ---

@@ -3,7 +3,6 @@ title: Adjust JPG Image Quality in Rendered PDF
 linktitle: Adjust JPG Image Quality in Rendered PDF
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to adjust JPG image quality in rendered PDF documents using GroupDocs.Viewer for .NET. Enhance your document viewing experience.
-type: docs
 weight: 11
 url: /net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

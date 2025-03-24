@@ -3,7 +3,6 @@ title: الحد من عدد العناصر التي سيتم عرضها في م�
 linktitle: الحد من عدد العناصر التي سيتم عرضها في ملفات بيانات Outlook
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تحديد عدد العناصر المعروضة في ملفات بيانات Outlook باستخدام Groupdocs.Viewer لـ .NET. اتبع خطواتنا خطوة بخطوة لتحقيق التكامل السلس.
-type: docs
 weight: 12
 url: /ar/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

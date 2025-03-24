@@ -3,7 +3,6 @@ title: Renderuj przy użyciu zasobów osadzonych lub zewnętrznych
 linktitle: Renderuj przy użyciu zasobów osadzonych lub zewnętrznych
 second_title: GroupDocs.Viewer API .NET
 description: Ulepsz przeglądanie dokumentów .NET za pomocą GroupDocs.Viewer, aby zapewnić płynne renderowanie. Postępuj zgodnie z naszym samouczkiem, aby zapewnić skuteczną integrację i doskonałe doświadczenie użytkownika.
-type: docs
 weight: 12
 url: /pl/net/rendering-documents-html/render-html-resources/
 ---

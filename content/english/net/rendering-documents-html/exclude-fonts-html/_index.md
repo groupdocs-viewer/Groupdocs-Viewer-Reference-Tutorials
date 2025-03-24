@@ -3,7 +3,6 @@ title: Exclude Fonts from Rendered HTML
 linktitle: Exclude Fonts from Rendered HTML
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to exclude fonts from rendered HTML using GroupDocs.Viewer for .NET. Follow this step-by-step guide for seamless document display.
-type: docs
 weight: 10
 url: /net/rendering-documents-html/exclude-fonts-html/
 ---

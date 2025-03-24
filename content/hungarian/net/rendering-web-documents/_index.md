@@ -3,7 +3,6 @@ title: Webes dokumentumok renderelése
 linktitle: Webes dokumentumok renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg CHM-fájlokat és HTML-t egyéni margókkal a .NET-ben a GroupDocs.Viewer segítségével. A CHM zökkenőmentes konvertálása HTML, JPG, PNG és PDF formátumokká.
-type: docs
 weight: 35
 url: /hu/net/rendering-web-documents/
 ---

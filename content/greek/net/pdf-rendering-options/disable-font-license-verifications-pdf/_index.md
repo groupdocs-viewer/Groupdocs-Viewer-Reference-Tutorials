@@ -3,7 +3,6 @@ title: Απενεργοποιήστε τις επαληθεύσεις άδεια
 linktitle: Απενεργοποιήστε τις επαληθεύσεις άδειας χρήσης γραμματοσειράς σε PDF
 second_title: GroupDocs.Viewer .NET API
 description: Ξεκλειδώστε τις δυνατότητες απρόσκοπτης προβολής εγγράφων στο .NET σας με το GroupDocs.Viewer για .NET. Ενσωματώστε και προσαρμόστε εύκολα την απόδοση εγγράφων με ελάχιστες εξαρτήσεις.
-type: docs
 weight: 12
 url: /el/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

@@ -3,7 +3,6 @@ title: Преобразование документа в PDF
 linktitle: Преобразование документа в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как преобразовать документы в PDF с помощью GroupDocs.Viewer для .NET. Пошаговое руководство с предварительными условиями и часто задаваемыми вопросами.
-type: docs
 weight: 10
 url: /ru/net/rendering-documents-pdf/render-to-pdf/
 ---

@@ -3,7 +3,6 @@ title: Απενεργοποιήστε την επιλογή κειμένου σ�
 linktitle: Απενεργοποιήστε την επιλογή κειμένου σε PDF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς μπορείτε να απενεργοποιήσετε την επιλογή κειμένου σε PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 13
 url: /el/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

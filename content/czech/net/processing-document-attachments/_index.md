@@ -3,7 +3,6 @@ title: Zpracování příloh dokumentů
 linktitle: Zpracování příloh dokumentů
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak bez námahy integrovat možnosti prohlížení dokumentů do vašich aplikací .NET pomocí GroupDocs.Viewer. Spravujte přílohy dokumentů efektivně.
-type: docs
 weight: 32
 url: /cs/net/processing-document-attachments/
 --- 

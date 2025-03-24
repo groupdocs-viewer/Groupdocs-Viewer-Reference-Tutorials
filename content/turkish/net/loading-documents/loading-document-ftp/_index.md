@@ -3,7 +3,6 @@ title: Belgeleri FTP'den Yükleme (Gelişmiş)
 linktitle: Belgeleri FTP'den Yükleme (Gelişmiş)
 second_title: GroupDocs.Viewer .NET API'si
 description: Verimli belge görüntüleme için GroupDocs.Viewer for .NET'i uygulamalarınıza sorunsuz bir şekilde entegre edin. FTP'deki belgeleri zahmetsizce işleyin.
-type: docs
 weight: 13
 url: /tr/net/loading-documents/loading-document-ftp/
 ---

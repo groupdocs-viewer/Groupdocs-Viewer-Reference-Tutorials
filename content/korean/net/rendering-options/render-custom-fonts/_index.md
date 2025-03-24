@@ -3,7 +3,6 @@ title: 사용자 정의 글꼴로 렌더링
 linktitle: 사용자 정의 글꼴로 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 사용자 정의 글꼴로 문서를 렌더링하는 방법을 알아보세요. 손쉽게 시각적 프레젠테이션을 향상할 수 있습니다.
-type: docs
 weight: 18
 url: /ko/net/rendering-options/render-custom-fonts/
 ---

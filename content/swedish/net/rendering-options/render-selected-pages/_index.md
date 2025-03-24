@@ -3,7 +3,6 @@ title: Rendera valda sidor
 linktitle: Rendera valda sidor
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar valda sidor från dokument med Groupdocs.Viewer för .NET. Steg-för-steg handledning med kodexempel ingår.
-type: docs
 weight: 17
 url: /sv/net/rendering-options/render-selected-pages/
 ---

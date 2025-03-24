@@ -3,7 +3,6 @@ title: Rendering oldaltörésekkel
 linktitle: Rendering oldaltörésekkel
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel a GroupDocs.Viewer for .NET erejét a dokumentumok precíz megjelenítésében. Kövesse lépésenkénti oktatóanyagunkat az oldaltörések szerinti megjelenítéshez.
-type: docs
 weight: 14
 url: /hu/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

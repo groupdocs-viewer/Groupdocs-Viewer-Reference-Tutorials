@@ -3,7 +3,6 @@ title: पाठ फ़ाइलें प्रस्तुत करना
 linktitle: पाठ फ़ाइलें प्रस्तुत करना
 second_title: GroupDocs.Viewer .NET API
 description: टेक्स्ट फ़ाइलों को प्रस्तुत करने पर ट्यूटोरियल के साथ .NET के लिए GroupDocs.Viewer की क्षमता को अनलॉक करें। बेहतर दस्तावेज़ प्रबंधन के लिए .txt फ़ाइलों को विभिन्न स्वरूपों में बदलें।
-type: docs
 weight: 33
 url: /hi/net/rendering-text-files/
 ---

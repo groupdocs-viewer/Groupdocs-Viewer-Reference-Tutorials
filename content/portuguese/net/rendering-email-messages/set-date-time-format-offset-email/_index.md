@@ -3,7 +3,6 @@ title: Definir formato de data e hora e deslocamento de fuso horário (e-mail)
 linktitle: Definir formato de data e hora e deslocamento de fuso horário (e-mail)
 second_title: API GroupDocs.Viewer .NET
 description: Integre o GroupDocs.Viewer for .NET perfeitamente em seus aplicativos para obter recursos avançados de visualização de documentos. Aprimore a experiência do usuário com opções personalizáveis.
-type: docs
 weight: 11
 url: /pt/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

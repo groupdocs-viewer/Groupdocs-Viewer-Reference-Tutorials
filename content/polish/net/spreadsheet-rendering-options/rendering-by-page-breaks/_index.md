@@ -3,7 +3,6 @@ title: Renderowanie według podziałów stron
 linktitle: Renderowanie według podziałów stron
 second_title: GroupDocs.Viewer API .NET
 description: Poznaj możliwości GroupDocs.Viewer dla platformy .NET w precyzyjnym renderowaniu dokumentów. Postępuj zgodnie z naszym samouczkiem krok po kroku dotyczącym renderowania według podziałów stron.
-type: docs
 weight: 14
 url: /pl/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

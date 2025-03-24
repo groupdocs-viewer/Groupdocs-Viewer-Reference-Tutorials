@@ -3,7 +3,6 @@ title: Render met ingebedde of externe bronnen
 linktitle: Render met ingebedde of externe bronnen
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter de weergave van .NET-documenten met GroupDocs.Viewer voor naadloze weergave. Volg onze tutorial voor efficiënte integratie en superieure gebruikerservaring.
-type: docs
 weight: 12
 url: /nl/net/rendering-documents-html/render-html-resources/
 ---

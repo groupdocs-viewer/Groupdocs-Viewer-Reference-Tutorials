@@ -3,7 +3,6 @@ title: تحميل المستندات من القرص المحلي
 linktitle: تحميل المستندات من القرص المحلي
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض المستندات بسلاسة من القرص المحلي الخاص بك باستخدام Groupdocs.Viewer لـ .NET. قم بتحسين تطبيقات .NET الخاصة بك باستخدام مستند فعال.
-type: docs
 weight: 10
 url: /ar/net/loading-documents/loading-document-local-disk/
 ---

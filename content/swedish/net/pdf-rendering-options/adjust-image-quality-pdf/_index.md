@@ -3,7 +3,6 @@ title: Justera bildkvaliteten i PDF
 linktitle: Justera bildkvaliteten i PDF
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du justerar bildkvaliteten i PDF-dokument med GroupDocs.Viewer för .NET. Följ vår steg-för-steg handledning för sömlös integration.
-type: docs
 weight: 10
 url: /sv/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

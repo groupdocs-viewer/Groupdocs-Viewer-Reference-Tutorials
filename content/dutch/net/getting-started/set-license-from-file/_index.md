@@ -3,7 +3,6 @@ title: Licentie instellen vanuit bestand
 linktitle: Licentie instellen vanuit bestand
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u GroupDocs.Viewer voor .NET moeiteloos in uw applicaties kunt integreren. Licentie instellen, documenten bekijken en het uiterlijk van de viewer aanpassen.
-type: docs
 weight: 10
 url: /nl/net/getting-started/set-license-from-file/
 ---

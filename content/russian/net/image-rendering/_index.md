@@ -3,7 +3,6 @@ title: Рендеринг изображений
 linktitle: Рендеринг изображений
 second_title: GroupDocs.Viewer .NET API
 description: Ознакомьтесь с подробными руководствами по рендерингу различных форматов изображений с помощью GroupDocs.Viewer для .NET. От искусственного интеллекта до WMF — изучите примеры плавной интеграции и кодирования.
-type: docs
 weight: 28
 url: /ru/net/image-rendering/
 ---

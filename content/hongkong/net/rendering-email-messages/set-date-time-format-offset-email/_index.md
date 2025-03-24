@@ -3,7 +3,6 @@ title: 設定日期時間格式和時區偏移量（電子郵件）
 linktitle: 設定日期時間格式和時區偏移量（電子郵件）
 second_title: GroupDocs.Viewer .NET API
 description: 將 GroupDocs.Viewer for .NET 無縫整合到您的應用程式中，以獲得強大的文件檢視功能。透過可自訂的選項增強使用者體驗。
-type: docs
 weight: 11
 url: /zh-hant/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

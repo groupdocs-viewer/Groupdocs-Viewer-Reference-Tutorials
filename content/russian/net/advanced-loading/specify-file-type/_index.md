@@ -3,7 +3,6 @@ title: Укажите тип файла при загрузке документ
 linktitle: Укажите тип файла при загрузке документов
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как указать тип файла при загрузке документов с помощью GroupDocs.Viewer для .NET. Точная визуализация различных форматов в ваших приложениях .NET.
-type: docs
 weight: 10
 url: /ru/net/advanced-loading/specify-file-type/
 ---

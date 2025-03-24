@@ -3,7 +3,6 @@ title: Pasta de arquivo de renderização
 linktitle: Pasta de arquivo de renderização
 second_title: API GroupDocs.Viewer .NET
 description: Integre o GroupDocs.Viewer for .NET perfeitamente em seus aplicativos .NET para obter recursos eficientes de renderização e visualização de documentos.
-type: docs
 weight: 11
 url: /pt/net/rendering-archive-files/render-archive-folder/
 ---

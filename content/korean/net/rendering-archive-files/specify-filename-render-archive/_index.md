@@ -3,7 +3,6 @@ title: 아카이브 파일을 렌더링할 때 파일 이름 지정
 linktitle: 아카이브 파일을 렌더링할 때 파일 이름 지정
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET에서 보관 파일을 렌더링하여 문서 관리 기능을 향상시키는 방법을 알아보세요.
-type: docs
 weight: 14
 url: /ko/net/rendering-archive-files/specify-filename-render-archive/
 ---

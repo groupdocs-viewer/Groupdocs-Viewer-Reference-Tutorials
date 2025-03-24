@@ -3,7 +3,6 @@ title: Rendera lager i CAD-ritningar
 linktitle: Rendera lager i CAD-ritningar
 second_title: GroupDocs.Viewer .NET API
 description: Återge CAD-ritningar sömlöst i .NET-applikationer med GroupDocs.Viewer för .NET. Utforska renderingsalternativ, anpassa lager och mer.
-type: docs
 weight: 13
 url: /sv/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Innan du börjar använda GroupDocs.Viewer för .NET, se till att du har följan
 - Grundläggande förståelse för programmeringsspråket C#.
 - .NET-utvecklingsmiljö konfigurerad på din maskin.
 -  GroupDocs.Viewer för .NET installerat. Du kan ladda ner den från[här](https://releases.groupdocs.com/viewer/net/).
--  Tillgång till GroupDocs.Viewer för .NET-dokumentationen för referens, som finns[här](https://reference.groupdocs.com/viewer/net/).
+-  Tillgång till GroupDocs.Viewer för .NET-dokumentationen för referens, som finns[här](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importera namnområden
 För att börja använda GroupDocs.Viewer för .NET måste du importera de nödvändiga namnområdena i ditt projekt. Följ dessa steg:

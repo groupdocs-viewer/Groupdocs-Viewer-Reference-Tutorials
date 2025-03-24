@@ -3,7 +3,6 @@ title: Renderizando documentos em imagens
 linktitle: Renderizando documentos em imagens
 second_title: API GroupDocs.Viewer .NET
 description: Explore tutoriais sobre renderização de documentos em imagens usando GroupDocs.Viewer for .NET. Otimize a qualidade da imagem, extraia coordenadas de texto e aprimore a experiência do usuário.
-type: docs
 weight: 30
 url: /pt/net/rendering-documents-images/
 ---

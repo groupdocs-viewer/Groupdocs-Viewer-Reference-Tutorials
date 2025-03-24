@@ -3,7 +3,6 @@ title: Προσαρμόστε το μέγεθος της σελίδας κατά
 linktitle: Προσαρμόστε το μέγεθος της σελίδας κατά την απόδοση μηνυμάτων email
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να προσαρμόζετε το μέγεθος της σελίδας κατά την απόδοση μηνυμάτων email σε PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε την αποτελεσματικότητα προβολής εγγράφων.
-type: docs
 weight: 10
 url: /el/net/rendering-email-messages/adjust-page-size-email/
 ---

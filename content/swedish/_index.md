@@ -3,7 +3,6 @@ title: GroupDocs.Viewer Tutorials - Master Document Viewing Skills
 linktitle: GroupDocs.Viewer självstudier
 additionalTitle: GroupDocs API-referenser
 description: Utforska GroupDocs.Viewer självstudier för omfattande vägledning om hur du maximerar dokumentvisningskapaciteten. Lås upp dess fulla potential idag!
-type: docs
 weight: 11
 url: /sv/
 is_root: true

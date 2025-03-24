@@ -3,7 +3,6 @@ title: छवि आकार सीमाएँ निर्धारित क
 linktitle: छवि आकार सीमाएँ निर्धारित करें
 second_title: GroupDocs.Viewer .NET API
 description: दस्तावेज़ देखने के अनुभव को बेहतर बनाने के लिए .NET के लिए GroupDocs.Viewer का उपयोग करके आसानी से .NET अनुप्रयोगों में छवि आकार सीमा निर्धारित करना सीखें।
-type: docs
 weight: 21
 url: /hi/net/rendering-options/set-image-size-limits/
 ---

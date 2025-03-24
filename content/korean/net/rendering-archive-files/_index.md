@@ -3,7 +3,6 @@ title: 렌더링 아카이브 파일
 linktitle: 렌더링 아카이브 파일
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 아카이브 파일을 렌더링하기 위한 포괄적인 자습서를 살펴보세요. .NET 애플리케이션에 원활하고 효율적으로 통합하세요.
-type: docs
 weight: 24
 url: /ko/net/rendering-archive-files/
 ---

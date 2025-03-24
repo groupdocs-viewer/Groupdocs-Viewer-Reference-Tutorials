@@ -3,7 +3,6 @@ title: Απόδοση περιοχών εκτύπωσης με GroupDocs.Viewer 
 linktitle: Περιοχές εκτύπωσης Render
 second_title: GroupDocs.Viewer .NET API
 description: Εξερευνήστε το GroupDocs.Viewer για .NET και αποδώστε αβίαστα περιοχές εκτύπωσης σε διάφορες μορφές εγγράφων. Δοκιμάστε τη δωρεάν δοκιμή τώρα! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /el/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Συγχαρητήρια! Μάθατε με επιτυχία πώς να χρησιμοποιείτε το GroupDocs.Viewer για .NET για την απόδοση περιοχών εκτύπωσης στα έγγραφά σας. Αυτό το ισχυρό εργαλείο ανοίγει νέες δυνατότητες για απόδοση εγγράφων στις εφαρμογές σας .NET.
 ## Συχνές ερωτήσεις
 ### Είναι το GroupDocs.Viewer συμβατό με διαφορετικές μορφές εγγράφων;
- Ναι, το GroupDocs.Viewer υποστηρίζει ένα ευρύ φάσμα μορφών εγγράφων, συμπεριλαμβανομένων των PDF, DOCX, XLSX και άλλων. Αναφέρομαι στο[τεκμηρίωση](https://reference.groupdocs.com/viewer/net/) για μια πλήρη λίστα.
+ Ναι, το GroupDocs.Viewer υποστηρίζει ένα ευρύ φάσμα μορφών εγγράφων, συμπεριλαμβανομένων των PDF, DOCX, XLSX και άλλων. Αναφέρομαι στο[τεκμηρίωση](https://tutorials.groupdocs.com/viewer/net/) για μια πλήρη λίστα.
 ### Μπορώ να δοκιμάσω το GroupDocs.Viewer πριν κάνω μια αγορά;
  Απολύτως! Μπορείτε να εξερευνήσετε το εργαλείο με μια δωρεάν δοκιμή διαθέσιμη[εδώ](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω υποστήριξη ή να αναζητήσω βοήθεια για τυχόν προβλήματα;

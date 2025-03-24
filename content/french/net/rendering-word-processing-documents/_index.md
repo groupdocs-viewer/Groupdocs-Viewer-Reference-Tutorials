@@ -3,7 +3,6 @@ title: Rendu de documents de traitement de texte
 linktitle: Rendu de documents de traitement de texte
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer efficacement les modifications suivies dans les documents de traitement de texte à l'aide de GroupDocs.Viewer pour .NET. Élevez vos compétences en gestion de documents.
-type: docs
 weight: 36
 url: /fr/net/rendering-word-processing-documents/
 ---

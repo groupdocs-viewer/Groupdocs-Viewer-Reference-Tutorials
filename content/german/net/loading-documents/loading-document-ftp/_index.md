@@ -3,7 +3,6 @@ title: Dokumente von FTP laden (Erweitert)
 linktitle: Dokumente von FTP laden (Erweitert)
 second_title: GroupDocs.Viewer .NET-API
 description: Integrieren Sie GroupDocs.Viewer für .NET nahtlos in Ihre Anwendungen für eine effiziente Dokumentenanzeige. Rendern Sie Dokumente mühelos von FTP.
-type: docs
 weight: 13
 url: /de/net/loading-documents/loading-document-ftp/
 ---

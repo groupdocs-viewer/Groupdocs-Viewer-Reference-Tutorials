@@ -3,7 +3,6 @@ title: Başlarken
 linktitle: Başlarken
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i uygulamalarınıza sorunsuz bir şekilde entegre etmeye yönelik adım adım eğitimleri keşfedin. Lisansları ayarlamayı ve görüntüleyicinin görünümünü özelleştirmeyi öğrenin.
-type: docs
 weight: 26
 url: /tr/net/getting-started/
 ---

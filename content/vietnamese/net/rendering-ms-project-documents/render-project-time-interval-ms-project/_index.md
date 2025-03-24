@@ -3,7 +3,6 @@ title: Kết xuất khoảng thời gian dự án cụ thể (MS Project)
 linktitle: Kết xuất khoảng thời gian dự án cụ thể (MS Project)
 second_title: API GroupDocs.Viewer .NET
 description: Tích hợp GroupDocs.Viewer dành cho .NET vào các ứng dụng của bạn một cách liền mạch để xem tài liệu hiệu quả. Nâng cao năng suất với khả năng kết xuất linh hoạt.
-type: docs
 weight: 12
 url: /vi/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

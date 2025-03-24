@@ -3,7 +3,6 @@ title: Dapatkan Lihat Informasi untuk Gambar CAD
 linktitle: Dapatkan Lihat Informasi untuk Gambar CAD
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengambil informasi tampilan untuk gambar CAD menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan aplikasi .NET Anda dengan penanganan file CAD yang lancar.
-type: docs
 weight: 10
 url: /id/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

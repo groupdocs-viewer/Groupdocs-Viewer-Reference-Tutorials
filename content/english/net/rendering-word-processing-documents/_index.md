@@ -3,7 +3,6 @@ title: Rendering Word Processing Documents
 linktitle: Rendering Word Processing Documents
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to efficiently render tracked changes in Word processing documents using GroupDocs.Viewer for .NET. Elevate your document management skills.
-type: docs
 weight: 36
 url: /net/rendering-word-processing-documents/
 ---

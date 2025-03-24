@@ -3,7 +3,6 @@ title: Render Row and Column Headings
 linktitle: Render Row and Column Headings
 second_title: GroupDocs.Viewer .NET API
 description: Enhance document viewing in .NET! Learn to render row and column headings using GroupDocs.Viewer for .NET. Explore HTML, JPG, PNG, and PDF outputs.
-type: docs
 weight: 18
 url: /net/spreadsheet-rendering-options/render-row-column-headings/
 ---

@@ -3,7 +3,6 @@ title: Rendre le document avec des notes
 linktitle: Rendre le document avec des notes
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des documents avec des notes à l'aide de GroupDocs.Viewer pour .NET. Tutoriel étape par étape pour une intégration transparente dans vos applications .NET.
-type: docs
 weight: 14
 url: /fr/net/rendering-options/render-document-notes/
 ---

@@ -3,7 +3,6 @@ title: PDFの画質を調整する
 linktitle: PDFの画質を調整する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して PDF ドキュメントの画質を調整する方法を学びます。シームレスな統合については、段階的なチュートリアルに従ってください。
-type: docs
 weight: 10
 url: /ja/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

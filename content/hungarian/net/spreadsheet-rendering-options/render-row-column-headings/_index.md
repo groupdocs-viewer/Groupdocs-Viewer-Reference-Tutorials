@@ -3,7 +3,6 @@ title: Sorok és oszlopok fejléceinek megjelenítése
 linktitle: Sorok és oszlopok fejléceinek megjelenítése
 second_title: GroupDocs.Viewer .NET API
 description: Javítsa a dokumentumok megtekintését .NET-ben! Ismerje meg a sorok és oszlopok fejléceinek megjelenítését a GroupDocs.Viewer for .NET segítségével. Fedezze fel a HTML, JPG, PNG és PDF kimeneteket.
-type: docs
 weight: 18
 url: /hu/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

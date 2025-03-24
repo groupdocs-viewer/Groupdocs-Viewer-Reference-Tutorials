@@ -3,7 +3,6 @@ title: Dokumentum renderelése JPGPNG formátumban
 linktitle: Dokumentum renderelése JPGPNG formátumban
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel, hogyan lehet zökkenőmentesen renderelni dokumentumokat JPG/PNG formátumban .NET-ben a GroupDocs.Viewer segítségével a jobb felhasználói élmény és termelékenység érdekében.
-type: docs
 weight: 10
 url: /hu/net/rendering-documents-images/render-jpg-png/
 ---
@@ -106,7 +105,7 @@ V: Ideiglenes licencet kérhet a következőtől[itt](https://purchase.groupdocs
 
 ### K: Hol találom a GroupDocs.Viewer for .NET dokumentációját?
 
- V: A részletes dokumentáció elérhető[itt](https://reference.groupdocs.com/viewer/net/).
+ V: A részletes dokumentáció elérhető[itt](https://tutorials.groupdocs.com/viewer/net/).
 
 ### K: Hol kaphatok támogatást, vagy hol tehetek fel kérdéseket a GroupDocs.Viewer for .NET-hez kapcsolódóan?
 

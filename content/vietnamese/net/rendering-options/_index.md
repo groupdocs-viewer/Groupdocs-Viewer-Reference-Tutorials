@@ -3,7 +3,6 @@ title: Tùy chọn hiển thị
 linktitle: Tùy chọn hiển thị
 second_title: API GroupDocs.Viewer .NET
 description: Dễ dàng tích hợp GroupDocs.Viewer dành cho .NET vào ứng dụng của bạn với các hướng dẫn về tùy chọn hiển thị, từ thêm hình mờ đến tùy chỉnh phông chữ.
-type: docs
 weight: 23
 url: /vi/net/rendering-options/
 ---

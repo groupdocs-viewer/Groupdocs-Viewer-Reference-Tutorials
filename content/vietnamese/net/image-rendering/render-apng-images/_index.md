@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh APNG
 linktitle: Kết xuất hình ảnh APNG
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị hình ảnh APNG ở nhiều định dạng khác nhau bằng Groupdocs.Viewer cho .NET. Hướng dẫn từng bước kèm theo các ví dụ về mã.
-type: docs
 weight: 11
 url: /vi/net/image-rendering/render-apng-images/
 ---

@@ -3,7 +3,6 @@ title: Renderuj dokument do formatu PDF
 linktitle: Renderuj dokument do formatu PDF
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować dokumenty do formatu PDF przy użyciu programu GroupDocs.Viewer dla platformy .NET. Przewodnik krok po kroku z wymaganiami wstępnymi i często zadawanymi pytaniami.
-type: docs
 weight: 10
 url: /pl/net/rendering-documents-pdf/render-to-pdf/
 ---

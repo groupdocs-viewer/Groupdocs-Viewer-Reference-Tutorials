@@ -3,7 +3,6 @@ title: Bật gợi ý phông chữ trong PDF
 linktitle: Bật gợi ý phông chữ trong PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách bật gợi ý phông chữ trong tài liệu PDF bằng GroupDocs.Viewer dành cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp liền mạch.
-type: docs
 weight: 14
 url: /vi/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

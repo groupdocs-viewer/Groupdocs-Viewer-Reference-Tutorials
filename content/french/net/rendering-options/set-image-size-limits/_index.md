@@ -3,7 +3,6 @@ title: Définir les limites de taille d'image
 linktitle: Définir les limites de taille d'image
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment définir facilement des limites de taille d'image dans les applications .NET à l'aide de GroupDocs.Viewer pour .NET, améliorant ainsi l'expérience de visualisation de documents.
-type: docs
 weight: 21
 url: /fr/net/rendering-options/set-image-size-limits/
 ---

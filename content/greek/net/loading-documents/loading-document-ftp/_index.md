@@ -3,7 +3,6 @@ title: Φόρτωση εγγράφων από FTP (Για προχωρημένο
 linktitle: Φόρτωση εγγράφων από FTP (Για προχωρημένους)
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε απρόσκοπτα το GroupDocs.Viewer για .NET στις εφαρμογές σας για αποτελεσματική προβολή εγγράφων. Αποδώστε έγγραφα από FTP χωρίς κόπο.
-type: docs
 weight: 13
 url: /el/net/loading-documents/loading-document-ftp/
 ---

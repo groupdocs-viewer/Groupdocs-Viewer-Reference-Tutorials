@@ -3,7 +3,6 @@ title: Bật hiển thị lớp trong PDF
 linktitle: Bật hiển thị lớp trong PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách bật hiển thị lớp trong tài liệu PDF bằng GroupDocs.Viewer dành cho .NET. Nâng cao trải nghiệm xem tài liệu một cách dễ dàng.
-type: docs
 weight: 15
 url: /vi/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

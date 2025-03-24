@@ -3,7 +3,6 @@ title: Minifikujte vykreslený dokument HTML
 linktitle: Minifikujte vykreslený dokument HTML
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak hladce vykreslovat dokumenty HTML v aplikacích .NET pomocí GroupDocs.Viewer pro .NET.
-type: docs
 weight: 11
 url: /cs/net/rendering-documents-html/minify-html/
 ---

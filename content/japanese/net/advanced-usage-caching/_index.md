@@ -3,7 +3,6 @@ title: 高度な使用法 (キャッシュ)
 linktitle: 高度な使用法 (キャッシュ)
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET アプリケーションのドキュメント処理速度を最適化する高度なテクニックをご覧ください。キャッシュを有効にしてパフォーマンスを向上させる方法を今すぐ学びましょう。
-type: docs
 weight: 22
 url: /ja/net/advanced-usage-caching/
 ---

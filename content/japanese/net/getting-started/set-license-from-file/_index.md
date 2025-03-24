@@ -3,7 +3,6 @@ title: ファイルからライセンスを設定
 linktitle: ファイルからライセンスを設定
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET をアプリケーションに簡単に統合する方法を学びます。ライセンスを設定し、ドキュメントを表示し、ビューアの外観をカスタマイズします。
-type: docs
 weight: 10
 url: /ja/net/getting-started/set-license-from-file/
 ---

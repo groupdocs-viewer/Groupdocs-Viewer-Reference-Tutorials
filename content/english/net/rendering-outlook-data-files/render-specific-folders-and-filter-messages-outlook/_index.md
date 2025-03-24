@@ -3,7 +3,6 @@ title: Render Specific Folders and Filter Messages (Outlook)
 linktitle: Render Specific Folders and Filter Messages (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render specific folders and filter messages in Outlook using GroupDocs.Viewer for .NET. Simplify document management in .NET applications.
-type: docs
 weight: 11
 url: /net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

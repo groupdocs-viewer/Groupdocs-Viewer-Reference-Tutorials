@@ -3,7 +3,6 @@ title: Vykreslování obrázků
 linktitle: Vykreslování obrázků
 second_title: GroupDocs.Viewer .NET API
 description: Objevte komplexní návody na vykreslování různých obrazových formátů pomocí GroupDocs.Viewer pro .NET. Naučte se bezproblémovou integraci a příklady kódování od AI po WMF.
-type: docs
 weight: 28
 url: /cs/net/image-rendering/
 ---

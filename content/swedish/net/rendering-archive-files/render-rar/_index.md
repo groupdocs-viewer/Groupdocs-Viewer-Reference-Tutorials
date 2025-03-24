@@ -3,7 +3,6 @@ title: Rendera RAR-arkiv
 linktitle: Rendera RAR-arkiv
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar RAR-arkiv till HTML-, JPG-, PNG- eller PDF-format med GroupDocs.Viewer för .NET. Visa och dela enkelt innehållet i RAR-arkiv.
-type: docs
 weight: 13
 url: /sv/net/rendering-archive-files/render-rar/
 ---

@@ -3,7 +3,6 @@ title: फ़ाइल से लाइसेंस सेट करें
 linktitle: फ़ाइल से लाइसेंस सेट करें
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए GroupDocs.Viewer को अपने अनुप्रयोगों में आसानी से कैसे एकीकृत किया जाए। लाइसेंस सेट करें, दस्तावेज़ देखें और दर्शकों की उपस्थिति को अनुकूलित करें।
-type: docs
 weight: 10
 url: /hi/net/getting-started/set-license-from-file/
 ---

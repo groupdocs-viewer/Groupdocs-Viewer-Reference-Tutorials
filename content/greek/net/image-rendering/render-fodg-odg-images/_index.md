@@ -3,7 +3,6 @@ title: Απόδοση εικόνων FODG και ODG
 linktitle: Απόδοση εικόνων FODG και ODG
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε εικόνες FODG και ODG σε HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε τον χειρισμό των εγγράφων σας.
-type: docs
 weight: 15
 url: /el/net/image-rendering/render-fodg-odg-images/
 ---

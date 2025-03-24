@@ -3,7 +3,6 @@ title: Laden Sie Dokumente mit spezifischer Kodierung
 linktitle: Laden Sie Dokumente mit spezifischer Kodierung
 second_title: GroupDocs.Viewer .NET-API
 description: Erweitern Sie Ihre .NET-Anwendungen durch nahtlose Dokumentenanzeige mit GroupDocs.Viewer für .NET. Laden Sie mühelos Dokumente mit spezifischer Kodierung und passen Sie das Anzeigeerlebnis an.
-type: docs
 weight: 11
 url: /de/net/advanced-loading/load-documents-encoding/
 ---

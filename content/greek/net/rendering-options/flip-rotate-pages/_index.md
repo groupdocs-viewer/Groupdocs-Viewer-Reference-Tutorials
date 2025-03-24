@@ -3,7 +3,6 @@ title: Αναστροφή και περιστροφή σελίδων
 linktitle: Αναστροφή και περιστροφή σελίδων
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να ενσωματώνετε το Groupdocs.Viewer για .NET στις εφαρμογές σας για απρόσκοπτη απόδοση, ανατροπή και περιστροφή εγγράφων.
-type: docs
 weight: 12
 url: /el/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ url: /el/net/rendering-options/flip-rotate-pages/
 ## Προαπαιτούμενα
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε ρυθμίσει τις ακόλουθες προϋποθέσεις:
 ### Εγκατάσταση του Groupdocs.Viewer για .NET
- Για να χρησιμοποιήσετε το Groupdocs.Viewer για .NET, πρέπει να εγκαταστήσετε το πακέτο μέσω του NuGet Package Manager. Μπορείτε να βρείτε αναλυτικές οδηγίες εγκατάστασης στο[τεκμηρίωση](https://reference.groupdocs.com/viewer/net/).
+ Για να χρησιμοποιήσετε το Groupdocs.Viewer για .NET, πρέπει να εγκαταστήσετε το πακέτο μέσω του NuGet Package Manager. Μπορείτε να βρείτε αναλυτικές οδηγίες εγκατάστασης στο[τεκμηρίωση](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Εισαγωγή χώρων ονομάτων
 Βεβαιωθείτε ότι έχετε εισαγάγει τους απαραίτητους χώρους ονομάτων στο έργο σας για να χρησιμοποιήσετε αποτελεσματικά το Groupdocs.Viewer για .NET.

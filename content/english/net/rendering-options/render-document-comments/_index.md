@@ -3,7 +3,6 @@ title: Render Document with Comments
 linktitle: Render Document with Comments
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render documents with comments using GroupDocs.Viewer for .NET. Follow our step-by-step guide for seamless integration.
-type: docs
 weight: 13
 url: /net/rendering-options/render-document-comments/
 ---

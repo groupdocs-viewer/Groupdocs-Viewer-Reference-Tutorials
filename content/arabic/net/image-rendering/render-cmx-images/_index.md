@@ -3,7 +3,6 @@ title: تقديم صور CMX
 linktitle: تقديم صور CMX
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور CMX إلى تنسيقات مختلفة بسهولة باستخدام GroupDocs.Viewer لـ .NET. تعزيز إدارة المستندات الخاصة بك.
-type: docs
 weight: 13
 url: /ar/net/image-rendering/render-cmx-images/
 ---

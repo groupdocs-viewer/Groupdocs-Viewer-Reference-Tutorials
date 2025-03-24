@@ -3,7 +3,6 @@ title: Отключить выделение текста в PDF
 linktitle: Отключить выделение текста в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как отключить выделение текста в PDF с помощью GroupDocs.Viewer для .NET. Следуйте нашему пошаговому руководству для бесшовной интеграции.
-type: docs
 weight: 13
 url: /ru/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

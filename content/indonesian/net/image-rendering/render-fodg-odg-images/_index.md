@@ -3,7 +3,6 @@ title: Render Gambar FODG dan ODG
 linktitle: Render Gambar FODG dan ODG
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender gambar FODG dan ODG ke HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan penanganan dokumen Anda.
-type: docs
 weight: 15
 url: /id/net/image-rendering/render-fodg-odg-images/
 ---

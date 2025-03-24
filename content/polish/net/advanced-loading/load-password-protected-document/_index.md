@@ -3,7 +3,6 @@ title: Załaduj dokumenty chronione hasłem
 linktitle: Załaduj dokumenty chronione hasłem
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo integruj przeglądanie dokumentów chronionych hasłem z aplikacjami .NET za pomocą GroupDocs.Viewer dla .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby uzyskać płynność.
-type: docs
 weight: 12
 url: /pl/net/advanced-loading/load-password-protected-document/
 ---

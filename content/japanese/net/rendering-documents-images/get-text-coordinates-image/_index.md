@@ -3,7 +3,6 @@ title: 画像レンダリング用のテキスト座標を取得する
 linktitle: 画像レンダリング用のテキスト座標を取得する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して画像レンダリング用のテキスト座標を抽出する方法を学習します。ドキュメント処理能力を簡単に強化します。
-type: docs
 weight: 12
 url: /ja/net/rendering-documents-images/get-text-coordinates-image/
 ---

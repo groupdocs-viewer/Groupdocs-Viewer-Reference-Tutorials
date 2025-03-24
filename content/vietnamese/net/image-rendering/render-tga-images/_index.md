@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh TGA
 linktitle: Kết xuất hình ảnh TGA
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách dễ dàng hiển thị hình ảnh TGA trong các ứng dụng .NET bằng GroupDocs.Viewer. Nâng cao khả năng hiển thị hình ảnh của bạn.
-type: docs
 weight: 17
 url: /vi/net/image-rendering/render-tga-images/
 ---

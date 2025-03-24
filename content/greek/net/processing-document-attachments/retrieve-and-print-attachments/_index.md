@@ -3,7 +3,6 @@ title: Ανάκτηση και εκτύπωση συνημμένων εγγρά�
 linktitle: Ανάκτηση και εκτύπωση συνημμένων εγγράφων
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε τις δυνατότητες προβολής εγγράφων στις εφαρμογές σας .NET απρόσκοπτα με το GroupDocs.Viewer για .NET. Ανάκτηση και εκτύπωση συνημμένων εγγράφων χωρίς κόπο.
-type: docs
 weight: 11
 url: /el/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

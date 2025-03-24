@@ -3,7 +3,6 @@ title: Загрузка документов из потока
 linktitle: Загрузка документов из потока
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко загружать документы из потоков с помощью GroupDocs.Viewer для .NET. Расширьте возможности своих .NET-приложений с помощью мощных возможностей просмотра документов.
-type: docs
 weight: 12
 url: /ru/net/loading-documents/loading-document-stream/
 ---

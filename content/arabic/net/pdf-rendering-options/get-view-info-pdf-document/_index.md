@@ -3,7 +3,6 @@ title: الحصول على معلومات العرض لمستند PDF
 linktitle: الحصول على معلومات العرض لمستند PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية استخراج معلومات العرض من مستندات PDF باستخدام GroupDocs.Viewer لـ .NET في هذا البرنامج التعليمي الشامل.
-type: docs
 weight: 16
 url: /ar/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

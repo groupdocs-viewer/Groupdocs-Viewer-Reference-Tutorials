@@ -3,7 +3,6 @@ title: 裝載文件
 linktitle: 裝載文件
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer .NET 有效地載入和呈現文件。探索增強型 .NET 應用程式的本機磁碟、串流和 FTP 載入教學。
-type: docs
 weight: 20
 url: /zh-hant/net/loading-documents/
 ---

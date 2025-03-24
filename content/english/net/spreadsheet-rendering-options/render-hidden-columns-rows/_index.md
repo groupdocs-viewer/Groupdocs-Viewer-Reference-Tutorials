@@ -3,7 +3,6 @@ title: Render Hidden Columns and Rows
 linktitle: Render Hidden Columns and Rows
 second_title: GroupDocs.Viewer .NET API
 description: Unlock hidden data in spreadsheets effortlessly using GroupDocs.Viewer for .NET. Follow our step-by-step guide to reveal concealed columns and rows.
-type: docs
 weight: 13
 url: /net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

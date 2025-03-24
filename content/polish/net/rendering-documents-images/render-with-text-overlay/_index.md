@@ -3,7 +3,6 @@ title: Renderuj z nałożonym tekstem w celu wyświetlenia
 linktitle: Renderuj z nałożonym tekstem w celu wyświetlenia
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo renderuj dokumenty w aplikacjach .NET za pomocą GroupDocs.Viewer, obsługującego różne formaty w celu zwiększenia komfortu użytkownika.
-type: docs
 weight: 13
 url: /pl/net/rendering-documents-images/render-with-text-overlay/
 ---

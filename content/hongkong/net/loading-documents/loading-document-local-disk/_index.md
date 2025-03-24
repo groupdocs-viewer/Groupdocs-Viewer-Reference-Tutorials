@@ -3,7 +3,6 @@ title: 從本機磁碟載入文檔
 linktitle: 從本機磁碟載入文檔
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 從本機磁碟無縫呈現文件。使用高效的文件增強您的 .NET 應用程式。
-type: docs
 weight: 10
 url: /zh-hant/net/loading-documents/loading-document-local-disk/
 ---

@@ -3,7 +3,6 @@ title: PDF mit Originalseitengröße rendern
 linktitle: PDF mit Originalseitengröße rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET PDFs mit Originalseitengrößen rendern. Befolgen Sie unsere Schritt-für-Schritt-Anleitung und integrieren Sie diese Funktionalität nahtlos.
-type: docs
 weight: 17
 url: /de/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

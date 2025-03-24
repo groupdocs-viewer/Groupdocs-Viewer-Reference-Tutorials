@@ -3,7 +3,6 @@ title: احصل على معلومات العرض لمستندات Microsoft Proj
 linktitle: احصل على معلومات العرض لمستندات Microsoft Project
 second_title: GroupDocs.Viewer .NET API
 description: استكشف البرنامج التعليمي الشامل حول الاستفادة من Groupdocs.Viewer لـ .NET لاسترداد معلومات العرض لمستندات Microsoft Project دون عناء.
-type: docs
 weight: 10
 url: /ar/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

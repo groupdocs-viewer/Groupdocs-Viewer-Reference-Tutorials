@@ -3,7 +3,6 @@ title: Zaawansowane użycie (buforowanie)
 linktitle: Zaawansowane użycie (buforowanie)
 second_title: GroupDocs.Viewer API .NET
 description: Odkryj zaawansowane techniki optymalizacji szybkości przetwarzania dokumentów w aplikacjach .NET dzięki GroupDocs.Viewer. Dowiedz się, jak włączyć buforowanie w celu uzyskania większej wydajności już teraz!
-type: docs
 weight: 22
 url: /pl/net/advanced-usage-caching/
 ---

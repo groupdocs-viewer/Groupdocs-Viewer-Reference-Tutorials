@@ -3,7 +3,6 @@ title: Добавить водяной знак в документ
 linktitle: Добавить водяной знак в документ
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко добавлять водяные знаки в документы с помощью GroupDocs.Viewer для .NET. Повысьте безопасность документов и брендинг с помощью этого простого руководства.
-type: docs
 weight: 10
 url: /ru/net/rendering-options/add-watermark/
 ---

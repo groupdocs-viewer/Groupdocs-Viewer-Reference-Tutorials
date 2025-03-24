@@ -3,7 +3,6 @@ title: Renderizar imágenes FODG y ODG
 linktitle: Renderizar imágenes FODG y ODG
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a renderizar imágenes FODG y ODG en HTML, JPG, PNG y PDF utilizando GroupDocs.Viewer para .NET. Mejore su manejo de documentos.
-type: docs
 weight: 15
 url: /es/net/image-rendering/render-fodg-odg-images/
 ---

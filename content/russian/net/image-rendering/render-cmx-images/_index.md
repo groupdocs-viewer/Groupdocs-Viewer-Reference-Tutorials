@@ -3,7 +3,6 @@ title: Рендеринг изображений CMX
 linktitle: Рендеринг изображений CMX
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко преобразовать изображения CMX в различные форматы с помощью GroupDocs.Viewer для .NET. Улучшите управление документами.
-type: docs
 weight: 13
 url: /ru/net/image-rendering/render-cmx-images/
 ---

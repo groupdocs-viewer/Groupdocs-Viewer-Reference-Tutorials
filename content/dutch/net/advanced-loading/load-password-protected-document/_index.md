@@ -3,7 +3,6 @@ title: Met wachtwoord beveiligde documenten laden
 linktitle: Met wachtwoord beveiligde documenten laden
 second_title: GroupDocs.Viewer .NET-API
 description: Integreer moeiteloos de met een wachtwoord beveiligde documentweergave in .NET-toepassingen met behulp van GroupDocs.Viewer voor .NET. Volg onze stap-voor-stap handleiding voor naadloos.
-type: docs
 weight: 12
 url: /nl/net/advanced-loading/load-password-protected-document/
 ---

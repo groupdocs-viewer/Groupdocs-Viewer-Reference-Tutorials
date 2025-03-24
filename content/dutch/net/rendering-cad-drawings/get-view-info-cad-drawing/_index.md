@@ -3,7 +3,6 @@ title: Bekijk weergave-informatie voor CAD-tekeningen
 linktitle: Bekijk weergave-informatie voor CAD-tekeningen
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u weergavegegevens voor CAD-tekeningen kunt ophalen met GroupDocs.Viewer voor .NET. Verbeter uw .NET-applicaties met naadloze verwerking van CAD-bestanden.
-type: docs
 weight: 10
 url: /nl/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

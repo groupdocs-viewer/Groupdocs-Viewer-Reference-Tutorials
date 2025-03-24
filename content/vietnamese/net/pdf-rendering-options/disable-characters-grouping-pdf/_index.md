@@ -3,7 +3,6 @@ title: Vô hiệu hóa nhóm ký tự trong PDF
 linktitle: Vô hiệu hóa nhóm ký tự trong PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tắt tính năng nhóm ký tự trong tệp PDF bằng GroupDocs.Viewer dành cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để hiển thị tài liệu liền mạch.
-type: docs
 weight: 11
 url: /vi/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

@@ -3,7 +3,6 @@ title: โหลดเอกสารจากสตรีม
 linktitle: โหลดเอกสารจากสตรีม
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีโหลดเอกสารจากสตรีมได้อย่างราบรื่นโดยใช้ GroupDocs.Viewer สำหรับ .NET ปรับปรุงแอปพลิเคชัน .NET ของคุณด้วยความสามารถในการดูเอกสารอันทรงพลัง
-type: docs
 weight: 12
 url: /th/net/loading-documents/loading-document-stream/
 ---

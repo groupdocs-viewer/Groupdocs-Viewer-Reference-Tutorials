@@ -3,7 +3,6 @@ title: Oldalak átrendezése a dokumentumban
 linktitle: Oldalak átrendezése a dokumentumban
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan rendezheti át a dokumentum oldalait a GroupDocs.Viewer for .NET segítségével. Kövesse lépésről lépésre bemutató oktatóanyagunkat a zökkenőmentes dokumentumkezelés érdekében.
-type: docs
 weight: 19
 url: /hu/net/rendering-options/reorder-pages/
 ---

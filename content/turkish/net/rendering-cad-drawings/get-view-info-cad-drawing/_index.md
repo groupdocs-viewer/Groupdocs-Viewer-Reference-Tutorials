@@ -3,7 +3,6 @@ title: CAD Çizimleri için Görünüm Bilgilerini Alın
 linktitle: CAD Çizimleri için Görünüm Bilgilerini Alın
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak CAD çizimlerine yönelik görünüm bilgilerinin nasıl alınacağını öğrenin. Sorunsuz CAD dosya işlemeyle .NET uygulamalarınızı geliştirin.
-type: docs
 weight: 10
 url: /tr/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

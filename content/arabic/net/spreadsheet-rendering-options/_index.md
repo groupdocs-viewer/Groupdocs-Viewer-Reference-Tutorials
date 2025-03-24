@@ -3,7 +3,6 @@ title: خيارات عرض جدول البيانات
 linktitle: خيارات عرض جدول البيانات
 second_title: GroupDocs.Viewer .NET API
 description: يمكنك تحسين عرض المستندات بسهولة في .NET باستخدام البرامج التعليمية GroupDocs.Viewer. تعلم كيفية ضبط تجاوز النص وعرض خطوط الشبكة والمزيد.
-type: docs
 weight: 37
 url: /ar/net/spreadsheet-rendering-options/
 ---

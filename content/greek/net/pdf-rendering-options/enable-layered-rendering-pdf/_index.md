@@ -3,7 +3,6 @@ title: Ενεργοποιήστε την απόδοση σε επίπεδα σε
 linktitle: Ενεργοποιήστε την απόδοση σε επίπεδα σε PDF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να ενεργοποιείτε την απόδοση σε επίπεδα σε έγγραφα PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε την εμπειρία προβολής εγγράφων χωρίς κόπο.
-type: docs
 weight: 15
 url: /el/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

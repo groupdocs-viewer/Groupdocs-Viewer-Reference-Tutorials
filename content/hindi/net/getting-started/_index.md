@@ -3,7 +3,6 @@ title: शुरू करना
 linktitle: शुरू करना
 second_title: GroupDocs.Viewer .NET API
 description: अपने अनुप्रयोगों में .NET के लिए GroupDocs.Viewer को सहजता से एकीकृत करने के लिए चरण-दर-चरण ट्यूटोरियल खोजें। लाइसेंस सेट करना और दर्शकों की उपस्थिति को अनुकूलित करना सीखें।
-type: docs
 weight: 26
 url: /hi/net/getting-started/
 ---

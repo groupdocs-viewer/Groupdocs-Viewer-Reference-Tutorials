@@ -3,7 +3,6 @@ title: विशिष्ट फ़ोल्डर और फ़िल्टर 
 linktitle: विशिष्ट फ़ोल्डर और फ़िल्टर संदेश प्रस्तुत करें (आउटलुक)
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके आउटलुक में विशिष्ट फ़ोल्डरों को प्रस्तुत करने और संदेशों को फ़िल्टर करने का तरीका जानें। .NET अनुप्रयोगों में दस्तावेज़ प्रबंधन को सरल बनाएं।
-type: docs
 weight: 11
 url: /hi/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

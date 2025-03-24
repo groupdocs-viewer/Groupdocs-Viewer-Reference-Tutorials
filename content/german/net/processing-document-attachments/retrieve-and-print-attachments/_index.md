@@ -3,7 +3,6 @@ title: Dokumentanhänge abrufen und drucken
 linktitle: Dokumentanhänge abrufen und drucken
 second_title: GroupDocs.Viewer .NET-API
 description: Integrieren Sie Funktionen zur Dokumentenanzeige nahtlos in Ihre .NET-Anwendungen mit GroupDocs.Viewer für .NET. Dokumentanhänge mühelos abrufen und drucken.
-type: docs
 weight: 11
 url: /de/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

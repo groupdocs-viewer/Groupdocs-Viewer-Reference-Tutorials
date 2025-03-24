@@ -3,7 +3,6 @@ title: Activer la mise en cache pour un traitement plus rapide des documents
 linktitle: Activer la mise en cache pour un traitement plus rapide des documents
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez la vitesse de traitement des documents dans les applications .NET avec GroupDocs.Viewer en tirant parti de la mise en cache. Optimisez les performances sans effort.
-type: docs
 weight: 10
 url: /fr/net/advanced-usage-caching/enable-caching/
 ---

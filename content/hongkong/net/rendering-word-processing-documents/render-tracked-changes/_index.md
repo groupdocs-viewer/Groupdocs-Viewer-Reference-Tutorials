@@ -3,7 +3,6 @@ title: 渲染追蹤更改
 linktitle: 渲染追蹤更改
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 輕鬆呈現文件中的追蹤變更。提高您的文件管理效率。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-word-processing-documents/render-tracked-changes/
 ---

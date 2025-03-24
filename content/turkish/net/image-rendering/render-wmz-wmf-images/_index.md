@@ -3,7 +3,6 @@ title: WMZ ve WMF Görüntülerini Oluşturma
 linktitle: WMZ ve WMF Görüntülerini Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak .NET uygulamalarında WMZ ve WMF görüntülerini zahmetsizce işleyin. Belge işleme yeteneklerini kolaylıkla geliştirin.
-type: docs
 weight: 18
 url: /tr/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ GroupDocs.Viewer for .NET kullanarak WMZ ve WMF görüntülerinin görüntü olu
 
 3. .NET Ortamına Aşinalık: .NET çerçevesi ve C# programlama dili hakkında temel bir anlayış, işleme sürecini etkili bir şekilde uygulamak için gereklidir.
 
-4.  Projenize Entegrasyon: GroupDocs.Viewer for .NET'in .NET projenize düzgün şekilde entegre edildiğinden emin olun. Entegrasyonla ilgili ayrıntılı talimatlar için belgelere bakın:[Dokümantasyon](https://reference.groupdocs.com/viewer/net/).
+4.  Projenize Entegrasyon: GroupDocs.Viewer for .NET'in .NET projenize düzgün şekilde entegre edildiğinden emin olun. Entegrasyonla ilgili ayrıntılı talimatlar için belgelere bakın:[Dokümantasyon](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Ad Alanlarını İçe Aktar
 

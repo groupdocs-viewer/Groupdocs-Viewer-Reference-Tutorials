@@ -3,7 +3,6 @@ title: Adja meg a fájlnevet az archív fájlok renderelésekor
 linktitle: Adja meg a fájlnevet az archív fájlok renderelésekor
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet archív fájlokat renderelni .NET-ben a GroupDocs.Viewer segítségével, amely javítja a dokumentumkezelési képességeket.
-type: docs
 weight: 14
 url: /hu/net/rendering-archive-files/specify-filename-render-archive/
 ---

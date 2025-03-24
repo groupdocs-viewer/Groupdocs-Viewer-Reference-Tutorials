@@ -3,7 +3,6 @@ title: Απόδοση εγγράφου με σημειώσεις
 linktitle: Απόδοση εγγράφου με σημειώσεις
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε έγγραφα με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βήμα προς βήμα μάθημα για απρόσκοπτη ενσωμάτωση στις εφαρμογές σας .NET.
-type: docs
 weight: 14
 url: /el/net/rendering-options/render-document-notes/
 ---

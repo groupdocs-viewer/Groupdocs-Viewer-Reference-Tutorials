@@ -3,7 +3,6 @@ title: معالجة مرفقات المستندات
 linktitle: معالجة مرفقات المستندات
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية دمج إمكانيات عرض المستندات بسهولة في تطبيقات .NET الخاصة بك باستخدام GroupDocs.Viewer. إدارة مرفقات المستندات بكفاءة.
-type: docs
 weight: 32
 url: /ar/net/processing-document-attachments/
 --- 

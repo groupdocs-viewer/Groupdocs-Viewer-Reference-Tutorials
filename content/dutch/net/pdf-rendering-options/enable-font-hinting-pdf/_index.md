@@ -3,7 +3,6 @@ title: Schakel lettertypehints in PDF in
 linktitle: Schakel lettertypehints in PDF in
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u lettertypehints in PDF-documenten kunt inschakelen met GroupDocs.Viewer voor .NET. Volg onze stap-voor-stap handleiding voor een naadloze integratie.
-type: docs
 weight: 14
 url: /nl/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

@@ -3,7 +3,6 @@ title: Zakázat ověřování licencí písem v PDF
 linktitle: Zakázat ověřování licencí písem v PDF
 second_title: GroupDocs.Viewer .NET API
 description: Odemkněte bezproblémové možnosti prohlížení dokumentů ve vašem .NET s GroupDocs.Viewer pro .NET. Snadno integrujte a přizpůsobte vykreslování dokumentů s minimálními závislostmi.
-type: docs
 weight: 12
 url: /cs/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

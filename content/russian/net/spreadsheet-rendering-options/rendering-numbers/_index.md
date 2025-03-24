@@ -3,7 +3,6 @@ title: Рендеринг чисел
 linktitle: Рендеринг чисел
 second_title: GroupDocs.Viewer .NET API
 description: Исследуйте возможности Groupdocs.Viewer для .NET, обеспечивающие беспрепятственный рендеринг файлов Numbers. Легко конвертируйте в HTML, JPG, PNG и PDF.
-type: docs
 weight: 15
 url: /ru/net/spreadsheet-rendering-options/rendering-numbers/
 ---

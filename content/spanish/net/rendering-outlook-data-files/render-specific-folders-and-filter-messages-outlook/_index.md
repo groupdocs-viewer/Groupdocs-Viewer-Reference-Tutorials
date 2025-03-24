@@ -3,7 +3,6 @@ title: Representar carpetas específicas y filtrar mensajes (Outlook)
 linktitle: Representar carpetas específicas y filtrar mensajes (Outlook)
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar carpetas específicas y filtrar mensajes en Outlook usando GroupDocs.Viewer para .NET. Simplifique la gestión de documentos en aplicaciones .NET.
-type: docs
 weight: 11
 url: /es/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

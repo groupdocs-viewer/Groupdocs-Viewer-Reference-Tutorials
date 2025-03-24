@@ -3,7 +3,6 @@ title: Habilitar dicas de fonte em PDF
 linktitle: Habilitar dicas de fonte em PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como ativar dicas de fonte em documentos PDF usando GroupDocs.Viewer for .NET. Siga nosso tutorial passo a passo para uma integração perfeita.
-type: docs
 weight: 14
 url: /pt/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

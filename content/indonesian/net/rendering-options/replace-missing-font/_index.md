@@ -3,7 +3,6 @@ title: Ganti Font yang Hilang
 linktitle: Ganti Font yang Hilang
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengganti font yang hilang di dokumen .NET dengan mudah menggunakan GroupDocs.Viewer. Pastikan rendering akurat dengan langkah sederhana.
-type: docs
 weight: 20
 url: /id/net/rendering-options/replace-missing-font/
 ---

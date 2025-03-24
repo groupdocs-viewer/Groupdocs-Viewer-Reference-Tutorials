@@ -3,7 +3,6 @@ title: Representar documentos de Visio
 linktitle: Representar documentos de Visio
 second_title: API GroupDocs.Viewer .NET
 description: Explore tutoriales sobre cómo representar documentos de Visio con GroupDocs.Viewer para .NET. Aprenda a mejorar las capacidades de visualización de documentos en sus aplicaciones .NET sin esfuerzo.
-type: docs
 weight: 34
 url: /es/net/rendering-visio-documents/
 ---

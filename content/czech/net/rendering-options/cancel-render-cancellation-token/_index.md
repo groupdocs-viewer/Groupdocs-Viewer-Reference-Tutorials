@@ -3,7 +3,6 @@ title: Zrušte vykreslování pomocí tokenu zrušení
 linktitle: Zrušte vykreslování pomocí tokenu zrušení
 second_title: GroupDocs.Viewer .NET API
 description: Integrujte Groupdocs.Viewer for .NET hladce do svých projektů .NET pro efektivní prohlížení dokumentů.
-type: docs
 weight: 11
 url: /cs/net/rendering-options/cancel-render-cancellation-token/
 ---

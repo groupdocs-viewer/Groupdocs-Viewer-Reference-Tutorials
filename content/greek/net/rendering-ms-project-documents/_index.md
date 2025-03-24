@@ -3,7 +3,6 @@ title: Απόδοση εγγράφων Microsoft Project
 linktitle: Απόδοση εγγράφων Microsoft Project
 second_title: GroupDocs.Viewer .NET API
 description: Ανακτήστε εύκολα πληροφορίες προβολής για έγγραφα του Microsoft Project με το GroupDocs.Viewer για .NET. Βελτιώστε την παραγωγικότητα με ευέλικτες δυνατότητες απόδοσης.
-type: docs
 weight: 40
 url: /el/net/rendering-ms-project-documents/
 ---

@@ -3,7 +3,6 @@ title: स्ट्रीम से लाइसेंस सेट करें
 linktitle: स्ट्रीम से लाइसेंस सेट करें
 second_title: GroupDocs.Viewer .NET API
 description: निर्बाध दस्तावेज़ देखने के लिए GroupDocs.Viewer के साथ अपने .NET अनुप्रयोगों को बेहतर बनाएं। हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें और शक्तिशाली दस्तावेज़ देखने की क्षमताओं को सहजता से एकीकृत करें।
-type: docs
 weight: 11
 url: /hi/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ url: /hi/net/getting-started/set-license-from-stream/
 1. .NET विकास का बुनियादी ज्ञान: इस ट्यूटोरियल के साथ C# और .NET फ्रेमवर्क से परिचित होना आवश्यक है।
    
 2.  .NET पैकेज के लिए GroupDocs.Viewer: सुनिश्चित करें कि आपने .NET पैकेज के लिए GroupDocs.Viewer को डाउनलोड और इंस्टॉल कर लिया है। आप इसे यहां से प्राप्त कर सकते हैं[लिंक को डाउनलोड करें](https://releases.groupdocs.com/viewer/net/).
-3.  ग्रुपडॉक्स दस्तावेज़ तक पहुंच: रखें[प्रलेखन](https://reference.groupdocs.com/viewer/net/) एकीकरण प्रक्रिया के दौरान संदर्भ के लिए उपयोगी।
+3.  ग्रुपडॉक्स दस्तावेज़ तक पहुंच: रखें[प्रलेखन](https://tutorials.groupdocs.com/viewer/net/) एकीकरण प्रक्रिया के दौरान संदर्भ के लिए उपयोगी।
 
 ## नामस्थान आयात करें
 आरंभ करने के लिए, अपने .NET एप्लिकेशन में आवश्यक नामस्थान आयात करें। इन चरणों का पालन करें:

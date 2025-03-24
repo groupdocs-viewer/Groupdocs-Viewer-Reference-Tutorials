@@ -3,7 +3,6 @@ title: Rendu des fichiers texte
 linktitle: Rendu des fichiers texte
 second_title: API GroupDocs.Viewer .NET
 description: Libérez le potentiel de GroupDocs.Viewer pour .NET avec des didacticiels sur le rendu des fichiers texte. Convertissez les fichiers .txt dans différents formats pour une gestion améliorée des documents.
-type: docs
 weight: 33
 url: /fr/net/rendering-text-files/
 ---

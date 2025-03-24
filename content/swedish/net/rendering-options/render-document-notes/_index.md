@@ -3,7 +3,6 @@ title: Gör dokument med anteckningar
 linktitle: Gör dokument med anteckningar
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar dokument med anteckningar med GroupDocs.Viewer för .NET. Steg-för-steg handledning för sömlös integrering i dina .NET-applikationer.
-type: docs
 weight: 14
 url: /sv/net/rendering-options/render-document-notes/
 ---

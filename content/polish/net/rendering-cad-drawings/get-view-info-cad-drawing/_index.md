@@ -3,7 +3,6 @@ title: Uzyskaj informacje o widoku rysunków CAD
 linktitle: Uzyskaj informacje o widoku rysunków CAD
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak pobierać informacje o widokach rysunków CAD za pomocą programu GroupDocs.Viewer dla platformy .NET. Ulepsz swoje aplikacje .NET dzięki płynnej obsłudze plików CAD.
-type: docs
 weight: 10
 url: /pl/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

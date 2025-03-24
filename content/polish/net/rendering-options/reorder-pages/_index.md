@@ -3,7 +3,6 @@ title: Zmień kolejność stron w dokumencie
 linktitle: Zmień kolejność stron w dokumencie
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak zmienić kolejność stron w dokumencie za pomocą programu GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby bezproblemowo zarządzać dokumentami.
-type: docs
 weight: 19
 url: /pl/net/rendering-options/reorder-pages/
 ---

@@ -3,7 +3,6 @@ title: Renderuj wszystkie układy w rysunkach CAD
 linktitle: Renderuj wszystkie układy w rysunkach CAD
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować wszystkie układy w rysunkach CAD przy użyciu GroupDocs.Viewer dla .NET. Skorzystaj z naszego obszernego samouczka, aby uzyskać bezproblemową integrację.
-type: docs
 weight: 11
 url: /pl/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

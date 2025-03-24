@@ -3,7 +3,6 @@ title: Gizli Sütunları ve Satırları Oluştur
 linktitle: Gizli Sütunları ve Satırları Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak e-tablolardaki gizli verilerin kilidini zahmetsizce açın. Gizli sütunları ve satırları ortaya çıkarmak için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 13
 url: /tr/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

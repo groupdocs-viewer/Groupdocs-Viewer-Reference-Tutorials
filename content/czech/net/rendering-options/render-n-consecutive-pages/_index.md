@@ -3,7 +3,6 @@ title: Vykreslit N po sobě jdoucích stránek
 linktitle: Vykreslit N po sobě jdoucích stránek
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak integrovat GroupDocs.Viewer for .NET do vašich aplikací, abyste mohli snadno vykreslovat dokumenty s N po sobě jdoucími stránkami.
-type: docs
 weight: 16
 url: /cs/net/rendering-options/render-n-consecutive-pages/
 ---

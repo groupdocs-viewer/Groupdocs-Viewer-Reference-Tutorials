@@ -3,7 +3,6 @@ title: Kết xuất tất cả bố cục trong bản vẽ CAD
 linktitle: Kết xuất tất cả bố cục trong bản vẽ CAD
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tất cả bố cục trong bản vẽ CAD bằng GroupDocs.Viewer cho .NET. Hãy làm theo hướng dẫn toàn diện của chúng tôi để tích hợp liền mạch.
-type: docs
 weight: 11
 url: /vi/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

@@ -3,7 +3,6 @@ title: 특정 CAD 형식 렌더링(CF2)
 linktitle: 특정 CAD 형식 렌더링(CF2)
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 Groupdocs.Viewer를 사용하여 CF2와 같은 특정 CAD 형식을 HTML, JPG, PNG 및 PDF로 렌더링하는 방법을 알아보세요.
-type: docs
 weight: 12
 url: /ko/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

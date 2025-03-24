@@ -3,7 +3,6 @@ title: Render responzivní HTML
 linktitle: Render responzivní HTML
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat responzivní HTML pomocí Groupdocs.Viewer for .NET a zajistit tak optimální zážitek ze sledování na různých zařízeních.
-type: docs
 weight: 13
 url: /cs/net/rendering-documents-html/render-responsive-html/
 ---

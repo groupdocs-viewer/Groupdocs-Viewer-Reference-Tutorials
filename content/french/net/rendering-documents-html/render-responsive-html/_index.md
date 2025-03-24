@@ -3,7 +3,6 @@ title: Rendu HTML réactif
 linktitle: Rendu HTML réactif
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment rendre du HTML réactif à l'aide de Groupdocs.Viewer pour .NET, garantissant ainsi une expérience de visualisation optimale sur tous les appareils.
-type: docs
 weight: 13
 url: /fr/net/rendering-documents-html/render-responsive-html/
 ---

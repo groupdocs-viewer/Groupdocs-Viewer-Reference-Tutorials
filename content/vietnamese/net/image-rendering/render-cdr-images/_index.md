@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh CDR
 linktitle: Kết xuất hình ảnh CDR
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị hình ảnh CDR thành HTML, JPG, PNG và PDF bằng GroupDocs.Viewer cho .NET. Dễ dàng chuyển đổi các tập tin CorelDRAW với hướng dẫn này.
-type: docs
 weight: 12
 url: /vi/net/image-rendering/render-cdr-images/
 ---

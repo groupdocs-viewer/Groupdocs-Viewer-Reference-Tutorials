@@ -3,7 +3,6 @@ title: Απόδοση HTML με περιθώρια καθορισμένα από
 linktitle: Απόδοση HTML με περιθώρια καθορισμένα από το χρήστη
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε HTML με προσαρμοσμένα περιθώρια στο .NET χρησιμοποιώντας το GroupDocs.Viewer. Βελτιώστε την παρουσίαση εγγράφων χωρίς κόπο.
-type: docs
 weight: 11
 url: /el/net/rendering-web-documents/render-html-margins/
 ---

@@ -3,7 +3,6 @@ title: Отключить группировку символов в PDF
 linktitle: Отключить группировку символов в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как отключить группировку символов в PDF-файлах с помощью GroupDocs.Viewer для .NET. Следуйте нашему пошаговому руководству для бесшовного рендеринга документов.
-type: docs
 weight: 11
 url: /ru/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

@@ -3,7 +3,6 @@ title: ドキュメントをJPGPNGにレンダリング
 linktitle: ドキュメントをJPGPNGにレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: ユーザー エクスペリエンスと生産性を向上させるために、GroupDocs.Viewer を使用して .NET でドキュメントを JPG/PNG にシームレスにレンダリングする方法を説明します。
-type: docs
 weight: 10
 url: /ja/net/rendering-documents-images/render-jpg-png/
 ---
@@ -106,7 +105,7 @@ A: 一時ライセンスは次のサイトからリクエストできます。[�
 
 ### Q: GroupDocs.Viewer for .NET のドキュメントはどこで見つけられますか?
 
- A: 詳細なドキュメントが入手可能です[ここ](https://reference.groupdocs.com/viewer/net/).
+ A: 詳細なドキュメントが入手可能です[ここ](https://tutorials.groupdocs.com/viewer/net/).
 
 ### Q: GroupDocs.Viewer for .NET に関連するサポートや質問はどこで受けられますか?
 

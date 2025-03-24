@@ -3,7 +3,6 @@ title: 在 PDF 中启用字体提示
 linktitle: 在 PDF 中启用字体提示
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 PDF 文档中启用字体提示。请按照我们的分步教程进行无缝集成。
-type: docs
 weight: 14
 url: /zh/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

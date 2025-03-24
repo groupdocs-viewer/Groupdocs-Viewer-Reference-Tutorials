@@ -3,7 +3,6 @@ title: CAD 図面のすべてのレイアウトをレンダリングする
 linktitle: CAD 図面のすべてのレイアウトをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して CAD 図面内のすべてのレイアウトをレンダリングする方法を学びます。シームレスな統合については、包括的なチュートリアルに従ってください。
-type: docs
 weight: 11
 url: /ja/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

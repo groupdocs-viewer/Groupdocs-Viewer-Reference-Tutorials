@@ -3,7 +3,6 @@ title: 選択したページをレンダリングする
 linktitle: 選択したページをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を使用してドキュメントから選択したページをレンダリングする方法を学びます。コード例を含むステップバイステップのチュートリアル。
-type: docs
 weight: 17
 url: /ja/net/rendering-options/render-selected-pages/
 ---

@@ -3,7 +3,6 @@ title: Rendu de documents au format PDF
 linktitle: Rendu de documents au format PDF
 second_title: API GroupDocs.Viewer .NET
 description: Apprenez à restituer des documents au format PDF, à ajuster la qualité des images JPG et à protéger les PDF avec des mots de passe à l'aide des didacticiels GroupDocs.Viewer pour .NET.
-type: docs
 weight: 29
 url: /fr/net/rendering-documents-pdf/
 ---

@@ -3,7 +3,6 @@ title: टीजीए छवियाँ प्रस्तुत करें
 linktitle: टीजीए छवियाँ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer का उपयोग करके .NET अनुप्रयोगों में TGA छवियों को सहजता से प्रस्तुत करना सीखें। अपनी छवि प्रतिपादन क्षमताओं को बढ़ाएँ।
-type: docs
 weight: 17
 url: /hi/net/image-rendering/render-tga-images/
 ---

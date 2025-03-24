@@ -3,7 +3,6 @@ title: Vô hiệu hóa lựa chọn văn bản trong PDF
 linktitle: Vô hiệu hóa lựa chọn văn bản trong PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tắt tính năng chọn văn bản trong PDF bằng GroupDocs.Viewer dành cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp liền mạch.
-type: docs
 weight: 13
 url: /vi/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

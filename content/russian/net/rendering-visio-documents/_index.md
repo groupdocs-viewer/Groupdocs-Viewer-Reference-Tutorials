@@ -3,7 +3,6 @@ title: Рендеринг документов Visio
 linktitle: Рендеринг документов Visio
 second_title: GroupDocs.Viewer .NET API
 description: Изучите руководства по рендерингу документов Visio с помощью GroupDocs.Viewer для .NET. Научитесь легко расширять возможности просмотра документов в своих приложениях .NET.
-type: docs
 weight: 34
 url: /ru/net/rendering-visio-documents/
 ---

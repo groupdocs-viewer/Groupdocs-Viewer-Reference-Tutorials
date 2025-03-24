@@ -3,7 +3,6 @@ title: Especificar el nombre del archivo al renderizar archivos comprimidos
 linktitle: Especificar el nombre del archivo al renderizar archivos comprimidos
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar archivos comprimidos en .NET usando GroupDocs.Viewer, mejorando las capacidades de administración de documentos.
-type: docs
 weight: 14
 url: /es/net/rendering-archive-files/specify-filename-render-archive/
 ---

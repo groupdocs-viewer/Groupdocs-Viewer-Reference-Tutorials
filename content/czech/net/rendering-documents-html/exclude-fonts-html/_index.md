@@ -3,7 +3,6 @@ title: Vyloučit písma z vykresleného HTML
 linktitle: Vyloučit písma z vykresleného HTML
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak vyloučit písma z vykreslovaného HTML pomocí GroupDocs.Viewer for .NET. Postupujte podle tohoto podrobného průvodce pro bezproblémové zobrazení dokumentů.
-type: docs
 weight: 10
 url: /cs/net/rendering-documents-html/exclude-fonts-html/
 ---

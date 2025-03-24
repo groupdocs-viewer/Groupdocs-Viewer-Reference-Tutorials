@@ -3,7 +3,6 @@ title: 從串流載入文檔
 linktitle: 從串流載入文檔
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 從流程無縫載入文件。透過強大的文件檢視功能增強您的 .NET 應用程式。
-type: docs
 weight: 12
 url: /zh-hant/net/loading-documents/loading-document-stream/
 ---

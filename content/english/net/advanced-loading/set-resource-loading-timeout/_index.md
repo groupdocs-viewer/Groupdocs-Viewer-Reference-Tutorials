@@ -3,7 +3,6 @@ title: Set Resource Loading Timeout (Advanced)
 linktitle: Set Resource Loading Timeout (Advanced)
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to configure resource loading timeouts in GroupDocs.Viewer for .NET efficiently. Master document rendering with precision and stability.
-type: docs
 weight: 13
 url: /net/advanced-loading/set-resource-loading-timeout/
 ---

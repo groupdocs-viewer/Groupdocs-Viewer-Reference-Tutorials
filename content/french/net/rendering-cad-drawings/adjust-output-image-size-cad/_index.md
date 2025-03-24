@@ -3,7 +3,6 @@ title: Ajuster la taille de l'image de sortie pour les dessins CAO
 linktitle: Ajuster la taille de l'image de sortie pour les dessins CAO
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment ajuster la taille de l'image de sortie pour les dessins CAO à l'aide de GroupDocs.Viewer for .NET. Améliorez la visibilité et la convivialité sans effort.
-type: docs
 weight: 15
 url: /fr/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

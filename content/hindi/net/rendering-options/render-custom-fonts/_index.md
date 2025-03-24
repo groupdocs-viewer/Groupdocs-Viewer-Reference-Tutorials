@@ -3,7 +3,6 @@ title: कस्टम फ़ॉन्ट्स के साथ प्रस्
 linktitle: कस्टम फ़ॉन्ट्स के साथ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके कस्टम फ़ॉन्ट के साथ दस्तावेज़ प्रस्तुत करना सीखें। दृश्य प्रस्तुतियों को सहजता से बढ़ाएं।
-type: docs
 weight: 18
 url: /hi/net/rendering-options/render-custom-fonts/
 ---

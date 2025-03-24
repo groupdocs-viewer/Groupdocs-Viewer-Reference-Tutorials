@@ -3,7 +3,6 @@ title: Získejte informace o zobrazení pro dokumenty Microsoft Project
 linktitle: Získejte informace o zobrazení pro dokumenty Microsoft Project
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte komplexní výukový program o využití Groupdocs.Viewer pro .NET k snadnému získávání informací o zobrazení dokumentů Microsoft Project.
-type: docs
 weight: 10
 url: /cs/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

@@ -3,7 +3,6 @@ title: Fehlende Schriftart ersetzen
 linktitle: Fehlende Schriftart ersetzen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer mühelos fehlende Schriftarten in .NET-Dokumenten ersetzen. Stellen Sie mit einfachen Schritten eine genaue Wiedergabe sicher.
-type: docs
 weight: 20
 url: /de/net/rendering-options/replace-missing-font/
 ---

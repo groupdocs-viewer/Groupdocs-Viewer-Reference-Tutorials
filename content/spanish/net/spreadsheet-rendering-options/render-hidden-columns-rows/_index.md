@@ -3,7 +3,6 @@ title: Representar columnas y filas ocultas
 linktitle: Representar columnas y filas ocultas
 second_title: API GroupDocs.Viewer .NET
 description: Desbloquee datos ocultos en hojas de cálculo sin esfuerzo utilizando GroupDocs.Viewer para .NET. Siga nuestra guía paso a paso para revelar columnas y filas ocultas.
-type: docs
 weight: 13
 url: /es/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

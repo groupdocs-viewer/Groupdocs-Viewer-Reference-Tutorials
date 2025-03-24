@@ -3,7 +3,6 @@ title: Getting Started
 linktitle: Getting Started
 second_title: GroupDocs.Viewer .NET API
 description: Discover step-by-step tutorials for integrating GroupDocs.Viewer for .NET seamlessly into your applications. Learn to set licenses and customize viewer appearance.
-type: docs
 weight: 26
 url: /net/getting-started/
 ---

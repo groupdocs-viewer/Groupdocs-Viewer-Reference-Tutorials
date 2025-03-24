@@ -3,7 +3,6 @@ title: Dokumente laden
 linktitle: Dokumente laden
 second_title: GroupDocs.Viewer .NET-API
 description: Entdecken Sie, wie Sie Dokumente mit GroupDocs.Viewer .NET effizient laden und rendern. Entdecken Sie Tutorials zum Laden von lokalen Festplatten, Streams und FTP für erweiterte .NET-Apps.
-type: docs
 weight: 20
 url: /de/net/loading-documents/
 ---

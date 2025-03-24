@@ -3,7 +3,6 @@ title: Περιορίστε τον αριθμό των στοιχείων για
 linktitle: Περιορίστε τον αριθμό των στοιχείων για απόδοση σε αρχεία δεδομένων του Outlook
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να περιορίζετε τον αριθμό των στοιχείων που αποδίδονται στα αρχεία δεδομένων του Outlook χρησιμοποιώντας το Groupdocs.Viewer για .NET. Ακολουθήστε βήμα προς βήμα για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 12
 url: /el/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

@@ -3,7 +3,6 @@ title: Vykreslování e-mailových zpráv
 linktitle: Vykreslování e-mailových zpráv
 second_title: GroupDocs.Viewer .NET API
 description: Zjistěte, jak GroupDocs.Viewer for .NET zjednodušuje vykreslování e-mailových zpráv do souborů PDF. Naučte se efektivně upravovat velikost stránky, nastavovat formát DateTime a přejmenovávat pole.
-type: docs
 weight: 27
 url: /cs/net/rendering-email-messages/
 ---

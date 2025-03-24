@@ -3,7 +3,6 @@ title: DateTime 形式とタイム ゾーン オフセットの設定 (電子メ
 linktitle: DateTime 形式とタイム ゾーン オフセットの設定 (電子メール)
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET をアプリケーションにシームレスに統合して、強力なドキュメント表示機能を実現します。カスタマイズ可能なオプションでユーザー エクスペリエンスを向上させます。
-type: docs
 weight: 11
 url: /ja/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

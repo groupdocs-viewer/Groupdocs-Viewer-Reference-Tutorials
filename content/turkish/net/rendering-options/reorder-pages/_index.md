@@ -3,7 +3,6 @@ title: Belgedeki Sayfaları Yeniden Sıralama
 linktitle: Belgedeki Sayfaları Yeniden Sıralama
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak bir belgedeki sayfaları nasıl yeniden sıralayacağınızı öğrenin. Kusursuz belge yönetimi için adım adım eğitimimizi izleyin.
-type: docs
 weight: 19
 url: /tr/net/rendering-options/reorder-pages/
 ---

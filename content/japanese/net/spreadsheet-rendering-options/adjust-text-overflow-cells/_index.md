@@ -3,7 +3,6 @@ title: セル内のテキストのオーバーフローを調整する
 linktitle: セル内のテキストのオーバーフローを調整する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用すると、.NET ドキュメント内のテキスト オーバーフローを簡単に管理できます。読みやすさとユーザーエクスペリエンスを向上させます。今すぐ無料トライアルをダウンロードしてください。
-type: docs
 weight: 10
 url: /ja/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 結論として、GroupDocs.Viewer for .NET はセル内のテキスト オーバーフローを処理するタスクを簡素化し、ドキュメントが機能するだけでなく視覚的にも洗練されることを保証します。これらの手順を実行すると、スプレッドシート ドキュメントのユーザー エクスペリエンスと読みやすさを簡単に向上させることができます。
 ## よくある質問
 ### 1. GroupDocs.Viewer for .NET はどのような種類のドキュメントでも使用できますか?
-はい、GroupDocs.Viewer for .NET は、スプレッドシート、プレゼンテーションなどを含む幅広いドキュメント形式をサポートしています。を参照してください。[ドキュメンテーション](https://reference.groupdocs.com/viewer/net/)完全なリストについては、
+はい、GroupDocs.Viewer for .NET は、スプレッドシート、プレゼンテーションなどを含む幅広いドキュメント形式をサポートしています。を参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/viewer/net/)完全なリストについては、
 ### 2. 無料トライアルはありますか?
 はい、GroupDocs.Viewer for .NET の機能を調べるには、[無料トライアル](https://releases.groupdocs.com/).
 ### 3. 問題についてサポートを受けるにはどうすればよいですか?

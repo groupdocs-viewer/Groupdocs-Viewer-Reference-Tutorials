@@ -3,7 +3,6 @@ title: Rendu des images APNG
 linktitle: Rendu des images APNG
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des images APNG dans différents formats à l'aide de Groupdocs.Viewer pour .NET. Guide étape par étape avec des exemples de code inclus.
-type: docs
 weight: 11
 url: /fr/net/image-rendering/render-apng-images/
 ---

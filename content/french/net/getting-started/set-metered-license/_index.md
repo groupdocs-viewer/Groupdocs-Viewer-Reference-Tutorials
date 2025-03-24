@@ -3,7 +3,6 @@ title: Définir une licence limitée
 linktitle: Définir une licence limitée
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez vos applications .NET avec GroupDocs.Viewer pour une visualisation transparente des documents. Intégrez facilement des fonctionnalités de rendu de documents dans vos projets.
-type: docs
 weight: 12
 url: /fr/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 En conclusion, GroupDocs.Viewer pour .NET fournit une solution complète pour intégrer des fonctionnalités de visualisation de documents dans vos applications .NET. En suivant les étapes décrites, vous pouvez facilement configurer une licence limitée et commencer à tirer parti des capacités de GroupDocs.Viewer dans vos projets.
 ## FAQ
 ### Q : Où puis-je trouver de la documentation pour GroupDocs.Viewer pour .NET ?
- Vous pouvez trouver la documentation[ici](https://reference.groupdocs.com/viewer/net/).
+ Vous pouvez trouver la documentation[ici](https://tutorials.groupdocs.com/viewer/net/).
 ### Q : Existe-t-il un essai gratuit disponible pour GroupDocs.Viewer pour .NET ?
  Oui, vous pouvez accéder à l'essai gratuit[ici](https://releases.groupdocs.com/).
 ### Q : Comment puis-je obtenir des licences temporaires à des fins de test ?

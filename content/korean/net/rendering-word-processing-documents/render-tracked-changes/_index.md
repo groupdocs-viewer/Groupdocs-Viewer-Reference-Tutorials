@@ -3,7 +3,6 @@ title: 추적된 변경 사항 렌더링
 linktitle: 추적된 변경 사항 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서에서 추적된 변경 사항을 손쉽게 렌더링하는 방법을 알아보세요. 문서 관리 효율성을 높여보세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-word-processing-documents/render-tracked-changes/
 ---

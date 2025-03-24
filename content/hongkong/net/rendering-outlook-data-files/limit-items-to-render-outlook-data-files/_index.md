@@ -3,7 +3,6 @@ title: 限制 Outlook 資料檔中要呈現的項目數
 linktitle: 限制 Outlook 資料檔中要呈現的項目數
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 限制 Outlook 資料檔案中呈現的項目數量。請按照我們的步驟進行無縫整合。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

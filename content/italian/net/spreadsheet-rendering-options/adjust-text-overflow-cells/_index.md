@@ -3,7 +3,6 @@ title: Regola l'eccesso di testo nelle celle
 linktitle: Regola l'eccesso di testo nelle celle
 second_title: API GroupDocs.Viewer .NET
 description: Gestisci facilmente l'overflow del testo nei documenti .NET con GroupDocs.Viewer. Migliora la leggibilità e l'esperienza dell'utente. Scarica la prova gratis adesso.
-type: docs
 weight: 10
 url: /it/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Ora hai regolato correttamente l'overflow del testo nelle celle utilizzando Grou
 In conclusione, GroupDocs.Viewer per .NET semplifica il compito di gestire l'overflow del testo nelle celle, garantendo che i tuoi documenti non siano solo funzionali ma anche visivamente raffinati. Con questi passaggi puoi migliorare facilmente l'esperienza utente e la leggibilità dei documenti del tuo foglio di calcolo.
 ## Domande frequenti
 ### 1. Posso utilizzare GroupDocs.Viewer for .NET con qualsiasi tipo di documento?
- Sì, GroupDocs.Viewer per .NET supporta un'ampia gamma di formati di documenti, inclusi fogli di calcolo, presentazioni e altro ancora. Fare riferimento al[documentazione](https://reference.groupdocs.com/viewer/net/) per l'elenco completo.
+ Sì, GroupDocs.Viewer per .NET supporta un'ampia gamma di formati di documenti, inclusi fogli di calcolo, presentazioni e altro ancora. Fare riferimento al[documentazione](https://tutorials.groupdocs.com/viewer/net/) per l'elenco completo.
 ### 2. È disponibile una prova gratuita?
  Sì, puoi esplorare le funzionalità di GroupDocs.Viewer per .NET scaricando il file[prova gratuita](https://releases.groupdocs.com/).
 ### 3. Come posso ottenere supporto per eventuali problemi?

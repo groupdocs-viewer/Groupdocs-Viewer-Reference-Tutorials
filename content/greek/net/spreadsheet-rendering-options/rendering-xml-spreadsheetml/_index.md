@@ -3,7 +3,6 @@ title: Απόδοση XML SpreadSheetML
 linktitle: Απόδοση XML SpreadSheetML
 second_title: GroupDocs.Viewer .NET API
 description: Εξερευνήστε την απρόσκοπτη απόδοση αρχείων XML SpreadSheetML σε διάφορες μορφές χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ενσωματωθείτε χωρίς κόπο στις εφαρμογές σας.
-type: docs
 weight: 16
 url: /el/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
@@ -83,7 +82,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
 ### Μπορώ να προσαρμόσω την εμφάνιση των αποδοθέντων εγγράφων;
 Απολύτως! Το GroupDocs.Viewer προσφέρει διάφορες επιλογές προσαρμογής, επιτρέποντάς σας να προσαρμόσετε το αποτέλεσμα στις συγκεκριμένες ανάγκες σας.
 ### Πού μπορώ να βρω πρόσθετη υποστήριξη και πόρους;
- Επισκέψου το[GroupDocs.Viewer φόρουμ](https://forum.groupdocs.com/c/viewer/9) για υποστήριξη της κοινότητας και να εξερευνήσετε το[τεκμηρίωση](https://reference.groupdocs.com/viewer/net/)για αναλυτικές πληροφορίες.
+ Επισκέψου το[GroupDocs.Viewer φόρουμ](https://forum.groupdocs.com/c/viewer/9) για υποστήριξη της κοινότητας και να εξερευνήσετε το[τεκμηρίωση](https://tutorials.groupdocs.com/viewer/net/)για αναλυτικές πληροφορίες.
 ### Υπάρχει δωρεάν δοκιμή διαθέσιμη;
  Ναι, μπορείτε να έχετε πρόσβαση στη δωρεάν δοκιμή[εδώ](https://releases.groupdocs.com/).
 ### Πώς μπορώ να αποκτήσω προσωρινή άδεια;

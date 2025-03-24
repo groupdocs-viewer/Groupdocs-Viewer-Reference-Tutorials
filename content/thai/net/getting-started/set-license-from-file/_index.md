@@ -3,7 +3,6 @@ title: ตั้งค่าใบอนุญาตจากไฟล์
 linktitle: ตั้งค่าใบอนุญาตจากไฟล์
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีผสานรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชันของคุณได้อย่างง่ายดาย ตั้งค่าใบอนุญาต ดูเอกสาร และปรับแต่งรูปลักษณ์ของผู้ดู
-type: docs
 weight: 10
 url: /th/net/getting-started/set-license-from-file/
 ---

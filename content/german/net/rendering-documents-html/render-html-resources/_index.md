@@ -3,7 +3,6 @@ title: Rendern Sie mit eingebetteten oder externen Ressourcen
 linktitle: Rendern Sie mit eingebetteten oder externen Ressourcen
 second_title: GroupDocs.Viewer .NET-API
 description: Verbessern Sie die Anzeige von .NET-Dokumenten mit GroupDocs.Viewer für eine nahtlose Darstellung. Befolgen Sie unser Tutorial für eine effiziente Integration und ein hervorragendes Benutzererlebnis.
-type: docs
 weight: 12
 url: /de/net/rendering-documents-html/render-html-resources/
 ---

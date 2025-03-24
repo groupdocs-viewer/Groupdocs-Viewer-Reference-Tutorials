@@ -3,7 +3,6 @@ title: PDF에서 글꼴 라이센스 확인 비활성화
 linktitle: PDF에서 글꼴 라이센스 확인 비활성화
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 .NET에서 원활한 문서 보기 기능을 활용하세요. 최소한의 종속성으로 문서 렌더링을 쉽게 통합하고 사용자 정의할 수 있습니다.
-type: docs
 weight: 12
 url: /ko/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

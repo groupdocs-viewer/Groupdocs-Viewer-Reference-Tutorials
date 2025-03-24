@@ -3,7 +3,6 @@ title: मीटरयुक्त लाइसेंस सेट करें
 linktitle: मीटरयुक्त लाइसेंस सेट करें
 second_title: GroupDocs.Viewer .NET API
 description: निर्बाध दस्तावेज़ देखने के लिए GroupDocs.Viewer के साथ अपने .NET अनुप्रयोगों को बेहतर बनाएं। दस्तावेज़ रेंडरिंग कार्यप्रणाली को आसानी से अपनी परियोजनाओं में एकीकृत करें।
-type: docs
 weight: 12
 url: /hi/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 अंत में, .NET के लिए GroupDocs.Viewer आपके .NET अनुप्रयोगों में दस्तावेज़ देखने की कार्यक्षमता को शामिल करने के लिए एक व्यापक समाधान प्रदान करता है। उल्लिखित चरणों का पालन करके, आप आसानी से एक मीटर्ड लाइसेंस स्थापित कर सकते हैं और अपनी परियोजनाओं के भीतर GroupDocs.Viewer की क्षमताओं का लाभ उठाना शुरू कर सकते हैं।
 ## अक्सर पूछे जाने वाले प्रश्न
 ### प्रश्न: मुझे .NET के लिए GroupDocs.Viewer के लिए दस्तावेज़ कहां मिल सकते हैं?
- आप दस्तावेज़ पा सकते हैं[यहाँ](https://reference.groupdocs.com/viewer/net/).
+ आप दस्तावेज़ पा सकते हैं[यहाँ](https://tutorials.groupdocs.com/viewer/net/).
 ### प्रश्न: क्या .NET के लिए GroupDocs.Viewer का निःशुल्क परीक्षण उपलब्ध है?
  हाँ, आप नि:शुल्क परीक्षण का उपयोग कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### प्रश्न: मैं परीक्षण उद्देश्यों के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?

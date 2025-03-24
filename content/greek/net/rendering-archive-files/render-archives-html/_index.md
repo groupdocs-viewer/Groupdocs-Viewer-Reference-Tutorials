@@ -3,7 +3,6 @@ title: Αποδώστε τα αρχεία σε μεμονωμένες ή πολ�
 linktitle: Αποδώστε τα αρχεία σε μεμονωμένες ή πολλαπλές σελίδες HTML
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε αρχεία σε σελίδες HTML χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ενσωματώστε χωρίς κόπο τις δυνατότητες προβολής εγγράφων στις εφαρμογές σας .NET.
-type: docs
 weight: 12
 url: /el/net/rendering-archive-files/render-archives-html/
 ---

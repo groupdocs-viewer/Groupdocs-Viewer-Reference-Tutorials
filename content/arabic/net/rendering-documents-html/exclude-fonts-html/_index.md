@@ -3,7 +3,6 @@ title: استبعاد الخطوط من HTML المقدم
 linktitle: استبعاد الخطوط من HTML المقدم
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية استبعاد الخطوط من HTML المعروض باستخدام GroupDocs.Viewer لـ .NET. اتبع هذا الدليل المفصّل خطوة بخطوة لعرض المستندات بسلاسة.
-type: docs
 weight: 10
 url: /ar/net/rendering-documents-html/exclude-fonts-html/
 ---

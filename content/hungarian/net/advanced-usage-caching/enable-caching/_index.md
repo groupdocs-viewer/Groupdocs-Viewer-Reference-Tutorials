@@ -3,7 +3,6 @@ title: A gyorsítótárazás engedélyezése a gyorsabb dokumentumfeldolgozás �
 linktitle: A gyorsítótárazás engedélyezése a gyorsabb dokumentumfeldolgozás érdekében
 second_title: GroupDocs.Viewer .NET API
 description: Növelje a dokumentumfeldolgozási sebességet a .NET-alkalmazásokban a GroupDocs.Viewer segítségével a gyorsítótár kihasználásával. Könnyedén optimalizálja a teljesítményt.
-type: docs
 weight: 10
 url: /hu/net/advanced-usage-caching/enable-caching/
 ---

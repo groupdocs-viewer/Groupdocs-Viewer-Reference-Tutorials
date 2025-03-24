@@ -3,7 +3,6 @@ title: Ajustar el desbordamiento de texto en las celdas
 linktitle: Ajustar el desbordamiento de texto en las celdas
 second_title: API GroupDocs.Viewer .NET
 description: Administre sin esfuerzo el desbordamiento de texto en documentos .NET con GroupDocs.Viewer. Mejore la legibilidad y la experiencia del usuario. Descargue su prueba gratuita ahora.
-type: docs
 weight: 10
 url: /es/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Ahora ha ajustado con éxito el desbordamiento de texto en las celdas usando Gro
 En conclusión, GroupDocs.Viewer para .NET simplifica la tarea de manejar el desbordamiento de texto en las celdas, asegurando que sus documentos no sólo sean funcionales sino también visualmente pulidos. Con estos pasos, puede mejorar la experiencia del usuario y la legibilidad de sus documentos de hoja de cálculo sin esfuerzo.
 ## Preguntas frecuentes
 ### 1. ¿Puedo utilizar GroupDocs.Viewer para .NET con cualquier tipo de documento?
- Sí, GroupDocs.Viewer para .NET admite una amplia gama de formatos de documentos, incluidas hojas de cálculo, presentaciones y más. Referirse a[documentación](https://reference.groupdocs.com/viewer/net/) para la lista completa.
+ Sí, GroupDocs.Viewer para .NET admite una amplia gama de formatos de documentos, incluidas hojas de cálculo, presentaciones y más. Referirse a[documentación](https://tutorials.groupdocs.com/viewer/net/) para la lista completa.
 ### 2. ¿Hay una prueba gratuita disponible?
  Sí, puede explorar las capacidades de GroupDocs.Viewer para .NET descargando el[prueba gratis](https://releases.groupdocs.com/).
 ### 3. ¿Cómo puedo obtener soporte para cualquier problema?

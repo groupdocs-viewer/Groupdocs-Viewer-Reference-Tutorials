@@ -3,7 +3,6 @@ title: Specify Filename When Rendering Archive Files
 linktitle: Specify Filename When Rendering Archive Files
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render archive files in .NET using GroupDocs.Viewer, enhancing document management capabilities.
-type: docs
 weight: 14
 url: /net/rendering-archive-files/specify-filename-render-archive/
 ---

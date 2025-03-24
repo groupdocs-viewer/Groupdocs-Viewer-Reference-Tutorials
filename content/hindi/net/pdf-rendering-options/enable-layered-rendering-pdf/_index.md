@@ -3,7 +3,6 @@ title: पीडीएफ में स्तरित रेंडरिंग 
 linktitle: पीडीएफ में स्तरित रेंडरिंग सक्षम करें
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए GroupDocs.Viewer का उपयोग करके PDF दस्तावेज़ों में स्तरित रेंडरिंग कैसे सक्षम करें। दस्तावेज़ देखने के अनुभव को सहजता से बढ़ाएं।
-type: docs
 weight: 15
 url: /hi/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

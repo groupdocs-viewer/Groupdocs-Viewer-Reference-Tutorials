@@ -3,7 +3,6 @@ title: Rendering di colonne e righe nascoste
 linktitle: Rendering di colonne e righe nascoste
 second_title: API GroupDocs.Viewer .NET
 description: Sblocca facilmente i dati nascosti nei fogli di calcolo utilizzando GroupDocs.Viewer per .NET. Segui la nostra guida passo passo per rivelare colonne e righe nascoste.
-type: docs
 weight: 13
 url: /it/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

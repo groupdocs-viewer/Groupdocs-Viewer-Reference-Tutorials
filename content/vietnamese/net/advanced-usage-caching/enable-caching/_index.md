@@ -3,7 +3,6 @@ title: Kích hoạt bộ nhớ đệm để xử lý tài liệu nhanh hơn
 linktitle: Kích hoạt bộ nhớ đệm để xử lý tài liệu nhanh hơn
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao tốc độ xử lý tài liệu trong ứng dụng .NET với GroupDocs.Viewer bằng cách tận dụng bộ nhớ đệm. Tối ưu hóa hiệu suất một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/advanced-usage-caching/enable-caching/
 ---

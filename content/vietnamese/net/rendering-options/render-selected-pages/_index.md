@@ -3,7 +3,6 @@ title: Hiển thị các trang đã chọn
 linktitle: Hiển thị các trang đã chọn
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị các trang đã chọn từ tài liệu bằng Groupdocs.Viewer cho .NET. Hướng dẫn từng bước kèm theo các ví dụ về mã.
-type: docs
 weight: 17
 url: /vi/net/rendering-options/render-selected-pages/
 ---

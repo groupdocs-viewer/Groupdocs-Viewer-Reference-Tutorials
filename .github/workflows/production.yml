@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: reference.groupdocs.com(tutorials-viewer)(family)(Production)
+name: tutorials.groupdocs.com(tutorials-viewer)(family)(Production)
 
 # Controls when the action will run. 
 on:

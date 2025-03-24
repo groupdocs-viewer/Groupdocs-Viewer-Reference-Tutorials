@@ -3,7 +3,6 @@ title: XML SpreadSheetML 렌더링
 linktitle: XML SpreadSheetML 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 다양한 형식의 XML SpreadSheetML 파일을 원활하게 렌더링해 보세요. 귀하의 애플리케이션에 쉽게 통합됩니다.
-type: docs
 weight: 16
 url: /ko/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
@@ -83,7 +82,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
 ### 렌더링된 문서의 모양을 사용자 정의할 수 있습니까?
 전적으로! GroupDocs.Viewer는 다양한 사용자 정의 옵션을 제공하므로 특정 요구 사항에 맞게 출력을 조정할 수 있습니다.
 ### 추가 지원과 리소스는 어디에서 찾을 수 있나요?
- 방문하다[GroupDocs.Viewer 포럼](https://forum.groupdocs.com/c/viewer/9) 지역사회 지원을 위해[선적 서류 비치](https://reference.groupdocs.com/viewer/net/)자세한 정보를 보려면.
+ 방문하다[GroupDocs.Viewer 포럼](https://forum.groupdocs.com/c/viewer/9) 지역사회 지원을 위해[선적 서류 비치](https://tutorials.groupdocs.com/viewer/net/)자세한 정보를 보려면.
 ### 무료 평가판이 제공되나요?
  예, 무료 평가판에 액세스할 수 있습니다[여기](https://releases.groupdocs.com/).
 ### 임시면허는 어떻게 취득하나요?

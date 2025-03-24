@@ -3,7 +3,6 @@ title: 改ページによるレンダリング
 linktitle: 改ページによるレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: ドキュメントを正確にレンダリングするための GroupDocs.Viewer for .NET の機能を試してください。ページ区切りによるレンダリングについては、ステップバイステップのチュートリアルに従ってください。
-type: docs
 weight: 14
 url: /ja/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

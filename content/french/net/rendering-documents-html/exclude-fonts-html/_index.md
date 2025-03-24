@@ -3,7 +3,6 @@ title: Exclure les polices du HTML rendu
 linktitle: Exclure les polices du HTML rendu
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment exclure des polices du HTML rendu à l’aide de GroupDocs.Viewer pour .NET. Suivez ce guide étape par étape pour un affichage transparent des documents.
-type: docs
 weight: 10
 url: /fr/net/rendering-documents-html/exclude-fonts-html/
 ---

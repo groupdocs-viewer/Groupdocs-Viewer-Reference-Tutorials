@@ -3,7 +3,6 @@ title: Tải tài liệu từ FTP (Nâng cao)
 linktitle: Tải tài liệu từ FTP (Nâng cao)
 second_title: API GroupDocs.Viewer .NET
 description: Tích hợp GroupDocs.Viewer dành cho .NET vào các ứng dụng của bạn một cách liền mạch để xem tài liệu hiệu quả. Kết xuất tài liệu từ FTP một cách dễ dàng.
-type: docs
 weight: 13
 url: /vi/net/loading-documents/loading-document-ftp/
 ---

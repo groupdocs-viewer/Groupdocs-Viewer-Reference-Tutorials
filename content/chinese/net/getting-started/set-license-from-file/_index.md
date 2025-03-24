@@ -3,7 +3,6 @@ title: 从文件设置许可证
 linktitle: 从文件设置许可证
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何轻松地将 GroupDocs.Viewer for .NET 集成到您的应用程序中。设置许可证、查看文档并自定义查看器外观。
-type: docs
 weight: 10
 url: /zh/net/getting-started/set-license-from-file/
 ---

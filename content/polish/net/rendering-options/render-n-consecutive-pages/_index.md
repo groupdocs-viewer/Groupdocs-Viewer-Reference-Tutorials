@@ -3,7 +3,6 @@ title: Renderuj N kolejnych stron
 linktitle: Renderuj N kolejnych stron
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak zintegrować GroupDocs.Viewer for .NET z aplikacjami, aby bez wysiłku renderować dokumenty zawierające N kolejnych stron.
-type: docs
 weight: 16
 url: /pl/net/rendering-options/render-n-consecutive-pages/
 ---

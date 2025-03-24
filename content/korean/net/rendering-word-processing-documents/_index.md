@@ -3,7 +3,6 @@ title: 워드 프로세싱 문서 렌더링
 linktitle: 워드 프로세싱 문서 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 Word 처리 문서에서 추적된 변경 내용을 효율적으로 렌더링하는 방법을 알아보세요. 문서 관리 기술을 향상시켜 보세요.
-type: docs
 weight: 36
 url: /ko/net/rendering-word-processing-documents/
 ---

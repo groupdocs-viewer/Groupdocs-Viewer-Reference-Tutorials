@@ -3,7 +3,6 @@ title: Rendre les fichiers CHM
 linktitle: Rendre les fichiers CHM
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des fichiers CHM dans .NET à l'aide de GroupDocs.Viewer. Convertissez CHM aux formats HTML, JPG, PNG et PDF sans effort.
-type: docs
 weight: 10
 url: /fr/net/rendering-web-documents/render-chm/
 ---

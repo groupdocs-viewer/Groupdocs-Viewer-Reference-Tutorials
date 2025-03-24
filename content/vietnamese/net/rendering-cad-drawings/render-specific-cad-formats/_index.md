@@ -3,7 +3,6 @@ title: Kết xuất các định dạng CAD cụ thể (CF2)
 linktitle: Kết xuất các định dạng CAD cụ thể (CF2)
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị các định dạng CAD cụ thể như CF2 sang HTML, JPG, PNG và PDF bằng Groupdocs.Viewer cho .NET.
-type: docs
 weight: 12
 url: /vi/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

@@ -3,7 +3,6 @@ title: Ελαχιστοποίηση αποδοθέντος εγγράφου HTML
 linktitle: Ελαχιστοποίηση αποδοθέντος εγγράφου HTML
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε απρόσκοπτα έγγραφα HTML σε εφαρμογές .NET χρησιμοποιώντας το GroupDocs.Viewer για .NET.
-type: docs
 weight: 11
 url: /el/net/rendering-documents-html/minify-html/
 ---

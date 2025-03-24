@@ -3,7 +3,6 @@ title: İşlenen HTML Belgesini Küçült
 linktitle: İşlenen HTML Belgesini Küçült
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak .NET uygulamalarında HTML belgelerini sorunsuz bir şekilde nasıl oluşturacağınızı öğrenin.
-type: docs
 weight: 11
 url: /tr/net/rendering-documents-html/minify-html/
 ---

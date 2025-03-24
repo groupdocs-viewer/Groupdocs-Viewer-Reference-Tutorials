@@ -3,7 +3,6 @@ title: 渲染选定的页面
 linktitle: 渲染选定的页面
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 从文档中呈现选定的页面。包含代码示例的分步教程。
-type: docs
 weight: 17
 url: /zh/net/rendering-options/render-selected-pages/
 ---

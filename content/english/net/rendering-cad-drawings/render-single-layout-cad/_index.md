@@ -3,7 +3,6 @@ title: Render Single Layout in CAD Drawings
 linktitle: Render Single Layout in CAD Drawings
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render single layout in CAD drawings using GroupDocs.Viewer for .NET. Easy steps for seamless integration in your .NET applications.
-type: docs
 weight: 14
 url: /net/rendering-cad-drawings/render-single-layout-cad/
 ---
@@ -13,7 +12,7 @@ In the realm of .NET development, handling and viewing CAD drawings is a common 
 Before diving into the tutorial, ensure you have the following prerequisites:
 - Basic understanding of C# programming language and .NET framework.
 - Visual Studio installed on your system.
-- GroupDocs.Viewer for .NET library downloaded and referenced in your project. You can download it from [here](https://releases.groupdocs.com/viewer/net/).
+- GroupDocs.Viewer for .NET library downloaded and tutorialsd in your project. You can download it from [here](https://releases.groupdocs.com/viewer/net/).
 - Familiarity with CAD file formats and their structures.
 
 ## Import Namespaces

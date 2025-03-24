@@ -3,7 +3,6 @@ title: Render Halaman yang Dipilih
 linktitle: Render Halaman yang Dipilih
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender halaman yang dipilih dari dokumen menggunakan Groupdocs.Viewer untuk .NET. Tutorial langkah demi langkah dengan contoh kode disertakan.
-type: docs
 weight: 17
 url: /id/net/rendering-options/render-selected-pages/
 ---

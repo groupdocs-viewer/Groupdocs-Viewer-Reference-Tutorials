@@ -3,7 +3,6 @@ title: Render Gambar AI
 linktitle: Render Gambar AI
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender gambar AI dengan mudah di aplikasi .NET menggunakan GroupDocs.Viewer untuk .NET. Ikuti tutorial langkah demi langkah kami untuk integrasi yang lancar.
-type: docs
 weight: 10
 url: /id/net/image-rendering/render-ai-images/
 ---

@@ -3,7 +3,6 @@ title: Расширенные параметры загрузки
 linktitle: Расширенные параметры загрузки
 second_title: GroupDocs.Viewer .NET API
 description: Улучшите свои приложения .NET с помощью учебных пособий GroupDocs.Viewer для .NET. Узнайте, как указывать типы файлов, управлять кодировками, загружать документы, защищенные паролем, и многое другое.
-type: docs
 weight: 21
 url: /ru/net/advanced-loading/
 ---

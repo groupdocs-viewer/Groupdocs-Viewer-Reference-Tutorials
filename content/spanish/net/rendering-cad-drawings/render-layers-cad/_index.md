@@ -3,7 +3,6 @@ title: Renderizar capas en dibujos CAD
 linktitle: Renderizar capas en dibujos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Procese dibujos CAD sin problemas en aplicaciones .NET con GroupDocs.Viewer para .NET. Explore opciones de renderizado, personalice capas y más.
-type: docs
 weight: 13
 url: /es/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Antes de sumergirse en el uso de GroupDocs.Viewer para .NET, asegúrese de tener
 - Conocimientos básicos del lenguaje de programación C#.
 - Entorno de desarrollo .NET configurado en su máquina.
 -  GroupDocs.Viewer para .NET instalado. Puedes descargarlo desde[aquí](https://releases.groupdocs.com/viewer/net/).
--  Acceso a la documentación de GroupDocs.Viewer para .NET como referencia, que se puede encontrar[aquí](https://reference.groupdocs.com/viewer/net/).
+-  Acceso a la documentación de GroupDocs.Viewer para .NET como referencia, que se puede encontrar[aquí](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importar espacios de nombres
 Para comenzar a usar GroupDocs.Viewer para .NET, debe importar los espacios de nombres requeridos en su proyecto. Sigue estos pasos:

@@ -3,7 +3,6 @@ title: Get View Information for CAD Drawings
 linktitle: Get View Information for CAD Drawings
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to retrieve view information for CAD drawings using GroupDocs.Viewer for .NET. Enhance your .NET applications with seamless CAD file handling.
-type: docs
 weight: 10
 url: /net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

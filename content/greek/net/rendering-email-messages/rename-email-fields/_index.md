@@ -3,7 +3,6 @@ title: Μετονομασία πεδίων email κατά την απόδοση
 linktitle: Μετονομασία πεδίων email κατά την απόδοση
 second_title: GroupDocs.Viewer .NET API
 description: Βελτιώστε την εμπειρία προβολής εγγράφων με το GroupDocs.Viewer για .NET. Αποδώστε και προσαρμόστε τα email απρόσκοπτα.
-type: docs
 weight: 12
 url: /el/net/rendering-email-messages/rename-email-fields/
 ---

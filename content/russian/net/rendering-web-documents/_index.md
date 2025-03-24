@@ -3,7 +3,6 @@ title: Рендеринг веб-документов
 linktitle: Рендеринг веб-документов
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как отображать файлы CHM и HTML с настраиваемыми полями в .NET с помощью GroupDocs.Viewer. Легко конвертируйте CHM в форматы HTML, JPG, PNG и PDF.
-type: docs
 weight: 35
 url: /ru/net/rendering-web-documents/
 ---

@@ -3,7 +3,6 @@ title: Definir licença do arquivo
 linktitle: Definir licença do arquivo
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como integrar o GroupDocs.Viewer for .NET aos seus aplicativos sem esforço. Defina licença, visualize documentos e personalize a aparência do visualizador.
-type: docs
 weight: 10
 url: /pt/net/getting-started/set-license-from-file/
 ---

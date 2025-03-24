@@ -3,7 +3,6 @@ title: Vykreslit sledované změny
 linktitle: Vykreslit sledované změny
 second_title: GroupDocs.Viewer .NET API
 description: Objevte, jak bez námahy vykreslit sledované změny v dokumentech pomocí GroupDocs.Viewer pro .NET. Zvyšte efektivitu správy dokumentů.
-type: docs
 weight: 10
 url: /cs/net/rendering-word-processing-documents/render-tracked-changes/
 ---

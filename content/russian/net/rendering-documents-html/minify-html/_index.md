@@ -3,7 +3,6 @@ title: Минимизация визуализированного HTML-доку
 linktitle: Минимизация визуализированного HTML-документа
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко отображать HTML-документы в приложениях .NET с помощью GroupDocs.Viewer для .NET.
-type: docs
 weight: 11
 url: /ru/net/rendering-documents-html/minify-html/
 ---

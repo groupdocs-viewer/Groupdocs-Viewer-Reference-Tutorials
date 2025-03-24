@@ -3,7 +3,6 @@ title: Загрузить документы с локального диска
 linktitle: Загрузить документы с локального диска
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко визуализировать документы с локального диска с помощью Groupdocs.Viewer для .NET. Улучшите свои приложения .NET с помощью эффективных документов.
-type: docs
 weight: 10
 url: /ru/net/loading-documents/loading-document-local-disk/
 ---

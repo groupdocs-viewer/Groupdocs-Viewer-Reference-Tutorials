@@ -3,7 +3,6 @@ title: Načíst a vytisknout přílohy dokumentů
 linktitle: Načíst a vytisknout přílohy dokumentů
 second_title: GroupDocs.Viewer .NET API
 description: Pomocí GroupDocs.Viewer for .NET bez problémů integrujte možnosti prohlížení dokumentů do svých aplikací .NET. Bez námahy načtěte a vytiskněte přílohy dokumentů.
-type: docs
 weight: 11
 url: /cs/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

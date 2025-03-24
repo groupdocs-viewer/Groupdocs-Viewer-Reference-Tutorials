@@ -3,7 +3,6 @@ title: Tùy chọn hiển thị bảng tính
 linktitle: Tùy chọn hiển thị bảng tính
 second_title: API GroupDocs.Viewer .NET
 description: Dễ dàng nâng cao khả năng trực quan hóa tài liệu trong .NET với các hướng dẫn của GroupDocs.Viewer. Tìm hiểu cách điều chỉnh tràn văn bản, hiển thị đường lưới, v.v.
-type: docs
 weight: 37
 url: /vi/net/spreadsheet-rendering-options/
 ---

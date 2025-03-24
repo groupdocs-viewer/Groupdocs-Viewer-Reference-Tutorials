@@ -3,7 +3,6 @@ title: ضبط حجم الصورة وجودتها (JPG)
 linktitle: ضبط حجم الصورة وجودتها (JPG)
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تحسين حجم الصورة وجودتها بتنسيق JPEG باستخدام Groupdocs.Viewer لـ .NET. تعزيز تجربة عرض المستندات الخاصة بك.
-type: docs
 weight: 11
 url: /ar/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---

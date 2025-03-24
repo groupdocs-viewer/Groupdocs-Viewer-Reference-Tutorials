@@ -3,7 +3,6 @@ title: Törölje a megjelenítést a törlési tokennel
 linktitle: Törölje a megjelenítést a törlési tokennel
 second_title: GroupDocs.Viewer .NET API
 description: Integrálja a Groupdocs.Viewer for .NET-et zökkenőmentesen .NET-projektjeibe a hatékony dokumentummegtekintés érdekében.
-type: docs
 weight: 11
 url: /hu/net/rendering-options/cancel-render-cancellation-token/
 ---

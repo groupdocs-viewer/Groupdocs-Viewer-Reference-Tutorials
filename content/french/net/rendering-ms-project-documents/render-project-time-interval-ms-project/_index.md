@@ -3,7 +3,6 @@ title: Intervalle de temps spécifique au rendu du projet (MS Project)
 linktitle: Intervalle de temps spécifique au rendu du projet (MS Project)
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez GroupDocs.Viewer pour .NET de manière transparente dans vos applications pour une visualisation efficace des documents. Améliorez la productivité grâce à des capacités de rendu polyvalentes.
-type: docs
 weight: 12
 url: /fr/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

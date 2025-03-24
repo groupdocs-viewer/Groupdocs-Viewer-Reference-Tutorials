@@ -3,7 +3,6 @@ title: Установить лимитную лицензию
 linktitle: Установить лимитную лицензию
 second_title: GroupDocs.Viewer .NET API
 description: Улучшите свои приложения .NET с помощью GroupDocs.Viewer для удобного просмотра документов. Легко интегрируйте функции рендеринга документов в свои проекты.
-type: docs
 weight: 12
 url: /ru/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 В заключение, GroupDocs.Viewer для .NET предоставляет комплексное решение для включения функций просмотра документов в ваши .NET-приложения. Следуя описанным шагам, вы сможете легко настроить лимитную лицензию и начать использовать возможности GroupDocs.Viewer в своих проектах.
 ## Часто задаваемые вопросы
 ### Вопрос: Где я могу найти документацию по GroupDocs.Viewer для .NET?
- Вы можете найти документацию[здесь](https://reference.groupdocs.com/viewer/net/).
+ Вы можете найти документацию[здесь](https://tutorials.groupdocs.com/viewer/net/).
 ### Вопрос: Существует ли бесплатная пробная версия GroupDocs.Viewer для .NET?
  Да, вы можете получить доступ к бесплатной пробной версии[здесь](https://releases.groupdocs.com/).
 ### Вопрос: Как я могу получить временные лицензии для целей тестирования?

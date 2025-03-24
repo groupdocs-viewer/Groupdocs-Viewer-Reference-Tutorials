@@ -3,7 +3,6 @@ title: Representar mensajes de correo electrónico
 linktitle: Representar mensajes de correo electrónico
 second_title: API GroupDocs.Viewer .NET
 description: Descubra cómo GroupDocs.Viewer para .NET simplifica la representación de mensajes de correo electrónico en archivos PDF. Aprenda a ajustar el tamaño de la página, configurar el formato Fecha y hora y cambiar el nombre de los campos de manera eficiente.
-type: docs
 weight: 27
 url: /es/net/rendering-email-messages/
 ---

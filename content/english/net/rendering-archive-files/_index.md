@@ -3,7 +3,6 @@ title: Rendering Archive Files
 linktitle: Rendering Archive Files
 second_title: GroupDocs.Viewer .NET API
 description: Discover comprehensive tutorials for rendering archive files using GroupDocs.Viewer for .NET. Integrate seamlessly and efficiently into your .NET applications.
-type: docs
 weight: 24
 url: /net/rendering-archive-files/
 ---

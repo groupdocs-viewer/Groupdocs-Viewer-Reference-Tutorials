@@ -3,7 +3,6 @@ title: แสดงผล N หน้าติดต่อกัน
 linktitle: แสดงผล N หน้าติดต่อกัน
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีผสานรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชันของคุณเพื่อเรนเดอร์เอกสารที่มี N หน้าติดต่อกันอย่างง่ายดาย
-type: docs
 weight: 16
 url: /th/net/rendering-options/render-n-consecutive-pages/
 ---

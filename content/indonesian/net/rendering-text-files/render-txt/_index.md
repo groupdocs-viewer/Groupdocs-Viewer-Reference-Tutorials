@@ -3,7 +3,6 @@ title: Render File Teks (.txt)
 linktitle: Render File Teks (.txt)
 second_title: GroupDocs.Viewer .NET API
 description: Jelajahi konversi file teks yang lancar ke dalam berbagai format menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan kemampuan manajemen dokumen Anda dengan mudah.
-type: docs
 weight: 10
 url: /id/net/rendering-text-files/render-txt/
 ---

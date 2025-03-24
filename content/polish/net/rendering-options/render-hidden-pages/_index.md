@@ -3,7 +3,6 @@ title: Renderuj ukryte strony
 linktitle: Renderuj ukryte strony
 second_title: GroupDocs.Viewer API .NET
 description: Ulepsz swoją aplikację .NET za pomocą GroupDocs.Viewer, aby zapewnić płynne renderowanie dokumentów. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bez wysiłku renderować ukryte strony.
-type: docs
 weight: 15
 url: /pl/net/rendering-options/render-hidden-pages/
 ---

@@ -3,7 +3,6 @@ title: アーカイブを単一または複数の HTML ページにレンダリ�
 linktitle: アーカイブを単一または複数の HTML ページにレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してアーカイブを HTML ページにレンダリングする方法を学びます。ドキュメント表示機能を .NET アプリケーションに簡単に統合します。
-type: docs
 weight: 12
 url: /ja/net/rendering-archive-files/render-archives-html/
 ---

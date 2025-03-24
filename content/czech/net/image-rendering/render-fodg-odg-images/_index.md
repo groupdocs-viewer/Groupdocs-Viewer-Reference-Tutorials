@@ -3,7 +3,6 @@ title: Vykreslování obrázků FODG a ODG
 linktitle: Vykreslování obrázků FODG a ODG
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat obrázky FODG a ODG do HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro .NET. Vylepšete práci s dokumenty.
-type: docs
 weight: 15
 url: /cs/net/image-rendering/render-fodg-odg-images/
 ---

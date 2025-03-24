@@ -3,7 +3,6 @@ title: Vykreslování dokumentů na obrázky
 linktitle: Vykreslování dokumentů na obrázky
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte výukové programy vykreslování dokumentů na obrázky pomocí GroupDocs.Viewer pro .NET. Optimalizujte kvalitu obrazu, extrahujte souřadnice textu a vylepšete uživatelský dojem.
-type: docs
 weight: 30
 url: /cs/net/rendering-documents-images/
 ---

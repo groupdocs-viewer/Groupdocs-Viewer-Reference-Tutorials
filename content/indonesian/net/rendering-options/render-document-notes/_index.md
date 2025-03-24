@@ -3,7 +3,6 @@ title: Render Dokumen dengan Catatan
 linktitle: Render Dokumen dengan Catatan
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender dokumen dengan catatan menggunakan GroupDocs.Viewer untuk .NET. Tutorial langkah demi langkah untuk integrasi yang lancar ke dalam aplikasi .NET Anda.
-type: docs
 weight: 14
 url: /id/net/rendering-options/render-document-notes/
 ---

@@ -3,7 +3,6 @@ title: Erweiterte Ladeoptionen
 linktitle: Erweiterte Ladeoptionen
 second_title: GroupDocs.Viewer .NET-API
 description: Erweitern Sie Ihre .NET-Apps mit GroupDocs.Viewer für .NET-Tutorials. Erfahren Sie, wie Sie Dateitypen angeben, Codierungen verwalten, passwortgeschützte Dokumente laden und vieles mehr.
-type: docs
 weight: 21
 url: /de/net/advanced-loading/
 ---

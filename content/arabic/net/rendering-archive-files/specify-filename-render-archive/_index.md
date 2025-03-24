@@ -3,7 +3,6 @@ title: حدد اسم الملف عند عرض ملفات الأرشيف
 linktitle: حدد اسم الملف عند عرض ملفات الأرشيف
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض ملفات الأرشيف في .NET باستخدام GroupDocs.Viewer، مما يعزز إمكانات إدارة المستندات.
-type: docs
 weight: 14
 url: /ar/net/rendering-archive-files/specify-filename-render-archive/
 ---

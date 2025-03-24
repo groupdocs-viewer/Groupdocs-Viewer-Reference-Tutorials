@@ -3,7 +3,6 @@ title: Render Dokumen ke PDF
 linktitle: Render Dokumen ke PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender dokumen ke PDF menggunakan GroupDocs.Viewer untuk .NET. Panduan langkah demi langkah dengan prasyarat dan FAQ disertakan.
-type: docs
 weight: 10
 url: /id/net/rendering-documents-pdf/render-to-pdf/
 ---

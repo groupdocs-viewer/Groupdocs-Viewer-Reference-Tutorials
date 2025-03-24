@@ -3,7 +3,6 @@ title: PDF'de Yazı Tipi Lisansı Doğrulamalarını Devre Dışı Bırak
 linktitle: PDF'de Yazı Tipi Lisansı Doğrulamalarını Devre Dışı Bırak
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET ile .NET'inizdeki kusursuz belge görüntüleme yeteneklerinin kilidini açın. Belge oluşturmayı minimum bağımlılıkla kolayca entegre edin ve özelleştirin.
-type: docs
 weight: 12
 url: /tr/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

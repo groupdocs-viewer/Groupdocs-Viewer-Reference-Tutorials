@@ -1,7 +1,6 @@
 ---
 title: Komplexní návody a příklady GroupDocs.Viewer pro .NET
 linktitle: GroupDocs.Viewer pro .NET výukové programy
-type: docs
 weight: 10
 url: /cs/net/
 description: Objevte komplexní výukové programy a příklady pro integraci GroupDocs.Viewer .NET do vašich aplikací. Naučte se krok za krokem techniky pro vylepšenou správu dokumentů.

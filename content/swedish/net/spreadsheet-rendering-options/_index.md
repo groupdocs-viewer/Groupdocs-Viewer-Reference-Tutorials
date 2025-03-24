@@ -3,7 +3,6 @@ title: Återgivningsalternativ för kalkylark
 linktitle: Återgivningsalternativ för kalkylark
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra enkelt dokumentvisualiseringen i .NET med GroupDocs.Viewer självstudier. Lär dig att justera textspill, rendera rutnätslinjer och mer.
-type: docs
 weight: 37
 url: /sv/net/spreadsheet-rendering-options/
 ---

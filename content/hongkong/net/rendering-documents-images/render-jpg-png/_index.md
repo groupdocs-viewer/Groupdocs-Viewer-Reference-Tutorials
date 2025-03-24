@@ -3,7 +3,6 @@ title: 將文件渲染為 JPGPNG
 linktitle: 將文件渲染為 JPGPNG
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 將文件無縫渲染為 .NET 中的 JPG/PNG，以增強使用者體驗和工作效率。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-documents-images/render-jpg-png/
 ---
@@ -106,7 +105,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ### Q：在哪裡可以找到 GroupDocs.Viewer for .NET 的文檔？
 
-答：有詳細的文檔[這裡](https://reference.groupdocs.com/viewer/net/).
+答：有詳細的文檔[這裡](https://tutorials.groupdocs.com/viewer/net/).
 
 ### Q：我可以在哪裡獲得與 GroupDocs.Viewer for .NET 相關的支援或提問？
 

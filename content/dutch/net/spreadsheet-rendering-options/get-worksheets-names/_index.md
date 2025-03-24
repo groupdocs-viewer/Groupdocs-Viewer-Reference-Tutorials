@@ -3,7 +3,6 @@ title: Werkbladnamen ophalen
 linktitle: Werkbladnamen ophalen
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek de magie van GroupDocs.Viewer voor .NET – integreer de weergave van documenten naadloos in uw toepassingen. Probeer nu de gratis proefperiode!
-type: docs
 weight: 11
 url: /nl/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ Absoluut! GroupDocs.Viewer ondersteunt een breed scala aan documentformaten, waa
 ### Kan ik een tijdelijke licentie krijgen?
  Zeker! Bezoek[deze link](https://purchase.groupdocs.com/temporary-license/) om uw tijdelijke licentie te verkrijgen.
 ### Zijn er gedetailleerde documentatiebronnen beschikbaar?
- Absoluut! Bekijk de[officiële documentatie](https://reference.groupdocs.com/viewer/net/) voor uitgebreide informatie en handleidingen.
+ Absoluut! Bekijk de[officiële documentatie](https://tutorials.groupdocs.com/viewer/net/) voor uitgebreide informatie en handleidingen.

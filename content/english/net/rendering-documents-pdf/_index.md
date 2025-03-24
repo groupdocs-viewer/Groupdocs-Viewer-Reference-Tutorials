@@ -3,7 +3,6 @@ title: Rendering Documents to PDF
 linktitle: Rendering Documents to PDF
 second_title: GroupDocs.Viewer .NET API
 description: Learn to render documents to PDF, adjust JPG image quality, and protect PDFs with passwords using GroupDocs.Viewer for .NET tutorials.
-type: docs
 weight: 29
 url: /net/rendering-documents-pdf/
 ---
@@ -20,7 +19,7 @@ Discover how to seamlessly render documents to PDF using GroupDocs.Viewer for .N
 
 ## Adjust JPG Image Quality in Rendered PDF
 
-Want to optimize the quality of JPG images in your rendered PDF documents? Our tutorial has you covered. With GroupDocs.Viewer for .NET, you can easily adjust the JPG image quality to achieve the perfect balance between file size and visual fidelity. Enhance your document viewing experience by fine-tuning image settings to suit your preferences.
+Want to optimize the quality of JPG images in your rendered PDF documents? Our tutorial has you covered. With GroupDocs.Viewer for .NET, you can easily adjust the JPG image quality to achieve the perfect balance between file size and visual fidelity. Enhance your document viewing experience by fine-tuning image settings to suit your ptutorialss.
 
 [Explore how to adjust JPG image quality in rendered PDF](./adjust-jpg-quality-pdf/)
 

@@ -3,7 +3,6 @@ title: Установить лицензию из файла
 linktitle: Установить лицензию из файла
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко интегрировать GroupDocs.Viewer для .NET в ваши приложения. Установите лицензию, просматривайте документы и настраивайте внешний вид средства просмотра.
-type: docs
 weight: 10
 url: /ru/net/getting-started/set-license-from-file/
 ---

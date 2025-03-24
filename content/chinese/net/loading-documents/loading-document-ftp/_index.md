@@ -3,7 +3,6 @@ title: 从 FTP 加载文档（高级）
 linktitle: 从 FTP 加载文档（高级）
 second_title: GroupDocs.Viewer .NET API
 description: 将 GroupDocs.Viewer for .NET 无缝集成到您的应用程序中，以实现高效的文档查看。轻松渲染来自 FTP 的文档。
-type: docs
 weight: 13
 url: /zh/net/loading-documents/loading-document-ftp/
 ---

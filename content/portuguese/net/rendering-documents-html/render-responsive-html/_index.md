@@ -3,7 +3,6 @@ title: Renderizar HTML responsivo
 linktitle: Renderizar HTML responsivo
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar HTML responsivo usando Groupdocs.Viewer for .NET, garantindo uma experiência de visualização ideal em todos os dispositivos.
-type: docs
 weight: 13
 url: /pt/net/rendering-documents-html/render-responsive-html/
 ---

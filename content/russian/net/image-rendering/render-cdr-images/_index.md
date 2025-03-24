@@ -3,7 +3,6 @@ title: Рендеринг изображений CDR
 linktitle: Рендеринг изображений CDR
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как визуализировать изображения CDR в HTML, JPG, PNG и PDF с помощью GroupDocs.Viewer для .NET. С помощью этого руководства легко конвертируйте файлы CorelDRAW.
-type: docs
 weight: 12
 url: /ru/net/image-rendering/render-cdr-images/
 ---

@@ -3,7 +3,6 @@ title: Ardışık N Sayfa Oluştur
 linktitle: Ardışık N Sayfa Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: Ardışık N sayfalı belgeleri zahmetsizce oluşturmak için GroupDocs.Viewer for .NET'i uygulamalarınıza nasıl entegre edeceğinizi öğrenin.
-type: docs
 weight: 16
 url: /tr/net/rendering-options/render-n-consecutive-pages/
 ---

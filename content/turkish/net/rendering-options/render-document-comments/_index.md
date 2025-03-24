@@ -3,7 +3,6 @@ title: Belgeyi Yorumlarla Oluştur
 linktitle: Belgeyi Yorumlarla Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak yorum içeren belgeleri nasıl oluşturacağınızı öğrenin. Sorunsuz entegrasyon için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 13
 url: /tr/net/rendering-options/render-document-comments/
 ---

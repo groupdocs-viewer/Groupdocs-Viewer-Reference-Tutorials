@@ -3,7 +3,6 @@ title: 아카이브를 단일 또는 다중 HTML 페이지로 렌더링
 linktitle: 아카이브를 단일 또는 다중 HTML 페이지로 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 아카이브를 HTML 페이지로 렌더링하는 방법을 알아보세요. 문서 보기 기능을 .NET 애플리케이션에 손쉽게 통합하세요.
-type: docs
 weight: 12
 url: /ko/net/rendering-archive-files/render-archives-html/
 ---

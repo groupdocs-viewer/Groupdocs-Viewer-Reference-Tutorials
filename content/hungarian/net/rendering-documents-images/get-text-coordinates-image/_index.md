@@ -3,7 +3,6 @@ title: Szerezzen szövegkoordinátákat a képmegjelenítéshez
 linktitle: Szerezzen szövegkoordinátákat a képmegjelenítéshez
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan bonthat ki szövegkoordinátákat képmegjelenítéshez a GroupDocs.Viewer for .NET segítségével. Fokozatmentesen fokozza dokumentumfeldolgozási képességeit.
-type: docs
 weight: 12
 url: /hu/net/rendering-documents-images/get-text-coordinates-image/
 ---

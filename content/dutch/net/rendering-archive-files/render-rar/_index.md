@@ -3,7 +3,6 @@ title: Render RAR-archieven
 linktitle: Render RAR-archieven
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u RAR-archieven kunt weergeven in HTML-, JPG-, PNG- of PDF-indeling met GroupDocs.Viewer voor .NET. Bekijk en deel eenvoudig de inhoud van RAR-archieven.
-type: docs
 weight: 13
 url: /nl/net/rendering-archive-files/render-rar/
 ---

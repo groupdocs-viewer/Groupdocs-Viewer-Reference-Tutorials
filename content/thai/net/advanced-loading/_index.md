@@ -3,7 +3,6 @@ title: ตัวเลือกการโหลดขั้นสูง
 linktitle: ตัวเลือกการโหลดขั้นสูง
 second_title: GroupDocs.Viewer .NET API
 description: ปรับปรุงแอป .NET ของคุณด้วย GroupDocs.Viewer สำหรับบทช่วยสอน .NET เรียนรู้การระบุประเภทไฟล์ จัดการการเข้ารหัส โหลดเอกสารที่ป้องกันด้วยรหัสผ่าน และอื่นๆ อีกมากมาย
-type: docs
 weight: 21
 url: /th/net/advanced-loading/
 ---

@@ -3,7 +3,6 @@ title: Sayfaları Çevir ve Döndür
 linktitle: Sayfaları Çevir ve Döndür
 second_title: GroupDocs.Viewer .NET API'si
 description: Sorunsuz belge oluşturma, çevirme ve döndürme için Groupdocs.Viewer for .NET'i uygulamalarınıza nasıl entegre edeceğinizi öğrenin.
-type: docs
 weight: 12
 url: /tr/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ Bu eğitimde, özellikle sayfaları çevirme ve döndürmeye odaklanarak Groupdo
 ## Önkoşullar
 Başlamadan önce aşağıdaki önkoşulları oluşturduğunuzdan emin olun:
 ### .NET için Groupdocs.Viewer'ı yükleme
- Groupdocs.Viewer for .NET'i kullanmak için paketi NuGet Paket Yöneticisi aracılığıyla yüklemeniz gerekir. Ayrıntılı kurulum talimatlarını şurada bulabilirsiniz:[dokümantasyon](https://reference.groupdocs.com/viewer/net/).
+ Groupdocs.Viewer for .NET'i kullanmak için paketi NuGet Paket Yöneticisi aracılığıyla yüklemeniz gerekir. Ayrıntılı kurulum talimatlarını şurada bulabilirsiniz:[dokümantasyon](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Ad Alanlarını İçe Aktar
 Groupdocs.Viewer for .NET'i etkili bir şekilde kullanmak için projenizde gerekli ad alanlarının içe aktarıldığından emin olun.

@@ -3,7 +3,6 @@ title: การประมวลผลเอกสารแนบ
 linktitle: การประมวลผลเอกสารแนบ
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีผสานรวมความสามารถในการดูเอกสารเข้ากับแอปพลิเคชัน .NET ของคุณได้อย่างง่ายดายโดยใช้ GroupDocs.Viewer จัดการเอกสารแนบอย่างมีประสิทธิภาพ
-type: docs
 weight: 32
 url: /th/net/processing-document-attachments/
 --- 

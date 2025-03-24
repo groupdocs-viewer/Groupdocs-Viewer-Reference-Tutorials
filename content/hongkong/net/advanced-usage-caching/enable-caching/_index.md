@@ -3,7 +3,6 @@ title: 啟用快取以加快文件處理速度
 linktitle: 啟用快取以加快文件處理速度
 second_title: GroupDocs.Viewer .NET API
 description: 透過利用緩存，使用 GroupDocs.Viewer 提高 .NET 應用程式中的文件處理速度。毫不費力地優化效能。
-type: docs
 weight: 10
 url: /zh-hant/net/advanced-usage-caching/enable-caching/
 ---

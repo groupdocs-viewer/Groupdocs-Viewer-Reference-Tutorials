@@ -3,7 +3,6 @@ title: Datum/Uhrzeit-Format und Zeitzonenversatz festlegen (E-Mail)
 linktitle: Datum/Uhrzeit-Format und Zeitzonenversatz festlegen (E-Mail)
 second_title: GroupDocs.Viewer .NET-API
 description: Integrieren Sie GroupDocs.Viewer für .NET nahtlos in Ihre Anwendungen, um leistungsstarke Funktionen zur Dokumentenanzeige zu erhalten. Verbessern Sie das Benutzererlebnis mit anpassbaren Optionen.
-type: docs
 weight: 11
 url: /de/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

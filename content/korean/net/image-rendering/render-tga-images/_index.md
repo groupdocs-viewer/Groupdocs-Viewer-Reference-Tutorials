@@ -3,7 +3,6 @@ title: TGA 이미지 렌더링
 linktitle: TGA 이미지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET 응용 프로그램에서 TGA 이미지를 쉽게 렌더링하는 방법을 알아보세요. 이미지 렌더링 기능을 강화하세요.
-type: docs
 weight: 17
 url: /ko/net/image-rendering/render-tga-images/
 ---

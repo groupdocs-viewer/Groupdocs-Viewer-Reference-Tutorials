@@ -3,7 +3,6 @@ title: Ορισμός άδειας χρήσης από το αρχείο
 linktitle: Ορισμός άδειας χρήσης από το αρχείο
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να ενσωματώνετε το GroupDocs.Viewer για .NET στις εφαρμογές σας χωρίς κόπο. Ορισμός άδειας χρήσης, προβολή εγγράφων και προσαρμογή της εμφάνισης του θεατή.
-type: docs
 weight: 10
 url: /el/net/getting-started/set-license-from-file/
 ---

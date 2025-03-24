@@ -3,7 +3,6 @@ title: Render Responsive HTML
 linktitle: Render Responsive HTML
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render responsive HTML using Groupdocs.Viewer for .NET, ensuring optimal viewing experience across devices.
-type: docs
 weight: 13
 url: /net/rendering-documents-html/render-responsive-html/
 ---

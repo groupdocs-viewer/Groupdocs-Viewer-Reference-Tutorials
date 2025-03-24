@@ -3,7 +3,6 @@ title: Deshabilitar la selección de texto en PDF
 linktitle: Deshabilitar la selección de texto en PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda cómo deshabilitar la selección de texto en PDF usando GroupDocs.Viewer para .NET. Siga nuestra guía paso a paso para una integración perfecta.
-type: docs
 weight: 13
 url: /es/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

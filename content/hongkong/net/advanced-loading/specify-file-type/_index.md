@@ -3,7 +3,6 @@ title: 載入文檔時指定文件類型
 linktitle: 載入文檔時指定文件類型
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何在使用 GroupDocs.Viewer for .NET 載入文件時指定文件類型。在 .NET 應用程式中準確呈現各種格式。
-type: docs
 weight: 10
 url: /zh-hant/net/advanced-loading/specify-file-type/
 ---

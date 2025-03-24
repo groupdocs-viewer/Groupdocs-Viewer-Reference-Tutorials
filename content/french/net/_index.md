@@ -1,7 +1,6 @@
 ---
 title: Tutoriels complets et exemples de GroupDocs.Viewer pour .NET
 linktitle: GroupDocs.Viewer pour les didacticiels .NET
-type: docs
 weight: 10
 url: /fr/net/
 description: Découvrez des didacticiels et des exemples complets pour intégrer GroupDocs.Viewer .NET dans vos applications. Apprenez des techniques étape par étape pour une gestion améliorée des documents.

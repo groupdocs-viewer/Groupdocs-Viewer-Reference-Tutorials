@@ -3,7 +3,6 @@ title: 高级加载选项
 linktitle: 高级加载选项
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 教程增强您的 .NET 应用程序。学习指定文件类型、管理编码、加载受密码保护的文档等等。
-type: docs
 weight: 21
 url: /zh/net/advanced-loading/
 ---

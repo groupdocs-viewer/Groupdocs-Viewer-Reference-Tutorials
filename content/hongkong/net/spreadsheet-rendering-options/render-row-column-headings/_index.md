@@ -3,7 +3,6 @@ title: 渲染行和列標題
 linktitle: 渲染行和列標題
 second_title: GroupDocs.Viewer .NET API
 description: 增強 .NET 中的文件檢視功能！了解使用 GroupDocs.Viewer for .NET 呈現行標題和列標題。探索 HTML、JPG、PNG 和 PDF 輸出。
-type: docs
 weight: 18
 url: /zh-hant/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

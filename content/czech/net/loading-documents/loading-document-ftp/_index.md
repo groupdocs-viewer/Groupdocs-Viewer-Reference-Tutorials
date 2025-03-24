@@ -3,7 +3,6 @@ title: Načítání dokumentů z FTP (pokročilé)
 linktitle: Načítání dokumentů z FTP (pokročilé)
 second_title: GroupDocs.Viewer .NET API
 description: Integrujte GroupDocs.Viewer for .NET hladce do svých aplikací pro efektivní prohlížení dokumentů. Vykreslujte dokumenty z FTP bez námahy.
-type: docs
 weight: 13
 url: /cs/net/loading-documents/loading-document-ftp/
 ---

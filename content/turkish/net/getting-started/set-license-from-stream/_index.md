@@ -3,7 +3,6 @@ title: Lisansı Akıştan Ayarla
 linktitle: Lisansı Akıştan Ayarla
 second_title: GroupDocs.Viewer .NET API'si
 description: Kusursuz belge görüntüleme için .NET uygulamalarınızı GroupDocs.Viewer ile geliştirin. Adım adım kılavuzumuzu takip edin ve güçlü belge görüntüleme özelliklerini zahmetsizce entegre edin.
-type: docs
 weight: 11
 url: /tr/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ Entegrasyon sürecine dalmadan önce aşağıdaki önkoşulların mevcut olduğu
 1. .NET Geliştirmeye İlişkin Temel Bilgi: Bu eğitimle birlikte C# ve .NET çerçevesine aşina olmak çok önemlidir.
    
 2.  GroupDocs.Viewer for .NET Paketi: GroupDocs.Viewer for .NET paketini indirip yüklediğinizden emin olun. adresinden temin edebilirsiniz.[İndirme: {link](https://releases.groupdocs.com/viewer/net/).
-3.  GroupDocs Dokümantasyonuna Erişim:[dokümantasyon](https://reference.groupdocs.com/viewer/net/) Entegrasyon işlemi sırasında referans olması açısından kullanışlıdır.
+3.  GroupDocs Dokümantasyonuna Erişim:[dokümantasyon](https://tutorials.groupdocs.com/viewer/net/) Entegrasyon işlemi sırasında referans olması açısından kullanışlıdır.
 
 ## Ad Alanlarını İçe Aktar
 Başlangıç olarak gerekli ad alanlarını .NET uygulamanıza aktarın. Bu adımları takip et:

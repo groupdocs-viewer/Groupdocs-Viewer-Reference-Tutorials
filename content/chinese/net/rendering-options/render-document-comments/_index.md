@@ -3,7 +3,6 @@ title: 渲染带有注释的文档
 linktitle: 渲染带有注释的文档
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 呈现带有注释的文档。请按照我们的分步指南进行无缝集成。
-type: docs
 weight: 13
 url: /zh/net/rendering-options/render-document-comments/
 ---

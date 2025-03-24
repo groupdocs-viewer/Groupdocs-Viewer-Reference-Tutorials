@@ -3,7 +3,6 @@ title: Rendern Sie ein einzelnes Layout in CAD-Zeichnungen
 linktitle: Rendern Sie ein einzelnes Layout in CAD-Zeichnungen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET ein einzelnes Layout in CAD-Zeichnungen rendern. Einfache Schritte für eine nahtlose Integration in Ihre .NET-Anwendungen.
-type: docs
 weight: 14
 url: /de/net/rendering-cad-drawings/render-single-layout-cad/
 ---

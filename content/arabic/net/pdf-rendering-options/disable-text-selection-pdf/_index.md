@@ -3,7 +3,6 @@ title: تعطيل تحديد النص في PDF
 linktitle: تعطيل تحديد النص في PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تعطيل تحديد النص في PDF باستخدام GroupDocs.Viewer لـ .NET. اتبع دليلنا خطوة بخطوة للتكامل السلس.
-type: docs
 weight: 13
 url: /ar/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

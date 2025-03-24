@@ -3,7 +3,6 @@ title: Geben Sie beim Rendern von Archivdateien den Dateinamen an
 linktitle: Geben Sie beim Rendern von Archivdateien den Dateinamen an
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie Archivdateien in .NET mit GroupDocs.Viewer rendern und so die Dokumentverwaltungsfunktionen verbessern.
-type: docs
 weight: 14
 url: /de/net/rendering-archive-files/specify-filename-render-archive/
 ---

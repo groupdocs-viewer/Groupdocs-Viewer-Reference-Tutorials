@@ -3,7 +3,6 @@ title: 워크시트 이름 가져오기
 linktitle: 워크시트 이름 가져오기
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer의 마법을 탐험해보세요. 문서 보기를 응용 프로그램에 원활하게 통합할 수 있습니다. 지금 무료 평가판을 사용해 보세요!
-type: docs
 weight: 11
 url: /ko/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ foreach (Page page in viewInfo.Pages)
 ### 임시면허를 취득할 수 있나요?
  틀림없이! 방문하다[이 링크](https://purchase.groupdocs.com/temporary-license/) 임시면허증을 받으러
 ### 사용 가능한 자세한 문서 리소스가 있습니까?
- 전적으로! 확인해 보세요[공식 문서](https://reference.groupdocs.com/viewer/net/) 자세한 정보와 가이드를 확인하세요.
+ 전적으로! 확인해 보세요[공식 문서](https://tutorials.groupdocs.com/viewer/net/) 자세한 정보와 가이드를 확인하세요.

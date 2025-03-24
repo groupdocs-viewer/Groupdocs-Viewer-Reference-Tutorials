@@ -3,7 +3,6 @@ title: تحميل المستندات من FTP (متقدم)
 linktitle: تحميل المستندات من FTP (متقدم)
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج GroupDocs.Viewer لـ .NET بسلاسة في تطبيقاتك لعرض المستندات بكفاءة. قم بتقديم المستندات من FTP دون عناء.
-type: docs
 weight: 13
 url: /ar/net/loading-documents/loading-document-ftp/
 ---

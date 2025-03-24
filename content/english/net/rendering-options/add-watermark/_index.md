@@ -3,7 +3,6 @@ title: Add Watermark in Document
 linktitle: Add Watermark in Document
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to seamlessly add watermarks to documents using GroupDocs.Viewer for .NET. Enhance document security and branding with this easy-to-follow tutorial.
-type: docs
 weight: 10
 url: /net/rendering-options/add-watermark/
 ---

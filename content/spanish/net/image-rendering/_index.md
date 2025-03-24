@@ -3,7 +3,6 @@ title: Representación de imágenes
 linktitle: Representación de imágenes
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriales completos sobre cómo representar varios formatos de imágenes utilizando GroupDocs.Viewer para .NET. Desde IA hasta WMF, aprenda ejemplos de codificación e integración perfecta.
-type: docs
 weight: 28
 url: /es/net/image-rendering/
 ---

@@ -3,7 +3,6 @@ title: Rendervorgang mit Abbruchtoken abbrechen
 linktitle: Rendervorgang mit Abbruchtoken abbrechen
 second_title: GroupDocs.Viewer .NET-API
 description: Integrieren Sie Groupdocs.Viewer für .NET nahtlos in Ihre .NET-Projekte für eine effiziente Dokumentenanzeige.
-type: docs
 weight: 11
 url: /de/net/rendering-options/cancel-render-cancellation-token/
 ---

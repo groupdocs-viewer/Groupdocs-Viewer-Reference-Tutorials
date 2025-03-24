@@ -3,7 +3,6 @@ title: Trasforma il documento in PDF
 linktitle: Trasforma il documento in PDF
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering di documenti in PDF utilizzando GroupDocs.Viewer per .NET. Guida passo passo con prerequisiti e domande frequenti incluse.
-type: docs
 weight: 10
 url: /it/net/rendering-documents-pdf/render-to-pdf/
 ---

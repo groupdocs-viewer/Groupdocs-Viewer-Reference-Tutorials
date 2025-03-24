@@ -3,7 +3,6 @@ title: संसाधन लोडिंग टाइमआउट सेट क
 linktitle: संसाधन लोडिंग टाइमआउट सेट करें (उन्नत)
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए GroupDocs.Viewer में संसाधन लोडिंग टाइमआउट को कुशलतापूर्वक कैसे कॉन्फ़िगर करें। परिशुद्धता और स्थिरता के साथ दस्तावेज़ प्रतिपादन में महारत हासिल करें।
-type: docs
 weight: 13
 url: /hi/net/advanced-loading/set-resource-loading-timeout/
 ---

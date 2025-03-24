@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Viewer for .NET 渲染列印區域
 linktitle: 渲染列印區域
 second_title: GroupDocs.Viewer .NET API
 description: 探索適用於 .NET 的 GroupDocs.Viewer 並輕鬆呈現各種文件格式的列印區域。立即免費試用！ #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /zh-hant/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 恭喜！您已成功學習如何利用 GroupDocs.Viewer for .NET 呈現文件中的列印區域。這個強大的工具為 .NET 應用程式中的文件渲染開啟了新的可能性。
 ## 常見問題解答
 ### GroupDocs.Viewer 是否相容於不同的文件格式？
-是的，GroupDocs.Viewer 支援多種文件格式，包括 PDF、DOCX、XLSX 等。請參閱[文件](https://reference.groupdocs.com/viewer/net/)以獲得完整清單。
+是的，GroupDocs.Viewer 支援多種文件格式，包括 PDF、DOCX、XLSX 等。請參閱[文件](https://tutorials.groupdocs.com/viewer/net/)以獲得完整清單。
 ### 我可以在購買前試用 GroupDocs.Viewer 嗎？
 絕對地！您可以透過免費試用來探索該工具[這裡](https://releases.groupdocs.com/).
 ### 對於任何問題，我可以在哪裡找到支持或尋求協助？

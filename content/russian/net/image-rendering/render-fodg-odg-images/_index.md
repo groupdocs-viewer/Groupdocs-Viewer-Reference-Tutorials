@@ -3,7 +3,6 @@ title: Рендеринг изображений FODG и ODG
 linktitle: Рендеринг изображений FODG и ODG
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как визуализировать изображения FODG и ODG в HTML, JPG, PNG и PDF с помощью GroupDocs.Viewer для .NET. Улучшите обработку документов.
-type: docs
 weight: 15
 url: /ru/net/image-rendering/render-fodg-odg-images/
 ---

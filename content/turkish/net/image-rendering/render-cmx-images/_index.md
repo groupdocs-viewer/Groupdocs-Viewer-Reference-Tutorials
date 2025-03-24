@@ -3,7 +3,6 @@ title: CMX Görüntülerini İşle
 linktitle: CMX Görüntülerini İşle
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak CMX görüntülerini zahmetsizce çeşitli formatlara nasıl dönüştüreceğinizi öğrenin. Belge yönetiminizi geliştirin.
-type: docs
 weight: 13
 url: /tr/net/image-rendering/render-cmx-images/
 ---

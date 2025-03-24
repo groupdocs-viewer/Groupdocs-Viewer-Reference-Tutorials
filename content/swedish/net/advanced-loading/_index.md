@@ -3,7 +3,6 @@ title: Avancerade laddningsalternativ
 linktitle: Avancerade laddningsalternativ
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dina .NET-appar med GroupDocs.Viewer för .NET-självstudier. Lär dig att ange filtyper, hantera kodningar, ladda lösenordsskyddade dokument och mer.
-type: docs
 weight: 21
 url: /sv/net/advanced-loading/
 ---

@@ -3,7 +3,6 @@ title: Proteggi PDF renderizzato con password
 linktitle: Proteggi PDF renderizzato con password
 second_title: API GroupDocs.Viewer .NET
 description: Proteggi facilmente i tuoi PDF renderizzati con password utilizzando Groupdocs.Viewer per .NET. Mantieni i tuoi documenti sicuri e riservati.
-type: docs
 weight: 12
 url: /it/net/rendering-documents-pdf/protect-pdf/
 ---

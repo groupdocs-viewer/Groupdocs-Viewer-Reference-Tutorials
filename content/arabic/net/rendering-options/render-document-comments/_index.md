@@ -3,7 +3,6 @@ title: تقديم المستند مع التعليقات
 linktitle: تقديم المستند مع التعليقات
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض المستندات التي تحتوي على تعليقات باستخدام GroupDocs.Viewer لـ .NET. اتبع دليلنا خطوة بخطوة للتكامل السلس.
-type: docs
 weight: 13
 url: /ar/net/rendering-options/render-document-comments/
 ---

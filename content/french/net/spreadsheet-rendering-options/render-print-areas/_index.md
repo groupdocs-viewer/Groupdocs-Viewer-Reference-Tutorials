@@ -3,7 +3,6 @@ title: Rendre les zones d'impression avec GroupDocs.Viewer pour .NET
 linktitle: Rendu des zones d'impression
 second_title: API GroupDocs.Viewer .NET
 description: Explorez GroupDocs.Viewer pour .NET et restituez sans effort les zones d'impression dans différents formats de document. Essayez l'essai gratuit maintenant ! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /fr/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Toutes nos félicitations! Vous avez appris avec succès comment utiliser GroupDocs.Viewer pour .NET pour afficher les zones d'impression dans vos documents. Cet outil puissant ouvre de nouvelles possibilités de rendu de documents dans vos applications .NET.
 ## FAQ
 ### GroupDocs.Viewer est-il compatible avec différents formats de documents ?
- Oui, GroupDocs.Viewer prend en charge un large éventail de formats de documents, notamment PDF, DOCX, XLSX, etc. Se référer au[Documentation](https://reference.groupdocs.com/viewer/net/) pour une liste complète.
+ Oui, GroupDocs.Viewer prend en charge un large éventail de formats de documents, notamment PDF, DOCX, XLSX, etc. Se référer au[Documentation](https://tutorials.groupdocs.com/viewer/net/) pour une liste complète.
 ### Puis-je essayer GroupDocs.Viewer avant de faire un achat ?
  Absolument! Vous pouvez explorer l'outil avec un essai gratuit disponible[ici](https://releases.groupdocs.com/).
 ### Où puis-je trouver de l'aide ou demander de l'aide pour tout problème ?

@@ -1,7 +1,6 @@
 ---
 title: 適用於 .NET 的 GroupDocs.Viewer 綜合教學與範例
 linktitle: GroupDocs.Viewer for .NET 教學課程
-type: docs
 weight: 10
 url: /zh-hant/net/
 description: 了解將 GroupDocs.Viewer .NET 整合到您的應用程式中的綜合教學和範例。了解增強文件管理的逐步技術。

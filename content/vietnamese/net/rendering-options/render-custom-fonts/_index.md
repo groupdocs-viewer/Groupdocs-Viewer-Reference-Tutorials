@@ -3,7 +3,6 @@ title: Kết xuất với phông chữ tùy chỉnh
 linktitle: Kết xuất với phông chữ tùy chỉnh
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tài liệu bằng phông chữ tùy chỉnh bằng GroupDocs.Viewer cho .NET. Tăng cường trình bày trực quan một cách dễ dàng.
-type: docs
 weight: 18
 url: /vi/net/rendering-options/render-custom-fonts/
 ---

@@ -3,7 +3,6 @@ title: WMZ और WMF छवियाँ प्रस्तुत करें
 linktitle: WMZ और WMF छवियाँ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके .NET अनुप्रयोगों में WMZ और WMF छवियों को आसानी से प्रस्तुत करें। दस्तावेज़ प्रसंस्करण क्षमताओं को आसानी से बढ़ाएं।
-type: docs
 weight: 18
 url: /hi/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ url: /hi/net/image-rendering/render-wmz-wmf-images/
 
 3. .NET वातावरण से परिचित: रेंडरिंग प्रक्रिया को प्रभावी ढंग से लागू करने के लिए .NET फ्रेमवर्क और C# प्रोग्रामिंग भाषा की बुनियादी समझ आवश्यक है।
 
-4.  आपके प्रोजेक्ट में एकीकरण: सुनिश्चित करें कि .NET के लिए GroupDocs.Viewer आपके .NET प्रोजेक्ट में ठीक से एकीकृत है। एकीकरण पर विस्तृत निर्देशों के लिए दस्तावेज़ देखें:[प्रलेखन](https://reference.groupdocs.com/viewer/net/).
+4.  आपके प्रोजेक्ट में एकीकरण: सुनिश्चित करें कि .NET के लिए GroupDocs.Viewer आपके .NET प्रोजेक्ट में ठीक से एकीकृत है। एकीकरण पर विस्तृत निर्देशों के लिए दस्तावेज़ देखें:[प्रलेखन](https://tutorials.groupdocs.com/viewer/net/).
 
 ## नामस्थान आयात करें
 

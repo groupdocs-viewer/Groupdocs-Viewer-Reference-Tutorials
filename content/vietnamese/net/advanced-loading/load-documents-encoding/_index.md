@@ -3,7 +3,6 @@ title: Tải tài liệu với mã hóa cụ thể
 linktitle: Tải tài liệu với mã hóa cụ thể
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao ứng dụng .NET của bạn bằng khả năng xem tài liệu liền mạch bằng GroupDocs.Viewer dành cho .NET. Dễ dàng tải tài liệu với mã hóa cụ thể và tùy chỉnh trải nghiệm xem.
-type: docs
 weight: 11
 url: /vi/net/advanced-loading/load-documents-encoding/
 ---

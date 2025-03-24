@@ -3,7 +3,6 @@ title: Arşiv Dosyalarını Oluştururken Dosya Adını Belirtin
 linktitle: Arşiv Dosyalarını Oluştururken Dosya Adını Belirtin
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak arşiv dosyalarını .NET'te nasıl oluşturacağınızı öğrenin ve belge yönetimi yeteneklerini geliştirin.
-type: docs
 weight: 14
 url: /tr/net/rendering-archive-files/specify-filename-render-archive/
 ---

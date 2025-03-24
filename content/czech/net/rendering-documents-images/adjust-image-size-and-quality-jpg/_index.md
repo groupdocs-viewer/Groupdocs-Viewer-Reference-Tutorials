@@ -3,7 +3,6 @@ title: Upravit velikost a kvalitu obrázku (JPG)
 linktitle: Upravit velikost a kvalitu obrázku (JPG)
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se optimalizovat velikost a kvalitu obrázku ve formátu JPEG pomocí Groupdocs.Viewer pro .NET. Vylepšete si zážitek ze sledování dokumentů.
-type: docs
 weight: 11
 url: /cs/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---

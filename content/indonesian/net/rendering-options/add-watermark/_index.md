@@ -3,7 +3,6 @@ title: Tambahkan Tanda Air di Dokumen
 linktitle: Tambahkan Tanda Air di Dokumen
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menambahkan tanda air ke dokumen dengan lancar menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan keamanan dan pencitraan merek dokumen dengan tutorial yang mudah diikuti ini.
-type: docs
 weight: 10
 url: /id/net/rendering-options/add-watermark/
 ---

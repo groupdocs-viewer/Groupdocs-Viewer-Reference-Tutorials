@@ -3,7 +3,6 @@ title: सीएडी ड्राइंग के लिए जानकार
 linktitle: सीएडी ड्राइंग के लिए जानकारी देखें
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए GroupDocs.Viewer का उपयोग करके CAD ड्राइंग के लिए दृश्य जानकारी कैसे प्राप्त करें। निर्बाध CAD फ़ाइल प्रबंधन के साथ अपने .NET अनुप्रयोगों को बेहतर बनाएं।
-type: docs
 weight: 10
 url: /hi/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

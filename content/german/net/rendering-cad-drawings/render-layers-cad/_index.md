@@ -3,7 +3,6 @@ title: Rendern Sie Ebenen in CAD-Zeichnungen
 linktitle: Rendern Sie Ebenen in CAD-Zeichnungen
 second_title: GroupDocs.Viewer .NET-API
 description: Rendern Sie CAD-Zeichnungen nahtlos in .NET-Anwendungen mit GroupDocs.Viewer für .NET. Entdecken Sie Rendering-Optionen, passen Sie Ebenen an und mehr.
-type: docs
 weight: 13
 url: /de/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Bevor Sie GroupDocs.Viewer für .NET verwenden, stellen Sie sicher, dass Sie die
 - Grundlegendes Verständnis der Programmiersprache C#.
 - .NET-Entwicklungsumgebung auf Ihrem Computer eingerichtet.
 -  GroupDocs.Viewer für .NET installiert. Sie können es herunterladen unter[Hier](https://releases.groupdocs.com/viewer/net/).
--  Zugriff auf die GroupDocs.Viewer für .NET-Dokumentation als Referenz, die Sie finden können[Hier](https://reference.groupdocs.com/viewer/net/).
+-  Zugriff auf die GroupDocs.Viewer für .NET-Dokumentation als Referenz, die Sie finden können[Hier](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Namespaces importieren
 Um GroupDocs.Viewer für .NET verwenden zu können, müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Folge diesen Schritten:

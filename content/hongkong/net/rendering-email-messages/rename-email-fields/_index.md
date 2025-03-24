@@ -3,7 +3,6 @@ title: 在渲染期間重命名電子郵件字段
 linktitle: 在渲染期間重命名電子郵件字段
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 增強文件檢視體驗。無縫渲染和自訂電子郵件。
-type: docs
 weight: 12
 url: /zh-hant/net/rendering-email-messages/rename-email-fields/
 ---

@@ -3,7 +3,6 @@ title: 非表示の列と行をレンダリングする
 linktitle: 非表示の列と行をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用すると、スプレッドシート内の非表示データのロックを簡単に解除できます。ステップバイステップのガイドに従って、隠された列と行を表示します。
-type: docs
 weight: 13
 url: /ja/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

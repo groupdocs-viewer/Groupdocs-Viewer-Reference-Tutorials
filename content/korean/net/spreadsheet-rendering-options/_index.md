@@ -3,7 +3,6 @@ title: 스프레드시트 렌더링 옵션
 linktitle: 스프레드시트 렌더링 옵션
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer 튜토리얼을 통해 .NET에서 문서 시각화를 손쉽게 향상할 수 있습니다. 텍스트 오버플로를 조정하고 그리드 선을 렌더링하는 방법 등을 알아보세요.
-type: docs
 weight: 37
 url: /ko/net/spreadsheet-rendering-options/
 ---

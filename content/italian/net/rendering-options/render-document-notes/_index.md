@@ -3,7 +3,6 @@ title: Rendering del documento con note
 linktitle: Rendering del documento con note
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering di documenti con note utilizzando GroupDocs.Viewer per .NET. Tutorial passo passo per una perfetta integrazione nelle tue applicazioni .NET.
-type: docs
 weight: 14
 url: /it/net/rendering-options/render-document-notes/
 ---

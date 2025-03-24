@@ -3,7 +3,6 @@ title: Schützen Sie gerenderte PDFs mit einem Passwort
 linktitle: Schützen Sie gerenderte PDFs mit einem Passwort
 second_title: GroupDocs.Viewer .NET-API
 description: Schützen Sie Ihre gerenderten PDFs ganz einfach mit Passwörtern mit Groupdocs.Viewer für .NET. Bewahren Sie Ihre Dokumente sicher und vertraulich auf.
-type: docs
 weight: 12
 url: /de/net/rendering-documents-pdf/protect-pdf/
 ---

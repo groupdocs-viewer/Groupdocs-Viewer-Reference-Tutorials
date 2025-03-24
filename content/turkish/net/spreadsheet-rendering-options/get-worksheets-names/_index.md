@@ -3,7 +3,6 @@ title: Çalışma Sayfası Adlarını Alma
 linktitle: Çalışma Sayfası Adlarını Alma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'in büyüsünü keşfedin; belge görüntülemeyi uygulamalarınıza sorunsuz bir şekilde entegre edin. Ücretsiz denemeyi şimdi deneyin!
-type: docs
 weight: 11
 url: /tr/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ Kesinlikle! GroupDocs.Viewer, PDF, Microsoft Office ve daha fazlası dahil olmak
 ### Geçici lisans alabilir miyim?
  Kesinlikle! Ziyaret etmek[bu bağlantı](https://purchase.groupdocs.com/temporary-license/) Geçici lisansınızı almak için.
 ### Ayrıntılı dokümantasyon kaynakları mevcut mu?
- Kesinlikle! Kontrol et[resmi belgeler](https://reference.groupdocs.com/viewer/net/) Ayrıntılı bilgi ve kılavuzlar için.
+ Kesinlikle! Kontrol et[resmi belgeler](https://tutorials.groupdocs.com/viewer/net/) Ayrıntılı bilgi ve kılavuzlar için.

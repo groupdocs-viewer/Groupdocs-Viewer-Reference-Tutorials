@@ -3,7 +3,6 @@ title: Imposta il formato data/ora e la differenza del fuso orario (e-mail)
 linktitle: Imposta il formato data/ora e la differenza del fuso orario (e-mail)
 second_title: API GroupDocs.Viewer .NET
 description: Integra GroupDocs.Viewer for .NET perfettamente nelle tue applicazioni per potenti funzionalità di visualizzazione dei documenti. Migliora l'esperienza utente con opzioni personalizzabili.
-type: docs
 weight: 11
 url: /it/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

@@ -3,7 +3,6 @@ title: Uteslut teckensnitt från renderad HTML
 linktitle: Uteslut teckensnitt från renderad HTML
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du utesluter teckensnitt från renderad HTML med GroupDocs.Viewer för .NET. Följ denna steg-för-steg-guide för sömlös dokumentvisning.
-type: docs
 weight: 10
 url: /sv/net/rendering-documents-html/exclude-fonts-html/
 ---

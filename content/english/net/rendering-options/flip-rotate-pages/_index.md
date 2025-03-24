@@ -3,7 +3,6 @@ title: Flip and Rotate Pages
 linktitle: Flip and Rotate Pages
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to integrate Groupdocs.Viewer for .NET into your applications for seamless document rendering, flipping, and rotation.
-type: docs
 weight: 12
 url: /net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ In this tutorial, we will delve into the functionalities of Groupdocs.Viewer for
 ## Prerequisites
 Before we begin, ensure you have the following prerequisites set up:
 ### Installing Groupdocs.Viewer for .NET
-To use Groupdocs.Viewer for .NET, you need to install the package via NuGet Package Manager. You can find detailed installation instructions in the [documentation](https://reference.groupdocs.com/viewer/net/).
+To use Groupdocs.Viewer for .NET, you need to install the package via NuGet Package Manager. You can find detailed installation instructions in the [documentation](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Import Namespaces
 Ensure you have the necessary namespaces imported in your project to utilize Groupdocs.Viewer for .NET effectively.

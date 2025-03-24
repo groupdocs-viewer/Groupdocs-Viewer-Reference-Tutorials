@@ -3,7 +3,6 @@ title: Ορισμός χρονικού ορίου φόρτωσης πόρων (�
 linktitle: Ορισμός χρονικού ορίου φόρτωσης πόρων (Για προχωρημένους)
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να διαμορφώνετε αποτελεσματικά τα χρονικά όρια φόρτωσης πόρων στο GroupDocs.Viewer για .NET. Κύρια απόδοση εγγράφων με ακρίβεια και σταθερότητα.
-type: docs
 weight: 13
 url: /el/net/advanced-loading/set-resource-loading-timeout/
 ---

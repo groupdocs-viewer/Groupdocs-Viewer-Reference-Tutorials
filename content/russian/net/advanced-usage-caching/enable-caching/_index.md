@@ -3,7 +3,6 @@ title: Включите кэширование для более быстрой 
 linktitle: Включите кэширование для более быстрой обработки документов
 second_title: GroupDocs.Viewer .NET API
 description: Повысьте скорость обработки документов в приложениях .NET с помощью GroupDocs.Viewer за счет использования кэширования. Оптимизируйте производительность без особых усилий.
-type: docs
 weight: 10
 url: /ru/net/advanced-usage-caching/enable-caching/
 ---

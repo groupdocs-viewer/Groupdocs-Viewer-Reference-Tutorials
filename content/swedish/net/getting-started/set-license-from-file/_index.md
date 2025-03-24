@@ -3,7 +3,6 @@ title: Ställ in licens från fil
 linktitle: Ställ in licens från fil
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du enkelt integrerar GroupDocs.Viewer för .NET i dina applikationer. Ställ in licens, visa dokument och anpassa tittarens utseende.
-type: docs
 weight: 10
 url: /sv/net/getting-started/set-license-from-file/
 ---

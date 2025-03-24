@@ -3,7 +3,6 @@ title: Przedział czasu renderowania określonego projektu (projekt MS)
 linktitle: Przedział czasu renderowania określonego projektu (projekt MS)
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo zintegruj GroupDocs.Viewer for .NET ze swoimi aplikacjami, aby efektywnie przeglądać dokumenty. Zwiększ produktywność dzięki wszechstronnym możliwościom renderowania.
-type: docs
 weight: 12
 url: /pl/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

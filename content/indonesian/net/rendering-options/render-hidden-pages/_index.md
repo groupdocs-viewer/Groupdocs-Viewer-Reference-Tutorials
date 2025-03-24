@@ -3,7 +3,6 @@ title: Render Halaman Tersembunyi
 linktitle: Render Halaman Tersembunyi
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan aplikasi .NET Anda dengan GroupDocs.Viewer untuk rendering dokumen yang lancar. Ikuti panduan langkah demi langkah kami untuk merender halaman tersembunyi dengan mudah.
-type: docs
 weight: 15
 url: /id/net/rendering-options/render-hidden-pages/
 ---

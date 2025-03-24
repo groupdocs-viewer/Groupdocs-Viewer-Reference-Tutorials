@@ -3,7 +3,6 @@ title: Outlook Veri Dosyaları (PST, OST) için Görünüm Bilgilerini Alma
 linktitle: Outlook Veri Dosyaları (PST, OST) için Görünüm Bilgilerini Alma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak Outlook Veri Dosyalarından (PST, OST) görünüm bilgilerinin nasıl çıkarılacağını keşfedin. Belge yönetimi yeteneklerinizi zahmetsizce geliştirin.
-type: docs
 weight: 10
 url: /tr/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

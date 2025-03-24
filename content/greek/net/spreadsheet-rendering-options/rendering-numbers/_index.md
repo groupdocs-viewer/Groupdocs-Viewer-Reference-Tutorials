@@ -3,7 +3,6 @@ title: Απόδοση αριθμών
 linktitle: Απόδοση αριθμών
 second_title: GroupDocs.Viewer .NET API
 description: Εξερευνήστε τη δύναμη του Groupdocs.Viewer για .NET στην απρόσκοπτη απόδοση των αρχείων Numbers. Μετατρέψτε σε HTML, JPG, PNG και PDF χωρίς κόπο.
-type: docs
 weight: 15
 url: /el/net/spreadsheet-rendering-options/rendering-numbers/
 ---

@@ -3,7 +3,6 @@ title: Protéger le PDF rendu avec un mot de passe
 linktitle: Protéger le PDF rendu avec un mot de passe
 second_title: API GroupDocs.Viewer .NET
 description: Protégez facilement vos PDF rendus avec des mots de passe à l'aide de Groupdocs.Viewer pour .NET. Gardez vos documents sécurisés et confidentiels.
-type: docs
 weight: 12
 url: /fr/net/rendering-documents-pdf/protect-pdf/
 ---

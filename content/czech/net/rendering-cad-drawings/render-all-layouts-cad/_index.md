@@ -3,7 +3,6 @@ title: Vykreslit všechna rozvržení ve výkresech CAD
 linktitle: Vykreslit všechna rozvržení ve výkresech CAD
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat všechna rozvržení ve výkresech CAD pomocí GroupDocs.Viewer pro .NET. Postupujte podle našeho komplexního návodu pro bezproblémovou integraci.
-type: docs
 weight: 11
 url: /cs/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

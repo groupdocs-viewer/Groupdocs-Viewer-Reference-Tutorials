@@ -3,7 +3,6 @@ title: الوجه وتدوير الصفحات
 linktitle: الوجه وتدوير الصفحات
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية دمج Groupdocs.Viewer for .NET في تطبيقاتك لعرض المستندات وقلبها وتدويرها بسلاسة.
-type: docs
 weight: 12
 url: /ar/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ url: /ar/net/rendering-options/flip-rotate-pages/
 ## المتطلبات الأساسية
 قبل أن نبدأ، تأكد من إعداد المتطلبات الأساسية التالية:
 ### تثبيت Groupdocs.Viewer لـ .NET
- لاستخدام Groupdocs.Viewer لـ .NET، تحتاج إلى تثبيت الحزمة عبر NuGet Package Manager. يمكنك العثور على تعليمات التثبيت التفصيلية في[توثيق](https://reference.groupdocs.com/viewer/net/).
+ لاستخدام Groupdocs.Viewer لـ .NET، تحتاج إلى تثبيت الحزمة عبر NuGet Package Manager. يمكنك العثور على تعليمات التثبيت التفصيلية في[توثيق](https://tutorials.groupdocs.com/viewer/net/).
 
 ## استيراد مساحات الأسماء
 تأكد من استيراد مساحات الأسماء اللازمة في مشروعك لاستخدام Groupdocs.Viewer لـ .NET بشكل فعال.

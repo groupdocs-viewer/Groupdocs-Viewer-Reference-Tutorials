@@ -3,7 +3,6 @@ title: Render with Embedded or External Resources
 linktitle: Render with Embedded or External Resources
 second_title: GroupDocs.Viewer .NET API
 description: Enhance .NET document viewing with GroupDocs.Viewer for seamless rendering. Follow our tutorial for efficient integration and superior user experience.
-type: docs
 weight: 12
 url: /net/rendering-documents-html/render-html-resources/
 ---

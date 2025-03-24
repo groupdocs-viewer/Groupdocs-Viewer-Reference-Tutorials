@@ -3,7 +3,6 @@ title: Specificare il nome file durante il rendering dei file di archivio
 linktitle: Specificare il nome file durante il rendering dei file di archivio
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering dei file di archivio in .NET utilizzando GroupDocs.Viewer, migliorando le funzionalità di gestione dei documenti.
-type: docs
 weight: 14
 url: /it/net/rendering-archive-files/specify-filename-render-archive/
 ---

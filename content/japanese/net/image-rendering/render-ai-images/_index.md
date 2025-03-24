@@ -3,7 +3,6 @@ title: AI 画像をレンダリングする
 linktitle: AI 画像をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、.NET アプリケーションで AI 画像を簡単にレンダリングする方法を学びます。シームレスな統合については、段階的なチュートリアルに従ってください。
-type: docs
 weight: 10
 url: /ja/net/image-rendering/render-ai-images/
 ---

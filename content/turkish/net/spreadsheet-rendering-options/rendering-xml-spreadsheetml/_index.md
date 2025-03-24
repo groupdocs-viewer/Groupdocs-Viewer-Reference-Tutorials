@@ -3,7 +3,6 @@ title: XML SpreadSheetML Oluşturma
 linktitle: XML SpreadSheetML Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak çeşitli formatlardaki XML SpreadSheetML dosyalarının kusursuz şekilde oluşturulmasını keşfedin. Uygulamalarınıza zahmetsizce entegre edin.
-type: docs
 weight: 16
 url: /tr/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
@@ -83,7 +82,7 @@ Evet, GroupDocs.Viewer PDF, Word, Excel ve daha fazlasını içeren çok çeşit
 ### İşlenen belgelerin görünümünü özelleştirebilir miyim?
 Kesinlikle! GroupDocs.Viewer, çıktıyı özel ihtiyaçlarınıza göre uyarlamanıza olanak tanıyan çeşitli özelleştirme seçenekleri sunar.
 ### Ek destek ve kaynakları nerede bulabilirim?
- Ziyaret edin[GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) topluluk desteği için ve keşfetmek için[dokümantasyon](https://reference.groupdocs.com/viewer/net/)detaylı bilgi için.
+ Ziyaret edin[GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) topluluk desteği için ve keşfetmek için[dokümantasyon](https://tutorials.groupdocs.com/viewer/net/)detaylı bilgi için.
 ### Ücretsiz deneme mevcut mu?
  Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### Geçici lisansı nasıl alabilirim?

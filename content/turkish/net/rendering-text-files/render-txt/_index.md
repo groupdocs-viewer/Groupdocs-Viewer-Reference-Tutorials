@@ -3,7 +3,6 @@ title: Metin Dosyalarını İşleme (.txt)
 linktitle: Metin Dosyalarını İşleme (.txt)
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak metin dosyalarının birden fazla formata kusursuz şekilde dönüştürülmesini keşfedin. Belge yönetimi yeteneklerinizi zahmetsizce geliştirin.
-type: docs
 weight: 10
 url: /tr/net/rendering-text-files/render-txt/
 ---

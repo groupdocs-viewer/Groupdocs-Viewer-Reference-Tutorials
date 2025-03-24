@@ -3,7 +3,6 @@ title: Zastąp brakującą czcionkę
 linktitle: Zastąp brakującą czcionkę
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak łatwo zastąpić brakujące czcionki w dokumentach .NET za pomocą GroupDocs.Viewer. Zapewnij dokładne renderowanie za pomocą prostych kroków.
-type: docs
 weight: 20
 url: /pl/net/rendering-options/replace-missing-font/
 ---

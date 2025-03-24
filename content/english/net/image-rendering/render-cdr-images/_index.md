@@ -3,7 +3,6 @@ title: Render CDR Images
 linktitle: Render CDR Images
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render CDR images to HTML, JPG, PNG, and PDF using GroupDocs.Viewer for .NET. Easily convert CorelDRAW files with this tutorial.
-type: docs
 weight: 12
 url: /net/image-rendering/render-cdr-images/
 ---

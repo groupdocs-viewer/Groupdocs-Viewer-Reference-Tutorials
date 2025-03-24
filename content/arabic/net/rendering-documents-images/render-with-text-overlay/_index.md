@@ -3,7 +3,6 @@ title: تقديم مع النص المتراكب للعرض
 linktitle: تقديم مع النص المتراكب للعرض
 second_title: GroupDocs.Viewer .NET API
 description: قم بعرض المستندات بسلاسة في تطبيقات .NET باستخدام GroupDocs.Viewer، الذي يدعم التنسيقات المختلفة لتحسين تجربة المستخدم.
-type: docs
 weight: 13
 url: /ar/net/rendering-documents-images/render-with-text-overlay/
 ---

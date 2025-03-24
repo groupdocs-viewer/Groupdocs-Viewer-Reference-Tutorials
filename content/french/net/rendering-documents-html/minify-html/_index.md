@@ -3,7 +3,6 @@ title: Réduire le document HTML rendu
 linktitle: Réduire le document HTML rendu
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer de manière transparente des documents HTML dans des applications .NET à l'aide de GroupDocs.Viewer pour .NET.
-type: docs
 weight: 11
 url: /fr/net/rendering-documents-html/minify-html/
 ---

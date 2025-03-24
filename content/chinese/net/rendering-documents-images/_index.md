@@ -3,7 +3,6 @@ title: 将文档渲染为图像
 linktitle: 将文档渲染为图像
 second_title: GroupDocs.Viewer .NET API
 description: 探索有关使用 GroupDocs.Viewer for .NET 将文档渲染为图像的教程。优化图像质量，提取文本坐标，增强用户体验。
-type: docs
 weight: 30
 url: /zh/net/rendering-documents-images/
 ---

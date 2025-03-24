@@ -3,7 +3,6 @@ title: Zeilen- und Spaltenüberschriften rendern
 linktitle: Zeilen- und Spaltenüberschriften rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Verbessern Sie die Anzeige von Dokumenten in .NET! Erfahren Sie, wie Sie Zeilen- und Spaltenüberschriften mit GroupDocs.Viewer für .NET rendern. Entdecken Sie HTML-, JPG-, PNG- und PDF-Ausgaben.
-type: docs
 weight: 18
 url: /de/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

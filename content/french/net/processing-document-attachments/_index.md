@@ -3,7 +3,6 @@ title: Traitement des pièces jointes aux documents
 linktitle: Traitement des pièces jointes aux documents
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment intégrer sans effort les fonctionnalités de visualisation de documents dans vos applications .NET à l'aide de GroupDocs.Viewer. Gérez efficacement les pièces jointes des documents.
-type: docs
 weight: 32
 url: /fr/net/processing-document-attachments/
 --- 

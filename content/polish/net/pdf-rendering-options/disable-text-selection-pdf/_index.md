@@ -3,7 +3,6 @@ title: Wyłącz zaznaczanie tekstu w formacie PDF
 linktitle: Wyłącz zaznaczanie tekstu w formacie PDF
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak wyłączyć zaznaczanie tekstu w formacie PDF przy użyciu programu GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zapewnić bezproblemową integrację.
-type: docs
 weight: 13
 url: /pl/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

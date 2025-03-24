@@ -3,7 +3,6 @@ title: Renderizar con fuentes personalizadas
 linktitle: Renderizar con fuentes personalizadas
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar documentos con fuentes personalizadas usando GroupDocs.Viewer para .NET. Mejore las presentaciones visuales sin esfuerzo.
-type: docs
 weight: 18
 url: /es/net/rendering-options/render-custom-fonts/
 ---

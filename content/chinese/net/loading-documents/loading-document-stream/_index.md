@@ -3,7 +3,6 @@ title: 从流加载文档
 linktitle: 从流加载文档
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 从流中无缝加载文档。通过强大的文档查看功能增强您的 .NET 应用程序。
-type: docs
 weight: 12
 url: /zh/net/loading-documents/loading-document-stream/
 ---

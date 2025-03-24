@@ -3,7 +3,6 @@ title: تقديم مع الموارد المضمنة أو الخارجية
 linktitle: تقديم مع الموارد المضمنة أو الخارجية
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين عرض مستندات .NET باستخدام GroupDocs.Viewer للعرض السلس. اتبع البرنامج التعليمي الخاص بنا للحصول على التكامل الفعال وتجربة المستخدم المتميزة.
-type: docs
 weight: 12
 url: /ar/net/rendering-documents-html/render-html-resources/
 ---

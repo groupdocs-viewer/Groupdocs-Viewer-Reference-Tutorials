@@ -3,7 +3,6 @@ title: Renderização por quebras de página
 linktitle: Renderização por quebras de página
 second_title: API GroupDocs.Viewer .NET
 description: Explore o poder do GroupDocs.Viewer for .NET na renderização de documentos com precisão. Siga nosso tutorial passo a passo para renderização por quebras de página.
-type: docs
 weight: 14
 url: /pt/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

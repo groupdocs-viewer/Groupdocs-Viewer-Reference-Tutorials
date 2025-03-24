@@ -3,7 +3,6 @@ title: Microsoft Project dokumentumok renderelése
 linktitle: Microsoft Project dokumentumok renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Könnyedén lekérheti a Microsoft Project dokumentumok nézeti adatait a GroupDocs.Viewer for .NET segítségével. Növelje a termelékenységet a sokoldalú renderelési képességekkel.
-type: docs
 weight: 40
 url: /hu/net/rendering-ms-project-documents/
 ---

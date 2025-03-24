@@ -3,7 +3,6 @@ title: दस्तावेज़ में पृष्ठों को पु
 linktitle: दस्तावेज़ में पृष्ठों को पुन व्यवस्थित करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके किसी दस्तावेज़ में पृष्ठों को पुन व्यवस्थित करने का तरीका जानें। निर्बाध दस्तावेज़ प्रबंधन के लिए हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 19
 url: /hi/net/rendering-options/reorder-pages/
 ---

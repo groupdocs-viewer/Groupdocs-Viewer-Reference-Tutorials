@@ -3,7 +3,6 @@ title: Kết xuất với văn bản được phủ để hiển thị
 linktitle: Kết xuất với văn bản được phủ để hiển thị
 second_title: API GroupDocs.Viewer .NET
 description: Kết xuất tài liệu một cách liền mạch trong các ứng dụng .NET bằng GroupDocs.Viewer, hỗ trợ nhiều định dạng khác nhau để nâng cao trải nghiệm người dùng.
-type: docs
 weight: 13
 url: /vi/net/rendering-documents-images/render-with-text-overlay/
 ---

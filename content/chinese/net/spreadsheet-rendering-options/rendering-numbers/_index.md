@@ -3,7 +3,6 @@ title: 渲染数字
 linktitle: 渲染数字
 second_title: GroupDocs.Viewer .NET API
 description: 探索 Groupdocs.Viewer for .NET 在无缝呈现 Numbers 文件方面的强大功能。轻松转换为 HTML、JPG、PNG 和 PDF。
-type: docs
 weight: 15
 url: /zh/net/spreadsheet-rendering-options/rendering-numbers/
 ---

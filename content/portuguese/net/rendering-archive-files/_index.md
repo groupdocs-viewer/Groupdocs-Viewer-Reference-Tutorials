@@ -3,7 +3,6 @@ title: Renderizando arquivos compactados
 linktitle: Renderizando arquivos compactados
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriais abrangentes para renderizar arquivos compactados usando GroupDocs.Viewer for .NET. Integre-se de maneira perfeita e eficiente aos seus aplicativos .NET.
-type: docs
 weight: 24
 url: /pt/net/rendering-archive-files/
 ---

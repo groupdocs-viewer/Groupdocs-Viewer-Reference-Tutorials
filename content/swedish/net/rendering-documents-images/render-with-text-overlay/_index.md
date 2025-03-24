@@ -3,7 +3,6 @@ title: Rendera med text överlagd för visning
 linktitle: Rendera med text överlagd för visning
 second_title: GroupDocs.Viewer .NET API
 description: Återge dokument sömlöst i .NET-applikationer med GroupDocs.Viewer, som stöder olika format för förbättrad användarupplevelse.
-type: docs
 weight: 13
 url: /sv/net/rendering-documents-images/render-with-text-overlay/
 ---

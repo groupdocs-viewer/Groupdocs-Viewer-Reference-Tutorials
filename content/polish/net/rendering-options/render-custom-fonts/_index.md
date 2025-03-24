@@ -3,7 +3,6 @@ title: Renderuj przy użyciu niestandardowych czcionek
 linktitle: Renderuj przy użyciu niestandardowych czcionek
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować dokumenty przy użyciu niestandardowych czcionek przy użyciu programu GroupDocs.Viewer dla platformy .NET. Ulepsz prezentacje wizualne bez wysiłku.
-type: docs
 weight: 18
 url: /pl/net/rendering-options/render-custom-fonts/
 ---

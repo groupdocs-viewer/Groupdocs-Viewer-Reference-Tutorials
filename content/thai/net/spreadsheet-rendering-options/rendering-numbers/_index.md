@@ -3,7 +3,6 @@ title: การแสดงผลตัวเลข
 linktitle: การแสดงผลตัวเลข
 second_title: GroupDocs.Viewer .NET API
 description: สำรวจพลังของ Groupdocs.Viewer สำหรับ .NET ในการเรนเดอร์ไฟล์ Numbers ได้อย่างราบรื่น แปลงเป็น HTML, JPG, PNG และ PDF ได้อย่างง่ายดาย
-type: docs
 weight: 15
 url: /th/net/spreadsheet-rendering-options/rendering-numbers/
 ---

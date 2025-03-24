@@ -3,7 +3,6 @@ title: 渲染存档文件时指定文件名
 linktitle: 渲染存档文件时指定文件名
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 在 .NET 中呈现存档文件，从而增强文档管理功能。
-type: docs
 weight: 14
 url: /zh/net/rendering-archive-files/specify-filename-render-archive/
 ---

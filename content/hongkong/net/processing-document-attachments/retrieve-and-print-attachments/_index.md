@@ -3,7 +3,6 @@ title: 檢索並列印文件附件
 linktitle: 檢索並列印文件附件
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 將文件檢視功能無縫整合到您的 .NET 應用程式中。輕鬆檢索和列印文件附件。
-type: docs
 weight: 11
 url: /zh-hant/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

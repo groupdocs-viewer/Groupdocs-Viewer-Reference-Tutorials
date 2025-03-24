@@ -3,7 +3,6 @@ title: عرض الصفحات المخفية
 linktitle: عرض الصفحات المخفية
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين تطبيق .NET الخاص بك باستخدام GroupDocs.Viewer لعرض المستندات بسلاسة. اتبع دليلنا خطوة بخطوة لعرض الصفحات المخفية دون عناء.
-type: docs
 weight: 15
 url: /ar/net/rendering-options/render-hidden-pages/
 ---

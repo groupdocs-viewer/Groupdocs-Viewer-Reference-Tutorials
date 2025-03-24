@@ -3,7 +3,6 @@ title: Отображение отслеживаемых изменений
 linktitle: Отображение отслеживаемых изменений
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко визуализировать отслеживаемые изменения в документах с помощью GroupDocs.Viewer для .NET. Повысьте эффективность управления документами.
-type: docs
 weight: 10
 url: /ru/net/rendering-word-processing-documents/render-tracked-changes/
 ---

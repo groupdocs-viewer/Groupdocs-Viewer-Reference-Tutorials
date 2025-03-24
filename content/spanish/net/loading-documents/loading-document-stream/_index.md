@@ -3,7 +3,6 @@ title: Cargar documentos desde Stream
 linktitle: Cargar documentos desde Stream
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a cargar documentos sin problemas desde secuencias utilizando GroupDocs.Viewer para .NET. Mejore sus aplicaciones .NET con potentes capacidades de visualización de documentos.
-type: docs
 weight: 12
 url: /es/net/loading-documents/loading-document-stream/
 ---

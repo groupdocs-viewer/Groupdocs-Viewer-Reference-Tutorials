@@ -3,7 +3,6 @@ title: Deaktivieren Sie die Überprüfung der Schriftartlizenz in PDF
 linktitle: Deaktivieren Sie die Überprüfung der Schriftartlizenz in PDF
 second_title: GroupDocs.Viewer .NET-API
 description: Nutzen Sie mit GroupDocs.Viewer für .NET nahtlose Funktionen zur Dokumentenanzeige in Ihrem .NET. Einfache Integration und Anpassung der Dokumentwiedergabe mit minimalen Abhängigkeiten.
-type: docs
 weight: 12
 url: /de/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

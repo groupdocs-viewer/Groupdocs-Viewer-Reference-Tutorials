@@ -3,7 +3,6 @@ title: قم بتحميل المستندات المحمية بكلمة مرور
 linktitle: قم بتحميل المستندات المحمية بكلمة مرور
 second_title: GroupDocs.Viewer .NET API
 description: قم بدمج عرض المستندات المحمية بكلمة مرور بسهولة في تطبيقات .NET باستخدام GroupDocs.Viewer لـ .NET. اتبع برنامجنا التعليمي خطوة بخطوة للحصول على سلس.
-type: docs
 weight: 12
 url: /ar/net/advanced-loading/load-password-protected-document/
 ---

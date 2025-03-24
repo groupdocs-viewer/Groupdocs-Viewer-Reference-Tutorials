@@ -3,7 +3,6 @@ title: Vykreslování HTML s uživatelsky definovanými okraji
 linktitle: Vykreslování HTML s uživatelsky definovanými okraji
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat HTML s vlastními okraji v .NET pomocí GroupDocs.Viewer. Vylepšete prezentaci dokumentů bez námahy.
-type: docs
 weight: 11
 url: /cs/net/rendering-web-documents/render-html-margins/
 ---

@@ -1,7 +1,6 @@
 ---
 title: 适用于 .NET 的 GroupDocs.Viewer 综合教程和示例
 linktitle: GroupDocs.Viewer for .NET 教程
-type: docs
 weight: 10
 url: /zh/net/
 description: 了解将 GroupDocs.Viewer .NET 集成到您的应用程序中的综合教程和示例。了解增强文档管理的分步技术。

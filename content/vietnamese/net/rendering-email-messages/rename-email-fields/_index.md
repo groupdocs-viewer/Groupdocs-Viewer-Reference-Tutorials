@@ -3,7 +3,6 @@ title: Đổi tên các trường email trong khi hiển thị
 linktitle: Đổi tên các trường email trong khi hiển thị
 second_title: API GroupDocs.Viewer .NET
 description: Nâng cao trải nghiệm xem tài liệu với GroupDocs.Viewer dành cho .NET. Hiển thị và tùy chỉnh email một cách liền mạch.
-type: docs
 weight: 12
 url: /vi/net/rendering-email-messages/rename-email-fields/
 ---

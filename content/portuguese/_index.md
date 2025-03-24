@@ -3,7 +3,6 @@ title: Tutoriais GroupDocs.Viewer - Habilidades mestres de visualização de doc
 linktitle: Tutoriais do GroupDocs.Viewer
 additionalTitle: Referências da API GroupDocs
 description: Explore os tutoriais do GroupDocs.Viewer para obter orientação abrangente sobre como maximizar os recursos de visualização de documentos. Desbloqueie todo o seu potencial hoje!
-type: docs
 weight: 11
 url: /pt/
 is_root: true

@@ -3,7 +3,6 @@ title: 装载文件
 linktitle: 装载文件
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer .NET 高效加载和呈现文档。探索增强型 .NET 应用程序的本地磁盘、流和 FTP 加载教程。
-type: docs
 weight: 20
 url: /zh/net/loading-documents/
 ---

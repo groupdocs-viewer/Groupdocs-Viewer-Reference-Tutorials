@@ -3,7 +3,6 @@ title: Рендеринг документов Microsoft Project
 linktitle: Рендеринг документов Microsoft Project
 second_title: GroupDocs.Viewer .NET API
 description: Легко извлекайте информацию о просмотре документов Microsoft Project с помощью GroupDocs.Viewer для .NET. Повышайте производительность благодаря универсальным возможностям рендеринга.
-type: docs
 weight: 40
 url: /ru/net/rendering-ms-project-documents/
 ---

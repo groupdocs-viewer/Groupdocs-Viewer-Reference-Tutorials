@@ -3,7 +3,6 @@ title: Nhận thông tin xem cho bản vẽ CAD
 linktitle: Nhận thông tin xem cho bản vẽ CAD
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách truy xuất thông tin chế độ xem cho bản vẽ CAD bằng GroupDocs.Viewer cho .NET. Nâng cao ứng dụng .NET của bạn bằng khả năng xử lý tệp CAD liền mạch.
-type: docs
 weight: 10
 url: /vi/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

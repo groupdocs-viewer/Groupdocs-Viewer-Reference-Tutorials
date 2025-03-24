@@ -3,7 +3,6 @@ title: Spreadsheet Rendering Options
 linktitle: Spreadsheet Rendering Options
 second_title: GroupDocs.Viewer .NET API
 description: Effortlessly enhance document visualization in .NET with GroupDocs.Viewer tutorials. Learn to adjust text overflow, render grid lines, and more.
-type: docs
 weight: 37
 url: /net/spreadsheet-rendering-options/
 ---

@@ -3,7 +3,6 @@ title: تقديم مستندات مشروع مايكروسوفت
 linktitle: تقديم مستندات مشروع مايكروسوفت
 second_title: GroupDocs.Viewer .NET API
 description: يمكنك بسهولة استرداد معلومات العرض لمستندات Microsoft Project باستخدام GroupDocs.Viewer لـ .NET. عزز الإنتاجية من خلال إمكانيات العرض المتنوعة.
-type: docs
 weight: 40
 url: /ar/net/rendering-ms-project-documents/
 ---

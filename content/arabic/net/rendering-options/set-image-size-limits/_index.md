@@ -3,7 +3,6 @@ title: ضبط حدود حجم الصورة
 linktitle: ضبط حدود حجم الصورة
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تعيين حدود حجم الصورة في تطبيقات .NET بسهولة باستخدام GroupDocs.Viewer لـ .NET، مما يعزز تجارب عرض المستندات.
-type: docs
 weight: 21
 url: /ar/net/rendering-options/set-image-size-limits/
 ---

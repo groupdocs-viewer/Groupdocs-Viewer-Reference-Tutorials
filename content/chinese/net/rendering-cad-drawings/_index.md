@@ -3,7 +3,6 @@ title: 渲染 CAD 工程图
 linktitle: 渲染 CAD 工程图
 second_title: GroupDocs.Viewer .NET API
 description: 了解使用 GroupDocs.Viewer for .NET 渲染 CAD 绘图的教程。了解通过无缝 CAD 文件处理来增强 .NET 应用程序。
-type: docs
 weight: 25
 url: /zh/net/rendering-cad-drawings/
 ---

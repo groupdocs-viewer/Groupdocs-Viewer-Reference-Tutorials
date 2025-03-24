@@ -3,7 +3,6 @@ title: Rufen Sie Arbeitsblattnamen ab
 linktitle: Rufen Sie Arbeitsblattnamen ab
 second_title: GroupDocs.Viewer .NET-API
 description: Entdecken Sie die Magie von GroupDocs.Viewer für .NET – integrieren Sie die Dokumentenanzeige nahtlos in Ihre Anwendungen. Probieren Sie jetzt die kostenlose Testversion aus!
-type: docs
 weight: 11
 url: /de/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ Absolut! GroupDocs.Viewer unterstützt eine Vielzahl von Dokumentformaten, darun
 ### Kann ich eine temporäre Lizenz erhalten?
  Sicherlich! Besuchen[dieser Link](https://purchase.groupdocs.com/temporary-license/) um Ihren vorläufigen Führerschein zu erhalten.
 ### Sind detaillierte Dokumentationsressourcen verfügbar?
- Absolut! Besuche die[offizielle Dokumentation](https://reference.groupdocs.com/viewer/net/) für ausführliche Informationen und Anleitungen.
+ Absolut! Besuche die[offizielle Dokumentation](https://tutorials.groupdocs.com/viewer/net/) für ausführliche Informationen und Anleitungen.

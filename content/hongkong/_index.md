@@ -3,7 +3,6 @@ title: GroupDocs.Viewer 教學 - 掌握文件檢視技巧
 linktitle: GroupDocs.Viewer 教學課程
 additionalTitle: GroupDocs API 參考
 description: 探索 GroupDocs.Viewer 教學課程，以取得最大化文件檢視功能的全面指導。今天就釋放它的全部潛能！
-type: docs
 weight: 11
 url: /zh-hant/
 is_root: true

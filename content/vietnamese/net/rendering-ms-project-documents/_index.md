@@ -3,7 +3,6 @@ title: Hiển thị tài liệu Microsoft Project
 linktitle: Hiển thị tài liệu Microsoft Project
 second_title: API GroupDocs.Viewer .NET
 description: Truy xuất thông tin chế độ xem cho tài liệu Microsoft Project một cách dễ dàng bằng GroupDocs.Viewer dành cho .NET. Nâng cao năng suất với khả năng kết xuất linh hoạt.
-type: docs
 weight: 40
 url: /vi/net/rendering-ms-project-documents/
 ---

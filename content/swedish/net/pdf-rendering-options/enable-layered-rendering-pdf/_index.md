@@ -3,7 +3,6 @@ title: Aktivera Layered Rendering i PDF
 linktitle: Aktivera Layered Rendering i PDF
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du aktiverar lagerrendering i PDF-dokument med GroupDocs.Viewer för .NET. Förbättra dokumentvisningsupplevelsen utan ansträngning.
-type: docs
 weight: 15
 url: /sv/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

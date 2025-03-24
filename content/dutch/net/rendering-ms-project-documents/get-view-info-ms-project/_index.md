@@ -3,7 +3,6 @@ title: Bekijk informatie voor Microsoft Project-documenten
 linktitle: Bekijk informatie voor Microsoft Project-documenten
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek de uitgebreide tutorial over het gebruik van Groupdocs.Viewer voor .NET om moeiteloos weergavegegevens voor Microsoft Project-documenten op te halen.
-type: docs
 weight: 10
 url: /nl/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

@@ -3,7 +3,6 @@ title: Renderuj warstwy na rysunkach CAD
 linktitle: Renderuj warstwy na rysunkach CAD
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo renderuj rysunki CAD w aplikacjach .NET dzięki GroupDocs.Viewer dla .NET. Przeglądaj opcje renderowania, dostosowuj warstwy i nie tylko.
-type: docs
 weight: 13
 url: /pl/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Zanim zaczniesz korzystać z GroupDocs.Viewer dla .NET, upewnij się, że spełn
 - Podstawowa znajomość języka programowania C#.
 - Środowisko programistyczne .NET skonfigurowane na Twoim komputerze.
 -  Zainstalowany GroupDocs.Viewer dla .NET. Można go pobrać z[Tutaj](https://releases.groupdocs.com/viewer/net/).
--  Dostęp do dokumentacji GroupDocs.Viewer for .NET w celach informacyjnych, którą można znaleźć[Tutaj](https://reference.groupdocs.com/viewer/net/).
+-  Dostęp do dokumentacji GroupDocs.Viewer for .NET w celach informacyjnych, którą można znaleźć[Tutaj](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importuj przestrzenie nazw
 Aby rozpocząć korzystanie z GroupDocs.Viewer dla .NET, musisz zaimportować wymagane przestrzenie nazw w swoim projekcie. Wykonaj następujące kroki:

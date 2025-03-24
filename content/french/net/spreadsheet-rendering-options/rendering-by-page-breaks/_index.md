@@ -3,7 +3,6 @@ title: Rendu par sauts de page
 linktitle: Rendu par sauts de page
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez la puissance de GroupDocs.Viewer pour .NET pour restituer des documents avec précision. Suivez notre tutoriel étape par étape pour le rendu par sauts de page.
-type: docs
 weight: 14
 url: /fr/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

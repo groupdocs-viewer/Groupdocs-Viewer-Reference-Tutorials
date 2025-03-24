@@ -3,7 +3,6 @@ title: Hiển thị HTML đáp ứng
 linktitle: Hiển thị HTML đáp ứng
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị HTML phản hồi bằng Groupdocs.Viewer dành cho .NET, đảm bảo trải nghiệm xem tối ưu trên các thiết bị.
-type: docs
 weight: 13
 url: /vi/net/rendering-documents-html/render-responsive-html/
 ---

@@ -3,7 +3,6 @@ title: 处理文档附件
 linktitle: 处理文档附件
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 轻松地将文档查看功能集成到您的 .NET 应用程序中。有效管理文档附件。
-type: docs
 weight: 32
 url: /zh/net/processing-document-attachments/
 --- 

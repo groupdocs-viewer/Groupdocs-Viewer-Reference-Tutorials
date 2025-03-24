@@ -3,7 +3,6 @@ title: Renderizar colunas e linhas ocultas
 linktitle: Renderizar colunas e linhas ocultas
 second_title: API GroupDocs.Viewer .NET
 description: Desbloqueie dados ocultos em planilhas sem esforço usando GroupDocs.Viewer for .NET. Siga nosso guia passo a passo para revelar colunas e linhas ocultas.
-type: docs
 weight: 13
 url: /pt/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

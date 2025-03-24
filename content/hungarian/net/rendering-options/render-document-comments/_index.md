@@ -3,7 +3,6 @@ title: Dokumentum renderelése megjegyzésekkel
 linktitle: Dokumentum renderelése megjegyzésekkel
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg dokumentumokat megjegyzésekkel a GroupDocs.Viewer for .NET segítségével. Kövesse lépésenkénti útmutatónkat a zökkenőmentes integráció érdekében.
-type: docs
 weight: 13
 url: /hu/net/rendering-options/render-document-comments/
 ---

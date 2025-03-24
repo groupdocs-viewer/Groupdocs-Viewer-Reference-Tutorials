@@ -3,7 +3,6 @@ title: Rendering Web Documents
 linktitle: Rendering Web Documents
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render CHM files and HTML with custom margins in .NET using GroupDocs.Viewer. Convert CHM to HTML, JPG, PNG, and PDF formats seamlessly.
-type: docs
 weight: 35
 url: /net/rendering-web-documents/
 ---

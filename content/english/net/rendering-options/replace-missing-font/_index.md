@@ -3,7 +3,6 @@ title: Replace Missing Font
 linktitle: Replace Missing Font
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to replace missing fonts in .NET documents effortlessly using GroupDocs.Viewer. Ensure accurate rendering with simple steps.
-type: docs
 weight: 20
 url: /net/rendering-options/replace-missing-font/
 ---

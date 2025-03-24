@@ -3,7 +3,6 @@ title: Kullanıcı Tanımlı Kenar Boşluklarıyla HTML İşleme
 linktitle: Kullanıcı Tanımlı Kenar Boşluklarıyla HTML İşleme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak .NET'te özel kenar boşluklarıyla HTML'yi nasıl oluşturacağınızı öğrenin. Belge sunumunu zahmetsizce geliştirin.
-type: docs
 weight: 11
 url: /tr/net/rendering-web-documents/render-html-margins/
 ---

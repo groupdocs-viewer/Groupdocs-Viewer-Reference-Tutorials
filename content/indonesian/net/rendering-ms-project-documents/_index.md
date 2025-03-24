@@ -3,7 +3,6 @@ title: Merender Dokumen Proyek Microsoft
 linktitle: Merender Dokumen Proyek Microsoft
 second_title: GroupDocs.Viewer .NET API
 description: Ambil informasi tampilan untuk dokumen Microsoft Project dengan mudah dengan GroupDocs.Viewer untuk .NET. Tingkatkan produktivitas dengan kemampuan rendering serbaguna.
-type: docs
 weight: 40
 url: /id/net/rendering-ms-project-documents/
 ---

@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh
 linktitle: Kết xuất hình ảnh
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá các hướng dẫn toàn diện về cách hiển thị các định dạng hình ảnh khác nhau bằng GroupDocs.Viewer cho .NET. Từ AI đến WMF, hãy tìm hiểu các ví dụ mã hóa và tích hợp liền mạch.
-type: docs
 weight: 28
 url: /vi/net/image-rendering/
 ---

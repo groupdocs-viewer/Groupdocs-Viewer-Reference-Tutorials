@@ -3,7 +3,6 @@ title: Vykreslování obrázků WMZ a WMF
 linktitle: Vykreslování obrázků WMZ a WMF
 second_title: GroupDocs.Viewer .NET API
 description: Bez námahy vykreslujte obrázky WMZ a WMF v aplikacích .NET pomocí GroupDocs.Viewer pro .NET. Snadno vylepšete možnosti zpracování dokumentů.
-type: docs
 weight: 18
 url: /cs/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ Než se ponoříte do procesu vykreslování obrázků WMZ a WMF pomocí GroupDo
 
 3. Znalost prostředí .NET: Základní znalost rámce .NET a programovacího jazyka C# je nezbytná pro efektivní implementaci procesu vykreslování.
 
-4.  Integrace do vašeho projektu: Ujistěte se, že GroupDocs.Viewer for .NET je správně integrován do vašeho projektu .NET. Podrobné pokyny k integraci naleznete v dokumentaci:[Dokumentace](https://reference.groupdocs.com/viewer/net/).
+4.  Integrace do vašeho projektu: Ujistěte se, že GroupDocs.Viewer for .NET je správně integrován do vašeho projektu .NET. Podrobné pokyny k integraci naleznete v dokumentaci:[Dokumentace](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importovat jmenné prostory
 

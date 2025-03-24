@@ -3,7 +3,6 @@ title: تعطيل التحقق من ترخيص الخط في PDF
 linktitle: تعطيل التحقق من ترخيص الخط في PDF
 second_title: GroupDocs.Viewer .NET API
 description: أطلق العنان لإمكانات عرض المستندات بسلاسة في .NET الخاص بك باستخدام GroupDocs.Viewer لـ .NET. يمكنك دمج عرض المستندات وتخصيصه بسهولة مع الحد الأدنى من التبعيات.
-type: docs
 weight: 12
 url: /ar/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

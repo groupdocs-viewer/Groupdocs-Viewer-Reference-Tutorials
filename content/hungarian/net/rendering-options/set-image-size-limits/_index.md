@@ -3,7 +3,6 @@ title: Állítsa be a képméret-korlátokat
 linktitle: Állítsa be a képméret-korlátokat
 second_title: GroupDocs.Viewer .NET API
 description: Tanulja meg, hogyan állíthat be könnyedén képméret-korlátokat .NET-alkalmazásokban a GroupDocs.Viewer for .NET használatával, javítva ezzel a dokumentummegtekintési élményt.
-type: docs
 weight: 21
 url: /hu/net/rendering-options/set-image-size-limits/
 ---

@@ -3,7 +3,6 @@ title: 對文檔中的頁面重新排序
 linktitle: 對文檔中的頁面重新排序
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 對文件中的頁面重新排序。按照我們的逐步教學進行無縫文件管理。
-type: docs
 weight: 19
 url: /zh-hant/net/rendering-options/reorder-pages/
 ---

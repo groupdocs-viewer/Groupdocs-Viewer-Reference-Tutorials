@@ -3,7 +3,6 @@ title: Återge TGA-bilder
 linktitle: Återge TGA-bilder
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du enkelt renderar TGA-bilder i .NET-applikationer med GroupDocs.Viewer. Förbättra dina bildåtergivningsmöjligheter.
-type: docs
 weight: 17
 url: /sv/net/image-rendering/render-tga-images/
 ---

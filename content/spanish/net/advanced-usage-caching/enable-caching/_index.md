@@ -3,7 +3,6 @@ title: Habilite el almacenamiento en caché para un procesamiento de documentos 
 linktitle: Habilite el almacenamiento en caché para un procesamiento de documentos más rápido
 second_title: API GroupDocs.Viewer .NET
 description: Mejore la velocidad de procesamiento de documentos en aplicaciones .NET con GroupDocs.Viewer aprovechando el almacenamiento en caché. Optimice el rendimiento sin esfuerzo.
-type: docs
 weight: 10
 url: /es/net/advanced-usage-caching/enable-caching/
 ---

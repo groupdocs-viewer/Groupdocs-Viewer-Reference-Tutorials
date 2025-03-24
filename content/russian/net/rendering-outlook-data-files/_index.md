@@ -3,7 +3,6 @@ title: Рендеринг файлов данных Outlook (PST, OST)
 linktitle: Рендеринг файлов данных Outlook (PST, OST)
 second_title: GroupDocs.Viewer .NET API
 description: Ознакомьтесь с учебными пособиями по рендерингу файлов данных Outlook (PST, OST) с помощью GroupDocs.Viewer для .NET. Откройте для себя эффективные методы управления документами без особых усилий.
-type: docs
 weight: 39
 url: /ru/net/rendering-outlook-data-files/
 ---

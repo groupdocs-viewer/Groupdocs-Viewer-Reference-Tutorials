@@ -3,7 +3,6 @@ title: Kaynak Yükleme Zaman Aşımını Ayarlama (Gelişmiş)
 linktitle: Kaynak Yükleme Zaman Aşımını Ayarlama (Gelişmiş)
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'te kaynak yükleme zaman aşımlarını verimli bir şekilde nasıl yapılandıracağınızı öğrenin. Hassas ve kararlı bir şekilde belge oluşturmada ustalaşın.
-type: docs
 weight: 13
 url: /tr/net/advanced-loading/set-resource-loading-timeout/
 ---

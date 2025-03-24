@@ -1,7 +1,6 @@
 ---
 title: .NET के लिए GroupDocs.Viewer के व्यापक ट्यूटोरियल और उदाहरण
 linktitle: .NET ट्यूटोरियल के लिए GroupDocs.Viewer
-type: docs
 weight: 10
 url: /hi/net/
 description: अपने ऐप्स में GroupDocs.Viewer .NET को एकीकृत करने के लिए व्यापक ट्यूटोरियल और उदाहरण खोजें। उन्नत दस्तावेज़ प्रबंधन के लिए चरण-दर-चरण तकनीकें सीखें।

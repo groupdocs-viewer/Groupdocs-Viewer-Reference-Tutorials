@@ -3,7 +3,6 @@ title: Vykreslení obrázků aplikace Visio
 linktitle: Vykreslení obrázků aplikace Visio
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat obrázky aplikace Visio pomocí GroupDocs.Viewer for .NET s tímto komplexním. Vylepšete možnosti prohlížení dokumentů ve svých aplikacích .NET.
-type: docs
 weight: 10
 url: /cs/net/rendering-visio-documents/render-visio-figures/
 ---

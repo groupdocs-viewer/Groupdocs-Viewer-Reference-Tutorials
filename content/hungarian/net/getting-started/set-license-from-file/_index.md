@@ -3,7 +3,6 @@ title: Állítsa be a licencet a fájlból
 linktitle: Állítsa be a licencet a fájlból
 second_title: GroupDocs.Viewer .NET API
 description: Tanulja meg, hogyan integrálhatja a GroupDocs.View for .NET-et könnyedén alkalmazásaiba. Állítsa be a licencet, tekintse meg a dokumentumokat és szabja testre a megtekintő megjelenését.
-type: docs
 weight: 10
 url: /hu/net/getting-started/set-license-from-file/
 ---

@@ -3,7 +3,6 @@ title: EMZ ve EMF Görüntülerini Oluşturun
 linktitle: EMZ ve EMF Görüntülerini Oluşturun
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak EMZ ve EMF görüntülerini çeşitli formatlarda nasıl oluşturacağınızı öğrenin. Geliştiriciler için takip edilmesi kolay eğitim.
-type: docs
 weight: 14
 url: /tr/net/image-rendering/render-emz-emf-images/
 ---
@@ -97,4 +96,4 @@ C: Evet, GroupDocs.Viewer PDF, DOCX, PPTX, XLSX ve daha fazlasını içeren çok
  C: Evet, geçici lisanslar satın alınabilir[Burada](https://purchase.groupdocs.com/temporary-license/).
 
 ### S: GroupDocs.Viewer for .NET'e ilişkin ayrıntılı belgeleri nerede bulabilirim?
- C: Belgelere başvurabilirsiniz[Burada](https://reference.groupdocs.com/viewer/net/)API'nin kullanımına ilişkin kapsamlı rehberlik için.
+ C: Belgelere başvurabilirsiniz[Burada](https://tutorials.groupdocs.com/viewer/net/)API'nin kullanımına ilişkin kapsamlı rehberlik için.

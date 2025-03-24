@@ -3,7 +3,6 @@ title: İşleme Sırasında E-posta Alanlarını Yeniden Adlandırın
 linktitle: İşleme Sırasında E-posta Alanlarını Yeniden Adlandırın
 second_title: GroupDocs.Viewer .NET API'si
 description: .NET için GroupDocs.Viewer ile belge görüntüleme deneyimini geliştirin. E-postaları sorunsuz bir şekilde oluşturun ve özelleştirin.
-type: docs
 weight: 12
 url: /tr/net/rendering-email-messages/rename-email-fields/
 ---

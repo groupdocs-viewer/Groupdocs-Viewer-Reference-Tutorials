@@ -3,7 +3,6 @@ title: Renderizar documento para JPGPNG
 linktitle: Renderizar documento para JPGPNG
 second_title: API GroupDocs.Viewer .NET
 description: Descubra como renderizar documentos em JPG/PNG em .NET usando GroupDocs.Viewer para melhorar a experiência do usuário e a produtividade.
-type: docs
 weight: 10
 url: /pt/net/rendering-documents-images/render-jpg-png/
 ---
@@ -106,7 +105,7 @@ R: Você pode solicitar uma licença temporária de[aqui](https://purchase.group
 
 ### P: Onde posso encontrar a documentação do GroupDocs.Viewer for .NET?
 
- R: Documentação detalhada está disponível[aqui](https://reference.groupdocs.com/viewer/net/).
+ R: Documentação detalhada está disponível[aqui](https://tutorials.groupdocs.com/viewer/net/).
 
 ### P: Onde posso obter suporte ou fazer perguntas relacionadas ao GroupDocs.Viewer for .NET?
 

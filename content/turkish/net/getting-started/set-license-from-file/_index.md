@@ -3,7 +3,6 @@ title: Lisansı Dosyadan Ayarla
 linktitle: Lisansı Dosyadan Ayarla
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i uygulamalarınıza zahmetsizce nasıl entegre edeceğinizi öğrenin. Lisansı ayarlayın, belgeleri görüntüleyin ve görüntüleyicinin görünümünü özelleştirin.
-type: docs
 weight: 10
 url: /tr/net/getting-started/set-license-from-file/
 ---

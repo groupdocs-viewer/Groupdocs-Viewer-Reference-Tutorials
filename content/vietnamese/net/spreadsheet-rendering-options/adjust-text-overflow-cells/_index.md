@@ -3,7 +3,6 @@ title: Điều chỉnh tràn văn bản trong ô
 linktitle: Điều chỉnh tràn văn bản trong ô
 second_title: API GroupDocs.Viewer .NET
 description: Dễ dàng quản lý tình trạng tràn văn bản trong tài liệu .NET bằng GroupDocs.Viewer. Nâng cao khả năng đọc và trải nghiệm người dùng. Tải về dùng thử ngay.
-type: docs
 weight: 10
 url: /vi/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Bây giờ bạn đã điều chỉnh thành công tình trạng tràn văn bả
 Tóm lại, GroupDocs.Viewer dành cho .NET đơn giản hóa tác vụ xử lý tràn văn bản trong các ô, đảm bảo rằng tài liệu của bạn không chỉ hoạt động hiệu quả mà còn đẹp mắt về mặt hình ảnh. Với các bước này, bạn có thể nâng cao trải nghiệm người dùng và khả năng đọc tài liệu bảng tính của mình một cách dễ dàng.
 ## Câu hỏi thường gặp
 ### 1. Tôi có thể sử dụng GroupDocs.Viewer cho .NET với bất kỳ loại tài liệu nào không?
- Có, GroupDocs.Viewer dành cho .NET hỗ trợ nhiều định dạng tài liệu, bao gồm bảng tính, bản trình bày, v.v. Tham khảo đến[tài liệu](https://reference.groupdocs.com/viewer/net/) để có danh sách đầy đủ.
+ Có, GroupDocs.Viewer dành cho .NET hỗ trợ nhiều định dạng tài liệu, bao gồm bảng tính, bản trình bày, v.v. Tham khảo đến[tài liệu](https://tutorials.groupdocs.com/viewer/net/) để có danh sách đầy đủ.
 ### 2. Có bản dùng thử miễn phí không?
  Có, bạn có thể khám phá các khả năng của GroupDocs.Viewer dành cho .NET bằng cách tải xuống[dùng thử miễn phí](https://releases.groupdocs.com/).
 ### 3. Làm cách nào tôi có thể nhận được hỗ trợ cho bất kỳ vấn đề nào?

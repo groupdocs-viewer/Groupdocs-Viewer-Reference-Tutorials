@@ -3,7 +3,6 @@ title: Activer l'indication de police dans un PDF
 linktitle: Activer l'indication de police dans un PDF
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment activer les indications de police dans les documents PDF à l'aide de GroupDocs.Viewer pour .NET. Suivez notre tutoriel étape par étape pour une intégration transparente.
-type: docs
 weight: 14
 url: /fr/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

@@ -3,7 +3,6 @@ title: दस्तावेज़ लोड करते समय फ़ाइ
 linktitle: दस्तावेज़ लोड करते समय फ़ाइल प्रकार निर्दिष्ट करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ लोड करते समय फ़ाइल प्रकार निर्दिष्ट करना सीखें। अपने .NET अनुप्रयोगों में विभिन्न प्रारूपों को सटीकता से प्रस्तुत करें।
-type: docs
 weight: 10
 url: /hi/net/advanced-loading/specify-file-type/
 ---

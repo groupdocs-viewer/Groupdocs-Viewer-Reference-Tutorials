@@ -3,7 +3,6 @@ title: Απόδοση επιλεγμένων σελίδων
 linktitle: Απόδοση επιλεγμένων σελίδων
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε επιλεγμένες σελίδες από έγγραφα χρησιμοποιώντας το Groupdocs.Viewer για .NET. Βήμα προς βήμα μάθημα με παραδείγματα κώδικα που περιλαμβάνονται.
-type: docs
 weight: 17
 url: /el/net/rendering-options/render-selected-pages/
 ---

@@ -3,7 +3,6 @@ title: Vykreslit obrázky APNG
 linktitle: Vykreslit obrázky APNG
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat obrázky APNG v různých formátech pomocí Groupdocs.Viewer pro .NET. Podrobný průvodce včetně příkladů kódu.
-type: docs
 weight: 11
 url: /cs/net/image-rendering/render-apng-images/
 ---

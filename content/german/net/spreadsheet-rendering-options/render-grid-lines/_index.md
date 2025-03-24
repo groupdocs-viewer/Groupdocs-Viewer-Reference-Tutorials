@@ -3,7 +3,6 @@ title: Rasterlinien rendern
 linktitle: Rasterlinien rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Verbessern Sie die Dokumentvisualisierung mit GroupDocs.Viewer für .NET. Rendern Sie mühelos Gitterlinien. Probieren Sie jetzt die kostenlose Testversion aus! #GroupDocs #Viewer
-type: docs
 weight: 12
 url: /de/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ In diesem Tutorial haben wir den Prozess des Renderns von Gitterlinien in Dokume
 ### Sind temporäre Lizenzen für GroupDocs.Viewer für .NET verfügbar?
  Ja, Sie können eine erhalten[temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/) für GroupDocs.Viewer für .NET.
 ### Kann ich eine ausführliche Dokumentation für GroupDocs.Viewer für .NET finden?
- Absolut! Siehe die[offizielle Dokumentation](https://reference.groupdocs.com/viewer/net/) Ausführliche Informationen zur Verwendung von GroupDocs.Viewer für .NET finden Sie hier.
+ Absolut! Siehe die[offizielle Dokumentation](https://tutorials.groupdocs.com/viewer/net/) Ausführliche Informationen zur Verwendung von GroupDocs.Viewer für .NET finden Sie hier.
 ### Wo kann ich die neueste Version von GroupDocs.Viewer für .NET herunterladen?
  Laden Sie die Bibliothek von herunter[offizielle Veröffentlichungsseite](https://releases.groupdocs.com/viewer/net/).

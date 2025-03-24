@@ -3,7 +3,6 @@ title: Habilitar renderizado en capas en PDF
 linktitle: Habilitar renderizado en capas en PDF
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda cómo habilitar la representación en capas en documentos PDF usando GroupDocs.Viewer para .NET. Mejore la experiencia de visualización de documentos sin esfuerzo.
-type: docs
 weight: 15
 url: /es/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

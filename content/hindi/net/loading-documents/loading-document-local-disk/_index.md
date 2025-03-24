@@ -3,7 +3,6 @@ title: स्थानीय डिस्क से दस्तावेज़ 
 linktitle: स्थानीय डिस्क से दस्तावेज़ लोड करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए Groupdocs.Viewer का उपयोग करके अपनी स्थानीय डिस्क से दस्तावेज़ों को निर्बाध रूप से प्रस्तुत करना सीखें। कुशल दस्तावेज़ के साथ अपने .NET अनुप्रयोगों को उन्नत करें।
-type: docs
 weight: 10
 url: /hi/net/loading-documents/loading-document-local-disk/
 ---

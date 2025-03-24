@@ -3,7 +3,6 @@ title: Renderuj obszary wydruku za pomocą GroupDocs.Viewer dla .NET
 linktitle: Renderuj obszary wydruku
 second_title: GroupDocs.Viewer API .NET
 description: Poznaj GroupDocs.Viewer dla .NET i bezproblemowo renderuj obszary wydruku w różnych formatach dokumentów. Wypróbuj bezpłatną wersję próbną już teraz! Przeglądarka #GroupDocs
-type: docs
 weight: 17
 url: /pl/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Gratulacje! Pomyślnie nauczyłeś się wykorzystywać GroupDocs.Viewer dla .NET do renderowania obszarów wydruku w dokumentach. To potężne narzędzie otwiera nowe możliwości renderowania dokumentów w aplikacjach .NET.
 ## Często zadawane pytania
 ### Czy GroupDocs.Viewer jest kompatybilny z różnymi formatami dokumentów?
- Tak, GroupDocs.Viewer obsługuje szeroką gamę formatów dokumentów, w tym PDF, DOCX, XLSX i inne. Patrz[dokumentacja](https://reference.groupdocs.com/viewer/net/) aby uzyskać pełną listę.
+ Tak, GroupDocs.Viewer obsługuje szeroką gamę formatów dokumentów, w tym PDF, DOCX, XLSX i inne. Patrz[dokumentacja](https://tutorials.groupdocs.com/viewer/net/) aby uzyskać pełną listę.
 ### Czy mogę wypróbować GroupDocs.Viewer przed dokonaniem zakupu?
  Absolutnie! Możesz zapoznać się z narzędziem w ramach bezpłatnej wersji próbnej[Tutaj](https://releases.groupdocs.com/).
 ### Gdzie mogę znaleźć wsparcie lub zwrócić się o pomoc w przypadku jakichkolwiek problemów?

@@ -3,7 +3,6 @@ title: Render SVG and SVGZ Images
 linktitle: Render SVG and SVGZ Images
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render SVG and SVGZ images using GroupDocs.Viewer for .NET. Convert vector graphics into HTML, JPG, PNG, and PDF effortlessly.
-type: docs
 weight: 16
 url: /net/image-rendering/render-svg-svgz-images/
 ---

@@ -3,7 +3,6 @@ title: Απόδοση εγγράφου με σχόλια
 linktitle: Απόδοση εγγράφου με σχόλια
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε έγγραφα με σχόλια χρησιμοποιώντας το GroupDocs.Viewer για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 13
 url: /el/net/rendering-options/render-document-comments/
 ---

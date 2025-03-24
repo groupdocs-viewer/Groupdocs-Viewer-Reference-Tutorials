@@ -3,7 +3,6 @@ title: عرض رسائل البريد الإلكتروني
 linktitle: عرض رسائل البريد الإلكتروني
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف كيف يقوم GroupDocs.Viewer for .NET بتبسيط عرض رسائل البريد الإلكتروني في ملفات PDF. تعلم كيفية ضبط حجم الصفحة وتعيين تنسيق التاريخ والوقت وإعادة تسمية الحقول بكفاءة.
-type: docs
 weight: 27
 url: /ar/net/rendering-email-messages/
 ---

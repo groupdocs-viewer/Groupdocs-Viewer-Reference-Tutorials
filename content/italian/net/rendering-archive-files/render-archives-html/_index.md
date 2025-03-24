@@ -3,7 +3,6 @@ title: Rendering di archivi su pagine HTML singole o multiple
 linktitle: Rendering di archivi su pagine HTML singole o multiple
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering degli archivi in pagine HTML utilizzando GroupDocs.Viewer per .NET. Integra facilmente le funzionalità di visualizzazione dei documenti nelle tue applicazioni .NET.
-type: docs
 weight: 12
 url: /it/net/rendering-archive-files/render-archives-html/
 ---

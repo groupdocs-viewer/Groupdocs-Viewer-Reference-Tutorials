@@ -3,7 +3,6 @@ title: Merender File Data Outlook (PST, OST)
 linktitle: Merender File Data Outlook (PST, OST)
 second_title: GroupDocs.Viewer .NET API
 description: Jelajahi tutorial rendering File Data Outlook (PST, OST) dengan GroupDocs.Viewer untuk .NET. Temukan teknik manajemen dokumen yang efisien dengan mudah.
-type: docs
 weight: 39
 url: /id/net/rendering-outlook-data-files/
 ---

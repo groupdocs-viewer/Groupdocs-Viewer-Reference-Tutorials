@@ -3,7 +3,6 @@ title: Carregar documentos do stream
 linktitle: Carregar documentos do stream
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como carregar documentos de fluxos de maneira transparente usando GroupDocs.Viewer for .NET. Aprimore seus aplicativos .NET com poderosos recursos de visualização de documentos.
-type: docs
 weight: 12
 url: /pt/net/loading-documents/loading-document-stream/
 ---

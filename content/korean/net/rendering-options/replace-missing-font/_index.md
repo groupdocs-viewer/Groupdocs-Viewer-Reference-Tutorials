@@ -3,7 +3,6 @@ title: 누락된 글꼴 바꾸기
 linktitle: 누락된 글꼴 바꾸기
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET 문서에서 누락된 글꼴을 쉽게 바꾸는 방법을 알아보세요. 간단한 단계를 통해 정확한 렌더링을 보장합니다.
-type: docs
 weight: 20
 url: /ko/net/rendering-options/replace-missing-font/
 ---

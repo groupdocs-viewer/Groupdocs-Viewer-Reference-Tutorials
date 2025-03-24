@@ -1,7 +1,6 @@
 ---
 title: .NET용 GroupDocs.Viewer의 포괄적인 자습서 및 예
 linktitle: .NET 자습서용 GroupDocs.Viewer
-type: docs
 weight: 10
 url: /ko/net/
 description: GroupDocs.Viewer .NET을 앱에 통합하기 위한 포괄적인 자습서와 예제를 찾아보세요. 향상된 문서 관리를 위한 단계별 기술을 알아보세요.

@@ -3,7 +3,6 @@ title: CAD 도면의 모든 레이아웃 렌더링
 linktitle: CAD 도면의 모든 레이아웃 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 CAD 도면의 모든 레이아웃을 렌더링하는 방법을 알아보세요. 원활한 통합을 위해 포괄적인 튜토리얼을 따르십시오.
-type: docs
 weight: 11
 url: /ko/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

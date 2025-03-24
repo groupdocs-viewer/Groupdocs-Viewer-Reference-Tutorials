@@ -3,7 +3,6 @@ title: Rendereljen EMZ és EMF képeket
 linktitle: Rendereljen EMZ és EMF képeket
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet EMZ- és EMF-képeket különböző formátumokba renderelni a GroupDocs.Viewer for .NET segítségével. Könnyen követhető oktatóanyag fejlesztőknek.
-type: docs
 weight: 14
 url: /hu/net/image-rendering/render-emz-emf-images/
 ---
@@ -97,4 +96,4 @@ V: Igen, a GroupDocs.Viewer a dokumentumformátumok széles skáláját támogat
  V: Igen, ideiglenes licencek megvásárolhatók[itt](https://purchase.groupdocs.com/temporary-license/).
 
 ### K: Hol találom a GroupDocs.Viewer for .NET részletes dokumentációját?
- V: Tekintse meg a dokumentációt[itt](https://reference.groupdocs.com/viewer/net/)átfogó útmutatásért az API használatához.
+ V: Tekintse meg a dokumentációt[itt](https://tutorials.groupdocs.com/viewer/net/)átfogó útmutatásért az API használatához.

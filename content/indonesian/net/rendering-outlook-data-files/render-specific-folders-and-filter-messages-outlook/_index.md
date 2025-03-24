@@ -3,7 +3,6 @@ title: Render Folder Tertentu dan Pesan Filter (Outlook)
 linktitle: Render Folder Tertentu dan Pesan Filter (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender folder tertentu dan memfilter pesan di Outlook menggunakan GroupDocs.Viewer untuk .NET. Sederhanakan manajemen dokumen dalam aplikasi .NET.
-type: docs
 weight: 11
 url: /id/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

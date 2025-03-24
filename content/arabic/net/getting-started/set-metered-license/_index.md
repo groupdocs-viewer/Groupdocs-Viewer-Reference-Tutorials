@@ -3,7 +3,6 @@ title: تعيين الترخيص المقنن
 linktitle: تعيين الترخيص المقنن
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين تطبيقات .NET الخاصة بك باستخدام GroupDocs.Viewer لعرض المستندات بسلاسة. يمكنك بسهولة دمج وظائف عرض المستندات في مشاريعك.
-type: docs
 weight: 12
 url: /ar/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 في الختام، يوفر GroupDocs.Viewer for .NET حلاً شاملاً لدمج وظائف عرض المستندات في تطبيقات .NET الخاصة بك. باتباع الخطوات الموضحة، يمكنك بسهولة إعداد ترخيص محدود والبدء في الاستفادة من إمكانيات GroupDocs.Viewer داخل مشروعاتك.
 ## الأسئلة الشائعة
 ### س: أين يمكنني العثور على وثائق GroupDocs.Viewer لـ .NET؟
- يمكنك العثور على الوثائق[هنا](https://reference.groupdocs.com/viewer/net/).
+ يمكنك العثور على الوثائق[هنا](https://tutorials.groupdocs.com/viewer/net/).
 ### س: هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Viewer لـ .NET؟
  نعم، يمكنك الوصول إلى النسخة التجريبية المجانية[هنا](https://releases.groupdocs.com/).
 ### س: كيف يمكنني الحصول على تراخيص مؤقتة لأغراض الاختبار؟

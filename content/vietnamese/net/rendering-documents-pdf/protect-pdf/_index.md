@@ -3,7 +3,6 @@ title: Bảo vệ tệp PDF được hiển thị bằng mật khẩu
 linktitle: Bảo vệ tệp PDF được hiển thị bằng mật khẩu
 second_title: API GroupDocs.Viewer .NET
 description: Dễ dàng bảo vệ các tệp PDF được hiển thị của bạn bằng mật khẩu bằng Groupdocs.Viewer cho .NET. Giữ tài liệu của bạn an toàn và bí mật.
-type: docs
 weight: 12
 url: /vi/net/rendering-documents-pdf/protect-pdf/
 ---

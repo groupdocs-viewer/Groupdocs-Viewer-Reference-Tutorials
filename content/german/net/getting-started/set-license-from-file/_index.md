@@ -3,7 +3,6 @@ title: Lizenz aus Datei festlegen
 linktitle: Lizenz aus Datei festlegen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie GroupDocs.Viewer für .NET mühelos in Ihre Anwendungen integrieren. Legen Sie die Lizenz fest, zeigen Sie Dokumente an und passen Sie das Erscheinungsbild des Viewers an.
-type: docs
 weight: 10
 url: /de/net/getting-started/set-license-from-file/
 ---

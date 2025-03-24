@@ -3,7 +3,6 @@ title: Ordna om sidor i dokument
 linktitle: Ordna om sidor i dokument
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du ändrar ordningen på sidor i ett dokument med GroupDocs.Viewer för .NET. Följ vår steg-för-steg handledning för sömlös dokumenthantering.
-type: docs
 weight: 19
 url: /sv/net/rendering-options/reorder-pages/
 ---

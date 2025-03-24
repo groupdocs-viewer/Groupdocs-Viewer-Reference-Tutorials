@@ -3,7 +3,6 @@ title: Geef de bestandsnaam op bij het renderen van archiefbestanden
 linktitle: Geef de bestandsnaam op bij het renderen van archiefbestanden
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u archiefbestanden in .NET kunt weergeven met GroupDocs.Viewer, waardoor de mogelijkheden voor documentbeheer worden verbeterd.
-type: docs
 weight: 14
 url: /nl/net/rendering-archive-files/specify-filename-render-archive/
 ---

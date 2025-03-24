@@ -3,7 +3,6 @@ title: Render dengan Sumber Daya Tertanam atau Eksternal
 linktitle: Render dengan Sumber Daya Tertanam atau Eksternal
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan tampilan dokumen .NET dengan GroupDocs.Viewer untuk rendering yang lancar. Ikuti tutorial kami untuk integrasi yang efisien dan pengalaman pengguna yang unggul.
-type: docs
 weight: 12
 url: /id/net/rendering-documents-html/render-html-resources/
 ---

@@ -3,7 +3,6 @@ title: विशिष्ट एन्कोडिंग के साथ दस
 linktitle: विशिष्ट एन्कोडिंग के साथ दस्तावेज़ लोड करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके निर्बाध दस्तावेज़ देखने के साथ अपने .NET अनुप्रयोगों को बेहतर बनाएं। विशिष्ट एन्कोडिंग के साथ दस्तावेज़ों को सहजता से लोड करें और देखने के अनुभव को अनुकूलित करें।
-type: docs
 weight: 11
 url: /hi/net/advanced-loading/load-documents-encoding/
 ---

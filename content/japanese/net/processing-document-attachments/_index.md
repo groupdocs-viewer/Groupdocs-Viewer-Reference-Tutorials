@@ -3,7 +3,6 @@ title: 添付文書の処理
 linktitle: 添付文書の処理
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して、ドキュメント表示機能を .NET アプリケーションに簡単に統合する方法を学びます。添付文書を効率的に管理します。
-type: docs
 weight: 32
 url: /ja/net/processing-document-attachments/
 --- 

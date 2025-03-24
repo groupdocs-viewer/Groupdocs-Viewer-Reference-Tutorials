@@ -3,7 +3,6 @@ title: 주석이 포함된 문서 렌더링
 linktitle: 주석이 포함된 문서 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 주석이 포함된 문서를 렌더링하는 방법을 알아보세요. 원활한 통합을 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 13
 url: /ko/net/rendering-options/render-document-comments/
 ---

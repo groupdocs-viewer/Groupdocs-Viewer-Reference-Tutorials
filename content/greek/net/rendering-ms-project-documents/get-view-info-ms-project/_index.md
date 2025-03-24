@@ -3,7 +3,6 @@ title: Λάβετε πληροφορίες προβολής για έγγραφ�
 linktitle: Λάβετε πληροφορίες προβολής για έγγραφα Microsoft Project
 second_title: GroupDocs.Viewer .NET API
 description: Εξερευνήστε το ολοκληρωμένο σεμινάριο σχετικά με τη μόχλευση του Groupdocs.Viewer για .NET για να ανακτήσετε εύκολα πληροφορίες προβολής για έγγραφα του Microsoft Project.
-type: docs
 weight: 10
 url: /el/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

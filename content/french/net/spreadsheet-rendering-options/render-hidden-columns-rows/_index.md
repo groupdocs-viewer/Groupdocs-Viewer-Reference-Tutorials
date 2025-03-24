@@ -3,7 +3,6 @@ title: Rendre les colonnes et les lignes masquées
 linktitle: Rendre les colonnes et les lignes masquées
 second_title: API GroupDocs.Viewer .NET
 description: Déverrouillez facilement les données cachées dans les feuilles de calcul à l'aide de GroupDocs.Viewer pour .NET. Suivez notre guide étape par étape pour révéler les colonnes et les lignes masquées.
-type: docs
 weight: 13
 url: /fr/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

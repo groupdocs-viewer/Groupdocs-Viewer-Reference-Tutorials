@@ -3,7 +3,6 @@ title: आउटलुक डेटा फ़ाइलों (पीएसटी
 linktitle: आउटलुक डेटा फ़ाइलों (पीएसटी, ओएसटी) के लिए दृश्य जानकारी प्राप्त करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके आउटलुक डेटा फ़ाइलों (PST, OST) से दृश्य जानकारी निकालने का तरीका जानें। अपनी दस्तावेज़ प्रबंधन क्षमताओं को सहजता से बढ़ाएँ।
-type: docs
 weight: 10
 url: /hi/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

@@ -1,7 +1,6 @@
 ---
 title: Πλήρη σεμινάρια και παραδείγματα GroupDocs.Viewer για .NET
 linktitle: GroupDocs.Viewer για .NET Tutorials
-type: docs
 weight: 10
 url: /el/net/
 description: Ανακαλύψτε ολοκληρωμένα σεμινάρια και παραδείγματα για την ενσωμάτωση του GroupDocs.Viewer .NET στις εφαρμογές σας. Μάθετε βήμα προς βήμα τεχνικές για βελτιωμένη διαχείριση εγγράφων.

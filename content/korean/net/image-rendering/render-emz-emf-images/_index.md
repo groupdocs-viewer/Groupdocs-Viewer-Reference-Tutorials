@@ -3,7 +3,6 @@ title: EMZ 및 EMF 이미지 렌더링
 linktitle: EMZ 및 EMF 이미지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 EMZ 및 EMF 이미지를 다양한 형식으로 렌더링하는 방법을 알아보세요. 개발자를 위한 따라하기 쉬운 튜토리얼입니다.
-type: docs
 weight: 14
 url: /ko/net/image-rendering/render-emz-emf-images/
 ---
@@ -97,4 +96,4 @@ A: 예, GroupDocs.Viewer는 PDF, DOCX, PPTX, XLSX 등을 포함한 광범위한 
  A: 예, 임시 라이센스를 구매할 수 있습니다.[여기](https://purchase.groupdocs.com/temporary-license/).
 
 ### 질문: .NET용 GroupDocs.Viewer에 대한 자세한 설명서는 어디에서 찾을 수 있습니까?
- A: 문서를 참조할 수 있습니다.[여기](https://reference.groupdocs.com/viewer/net/)API 사용에 대한 포괄적인 지침을 확인하세요.
+ A: 문서를 참조할 수 있습니다.[여기](https://tutorials.groupdocs.com/viewer/net/)API 사용에 대한 포괄적인 지침을 확인하세요.

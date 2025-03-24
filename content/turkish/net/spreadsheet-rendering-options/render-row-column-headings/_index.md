@@ -3,7 +3,6 @@ title: Satır ve Sütun Başlıklarını Oluştur
 linktitle: Satır ve Sütun Başlıklarını Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: .NET'te belge görüntülemeyi geliştirin! GroupDocs.Viewer for .NET'i kullanarak satır ve sütun başlıklarını oluşturmayı öğrenin. HTML, JPG, PNG ve PDF çıktılarını keşfedin.
-type: docs
 weight: 18
 url: /tr/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

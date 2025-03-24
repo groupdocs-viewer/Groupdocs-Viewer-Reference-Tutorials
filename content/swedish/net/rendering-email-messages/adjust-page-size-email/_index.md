@@ -3,7 +3,6 @@ title: Justera sidstorleken när du renderar e-postmeddelanden
 linktitle: Justera sidstorleken när du renderar e-postmeddelanden
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du justerar sidstorleken när du renderar e-postmeddelanden till PDF med GroupDocs.Viewer för .NET. Förbättra dokumentvisningseffektiviteten.
-type: docs
 weight: 10
 url: /sv/net/rendering-email-messages/adjust-page-size-email/
 ---

@@ -3,7 +3,6 @@ title: Vykreslit archivy na jednu nebo více stránek HTML
 linktitle: Vykreslit archivy na jednu nebo více stránek HTML
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat archivy na stránky HTML pomocí GroupDocs.Viewer for .NET. Bez námahy integrujte možnosti prohlížení dokumentů do svých aplikací .NET.
-type: docs
 weight: 12
 url: /cs/net/rendering-archive-files/render-archives-html/
 ---

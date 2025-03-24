@@ -3,7 +3,6 @@ title: पंक्ति और स्तंभ शीर्षक प्रस
 linktitle: पंक्ति और स्तंभ शीर्षक प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET में दस्तावेज़ देखने की क्षमता बढ़ाएँ! .NET के लिए GroupDocs.Viewer का उपयोग करके पंक्ति और स्तंभ शीर्षकों को प्रस्तुत करना सीखें। HTML, JPG, PNG और PDF आउटपुट का अन्वेषण करें।
-type: docs
 weight: 18
 url: /hi/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

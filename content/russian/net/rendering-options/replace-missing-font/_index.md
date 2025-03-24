@@ -3,7 +3,6 @@ title: Заменить отсутствующий шрифт
 linktitle: Заменить отсутствующий шрифт
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко заменить отсутствующие шрифты в документах .NET с помощью GroupDocs.Viewer. Обеспечьте точный рендеринг с помощью простых шагов.
-type: docs
 weight: 20
 url: /ru/net/rendering-options/replace-missing-font/
 ---

@@ -3,7 +3,6 @@ title: Nhận thông tin xem cho tài liệu PDF
 linktitle: Nhận thông tin xem cho tài liệu PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách trích xuất thông tin xem từ tài liệu PDF bằng GroupDocs.Viewer dành cho .NET trong hướng dẫn toàn diện này.
-type: docs
 weight: 16
 url: /vi/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

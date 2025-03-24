@@ -3,7 +3,6 @@ title: Rendu avec texte superposé pour l'affichage
 linktitle: Rendu avec texte superposé pour l'affichage
 second_title: API GroupDocs.Viewer .NET
 description: Restituez des documents de manière transparente dans les applications .NET avec GroupDocs.Viewer, prenant en charge divers formats pour une expérience utilisateur améliorée.
-type: docs
 weight: 13
 url: /fr/net/rendering-documents-images/render-with-text-overlay/
 ---

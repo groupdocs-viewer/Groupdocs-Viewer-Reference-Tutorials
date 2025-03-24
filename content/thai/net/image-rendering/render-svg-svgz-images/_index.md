@@ -3,7 +3,6 @@ title: เรนเดอร์รูปภาพ SVG และ SVGZ
 linktitle: เรนเดอร์รูปภาพ SVG และ SVGZ
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์รูปภาพ SVG และ SVGZ โดยใช้ GroupDocs.Viewer สำหรับ .NET แปลงกราฟิกแบบเวกเตอร์เป็น HTML, JPG, PNG และ PDF ได้อย่างง่ายดาย
-type: docs
 weight: 16
 url: /th/net/image-rendering/render-svg-svgz-images/
 ---

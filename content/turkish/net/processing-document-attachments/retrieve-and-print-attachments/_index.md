@@ -3,7 +3,6 @@ title: Belge Eklerini Alma ve Yazdırma
 linktitle: Belge Eklerini Alma ve Yazdırma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET ile belge görüntüleme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edin. Belge eklerini zahmetsizce alın ve yazdırın.
-type: docs
 weight: 11
 url: /tr/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

@@ -3,7 +3,6 @@ title: PDF 렌더링 옵션
 linktitle: PDF 렌더링 옵션
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer .NET 자습서를 통해 PDF 보기를 최적화하는 방법을 알아보세요. 이미지 품질 조정, 텍스트 선택 비활성화 등 PDF 렌더링 옵션을 살펴보세요.
-type: docs
 weight: 38
 url: /ko/net/pdf-rendering-options/
 ---

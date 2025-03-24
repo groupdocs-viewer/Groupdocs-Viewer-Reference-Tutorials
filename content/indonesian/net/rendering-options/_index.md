@@ -3,7 +3,6 @@ title: Opsi Rendering
 linktitle: Opsi Rendering
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan GroupDocs.Viewer untuk .NET dengan mudah ke dalam aplikasi Anda dengan tutorial tentang opsi rendering, mulai dari menambahkan tanda air hingga menyesuaikan font.
-type: docs
 weight: 23
 url: /id/net/rendering-options/
 ---

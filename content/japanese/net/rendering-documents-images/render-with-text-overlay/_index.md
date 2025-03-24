@@ -3,7 +3,6 @@ title: 表示用にテキストをオーバーレイしてレンダリングす�
 linktitle: 表示用にテキストをオーバーレイしてレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET アプリケーションでドキュメントをシームレスにレンダリングし、さまざまな形式をサポートしてユーザー エクスペリエンスを向上させます。
-type: docs
 weight: 13
 url: /ja/net/rendering-documents-images/render-with-text-overlay/
 ---

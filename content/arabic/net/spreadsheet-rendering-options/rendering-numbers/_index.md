@@ -3,7 +3,6 @@ title: أرقام التقديم
 linktitle: أرقام التقديم
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف قوة Groupdocs.Viewer لـ .NET في عرض ملفات Numbers بسلاسة. قم بالتحويل إلى HTML وJPG وPNG وPDF بسهولة.
-type: docs
 weight: 15
 url: /ar/net/spreadsheet-rendering-options/rendering-numbers/
 ---

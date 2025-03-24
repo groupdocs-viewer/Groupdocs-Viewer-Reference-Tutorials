@@ -3,7 +3,6 @@ title: Renderujte obrázky SVG a SVGZ
 linktitle: Renderujte obrázky SVG a SVGZ
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se vykreslovat obrázky SVG a SVGZ pomocí GroupDocs.Viewer pro .NET. Převeďte vektorovou grafiku do HTML, JPG, PNG a PDF bez námahy.
-type: docs
 weight: 16
 url: /cs/net/image-rendering/render-svg-svgz-images/
 ---

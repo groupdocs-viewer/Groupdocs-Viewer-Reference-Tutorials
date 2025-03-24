@@ -3,7 +3,6 @@ title: Tải tài liệu được bảo vệ bằng mật khẩu
 linktitle: Tải tài liệu được bảo vệ bằng mật khẩu
 second_title: API GroupDocs.Viewer .NET
 description: Dễ dàng tích hợp tính năng xem tài liệu được bảo vệ bằng mật khẩu vào các ứng dụng .NET bằng GroupDocs.Viewer cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có được sự liền mạch.
-type: docs
 weight: 12
 url: /vi/net/advanced-loading/load-password-protected-document/
 ---

@@ -3,7 +3,6 @@ title: Načíst dokumenty ze streamu
 linktitle: Načíst dokumenty ze streamu
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak plynule načítat dokumenty ze streamů pomocí GroupDocs.Viewer pro .NET. Vylepšete své aplikace .NET o výkonné možnosti prohlížení dokumentů.
-type: docs
 weight: 12
 url: /cs/net/loading-documents/loading-document-stream/
 ---

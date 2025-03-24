@@ -3,7 +3,6 @@ title: Görüntüleme için Yerleştirilmiş Metinle Oluşturma
 linktitle: Görüntüleme için Yerleştirilmiş Metinle Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: Gelişmiş kullanıcı deneyimi için çeşitli formatları destekleyen GroupDocs.Viewer ile belgeleri .NET uygulamalarında sorunsuz bir şekilde işleyin.
-type: docs
 weight: 13
 url: /tr/net/rendering-documents-images/render-with-text-overlay/
 ---

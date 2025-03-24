@@ -3,7 +3,6 @@ title: PDF'de Görüntü Kalitesini Ayarlayın
 linktitle: PDF'de Görüntü Kalitesini Ayarlayın
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak PDF belgelerinde görüntü kalitesini nasıl ayarlayacağınızı öğrenin. Sorunsuz entegrasyon için adım adım eğitimimizi izleyin.
-type: docs
 weight: 10
 url: /tr/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

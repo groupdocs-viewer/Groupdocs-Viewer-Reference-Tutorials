@@ -3,7 +3,6 @@ title: Απόδοση εικόνων WMZ και WMF
 linktitle: Απόδοση εικόνων WMZ και WMF
 second_title: GroupDocs.Viewer .NET API
 description: Αποδώστε εύκολα εικόνες WMZ και WMF σε εφαρμογές .NET χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε τις δυνατότητες επεξεργασίας εγγράφων με ευκολία.
-type: docs
 weight: 18
 url: /el/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ url: /el/net/image-rendering/render-wmz-wmf-images/
 
 3. Εξοικείωση με το .NET Environment: Η θεμελιώδης κατανόηση του πλαισίου .NET και της γλώσσας προγραμματισμού C# είναι απαραίτητη για την αποτελεσματική εφαρμογή της διαδικασίας απόδοσης.
 
-4.  Ενσωμάτωση στο έργο σας: Βεβαιωθείτε ότι το GroupDocs.Viewer για .NET είναι σωστά ενσωματωμένο στο έργο σας .NET. Ανατρέξτε στην τεκμηρίωση για λεπτομερείς οδηγίες σχετικά με την ενσωμάτωση:[Τεκμηρίωση](https://reference.groupdocs.com/viewer/net/).
+4.  Ενσωμάτωση στο έργο σας: Βεβαιωθείτε ότι το GroupDocs.Viewer για .NET είναι σωστά ενσωματωμένο στο έργο σας .NET. Ανατρέξτε στην τεκμηρίωση για λεπτομερείς οδηγίες σχετικά με την ενσωμάτωση:[Τεκμηρίωση](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Εισαγωγή χώρων ονομάτων
 

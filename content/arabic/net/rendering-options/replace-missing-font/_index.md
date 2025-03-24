@@ -3,7 +3,6 @@ title: استبدال الخط المفقود
 linktitle: استبدال الخط المفقود
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية استبدال الخطوط المفقودة في مستندات .NET بسهولة باستخدام GroupDocs.Viewer. ضمان تقديم دقيق مع خطوات بسيطة.
-type: docs
 weight: 20
 url: /ar/net/rendering-options/replace-missing-font/
 ---

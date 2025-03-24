@@ -3,7 +3,6 @@ title: Hämta och spara dokumentbilagor
 linktitle: Hämta och spara dokumentbilagor
 second_title: GroupDocs.Viewer .NET API
 description: Hantera dokumentbilagor effektivt i .NET-applikationer med GroupDocs.Viewer. Hämta och spara bilagor problemfritt.
-type: docs
 weight: 12
 url: /sv/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Ja, GroupDocs.Viewer stöder ett brett utbud av dokumentformat, inklusive PDF, M
 ### Hur kan jag få tillfälliga licenser för GroupDocs.Viewer för .NET?
  Tillfälliga licenser kan erhållas från[den här länken](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag hitta dokumentation för GroupDocs.Viewer för .NET?
- Omfattande dokumentation finns tillgänglig[här](https://reference.groupdocs.com/viewer/net/).
+ Omfattande dokumentation finns tillgänglig[här](https://tutorials.groupdocs.com/viewer/net/).
 ### Vilka supportalternativ finns tillgängliga för GroupDocs.Viewer för .NET?
  Du kan söka hjälp från communityforumet[här](https://forum.groupdocs.com/c/viewer/9).

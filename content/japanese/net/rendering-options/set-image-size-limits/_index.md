@@ -3,7 +3,6 @@ title: 画像サイズ制限を設定する
 linktitle: 画像サイズ制限を設定する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、.NET アプリケーションで画像サイズの制限を簡単に設定し、ドキュメントの表示エクスペリエンスを向上させる方法を学びます。
-type: docs
 weight: 21
 url: /ja/net/rendering-options/set-image-size-limits/
 ---

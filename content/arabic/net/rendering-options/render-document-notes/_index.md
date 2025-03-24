@@ -3,7 +3,6 @@ title: تقديم المستند مع الملاحظات
 linktitle: تقديم المستند مع الملاحظات
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض المستندات مع الملاحظات باستخدام GroupDocs.Viewer لـ .NET. برنامج تعليمي خطوة بخطوة للتكامل السلس مع تطبيقات .NET الخاصة بك.
-type: docs
 weight: 14
 url: /ar/net/rendering-options/render-document-notes/
 ---

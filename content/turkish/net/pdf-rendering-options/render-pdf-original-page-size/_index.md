@@ -3,7 +3,6 @@ title: PDF'yi Orijinal Sayfa Boyutuyla Oluştur
 linktitle: PDF'yi Orijinal Sayfa Boyutuyla Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak PDF'leri orijinal sayfa boyutlarıyla nasıl oluşturacağınızı öğrenin. Adım adım kılavuzumuzu takip edin ve bu işlevselliği sorunsuz bir şekilde entegre edin.
-type: docs
 weight: 17
 url: /tr/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

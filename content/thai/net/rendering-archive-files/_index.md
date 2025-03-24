@@ -3,7 +3,6 @@ title: การแสดงผลไฟล์เก็บถาวร
 linktitle: การแสดงผลไฟล์เก็บถาวร
 second_title: GroupDocs.Viewer .NET API
 description: ค้นพบบทช่วยสอนที่ครอบคลุมสำหรับการเรนเดอร์ไฟล์เก็บถาวรโดยใช้ GroupDocs.Viewer สำหรับ .NET บูรณาการเข้ากับแอปพลิเคชัน .NET ของคุณได้อย่างราบรื่นและมีประสิทธิภาพ
-type: docs
 weight: 24
 url: /th/net/rendering-archive-files/
 ---

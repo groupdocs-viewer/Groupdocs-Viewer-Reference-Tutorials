@@ -3,7 +3,6 @@ title: 获取 CAD 工程图的查看信息
 linktitle: 获取 CAD 工程图的查看信息
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 检索 CAD 工程图的视图信息。通过无缝 CAD 文件处理增强您的 .NET 应用程序。
-type: docs
 weight: 10
 url: /zh/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

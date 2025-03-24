@@ -3,7 +3,6 @@ title: Rendering di figure di Visio
 linktitle: Rendering di figure di Visio
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering delle figure di Visio utilizzando GroupDocs.Viewer per .NET con questo programma completo. Migliora le funzionalità di visualizzazione dei documenti nelle tue applicazioni .NET.
-type: docs
 weight: 10
 url: /it/net/rendering-visio-documents/render-visio-figures/
 ---

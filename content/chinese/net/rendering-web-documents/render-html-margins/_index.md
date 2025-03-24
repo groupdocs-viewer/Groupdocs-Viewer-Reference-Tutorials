@@ -3,7 +3,6 @@ title: 使用用户定义的边距渲染 HTML
 linktitle: 使用用户定义的边距渲染 HTML
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 在 .NET 中呈现具有自定义边距的 HTML。轻松增强文档演示。
-type: docs
 weight: 11
 url: /zh/net/rendering-web-documents/render-html-margins/
 ---

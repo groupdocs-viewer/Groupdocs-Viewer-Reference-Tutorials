@@ -3,7 +3,6 @@ title: Rendera dolda sidor
 linktitle: Rendera dolda sidor
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra din .NET-applikation med GroupDocs.Viewer för sömlös dokumentrendering. Följ vår steg-för-steg-guide för att rendera dolda sidor utan ansträngning.
-type: docs
 weight: 15
 url: /sv/net/rendering-options/render-hidden-pages/
 ---

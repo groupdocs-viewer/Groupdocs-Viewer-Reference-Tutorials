@@ -3,7 +3,6 @@ title: CHM 파일 렌더링
 linktitle: CHM 파일 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET에서 CHM 파일을 렌더링하는 방법을 알아보세요. CHM을 HTML, JPG, PNG 및 PDF 형식으로 쉽게 변환하세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-web-documents/render-chm/
 ---

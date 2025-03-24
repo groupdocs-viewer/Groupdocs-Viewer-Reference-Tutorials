@@ -3,7 +3,6 @@ title: Enable Font Hinting in PDF
 linktitle: Enable Font Hinting in PDF
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to enable font hinting in PDF documents using GroupDocs.Viewer for .NET. Follow our step-by-step tutorial for seamless integration.
-type: docs
 weight: 14
 url: /net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

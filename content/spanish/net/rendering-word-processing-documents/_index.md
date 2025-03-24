@@ -3,7 +3,6 @@ title: Representación de documentos de procesamiento de textos
 linktitle: Representación de documentos de procesamiento de textos
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar de manera eficiente los cambios rastreados en documentos de procesamiento de Word usando GroupDocs.Viewer para .NET. Mejore sus habilidades de gestión de documentos.
-type: docs
 weight: 36
 url: /es/net/rendering-word-processing-documents/
 ---

@@ -3,7 +3,6 @@ title: Vänd och rotera sidor
 linktitle: Vänd och rotera sidor
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du integrerar Groupdocs.Viewer för .NET i dina applikationer för sömlös dokumentrendering, vändning och rotation.
-type: docs
 weight: 12
 url: /sv/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ den här handledningen kommer vi att fördjupa oss i funktionerna i Groupdocs.Vi
 ## Förutsättningar
 Innan vi börjar, se till att du har ställt in följande förutsättningar:
 ### Installerar Groupdocs.Viewer för .NET
- För att använda Groupdocs.Viewer för .NET måste du installera paketet via NuGet Package Manager. Du kan hitta detaljerade installationsanvisningar i[dokumentation](https://reference.groupdocs.com/viewer/net/).
+ För att använda Groupdocs.Viewer för .NET måste du installera paketet via NuGet Package Manager. Du kan hitta detaljerade installationsanvisningar i[dokumentation](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importera namnområden
 Se till att du har de nödvändiga namnrymden importerade i ditt projekt för att använda Groupdocs.Viewer för .NET effektivt.

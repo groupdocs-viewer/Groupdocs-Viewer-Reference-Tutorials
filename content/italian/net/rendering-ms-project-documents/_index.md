@@ -3,7 +3,6 @@ title: Rendering di documenti di Microsoft Project
 linktitle: Rendering di documenti di Microsoft Project
 second_title: API GroupDocs.Viewer .NET
 description: Recupera facilmente le informazioni sulla visualizzazione dei documenti Microsoft Project con GroupDocs.Viewer per .NET. Migliora la produttività con funzionalità di rendering versatili.
-type: docs
 weight: 40
 url: /it/net/rendering-ms-project-documents/
 ---

@@ -3,7 +3,6 @@ title: Återge arkiv till enstaka eller flera HTML-sidor
 linktitle: Återge arkiv till enstaka eller flera HTML-sidor
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar arkiv till HTML-sidor med GroupDocs.Viewer för .NET. Integrera enkelt dokumentvisningsmöjligheter i dina .NET-applikationer.
-type: docs
 weight: 12
 url: /sv/net/rendering-archive-files/render-archives-html/
 ---

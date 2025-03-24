@@ -3,7 +3,6 @@ title: Tutorial GroupDocs.Viewer - Keterampilan Melihat Dokumen Utama
 linktitle: GroupDocs.Tutorial Penampil
 additionalTitle: Referensi API GroupDocs
 description: Jelajahi tutorial GroupDocs.Viewer untuk panduan komprehensif dalam memaksimalkan kemampuan melihat dokumen. Buka potensi penuhnya hari ini!
-type: docs
 weight: 11
 url: /id/
 is_root: true

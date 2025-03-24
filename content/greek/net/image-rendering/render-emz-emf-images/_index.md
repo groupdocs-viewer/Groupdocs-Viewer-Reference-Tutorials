@@ -3,7 +3,6 @@ title: Απόδοση εικόνων EMZ και EMF
 linktitle: Απόδοση εικόνων EMZ και EMF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε εικόνες EMZ και EMF σε διάφορες μορφές χρησιμοποιώντας το GroupDocs.Viewer για .NET. Εύκολο στην παρακολούθηση σεμινάριο για προγραμματιστές.
-type: docs
 weight: 14
 url: /el/net/image-rendering/render-emz-emf-images/
 ---
@@ -97,4 +96,4 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
  Α: Ναι, οι προσωρινές άδειες είναι διαθέσιμες για αγορά[εδώ](https://purchase.groupdocs.com/temporary-license/).
 
 ### Ε: Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Viewer για .NET;
- Α: Μπορείτε να ανατρέξετε στην τεκμηρίωση[εδώ](https://reference.groupdocs.com/viewer/net/)για ολοκληρωμένη καθοδήγηση σχετικά με τη χρήση του API.
+ Α: Μπορείτε να ανατρέξετε στην τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/viewer/net/)για ολοκληρωμένη καθοδήγηση σχετικά με τη χρήση του API.

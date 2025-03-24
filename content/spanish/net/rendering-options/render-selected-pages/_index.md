@@ -3,7 +3,6 @@ title: Representar páginas seleccionadas
 linktitle: Representar páginas seleccionadas
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda a representar páginas seleccionadas de documentos usando Groupdocs.Viewer para .NET. Tutorial paso a paso con ejemplos de código incluidos.
-type: docs
 weight: 17
 url: /es/net/rendering-options/render-selected-pages/
 ---

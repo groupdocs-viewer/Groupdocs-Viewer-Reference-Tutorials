@@ -3,7 +3,6 @@ title: 渲染響應式 HTML
 linktitle: 渲染響應式 HTML
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 呈現響應式 HTML，確保跨裝置的最佳檢視體驗。
-type: docs
 weight: 13
 url: /zh-hant/net/rendering-documents-html/render-responsive-html/
 ---

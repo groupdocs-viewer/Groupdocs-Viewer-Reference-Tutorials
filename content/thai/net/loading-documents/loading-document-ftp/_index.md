@@ -3,7 +3,6 @@ title: โหลดเอกสารจาก FTP (ขั้นสูง)
 linktitle: โหลดเอกสารจาก FTP (ขั้นสูง)
 second_title: GroupDocs.Viewer .NET API
 description: ผสานรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชันของคุณได้อย่างราบรื่นเพื่อการดูเอกสารที่มีประสิทธิภาพ เรนเดอร์เอกสารจาก FTP ได้อย่างง่ายดาย
-type: docs
 weight: 13
 url: /th/net/loading-documents/loading-document-ftp/
 ---

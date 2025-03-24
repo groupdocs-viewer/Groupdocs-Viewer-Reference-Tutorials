@@ -3,7 +3,6 @@ title: Получение и печать вложений документов
 linktitle: Получение и печать вложений документов
 second_title: GroupDocs.Viewer .NET API
 description: Легко интегрируйте возможности просмотра документов в свои приложения .NET с помощью GroupDocs.Viewer для .NET. Легко извлекайте и распечатывайте вложения к документам.
-type: docs
 weight: 11
 url: /ru/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

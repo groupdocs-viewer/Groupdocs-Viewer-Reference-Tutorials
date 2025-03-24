@@ -3,7 +3,6 @@ title: Aktifkan Caching untuk Pemrosesan Dokumen Lebih Cepat
 linktitle: Aktifkan Caching untuk Pemrosesan Dokumen Lebih Cepat
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan kecepatan pemrosesan dokumen di aplikasi .NET dengan GroupDocs.Viewer dengan memanfaatkan caching. Optimalkan kinerja dengan mudah.
-type: docs
 weight: 10
 url: /id/net/advanced-usage-caching/enable-caching/
 ---

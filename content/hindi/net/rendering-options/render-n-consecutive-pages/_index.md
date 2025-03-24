@@ -3,7 +3,6 @@ title: एन लगातार पेज प्रस्तुत करें
 linktitle: एन लगातार पेज प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: लगातार N पृष्ठों वाले दस्तावेज़ों को सहजता से प्रस्तुत करने के लिए अपने अनुप्रयोगों में .NET के लिए GroupDocs.Viewer को एकीकृत करने का तरीका जानें।
-type: docs
 weight: 16
 url: /hi/net/rendering-options/render-n-consecutive-pages/
 ---

@@ -3,7 +3,6 @@ title: Belge Eklerini İşleme
 linktitle: Belge Eklerini İşleme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak belge görüntüleme yeteneklerini .NET uygulamalarınıza zahmetsizce nasıl entegre edeceğinizi öğrenin. Belge eklerini verimli bir şekilde yönetin.
-type: docs
 weight: 32
 url: /tr/net/processing-document-attachments/
 --- 

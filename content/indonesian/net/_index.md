@@ -1,7 +1,6 @@
 ---
 title: Tutorial Komprehensif dan Contoh GroupDocs.Viewer untuk .NET
 linktitle: GroupDocs.Viewer untuk Tutorial .NET
-type: docs
 weight: 10
 url: /id/net/
 description: Temukan tutorial dan contoh komprehensif untuk mengintegrasikan GroupDocs.Viewer .NET ke dalam aplikasi Anda. Pelajari teknik langkah demi langkah untuk meningkatkan pengelolaan dokumen.

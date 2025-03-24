@@ -3,7 +3,6 @@ title: Renderowanie plików archiwalnych
 linktitle: Renderowanie plików archiwalnych
 second_title: GroupDocs.Viewer API .NET
 description: Odkryj kompleksowe samouczki dotyczące renderowania plików archiwalnych przy użyciu GroupDocs.Viewer dla .NET. Bezproblemowo i wydajnie integruj się z aplikacjami .NET.
-type: docs
 weight: 24
 url: /pl/net/rendering-archive-files/
 ---

@@ -3,7 +3,6 @@ title: 取得 Outlook 資料檔（PST、OST）的檢視訊息
 linktitle: 取得 Outlook 資料檔（PST、OST）的檢視訊息
 second_title: GroupDocs.Viewer .NET API
 description: 探索如何使用 GroupDocs.Viewer for .NET 從 Outlook 資料檔案（PST、OST）中提取視圖資訊。輕鬆增強您的文件管理能力。
-type: docs
 weight: 10
 url: /zh-hant/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

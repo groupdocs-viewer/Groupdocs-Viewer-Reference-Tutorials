@@ -3,7 +3,6 @@ title: 调整 PDF 中的图像质量
 linktitle: 调整 PDF 中的图像质量
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 调整 PDF 文档中的图像质量。请按照我们的分步教程进行无缝集成。
-type: docs
 weight: 10
 url: /zh/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

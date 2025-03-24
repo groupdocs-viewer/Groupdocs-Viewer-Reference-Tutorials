@@ -3,7 +3,6 @@ title: Отключить проверку лицензии шрифта в PDF
 linktitle: Отключить проверку лицензии шрифта в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Разблокируйте возможности беспрепятственного просмотра документов в вашей .NET с помощью GroupDocs.Viewer для .NET. Легко интегрируйте и настраивайте рендеринг документов с минимальными зависимостями.
-type: docs
 weight: 12
 url: /ru/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

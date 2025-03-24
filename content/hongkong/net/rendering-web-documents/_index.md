@@ -3,7 +3,6 @@ title: 渲染 Web 文件
 linktitle: 渲染 Web 文件
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 在 .NET 中呈現具有自訂邊距的 CHM 檔案和 HTML。將 CHM 無縫轉換為 HTML、JPG、PNG 和 PDF 格式。
-type: docs
 weight: 35
 url: /zh-hant/net/rendering-web-documents/
 ---

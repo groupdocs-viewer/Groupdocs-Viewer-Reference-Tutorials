@@ -3,7 +3,6 @@ title: Sluit lettertypen uit van gerenderde HTML
 linktitle: Sluit lettertypen uit van gerenderde HTML
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u lettertypen uitsluit van weergegeven HTML met GroupDocs.Viewer voor .NET. Volg deze stapsgewijze handleiding voor een naadloze documentweergave.
-type: docs
 weight: 10
 url: /nl/net/rendering-documents-html/exclude-fonts-html/
 ---

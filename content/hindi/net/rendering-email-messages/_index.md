@@ -3,7 +3,6 @@ title: ईमेल संदेश प्रस्तुत करना
 linktitle: ईमेल संदेश प्रस्तुत करना
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि कैसे .NET के लिए GroupDocs.Viewer ईमेल संदेशों को PDF में प्रस्तुत करना सरल बनाता है। पृष्ठ का आकार समायोजित करना, दिनांक समय प्रारूप सेट करना और फ़ील्ड का कुशलतापूर्वक नाम बदलना सीखें।
-type: docs
 weight: 27
 url: /hi/net/rendering-email-messages/
 ---

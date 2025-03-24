@@ -3,7 +3,6 @@ title: ドキュメントを PDF にレンダリングする
 linktitle: ドキュメントを PDF にレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET チュートリアルを使用して、ドキュメントを PDF にレンダリングし、JPG 画質を調整し、PDF をパスワードで保護する方法を学びます。
-type: docs
 weight: 29
 url: /ja/net/rendering-documents-pdf/
 ---

@@ -3,7 +3,6 @@ title: Render Garis Kisi
 linktitle: Render Garis Kisi
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan visualisasi dokumen dengan GroupDocs.Viewer untuk .NET. Render garis grid dengan mudah. Coba uji coba gratis sekarang! #GroupDocs #Penampil
-type: docs
 weight: 12
 url: /id/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ Dalam tutorial ini, kita menjelajahi proses rendering garis grid dalam dokumen m
 ### Apakah lisensi sementara tersedia untuk GroupDocs.Viewer untuk .NET?
  Ya, Anda bisa mendapatkan a[izin sementara](https://purchase.groupdocs.com/temporary-license/) untuk GroupDocs.Viewer untuk .NET.
 ### Dapatkah saya menemukan dokumentasi terperinci untuk GroupDocs.Viewer untuk .NET?
- Sangat! Mengacu kepada[dokumentasi resmi](https://reference.groupdocs.com/viewer/net/) untuk informasi mendalam tentang penggunaan GroupDocs.Viewer untuk .NET.
+ Sangat! Mengacu kepada[dokumentasi resmi](https://tutorials.groupdocs.com/viewer/net/) untuk informasi mendalam tentang penggunaan GroupDocs.Viewer untuk .NET.
 ### Di mana saya dapat mengunduh GroupDocs.Viewer untuk .NET versi terbaru?
  Unduh perpustakaan dari[halaman rilis resmi](https://releases.groupdocs.com/viewer/net/).

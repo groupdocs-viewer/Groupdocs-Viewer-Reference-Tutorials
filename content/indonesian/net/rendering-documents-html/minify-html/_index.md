@@ -3,7 +3,6 @@ title: Perkecil Dokumen HTML yang Dirender
 linktitle: Perkecil Dokumen HTML yang Dirender
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender dokumen HTML dengan lancar di aplikasi .NET menggunakan GroupDocs.Viewer untuk .NET.
-type: docs
 weight: 11
 url: /id/net/rendering-documents-html/minify-html/
 ---

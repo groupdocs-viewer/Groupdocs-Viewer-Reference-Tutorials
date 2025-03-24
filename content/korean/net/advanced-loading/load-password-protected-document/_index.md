@@ -3,7 +3,6 @@ title: 비밀번호로 보호된 문서 로드
 linktitle: 비밀번호로 보호된 문서 로드
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 암호로 보호된 문서 보기를 .NET 응용 프로그램에 손쉽게 통합할 수 있습니다. 원활하게 진행하려면 단계별 튜토리얼을 따르세요.
-type: docs
 weight: 12
 url: /ko/net/advanced-loading/load-password-protected-document/
 ---

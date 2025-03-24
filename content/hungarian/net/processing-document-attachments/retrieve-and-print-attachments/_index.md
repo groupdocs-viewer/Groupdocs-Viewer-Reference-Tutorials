@@ -3,7 +3,6 @@ title: Dokumentummellékletek lekérése és nyomtatása
 linktitle: Dokumentummellékletek lekérése és nyomtatása
 second_title: GroupDocs.Viewer .NET API
 description: A GroupDocs.Viewer for .NET segítségével zökkenőmentesen integrálhatja a dokumentummegtekintési képességeket .NET-alkalmazásaiba. Könnyedén letöltheti és kinyomtathatja a dokumentummellékleteket.
-type: docs
 weight: 11
 url: /hu/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

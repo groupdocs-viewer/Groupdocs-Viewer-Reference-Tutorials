@@ -3,7 +3,6 @@ title: 启用缓存以加快文档处理速度
 linktitle: 启用缓存以加快文档处理速度
 second_title: GroupDocs.Viewer .NET API
 description: 通过利用缓存，使用 GroupDocs.Viewer 提高 .NET 应用程序中的文档处理速度。毫不费力地优化性能。
-type: docs
 weight: 10
 url: /zh/net/advanced-usage-caching/enable-caching/
 ---

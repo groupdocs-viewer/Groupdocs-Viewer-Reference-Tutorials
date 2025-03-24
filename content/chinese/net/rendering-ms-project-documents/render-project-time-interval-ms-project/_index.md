@@ -3,7 +3,6 @@ title: 渲染特定项目时间间隔（MS Project）
 linktitle: 渲染特定项目时间间隔（MS Project）
 second_title: GroupDocs.Viewer .NET API
 description: 将 GroupDocs.Viewer for .NET 无缝集成到您的应用程序中，以实现高效的文档查看。通过多功能渲染功能提高工作效率。
-type: docs
 weight: 12
 url: /zh/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

@@ -3,7 +3,6 @@ title: Oluşturulan PDF'yi Şifreyle Koruyun
 linktitle: Oluşturulan PDF'yi Şifreyle Koruyun
 second_title: GroupDocs.Viewer .NET API'si
 description: Oluşturulan PDF'lerinizi Groupdocs.Viewer for .NET'i kullanarak kolayca parolalarla koruyun. Belgelerinizi güvende ve gizli tutun.
-type: docs
 weight: 12
 url: /tr/net/rendering-documents-pdf/protect-pdf/
 ---

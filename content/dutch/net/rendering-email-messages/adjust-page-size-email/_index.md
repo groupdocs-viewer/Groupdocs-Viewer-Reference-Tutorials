@@ -3,7 +3,6 @@ title: Pas het paginaformaat aan bij het weergeven van e-mailberichten
 linktitle: Pas het paginaformaat aan bij het weergeven van e-mailberichten
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u de paginagrootte kunt aanpassen bij het weergeven van e-mailberichten naar PDF met GroupDocs.Viewer voor .NET. Verbeter de efficiëntie van het bekijken van documenten.
-type: docs
 weight: 10
 url: /nl/net/rendering-email-messages/adjust-page-size-email/
 ---

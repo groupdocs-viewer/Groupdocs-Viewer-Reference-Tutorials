@@ -3,7 +3,6 @@ title: Исключить шрифты из отображаемого HTML
 linktitle: Исключить шрифты из отображаемого HTML
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как исключить шрифты из отображаемого HTML с помощью GroupDocs.Viewer для .NET. Следуйте этому пошаговому руководству, чтобы обеспечить бесперебойное отображение документов.
-type: docs
 weight: 10
 url: /ru/net/rendering-documents-html/exclude-fonts-html/
 ---

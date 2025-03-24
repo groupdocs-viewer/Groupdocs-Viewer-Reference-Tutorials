@@ -3,7 +3,6 @@ title: Renderizando Números
 linktitle: Renderizando Números
 second_title: API GroupDocs.Viewer .NET
 description: Explore o poder do Groupdocs.Viewer for .NET na renderização perfeita de arquivos do Numbers. Converta para HTML, JPG, PNG e PDF sem esforço.
-type: docs
 weight: 15
 url: /pt/net/spreadsheet-rendering-options/rendering-numbers/
 ---

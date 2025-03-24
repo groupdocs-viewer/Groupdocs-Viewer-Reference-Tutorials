@@ -3,7 +3,6 @@ title: ดึงและบันทึกเอกสารแนบ
 linktitle: ดึงและบันทึกเอกสารแนบ
 second_title: GroupDocs.Viewer .NET API
 description: จัดการเอกสารแนบภายในแอปพลิเคชัน .NET อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer ดึงและบันทึกไฟล์แนบโดยไม่ยุ่งยาก
-type: docs
 weight: 12
 url: /th/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Console.WriteLine($"\nAttachments saved successfully.\nCheck output in {outputDi
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Viewer สำหรับ .NET ได้อย่างไร
  สามารถรับใบอนุญาตชั่วคราวได้จาก[ลิงค์นี้](https://purchase.groupdocs.com/temporary-license/).
 ### ฉันจะหาเอกสารสำหรับ GroupDocs.Viewer for .NET ได้ที่ไหน
- มีเอกสารประกอบครบถ้วน[ที่นี่](https://reference.groupdocs.com/viewer/net/).
+ มีเอกสารประกอบครบถ้วน[ที่นี่](https://tutorials.groupdocs.com/viewer/net/).
 ### ตัวเลือกการสนับสนุนใดบ้างสำหรับ GroupDocs.Viewer สำหรับ .NET
  คุณสามารถขอความช่วยเหลือได้จากฟอรัมชุมชน[ที่นี่](https://forum.groupdocs.com/c/viewer/9).

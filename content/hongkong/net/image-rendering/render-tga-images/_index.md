@@ -3,7 +3,6 @@ title: 渲染 TGA 影像
 linktitle: 渲染 TGA 影像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 在 .NET 應用程式中輕鬆渲染 TGA 影像。增強您的影像渲染能力。
-type: docs
 weight: 17
 url: /zh-hant/net/image-rendering/render-tga-images/
 ---

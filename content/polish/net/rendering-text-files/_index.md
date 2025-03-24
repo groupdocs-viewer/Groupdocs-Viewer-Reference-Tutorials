@@ -3,7 +3,6 @@ title: Renderowanie plików tekstowych
 linktitle: Renderowanie plików tekstowych
 second_title: GroupDocs.Viewer API .NET
 description: Odblokuj potencjał GroupDocs.Viewer dla .NET dzięki samouczkom dotyczącym renderowania plików tekstowych. Konwertuj pliki .txt na różne formaty, aby usprawnić zarządzanie dokumentami.
-type: docs
 weight: 33
 url: /pl/net/rendering-text-files/
 ---

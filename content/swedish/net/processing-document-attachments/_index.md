@@ -3,7 +3,6 @@ title: Bearbeta dokumentbilagor
 linktitle: Bearbeta dokumentbilagor
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du enkelt integrerar dokumentvisningsmöjligheter i dina .NET-applikationer med hjälp av GroupDocs.Viewer. Hantera dokumentbilagor effektivt.
-type: docs
 weight: 32
 url: /sv/net/processing-document-attachments/
 --- 

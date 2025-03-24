@@ -3,7 +3,6 @@ title: 追跡された変更をレンダリングする
 linktitle: 追跡された変更をレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、ドキュメント内の追跡された変更を簡単にレンダリングする方法を説明します。文書管理の効率を高めます。
-type: docs
 weight: 10
 url: /ja/net/rendering-word-processing-documents/render-tracked-changes/
 ---

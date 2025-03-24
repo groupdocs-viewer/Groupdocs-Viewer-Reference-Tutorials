@@ -3,7 +3,6 @@ title: Gör dokument med kommentarer
 linktitle: Gör dokument med kommentarer
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar dokument med kommentarer med GroupDocs.Viewer för .NET. Följ vår steg-för-steg-guide för sömlös integration.
-type: docs
 weight: 13
 url: /sv/net/rendering-options/render-document-comments/
 ---

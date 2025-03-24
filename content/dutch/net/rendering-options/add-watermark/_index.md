@@ -3,7 +3,6 @@ title: Watermerk toevoegen aan document
 linktitle: Watermerk toevoegen aan document
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u naadloos watermerken aan documenten kunt toevoegen met GroupDocs.Viewer voor .NET. Verbeter de documentbeveiliging en branding met deze eenvoudig te volgen tutorial.
-type: docs
 weight: 10
 url: /nl/net/rendering-options/add-watermark/
 ---

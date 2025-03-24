@@ -3,7 +3,6 @@ title: Geef N opeenvolgende pagina's weer
 linktitle: Geef N opeenvolgende pagina's weer
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u GroupDocs.Viewer voor .NET in uw toepassingen kunt integreren om moeiteloos documenten met N opeenvolgende pagina's weer te geven.
-type: docs
 weight: 16
 url: /nl/net/rendering-options/render-n-consecutive-pages/
 ---

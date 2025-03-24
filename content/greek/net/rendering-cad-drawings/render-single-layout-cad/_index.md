@@ -3,7 +3,6 @@ title: Απόδοση μεμονωμένης διάταξης σε σχέδια 
 linktitle: Απόδοση μεμονωμένης διάταξης σε σχέδια CAD
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε μεμονωμένη διάταξη σε σχέδια CAD χρησιμοποιώντας το GroupDocs.Viewer για .NET. Εύκολα βήματα για απρόσκοπτη ενσωμάτωση στις εφαρμογές σας .NET.
-type: docs
 weight: 14
 url: /el/net/rendering-cad-drawings/render-single-layout-cad/
 ---

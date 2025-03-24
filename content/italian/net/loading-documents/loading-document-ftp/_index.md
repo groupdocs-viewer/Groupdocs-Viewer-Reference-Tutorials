@@ -3,7 +3,6 @@ title: Carica documenti da FTP (Avanzato)
 linktitle: Carica documenti da FTP (Avanzato)
 second_title: API GroupDocs.Viewer .NET
 description: Integra GroupDocs.Viewer for .NET perfettamente nelle tue applicazioni per una visualizzazione efficiente dei documenti. Esegui il rendering dei documenti da FTP senza sforzo.
-type: docs
 weight: 13
 url: /it/net/loading-documents/loading-document-ftp/
 ---

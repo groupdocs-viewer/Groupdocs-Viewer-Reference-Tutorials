@@ -3,7 +3,6 @@ title: ضبط حجم صورة الإخراج لرسومات CAD
 linktitle: ضبط حجم صورة الإخراج لرسومات CAD
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية ضبط حجم الصورة الناتجة لرسومات CAD باستخدام GroupDocs.Viewer لـ .NET. تعزيز الرؤية وسهولة الاستخدام دون عناء.
-type: docs
 weight: 15
 url: /ar/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

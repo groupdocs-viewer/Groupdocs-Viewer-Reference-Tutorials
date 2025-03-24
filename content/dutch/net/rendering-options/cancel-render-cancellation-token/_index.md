@@ -3,7 +3,6 @@ title: Rendering annuleren met annuleringstoken
 linktitle: Rendering annuleren met annuleringstoken
 second_title: GroupDocs.Viewer .NET-API
 description: Integreer Groupdocs.Viewer voor .NET naadloos in uw .NET-projecten voor efficiënte documentweergave.
-type: docs
 weight: 11
 url: /nl/net/rendering-options/cancel-render-cancellation-token/
 ---

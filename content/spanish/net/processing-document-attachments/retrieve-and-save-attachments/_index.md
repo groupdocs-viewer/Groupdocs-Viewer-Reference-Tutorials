@@ -3,7 +3,6 @@ title: Recuperar y guardar documentos adjuntos
 linktitle: Recuperar y guardar documentos adjuntos
 second_title: API GroupDocs.Viewer .NET
 description: Administre eficientemente los archivos adjuntos de documentos dentro de aplicaciones .NET utilizando GroupDocs.Viewer. Recupere y guarde archivos adjuntos sin problemas.
-type: docs
 weight: 12
 url: /es/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Sí, GroupDocs.Viewer admite una amplia gama de formatos de documentos, incluido
 ### ¿Cómo puedo obtener licencias temporales de GroupDocs.Viewer para .NET?
  Las licencias temporales se pueden adquirir en[este enlace](https://purchase.groupdocs.com/temporary-license/).
 ### ¿Dónde puedo encontrar documentación para GroupDocs.Viewer para .NET?
- Documentación completa disponible[aquí](https://reference.groupdocs.com/viewer/net/).
+ Documentación completa disponible[aquí](https://tutorials.groupdocs.com/viewer/net/).
 ### ¿Qué opciones de soporte están disponibles para GroupDocs.Viewer para .NET?
  Puede buscar ayuda en el foro de la comunidad.[aquí](https://forum.groupdocs.com/c/viewer/9).

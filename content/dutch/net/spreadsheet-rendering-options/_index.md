@@ -3,7 +3,6 @@ title: Opties voor weergave van spreadsheets
 linktitle: Opties voor weergave van spreadsheets
 second_title: GroupDocs.Viewer .NET-API
 description: Verbeter moeiteloos de documentvisualisatie in .NET met GroupDocs.Viewer-tutorials. Leer hoe u tekstoverloop kunt aanpassen, rasterlijnen kunt weergeven en meer.
-type: docs
 weight: 37
 url: /nl/net/spreadsheet-rendering-options/
 ---

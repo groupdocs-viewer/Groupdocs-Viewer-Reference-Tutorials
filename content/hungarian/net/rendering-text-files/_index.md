@@ -3,7 +3,6 @@ title: Szöveges fájlok renderelése
 linktitle: Szöveges fájlok renderelése
 second_title: GroupDocs.Viewer .NET API
 description: A .NET-hez készült GroupDocs.Viewerben rejlő lehetőségek kiaknázása a szövegfájlok megjelenítésére vonatkozó oktatóanyagok segítségével. Konvertálja a .txt fájlokat különböző formátumokba a továbbfejlesztett dokumentumkezelés érdekében.
-type: docs
 weight: 33
 url: /hu/net/rendering-text-files/
 ---

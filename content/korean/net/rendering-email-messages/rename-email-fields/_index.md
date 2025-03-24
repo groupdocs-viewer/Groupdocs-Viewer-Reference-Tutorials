@@ -3,7 +3,6 @@ title: 렌더링 중 이메일 필드 이름 바꾸기
 linktitle: 렌더링 중 이메일 필드 이름 바꾸기
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하면 문서 보기 환경이 향상됩니다. 이메일을 원활하게 렌더링하고 사용자 정의하세요.
-type: docs
 weight: 12
 url: /ko/net/rendering-email-messages/rename-email-fields/
 ---

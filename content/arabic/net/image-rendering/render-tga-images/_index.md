@@ -3,7 +3,6 @@ title: تقديم صور TGA
 linktitle: تقديم صور TGA
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور TGA بسهولة في تطبيقات .NET باستخدام GroupDocs.Viewer. تعزيز قدرات تقديم الصور الخاصة بك.
-type: docs
 weight: 17
 url: /ar/net/image-rendering/render-tga-images/
 ---

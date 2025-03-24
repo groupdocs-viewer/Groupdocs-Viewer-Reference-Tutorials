@@ -3,7 +3,6 @@ title: PDF 문서에 대한 정보 보기
 linktitle: PDF 문서에 대한 정보 보기
 second_title: GroupDocs.Viewer .NET API
 description: 이 포괄적인 튜토리얼에서 .NET용 GroupDocs.Viewer를 사용하여 PDF 문서에서 보기 정보를 추출하는 방법을 알아보세요.
-type: docs
 weight: 16
 url: /ko/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

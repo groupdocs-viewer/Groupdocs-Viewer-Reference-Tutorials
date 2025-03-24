@@ -3,7 +3,6 @@ title: Opções de renderização de planilha
 linktitle: Opções de renderização de planilha
 second_title: API GroupDocs.Viewer .NET
 description: Aprimore facilmente a visualização de documentos em .NET com os tutoriais do GroupDocs.Viewer. Aprenda a ajustar o excesso de texto, renderizar linhas de grade e muito mais.
-type: docs
 weight: 37
 url: /pt/net/spreadsheet-rendering-options/
 ---

@@ -3,7 +3,6 @@ title: Merender Dokumen Web
 linktitle: Merender Dokumen Web
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender file CHM dan HTML dengan margin khusus di .NET menggunakan GroupDocs.Viewer. Konversikan format CHM ke HTML, JPG, PNG, dan PDF dengan lancar.
-type: docs
 weight: 35
 url: /id/net/rendering-web-documents/
 ---

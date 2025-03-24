@@ -3,7 +3,6 @@ title: Προσαρμογή μεγέθους και ποιότητας εικό�
 linktitle: Προσαρμογή μεγέθους και ποιότητας εικόνας (JPG)
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να βελτιστοποιείτε το μέγεθος και την ποιότητα της εικόνας σε μορφή JPEG χρησιμοποιώντας το Groupdocs.Viewer για .NET. Βελτιώστε την εμπειρία προβολής εγγράφων σας.
-type: docs
 weight: 11
 url: /el/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---

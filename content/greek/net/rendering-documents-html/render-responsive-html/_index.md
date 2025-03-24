@@ -3,7 +3,6 @@ title: Render Responsive HTML
 linktitle: Render Responsive HTML
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε αποκριτικό HTML χρησιμοποιώντας το Groupdocs.Viewer για .NET, διασφαλίζοντας βέλτιστη εμπειρία προβολής σε όλες τις συσκευές.
-type: docs
 weight: 13
 url: /el/net/rendering-documents-html/render-responsive-html/
 ---

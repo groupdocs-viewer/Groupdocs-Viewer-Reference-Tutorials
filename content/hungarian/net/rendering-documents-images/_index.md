@@ -3,7 +3,6 @@ title: Dokumentumok renderelése képekké
 linktitle: Dokumentumok renderelése képekké
 second_title: GroupDocs.Viewer .NET API
 description: Tekintse meg az oktatóanyagokat a dokumentumok képekké történő megjelenítéséről a GroupDocs.Viewer for .NET segítségével. Optimalizálja a képminőséget, bontsa ki a szöveg koordinátáit, és javítsa a felhasználói élményt.
-type: docs
 weight: 30
 url: /hu/net/rendering-documents-images/
 ---

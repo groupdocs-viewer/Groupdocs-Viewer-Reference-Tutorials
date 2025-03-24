@@ -3,7 +3,6 @@ title: عرض ملفات بيانات Outlook (PST، OST)
 linktitle: عرض ملفات بيانات Outlook (PST، OST)
 second_title: GroupDocs.Viewer .NET API
 description: استكشف تقديم البرامج التعليمية لملفات بيانات Outlook (PST وOST) باستخدام GroupDocs.Viewer لـ .NET. اكتشف تقنيات إدارة المستندات الفعالة دون عناء.
-type: docs
 weight: 39
 url: /ar/net/rendering-outlook-data-files/
 ---

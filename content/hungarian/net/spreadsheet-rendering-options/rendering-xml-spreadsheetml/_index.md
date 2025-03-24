@@ -3,7 +3,6 @@ title: XML SpreadSheetML megjelenítése
 linktitle: XML SpreadSheetML megjelenítése
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel az XML SpreadSheetML fájlok zökkenőmentes megjelenítését különféle formátumokban a GroupDocs.Viewer for .NET segítségével. Könnyedén integrálható az alkalmazásaiba.
-type: docs
 weight: 16
 url: /hu/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 ---
@@ -83,7 +82,7 @@ Igen, a GroupDocs.Viewer a dokumentumformátumok széles skáláját támogatja,
 ### Testreszabhatom a renderelt dokumentumok megjelenését?
 Teljesen! A GroupDocs.Viewer különféle testreszabási lehetőségeket kínál, amelyek lehetővé teszik, hogy a kimenetet az Ön egyedi igényeihez igazítsa.
 ### Hol találhatok további támogatást és forrásokat?
- Meglátogatni a[GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) közösségi támogatásért és fedezze fel a[dokumentáció](https://reference.groupdocs.com/viewer/net/)részletes információkért.
+ Meglátogatni a[GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) közösségi támogatásért és fedezze fel a[dokumentáció](https://tutorials.groupdocs.com/viewer/net/)részletes információkért.
 ### Van ingyenes próbaverzió?
  Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.groupdocs.com/).
 ### Hogyan szerezhetek ideiglenes engedélyt?

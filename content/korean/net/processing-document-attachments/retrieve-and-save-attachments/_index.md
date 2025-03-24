@@ -3,7 +3,6 @@ title: 문서 첨부 파일 검색 및 저장
 linktitle: 문서 첨부 파일 검색 및 저장
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET 애플리케이션 내에서 문서 첨부 파일을 효율적으로 관리합니다. 번거로움 없이 첨부 파일을 검색하고 저장하세요.
-type: docs
 weight: 12
 url: /ko/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Console.WriteLine($"\nAttachments saved successfully.\nCheck output in {outputDi
 ### .NET용 GroupDocs.Viewer의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시 라이센스는 다음에서 취득할 수 있습니다.[이 링크](https://purchase.groupdocs.com/temporary-license/).
 ### .NET용 GroupDocs.Viewer에 대한 설명서는 어디서 찾을 수 있나요?
- 포괄적인 문서가 제공됩니다.[여기](https://reference.groupdocs.com/viewer/net/).
+ 포괄적인 문서가 제공됩니다.[여기](https://tutorials.groupdocs.com/viewer/net/).
 ### .NET용 GroupDocs.Viewer에 어떤 지원 옵션을 사용할 수 있나요?
  커뮤니티 포럼에서 도움을 구할 수 있습니다.[여기](https://forum.groupdocs.com/c/viewer/9).

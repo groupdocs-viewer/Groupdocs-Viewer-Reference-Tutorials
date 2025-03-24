@@ -3,7 +3,6 @@ title: Belgeleri Akıştan Yükle
 linktitle: Belgeleri Akıştan Yükle
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak akışlardan belgeleri sorunsuz bir şekilde nasıl yükleyeceğinizi öğrenin. .NET uygulamalarınızı güçlü belge görüntüleme yetenekleriyle geliştirin.
-type: docs
 weight: 12
 url: /tr/net/loading-documents/loading-document-stream/
 ---

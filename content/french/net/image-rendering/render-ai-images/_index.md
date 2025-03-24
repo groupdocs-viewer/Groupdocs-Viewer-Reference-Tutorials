@@ -3,7 +3,6 @@ title: Rendre des images IA
 linktitle: Rendre des images IA
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer facilement des images IA dans des applications .NET à l'aide de GroupDocs.Viewer pour .NET. Suivez notre tutoriel étape par étape pour une intégration transparente.
-type: docs
 weight: 10
 url: /fr/net/image-rendering/render-ai-images/
 ---

@@ -3,7 +3,6 @@ title: GroupDocs.Viewer Tutorials - Master Document Viewing Skills
 linktitle: GroupDocs.Viewer Tutorials
 additionalTitle: GroupDocs API References
 description: Explore GroupDocs.Viewer tutorials for comprehensive guidance on maximizing document viewing capabilities. Unlock its full potential today!
-type: docs
 weight: 11
 url: /
 is_root: true

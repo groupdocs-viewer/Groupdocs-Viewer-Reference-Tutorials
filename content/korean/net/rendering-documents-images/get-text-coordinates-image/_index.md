@@ -3,7 +3,6 @@ title: 이미지 렌더링을 위한 텍스트 좌표 가져오기
 linktitle: 이미지 렌더링을 위한 텍스트 좌표 가져오기
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 이미지 렌더링을 위한 텍스트 좌표를 추출하는 방법을 알아보세요. 문서 처리 능력을 손쉽게 향상시켜 보세요.
-type: docs
 weight: 12
 url: /ko/net/rendering-documents-images/get-text-coordinates-image/
 ---

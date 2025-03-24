@@ -3,7 +3,6 @@ title: Dostosuj jakość obrazu JPG w renderowanym pliku PDF
 linktitle: Dostosuj jakość obrazu JPG w renderowanym pliku PDF
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak dostosować jakość obrazu JPG w renderowanych dokumentach PDF za pomocą programu GroupDocs.Viewer dla platformy .NET. Popraw swoje wrażenia z przeglądania dokumentów.
-type: docs
 weight: 11
 url: /pl/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

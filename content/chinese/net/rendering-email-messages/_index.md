@@ -3,7 +3,6 @@ title: 呈现电子邮件消息
 linktitle: 呈现电子邮件消息
 second_title: GroupDocs.Viewer .NET API
 description: 了解 GroupDocs.Viewer for .NET 如何简化将电子邮件消息渲染为 PDF 的过程。了解如何有效地调整页面大小、设置日期时间格式以及重命名字段。
-type: docs
 weight: 27
 url: /zh/net/rendering-email-messages/
 ---

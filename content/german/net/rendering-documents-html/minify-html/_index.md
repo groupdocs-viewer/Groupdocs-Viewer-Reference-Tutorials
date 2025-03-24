@@ -3,7 +3,6 @@ title: Gerendertes HTML-Dokument minimieren
 linktitle: Gerendertes HTML-Dokument minimieren
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie HTML-Dokumente in .NET-Anwendungen mit GroupDocs.Viewer für .NET nahtlos rendern.
-type: docs
 weight: 11
 url: /de/net/rendering-documents-html/minify-html/
 ---

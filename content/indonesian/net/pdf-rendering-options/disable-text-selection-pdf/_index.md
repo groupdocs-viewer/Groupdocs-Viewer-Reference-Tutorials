@@ -3,7 +3,6 @@ title: Nonaktifkan Pemilihan Teks dalam PDF
 linktitle: Nonaktifkan Pemilihan Teks dalam PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menonaktifkan pemilihan teks dalam PDF menggunakan GroupDocs.Viewer untuk .NET. Ikuti panduan langkah demi langkah kami untuk integrasi yang lancar.
-type: docs
 weight: 13
 url: /id/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

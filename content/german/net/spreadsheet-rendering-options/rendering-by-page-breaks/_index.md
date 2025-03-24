@@ -3,7 +3,6 @@ title: Rendern durch Seitenumbrüche
 linktitle: Rendern durch Seitenumbrüche
 second_title: GroupDocs.Viewer .NET-API
 description: Entdecken Sie die Leistungsfähigkeit von GroupDocs.Viewer für .NET beim präzisen Rendern von Dokumenten. Folgen Sie unserer Schritt-für-Schritt-Anleitung zum Rendern nach Seitenumbrüchen.
-type: docs
 weight: 14
 url: /de/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

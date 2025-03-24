@@ -3,7 +3,6 @@ title: 禁用 PDF 中的字元分組
 linktitle: 禁用 PDF 中的字元分組
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 停用 PDF 中的字元分組。按照我們的逐步教學進行無縫文件渲染。
-type: docs
 weight: 11
 url: /zh-hant/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

@@ -3,7 +3,6 @@ title: Pagina's in document opnieuw rangschikken
 linktitle: Pagina's in document opnieuw rangschikken
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u pagina's in een document opnieuw kunt rangschikken met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze handleiding voor naadloos documentbeheer.
-type: docs
 weight: 19
 url: /nl/net/rendering-options/reorder-pages/
 ---

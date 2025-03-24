@@ -3,7 +3,6 @@ title: 使用原始页面大小渲染 PDF
 linktitle: 使用原始页面大小渲染 PDF
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 以原始页面大小呈现 PDF。按照我们的分步指南无缝集成此功能。
-type: docs
 weight: 17
 url: /zh/net/pdf-rendering-options/render-pdf-original-page-size/
 ---

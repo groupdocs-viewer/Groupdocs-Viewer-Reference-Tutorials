@@ -3,7 +3,6 @@ title: Representar cambios rastreados
 linktitle: Representar cambios rastreados
 second_title: API GroupDocs.Viewer .NET
 description: Descubra cómo representar cambios rastreados en documentos sin esfuerzo usando GroupDocs.Viewer para .NET. Mejore la eficiencia de su gestión de documentos.
-type: docs
 weight: 10
 url: /es/net/rendering-word-processing-documents/render-tracked-changes/
 ---

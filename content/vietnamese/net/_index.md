@@ -1,7 +1,6 @@
 ---
 title: Hướng dẫn toàn diện và ví dụ về GroupDocs.Viewer cho .NET
 linktitle: Hướng dẫn GroupDocs.Viewer cho .NET
-type: docs
 weight: 10
 url: /vi/net/
 description: Khám phá các hướng dẫn và ví dụ toàn diện để tích hợp GroupDocs.Viewer .NET vào ứng dụng của bạn. Tìm hiểu các kỹ thuật từng bước để quản lý tài liệu nâng cao.

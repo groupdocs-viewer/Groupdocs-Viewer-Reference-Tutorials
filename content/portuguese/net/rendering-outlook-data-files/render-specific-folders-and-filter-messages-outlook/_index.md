@@ -3,7 +3,6 @@ title: Renderizar pastas específicas e filtrar mensagens (Outlook)
 linktitle: Renderizar pastas específicas e filtrar mensagens (Outlook)
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar pastas específicas e filtrar mensagens no Outlook usando GroupDocs.Viewer for .NET. Simplifique o gerenciamento de documentos em aplicativos .NET.
-type: docs
 weight: 11
 url: /pt/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

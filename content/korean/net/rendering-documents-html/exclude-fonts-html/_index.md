@@ -3,7 +3,6 @@ title: 렌더링된 HTML에서 글꼴 제외
 linktitle: 렌더링된 HTML에서 글꼴 제외
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 렌더링된 HTML에서 글꼴을 제외하는 방법을 알아보세요. 원활한 문서 표시를 위해 이 단계별 가이드를 따르세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-documents-html/exclude-fonts-html/
 ---

@@ -3,7 +3,6 @@ title: 문서 로드
 linktitle: 문서 로드
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer .NET을 사용하여 문서를 효율적으로 로드하고 렌더링하는 방법을 알아보세요. 향상된 .NET 앱에 대한 로컬 디스크, 스트림 및 FTP 로딩 튜토리얼을 살펴보세요.
-type: docs
 weight: 20
 url: /ko/net/loading-documents/
 ---

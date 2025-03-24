@@ -3,7 +3,6 @@ title: Alternativ för PDF-rendering
 linktitle: Alternativ för PDF-rendering
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du optimerar PDF-visning med GroupDocs.Viewer .NET tutorials. Utforska PDF-renderingsalternativ som att justera bildkvalitet och inaktivera textval.
-type: docs
 weight: 38
 url: /sv/net/pdf-rendering-options/
 ---

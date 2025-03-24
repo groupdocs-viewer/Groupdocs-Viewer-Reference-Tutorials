@@ -3,7 +3,6 @@ title: Récupérer et imprimer les pièces jointes de documents
 linktitle: Récupérer et imprimer les pièces jointes de documents
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez les fonctionnalités de visualisation de documents dans vos applications .NET de manière transparente avec GroupDocs.Viewer for .NET. Récupérez et imprimez les pièces jointes des documents sans effort.
-type: docs
 weight: 11
 url: /fr/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

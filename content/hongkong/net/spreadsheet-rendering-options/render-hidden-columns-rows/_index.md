@@ -3,7 +3,6 @@ title: 渲染隱藏的列和列
 linktitle: 渲染隱藏的列和列
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 輕鬆解鎖電子表格中的隱藏資料。按照我們的逐步指南來揭示隱藏的列和行。
-type: docs
 weight: 13
 url: /zh-hant/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

@@ -3,7 +3,6 @@ title: Jegyzetek renderelése és időegységek beállítása (MS Project)
 linktitle: Jegyzetek renderelése és időegységek beállítása (MS Project)
 second_title: GroupDocs.Viewer .NET API
 description: Az MS Project dokumentumok elsajátítása a GroupDocs.Viewer for .NET segítségével. Rendereljen jegyzeteket, állítsa be az időegységeket és fedezze fel a különféle kimeneti formátumokat könnyedén.
-type: docs
 weight: 11
 url: /hu/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
 ---
@@ -87,6 +86,6 @@ Igen, a GroupDocs.Viewer for .NET támogatja a renderelést különböző formá
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Viewer for .NET számára?
  Látogatás[ez a link](https://purchase.groupdocs.com/temporary-license/) ideiglenes engedély megszerzéséhez.
 ### Hol találom a GroupDocs.Viewer for .NET dokumentációját?
- Lásd a dokumentációt[itt](https://reference.groupdocs.com/viewer/net/).
+ Lásd a dokumentációt[itt](https://tutorials.groupdocs.com/viewer/net/).
 ### Hol kérhetek támogatást, vagy hol tehetek fel kérdéseket a GroupDocs.Viewer for .NET-hez kapcsolódóan?
  Látogassa meg a támogatási fórumot[itt](https://forum.groupdocs.com/c/viewer/9).

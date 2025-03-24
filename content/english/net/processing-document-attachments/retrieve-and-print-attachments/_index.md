@@ -3,7 +3,6 @@ title: Retrieve and Print Document Attachments
 linktitle: Retrieve and Print Document Attachments
 second_title: GroupDocs.Viewer .NET API
 description: Integrate document viewing capabilities into your .NET applications seamlessly with GroupDocs.Viewer for .NET. Retrieve and print document attachments effortlessly.
-type: docs
 weight: 11
 url: /net/processing-document-attachments/retrieve-and-print-attachments/
 ---

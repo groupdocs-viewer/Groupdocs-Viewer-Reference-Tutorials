@@ -3,7 +3,6 @@ title: 문서 첨부 파일 검색 및 인쇄
 linktitle: 문서 첨부 파일 검색 및 인쇄
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 문서 보기 기능을 .NET 응용 프로그램에 원활하게 통합하세요. 문서 첨부 파일을 손쉽게 검색하고 인쇄하세요.
-type: docs
 weight: 11
 url: /ko/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

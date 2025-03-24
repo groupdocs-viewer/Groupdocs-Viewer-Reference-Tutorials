@@ -3,7 +3,6 @@ title: 在 CAD 工程图中渲染单一布局
 linktitle: 在 CAD 工程图中渲染单一布局
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 CAD 绘图中渲染单一布局。在 .NET 应用程序中无缝集成的简单步骤。
-type: docs
 weight: 14
 url: /zh/net/rendering-cad-drawings/render-single-layout-cad/
 ---

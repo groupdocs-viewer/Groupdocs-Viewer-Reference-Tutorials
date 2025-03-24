@@ -3,7 +3,6 @@ title: パスワードで保護されたドキュメントをロードする
 linktitle: パスワードで保護されたドキュメントをロードする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用すると、パスワードで保護されたドキュメントの表示を .NET アプリケーションに簡単に統合できます。シームレスに行うには、段階的なチュートリアルに従ってください。
-type: docs
 weight: 12
 url: /ja/net/advanced-loading/load-password-protected-document/
 ---

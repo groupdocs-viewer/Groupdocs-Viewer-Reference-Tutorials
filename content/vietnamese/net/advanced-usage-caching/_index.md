@@ -3,7 +3,6 @@ title: Cách sử dụng nâng cao (Bộ nhớ đệm)
 linktitle: Cách sử dụng nâng cao (Bộ nhớ đệm)
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá các kỹ thuật nâng cao để tối ưu hóa tốc độ xử lý tài liệu trong các ứng dụng .NET với GroupDocs.Viewer. Tìm hiểu cách bật bộ nhớ đệm để có hiệu suất nhanh hơn ngay bây giờ!
-type: docs
 weight: 22
 url: /vi/net/advanced-usage-caching/
 ---

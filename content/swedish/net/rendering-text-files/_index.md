@@ -3,7 +3,6 @@ title: Återge textfiler
 linktitle: Återge textfiler
 second_title: GroupDocs.Viewer .NET API
 description: Lås upp potentialen hos GroupDocs.Viewer för .NET med handledning om hur du renderar textfiler. Konvertera .txt-filer till olika format för förbättrad dokumenthantering.
-type: docs
 weight: 33
 url: /sv/net/rendering-text-files/
 ---

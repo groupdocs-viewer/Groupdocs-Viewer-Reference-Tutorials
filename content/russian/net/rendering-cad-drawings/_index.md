@@ -3,7 +3,6 @@ title: Рендеринг чертежей САПР
 linktitle: Рендеринг чертежей САПР
 second_title: GroupDocs.Viewer .NET API
 description: Ознакомьтесь с учебными пособиями по рендерингу чертежей САПР с помощью GroupDocs.Viewer для .NET. Научитесь улучшать приложения .NET с помощью удобной обработки файлов САПР.
-type: docs
 weight: 25
 url: /ru/net/rendering-cad-drawings/
 ---

@@ -3,7 +3,6 @@ title: Απόδοση επικεφαλίδων γραμμών και στηλώ�
 linktitle: Απόδοση επικεφαλίδων γραμμών και στηλών
 second_title: GroupDocs.Viewer .NET API
 description: Βελτιώστε την προβολή εγγράφων στο .NET! Μάθετε να αποδίδετε επικεφαλίδες σειρών και στηλών χρησιμοποιώντας το GroupDocs.Viewer για .NET. Εξερευνήστε εξόδους HTML, JPG, PNG και PDF.
-type: docs
 weight: 18
 url: /el/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

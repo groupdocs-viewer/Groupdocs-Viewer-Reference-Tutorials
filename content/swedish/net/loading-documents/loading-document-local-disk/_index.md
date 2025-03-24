@@ -3,7 +3,6 @@ title: Ladda dokument från lokal disk
 linktitle: Ladda dokument från lokal disk
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du sömlöst renderar dokument från din lokala disk med Groupdocs.Viewer för .NET. Förbättra dina .NET-applikationer med effektiva dokument.
-type: docs
 weight: 10
 url: /sv/net/loading-documents/loading-document-local-disk/
 ---

@@ -3,7 +3,6 @@ title: 페이지 나누기에 의한 렌더링
 linktitle: 페이지 나누기에 의한 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: 문서를 정밀하게 렌더링하는 .NET용 GroupDocs.Viewer의 강력한 기능을 살펴보세요. 페이지 나누기별 렌더링에 대한 단계별 튜토리얼을 따르십시오.
-type: docs
 weight: 14
 url: /ko/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

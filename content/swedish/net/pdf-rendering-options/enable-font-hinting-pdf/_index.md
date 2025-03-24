@@ -3,7 +3,6 @@ title: Aktivera teckensnittstips i PDF
 linktitle: Aktivera teckensnittstips i PDF
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du aktiverar teckensnittstips i PDF-dokument med GroupDocs.Viewer för .NET. Följ vår steg-för-steg handledning för sömlös integration.
-type: docs
 weight: 14
 url: /sv/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

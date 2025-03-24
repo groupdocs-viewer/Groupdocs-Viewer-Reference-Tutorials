@@ -3,7 +3,6 @@ title: Set Metered License
 linktitle: Set Metered License
 second_title: GroupDocs.Viewer .NET API
 description: Enhance your .NET applications with GroupDocs.Viewer for seamless document viewing. Easily integrate document rendering functionalities into your projects.
-type: docs
 weight: 12
 url: /net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 In conclusion, GroupDocs.Viewer for .NET provides a comprehensive solution for incorporating document viewing functionalities into your .NET applications. By following the outlined steps, you can easily set up a metered license and start leveraging the capabilities of GroupDocs.Viewer within your projects.
 ## FAQ's
 ### Q: Where can I find documentation for GroupDocs.Viewer for .NET?
-You can find the documentation [here](https://reference.groupdocs.com/viewer/net/).
+You can find the documentation [here](https://tutorials.groupdocs.com/viewer/net/).
 ### Q: Is there a free trial available for GroupDocs.Viewer for .NET?
 Yes, you can access the free trial [here](https://releases.groupdocs.com/).
 ### Q: How can I obtain temporary licenses for testing purposes?

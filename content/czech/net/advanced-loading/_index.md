@@ -3,7 +3,6 @@ title: Pokročilé možnosti načítání
 linktitle: Pokročilé možnosti načítání
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete své aplikace .NET pomocí výukových programů GroupDocs.Viewer for .NET. Naučte se specifikovat typy souborů, spravovat kódování, načítat dokumenty chráněné heslem a další.
-type: docs
 weight: 21
 url: /cs/net/advanced-loading/
 ---

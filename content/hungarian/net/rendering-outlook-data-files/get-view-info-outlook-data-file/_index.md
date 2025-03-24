@@ -3,7 +3,6 @@ title: Megtekintési információk megtekintése az Outlook adatfájlokhoz (PST,
 linktitle: Megtekintési információk megtekintése az Outlook adatfájlokhoz (PST, OST)
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel, hogyan nyerhet ki nézeti információkat az Outlook adatfájlokból (PST, OST) a GroupDocs.Viewer for .NET segítségével. Fokozatmentesen fokozza dokumentumkezelési képességeit.
-type: docs
 weight: 10
 url: /hu/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

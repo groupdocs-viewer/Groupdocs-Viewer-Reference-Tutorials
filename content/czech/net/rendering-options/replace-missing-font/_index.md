@@ -3,7 +3,6 @@ title: Nahradit chybějící písmo
 linktitle: Nahradit chybějící písmo
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak nahradit chybějící písma v dokumentech .NET bez námahy pomocí GroupDocs.Viewer. Zajistěte přesné vykreslování pomocí jednoduchých kroků.
-type: docs
 weight: 20
 url: /cs/net/rendering-options/replace-missing-font/
 ---

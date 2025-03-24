@@ -3,7 +3,6 @@ title: Egyetlen elrendezés renderelése CAD-rajzokban
 linktitle: Egyetlen elrendezés renderelése CAD-rajzokban
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg egyetlen elrendezést CAD-rajzokban a GroupDocs.Viewer for .NET segítségével. Egyszerű lépések a .NET-alkalmazásokba való zökkenőmentes integrációhoz.
-type: docs
 weight: 14
 url: /hu/net/rendering-cad-drawings/render-single-layout-cad/
 ---

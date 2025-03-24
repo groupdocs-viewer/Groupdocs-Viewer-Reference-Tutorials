@@ -3,7 +3,6 @@ title: Számok renderelése
 linktitle: Számok renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel a Groupdocs.Viewer for .NET erejét a Numbers-fájlok zökkenőmentes megjelenítésében. Könnyedén konvertálhat HTML, JPG, PNG és PDF formátumba.
-type: docs
 weight: 15
 url: /hu/net/spreadsheet-rendering-options/rendering-numbers/
 ---

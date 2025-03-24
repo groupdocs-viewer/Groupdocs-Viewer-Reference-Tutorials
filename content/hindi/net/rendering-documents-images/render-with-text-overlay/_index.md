@@ -3,7 +3,6 @@ title: प्रदर्शन के लिए टेक्स्ट ओवर
 linktitle: प्रदर्शन के लिए टेक्स्ट ओवरलेड के साथ प्रस्तुत करना
 second_title: GroupDocs.Viewer .NET API
 description: उन्नत उपयोगकर्ता अनुभव के लिए विभिन्न प्रारूपों का समर्थन करते हुए, GroupDocs.Viewer के साथ .NET अनुप्रयोगों में दस्तावेज़ों को निर्बाध रूप से प्रस्तुत करें।
-type: docs
 weight: 13
 url: /hi/net/rendering-documents-images/render-with-text-overlay/
 ---

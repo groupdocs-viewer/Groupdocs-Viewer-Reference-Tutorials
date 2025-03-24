@@ -3,7 +3,6 @@ title: Charger des documents à partir du flux
 linktitle: Charger des documents à partir du flux
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment charger de manière transparente des documents à partir de flux à l'aide de GroupDocs.Viewer pour .NET. Améliorez vos applications .NET avec de puissantes fonctionnalités de visualisation de documents.
-type: docs
 weight: 12
 url: /fr/net/loading-documents/loading-document-stream/
 ---

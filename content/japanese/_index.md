@@ -3,7 +3,6 @@ title: GroupDocs.Viewer チュートリアル - ドキュメント表示スキ�
 linktitle: GroupDocs.Viewer のチュートリアル
 additionalTitle: GroupDocs API リファレンス
 description: ドキュメント表示機能を最大限に活用するための包括的なガイダンスについては、GroupDocs.Viewer チュートリアルを参照してください。今すぐその可能性を最大限に引き出してください!
-type: docs
 weight: 11
 url: /ja/
 is_root: true

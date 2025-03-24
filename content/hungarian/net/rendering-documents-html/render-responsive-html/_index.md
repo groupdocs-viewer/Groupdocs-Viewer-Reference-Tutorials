@@ -3,7 +3,6 @@ title: Reszponzív HTML megjelenítése
 linktitle: Reszponzív HTML megjelenítése
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet reszponzív HTML-kódot előállítani a Groupdocs.Viewer for .NET segítségével, így biztosítva az optimális megtekintési élményt az eszközökön.
-type: docs
 weight: 13
 url: /hu/net/rendering-documents-html/render-responsive-html/
 ---

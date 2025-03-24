@@ -3,7 +3,6 @@ title: Załaduj dokumenty z dysku lokalnego
 linktitle: Załaduj dokumenty z dysku lokalnego
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak bezproblemowo renderować dokumenty z dysku lokalnego za pomocą Groupdocs.Viewer dla .NET. Ulepsz swoje aplikacje .NET dzięki wydajnemu dokumentowi.
-type: docs
 weight: 10
 url: /pl/net/loading-documents/loading-document-local-disk/
 ---

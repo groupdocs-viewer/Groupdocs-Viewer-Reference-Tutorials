@@ -3,7 +3,6 @@ title: ดึงและพิมพ์เอกสารแนบ
 linktitle: ดึงและพิมพ์เอกสารแนบ
 second_title: GroupDocs.Viewer .NET API
 description: ผสานรวมความสามารถในการดูเอกสารเข้ากับแอปพลิเคชัน .NET ของคุณอย่างราบรื่นด้วย GroupDocs.Viewer สำหรับ .NET ดึงและพิมพ์เอกสารแนบได้อย่างง่ายดาย
-type: docs
 weight: 11
 url: /th/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

@@ -3,7 +3,6 @@ title: Gelişmiş Yükleme Seçenekleri
 linktitle: Gelişmiş Yükleme Seçenekleri
 second_title: GroupDocs.Viewer .NET API'si
 description: .NET uygulamalarınızı GroupDocs.Viewer for .NET eğitimleriyle geliştirin. Dosya türlerini belirlemeyi, kodlamaları yönetmeyi, parola korumalı belgeleri yüklemeyi ve daha fazlasını öğrenin.
-type: docs
 weight: 21
 url: /tr/net/advanced-loading/
 ---

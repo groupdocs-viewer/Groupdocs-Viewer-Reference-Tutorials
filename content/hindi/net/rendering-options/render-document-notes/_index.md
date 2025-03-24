@@ -3,7 +3,6 @@ title: नोट्स के साथ दस्तावेज़ प्रस
 linktitle: नोट्स के साथ दस्तावेज़ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ दस्तावेज़ प्रस्तुत करना सीखें। आपके .NET अनुप्रयोगों में निर्बाध एकीकरण के लिए चरण-दर-चरण ट्यूटोरियल।
-type: docs
 weight: 14
 url: /hi/net/rendering-options/render-document-notes/
 ---

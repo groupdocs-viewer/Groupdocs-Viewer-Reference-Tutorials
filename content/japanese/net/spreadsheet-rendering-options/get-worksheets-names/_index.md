@@ -3,7 +3,6 @@ title: ワークシート名の取得
 linktitle: ワークシート名の取得
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET の魅力を体験してください – ドキュメントの表示をアプリケーションにシームレスに統合します。今すぐ無料トライアルを試してください!
-type: docs
 weight: 11
 url: /ja/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ foreach (Page page in viewInfo.Pages)
 ### 仮免許は取得できますか？
 確かに！訪問[このリンク](https://purchase.groupdocs.com/temporary-license/)仮免許を取得するためです。
 ### 利用可能な詳細なドキュメント リソースはありますか?
-絶対に！をチェックしてください[公式ドキュメント](https://reference.groupdocs.com/viewer/net/)詳細な情報とガイドについては、こちらをご覧ください。
+絶対に！をチェックしてください[公式ドキュメント](https://tutorials.groupdocs.com/viewer/net/)詳細な情報とガイドについては、こちらをご覧ください。

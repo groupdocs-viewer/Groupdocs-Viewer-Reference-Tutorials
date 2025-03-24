@@ -3,7 +3,6 @@ title: تقديم صور FODG وODG
 linktitle: تقديم صور FODG وODG
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور FODG وODG إلى HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لـ .NET. تعزيز التعامل مع المستندات الخاصة بك.
-type: docs
 weight: 15
 url: /ar/net/image-rendering/render-fodg-odg-images/
 ---

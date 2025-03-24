@@ -3,7 +3,6 @@ title: การแสดงผลเอกสารโครงการ Micros
 linktitle: การแสดงผลเอกสารโครงการ Microsoft
 second_title: GroupDocs.Viewer .NET API
 description: ดึงข้อมูลมุมมองสำหรับเอกสาร Microsoft Project ได้อย่างง่ายดายด้วย GroupDocs.Viewer สำหรับ .NET เพิ่มประสิทธิภาพการทำงานด้วยความสามารถในการเรนเดอร์ที่หลากหลาย
-type: docs
 weight: 40
 url: /th/net/rendering-ms-project-documents/
 ---

@@ -3,7 +3,6 @@ title: Επιλογές απόδοσης PDF
 linktitle: Επιλογές απόδοσης PDF
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να βελτιστοποιείτε την προβολή PDF με τους οδηγούς GroupDocs.Viewer .NET. Εξερευνήστε τις επιλογές απόδοσης PDF, όπως η προσαρμογή της ποιότητας της εικόνας και η απενεργοποίηση της επιλογής κειμένου.
-type: docs
 weight: 38
 url: /el/net/pdf-rendering-options/
 ---

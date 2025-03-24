@@ -3,7 +3,6 @@ title: 禁用 PDF 中的字体许可证验证
 linktitle: 禁用 PDF 中的字体许可证验证
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 解锁 .NET 中的无缝文档查看功能。以最小的依赖性轻松集成和自定义文档渲染。
-type: docs
 weight: 12
 url: /zh/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

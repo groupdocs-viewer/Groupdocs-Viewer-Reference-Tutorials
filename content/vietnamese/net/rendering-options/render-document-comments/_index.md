@@ -3,7 +3,6 @@ title: Kết xuất tài liệu có nhận xét
 linktitle: Kết xuất tài liệu có nhận xét
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tài liệu có nhận xét bằng GroupDocs.Viewer cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp liền mạch.
-type: docs
 weight: 13
 url: /vi/net/rendering-options/render-document-comments/
 ---

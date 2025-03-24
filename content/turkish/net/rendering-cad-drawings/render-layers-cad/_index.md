@@ -3,7 +3,6 @@ title: CAD Çizimlerinde Katmanları İşleme
 linktitle: CAD Çizimlerinde Katmanları İşleme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET ile CAD çizimlerini .NET uygulamalarında sorunsuz bir şekilde işleyin. Oluşturma seçeneklerini keşfedin, katmanları özelleştirin ve daha fazlasını yapın.
-type: docs
 weight: 13
 url: /tr/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ GroupDocs.Viewer for .NET'i kullanmaya başlamadan önce aşağıdaki önkoşull
 - C# programlama dilinin temel anlayışı.
 - Makinenizde .NET geliştirme ortamı kuruldu.
 -  .NET için GroupDocs.Viewer yüklü. Şuradan indirebilirsiniz[Burada](https://releases.groupdocs.com/viewer/net/).
--  Referans olarak bulunabilecek GroupDocs.Viewer for .NET belgelerine erişim[Burada](https://reference.groupdocs.com/viewer/net/).
+-  Referans olarak bulunabilecek GroupDocs.Viewer for .NET belgelerine erişim[Burada](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Ad Alanlarını İçe Aktar
 GroupDocs.Viewer for .NET'i kullanmaya başlamak için projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu adımları takip et:

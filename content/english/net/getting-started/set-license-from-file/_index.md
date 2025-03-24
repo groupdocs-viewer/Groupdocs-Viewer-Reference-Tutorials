@@ -3,7 +3,6 @@ title: Set License from File
 linktitle: Set License from File
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to integrate GroupDocs.Viewer for .NET into your applications effortlessly. Set license, view documents, and customize viewer appearance.
-type: docs
 weight: 10
 url: /net/getting-started/set-license-from-file/
 ---

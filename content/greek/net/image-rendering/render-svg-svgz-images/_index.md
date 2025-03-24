@@ -3,7 +3,6 @@ title: Απόδοση εικόνων SVG και SVGZ
 linktitle: Απόδοση εικόνων SVG και SVGZ
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε εικόνες SVG και SVGZ χρησιμοποιώντας το GroupDocs.Viewer για .NET. Μετατρέψτε τα διανυσματικά γραφικά σε HTML, JPG, PNG και PDF χωρίς κόπο.
-type: docs
 weight: 16
 url: /el/net/image-rendering/render-svg-svgz-images/
 ---

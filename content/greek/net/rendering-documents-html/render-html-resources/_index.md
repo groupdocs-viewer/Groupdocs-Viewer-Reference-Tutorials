@@ -3,7 +3,6 @@ title: Απόδοση με ενσωματωμένους ή εξωτερικού�
 linktitle: Απόδοση με ενσωματωμένους ή εξωτερικούς πόρους
 second_title: GroupDocs.Viewer .NET API
 description: Βελτιώστε την προβολή εγγράφων .NET με το GroupDocs.Viewer για απρόσκοπτη απόδοση. Ακολουθήστε το σεμινάριο μας για αποτελεσματική ενσωμάτωση και ανώτερη εμπειρία χρήστη.
-type: docs
 weight: 12
 url: /el/net/rendering-documents-html/render-html-resources/
 ---

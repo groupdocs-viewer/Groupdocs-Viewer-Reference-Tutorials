@@ -3,7 +3,6 @@ title: Ottieni informazioni sulla visualizzazione dei file di dati di Outlook (P
 linktitle: Ottieni informazioni sulla visualizzazione dei file di dati di Outlook (PST, OST)
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come estrarre le informazioni sulla visualizzazione dai file di dati di Outlook (PST, OST) utilizzando GroupDocs.Viewer per .NET. Migliora le tue capacità di gestione dei documenti senza sforzo.
-type: docs
 weight: 10
 url: /it/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

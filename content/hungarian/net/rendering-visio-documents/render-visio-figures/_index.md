@@ -3,7 +3,6 @@ title: Rendereljen Visio figurákat
 linktitle: Rendereljen Visio figurákat
 second_title: GroupDocs.Viewer .NET API
 description: Tanulja meg, hogyan jeleníthet meg Visio-figurákat a GroupDocs.Viewer for .NET használatával ebben az átfogó cikkben. Fokozza a dokumentummegtekintési képességeket .NET-alkalmazásaiban.
-type: docs
 weight: 10
 url: /hu/net/rendering-visio-documents/render-visio-figures/
 ---

@@ -3,7 +3,6 @@ title: 렌더링된 HTML 문서 축소
 linktitle: 렌더링된 HTML 문서 축소
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 .NET 응용 프로그램에서 HTML 문서를 원활하게 렌더링하는 방법을 알아보세요.
-type: docs
 weight: 11
 url: /ko/net/rendering-documents-html/minify-html/
 ---

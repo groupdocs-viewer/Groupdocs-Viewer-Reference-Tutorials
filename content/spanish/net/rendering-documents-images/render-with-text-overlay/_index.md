@@ -3,7 +3,6 @@ title: Renderizar con texto superpuesto para visualización
 linktitle: Renderizar con texto superpuesto para visualización
 second_title: API GroupDocs.Viewer .NET
 description: Procese documentos sin problemas en aplicaciones .NET con GroupDocs.Viewer, que admite varios formatos para mejorar la experiencia del usuario.
-type: docs
 weight: 13
 url: /es/net/rendering-documents-images/render-with-text-overlay/
 ---

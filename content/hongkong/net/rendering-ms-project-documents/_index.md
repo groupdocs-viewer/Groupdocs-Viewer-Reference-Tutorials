@@ -3,7 +3,6 @@ title: 渲染 Microsoft Project 文檔
 linktitle: 渲染 Microsoft Project 文檔
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 輕鬆擷取 Microsoft Project 文件的檢視資訊。透過多功能渲染功能提高工作效率。
-type: docs
 weight: 40
 url: /zh-hant/net/rendering-ms-project-documents/
 ---

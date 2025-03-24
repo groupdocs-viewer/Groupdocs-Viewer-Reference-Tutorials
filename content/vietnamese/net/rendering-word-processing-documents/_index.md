@@ -3,7 +3,6 @@ title: Hiển thị tài liệu xử lý văn bản
 linktitle: Hiển thị tài liệu xử lý văn bản
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị hiệu quả các thay đổi được theo dõi trong tài liệu xử lý Word bằng GroupDocs.Viewer cho .NET. Nâng cao kỹ năng quản lý tài liệu của bạn.
-type: docs
 weight: 36
 url: /vi/net/rendering-word-processing-documents/
 ---

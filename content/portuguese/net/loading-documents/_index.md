@@ -3,7 +3,6 @@ title: Carregando documentos
 linktitle: Carregando documentos
 second_title: API GroupDocs.Viewer .NET
 description: Descubra como carregar e renderizar documentos com eficiência usando GroupDocs.Viewer .NET. Explore tutoriais de carregamento de disco local, fluxo e FTP para aplicativos .NET aprimorados.
-type: docs
 weight: 20
 url: /pt/net/loading-documents/
 ---

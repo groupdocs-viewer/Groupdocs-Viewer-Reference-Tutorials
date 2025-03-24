@@ -3,7 +3,6 @@ title: レンダリング中に電子メールフィールドの名前を変更�
 linktitle: レンダリング中に電子メールフィールドの名前を変更する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してドキュメントの表示エクスペリエンスを強化します。電子メールをシームレスにレンダリングしてカスタマイズします。
-type: docs
 weight: 12
 url: /ja/net/rendering-email-messages/rename-email-fields/
 ---

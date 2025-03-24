@@ -3,7 +3,6 @@ title: Otočit a otočit stránky
 linktitle: Otočit a otočit stránky
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak integrovat Groupdocs.Viewer for .NET do vašich aplikací pro bezproblémové vykreslování, překlápění a otáčení dokumentů.
-type: docs
 weight: 12
 url: /cs/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ tomto tutoriálu se ponoříme do funkcí Groupdocs.Viewer pro .NET, konkrétně
 ## Předpoklady
 Než začneme, ujistěte se, že máte nastaveny následující předpoklady:
 ### Instalace Groupdocs.Viewer pro .NET
- Chcete-li používat Groupdocs.Viewer pro .NET, musíte balíček nainstalovat pomocí Správce balíčků NuGet. Podrobné pokyny k instalaci naleznete v[dokumentace](https://reference.groupdocs.com/viewer/net/).
+ Chcete-li používat Groupdocs.Viewer pro .NET, musíte balíček nainstalovat pomocí Správce balíčků NuGet. Podrobné pokyny k instalaci naleznete v[dokumentace](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importovat jmenné prostory
 Ujistěte se, že máte do projektu importovány potřebné jmenné prostory, abyste mohli efektivně využívat Groupdocs.Viewer pro .NET.

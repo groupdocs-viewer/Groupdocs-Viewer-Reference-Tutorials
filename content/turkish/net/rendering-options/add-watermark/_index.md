@@ -3,7 +3,6 @@ title: Belgeye Filigran Ekle
 linktitle: Belgeye Filigran Ekle
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak belgelere sorunsuz bir şekilde filigran eklemeyi öğrenin. Takip edilmesi kolay bu eğitimle belge güvenliğini ve markalamayı geliştirin.
-type: docs
 weight: 10
 url: /tr/net/rendering-options/add-watermark/
 ---

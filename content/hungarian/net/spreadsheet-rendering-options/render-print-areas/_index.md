@@ -3,7 +3,6 @@ title: Nyomtatási területek renderelése a GroupDocs.Viewer for .NET segítsé
 linktitle: Nyomtatási területek renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Fedezze fel a GroupDocs.Viewer for .NET alkalmazást, és könnyedén jelenítse meg a nyomtatási területeket különféle dokumentumformátumokban. Próbálja ki most az ingyenes próbaverziót! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /hu/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Gratulálunk! Sikeresen megtanulta, hogyan használhatja a GroupDocs.Viewer for .NET alkalmazást a nyomtatási területek megjelenítésére a dokumentumokban. Ez a hatékony eszköz új lehetőségeket nyit meg a dokumentumok megjelenítésében a .NET-alkalmazásokban.
 ## GYIK
 ### A GroupDocs.Viewer kompatibilis a különböző dokumentumformátumokkal?
- Igen, a GroupDocs.Viewer a dokumentumformátumok széles skáláját támogatja, beleértve a PDF, DOCX, XLSX stb. Utal[dokumentáció](https://reference.groupdocs.com/viewer/net/) a teljes listáért.
+ Igen, a GroupDocs.Viewer a dokumentumformátumok széles skáláját támogatja, beleértve a PDF, DOCX, XLSX stb. Utal[dokumentáció](https://tutorials.groupdocs.com/viewer/net/) a teljes listáért.
 ### Kipróbálhatom a GroupDocs.Viewer programot vásárlás előtt?
  Teljesen! Az eszközt ingyenes próbaverzióval fedezheti fel[itt](https://releases.groupdocs.com/).
 ### Hol találhatok támogatást vagy kérhetek segítséget bármilyen probléma esetén?

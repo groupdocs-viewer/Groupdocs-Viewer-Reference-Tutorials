@@ -3,7 +3,6 @@ title: Επιλογές απόδοσης
 linktitle: Επιλογές απόδοσης
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε χωρίς κόπο το GroupDocs.Viewer για .NET στις εφαρμογές σας με σεμινάρια για επιλογές απόδοσης, από την προσθήκη υδατογραφημάτων έως την προσαρμογή γραμματοσειρών.
-type: docs
 weight: 23
 url: /el/net/rendering-options/
 ---

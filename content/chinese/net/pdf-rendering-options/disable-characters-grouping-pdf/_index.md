@@ -3,7 +3,6 @@ title: 禁用 PDF 中的字符分组
 linktitle: 禁用 PDF 中的字符分组
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 禁用 PDF 中的字符分组。按照我们的分步教程进行无缝文档渲染。
-type: docs
 weight: 11
 url: /zh/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

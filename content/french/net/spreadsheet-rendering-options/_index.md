@@ -3,7 +3,6 @@ title: Options de rendu de feuille de calcul
 linktitle: Options de rendu de feuille de calcul
 second_title: API GroupDocs.Viewer .NET
 description: Améliorez sans effort la visualisation des documents dans .NET avec les didacticiels GroupDocs.Viewer. Apprenez à ajuster le débordement de texte, à afficher les lignes de grille, etc.
-type: docs
 weight: 37
 url: /fr/net/spreadsheet-rendering-options/
 ---

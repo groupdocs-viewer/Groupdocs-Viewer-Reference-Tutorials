@@ -3,7 +3,6 @@ title: Dostosuj przepełnienie tekstu w komórkach
 linktitle: Dostosuj przepełnienie tekstu w komórkach
 second_title: GroupDocs.Viewer API .NET
 description: Z łatwością zarządzaj przepełnieniem tekstu w dokumentach .NET za pomocą GroupDocs.Viewer. Zwiększ czytelność i wygodę użytkownika. Pobierz teraz bezpłatną wersję próbną.
-type: docs
 weight: 10
 url: /pl/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Teraz pomyślnie dostosowałeś przepełnienie tekstu w komórkach za pomocą Gr
 Podsumowując, GroupDocs.Viewer dla .NET upraszcza obsługę nadmiaru tekstu w komórkach, zapewniając, że Twoje dokumenty będą nie tylko funkcjonalne, ale także dopracowane wizualnie. Wykonując te czynności, możesz bez wysiłku poprawić wygodę użytkownika i czytelność dokumentów arkusza kalkulacyjnego.
 ## Często zadawane pytania
 ### 1. Czy mogę używać GroupDocs.Viewer dla .NET z dowolnym typem dokumentu?
- Tak, GroupDocs.Viewer dla .NET obsługuje szeroką gamę formatów dokumentów, w tym arkusze kalkulacyjne, prezentacje i inne. Patrz[dokumentacja](https://reference.groupdocs.com/viewer/net/) dla pełnej listy.
+ Tak, GroupDocs.Viewer dla .NET obsługuje szeroką gamę formatów dokumentów, w tym arkusze kalkulacyjne, prezentacje i inne. Patrz[dokumentacja](https://tutorials.groupdocs.com/viewer/net/) dla pełnej listy.
 ### 2. Czy dostępny jest bezpłatny okres próbny?
  Tak, możesz poznać możliwości GroupDocs.Viewer dla .NET, pobierając plik[bezpłatna wersja próbna](https://releases.groupdocs.com/).
 ### 3. Jak mogę uzyskać pomoc w przypadku jakichkolwiek problemów?

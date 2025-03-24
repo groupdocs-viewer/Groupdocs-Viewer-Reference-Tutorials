@@ -3,7 +3,6 @@ title: पेज ब्रेक द्वारा प्रतिपादन
 linktitle: पेज ब्रेक द्वारा प्रतिपादन
 second_title: GroupDocs.Viewer .NET API
 description: दस्तावेज़ों को सटीकता से प्रस्तुत करने में .NET के लिए GroupDocs.Viewer की शक्ति का अन्वेषण करें। पेज ब्रेक द्वारा रेंडरिंग के लिए हमारे चरण-दर-चरण ट्यूटोरियल का पालन करें।
-type: docs
 weight: 14
 url: /hi/net/spreadsheet-rendering-options/rendering-by-page-breaks/
 ---

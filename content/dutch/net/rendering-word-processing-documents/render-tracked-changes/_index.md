@@ -3,7 +3,6 @@ title: Geef bijgehouden wijzigingen weer
 linktitle: Geef bijgehouden wijzigingen weer
 second_title: GroupDocs.Viewer .NET-API
 description: Ontdek hoe u moeiteloos bijgehouden wijzigingen in documenten kunt weergeven met GroupDocs.Viewer voor .NET. Verbeter de efficiëntie van uw documentbeheer.
-type: docs
 weight: 10
 url: /nl/net/rendering-word-processing-documents/render-tracked-changes/
 ---

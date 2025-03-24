@@ -3,7 +3,6 @@ title: Nastavit časový limit načítání zdroje (pokročilé)
 linktitle: Nastavit časový limit načítání zdroje (pokročilé)
 second_title: GroupDocs.Viewer .NET API
 description: Zjistěte, jak efektivně nakonfigurovat časové limity načítání prostředků v GroupDocs.Viewer pro .NET. Vykreslování hlavního dokumentu s přesností a stabilitou.
-type: docs
 weight: 13
 url: /cs/net/advanced-loading/set-resource-loading-timeout/
 ---

@@ -3,7 +3,6 @@ title: تعطيل تجميع الأحرف في PDF
 linktitle: تعطيل تجميع الأحرف في PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تعطيل تجميع الأحرف في ملفات PDF باستخدام GroupDocs.Viewer لـ .NET. اتبع برنامجنا التعليمي خطوة بخطوة لعرض المستندات بسلاسة.
-type: docs
 weight: 11
 url: /ar/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

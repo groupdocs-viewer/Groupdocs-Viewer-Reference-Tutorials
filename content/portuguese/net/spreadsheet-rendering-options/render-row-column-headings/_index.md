@@ -3,7 +3,6 @@ title: Renderizar cabeçalhos de linhas e colunas
 linktitle: Renderizar cabeçalhos de linhas e colunas
 second_title: API GroupDocs.Viewer .NET
 description: Melhore a visualização de documentos em .NET! Aprenda a renderizar títulos de linhas e colunas usando GroupDocs.Viewer for .NET. Explore saídas HTML, JPG, PNG e PDF.
-type: docs
 weight: 18
 url: /pt/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

@@ -3,7 +3,6 @@ title: Memuat Dokumen
 linktitle: Memuat Dokumen
 second_title: GroupDocs.Viewer .NET API
 description: Temukan cara memuat dan merender dokumen secara efisien menggunakan GroupDocs.Viewer .NET. Jelajahi tutorial pemuatan disk lokal, streaming, dan FTP untuk aplikasi .NET yang ditingkatkan.
-type: docs
 weight: 20
 url: /id/net/loading-documents/
 ---

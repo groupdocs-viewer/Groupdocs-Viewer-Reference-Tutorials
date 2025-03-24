@@ -3,7 +3,6 @@ title: Opsi Rendering PDF
 linktitle: Opsi Rendering PDF
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengoptimalkan tampilan PDF dengan tutorial GroupDocs.Viewer .NET. Jelajahi opsi rendering PDF seperti menyesuaikan kualitas gambar dan menonaktifkan pemilihan teks.
-type: docs
 weight: 38
 url: /id/net/pdf-rendering-options/
 ---

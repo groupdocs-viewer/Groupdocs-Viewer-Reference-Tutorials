@@ -3,7 +3,6 @@ title: Kết xuất hình ảnh CMX
 linktitle: Kết xuất hình ảnh CMX
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách dễ dàng hiển thị hình ảnh CMX thành nhiều định dạng khác nhau bằng GroupDocs.Viewer cho .NET. Tăng cường quản lý tài liệu của bạn.
-type: docs
 weight: 13
 url: /vi/net/image-rendering/render-cmx-images/
 ---

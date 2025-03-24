@@ -3,7 +3,6 @@ title: Renderowanie dokumentów na obrazy
 linktitle: Renderowanie dokumentów na obrazy
 second_title: GroupDocs.Viewer API .NET
 description: Zapoznaj się z samouczkami dotyczącymi renderowania dokumentów na obrazy przy użyciu programu GroupDocs.Viewer dla platformy .NET. Zoptymalizuj jakość obrazu, wyodrębnij współrzędne tekstu i zwiększ wygodę użytkownika.
-type: docs
 weight: 30
 url: /pl/net/rendering-documents-images/
 ---

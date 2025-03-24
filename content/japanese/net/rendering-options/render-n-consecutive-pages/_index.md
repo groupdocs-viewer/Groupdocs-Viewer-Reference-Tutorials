@@ -3,7 +3,6 @@ title: N 連続ページをレンダリングする
 linktitle: N 連続ページをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET をアプリケーションに統合して、連続する N ページからなるドキュメントを簡単にレンダリングする方法を学びます。
-type: docs
 weight: 16
 url: /ja/net/rendering-options/render-n-consecutive-pages/
 ---

@@ -3,7 +3,6 @@ title: Rendereljen HTML-t felhasználó által meghatározott margókkal
 linktitle: Rendereljen HTML-t felhasználó által meghatározott margókkal
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan jeleníthet meg HTML-t egyéni margókkal a .NET-ben a GroupDocs.Viewer segítségével. Fokozatmentesen javíthatja a dokumentum megjelenítését.
-type: docs
 weight: 11
 url: /hu/net/rendering-web-documents/render-html-margins/
 ---

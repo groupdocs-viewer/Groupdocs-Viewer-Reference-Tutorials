@@ -3,7 +3,6 @@ title: แทนที่แบบอักษรที่หายไป
 linktitle: แทนที่แบบอักษรที่หายไป
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีแทนที่แบบอักษรที่หายไปในเอกสาร .NET ได้อย่างง่ายดายโดยใช้ GroupDocs.Viewer รับประกันการเรนเดอร์ที่แม่นยำด้วยขั้นตอนง่ายๆ
-type: docs
 weight: 20
 url: /th/net/rendering-options/replace-missing-font/
 ---

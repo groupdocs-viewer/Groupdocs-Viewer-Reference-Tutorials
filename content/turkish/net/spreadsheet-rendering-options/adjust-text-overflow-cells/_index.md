@@ -3,7 +3,6 @@ title: Hücrelerdeki Metin Taşmasını Ayarlama
 linktitle: Hücrelerdeki Metin Taşmasını Ayarlama
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer ile .NET belgelerindeki metin taşmasını zahmetsizce yönetin. Okunabilirliği ve kullanıcı deneyimini geliştirin. Şimdi ücretsiz deneme sürümünü indirin.
-type: docs
 weight: 10
 url: /tr/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Artık GroupDocs.Viewer for .NET'i kullanarak hücrelerdeki metin taşmasını b
 Sonuç olarak, GroupDocs.Viewer for .NET, hücrelerdeki metin taşmasını yönetme görevini basitleştirerek belgelerinizin yalnızca işlevsel değil, aynı zamanda görsel olarak da parlak olmasını sağlar. Bu adımlarla elektronik tablo belgelerinizin kullanıcı deneyimini ve okunabilirliğini zahmetsizce artırabilirsiniz.
 ## SSS
 ### 1. GroupDocs.Viewer for .NET'i herhangi bir belge türüyle kullanabilir miyim?
- Evet, GroupDocs.Viewer for .NET; e-tablolar, sunumlar ve daha fazlasını içeren çok çeşitli belge formatlarını destekler. Bakın[dokümantasyon](https://reference.groupdocs.com/viewer/net/) tam liste için.
+ Evet, GroupDocs.Viewer for .NET; e-tablolar, sunumlar ve daha fazlasını içeren çok çeşitli belge formatlarını destekler. Bakın[dokümantasyon](https://tutorials.groupdocs.com/viewer/net/) tam liste için.
 ### 2. Ücretsiz deneme mevcut mu?
  Evet, GroupDocs.Viewer for .NET'in özelliklerini indirerek keşfedebilirsiniz.[ücretsiz deneme](https://releases.groupdocs.com/).
 ### 3. Herhangi bir konuda nasıl destek alabilirim?

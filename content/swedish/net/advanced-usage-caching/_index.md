@@ -3,7 +3,6 @@ title: Avancerad användning (cachelagring)
 linktitle: Avancerad användning (cachelagring)
 second_title: GroupDocs.Viewer .NET API
 description: Upptäck avancerade tekniker för att optimera dokumentbehandlingshastigheten i .NET-applikationer med GroupDocs.Viewer. Lär dig hur du aktiverar cachning för snabbare prestanda nu!
-type: docs
 weight: 22
 url: /sv/net/advanced-usage-caching/
 ---

@@ -3,7 +3,6 @@ title: Rejtett oszlopok és sorok megjelenítése
 linktitle: Rejtett oszlopok és sorok megjelenítése
 second_title: GroupDocs.Viewer .NET API
 description: A GroupDocs.Viewer for .NET segítségével könnyedén feloldhatja a rejtett adatokat a táblázatokban. Kövesse lépésenkénti útmutatónkat a rejtett oszlopok és sorok felfedéséhez.
-type: docs
 weight: 13
 url: /hu/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

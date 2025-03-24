@@ -3,7 +3,6 @@ title: Töltsön be dokumentumokat a helyi lemezről
 linktitle: Töltsön be dokumentumokat a helyi lemezről
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet zökkenőmentesen előállítani dokumentumokat a helyi lemezről a Groupdocs.Viewer for .NET segítségével. Bővítse .NET-alkalmazásait hatékony dokumentumokkal.
-type: docs
 weight: 10
 url: /hu/net/loading-documents/loading-document-local-disk/
 ---

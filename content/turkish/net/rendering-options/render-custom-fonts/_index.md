@@ -3,7 +3,6 @@ title: Özel Yazı Tipleriyle Oluşturma
 linktitle: Özel Yazı Tipleriyle Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak özel yazı tiplerine sahip belgeleri nasıl oluşturacağınızı öğrenin. Görsel sunumları zahmetsizce geliştirin.
-type: docs
 weight: 18
 url: /tr/net/rendering-options/render-custom-fonts/
 ---

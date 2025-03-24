@@ -3,7 +3,6 @@ title: Formats CAO spécifiques au rendu (CF2)
 linktitle: Formats CAO spécifiques au rendu (CF2)
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer des formats CAO spécifiques tels que CF2 en HTML, JPG, PNG et PDF à l'aide de Groupdocs.Viewer pour .NET.
-type: docs
 weight: 12
 url: /fr/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

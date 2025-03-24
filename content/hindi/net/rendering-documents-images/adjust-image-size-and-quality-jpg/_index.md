@@ -3,7 +3,6 @@ title: छवि आकार और गुणवत्ता समायोज
 linktitle: छवि आकार और गुणवत्ता समायोजित करें (जेपीजी)
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए Groupdocs.Viewer का उपयोग करके JPEG प्रारूप में छवि आकार और गुणवत्ता को अनुकूलित करना सीखें। अपने दस्तावेज़ देखने के अनुभव को बेहतर बनाएँ।
-type: docs
 weight: 11
 url: /hi/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---

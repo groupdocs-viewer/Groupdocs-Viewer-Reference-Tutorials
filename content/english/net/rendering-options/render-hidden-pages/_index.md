@@ -3,7 +3,6 @@ title: Render Hidden Pages
 linktitle: Render Hidden Pages
 second_title: GroupDocs.Viewer .NET API
 description: Enhance your .NET application with GroupDocs.Viewer for seamless document rendering. Follow our step-by-step guide to render hidden pages effortlessly.
-type: docs
 weight: 15
 url: /net/rendering-options/render-hidden-pages/
 ---

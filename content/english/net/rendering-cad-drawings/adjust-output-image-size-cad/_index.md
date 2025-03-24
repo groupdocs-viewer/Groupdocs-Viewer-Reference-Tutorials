@@ -3,7 +3,6 @@ title: Adjust Output Image Size for CAD Drawings
 linktitle: Adjust Output Image Size for CAD Drawings
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to adjust output image size for CAD drawings using GroupDocs.Viewer for .NET. Enhance visibility and usability effortlessly.
-type: docs
 weight: 15
 url: /net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---
@@ -59,6 +58,6 @@ Yes, GroupDocs.Viewer for .NET is compatible with multiple versions of the .NET 
 ### Are there any licensing options available for GroupDocs.Viewer for .NET?
 Yes, you can explore different licensing options, including temporary licenses and commercial licenses, to suit your needs.
 ### Can I customize the output format of rendered documents?
-Absolutely, GroupDocs.Viewer for .NET offers various customization options, allowing you to tailor the output format according to your preferences.
+Absolutely, GroupDocs.Viewer for .NET offers various customization options, allowing you to tailor the output format according to your ptutorialss.
 ### Where can I find additional support or assistance with GroupDocs.Viewer for .NET?
 You can visit the GroupDocs.Viewer forum [here](https://forum.groupdocs.com/c/viewer/9) to get support, ask questions, and engage with the community.

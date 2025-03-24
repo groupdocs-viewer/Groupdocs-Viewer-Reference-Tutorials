@@ -3,7 +3,6 @@ title: รับชื่อแผ่นงาน
 linktitle: รับชื่อแผ่นงาน
 second_title: GroupDocs.Viewer .NET API
 description: สำรวจความมหัศจรรย์ของ GroupDocs.Viewer สำหรับ .NET – ผสานรวมการดูเอกสารเข้ากับแอปพลิเคชันของคุณได้อย่างราบรื่น ลองทดลองใช้ฟรีทันที!
-type: docs
 weight: 11
 url: /th/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ foreach (Page page in viewInfo.Pages)
 ### ฉันสามารถขอรับใบอนุญาตชั่วคราวได้หรือไม่?
  แน่นอน! เยี่ยม[ลิงค์นี้](https://purchase.groupdocs.com/temporary-license/) เพื่อรับใบอนุญาตชั่วคราวของคุณ
 ### มีแหล่งข้อมูลเอกสารโดยละเอียดหรือไม่?
- อย่างแน่นอน! ตรวจสอบ[เอกสารอย่างเป็นทางการ](https://reference.groupdocs.com/viewer/net/) สำหรับข้อมูลเชิงลึกและคำแนะนำ
+ อย่างแน่นอน! ตรวจสอบ[เอกสารอย่างเป็นทางการ](https://tutorials.groupdocs.com/viewer/net/) สำหรับข้อมูลเชิงลึกและคำแนะนำ

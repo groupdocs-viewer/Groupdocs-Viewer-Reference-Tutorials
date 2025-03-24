@@ -3,7 +3,6 @@ title: 替换丢失的字体
 linktitle: 替换丢失的字体
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer 轻松替换 .NET 文档中缺失的字体。通过简单的步骤确保准确的渲染。
-type: docs
 weight: 20
 url: /zh/net/rendering-options/replace-missing-font/
 ---

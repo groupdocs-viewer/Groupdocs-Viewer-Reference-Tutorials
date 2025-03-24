@@ -3,7 +3,6 @@ title: Vykreslování obrázků TGA
 linktitle: Vykreslování obrázků TGA
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak bez námahy vykreslovat obrázky TGA v aplikacích .NET pomocí GroupDocs.Viewer. Vylepšete své možnosti vykreslování obrázků.
-type: docs
 weight: 17
 url: /cs/net/image-rendering/render-tga-images/
 ---

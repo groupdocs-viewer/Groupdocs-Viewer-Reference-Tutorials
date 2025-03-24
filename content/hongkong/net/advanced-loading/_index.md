@@ -3,7 +3,6 @@ title: 進階載入選項
 linktitle: 進階載入選項
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer for .NET 教學增強您的 .NET 應用程式。學習指定文件類型、管理編碼、載入受密碼保護的文件等等。
-type: docs
 weight: 21
 url: /zh-hant/net/advanced-loading/
 ---

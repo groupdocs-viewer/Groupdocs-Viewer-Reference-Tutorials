@@ -3,7 +3,6 @@ title: 调整渲染 PDF 中的 JPG 图像质量
 linktitle: 调整渲染 PDF 中的 JPG 图像质量
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 调整渲染的 PDF 文档中的 JPG 图像质量。增强您的文档查看体验。
-type: docs
 weight: 11
 url: /zh/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

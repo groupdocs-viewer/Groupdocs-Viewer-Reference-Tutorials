@@ -3,7 +3,6 @@ title: 숨겨진 페이지 렌더링
 linktitle: 숨겨진 페이지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: 원활한 문서 렌더링을 위해 GroupDocs.Viewer를 사용하여 .NET 애플리케이션을 강화하세요. 숨겨진 페이지를 쉽게 렌더링하려면 단계별 가이드를 따르세요.
-type: docs
 weight: 15
 url: /ko/net/rendering-options/render-hidden-pages/
 ---

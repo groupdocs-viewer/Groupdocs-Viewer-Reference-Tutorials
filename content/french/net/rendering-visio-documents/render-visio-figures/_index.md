@@ -3,7 +3,6 @@ title: Rendu des figures Visio
 linktitle: Rendu des figures Visio
 second_title: API GroupDocs.Viewer .NET
 description: Apprenez à restituer des figures Visio à l'aide de GroupDocs.Viewer pour .NET avec ce document complet. Améliorez les capacités de visualisation de documents dans vos applications .NET.
-type: docs
 weight: 10
 url: /fr/net/rendering-visio-documents/render-visio-figures/
 ---

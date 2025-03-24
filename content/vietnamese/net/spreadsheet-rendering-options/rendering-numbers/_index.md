@@ -3,7 +3,6 @@ title: Kết xuất số
 linktitle: Kết xuất số
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá sức mạnh của Groupdocs.Viewer dành cho .NET trong việc hiển thị các tệp Numbers một cách liền mạch. Chuyển đổi sang HTML, JPG, PNG và PDF một cách dễ dàng.
-type: docs
 weight: 15
 url: /vi/net/spreadsheet-rendering-options/rendering-numbers/
 ---

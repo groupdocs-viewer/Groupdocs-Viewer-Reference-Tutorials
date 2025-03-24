@@ -3,7 +3,6 @@ title: Load Documents from Stream
 linktitle: Load Documents from Stream
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to seamlessly load documents from streams using GroupDocs.Viewer for .NET. Enhance your .NET applications with powerful document viewing capabilities.
-type: docs
 weight: 12
 url: /net/loading-documents/loading-document-stream/
 ---

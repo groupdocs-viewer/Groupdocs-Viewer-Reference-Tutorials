@@ -3,7 +3,6 @@ title: PDF でフォントヒントを有効にする
 linktitle: PDF でフォントヒントを有効にする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して PDF ドキュメントでフォント ヒンティングを有効にする方法を学びます。シームレスな統合については、段階的なチュートリアルに従ってください。
-type: docs
 weight: 14
 url: /ja/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

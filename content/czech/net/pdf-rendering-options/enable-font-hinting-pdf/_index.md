@@ -3,7 +3,6 @@ title: Povolit nápovědu písem v PDF
 linktitle: Povolit nápovědu písem v PDF
 second_title: GroupDocs.Viewer .NET API
 description: Zjistěte, jak povolit nápovědu písem v dokumentech PDF pomocí GroupDocs.Viewer pro .NET. Postupujte podle našeho podrobného návodu pro bezproblémovou integraci.
-type: docs
 weight: 14
 url: /cs/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

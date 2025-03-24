@@ -3,7 +3,6 @@ title: Рендеринг областей печати с помощью GroupD
 linktitle: Рендеринг областей печати
 second_title: GroupDocs.Viewer .NET API
 description: Исследуйте GroupDocs.Viewer для .NET и легко визуализируйте области печати в различных форматах документов. Попробуйте бесплатную пробную версию прямо сейчас! #GroupDocs.Просмотрщик
-type: docs
 weight: 17
 url: /ru/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Поздравляем! Вы успешно научились использовать GroupDocs.Viewer для .NET для отображения областей печати в ваших документах. Этот мощный инструмент открывает новые возможности для рендеринга документов в ваших .NET-приложениях.
 ## Часто задаваемые вопросы
 ### Совместим ли GroupDocs.Viewer с различными форматами документов?
- Да, GroupDocs.Viewer поддерживает широкий спектр форматов документов, включая PDF, DOCX, XLSX и другие. Обратитесь к[документация](https://reference.groupdocs.com/viewer/net/) для полного списка.
+ Да, GroupDocs.Viewer поддерживает широкий спектр форматов документов, включая PDF, DOCX, XLSX и другие. Обратитесь к[документация](https://tutorials.groupdocs.com/viewer/net/) для полного списка.
 ### Могу ли я попробовать GroupDocs.Viewer перед покупкой?
  Абсолютно! Вы можете изучить этот инструмент, воспользовавшись бесплатной пробной версией.[здесь](https://releases.groupdocs.com/).
 ### Где я могу найти поддержку или обратиться за помощью по любым вопросам?

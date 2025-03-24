@@ -3,7 +3,6 @@ title: Рендеринг линий сетки
 linktitle: Рендеринг линий сетки
 second_title: GroupDocs.Viewer .NET API
 description: Улучшите визуализацию документов с помощью GroupDocs.Viewer для .NET. Легко визуализируйте линии сетки. Попробуйте бесплатную пробную версию прямо сейчас! #ГрупповыеДокументы #Просмотрщик
-type: docs
 weight: 12
 url: /ru/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ viewer.View(options, 1, 2, 3);
 ### Доступны ли временные лицензии для GroupDocs.Viewer для .NET?
  Да, вы можете получить[временная лицензия](https://purchase.groupdocs.com/temporary-license/) для GroupDocs.Viewer для .NET.
 ### Могу ли я найти подробную документацию по GroupDocs.Viewer для .NET?
- Абсолютно! Обратитесь к[официальная документация](https://reference.groupdocs.com/viewer/net/) для получения подробной информации об использовании GroupDocs.Viewer для .NET.
+ Абсолютно! Обратитесь к[официальная документация](https://tutorials.groupdocs.com/viewer/net/) для получения подробной информации об использовании GroupDocs.Viewer для .NET.
 ### Где я могу скачать последнюю версию GroupDocs.Viewer для .NET?
  Загрузите библиотеку с сайта[официальная страница релиза](https://releases.groupdocs.com/viewer/net/).

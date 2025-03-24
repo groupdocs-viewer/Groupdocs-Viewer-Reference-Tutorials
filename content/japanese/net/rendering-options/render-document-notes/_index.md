@@ -3,7 +3,6 @@ title: メモ付きドキュメントのレンダリング
 linktitle: メモ付きドキュメントのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してメモ付きドキュメントをレンダリングする方法を学びます。 .NET アプリケーションにシームレスに統合するためのステップバイステップのチュートリアル。
-type: docs
 weight: 14
 url: /ja/net/rendering-options/render-document-notes/
 ---

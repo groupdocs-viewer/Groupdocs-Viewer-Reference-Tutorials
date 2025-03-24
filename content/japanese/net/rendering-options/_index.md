@@ -3,7 +3,6 @@ title: レンダリングオプション
 linktitle: レンダリングオプション
 second_title: GroupDocs.Viewer .NET API
 description: 透かしの追加からフォントのカスタマイズまで、レンダリング オプションに関するチュートリアルを利用して、GroupDocs.Viewer for .NET をアプリケーションに簡単に統合できます。
-type: docs
 weight: 23
 url: /ja/net/rendering-options/
 ---

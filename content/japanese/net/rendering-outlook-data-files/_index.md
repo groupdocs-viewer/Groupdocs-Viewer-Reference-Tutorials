@@ -3,7 +3,6 @@ title: Outlook データ ファイル (PST、OST) のレンダリング
 linktitle: Outlook データ ファイル (PST、OST) のレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して Outlook データ ファイル (PST、OST) をレンダリングするチュートリアルをご覧ください。効率的な文書管理テクニックを簡単に発見できます。
-type: docs
 weight: 39
 url: /ja/net/rendering-outlook-data-files/
 ---

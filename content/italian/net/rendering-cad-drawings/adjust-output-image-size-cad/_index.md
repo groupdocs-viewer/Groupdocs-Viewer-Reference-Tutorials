@@ -3,7 +3,6 @@ title: Regola le dimensioni dell'immagine di output per i disegni CAD
 linktitle: Regola le dimensioni dell'immagine di output per i disegni CAD
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come regolare le dimensioni dell'immagine di output per i disegni CAD utilizzando GroupDocs.Viewer per .NET. Migliora la visibilità e l'usabilità senza sforzo.
-type: docs
 weight: 15
 url: /it/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

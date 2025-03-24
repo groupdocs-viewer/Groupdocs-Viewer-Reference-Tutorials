@@ -3,7 +3,6 @@ title: Sesuaikan Kualitas Gambar JPG dalam PDF yang Dirender
 linktitle: Sesuaikan Kualitas Gambar JPG dalam PDF yang Dirender
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menyesuaikan kualitas gambar JPG dalam dokumen PDF yang dirender menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan pengalaman melihat dokumen Anda.
-type: docs
 weight: 11
 url: /id/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

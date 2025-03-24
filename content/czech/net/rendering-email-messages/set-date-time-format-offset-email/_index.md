@@ -3,7 +3,6 @@ title: Nastavit formát data a času a posun časového pásma (e-mail)
 linktitle: Nastavit formát data a času a posun časového pásma (e-mail)
 second_title: GroupDocs.Viewer .NET API
 description: Integrujte GroupDocs.Viewer for .NET hladce do svých aplikací a získáte výkonné možnosti prohlížení dokumentů. Vylepšete uživatelskou zkušenost pomocí přizpůsobitelných možností.
-type: docs
 weight: 11
 url: /cs/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

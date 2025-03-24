@@ -3,7 +3,6 @@ title: 检索并保存文档附件
 linktitle: 检索并保存文档附件
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 有效管理 .NET 应用程序中的文档附件。轻松检索和保存附件。
-type: docs
 weight: 12
 url: /zh/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Console.WriteLine($"\nAttachments saved successfully.\nCheck output in {outputDi
 ### 如何获取 GroupDocs.Viewer for .NET 的临时许可证？
 临时许可证可以从[这个链接](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪里可以找到 GroupDocs.Viewer for .NET 的文档？
-提供全面的文档[这里](https://reference.groupdocs.com/viewer/net/).
+提供全面的文档[这里](https://tutorials.groupdocs.com/viewer/net/).
 ### GroupDocs.Viewer for .NET 提供哪些支持选项？
 您可以从社区论坛寻求帮助[这里](https://forum.groupdocs.com/c/viewer/9).

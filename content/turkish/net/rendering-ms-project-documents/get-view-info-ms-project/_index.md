@@ -3,7 +3,6 @@ title: Microsoft Project Belgeleri için Görüntüleme Bilgilerini Alın
 linktitle: Microsoft Project Belgeleri için Görüntüleme Bilgilerini Alın
 second_title: GroupDocs.Viewer .NET API'si
 description: Microsoft Project belgelerinin görünüm bilgilerini zahmetsizce almak için Groupdocs.Viewer for .NET'ten yararlanmaya ilişkin kapsamlı öğreticiyi keşfedin.
-type: docs
 weight: 10
 url: /tr/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

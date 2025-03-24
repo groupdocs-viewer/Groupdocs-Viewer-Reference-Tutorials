@@ -3,7 +3,6 @@ title: Λάβετε συντεταγμένες κειμένου για απόδ�
 linktitle: Λάβετε συντεταγμένες κειμένου για απόδοση εικόνας
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να εξάγετε συντεταγμένες κειμένου για απόδοση εικόνας χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε τις δυνατότητες επεξεργασίας εγγράφων σας χωρίς κόπο.
-type: docs
 weight: 12
 url: /el/net/rendering-documents-images/get-text-coordinates-image/
 ---

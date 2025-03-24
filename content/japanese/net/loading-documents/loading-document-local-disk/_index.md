@@ -3,7 +3,6 @@ title: ローカルディスクからドキュメントをロードする
 linktitle: ローカルディスクからドキュメントをロードする
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を使用して、ローカル ディスクからドキュメントをシームレスにレンダリングする方法を学びます。効率的なドキュメントで .NET アプリケーションを強化します。
-type: docs
 weight: 10
 url: /ja/net/loading-documents/loading-document-local-disk/
 ---

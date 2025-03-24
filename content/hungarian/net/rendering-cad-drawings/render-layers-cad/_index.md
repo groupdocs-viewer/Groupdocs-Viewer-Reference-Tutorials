@@ -3,7 +3,6 @@ title: Rétegek renderelése CAD rajzokban
 linktitle: Rétegek renderelése CAD rajzokban
 second_title: GroupDocs.Viewer .NET API
 description: CAD-rajzok zökkenőmentes megjelenítése .NET-alkalmazásokban a GroupDocs.Viewer for .NET segítségével. Fedezze fel a megjelenítési lehetőségeket, szabja testre a rétegeket és sok mást.
-type: docs
 weight: 13
 url: /hu/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ Mielőtt belevágna a GroupDocs.Viewer for .NET használatába, győződjön meg
 - C# programozási nyelv alapvető ismerete.
 - .NET fejlesztői környezet a gépén.
 -  A GroupDocs.Viewer for .NET telepítve. Letöltheti innen[itt](https://releases.groupdocs.com/viewer/net/).
--  Hozzáférés a GroupDocs.Viewer for .NET dokumentációjához referenciaként, amely megtalálható[itt](https://reference.groupdocs.com/viewer/net/).
+-  Hozzáférés a GroupDocs.Viewer for .NET dokumentációjához referenciaként, amely megtalálható[itt](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Névterek importálása
 A GroupDocs.Viewer for .NET használatának megkezdéséhez importálnia kell a szükséges névtereket a projektbe. Kovesd ezeket a lepeseket:

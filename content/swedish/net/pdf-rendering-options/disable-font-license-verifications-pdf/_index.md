@@ -3,7 +3,6 @@ title: Inaktivera teckensnittslicensverifieringar i PDF
 linktitle: Inaktivera teckensnittslicensverifieringar i PDF
 second_title: GroupDocs.Viewer .NET API
 description: Lås upp sömlösa dokumentvisningsmöjligheter i ditt .NET med GroupDocs.Viewer för .NET. Integrera och anpassa dokumentåtergivningen enkelt med minimala beroenden.
-type: docs
 weight: 12
 url: /sv/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

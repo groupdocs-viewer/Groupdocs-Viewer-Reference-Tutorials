@@ -3,7 +3,6 @@ title: Dapatkan Nama Lembar Kerja
 linktitle: Dapatkan Nama Lembar Kerja
 second_title: GroupDocs.Viewer .NET API
 description: Jelajahi keajaiban GroupDocs.Viewer untuk .NET – integrasikan tampilan dokumen dengan mulus ke dalam aplikasi Anda. Coba uji coba gratis sekarang!
-type: docs
 weight: 11
 url: /id/net/spreadsheet-rendering-options/get-worksheets-names/
 ---
@@ -63,4 +62,4 @@ Sangat! GroupDocs.Viewer mendukung berbagai format dokumen, termasuk PDF, Micros
 ### Bisakah saya mendapatkan lisensi sementara?
  Tentu! Mengunjungi[Link ini](https://purchase.groupdocs.com/temporary-license/) untuk mendapatkan lisensi sementara Anda.
 ### Apakah tersedia sumber dokumentasi terperinci?
- Sangat! Lihat[dokumentasi resmi](https://reference.groupdocs.com/viewer/net/) untuk informasi dan panduan mendalam.
+ Sangat! Lihat[dokumentasi resmi](https://tutorials.groupdocs.com/viewer/net/) untuk informasi dan panduan mendalam.

@@ -3,7 +3,6 @@ title: 行見出しと列見出しをレンダリングする
 linktitle: 行見出しと列見出しをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: .NET でのドキュメント表示を強化します。 GroupDocs.Viewer for .NET を使用して行と列の見出しをレンダリングする方法を学びます。 HTML、JPG、PNG、PDF の出力を調べます。
-type: docs
 weight: 18
 url: /ja/net/spreadsheet-rendering-options/render-row-column-headings/
 ---

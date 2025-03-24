@@ -3,7 +3,6 @@ title: Bekijk informatie voor PDF-documenten
 linktitle: Bekijk informatie voor PDF-documenten
 second_title: GroupDocs.Viewer .NET-API
 description: Leer in deze uitgebreide zelfstudie hoe u weergavegegevens uit PDF-documenten kunt extraheren met GroupDocs.Viewer voor .NET.
-type: docs
 weight: 16
 url: /nl/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

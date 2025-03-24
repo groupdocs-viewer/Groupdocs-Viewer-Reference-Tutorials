@@ -3,7 +3,6 @@ title: Tùy chọn kết xuất PDF
 linktitle: Tùy chọn kết xuất PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách tối ưu hóa việc xem PDF bằng hướng dẫn GroupDocs.Viewer .NET. Khám phá các tùy chọn hiển thị PDF như điều chỉnh chất lượng hình ảnh và tắt tính năng chọn văn bản.
-type: docs
 weight: 38
 url: /vi/net/pdf-rendering-options/
 ---

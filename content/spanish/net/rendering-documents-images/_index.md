@@ -3,7 +3,6 @@ title: Representar documentos en imágenes
 linktitle: Representar documentos en imágenes
 second_title: API GroupDocs.Viewer .NET
 description: Explore tutoriales sobre cómo representar documentos en imágenes usando GroupDocs.Viewer para .NET. Optimice la calidad de la imagen, extraiga coordenadas de texto y mejore la experiencia del usuario.
-type: docs
 weight: 30
 url: /es/net/rendering-documents-images/
 ---

@@ -3,7 +3,6 @@ title: Vykreslování CMX obrázků
 linktitle: Vykreslování CMX obrázků
 second_title: GroupDocs.Viewer .NET API
 description: Naučte se, jak bez námahy vykreslovat obrázky CMX do různých formátů pomocí GroupDocs.Viewer pro .NET. Vylepšete svou správu dokumentů.
-type: docs
 weight: 13
 url: /cs/net/image-rendering/render-cmx-images/
 ---

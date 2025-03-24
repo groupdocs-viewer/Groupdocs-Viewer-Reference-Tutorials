@@ -3,7 +3,6 @@ title: Désactiver les vérifications de licence de police dans PDF
 linktitle: Désactiver les vérifications de licence de police dans PDF
 second_title: API GroupDocs.Viewer .NET
 description: Débloquez des capacités de visualisation transparentes de documents dans votre .NET avec GroupDocs.Viewer pour .NET. Intégrez et personnalisez facilement le rendu des documents avec un minimum de dépendances.
-type: docs
 weight: 12
 url: /fr/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

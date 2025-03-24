@@ -3,7 +3,6 @@ title: Ottieni informazioni sulla visualizzazione dei disegni CAD
 linktitle: Ottieni informazioni sulla visualizzazione dei disegni CAD
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come recuperare le informazioni sulla visualizzazione dei disegni CAD utilizzando GroupDocs.Viewer per .NET. Migliora le tue applicazioni .NET con la gestione fluida dei file CAD.
-type: docs
 weight: 10
 url: /it/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

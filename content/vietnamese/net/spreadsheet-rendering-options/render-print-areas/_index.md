@@ -3,7 +3,6 @@ title: Kết xuất vùng in bằng GroupDocs.Viewer cho .NET
 linktitle: Hiển thị vùng in
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá GroupDocs.Viewer dành cho .NET và dễ dàng hiển thị các vùng in ở nhiều định dạng tài liệu khác nhau. Hãy thử dùng thử miễn phí ngay bây giờ! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /vi/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Chúc mừng! Bạn đã học thành công cách sử dụng GroupDocs.Viewer dành cho .NET để hiển thị các vùng in trong tài liệu của mình. Công cụ mạnh mẽ này mở ra những khả năng mới cho việc hiển thị tài liệu trong các ứng dụng .NET của bạn.
 ## Câu hỏi thường gặp
 ### GroupDocs.Viewer có tương thích với các định dạng tài liệu khác nhau không?
- Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu, bao gồm PDF, DOCX, XLSX, v.v. Tham khảo đến[tài liệu](https://reference.groupdocs.com/viewer/net/) để có danh sách đầy đủ.
+ Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu, bao gồm PDF, DOCX, XLSX, v.v. Tham khảo đến[tài liệu](https://tutorials.groupdocs.com/viewer/net/) để có danh sách đầy đủ.
 ### Tôi có thể dùng thử GroupDocs.Viewer trước khi mua hàng không?
  Tuyệt đối! Bạn có thể khám phá công cụ này với bản dùng thử miễn phí có sẵn[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm sự hỗ trợ hoặc tìm kiếm sự trợ giúp cho bất kỳ vấn đề nào ở đâu?

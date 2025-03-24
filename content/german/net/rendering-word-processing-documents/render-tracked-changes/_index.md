@@ -3,7 +3,6 @@ title: Verfolgte Änderungen rendern
 linktitle: Verfolgte Änderungen rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Entdecken Sie, wie Sie mit GroupDocs.Viewer für .NET nachverfolgte Änderungen in Dokumenten mühelos rendern können. Steigern Sie die Effizienz Ihres Dokumentenmanagements.
-type: docs
 weight: 10
 url: /de/net/rendering-word-processing-documents/render-tracked-changes/
 ---

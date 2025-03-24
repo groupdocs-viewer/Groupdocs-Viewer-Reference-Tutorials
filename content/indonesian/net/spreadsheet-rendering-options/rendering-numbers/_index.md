@@ -3,7 +3,6 @@ title: Merender Nomor
 linktitle: Merender Nomor
 second_title: GroupDocs.Viewer .NET API
 description: Jelajahi kecanggihan Groupdocs.Viewer untuk .NET dalam merender file Numbers dengan lancar. Konversikan ke HTML, JPG, PNG, dan PDF dengan mudah.
-type: docs
 weight: 15
 url: /id/net/spreadsheet-rendering-options/rendering-numbers/
 ---

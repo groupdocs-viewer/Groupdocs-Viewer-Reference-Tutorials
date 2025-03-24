@@ -3,7 +3,6 @@ title: Renderizar linhas de grade
 linktitle: Renderizar linhas de grade
 second_title: API GroupDocs.Viewer .NET
 description: Aprimore a visualização de documentos com GroupDocs.Viewer for .NET. Renderize linhas de grade sem esforço. Experimente o teste gratuito agora! #GroupDocs #Visualizador
-type: docs
 weight: 12
 url: /pt/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ Neste tutorial, exploramos o processo de renderização de linhas de grade em do
 ### As licenças temporárias estão disponíveis para GroupDocs.Viewer for .NET?
  Sim, você pode obter um[licença temporária](https://purchase.groupdocs.com/temporary-license/) para GroupDocs.Viewer para .NET.
 ### Posso encontrar documentação detalhada para GroupDocs.Viewer for .NET?
- Absolutamente! Consulte o[documentação oficial](https://reference.groupdocs.com/viewer/net/) para obter informações detalhadas sobre como usar o GroupDocs.Viewer for .NET.
+ Absolutamente! Consulte o[documentação oficial](https://tutorials.groupdocs.com/viewer/net/) para obter informações detalhadas sobre como usar o GroupDocs.Viewer for .NET.
 ### Onde posso baixar a versão mais recente do GroupDocs.Viewer for .NET?
  Baixe a biblioteca do[página oficial de lançamento](https://releases.groupdocs.com/viewer/net/).

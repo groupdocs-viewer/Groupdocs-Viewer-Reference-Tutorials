@@ -3,7 +3,6 @@ title: 취소 토큰으로 렌더링 취소
 linktitle: 취소 토큰으로 렌더링 취소
 second_title: GroupDocs.Viewer .NET API
 description: 효율적인 문서 보기를 위해 Groupdocs.Viewer for .NET을 .NET 프로젝트에 완벽하게 통합하세요.
-type: docs
 weight: 11
 url: /ko/net/rendering-options/cancel-render-cancellation-token/
 ---

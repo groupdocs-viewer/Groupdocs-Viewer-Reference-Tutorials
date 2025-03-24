@@ -3,7 +3,6 @@ title: Penggunaan Lanjutan (Caching)
 linktitle: Penggunaan Lanjutan (Caching)
 second_title: GroupDocs.Viewer .NET API
 description: Temukan teknik lanjutan untuk mengoptimalkan kecepatan pemrosesan dokumen dalam aplikasi .NET dengan GroupDocs.Viewer. Pelajari cara mengaktifkan caching untuk kinerja yang lebih cepat sekarang!
-type: docs
 weight: 22
 url: /id/net/advanced-usage-caching/
 ---

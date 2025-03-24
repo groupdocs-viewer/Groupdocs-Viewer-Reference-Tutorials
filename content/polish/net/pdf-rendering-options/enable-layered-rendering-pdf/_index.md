@@ -3,7 +3,6 @@ title: Włącz renderowanie warstwowe w formacie PDF
 linktitle: Włącz renderowanie warstwowe w formacie PDF
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak włączyć renderowanie warstwowe w dokumentach PDF przy użyciu programu GroupDocs.Viewer dla platformy .NET. Zwiększ komfort przeglądania dokumentów bez wysiłku.
-type: docs
 weight: 15
 url: /pl/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

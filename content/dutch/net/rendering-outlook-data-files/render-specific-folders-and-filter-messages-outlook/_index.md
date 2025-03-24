@@ -3,7 +3,6 @@ title: Geef specifieke mappen weer en filter berichten (Outlook)
 linktitle: Geef specifieke mappen weer en filter berichten (Outlook)
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u specifieke mappen kunt weergeven en berichten kunt filteren in Outlook met GroupDocs.Viewer voor .NET. Vereenvoudig documentbeheer in .NET-applicaties.
-type: docs
 weight: 11
 url: /nl/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

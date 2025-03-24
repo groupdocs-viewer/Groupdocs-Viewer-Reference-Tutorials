@@ -3,7 +3,6 @@ title: GroupDocs.Viewer 자습서 - 마스터 문서 보기 기술
 linktitle: GroupDocs.Viewer 튜토리얼
 additionalTitle: GroupDocs API 참조
 description: 문서 보기 기능을 최대화하는 방법에 대한 포괄적인 지침을 보려면 GroupDocs.Viewer 자습서를 살펴보세요. 오늘 그 잠재력을 최대한 발휘해보세요!
-type: docs
 weight: 11
 url: /ko/
 is_root: true

@@ -3,7 +3,6 @@ title: تقديم تنسيقات CAD محددة (CF2)
 linktitle: تقديم تنسيقات CAD محددة (CF2)
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض تنسيقات CAD محددة مثل CF2 إلى HTML وJPG وPNG وPDF باستخدام Groupdocs.Viewer لـ .NET.
-type: docs
 weight: 12
 url: /ar/net/rendering-cad-drawings/render-specific-cad-formats/
 ---

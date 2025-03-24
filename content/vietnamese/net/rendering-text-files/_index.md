@@ -3,7 +3,6 @@ title: Hiển thị tệp văn bản
 linktitle: Hiển thị tệp văn bản
 second_title: API GroupDocs.Viewer .NET
 description: Khai phá tiềm năng của GroupDocs.Viewer dành cho .NET bằng các hướng dẫn về cách hiển thị tệp văn bản. Chuyển đổi tệp .txt thành nhiều định dạng khác nhau để quản lý tài liệu nâng cao.
-type: docs
 weight: 33
 url: /vi/net/rendering-text-files/
 ---

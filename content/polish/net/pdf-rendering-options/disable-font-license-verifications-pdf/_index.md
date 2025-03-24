@@ -3,7 +3,6 @@ title: Wyłącz weryfikację licencji czcionek w formacie PDF
 linktitle: Wyłącz weryfikację licencji czcionek w formacie PDF
 second_title: GroupDocs.Viewer API .NET
 description: Odblokuj możliwości płynnego przeglądania dokumentów w platformie .NET dzięki GroupDocs.Viewer dla platformy .NET. Z łatwością integruj i dostosowuj renderowanie dokumentów przy minimalnych zależnościach.
-type: docs
 weight: 12
 url: /pl/net/pdf-rendering-options/disable-font-license-verifications-pdf/
 ---

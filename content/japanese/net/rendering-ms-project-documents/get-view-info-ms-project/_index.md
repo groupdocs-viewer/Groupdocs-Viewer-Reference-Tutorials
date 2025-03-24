@@ -3,7 +3,6 @@ title: Microsoft Project ドキュメントの表示情報を取得する
 linktitle: Microsoft Project ドキュメントの表示情報を取得する
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を活用して Microsoft Project ドキュメントのビュー情報を簡単に取得するための包括的なチュートリアルをご覧ください。
-type: docs
 weight: 10
 url: /ja/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

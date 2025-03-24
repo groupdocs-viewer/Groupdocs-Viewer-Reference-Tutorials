@@ -3,7 +3,6 @@ title: Рендеринг с наложением текста для отобр
 linktitle: Рендеринг с наложением текста для отображения
 second_title: GroupDocs.Viewer .NET API
 description: Беспрепятственно визуализируйте документы в приложениях .NET с помощью GroupDocs.Viewer, поддерживающего различные форматы для повышения удобства работы пользователей.
-type: docs
 weight: 13
 url: /ru/net/rendering-documents-images/render-with-text-overlay/
 ---

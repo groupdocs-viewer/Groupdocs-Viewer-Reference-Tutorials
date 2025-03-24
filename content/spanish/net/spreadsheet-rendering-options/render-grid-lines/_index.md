@@ -3,7 +3,6 @@ title: Renderizar líneas de cuadrícula
 linktitle: Renderizar líneas de cuadrícula
 second_title: API GroupDocs.Viewer .NET
 description: Mejore la visualización de documentos con GroupDocs.Viewer para .NET. Renderiza líneas de cuadrícula sin esfuerzo. ¡Pruebe la prueba gratuita ahora! #Documentos de grupo #Visor
-type: docs
 weight: 12
 url: /es/net/spreadsheet-rendering-options/render-grid-lines/
 ---
@@ -66,6 +65,6 @@ En este tutorial, exploramos el proceso de representación de líneas de cuadrí
 ### ¿Hay licencias temporales disponibles para GroupDocs.Viewer para .NET?
  Sí, puedes obtener un[licencia temporal](https://purchase.groupdocs.com/temporary-license/) para GroupDocs.Viewer para .NET.
 ### ¿Puedo encontrar documentación detallada para GroupDocs.Viewer para .NET?
- ¡Absolutamente! Referirse a[documentación oficial](https://reference.groupdocs.com/viewer/net/) para obtener información detallada sobre el uso de GroupDocs.Viewer para .NET.
+ ¡Absolutamente! Referirse a[documentación oficial](https://tutorials.groupdocs.com/viewer/net/) para obtener información detallada sobre el uso de GroupDocs.Viewer para .NET.
 ### ¿Dónde puedo descargar la última versión de GroupDocs.Viewer para .NET?
  Descarga la biblioteca desde[página de lanzamiento oficial](https://releases.groupdocs.com/viewer/net/).

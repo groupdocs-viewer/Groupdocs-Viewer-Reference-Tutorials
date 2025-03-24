@@ -3,7 +3,6 @@ title: Opcje renderowania arkusza kalkulacyjnego
 linktitle: Opcje renderowania arkusza kalkulacyjnego
 second_title: GroupDocs.Viewer API .NET
 description: Bez wysiłku ulepszaj wizualizację dokumentów w .NET dzięki samouczkom GroupDocs.Viewer. Dowiedz się, jak dostosować przepełnienie tekstu, renderować linie siatki i nie tylko.
-type: docs
 weight: 37
 url: /pl/net/spreadsheet-rendering-options/
 ---

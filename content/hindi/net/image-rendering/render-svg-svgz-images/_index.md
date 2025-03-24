@@ -3,7 +3,6 @@ title: SVG और SVGZ छवियाँ प्रस्तुत करें
 linktitle: SVG और SVGZ छवियाँ प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके SVG और SVGZ छवियों को प्रस्तुत करना सीखें। वेक्टर ग्राफ़िक्स को आसानी से HTML, JPG, PNG और PDF में बदलें।
-type: docs
 weight: 16
 url: /hi/net/image-rendering/render-svg-svgz-images/
 ---

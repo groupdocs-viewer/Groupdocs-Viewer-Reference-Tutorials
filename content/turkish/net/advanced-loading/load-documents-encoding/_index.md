@@ -3,7 +3,6 @@ title: Belirli Kodlamaya Sahip Belgeleri Yükleme
 linktitle: Belirli Kodlamaya Sahip Belgeleri Yükleme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak .NET uygulamalarınızı kusursuz belge görüntülemeyle geliştirin. Özel kodlamaya sahip belgeleri zahmetsizce yükleyin ve görüntüleme deneyimini özelleştirin.
-type: docs
 weight: 11
 url: /tr/net/advanced-loading/load-documents-encoding/
 ---

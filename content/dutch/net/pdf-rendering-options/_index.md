@@ -3,7 +3,6 @@ title: Opties voor PDF-weergave
 linktitle: Opties voor PDF-weergave
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u de PDF-weergave kunt optimaliseren met GroupDocs.Viewer .NET-tutorials. Ontdek opties voor PDF-weergave, zoals het aanpassen van de beeldkwaliteit en het uitschakelen van tekstselectie.
-type: docs
 weight: 38
 url: /nl/net/pdf-rendering-options/
 ---

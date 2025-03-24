@@ -3,7 +3,6 @@ title: GroupDocs.Viewer 教程 - 掌握文档查看技巧
 linktitle: GroupDocs.Viewer 教程
 additionalTitle: GroupDocs API 参考
 description: 探索 GroupDocs.Viewer 教程，获取有关最大化文档查看功能的全面指导。今天就释放它的全部潜力！
-type: docs
 weight: 11
 url: /zh/
 is_root: true

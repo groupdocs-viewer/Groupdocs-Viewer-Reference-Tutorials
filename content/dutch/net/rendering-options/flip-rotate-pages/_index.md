@@ -3,7 +3,6 @@ title: Pagina's omdraaien en roteren
 linktitle: Pagina's omdraaien en roteren
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u Groupdocs.Viewer voor .NET in uw toepassingen kunt integreren voor een naadloze weergave, omdraaien en roteren van documenten.
-type: docs
 weight: 12
 url: /nl/net/rendering-options/flip-rotate-pages/
 ---
@@ -12,7 +11,7 @@ In deze tutorial gaan we dieper in op de functionaliteiten van Groupdocs.Viewer 
 ## Vereisten
 Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
 ### Groupdocs.Viewer voor .NET installeren
- Om Groupdocs.Viewer voor .NET te gebruiken, moet u het pakket installeren via NuGet Package Manager. Gedetailleerde installatie-instructies vindt u in de[documentatie](https://reference.groupdocs.com/viewer/net/).
+ Om Groupdocs.Viewer voor .NET te gebruiken, moet u het pakket installeren via NuGet Package Manager. Gedetailleerde installatie-instructies vindt u in de[documentatie](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Naamruimten importeren
 Zorg ervoor dat u de benodigde naamruimten in uw project importeert om Groupdocs.Viewer voor .NET effectief te kunnen gebruiken.

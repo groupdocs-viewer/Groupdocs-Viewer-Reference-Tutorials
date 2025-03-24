@@ -3,7 +3,6 @@ title: Eseguire il rendering di cartelle specifiche e filtrare i messaggi (Outlo
 linktitle: Eseguire il rendering di cartelle specifiche e filtrare i messaggi (Outlook)
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come eseguire il rendering di cartelle specifiche e filtrare i messaggi in Outlook utilizzando GroupDocs.Viewer per .NET. Semplifica la gestione dei documenti nelle applicazioni .NET.
-type: docs
 weight: 11
 url: /it/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

@@ -3,7 +3,6 @@ title: ワープロ文書のレンダリング
 linktitle: ワープロ文書のレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、Word 処理ドキュメント内の追跡された変更を効率的にレンダリングする方法を学びます。文書管理スキルを向上させます。
-type: docs
 weight: 36
 url: /ja/net/rendering-word-processing-documents/
 ---

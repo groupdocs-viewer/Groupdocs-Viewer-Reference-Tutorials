@@ -3,7 +3,6 @@ title: Рендеринг текстовых файлов (.txt)
 linktitle: Рендеринг текстовых файлов (.txt)
 second_title: GroupDocs.Viewer .NET API
 description: Изучите возможность плавного преобразования текстовых файлов в различные форматы с помощью GroupDocs.Viewer для .NET. Расширьте свои возможности управления документами без особых усилий.
-type: docs
 weight: 10
 url: /ru/net/rendering-text-files/render-txt/
 ---

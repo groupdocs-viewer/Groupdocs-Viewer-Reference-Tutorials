@@ -3,7 +3,6 @@ title: การแสดงเอกสารเป็นภาพ
 linktitle: การแสดงเอกสารเป็นภาพ
 second_title: GroupDocs.Viewer .NET API
 description: สำรวจบทช่วยสอนเกี่ยวกับการแสดงเอกสารเป็นรูปภาพโดยใช้ GroupDocs.Viewer สำหรับ .NET ปรับคุณภาพของภาพให้เหมาะสม แยกพิกัดข้อความ และปรับปรุงประสบการณ์ผู้ใช้
-type: docs
 weight: 30
 url: /th/net/rendering-documents-images/
 ---

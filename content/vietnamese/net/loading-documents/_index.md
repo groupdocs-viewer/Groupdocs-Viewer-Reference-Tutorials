@@ -3,7 +3,6 @@ title: Đang tải tài liệu
 linktitle: Đang tải tài liệu
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá cách tải và hiển thị tài liệu một cách hiệu quả bằng GroupDocs.Viewer .NET. Khám phá các hướng dẫn tải đĩa, luồng và FTP cục bộ cho các ứng dụng .NET nâng cao.
-type: docs
 weight: 20
 url: /vi/net/loading-documents/
 ---

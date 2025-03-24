@@ -3,7 +3,6 @@ title: Povolte ukládání do mezipaměti pro rychlejší zpracování dokument�
 linktitle: Povolte ukládání do mezipaměti pro rychlejší zpracování dokumentů
 second_title: GroupDocs.Viewer .NET API
 description: Zvyšte rychlost zpracování dokumentů v aplikacích .NET s GroupDocs.Viewer využitím mezipaměti. Optimalizujte výkon bez námahy.
-type: docs
 weight: 10
 url: /cs/net/advanced-usage-caching/enable-caching/
 ---

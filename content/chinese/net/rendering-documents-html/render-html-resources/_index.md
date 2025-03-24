@@ -3,7 +3,6 @@ title: 使用嵌入式或外部资源进行渲染
 linktitle: 使用嵌入式或外部资源进行渲染
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 增强 .NET 文档查看以实现无缝渲染。按照我们的教程进行高效集成和卓越的用户体验。
-type: docs
 weight: 12
 url: /zh/net/rendering-documents-html/render-html-resources/
 ---

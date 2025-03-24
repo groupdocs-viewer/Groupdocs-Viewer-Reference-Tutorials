@@ -3,7 +3,6 @@ title: Render Dokumen dengan Komentar
 linktitle: Render Dokumen dengan Komentar
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender dokumen dengan komentar menggunakan GroupDocs.Viewer untuk .NET. Ikuti panduan langkah demi langkah kami untuk integrasi yang lancar.
-type: docs
 weight: 13
 url: /id/net/rendering-options/render-document-comments/
 ---

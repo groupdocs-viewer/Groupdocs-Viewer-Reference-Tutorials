@@ -3,7 +3,6 @@ title: Nhận thông tin xem cho tài liệu dự án Microsoft
 linktitle: Nhận thông tin xem cho tài liệu dự án Microsoft
 second_title: API GroupDocs.Viewer .NET
 description: Khám phá hướng dẫn toàn diện về cách tận dụng Groupdocs.Viewer dành cho .NET để truy xuất thông tin chế độ xem cho các tài liệu Microsoft Project một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

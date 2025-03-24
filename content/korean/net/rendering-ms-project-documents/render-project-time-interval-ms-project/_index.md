@@ -3,7 +3,6 @@ title: 렌더별 프로젝트 시간 간격(MS 프로젝트)
 linktitle: 렌더별 프로젝트 시간 간격(MS 프로젝트)
 second_title: GroupDocs.Viewer .NET API
 description: 효율적인 문서 보기를 위해 .NET용 GroupDocs.Viewer를 응용 프로그램에 완벽하게 통합하세요. 다양한 렌더링 기능으로 생산성을 향상하세요.
-type: docs
 weight: 12
 url: /ko/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
 ---

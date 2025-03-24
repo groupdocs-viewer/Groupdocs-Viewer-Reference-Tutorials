@@ -3,7 +3,6 @@ title: Преобразование документов в PDF
 linktitle: Преобразование документов в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Научитесь преобразовывать документы в PDF, настраивать качество изображений JPG и защищать PDF-файлы паролями с помощью учебных пособий GroupDocs.Viewer для .NET.
-type: docs
 weight: 29
 url: /ru/net/rendering-documents-pdf/
 ---

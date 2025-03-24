@@ -3,7 +3,6 @@ title: Korlátozza az Outlook adatfájljaiban megjelenítendő elemek számát
 linktitle: Korlátozza az Outlook adatfájljaiban megjelenítendő elemek számát
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan korlátozhatja az Outlook-adatfájlokban megjelenített elemek számát a Groupdocs.Viewer for .NET segítségével. Kövesse lépésről lépésre a zökkenőmentes integráció érdekében.
-type: docs
 weight: 12
 url: /hu/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

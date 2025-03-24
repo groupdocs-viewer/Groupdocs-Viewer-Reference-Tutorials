@@ -3,7 +3,6 @@ title: Resim Boyutunu ve Kalitesini Ayarlayın (JPG)
 linktitle: Resim Boyutunu ve Kalitesini Ayarlayın (JPG)
 second_title: GroupDocs.Viewer .NET API'si
 description: Groupdocs.Viewer for .NET'i kullanarak JPEG formatında görüntü boyutunu ve kalitesini nasıl optimize edeceğinizi öğrenin. Belge görüntüleme deneyiminizi geliştirin.
-type: docs
 weight: 11
 url: /tr/net/rendering-documents-images/adjust-image-size-and-quality-jpg/
 ---

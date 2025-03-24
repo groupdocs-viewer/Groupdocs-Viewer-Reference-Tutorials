@@ -3,7 +3,6 @@ title: Zeitüberschreitung beim Laden von Ressourcen festlegen (erweitert)
 linktitle: Zeitüberschreitung beim Laden von Ressourcen festlegen (erweitert)
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie Zeitüberschreitungen beim Laden von Ressourcen in GroupDocs.Viewer für .NET effizient konfigurieren. Präzise und stabile Wiedergabe von Masterdokumenten.
-type: docs
 weight: 13
 url: /de/net/advanced-loading/set-resource-loading-timeout/
 ---

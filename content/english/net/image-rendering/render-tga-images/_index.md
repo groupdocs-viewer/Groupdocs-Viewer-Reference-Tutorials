@@ -3,7 +3,6 @@ title: Render TGA Images
 linktitle: Render TGA Images
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to effortlessly render TGA images in .NET applications using GroupDocs.Viewer. Enhance your image rendering capabilities.
-type: docs
 weight: 17
 url: /net/image-rendering/render-tga-images/
 ---

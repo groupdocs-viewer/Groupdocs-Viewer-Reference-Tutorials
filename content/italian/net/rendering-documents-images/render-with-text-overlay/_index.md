@@ -3,7 +3,6 @@ title: Rendering con testo sovrapposto per la visualizzazione
 linktitle: Rendering con testo sovrapposto per la visualizzazione
 second_title: API GroupDocs.Viewer .NET
 description: Esegui il rendering dei documenti senza problemi nelle applicazioni .NET con GroupDocs.Viewer, supportando vari formati per una migliore esperienza utente.
-type: docs
 weight: 13
 url: /it/net/rendering-documents-images/render-with-text-overlay/
 ---

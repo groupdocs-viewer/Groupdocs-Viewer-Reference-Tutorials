@@ -3,7 +3,6 @@ title: Rendering Documents to Images
 linktitle: Rendering Documents to Images
 second_title: GroupDocs.Viewer .NET API
 description: Explore tutorials on rendering documents to images using GroupDocs.Viewer for .NET. Optimize image quality, extract text coordinates, and enhance user experience.
-type: docs
 weight: 30
 url: /net/rendering-documents-images/
 ---

@@ -3,7 +3,6 @@ title: Kết xuất tài liệu thành PDF
 linktitle: Kết xuất tài liệu thành PDF
 second_title: API GroupDocs.Viewer .NET
 description: Tìm hiểu cách hiển thị tài liệu sang PDF bằng GroupDocs.Viewer cho .NET. Hướng dẫn từng bước bao gồm các điều kiện tiên quyết và Câu hỏi thường gặp.
-type: docs
 weight: 10
 url: /vi/net/rendering-documents-pdf/render-to-pdf/
 ---

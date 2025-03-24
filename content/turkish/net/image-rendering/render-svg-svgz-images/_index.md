@@ -3,7 +3,6 @@ title: SVG ve SVGZ Görüntülerini İşleme
 linktitle: SVG ve SVGZ Görüntülerini İşleme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak SVG ve SVGZ görüntülerini nasıl oluşturacağınızı öğrenin. Vektör grafiklerini zahmetsizce HTML, JPG, PNG ve PDF'ye dönüştürün.
-type: docs
 weight: 16
 url: /tr/net/image-rendering/render-svg-svgz-images/
 ---

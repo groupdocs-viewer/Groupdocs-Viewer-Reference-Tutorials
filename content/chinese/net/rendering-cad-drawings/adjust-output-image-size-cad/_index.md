@@ -3,7 +3,6 @@ title: 调整 CAD 工程图的输出图像尺寸
 linktitle: 调整 CAD 工程图的输出图像尺寸
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 调整 CAD 绘图的输出图像大小。轻松增强可见性和可用性。
-type: docs
 weight: 15
 url: /zh/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

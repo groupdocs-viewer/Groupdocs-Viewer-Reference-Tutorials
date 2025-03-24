@@ -3,7 +3,6 @@ title: Renderuj responsywny kod HTML
 linktitle: Renderuj responsywny kod HTML
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak renderować responsywny kod HTML za pomocą Groupdocs.Viewer dla .NET, zapewniając optymalne wrażenia wizualne na różnych urządzeniach.
-type: docs
 weight: 13
 url: /pl/net/rendering-documents-html/render-responsive-html/
 ---

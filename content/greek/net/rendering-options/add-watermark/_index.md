@@ -3,7 +3,6 @@ title: Προσθήκη υδατογραφήματος στο έγγραφο
 linktitle: Προσθήκη υδατογραφήματος στο έγγραφο
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να προσθέτετε απρόσκοπτα υδατογραφήματα σε έγγραφα χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε την ασφάλεια των εγγράφων και την επωνυμία με αυτό το εύχρηστο σεμινάριο.
-type: docs
 weight: 10
 url: /el/net/rendering-options/add-watermark/
 ---

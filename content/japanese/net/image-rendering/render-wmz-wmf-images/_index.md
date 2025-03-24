@@ -3,7 +3,6 @@ title: WMZ および WMF イメージをレンダリングする
 linktitle: WMZ および WMF イメージをレンダリングする
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、.NET アプリケーションで WMZ および WMF イメージを簡単にレンダリングします。ドキュメント処理機能を簡単に強化します。
-type: docs
 weight: 18
 url: /ja/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ GroupDocs.Viewer for .NET を使用した WMZ および WMF イメージのレ�
 
 3. .NET 環境に精通していること: レンダリング プロセスを効果的に実装するには、.NET フレームワークと C# プログラミング言語の基本的な理解が不可欠です。
 
-4. プロジェクトへの統合: GroupDocs.Viewer for .NET が .NET プロジェクトに適切に統合されていることを確認します。統合の詳細な手順については、ドキュメントを参照してください。[ドキュメンテーション](https://reference.groupdocs.com/viewer/net/).
+4. プロジェクトへの統合: GroupDocs.Viewer for .NET が .NET プロジェクトに適切に統合されていることを確認します。統合の詳細な手順については、ドキュメントを参照してください。[ドキュメンテーション](https://tutorials.groupdocs.com/viewer/net/).
 
 ## 名前空間のインポート
 

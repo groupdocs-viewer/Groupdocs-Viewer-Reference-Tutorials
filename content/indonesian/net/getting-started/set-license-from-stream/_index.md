@@ -3,7 +3,6 @@ title: Tetapkan Lisensi dari Stream
 linktitle: Tetapkan Lisensi dari Stream
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan aplikasi .NET Anda dengan GroupDocs.Viewer untuk tampilan dokumen yang lancar. Ikuti panduan langkah demi langkah kami dan integrasikan kemampuan melihat dokumen yang canggih dengan mudah.
-type: docs
 weight: 11
 url: /id/net/getting-started/set-license-from-stream/
 ---
@@ -14,7 +13,7 @@ Sebelum kita mendalami proses integrasi, pastikan Anda memiliki prasyarat beriku
 1. Pengetahuan Dasar Pengembangan .NET: Keakraban dengan C# dan kerangka .NET sangat penting untuk mengikuti tutorial ini.
    
 2.  Paket GroupDocs.Viewer untuk .NET: Pastikan Anda telah mengunduh dan menginstal paket GroupDocs.Viewer untuk .NET. Anda dapat memperolehnya dari[tautan unduhan](https://releases.groupdocs.com/viewer/net/).
-3.  Akses ke Dokumentasi GroupDocs: Simpan[dokumentasi](https://reference.groupdocs.com/viewer/net/) berguna untuk referensi selama proses integrasi.
+3.  Akses ke Dokumentasi GroupDocs: Simpan[dokumentasi](https://tutorials.groupdocs.com/viewer/net/) berguna untuk referensi selama proses integrasi.
 
 ## Impor Namespace
 Untuk memulainya, impor namespace yang diperlukan ke dalam aplikasi .NET Anda. Ikuti langkah ini:

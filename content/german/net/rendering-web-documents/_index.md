@@ -3,7 +3,6 @@ title: Rendern von Webdokumenten
 linktitle: Rendern von Webdokumenten
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie CHM-Dateien und HTML mit benutzerdefinierten Rändern in .NET mithilfe von GroupDocs.Viewer rendern. Konvertieren Sie CHM nahtlos in die Formate HTML, JPG, PNG und PDF.
-type: docs
 weight: 35
 url: /de/net/rendering-web-documents/
 ---

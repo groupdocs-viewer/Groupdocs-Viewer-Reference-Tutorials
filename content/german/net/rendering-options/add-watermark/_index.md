@@ -3,7 +3,6 @@ title: Wasserzeichen im Dokument hinzufügen
 linktitle: Wasserzeichen im Dokument hinzufügen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET nahtlos Wasserzeichen zu Dokumenten hinzufügen. Verbessern Sie die Dokumentensicherheit und das Branding mit diesem leicht verständlichen Tutorial.
-type: docs
 weight: 10
 url: /de/net/rendering-options/add-watermark/
 ---

@@ -3,7 +3,6 @@ title: Microsoft Project 문서에 대한 정보 보기
 linktitle: Microsoft Project 문서에 대한 정보 보기
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 Groupdocs.Viewer를 활용하여 Microsoft Project 문서에 대한 보기 정보를 손쉽게 검색하는 방법에 대한 포괄적인 자습서를 살펴보세요.
-type: docs
 weight: 10
 url: /ko/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

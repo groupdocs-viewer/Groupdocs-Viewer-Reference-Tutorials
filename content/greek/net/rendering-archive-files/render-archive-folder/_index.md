@@ -3,7 +3,6 @@ title: Render Archive Folder
 linktitle: Render Archive Folder
 second_title: GroupDocs.Viewer .NET API
 description: Ενσωματώστε απρόσκοπτα το GroupDocs.Viewer για .NET στις εφαρμογές σας .NET για αποτελεσματικές δυνατότητες απόδοσης και προβολής εγγράφων.
-type: docs
 weight: 11
 url: /el/net/rendering-archive-files/render-archive-folder/
 ---

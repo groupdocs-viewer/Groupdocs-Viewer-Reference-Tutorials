@@ -3,7 +3,6 @@ title: Render Layers σε σχέδια CAD
 linktitle: Render Layers σε σχέδια CAD
 second_title: GroupDocs.Viewer .NET API
 description: Αποδώστε απρόσκοπτα σχέδια CAD σε εφαρμογές .NET με το GroupDocs.Viewer για .NET. Εξερευνήστε τις επιλογές απόδοσης, προσαρμόστε επίπεδα και πολλά άλλα.
-type: docs
 weight: 13
 url: /el/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ url: /el/net/rendering-cad-drawings/render-layers-cad/
 - Βασική κατανόηση της γλώσσας προγραμματισμού C#.
 - Το περιβάλλον ανάπτυξης .NET έχει ρυθμιστεί στον υπολογιστή σας.
 -  Εγκαταστάθηκε το GroupDocs.Viewer για .NET. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.groupdocs.com/viewer/net/).
--  Πρόσβαση στην τεκμηρίωση GroupDocs.Viewer για .NET για αναφορά, την οποία μπορείτε να βρείτε[εδώ](https://reference.groupdocs.com/viewer/net/).
+-  Πρόσβαση στην τεκμηρίωση GroupDocs.Viewer για .NET για αναφορά, την οποία μπορείτε να βρείτε[εδώ](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Εισαγωγή χώρων ονομάτων
 Για να ξεκινήσετε να χρησιμοποιείτε το GroupDocs.Viewer για .NET, πρέπει να εισαγάγετε τους απαιτούμενους χώρους ονομάτων στο έργο σας. Ακολουθήστε αυτά τα βήματα:

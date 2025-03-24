@@ -3,7 +3,6 @@ title: ドキュメントをロードするときにファイルの種類を指�
 linktitle: ドキュメントをロードするときにファイルの種類を指定する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してドキュメントをロードするときにファイルの種類を指定する方法を学習します。 .NET アプリケーションでさまざまな形式を正確にレンダリングします。
-type: docs
 weight: 10
 url: /ja/net/advanced-loading/specify-file-type/
 ---

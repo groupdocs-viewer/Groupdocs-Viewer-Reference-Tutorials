@@ -3,7 +3,6 @@ title: Учебные пособия по GroupDocs.Viewer — основные 
 linktitle: Учебные пособия по GroupDocs.Viewer
 additionalTitle: Ссылки на API GroupDocs
 description: Изучите руководства по GroupDocs.Viewer, чтобы получить исчерпывающие рекомендации по максимальному расширению возможностей просмотра документов. Раскройте весь его потенциал сегодня!
-type: docs
 weight: 11
 url: /ru/
 is_root: true

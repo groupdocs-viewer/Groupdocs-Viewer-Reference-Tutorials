@@ -3,7 +3,6 @@ title: เรนเดอร์รูปภาพ TGA
 linktitle: เรนเดอร์รูปภาพ TGA
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์อิมเมจ TGA ในแอปพลิเคชัน .NET ได้อย่างง่ายดายโดยใช้ GroupDocs.Viewer เพิ่มความสามารถในการเรนเดอร์ภาพของคุณ
-type: docs
 weight: 17
 url: /th/net/image-rendering/render-tga-images/
 ---

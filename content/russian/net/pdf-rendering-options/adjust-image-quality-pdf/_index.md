@@ -3,7 +3,6 @@ title: Настройка качества изображения в PDF
 linktitle: Настройка качества изображения в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как настроить качество изображения в документах PDF с помощью GroupDocs.Viewer для .NET. Следуйте нашему пошаговому руководству для бесшовной интеграции.
-type: docs
 weight: 10
 url: /ru/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

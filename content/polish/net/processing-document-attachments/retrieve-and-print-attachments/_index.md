@@ -3,7 +3,6 @@ title: Pobierz i wydrukuj załączniki do dokumentów
 linktitle: Pobierz i wydrukuj załączniki do dokumentów
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo integruj możliwości przeglądania dokumentów z aplikacjami .NET dzięki GroupDocs.Viewer dla .NET. Bezproblemowo pobieraj i drukuj załączniki do dokumentów.
-type: docs
 weight: 11
 url: /pl/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

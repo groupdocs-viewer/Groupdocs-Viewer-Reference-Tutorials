@@ -3,7 +3,6 @@ title: Získat informace o zobrazení datových souborů aplikace Outlook (PST, 
 linktitle: Získat informace o zobrazení datových souborů aplikace Outlook (PST, OST)
 second_title: GroupDocs.Viewer .NET API
 description: Prozkoumejte, jak extrahovat informace o zobrazení z datových souborů aplikace Outlook (PST, OST) pomocí GroupDocs.Viewer pro .NET. Vylepšete své možnosti správy dokumentů bez námahy.
-type: docs
 weight: 10
 url: /cs/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
 ---

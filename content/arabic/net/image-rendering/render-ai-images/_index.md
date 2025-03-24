@@ -3,7 +3,6 @@ title: عرض صور الذكاء الاصطناعي
 linktitle: عرض صور الذكاء الاصطناعي
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض صور الذكاء الاصطناعي بسهولة في تطبيقات .NET باستخدام GroupDocs.Viewer لـ .NET. اتبع البرنامج التعليمي خطوة بخطوة لتحقيق التكامل السلس.
-type: docs
 weight: 10
 url: /ar/net/image-rendering/render-ai-images/
 ---

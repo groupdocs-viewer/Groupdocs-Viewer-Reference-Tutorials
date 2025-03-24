@@ -3,7 +3,6 @@ title: استرداد وحفظ مرفقات المستندات
 linktitle: استرداد وحفظ مرفقات المستندات
 second_title: GroupDocs.Viewer .NET API
 description: إدارة مرفقات المستندات بكفاءة داخل تطبيقات .NET باستخدام GroupDocs.Viewer. يمكنك استرداد المرفقات وحفظها دون أي متاعب.
-type: docs
 weight: 12
 url: /ar/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Console.WriteLine($"\nAttachments saved successfully.\nCheck output in {outputDi
 ### كيف يمكنني الحصول على تراخيص مؤقتة لـ GroupDocs.Viewer لـ .NET؟
  يمكن الحصول على التراخيص المؤقتة من[هذا الرابط](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني العثور على وثائق GroupDocs.Viewer لـ .NET؟
- الوثائق الشاملة متاحة[هنا](https://reference.groupdocs.com/viewer/net/).
+ الوثائق الشاملة متاحة[هنا](https://tutorials.groupdocs.com/viewer/net/).
 ### ما هي خيارات الدعم المتوفرة لـ GroupDocs.Viewer لـ .NET؟
  يمكنك طلب المساعدة من منتدى المجتمع[هنا](https://forum.groupdocs.com/c/viewer/9).

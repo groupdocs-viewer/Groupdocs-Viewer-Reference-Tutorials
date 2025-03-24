@@ -3,7 +3,6 @@ title: Render document met opmerkingen
 linktitle: Render document met opmerkingen
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u documenten met commentaar kunt weergeven met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze handleiding voor een naadloze integratie.
-type: docs
 weight: 13
 url: /nl/net/rendering-options/render-document-comments/
 ---

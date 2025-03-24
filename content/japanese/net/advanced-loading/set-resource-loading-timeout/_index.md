@@ -3,7 +3,6 @@ title: リソース読み込みタイムアウトの設定 (詳細)
 linktitle: リソース読み込みタイムアウトの設定 (詳細)
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET でリソース読み込みタイムアウトを効率的に構成する方法を学びます。正確かつ安定したマスタードキュメントレンダリング。
-type: docs
 weight: 13
 url: /ja/net/advanced-loading/set-resource-loading-timeout/
 ---

@@ -3,7 +3,6 @@ title: تقديم HTML مع هوامش محددة من قبل المستخدم
 linktitle: تقديم HTML مع هوامش محددة من قبل المستخدم
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض HTML بهوامش مخصصة في .NET باستخدام GroupDocs.Viewer. تعزيز عرض المستندات دون عناء.
-type: docs
 weight: 11
 url: /ar/net/rendering-web-documents/render-html-margins/
 ---

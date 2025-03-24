@@ -3,7 +3,6 @@ title: Render Area Cetak dengan GroupDocs.Viewer untuk .NET
 linktitle: Render Area Cetak
 second_title: GroupDocs.Viewer .NET API
 description: Jelajahi GroupDocs.Viewer untuk .NET dan render area pencetakan dengan mudah dalam berbagai format dokumen. Coba uji coba gratis sekarang! #GroupDocs.Viewer
-type: docs
 weight: 17
 url: /id/net/spreadsheet-rendering-options/render-print-areas/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Selamat! Anda telah berhasil mempelajari cara memanfaatkan GroupDocs.Viewer untuk .NET untuk merender area cetak di dokumen Anda. Alat canggih ini membuka kemungkinan baru untuk rendering dokumen di aplikasi .NET Anda.
 ## FAQ
 ### Apakah GroupDocs.Viewer kompatibel dengan berbagai format dokumen?
- Ya, GroupDocs.Viewer mendukung berbagai format dokumen, termasuk PDF, DOCX, XLSX, dan banyak lagi. Mengacu kepada[dokumentasi](https://reference.groupdocs.com/viewer/net/) untuk daftar lengkap.
+ Ya, GroupDocs.Viewer mendukung berbagai format dokumen, termasuk PDF, DOCX, XLSX, dan banyak lagi. Mengacu kepada[dokumentasi](https://tutorials.groupdocs.com/viewer/net/) untuk daftar lengkap.
 ### Bisakah saya mencoba GroupDocs.Viewer sebelum melakukan pembelian?
  Sangat! Anda dapat menjelajahi alat ini dengan uji coba gratis yang tersedia[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat memperoleh dukungan atau mencari bantuan untuk masalah apa pun?

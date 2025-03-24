@@ -3,7 +3,6 @@ title: CMX-Bilder rendern
 linktitle: CMX-Bilder rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie CMX-Bilder mit GroupDocs.Viewer für .NET mühelos in verschiedene Formate rendern. Verbessern Sie Ihr Dokumentenmanagement.
-type: docs
 weight: 13
 url: /de/net/image-rendering/render-cmx-images/
 ---

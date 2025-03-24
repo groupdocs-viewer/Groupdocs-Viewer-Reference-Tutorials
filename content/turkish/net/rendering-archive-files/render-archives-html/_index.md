@@ -3,7 +3,6 @@ title: Arşivleri Tek veya Çoklu HTML Sayfalarına Oluşturma
 linktitle: Arşivleri Tek veya Çoklu HTML Sayfalarına Oluşturma
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak arşivleri HTML sayfalarına nasıl aktaracağınızı öğrenin. Belge görüntüleme yeteneklerini .NET uygulamalarınıza zahmetsizce entegre edin.
-type: docs
 weight: 12
 url: /tr/net/rendering-archive-files/render-archives-html/
 ---

@@ -3,7 +3,6 @@ title: Belge Eklerini Alma ve Kaydetme
 linktitle: Belge Eklerini Alma ve Kaydetme
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer'ı kullanarak .NET uygulamaları içindeki belge eklerini verimli bir şekilde yönetin. Ekleri sorunsuz bir şekilde alın ve kaydedin.
-type: docs
 weight: 12
 url: /tr/net/processing-document-attachments/retrieve-and-save-attachments/
 ---
@@ -65,6 +64,6 @@ Evet, GroupDocs.Viewer, PDF, Microsoft Office belgeleri, resimler ve daha fazlas
 ### GroupDocs.Viewer for .NET için geçici lisansları nasıl edinebilirim?
  Geçici lisanslar şuradan alınabilir:[bu bağlantı](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Viewer for .NET belgelerini nerede bulabilirim?
- Kapsamlı belgeler mevcut[Burada](https://reference.groupdocs.com/viewer/net/).
+ Kapsamlı belgeler mevcut[Burada](https://tutorials.groupdocs.com/viewer/net/).
 ### GroupDocs.Viewer for .NET için hangi destek seçenekleri mevcut?
  Topluluk forumundan yardım isteyebilirsiniz[Burada](https://forum.groupdocs.com/c/viewer/9).

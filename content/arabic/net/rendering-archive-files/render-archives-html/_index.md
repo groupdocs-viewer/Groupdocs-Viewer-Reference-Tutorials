@@ -3,7 +3,6 @@ title: عرض الأرشيفات على صفحات HTML مفردة أو متعد
 linktitle: عرض الأرشيفات على صفحات HTML مفردة أو متعددة
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض الأرشيفات على صفحات HTML باستخدام GroupDocs.Viewer لـ .NET. قم بدمج إمكانيات عرض المستندات بسهولة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 12
 url: /ar/net/rendering-archive-files/render-archives-html/
 ---

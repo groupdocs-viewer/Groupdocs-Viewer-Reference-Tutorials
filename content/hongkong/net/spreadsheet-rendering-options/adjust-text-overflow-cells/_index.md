@@ -3,7 +3,6 @@ title: 調整儲存格中的文字溢出
 linktitle: 調整儲存格中的文字溢出
 second_title: GroupDocs.Viewer .NET API
 description: 使用 GroupDocs.Viewer 輕鬆管理 .NET 文件中的文字溢位。增強可讀性和使用者體驗。立即下載免費試用版。
-type: docs
 weight: 10
 url: /zh-hant/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 總而言之，GroupDocs.Viewer for .NET 簡化了處理單元格中文字溢出的任務，確保您的文件不僅功能齊全，而且在視覺上也很美觀。透過這些步驟，您可以輕鬆增強電子表格文件的使用者體驗和可讀性。
 ## 常見問題解答
 ### 1. 我可以將 GroupDocs.Viewer for .NET 用於任何類型的文件嗎？
-是的，GroupDocs.Viewer for .NET 支援多種文件格式，包括電子表格、簡報等。請參閱[文件](https://reference.groupdocs.com/viewer/net/)取得完整清單。
+是的，GroupDocs.Viewer for .NET 支援多種文件格式，包括電子表格、簡報等。請參閱[文件](https://tutorials.groupdocs.com/viewer/net/)取得完整清單。
 ### 2. 有免費試用嗎？
 是的，您可以透過下載 GroupDocs.Viewer for .NET 來探索 GroupDocs.Viewer 的功能[免費試用](https://releases.groupdocs.com/).
 ### 3. 對於任何問題，我如何獲得支持？

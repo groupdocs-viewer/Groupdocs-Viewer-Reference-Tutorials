@@ -3,7 +3,6 @@ title: Kijelölt oldalak renderelése
 linktitle: Kijelölt oldalak renderelése
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet dokumentumokból kiválasztott oldalakat renderelni a Groupdocs.Viewer for .NET segítségével. Lépésről lépésre bemutató oktatóprogram kódpéldákkal.
-type: docs
 weight: 17
 url: /hu/net/rendering-options/render-selected-pages/
 ---

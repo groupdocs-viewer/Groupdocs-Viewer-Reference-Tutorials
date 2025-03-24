@@ -3,7 +3,6 @@ title: सीएडी चित्रों में परतें प्र
 linktitle: सीएडी चित्रों में परतें प्रस्तुत करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer के साथ .NET अनुप्रयोगों में CAD रेखाचित्रों को सहजता से प्रस्तुत करें। रेंडरिंग विकल्पों का अन्वेषण करें, परतों को अनुकूलित करें और बहुत कुछ करें।
-type: docs
 weight: 13
 url: /hi/net/rendering-cad-drawings/render-layers-cad/
 ---
@@ -14,7 +13,7 @@ url: /hi/net/rendering-cad-drawings/render-layers-cad/
 - C# प्रोग्रामिंग भाषा की बुनियादी समझ।
 - आपकी मशीन पर .NET विकास वातावरण स्थापित किया गया है।
 -  .NET के लिए GroupDocs.Viewer स्थापित। आप इसे यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.groupdocs.com/viewer/net/).
--  संदर्भ के लिए .NET दस्तावेज़ के लिए GroupDocs.Viewer तक पहुंच, जिसे पाया जा सकता है[यहाँ](https://reference.groupdocs.com/viewer/net/).
+-  संदर्भ के लिए .NET दस्तावेज़ के लिए GroupDocs.Viewer तक पहुंच, जिसे पाया जा सकता है[यहाँ](https://tutorials.groupdocs.com/viewer/net/).
 
 ## नामस्थान आयात करें
 .NET के लिए GroupDocs.Viewer का उपयोग शुरू करने के लिए, आपको अपने प्रोजेक्ट में आवश्यक नेमस्पेस आयात करना होगा। इन चरणों का पालन करें:

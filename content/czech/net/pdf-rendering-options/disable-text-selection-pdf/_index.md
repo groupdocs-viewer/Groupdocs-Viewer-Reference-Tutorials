@@ -3,7 +3,6 @@ title: Zakázat výběr textu v PDF
 linktitle: Zakázat výběr textu v PDF
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak zakázat výběr textu v PDF pomocí GroupDocs.Viewer pro .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou integraci.
-type: docs
 weight: 13
 url: /cs/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

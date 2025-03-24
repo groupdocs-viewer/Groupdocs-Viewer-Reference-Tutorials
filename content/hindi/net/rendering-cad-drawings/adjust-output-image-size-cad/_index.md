@@ -3,7 +3,6 @@ title: सीएडी ड्रॉइंग के लिए आउटपुट
 linktitle: सीएडी ड्रॉइंग के लिए आउटपुट छवि आकार समायोजित करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके CAD ड्राइंग के लिए आउटपुट छवि आकार को समायोजित करना सीखें। सहजता से दृश्यता और प्रयोज्यता बढ़ाएँ।
-type: docs
 weight: 15
 url: /hi/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

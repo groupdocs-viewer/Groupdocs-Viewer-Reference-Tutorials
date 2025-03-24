@@ -3,7 +3,6 @@ title: 선택한 페이지 렌더링
 linktitle: 선택한 페이지 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 Groupdocs.Viewer를 사용하여 문서에서 선택한 페이지를 렌더링하는 방법을 알아보세요. 코드 예제가 포함된 단계별 튜토리얼입니다.
-type: docs
 weight: 17
 url: /ko/net/rendering-options/render-selected-pages/
 ---

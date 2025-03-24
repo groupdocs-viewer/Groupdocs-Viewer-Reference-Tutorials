@@ -3,7 +3,6 @@ title: Включить многоуровневый рендеринг в PDF
 linktitle: Включить многоуровневый рендеринг в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как включить многоуровневую отрисовку в документах PDF с помощью GroupDocs.Viewer для .NET. Улучшите качество просмотра документов без особых усилий.
-type: docs
 weight: 15
 url: /ru/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

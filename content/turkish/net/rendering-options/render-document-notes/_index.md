@@ -3,7 +3,6 @@ title: Belgeyi Notlarla Oluştur
 linktitle: Belgeyi Notlarla Oluştur
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak not içeren belgeleri nasıl oluşturacağınızı öğrenin. .NET uygulamalarınızla kusursuz entegrasyon için adım adım eğitim.
-type: docs
 weight: 14
 url: /tr/net/rendering-options/render-document-notes/
 ---

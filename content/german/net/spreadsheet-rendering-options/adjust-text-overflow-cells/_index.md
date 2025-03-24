@@ -3,7 +3,6 @@ title: Passen Sie den Textüberlauf in Zellen an
 linktitle: Passen Sie den Textüberlauf in Zellen an
 second_title: GroupDocs.Viewer .NET-API
 description: Verwalten Sie Textüberläufe in .NET-Dokumenten mühelos mit GroupDocs.Viewer. Verbessern Sie die Lesbarkeit und das Benutzererlebnis. Laden Sie jetzt Ihre kostenlose Testversion herunter.
-type: docs
 weight: 10
 url: /de/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
 ---
@@ -57,7 +56,7 @@ Jetzt haben Sie den Textüberlauf in Zellen mit GroupDocs.Viewer für .NET erfol
 Zusammenfassend lässt sich sagen, dass GroupDocs.Viewer für .NET den Umgang mit Textüberläufen in Zellen vereinfacht und sicherstellt, dass Ihre Dokumente nicht nur funktional, sondern auch optisch aufpoliert sind. Mit diesen Schritten können Sie die Benutzererfahrung und Lesbarkeit Ihrer Tabellenkalkulationsdokumente mühelos verbessern.
 ## FAQs
 ### 1. Kann ich GroupDocs.Viewer für .NET mit jeder Art von Dokument verwenden?
- Ja, GroupDocs.Viewer für .NET unterstützt eine Vielzahl von Dokumentformaten, einschließlich Tabellenkalkulationen, Präsentationen und mehr. Siehe die[Dokumentation](https://reference.groupdocs.com/viewer/net/) für die vollständige Liste.
+ Ja, GroupDocs.Viewer für .NET unterstützt eine Vielzahl von Dokumentformaten, einschließlich Tabellenkalkulationen, Präsentationen und mehr. Siehe die[Dokumentation](https://tutorials.groupdocs.com/viewer/net/) für die vollständige Liste.
 ### 2. Gibt es eine kostenlose Testversion?
  Ja, Sie können die Funktionen von GroupDocs.Viewer für .NET erkunden, indem Sie Folgendes herunterladen[Kostenlose Testphase](https://releases.groupdocs.com/).
 ### 3. Wie kann ich bei Problemen Unterstützung erhalten?

@@ -3,7 +3,6 @@ title: Tentukan Nama File Saat Merender File Arsip
 linktitle: Tentukan Nama File Saat Merender File Arsip
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender file arsip di .NET menggunakan GroupDocs.Viewer, sehingga meningkatkan kemampuan manajemen dokumen.
-type: docs
 weight: 14
 url: /id/net/rendering-archive-files/specify-filename-render-archive/
 ---

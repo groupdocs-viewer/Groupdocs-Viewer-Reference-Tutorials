@@ -3,7 +3,6 @@ title: Justera bildstorleken för CAD-ritningar
 linktitle: Justera bildstorleken för CAD-ritningar
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du justerar storleken på utdatabilden för CAD-ritningar med GroupDocs.Viewer för .NET. Förbättra synligheten och användbarheten utan ansträngning.
-type: docs
 weight: 15
 url: /sv/net/rendering-cad-drawings/adjust-output-image-size-cad/
 ---

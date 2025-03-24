@@ -3,7 +3,6 @@ title: Információ megtekintése PDF-dokumentumhoz
 linktitle: Információ megtekintése PDF-dokumentumhoz
 second_title: GroupDocs.Viewer .NET API
 description: Ebben az átfogó oktatóanyagban megtudhatja, hogyan nyerhet ki nézeti információkat PDF-dokumentumokból a GroupDocs.Viewer for .NET segítségével.
-type: docs
 weight: 16
 url: /hu/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

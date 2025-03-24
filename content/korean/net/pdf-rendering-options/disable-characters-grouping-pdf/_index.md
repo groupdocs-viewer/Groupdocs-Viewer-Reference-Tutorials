@@ -3,7 +3,6 @@ title: PDF에서 문자 그룹화 비활성화
 linktitle: PDF에서 문자 그룹화 비활성화
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 PDF에서 문자 그룹화를 비활성화하는 방법을 알아보세요. 원활한 문서 렌더링을 위한 단계별 튜토리얼을 따르십시오.
-type: docs
 weight: 11
 url: /ko/net/pdf-rendering-options/disable-characters-grouping-pdf/
 ---

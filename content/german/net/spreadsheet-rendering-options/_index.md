@@ -3,7 +3,6 @@ title: Optionen zum Rendern von Tabellenkalkulationen
 linktitle: Optionen zum Rendern von Tabellenkalkulationen
 second_title: GroupDocs.Viewer .NET-API
 description: Verbessern Sie mühelos die Dokumentvisualisierung in .NET mit GroupDocs.Viewer-Tutorials. Erfahren Sie, wie Sie den Textüberlauf anpassen, Rasterlinien rendern und vieles mehr.
-type: docs
 weight: 37
 url: /de/net/spreadsheet-rendering-options/
 ---

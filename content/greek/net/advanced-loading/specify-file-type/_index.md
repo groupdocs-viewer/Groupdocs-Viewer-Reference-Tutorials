@@ -3,7 +3,6 @@ title: Καθορίστε τον τύπο αρχείου κατά τη φόρτ�
 linktitle: Καθορίστε τον τύπο αρχείου κατά τη φόρτωση εγγράφων
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να προσδιορίζετε τον τύπο αρχείου κατά τη φόρτωση εγγράφων χρησιμοποιώντας το GroupDocs.Viewer για .NET. Αποδώστε διάφορες μορφές με ακρίβεια στις εφαρμογές σας .NET.
-type: docs
 weight: 10
 url: /el/net/advanced-loading/specify-file-type/
 ---

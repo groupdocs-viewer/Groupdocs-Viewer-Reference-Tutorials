@@ -3,7 +3,6 @@ title: Stel de limieten voor de afbeeldingsgrootte in
 linktitle: Stel de limieten voor de afbeeldingsgrootte in
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u moeiteloos limieten voor de afbeeldingsgrootte kunt instellen in .NET-toepassingen met behulp van GroupDocs.Viewer voor .NET, waardoor de kijkervaring van documenten wordt verbeterd.
-type: docs
 weight: 21
 url: /nl/net/rendering-options/set-image-size-limits/
 ---

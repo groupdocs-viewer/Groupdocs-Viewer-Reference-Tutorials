@@ -3,7 +3,6 @@ title: Representar archivos de almacenamiento
 linktitle: Representar archivos de almacenamiento
 second_title: API GroupDocs.Viewer .NET
 description: Descubra tutoriales completos para representar archivos comprimidos utilizando GroupDocs.Viewer para .NET. Integre de manera transparente y eficiente sus aplicaciones .NET.
-type: docs
 weight: 24
 url: /es/net/rendering-archive-files/
 ---

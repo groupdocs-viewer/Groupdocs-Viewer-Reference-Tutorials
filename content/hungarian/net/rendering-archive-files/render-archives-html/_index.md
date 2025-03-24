@@ -3,7 +3,6 @@ title: Archívumok megjelenítése egyetlen vagy több HTML-oldalra
 linktitle: Archívumok megjelenítése egyetlen vagy több HTML-oldalra
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan lehet archívumokat HTML-oldalakká renderelni a GroupDocs.Viewer for .NET segítségével. Könnyedén integrálhatja a dokumentummegtekintési képességeket .NET-alkalmazásaiba.
-type: docs
 weight: 12
 url: /hu/net/rendering-archive-files/render-archives-html/
 ---

@@ -3,7 +3,6 @@ title: Ställ in mätlicens
 linktitle: Ställ in mätlicens
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dina .NET-applikationer med GroupDocs.Viewer för sömlös dokumentvisning. Integrera enkelt dokumentåtergivningsfunktioner i dina projekt.
-type: docs
 weight: 12
 url: /sv/net/getting-started/set-metered-license/
 ---
@@ -55,7 +54,7 @@ Console.WriteLine("License set successfully.");
 Sammanfattningsvis erbjuder GroupDocs.Viewer för .NET en heltäckande lösning för att integrera dokumentvisningsfunktioner i dina .NET-applikationer. Genom att följa de skisserade stegen kan du enkelt ställa in en mätlicens och börja utnyttja funktionerna i GroupDocs.Viewer i dina projekt.
 ## FAQ's
 ### F: Var kan jag hitta dokumentation för GroupDocs.Viewer för .NET?
- Du hittar dokumentationen[här](https://reference.groupdocs.com/viewer/net/).
+ Du hittar dokumentationen[här](https://tutorials.groupdocs.com/viewer/net/).
 ### F: Finns det en gratis testversion tillgänglig för GroupDocs.Viewer för .NET?
  Ja, du kan komma åt den kostnadsfria provperioden[här](https://releases.groupdocs.com/).
 ### F: Hur kan jag få tillfälliga licenser för teständamål?

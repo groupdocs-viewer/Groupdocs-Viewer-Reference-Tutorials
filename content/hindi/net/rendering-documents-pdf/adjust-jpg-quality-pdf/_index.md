@@ -3,7 +3,6 @@ title: प्रस्तुत पीडीएफ में जेपीजी 
 linktitle: प्रस्तुत पीडीएफ में जेपीजी छवि गुणवत्ता समायोजित करें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer का उपयोग करके प्रस्तुत किए गए PDF दस्तावेज़ों में JPG छवि गुणवत्ता को समायोजित करना सीखें। अपने दस्तावेज़ देखने के अनुभव को बेहतर बनाएँ।
-type: docs
 weight: 11
 url: /hi/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 ---

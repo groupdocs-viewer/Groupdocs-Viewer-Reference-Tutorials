@@ -3,7 +3,6 @@ title: Belirli Klasörleri ve Filtre Mesajlarını Oluşturma (Outlook)
 linktitle: Belirli Klasörleri ve Filtre Mesajlarını Oluşturma (Outlook)
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak Outlook'ta belirli klasörleri nasıl oluşturacağınızı ve mesajları nasıl filtreleyeceğinizi öğrenin. .NET uygulamalarında belge yönetimini basitleştirin.
-type: docs
 weight: 11
 url: /tr/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

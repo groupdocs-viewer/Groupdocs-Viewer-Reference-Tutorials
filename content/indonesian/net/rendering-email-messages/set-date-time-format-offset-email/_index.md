@@ -3,7 +3,6 @@ title: Atur Format TanggalWaktu dan Offset Zona Waktu (Email)
 linktitle: Atur Format TanggalWaktu dan Offset Zona Waktu (Email)
 second_title: GroupDocs.Viewer .NET API
 description: Integrasikan GroupDocs.Viewer untuk .NET dengan lancar ke dalam aplikasi Anda untuk kemampuan melihat dokumen yang canggih. Tingkatkan pengalaman pengguna dengan opsi yang dapat disesuaikan.
-type: docs
 weight: 11
 url: /id/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

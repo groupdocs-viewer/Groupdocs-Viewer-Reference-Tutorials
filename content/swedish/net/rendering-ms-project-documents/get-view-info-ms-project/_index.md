@@ -3,7 +3,6 @@ title: Få Visa information för Microsoft Project Documents
 linktitle: Få Visa information för Microsoft Project Documents
 second_title: GroupDocs.Viewer .NET API
 description: Utforska den omfattande handledningen om hur du använder Groupdocs.Viewer för .NET för att enkelt hämta visningsinformation för Microsoft Project-dokument.
-type: docs
 weight: 10
 url: /sv/net/rendering-ms-project-documents/get-view-info-ms-project/
 ---

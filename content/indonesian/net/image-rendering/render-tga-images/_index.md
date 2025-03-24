@@ -3,7 +3,6 @@ title: Render Gambar TGA
 linktitle: Render Gambar TGA
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender gambar TGA dengan mudah di aplikasi .NET menggunakan GroupDocs.Viewer. Tingkatkan kemampuan rendering gambar Anda.
-type: docs
 weight: 17
 url: /id/net/image-rendering/render-tga-images/
 ---

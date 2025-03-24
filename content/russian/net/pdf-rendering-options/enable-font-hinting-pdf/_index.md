@@ -3,7 +3,6 @@ title: Включить хинтинг шрифтов в PDF
 linktitle: Включить хинтинг шрифтов в PDF
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как включить подсказку шрифта в документах PDF с помощью GroupDocs.Viewer для .NET. Следуйте нашему пошаговому руководству для бесшовной интеграции.
-type: docs
 weight: 14
 url: /ru/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

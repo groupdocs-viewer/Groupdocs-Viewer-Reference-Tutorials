@@ -3,7 +3,6 @@ title: Απόδοση εικόνων TGA
 linktitle: Απόδοση εικόνων TGA
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να αποδίδετε εύκολα εικόνες TGA σε εφαρμογές .NET χρησιμοποιώντας το GroupDocs.Viewer. Βελτιώστε τις δυνατότητες απόδοσης εικόνας.
-type: docs
 weight: 17
 url: /el/net/image-rendering/render-tga-images/
 ---

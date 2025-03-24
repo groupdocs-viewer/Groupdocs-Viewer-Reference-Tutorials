@@ -3,7 +3,6 @@ title: Tetapkan Batas Waktu Pemuatan Sumber Daya (Lanjutan)
 linktitle: Tetapkan Batas Waktu Pemuatan Sumber Daya (Lanjutan)
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengonfigurasi batas waktu pemuatan sumber daya di GroupDocs.Viewer untuk .NET secara efisien. Render dokumen master dengan presisi dan stabilitas.
-type: docs
 weight: 13
 url: /id/net/advanced-loading/set-resource-loading-timeout/
 ---

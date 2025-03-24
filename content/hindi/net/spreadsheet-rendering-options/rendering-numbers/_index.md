@@ -3,7 +3,6 @@ title: संख्याओं का प्रतिपादन
 linktitle: संख्याओं का प्रतिपादन
 second_title: GroupDocs.Viewer .NET API
 description: Numbers फ़ाइलों को निर्बाध रूप से प्रस्तुत करने में .NET के लिए Groupdocs.Viewer की शक्ति का अन्वेषण करें। आसानी से HTML, JPG, PNG और PDF में कनवर्ट करें।
-type: docs
 weight: 15
 url: /hi/net/spreadsheet-rendering-options/rendering-numbers/
 ---

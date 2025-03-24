@@ -3,7 +3,6 @@ title: Documenten laden vanaf de lokale schijf
 linktitle: Documenten laden vanaf de lokale schijf
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u documenten naadloos vanaf uw lokale schijf kunt weergeven met Groupdocs.Viewer voor .NET. Verbeter uw .NET-applicaties met efficiënt document.
-type: docs
 weight: 10
 url: /nl/net/loading-documents/loading-document-local-disk/
 ---

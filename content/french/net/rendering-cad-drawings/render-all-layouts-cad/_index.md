@@ -3,7 +3,6 @@ title: Rendre toutes les mises en page dans les dessins CAO
 linktitle: Rendre toutes les mises en page dans les dessins CAO
 second_title: API GroupDocs.Viewer .NET
 description: Découvrez comment restituer toutes les mises en page dans des dessins CAO à l'aide de GroupDocs.Viewer pour .NET. Suivez notre tutoriel complet pour une intégration transparente.
-type: docs
 weight: 11
 url: /fr/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

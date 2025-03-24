@@ -3,7 +3,6 @@ title: Obtenha coordenadas de texto para renderização de imagem
 linktitle: Obtenha coordenadas de texto para renderização de imagem
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como extrair coordenadas de texto para renderização de imagens usando GroupDocs.Viewer for .NET. Aprimore seus recursos de processamento de documentos sem esforço.
-type: docs
 weight: 12
 url: /pt/net/rendering-documents-images/get-text-coordinates-image/
 ---

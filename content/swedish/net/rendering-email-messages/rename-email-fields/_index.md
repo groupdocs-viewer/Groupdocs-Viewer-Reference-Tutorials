@@ -3,7 +3,6 @@ title: Byt namn på e-postfält under rendering
 linktitle: Byt namn på e-postfält under rendering
 second_title: GroupDocs.Viewer .NET API
 description: Förbättra dokumentvisningsupplevelsen med GroupDocs.Viewer för .NET. Återge och anpassa e-postmeddelanden sömlöst.
-type: docs
 weight: 12
 url: /sv/net/rendering-email-messages/rename-email-fields/
 ---

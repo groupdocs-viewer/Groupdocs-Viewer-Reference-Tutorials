@@ -3,7 +3,6 @@ title: Vykreslování CAD výkresů
 linktitle: Vykreslování CAD výkresů
 second_title: GroupDocs.Viewer .NET API
 description: Objevte výukové programy pro vykreslování CAD výkresů pomocí GroupDocs.Viewer pro .NET. Naučte se vylepšovat aplikace .NET pomocí bezproblémové práce se soubory CAD.
-type: docs
 weight: 25
 url: /cs/net/rendering-cad-drawings/
 ---

@@ -3,7 +3,6 @@ title: تمكين عرض الطبقات في PDF
 linktitle: تمكين عرض الطبقات في PDF
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية تمكين عرض الطبقات في مستندات PDF باستخدام GroupDocs.Viewer لـ .NET. تعزيز تجربة عرض المستندات دون عناء.
-type: docs
 weight: 15
 url: /ar/net/pdf-rendering-options/enable-layered-rendering-pdf/
 ---

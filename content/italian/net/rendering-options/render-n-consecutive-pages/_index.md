@@ -3,7 +3,6 @@ title: Eseguire il rendering di N pagine consecutive
 linktitle: Eseguire il rendering di N pagine consecutive
 second_title: API GroupDocs.Viewer .NET
 description: Scopri come integrare GroupDocs.Viewer for .NET nelle tue applicazioni per eseguire facilmente il rendering di documenti con N pagine consecutive.
-type: docs
 weight: 16
 url: /it/net/rendering-options/render-n-consecutive-pages/
 ---

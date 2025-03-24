@@ -3,7 +3,6 @@ title: आउटलुक डेटा फ़ाइलों में रें
 linktitle: आउटलुक डेटा फ़ाइलों में रेंडर करने के लिए आइटम की संख्या सीमित करें
 second_title: GroupDocs.Viewer .NET API
 description: जानें कि .NET के लिए Groupdocs.Viewer का उपयोग करके आउटलुक डेटा फ़ाइलों में रेंडर किए गए आइटम की संख्या को कैसे सीमित किया जाए। निर्बाध एकीकरण के लिए हमारे चरण-दर-चरण का पालन करें।
-type: docs
 weight: 12
 url: /hi/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

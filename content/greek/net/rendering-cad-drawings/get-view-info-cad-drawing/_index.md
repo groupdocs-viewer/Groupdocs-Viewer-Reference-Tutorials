@@ -3,7 +3,6 @@ title: Λάβετε πληροφορίες προβολής για σχέδια 
 linktitle: Λάβετε πληροφορίες προβολής για σχέδια CAD
 second_title: GroupDocs.Viewer .NET API
 description: Μάθετε πώς να ανακτάτε πληροφορίες προβολής για σχέδια CAD χρησιμοποιώντας το GroupDocs.Viewer για .NET. Βελτιώστε τις εφαρμογές σας .NET με απρόσκοπτη διαχείριση αρχείων CAD.
-type: docs
 weight: 10
 url: /el/net/rendering-cad-drawings/get-view-info-cad-drawing/
 ---

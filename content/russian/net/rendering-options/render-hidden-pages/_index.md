@@ -3,7 +3,6 @@ title: Рендеринг скрытых страниц
 linktitle: Рендеринг скрытых страниц
 second_title: GroupDocs.Viewer .NET API
 description: Усовершенствуйте свое .NET-приложение с помощью GroupDocs.Viewer для плавного рендеринга документов. Следуйте нашему пошаговому руководству, чтобы без труда отображать скрытые страницы.
-type: docs
 weight: 15
 url: /ru/net/rendering-options/render-hidden-pages/
 ---

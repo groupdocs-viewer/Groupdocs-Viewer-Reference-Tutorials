@@ -3,7 +3,6 @@ title: Geben Sie beim Laden von Dokumenten den Dateityp an
 linktitle: Geben Sie beim Laden von Dokumenten den Dateityp an
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie beim Laden von Dokumenten mit GroupDocs.Viewer für .NET den Dateityp angeben. Rendern Sie verschiedene Formate in Ihren .NET-Anwendungen präzise.
-type: docs
 weight: 10
 url: /de/net/advanced-loading/specify-file-type/
 ---

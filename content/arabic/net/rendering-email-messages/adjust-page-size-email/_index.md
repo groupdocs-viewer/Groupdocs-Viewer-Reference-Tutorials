@@ -3,7 +3,6 @@ title: ضبط حجم الصفحة عند عرض رسائل البريد الإل
 linktitle: ضبط حجم الصفحة عند عرض رسائل البريد الإلكتروني
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية ضبط حجم الصفحة عند عرض رسائل البريد الإلكتروني إلى PDF باستخدام GroupDocs.Viewer لـ .NET. تعزيز كفاءة عرض المستندات.
-type: docs
 weight: 10
 url: /ar/net/rendering-email-messages/adjust-page-size-email/
 ---

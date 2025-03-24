@@ -3,7 +3,6 @@ title: Tetapkan Batas Ukuran Gambar
 linktitle: Tetapkan Batas Ukuran Gambar
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menetapkan batas ukuran gambar dalam aplikasi .NET dengan mudah menggunakan GroupDocs.Viewer untuk .NET, sehingga meningkatkan pengalaman melihat dokumen.
-type: docs
 weight: 21
 url: /id/net/rendering-options/set-image-size-limits/
 ---

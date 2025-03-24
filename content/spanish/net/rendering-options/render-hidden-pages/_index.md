@@ -3,7 +3,6 @@ title: Representar páginas ocultas
 linktitle: Representar páginas ocultas
 second_title: API GroupDocs.Viewer .NET
 description: Mejore su aplicación .NET con GroupDocs.Viewer para una representación perfecta de documentos. Siga nuestra guía paso a paso para renderizar páginas ocultas sin esfuerzo.
-type: docs
 weight: 15
 url: /es/net/rendering-options/render-hidden-pages/
 ---

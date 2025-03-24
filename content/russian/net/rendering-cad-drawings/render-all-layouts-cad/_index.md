@@ -3,7 +3,6 @@ title: Рендеринг всех макетов в чертежах САПР
 linktitle: Рендеринг всех макетов в чертежах САПР
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как визуализировать все макеты в чертежах САПР с помощью GroupDocs.Viewer для .NET. Следуйте нашему подробному руководству для бесшовной интеграции.
-type: docs
 weight: 11
 url: /ru/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

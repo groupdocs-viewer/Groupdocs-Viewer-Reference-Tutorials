@@ -3,7 +3,6 @@ title: 렌더링 옵션
 linktitle: 렌더링 옵션
 second_title: GroupDocs.Viewer .NET API
 description: 워터마크 추가부터 글꼴 사용자 정의까지 렌더링 옵션에 대한 자습서를 통해 .NET용 GroupDocs.Viewer를 응용 프로그램에 쉽게 통합할 수 있습니다.
-type: docs
 weight: 23
 url: /ko/net/rendering-options/
 ---

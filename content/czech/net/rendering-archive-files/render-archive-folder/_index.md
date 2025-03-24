@@ -3,7 +3,6 @@ title: Vykreslit složku archivu
 linktitle: Vykreslit složku archivu
 second_title: GroupDocs.Viewer .NET API
 description: Integrujte GroupDocs.Viewer for .NET hladce do svých aplikací .NET pro efektivní vykreslování a prohlížení dokumentů.
-type: docs
 weight: 11
 url: /cs/net/rendering-archive-files/render-archive-folder/
 ---

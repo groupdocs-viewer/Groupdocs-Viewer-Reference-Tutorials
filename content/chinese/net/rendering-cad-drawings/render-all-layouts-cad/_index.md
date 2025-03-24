@@ -3,7 +3,6 @@ title: 渲染 CAD 工程图中的所有布局
 linktitle: 渲染 CAD 工程图中的所有布局
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 渲染 CAD 绘图中的所有布局。请遵循我们的无缝集成综合教程。
-type: docs
 weight: 11
 url: /zh/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

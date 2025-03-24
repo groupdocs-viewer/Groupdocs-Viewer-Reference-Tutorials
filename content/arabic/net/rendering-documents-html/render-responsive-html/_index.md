@@ -3,7 +3,6 @@ title: تقديم HTML سريع الاستجابة
 linktitle: تقديم HTML سريع الاستجابة
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض HTML سريع الاستجابة باستخدام Groupdocs.Viewer لـ .NET، مما يضمن تجربة المشاهدة المثالية عبر الأجهزة.
-type: docs
 weight: 13
 url: /ar/net/rendering-documents-html/render-responsive-html/
 ---

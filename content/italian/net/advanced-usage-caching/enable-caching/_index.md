@@ -3,7 +3,6 @@ title: Abilita la memorizzazione nella cache per un'elaborazione dei documenti p
 linktitle: Abilita la memorizzazione nella cache per un'elaborazione dei documenti più rapida
 second_title: API GroupDocs.Viewer .NET
 description: Migliora la velocità di elaborazione dei documenti nelle app .NET con GroupDocs.Viewer sfruttando la memorizzazione nella cache. Ottimizza le prestazioni senza sforzo.
-type: docs
 weight: 10
 url: /it/net/advanced-usage-caching/enable-caching/
 ---

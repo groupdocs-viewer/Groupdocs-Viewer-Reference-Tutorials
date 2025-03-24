@@ -3,7 +3,6 @@ title: تقديم مع الخطوط المخصصة
 linktitle: تقديم مع الخطوط المخصصة
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية عرض المستندات بخطوط مخصصة باستخدام GroupDocs.Viewer لـ .NET. تعزيز العروض المرئية دون عناء.
-type: docs
 weight: 18
 url: /ar/net/rendering-options/render-custom-fonts/
 ---

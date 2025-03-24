@@ -3,7 +3,6 @@ title: Omezte počet položek k vykreslení v datových souborech aplikace Outlo
 linktitle: Omezte počet položek k vykreslení v datových souborech aplikace Outlook
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak omezit počet položek vykreslených v datových souborech aplikace Outlook pomocí Groupdocs.Viewer for .NET. Postupujte krok za krokem pro bezproblémovou integraci.
-type: docs
 weight: 12
 url: /cs/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/
 ---

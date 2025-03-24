@@ -3,7 +3,6 @@ title: عرض التغييرات المتعقبة
 linktitle: عرض التغييرات المتعقبة
 second_title: GroupDocs.Viewer .NET API
 description: اكتشف كيفية عرض التغييرات المتعقبة في المستندات بسهولة باستخدام GroupDocs.Viewer لـ .NET. تعزيز كفاءة إدارة المستندات الخاصة بك.
-type: docs
 weight: 10
 url: /ar/net/rendering-word-processing-documents/render-tracked-changes/
 ---

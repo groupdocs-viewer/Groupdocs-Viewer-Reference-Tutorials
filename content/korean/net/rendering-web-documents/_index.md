@@ -3,7 +3,6 @@ title: 웹 문서 렌더링
 linktitle: 웹 문서 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer를 사용하여 .NET에서 사용자 정의 여백을 사용하여 CHM 파일 및 HTML을 렌더링하는 방법을 알아보세요. CHM을 HTML, JPG, PNG 및 PDF 형식으로 원활하게 변환합니다.
-type: docs
 weight: 35
 url: /ko/net/rendering-web-documents/
 ---

@@ -3,7 +3,6 @@ title: Рендеринг изображений TGA
 linktitle: Рендеринг изображений TGA
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как легко визуализировать изображения TGA в приложениях .NET с помощью GroupDocs.Viewer. Расширьте свои возможности рендеринга изображений.
-type: docs
 weight: 17
 url: /ru/net/image-rendering/render-tga-images/
 ---

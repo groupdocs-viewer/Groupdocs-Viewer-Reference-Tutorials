@@ -3,7 +3,6 @@ title: PDF'de Yazı Tipi İpuçlarını Etkinleştir
 linktitle: PDF'de Yazı Tipi İpuçlarını Etkinleştir
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer for .NET'i kullanarak PDF belgelerinde yazı tipi ipuçlarını nasıl etkinleştireceğinizi öğrenin. Sorunsuz entegrasyon için adım adım eğitimimizi izleyin.
-type: docs
 weight: 14
 url: /tr/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

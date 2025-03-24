@@ -3,7 +3,6 @@ title: เรนเดอร์รูปภาพ CMX
 linktitle: เรนเดอร์รูปภาพ CMX
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์รูปภาพ CMX เป็นรูปแบบต่างๆ ได้อย่างง่ายดายโดยใช้ GroupDocs.Viewer สำหรับ .NET ปรับปรุงการจัดการเอกสารของคุณ
-type: docs
 weight: 13
 url: /th/net/image-rendering/render-cmx-images/
 ---

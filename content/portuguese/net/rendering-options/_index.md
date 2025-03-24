@@ -3,7 +3,6 @@ title: Opções de renderização
 linktitle: Opções de renderização
 second_title: API GroupDocs.Viewer .NET
 description: Integre facilmente o GroupDocs.Viewer for .NET aos seus aplicativos com tutoriais sobre opções de renderização, desde a adição de marcas d'água até a personalização de fontes.
-type: docs
 weight: 23
 url: /pt/net/rendering-options/
 ---

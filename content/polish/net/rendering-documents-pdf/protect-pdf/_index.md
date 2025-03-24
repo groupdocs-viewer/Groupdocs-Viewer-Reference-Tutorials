@@ -3,7 +3,6 @@ title: Chroń renderowany plik PDF hasłem
 linktitle: Chroń renderowany plik PDF hasłem
 second_title: GroupDocs.Viewer API .NET
 description: Chroń swoje renderowane pliki PDF za pomocą haseł, korzystając z Groupdocs.Viewer dla .NET. Dbaj o bezpieczeństwo i poufność swoich dokumentów.
-type: docs
 weight: 12
 url: /pl/net/rendering-documents-pdf/protect-pdf/
 ---

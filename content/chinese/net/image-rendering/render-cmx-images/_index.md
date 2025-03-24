@@ -3,7 +3,6 @@ title: 渲染 CMX 图像
 linktitle: 渲染 CMX 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 轻松将 CMX 图像渲染为各种格式。增强您的文档管理。
-type: docs
 weight: 13
 url: /zh/net/image-rendering/render-cmx-images/
 ---

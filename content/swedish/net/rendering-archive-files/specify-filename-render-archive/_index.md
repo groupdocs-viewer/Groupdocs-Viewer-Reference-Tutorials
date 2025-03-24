@@ -3,7 +3,6 @@ title: Ange filnamn när du renderar arkivfiler
 linktitle: Ange filnamn när du renderar arkivfiler
 second_title: GroupDocs.Viewer .NET API
 description: Lär dig hur du renderar arkivfiler i .NET med GroupDocs.Viewer, vilket förbättrar dokumenthanteringsmöjligheterna.
-type: docs
 weight: 14
 url: /sv/net/rendering-archive-files/specify-filename-render-archive/
 ---

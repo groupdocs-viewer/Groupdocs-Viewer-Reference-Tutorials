@@ -3,7 +3,6 @@ title: 禁用 PDF 中的文本选择
 linktitle: 禁用 PDF 中的文本选择
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 禁用 PDF 中的文本选择。请按照我们的分步指南进行无缝集成。
-type: docs
 weight: 13
 url: /zh/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

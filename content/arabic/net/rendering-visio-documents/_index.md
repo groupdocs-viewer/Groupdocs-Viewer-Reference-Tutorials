@@ -3,7 +3,6 @@ title: عرض مستندات Visio
 linktitle: عرض مستندات Visio
 second_title: GroupDocs.Viewer .NET API
 description: استكشف البرامج التعليمية حول عرض مستندات Visio باستخدام GroupDocs.Viewer لـ .NET. تعلم كيفية تحسين إمكانيات عرض المستندات في تطبيقات .NET الخاصة بك دون عناء.
-type: docs
 weight: 34
 url: /ar/net/rendering-visio-documents/
 ---

@@ -3,7 +3,6 @@ title: 渲染 CDR 影像
 linktitle: 渲染 CDR 影像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 將 CDR 圖像呈現為 HTML、JPG、PNG 和 PDF。使用本教學輕鬆轉換 CorelDRAW 檔案。
-type: docs
 weight: 12
 url: /zh-hant/net/image-rendering/render-cdr-images/
 ---

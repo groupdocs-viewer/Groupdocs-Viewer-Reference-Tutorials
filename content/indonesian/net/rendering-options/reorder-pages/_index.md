@@ -3,7 +3,6 @@ title: Susun Ulang Halaman dalam Dokumen
 linktitle: Susun Ulang Halaman dalam Dokumen
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara menyusun ulang halaman dalam dokumen menggunakan GroupDocs.Viewer untuk .NET. Ikuti tutorial langkah demi langkah kami untuk pengelolaan dokumen yang lancar.
-type: docs
 weight: 19
 url: /id/net/rendering-options/reorder-pages/
 ---

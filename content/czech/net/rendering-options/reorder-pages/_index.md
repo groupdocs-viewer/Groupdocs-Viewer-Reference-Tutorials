@@ -3,7 +3,6 @@ title: Změňte pořadí stránek v dokumentu
 linktitle: Změňte pořadí stránek v dokumentu
 second_title: GroupDocs.Viewer .NET API
 description: Přečtěte si, jak změnit pořadí stránek v dokumentu pomocí GroupDocs.Viewer for .NET. Postupujte podle našeho podrobného návodu pro bezproblémovou správu dokumentů.
-type: docs
 weight: 19
 url: /cs/net/rendering-options/reorder-pages/
 ---

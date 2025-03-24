@@ -3,7 +3,6 @@ title: 渲染特定文件夹并过滤消息 (Outlook)
 linktitle: 渲染特定文件夹并过滤消息 (Outlook)
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 在 Outlook 中呈现特定文件夹和筛选消息。简化 .NET 应用程序中的文档管理。
-type: docs
 weight: 11
 url: /zh/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---

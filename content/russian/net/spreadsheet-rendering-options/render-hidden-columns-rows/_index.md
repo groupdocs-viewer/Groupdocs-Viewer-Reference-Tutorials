@@ -3,7 +3,6 @@ title: Отображение скрытых столбцов и строк
 linktitle: Отображение скрытых столбцов и строк
 second_title: GroupDocs.Viewer .NET API
 description: Легко разблокируйте скрытые данные в электронных таблицах с помощью GroupDocs.Viewer для .NET. Следуйте нашему пошаговому руководству, чтобы открыть скрытые столбцы и строки.
-type: docs
 weight: 13
 url: /ru/net/spreadsheet-rendering-options/render-hidden-columns-rows/
 ---

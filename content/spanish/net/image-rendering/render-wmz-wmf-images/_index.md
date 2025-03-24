@@ -3,7 +3,6 @@ title: Renderizar imágenes WMZ y WMF
 linktitle: Renderizar imágenes WMZ y WMF
 second_title: API GroupDocs.Viewer .NET
 description: Procese sin esfuerzo imágenes WMZ y WMF en aplicaciones .NET utilizando GroupDocs.Viewer para .NET. Mejore las capacidades de procesamiento de documentos con facilidad.
-type: docs
 weight: 18
 url: /es/net/image-rendering/render-wmz-wmf-images/
 ---
@@ -21,7 +20,7 @@ Antes de sumergirse en el proceso de renderizado de imágenes WMZ y WMF utilizan
 
 3. Familiaridad con el entorno .NET: una comprensión fundamental del marco .NET y el lenguaje de programación C# es esencial para implementar el proceso de renderizado de manera efectiva.
 
-4.  Integración en su proyecto: asegúrese de que GroupDocs.Viewer para .NET esté integrado correctamente en su proyecto .NET. Consulte la documentación para obtener instrucciones detalladas sobre la integración:[Documentación](https://reference.groupdocs.com/viewer/net/).
+4.  Integración en su proyecto: asegúrese de que GroupDocs.Viewer para .NET esté integrado correctamente en su proyecto .NET. Consulte la documentación para obtener instrucciones detalladas sobre la integración:[Documentación](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importar espacios de nombres
 

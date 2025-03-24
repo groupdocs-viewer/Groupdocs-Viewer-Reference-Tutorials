@@ -3,7 +3,6 @@ title: Renderizar layout único em desenhos CAD
 linktitle: Renderizar layout único em desenhos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar layout único em desenhos CAD usando GroupDocs.Viewer for .NET. Etapas fáceis para integração perfeita em seus aplicativos .NET.
-type: docs
 weight: 14
 url: /pt/net/rendering-cad-drawings/render-single-layout-cad/
 ---

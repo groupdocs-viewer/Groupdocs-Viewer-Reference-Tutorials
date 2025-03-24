@@ -3,7 +3,6 @@ title: Rendering av arkivfiler
 linktitle: Rendering av arkivfiler
 second_title: GroupDocs.Viewer .NET API
 description: Upptäck omfattande självstudier för att rendera arkivfiler med GroupDocs.Viewer för .NET. Integrera sömlöst och effektivt i dina .NET-applikationer.
-type: docs
 weight: 24
 url: /sv/net/rendering-archive-files/
 ---

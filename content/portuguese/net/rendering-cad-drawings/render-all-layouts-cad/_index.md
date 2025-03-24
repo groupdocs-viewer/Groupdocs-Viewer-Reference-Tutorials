@@ -3,7 +3,6 @@ title: Renderizar todos os layouts em desenhos CAD
 linktitle: Renderizar todos os layouts em desenhos CAD
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como renderizar todos os layouts em desenhos CAD usando GroupDocs.Viewer for .NET. Siga nosso tutorial abrangente para uma integração perfeita.
-type: docs
 weight: 11
 url: /pt/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

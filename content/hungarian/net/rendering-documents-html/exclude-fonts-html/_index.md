@@ -3,7 +3,6 @@ title: Betűtípusok kizárása a renderelt HTML-ből
 linktitle: Betűtípusok kizárása a renderelt HTML-ből
 second_title: GroupDocs.Viewer .NET API
 description: Ismerje meg, hogyan zárhat ki betűtípusokat a megjelenített HTML-ből a GroupDocs.Viewer for .NET segítségével. Kövesse ezt a lépésről lépésre szóló útmutatót a zökkenőmentes dokumentummegjelenítéshez.
-type: docs
 weight: 10
 url: /hu/net/rendering-documents-html/exclude-fonts-html/
 ---

@@ -3,7 +3,6 @@ title: การเรนเดอร์เอกสารเป็น PDF
 linktitle: การเรนเดอร์เอกสารเป็น PDF
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์เอกสารเป็น PDF ปรับคุณภาพของภาพ JPG และปกป้อง PDF ด้วยรหัสผ่านโดยใช้ GroupDocs.Viewer สำหรับบทช่วยสอน .NET
-type: docs
 weight: 29
 url: /th/net/rendering-documents-pdf/
 ---

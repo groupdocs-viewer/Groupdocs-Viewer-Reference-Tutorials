@@ -3,7 +3,6 @@ title: إعادة تسمية حقول البريد الإلكتروني أثنا
 linktitle: إعادة تسمية حقول البريد الإلكتروني أثناء العرض
 second_title: GroupDocs.Viewer .NET API
 description: قم بتحسين تجربة عرض المستندات باستخدام GroupDocs.Viewer لـ .NET. عرض وتخصيص رسائل البريد الإلكتروني بسلاسة.
-type: docs
 weight: 12
 url: /ar/net/rendering-email-messages/rename-email-fields/
 ---

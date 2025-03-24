@@ -3,7 +3,6 @@ title: Ställ in datum- och tidsformat och tidszonförskjutning (e-post)
 linktitle: Ställ in datum- och tidsformat och tidszonförskjutning (e-post)
 second_title: GroupDocs.Viewer .NET API
 description: Integrera GroupDocs.Viewer för .NET sömlöst i dina applikationer för kraftfulla dokumentvisningsmöjligheter. Förbättra användarupplevelsen med anpassningsbara alternativ.
-type: docs
 weight: 11
 url: /sv/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

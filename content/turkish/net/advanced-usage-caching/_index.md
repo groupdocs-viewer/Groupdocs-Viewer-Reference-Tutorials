@@ -3,7 +3,6 @@ title: Gelişmiş Kullanım (Önbelleğe Alma)
 linktitle: Gelişmiş Kullanım (Önbelleğe Alma)
 second_title: GroupDocs.Viewer .NET API'si
 description: GroupDocs.Viewer ile .NET uygulamalarında belge işleme hızını optimize etmeye yönelik gelişmiş teknikleri keşfedin. Daha hızlı performans için önbelleğe almayı nasıl etkinleştireceğinizi şimdi öğrenin!
-type: docs
 weight: 22
 url: /tr/net/advanced-usage-caching/
 ---

@@ -3,7 +3,6 @@ title: Muat Dokumen dari Disk Lokal
 linktitle: Muat Dokumen dari Disk Lokal
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara merender dokumen dengan lancar dari disk lokal Anda menggunakan Groupdocs.Viewer untuk .NET. Sempurnakan aplikasi .NET Anda dengan dokumen yang efisien.
-type: docs
 weight: 10
 url: /id/net/loading-documents/loading-document-local-disk/
 ---

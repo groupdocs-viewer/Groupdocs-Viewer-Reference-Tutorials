@@ -3,7 +3,6 @@ title: रेंडरिंग के दौरान ईमेल फ़ील
 linktitle: रेंडरिंग के दौरान ईमेल फ़ील्ड का नाम बदलें
 second_title: GroupDocs.Viewer .NET API
 description: .NET के लिए GroupDocs.Viewer के साथ दस्तावेज़ देखने का अनुभव बढ़ाएँ। ईमेल को निर्बाध रूप से प्रस्तुत और अनुकूलित करें।
-type: docs
 weight: 12
 url: /hi/net/rendering-email-messages/rename-email-fields/
 ---

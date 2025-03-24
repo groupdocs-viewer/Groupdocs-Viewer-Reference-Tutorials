@@ -3,7 +3,6 @@ title: Substituir fonte ausente
 linktitle: Substituir fonte ausente
 second_title: API GroupDocs.Viewer .NET
 description: Aprenda como substituir fontes ausentes em documentos .NET sem esforço usando GroupDocs.Viewer. Garanta uma renderização precisa com etapas simples.
-type: docs
 weight: 20
 url: /pt/net/rendering-options/replace-missing-font/
 ---

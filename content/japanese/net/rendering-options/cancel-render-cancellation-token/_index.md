@@ -3,7 +3,6 @@ title: キャンセルトークンを使用してレンダリングをキャン�
 linktitle: キャンセルトークンを使用してレンダリングをキャンセルする
 second_title: GroupDocs.Viewer .NET API
 description: Groupdocs.Viewer for .NET を .NET プロジェクトにシームレスに統合して、ドキュメントを効率的に表示します。
-type: docs
 weight: 11
 url: /ja/net/rendering-options/cancel-render-cancellation-token/
 ---

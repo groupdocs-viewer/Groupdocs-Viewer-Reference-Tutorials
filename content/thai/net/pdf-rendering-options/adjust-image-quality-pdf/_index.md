@@ -3,7 +3,6 @@ title: ปรับคุณภาพของภาพในรูปแบบ 
 linktitle: ปรับคุณภาพของภาพในรูปแบบ PDF
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีปรับคุณภาพของภาพในเอกสาร PDF โดยใช้ GroupDocs.Viewer สำหรับ .NET ปฏิบัติตามบทช่วยสอนทีละขั้นตอนของเราเพื่อการบูรณาการที่ราบรื่น
-type: docs
 weight: 10
 url: /th/net/pdf-rendering-options/adjust-image-quality-pdf/
 ---

@@ -3,7 +3,6 @@ title: Carpeta de archivo de renderizado
 linktitle: Carpeta de archivo de renderizado
 second_title: API GroupDocs.Viewer .NET
 description: Integre GroupDocs.Viewer para .NET sin problemas en sus aplicaciones .NET para obtener capacidades eficientes de representación y visualización de documentos.
-type: docs
 weight: 11
 url: /es/net/rendering-archive-files/render-archive-folder/
 ---

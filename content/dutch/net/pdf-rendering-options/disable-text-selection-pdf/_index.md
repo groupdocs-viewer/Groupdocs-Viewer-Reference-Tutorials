@@ -3,7 +3,6 @@ title: Schakel tekstselectie in PDF uit
 linktitle: Schakel tekstselectie in PDF uit
 second_title: GroupDocs.Viewer .NET-API
 description: Leer hoe u tekstselectie in PDF kunt uitschakelen met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze handleiding voor een naadloze integratie.
-type: docs
 weight: 13
 url: /nl/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

@@ -3,7 +3,6 @@ title: Načtěte dokumenty se specifickým kódováním
 linktitle: Načtěte dokumenty se specifickým kódováním
 second_title: GroupDocs.Viewer .NET API
 description: Vylepšete své aplikace .NET bezproblémovým prohlížením dokumentů pomocí GroupDocs.Viewer pro .NET. Bez námahy načtěte dokumenty se specifickým kódováním a přizpůsobte si zážitek ze sledování.
-type: docs
 weight: 11
 url: /cs/net/advanced-loading/load-documents-encoding/
 ---

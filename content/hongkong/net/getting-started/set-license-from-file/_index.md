@@ -3,7 +3,6 @@ title: 從文件設定許可證
 linktitle: 從文件設定許可證
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何輕鬆地將 GroupDocs.Viewer for .NET 整合到您的應用程式中。設定許可證、檢視文件並自訂檢視器外觀。
-type: docs
 weight: 10
 url: /zh-hant/net/getting-started/set-license-from-file/
 ---

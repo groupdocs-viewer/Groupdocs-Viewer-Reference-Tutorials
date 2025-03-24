@@ -3,7 +3,6 @@ title: 내장 또는 외부 리소스를 사용하여 렌더링
 linktitle: 내장 또는 외부 리소스를 사용하여 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: 원활한 렌더링을 위해 GroupDocs.Viewer를 사용하여 .NET 문서 보기를 향상시킵니다. 효율적인 통합과 우수한 사용자 경험을 위해 튜토리얼을 따르십시오.
-type: docs
 weight: 12
 url: /ko/net/rendering-documents-html/render-html-resources/
 ---

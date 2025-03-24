@@ -3,7 +3,6 @@ title: Рендеринг адаптивного HTML
 linktitle: Рендеринг адаптивного HTML
 second_title: GroupDocs.Viewer .NET API
 description: Узнайте, как визуализировать адаптивный HTML-код с помощью Groupdocs.Viewer для .NET, обеспечивая оптимальное качество просмотра на всех устройствах.
-type: docs
 weight: 13
 url: /ru/net/rendering-documents-html/render-responsive-html/
 ---

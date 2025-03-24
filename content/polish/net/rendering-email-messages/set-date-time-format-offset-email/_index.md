@@ -3,7 +3,6 @@ title: Ustawianie formatu daty i godziny oraz przesunięcia strefy czasowej (e-m
 linktitle: Ustawianie formatu daty i godziny oraz przesunięcia strefy czasowej (e-mail)
 second_title: GroupDocs.Viewer API .NET
 description: Bezproblemowo zintegruj GroupDocs.Viewer for .NET ze swoimi aplikacjami, aby uzyskać zaawansowane możliwości przeglądania dokumentów. Zwiększ wygodę użytkownika dzięki konfigurowalnym opcjom.
-type: docs
 weight: 11
 url: /pl/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

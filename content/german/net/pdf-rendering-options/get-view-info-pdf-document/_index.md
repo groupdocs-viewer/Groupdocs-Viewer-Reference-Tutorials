@@ -3,7 +3,6 @@ title: Informationen zum Anzeigen von PDF-Dokumenten abrufen
 linktitle: Informationen zum Anzeigen von PDF-Dokumenten abrufen
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie in diesem umfassenden Tutorial, wie Sie mit GroupDocs.Viewer für .NET Ansichtsinformationen aus PDF-Dokumenten extrahieren.
-type: docs
 weight: 16
 url: /de/net/pdf-rendering-options/get-view-info-pdf-document/
 ---

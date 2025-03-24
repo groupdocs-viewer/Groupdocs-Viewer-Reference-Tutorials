@@ -3,7 +3,6 @@ title: Załaduj dokumenty z określonym kodowaniem
 linktitle: Załaduj dokumenty z określonym kodowaniem
 second_title: GroupDocs.Viewer API .NET
 description: Ulepsz swoje aplikacje .NET dzięki płynnemu przeglądaniu dokumentów za pomocą GroupDocs.Viewer dla .NET. Bez wysiłku ładuj dokumenty z określonym kodowaniem i dostosowuj sposób przeglądania.
-type: docs
 weight: 11
 url: /pl/net/advanced-loading/load-documents-encoding/
 ---

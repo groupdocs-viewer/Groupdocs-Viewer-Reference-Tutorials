@@ -3,7 +3,6 @@ title: Załaduj dokumenty ze strumienia
 linktitle: Załaduj dokumenty ze strumienia
 second_title: GroupDocs.Viewer API .NET
 description: Dowiedz się, jak bezproblemowo ładować dokumenty ze strumieni za pomocą GroupDocs.Viewer dla .NET. Ulepsz swoje aplikacje .NET dzięki zaawansowanym możliwościom przeglądania dokumentów.
-type: docs
 weight: 12
 url: /pl/net/loading-documents/loading-document-stream/
 ---

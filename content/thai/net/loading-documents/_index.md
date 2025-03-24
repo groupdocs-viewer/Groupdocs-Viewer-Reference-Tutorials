@@ -3,7 +3,6 @@ title: กำลังโหลดเอกสาร
 linktitle: กำลังโหลดเอกสาร
 second_title: GroupDocs.Viewer .NET API
 description: ค้นพบวิธีการโหลดและเรนเดอร์เอกสารอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer .NET สำรวจบทช่วยสอนการโหลดดิสก์ สตรีม และ FTP ในเครื่องสำหรับแอป .NET ที่ได้รับการปรับปรุง
-type: docs
 weight: 20
 url: /th/net/loading-documents/
 ---

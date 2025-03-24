@@ -3,7 +3,6 @@ title: Render AI Images
 linktitle: Render AI Images
 second_title: GroupDocs.Viewer .NET API
 description: Learn how to render AI images effortlessly in .NET applications using GroupDocs.Viewer for .NET. Follow our step-by-step tutorial for seamless integration.
-type: docs
 weight: 10
 url: /net/image-rendering/render-ai-images/
 ---

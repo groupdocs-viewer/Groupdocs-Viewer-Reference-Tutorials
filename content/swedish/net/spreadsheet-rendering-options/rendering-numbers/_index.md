@@ -3,7 +3,6 @@ title: Återgivningssiffror
 linktitle: Återgivningssiffror
 second_title: GroupDocs.Viewer .NET API
 description: Utforska kraften i Groupdocs.Viewer för .NET när det gäller att rendera Numbers-filer sömlöst. Konvertera till HTML, JPG, PNG och PDF utan ansträngning.
-type: docs
 weight: 15
 url: /sv/net/spreadsheet-rendering-options/rendering-numbers/
 ---

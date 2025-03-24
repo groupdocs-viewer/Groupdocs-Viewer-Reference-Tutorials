@@ -3,7 +3,6 @@ title: PDF에서 글꼴 힌트 활성화
 linktitle: PDF에서 글꼴 힌트 활성화
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하여 PDF 문서에서 글꼴 힌트를 활성화하는 방법을 알아보세요. 원활한 통합을 위해 단계별 튜토리얼을 따르세요.
-type: docs
 weight: 14
 url: /ko/net/pdf-rendering-options/enable-font-hinting-pdf/
 ---

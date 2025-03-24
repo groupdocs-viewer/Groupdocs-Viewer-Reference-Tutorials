@@ -3,7 +3,6 @@ title: キャッシュを有効にしてドキュメント処理を高速化す�
 linktitle: キャッシュを有効にしてドキュメント処理を高速化する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer では、キャッシュを利用して .NET アプリのドキュメント処理速度を向上させます。パフォーマンスを簡単に最適化します。
-type: docs
 weight: 10
 url: /ja/net/advanced-usage-caching/enable-caching/
 ---

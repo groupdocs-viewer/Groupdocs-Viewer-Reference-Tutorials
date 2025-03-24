@@ -3,7 +3,6 @@ title: Microsoft Project 문서 렌더링
 linktitle: Microsoft Project 문서 렌더링
 second_title: GroupDocs.Viewer .NET API
 description: .NET용 GroupDocs.Viewer를 사용하면 Microsoft Project 문서에 대한 보기 정보를 쉽게 검색할 수 있습니다. 다양한 렌더링 기능으로 생산성을 향상하세요.
-type: docs
 weight: 40
 url: /ko/net/rendering-ms-project-documents/
 ---

@@ -3,7 +3,6 @@ title: N aufeinanderfolgende Seiten rendern
 linktitle: N aufeinanderfolgende Seiten rendern
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie GroupDocs.Viewer für .NET in Ihre Anwendungen integrieren, um Dokumente mit N aufeinanderfolgenden Seiten mühelos darzustellen.
-type: docs
 weight: 16
 url: /de/net/rendering-options/render-n-consecutive-pages/
 ---

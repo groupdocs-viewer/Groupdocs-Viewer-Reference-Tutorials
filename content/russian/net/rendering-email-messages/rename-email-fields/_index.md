@@ -3,7 +3,6 @@ title: Переименуйте поля электронной почты во 
 linktitle: Переименуйте поля электронной почты во время рендеринга
 second_title: GroupDocs.Viewer .NET API
 description: Улучшите возможности просмотра документов с помощью GroupDocs.Viewer для .NET. Легко визуализируйте и настраивайте электронные письма.
-type: docs
 weight: 12
 url: /ru/net/rendering-email-messages/rename-email-fields/
 ---

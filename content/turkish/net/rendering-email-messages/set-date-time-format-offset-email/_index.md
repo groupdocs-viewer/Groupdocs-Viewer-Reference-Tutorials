@@ -3,7 +3,6 @@ title: TarihSaat Formatını ve Saat Dilimi Farkını (E-posta) Ayarlayın
 linktitle: TarihSaat Formatını ve Saat Dilimi Farkını (E-posta) Ayarlayın
 second_title: GroupDocs.Viewer .NET API'si
 description: Güçlü belge görüntüleme yetenekleri için GroupDocs.Viewer for .NET'i uygulamalarınıza sorunsuz bir şekilde entegre edin. Özelleştirilebilir seçeneklerle kullanıcı deneyimini geliştirin.
-type: docs
 weight: 11
 url: /tr/net/rendering-email-messages/set-date-time-format-offset-email/
 ---

@@ -3,7 +3,6 @@ title: 添付文書の取得と印刷
 linktitle: 添付文書の取得と印刷
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用して、ドキュメント表示機能を .NET アプリケーションにシームレスに統合します。添付文書を簡単に取得して印刷します。
-type: docs
 weight: 11
 url: /ja/net/processing-document-attachments/retrieve-and-print-attachments/
 ---

@@ -3,7 +3,6 @@ title: Megjelenítés szövegfedővel a megjelenítéshez
 linktitle: Megjelenítés szövegfedővel a megjelenítéshez
 second_title: GroupDocs.Viewer .NET API
 description: Zökkenőmentesen jelenítse meg a dokumentumokat .NET-alkalmazásokban a GroupDocs.Viewer segítségével, amely különféle formátumokat támogat a jobb felhasználói élmény érdekében.
-type: docs
 weight: 13
 url: /hu/net/rendering-documents-images/render-with-text-overlay/
 ---

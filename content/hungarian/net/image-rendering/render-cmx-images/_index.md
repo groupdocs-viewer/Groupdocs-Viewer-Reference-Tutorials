@@ -3,7 +3,6 @@ title: Rendereljen CMX képeket
 linktitle: Rendereljen CMX képeket
 second_title: GroupDocs.Viewer .NET API
 description: Tanulja meg, hogyan lehet könnyedén CMX képeket különböző formátumokba renderelni a GroupDocs.Viewer for .NET segítségével. Javítsa dokumentumkezelését.
-type: docs
 weight: 13
 url: /hu/net/image-rendering/render-cmx-images/
 ---

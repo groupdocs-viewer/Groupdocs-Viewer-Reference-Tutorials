@@ -3,7 +3,6 @@ title: アーカイブ ファイルをレンダリングするときにファイ
 linktitle: アーカイブ ファイルをレンダリングするときにファイル名を指定する
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer を使用して .NET でアーカイブ ファイルをレンダリングし、ドキュメント管理機能を強化する方法を学びます。
-type: docs
 weight: 14
 url: /ja/net/rendering-archive-files/specify-filename-render-archive/
 ---

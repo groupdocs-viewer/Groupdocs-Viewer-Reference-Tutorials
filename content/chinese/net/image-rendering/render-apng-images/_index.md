@@ -3,7 +3,6 @@ title: 渲染 APNG 图像
 linktitle: 渲染 APNG 图像
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 Groupdocs.Viewer for .NET 以各种格式呈现 APNG 图像。包含代码示例的分步指南。
-type: docs
 weight: 11
 url: /zh/net/image-rendering/render-apng-images/
 ---

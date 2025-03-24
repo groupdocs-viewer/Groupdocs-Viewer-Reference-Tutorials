@@ -3,7 +3,6 @@ title: ย่อขนาดเอกสาร HTML ที่แสดงผล
 linktitle: ย่อขนาดเอกสาร HTML ที่แสดงผล
 second_title: GroupDocs.Viewer .NET API
 description: เรียนรู้วิธีเรนเดอร์เอกสาร HTML ในแอปพลิเคชัน .NET ได้อย่างราบรื่นโดยใช้ GroupDocs.Viewer สำหรับ .NET
-type: docs
 weight: 11
 url: /th/net/rendering-documents-html/minify-html/
 ---

@@ -3,7 +3,6 @@ title: أضف علامة مائية في المستند
 linktitle: أضف علامة مائية في المستند
 second_title: GroupDocs.Viewer .NET API
 description: تعرف على كيفية إضافة علامات مائية إلى المستندات بسلاسة باستخدام GroupDocs.Viewer لـ .NET. قم بتعزيز أمان المستندات والعلامة التجارية باستخدام هذا البرنامج التعليمي سهل المتابعة.
-type: docs
 weight: 10
 url: /ar/net/rendering-options/add-watermark/
 ---

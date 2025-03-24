@@ -3,7 +3,6 @@ title: Opsi Pemuatan Tingkat Lanjut
 linktitle: Opsi Pemuatan Tingkat Lanjut
 second_title: GroupDocs.Viewer .NET API
 description: Tingkatkan aplikasi .NET Anda dengan GroupDocs.Viewer untuk tutorial .NET. Pelajari cara menentukan jenis file, mengelola pengkodean, memuat dokumen yang dilindungi kata sandi, dan banyak lagi.
-type: docs
 weight: 21
 url: /id/net/advanced-loading/
 ---

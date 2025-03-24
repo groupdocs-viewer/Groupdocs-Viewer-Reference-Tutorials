@@ -3,7 +3,6 @@ title: Set DateTime Format and Time Zone Offset (Email)
 linktitle: Set DateTime Format and Time Zone Offset (Email)
 second_title: GroupDocs.Viewer .NET API
 description: Integrate GroupDocs.Viewer for .NET seamlessly into your applications for powerful document viewing capabilities. Enhance user experience with customizable options.
-type: docs
 weight: 11
 url: /net/rendering-email-messages/set-date-time-format-offset-email/
 ---
@@ -66,7 +65,7 @@ GroupDocs.Viewer for .NET offers a robust solution for integrating document view
 ### Is GroupDocs.Viewer compatible with .NET Core?
 Yes, GroupDocs.Viewer for .NET supports .NET Core, enabling cross-platform compatibility for your applications.
 ### Can I customize the appearance of the rendered documents?
-Absolutely! GroupDocs.Viewer provides various customization options including zoom levels, page rotation, and more to tailor the viewing experience according to your preferences.
+Absolutely! GroupDocs.Viewer provides various customization options including zoom levels, page rotation, and more to tailor the viewing experience according to your ptutorialss.
 ### Is there a trial version available for testing purposes?
 Yes, you can download a free trial version of GroupDocs.Viewer for .NET from the [website link](https://releases.groupdocs.com/viewer/net/) to evaluate its features before making a purchase.
 ### Does GroupDocs.Viewer support rendering password-protected documents?

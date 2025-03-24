@@ -3,7 +3,6 @@ title: 渲染 CAD 工程圖中的所有佈局
 linktitle: 渲染 CAD 工程圖中的所有佈局
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 渲染 CAD 繪圖中的所有佈局。請遵循我們的無縫整合綜合教程。
-type: docs
 weight: 11
 url: /zh-hant/net/rendering-cad-drawings/render-all-layouts-cad/
 ---

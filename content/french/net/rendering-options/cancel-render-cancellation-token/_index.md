@@ -3,7 +3,6 @@ title: Annuler le rendu avec le jeton d'annulation
 linktitle: Annuler le rendu avec le jeton d'annulation
 second_title: API GroupDocs.Viewer .NET
 description: Intégrez Groupdocs.Viewer pour .NET de manière transparente dans vos projets .NET pour une visualisation efficace des documents.
-type: docs
 weight: 11
 url: /fr/net/rendering-options/cancel-render-cancellation-token/
 ---

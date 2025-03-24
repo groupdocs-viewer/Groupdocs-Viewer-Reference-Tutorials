@@ -3,7 +3,6 @@ title: 停用 PDF 中的文字選擇
 linktitle: 停用 PDF 中的文字選擇
 second_title: GroupDocs.Viewer .NET API
 description: 了解如何使用 GroupDocs.Viewer for .NET 停用 PDF 中的文字選擇。請按照我們的逐步指南進行無縫整合。
-type: docs
 weight: 13
 url: /zh-hant/net/pdf-rendering-options/disable-text-selection-pdf/
 ---

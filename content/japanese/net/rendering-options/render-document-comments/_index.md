@@ -3,7 +3,6 @@ title: コメント付きドキュメントのレンダリング
 linktitle: コメント付きドキュメントのレンダリング
 second_title: GroupDocs.Viewer .NET API
 description: GroupDocs.Viewer for .NET を使用してコメント付きドキュメントをレンダリングする方法を学びます。シームレスな統合については、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 13
 url: /ja/net/rendering-options/render-document-comments/
 ---

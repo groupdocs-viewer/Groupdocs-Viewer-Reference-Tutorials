@@ -3,7 +3,6 @@ title: Tetapkan Lisensi dari File
 linktitle: Tetapkan Lisensi dari File
 second_title: GroupDocs.Viewer .NET API
 description: Pelajari cara mengintegrasikan GroupDocs.Viewer untuk .NET ke dalam aplikasi Anda dengan mudah. Tetapkan lisensi, lihat dokumen, dan sesuaikan tampilan penampil.
-type: docs
 weight: 10
 url: /id/net/getting-started/set-license-from-file/
 ---

@@ -3,7 +3,6 @@ title: 렌더링 번호
 linktitle: 렌더링 번호
 second_title: GroupDocs.Viewer .NET API
 description: Numbers 파일을 원활하게 렌더링하는 데 있어 .NET용 Groupdocs.Viewer의 강력한 기능을 살펴보세요. HTML, JPG, PNG, PDF로 손쉽게 변환하세요.
-type: docs
 weight: 15
 url: /ko/net/spreadsheet-rendering-options/rendering-numbers/
 ---

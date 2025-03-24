@@ -3,7 +3,6 @@ title: Bestimmte Ordner rendern und Nachrichten filtern (Outlook)
 linktitle: Bestimmte Ordner rendern und Nachrichten filtern (Outlook)
 second_title: GroupDocs.Viewer .NET-API
 description: Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET bestimmte Ordner rendern und Nachrichten in Outlook filtern. Vereinfachen Sie die Dokumentenverwaltung in .NET-Anwendungen.
-type: docs
 weight: 11
 url: /de/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/
 ---
