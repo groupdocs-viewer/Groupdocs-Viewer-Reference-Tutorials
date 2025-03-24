@@ -6,4 +6,4 @@ gtm_id = "GTM-WZTNN8"
 
 [[deployment.targets]]
 name = "Production"
-URL = "s3://tutorials.groupdocs.com/?prefix=tutorials/viewer/&region=us-west-2"
+URL = "s3://tutorials.groupdocs.com/?prefix=viewer/&region=us-west-2"
