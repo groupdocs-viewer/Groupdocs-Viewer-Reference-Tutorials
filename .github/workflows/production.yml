@@ -35,7 +35,7 @@ jobs:
       - name: Checkout theme repo
         uses: actions/checkout@main
         with:
-          repository: groupdocs/api-theme
+          repository: groupdocs/tutorials-theme
           token: ${{ secrets.REPO_TOKEN }}
           fetch-depth: 0
           path: themes/tutorials-theme      
