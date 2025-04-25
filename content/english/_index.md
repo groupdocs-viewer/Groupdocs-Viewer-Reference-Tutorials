@@ -52,7 +52,7 @@ These are links to some useful Java resources:
 - [Security & Permissions](./java/security-permissions/)
 - [Watermarks & Annotations](./java/watermarks-annotations/)
 - [File Formats Support](./java/file-formats-support/)
-- [Cloud & Remote Document Rendering](./java/cloud-remote-rendering/)
+- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
 - [Caching & Resource Management](./java/caching-resource-management/)
 - [Metadata & Properties](./java/metadata-properties/)
 - [Export & Conversion](./java/export-conversion/)

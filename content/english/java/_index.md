@@ -41,7 +41,7 @@ Learn to enhance your documents with watermarks and annotations. These tutorials
 ### [File Formats Support](/java/file-formats-support/)
 Discover comprehensive support for multiple document formats. Our tutorials cover rendering and handling PDF, Microsoft Office documents, images, and specialized file types with consistent quality.
 
-### [Cloud & Remote Document Rendering](/java/cloud-remote-rendering/)
+### [Cloud & Remote Document Rendering](/java/cloud-remote-document-rendering/)
 Master techniques for rendering documents from cloud storage, remote URLs, and external sources. Build flexible, distributed document viewing solutions.
 
 ### [Caching & Resource Management](/java/caching-resource-management/)
