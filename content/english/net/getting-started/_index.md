@@ -49,3 +49,7 @@ Learn how to integrate GroupDocs.Viewer for .NET into your applications effortle
 Enhance your .NET applications with GroupDocs.Viewer for seamless document viewing. Follow our step-by-step guide and integrate powerful document viewing capabilities effortlessly.
 ### [Set Metered License](./set-metered-license/)
 Enhance your .NET applications with GroupDocs.Viewer for seamless document viewing. Easily integrate document rendering functionalities into your projects.
+### [Mastering License Management in GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./groupdocs-viewer-license-management-net/)
+Learn how to effectively manage licenses in GroupDocs.Viewer for .NET with this detailed guide. Explore file path and embedded resource methods.
+### [Setting Up GroupDocs.Viewer .NET License via Stream&#58; A Complete Guide](./groupdocs-viewer-net-license-stream-setup-guide/)
+Learn how to set up and configure a GroupDocs.Viewer .NET license using a file stream with this comprehensive guide. Perfect for developers seeking dynamic license management.
