@@ -25,9 +25,9 @@ Learn how to convert and secure DOCX files into password-protected PDFs using Gr
 
 ## Additional Resources
 
-- [GroupDocs.Viewer for Net Documentation](https://docs.groupdocs.com/groupdocs.viewer/net/)
-- [GroupDocs.Viewer for Net API Reference](https://reference.groupdocs.com/groupdocs.viewer/net/)
-- [Download GroupDocs.Viewer for Net](https://releases.groupdocs.com/groupdocs.viewer/net/)
+- [GroupDocs.Viewer for Net Documentation](https://docs.groupdocs.com/viewer/net/)
+- [GroupDocs.Viewer for Net API Reference](https://reference.groupdocs.com/viewer/net/)
+- [Download GroupDocs.Viewer for Net](https://releases.groupdocs.com/viewer/net/)
 - [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/groupdocs.viewer)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)

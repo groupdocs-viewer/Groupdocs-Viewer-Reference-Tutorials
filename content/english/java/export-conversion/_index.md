@@ -55,9 +55,9 @@ Learn how to seamlessly convert OBJ files into HTML, JPG, PNG, and PDF formats u
 
 ## Additional Resources
 
-- [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/groupdocs.viewer/java/)
-- [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/groupdocs.viewer/java/)
-- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/groupdocs.viewer/java/)
+- [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/groupdocs.viewer)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
