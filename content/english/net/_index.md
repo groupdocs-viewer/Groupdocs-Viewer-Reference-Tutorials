@@ -13,6 +13,9 @@ is_root: true
 
 Welcome to the world of GroupDocs.Viewer for .NET tutorials! Whether you're just getting started or seeking advanced techniques, we've got you covered. Let's dive into the myriad of tutorials designed to elevate your document management skills using this powerful tool.
 
+## Getting Started
+New to GroupDocs.Viewer for .NET? Our step-by-step tutorials will guide you through the integration process, from setting licenses to customizing viewer appearance. Get up and running quickly with our easy-to-follow instructions. [Read more](./getting-started/)
+
 ## Loading Documents
 Are you struggling with loading and rendering documents efficiently in your .NET applications? Our tutorials on loading documents with GroupDocs.Viewer .NET will equip you with the skills to seamlessly handle files from local disks, streams, and even FTP. Dive in and enhance your app's performance. [Read more](./loading-documents/)
 
@@ -30,9 +33,6 @@ Efficiently render archive files using GroupDocs.Viewer for .NET with our compre
 
 ## Rendering CAD Drawings
 Unlock the power of CAD file handling in .NET applications with our tutorials for rendering CAD drawings using GroupDocs.Viewer. Enhance your apps with seamless integration and efficient rendering techniques. [Read more](./rendering-cad-drawings/)
-
-## Getting Started
-New to GroupDocs.Viewer for .NET? Our step-by-step tutorials will guide you through the integration process, from setting licenses to customizing viewer appearance. Get up and running quickly with our easy-to-follow instructions. [Read more](./getting-started/)
 
 ## Rendering Email Messages
 Simplify the process of rendering email messages into PDFs with GroupDocs.Viewer for .NET. Our tutorials cover everything from adjusting page size to setting DateTime format, ensuring efficient document rendering. [Read more](./rendering-email-messages/)
@@ -79,6 +79,8 @@ Retrieve view information for Microsoft Project documents with GroupDocs.Viewer 
 Explore our tutorials and master the art of document management with GroupDocs.Viewer for .NET today!
 
 ## GroupDocs.Viewer for .NET Tutorials
+### [Getting Started](./getting-started/)
+Discover step-by-step tutorials for integrating GroupDocs.Viewer for .NET seamlessly into your applications. Learn to set licenses and customize viewer appearance.
 ### [Loading Documents](./loading-documents/)
 Discover how to efficiently load and render documents using GroupDocs.Viewer .NET. Explore local disk, stream, and FTP loading tutorials for enhanced .NET apps.
 ### [Advanced Loading Options](./advanced-loading/)
@@ -91,8 +93,6 @@ Effortlessly integrate GroupDocs.Viewer for .NET into your applications with tut
 Discover comprehensive tutorials for rendering archive files using GroupDocs.Viewer for .NET. Integrate seamlessly and efficiently into your .NET applications.
 ### [Rendering CAD Drawings](./rendering-cad-drawings/)
 Discover tutorials for rendering CAD drawings using GroupDocs.Viewer for .NET. Learn to enhance .NET applications with seamless CAD file handling.
-### [Getting Started](./getting-started/)
-Discover step-by-step tutorials for integrating GroupDocs.Viewer for .NET seamlessly into your applications. Learn to set licenses and customize viewer appearance.
 ### [Rendering Email Messages](./rendering-email-messages/)
 Discover how GroupDocs.Viewer for .NET simplifies rendering email messages into PDFs. Learn to adjust page size, set DateTime format, and rename fields efficiently.
 ### [Image Rendering](./image-rendering/)
