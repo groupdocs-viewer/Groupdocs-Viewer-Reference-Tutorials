@@ -187,3 +187,26 @@ In this guide, we explored how to leverage GroupDocs.Viewer for Java to render C
 - Explore additional features like watermarking and customizing output formats.
 
 We encourage you to implement these solutions and explore further functionalities offered by GroupDocs.Viewer.
+
+## FAQ's
+
+### 1. Can I customize the output for better quality or size?  
+
+Yes, GroupDocs.Viewer offers various options to configure resolution, image quality, and resource embedding during rendering.
+
+### 2. Does it support batch conversion of multiple CF2 files?  
+
+Yes, you can automate multi-file conversions by looping through files and applying rendering methods sequentially.
+
+### 3. Is GroupDocs.Viewer free to use?  
+
+You can start with a free trial; full features require purchasing a license for unlimited use.
+
+### 4. Can I embed the rendered HTML in my website?  
+
+Absolutely, the HTML output can be integrated into web pages for online CAD viewing.
+
+### 5. What are the system requirements for using GroupDocs.Viewer?  
+
+A compatible Java environment (JDK 8 or higher) and sufficient memory are recommended for smooth operation.
+

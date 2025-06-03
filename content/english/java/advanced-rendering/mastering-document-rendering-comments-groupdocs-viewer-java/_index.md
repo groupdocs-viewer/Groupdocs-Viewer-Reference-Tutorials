@@ -158,7 +158,7 @@ You've mastered using GroupDocs.Viewer for Java to render documents with comment
 **Next Steps:**
 - Experiment with different document types.
 - Explore additional GroupDocs.Viewer features like watermarking or rotating pages.
-- Join the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) for community support and insights.
+- Join the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community support and insights.
 Take action today by implementing these techniques in your next Java project!
 ## FAQ Section
 **1. Can I render documents without comments?**

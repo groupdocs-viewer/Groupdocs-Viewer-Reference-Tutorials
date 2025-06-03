@@ -203,4 +203,4 @@ Ready to take the next step? Implement these solutions in your projects today!
    Offers robust document viewing capabilities, supports various formats, and integrates easily into existing systems.
 
 5. **Where can I get support if I encounter issues?**  
-   Visit [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance and community insights.
+   Visit [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance and community insights.

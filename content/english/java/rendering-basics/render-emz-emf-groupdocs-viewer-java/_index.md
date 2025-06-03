@@ -209,7 +209,7 @@ Ready to try it out? Dive into the [GroupDocs documentation](https://docs.groupd
 4. **How do I handle large files efficiently?**
    - Optimize resource usage by managing memory effectively and using efficient data structures.
 5. **Where can I find support if I encounter issues?**
-   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) for assistance from the community and support team.
+   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for assistance from the community and support team.
 
 ## Resources
 - **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)

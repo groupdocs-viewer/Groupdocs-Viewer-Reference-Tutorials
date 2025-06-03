@@ -169,6 +169,6 @@ Ready to put your new skills to the test? Implement these steps in your next pro
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try GroupDocs Viewer for .NET Free Trial](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Embark on your journey to efficient document rendering with GroupDocs.Viewer for .NET today!

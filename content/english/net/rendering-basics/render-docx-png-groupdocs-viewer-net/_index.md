@@ -142,7 +142,7 @@ Next steps could include exploring additional features of GroupDocs.Viewer or in
    - Ensure proper permissions are set and handle exceptions gracefully within your code.
 
 5. **How can I get support if needed?**
-   - Visit [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance.
+   - Visit [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 ## Resources
 - **Documentation:** [GroupDocs Viewer .NET Docs](https://docs.groupdocs.com/viewer/net/)

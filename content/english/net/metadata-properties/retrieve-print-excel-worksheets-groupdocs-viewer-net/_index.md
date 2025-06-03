@@ -161,4 +161,4 @@ In this tutorial, we explored how to retrieve and print worksheet names from an 
 - **Download GroupDocs.Viewer for .NET**: Get the latest version from [GroupDocs Releases](https://releases.groupdocs.com/viewer/net/).
 - **Purchase**: Buy a license at [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 - **Free Trial & Temporary License**: Test or extend your evaluation with options available on their [trial page](https://releases.groupdocs.com/viewer/net/) and [temporary license](https://purchase.groupdocs.com/temporary-license/).
-- **Support**: Need help? Join the discussion at [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10).
+- **Support**: Need help? Join the discussion at [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).

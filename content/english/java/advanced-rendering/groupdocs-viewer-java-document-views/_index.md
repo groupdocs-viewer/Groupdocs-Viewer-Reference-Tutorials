@@ -158,4 +158,4 @@ A5: Incorrect file paths and dependency setup errors are frequent challenges.
 - **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

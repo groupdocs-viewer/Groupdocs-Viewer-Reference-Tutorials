@@ -141,4 +141,4 @@ Explore further by integrating these functionalities with other systems or exper
 - **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/net/)
 - **Purchase and Licensing:** [Buy GroupDocs Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial and Temporary License:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/net/), [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)

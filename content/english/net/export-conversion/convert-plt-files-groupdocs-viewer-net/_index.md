@@ -140,7 +140,7 @@ Ready to start converting? Give it a try now!
 4. **What are some common troubleshooting tips for rendering issues?**
    - Ensure correct file paths and check your licensing status if you encounter errors.
 5. **Where can I find more resources or support for GroupDocs.Viewer .NET?**
-   - Visit their [documentation](https://docs.groupdocs.com/viewer/net/) or reach out via the [support forum](https://forum.groupdocs.com/c/viewer/10).
+   - Visit their [documentation](https://docs.groupdocs.com/viewer/net/) or reach out via the [support forum](https://forum.groupdocs.com/c/viewer/9).
 ## Resources
 - **Documentation**: https://docs.groupdocs.com/viewer/net/
 - **API Reference**: https://reference.groupdocs.com/viewer/net/
@@ -148,4 +148,4 @@ Ready to start converting? Give it a try now!
 - **Purchase**: https://purchase.groupdocs.com/buy
 - **Free Trial**: https://releases.groupdocs.com/viewer/net/
 - **Temporary License**: https://purchase.groupdocs.com/temporary-license/
-- **Support**: https://forum.groupdocs.com/c/viewer/10
+- **Support**: https://forum.groupdocs.com/c/viewer/9

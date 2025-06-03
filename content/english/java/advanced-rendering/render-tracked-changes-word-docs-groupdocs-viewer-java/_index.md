@@ -166,7 +166,7 @@ As next steps, consider exploring other features of GroupDocs.Viewer or integrat
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support](https://forum.groupdocs.com/c/viewer/10)
+- [Support](https://forum.groupdocs.com/c/viewer/9)
 
 We hope this tutorial has empowered you to effectively render Word documents with tracked changes using **GroupDocs.Viewer for Java**. Happy coding!
 

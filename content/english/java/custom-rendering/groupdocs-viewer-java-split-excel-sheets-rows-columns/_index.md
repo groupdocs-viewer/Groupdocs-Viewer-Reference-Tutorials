@@ -172,7 +172,7 @@ A5: Common issues include memory errors with large files and incorrect path conf
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Embark on your journey to mastering GroupDocs.Viewer for Java by exploring these resources and implementing the features discussed. Happy coding!
 

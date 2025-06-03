@@ -178,4 +178,4 @@ Ready to get started? Implement these techniques in your next project!
 - **Purchase**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

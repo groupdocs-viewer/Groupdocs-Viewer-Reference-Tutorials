@@ -177,4 +177,4 @@ Try implementing this solution in your next project to experience firsthand how 
 - [Purchase GroupDocs Products](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forums](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forums](https://forum.groupdocs.com/c/viewer/9)

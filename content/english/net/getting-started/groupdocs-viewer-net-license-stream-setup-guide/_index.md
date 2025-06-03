@@ -165,7 +165,7 @@ For further exploration and support:
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Ready to implement this solution? Try it out today and take your document management capabilities to the next level!
 

@@ -205,4 +205,4 @@ A5: Visit the [API reference](https://reference.groupdocs.com/viewer/java/) for 
 - **Purchase License:** [Buy a License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [Join the Discussion](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [Join the Discussion](https://forum.groupdocs.com/c/viewer/9)

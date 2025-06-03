@@ -155,7 +155,7 @@ Explore the [GroupDocs documentation](https://docs.groupdocs.com/viewer/net/) fo
 4. **Is there any cost associated with using GroupDocs.Viewer for .NET?**
    - A free trial is available; however, commercial use requires purchasing a license.
 5. **Where can I get support if I encounter issues?**
-   - Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance.
+   - Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 ## Resources
 - **Documentation**: [GroupDocs Viewer .NET Docs](https://docs.groupdocs.com/viewer/net/)

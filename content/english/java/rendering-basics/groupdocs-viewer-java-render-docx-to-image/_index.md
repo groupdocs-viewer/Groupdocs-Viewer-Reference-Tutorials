@@ -181,4 +181,4 @@ A: A free trial is available, but for long-term use, you may need to purchase a 
 - **Purchase License**: [Buy GroupDocs](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

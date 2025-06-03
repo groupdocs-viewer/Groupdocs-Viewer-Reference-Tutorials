@@ -165,7 +165,7 @@ Ready to take your Java application to the next level? Implement this solution a
 4. **What are common pitfalls when setting encoding?**
    - Mismatching encodings between source files and specified charset settings often lead to issues.
 5. **How do I get support if I encounter issues?**
-   - Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance from the community and developers.
+   - Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance from the community and developers.
 
 ## Resources
 For further exploration:

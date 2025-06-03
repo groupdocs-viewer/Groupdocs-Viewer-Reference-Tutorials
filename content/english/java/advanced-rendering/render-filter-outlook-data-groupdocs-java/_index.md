@@ -146,7 +146,7 @@ A3: Use filters to limit data processing and manage resources carefully by closi
 A4: While it supports a wide range of formats, always check the latest documentation for updates or specific version constraints.
 
 **Q5: Where can I find additional support if needed?**
-A5: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/10) for community assistance and further guidance.
+A5: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) for community assistance and further guidance.
 
 ## Resources
 - **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
@@ -155,6 +155,6 @@ A5: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/10) for com
 - **Purchase**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 With all resources and knowledge at your disposal, implement this solution in your projects today!

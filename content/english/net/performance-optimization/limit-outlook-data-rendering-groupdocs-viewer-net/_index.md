@@ -179,7 +179,7 @@ A: Yes, GroupDocs.Viewer is compatible with both .NET Framework and .NET Core.
 - **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Start Your Free Trial](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Apply for a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Try implementing GroupDocs.Viewer in your projects today and experience streamlined document rendering like never before!
 

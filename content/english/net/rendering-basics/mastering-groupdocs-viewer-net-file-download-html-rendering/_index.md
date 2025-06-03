@@ -148,7 +148,7 @@ You've now mastered downloading files from URLs and rendering documents with Gro
 4. **Is there support for asynchronous operations with GroupDocs.Viewer?**
    - While GroupDocs.Viewer itself is synchronous, you can wrap calls within async patterns.
 5. **How do I troubleshoot rendering issues?**
-   - Verify file paths, ensure licenses are active, and consult [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10).
+   - Verify file paths, ensure licenses are active, and consult [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9).
 
 ## Resources
 - Documentation: [GroupDocs Viewer .NET Docs](https://docs.groupdocs.com/viewer/net/)

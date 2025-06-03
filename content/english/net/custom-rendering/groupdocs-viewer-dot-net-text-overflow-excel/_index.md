@@ -182,4 +182,4 @@ As next steps, consider exploring other features offered by GroupDocs.Viewer or 
 - **Purchase**: For licensing, visit [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 - **Free Trial**: Start with a free trial from [here](https://releases.groupdocs.com/viewer/net/).
 - **Temporary License**: Get your temporary license [this way](https://purchase.groupdocs.com/temporary-license/).
-- **Support**: Join the conversation and seek help on [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10).
+- **Support**: Join the conversation and seek help on [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9).

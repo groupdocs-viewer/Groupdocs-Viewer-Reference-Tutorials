@@ -173,7 +173,7 @@ Feel free to experiment further with the code examples provided and integrate th
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Feel free to explore these resources for further learning and support. Happy coding!
 

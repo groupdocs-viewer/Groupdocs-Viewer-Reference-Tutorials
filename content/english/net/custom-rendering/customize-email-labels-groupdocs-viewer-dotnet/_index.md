@@ -153,6 +153,6 @@ A: Yes, it works well with .NET Core and ASP.NET applications among others.
 - **Purchase:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Trial Version](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Apply for a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Start enhancing your email rendering experience today with GroupDocs.Viewer for .NET!

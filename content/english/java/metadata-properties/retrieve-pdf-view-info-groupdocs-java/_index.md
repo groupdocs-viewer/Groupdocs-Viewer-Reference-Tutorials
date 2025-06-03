@@ -128,6 +128,6 @@ A: Check your document's compatibility or update to the latest version of GroupD
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Feel free to explore these resources and reach out on the forum if you have further questions or need assistance. Happy coding!

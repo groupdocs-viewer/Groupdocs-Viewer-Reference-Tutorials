@@ -169,7 +169,7 @@ The library is versatile and supports multiple file formats natively. Check the 
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Get a Free Trial](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Ready to take your document rendering projects to the next level? Try implementing these solutions today!
 

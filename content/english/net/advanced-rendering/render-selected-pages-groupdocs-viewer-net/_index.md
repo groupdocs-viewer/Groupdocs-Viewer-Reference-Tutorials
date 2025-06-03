@@ -157,5 +157,5 @@ A: While technically possible, rendering large numbers of pages simultaneously m
 - **Purchase & Licensing:** [Buy GroupDocs.Viewer .NET](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Try for Free](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [Community Support](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [Community Support](https://forum.groupdocs.com/c/viewer/9)
 

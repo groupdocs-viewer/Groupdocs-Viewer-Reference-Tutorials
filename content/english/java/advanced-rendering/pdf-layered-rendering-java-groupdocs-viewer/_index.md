@@ -175,7 +175,7 @@ Ready to implement what you've learned? Try out the solution and explore more ad
 4. **What Java version is required for GroupDocs.Viewer?**
    - JDK 8 or higher is recommended for compatibility and performance.
 5. **Where can I get support if I encounter issues?**
-   - Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance from the community.
+   - Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance from the community.
 
 ## Resources
 

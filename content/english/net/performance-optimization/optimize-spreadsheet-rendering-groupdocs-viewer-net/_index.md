@@ -137,4 +137,4 @@ In this tutorial, we explored how to utilize GroupDocs.Viewer for .NET to skip e
 - **Purchase**: [Buy GroupDocs](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try for Free](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

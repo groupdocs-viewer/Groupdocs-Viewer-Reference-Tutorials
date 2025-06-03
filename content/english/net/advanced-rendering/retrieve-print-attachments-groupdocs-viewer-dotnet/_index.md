@@ -212,7 +212,7 @@ As next steps, explore more features of GroupDocs.Viewer by diving into their [d
 - No inherent limits exist, but performance may vary with document size and system resources.
 
 **Q4: How do I troubleshoot common errors?**
-- Review error messages carefully and consult GroupDocs’ [support forum](https://forum.groupdocs.com/c/viewer/10) for assistance.
+- Review error messages carefully and consult GroupDocs’ [support forum](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 **Q5: What are the benefits of using a temporary license?**
 - A temporary license allows full access to features, facilitating thorough testing before purchase.

@@ -148,6 +148,6 @@ A5: Visit their [documentation](https://docs.groupdocs.com/viewer/net/) and [API
 - **API Reference**: Access detailed API information via [GroupDocs API Reference](https://reference.groupdocs.com/viewer/net/).
 - **Download GroupDocs.Viewer**: Get started with a free trial from their [downloads page](https://releases.groupdocs.com/viewer/net/).
 - **Purchase or Trial License**: Obtain licenses through the [purchase portal](https://purchase.groupdocs.com/buy) or secure a temporary license for testing purposes.
-- **Support and Community**: Join discussions or seek help at the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10).
+- **Support and Community**: Join discussions or seek help at the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9).
 
 Now that you have all the tools and knowledge, start rendering your Excel files with ease using GroupDocs.Viewer for .NET!

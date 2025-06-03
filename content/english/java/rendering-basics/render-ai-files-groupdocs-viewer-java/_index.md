@@ -194,7 +194,7 @@ You've now mastered rendering AI documents into various formats using GroupDocs.
    - Yes, GroupDocs.Viewer provides options to adjust resolution and compression settings.
 
 5. **Is there support available for using GroupDocs.Viewer?**
-   - Absolutely! Visit their [support forum](https://forum.groupdocs.com/c/viewer/10) for assistance.
+   - Absolutely! Visit their [support forum](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 ## Resources
 - Documentation: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)

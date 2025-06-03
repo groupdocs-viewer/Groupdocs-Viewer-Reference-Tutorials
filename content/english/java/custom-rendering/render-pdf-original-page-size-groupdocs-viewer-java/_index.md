@@ -149,6 +149,6 @@ For further reading and resources:
 - **Purchase and Licensing:** [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 We hope this guide helps you implement PDF rendering with original page size using GroupDocs.Viewer for Java. Happy coding!

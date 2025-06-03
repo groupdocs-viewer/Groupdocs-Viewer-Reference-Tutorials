@@ -35,9 +35,6 @@ Learn how to effortlessly convert OpenDocument Format (ODF) files to versatile f
 ### [Convert PST/OST to HTML, JPG, PNG, PDF Using GroupDocs.Viewer for Java | Export & Conversion Guide](./convert-pst-ost-groupdocs-viewer-java/)
 Learn how to effortlessly convert Outlook PST/OST files into accessible formats like HTML, JPG, PNG, or PDF using GroupDocs.Viewer for Java. This guide covers all steps and configurations needed.
 
-### [Convert SVG/SVGZ to Multiple Formats Using GroupDocs.Viewer Java](./convert-svg-z-to-formats-groupdocs-viewer-java/)
-Learn how to seamlessly convert SVG and SVGZ files into HTML, JPG, PNG, and PDF using GroupDocs.Viewer for Java. Follow this step-by-step guide with best practices.
-
 ### [Convert TXT Files to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer for Java](./groupdocs-viewer-java-txt-conversion-guide/)
 Learn how to efficiently convert TXT files into multiple formats like HTML, JPG, PNG, and PDF using GroupDocs.Viewer for Java. Follow this step-by-step guide.
 
@@ -58,6 +55,6 @@ Learn how to seamlessly convert OBJ files into HTML, JPG, PNG, and PDF formats u
 - [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/viewer/java/)
 - [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/groupdocs.viewer)
+- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)

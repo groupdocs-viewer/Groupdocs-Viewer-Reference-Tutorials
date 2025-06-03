@@ -156,4 +156,4 @@ Ready to try it out? Head over to [GroupDocs](https://purchase.groupdocs.com/buy
 - [Purchase and Licensing Options](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License Request](https://purchase.groupdocs.com/temporary-license/)
-- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

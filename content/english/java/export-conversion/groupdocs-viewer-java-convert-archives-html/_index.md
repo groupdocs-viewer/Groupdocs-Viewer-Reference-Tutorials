@@ -204,7 +204,7 @@ Ready to take the next step? Implement these techniques in your projects and see
 4. **What should I do if my rendering is slow?**
    - Optimize resource usage or adjust the number of items per page for multi-page outputs.
 5. **How can I contact support for GroupDocs.Viewer Java?**
-   - Reach out through their [support forum](https://forum.groupdocs.com/c/viewer/10) for assistance.
+   - Reach out through their [support forum](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 ## Resources
 
@@ -212,4 +212,4 @@ Ready to take the next step? Implement these techniques in your projects and see
 - **API Reference:** Explore detailed API references at [GroupDocs API](https://reference.groupdocs.com/viewer/java/).
 - **Download:** Access the latest version from the [download page](https://releases.groupdocs.com/viewer/java/).
 - **Purchase and Licensing:** Learn more about purchasing options on their [purchase page](https://purchase.groupdocs.com/buy).
-- **Support and Community:** Engage with the community or seek support through [GroupDocs forum](https://forum.groupdocs.com/c/viewer/10).
+- **Support and Community:** Engage with the community or seek support through [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9).

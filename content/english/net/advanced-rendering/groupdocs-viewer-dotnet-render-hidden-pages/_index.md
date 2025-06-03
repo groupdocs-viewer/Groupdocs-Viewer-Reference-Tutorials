@@ -169,7 +169,7 @@ For further exploration and support:
 - **Purchase License:** [Buy Now](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Try It Free](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [Join the Discussion](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [Join the Discussion](https://forum.groupdocs.com/c/viewer/9)
 
 We hope this guide empowers you to effectively use GroupDocs.Viewer for rendering hidden pages in your .NET applications. Happy coding!
 

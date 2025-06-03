@@ -168,4 +168,4 @@ Try implementing this solution in your projects today and see the difference it 
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support](https://forum.groupdocs.com/c/viewer/10)
+- [Support](https://forum.groupdocs.com/c/viewer/9)

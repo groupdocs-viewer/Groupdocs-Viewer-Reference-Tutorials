@@ -23,14 +23,8 @@ Master PDF layered rendering with GroupDocs.Viewer for Java to maintain visual h
 ### [Efficient PDF Page Reordering with GroupDocs.Viewer for Java&#58; A Comprehensive Guide](./master-pdf-page-reorder-groupdocs-java/)
 Learn how to reorder PDF pages seamlessly using GroupDocs.Viewer for Java. This guide covers setup, implementation, and performance optimization.
 
-### [How to Adjust CAD Image Size in Java Using GroupDocs.Viewer&#58; A Step-by-Step Guide](./adjust-cad-image-size-java-groupdocs-viewer/)
-Learn how to efficiently adjust CAD image sizes using GroupDocs.Viewer for Java. This step-by-step guide covers setup, configuration, and best practices.
-
 ### [How to Adjust Text Overflow in Excel Spreadsheets with GroupDocs.Viewer for Java](./groupdocs-viewer-java-adjust-text-overflow-spreadsheets/)
 Learn how to manage text overflow in Excel spreadsheets using GroupDocs.Viewer for Java. This guide provides step-by-step instructions and best practices.
-
-### [How to Enable Font Hinting for PDFs in Java Using GroupDocs.Viewer&#58; A Step-by-Step Guide](./enable-font-hinting-pdf-groupdocs-viewer-java/)
-Learn how to improve font clarity and readability in PDF rendering with GroupDocs.Viewer for Java. This guide covers enabling font hinting effectively.
 
 ### [How to Rename Email Fields When Converting Emails to HTML Using GroupDocs.Viewer Java](./rename-email-fields-html-groupdocs-viewer-java/)
 Learn how to customize email metadata by renaming fields such as 'From', 'To', and 'Subject' when rendering emails to HTML using GroupDocs.Viewer for Java.
@@ -95,9 +89,6 @@ Learn how to render documents as images with a text layer in Java using GroupDoc
 ### [Render Emails with Custom DateTime in Java using GroupDocs.Viewer](./render-emails-custom-datetime-groupdocs-viewer-java/)
 Learn how to render emails with custom date-time formats and time zone settings using GroupDocs.Viewer for Java. Perfect for email archiving, support systems, and more.
 
-### [Render HTML to Image & PDF with Custom Margins using GroupDocs Viewer for Java](./render-html-to-image-pdf-groupdocs-java/)
-Learn how to render HTML files into JPG, PNG, and PDF formats using custom margins with GroupDocs.Viewer for Java. Perfect for presentations, archiving, or sharing.
-
 ### [Render Hidden Rows & Columns in Java Spreadsheets Using GroupDocs.Viewer](./render-hidden-rows-columns-java-groupdocs-viewer/)
 Learn how to render hidden rows and columns in Java spreadsheets using GroupDocs.Viewer for seamless HTML conversion. Ensure complete data visibility with this advanced rendering guide.
 
@@ -133,6 +124,6 @@ Learn how to efficiently split large CAD drawings into tiles using GroupDocs.Vie
 - [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/viewer/java/)
 - [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/groupdocs.viewer)
+- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)

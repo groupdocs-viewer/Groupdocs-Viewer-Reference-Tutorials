@@ -163,4 +163,4 @@ In this tutorial, we've explored how to utilize GroupDocs.Viewer for Java to det
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License Request](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

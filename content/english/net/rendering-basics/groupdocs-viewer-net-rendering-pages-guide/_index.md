@@ -183,6 +183,6 @@ Check your configurations and ensure all resources are properly disposed of afte
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Trial Version](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 This tutorial has laid out a comprehensive path for implementing GroupDocs.Viewer for .NET in your projects. With these insights and resources, you're ready to harness the full potential of document rendering in .NET environments.

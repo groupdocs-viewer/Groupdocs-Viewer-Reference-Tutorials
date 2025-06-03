@@ -157,4 +157,4 @@ Ready to dive in? Implement these insights and take your .NET development skills
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

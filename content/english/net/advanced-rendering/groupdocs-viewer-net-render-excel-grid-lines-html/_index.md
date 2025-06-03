@@ -179,7 +179,7 @@ Ready to try it out? Implement this solution in your next project!
 4. **What versions of .NET are compatible with GroupDocs.Viewer?**
    - Compatible with both .NET Framework and .NET Core versions.
 5. **Where can I get support if I encounter issues?**
-   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) for assistance.
+   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 ## Resources
 

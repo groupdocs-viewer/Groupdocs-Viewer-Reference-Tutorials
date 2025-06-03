@@ -178,7 +178,7 @@ Ready to implement this solution in your project? Try it out and see the improve
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 By following this guide, you're well-equipped to implement efficient document rendering in your Java applications using GroupDocs.Viewer. Happy coding!
 

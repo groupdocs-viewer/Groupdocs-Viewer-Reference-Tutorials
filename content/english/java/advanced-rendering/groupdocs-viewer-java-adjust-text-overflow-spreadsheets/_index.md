@@ -108,7 +108,7 @@ A3: Yes, GroupDocs.Viewer offers various customization options for HTML renderin
 **Q4: What are common pitfalls when using GroupDocs.Viewer?**
 A4: Ensure your environment is correctly set up and choose appropriate text overflow settings based on document needs.
 **Q5: Where can I find more resources or get support?**
-A5: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance and check out their documentation for comprehensive guides.
+A5: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance and check out their documentation for comprehensive guides.
 ## Resources
 - **Documentation**: [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
 - **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)

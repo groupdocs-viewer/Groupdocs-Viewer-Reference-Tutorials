@@ -153,6 +153,6 @@ For further exploration and detailed information:
 - **Purchase**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 This guide equips you with the knowledge to effectively use GroupDocs.Viewer Java for document rendering. For further questions, reach out through support channels or community forums!

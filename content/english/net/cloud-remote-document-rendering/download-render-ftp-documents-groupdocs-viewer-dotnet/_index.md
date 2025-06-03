@@ -176,7 +176,7 @@ Next steps include experimenting with more advanced features of GroupDocs.Viewer
 - **Purchase License:** [Buy Now](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Try It Out](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [Join the Discussion](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [Join the Discussion](https://forum.groupdocs.com/c/viewer/9)
 
 Explore these resources to deepen your understanding and further enhance your implementation with GroupDocs.Viewer for .NET. Happy coding!
 

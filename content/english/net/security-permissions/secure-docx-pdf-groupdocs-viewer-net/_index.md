@@ -157,7 +157,7 @@ By following this guide, you've learned how to leverage GroupDocs.Viewer for .NE
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 With this comprehensive guide, you're now equipped to start securing your documents using GroupDocs.Viewer for .NET. Happy coding!
 

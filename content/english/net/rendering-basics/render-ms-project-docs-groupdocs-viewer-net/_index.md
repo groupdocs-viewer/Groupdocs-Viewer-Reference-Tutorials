@@ -161,4 +161,4 @@ Next steps could include exploring additional rendering formats or integrating w
 - **API Reference:** Detailed API usage can be found on [GroupDocs API Reference](https://reference.groupdocs.com/viewer/net/).
 - **Download:** Get the latest version from [GroupDocs Releases](https://releases.groupdocs.com/viewer/net/).
 - **Purchase and Trial:** Visit [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) for purchasing options or download a trial.
-- **Support:** For assistance, join the discussion on the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10).
+- **Support:** For assistance, join the discussion on the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9).

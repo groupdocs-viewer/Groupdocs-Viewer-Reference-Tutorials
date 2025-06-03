@@ -168,7 +168,7 @@ Explore advanced features of GroupDocs.Viewer and consider integrating it with o
    - Ensure paths and archive structure compatibility with rendering options.
 
 5. **Where can I get support if needed?**
-   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) for community support or check their documentation.
+   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community support or check their documentation.
 
 ## Resources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
@@ -177,4 +177,4 @@ Explore advanced features of GroupDocs.Viewer and consider integrating it with o
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

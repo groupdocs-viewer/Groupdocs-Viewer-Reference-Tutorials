@@ -179,6 +179,6 @@ Ready to try this out? Go ahead and implement the solution on your own projects!
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Happy coding! If you have any questions or need further assistance, feel free to reach out on the GroupDocs forum.

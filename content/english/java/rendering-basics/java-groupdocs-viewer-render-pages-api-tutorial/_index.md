@@ -177,7 +177,7 @@ Try implementing what you've learned and see how it enhances your application's 
 - **Purchase:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License:** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Ready to enhance your Java applications with powerful document rendering capabilities? Explore GroupDocs.Viewer for Java today!
 

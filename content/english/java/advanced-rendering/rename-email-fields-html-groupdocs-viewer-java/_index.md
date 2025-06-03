@@ -172,7 +172,7 @@ By following this guide, you've learned how to effectively rename email fields d
 4. **Can I integrate this solution into an existing Java application?**
    - Absolutely, integrating GroupDocs.Viewer is straightforward within any Java-based project using Maven dependencies.
 5. **Where can I find support if I encounter issues?**
-   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) for community and official support.
+   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community and official support.
 
 ## Resources
 - **Documentation**: Comprehensive guides are available at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).

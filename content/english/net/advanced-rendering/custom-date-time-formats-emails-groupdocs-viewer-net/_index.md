@@ -153,7 +153,7 @@ This tutorial explored implementing custom date-time formats and time zone offse
 4. **What are some best practices for using GroupDocs.Viewer?**  
    Optimize memory usage, manage resources efficiently, and utilize the latest versions of libraries.
 5. **Where can I find more information on troubleshooting issues with GroupDocs.Viewer?**  
-   Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for community help and additional resources.
+   Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for community help and additional resources.
 
 ## Resources
 - **Documentation**: [GroupDocs Viewer .NET Documentation](https://docs.groupdocs.com/viewer/net/)

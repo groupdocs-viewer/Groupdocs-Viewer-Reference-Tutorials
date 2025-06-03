@@ -178,4 +178,4 @@ For further exploration and in-depth understanding:
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
-- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

@@ -147,4 +147,4 @@ Ready to take it a step further? Experiment with different options and integrate
 - **Purchase License:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)

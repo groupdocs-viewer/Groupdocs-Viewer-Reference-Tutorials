@@ -188,6 +188,6 @@ A5: GroupDocs provides different purchasing and subscription models to suit your
 - **Purchase**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Download Free Trial](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Ready to start rendering your CF2 files? Try implementing this solution and explore the full potential of GroupDocs.Viewer for .NET in your projects.

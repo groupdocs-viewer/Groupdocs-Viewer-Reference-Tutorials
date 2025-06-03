@@ -146,7 +146,7 @@ Optimizing performance is key when working with large documents or high-traffic 
 ## Conclusion
 By following this guide, you’ve learned how to use GroupDocs.Viewer for minifying HTML documents in Java. This not only boosts performance but also enhances user experience and SEO. For further exploration, consider integrating more advanced features of GroupDocs.Viewer or applying similar techniques to other document formats.
 
-**Next Steps**: Experiment with different configurations and integrate this solution into larger projects. For support, visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10).
+**Next Steps**: Experiment with different configurations and integrate this solution into larger projects. For support, visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9).
 
 ## FAQ Section
 1. **What is HTML minification?**
@@ -167,4 +167,4 @@ By following this guide, you’ve learned how to use GroupDocs.Viewer for minify
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

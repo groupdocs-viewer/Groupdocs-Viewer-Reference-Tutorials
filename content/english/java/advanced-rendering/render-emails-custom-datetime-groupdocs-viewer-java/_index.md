@@ -196,7 +196,7 @@ You've now learned how to render email messages into HTML format with GroupDocs.
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Try implementing these techniques in your project and explore the full potential of GroupDocs.Viewer for Java!
 

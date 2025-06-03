@@ -177,4 +177,4 @@ Optimize Java memory management, minimize file operations, and use efficient cod
 - **Purchase License**: [Buy GroupDocs Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum**: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum**: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)

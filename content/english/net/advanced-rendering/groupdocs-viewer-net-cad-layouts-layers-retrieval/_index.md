@@ -113,4 +113,4 @@ You've now learned how to retrieve layouts and layers from a CAD drawing using G
 - [Purchase GroupDocs.Viewer](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License Request](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

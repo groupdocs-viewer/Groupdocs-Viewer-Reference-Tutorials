@@ -195,7 +195,7 @@ Ready to take your skills further? Try implementing this solution in your next .
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial Download](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License Request](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 With these resources, you're equipped to dive deeper into the capabilities of GroupDocs.Viewer for .NET and create robust solutions that leverage responsive HTML rendering. Happy coding!
 

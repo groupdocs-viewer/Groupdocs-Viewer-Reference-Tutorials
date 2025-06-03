@@ -160,7 +160,7 @@ Here are some common questions you might have:
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 This tutorial aims to empower you with the tools and knowledge to effectively manage large Excel datasets using GroupDocs.Viewer for .NET. Happy coding!
 

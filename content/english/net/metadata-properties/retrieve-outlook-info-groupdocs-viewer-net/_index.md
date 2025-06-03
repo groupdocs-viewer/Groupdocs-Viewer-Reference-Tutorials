@@ -164,7 +164,7 @@ Consider exploring other features of GroupDocs.Viewer or integrating it with add
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 By leveraging these resources, you can enhance your understanding and implementation of GroupDocs.Viewer for .NET. Dive in and start implementing today!
 

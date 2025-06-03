@@ -166,7 +166,7 @@ Check your document path, ensure proper permissions, and review error logs for s
 GroupDocs.Viewer supports a wide range of file formats beyond MS Project, including Visio, Excel, Word, and more.
 
 **Q5: Is there support available if I encounter issues?**
-Yes, you can access support through the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) for any questions or troubleshooting needs.
+Yes, you can access support through the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for any questions or troubleshooting needs.
 
 ## Resources
 

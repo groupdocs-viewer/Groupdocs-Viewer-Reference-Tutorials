@@ -142,4 +142,4 @@ A5: Check file paths, ensure correct GroupDocs.Viewer version, and review Java l
 - **Purchase**: [Buy License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Download Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)

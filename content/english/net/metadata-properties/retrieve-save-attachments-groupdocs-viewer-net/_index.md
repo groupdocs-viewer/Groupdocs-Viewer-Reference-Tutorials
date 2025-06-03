@@ -169,7 +169,7 @@ GroupDocs.Viewer supports a wide range of document formats including PDFs, Word 
 - **Purchase:** [Buy a License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Try the Free Version](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) 
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 
 
 Now that you have all the resources and knowledge, dive into implementing GroupDocs.Viewer in your projects!
 

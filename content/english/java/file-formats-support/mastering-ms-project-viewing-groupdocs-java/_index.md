@@ -190,6 +190,6 @@ Ready to put this knowledge into action? Start experimenting with your projects 
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
-- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Embark on your journey to seamlessly integrate MS Project data into your applications with GroupDocs.Viewer for Java!

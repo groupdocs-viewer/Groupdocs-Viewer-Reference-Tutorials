@@ -164,6 +164,6 @@ To further explore what GroupDocs.Viewer for Java offers, dive into their docume
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial Download](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Start exploring GroupDocs.Viewer Java today and unlock the full potential of your document processing applications!

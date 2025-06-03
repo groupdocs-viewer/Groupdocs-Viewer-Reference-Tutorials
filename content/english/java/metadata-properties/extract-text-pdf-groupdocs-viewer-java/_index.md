@@ -11,8 +11,8 @@ keywords:
 
 ---
 
-
 # Extract Text from PDF using GroupDocs.Viewer Java
+
 ## Introduction
 Extracting text from PDFs is crucial for efficient digital document management. In this comprehensive tutorial, we'll demonstrate how to use **GroupDocs.Viewer Java** to extract text seamlessly from PDF files.
 
@@ -100,13 +100,20 @@ When handling large documents:
 - **Java Memory Management**: Manage object lifecycles within the `try-with-resources` block effectively to utilize Java's garbage collection.
 ## Conclusion
 This guide has shown you how to set up GroupDocs.Viewer for Java and extract text from PDF files efficiently. Explore other features of GroupDocs.Viewer or integrate it with additional systems for complex workflows.
+
 ## FAQ Section
 **Q: Can I use GroupDocs.Viewer on a production server?**
-A: Yes, but ensure you have an appropriate license. A free trial is suitable only for testing purposes.
+
+	- A: Yes, but ensure you have an appropriate license. A free trial is suitable only for testing purposes.
+
 **Q: How does text extraction affect PDF metadata?**
-A: Text extraction focuses on content; metadata remains intact unless explicitly modified.
+
+	- A: Text extraction focuses on content; metadata remains intact unless explicitly modified.
+
 **Q: What file formats can GroupDocs.Viewer handle besides PDFs?**
-A: It supports a wide range of formats, including Word documents and Excel spreadsheets.
+
+	- A: It supports a wide range of formats, including Word documents and Excel spreadsheets.
+	
 ## Resources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
 - [API Reference](https://reference.groupdocs.com/viewer/java/)
@@ -114,5 +121,5 @@ A: It supports a wide range of formats, including Word documents and Excel sprea
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 We hope this guide empowers you to leverage GroupDocs.Viewer for Java in your projects. Happy coding!

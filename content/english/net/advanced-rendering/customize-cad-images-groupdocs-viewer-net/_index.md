@@ -164,4 +164,4 @@ A5: Check paths, ensure dependencies are installed correctly, and review logs fo
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

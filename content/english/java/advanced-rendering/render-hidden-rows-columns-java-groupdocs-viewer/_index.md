@@ -171,7 +171,7 @@ A5: Check the official documentation and forums for solutions. Ensure all depend
 - **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 With this comprehensive guide, you're now equipped to handle hidden spreadsheet elements effectively in your Java applications using GroupDocs.Viewer. Happy coding!
 

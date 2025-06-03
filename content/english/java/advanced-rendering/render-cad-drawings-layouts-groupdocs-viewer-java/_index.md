@@ -185,4 +185,4 @@ As next steps, explore further customization options in the [GroupDocs Viewer Do
 - Purchase and Licensing: [Purchase GroupDocs](https://purchase.groupdocs.com/buy)
 - Free Trial: [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - Temporary License: [Temporary License Page](https://purchase.groupdocs.com/temporary-license/)
-- Support Forum: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10)
+- Support Forum: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)

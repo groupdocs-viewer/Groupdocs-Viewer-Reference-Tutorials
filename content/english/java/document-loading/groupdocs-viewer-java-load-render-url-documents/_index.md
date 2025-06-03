@@ -163,4 +163,4 @@ You now have a solid foundation for using GroupDocs.Viewer Java to load and rend
 - **API Reference:** Check out the [API Reference](https://reference.groupdocs.com/viewer/java/) to understand all available methods and their uses.
 - **Download:** Get started by downloading GroupDocs.Viewer from [here](https://releases.groupdocs.com/viewer/java/).
 - **Purchase & Trial:** Consider obtaining a license or trial via [GroupDocs Purchase](https://purchase.groupdocs.com/buy) and [Trial Page](https://releases.groupdocs.com/viewer/java/).
-- **Support:** For any questions, join the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10).
+- **Support:** For any questions, join the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9).

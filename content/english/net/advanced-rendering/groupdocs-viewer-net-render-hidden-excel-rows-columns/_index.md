@@ -156,4 +156,4 @@ Continue exploring other functionalities of GroupDocs.Viewer by visiting their [
 - **Purchase**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try for Free](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

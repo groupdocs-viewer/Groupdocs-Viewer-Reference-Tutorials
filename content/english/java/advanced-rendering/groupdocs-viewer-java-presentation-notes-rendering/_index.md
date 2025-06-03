@@ -160,4 +160,4 @@ Ready to try it out? Implement these steps and experience seamless presentation 
 - **API Reference**: Access detailed API information at [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).
 - **Download**: Obtain the latest releases from [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).
 - **Purchase and Trial**: Learn more about licensing options on the [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) or get a free trial at [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).
-- **Support**: For any queries, visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10).
+- **Support**: For any queries, visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).

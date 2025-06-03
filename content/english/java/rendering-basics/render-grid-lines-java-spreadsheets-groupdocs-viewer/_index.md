@@ -165,4 +165,4 @@ Ready to implement this feature? Try it out and see the difference grid lines ma
 - **Purchase**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

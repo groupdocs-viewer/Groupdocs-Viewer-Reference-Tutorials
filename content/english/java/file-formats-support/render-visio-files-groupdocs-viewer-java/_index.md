@@ -170,7 +170,34 @@ By following this guide, you've learned how to use GroupDocs.Viewer for Java to 
 - Experiment with different rendering options to tailor outputs to your needs.
 - Explore integration possibilities with other systems or applications.
 Ready to try it out? Start implementing these solutions today!
-### FAQ Section
-1. **Can I render Visio documents in batch mode?**
-   - Yes, you can process multiple files by iterating over a collection of file paths and applying the rendering logic to each.
-2. **How do I handle large Visio
+
+## FAQs
+
+**Q1:** Can I customize the output image size or resolution when rendering Visio files?  
+
+**A:** Yes, you can set figure width, height, and resolution via `VisioRenderingOptions` to customize output quality.
+
+**Q2:** Is it possible to render only specific pages or diagrams within a Visio file?  
+
+**A:** GroupDocs.Viewer allows page-specific rendering by specifying page indices or ranges before rendering.
+
+**Q3:** Does the library support rendering linked or embedded objects within Visio diagrams?  
+**A:** It supports rendering figures, but linked or embedded objects may require additional handling or pre-processing.
+
+**Q4:** How do I automate batch processing of multiple Visio files?  
+
+**A:** Loop through your files and apply the rendering functions sequentially, managing resources with try-with-resources for stability.
+
+**Q5:** Can I embed the rendered HTML directly into a web application?  
+
+**A:** Yes, by generating self-contained HTML with embedded resources, you can seamlessly incorporate the output into web apps.
+
+	
+## Resources
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Purchase](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

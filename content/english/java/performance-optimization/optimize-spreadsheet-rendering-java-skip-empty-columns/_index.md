@@ -189,6 +189,6 @@ Ready to enhance your Java applications? Implement this solution today!
 - **Purchase**: [Buy GroupDocs Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Embark on your journey to optimized document processing with GroupDocs.Viewer for Java today!

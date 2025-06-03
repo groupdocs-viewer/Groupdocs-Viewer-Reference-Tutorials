@@ -166,4 +166,4 @@ Visit [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) for com
 - **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
 - **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Temporary License Request](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)

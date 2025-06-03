@@ -148,10 +148,17 @@ When dealing with large or numerous document conversions:
 ## Conclusion
 You've now equipped yourself with the knowledge to convert CHM documents into various formats using GroupDocs.Viewer for Java. This skill set opens up numerous possibilities, from improving document accessibility to integrating legacy content into modern platforms. Why not start experimenting with your own CHM files and explore the potential of these conversion techniques?
 Ready to take your skills further? Dive into the [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) for more advanced features and customization options.
+
 ## FAQ Section
+
 **Q: Can I convert entire directories of CHM files at once?**
+
 A: While GroupDocs.Viewer processes individual documents, you can automate directory processing with a Java script that iterates over files in a folder.
+
 **Q: How do I handle large documents without running out of memory?**
+
 A: Consider increasing your JVM's heap size or breaking down the document into smaller parts for conversion.
+
 **Q: Is it possible to customize the output formatting further?**
+
 A: Yes, GroupDocs.Viewer offers extensive options for customization. Explore the [API reference](https://reference.groupdocs.com/viewer/java/) for more details.

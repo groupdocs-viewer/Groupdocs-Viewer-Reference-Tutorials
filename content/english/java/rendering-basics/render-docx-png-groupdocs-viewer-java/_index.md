@@ -178,7 +178,7 @@ A3: Ensure your code checks and creates necessary directories before rendering.
 A4: Yes, GroupDocs.Viewer provides options to adjust output settings such as resolution for PNG images.
 
 **Q5: Where can I get support if I encounter issues?**
-A5: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance from community and experts.
+A5: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance from community and experts.
 
 ## Resources
 - **Documentation:** [GroupDocs.Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)

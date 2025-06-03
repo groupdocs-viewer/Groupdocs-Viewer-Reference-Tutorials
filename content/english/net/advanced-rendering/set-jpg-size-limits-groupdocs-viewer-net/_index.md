@@ -179,7 +179,7 @@ As a next step, explore integrating this functionality with other systems or exp
 - **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Download Free Trial](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Apply for Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Now that you have the knowledge and resources, why not try implementing this solution in your projects today? Happy coding!
 

@@ -189,7 +189,7 @@ Ready to try it out? Implement this solution in your next project and see the di
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Now you're all set to transform how documents are presented in your applications using GroupDocs.Viewer for .NET. Happy coding!
 

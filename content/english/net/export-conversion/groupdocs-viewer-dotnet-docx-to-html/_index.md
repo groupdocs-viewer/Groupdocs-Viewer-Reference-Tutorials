@@ -170,7 +170,7 @@ Ready to try it out? Dive into practical examples and see how you can improve yo
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support](https://forum.groupdocs.com/c/viewer/10)
+- [Support](https://forum.groupdocs.com/c/viewer/9)
 
 Explore these resources to further expand your knowledge and skills with GroupDocs.Viewer for .NET. Happy coding!
 

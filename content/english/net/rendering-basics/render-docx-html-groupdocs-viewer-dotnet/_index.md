@@ -189,4 +189,4 @@ Ready to implement this solution in your projects? Dive deeper by experimenting 
 - **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Try Free Trial](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)

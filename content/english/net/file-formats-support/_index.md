@@ -28,6 +28,6 @@ Learn how to efficiently retrieve and display supported file types with GroupDoc
 - [GroupDocs.Viewer for Net Documentation](https://docs.groupdocs.com/viewer/net/)
 - [GroupDocs.Viewer for Net API Reference](https://reference.groupdocs.com/viewer/net/)
 - [Download GroupDocs.Viewer for Net](https://releases.groupdocs.com/viewer/net/)
-- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/groupdocs.viewer)
+- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)

@@ -178,4 +178,4 @@ You've learned how to adjust JPG image quality in PDFs using GroupDocs.Viewer fo
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License Information](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

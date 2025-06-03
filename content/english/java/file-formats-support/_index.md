@@ -11,9 +11,6 @@ Explore comprehensive document format support with our GroupDocs.Viewer tutorial
 
 ## Available Tutorials
 
-### [Implement GroupDocs.Viewer Java&#58; List Supported File Formats & Set Directory Paths](./groupdocs-viewer-java-file-formats-directory-paths/)
-Learn to implement GroupDocs.Viewer in Java applications for listing supported file formats and setting directory paths. Ideal for content management systems.
-
 ### [Master MS Project Viewing in Java with GroupDocs.Viewer&#58; A Comprehensive Guide](./mastering-ms-project-viewing-groupdocs-java/)
 Learn how to use GroupDocs.Viewer for Java to efficiently extract and display detailed information from MS Project files. Ideal for project managers, developers, and analysts.
 
@@ -40,6 +37,6 @@ Learn how to programmatically extract layouts and layers from CAD files using Gr
 - [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/viewer/java/)
 - [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/groupdocs.viewer)
+- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)

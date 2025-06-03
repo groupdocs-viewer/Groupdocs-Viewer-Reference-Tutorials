@@ -141,7 +141,7 @@ To further enhance your skills, explore additional features of GroupDocs.Viewer 
 4. **Is there a way to customize the HTML output further?**
    - Explore additional options in `HtmlViewOptions` to tailor the appearance and functionality of your rendered pages.
 5. **Where can I find more resources or support for GroupDocs.Viewer?**
-   - Visit the [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) and [Support Forum](https://forum.groupdocs.com/c/viewer/10) for more information and assistance.
+   - Visit the [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) and [Support Forum](https://forum.groupdocs.com/c/viewer/9) for more information and assistance.
 
 ## Resources
 - **Documentation:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)

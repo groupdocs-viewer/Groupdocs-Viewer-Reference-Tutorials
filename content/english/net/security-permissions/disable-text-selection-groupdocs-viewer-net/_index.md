@@ -167,4 +167,4 @@ Throughout this tutorial, you've learned how to configure GroupDocs.Viewer for .
 - **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Get Started Today](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Apply Here](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum**: [Join the Discussion](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum**: [Join the Discussion](https://forum.groupdocs.com/c/viewer/9)

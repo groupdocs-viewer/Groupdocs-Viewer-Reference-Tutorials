@@ -197,4 +197,4 @@ To further explore GroupDocs.Viewer's capabilities, refer to these resources:
 - **Purchase:** [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [Try for Free](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License:** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)

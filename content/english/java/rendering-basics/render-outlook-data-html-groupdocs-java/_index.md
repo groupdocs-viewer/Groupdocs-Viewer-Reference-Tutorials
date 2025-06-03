@@ -145,7 +145,7 @@ A3: Temporary licenses are trial versions with limited features, while full lice
 A4: Yes, it can be integrated into cloud applications via its REST API or Java SDKs.
 
 **Q5: How do I debug issues during rendering?**
-A5: Check the file path and ensure dependencies are correctly configured. Consult the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for more help.
+A5: Check the file path and ensure dependencies are correctly configured. Consult the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for more help.
 
 ## Resources
 - **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)

@@ -186,7 +186,7 @@ Explore additional features of GroupDocs.Viewer, such as rendering different doc
 - [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial and Temporary License](https://releases.groupdocs.com/viewer/java/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 This comprehensive guide should equip you with the knowledge to effectively implement GroupDocs.Viewer for Java in your projects. Happy coding!
 

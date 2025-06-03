@@ -196,7 +196,7 @@ Ready to dive deeper? Implement the solution in your next project!
 
 5. **What support is available if I encounter issues with GroupDocs.Viewer?**
 
-   Consult the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) for community support and troubleshooting tips.
+   Consult the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community support and troubleshooting tips.
 
 ## Resources
 - **Documentation:** [GroupDocs Viewer .NET Documentation](https://docs.groupdocs.com/viewer/net/)

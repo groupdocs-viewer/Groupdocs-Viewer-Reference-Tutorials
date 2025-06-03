@@ -180,4 +180,4 @@ A5: Setting appropriate timeouts helps avoid indefinite waits, thus optimizing o
 - **Purchase**: [Buy GroupDocs Viewer](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/net/)
 - **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum Support](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum Support](https://forum.groupdocs.com/c/viewer/9)

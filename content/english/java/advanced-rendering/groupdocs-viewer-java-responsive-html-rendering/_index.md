@@ -171,6 +171,6 @@ Ready to try implementing this solution? Dive in and start rendering documents r
 - Purchase License: [Purchase Now](https://purchase.groupdocs.com/buy)
 - Free Trial: [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)
 - Temporary License: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- Support: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- Support: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Take your document rendering to the next level with GroupDocs.Viewer for Java and create responsive, dynamic HTML content today!

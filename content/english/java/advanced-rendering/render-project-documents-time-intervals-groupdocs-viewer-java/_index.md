@@ -215,6 +215,6 @@ Ensure all configurations are correct and check the GroupDocs documentation for 
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try the Free Version](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 With this guide, you are ready to implement time interval rendering in your projects using GroupDocs.Viewer for Java.

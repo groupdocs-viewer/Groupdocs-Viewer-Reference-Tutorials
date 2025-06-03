@@ -25,6 +25,6 @@ Learn how to efficiently load and render documents directly from URLs using Grou
 - [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/viewer/java/)
 - [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/groupdocs.viewer)
+- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)

@@ -180,7 +180,7 @@ Try implementing the solution in your next project and experience the benefits f
 4. **What file formats are supported by GroupDocs.Viewer?**
    - It supports a wide range of document types including Word, Excel, PowerPoint, PDF, and more.
 5. **Is there support available if I encounter issues?**
-   - Yes, consult the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/10) for community support or contact their customer service.
+   - Yes, consult the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) for community support or contact their customer service.
 
 ## Resources
 
@@ -190,4 +190,4 @@ Try implementing the solution in your next project and experience the benefits f
 - **Purchase**: [Buy GroupDocs Licenses](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [GroupDocs Free Trial Download](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Apply for Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)

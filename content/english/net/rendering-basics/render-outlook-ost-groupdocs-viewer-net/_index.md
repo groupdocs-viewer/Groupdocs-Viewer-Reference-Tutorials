@@ -152,7 +152,7 @@ When dealing with large datasets, performance optimization is crucial:
 ## Conclusion
 By following this guide, you've learned how to set up GroupDocs.Viewer for .NET and render Outlook OST files. This powerful tool not only simplifies handling email data but also integrates seamlessly with various systems, enhancing productivity and efficiency in managing emails.
 
-**Next Steps:** Experiment by integrating these features into your projects, explore more advanced configurations, or join the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10) to connect with other users and experts.
+**Next Steps:** Experiment by integrating these features into your projects, explore more advanced configurations, or join the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) to connect with other users and experts.
 
 ## FAQ Section
 1. **How do I set up GroupDocs.Viewer on different platforms?**
@@ -164,7 +164,7 @@ By following this guide, you've learned how to set up GroupDocs.Viewer for .NET 
 4. **What are common issues when rendering large OST files?**
    - Common issues include memory constraints and incorrect folder paths.
 5. **How do I get support if I encounter problems?**
-   - Visit [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10) for assistance.
+   - Visit [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 ## Resources
 - **Documentation:** Explore comprehensive guides at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/net/)

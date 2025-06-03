@@ -153,7 +153,7 @@ Following these best practices will help maintain smooth and efficient operation
 ## Conclusion
 Congratulations! You've learned how to utilize GroupDocs.Viewer for .NET to convert HPG documents into various formats. This powerful tool opens numerous possibilities for document management and presentation in .NET applications.
 
-To deepen your understanding, explore the [GroupDocs documentation](https://docs.groupdocs.com/viewer/net/) or try integrating these features with other systems within your projects. For further assistance, reach out via their [support forum](https://forum.groupdocs.com/c/viewer/10).
+To deepen your understanding, explore the [GroupDocs documentation](https://docs.groupdocs.com/viewer/net/) or try integrating these features with other systems within your projects. For further assistance, reach out via their [support forum](https://forum.groupdocs.com/c/viewer/9).
 
 ## FAQ Section
 **Q: Can I render HPG documents in batch?**
@@ -178,4 +178,4 @@ A: Besides HTML, JPG, PNG, and PDF, you can explore other supported formats like
 - [Purchase a License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/net/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

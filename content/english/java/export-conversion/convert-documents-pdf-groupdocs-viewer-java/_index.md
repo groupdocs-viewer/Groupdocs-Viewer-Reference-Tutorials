@@ -187,7 +187,7 @@ A: Verify file paths, ensure dependencies are correctly set up, and check your G
 A: Manage memory by closing streams after use and monitor performance through profiling tools.
 
 **Q: Where can I get support for GroupDocs.Viewer?**
-A: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10) for assistance.
+A: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) for assistance.
 
 ## Resources
 

@@ -172,7 +172,7 @@ As a next step, explore the full capabilities of GroupDocs.Viewer by checking ou
 - [Purchase](https://purchase.groupdocs.com/buy)
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Start implementing your solution today and unlock the full potential of document rendering with GroupDocs.Viewer for Java!
 

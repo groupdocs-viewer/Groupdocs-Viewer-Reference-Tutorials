@@ -163,6 +163,6 @@ A: Absolutely! It’s designed to handle extensive document conversion needs, ma
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Embark on your journey with GroupDocs.Viewer for Java and elevate your application's document handling capabilities today!

@@ -149,7 +149,7 @@ Ready to try it out? Start implementing this solution in your projects today and
 4. **What should I do if my application is running slow during rendering?**
    - Review your item limits and resource settings; consider optimizing memory management practices.
 5. **Where can I find support for GroupDocs.Viewer issues?**
-   - For assistance, check the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10).
+   - For assistance, check the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).
 
 ## Resources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
@@ -158,4 +158,4 @@ Ready to try it out? Start implementing this solution in your projects today and
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)

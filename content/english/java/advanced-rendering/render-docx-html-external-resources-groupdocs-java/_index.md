@@ -158,6 +158,6 @@ For further exploration, consider integrating this solution into your web applic
 - **Purchase License:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License:** [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10)
+- **Support Forum:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
 
 By following this guide, you're now equipped to render DOCX documents as HTML with all external resources using GroupDocs.Viewer for Java effectively. Happy coding!

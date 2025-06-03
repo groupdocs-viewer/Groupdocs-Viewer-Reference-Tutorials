@@ -166,7 +166,7 @@ Ready to put this solution into practice? Dive deeper into the documentation at 
 4. **What are the licensing options for GroupDocs.Viewer?**
    - Start with a free trial, apply for a temporary license, or purchase a full license.
 5. **Is there support available if I encounter issues?**
-   - Detailed support is available through [GroupDocs Support](https://forum.groupdocs.com/c/viewer/10).
+   - Detailed support is available through [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9).
 
 ## Resources
 - [Documentation](https://docs.groupdocs.com/viewer/net/)

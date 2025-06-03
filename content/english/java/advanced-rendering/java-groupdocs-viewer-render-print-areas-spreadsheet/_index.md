@@ -168,7 +168,7 @@ A: Verify that the print areas are properly defined in your spreadsheet. Refer t
 - **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Request Here](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 This guide provides the foundation to begin incorporating GroupDocs.Viewer into your Java applications. Happy coding!
 

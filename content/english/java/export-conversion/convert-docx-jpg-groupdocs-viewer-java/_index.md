@@ -170,6 +170,6 @@ For further exploration, consider experimenting with different file types suppor
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Now that you've understood the process, start implementing these features in your projects!

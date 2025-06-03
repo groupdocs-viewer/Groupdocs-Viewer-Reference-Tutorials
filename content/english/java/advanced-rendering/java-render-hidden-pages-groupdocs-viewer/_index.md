@@ -177,7 +177,7 @@ A5: Ensure all dependencies are correctly configured in your `pom.xml` and check
 - **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
 - **Free Trial**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/10)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Embark on your journey with GroupDocs.Viewer for Java today and unlock the full potential of document rendering!
 

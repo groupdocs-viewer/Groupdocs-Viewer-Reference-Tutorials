@@ -188,7 +188,7 @@ Next steps include exploring additional features of GroupDocs.Viewer and conside
 - [Purchase License](https://purchase.groupdocs.com/buy)
 - [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
 - [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
-- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/10)
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 Embark on your journey to precise PDF rendering with GroupDocs.Viewer for Java today!
 
