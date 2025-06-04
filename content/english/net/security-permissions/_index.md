@@ -11,9 +11,6 @@ Learn to secure document viewing with our comprehensive GroupDocs.Viewer securit
 
 ## Available Tutorials
 
-### [How to Check File Encryption Status Using GroupDocs.Viewer .NET in C#](./check-file-encryption-groupdocs-viewer-net/)
-Learn how to use GroupDocs.Viewer .NET to check if your files are encrypted. This tutorial provides a step-by-step guide for .NET developers.
-
 ### [How to Disable Text Selection in PDFs Using GroupDocs.Viewer .NET for Enhanced Security](./disable-text-selection-groupdocs-viewer-net/)
 Learn how to use GroupDocs.Viewer .NET to disable text selection and protect sensitive information when rendering PDFs as HTML.
 

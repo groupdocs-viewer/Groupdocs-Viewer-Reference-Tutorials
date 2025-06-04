@@ -35,14 +35,8 @@ Learn how to efficiently convert Word documents (DOCX) into HTML with GroupDocs.
 ### [How to Implement .NET HTML Rendering with GroupDocs.Viewer&#58; A Step-by-Step Guide](./implement-net-html-rendering-groupdocs-viewer/)
 Learn how to convert documents into HTML format using GroupDocs.Viewer for .NET. This guide covers setup, rendering steps, and practical applications.
 
-### [How to Render CAD Drawings as JPEG Images Using GroupDocs.Viewer .NET](./render-cad-drawings-jpeg-groupdocs-viewer-net/)
-Learn how to efficiently convert DWG files into high-quality JPEG images using GroupDocs.Viewer for .NET. Follow our step-by-step guide for easy setup and customization.
-
 ### [How to Render DOCX to PNG Using GroupDocs.Viewer .NET&#58; A Step-by-Step Guide](./render-docx-png-groupdocs-viewer-net/)
 Learn how to convert DOCX files into PNG images using GroupDocs.Viewer for .NET. This guide covers setup, implementation, and practical applications.
-
-### [How to Render Documents to HTML using GroupDocs.Viewer for .NET&#58; A Step-by-Step Guide](./render-documents-html-groupdocs-viewer-dotnet/)
-Learn how to convert documents from your local disk into web-friendly HTML with GroupDocs.Viewer for .NET. Follow this detailed guide for easy integration.
 
 ### [How to Render EMZ/EMF Files Using GroupDocs.Viewer .NET&#58; A Comprehensive Guide](./render-emz-emf-groupdocs-viewer-dotnet/)
 Learn how to efficiently render Enhanced Metafile (EMF) and Embedded Metafile (EMZ) files in various formats with GroupDocs.Viewer for .NET. This guide covers HTML, JPG, PNG, and PDF conversions.
@@ -65,20 +59,11 @@ Master rendering Truevision TGA files into HTML, JPG, PNG, and PDF formats using
 ### [How to Render Visio Documents as HTML, JPG, PNG, and PDF in .NET using GroupDocs.Viewer](./groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/)
 Learn how to convert Microsoft Visio files into multiple formats with ease using GroupDocs.Viewer for .NET. Enhance document accessibility for web integration.
 
-### [Implement PDF Rendering in .NET with GroupDocs.Viewer&#58; A Step-by-Step Guide](./implement-net-pdf-rendering-groupdocs-viewer-guide/)
-Learn how to efficiently render documents as PDFs using GroupDocs.Viewer for .NET. This guide covers setup, implementation, and optimization techniques.
-
 ### [Master GroupDocs.Viewer .NET&#58; Download Files & Render HTML Documents Effortlessly](./mastering-groupdocs-viewer-net-file-download-html-rendering/)
 Learn how to use GroupDocs.Viewer for .NET to download files from URLs and render them as HTML, enhancing your .NET applications with streamlined document management.
 
 ### [Master GroupDocs.Viewer .NET&#58; Embed Fonts and Convert Documents to HTML Efficiently](./embed-fonts-convert-docs-groupdocs-viewer-net/)
 Learn how to embed fonts and convert documents to HTML using GroupDocs.Viewer .NET, ensuring consistent rendering across platforms.
-
-### [Render Animated PNGs with GroupDocs.Viewer for .NET | Complete Guide](./render-animated-png-groupdocs-viewer-net/)
-Learn how to render APNG files into HTML, JPG, PNG, and PDF using GroupDocs.Viewer for .NET. This guide provides step-by-step instructions for seamless integration.
-
-### [Render CMX to HTML, JPG, PNG, PDF Using GroupDocs.Viewer .NET&#58; A Step-by-Step Guide](./render-cmx-groupdocs-viewer-net-html-jpg-png-pdf/)
-Learn how to efficiently convert CMX documents into web-friendly formats like HTML, JPG, PNG, and PDF using GroupDocs.Viewer for .NET. Follow this comprehensive guide for seamless document rendering.
 
 ### [Render Email Attachments to HTML with GroupDocs.Viewer for .NET](./render-email-attachments-html-groupdocs-viewer-net/)
 Learn how to efficiently convert email attachments into HTML format using GroupDocs.Viewer for .NET, enhancing document accessibility and sharing.

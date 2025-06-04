@@ -20,9 +20,6 @@ Learn how to render CDR files into HTML, JPG, PNG, and PDF using GroupDocs.Viewe
 ### [Render CF2 Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for .NET](./render-cf2-files-groupdocs-viewer-net/)
 Learn how to easily convert CAD CF2 files into various formats using GroupDocs.Viewer for .NET. A step-by-step guide for seamless file rendering.
 
-### [Retrieve and Display Supported File Types in .NET Using GroupDocs.Viewer](./retrieve-display-supported-file-types-groupdocs-viewer-net/)
-Learn how to efficiently retrieve and display supported file types with GroupDocs.Viewer for .NET. Ideal for document management systems.
-
 ## Additional Resources
 
 - [GroupDocs.Viewer for Net Documentation](https://docs.groupdocs.com/viewer/net/)

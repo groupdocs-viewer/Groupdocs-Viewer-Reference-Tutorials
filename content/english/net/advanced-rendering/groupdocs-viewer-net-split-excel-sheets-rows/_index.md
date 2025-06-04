@@ -25,7 +25,7 @@ This feature enhances your data management capabilities and ensures large datase
 
 Let's review the prerequisites before diving into the setup process.
 
-## Prerequisites (H2)
+## Prerequisites
 
 To follow this tutorial effectively, you'll need:
 
@@ -37,7 +37,7 @@ To follow this tutorial effectively, you'll need:
 - Basic understanding of C# programming and .NET framework operations.
 - Access to Excel files you wish to split into pages by rows.
 
-## Setting Up GroupDocs.Viewer for .NET (H2)
+## Setting Up GroupDocs.Viewer for .NET
 
 First, install **GroupDocs.Viewer** using either the NuGet Package Manager Console or the .NET CLI:
 
@@ -121,7 +121,7 @@ This code snippet processes your Excel file, generating multiple files based on 
 - **Permission Issues**: Check that you have write permissions for the output directory.
 - **Row Count Errors**: Validate that `SplitByRows` is set appropriately and doesn't exceed total rows in a sheet.
 
-## Practical Applications (H2)
+## Practical Applications
 Here are some real-world scenarios where splitting sheets into pages by rows can be beneficial:
 1. **Report Generation**: Create multi-page reports for easy navigation during presentations.
 2. **Data Exporting**: Break large datasets into smaller, manageable files for distribution or analysis.
@@ -129,7 +129,7 @@ Here are some real-world scenarios where splitting sheets into pages by rows can
 
 These applications integrate seamlessly with other .NET systems and frameworks like ASP.NET Core for web-based report generation.
 
-## Performance Considerations (H2)
+## Performance Considerations
 To ensure optimal performance:
 - **Optimize File Handling**: Use efficient file paths and handle large files in segments.
 - **Memory Management**: Utilize GroupDocs.Viewer’s built-in memory management options to prevent leaks.
@@ -140,7 +140,7 @@ By following this guide, you've learned how to set up and use GroupDocs.Viewer f
 
 As a next step, explore more features of GroupDocs.Viewer or consider integrating it with other applications within the .NET ecosystem to enhance your data processing capabilities.
 
-## FAQ Section (H2)
+## FAQ Section
 Here are some common questions you might have:
 1. **What file formats does GroupDocs.Viewer support?**
    - It supports a wide range, including Excel, PDF, Word, and more.

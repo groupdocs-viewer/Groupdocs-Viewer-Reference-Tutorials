@@ -132,17 +132,29 @@ By now, you should have a solid understanding of how to render Excel spreadsheet
 - Explore additional features in GroupDocs.Viewer.
 - Experiment with different `SpreadsheetOptions` configurations.
 Ready to put this into practice? Try rendering your own spreadsheets and share feedback on how it transforms your document management processes!
+
 ## FAQ Section
+
 **Q1: Can I render other spreadsheet formats besides Excel XLSX?**
+
 A1: Yes, GroupDocs.Viewer supports various spreadsheet formats including CSV, ODS, and more.
+
 **Q2: How do I handle large files without running into memory issues?**
+
 A2: Process documents in smaller batches and ensure proper disposal of Viewer objects after use.
+
 **Q3: What if my rendered PDF lacks clarity or detail?**
+
 A3: Adjust the rendering settings like grid lines and headings to improve visibility.
+
 **Q4: Is it possible to customize page size for the output PDF?**
+
 A4: Yes, you can set custom dimensions in `PdfViewOptions` before rendering.
+
 **Q5: Where can I find more information on GroupDocs.Viewer's capabilities?**
+
 A5: Visit their [documentation](https://docs.groupdocs.com/viewer/net/) and [API reference](https://reference.groupdocs.com/viewer/net/).
+
 ## Resources
 - **Documentation**: Explore in-depth guides at the [GroupDocs Documentation](https://docs.groupdocs.com/viewer/net/).
 - **API Reference**: Access detailed API information via [GroupDocs API Reference](https://reference.groupdocs.com/viewer/net/).

@@ -11,14 +11,8 @@ Explore advanced document rendering capabilities with our comprehensive GroupDoc
 
 ## Available Tutorials
 
-### [Cancelable Rendering in .NET&#58; Stop GroupDocs.Viewer Tasks Midway Using CancellationToken](./groupdocs-viewer-net-cancelable-rendering-cancellationtoken/)
-Learn to implement cancelable rendering with GroupDocs.Viewer for .NET using CancellationToken. Master efficient document processing and improve application responsiveness.
-
 ### [Customize CAD Images with GroupDocs.Viewer .NET&#58; Advanced Rendering Techniques](./customize-cad-images-groupdocs-viewer-net/)
 Master rendering and customizing CAD images using GroupDocs.Viewer for .NET. Learn to adjust sizes, change colors, and manage output directories effectively.
-
-### [Customize Email PDF Rendering with GroupDocs.Viewer for .NET&#58; Adjust Page Sizes Easily](./render-email-messages-pdf-custom-page-size-groupdocs-viewer-net/)
-Learn how to render email messages into customizable PDF page sizes using GroupDocs.Viewer for .NET. Perfect for legal documentation, archiving, and sharing.
 
 ### [Customizing Date-Time Formats and Time Zone Offsets in Emails with GroupDocs.Viewer .NET](./custom-date-time-formats-emails-groupdocs-viewer-net/)
 Learn how to customize date-time formats and apply time zone offsets for emails using GroupDocs.Viewer .NET, enhancing usability and professional appearance.
@@ -44,9 +38,6 @@ Learn how to use GroupDocs.Viewer .NET to streamline web documents by implementi
 ### [How to Render Archive Files to HTML Using GroupDocs.Viewer .NET&#58; A Step-by-Step Guide](./render-archive-files-html-groupdocs-viewer-net/)
 Master the conversion of archive files like ZIP and RAR into user-friendly HTML using GroupDocs.Viewer for .NET. Learn setup, rendering options, and performance optimization.
 
-### [How to Render DOCX to PNG with Text Overlay in .NET using GroupDocs.Viewer](./render-docx-to-png-groupdocs-viewer-net/)
-Learn how to convert Word documents to PNG images with text overlays using GroupDocs.Viewer for .NET. This guide covers setup, rendering, and optimization.
-
 ### [How to Render Grid Lines in Excel Spreadsheets Using GroupDocs.Viewer .NET for HTML Output](./groupdocs-viewer-net-render-excel-grid-lines-html/)
 Learn how to render grid lines in Excel spreadsheets as HTML using GroupDocs.Viewer .NET, ensuring perfect visual structure and readability online.
 
@@ -55,9 +46,6 @@ Learn how to efficiently render specific pages from documents with GroupDocs.Vie
 
 ### [How to Render Specific CAD Layers Using GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./render-cad-layers-groupdocs-viewer-dotnet/)
 Learn how to render specific layers in CAD drawings using GroupDocs.Viewer for .NET with this comprehensive guide. Optimize your design display and improve performance.
-
-### [How to Render Tracked Changes in Word Documents using GroupDocs.Viewer for .NET](./groupdocs-viewer-net-render-tracked-changes-word-documents/)
-Learn how to efficiently render tracked changes in Word documents with GroupDocs.Viewer for .NET. This tutorial provides step-by-step guidance for developers.
 
 ### [How to Resize Images with GroupDocs.Viewer .NET&#58; A Step-by-Step Guide for Developers](./resize-images-groupdocs-viewer-net-guide/)
 Learn how to resize images using GroupDocs.Viewer for .NET efficiently. This guide covers setup, resizing techniques, and practical applications.
@@ -98,23 +86,11 @@ Learn how to seamlessly render SVGZ files into HTML, JPG, PNG, and PDF formats u
 ### [Master Text Extraction in .NET with GroupDocs.Viewer&#58; A Comprehensive Guide](./text-extraction-net-groupdocs-viewer-tutorial/)
 Learn how to efficiently extract text from documents using GroupDocs.Viewer for .NET. This tutorial covers setup, implementation, and performance optimization.
 
-### [Mastering Pre-defined Fonts in GroupDocs.Viewer .NET for Consistent Document Rendering](./groupdocs-viewer-net-predefined-fonts/)
-Learn how to use GroupDocs.Viewer for .NET to handle missing fonts seamlessly, ensuring consistent document rendering with pre-defined default fonts.
-
 ### [Optimize CAD Drawing Size Using GroupDocs.Viewer .NET for Enhanced Web Performance](./adjust-cad-drawing-size-groupdocs-viewer-net/)
 Learn how to adjust CAD drawing sizes with GroupDocs.Viewer .NET, optimizing image quality and web performance efficiently.
 
-### [Optimize PDF Image Quality in .NET using GroupDocs.Viewer](./adjust-pdf-image-quality-groupdocs-viewer-net/)
-Learn how to efficiently adjust PDF image quality with GroupDocs.Viewer for .NET, enhancing document clarity while optimizing file size.
-
 ### [Optimizing JPG Quality in GroupDocs.Viewer .NET for Enhanced Image Rendering](./adjust-jpg-quality-groupdocs-viewer-dotnet/)
 Learn how to adjust the quality of output JPG images using GroupDocs.Viewer .NET. Enhance your document rendering with precise control over image clarity and file size.
-
-### [Render All CAD Layouts in Drawings with GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./render-all-layouts-cad-groupdocs-viewer-net/)
-Learn how to render all layouts from CAD drawings using GroupDocs.Viewer for .NET. Enhance collaboration and streamline workflows in your projects.
-
-### [Render Documents with Comments Using GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./render-documents-comments-groupdocs-viewer-net/)
-Learn how to render documents with comments in your .NET applications using GroupDocs.Viewer. This guide covers setup, rendering options, and practical applications.
 
 ### [Render Excel Spreadsheets by Page Breaks Using GroupDocs.Viewer for .NET](./render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/)
 Learn how to render Excel spreadsheets by page breaks using GroupDocs.Viewer for .NET. Enhance your document management with clear PDF outputs and improve data presentation.
@@ -127,9 +103,6 @@ Learn how to render hidden rows and columns in Excel files with GroupDocs.Viewer
 
 ### [Render PDF/OXPS with Font Restrictions Using GroupDocs.Viewer .NET&#58; A Comprehensive Guide](./render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/)
 Learn how to render PDF and OXPS documents while bypassing font license restrictions using GroupDocs.Viewer for .NET. Discover the setup, implementation, and practical applications.
-
-### [Render Text Files with Specific Encoding Using GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./groupdocs-viewer-net-render-text-files-specific-encoding/)
-Master the art of rendering text files with specific encodings like Shift-JIS using GroupDocs.Viewer for .NET. Learn step-by-step setup and implementation to solve encoding issues.
 
 ### [Split Excel Sheets into Pages by Rows Using GroupDocs.Viewer .NET for Efficient Data Management](./groupdocs-viewer-net-split-excel-sheets-rows/)
 Learn how to split large Excel sheets into pages using GroupDocs.Viewer .NET. This guide covers setup, configuration, and implementation for better data management.

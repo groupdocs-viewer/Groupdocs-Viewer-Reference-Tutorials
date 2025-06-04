@@ -17,9 +17,6 @@ Learn how to efficiently extract archive information using GroupDocs.Viewer for 
 ### [How to Retrieve Outlook Data Information Using GroupDocs.Viewer for .NET](./retrieve-outlook-info-groupdocs-viewer-net/)
 Learn how to efficiently extract detailed view information from Outlook data files using GroupDocs.Viewer for .NET. Enhance productivity with this comprehensive guide.
 
-### [How to Retrieve PDF Metadata and Properties Using GroupDocs.Viewer .NET for Developers](./retrieve-pdf-view-info-groupdocs-viewer-net/)
-Learn how to extract crucial metadata from PDFs using GroupDocs.Viewer for .NET, including page count and printing permissions. Perfect for developers in document management.
-
 ### [How to Retrieve and Print Excel Worksheet Names Using GroupDocs.Viewer for .NET (2023 Guide)](./retrieve-print-excel-worksheets-groupdocs-viewer-net/)
 Learn how to efficiently retrieve and print Excel worksheet names using GroupDocs.Viewer for .NET. Follow this comprehensive guide to manage your spreadsheets effectively with C#.
 

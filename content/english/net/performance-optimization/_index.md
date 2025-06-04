@@ -14,17 +14,11 @@ Master performance optimization for document rendering with our GroupDocs.Viewer
 ### [Implementing Effective Logging in GroupDocs.Viewer .NET for Console and File Outputs](./logging-groupdocs-viewer-net-console-file/)
 Learn how to set up logging in GroupDocs.Viewer .NET with this guide, covering console and file outputs. Enhance application monitoring and debugging.
 
-### [Optimize .NET Spreadsheets&#58; Skip Empty Rows with GroupDocs.Viewer for Efficient Data Processing](./optimize-net-spreadsheets-skip-empty-rows-groupdocs-viewer/)
-Learn how to optimize your .NET spreadsheets by skipping empty rows using GroupDocs.Viewer. Enhance performance and reduce file size with this step-by-step guide.
-
 ### [Optimize JPG Quality in PDFs with GroupDocs.Viewer .NET&#58; A Comprehensive Guide](./optimize-jpg-quality-pdf-groupdocs-viewer-net/)
 Learn how to enhance the quality of embedded JPG images when converting presentations to PDF using GroupDocs.Viewer for .NET. This guide covers setup, optimization techniques, and practical applications.
 
 ### [Optimize Outlook Data Rendering in .NET with GroupDocs.Viewer&#58; Performance Tips and Techniques](./limit-outlook-data-rendering-groupdocs-viewer-net/)
 Learn how to efficiently limit data rendering in Outlook files using GroupDocs.Viewer for .NET. Enhance performance and user experience by controlling the number of items displayed.
-
-### [Optimize PDF Rendering in .NET&#58; Disable Character Grouping for Precision](./optimize-pdf-rendering-net-disable-character-grouping/)
-Learn how to optimize PDF rendering in .NET by disabling character grouping using GroupDocs.Viewer. Enhance document fidelity and precision with this step-by-step guide.
 
 ### [Optimize Spreadsheet Rendering with GroupDocs.Viewer for .NET&#58; Skip Empty Columns](./optimize-spreadsheet-rendering-groupdocs-viewer-net/)
 Learn how to use GroupDocs.Viewer for .NET to skip rendering empty columns in spreadsheets, optimizing performance and output size. Enhance your .NET applications today.

@@ -23,9 +23,6 @@ Learn how to convert CHM files into HTML, JPEG, PNG, and PDF formats with ease u
 ### [Convert DOCX to HTML using GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./groupdocs-viewer-dotnet-docx-to-html/)
 Learn how to transform DOCX files into interactive HTML with external resources using GroupDocs.Viewer for .NET. This guide covers setup, configuration, and practical implementation.
 
-### [Convert Excel Files to HTML, JPG, PNG, PDF using GroupDocs.Viewer for .NET](./convert-excel-groupdocs-viewer-net/)
-Learn how to convert Excel spreadsheets to various formats like HTML, JPG, PNG, and PDF with GroupDocs.Viewer for .NET. Enhance data accessibility and presentation.
-
 ### [Convert FODG/ODG to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer for .NET](./convert-fodg-og-documents-groupdocs-viewer-net/)
 Learn how to efficiently convert FODG and ODG documents into multiple formats using GroupDocs.Viewer for .NET. Follow this step-by-step guide with code examples.
 
@@ -40,12 +37,6 @@ Master document rendering by converting PST/OST files into various formats using
 
 ### [Convert TXT to HTML, JPG, PNG, PDF Using GroupDocs.Viewer .NET&#58; A Complete Guide](./groupdocs-viewer-dotnet-txt-conversion-guide/)
 Learn how to convert TXT files into multiple formats like HTML, JPG, PNG, and PDF using GroupDocs.Viewer for .NET with this comprehensive guide.
-
-### [Convert XML SpreadsheetML to HTML, JPG, PNG, and PDF using GroupDocs.Viewer .NET](./convert-xml-spreadsheetml-groupdocs-viewer-net/)
-Learn how to convert Excel 2003 SpreadSheetML XML documents into various formats using GroupDocs.Viewer for .NET. Streamline your data workflows with this comprehensive guide.
-
-### [How to Convert Documents to PDF Using GroupDocs Viewer for .NET (With Stream Handling)](./convert-documents-pdf-groupdocs-viewer-net/)
-Learn how to efficiently convert documents like DOCX to PDF using GroupDocs.Viewer in .NET, including handling file streams.
 
 ## Additional Resources
 

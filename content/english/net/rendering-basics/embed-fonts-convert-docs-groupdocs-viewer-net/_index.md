@@ -175,6 +175,3 @@ As next steps, consider exploring more advanced features offered by GroupDocs.Vi
    - Ensure they are included in the font source directory and correctly referenced in `Utils.FontsPath`.
 2. **What if my application runs on a Unix-based system?**
    - The code already handles this by deriving the path from the entry assembly directory.
-3. **Can GroupDocs.Viewer handle multiple document formats?**
-   - Yes
-
