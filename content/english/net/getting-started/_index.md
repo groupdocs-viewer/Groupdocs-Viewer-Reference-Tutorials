@@ -14,6 +14,8 @@ url: /net/getting-started/
 
 Are you ready to enhance your .NET applications with powerful document viewing capabilities? Look no further! In this comprehensive guide, we'll walk you through everything you need to know about integrating GroupDocs.Viewer for .NET seamlessly into your projects.
 
+![Document Viewing with GroupDocs.Viewer for .NET](./image.png)
+
 ## Getting Started Tutorials
 
 Are you new to GroupDocs.Viewer for .NET? No worries! Our "Getting Started" tutorials are designed to help you kickstart your journey with ease. Whether you're setting a license from a file or a stream, or opting for a metered license, we've got you covered.
