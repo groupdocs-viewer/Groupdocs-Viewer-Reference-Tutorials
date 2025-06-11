@@ -13,6 +13,7 @@ url: /net/advanced-loading/
 
 In the realm of .NET application development, integrating efficient document viewing capabilities is paramount. GroupDocs.Viewer for .NET stands out as a comprehensive solution, offering a myriad of functionalities to streamline document rendering. This article serves as a curated guide to advanced loading options tutorials, empowering developers to harness the full potential of GroupDocs.Viewer for .NET.
 
+![Advanced Loading Options in GroupDocs.Viewer for .NET](/viewer/image.png)
 ## Specify File Type When Loading Documents
 Navigating through diverse document formats is a common challenge for .NET developers. With GroupDocs.Viewer, you can effortlessly specify file types during document loading. Whether it's PDFs, Word documents, or Excel sheets, ensure accurate rendering in your .NET applications. Dive into our tutorial to master this essential feature and elevate user experiences.
 
