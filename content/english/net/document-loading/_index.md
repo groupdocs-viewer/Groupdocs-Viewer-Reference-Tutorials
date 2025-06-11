@@ -9,6 +9,8 @@ url: "/net/document-loading/"
 
 Our document loading tutorials provide comprehensive guidance for handling document sources in .NET. Follow these step-by-step guides to learn how to load documents from different storage types, handle various file formats, manage input streams, and implement flexible document loading strategies. These practical tutorials include complete code examples for document source handling, helping you build robust document viewing applications with versatile loading capabilities.
 
+![Document Loading and Source Handling with GroupDocs.Viewer for .NET](/viewer/document-loading/image.png)
+
 ## Available Tutorials
 
 ### [Render Documents Using GroupDocs.Viewer .NET from Streams&#58; A Comprehensive Guide for Developers](./render-documents-groupdocs-viewer-net-streams/)

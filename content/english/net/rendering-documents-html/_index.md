@@ -14,6 +14,8 @@ url: /net/rendering-documents-html/
 
 Are you looking to enhance your .NET applications by seamlessly rendering documents to HTML? With GroupDocs.Viewer for .NET, you can achieve just that. In this article, we'll walk you through various tutorials aimed at optimizing document display and improving user experience.
 
+![Rendering Documents to HTML with GroupDocs.Viewer .NET](/viewer/rendering-documents-html/image.png)
+
 ## Excluding Fonts from Rendered HTML
 One common concern when rendering documents to HTML is the inclusion of fonts, which can affect the loading time and compatibility. Our tutorial on [excluding fonts from rendered HTML](./exclude-fonts-html/) provides step-by-step guidance on how to mitigate this issue. By following our instructions, you can ensure a smoother document display process and a more efficient user experience. 
 

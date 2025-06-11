@@ -14,7 +14,7 @@ url: /net/loading-documents/
 Welcome to the comprehensive guide on loading documents with GroupDocs.Viewer for .NET! Whether you're a seasoned developer or a newcomer to .NET applications, our tutorials cover all aspects of efficiently loading and rendering documents to enhance your projects.
 
 Let's delve into the intricacies of document loading, covering local disk, stream, and FTP methods.
-
+![Loading and Rendering Documents with GroupDocs.Viewer .NET](/viewer/loading-documents/image.png)
 ## Load Documents from Local Disk
 
 In this tutorial, we'll walk you through the seamless process of rendering documents directly from your local disk using GroupDocs.Viewer for .NET. Whether it's PDFs, Word documents, or Excel sheets, we've got you covered. Follow along as we enhance your .NET applications with efficient document loading.

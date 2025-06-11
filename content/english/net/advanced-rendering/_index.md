@@ -9,6 +9,7 @@ url: "/net/advanced-rendering/"
 
 Explore advanced document rendering capabilities with our comprehensive GroupDocs.Viewer tutorials for .NET developers. These detailed guides cover complex rendering scenarios, custom rendering configurations, performance optimization, and implementation of specialized rendering techniques. Each tutorial provides practical .NET code examples that demonstrate how to create sophisticated document viewing solutions with precise control over rendering processes.
 
+![Advanced Document Rendering with GroupDocs.Viewer .NET](/viewer/advanced-rendering/image.png)
 ## Available Tutorials
 
 ### [Customize CAD Images with GroupDocs.Viewer .NET&#58; Advanced Rendering Techniques](./customize-cad-images-groupdocs-viewer-net/)

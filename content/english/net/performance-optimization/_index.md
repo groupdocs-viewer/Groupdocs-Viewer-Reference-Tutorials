@@ -9,6 +9,8 @@ url: "/net/performance-optimization/"
 
 Master performance optimization for document rendering with our GroupDocs.Viewer .NET tutorials. These practical guides demonstrate techniques for efficient memory management, improving rendering speed, caching strategies, and handling large or complex documents effectively. Each tutorial includes detailed .NET code examples and best practices for optimizing critical rendering aspects, ensuring your applications remain responsive and reliable even when processing substantial document collections.
 
+![Document Rendering Performance with GroupDocs.Viewer .NET](/viewer/performance-optimization/image.png)
+
 ## Available Tutorials
 
 ### [Implementing Effective Logging in GroupDocs.Viewer .NET for Console and File Outputs](./logging-groupdocs-viewer-net-console-file/)

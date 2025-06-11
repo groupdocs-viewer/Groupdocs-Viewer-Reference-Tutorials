@@ -9,6 +9,7 @@ url: "/net/caching-resource-management/"
 
 Master advanced caching and resource management with our GroupDocs.Viewer .NET tutorials. These comprehensive guides demonstrate how to implement efficient caching strategies, manage rendering resources, optimize memory usage, and improve document viewing performance. Each tutorial provides practical .NET code examples for implementing sophisticated caching mechanisms that enhance application responsiveness and reduce computational overhead.
 
+![Document Rendering Caching with GroupDocs.Viewer for .NET](/viewer/caching-resource-management/image.png)
 ## Available Tutorials
 
 ### [Implementing Resource Loading Timeout in GroupDocs.Viewer for .NET - A Complete Guide](./set-resource-loading-timeout-groupdocs-viewer-net/)

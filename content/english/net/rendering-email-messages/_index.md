@@ -13,6 +13,8 @@ url: /net/rendering-email-messages/
 
 In the realm of document rendering, GroupDocs.Viewer for .NET emerges as a pivotal tool, offering a seamless pathway to manipulate email messages within your applications. This article delves into the intricacies of rendering email messages using GroupDocs.Viewer for .NET, presenting a series of tutorials designed to empower developers with the knowledge to optimize document viewing experiences.
 
+![Rendering Email Messages with GroupDocs.Viewer .NET](/viewer/rendering-email-messages/image.png)
+
 ## Adjusting Page Size When Rendering Email Messages
 
 One of the fundamental aspects of document rendering is ensuring optimal page size, especially when dealing with email messages. With GroupDocs.Viewer for .NET, developers can effortlessly adjust page dimensions when rendering email messages into PDFs. By mastering this tutorial, you'll gain insights into enhancing document viewing efficiency, enabling smoother navigation and readability.

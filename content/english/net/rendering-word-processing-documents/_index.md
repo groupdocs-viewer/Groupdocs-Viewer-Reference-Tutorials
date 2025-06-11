@@ -16,6 +16,8 @@ Are you looking to streamline your document management process? GroupDocs.Viewer
 
 GroupDocs.Viewer for .NET is a powerful tool designed to simplify document viewing and management. With its comprehensive tutorials, users can navigate through various features seamlessly. In this tutorial series, we focus on rendering Word processing documents, particularly on handling tracked changes efficiently.
 
+![Rendering Word Processing Documents with GroupDocs.Viewer .NET](/viewer/rendering-word-processing-documents/image.png)
+
 ## Understanding the Importance of Tracked Changes
 
 Tracked changes play a pivotal role in collaborative document editing. They allow users to track modifications made to a document, enabling easy review and approval processes. However, rendering documents with tracked changes accurately can be challenging. GroupDocs.Viewer for .NET tutorials provide step-by-step guidance to overcome these challenges effortlessly.

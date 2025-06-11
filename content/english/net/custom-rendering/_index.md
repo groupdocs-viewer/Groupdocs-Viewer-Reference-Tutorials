@@ -9,6 +9,8 @@ url: "/net/custom-rendering/"
 
 Master advanced customization techniques with our GroupDocs.Viewer .NET tutorials for custom rendering. These comprehensive guides demonstrate how to create custom rendering handlers, implement specialized rendering logic, extend built-in rendering capabilities, and develop sophisticated document processing solutions. Each tutorial provides detailed .NET code examples showing how to implement flexible, tailored document rendering strategies that go beyond standard rendering approaches.
 
+![Custom Document Rendering with GroupDocs.Viewer for .NET](/viewer/custom-rendering/image.png)
+
 ## Available Tutorials
 
 ### [Customize Email Labels in GroupDocs.Viewer for .NET&#58; A Complete Guide to Renaming Fields](./customize-email-labels-groupdocs-viewer-dotnet/)

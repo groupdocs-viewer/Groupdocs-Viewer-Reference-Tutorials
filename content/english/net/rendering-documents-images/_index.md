@@ -15,6 +15,8 @@ In the realm of .NET development, mastering document rendering to images is para
 
 Embarking on the journey of rendering documents to images opens doors to enhanced user experience and increased productivity. Let's delve into the tutorials offered by GroupDocs.Viewer for .NET:
 
+![Rendering Documents to Images with GroupDocs.Viewer .NET](/viewer/rendering-documents-images/image.png)
+
 ## Render Document to JPG/PNG
 In this tutorial, you'll uncover the seamless process of rendering documents to JPG/PNG formats using GroupDocs.Viewer for .NET. By implementing this method, you'll significantly enhance user experience and productivity. [Learn more](./render-jpg-png/).
 

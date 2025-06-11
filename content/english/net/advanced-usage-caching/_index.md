@@ -14,6 +14,7 @@ url: /net/advanced-usage-caching/
 
 In the realm of .NET application development, where efficiency and speed are paramount, mastering advanced techniques like caching can significantly enhance performance. Welcome to the world of GroupDocs.Viewer, where you can harness the power of caching to streamline document processing and optimize your application's performance effortlessly.
 
+![Optimizing Document Performance with Advanced Caching in GroupDocs.Viewer .NET](/viewer/advanced-usage/image.png)
 ## Unlocking the Potential: Enable Caching for Faster Document Processing
 
 Are you tired of sluggish document rendering in your .NET applications? Say goodbye to long loading times and hello to lightning-fast performance with GroupDocs.Viewer's caching capabilities. By enabling caching, you can store frequently accessed documents in memory, drastically reducing the time it takes to retrieve and display them.

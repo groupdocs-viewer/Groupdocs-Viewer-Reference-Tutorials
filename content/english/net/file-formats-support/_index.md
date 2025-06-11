@@ -9,6 +9,8 @@ url: "/net/file-formats-support/"
 
 Explore comprehensive document format support with our GroupDocs.Viewer tutorials for .NET. These detailed guides demonstrate how to render and handle various file formats including PDF, Microsoft Office documents, images, CAD files, and specialized formats. Each tutorial provides working .NET code examples showing how to implement flexible, multi-format document viewing solutions that can handle diverse document types with consistent rendering quality.
 
+![Multi-Format Document Rendering with GroupDocs.Viewer for .NET](/viewer/file-formats-support/image.png)
+
 ## Available Tutorials
 
 ### [How to Detect File Types Using GroupDocs.Viewer for .NET&#58; A Comprehensive Tutorial](./groupdocs-viewer-net-file-type-detection-tutorial/)

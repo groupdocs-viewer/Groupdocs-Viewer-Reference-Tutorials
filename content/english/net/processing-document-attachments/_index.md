@@ -13,6 +13,8 @@ url: /net/processing-document-attachments/
 
 In the realm of .NET application development, incorporating efficient document viewing capabilities is paramount. With GroupDocs.Viewer for .NET, this process becomes not just streamlined but also remarkably intuitive. This article delves into the intricacies of handling document attachments seamlessly within your .NET applications.
 
+![Processing Document Attachments with GroupDocs.Viewer .NET](/viewer/processing-document-attachments/image.png)
+
 Understanding the need to seamlessly integrate document viewing capabilities, GroupDocs.Viewer for .NET offers a comprehensive set of tools. One crucial aspect it addresses is the retrieval and printing of document attachments. With clear, concise tutorials like [Retrieve and Print Document Attachments](./retrieve-and-print-attachments/), developers can effortlessly implement these features into their applications. The process is not only simplified but also ensures a seamless user experience.
 
 Furthermore, GroupDocs.Viewer for .NET doesn't stop at retrieval and printing; it extends its functionality to efficient management of document attachments. The tutorial on [Retrieve and Save Document Attachments](./retrieve-and-save-attachments/) elucidates the process of managing attachments within .NET applications. Developers can now navigate through attachments hassle-free, ensuring optimal performance and user satisfaction.

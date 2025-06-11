@@ -9,6 +9,8 @@ url: "/net/rendering-basics/"
 
 Master document rendering techniques with our detailed GroupDocs.Viewer .NET tutorials. These step-by-step guides demonstrate how to convert and render documents to various output formats, control rendering quality, manage page-level rendering, and implement cross-format document visualization with precision and efficiency.
 
+![Document Rendering Fundamentals with GroupDocs.Viewer .NET](/viewer/rendering-basics/image.png)
+
 ## Available Tutorials
 
 ### [Comprehensive Guide to Rendering AI Files using GroupDocs.Viewer .NET for Developers](./render-ai-groupdocs-viewer-net-guide/)

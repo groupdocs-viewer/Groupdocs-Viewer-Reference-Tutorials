@@ -13,6 +13,8 @@ url: /net/rendering-visio-documents/
 
 Are you looking to delve deeper into rendering Visio documents within your .NET applications? Look no further than GroupDocs.Viewer for .NET tutorials. In this comprehensive guide, we will walk you through the process step by step, empowering you to enhance your document viewing capabilities seamlessly.
 
+![Rendering Visio Documents with GroupDocs.Viewer .NET](/viewer/rendering-visio-documents/image.png)
+
 ## Render Visio Figures
 
 When it comes to rendering Visio figures, GroupDocs.Viewer for .NET offers unparalleled capabilities. In this tutorial, we will guide you through the process, ensuring that you can effortlessly integrate this functionality into your .NET applications.

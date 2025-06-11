@@ -13,6 +13,8 @@ url: /net/rendering-web-documents/
 
 Unravel the intricacies of rendering web documents with GroupDocs.Viewer for .NET through comprehensive tutorials. Rendering CHM files and customizing HTML margins are vital functionalities that can greatly enhance your document processing capabilities.
 
+![Rendering Web Documents with GroupDocs.Viewer .NET](/viewer/rendering-web-documents/image.png)
+
 ## Rendering CHM Files
 
 Rendering CHM files demands precision and flexibility. With GroupDocs.Viewer for .NET, you delve into a realm of possibilities. Converting CHM files to various formats like HTML, JPG, PNG, and PDF becomes a breeze. Whether it's extracting crucial information or preserving document formatting, this tutorial equips you with the necessary tools. Navigate effortlessly through complex CHM structures, ensuring seamless compatibility across platforms. Enhance your document processing prowess today.

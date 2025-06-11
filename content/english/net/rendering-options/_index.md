@@ -14,6 +14,8 @@ url: /net/rendering-options/
 
 In the realm of .NET application development, effective document rendering is often a crucial aspect. Whether you're building a content management system, a document viewer, or any other application dealing with document display, having robust rendering options can significantly enhance user experience and functionality.
 
+![Rendering Options with GroupDocs.Viewer .NET](/viewer/rendering-options/image.png)
+
 ## [Add Watermark in Document](./add-watermark/)
 
 One essential feature frequently required in document management is the ability to add watermarks. With GroupDocs.Viewer for .NET, incorporating watermarks into your documents is not only seamless but also highly customizable. By following our step-by-step tutorial, you'll learn how to integrate watermarks effortlessly, boosting document security and branding simultaneously.

@@ -13,6 +13,8 @@ url: /net/spreadsheet-rendering-options/
 
 Are you ready to elevate your document viewing experience in .NET? GroupDocs.Viewer for .NET offers a comprehensive set of tutorials, empowering you to optimize the rendering of spreadsheets. From adjusting text overflow to rendering hidden columns and rows, we've got you covered. Let's dive into the world of spreadsheet rendering options and unlock the full potential of GroupDocs.Viewer for .NET.
 
+![Spreadsheet Rendering Options with GroupDocs.Viewer .NET](/viewer/spreadsheet-rendering-options/image.png)
+
 ## Adjust Text Overflow in Cells
 
 Struggling with text overflow in .NET documents? Our tutorial on adjusting text overflow in cells with GroupDocs.Viewer provides a seamless solution. Enhance readability, improve user experience, and effortlessly manage text overflow. [Learn more](./adjust-text-overflow-cells/) and bring a new level of clarity to your documents.

@@ -14,6 +14,8 @@ url: /net/image-rendering/
 
 GroupDocs.Viewer for .NET offers a rich array of tutorials for developers keen on mastering image rendering within their .NET applications. Dive into our Image Rendering Tutorials to explore step-by-step guides, code snippets, and expert tips for handling diverse image formats effortlessly.
 
+![Comprehensive Image Rendering with GroupDocs.Viewer for .NET](/viewer/image-rendering/image.png)
+
 ## Render AI Images
 Unlock the potential of rendering AI images flawlessly with GroupDocs.Viewer for .NET. Our tutorial walks you through integrating AI image rendering seamlessly into your .NET applications. Dive into our step-by-step guide and explore the possibilities.
 

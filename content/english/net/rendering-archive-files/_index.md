@@ -13,6 +13,8 @@ url: /net/rendering-archive-files/
 
 Are you seeking seamless integration of GroupDocs.Viewer for .NET into your applications for efficient document rendering and viewing capabilities? Look no further! Our tutorials cover everything you need to know to make the most out of rendering archive files. Let's delve into the details.
 
+![Rendering Archive Files with GroupDocs.Viewer .NET](/viewer/rendering-archive-files/image.png)
+
 ## Rendering Archive Files Tutorials
 
 Rendering archive files can be a crucial aspect of document management within your .NET applications. With GroupDocs.Viewer for .NET, you can effortlessly integrate this capability, enhancing the versatility and functionality of your projects.

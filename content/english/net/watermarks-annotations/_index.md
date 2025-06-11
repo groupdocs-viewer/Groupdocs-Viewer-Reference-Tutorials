@@ -9,6 +9,8 @@ url: "/net/watermarks-annotations/"
 
 Master document annotation and watermarking techniques with our GroupDocs.Viewer .NET tutorials. These step-by-step guides demonstrate how to add text and image watermarks, implement annotations, control watermark positioning and transparency, and render documents with embedded annotations. Each tutorial includes practical .NET code examples for adding visual metadata and protective markings to your documents, enhancing document tracking and branding capabilities.
 
+![Document Watermark and Annotation with GroupDocs.Viewer .NET](/viewer/watermarks-annotations/image.png)
+
 ## Available Tutorials
 
 ### [Master Document Rendering in .NET Using GroupDocs.Viewer&#58; HTML Conversion & Watermark Integration](./groupdocs-viewer-net-html-rendering-watermarks/)

@@ -14,6 +14,8 @@ url: /net/pdf-rendering-options/
 
 Unlock the full potential of PDF rendering with GroupDocs.Viewer for .NET tutorials. Dive into various options to enhance your document viewing experience.
 
+![Optimizing PDF Viewing with GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/image.png)
+
 Do you want to optimize the image quality of your PDFs? Our tutorial on [Adjusting Image Quality in PDF](./adjust-image-quality-pdf/) guides you through the process step-by-step, ensuring seamless integration and superior results.
 
 Is characters grouping causing issues in your PDFs? Learn how to tackle this with our tutorial on [Disabling Characters Grouping in PDF](./disable-characters-grouping-pdf/), empowering you to refine document rendering effortlessly.

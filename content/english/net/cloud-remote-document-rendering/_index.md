@@ -9,6 +9,7 @@ url: "/net/cloud-remote-document-rendering/"
 
 Learn to implement cloud and remote document rendering with our GroupDocs.Viewer .NET tutorials. These practical guides demonstrate techniques for loading and rendering documents from cloud storage providers, handling remote URLs, managing network file sources, and implementing distributed document viewing solutions. Each tutorial includes detailed .NET code examples for common cloud and remote rendering scenarios, helping you build applications with flexible document access capabilities.
 
+![Cloud & Remote Document Rendering with GroupDocs.Viewer for .NET](/viewer/cloud-remote-document-rendering/image.png)
 ## Available Tutorials
 
 ### [Efficiently Download and Render Documents from FTP using GroupDocs.Viewer .NET](./download-render-ftp-documents-groupdocs-viewer-dotnet/)

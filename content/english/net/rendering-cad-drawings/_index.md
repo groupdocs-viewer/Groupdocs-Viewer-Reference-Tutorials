@@ -14,6 +14,8 @@ url: /net/rendering-cad-drawings/
 
 GroupDocs.Viewer for .NET offers comprehensive tutorials for rendering CAD drawings, providing developers with valuable insights into leveraging this powerful tool. In this article, we'll explore various tutorials listed under the category "Rendering CAD Drawings" to help you understand how to integrate CAD file rendering seamlessly into your .NET applications.
 
+![Rendering CAD Drawings with GroupDocs.Viewer .NET](/viewer/rendering-cad-drawings/image.png)
+
 Are you looking to enhance your .NET applications with the capability to render CAD drawings seamlessly? [GroupDocs.Viewer for .NET](#) offers a range of tutorials designed to assist developers in achieving just that. Let's delve into some of the key tutorials listed under the "Rendering CAD Drawings" category:
 
 ## [Get View Information for CAD Drawings](./get-view-info-cad-drawing/)

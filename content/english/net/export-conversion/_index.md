@@ -9,6 +9,8 @@ url: "/net/export-conversion/"
 
 Master document export and conversion techniques with our GroupDocs.Viewer .NET tutorials. These step-by-step guides demonstrate how to convert documents between multiple formats, implement export strategies, maintain formatting during conversion, and handle complex multi-format document processing. Each tutorial includes detailed .NET code examples for common export and conversion scenarios, helping you build flexible document transformation solutions.
 
+![Document Loading and Source Handling with GroupDocs.Viewer for .NET](/viewer/export-conversion/image.png)
+
 ## Available Tutorials
 
 ### [Convert Apple Numbers to HTML, JPG, PNG, PDF Using GroupDocs.Viewer .NET](./convert-apple-numbers-groupdocs-viewer-net/)

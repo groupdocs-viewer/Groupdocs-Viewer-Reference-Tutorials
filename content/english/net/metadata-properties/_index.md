@@ -9,6 +9,8 @@ url: "/net/metadata-properties/"
 
 Learn to work with document metadata and properties with our GroupDocs.Viewer .NET tutorials. These practical guides demonstrate how to extract document information, read metadata fields, manage document properties, and implement metadata-based document processing. Each tutorial includes working .NET code examples for common metadata scenarios, helping you build applications that can effectively analyze and manage document information.
 
+![Document Metadata Extraction with GroupDocs.Viewer for .NET](/viewer/metadata-properties/image.png)
+
 ## Available Tutorials
 
 ### [How to Retrieve Archive Information Using GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./groupdocs-viewer-net-retrieve-archive-info/)
