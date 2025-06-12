@@ -18,6 +18,8 @@ keywords:
 
 Are you looking for an efficient way to manage document attachments? Extracting metadata or listing all attached files can be cumbersome tasks without the right tools. This tutorial will guide you through retrieving and printing document attachments using **GroupDocs.Viewer for .NET**, a powerful library that simplifies these processes.
 
+![Retrieve and Print Document Attachments in GroupDocs.Viewer for .NET](/viewer/advanced-loading/retrieve-print-document-attachments-img.png)
+
 By following this guide, you'll learn how to:
 - Set up GroupDocs.Viewer in your .NET project
 - Retrieve all attachments from a document

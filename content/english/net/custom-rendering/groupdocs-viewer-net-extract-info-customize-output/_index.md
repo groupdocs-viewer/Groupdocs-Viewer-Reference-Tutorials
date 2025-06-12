@@ -22,6 +22,8 @@ keywords:
 **Introduction:**
 In today's digital era, efficiently handling documents is crucial in any business environment. Whether you're a developer building document management systems or an IT professional enhancing workflows, managing PDFs and other file formats can be challenging. GroupDocs.Viewer for .NET simplifies this by providing robust functionality to view, manipulate, and extract information from documents seamlessly. In this tutorial, we’ll explore how to leverage GroupDocs.Viewer to retrieve basic document information and customize output directories for rendered views.
 
+![Extract Document Info & Customize Output with GroupDocs.Viewer for .NET](/viewer/custom-rendering/extract-document-info-customize-output-img.png)
+
 **Prerequisites:**
 To follow along with this tutorial, you'll need:
 - **GroupDocs.Viewer for .NET**: This library is essential for accessing document viewing capabilities. Ensure you use version 25.3.0 or later.

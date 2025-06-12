@@ -18,6 +18,8 @@ keywords:
 
 In today’s digital landscape, ensuring that documents render responsively is key to providing a seamless user experience across different devices and screen sizes. Whether you're building web applications or enterprise solutions, making your documents accessible on any device enhances usability and accessibility. This tutorial will guide you through implementing .NET Responsive HTML Rendering using GroupDocs.Viewer for .NET.
 
+![Responsive HTML Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/responsive-html-rendering-img.png)
+
 ### What You'll Learn:
 - Setting up the output directory path with placeholders
 - Configuring HTML View Options for responsive rendering

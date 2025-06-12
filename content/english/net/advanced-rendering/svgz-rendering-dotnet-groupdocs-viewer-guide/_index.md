@@ -18,6 +18,8 @@ keywords:
 
 In today's digital landscape, visual content is paramount. Managing and rendering vector graphics like SVG or compressed SVGZ files can be challenging, especially when integrating them into formats such as HTML, JPG, PNG, or PDF. This guide walks you through the seamless process of converting SVGZ documents using GroupDocs.Viewer for .NET. Whether you're looking to enhance your web applications with high-quality images or streamline document workflows, this solution simplifies complex rendering tasks.
 
+![SVGZ Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/svgz-rendering-img.png)
+
 **What You'll Learn:**
 - How to set up and use GroupDocs.Viewer for .NET.
 - Methods to render SVGZ files into HTML, JPG, PNG, and PDF formats.

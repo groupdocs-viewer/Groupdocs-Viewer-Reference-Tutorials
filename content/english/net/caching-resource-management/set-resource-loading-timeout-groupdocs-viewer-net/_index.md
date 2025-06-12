@@ -18,6 +18,8 @@ keywords:
 
 In today's digital landscape, efficient handling of external resources is crucial for maintaining optimal application performance and user experience. When working with a document viewer in your .NET application using GroupDocs.Viewer, you might encounter delays due to slow resource loading. The solution? Implementing a resource loading timeout! This feature ensures that your application doesn't hang while waiting indefinitely for external content.
 
+![Implementing Resource Loading Timeout with GroupDocs.Viewer for .NET](/viewer/caching-resource-management/implementing-resource-loading-timeout-img.png)
+
 In this comprehensive guide, we'll delve into setting a resource loading timeout with GroupDocs.Viewer for .NET. You'll learn:
 - How to configure load options in GroupDocs.Viewer
 - Implementing a timeout for loading resources

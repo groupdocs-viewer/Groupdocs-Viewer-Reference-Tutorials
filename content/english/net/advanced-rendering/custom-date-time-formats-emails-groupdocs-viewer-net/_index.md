@@ -18,6 +18,8 @@ keywords:
 
 In email management and rendering, accurate display of date-time information is crucial. Whether for corporate applications or personal use, customizing how dates and times are presented can significantly enhance usability and professionalism. This tutorial guides you through using **GroupDocs.Viewer .NET** to customize these formats and apply time zone offsets when rendering emails.
 
+![Customizing Date-Time Formats in GroupDocs.Viewer for .NET](/viewer/advanced-loading/customizing-date-time-formats-and-time.png)
+
 ### What You'll Learn:
 - How to set a custom date-time format in emails.
 - Applying time zone offsets during email rendering.

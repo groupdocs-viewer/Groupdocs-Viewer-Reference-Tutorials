@@ -18,6 +18,8 @@ keywords:
 
 Converting HTML documents to image or PDF formats while maintaining precise control over margins is crucial for presentation, archiving, and sharing across platforms. This tutorial guides you through rendering HTML files with custom margins into JPG, PNG, and PDF formats using GroupDocs.Viewer for .NET.
 
+![HTML Rendering with Custom Margins in GroupDocs.Viewer for .NET](/viewer/advanced-loading/html-rendering-with-custom-margins.png)
+
 **What You'll Learn:**
 - Rendering HTML documents with custom margins using GroupDocs.Viewer.
 - Setting up your environment to use GroupDocs.Viewer for .NET.

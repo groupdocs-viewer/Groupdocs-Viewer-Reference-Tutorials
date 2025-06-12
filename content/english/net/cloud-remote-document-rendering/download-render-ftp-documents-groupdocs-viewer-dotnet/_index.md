@@ -18,6 +18,8 @@ keywords:
 
 Struggling with downloading and rendering documents directly from an FTP server in your .NET applications? With the increasing demand for efficient document management, tools like GroupDocs.Viewer for .NET can revolutionize your workflow. This tutorial will guide you through downloading a document from an FTP server and rendering it into HTML format using GroupDocs.Viewer for .NET.
 
+![Efficiently Download and Render Documents from FTP with GroupDocs.Viewer for .NET](/viewer/cloud-remote-document-rendering/ftp-img.png)
+
 In this comprehensive guide, we'll cover:
 - Setting up the necessary environment
 - Downloading documents from an FTP server

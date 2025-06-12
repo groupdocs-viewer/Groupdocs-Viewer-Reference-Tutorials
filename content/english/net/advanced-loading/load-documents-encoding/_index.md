@@ -11,6 +11,9 @@ url: /net/advanced-loading/load-documents-encoding/
 
 ## Introduction
 Are you looking for a powerful tool to seamlessly view documents within your .NET applications? Look no further than GroupDocs.Viewer for .NET! This robust library provides developers with the capability to effortlessly display various document formats directly within their applications, offering an intuitive and user-friendly viewing experience.
+
+![Load Documents with Specific Encoding in GroupDocs.Viewer for .NET](/viewer/advanced-loading/load-documents-specific-encoding-img.png)
+
 ## Prerequisites
 Before diving into utilizing GroupDocs.Viewer for .NET, ensure you have the following prerequisites in place:
 ### .NET Environment Setup

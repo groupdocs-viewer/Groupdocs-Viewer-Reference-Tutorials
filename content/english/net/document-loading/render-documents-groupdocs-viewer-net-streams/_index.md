@@ -13,8 +13,11 @@ keywords:
 
 
 # Render Documents Using GroupDocs.Viewer .NET from Streams: A Comprehensive Guide for Developers
+
 ## Introduction
 Struggling to efficiently render documents in your .NET applications? This comprehensive guide will show you how to use **GroupDocs.Viewer for .NET** to render documents from input streams, enhancing user experience by seamlessly converting and displaying various document formats. Ideal for developers integrating document viewing capabilities into their applications.
+
+![Render Documents with GroupDocs.Viewer for .NET](/viewer/document-loading/render-documents-img.png)
 
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer for .NET

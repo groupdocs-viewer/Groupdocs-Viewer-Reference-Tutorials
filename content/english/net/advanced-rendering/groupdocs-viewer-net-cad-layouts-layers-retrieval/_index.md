@@ -16,6 +16,8 @@ keywords:
 ## Introduction
 In the realm of Computer-Aided Design (CAD), managing complex drawings efficiently is crucial, particularly when dealing with multiple layouts and layers within a single file. For architects, engineers, and designers, accessing specific information quickly enhances productivity. **GroupDocs.Viewer .NET** offers a powerful solution by allowing developers to programmatically extract layouts and layers from CAD drawings.
 
+![Retrieve CAD Layouts and Layers in GroupDocs.Viewer for .NET](/viewer/advanced-loading/retrieve-cad-layouts-layers-img.png)
+
 This tutorial will guide you through using GroupDocs.Viewer for .NET to retrieve all the layouts and layers in your CAD files with ease. You’ll learn:
 - Setting up your environment
 - Initializing and configuring GroupDocs.Viewer

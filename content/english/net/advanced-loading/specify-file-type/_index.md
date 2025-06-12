@@ -11,6 +11,9 @@ url: /net/advanced-loading/specify-file-type/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a versatile document rendering API that supports a wide range of file formats, including DOCX, PDF, PPTX, and more. By specifying the file type when loading documents, you can ensure accurate rendering and smooth viewing experience for your users.
+
+![Specify File Type When Loading Documents in GroupDocs.Viewer for .NET](/viewer/advanced-loading/specify-file-type-when-loading-documents-img.png)
+
 ## Prerequisites
 Before you begin, make sure you have the following prerequisites:
 - Basic knowledge of C# and .NET framework.

@@ -18,6 +18,8 @@ keywords:
 
 Ever found yourself frustrated by the rigid field names like "From" and "To" in email clients? Customizing these labels to something more intuitive can enhance user experience significantly. This guide will show you how to use GroupDocs.Viewer for .NET to rename email fields when rendering messages, giving your application a polished look.
 
+![Customize Email Labels with GroupDocs.Viewer for .NET](/viewer/custom-rendering/customize-email-labels-img.png)
+
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer for .NET
 - Steps to rename email fields using C#

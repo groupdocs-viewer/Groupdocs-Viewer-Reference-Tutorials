@@ -11,6 +11,9 @@ url: /net/advanced-loading/set-resource-loading-timeout/
 
 ## Introduction
 In the realm of .NET development, GroupDocs.Viewer provides a powerful toolset for rendering documents and images with precision and efficiency. Leveraging its capabilities requires understanding its intricacies, including setting resource loading timeouts. In this tutorial, we'll delve into the process of configuring resource loading timeouts in GroupDocs.Viewer for .NET.
+
+![Set Resource Loading Timeout (Advanced) in GroupDocs.Viewer for .NET](/viewer/advanced-loading/set-resource-loading-timeout-img.png)
+
 ## Prerequisites
 Before embarking on this tutorial, ensure you have the following prerequisites:
 1. Basic Knowledge of .NET Development: Familiarity with C# programming and .NET framework fundamentals is essential.

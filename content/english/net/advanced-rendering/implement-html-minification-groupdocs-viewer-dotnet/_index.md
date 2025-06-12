@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to enhance your website's performance and improve page load speeds? With the right tools, you can transform bulky HTML files into lightweight pages that boost user experience and SEO rankings. This tutorial will guide you through using **GroupDocs.Viewer for .NET** to efficiently minify HTML documents.
 
+![Implement HTML Minification in GroupDocs.Viewer for .NET](/viewer/advanced-loading/implement-html-minification-img.png)
+
 ### What You'll Learn
 - How to install GroupDocs.Viewer for .NET
 - The process of setting up your environment

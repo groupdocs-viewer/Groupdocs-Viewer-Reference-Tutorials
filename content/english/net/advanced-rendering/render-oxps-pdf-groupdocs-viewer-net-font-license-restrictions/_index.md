@@ -18,6 +18,8 @@ keywords:
 
 Rendering XPS or OXPS documents can be challenging due to font license restrictions. This tutorial will guide you through rendering these documents effectively using **GroupDocs.Viewer for .NET**. Ideal for document management systems, content publishing platforms, and applications requiring seamless document conversion, this solution is invaluable.
 
+![Render PDF/OXPS with Font Restrictions in GroupDocs.Viewer for .NET](/viewer/advanced-loading/render-pdf-oxps-font-restrictions-img.png)
+
 In this guide, you'll learn how to:
 - Set up GroupDocs.Viewer for .NET
 - Render XPS/OXPS documents with embedded fonts

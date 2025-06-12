@@ -18,6 +18,8 @@ keywords:
 
 Struggling to render PDF documents while preserving their layered structure and Z-Index order? This step-by-step guide will show you how to address these challenges using GroupDocs.Viewer for .NET. Whether you're an experienced developer or just starting, gain insights into rendering PDFs with precision.
 
+![PDF Layered Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/pdf-layered-rendering-img.png)
+
 ### What You'll Learn
 
 - Set up and use GroupDocs.Viewer for .NET efficiently

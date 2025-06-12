@@ -18,6 +18,8 @@ keywords:
 
 When converting documents into HTML format, maintaining control over the fonts used is crucial, especially for brand consistency. This tutorial shows you how to exclude specific fonts, such as Arial, using GroupDocs.Viewer for .NET. By following this guide, you'll learn efficient ways to manage font rendering in document-to-HTML transformations.
 
+![Exclude Specific Fonts from HTML Output in GroupDocs.Viewer for .NET](/viewer/advanced-loading/exclude-specific-fonts-from-html-output-img.png)
+
 ### What You'll Learn:
 - Setting up and configuring GroupDocs.Viewer for .NET
 - Techniques to exclude specific fonts from HTML output

@@ -11,6 +11,9 @@ url: /net/advanced-usage-caching/enable-caching/
 
 ## Introduction
 In the realm of .NET document processing, optimizing performance is paramount. Imagine a scenario where you need to render multiple document pages swiftly. This is where caching comes into play. In this tutorial, we'll delve into leveraging caching to enhance the processing speed of documents using GroupDocs.Viewer for .NET.
+
+![Enable Caching for Faster Document Processing in GroupDocs.Viewer .NET](/viewer/advanced-usage/enable-caching-faster-document-processing-img.png)
+
 ## Prerequisites
 Before diving into the implementation, ensure you have the following prerequisites in place:
 1. GroupDocs.Viewer for .NET SDK: Download and install the SDK from the [GroupDocs.Viewer website](https://releases.groupdocs.com/viewer/net/).

@@ -18,6 +18,9 @@ keywords:
 
 Are you looking to resize images generated from documents to meet specific design requirements or optimize them for web display? With GroupDocs.Viewer for .NET, resizing images is straightforward and efficient. This tutorial guides developers in leveraging GroupDocs.Viewer's capabilities to adjust image dimensions effectively.
 
+![Resize Images in GroupDocs.Viewer for .NET](/viewer/advanced-loading/resize-images-img.png)
+
+
 **What You'll Learn:**
 - How to set up and initialize GroupDocs.Viewer for .NET
 - Steps to resize images using viewer features

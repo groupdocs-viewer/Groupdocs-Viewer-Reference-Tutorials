@@ -25,6 +25,8 @@ This tutorial will cover:
 
 By mastering this functionality, you can seamlessly handle large datasets without compromising the visual integrity of your spreadsheets. Let’s start with the prerequisites.
 
+![Hide Text Overflow in Excel with GroupDocs.Viewer for .NET](/viewer/custom-rendering/hide-text-overflow-excel-img.png)
+
 ## Prerequisites
 
 To follow along with this tutorial, ensure you have:

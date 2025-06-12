@@ -20,6 +20,8 @@ Have you ever needed to display only certain sections of a large Excel spreadshe
 
 In this tutorial, we'll explore how to render Excel print areas efficiently using GroupDocs.Viewer. You'll learn how to enhance data presentation and save time when working with large spreadsheets. By the end of this guide, you’ll be proficient in setting up and executing print area rendering seamlessly.
 
+![Efficient Excel Print Area Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/excel-print-area-rendering-img.png)
+
 **What You'll Learn:**
 - Setting up your environment for GroupDocs.Viewer for .NET
 - Rendering Excel print areas using C#
