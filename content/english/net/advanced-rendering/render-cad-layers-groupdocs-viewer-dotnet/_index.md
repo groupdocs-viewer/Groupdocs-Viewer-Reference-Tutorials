@@ -18,7 +18,7 @@ keywords:
 
 Rendering specific layers from a CAD drawing can be incredibly challenging, especially when dealing with complex designs. This tutorial offers a comprehensive solution using GroupDocs.Viewer for .NET, simplifying the process of displaying only the necessary parts of a design by focusing on specified layers. In this guide, you'll learn how to implement and optimize this functionality in your .NET applications.
 
-![Render Specific CAD Layers in GroupDocs.Viewer for .NET](/viewer/advanced-loading/render-specific-cad-layers-img.png)
+![Render Specific CAD Layers in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/render-specific-cad-layers-img.png)
 
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer for .NET.

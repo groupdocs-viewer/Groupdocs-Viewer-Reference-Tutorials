@@ -18,7 +18,7 @@ keywords:
 
 Do you want to enhance the quality of rendered JPG images when using GroupDocs.Viewer for .NET? You’re not alone! Many developers encounter this challenge, but it’s easily manageable. This tutorial will guide you through optimizing JPG image output quality with GroupDocs.Viewer. By mastering this feature, you’ll ensure high-quality image rendering that meets your needs.
 
-![Optimizing JPG Quality in GroupDocs.Viewer for .NET](/viewer/advanced-loading/optimizing-jpg-quality.png)
+![Optimizing JPG Quality in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/optimizing-jpg-quality.png)
 
 In this article, we’ll cover how to optimize image quality with GroupDocs.Viewer for .NET and enhance your document viewing capabilities. Here’s what you’ll learn:
 - Setting up GroupDocs.Viewer in a .NET environment

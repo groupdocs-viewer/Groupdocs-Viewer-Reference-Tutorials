@@ -18,7 +18,7 @@ keywords:
 
 Improve the clarity and readability of text in rendered PDF documents within your .NET applications by enabling font hinting. This tutorial explores how to implement this enhancement using GroupDocs.Viewer for .NET, a powerful library designed for viewing and manipulating document formats.
 
-![Enhance PDF Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/enhance-pdf-rendering-font-hinting-img.png)
+![Enhance PDF Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/enhance-pdf-rendering-font-hinting-img.png)
 
 **What You'll Learn:**
 - Setting up your environment with GroupDocs.Viewer for .NET

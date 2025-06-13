@@ -18,7 +18,7 @@ keywords:
 
 Working with complex spreadsheets often involves handling hidden rows and columns that contain critical information. Efficiently displaying these elements without modifying the original document structure is crucial. **GroupDocs.Viewer for .NET** excels at rendering hidden rows and columns in Excel documents, making it an invaluable tool for financial reports or project management spreadsheets.
 
-![Render Hidden Rows & Columns in Excel Files in GroupDocs.Viewer for .NET](/viewer/advanced-loading/render-hidden-rows-columns-excel-files-img.png)
+![Render Hidden Rows & Columns in Excel Files in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/render-hidden-rows-columns-excel-files-img.png)
 
 In this tutorial, we'll demonstrate how to use GroupDocs.Viewer to effectively render those elusive hidden elements. By the end of this guide, you’ll know how to:
 - Configure GroupDocs.Viewer for .NET to display hidden rows and columns

@@ -18,7 +18,7 @@ keywords:
 
 Controlling the dimensions of images when converting documents to JPG using GroupDocs.Viewer can be challenging. This tutorial provides a comprehensive guide on setting maximum image width constraints efficiently, ensuring your output meets specific size requirements. By leveraging GroupDocs.Viewer for .NET, you can manage and render high-quality images from various document formats effectively.
 
-![Set Maximum JPG Image Size Limits in GroupDocs.Viewer for .NET](/viewer/advanced-loading/set-maximum-jpg-image-size-limits-img.png)
+![Set Maximum JPG Image Size Limits in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/set-maximum-jpg-image-size-limits-img.png)
 
 **What You'll Learn:**
 - Installing and configuring GroupDocs.Viewer for .NET

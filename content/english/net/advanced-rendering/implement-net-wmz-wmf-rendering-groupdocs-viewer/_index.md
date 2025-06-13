@@ -18,7 +18,7 @@ keywords:
 
 Converting WMZ or WMF documents into accessible formats like HTML, JPG, PNG, or PDF can be challenging. This guide shows you how to render these files using GroupDocs.Viewer for .NET, making them viewable in web browsers and other popular formats.
 
-![Implement .NET WMZ/WMF Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/wmz-wmf-rendering-img.png)
+![Implement .NET WMZ/WMF Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/wmz-wmf-rendering-img.png)
 
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET

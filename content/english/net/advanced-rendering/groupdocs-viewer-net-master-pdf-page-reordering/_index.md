@@ -20,7 +20,7 @@ Do you need a streamlined method to present your documents in the desired order?
 
 This tutorial will guide you through using GroupDocs.Viewer .NET—a powerful library that simplifies viewing, converting, and manipulating documents in .NET applications—to reorder PDF pages with ease.
 
-![Master PDF Page Reordering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/pdf-page-reordering-img.png)
+![Master PDF Page Reordering in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/pdf-page-reordering-img.png)
 
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET

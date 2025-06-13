@@ -18,7 +18,7 @@ keywords:
 
 Are you looking to efficiently extract text from documents in your .NET applications? Whether it's lines, words, or characters, extracting detailed text can be challenging without the right tools. With GroupDocs.Viewer for .NET, streamline this process and enhance document handling capabilities. This tutorial will guide you through implementing powerful text extraction features using GroupDocs.Viewer for .NET.
 
-![Text Extraction in GroupDocs.Viewer for .NET](/viewer/advanced-loading/text-extraction-img.png)
+![Text Extraction in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/text-extraction-img.png)
 
 **What You'll Learn:**
 - How to set up and use GroupDocs.Viewer for .NET.

@@ -18,7 +18,7 @@ keywords:
 
 Need a solution to render hidden slides or sections within documents using the .NET framework? This is especially useful when working with presentation files that contain slides marked as hidden but need processing. **GroupDocs.Viewer** offers an efficient solution, enabling developers to easily render these otherwise invisible elements.
 
-![Render Hidden Pages in Documents in GroupDocs.Viewer for .NET](/viewer/advanced-loading/render-hidden-pages-documents-img.png)
+![Render Hidden Pages in Documents in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/render-hidden-pages-documents-img.png)
 
 In this tutorial, you'll learn how to leverage GroupDocs.Viewer for .NET to render hidden pages within your documents. By the end of this guide, you'll have a solid understanding of:
 - Rendering hidden pages using GroupDocs.Viewer

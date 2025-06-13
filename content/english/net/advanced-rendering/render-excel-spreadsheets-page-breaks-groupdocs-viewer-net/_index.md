@@ -17,7 +17,7 @@ keywords:
 ## Introduction
 In today's data-driven world, presenting large datasets in a user-friendly format is essential. Sharing or reviewing lengthy spreadsheets can be cumbersome without the right tools. GroupDocs.Viewer for .NET offers an efficient solution to render Excel files by page breaks into PDFs. This feature ensures each spreadsheet page is neatly organized and easily navigable.
 
-![Render Excel Spreadsheets by Page Breaks in GroupDocs.Viewer for .NET](/viewer/advanced-loading/render-excel-spreadsheets-page-breaks-img.png)
+![Render Excel Spreadsheets by Page Breaks in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/render-excel-spreadsheets-page-breaks-img.png)
 
 In this tutorial, we'll guide you through using GroupDocs.Viewer to render spreadsheets by page breaks, enhancing visibility with grid lines and headings. By the end, you’ll be able to:
 - Implement Excel file rendering using .NET.

@@ -18,7 +18,7 @@ keywords:
 
 Need to display only certain pages from a large document without overwhelming your application or users? The GroupDocs.Viewer .NET library lets you seamlessly render specific pages from any supported document type, ideal for handling extensive reports or contracts. This tutorial will guide you through using the GroupDocs.Viewer library for rendering selected pages of a document.
 
-![Render Selected Pages in GroupDocs.Viewer for .NET](/viewer/advanced-loading/render-selected-pages.png)
+![Render Selected Pages in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/render-selected-pages.png)
 
 By the end, you'll know how to set up and customize your application for efficient page rendering:
 - Installing GroupDocs.Viewer .NET

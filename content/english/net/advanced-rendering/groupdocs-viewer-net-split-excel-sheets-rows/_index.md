@@ -18,7 +18,7 @@ keywords:
 
 Handling extensive spreadsheets can be challenging when organizing data across multiple pages. This tutorial will walk you through using **GroupDocs.Viewer for .NET** to split Excel sheets into manageable pages based on row numbers. Whether generating reports or preparing documents for presentation, this functionality is invaluable.
 
-![Split Excel Sheets into Pages by Rows in GroupDocs.Viewer for .NET](/viewer/advanced-loading/split-excel-sheets-pages-rows-img.png)
+![Split Excel Sheets into Pages by Rows in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/split-excel-sheets-pages-rows-img.png)
 
 This feature enhances your data management capabilities and ensures large datasets are easily navigable and presentable. Here’s what you’ll learn:
 - How to set up GroupDocs.Viewer in a .NET project

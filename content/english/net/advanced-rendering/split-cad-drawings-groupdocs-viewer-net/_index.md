@@ -18,7 +18,7 @@ keywords:
 
 Handling large-scale CAD drawings in architectural and engineering projects can be challenging. These files often contain too much detail or are simply too large for easy viewing and navigation. This tutorial demonstrates how to split a CAD drawing into manageable tiles using GroupDocs.Viewer .NET, facilitating easier inspection of specific sections without losing detail.
 
-![Split CAD Drawings into Tiles in GroupDocs.Viewer for .NET](/viewer/advanced-loading/split-cad-drawings-tiles-img.png)
+![Split CAD Drawings into Tiles in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/split-cad-drawings-tiles-img.png)
 
 By the end of this guide, you'll learn:
 - How to use GroupDocs.Viewer to split CAD drawings efficiently.

@@ -18,7 +18,7 @@ keywords:
 
 Rendering large CAD drawings at optimal sizes can be challenging, especially when aiming for faster loading times and better performance in web applications. GroupDocs.Viewer for .NET simplifies this process by allowing you to adjust output image sizes using scale factors. This tutorial guides you through setting up and optimizing CAD drawing sizes with GroupDocs.Viewer.
 
-![Optimize CAD Drawing Size in GroupDocs.Viewer for .NET](/viewer/advanced-loading/optimize-cad-drawing-size-img.png)
+![Optimize CAD Drawing Size in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/optimize-cad-drawing-size-img.png)
 
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET

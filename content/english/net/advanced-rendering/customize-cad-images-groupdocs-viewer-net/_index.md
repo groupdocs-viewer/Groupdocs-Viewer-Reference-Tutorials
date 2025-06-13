@@ -17,7 +17,7 @@ keywords:
 ## Introduction
 In the digital realm, precise rendering of CAD drawings is essential for architects, engineers, and designers who aim to share their work across platforms. The challenge often lies in adjusting size and color properties while maintaining clarity. This tutorial guides you through customizing CAD image outputs using GroupDocs.Viewer .NET.
 
-![Customize CAD Images in GroupDocs.Viewer for .NET](/viewer/advanced-loading/customize-cad-images-img.png)
+![Customize CAD Images in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/customize-cad-images-img.png)
 
 By the end, you'll master:
 - Rendering CAD images with specific dimensions

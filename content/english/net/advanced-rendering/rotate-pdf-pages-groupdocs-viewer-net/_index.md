@@ -18,7 +18,7 @@ keywords:
 
 Struggling with rotating specific pages within a PDF programmatically? You're not alone! Developers often face challenges when manipulating documents, particularly when precise control over page orientation is required. This comprehensive guide will walk you through using **GroupDocs.Viewer for .NET**, an essential library that simplifies the process of rotating PDF pages by 90 degrees clockwise.
 
-![Rotate PDF Pages in GroupDocs.Viewer for .NET](/viewer/advanced-loading/rotate-pdf-pages-img.png)
+![Rotate PDF Pages in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/rotate-pdf-pages-img.png)
 
 By following this tutorial, you'll learn how to seamlessly integrate GroupDocs.Viewer into your .NET applications to manage document rotations with ease. We cover everything from setup and configuration to practical use cases, ensuring you're fully equipped to implement this feature in your projects.
 

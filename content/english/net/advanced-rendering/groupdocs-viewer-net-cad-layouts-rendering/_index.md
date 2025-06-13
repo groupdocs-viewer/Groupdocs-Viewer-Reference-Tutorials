@@ -18,7 +18,7 @@ keywords:
 
 Struggling with rendering specific layouts from a CAD drawing? Whether you're preparing project presentations or conducting detailed design reviews, accessing the right layout is crucial. This step-by-step guide will show you how to use GroupDocs.Viewer for .NET to efficiently render specific CAD layouts, streamlining your document management workflows and boosting productivity.
 
-![Efficient CAD Layout Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-loading/cad-layout-rendering-img.png)
+![Efficient CAD Layout Rendering in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/cad-layout-rendering-img.png)
 
 **What You’ll Learn:**
 - Setting up GroupDocs.Viewer for .NET in your project

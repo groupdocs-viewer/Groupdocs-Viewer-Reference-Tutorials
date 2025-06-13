@@ -18,7 +18,7 @@ keywords:
 
 Are you facing difficulties in maintaining the visual integrity of spreadsheet files when converting them into web-friendly formats? This guide is dedicated to helping developers use **GroupDocs.Viewer .NET** to render grid lines in HTML output, preserving the original look of Excel files. By following this tutorial, you'll learn how to convert spreadsheets while retaining essential formatting details.
 
-![Render Grid Lines in Excel Spreadsheets in GroupDocs.Viewer for .NET](/viewer/advanced-loading/render-grid-lines-in-excel-spreadsheets-img.png)
+![Render Grid Lines in Excel Spreadsheets in GroupDocs.Viewer for .NET](/viewer/advanced-rendering/render-grid-lines-in-excel-spreadsheets-img.png)
 
 **In This Tutorial:**
 - Setting up GroupDocs.Viewer .NET
