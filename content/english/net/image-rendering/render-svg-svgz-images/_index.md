@@ -11,6 +11,9 @@ url: /net/image-rendering/render-svg-svgz-images/
 
 ## Introduction
 In this tutorial, we will guide you through the process of rendering SVG and SVGZ images using GroupDocs.Viewer for .NET. GroupDocs.Viewer for .NET is a powerful document rendering API that enables developers to render various document formats in their .NET applications. SVG and SVGZ are popular image formats used for vector graphics, and with GroupDocs.Viewer for .NET, you can easily render them into different output formats such as HTML, JPG, PNG, and PDF.
+
+![Render SVG and SVGZ Images with GroupDocs.Viewer for .NET](/viewer/image-rendering/render-svg-and-svgz-images.png)
+
 ## Prerequisites
 Before we begin, make sure you have the following prerequisites installed and set up:
 1. GroupDocs.Viewer for .NET: Download and install GroupDocs.Viewer for .NET from [here](https://releases.groupdocs.com/viewer/net/).

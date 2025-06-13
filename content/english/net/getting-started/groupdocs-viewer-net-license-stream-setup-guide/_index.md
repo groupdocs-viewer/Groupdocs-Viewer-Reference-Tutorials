@@ -18,6 +18,8 @@ keywords:
 
 Setting up your GroupDocs.Viewer .NET license can be challenging, but mastering the "Set License from Stream" feature ensures smooth integration and runtime flexibility. This guide provides a step-by-step approach to configuring your application using a file stream for licensing.
 
+![Setting Up  with GroupDocs.Viewer for .NET](/viewer/getting-started/setting-up.png)
+
 In this tutorial, you will learn how to:
 - Set up GroupDocs.Viewer .NET in your project
 - Initialize and configure GroupDocs.Viewer with a license file stream

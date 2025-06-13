@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to convert FODG or OpenDocument Graphics (ODG) files into web-friendly formats like HTML, JPG, PNG, and PDF? You're in the right place! This tutorial guides you through using GroupDocs.Viewer for .NET, a powerful library designed for rendering these document types.
 
+![Convert FODG/ODG to HTML, JPG, PNG with GroupDocs.Viewer for .NET](/viewer/export-conversion/convert-fodg-odg-html-jpg-png-pdf.png)
+
 **What You'll Learn:**
 - Setting up and utilizing GroupDocs.Viewer for .NET
 - Step-by-step conversion of FODG/ODG files to various formats

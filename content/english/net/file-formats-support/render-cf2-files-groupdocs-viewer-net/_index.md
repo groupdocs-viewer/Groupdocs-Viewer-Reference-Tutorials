@@ -20,6 +20,8 @@ keywords:
 
 Are you looking to convert your complex 3D design files into more accessible formats like HTML, JPG, PNG, or PDF? Rendering computer-aided design (CAD) files can be a daunting task, but with GroupDocs.Viewer for .NET, it's easier than ever. This powerful library allows seamless rendering of CF2 files—common in CAD applications—to various formats with minimal code. In this tutorial, you'll learn how to leverage GroupDocs.Viewer to transform your CF2 documents efficiently.
 
+![Render CF2 Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for .NET](/viewer/file-formats-support/render-cf2-files-to-html-jpg-png-pdf.png)
+
 **What You’ll Learn:**
 - How to set up and install GroupDocs.Viewer for .NET.
 - Step-by-step instructions on rendering CF2 files into HTML, JPG, PNG, and PDF formats.

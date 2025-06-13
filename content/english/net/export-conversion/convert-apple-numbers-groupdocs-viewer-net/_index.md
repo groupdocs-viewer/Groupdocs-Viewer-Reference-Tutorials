@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to seamlessly convert your Apple Numbers documents into various formats like HTML, JPG, PNG, and PDF? This guide is tailored for both developers needing to integrate document rendering capabilities and those interested in expanding data accessibility. With GroupDocs.Viewer .NET, you can efficiently render Apple Numbers files.
 
+![Convert Apple Numbers to HTML, JPG, PNG, PDF with GroupDocs.Viewer for .NET](/viewer/export-conversion/convert-apple-numbers-html-jpg-png-pdf.png)
+
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer for .NET.
 - Step-by-step instructions on converting Apple Numbers documents to HTML, JPG, PNG, and PDF formats.

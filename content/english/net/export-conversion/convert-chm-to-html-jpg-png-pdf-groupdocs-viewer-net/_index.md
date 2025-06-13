@@ -18,6 +18,8 @@ keywords:
 
 Are you facing challenges viewing or sharing content from a CHM file due to its limited compatibility? Converting these files into more accessible formats like HTML, JPEG, PNG, or PDF can solve this issue by making the information easily distributable. In this comprehensive guide, we'll show you how to use **GroupDocs.Viewer .NET** to convert CHM files into various popular formats effortlessly. You’ll learn how to handle file rendering with precision and efficiency.
 
+![Convert CHM to HTML, JPG, PNG, PDF with GroupDocs.Viewer for .NET](/viewer/export-conversion/convert-chm-html-jpg-png-pdf.png)
+
 ### What You'll Learn
 - Convert CHM files to HTML for web compatibility.
 - Render CHM content as JPEG images for visual sharing.

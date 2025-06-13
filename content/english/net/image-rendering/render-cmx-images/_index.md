@@ -11,6 +11,9 @@ url: /net/image-rendering/render-cmx-images/
 
 ## Introduction
 In the realm of document management and manipulation, rendering images from various formats is a pivotal task. GroupDocs.Viewer for .NET simplifies this process by providing comprehensive functionalities for rendering CMX images into different formats such as HTML, JPG, PNG, and PDF. This tutorial will guide you through the step-by-step process of rendering CMX images using GroupDocs.Viewer for .NET.
+
+![Render CMX Images with GroupDocs.Viewer for .NET](/viewer/image-rendering/render-cmx-images.png)
+
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites in place:
 1. GroupDocs.Viewer for .NET Library: Download and install the GroupDocs.Viewer for .NET library from [here](https://releases.groupdocs.com/viewer/net/).

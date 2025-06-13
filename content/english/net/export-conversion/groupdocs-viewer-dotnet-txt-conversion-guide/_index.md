@@ -18,6 +18,8 @@ keywords:
 
 Looking to convert text documents into various formats such as HTML, JPG, PNG, or PDF effortlessly? Managing document conversions can be challenging, especially when dealing with multiple pages or specific format requirements. **GroupDocs.Viewer for .NET** simplifies the process of rendering TXT files into diverse output formats, ensuring your data is accessible and visually appealing.
 
+![Convert TXT to HTML, JPG, PNG, PDF with GroupDocs.Viewer for .NET](/viewer/export-conversion/convert-txt-to-html-jpg-png-pdf.png)
+
 In this guide, we'll explore how to use GroupDocs.Viewer for .NET to transform TXT documents into multi-page HTML, single-page HTML, JPG, PNG, and PDF. By the end, you’ll master:
 - Converting TXT files using C# with GroupDocs.Viewer
 - Implementing different rendering options for your needs

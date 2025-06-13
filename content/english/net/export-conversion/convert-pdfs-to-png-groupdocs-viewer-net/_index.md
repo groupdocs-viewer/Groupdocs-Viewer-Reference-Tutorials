@@ -18,6 +18,8 @@ keywords:
 
 Converting PDF files into PNG images while maintaining the original page size is essential for high-quality document digitization or web content preparation. This tutorial will guide you through using GroupDocs.Viewer for .NET to render PDF pages as PNG files, preserving their original dimensions.
 
+![Convert PDFs to PNG with Original Size with GroupDocs.Viewer for .NET](/viewer/export-conversion/convert-pdfs-to-png-with-original-size.png)
+
 **What You'll Learn:**
 - How to set up and configure GroupDocs.Viewer for .NET in your project
 - Step-by-step process of rendering PDFs to PNG images while maintaining page sizes

@@ -18,6 +18,8 @@ keywords:
 
 Converting complex CDR files into accessible formats like HTML, JPG, PNG, or PDF is crucial for architects sharing designs with clients or developers integrating design previews into applications. This tutorial will guide you through using GroupDocs.Viewer for .NET to transform your CDR documents efficiently.
 
+![Render CDR Documents with GroupDocs.Viewer for .NET](/viewer/file-formats-support/render-cdr-documents.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET
 - Converting CDR files to HTML, JPG, PNG, and PDF

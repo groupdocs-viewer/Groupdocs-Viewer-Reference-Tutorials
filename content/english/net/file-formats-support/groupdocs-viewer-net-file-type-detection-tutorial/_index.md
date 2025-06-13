@@ -18,6 +18,8 @@ keywords:
 
 In the digital age, efficiently managing and processing files across diverse formats is crucial for businesses and developers alike. Have you ever encountered a scenario where identifying a file's type based solely on its extension becomes essential? Whether it’s ensuring compatibility within software systems or organizing data archives, knowing how to determine file types using their extensions can streamline your workflow significantly.
 
+![Detect File Types with GroupDocs.Viewer for .NET](/viewer/file-formats-support/detect-file-types.png)
+
 In this comprehensive tutorial, we'll explore the capabilities of **GroupDocs.Viewer for .NET** in determining file types from their extensions. By following this guide, you will learn not just the "how," but also the "why" behind each step, empowering you to implement these techniques effectively within your projects.
 
 ### What You'll Learn:

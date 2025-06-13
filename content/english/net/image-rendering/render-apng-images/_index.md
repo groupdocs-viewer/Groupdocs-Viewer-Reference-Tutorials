@@ -12,6 +12,8 @@ url: /net/image-rendering/render-apng-images/
 ## Introduction
 Groupdocs.Viewer for .NET is a powerful tool that allows developers to seamlessly render various document formats in their .NET applications. Among its many features, it provides robust functionality for rendering APNG (Animated Portable Network Graphics) images, enabling developers to display APNG images in different formats such as HTML, JPG, PNG, and PDF.
 
+![Render APNG Images with GroupDocs.Viewer for .NET](/viewer/image-rendering/render-apng-images.png)
+
 In this tutorial, we'll explore how to utilize Groupdocs.Viewer for .NET to render APNG images step by step. By following these instructions, you'll be able to integrate APNG image rendering capabilities into your .NET applications effortlessly.
 
 ## Prerequisites

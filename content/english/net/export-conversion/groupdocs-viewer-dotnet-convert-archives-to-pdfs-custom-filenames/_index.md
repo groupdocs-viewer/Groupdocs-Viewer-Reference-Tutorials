@@ -18,6 +18,8 @@ keywords:
 
 Need to convert archive files such as ZIP or RAR into PDF documents with specific filenames? Avoid the time-consuming task of manual renaming post-rendering. This tutorial demonstrates how to set custom filenames when rendering archives using GroupDocs.Viewer for .NET.
 
+![Convert Archives to PDFs with Custom Filenames with GroupDocs.Viewer for .NET](/viewer/export-conversion/convert-archives-to-pdfs-with-custom-filenames.png)
+
 **What You'll Learn:**
 - Set up and configure GroupDocs.Viewer for .NET.
 - Convert archive files into PDFs with specified filenames, step-by-step.

@@ -11,6 +11,9 @@ url: /net/getting-started/set-license-from-file/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful document viewer API that enables .NET developers to seamlessly integrate document viewing capabilities into their applications. Whether you need to display documents in various formats such as PDF, Microsoft Office, or images, GroupDocs.Viewer provides a reliable solution with extensive customization options.
+
+![Set License from File  with GroupDocs.Viewer for .NET](/viewer/getting-started/set-license-from-file.png)
+
 ## Prerequisites
 Before diving into the implementation of GroupDocs.Viewer for .NET, ensure you have the following prerequisites:
 ### 1. .NET Framework Installed

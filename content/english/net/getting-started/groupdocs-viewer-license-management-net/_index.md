@@ -18,6 +18,8 @@ keywords:
 ### Introduction
 Integrating a robust document viewing solution into your .NET applications can be challenging, but with GroupDocs.Viewer for .NET, you have an enterprise-level library offering seamless document rendering capabilities. This tutorial will guide you through setting up and managing licenses using both file paths and embedded resources in C#. By the end of this article, you'll master:
 
+![Mastering License Management with GroupDocs.Viewer for .NET](/viewer/getting-started/license-management.png)
+
 - Setting a GroupDocs.Viewer .NET license from a file path
 - Loading a license from an embedded resource within your application assembly
 - Understanding various licensing options for GroupDocs.Viewer

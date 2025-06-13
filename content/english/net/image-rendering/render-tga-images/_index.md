@@ -11,6 +11,9 @@ url: /net/image-rendering/render-tga-images/
 
 ## Introduction
 In today's digital landscape, the ability to seamlessly render various image formats is essential for many applications. One such format is TGA (Truevision Graphics Adapter), known for its high-quality images and widespread use in graphics-intensive industries. If you're a .NET developer looking to incorporate TGA image rendering into your applications, you're in the right place. In this tutorial, we'll explore how to leverage GroupDocs.Viewer for .NET to render TGA images effortlessly.
+
+![Render TGA Images with GroupDocs.Viewer for .NET](/viewer/image-rendering/render-tga-images.png)
+
 ## Prerequisites
 Before we dive into the tutorial, make sure you have the following prerequisites in place:
 1. GroupDocs.Viewer for .NET Library: You'll need to download and install the GroupDocs.Viewer for .NET library. You can obtain the library from the [download page](https://releases.groupdocs.com/viewer/net/).

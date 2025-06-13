@@ -23,6 +23,8 @@ keywords:
 
 Struggling to convert your PST or OST files into accessible formats like HTML, JPG, PNG, or PDF? Whether you're a developer needing to present data in presentations or an IT professional seeking seamless document conversion solutions, this guide will show you how easy it is with GroupDocs.Viewer .NET. This powerful library simplifies rendering Outlook email archives into various image and document formats, making your workflow more efficient.
 
+![Convert PST/OST Files to HTML, JPG, PNG, PDF with GroupDocs.Viewer for .NET](/viewer/export-conversion/convert-pst-ost-files-html-jpg-png-pdf.png)
+
 ### What You'll Learn:
 - How to render PST/OST files into HTML, JPG, PNG, or PDF using GroupDocs.Viewer .NET.
 - Essential installation steps for setting up the GroupDocs.Viewer .NET library.
