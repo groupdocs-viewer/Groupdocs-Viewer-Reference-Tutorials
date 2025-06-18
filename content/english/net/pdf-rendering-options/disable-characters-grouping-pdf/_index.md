@@ -11,6 +11,9 @@ url: /net/pdf-rendering-options/disable-characters-grouping-pdf/
 
 ## Introduction
 In the world of .NET development, handling document viewing can sometimes be a challenge, especially when dealing with formats like PDFs. However, with the right tools and knowledge, you can streamline this process efficiently. One such tool that comes to the rescue is GroupDocs.Viewer for .NET. This powerful library empowers developers to seamlessly render and display various document types within their .NET applications.
+
+![Disable Characters Grouping in PDF with GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/disable-characters-grouping-in-pdf.png)
+
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites set up:
 1. Visual Studio: Make sure you have Visual Studio installed on your system.

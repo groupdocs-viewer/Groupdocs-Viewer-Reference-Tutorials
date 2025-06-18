@@ -18,6 +18,8 @@ keywords:
 
 Struggling with poor image quality when converting presentations to PDF? Whether your presentation contains high-quality JPG images or you need to maintain visual fidelity in a document, optimizing image quality is essential. This comprehensive guide demonstrates how to use **GroupDocs.Viewer for .NET** to adjust and enhance the quality of embedded JPG images in your PDF outputs.
 
+![Optimize JPG Quality in PDFs with GroupDocs.Viewer .NET](/viewer/performance-optimization/optimize-jpg-quality-in-pdfs.png)
+
 In this tutorial, we will cover:
 - Rendering documents as high-quality PDFs with optimized images
 - Techniques for adjusting and fine-tuning image settings

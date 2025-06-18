@@ -18,6 +18,8 @@ keywords:
 
 Managing spreadsheet data can be challenging, especially when you need to list all worksheet names within an Excel file using C#. This guide provides a solution by leveraging **GroupDocs.Viewer for .NET**. With this powerful library, retrieving and printing worksheet names becomes straightforward, simplifying your data management tasks.
 
+![Retrieve and Print Excel Worksheet Names with GroupDocs.Viewer for .NET](/viewer/metadata-properties/retrieve-and-print-excel-worksheet-names.png)
+
 In this tutorial, we'll demonstrate how to implement this functionality in GroupDocs.Viewer for .NET. You’ll learn about setting up the library, initializing your environment, and writing code that efficiently lists worksheet names. By the end of this guide, you will:
 - Understand how to use GroupDocs.Viewer for .NET with spreadsheets.
 - Learn to retrieve and print worksheet names using C#.

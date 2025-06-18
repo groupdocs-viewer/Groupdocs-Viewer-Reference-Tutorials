@@ -18,6 +18,8 @@ keywords:
 
 Are you facing challenges with rendering large amounts of data from your Outlook files like `.ost` or `.pst`? With millions of emails stored in these files, displaying all at once can lead to performance issues and overwhelm users. This tutorial will guide you through using **GroupDocs.Viewer for .NET** to efficiently limit the number of items rendered, optimizing both user experience and system resources.
 
+![Optimize Outlook Data Rendering with GroupDocs.Viewer .NET](/viewer/performance-optimization/optimize-outlook-data-rendering.png)
+
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer for .NET
 - Limiting data rendering in Outlook files with C#

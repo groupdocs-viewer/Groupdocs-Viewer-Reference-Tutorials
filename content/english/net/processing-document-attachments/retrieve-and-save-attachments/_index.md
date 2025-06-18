@@ -11,6 +11,9 @@ url: /net/processing-document-attachments/retrieve-and-save-attachments/
 
 ## Introduction
 In the digital era, efficient document handling is crucial for businesses and individuals alike. Whether it's managing emails, viewing contracts, or accessing reports, having a reliable tool for document visualization is essential. GroupDocs.Viewer for .NET emerges as a robust solution, empowering users to effortlessly view and interact with various document formats directly within their .NET applications.
+
+![Retrieve and Save Document Attachments with GroupDocs.Viewer .NET](/viewer/processing-document-attachments/retrieve-and-save-document-attachments.png)
+
 ## Prerequisites
 Before delving into utilizing GroupDocs.Viewer for .NET for document attachment retrieval and saving, ensure you have the following prerequisites:
 1. Operating Environment: A working environment set up with .NET framework.

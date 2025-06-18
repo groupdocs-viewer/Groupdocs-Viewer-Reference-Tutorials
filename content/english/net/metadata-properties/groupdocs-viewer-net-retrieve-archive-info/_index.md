@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to efficiently extract detailed information from archive files such as ZIPs? Understanding the structure can be vital for document management. This guide will show you how to use **GroupDocs.Viewer for .NET** to retrieve and display comprehensive details about an archive file.
 
+![Retrieve Archive Information with GroupDocs.Viewer for .NET](/viewer/metadata-properties/retrieve-archive-information.png)
+
 In this tutorial, we'll cover:
 - Setting up GroupDocs.Viewer in your .NET application
 - Retrieving view information from archive files

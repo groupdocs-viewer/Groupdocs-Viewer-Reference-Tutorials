@@ -11,6 +11,9 @@ url: /net/processing-document-attachments/retrieve-and-print-attachments/
 
 ## Introduction
 In the world of software development, managing and displaying documents efficiently within applications is crucial. GroupDocs.Viewer for .NET provides a powerful solution for developers to integrate document viewing capabilities into their .NET applications seamlessly. Whether you're building an enterprise-level document management system or a simple document viewer, GroupDocs.Viewer offers a comprehensive set of features to meet your needs.
+
+![Retrieve and Print Document Attachments with GroupDocs.Viewer .NET](/viewer/processing-document-attachments/retrieve-and-print-document-attachments.png)
+
 ## Prerequisites
 Before we dive into integrating GroupDocs.Viewer for .NET into your project, there are a few prerequisites you'll need to have in place:
 ### 1. .NET Environment Setup

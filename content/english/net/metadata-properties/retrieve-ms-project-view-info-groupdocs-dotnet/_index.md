@@ -17,6 +17,8 @@ keywords:
 ## Introduction
 Are you looking to efficiently extract key details from your MS Project documents? Whether it's understanding project timelines or managing resource allocations, accessing accurate view information can significantly enhance productivity. In this tutorial, we'll explore how the **GroupDocs.Viewer for .NET** library simplifies retrieving essential view info from MS Project files.
 
+![Retrieve MS Project View Information with GroupDocs.Viewer for .NET](/viewer/metadata-properties/retrieve-ms-project-view-information.png)
+
 ### What You’ll Learn:
 - How to set up GroupDocs.Viewer in your .NET project
 - The process of retrieving MS Project document view information

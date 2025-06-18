@@ -11,6 +11,9 @@ url: /net/pdf-rendering-options/enable-font-hinting-pdf/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool for viewing and manipulating various document formats within .NET applications. Whether you're working with PDFs, Microsoft Office documents, images, or other formats, GroupDocs.Viewer provides a seamless solution for rendering and interacting with these files.
+
+![Enable Font Hinting in PDF with GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/enable-font-hinting-in-pdf.png)
+
 ## Prerequisites
 Before diving into using GroupDocs.Viewer for .NET, ensure you have the following in place:
 1. Basic Understanding of .NET: Familiarize yourself with the basics of .NET framework and C# programming language.

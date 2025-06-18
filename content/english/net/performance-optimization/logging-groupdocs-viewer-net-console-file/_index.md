@@ -17,6 +17,9 @@ keywords:
 ## Introduction
 Struggling to track your application's activities when using the GroupDocs.Viewer .NET library? This tutorial will show you how to effectively implement logging, both to the console and to a file. These techniques enable better monitoring and debugging of Viewer applications. Logging is crucial for understanding user interactions, diagnosing issues, and maintaining robust documentation of software behavior.
 
+
+![Implementing Effective Logging with GroupDocs.Viewer .NET](/viewer/performance-optimization/implementing-effective-logging.png)
+
 **What You'll Learn:**
 - Configuring GroupDocs.Viewer .NET to log activities
 - Methods to log data to the console or a file

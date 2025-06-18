@@ -17,6 +17,8 @@ keywords:
 ### Introduction
 Have you ever struggled with cluttered spreadsheets filled with empty columns, making navigation and web rendering cumbersome? These empty columns can unnecessarily consume space and degrade performance. With **GroupDocs.Viewer for .NET**, developers can skip rendering these empty columns to streamline output in HTML format.
 
+![Optimize Spreadsheet Rendering with GroupDocs.Viewer .NET](/viewer/performance-optimization/optimize-spreadsheet-rendering.png)
+
 In this tutorial, we'll explore how to use GroupDocs.Viewer for .NET to enhance spreadsheet processing by skipping empty columns. This feature is particularly beneficial for optimizing performance and reducing file sizes when dealing with complex Excel documents.
 
 **What You’ll Learn:**

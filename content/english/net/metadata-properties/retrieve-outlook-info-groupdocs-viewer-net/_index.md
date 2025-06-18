@@ -18,6 +18,8 @@ keywords:
 
 In today's fast-paced digital world, efficiently managing and retrieving information from various data files is crucial. This tutorial guides you through using GroupDocs.Viewer for .NET to extract detailed view information from Outlook data files, such as file types or page counts.
 
+![Retrieve Outlook Data Information with GroupDocs.Viewer for .NET](/viewer/metadata-properties/retrieve-outlook-data-information.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET
 - Retrieving view information from Outlook data files

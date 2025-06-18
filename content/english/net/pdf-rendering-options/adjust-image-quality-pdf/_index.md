@@ -11,6 +11,9 @@ url: /net/pdf-rendering-options/adjust-image-quality-pdf/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful library that allows developers to integrate document rendering capabilities into their .NET applications effortlessly. One of the key features of this library is the ability to adjust image quality when rendering PDF documents. In this tutorial, we'll walk you through the process of adjusting image quality step by step using GroupDocs.Viewer for .NET.
+
+![Adjust Image Quality in PDF with GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/adjust-image-quality-in-pdf.png)
+
 ## Prerequisites
 Before we get started, ensure you have the following prerequisites:
 1. Basic knowledge of C# programming.

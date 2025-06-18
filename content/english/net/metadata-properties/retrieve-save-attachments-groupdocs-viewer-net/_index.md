@@ -18,6 +18,8 @@ keywords:
 
 Are you struggling with managing attachments in documents using .NET? With GroupDocs.Viewer for .NET, extracting and saving document attachments becomes straightforward. This tutorial will guide you through retrieving attachments from a document and saving them to your desired location.
 
+![Retrieve and Save Document Attachments with GroupDocs.Viewer for .NET](/viewer/metadata-properties/retrieve-and-save-document-attachments.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET
 - Retrieving attachments using GroupDocs.Viewer
