@@ -1,21 +1,21 @@
 ---
-title: Získejte souřadnice textu pro vykreslování obrázků
-linktitle: Získejte souřadnice textu pro vykreslování obrázků
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se extrahovat souřadnice textu pro vykreslování obrázků pomocí GroupDocs.Viewer for .NET. Vylepšete své možnosti zpracování dokumentů bez námahy.
-weight: 12
-url: /cs/net/rendering-documents-images/get-text-coordinates-image/
+"description": "Naučte se, jak extrahovat textové souřadnice pro vykreslování obrázků pomocí GroupDocs.Viewer pro .NET. Bez námahy vylepšete své možnosti zpracování dokumentů."
+"linktitle": "Získání textových souřadnic pro vykreslování obrázků"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Získání textových souřadnic pro vykreslování obrázků"
+"url": "/cs/net/rendering-documents-images/get-text-coordinates-image/"
+"weight": 12
 ---
 
-# Získejte souřadnice textu pro vykreslování obrázků
+# Získání textových souřadnic pro vykreslování obrázků
 
-## Úvod
-GroupDocs.Viewer for .NET je výkonné rozhraní API pro vykreslování dokumentů, které umožňuje vývojářům bezproblémově vykreslovat dokumenty v různých formátech, jako je PDF, Microsoft Office a mnoho dalších. Jednou z jeho klíčových funkcí je schopnost extrahovat souřadnice textu pro přesné vykreslení obrázku.
+## Zavedení
+GroupDocs.Viewer pro .NET je výkonné API pro vykreslování dokumentů, které umožňuje vývojářům bezproblémově vykreslovat dokumenty v různých formátech, jako je PDF, Microsoft Office a mnoho dalších. Jednou z jeho klíčových funkcí je schopnost extrahovat textové souřadnice pro přesné vykreslování obrázků.
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující předpoklady:
-1.  GroupDocs.Viewer for .NET: Stáhněte a nainstalujte nejnovější verzi z[tady](https://releases.groupdocs.com/viewer/net/).
-2. Vývojové prostředí: Nastavte si preferované IDE s podporou .NET frameworku.
-3. Soubory dokumentů: Připravte si vzorové soubory dokumentů pro testovací účely.
+1. GroupDocs.Viewer pro .NET: Stáhněte a nainstalujte nejnovější verzi z [zde](https://releases.groupdocs.com/viewer/net/).
+2. Vývojové prostředí: Nastavte si preferované IDE s podporou .NET Frameworku.
+3. Soubory dokumentů: Mějte připravené vzorové soubory dokumentů pro účely testování.
 
 ## Import jmenných prostorů
 Než se ponoříme do procesu kódování, importujme potřebné jmenné prostory pro přístup k funkcím GroupDocs.Viewer pro .NET.
@@ -24,22 +24,22 @@ using System;
 using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
-## Krok 1: Inicializujte GroupDocs.Viewer
-Začněte inicializací objektu GroupDocs.Viewer se souborem dokumentu, který chcete zpracovat.
+## Krok 1: Inicializace souboru GroupDocs.Viewer
+Začněte inicializací objektu GroupDocs.Viewer souborem dokumentu, který chcete zpracovat.
 ```csharp
 using (Viewer viewer = new Viewer("path/to/your/document"))
 {
-    // Váš kód je zde
+    // Váš kód patří sem
 }
 ```
 ## Krok 2: Získejte informace o zobrazení
-Dále načtěte informace o zobrazení dokumentu, včetně souřadnic textu pro vykreslování obrázku.
+Dále načtěte informace o zobrazení dokumentu, včetně textových souřadnic pro vykreslování obrázků.
 ```csharp
 ViewInfoOptions options = ViewInfoOptions.ForPngView(true);
 ViewInfo viewInfo = viewer.GetViewInfo(options);
 ```
-## Krok 3: Iterujte stránky
-Procházejte každou stránku dokumentu, abyste získali přístup k textovým řádkům, slovům a znakům.
+## Krok 3: Iterace po stránkách
+Procházejte každou stránku dokumentu a získejte přístup k textovým řádkům, slovům a znakům.
 ```csharp
 foreach (Page page in viewInfo.Pages)
 {
@@ -57,22 +57,22 @@ foreach (Page page in viewInfo.Pages)
     }
 }
 ```
-## Krok 4: Extrahujte souřadnice textu
-Extrahujte souřadnice textu, abyste usnadnili přesné vykreslení obrázku.
+## Krok 4: Extrahování textových souřadnic
+Extrahujte textové souřadnice pro usnadnění přesného vykreslení obrazu.
 ```csharp
-// Zde je váš kód pro extrakci textových souřadnic
+// Váš kód pro extrakci textových souřadnic se nachází zde
 ```
 
 ## Závěr
-Závěrem lze říci, že zvládnutí extrakce textových souřadnic pro vykreslování obrázků pomocí GroupDocs.Viewer for .NET může výrazně zlepšit vaše možnosti zpracování dokumentů. Sledováním tohoto kurzu jste se naučili základní kroky k efektivnímu provedení tohoto úkolu.
-## FAQ
-### Je GroupDocs.Viewer for .NET kompatibilní se všemi formáty dokumentů?
-GroupDocs.Viewer for .NET podporuje širokou škálu formátů dokumentů, včetně PDF, Microsoft Office a dalších.
-### Mohu integrovat GroupDocs.Viewer for .NET do své stávající aplikace .NET?
-Ano, GroupDocs.Viewer for .NET je navržen tak, aby se bezproblémově integroval do vašich aplikací .NET.
-### Nabízí GroupDocs.Viewer for .NET podporu pro extrahování souřadnic textu?
-Ano, jak je ukázáno v tomto kurzu, GroupDocs.Viewer for .NET poskytuje funkce pro extrahování souřadnic textu.
+Závěrem lze říci, že zvládnutí extrakce textových souřadnic pro vykreslování obrázků pomocí GroupDocs.Viewer pro .NET může výrazně rozšířit vaše možnosti zpracování dokumentů. Dodržováním tohoto tutoriálu jste se naučili základní kroky k efektivnímu provedení tohoto úkolu.
+## Často kladené otázky
+### Je GroupDocs.Viewer pro .NET kompatibilní se všemi formáty dokumentů?
+GroupDocs.Viewer pro .NET podporuje širokou škálu formátů dokumentů, včetně PDF, Microsoft Office a dalších.
+### Mohu integrovat GroupDocs.Viewer pro .NET do své stávající .NET aplikace?
+Ano, GroupDocs.Viewer pro .NET je navržen tak, aby se bezproblémově integroval do vašich .NET aplikací.
+### Nabízí GroupDocs.Viewer pro .NET podporu pro extrakci textových souřadnic?
+Ano, jak je ukázáno v tomto tutoriálu, GroupDocs.Viewer pro .NET poskytuje funkce pro extrakci textových souřadnic.
 ### Kde najdu další dokumentaci a podporu pro GroupDocs.Viewer pro .NET?
- Můžete získat přístup k dokumentaci a vyhledat podporu na fóru GroupDocs.Viewer[tady](https://forum.groupdocs.com/c/viewer/9).
-### Je k dispozici bezplatná zkušební verze pro GroupDocs.Viewer pro .NET?
- Ano, můžete využít bezplatnou zkušební verzi z webu GroupDocs[tady](https://releases.groupdocs.com/).
+Dokumentaci a podporu si můžete prohlédnout na fóru GroupDocs.Viewer. [zde](https://forum.groupdocs.com/c/viewer/9).
+### Je k dispozici bezplatná zkušební verze GroupDocs.Viewer pro .NET?
+Ano, můžete využít bezplatnou zkušební verzi na webových stránkách GroupDocs. [zde](https://releases.groupdocs.com/).

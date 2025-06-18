@@ -1,19 +1,19 @@
 ---
-title: Satır ve Sütun Başlıklarını Oluştur
-linktitle: Satır ve Sütun Başlıklarını Oluştur
-second_title: GroupDocs.Viewer .NET API'si
-description: .NET'te belge görüntülemeyi geliştirin! GroupDocs.Viewer for .NET'i kullanarak satır ve sütun başlıklarını oluşturmayı öğrenin. HTML, JPG, PNG ve PDF çıktılarını keşfedin.
-weight: 18
-url: /tr/net/spreadsheet-rendering-options/render-row-column-headings/
+"description": ".NET'te belge görüntülemeyi geliştirin! .NET için GroupDocs.Viewer'ı kullanarak satır ve sütun başlıklarını işlemeyi öğrenin. HTML, JPG, PNG ve PDF çıktılarını keşfedin."
+"linktitle": "Satır ve Sütun Başlıklarını Oluştur"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Satır ve Sütun Başlıklarını Oluştur"
+"url": "/tr/net/spreadsheet-rendering-options/render-row-column-headings/"
+"weight": 18
 ---
 
 # Satır ve Sütun Başlıklarını Oluştur
 
 ## giriiş
-.NET uygulamalarında belge görüntüleme deneyiminizi geliştirmek mi istiyorsunuz? GroupDocs.Viewer for .NET ile elektronik tablo dosyalarınızdaki satır ve sütun başlıklarını sorunsuz bir şekilde oluşturabilirsiniz. Bu eğitimde size HTML, JPG, PNG ve PDF gibi farklı çıktı formatlarını kullanarak satır ve sütun başlıklarını oluşturma sürecinde rehberlik edeceğiz.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- .NET kitaplığı için GroupDocs.Viewer yüklendi.
+.NET uygulamalarında belge görüntüleme deneyiminizi geliştirmek mi istiyorsunuz? .NET için GroupDocs.Viewer ile elektronik tablo dosyalarınızdan satır ve sütun başlıklarını sorunsuz bir şekilde işleyebilirsiniz. Bu eğitimde, HTML, JPG, PNG ve PDF gibi farklı çıktı biçimlerini kullanarak satır ve sütun başlıklarını işleme sürecinde size rehberlik edeceğiz.
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+- .NET kütüphanesi için GroupDocs.Viewer kuruldu.
 - Test amaçlı örnek bir XLSX dosyası.
 - C# ve .NET geliştirme konusunda çalışma bilgisi.
 ## Ad Alanlarını İçe Aktar
@@ -23,7 +23,7 @@ using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## 1. Çıkış Dizinini Ayarlayın
+## 1. Çıktı Dizinini Ayarlayın
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
@@ -68,15 +68,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
 }
 ```
 ## Çözüm
-Tebrikler! GroupDocs.Viewer for .NET'i kullanarak e-tablonuzdan satır ve sütun başlıklarını başarıyla oluşturdunuz. Uygulamanızın ihtiyaçlarına uygun farklı çıktı formatlarını deneyin.
+Tebrikler! .NET için GroupDocs.Viewer'ı kullanarak elektronik tablonuzdan satır ve sütun başlıklarını başarıyla oluşturdunuz. Uygulamanızın ihtiyaçlarına uygun farklı çıktı biçimleri deneyin.
 ## Sıkça Sorulan Sorular
 ### S: İşlenen belgeler için çıktı dizinini özelleştirebilir miyim?
- C: Evet, istediğiniz çıktı dizinini, çıktının bulunduğu kodda ayarlayabilirsiniz.`outputDirectory` değişken tanımlanır.
+A: Evet, istediğiniz çıktı dizinini kodda ayarlayabilirsiniz. `outputDirectory` değişken tanımlandı.
 ### S: GroupDocs.Viewer diğer elektronik tablo formatlarıyla uyumlu mudur?
-C: Evet, GroupDocs.Viewer, XLS, XLSX, CSV ve daha fazlası dahil olmak üzere çeşitli elektronik tablo formatlarını destekler.
-### S: Oluşturma işlemi sırasında istisnaları nasıl ele alabilirim?
-C: İstisnaları işlemek ve kullanıcıya uygun mesajları günlüğe kaydetmek veya görüntülemek için try-catch bloklarını uygulayabilirsiniz.
-### S: GroupDocs.Viewer'ı uygulamamda kullanmak için herhangi bir lisans gereksinimi var mı?
-C: Evet, geçerli bir lisansa ihtiyacınız var. Test amacıyla geçici bir lisans alabilir veya üretim için tam bir lisans satın alabilirsiniz.
-### S: Ek desteği veya topluluk tartışmalarını nerede bulabilirim?
- C: Ziyaret edin[GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) Destek ve tartışmalar için.
+C: Evet, GroupDocs.Viewer XLS, XLSX, CSV ve daha fazlası dahil olmak üzere çeşitli elektronik tablo formatlarını destekler.
+### S: İşleme süreci sırasında istisnaları nasıl işleyebilirim?
+A: İstisnaları ele almak ve uygun mesajları kullanıcıya kaydetmek veya görüntülemek için try-catch bloklarını uygulayabilirsiniz.
+### S: Uygulamamda GroupDocs.Viewer'ı kullanmak için herhangi bir lisanslama gereksinimi var mı?
+A: Evet, geçerli bir lisansa ihtiyacınız var. Test amaçlı geçici bir lisans edinebilir veya üretim için tam bir lisans satın alabilirsiniz.
+### S: Ek destek veya topluluk tartışmalarını nerede bulabilirim?
+A: Ziyaret edin [GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) Destek ve tartışmalar için.

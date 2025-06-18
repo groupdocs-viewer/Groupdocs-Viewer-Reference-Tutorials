@@ -1,33 +1,33 @@
 ---
-title: E-Mail-Felder beim Rendern umbenennen
-linktitle: E-Mail-Felder beim Rendern umbenennen
-second_title: GroupDocs.Viewer .NET-API
-description: Verbessern Sie das Anzeigeerlebnis von Dokumenten mit GroupDocs.Viewer für .NET. E-Mails nahtlos rendern und anpassen.
-weight: 12
-url: /de/net/rendering-email-messages/rename-email-fields/
+"description": "Verbessern Sie die Dokumentanzeige mit GroupDocs.Viewer für .NET. Rendern und passen Sie E-Mails nahtlos an."
+"linktitle": "E-Mail-Felder während des Renderns umbenennen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "E-Mail-Felder während des Renderns umbenennen"
+"url": "/de/net/rendering-email-messages/rename-email-fields/"
+"weight": 12
 ---
 
-# E-Mail-Felder beim Rendern umbenennen
+# E-Mail-Felder während des Renderns umbenennen
 
 ## Einführung
 
-Im heutigen digitalen Zeitalter ist die effiziente Verwaltung und Anzeige von Dokumenten für Unternehmen und Privatpersonen gleichermaßen von größter Bedeutung. Ganz gleich, ob es sich um Verträge, Berichte oder E-Mails handelt: Die Möglichkeit, nahtlos durch diese Dokumente zu navigieren, kann die Produktivität erheblich steigern. Hier kommt GroupDocs.Viewer für .NET ins Spiel. Mit dieser leistungsstarken Bibliothek können Entwickler Dokumentanzeigefunktionen direkt in ihre .NET-Anwendungen integrieren und bieten eine breite Palette von Funktionen zum Rendern verschiedener Dokumentformate.
+Im digitalen Zeitalter ist die effiziente Verwaltung und Anzeige von Dokumenten für Unternehmen und Privatpersonen gleichermaßen unerlässlich. Ob Verträge, Berichte oder E-Mails – die Möglichkeit, nahtlos durch diese Dokumente zu navigieren, steigert die Produktivität erheblich. Hier kommt GroupDocs.Viewer für .NET ins Spiel. Diese leistungsstarke Bibliothek ermöglicht Entwicklern die direkte Integration von Dokumentanzeigefunktionen in ihre .NET-Anwendungen und bietet eine breite Palette an Funktionen zur Darstellung verschiedener Dokumentformate.
 
 ## Voraussetzungen
 
-Bevor Sie mit dem Tutorial zum Umbenennen von E-Mail-Feldern beim Rendern mit GroupDocs.Viewer für .NET beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+Bevor Sie sich in das Tutorial zum Umbenennen von E-Mail-Feldern während des Renderings mit GroupDocs.Viewer für .NET vertiefen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-1.  GroupDocs.Viewer für .NET-Bibliothek: Laden Sie die GroupDocs.Viewer für .NET-Bibliothek von herunter und installieren Sie sie[Hier](https://releases.groupdocs.com/viewer/net/).
+1. GroupDocs.Viewer für .NET-Bibliothek: Laden Sie die GroupDocs.Viewer für .NET-Bibliothek herunter und installieren Sie sie von [Hier](https://releases.groupdocs.com/viewer/net/).
 
-2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine geeignete Entwicklungsumgebung für die .NET-Entwicklung eingerichtet haben, z. B. Visual Studio.
+2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine geeignete Entwicklungsumgebung für die .NET-Entwicklung eingerichtet haben, beispielsweise Visual Studio.
 
-3. Grundlegendes Verständnis von C#: Machen Sie sich mit den Grundlagen der Programmiersprache C# vertraut, da das Tutorial C#-Codefragmente beinhaltet.
+3. Grundlegende Kenntnisse in C#: Machen Sie sich mit den Grundlagen der Programmiersprache C# vertraut, da das Tutorial C#-Codeausschnitte enthält.
 
-4. Dokumentenverzeichnis: Bereiten Sie ein Verzeichnis vor, in dem die zu rendernden Dokumente gespeichert werden.
+4. Dokumentverzeichnis: Bereiten Sie ein Verzeichnis vor, in dem die zu rendernden Dokumente gespeichert werden.
 
 ## Namespaces importieren
 
-Um die GroupDocs.Viewer-Funktionalitäten in Ihrer .NET-Anwendung nutzen zu können, müssen Sie die erforderlichen Namespaces importieren.
+Um die GroupDocs.Viewer-Funktionen in Ihrer .NET-Anwendung zu verwenden, müssen Sie die erforderlichen Namespaces importieren.
 
 ```csharp
 using System;
@@ -35,7 +35,7 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Lassen Sie uns nun den Prozess des Umbenennens von E-Mail-Feldern während des Renderns mit GroupDocs.Viewer für .NET in mehrere Schritte unterteilen:
+Lassen Sie uns nun den Vorgang des Umbenennens von E-Mail-Feldern während des Renderings mit GroupDocs.Viewer für .NET in mehrere Schritte aufteilen:
 
 ## Schritt 1: Ausgabeverzeichnis definieren
 
@@ -45,7 +45,7 @@ Geben Sie zunächst das Verzeichnis an, in dem die gerenderten HTML-Seiten gespe
 string outputDirectory = "Your Document Directory";
 ```
 
-## Schritt 2: Definieren Sie das Format des Seitendateipfads
+## Schritt 2: Definieren Sie das Auslagerungsdateipfadformat
 
 Definieren Sie das Format für die Dateipfade der gerenderten HTML-Seiten. Jede Seite wird als separate HTML-Datei gespeichert.
 
@@ -62,7 +62,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG))
 {
 ```
 
-## Schritt 4: Konfigurieren Sie die HTML-Ansichtsoptionen
+## Schritt 4: HTML-Ansichtsoptionen konfigurieren
 
 Konfigurieren Sie die Optionen für die HTML-Ansicht, einschließlich der Angabe des Ausgabedateiformats und der Einrichtung von E-Mail-Feldzuordnungen.
 
@@ -84,7 +84,7 @@ viewer.View(options);
 
 ## Schritt 6: Erfolgsmeldung anzeigen
 
-Informieren Sie den Benutzer darüber, dass das Dokument erfolgreich gerendert wurde.
+Informieren Sie den Benutzer, dass das Dokument erfolgreich gerendert wurde.
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -92,9 +92,9 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Abschluss
 
-Zusammenfassend bietet GroupDocs.Viewer für .NET eine nahtlose Lösung zum Rendern von Dokumenten in .NET-Anwendungen. Wenn Sie die in diesem Tutorial beschriebenen Schritte befolgen, können Sie E-Mail-Felder beim Rendern problemlos umbenennen und so die Lesbarkeit und Benutzerfreundlichkeit von E-Mail-Dokumenten verbessern. Mit seiner intuitiven API und den umfassenden Funktionen ermöglicht GroupDocs.Viewer Entwicklern, die Prozesse zur Dokumentenanzeige effektiv zu optimieren.
+Zusammenfassend lässt sich sagen, dass GroupDocs.Viewer für .NET eine nahtlose Lösung für das Rendern von Dokumenten in .NET-Anwendungen bietet. Mit den in diesem Tutorial beschriebenen Schritten können Sie E-Mail-Felder während des Renderns einfach umbenennen und so die Lesbarkeit und Benutzerfreundlichkeit von E-Mail-Dokumenten verbessern. Mit seiner intuitiven API und den umfassenden Funktionen ermöglicht GroupDocs.Viewer Entwicklern, die Dokumentanzeige effektiv zu optimieren.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### F: Kann ich mit GroupDocs.Viewer für .NET andere Dokumente als E-Mails rendern?
 
@@ -106,12 +106,12 @@ A: Ja, GroupDocs.Viewer unterstützt .NET Core zusammen mit dem traditionellen .
 
 ### F: Kann ich das Erscheinungsbild gerenderter Dokumente anpassen?
 
-A: Auf jeden Fall bietet GroupDocs.Viewer umfangreiche Anpassungsoptionen zur Steuerung des Erscheinungsbilds und Verhaltens gerenderter Dokumente.
+A: Auf jeden Fall. GroupDocs.Viewer bietet umfangreiche Anpassungsoptionen zur Steuerung des Erscheinungsbilds und Verhaltens gerenderter Dokumente.
 
-### F: Unterstützt GroupDocs.Viewer das Streamen von Dokumenten?
+### F: Unterstützt GroupDocs.Viewer Dokument-Streaming?
 
-A: Ja, GroupDocs.Viewer ermöglicht das direkte Streamen von Dokumenten an den Browser des Clients, ohne dass diese auf dem Server gespeichert werden müssen.
+A: Ja, GroupDocs.Viewer ermöglicht das Streamen von Dokumenten direkt in den Browser des Clients, ohne dass diese auf dem Server gespeichert werden müssen.
 
 ### F: Ist GroupDocs.Viewer für Anwendungen auf Unternehmensebene geeignet?
 
-A: GroupDocs.Viewer ist mit seiner Skalierbarkeit, Zuverlässigkeit und seinem robusten Funktionsumfang auf jeden Fall darauf ausgelegt, die Anforderungen von Anwendungen auf Unternehmensebene zu erfüllen.
+A: Natürlich ist GroupDocs.Viewer mit seiner Skalierbarkeit, Zuverlässigkeit und seinem robusten Funktionsumfang darauf ausgelegt, die Anforderungen von Anwendungen auf Unternehmensebene zu erfüllen.

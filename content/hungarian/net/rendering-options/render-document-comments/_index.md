@@ -1,78 +1,78 @@
 ---
-title: Dokumentum renderelése megjegyzésekkel
-linktitle: Dokumentum renderelése megjegyzésekkel
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan jeleníthet meg dokumentumokat megjegyzésekkel a GroupDocs.Viewer for .NET segítségével. Kövesse lépésenkénti útmutatónkat a zökkenőmentes integráció érdekében.
-weight: 13
-url: /hu/net/rendering-options/render-document-comments/
+"description": "Ismerje meg, hogyan jeleníthet meg megjegyzéseket tartalmazó dokumentumokat a GroupDocs.Viewer for .NET segítségével. Kövesse lépésről lépésre szóló útmutatónkat a zökkenőmentes integráció érdekében."
+"linktitle": "Dokumentum renderelése megjegyzésekkel"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Dokumentum renderelése megjegyzésekkel"
+"url": "/hu/net/rendering-options/render-document-comments/"
+"weight": 13
 ---
 
 # Dokumentum renderelése megjegyzésekkel
 
 ## Bevezetés
-A GroupDocs.Viewer for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentum-megjelenítési képességeket .NET-alkalmazásaikba. Akár Word-dokumentumokat, Excel-táblázatokat, PowerPoint-prezentációkat, PDF-fájlokat vagy más formátumokat kell megjelenítenie, a GroupDocs.Viewer egyszerű megoldást kínál.
-Ebben az oktatóanyagban a megjegyzésekkel ellátott dokumentumok megjelenítésére fogunk összpontosítani a GroupDocs.Viewer for .NET használatával. Végigvezetjük az előfeltételeken, a névterek importálásán, és lépésenkénti útmutatót adunk a megjegyzésekkel ellátott dokumentumok megjelenítéséhez, így biztosítva, hogy alaposan megértse az egyes fogalmakat.
+GroupDocs.Viewer for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentumrenderelési képességeket .NET alkalmazásaikba. Akár Word dokumentumokat, Excel táblázatokat, PowerPoint bemutatókat, PDF fájlokat vagy más formátumokat kell megjelenítenie, a GroupDocs.Viewer egyszerű megoldást kínál.
+Ebben az oktatóanyagban a GroupDocs.Viewer for .NET használatával történő dokumentumok megjelenítésére fogunk összpontosítani. Végigvezetjük az előfeltételeken, a névterek importálásán, és lépésről lépésre bemutatjuk a dokumentumok megjelenítését megjegyzésekkel, biztosítva, hogy minden koncepciót alaposan megértsen.
 ## Előfeltételek
-Mielőtt belevágna a dokumentumok megjegyzésekkel történő megjelenítésébe a GroupDocs.Viewer for .NET használatával, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+Mielőtt belemerülne a megjegyzéseket tartalmazó dokumentumok renderelésében a GroupDocs.Viewer for .NET segítségével, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 ### .NET fejlesztői környezet beállítása
-Győződjön meg arról, hogy be van állítva egy fejlesztői környezet a .NET fejlesztéshez. Szüksége lesz egy kompatibilis IDE-re, például a Visual Studiora és a .NET SDK-ra, amely telepítve van a számítógépére.
+Győződjön meg róla, hogy rendelkezik egy .NET fejlesztéshez beállított fejlesztői környezettel. Szüksége lesz egy kompatibilis IDE-re, például a Visual Studio-ra és a .NET SDK-ra a gépén.
 ### GroupDocs.Viewer .NET telepítéshez
-Töltse le és telepítse a GroupDocs.Viewer for .NET programot a webhelyről, vagy használja a mellékelt letöltési linket:
-[A GroupDocs.Viewer letöltése .NET-hez](https://releases.groupdocs.com/viewer/net/)
+Töltse le és telepítse a GroupDocs.Viewer for .NET programot a weboldalról, vagy használja a megadott letöltési linket:
+[GroupDocs.Viewer letöltése .NET-hez](https://releases.groupdocs.com/viewer/net/)
 
 ## Névterek importálása
-Kezdésként importálja a szükséges névtereket a .NET-projektbe. Ezek a névterek hozzáférést biztosítanak a megjegyzésekkel ellátott dokumentum-megjelenítéshez szükséges osztályokhoz és metódusokhoz.
+Kezdésként importáld a szükséges névtereket a .NET projektedbe. Ezek a névterek hozzáférést biztosítanak a dokumentumok megjegyzésekkel történő rendereléséhez szükséges osztályokhoz és metódusokhoz.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-## 1. lépés: Határozza meg a kimeneti könyvtárat
-Állítsa be a kimeneti könyvtárat, ahová a rendszer menti a megjegyzésekkel ellátott dokumentumot.
+## 1. lépés: Kimeneti könyvtár definiálása
+Állítsa be a kimeneti könyvtárat, ahová a megjegyzésekkel ellátott renderelt dokumentum mentésre kerül.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## 2. lépés: Határozza meg az oldalfájl elérési út formátumát
-Határozza meg a fájl elérési útját a megjegyzésekkel ellátott dokumentum egyes oldalaihoz.
+## 2. lépés: Oldalfájl elérési útjának formátumának meghatározása
+Határozza meg a renderelt dokumentum egyes oldalainak fájlelérési útvonalának formátumát megjegyzésekkel.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## 3. lépés: Példányosítsa a Viewer objektumot
- Hozzon létre egy példányt a`Viewer` osztályban, paraméterként megjegyzésekkel adva át a dokumentum elérési útját.
+## 3. lépés: Viewer objektum példányosítása
+Hozz létre egy példányt a `Viewer` osztály, paraméterként átadva a dokumentum elérési útját megjegyzésekkel.
 ```csharp
 using (Viewer viewer = new Viewer("Path to Your Document with Comments"))
 {
-    // Renderelési lehetőségek
+    // Renderelési beállítások
 }
 ```
-## 4. lépés: Konfigurálja a renderelési beállításokat
-Adja meg a megjelenítési beállításokat, beleértve a beágyazott erőforrások és megjegyzések beállításait.
+## 4. lépés: Renderelési beállítások konfigurálása
+Adja meg a megjelenítési beállításokat, beleértve a beágyazott erőforrások és megjegyzések beállításait is.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.RenderComments = true;
 ```
-## 5. lépés: Rendelje meg a dokumentumot megjegyzésekkel
- Hívja fel a`View` módszere a`Viewer` objektumot, átadva a renderelési beállításokat.
+## 5. lépés: Dokumentum renderelése megjegyzésekkel
+Hívd meg a `View` a módszer `Viewer` objektum, átadva a renderelési beállításokat.
 ```csharp
 viewer.View(options);
 ```
-## 6. lépés: Jelenítse meg a sikeres üzenetet
-Értesítse a felhasználót, hogy a megjegyzésekkel ellátott dokumentum sikeresen leképezésre került.
+## 6. lépés: Sikeres üzenet megjelenítése
+Értesítse a felhasználót, hogy a megjegyzésekkel ellátott dokumentum sikeresen megjelenítve lett.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban bemutattuk a dokumentumok megjegyzésekkel ellátott megjelenítésének folyamatát a GroupDocs.Viewer for .NET használatával. A lépésenkénti útmutató követésével és az előfeltételek teljesítésével zökkenőmentesen integrálhatja a dokumentum-megjelenítési képességeket .NET-alkalmazásaiba.
+Ebben az oktatóanyagban a GroupDocs.Viewer for .NET használatával történő dokumentumok megjegyzésekkel történő renderelésének folyamatát ismertettük. A lépésenkénti útmutató követésével és az előfeltételek teljesítésével zökkenőmentesen integrálhatja a dokumentumrenderelési képességeket .NET-alkalmazásaiba.
 ## GYIK
-### A GroupDocs.Viewer képes bonyolult formázással rendelkező dokumentumokat megjeleníteni?
-Igen, a GroupDocs.Viewer támogatja a dokumentumok különféle formázási elemekkel, köztük táblázatokkal, képekkel és betűtípusokkal történő megjelenítését.
-### A GroupDocs.Viewer kompatibilis a különböző dokumentumformátumokkal?
-Természetesen a GroupDocs.Viewer a dokumentumformátumok széles skáláját képes renderelni, beleértve a PDF, DOCX, XLSX, PPTX stb.
-### Testreszabhatom a renderelési beállításokat az adott követelményekhez?
-Igen, a GroupDocs.Viewer rugalmas megjelenítési lehetőségeket biztosít, amelyek lehetővé teszik a kimenet személyre szabását az alkalmazás igényei szerint.
-### A GroupDocs.Viewer támogatja a dokumentumok külső forrásból történő megjelenítését?
-Igen, különböző forrásokból, például helyi fájlokból, adatfolyamokból és URL-címekből származó dokumentumokat renderelhet.
-### Elérhető a GroupDocs.Viewer próbaverziója?
-Igen, megkezdheti a GroupDocs.Viewer ingyenes próbaverzióját, hogy felfedezze szolgáltatásait és képességeit.
+### A GroupDocs.Viewer képes összetett formázású dokumentumokat megjeleníteni?
+Igen, a GroupDocs.Viewer támogatja a dokumentumok megjelenítését különféle formázási elemekkel, beleértve a táblázatokat, képeket és betűtípusokat.
+### Kompatibilis a GroupDocs.Viewer a különböző dokumentumformátumokkal?
+A GroupDocs.Viewer természetesen számos dokumentumformátumot képes megjeleníteni, beleértve a PDF, DOCX, XLSX, PPTX és egyebeket.
+### Testreszabhatom a renderelési beállításokat az adott igényeknek megfelelően?
+Igen, a GroupDocs.Viewer rugalmas renderelési beállításokat kínál, amelyek lehetővé teszik a kimenet testreszabását az alkalmazás igényei szerint.
+### A GroupDocs.Viewer támogatja a külső forrásokból származó dokumentumok renderelését?
+Igen, különféle forrásokból, például helyi fájlokból, adatfolyamokból és URL-címekből is megjeleníthet dokumentumokat.
+### Van elérhető próbaverzió a GroupDocs.Viewerhez?
+Igen, kipróbálhatja a GroupDocs.Viewer ingyenes próbaverzióját, hogy felfedezhesse a funkcióit és képességeit.

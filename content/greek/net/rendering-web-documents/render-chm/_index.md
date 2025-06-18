@@ -1,24 +1,24 @@
 ---
-title: Απόδοση αρχείων CHM
-linktitle: Απόδοση αρχείων CHM
-second_title: GroupDocs.Viewer .NET API
-description: Μάθετε πώς να αποδίδετε αρχεία CHM στο .NET χρησιμοποιώντας το GroupDocs.Viewer. Μετατρέψτε το CHM σε μορφές HTML, JPG, PNG και PDF χωρίς κόπο.
-weight: 10
-url: /el/net/rendering-web-documents/render-chm/
+"description": "Μάθετε πώς να αποδίδετε αρχεία CHM σε .NET χρησιμοποιώντας το GroupDocs.Viewer. Μετατρέψτε CHM σε μορφές HTML, JPG, PNG και PDF χωρίς κόπο."
+"linktitle": "Απόδοση αρχείων CHM"
+"second_title": "API .NET του GroupDocs.Viewer"
+"title": "Απόδοση αρχείων CHM"
+"url": "/el/net/rendering-web-documents/render-chm/"
+"weight": 10
 ---
 
 # Απόδοση αρχείων CHM
 
 ## Εισαγωγή
-Σε αυτό το σεμινάριο, θα εξερευνήσουμε τον τρόπο απόδοσης αρχείων CHM (Compiled HTML Help) χρησιμοποιώντας το GroupDocs.Viewer για .NET. Το GroupDocs.Viewer για .NET είναι ένα ισχυρό API απόδοσης εγγράφων που επιτρέπει στους προγραμματιστές να εμφανίζουν πάνω από 170 τύπους εγγράφων στις εφαρμογές τους .NET χωρίς να απαιτούν εγκατάσταση εξωτερικού λογισμικού.
+Σε αυτό το σεμινάριο, θα εξερευνήσουμε τον τρόπο απόδοσης αρχείων CHM (Compiled HTML Help - Βοήθεια μεταγλωττισμένης HTML) χρησιμοποιώντας το GroupDocs.Viewer για .NET. Το GroupDocs.Viewer για .NET είναι ένα ισχυρό API απόδοσης εγγράφων που επιτρέπει στους προγραμματιστές να εμφανίζουν πάνω από 170 τύπους εγγράφων στις εφαρμογές .NET τους χωρίς να απαιτούνται εξωτερικές εγκαταστάσεις λογισμικού.
 
 ## Προαπαιτούμενα
 
-Πριν ξεκινήσουμε την απόδοση αρχείων CHM, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
+Πριν εμβαθύνουμε στην απόδοση αρχείων CHM, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
 ### Εγκατάσταση του GroupDocs.Viewer για .NET
 
- Για να ξεκινήσετε, πρέπει να εγκαταστήσετε το GroupDocs.Viewer για .NET. Μπορείτε να κατεβάσετε τη βιβλιοθήκη από το[Ιστότοπος GroupDocs](https://releases.groupdocs.com/viewer/net/) ή εγκαταστήστε το μέσω του NuGet Package Manager εκτελώντας την ακόλουθη εντολή στην Κονσόλα Package Manager:
+Για να ξεκινήσετε, πρέπει να εγκαταστήσετε το GroupDocs.Viewer για .NET. Μπορείτε να κατεβάσετε τη βιβλιοθήκη από το [Ιστότοπος GroupDocs](https://releases.groupdocs.com/viewer/net/) ή εγκαταστήστε το μέσω του NuGet Package Manager εκτελώντας την ακόλουθη εντολή στην Κονσόλα Package Manager:
 
 ```bash
 Install-Package GroupDocs.Viewer
@@ -36,11 +36,11 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Τώρα ας αναλύσουμε τη διαδικασία απόδοσης σε πολλά βήματα:
+Ας αναλύσουμε τώρα τη διαδικασία απόδοσης σε πολλά βήματα:
 
 ## Βήμα 1: Ορισμός καταλόγου εξόδου
 
-Καθορίστε τον κατάλογο στον οποίο θέλετε να αποθηκευτούν τα αποδοθέντα αρχεία:
+Ορίστε τον κατάλογο όπου θέλετε να αποθηκευτούν τα αρχεία που έχουν αποδοθεί:
 
 ```csharp
 string outputDirectory = "Your Document Directory";
@@ -56,9 +56,9 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.html")
 using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    options.RenderToSinglePage = true; // Ορίστε το σε true για να μετατρέψετε όλο το περιεχόμενο CHM σε μία σελίδα
+    options.RenderToSinglePage = true; // Ορίστε την τιμή σε true για να μετατρέψετε όλο το περιεχόμενο CHM σε μία μόνο σελίδα
 
-    viewer.View(options); //Μετατροπή όλων των σελίδων
+    viewer.View(options); // Μετατροπή όλων των σελίδων
 }
 ```
 
@@ -103,11 +103,11 @@ using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
 
-    viewer.View(options); //Μετατροπή όλων των σελίδων
+    viewer.View(options); // Μετατροπή όλων των σελίδων
 }
 ```
 
-## Βήμα 6: Ελέγξτε την έξοδο
+## Βήμα 6: Έλεγχος εξόδου
 
 Μόλις ολοκληρωθεί η διαδικασία απόδοσης, ελέγξτε τον καθορισμένο κατάλογο εξόδου για τα αρχεία που έχουν αποδοθεί:
 
@@ -115,28 +115,28 @@ using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
-Η απόδοση αρχείων CHM χρησιμοποιώντας το GroupDocs.Viewer για .NET είναι μια απλή διαδικασία. Ακολουθώντας τα βήματα που περιγράφονται σε αυτό το σεμινάριο, μπορείτε να μετατρέψετε αποτελεσματικά έγγραφα CHM σε διάφορες μορφές όπως HTML, εικόνες (JPG, PNG) και PDF στις εφαρμογές σας .NET.
+Η απόδοση αρχείων CHM χρησιμοποιώντας το GroupDocs.Viewer για .NET είναι μια απλή διαδικασία. Ακολουθώντας τα βήματα που περιγράφονται σε αυτό το σεμινάριο, μπορείτε να μετατρέψετε αποτελεσματικά έγγραφα CHM σε διάφορες μορφές όπως HTML, εικόνες (JPG, PNG) και PDF μέσα στις εφαρμογές .NET που διαθέτετε.
 
 ## Συχνές ερωτήσεις
 
 ### Ε1: Μπορεί το GroupDocs.Viewer να αποδώσει άλλες μορφές εγγράφων εκτός από το CHM;
 
-A1: Ναι, το GroupDocs.Viewer υποστηρίζει την απόδοση περισσότερων από 170 μορφών εγγράφων, συμπεριλαμβανομένων των PDF, DOCX, XLSX, PPTX και άλλων.
+A1: Ναι, το GroupDocs.Viewer υποστηρίζει την απόδοση σε περισσότερες από 170 μορφές εγγράφων, συμπεριλαμβανομένων PDF, DOCX, XLSX, PPTX και άλλων.
 
-### Ε2: Είναι το GroupDocs.Viewer συμβατό με .NET Core;
+### Ε2: Είναι το GroupDocs.Viewer συμβατό με το .NET Core;
 
-A2: Ναι, το GroupDocs.Viewer υποστηρίζει .NET Core εκτός από το παραδοσιακό .NET Framework.
+A2: Ναι, το GroupDocs.Viewer υποστηρίζει το .NET Core εκτός από το παραδοσιακό .NET Framework.
 
 ### Ε3: Μπορώ να προσαρμόσω τις επιλογές απόδοσης για διαφορετικές μορφές εξόδου;
 
-A3: Ναι, το GroupDocs.Viewer παρέχει διάφορες επιλογές για την προσαρμογή της διαδικασίας απόδοσης, όπως καθορισμό αριθμών σελίδων, ρύθμιση ποιότητας εικόνας και διαμόρφωση διαδρομών εξόδου.
+A3: Ναι, το GroupDocs.Viewer παρέχει διάφορες επιλογές για την προσαρμογή της διαδικασίας απόδοσης, όπως τον καθορισμό αριθμών σελίδων, τη ρύθμιση ποιότητας εικόνας και τη διαμόρφωση διαδρομών εξόδου.
 
 ### Ε4: Απαιτεί το GroupDocs.Viewer εξωτερικές εξαρτήσεις για την απόδοση εγγράφων;
 
-A4: Όχι, το GroupDocs.Viewer είναι μια αυτόνομη βιβλιοθήκη και δεν απαιτεί εξωτερικές εξαρτήσεις ή εγκαταστάσεις λογισμικού τρίτων.
+A4: Όχι, το GroupDocs.Viewer είναι μια αυτόνομη βιβλιοθήκη και δεν απαιτεί εξωτερικές εξαρτήσεις ή εγκαταστάσεις λογισμικού τρίτων κατασκευαστών.
 
-### Ε5: Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Viewer;
+### Ε5: Υπάρχει διαθέσιμη δωρεάν δοκιμαστική έκδοση για το GroupDocs.Viewer;
 
- A5: Ναι, μπορείτε να επωφεληθείτε από μια δωρεάν δοκιμή του GroupDocs.Viewer μεταβαίνοντας στο[δικτυακός τόπος](https://releases.groupdocs.com/).
+A5: Ναι, μπορείτε να επωφεληθείτε από μια δωρεάν δοκιμαστική έκδοση του GroupDocs.Viewer μεταβαίνοντας στο [δικτυακός τόπος](https://releases.groupdocs.com/).

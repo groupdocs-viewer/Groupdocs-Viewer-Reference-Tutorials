@@ -1,73 +1,73 @@
 ---
-title: Vykreslit čáry mřížky
-linktitle: Vykreslit čáry mřížky
-second_title: GroupDocs.Viewer .NET API
-description: Vylepšete vizualizaci dokumentů pomocí GroupDocs.Viewer pro .NET. Vykreslete čáry mřížky bez námahy. Vyzkoušejte bezplatnou zkušební verzi nyní! #GroupDocs #Viewer
-weight: 12
-url: /cs/net/spreadsheet-rendering-options/render-grid-lines/
+"description": "Vylepšete vizualizaci dokumentů s GroupDocs.Viewer pro .NET. Vykreslujte mřížku bez námahy. Vyzkoušejte bezplatnou zkušební verzi hned teď!"
+"linktitle": "Vykreslení mřížkových čar"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslení mřížkových čar"
+"url": "/cs/net/spreadsheet-rendering-options/render-grid-lines/"
+"weight": 12
 ---
 
-# Vykreslit čáry mřížky
+# Vykreslení mřížkových čar
 
-## Úvod
-Vítejte v tomto podrobném průvodci používáním GroupDocs.Viewer pro .NET k vykreslování čar mřížky ve vašich dokumentech. Ať už jste ostřílený vývojář nebo nováček v rámci .NET, tento tutoriál vás provede celým procesem s podrobnými vysvětleními a snadno pochopitelnými příklady.
+## Zavedení
+Vítejte v tomto podrobném návodu, jak používat GroupDocs.Viewer pro .NET k vykreslování mřížky v dokumentech. Ať už jste zkušený vývojář nebo nováček v oblasti .NET frameworku, tento tutoriál vás provede celým procesem s podrobným vysvětlením a snadno srozumitelnými příklady.
 ## Předpoklady
-Než se ponoříte do výukového programu, ujistěte se, že máte splněny následující předpoklady:
--  GroupDocs.Viewer for .NET: Stáhněte a nainstalujte knihovnu z[oficiální webové stránky](https://releases.groupdocs.com/viewer/net/).
-- Váš adresář dokumentů: Ujistěte se, že máte určený adresář pro své dokumenty, a nahraďte "Your Document Directory" v poskytnutém fragmentu kódu skutečnou cestou.
-Nyní, když máte vše nastaveno, můžeme začít.
+Než se pustíte do tutoriálu, ujistěte se, že máte splněny následující předpoklady:
+- GroupDocs.Viewer pro .NET: Stáhněte a nainstalujte knihovnu z [oficiální webové stránky](https://releases.groupdocs.com/viewer/net/).
+- Adresář dokumentů: Ujistěte se, že máte pro své dokumenty určený adresář, a v poskytnutém úryvku kódu nahraďte „Adresář dokumentů“ skutečnou cestou.
+Teď, když máte vše nastavené, pojďme do toho.
 ## Importovat jmenné prostory
-Ve svém projektu .NET začněte importováním potřebných jmenných prostorů:
+Ve vašem projektu .NET začněte importem potřebných jmenných prostorů:
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Krok 1: Nastavte adresář dokumentů
-Začněte zadáním cesty k adresáři dokumentů:
+## Krok 1: Nastavení adresáře dokumentů
+Začněte zadáním cesty k adresáři s vašimi dokumenty:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-Nahraďte "Your Document Directory" skutečnou cestou, kde jsou uloženy vaše dokumenty.
-## Krok 2: Definujte cestu k souboru a výstupní formát HTML
+Nahraďte „Adresář dokumentů“ skutečnou cestou, kde jsou vaše dokumenty uloženy.
+## Krok 2: Definování cesty k souboru a výstupního formátu HTML
 Vytvořte proměnnou pro uložení formátu cesty k souboru pro každou stránku a výstupního formátu HTML:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Tento řádek vytváří cestu k souboru pro každou stránku v určeném formátu.
-## Krok 3: Inicializujte GroupDocs.Viewer
+Tento řádek vytvoří cestu k souboru pro každou stránku v zadaném formátu.
+## Krok 3: Inicializace souboru GroupDocs.Viewer
 Vytvořte instanci třídy Viewer s dokumentem, který chcete zobrazit:
 ```csharp
 using (Viewer viewer = new Viewer(outputDirectory + "SAMPLE.XLSX"))
 {
-    // V rámci tohoto bloku budou provedeny další kroky.
+    // Další kroky budou provedeny v rámci tohoto bloku using.
 }
 ```
-Ujistěte se, že jste nahradili "SAMPLE.XLSX" názvem vašeho skutečného dokumentu.
-## Krok 4: Nakonfigurujte možnosti zobrazení HTML
+Nezapomeňte nahradit „SAMPLE.XLSX“ názvem vašeho skutečného dokumentu.
+## Krok 4: Konfigurace možností zobrazení HTML
 Nastavte možnosti zobrazení HTML, konkrétně povolte vykreslování čar mřížky:
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.SpreadsheetOptions.RenderGridLines = true;
 ```
-Tento fragment kódu konfiguruje možnosti zobrazení HTML pro vkládání zdrojů a vykreslování čar mřížky pro tabulkové dokumenty.
+Tento úryvek kódu konfiguruje možnosti zobrazení HTML pro vkládání zdrojů a vykreslování čar mřížky pro tabulkové dokumenty.
 ## Krok 5: Vykreslení čar mřížky
- Vyvolat`View` metoda vykreslení dokumentu se zadanými volbami pro stránky 1, 2 a 3:
+Vyvolat `View` metoda pro vykreslení dokumentu se zadanými možnostmi pro stránky 1, 2 a 3:
 ```csharp
 viewer.View(options, 1, 2, 3);
 ```
 Upravte čísla stránek podle svých požadavků.
-A je to! Úspěšně jste vykreslili čáry mřížky pomocí GroupDocs.Viewer pro .NET.
+To je vše! Úspěšně jste vykreslili čáry mřížky pomocí GroupDocs.Viewer pro .NET.
 ## Závěr
-V tomto tutoriálu jsme prozkoumali proces vykreslování čar mřížky v dokumentech pomocí GroupDocs.Viewer pro .NET. Dodržování nastíněných kroků vám umožní zlepšit vizuální reprezentaci vašich tabulkových dokumentů.
-## Nejčastější dotazy
-### Je GroupDocs.Viewer for .NET zdarma k použití?
- GroupDocs.Viewer for .NET nabízí bezplatnou zkušební i placenou verzi. Prozkoumat[zkušební verze zdarma](https://releases.groupdocs.com/) nebo navštivte[nákupní stránku](https://purchase.groupdocs.com/buy) pro podrobnosti o licencích.
+tomto tutoriálu jsme prozkoumali proces vykreslování mřížkových čar v dokumentech pomocí nástroje GroupDocs.Viewer pro .NET. Dodržení popsaných kroků vám umožní vylepšit vizuální reprezentaci vašich tabulkových dokumentů.
+## Často kladené otázky
+### Je GroupDocs.Viewer pro .NET zdarma?
+GroupDocs.Viewer pro .NET nabízí bezplatnou zkušební i placenou verzi. Prozkoumejte [bezplatná zkušební verze](https://releases.groupdocs.com/) nebo navštivte [stránka nákupu](https://purchase.groupdocs.com/buy) pro podrobnosti o licenci.
 ### Jak mohu získat podporu pro GroupDocs.Viewer pro .NET?
- Navštivte[Fórum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) hledat pomoc, sdílet zkušenosti a spojit se s komunitou.
-### Jsou k dispozici dočasné licence pro GroupDocs.Viewer for .NET?
- Ano, můžete získat a[dočasná licence](https://purchase.groupdocs.com/temporary-license/) pro GroupDocs.Viewer pro .NET.
-### Mohu najít podrobnou dokumentaci pro GroupDocs.Viewer pro .NET?
- Absolutně! Odkazovat na[oficiální dokumentace](https://tutorials.groupdocs.com/viewer/net/) pro podrobné informace o používání GroupDocs.Viewer pro .NET.
+Navštivte [Fórum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) vyhledat pomoc, sdílet zkušenosti a navazovat kontakty s komunitou.
+### Jsou k dispozici dočasné licence pro GroupDocs.Viewer pro .NET?
+Ano, můžete získat [dočasná licence](https://purchase.groupdocs.com/temporary-license/) pro GroupDocs.Viewer pro .NET.
+### Mohu najít podrobnou dokumentaci k GroupDocs.Viewer pro .NET?
+Rozhodně! Viz [oficiální dokumentace](https://tutorials.groupdocs.com/viewer/net/) pro podrobné informace o používání GroupDocs.Viewer pro .NET.
 ### Kde si mohu stáhnout nejnovější verzi GroupDocs.Viewer pro .NET?
- Stáhněte si knihovnu z[oficiální stránka vydání](https://releases.groupdocs.com/viewer/net/).
+Stáhněte si knihovnu z [oficiální stránka s vydáním](https://releases.groupdocs.com/viewer/net/).

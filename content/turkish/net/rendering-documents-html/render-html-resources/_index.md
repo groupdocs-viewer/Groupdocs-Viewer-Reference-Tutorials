@@ -1,29 +1,29 @@
 ---
-title: Gömülü veya Harici Kaynaklarla İşleme
-linktitle: Gömülü veya Harici Kaynaklarla İşleme
-second_title: GroupDocs.Viewer .NET API'si
-description: Kusursuz işleme için GroupDocs.Viewer ile .NET belge görüntülemeyi geliştirin. Verimli entegrasyon ve üstün kullanıcı deneyimi için eğitimimizi takip edin.
-weight: 12
-url: /tr/net/rendering-documents-html/render-html-resources/
+"description": "Sorunsuz işleme için GroupDocs.Viewer ile .NET belge görüntülemeyi geliştirin. Verimli entegrasyon ve üstün kullanıcı deneyimi için eğitimimizi izleyin."
+"linktitle": "Gömülü veya Harici Kaynaklarla Oluşturun"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Gömülü veya Harici Kaynaklarla Oluşturun"
+"url": "/tr/net/rendering-documents-html/render-html-resources/"
+"weight": 12
 ---
 
-# Gömülü veya Harici Kaynaklarla İşleme
+# Gömülü veya Harici Kaynaklarla Oluşturun
 
 ## giriiş
 
-.NET geliştirme dünyasında, verimli belge görüntüleme birçok uygulamanın çok önemli bir yönüdür. GroupDocs.Viewer for .NET, yerleşik veya harici kaynaklarla belgelerin işlenmesi için güçlü bir çözüm sağlar. Bu eğitimde, belgeleri sorunsuz bir şekilde oluşturmak için GroupDocs.Viewer'ı nasıl kullanacağımızı keşfedeceğiz ve netlik ve anlayış için her adımı parçalara ayıracağız.
+.NET geliştirme dünyasında, verimli belge görüntüleme birçok uygulamanın önemli bir yönüdür. .NET için GroupDocs.Viewer, gömülü veya harici kaynaklarla belgeleri işlemek için güçlü bir çözüm sunar. Bu eğitimde, GroupDocs.Viewer'ı belgeleri sorunsuz bir şekilde işlemek için nasıl kullanacağımızı keşfedeceğiz ve her adımı açıklık ve anlayış için parçalara ayıracağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-1. .NET Geliştirmenin Temel Anlayışı: C# programlama dili ve .NET çerçevesine aşinalık gereklidir.
-2.  GroupDocs.Viewer for .NET kurulumu: GroupDocs.Viewer for .NET'i şuradan indirip yükleyin:[Burada](https://releases.groupdocs.com/viewer/net/).
-3. Oluşturulacak Belge Dosyası: Oluşturma için örnek bir belge dosyası (örneğin, DOCX, PDF) hazırlayın.
+1. .NET Geliştirmenin Temel Anlayışı: C# programlama dili ve .NET framework'üne aşinalık gereklidir.
+2. GroupDocs.Viewer for .NET'in Kurulumu: GroupDocs.Viewer for .NET'i şu adresten indirin ve kurun: [Burada](https://releases.groupdocs.com/viewer/net/).
+3. İşlenecek Belge Dosyası: İşlenmek üzere bir örnek belge dosyası (örneğin DOCX, PDF) hazırlayın.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle .NET projemiz için gerekli namespace’leri import edelim:
+Öncelikle .NET projemiz için gerekli namespace'leri import edelim:
 
 ```csharp
 using GroupDocs.Viewer;
@@ -31,42 +31,42 @@ using GroupDocs.Viewer.Options;
 using System.IO;
 ```
 
-Şimdi, yerleşik veya harici kaynaklara sahip bir belgeyi oluşturma sürecini yönetilebilir adımlara ayıralım:
+Şimdi, gömülü veya harici kaynaklara sahip bir belgenin işlenmesi sürecini yönetilebilir adımlara bölelim:
 
-## Adım 1: Çıkış Dizinini Tanımlayın
+## Adım 1: Çıktı Dizinini Tanımlayın
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-İşlenen HTML sayfalarının kaydedilmesini istediğiniz dizini belirtin.
+Oluşturulan HTML sayfalarının kaydedilmesini istediğiniz dizini belirtin.
 
-## Adım 2: Sayfa Dosya Yolu Formatını Tanımlayın
+## Adım 2: Sayfa Dosyası Yolu Biçimini Tanımlayın
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 
-İşlenen her sayfanın kaydedileceği dosya yolu formatını ayarlayın.`{0}` sayfa numarası için bir yer tutucudur.
+Her oluşturulan sayfanın kaydedileceği dosya yolu için biçimi ayarlayın. `{0}` sayfa numarası için bir yer tutucudur.
 
-## 3. Adım: Görüntüleyici Örneğini Başlatın
+## Adım 3: Görüntüleyici Örneğini Başlatın
 
 ```csharp
 using (Viewer viewer = new Viewer("YourDocumentFilePath"))
 {
-    // Görüntüleyici başlatma kodu buraya gelecek
+    // Görüntüleyici başlatma kodu buraya gelir
 }
 ```
 
-İşlenecek belge dosyasının yolunu ileterek bir Viewer örneği oluşturun.
+İşlenecek belge dosyasının yolunu geçirerek bir Görüntüleyici örneği oluşturun.
 
-## 4. Adım: HTML Görünüm Seçeneklerini Yapılandırma
+## Adım 4: HTML Görünüm Seçeneklerini Yapılandırın
 
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
 
-Gömülü kaynakların formatını ve sayfa dosyası yolu formatını belirterek HTML görünüm seçeneklerini yapılandırın.
+Gömülü kaynaklar ve sayfa dosya yolu biçimini belirterek HTML görünüm seçeneklerini yapılandırın.
 
 ## Adım 5: Belgeyi Oluşturun
 
@@ -74,38 +74,38 @@ Gömülü kaynakların formatını ve sayfa dosyası yolu formatını belirterek
 viewer.View(options);
 ```
 
- Çağır`View` Viewer örneğindeki yöntem, yapılandırılmış HTML görünüm seçeneklerini iletir.
+Çağırmak `View` Viewer örneğindeki yöntem, yapılandırılmış HTML görünüm seçeneklerini iletir.
 
-## Adım 6: Çıkış Dizini Yolunu Görüntüleyin
+## Adım 6: Çıktı Dizin Yolunu Görüntüle
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in: {outputDirectory}");
 ```
 
-Çıkış dizininin yolu ile birlikte başarılı oluşturmayı belirten bir mesaj yazdırın.
+Başarılı işlemeyi belirten bir mesajı çıktı dizininin yoluyla birlikte yazdırın.
 
 ## Çözüm
 
-GroupDocs.Viewer for .NET, .NET uygulamalarındaki belge görüntüleme yeteneklerini geliştirerek, yerleşik veya harici kaynaklarla belge oluşturma sürecini basitleştirir. Geliştiriciler, bu eğitimde özetlenen adımları izleyerek belge oluşturma işlevini projelerine sorunsuz bir şekilde entegre edebilir ve kullanıcılara sorunsuz ve verimli bir belge görüntüleme deneyimi sunabilir.
+.NET için GroupDocs.Viewer, gömülü veya harici kaynaklarla belge oluşturma sürecini basitleştirerek .NET uygulamalarında belge görüntüleme yeteneklerini geliştirir. Geliştiriciler, bu eğitimde özetlenen adımları izleyerek belge oluşturma işlevselliğini projelerine sorunsuz bir şekilde entegre edebilir ve kullanıcılara sorunsuz ve etkili bir belge görüntüleme deneyimi sağlayabilir.
 
-## SSS'ler
+## SSS
 
-### S: .NET için GroupDocs.Viewer çeşitli belge formatlarıyla uyumlu mudur?
+### S: GroupDocs.Viewer for .NET çeşitli belge formatlarıyla uyumlu mudur?
 
-C: Evet, GroupDocs.Viewer, DOCX, PDF, XLSX ve daha fazlası dahil olmak üzere çok çeşitli belge formatlarını destekler.
+C: Evet, GroupDocs.Viewer DOCX, PDF, XLSX ve daha fazlası dahil olmak üzere çok çeşitli belge formatlarını destekler.
 
-### S: Oluşturma seçeneklerini gereksinimlerime göre özelleştirebilir miyim?
+### S: Gereksinimlerime göre render seçeneklerini özelleştirebilir miyim?
 
-C: Kesinlikle GroupDocs.Viewer, işleme sürecini belirli ihtiyaçları karşılayacak şekilde yapılandırmak için kapsamlı seçenekler sunar.
+C: Kesinlikle, GroupDocs.Viewer, belirli ihtiyaçları karşılamak üzere işleme sürecini yapılandırmak için kapsamlı seçenekler sunar.
 
-### S: GroupDocs.Viewer for .NET'in ücretsiz deneme sürümü mevcut mu?
+### S: GroupDocs.Viewer for .NET için ücretsiz deneme sürümü mevcut mu?
 
- C: Evet, ücretsiz deneme sürümünden yararlanabilirsiniz.[Burada](https://releases.groupdocs.com/).
+A: Evet, ücretsiz denemeden yararlanabilirsiniz [Burada](https://releases.groupdocs.com/).
 
-### S: GroupDocs.Viewer entegrasyonu konusunda nasıl destek veya yardım alabilirim?
+### S: GroupDocs.Viewer entegrasyonuyla ilgili destek veya yardımı nasıl alabilirim?
 
- C: GroupDocs.Viewer topluluk forumundan yardım isteyebilirsiniz.[Burada](https://forum.groupdocs.com/c/viewer/9).
+A: GroupDocs.Viewer topluluk forumundan yardım alabilirsiniz [Burada](https://forum.groupdocs.com/c/viewer/9).
 
 ### S: Test amaçlı geçici lisanslar mevcut mu?
 
- C: Evet, geçici lisanslar şu adresten alınabilir:[Burada](https://purchase.groupdocs.com/temporary-license/).
+A: Evet, geçici lisanslar şu adresten alınabilir: [Burada](https://purchase.groupdocs.com/temporary-license/).

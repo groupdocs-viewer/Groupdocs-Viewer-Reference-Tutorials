@@ -1,29 +1,29 @@
 ---
-title: Časový interval konkrétního projektu vykreslení (MS Project)
-linktitle: Časový interval konkrétního projektu vykreslení (MS Project)
-second_title: GroupDocs.Viewer .NET API
-description: Integrujte GroupDocs.Viewer for .NET hladce do svých aplikací pro efektivní prohlížení dokumentů. Zvyšte produktivitu pomocí všestranných možností vykreslování.
-weight: 12
-url: /cs/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
+"description": "Integrujte GroupDocs.Viewer pro .NET bezproblémově do svých aplikací pro efektivní prohlížení dokumentů. Zvyšte produktivitu díky všestranným možnostem vykreslování."
+"linktitle": "Časový interval specifický pro projekt renderování (MS Project)"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Časový interval specifický pro projekt renderování (MS Project)"
+"url": "/cs/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
+"weight": 12
 ---
 
-# Časový interval konkrétního projektu vykreslení (MS Project)
+# Časový interval specifický pro projekt renderování (MS Project)
 
-## Úvod
-V oblasti vývoje softwaru je prvořadá efektivní manipulace a vykreslování různých formátů dokumentů. Ať už jde o prohlížení dokumentů nebo manipulaci s nimi, správné nástroje mohou výrazně zvýšit produktivitu a zefektivnit procesy. GroupDocs.Viewer for .NET vyniká jako všestranné řešení, které vývojářům nabízí možnost bezproblémově integrovat možnosti prohlížení dokumentů do jejich aplikací .NET.
+## Zavedení
+V oblasti vývoje softwaru je efektivní zpracování a vykreslování různých formátů dokumentů klíčové. Ať už jde o prohlížení dokumentů nebo jejich manipulaci, správné nástroje mohou výrazně zvýšit produktivitu a zefektivnit procesy. GroupDocs.Viewer pro .NET vyniká jako všestranné řešení, které vývojářům nabízí možnost bezproblémově integrovat funkce prohlížení dokumentů do jejich .NET aplikací.
 ## Předpoklady
-Než se pustíte do integrace GroupDocs.Viewer for .NET, ujistěte se, že máte následující předpoklady:
-### 1. Seznámení s .NET Framework
-Ujistěte se, že máte základní znalosti o frameworku .NET, včetně programovacího jazyka C# a Visual Studio IDE.
+Než se pustíte do integrace GroupDocs.Viewer pro .NET, ujistěte se, že máte splněny následující předpoklady:
+### 1. Znalost .NET Frameworku
+Ujistěte se, že máte základní znalosti frameworku .NET, včetně programovacího jazyka C# a vývojového prostředí Visual Studio.
 ### 2. Instalace GroupDocs.Viewer pro .NET
- Stáhněte a nainstalujte GroupDocs.Viewer for .NET z[odkaz ke stažení](https://releases.groupdocs.com/viewer/net/). Postupujte podle pokynů k instalaci a nastavte knihovnu ve svém vývojovém prostředí.
+Stáhněte a nainstalujte GroupDocs.Viewer pro .NET z [odkaz ke stažení](https://releases.groupdocs.com/viewer/net/)Postupujte podle pokynů k instalaci a nastavte knihovnu ve vašem vývojovém prostředí.
 ### 3. Platná licence nebo dočasná licence
- Získejte platnou licenci od[GroupDocs](https://purchase.groupdocs.com/buy) nebo získat dočasnou licenci od[tady](https://purchase.groupdocs.com/temporary-license/) k využití všech funkcí GroupDocs.Viewer pro .NET.
+Získejte platnou licenci od [GroupDocs](https://purchase.groupdocs.com/buy) nebo získat dočasnou licenci od [zde](https://purchase.groupdocs.com/temporary-license/) využít plnou funkcionalitu GroupDocs.Viewer pro .NET.
 ### 4. Vzorový dokument
-Připravte si vzorový dokument, například soubor MS Project, pro testování funkčnosti vykreslování.
+Mějte připravený vzorový dokument, například soubor MS Project, pro testování funkce vykreslování.
 
 ## Importovat jmenné prostory
-Zahrňte do svého projektu potřebné jmenné prostory pro přístup k funkcím, které poskytuje GroupDocs.Viewer pro .NET.
+Začleňte do projektu potřebné jmenné prostory, abyste získali přístup k funkcím poskytovaným GroupDocs.Viewer pro .NET.
 
 ```csharp
 using System;
@@ -32,33 +32,33 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-Rozdělme příklad vykreslení určitého časového intervalu projektu ze souboru MS Project do několika kroků:
-## Krok 1: Definujte výstupní adresář
+Rozeberme si příklad vykreslení konkrétního časového intervalu projektu ze souboru MS Project do několika kroků:
+## Krok 1: Definování výstupního adresáře
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-Zadejte adresář, do kterého se budou ukládat vykreslené HTML stránky.
-## Krok 2: Definujte formát cesty k souboru stránky
+Zadejte adresář, kam budou uloženy vykreslené HTML stránky.
+## Krok 2: Definování formátu cesty k souboru stránky
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Nastavte formát pro cestu k souboru každé vykreslené stránky HTML.
-## Krok 3: Vytvořte objekt prohlížeče
+Nastavte formát cesty k souboru každé vykreslené stránky HTML.
+## Krok 3: Vytvoření instance objektu Viewer
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MPP))
 ```
-Vytvořte instanci třídy Viewer a předejte cestu k ukázkovému souboru MS Project.
-## Krok 4: Nakonfigurujte možnosti zobrazení HTML
+Vytvořte instanci třídy Viewer a předejte jí cestu k ukázkovému souboru MS Project.
+## Krok 4: Konfigurace možností zobrazení HTML
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-Nakonfigurujte možnosti zobrazení HTML pro vykreslování a určete formát pro vložené prostředky.
-## Krok 5: Načtení informací o zobrazení správy projektu
+Nakonfigurujte možnosti zobrazení HTML pro vykreslování a určete formát pro vložené zdroje.
+## Krok 5: Načtení informací o zobrazení správy projektů
 ```csharp
 ProjectManagementViewInfo viewInfo = viewer.GetViewInfo(ViewInfoOptions.FromHtmlViewOptions(options)) as ProjectManagementViewInfo;
 ```
-Získejte informace o zobrazení řízení projektu a určete datum zahájení a ukončení projektu.
-## Krok 6: Nastavte počáteční a koncové datum
+Načíst informace o zobrazení správy projektů pro určení data zahájení a ukončení projektu.
+## Krok 6: Nastavení data zahájení a ukončení
 ```csharp
 options.ProjectManagementOptions.StartDate = viewInfo.StartDate;
 options.ProjectManagementOptions.EndDate = viewInfo.StartDate.AddDays(7);
@@ -68,23 +68,23 @@ Nastavte počáteční a koncové datum pro interval projektu, který se má vyk
 ```csharp
 viewer.View(options);
 ```
-Spusťte proces vykreslování se zadanými možnostmi.
-## Krok 8: Zobrazte výstupní adresář
+Zahajte proces vykreslování se zadanými možnostmi.
+## Krok 8: Zobrazení výstupního adresáře
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Informujte uživatele o úspěšném vykreslení a zobrazte adresář, do kterého je výstup uložen.
+Upozornit uživatele na úspěšné vykreslení a zobrazit adresář, kde je výstup uložen.
 
 ## Závěr
-Integrace GroupDocs.Viewer for .NET do vašich projektů vám umožní efektivně zpracovávat úlohy související se zobrazením dokumentů, čímž se zlepší uživatelská zkušenost a produktivita. Podle poskytnutého podrobného průvodce můžete bezproblémově začlenit funkce vykreslování dokumentů do svých aplikací .NET.
-## FAQ
-### Je GroupDocs.Viewer for .NET kompatibilní se všemi formáty dokumentů?
-GroupDocs.Viewer for .NET podporuje širokou škálu formátů dokumentů, včetně Microsoft Office, PDF, CAD a dalších.
-### Mohu upravit vzhled vykreslených dokumentů?
-Ano, můžete přizpůsobit různé aspekty procesu vykreslování, jako je rozvržení stránky, vodoznak a rotace stránky.
-### Je GroupDocs.Viewer for .NET vhodný pro webové aplikace?
-GroupDocs.Viewer for .NET lze bez problémů integrovat do webových aplikací a poskytovat tak možnosti prohlížení dokumentů.
-### Nabízí GroupDocs.Viewer for .NET podporu pro mobilní platformy?
-Ano, GroupDocs.Viewer for .NET podporuje mobilní platformy, což vám umožňuje vytvářet aplikace s responzivními funkcemi pro prohlížení dokumentů.
-### Existuje komunitní fórum, kde mohu vyhledat pomoc s GroupDocs.Viewer pro .NET?
- Ano, můžete navštívit[Fórum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) klást otázky, sdílet nápady a komunikovat s ostatními uživateli a vývojáři.
+Integrace GroupDocs.Viewer pro .NET do vašich projektů vám umožní efektivně zpracovávat úlohy prohlížení dokumentů, což zvyšuje uživatelský komfort a produktivitu. Dodržováním podrobného návodu krok za krokem můžete bez problémů začlenit funkce vykreslování dokumentů do vašich .NET aplikací.
+## Často kladené otázky
+### Je GroupDocs.Viewer pro .NET kompatibilní se všemi formáty dokumentů?
+GroupDocs.Viewer pro .NET podporuje širokou škálu formátů dokumentů, včetně Microsoft Office, PDF, CAD a dalších.
+### Mohu si přizpůsobit vzhled vykreslených dokumentů?
+Ano, můžete si přizpůsobit různé aspekty procesu vykreslování, jako je rozvržení stránky, vodoznaky a rotace stránky.
+### Je GroupDocs.Viewer pro .NET vhodný pro webové aplikace?
+GroupDocs.Viewer pro .NET lze samozřejmě bez problémů integrovat do webových aplikací a poskytovat tak funkce prohlížení dokumentů.
+### Nabízí GroupDocs.Viewer pro .NET podporu pro mobilní platformy?
+Ano, GroupDocs.Viewer pro .NET podporuje mobilní platformy, což vám umožňuje vytvářet aplikace s responzivními funkcemi prohlížení dokumentů.
+### Existuje nějaké komunitní fórum, kde můžu vyhledat pomoc s GroupDocs.Viewer pro .NET?
+Ano, můžete navštívit [Fórum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) klást otázky, sdílet nápady a komunikovat s ostatními uživateli a vývojáři.

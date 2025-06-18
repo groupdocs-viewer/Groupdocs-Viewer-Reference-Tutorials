@@ -1,22 +1,22 @@
 ---
-title: Render Kolom dan Baris Tersembunyi
-linktitle: Render Kolom dan Baris Tersembunyi
-second_title: GroupDocs.Viewer .NET API
-description: Buka kunci data tersembunyi di spreadsheet dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Ikuti panduan langkah demi langkah kami untuk menampilkan kolom dan baris yang tersembunyi.
-weight: 13
-url: /id/net/spreadsheet-rendering-options/render-hidden-columns-rows/
+"description": "Buka data tersembunyi di spreadsheet dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengungkap kolom dan baris tersembunyi."
+"linktitle": "Render Kolom dan Baris Tersembunyi"
+"second_title": "API Penampil GroupDocs.NET"
+"title": "Render Kolom dan Baris Tersembunyi"
+"url": "/id/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
+"weight": 13
 ---
 
 # Render Kolom dan Baris Tersembunyi
 
 ## Perkenalan
-Dalam bidang visualisasi dokumen, GroupDocs.Viewer untuk .NET berdiri sebagai alat tangguh yang memfasilitasi rendering berbagai format dokumen dengan lancar. Salah satu kemampuan yang menarik adalah kemampuan untuk menampilkan kolom dan baris tersembunyi di dalam spreadsheet. Dalam tutorial ini, kami akan mempelajari langkah-langkah untuk membuka fitur ini dan mengeluarkan potensi data Anda.
+Dalam bidang visualisasi dokumen, GroupDocs.Viewer for .NET merupakan alat yang tangguh yang memfasilitasi rendering berbagai format dokumen dengan lancar. Salah satu kemampuan yang menarik adalah kemampuan untuk menampilkan kolom dan baris tersembunyi dalam spreadsheet. Dalam tutorial ini, kita akan membahas langkah-langkah untuk membuka fitur ini dan memaksimalkan potensi data Anda.
 ## Prasyarat
 Sebelum memulai perjalanan ini, pastikan Anda memiliki prasyarat berikut:
-- GroupDocs.Viewer untuk .NET: Pastikan Anda menginstal versi terbaru. Jika belum, Anda dapat mendownloadnya dari[situs web resmi](https://releases.groupdocs.com/viewer/net/).
-- File Dokumen: Siapkan contoh dokumen dalam format spreadsheet (misalnya, SAMPLE.XLSX) untuk bereksperimen dengan kolom dan baris tersembunyi.
+- GroupDocs.Viewer untuk .NET: Pastikan Anda telah menginstal versi terbaru. Jika belum, Anda dapat mengunduhnya dari [situs web resmi](https://releases.groupdocs.com/viewer/net/).
+- Berkas Dokumen: Siapkan dokumen contoh dalam format spreadsheet (misalnya, SAMPLE.XLSX) untuk bereksperimen dengan kolom dan baris tersembunyi.
 - Lingkungan Pengembangan: Siapkan lingkungan kerja, sebaiknya menggunakan Visual Studio atau IDE lain yang sesuai untuk pengembangan .NET.
-## Impor Namespace
+## Mengimpor Ruang Nama
 Dalam proyek .NET Anda, impor namespace yang diperlukan untuk memanfaatkan fungsionalitas GroupDocs.Viewer secara efektif:
 ```csharp
 using System;
@@ -28,7 +28,7 @@ using GroupDocs.Viewer.Options;
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Tentukan direktori keluaran tempat halaman HTML yang dirender akan disimpan. Sesuaikan format jalur file.
+Tentukan direktori keluaran tempat halaman HTML yang dirender akan disimpan. Sesuaikan format jalur file sebagaimana mestinya.
 ## Langkah 2: Inisialisasi Penampil dan Konfigurasikan Opsi
 ```csharp
 using (Viewer viewer = new Viewer("SAMPLE.XLSX"))
@@ -43,22 +43,22 @@ Buat instance Viewer dengan memberikan jalur ke dokumen spreadsheet Anda. Konfig
     viewer.View(options);
 }
 ```
-Panggil metode View pada objek penampil, dengan meneruskan opsi yang dikonfigurasi. Ini memulai proses rendering.
+Panggil metode View pada objek penampil, dengan meneruskan opsi yang dikonfigurasi. Ini akan memulai proses rendering.
 ## Langkah 4: Periksa Outputnya
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Verifikasi keberhasilan rendering dokumen sumber dan temukan hasilnya di direktori yang ditentukan.
+Verifikasi keberhasilan rendering dokumen sumber dan cari output dalam direktori yang ditentukan.
 ## Kesimpulan
-Membuka kunci kolom dan baris tersembunyi di spreadsheet Anda menjadi mudah dengan GroupDocs.Viewer untuk .NET. Tutorial ini telah membekali Anda dengan langkah-langkah penting untuk mengungkap data tersembunyi, memberikan tampilan dokumen Anda yang lebih komprehensif.
+Membuka kolom dan baris tersembunyi di lembar kerja Anda menjadi mudah dengan GroupDocs.Viewer untuk .NET. Tutorial ini telah membekali Anda dengan langkah-langkah penting untuk mengungkap data tersembunyi, sehingga memberikan tampilan dokumen Anda yang lebih komprehensif.
 ## Pertanyaan yang Sering Diajukan
 ### Bisakah saya merender kolom dan baris tersembunyi dalam format dokumen lain selain spreadsheet?
 Ya, GroupDocs.Viewer mendukung berbagai format dokumen, termasuk Word, PDF, dan PowerPoint, selain spreadsheet.
 ### Apakah ada batasan jumlah kolom dan baris tersembunyi yang dapat dirender?
-GroupDocs.Viewer secara efisien menangani rendering untuk berbagai kolom dan baris tersembunyi. Namun, kasus ekstrem dengan sejumlah besar data tersembunyi dapat memengaruhi performa.
-### Bisakah saya menyesuaikan format keluaran data yang dirender?
-Sangat! GroupDocs.Viewer memberikan opsi fleksibel untuk menyesuaikan keluaran, memungkinkan Anda menyesuaikan data yang diberikan dengan kebutuhan spesifik Anda.
+GroupDocs.Viewer menangani rendering secara efisien untuk berbagai kolom dan baris tersembunyi. Namun, kasus ekstrem dengan sejumlah besar data tersembunyi dapat memengaruhi kinerja.
+### Bisakah saya menyesuaikan format keluaran dari data yang ditampilkan?
+Tentu saja! GroupDocs.Viewer menyediakan opsi fleksibel untuk menyesuaikan output, yang memungkinkan Anda menyesuaikan data yang ditampilkan dengan kebutuhan spesifik Anda.
 ### Apakah ada pertimbangan lisensi untuk menggunakan GroupDocs.Viewer?
- Ya, pastikan Anda memiliki lisensi yang sesuai untuk penggunaan Anda. Jelajahi opsi lisensi di[Pembelian GroupDocs](https://purchase.groupdocs.com/buy) atau memperoleh a[izin sementara](https://purchase.groupdocs.com/temporary-license/) untuk pengujian.
-### Di mana saya dapat mencari bantuan atau terhubung dengan komunitas GroupDocs untuk mendapatkan dukungan?
- Mengunjungi[GroupDocs.Forum Penampil](https://forum.groupdocs.com/c/viewer/9) untuk dukungan, diskusi, dan interaksi komunitas.
+Ya, pastikan Anda memiliki lisensi yang sesuai untuk penggunaan Anda. Jelajahi opsi lisensi di [Pembelian GroupDocs](https://purchase.groupdocs.com/buy) atau mendapatkan [lisensi sementara](https://purchase.groupdocs.com/temporary-license/) untuk pengujian.
+### Di mana saya dapat mencari bantuan atau menghubungi komunitas GroupDocs untuk mendapatkan dukungan?
+Kunjungi [Forum Penampil GroupDocs](https://forum.groupdocs.com/c/viewer/9) untuk dukungan, diskusi, dan interaksi komunitas.

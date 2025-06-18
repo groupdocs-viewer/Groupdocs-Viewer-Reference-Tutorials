@@ -1,25 +1,25 @@
 ---
-title: Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
-linktitle: Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
-second_title: GroupDocs.Viewer .NET API
-description: Integrálja a GroupDocs.Viewer for .NET-et zökkenőmentesen alkalmazásaiba a hatékony dokumentummegtekintési lehetőségek érdekében. Növelje a felhasználói élményt testreszabható opciókkal.
-weight: 11
-url: /hu/net/rendering-email-messages/set-date-time-format-offset-email/
+"description": "Integrálja zökkenőmentesen a GroupDocs.Viewer for .NET alkalmazást alkalmazásaiba a hatékony dokumentummegtekintési funkciók érdekében. Javítsa a felhasználói élményt testreszabható beállításokkal."
+"linktitle": "Dátum/idő formátum és időzóna eltolás beállítása (e-mail)"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Dátum/idő formátum és időzóna eltolás beállítása (e-mail)"
+"url": "/hu/net/rendering-email-messages/set-date-time-format-offset-email/"
+"weight": 11
 ---
 
-# Dátum-idő formátum és időzóna eltolás beállítása (e-mail)
+# Dátum/idő formátum és időzóna eltolás beállítása (e-mail)
 
 
 ## Bevezetés
-GroupDocs.Viewer for .NET egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési képességeket .NET-alkalmazásaikba. A GroupDocs.Viewer segítségével a dokumentumformátumok széles skáláját jelenítheti meg, beleértve a PDF-eket, Microsoft Office dokumentumokat, képeket és még sok mást, közvetlenül az alkalmazáson belül, anélkül, hogy külső bővítményekre vagy megjelenítőkre lenne szüksége. Ebben az átfogó oktatóanyagban végigvezetjük a GroupDocs.Viewer for .NET beállításának folyamatán, feltárjuk annak funkcióit, és bemutatjuk, hogyan lehet hatékonyan felhasználni az alkalmazás dokumentummegtekintési képességeinek javítására.
+A GroupDocs.Viewer for .NET egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési funkciókat .NET alkalmazásaikba. A GroupDocs.Viewer segítségével számos dokumentumformátumot, többek között PDF-eket, Microsoft Office dokumentumokat, képeket és egyebeket jeleníthet meg közvetlenül az alkalmazáson belül, külső bővítmények vagy megjelenítők használata nélkül. Ebben az átfogó oktatóanyagban végigvezetjük a GroupDocs.Viewer for .NET beállításának folyamatán, megismerkedünk a funkcióival, és bemutatjuk, hogyan használhatja hatékonyan az alkalmazás dokumentummegtekintési képességeinek bővítésére.
 ## Előfeltételek
-Mielőtt belevágna ebbe az oktatóanyagba, győződjön meg arról, hogy beállította a következő előfeltételeket:
-1. Visual Studio: Győződjön meg arról, hogy a Visual Studio telepítve van a rendszeren. A GroupDocs.Viewer for .NET teljes mértékben kompatibilis a Visual Studióval, lehetővé téve a .NET-projektekbe való zökkenőmentes integrációt.
-2.  GroupDocs.Viewer for .NET: Töltse le és telepítse a GroupDocs.Viewer for .NET programot a[letöltési link](https://releases.groupdocs.com/viewer/net/). Kövesse a kapott telepítési utasításokat a könyvtár beállításához a fejlesztői környezetben.
-3. .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer megfelelő verziója telepítve van. A GroupDocs.Viewer for .NET támogatja a .NET-keretrendszer különféle verzióit, köztük a .NET Core-t és a .NET Standard-t.
+Mielőtt belemerülnél ebbe az oktatóanyagba, győződj meg arról, hogy a következő előfeltételek teljesülnek:
+1. Visual Studio: Győződjön meg róla, hogy a Visual Studio telepítve van a rendszerén. A GroupDocs.Viewer for .NET teljes mértékben kompatibilis a Visual Studio programmal, így zökkenőmentesen integrálható a .NET projektekbe.
+2. GroupDocs.Viewer .NET-hez: Töltse le és telepítse a GroupDocs.Viewer .NET-hez alkalmazást a következő helyről: [letöltési link](https://releases.groupdocs.com/viewer/net/)Kövesse a mellékelt telepítési utasításokat a könyvtár fejlesztői környezetében történő beállításához.
+3. .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer megfelelő verziója telepítve van. A GroupDocs.Viewer for .NET a .NET-keretrendszer számos verzióját támogatja, beleértve a .NET Core-t és a .NET Standardot is.
 
 ## Névterek importálása
-A GroupDocs.Viewer for .NET hatékony használatához importálnia kell a szükséges névtereket a projektbe. Kövesse az alábbi lépéseket a szükséges névterek importálásához:
+A GroupDocs.Viewer for .NET hatékony használatához importálnia kell a szükséges névtereket a projektjébe. A szükséges névterek importálásához kövesse az alábbi lépéseket:
 
 ```csharp
 using System;
@@ -28,50 +28,50 @@ using GroupDocs.Viewer.Options;
 ```
 
 
-Bontsuk fel a megadott példát több lépésre, hogy megértsük az egyes összetevőket és funkcióikat.
-## 1. lépés: Állítsa be a kimeneti könyvtárat és a fájl elérési útját
+Bontsuk le a bemutatott példát több lépésre, hogy megértsük az egyes komponenseket és azok funkcióit.
+## 1. lépés: Kimeneti könyvtár és fájlútvonal beállítása
 ```csharp
 string outputDirectory = "Your Document Directory";
 string filePath = Path.Combine(outputDirectory, "output.html");
 ```
-Ebben a lépésben meghatározzuk a kimeneti könyvtárat, ahová a renderelt dokumentumot menteni kell, és megadjuk a kimeneti HTML fájl elérési útját.
-## 2. lépés: Példányosítsa a Viewer objektumot
+Ebben a lépésben meghatározzuk a kimeneti könyvtárat, ahová a renderelt dokumentum mentésre kerül, és megadjuk a kimeneti HTML-fájl elérési útját.
+## 2. lépés: Viewer objektum példányosítása
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EML))
 ```
- Itt létrehozzuk a`Viewer` osztályban, paraméterként átadva a megtekinteni kívánt dokumentum (jelen esetben egy minta EML fájl) elérési útját.
-## 3. lépés: Adja meg a HTML nézet beállításait
+Itt létrehozunk egy új példányt a `Viewer` osztály, paraméterként átadva a megtekintendő dokumentum (jelen esetben egy minta EML fájl) elérési útját.
+## 3. lépés: HTML nézetbeállítások meghatározása
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(filePath);
 ```
-Ebben a lépésben konfiguráljuk a dokumentum-megjelenítés HTML-nézeti beállításait, megadva a renderelt HTML-dokumentum kimeneti fájljának elérési útját.
-## 4. lépés: Állítsa be a dátum és idő formátumát és az időzóna eltolását
+Ebben a lépésben konfiguráljuk a dokumentum renderelésének HTML nézetbeállításait, megadva a renderelt HTML dokumentum kimeneti fájl elérési útját.
+## 4. lépés: Dátum/idő formátum és időzóna eltolásának beállítása
 ```csharp
 options.EmailOptions.DateTimeFormat = "MM d yyyy HH:mm tt zzz";
 options.EmailOptions.TimeZoneOffset = new TimeSpan(1, 0, 0);
 ```
-Itt testreszabjuk az e-mail üzenetek dátum- és időformátumát, és beállítjuk az időzóna eltolását a kívánt időzónának megfelelően.
-## 5. lépés: Renderelje le a dokumentumot
+Itt testreszabhatjuk az e-mailek dátum- és időformátumát, és a kívánt időzónának megfelelően állítjuk be az időzóna-eltolást.
+## 5. lépés: Dokumentum renderelése
 ```csharp
 viewer.View(options);
 ```
- Végül hívjuk a`View` módszere a`Viewer` objektumot, átadva a konfigurált HTML nézetbeállításokat, hogy a dokumentumot HTML formátumba renderelje.
-## 6. lépés: Jelenítse meg a kimeneti könyvtárat
+Végül, hívjuk a `View` a módszer `Viewer` objektum, amely átadja a konfigurált HTML nézetbeállításokat a dokumentum HTML formátumba rendereléséhez.
+## 6. lépés: Kimeneti könyvtár megjelenítése
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Ez a lépés egyszerűen megjelenít egy üzenetet, amely jelzi a dokumentum sikeres megjelenítését, és megadja a kimeneti könyvtár elérési útját, ahol a renderelt HTML-dokumentum található.
+Ez a lépés egyszerűen egy üzenetet jelenít meg, amely jelzi a dokumentum sikeres renderelését, és megadja a kimeneti könyvtár elérési útját, ahol a renderelt HTML dokumentum található.
 
 ## Következtetés
-GroupDocs.Viewer for .NET robusztus megoldást kínál a dokumentummegtekintési képességek .NET-alkalmazásaiba való integrálására. Az oktatóanyagban ismertetett lépések követésével könnyedén beállíthatja a GroupDocs.Viewer programot, importálhatja a szükséges névtereket, és funkcióit használhatja a dokumentumok testreszabható opciókkal történő megjelenítésére. Függetlenül attól, hogy PDF-ekkel, Microsoft Office dokumentumokkal vagy más formátumokkal dolgozik, a GroupDocs.Viewer leegyszerűsíti a dokumentumok megtekintésének folyamatát, javítva az alkalmazások felhasználói élményét.
+A GroupDocs.Viewer for .NET robusztus megoldást kínál a dokumentummegtekintési funkciók integrálására a .NET alkalmazásokba. Az ebben az oktatóanyagban ismertetett lépéseket követve könnyedén beállíthatja a GroupDocs.Viewert, importálhatja a szükséges névtereket, és funkcióinak segítségével testreszabható beállításokkal jelenítheti meg a dokumentumokat. Akár PDF-ekkel, Microsoft Office-dokumentumokkal vagy más formátumokkal dolgozik, a GroupDocs.Viewer leegyszerűsíti a dokumentumok megtekintésének folyamatát, javítva az alkalmazások felhasználói élményét.
 ## GYIK
-### A GroupDocs.Viewer kompatibilis a .NET Core programmal?
-Igen, a GroupDocs.Viewer for .NET támogatja a .NET Core-t, lehetővé téve az alkalmazások platformok közötti kompatibilitását.
-### Testreszabhatom a renderelt dokumentumok megjelenését?
-Teljesen! A GroupDocs.Viewer különféle testreszabási lehetőségeket kínál, beleértve a nagyítási szinteket, az oldalelforgatást és még sok mást, hogy a megtekintési élményt az Ön preferenciái szerint szabja személyre.
-### Létezik próbaverzió tesztelési célból?
- Igen, letöltheti a GroupDocs.Viewer .NET ingyenes próbaverzióját a webhelyről[weboldal link](https://releases.groupdocs.com/viewer/net/) hogy vásárlás előtt értékelje tulajdonságait.
-### A GroupDocs.Viewer támogatja a jelszóval védett dokumentumok megjelenítését?
-Igen, a GroupDocs.Viewer beépített támogatással rendelkezik a jelszóval védett dokumentumok megjelenítéséhez, így biztosítva a biztonságos dokumentummegtekintést az alkalmazásokon belül.
-### Hol találok további támogatást vagy segítséget a GroupDocs.Viewer programhoz?
- Bármilyen technikai kérdéssel vagy segítséggel kapcsolatban keresse fel a GroupDocs.Viewer webhelyet[fórum](https://forum.groupdocs.com/c/viewer/9) vagy azonnali segítségért és útmutatásért forduljon ügyfélszolgálati csapatához.
+### Kompatibilis a GroupDocs.Viewer a .NET Core-ral?
+Igen, a GroupDocs.Viewer for .NET támogatja a .NET Core-t, lehetővé téve az alkalmazásai számára a platformfüggetlen kompatibilitást.
+### Testreszabhatom a megjelenített dokumentumok megjelenését?
+Abszolút! A GroupDocs.Viewer számos testreszabási lehetőséget kínál, beleértve a nagyítási szinteket, az oldal elforgatását és egyebeket, hogy a megtekintési élményt az oktatóanyagaid igényei szerint szabd testre.
+### Van elérhető próbaverzió tesztelési célokra?
+Igen, letöltheti a GroupDocs.Viewer for .NET ingyenes próbaverzióját a következő címről: [weboldal link](https://releases.groupdocs.com/viewer/net/) hogy vásárlás előtt felmérje a tulajdonságait.
+### A GroupDocs.Viewer támogatja a jelszóval védett dokumentumok renderelését?
+Igen, a GroupDocs.Viewer beépített támogatással rendelkezik a jelszóval védett dokumentumok rendereléséhez, biztosítva a dokumentumok biztonságos megtekintését az alkalmazásain belül.
+### Hol találok további támogatást vagy segítséget a GroupDocs.Viewerhez?
+Bármilyen technikai kérdéssel vagy segítséggel kapcsolatban látogassa meg a GroupDocs.Viewer weboldalt. [fórum](https://forum.groupdocs.com/c/viewer/9) vagy forduljon az ügyfélszolgálatukhoz gyors segítségért és útmutatásért.

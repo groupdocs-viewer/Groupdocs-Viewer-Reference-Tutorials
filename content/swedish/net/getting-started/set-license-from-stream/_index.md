@@ -1,47 +1,50 @@
 ---
-title: Ställ in licens från Stream
-linktitle: Ställ in licens från Stream
-second_title: GroupDocs.Viewer .NET API
-description: Förbättra dina .NET-applikationer med GroupDocs.Viewer för sömlös dokumentvisning. Följ vår steg-för-steg-guide och integrera kraftfulla dokumentvisningsmöjligheter utan ansträngning.
-weight: 11
-url: /sv/net/getting-started/set-license-from-stream/
+"description": "Förbättra dina .NET-applikationer med GroupDocs.Viewer för sömlös dokumentvisning. Följ vår steg-för-steg-guide och integrera kraftfulla dokumentvisningsfunktioner utan ansträngning."
+"linktitle": "Ange licens från ström"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Ange licens från ström"
+"url": "/sv/net/getting-started/set-license-from-stream/"
+"weight": 11
 ---
 
-# Ställ in licens från Stream
+# Ange licens från ström
 
 ## Introduktion
-Vill du ge dina .NET-applikationer avancerade dokumentvisningsmöjligheter? GroupDocs.Viewer för .NET erbjuder en heltäckande lösning för att sömlöst integrera dokumentvisningsfunktioner i dina projekt. I den här självstudien kommer vi att fördjupa oss i processen att utnyttja GroupDocs.Viewer för .NET för att berika dina applikationer med kraftfulla dokumentvisningsmöjligheter. 
-## Förutsättningar
-Innan vi dyker in i integrationsprocessen, se till att du har följande förutsättningar på plats:
-1. Grundläggande kunskaper om .NET-utveckling: Bekantskap med C# och .NET framework är viktigt för att följa med i denna handledning.
-   
-2.  GroupDocs.Viewer for .NET-paketet: Se till att du har laddat ner och installerat GroupDocs.Viewer for .NET-paketet. Du kan få det från[nedladdningslänk](https://releases.groupdocs.com/viewer/net/).
-3.  Tillgång till GroupDocs-dokumentation: Behåll[dokumentation](https://tutorials.groupdocs.com/viewer/net/) praktiskt som referens under integrationsprocessen.
+Vill du utöka dina .NET-applikationer med avancerade dokumentvisningsfunktioner? GroupDocs.Viewer för .NET erbjuder en omfattande lösning för att sömlöst integrera dokumentvisningsfunktioner i dina projekt. I den här handledningen går vi in på hur man använder GroupDocs.Viewer för .NET för att berika dina applikationer med kraftfulla dokumentvisningsfunktioner. 
 
-## Importera namnområden
-Till att börja med, importera de nödvändiga namnområdena till din .NET-applikation. Följ dessa steg:
+![Ställ in licens från Stream med GroupDocs.Viewer för .NET](/viewer/getting-started/set-license-from-stream.png)
+
+## Förkunskapskrav
+Innan vi går in i integrationsprocessen, se till att du har följande förutsättningar på plats:
+1. Grundläggande kunskaper om .NET-utveckling: Bekantskap med C# och .NET Framework är avgörande för att följa den här handledningen.
+   
+2. GroupDocs.Viewer för .NET-paketet: Se till att du har laddat ner och installerat GroupDocs.Viewer för .NET-paketet. Du kan hämta det från [nedladdningslänk](https://releases.groupdocs.com/viewer/net/).
+3. Åtkomst till GroupDocs-dokumentation: Behåll [dokumentation](https://tutorials.groupdocs.com/viewer/net/) praktiskt för handledningar under integrationsprocessen.
+
+## Importera namnrymder
+Börja med att importera de nödvändiga namnrymderna till din .NET-applikation. Följ dessa steg:
 ### Steg 1: Öppna ditt .NET-projekt.
 Se till att du har ditt .NET-projekt öppet i din föredragna utvecklingsmiljö.
-### Steg 2: Lägg till GroupDocs.Viewer-namnutrymme.
-Lägg till följande namnområde i din kodfil för att komma åt GroupDocs.Viewer-funktionerna:
+### Steg 2: Lägg till namnrymden GroupDocs.Viewer.
+I din kodfil lägger du till följande namnrymd för att komma åt GroupDocs.Viewer-funktionerna:
 ```csharp
 using System;
 using System.IO;
 ```
-## Ställ in licens från Stream
-Nästa steg innebär att ställa in licensen från en stream. Följ dessa detaljerade steg:
+## Ange licens från ström
+Nästa steg innebär att ställa in licensen från en ström. Följ dessa detaljerade steg:
 ### Steg 1: Definiera utdatakatalog.
-Ställ in katalogen där dina dokument ska lagras genom att definiera utdatakatalogen:
+Ange katalogen där dina dokument ska lagras genom att definiera utdatakatalogen:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-### Steg 2: Kontrollera licensfilens existens.
+### Steg 2: Kontrollera att licensfilen finns.
 Kontrollera om licensfilen finns i din projektkatalog:
 ```csharp
 if (File.Exists(Utils.LicensePath))
 ```
 ### Steg 3: Ställ in licens.
-Om licensfilen finns, ställ in licensen med den medföljande strömmen:
+Om licensfilen finns, ställ in licensen med hjälp av den angivna strömmen:
 ```csharp
 using (FileStream stream = File.OpenRead(Utils.LicensePath))
 {
@@ -49,8 +52,8 @@ using (FileStream stream = File.OpenRead(Utils.LicensePath))
     license.SetLicense(stream);
 }
 ```
-### Steg 4: Hantera licensfrånvaro.
-Om licensfilen inte hittas, tillhandahåll instruktioner för att få en licens:
+### Steg 4: Hantera frånvaro av licens.
+Om licensfilen inte hittas, ge instruktioner för att erhålla en licens:
 ```csharp
 else
 {
@@ -62,15 +65,15 @@ else
 ```
 
 ## Slutsats
-Grattis! Du har framgångsrikt lärt dig hur du integrerar GroupDocs.Viewer för .NET i dina applikationer. Med detta kraftfulla verktyg kan du nu enkelt se olika dokumentformat inom dina .NET-projekt, vilket förbättrar användarupplevelsen och produktiviteten.
-## FAQ's
+Grattis! Du har nu lärt dig hur du integrerar GroupDocs.Viewer för .NET i dina applikationer. Med det här kraftfulla verktyget kan du nu enkelt visa olika dokumentformat i dina .NET-projekt, vilket förbättrar användarupplevelsen och produktiviteten.
+## Vanliga frågor
 ### Behöver jag en licens för att använda GroupDocs.Viewer för .NET?
 Ja, du behöver en licens för att använda GroupDocs.Viewer för .NET. Du kan få antingen en tillfällig eller permanent licens från GroupDocs webbplats.
-### Kan jag integrera GroupDocs.Viewer i min ASP.NET-applikation?
+### Kan jag integrera GroupDocs.Viewer i mitt ASP.NET-program?
 Absolut! GroupDocs.Viewer för .NET integreras sömlöst i både skrivbords- och webbapplikationer, inklusive ASP.NET.
 ### Vilka dokumentformat stöds av GroupDocs.Viewer?
-GroupDocs.Viewer stöder ett brett utbud av dokumentformat, inklusive PDF, Microsoft Office (Word, Excel, PowerPoint), bilder och mer.
+GroupDocs.Viewer stöder en mängd olika dokumentformat, inklusive PDF, Microsoft Office (Word, Excel, PowerPoint), bilder och mer.
 ### Är GroupDocs.Viewer kompatibel med .NET Core?
 Ja, GroupDocs.Viewer för .NET är kompatibel med både .NET Framework och .NET Core.
 ### Kan jag anpassa visningsgränssnittet efter programmets tema?
-Ja, GroupDocs.Viewer erbjuder omfattande anpassningsalternativ, så att du kan skräddarsy visningsgränssnittet så att det matchar din applikations tema sömlöst.
+Ja, GroupDocs.Viewer erbjuder omfattande anpassningsalternativ, vilket gör att du kan skräddarsy visningsgränssnittet så att det matchar ditt programs tema sömlöst.

@@ -1,23 +1,23 @@
 ---
-title: Vykreslování čísel
-linktitle: Vykreslování čísel
-second_title: GroupDocs.Viewer .NET API
-description: Prozkoumejte sílu Groupdocs.Viewer pro .NET při bezproblémovém vykreslování souborů Numbers. Převeďte do HTML, JPG, PNG a PDF bez námahy.
-weight: 15
-url: /cs/net/spreadsheet-rendering-options/rendering-numbers/
+"description": "Prozkoumejte sílu Groupdocs.Viewer pro .NET pro bezproblémové vykreslování souborů Numbers. Bez námahy převádějte do HTML, JPG, PNG a PDF."
+"linktitle": "Vykreslování čísel"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslování čísel"
+"url": "/cs/net/spreadsheet-rendering-options/rendering-numbers/"
+"weight": 15
 ---
 
 # Vykreslování čísel
 
-## Úvod
-Vítejte v tomto podrobném návodu k vykreslování souborů Numbers pomocí Groupdocs.Viewer pro .NET. Ať už jste zkušený vývojář nebo začátečník, tato příručka vás provede procesem převodu dokumentů Numbers do různých formátů. Groupdocs.Viewer for .NET je výkonný nástroj, který vám umožňuje bezproblémově integrovat možnosti prohlížení dokumentů do vašich aplikací .NET.
+## Zavedení
+Vítejte v tomto podrobném tutoriálu o vykreslování souborů Numbers pomocí Groupdocs.Viewer pro .NET. Ať už jste zkušený vývojář nebo začátečník, tento průvodce vás provede procesem převodu dokumentů Numbers do různých formátů. Groupdocs.Viewer pro .NET je výkonný nástroj, který vám umožňuje bezproblémově integrovat funkce prohlížení dokumentů do vašich .NET aplikací.
 ## Předpoklady
-Než se pustíte do výukového programu, ujistěte se, že máte splněny následující předpoklady:
-- Pracovní znalost vývoje C# a .NET.
--  Nainstalovaná knihovna Groupdocs.Viewer for .NET. Můžete si jej stáhnout[tady](https://releases.groupdocs.com/viewer/net/).
-- Cesta k adresáři vašeho dokumentu, kam budou uloženy výstupní soubory.
+Než se pustíte do tutoriálu, ujistěte se, že máte splněny následující předpoklady:
+- Praktická znalost vývoje v C# a .NET.
+- Knihovna Groupdocs.Viewer pro .NET je nainstalována. Můžete si ji stáhnout. [zde](https://releases.groupdocs.com/viewer/net/).
+- Cesta k adresáři dokumentů, kam budou uloženy výstupní soubory.
 ## Importovat jmenné prostory
-Ujistěte se, že ve svém projektu C# importujete potřebné jmenné prostory pro použití knihovny Groupdocs.Viewer:
+Ve vašem projektu C# se ujistěte, že jste importovali potřebné jmenné prostory pro použití knihovny Groupdocs.Viewer:
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -25,13 +25,13 @@ using System.Text;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Krok 1: Nastavte výstupní adresář
-Než začnete vykreslovat, definujte výstupní adresář, kam se budou ukládat převedené soubory. Nahraďte „Adresář vašich dokumentů“ skutečnou cestou:
+## Krok 1: Nastavení výstupního adresáře
+Než začnete s vykreslováním, definujte výstupní adresář, kam budou převedené soubory uloženy. Nahraďte „Adresář dokumentů“ skutečnou cestou:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 ## Krok 2: Vykreslení do vícestránkového HTML
-K převodu souboru Numbers na vícestránkový HTML použijte následující kód:
+Pomocí následujícího kódu převeďte soubor Numbers do vícestránkového HTML:
 ```csharp
 string pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.html");
 using (Viewer viewer = new Viewer("SAMPLE.NUMBERS"))
@@ -70,17 +70,17 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
     viewer.View(options);
 }
 ```
-Gratulujeme! Pomocí Groupdocs.Viewer for .NET jste úspěšně vykreslili soubory Numbers do různých formátů.
+Gratulujeme! Úspěšně jste vykreslili soubory Numbers do různých formátů pomocí Groupdocs.Viewer pro .NET.
 ## Závěr
-V tomto tutoriálu jsme probrali základy vykreslování souborů Numbers pomocí Groupdocs.Viewer pro .NET. Tato výkonná knihovna poskytuje bezproblémovou integraci pro prohlížení a konverzi dokumentů ve vašich aplikacích .NET.
-## Nejčastější dotazy
+tomto tutoriálu jsme se seznámili se základy vykreslování souborů Numbers pomocí Groupdocs.Viewer pro .NET. Tato výkonná knihovna poskytuje bezproblémovou integraci pro prohlížení a převod dokumentů ve vašich .NET aplikacích.
+## Často kladené otázky
 ### Mohu použít Groupdocs.Viewer pro .NET s jinými typy dokumentů?
 Ano, Groupdocs.Viewer podporuje širokou škálu formátů dokumentů, včetně Wordu, Excelu, PDF a dalších.
-### Je k dispozici dočasná licence pro účely testování?
- Ano, můžete získat dočasnou licenci[tady](https://purchase.groupdocs.com/temporary-license/) pro testování.
+### Je k dispozici dočasná licence pro testovací účely?
+Ano, můžete získat dočasnou licenci [zde](https://purchase.groupdocs.com/temporary-license/) pro testování.
 ### Kde najdu podporu pro Groupdocs.Viewer pro .NET?
- Navštivte[Fórum Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) za pomoc a diskuze.
-### Jak si koupím plnou verzi Groupdocs.Viewer pro .NET?
- Můžete si zakoupit plnou verzi[tady](https://purchase.groupdocs.com/buy).
+Navštivte [Fórum Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) za pomoc a diskuzi.
+### Jak si mohu zakoupit plnou verzi Groupdocs.Viewer pro .NET?
+Plnou verzi si můžete zakoupit [zde](https://purchase.groupdocs.com/buy).
 ### Je k dispozici bezplatná zkušební verze?
- Ano, můžete prozkoumat bezplatnou zkušební verzi[tady](https://releases.groupdocs.com/).
+Ano, můžete si vyzkoušet bezplatnou zkušební verzi [zde](https://releases.groupdocs.com/).

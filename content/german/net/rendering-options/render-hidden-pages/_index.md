@@ -1,22 +1,22 @@
 ---
-title: Ausgeblendete Seiten rendern
-linktitle: Ausgeblendete Seiten rendern
-second_title: GroupDocs.Viewer .NET-API
-description: Erweitern Sie Ihre .NET-Anwendung mit GroupDocs.Viewer für eine nahtlose Dokumentenwiedergabe. Befolgen Sie unsere Schritt-für-Schritt-Anleitung, um versteckte Seiten mühelos zu rendern.
-weight: 15
-url: /de/net/rendering-options/render-hidden-pages/
+"description": "Optimieren Sie Ihre .NET-Anwendung mit GroupDocs.Viewer für nahtloses Dokument-Rendering. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um versteckte Seiten mühelos darzustellen."
+"linktitle": "Versteckte Seiten rendern"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Versteckte Seiten rendern"
+"url": "/de/net/rendering-options/render-hidden-pages/"
+"weight": 15
 ---
 
-# Ausgeblendete Seiten rendern
+# Versteckte Seiten rendern
 
 ## Einführung
-In der Welt der .NET-Entwicklung ist die effiziente Verwaltung und Anzeige von Dokumenten von entscheidender Bedeutung. Ob für den internen Gebrauch, Kundenpräsentationen oder Webanwendungen – die Möglichkeit, verschiedene Dokumentformate nahtlos anzeigen zu können, ist eine Notwendigkeit. Hier kommt GroupDocs.Viewer für .NET ins Spiel. Mit seinen leistungsstarken Funktionen und der intuitiven Benutzeroberfläche vereinfacht GroupDocs.Viewer das Rendern von Dokumenten in Ihren .NET-Anwendungen.
+In der .NET-Entwicklung ist die effiziente Verwaltung und Anzeige von Dokumenten entscheidend. Ob für den internen Gebrauch, Kundenpräsentationen oder Webanwendungen – die nahtlose Anzeige verschiedener Dokumentformate ist unerlässlich. Hier kommt GroupDocs.Viewer für .NET ins Spiel. Mit seinen leistungsstarken Funktionen und der intuitiven Benutzeroberfläche vereinfacht GroupDocs.Viewer die Dokumentdarstellung in Ihren .NET-Anwendungen.
 ## Voraussetzungen
-Bevor Sie GroupDocs.Viewer für .NET verwenden, stellen Sie sicher, dass Sie über Folgendes verfügen:
-### 1. Kenntnisse der .NET-Entwicklung
-Vertrautheit mit der C#-Programmierung und dem .NET-Framework ist unerlässlich, um GroupDocs.Viewer effektiv in Ihren Anwendungen nutzen zu können.
+Bevor Sie mit der Verwendung von GroupDocs.Viewer für .NET beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+### 1. Kenntnisse in der .NET-Entwicklung
+Um GroupDocs.Viewer effektiv in Ihren Anwendungen nutzen zu können, sind Kenntnisse in der C#-Programmierung und dem .NET-Framework unerlässlich.
 ### 2. Installation von GroupDocs.Viewer
- Sie müssen GroupDocs.Viewer für .NET herunterladen und installieren. Sie können es hier herunterladen[Webseite](https://releases.groupdocs.com/viewer/net/).
+Sie müssen GroupDocs.Viewer für .NET herunterladen und installieren. Sie können es von der [Webseite](https://releases.groupdocs.com/viewer/net/).
 ### 3. Dokumentdateien
 Bereiten Sie die Dokumentdateien vor, die Sie rendern möchten. GroupDocs.Viewer unterstützt verschiedene Formate wie PDF, Microsoft Word, Excel, PowerPoint und mehr.
 
@@ -32,7 +32,7 @@ Definieren Sie zunächst das Verzeichnis, in dem Sie die gerenderten Seiten spei
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Schritt 2: Definieren Sie das Format des Seitendateipfads
+## Schritt 2: Definieren Sie das Auslagerungsdateipfadformat
 Geben Sie das Format für die Dateipfade jeder gerenderten Seite an:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
@@ -45,14 +45,14 @@ using (Viewer viewer = new Viewer("Path_to_Your_Document"))
     // Hier werden Rendering-Optionen angewendet
 }
 ```
-## Schritt 4: Konfigurieren Sie die HTML-Ansichtsoptionen
+## Schritt 4: HTML-Ansichtsoptionen konfigurieren
 Definieren Sie die Optionen zum Rendern der HTML-Ansicht und geben Sie an, ob ausgeblendete Seiten gerendert werden sollen:
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.RenderHiddenPages = true;
 ```
 ## Schritt 5: Dokument rendern
- Rufen Sie die auf`View` Methode des Viewer-Objekts und übergeben Sie die Rendering-Optionen:
+Rufen Sie den `View` Methode des Viewer-Objekts und übergeben Sie die Rendering-Optionen:
 ```csharp
 viewer.View(options);
 ```
@@ -63,15 +63,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ```
 
 ## Abschluss
-GroupDocs.Viewer für .NET bietet eine nahtlose Lösung zum Rendern von Dokumenten in .NET-Anwendungen. Wenn Sie die in diesem Tutorial beschriebenen Schritte befolgen, können Sie mit nur wenigen Codezeilen ganz einfach ausgeblendete Seiten aus verschiedenen Dokumentformaten rendern.
-## FAQs
+GroupDocs.Viewer für .NET bietet eine nahtlose Lösung zum Rendern von Dokumenten in .NET-Anwendungen. Mit den in diesem Tutorial beschriebenen Schritten können Sie versteckte Seiten aus verschiedenen Dokumentformaten mit nur wenigen Codezeilen problemlos rendern.
+## Häufig gestellte Fragen
 ### Kann GroupDocs.Viewer andere Dokumente als PowerPoint-Präsentationen rendern?
 Ja, GroupDocs.Viewer unterstützt eine Vielzahl von Dokumentformaten, darunter PDF, Word, Excel und mehr.
 ### Ist GroupDocs.Viewer mit allen Versionen von .NET kompatibel?
-GroupDocs.Viewer ist mit den meisten Versionen des .NET Frameworks kompatibel und gewährleistet so Flexibilität für Entwickler.
+GroupDocs.Viewer ist mit den meisten Versionen des .NET-Frameworks kompatibel und gewährleistet so Flexibilität für Entwickler.
 ### Kann ich die Rendering-Optionen entsprechend den Anforderungen meiner Anwendung anpassen?
-Auf jeden Fall bietet GroupDocs.Viewer verschiedene Optionen zur Anpassung, sodass Entwickler den Rendering-Prozess nach Bedarf anpassen können.
+Auf jeden Fall. GroupDocs.Viewer bietet verschiedene Optionen zur Anpassung, sodass Entwickler den Rendering-Prozess nach Bedarf anpassen können.
 ### Gibt es eine Testversion zum Testen vor dem Kauf?
-Ja, Sie können eine kostenlose Testversion nutzen[Webseite](https://releases.groupdocs.com/) um die Fähigkeiten von GroupDocs.Viewer zu bewerten.
-### Wo kann ich Hilfe suchen, wenn ich auf Probleme stoße oder Fragen zu GroupDocs.Viewer habe?
- Sie können das GroupDocs.Viewer-Forum besuchen[GroupDocs-Foren](https://forum.groupdocs.com/c/viewer/9) um Fragen zu stellen und mit der Community um Unterstützung zu bitten.
+Ja, Sie können eine kostenlose Testversion nutzen von der [Webseite](https://releases.groupdocs.com/) um die Fähigkeiten von GroupDocs.Viewer zu bewerten.
+### Wo kann ich Hilfe erhalten, wenn ich auf Probleme stoße oder Fragen zu GroupDocs.Viewer habe?
+Sie können das GroupDocs.Viewer-Forum besuchen auf [GroupDocs-Foren](https://forum.groupdocs.com/c/viewer/9) um Fragen zu stellen und mit der Community in Kontakt zu treten, um Unterstützung zu erhalten.

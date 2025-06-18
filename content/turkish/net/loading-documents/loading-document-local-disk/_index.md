@@ -1,37 +1,40 @@
 ---
-title: Belgeleri Yerel Diskten Yükleme
-linktitle: Belgeleri Yerel Diskten Yükleme
-second_title: GroupDocs.Viewer .NET API'si
-description: Groupdocs.Viewer for .NET'i kullanarak yerel diskinizdeki belgeleri sorunsuz bir şekilde nasıl oluşturacağınızı öğrenin. .NET uygulamalarınızı verimli belgelerle geliştirin.
-weight: 10
-url: /tr/net/loading-documents/loading-document-local-disk/
+"description": "Groupdocs.Viewer for .NET kullanarak yerel diskinizdeki belgeleri sorunsuz bir şekilde nasıl oluşturacağınızı öğrenin. .NET uygulamalarınızı verimli belgelerle geliştirin."
+"linktitle": "Yerel Diskten Belgeleri Yükle"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Yerel Diskten Belgeleri Yükle"
+"url": "/tr/net/loading-documents/loading-document-local-disk/"
+"weight": 10
 ---
 
-# Belgeleri Yerel Diskten Yükleme
+# Yerel Diskten Belgeleri Yükle
 
 ## giriiş
-Günümüzün dijital çağında, çeşitli uygulamalar için verimli belge oluşturma çok önemlidir. Groupdocs.Viewer for .NET, belgeleri doğrudan yerel diskinizden işlemek için güçlü bir çözüm sunar. Bu öğreticide, Groupdocs.Viewer for .NET'i kullanarak yerel diskinizden belge yükleme işlemi boyunca size rehberlik edeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz, belge oluşturmayı .NET uygulamalarınıza sorunsuz bir şekilde entegre etmenize yardımcı olacaktır.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-1.  .NET için Groupdocs.Viewer: En son sürümü şuradan indirin ve yükleyin:[Burada](https://releases.groupdocs.com/viewer/net/).
+Günümüzün dijital çağında, çeşitli uygulamalar için verimli belge oluşturma olmazsa olmazdır. Groupdocs.Viewer for .NET, belgeleri doğrudan yerel diskinizden oluşturmak için güçlü bir çözüm sunar. Bu eğitimde, Groupdocs.Viewer for .NET kullanarak yerel diskinizden belge yükleme sürecinde size rehberlik edeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz, belge oluşturmayı .NET uygulamalarınıza sorunsuz bir şekilde entegre etmenize yardımcı olacaktır.
+
+![GroupDocs.Viewer .NET ile Yerel Diskten Belgeleri Yükleyin](/viewer/loading-documents/load-documents-from-local-disk.png)
+
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+1. Groupdocs.Viewer for .NET: En son sürümü şu adresten indirin ve yükleyin: [Burada](https://releases.groupdocs.com/viewer/net/).
 2. .NET Geliştirme Ortamı: Sisteminizde çalışan bir .NET geliştirme ortamının kurulu olduğundan emin olun.
-3. Yerel Belgeler: Oluşturmak istediğiniz belgelerin yerel olarak diskinizde saklanmasını sağlayın.
+3. Yerel Belgeler: Oluşturmak istediğiniz belgeleri yerel olarak diskinizde saklayın.
 
 ## Ad Alanlarını İçe Aktar
-Öncelikle Groupdocs.Viewer for .NET'in işlevlerine erişmek için gerekli ad alanlarını içe aktaralım.
+Öncelikle .NET için Groupdocs.Viewer'ın işlevlerine erişmek için gerekli ad alanlarını içe aktaralım.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## 1. Adım: Belgeleri Yerel Diskten Yükleme
-İşlenen HTML sayfalarının kaydedileceği çıktı dizinini ayarlayarak başlayın.
+## Adım 1: Yerel Diskten Belgeleri Yükle
+Öncelikle işlenmiş HTML sayfalarının kaydedileceği çıktı dizinini ayarlayarak başlayalım.
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## Adım 2: Görüntüleyiciyi Başlatın ve Belgeleri Oluşturun
-Viewer nesnesini belgenin yolu ile başlatın ve HTML görünüm seçeneklerini kullanarak işleyin.
+## Adım 2: Görüntüleyiciyi Başlatın ve Belgeleri İşleyin
+Viewer nesnesini belgenin yoluyla başlatın ve HTML görünüm seçeneklerini kullanarak işleyin.
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_Your_Document"))
 {
@@ -39,22 +42,22 @@ using (Viewer viewer = new Viewer("Path_to_Your_Document"))
     viewer.View(options);
 }
 ```
-## Adım 3: Ekran Çıkışı
-Oluşturma tamamlandığında, kaynak belgenin başarıyla oluşturulduğunu ve çıktı dosyalarının konumunu belirten bir mesaj görüntüleyin.
+## Adım 3: Çıktıyı Görüntüle
+İşleme tamamlandıktan sonra, kaynak belgenin başarıyla işlendiğini ve çıktı dosyalarının konumunu belirten bir mesaj görüntülenir.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Çözüm
-Tebrikler! Groupdocs.Viewer for .NET'i kullanarak yerel diskinizden nasıl belge yükleyeceğinizi başarıyla öğrendiniz. Bu güçlü araç, .NET uygulamalarınızda belge işlemeye yönelik bir olasılıklar dünyasının kapılarını açar.
-## SSS'ler
-### Groupdocs.Viewer for .NET'i kullanarak farklı formatlardaki belgeleri işleyebilir miyim?
-Evet, Groupdocs.Viewer for .NET, DOCX, PDF, XLSX, PPTX ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
-### Groupdocs.Viewer for .NET tüm .NET çerçeveleriyle uyumlu mu?
-Groupdocs.Viewer for .NET; .NET Core, .NET Framework ve .NET Standard dahil çoğu .NET çerçevesiyle uyumludur.
-### Belgelerimin işleme seçeneklerini özelleştirebilir miyim?
+Tebrikler! Groupdocs.Viewer for .NET kullanarak yerel diskinizden belgeleri nasıl yükleyeceğinizi başarıyla öğrendiniz. Bu güçlü araç, .NET uygulamalarınızda belge oluşturma için bir olasılıklar dünyasının kapılarını açar.
+## SSS
+### Groupdocs.Viewer for .NET kullanarak farklı formatlardaki belgeleri işleyebilir miyim?
+Evet, Groupdocs.Viewer for .NET DOCX, PDF, XLSX, PPTX ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### Groupdocs.Viewer for .NET tüm .NET framework'leriyle uyumlu mudur?
+Groupdocs.Viewer for .NET, .NET Core, .NET Framework ve .NET Standard dahil olmak üzere çoğu .NET framework'üyle uyumludur.
+### Belgelerim için oluşturma seçeneklerini özelleştirebilir miyim?
 Kesinlikle! Groupdocs.Viewer for .NET, işleme sürecini özel gereksinimlerinize göre uyarlamanıza olanak tanıyan kapsamlı özelleştirme seçenekleri sunar.
-### Groupdocs.Viewer for .NET'in deneme sürümü mevcut mu?
-Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.groupdocs.com/).
-### Groupdocs.Viewer for .NET için desteği veya ek kaynakları nerede bulabilirim?
- Destek ve ek kaynaklar için Groupdocs.Viewer for .NET'i ziyaret edin.[forum](https://forum.groupdocs.com/c/viewer/9).
+### Groupdocs.Viewer for .NET için deneme sürümü mevcut mu?
+Evet, ücretsiz deneme sürümünü şu adresten indirebilirsiniz: [Burada](https://releases.groupdocs.com/).
+### Groupdocs.Viewer for .NET için destek veya ek kaynakları nerede bulabilirim?
+Destek ve ek kaynaklar için .NET için Groupdocs.Viewer'ı ziyaret edin [forum](https://forum.groupdocs.com/c/viewer/9).

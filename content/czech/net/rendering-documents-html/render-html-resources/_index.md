@@ -1,29 +1,29 @@
 ---
-title: Render s vloženými nebo externími zdroji
-linktitle: Render s vloženými nebo externími zdroji
-second_title: GroupDocs.Viewer .NET API
-description: Vylepšete prohlížení .NET dokumentů pomocí GroupDocs.Viewer pro bezproblémové vykreslování. Postupujte podle našeho výukového programu pro efektivní integraci a vynikající uživatelskou zkušenost.
-weight: 12
-url: /cs/net/rendering-documents-html/render-html-resources/
+"description": "Vylepšete prohlížení dokumentů .NET pomocí GroupDocs.Viewer pro bezproblémové vykreslování. Pro efektivní integraci a vynikající uživatelský komfort se řiďte naším tutoriálem."
+"linktitle": "Renderování s vloženými nebo externími zdroji"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Renderování s vloženými nebo externími zdroji"
+"url": "/cs/net/rendering-documents-html/render-html-resources/"
+"weight": 12
 ---
 
-# Render s vloženými nebo externími zdroji
+# Renderování s vloženými nebo externími zdroji
 
-## Úvod
+## Zavedení
 
-Ve světě vývoje .NET je efektivní prohlížení dokumentů klíčovým aspektem mnoha aplikací. GroupDocs.Viewer for .NET poskytuje výkonné řešení pro vykreslování dokumentů s vloženými nebo externími zdroji. V tomto tutoriálu prozkoumáme, jak využít GroupDocs.Viewer k bezproblémovému vykreslování dokumentů, přičemž každý krok rozebereme pro jasnost a porozumění.
+Ve světě vývoje v .NET je efektivní prohlížení dokumentů klíčovým aspektem mnoha aplikací. GroupDocs.Viewer pro .NET poskytuje výkonné řešení pro vykreslování dokumentů s vloženými nebo externími zdroji. V tomto tutoriálu se podíváme na to, jak využít GroupDocs.Viewer k bezproblémovému vykreslování dokumentů, a pro přehlednost a pochopení si jednotlivé kroky rozebereme podrobněji.
 
 ## Předpoklady
 
-Než se ponoříte do výukového programu, ujistěte se, že máte následující předpoklady:
+Než se pustíte do tutoriálu, ujistěte se, že máte následující předpoklady:
 
-1. Základní pochopení vývoje .NET: Je nutná znalost programovacího jazyka C# a frameworku .NET.
-2.  Instalace GroupDocs.Viewer pro .NET: Stáhněte a nainstalujte GroupDocs.Viewer pro .NET z[tady](https://releases.groupdocs.com/viewer/net/).
-3. Soubor dokumentu k vykreslení: Připravte vzorový soubor dokumentu (např. DOCX, PDF) pro vykreslení.
+1. Základní znalost vývoje v .NET: Znalost programovacího jazyka C# a frameworku .NET je nezbytná.
+2. Instalace GroupDocs.Viewer pro .NET: Stáhněte a nainstalujte GroupDocs.Viewer pro .NET z [zde](https://releases.groupdocs.com/viewer/net/).
+3. Soubor dokumentu k vykreslení: Připravte si vzorový soubor dokumentu (např. DOCX, PDF) k vykreslení.
 
 ## Importovat jmenné prostory
 
-Nejprve importujme potřebné jmenné prostory pro náš projekt .NET:
+Nejprve si importujme potřebné jmenné prostory pro náš .NET projekt:
 
 ```csharp
 using GroupDocs.Viewer;
@@ -31,42 +31,42 @@ using GroupDocs.Viewer.Options;
 using System.IO;
 ```
 
-Nyní si rozdělme proces vykreslování dokumentu s vloženými nebo externími zdroji do zvládnutelných kroků:
+Nyní si rozdělme proces vykreslování dokumentu s vloženými nebo externími zdroji na zvládnutelné kroky:
 
-## Krok 1: Definujte výstupní adresář
+## Krok 1: Definování výstupního adresáře
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-Zadejte adresář, kam chcete ukládat vykreslené HTML stránky.
+Zadejte adresář, kam chcete uložit vykreslené stránky HTML.
 
-## Krok 2: Definujte formát cesty k souboru stránky
+## Krok 2: Definování formátu cesty k souboru stránky
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 
-Nastavte formát cesty k souboru, kam se uloží každá vykreslená stránka.`{0}` je zástupný symbol pro číslo stránky.
+Nastavte formát cesty k souboru, kam bude uložena každá vykreslená stránka. `{0}` je zástupný symbol pro číslo stránky.
 
-## Krok 3: Inicializujte instanci prohlížeče
+## Krok 3: Inicializace instance prohlížeče
 
 ```csharp
 using (Viewer viewer = new Viewer("YourDocumentFilePath"))
 {
-    // Zde je inicializační kód prohlížeče
+    // Sem se přidává inicializační kód prohlížeče
 }
 ```
 
 Vytvořte instanci prohlížeče předáním cesty k souboru dokumentu, který má být vykreslen.
 
-## Krok 4: Nakonfigurujte možnosti zobrazení HTML
+## Krok 4: Konfigurace možností zobrazení HTML
 
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
 
-Nakonfigurujte volby zobrazení HTML, určete formát pro vložené prostředky a formát cesty k souboru stránky.
+Nakonfigurujte možnosti zobrazení HTML a určete formát pro vložené zdroje a formát cesty k souboru stránky.
 
 ## Krok 5: Vykreslení dokumentu
 
@@ -74,9 +74,9 @@ Nakonfigurujte volby zobrazení HTML, určete formát pro vložené prostředky 
 viewer.View(options);
 ```
 
- Vyvolat`View` metoda na instanci Viewer, předání nakonfigurovaných voleb zobrazení HTML.
+Vyvolat `View` metoda na instanci prohlížeče, která předá nakonfigurované možnosti zobrazení HTML.
 
-## Krok 6: Zobrazte cestu výstupního adresáře
+## Krok 6: Zobrazení cesty k výstupnímu adresáři
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in: {outputDirectory}");
@@ -86,26 +86,26 @@ Vytiskněte zprávu o úspěšném vykreslení spolu s cestou k výstupnímu adr
 
 ## Závěr
 
-GroupDocs.Viewer for .NET zjednodušuje proces vykreslování dokumentů pomocí vestavěných nebo externích zdrojů a zlepšuje možnosti prohlížení dokumentů v aplikacích .NET. Podle kroků popsaných v tomto kurzu mohou vývojáři bezproblémově integrovat funkce vykreslování dokumentů do svých projektů a poskytovat uživatelům plynulé a efektivní prohlížení dokumentů.
+GroupDocs.Viewer pro .NET zjednodušuje proces vykreslování dokumentů s vloženými nebo externími zdroji a vylepšuje možnosti prohlížení dokumentů v aplikacích .NET. Dodržováním kroků popsaných v tomto tutoriálu mohou vývojáři bezproblémově integrovat funkce vykreslování dokumentů do svých projektů a poskytnout uživatelům plynulé a efektivní prohlížení dokumentů.
 
-## FAQ
+## Často kladené otázky
 
-### Otázka: Je GroupDocs.Viewer for .NET kompatibilní s různými formáty dokumentů?
+### Otázka: Je GroupDocs.Viewer pro .NET kompatibilní s různými formáty dokumentů?
 
-Odpověď: Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně DOCX, PDF, XLSX a dalších.
+A: Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně DOCX, PDF, XLSX a dalších.
 
-### Otázka: Mohu přizpůsobit možnosti vykreslování podle svých požadavků?
+### Otázka: Mohu si přizpůsobit možnosti vykreslování podle svých požadavků?
 
-A: Rozhodně, GroupDocs.Viewer poskytuje rozsáhlé možnosti pro konfiguraci procesu vykreslování tak, aby vyhovoval specifickým potřebám.
+A: Rozhodně, GroupDocs.Viewer nabízí rozsáhlé možnosti pro konfiguraci procesu vykreslování tak, aby splňoval specifické potřeby.
 
-### Otázka: Je k dispozici bezplatná zkušební verze pro GroupDocs.Viewer pro .NET?
+### Otázka: Je k dispozici bezplatná zkušební verze GroupDocs.Viewer pro .NET?
 
- Odpověď: Ano, můžete využít bezplatnou zkušební verzi[tady](https://releases.groupdocs.com/).
+A: Ano, můžete využít bezplatnou zkušební verzi od [zde](https://releases.groupdocs.com/).
 
 ### Otázka: Jak mohu získat podporu nebo pomoc s integrací GroupDocs.Viewer?
 
- Odpověď: Pomoc můžete vyhledat na fóru komunity GroupDocs.Viewer[tady](https://forum.groupdocs.com/c/viewer/9).
+A: Pomoc můžete vyhledat na fóru komunity GroupDocs.Viewer. [zde](https://forum.groupdocs.com/c/viewer/9).
 
-### Otázka: Jsou k dispozici dočasné licence pro účely testování?
+### Otázka: Jsou k dispozici dočasné licence pro testovací účely?
 
- Odpověď: Ano, dočasné licence lze získat od[tady](https://purchase.groupdocs.com/temporary-license/).
+A: Ano, dočasné licence lze získat od [zde](https://purchase.groupdocs.com/temporary-license/).

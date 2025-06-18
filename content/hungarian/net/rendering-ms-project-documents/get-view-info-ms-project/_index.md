@@ -1,24 +1,24 @@
 ---
-title: Megtekintési információk a Microsoft Project dokumentumokhoz
-linktitle: Megtekintési információk a Microsoft Project dokumentumokhoz
-second_title: GroupDocs.Viewer .NET API
-description: Fedezze fel az átfogó oktatóanyagot a Groupdocs.Viewer for .NET használatáról a Microsoft Project dokumentumok nézeti információinak könnyű lekéréséhez.
-weight: 10
-url: /hu/net/rendering-ms-project-documents/get-view-info-ms-project/
+"description": "Fedezze fel az átfogó oktatóanyagot, amely bemutatja, hogyan használhatja a Groupdocs.Viewer for .NET-et a Microsoft Project dokumentumok nézetinformációinak egyszerű lekéréséhez."
+"linktitle": "Microsoft Project dokumentumok megtekintési információinak lekérése"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Microsoft Project dokumentumok megtekintési információinak lekérése"
+"url": "/hu/net/rendering-ms-project-documents/get-view-info-ms-project/"
+"weight": 10
 ---
 
-# Megtekintési információk a Microsoft Project dokumentumokhoz
+# Microsoft Project dokumentumok megtekintési információinak lekérése
 
 ## Bevezetés
-dokumentumkezelési és -megtekintési megoldások terén a Groupdocs.Viewer for .NET sokoldalú és robusztus eszközként tűnik ki. Függetlenül attól, hogy Ön fejlesztő, aki dokumentummegtekintési képességeket szeretne integrálni .NET-alkalmazásaiba, vagy lelkes, aki szeretné felfedezni annak funkcióit, ez az oktatóanyag végigvezeti Önt a Groupdocs.Viewer for .NET használatán a Microsoft Project dokumentumok megtekintési információinak lekéréséhez. .
+dokumentumkezelési és -megtekintési megoldások terén a Groupdocs.Viewer for .NET sokoldalú és robusztus eszközként tűnik ki. Akár fejlesztő, aki dokumentummegtekintési képességeket szeretne integrálni .NET alkalmazásaiba, akár lelkes rajongó, aki szívesen felfedezi a funkcióit, ez az oktatóanyag végigvezeti Önt a Groupdocs.Viewer for .NET használatán a Microsoft Project dokumentumok megtekintési információinak lekéréséhez.
 ## Előfeltételek
-Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
-1. A .NET-keretrendszer alapvető ismerete: A .NET-keretrendszer ismerete segít az integrációs folyamat megértésében.
-2.  A Groupdocs.Viewer for .NET telepítése: Töltse le és telepítse a Groupdocs.Viewer for .NET programot a[weboldal](https://releases.groupdocs.com/viewer/net/).
-3. Fejlesztői környezet beállítása: A kódoláshoz szükséges eszközökkel, például a Visual Studio-val konfigurálva legyen egy fejlesztői környezet.
+Mielőtt belemerülnél az oktatóanyagba, győződj meg róla, hogy a következő előfeltételek teljesülnek:
+1. A .NET keretrendszer alapvető ismerete: A .NET keretrendszer ismerete segít az integrációs folyamat megértésében.
+2. A Groupdocs.Viewer for .NET telepítése: Töltse le és telepítse a Groupdocs.Viewer for .NET programot a következő helyről: [weboldal](https://releases.groupdocs.com/viewer/net/).
+3. Fejlesztői környezet beállítása: Rendelkezzen egy fejlesztői környezettel, amely a kódoláshoz szükséges eszközökkel, például a Visual Studio-val van konfigurálva.
 
-## A szükséges névterek importálása
-Kezdésként importálja a szükséges névtereket a .NET-projektbe. Ezek a névterek megkönnyítik a kommunikációt a Groupdocs.Viewer for .NET funkcióival.
+## Szükséges névterek importálása
+Kezdésként importálja a szükséges névtereket a .NET projektjébe. Ezek a névterek megkönnyítik a kommunikációt a Groupdocs.Viewerrel a .NET funkciókhoz.
 
 ```csharp
 using System;
@@ -26,55 +26,55 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-Groupdocs.Viewer for .NET intuitív módot kínál a Microsoft Project dokumentumok nézeti információinak lekérésére. Ennek eléréséhez kövesse az alábbi lépéseket:
-## 1. lépés: Inicializálja a Viewer Object-et
+A Groupdocs.Viewer for .NET intuitív módot kínál a Microsoft Project dokumentumok nézetinformációinak lekérésére. Ehhez kövesse az alábbi lépéseket:
+## 1. lépés: Viewer objektum inicializálása
 ```csharp
 using (Viewer viewer = new Viewer("path/to/your/MicrosoftProjectDocument.mpp"))
 {
     // A kód folytatódik...
 }
 ```
- Ebben a lépésben cserélje ki`"path/to/your/MicrosoftProjectDocument.mpp"` a Microsoft Project dokumentum tényleges elérési útjával.
+Ebben a lépésben cserélje ki `"path/to/your/MicrosoftProjectDocument.mpp"` a Microsoft Project dokumentum tényleges elérési útjával.
 ## 2. lépés: Nézetinformációk lekérése
 ```csharp
 ProjectManagementViewInfo info = viewer.GetViewInfo(
     ViewInfoOptions.ForHtmlView()) as ProjectManagementViewInfo;
 ```
- Itt használjuk a`GetViewInfo()` módszer a megadott Microsoft Project dokumentum nézeti információinak lekérésére. Meghatározzuk`ViewInfoOptions.ForHtmlView()` HTML nézet nézeti információinak beszerzéséhez.
-## 3. lépés: Jelenítse meg a nézetinformációkat
+Itt használjuk ki a `GetViewInfo()` metódus a megadott Microsoft Project dokumentum nézetinformációinak lekérésére. Megadjuk `ViewInfoOptions.ForHtmlView()` HTML nézet megtekintési információinak lekéréséhez.
+## 3. lépés: Nézetinformációk megjelenítése
 ```csharp
 Console.WriteLine("Document type is: " + info.FileType);
 Console.WriteLine("Pages count: " + info.Pages.Count);
 Console.WriteLine("Project start date: {0}", info.StartDate);
 Console.WriteLine("Project end date: {0}", info.EndDate);
 ```
-Ez a lépés magában foglalja a letöltött nézetadatok megjelenítését, beleértve a dokumentum típusát, az oldalak számát, a projekt kezdő dátumát és a projekt befejezési dátumát.
+Ez a lépés magában foglalja a lekért nézetadatok megjelenítését, beleértve a dokumentum típusát, az oldalszámot, a projekt kezdési dátumát és a projekt befejezési dátumát.
 ## 4. lépés: Következtetés
 ```csharp
 Console.WriteLine("\nView info retrieved successfully.");
 ```
-Végül a folyamatot egy sikerüzenet megjelenítésével fejezzük be, amely jelzi, hogy a nézetinformációkat sikeresen lekértük.
+Végül egy sikeres üzenettel zárjuk a folyamatot, amely jelzi, hogy a nézetinformációk sikeresen lekérésre kerültek.
 
 ## Következtetés
-Ebben az oktatóanyagban megvizsgáltuk, hogyan használható a Groupdocs.Viewer for .NET a Microsoft Project dokumentumok nézeti adatainak lekérésére. A vázolt lépések követésével zökkenőmentesen integrálhatja ezt a funkciót .NET-alkalmazásaiba, javítva ezzel a dokumentumkezelési képességeket.
+Ebben az oktatóanyagban azt vizsgáltuk meg, hogyan használható a Groupdocs.Viewer for .NET a Microsoft Project dokumentumok nézetinformációinak lekéréséhez. A vázolt lépéseket követve zökkenőmentesen integrálhatja ezt a funkciót .NET alkalmazásaiba, javítva a dokumentumkezelési képességeket.
 ## GYIK
 
 ### A Groupdocs.Viewer for .NET kompatibilis a .NET keretrendszer összes verziójával?
 
-Igen, a Groupdocs.Viewer for .NET kompatibilis a .NET-keretrendszer különböző verzióival, rugalmasságot biztosítva a fejlesztők számára.
+Igen, a Groupdocs.Viewer for .NET kompatibilis a .NET keretrendszer különböző verzióival, így rugalmasságot biztosít a fejlesztők számára.
 
-### Testreszabhatom a nézetinformációk lekérési folyamatát az alkalmazásom követelményei szerint?
+### Testreszabhatom a nézetinformációk lekérésének folyamatát az alkalmazásom igényei szerint?
 
-Biztosan! A Groupdocs.Viewer for .NET kiterjedt testreszabási lehetőségeket kínál a visszakeresési folyamat személyre szabásához.
+Természetesen! A Groupdocs.Viewer for .NET széleskörű testreszabási lehetőségeket kínál, hogy a visszakeresési folyamatot az Ön egyedi igényeihez igazítsa.
 
-### A Groupdocs.Viewer for .NET támogatja a Microsoft Project dokumentumokon kívül más dokumentumformátumokat is?
+### Groupdocs.Viewer for .NET támogatja a Microsoft Project dokumentumokon kívül más dokumentumformátumokat is?
 
-Teljesen. A Groupdocs.Viewer for .NET a dokumentumformátumok széles skáláját támogatja, biztosítva a dokumentummegtekintési lehetőségek sokoldalúságát.
+Abszolút. A Groupdocs.Viewer for .NET számos dokumentumformátumot támogat, így sokoldalú dokumentummegtekintési lehetőségeket biztosít.
 
-### Van olyan közösségi fórum vagy támogatási platform, ahol segítséget kérhetek a Groupdocs.Viewer for .NET-hez?
+### Van közösségi fórum vagy támogatási platform, ahol segítséget kérhetek a Groupdocs.Viewer for .NET-tel kapcsolatban?
 
- Igen, meglátogathatja a[Groupdocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) közösségi támogatásért és útmutatásért.
+Igen, meglátogathatja a [Groupdocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) közösségi támogatásért és útmutatásért.
 
-### Megnézhetem a Groupdocs.Viewer for .NET funkcióit a vásárlás előtt?
+### Felfedezhetem a Groupdocs.Viewer for .NET funkcióit a vásárlás előtt?
 
- Természetesen! Ingyenes próbaverziót vehet igénybe a[weboldal](https://releases.groupdocs.com/) hogy felfedezze a Groupdocs.Viewer for .NET szolgáltatásait és képességeit.
+Természetesen! Ingyenes próbaverziót is igénybe vehet a következő címen: [weboldal](https://releases.groupdocs.com/) a Groupdocs.Viewer for .NET funkcióinak és lehetőségeinek felfedezése.

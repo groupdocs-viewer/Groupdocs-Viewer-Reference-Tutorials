@@ -1,31 +1,34 @@
 ---
-title: Vykreslování CDR obrázků
-linktitle: Vykreslování CDR obrázků
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se vykreslovat obrázky CDR do HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro .NET. Pomocí tohoto výukového programu můžete snadno převádět soubory CorelDRAW.
-weight: 12
-url: /cs/net/image-rendering/render-cdr-images/
+"description": "Naučte se, jak vykreslit obrázky CDR do formátu HTML, JPG, PNG a PDF pomocí nástroje GroupDocs.Viewer pro .NET. S tímto tutoriálem snadno převedete soubory CorelDRAW."
+"linktitle": "Vykreslení obrázků CDR"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslení obrázků CDR"
+"url": "/cs/net/image-rendering/render-cdr-images/"
+"weight": 12
 ---
 
-# Vykreslování CDR obrázků
+# Vykreslení obrázků CDR
 
-## Úvod
-V tomto tutoriálu vás provedeme procesem vykreslování obrázků CDR (CorelDRAW) pomocí GroupDocs.Viewer pro .NET. CDR je formát souboru primárně spojený s CorelDRAW, editorem vektorové grafiky. Pomocí GroupDocs.Viewer můžete snadno převádět soubory CDR do různých formátů, jako jsou HTML, JPG, PNG a PDF.
+## Zavedení
+tomto tutoriálu vás provedeme procesem vykreslování obrázků CDR (CorelDRAW) pomocí nástroje GroupDocs.Viewer pro .NET. CDR je formát souboru primárně spojený s CorelDRAW, editorem vektorové grafiky. Pomocí nástroje GroupDocs.Viewer můžete snadno převádět soubory CDR do různých formátů, jako jsou HTML, JPG, PNG a PDF.
+
+![Vykreslení obrázků CDR pomocí GroupDocs.Viewer pro .NET](/viewer/image-rendering/render-cdr-images.png)
+
 ## Předpoklady
 Než začnete, ujistěte se, že máte následující předpoklady:
-1.  GroupDocs.Viewer for .NET: Ujistěte se, že jste nainstalovali GroupDocs.Viewer for .NET. Můžete si jej stáhnout z[tady](https://releases.groupdocs.com/viewer/net/).
-2. Adresář dokumentů: Připravte si adresář, kam chcete uložit vykreslené obrázky.
-3. Základní znalost C#: Pro pochopení příkladů kódu je nutná znalost programovacího jazyka C#.
+1. GroupDocs.Viewer pro .NET: Ujistěte se, že máte nainstalovaný GroupDocs.Viewer pro .NET. Můžete si ho stáhnout z [zde](https://releases.groupdocs.com/viewer/net/).
+2. Adresář dokumentů: Připravte si adresář, kam chcete ukládat vykreslené obrázky.
+3. Základní znalost jazyka C#: Znalost programovacího jazyka C# je nezbytná pro pochopení příkladů kódu.
 ## Importovat jmenné prostory
-Než se ponoříte do příkladů kódu, importujte potřebné jmenné prostory do souboru C#:
+Než se ponoříme do příkladů kódu, importujte potřebné jmenné prostory do souboru C#:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-Nyní si každý příklad rozdělíme do několika kroků:
+Nyní si každý příklad rozdělme do několika kroků:
 ## Vykreslování do HTML
-1. Definujte výstupní adresář, kam chcete uložit vykreslené soubory HTML:
+1. Definujte výstupní adresář, kam chcete ukládat vykreslené soubory HTML:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
@@ -33,7 +36,7 @@ string outputDirectory = "Your Document Directory";
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result_{0}.html");
 ```
-3. K vykreslení souboru CDR do HTML použijte třídu Viewer:
+3. Pro vykreslení souboru CDR do HTML použijte třídu Viewer:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 {
@@ -47,7 +50,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result_{0}.jpg");
 ```
-2. K vykreslení souboru CDR do formátu JPG použijte třídu Viewer:
+2. Pro vykreslení souboru CDR do formátu JPG použijte třídu Viewer:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 {
@@ -61,7 +64,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result_{0}.png");
 ```
-2. K vykreslení souboru CDR do formátu PNG použijte třídu Viewer:
+2. Pro vykreslení souboru CDR do formátu PNG použijte třídu Viewer:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 {
@@ -75,7 +78,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result.pdf");
 ```
-2. K vykreslení souboru CDR do PDF použijte třídu Viewer:
+2. Pro vykreslení souboru CDR do PDF použijte třídu Viewer:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 {
@@ -84,17 +87,17 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
     viewer.View(options);
 }
 ```
-3.  Volitelně můžete zadat volby vykreslování nebo vykreslit konkrétní stránky předáním dalších parametrů`viewer.View()` metoda.
+3. Volitelně můžete zadat možnosti vykreslování nebo vykreslit konkrétní stránky předáním dalších parametrů do `viewer.View()` metoda.
 ## Závěr
-Vykreslování CDR obrázků do různých formátů jako HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro .NET je jednoduchý proces. Podle kroků uvedených v tomto kurzu můžete efektivně převádět soubory CDR do různých formátů na základě vašich požadavků.
-## FAQ
-### Je GroupDocs.Viewer for .NET kompatibilní se všemi verzemi souborů CDR?
-GroupDocs.Viewer for .NET podporuje vykreslování souborů CDR vytvořených různými verzemi aplikace CorelDRAW.
-### Mohu přizpůsobit výstup vykreslených souborů?
-Ano, GroupDocs.Viewer for .NET poskytuje různé možnosti přizpůsobení výstupu, jako je úprava kvality obrazu, nastavení vodoznaku atd.
-### Vyžaduje GroupDocs.Viewer for .NET nějaké externí závislosti?
-Ne, GroupDocs.Viewer for .NET je samostatná knihovna a pro vykreslování dokumentů nevyžaduje žádné externí závislosti.
+Vykreslování obrázků CDR do různých formátů, jako je HTML, JPG, PNG a PDF, pomocí GroupDocs.Viewer pro .NET je jednoduchý proces. Dodržováním kroků popsaných v tomto tutoriálu můžete efektivně převádět soubory CDR do různých formátů na základě vašich požadavků.
+## Často kladené otázky
+### Je GroupDocs.Viewer pro .NET kompatibilní se všemi verzemi souborů CDR?
+GroupDocs.Viewer pro .NET podporuje vykreslování souborů CDR vytvořených různými verzemi CorelDRAW.
+### Mohu si přizpůsobit výstup vykreslených souborů?
+Ano, GroupDocs.Viewer pro .NET nabízí různé možnosti pro přizpůsobení výstupu, jako je úprava kvality obrazu, nastavení vodoznaku atd.
+### Vyžaduje GroupDocs.Viewer pro .NET nějaké externí závislosti?
+Ne, GroupDocs.Viewer pro .NET je samostatná knihovna a pro vykreslování dokumentů nevyžaduje žádné externí závislosti.
 ### Je k dispozici zkušební verze pro GroupDocs.Viewer pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi GroupDocs.Viewer pro .NET z[tady](https://releases.groupdocs.com/).
+Ano, můžete si stáhnout bezplatnou zkušební verzi GroupDocs.Viewer pro .NET z [zde](https://releases.groupdocs.com/).
 ### Kde mohu získat podporu pro GroupDocs.Viewer pro .NET?
- Podporu můžete získat na fóru komunity GroupDocs.Viewer[tady](https://forum.groupdocs.com/c/viewer/9).
+Podporu můžete získat na fóru komunity GroupDocs.Viewer. [zde](https://forum.groupdocs.com/c/viewer/9).

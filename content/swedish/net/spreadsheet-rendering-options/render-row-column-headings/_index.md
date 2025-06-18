@@ -1,29 +1,29 @@
 ---
-title: Återge rad- och kolumnrubriker
-linktitle: Återge rad- och kolumnrubriker
-second_title: GroupDocs.Viewer .NET API
-description: Förbättra dokumentvisning i .NET! Lär dig att återge rad- och kolumnrubriker med GroupDocs.Viewer för .NET. Utforska HTML-, JPG-, PNG- och PDF-utdata.
-weight: 18
-url: /sv/net/spreadsheet-rendering-options/render-row-column-headings/
+"description": "Förbättra dokumentvisningen i .NET! Lär dig rendera rad- och kolumnrubriker med GroupDocs.Viewer för .NET. Utforska HTML-, JPG-, PNG- och PDF-utdata."
+"linktitle": "Rendera rad- och kolumnrubriker"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Rendera rad- och kolumnrubriker"
+"url": "/sv/net/spreadsheet-rendering-options/render-row-column-headings/"
+"weight": 18
 ---
 
-# Återge rad- och kolumnrubriker
+# Rendera rad- och kolumnrubriker
 
 ## Introduktion
-Vill du förbättra din dokumentvisningsupplevelse i .NET-applikationer? Med GroupDocs.Viewer för .NET kan du sömlöst återge rad- och kolumnrubriker från dina kalkylbladsfiler. I den här självstudien guidar vi dig genom processen att rendera rad- och kolumnrubriker med olika utdataformat som HTML, JPG, PNG och PDF.
-## Förutsättningar
+Vill du förbättra din dokumentvisningsupplevelse i .NET-applikationer? Med GroupDocs.Viewer för .NET kan du smidigt rendera rad- och kolumnrubriker från dina kalkylbladsfiler. I den här handledningen guidar vi dig genom processen att rendera rad- och kolumnrubriker med olika utdataformat som HTML, JPG, PNG och PDF.
+## Förkunskapskrav
 Innan vi dyker in i handledningen, se till att du har följande förutsättningar på plats:
 - Installerade GroupDocs.Viewer för .NET-biblioteket.
-- Ett exempel på XLSX-fil för teständamål.
-- En praktisk kunskap om C# och .NET utveckling.
-## Importera namnområden
-Se till att du importerar de nödvändiga namnrymden i din C#-kod för att använda GroupDocs.Viewer:
+- En exempel-XLSX-fil för teständamål.
+- Goda kunskaper i C# och .NET-utveckling.
+## Importera namnrymder
+din C#-kod, se till att du importerar de namnrymder som krävs för att använda GroupDocs.Viewer:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## 1. Ställ in utdatakatalogen
+## 1. Konfigurera utdatakatalogen
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
@@ -37,7 +37,7 @@ using (Viewer viewer = new Viewer("SAMPLE.XLSX"))
     viewer.View(options, 1, 2, 3);
 }
 ```
-## 3. Återge till JPG
+## 3. Rendera till JPG
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
@@ -68,15 +68,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
 }
 ```
 ## Slutsats
-Grattis! Du har framgångsrikt renderat rad- och kolumnrubriker från ditt kalkylblad med GroupDocs.Viewer för .NET. Experimentera med olika utdataformat för att passa din applikations behov.
+Grattis! Du har lyckats rendera rad- och kolumnrubriker från ditt kalkylblad med GroupDocs.Viewer för .NET. Experimentera med olika utdataformat som passar ditt programs behov.
 ## Vanliga frågor
 ### F: Kan jag anpassa utdatakatalogen för de renderade dokumenten?
- S: Ja, du kan ställa in önskad utdatakatalog i koden där`outputDirectory` variabel definieras.
-### F: Är GroupDocs.Viewer kompatibel med andra kalkylbladsformat?
-S: Ja, GroupDocs.Viewer stöder olika kalkylbladsformat, inklusive XLS, XLSX, CSV och mer.
+A: Ja, du kan ange önskad utdatakatalog i koden där `outputDirectory` variabeln är definierad.
+### F: Är GroupDocs.Viewer kompatibelt med andra kalkylbladsformat?
+A: Ja, GroupDocs.Viewer stöder olika kalkylbladsformat, inklusive XLS, XLSX, CSV med flera.
 ### F: Hur kan jag hantera undantag under renderingsprocessen?
-S: Du kan implementera try-catch-block för att hantera undantag och logga eller visa lämpliga meddelanden för användaren.
-### F: Finns det några licenskrav för att använda GroupDocs.Viewer i min applikation?
-S: Ja, du behöver en giltig licens. Du kan skaffa en tillfällig licens för teständamål eller köpa en fullständig licens för produktion.
-### F: Var kan jag hitta ytterligare stöd eller diskussioner i samhället?
- A: Besök[GroupDocs.Viewer-forum](https://forum.groupdocs.com/c/viewer/9) för stöd och diskussioner.
+A: Du kan implementera try-catch-block för att hantera undantag och logga eller visa lämpliga meddelanden för användaren.
+### F: Finns det några licenskrav för att använda GroupDocs.Viewer i mitt program?
+A: Ja, du behöver en giltig licens. Du kan skaffa en tillfällig licens för teständamål eller köpa en fullständig licens för produktion.
+### F: Var kan jag hitta ytterligare stöd eller diskussioner i gemenskapen?
+A: Besök [GroupDocs.Viewer-forum](https://forum.groupdocs.com/c/viewer/9) för stöd och diskussioner.

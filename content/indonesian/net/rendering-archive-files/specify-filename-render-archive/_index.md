@@ -1,23 +1,23 @@
 ---
-title: Tentukan Nama File Saat Merender File Arsip
-linktitle: Tentukan Nama File Saat Merender File Arsip
-second_title: GroupDocs.Viewer .NET API
-description: Pelajari cara merender file arsip di .NET menggunakan GroupDocs.Viewer, sehingga meningkatkan kemampuan manajemen dokumen.
-weight: 14
-url: /id/net/rendering-archive-files/specify-filename-render-archive/
+"description": "Pelajari cara merender file arsip dalam .NET menggunakan GroupDocs.Viewer, yang meningkatkan kemampuan manajemen dokumen."
+"linktitle": "Tentukan Nama File Saat Merender File Arsip"
+"second_title": "API Penampil GroupDocs.NET"
+"title": "Tentukan Nama File Saat Merender File Arsip"
+"url": "/id/net/rendering-archive-files/specify-filename-render-archive/"
+"weight": 14
 ---
 
 # Tentukan Nama File Saat Merender File Arsip
 
 ## Perkenalan
-Dalam bidang pengembangan .NET, GroupDocs.Viewer menonjol sebagai alat serbaguna untuk merender dokumen dalam berbagai format. Dengan fitur-fitur canggih dan fleksibilitasnya, ini menyederhanakan proses melihat file, termasuk file arsip. Dalam tutorial ini, kita akan mempelajari secara spesifik rendering file arsip menggunakan GroupDocs.Viewer untuk .NET. Dengan mengikuti petunjuk langkah demi langkah ini, Anda akan mempelajari cara menentukan nama file saat merender file arsip, sehingga memungkinkan manajemen dokumen yang lancar dalam aplikasi .NET Anda.
+Dalam bidang pengembangan .NET, GroupDocs.Viewer menonjol sebagai alat serbaguna untuk merender dokumen dalam berbagai format. Dengan fitur-fiturnya yang tangguh dan fleksibilitas, alat ini menyederhanakan proses melihat berkas, termasuk berkas arsip. Dalam tutorial ini, kita akan membahas secara spesifik tentang merender berkas arsip menggunakan GroupDocs.Viewer untuk .NET. Dengan mengikuti petunjuk langkah demi langkah ini, Anda akan mempelajari cara menentukan nama berkas saat merender berkas arsip, yang memungkinkan pengelolaan dokumen yang lancar dalam aplikasi .NET Anda.
 ## Prasyarat
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
-1.  GroupDocs.Viewer untuk .NET: Unduh dan instal perpustakaan GroupDocs.Viewer dari[Di Sini](https://releases.groupdocs.com/viewer/net/).
+Sebelum memulai tutorial, pastikan Anda memiliki prasyarat berikut:
+1. GroupDocs.Viewer untuk .NET: Unduh dan instal pustaka GroupDocs.Viewer dari [Di Sini](https://releases.groupdocs.com/viewer/net/).
 2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan .NET, seperti Visual Studio, dengan konfigurasi yang diperlukan.
-3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# sangat penting untuk memahami dan mengimplementasikan cuplikan kode yang disediakan.
+3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# sangat penting untuk memahami dan menerapkan potongan kode yang disediakan.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 Dalam proyek C# Anda, impor namespace yang diperlukan untuk mengakses fungsionalitas GroupDocs.Viewer:
 ```csharp
 using System;
@@ -31,7 +31,7 @@ string outputDirectory = "Your Document Directory";
 string outputFilePath = Path.Combine(outputDirectory, "output.pdf");
 ```
 ## Langkah 2: Inisialisasi Objek Penampil
-Buat instance kelas Viewer dengan menyediakan jalur ke file arsip:
+Buat instance kelas Viewer dengan memberikan path ke file arsip:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_ZIP))
 {
@@ -39,7 +39,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_ZIP))
 }
 ```
 ## Langkah 3: Konfigurasikan Opsi Rendering PDF
-Tentukan opsi rendering, khususnya untuk keluaran PDF:
+Tentukan opsi rendering, terutama untuk keluaran PDF:
 ```csharp
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
@@ -53,22 +53,22 @@ Panggil metode View dari objek Viewer dengan opsi tampilan yang dikonfigurasi:
 ```csharp
 viewer.View(viewOptions);
 ```
-## Langkah 6: Tampilkan Pesan Sukses
-Beri tahu pengguna tentang rendering yang berhasil dan berikan direktori keluaran:
+## Langkah 6: Menampilkan Pesan Sukses
+Beritahukan pengguna tentang keberhasilan rendering dan berikan direktori output:
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara memanfaatkan GroupDocs.Viewer untuk .NET untuk merender file arsip dan menentukan nama file khusus untuk outputnya. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat dengan mudah mengintegrasikan fungsi ini ke dalam aplikasi .NET Anda, sehingga meningkatkan kemampuan tampilan dan manajemen dokumen.
-## FAQ
+Dalam tutorial ini, kami mengeksplorasi cara memanfaatkan GroupDocs.Viewer untuk .NET guna merender file arsip dan menentukan nama file khusus untuk output. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat mengintegrasikan fungsionalitas ini dengan lancar ke dalam aplikasi .NET Anda, yang meningkatkan kemampuan tampilan dan pengelolaan dokumen.
+## Pertanyaan yang Sering Diajukan
 ### Apakah GroupDocs.Viewer kompatibel dengan semua format file arsip?
-GroupDocs.Viewer mendukung berbagai format arsip, antara lain ZIP, RAR, TAR, dan 7z.
+GroupDocs.Viewer mendukung berbagai format arsip, termasuk ZIP, RAR, TAR, dan 7z, antara lain.
 ### Bisakah saya menyesuaikan format keluaran selain PDF?
 Ya, GroupDocs.Viewer menawarkan fleksibilitas dalam memilih format keluaran, termasuk format gambar seperti JPG dan PNG, serta HTML dan PDF.
-### Apakah GroupDocs.Viewer cocok untuk file arsip berukuran besar?
-Ya, GroupDocs.Viewer dioptimalkan untuk menangani file arsip besar secara efisien, memastikan rendering dan kinerja lancar.
+### Apakah GroupDocs.Viewer cocok untuk file arsip besar?
+Ya, GroupDocs.Viewer dioptimalkan untuk menangani file arsip besar secara efisien, memastikan kelancaran pemrosesan dan kinerja.
 ### Apakah GroupDocs.Viewer menyediakan dukungan untuk enkripsi dalam file arsip?
 Ya, GroupDocs.Viewer dapat menangani file arsip terenkripsi, asalkan kunci dekripsi yang diperlukan disediakan.
-### Bisakah saya mengintegrasikan GroupDocs.Viewer dengan layanan penyimpanan cloud?
-Ya, GroupDocs.Viewer menawarkan integrasi tanpa batas dengan penyedia penyimpanan cloud populer, memungkinkan rendering langsung file yang disimpan di cloud.
+### Dapatkah saya mengintegrasikan GroupDocs.Viewer dengan layanan penyimpanan cloud?
+Ya, GroupDocs.Viewer menawarkan integrasi yang mulus dengan penyedia penyimpanan cloud populer, yang memungkinkan rendering langsung file yang disimpan di cloud.

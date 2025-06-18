@@ -1,24 +1,27 @@
 ---
-title: Render CMX-afbeeldingen
-linktitle: Render CMX-afbeeldingen
-second_title: GroupDocs.Viewer .NET-API
-description: Leer hoe u CMX-afbeeldingen moeiteloos in verschillende formaten kunt renderen met GroupDocs.Viewer voor .NET. Verbeter uw documentbeheer.
-weight: 13
-url: /nl/net/image-rendering/render-cmx-images/
+"description": "Leer hoe u moeiteloos CMX-afbeeldingen in verschillende formaten kunt weergeven met GroupDocs.Viewer voor .NET. Verbeter uw documentbeheer."
+"linktitle": "CMX-afbeeldingen renderen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "CMX-afbeeldingen renderen"
+"url": "/nl/net/image-rendering/render-cmx-images/"
+"weight": 13
 ---
 
-# Render CMX-afbeeldingen
+# CMX-afbeeldingen renderen
 
 ## Invoering
-Op het gebied van documentbeheer en -manipulatie is het weergeven van afbeeldingen uit verschillende formaten een cruciale taak. GroupDocs.Viewer voor .NET vereenvoudigt dit proces door uitgebreide functionaliteiten te bieden voor het renderen van CMX-afbeeldingen in verschillende formaten zoals HTML, JPG, PNG en PDF. In deze zelfstudie wordt u stapsgewijs door het proces geleid voor het renderen van CMX-afbeeldingen met GroupDocs.Viewer voor .NET.
+Op het gebied van documentbeheer en -manipulatie is het renderen van afbeeldingen vanuit verschillende formaten een cruciale taak. GroupDocs.Viewer voor .NET vereenvoudigt dit proces door uitgebreide functionaliteit te bieden voor het renderen van CMX-afbeeldingen in verschillende formaten, zoals HTML, JPG, PNG en PDF. Deze tutorial begeleidt u stapsgewijs door het renderen van CMX-afbeeldingen met GroupDocs.Viewer voor .NET.
+
+![CMX-afbeeldingen renderen met GroupDocs.Viewer voor .NET](/viewer/image-rendering/render-cmx-images.png)
+
 ## Vereisten
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
-1.  GroupDocs.Viewer voor .NET-bibliotheek: Download en installeer de GroupDocs.Viewer voor .NET-bibliotheek vanaf[hier](https://releases.groupdocs.com/viewer/net/).
-2. Ontwikkelomgeving: zorg dat er een werkende ontwikkelomgeving is opgezet met het .NET-framework.
-3. CMX-afbeeldingsbestand: Verkrijg een CMX-afbeeldingsbestand dat u wilt renderen.
+Voordat u met de tutorial begint, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+1. GroupDocs.Viewer voor .NET-bibliotheek: download en installeer de GroupDocs.Viewer voor .NET-bibliotheek van [hier](https://releases.groupdocs.com/viewer/net/).
+2. Ontwikkelomgeving: Zorg dat er een werkende ontwikkelomgeving is ingericht met .NET Framework.
+3. CMX-afbeeldingsbestand: verkrijg een CMX-afbeeldingsbestand dat u wilt renderen.
 
 ## Naamruimten importeren
-Voordat u doorgaat, moet u ervoor zorgen dat u de benodigde naamruimten importeert om toegang te krijgen tot de GroupDocs.Viewer-functionaliteiten in uw .NET-toepassing:
+Voordat u verdergaat, moet u ervoor zorgen dat u de benodigde naamruimten importeert om toegang te krijgen tot de GroupDocs.Viewer-functies in uw .NET-toepassing:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
@@ -35,11 +38,11 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Definieer de uitvoermap: stel de map in waarin u de weergegeven HTML-bestanden wilt opslaan.
-- Specificeer het bestandspadformaat: Definieer het formaat voor de HTML-uitvoerbestanden.
-- Instantieer Viewer-object: maak een exemplaar van de Viewer-klasse met het CMX-afbeeldingsbestand.
-- HTML-weergaveopties: Configureer HTML-weergaveopties, zoals het insluiten van bronnen.
-- Render CMX naar HTML: Roep de View-methode van het viewerobject aan om de CMX-afbeelding naar HTML te renderen.
+- Definieer de uitvoermap: stel de map in waarin u de gerenderde HTML-bestanden wilt opslaan.
+- Geef het bestandspad op: definieer de indeling voor de HTML-uitvoerbestanden.
+- Instantieer Viewer-object: maak een instantie van de Viewer-klasse met het CMX-afbeeldingsbestand.
+- HTML-renderingopties: configureer HTML-renderingopties, zoals het insluiten van bronnen.
+- CMX naar HTML weergeven: roep de View-methode van het viewerobject aan om de CMX-afbeelding naar HTML weer te geven.
 ## Renderen naar JPG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cmx_result_{0}.jpg");
@@ -50,11 +53,11 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Definieer uitvoermap: Stel de map in voor het opslaan van de gerenderde JPG-bestanden.
-- Specificeer het bestandspadformaat: Definieer het formaat voor de uitgevoerde JPG-bestanden.
-- Instantieer Viewer-object: maak een exemplaar van de Viewer-klasse met het CMX-afbeeldingsbestand.
-- JPG-weergaveopties: Configureer JPG-weergaveopties.
-- Render CMX naar JPG: Roep de View-methode van het viewerobject op om de CMX-afbeelding naar JPG te renderen.
+- Definieer de uitvoermap: stel de map in waar de gerenderde JPG-bestanden moeten worden opgeslagen.
+- Geef het bestandsformaat op: definieer het formaat voor de uitvoer-JPG-bestanden.
+- Instantieer Viewer-object: maak een instantie van de Viewer-klasse met het CMX-afbeeldingsbestand.
+- JPG-renderingopties: configureer JPG-renderingopties.
+- CMX naar JPG renderen: roep de View-methode van het viewerobject aan om de CMX-afbeelding naar JPG te renderen.
 ## Renderen naar PNG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cmx_result_{0}.png");
@@ -65,11 +68,11 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Definieer de uitvoermap: stel de map in voor het opslaan van de weergegeven PNG-bestanden.
-- Specificeer het bestandspadformaat: Definieer het formaat voor de uitgevoerde PNG-bestanden.
-- Instantieer Viewer-object: maak een exemplaar van de Viewer-klasse met het CMX-afbeeldingsbestand.
-- PNG-weergaveopties: Configureer PNG-weergaveopties.
-- Render CMX naar PNG: Roep de View-methode van het viewerobject aan om de CMX-afbeelding naar PNG te renderen.
+- Definieer de uitvoermap: stel de map in waar de gerenderde PNG-bestanden moeten worden opgeslagen.
+- Geef het bestandsformaat op: definieer het formaat voor de uitvoer-PNG-bestanden.
+- Instantieer Viewer-object: maak een instantie van de Viewer-klasse met het CMX-afbeeldingsbestand.
+- PNG-renderingopties: configureer PNG-renderingopties.
+- CMX naar PNG renderen: roep de View-methode van het viewerobject aan om de CMX-afbeelding naar PNG te renderen.
 ## Renderen naar PDF
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cmx_result.pdf");
@@ -80,22 +83,22 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Uitvoermap definiëren: Stel de map in voor het opslaan van het gerenderde PDF-bestand.
-- Bestandspadindeling opgeven: Definieer de indeling voor het uitgevoerde PDF-bestand.
-- Instantieer Viewer-object: maak een exemplaar van de Viewer-klasse met het CMX-afbeeldingsbestand.
-- Opties voor PDF-weergave: Configureer opties voor PDF-weergave.
-- Render CMX naar PDF: Roep de View-methode van het viewerobject op om de CMX-afbeelding naar PDF te renderen.
+- Uitvoermap definiëren: stel de map in waar het gerenderde PDF-bestand moet worden opgeslagen.
+- Geef bestandsindeling op: definieer de indeling voor het PDF-uitvoerbestand.
+- Instantieer Viewer-object: maak een instantie van de Viewer-klasse met het CMX-afbeeldingsbestand.
+- PDF-renderingopties: configureer PDF-renderingopties.
+- CMX naar PDF weergeven: roep de View-methode van het viewerobject aan om de CMX-afbeelding naar PDF weer te geven.
 
 ## Conclusie
-Concluderend biedt GroupDocs.Viewer voor .NET een robuuste oplossing voor het naadloos renderen van CMX-afbeeldingen in verschillende formaten. Door de stappen in deze zelfstudie te volgen, kunt u moeiteloos CMX-beeldweergavemogelijkheden integreren in uw .NET-toepassingen, waardoor de efficiëntie van documentbeheer wordt verbeterd.
+Kortom, GroupDocs.Viewer voor .NET biedt een robuuste oplossing voor het naadloos renderen van CMX-afbeeldingen in verschillende formaten. Door de stappen in deze tutorial te volgen, kunt u moeiteloos CMX-afbeeldingsrendering integreren in uw .NET-applicaties, wat de efficiëntie van uw documentbeheer verbetert.
 ## Veelgestelde vragen
-### Kan ik specifieke pagina's van een CMX-afbeelding weergeven?
+### Kan ik specifieke pagina's van een CMX-afbeelding renderen?
 Ja, u kunt specifieke pagina's weergeven door het paginanummer op te geven in de weergaveopties.
 ### Is GroupDocs.Viewer voor .NET compatibel met alle .NET-frameworks?
 Ja, GroupDocs.Viewer voor .NET is compatibel met meerdere .NET-frameworks, waaronder .NET Core en .NET Framework.
 ### Ondersteunt GroupDocs.Viewer het renderen van gecodeerde CMX-afbeeldingen?
-Ja, GroupDocs.Viewer ondersteunt het weergeven van gecodeerde CMX-afbeeldingen met de juiste decoderingssleutels.
+Ja, GroupDocs.Viewer ondersteunt het renderen van gecodeerde CMX-afbeeldingen met de juiste decoderingssleutels.
 ### Kan ik de weergaveopties voor verschillende uitvoerformaten aanpassen?
-Absoluut, GroupDocs.Viewer biedt uitgebreide opties voor het aanpassen van weergaveparameters op basis van uw vereisten.
-### Is er een communityforum voor GroupDocs.Viewer-ondersteuning?
- Ja, u kunt hulp zoeken en contact opnemen met de GroupDocs.Viewer-gemeenschap op het ondersteuningsforum[hier](https://forum.groupdocs.com/c/viewer/9).
+Jazeker, GroupDocs.Viewer biedt uitgebreide opties voor het aanpassen van de renderingparameters op basis van uw vereisten.
+### Bestaat er een communityforum voor GroupDocs.Viewer-ondersteuning?
+Ja, u kunt hulp zoeken en contact opnemen met de GroupDocs.Viewer-community op het ondersteuningsforum [hier](https://forum.groupdocs.com/c/viewer/9).

@@ -1,20 +1,20 @@
 ---
-title: Kết xuất kho lưu trữ RAR
-linktitle: Kết xuất kho lưu trữ RAR
-second_title: API GroupDocs.Viewer .NET
-description: Tìm hiểu cách hiển thị kho lưu trữ RAR thành định dạng HTML, JPG, PNG hoặc PDF bằng GroupDocs.Viewer cho .NET. Dễ dàng xem và chia sẻ nội dung của kho lưu trữ RAR.
-weight: 13
-url: /vi/net/rendering-archive-files/render-rar/
+"description": "Tìm hiểu cách chuyển đổi các tệp lưu trữ RAR sang định dạng HTML, JPG, PNG hoặc PDF bằng GroupDocs.Viewer cho .NET. Dễ dàng xem và chia sẻ nội dung của các tệp lưu trữ RAR."
+"linktitle": "Kết xuất Lưu trữ RAR"
+"second_title": "API GroupDocs.Viewer .NET"
+"title": "Kết xuất Lưu trữ RAR"
+"url": "/vi/net/rendering-archive-files/render-rar/"
+"weight": 13
 ---
 
-# Kết xuất kho lưu trữ RAR
+# Kết xuất Lưu trữ RAR
 
 ## Giới thiệu
-Kho lưu trữ RAR là định dạng phổ biến để nén và lưu trữ nhiều tệp và thư mục vào một vùng chứa duy nhất. Việc hiển thị các kho lưu trữ RAR thành nhiều định dạng khác nhau như HTML, JPG, PNG hoặc PDF có thể cần thiết để xem hoặc chia sẻ nội dung của các kho lưu trữ này. Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị các kho lưu trữ RAR bằng GroupDocs.Viewer cho .NET.
+Lưu trữ RAR là định dạng phổ biến để nén và lưu trữ nhiều tệp và thư mục vào một vùng chứa duy nhất. Việc kết xuất lưu trữ RAR thành nhiều định dạng khác nhau như HTML, JPG, PNG hoặc PDF có thể rất cần thiết để xem hoặc chia sẻ nội dung của các lưu trữ này. Trong hướng dẫn này, chúng ta sẽ khám phá cách kết xuất lưu trữ RAR bằng GroupDocs.Viewer cho .NET.
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-1. GroupDocs.Viewer cho .NET: Cài đặt thư viện GroupDocs.Viewer cho .NET từ[Liên kết tải xuống](https://releases.groupdocs.com/viewer/net/).
-2. Lưu trữ RAR mẫu: Chuẩn bị sẵn một kho lưu trữ RAR mẫu để hiển thị.
+Trước khi bắt đầu, hãy đảm bảo bạn đáp ứng đủ các điều kiện tiên quyết sau:
+1. GroupDocs.Viewer cho .NET: Cài đặt thư viện GroupDocs.Viewer cho .NET từ [liên kết tải xuống](https://releases.groupdocs.com/viewer/net/).
+2. Lưu trữ mẫu RAR: Chuẩn bị một lưu trữ mẫu RAR để kết xuất.
 
 ## Nhập không gian tên
 ```csharp
@@ -27,7 +27,7 @@ using System.IO;
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Bước 2: Kết xuất sang HTML
+## Bước 2: Kết xuất thành HTML
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_{0}.html");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -45,7 +45,7 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
     viewer.View(options);
 }
 ```
-## Bước 4: Kết xuất sang PNG
+## Bước 4: Kết xuất thành PNG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_{0}.png");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -65,15 +65,15 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
 ```
 
 ## Phần kết luận
-Việc hiển thị các kho lưu trữ RAR thành nhiều định dạng khác nhau được thực hiện đơn giản với GroupDocs.Viewer dành cho .NET. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng chuyển đổi các kho lưu trữ RAR sang định dạng HTML, JPG, PNG hoặc PDF, cho phép dễ dàng xem và chia sẻ nội dung của chúng.
+Việc kết xuất các tệp lưu trữ RAR thành nhiều định dạng khác nhau trở nên đơn giản với GroupDocs.Viewer for .NET. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng chuyển đổi các tệp lưu trữ RAR sang các định dạng HTML, JPG, PNG hoặc PDF, cho phép dễ dàng xem và chia sẻ nội dung của chúng.
 ## Câu hỏi thường gặp
-### GroupDocs.Viewer dành cho .NET có thể xử lý các kho lưu trữ RAR được mã hóa không?
-Có, GroupDocs.Viewer for .NET hỗ trợ hiển thị các kho lưu trữ RAR được mã hóa miễn là cung cấp mật khẩu cần thiết trong quá trình kết xuất.
-### Có thể tùy chỉnh giao diện đầu ra của tài liệu được kết xuất không?
-Tuyệt đối! GroupDocs.Viewer dành cho .NET cung cấp các tùy chọn tùy chỉnh mở rộng cho phép người dùng điều chỉnh giao diện của tài liệu được hiển thị theo sở thích của họ.
-### GroupDocs.Viewer dành cho .NET có hỗ trợ hiển thị các định dạng lưu trữ khác ngoài RAR không?
-Có, GroupDocs.Viewer cho .NET hỗ trợ hiển thị nhiều định dạng lưu trữ khác nhau bao gồm ZIP, TAR, 7z, v.v.
-### Tôi có thể tích hợp GroupDocs.Viewer dành cho .NET vào ứng dụng web của mình không?
-Chắc chắn! GroupDocs.Viewer cho .NET cung cấp các API phù hợp để tích hợp vào cả ứng dụng web và máy tính để bàn.
-### Có phiên bản dùng thử cho GroupDocs.Viewer cho .NET không?
- Có, bạn có thể tận dụng bản dùng thử miễn phí GroupDocs.Viewer cho .NET từ[trang mạng](https://releases.groupdocs.com/).
+### GroupDocs.Viewer cho .NET có thể xử lý được các tệp lưu trữ RAR được mã hóa không?
+Có, GroupDocs.Viewer cho .NET hỗ trợ việc kết xuất các tệp lưu trữ RAR được mã hóa với điều kiện là mật khẩu cần thiết được cung cấp trong quá trình kết xuất.
+### Có thể tùy chỉnh giao diện đầu ra của tài liệu đã kết xuất không?
+Hoàn toàn đúng! GroupDocs.Viewer cho .NET cung cấp nhiều tùy chọn tùy chỉnh cho phép người dùng tùy chỉnh giao diện của tài liệu được hiển thị theo hướng dẫn của họ.
+### GroupDocs.Viewer cho .NET có hỗ trợ hiển thị các định dạng lưu trữ khác ngoài RAR không?
+Có, GroupDocs.Viewer for .NET hỗ trợ hiển thị nhiều định dạng lưu trữ khác nhau bao gồm ZIP, TAR, 7z, v.v.
+### Tôi có thể tích hợp GroupDocs.Viewer cho .NET vào ứng dụng web của mình không?
+Chắc chắn rồi! GroupDocs.Viewer cho .NET cung cấp các API phù hợp để tích hợp vào cả ứng dụng trên máy tính để bàn và web.
+### Có phiên bản dùng thử của GroupDocs.Viewer dành cho .NET không?
+Có, bạn có thể sử dụng bản dùng thử miễn phí của GroupDocs.Viewer cho .NET từ [trang web](https://releases.groupdocs.com/).

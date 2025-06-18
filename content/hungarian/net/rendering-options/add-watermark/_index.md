@@ -1,25 +1,25 @@
 ---
-title: Vízjel hozzáadása a dokumentumhoz
-linktitle: Vízjel hozzáadása a dokumentumhoz
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan adhat zökkenőmentesen vízjeleket a dokumentumokhoz a GroupDocs.Viewer for .NET segítségével. Fokozza a dokumentumok biztonságát és a márkaépítést ezzel a könnyen követhető oktatóanyaggal.
-weight: 10
-url: /hu/net/rendering-options/add-watermark/
+"description": "Ismerje meg, hogyan adhat zökkenőmentesen vízjeleket dokumentumokhoz a GroupDocs.Viewer for .NET segítségével. Fokozza a dokumentumok biztonságát és arculatát ezzel a könnyen követhető oktatóanyaggal."
+"linktitle": "Vízjel hozzáadása a dokumentumhoz"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Vízjel hozzáadása a dokumentumhoz"
+"url": "/hu/net/rendering-options/add-watermark/"
+"weight": 10
 ---
 
 # Vízjel hozzáadása a dokumentumhoz
 
 ## Bevezetés
-A mai digitális korban a különféle dokumentumformátumok zökkenőmentes kezelése és megtekintése sok vállalkozás és magánszemély számára egyaránt elengedhetetlen. Szerencsére az olyan eszközökkel, mint a GroupDocs.Viewer for .NET, a dokumentumok kezelése gyerekjáték lesz. Ez a nagy teljesítményű .NET-könyvtár lehetővé teszi a fejlesztők számára, hogy a dokumentummegtekintési funkciókat könnyedén integrálják alkalmazásaikba, így a felhasználók anélkül tekinthetik meg a dokumentumokat, hogy szükségük lenne az azokat létrehozó eredeti szoftverre.
+A mai digitális korban a különféle dokumentumformátumok zökkenőmentes kezelése és megtekintése számos vállalkozás és magánszemély számára egyaránt elengedhetetlen. Szerencsére az olyan eszközökkel, mint a GroupDocs.Viewer for .NET, a dokumentumok kezelése gyerekjáték. Ez a hatékony .NET könyvtár lehetővé teszi a fejlesztők számára, hogy könnyedén integrálják a dokumentummegtekintési funkciókat alkalmazásaikba, lehetővé téve a felhasználók számára, hogy a dokumentumokat az eredeti, azokat létrehozó szoftver nélkül is megtekinthessék.
 ## Előfeltételek
-Mielőtt belevágna a GroupDocs.Viewer for .NET használatába vízjelek hozzáadásához a dokumentumokhoz, győződjön meg arról, hogy rendelkezik a következőkkel:
-1. Környezet beállítása: .NET-keretrendszerrel vagy .NET Core-val telepített fejlesztői környezetet kell beállítani.
-2.  GroupDocs.Viewer for .NET: Töltse le és telepítse a GroupDocs.Viewer for .NET könyvtárat a[letöltési oldal](https://releases.groupdocs.com/viewer/net/).
-3. Dokumentumfájlok: Készítse elő azokat a dokumentumfájlokat, amelyekkel dolgozni szeretne, mint például a DOCX, PDF vagy egyéb.
-4. Alapvető C# ismerete: A kódpéldák megvalósításához a C# programozási nyelv ismerete szükséges.
+Mielőtt belemerülne a GroupDocs.Viewer for .NET használatába vízjelek dokumentumokhoz való hozzáadásához, győződjön meg arról, hogy rendelkezik a következőkkel:
+1. Környezet beállítása: Rendelkezzen egy fejlesztői környezettel, amelyre telepítve van a .NET Framework vagy a .NET Core.
+2. GroupDocs.Viewer .NET-hez: Töltse le és telepítse a GroupDocs.Viewer .NET-hez könyvtárat a következő helyről: [letöltési oldal](https://releases.groupdocs.com/viewer/net/).
+3. Dokumentumfájlok: Készítse elő a dolgozni kívánt dokumentumfájlokat, például DOCX, PDF vagy más formátumokat.
+4. C# alapismeretek: A kódpéldák megvalósításához C# programozási nyelv ismerete szükséges.
 
 ## Névterek importálása
-Mielőtt elkezdené vízjelek hozzáadását a dokumentumokhoz a GroupDocs.Viewer for .NET segítségével, feltétlenül importálja a szükséges névtereket a C#-kódba. Ez a lépés lehetővé teszi a könyvtár által biztosított osztályok és metódusok zökkenőmentes elérését.
+Mielőtt elkezdené a vízjelek hozzáadását a dokumentumokhoz a GroupDocs.Viewer for .NET segítségével, importálja a szükséges névtereket a C# kódjába. Ez a lépés lehetővé teszi a könyvtár által biztosított osztályok és metódusok zökkenőmentes elérését.
 
 ```csharp
 using System;
@@ -27,52 +27,52 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Most pedig nézzük meg a vízjel dokumentumhoz való hozzáadásának folyamatát a GroupDocs.Viewer for .NET segítségével. Kövesse ezeket a lépéseket, hogy zökkenőmentesen integrálja a vízjel funkciót az alkalmazásba.
-## 1. lépés: Állítsa be a kimeneti könyvtárat
+Most pedig nézzük meg, hogyan adhatunk hozzá vízjelet egy dokumentumhoz a GroupDocs.Viewer for .NET használatával. Kövesse az alábbi lépéseket a vízjelezési funkciók zökkenőmentes integrálásához az alkalmazásába.
+## 1. lépés: Kimeneti könyvtár beállítása
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 Adja meg azt a könyvtárat, ahová a kimeneti fájlokat menteni szeretné a vízjel alkalmazása után.
-## 2. lépés: Határozza meg az oldalfájl elérési út formátumát
+## 2. lépés: Oldalfájl elérési útjának formátumának meghatározása
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Állítsa be a megjelenített oldalak fájlútvonalának formátumát. Ebben a példában oldalszámokat tartalmazó HTML-fájlok jönnek létre.
-## 3. lépés: Példányosítsa a Viewer objektumot
+Állítsa be a megjelenített oldalak fájlútvonalainak formátumát. Ebben a példában oldalszámokkal ellátott HTML-fájlok generálódnak.
+## 3. lépés: Viewer objektum példányosítása
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 {
     // A kód a következő lépésben folytatódik...
 }
 ```
-Hozzon létre egy példányt a Viewer osztályból, paraméterként átadva a dokumentumfájl elérési útját. Ebben a példában egy minta DOCX fájlt használunk.
-## 4. lépés: Konfigurálja a HTML nézet beállításait
+Hozz létre egy példányt a Viewer osztályból, paraméterként adva meg a dokumentumfájl elérési útját. Ebben a példában egy minta DOCX fájlt használunk.
+## 4. lépés: HTML nézet beállításainak konfigurálása
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.Watermark = new Watermark("This is a watermark");
 ```
-Konfigurálja a HTML nézet beállításait, beleértve a dokumentumhoz hozzáadni kívánt vízjelszöveget.
-## 5. lépés: Tekintse meg a dokumentumot vízjellel
+Konfigurálja a HTML nézet beállításait, beleértve a dokumentumhoz hozzáadni kívánt vízjel szövegét is.
+## 5. lépés: Dokumentum megtekintése vízjellel
 ```csharp
 viewer.View(options);
 ```
-Hívja meg a Viewer objektum View metódusát, átadva a beállított opciókat. Ez a dokumentum a megadott vízjellel jeleníti meg.
-## 6. lépés: Jelenítse meg a kimeneti könyvtár elérési útját
+Hívd meg a Viewer objektum View metódusát, átadva a konfigurált opciókat. Ez a megadott vízjellel jeleníti meg a dokumentumot.
+## 6. lépés: Kimeneti könyvtár elérési útjának megjelenítése
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Tájékoztassa a felhasználót a dokumentum sikeres megjelenítéséről, és adja meg a könyvtárat, ahová a kimeneti fájlok mentésre kerülnek.
+Tájékoztassa a felhasználót a dokumentum sikeres renderelését, és adja meg a könyvtárat, ahová a kimeneti fájlok mentésre kerülnek.
 
 ## Következtetés
-A GroupDocs.Viewer for .NET kényelmes módot biztosít vízjelek programozott hozzáadására a dokumentumokhoz. Az oktatóanyagban ismertetett lépések követésével zökkenőmentesen integrálhatja a vízjel funkciót .NET-alkalmazásaiba, javítva a dokumentumok biztonságát és a márkaépítést.
+GroupDocs.Viewer for .NET kényelmes módszert kínál vízjelek programozott hozzáadására a dokumentumokhoz. Az ebben az oktatóanyagban ismertetett lépéseket követve zökkenőmentesen integrálhatja a vízjelezési funkciókat .NET alkalmazásaiba, javítva a dokumentumok biztonságát és arculatát.
 ## GYIK
 ### Testreszabhatom a vízjel megjelenését?
-Igen, testreszabhatja a vízjel különféle tulajdonságait, például szöveget, betűtípust, színt, méretet és pozíciót.
+Igen, testreszabhatja a vízjel különböző tulajdonságait, például a szöveget, a betűtípust, a színt, a méretet és a pozíciót.
 ### A GroupDocs.Viewer támogatja a távoli forrásokból származó dokumentumok megtekintését?
-Igen, a GroupDocs.Viewer támogatja a dokumentumok megtekintését a helyi tárhelyről, valamint a távoli URL-ekről.
-### Elérhető a GroupDocs.Viewer for .NET próbaverziója?
-Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.groupdocs.com/).
+Igen, a GroupDocs.Viewer támogatja a dokumentumok megtekintését a helyi tárolóból és a távoli URL-címekről is.
+### Van elérhető próbaverzió a GroupDocs.Viewer for .NET-hez?
+Igen, letölthet egy ingyenes próbaverziót innen [itt](https://releases.groupdocs.com/).
 ### Hozzáadhatok vízjelet egy dokumentum több oldalához?
-Természetesen a GroupDocs.Viewer lehetővé teszi vízjelek hozzáadását a dokumentum egyes oldalaihoz vagy összes oldalához.
+A GroupDocs.Viewer abszolút lehetővé teszi vízjelek hozzáadását a dokumentum egyes oldalaihoz vagy az összes oldalhoz.
 ### Hogyan kaphatok támogatást vagy segítséget, ha bármilyen problémába ütközöm?
- Kérhet segítséget és támogatást a GroupDocs közösségi fórumain[itt](https://forum.groupdocs.com/c/viewer/9).
+Segítséget és támogatást kérhet a GroupDocs közösségi fórumain. [itt](https://forum.groupdocs.com/c/viewer/9).

@@ -1,29 +1,31 @@
 ---
-title: Återge EMZ- och EMF-bilder
-linktitle: Återge EMZ- och EMF-bilder
-second_title: GroupDocs.Viewer .NET API
-description: Lär dig hur du återger EMZ- och EMF-bilder till olika format med GroupDocs.Viewer för .NET. Lätt att följa handledning för utvecklare.
-weight: 14
-url: /sv/net/image-rendering/render-emz-emf-images/
+"description": "Lär dig hur du renderar EMZ- och EMF-bilder till olika format med GroupDocs.Viewer för .NET. Lättförståelig handledning för utvecklare."
+"linktitle": "Rendera EMZ- och EMF-bilder"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Rendera EMZ- och EMF-bilder"
+"url": "/sv/net/image-rendering/render-emz-emf-images/"
+"weight": 14
 ---
 
-# Återge EMZ- och EMF-bilder
+# Rendera EMZ- och EMF-bilder
 
 ## Introduktion
 
-GroupDocs.Viewer för .NET är ett kraftfullt dokumentåtergivnings-API som låter utvecklare visa olika dokumenttyper, inklusive EMZ (Enhanced Windows Metafile) och EMF (Enhanced Metafile)-bilder, i sina .NET-applikationer. I den här handledningen kommer vi att utforska hur man renderar EMZ- och EMF-bilder till olika format som HTML, JPG, PNG och PDF med GroupDocs.Viewer för .NET.
+GroupDocs.Viewer för .NET är ett kraftfullt API för dokumentrendering som låter utvecklare visa olika dokumenttyper, inklusive EMZ-bilder (Enhanced Windows Metafile) och EMF-bilder (Enhanced Metafile), i sina .NET-applikationer. I den här handledningen kommer vi att utforska hur man renderar EMZ- och EMF-bilder till olika format som HTML, JPG, PNG och PDF med GroupDocs.Viewer för .NET.
 
-## Förutsättningar
+![Rendera EMZ- och EMF-bilder med GroupDocs.Viewer för .NET](/viewer/image-rendering/render-emz-and-emf-images.png)
+
+## Förkunskapskrav
 
 Innan vi börjar, se till att du har följande förutsättningar:
 
-1.  GroupDocs.Viewer för .NET: Du kan ladda ner biblioteket från[här](https://releases.groupdocs.com/viewer/net/).
-2. Utvecklingsmiljö: Se till att du har en kompatibel utvecklingsmiljö inställd för .NET-utveckling.
+1. GroupDocs.Viewer för .NET: Du kan ladda ner biblioteket från [här](https://releases.groupdocs.com/viewer/net/).
+2. Utvecklingsmiljö: Se till att du har en kompatibel utvecklingsmiljö konfigurerad för .NET-utveckling.
 3. Exempel på EMZ/EMF-bilder: Ha exempel på EMZ- och EMF-bilder tillgängliga för rendering.
 
-## Importera namnområden
+## Importera namnrymder
 
-Innan vi dyker in i koden, låt oss importera de nödvändiga namnrymden:
+Innan vi går in i koden, låt oss importera de nödvändiga namnrymderna:
 
 ```csharp
 using GroupDocs.Viewer.Options;
@@ -31,21 +33,21 @@ using System;
 using System.IO;
 ```
 
-Låt oss nu dela upp varje exempel i flera steg i ett steg-för-steg-guideformat:
+Nu ska vi dela upp varje exempel i flera steg i en steg-för-steg-guide:
 
-## Återge EMZ/EMF-bilder till HTML
+## Rendera EMZ/EMF-bilder till HTML
 
 ### Steg 1: Ställ in utdatakatalog:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Byta ut`"Your Document Directory"`med sökvägen där du vill spara den renderade HTML-filen.
+Ersätta `"Your Document Directory"` med sökvägen där du vill spara den renderade HTML-filen.
 
-### Steg 2: Definiera sidfilssökvägsformat:
+### Steg 2: Definiera sökvägsformat för sidfil:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "emz_result.html");
 ```
-Detta kommer att ange filsökvägsformatet för den renderade HTML-filen.
+Detta anger sökvägsformatet för den renderade HTML-filen.
 
 ### Steg 3: Rendera till HTML:
 ```csharp
@@ -56,47 +58,47 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
     viewer.View(options);
 }
 ```
- Denna kod initierar`Viewer` objektet med EMZ-exemplet och renderar det till HTML-format med angivna alternativ.
+Denna kod initierar `Viewer` objektet med exempel-EMZ-bilden och renderar den till HTML-format med angivna alternativ.
 
-## Återge EMZ/EMF-bilder till JPG, PNG och PDF
+## Rendera EMZ/EMF-bilder till JPG, PNG och PDF
 
 Upprepa följande steg för att rendera till JPG-, PNG- och PDF-format:
 
-### Steg 1: Definiera sidfilssökvägsformat:
+### Steg 1: Definiera sökvägsformat för sidfil:
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "emz_result.jpg");
 ```
-Justera filnamnet och filtillägget enligt önskat utdataformat (`jpg`, `png` , eller`pdf`).
+Justera filnamnet och filändelsen enligt önskat utdataformat (`jpg`, `png`, eller `pdf`).
 
 ### Steg 2: Rendera till respektive format:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
 {
-    // Justera alternativen enligt utdataformatet (Jpg, Png, Pdf)
+    // Justera alternativen efter utdataformatet (JPG, PNG, Pdf)
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     
     viewer.View(options);
 }
 ```
- Byta ut`JpgViewOptions` med`PngViewOptions` eller`PdfViewOptions` baserat på önskat utdataformat.
+Ersätta `JpgViewOptions` med `PngViewOptions` eller `PdfViewOptions` baserat på önskat utdataformat.
 
 ## Slutsats
 
-Sammanfattningsvis erbjuder GroupDocs.Viewer för .NET en sömlös lösning för att rendera EMZ- och EMF-bilder till olika format i .NET-applikationer. Genom att följa stegen som beskrivs i denna handledning kan utvecklare enkelt integrera dokumentåtergivningsmöjligheter i sina applikationer.
+Sammanfattningsvis erbjuder GroupDocs.Viewer för .NET en sömlös lösning för att rendera EMZ- och EMF-bilder till olika format i .NET-applikationer. Genom att följa stegen som beskrivs i den här handledningen kan utvecklare enkelt integrera dokumentrenderingsfunktioner i sina applikationer.
 
-## FAQ's
+## Vanliga frågor
 
-### F: Kan GroupDocs.Viewer återge andra dokumentformat förutom EMZ- och EMF-bilder?
-S: Ja, GroupDocs.Viewer stöder ett brett utbud av dokumentformat inklusive PDF, DOCX, PPTX, XLSX och mer.
+### F: Kan GroupDocs.Viewer rendera andra dokumentformat förutom EMZ- och EMF-bilder?
+A: Ja, GroupDocs.Viewer stöder en mängd olika dokumentformat, inklusive PDF, DOCX, PPTX, XLSX med flera.
 
-### F: Finns det en gratis testversion tillgänglig för GroupDocs.Viewer för .NET?
- S: Ja, du kan komma åt den kostnadsfria provperioden[här](https://releases.groupdocs.com/).
+### F: Finns det en gratis testversion av GroupDocs.Viewer för .NET?
+A: Ja, du kan få tillgång till gratis provperioden [här](https://releases.groupdocs.com/).
 
 ### F: Erbjuder GroupDocs.Viewer stöd för utvecklare?
- S: Ja, GroupDocs tillhandahåller support genom sin[forum](https://forum.groupdocs.com/c/viewer/9) där utvecklare kan ställa frågor och söka hjälp.
+A: Ja, GroupDocs tillhandahåller support genom sina [forum](https://forum.groupdocs.com/c/viewer/9) där utvecklare kan ställa frågor och söka hjälp.
 
 ### F: Kan jag köpa en tillfällig licens för GroupDocs.Viewer för .NET?
- S: Ja, tillfälliga licenser finns att köpa[här](https://purchase.groupdocs.com/temporary-license/).
+A: Ja, tillfälliga licenser finns att köpa [här](https://purchase.groupdocs.com/temporary-license/).
 
 ### F: Var kan jag hitta detaljerad dokumentation för GroupDocs.Viewer för .NET?
- S: Du kan hänvisa till dokumentationen[här](https://tutorials.groupdocs.com/viewer/net/)för omfattande vägledning om hur du använder API.
+A: Du kan hänvisa till dokumentationen [här](https://tutorials.groupdocs.com/viewer/net/) för omfattande vägledning om hur man använder API:et.

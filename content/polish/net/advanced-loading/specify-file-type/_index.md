@@ -1,24 +1,27 @@
 ---
-title: Określ typ pliku podczas ładowania dokumentów
-linktitle: Określ typ pliku podczas ładowania dokumentów
-second_title: GroupDocs.Viewer API .NET
-description: Dowiedz się, jak określić typ pliku podczas ładowania dokumentów za pomocą programu GroupDocs.Viewer dla platformy .NET. Dokładne renderowanie różnych formatów w aplikacjach .NET.
-weight: 10
-url: /pl/net/advanced-loading/specify-file-type/
+"description": "Dowiedz się, jak określić typ pliku podczas ładowania dokumentów za pomocą GroupDocs.Viewer dla .NET. Renderuj różne formaty dokładnie w swoich aplikacjach .NET."
+"linktitle": "Określ typ pliku podczas ładowania dokumentów"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Określ typ pliku podczas ładowania dokumentów"
+"url": "/pl/net/advanced-loading/specify-file-type/"
+"weight": 10
 ---
 
 # Określ typ pliku podczas ładowania dokumentów
 
 ## Wstęp
-GroupDocs.Viewer dla .NET to wszechstronny interfejs API do renderowania dokumentów, który obsługuje szeroką gamę formatów plików, w tym DOCX, PDF, PPTX i inne. Określając typ pliku podczas ładowania dokumentów, możesz zapewnić użytkownikom dokładne renderowanie i płynne przeglądanie.
-## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące wymagania wstępne:
-- Podstawowa znajomość C# i frameworku .NET.
+GroupDocs.Viewer dla .NET to wszechstronny interfejs API do renderowania dokumentów, który obsługuje szeroki zakres formatów plików, w tym DOCX, PDF, PPTX i inne. Określając typ pliku podczas ładowania dokumentów, możesz zapewnić dokładne renderowanie i płynne przeglądanie dla swoich użytkowników.
+
+![Określ typ pliku podczas ładowania dokumentów w GroupDocs.Viewer dla .NET](/viewer/advanced-loading/specify-file-type-when-loading-documents-img.png)
+
+## Wymagania wstępne
+Zanim zaczniesz, upewnij się, że spełniasz następujące wymagania wstępne:
+- Podstawowa znajomość języka C# i .NET Framework.
 - Program Visual Studio zainstalowany w systemie.
-- GroupDocs.Viewer dla .NET zainstalowany w Twoim projekcie. Można go pobrać z[Tutaj](https://releases.groupdocs.com/viewer/net/).
+- GroupDocs.Viewer dla .NET zainstalowany w Twoim projekcie. Możesz go pobrać z [Tutaj](https://releases.groupdocs.com/viewer/net/).
 ##
 ## Importuj przestrzenie nazw
-Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw do swojego kodu C#. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do renderowania dokumentów.
+Najpierw musisz zaimportować niezbędne przestrzenie nazw do swojego kodu C#. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do renderowania dokumentu.
 ```csharp
 using System;
 using System.IO;
@@ -29,13 +32,13 @@ Zdefiniuj katalog, w którym chcesz zapisać wyrenderowane strony dokumentu.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Krok 2: Zdefiniuj format ścieżki pliku strony
-Określ format nazewnictwa wyjściowych plików HTML dla każdej strony dokumentu.
+## Krok 2: Zdefiniuj format ścieżki pliku stronicowania
+Określ format nazewnictwa plików wyjściowych HTML dla każdej strony dokumentu.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 ## Krok 3: Określ opcje ładowania
- Utwórz instancję`LoadOptions` class i ustaw żądany typ pliku.
+Utwórz instancję `LoadOptions` klasę i ustaw żądany typ pliku.
 ```csharp
 LoadOptions loadOptions = new LoadOptions
 {
@@ -43,7 +46,7 @@ LoadOptions loadOptions = new LoadOptions
 };
 ```
 ## Krok 4: Załaduj dokument i renderuj
- Użyj`Viewer` class, aby załadować dokument i wyrenderować go do formatu HTML.
+Użyj `Viewer` Klasa służąca do załadowania dokumentu i renderowania go do formatu HTML.
 ```csharp
 using (Viewer viewer = new Viewer("YourDocument.docx", loadOptions))
 {
@@ -52,21 +55,21 @@ using (Viewer viewer = new Viewer("YourDocument.docx", loadOptions))
 }
 ```
 ## Krok 5: Wyświetl komunikat o powodzeniu
-Poinformuj użytkownika, że dokument został pomyślnie wyrenderowany i określ lokalizację plików wyjściowych.
+Poinformuj użytkownika, że dokument został pomyślnie wyrenderowany i podaj lokalizację plików wyjściowych.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Wniosek
-tym samouczku nauczyliśmy się, jak używać programu GroupDocs.Viewer dla platformy .NET do określania typu pliku podczas ładowania dokumentów. Wykonując te proste kroki, możesz zapewnić dokładne renderowanie różnych formatów dokumentów w aplikacjach .NET.
-## Często zadawane pytania
-### Czy mogę renderować dokumenty inne niż DOCX przy użyciu GroupDocs.Viewer dla .NET?
+tym samouczku nauczyliśmy się, jak używać GroupDocs.Viewer dla .NET, aby określić typ pliku podczas ładowania dokumentów. Postępując zgodnie z tymi prostymi krokami, możesz zapewnić dokładne renderowanie różnych formatów dokumentów w swoich aplikacjach .NET.
+## Najczęściej zadawane pytania
+### Czy mogę renderować dokumenty inne niż DOCX za pomocą GroupDocs.Viewer dla .NET?
 Tak, GroupDocs.Viewer obsługuje szeroką gamę formatów plików, w tym PDF, PPTX, XLSX i inne.
 ### Czy GroupDocs.Viewer dla .NET jest zgodny z .NET Core?
 Tak, GroupDocs.Viewer dla .NET jest kompatybilny zarówno z .NET Framework, jak i .NET Core.
-### Czy mogę dostosować wyjściowe pliki HTML wygenerowane przez GroupDocs.Viewer?
-Tak, możesz dostosować dane wyjściowe HTML, korzystając z różnych opcji dostępnych w interfejsie API.
+### Czy mogę dostosować pliki wyjściowe HTML generowane przez GroupDocs.Viewer?
+Tak, możesz dostosować dane wyjściowe HTML, korzystając z różnych opcji udostępnianych przez API.
 ### Czy GroupDocs.Viewer dla .NET wymaga jakichkolwiek zewnętrznych zależności?
 Nie, GroupDocs.Viewer dla .NET jest samodzielną biblioteką i nie wymaga żadnych zewnętrznych zależności.
-### Czy dostępna jest wersja próbna programu GroupDocs.Viewer dla platformy .NET?
-Tak, możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.groupdocs.com/viewer/net/).
+### Czy jest dostępna wersja próbna GroupDocs.Viewer dla .NET?
+Tak, możesz pobrać bezpłatną wersję próbną ze strony [Tutaj](https://releases.groupdocs.com/viewer/net/).

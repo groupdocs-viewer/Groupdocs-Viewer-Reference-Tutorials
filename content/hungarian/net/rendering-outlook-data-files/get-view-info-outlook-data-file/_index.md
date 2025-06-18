@@ -1,61 +1,61 @@
 ---
-title: Megtekintési információk megtekintése az Outlook adatfájlokhoz (PST, OST)
-linktitle: Megtekintési információk megtekintése az Outlook adatfájlokhoz (PST, OST)
-second_title: GroupDocs.Viewer .NET API
-description: Fedezze fel, hogyan nyerhet ki nézeti információkat az Outlook adatfájlokból (PST, OST) a GroupDocs.Viewer for .NET segítségével. Fokozatmentesen fokozza dokumentumkezelési képességeit.
-weight: 10
-url: /hu/net/rendering-outlook-data-files/get-view-info-outlook-data-file/
+"description": "Fedezze fel, hogyan kinyerheti a nézetadatokat az Outlook adatfájlokból (PST, OST) a GroupDocs.Viewer for .NET segítségével. Bővítse dokumentumkezelési képességeit könnyedén."
+"linktitle": "Outlook adatfájlok (PST, OST) megtekintési információinak lekérése"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Outlook adatfájlok (PST, OST) megtekintési információinak lekérése"
+"url": "/hu/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
+"weight": 10
 ---
 
-# Megtekintési információk megtekintése az Outlook adatfájlokhoz (PST, OST)
+# Outlook adatfájlok (PST, OST) megtekintési információinak lekérése
 
 ## Bevezetés
-A dokumentumkezelés és -megtekintés területén a GroupDocs.Viewer for .NET hatékony eszköz, különösen az Outlook Data Files (PST, OST) kezelésénél. Ebben az oktatóanyagban lépésről lépésre elmélyülünk a fájlok nézeti információinak kinyerésének folyamatában.
+dokumentumkezelés és -megtekintés területén a GroupDocs.Viewer for .NET hatékony eszköz, különösen az Outlook adatfájlok (PST, OST) kezelésében. Ebben az oktatóanyagban lépésről lépésre bemutatjuk, hogyan lehet kinyerni a nézetadatokat ezekből a fájlokból.
 ## Előfeltételek
-Mielőtt elkezdené ezt az oktatóanyagot, győződjön meg arról, hogy a következő előfeltételeket teljesítette:
+Mielőtt belekezdenénk ebbe az oktatóanyagba, győződjünk meg arról, hogy a következő előfeltételek teljesülnek:
 ### 1. A GroupDocs.Viewer telepítése .NET-hez
- Először is telepítenie kell a GroupDocs.Viewer for .NET programot a fejlesztői környezetébe. A szükséges csomagot letöltheti a[GroupDocs.Viewer .NET webhelyhez](https://releases.groupdocs.com/viewer/net/).
+Először is telepítenie kell a GroupDocs.Viewer for .NET csomagot a fejlesztői környezetében. A szükséges csomagot letöltheti innen: [GroupDocs.Viewer for .NET webhely](https://releases.groupdocs.com/viewer/net/).
 ### 2. C# programozási nyelv ismerete
-A megadott kódpéldák megértéséhez és megvalósításához elengedhetetlen a C# programozási nyelv alapismerete.
+A C# programozási nyelv alapvető ismerete elengedhetetlen a megadott kódpéldák megértéséhez és megvalósításához.
 ### 3. Outlook adatfájlok (PST, OST)
-Győződjön meg arról, hogy az Outlook Data Files (PST, OST) rendelkezésre áll tesztelési célokra. Mintafájlokat szerezhet be különböző forrásokból, vagy használhatja saját adatfájljait.
+Győződjön meg róla, hogy tesztelési célokra rendelkezésre állnak Outlook adatfájlok (PST, OST). Mintafájlokat szerezhet be különböző forrásokból, vagy használhatja saját adatfájljait.
 
 ## Névterek importálása
-Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy importáljuk a szükséges névtereket:
+Mielőtt belemerülnénk a kódba, ellenőrizzük, hogy importáltuk-e a szükséges névtereket:
 ```csharp
 using System;
 using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-Most bontsuk fel a megadott példát több lépésre:
-## 1. lépés: Példányosítsa a Viewer Object-et
+Most bontsuk le a bemutatott példát több lépésre:
+## 1. lépés: A Viewer objektum példányosítása
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_OST_SUBFOLDERS))
 ```
-Itt inicializálunk egy Viewer objektumot az Outlook Data File (OST) elérési útjával, amely argumentumként van megadva.
-## 2. lépés: Állítsa be a Nézet információs beállításait
+Itt inicializálunk egy Viewer objektumot az Outlook adatfájl (OST) elérési útjával, amely argumentumként van megadva.
+## 2. lépés: A nézetinformációk beállításainak konfigurálása
 ```csharp
 ViewInfoOptions options = ViewInfoOptions.ForHtmlView();
 ```
-Beállítjuk a nézetinformációk lekérésének lehetőségeit. Ebben az esetben a HTML nézetet választjuk.
-## 3. lépés: Az Outlook View információinak lekérése
+A nézetinformációk lekérésének beállításait állítjuk be. Ebben az esetben a HTML nézetet választjuk.
+## 3. lépés: Outlook nézetadatok lekérése
 ```csharp
 OutlookViewInfo rootFolderInfo = viewer.GetViewInfo(options) as OutlookViewInfo;
 ```
-Ez a sor lekéri az Outlook adatfájl nézeti adatait.
+Ez a sor az Outlook adatfájl nézetadatait kéri le.
 ## 4. lépés: Fájltípus és oldalszám megjelenítése
 ```csharp
 Console.WriteLine("File type is: " + rootFolderInfo.FileType);
 Console.WriteLine("Pages count: " + rootFolderInfo.Pages.Count);
 ```
-Kinyomtatjuk a fájl típusát és az oldalak számát az Outlook adatfájlban.
-## 5. lépés: Ismétlés mappákon keresztül
+Kinyomtatjuk a fájltípust és az Outlook adatfájlban található oldalak számát.
+## 5. lépés: Ismételd át a mappákat
 ```csharp
 foreach (string folder in rootFolderInfo.Folders)
     Console.WriteLine(folder);
 ```
-Ez a ciklus ismétlődik az Outlook adatfájljában található mappákon, és kinyomtatja azok nevét.
+Ez a ciklus végigmegy az Outlook adatfájlban található mappákon, és kinyomtatja a nevüket.
 ## 6. lépés: A visszakeresés véglegesítése
 ```csharp
 Console.WriteLine("\nView info retrieved successfully.");
@@ -63,15 +63,15 @@ Console.WriteLine("\nView info retrieved successfully.");
 Megjelenik egy üzenet, amely jelzi a nézetinformációk sikeres lekérését.
 
 ## Következtetés
-A GroupDocs.Viewer for .NET zökkenőmentes megoldást kínál a nézeti információk Outlook adatfájlokból (PST, OST) való kinyerésére. Az oktatóanyagban ismertetett lépések követésével könnyedén nyerhet értékes betekintést ezekbe a fájlokba a továbbfejlesztett dokumentumkezelés érdekében.
+A GroupDocs.Viewer for .NET zökkenőmentes megoldást kínál a nézetadatok kinyerésére az Outlook adatfájlokból (PST, OST). Az ebben az oktatóanyagban ismertetett lépéseket követve könnyedén értékes információkhoz juthat ezekből a fájlokból a hatékonyabb dokumentumkezelés érdekében.
 ## GYIK
-### GroupDocs.Viewer for .NET kompatibilis az Outlook Data Files különböző verzióival?
-Igen, a GroupDocs.Viewer for .NET támogatja az Outlook Data Files különféle verzióit, biztosítva a kompatibilitást a különböző környezetekben.
-### Testreszabhatom az Outlook Data Files megtekintési beállításait a GroupDocs.Viewer for .NET segítségével?
-Teljesen! A GroupDocs.Viewer for .NET kiterjedt testreszabási lehetőségeket kínál, amelyek lehetővé teszik, hogy a megtekintési élményt az Ön igényei szerint szabja személyre.
-### A GroupDocs.Viewer for .NET támogatja az Outlook Data Files mellett más fájlformátumokat is?
-Igen, a GroupDocs.Viewer for .NET fájlformátumok széles skáláját támogatja, beleértve, de nem kizárólagosan a PDF, DOCX, XLSX és egyebeket.
-### Elérhető ingyenes próbaverzió a GroupDocs.Viewer for .NET számára?
- Igen, elérheti a GroupDocs.Viewer for .NET ingyenes próbaverzióját a következő webhelyről:[Ingyenes próbaverzió](https://releases.groupdocs.com/).
+### Kompatibilis a GroupDocs.Viewer for .NET az Outlook adatfájlok különböző verzióival?
+Igen, a GroupDocs.Viewer for .NET támogatja az Outlook adatfájlok különböző verzióit, biztosítva a kompatibilitást a különböző környezetek között.
+### Testreszabhatom az Outlook adatfájlok nézetbeállításait a GroupDocs.Viewer for .NET használatával?
+Abszolút! A GroupDocs.Viewer for .NET széleskörű testreszabási lehetőségeket kínál, lehetővé téve a megtekintési élmény igényeinek megfelelő testreszabását.
+### A GroupDocs.Viewer for .NET támogatja az Outlook adatfájlokon kívül más fájlformátumokat is?
+Igen, a GroupDocs.Viewer for .NET számos fájlformátumot támogat, beleértve többek között a PDF, DOCX, XLSX és más fájlokat.
+### Van ingyenes próbaverzió a GroupDocs.Viewer for .NET-hez?
+Igen, a GroupDocs.Viewer for .NET ingyenes próbaverzióját a következő weboldalon érheti el: [Ingyenes próbaverzió](https://releases.groupdocs.com/).
 ### Hol találok további támogatást vagy segítséget a GroupDocs.Viewer for .NET-hez?
- Ha kérdése van, vagy segítségre van szüksége, keresse fel a GroupDocs.Viewer for .NET támogatási fórumát:[Támogatás](https://forum.groupdocs.com/c/viewer/9).
+Bármilyen kérdés vagy segítség esetén látogassa meg a GroupDocs.Viewer for .NET támogatási fórumot: [Támogatás](https://forum.groupdocs.com/c/viewer/9).

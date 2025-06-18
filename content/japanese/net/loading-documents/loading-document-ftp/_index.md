@@ -1,22 +1,25 @@
 ---
-title: FTP からドキュメントをロードする (上級)
-linktitle: FTP からドキュメントをロードする (上級)
-second_title: GroupDocs.Viewer .NET API
-description: GroupDocs.Viewer for .NET をアプリケーションにシームレスに統合して、ドキュメントを効率的に表示します。 FTP からドキュメントを簡単にレンダリングします。
-weight: 13
-url: /ja/net/loading-documents/loading-document-ftp/
+"description": "GroupDocs.Viewer for .NETをアプリケーションにシームレスに統合し、効率的なドキュメント表示を実現します。FTPからのドキュメントも簡単にレンダリングできます。"
+"linktitle": "FTP からドキュメントを読み込む (詳細)"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "FTP からドキュメントを読み込む (詳細)"
+"url": "/ja/net/loading-documents/loading-document-ftp/"
+"weight": 13
 ---
 
-# FTP からドキュメントをロードする (上級)
+# FTP からドキュメントを読み込む (詳細)
 
 ## 導入
-GroupDocs.Viewer for .NET は、開発者がドキュメント表示機能を .NET アプリケーションにシームレスに統合できるようにする強力な API です。 PDF、Microsoft Office ドキュメント、またはその他の一般的なファイル形式を使用しているかどうかに関係なく、GroupDocs.Viewer は表示用にドキュメントをレンダリングするプロセスを簡素化し、ユーザーに豊かな表示エクスペリエンスを提供することをこれまでより簡単にします。
+GroupDocs.Viewer for .NETは、開発者が.NETアプリケーションにドキュメント表示機能をシームレスに統合できる強力なAPIです。PDF、Microsoft Officeドキュメント、その他の一般的なファイル形式を扱う場合でも、GroupDocs.Viewerはドキュメントの表示レンダリングプロセスを簡素化し、ユーザーにこれまで以上に充実した表示エクスペリエンスを提供します。
+
+![GroupDocs.Viewer .NET を使用して FTP からドキュメントを読み込む](/viewer/loading-documents/load-documents-from-ftp.png)
+
 ## 前提条件
 GroupDocs.Viewer for .NET の使用を開始する前に、次の前提条件が満たされていることを確認してください。
 1. 開発環境: Visual Studio と .NET Framework がインストールされた開発環境をセットアップします。
-2.  GroupDocs.Viewer のインストール: GroupDocs.Viewer for .NET を次の場所からダウンロードしてインストールします。[Webサイト](https://releases.groupdocs.com/viewer/net/).
-3. ライセンス: GroupDocs.Viewer の有効なライセンスを取得します。からライセンスを購入できます。[GroupDocs Web サイト](https://purchase.groupdocs.com/buy)または、テスト目的で一時ライセンスを利用します ([仮免許](https://purchase.groupdocs.com/temporary-license/)）。
-4. .NET の基本的な理解: C# 構文やストリームの操作など、.NET 開発の基本を理解します。
+2. GroupDocs.Viewerのインストール: GroupDocs.Viewer for .NETを以下のサイトからダウンロードしてインストールします。 [Webサイト](https://releases。groupdocs.com/viewer/net/).
+3. ライセンス: GroupDocs.Viewerの有効なライセンスを取得してください。 [GroupDocsウェブサイト](https://purchase.groupdocs.com/buy) またはテスト目的で一時ライセンスを利用する（[一時ライセンス](https://purchase.groupdocs.com/temporary-license/)）。
+4. .NET の基本的な理解: C# 構文やストリームの操作など、.NET 開発の基礎を理解します。
 
 ## 名前空間のインポート
 アプリケーションで GroupDocs.Viewer for .NET の使用を開始するには、必要な名前空間をインポートします。
@@ -26,23 +29,23 @@ using System.IO;
 using System.Net;
 using GroupDocs.Viewer.Options;
 ```
-#ここで、提供された例を複数のステップに分けてみましょう:
-## ステップ 1: 出力ディレクトリを定義する
+#では、提供された例を複数のステップに分解してみましょう。
+## ステップ1: 出力ディレクトリを定義する
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 レンダリングされた HTML ページを保存する出力ディレクトリを設定します。
-## ステップ 2: ページ ファイルのパス形式を定義する
+## ステップ2: ページファイルパスの形式を定義する
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-生成される HTML ページに名前を付ける形式を指定します。
-## ステップ 3: ドキュメント ファイルのパスを設定する
+生成される HTML ページの命名形式を指定します。
+## ステップ3: ドキュメントファイルのパスを設定する
 ```csharp
-string filePath = ""; //例: ftp://localhost/sample.doc
+string filePath = ""; // 例：ftp://localhost/sample.doc
 ```
-ロードするドキュメント ファイルへのパスを指定します。これはローカル ファイル パスまたは URL である可能性があります。
-## ステップ 4: ファイル パスを検証する
+読み込むドキュメントファイルへのパスを指定します。ローカルファイルパスまたはURLを指定できます。
+## ステップ4: ファイルパスの検証
 ```csharp
 if (string.IsNullOrEmpty(filePath))
 {
@@ -51,12 +54,12 @@ if (string.IsNullOrEmpty(filePath))
 }
 ```
 ファイル パスが空または null でないことを確認してください。
-## ステップ 5: FTP からドキュメントをロードする
+## ステップ5: FTPからドキュメントを読み込む
 ```csharp
 Stream stream = GetFileFromFtp(filePath);
 ```
-FTPサーバーから文書ファイルを取得します。
-## ステップ 6: ドキュメントをレンダリングする
+FTP サーバーからドキュメント ファイルを取得します。
+## ステップ6: ドキュメントのレンダリング
 ```csharp
 using (Viewer viewer = new Viewer(stream))
 {
@@ -64,23 +67,23 @@ using (Viewer viewer = new Viewer(stream))
     viewer.View(options);
 }
 ```
-新しい Viewer インスタンスを作成し、HTML 表示オプションを使用してドキュメントをレンダリングします。
-## ステップ 7: 成功メッセージを表示する
+新しい Viewer インスタンスを作成し、HTML ビュー オプションを使用してドキュメントをレンダリングします。
+## ステップ7: 成功メッセージを表示する
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 ドキュメントが正常にレンダリングされたことをユーザーに通知し、出力ディレクトリを指定します。
 
 ## 結論
-結論として、GroupDocs.Viewer for .NET は、ドキュメント表示機能を .NET アプリケーションに統合するための堅牢なソリューションを開発者に提供します。このチュートリアルで概説されている手順に従うことで、FTP サーバーからドキュメントをすばやくロードして表示用にレンダリングし、アプリケーションのユーザー エクスペリエンスを向上させることができます。
+結論として、GroupDocs.Viewer for .NETは、開発者に.NETアプリケーションにドキュメント表示機能を統合するための堅牢なソリューションを提供します。このチュートリアルで概説した手順に従うことで、FTPサーバーからドキュメントを迅速に読み込み、レンダリングして表示することができ、アプリケーションのユーザーエクスペリエンスを向上させることができます。
 ## よくある質問
-### GroupDocs.Viewer for .NET を使用して、FTP 以外のソースからドキュメントをレンダリングできますか?
-はい、GroupDocs.Viewer は、ローカル ファイル システム、URL、ストリームなどのさまざまなソースからのドキュメントのレンダリングをサポートしています。
+### GroupDocs.Viewer for .NET を使用して、FTP 以外のソースからのドキュメントをレンダリングできますか?
+はい、GroupDocs.Viewer は、ローカル ファイル システム、URL、ストリームなど、さまざまなソースからのドキュメントのレンダリングをサポートしています。
 ### GroupDocs.Viewer for .NET を使用するにはライセンスが必要ですか?
-はい、実稼働環境で GroupDocs.Viewer を使用するには有効なライセンスが必要です。ただし、テスト目的で一時ライセンスを取得することもできます。
+はい、GroupDocs.Viewerを本番環境で使用するには有効なライセンスが必要です。ただし、テスト目的で一時ライセンスを取得することもできます。
 ### ドキュメントのレンダリング オプションをカスタマイズできますか?
-絶対に！ GroupDocs.Viewer は、ページの回転、透かしなどを含む、レンダリング プロセスをカスタマイズするための幅広いオプションを提供します。
+もちろんです! GroupDocs.Viewer には、ページの回転、透かしの追加など、レンダリング プロセスをカスタマイズするための幅広いオプションが用意されています。
 ### GroupDocs.Viewer はすべてのドキュメント形式をサポートしていますか?
-GroupDocs.Viewer は、PDF、Microsoft Office ドキュメント、画像などを含む、膨大なドキュメント形式をサポートしています。
-### GroupDocs.Viewer for .NET のテクニカル サポートは利用できますか?
-はい。テクニカル サポートとリソースには、[GroupDocs フォーラム](https://forum.groupdocs.com/c/viewer/9)質問や問題が発生した場合のサポートを提供します。
+GroupDocs.Viewer は、PDF、Microsoft Office ドキュメント、画像など、さまざまなドキュメント形式をサポートしています。
+### GroupDocs.Viewer for .NET のテクニカル サポートは受けられますか?
+はい、テクニカルサポートとリソースは、 [GroupDocsフォーラム](https://forum.groupdocs.com/c/viewer/9) ご質問や問題が発生した場合のサポートについては、お問い合わせください。

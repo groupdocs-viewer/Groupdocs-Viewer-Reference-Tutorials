@@ -1,23 +1,26 @@
 ---
-title: CMX-Bilder rendern
-linktitle: CMX-Bilder rendern
-second_title: GroupDocs.Viewer .NET-API
-description: Erfahren Sie, wie Sie CMX-Bilder mit GroupDocs.Viewer für .NET mühelos in verschiedene Formate rendern. Verbessern Sie Ihr Dokumentenmanagement.
-weight: 13
-url: /de/net/image-rendering/render-cmx-images/
+"description": "Erfahren Sie, wie Sie mit GroupDocs.Viewer für .NET mühelos CMX-Bilder in verschiedene Formate rendern. Optimieren Sie Ihr Dokumentenmanagement."
+"linktitle": "CMX-Bilder rendern"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "CMX-Bilder rendern"
+"url": "/de/net/image-rendering/render-cmx-images/"
+"weight": 13
 ---
 
 # CMX-Bilder rendern
 
 ## Einführung
-Im Bereich der Dokumentenverwaltung und -bearbeitung ist das Rendern von Bildern aus verschiedenen Formaten eine zentrale Aufgabe. GroupDocs.Viewer für .NET vereinfacht diesen Prozess, indem es umfassende Funktionen zum Rendern von CMX-Bildern in verschiedene Formate wie HTML, JPG, PNG und PDF bereitstellt. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess des Renderns von CMX-Bildern mit GroupDocs.Viewer für .NET.
+Im Bereich der Dokumentenverwaltung und -bearbeitung ist die Darstellung von Bildern in verschiedenen Formaten eine zentrale Aufgabe. GroupDocs.Viewer für .NET vereinfacht diesen Prozess durch umfassende Funktionen zur Darstellung von CMX-Bildern in verschiedenen Formaten wie HTML, JPG, PNG und PDF. Dieses Tutorial führt Sie Schritt für Schritt durch die Darstellung von CMX-Bildern mit GroupDocs.Viewer für .NET.
+
+![Rendern Sie CMX-Bilder mit GroupDocs.Viewer für .NET](/viewer/image-rendering/render-cmx-images.png)
+
 ## Voraussetzungen
-Bevor Sie mit dem Tutorial beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
-1.  GroupDocs.Viewer für .NET-Bibliothek: Laden Sie die GroupDocs.Viewer für .NET-Bibliothek von herunter und installieren Sie sie[Hier](https://releases.groupdocs.com/viewer/net/).
-2. Entwicklungsumgebung: Richten Sie eine funktionierende Entwicklungsumgebung mit dem .NET Framework ein.
+Bevor Sie mit dem Lernprogramm beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+1. GroupDocs.Viewer für .NET-Bibliothek: Laden Sie die GroupDocs.Viewer für .NET-Bibliothek herunter und installieren Sie sie von [Hier](https://releases.groupdocs.com/viewer/net/).
+2. Entwicklungsumgebung: Richten Sie eine funktionierende Entwicklungsumgebung mit .NET Framework ein.
 3. CMX-Bilddatei: Besorgen Sie sich eine CMX-Bilddatei, die Sie rendern möchten.
 
-## Namensräume importieren
+## Namespaces importieren
 Bevor Sie fortfahren, stellen Sie sicher, dass Sie die erforderlichen Namespaces importieren, um auf die GroupDocs.Viewer-Funktionen in Ihrer .NET-Anwendung zuzugreifen:
 ```csharp
 using GroupDocs.Viewer.Options;
@@ -36,9 +39,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
 }
 ```
 - Ausgabeverzeichnis definieren: Legen Sie das Verzeichnis fest, in dem Sie die gerenderten HTML-Dateien speichern möchten.
-- Dateipfadformat angeben: Definieren Sie das Format für die ausgegebenen HTML-Dateien.
+- Dateipfadformat angeben: Definieren Sie das Format für die HTML-Ausgabedateien.
 - Viewer-Objekt instanziieren: Erstellen Sie eine Instanz der Viewer-Klasse mit der CMX-Bilddatei.
-- HTML-Rendering-Optionen: Konfigurieren Sie HTML-Rendering-Optionen, z. B. das Einbetten von Ressourcen.
+- HTML-Rendering-Optionen: Konfigurieren Sie HTML-Rendering-Optionen, beispielsweise das Einbetten von Ressourcen.
 - CMX in HTML rendern: Rufen Sie die View-Methode des Viewer-Objekts auf, um das CMX-Bild in HTML zu rendern.
 ## Rendern in JPG
 ```csharp
@@ -51,9 +54,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
 }
 ```
 - Ausgabeverzeichnis definieren: Legen Sie das Verzeichnis zum Speichern der gerenderten JPG-Dateien fest.
-- Dateipfadformat angeben: Definieren Sie das Format für die ausgegebenen JPG-Dateien.
+- Dateipfadformat angeben: Definieren Sie das Format für die JPG-Ausgabedateien.
 - Viewer-Objekt instanziieren: Erstellen Sie eine Instanz der Viewer-Klasse mit der CMX-Bilddatei.
-- JPG-Rendering-Optionen: Konfigurieren Sie JPG-Rendering-Optionen.
+- JPG-Rendering-Optionen: Konfigurieren Sie die JPG-Rendering-Optionen.
 - CMX in JPG rendern: Rufen Sie die View-Methode des Viewer-Objekts auf, um das CMX-Bild in JPG zu rendern.
 ## Rendern in PNG
 ```csharp
@@ -66,9 +69,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
 }
 ```
 - Ausgabeverzeichnis definieren: Legen Sie das Verzeichnis zum Speichern der gerenderten PNG-Dateien fest.
-- Dateipfadformat angeben: Definieren Sie das Format für die ausgegebenen PNG-Dateien.
+- Dateipfadformat angeben: Definieren Sie das Format für die PNG-Ausgabedateien.
 - Viewer-Objekt instanziieren: Erstellen Sie eine Instanz der Viewer-Klasse mit der CMX-Bilddatei.
-- PNG-Rendering-Optionen: Konfigurieren Sie PNG-Rendering-Optionen.
+- PNG-Rendering-Optionen: Konfigurieren Sie die PNG-Rendering-Optionen.
 - CMX in PNG rendern: Rufen Sie die View-Methode des Viewer-Objekts auf, um das CMX-Bild in PNG zu rendern.
 ## Rendern in PDF
 ```csharp
@@ -81,21 +84,21 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
 }
 ```
 - Ausgabeverzeichnis definieren: Legen Sie das Verzeichnis zum Speichern der gerenderten PDF-Datei fest.
-- Dateipfadformat angeben: Definieren Sie das Format für die Ausgabe-PDF-Datei.
+- Dateipfadformat angeben: Definieren Sie das Format für die PDF-Ausgabedatei.
 - Viewer-Objekt instanziieren: Erstellen Sie eine Instanz der Viewer-Klasse mit der CMX-Bilddatei.
 - PDF-Rendering-Optionen: Konfigurieren Sie PDF-Rendering-Optionen.
 - CMX in PDF rendern: Rufen Sie die View-Methode des Viewer-Objekts auf, um das CMX-Bild in PDF zu rendern.
 
 ## Abschluss
-Zusammenfassend bietet GroupDocs.Viewer für .NET eine robuste Lösung zum nahtlosen Rendern von CMX-Bildern in verschiedene Formate. Wenn Sie die in diesem Tutorial beschriebenen Schritte befolgen, können Sie CMX-Bildwiedergabefunktionen mühelos in Ihre .NET-Anwendungen integrieren und so die Effizienz der Dokumentenverwaltung steigern.
-## FAQs
+Zusammenfassend lässt sich sagen, dass GroupDocs.Viewer für .NET eine robuste Lösung für die nahtlose Darstellung von CMX-Bildern in verschiedenen Formaten bietet. Mit den in diesem Tutorial beschriebenen Schritten können Sie CMX-Bildrendering-Funktionen mühelos in Ihre .NET-Anwendungen integrieren und so die Effizienz Ihres Dokumentenmanagements steigern.
+## Häufig gestellte Fragen
 ### Kann ich bestimmte Seiten eines CMX-Bildes rendern?
-Ja, Sie können bestimmte Seiten rendern, indem Sie die Seitenzahl in den Rendering-Optionen angeben.
+Ja, Sie können bestimmte Seiten rendern, indem Sie die Seitenzahl in den Renderoptionen angeben.
 ### Ist GroupDocs.Viewer für .NET mit allen .NET-Frameworks kompatibel?
-Ja, GroupDocs.Viewer für .NET ist mit mehreren .NET Frameworks kompatibel, einschließlich .NET Core und .NET Framework.
+Ja, GroupDocs.Viewer für .NET ist mit mehreren .NET-Frameworks kompatibel, einschließlich .NET Core und .NET Framework.
 ### Unterstützt GroupDocs.Viewer das Rendern verschlüsselter CMX-Bilder?
 Ja, GroupDocs.Viewer unterstützt das Rendern verschlüsselter CMX-Bilder mit entsprechenden Entschlüsselungsschlüsseln.
 ### Kann ich die Rendering-Optionen für verschiedene Ausgabeformate anpassen?
-Auf jeden Fall bietet GroupDocs.Viewer umfangreiche Optionen zum Anpassen der Rendering-Parameter entsprechend Ihren Anforderungen.
-### Gibt es ein Community-Forum für GroupDocs.Viewer-Unterstützung?
- Ja, Sie können im Support-Forum Hilfe suchen und mit der GroupDocs.Viewer-Community in Kontakt treten[Hier](https://forum.groupdocs.com/c/viewer/9).
+Absolut, GroupDocs.Viewer bietet umfangreiche Optionen zum Anpassen der Rendering-Parameter basierend auf Ihren Anforderungen.
+### Gibt es ein Community-Forum für GroupDocs.Viewer-Support?
+Ja, Sie können Hilfe suchen und sich mit der GroupDocs.Viewer-Community im Support-Forum austauschen. [Hier](https://forum.groupdocs.com/c/viewer/9).

@@ -1,71 +1,71 @@
 ---
-title: Sayfa Sonlarına Göre Oluşturma
-linktitle: Sayfa Sonlarına Göre Oluşturma
-second_title: GroupDocs.Viewer .NET API'si
-description: Belgeleri hassas bir şekilde işleme konusunda GroupDocs.Viewer for .NET'in gücünü keşfedin. Sayfa sonlarına göre işleme için adım adım eğitimimizi izleyin.
-weight: 14
-url: /tr/net/spreadsheet-rendering-options/rendering-by-page-breaks/
+"description": "GroupDocs.Viewer for .NET'in belgeleri hassasiyetle işleme gücünü keşfedin. Sayfa sonlarına göre işleme için adım adım eğitimimizi izleyin."
+"linktitle": "Sayfa Sonlarına Göre İşleme"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Sayfa Sonlarına Göre İşleme"
+"url": "/tr/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
+"weight": 14
 ---
 
-# Sayfa Sonlarına Göre Oluşturma
+# Sayfa Sonlarına Göre İşleme
 
 ## giriiş
-Belgeleri sayfa sonlarına göre işlemeye ilişkin GroupDocs.Viewer for .NET eğitimine hoş geldiniz! Bu adım adım kılavuzda, özellikle sayfa sonlarına odaklanarak belgeleri hassas bir şekilde oluşturmak için GroupDocs.Viewer'ın güçlü özelliklerinden nasıl yararlanacağımızı keşfedeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu eğitim size süreç boyunca yol gösterecek ve her adımın net bir şekilde anlaşılmasını sağlayacaktır.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-- .NET geliştirmeyle ilgili temel bilgiler.
-- .NET kitaplığı için GroupDocs.Viewer yüklendi.
-- Geçerli bir kaynak belge (örneğin, PAGE_breakS.XLSX).
+Sayfa sonlarına göre belgeleri işleme konusunda GroupDocs.Viewer for .NET eğitimine hoş geldiniz! Bu adım adım kılavuzda, GroupDocs.Viewer'ın güçlü özelliklerini kullanarak belgeleri hassas bir şekilde işlemeyi, özellikle sayfa sonlarına odaklanmayı keşfedeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu eğitim sizi süreçte yönlendirecek ve her adım hakkında net bir anlayış sağlayacaktır.
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- .NET geliştirmenin temel bilgisi.
+- .NET kütüphanesi için GroupDocs.Viewer kuruldu.
+- Geçerli bir kaynak belge (örneğin, PAGE_BREAKS.XLSX).
 ## Ad Alanlarını İçe Aktar
-Başlamak için gerekli ad alanlarını .NET projenize aktardığınızdan emin olun. Bu, sayfa sonlarına göre işleme için gereken sınıflara ve yöntemlere erişmenizi sağlar.
+Başlamak için, gerekli ad alanlarını .NET projenize aktardığınızdan emin olun. Bu, sayfa sonlarına göre işleme için gereken sınıflara ve yöntemlere erişiminizin olmasını sağlar.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Adım 1: Çıktı Dizinini ve Dosya Yolunu Ayarlayın
-İşlenen belgenin çıktı dizinini ve dosya yolunu tanımlayarak başlayın.
+## Adım 1: Çıktı Dizini ve Dosya Yolunu Ayarlayın
+İşe, oluşturulan belge için çıktı dizinini ve dosya yolunu tanımlayarak başlayın.
 ```csharp
 string outputDirectory = "Your Document Directory";
 string outputFilePath = Path.Combine(outputDirectory, "output.pdf");
 ```
-## 2. Adım: Görüntüleyiciyi Başlatın
+## Adım 2: Görüntüleyiciyi Başlatın
 Kaynak belge yolunu sağlayarak Viewer sınıfının bir örneğini oluşturun.
 ```csharp
 using (Viewer viewer = new Viewer("PAGE_BREAKS.XLSX"))
 ```
-## 3. Adım: PDF Görünüm Seçeneklerini Yapılandırın
-Çıktı dosyası yolunu belirterek ve sayfa sonları için oluşturma seçeneklerini belirleyerek PdfViewOptions'ı ayarlayın.
+## Adım 3: PDF Görünüm Seçeneklerini Yapılandırın
+PdfViewOptions'ı ayarlayın, çıktı dosyası yolunu belirtin ve sayfa sonları için oluşturma seçeneklerini seçin.
 ```csharp
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 viewOptions.SpreadsheetOptions = SpreadsheetOptions.ForRenderingByPageBreaks();
 ```
-## Adım 4: Izgara Çizgilerini ve Başlıklarını Oluşturmayı Etkinleştirin
-Daha iyi görselleştirme için çıktıda kılavuz çizgilerinin ve başlıkların oluşturulmasını etkinleştirin.
+## Adım 4: Izgara Çizgileri ve Başlıklarının İşlenmesini Etkinleştirin
+Daha iyi görselleştirme için çıktıda ızgara çizgilerinin ve başlıkların oluşturulmasını etkinleştirin.
 ```csharp
 viewOptions.SpreadsheetOptions.RenderGridLines = true;
 viewOptions.SpreadsheetOptions.RenderHeadings = true;
 ```
-## Adım 5: Belge Oluşturmayı Gerçekleştirin
-Yapılandırılmış seçenekleri kullanarak oluşturma işlemini yürütün.
+## Adım 5: Belge İşlemeyi Gerçekleştirin
+Yapılandırılan seçenekleri kullanarak işleme sürecini gerçekleştirin.
 ```csharp
 viewer.View(viewOptions);
 ```
-## Adım 6: Başarı Mesajını Görüntüleyin
-Kullanıcıya kaynak belgenin başarıyla işlendiğini bildirin.
+## Adım 6: Başarı Mesajını Göster
+Kaynak belgenin başarıyla işlendiğini kullanıcıya bildirin.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 ## Çözüm
-Tebrikler! GroupDocs.Viewer for .NET'i kullanarak belgeleri sayfa sonlarına göre nasıl oluşturacağınızı başarıyla öğrendiniz. Bu güçlü özellik, belge görüntüleme yeteneklerinizi geliştirerek içeriğin nasıl görüntüleneceği üzerinde hassas kontrol sağlar. Oluşturmayı özel gereksinimlerinize göre özelleştirmek için farklı seçeneklerle denemeler yapın.
+Tebrikler! GroupDocs.Viewer for .NET kullanarak belgeleri sayfa sonlarına göre nasıl işleyeceğiniz konusunda başarılı bir şekilde bilgi edindiniz. Bu güçlü özellik, belge görüntüleme yeteneklerinizi geliştirerek içeriğin nasıl görüntülendiği konusunda hassas bir kontrol sağlar. İşlemeyi özel gereksinimlerinize göre özelleştirmek için farklı seçenekler deneyin.
 ## Sıkça Sorulan Sorular
-### S: Bu yaklaşımı kullanarak birden çok çalışma sayfası içeren belgeleri oluşturabilir miyim?
-C: Kesinlikle! GroupDocs.Viewer, birden fazla çalışma sayfası içeren belgelerin sorunsuz bir şekilde görüntülenmesini destekler.
-### S: Oluşturulabilecek dosya boyutunda bir sınır var mı?
-C: GroupDocs.Viewer büyük dosyaları işleyebilir ancak çok büyük belgelerle uğraşırken sistem kaynaklarının ve performansının dikkate alınması önerilir.
-### S: İşlenen belgenin görünümünü daha da özelleştirebilir miyim?
-C: Evet, GroupDocs.Viewer, çıktıyı özel ihtiyaçlarınıza göre uyarlamanıza olanak tanıyan çeşitli özelleştirme seçenekleri sunar.
-### S: Oluşturma işlemi sırasındaki hataları nasıl halledebilirim?
-C: Oluşturma sırasında olası sorunları zarif bir şekilde yönetmek için kodunuzda hata işleme mekanizmaları uygulamanız önerilir.
+### S: Bu yaklaşımı kullanarak birden fazla çalışma sayfası içeren belgeleri işleyebilir miyim?
+C: Kesinlikle! GroupDocs.Viewer, birden fazla çalışma sayfasına sahip belgelerin sorunsuz bir şekilde işlenmesini destekler.
+### S: İşlenebilecek dosya boyutunun bir sınırı var mı?
+A: GroupDocs.Viewer büyük dosyaları işleyebilir, ancak çok büyük belgelerle uğraşırken sistem kaynaklarını ve performansı göz önünde bulundurmanız önerilir.
+### S: Oluşturulan belgenin görünümünü daha fazla özelleştirebilir miyim?
+C: Evet, GroupDocs.Viewer çeşitli özelleştirme seçenekleri sunarak çıktıyı özel ihtiyaçlarınıza göre uyarlamanıza olanak tanır.
+### S: İşleme sürecinde oluşan hataları nasıl düzeltebilirim?
+A: Oluşturma sırasında ortaya çıkabilecek olası sorunları zarif bir şekilde yönetebilmek için kodunuzda hata işleme mekanizmaları uygulamanız önerilir.
 ### S: Ek destek ve tartışmalar için bir topluluk forumu var mı?
- C: Evet, ziyaret edebilirsiniz[GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) topluluk desteği ve tartışmalar için.
+A: Evet, ziyaret edebilirsiniz [GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) Topluluk desteği ve tartışmaları için.

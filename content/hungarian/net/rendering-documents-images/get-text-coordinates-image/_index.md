@@ -1,30 +1,30 @@
 ---
-title: Szerezzen szövegkoordinátákat a képmegjelenítéshez
-linktitle: Szerezzen szövegkoordinátákat a képmegjelenítéshez
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan bonthat ki szövegkoordinátákat képmegjelenítéshez a GroupDocs.Viewer for .NET segítségével. Fokozatmentesen fokozza dokumentumfeldolgozási képességeit.
-weight: 12
-url: /hu/net/rendering-documents-images/get-text-coordinates-image/
+"description": "Tanulja meg, hogyan kinyerheti a szövegkoordinátákat képmegjelenítéshez a GroupDocs.Viewer for .NET segítségével. Bővítse dokumentumfeldolgozási képességeit könnyedén."
+"linktitle": "Szövegkoordináták lekérése képmegjelenítéshez"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Szövegkoordináták lekérése képmegjelenítéshez"
+"url": "/hu/net/rendering-documents-images/get-text-coordinates-image/"
+"weight": 12
 ---
 
-# Szerezzen szövegkoordinátákat a képmegjelenítéshez
+# Szövegkoordináták lekérése képmegjelenítéshez
 
 ## Bevezetés
-A GroupDocs.Viewer for .NET egy hatékony dokumentum-megjelenítő API, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen rendereljenek dokumentumokat különféle formátumokban, például PDF, Microsoft Office és sok más formátumban. Egyik kulcsfontosságú funkciója a szöveg koordinátáinak kinyerése a precíz képmegjelenítés érdekében.
+A GroupDocs.Viewer for .NET egy hatékony dokumentumrenderelési API, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen rendereljék a dokumentumokat különböző formátumokban, például PDF-ben, Microsoft Office-ban és sok másban. Az egyik legfontosabb funkciója a szövegkoordináták kinyerése a pontos képmegjelenítés érdekében.
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-1.  GroupDocs.Viewer for .NET: Töltse le és telepítse a legújabb verziót innen[itt](https://releases.groupdocs.com/viewer/net/).
-2. Fejlesztési környezet: Állítsa be a kívánt IDE-t .NET-keretrendszer támogatással.
-3. Dokumentumfájlok: Készítsen mintadokumentumfájlokat teszteléshez.
+Mielőtt elkezdenénk, győződjünk meg arról, hogy a következő előfeltételekkel rendelkezünk:
+1. GroupDocs.Viewer .NET-hez: Töltse le és telepítse a legújabb verziót innen: [itt](https://releases.groupdocs.com/viewer/net/).
+2. Fejlesztői környezet: Állítsa be a kívánt IDE-t .NET keretrendszer támogatással.
+3. Dokumentumfájlok: Készítsen elő mintadokumentumfájlokat tesztelési célokra.
 
 ## Névterek importálása
-Mielőtt belemerülnénk a kódolási folyamatba, importáljuk a szükséges névtereket a GroupDocs.Viewer for .NET funkcióinak eléréséhez.
+Mielőtt belevágnánk a kódolási folyamatba, importáljuk a szükséges névtereket a GroupDocs.Viewer for .NET funkcióinak eléréséhez.
 ```csharp
 using System;
 using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
-## 1. lépés: Inicializálja a GroupDocs.Viewer programot
+## 1. lépés: A GroupDocs.Viewer inicializálása
 Kezdje a GroupDocs.Viewer objektum inicializálásával a feldolgozni kívánt dokumentumfájllal.
 ```csharp
 using (Viewer viewer = new Viewer("path/to/your/document"))
@@ -33,13 +33,13 @@ using (Viewer viewer = new Viewer("path/to/your/document"))
 }
 ```
 ## 2. lépés: Nézetinformációk lekérése
-Ezután kérje le a dokumentum nézeti adatait, beleértve a képmegjelenítés szövegkoordinátáit.
+Ezután kérje le a dokumentum nézetinformációit, beleértve a képmegjelenítés szöveges koordinátáit is.
 ```csharp
 ViewInfoOptions options = ViewInfoOptions.ForPngView(true);
 ViewInfo viewInfo = viewer.GetViewInfo(options);
 ```
-## 3. lépés: Ismétlés oldalakon keresztül
-A szöveges sorok, szavak és karakterek eléréséhez a dokumentum minden oldalát iterálja.
+## 3. lépés: Oldalak ismétlése
+Görgessen végig a dokumentum minden oldalán a szövegsorok, szavak és karakterek eléréséhez.
 ```csharp
 foreach (Page page in viewInfo.Pages)
 {
@@ -57,22 +57,22 @@ foreach (Page page in viewInfo.Pages)
     }
 }
 ```
-## 4. lépés: Szövegkoordináták kibontása
-Bontsa ki a szöveg koordinátáit a pontos képmegjelenítés megkönnyítése érdekében.
+## 4. lépés: Szövegkoordináták kinyerése
+A szöveg koordinátáinak kinyerése a pontos képmegjelenítés megkönnyítése érdekében.
 ```csharp
-// Itt található a szöveges koordináták kinyeréséhez szükséges kód
+// A szöveges koordináták kinyerésére szolgáló kódod ide kerül
 ```
 
 ## Következtetés
-Összefoglalva, a képmegjelenítéshez szükséges szövegkoordináták kinyerésének elsajátítása a GroupDocs.Viewer for .NET segítségével nagymértékben javíthatja dokumentumfeldolgozási képességeit. Az oktatóanyag követésével megtanulta a feladat hatékony végrehajtásának alapvető lépéseit.
+Összefoglalva, a szövegkoordináták kinyerésének elsajátítása képmegjelenítéshez a GroupDocs.Viewer for .NET segítségével jelentősen javíthatja dokumentumfeldolgozási képességeit. Az oktatóanyag követésével megismerkedhetett a feladat hatékony elvégzéséhez szükséges alapvető lépésekkel.
 ## GYIK
 ### A GroupDocs.Viewer for .NET kompatibilis az összes dokumentumformátummal?
-GroupDocs.Viewer for .NET a dokumentumformátumok széles skáláját támogatja, beleértve a PDF-et, a Microsoft Office-t és egyebeket.
-### Integrálhatom a GroupDocs.Viewer for .NET-et a meglévő .NET-alkalmazásomba?
-Igen, a GroupDocs.Viewer for .NET úgy lett kialakítva, hogy zökkenőmentesen integrálódjon a .NET-alkalmazásaiba.
+A GroupDocs.Viewer for .NET számos dokumentumformátumot támogat, beleértve a PDF-et, a Microsoft Office-t és egyebeket.
+### Integrálhatom a GroupDocs.Viewer for .NET-et a meglévő .NET alkalmazásomba?
+Igen, a GroupDocs.Viewer for .NET úgy lett kialakítva, hogy zökkenőmentesen integrálható legyen a .NET alkalmazásaiba.
 ### A GroupDocs.Viewer for .NET támogatja a szöveges koordináták kinyerését?
-Igen, amint az ebben az oktatóanyagban látható, a GroupDocs.Viewer for .NET funkciót biztosít a szöveges koordináták kivonásához.
+Igen, ahogy az ebben az oktatóanyagban is látható, a GroupDocs.Viewer for .NET funkciót biztosít a szöveges koordináták kinyerésére.
 ### Hol találok további dokumentációt és támogatást a GroupDocs.Viewer for .NET-hez?
- Hozzáférhet a dokumentációhoz, és támogatást kérhet a GroupDocs.Viewer fórumon[itt](https://forum.groupdocs.com/c/viewer/9).
-### Elérhető ingyenes próbaverzió a GroupDocs.Viewer for .NET számára?
- Igen, igénybe veheti az ingyenes próbaverziót a GroupDocs webhelyről[itt](https://releases.groupdocs.com/).
+dokumentációt elérheted és segítséget kérhetsz a GroupDocs.Viewer fórumon. [itt](https://forum.groupdocs.com/c/viewer/9).
+### Van ingyenes próbaverzió a GroupDocs.Viewer for .NET-hez?
+Igen, igénybe veheti az ingyenes próbaverziót a GroupDocs weboldalán. [itt](https://releases.groupdocs.com/).

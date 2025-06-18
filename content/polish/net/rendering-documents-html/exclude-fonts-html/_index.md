@@ -1,21 +1,21 @@
 ---
-title: Wyklucz czcionki z renderowanego kodu HTML
-linktitle: Wyklucz czcionki z renderowanego kodu HTML
-second_title: GroupDocs.Viewer API .NET
-description: Dowiedz się, jak wykluczać czcionki z renderowanego kodu HTML przy użyciu narzędzia GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby uzyskać płynne wyświetlanie dokumentów.
-weight: 10
-url: /pl/net/rendering-documents-html/exclude-fonts-html/
+"description": "Dowiedz się, jak wykluczyć czcionki z renderowanego HTML za pomocą GroupDocs.Viewer dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby uzyskać płynne wyświetlanie dokumentu."
+"linktitle": "Wyklucz czcionki z renderowanego HTML"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Wyklucz czcionki z renderowanego HTML"
+"url": "/pl/net/rendering-documents-html/exclude-fonts-html/"
+"weight": 10
 ---
 
-# Wyklucz czcionki z renderowanego kodu HTML
+# Wyklucz czcionki z renderowanego HTML
 
 ## Wstęp
-GroupDocs.Viewer dla .NET to potężna biblioteka do renderowania dokumentów, która umożliwia programistom wyświetlanie ponad 50 formatów dokumentów w aplikacjach .NET bez konieczności stosowania zewnętrznych zależności. W tym samouczku skupimy się na konkretnej funkcji GroupDocs.Viewer: wykluczaniu czcionek z renderowanego wyniku HTML. 
-## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-1. Podstawowa znajomość programowania w C# i .NET.
-2.  Zainstalowany GroupDocs.Viewer dla .NET. Można go pobrać z[Tutaj](https://releases.groupdocs.com/viewer/net/).
-3. Visual Studio lub dowolne inne IDE do programowania w języku C#.
+GroupDocs.Viewer dla .NET to potężna biblioteka renderowania dokumentów, która umożliwia deweloperom wyświetlanie ponad 50 formatów dokumentów w ich aplikacjach .NET bez konieczności zewnętrznych zależności. W tym samouczku skupimy się na konkretnej funkcji GroupDocs.Viewer: wykluczaniu czcionek z renderowanego wyjścia HTML. 
+## Wymagania wstępne
+Zanim zaczniesz, upewnij się, że masz następujące rzeczy:
+1. Podstawowa znajomość programowania w językach C# i .NET.
+2. GroupDocs.Viewer dla .NET zainstalowany. Możesz go pobrać z [Tutaj](https://releases.groupdocs.com/viewer/net/).
+3. Visual Studio lub inne środowisko IDE do programowania w języku C#.
 
 ## Importuj przestrzenie nazw
 W kodzie C# pamiętaj o uwzględnieniu niezbędnych przestrzeni nazw:
@@ -26,50 +26,50 @@ using GroupDocs.Viewer.Options;
 ```
 
 ## Krok 1: Zdefiniuj katalog wyjściowy
-Skonfiguruj katalog, w którym chcesz zapisywać renderowane pliki HTML.
+Skonfiguruj katalog, w którym chcesz zapisać wyrenderowane pliki HTML.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Krok 2: Zdefiniuj format ścieżki pliku strony
+## Krok 2: Zdefiniuj format ścieżki pliku stronicowania
 Określ format ścieżek plików poszczególnych stron renderowanego dokumentu.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## Krok 3: Zainicjuj obiekt przeglądarki
-Utwórz instancję obiektu Viewer z dokumentem, który chcesz wyrenderować.
+## Krok 3: Zainicjuj obiekt Viewer
+Utwórz obiekt Viewer z dokumentem, który chcesz renderować.
 ```csharp
 using (Viewer viewer = new Viewer("YourDocumentPath"))
 {
-    // Twój kod trafia tutaj
+    // Twój kod wpisz tutaj
 }
 ```
 ## Krok 4: Ustaw opcje widoku HTML
-Zdefiniuj opcje renderowania HTML, w tym format osadzonych zasobów i czcionek do wykluczenia.
+Zdefiniuj opcje renderowania HTML, w tym format osadzonych zasobów i czcionek, które mają zostać wykluczone.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.FontsToExclude.Add("Arial");
 ```
-## Krok 5: Renderuj dokument
-Przekaż opcje widoku HTML do obiektu Viewer, aby wyrenderować dokument.
+## Krok 5: Renderowanie dokumentu
+Przekaż opcje widoku HTML do obiektu Viewer w celu renderowania dokumentu.
 ```csharp
 viewer.View(options);
 ```
-## Krok 6: Wyprowadź lokalizację wyrenderowanego dokumentu
-Poinformuj użytkownika o lokalizacji, w której zapisywane są wyrenderowane pliki HTML.
+## Krok 6: Lokalizacja wyrenderowanego dokumentu wyjściowego
+Poinformuj użytkownika o lokalizacji, w której zapisywane są renderowane pliki HTML.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak używać programu GroupDocs.Viewer dla platformy .NET do wykluczania czcionek z renderowanych danych wyjściowych HTML. Wykonując kroki opisane powyżej, możesz dostosować proces renderowania do swoich konkretnych wymagań, zapewniając optymalne wyświetlanie dokumentów w swoich aplikacjach.
-## Często zadawane pytania
+W tym samouczku nauczyliśmy się, jak używać GroupDocs.Viewer dla .NET, aby wykluczyć czcionki z renderowanego wyjścia HTML. Postępując zgodnie z powyższymi krokami, możesz dostosować proces renderowania do swoich konkretnych wymagań, zapewniając optymalne wyświetlanie dokumentów w swoich aplikacjach.
+## Najczęściej zadawane pytania
 ### Czy mogę wykluczyć wiele czcionek z renderowanego kodu HTML?
- Tak, możesz dodać wiele nazw czcionek do pliku`FontsToExclude` lista w opcjach widoku HTML.
-### Czy GroupDocs.Viewer jest kompatybilny ze wszystkimi frameworkami .NET?
-Tak, GroupDocs.Viewer obsługuje .NET Framework 4.6.1 i nowsze wersje.
-### Czy mogę renderować dokumenty ze zdalnych lokalizacji?
-Tak, GroupDocs.Viewer obsługuje renderowanie dokumentów z magazynu lokalnego, a także zdalnych lokalizacji i strumieni.
-### Czy GroupDocs.Viewer obsługuje responsywne projektowanie danych wyjściowych HTML?
-Tak, możesz włączyć renderowanie responsywne, dostosowując odpowiednio opcje widoku HTML.
-### Czy dostępna jest pomoc techniczna dla GroupDocs.Viewer?
- Tak, możesz szukać pomocy i brać udział w dyskusjach na temat[Forum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9).
+Tak, możesz dodać wiele nazw czcionek do `FontsToExclude` listę w opcjach widoku HTML.
+### Czy GroupDocs.Viewer jest kompatybilny ze wszystkimi platformami .NET?
+Tak, GroupDocs.Viewer obsługuje .NET Framework 4.6.1 i nowsze.
+### Czy mogę renderować dokumenty ze zdalnych lokalizacji przechowywania?
+Tak, GroupDocs.Viewer obsługuje renderowanie dokumentów z pamięci lokalnej, a także zdalnych lokalizacji i strumieni.
+### Czy GroupDocs.Viewer obsługuje responsywny projekt wyników HTML?
+Tak, możesz włączyć renderowanie responsywne, odpowiednio dostosowując opcje widoku HTML.
+### Czy dla GroupDocs.Viewer dostępna jest pomoc techniczna?
+Tak, możesz szukać pomocy i uczestniczyć w dyskusjach na ten temat [Forum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9).

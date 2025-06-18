@@ -1,33 +1,33 @@
 ---
-title: Belgeyi JPGPNG'ye İşle
-linktitle: Belgeyi JPGPNG'ye İşle
-second_title: GroupDocs.Viewer .NET API'si
-description: Gelişmiş kullanıcı deneyimi ve üretkenlik için GroupDocs.Viewer'ı kullanarak belgeleri .NET'te JPG/PNG'ye sorunsuz bir şekilde nasıl dönüştürebileceğinizi keşfedin.
-weight: 10
-url: /tr/net/rendering-documents-images/render-jpg-png/
+"description": "Gelişmiş kullanıcı deneyimi ve üretkenlik için GroupDocs.Viewer'ı kullanarak .NET'te belgeleri JPG/PNG'ye sorunsuz bir şekilde nasıl dönüştürebileceğinizi keşfedin."
+"linktitle": "Belgeyi JPGPNG'ye Dönüştür"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Belgeyi JPGPNG'ye Dönüştür"
+"url": "/tr/net/rendering-documents-images/render-jpg-png/"
+"weight": 10
 ---
 
-# Belgeyi JPGPNG'ye İşle
+# Belgeyi JPGPNG'ye Dönüştür
 
 ## giriiş
 
-.NET geliştirme dünyasında, çeşitli uygulamalar için belgelerin verimli bir şekilde işlenmesi çok önemlidir. İster bir belge yönetim sistemi, ister bir e-ticaret platformu, ister zengin içerikli bir uygulama oluşturuyor olun, belgeleri sorunsuz bir şekilde görüntüleme yeteneği çok önemlidir. Belgelerin JPG ve PNG gibi çeşitli formatlarda işlenmesi için kapsamlı bir çözüm sunan GroupDocs.Viewer for .NET tam da burada devreye giriyor.
+.NET geliştirme dünyasında, belgeleri verimli bir şekilde işlemek çeşitli uygulamalar için olmazsa olmazdır. İster bir belge yönetim sistemi, ister bir e-ticaret platformu veya içerik açısından zengin bir uygulama oluşturuyor olun, belgeleri sorunsuz bir şekilde görüntüleme yeteneği çok önemlidir. İşte tam bu noktada GroupDocs.Viewer for .NET devreye girerek belgeleri JPG ve PNG gibi çeşitli biçimlerde işlemek için kapsamlı bir çözüm sunar.
 
-## Önkoşullar
+## Ön koşullar
 
-GroupDocs.Viewer for .NET'i kullanmaya başlamadan önce sağlamanız gereken birkaç önkoşul vardır:
+GroupDocs.Viewer for .NET'i kullanmaya başlamadan önce, sağlamanız gereken birkaç ön koşul vardır:
 
-1. .NET Geliştirme Ortamı: Makinenizde çalışan bir .NET geliştirme ortamının kurulduğundan emin olun. Buna .NET SDK'nın kurulu olması da dahildir.
+1. .NET Geliştirme Ortamı: Makinenizde çalışan bir .NET geliştirme ortamının kurulu olduğundan emin olun. Buna .NET SDK'nın kurulu olması da dahildir.
 
-2. GroupDocs.Viewer Lisansı: GroupDocs.Viewer için geçerli bir lisans edinin. Bir lisans satın alabilir veya değerlendirme amacıyla geçici bir lisans kullanabilirsiniz.
+2. GroupDocs.Viewer Lisansı: GroupDocs.Viewer için geçerli bir lisans edinin. Değerlendirme amaçlı bir lisans satın alabilir veya geçici bir lisans kullanabilirsiniz.
 
-3.  Kurulum: Sağlanan kaynaktan GroupDocs.Viewer for .NET'i indirin ve yükleyin.[İndirme: {link](https://releases.groupdocs.com/viewer/net/).
+3. Kurulum: Sağlanan kaynaktan GroupDocs.Viewer for .NET'i indirin ve kurun. [indirme bağlantısı](https://releases.groupdocs.com/viewer/net/).
 
-4. Belge Dosyaları: Oluşturmak istediğiniz belge dosyalarını hazır bulundurun. GroupDocs.Viewer, DOCX, PDF, PPT ve daha fazlasını içeren çeşitli formatları destekler.
+4. Belge Dosyaları: İşlemek istediğiniz belge dosyalarını hazır bulundurun. GroupDocs.Viewer, DOCX, PDF, PPT ve daha fazlası dahil olmak üzere çeşitli formatları destekler.
 
 ## Ad Alanlarını İçe Aktar
 
-GroupDocs.Viewer for .NET'i kullanarak belge oluşturmaya başlamak için gerekli ad alanlarını projenize aktarmanız gerekir. Bu, kütüphanenin sağladığı işlevlere erişmenizi sağlar.
+GroupDocs.Viewer for .NET kullanarak belgeleri işlemeye başlamak için, gerekli ad alanlarını projenize içe aktarmanız gerekir. Bu, kitaplığın sağladığı işlevlere erişmenizi sağlar.
 
 ```csharp
 using System;
@@ -35,38 +35,38 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-GroupDocs.Viewer for .NET ile bir belgeyi JPG veya PNG formatında oluşturmak basit bir işlemdir. Aşağıda bunu başarmanıza yardımcı olacak adım adım bir kılavuz bulunmaktadır:
+Bir belgeyi JPG veya PNG formatına dönüştürmek, GroupDocs.Viewer for .NET ile basit bir işlemdir. Aşağıda bunu başarmanıza yardımcı olacak adım adım bir kılavuz bulunmaktadır:
 
-## Adım 1: Çıkış Dizinini Tanımlayın
+## Adım 1: Çıktı Dizinini Tanımlayın
 
-Öncelikle oluşturulan sayfaların kaydedilmesini istediğiniz dizini tanımlayın. Bu dizin mevcut olmalı ve uygulama tarafından erişilebilir olmalıdır.
+Öncelikle, işlenmiş sayfaların kaydedilmesini istediğiniz dizini tanımlayın. Bu dizin mevcut olmalı ve uygulama tarafından erişilebilir olmalıdır.
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-## Adım 2: Sayfa Dosya Yolu Formatını Tanımlayın
+## Adım 2: Sayfa Dosyası Yolu Biçimini Tanımlayın
 
- İşlenen her sayfanın dosya yolları için formatı belirtin. GroupDocs.Viewer yerini alacak`{0}` Dosyaları kaydederken sayfa numarasıyla birlikte.
+Her işlenmiş sayfanın dosya yolları için biçimi belirtin. GroupDocs.Viewer değiştirilecektir `{0}` Dosyaları kaydederken sayfa numarasıyla birlikte.
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.jpg");
 ```
 
-## 3. Adım: Görüntüleyici Nesnesini Örneklendirin
+## Adım 3: Görüntüleyici Nesnesini Örneklendirin
 
- Bir örneğini oluşturun`Viewer` Oluşturmak istediğiniz belge dosyasının yolunu sağlayarak sınıf.
+Bir örneğini oluşturun `Viewer` Oluşturmak istediğiniz belge dosyasının yolunu sağlayarak sınıfa ekleyin.
 
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_Your_Document"))
 {
-    // Oluşturma kodu buraya gelecek
+    // İşleme kodu buraya gelir
 }
 ```
 
-## Adım 4: Oluşturma Seçeneklerini Tanımlayın
+## Adım 4: İşleme Seçeneklerini Tanımlayın
 
-Gereksinimlerinize göre oluşturma seçeneklerini belirtin. JPG/PNG oluşturmak için şunu kullanacaksınız:`JpgViewOptions` veya`PngViewOptions`.
+Gereksinimlerinize göre işleme seçeneklerini belirtin. JPG/PNG işleme için şunu kullanacaksınız: `JpgViewOptions` veya `PngViewOptions`.
 
 ```csharp
 JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
@@ -74,15 +74,15 @@ JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
 
 ## Adım 5: Belgeyi Oluşturun
 
- Çağır`View` yöntemi`Viewer` nesneyi kullanın ve daha önce oluşturulan oluşturma seçeneklerini iletin.
+Çağırmak `View` yöntemi `Viewer` nesnesini oluşturun ve daha önce oluşturulan işleme seçeneklerini iletin.
 
 ```csharp
 viewer.View(options);
 ```
 
-## Adım 6: Çıktı Sonuçları
+## Adım 6: Sonuçları Çıktılayın
 
-Render işlemi tamamlandıktan sonra kullanıcıyı render işleminin başarılı olduğu konusunda bilgilendirebilir ve render edilen sayfaların kaydedildiği dizini sağlayabilirsiniz.
+İşleme süreci tamamlandıktan sonra, kullanıcıyı işlemenin başarılı olduğu konusunda bilgilendirebilir ve işlenen sayfaların kaydedildiği dizini sağlayabilirsiniz.
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -90,26 +90,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Çözüm
 
-Sonuç olarak, GroupDocs.Viewer for .NET, belgeleri JPG ve PNG dahil olmak üzere çeşitli formatlarda işlemek için güçlü bir çözüm sunar. Bu öğreticide özetlenen adımları izleyerek, belge oluşturma işlevini .NET uygulamalarınıza sorunsuz bir şekilde entegre ederek kullanıcı deneyimini ve üretkenliği artırabilirsiniz.
+Sonuç olarak, GroupDocs.Viewer for .NET, JPG ve PNG dahil olmak üzere çeşitli formatlarda belgeleri işlemek için güçlü bir çözüm sunar. Bu eğitimde özetlenen adımları izleyerek, belge işleme işlevselliğini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir, kullanıcı deneyimini ve üretkenliği artırabilirsiniz.
 
-## SSS'ler
+## SSS
 
-### S: GroupDocs.Viewer for .NET'i kullanarak DOCX dışındaki belgeleri oluşturabilir miyim?
+### S: GroupDocs.Viewer for .NET kullanarak DOCX dışındaki belgeleri de görüntüleyebilir miyim?
 
-C: Evet, GroupDocs.Viewer PDF, PPT, XLS ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
+C: Evet, GroupDocs.Viewer PDF, PPT, XLS ve daha fazlası dahil olmak üzere çok çeşitli belge formatlarını destekler.
 
-### S: GroupDocs.Viewer for .NET'in ücretsiz deneme sürümü mevcut mu?
+### S: GroupDocs.Viewer for .NET için ücretsiz deneme sürümü mevcut mu?
 
- C: Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.groupdocs.com/).
+A: Evet, ücretsiz deneme sürümünü şu adresten indirebilirsiniz: [Burada](https://releases.groupdocs.com/).
 
-### S: Değerlendirme amacıyla nasıl geçici lisans alabilirim?
+### S: Değerlendirme amaçlı geçici lisansı nasıl alabilirim?
 
-C: Geçici lisans talebinde bulunabilirsiniz.[Burada](https://purchase.groupdocs.com/temporary-license/).
+A: Geçici lisans talebinde bulunabilirsiniz [Burada](https://purchase.groupdocs.com/temporary-license/).
 
-### S: GroupDocs.Viewer for .NET belgelerini nerede bulabilirim?
+### S: GroupDocs.Viewer for .NET için dokümanları nerede bulabilirim?
 
- A: Ayrıntılı belgeler mevcut[Burada](https://tutorials.groupdocs.com/viewer/net/).
+A: Ayrıntılı dokümantasyon mevcuttur [Burada](https://tutorials.groupdocs.com/viewer/net/).
 
-### S: GroupDocs.Viewer for .NET ile ilgili nereden destek alabilirim veya soru sorabilirim?
+### S: GroupDocs.Viewer for .NET ile ilgili desteği nereden alabilirim veya sorularımı nereden sorabilirim?
 
- C: Destek forumunu ziyaret edebilirsiniz[Burada](https://forum.groupdocs.com/c/viewer/9) yardım için.
+A: Destek forumunu ziyaret edebilirsiniz [Burada](https://forum.groupdocs.com/c/viewer/9) yardım için.

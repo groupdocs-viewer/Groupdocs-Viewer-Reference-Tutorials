@@ -1,39 +1,42 @@
 ---
-title: Nastavte měřenou licenci
-linktitle: Nastavte měřenou licenci
-second_title: GroupDocs.Viewer .NET API
-description: Vylepšete své aplikace .NET pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Snadno integrujte funkce vykreslování dokumentů do svých projektů.
-weight: 12
-url: /cs/net/getting-started/set-metered-license/
+"description": "Vylepšete své .NET aplikace pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Snadno integrujte funkce vykreslování dokumentů do svých projektů."
+"linktitle": "Nastavit měřenou licenci"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Nastavit měřenou licenci"
+"url": "/cs/net/getting-started/set-metered-license/"
+"weight": 12
 ---
 
-# Nastavte měřenou licenci
+# Nastavit měřenou licenci
 
-## Úvod
-Ve světě vývoje .NET je začlenění výkonných možností prohlížení dokumentů do vašich aplikací zásadní pro zlepšení uživatelské zkušenosti a funkčnosti. GroupDocs.Viewer for .NET nabízí robustní řešení pro bezproblémovou integraci funkcí prohlížení dokumentů do vašich projektů .NET. Ať už pracujete s PDF, dokumenty Microsoft Office nebo různými formáty obrázků, GroupDocs.Viewer zjednodušuje proces vykreslování a zobrazování těchto dokumentů ve vašich aplikacích.
+## Zavedení
+Ve světě vývoje v .NET je začlenění výkonných funkcí prohlížení dokumentů do vašich aplikací nezbytné pro zlepšení uživatelského prostředí a funkčnosti. GroupDocs.Viewer pro .NET nabízí robustní řešení pro bezproblémovou integraci funkcí prohlížení dokumentů do vašich .NET projektů. Ať už pracujete s PDF soubory, dokumenty Microsoft Office nebo různými obrazovými formáty, GroupDocs.Viewer zjednodušuje proces vykreslování a zobrazování těchto dokumentů ve vašich aplikacích.
+
+![Nastavení měřené licence pomocí GroupDocs.Viewer pro .NET](/viewer/getting-started/set-metered-license.png)
+
 ## Předpoklady
-Než se pustíte do implementace GroupDocs.Viewer for .NET, ujistěte se, že máte splněny následující předpoklady:
+Než se pustíte do implementace GroupDocs.Viewer pro .NET, ujistěte se, že máte splněny následující předpoklady:
 ### 1. Nainstalujte GroupDocs.Viewer pro .NET
- Chcete-li začít, budete si muset stáhnout a nainstalovat GroupDocs.Viewer for .NET. Odkaz ke stažení najdete[tady](https://releases.groupdocs.com/viewer/net/). Postupujte podle pokynů k instalaci a nastavte knihovnu ve svém vývojovém prostředí.
-### 2. Získejte měřenou licenci
-Abyste mohli používat GroupDocs.Viewer pro .NET, musíte získat měřenou licenci. Tato licence vám umožňuje řídit a sledovat vaše využití API na základě předem definovaných kvót. Chcete-li nastavit měřenou licenci, postupujte takto:
+Nejprve si budete muset stáhnout a nainstalovat GroupDocs.Viewer pro .NET. Odkaz ke stažení najdete [zde](https://releases.groupdocs.com/viewer/net/)Postupujte podle pokynů k instalaci a nastavte knihovnu ve vašem vývojovém prostředí.
+### 2. Získejte licenci pro měření
+Abyste mohli používat GroupDocs.Viewer pro .NET, musíte si zakoupit měřenou licenci. Tato licence vám umožňuje řídit a monitorovat využití API na základě předdefinovaných kvót. Pro nastavení měřené licence postupujte podle následujících kroků:
 
 ## Importovat jmenné prostory
-Nejprve se ujistěte, že importujete potřebné jmenné prostory pro přístup k funkcím, které poskytuje GroupDocs.Viewer pro .NET:
+Nejprve se ujistěte, že jste importovali potřebné jmenné prostory pro přístup k funkcím poskytovaným GroupDocs.Viewer pro .NET:
 ```csharp
 using System;
 ```
 
-Nyní si rozeberme poskytnutý příklad kódu do několika kroků:
-## Krok 1: Deklarujte veřejný a soukromý klíč
-Deklarujte proměnné pro uložení vašich veřejných a soukromých klíčů:
+Nyní si rozdělme uvedený příklad kódu do několika kroků:
+## Krok 1: Deklarace veřejných a soukromých klíčů
+Deklarujte proměnné pro uložení veřejných a soukromých klíčů:
 ```csharp
 string publicKey = "YOUR_PUBLIC_KEY";
 string privateKey = "YOUR_PRIVATE_KEY";
 ```
- Zajistěte výměnu`"YOUR_PUBLIC_KEY"` a`"YOUR_PRIVATE_KEY"` se svými skutečnými klíči.
-## Krok 2: Nastavte měřenou licenci
-Zkontrolujte, zda je poskytnut veřejný klíč. Pokud ne, požádejte uživatele, aby nastavil klíče:
+Ujistěte se, že vyměníte `"YOUR_PUBLIC_KEY"` a `"YOUR_PRIVATE_KEY"` s vašimi skutečnými klíči.
+## Krok 2: Nastavení měřené licence
+Zkontrolujte, zda je zadán veřejný klíč. Pokud ne, vyzvěte uživatele k nastavení klíčů:
 ```csharp
 if (string.IsNullOrEmpty(publicKey))
 {
@@ -41,28 +44,28 @@ if (string.IsNullOrEmpty(publicKey))
     return;
 }
 ```
-## Krok 3: Inicializujte měřený objekt a nastavte licenci
-Inicializujte objekt Metered a nastavte měřenou licenci pomocí vašeho veřejného a soukromého klíče:
+## Krok 3: Inicializace měřeného objektu a nastavení licence
+Inicializujte objekt Metered a nastavte licenci pro měření pomocí veřejného a soukromého klíče:
 ```csharp
 Metered metered = new Metered();
 metered.SetMeteredKey(publicKey, privateKey);
 ```
-## Krok 4: Potvrzující zpráva
-Zobrazte potvrzovací zprávu o úspěšném nastavení licence:
+## Krok 4: Potvrzovací zpráva
+Zobrazit potvrzovací zprávu oznamující, že licence byla úspěšně nastavena:
 ```csharp
 Console.WriteLine("License set successfully.");
 ```
 
 ## Závěr
-Na závěr, GroupDocs.Viewer for .NET poskytuje komplexní řešení pro začlenění funkcí pro prohlížení dokumentů do vašich aplikací .NET. Podle nastíněných kroků můžete snadno nastavit měřenou licenci a začít využívat možnosti GroupDocs.Viewer ve svých projektech.
-## FAQ
+Závěrem lze říci, že GroupDocs.Viewer pro .NET poskytuje komplexní řešení pro začlenění funkcí prohlížení dokumentů do vašich .NET aplikací. Dodržením uvedených kroků si můžete snadno nastavit měřenou licenci a začít využívat možnosti GroupDocs.Viewer ve svých projektech.
+## Často kladené otázky
 ### Otázka: Kde najdu dokumentaci k GroupDocs.Viewer pro .NET?
- Dokumentaci najdete[tady](https://tutorials.groupdocs.com/viewer/net/).
-### Otázka: Je k dispozici bezplatná zkušební verze pro GroupDocs.Viewer pro .NET?
- Ano, máte přístup k bezplatné zkušební verzi[tady](https://releases.groupdocs.com/).
-### Otázka: Jak mohu získat dočasné licence pro testovací účely?
- Lze získat dočasné licence[tady](https://purchase.groupdocs.com/temporary-license/).
-### Otázka: Kde mohu hledat podporu nebo klást otázky týkající se GroupDocs.Viewer pro .NET?
- Můžete hledat podporu a klást otázky na fóru GroupDocs.Viewer[tady](https://forum.groupdocs.com/c/viewer/9).
-### Otázka: Kde si mohu zakoupit licenci pro GroupDocs.Viewer for .NET?
- Můžete si zakoupit licenci[tady](https://purchase.groupdocs.com/buy).
+Dokumentaci najdete [zde](https://tutorials.groupdocs.com/viewer/net/).
+### Otázka: Je k dispozici bezplatná zkušební verze GroupDocs.Viewer pro .NET?
+Ano, máte přístup k bezplatné zkušební verzi [zde](https://releases.groupdocs.com/).
+### Otázka: Jak mohu získat dočasné licence pro účely testování?
+Dočasné licence lze získat [zde](https://purchase.groupdocs.com/temporary-license/).
+### Otázka: Kde mohu vyhledat podporu nebo se zeptat na otázky týkající se GroupDocs.Viewer pro .NET?
+Podporu a dotazy můžete hledat na fóru GroupDocs.Viewer. [zde](https://forum.groupdocs.com/c/viewer/9).
+### Otázka: Kde si mohu zakoupit licenci pro GroupDocs.Viewer pro .NET?
+Můžete si zakoupit licenci [zde](https://purchase.groupdocs.com/buy).

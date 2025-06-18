@@ -1,21 +1,24 @@
 ---
-title: Daha Hızlı Belge İşleme için Önbelleğe Alma'yı Etkinleştirin
-linktitle: Daha Hızlı Belge İşleme için Önbelleğe Alma'yı Etkinleştirin
-second_title: GroupDocs.Viewer .NET API'si
-description: Önbelleğe alma özelliğini kullanarak GroupDocs.Viewer ile .NET uygulamalarında belge işleme hızını artırın. Performansı zahmetsizce optimize edin.
-weight: 10
-url: /tr/net/advanced-usage-caching/enable-caching/
+"description": "GroupDocs.Viewer ile önbelleğe almayı kullanarak .NET uygulamalarında belge işleme hızını artırın. Performansı zahmetsizce optimize edin."
+"linktitle": "Daha Hızlı Belge İşleme için Önbelleğe Almayı Etkinleştirin"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Daha Hızlı Belge İşleme için Önbelleğe Almayı Etkinleştirin"
+"url": "/tr/net/advanced-usage-caching/enable-caching/"
+"weight": 10
 ---
 
-# Daha Hızlı Belge İşleme için Önbelleğe Alma'yı Etkinleştirin
+# Daha Hızlı Belge İşleme için Önbelleğe Almayı Etkinleştirin
 
 ## giriiş
-.NET belge işleme alanında performansı optimize etmek çok önemlidir. Birden fazla belge sayfasını hızlı bir şekilde oluşturmanız gereken bir senaryo düşünün. Önbelleklemenin devreye girdiği yer burasıdır. Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak belgelerin işlem hızını artırmak için önbelleğe alma özelliğinden yararlanmayı inceleyeceğiz.
-## Önkoşullar
-Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-1.  .NET SDK için GroupDocs.Viewer: SDK'yı şu adresten indirip yükleyin:[GroupDocs.Viewer web sitesi](https://releases.groupdocs.com/viewer/net/).
-2. Geliştirme Ortamı: Visual Studio gibi tercih ettiğiniz .NET geliştirme ortamını kurun.
-3. Örnek Belge: Test amaçlı örnek bir belgeyi hazır bulundurun.
+.NET belge işleme alanında, performansı optimize etmek çok önemlidir. Birden fazla belge sayfasını hızla işlemeniz gereken bir senaryoyu hayal edin. Önbelleğe alma burada devreye girer. Bu eğitimde, .NET için GroupDocs.Viewer kullanarak belgelerin işleme hızını artırmak için önbelleğe almayı nasıl kullanacağımızı inceleyeceğiz.
+
+![GroupDocs.Viewer .NET'te Daha Hızlı Belge İşleme için Önbelleğe Almayı Etkinleştirin](/viewer/advanced-usage/enable-caching-faster-document-processing-img.png)
+
+## Ön koşullar
+Uygulamaya başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+1. GroupDocs.Viewer for .NET SDK: SDK'yı şu adresten indirin ve yükleyin: [GroupDocs.Viewer web sitesi](https://releases.groupdocs.com/viewer/net/).
+2. Geliştirme Ortamı: Visual Studio gibi tercih ettiğiniz .NET geliştirme ortamını ayarlayın.
+3. Örnek Belge: Test amaçlı bir örnek belgeyi hazır bulundurun.
 
 ## Ad Alanlarını İçe Aktarma
 Başlamak için gerekli ad alanlarını içe aktarın:
@@ -32,27 +35,27 @@ using GroupDocs.Viewer.Options;
 string outputDirectory = "Your Document Directory";
 string cachePath = Path.Combine(outputDirectory, "cache");
 ```
-Burada, oluşturulan sayfaların kaydedileceği çıktı dizinini ve önbellek yolunu tanımlıyoruz.
-## 2. Adım: Dosya Önbelleğini Başlatın
+Burada, işlenen sayfaların kaydedileceği çıktı dizinini ve önbellek yolunu tanımlıyoruz.
+## Adım 2: Dosya Önbelleğini Başlatın
 ```csharp
 FileCache cache = new FileCache(cachePath);
 ```
-Belirtilen önbellek yolunu kullanarak bir dosya önbelleği başlatın.
-## 3. Adım: Görüntüleyici Ayarlarını Yapılandırın
+Belirtilen önbellek yolunu kullanarak bir dosya önbelleğini başlatın.
+## Adım 3: Görüntüleyici Ayarlarını Yapılandırın
 ```csharp
 ViewerSettings settings = new ViewerSettings(cache);
 ```
-Başlatılan önbelleği ileterek görüntüleyici ayarlarını yapılandırın.
-## 4. Adım: Görüntüleyici Örneğini Başlatın
+Başlatılan önbelleği geçirerek görüntüleyici ayarlarını yapılandırın.
+## Adım 4: Görüntüleyici Örneğini Başlatın
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX, settings))
 ```
-Görüntüleyici örneğini örnek belge ve yapılandırılmış ayarlarla başlatın.
-## 5. Adım: HTML Görünüm Seçeneklerini Tanımlayın
+Örnek belge ve yapılandırılmış ayarlarla görüntüleyici örneğini başlatın.
+## Adım 5: HTML Görünüm Seçeneklerini Tanımlayın
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-Sayfa dosyası yolu formatını belirterek, gömülü kaynaklar için HTML görünüm seçeneklerini tanımlayın.
+Sayfa dosya yolu biçimini belirterek gömülü kaynaklar için HTML görünüm seçeneklerini tanımlayın.
 ## Adım 6: Belgeyi Oluşturun ve Performansı Ölçün
 ```csharp
 Stopwatch stopWatch = Stopwatch.StartNew();
@@ -60,29 +63,29 @@ viewer.View(options);
 stopWatch.Stop();
 ```
 Belirtilen seçenekleri kullanarak belgeyi oluşturun ve geçen süreyi ölçün.
-## Adım 7: Daha Hızlı İşleme için Önbelleğe Alınmış Verileri Yeniden Kullanın
+## Adım 7: Daha Hızlı İşleme İçin Önbelleğe Alınan Verileri Yeniden Kullanın
 ```csharp
 stopWatch.Restart();
 viewer.View(options);
 stopWatch.Stop();
 ```
-Performanstaki iyileşmeyi gözlemlemek için önbelleğe alınmış verileri kullanarak belgeyi yeniden oluşturun.
-## Adım 8: Oluşturulan Belgenin Çıktısını Alın
+Performans iyileştirmesini gözlemlemek için önbelleğe alınmış verileri kullanarak belgeyi yeniden işleyin.
+## Adım 8: Çıktı Oluşturulan Belge
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Başarılı işleme ve çıktı dizininin konumu hakkında kullanıcıyı bilgilendirin.
+Kullanıcıya başarılı işleme ve çıktı dizininin konumunu bildir.
 
 ## Çözüm
-Önbelleğe alma, .NET uygulamalarında belge işleme performansını optimize etmede hayati bir rol oynar. Bu öğreticide özetlenen adımları izleyerek, GroupDocs.Viewer for .NET'te önbelleğe almayı verimli bir şekilde etkinleştirebilir, böylece belge oluşturmayı hızlandırabilirsiniz.
-## SSS'ler
+Önbelleğe alma, .NET uygulamalarında belge işleme performansını optimize etmede hayati bir rol oynar. Bu eğitimde özetlenen adımları izleyerek, .NET için GroupDocs.Viewer'da önbelleğe almayı etkin bir şekilde etkinleştirebilir ve böylece belge işlemeyi hızlandırabilirsiniz.
+## SSS
 ### Belge işlemede önbelleğe alma neden önemlidir?
-Önbelleğe alma, verileri yeniden oluşturma ihtiyacını azaltır, böylece işlem hızı artar.
-### .NET için GroupDocs.Viewer'da önbelleğe alma özelleştirilebilir mi?
-Evet, GroupDocs.Viewer, önbelleğe alma ayarlarının belirli gereksinimlere göre yapılandırılmasında esneklik sunar.
-### GroupDocs.Viewer büyük belgeleri işlemeye uygun mu?
-GroupDocs.Viewer kesinlikle farklı boyutlardaki belgeleri verimli bir şekilde işleyecek ve optimum performansı sağlayacak şekilde tasarlanmıştır.
-### GroupDocs.Viewer birden fazla belge formatını destekliyor mu?
-Evet, GroupDocs.Viewer, DOCX, PDF, PPTX ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
-### GroupDocs.Viewer için geçici lisansları nasıl edinebilirim?
- GroupDocs.Viewer için geçici lisansları şuradan alabilirsiniz:[İnternet sitesi](https://purchase.groupdocs.com/temporary-license/).
+Önbelleğe alma, verilerin yeniden oluşturulması ihtiyacını azaltarak işlem hızını artırır.
+### GroupDocs.Viewer for .NET'te önbelleğe alma özelleştirilebilir mi?
+Evet, GroupDocs.Viewer belirli gereksinimlere göre önbelleğe alma ayarlarını yapılandırmada esneklik sunar.
+### GroupDocs.Viewer büyük dokümanları yönetmek için uygun mudur?
+Kesinlikle, GroupDocs.Viewer farklı boyutlardaki belgeleri verimli bir şekilde işleyecek ve optimum performansı garantileyecek şekilde tasarlanmıştır.
+### GroupDocs.Viewer birden fazla belge biçimini destekliyor mu?
+Evet, GroupDocs.Viewer DOCX, PDF, PPTX ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### GroupDocs.Viewer için geçici lisansları nasıl alabilirim?
+GroupDocs.Viewer için geçici lisansları şuradan edinebilirsiniz: [web sitesi](https://purchase.groupdocs.com/temporary-license/).

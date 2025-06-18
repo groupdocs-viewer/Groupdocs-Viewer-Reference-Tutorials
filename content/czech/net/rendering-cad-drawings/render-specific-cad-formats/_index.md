@@ -1,35 +1,35 @@
 ---
-title: Vykreslování specifických CAD formátů (CF2)
-linktitle: Vykreslování specifických CAD formátů (CF2)
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se vykreslovat konkrétní formáty CAD, jako je CF2, do HTML, JPG, PNG a PDF pomocí Groupdocs.Viewer pro .NET.
-weight: 12
-url: /cs/net/rendering-cad-drawings/render-specific-cad-formats/
+"description": "Naučte se, jak vykreslit specifické CAD formáty, jako je CF2, do HTML, JPG, PNG a PDF pomocí Groupdocs.Viewer pro .NET."
+"linktitle": "Formáty CAD specifické pro renderování (CF2)"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Formáty CAD specifické pro renderování (CF2)"
+"url": "/cs/net/rendering-cad-drawings/render-specific-cad-formats/"
+"weight": 12
 ---
 
-# Vykreslování specifických CAD formátů (CF2)
+# Formáty CAD specifické pro renderování (CF2)
 
-## Úvod
-V tomto tutoriálu prozkoumáme, jak vykreslit konkrétní formáty CAD pomocí Groupdocs.Viewer pro .NET. Groupdocs.Viewer je výkonné rozhraní API pro prohlížeč dokumentů, které umožňuje vývojářům zobrazovat více než 170 typů dokumentů ve svých aplikacích, aniž by vyžadovali instalaci externího softwaru. Konkrétně se zaměříme na vykreslování CAD formátů, jako je CF2, do různých výstupních formátů, jako jsou HTML, JPG, PNG a PDF.
+## Zavedení
+V tomto tutoriálu se podíváme na to, jak vykreslovat specifické formáty CAD pomocí Groupdocs.Viewer pro .NET. Groupdocs.Viewer je výkonné API pro prohlížeč dokumentů, které umožňuje vývojářům zobrazovat v jejich aplikacích více než 170 typů dokumentů bez nutnosti instalace externího softwaru. Konkrétně se zaměříme na vykreslování formátů CAD, jako je CF2, do různých výstupních formátů, jako jsou HTML, JPG, PNG a PDF.
 ## Předpoklady
-Než se pustíme do výukového programu, ujistěte se, že máte následující předpoklady:
+Než se pustíme do tutoriálu, ujistěte se, že máte následující předpoklady:
 - Visual Studio nainstalované ve vašem systému.
--  Groupdocs.Viewer pro .NET SDK. Můžete si jej stáhnout z[tady](https://releases.groupdocs.com/viewer/net/).
+- Groupdocs.Viewer pro .NET SDK. Můžete si ho stáhnout z [zde](https://releases.groupdocs.com/viewer/net/).
 - Základní znalost programovacího jazyka C#.
 ## Importovat jmenné prostory
-Nejprve importujme potřebné jmenné prostory potřebné pro vykreslování CAD formátů.
+Nejprve si importujme potřebné jmenné prostory pro vykreslování CAD formátů.
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-Nyní si každý příklad rozdělíme do několika kroků:
+Nyní si každý příklad rozdělme do několika kroků:
 ## Vykreslení CF2 do HTML
-### Krok 1: Definujte výstupní adresář, do kterého bude vykreslený HTML uložen.
+### Krok 1: Definujte výstupní adresář, kam bude uložen vykreslený HTML kód.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-### Krok 2: Definujte formát cesty k souboru pro výstup HTML.
+### Krok 2: Definujte formát cesty k souboru pro HTML výstup.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.html");
 ```
@@ -43,7 +43,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
     viewer.View(options);
 }
 ```
-## Vykreslit CF2 do JPG
+## Renderování CF2 do JPG
 ### Krok 1: Definujte formát cesty k souboru pro výstup JPG.
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.jpg");
@@ -58,7 +58,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
     viewer.View(options);
 }
 ```
-## Vykreslit CF2 do PNG
+## Renderování CF2 do PNG
 
 ### Krok 1: Definujte formát cesty k souboru pro výstup PNG.
 ```csharp
@@ -74,7 +74,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
     viewer.View(options);
 }
 ```
-## Vykreslit CF2 do PDF
+## Renderování CF2 do PDF
 ### Krok 1: Definujte formát cesty k souboru pro výstup PDF.
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.pdf");
@@ -91,15 +91,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili vykreslovat konkrétní formáty CAD, jako je CF2, pomocí Groupdocs.Viewer pro .NET. Podle podrobného průvodce můžete snadno integrovat možnosti vykreslování dokumentů do aplikací .NET.
-## FAQ
-### Dokáže Groupdocs.Viewer vykreslit jiné formáty CAD kromě CF2?
+V tomto tutoriálu jsme se naučili, jak vykreslovat specifické CAD formáty, jako například CF2, pomocí Groupdocs.Viewer pro .NET. Dodržováním podrobného návodu můžete snadno integrovat funkce vykreslování dokumentů do svých .NET aplikací.
+## Často kladené otázky
+### Může Groupdocs.Viewer vykreslovat i jiné CAD formáty kromě CF2?
 Ano, Groupdocs.Viewer podporuje širokou škálu CAD formátů, včetně DWG, DXF, DGN a dalších.
 ### Je Groupdocs.Viewer vhodný pro vykreslování dokumentů ve webových aplikacích?
-Groupdocs.Viewer lze bez problémů integrovat do webových aplikací pro vykreslování dokumentů přímo v prohlížeči.
-### Vyžaduje Groupdocs.Viewer nějaké externí závislosti pro vykreslování?
-Ne, Groupdocs.Viewer je samostatné API a nevyžaduje žádné externí závislosti ani instalace softwaru.
-### Mohu upravit možnosti vykreslování podle svých požadavků?
-Ano, Groupdocs.Viewer poskytuje různé možnosti vykreslování, které lze upravit tak, aby vyhovovaly vašim specifickým potřebám.
+Rozhodně lze Groupdocs.Viewer bez problémů integrovat do webových aplikací pro vykreslování dokumentů přímo v prohlížeči.
+### Vyžaduje Groupdocs.Viewer pro vykreslování nějaké externí závislosti?
+Ne, Groupdocs.Viewer je samostatné API a nevyžaduje žádné externí závislosti ani instalaci softwaru.
+### Mohu si přizpůsobit možnosti vykreslování podle svých požadavků?
+Ano, Groupdocs.Viewer nabízí různé možnosti vykreslování, které lze přizpůsobit vašim specifickým potřebám.
 ### Je k dispozici zkušební verze pro Groupdocs.Viewer?
- Ano, můžete získat bezplatnou zkušební verzi Groupdocs.Viewer od[tady](https://releases.groupdocs.com/).
+Ano, bezplatnou zkušební verzi Groupdocs.Viewer si můžete stáhnout z [zde](https://releases.groupdocs.com/).

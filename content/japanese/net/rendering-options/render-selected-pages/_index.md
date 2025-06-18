@@ -1,17 +1,17 @@
 ---
-title: 選択したページをレンダリングする
-linktitle: 選択したページをレンダリングする
-second_title: GroupDocs.Viewer .NET API
-description: Groupdocs.Viewer for .NET を使用してドキュメントから選択したページをレンダリングする方法を学びます。コード例を含むステップバイステップのチュートリアル。
-weight: 17
-url: /ja/net/rendering-options/render-selected-pages/
+"description": "Groupdocs.Viewer for .NET を使用して、ドキュメントから選択したページをレンダリングする方法を学びます。コード例を含むステップバイステップのチュートリアルです。"
+"linktitle": "選択したページをレンダリング"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "選択したページをレンダリング"
+"url": "/ja/net/rendering-options/render-selected-pages/"
+"weight": 17
 ---
 
-# 選択したページをレンダリングする
+# 選択したページをレンダリング
 
 ## 導入
 
-このチュートリアルでは、Groupdocs.Viewer for .NET を利用してドキュメントから選択したページをレンダリングする方法を詳しく説明します。経験豊富な開発者でも、初心者でも、このステップバイステップのガイドでプロセスを簡単に説明できます。
+このチュートリアルでは、Groupdocs.Viewer for .NET を使ってドキュメントから選択したページをレンダリングする方法を詳しく説明します。経験豊富な開発者の方でも、初心者の方でも、このステップバイステップガイドに従えば、簡単に手順を踏むことができます。
 
 ## 前提条件
 
@@ -19,11 +19,11 @@ url: /ja/net/rendering-options/render-selected-pages/
 
 ### 1. インストール
 
-開発環境に Groupdocs.Viewer for .NET がインストールされていることを確認してください。そうでない場合は、からダウンロードできます。[ダウンロードリンク](https://releases.groupdocs.com/viewer/net/).
+開発環境にGroupdocs.Viewer for .NETがインストールされていることを確認してください。インストールされていない場合は、以下のリンクからダウンロードできます。 [ダウンロードリンク](https://releases。groupdocs.com/viewer/net/).
 
 ## 名前空間のインポート
 
-C# コード ファイルで、必要なクラスとメソッドにアクセスするために必要な名前空間をインポートします。これを行うには、`using`指令：
+C#コードファイルで、必要なクラスとメソッドにアクセスするために必要な名前空間をインポートします。これは、 `using` 指令：
 
 ```csharp
 using System;
@@ -31,51 +31,51 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-ここで、提供されているコード例を複数のステップに分けてみましょう。
+ここで、提供されているサンプル コードを複数のステップに分解してみましょう。
 
-## ステップ 1: 出力ディレクトリを設定する
+## ステップ1: 出力ディレクトリを設定する
 
-レンダリングされたページを保存するディレクトリを定義します。交換する`"Your Document Directory"`目的のディレクトリ パスに置き換えます。
+レンダリングされたページを保存するディレクトリを定義します。 `"Your Document Directory"` 目的のディレクトリ パスを入力します。
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-## ステップ 2: ページ ファイルのパス形式を定義する
+## ステップ2: ページファイルパスの形式を定義する
 
-レンダリングされるページのファイル パスの形式を指定します。これは、各ページを HTML ファイルとして出力ディレクトリに保存するために使用されます。
+レンダリングされたページのファイルパスの形式を指定します。これは、各ページを出力ディレクトリにHTMLファイルとして保存するために使用されます。
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 
-## ステップ 3: Viewer オブジェクトをインスタンス化する
+## ステップ3: ビューアオブジェクトのインスタンス化
 
-Viewer クラスのインスタンスを作成し、レンダリングするドキュメントのパスを引数として渡します。
+レンダリングするドキュメントのパスを引数として渡して、Viewer クラスのインスタンスを作成します。
 
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 ```
 
-## ステップ 4: HTML 表示オプションを構成する
+## ステップ4: HTML表示オプションを構成する
 
-レンダリング用の HTML ビュー オプションを設定します。この例では、HTML 出力にリソースを埋め込むオプションを構成しています。
+レンダリング用のHTMLビューオプションを設定します。この例では、HTML出力にリソースを埋め込むオプションを設定しています。
 
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
 
-## ステップ 5: 選択したページをレンダリングする
+## ステップ5: 選択したページをレンダリングする
 
-レンダリングするページ番号を指定します。この場合、ページ 1 から 3 をレンダリングします。次に、Viewer オブジェクトの View メソッドを呼び出し、オプションとページ番号を引数として渡します。
+レンダリングするページ番号を指定します。この例では、1ページ目から3ページ目をレンダリングします。次に、ViewerオブジェクトのViewメソッドを呼び出し、オプションとページ番号を引数として渡します。
 
 ```csharp
 viewer.View(options, 1, 3);
 ```
 
-## ステップ6: 結果を出力する
+## ステップ6: 出力結果
 
-最後に、ドキュメントのレンダリングが成功したことと出力ファイルの保存場所を示すメッセージを表示します。
+最後に、ドキュメントのレンダリングが成功したことと出力ファイルが保存される場所を示すメッセージを表示します。
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -83,26 +83,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## 結論
 
-おめでとう！ Groupdocs.Viewer for .NET を使用してドキュメントから選択したページをレンダリングする方法を学習しました。この知識があれば、ドキュメント レンダリング機能を .NET アプリケーションに簡単に統合できるようになります。
+おめでとうございます！Groupdocs.Viewer for .NETを使用して、ドキュメントから選択したページをレンダリングする方法を習得しました。この知識があれば、ドキュメントレンダリング機能を.NETアプリケーションに簡単に統合できます。
 
 ## よくある質問
 
-### Q: PDF や画像など、さまざまな種類のドキュメントのページをレンダリングできますか?
+### Q: PDF や画像など、さまざまな種類のドキュメントからページをレンダリングできますか?
 
-A: はい、Groupdocs.Viewer for .NET は、PDF、Microsoft Office ドキュメント、画像ファイルなど、さまざまなドキュメント形式からのページのレンダリングをサポートしています。
+A: はい、Groupdocs.Viewer for .NET は、PDF、Microsoft Office ドキュメント、画像ファイルなど、さまざまなドキュメント形式のページのレンダリングをサポートしています。
 
 ### Q: 購入前にテストできる試用版はありますか?
 
- A: はい、Groupdocs.Viewer for .NET の無料試用版には、[Webサイト](https://releases.groupdocs.com/).
+A: はい、Groupdocs.Viewer for .NETの無料試用版は、 [Webサイト](https://releases。groupdocs.com/).
 
 ### Q: HTML 以外の出力形式をカスタマイズできますか?
 
-A: 確かに、Groupdocs.Viewer for .NET には、HTML に加えて画像、PDF などとしてページをレンダリングするオプションが用意されています。
+A: はい、Groupdocs.Viewer for .NET には、HTML に加えて、ページを画像や PDF などでレンダリングするオプションが用意されています。
 
 ### Q: テスト目的で一時ライセンスを取得するにはどうすればよいですか?
 
-A: 一時ライセンスは以下から取得できます。[一時ライセンスのページ](https://purchase.groupdocs.com/temporary-license/) Groupdocs Web サイトで。
+A: 一時ライセンスは、 [一時ライセンスページ](https://purchase.groupdocs.com/temporary-license/) Groupdocs の Web サイトをご覧ください。
 
-### Q: 問題が発生した場合、どこに助けを求めればよいですか?
+### Q: 問題が発生した場合は、どこでサポートや支援を受けることができますか?
 
- A: にアクセスできます。[Groupdocs.Viewer フォーラム](https://forum.groupdocs.com/c/viewer/9)コミュニティや開発者からのサポートと指導が必要です。
+A: 訪問することができます [Groupdocs.Viewerフォーラム](https://forum.groupdocs.com/c/viewer/9) コミュニティと開発者からのサポートとガイダンスのため。

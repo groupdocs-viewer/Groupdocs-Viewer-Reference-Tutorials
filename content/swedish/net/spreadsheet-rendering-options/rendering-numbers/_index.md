@@ -1,23 +1,23 @@
 ---
-title: Återgivningssiffror
-linktitle: Återgivningssiffror
-second_title: GroupDocs.Viewer .NET API
-description: Utforska kraften i Groupdocs.Viewer för .NET när det gäller att rendera Numbers-filer sömlöst. Konvertera till HTML, JPG, PNG och PDF utan ansträngning.
-weight: 15
-url: /sv/net/spreadsheet-rendering-options/rendering-numbers/
+"description": "Utforska kraften hos Groupdocs.Viewer för .NET för att rendera Numbers-filer sömlöst. Konvertera till HTML, JPG, PNG och PDF utan ansträngning."
+"linktitle": "Rendering av siffror"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Rendering av siffror"
+"url": "/sv/net/spreadsheet-rendering-options/rendering-numbers/"
+"weight": 15
 ---
 
-# Återgivningssiffror
+# Rendering av siffror
 
 ## Introduktion
-Välkommen till denna steg-för-steg handledning om hur du renderar Numbers-filer med Groupdocs.Viewer för .NET. Oavsett om du är en erfaren utvecklare eller nybörjare, kommer den här guiden att leda dig genom processen att konvertera Numbers-dokument till olika format. Groupdocs.Viewer för .NET är ett kraftfullt verktyg som låter dig sömlöst integrera dokumentvisningsmöjligheter i dina .NET-applikationer.
-## Förutsättningar
-Innan du dyker in i handledningen, se till att du har följande förutsättningar på plats:
-- En praktisk kunskap om C# och .NET utveckling.
--  Groupdocs.Viewer för .NET-biblioteket installerat. Du kan ladda ner den[här](https://releases.groupdocs.com/viewer/net/).
+Välkommen till den här steg-för-steg-handledningen om hur du renderar Numbers-filer med Groupdocs.Viewer för .NET. Oavsett om du är en erfaren utvecklare eller nybörjare, kommer den här guiden att guida dig genom processen att konvertera Numbers-dokument till olika format. Groupdocs.Viewer för .NET är ett kraftfullt verktyg som låter dig sömlöst integrera dokumentvisningsfunktioner i dina .NET-applikationer.
+## Förkunskapskrav
+Innan du börjar med handledningen, se till att du har följande förutsättningar på plats:
+- Goda kunskaper i C# och .NET-utveckling.
+- Groupdocs.Viewer för .NET-biblioteket är installerat. Du kan ladda ner det. [här](https://releases.groupdocs.com/viewer/net/).
 - Sökvägen till din dokumentkatalog där utdatafilerna kommer att sparas.
-## Importera namnområden
-Se till att du importerar de nödvändiga namnrymden i ditt C#-projekt för att använda biblioteket Groupdocs.Viewer:
+## Importera namnrymder
+I ditt C#-projekt, se till att du importerar de namnrymder som krävs för att använda Groupdocs.Viewer-biblioteket:
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -25,13 +25,13 @@ using System.Text;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Steg 1: Konfigurera utdatakatalog
+## Steg 1: Konfigurera utdatakatalogen
 Innan du börjar rendera, definiera utdatakatalogen där de konverterade filerna ska sparas. Ersätt "Din dokumentkatalog" med den faktiska sökvägen:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Steg 2: Återge HTML till flera sidor
-Använd följande kod för att konvertera Numbers-filen till HTML med flera sidor:
+## Steg 2: Rendera till flersidig HTML
+Använd följande kod för att konvertera Numbers-filen till flersidig HTML:
 ```csharp
 string pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.html");
 using (Viewer viewer = new Viewer("SAMPLE.NUMBERS"))
@@ -40,7 +40,7 @@ using (Viewer viewer = new Viewer("SAMPLE.NUMBERS"))
     viewer.View(options);
 }
 ```
-## Steg 3: Återge till JPG
+## Steg 3: Rendera till JPG
 Konvertera Numbers-filen till JPG-format med följande kod:
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.jpg");
@@ -70,17 +70,17 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
     viewer.View(options);
 }
 ```
-Grattis! Du har framgångsrikt renderat Numbers-filer till olika format med Groupdocs.Viewer för .NET.
+Grattis! Du har lyckats rendera Numbers-filer till olika format med Groupdocs.Viewer för .NET.
 ## Slutsats
-I den här handledningen täckte vi grunderna för att rendera Numbers-filer med Groupdocs.Viewer för .NET. Detta kraftfulla bibliotek ger sömlös integration för att visa och konvertera dokument i dina .NET-applikationer.
+den här handledningen gick vi igenom grunderna i att rendera Numbers-filer med Groupdocs.Viewer för .NET. Detta kraftfulla bibliotek erbjuder sömlös integration för visning och konvertering av dokument i dina .NET-applikationer.
 ## Vanliga frågor
 ### Kan jag använda Groupdocs.Viewer för .NET med andra dokumenttyper?
-Ja, Groupdocs.Viewer stöder ett brett utbud av dokumentformat, inklusive Word, Excel, PDF och mer.
-### Finns en tillfällig licens tillgänglig för teständamål?
- Ja, du kan få en tillfällig licens[här](https://purchase.groupdocs.com/temporary-license/) för provning.
+Ja, Groupdocs.Viewer stöder en mängd olika dokumentformat, inklusive Word, Excel, PDF och mer.
+### Finns det en tillfällig licens tillgänglig för teständamål?
+Ja, du kan få ett tillfälligt körkort [här](https://purchase.groupdocs.com/temporary-license/) för testning.
 ### Var kan jag hitta support för Groupdocs.Viewer för .NET?
- Besök[Groupdocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9) för hjälp och diskussioner.
+Besök [Groupdocs.Viewer-forum](https://forum.groupdocs.com/c/viewer/9) för hjälp och diskussioner.
 ### Hur köper jag den fullständiga versionen av Groupdocs.Viewer för .NET?
- Du kan köpa den fullständiga versionen[här](https://purchase.groupdocs.com/buy).
+Du kan köpa den fullständiga versionen [här](https://purchase.groupdocs.com/buy).
 ### Finns det en gratis testversion tillgänglig?
- Ja, du kan utforska den kostnadsfria testversionen[här](https://releases.groupdocs.com/).
+Ja, du kan utforska den kostnadsfria testversionen [här](https://releases.groupdocs.com/).

@@ -1,21 +1,24 @@
 ---
-title: Dostosuj jakość obrazu w formacie PDF
-linktitle: Dostosuj jakość obrazu w formacie PDF
-second_title: GroupDocs.Viewer API .NET
-description: Dowiedz się, jak dostosować jakość obrazu w dokumentach PDF za pomocą programu GroupDocs.Viewer dla platformy .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby zapewnić bezproblemową integrację.
-weight: 10
-url: /pl/net/pdf-rendering-options/adjust-image-quality-pdf/
+"description": "Dowiedz się, jak dostosować jakość obrazu w dokumentach PDF za pomocą GroupDocs.Viewer dla .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby zapewnić bezproblemową integrację."
+"linktitle": "Dostosuj jakość obrazu w pliku PDF"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Dostosuj jakość obrazu w pliku PDF"
+"url": "/pl/net/pdf-rendering-options/adjust-image-quality-pdf/"
+"weight": 10
 ---
 
-# Dostosuj jakość obrazu w formacie PDF
+# Dostosuj jakość obrazu w pliku PDF
 
 ## Wstęp
-GroupDocs.Viewer dla .NET to potężna biblioteka, która umożliwia programistom bezproblemową integrację możliwości renderowania dokumentów z aplikacjami .NET. Jedną z kluczowych funkcji tej biblioteki jest możliwość dostosowania jakości obrazu podczas renderowania dokumentów PDF. W tym samouczku przeprowadzimy Cię krok po kroku przez proces dostosowywania jakości obrazu przy użyciu programu GroupDocs.Viewer dla platformy .NET.
-## Warunki wstępne
+GroupDocs.Viewer dla .NET to potężna biblioteka, która umożliwia deweloperom bezproblemową integrację możliwości renderowania dokumentów z aplikacjami .NET. Jedną z kluczowych funkcji tej biblioteki jest możliwość dostosowywania jakości obrazu podczas renderowania dokumentów PDF. W tym samouczku przeprowadzimy Cię przez proces dostosowywania jakości obrazu krok po kroku za pomocą GroupDocs.Viewer dla .NET.
+
+![Dostosuj jakość obrazu w pliku PDF za pomocą GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/adjust-image-quality-in-pdf.png)
+
+## Wymagania wstępne
 Zanim zaczniemy, upewnij się, że spełniasz następujące wymagania wstępne:
 1. Podstawowa znajomość programowania w języku C#.
 2. Program Visual Studio zainstalowany w systemie.
-3. Pobrano i zainstalowano bibliotekę GroupDocs.Viewer dla .NET. Można go pobrać z[Tutaj](https://releases.groupdocs.com/viewer/net/).
+3. Biblioteka GroupDocs.Viewer dla .NET została pobrana i zainstalowana. Można ją pobrać z [Tutaj](https://releases.groupdocs.com/viewer/net/).
 
 ## Importuj przestrzenie nazw
 Najpierw musisz zaimportować niezbędne przestrzenie nazw, aby móc pracować z GroupDocs.Viewer dla .NET:
@@ -28,12 +31,12 @@ using GroupDocs.Viewer.Options;
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Zastępować`"Your Document Directory"` ze ścieżką, w której chcesz zapisać wyrenderowane strony HTML.
-## Krok 2: Zdefiniuj format ścieżki pliku strony
+Zastępować `"Your Document Directory"` ze ścieżką, pod którą chcesz zapisać wyrenderowane strony HTML.
+## Krok 2: Zdefiniuj format ścieżki pliku stronicowania
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
- Ta linia definiuje format ścieżki pliku każdej renderowanej strony HTML.`{0}` jest symbolem zastępczym numeru strony.
+Ten wiersz definiuje format ścieżki pliku każdej renderowanej strony HTML. `{0}` jest symbolem zastępczym numeru strony.
 ## Krok 3: Dostosuj jakość obrazu
 ```csharp
 using (Viewer viewer = new Viewer("Your PDF File Path"))
@@ -43,23 +46,23 @@ using (Viewer viewer = new Viewer("Your PDF File Path"))
     viewer.View(options);
 }
 ```
- Zastępować`"Your PDF File Path"` ze ścieżką do dokumentu PDF.
+Zastępować `"Your PDF File Path"` ze ścieżką do dokumentu PDF.
 ## Krok 4: Wyświetl ścieżkę wyjściową
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-W tej linii wyświetlana jest ścieżka, w której zapisywane są wyrenderowane strony HTML.
+Ten wiersz wyświetla ścieżkę, w której zapisywane są renderowane strony HTML.
 
 ## Wniosek
-W tym samouczku dowiedzieliśmy się, jak dostosować jakość obrazu podczas renderowania dokumentów PDF przy użyciu programu GroupDocs.Viewer dla platformy .NET. Wykonując proste kroki opisane powyżej, możesz łatwo dostosować jakość obrazu do swoich wymagań.
-## Często zadawane pytania
-### Czy mogę dostosować jakość obrazu dla innych formatów dokumentów niż PDF?
-Tak, GroupDocs.Viewer dla .NET obsługuje różne formaty dokumentów i w przypadku większości z nich można dostosować jakość obrazu.
+W tym samouczku nauczyliśmy się, jak dostosować jakość obrazu podczas renderowania dokumentów PDF za pomocą GroupDocs.Viewer dla .NET. Postępując zgodnie z prostymi krokami opisanymi powyżej, możesz łatwo dostosować jakość obrazu zgodnie ze swoimi wymaganiami.
+## Najczęściej zadawane pytania
+### Czy mogę dostosować jakość obrazu w innych formatach dokumentów niż PDF?
+Tak, GroupDocs.Viewer dla platformy .NET obsługuje różne formaty dokumentów, a w przypadku większości z nich można dostosować jakość obrazu.
 ### Jakie są dostępne opcje jakości obrazu?
-GroupDocs.Viewer dla .NET udostępnia opcje niskiej, średniej i wysokiej jakości obrazu.
+GroupDocs.Viewer dla platformy .NET udostępnia opcje niskiej, średniej i wysokiej jakości obrazu.
 ### Czy istnieje sposób na podgląd dokumentu przed renderowaniem z dostosowaną jakością obrazu?
-Tak, możesz używać GroupDocs.Viewer dla .NET do generowania podglądów dokumentów z różnymi ustawieniami jakości obrazu.
+Tak, można użyć GroupDocs.Viewer dla .NET do generowania podglądów dokumentów z różnymi ustawieniami jakości obrazu.
 ### Czy GroupDocs.Viewer dla .NET wymaga licencji do użytku komercyjnego?
- Tak, musisz uzyskać licencję na wykorzystanie komercyjne. Możesz kupić licencję od[Tutaj](https://purchase.groupdocs.com/buy).
-### Gdzie mogę uzyskać pomoc dotyczącą GroupDocs.Viewer dla platformy .NET?
- Pomoc można uzyskać na forum GroupDocs.Viewer[Tutaj](https://forum.groupdocs.com/c/viewer/9).
+Tak, musisz uzyskać licencję do użytku komercyjnego. Możesz kupić licencję od [Tutaj](https://purchase.groupdocs.com/buy).
+### Gdzie mogę uzyskać pomoc techniczną dotyczącą GroupDocs.Viewer dla .NET?
+Możesz uzyskać pomoc na forum GroupDocs.Viewer [Tutaj](https://forum.groupdocs.com/c/viewer/9).

@@ -1,22 +1,22 @@
 ---
-title: Vykreslit archivy na jednu nebo více stránek HTML
-linktitle: Vykreslit archivy na jednu nebo více stránek HTML
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se vykreslovat archivy na stránky HTML pomocí GroupDocs.Viewer for .NET. Bez námahy integrujte možnosti prohlížení dokumentů do svých aplikací .NET.
-weight: 12
-url: /cs/net/rendering-archive-files/render-archives-html/
+"description": "Naučte se, jak vykreslovat archivy do HTML stránek pomocí GroupDocs.Viewer pro .NET. Snadno integrujte funkce prohlížení dokumentů do svých .NET aplikací."
+"linktitle": "Vykreslení archivů na jednu nebo více HTML stránek"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslení archivů na jednu nebo více HTML stránek"
+"url": "/cs/net/rendering-archive-files/render-archives-html/"
+"weight": 12
 ---
 
-# Vykreslit archivy na jednu nebo více stránek HTML
+# Vykreslení archivů na jednu nebo více HTML stránek
 
-## Úvod
-GroupDocs.Viewer for .NET je výkonná knihovna pro vykreslování dokumentů, která umožňuje vývojářům bez námahy integrovat možnosti prohlížení dokumentů do jejich aplikací .NET. Ať už potřebujete vykreslit archivy na jednu nebo více stránek HTML, tento tutoriál vás provede procesem krok za krokem.
+## Zavedení
+GroupDocs.Viewer pro .NET je výkonná knihovna pro vykreslování dokumentů, která vývojářům umožňuje snadno integrovat funkce prohlížení dokumentů do jejich .NET aplikací. Ať už potřebujete vykreslit archivy na jednu nebo více HTML stránek, tento tutoriál vás krok za krokem provede celým procesem.
 ## Předpoklady
 Než se pustíte do tohoto tutoriálu, ujistěte se, že máte následující předpoklady:
-1.  GroupDocs.Viewer for .NET: Ujistěte se, že máte knihovnu nainstalovanou ve svém projektu. Můžete si jej stáhnout z[tady](https://releases.groupdocs.com/viewer/net/).
-2. Vývojové prostředí: Mějte pracovní vývojové prostředí nastavené pro vývoj .NET.
-3. Adresář dokumentů: Připravte si adresář, kde jsou uloženy vaše dokumenty.
-4. Základní porozumění C#: Seznamte se se základy programovacího jazyka C#.
+1. GroupDocs.Viewer pro .NET: Ujistěte se, že máte knihovnu nainstalovanou ve svém projektu. Můžete si ji stáhnout z [zde](https://releases.groupdocs.com/viewer/net/).
+2. Vývojové prostředí: Mějte nastavené funkční vývojové prostředí pro vývoj v .NET.
+3. Adresář dokumentů: Připravte si adresář, kde budou vaše dokumenty uloženy.
+4. Základní znalost C#: Seznamte se se základy programovacího jazyka C#.
 
 ## Importovat jmenné prostory
 V kódu C# nezapomeňte importovat potřebné jmenné prostory:
@@ -26,22 +26,22 @@ using System;
 using System.IO;
 ```
 
-Chcete-li vykreslit archivy na jednu nebo více stránek HTML pomocí GroupDocs.Viewer pro .NET, postupujte takto:
-## Krok 1: Nastavte výstupní adresář
+Chcete-li vykreslit archivy na jednu nebo více stránek HTML pomocí nástroje GroupDocs.Viewer pro .NET, postupujte takto:
+## Krok 1: Nastavení výstupního adresáře
 Definujte adresář, kam chcete ukládat vykreslené HTML stránky:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Krok 2: Definujte formát cesty k souboru
+## Krok 2: Definování formátu cesty k souboru
 Zadejte formát cesty k souboru pro stránky HTML. Pro vykreslování jedné stránky:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result.html");
 ```
-Pro vícestránkové vykreslování:
+Pro vykreslování více stránek:
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_page_{0}.html");
 ```
-## Krok 3: Vykreslení na jednu stránku HTML
+## Krok 3: Vykreslení do jednostránkového HTML kódu
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
 {
@@ -50,12 +50,12 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
     viewer.View(options);
 }
 ```
-## Krok 4: Vykreslení HTML na více stránek
+## Krok 4: Vykreslení na více stránek HTML
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    options.ArchiveOptions.ItemsPerPage = 10; // Nastavte položky na stránku
+    options.ArchiveOptions.ItemsPerPage = 10; // Nastavit položky na stránku
     viewer.View(options);
 }
 ```
@@ -65,15 +65,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ```
 
 ## Závěr
-Vykreslování archivů na stránky HTML pomocí GroupDocs.Viewer for .NET je jednoduchý proces. Podle kroků uvedených v tomto kurzu můžete bezproblémově integrovat možnosti prohlížení dokumentů do vašich aplikací .NET.
-## FAQ
-### Mohu vykreslit jiné formáty dokumentů kromě archivů?
-Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů včetně PDF, DOCX, XLSX, PPTX a dalších.
+Vykreslování archivů do HTML stránek pomocí GroupDocs.Viewer pro .NET je jednoduchý proces. Dodržováním kroků popsaných v tomto tutoriálu můžete bezproblémově integrovat funkce prohlížení dokumentů do svých .NET aplikací.
+## Často kladené otázky
+### Mohu vykreslovat dokumenty i v jiných formátech než archivech?
+Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně PDF, DOCX, XLSX, PPTX a dalších.
 ### Je GroupDocs.Viewer vhodný pro desktopové i webové aplikace?
-GroupDocs.Viewer lze bez problémů používat v desktopových i webových aplikacích.
+GroupDocs.Viewer lze bez problémů používat jak v desktopových, tak i webových aplikacích.
 ### Nabízí GroupDocs.Viewer možnosti přizpůsobení rozhraní prohlížeče?
 Ano, rozhraní prohlížeče si můžete přizpůsobit podle svých požadavků.
-### Mohu vykreslovat dokumenty asynchronně s GroupDocs.Viewer?
-Ano, GroupDocs.Viewer poskytuje možnosti asynchronního vykreslování pro lepší výkon.
+### Mohu vykreslovat dokumenty asynchronně pomocí GroupDocs.Viewer?
+Ano, GroupDocs.Viewer poskytuje asynchronní vykreslování pro lepší výkon.
 ### Podporuje GroupDocs.Viewer anotace dokumentů?
 Ano, GroupDocs.Viewer umožňuje uživatelům efektivně prohlížet a spravovat anotace dokumentů.

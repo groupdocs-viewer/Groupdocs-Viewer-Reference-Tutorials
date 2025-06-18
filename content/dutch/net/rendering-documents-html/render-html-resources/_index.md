@@ -1,25 +1,25 @@
 ---
-title: Render met ingebedde of externe bronnen
-linktitle: Render met ingebedde of externe bronnen
-second_title: GroupDocs.Viewer .NET-API
-description: Verbeter de weergave van .NET-documenten met GroupDocs.Viewer voor naadloze weergave. Volg onze tutorial voor efficiënte integratie en superieure gebruikerservaring.
-weight: 12
-url: /nl/net/rendering-documents-html/render-html-resources/
+"description": "Verbeter de weergave van .NET-documenten met GroupDocs.Viewer voor naadloze weergave. Volg onze tutorial voor efficiënte integratie en een superieure gebruikerservaring."
+"linktitle": "Renderen met ingebedde of externe bronnen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Renderen met ingebedde of externe bronnen"
+"url": "/nl/net/rendering-documents-html/render-html-resources/"
+"weight": 12
 ---
 
-# Render met ingebedde of externe bronnen
+# Renderen met ingebedde of externe bronnen
 
 ## Invoering
 
-In de wereld van .NET-ontwikkeling is het efficiënt bekijken van documenten een cruciaal aspect van veel toepassingen. GroupDocs.Viewer voor .NET biedt een krachtige oplossing voor het weergeven van documenten met ingebouwde of externe bronnen. In deze zelfstudie onderzoeken we hoe u GroupDocs.Viewer kunt gebruiken om documenten naadloos weer te geven, waarbij we elke stap opsplitsen voor duidelijkheid en begrip.
+In de wereld van .NET-ontwikkeling is efficiënte documentweergave een cruciaal aspect van veel applicaties. GroupDocs.Viewer voor .NET biedt een krachtige oplossing voor het renderen van documenten met ingesloten of externe bronnen. In deze tutorial onderzoeken we hoe je GroupDocs.Viewer kunt gebruiken om documenten naadloos te renderen, waarbij we elke stap uitleggen voor meer duidelijkheid en begrip.
 
 ## Vereisten
 
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat u met de tutorial begint, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
-1. Basiskennis van .NET-ontwikkeling: Bekendheid met de programmeertaal C# en het .NET-framework is noodzakelijk.
-2.  Installatie van GroupDocs.Viewer voor .NET: Download en installeer GroupDocs.Viewer voor .NET vanaf[hier](https://releases.groupdocs.com/viewer/net/).
-3. Te renderen documentbestand: Bereid een voorbeelddocumentbestand voor (bijvoorbeeld DOCX, PDF) voor weergave.
+1. Basiskennis van .NET-ontwikkeling: kennis van de programmeertaal C# en het .NET Framework is noodzakelijk.
+2. Installatie van GroupDocs.Viewer voor .NET: Download en installeer GroupDocs.Viewer voor .NET van [hier](https://releases.groupdocs.com/viewer/net/).
+3. Te renderen documentbestand: bereid een voorbeelddocumentbestand voor (bijv. DOCX, PDF) voor rendering.
 
 ## Naamruimten importeren
 
@@ -31,42 +31,42 @@ using GroupDocs.Viewer.Options;
 using System.IO;
 ```
 
-Laten we nu het proces van het weergeven van een document met ingebedde of externe bronnen in beheersbare stappen opsplitsen:
+Laten we het proces van het renderen van een document met ingesloten of externe bronnen opsplitsen in beheersbare stappen:
 
-## Stap 1: Definieer de uitvoerdirectory
+## Stap 1: Definieer de uitvoermap
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-Geef de map op waarin u de weergegeven HTML-pagina's wilt opslaan.
+Geef de map op waarin u de gerenderde HTML-pagina's wilt opslaan.
 
-## Stap 2: Definieer het paginabestandspadformaat
+## Stap 2: Definieer het padformaat van het paginabestand
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 
-Stel de indeling in voor het bestandspad waar elke gerenderde pagina wordt opgeslagen.`{0}` is een tijdelijke aanduiding voor het paginanummer.
+Stel de indeling in voor het bestandspad waar elke gerenderde pagina wordt opgeslagen. `{0}` is een tijdelijke aanduiding voor het paginanummer.
 
-## Stap 3: Initialiseer de Viewer-instantie
+## Stap 3: Viewer-instantie initialiseren
 
 ```csharp
 using (Viewer viewer = new Viewer("YourDocumentFilePath"))
 {
-    // De initialisatiecode van de viewer komt hier terecht
+    // Viewer-initialisatiecode komt hier
 }
 ```
 
-Maak een Viewer-instantie door het pad door te geven van het documentbestand dat moet worden weergegeven.
+Maak een Viewer-exemplaar door het pad van het te renderen documentbestand op te geven.
 
-## Stap 4: Configureer HTML-weergaveopties
+## Stap 4: HTML-weergaveopties configureren
 
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
 
-Configureer HTML-weergaveopties, waarbij u de indeling voor ingesloten bronnen en de indeling van het paginabestandspad specificeert.
+Configureer HTML-weergaveopties en geef de indeling voor ingesloten bronnen en het pad naar de pagina op.
 
 ## Stap 5: Document renderen
 
@@ -74,38 +74,38 @@ Configureer HTML-weergaveopties, waarbij u de indeling voor ingesloten bronnen e
 viewer.View(options);
 ```
 
- Roep de`View` methode op de Viewer-instantie, waarbij de geconfigureerde HTML-weergaveopties worden doorgegeven.
+Roep de `View` -methode op het Viewer-exemplaar, waarbij de geconfigureerde HTML-weergaveopties worden doorgegeven.
 
-## Stap 6: Geef het pad naar de uitvoermap weer
+## Stap 6: Weergave van het pad van de uitvoermap
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in: {outputDirectory}");
 ```
 
-Druk een bericht af dat de succesvolle weergave aangeeft, samen met het pad van de uitvoermap.
+Geef een bericht weer dat het renderen succesvol is verlopen, samen met het pad naar de uitvoermap.
 
 ## Conclusie
 
-GroupDocs.Viewer voor .NET vereenvoudigt het proces van het weergeven van documenten met ingebouwde of externe bronnen, waardoor de mogelijkheden voor het bekijken van documenten in .NET-toepassingen worden verbeterd. Door de stappen in deze zelfstudie te volgen, kunnen ontwikkelaars de documentweergavefunctionaliteit naadloos in hun projecten integreren, waardoor gebruikers een soepele en efficiënte documentweergave-ervaring krijgen.
+GroupDocs.Viewer voor .NET vereenvoudigt het renderen van documenten met ingesloten of externe bronnen en verbetert de mogelijkheden voor het bekijken van documenten in .NET-applicaties. Door de stappen in deze tutorial te volgen, kunnen ontwikkelaars de functionaliteit voor het renderen van documenten naadloos integreren in hun projecten, waardoor gebruikers een soepele en efficiënte documentweergave krijgen.
 
 ## Veelgestelde vragen
 
-### Vraag: Is GroupDocs.Viewer voor .NET compatibel met verschillende documentformaten?
+### V: Is GroupDocs.Viewer voor .NET compatibel met verschillende documentformaten?
 
 A: Ja, GroupDocs.Viewer ondersteunt een breed scala aan documentformaten, waaronder DOCX, PDF, XLSX en meer.
 
-### Vraag: Kan ik de weergaveopties aanpassen aan mijn vereisten?
+### V: Kan ik de renderopties aanpassen aan mijn vereisten?
 
-A: Absoluut, GroupDocs.Viewer biedt uitgebreide opties voor het configureren van het weergaveproces om aan specifieke behoeften te voldoen.
+A: Absoluut. GroupDocs.Viewer biedt uitgebreide opties voor het configureren van het renderingproces, zodat het aan specifieke behoeften voldoet.
 
-### Vraag: Is er een gratis proefversie beschikbaar voor GroupDocs.Viewer voor .NET?
+### V: Is er een gratis proefversie beschikbaar voor GroupDocs.Viewer voor .NET?
 
- A: Ja, u kunt profiteren van een gratis proefperiode van[hier](https://releases.groupdocs.com/).
+A: Ja, u kunt gebruik maken van een gratis proefperiode van [hier](https://releases.groupdocs.com/).
 
-### Vraag: Hoe kan ik ondersteuning of assistentie krijgen bij de integratie van GroupDocs.Viewer?
+### V: Hoe kan ik ondersteuning of hulp krijgen bij de integratie van GroupDocs.Viewer?
 
- A: U kunt hulp zoeken op het GroupDocs.Viewer-communityforum[hier](https://forum.groupdocs.com/c/viewer/9).
+A: U kunt hulp zoeken op het GroupDocs.Viewer communityforum [hier](https://forum.groupdocs.com/c/viewer/9).
 
-### Vraag: Zijn er tijdelijke licenties beschikbaar voor testdoeleinden?
+### V: Zijn er tijdelijke licenties beschikbaar voor testdoeleinden?
 
- A: Ja, tijdelijke licenties zijn verkrijgbaar bij[hier](https://purchase.groupdocs.com/temporary-license/).
+A: Ja, tijdelijke vergunningen kunnen worden verkregen bij [hier](https://purchase.groupdocs.com/temporary-license/).

@@ -1,25 +1,27 @@
 ---
-title: Kết xuất hình ảnh EMZ và EMF
-linktitle: Kết xuất hình ảnh EMZ và EMF
-second_title: API GroupDocs.Viewer .NET
-description: Tìm hiểu cách hiển thị hình ảnh EMZ và EMF sang các định dạng khác nhau bằng GroupDocs.Viewer cho .NET. Hướng dẫn dễ làm theo dành cho nhà phát triển.
-weight: 14
-url: /vi/net/image-rendering/render-emz-emf-images/
+"description": "Tìm hiểu cách hiển thị hình ảnh EMZ và EMF sang nhiều định dạng khác nhau bằng GroupDocs.Viewer cho .NET. Hướng dẫn dễ làm theo dành cho nhà phát triển."
+"linktitle": "Kết xuất hình ảnh EMZ và EMF"
+"second_title": "API GroupDocs.Viewer .NET"
+"title": "Kết xuất hình ảnh EMZ và EMF"
+"url": "/vi/net/image-rendering/render-emz-emf-images/"
+"weight": 14
 ---
 
 # Kết xuất hình ảnh EMZ và EMF
 
 ## Giới thiệu
 
-GroupDocs.Viewer cho .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị nhiều loại tài liệu khác nhau, bao gồm hình ảnh EMZ (Siêu tệp Windows nâng cao) và EMF (Siêu tệp nâng cao) trong các ứng dụng .NET của họ. Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị hình ảnh EMZ và EMF sang các định dạng khác nhau như HTML, JPG, PNG và PDF bằng GroupDocs.Viewer cho .NET.
+GroupDocs.Viewer for .NET là API kết xuất tài liệu mạnh mẽ cho phép các nhà phát triển hiển thị nhiều loại tài liệu khác nhau, bao gồm hình ảnh EMZ (Enhanced Windows Metafile) và EMF (Enhanced Metafile), trong các ứng dụng .NET của họ. Trong hướng dẫn này, chúng ta sẽ khám phá cách kết xuất hình ảnh EMZ và EMF sang các định dạng khác nhau như HTML, JPG, PNG và PDF bằng GroupDocs.Viewer for .NET.
+
+![Kết xuất hình ảnh EMZ và EMF với GroupDocs.Viewer cho .NET](/viewer/image-rendering/render-emz-and-emf-images.png)
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
+Trước khi bắt đầu, hãy đảm bảo bạn đáp ứng đủ các điều kiện tiên quyết sau:
 
-1.  GroupDocs.Viewer cho .NET: Bạn có thể tải xuống thư viện từ[đây](https://releases.groupdocs.com/viewer/net/).
-2. Môi trường phát triển: Đảm bảo bạn có môi trường phát triển tương thích được thiết lập để phát triển .NET.
-3. Hình ảnh EMZ/EMF mẫu: Có sẵn hình ảnh EMZ và EMF mẫu để hiển thị.
+1. GroupDocs.Viewer cho .NET: Bạn có thể tải xuống thư viện từ [đây](https://releases.groupdocs.com/viewer/net/).
+2. Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển tương thích cho phát triển .NET.
+3. Mẫu hình ảnh EMZ/EMF: Có sẵn các hình ảnh EMZ và EMF mẫu để kết xuất.
 
 ## Nhập không gian tên
 
@@ -31,23 +33,23 @@ using System;
 using System.IO;
 ```
 
-Bây giờ, hãy chia mỗi ví dụ thành nhiều bước theo định dạng hướng dẫn từng bước:
+Bây giờ, chúng ta hãy chia nhỏ từng ví dụ thành nhiều bước theo định dạng hướng dẫn từng bước:
 
-## Hiển thị hình ảnh EMZ/EMF sang HTML
+## Kết xuất hình ảnh EMZ/EMF sang HTML
 
-### Bước 1: Đặt thư mục đầu ra:
+### Bước 1: Thiết lập thư mục đầu ra:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Thay thế`"Your Document Directory"`với đường dẫn mà bạn muốn lưu tệp HTML được hiển thị.
+Thay thế `"Your Document Directory"` bằng đường dẫn mà bạn muốn lưu tệp HTML đã hiển thị.
 
 ### Bước 2: Xác định định dạng đường dẫn tệp trang:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "emz_result.html");
 ```
-Điều này sẽ chỉ định định dạng đường dẫn tệp cho tệp HTML được hiển thị.
+Thao tác này sẽ chỉ định định dạng đường dẫn tệp cho tệp HTML được hiển thị.
 
-### Bước 3: Kết xuất sang HTML:
+### Bước 3: Kết xuất thành HTML:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
 {
@@ -56,9 +58,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
     viewer.View(options);
 }
 ```
- Mã này khởi tạo`Viewer` đối tượng bằng hình ảnh EMZ mẫu và hiển thị nó sang định dạng HTML bằng các tùy chọn được chỉ định.
+Mã này khởi tạo `Viewer` đối tượng có hình ảnh EMZ mẫu và hiển thị nó ở định dạng HTML bằng các tùy chọn được chỉ định.
 
-## Hiển thị hình ảnh EMZ/EMF sang JPG, PNG và PDF
+## Kết xuất hình ảnh EMZ/EMF sang JPG, PNG và PDF
 
 Lặp lại các bước sau để hiển thị sang định dạng JPG, PNG và PDF:
 
@@ -66,37 +68,37 @@ Lặp lại các bước sau để hiển thị sang định dạng JPG, PNG và
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "emz_result.jpg");
 ```
-Điều chỉnh tên tệp và phần mở rộng theo định dạng đầu ra mong muốn (`jpg`, `png` , hoặc`pdf`).
+Điều chỉnh tên tệp và phần mở rộng theo định dạng đầu ra mong muốn (`jpg`, `png`, hoặc `pdf`).
 
-### Bước 2: Kết xuất sang định dạng tương ứng:
+### Bước 2: Hiển thị theo định dạng tương ứng:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
 {
-    // Điều chỉnh các tùy chọn theo định dạng đầu ra (Jpg, PNG, Pdf)
+    // Điều chỉnh tùy chọn theo định dạng đầu ra (Jpg, Png, Pdf)
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     
     viewer.View(options);
 }
 ```
- Thay thế`JpgViewOptions` với`PngViewOptions` hoặc`PdfViewOptions` dựa trên định dạng đầu ra mong muốn.
+Thay thế `JpgViewOptions` với `PngViewOptions` hoặc `PdfViewOptions` dựa trên định dạng đầu ra mong muốn.
 
 ## Phần kết luận
 
-Tóm lại, GroupDocs.Viewer cho .NET cung cấp một giải pháp liền mạch để hiển thị hình ảnh EMZ và EMF sang các định dạng khác nhau trong các ứng dụng .NET. Bằng cách làm theo các bước được nêu trong hướng dẫn này, nhà phát triển có thể dễ dàng tích hợp khả năng kết xuất tài liệu vào ứng dụng của họ.
+Tóm lại, GroupDocs.Viewer for .NET cung cấp giải pháp liền mạch để kết xuất hình ảnh EMZ và EMF sang nhiều định dạng khác nhau trong các ứng dụng .NET. Bằng cách làm theo các bước được nêu trong hướng dẫn này, các nhà phát triển có thể dễ dàng tích hợp khả năng kết xuất tài liệu vào ứng dụng của họ.
 
 ## Câu hỏi thường gặp
 
-### Câu hỏi: GroupDocs.Viewer có thể hiển thị các định dạng tài liệu khác ngoài hình ảnh EMZ và EMF không?
-Trả lời: Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu bao gồm PDF, DOCX, PPTX, XLSX, v.v.
+### H: GroupDocs.Viewer có thể hiển thị các định dạng tài liệu khác ngoài hình ảnh EMZ và EMF không?
+A: Có, GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu bao gồm PDF, DOCX, PPTX, XLSX, v.v.
 
-### Câu hỏi: Có bản dùng thử miễn phí GroupDocs.Viewer dành cho .NET không?
- Đ: Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
+### H: Có bản dùng thử miễn phí của GroupDocs.Viewer dành cho .NET không?
+A: Có, bạn có thể truy cập bản dùng thử miễn phí [đây](https://releases.groupdocs.com/).
 
-### Câu hỏi: GroupDocs.Viewer có cung cấp hỗ trợ cho nhà phát triển không?
- Đáp: Có, GroupDocs cung cấp hỗ trợ thông qua[diễn đàn](https://forum.groupdocs.com/c/viewer/9) nơi các nhà phát triển có thể đặt câu hỏi và tìm kiếm sự trợ giúp.
+### H: GroupDocs.Viewer có hỗ trợ cho nhà phát triển không?
+A: Có, GroupDocs cung cấp hỗ trợ thông qua [diễn đàn](https://forum.groupdocs.com/c/viewer/9) nơi các nhà phát triển có thể đặt câu hỏi và tìm kiếm sự hỗ trợ.
 
-### Câu hỏi: Tôi có thể mua giấy phép tạm thời cho GroupDocs.Viewer cho .NET không?
- Đáp: Có, giấy phép tạm thời có sẵn để mua[đây](https://purchase.groupdocs.com/temporary-license/).
+### H: Tôi có thể mua giấy phép tạm thời cho GroupDocs.Viewer dành cho .NET không?
+A: Có, giấy phép tạm thời có thể mua được [đây](https://purchase.groupdocs.com/temporary-license/).
 
-### Câu hỏi: Tôi có thể tìm tài liệu chi tiết về GroupDocs.Viewer dành cho .NET ở đâu?
- Đáp: Bạn có thể tham khảo tài liệu[đây](https://tutorials.groupdocs.com/viewer/net/)để được hướng dẫn toàn diện về cách sử dụng API.
+### H: Tôi có thể tìm tài liệu chi tiết về GroupDocs.Viewer cho .NET ở đâu?
+A: Bạn có thể tham khảo tài liệu [đây](https://tutorials.groupdocs.com/viewer/net/) để có hướng dẫn toàn diện về cách sử dụng API.

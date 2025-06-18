@@ -1,24 +1,24 @@
 ---
-title: Rendre les fichiers CHM
-linktitle: Rendre les fichiers CHM
-second_title: API GroupDocs.Viewer .NET
-description: Découvrez comment restituer des fichiers CHM dans .NET à l'aide de GroupDocs.Viewer. Convertissez CHM aux formats HTML, JPG, PNG et PDF sans effort.
-weight: 10
-url: /fr/net/rendering-web-documents/render-chm/
+"description": "Apprenez à afficher des fichiers CHM dans .NET avec GroupDocs.Viewer. Convertissez facilement des fichiers CHM aux formats HTML, JPG, PNG et PDF."
+"linktitle": "Rendu des fichiers CHM"
+"second_title": "API .NET GroupDocs.Viewer"
+"title": "Rendu des fichiers CHM"
+"url": "/fr/net/rendering-web-documents/render-chm/"
+"weight": 10
 ---
 
-# Rendre les fichiers CHM
+# Rendu des fichiers CHM
 
 ## Introduction
-Dans ce didacticiel, nous allons explorer comment restituer des fichiers CHM (Compiled HTML Help) à l'aide de GroupDocs.Viewer pour .NET. GroupDocs.Viewer for .NET est une puissante API de rendu de documents qui permet aux développeurs d'afficher plus de 170 types de documents dans leurs applications .NET sans nécessiter d'installation de logiciel externe.
+Dans ce tutoriel, nous découvrirons comment afficher des fichiers CHM (aide HTML compilée) à l'aide de GroupDocs.Viewer pour .NET. GroupDocs.Viewer pour .NET est une puissante API de rendu de documents qui permet aux développeurs d'afficher plus de 170 types de documents dans leurs applications .NET sans aucune installation de logiciel externe.
 
-## Conditions préalables
+## Prérequis
 
-Avant de nous lancer dans le rendu des fichiers CHM, assurez-vous de disposer des conditions préalables suivantes :
+Avant de nous plonger dans le rendu des fichiers CHM, assurez-vous de disposer des prérequis suivants :
 
 ### Installation de GroupDocs.Viewer pour .NET
 
- Pour commencer, vous devez installer GroupDocs.Viewer pour .NET. Vous pouvez télécharger la bibliothèque à partir du[Site Web GroupDocs](https://releases.groupdocs.com/viewer/net/) ou installez-le via NuGet Package Manager en exécutant la commande suivante dans la console Package Manager :
+Pour commencer, vous devez installer GroupDocs.Viewer pour .NET. Vous pouvez télécharger la bibliothèque depuis le [Site Web GroupDocs](https://releases.groupdocs.com/viewer/net/) ou installez-le via le gestionnaire de packages NuGet en exécutant la commande suivante dans la console du gestionnaire de packages :
 
 ```bash
 Install-Package GroupDocs.Viewer
@@ -26,7 +26,7 @@ Install-Package GroupDocs.Viewer
 
 ## Importation d'espaces de noms
 
-Assurez-vous d'importer les espaces de noms nécessaires dans votre projet :
+Assurez-vous d’importer les espaces de noms nécessaires dans votre projet :
 
 ```csharp
 using System;
@@ -46,9 +46,9 @@ Définissez le répertoire dans lequel vous souhaitez que les fichiers rendus so
 string outputDirectory = "Your Document Directory";
 ```
 
-## Étape 2 : Rendu au format HTML
+## Étape 2 : Rendre au format HTML
 
-Pour afficher les fichiers CHM au format HTML, utilisez l'extrait de code suivant :
+Pour restituer les fichiers CHM en HTML, utilisez l'extrait de code suivant :
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.html");
@@ -56,15 +56,15 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.html")
 using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    options.RenderToSinglePage = true; // Définir sur true pour convertir tout le contenu CHM en une seule page
+    options.RenderToSinglePage = true; // Définir sur vrai pour convertir tout le contenu CHM en une seule page
 
-    viewer.View(options); //Convertir toutes les pages
+    viewer.View(options); // Convertir toutes les pages
 }
 ```
 
 ## Étape 3 : Rendu au format JPG
 
-Pour restituer des fichiers CHM en images JPG, utilisez l'extrait de code suivant :
+Pour convertir des fichiers CHM en images JPG, utilisez l'extrait de code suivant :
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.jpg");
@@ -103,7 +103,7 @@ using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
 
-    viewer.View(options); //Convertir toutes les pages
+    viewer.View(options); // Convertir toutes les pages
 }
 ```
 
@@ -117,26 +117,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Conclusion
 
-Le rendu des fichiers CHM à l'aide de GroupDocs.Viewer pour .NET est un processus simple. En suivant les étapes décrites dans ce didacticiel, vous pouvez convertir efficacement des documents CHM en différents formats tels que HTML, images (JPG, PNG) et PDF dans vos applications .NET.
+Le rendu de fichiers CHM avec GroupDocs.Viewer pour .NET est simple. En suivant les étapes décrites dans ce tutoriel, vous pourrez convertir efficacement des documents CHM en différents formats, tels que HTML, images (JPG, PNG) et PDF, dans vos applications .NET.
 
 ## FAQ
 
-### Q1 : GroupDocs.Viewer peut-il afficher d'autres formats de document en dehors de CHM ?
+### Q1 : GroupDocs.Viewer peut-il restituer d’autres formats de documents en dehors de CHM ?
 
-A1 : Oui, GroupDocs.Viewer prend en charge le rendu de plus de 170 formats de documents, notamment PDF, DOCX, XLSX, PPTX, etc.
+A1 : Oui, GroupDocs.Viewer prend en charge le rendu de plus de 170 formats de documents, notamment PDF, DOCX, XLSX, PPTX, etc.
 
 ### Q2 : GroupDocs.Viewer est-il compatible avec .NET Core ?
 
-A2 : Oui, GroupDocs.Viewer prend en charge .NET Core en plus du .NET Framework traditionnel.
+A2 : Oui, GroupDocs.Viewer prend en charge .NET Core en plus du .NET Framework traditionnel.
 
 ### Q3 : Puis-je personnaliser les options de rendu pour différents formats de sortie ?
 
-A3 : Oui, GroupDocs.Viewer propose diverses options pour personnaliser le processus de rendu, telles que la spécification des numéros de page, la définition de la qualité de l'image et la configuration des chemins de sortie.
+A3 : Oui, GroupDocs.Viewer fournit diverses options pour personnaliser le processus de rendu, telles que la spécification des numéros de page, la définition de la qualité de l’image et la configuration des chemins de sortie.
 
 ### Q4 : GroupDocs.Viewer nécessite-t-il des dépendances externes pour le rendu des documents ?
 
-A4 : Non, GroupDocs.Viewer est une bibliothèque autonome et ne nécessite aucune dépendance externe ni installation de logiciels tiers.
+A4 : Non, GroupDocs.Viewer est une bibliothèque autonome et ne nécessite aucune dépendance externe ni installation de logiciel tiers.
 
 ### Q5 : Existe-t-il un essai gratuit disponible pour GroupDocs.Viewer ?
 
- A5 : Oui, vous pouvez bénéficier d'un essai gratuit de GroupDocs.Viewer en visitant le[site web](https://releases.groupdocs.com/).
+A5 : Oui, vous pouvez bénéficier d’un essai gratuit de GroupDocs.Viewer en visitant le [site web](https://releases.groupdocs.com/).

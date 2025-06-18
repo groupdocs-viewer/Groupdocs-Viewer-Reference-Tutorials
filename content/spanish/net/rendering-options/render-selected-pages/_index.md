@@ -1,29 +1,29 @@
 ---
-title: Representar páginas seleccionadas
-linktitle: Representar páginas seleccionadas
-second_title: API GroupDocs.Viewer .NET
-description: Aprenda a representar páginas seleccionadas de documentos usando Groupdocs.Viewer para .NET. Tutorial paso a paso con ejemplos de código incluidos.
-weight: 17
-url: /es/net/rendering-options/render-selected-pages/
+"description": "Aprenda a renderizar páginas seleccionadas de documentos con Groupdocs.Viewer para .NET. Tutorial paso a paso con ejemplos de código."
+"linktitle": "Renderizar páginas seleccionadas"
+"second_title": "API .NET de GroupDocs.Viewer"
+"title": "Renderizar páginas seleccionadas"
+"url": "/es/net/rendering-options/render-selected-pages/"
+"weight": 17
 ---
 
-# Representar páginas seleccionadas
+# Renderizar páginas seleccionadas
 
 ## Introducción
 
-En este tutorial, profundizaremos en cómo utilizar Groupdocs.Viewer para .NET para representar páginas seleccionadas de un documento. Ya sea que sea un desarrollador experimentado o esté comenzando, esta guía paso a paso lo guiará a través del proceso con facilidad.
+En este tutorial, profundizaremos en cómo usar Groupdocs.Viewer para .NET para renderizar páginas seleccionadas de un documento. Tanto si eres un desarrollador experimentado como si estás empezando, esta guía paso a paso te guiará por el proceso fácilmente.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de comenzar, asegúrese de cumplir con los siguientes requisitos previos:
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 
 ### 1. Instalación
 
- Asegúrese de tener Groupdocs.Viewer para .NET instalado en su entorno de desarrollo. Si no, puedes descargarlo desde[Enlace de descarga](https://releases.groupdocs.com/viewer/net/).
+Asegúrese de tener instalado Groupdocs.Viewer para .NET en su entorno de desarrollo. De lo contrario, puede descargarlo desde [Enlace de descarga](https://releases.groupdocs.com/viewer/net/).
 
-## Importando espacios de nombres
+## Importación de espacios de nombres
 
-En su archivo de código C#, importe los espacios de nombres necesarios para acceder a las clases y métodos requeridos. Puedes hacer esto usando el`using` directiva:
+En su archivo de código C#, importe los espacios de nombres necesarios para acceder a las clases y métodos requeridos. Puede hacerlo usando `using` directiva:
 
 ```csharp
 using System;
@@ -31,19 +31,19 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Ahora dividamos el código de ejemplo proporcionado en varios pasos:
+Ahora vamos a dividir el código de ejemplo proporcionado en varios pasos:
 
-## Paso 1: configurar el directorio de salida
+## Paso 1: Establecer el directorio de salida
 
- Defina el directorio donde desea que se guarden las páginas renderizadas. Reemplazar`"Your Document Directory"` con la ruta del directorio deseada.
+Define el directorio donde quieres guardar las páginas renderizadas. Reemplazar `"Your Document Directory"` con la ruta de directorio deseada.
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-## Paso 2: Definir el formato de ruta del archivo de página
+## Paso 2: Definir el formato de la ruta del archivo de página
 
-Especifique el formato de las rutas de archivo de las páginas renderizadas. Esto se utilizará para guardar cada página como un archivo HTML en el directorio de salida.
+Especifique el formato de las rutas de archivo de las páginas renderizadas. Esto se usará para guardar cada página como archivo HTML en el directorio de salida.
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
@@ -51,31 +51,31 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 
 ## Paso 3: Crear una instancia del objeto Visor
 
-Cree una instancia de la clase Viewer y pase la ruta del documento que desea representar como argumento.
+Crea una instancia de la clase Viewer, pasando la ruta del documento que quieres renderizar como argumento.
 
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 ```
 
-## Paso 4: configurar las opciones de vista HTML
+## Paso 4: Configurar las opciones de vista HTML
 
-Configure las opciones de vista HTML para renderizar. En este ejemplo, estamos configurando opciones para incrustar recursos en la salida HTML.
+Configura las opciones de visualización HTML para la renderización. En este ejemplo, configuramos opciones para incrustar recursos en la salida HTML.
 
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
 
-## Paso 5: renderizar las páginas seleccionadas
+## Paso 5: Renderizar las páginas seleccionadas
 
-Especifique los números de página que desea representar. En este caso, estamos representando las páginas 1 a 3. Luego, llamamos al método View en el objeto Viewer, pasando las opciones y los números de página como argumentos.
+Especifique los números de página que desea renderizar. En este caso, renderizamos las páginas 1 a 3. A continuación, llame al método View en el objeto Viewer, pasando las opciones y los números de página como argumentos.
 
 ```csharp
 viewer.View(options, 1, 3);
 ```
 
-## Paso 6: resultado de salida
+## Paso 6: Resultado de salida
 
-Finalmente, muestre un mensaje que indique la renderización exitosa del documento y la ubicación donde se guardan los archivos de salida.
+Por último, muestra un mensaje indicando la representación exitosa del documento y la ubicación donde se guardan los archivos de salida.
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -83,26 +83,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Conclusión
 
-¡Felicidades! Ha aprendido con éxito cómo representar páginas seleccionadas de un documento usando Groupdocs.Viewer para .NET. Con este conocimiento, ahora puede integrar capacidades de representación de documentos en sus aplicaciones .NET con facilidad.
+¡Felicitaciones! Aprendió a renderizar páginas seleccionadas de un documento con Groupdocs.Viewer para .NET. Con este conocimiento, ahora puede integrar fácilmente las funciones de renderizado de documentos en sus aplicaciones .NET.
 
 ## Preguntas frecuentes
 
-### P: ¿Puedo renderizar páginas de diferentes tipos de documentos, como archivos PDF o imágenes?
+### P: ¿Puedo renderizar páginas de diferentes tipos de documentos, como PDF o imágenes?
 
 R: Sí, Groupdocs.Viewer para .NET admite la representación de páginas de varios formatos de documentos, incluidos PDF, documentos de Microsoft Office y archivos de imagen.
 
-### P: ¿Existe una versión de prueba disponible para probar antes de comprar?
+### P: ¿Hay una versión de prueba disponible para probar antes de comprar?
 
- R: Sí, puede acceder a una versión de prueba gratuita de Groupdocs.Viewer para .NET desde[sitio web](https://releases.groupdocs.com/).
+R: Sí, puede acceder a una versión de prueba gratuita de Groupdocs.Viewer para .NET desde [sitio web](https://releases.groupdocs.com/).
 
-### P: ¿Puedo personalizar el formato de salida que no sea HTML?
+### P: ¿Puedo personalizar el formato de salida además de HTML?
 
-R: Por supuesto, Groupdocs.Viewer para .NET ofrece opciones para representar páginas como imágenes, archivos PDF y más, además de HTML.
+R: Por supuesto. Groupdocs.Viewer para .NET ofrece opciones para representar páginas como imágenes, archivos PDF y más, además de HTML.
 
-### P: ¿Cómo puedo obtener licencias temporales para realizar pruebas?
+### P: ¿Cómo puedo obtener licencias temporales para fines de prueba?
 
-R: Las licencias temporales se pueden adquirir en el[página de licencia temporal](https://purchase.groupdocs.com/temporary-license/) en el sitio web de Groupdocs.
+A: Las licencias temporales se pueden adquirir en la [página de licencia temporal](https://purchase.groupdocs.com/temporary-license/) en el sitio web de Groupdocs.
 
-### P: ¿Dónde puedo buscar asistencia u obtener ayuda con cualquier problema que tenga?
+### P: ¿Dónde puedo buscar asistencia u obtener ayuda con cualquier problema que encuentre?
 
- R: Puedes visitar el[Foro Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) para obtener apoyo y orientación de la comunidad y los desarrolladores.
+A: Puedes visitar el [Foro de Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) para recibir apoyo y orientación de la comunidad y los desarrolladores.

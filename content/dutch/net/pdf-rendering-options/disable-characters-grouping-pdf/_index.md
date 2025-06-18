@@ -1,25 +1,28 @@
 ---
-title: Schakel tekengroepering in PDF uit
-linktitle: Schakel tekengroepering in PDF uit
-second_title: GroupDocs.Viewer .NET-API
-description: Leer hoe u het groeperen van tekens in PDF's kunt uitschakelen met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze zelfstudie voor een naadloze documentweergave.
-weight: 11
-url: /nl/net/pdf-rendering-options/disable-characters-grouping-pdf/
+"description": "Leer hoe u tekengroepering in PDF's kunt uitschakelen met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze handleiding voor naadloze documentweergave."
+"linktitle": "Tekengroepering in PDF uitschakelen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Tekengroepering in PDF uitschakelen"
+"url": "/nl/net/pdf-rendering-options/disable-characters-grouping-pdf/"
+"weight": 11
 ---
 
-# Schakel tekengroepering in PDF uit
+# Tekengroepering in PDF uitschakelen
 
 ## Invoering
-In de wereld van .NET-ontwikkeling kan het bekijken van documenten soms een uitdaging zijn, vooral als het gaat om formaten zoals PDF's. Met de juiste tools en kennis kunt u dit proces echter efficiënt stroomlijnen. Een voorbeeld van zo'n tool die te hulp komt, is GroupDocs.Viewer voor .NET. Deze krachtige bibliotheek stelt ontwikkelaars in staat om naadloos verschillende documenttypen weer te geven en weer te geven binnen hun .NET-applicaties.
+In de wereld van .NET-ontwikkeling kan het bekijken van documenten soms een uitdaging zijn, vooral bij formaten zoals PDF's. Met de juiste tools en kennis kunt u dit proces echter efficiënt stroomlijnen. Een dergelijke tool die u te hulp schiet, is GroupDocs.Viewer voor .NET. Deze krachtige bibliotheek stelt ontwikkelaars in staat om verschillende documenttypen naadloos te renderen en weer te geven in hun .NET-applicaties.
+
+![Tekengroepering in PDF uitschakelen met GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/disable-characters-grouping-in-pdf.png)
+
 ## Vereisten
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat u met de tutorial begint, moet u ervoor zorgen dat u aan de volgende vereisten hebt voldaan:
 1. Visual Studio: Zorg ervoor dat Visual Studio op uw systeem is geïnstalleerd.
-2.  GroupDocs.Viewer voor .NET: Download en installeer GroupDocs.Viewer voor .NET vanaf de[officiële downloadlink](https://releases.groupdocs.com/viewer/net/).
-3. Basiskennis van C#: maak uzelf vertrouwd met de grondbeginselen van de programmeertaal C#.
-4. Documentbestanden: Bereid de documentbestanden voor die u wilt renderen, zoals PDF's of afbeeldingen.
+2. GroupDocs.Viewer voor .NET: Download en installeer GroupDocs.Viewer voor .NET van de [officiële downloadlink](https://releases.groupdocs.com/viewer/net/).
+3. Basiskennis van C#: maak uzelf vertrouwd met de basisprincipes van de programmeertaal C#.
+4. Documentbestanden: bereid de documentbestanden voor die u wilt weergeven, zoals PDF's of afbeeldingen.
 
 ## Naamruimten importeren
-Laten we eerst de benodigde naamruimten in ons project importeren. Deze naamruimten bieden toegang tot de functionaliteiten die we nodig hebben vanuit GroupDocs.Viewer.
+Laten we eerst de benodigde naamruimten in ons project importeren. Deze naamruimten bieden toegang tot de functionaliteiten die we nodig hebben van GroupDocs.Viewer.
 
 ```csharp
 using System;
@@ -27,49 +30,49 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Laten we nu het gegeven voorbeeld in beheersbare stappen ontleden.
-## Stap 1: Definieer de uitvoerdirectory
+Laten we het gegeven voorbeeld nu opsplitsen in hanteerbare stappen.
+## Stap 1: Definieer de uitvoermap
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-Hier stellen we een variabele in om de map op te slaan waar de weergegeven HTML-pagina's worden opgeslagen.
-## Stap 2: Definieer het paginabestandspadformaat
+Hier stellen we een variabele in om de directory op te slaan waar de gerenderde HTML-pagina's worden opgeslagen.
+## Stap 2: Definieer het padformaat van het paginabestand
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Met deze stap wordt het formaat vastgesteld voor het benoemen van de HTML-bestanden die voor elke pagina van het document worden gegenereerd.
-## Stap 3: Initialiseer het Viewer-object
+Met deze stap stelt u de opmaak in voor de naamgeving van de HTML-bestanden die voor elke pagina van het document worden gegenereerd.
+## Stap 3: Viewerobject initialiseren
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.HIEROGLYPHS_PDF))
 ```
 Hier initialiseren we het Viewer-object en geven we het pad door naar het PDF-bestand dat we willen renderen.
-## Stap 4: Configureer HTML-weergaveopties
+## Stap 4: HTML-weergaveopties configureren
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.PdfOptions.DisableCharsGrouping = true;
 ```
-In deze stap stellen we HTML-weergaveopties in, waarbij we specificeren dat de karaktergroepering in de PDF moet worden uitgeschakeld.
-## Stap 5: Geef het document weer
+In deze stap stellen we de HTML-weergaveopties in en geven we aan dat de tekengroepering in de PDF moet worden uitgeschakeld.
+## Stap 5: Het document renderen
 ```csharp
 viewer.View(options);
 ```
- Tenslotte noemen wij de`View` methode op het Viewer-object, waarbij de geconfigureerde opties worden doorgegeven om het document weer te geven.
-## Stap 6: Geef de uitvoerdirectory weer
+Ten slotte noemen we de `View` -methode op het Viewer-object, waarbij de geconfigureerde opties voor het weergeven van het document worden doorgegeven.
+## Stap 6: Uitvoermap weergeven
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Deze stap levert een bericht op dat de succesvolle weergave van het document aangeeft en geeft de locatie aan waar de uitvoer kan worden gevonden.
+Met deze stap wordt een bericht weergegeven dat het document succesvol is weergegeven. Tevens wordt de locatie vermeld waar de uitvoer te vinden is.
 
 ## Conclusie
-Kortom, door de stappen te volgen die in deze zelfstudie worden beschreven, kunt u moeiteloos de tekengroepering in PDF-documenten uitschakelen met behulp van GroupDocs.Viewer voor .NET. Deze bibliotheek vereenvoudigt het proces van het bekijken en manipuleren van documenten binnen .NET-applicaties, waardoor ontwikkelaars een krachtige toolset krijgen om hun mogelijkheden voor documentbeheer te verbeteren.
+Kortom, door de stappen in deze tutorial te volgen, kunt u moeiteloos tekengroepering in PDF-documenten uitschakelen met GroupDocs.Viewer voor .NET. Deze bibliotheek vereenvoudigt het bekijken en bewerken van documenten binnen .NET-applicaties en biedt ontwikkelaars een krachtige toolset om hun documentbeheermogelijkheden te verbeteren.
 ## Veelgestelde vragen
 ### Is GroupDocs.Viewer compatibel met alle versies van .NET?
-Ja, GroupDocs.Viewer is compatibel met verschillende versies van .NET, wat flexibiliteit en integratiegemak garandeert.
-### Kan ik andere documenten dan PDF's weergeven met GroupDocs.Viewer?
+Ja, GroupDocs.Viewer is compatibel met verschillende versies van .NET, wat zorgt voor flexibiliteit en eenvoudige integratie.
+### Kan ik met GroupDocs.Viewer andere documenten dan PDF's weergeven?
 Absoluut! GroupDocs.Viewer ondersteunt een breed scala aan documentformaten, waaronder Microsoft Office-bestanden, afbeeldingen en meer.
 ### Is er een gratis proefversie beschikbaar voor GroupDocs.Viewer voor .NET?
- Ja, u kunt via de officiële instantie toegang krijgen tot een gratis proefversie van GroupDocs.Viewer voor .NET[releases pagina](https://releases.groupdocs.com/).
-### Hoe kan ik tijdelijke licenties krijgen voor GroupDocs.Viewer?
-Tijdelijke licenties voor GroupDocs.Viewer kunnen worden verkregen bij de[tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).
-### Waar kan ik ondersteuning of assistentie vinden voor GroupDocs.Viewer-gerelateerde vragen?
- Voor ondersteuning of assistentie met betrekking tot GroupDocs.Viewer kunt u terecht op de[officieel forum](https://forum.groupdocs.com/c/viewer/9).
+Ja, u kunt een gratis proefversie van GroupDocs.Viewer voor .NET downloaden van de officiële website. [releases pagina](https://releases.groupdocs.com/).
+### Hoe kan ik tijdelijke licenties voor GroupDocs.Viewer krijgen?
+Tijdelijke licenties voor GroupDocs.Viewer zijn verkrijgbaar bij de [tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).
+### Waar kan ik ondersteuning of assistentie vinden voor vragen over GroupDocs.Viewer?
+Voor ondersteuning of hulp met betrekking tot GroupDocs.Viewer kunt u terecht op de [officieel forum](https://forum.groupdocs.com/c/viewer/9).

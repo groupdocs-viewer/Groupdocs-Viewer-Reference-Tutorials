@@ -1,33 +1,33 @@
 ---
-title: İşleme Sırasında E-posta Alanlarını Yeniden Adlandırın
-linktitle: İşleme Sırasında E-posta Alanlarını Yeniden Adlandırın
-second_title: GroupDocs.Viewer .NET API'si
-description: .NET için GroupDocs.Viewer ile belge görüntüleme deneyimini geliştirin. E-postaları sorunsuz bir şekilde oluşturun ve özelleştirin.
-weight: 12
-url: /tr/net/rendering-email-messages/rename-email-fields/
+"description": "GroupDocs.Viewer for .NET ile belge görüntüleme deneyiminizi geliştirin. E-postaları sorunsuz bir şekilde işleyin ve özelleştirin."
+"linktitle": "İşleme Sırasında E-posta Alanlarını Yeniden Adlandır"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "İşleme Sırasında E-posta Alanlarını Yeniden Adlandır"
+"url": "/tr/net/rendering-email-messages/rename-email-fields/"
+"weight": 12
 ---
 
-# İşleme Sırasında E-posta Alanlarını Yeniden Adlandırın
+# İşleme Sırasında E-posta Alanlarını Yeniden Adlandır
 
 ## giriiş
 
-Günümüzün dijital çağında, belgeleri verimli bir şekilde yönetmek ve görüntülemek hem işletmeler hem de bireyler için çok önemlidir. Sözleşmeler, raporlar veya e-postalar olsun, bu belgeler arasında sorunsuz bir şekilde gezinme becerisine sahip olmak üretkenliği büyük ölçüde artırabilir. GroupDocs.Viewer for .NET tam da burada devreye giriyor. Bu güçlü kitaplık, geliştiricilerin belge görüntüleme yeteneklerini doğrudan .NET uygulamalarına entegre etmelerine olanak tanıyarak, çeşitli belge formatlarını işlemek için çok çeşitli özellikler sunar.
+Günümüzün dijital çağında, belgeleri etkin bir şekilde yönetmek ve görüntülemek hem işletmeler hem de bireyler için son derece önemlidir. Sözleşmeler, raporlar veya e-postalar olsun, bu belgelerde sorunsuz bir şekilde gezinme becerisine sahip olmak üretkenliği büyük ölçüde artırabilir. İşte .NET için GroupDocs.Viewer'ın devreye girdiği yer burasıdır. Bu güçlü kitaplık, geliştiricilerin belge görüntüleme yeteneklerini doğrudan .NET uygulamalarına entegre etmelerine olanak tanır ve çeşitli belge biçimlerini işlemek için çok çeşitli özellikler sunar.
 
-## Önkoşullar
+## Ön koşullar
 
-GroupDocs.Viewer for .NET'i kullanarak oluşturma sırasında e-posta alanlarını yeniden adlandırma eğitimine dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+GroupDocs.Viewer for .NET kullanarak işleme sırasında e-posta alanlarını yeniden adlandırmayla ilgili eğitime başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-1.  GroupDocs.Viewer for .NET Kitaplığı: GroupDocs.Viewer for .NET kitaplığını şuradan indirip yükleyin:[Burada](https://releases.groupdocs.com/viewer/net/).
+1. GroupDocs.Viewer for .NET Kitaplığı: GroupDocs.Viewer for .NET kitaplığını şu adresten indirin ve yükleyin: [Burada](https://releases.groupdocs.com/viewer/net/).
 
-2. Geliştirme Ortamı: .NET geliştirme için Visual Studio gibi uygun bir geliştirme ortamına sahip olduğunuzdan emin olun.
+2. Geliştirme Ortamı: Visual Studio gibi .NET geliştirme için uygun bir geliştirme ortamının kurulu olduğundan emin olun.
 
-3. Temel C# Anlayışı: Öğretici C# kod parçacıklarını içereceğinden, C# programlama dilinin temellerine aşina olun.
+3. C# Temel Anlayışı: Eğitim C# kod parçacıklarını içereceğinden, C# programlama dilinin temellerini öğrenin.
 
 4. Belge Dizini: İşlenecek belgelerin saklanacağı bir dizin hazırlayın.
 
 ## Ad Alanlarını İçe Aktar
 
-GroupDocs.Viewer işlevlerini .NET uygulamanızda kullanmak için gerekli ad alanlarını içe aktarmanız gerekir.
+.NET uygulamanızda GroupDocs.Viewer işlevlerini kullanabilmek için gerekli ad alanlarını içe aktarmanız gerekir.
 
 ```csharp
 using System;
@@ -35,17 +35,17 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Şimdi GroupDocs.Viewer for .NET'i kullanarak oluşturma sırasında e-posta alanlarını yeniden adlandırma işlemini birden çok adıma ayıralım:
+Şimdi GroupDocs.Viewer for .NET kullanarak oluşturma sırasında e-posta alanlarını yeniden adlandırma sürecini birden fazla adıma bölelim:
 
-## Adım 1: Çıkış Dizinini Tanımlayın
+## Adım 1: Çıktı Dizinini Tanımlayın
 
-Öncelikle oluşturulan HTML sayfalarının kaydedileceği dizini belirtin.
+Öncelikle oluşturulan HTML sayfalarının kaydedileceği dizini belirtiyoruz.
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-## Adım 2: Sayfa Dosya Yolu Formatını Tanımlayın
+## Adım 2: Sayfa Dosyası Yolu Biçimini Tanımlayın
 
 İşlenen HTML sayfalarının dosya yolları için formatı tanımlayın. Her sayfa ayrı bir HTML dosyası olarak kaydedilecektir.
 
@@ -53,18 +53,18 @@ string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 
-## 3. Adım: Görüntüleyici Nesnesini Başlatın
+## Adım 3: Görüntüleyici Nesnesini Başlatın
 
-Viewer sınıfının bir örneğini oluşturun ve görüntülenecek belgenin yolunu parametre olarak iletin.
+Viewer sınıfının bir örneğini oluşturun ve görüntülenecek belgenin yolunu parametre olarak geçirin.
 
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG))
 {
 ```
 
-## 4. Adım: HTML Görünüm Seçeneklerini Yapılandırma
+## Adım 4: HTML Görünüm Seçeneklerini Yapılandırın
 
-Çıktı dosyası biçimini belirlemek ve e-posta alanı eşlemelerini ayarlamak da dahil olmak üzere HTML görünümü seçeneklerini yapılandırın.
+Çıktı dosyası biçimini belirtme ve e-posta alanı eşlemelerini ayarlama dahil olmak üzere HTML görünümü için seçenekleri yapılandırın.
 
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
@@ -76,13 +76,13 @@ options.EmailOptions.FieldTextMap[Field.Subject] = "Topic";
 
 ## Adım 5: Belgeyi Oluşturun
 
-Yapılandırılmış HTML görünüm seçeneklerini ileterek Viewer nesnesinin View yöntemini çağırın.
+Yapılandırılmış HTML görünüm seçeneklerini geçirerek Viewer nesnesinin View metodunu çağırın.
 
 ```csharp
 viewer.View(options);
 ```
 
-## Adım 6: Başarı Mesajını Görüntüleyin
+## Adım 6: Başarı Mesajını Göster
 
 Kullanıcıya belgenin başarıyla işlendiğini bildirin.
 
@@ -92,26 +92,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Çözüm
 
-Sonuç olarak, GroupDocs.Viewer for .NET, .NET uygulamaları içinde belgelerin işlenmesi için kusursuz bir çözüm sağlar. Bu eğitimde özetlenen adımları izleyerek, oluşturma sırasında e-posta alanlarını kolayca yeniden adlandırabilir, böylece e-posta belgelerinin okunabilirliğini ve kullanılabilirliğini artırabilirsiniz. Sezgisel API'si ve kapsamlı özellikleriyle GroupDocs.Viewer, geliştiricilerin belge görüntüleme süreçlerini etkili bir şekilde kolaylaştırmalarına olanak tanır.
+Sonuç olarak, .NET için GroupDocs.Viewer, .NET uygulamaları içinde belgeleri işlemek için kusursuz bir çözüm sunar. Bu eğitimde özetlenen adımları izleyerek, işleme sırasında e-posta alanlarını kolayca yeniden adlandırabilir, e-posta belgelerinin okunabilirliğini ve kullanılabilirliğini artırabilirsiniz. Sezgisel API'si ve kapsamlı özellikleriyle GroupDocs.Viewer, geliştiricilerin belge görüntüleme süreçlerini etkili bir şekilde düzenlemesini sağlar.
 
-## SSS'ler
+## SSS
 
-### S: GroupDocs.Viewer for .NET'i kullanarak e-postalar dışındaki belgeleri oluşturabilir miyim?
+### S: GroupDocs.Viewer for .NET'i kullanarak e-posta dışındaki belgeleri de görüntüleyebilir miyim?
 
-C: Evet, GroupDocs.Viewer, PDF, Microsoft Office belgeleri, resimler ve daha fazlası dahil olmak üzere çeşitli belge formatlarının oluşturulmasını destekler.
+C: Evet, GroupDocs.Viewer PDF, Microsoft Office belgeleri, resimler ve daha fazlası dahil olmak üzere çeşitli belge formatlarının işlenmesini destekler.
 
 ### S: GroupDocs.Viewer .NET Core ile uyumlu mu?
 
-C: Evet, GroupDocs.Viewer, geleneksel .NET Framework'ün yanı sıra .NET Core'u da destekler.
+C: Evet, GroupDocs.Viewer geleneksel .NET Framework'ün yanı sıra .NET Core'u da destekler.
 
-### S: İşlenen belgelerin görünümünü özelleştirebilir miyim?
+### S: Oluşturulan belgelerin görünümünü özelleştirebilir miyim?
 
-C: Kesinlikle GroupDocs.Viewer, oluşturulan belgelerin görünümünü ve davranışını kontrol etmek için kapsamlı özelleştirme seçenekleri sunar.
+C: Kesinlikle, GroupDocs.Viewer, oluşturulan belgelerin görünümünü ve davranışını kontrol etmek için kapsamlı özelleştirme seçenekleri sunar.
 
 ### S: GroupDocs.Viewer belge akışını destekliyor mu?
 
-C: Evet, GroupDocs.Viewer, belgelerin sunucuda saklanmasına gerek kalmadan doğrudan istemcinin tarayıcısına aktarılmasına olanak tanır.
+C: Evet, GroupDocs.Viewer belgelerin sunucuda depolanmasına gerek kalmadan doğrudan istemcinin tarayıcısına aktarılmasına olanak tanır.
 
 ### S: GroupDocs.Viewer kurumsal düzeydeki uygulamalar için uygun mudur?
 
-C: Kesinlikle GroupDocs.Viewer, ölçeklenebilirliği, güvenilirliği ve sağlam özellikleriyle kurumsal düzeydeki uygulamaların taleplerini karşılamak üzere tasarlanmıştır.
+C: Elbette, GroupDocs.Viewer ölçeklenebilirliği, güvenilirliği ve sağlam özellik setiyle kurumsal düzeydeki uygulamaların taleplerini karşılamak üzere tasarlanmıştır.

@@ -1,21 +1,24 @@
 ---
-title: Vykreslování obrázků FODG a ODG
-linktitle: Vykreslování obrázků FODG a ODG
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se vykreslovat obrázky FODG a ODG do HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro .NET. Vylepšete práci s dokumenty.
-weight: 15
-url: /cs/net/image-rendering/render-fodg-odg-images/
+"description": "Naučte se, jak vykreslovat obrázky FODG a ODG do formátu HTML, JPG, PNG a PDF pomocí nástroje GroupDocs.Viewer pro .NET. Vylepšete si práci s dokumenty."
+"linktitle": "Vykreslení obrázků FODG a ODG"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslení obrázků FODG a ODG"
+"url": "/cs/net/image-rendering/render-fodg-odg-images/"
+"weight": 15
 ---
 
-# Vykreslování obrázků FODG a ODG
+# Vykreslení obrázků FODG a ODG
 
-## Úvod
-Ve světě vývoje softwaru je prvořadá efektivní manipulace s formáty dokumentů. GroupDocs.Viewer for .NET je výkonný nástroj navržený pro zjednodušení procesu vykreslování obrázků FODG a ODG v aplikacích .NET. Tento tutoriál vás provede kroky potřebnými k vykreslení těchto obrázků do různých formátů, jako jsou HTML, JPG, PNG a PDF, pomocí GroupDocs.Viewer pro .NET.
+## Zavedení
+Ve světě vývoje softwaru je efektivní práce s formáty dokumentů prvořadá. GroupDocs.Viewer pro .NET je výkonný nástroj určený ke zjednodušení procesu vykreslování obrázků FODG a ODG v aplikacích .NET. Tento tutoriál vás provede kroky potřebnými k vykreslení těchto obrázků do různých formátů, jako je HTML, JPG, PNG a PDF, pomocí GroupDocs.Viewer pro .NET.
+
+![Vykreslení obrázků FODG a ODG pomocí GroupDocs.Viewer pro .NET](/viewer/image-rendering/render-fodg-and--odg-images.png)
+
 ## Předpoklady
-Než se ponoříte do výukového programu, ujistěte se, že máte následující předpoklady:
-1.  GroupDocs.Viewer for .NET: Stáhněte a nainstalujte GroupDocs.Viewer pro .NET z[tady](https://releases.groupdocs.com/viewer/net/).
-2. .NET Framework: Ujistěte se, že máte v systému nainstalované rozhraní .NET Framework.
-3. Základní znalost C#: Užitečná bude znalost programovacího jazyka C#.
+Než se pustíte do tutoriálu, ujistěte se, že máte následující předpoklady:
+1. GroupDocs.Viewer pro .NET: Stáhněte a nainstalujte GroupDocs.Viewer pro .NET z [zde](https://releases.groupdocs.com/viewer/net/).
+2. .NET Framework: Ujistěte se, že máte v systému nainstalovaný .NET Framework.
+3. Základní znalost C#: Znalost programovacího jazyka C# bude užitečná.
 
 ## Importovat jmenné prostory
 Než začnete s implementací, importujte potřebné jmenné prostory:
@@ -24,11 +27,11 @@ using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## Krok 1: Nastavte výstupní adresář
+## Krok 1: Nastavení výstupního adresáře
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Nahradit`"Your Document Directory"` cestou k adresáři, kam chcete uložit vykreslené obrázky.
+Nahradit `"Your Document Directory"` s cestou k adresáři, kam chcete uložit vykreslené obrázky.
 ## Krok 2: Vykreslení do HTML
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "fodg_result.html");
@@ -71,15 +74,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_FODG))
 Nakonec je obrázek FODG vykreslen do formátu PDF.
 
 ## Závěr
-V tomto tutoriálu jsme prozkoumali, jak vykreslit obrázky FODG a ODG do různých formátů pomocí GroupDocs.Viewer pro .NET. Pomocí těchto kroků můžete bezproblémově integrovat možnosti vykreslování dokumentů do aplikací .NET.
-## FAQ
-### Je GroupDocs.Viewer for .NET kompatibilní se všemi verzemi .NET Framework?
-GroupDocs.Viewer for .NET je kompatibilní s celou řadou verzí .NET Framework, včetně těch nejnovějších.
-### Mohu vykreslovat dokumenty asynchronně s GroupDocs.Viewer pro .NET?
-Ano, GroupDocs.Viewer for .NET poskytuje možnosti asynchronního vykreslování pro lepší výkon.
-### Podporuje GroupDocs.Viewer for .NET vykreslování zašifrovaných dokumentů?
-Ano, GroupDocs.Viewer for .NET podporuje vykreslování zašifrovaných dokumentů s příslušnými dešifrovacími klíči.
-### Je možné upravit výstup vykreslování pomocí GroupDocs.Viewer pro .NET?
-Rozhodně, GroupDocs.Viewer for .NET nabízí různé možnosti přizpůsobení pro přizpůsobení výstupu vykreslování podle vašich požadavků.
-### Mohu renderovat dokumenty ze vzdálených úložišť pomocí GroupDocs.Viewer for .NET?
-Ano, GroupDocs.Viewer for .NET podporuje vykreslování dokumentů z lokálního i vzdáleného úložiště.
+tomto tutoriálu jsme prozkoumali, jak vykreslovat obrázky FODG a ODG do různých formátů pomocí GroupDocs.Viewer pro .NET. Dodržením těchto kroků můžete bezproblémově integrovat funkce vykreslování dokumentů do vašich aplikací .NET.
+## Často kladené otázky
+### Je GroupDocs.Viewer pro .NET kompatibilní se všemi verzemi .NET Frameworku?
+GroupDocs.Viewer pro .NET je kompatibilní s širokou škálou verzí .NET Frameworku, včetně těch nejnovějších.
+### Mohu vykreslovat dokumenty asynchronně pomocí GroupDocs.Viewer pro .NET?
+Ano, GroupDocs.Viewer pro .NET poskytuje asynchronní vykreslování pro lepší výkon.
+### Podporuje GroupDocs.Viewer pro .NET vykreslování šifrovaných dokumentů?
+Ano, GroupDocs.Viewer pro .NET podporuje vykreslování šifrovaných dokumentů s příslušnými dešifrovacími klíči.
+### Je možné přizpůsobit výstup vykreslování pomocí GroupDocs.Viewer pro .NET?
+Rozhodně, GroupDocs.Viewer pro .NET nabízí různé možnosti přizpůsobení, aby se výstup vykreslování přizpůsobil vašim požadavkům.
+### Mohu vykreslovat dokumenty ze vzdálených úložišť pomocí GroupDocs.Viewer pro .NET?
+Ano, GroupDocs.Viewer pro .NET podporuje vykreslování dokumentů z lokálních i vzdálených úložišť.

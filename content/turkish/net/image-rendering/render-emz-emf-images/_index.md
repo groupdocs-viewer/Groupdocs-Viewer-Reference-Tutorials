@@ -1,25 +1,27 @@
 ---
-title: EMZ ve EMF Görüntülerini Oluşturun
-linktitle: EMZ ve EMF Görüntülerini Oluşturun
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer for .NET'i kullanarak EMZ ve EMF görüntülerini çeşitli formatlarda nasıl oluşturacağınızı öğrenin. Geliştiriciler için takip edilmesi kolay eğitim.
-weight: 14
-url: /tr/net/image-rendering/render-emz-emf-images/
+"description": "GroupDocs.Viewer for .NET kullanarak EMZ ve EMF görüntülerinin çeşitli formatlara nasıl dönüştürüleceğini öğrenin. Geliştiriciler için kolay takip edilebilir eğitim."
+"linktitle": "EMZ ve EMF Görüntülerini Oluşturun"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "EMZ ve EMF Görüntülerini Oluşturun"
+"url": "/tr/net/image-rendering/render-emz-emf-images/"
+"weight": 14
 ---
 
 # EMZ ve EMF Görüntülerini Oluşturun
 
 ## giriiş
 
-GroupDocs.Viewer for .NET, geliştiricilerin .NET uygulamalarında EMZ (Gelişmiş Windows Meta Dosyası) ve EMF (Gelişmiş Meta Dosyası) görüntüleri de dahil olmak üzere çeşitli belge türlerini görüntülemelerine olanak tanıyan güçlü bir belge işleme API'sidir. Bu eğitimde, GroupDocs.Viewer for .NET'i kullanarak EMZ ve EMF görüntülerinin HTML, JPG, PNG ve PDF gibi farklı formatlara nasıl dönüştürüleceğini keşfedeceğiz.
+GroupDocs.Viewer for .NET, geliştiricilerin EMZ (Gelişmiş Windows Meta Dosyası) ve EMF (Gelişmiş Meta Dosyası) görüntüleri de dahil olmak üzere çeşitli belge türlerini .NET uygulamalarında görüntülemelerine olanak tanıyan güçlü bir belge oluşturma API'sidir. Bu eğitimde, GroupDocs.Viewer for .NET kullanarak EMZ ve EMF görüntülerinin HTML, JPG, PNG ve PDF gibi farklı biçimlere nasıl dönüştürüleceğini inceleyeceğiz.
 
-## Önkoşullar
+![.NET için GroupDocs.Viewer ile EMZ ve EMF Görüntülerini Oluşturun](/viewer/image-rendering/render-emz-and-emf-images.png)
 
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+## Ön koşullar
 
-1.  GroupDocs.Viewer for .NET: Kitaplığı şu adresten indirebilirsiniz:[Burada](https://releases.groupdocs.com/viewer/net/).
-2. Geliştirme Ortamı: .NET geliştirme için uyumlu bir geliştirme ortamına sahip olduğunuzdan emin olun.
-3. Örnek EMZ/EMF Görüntüleri: Oluşturma için örnek EMZ ve EMF görüntülerini hazır bulundurun.
+Başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+
+1. GroupDocs.Viewer for .NET: Kütüphaneyi şu adresten indirebilirsiniz: [Burada](https://releases.groupdocs.com/viewer/net/).
+2. Geliştirme Ortamı: .NET geliştirme için uyumlu bir geliştirme ortamı kurduğunuzdan emin olun.
+3. Örnek EMZ/EMF Görüntüleri: İşleme için örnek EMZ ve EMF görüntüleri bulundurun.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -31,23 +33,23 @@ using System;
 using System.IO;
 ```
 
-Şimdi, adım adım kılavuz formatında her örneği birden fazla adıma ayıralım:
+Şimdi her örneği adım adım bir rehber formatında birden fazla adıma bölelim:
 
-## EMZ/EMF Görüntülerini HTML'ye Dönüştürme
+## EMZ/EMF Görüntülerinin HTML'ye Dönüştürülmesi
 
-### Adım 1: Çıkış Dizinini Ayarlayın:
+### Adım 1: Çıktı Dizinini Ayarlayın:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Yer değiştirmek`"Your Document Directory"`oluşturulan HTML dosyasını kaydetmek istediğiniz yolu belirtin.
+Yer değiştirmek `"Your Document Directory"` işlenmiş HTML dosyasını kaydetmek istediğiniz yolu belirtin.
 
-### Adım 2: Sayfa Dosya Yolu Formatını Tanımlayın:
+### Adım 2: Sayfa Dosyası Yolu Biçimini Tanımlayın:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "emz_result.html");
 ```
-Bu, oluşturulan HTML dosyası için dosya yolu formatını belirleyecektir.
+Bu, oluşturulan HTML dosyası için dosya yolu biçimini belirleyecektir.
 
-### 3. Adım: HTML'ye dönüştürün:
+### Adım 3: HTML'e dönüştürün:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
 {
@@ -56,47 +58,47 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
     viewer.View(options);
 }
 ```
- Bu kod,`Viewer` örnek EMZ görüntüsüyle nesneyi oluşturur ve belirtilen seçenekleri kullanarak onu HTML formatına dönüştürür.
+Bu kod şunu başlatır: `Viewer` Örnek EMZ görüntüsüne sahip nesneyi, belirtilen seçenekleri kullanarak HTML formatına dönüştürür.
 
 ## EMZ/EMF Görüntülerini JPG, PNG ve PDF'ye Dönüştürme
 
-JPG, PNG ve PDF formatlarında işlemek için aşağıdaki adımları tekrarlayın:
+JPG, PNG ve PDF formatlarına dönüştürmek için aşağıdaki adımları tekrarlayın:
 
-### Adım 1: Sayfa Dosya Yolu Formatını Tanımlayın:
+### Adım 1: Sayfa Dosyası Yolu Biçimini Tanımlayın:
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "emz_result.jpg");
 ```
-Dosya adını ve uzantısını istediğiniz çıktı formatına göre ayarlayın (`jpg`, `png` , veya`pdf`).
+İstenilen çıktı biçimine göre dosya adını ve uzantısını ayarlayın (`jpg`, `png`, veya `pdf`).
 
-### Adım 2: İlgili Formata Dönüştürün:
+### Adım 2: İlgili Biçime Dönüştürün:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_EMZ))
 {
-    // Seçenekleri çıktı formatına göre ayarlayın (Jpg, Png, Pdf)
+    // Seçenekleri çıktı formatına (Jpg, Png, Pdf) göre ayarlayın
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     
     viewer.View(options);
 }
 ```
- Yer değiştirmek`JpgViewOptions` ile`PngViewOptions` veya`PdfViewOptions` İstenilen çıktı formatına göre.
+Yer değiştirmek `JpgViewOptions` ile `PngViewOptions` veya `PdfViewOptions` İstenilen çıktı formatına göre.
 
 ## Çözüm
 
-Sonuç olarak, GroupDocs.Viewer for .NET, .NET uygulamalarında EMZ ve EMF görüntülerini çeşitli formatlara dönüştürmek için kusursuz bir çözüm sağlar. Geliştiriciler, bu eğitimde özetlenen adımları izleyerek, belge oluşturma yeteneklerini uygulamalarına zahmetsizce entegre edebilirler.
+Sonuç olarak, GroupDocs.Viewer for .NET, EMZ ve EMF görüntülerini .NET uygulamalarında çeşitli biçimlerde işlemek için kusursuz bir çözüm sunar. Geliştiriciler, bu eğitimde özetlenen adımları izleyerek belge işleme yeteneklerini uygulamalarına zahmetsizce entegre edebilirler.
 
-## SSS'ler
+## SSS
 
-### S: GroupDocs.Viewer, EMZ ve EMF görüntüleri dışındaki diğer belge formatlarını görüntüleyebilir mi?
-C: Evet, GroupDocs.Viewer PDF, DOCX, PPTX, XLSX ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
+### S: GroupDocs.Viewer, EMZ ve EMF görüntüleri dışında başka belge formatlarını da işleyebilir mi?
+C: Evet, GroupDocs.Viewer PDF, DOCX, PPTX, XLSX ve daha fazlası dahil olmak üzere çok çeşitli belge formatlarını destekler.
 
-### S: GroupDocs.Viewer for .NET'in ücretsiz deneme sürümü mevcut mu?
- C: Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
+### S: GroupDocs.Viewer for .NET için ücretsiz deneme sürümü mevcut mu?
+A: Evet, ücretsiz denemeye erişebilirsiniz [Burada](https://releases.groupdocs.com/).
 
 ### S: GroupDocs.Viewer geliştiricilere destek sunuyor mu?
- C: Evet, GroupDocs, kendi aracılığıyla destek sağlar.[forum](https://forum.groupdocs.com/c/viewer/9) geliştiricilerin soru sorabileceği ve yardım isteyebileceği yer.
+A: Evet, GroupDocs kendi aracılığıyla destek sağlıyor [forum](https://forum.groupdocs.com/c/viewer/9) Geliştiricilerin soru sorabilecekleri ve yardım alabilecekleri bir yer.
 
 ### S: GroupDocs.Viewer for .NET için geçici bir lisans satın alabilir miyim?
- C: Evet, geçici lisanslar satın alınabilir[Burada](https://purchase.groupdocs.com/temporary-license/).
+A: Evet, geçici lisanslar satın alınabilir [Burada](https://purchase.groupdocs.com/temporary-license/).
 
-### S: GroupDocs.Viewer for .NET'e ilişkin ayrıntılı belgeleri nerede bulabilirim?
- C: Belgelere başvurabilirsiniz[Burada](https://tutorials.groupdocs.com/viewer/net/)API'nin kullanımına ilişkin kapsamlı rehberlik için.
+### S: GroupDocs.Viewer for .NET için ayrıntılı belgeleri nerede bulabilirim?
+A: Belgelere başvurabilirsiniz [Burada](https://tutorials.groupdocs.com/viewer/net/) API'yi kullanma konusunda kapsamlı rehberlik için.

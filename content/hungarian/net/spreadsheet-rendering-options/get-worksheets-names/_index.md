@@ -1,22 +1,22 @@
 ---
-title: Get munkalapok nevek
-linktitle: Get munkalapok nevek
-second_title: GroupDocs.Viewer .NET API
-description: Fedezze fel a GroupDocs.Viewer for .NET varázsát – zökkenőmentesen integrálja a dokumentumok megtekintését alkalmazásaiba. Próbálja ki most az ingyenes próbaverziót!
-weight: 11
-url: /hu/net/spreadsheet-rendering-options/get-worksheets-names/
+"description": "Fedezze fel a GroupDocs.Viewer for .NET varázsát – zökkenőmentesen integrálja a dokumentummegtekintést alkalmazásaiba. Próbálja ki az ingyenes próbaverziót most!"
+"linktitle": "Munkalapok nevének lekérése"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Munkalapok nevének lekérése"
+"url": "/hu/net/spreadsheet-rendering-options/get-worksheets-names/"
+"weight": 11
 ---
 
-# Get munkalapok nevek
+# Munkalapok nevének lekérése
 
 ## Bevezetés
-Üdvözöljük a GroupDocs.Viewer for .NET lenyűgöző világában! Ha Ön fejlesztő vagy rajongó, aki szeretné felfedezni a hatékony dokumentummegtekintési lehetőségeket .NET-alkalmazásaiban, akkor ez egy csemege. Ebben az átfogó útmutatóban a munkalapnevek GroupDocs.Viewer segítségével történő lekérésének bonyolultságába fogunk elmélyülni. Szóval, kapcsold be a biztonsági övet, és induljunk el erre az izgalmas utazásra!
+Üdvözlünk a GroupDocs.Viewer for .NET lenyűgöző világában! Ha fejlesztő vagy lelkes rajongó vagy, és szeretnéd felfedezni a .NET-alkalmazásaidban rejlő hatékony dokumentummegjelenítési lehetőségeket, akkor igazi élményben lesz részed. Ebben az átfogó útmutatóban elmerülünk a munkalapnevek GroupDocs.Viewer segítségével történő lekérésének bonyolultságaiban. Kapcsold be a biztonsági övedet, és vágjunk bele ebbe az izgalmas utazásba!
 ## Előfeltételek
-Mielőtt belemerülnénk a kódolási varázslatba, győződjünk meg arról, hogy mindent beállítottunk:
-1.  A GroupDocs.Viewer for .NET telepítése: Menjen át a[letöltési link](https://releases.groupdocs.com/viewer/net/) GroupDocs.Viewer for .NET legújabb verziójának megszerzéséhez. Kövesse a telepítési utasításokat, hogy zökkenőmentesen integrálja a fejlesztői környezetébe.
-2. Készítse elő a dokumentumot: Győződjön meg arról, hogy a kijelölt dokumentumkönyvtárban van egy céldokumentum, mondjuk egy „file.xlsx” nevű Excel-fájl.
+Mielőtt belevágnánk a kódolási varázslatba, győződjünk meg róla, hogy mindent beállítottunk:
+1. GroupDocs.Viewer telepítése .NET-hez: Lépjen a következőre: [letöltési link](https://releases.groupdocs.com/viewer/net/) GroupDocs.Viewer for .NET legújabb verziójának letöltéséhez. Kövesse a telepítési utasításokat, hogy zökkenőmentesen integrálhassa a fejlesztői környezetébe.
+2. Készítse elő a dokumentumot: Győződjön meg arról, hogy van egy céldokumentum, mondjuk egy „file.xlsx” nevű Excel fájl a kijelölt dokumentumkönyvtárban.
 ## Névterek importálása
-Most, hogy megvannak az előfeltételek, kezdjük a dolgokat a szükséges névterek importálásával. Ez biztosítja, hogy az alkalmazás felismerje és tudja használni a GroupDocs.Viewer for .NET által biztosított funkciókat.
+Most, hogy megvannak az előfeltételek, kezdjük a szükséges névterek importálásával. Ez biztosítja, hogy az alkalmazás felismerje és használni tudja a GroupDocs.Viewer for .NET által biztosított funkciókat.
 ```csharp
 using System;
 using System.IO;
@@ -27,23 +27,23 @@ using GroupDocs.Viewer.Results;
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-Cserélje ki a „Saját dokumentumkönyvtár” elemet annak a könyvtárnak az elérési útjával, ahol a céldokumentum található.
-## 2. A Viewer inicializálása
+Cserélje le a „Saját dokumentumkönyvtár” részt a céldokumentum könyvtárának elérési útjára.
+## 2. A néző inicializálása
 ```csharp
 using (Viewer viewer = new Viewer(Path.Combine(outputDirectory, "file.xlsx")))
 ```
-Ebben a lépésben létrehozzuk a Viewer osztály egy példányát, amely megadja az Excel-fájl elérési útját.
-## 3. A Nézet információs beállításainak konfigurálása
+Ebben a lépésben létrehozunk egy példányt a Viewer osztályból, amely megadja az Excel-fájl elérési útját.
+## 3. Információk megtekintésének beállításainak konfigurálása
 ```csharp
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
 viewInfoOptions.SpreadsheetOptions = SpreadsheetOptions.ForOnePagePerSheet();
 ```
-Itt konfiguráljuk a ViewInfoOptions-t HTML-nézetek generálására, és további beállításokat állítunk be a táblázatok megjelenítéséhez.
-## 4. Nézet információk lekérése
+Itt konfiguráljuk a ViewInfoOptions paramétereket HTML nézetek generálásához, és további beállításokat adunk meg a táblázatkezelő rendereléséhez.
+## 4. Nézetinformációk lekérése
 ```csharp
 ViewInfo viewInfo = viewer.GetViewInfo(viewInfoOptions);
 ```
-Használja a Viewer példányt a nézetadatok lekéréséhez a konfigurált beállítások alapján.
+A Viewer példány segítségével a konfigurált beállítások alapján kérheti le a nézet adatait.
 ## 5. Munkalapnevek megjelenítése
 ```csharp
 Console.WriteLine("Worksheets:");
@@ -52,17 +52,17 @@ foreach (Page page in viewInfo.Pages)
     Console.WriteLine($" - Worksheet {page.Number} name '{page.Name}'");
 }
 ```
-Lapozzon át a letöltött oldalakon, és nyomtassa ki az egyes munkalapok nevét a konzolra.
+Végigjárja a lekért oldalakat, és kiírja az egyes munkalapok nevét a konzolra.
 ## Következtetés
-Gratulálunk! Sikeresen navigált a munkalapnevek lekérésének folyamatán a GroupDocs.Viewer for .NET használatával. Ez számtalan lehetőséget nyit meg az alkalmazások dokumentummegtekintési funkcióinak bővítésére.
+Gratulálunk! Sikeresen végigvezette magát a munkalapnevek lekérésének folyamatán a GroupDocs.Viewer for .NET használatával. Ez számos lehetőséget nyit meg az alkalmazások dokumentummegjelenítési funkcióinak fejlesztésére.
 ## GYIK
-### Használhatom a GroupDocs.Viewer for .NET programot más dokumentumformátumokkal?
-Teljesen! A GroupDocs.Viewer a dokumentumformátumok széles skáláját támogatja, beleértve a PDF-t, a Microsoft Office-t és egyebeket.
+### Használhatom a GroupDocs.Viewer for .NET-et más dokumentumformátumokkal?
+Abszolút! A GroupDocs.Viewer számos dokumentumformátumot támogat, beleértve a PDF-et, a Microsoft Office-t és egyebeket.
 ### Van ingyenes próbaverzió?
- Igen, a .NET-hez készült GroupDocs.Viewer-t felfedezheti nálunk[ingyenes próbaverzió](https://releases.groupdocs.com/).
-### Hol találhatok további támogatást?
- Irány a[GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) közösségi támogatásra és beszélgetésekre.
-### Kaphatok ideiglenes engedélyt?
- Biztosan! Látogatás[ez a link](https://purchase.groupdocs.com/temporary-license/) hogy megszerezze az ideiglenes engedélyét.
-### Rendelkezésre állnak-e részletes dokumentációs források?
- Teljesen! Nézze meg a[hivatalos dokumentáció](https://tutorials.groupdocs.com/viewer/net/) részletes információkért és útmutatókért.
+Igen, a GroupDocs.Viewer for .NET-et a mi oldalunkon is felfedezheti. [ingyenes próba](https://releases.groupdocs.com/).
+### Hol találok további támogatást?
+Menj a [GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) közösségi támogatásért és a beszélgetésekért.
+### Szerezhetek ideiglenes jogosítványt?
+Természetesen! Látogasson el [ezt a linket](https://purchase.groupdocs.com/temporary-license/) hogy megszerezd az ideiglenes jogosítványodat.
+### Vannak részletes dokumentációs források?
+Feltétlenül! Nézd meg a [hivatalos dokumentáció](https://tutorials.groupdocs.com/viewer/net/) részletes információkért és útmutatókért.

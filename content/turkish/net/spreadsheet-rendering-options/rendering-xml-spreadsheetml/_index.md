@@ -1,40 +1,40 @@
 ---
-title: XML SpreadSheetML Oluşturma
-linktitle: XML SpreadSheetML Oluşturma
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer for .NET'i kullanarak çeşitli formatlardaki XML SpreadSheetML dosyalarının kusursuz şekilde oluşturulmasını keşfedin. Uygulamalarınıza zahmetsizce entegre edin.
-weight: 16
-url: /tr/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
+"description": "GroupDocs.Viewer for .NET kullanarak çeşitli formatlardaki XML SpreadSheetML dosyalarının kusursuz bir şekilde işlenmesini keşfedin. Uygulamalarınıza zahmetsizce entegre edin."
+"linktitle": "XML SpreadSheetML'yi oluşturma"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "XML SpreadSheetML'yi oluşturma"
+"url": "/tr/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
+"weight": 16
 ---
 
-# XML SpreadSheetML Oluşturma
+# XML SpreadSheetML'yi oluşturma
 
 ## giriiş
-.NET için GroupDocs.Viewer dünyasına hoş geldiniz! Bu öğreticide, güçlü bir .NET kitaplığı olan GroupDocs.Viewer'ı kullanarak XML SpreadSheetML dosyalarını kolaylıkla oluşturma konusunda size rehberlik edeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz, XML SpreadSheetML oluşturmayı uygulamalarınıza zahmetsizce entegre etmenize yardımcı olacaktır.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşulları oluşturduğunuzdan emin olun:
-- .NET desteğine sahip bir geliştirme ortamı.
--  .NET kitaplığı için GroupDocs.Viewer yüklendi. İndirebilirsin[Burada](https://releases.groupdocs.com/viewer/net/).
-- C# programlamanın temel anlayışı.
+.NET için GroupDocs.Viewer dünyasına hoş geldiniz! Bu eğitimde, güçlü bir .NET kütüphanesi olan GroupDocs.Viewer'ı kullanarak XML SpreadSheetML dosyalarını kolayca işlemenize rehberlik edeceğiz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz XML SpreadSheetML işlemeyi uygulamalarınıza zahmetsizce entegre etmenize yardımcı olacak.
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşulların sağlandığından emin olun:
+- .NET desteği olan bir geliştirme ortamı.
+- GroupDocs.Viewer for .NET kütüphanesi yüklendi. İndirebilirsiniz [Burada](https://releases.groupdocs.com/viewer/net/).
+- C# programlamanın temellerini anlamak.
 ## Ad Alanlarını İçe Aktar
-Gerekli ad alanlarını C# projenize aktararak başlayın. Bu, GroupDocs.Viewer tarafından sağlanan işlevlere erişebilmenizi sağlar.
+Gerekli ad alanlarını C# projenize aktararak başlayın. Bu, GroupDocs.Viewer tarafından sağlanan işlevlere erişiminizin olmasını sağlar.
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## 1. Adım: Belge Dizininizi Kurun
-Çıktının kaydedileceği belge dizininizin yolunu tanımlayın.
+## Adım 1: Belge Dizininizi Ayarlayın
+Çıktının kaydedileceği belgeler dizininize giden yolu tanımlayın.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 ## Adım 2: Çıktı Dosyası Yollarını Belirleyin
-HTML, JPG, PNG ve PDF çıktı dosyalarının tam yollarını ayarlayın.
+HTML, JPG, PNG ve PDF çıktı dosyaları için tam yolları ayarlayın.
 ```csharp
 string pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.html");
 ```
 ## Adım 3: Yükleme Seçeneklerini Belirleyin
-Doğru şekilde oluşturmak için dosya türünü açıkça Excel 2003 XML SpreadSheetML olarak belirtin.
+Doğru bir şekilde işlemek için dosya türünü açıkça Excel 2003 XML SpreadSheetML olarak belirtin.
 ```csharp
 LoadOptions loadOptions = new LoadOptions(FileType.Excel2003XML);
 ```
@@ -48,7 +48,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
 }
 ```
 ## Adım 5: JPG'ye dönüştürün
-Belirtilen seçenekleri kullanarak XML SpreadSheetML dosyasını JPG görüntüsüne dönüştürün.
+Belirtilen seçenekleri kullanarak XML SpreadSheetML dosyasını JPG resmine dönüştürün.
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOptions))
@@ -58,7 +58,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
 }
 ```
 ## Adım 6: PNG'ye dönüştürün
-Benzer şekilde, belirtilen seçeneklerle dosyayı PNG görüntüsüne dönüştürün.
+Benzer şekilde dosyayı belirtilen seçeneklerle PNG görüntüsüne dönüştürün.
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.png");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOptions))
@@ -67,7 +67,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
     viewer.View(options);
 }
 ```
-## Adım 7: PDF'ye Dönüştür
+## Adım 7: PDF'ye dönüştürün
 Son olarak, belirtilen seçenekleri kullanarak XML SpreadSheetML dosyasını bir PDF belgesine dönüştürün.
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Excel_2003_Xml_result.pdf");
@@ -78,15 +78,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XML_SPREADSHEETML, loadOption
 }
 ```
 ## Çözüm
-Tebrikler! GroupDocs.Viewer for .NET'i kullanarak XML SpreadSheetML dosyalarının nasıl oluşturulacağını başarıyla öğrendiniz. Bu çok yönlü kitaplığın sağladığı daha fazla özellik ve seçeneği keşfederek belge görüntüleme yeteneklerinizi geliştirin.
+Tebrikler! GroupDocs.Viewer for .NET kullanarak XML SpreadSheetML dosyalarının nasıl işleneceğini başarıyla öğrendiniz. Bu çok yönlü kütüphanenin sağladığı daha fazla özellik ve seçeneği keşfederek belge görüntüleme yeteneklerinizi geliştirin.
 ## SSS
-### GroupDocs.Viewer diğer dosya formatlarıyla uyumlu mu?
-Evet, GroupDocs.Viewer PDF, Word, Excel ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
-### İşlenen belgelerin görünümünü özelleştirebilir miyim?
-Kesinlikle! GroupDocs.Viewer, çıktıyı özel ihtiyaçlarınıza göre uyarlamanıza olanak tanıyan çeşitli özelleştirme seçenekleri sunar.
+### GroupDocs.Viewer diğer dosya formatlarıyla uyumlu mudur?
+Evet, GroupDocs.Viewer PDF, Word, Excel ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### Oluşturulan belgelerin görünümünü özelleştirebilir miyim?
+Kesinlikle! GroupDocs.Viewer çeşitli özelleştirme seçenekleri sunarak çıktıyı özel ihtiyaçlarınıza göre uyarlamanıza olanak tanır.
 ### Ek destek ve kaynakları nerede bulabilirim?
- Ziyaret edin[GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) topluluk desteği için ve keşfetmek için[dokümantasyon](https://tutorials.groupdocs.com/viewer/net/)detaylı bilgi için.
-### Ücretsiz deneme mevcut mu?
- Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
-### Geçici lisansı nasıl alabilirim?
- Geçici lisans alabilirsiniz[Burada](https://purchase.groupdocs.com/temporary-license/).
+Ziyaret edin [GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) Topluluk desteği için ve keşfetmek için [belgeleme](https://tutorials.groupdocs.com/viewer/net/) Detaylı bilgi için.
+### Ücretsiz deneme imkanı var mı?
+Evet, ücretsiz denemeye erişebilirsiniz [Burada](https://releases.groupdocs.com/).
+### Geçici ehliyet nasıl alınır?
+Geçici bir lisans alabilirsiniz [Burada](https://purchase.groupdocs.com/temporary-license/).

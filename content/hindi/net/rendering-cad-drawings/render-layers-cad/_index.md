@@ -1,25 +1,25 @@
 ---
-title: सीएडी चित्रों में परतें प्रस्तुत करें
-linktitle: सीएडी चित्रों में परतें प्रस्तुत करें
-second_title: GroupDocs.Viewer .NET API
-description: .NET के लिए GroupDocs.Viewer के साथ .NET अनुप्रयोगों में CAD रेखाचित्रों को सहजता से प्रस्तुत करें। रेंडरिंग विकल्पों का अन्वेषण करें, परतों को अनुकूलित करें और बहुत कुछ करें।
-weight: 13
-url: /hi/net/rendering-cad-drawings/render-layers-cad/
+"description": ".NET के लिए GroupDocs.Viewer के साथ .NET अनुप्रयोगों में CAD आरेखण को सहजता से रेंडर करें। रेंडरिंग विकल्पों का अन्वेषण करें, परतें कस्टमाइज़ करें, और बहुत कुछ।"
+"linktitle": "CAD चित्रों में परतें प्रस्तुत करना"
+"second_title": "GroupDocs.Viewer .NET एपीआई"
+"title": "CAD चित्रों में परतें प्रस्तुत करना"
+"url": "/hi/net/rendering-cad-drawings/render-layers-cad/"
+"weight": 13
 ---
 
-# सीएडी चित्रों में परतें प्रस्तुत करें
+# CAD चित्रों में परतें प्रस्तुत करना
 
 ## परिचय
-.NET के लिए GroupDocs.Viewer एक शक्तिशाली उपकरण है जो डेवलपर्स को दस्तावेज़ रेंडरिंग क्षमताओं को उनके .NET अनुप्रयोगों में सहजता से एकीकृत करने में सक्षम बनाता है। चाहे आपको CAD चित्र, PDF, Microsoft Office दस्तावेज़, या अधिक प्रस्तुत करने की आवश्यकता हो, GroupDocs.Viewer एक व्यापक समाधान प्रदान करता है।
+GroupDocs.Viewer for .NET एक शक्तिशाली उपकरण है जो डेवलपर्स को अपने .NET अनुप्रयोगों में दस्तावेज़ रेंडरिंग क्षमताओं को सहजता से एकीकृत करने में सक्षम बनाता है। चाहे आपको CAD ड्रॉइंग, PDF, Microsoft Office दस्तावेज़, या अधिक रेंडर करने की आवश्यकता हो, GroupDocs.Viewer एक व्यापक समाधान प्रदान करता है।
 ## आवश्यक शर्तें
-.NET के लिए GroupDocs.Viewer का उपयोग करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित शर्तें हैं:
+.NET के लिए GroupDocs.Viewer का उपयोग करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ हैं:
 - C# प्रोग्रामिंग भाषा की बुनियादी समझ।
-- आपकी मशीन पर .NET विकास वातावरण स्थापित किया गया है।
--  .NET के लिए GroupDocs.Viewer स्थापित। आप इसे यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.groupdocs.com/viewer/net/).
--  संदर्भ के लिए .NET दस्तावेज़ के लिए GroupDocs.Viewer तक पहुंच, जिसे पाया जा सकता है[यहाँ](https://tutorials.groupdocs.com/viewer/net/).
+- आपके मशीन पर .NET विकास वातावरण स्थापित करें।
+- .NET के लिए GroupDocs.Viewer स्थापित। आप इसे यहाँ से डाउनलोड कर सकते हैं [यहाँ](https://releases.groupdocs.com/viewer/net/).
+- ट्यूटोरियल के लिए .NET दस्तावेज़ के लिए GroupDocs.Viewer तक पहुंच, जो यहां पाया जा सकता है [यहाँ](https://tutorials.groupdocs.com/viewer/net/).
 
 ## नामस्थान आयात करें
-.NET के लिए GroupDocs.Viewer का उपयोग शुरू करने के लिए, आपको अपने प्रोजेक्ट में आवश्यक नेमस्पेस आयात करना होगा। इन चरणों का पालन करें:
+.NET के लिए GroupDocs.Viewer का उपयोग शुरू करने के लिए, आपको अपने प्रोजेक्ट में आवश्यक नामस्थान आयात करने होंगे। इन चरणों का पालन करें:
 
 ```csharp
 using System;
@@ -29,12 +29,12 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-आइए दिए गए उदाहरण को कई चरणों में तोड़ें:
-## चरण 1: आउटपुट डायरेक्टरी को परिभाषित करें
+आइये दिए गए उदाहरण को कई चरणों में विभाजित करें:
+## चरण 1: आउटपुट निर्देशिका परिभाषित करें
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## चरण 2: पृष्ठ फ़ाइल पथ स्वरूप को परिभाषित करें
+## चरण 2: पृष्ठ फ़ाइल पथ प्रारूप निर्धारित करें
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
@@ -49,7 +49,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS))
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-## चरण 5: CAD परतों को परिभाषित करें
+## चरण 5: CAD परतें परिभाषित करें
 ```csharp
 options.CadOptions.Layers = new List<Layer>
 {
@@ -66,15 +66,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ```
 
 ## निष्कर्ष
-.NET के लिए GroupDocs.Viewer के साथ, आपके .NET अनुप्रयोगों में CAD चित्र प्रस्तुत करना एक सहज प्रक्रिया बन जाती है। इस गाइड में उल्लिखित चरणों का पालन करके, आप आसानी से दस्तावेज़ रेंडरिंग क्षमताओं को अपनी परियोजनाओं में एकीकृत कर सकते हैं।
+.NET के लिए GroupDocs.Viewer के साथ, आपके .NET अनुप्रयोगों में CAD आरेखण को रेंडर करना एक सहज प्रक्रिया बन जाती है। इस गाइड में बताए गए चरणों का पालन करके, आप आसानी से अपने प्रोजेक्ट में दस्तावेज़ रेंडरिंग क्षमताओं को एकीकृत कर सकते हैं।
 ## अक्सर पूछे जाने वाले प्रश्न
 ### क्या GroupDocs.Viewer सभी प्रकार के CAD चित्रों के साथ संगत है?
-हाँ, GroupDocs.Viewer DWG और DXF सहित CAD ड्राइंग प्रारूपों की एक विस्तृत श्रृंखला को प्रस्तुत करने का समर्थन करता है।
-### क्या मैं सीएडी चित्रों के लिए रेंडरिंग विकल्पों को अनुकूलित कर सकता हूँ?
-बिल्कुल, GroupDocs.Viewer विभिन्न अनुकूलन विकल्प प्रदान करता है, जैसे रेंडर करने के लिए परतें निर्दिष्ट करना या आउटपुट स्वरूप सेट करना।
-### क्या GroupDocs.Viewer को दस्तावेज़ प्रस्तुत करने के लिए इंटरनेट कनेक्शन की आवश्यकता है?
+हां, GroupDocs.Viewer DWG और DXF सहित CAD ड्राइंग प्रारूपों की एक विस्तृत श्रृंखला को प्रस्तुत करने का समर्थन करता है।
+### क्या मैं CAD चित्रों के लिए रेंडरिंग विकल्पों को अनुकूलित कर सकता हूँ?
+बिल्कुल, GroupDocs.Viewer विभिन्न अनुकूलन विकल्प प्रदान करता है, जैसे आउटपुट प्रारूपों को प्रस्तुत करने या सेट करने के लिए परतें निर्दिष्ट करना।
+### क्या GroupDocs.Viewer को दस्तावेज़ों को प्रस्तुत करने के लिए इंटरनेट कनेक्शन की आवश्यकता होती है?
 नहीं, GroupDocs.Viewer इंटरनेट कनेक्शन की आवश्यकता के बिना स्थानीय रूप से रेंडरिंग करता है।
-### क्या .NET के लिए GroupDocs.Viewer का निःशुल्क परीक्षण उपलब्ध है?
- हां, आप .NET के लिए GroupDocs.Viewer के निःशुल्क परीक्षण तक पहुंच सकते हैं[यहाँ](https://releases.groupdocs.com/).
-### मुझे .NET के लिए GroupDocs.Viewer के लिए समर्थन कहाँ से मिल सकता है?
- किसी भी तकनीकी सहायता या प्रश्न के लिए, आप GroupDocs.Viewer फोरम पर जा सकते हैं[यहाँ](https://forum.groupdocs.com/c/viewer/9).
+### क्या .NET के लिए GroupDocs.Viewer के लिए कोई निःशुल्क परीक्षण उपलब्ध है?
+हां, आप .NET के लिए GroupDocs.Viewer के निःशुल्क परीक्षण का उपयोग कर सकते हैं [यहाँ](https://releases.groupdocs.com/).
+### मुझे .NET के लिए GroupDocs.Viewer का समर्थन कहां से मिल सकता है?
+किसी भी तकनीकी सहायता या प्रश्नों के लिए, आप GroupDocs.Viewer फ़ोरम पर जा सकते हैं [यहाँ](https://forum.groupdocs.com/c/viewer/9).

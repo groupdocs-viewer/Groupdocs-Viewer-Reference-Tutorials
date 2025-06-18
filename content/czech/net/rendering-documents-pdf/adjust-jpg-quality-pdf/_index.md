@@ -1,36 +1,36 @@
 ---
-title: Upravte kvalitu obrázku JPG ve vykresleném PDF
-linktitle: Upravte kvalitu obrázku JPG ve vykresleném PDF
-second_title: GroupDocs.Viewer .NET API
-description: Zjistěte, jak upravit kvalitu obrazu JPG ve vykreslených dokumentech PDF pomocí GroupDocs.Viewer pro .NET. Vylepšete si zážitek ze sledování dokumentů.
-weight: 11
-url: /cs/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
+"description": "Naučte se, jak upravit kvalitu obrázků JPG v renderovaných PDF dokumentech pomocí GroupDocs.Viewer pro .NET. Vylepšete si zážitek ze prohlížení dokumentů."
+"linktitle": "Úprava kvality obrázku JPG v renderovaném PDF"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Úprava kvality obrázku JPG v renderovaném PDF"
+"url": "/cs/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
+"weight": 11
 ---
 
-# Upravte kvalitu obrázku JPG ve vykresleném PDF
+# Úprava kvality obrázku JPG v renderovaném PDF
 
-## Úvod
-tomto tutoriálu se naučíme, jak upravit kvalitu obrázků JPG při vykreslování PDF pomocí GroupDocs.Viewer for .NET. Tato výkonná knihovna vám umožňuje bezproblémově prohlížet a manipulovat s různými formáty dokumentů ve vašich aplikacích .NET.
+## Zavedení
+V tomto tutoriálu se naučíme, jak upravit kvalitu obrázků JPG při vykreslování PDF pomocí GroupDocs.Viewer pro .NET. Tato výkonná knihovna vám umožňuje bezproblémově prohlížet a manipulovat s různými formáty dokumentů ve vašich .NET aplikacích.
 ## Předpoklady
 Než se pustíte do tohoto tutoriálu, ujistěte se, že máte následující předpoklady:
-1.  Knihovna GroupDocs.Viewer for .NET: Ujistěte se, že jste si stáhli a nainstalovali knihovnu GroupDocs.Viewer for .NET. Můžete si jej stáhnout z[tady](https://releases.groupdocs.com/viewer/net/).
-2. Vývojové prostředí: Mějte nastavené pracovní vývojové prostředí s nainstalovaným .NET frameworkem.
+1. Knihovna GroupDocs.Viewer pro .NET: Ujistěte se, že jste si stáhli a nainstalovali knihovnu GroupDocs.Viewer pro .NET. Můžete si ji stáhnout z [zde](https://releases.groupdocs.com/viewer/net/).
+2. Vývojové prostředí: Mějte nastavené funkční vývojové prostředí s nainstalovaným frameworkem .NET.
 
 ## Importovat jmenné prostory
-Nejprve musíte do kódu C# importovat potřebné jmenné prostory. To umožňuje vaší aplikaci přístup k funkcím, které poskytuje GroupDocs.Viewer pro .NET.
+Nejprve je třeba importovat potřebné jmenné prostory do kódu C#. To umožní vaší aplikaci přístup k funkcím poskytovaným GroupDocs.Viewer pro .NET.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Krok 1: Definujte výstupní adresář a cestu k souboru
-Nastavte výstupní adresář, kam bude vykreslený PDF uložen, a definujte cestu k výstupnímu souboru PDF.
+## Krok 1: Definování výstupního adresáře a cesty k souboru
+Nastavte výstupní adresář, kam bude uložen vykreslený PDF, a definujte cestu k výstupnímu souboru PDF.
 ```csharp
 string outputDirectory = "Your Document Directory";
 string filePath = Path.Combine(outputDirectory, "output.pdf");
 ```
-## Krok 2: Vykreslení PDF s upravenou kvalitou obrazu JPG
-Vytvořte instanci třídy Viewer a předejte cestu k dokumentu obsahujícímu obrázky JPG. Poté nakonfigurujte možnosti vykreslování PDF a upravte kvalitu obrázku JPG.
+## Krok 2: Vykreslení PDF s upravenou kvalitou obrázku JPG
+Vytvořte instanci třídy Viewer a předejte cestu k dokumentu obsahujícímu obrázky JPG. Poté nakonfigurujte možnosti vykreslování PDF pro úpravu kvality obrázku JPG.
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.JPG_IMAGE_PPTX))
 {               
@@ -38,22 +38,22 @@ using (Viewer viewer = new Viewer(TestFiles.JPG_IMAGE_PPTX))
     viewer.View(options);
 }
 ```
-## Krok 3: Zobrazte zprávu o úspěchu
-Po úspěšném vykreslení PDF zobrazte zprávu, která uživatele upozorní na dokončení a umístění výstupního souboru.
+## Krok 3: Zobrazení zprávy o úspěchu
+Po úspěšném vykreslení PDF souboru se zobrazí zpráva s upozorněním uživatele na dokončení a umístění výstupního souboru.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Závěr
-V tomto tutoriálu jsme prozkoumali, jak upravit kvalitu obrázku JPG při vykreslování PDF pomocí GroupDocs.Viewer pro .NET. Dodržením těchto kroků můžete efektivně řídit kvalitu obrázků ve vašich vykreslených dokumentech PDF a zajistit tak optimální vizuální reprezentaci.
-## FAQ
-### Mohu upravit kvalitu obrazu pro jiné formáty kromě JPG?
-Ano, GroupDocs.Viewer for .NET podporuje různé formáty obrázků a kvalitu můžete upravit také pro formáty PNG, TIFF a další.
-### Je GroupDocs.Viewer for .NET kompatibilní se všemi verzemi .NET frameworku?
-GroupDocs.Viewer for .NET je kompatibilní s více verzemi rozhraní .NET, včetně .NET Core a .NET Standard.
+V tomto tutoriálu jsme prozkoumali, jak upravit kvalitu obrázku JPG při vykreslování PDF pomocí GroupDocs.Viewer pro .NET. Dodržením těchto kroků můžete efektivně ovládat kvalitu obrázků ve vykreslených PDF dokumentech a zajistit tak optimální vizuální reprezentaci.
+## Často kladené otázky
+### Mohu upravit kvalitu obrázku i pro jiné formáty než JPG?
+Ano, GroupDocs.Viewer pro .NET podporuje různé formáty obrázků a kvalitu můžete upravit i pro PNG, TIFF a další formáty.
+### Je GroupDocs.Viewer pro .NET kompatibilní se všemi verzemi frameworku .NET?
+GroupDocs.Viewer pro .NET je kompatibilní s několika verzemi frameworku .NET, včetně .NET Core a .NET Standard.
 ### Mohu vykreslovat dokumenty asynchronně pomocí GroupDocs.Viewer pro .NET?
-Ano, GroupDocs.Viewer for .NET poskytuje možnosti asynchronního vykreslování, což vám umožní zvýšit výkon vašich aplikací.
+Ano, GroupDocs.Viewer pro .NET poskytuje asynchronní vykreslování, což vám umožňuje zlepšit výkon vašich aplikací.
 ### Je k dispozici zkušební verze pro GroupDocs.Viewer pro .NET?
- Ano, máte přístup k bezplatné zkušební verzi GroupDocs.Viewer for .NET z[tady](https://releases.groupdocs.com/).
+Ano, můžete si zdarma stáhnout zkušební verzi GroupDocs.Viewer pro .NET z [zde](https://releases.groupdocs.com/).
 ### Jak mohu získat podporu nebo pomoc s GroupDocs.Viewer pro .NET?
- Můžete navštívit fórum GroupDocs.Viewer for .NET[tady](https://forum.groupdocs.com/c/viewer/9) získat pomoc, klást otázky a komunikovat s ostatními uživateli a vývojáři.
+Můžete navštívit fórum GroupDocs.Viewer pro .NET [zde](https://forum.groupdocs.com/c/viewer/9) získat pomoc, klást otázky a komunikovat s ostatními uživateli a vývojáři.

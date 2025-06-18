@@ -1,20 +1,20 @@
 ---
-title: แสดงผลเอกสาร RAR
-linktitle: แสดงผลเอกสาร RAR
-second_title: GroupDocs.Viewer .NET API
-description: เรียนรู้วิธีเรนเดอร์ไฟล์เก็บถาวร RAR เป็นรูปแบบ HTML, JPG, PNG หรือ PDF โดยใช้ GroupDocs.Viewer สำหรับ .NET ดูและแบ่งปันเนื้อหาของไฟล์เก็บถาวร RAR ได้อย่างง่ายดาย
-weight: 13
-url: /th/net/rendering-archive-files/render-rar/
+"description": "เรียนรู้วิธีการเรนเดอร์ไฟล์เก็บถาวร RAR เป็นรูปแบบ HTML, JPG, PNG หรือ PDF โดยใช้ GroupDocs.Viewer สำหรับ .NET ดูและแบ่งปันเนื้อหาของไฟล์เก็บถาวร RAR ได้อย่างง่ายดาย"
+"linktitle": "เรนเดอร์ไฟล์ RAR"
+"second_title": "API ของ GroupDocs.Viewer .NET"
+"title": "เรนเดอร์ไฟล์ RAR"
+"url": "/th/net/rendering-archive-files/render-rar/"
+"weight": 13
 ---
 
-# แสดงผลเอกสาร RAR
+# เรนเดอร์ไฟล์ RAR
 
 ## การแนะนำ
-ไฟล์เก็บถาวร RAR เป็นรูปแบบยอดนิยมสำหรับการบีบอัดและจัดเก็บไฟล์และโฟลเดอร์หลาย ๆ ไฟล์ไว้ในคอนเทนเนอร์เดียว การแสดงผลไฟล์เก็บถาวร RAR ในรูปแบบต่าง ๆ เช่น HTML, JPG, PNG หรือ PDF อาจจำเป็นสำหรับการดูหรือแบ่งปันเนื้อหาของไฟล์เก็บถาวรเหล่านี้ ในบทช่วยสอนนี้ เราจะสำรวจวิธีเรนเดอร์ไฟล์เก็บถาวร RAR โดยใช้ GroupDocs.Viewer สำหรับ .NET
+ไฟล์เก็บถาวร RAR เป็นรูปแบบที่นิยมใช้สำหรับการบีบอัดและจัดเก็บไฟล์และโฟลเดอร์หลายไฟล์ในคอนเทนเนอร์เดียว การเรนเดอร์ไฟล์เก็บถาวร RAR เป็นรูปแบบต่างๆ เช่น HTML, JPG, PNG หรือ PDF อาจมีความจำเป็นสำหรับการดูหรือแชร์เนื้อหาของไฟล์เก็บถาวรเหล่านี้ ในบทช่วยสอนนี้ เราจะมาสำรวจวิธีการเรนเดอร์ไฟล์เก็บถาวร RAR โดยใช้ GroupDocs.Viewer สำหรับ .NET
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
-1. GroupDocs.Viewer สำหรับ .NET: ติดตั้งไลบรารี GroupDocs.Viewer สำหรับ .NET จาก[ลิ้งค์ดาวน์โหลด](https://releases.groupdocs.com/viewer/net/).
-2. ไฟล์เก็บถาวร RAR ตัวอย่าง: เตรียมไฟล์เก็บถาวร RAR ตัวอย่างให้พร้อมสำหรับการเรนเดอร์
+ก่อนที่เราจะเริ่มต้น ให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
+1. GroupDocs.Viewer สำหรับ .NET: ติดตั้งไลบรารี GroupDocs.Viewer สำหรับ .NET จาก [ลิงค์ดาวน์โหลด](https://releases-groupdocs.com/viewer/net/).
+2. ตัวอย่างไฟล์ RAR Archive: เตรียมไฟล์ RAR ตัวอย่างให้พร้อมสำหรับการเรนเดอร์
 
 ## นำเข้าเนมสเปซ
 ```csharp
@@ -27,7 +27,7 @@ using System.IO;
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## ขั้นตอนที่ 2: แสดงผลเป็น HTML
+## ขั้นตอนที่ 2: เรนเดอร์เป็น HTML
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_{0}.html");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -36,7 +36,7 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
     viewer.View(options);
 }
 ```
-## ขั้นตอนที่ 3: แสดงผลเป็น JPG
+## ขั้นตอนที่ 3: เรนเดอร์เป็น JPG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_{0}.jpg");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -45,7 +45,7 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
     viewer.View(options);
 }
 ```
-## ขั้นตอนที่ 4: แสดงผลเป็น PNG
+## ขั้นตอนที่ 4: เรนเดอร์เป็น PNG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_{0}.png");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -54,7 +54,7 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
     viewer.View(options);
 }
 ```
-## ขั้นตอนที่ 5: แสดงผลเป็น PDF
+## ขั้นตอนที่ 5: เรนเดอร์เป็น PDF
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result.pdf");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -65,15 +65,15 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
 ```
 
 ## บทสรุป
-การเรนเดอร์ไฟล์เก็บถาวร RAR ในรูปแบบต่างๆ ทำได้ง่ายด้วย GroupDocs.Viewer สำหรับ .NET ด้วยการทำตามขั้นตอนที่อธิบายไว้ในบทช่วยสอนนี้ คุณสามารถแปลงไฟล์เก็บถาวร RAR เป็นรูปแบบ HTML, JPG, PNG หรือ PDF ได้อย่างง่ายดาย ทำให้สามารถดูและแบ่งปันเนื้อหาได้อย่างง่ายดาย
+การเรนเดอร์ไฟล์เก็บถาวร RAR เป็นรูปแบบต่างๆ ทำได้ง่ายด้วย GroupDocs.Viewer สำหรับ .NET เมื่อทำตามขั้นตอนที่ระบุไว้ในบทช่วยสอนนี้แล้ว คุณจะสามารถแปลงไฟล์เก็บถาวร RAR เป็นรูปแบบ HTML, JPG, PNG หรือ PDF ได้อย่างง่ายดาย ทำให้สามารถดูและแชร์เนื้อหาได้อย่างง่ายดาย
 ## คำถามที่พบบ่อย
-### GroupDocs.Viewer สำหรับ .NET สามารถจัดการไฟล์ RAR ที่เข้ารหัสได้หรือไม่
-ใช่ GroupDocs.Viewer สำหรับ .NET รองรับการเรนเดอร์ไฟล์เก็บถาวร RAR ที่เข้ารหัส โดยมีเงื่อนไขว่าต้องระบุรหัสผ่านที่จำเป็นในระหว่างกระบวนการเรนเดอร์
-### เป็นไปได้หรือไม่ที่จะปรับแต่งลักษณะเอาต์พุตของเอกสารที่เรนเดอร์แล้ว?
-อย่างแน่นอน! GroupDocs.Viewer สำหรับ .NET นำเสนอตัวเลือกการปรับแต่งที่ครอบคลุม ซึ่งช่วยให้ผู้ใช้ปรับแต่งรูปลักษณ์ของเอกสารที่เรนเดอร์ได้ตามความต้องการ
-### GroupDocs.Viewer สำหรับ .NET รองรับการเรนเดอร์รูปแบบไฟล์เก็บถาวรอื่นนอกเหนือจาก RAR หรือไม่
-ใช่ GroupDocs.Viewer สำหรับ .NET รองรับการเรนเดอร์รูปแบบไฟล์เก็บถาวรที่หลากหลาย รวมถึง ZIP, TAR, 7z และอื่นๆ
-### ฉันสามารถรวม GroupDocs.Viewer สำหรับ .NET เข้ากับเว็บแอปพลิเคชันของฉันได้หรือไม่
-แน่นอน! GroupDocs.Viewer สำหรับ .NET มี API ที่เหมาะสมสำหรับการรวมเข้ากับทั้งเดสก์ท็อปและเว็บแอปพลิเคชัน
-### มีรุ่นทดลองใช้สำหรับ GroupDocs.Viewer สำหรับ .NET หรือไม่
- ใช่ คุณสามารถใช้ GroupDocs.Viewer สำหรับ .NET รุ่นทดลองใช้ฟรีได้จาก[เว็บไซต์](https://releases.groupdocs.com/).
+### GroupDocs.Viewer สำหรับ .NET สามารถจัดการกับไฟล์ RAR ที่เข้ารหัสได้หรือไม่
+ใช่ GroupDocs.Viewer สำหรับ .NET รองรับการเรนเดอร์ไฟล์ RAR ที่เข้ารหัส โดยต้องระบุรหัสผ่านที่จำเป็นในระหว่างกระบวนการเรนเดอร์
+### สามารถปรับแต่งลักษณะการแสดงผลของเอกสารได้หรือไม่
+แน่นอน! GroupDocs.Viewer สำหรับ .NET นำเสนอตัวเลือกการปรับแต่งมากมาย ช่วยให้ผู้ใช้ปรับแต่งลักษณะของเอกสารที่แสดงผลตามความเหมาะสมของการใช้งาน
+### GroupDocs.Viewer สำหรับ .NET รองรับการเรนเดอร์รูปแบบไฟล์เก็บถาวรอื่น ๆ นอกเหนือจาก RAR หรือไม่
+ใช่ GroupDocs.Viewer สำหรับ .NET รองรับการเรนเดอร์รูปแบบไฟล์เก็บถาวรต่างๆ รวมถึง ZIP, TAR, 7z และอื่นๆ อีกมากมาย
+### ฉันสามารถรวม GroupDocs.Viewer สำหรับ .NET เข้ากับแอปพลิเคชันเว็บของฉันได้หรือไม่
+แน่นอน! GroupDocs.Viewer สำหรับ .NET นำเสนอ API ที่เหมาะสำหรับการรวมเข้าในแอพพลิเคชันเดสก์ท็อปและเว็บ
+### มีเวอร์ชันทดลองใช้สำหรับ GroupDocs.Viewer สำหรับ .NET หรือไม่
+ใช่ คุณสามารถใช้ประโยชน์จากการทดลองใช้ GroupDocs.Viewer สำหรับ .NET ได้ฟรีจาก [เว็บไซต์](https://releases-groupdocs.com/).

@@ -1,33 +1,33 @@
 ---
-title: Přejmenujte pole e-mailu během vykreslování
-linktitle: Přejmenujte pole e-mailu během vykreslování
-second_title: GroupDocs.Viewer .NET API
-description: Vylepšete prohlížení dokumentů pomocí GroupDocs.Viewer pro .NET. Bezproblémově vykreslujte a přizpůsobujte e-maily.
-weight: 12
-url: /cs/net/rendering-email-messages/rename-email-fields/
+"description": "Vylepšete si prohlížení dokumentů s GroupDocs.Viewer pro .NET. Bezproblémově vykreslujte a upravujte e-maily."
+"linktitle": "Přejmenování polí e-mailu během vykreslování"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Přejmenování polí e-mailu během vykreslování"
+"url": "/cs/net/rendering-email-messages/rename-email-fields/"
+"weight": 12
 ---
 
-# Přejmenujte pole e-mailu během vykreslování
+# Přejmenování polí e-mailu během vykreslování
 
-## Úvod
+## Zavedení
 
-dnešní digitální době je efektivní správa a prohlížení dokumentů prvořadé pro firmy i jednotlivce. Ať už se jedná o smlouvy, sestavy nebo e-maily, možnost bezproblémového procházení těmito dokumenty může výrazně zvýšit produktivitu. Zde vstupuje do hry GroupDocs.Viewer for .NET. Tato výkonná knihovna umožňuje vývojářům integrovat možnosti prohlížení dokumentů přímo do jejich aplikací .NET a nabízí širokou škálu funkcí pro vykreslování různých formátů dokumentů.
+V dnešní digitální době je efektivní správa a prohlížení dokumentů zásadní pro firmy i jednotlivce. Ať už se jedná o smlouvy, zprávy nebo e-maily, možnost bezproblémové procházení těchto dokumentů může výrazně zvýšit produktivitu. A právě zde přichází na řadu GroupDocs.Viewer pro .NET. Tato výkonná knihovna umožňuje vývojářům integrovat funkce prohlížení dokumentů přímo do jejich .NET aplikací a nabízí širokou škálu funkcí pro vykreslování různých formátů dokumentů.
 
 ## Předpoklady
 
-Než se pustíte do výukového programu o přejmenování e-mailových polí během vykreslování pomocí GroupDocs.Viewer for .NET, ujistěte se, že máte následující předpoklady:
+Než se ponoříte do tutoriálu o přejmenování polí e-mailu během vykreslování pomocí GroupDocs.Viewer pro .NET, ujistěte se, že máte následující předpoklady:
 
-1.  Knihovna GroupDocs.Viewer for .NET: Stáhněte a nainstalujte knihovnu GroupDocs.Viewer for .NET z[tady](https://releases.groupdocs.com/viewer/net/).
+1. Knihovna GroupDocs.Viewer pro .NET: Stáhněte a nainstalujte knihovnu GroupDocs.Viewer pro .NET z [zde](https://releases.groupdocs.com/viewer/net/).
 
-2. Vývojové prostředí: Ujistěte se, že máte pro vývoj .NET nastaveno vhodné vývojové prostředí, jako je Visual Studio.
+2. Vývojové prostředí: Ujistěte se, že máte nastavené vhodné vývojové prostředí pro vývoj v .NET, například Visual Studio.
 
-3. Základní porozumění C#: Seznamte se se základy programovacího jazyka C#, protože tutoriál bude zahrnovat úryvky kódu C#.
+3. Základní znalost jazyka C#: Seznamte se se základy programovacího jazyka C#, protože tutoriál bude zahrnovat úryvky kódu v jazyce C#.
 
-4. Adresář dokumentů: Připravte adresář, kde jsou uloženy dokumenty, které se mají vykreslit.
+4. Adresář dokumentů: Připravte adresář, kde budou uloženy dokumenty, které mají být vykresleny.
 
 ## Importovat jmenné prostory
 
-Abyste mohli používat funkce GroupDocs.Viewer ve vaší aplikaci .NET, musíte importovat potřebné jmenné prostory.
+Abyste mohli ve své .NET aplikaci používat funkce GroupDocs.Viewer, musíte importovat potřebné jmenné prostory.
 
 ```csharp
 using System;
@@ -35,36 +35,36 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Nyní si rozdělme proces přejmenování e-mailových polí během vykreslování pomocí GroupDocs.Viewer for .NET do několika kroků:
+Nyní si rozdělme proces přejmenování polí e-mailu během vykreslování pomocí GroupDocs.Viewer pro .NET do několika kroků:
 
-## Krok 1: Definujte výstupní adresář
+## Krok 1: Definování výstupního adresáře
 
-Nejprve zadejte adresář, kam se budou ukládat vykreslené HTML stránky.
+Nejprve určete adresář, kam budou uloženy vykreslené HTML stránky.
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-## Krok 2: Definujte formát cesty k souboru stránky
+## Krok 2: Definování formátu cesty k souboru stránky
 
-Definujte formát pro cesty k souborům vykreslených stránek HTML. Každá stránka bude uložena jako samostatný soubor HTML.
+Definujte formát cest k souborům vykreslených HTML stránek. Každá stránka bude uložena jako samostatný HTML soubor.
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 
-## Krok 3: Inicializujte objekt prohlížeče
+## Krok 3: Inicializace objektu prohlížeče
 
-Vytvořte instanci třídy Viewer a předejte cestu k dokumentu, který se má zobrazit, jako parametr.
+Vytvořte instanci třídy Viewer a jako parametr předejte cestu k dokumentu, který se má zobrazit.
 
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG))
 {
 ```
 
-## Krok 4: Nakonfigurujte možnosti zobrazení HTML
+## Krok 4: Konfigurace možností zobrazení HTML
 
-Nakonfigurujte možnosti pro zobrazení HTML, včetně zadání formátu výstupního souboru a nastavení mapování e-mailových polí.
+Nakonfigurujte možnosti zobrazení HTML, včetně určení formátu výstupního souboru a nastavení mapování polí e-mailu.
 
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
@@ -76,13 +76,13 @@ options.EmailOptions.FieldTextMap[Field.Subject] = "Topic";
 
 ## Krok 5: Vykreslení dokumentu
 
-Vyvolejte metodu View objektu Viewer a předejte nakonfigurované možnosti zobrazení HTML.
+Volejte metodu View objektu Viewer a předejte jí nakonfigurované možnosti zobrazení HTML.
 
 ```csharp
 viewer.View(options);
 ```
 
-## Krok 6: Zobrazte zprávu o úspěchu
+## Krok 6: Zobrazení zprávy o úspěchu
 
 Informujte uživatele, že dokument byl úspěšně vykreslen.
 
@@ -92,26 +92,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Závěr
 
-Na závěr, GroupDocs.Viewer for .NET poskytuje bezproblémové řešení pro vykreslování dokumentů v aplikacích .NET. Podle kroků uvedených v tomto kurzu můžete snadno přejmenovat pole e-mailu během vykreslování, čímž se zlepší čitelnost a použitelnost e-mailových dokumentů. Díky intuitivnímu rozhraní API a komplexním funkcím umožňuje GroupDocs.Viewer vývojářům efektivně zefektivnit procesy prohlížení dokumentů.
+Závěrem lze říci, že GroupDocs.Viewer pro .NET poskytuje bezproblémové řešení pro vykreslování dokumentů v .NET aplikacích. Dodržováním kroků popsaných v tomto tutoriálu můžete snadno přejmenovat pole e-mailů během vykreslování, čímž se zlepší čitelnost a použitelnost e-mailových dokumentů. Díky intuitivnímu API a komplexním funkcím umožňuje GroupDocs.Viewer vývojářům efektivně zefektivnit procesy prohlížení dokumentů.
 
-## FAQ
+## Často kladené otázky
 
-### Otázka: Mohu pomocí GroupDocs.Viewer for .NET vykreslovat jiné dokumenty než e-maily?
+### Otázka: Mohu pomocí GroupDocs.Viewer pro .NET vykreslovat i jiné dokumenty než e-maily?
 
-Odpověď: Ano, GroupDocs.Viewer podporuje vykreslování různých formátů dokumentů včetně PDF, dokumentů Microsoft Office, obrázků a dalších.
+A: Ano, GroupDocs.Viewer podporuje vykreslování různých formátů dokumentů, včetně PDF, dokumentů Microsoft Office, obrázků a dalších.
 
 ### Otázka: Je GroupDocs.Viewer kompatibilní s .NET Core?
 
-Odpověď: Ano, GroupDocs.Viewer podporuje .NET Core spolu s tradičním .NET Framework.
+A: Ano, GroupDocs.Viewer podporuje .NET Core spolu s tradičním .NET Frameworkem.
 
-### Otázka: Mohu upravit vzhled vykreslených dokumentů?
+### Otázka: Mohu si přizpůsobit vzhled vykreslených dokumentů?
 
-Odpověď: GroupDocs.Viewer rozhodně nabízí rozsáhlé možnosti přizpůsobení pro ovládání vzhledu a chování vykreslených dokumentů.
+A: Rozhodně, GroupDocs.Viewer nabízí rozsáhlé možnosti přizpůsobení pro ovládání vzhledu a chování vykreslených dokumentů.
 
 ### Otázka: Podporuje GroupDocs.Viewer streamování dokumentů?
 
-Odpověď: Ano, GroupDocs.Viewer umožňuje streamování dokumentů přímo do prohlížeče klienta bez nutnosti jejich ukládání na server.
+A: Ano, GroupDocs.Viewer umožňuje streamování dokumentů přímo do prohlížeče klienta bez nutnosti jejich ukládání na server.
 
-### Otázka: Je GroupDocs.Viewer vhodný pro aplikace na podnikové úrovni?
+### Otázka: Je GroupDocs.Viewer vhodný pro podnikové aplikace?
 
-Odpověď: GroupDocs.Viewer je samozřejmě navržen tak, aby splňoval požadavky aplikací na podnikové úrovni díky své škálovatelnosti, spolehlivosti a robustní sadě funkcí.
+A: GroupDocs.Viewer je jistě navržen tak, aby splňoval požadavky podnikových aplikací díky své škálovatelnosti, spolehlivosti a robustní sadě funkcí.

@@ -1,51 +1,57 @@
 ---
-title: Začínáme
-linktitle: Začínáme
-second_title: GroupDocs.Viewer .NET API
-description: Objevte podrobné návody pro bezproblémovou integraci GroupDocs.Viewer pro .NET do vašich aplikací. Naučte se nastavovat licence a přizpůsobovat vzhled prohlížeče.
-weight: 26
-url: /cs/net/getting-started/
+"description": "Objevte podrobné návody pro bezproblémovou integraci GroupDocs.Viewer pro .NET do vašich aplikací. Naučte se nastavovat licence a přizpůsobovat vzhled prohlížeče."
+"linktitle": "Začínáme"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Začínáme"
+"url": "/cs/net/getting-started/"
+"weight": 26
 ---
 
 # Začínáme
 
 
-## Úvod
+## Zavedení
 
-Jste připraveni vylepšit své aplikace .NET o výkonné možnosti prohlížení dokumentů? Už nehledejte! V tomto komplexním průvodci vás provedeme vším, co potřebujete vědět o bezproblémové integraci GroupDocs.Viewer for .NET do vašich projektů.
+Jste připraveni vylepšit své .NET aplikace o výkonné funkce pro prohlížení dokumentů? Už nehledejte! V této komplexní příručce vás provedeme vším, co potřebujete vědět o bezproblémové integraci GroupDocs.Viewer pro .NET do vašich projektů.
 
-## Návody Začínáme
+![Prohlížení dokumentů pomocí GroupDocs.Viewer pro .NET](/viewer/getting-started/image.png)
 
-Jste v GroupDocs.Viewer pro .NET nováčkem? Bez obav! Naše výukové programy „Začínáme“ jsou navrženy tak, aby vám pomohly snadno nastartovat vaši cestu. Ať už nastavujete licenci ze souboru nebo streamu, nebo se rozhodnete pro měřenou licenci, máme pro vás vše.
+## Návody pro začátečníky
 
-## Nastavit licenci ze souboru
+Jste v GroupDocs.Viewer pro .NET nováčkem? Žádné obavy! Naše tutoriály „Začínáme“ jsou navrženy tak, aby vám pomohly snadno nastartovat vaši cestu. Ať už nastavujete licenci ze souboru nebo streamu, nebo volíte měřenou licenci, postaráme se o vás.
 
-V tomto tutoriálu vás provedeme procesem nastavení licence ze souboru. Je to jednoduchý, ale nezbytný krok, jak bez námahy integrovat GroupDocs.Viewer pro .NET do vašich aplikací. Pomocí několika řádků kódu budete moci odemknout výkonné funkce pro prohlížení dokumentů.
+## Nastavení licence ze souboru
 
-## Nastavit licenci ze streamu
+V tomto tutoriálu vás provedeme procesem nastavení licence ze souboru. Je to jednoduchý, ale zásadní krok k bezproblémové integraci GroupDocs.Viewer pro .NET do vašich aplikací. S pouhými několika řádky kódu budete moci odemknout výkonné funkce prohlížení dokumentů.
 
-Hledáte flexibilní způsob nastavení vaší licence? Náš návod na nastavení licence ze streamu je přesně to, co potřebujete. Ukážeme vám, jak bezproblémově integrovat GroupDocs.Viewer for .NET do vašich aplikací .NET a zajistit tak uživatelům bezproblémové prohlížení dokumentů.
+## Nastavení licence ze streamu
 
-## Nastavte měřenou licenci
+Hledáte flexibilní způsob nastavení licence? Náš tutoriál o nastavení licence ze streamu je přesně to, co potřebujete. Ukážeme vám, jak bezproblémově integrovat GroupDocs.Viewer pro .NET do vašich .NET aplikací a zajistit tak plynulé prohlížení dokumentů pro vaše uživatele.
 
-Chcete mít přehled o využití při prohlížení dokumentů? Náš návod na nastavení měřené licence vám pomůže. Naučte se, jak snadno integrovat funkce vykreslování dokumentů do vašich projektů a zároveň mít přehled o svém využití. Je to bezproblémový způsob, jak spravovat své potřeby při prohlížení dokumentů.
+## Nastavit měřenou licenci
 
-Ať už jste zkušený vývojář nebo s vývojem .NET teprve začínáte, díky našim výukovým programům je integrace GroupDocs.Viewer hračkou. Díky jasným vysvětlením a úryvkům kódu budete okamžitě připraveni.
+Chcete sledovat své používání prohlížení dokumentů? Náš tutoriál o nastavení měřené licence vám s tím pomůže. Naučte se, jak snadno integrovat funkce vykreslování dokumentů do svých projektů a zároveň sledovat své využití. Je to bezproblémový způsob, jak spravovat své potřeby v oblasti prohlížení dokumentů.
 
-Tak proč čekat? Ponořte se do našich výukových programů ještě dnes a odemkněte plný potenciál GroupDocs.Viewer pro .NET!
+Ať už jste zkušený vývojář, nebo s vývojem v .NET teprve začínáte, naše tutoriály vám integraci GroupDocs.Viewer usnadní. Díky jasným vysvětlením a úryvkům kódu budete moci vše spustit během chvilky.
+
+Tak proč čekat? Ponořte se do našich tutoriálů ještě dnes a odemkněte plný potenciál GroupDocs.Viewer pro .NET!
 
 ---
 
-## Jste připraveni začít? Podívejte se na naše tutoriály:
+## Jste připraveni začít? Podívejte se na naše návody:
 
-- [Nastavit licenci ze souboru](./set-license-from-file/)
-- [Nastavit licenci ze streamu](./set-license-from-stream/)
-- [Nastavte měřenou licenci](./set-metered-license/)
+- [Nastavení licence ze souboru](./set-license-from-file/)
+- [Nastavení licence ze streamu](./set-license-from-stream/)
+- [Nastavit měřenou licenci](./set-metered-license/)
 
-## Návody Začínáme
-### [Nastavit licenci ze souboru](./set-license-from-file/)
-Naučte se, jak bez námahy integrovat GroupDocs.Viewer pro .NET do vašich aplikací. Nastavte licenci, prohlížejte dokumenty a přizpůsobte vzhled prohlížeče.
-### [Nastavit licenci ze streamu](./set-license-from-stream/)
-Vylepšete své aplikace .NET pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Postupujte podle našeho podrobného průvodce a bez námahy integrujte výkonné funkce pro prohlížení dokumentů.
-### [Nastavte měřenou licenci](./set-metered-license/)
-Vylepšete své aplikace .NET pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Snadno integrujte funkce vykreslování dokumentů do svých projektů.
+## Návody pro začátečníky
+### [Nastavení licence ze souboru](./set-license-from-file/)
+Naučte se, jak snadno integrovat GroupDocs.Viewer pro .NET do vašich aplikací. Nastavte licenci, zobrazte dokumenty a přizpůsobte vzhled prohlížeče.
+### [Nastavení licence ze streamu](./set-license-from-stream/)
+Vylepšete své .NET aplikace pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Postupujte podle našeho podrobného návodu a bez námahy integrujte výkonné funkce prohlížení dokumentů.
+### [Nastavit měřenou licenci](./set-metered-license/)
+Vylepšete své .NET aplikace pomocí GroupDocs.Viewer pro bezproblémové prohlížení dokumentů. Snadno integrujte funkce vykreslování dokumentů do svých projektů.
+### [Zvládnutí správy licencí v GroupDocs.Viewer pro .NET: Komplexní průvodce](./groupdocs-viewer-license-management-net/)
+Naučte se, jak efektivně spravovat licence v GroupDocs.Viewer pro .NET s tímto podrobným průvodcem. Prozkoumejte cesty k souborům a metody vložených zdrojů.
+### [Nastavení licence GroupDocs.Viewer .NET prostřednictvím streamu: Kompletní průvodce](./groupdocs-viewer-net-license-stream-setup-guide/)
+Naučte se v tomto komplexním průvodci, jak nastavit a konfigurovat licenci GroupDocs.Viewer .NET pomocí souborového streamu. Ideální pro vývojáře, kteří hledají dynamickou správu licencí.

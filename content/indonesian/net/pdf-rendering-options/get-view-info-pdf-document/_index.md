@@ -1,23 +1,26 @@
 ---
-title: Dapatkan Lihat Info untuk Dokumen PDF
-linktitle: Dapatkan Lihat Info untuk Dokumen PDF
-second_title: GroupDocs.Viewer .NET API
-description: Pelajari cara mengekstrak informasi tampilan dari dokumen PDF menggunakan GroupDocs.Viewer untuk .NET dalam tutorial komprehensif ini.
-weight: 16
-url: /id/net/pdf-rendering-options/get-view-info-pdf-document/
+"description": "Pelajari cara mengekstrak informasi tampilan dari dokumen PDF menggunakan GroupDocs.Viewer untuk .NET dalam tutorial komprehensif ini."
+"linktitle": "Dapatkan Info Tampilan untuk Dokumen PDF"
+"second_title": "API Penampil GroupDocs.NET"
+"title": "Dapatkan Info Tampilan untuk Dokumen PDF"
+"url": "/id/net/pdf-rendering-options/get-view-info-pdf-document/"
+"weight": 16
 ---
 
-# Dapatkan Lihat Info untuk Dokumen PDF
+# Dapatkan Info Tampilan untuk Dokumen PDF
 
 ## Perkenalan
-GroupDocs.Viewer untuk .NET adalah alat canggih yang dirancang untuk menyederhanakan tampilan dokumen dalam aplikasi .NET. Baik Anda menangani PDF, dokumen Word, spreadsheet Excel, atau presentasi PowerPoint, pustaka ini menyederhanakan proses rendering dan interaksi dengan berbagai format file. Dalam tutorial ini, kami akan fokus memanfaatkan kemampuan GroupDocs.Viewer khusus untuk mengekstrak informasi tampilan dari dokumen PDF.
+GroupDocs.Viewer untuk .NET adalah alat canggih yang dirancang untuk menyederhanakan tampilan dokumen dalam aplikasi .NET. Baik Anda menangani PDF, dokumen Word, lembar kerja Excel, atau presentasi PowerPoint, pustaka ini menyederhanakan proses rendering dan interaksi dengan berbagai format file. Dalam tutorial ini, kami akan fokus pada pemanfaatan kemampuan GroupDocs.Viewer khususnya untuk mengekstrak informasi tampilan dari dokumen PDF.
+
+![Dapatkan Info Tampilan untuk Dokumen PDF dengan GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/get-view-iInfo-for-pdf-document.png)
+
 ## Prasyarat
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
-1.  Instalasi GroupDocs.Viewer untuk .NET: Pastikan Anda telah mengunduh dan menginstal perpustakaan GroupDocs.Viewer. Anda dapat memperolehnya dari[tautan unduhan](https://releases.groupdocs.com/viewer/net/).   
-2. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# sangat penting untuk memahami dan mengimplementasikan contoh kode yang diberikan.
+Sebelum memulai tutorial, pastikan Anda memiliki prasyarat berikut:
+1. Pemasangan GroupDocs.Viewer untuk .NET: Pastikan Anda telah mengunduh dan memasang pustaka GroupDocs.Viewer. Anda dapat memperolehnya dari [tautan unduhan](https://releases.groupdocs.com/viewer/net/).   
+2. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# sangat penting untuk memahami dan menerapkan contoh kode yang disediakan.
 3. Akses ke Dokumen PDF: Siapkan dokumen PDF yang akan Anda gunakan untuk mengekstrak informasi tampilan.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 Dalam proyek C# Anda, impor namespace yang diperlukan untuk memanfaatkan fungsionalitas GroupDocs.Viewer.
 
 ```csharp
@@ -27,7 +30,7 @@ using GroupDocs.Viewer.Results;
 ```
 
 
-Sekarang, mari kita uraikan proses mengambil informasi tampilan dari dokumen PDF menggunakan GroupDocs.Viewer untuk .NET.
+Sekarang, mari kita uraikan proses pengambilan informasi tampilan dari dokumen PDF menggunakan GroupDocs.Viewer untuk .NET.
 ## Langkah 1: Inisialisasi Objek Penampil
 Buat objek Viewer dan berikan jalur ke dokumen PDF sebagai parameter.
 ```csharp
@@ -39,12 +42,12 @@ Tentukan opsi tampilan, seperti tampilan HTML, untuk mengambil informasi tampila
 ```csharp
 	ViewInfoOptions options = ViewInfoOptions.ForHtmlView();
 ```
-## Langkah 3: Dapatkan Lihat Informasi
+## Langkah 3: Dapatkan Informasi Tampilan
 Panggil metode GetViewInfo untuk mengekstrak informasi tampilan dari dokumen PDF.
 ```csharp
 	PdfViewInfo info = viewer.GetViewInfo(options) as PdfViewInfo;
 ```
-## Langkah 4: Informasi Tampilan Keluaran
+## Langkah 4: Tampilan Informasi Output
 Menampilkan informasi tampilan yang diekstraksi, seperti jenis dokumen, jumlah halaman, dan izin pencetakan.
 ```csharp
 	Console.WriteLine("Document type is: " + info.FileType);
@@ -54,15 +57,15 @@ Menampilkan informasi tampilan yang diekstraksi, seperti jenis dokumen, jumlah h
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita telah menjelajahi cara memanfaatkan GroupDocs.Viewer untuk .NET untuk mengekstrak informasi tampilan dari dokumen PDF. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat dengan mudah mengintegrasikan fungsi ini ke dalam aplikasi .NET Anda, meningkatkan kemampuan manajemen dan tampilan dokumen.
-## FAQ
+Dalam tutorial ini, kami telah mempelajari cara memanfaatkan GroupDocs.Viewer untuk .NET guna mengekstrak informasi tampilan dari dokumen PDF. Dengan mengikuti langkah-langkah yang diberikan, Anda dapat mengintegrasikan fungsionalitas ini dengan lancar ke dalam aplikasi .NET Anda, yang akan meningkatkan kemampuan pengelolaan dan tampilan dokumen.
+## Pertanyaan yang Sering Diajukan
 ### Apakah GroupDocs.Viewer kompatibel dengan format file lain selain PDF?
 Ya, GroupDocs.Viewer mendukung berbagai format dokumen, termasuk Word, Excel, PowerPoint, dan banyak lagi.
-### Bisakah saya menyesuaikan opsi tampilan sesuai dengan kebutuhan aplikasi saya?
+### Dapatkah saya menyesuaikan pilihan tampilan menurut kebutuhan aplikasi saya?
 Tentu saja, GroupDocs.Viewer menawarkan berbagai opsi untuk menyesuaikan pengalaman menonton berdasarkan kebutuhan spesifik Anda.
 ### Apakah GroupDocs.Viewer cocok untuk aplikasi desktop dan web?
-Ya, GroupDocs.Viewer serbaguna dan dapat diintegrasikan ke dalam aplikasi .NET desktop dan berbasis web dengan mulus.
-### Apakah GroupDocs.Viewer memberikan dukungan dan bantuan jika saya mengalami masalah apa pun selama penerapan?
-Tentu saja, Anda dapat mencari bantuan dari forum komunitas GroupDocs.Viewer atau mengakses layanan dukungan profesional untuk penyelesaian masalah apa pun dengan cepat.
-### Bisakah saya mencoba GroupDocs.Viewer sebelum melakukan pembelian?
- Ya, Anda dapat menjelajahi fitur GroupDocs.Viewer dengan mengakses versi uji coba gratis yang tersedia di[situs web](https://purchase.groupdocs.com/buy).
+Ya, GroupDocs.Viewer serba guna dan dapat diintegrasikan ke dalam aplikasi .NET desktop dan berbasis web dengan mulus.
+### Apakah GroupDocs.Viewer menyediakan dukungan dan bantuan jika saya menemui masalah selama implementasi?
+Tentu saja, Anda dapat mencari bantuan dari forum komunitas GroupDocs.Viewer atau mengakses layanan dukungan profesional untuk penyelesaian cepat atas masalah apa pun.
+### Dapatkah saya mencoba GroupDocs.Viewer sebelum melakukan pembelian?
+Ya, Anda dapat menjelajahi fitur GroupDocs.Viewer dengan mengakses versi uji coba gratis yang tersedia di [situs web](https://purchase.groupdocs.com/buy).

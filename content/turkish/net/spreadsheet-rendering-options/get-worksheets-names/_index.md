@@ -1,49 +1,49 @@
 ---
-title: Çalışma Sayfası Adlarını Alma
-linktitle: Çalışma Sayfası Adlarını Alma
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer for .NET'in büyüsünü keşfedin; belge görüntülemeyi uygulamalarınıza sorunsuz bir şekilde entegre edin. Ücretsiz denemeyi şimdi deneyin!
-weight: 11
-url: /tr/net/spreadsheet-rendering-options/get-worksheets-names/
+"description": "GroupDocs.Viewer for .NET'in büyüsünü keşfedin – belge görüntülemeyi uygulamalarınıza sorunsuz bir şekilde entegre edin. Ücretsiz denemeyi şimdi deneyin!"
+"linktitle": "Çalışma Sayfaları Adlarını Alın"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Çalışma Sayfaları Adlarını Alın"
+"url": "/tr/net/spreadsheet-rendering-options/get-worksheets-names/"
+"weight": 11
 ---
 
-# Çalışma Sayfası Adlarını Alma
+# Çalışma Sayfaları Adlarını Alın
 
 ## giriiş
-.NET için GroupDocs.Viewer'ın büyüleyici dünyasına hoş geldiniz! .NET uygulamalarınızdaki güçlü belge görüntüleme yeteneklerini keşfetmeye hevesli bir geliştirici veya meraklıysanız, büyük bir sürprizle karşı karşıyasınız. Bu kapsamlı kılavuzda, GroupDocs.Viewer'ı kullanarak çalışma sayfası adlarını almanın inceliklerini ele alacağız. O halde emniyet kemerinizi bağlayın ve bu heyecan verici yolculuğa başlayalım!
-## Önkoşullar
-Kodlama büyüsüne dalmadan önce her şeyin ayarlandığından emin olalım:
-1.  .NET için GroupDocs.Viewer'ı yükleyin:[İndirme: {link](https://releases.groupdocs.com/viewer/net/).NET için GroupDocs.Viewer'ın en son sürümünü edinmek için. Geliştirme ortamınıza sorunsuz bir şekilde entegre etmek için kurulum talimatlarını izleyin.
-2. Belgenizi Hazırlayın: Belirlediğiniz belge dizininizde, örneğin "file.xlsx" adında bir Excel dosyası gibi bir hedef belgenizin olduğundan emin olun.
+.NET için GroupDocs.Viewer'ın büyüleyici dünyasına hoş geldiniz! .NET uygulamalarınızda güçlü belge görüntüleme yeteneklerini keşfetmeye meraklı bir geliştirici veya meraklıysanız, sizi bir şölene götürüyoruz. Bu kapsamlı kılavuzda, GroupDocs.Viewer kullanarak çalışma sayfası adlarını almanın inceliklerini inceleyeceğiz. O halde emniyet kemerlerinizi bağlayın ve bu heyecan verici yolculuğa çıkalım!
+## Ön koşullar
+Kodlamanın büyüsüne dalmadan önce her şeyin ayarlandığından emin olalım:
+1. .NET için GroupDocs.Viewer'ı yükleyin: Şuraya gidin: [indirme bağlantısı](https://releases.groupdocs.com/viewer/net/) .NET için GroupDocs.Viewer'ın en son sürümünü edinmek için. Geliştirme ortamınıza sorunsuz bir şekilde entegre etmek için kurulum talimatlarını izleyin.
+2. Belgenizi Hazırlayın: Belirlediğiniz belge dizininde "file.xlsx" adında bir Excel dosyası gibi hedef bir belgenizin olduğundan emin olun.
 ## Ad Alanlarını İçe Aktar
-Artık önkoşulları yerine getirdiğinize göre, gerekli ad alanlarını içe aktararak işe başlayalım. Bu, uygulamanızın GroupDocs.Viewer for .NET tarafından sağlanan işlevleri tanımasını ve kullanabilmesini sağlar.
+Artık ön koşullar yerli yerinde olduğuna göre, gerekli ad alanlarını içe aktararak işe koyulalım. Bu, uygulamanızın GroupDocs.Viewer for .NET tarafından sağlanan işlevleri tanımasını ve kullanabilmesini sağlar.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
-## 1. Belge Dizinini Kurma
+## 1. Belge Dizinini Ayarlama
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-"Belge Dizininiz"i, hedef belgenizin bulunduğu dizinin yolu ile değiştirin.
+"Belge Dizininiz" ifadesini hedef belgenizin bulunduğu dizinin yoluyla değiştirin.
 ## 2. Görüntüleyiciyi Başlatma
 ```csharp
 using (Viewer viewer = new Viewer(Path.Combine(outputDirectory, "file.xlsx")))
 ```
-Bu adımda, Excel dosyanızın yolunu sağlayan Viewer sınıfının bir örneğini oluşturuyoruz.
-## 3. Görünüm Bilgisi Seçeneklerini Yapılandırma
+Bu adımda, Excel dosyanızın yolunu sağlayarak Viewer sınıfının bir örneğini oluşturuyoruz.
+## 3. Görünüm Bilgi Seçeneklerini Yapılandırma
 ```csharp
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
 viewInfoOptions.SpreadsheetOptions = SpreadsheetOptions.ForOnePagePerSheet();
 ```
-Burada, ViewInfoOptions'ı HTML görünümleri oluşturacak ve elektronik tablo oluşturma için ek seçenekler ayarlayacak şekilde yapılandırıyoruz.
+Burada, HTML görünümleri oluşturmak ve elektronik tablo oluşturma için ek seçenekler belirlemek üzere ViewInfoOptions'ı yapılandırıyoruz.
 ## 4. Görünüm Bilgilerini Alma
 ```csharp
 ViewInfo viewInfo = viewer.GetViewInfo(viewInfoOptions);
 ```
-Yapılandırılmış seçeneklere göre görünüm bilgilerini almak için Viewer örneğini kullanın.
+Yapılandırılan seçeneklere göre görünüm bilgilerini almak için Görüntüleyici örneğini kullanın.
 ## 5. Çalışma Sayfası Adlarını Görüntüleme
 ```csharp
 Console.WriteLine("Worksheets:");
@@ -54,15 +54,15 @@ foreach (Page page in viewInfo.Pages)
 ```
 Alınan sayfalar arasında dolaşın ve her çalışma sayfasının adını konsola yazdırın.
 ## Çözüm
-Tebrikler! GroupDocs.Viewer for .NET'i kullanarak çalışma sayfası adlarını alma işlemini başarıyla tamamladınız. Bu, uygulamalarınızdaki belge görüntüleme işlevlerini geliştirmek için sayısız olasılığın önünü açar.
+Tebrikler! GroupDocs.Viewer for .NET kullanarak çalışma sayfası adlarını alma sürecinde başarılı bir şekilde gezindiniz. Bu, uygulamalarınızdaki belge görüntüleme işlevlerini geliştirmek için sayısız olasılık sunar.
 ## SSS
-### GroupDocs.Viewer for .NET'i diğer belge formatlarıyla kullanabilir miyim?
-Kesinlikle! GroupDocs.Viewer, PDF, Microsoft Office ve daha fazlası dahil olmak üzere çok çeşitli belge formatlarını destekler.
-### Ücretsiz deneme mevcut mu?
- Evet, GroupDocs.Viewer for .NET'i aşağıdaki uygulamamızla keşfedebilirsiniz:[ücretsiz deneme](https://releases.groupdocs.com/).
-### Ek desteği nerede bulabilirim?
- Şuraya gidin:[GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) topluluk desteği ve tartışmalar için.
-### Geçici lisans alabilir miyim?
- Kesinlikle! Ziyaret etmek[bu bağlantı](https://purchase.groupdocs.com/temporary-license/) Geçici lisansınızı almak için.
+### GroupDocs.Viewer for .NET'i diğer belge formatlarıyla birlikte kullanabilir miyim?
+Kesinlikle! GroupDocs.Viewer, PDF, Microsoft Office ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### Ücretsiz deneme imkanı var mı?
+Evet, .NET için GroupDocs.Viewer'ı şurada keşfedebilirsiniz: [ücretsiz deneme](https://releases.groupdocs.com/).
+### Ek desteği nereden bulabilirim?
+Başlamak için [GroupDocs.Viewer forumu](https://forum.groupdocs.com/c/viewer/9) Topluluk desteği ve tartışmaları için.
+### Geçici ehliyet alabilir miyim?
+Kesinlikle! Ziyaret edin [bu bağlantı](https://purchase.groupdocs.com/temporary-license/) Geçici ehliyetinizi almak için.
 ### Ayrıntılı dokümantasyon kaynakları mevcut mu?
- Kesinlikle! Kontrol et[resmi belgeler](https://tutorials.groupdocs.com/viewer/net/) Ayrıntılı bilgi ve kılavuzlar için.
+Kesinlikle! Şuna bir göz atın [resmi belgeler](https://tutorials.groupdocs.com/viewer/net/) Ayrıntılı bilgi ve rehberler için.

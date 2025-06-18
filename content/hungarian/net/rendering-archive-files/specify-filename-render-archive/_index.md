@@ -1,45 +1,45 @@
 ---
-title: Adja meg a fájlnevet az archív fájlok renderelésekor
-linktitle: Adja meg a fájlnevet az archív fájlok renderelésekor
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan lehet archív fájlokat renderelni .NET-ben a GroupDocs.Viewer segítségével, amely javítja a dokumentumkezelési képességeket.
-weight: 14
-url: /hu/net/rendering-archive-files/specify-filename-render-archive/
+"description": "Ismerje meg, hogyan jeleníthet meg archív fájlokat .NET-ben a GroupDocs.Viewer segítségével, amivel javíthatja a dokumentumkezelési képességeket."
+"linktitle": "Fájlnév megadása archív fájlok renderelésekor"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Fájlnév megadása archív fájlok renderelésekor"
+"url": "/hu/net/rendering-archive-files/specify-filename-render-archive/"
+"weight": 14
 ---
 
-# Adja meg a fájlnevet az archív fájlok renderelésekor
+# Fájlnév megadása archív fájlok renderelésekor
 
 ## Bevezetés
-.NET fejlesztés területén a GroupDocs.Viewer sokoldalú eszközként tűnik ki a különböző formátumú dokumentumok megjelenítéséhez. Robusztus jellemzőinek és rugalmasságának köszönhetően leegyszerűsíti a fájlok, köztük az archív fájlok megtekintésének folyamatát. Ebben az oktatóanyagban az archív fájlok GroupDocs.Viewer for .NET segítségével történő megjelenítésének sajátosságaival foglalkozunk. Ha követi ezeket a lépésenkénti utasításokat, megtanulhatja, hogyan adjon meg fájlnevet az archív fájlok előállításakor, lehetővé téve a zökkenőmentes dokumentumkezelést .NET-alkalmazásaiban.
+.NET fejlesztés területén a GroupDocs.Viewer sokoldalú eszközként tűnik ki a különféle formátumú dokumentumok rendereléséhez. Robusztus funkcióival és rugalmasságával leegyszerűsíti a fájlok, beleértve az archív fájlokat is, megtekintésének folyamatát. Ebben az oktatóanyagban elmélyedünk az archív fájlok GroupDocs.Viewer for .NET használatával történő renderelésének részleteiben. A lépésről lépésre haladó utasításokat követve megtanulhatja, hogyan adhat meg fájlnevet az archív fájlok renderelésekor, lehetővé téve a zökkenőmentes dokumentumkezelést a .NET alkalmazásokon belül.
 ## Előfeltételek
-Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-1.  GroupDocs.Viewer for .NET: Töltse le és telepítse a GroupDocs.Viewer könyvtárat innen[itt](https://releases.groupdocs.com/viewer/net/).
+Mielőtt belemerülnél az oktatóanyagba, győződj meg róla, hogy a következő előfeltételekkel rendelkezel:
+1. GroupDocs.Viewer .NET-hez: Töltse le és telepítse a GroupDocs.Viewer könyvtárat innen: [itt](https://releases.groupdocs.com/viewer/net/).
 2. Fejlesztői környezet: Állítson be egy .NET fejlesztői környezetet, például a Visual Studio-t, a szükséges konfigurációkkal.
-3. Alapvető C# ismerete: A C# programozási nyelv ismerete elengedhetetlen a megadott kódrészletek megértéséhez és megvalósításához.
+3. C# alapismeretek: A C# programozási nyelv ismerete elengedhetetlen a megadott kódrészletek megértéséhez és megvalósításához.
 
 ## Névterek importálása
-A C# projektben importálja a szükséges névtereket a GroupDocs.Viewer funkcióinak eléréséhez:
+A C# projektedben importáld a szükséges névtereket a GroupDocs.Viewer funkcióinak eléréséhez:
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 ## 1. lépés: Adja meg a kimeneti könyvtárat és a fájl elérési útját
-Határozza meg a kimeneti könyvtárat, ahová a renderelt dokumentum mentésre kerül, és adja meg a kimeneti fájl elérési útját:
+Adja meg a kimeneti könyvtárat, ahová a renderelt dokumentum mentésre kerül, és adja meg a kimeneti fájl elérési útját:
 ```csharp
 string outputDirectory = "Your Document Directory";
 string outputFilePath = Path.Combine(outputDirectory, "output.pdf");
 ```
-## 2. lépés: Inicializálja a Viewer Object-et
-Hozzon létre egy példányt a Viewer osztályból az archív fájl elérési útjának megadásával:
+## 2. lépés: Viewer objektum inicializálása
+Hozz létre egy példányt a Viewer osztályból az archív fájl elérési útjának megadásával:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_ZIP))
 {
-    // Renderelési lehetőségek
+    // Renderelési beállítások
 }
 ```
-## 3. lépés: Konfigurálja a PDF-leképezési beállításokat
-Adja meg a megjelenítési beállításokat, különösen a PDF-kimenethez:
+## 3. lépés: PDF renderelési beállítások konfigurálása
+Adja meg a renderelési beállításokat, különösen a PDF kimenethez:
 ```csharp
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
@@ -48,27 +48,27 @@ PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```csharp
 viewOptions.ArchiveOptions.FileName = new FileName("my filename");
 ```
-## 5. lépés: Rendelje le a dokumentumot
-Hívja meg a Viewer objektum View metódusát a beállított nézeti beállításokkal:
+## 5. lépés: A dokumentum renderelése
+Hívjuk meg a Viewer objektum View metódusát a konfigurált nézetbeállításokkal:
 ```csharp
 viewer.View(viewOptions);
 ```
-## 6. lépés: Jelenítse meg a sikeres üzenetet
-Értesítse a felhasználót a sikeres megjelenítésről, és adja meg a kimeneti könyvtárat:
+## 6. lépés: Sikeres üzenet megjelenítése
+Értesítse a felhasználót a sikeres renderelést, és adja meg a kimeneti könyvtárat:
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megvizsgáltuk, hogyan használhatjuk a GroupDocs.Viewer for .NET alkalmazást archív fájlok megjelenítésére és egyéni fájlnév megadására a kimenethez. A vázolt lépések követésével zökkenőmentesen integrálhatja ezt a funkciót .NET-alkalmazásaiba, javítva a dokumentummegtekintési és -kezelési képességeket.
+Ebben az oktatóanyagban azt vizsgáltuk meg, hogyan használható a GroupDocs.Viewer for .NET archív fájlok renderelésére és egyéni fájlnév megadására a kimenethez. A vázolt lépéseket követve zökkenőmentesen integrálhatja ezt a funkciót .NET alkalmazásaiba, javítva a dokumentumok megtekintési és kezelési képességeit.
 ## GYIK
-### GroupDocs.Viewer kompatibilis az összes archív fájlformátummal?
-A GroupDocs.Viewer különféle archív formátumokat támogat, többek között ZIP, RAR, TAR és 7z.
+### A GroupDocs.Viewer kompatibilis az összes archív fájlformátummal?
+A GroupDocs.Viewer különféle archívumformátumokat támogat, többek között a ZIP, RAR, TAR és 7z fájlokat.
 ### Testreszabhatom a PDF-től eltérő kimeneti formátumot?
-Igen, a GroupDocs.Viewer rugalmasságot kínál a kimeneti formátumok kiválasztásában, beleértve az olyan képformátumokat, mint a JPG és PNG, valamint a HTML és a PDF.
-### A GroupDocs.Viewer alkalmas nagyméretű archív fájlok kezelésére?
-Igen, a GroupDocs.Viewer a nagy archív fájlok hatékony kezelésére van optimalizálva, biztosítva a zökkenőmentes megjelenítést és a teljesítményt.
-### Támogatja a GroupDocs.Viewer az archív fájlok titkosítását?
-Igen, a GroupDocs.Viewer képes kezelni a titkosított archív fájlokat, amennyiben rendelkezésre állnak a szükséges visszafejtési kulcsok.
-### Integrálhatom a GroupDocs.Viewert felhőalapú tárolási szolgáltatásokkal?
-Igen, a GroupDocs.Viewer zökkenőmentes integrációt kínál a népszerű felhőalapú tárolási szolgáltatókkal, lehetővé téve a felhőben tárolt fájlok közvetlen megjelenítését.
+Igen, a GroupDocs.Viewer rugalmasságot kínál a kimeneti formátumok kiválasztásában, beleértve a JPG és PNG képformátumokat, valamint a HTML és PDF formátumokat.
+### Alkalmas a GroupDocs.Viewer nagyméretű archív fájlokhoz?
+Igen, a GroupDocs.Viewer optimalizálva van a nagyméretű archív fájlok hatékony kezelésére, biztosítva a zökkenőmentes renderelést és teljesítményt.
+### A GroupDocs.Viewer támogatja az archív fájlok titkosítását?
+Igen, a GroupDocs.Viewer képes kezelni a titkosított archív fájlokat, feltéve, hogy a szükséges visszafejtési kulcsok meg vannak adva.
+### Integrálhatom a GroupDocs.Viewer alkalmazást felhőalapú tárolási szolgáltatásokkal?
+Igen, a GroupDocs.Viewer zökkenőmentes integrációt kínál a népszerű felhőalapú tárhelyszolgáltatókkal, lehetővé téve a felhőben tárolt fájlok közvetlen megjelenítését.

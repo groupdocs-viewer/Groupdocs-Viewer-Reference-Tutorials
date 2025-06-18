@@ -1,29 +1,29 @@
 ---
-title: 特定のプロジェクトの時間間隔をレンダリングする (MS プロジェクト)
-linktitle: 特定のプロジェクトの時間間隔をレンダリングする (MS プロジェクト)
-second_title: GroupDocs.Viewer .NET API
-description: GroupDocs.Viewer for .NET をアプリケーションにシームレスに統合して、ドキュメントを効率的に表示します。多彩なレンダリング機能で生産性を向上させます。
-weight: 12
-url: /ja/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
+"description": "GroupDocs.Viewer for .NETをアプリケーションにシームレスに統合することで、効率的なドキュメント表示を実現します。多彩なレンダリング機能で生産性を向上します。"
+"linktitle": "特定のプロジェクト時間間隔のレンダリング（MS Project）"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "特定のプロジェクト時間間隔のレンダリング（MS Project）"
+"url": "/ja/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
+"weight": 12
 ---
 
-# 特定のプロジェクトの時間間隔をレンダリングする (MS プロジェクト)
+# 特定のプロジェクト時間間隔のレンダリング（MS Project）
 
 ## 導入
-ソフトウェア開発の分野では、さまざまなドキュメント形式の効率的な処理とレンダリングが最も重要です。ドキュメントの表示であっても操作であっても、適切なツールを使用すると、生産性が大幅に向上し、プロセスが合理化されます。 GroupDocs.Viewer for .NET は多用途のソリューションとして際立っており、開発者はドキュメント表示機能を .NET アプリケーションにシームレスに統合できます。
+ソフトウェア開発において、様々なドキュメント形式の効率的な処理とレンダリングは極めて重要です。ドキュメントの表示や操作など、適切なツールを使用することで、生産性を大幅に向上させ、プロセスを効率化できます。GroupDocs.Viewer for .NETは、開発者が.NETアプリケーションにドキュメント表示機能をシームレスに統合できる、汎用性の高いソリューションです。
 ## 前提条件
-GroupDocs.Viewer for .NET の統合に入る前に、次の前提条件を満たしていることを確認してください。
+GroupDocs.Viewer for .NET の統合に進む前に、次の前提条件が満たされていることを確認してください。
 ### 1. .NET Framework に関する知識
-C# プログラミング言語や Visual Studio IDE などの .NET Framework の基本を理解していることを確認してください。
-### 2. GroupDocs.Viewer for .NET のインストール
-GroupDocs.Viewer for .NET を次の場所からダウンロードしてインストールします。[ダウンロードリンク](https://releases.groupdocs.com/viewer/net/)。提供されるインストール手順に従って、開発環境内にライブラリをセットアップします。
-### 3. 有効なライセンスまたは一時的なライセンス
-から有効なライセンスを取得します。[グループドキュメント](https://purchase.groupdocs.com/buy)またはから一時ライセンスを取得します。[ここ](https://purchase.groupdocs.com/temporary-license/) GroupDocs.Viewer for .NET の全機能を利用します。
-### 4. サンプルドキュメント
-レンダリング機能をテストできるように、MS Project ファイルなどのサンプル ドキュメントを用意します。
+C# プログラミング言語や Visual Studio IDE を含む .NET フレームワークの基本を理解していることを確認します。
+### 2. GroupDocs.Viewer for .NETのインストール
+GroupDocs.Viewer for .NETをダウンロードしてインストールします。 [ダウンロードリンク](https://releases.groupdocs.com/viewer/net/)提供されているインストール手順に従って、開発環境内でライブラリをセットアップします。
+### 3. 有効な免許証または一時免許証
+有効なライセンスを取得する [グループドキュメント](https://purchase.groupdocs.com/buy) または一時ライセンスを取得する [ここ](https://purchase.groupdocs.com/temporary-license/) GroupDocs.Viewer for .NET の全機能を活用します。
+### 4. サンプル文書
+レンダリング機能をテストするために、MS Project ファイルなどのサンプル ドキュメントを用意しておきます。
 
 ## 名前空間のインポート
-GroupDocs.Viewer for .NET が提供する機能にアクセスするには、必要な名前空間をプロジェクトに組み込みます。
+GroupDocs.Viewer for .NET によって提供される機能にアクセスするには、必要な名前空間をプロジェクトに組み込みます。
 
 ```csharp
 using System;
@@ -32,59 +32,59 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-MS Project ファイルから特定のプロジェクト時間間隔をレンダリングする例を複数のステップに分けてみましょう。
-## ステップ 1: 出力ディレクトリを定義する
+MS Project ファイルから特定のプロジェクト時間間隔をレンダリングする例を複数のステップに分解してみましょう。
+## ステップ1: 出力ディレクトリを定義する
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-レンダリングされた HTML ページが保存されるディレクトリを指定します。
-## ステップ 2: ページ ファイルのパス形式を定義する
+レンダリングされた HTML ページを保存するディレクトリを指定します。
+## ステップ2: ページファイルパスの形式を定義する
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-レンダリングされた各 HTML ページのファイル パスの形式を設定します。
-## ステップ 3: Viewer オブジェクトをインスタンス化する
+レンダリングされる各 HTML ページのファイル パスの形式を設定します。
+## ステップ3: ビューアオブジェクトのインスタンス化
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MPP))
 ```
-Viewer クラスのインスタンスを作成し、サンプル MS Project ファイルへのパスを渡します。
-## ステップ 4: HTML 表示オプションを構成する
+サンプル MS Project ファイルへのパスを渡して、Viewer クラスのインスタンスを作成します。
+## ステップ4: HTML表示オプションを構成する
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-レンダリング用の HTML ビュー オプションを構成し、埋め込みリソースの形式を指定します。
-## ステップ 5: プロジェクト管理ビュー情報の取得
+埋め込みリソースの形式を指定して、レンダリング用の HTML ビュー オプションを構成します。
+## ステップ5: プロジェクト管理ビュー情報を取得する
 ```csharp
 ProjectManagementViewInfo viewInfo = viewer.GetViewInfo(ViewInfoOptions.FromHtmlViewOptions(options)) as ProjectManagementViewInfo;
 ```
-プロジェクト管理ビュー情報を取得して、プロジェクトの開始日と終了日を決定します。
-## ステップ 6: 開始日と終了日を設定する
+プロジェクトの開始日と終了日を決定するためにプロジェクト管理ビュー情報を取得します。
+## ステップ6: 開始日と終了日を設定する
 ```csharp
 options.ProjectManagementOptions.StartDate = viewInfo.StartDate;
 options.ProjectManagementOptions.EndDate = viewInfo.StartDate.AddDays(7);
 ```
 レンダリングするプロジェクト間隔の開始日と終了日を設定します。
-## ステップ 7: ドキュメントをレンダリングする
+## ステップ7: ドキュメントのレンダリング
 ```csharp
 viewer.View(options);
 ```
-指定されたオプションを使用してレンダリング プロセスを開始します。
-## ステップ 8: 出力ディレクトリを表示する
+指定されたオプションでレンダリング プロセスを開始します。
+## ステップ8: 出力ディレクトリを表示する
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-レンダリングが成功したことをユーザーに通知し、出力が保存されているディレクトリを表示します。
+レンダリングが成功したことをユーザーに通知し、出力が保存されるディレクトリを表示します。
 
 ## 結論
-GroupDocs.Viewer for .NET をプロジェクトに統合すると、ドキュメント表示タスクを効率的に処理できるようになり、ユーザー エクスペリエンスと生産性が向上します。提供されているステップバイステップのガイドに従うことで、ドキュメント レンダリング機能を .NET アプリケーションにシームレスに組み込むことができます。
+GroupDocs.Viewer for .NETをプロジェクトに統合することで、ドキュメント表示タスクを効率的に処理し、ユーザーエクスペリエンスと生産性を向上させることができます。付属のステップバイステップガイドに従うことで、ドキュメントレンダリング機能を.NETアプリケーションにシームレスに組み込むことができます。
 ## よくある質問
 ### GroupDocs.Viewer for .NET はすべてのドキュメント形式と互換性がありますか?
-GroupDocs.Viewer for .NET は、Microsoft Office、PDF、CAD などを含む幅広いドキュメント形式をサポートしています。
+GroupDocs.Viewer for .NET は、Microsoft Office、PDF、CAD など、幅広いドキュメント形式をサポートしています。
 ### レンダリングされたドキュメントの外観をカスタマイズできますか?
-はい、ページ レイアウト、透かし、ページの回転など、レンダリング プロセスのさまざまな側面をカスタマイズできます。
+はい、ページレイアウト、透かし、ページの回転など、レンダリングプロセスのさまざまな側面をカスタマイズできます。
 ### GroupDocs.Viewer for .NET は Web アプリケーションに適していますか?
-確かに、GroupDocs.Viewer for .NET は Web アプリケーションにシームレスに統合して、ドキュメント表示機能を提供できます。
-### GroupDocs.Viewer for .NET はモバイル プラットフォームのサポートを提供しますか?
-はい。GroupDocs.Viewer for .NET はモバイル プラットフォームをサポートしているため、レスポンシブなドキュメント表示機能を備えたアプリケーションを作成できます。
+はい、GroupDocs.Viewer for .NET は Web アプリケーションにシームレスに統合され、ドキュメント表示機能を提供できます。
+### GroupDocs.Viewer for .NET はモバイル プラットフォームをサポートしていますか?
+はい、GroupDocs.Viewer for .NET はモバイル プラットフォームをサポートしており、応答性の高いドキュメント表示機能を備えたアプリケーションを作成できます。
 ### GroupDocs.Viewer for .NET に関するサポートを求めることができるコミュニティ フォーラムはありますか?
-はい、次の場所にアクセスできます。[GroupDocs.Viewer フォーラム](https://forum.groupdocs.com/c/viewer/9)質問したり、アイデアを共有したり、他のユーザーや開発者と交流したりできます。
+はい、訪問できます [GroupDocs.Viewer フォーラム](https://forum.groupdocs.com/c/viewer/9) 質問したり、アイデアを共有したり、他のユーザーや開発者と交流したりできます。

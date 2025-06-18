@@ -1,27 +1,27 @@
 ---
-title: Megtekintési információk a CAD-rajzokhoz
-linktitle: Megtekintési információk a CAD-rajzokhoz
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan kérheti le a CAD-rajzok nézeti adatait a GroupDocs.Viewer for .NET segítségével. Bővítse .NET-alkalmazásait a zökkenőmentes CAD-fájlkezeléssel.
-weight: 10
-url: /hu/net/rendering-cad-drawings/get-view-info-cad-drawing/
+"description": "Ismerje meg, hogyan kérhet le nézetinformációkat CAD rajzokhoz a GroupDocs.Viewer for .NET segítségével. Fejlessze .NET alkalmazásait zökkenőmentes CAD fájlkezeléssel."
+"linktitle": "CAD rajzok megtekintési információinak lekérése"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "CAD rajzok megtekintési információinak lekérése"
+"url": "/hu/net/rendering-cad-drawings/get-view-info-cad-drawing/"
+"weight": 10
 ---
 
-# Megtekintési információk a CAD-rajzokhoz
+# CAD rajzok megtekintési információinak lekérése
 
 ## Bevezetés
-szoftverfejlesztés világában a CAD-rajzok hatékony kezelése kulcsfontosságú. Függetlenül attól, hogy építészek, mérnökök vagy tervezők számára készít alkalmazásokat, a CAD-fájlok zökkenőmentes megtekintési élménye nagymértékben növelheti a felhasználók elégedettségét. A GroupDocs.Viewer for .NET hatékony megoldást kínál a CAD-fájlmegtekintési képességek .NET-alkalmazásaiba való erőfeszítés nélküli integrálásához. Ebben az oktatóanyagban végigvezetjük a CAD-rajzok nézeti információinak megszerzésének folyamatán a GroupDocs.Viewer for .NET használatával.
+A szoftverfejlesztés világában a CAD-rajzok hatékony kezelése kulcsfontosságú. Akár építészek, mérnökök vagy tervezők számára készít alkalmazásokat, a CAD-fájlok zökkenőmentes megtekintési élménye nagyban növelheti a felhasználói elégedettséget. A GroupDocs.Viewer for .NET hatékony megoldást kínál a CAD-fájlok megtekintési funkcióinak zökkenőmentes integrálására a .NET-alkalmazásokba. Ebben az oktatóanyagban végigvezetjük a CAD-rajzok megtekintési információinak lekérésének folyamatán a GroupDocs.Viewer for .NET használatával.
 ## Előfeltételek
-Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt belemerülnénk az oktatóanyagba, győződjünk meg arról, hogy a következő előfeltételekkel rendelkezünk:
 ### 1. Telepítse a GroupDocs.Viewer for .NET programot
- Mindenekelőtt telepítenie kell a GroupDocs.Viewer for .NET programot a fejlesztői környezetébe. A legújabb verziót letöltheti a[GroupDocs webhely](https://releases.groupdocs.com/viewer/net/).
-### 2. A .NET-keretrendszer alapjai
-A .NET keretrendszer és a C# programozási nyelv ismerete elengedhetetlen az oktatóanyag követéséhez.
-### 3. Fejlesztői környezet létrehozása
-Győződjön meg arról, hogy a Visual Studio vagy bármely más .NET-kompatibilis IDE fejlesztőkörnyezete be van állítva.
+Először is, telepítenie kell a GroupDocs.Viewer for .NET programot a fejlesztői környezetébe. A legújabb verziót letöltheti innen: [GroupDocs weboldal](https://releases.groupdocs.com/viewer/net/).
+### 2. A .NET keretrendszer alapvető ismerete
+A .NET keretrendszer és a C# programozási nyelv ismerete elengedhetetlen a bemutató követéséhez.
+### 3. Fejlesztői környezet beállítása
+Győződjön meg arról, hogy rendelkezik egy Visual Studio vagy más .NET-kompatibilis IDE fejlesztői környezettel.
 
 ## Névterek importálása
-A C# projektben importálja a szükséges névtereket a GroupDocs.Viewer funkcióinak használatához.
+A C# projektedben importáld a szükséges névtereket a GroupDocs.Viewer funkcióinak használatához.
 
 ```csharp
 using System;
@@ -29,27 +29,27 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-## 1. lépés: Adja meg a Nézet információs beállításait
+## 1. lépés: Nézetinformációs beállítások meghatározása
 ```csharp
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
 ```
- Ebben a lépésben inicializáljuk a példányt`ViewInfoOptions` a nézetinformációk lekérésének beállításához. Használjuk`ForHtmlView()` metódus annak jelzésére, hogy információkat szeretnénk lekérni a HTML nézethez.
-## 2. lépés: Konfigurálja a CAD renderelési beállításokat
+Ebben a lépésben inicializálunk egy példányt a következőből: `ViewInfoOptions` a nézetinformációk lekérésének beállításai megadásához. Használjuk `ForHtmlView()` metódus, amely jelzi, hogy HTML nézethez szeretnénk információkat lekérni.
+## 2. lépés: CAD renderelési beállítások konfigurálása
 ```csharp
 viewInfoOptions.CadOptions.RenderLayouts = true;
 ```
- Tessék, beállítjuk`RenderLayouts` tulajdonát`true` hogy tartalmazza az összes elrendezést. Ez biztosítja, hogy a CAD-fájlon belüli összes elrendezés megtörténik.
-## 3. lépés: CAD nézet információinak lekérése
+Itt állítjuk be `RenderLayouts` ingatlan `true` hogy az összes elrendezést tartalmazza. Ez biztosítja, hogy a CAD fájlban lévő összes elrendezés megjelenjen.
+## 3. lépés: CAD nézet információk lekérése
 ```csharp
 CadViewInfo info = viewer.GetViewInfo(viewInfoOptions) as CadViewInfo;
 ```
- Hívjuk`GetViewInfo()` metódus a néző objektumon, átadva a`viewInfoOptions` paraméterként a CAD-fájl nézeti információinak lekéréséhez. A visszaküldöttet leadtuk`ViewInfo` tiltakozni`CadViewInfo` típus.
-## 4. lépés: A dokumentumtípus és az oldalszám megjelenítése
+Hívjuk `GetViewInfo()` metódus a viewer objektumon, átadva a `viewInfoOptions` paraméterként a CAD fájl nézetinformációinak lekéréséhez. A visszaadott értéket konvertáljuk `ViewInfo` kifogásol `CadViewInfo` típus.
+## 4. lépés: Dokumentumtípus és oldalszám megjelenítése
 ```csharp
 Console.WriteLine("Document type is: " + info.FileType);
 Console.WriteLine("Pages count: " + info.Pages.Count);
 ```
-Ebben a lépésben kinyomtatjuk a konzolra a dokumentum típusát és a CAD fájl teljes oldalszámát.
+Ebben a lépésben kinyomtatjuk a dokumentum típusát és a CAD fájlban található oldalak teljes számát a konzolra.
 ## 5. lépés: Elrendezések és rétegek megjelenítése
 ```csharp
 Console.WriteLine("\nLayouts:");
@@ -59,18 +59,18 @@ Console.WriteLine("\nLayers:");
 foreach (Layer layer in info.Layers)
     Console.WriteLine(layer);
 ```
-Végül ismételjük a CAD-fájlból letöltött elrendezéseket és rétegeket, és kinyomtatjuk a konzolra.
+Végül végigmegyünk a CAD fájlból kinyert elrendezéseken és rétegeken, és kinyomtatjuk azokat a konzolra.
 
 ## Következtetés
-Az oktatóanyag követésével megtanulta, hogyan használhatja a GroupDocs.Viewer for .NET alkalmazást a CAD-rajzok nézeti információinak zökkenőmentes megszerzéséhez. Ennek a képességnek a .NET-alkalmazásaiba való integrálása jelentősen javíthatja a felhasználói élményt és egyszerűsítheti a CAD-fájlok kezelését.
+Ezzel az oktatóanyaggal megtanulta, hogyan használhatja a GroupDocs.Viewer for .NET programot a CAD-rajzok megtekintési információinak zökkenőmentes lekéréséhez. Ennek a funkciónak a .NET-alkalmazásokba való integrálása jelentősen javíthatja a felhasználói élményt és egyszerűsítheti a CAD-fájlok kezelését.
 ## GYIK
 ### K: A GroupDocs.Viewer for .NET kompatibilis az összes CAD fájlformátummal?
-A GroupDocs.Viewer for .NET különféle CAD-fájlformátumokat támogat, beleértve a DWG-t, DXF-et, DWF-et és még sok mást.
-### K: Testreszabhatom a CAD-fájlok renderelési beállításait?
-Igen, igényei szerint testreszabhatja a megjelenítési beállításokat, például az elrendezéseket, a rétegeket és a kimeneti formátumokat.
-### K: Elérhető ingyenes próbaverzió a GroupDocs.Viewer for .NET számára?
-Igen, elérheti a GroupDocs.Viewer for .NET ingyenes próbaverzióját a webhelyről, hogy a vásárlás előtt felfedezze annak funkcióit.
-### K: Milyen gyakran adnak ki frissítéseket a GroupDocs.Viewer for .NET számára?
-GroupDocs rendszeresen ad ki frissítéseket és fejlesztéseket, hogy biztosítsa a kompatibilitást a legújabb CAD fájlformátumokkal és javítsa az általános teljesítményt.
-### K: Hol kérhetek támogatást vagy segítséget a GroupDocs.Viewer for .NET-hez kapcsolódóan?
-Felkeresheti a GroupDocs.Viewer fórumot, vagy kapcsolatba léphet a támogatással bármilyen kérdéssel, technikai segítséggel vagy hibaelhárítással kapcsolatban.
+GroupDocs.Viewer for .NET számos CAD fájlformátumot támogat, beleértve a DWG, DXF, DWF és sok más formátumot.
+### K: Testreszabhatom a CAD fájlok renderelési beállításait?
+Igen, testreszabhatja a renderelési beállításokat, például az elrendezéseket, a rétegeket és a kimeneti formátumokat az igényei szerint.
+### K: Van elérhető ingyenes próbaverzió a GroupDocs.Viewer for .NET-hez?
+Igen, a weboldalon ingyenesen kipróbálhatja a GroupDocs.Viewer for .NET próbaverzióját, hogy vásárlás előtt felfedezhesse a funkcióit.
+### K: Milyen gyakran jelennek meg frissítések a GroupDocs.Viewer for .NET-hez?
+A GroupDocs rendszeresen ad ki frissítéseket és fejlesztéseket a legújabb CAD fájlformátumokkal való kompatibilitás biztosítása és az általános teljesítmény javítása érdekében.
+### K: Hol kérhetek támogatást vagy segítséget a GroupDocs.Viewer for .NET programmal kapcsolatban?
+Bármilyen kérdéssel, technikai segítséggel vagy hibaelhárítással kapcsolatban felkeresheted a GroupDocs.Viewer fórumot, vagy kapcsolatba léphetsz az ügyfélszolgálattal.

@@ -1,24 +1,24 @@
 ---
-title: Uzyskaj informacje o wyświetlaniu dokumentów projektu Microsoft
-linktitle: Uzyskaj informacje o wyświetlaniu dokumentów projektu Microsoft
-second_title: GroupDocs.Viewer API .NET
-description: Zapoznaj się z obszernym samouczkiem na temat wykorzystania programu Groupdocs.Viewer dla platformy .NET do łatwego pobierania informacji o widoku dokumentów programu Microsoft Project.
-weight: 10
-url: /pl/net/rendering-ms-project-documents/get-view-info-ms-project/
+"description": "Zapoznaj się z kompleksowym samouczkiem dotyczącym wykorzystania Groupdocs.Viewer dla platformy .NET w celu łatwego pobierania informacji o widoku dokumentów programu Microsoft Project."
+"linktitle": "Uzyskaj informacje o widoku dla dokumentów Microsoft Project"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Uzyskaj informacje o widoku dla dokumentów Microsoft Project"
+"url": "/pl/net/rendering-ms-project-documents/get-view-info-ms-project/"
+"weight": 10
 ---
 
-# Uzyskaj informacje o wyświetlaniu dokumentów projektu Microsoft
+# Uzyskaj informacje o widoku dla dokumentów Microsoft Project
 
 ## Wstęp
-dziedzinie rozwiązań do zarządzania i przeglądania dokumentów Groupdocs.Viewer dla .NET wyróżnia się jako wszechstronne i solidne narzędzie. Niezależnie od tego, czy jesteś programistą chcącym zintegrować możliwości przeglądania dokumentów z aplikacjami .NET, czy entuzjastą pragnącym poznać jego funkcjonalności, ten samouczek poprowadzi Cię przez proces wykorzystania Groupdocs.Viewer dla .NET do pobierania informacji o widoku dokumentów Microsoft Project .
-## Warunki wstępne
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
-1. Podstawowe zrozumienie .NET Framework: Znajomość .NET Framework pomoże w zrozumieniu procesu integracji.
-2.  Instalacja Groupdocs.Viewer dla .NET: Pobierz i zainstaluj Groupdocs.Viewer dla .NET z[strona internetowa](https://releases.groupdocs.com/viewer/net/).
-3. Konfiguracja środowiska programistycznego: Skonfiguruj środowisko programistyczne z niezbędnymi narzędziami, takimi jak Visual Studio do kodowania.
+dziedzinie rozwiązań do zarządzania dokumentami i przeglądania Groupdocs.Viewer for .NET wyróżnia się jako wszechstronne i solidne narzędzie. Niezależnie od tego, czy jesteś deweloperem, który chce zintegrować możliwości przeglądania dokumentów ze swoimi aplikacjami .NET, czy entuzjastą pragnącym poznać ich funkcjonalności, ten samouczek przeprowadzi Cię przez proces wykorzystania Groupdocs.Viewer for .NET do pobierania informacji o przeglądaniu dokumentów Microsoft Project.
+## Wymagania wstępne
+Zanim przejdziesz do samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
+1. Podstawowa znajomość platformy .NET Framework: Znajomość platformy .NET Framework pomoże w zrozumieniu procesu integracji.
+2. Instalacja Groupdocs.Viewer dla .NET: Pobierz i zainstaluj Groupdocs.Viewer dla .NET z [strona internetowa](https://releases.groupdocs.com/viewer/net/).
+3. Konfiguracja środowiska programistycznego: Skonfiguruj środowisko programistyczne za pomocą niezbędnych narzędzi, np. Visual Studio, do kodowania.
 
 ## Importowanie niezbędnych przestrzeni nazw
-Aby rozpocząć, zaimportuj wymagane przestrzenie nazw do projektu .NET. Te przestrzenie nazw ułatwiają komunikację z funkcjami Groupdocs.Viewer for .NET.
+Na początek zaimportuj wymagane przestrzenie nazw do swojego projektu .NET. Te przestrzenie nazw ułatwiają komunikację z Groupdocs.Viewer dla funkcjonalności .NET.
 
 ```csharp
 using System;
@@ -26,21 +26,21 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-Groupdocs.Viewer dla .NET zapewnia intuicyjny sposób pobierania informacji o widoku dokumentów Microsoft Project. Aby to osiągnąć, wykonaj dokładnie następujące kroki:
-## Krok 1: Zainicjuj obiekt przeglądarki
+Groupdocs.Viewer dla .NET zapewnia intuicyjny sposób pobierania informacji o widoku dla dokumentów Microsoft Project. Aby to osiągnąć, wykonaj dokładnie następujące kroki:
+## Krok 1: Zainicjuj obiekt Viewer
 ```csharp
 using (Viewer viewer = new Viewer("path/to/your/MicrosoftProjectDocument.mpp"))
 {
     // Kod ciąg dalszy...
 }
 ```
- W tym kroku wymień`"path/to/your/MicrosoftProjectDocument.mpp"` z rzeczywistą ścieżką do dokumentu Microsoft Project.
+W tym kroku zastąp `"path/to/your/MicrosoftProjectDocument.mpp"` z rzeczywistą ścieżką do dokumentu Microsoft Project.
 ## Krok 2: Pobierz informacje o widoku
 ```csharp
 ProjectManagementViewInfo info = viewer.GetViewInfo(
     ViewInfoOptions.ForHtmlView()) as ProjectManagementViewInfo;
 ```
- Tutaj korzystamy z`GetViewInfo()` metoda pobierania informacji o widoku dla określonego dokumentu Microsoft Project. Określamy`ViewInfoOptions.ForHtmlView()` aby uzyskać informacje o widoku dla widoku HTML.
+Tutaj wykorzystujemy `GetViewInfo()` metoda pobierania informacji o widoku dla określonego dokumentu Microsoft Project. Określamy `ViewInfoOptions.ForHtmlView()` aby uzyskać informacje o widoku HTML.
 ## Krok 3: Wyświetl informacje o widoku
 ```csharp
 Console.WriteLine("Document type is: " + info.FileType);
@@ -48,33 +48,33 @@ Console.WriteLine("Pages count: " + info.Pages.Count);
 Console.WriteLine("Project start date: {0}", info.StartDate);
 Console.WriteLine("Project end date: {0}", info.EndDate);
 ```
-Ten krok obejmuje wyświetlenie pobranych informacji o widoku, w tym typu dokumentu, liczby stron, daty rozpoczęcia i daty zakończenia projektu.
-## Krok 4: Wniosek
+Ten krok obejmuje wyświetlenie pobranych informacji o widoku, obejmujących m.in. typ dokumentu, liczbę stron, datę rozpoczęcia projektu oraz datę zakończenia projektu.
+## Krok 4: Wnioski
 ```csharp
 Console.WriteLine("\nView info retrieved successfully.");
 ```
-Na koniec kończymy proces wyświetlając komunikat o powodzeniu wskazujący, że informacje o widoku zostały pomyślnie pobrane.
+Na koniec procesu wyświetlany jest komunikat informujący o powodzeniu pobierania informacji o widoku.
 
 ## Wniosek
-tym samouczku omówiliśmy, jak używać Groupdocs.Viewer dla platformy .NET do pobierania informacji o widoku dokumentów Microsoft Project. Wykonując opisane kroki, możesz bezproblemowo zintegrować tę funkcjonalność z aplikacjami .NET, zwiększając możliwości zarządzania dokumentami.
-## Często zadawane pytania
+W tym samouczku zbadaliśmy, jak wykorzystać Groupdocs.Viewer dla .NET do pobierania informacji o widoku dla dokumentów Microsoft Project. Postępując zgodnie z opisanymi krokami, możesz bezproblemowo zintegrować tę funkcjonalność z aplikacjami .NET, zwiększając możliwości zarządzania dokumentami.
+## Najczęściej zadawane pytania
 
 ### Czy Groupdocs.Viewer dla .NET jest kompatybilny ze wszystkimi wersjami platformy .NET?
 
-Tak, Groupdocs.Viewer dla .NET jest kompatybilny z różnymi wersjami platformy .NET, zapewniając programistom elastyczność.
+Tak, Groupdocs.Viewer dla .NET jest kompatybilny z różnymi wersjami platformy .NET, zapewniając deweloperom elastyczność.
 
-### Czy mogę dostosować proces wyszukiwania informacji o widoku zgodnie z wymaganiami mojej aplikacji?
+### Czy mogę dostosować proces wyszukiwania informacji do wymagań mojej aplikacji?
 
-Z pewnością! Groupdocs.Viewer dla .NET oferuje szerokie opcje dostosowywania, aby dostosować proces pobierania do konkretnych potrzeb.
+Oczywiście! Groupdocs.Viewer dla .NET oferuje rozbudowane opcje dostosowywania, aby dostosować proces pobierania do Twoich konkretnych potrzeb.
 
-### Czy Groupdocs.Viewer dla .NET obsługuje inne formaty dokumentów oprócz dokumentów Microsoft Project?
+### Czy Groupdocs.Viewer dla platformy .NET obsługuje inne formaty dokumentów niż dokumenty Microsoft Project?
 
-Absolutnie. Groupdocs.Viewer dla .NET obsługuje szeroką gamę formatów dokumentów, zapewniając wszechstronność możliwości przeglądania dokumentów.
+Oczywiście. Groupdocs.Viewer dla .NET obsługuje szeroki zakres formatów dokumentów, zapewniając wszechstronność w możliwościach przeglądania dokumentów.
 
-### Czy istnieje forum społecznościowe lub platforma pomocy technicznej, gdzie mogę uzyskać pomoc dotyczącą programu Groupdocs.Viewer dla platformy .NET?
+### Czy istnieje forum społecznościowe lub platforma wsparcia, na której mogę szukać pomocy w zakresie Groupdocs.Viewer dla platformy .NET?
 
- Tak, możesz odwiedzić[Forum Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) o wsparcie i wskazówki społeczności.
+Tak, możesz odwiedzić [Forum Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) w celu uzyskania wsparcia i wskazówek ze strony społeczności.
 
-### Czy przed zakupem mogę zapoznać się z funkcjonalnościami Groupdocs.Viewer dla .NET?
+### Czy mogę zapoznać się z funkcjonalnościami Groupdocs.Viewer dla platformy .NET przed zakupem?
 
- Oczywiście! Możesz skorzystać z bezpłatnego okresu próbnego w witrynie[strona internetowa](https://releases.groupdocs.com/) aby poznać funkcje i możliwości Groupdocs.Viewer dla .NET.
+Oczywiście! Możesz skorzystać z bezpłatnego okresu próbnego [strona internetowa](https://releases.groupdocs.com/) aby zapoznać się z funkcjami i możliwościami Groupdocs.Viewer dla .NET.

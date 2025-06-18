@@ -1,35 +1,35 @@
 ---
-title: Renderelésspecifikus CAD-formátumok (CF2)
-linktitle: Renderelésspecifikus CAD-formátumok (CF2)
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan lehet meghatározott CAD-formátumokat, például CF2-t HTML-, JPG-, PNG- és PDF-formátumba renderelni a Groupdocs.Viewer for .NET segítségével.
-weight: 12
-url: /hu/net/rendering-cad-drawings/render-specific-cad-formats/
+"description": "Ismerje meg, hogyan renderelhet bizonyos CAD formátumokat, például CF2-t HTML, JPG, PNG és PDF formátumba a Groupdocs.Viewer for .NET segítségével."
+"linktitle": "Renderelés-specifikus CAD formátumok (CF2)"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Renderelés-specifikus CAD formátumok (CF2)"
+"url": "/hu/net/rendering-cad-drawings/render-specific-cad-formats/"
+"weight": 12
 ---
 
-# Renderelésspecifikus CAD-formátumok (CF2)
+# Renderelés-specifikus CAD formátumok (CF2)
 
 ## Bevezetés
-Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet adott CAD-formátumokat előállítani a Groupdocs.Viewer for .NET segítségével. A Groupdocs.Viewer egy hatékony dokumentumnézegető API, amely lehetővé teszi a fejlesztők számára, hogy több mint 170 dokumentumtípust jelenítsenek meg alkalmazásaikban külső szoftver telepítése nélkül. Konkrétan a CAD formátumok, például a CF2 megjelenítésére fogunk összpontosítani különféle kimeneti formátumokká, például HTML, JPG, PNG és PDF.
+Ebben az oktatóanyagban azt vizsgáljuk meg, hogyan lehet bizonyos CAD formátumokat megjeleníteni a Groupdocs.Viewer for .NET segítségével. A Groupdocs.Viewer egy hatékony dokumentummegjelenítő API, amely lehetővé teszi a fejlesztők számára, hogy több mint 170 dokumentumtípust jelenítsenek meg alkalmazásaikban külső szoftvertelepítés nélkül. Konkrétan a CAD formátumok, például a CF2, különböző kimeneti formátumokba, például HTML, JPG, PNG és PDF formátumba történő renderelésére fogunk összpontosítani.
 ## Előfeltételek
-Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- A Visual Studio telepítve van a rendszerére.
--  Groupdocs.Viewer .NET SDK-hoz. Letöltheti innen[itt](https://releases.groupdocs.com/viewer/net/).
+Mielőtt belemerülnénk az oktatóanyagba, győződjünk meg arról, hogy a következő előfeltételekkel rendelkezünk:
+- Visual Studio telepítve a rendszeredre.
+- Groupdocs.Viewer .NET SDK-hoz. Letöltheti innen: [itt](https://releases.groupdocs.com/viewer/net/).
 - C# programozási nyelv alapismerete.
 ## Névterek importálása
-Először is importáljuk a CAD formátumok rendereléséhez szükséges névtereket.
+Először importáljuk a CAD formátumok rendereléséhez szükséges névtereket.
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
 Most bontsuk le az egyes példákat több lépésre:
-## Renderelje le a CF2-t HTML-be
-### 1. lépés: Határozza meg a kimeneti könyvtárat, ahová a renderelt HTML mentésre kerül.
+## CF2 renderelése HTML-ként
+### 1. lépés: Adja meg a kimeneti könyvtárat, ahová a renderelt HTML-t menteni fogja.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-### 2. lépés: Határozza meg a HTML-kimenet fájlútvonal-formátumát.
+### 2. lépés: Adja meg a HTML-kimenet fájlelérési útvonalának formátumát.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.html");
 ```
@@ -38,13 +38,13 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.html");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    // Adjon meg további renderelési beállításokat, ha szükséges
+    // Szükség esetén további renderelési beállítások megadása
     // options.CadOptions = CadOptions.ForRenderingByScaleFactor(0.7f);
     viewer.View(options);
 }
 ```
-## Renderje le a CF2-t JPG formátumba
-### 1. lépés: Határozza meg a fájl elérési út formátumát a JPG kimenethez.
+## CF2 renderelése JPG-vé
+### 1. lépés: Adja meg a JPG kimenet fájlelérési formátumát.
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.jpg");
 ```
@@ -53,14 +53,14 @@ pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
 {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
-    // Adjon meg további renderelési beállításokat, ha szükséges
+    // Szükség esetén további renderelési beállítások megadása
     // options.CadOptions = CadOptions.ForRenderingByScaleFactor(0.7f);
     viewer.View(options);
 }
 ```
-## Renderje le a CF2-t PNG-re
+## CF2 renderelése PNG-vé
 
-### 1. lépés: Határozza meg a PNG-kimenet fájlútvonal-formátumát.
+### 1. lépés: Adja meg a PNG kimenet fájlelérési formátumát.
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.png");
 ```
@@ -69,13 +69,13 @@ pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.png");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
 {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    // Adjon meg további renderelési beállításokat, ha szükséges
+    // Szükség esetén további renderelési beállítások megadása
     // options.CadOptions = CadOptions.ForRenderingByScaleFactor(0.7f);
     viewer.View(options);
 }
 ```
-## Renderje le a CF2-t PDF-be
-### 1. lépés: Határozza meg a PDF kimenet fájlútvonal-formátumát.
+## CF2 renderelése PDF-be
+### 1. lépés: Adja meg a PDF kimenet fájlelérési útvonalának formátumát.
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.pdf");
 ```
@@ -84,22 +84,22 @@ pageFilePathFormat = Path.Combine(outputDirectory, "CF2_result.pdf");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CF2))
 {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-    // Adjon meg további renderelési beállításokat, ha szükséges
+    // Szükség esetén további renderelési beállítások megadása
     // options.CadOptions = CadOptions.ForRenderingByScaleFactor(0.7f);
     viewer.View(options);
 }
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet meghatározott CAD-formátumokat, például CF2-t előállítani a Groupdocs.Viewer for .NET használatával. A lépésenkénti útmutató követésével könnyedén integrálhatja a dokumentum-megjelenítési képességeket .NET-alkalmazásaiba.
+Ebben az oktatóanyagban megtanultuk, hogyan lehet bizonyos CAD formátumokat, például a CF2-t renderelni a Groupdocs.Viewer for .NET segítségével. A lépésről lépésre haladó útmutató követésével könnyedén integrálhatja a dokumentumrenderelési képességeket .NET alkalmazásaiba.
 ## GYIK
-### A Groupdocs.Viewer képes a CF2-n kívül más CAD-formátumokat is megjeleníteni?
-Igen, a Groupdocs.Viewer a CAD formátumok széles skáláját támogatja, beleértve a DWG-t, DXF-et, DGN-t stb.
-### A Groupdocs.Viewer alkalmas dokumentumok webes alkalmazásokban történő megjelenítésére?
-Természetesen a Groupdocs.Viewer zökkenőmentesen integrálható webalkalmazásokba a dokumentumok közvetlen böngészőben történő megjelenítéséhez.
-### A Groupdocs.Viewernek szüksége van külső függőségekre a megjelenítéshez?
+### A Groupdocs.Viewer képes a CF2-n kívül más CAD formátumokat is megjeleníteni?
+Igen, a Groupdocs.Viewer számos CAD formátumot támogat, beleértve a DWG, DXF, DGN és egyebeket.
+### Alkalmas a Groupdocs.Viewer dokumentumok webes alkalmazásokban történő megjelenítésére?
+A Groupdocs.Viewer abszolút zökkenőmentesen integrálható webes alkalmazásokba, így dokumentumokat jeleníthet meg közvetlenül a böngészőben.
+### A Groupdocs.Viewer igényel külső függőségeket a rendereléshez?
 Nem, a Groupdocs.Viewer egy önálló API, és nem igényel semmilyen külső függőséget vagy szoftvertelepítést.
-### Testreszabhatom a renderelési beállításokat igényeim szerint?
-Igen, a Groupdocs.Viewer különféle megjelenítési lehetőségeket kínál, amelyek testreszabhatók az Ön egyedi igényei szerint.
-### Elérhető a Groupdocs.Viewer próbaverziója?
- Igen, beszerezheti a Groupdocs.Viewer ingyenes próbaverzióját a webhelyről[itt](https://releases.groupdocs.com/).
+### Testreszabhatom a renderelési beállításokat az igényeim szerint?
+Igen, a Groupdocs.Viewer különféle renderelési beállításokat kínál, amelyek testreszabhatók az Ön igényeinek megfelelően.
+### Van elérhető próbaverzió a Groupdocs.Viewerhez?
+Igen, letöltheti a Groupdocs.Viewer ingyenes próbaverzióját innen: [itt](https://releases.groupdocs.com/).

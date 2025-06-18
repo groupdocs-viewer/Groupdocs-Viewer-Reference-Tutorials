@@ -1,23 +1,23 @@
 ---
-title: Sorok és oszlopok fejléceinek megjelenítése
-linktitle: Sorok és oszlopok fejléceinek megjelenítése
-second_title: GroupDocs.Viewer .NET API
-description: Javítsa a dokumentumok megtekintését .NET-ben! Ismerje meg a sorok és oszlopok fejléceinek megjelenítését a GroupDocs.Viewer for .NET segítségével. Fedezze fel a HTML, JPG, PNG és PDF kimeneteket.
-weight: 18
-url: /hu/net/spreadsheet-rendering-options/render-row-column-headings/
+"description": "Javítsa a dokumentumok megtekintését .NET-ben! Tanulja meg, hogyan jelenítheti meg a sor- és oszlopfejléceket a GroupDocs.Viewer for .NET segítségével. Fedezze fel a HTML, JPG, PNG és PDF kimeneteket."
+"linktitle": "Sor- és oszlopfejlécek megjelenítése"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Sor- és oszlopfejlécek megjelenítése"
+"url": "/hu/net/spreadsheet-rendering-options/render-row-column-headings/"
+"weight": 18
 ---
 
-# Sorok és oszlopok fejléceinek megjelenítése
+# Sor- és oszlopfejlécek megjelenítése
 
 ## Bevezetés
-Szeretné javítani a dokumentummegtekintési élményt .NET-alkalmazásokban? A GroupDocs.Viewer for .NET segítségével zökkenőmentesen jelenítheti meg a sorok és oszlopok fejléceit a táblázatfájljaiból. Ebben az oktatóanyagban végigvezetjük a sor- és oszlopfejlécek különböző kimeneti formátumok (például HTML, JPG, PNG és PDF) használatával történő megjelenítésének folyamatán.
+Szeretnéd javítani a dokumentummegtekintési élményedet .NET alkalmazásokban? A GroupDocs.Viewer for .NET segítségével zökkenőmentesen megjelenítheted a sor- és oszlopfejléceket a táblázatfájljaidból. Ebben az oktatóanyagban végigvezetünk a sor- és oszlopfejlécek megjelenítésének folyamatán különböző kimeneti formátumok, például HTML, JPG, PNG és PDF használatával.
 ## Előfeltételek
-Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
-- Telepített GroupDocs.Viewer for .NET könyvtár.
+Mielőtt belemerülnénk az oktatóanyagba, győződjünk meg arról, hogy a következő előfeltételek teljesülnek:
+- Telepítettem a GroupDocs.Viewer for .NET könyvtárat.
 - Egy minta XLSX fájl tesztelési célokra.
 - C# és .NET fejlesztési ismeretek.
 ## Névterek importálása
-Győződjön meg arról, hogy a C#-kódban importálja a GroupDocs.Viewer használatához szükséges névtereket:
+C# kódban ügyeljen arra, hogy importálja a GroupDocs.Viewer használatához szükséges névtereket:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
@@ -28,7 +28,7 @@ using System.IO;
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## 2. Renderelés HTML-be
+## 2. HTML-re renderelés
 ```csharp
 using (Viewer viewer = new Viewer("SAMPLE.XLSX"))
 {
@@ -37,7 +37,7 @@ using (Viewer viewer = new Viewer("SAMPLE.XLSX"))
     viewer.View(options, 1, 2, 3);
 }
 ```
-## 3. Renderelje le JPG formátumban
+## 3. JPG formátumba renderelés
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
@@ -47,7 +47,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
     viewer.View(options, 1, 2, 3);
 }
 ```
-## 4. Renderelés PNG formátumban
+## 4. Renderelés PNG formátumba
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.png");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
@@ -68,15 +68,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
 }
 ```
 ## Következtetés
-Gratulálunk! Sikeresen megjelenítette a sorok és oszlopok fejléceit a táblázatból a GroupDocs.Viewer for .NET segítségével. Kísérletezzen különböző kimeneti formátumokkal, hogy megfeleljen az alkalmazás igényeinek.
+Gratulálunk! Sikeresen megjelenítette a táblázat sor- és oszlopfejléceit a GroupDocs.Viewer for .NET segítségével. Kísérletezzen különböző kimeneti formátumokkal az alkalmazása igényeinek megfelelően.
 ## Gyakran Ismételt Kérdések
-### K: Testreszabhatom a megjelenített dokumentumok kimeneti könyvtárát?
- V: Igen, beállíthatja a kívánt kimeneti könyvtárat abban a kódban, ahol a`outputDirectory` változó van definiálva.
-### K: A GroupDocs.Viewer kompatibilis más táblázatformátumokkal?
-V: Igen, a GroupDocs.Viewer különféle táblázatformátumokat támogat, beleértve az XLS-t, XLSX-et, CSV-t és még sok mást.
+### K: Testreszabhatom a renderelt dokumentumok kimeneti könyvtárát?
+V: Igen, beállíthatja a kívánt kimeneti könyvtárat a kódban, ahol a `outputDirectory` változó definiálva van.
+### K: A GroupDocs.Viewer kompatibilis más táblázatkezelő formátumokkal?
+V: Igen, a GroupDocs.Viewer különféle táblázatformátumokat támogat, beleértve az XLS, XLSX, CSV és egyebeket.
 ### K: Hogyan kezelhetem a kivételeket a renderelési folyamat során?
-V: Megvalósíthat try-catch blokkokat a kivételek kezelésére és a megfelelő üzenetek naplózására vagy megjelenítésére a felhasználó számára.
-### K: Vannak-e licenckövetelmények a GroupDocs.Viewer alkalmazásban való használatához?
-V: Igen, érvényes engedély szükséges. Kaphat ideiglenes licencet tesztelési célokra, vagy vásárolhat teljes licencet a gyártáshoz.
-### K: Hol találhatok további támogatást vagy közösségi megbeszéléseket?
- V: Látogassa meg a[GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) támogatásért és megbeszélésekért.
+V: A try-catch blokkokat implementálhatja a kivételek kezelésére, valamint a felhasználónak küldött megfelelő üzenetek naplózására vagy megjelenítésére.
+### K: Vannak-e licencelési követelmények a GroupDocs.Viewer használatához az alkalmazásomban?
+V: Igen, érvényes licencre van szüksége. Tesztelési célokra ideiglenes licencet szerezhet, vagy teljes licencet vásárolhat éles környezetbe.
+### K: Hol találok további támogatást vagy közösségi beszélgetéseket?
+V: Látogassa meg a [GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) támogatásért és megbeszélésekért.

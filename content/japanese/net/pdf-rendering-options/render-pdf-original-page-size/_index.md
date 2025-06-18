@@ -1,27 +1,30 @@
 ---
-title: 元のページ サイズで PDF をレンダリングする
-linktitle: 元のページ サイズで PDF をレンダリングする
-second_title: GroupDocs.Viewer .NET API
-description: GroupDocs.Viewer for .NET を使用して PDF を元のページ サイズでレンダリングする方法を学びます。ステップバイステップのガイドに従って、この機能をシームレスに統合してください。
-weight: 17
-url: /ja/net/pdf-rendering-options/render-pdf-original-page-size/
+"description": "GroupDocs.Viewer for .NET を使用して、PDF を元のページサイズでレンダリングする方法を学びましょう。ステップバイステップのガイドに従って、この機能をシームレスに統合しましょう。"
+"linktitle": "元のページサイズでPDFをレンダリングする"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "元のページサイズでPDFをレンダリングする"
+"url": "/ja/net/pdf-rendering-options/render-pdf-original-page-size/"
+"weight": 17
 ---
 
-# 元のページ サイズで PDF をレンダリングする
+# 元のページサイズでPDFをレンダリングする
 
 ## 導入
-.NET 開発の分野では、GroupDocs.Viewer は、PDF を含むさまざまなドキュメント形式をレンダリングするための強力なツールとして際立っています。ドキュメント処理における一般的な要件の 1 つは、元のページ サイズを維持しながら PDF をレンダリングすることです。このタスクをシームレスに実行するには、GroupDocs.Viewer for .NET とその機能を包括的に理解する必要があります。
+.NET開発において、GroupDocs.ViewerはPDFを含む様々なドキュメント形式をレンダリングするための強力なツールとして際立っています。ドキュメント処理において、PDFを元のページサイズを維持しながらレンダリングすることはよくある要件の一つです。このタスクをシームレスに実現するには、GroupDocs.Viewer for .NETとその機能について包括的に理解する必要があります。
+
+![GroupDocs.Viewer .NET で元のページ サイズで PDF をレンダリングする](/viewer/pdf-rendering-options/render-pdf-with-original-page-size.png)
+
 ## 前提条件
 GroupDocs.Viewer for .NET を使用して元のページ サイズで PDF をレンダリングする前に、次の前提条件が満たされていることを確認してください。
-### 1. .NET 用の GroupDocs.Viewer をインストールします。
-まず、Web サイトから GroupDocs.Viewer ライブラリをダウンロードします。提供されているライブラリから入手できます。[ダウンロードリンク](https://releases.groupdocs.com/viewer/net/)。ドキュメントに記載されているインストール手順に従って、.NET プロジェクトに効果的に統合してください。
+### 1. GroupDocs.Viewer for .NETをインストールする
+まず、ウェブサイトからGroupDocs.Viewerライブラリをダウンロードしてください。ライブラリは提供されている [ダウンロードリンク](https://releases.groupdocs.com/viewer/net/)ドキュメントに記載されているインストール手順に従って、.NET プロジェクトに効果的に統合します。
 ### 2. 開発環境のセットアップ
-.NET 開発用に開発環境がセットアップされていることを確認してください。これには、Visual Studio などの互換性のある IDE のインストールと、C# プログラミングの基本的な理解が含まれます。
-### 3. PDF ドキュメントを入手する
-GroupDocs.Viewer でレンダリングするには、サンプル PDF ドキュメントが必要です。テスト目的には、任意の PDF ドキュメントを使用できます。お持ちでない場合は、さまざまなオンライン ソースからサンプル PDF をダウンロードできます。
+.NET開発用の開発環境がセットアップされていることを確認してください。これには、Visual Studioなどの互換性のあるIDEがインストールされていることと、C#プログラミングの基礎知識が含まれます。
+### 3. PDFドキュメントを入手する
+GroupDocs.Viewerでレンダリングするには、サンプルPDFドキュメントが必要です。テスト目的では任意のPDFドキュメントを使用できます。お持ちでない場合は、様々なオンラインソースからサンプルPDFをダウンロードできます。
 
 ## 名前空間のインポート
-PDF のレンダリングに進む前に、必要な名前空間を C# プロジェクトにインポートすることが重要です。この手順により、GroupDocs.Viewer ライブラリから必要なクラスとメソッドにアクセスできるようになります。
+PDFのレンダリングに進む前に、C#プロジェクトに必要な名前空間をインポートすることが重要です。この手順により、GroupDocs.Viewerライブラリから必要なクラスとメソッドにアクセスできるようになります。
 
 ```csharp
 using System;
@@ -29,18 +32,18 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-前提条件が整い、必要な名前空間がインポートされたので、GroupDocs.Viewer for .NET を使用して元のページ サイズで PDF をレンダリングするプロセスを簡単な手順に分けてみましょう。
-## ステップ 1: 出力ディレクトリを定義する
+前提条件が整い、必要な名前空間がインポートされたので、GroupDocs.Viewer for .NET を使用して元のページ サイズで PDF をレンダリングするプロセスを簡単な手順に分解してみましょう。
+## ステップ1: 出力ディレクトリを定義する
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-レンダリングされたページを保存するディレクトリを必ず指定してください。交換する`"Your Document Directory"`目的のディレクトリのパスに置き換えます。
-## ステップ 2: ページ ファイルのパス形式を定義する
+レンダリングされたページを保存するディレクトリを指定してください。 `"Your Document Directory"` 希望するディレクトリのパスを入力します。
+## ステップ2: ページファイルパスの形式を定義する
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.png");
 ```
-レンダリングされたページ ファイルに名前を付ける形式を設定します。この例では、ページは次の形式のファイル名を持つ PNG 画像として保存されます。`"page_1.png"`, `"page_2.png"`、 等々。
-## ステップ 3: 元のページ サイズで PDF をレンダリングする
+レンダリングされたページファイルの命名形式を設定します。この例では、ページはPNG画像として保存され、ファイル名は次の形式になります。 `"page_1.png"`、 `"page_2.png"`、 等々。
+## ステップ3: 元のページサイズでPDFをレンダリングする
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_Your_PDF_File.pdf"))
 {
@@ -50,23 +53,23 @@ using (Viewer viewer = new Viewer("Path_to_Your_PDF_File.pdf"))
     viewer.View(viewOptions);
 }
 ```
-インスタンス化する`Viewer`オブジェクトを PDF ファイルへのパスに置き換えます。次に、作成します`PngViewOptions`指定されたページ ファイル パス形式で。セット`RenderOriginalPageSize`財産を`true`レンダリング中に元のページ サイズを保持します。
-## ステップ 4: レンダリングされたドキュメントの場所を表示する
+インスタンス化する `Viewer` オブジェクトをPDFファイルへのパスで置き換えます。次に、 `PngViewOptions` 指定されたページファイルパス形式で設定します。 `RenderOriginalPageSize` 財産に `true` レンダリング中に元のページ サイズを維持するためです。
+## ステップ4: レンダリングされたドキュメントの場所を表示する
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-レンダリングが成功したことを示すメッセージを出力し、レンダリングされたページが保存されるディレクトリを指定します。
+レンダリングが成功したことを示すメッセージを出力し、レンダリングされたページが保存されるディレクトリを提供します。
 
 ## 結論
-このチュートリアルで概説されている手順に従えば、GroupDocs.Viewer for .NET を使用して PDF を元のページ サイズでレンダリングするのは簡単なプロセスです。必要な名前空間をインポートし、ステップバイステップのガイドに従うことで、この機能を .NET アプリケーションにシームレスに統合できます。
+GroupDocs.Viewer for .NET を使用してPDFを元のページサイズでレンダリングするのは、このチュートリアルで概説されている手順に従えば簡単です。必要な名前空間をインポートし、ステップバイステップのガイドに従うだけで、この機能を.NETアプリケーションにシームレスに統合できます。
 ## よくある質問
 ### GroupDocs.Viewer は PDF 以外のドキュメント形式をレンダリングできますか?
-はい、GroupDocs.Viewer は、Word、Excel、PowerPoint などを含むさまざまなドキュメント形式のレンダリングをサポートしています。
+はい、GroupDocs.Viewer は、Word、Excel、PowerPoint など、さまざまなドキュメント形式のレンダリングをサポートしています。
 ### GroupDocs.Viewer は .NET Core と互換性がありますか?
-はい、GroupDocs.Viewer は .NET Framework 環境と .NET Core 環境の両方と互換性があります。
+はい、GroupDocs.Viewer は .NET Framework と .NET Core の両方の環境と互換性があります。
 ### レンダリングされたページの出力形式をカスタマイズできますか?
-はい、GroupDocs.Viewer が提供するオプション (さまざまな画像形式の設定やカスタム レンダリング オプションの指定など) を調整することで、出力形式をカスタマイズできます。
-### GroupDocs.Viewer はクラウドベースのドキュメント レンダリングをサポートしていますか?
-はい、GroupDocs.Viewer はクラウドベースのドキュメント レンダリング用の API を提供しており、クラウド ストレージ プロバイダーからドキュメントを直接レンダリングできます。
-### GroupDocs.Viewer に利用できる無料トライアルはありますか?
-はい、提供されているサイトにアクセスすると、無料トライアルで GroupDocs.Viewer を探索できます。[リンク](https://releases.groupdocs.com/).
+はい、さまざまな画像形式の設定やカスタム レンダリング オプションの指定など、GroupDocs.Viewer が提供するオプションを調整することで、出力形式をカスタマイズできます。
+### GroupDocs.Viewer はクラウドベースのドキュメントレンダリングをサポートしていますか?
+はい、GroupDocs.Viewer はクラウドベースのドキュメント レンダリング用の API を提供しており、クラウド ストレージ プロバイダーから直接ドキュメントをレンダリングできます。
+### GroupDocs.Viewer の無料トライアルはありますか?
+はい、GroupDocs.Viewerを無料トライアルで試すことができます。 [リンク](https://releases。groupdocs.com/).

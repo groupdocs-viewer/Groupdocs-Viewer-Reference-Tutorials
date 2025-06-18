@@ -1,20 +1,20 @@
 ---
-title: Rendu des nombres
-linktitle: Rendu des nombres
-second_title: API GroupDocs.Viewer .NET
-description: Découvrez la puissance de Groupdocs.Viewer pour .NET pour restituer les fichiers Numbers de manière transparente. Convertissez en HTML, JPG, PNG et PDF sans effort.
-weight: 15
-url: /fr/net/spreadsheet-rendering-options/rendering-numbers/
+"description": "Découvrez la puissance de Groupdocs.Viewer pour .NET pour un rendu fluide des fichiers Numbers. Convertissez facilement vos fichiers en HTML, JPG, PNG et PDF."
+"linktitle": "Rendu des nombres"
+"second_title": "API .NET GroupDocs.Viewer"
+"title": "Rendu des nombres"
+"url": "/fr/net/spreadsheet-rendering-options/rendering-numbers/"
+"weight": 15
 ---
 
 # Rendu des nombres
 
 ## Introduction
-Bienvenue dans ce didacticiel étape par étape sur le rendu des fichiers Numbers à l'aide de Groupdocs.Viewer pour .NET. Que vous soyez un développeur chevronné ou un débutant, ce guide vous guidera tout au long du processus de conversion de documents Numbers dans différents formats. Groupdocs.Viewer for .NET est un outil puissant qui vous permet d'intégrer de manière transparente des fonctionnalités de visualisation de documents dans vos applications .NET.
-## Conditions préalables
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
+Bienvenue dans ce tutoriel pas à pas sur le rendu de fichiers Numbers avec Groupdocs.Viewer pour .NET. Que vous soyez un développeur expérimenté ou débutant, ce guide vous guidera pas à pas dans la conversion de documents Numbers vers différents formats. Groupdocs.Viewer pour .NET est un outil puissant qui vous permet d'intégrer facilement des fonctionnalités de visualisation de documents à vos applications .NET.
+## Prérequis
+Avant de plonger dans le didacticiel, assurez-vous de disposer des prérequis suivants :
 - Une connaissance pratique du développement C# et .NET.
--  Groupdocs.Viewer pour la bibliothèque .NET installée. Vous pouvez le télécharger[ici](https://releases.groupdocs.com/viewer/net/).
+- Bibliothèque Groupdocs.Viewer pour .NET installée. Vous pouvez la télécharger. [ici](https://releases.groupdocs.com/viewer/net/).
 - Chemin du répertoire de votre document où les fichiers de sortie seront enregistrés.
 ## Importer des espaces de noms
 Dans votre projet C#, assurez-vous d'importer les espaces de noms nécessaires pour utiliser la bibliothèque Groupdocs.Viewer :
@@ -25,13 +25,13 @@ using System.Text;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Étape 1 : configurer le répertoire de sortie
-Avant de commencer le rendu, définissez le répertoire de sortie dans lequel les fichiers convertis seront enregistrés. Remplacez « Votre répertoire de documents » par le chemin réel :
+## Étape 1 : Configurer le répertoire de sortie
+Avant de commencer le rendu, définissez le répertoire de sortie où seront enregistrés les fichiers convertis. Remplacez « Votre répertoire de documents » par le chemin d'accès réel :
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Étape 2 : Rendu au format HTML multipage
-Utilisez le code suivant pour convertir le fichier Numbers en HTML multipage :
+## Étape 2 : Rendu en HTML multipages
+Utilisez le code suivant pour convertir le fichier Numbers en HTML multipages :
 ```csharp
 string pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.html");
 using (Viewer viewer = new Viewer("SAMPLE.NUMBERS"))
@@ -51,7 +51,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
 }
 ```
 ## Étape 4 : Rendu au format PNG
-Transformez le fichier Numbers au format PNG en utilisant le code suivant :
+Transformez le fichier Numbers au format PNG en utilisant le code suivant :
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.png");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
@@ -61,7 +61,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
 }
 ```
 ## Étape 5 : Rendu au format PDF
-Enfin, convertissez le fichier Numbers au format PDF à l'aide du code suivant :
+Enfin, convertissez le fichier Numbers au format PDF en utilisant le code suivant :
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.pdf");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
@@ -70,17 +70,17 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
     viewer.View(options);
 }
 ```
-Toutes nos félicitations! Vous avez réussi à restituer des fichiers Numbers dans différents formats à l'aide de Groupdocs.Viewer pour .NET.
+Félicitations ! Vous avez réussi à convertir des fichiers Numbers en différents formats grâce à Groupdocs.Viewer pour .NET.
 ## Conclusion
-Dans ce didacticiel, nous avons couvert les bases du rendu des fichiers Numbers à l'aide de Groupdocs.Viewer pour .NET. Cette puissante bibliothèque offre une intégration transparente pour afficher et convertir des documents dans vos applications .NET.
+Dans ce tutoriel, nous avons abordé les bases du rendu de fichiers Numbers avec Groupdocs.Viewer pour .NET. Cette puissante bibliothèque offre une intégration transparente pour la visualisation et la conversion de documents dans vos applications .NET.
 ## FAQ
-### Puis-je utiliser Groupdocs.Viewer pour .NET avec d’autres types de documents ?
-Oui, Groupdocs.Viewer prend en charge un large éventail de formats de documents, notamment Word, Excel, PDF, etc.
-### Une licence temporaire est-elle disponible à des fins de test ?
- Oui, vous pouvez obtenir une licence temporaire[ici](https://purchase.groupdocs.com/temporary-license/) pour tester.
-### Où puis-je trouver de l’assistance pour Groupdocs.Viewer pour .NET ?
- Visiter le[Forum Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) pour de l'aide et des discussions.
-### Comment puis-je acheter la version complète de Groupdocs.Viewer pour .NET ?
- Vous pouvez acheter la version complète[ici](https://purchase.groupdocs.com/buy).
-### Existe-t-il une version d'essai gratuite disponible ?
- Oui, vous pouvez explorer la version d'essai gratuite[ici](https://releases.groupdocs.com/).
+### Puis-je utiliser Groupdocs.Viewer pour .NET avec d’autres types de documents ?
+Oui, Groupdocs.Viewer prend en charge une large gamme de formats de documents, notamment Word, Excel, PDF, etc.
+### Une licence temporaire est-elle disponible à des fins de test ?
+Oui, vous pouvez obtenir un permis temporaire [ici](https://purchase.groupdocs.com/temporary-license/) pour les tests.
+### Où puis-je trouver de l'assistance pour Groupdocs.Viewer pour .NET ?
+Visitez le [Forum Groupdocs.Viewer](https://forum.groupdocs.com/c/viewer/9) pour assistance et discussions.
+### Comment acheter la version complète de Groupdocs.Viewer pour .NET ?
+Vous pouvez acheter la version complète [ici](https://purchase.groupdocs.com/buy).
+### Existe-t-il une version d'essai gratuite disponible ?
+Oui, vous pouvez explorer la version d'essai gratuite [ici](https://releases.groupdocs.com/).

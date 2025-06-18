@@ -1,21 +1,21 @@
 ---
-title: Geef rij- en kolomkoppen weer
-linktitle: Geef rij- en kolomkoppen weer
-second_title: GroupDocs.Viewer .NET-API
-description: Verbeter de documentweergave in .NET! Leer rij- en kolomkoppen weergeven met GroupDocs.Viewer voor .NET. Ontdek HTML-, JPG-, PNG- en PDF-uitvoer.
-weight: 18
-url: /nl/net/spreadsheet-rendering-options/render-row-column-headings/
+"description": "Verbeter de weergave van documenten in .NET! Leer hoe u rij- en kolomkoppen kunt weergeven met GroupDocs.Viewer voor .NET. Ontdek HTML-, JPG-, PNG- en PDF-uitvoer."
+"linktitle": "Rij- en kolomkoppen weergeven"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Rij- en kolomkoppen weergeven"
+"url": "/nl/net/spreadsheet-rendering-options/render-row-column-headings/"
+"weight": 18
 ---
 
-# Geef rij- en kolomkoppen weer
+# Rij- en kolomkoppen weergeven
 
 ## Invoering
-Wilt u uw documentkijkervaring in .NET-toepassingen verbeteren? Met GroupDocs.Viewer voor .NET kunt u naadloos rij- en kolomkoppen uit uw spreadsheetbestanden weergeven. In deze zelfstudie begeleiden we u bij het renderen van rij- en kolomkoppen met behulp van verschillende uitvoerformaten, zoals HTML, JPG, PNG en PDF.
+Wilt u uw documentweergave in .NET-applicaties verbeteren? Met GroupDocs.Viewer voor .NET kunt u rij- en kolomkoppen uit uw spreadsheetbestanden naadloos weergeven. In deze tutorial begeleiden we u bij het weergeven van rij- en kolomkoppen met behulp van verschillende uitvoerformaten, zoals HTML, JPG, PNG en PDF.
 ## Vereisten
-Voordat we ingaan op de tutorial, zorg ervoor dat je aan de volgende vereisten voldoet:
+Voordat we met de tutorial beginnen, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 - GroupDocs.Viewer voor .NET-bibliotheek geïnstalleerd.
-- Een voorbeeld van een XLSX-bestand voor testdoeleinden.
-- Een praktische kennis van C# en .NET-ontwikkeling.
+- Een voorbeeld-XLSX-bestand voor testdoeleinden.
+- Werkkennis van C#- en .NET-ontwikkeling.
 ## Naamruimten importeren
 Zorg ervoor dat u in uw C#-code de benodigde naamruimten importeert om GroupDocs.Viewer te gebruiken:
 ```csharp
@@ -23,7 +23,7 @@ using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## 1. Stel de uitvoermap in
+## 1. De uitvoermap instellen
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
@@ -68,15 +68,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX))
 }
 ```
 ## Conclusie
-Gefeliciteerd! U hebt met succes rij- en kolomkoppen uit uw spreadsheet weergegeven met GroupDocs.Viewer voor .NET. Experimenteer met verschillende uitvoerformaten om aan de behoeften van uw toepassing te voldoen.
-## Veel Gestelde Vragen
-### Vraag: Kan ik de uitvoermap voor de weergegeven documenten aanpassen?
- A: Ja, u kunt de gewenste uitvoermap instellen in de code waar de`outputDirectory` variabele is gedefinieerd.
-### Vraag: Is GroupDocs.Viewer compatibel met andere spreadsheetformaten?
+Gefeliciteerd! U hebt de rij- en kolomkoppen van uw spreadsheet succesvol weergegeven met GroupDocs.Viewer voor .NET. Experimenteer met verschillende uitvoerformaten om aan de behoeften van uw applicatie te voldoen.
+## Veelgestelde vragen
+### V: Kan ik de uitvoermap voor de gerenderde documenten aanpassen?
+A: Ja, u kunt de gewenste uitvoermap instellen in de code waar de `outputDirectory` variabele is gedefinieerd.
+### V: Is GroupDocs.Viewer compatibel met andere spreadsheetformaten?
 A: Ja, GroupDocs.Viewer ondersteunt verschillende spreadsheetformaten, waaronder XLS, XLSX, CSV en meer.
-### Vraag: Hoe kan ik omgaan met uitzonderingen tijdens het weergaveproces?
-A: U kunt try-catch-blokken implementeren om uitzonderingen af te handelen en de juiste berichten voor de gebruiker te loggen of weer te geven.
-### Vraag: Zijn er licentievereisten voor het gebruik van GroupDocs.Viewer in mijn toepassing?
-A: Ja, u heeft een geldige licentie nodig. U kunt een tijdelijke licentie verkrijgen voor testdoeleinden of een volledige licentie aanschaffen voor productie.
-### Vraag: Waar kan ik aanvullende ondersteuning of communitydiscussies vinden?
- A: Bezoek de[GroupDocs.Viewer-forum](https://forum.groupdocs.com/c/viewer/9) voor ondersteuning en discussies.
+### V: Hoe kan ik uitzonderingen tijdens het renderingproces verwerken?
+A: U kunt try-catch-blokken implementeren om uitzonderingen te verwerken en de juiste berichten aan de gebruiker te loggen of weer te geven.
+### V: Zijn er licentievereisten voor het gebruik van GroupDocs.Viewer in mijn applicatie?
+A: Ja, je hebt een geldige licentie nodig. Je kunt een tijdelijke licentie aanschaffen voor testdoeleinden of een volledige licentie voor productie.
+### V: Waar kan ik aanvullende ondersteuning of discussies in de community vinden?
+A: Bezoek de [GroupDocs.Viewer-forum](https://forum.groupdocs.com/c/viewer/9) voor ondersteuning en discussies.

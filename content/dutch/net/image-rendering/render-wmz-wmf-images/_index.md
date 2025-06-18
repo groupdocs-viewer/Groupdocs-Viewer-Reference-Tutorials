@@ -1,33 +1,35 @@
 ---
-title: Geef WMZ- en WMF-afbeeldingen weer
-linktitle: Geef WMZ- en WMF-afbeeldingen weer
-second_title: GroupDocs.Viewer .NET-API
-description: Geef moeiteloos WMZ- en WMF-afbeeldingen weer in .NET-toepassingen met GroupDocs.Viewer voor .NET. Verbeter eenvoudig de documentverwerkingsmogelijkheden.
-weight: 18
-url: /nl/net/image-rendering/render-wmz-wmf-images/
+"description": "Render moeiteloos WMZ- en WMF-afbeeldingen in .NET-applicaties met GroupDocs.Viewer voor .NET. Verbeter de mogelijkheden voor documentverwerking eenvoudig."
+"linktitle": "WMZ- en WMF-afbeeldingen renderen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "WMZ- en WMF-afbeeldingen renderen"
+"url": "/nl/net/image-rendering/render-wmz-wmf-images/"
+"weight": 18
 ---
 
-# Geef WMZ- en WMF-afbeeldingen weer
+# WMZ- en WMF-afbeeldingen renderen
 
 ## Invoering
 
-Op het gebied van softwareontwikkeling is een efficiënte verwerking en weergave van verschillende documentformaten van het grootste belang. GroupDocs.Viewer voor .NET is een krachtige tool die de weergave van een breed scala aan documentformaten vergemakkelijkt, waardoor een naadloze integratie en verbeterde gebruikerservaring binnen .NET-toepassingen wordt gegarandeerd. Een van de mogelijkheden is de weergave van WMZ- en WMF-afbeeldingen, een taak die vaak voorkomt in scenario's voor documentverwerking.
+In de wereld van softwareontwikkeling is efficiënte verwerking en rendering van verschillende documentformaten van het grootste belang. GroupDocs.Viewer voor .NET is een krachtige tool die de rendering van een breed scala aan documentformaten mogelijk maakt en zorgt voor naadloze integratie en een verbeterde gebruikerservaring binnen .NET-applicaties. Een van de mogelijkheden is het renderen van WMZ- en WMF-afbeeldingen, een taak die vaak voorkomt in documentverwerkingsscenario's.
+
+![Render WMZ- en WMF-afbeeldingen met GroupDocs.Viewer voor .NET](/viewer/image-rendering/render-wmz-and-wmf-images.png)
 
 ## Vereisten
 
-Voordat u ingaat op het weergaveproces van WMZ- en WMF-afbeeldingen met GroupDocs.Viewer voor .NET, moet u aan een aantal vereisten voldoen:
+Voordat u aan de slag gaat met het renderproces van WMZ- en WMF-afbeeldingen met behulp van GroupDocs.Viewer voor .NET, moet u aan een aantal vereisten voldoen:
 
-1.  Installatie van GroupDocs.Viewer voor .NET: Begin met het downloaden en installeren van GroupDocs.Viewer voor .NET vanaf de meegeleverde[download link](https://releases.groupdocs.com/viewer/net/). Volg de installatie-instructies om een juiste installatie te garanderen.
+1. Installatie van GroupDocs.Viewer voor .NET: Begin met het downloaden en installeren van GroupDocs.Viewer voor .NET vanaf de meegeleverde [downloadlink](https://releases.groupdocs.com/viewer/net/)Volg de installatie-instructies om een correcte installatie te garanderen.
 
-2.  Aankoop van een licentie: Om GroupDocs.Viewer voor .NET te gebruiken, heeft u een licentie nodig. U kunt kiezen voor een tijdelijke licentie van de[tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/) of koop een volledige licentie van de[aankooppagina](https://purchase.groupdocs.com/buy).
+2. Aanschaf van een licentie: Om GroupDocs.Viewer voor .NET te gebruiken, hebt u een licentie nodig. U kunt kiezen voor een tijdelijke licentie van de [tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/) of koop een volledige licentie van de [aankooppagina](https://purchase.groupdocs.com/buy).
 
-3. Bekendheid met de .NET-omgeving: Een fundamenteel begrip van het .NET-framework en de programmeertaal C# is essentieel voor het effectief implementeren van het weergaveproces.
+3. Kennis van .NET-omgeving: Een fundamenteel begrip van het .NET Framework en de programmeertaal C# is essentieel voor het effectief implementeren van het renderingproces.
 
-4.  Integratie in uw project: Zorg ervoor dat GroupDocs.Viewer voor .NET correct is geïntegreerd in uw .NET-project. Raadpleeg de documentatie voor gedetailleerde instructies over integratie:[Documentatie](https://tutorials.groupdocs.com/viewer/net/).
+4. Integratie in uw project: Zorg ervoor dat GroupDocs.Viewer voor .NET correct is geïntegreerd in uw .NET-project. Raadpleeg de documentatie voor gedetailleerde instructies over integratie: [Documentatie](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Naamruimten importeren
 
-Voordat u doorgaat met het weergaveproces, is het van cruciaal belang dat u de benodigde naamruimten in uw C#-code importeert. Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn voor het renderen van WMZ- en WMF-images.
+Voordat u verdergaat met het renderingproces, is het cruciaal om de benodigde naamruimten in uw C#-code te importeren. Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn voor het renderen van WMZ- en WMF-afbeeldingen.
 
 ```csharp
 using GroupDocs.Viewer.Options;
@@ -35,11 +37,11 @@ using System;
 using System.IO;
 ```
 
-Nu we aan de vereisten hebben voldaan en de vereiste naamruimten hebben geïmporteerd, gaan we het weergaveproces in meerdere stappen opsplitsen.
+Nu we de vereisten hebben besproken en de vereiste naamruimten hebben geïmporteerd, kunnen we het renderingproces opsplitsen in meerdere stappen.
 
-## Stap 1: Render WMZ-afbeelding naar HTML
+## Stap 1: WMZ-afbeelding naar HTML renderen
 
-Volg deze stappen om een WMZ-afbeelding naar HTML-indeling te converteren:
+Om een WMZ-afbeelding naar HTML-formaat te renderen, volgt u deze stappen:
 
 ```csharp
 string outputDirectory = "Your Document Directory";
@@ -54,9 +56,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 }
 ```
 
-## Stap 2: Render WMZ-afbeelding naar JPG
+## Stap 2: WMZ-afbeelding naar JPG renderen
 
-Om een WMZ-afbeelding naar JPG-formaat te renderen, gaat u als volgt te werk:
+Ga als volgt te werk om een WMZ-afbeelding naar JPG-formaat te renderen:
 
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "wmz_result.jpg");
@@ -69,9 +71,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 }
 ```
 
-## Stap 3: Render WMZ-afbeelding naar PNG
+## Stap 3: WMZ-afbeelding naar PNG renderen
 
-Volg deze instructies om een WMZ-afbeelding naar PNG-indeling te renderen:
+Om een WMZ-afbeelding naar PNG-formaat te renderen, volgt u deze instructies:
 
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "wmz_result.png");
@@ -84,9 +86,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 }
 ```
 
-## Stap 4: Render WMZ-afbeelding naar PDF
+## Stap 4: WMZ-afbeelding naar PDF renderen
 
-Ga als volgt te werk om een WMZ-afbeelding naar PDF-formaat te converteren:
+Ga als volgt te werk om een WMZ-afbeelding naar PDF-formaat te renderen:
 
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "wmz_result.pdf");
@@ -101,26 +103,26 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 
 ## Conclusie
 
-Concluderend biedt GroupDocs.Viewer voor .NET een uitgebreide oplossing voor het moeiteloos weergeven van WMZ- en WMF-afbeeldingen binnen .NET-toepassingen. Door de stappen in deze zelfstudie te volgen, kunt u de weergavefunctionaliteit naadloos in uw projecten integreren, waardoor de mogelijkheden voor documentverwerking worden verbeterd.
+Kortom, GroupDocs.Viewer voor .NET biedt een complete oplossing voor het moeiteloos renderen van WMZ- en WMF-afbeeldingen binnen .NET-applicaties. Door de stappen in deze tutorial te volgen, kunt u de renderingfunctionaliteit naadloos integreren in uw projecten en zo de mogelijkheden voor documentverwerking verbeteren.
 
 ## Veelgestelde vragen
 
 ### V1: Is GroupDocs.Viewer voor .NET compatibel met alle .NET-frameworks?
 
-A1: GroupDocs.Viewer voor .NET is compatibel met een groot aantal .NET-frameworks, waaronder .NET Core en .NET Framework.
+A1: GroupDocs.Viewer voor .NET is compatibel met een breed scala aan .NET-frameworks, waaronder .NET Core en .NET Framework.
 
-### V2: Kan ik de weergaveopties voor WMZ- en WMF-afbeeldingen aanpassen?
+### V2: Kan ik de renderopties voor WMZ- en WMF-afbeeldingen aanpassen?
 
-A2: Ja, GroupDocs.Viewer voor .NET biedt uitgebreide aanpassingsopties voor het renderen van afbeeldingen, zodat u de uitvoer kunt aanpassen aan uw vereisten.
+A2: Ja, GroupDocs.Viewer voor .NET biedt uitgebreide aanpassingsopties voor het renderen van afbeeldingen, zodat u de uitvoer kunt afstemmen op uw vereisten.
 
 ### V3: Is er technische ondersteuning beschikbaar voor GroupDocs.Viewer voor .NET?
 
- A3: Ja, u kunt toegang krijgen tot technische ondersteuning voor GroupDocs.Viewer voor .NET via het speciale[Helpforum](https://forum.groupdocs.com/c/viewer/9).
+A3: Ja, u kunt technische ondersteuning voor GroupDocs.Viewer voor .NET krijgen via de speciale [ondersteuningsforum](https://forum.groupdocs.com/c/viewer/9).
 
-### V4: Ondersteunt GroupDocs.Viewer voor .NET de weergave van documenten op mobiele apparaten?
+### V4: Ondersteunt GroupDocs.Viewer voor .NET het bekijken van documenten op mobiele apparaten?
 
-A4: Ja, GroupDocs.Viewer voor .NET biedt responsieve documentweergavemogelijkheden, waardoor optimale prestaties op verschillende apparaten worden gegarandeerd, waaronder mobiele telefoons en tablets.
+A4: Ja, GroupDocs.Viewer voor .NET biedt responsieve documentweergavemogelijkheden, waardoor optimale prestaties op verschillende apparaten, waaronder mobiele telefoons en tablets, worden gegarandeerd.
 
-### V5: Kan ik GroupDocs.Viewer voor .NET uitproberen voordat ik het aanschaf?
+### V5: Kan ik GroupDocs.Viewer voor .NET uitproberen voordat ik het koop?
 
- A5: Ja, u kunt de functies van GroupDocs.Viewer voor .NET verkennen door gebruik te maken van de gratis proefversie die beschikbaar is[hier](https://releases.groupdocs.com/).
+A5: Ja, u kunt de functies van GroupDocs.Viewer voor .NET verkennen door gebruik te maken van de gratis proefversie die beschikbaar is [hier](https://releases.groupdocs.com/).

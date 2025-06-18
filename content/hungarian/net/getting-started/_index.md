@@ -1,51 +1,57 @@
 ---
-title: Elkezdeni
-linktitle: Elkezdeni
-second_title: GroupDocs.Viewer .NET API
-description: Fedezze fel a lépésről lépésre bemutatott oktatóanyagokat a GroupDocs.Viewer for .NET zökkenőmentes alkalmazásaiba való integrálásához. Ismerje meg a licencek beállítását és a megtekintő megjelenésének testreszabását.
-weight: 26
-url: /hu/net/getting-started/
+"description": "Fedezzen fel lépésről lépésre bemutató oktatóanyagokat a GroupDocs.Viewer for .NET zökkenőmentes integrálásához az alkalmazásaiba. Ismerje meg a licencek beállítását és a megjelenítő megjelenésének testreszabását."
+"linktitle": "Első lépések"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Első lépések"
+"url": "/hu/net/getting-started/"
+"weight": 26
 ---
 
-# Elkezdeni
+# Első lépések
 
 
 ## Bevezetés
 
-Készen áll arra, hogy .NET-alkalmazásait hatékony dokumentummegtekintési lehetőségekkel bővítse? Ne keressen tovább! Ebben az átfogó útmutatóban mindent végigvezetünk, amit tudnia kell a GroupDocs.Viewer for .NET zökkenőmentes projektjeibe történő integrálásáról.
+Készen állsz arra, hogy .NET-alkalmazásaidat hatékony dokumentummegjelenítő képességekkel fejleszd? Ne keress tovább! Ebben az átfogó útmutatóban végigvezetünk mindenen, amit tudnod kell a GroupDocs.Viewer for .NET zökkenőmentes integrálásáról a projektjeidbe.
 
-## Első lépések Oktatóanyagok
+![Dokumentummegtekintés a GroupDocs.Viewer for .NET segítségével](/viewer/getting-started/image.png)
 
-Új a GroupDocs.Viewer for .NET használatában? Semmi gond! „Kezdő lépések” oktatóanyagaink célja, hogy megkönnyítsék az utazás megkezdését. Akár fájlból, akár adatfolyamból állít be licencet, akár fizetős licencet választ, mi gondoskodunk róla.
+## Első lépések oktatóanyagok
 
-## Állítsa be a licencet a fájlból
+Újonc vagy a GroupDocs.Viewer for .NET használatában? Ne aggódj! Az „Első lépések” című oktatóanyagaink segítségével könnyedén elkezdheted a használatát. Akár fájlból vagy adatfolyamból állítasz be licencet, akár korlátozott licencet választasz, mi segítünk.
 
-Ebben az oktatóanyagban végigvezetjük a licenc fájlból történő beállításának folyamatán. Ez egy egyszerű, de nélkülözhetetlen lépés a GroupDocs.Viewer for.NET-hez való erőfeszítés nélküli integrálásához. Néhány sornyi kóddal hatékony dokumentummegtekintési funkciókat nyithat meg.
+## Licenc beállítása fájlból
 
-## Licenc beállítása a Streamből
+Ebben az oktatóanyagban végigvezetjük Önt a licenc fájlból történő beállításának folyamatán. Ez egy egyszerű, mégis elengedhetetlen lépés a GroupDocs.Viewer for .NET zökkenőmentes integrálásához az alkalmazásaiba. Mindössze néhány sornyi kóddal hatékony dokumentummegjelenítési funkciókat oldhat fel.
 
-Rugalmas módot keres az engedély beállítására? A streamből származó licenc beállításáról szóló oktatóanyagunk éppen az, amire szüksége van. Megmutatjuk, hogyan integrálhatja zökkenőmentesen a GroupDocs.Viewer for .NET programot .NET-alkalmazásaiba, így biztosítva a felhasználók számára a zökkenőmentes dokumentummegtekintési élményt.
+## Licenc beállítása adatfolyamból
 
-## Állítsa be a mért licencet
+Rugalmas módszert keres a licenc beállítására? Az adatfolyamból történő licencbeállításról szóló oktatóanyagunk pontosan az, amire szüksége van. Megmutatjuk, hogyan integrálhatja zökkenőmentesen a GroupDocs.Viewer for .NET alkalmazást .NET alkalmazásaiba, biztosítva a zökkenőmentes dokumentummegtekintési élményt felhasználói számára.
 
-Szeretné nyomon követni dokumentummegtekintési használatát? A mérőszámos licenc beállításáról szóló oktatóanyagunk megfelel Önnek. Tanulja meg, hogyan integrálhatja egyszerűen a dokumentum-megjelenítési funkciókat projektjeibe, miközben figyelemmel kíséri a használatot. Ezzel problémamentesen kezelheti dokumentummegtekintési igényeit.
+## Mért licenc beállítása
 
-Akár tapasztalt fejlesztő, akár csak most kezdi a .NET-fejlesztést, oktatóanyagaink segítségével a GroupDocs.Viewer integrálása gyerekjáték. A világos magyarázatok és kódrészletek segítségével pillanatok alatt üzembe helyezheti.
+Szeretné nyomon követni a dokumentummegtekintési használatát? A mért licenc beállításáról szóló oktatóanyagunk segít Önnek. Ismerje meg, hogyan integrálhatja egyszerűen a dokumentumrenderelési funkciókat projektjeibe, miközben nyomon követheti a használatot. Ez egy gondtalan módja a dokumentummegtekintési igényeinek kezelésének.
 
-Akkor minek várni? Merüljön el oktatóanyagainkban még ma, és tárja fel a GroupDocs.Viewer .NET-hez való teljes potenciálját!
+Akár tapasztalt fejlesztő vagy, akár csak most ismerkedsz a .NET fejlesztéssel, oktatóanyagaink segítségével a GroupDocs.Viewer integrálása gyerekjáték. Világos magyarázatokkal és kódrészletekkel pillanatok alatt elkezdheted a munkát.
+
+Akkor miért várna? Merüljön el oktatóanyagainkba még ma, és aknázza ki a GroupDocs.Viewer for .NET teljes potenciálját!
 
 ---
 
-## Készen áll az indulásra? Tekintse meg oktatóanyagainkat:
+## Készen állsz a kezdésre? Nézd meg az oktatóanyagainkat:
 
-- [Állítsa be a licencet a fájlból](./set-license-from-file/)
-- [Licenc beállítása a Streamből](./set-license-from-stream/)
-- [Állítsa be a mért licencet](./set-metered-license/)
+- [Licenc beállítása fájlból](./set-license-from-file/)
+- [Licenc beállítása adatfolyamból](./set-license-from-stream/)
+- [Mért licenc beállítása](./set-metered-license/)
 
-## Első lépések Oktatóanyagok
-### [Állítsa be a licencet a fájlból](./set-license-from-file/)
-Tanulja meg, hogyan integrálhatja a GroupDocs.View for .NET-et könnyedén alkalmazásaiba. Állítsa be a licencet, tekintse meg a dokumentumokat és szabja testre a megtekintő megjelenését.
-### [Licenc beállítása a Streamből](./set-license-from-stream/)
-Bővítse .NET-alkalmazásait a GroupDocs.Viewer segítségével a zökkenőmentes dokumentummegtekintés érdekében. Kövesse lépésről lépésre útmutatónkat, és könnyedén integrálja a hatékony dokumentummegtekintési funkciókat.
-### [Állítsa be a mért licencet](./set-metered-license/)
-Bővítse .NET-alkalmazásait a GroupDocs.Viewer segítségével a zökkenőmentes dokumentummegtekintés érdekében. Könnyen integrálhatja a dokumentum-renderelő funkciókat projektjeibe.
+## Első lépések oktatóanyagok
+### [Licenc beállítása fájlból](./set-license-from-file/)
+Ismerje meg, hogyan integrálhatja könnyedén a GroupDocs.Viewer for .NET alkalmazást alkalmazásaiba. Állítsa be a licencet, tekintse meg a dokumentumokat és szabja testre a megjelenítő megjelenését.
+### [Licenc beállítása adatfolyamból](./set-license-from-stream/)
+Fejleszd .NET alkalmazásaidat a GroupDocs.Viewer segítségével a zökkenőmentes dokumentummegtekintés érdekében. Kövesd lépésről lépésre szóló útmutatónkat, és integráld a hatékony dokumentummegtekintési funkciókat könnyedén.
+### [Mért licenc beállítása](./set-metered-license/)
+Fejleszd .NET alkalmazásaidat a GroupDocs.Viewer segítségével a zökkenőmentes dokumentummegtekintés érdekében. Könnyedén integráld a dokumentumrenderelési funkciókat projektjeidbe.
+### [Licenckezelés elsajátítása a GroupDocs.Viewer for .NET-ben: Átfogó útmutató](./groupdocs-viewer-license-management-net/)
+Ismerje meg a licencek hatékony kezelését a .NET-hez készült GroupDocs.Viewerben ezzel a részletes útmutatóval. Ismerkedjen meg a fájlelérési úttal és a beágyazott erőforrás-metódusokkal.
+### [GroupDocs.Viewer .NET licenc beállítása Streamen keresztül: Teljes körű útmutató](./groupdocs-viewer-net-license-stream-setup-guide/)
+Ismerje meg, hogyan állíthat be és konfigurálhat GroupDocs.Viewer .NET licencet fájlfolyam használatával ebből az átfogó útmutatóból. Tökéletes a dinamikus licenckezelést kereső fejlesztők számára.

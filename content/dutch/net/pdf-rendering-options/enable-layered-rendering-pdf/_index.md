@@ -1,21 +1,24 @@
 ---
-title: Schakel gelaagde weergave in PDF in
-linktitle: Schakel gelaagde weergave in PDF in
-second_title: GroupDocs.Viewer .NET-API
-description: Leer hoe u gelaagde weergave in PDF-documenten kunt inschakelen met GroupDocs.Viewer voor .NET. Verbeter moeiteloos de kijkervaring van documenten.
-weight: 15
-url: /nl/net/pdf-rendering-options/enable-layered-rendering-pdf/
+"description": "Leer hoe u gelaagde rendering in PDF-documenten kunt inschakelen met GroupDocs.Viewer voor .NET. Verbeter moeiteloos de weergave van documenten."
+"linktitle": "Gelaagde rendering in PDF inschakelen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Gelaagde rendering in PDF inschakelen"
+"url": "/nl/net/pdf-rendering-options/enable-layered-rendering-pdf/"
+"weight": 15
 ---
 
-# Schakel gelaagde weergave in PDF in
+# Gelaagde rendering in PDF inschakelen
 
 ## Invoering
-In deze zelfstudie verdiepen we ons in het proces van het inschakelen van gelaagde weergave in PDF-documenten met behulp van GroupDocs.Viewer voor .NET. Gelaagde weergave maakt een verbeterde weergave en manipulatie van documenten mogelijk, waardoor gebruikers een meer interactieve kijkervaring krijgen.
+In deze tutorial verdiepen we ons in het proces van het inschakelen van gelaagde rendering in PDF-documenten met behulp van GroupDocs.Viewer voor .NET. Gelaagde rendering zorgt voor een verbeterde weergave en bewerking van documenten, waardoor gebruikers een interactievere kijkervaring krijgen.
+
+![Gelaagde rendering in PDF inschakelen met GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/enable-layered-rendering-in-pdf.png)
+
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-1. GroupDocs.Viewer voor .NET: Zorg ervoor dat u het benodigde pakket of de benodigde bibliotheek voor het gebruik van GroupDocs.Viewer voor .NET in uw project hebt geïnstalleerd.
-2. Visual Studio: Visual Studio moet op uw systeem zijn geïnstalleerd voor het coderen en uitvoeren van de gegeven voorbeelden.
-3. Basiskennis van C#: Deze tutorial veronderstelt bekendheid met de syntaxis en concepten van de programmeertaal C#.
+Voordat we beginnen, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+1. GroupDocs.Viewer voor .NET: Zorg ervoor dat u het benodigde pakket of de benodigde bibliotheek hebt geïnstalleerd voor het gebruik van GroupDocs.Viewer voor .NET in uw project.
+2. Visual Studio: Visual Studio moet op uw systeem geïnstalleerd zijn om de gegeven voorbeelden te kunnen coderen en uitvoeren.
+3. Basiskennis van C#: voor deze tutorial is kennis van de syntaxis en concepten van de programmeertaal C# vereist.
 
 ## Naamruimten importeren
 Begin met het importeren van de vereiste naamruimten in uw project:
@@ -24,17 +27,17 @@ using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Stap 1: Definieer de uitvoerdirectory
+## Stap 1: Definieer de uitvoermap
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-Zorg ervoor dat u het mappad opgeeft waar u de weergegeven uitvoer wilt opslaan.
-## Stap 2: Definieer het paginabestandspadformaat
+Zorg ervoor dat u het pad opgeeft naar de map waarin u de gerenderde uitvoer wilt opslaan.
+## Stap 2: Definieer het padformaat van het paginabestand
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
- Met deze stap stelt u het formaat in voor de bestandspaden van afzonderlijke pagina's in de weergegeven uitvoer.`{0}` is een tijdelijke aanduiding voor het paginanummer.
-## Stap 3: Schakel gelaagde weergave in
+Met deze stap stelt u de indeling in voor de bestandspaden van afzonderlijke pagina's in de gerenderde uitvoer. `{0}` is een tijdelijke aanduiding voor het paginanummer.
+## Stap 3: Gelaagde rendering inschakelen
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_PDF))
 {
@@ -43,23 +46,23 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_PDF))
     viewer.View(options, 1);
 }
 ```
- Hier creëren we een`Viewer` object en specificeer het PDF-document dat moet worden verwerkt. Wij configureren vervolgens`HtmlViewOptions` met het gedefinieerde paginabestandspadformaat. Door inte stellen`EnableLayeredRendering` eigendom aan`true` in `PdfOptions`, schakelen we gelaagde weergave in voor het PDF-document.
-## Stap 4: Geef de uitvoerdirectory weer
+Hier creëren we een `Viewer` object en specificeer het te verwerken PDF-document. Vervolgens configureren we `HtmlViewOptions` met het gedefinieerde padformaat van het paginabestand. Door in te stellen `EnableLayeredRendering` eigendom van `true` in `PdfOptions`, maken we gelaagde rendering mogelijk voor het PDF-document.
+## Stap 4: Uitvoermap weergeven
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Ten slotte drukken we een bericht af dat de succesvolle weergave van het brondocument aangeeft en vragen we de gebruiker om de uitvoer in de opgegeven map te controleren.
+Tot slot printen we een bericht dat het renderen van het brondocument succesvol is verlopen en vragen we de gebruiker om de uitvoer in de opgegeven directory te controleren.
 
 ## Conclusie
-Door gelaagde weergave in PDF-documenten mogelijk te maken met GroupDocs.Viewer voor .NET worden de mogelijkheden voor het bekijken van documenten verbeterd, waardoor gebruikers een rijkere en interactievere ervaring krijgen. Door de stappen in deze zelfstudie te volgen, kunt u deze functie naadloos integreren in uw .NET-toepassingen.
+Door gelaagde rendering in PDF-documenten in te schakelen met GroupDocs.Viewer voor .NET, worden de mogelijkheden voor het bekijken van documenten verbeterd en krijgen gebruikers een rijkere en interactievere ervaring. Door de stappen in deze tutorial te volgen, kunt u deze functie naadloos integreren in uw .NET-applicaties.
 ## Veelgestelde vragen
-### Wat is gelaagde weergave in PDF-documenten?
-Gelaagde weergave maakt de scheiding en manipulatie van verschillende componenten binnen een PDF-document mogelijk, waardoor interactief bekijken en een verbeterde gebruikerservaring mogelijk wordt.
-### Kan ik de uitvoermap voor weergegeven documenten aanpassen?
-Ja, u kunt elk mappad voor de uitvoer opgeven volgens uw vereisten.
-### Ondersteunt GroupDocs.Viewer naast PDF ook andere bestandsformaten?
-Ja, GroupDocs.Viewer ondersteunt een breed scala aan documentformaten, waaronder Word, Excel, PowerPoint en meer.
+### Wat is gelaagde rendering in PDF-documenten?
+Met gelaagde rendering kunt u verschillende onderdelen binnen een PDF-document scheiden en bewerken, waardoor u het document interactief kunt bekijken en de gebruikerservaring kunt verbeteren.
+### Kan ik de uitvoermap voor gerenderde documenten aanpassen?
+Ja, u kunt elk gewenst pad voor de uitvoer opgeven.
+### Ondersteunt GroupDocs.Viewer andere bestandsformaten dan PDF?
+Ja, GroupDocs.Viewer ondersteunt een breed scala aan documentindelingen, waaronder Word, Excel, PowerPoint en meer.
 ### Is GroupDocs.Viewer compatibel met .NET Core?
 Ja, GroupDocs.Viewer is compatibel met zowel .NET Framework- als .NET Core-omgevingen.
 ### Waar kan ik aanvullende ondersteuning of hulp vinden?
-U kunt het GroupDocs.Viewer-forum bezoeken voor vragen of hulp met betrekking tot de viewerbibliotheek.
+Voor vragen of hulp met betrekking tot de viewerbibliotheek kunt u terecht op het GroupDocs.Viewer-forum.

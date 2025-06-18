@@ -1,22 +1,25 @@
 ---
-title: Załaduj dokumenty chronione hasłem
-linktitle: Załaduj dokumenty chronione hasłem
-second_title: GroupDocs.Viewer API .NET
-description: Bezproblemowo integruj przeglądanie dokumentów chronionych hasłem z aplikacjami .NET za pomocą GroupDocs.Viewer dla .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby uzyskać płynność.
-weight: 12
-url: /pl/net/advanced-loading/load-password-protected-document/
+"description": "Bezproblemowo zintegruj przeglądanie dokumentów chronionych hasłem z aplikacjami .NET przy użyciu GroupDocs.Viewer dla .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby uzyskać bezproblemową integrację."
+"linktitle": "Załaduj dokumenty chronione hasłem"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Załaduj dokumenty chronione hasłem"
+"url": "/pl/net/advanced-loading/load-password-protected-document/"
+"weight": 12
 ---
 
 # Załaduj dokumenty chronione hasłem
 
 ## Wstęp
-dzisiejszej erze cyfrowej płynne zarządzanie różnymi formatami dokumentów i przeglądanie ich jest koniecznością zarówno dla wielu firm, jak i osób prywatnych. Na szczęście GroupDocs.Viewer dla .NET zapewnia kompleksowe rozwiązanie dla programistów .NET, umożliwiające bezproblemową integrację funkcji przeglądania dokumentów z ich aplikacjami. W tym samouczku zagłębimy się w jedną z podstawowych funkcjonalności GroupDocs.Viewer: ładowanie dokumentów chronionych hasłem. Podzielimy proces krok po kroku, zapewniając programistom łatwe śledzenie i wdrażanie tej funkcji w swoich projektach.
-## Warunki wstępne
-Zanim przejdziemy do samouczka, upewnij się, że masz skonfigurowane następujące wymagania wstępne:
+W dzisiejszej erze cyfrowej zarządzanie i przeglądanie różnych formatów dokumentów bezproblemowo jest koniecznością dla wielu firm i osób. Na szczęście GroupDocs.Viewer dla .NET zapewnia kompleksowe rozwiązanie dla deweloperów .NET, aby bez wysiłku zintegrować możliwości przeglądania dokumentów ze swoimi aplikacjami. W tym samouczku zagłębimy się w jedną z podstawowych funkcjonalności GroupDocs.Viewer: ładowanie dokumentów chronionych hasłem. Rozłożymy proces na czynniki pierwsze, zapewniając, że deweloperzy będą mogli łatwo śledzić i wdrażać tę funkcję w swoich projektach.
+
+![Ładowanie dokumentów chronionych hasłem w GroupDocs.Viewer dla .NET](/viewer/advanced-loading/load-password-protected-documents-img.png)
+
+## Wymagania wstępne
+Zanim przejdziemy do samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
 ### 1. Zainstaluj GroupDocs.Viewer dla .NET
- Upewnij się, że w środowisku programistycznym zainstalowano GroupDocs.Viewer for .NET. Można go pobrać z[strona internetowa](https://releases.groupdocs.com/viewer/net/).
+Upewnij się, że masz zainstalowany GroupDocs.Viewer dla .NET w swoim środowisku programistycznym. Możesz go pobrać ze strony [strona internetowa](https://releases.groupdocs.com/viewer/net/).
 ### 2. Uzyskaj dokument chroniony hasłem
-Do celów testowych przygotuj dokument chroniony hasłem. Pozwoli nam to skutecznie zademonstrować proces ładowania.
+Do celów testowych należy mieć dostępny dokument chroniony hasłem. Pozwoli nam to skutecznie zademonstrować proces ładowania.
 
 ## Importuj przestrzenie nazw
 Zanim przejdziemy do samouczka, zaimportujmy niezbędne przestrzenie nazw do naszego projektu:
@@ -27,42 +30,42 @@ using GroupDocs.Viewer.Options;
 ```
 
 ## Krok 1: Zdefiniuj katalog wyjściowy
-Najpierw określ katalog, w którym chcesz zapisać wyrenderowany wynik:
+Najpierw określ katalog, w którym chcesz zapisać wyrenderowane dane wyjściowe:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Zastępować`"Your Document Directory"` ze ścieżką żądanego katalogu.
-## Krok 2: Zdefiniuj format ścieżki pliku strony
+Zastępować `"Your Document Directory"` ze ścieżką do wybranego katalogu.
+## Krok 2: Zdefiniuj format ścieżki pliku stronicowania
 Następnie zdefiniuj format ścieżki pliku każdej renderowanej strony:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
- Ten format wygeneruje ścieżki plików, takie jak`"Your Document Directory/page_1.html"`, `"Your Document Directory/page_2.html"`, i tak dalej.
+Ten format wygeneruje ścieżki plików takie jak `"Your Document Directory/page_1.html"`, `"Your Document Directory/page_2.html"`i tak dalej.
 ## Krok 3: Skonfiguruj opcje ładowania
-Skonfiguruj opcje ładowania dokumentu chronionego hasłem, w tym hasło:
+Skonfiguruj opcje ładowania dla dokumentu chronionego hasłem, łącznie z hasłem:
 ```csharp
 LoadOptions loadOptions = new LoadOptions
 {
     Password = "12345"
 };
 ```
- Zastępować`"12345"` z rzeczywistym hasłem Twojego dokumentu.
+Zastępować `"12345"` aktualnym hasłem Twojego dokumentu.
 ## Krok 4: Zainicjuj przeglądarkę
-Zainicjuj GroupDocs.Viewer za pomocą opcji dokumentu i ładowania:
+Zainicjuj GroupDocs.Viewer za pomocą dokumentu i opcji ładowania:
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_your_document", loadOptions))
 {
-    // Kod umożliwiający przeglądanie opcji zostanie dodany w kolejnym kroku.
+    // Kod umożliwiający przeglądanie opcji zostanie dodany w następnym kroku.
 }
 ```
- Zastępować`"Path_to_your_document"` ze ścieżką do dokumentu chronionego hasłem.
+Zastępować `"Path_to_your_document"` ze ścieżką do dokumentu chronionego hasłem.
 ## Krok 5: Skonfiguruj opcje widoku HTML
 Skonfiguruj opcje widoku HTML w celu renderowania dokumentu z osadzonymi zasobami:
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
 ## Krok 6: Renderuj dokument
-Renderuj dokument, korzystając ze skonfigurowanej przeglądarki i opcji widoku:
+Wyświetl dokument, korzystając z skonfigurowanej przeglądarki i opcji widoku:
 ```csharp
 viewer.View(options);
 ```
@@ -73,15 +76,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ```
 
 ## Wniosek
-W tym samouczku omówiliśmy sposób ładowania dokumentów chronionych hasłem przy użyciu programu GroupDocs.Viewer dla platformy .NET. Postępując zgodnie ze szczegółowym przewodnikiem, programiści mogą bezproblemowo zintegrować tę funkcjonalność ze swoimi aplikacjami .NET, umożliwiając użytkownikom łatwe przeglądanie chronionych dokumentów.
-## Często zadawane pytania
-### Czy GroupDocs.Viewer obsługuje inne formaty dokumentów oprócz dokumentów chronionych hasłem?
+W tym samouczku sprawdziliśmy, jak ładować dokumenty chronione hasłem za pomocą GroupDocs.Viewer dla .NET. Postępując zgodnie z przewodnikiem krok po kroku, deweloperzy mogą bezproblemowo zintegrować tę funkcjonalność ze swoimi aplikacjami .NET, umożliwiając użytkownikom łatwe przeglądanie chronionych dokumentów.
+## Najczęściej zadawane pytania
+### Czy GroupDocs.Viewer obsługuje inne formaty dokumentów niż te chronione hasłem?
 Tak, GroupDocs.Viewer obsługuje szeroką gamę formatów dokumentów, w tym PDF, DOCX, XLSX, PPTX i inne.
-### Czy GroupDocs.Viewer jest zgodny z platformą .NET Core?
-Tak, GroupDocs.Viewer zapewnia zgodność zarówno ze środowiskami .NET Framework, jak i .NET Core.
+### Czy GroupDocs.Viewer jest kompatybilny z .NET Core?
+Tak, GroupDocs.Viewer jest zgodny zarówno ze środowiskami .NET Framework, jak i .NET Core.
 ### Czy mogę dostosować opcje renderowania dokumentów?
-Absolutnie! GroupDocs.Viewer zapewnia różne opcje renderowania, umożliwiając programistom dostosowywanie sposobu oglądania zgodnie z ich wymaganiami.
-### Czy GroupDocs.Viewer obsługuje adnotacje w dokumentach?
-Tak, GroupDocs.Viewer obsługuje adnotacje w dokumentach, umożliwiając użytkownikom dodawanie komentarzy, wyróżnień i innych adnotacji do dokumentów.
-### Czy dostępna jest wersja próbna programu GroupDocs.Viewer?
- Tak, możesz uzyskać bezpłatną wersję próbną GroupDocs.Viewer w witrynie[strona internetowa](https://releases.groupdocs.com/).
+Oczywiście! GroupDocs.Viewer oferuje różne opcje renderowania, pozwalając deweloperom dostosować wrażenia wizualne do swoich wymagań.
+### Czy GroupDocs.Viewer obsługuje adnotacje dokumentów?
+Tak, GroupDocs.Viewer obsługuje adnotacje dokumentów, umożliwiając użytkownikom dodawanie komentarzy, wyróżnień i innych adnotacji do dokumentów.
+### Czy jest dostępna wersja próbna GroupDocs.Viewer?
+Tak, możesz uzyskać bezpłatną wersję próbną GroupDocs.Viewer na stronie [strona internetowa](https://releases.groupdocs.com/).

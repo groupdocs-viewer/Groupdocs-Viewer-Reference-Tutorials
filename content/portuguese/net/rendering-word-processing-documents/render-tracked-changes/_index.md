@@ -1,64 +1,64 @@
 ---
-title: Renderizar alterações rastreadas
-linktitle: Renderizar alterações rastreadas
-second_title: API GroupDocs.Viewer .NET
-description: Descubra como renderizar alterações controladas em documentos sem esforço usando GroupDocs.Viewer for .NET. Aumente a eficiência do gerenciamento de documentos.
-weight: 10
-url: /pt/net/rendering-word-processing-documents/render-tracked-changes/
+"description": "Descubra como renderizar alterações rastreadas em documentos sem esforço usando o GroupDocs.Viewer para .NET. Aumente a eficiência do seu gerenciamento de documentos."
+"linktitle": "Renderizar alterações rastreadas"
+"second_title": "API .NET do GroupDocs.Viewer"
+"title": "Renderizar alterações rastreadas"
+"url": "/pt/net/rendering-word-processing-documents/render-tracked-changes/"
+"weight": 10
 ---
 
 # Renderizar alterações rastreadas
 
 ## Introdução
-Na era digital de hoje, a gestão e visualização eficiente de documentos é crucial tanto para empresas como para indivíduos. Com o advento de tecnologias avançadas, soluções como GroupDocs.Viewer for .NET revolucionaram a forma como interagimos com vários formatos de documentos, incluindo documentos Word, PDFs e muito mais. Neste guia abrangente, nos aprofundaremos em como aproveitar o GroupDocs.Viewer for .NET para renderizar alterações controladas em seus documentos de maneira integrada.
+Na era digital atual, gerenciar e visualizar documentos com eficiência é crucial para empresas e indivíduos. Com o advento de tecnologias avançadas, soluções como o GroupDocs.Viewer para .NET revolucionaram a forma como interagimos com diversos formatos de documentos, incluindo documentos do Word, PDFs e muito mais. Neste guia completo, vamos nos aprofundar em como utilizar o GroupDocs.Viewer para .NET para renderizar alterações rastreadas em seus documentos com perfeição.
 ## Pré-requisitos
-Antes de mergulhar no tutorial, certifique-se de ter os seguintes pré-requisitos:
-1. Instalação do GroupDocs.Viewer for .NET: Baixe e instale o GroupDocs.Viewer for .NET a partir do[local na rede Internet](https://releases.groupdocs.com/viewer/net/).
-2. .NET Framework: certifique-se de ter o .NET Framework instalado em seu sistema.
-3. Diretório de documentos: Prepare um diretório onde seus documentos serão armazenados.
+Antes de começar o tutorial, certifique-se de ter os seguintes pré-requisitos:
+1. Instalação do GroupDocs.Viewer para .NET: Baixe e instale o GroupDocs.Viewer para .NET do [site](https://releases.groupdocs.com/viewer/net/).
+2. .NET Framework: certifique-se de ter o .NET Framework instalado no seu sistema.
+3. Diretório de documentos: prepare um diretório onde seus documentos serão armazenados.
 
 ## Importar namespaces
-Para começar, importe os namespaces necessários para o seu projeto. Esses namespaces são essenciais para a utilização eficaz das funcionalidades do GroupDocs.Viewer.
+Para começar, importe os namespaces necessários para o seu projeto. Esses namespaces são essenciais para utilizar as funcionalidades do GroupDocs.Viewer de forma eficaz.
 ## Passos:
-1. Abra seu IDE: Inicie seu ambiente de desenvolvimento integrado (IDE) preferido, como o Visual Studio.
-2. Crie ou abra seu projeto: Inicie um novo projeto ou abra um existente onde você pretende usar o GroupDocs.Viewer.
-3. Importar namespaces: em seu arquivo de projeto ou arquivo de código, adicione os seguintes namespaces:
+1. Abra seu IDE: inicie seu Ambiente de Desenvolvimento Integrado (IDE) preferido, como o Visual Studio.
+2. Crie ou abra seu projeto: inicie um novo projeto ou abra um existente no qual você pretende usar o GroupDocs.Viewer.
+3. Importar namespaces: no seu arquivo de projeto ou arquivo de código, adicione os seguintes namespaces:
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Agora, vamos dividir o exemplo fornecido em várias etapas para orientá-lo na renderização de alterações controladas usando GroupDocs.Viewer for .NET.
-## Etapa 1: definir o diretório de saída
-Em primeiro lugar, defina o diretório onde deseja que a saída renderizada seja salva.
+Agora, vamos dividir o exemplo fornecido em várias etapas para orientá-lo na renderização de alterações rastreadas usando o GroupDocs.Viewer para .NET.
+## Etapa 1: definir diretório de saída
+Primeiro, defina o diretório onde você deseja que a saída renderizada seja salva.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Substituir`"Your Document Directory"`com o caminho para o diretório desejado.
-## Etapa 2: definir o formato do caminho do arquivo de página
-Especifique o formato dos caminhos do arquivo de paginação. Este formato determinará como as páginas renderizadas serão nomeadas e armazenadas.
+Substituir `"Your Document Directory"` com o caminho para o diretório desejado.
+## Etapa 2: Definir o formato do caminho do arquivo de página
+Especifique o formato para os caminhos dos arquivos de paginação. Este formato determinará como as páginas renderizadas serão nomeadas e armazenadas.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
- Aqui,`"page_{0}.html"` indica que as páginas serão nomeadas como`page_1.html`, `page_2.html`, e assim por diante.
-## Etapa 3: inicializar o objeto visualizador
- Inicialize um`Viewer` objeto passando o caminho do documento como argumento.
+Aqui, `"page_{0}.html"` indica que as páginas serão nomeadas como `page_1.html`, `page_2.html`, e assim por diante.
+## Etapa 3: Inicializar objeto do visualizador
+Inicializar um `Viewer` objeto passando o caminho do documento como argumento.
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX_WITH_TRACKED_CHANGES))
 {
     // O código continua na próxima etapa...
 }
 ```
- Certifique-se de substituir`TestFiles.SAMPLE_DOCX_WITH_TRACKED_CHANGES` com o caminho para o seu documento.
-## Etapa 4: configurar opções de visualização HTML
-Configure as opções de visualização HTML para personalizar as configurações de renderização, como a renderização de alterações controladas.
+Certifique-se de substituir `TestFiles.SAMPLE_DOCX_WITH_TRACKED_CHANGES` com o caminho para seu documento.
+## Etapa 4: Configurar opções de visualização HTML
+Configure as opções de visualização HTML para personalizar as configurações de renderização, como renderizar alterações rastreadas.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.WordProcessingOptions.RenderTrackedChanges = true;
 ```
-Esta etapa permite a renderização de alterações controladas no HTML de saída.
-## Etapa 5: renderizar documento
+Esta etapa permite renderizar alterações rastreadas no HTML de saída.
+## Etapa 5: Renderizar documento
 Renderize o documento usando as opções configuradas.
 ```csharp
 viewer.View(options);
@@ -72,15 +72,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 Esta mensagem notifica o usuário sobre a renderização bem-sucedida e onde encontrar os arquivos de saída.
 
 ## Conclusão
-Concluindo, GroupDocs.Viewer for .NET oferece uma solução poderosa para renderizar alterações rastreadas em documentos sem esforço. Seguindo o guia passo a passo descrito neste artigo, você pode integrar perfeitamente essa funcionalidade aos seus aplicativos .NET, aumentando a eficiência do gerenciamento de documentos.
+Concluindo, o GroupDocs.Viewer para .NET oferece uma solução poderosa para renderizar alterações rastreadas em documentos sem esforço. Seguindo o guia passo a passo descrito neste artigo, você pode integrar essa funcionalidade perfeitamente aos seus aplicativos .NET, aprimorando a eficiência do gerenciamento de documentos.
 ## Perguntas frequentes
-### Posso renderizar alterações controladas em vários formatos de documentos usando GroupDocs.Viewer for .NET?
-Sim, o GroupDocs.Viewer oferece suporte à renderização de alterações rastreadas em vários formatos, incluindo DOCX, PDF e muito mais.
-### O GroupDocs.Viewer for .NET é compatível com todas as versões do .NET Framework?
-Sim, o GroupDocs.Viewer for .NET é compatível com várias versões do .NET Framework, garantindo ampla compatibilidade.
-### O GroupDocs.Viewer oferece algum teste gratuito para fins de teste?
+### Posso renderizar alterações rastreadas em vários formatos de documento usando o GroupDocs.Viewer para .NET?
+Sim, o GroupDocs.Viewer suporta renderização de alterações rastreadas em vários formatos, incluindo DOCX, PDF e mais.
+### O GroupDocs.Viewer para .NET é compatível com todas as versões do .NET Framework?
+Sim, o GroupDocs.Viewer para .NET é compatível com várias versões do .NET Framework, garantindo ampla compatibilidade.
+### GroupDocs.Viewer oferece algum teste gratuito para fins de teste?
 Sim, você pode aproveitar uma avaliação gratuita do GroupDocs.Viewer para explorar seus recursos antes de tomar uma decisão de compra.
 ### Posso personalizar as configurações de renderização para atender a requisitos específicos?
-Com certeza, GroupDocs.Viewer oferece amplas opções de personalização, permitindo adaptar o processo de renderização de acordo com suas necessidades.
-### Onde posso procurar assistência se encontrar algum problema ou tiver dúvidas sobre o GroupDocs.Viewer?
- Para suporte e assistência da comunidade, você pode visitar o fórum GroupDocs.Viewer em[esse link](https://forum.groupdocs.com/c/viewer/9).
+Com certeza, o GroupDocs.Viewer oferece amplas opções de personalização, permitindo que você adapte o processo de renderização de acordo com suas necessidades.
+### Onde posso buscar assistência se tiver algum problema ou dúvidas sobre o GroupDocs.Viewer?
+Para obter suporte e assistência da comunidade, você pode visitar o fórum GroupDocs.Viewer em [este link](https://forum.groupdocs.com/c/viewer/9).

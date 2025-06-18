@@ -1,80 +1,83 @@
 ---
-title: Betűtípus-licenc-ellenőrzés letiltása PDF-ben
-linktitle: Betűtípus-licenc-ellenőrzés letiltása PDF-ben
-second_title: GroupDocs.Viewer .NET API
-description: A GroupDocs.Viewer for .NET segítségével zökkenőmentes dokumentummegtekintési lehetőségeket nyithat meg .NET-ben. Könnyen integrálhatja és testreszabhatja a dokumentumok megjelenítését minimális függőséggel.
-weight: 12
-url: /hu/net/pdf-rendering-options/disable-font-license-verifications-pdf/
+"description": "Zökkenőmentes dokumentummegtekintési lehetőségeket biztosíthat .NET-ben a GroupDocs.Viewer for .NET segítségével. Könnyen integrálhatja és testreszabhatja a dokumentumok renderelését minimális függőségekkel."
+"linktitle": "Betűtípus-licenc-ellenőrzések letiltása PDF-ben"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Betűtípus-licenc-ellenőrzések letiltása PDF-ben"
+"url": "/hu/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
+"weight": 12
 ---
 
-# Betűtípus-licenc-ellenőrzés letiltása PDF-ben
+# Betűtípus-licenc-ellenőrzések letiltása PDF-ben
 
 ## Bevezetés
-A .NET fejlesztés területén a dokumentumok kezelése és manipulálása gyakran számos alkalmazás kulcsfontosságú eleme. Legyen szó PDF-fájlok, Word-dokumentumok vagy más fájltípusok megtekintéséről, elengedhetetlen, hogy hatékony eszközökkel rendelkezzenek ezeknek a feladatoknak a hatékony kezeléséhez. Itt jön képbe a GroupDocs.Viewer for .NET. Ez a hatékony könyvtár lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési funkciókat .NET-alkalmazásaikba.
+.NET fejlesztés területén a dokumentumok kezelése és manipulálása gyakran kritikus fontosságú szempont számos alkalmazásban. Legyen szó PDF-ek, Word-dokumentumok vagy más fájltípusok megtekintéséről, elengedhetetlenek a hatékony feladatok kezeléséhez szükséges robusztus eszközök. Itt jön képbe a GroupDocs.Viewer for .NET. Ez a hatékony könyvtár lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegjelenítési funkciókat .NET alkalmazásaikba.
+
+![Betűtípus-licenc-ellenőrzések letiltása PDF-ben a GroupDocs.Viewer .NET segítségével](/viewer/pdf-rendering-options/disable-font-license-verifications-in-pdf.png)
+
 ## Előfeltételek
-Mielőtt belevágna a GroupDocs.Viewer for .NET használatába, meg kell felelnie néhány előfeltételnek:
-### 1. Telepítse a Visual Studio programot
-Mindenekelőtt győződjön meg arról, hogy a Visual Studio telepítve van a rendszeren. Letöltheti a Microsoft webhelyéről, ha még nem tette meg.
-### 2. Töltse le a GroupDocs.Viewer programot .NET-hez
- Irány a[letöltési link](https://releases.groupdocs.com/viewer/net/) hogy megszerezze a GroupDocs.Viewer .NET legújabb verzióját. Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításához.
-### 3. Szerezzen ideiglenes engedélyt
- A GroupDocs.Viewer for .NET-ben rejlő teljes potenciál kiaknázásához a fejlesztés és a tesztelés során javasolt ideiglenes licenc beszerzése. Kérhetsz egyet innen[itt](https://purchase.groupdocs.com/temporary-license/).
+Mielőtt belemerülne a GroupDocs.Viewer for .NET használatába, van néhány előfeltétel, aminek teljesülnie kell:
+### 1. Telepítse a Visual Studio-t
+Először is, győződj meg róla, hogy a Visual Studio telepítve van a rendszereden. Ha még nem tetted meg, letöltheted a Microsoft webhelyéről.
+### 2. Töltse le a GroupDocs.Viewer programot a .NET-hez
+Menj át a [letöltési link](https://releases.groupdocs.com/viewer/net/) GroupDocs.Viewer for .NET legújabb verziójának beszerzéséhez. Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításhoz.
+### 3. Ideiglenes engedély beszerzése
+A GroupDocs.Viewer for .NET teljes potenciáljának kiaknázásához a fejlesztés és tesztelés során ajánlott ideiglenes licencet beszerezni. Ezt a következő címen kérheti: [itt](https://purchase.groupdocs.com/temporary-license/).
 
 ## Névterek importálása
-Miután teljesítette az előfeltételeket, készen áll a GroupDocs.Viewer for .NET használatára projektjeiben. Kezdje a szükséges névterek importálásával a kódbázisba.
+Miután teljesítette az előfeltételeket, készen áll arra, hogy elkezdje használni a GroupDocs.Viewer for .NET-et a projektjeiben. Kezdje a szükséges névterek importálásával a kódbázisába.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Bontsuk fel a megadott példát több lépésre a jobb megértés érdekében:
-## 1. lépés: Határozza meg a kimeneti könyvtárat
-Kezdje azzal, hogy meghatározza azt a könyvtárat, ahol a megjelenített dokumentumoldalakat tárolni szeretné.
+Bontsuk a bemutatott példát több lépésre a jobb megértés érdekében:
+## 1. lépés: Kimeneti könyvtár definiálása
+Kezdje azzal, hogy meghatározza azt a könyvtárat, ahová a renderelt dokumentumoldalakat tárolni szeretné.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## 2. lépés: Határozza meg az oldalfájl elérési út formátumát
-Állítsa be a dokumentum egyes oldalai fájlútvonalainak formátumát.
+## 2. lépés: Oldalfájl elérési útjának formátumának meghatározása
+Állítsa be a dokumentum egyes oldalainak fájlelérési útjának formátumát.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.png");
 ```
-## 3. lépés: Inicializálja a Viewer Object-et
-Hozzon létre egy példányt a Viewer osztályból, átadva a megtekinteni kívánt dokumentum elérési útját.
+## 3. lépés: Viewer objektum inicializálása
+Hozz létre egy példányt a Viewer osztályból, átadva a megtekinteni kívánt dokumentum elérési útját.
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.OXPS_EMBEDDED_FONT))
 ```
-## 4. lépés: Konfigurálja a HTML nézet beállításait
-Határozza meg a dokumentum HTML formátumban való megjelenítésének beállításait, és adja meg a beágyazott erőforrások (pl. képek) formátumát.
+## 4. lépés: HTML nézet beállításainak konfigurálása
+Adja meg a dokumentum HTML formátumban történő megtekintésének beállításait, megadva a beágyazott erőforrások (pl. képek) formátumát.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-## 5. lépés: Tiltsa le a betűtípuslicenc-ellenőrzést
-Engedélyezze a betűtípus-licenc-ellenőrzések letiltását a zökkenőmentes megjelenítés érdekében.
+## 5. lépés: Betűtípus-licenc-ellenőrzések letiltása
+Engedélyezze a betűtípus-licenc-ellenőrzések letiltásának lehetőségét a zökkenőmentes megjelenítés biztosítása érdekében.
 ```csharp
 options.PdfOptions.DisableFontLicenseVerifications = true;
 ```
 ## 6. lépés: Dokumentum megtekintése
-Hívja meg a Viewer objektum View metódusát, átadva a beállított opciókat.
+Hívd meg a Viewer objektum View metódusát, átadva a konfigurált opciókat.
 ```csharp
 viewer.View(options);
 ```
-## 7. lépés: Jelenítse meg a kimeneti könyvtárat
-Tájékoztassa a felhasználót a megjelenített dokumentumoldalak tárolási helyéről.
+## 7. lépés: Kimeneti könyvtár megjelenítése
+Tájékoztassa a felhasználót a renderelt dokumentumoldalak tárolási helyéről.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Következtetés
-GroupDocs.Viewer for .NET átfogó megoldást kínál a fejlesztőknek a dokumentummegtekintési képességek .NET-alkalmazásaikba való erőfeszítés nélküli integrálására. Az oktatóanyagban ismertetett lépések követésével hatékonyan használhatja ezt a hatékony könyvtárat a dokumentumkezelési munkafolyamatok javítására.
+A GroupDocs.Viewer for .NET átfogó megoldást kínál a fejlesztők számára a dokumentummegtekintési funkciók zökkenőmentes integrálására a .NET alkalmazásaikba. Az ebben az oktatóanyagban ismertetett lépéseket követve hatékonyan használhatja ezt a hatékony könyvtárat a dokumentumkezelési munkafolyamatok fejlesztésére.
 ## GYIK
-### A GroupDocs.Viewer for .NET kezelhet több dokumentumformátumot?
-Igen, a GroupDocs.Viewer a dokumentumformátumok széles skáláját támogatja, beleértve a PDF, Microsoft Word, Excel, PowerPoint és egyebeket.
-### A GroupDocs.Viewer for .NET alkalmas webes alkalmazásokhoz?
-Természetesen a GroupDocs.Viewer zökkenőmentesen integrálható mind az asztali, mind a webes alkalmazásokba, amelyeket .NET technológiákkal fejlesztettek ki.
-### A GroupDocs.Viewernek szüksége van további függőségekre?
-Nem, a GroupDocs.Viewer for .NET minimális függőséggel rendelkezik, és könnyen integrálható meglévő projektjeibe.
-### Testreszabhatom a renderelt dokumentumok megjelenését?
-Igen, a GroupDocs.Viewer különféle lehetőségeket kínál a renderelt dokumentumok megjelenésének és viselkedésének testreszabására, hogy megfeleljen az Ön egyedi igényeinek.
-### Elérhető technikai támogatás a GroupDocs.Viewer for .NET számára?
- Igen, segítséget és útmutatást kérhet a dedikált ügyfélszolgálati csapattól a következőn keresztül[fórum](https://forum.groupdocs.com/c/viewer/9).
+### A GroupDocs.Viewer for .NET képes több dokumentumformátumot kezelni?
+Igen, a GroupDocs.Viewer számos dokumentumformátumot támogat, beleértve a PDF, Microsoft Word, Excel, PowerPoint és egyebeket.
+### Alkalmas-e a GroupDocs.Viewer for .NET webes alkalmazásokhoz?
+A GroupDocs.Viewer természetesen zökkenőmentesen integrálható mind az asztali, mind a .NET technológiákkal fejlesztett webes alkalmazásokba.
+### A GroupDocs.Viewer igényel-e további függőségeket?
+Nem, a GroupDocs.Viewer for .NET minimális függőségekkel rendelkezik, és könnyen integrálható a meglévő projektekbe.
+### Testreszabhatom a megjelenített dokumentumok megjelenését?
+Igen, a GroupDocs.Viewer számos lehetőséget kínál a renderelt dokumentumok megjelenésének és viselkedésének testreszabására az Ön igényei szerint.
+### Elérhető technikai támogatás a GroupDocs.Viewer for .NET-hez?
+Igen, kérhet segítséget és útmutatást a dedikált támogató csapattól a következő címen: [fórum](https://forum.groupdocs.com/c/viewer/9).

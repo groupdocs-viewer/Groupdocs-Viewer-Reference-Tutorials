@@ -1,73 +1,73 @@
 ---
-title: Rácsvonalak renderelése
-linktitle: Rácsvonalak renderelése
-second_title: GroupDocs.Viewer .NET API
-description: Javítsa a dokumentumok megjelenítését a GroupDocs.Viewer for .NET segítségével. A rácsvonalakat könnyedén rendereli. Próbálja ki most az ingyenes próbaverziót! #GroupDocs #Viewer
-weight: 12
-url: /hu/net/spreadsheet-rendering-options/render-grid-lines/
+"description": "Javítsa a dokumentumok vizualizációját a GroupDocs.Viewer for .NET segítségével. Rendereljen rácsvonalakat könnyedén. Próbálja ki az ingyenes próbaverziót most!"
+"linktitle": "Rácsvonalak renderelése"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Rácsvonalak renderelése"
+"url": "/hu/net/spreadsheet-rendering-options/render-grid-lines/"
+"weight": 12
 ---
 
 # Rácsvonalak renderelése
 
 ## Bevezetés
-Üdvözöljük ebben a lépésről lépésre szóló útmutatóban a GroupDocs.Viewer for .NET használatáról a rácsvonalak megjelenítéséhez a dokumentumokban. Akár tapasztalt fejlesztő, akár újonc a .NET keretrendszerben, ez az oktatóanyag részletes magyarázatokkal és könnyen követhető példákkal végigvezeti a folyamaton.
+Üdvözlünk ebben a lépésről lépésre bemutató útmutatóban, amely bemutatja, hogyan jeleníthet meg rácsvonalakat a GroupDocs.Viewer for .NET segítségével a dokumentumokban. Akár tapasztalt fejlesztő, akár új a .NET keretrendszerben, ez az oktatóanyag részletes magyarázatokkal és könnyen követhető példákkal végigvezeti Önt a folyamaton.
 ## Előfeltételek
-Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
--  GroupDocs.Viewer for .NET: Töltse le és telepítse a könyvtárat a[hivatalos honlapján](https://releases.groupdocs.com/viewer/net/).
-- Az Ön dokumentumkönyvtára: Győződjön meg arról, hogy rendelkezik egy kijelölt könyvtárral a dokumentumok számára, és cserélje ki a „Saját dokumentumkönyvtár”-t a megadott kódrészletben a tényleges elérési útra.
-Most, hogy mindent beállított, kezdjük.
+Mielőtt belemerülnél az oktatóanyagba, győződj meg róla, hogy a következő előfeltételek teljesülnek:
+- GroupDocs.Viewer .NET-hez: Töltse le és telepítse a könyvtárat a következő helyről: [hivatalos weboldal](https://releases.groupdocs.com/viewer/net/).
+- Dokumentumkönyvtár: Győződjön meg róla, hogy kijelölt könyvtárral rendelkezik a dokumentumok számára, és a megadott kódrészletben a „Dokumentumkönyvtár” részt cserélje ki a tényleges elérési útra.
+Most, hogy mindent beállítottál, kezdjük is el.
 ## Névterek importálása
-A .NET-projektben kezdje a szükséges névterek importálásával:
+A .NET projektedben kezdd a szükséges névterek importálásával:
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
-Kezdje a dokumentumkönyvtár elérési útjának megadásával:
+## 1. lépés: A dokumentumkönyvtár beállítása
+Kezdjük a dokumentumok könyvtárának elérési útjának megadásával:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-Cserélje ki a "Saját dokumentumkönyvtárat" a tényleges elérési útra, ahol a dokumentumokat tárolják.
-## 2. lépés: Határozza meg a fájl elérési útját és a HTML kimeneti formátumot
-Hozzon létre egy változót az egyes oldalak fájlútvonal-formátumának és a kimeneti HTML-formátum tárolására:
+Cserélje ki a „Saját dokumentumkönyvtár” részt a dokumentumok tárolási helyének tényleges elérési útjára.
+## 2. lépés: Fájlútvonal és HTML kimeneti formátum meghatározása
+Hozz létre egy változót, amely tárolja az egyes oldalak fájlelérési útvonalának formátumát és a kimeneti HTML formátumot:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Ez a sor létrehozza a fájl elérési útját minden oldalhoz a megadott formátumban.
-## 3. lépés: Inicializálja a GroupDocs.Viewer programot
-Példányosítsa a Viewer osztályt a megtekinteni kívánt dokumentummal:
+Ez a sor a megadott formátumban hozza létre az egyes oldalak fájlelérési útját.
+## 3. lépés: A GroupDocs.Viewer inicializálása
+Hozza létre a Viewer osztály példányát a megtekinteni kívánt dokumentummal:
 ```csharp
 using (Viewer viewer = new Viewer(outputDirectory + "SAMPLE.XLSX"))
 {
-    // A további lépések ezen belül a blokk segítségével kerülnek végrehajtásra.
+    // A további lépéseket ezen a blokkon belül fogjuk végrehajtani.
 }
 ```
-Ügyeljen arra, hogy a "SAMPLE.XLSX" helyére a tényleges dokumentum neve kerüljön.
-## 4. lépés: Konfigurálja a HTML nézet beállításait
-Állítsa be a HTML nézet beállításait, különösen a rácsvonalak megjelenítését engedélyezve:
+A „SAMPLE.XLSX” részt a tényleges dokumentum nevével cserélje ki.
+## 4. lépés: HTML nézet beállításainak konfigurálása
+Állítsa be a HTML nézet beállításait, különösen a rácsvonalak megjelenítésének engedélyezésével:
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.SpreadsheetOptions.RenderGridLines = true;
 ```
-Ez a kódrészlet konfigurálja a HTML-nézet beállításait az erőforrások beágyazásához és a rácsvonalak megjelenítéséhez a táblázatkezelő dokumentumokhoz.
-## 5. lépés: Rendereljen rácsvonalakat
- Hívja fel a`View` módszer a dokumentum megjelenítésére az 1., 2. és 3. oldalon megadott beállításokkal:
+Ez a kódrészlet a HTML nézet beállításait konfigurálja az erőforrások beágyazásához és a táblázatkezelő dokumentumok rácsvonalainak megjelenítéséhez.
+## 5. lépés: Rácsvonalak renderelése
+Hívd meg a `View` metódus a dokumentum megjelenítéséhez az 1., 2. és 3. oldalra megadott beállításokkal:
 ```csharp
 viewer.View(options, 1, 2, 3);
 ```
-Állítsa be az oldalszámokat igényei szerint.
-Ez az! Sikeresen renderelte a rácsvonalakat a GroupDocs.Viewer for .NET segítségével.
+Igazítsa az oldalszámokat az igényeinek megfelelően.
+Ez minden! Sikeresen megjelenítetted a rácsvonalakat a GroupDocs.Viewer for .NET használatával.
 ## Következtetés
-Ebben az oktatóanyagban megvizsgáltuk a rácsvonalak dokumentumokban való megjelenítésének folyamatát a GroupDocs.Viewer for .NET használatával. A vázolt lépések követésével javíthatja a táblázatos dokumentumok vizuális megjelenítését.
+Ebben az oktatóanyagban a GroupDocs.Viewer for .NET segítségével a dokumentumokban lévő rácsvonalak megjelenítésének folyamatát vizsgáltuk meg. A vázolt lépések követésével javíthatja táblázatai vizuális ábrázolását.
 ## GYIK
 ### Ingyenesen használható a GroupDocs.Viewer for .NET?
- A GroupDocs.Viewer for .NET ingyenes próbaverziót és fizetős verziót is kínál. Fedezze fel a[ingyenes próbaverzió](https://releases.groupdocs.com/) vagy látogassa meg a[vásárlási oldal](https://purchase.groupdocs.com/buy) az engedélyezési részletekért.
-### Hogyan kaphatok támogatást a GroupDocs.Viewer for .NET számára?
- Meglátogatni a[GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) segítséget kérni, tapasztalatokat megosztani, és kapcsolatba lépni a közösséggel.
-### Vannak ideiglenes licencek a GroupDocs.Viewer for .NET számára?
- Igen, megszerezheti a[ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) a GroupDocs.Viewer for .NET számára.
-### Megtalálhatom a GroupDocs.Viewer for .NET részletes dokumentációját?
- Teljesen! Utal[hivatalos dokumentáció](https://tutorials.groupdocs.com/viewer/net/) a GroupDocs.Viewer for .NET használatával kapcsolatos részletes információkért.
-### Honnan tölthetem le a GroupDocs.Viewer .NET-hez legújabb verzióját?
- Töltse le a könyvtárat a[hivatalos megjelenési oldal](https://releases.groupdocs.com/viewer/net/).
+A GroupDocs.Viewer for .NET ingyenes próbaverziót és fizetős verziót is kínál. Fedezze fel a [ingyenes próba](https://releases.groupdocs.com/) vagy látogassa meg a [vásárlási oldal](https://purchase.groupdocs.com/buy) a licencelési részletekért.
+### Hogyan kaphatok támogatást a GroupDocs.Viewer for .NET-hez?
+Látogassa meg a [GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) segítséget kérni, tapasztalatokat megosztani és kapcsolatot teremteni a közösséggel.
+### Elérhetők ideiglenes licencek a GroupDocs.Viewer for .NET-hez?
+Igen, szerezhet egy [ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) a .NET-hez készült GroupDocs.Viewerhez.
+### Találok részletes dokumentációt a GroupDocs.Viewer for .NET-hez?
+Feltétlenül! Lásd a [hivatalos dokumentáció](https://tutorials.groupdocs.com/viewer/net/) a GroupDocs.Viewer .NET-hez való használatáról szóló részletes információkért.
+### Hol tudom letölteni a GroupDocs.Viewer legújabb verzióját .NET-hez?
+Töltsd le a könyvtárat a [hivatalos kiadási oldal](https://releases.groupdocs.com/viewer/net/).

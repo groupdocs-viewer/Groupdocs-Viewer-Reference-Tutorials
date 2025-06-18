@@ -1,80 +1,83 @@
 ---
-title: PDF でのフォント ライセンス検証を無効にする
-linktitle: PDF でのフォント ライセンス検証を無効にする
-second_title: GroupDocs.Viewer .NET API
-description: GroupDocs.Viewer for .NET を使用すると、.NET でのシームレスなドキュメント表示機能を利用できるようになります。最小限の依存関係でドキュメントのレンダリングを簡単に統合およびカスタマイズできます。
-weight: 12
-url: /ja/net/pdf-rendering-options/disable-font-license-verifications-pdf/
+"description": "GroupDocs.Viewer for .NET を使用すると、.NET でシームレスなドキュメント表示機能を活用できます。依存関係を最小限に抑えながら、ドキュメントのレンダリングを簡単に統合およびカスタマイズできます。"
+"linktitle": "PDF のフォントライセンス検証を無効にする"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "PDF のフォントライセンス検証を無効にする"
+"url": "/ja/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
+"weight": 12
 ---
 
-# PDF でのフォント ライセンス検証を無効にする
+# PDF のフォントライセンス検証を無効にする
 
 ## 導入
-.NET 開発の領域では、多くのアプリケーションにとってドキュメントの管理と操作が重要な側面となります。 PDF、Word ドキュメント、その他の種類のファイルを表示する場合でも、これらのタスクを効率的に処理する強力なツールが不可欠です。ここで、GroupDocs.Viewer for .NET が活躍します。この強力なライブラリは、開発者にドキュメント表示機能を .NET アプリケーションにシームレスに統合する機能を提供します。
+.NET開発において、ドキュメントの管理と操作は多くのアプリケーションにとって重要な要素です。PDF、Word文書、その他のファイル形式の表示など、これらのタスクを効率的に処理するための強力なツールは不可欠です。そこでGroupDocs.Viewer for .NETが活躍します。この強力なライブラリは、開発者にドキュメント表示機能を.NETアプリケーションにシームレスに統合する機能を提供します。
+
+![GroupDocs.Viewer .NET を使用して PDF のフォントライセンス検証を無効にする](/viewer/pdf-rendering-options/disable-font-license-verifications-in-pdf.png)
+
 ## 前提条件
-GroupDocs.Viewer for .NET の使用に入る前に、いくつかの前提条件を満たしている必要があります。
+GroupDocs.Viewer for .NET の使用を開始する前に、いくつかの前提条件を満たす必要があります。
 ### 1. Visual Studioをインストールする
-何よりもまず、システムに Visual Studio がインストールされていることを確認してください。まだダウンロードしていない場合は、Microsoft Web サイトからダウンロードできます。
-### 2. .NET 用の GroupDocs.Viewer をダウンロードします。
-に向かってください。[ダウンロードリンク](https://releases.groupdocs.com/viewer/net/) GroupDocs.Viewer for .NET の最新バージョンを入手します。提供されるインストール手順に従って、開発環境内でセットアップします。
-### 3. 一時ライセンスを取得する
-開発およびテスト中に GroupDocs.Viewer for .NET の可能性を最大限に引き出すには、一時ライセンスを取得することをお勧めします。以下からリクエストできます[ここ](https://purchase.groupdocs.com/temporary-license/).
+まず最初に、システムにVisual Studioがインストールされていることを確認してください。まだインストールされていない場合は、Microsoftのウェブサイトからダウンロードできます。
+### 2. GroupDocs.Viewer for .NETをダウンロードする
+へ向かう [ダウンロードリンク](https://releases.groupdocs.com/viewer/net/) GroupDocs.Viewer for .NETの最新バージョンを入手するには、提供されているインストール手順に従って開発環境にセットアップしてください。
+### 3. 一時免許を取得する
+開発およびテスト期間中にGroupDocs.Viewer for .NETの潜在能力を最大限に引き出すには、一時ライセンスの取得をお勧めします。ライセンスは以下から申請できます。 [ここ](https://purchase。groupdocs.com/temporary-license/).
 
 ## 名前空間のインポート
-前提条件を満たしたら、プロジェクトで GroupDocs.Viewer for .NET の利用を開始する準備が整います。まず、必要な名前空間をコードベースにインポートします。
+前提条件を満たしたら、GroupDocs.Viewer for .NET をプロジェクトで活用する準備が整います。まずは、必要な名前空間をコードベースにインポートしてください。
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-より明確に理解できるように、提供された例を複数のステップに分けてみましょう。
-## ステップ 1: 出力ディレクトリを定義する
+より明確に理解するために、提供された例を複数のステップに分解してみましょう。
+## ステップ1: 出力ディレクトリを定義する
 まず、レンダリングされたドキュメント ページを保存するディレクトリを定義します。
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## ステップ 2: ページ ファイルのパス形式を定義する
+## ステップ2: ページファイルパスの形式を定義する
 ドキュメントの個々のページのファイル パスの形式を設定します。
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.png");
 ```
-## ステップ 3: ビューア オブジェクトを初期化する
-Viewer クラスのインスタンスを作成し、表示するドキュメントへのパスを渡します。
+## ステップ3: ビューアオブジェクトの初期化
+表示するドキュメントへのパスを渡して、Viewer クラスのインスタンスを作成します。
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.OXPS_EMBEDDED_FONT))
 ```
-## ステップ 4: HTML 表示オプションを構成する
-ドキュメントを HTML として表示するためのオプションを定義し、埋め込みリソース (画像など) の形式を指定します。
+## ステップ4: HTML表示オプションを構成する
+埋め込まれたリソース (画像など) の形式を指定して、ドキュメントを HTML として表示するためのオプションを定義します。
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-## ステップ 5: フォントのライセンス検証を無効にする
-スムーズなレンダリングを確保するには、フォント ライセンスの検証を無効にするオプションを有効にします。
+## ステップ5: フォントライセンス検証を無効にする
+スムーズなレンダリングを実現するために、フォント ライセンスの検証を無効にするオプションを有効にします。
 ```csharp
 options.PdfOptions.DisableFontLicenseVerifications = true;
 ```
-## ステップ 6: ドキュメントを表示する
-Viewer オブジェクトの View メソッドを呼び出し、構成されたオプションを渡します。
+## ステップ6: ドキュメントを表示する
+構成されたオプションを渡して、Viewer オブジェクトの View メソッドを呼び出します。
 ```csharp
 viewer.View(options);
 ```
-## ステップ 7: 出力ディレクトリを表示する
+## ステップ7: 出力ディレクトリを表示する
 レンダリングされたドキュメント ページが保存される場所をユーザーに通知します。
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## 結論
-GroupDocs.Viewer for .NET は、ドキュメント表示機能を .NET アプリケーションに簡単に統合するための包括的なソリューションを開発者に提供します。このチュートリアルで概説されている手順に従うことで、この強力なライブラリを効果的に利用してドキュメント管理ワークフローを強化できます。
+GroupDocs.Viewer for .NETは、開発者が.NETアプリケーションにドキュメント表示機能を簡単に統合できる包括的なソリューションを提供します。このチュートリアルで説明する手順に従うことで、この強力なライブラリを効果的に活用し、ドキュメント管理ワークフローを強化できます。
 ## よくある質問
 ### GroupDocs.Viewer for .NET は複数のドキュメント形式を処理できますか?
-はい。GroupDocs.Viewer は、PDF、Microsoft Word、Excel、PowerPoint などを含む幅広いドキュメント形式をサポートしています。
+はい、GroupDocs.Viewer は、PDF、Microsoft Word、Excel、PowerPoint など、幅広いドキュメント形式をサポートしています。
 ### GroupDocs.Viewer for .NET は Web アプリケーションに適していますか?
-確かに、GroupDocs.Viewer は、.NET テクノロジを使用して開発されたデスクトップ アプリケーションと Web アプリケーションの両方にシームレスに統合できます。
+はい、GroupDocs.Viewer は、.NET テクノロジを使用して開発されたデスクトップ アプリケーションと Web アプリケーションの両方にシームレスに統合できます。
 ### GroupDocs.Viewer には追加の依存関係が必要ですか?
-いいえ、GroupDocs.Viewer for .NET には最小限の依存関係があり、既存のプロジェクトに簡単に統合できます。
+いいえ、GroupDocs.Viewer for .NET は依存関係が最小限であるため、既存のプロジェクトに簡単に統合できます。
 ### レンダリングされたドキュメントの外観をカスタマイズできますか?
-はい。GroupDocs.Viewer には、特定の要件に合わせてレンダリングされたドキュメントの外観と動作をカスタマイズするためのさまざまなオプションが用意されています。
-### GroupDocs.Viewer for .NET のテクニカル サポートは利用できますか?
-はい。[フォーラム](https://forum.groupdocs.com/c/viewer/9).
+はい、GroupDocs.Viewer には、レンダリングされたドキュメントの外観と動作を特定の要件に合わせてカスタマイズするためのさまざまなオプションが用意されています。
+### GroupDocs.Viewer for .NET のテクニカル サポートは受けられますか?
+はい、専任のサポートチームから支援やガイダンスを受けることができます。 [フォーラム](https://forum。groupdocs.com/c/viewer/9).

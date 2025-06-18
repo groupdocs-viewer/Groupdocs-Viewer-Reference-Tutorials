@@ -1,21 +1,21 @@
 ---
-title: Sayıları Oluşturma
-linktitle: Sayıları Oluşturma
-second_title: GroupDocs.Viewer .NET API'si
-description: Numbers dosyalarını sorunsuz bir şekilde işlemek için Groupdocs.Viewer for .NET'in gücünü keşfedin. Zahmetsizce HTML, JPG, PNG ve PDF'ye dönüştürün.
-weight: 15
-url: /tr/net/spreadsheet-rendering-options/rendering-numbers/
+"description": "Numbers dosyalarını kusursuz bir şekilde işlemede Groupdocs.Viewer for .NET'in gücünü keşfedin. HTML, JPG, PNG ve PDF'ye zahmetsizce dönüştürün."
+"linktitle": "Sayıların Oluşturulması"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Sayıların Oluşturulması"
+"url": "/tr/net/spreadsheet-rendering-options/rendering-numbers/"
+"weight": 15
 ---
 
-# Sayıları Oluşturma
+# Sayıların Oluşturulması
 
 ## giriiş
-.NET için Groupdocs.Viewer'ı kullanarak Numbers dosyalarını işlemeye ilişkin bu adım adım eğitime hoş geldiniz. İster deneyimli bir geliştirici ister yeni başlayan biri olun, bu kılavuz size Numbers belgelerini çeşitli biçimlere dönüştürme sürecinde yol gösterecektir. Groupdocs.Viewer for .NET, belge görüntüleme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre etmenize olanak tanıyan güçlü bir araçtır.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Groupdocs.Viewer for .NET kullanarak Numbers dosyalarını işlemeye yönelik bu adım adım öğreticiye hoş geldiniz. İster deneyimli bir geliştirici olun ister yeni başlayan, bu kılavuz Numbers belgelerini çeşitli biçimlere dönüştürme sürecinde size yol gösterecektir. Groupdocs.Viewer for .NET, belge görüntüleme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre etmenizi sağlayan güçlü bir araçtır.
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 - C# ve .NET geliştirme konusunda çalışma bilgisi.
--  .NET kitaplığı için Groupdocs.Viewer yüklendi. İndirebilirsin[Burada](https://releases.groupdocs.com/viewer/net/).
-- Çıktı dosyalarının kaydedileceği belge dizini yolunuz.
+- Groupdocs.Viewer for .NET kütüphanesi yüklendi. İndirebilirsiniz [Burada](https://releases.groupdocs.com/viewer/net/).
+- Çıktı dosyalarının kaydedileceği belge dizin yolunuz.
 ## Ad Alanlarını İçe Aktar
 C# projenizde Groupdocs.Viewer kitaplığını kullanmak için gerekli ad alanlarını içe aktardığınızdan emin olun:
 ```csharp
@@ -25,13 +25,13 @@ using System.Text;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## 1. Adım: Çıkış Dizinini Ayarlayın
-Oluşturmaya başlamadan önce, dönüştürülen dosyaların kaydedileceği çıktı dizinini tanımlayın. "Belge Dizininiz"i gerçek yolla değiştirin:
+## Adım 1: Çıktı Dizinini Ayarlayın
+İşleme başlamadan önce, dönüştürülen dosyaların kaydedileceği çıktı dizinini tanımlayın. "Belge Dizininiz"i gerçek yol ile değiştirin:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 ## Adım 2: Çok Sayfalı HTML'ye Dönüştür
-Numbers dosyasını çok sayfalı HTML'ye dönüştürmek için aşağıdaki kodu kullanın:
+Numbers dosyasını çok sayfalı HTML'e dönüştürmek için aşağıdaki kodu kullanın:
 ```csharp
 string pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.html");
 using (Viewer viewer = new Viewer("SAMPLE.NUMBERS"))
@@ -40,7 +40,7 @@ using (Viewer viewer = new Viewer("SAMPLE.NUMBERS"))
     viewer.View(options);
 }
 ```
-## 3. Adım: JPG'ye dönüştürün
+## Adım 3: JPG'ye dönüştürün
 Numbers dosyasını aşağıdaki kodla JPG formatına dönüştürün:
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.jpg");
@@ -60,8 +60,8 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
     viewer.View(options);
 }
 ```
-## Adım 5: PDF'ye Dönüştür
-Son olarak, aşağıdaki kodu kullanarak Numbers dosyasını PDF formatına dönüştürün:
+## Adım 5: PDF'ye dönüştürün
+Son olarak Numbers dosyasını aşağıdaki kodu kullanarak PDF formatına dönüştürün:
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Numbers_result.pdf");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
@@ -70,17 +70,17 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_NUMBERS))
     viewer.View(options);
 }
 ```
-Tebrikler! Groupdocs.Viewer for .NET'i kullanarak Numbers dosyalarını başarıyla çeşitli formatlara dönüştürdünüz.
+Tebrikler! Groupdocs.Viewer for .NET kullanarak Numbers dosyalarını çeşitli biçimlere başarıyla dönüştürdünüz.
 ## Çözüm
-Bu eğitimde, Numbers dosyalarını Groupdocs.Viewer for .NET kullanarak oluşturmanın temellerini ele aldık. Bu güçlü kitaplık, .NET uygulamalarınızdaki belgeleri görüntülemek ve dönüştürmek için kusursuz entegrasyon sağlar.
+Bu eğitimde, .NET için Groupdocs.Viewer kullanarak Numbers dosyalarını işlemenin temellerini ele aldık. Bu güçlü kütüphane, .NET uygulamalarınızdaki belgeleri görüntülemek ve dönüştürmek için kusursuz bir entegrasyon sağlar.
 ## SSS
-### Groupdocs.Viewer for .NET'i diğer belge türleriyle kullanabilir miyim?
-Evet, Groupdocs.Viewer, aralarında Word, Excel, PDF ve daha fazlasının da bulunduğu çok çeşitli belge formatlarını destekler.
-### Test amaçlı geçici bir lisans mevcut mu?
- Evet, geçici lisans alabilirsiniz[Burada](https://purchase.groupdocs.com/temporary-license/) test için.
-### .NET için Groupdocs.Viewer desteğini nerede bulabilirim?
- Ziyaret edin[Groupdocs.Viewer Forumu](https://forum.groupdocs.com/c/viewer/9) Yardım ve tartışmalar için.
+### Groupdocs.Viewer for .NET'i diğer belge türleriyle birlikte kullanabilir miyim?
+Evet, Groupdocs.Viewer Word, Excel, PDF ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### Test amaçlı geçici lisans mevcut mudur?
+Evet, geçici bir lisans alabilirsiniz [Burada](https://purchase.groupdocs.com/temporary-license/) test için.
+### Groupdocs.Viewer for .NET için desteği nerede bulabilirim?
+Ziyaret edin [Groupdocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9) yardım ve tartışmalar için.
 ### Groupdocs.Viewer for .NET'in tam sürümünü nasıl satın alabilirim?
- Tam sürümünü satın alabilirsiniz[Burada](https://purchase.groupdocs.com/buy).
+Tam sürümü satın alabilirsiniz [Burada](https://purchase.groupdocs.com/buy).
 ### Ücretsiz deneme sürümü mevcut mu?
- Evet, ücretsiz deneme sürümünü keşfedebilirsiniz[Burada](https://releases.groupdocs.com/).
+Evet, ücretsiz deneme sürümünü keşfedebilirsiniz [Burada](https://releases.groupdocs.com/).

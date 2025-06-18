@@ -1,39 +1,39 @@
 ---
-title: Archívumok megjelenítése egyetlen vagy több HTML-oldalra
-linktitle: Archívumok megjelenítése egyetlen vagy több HTML-oldalra
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan lehet archívumokat HTML-oldalakká renderelni a GroupDocs.Viewer for .NET segítségével. Könnyedén integrálhatja a dokumentummegtekintési képességeket .NET-alkalmazásaiba.
-weight: 12
-url: /hu/net/rendering-archive-files/render-archives-html/
+"description": "Ismerje meg, hogyan jeleníthet meg archívumokat HTML oldalakká a GroupDocs.Viewer for .NET segítségével. Könnyedén integrálhatja a dokumentummegjelenítési funkciókat .NET alkalmazásaiba."
+"linktitle": "Archívumok renderelése egy vagy több HTML oldalra"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Archívumok renderelése egy vagy több HTML oldalra"
+"url": "/hu/net/rendering-archive-files/render-archives-html/"
+"weight": 12
 ---
 
-# Archívumok megjelenítése egyetlen vagy több HTML-oldalra
+# Archívumok renderelése egy vagy több HTML oldalra
 
 ## Bevezetés
-GroupDocs.Viewer for .NET egy hatékony dokumentum-megjelenítő könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén integrálják a dokumentummegtekintési képességeket .NET-alkalmazásaikba. Akár egyetlen, akár több HTML-oldalon kell archívumokat megjelenítenie, ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton.
+GroupDocs.Viewer for .NET egy hatékony dokumentummegjelenítő könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén integrálják a dokumentummegjelenítő funkciókat .NET alkalmazásaikba. Akár egy, akár több HTML oldalra kell archívumokat renderelni, ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton.
 ## Előfeltételek
-Mielőtt belevágna ebbe az oktatóanyagba, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-1.  GroupDocs.Viewer for .NET: Győződjön meg arról, hogy a könyvtár telepítve van a projektben. Letöltheti innen[itt](https://releases.groupdocs.com/viewer/net/).
-2. Fejlesztési környezet: A .NET fejlesztéshez be kell állítani egy működő fejlesztői környezetet.
-3. Dokumentumkönyvtár: Készítsen egy könyvtárat, ahol a dokumentumokat tárolja.
-4. A C# alapjai: Ismerkedjen meg a C# programozási nyelv alapjaival.
+Mielőtt belemerülnél ebbe az oktatóanyagba, győződj meg róla, hogy a következő előfeltételekkel rendelkezel:
+1. GroupDocs.Viewer .NET-hez: Győződjön meg arról, hogy a függvénytár telepítve van a projektjében. Letöltheti innen: [itt](https://releases.groupdocs.com/viewer/net/).
+2. Fejlesztői környezet: Rendelkezzen egy működő fejlesztői környezettel a .NET fejlesztéshez.
+3. Dokumentumkönyvtár: Hozz létre egy könyvtárat, ahová a dokumentumokat tárolni fogod.
+4. C# alapismeretek: Ismerkedjen meg a C# programozási nyelv alapjaival.
 
 ## Névterek importálása
-Győződjön meg arról, hogy a C# kódban importálta a szükséges névtereket:
+A C# kódodban ügyelj arra, hogy importáld a szükséges névtereket:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
 
-Kövesse az alábbi lépéseket az archívumok egyetlen vagy több HTML-oldalon történő megjelenítéséhez a GroupDocs.Viewer for .NET segítségével:
-## 1. lépés: Állítsa be a kimeneti könyvtárat
-Határozza meg azt a könyvtárat, ahová a renderelt HTML-oldalakat menteni szeretné:
+Kövesse az alábbi lépéseket az archívumok egy vagy több HTML oldalra történő rendereléséhez a GroupDocs.Viewer for .NET használatával:
+## 1. lépés: Kimeneti könyvtár beállítása
+Adja meg azt a könyvtárat, ahová a megjelenített HTML oldalakat menteni szeretné:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## 2. lépés: Határozza meg a fájl elérési út formátumát
-Adja meg a HTML-oldalak fájlútvonal-formátumát. Egyoldalas megjelenítéshez:
+## 2. lépés: Fájlútvonal-formátum meghatározása
+Adja meg a HTML-oldalak fájlelérési útvonalának formátumát. Egyoldalas megjelenítéshez:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result.html");
 ```
@@ -41,7 +41,7 @@ Többoldalas megjelenítéshez:
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_page_{0}.html");
 ```
-## 3. lépés: Renderelés egyoldalas HTML-ként
+## 3. lépés: Renderelés egyetlen oldalas HTML-ként
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
 {
@@ -50,12 +50,12 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
     viewer.View(options);
 }
 ```
-## 4. lépés: Rendereljen többoldalas HTML-ként
+## 4. lépés: Több oldalas HTML renderelés
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    options.ArchiveOptions.ItemsPerPage = 10; // Állítsa be az elemeket oldalanként
+    options.ArchiveOptions.ItemsPerPage = 10; // Elemek oldalankénti beállítása
     viewer.View(options);
 }
 ```
@@ -65,15 +65,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ```
 
 ## Következtetés
-Az archívumok HTML-oldalakká történő megjelenítése a GroupDocs.Viewer for .NET segítségével egyszerű folyamat. Az oktatóanyagban ismertetett lépések követésével zökkenőmentesen integrálhatja a dokumentummegtekintési képességeket .NET-alkalmazásaiba.
+Az archívumok HTML-oldalakká renderelése a GroupDocs.Viewer for .NET segítségével egy egyszerű folyamat. Az ebben az oktatóanyagban ismertetett lépéseket követve zökkenőmentesen integrálhatja a dokumentummegtekintési funkciókat a .NET-alkalmazásaiba.
 ## GYIK
-### Renderelhetek más dokumentumformátumokat is az archívumokon kívül?
-Igen, a GroupDocs.Viewer a dokumentumformátumok széles skáláját támogatja, beleértve a PDF, DOCX, XLSX, PPTX és egyebeket.
+### Megjeleníthetek más dokumentumformátumokat is az archívumokon kívül?
+Igen, a GroupDocs.Viewer számos dokumentumformátumot támogat, beleértve a PDF, DOCX, XLSX, PPTX és egyebeket.
 ### A GroupDocs.Viewer alkalmas asztali és webes alkalmazásokhoz is?
-Természetesen a GroupDocs.Viewer zökkenőmentesen használható asztali és webes alkalmazásokban egyaránt.
-### A GroupDocs.Viewer kínál testreszabási lehetőségeket a megjelenítői felülethez?
-Igen, testreszabhatja a megtekintő felületet igényei szerint.
-### Renderelhetek dokumentumokat aszinkron módon a GroupDocs.Viewer programmal?
-Igen, a GroupDocs.Viewer aszinkron megjelenítési képességeket biztosít a jobb teljesítmény érdekében.
-### A GroupDocs.Viewer támogatja a dokumentumok megjegyzéseit?
-Igen, a GroupDocs.Viewer segítségével a felhasználók hatékonyan tekinthetik meg és kezelhetik a dokumentumok megjegyzéseit.
+A GroupDocs.Viewer abszolút zökkenőmentesen használható mind asztali, mind webes alkalmazásokban.
+### GroupDocs.Viewer kínál testreszabási lehetőségeket a megjelenítő felületéhez?
+Igen, a megjelenítő felületét az igényei szerint testreszabhatja.
+### Renderelhetek dokumentumokat aszinkron módon a GroupDocs.Viewer segítségével?
+Igen, a GroupDocs.Viewer aszinkron renderelési képességeket biztosít a jobb teljesítmény érdekében.
+### A GroupDocs.Viewer támogatja a dokumentumokhoz fűzött megjegyzéseket?
+Igen, a GroupDocs.Viewer lehetővé teszi a felhasználók számára a dokumentumok jegyzeteinek hatékony megtekintését és kezelését.

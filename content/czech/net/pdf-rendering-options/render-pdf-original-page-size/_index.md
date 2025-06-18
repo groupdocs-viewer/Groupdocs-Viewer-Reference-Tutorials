@@ -1,27 +1,30 @@
 ---
-title: Vykreslit PDF s původní velikostí stránky
-linktitle: Vykreslit PDF s původní velikostí stránky
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se vykreslovat soubory PDF s původními velikostmi stránek pomocí GroupDocs.Viewer pro .NET. Postupujte podle našeho podrobného průvodce a plynule integrujte tuto funkci.
-weight: 17
-url: /cs/net/pdf-rendering-options/render-pdf-original-page-size/
+"description": "Naučte se, jak vykreslovat PDF soubory s původními velikostmi stránek pomocí GroupDocs.Viewer pro .NET. Postupujte podle našeho podrobného návodu a bezproblémově integrujte tuto funkci."
+"linktitle": "Vykreslit PDF s původní velikostí stránky"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslit PDF s původní velikostí stránky"
+"url": "/cs/net/pdf-rendering-options/render-pdf-original-page-size/"
+"weight": 17
 ---
 
 # Vykreslit PDF s původní velikostí stránky
 
-## Úvod
-V oblasti vývoje .NET GroupDocs.Viewer vyniká jako výkonný nástroj pro vykreslování různých formátů dokumentů, včetně PDF. Jedním z běžných požadavků při manipulaci s dokumenty je vykreslovat soubory PDF při zachování jejich původní velikosti stránky. Bezproblémové dosažení tohoto úkolu vyžaduje komplexní pochopení GroupDocs.Viewer for .NET a jeho funkcí.
+## Zavedení
+oblasti vývoje pro .NET vyniká GroupDocs.Viewer jako výkonný nástroj pro vykreslování různých formátů dokumentů, včetně PDF. Jedním z běžných požadavků při práci s dokumenty je vykreslování PDF souborů se zachováním jejich původní velikosti stránky. Bezproblémové dosažení tohoto úkolu vyžaduje komplexní znalost GroupDocs.Viewer pro .NET a jeho funkcí.
+
+![Vykreslení PDF s původní velikostí stránky pomocí GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/render-pdf-with-original-page-size.png)
+
 ## Předpoklady
-Než se pustíte do vykreslování souborů PDF s původními velikostmi stránek pomocí GroupDocs.Viewer for .NET, ujistěte se, že máte splněny následující předpoklady:
+Než se pustíte do vykreslování PDF souborů s původními velikostmi stránek pomocí nástroje GroupDocs.Viewer pro .NET, ujistěte se, že máte splněny následující předpoklady:
 ### 1. Nainstalujte GroupDocs.Viewer pro .NET
- Začněte stažením knihovny GroupDocs.Viewer z webu. Knihovnu můžete získat z poskytnutého[odkaz ke stažení](https://releases.groupdocs.com/viewer/net/). Postupujte podle pokynů k instalaci uvedených v dokumentaci, abyste jej efektivně integrovali do svého projektu .NET.
-### 2. Nastavte vývojové prostředí
-Ujistěte se, že máte vývojové prostředí nastavené pro vývoj .NET. To zahrnuje mít nainstalované kompatibilní IDE, jako je Visual Studio, a základní znalosti programování v C#.
+Začněte stažením knihovny GroupDocs.Viewer z webových stránek. Knihovnu můžete získat z dodaného [odkaz ke stažení](https://releases.groupdocs.com/viewer/net/)Pro efektivní integraci do vašeho .NET projektu postupujte podle pokynů k instalaci uvedených v dokumentaci.
+### 2. Nastavení vývojového prostředí
+Ujistěte se, že máte nastavené vývojové prostředí pro vývoj v .NET. To zahrnuje instalaci kompatibilního IDE, jako je Visual Studio, a základní znalost programování v C#.
 ### 3. Získejte dokument PDF
-K vykreslení pomocí GroupDocs.Viewer budete potřebovat vzorový dokument PDF. Pro účely testování můžete použít jakýkoli dokument PDF. Pokud jej nemáte, můžete si stáhnout ukázku PDF z různých online zdrojů.
+Pro vykreslení pomocí GroupDocs.Viewer budete potřebovat vzorový PDF dokument. Pro testovací účely můžete použít libovolný PDF dokument. Pokud žádný nemáte, můžete si vzorový PDF stáhnout z různých online zdrojů.
 
 ## Importovat jmenné prostory
-Než budete pokračovat s vykreslováním PDF, je nezbytné importovat potřebné jmenné prostory do vašeho projektu C#. Tento krok umožňuje přístup k požadovaným třídám a metodám z knihovny GroupDocs.Viewer.
+Než budete pokračovat s vykreslováním PDF souborů, je nezbytné importovat potřebné jmenné prostory do vašeho projektu C#. Tento krok vám umožní přístup k požadovaným třídám a metodám z knihovny GroupDocs.Viewer.
 
 ```csharp
 using System;
@@ -29,17 +32,17 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Nyní, když máte připravené předpoklady a importované potřebné jmenné prostory, pojďme si rozdělit proces vykreslování PDF s původními velikostmi stránek pomocí GroupDocs.Viewer pro .NET do jednoduchých kroků:
-## Krok 1: Definujte výstupní adresář
+Nyní, když máte splněny předpoklady a importovány potřebné jmenné prostory, pojďme si rozebrat proces vykreslování PDF s původními velikostmi stránek pomocí GroupDocs.Viewer pro .NET do jednoduchých kroků:
+## Krok 1: Definování výstupního adresáře
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Ujistěte se, že jste určili adresář, kam chcete ukládat vykreslené stránky. Nahradit`"Your Document Directory"` s cestou k požadovanému adresáři.
-## Krok 2: Definujte formát cesty k souboru stránky
+Ujistěte se, že jste zadali adresář, kam chcete uložit vykreslené stránky. Nahraďte `"Your Document Directory"` s cestou k požadovanému adresáři.
+## Krok 2: Definování formátu cesty k souboru stránky
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.png");
 ```
-Nastavte formát pro pojmenování souborů vykreslených stránek. V tomto příkladu budou stránky uloženy jako obrázky PNG s názvy souborů ve formátu`"page_1.png"`, `"page_2.png"`, a tak dále.
+Nastavte formát pro pojmenování vykreslených souborů stránek. V tomto příkladu budou stránky uloženy jako obrázky PNG s názvy souborů ve formátu `"page_1.png"`, `"page_2.png"`, a tak dále.
 ## Krok 3: Vykreslení PDF s původní velikostí stránky
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_Your_PDF_File.pdf"))
@@ -50,23 +53,23 @@ using (Viewer viewer = new Viewer("Path_to_Your_PDF_File.pdf"))
     viewer.View(viewOptions);
 }
 ```
- Instantovat a`Viewer` objekt s cestou k vašemu souboru PDF. Poté vytvořte`PngViewOptions` se zadaným formátem cesty k souboru stránky. Soubor`RenderOriginalPageSize` majetek do`true` pro zachování původní velikosti stránek při vykreslování.
-## Krok 4: Zobrazte umístění vykresleného dokumentu
+Vytvořte instanci `Viewer` objekt s cestou k vašemu PDF souboru. Poté vytvořte `PngViewOptions` se zadaným formátem cesty k souboru stránky. Nastavit `RenderOriginalPageSize` majetek `true` zachovat původní velikosti stránky při vykreslování.
+## Krok 4: Zobrazení umístění vykresleného dokumentu
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Vytiskněte zprávu o úspěšném vykreslení a uveďte adresář, kde jsou vykreslené stránky uloženy.
+Vytiskněte zprávu oznamující úspěšné vykreslení a zadejte adresář, kam jsou uloženy vykreslené stránky.
 
 ## Závěr
-Vykreslování PDF s původními velikostmi stránek pomocí GroupDocs.Viewer for .NET je jednoduchý proces, pokud budete postupovat podle kroků uvedených v tomto kurzu. Importováním potřebných jmenných prostorů a dodržováním podrobného průvodce můžete tuto funkci bez problémů integrovat do svých aplikací .NET.
-## FAQ
-### Může GroupDocs.Viewer vykreslovat jiné formáty dokumentů kromě PDF?
+Vykreslování PDF souborů s původními velikostmi stránek pomocí GroupDocs.Viewer pro .NET je při dodržení kroků uvedených v tomto tutoriálu snadnou záležitostí. Importem potřebných jmenných prostorů a dodržením podrobných pokynů můžete tuto funkci bezproblémově integrovat do svých aplikací .NET.
+## Často kladené otázky
+### Může GroupDocs.Viewer vykreslit i jiné formáty dokumentů než PDF?
 Ano, GroupDocs.Viewer podporuje vykreslování různých formátů dokumentů, včetně Wordu, Excelu, PowerPointu a dalších.
 ### Je GroupDocs.Viewer kompatibilní s .NET Core?
 Ano, GroupDocs.Viewer je kompatibilní s prostředím .NET Framework i .NET Core.
-### Mohu přizpůsobit výstupní formát vykreslených stránek?
-Ano, výstupní formát si můžete přizpůsobit úpravou možností, které poskytuje GroupDocs.Viewer, jako je nastavení různých formátů obrázků nebo zadání vlastních možností vykreslování.
+### Mohu si přizpůsobit výstupní formát vykreslených stránek?
+Ano, výstupní formát si můžete přizpůsobit úpravou možností, které nabízí GroupDocs.Viewer, například nastavením různých formátů obrázků nebo zadáním vlastních možností vykreslování.
 ### Nabízí GroupDocs.Viewer podporu pro cloudové vykreslování dokumentů?
-Ano, GroupDocs.Viewer poskytuje rozhraní API pro cloudové vykreslování dokumentů, což vám umožňuje vykreslovat dokumenty přímo od poskytovatelů cloudového úložiště.
-### Je k dispozici bezplatná zkušební verze pro GroupDocs.Viewer?
- Ano, můžete prozkoumat GroupDocs.Viewer s bezplatnou zkušební verzí, když navštívíte poskytnuté[odkaz](https://releases.groupdocs.com/).
+Ano, GroupDocs.Viewer poskytuje API pro cloudové vykreslování dokumentů, což vám umožňuje vykreslovat dokumenty přímo od poskytovatelů cloudového úložiště.
+### Je k dispozici bezplatná zkušební verze GroupDocs.Viewer?
+Ano, GroupDocs.Viewer si můžete vyzkoušet s bezplatnou zkušební verzí na poskytnuté stránce. [odkaz](https://releases.groupdocs.com/).

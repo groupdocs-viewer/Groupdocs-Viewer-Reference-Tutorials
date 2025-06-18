@@ -1,29 +1,29 @@
 ---
-title: Renderelés specifikus projektidőintervallum (MS Project)
-linktitle: Renderelés specifikus projektidőintervallum (MS Project)
-second_title: GroupDocs.Viewer .NET API
-description: Integrálja a GroupDocs.Viewer for .NET-et zökkenőmentesen alkalmazásaiba a hatékony dokumentummegtekintés érdekében. Növelje a termelékenységet a sokoldalú renderelési képességekkel.
-weight: 12
-url: /hu/net/rendering-ms-project-documents/render-project-time-interval-ms-project/
+"description": "Integrálja zökkenőmentesen a GroupDocs.Viewer for .NET alkalmazást alkalmazásaiba a hatékony dokumentummegtekintés érdekében. Növelje a termelékenységet a sokoldalú renderelési képességekkel."
+"linktitle": "Renderelési specifikus projekt időintervallum (MS Project)"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Renderelési specifikus projekt időintervallum (MS Project)"
+"url": "/hu/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
+"weight": 12
 ---
 
-# Renderelés specifikus projektidőintervallum (MS Project)
+# Renderelési specifikus projekt időintervallum (MS Project)
 
 ## Bevezetés
-A szoftverfejlesztés területén a különböző dokumentumformátumok hatékony kezelése és renderelése a legfontosabb. Legyen szó dokumentumok megtekintéséről vagy manipulálásáról, a megfelelő eszközök birtokában jelentősen növelheti a termelékenységet és ésszerűsítheti a folyamatokat. A GroupDocs.Viewer for .NET sokoldalú megoldásként tűnik ki, és lehetőséget kínál a fejlesztőknek, hogy zökkenőmentesen integrálják a dokumentummegtekintési képességeket .NET-alkalmazásaikba.
+A szoftverfejlesztés területén a különféle dokumentumformátumok hatékony kezelése és megjelenítése kiemelkedő fontosságú. Legyen szó dokumentumok megtekintéséről vagy manipulálásáról, a megfelelő eszközök jelentősen növelhetik a termelékenységet és egyszerűsíthetik a folyamatokat. A GroupDocs.Viewer for .NET sokoldalú megoldásként tűnik ki, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentummegtekintési funkciókat .NET alkalmazásaikba.
 ## Előfeltételek
-Mielőtt belevágna a GroupDocs.Viewer for .NET integrációjába, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-### 1. A .NET-keretrendszer ismerete
-Győződjön meg arról, hogy alapvető ismeretekkel rendelkezik a .NET keretrendszerről, beleértve a C# programozási nyelvet és a Visual Studio IDE-t.
+Mielőtt belemerülne a GroupDocs.Viewer for .NET integrációjába, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+### 1. Ismeri a .NET keretrendszert
+Győződjön meg arról, hogy rendelkezik a .NET keretrendszer alapvető ismereteivel, beleértve a C# programozási nyelvet és a Visual Studio IDE-t.
 ### 2. A GroupDocs.Viewer telepítése .NET-hez
- Töltse le és telepítse a GroupDocs.Viewer for .NET programot a[letöltési link](https://releases.groupdocs.com/viewer/net/). Kövesse a kapott telepítési utasításokat a könyvtár beállításához a fejlesztői környezetben.
-### 3. Érvényes licenc vagy ideiglenes licenc
- Szerezzen be érvényes engedélyt innen[GroupDocs](https://purchase.groupdocs.com/buy) vagy ideiglenes engedélyt szerezni tőle[itt](https://purchase.groupdocs.com/temporary-license/) a GroupDocs.Viewer for .NET teljes funkciójának kihasználásához.
-### 4. Dokumentumminta
-Készítsen egy mintadokumentumot, például egy MS Project fájlt a renderelési funkcionalitás tesztelésére.
+Töltse le és telepítse a GroupDocs.Viewer for .NET programot a következő címről: [letöltési link](https://releases.groupdocs.com/viewer/net/)Kövesse a mellékelt telepítési utasításokat a könyvtár fejlesztői környezetében történő beállításához.
+### 3. Érvényes vagy ideiglenes engedély
+Szerezzen be érvényes jogosítványt [Csoportdokumentumok](https://purchase.groupdocs.com/buy) vagy szerezzen ideiglenes engedélyt [itt](https://purchase.groupdocs.com/temporary-license/) a GroupDocs.Viewer for .NET teljes funkcionalitásának kihasználásához.
+### 4. Mintadokumentum
+Készítsen elő egy minta dokumentumot, például egy MS Project fájlt a renderelési funkció teszteléséhez.
 
 ## Névterek importálása
-Építse be a szükséges névtereket a projektbe, hogy elérje a GroupDocs.Viewer for .NET funkcióit.
+Építse be a szükséges névtereket a projektbe a GroupDocs.Viewer for .NET által biztosított funkciók eléréséhez.
 
 ```csharp
 using System;
@@ -32,59 +32,59 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-Bontsuk le a példát egy adott projekt időintervallumának egy MS Project fájlból történő megjelenítésére több lépésre:
-## 1. lépés: Határozza meg a kimeneti könyvtárat
+Bontsuk le egy adott projektidőintervallum MS Project fájlból történő renderelésének példáját több lépésre:
+## 1. lépés: Kimeneti könyvtár definiálása
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-Adja meg azt a könyvtárat, ahová a renderelt HTML-oldalak mentésre kerülnek.
-## 2. lépés: Határozza meg az oldalfájl elérési út formátumát
+Adja meg azt a könyvtárat, ahová a megjelenített HTML oldalak mentésre kerülnek.
+## 2. lépés: Oldalfájl elérési útjának formátumának meghatározása
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Állítsa be az egyes megjelenített HTML-oldalak fájlútvonalának formátumát.
-## 3. lépés: Példányosítsa a Viewer objektumot
+Állítsa be az egyes megjelenített HTML-oldalak fájlelérési útjának formátumát.
+## 3. lépés: Viewer objektum példányosítása
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MPP))
 ```
-Hozzon létre egy példányt a Viewer osztályból, átadva az elérési utat a minta MS Project fájlhoz.
-## 4. lépés: Konfigurálja a HTML nézet beállításait
+Hozz létre egy példányt a Viewer osztályból, átadva az elérési utat a minta MS Project fájlhoz.
+## 4. lépés: HTML nézet beállításainak konfigurálása
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-Konfigurálja a HTML-nézeti beállításokat a megjelenítéshez, megadva a beágyazott erőforrások formátumát.
-## 5. lépés: A Project Management View információk lekérése
+HTML nézet beállításainak konfigurálása a megjelenítéshez, megadva a beágyazott erőforrások formátumát.
+## 5. lépés: Projektmenedzsment nézet információinak lekérése
 ```csharp
 ProjectManagementViewInfo viewInfo = viewer.GetViewInfo(ViewInfoOptions.FromHtmlViewOptions(options)) as ProjectManagementViewInfo;
 ```
-A projektmenedzsment nézet információinak lekérése a projekt kezdő és befejező dátumának meghatározásához.
-## 6. lépés: Állítsa be a kezdési és befejezési dátumot
+Projektvezetési nézet információinak lekérése a projekt kezdési és befejezési dátumának meghatározásához.
+## 6. lépés: Kezdő és befejező dátumok beállítása
 ```csharp
 options.ProjectManagementOptions.StartDate = viewInfo.StartDate;
 options.ProjectManagementOptions.EndDate = viewInfo.StartDate.AddDays(7);
 ```
-Állítsa be a megjelenítendő projektintervallum kezdő és befejező dátumát.
-## 7. lépés: Renderelje le a dokumentumot
+Állítsa be a renderelni kívánt projektintervallum kezdési és befejezési dátumát.
+## 7. lépés: Dokumentum renderelése
 ```csharp
 viewer.View(options);
 ```
 Indítsa el a renderelési folyamatot a megadott beállításokkal.
-## 8. lépés: Jelenítse meg a kimeneti könyvtárat
+## 8. lépés: Kimeneti könyvtár megjelenítése
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Értesítse a felhasználót a sikeres renderelésről, és jelenítse meg azt a könyvtárat, ahová a kimenetet menti.
+Értesítse a felhasználót a sikeres renderelést, és jelenítse meg a kimenet mentési könyvtárát.
 
 ## Következtetés
-GroupDocs.Viewer for .NET projektjeibe való integrálása lehetővé teszi a dokumentummegtekintési feladatok hatékony kezelését, javítva a felhasználói élményt és a termelékenységet. A részletes útmutatót követve zökkenőmentesen beépítheti a dokumentum-megjelenítési funkciókat .NET-alkalmazásaiba.
+A GroupDocs.Viewer for .NET integrálása a projektjeibe lehetővé teszi a dokumentummegtekintési feladatok hatékony kezelését, javítva a felhasználói élményt és a termelékenységet. A mellékelt lépésenkénti útmutató követésével zökkenőmentesen beépítheti a dokumentumrenderelési funkciókat .NET alkalmazásaiba.
 ## GYIK
 ### A GroupDocs.Viewer for .NET kompatibilis az összes dokumentumformátummal?
-A GroupDocs.Viewer for .NET a dokumentumformátumok széles skáláját támogatja, beleértve a Microsoft Office-t, a PDF-et, a CAD-et és egyebeket.
+A GroupDocs.Viewer for .NET számos dokumentumformátumot támogat, beleértve a Microsoft Office, PDF, CAD és egyebeket.
 ### Testreszabhatom a renderelt dokumentumok megjelenését?
-Igen, testreszabhatja a renderelési folyamat különböző aspektusait, például az oldalelrendezést, a vízjeleket és az oldalforgatást.
-### A GroupDocs.Viewer for .NET alkalmas webes alkalmazásokhoz?
-Természetesen a GroupDocs.Viewer for .NET zökkenőmentesen integrálható webes alkalmazásokba, hogy dokumentummegtekintési lehetőségeket biztosítson.
+Igen, testreszabhatja a renderelési folyamat különböző aspektusait, például az oldalelrendezést, a vízjelezést és az oldalforgatást.
+### Alkalmas-e a GroupDocs.Viewer for .NET webes alkalmazásokhoz?
+GroupDocs.Viewer for .NET természetesen zökkenőmentesen integrálható webes alkalmazásokba, így dokumentummegtekintési lehetőségeket biztosít.
 ### A GroupDocs.Viewer for .NET támogatja a mobil platformokat?
-Igen, a GroupDocs.Viewer for .NET támogatja a mobilplatformokat, lehetővé téve az érzékeny dokumentummegtekintési funkciókkal rendelkező alkalmazások létrehozását.
-### Van olyan közösségi fórum, ahol segítséget kérhetek a GroupDocs.Viewer for .NET-hez?
- Igen, meglátogathatja a[GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) kérdéseket feltenni, ötleteket megosztani, és kapcsolatba lépni más felhasználókkal és fejlesztőkkel.
+Igen, a GroupDocs.Viewer for .NET támogatja a mobil platformokat, így reszponzív dokumentummegjelenítő funkciókkal rendelkező alkalmazásokat hozhat létre.
+### Van közösségi fórum, ahol segítséget kérhetek a GroupDocs.Viewer for .NET-tel kapcsolatban?
+Igen, meglátogathatja a [GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) kérdéseket feltenni, ötleteket megosztani, és más felhasználókkal és fejlesztőkkel kapcsolatba lépni.

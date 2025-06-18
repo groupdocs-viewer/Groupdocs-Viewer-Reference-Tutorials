@@ -1,24 +1,24 @@
 ---
-title: Gizli Sayfaları Oluştur
-linktitle: Gizli Sayfaları Oluştur
-second_title: GroupDocs.Viewer .NET API'si
-description: Sorunsuz belge işleme için .NET uygulamanızı GroupDocs.Viewer ile geliştirin. Gizli sayfaları zahmetsizce oluşturmak için adım adım kılavuzumuzu izleyin.
-weight: 15
-url: /tr/net/rendering-options/render-hidden-pages/
+"description": "Sorunsuz belge oluşturma için .NET uygulamanızı GroupDocs.Viewer ile geliştirin. Gizli sayfaları zahmetsizce oluşturmak için adım adım kılavuzumuzu izleyin."
+"linktitle": "Gizli Sayfaları Oluştur"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Gizli Sayfaları Oluştur"
+"url": "/tr/net/rendering-options/render-hidden-pages/"
+"weight": 15
 ---
 
 # Gizli Sayfaları Oluştur
 
 ## giriiş
-.NET geliştirme dünyasında, belgeleri verimli bir şekilde yönetmek ve görüntülemek çok önemlidir. İster dahili kullanım, müşteri sunumları veya web uygulamaları olsun, çeşitli belge formatlarını sorunsuz bir şekilde görüntüleme yeteneğine sahip olmak bir zorunluluktur. GroupDocs.Viewer for .NET tam da burada devreye giriyor. Güçlü özellikleri ve sezgisel arayüzüyle GroupDocs.Viewer, .NET uygulamalarınızda belge oluşturma sürecini basitleştirir.
-## Önkoşullar
-.NET için GroupDocs.Viewer'ı kullanmaya başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+.NET geliştirme dünyasında, belgeleri etkin bir şekilde yönetmek ve görüntülemek hayati önem taşır. İster dahili kullanım, ister müşteri sunumları veya web uygulamaları için olsun, çeşitli belge biçimlerini sorunsuz bir şekilde görüntüleme yeteneğine sahip olmak bir zorunluluktur. İşte .NET için GroupDocs.Viewer'ın devreye girdiği yer burasıdır. Güçlü özellikleri ve sezgisel arayüzüyle GroupDocs.Viewer, .NET uygulamalarınızda belgeleri işleme sürecini basitleştirir.
+## Ön koşullar
+GroupDocs.Viewer for .NET'i kullanmaya başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 ### 1. .NET Geliştirme Bilgisi
-GroupDocs.Viewer'ı uygulamalarınızda etkili bir şekilde kullanmak için C# programlama ve .NET çerçevesine aşina olmak çok önemlidir.
-### 2. GroupDocs.Viewer'ın Kurulumu
- .NET için GroupDocs.Viewer'ı indirip yüklemeniz gerekir. adresinden indirebilirsiniz.[İnternet sitesi](https://releases.groupdocs.com/viewer/net/).
+GroupDocs.Viewer'ı uygulamalarınızda etkili bir şekilde kullanmak için C# programlama ve .NET framework'e aşina olmanız gerekir.
+### 2. GroupDocs.Viewer Kurulumu
+.NET için GroupDocs.Viewer'ı indirmeniz ve yüklemeniz gerekir. Bunu şuradan indirebilirsiniz: [web sitesi](https://releases.groupdocs.com/viewer/net/).
 ### 3. Belge Dosyaları
-Oluşturmak istediğiniz belge dosyalarını hazırlayın. GroupDocs.Viewer, PDF, Microsoft Word, Excel, PowerPoint ve daha fazlası gibi çeşitli formatları destekler.
+İşlemek istediğiniz belge dosyalarını hazırlayın. GroupDocs.Viewer, PDF, Microsoft Word, Excel, PowerPoint ve daha fazlası gibi çeşitli formatları destekler.
 
 ## Ad Alanlarını İçe Aktar
 GroupDocs.Viewer'ı .NET uygulamanızda kullanmaya başlamak için gerekli ad alanlarını içe aktarın:
@@ -27,51 +27,51 @@ using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Adım 1: Çıkış Dizinini Ayarlayın
-İlk olarak, oluşturulan sayfaları kaydetmek istediğiniz dizini tanımlayın:
+## Adım 1: Çıktı Dizinini Ayarla
+Öncelikle oluşturulan sayfaların kaydedileceği dizini tanımlayın:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Adım 2: Sayfa Dosya Yolu Formatını Tanımlayın
-İşlenen her sayfanın dosya yollarının formatını belirtin:
+## Adım 2: Sayfa Dosyası Yolu Biçimini Tanımlayın
+Her oluşturulan sayfanın dosya yollarının biçimini belirtin:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## 3. Adım: Görüntüleyici Nesnesini Başlatın
-Oluşturmak istediğiniz belgenin yolunu ileterek Viewer sınıfının bir örneğini oluşturun:
+## Adım 3: Görüntüleyici Nesnesini Başlatın
+İşlemek istediğiniz belgenin yolunu ileterek Viewer sınıfının bir örneğini oluşturun:
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_Your_Document"))
 {
-    // Oluşturma seçenekleri burada uygulanacak
+    // Burada işleme seçenekleri uygulanacaktır
 }
 ```
-## 4. Adım: HTML Görünüm Seçeneklerini Yapılandırma
-HTML görünümü oluşturma seçeneklerini tanımlayın ve gizli sayfaların oluşturulup oluşturulmayacağını belirtin:
+## Adım 4: HTML Görünüm Seçeneklerini Yapılandırın
+HTML görünümünün oluşturulması için seçenekleri tanımlayın ve gizli sayfaların oluşturulup oluşturulmayacağını belirtin:
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.RenderHiddenPages = true;
 ```
 ## Adım 5: Belgeyi Oluşturun
- Çağır`View` görüntüleyici nesnesinin yöntemini ve oluşturma seçeneklerini iletin:
+Çağırmak `View` Görüntüleyici nesnesinin yöntemini kullanın ve işleme seçeneklerini iletin:
 ```csharp
 viewer.View(options);
 ```
-## Adım 6: Çıkış Dizinini Görüntüleyin
-Kullanıcıyı başarılı oluşturma ve çıktı dizininin konumu hakkında bilgilendirin:
+## Adım 6: Çıktı Dizinini Görüntüle
+Kullanıcıya başarılı işleme ve çıktı dizininin konumu hakkında bilgi verin:
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Çözüm
-GroupDocs.Viewer for .NET, .NET uygulamaları içinde belgelerin işlenmesi için kusursuz bir çözüm sunar. Bu eğitimde özetlenen adımları izleyerek, çeşitli belge formatlarındaki gizli sayfaları yalnızca birkaç satır kodla kolayca oluşturabilirsiniz.
-## SSS'ler
-### GroupDocs.Viewer, PowerPoint sunumları dışındaki belgeleri görüntüleyebilir mi?
-Evet, GroupDocs.Viewer PDF, Word, Excel ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
-### GroupDocs.Viewer .NET'in tüm sürümleriyle uyumlu mu?
-GroupDocs.Viewer, .NET çerçevesinin çoğu sürümüyle uyumlu olduğundan geliştiricilere esneklik sağlar.
-### İşleme seçeneklerini uygulamamın gereksinimlerine göre özelleştirebilir miyim?
-GroupDocs.Viewer kesinlikle çeşitli özelleştirme seçenekleri sunarak geliştiricilerin işleme sürecini gerektiği gibi uyarlamasına olanak tanır.
-### Satın almadan önce test edebileceğiniz bir deneme sürümü var mı?
-Evet, ücretsiz deneme sürümünden yararlanabilirsiniz.[İnternet sitesi](https://releases.groupdocs.com/) GroupDocs.Viewer'ın yeteneklerini değerlendirmek için.
-### GroupDocs.Viewer ile ilgili herhangi bir sorunla karşılaşırsam veya sorularım olursa nereden yardım isteyebilirim?
- GroupDocs.Viewer forumunu şu adreste ziyaret edebilirsiniz:[GroupDocs Forumları](https://forum.groupdocs.com/c/viewer/9) sorular sormak ve destek için toplulukla etkileşime geçmek.
+.NET için GroupDocs.Viewer, .NET uygulamaları içinde belgeleri işlemek için kusursuz bir çözüm sunar. Bu eğitimde özetlenen adımları izleyerek, sadece birkaç satır kodla çeşitli belge biçimlerinden gizli sayfaları kolayca işleyebilirsiniz.
+## SSS
+### GroupDocs.Viewer, PowerPoint sunumları dışındaki belgeleri de işleyebilir mi?
+Evet, GroupDocs.Viewer PDF, Word, Excel ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### GroupDocs.Viewer .NET'in tüm sürümleriyle uyumlu mudur?
+GroupDocs.Viewer, .NET framework'ün çoğu sürümüyle uyumludur ve geliştiricilere esneklik sağlar.
+### Uygulamamın gereksinimlerine göre render seçeneklerini özelleştirebilir miyim?
+Kesinlikle, GroupDocs.Viewer çeşitli özelleştirme seçenekleri sunarak geliştiricilerin ihtiyaç duydukları şekilde işleme sürecini kişiselleştirmelerine olanak tanır.
+### Satın almadan önce test etmek için deneme sürümü mevcut mu?
+Evet, ücretsiz denemeden yararlanabilirsiniz [web sitesi](https://releases.groupdocs.com/) GroupDocs.Viewer'ın yeteneklerini değerlendirmek için.
+### GroupDocs.Viewer ile ilgili herhangi bir sorunla karşılaşırsam veya sorularım olursa nereden yardım alabilirim?
+GroupDocs.Viewer forumunu şu adreste ziyaret edebilirsiniz: [GroupDocs Forumları](https://forum.groupdocs.com/c/viewer/9) Soru sormak ve destek için toplulukla etkileşim kurmak.

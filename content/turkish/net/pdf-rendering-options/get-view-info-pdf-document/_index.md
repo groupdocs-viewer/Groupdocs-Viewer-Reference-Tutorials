@@ -1,24 +1,27 @@
 ---
-title: PDF Belgesi için Görüntüleme Bilgisini Alın
-linktitle: PDF Belgesi için Görüntüleme Bilgisini Alın
-second_title: GroupDocs.Viewer .NET API'si
-description: Bu kapsamlı eğitimde GroupDocs.Viewer for .NET'i kullanarak PDF belgelerinden görünüm bilgilerini nasıl çıkaracağınızı öğrenin.
-weight: 16
-url: /tr/net/pdf-rendering-options/get-view-info-pdf-document/
+"description": "Bu kapsamlı eğitimde, .NET için GroupDocs.Viewer'ı kullanarak PDF belgelerinden görünüm bilgilerinin nasıl çıkarılacağını öğrenin."
+"linktitle": "PDF Belgesi için Görünüm Bilgisini Alın"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "PDF Belgesi için Görünüm Bilgisini Alın"
+"url": "/tr/net/pdf-rendering-options/get-view-info-pdf-document/"
+"weight": 16
 ---
 
-# PDF Belgesi için Görüntüleme Bilgisini Alın
+# PDF Belgesi için Görünüm Bilgisini Alın
 
 ## giriiş
-GroupDocs.Viewer for .NET, .NET uygulamalarında belge görüntülemeyi kolaylaştırmak için tasarlanmış güçlü bir araçtır. İster PDF'ler, Word belgeleri, Excel elektronik tabloları veya PowerPoint sunumlarıyla çalışıyor olun, bu kitaplık çeşitli dosya formatlarını oluşturma ve bunlarla etkileşim kurma sürecini basitleştirir. Bu eğitimde, özellikle PDF belgelerinden görünüm bilgilerinin çıkarılmasına yönelik GroupDocs.Viewer'ın özelliklerinden yararlanmaya odaklanacağız.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-1.  .NET için GroupDocs.Viewer kurulumu: GroupDocs.Viewer kitaplığını indirip yüklediğinizden emin olun. adresinden temin edebilirsiniz.[İndirme: {link](https://releases.groupdocs.com/viewer/net/).   
-2. Temel C# Bilgisi: Sağlanan kod örneklerini anlamak ve uygulamak için C# programlama diline aşina olmak çok önemlidir.
-3. PDF Belgesine Erişim: Görünüm bilgilerini çıkarmak için kullanacağınız bir PDF belgesini hazır bulundurun.
+.NET için GroupDocs.Viewer, .NET uygulamaları içinde belge görüntülemeyi kolaylaştırmak için tasarlanmış güçlü bir araçtır. İster PDF'lerle, ister Word belgeleriyle, ister Excel elektronik tablolarıyla veya PowerPoint sunumlarıyla uğraşıyor olun, bu kitaplık çeşitli dosya biçimleriyle işleme ve etkileşim kurma sürecini basitleştirir. Bu eğitimde, özellikle PDF belgelerinden görünüm bilgilerini çıkarmak için GroupDocs.Viewer'ın yeteneklerinden yararlanmaya odaklanacağız.
+
+![GroupDocs.Viewer .NET ile PDF Belgesi için Görünüm Bilgisi Alın](/viewer/pdf-rendering-options/get-view-iInfo-for-pdf-document.png)
+
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+1. .NET için GroupDocs.Viewer Kurulumu: GroupDocs.Viewer kütüphanesini indirip kurduğunuzdan emin olun. Bunu şu adresten edinebilirsiniz: [indirme bağlantısı](https://releases.groupdocs.com/viewer/net/).   
+2. Temel C# Bilgisi: Sağlanan kod örneklerini anlamak ve uygulamak için C# programlama diline aşina olmak şarttır.
+3. PDF Belgesine Erişim: Görünüm bilgilerini çıkarmak için kullanacağınız bir PDF belgeniz hazır olsun.
 
 ## Ad Alanlarını İçe Aktar
-C# projenizde GroupDocs.Viewer işlevlerini kullanmak için gerekli ad alanlarını içe aktarın.
+C# projenizde GroupDocs.Viewer fonksiyonlarını kullanabilmek için gerekli ad alanlarını içe aktarın.
 
 ```csharp
 using System;
@@ -27,9 +30,9 @@ using GroupDocs.Viewer.Results;
 ```
 
 
-Şimdi GroupDocs.Viewer for .NET'i kullanarak bir PDF belgesinden görünüm bilgilerini alma sürecini inceleyelim.
-## 1. Adım: Görüntüleyici Nesnesini Başlatın
-Bir Viewer nesnesi oluşturun ve PDF belgesinin yolunu parametre olarak belirtin.
+Şimdi, .NET için GroupDocs.Viewer'ı kullanarak bir PDF belgesinden görünüm bilgilerini alma sürecini parçalara ayıralım.
+## Adım 1: Görüntüleyici Nesnesini Başlat
+Bir Görüntüleyici nesnesi oluşturun ve parametre olarak PDF belgesinin yolunu sağlayın.
 ```csharp
 using (Viewer viewer = new Viewer("path/to/your/sample.pdf"))
 {
@@ -39,12 +42,12 @@ Görünüm bilgilerini almak için HTML görünümü gibi görünüm seçenekler
 ```csharp
 	ViewInfoOptions options = ViewInfoOptions.ForHtmlView();
 ```
-## 3. Adım: Görünüm Bilgilerini Alın
-PDF belgesinden görünüm bilgilerini ayıklamak için GetViewInfo yöntemini çağırın.
+## Adım 3: Görünüm Bilgilerini Alın
+PDF belgesinden görünüm bilgilerini çıkarmak için GetViewInfo metodunu çağırın.
 ```csharp
 	PdfViewInfo info = viewer.GetViewInfo(options) as PdfViewInfo;
 ```
-## Adım 4: Çıktı Görünümü Bilgileri
+## Adım 4: Çıkış Görünümü Bilgileri
 Belge türü, sayfa sayısı ve yazdırma izinleri gibi çıkarılan görünüm bilgilerini görüntüleyin.
 ```csharp
 	Console.WriteLine("Document type is: " + info.FileType);
@@ -54,15 +57,15 @@ Belge türü, sayfa sayısı ve yazdırma izinleri gibi çıkarılan görünüm 
 ```
 
 ## Çözüm
-Bu eğitimde, PDF belgelerinden görünüm bilgilerini çıkarmak için GroupDocs.Viewer for .NET'in nasıl kullanılacağını araştırdık. Verilen adımları izleyerek, bu işlevselliği .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir, belge yönetimi ve görüntüleme yeteneklerini geliştirebilirsiniz.
-## SSS'ler
-### GroupDocs.Viewer, PDF'nin yanı sıra diğer dosya formatlarıyla da uyumlu mu?
-Evet, GroupDocs.Viewer, aralarında Word, Excel, PowerPoint ve daha fazlasının da bulunduğu çok çeşitli belge formatlarını destekler.
-### Görünüm seçeneklerini uygulamamın gereksinimlerine göre özelleştirebilir miyim?
-Kesinlikle GroupDocs.Viewer, izleme deneyiminizi özel ihtiyaçlarınıza göre uyarlamak için çeşitli seçenekler sunar.
+Bu eğitimde, PDF belgelerinden görünüm bilgilerini çıkarmak için GroupDocs.Viewer for .NET'i nasıl kullanacağınızı inceledik. Sağlanan adımları izleyerek, bu işlevselliği .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir, belge yönetimi ve görüntüleme yeteneklerini geliştirebilirsiniz.
+## SSS
+### GroupDocs.Viewer PDF dışındaki diğer dosya formatlarıyla uyumlu mudur?
+Evet, GroupDocs.Viewer Word, Excel, PowerPoint ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### Uygulamamın gereksinimlerine göre görünüm seçeneklerini özelleştirebilir miyim?
+Kesinlikle, GroupDocs.Viewer, görüntüleme deneyiminizi özel ihtiyaçlarınıza göre kişiselleştirmek için çeşitli seçenekler sunar.
 ### GroupDocs.Viewer hem masaüstü hem de web uygulamaları için uygun mudur?
 Evet, GroupDocs.Viewer çok yönlüdür ve hem masaüstü hem de web tabanlı .NET uygulamalarına sorunsuz bir şekilde entegre edilebilir.
 ### Uygulama sırasında herhangi bir sorunla karşılaşırsam GroupDocs.Viewer destek ve yardım sağlıyor mu?
-Elbette, herhangi bir sorunun hızlı bir şekilde çözülmesi için GroupDocs.Viewer topluluk forumundan yardım isteyebilir veya profesyonel destek hizmetlerine erişebilirsiniz.
+Elbette, GroupDocs.Viewer topluluk forumundan yardım alabilir veya herhangi bir sorunun hızlı bir şekilde çözülmesi için profesyonel destek hizmetlerine erişebilirsiniz.
 ### Satın alma işlemi yapmadan önce GroupDocs.Viewer'ı deneyebilir miyim?
- Evet, şu adreste bulunan ücretsiz deneme sürümüne erişerek GroupDocs.Viewer'ın özelliklerini keşfedebilirsiniz.[İnternet sitesi](https://purchase.groupdocs.com/buy).
+Evet, GroupDocs.Viewer'ın özelliklerini, web sitemizde bulunan ücretsiz deneme sürümüne erişerek keşfedebilirsiniz. [web sitesi](https://purchase.groupdocs.com/buy).

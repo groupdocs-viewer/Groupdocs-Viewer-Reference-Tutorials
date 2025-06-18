@@ -1,33 +1,33 @@
 ---
-title: Renderizar documento a JPGPNG
-linktitle: Renderizar documento a JPGPNG
-second_title: API GroupDocs.Viewer .NET
-description: Descubra cómo renderizar documentos a JPG/PNG sin problemas en .NET usando GroupDocs.Viewer para mejorar la experiencia del usuario y la productividad.
-weight: 10
-url: /es/net/rendering-documents-images/render-jpg-png/
+"description": "Descubra cómo renderizar sin problemas documentos en formato JPG/PNG en .NET usando GroupDocs.Viewer para mejorar la experiencia del usuario y la productividad."
+"linktitle": "Renderizar documento a JPG/PNG"
+"second_title": "API .NET de GroupDocs.Viewer"
+"title": "Renderizar documento a JPG/PNG"
+"url": "/es/net/rendering-documents-images/render-jpg-png/"
+"weight": 10
 ---
 
-# Renderizar documento a JPGPNG
+# Renderizar documento a JPG/PNG
 
 ## Introducción
 
-En el mundo del desarrollo .NET, manejar documentos de manera eficiente es esencial para diversas aplicaciones. Ya sea que esté creando un sistema de gestión de documentos, una plataforma de comercio electrónico o una aplicación rica en contenido, la capacidad de ver documentos sin problemas es crucial. Aquí es donde entra en juego GroupDocs.Viewer para .NET, que ofrece una solución integral para representar documentos en varios formatos, como JPG y PNG.
+En el mundo del desarrollo .NET, la gestión eficiente de documentos es esencial para diversas aplicaciones. Ya sea que esté desarrollando un sistema de gestión documental, una plataforma de comercio electrónico o una aplicación rica en contenido, la capacidad de visualizar documentos sin problemas es crucial. Aquí es donde GroupDocs.Viewer para .NET entra en juego, ofreciendo una solución integral para renderizar documentos en diversos formatos, como JPG y PNG.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de sumergirse en el uso de GroupDocs.Viewer para .NET, existen algunos requisitos previos que debe garantizar:
+Antes de comenzar a utilizar GroupDocs.Viewer para .NET, hay algunos requisitos previos que debe asegurarse:
 
-1. Entorno de desarrollo .NET: asegúrese de tener un entorno de desarrollo .NET funcional configurado en su máquina. Esto incluye tener instalado el SDK de .NET.
+1. Entorno de desarrollo .NET: Asegúrese de tener un entorno de desarrollo .NET funcional configurado en su equipo. Esto incluye tener instalado el SDK de .NET.
 
-2. Licencia de GroupDocs.Viewer: Obtenga una licencia válida para GroupDocs.Viewer. Puede comprar una licencia o utilizar una temporal con fines de evaluación.
+2. Licencia de GroupDocs.Viewer: Obtenga una licencia válida para GroupDocs.Viewer. Puede comprar una licencia o usar una temporal para fines de evaluación.
 
-3.  Instalación: descargue e instale GroupDocs.Viewer para .NET desde el archivo proporcionado.[enlace de descarga](https://releases.groupdocs.com/viewer/net/).
+3. Instalación: Descargue e instale GroupDocs.Viewer para .NET desde el directorio proporcionado. [enlace de descarga](https://releases.groupdocs.com/viewer/net/).
 
-4. Archivos de documentos: tenga listos los archivos de documentos que desea renderizar. GroupDocs.Viewer admite varios formatos, incluidos DOCX, PDF, PPT y más.
+4. Archivos de documento: Tenga listos los archivos de documento que desea renderizar. GroupDocs.Viewer admite varios formatos, como DOCX, PDF, PPT y más.
 
 ## Importar espacios de nombres
 
-Para comenzar a representar documentos usando GroupDocs.Viewer para .NET, debe importar los espacios de nombres necesarios a su proyecto. Esto le permite acceder a las funcionalidades proporcionadas por la biblioteca.
+Para empezar a renderizar documentos con GroupDocs.Viewer para .NET, debe importar los espacios de nombres necesarios a su proyecto. Esto le permitirá acceder a las funcionalidades de la biblioteca.
 
 ```csharp
 using System;
@@ -35,19 +35,19 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Representar un documento en formato JPG o PNG es un proceso sencillo con GroupDocs.Viewer para .NET. A continuación se muestra una guía paso a paso para ayudarle a lograrlo:
+Convertir un documento a formato JPG o PNG es un proceso sencillo con GroupDocs.Viewer para .NET. A continuación, encontrará una guía paso a paso para ayudarle a lograrlo:
 
-## Paso 1: definir el directorio de salida
+## Paso 1: Definir el directorio de salida
 
-Primero, defina el directorio donde desea que se guarden las páginas renderizadas. Este directorio debe existir y ser accesible para la aplicación.
+Primero, define el directorio donde quieres guardar las páginas renderizadas. Este directorio debe existir y ser accesible para la aplicación.
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-## Paso 2: Definir el formato de ruta del archivo de página
+## Paso 2: Definir el formato de la ruta del archivo de página
 
- Especifique el formato de las rutas de archivo de cada página representada. GroupDocs.Viewer reemplazará`{0}` con el número de página mientras guarda los archivos.
+Especifique el formato de las rutas de archivo de cada página renderizada. GroupDocs.Viewer reemplazará `{0}` con el número de página al guardar los archivos.
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.jpg");
@@ -55,34 +55,34 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.jpg");
 
 ## Paso 3: Crear una instancia del objeto Visor
 
- Crear una instancia del`Viewer` clase proporcionando la ruta al archivo del documento que desea representar.
+Crear una instancia de la `Viewer` clase proporcionando la ruta al archivo del documento que desea renderizar.
 
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_Your_Document"))
 {
-    // El código para renderizar va aquí.
+    // El código para renderizar va aquí
 }
 ```
 
-## Paso 4: definir las opciones de renderizado
+## Paso 4: Definir las opciones de renderizado
 
-Especifique las opciones de renderizado según sus requisitos. Para renderizar JPG/PNG, usarás`JpgViewOptions` o`PngViewOptions`.
+Especifique las opciones de renderizado según sus requisitos. Para renderizar en JPG/PNG, utilice `JpgViewOptions` o `PngViewOptions`.
 
 ```csharp
 JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
 ```
 
-## Paso 5: renderizar documento
+## Paso 5: Renderizar el documento
 
- Invocar el`View` método de la`Viewer` objeto y pasar las opciones de renderizado creadas anteriormente.
+Invocar el `View` método de la `Viewer` objeto y pasar las opciones de renderizado creadas anteriormente.
 
 ```csharp
 viewer.View(options);
 ```
 
-## Paso 6: resultados de salida
+## Paso 6: Resultados de salida
 
-Una vez que se completa el proceso de renderizado, puede informar al usuario sobre el renderizado exitoso y proporcionar el directorio donde se guardan las páginas renderizadas.
+Una vez completado el proceso de renderizado, puede informar al usuario sobre el renderizado exitoso y proporcionar el directorio donde se guardan las páginas renderizadas.
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -90,7 +90,7 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Conclusión
 
-En conclusión, GroupDocs.Viewer para .NET ofrece una potente solución para representar documentos en varios formatos, incluidos JPG y PNG. Si sigue los pasos descritos en este tutorial, podrá integrar perfectamente la funcionalidad de representación de documentos en sus aplicaciones .NET, mejorando la experiencia del usuario y la productividad.
+En conclusión, GroupDocs.Viewer para .NET ofrece una potente solución para renderizar documentos en diversos formatos, como JPG y PNG. Siguiendo los pasos de este tutorial, podrá integrar a la perfección la funcionalidad de renderizado de documentos en sus aplicaciones .NET, mejorando así la experiencia del usuario y la productividad.
 
 ## Preguntas frecuentes
 
@@ -100,16 +100,16 @@ R: Sí, GroupDocs.Viewer admite una amplia gama de formatos de documentos, inclu
 
 ### P: ¿Hay una prueba gratuita disponible para GroupDocs.Viewer para .NET?
 
- R: Sí, puedes descargar una prueba gratuita desde[aquí](https://releases.groupdocs.com/).
+R: Sí, puedes descargar una versión de prueba gratuita desde [aquí](https://releases.groupdocs.com/).
 
 ### P: ¿Cómo puedo obtener una licencia temporal para fines de evaluación?
 
-R: Puede solicitar una licencia temporal a[aquí](https://purchase.groupdocs.com/temporary-license/).
+A: Puede solicitar una licencia temporal a [aquí](https://purchase.groupdocs.com/temporary-license/).
 
-### P: ¿Dónde puedo encontrar documentación para GroupDocs.Viewer para .NET?
+### P: ¿Dónde puedo encontrar documentación de GroupDocs.Viewer para .NET?
 
- R: Hay documentación detallada disponible[aquí](https://tutorials.groupdocs.com/viewer/net/).
+A: La documentación detallada está disponible [aquí](https://tutorials.groupdocs.com/viewer/net/).
 
-### P: ¿Dónde puedo obtener soporte o hacer preguntas relacionadas con GroupDocs.Viewer para .NET?
+### P: ¿Dónde puedo obtener ayuda o hacer preguntas relacionadas con GroupDocs.Viewer para .NET?
 
- R: Puedes visitar el foro de soporte.[aquí](https://forum.groupdocs.com/c/viewer/9) para asistencia.
+A: Puedes visitar el foro de soporte [aquí](https://forum.groupdocs.com/c/viewer/9) para obtener ayuda.

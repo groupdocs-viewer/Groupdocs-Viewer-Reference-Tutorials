@@ -1,33 +1,35 @@
 ---
-title: Vykreslování obrázků WMZ a WMF
-linktitle: Vykreslování obrázků WMZ a WMF
-second_title: GroupDocs.Viewer .NET API
-description: Bez námahy vykreslujte obrázky WMZ a WMF v aplikacích .NET pomocí GroupDocs.Viewer pro .NET. Snadno vylepšete možnosti zpracování dokumentů.
-weight: 18
-url: /cs/net/image-rendering/render-wmz-wmf-images/
+"description": "Snadno vykreslujte obrázky WMZ a WMF v aplikacích .NET pomocí GroupDocs.Viewer pro .NET. Snadno vylepšete možnosti zpracování dokumentů."
+"linktitle": "Vykreslení obrázků WMZ a WMF"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslení obrázků WMZ a WMF"
+"url": "/cs/net/image-rendering/render-wmz-wmf-images/"
+"weight": 18
 ---
 
-# Vykreslování obrázků WMZ a WMF
+# Vykreslení obrázků WMZ a WMF
 
-## Úvod
+## Zavedení
 
-V oblasti vývoje softwaru je prvořadá efektivní manipulace a vykreslování různých formátů dokumentů. GroupDocs.Viewer for .NET je výkonný nástroj, který usnadňuje vykreslování široké škály formátů dokumentů a zajišťuje bezproblémovou integraci a vylepšené uživatelské prostředí v rámci aplikací .NET. Mezi jeho schopnosti patří vykreslování obrázků WMZ a WMF, což je úkol, se kterým se často setkáváme ve scénářích zpracování dokumentů.
+oblasti vývoje softwaru je efektivní zpracování a vykreslování různých formátů dokumentů prvořadé. GroupDocs.Viewer pro .NET je výkonný nástroj, který usnadňuje vykreslování široké škály formátů dokumentů a zajišťuje bezproblémovou integraci a vylepšený uživatelský zážitek v rámci .NET aplikací. Mezi jeho schopnosti patří vykreslování obrázků WMZ a WMF, což je úkol, se kterým se často setkáváme při zpracování dokumentů.
+
+![Renderování obrázků WMZ a WMF pomocí GroupDocs.Viewer pro .NET](/viewer/image-rendering/render-wmz-and-wmf-images.png)
 
 ## Předpoklady
 
-Než se ponoříte do procesu vykreslování obrázků WMZ a WMF pomocí GroupDocs.Viewer pro .NET, je třeba splnit několik předpokladů:
+Než se ponoříme do procesu vykreslování obrázků WMZ a WMF pomocí GroupDocs.Viewer pro .NET, je třeba splnit několik předpokladů:
 
-1.  Instalace GroupDocs.Viewer pro .NET: Začněte stažením a instalací GroupDocs.Viewer pro .NET z poskytnutého[odkaz ke stažení](https://releases.groupdocs.com/viewer/net/). Postupujte podle pokynů k instalaci, abyste zajistili správné nastavení.
+1. Instalace GroupDocs.Viewer pro .NET: Začněte stažením a instalací GroupDocs.Viewer pro .NET z dodaného [odkaz ke stažení](https://releases.groupdocs.com/viewer/net/)Řiďte se pokyny k instalaci, abyste zajistili správné nastavení.
 
-2.  Získání licence: Chcete-li používat GroupDocs.Viewer pro .NET, musíte získat licenci. Můžete se rozhodnout pro dočasnou licenci z[dočasná licenční stránka](https://purchase.groupdocs.com/temporary-license/) nebo zakoupit plnou licenci od[nákupní stránku](https://purchase.groupdocs.com/buy).
+2. Získání licence: Pro používání GroupDocs.Viewer pro .NET budete muset získat licenci. Můžete si buď zvolit dočasnou licenci z [stránka s dočasnou licencí](https://purchase.groupdocs.com/temporary-license/) nebo si zakoupit plnou licenci od [stránka nákupu](https://purchase.groupdocs.com/buy).
 
-3. Znalost prostředí .NET: Základní znalost rámce .NET a programovacího jazyka C# je nezbytná pro efektivní implementaci procesu vykreslování.
+3. Znalost prostředí .NET: Základní znalost frameworku .NET a programovacího jazyka C# je nezbytná pro efektivní implementaci procesu vykreslování.
 
-4.  Integrace do vašeho projektu: Ujistěte se, že GroupDocs.Viewer for .NET je správně integrován do vašeho projektu .NET. Podrobné pokyny k integraci naleznete v dokumentaci:[Dokumentace](https://tutorials.groupdocs.com/viewer/net/).
+4. Integrace do vašeho projektu: Ujistěte se, že je GroupDocs.Viewer pro .NET správně integrován do vašeho projektu .NET. Podrobné pokyny k integraci naleznete v dokumentaci: [Dokumentace](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Importovat jmenné prostory
 
-Než budete pokračovat v procesu vykreslování, je důležité importovat potřebné jmenné prostory do vašeho kódu C#. Tyto jmenné prostory poskytují přístup ke třídám a metodám potřebným pro vykreslování obrázků WMZ a WMF.
+Než budete pokračovat v procesu vykreslování, je nezbytné importovat potřebné jmenné prostory do kódu C#. Tyto jmenné prostory poskytují přístup ke třídám a metodám potřebným pro vykreslování obrázků WMZ a WMF.
 
 ```csharp
 using GroupDocs.Viewer.Options;
@@ -35,7 +37,7 @@ using System;
 using System.IO;
 ```
 
-Nyní, když jsme pokryli předpoklady a importovali požadované jmenné prostory, rozdělme proces vykreslování do několika kroků.
+Nyní, když jsme si probrali předpoklady a importovali požadované jmenné prostory, rozdělme si proces vykreslování do několika kroků.
 
 ## Krok 1: Vykreslení obrázku WMZ do HTML
 
@@ -54,9 +56,9 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 }
 ```
 
-## Krok 2: Vykreslení obrázku WMZ do JPG
+## Krok 2: Vykreslení obrázku WMZ do formátu JPG
 
-Chcete-li vykreslit obrázek WMZ do formátu JPG, postupujte následovně:
+Chcete-li vykreslit obrázek WMZ do formátu JPG, postupujte takto:
 
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "wmz_result.jpg");
@@ -69,7 +71,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 }
 ```
 
-## Krok 3: Vykreslení obrázku WMZ do formátu PNG
+## Krok 3: Vykreslení obrázku WMZ do PNG
 
 Chcete-li vykreslit obrázek WMZ do formátu PNG, postupujte podle těchto pokynů:
 
@@ -86,7 +88,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 
 ## Krok 4: Vykreslení obrázku WMZ do PDF
 
-Chcete-li vykreslit obrázek WMZ do formátu PDF, postupujte následovně:
+Chcete-li vykreslit obrázek WMZ do formátu PDF, postupujte takto:
 
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "wmz_result.pdf");
@@ -101,26 +103,26 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ))
 
 ## Závěr
 
-Na závěr, GroupDocs.Viewer for .NET nabízí komplexní řešení pro snadné vykreslování obrázků WMZ a WMF v aplikacích .NET. Podle kroků popsaných v tomto kurzu můžete bezproblémově integrovat funkce vykreslování do svých projektů a vylepšit tak možnosti zpracování dokumentů.
+Závěrem lze říci, že GroupDocs.Viewer pro .NET nabízí komplexní řešení pro snadné vykreslování obrázků WMZ a WMF v aplikacích .NET. Dodržováním kroků popsaných v tomto tutoriálu můžete bezproblémově integrovat funkci vykreslování do svých projektů a vylepšit tak možnosti zpracování dokumentů.
 
-## FAQ
+## Často kladené otázky
 
-### Q1: Je GroupDocs.Viewer for .NET kompatibilní se všemi frameworky .NET?
+### Q1: Je GroupDocs.Viewer pro .NET kompatibilní se všemi frameworky .NET?
 
-Odpověď 1: GroupDocs.Viewer for .NET je kompatibilní s širokou řadou rozhraní .NET, včetně .NET Core a .NET Framework.
+A1: GroupDocs.Viewer pro .NET je kompatibilní s širokou škálou frameworků .NET, včetně .NET Core a .NET Framework.
 
-### Q2: Mohu přizpůsobit možnosti vykreslování pro obrázky WMZ a WMF?
+### Q2: Mohu si přizpůsobit možnosti vykreslování pro obrázky WMZ a WMF?
 
-Odpověď 2: Ano, GroupDocs.Viewer for .NET poskytuje rozsáhlé možnosti přizpůsobení pro vykreslování obrázků, což vám umožní přizpůsobit výstup podle vašich požadavků.
+A2: Ano, GroupDocs.Viewer pro .NET nabízí rozsáhlé možnosti přizpůsobení pro vykreslování obrázků, což vám umožňuje přizpůsobit výstup vašim požadavkům.
 
 ### Q3: Je k dispozici technická podpora pro GroupDocs.Viewer pro .NET?
 
- A3: Ano, můžete získat přístup k technické podpoře pro GroupDocs.Viewer pro .NET prostřednictvím vyhrazené[Fórum podpory](https://forum.groupdocs.com/c/viewer/9).
+A3: Ano, technickou podporu pro GroupDocs.Viewer pro .NET můžete získat prostřednictvím vyhrazeného [fórum podpory](https://forum.groupdocs.com/c/viewer/9).
 
-### Q4: Podporuje GroupDocs.Viewer for .NET prohlížení dokumentů na mobilních zařízeních?
+### Q4: Podporuje GroupDocs.Viewer pro .NET prohlížení dokumentů na mobilních zařízeních?
 
-Odpověď 4: Ano, GroupDocs.Viewer for .NET nabízí responzivní možnosti prohlížení dokumentů a zajišťuje optimální výkon na různých zařízeních, včetně mobilních telefonů a tabletů.
+A4: Ano, GroupDocs.Viewer pro .NET nabízí responzivní funkce prohlížení dokumentů, což zajišťuje optimální výkon na různých zařízeních, včetně mobilních telefonů a tabletů.
 
-### Q5: Mohu vyzkoušet GroupDocs.Viewer pro .NET před nákupem?
+### Q5: Mohu si před zakoupením vyzkoušet GroupDocs.Viewer pro .NET?
 
- Odpověď 5: Ano, můžete prozkoumat funkce GroupDocs.Viewer for .NET přístupem k bezplatné zkušební verzi[tady](https://releases.groupdocs.com/).
+A5: Ano, funkce GroupDocs.Viewer pro .NET si můžete prohlédnout v bezplatné zkušební verzi. [zde](https://releases.groupdocs.com/).

@@ -1,23 +1,26 @@
 ---
-title: Render Gambar CMX
-linktitle: Render Gambar CMX
-second_title: GroupDocs.Viewer .NET API
-description: Pelajari cara merender gambar CMX dengan mudah ke dalam berbagai format menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan manajemen dokumen Anda.
-weight: 13
-url: /id/net/image-rendering/render-cmx-images/
+"description": "Pelajari cara mudah untuk merender gambar CMX ke dalam berbagai format menggunakan GroupDocs.Viewer untuk .NET. Tingkatkan pengelolaan dokumen Anda."
+"linktitle": "Render Gambar CMX"
+"second_title": "API Penampil GroupDocs.NET"
+"title": "Render Gambar CMX"
+"url": "/id/net/image-rendering/render-cmx-images/"
+"weight": 13
 ---
 
 # Render Gambar CMX
 
 ## Perkenalan
-Dalam bidang manajemen dan manipulasi dokumen, rendering gambar dari berbagai format adalah tugas yang sangat penting. GroupDocs.Viewer untuk .NET menyederhanakan proses ini dengan menyediakan fungsionalitas komprehensif untuk merender gambar CMX ke dalam format berbeda seperti HTML, JPG, PNG, dan PDF. Tutorial ini akan memandu Anda melalui proses langkah demi langkah merender gambar CMX menggunakan GroupDocs.Viewer untuk .NET.
-## Prasyarat
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
-1.  GroupDocs.Viewer untuk .NET Library: Unduh dan instal perpustakaan GroupDocs.Viewer untuk .NET dari[Di Sini](https://releases.groupdocs.com/viewer/net/).
-2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan yang berfungsi dengan kerangka .NET.
-3. File Gambar CMX: Dapatkan file gambar CMX yang ingin Anda render.
+Dalam bidang manajemen dan manipulasi dokumen, merender gambar dari berbagai format merupakan tugas penting. GroupDocs.Viewer for .NET menyederhanakan proses ini dengan menyediakan fungsionalitas komprehensif untuk merender gambar CMX ke dalam berbagai format seperti HTML, JPG, PNG, dan PDF. Tutorial ini akan memandu Anda melalui proses langkah demi langkah merender gambar CMX menggunakan GroupDocs.Viewer for .NET.
 
-## Mengimpor Namespace
+![Render Gambar CMX dengan GroupDocs.Viewer untuk .NET](/viewer/image-rendering/render-cmx-images.png)
+
+## Prasyarat
+Sebelum memulai tutorial, pastikan Anda memiliki prasyarat berikut:
+1. GroupDocs.Viewer untuk Pustaka .NET: Unduh dan instal pustaka GroupDocs.Viewer untuk .NET dari [Di Sini](https://releases.groupdocs.com/viewer/net/).
+2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan yang berfungsi dengan kerangka .NET.
+3. Berkas Gambar CMX: Dapatkan berkas gambar CMX yang ingin Anda render.
+
+## Mengimpor Ruang Nama
 Sebelum melanjutkan, pastikan untuk mengimpor namespace yang diperlukan untuk mengakses fungsionalitas GroupDocs.Viewer di aplikasi .NET Anda:
 ```csharp
 using GroupDocs.Viewer.Options;
@@ -35,11 +38,11 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Tentukan Direktori Output: Tetapkan direktori tempat Anda ingin menyimpan file HTML yang dirender.
+- Tentukan Direktori Keluaran: Tetapkan direktori di mana Anda ingin menyimpan file HTML yang telah dirender.
 - Tentukan Format Jalur File: Tentukan format untuk file HTML keluaran.
-- Instantiate Viewer Object: Buat instance kelas Viewer dengan file gambar CMX.
-- Opsi Rendering HTML: Konfigurasikan opsi rendering HTML, seperti menyematkan sumber daya.
-- Render CMX ke HTML: Panggil metode View pada objek penampil untuk merender gambar CMX ke HTML.
+- Buat Instansi Objek Viewer: Buat instans kelas Viewer dengan berkas gambar CMX.
+- Opsi Rendering HTML: Konfigurasikan opsi rendering HTML, seperti penyematan sumber daya.
+- Render CMX ke HTML: Panggil metode View dari objek penampil untuk merender gambar CMX ke HTML.
 ## Merender ke JPG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cmx_result_{0}.jpg");
@@ -50,11 +53,11 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Tentukan Direktori Output: Mengatur direktori untuk menyimpan file JPG yang dirender.
+- Tentukan Direktori Keluaran: Tetapkan direktori untuk menyimpan file JPG yang telah dirender.
 - Tentukan Format Jalur File: Tentukan format untuk file JPG keluaran.
-- Instantiate Viewer Object: Buat instance kelas Viewer dengan file gambar CMX.
+- Buat Instansi Objek Viewer: Buat instans kelas Viewer dengan berkas gambar CMX.
 - Opsi Rendering JPG: Konfigurasikan opsi rendering JPG.
-- Render CMX ke JPG: Aktifkan metode View pada objek penampil untuk merender gambar CMX ke JPG.
+- Render CMX ke JPG: Panggil metode View dari objek penampil untuk merender gambar CMX ke JPG.
 ## Merender ke PNG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cmx_result_{0}.png");
@@ -65,11 +68,11 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Tentukan Direktori Output: Mengatur direktori untuk menyimpan file PNG yang dirender.
+- Tentukan Direktori Keluaran: Tetapkan direktori untuk menyimpan file PNG yang telah dirender.
 - Tentukan Format Jalur File: Tentukan format untuk file PNG keluaran.
-- Instantiate Viewer Object: Buat instance kelas Viewer dengan file gambar CMX.
+- Buat Instansi Objek Viewer: Buat instans kelas Viewer dengan berkas gambar CMX.
 - Opsi Rendering PNG: Konfigurasikan opsi rendering PNG.
-- Render CMX ke PNG: Aktifkan metode View pada objek penampil untuk merender gambar CMX ke PNG.
+- Render CMX ke PNG: Panggil metode View dari objek penampil untuk merender gambar CMX ke PNG.
 ## Merender ke PDF
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cmx_result.pdf");
@@ -80,22 +83,22 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CMX))
     viewer.View(options);
 }
 ```
-- Tentukan Direktori Output: Mengatur direktori untuk menyimpan file PDF yang dirender.
+- Tentukan Direktori Keluaran: Tetapkan direktori untuk menyimpan berkas PDF yang telah dirender.
 - Tentukan Format Jalur File: Tentukan format untuk file PDF keluaran.
-- Instantiate Viewer Object: Buat instance kelas Viewer dengan file gambar CMX.
+- Buat Instansi Objek Viewer: Buat instans kelas Viewer dengan berkas gambar CMX.
 - Opsi Rendering PDF: Konfigurasikan opsi rendering PDF.
-- Render CMX ke PDF: Aktifkan metode View pada objek penampil untuk merender gambar CMX ke PDF.
+- Render CMX ke PDF: Panggil metode View dari objek penampil untuk merender gambar CMX ke PDF.
 
 ## Kesimpulan
-Kesimpulannya, GroupDocs.Viewer untuk .NET menawarkan solusi tangguh untuk merender gambar CMX ke dalam berbagai format dengan mulus. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat dengan mudah mengintegrasikan kemampuan rendering gambar CMX ke dalam aplikasi .NET Anda, sehingga meningkatkan efisiensi manajemen dokumen.
-## FAQ
+Sebagai kesimpulan, GroupDocs.Viewer untuk .NET menawarkan solusi yang tangguh untuk merender gambar CMX ke dalam berbagai format dengan lancar. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat dengan mudah mengintegrasikan kemampuan merender gambar CMX ke dalam aplikasi .NET Anda, sehingga meningkatkan efisiensi pengelolaan dokumen.
+## Pertanyaan yang Sering Diajukan
 ### Bisakah saya merender halaman tertentu dari gambar CMX?
-Ya, Anda dapat merender halaman tertentu dengan menentukan nomor halaman di opsi rendering.
-### Apakah GroupDocs.Viewer untuk .NET kompatibel dengan semua kerangka .NET?
-Ya, GroupDocs.Viewer untuk .NET kompatibel dengan beberapa kerangka .NET, termasuk .NET Core dan .NET Framework.
-### Apakah GroupDocs.Viewer mendukung rendering gambar CMX terenkripsi?
+Ya, Anda dapat merender halaman tertentu dengan menentukan nomor halaman dalam opsi rendering.
+### Apakah GroupDocs.Viewer untuk .NET kompatibel dengan semua kerangka kerja .NET?
+Ya, GroupDocs.Viewer untuk .NET kompatibel dengan beberapa kerangka kerja .NET, termasuk .NET Core dan .NET Framework.
+### Apakah GroupDocs.Viewer mendukung rendering gambar CMX yang terenkripsi?
 Ya, GroupDocs.Viewer mendukung rendering gambar CMX terenkripsi dengan kunci dekripsi yang sesuai.
-### Bisakah saya menyesuaikan opsi rendering untuk format output yang berbeda?
-Tentu saja, GroupDocs.Viewer menyediakan opsi ekstensif untuk menyesuaikan parameter rendering berdasarkan kebutuhan Anda.
+### Dapatkah saya menyesuaikan opsi rendering untuk format output yang berbeda?
+Tentu saja, GroupDocs.Viewer menyediakan opsi yang luas untuk menyesuaikan parameter rendering berdasarkan kebutuhan Anda.
 ### Apakah ada forum komunitas untuk dukungan GroupDocs.Viewer?
- Ya, Anda dapat mencari bantuan dan terlibat dengan komunitas GroupDocs.Viewer di forum dukungan[Di Sini](https://forum.groupdocs.com/c/viewer/9).
+Ya, Anda dapat mencari bantuan dan terlibat dengan komunitas GroupDocs.Viewer di forum dukungan [Di Sini](https://forum.groupdocs.com/c/viewer/9).

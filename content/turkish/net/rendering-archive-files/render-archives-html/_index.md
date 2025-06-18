@@ -1,22 +1,22 @@
 ---
-title: Arşivleri Tek veya Çoklu HTML Sayfalarına Oluşturma
-linktitle: Arşivleri Tek veya Çoklu HTML Sayfalarına Oluşturma
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer for .NET'i kullanarak arşivleri HTML sayfalarına nasıl aktaracağınızı öğrenin. Belge görüntüleme yeteneklerini .NET uygulamalarınıza zahmetsizce entegre edin.
-weight: 12
-url: /tr/net/rendering-archive-files/render-archives-html/
+"description": "GroupDocs.Viewer for .NET kullanarak arşivleri HTML sayfalarına nasıl dönüştüreceğinizi öğrenin. Belge görüntüleme yeteneklerini .NET uygulamalarınıza zahmetsizce entegre edin."
+"linktitle": "Arşivleri Tek veya Çoklu HTML Sayfalarına Dönüştürün"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Arşivleri Tek veya Çoklu HTML Sayfalarına Dönüştürün"
+"url": "/tr/net/rendering-archive-files/render-archives-html/"
+"weight": 12
 ---
 
-# Arşivleri Tek veya Çoklu HTML Sayfalarına Oluşturma
+# Arşivleri Tek veya Çoklu HTML Sayfalarına Dönüştürün
 
 ## giriiş
-GroupDocs.Viewer for .NET, geliştiricilerin belge görüntüleme yeteneklerini .NET uygulamalarına zahmetsizce entegre etmelerine olanak tanıyan güçlü bir belge işleme kitaplığıdır. Arşivleri ister tek ister birden fazla HTML sayfasına dönüştürmeniz gerekiyorsa, bu eğitim size süreç boyunca adım adım rehberlik edecektir.
-## Önkoşullar
-Bu eğitime dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-1.  GroupDocs.Viewer for .NET: Projenizde kitaplığın yüklü olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.groupdocs.com/viewer/net/).
-2. Geliştirme Ortamı: .NET geliştirme için ayarlanmış bir çalışma geliştirme ortamına sahip olun.
-3. Doküman Dizini: Dokümanlarınızın saklanacağı bir dizin hazırlayın.
-4. Temel C# Anlayışı: C# programlama dilinin temellerine aşina olun.
+GroupDocs.Viewer for .NET, geliştiricilerin .NET uygulamalarına belge görüntüleme yeteneklerini zahmetsizce entegre etmelerine olanak tanıyan güçlü bir belge oluşturma kütüphanesidir. Arşivleri tek veya birden fazla HTML sayfasına oluşturmanız gerekip gerekmediğine bakılmaksızın, bu eğitim sizi adım adım süreç boyunca yönlendirecektir.
+## Ön koşullar
+Bu eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+1. GroupDocs.Viewer for .NET: Projenizde kütüphanenin yüklü olduğundan emin olun. Buradan indirebilirsiniz [Burada](https://releases.groupdocs.com/viewer/net/).
+2. Geliştirme Ortamı: .NET geliştirme için çalışan bir geliştirme ortamı kurun.
+3. Belge Dizini: Belgelerinizin saklanacağı bir dizin hazırlayın.
+4. C# Temel Anlayışı: C# programlama dilinin temellerini öğrenin.
 
 ## Ad Alanlarını İçe Aktar
 C# kodunuzda gerekli ad alanlarını içe aktardığınızdan emin olun:
@@ -26,14 +26,14 @@ using System;
 using System.IO;
 ```
 
-GroupDocs.Viewer for .NET'i kullanarak arşivleri tek veya birden fazla HTML sayfasına dönüştürmek için şu adımları izleyin:
-## Adım 1: Çıkış Dizinini Ayarlayın
+.NET için GroupDocs.Viewer'ı kullanarak arşivleri tek veya birden fazla HTML sayfasına dönüştürmek için şu adımları izleyin:
+## Adım 1: Çıktı Dizinini Ayarla
 Oluşturulan HTML sayfalarının kaydedilmesini istediğiniz dizini tanımlayın:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Adım 2: Dosya Yolu Formatını Tanımlayın
-HTML sayfaları için dosya yolu formatını belirtin. Tek sayfa oluşturma için:
+## Adım 2: Dosya Yolu Biçimini Tanımlayın
+HTML sayfaları için dosya yolu biçimini belirtin. Tek sayfalık işleme için:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result.html");
 ```
@@ -41,7 +41,7 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result.html");
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_page_{0}.html");
 ```
-## 3. Adım: Tek Sayfa HTML'ye Dönüştür
+## Adım 3: Tek Sayfa HTML'ye Dönüştür
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
 {
@@ -50,12 +50,12 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
     viewer.View(options);
 }
 ```
-## 4. Adım: Birden Çok Sayfa HTML'sine Oluşturun
+## Adım 4: Birden Fazla Sayfa HTML'sine Dönüştür
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    options.ArchiveOptions.ItemsPerPage = 10; // Sayfa başına öğe ayarlama
+    options.ArchiveOptions.ItemsPerPage = 10; // Sayfa başına öğeleri ayarla
     viewer.View(options);
 }
 ```
@@ -65,15 +65,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ```
 
 ## Çözüm
-GroupDocs.Viewer for .NET'i kullanarak arşivleri HTML sayfalarına dönüştürmek basit bir işlemdir. Bu öğreticide özetlenen adımları izleyerek belge görüntüleme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
-## SSS'ler
-### Arşivlerin yanı sıra diğer belge formatlarını da görüntüleyebilir miyim?
-Evet, GroupDocs.Viewer PDF, DOCX, XLSX, PPTX ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
+GroupDocs.Viewer for .NET kullanarak arşivleri HTML sayfalarına dönüştürmek basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek, belge görüntüleme yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
+## SSS
+### Arşivlerin dışında başka belge formatlarını da işleyebilir miyim?
+Evet, GroupDocs.Viewer PDF, DOCX, XLSX, PPTX ve daha fazlası dahil olmak üzere çok çeşitli belge formatlarını destekler.
 ### GroupDocs.Viewer hem masaüstü hem de web uygulamaları için uygun mudur?
-Kesinlikle GroupDocs.Viewer hem masaüstü hem de web uygulamalarında sorunsuz bir şekilde kullanılabilir.
-### GroupDocs.Viewer, görüntüleyici arayüzü için özelleştirme seçenekleri sunuyor mu?
-Evet, izleyici arayüzünü ihtiyaçlarınıza göre özelleştirebilirsiniz.
-### GroupDocs.Viewer ile belgeleri eşzamansız olarak oluşturabilir miyim?
-Evet, GroupDocs.Viewer, gelişmiş performans için eşzamansız oluşturma yetenekleri sağlar.
+Kesinlikle, GroupDocs.Viewer hem masaüstü hem de web uygulamalarında sorunsuz bir şekilde kullanılabilir.
+### GroupDocs.Viewer görüntüleyici arayüzü için özelleştirme seçenekleri sunuyor mu?
+Evet, görüntüleyici arayüzünü ihtiyaçlarınıza göre özelleştirebilirsiniz.
+### GroupDocs.Viewer ile belgeleri eşzamansız olarak görüntüleyebilir miyim?
+Evet, GroupDocs.Viewer gelişmiş performans için asenkron işleme yetenekleri sağlar.
 ### GroupDocs.Viewer belge açıklamalarını destekliyor mu?
-Evet, GroupDocs.Viewer kullanıcıların belge açıklamalarını verimli bir şekilde görüntülemesine ve yönetmesine olanak tanır.
+Evet, GroupDocs.Viewer kullanıcıların belge açıklamalarını etkin bir şekilde görüntülemesine ve yönetmesine olanak tanır.

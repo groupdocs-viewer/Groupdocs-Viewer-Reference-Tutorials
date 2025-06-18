@@ -1,35 +1,38 @@
 ---
-title: CDR Görüntülerini Oluştur
-linktitle: CDR Görüntülerini Oluştur
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer for .NET'i kullanarak CDR görüntülerini HTML, JPG, PNG ve PDF'ye nasıl dönüştüreceğinizi öğrenin. Bu eğitimle CorelDRAW dosyalarını kolayca dönüştürün.
-weight: 12
-url: /tr/net/image-rendering/render-cdr-images/
+"description": "GroupDocs.Viewer for .NET kullanarak CDR görüntülerini HTML, JPG, PNG ve PDF'ye nasıl dönüştüreceğinizi öğrenin. Bu eğitimle CorelDRAW dosyalarını kolayca dönüştürün."
+"linktitle": "CDR Görüntülerini Oluştur"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "CDR Görüntülerini Oluştur"
+"url": "/tr/net/image-rendering/render-cdr-images/"
+"weight": 12
 ---
 
 # CDR Görüntülerini Oluştur
 
 ## giriiş
-Bu eğitimde, GroupDocs.Viewer for .NET'i kullanarak CDR (CorelDRAW) görüntülerini oluşturma sürecinde size rehberlik edeceğiz. CDR, öncelikle bir vektör grafik düzenleyicisi olan CorelDRAW ile ilişkili bir dosya formatıdır. GroupDocs.Viewer ile CDR dosyalarını HTML, JPG, PNG ve PDF gibi çeşitli formatlara kolayca dönüştürebilirsiniz.
-## Önkoşullar
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-1.  GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NET'i yüklediğinizden emin olun. Şuradan indirebilirsiniz[Burada](https://releases.groupdocs.com/viewer/net/).
-2. Belge Dizini: Oluşturulan görüntüleri kaydetmek istediğiniz dizini hazırlayın.
-3. Temel C# Bilgisi: Kod örneklerini anlamak için C# programlama diline aşinalık gereklidir.
+Bu eğitimde, .NET için GroupDocs.Viewer kullanarak CDR (CorelDRAW) görüntülerini işleme sürecinde size rehberlik edeceğiz. CDR, öncelikle vektör grafik düzenleyicisi olan CorelDRAW ile ilişkilendirilen bir dosya biçimidir. GroupDocs.Viewer ile CDR dosyalarını HTML, JPG, PNG ve PDF gibi çeşitli biçimlere kolayca dönüştürebilirsiniz.
+
+![.NET için GroupDocs.Viewer ile CDR Görüntülerini Oluşturun](/viewer/image-rendering/render-cdr-images.png)
+
+## Ön koşullar
+Başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+1. GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NET'i yüklediğinizden emin olun. Bunu şu adresten indirebilirsiniz: [Burada](https://releases.groupdocs.com/viewer/net/).
+2. Belge Dizini: Oluşturulan görselleri kaydetmek istediğiniz dizini hazırlayın.
+3. Temel C# Bilgisi: Kod örneklerini anlayabilmek için C# programlama diline aşina olmak gerekir.
 ## Ad Alanlarını İçe Aktar
-Kod örneklerine dalmadan önce gerekli ad alanlarını C# dosyanıza aktarın:
+Kod örneklerine dalmadan önce, gerekli ad alanlarını C# dosyanıza aktarın:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-Şimdi her örneği birden fazla adıma ayıralım:
+Şimdi her örneği birden fazla adıma bölelim:
 ## HTML'ye dönüştürme
-1. İşlenen HTML dosyalarını kaydetmek istediğiniz çıktı dizinini tanımlayın:
+1. Oluşturulan HTML dosyalarını kaydetmek istediğiniz çıktı dizinini tanımlayın:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-2. HTML dosyaları için dosya yolu formatını belirtin:
+2. HTML dosyaları için dosya yolu biçimini belirtin:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result_{0}.html");
 ```
@@ -42,8 +45,8 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
     viewer.View(options);
 }
 ```
-## JPG'ye dönüştürülüyor
-1. JPG dosyaları için dosya yolu formatını tanımlayın:
+## JPG'ye dönüştürme
+1. JPG dosyaları için dosya yolu biçimini tanımlayın:
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result_{0}.jpg");
 ```
@@ -57,7 +60,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 }
 ```
 ## PNG'ye dönüştürme
-1. PNG dosyaları için dosya yolu formatını tanımlayın:
+1. PNG dosyaları için dosya yolu biçimini tanımlayın:
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result_{0}.png");
 ```
@@ -71,7 +74,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
 }
 ```
 ## PDF'ye dönüştürme
-1. PDF için dosya yolu formatını tanımlayın:
+1. PDF için dosya yolu biçimini tanımlayın:
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "cdr_result.pdf");
 ```
@@ -84,17 +87,17 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
     viewer.View(options);
 }
 ```
-3.  İsteğe bağlı olarak, oluşturma seçeneklerini belirtebilir veya ek parametreler ileterek belirli sayfaları oluşturabilirsiniz.`viewer.View()` yöntem.
+3. İsteğe bağlı olarak, ek parametreler geçirerek işleme seçeneklerini belirleyebilir veya belirli sayfaları işleyebilirsiniz. `viewer.View()` yöntem.
 ## Çözüm
-GroupDocs.Viewer for .NET'i kullanarak CDR görüntülerini HTML, JPG, PNG ve PDF gibi çeşitli formatlara dönüştürmek basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek CDR dosyalarını gereksinimlerinize göre verimli bir şekilde farklı formatlara dönüştürebilirsiniz.
-## SSS'ler
-### GroupDocs.Viewer for .NET, CDR dosyalarının tüm sürümleriyle uyumlu mu?
-GroupDocs.Viewer for .NET, CorelDRAW'ın farklı sürümleri tarafından oluşturulan CDR dosyalarının oluşturulmasını destekler.
-### İşlenen dosyaların çıktısını özelleştirebilir miyim?
-Evet, GroupDocs.Viewer for .NET çıktıyı özelleştirmek için görüntü kalitesini ayarlama, filigran ayarlama vb. gibi çeşitli seçenekler sunar.
-### GroupDocs.Viewer for .NET herhangi bir dış bağımlılık gerektiriyor mu?
-Hayır, GroupDocs.Viewer for .NET bağımsız bir kitaplıktır ve belgelerin işlenmesi için herhangi bir dış bağımlılık gerektirmez.
-### GroupDocs.Viewer for .NET'in deneme sürümü mevcut mu?
- Evet, GroupDocs.Viewer for .NET'in ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.groupdocs.com/).
-### .NET için GroupDocs.Viewer desteğini nereden alabilirim?
- GroupDocs.Viewer topluluk forumundan destek alabilirsiniz[Burada](https://forum.groupdocs.com/c/viewer/9).
+GroupDocs.Viewer for .NET kullanarak CDR görüntülerini HTML, JPG, PNG ve PDF gibi çeşitli biçimlere dönüştürmek basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek, gereksinimlerinize göre CDR dosyalarını farklı biçimlere verimli bir şekilde dönüştürebilirsiniz.
+## SSS
+### GroupDocs.Viewer for .NET tüm CDR dosya sürümleriyle uyumlu mudur?
+GroupDocs.Viewer for .NET, CorelDRAW'un farklı sürümleriyle oluşturulmuş CDR dosyalarının işlenmesini destekler.
+### Oluşturulan dosyaların çıktısını özelleştirebilir miyim?
+Evet, GroupDocs.Viewer for .NET, görüntü kalitesini ayarlama, filigran ayarlama vb. gibi çıktıyı özelleştirmek için çeşitli seçenekler sunar.
+### GroupDocs.Viewer for .NET herhangi bir harici bağımlılık gerektiriyor mu?
+Hayır, GroupDocs.Viewer for .NET bağımsız bir kütüphanedir ve belgeleri oluşturmak için herhangi bir harici bağımlılığa ihtiyaç duymaz.
+### GroupDocs.Viewer for .NET için deneme sürümü mevcut mu?
+Evet, GroupDocs.Viewer for .NET'in ücretsiz deneme sürümünü şu adresten indirebilirsiniz: [Burada](https://releases.groupdocs.com/).
+### GroupDocs.Viewer for .NET için desteği nereden alabilirim?
+GroupDocs.Viewer topluluk forumundan destek alabilirsiniz [Burada](https://forum.groupdocs.com/c/viewer/9).

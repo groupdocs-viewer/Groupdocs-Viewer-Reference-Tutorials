@@ -1,25 +1,25 @@
 ---
-title: Rétegek renderelése CAD rajzokban
-linktitle: Rétegek renderelése CAD rajzokban
-second_title: GroupDocs.Viewer .NET API
-description: CAD-rajzok zökkenőmentes megjelenítése .NET-alkalmazásokban a GroupDocs.Viewer for .NET segítségével. Fedezze fel a megjelenítési lehetőségeket, szabja testre a rétegeket és sok mást.
-weight: 13
-url: /hu/net/rendering-cad-drawings/render-layers-cad/
+"description": "Rendereljen CAD rajzokat zökkenőmentesen .NET alkalmazásokban a GroupDocs.Viewer for .NET segítségével. Fedezze fel a renderelési lehetőségeket, szabja testre a rétegeket és sok mást."
+"linktitle": "Rétegek renderelése CAD rajzokban"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Rétegek renderelése CAD rajzokban"
+"url": "/hu/net/rendering-cad-drawings/render-layers-cad/"
+"weight": 13
 ---
 
 # Rétegek renderelése CAD rajzokban
 
 ## Bevezetés
-A GroupDocs.Viewer for .NET egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentum-megjelenítési képességeket .NET-alkalmazásaikba. Akár CAD-rajzokat, PDF-eket, Microsoft Office dokumentumokat vagy egyebeket kell renderelni, a GroupDocs.Viewer átfogó megoldást kínál.
+A GroupDocs.Viewer for .NET egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen integrálják a dokumentumrenderelési képességeket .NET alkalmazásaikba. Akár CAD rajzokat, PDF-eket, Microsoft Office dokumentumokat vagy egyebeket kell renderelnie, a GroupDocs.Viewer átfogó megoldást kínál.
 ## Előfeltételek
-Mielőtt belevágna a GroupDocs.Viewer for .NET használatába, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- C# programozási nyelv alapvető ismerete.
-- .NET fejlesztői környezet a gépén.
--  A GroupDocs.Viewer for .NET telepítve. Letöltheti innen[itt](https://releases.groupdocs.com/viewer/net/).
--  Hozzáférés a GroupDocs.Viewer for .NET dokumentációjához referenciaként, amely megtalálható[itt](https://tutorials.groupdocs.com/viewer/net/).
+Mielőtt belemerülne a GroupDocs.Viewer for .NET használatába, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+- C# programozási nyelv alapismeretek.
+- .NET fejlesztői környezet beállítása a gépeden.
+- GroupDocs.Viewer for .NET telepítve. Letöltheti innen: [itt](https://releases.groupdocs.com/viewer/net/).
+- Hozzáférés a GroupDocs.Viewer for .NET dokumentációjához az oktatóanyagokért, amelyek megtalálhatók a következő címen: [itt](https://tutorials.groupdocs.com/viewer/net/).
 
 ## Névterek importálása
-A GroupDocs.Viewer for .NET használatának megkezdéséhez importálnia kell a szükséges névtereket a projektbe. Kovesd ezeket a lepeseket:
+A GroupDocs.Viewer for .NET használatának megkezdéséhez importálnia kell a szükséges névtereket a projektjébe. Kövesse az alábbi lépéseket:
 
 ```csharp
 using System;
@@ -29,52 +29,52 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-Bontsuk fel a megadott példát több lépésre:
-## 1. lépés: Határozza meg a kimeneti könyvtárat
+Bontsuk a bemutatott példát több lépésre:
+## 1. lépés: Kimeneti könyvtár definiálása
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## 2. lépés: Határozza meg az oldalfájl elérési út formátumát
+## 2. lépés: Oldalfájl elérési útjának formátumának meghatározása
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## 3. lépés: Inicializálja a Viewer Object-et
+## 3. lépés: Viewer objektum inicializálása
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS))
 {
-    // A kódblokk folytatódik...
+    // A kódblokkolás folytatódik...
 }
 ```
-## 4. lépés: Állítsa be a HTML nézet beállításait
+## 4. lépés: HTML nézetbeállítások megadása
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-## 5. lépés: Határozza meg a CAD rétegeket
+## 5. lépés: CAD rétegek definiálása
 ```csharp
 options.CadOptions.Layers = new List<Layer>
 {
     new Layer("QUADRANT")
 };
 ```
-## 6. lépés: Renderelje le a dokumentumot
+## 6. lépés: Dokumentum renderelése
 ```csharp
 viewer.View(options);
 ```
-## 7. lépés: Kimeneti renderelt dokumentum helye
+## 7. lépés: A renderelt dokumentum helyének kimenete
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Következtetés
-A GroupDocs.Viewer for .NET segítségével zökkenőmentes folyamattá válik a CAD-rajzok megjelenítése a .NET-alkalmazásokban. Az ebben az útmutatóban ismertetett lépések követésével könnyedén integrálhatja projektjeibe a dokumentum-megjelenítési képességeket.
+A GroupDocs.Viewer for .NET segítségével a CAD-rajzok renderelése zökkenőmentes folyamattá válik a .NET-alkalmazásokban. Az útmutatóban ismertetett lépéseket követve könnyedén integrálhatja a dokumentumrenderelési funkciókat a projektjeibe.
 ## GYIK
-### Kompatibilis a GroupDocs.Viewer minden típusú CAD-rajzzal?
-Igen, a GroupDocs.Viewer támogatja a CAD rajzformátumok széles skálájának renderelését, beleértve a DWG-t és a DXF-et is.
-### Testreszabhatom a CAD-rajzok renderelési beállításait?
-Természetesen a GroupDocs.Viewer különféle testreszabási lehetőségeket kínál, mint például a megjelenítendő rétegek megadása vagy a kimeneti formátumok beállítása.
-### A GroupDocs.Viewernek szüksége van internetkapcsolatra a dokumentumok megjelenítéséhez?
-Nem, a GroupDocs.Viewer helyileg, internetkapcsolat nélkül hajtja végre a renderelést.
-### Elérhető ingyenes próbaverzió a GroupDocs.Viewer for .NET számára?
- Igen, hozzáférhet a GroupDocs.Viewer for .NET ingyenes próbaverziójához[itt](https://releases.groupdocs.com/).
+### A GroupDocs.Viewer kompatibilis az összes CAD-rajztípussal?
+Igen, a GroupDocs.Viewer számos CAD rajzformátum renderelését támogatja, beleértve a DWG és DXF formátumokat is.
+### Testreszabhatom a CAD rajzok renderelési beállításait?
+A GroupDocs.Viewer természetesen különféle testreszabási lehetőségeket kínál, például a renderelendő rétegek megadását vagy a kimeneti formátumok beállítását.
+### Szükséges internetkapcsolat a GroupDocs.Viewer számára a dokumentumok megjelenítéséhez?
+Nem, a GroupDocs.Viewer helyben, internetkapcsolat nélkül végzi a renderelést.
+### Van ingyenes próbaverzió a GroupDocs.Viewer for .NET-hez?
+Igen, hozzáférhet a GroupDocs.Viewer for .NET ingyenes próbaverziójához. [itt](https://releases.groupdocs.com/).
 ### Hol kaphatok támogatást a GroupDocs.Viewer for .NET-hez?
- Bármilyen technikai segítségért vagy kérdésért keresse fel a GroupDocs.Viewer fórumot[itt](https://forum.groupdocs.com/c/viewer/9).
+Bármilyen technikai segítségért vagy kérdésért látogassa meg a GroupDocs.Viewer fórumot. [itt](https://forum.groupdocs.com/c/viewer/9).

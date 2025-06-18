@@ -1,80 +1,83 @@
 ---
-title: PDF'de Yazı Tipi Lisansı Doğrulamalarını Devre Dışı Bırak
-linktitle: PDF'de Yazı Tipi Lisansı Doğrulamalarını Devre Dışı Bırak
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer for .NET ile .NET'inizdeki kusursuz belge görüntüleme yeteneklerinin kilidini açın. Belge oluşturmayı minimum bağımlılıkla kolayca entegre edin ve özelleştirin.
-weight: 12
-url: /tr/net/pdf-rendering-options/disable-font-license-verifications-pdf/
+"description": "GroupDocs.Viewer for .NET ile .NET'inizde kusursuz belge görüntüleme yeteneklerinin kilidini açın. Belge oluşturmayı minimum bağımlılıklarla kolayca entegre edin ve özelleştirin."
+"linktitle": "PDF'de Font Lisans Doğrulamalarını Devre Dışı Bırak"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "PDF'de Font Lisans Doğrulamalarını Devre Dışı Bırak"
+"url": "/tr/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
+"weight": 12
 ---
 
-# PDF'de Yazı Tipi Lisansı Doğrulamalarını Devre Dışı Bırak
+# PDF'de Font Lisans Doğrulamalarını Devre Dışı Bırak
 
 ## giriiş
-.NET geliştirme alanında, belgeleri yönetmek ve değiştirmek çoğu uygulamanın çoğu zaman çok önemli bir yönüdür. İster PDF'leri, Word belgelerini veya diğer dosya türlerini görüntülerken, bu görevleri verimli bir şekilde yerine getirecek güçlü araçlara sahip olmak çok önemlidir. GroupDocs.Viewer for .NET tam da burada devreye giriyor. Bu güçlü kitaplık, geliştiricilere belge görüntüleme işlevselliğini .NET uygulamalarına sorunsuz bir şekilde entegre etme yeteneği sağlar.
-## Önkoşullar
-.NET için GroupDocs.Viewer'ı kullanmaya başlamadan önce, yerine getirmeniz gereken birkaç önkoşul vardır:
+.NET geliştirme alanında, belgeleri yönetmek ve düzenlemek çoğu uygulamanın önemli bir yönüdür. İster PDF'leri, ister Word belgelerini veya diğer dosya türlerini görüntülemek olsun, bu görevleri verimli bir şekilde halletmek için sağlam araçlara sahip olmak esastır. İşte .NET için GroupDocs.Viewer'ın devreye girdiği yer burasıdır. Bu güçlü kitaplık, geliştiricilere belge görüntüleme işlevselliğini .NET uygulamalarına sorunsuz bir şekilde entegre etme olanağı sağlar.
+
+![GroupDocs.Viewer .NET ile PDF'de Font Lisans Doğrulamalarını Devre Dışı Bırakma](/viewer/pdf-rendering-options/disable-font-license-verifications-in-pdf.png)
+
+## Ön koşullar
+GroupDocs.Viewer for .NET'i kullanmaya başlamadan önce, yerine getirmeniz gereken birkaç ön koşul vardır:
 ### 1. Visual Studio'yu yükleyin
-Öncelikle sisteminizde Visual Studio'nun kurulu olduğundan emin olun. Henüz yapmadıysanız Microsoft web sitesinden indirebilirsiniz.
+Öncelikle, sisteminizde Visual Studio'nun yüklü olduğundan emin olun. Henüz yüklemediyseniz Microsoft web sitesinden indirebilirsiniz.
 ### 2. .NET için GroupDocs.Viewer'ı indirin
- Şuraya gidin:[İndirme: {link](https://releases.groupdocs.com/viewer/net/) .NET için GroupDocs.Viewer'ın en son sürümünü edinmek için. Geliştirme ortamınıza kurmak için sağlanan kurulum talimatlarını izleyin.
+Şuraya doğru ilerleyin: [indirme bağlantısı](https://releases.groupdocs.com/viewer/net/) .NET için GroupDocs.Viewer'ın en son sürümünü edinmek için. Geliştirme ortamınızda kurmak için sağlanan kurulum talimatlarını izleyin.
 ### 3. Geçici Lisans Alın
- Geliştirme ve test sırasında GroupDocs.Viewer for .NET'in tüm potansiyelini açığa çıkarmak için geçici bir lisans almanız önerilir. Şu adresten bir tane talep edebilirsiniz:[Burada](https://purchase.groupdocs.com/temporary-license/).
+GroupDocs.Viewer for .NET'in geliştirme ve test sırasında tüm potansiyelini ortaya çıkarmak için geçici bir lisans edinmeniz önerilir. Bir tane talep edebilirsiniz [Burada](https://purchase.groupdocs.com/temporary-license/).
 
 ## Ad Alanlarını İçe Aktar
-Önkoşulları tamamladıktan sonra projelerinizde GroupDocs.Viewer for .NET'i kullanmaya hazırsınız. Gerekli ad alanlarını kod tabanınıza aktararak başlayın.
+Ön koşulları tamamladıktan sonra, projelerinizde GroupDocs.Viewer for .NET'i kullanmaya başlamaya hazırsınız. Gerekli ad alanlarını kod tabanınıza aktararak başlayın.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Daha net bir anlayış için verilen örneği birden çok adıma ayıralım:
-## Adım 1: Çıkış Dizinini Tanımlayın
-İşlenen belge sayfalarının saklanmasını istediğiniz dizini tanımlayarak başlayın.
+Daha net anlaşılması için verilen örneği birden fazla adıma bölelim:
+## Adım 1: Çıktı Dizinini Tanımlayın
+Öncelikle, işlenmiş belge sayfalarının saklanmasını istediğiniz dizini tanımlayarak başlayın.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Adım 2: Sayfa Dosya Yolu Formatını Tanımlayın
-Belgenin tek tek sayfalarının dosya yollarının formatını ayarlayın.
+## Adım 2: Sayfa Dosyası Yolu Biçimini Tanımlayın
+Belgenin her bir sayfasının dosya yollarının biçimini ayarlayın.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.png");
 ```
-## 3. Adım: Görüntüleyici Nesnesini Başlatın
-Görüntülemek istediğiniz belgenin yolunu ileterek Viewer sınıfının bir örneğini oluşturun.
+## Adım 3: Görüntüleyici Nesnesini Başlatın
+Görüntülemek istediğiniz belgenin yolunu geçirerek Viewer sınıfının bir örneğini oluşturun.
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.OXPS_EMBEDDED_FONT))
 ```
-## 4. Adım: HTML Görünüm Seçeneklerini Yapılandırma
-Gömülü kaynakların (örn. görüntüler) formatını belirterek, belgeyi HTML olarak görüntüleme seçeneklerini tanımlayın.
+## Adım 4: HTML Görünüm Seçeneklerini Yapılandırın
+Belgeyi HTML olarak görüntüleme seçeneklerini tanımlayın ve gömülü kaynaklar (örneğin resimler) için biçimi belirtin.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-## 5. Adım: Yazı Tipi Lisansı Doğrulamalarını Devre Dışı Bırakın
-Sorunsuz bir şekilde oluşturulmasını sağlamak için yazı tipi lisansı doğrulamalarını devre dışı bırakma seçeneğini etkinleştirin.
+## Adım 5: Yazı Tipi Lisans Doğrulamalarını Devre Dışı Bırakın
+Sorunsuz bir işleme sağlamak için yazı tipi lisans doğrulamalarını devre dışı bırakma seçeneğini etkinleştirin.
 ```csharp
 options.PdfOptions.DisableFontLicenseVerifications = true;
 ```
-## Adım 6: Belgeyi Görüntüleyin
-Yapılandırılmış seçenekleri ileterek Viewer nesnesinin View yöntemini çağırın.
+## Adım 6: Belgeyi Görüntüle
+Yapılandırılmış seçenekleri geçirerek Viewer nesnesinin View metodunu çağırın.
 ```csharp
 viewer.View(options);
 ```
-## Adım 7: Çıkış Dizinini Görüntüleyin
-Kullanıcıyı, oluşturulan belge sayfalarının depolandığı konum hakkında bilgilendirin.
+## Adım 7: Çıktı Dizinini Görüntüle
+Kullanıcıya, oluşturulan belge sayfalarının nerede saklandığı hakkında bilgi verin.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Çözüm
-GroupDocs.Viewer for .NET, geliştiricilere belge görüntüleme yeteneklerini zahmetsizce .NET uygulamalarına entegre etmeleri için kapsamlı bir çözüm sunar. Bu eğitimde özetlenen adımları izleyerek, belge yönetimi iş akışlarınızı geliştirmek için bu güçlü kitaplıktan etkili bir şekilde yararlanabilirsiniz.
-## SSS'ler
+.NET için GroupDocs.Viewer, geliştiricilere belge görüntüleme yeteneklerini .NET uygulamalarına zahmetsizce entegre etmeleri için kapsamlı bir çözüm sunar. Bu eğitimde özetlenen adımları izleyerek, belge yönetimi iş akışlarınızı geliştirmek için bu güçlü kütüphaneyi etkili bir şekilde kullanabilirsiniz.
+## SSS
 ### GroupDocs.Viewer for .NET birden fazla belge formatını işleyebilir mi?
-Evet, GroupDocs.Viewer PDF, Microsoft Word, Excel, PowerPoint ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
-### GroupDocs.Viewer for .NET web uygulamalarına uygun mu?
-Kesinlikle GroupDocs.Viewer, .NET teknolojileri kullanılarak geliştirilen hem masaüstü hem de web uygulamalarına sorunsuz bir şekilde entegre edilebilir.
-### GroupDocs.Viewer herhangi bir ek bağımlılık gerektiriyor mu?
-Hayır, GroupDocs.Viewer for .NET minimum düzeyde bağımlılığa sahiptir ve mevcut projelerinize kolayca entegre edilebilir.
-### İşlenen belgelerin görünümünü özelleştirebilir miyim?
+Evet, GroupDocs.Viewer PDF, Microsoft Word, Excel, PowerPoint ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
+### GroupDocs.Viewer for .NET web uygulamaları için uygun mudur?
+Kesinlikle, GroupDocs.Viewer .NET teknolojileri kullanılarak geliştirilen hem masaüstü hem de web uygulamalarına sorunsuz bir şekilde entegre edilebilir.
+### GroupDocs.Viewer herhangi bir ek bağımlılığa ihtiyaç duyuyor mu?
+Hayır, GroupDocs.Viewer for .NET'in minimum bağımlılıkları vardır ve mevcut projelerinize kolayca entegre edilebilir.
+### Oluşturulan belgelerin görünümünü özelleştirebilir miyim?
 Evet, GroupDocs.Viewer, oluşturulan belgelerin görünümünü ve davranışını özel gereksinimlerinize uyacak şekilde özelleştirmek için çeşitli seçenekler sunar.
 ### GroupDocs.Viewer for .NET için teknik destek mevcut mu?
- Evet, özel destek ekibinden yardım ve rehberlik alabilirsiniz.[forum](https://forum.groupdocs.com/c/viewer/9).
+Evet, özel destek ekibinden yardım ve rehberlik alabilirsiniz. [forum](https://forum.groupdocs.com/c/viewer/9).

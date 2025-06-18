@@ -1,68 +1,68 @@
 ---
-title: ページの反転と回転
-linktitle: ページの反転と回転
-second_title: GroupDocs.Viewer .NET API
-description: Groupdocs.Viewer for .NET をアプリケーションに統合して、シームレスなドキュメントのレンダリング、反転、回転を行う方法を学びます。
-weight: 12
-url: /ja/net/rendering-options/flip-rotate-pages/
+"description": "シームレスなドキュメントのレンダリング、反転、回転を実現するために、Groupdocs.Viewer for .NET をアプリケーションに統合する方法を学びます。"
+"linktitle": "ページをめくる、回転する"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "ページをめくる、回転する"
+"url": "/ja/net/rendering-options/flip-rotate-pages/"
+"weight": 12
 ---
 
-# ページの反転と回転
+# ページをめくる、回転する
 
 ## 導入
-このチュートリアルでは、Groupdocs.Viewer for .NET の機能を詳しく掘り下げ、特にページの反転と回転に焦点を当てます。 Groupdocs.Viewer for .NET は、.NET アプリケーション内でドキュメントをさまざまな形式でレンダリングするように設計された強力なツールです。ドキュメント管理システムを開発している場合でも、ドキュメント表示機能をソフトウェアに統合する必要がある場合でも、Groupdocs.Viewer for .NET は効率的なソリューションを提供します。
+このチュートリアルでは、Groupdocs.Viewer for .NETの機能、特にページの反転と回転に焦点を当てて詳しく説明します。Groupdocs.Viewer for .NETは、.NETアプリケーション内で様々な形式のドキュメントをレンダリングするために設計された強力なツールです。ドキュメント管理システムを開発する場合でも、ソフトウェアにドキュメント表示機能を統合する必要がある場合でも、Groupdocs.Viewer for .NETは効率的なソリューションを提供します。
 ## 前提条件
 始める前に、次の前提条件が設定されていることを確認してください。
-### .NET 用 Groupdocs.Viewer のインストール
-Groupdocs.Viewer for .NET を使用するには、NuGet パッケージ マネージャーを介してパッケージをインストールする必要があります。詳細なインストール手順については、[ドキュメンテーション](https://tutorials.groupdocs.com/viewer/net/).
+### Groupdocs.Viewer for .NET のインストール
+Groupdocs.Viewer for .NETを使用するには、NuGetパッケージマネージャーを使用してパッケージをインストールする必要があります。詳細なインストール手順については、 [ドキュメント](https://tutorials。groupdocs.com/viewer/net/).
 
 ## 名前空間のインポート
-Groupdocs.Viewer for .NET を効果的に利用するには、必要な名前空間がプロジェクトにインポートされていることを確認してください。
+Groupdocs.Viewer for .NET を効果的に活用するには、プロジェクトに必要な名前空間がインポートされていることを確認してください。
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Groupdocs.Viewer for .NET を使用してページを反転および回転するプロセスを簡単な手順に分けてみましょう。
-## ステップ 1: 出力ディレクトリとファイル パスを設定する
+Groupdocs.Viewer for .NET を使用してページをめくったり回転したりするプロセスを簡単な手順に分解してみましょう。
+## ステップ1: 出力ディレクトリとファイルパスを設定する
 出力ファイルを保存するディレクトリを定義し、出力ファイルのパスを指定します。
 ```csharp
 string outputDirectory = "Your Document Directory";
 string outputFilePath = Path.Combine(outputDirectory, "output.pdf");
 ```
-## ステップ 2: ビューア オブジェクトを初期化する
+## ステップ2: ビューアオブジェクトの初期化
 表示するドキュメントへのパスを渡して、Viewer クラスのインスタンスを作成します。
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 ```
-## ステップ 3: 表示オプションを構成する
-出力ファイル形式の指定やページ回転などの追加設定など、表示オプションを設定します。
+## ステップ3: 表示オプションを構成する
+出力ファイル形式の指定やページの回転などの追加設定など、表示オプションを設定します。
 ```csharp
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 viewOptions.RotatePage(1, Rotation.On90Degree);
 ```
-## ステップ 4: ドキュメントをレンダリングする
+## ステップ4: ドキュメントのレンダリング
 Viewer オブジェクトの View メソッドを呼び出し、表示オプションを渡します。
 ```csharp
 viewer.View(viewOptions);
 ```
-## ステップ 5: 成功メッセージを表示する
+## ステップ5: 成功メッセージを表示する
 ドキュメントが正常にレンダリングされたことをユーザーに通知し、検証用の出力ディレクトリを指定します。
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## 結論
-結論として、Groupdocs.Viewer for .NET は、ページの反転や回転など、ドキュメントをレンダリングするための強力な機能を提供します。このチュートリアルで概説されている手順に従うことで、これらの機能を .NET アプリケーションにシームレスに統合し、ユーザーのドキュメント表示エクスペリエンスを向上させることができます。
+結論として、Groupdocs.Viewer for .NETは、ページの反転や回転など、ドキュメントのレンダリングに強力な機能を提供します。このチュートリアルで概説した手順に従うことで、これらの機能を.NETアプリケーションにシームレスに統合し、ユーザーのドキュメント閲覧エクスペリエンスを向上させることができます。
 ## よくある質問
 ### Groupdocs.Viewer for .NET はすべてのドキュメント形式と互換性がありますか?
-はい、Groupdocs.Viewer for .NET は、DOCX、PDF、PPTX などを含む幅広いドキュメント形式をサポートしています。
-### ページの反転や回転以外の表示オプションをカスタマイズできますか?
-もちろん、Groupdocs.Viewer for .NET にはドキュメントを表示するためのさまざまなカスタマイズ オプションが用意されており、要件に応じてエクスペリエンスを調整できます。
-### Groupdocs.Viewer for .NET に利用できる無料試用版はありますか?
-はい、次のサイトにアクセスして、Groupdocs.Viewer for .NET の無料トライアルを利用できます。[Webサイト](https://releases.groupdocs.com/).
+はい、Groupdocs.Viewer for .NET は、DOCX、PDF、PPTX など、幅広いドキュメント形式をサポートしています。
+### ページのめくりや回転以外に表示オプションをカスタマイズできますか?
+はい、Groupdocs.Viewer for .NET では、ドキュメントを表示するためのさまざまなカスタマイズ オプションが提供されており、要件に応じてエクスペリエンスをカスタマイズできます。
+### Groupdocs.Viewer for .NET の無料試用版はありますか?
+はい、Groupdocs.Viewer for .NETの無料トライアルをご利用いただくには、 [Webサイト](https://releases。groupdocs.com/).
 ### Groupdocs.Viewer for .NET のサポートを受けるにはどうすればよいですか?
-支援を求めたり、コミュニティに参加したりすることができます。[Groupdocs.Viewer フォーラム](https://forum.groupdocs.com/c/viewer/9).
+支援を求めたり、コミュニティに参加したりするために、 [Groupdocs.Viewerフォーラム](https://forum。groupdocs.com/c/viewer/9).
 ### Groupdocs.Viewer for .NET の一時ライセンスはどこで入手できますか?
- Groupdocs.Viewer for .NET の一時ライセンスは、以下から取得できます。[購入ページ](https://purchase.groupdocs.com/temporary-license/).
+Groupdocs.Viewer for .NETの一時ライセンスは、 [購入ページ](https://purchase。groupdocs.com/temporary-license/).

@@ -1,21 +1,24 @@
 ---
-title: Rendre les images SVG et SVGZ
-linktitle: Rendre les images SVG et SVGZ
-second_title: API GroupDocs.Viewer .NET
-description: Découvrez comment restituer des images SVG et SVGZ à l'aide de GroupDocs.Viewer pour .NET. Convertissez facilement des graphiques vectoriels en HTML, JPG, PNG et PDF.
-weight: 16
-url: /fr/net/image-rendering/render-svg-svgz-images/
+"description": "Apprenez à générer des images SVG et SVGZ avec GroupDocs.Viewer pour .NET. Convertissez facilement des graphiques vectoriels en HTML, JPG, PNG et PDF."
+"linktitle": "Rendu d'images SVG et SVGZ"
+"second_title": "API .NET GroupDocs.Viewer"
+"title": "Rendu d'images SVG et SVGZ"
+"url": "/fr/net/image-rendering/render-svg-svgz-images/"
+"weight": 16
 ---
 
-# Rendre les images SVG et SVGZ
+# Rendu d'images SVG et SVGZ
 
 ## Introduction
-Dans ce didacticiel, nous vous guiderons tout au long du processus de rendu des images SVG et SVGZ à l'aide de GroupDocs.Viewer pour .NET. GroupDocs.Viewer pour .NET est une puissante API de rendu de documents qui permet aux développeurs de restituer différents formats de documents dans leurs applications .NET. SVG et SVGZ sont des formats d'image populaires utilisés pour les graphiques vectoriels, et avec GroupDocs.Viewer pour .NET, vous pouvez facilement les restituer dans différents formats de sortie tels que HTML, JPG, PNG et PDF.
-## Conditions préalables
+Dans ce tutoriel, nous vous guiderons dans le rendu d'images SVG et SVGZ avec GroupDocs.Viewer pour .NET. GroupDocs.Viewer pour .NET est une puissante API de rendu de documents qui permet aux développeurs de générer différents formats de documents dans leurs applications .NET. SVG et SVGZ sont des formats d'image populaires pour les graphiques vectoriels. Avec GroupDocs.Viewer pour .NET, vous pouvez facilement les générer dans différents formats de sortie tels que HTML, JPG, PNG et PDF.
+
+![Rendu d'images SVG et SVGZ avec GroupDocs.Viewer pour .NET](/viewer/image-rendering/render-svg-and-svgz-images.png)
+
+## Prérequis
 Avant de commencer, assurez-vous que les prérequis suivants sont installés et configurés :
-1.  GroupDocs.Viewer pour .NET : téléchargez et installez GroupDocs.Viewer pour .NET à partir de[ici](https://releases.groupdocs.com/viewer/net/).
-2. Environnement de développement : assurez-vous de disposer d'un environnement de développement fonctionnel pour le développement .NET, tel que Visual Studio.
-3. Exemple de fichier SVGZ : préparez un exemple de fichier SVGZ pour le test.
+1. GroupDocs.Viewer pour .NET : téléchargez et installez GroupDocs.Viewer pour .NET depuis [ici](https://releases.groupdocs.com/viewer/net/).
+2. Environnement de développement : assurez-vous de disposer d’un environnement de développement fonctionnel pour le développement .NET, tel que Visual Studio.
+3. Exemple de fichier SVGZ : préparez un exemple de fichier SVGZ pour les tests.
 
 ## Importer des espaces de noms
 Avant de plonger dans le code, importons les espaces de noms nécessaires :
@@ -24,7 +27,7 @@ using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## Étape 1 : rendre SVGZ en HTML
+## Étape 1 : Convertir SVGZ en HTML
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "svgz_result.html");
@@ -35,7 +38,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 }
 ```
 
-## Étape 2 : rendre SVGZ en JPG
+## Étape 2 : Convertir SVGZ en JPG
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "svgz_result.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
@@ -46,7 +49,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 }
 ```
 
-## Étape 3 : rendre SVGZ en PNG
+## Étape 3 : Convertir SVGZ en PNG
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "svgz_result.png");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
@@ -57,7 +60,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 }
 ```
 
-## Étape 4 : rendre SVGZ en PDF
+## Étape 4 : Convertir SVGZ en PDF
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "svgz_result.pdf");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
@@ -69,7 +72,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à restituer des images SVG et SVGZ à l'aide de GroupDocs.Viewer pour .NET. En quelques étapes simples, vous pouvez convertir des images SVGZ en différents formats de sortie tels que HTML, JPG, PNG et PDF, les rendant ainsi accessibles et visibles dans différents environnements.
+Dans ce tutoriel, nous avons appris à générer des images SVG et SVGZ avec GroupDocs.Viewer pour .NET. En quelques étapes simples, vous pouvez convertir des images SVGZ en différents formats de sortie, tels que HTML, JPG, PNG et PDF, pour les rendre accessibles et lisibles dans différents environnements.
 ## FAQ
 ### GroupDocs.Viewer peut-il restituer d’autres formats d’image ?
 Oui, GroupDocs.Viewer prend en charge le rendu de divers formats d'image, notamment PNG, JPEG, BMP, TIFF, GIF, etc.
@@ -80,4 +83,4 @@ Oui, GroupDocs.Viewer fournit des options de rendu étendues vous permettant de 
 ### GroupDocs.Viewer nécessite-t-il des dépendances tierces ?
 Non, GroupDocs.Viewer est une API autonome et ne nécessite aucune dépendance tierce pour le rendu des documents.
 ### Existe-t-il une version d'essai disponible pour tester ?
-Oui, vous pouvez télécharger une version d'essai gratuite de GroupDocs.Viewer à partir de[ici](https://releases.groupdocs.com/) pour évaluer ses fonctionnalités avant de faire un achat.
+Oui, vous pouvez télécharger une version d'essai gratuite de GroupDocs.Viewer à partir de [ici](https://releases.groupdocs.com/) pour évaluer ses caractéristiques avant de procéder à un achat.

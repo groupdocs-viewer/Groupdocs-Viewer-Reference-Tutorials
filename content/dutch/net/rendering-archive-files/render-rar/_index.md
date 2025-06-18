@@ -1,20 +1,20 @@
 ---
-title: Render RAR-archieven
-linktitle: Render RAR-archieven
-second_title: GroupDocs.Viewer .NET-API
-description: Leer hoe u RAR-archieven kunt weergeven in HTML-, JPG-, PNG- of PDF-indeling met GroupDocs.Viewer voor .NET. Bekijk en deel eenvoudig de inhoud van RAR-archieven.
-weight: 13
-url: /nl/net/rendering-archive-files/render-rar/
+"description": "Leer hoe u RAR-archieven kunt omzetten naar HTML-, JPG-, PNG- of PDF-indeling met GroupDocs.Viewer voor .NET. Bekijk en deel de inhoud van RAR-archieven eenvoudig."
+"linktitle": "RAR-archieven renderen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "RAR-archieven renderen"
+"url": "/nl/net/rendering-archive-files/render-rar/"
+"weight": 13
 ---
 
-# Render RAR-archieven
+# RAR-archieven renderen
 
 ## Invoering
-RAR-archieven zijn een populair formaat voor het comprimeren en opslaan van meerdere bestanden en mappen in één container. Het weergeven van RAR-archieven in verschillende formaten, zoals HTML, JPG, PNG of PDF, kan essentieel zijn voor het bekijken of delen van de inhoud van deze archieven. In deze zelfstudie onderzoeken we hoe u RAR-archieven kunt renderen met GroupDocs.Viewer voor .NET.
+RAR-archieven zijn een populair formaat voor het comprimeren en opslaan van meerdere bestanden en mappen in één container. Het renderen van RAR-archieven naar verschillende formaten, zoals HTML, JPG, PNG of PDF, kan essentieel zijn om de inhoud ervan te bekijken of te delen. In deze tutorial onderzoeken we hoe u RAR-archieven kunt renderen met GroupDocs.Viewer voor .NET.
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-1. GroupDocs.Viewer voor .NET: Installeer de GroupDocs.Viewer voor .NET-bibliotheek vanuit de[download link](https://releases.groupdocs.com/viewer/net/).
-2. Voorbeeld-RAR-archief: zorg ervoor dat u een voorbeeld-RAR-archief gereed heeft voor weergave.
+Voordat we beginnen, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+1. GroupDocs.Viewer voor .NET: Installeer GroupDocs.Viewer voor .NET-bibliotheek vanuit de [downloadlink](https://releases.groupdocs.com/viewer/net/).
+2. Voorbeeld RAR-archief: Zorg dat u een voorbeeld RAR-archief bij de hand hebt voor rendering.
 
 ## Naamruimten importeren
 ```csharp
@@ -23,7 +23,7 @@ using GroupDocs.Viewer.Results;
 using System;
 using System.IO;
 ```
-## Stap 1: Definieer de uitvoerdirectory
+## Stap 1: Definieer de uitvoermap
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
@@ -65,15 +65,15 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
 ```
 
 ## Conclusie
-Het renderen van RAR-archieven in verschillende formaten is eenvoudig gemaakt met GroupDocs.Viewer voor .NET. Door de stappen in deze zelfstudie te volgen, kunt u RAR-archieven moeiteloos converteren naar HTML-, JPG-, PNG- of PDF-formaten, zodat u de inhoud ervan gemakkelijk kunt bekijken en delen.
+Het renderen van RAR-archieven in verschillende formaten is eenvoudig gemaakt met GroupDocs.Viewer voor .NET. Door de stappen in deze tutorial te volgen, kunt u RAR-archieven moeiteloos converteren naar HTML-, JPG-, PNG- of PDF-formaten, waardoor u de inhoud ervan eenvoudig kunt bekijken en delen.
 ## Veelgestelde vragen
 ### Kan GroupDocs.Viewer voor .NET gecodeerde RAR-archieven verwerken?
-Ja, GroupDocs.Viewer voor .NET ondersteunt het weergeven van gecodeerde RAR-archieven, op voorwaarde dat de benodigde wachtwoorden worden opgegeven tijdens het weergaveproces.
-### Is het mogelijk om het uiterlijk van de weergegeven documenten aan te passen?
-Absoluut! GroupDocs.Viewer voor .NET biedt uitgebreide aanpassingsopties waarmee gebruikers het uiterlijk van weergegeven documenten kunnen aanpassen aan hun voorkeuren.
-### Ondersteunt GroupDocs.Viewer voor .NET het weergeven van andere archiefformaten dan RAR?
-Ja, GroupDocs.Viewer voor .NET ondersteunt het weergeven van verschillende archiefformaten, waaronder ZIP, TAR, 7z en meer.
-### Kan ik GroupDocs.Viewer voor .NET in mijn webapplicatie integreren?
+Ja, GroupDocs.Viewer voor .NET ondersteunt het renderen van gecodeerde RAR-archieven, op voorwaarde dat de benodigde wachtwoorden worden opgegeven tijdens het renderproces.
+### Is het mogelijk om het uiterlijk van gerenderde documenten aan te passen?
+Absoluut! GroupDocs.Viewer voor .NET biedt uitgebreide aanpassingsopties waarmee gebruikers het uiterlijk van de weergegeven documenten kunnen aanpassen aan hun wensen.
+### Ondersteunt GroupDocs.Viewer voor .NET de weergave van andere archiefformaten dan RAR?
+Ja, GroupDocs.Viewer voor .NET ondersteunt het renderen van verschillende archiefformaten, waaronder ZIP, TAR, 7z en meer.
+### Kan ik GroupDocs.Viewer voor .NET integreren in mijn webapplicatie?
 Zeker! GroupDocs.Viewer voor .NET biedt API's die geschikt zijn voor integratie in zowel desktop- als webapplicaties.
 ### Is er een proefversie beschikbaar voor GroupDocs.Viewer voor .NET?
- Ja, u kunt profiteren van een gratis proefversie van GroupDocs.Viewer voor .NET via de[website](https://releases.groupdocs.com/).
+Ja, u kunt een gratis proefversie van GroupDocs.Viewer voor .NET gebruiken via de [website](https://releases.groupdocs.com/).

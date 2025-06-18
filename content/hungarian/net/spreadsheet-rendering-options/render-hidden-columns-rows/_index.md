@@ -1,35 +1,35 @@
 ---
-title: Rejtett oszlopok és sorok megjelenítése
-linktitle: Rejtett oszlopok és sorok megjelenítése
-second_title: GroupDocs.Viewer .NET API
-description: A GroupDocs.Viewer for .NET segítségével könnyedén feloldhatja a rejtett adatokat a táblázatokban. Kövesse lépésenkénti útmutatónkat a rejtett oszlopok és sorok felfedéséhez.
-weight: 13
-url: /hu/net/spreadsheet-rendering-options/render-hidden-columns-rows/
+"description": "A GroupDocs.Viewer for .NET segítségével könnyedén feloldhatja a táblázatokban található rejtett adatokat. Kövesse lépésről lépésre szóló útmutatónkat a rejtett oszlopok és sorok felfedéséhez."
+"linktitle": "Rejtett oszlopok és sorok megjelenítése"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Rejtett oszlopok és sorok megjelenítése"
+"url": "/hu/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
+"weight": 13
 ---
 
 # Rejtett oszlopok és sorok megjelenítése
 
 ## Bevezetés
-A dokumentumvizualizáció területén a GroupDocs.Viewer for .NET robusztus eszköz, amely megkönnyíti a különféle dokumentumformátumok zökkenőmentes megjelenítését. Az egyik érdekes lehetőség a rejtett oszlopok és sorok felfedése a táblázatokban. Ebben az oktatóanyagban elmélyülünk a funkció feloldásához és az adatokban rejlő lehetőségek kiaknázásához szükséges lépésekbe.
+A dokumentumvizualizáció birodalmában a GroupDocs.Viewer for .NET egy robusztus eszköz, amely megkönnyíti a különféle dokumentumformátumok zökkenőmentes megjelenítését. Az egyik érdekes funkció a táblázatokban található rejtett oszlopok és sorok felfedése. Ebben az oktatóanyagban részletesen bemutatjuk, hogyan oldhatja fel ezt a funkciót, és hogyan aknázhatja ki adataiban rejlő lehetőségeket.
 ## Előfeltételek
-Mielőtt elindulna erre az útra, győződjön meg arról, hogy a következő előfeltételeket teljesíti:
-- GroupDocs.Viewer for .NET: Győződjön meg arról, hogy a legújabb verzió van telepítve. Ha nem, akkor letöltheti a[hivatalos honlapján](https://releases.groupdocs.com/viewer/net/).
-- Dokumentumfájl: Készítsen egy mintadokumentumot táblázatos formátumban (pl. SAMPLE.XLSX), hogy kísérletezzen rejtett oszlopokkal és sorokkal.
-- Fejlesztési környezet: Állítson be egy munkakörnyezetet, lehetőleg Visual Studio vagy bármely más megfelelő IDE használatával a .NET fejlesztéshez.
+Mielőtt elindulna erre az útra, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+- GroupDocs.Viewer .NET-hez: Győződjön meg róla, hogy a legújabb verzió telepítve van. Ha nem, letöltheti innen: [hivatalos weboldal](https://releases.groupdocs.com/viewer/net/).
+- Dokumentumfájl: Készítsen egy táblázatkezelő formátumú mintadokumentumot (pl. MINTA.XLSX) a rejtett oszlopok és sorok kipróbálásához.
+- Fejlesztői környezet: Hozz létre egy munkakörnyezetet, lehetőleg Visual Studio vagy bármilyen más, .NET fejlesztéshez alkalmas IDE használatával.
 ## Névterek importálása
-A .NET-projektben importálja a szükséges névtereket a GroupDocs.Viewer funkcióinak hatékony kihasználásához:
+A .NET projektedben importáld a szükséges névtereket a GroupDocs.Viewer funkcióinak hatékony kihasználásához:
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## 1. lépés: Állítsa be a kimeneti könyvtárat
+## 1. lépés: Kimeneti könyvtár beállítása
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-Határozza meg a kimeneti könyvtárat, ahol a renderelt HTML oldalak tárolásra kerülnek. Ennek megfelelően állítsa be a fájl elérési út formátumát.
-## 2. lépés: A Viewer inicializálása és a beállítások konfigurálása
+Adja meg a kimeneti könyvtárat, ahová a renderelt HTML oldalak tárolásra kerülnek. Ennek megfelelően állítsa be a fájl elérési útjának formátumát.
+## 2. lépés: A megjelenítő inicializálása és a beállítások konfigurálása
 ```csharp
 using (Viewer viewer = new Viewer("SAMPLE.XLSX"))
 {
@@ -37,28 +37,28 @@ using (Viewer viewer = new Viewer("SAMPLE.XLSX"))
     options.SpreadsheetOptions.RenderHiddenColumns = true;
     options.SpreadsheetOptions.RenderHiddenRows = true;
 ```
-Hozzon létre egy Viewer-példányt a táblázatdokumentum elérési útjának megadásával. Állítsa be a HTML nézetbeállításokat az erőforrások beágyazásához, és engedélyezze a rejtett oszlopok és sorok megjelenítését.
-## 3. lépés: Hajtsa végre a renderelési folyamatot
+Hozzon létre egy Viewer példányt a táblázatkezelő dokumentum elérési útjának megadásával. Konfigurálja a HTML nézet beállításait az erőforrások beágyazásához és a rejtett oszlopok és sorok megjelenítésének engedélyezéséhez.
+## 3. lépés: Renderelési folyamat végrehajtása
 ```csharp
     viewer.View(options);
 }
 ```
-Hívja meg a View metódust a megjelenítő objektumon, átadva a konfigurált beállításokat. Ez elindítja a renderelési folyamatot.
+Hívd meg a View metódust a viewer objektumon, átadva a konfigurált opciókat. Ez elindítja a renderelési folyamatot.
 ## 4. lépés: Ellenőrizze a kimenetet
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 Ellenőrizze a forrásdokumentum sikeres megjelenítését, és keresse meg a kimenetet a megadott könyvtárban.
 ## Következtetés
-A GroupDocs.Viewer for .NET segítségével gyerekjáték a rejtett oszlopok és sorok feloldása a táblázatokban. Ez az oktatóanyag felkészítette Önt a rejtett adatok felfedésének alapvető lépéseire, így átfogóbb képet ad a dokumentumokról.
+A GroupDocs.Viewer for .NET segítségével könnyedén feloldhatja a táblázatok rejtett oszlopait és sorait. Ez az oktatóanyag felvértezi Önt a rejtett adatok felfedésének alapvető lépéseivel, így átfogóbb képet kaphat dokumentumairól.
 ## Gyakran Ismételt Kérdések
-### Renderelhetek rejtett oszlopokat és sorokat a táblázatokon kívül más dokumentumformátumban is?
-Igen, a GroupDocs.Viewer a táblázatokon kívül számos dokumentumformátumot támogat, beleértve a Word-t, a PDF-t és a PowerPoint-ot.
+### Megjeleníthetem a rejtett oszlopokat és sorokat más dokumentumformátumokban is, nem csak táblázatokban?
+Igen, a GroupDocs.Viewer számos dokumentumformátumot támogat, beleértve a Word, PDF és PowerPoint fájlokat, valamint a táblázatokat.
 ### Van-e korlátozás a megjeleníthető rejtett oszlopok és sorok számára?
-GroupDocs.Viewer hatékonyan kezeli a rejtett oszlopok és sorok széles skálájának megjelenítését. A nagy mennyiségű rejtett adatot tartalmazó szélsőséges esetek azonban befolyásolhatják a teljesítményt.
-### Testreszabhatom a megjelenített adatok kimeneti formátumát?
-Teljesen! A GroupDocs.Viewer rugalmas lehetőségeket kínál a kimenet testreszabásához, lehetővé téve a megjelenített adatok egyedi igényeihez szabását.
+GroupDocs.Viewer hatékonyan kezeli a rejtett oszlopok és sorok széles skálájának renderelését. A nagy mennyiségű rejtett adatot tartalmazó szélsőséges esetek azonban befolyásolhatják a teljesítményt.
+### Testreszabhatom a renderelt adatok kimeneti formátumát?
+Abszolút! A GroupDocs.Viewer rugalmas lehetőségeket kínál a kimenet testreszabásához, lehetővé téve a megjelenített adatok testreszabását az Ön igényei szerint.
 ### Vannak-e licencelési szempontok a GroupDocs.Viewer használatához?
- Igen, győződjön meg arról, hogy rendelkezik a használatához megfelelő licenccel. Fedezze fel az engedélyezési lehetőségeket itt:[GroupDocs vásárlás](https://purchase.groupdocs.com/buy) vagy megszerezni a[ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) tesztelésre.
-### Hol kérhetek segítséget, vagy csatlakozhatok a GroupDocs közösséghez támogatásért?
- Meglátogatni a[GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) támogatásra, megbeszélésekre és közösségi interakcióra.
+Igen, győződjön meg arról, hogy rendelkezik a megfelelő licenccel a felhasználáshoz. Fedezze fel a licencelési lehetőségeket itt: [GroupDocs vásárlás](https://purchase.groupdocs.com/buy) vagy szerezzen be egy [ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) teszteléshez.
+### Hol kérhetek segítséget, vagy hol vehetem fel a kapcsolatot a GroupDocs közösségével?
+Látogassa meg a [GroupDocs.Viewer fórum](https://forum.groupdocs.com/c/viewer/9) támogatásért, beszélgetésekért és közösségi interakcióért.

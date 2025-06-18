@@ -1,22 +1,22 @@
 ---
-title: Điều chỉnh tràn văn bản trong ô
-linktitle: Điều chỉnh tràn văn bản trong ô
-second_title: API GroupDocs.Viewer .NET
-description: Dễ dàng quản lý tình trạng tràn văn bản trong tài liệu .NET bằng GroupDocs.Viewer. Nâng cao khả năng đọc và trải nghiệm người dùng. Tải về dùng thử ngay.
-weight: 10
-url: /vi/net/spreadsheet-rendering-options/adjust-text-overflow-cells/
+"description": "Quản lý dễ dàng tình trạng tràn văn bản trong tài liệu .NET với GroupDocs.Viewer. Nâng cao khả năng đọc và trải nghiệm người dùng. Tải xuống bản dùng thử miễn phí ngay."
+"linktitle": "Điều chỉnh tràn văn bản trong ô"
+"second_title": "API GroupDocs.Viewer .NET"
+"title": "Điều chỉnh tràn văn bản trong ô"
+"url": "/vi/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
+"weight": 10
 ---
 
 # Điều chỉnh tràn văn bản trong ô
 
 ## Giới thiệu
-Trong thế giới phát triển .NET năng động, việc quản lý tràn văn bản trong các ô là rất quan trọng để tạo ra các tài liệu dễ đọc và hấp dẫn về mặt hình ảnh. GroupDocs.Viewer dành cho .NET trao quyền cho các nhà phát triển một bộ công cụ toàn diện để xử lý liền mạch tình trạng tràn văn bản trong tài liệu bảng tính. Hướng dẫn này sẽ hướng dẫn bạn quy trình điều chỉnh tràn văn bản trong các ô bằng GroupDocs.Viewer cho .NET.
+Trong thế giới năng động của phát triển .NET, việc quản lý tràn văn bản trong các ô là rất quan trọng để tạo ra các tài liệu hấp dẫn và dễ đọc về mặt thị giác. GroupDocs.Viewer for .NET cung cấp cho các nhà phát triển một bộ công cụ toàn diện để xử lý tràn văn bản trong các tài liệu bảng tính một cách liền mạch. Hướng dẫn này sẽ hướng dẫn bạn quy trình điều chỉnh tràn văn bản trong các ô bằng GroupDocs.Viewer for .NET.
 ## Điều kiện tiên quyết
-Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+Trước khi bắt đầu hướng dẫn, hãy đảm bảo bạn đã đáp ứng đủ các điều kiện tiên quyết sau:
 - Hiểu biết cơ bản về phát triển .NET.
 - Visual Studio được cài đặt trên máy của bạn.
-- Thư viện GroupDocs.Viewer dành cho .NET mà bạn có thể tải xuống[đây](https://releases.groupdocs.com/viewer/net/).
-- Một tài liệu mẫu có nhiều văn bản để thực hành.
+- GroupDocs.Viewer cho thư viện .NET, bạn có thể tải xuống [đây](https://releases.groupdocs.com/viewer/net/).
+- Một tài liệu mẫu có chức năng tràn văn bản để thực hành.
 ## Nhập không gian tên
 Bắt đầu bằng cách nhập các không gian tên cần thiết vào dự án của bạn:
 ```csharp
@@ -24,28 +24,28 @@ using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## 1. Thiết lập thư mục tài liệu
+## 1. Thiết lập Thư mục Tài liệu
 Bắt đầu bằng cách xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi đầu ra sẽ được tạo ra.
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "page.html");
 ```
 ## 2. Khởi tạo Viewer
-Tạo một phiên bản của lớp Viewer và tải tài liệu có chứa văn bản tràn.
+Tạo một thể hiện của lớp Viewer và tải tài liệu có chứa phần văn bản tràn.
 ```csharp
 using (Viewer viewer = new Viewer("Path to Your Document"))
 {
-    // Tiếp tục thực hiện các bước sau...
+    // Tiếp tục thực hiện theo các bước sau...
 }
 ```
-## 3. Định cấu hình tùy chọn xem HTML
-Chỉ định các tùy chọn chế độ xem HTML, đặc biệt tập trung vào thuộc tính TextOverflowMode để kiểm soát cách xử lý tràn văn bản.
+## 3. Cấu hình Tùy chọn chế độ xem HTML
+Chỉ định các tùy chọn chế độ xem HTML, đặc biệt tập trung vào thuộc tính TextOverflowMode để kiểm soát cách xử lý tình trạng tràn văn bản.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.SpreadsheetOptions.TextOverflowMode = TextOverflowMode.HideText;
 ```
-## 4. Thực thi Trình xem
-Gọi Trình xem với các tùy chọn đã chỉ định để tạo đầu ra.
+## 4. Thực hiện Viewer
+Gọi Viewer với các tùy chọn được chỉ định để tạo đầu ra.
 ```csharp
 viewer.View(options);
 ```
@@ -54,17 +54,17 @@ Cuối cùng, thông báo cho người dùng về việc kết xuất thành cô
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Bây giờ bạn đã điều chỉnh thành công tình trạng tràn văn bản trong các ô bằng GroupDocs.Viewer cho .NET. Thử nghiệm với các cài đặt khác nhau và tích hợp chức năng này một cách liền mạch vào các ứng dụng .NET của bạn.
+Bây giờ bạn đã điều chỉnh thành công tràn văn bản trong ô bằng GroupDocs.Viewer cho .NET. Hãy thử nghiệm với các thiết lập khác nhau và tích hợp chức năng này một cách liền mạch vào các ứng dụng .NET của bạn.
 ## Phần kết luận
-Tóm lại, GroupDocs.Viewer dành cho .NET đơn giản hóa tác vụ xử lý tràn văn bản trong các ô, đảm bảo rằng tài liệu của bạn không chỉ hoạt động hiệu quả mà còn đẹp mắt về mặt hình ảnh. Với các bước này, bạn có thể nâng cao trải nghiệm người dùng và khả năng đọc tài liệu bảng tính của mình một cách dễ dàng.
+Tóm lại, GroupDocs.Viewer for .NET đơn giản hóa nhiệm vụ xử lý tràn văn bản trong các ô, đảm bảo rằng tài liệu của bạn không chỉ có chức năng mà còn được trau chuốt về mặt hình ảnh. Với các bước này, bạn có thể nâng cao trải nghiệm người dùng và khả năng đọc tài liệu bảng tính của mình một cách dễ dàng.
 ## Câu hỏi thường gặp
 ### 1. Tôi có thể sử dụng GroupDocs.Viewer cho .NET với bất kỳ loại tài liệu nào không?
- Có, GroupDocs.Viewer dành cho .NET hỗ trợ nhiều định dạng tài liệu, bao gồm bảng tính, bản trình bày, v.v. Tham khảo đến[tài liệu](https://tutorials.groupdocs.com/viewer/net/) để có danh sách đầy đủ.
+Có, GroupDocs.Viewer cho .NET hỗ trợ nhiều định dạng tài liệu, bao gồm bảng tính, bản trình bày và nhiều định dạng khác. Tham khảo [tài liệu](https://tutorials.groupdocs.com/viewer/net/) để biết danh sách đầy đủ.
 ### 2. Có bản dùng thử miễn phí không?
- Có, bạn có thể khám phá các khả năng của GroupDocs.Viewer dành cho .NET bằng cách tải xuống[dùng thử miễn phí](https://releases.groupdocs.com/).
-### 3. Làm cách nào tôi có thể nhận được hỗ trợ cho bất kỳ vấn đề nào?
- Để được hỗ trợ và thảo luận, hãy truy cập[Diễn đàn GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9).
+Có, bạn có thể khám phá các khả năng của GroupDocs.Viewer cho .NET bằng cách tải xuống [dùng thử miễn phí](https://releases.groupdocs.com/).
+### 3. Tôi có thể nhận được hỗ trợ cho bất kỳ vấn đề nào bằng cách nào?
+Để được hỗ trợ và thảo luận, hãy truy cập [Diễn đàn GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9).
 ### 4. Tôi có thể mua giấy phép tạm thời không?
- Chắc chắn, bạn có thể nhận được giấy phép tạm thời từ[đây](https://purchase.groupdocs.com/temporary-license/).
+Chắc chắn, bạn có thể xin được giấy phép tạm thời từ [đây](https://purchase.groupdocs.com/temporary-license/).
 ### 5. Tôi có thể mua GroupDocs.Viewer cho .NET ở đâu?
- Để mua phiên bản đầy đủ, hãy truy cập[trang mua hàng](https://purchase.groupdocs.com/buy).
+Để mua phiên bản đầy đủ, hãy truy cập [trang mua hàng](https://purchase.groupdocs.com/buy).

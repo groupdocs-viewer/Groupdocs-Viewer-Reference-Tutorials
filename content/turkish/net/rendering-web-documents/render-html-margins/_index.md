@@ -1,19 +1,19 @@
 ---
-title: Kullanıcı Tanımlı Kenar Boşluklarıyla HTML İşleme
-linktitle: Kullanıcı Tanımlı Kenar Boşluklarıyla HTML İşleme
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer'ı kullanarak .NET'te özel kenar boşluklarıyla HTML'yi nasıl oluşturacağınızı öğrenin. Belge sunumunu zahmetsizce geliştirin.
-weight: 11
-url: /tr/net/rendering-web-documents/render-html-margins/
+"description": "GroupDocs.Viewer kullanarak .NET'te özel kenar boşluklarıyla HTML'yi nasıl oluşturacağınızı öğrenin. Belge sunumunu zahmetsizce geliştirin."
+"linktitle": "Kullanıcı Tarafından Tanımlanan Kenar Boşluklarıyla HTML Oluştur"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Kullanıcı Tarafından Tanımlanan Kenar Boşluklarıyla HTML Oluştur"
+"url": "/tr/net/rendering-web-documents/render-html-margins/"
+"weight": 11
 ---
 
-# Kullanıcı Tanımlı Kenar Boşluklarıyla HTML İşleme
+# Kullanıcı Tarafından Tanımlanan Kenar Boşluklarıyla HTML Oluştur
 
 ## giriiş
-.NET geliştirme alanında, HTML'yi kullanıcı tanımlı kenar boşluklarıyla oluşturmak, görsel olarak çekici belgeler oluşturmanın çok önemli bir yönüdür. İster bir web sitesi için kenar boşluklarını ayarlamak ister yazdırma düzenlerini yapılandırmak olsun, kenar boşlukları üzerindeki hassas kontrol, içeriğin genel sunumunu geliştirir. Bu öğreticide, bu işlevselliği sorunsuz bir şekilde elde etmek için GroupDocs.Viewer for .NET'in kullanımını derinlemesine inceleyeceğiz.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-1.  GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NET kitaplığını yükleyin. adresinden indirebilirsiniz.[İnternet sitesi](https://releases.groupdocs.com/viewer/net/).
+.NET geliştirme alanında, HTML'yi kullanıcı tanımlı kenar boşluklarıyla işlemek, görsel olarak çekici belgeler oluşturmanın önemli bir yönüdür. İster bir web sitesi için kenar boşluklarını ayarlamak ister baskı düzenlerini yapılandırmak olsun, kenar boşlukları üzerinde hassas kontrol, içeriğin genel sunumunu iyileştirir. Bu eğitimde, bu işlevi sorunsuz bir şekilde elde etmek için .NET için GroupDocs.Viewer'ı kullanmayı inceleyeceğiz.
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+1. GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NET kütüphanesini yükleyin. Bunu şu adresten indirebilirsiniz: [web sitesi](https://releases.groupdocs.com/viewer/net/).
 2. .NET Ortamı: .NET geliştirme için bir çalışma ortamına sahip olun.
 3. HTML Belgesi: Özel kenar boşluklarıyla oluşturmak istediğiniz bir HTML belgesi hazırlayın.
 
@@ -24,17 +24,17 @@ using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## Adım 1: Çıkış Dizinini Ayarlayın
+## Adım 1: Çıktı Dizinini Ayarla
 İşlenen dosyaların kaydedilmesini istediğiniz dizini tanımlayın:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Adım 2: Sayfa Dosya Yolu Formatını Tanımlayın
-Oluşturulan sayfaların dosya yollarının formatını ayarlayın:
+## Adım 2: Sayfa Dosyası Yolu Biçimini Tanımlayın
+İşlenen sayfaların dosya yollarının biçimini ayarlayın:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "html_render_margins_page_{0}.jpg");
 ```
-## 3. Adım: JPG Oluşturma için Kenar Boşluklarını Ayarlayın
+## Adım 3: JPG Oluşturma için Kenar Boşluklarını Ayarlayın
 HTML'yi JPG formatına dönüştürmek için kenar boşluklarını yapılandırın:
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
@@ -75,15 +75,15 @@ using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
 ```
 
 ## Çözüm
-GroupDocs.Viewer kullanarak HTML belgelerini .NET'te görüntülerken kenar boşluklarını özelleştirmek, geliştiricilerin içeriğin sunumunu tam olarak uyarlamasına olanak tanır. Bu öğreticiyi takip ederek JPG, PNG veya PDF çıktı formatlarının kenar boşluklarını zahmetsizce ayarlayabilir, belgelerinizin görsel çekiciliğini ve okunabilirliğini artırabilirsiniz.
-## SSS'ler
-### GroupDocs.Viewer for .NET farklı HTML formatlarıyla uyumlu mu?
-GroupDocs.Viewer çok çeşitli HTML formatlarını destekleyerek çeşitli HTML belgeleriyle uyumluluk sağlar.
-### Kenar boşluklarını belge içeriğine göre dinamik olarak ayarlayabilir miyim?
-Evet, kenar boşluklarını belge özelliklerine veya kullanıcı tercihlerine göre programlı olarak ayarlayabilirsiniz.
+GroupDocs.Viewer kullanarak .NET'te HTML belgelerini işlerken kenar boşluklarını özelleştirmek, geliştiricilerin içerik sunumunu hassas bir şekilde uyarlamalarına olanak tanır. Bu öğreticiyi izleyerek, JPG, PNG veya PDF çıktı biçimleri için kenar boşluklarını zahmetsizce ayarlayabilir, belgelerinizin görsel çekiciliğini ve okunabilirliğini artırabilirsiniz.
+## SSS
+### GroupDocs.Viewer for .NET farklı HTML formatlarıyla uyumlu mudur?
+GroupDocs.Viewer, çeşitli HTML belgeleriyle uyumluluğu garanti altına alarak geniş bir yelpazede HTML formatlarını destekler.
+### Belge içeriğine göre kenar boşluklarını dinamik olarak ayarlayabilir miyim?
+Evet, belge özelliklerine veya kullanıcı özelliklerine göre kenar boşluklarını programatik olarak ayarlayabilirsiniz.
 ### Marj ayarlamalarında herhangi bir sınırlama var mı?
-GroupDocs.Viewer, marj ayarlamalarında esneklik sunarak makul sınırlar dahilinde özelleştirmeye olanak tanır.
-### GroupDocs.Viewer JPG, PNG ve PDF dışındaki diğer çıktı formatlarını destekliyor mu?
-Evet, GroupDocs.Viewer TIFF, SVG ve daha fazlası dahil olmak üzere çeşitli formatlarda görüntü oluşturmayı destekler.
-### GroupDocs.Viewer ile ilgili daha fazla yardıma nasıl başvurabilirim veya sorunları nasıl bildirebilirim?
- GroupDocs.Viewer forumunu ziyaret edebilirsiniz.[Burada](https://forum.groupdocs.com/c/viewer/9) Destek ve tartışmalar için.
+GroupDocs.Viewer, marj ayarlamalarında esneklik sunarak makul sınırlar içerisinde özelleştirmeye olanak tanır.
+### GroupDocs.Viewer JPG, PNG ve PDF dışında diğer çıktı formatlarını destekliyor mu?
+Evet, GroupDocs.Viewer TIFF, SVG ve daha fazlası dahil olmak üzere çeşitli formatlarda görüntülemeyi destekler.
+### GroupDocs.Viewer ile ilgili daha fazla yardıma nasıl ulaşabilirim veya sorunları nasıl bildirebilirim?
+GroupDocs.Viewer forumunu ziyaret edebilirsiniz [Burada](https://forum.groupdocs.com/c/viewer/9) Destek ve tartışmalar için.

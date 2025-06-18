@@ -1,78 +1,78 @@
 ---
-title: Vykreslit dokument s komentáři
-linktitle: Vykreslit dokument s komentáři
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se vykreslovat dokumenty s komentáři pomocí GroupDocs.Viewer for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou integraci.
-weight: 13
-url: /cs/net/rendering-options/render-document-comments/
+"description": "Naučte se, jak vykreslovat dokumenty s komentáři pomocí GroupDocs.Viewer pro .NET. Pro bezproblémovou integraci postupujte podle našeho podrobného návodu."
+"linktitle": "Vykreslení dokumentu s komentáři"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslení dokumentu s komentáři"
+"url": "/cs/net/rendering-options/render-document-comments/"
+"weight": 13
 ---
 
-# Vykreslit dokument s komentáři
+# Vykreslení dokumentu s komentáři
 
-## Úvod
-GroupDocs.Viewer for .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově integrovat funkce vykreslování dokumentů do jejich aplikací .NET. Ať už potřebujete zobrazit dokumenty aplikace Word, tabulky Excel, prezentace PowerPoint, soubory PDF nebo jiné formáty, GroupDocs.Viewer poskytuje jednoduché řešení.
-tomto tutoriálu se zaměříme na vykreslování dokumentů s komentáři pomocí GroupDocs.Viewer for .NET. Provedeme vás nezbytnými předpoklady, importem jmenných prostorů a poskytneme vám podrobného průvodce vykreslováním dokumentů s komentáři, čímž zajistíme, že důkladně pochopíte každý koncept.
+## Zavedení
+GroupDocs.Viewer pro .NET je výkonná knihovna, která umožňuje vývojářům bezproblémově integrovat funkce vykreslování dokumentů do jejich .NET aplikací. Ať už potřebujete zobrazit dokumenty Wordu, tabulky Excelu, prezentace PowerPointu, soubory PDF nebo jiné formáty, GroupDocs.Viewer nabízí jednoduché řešení.
+V tomto tutoriálu se zaměříme na vykreslování dokumentů s komentáři pomocí GroupDocs.Viewer pro .NET. Provedeme vás předpoklady, importem jmenných prostorů a poskytneme vám podrobný návod k vykreslování dokumentů s komentáři, abyste každý koncept důkladně pochopili.
 ## Předpoklady
-Než se pustíte do vykreslování dokumentů s komentáři pomocí GroupDocs.Viewer for .NET, ujistěte se, že máte splněny následující předpoklady:
+Než se pustíte do vykreslování dokumentů s komentáři pomocí GroupDocs.Viewer pro .NET, ujistěte se, že máte splněny následující předpoklady:
 ### Nastavení vývojového prostředí .NET
-Ujistěte se, že máte nastavené vývojové prostředí pro vývoj .NET. Budete potřebovat kompatibilní IDE, jako je Visual Studio a .NET SDK nainstalované na vašem počítači.
-### GroupDocs.Viewer pro instalaci .NET
-Stáhněte a nainstalujte GroupDocs.Viewer for .NET z webu nebo použijte poskytnutý odkaz ke stažení:
-[Stáhněte si GroupDocs.Viewer pro .NET](https://releases.groupdocs.com/viewer/net/)
+Ujistěte se, že máte nastavené vývojové prostředí pro vývoj v .NET. Budete potřebovat kompatibilní IDE, jako je Visual Studio, a na svém počítači nainstalovanou sadu .NET SDK.
+### Instalace GroupDocs.Viewer pro .NET
+Stáhněte a nainstalujte GroupDocs.Viewer pro .NET z webových stránek nebo použijte poskytnutý odkaz ke stažení:
+[Stáhnout GroupDocs.Viewer pro .NET](https://releases.groupdocs.com/viewer/net/)
 
 ## Importovat jmenné prostory
-Chcete-li začít, importujte potřebné jmenné prostory do svého projektu .NET. Tyto jmenné prostory poskytují přístup ke třídám a metodám potřebným pro vykreslování dokumentu s komentáři.
+Nejprve importujte potřebné jmenné prostory do svého projektu .NET. Tyto jmenné prostory poskytují přístup ke třídám a metodám potřebným pro vykreslování dokumentů s komentáři.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-## Krok 1: Definujte výstupní adresář
-Nastavte výstupní adresář, kam se bude ukládat vykreslený dokument s komentáři.
+## Krok 1: Definování výstupního adresáře
+Nastavte výstupní adresář, kam bude uložen vykreslený dokument s komentáři.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Krok 2: Definujte formát cesty k souboru stránky
-Definujte formát cesty k souboru pro jednotlivé stránky vykreslovaného dokumentu s komentáři.
+## Krok 2: Definování formátu cesty k souboru stránky
+Definujte formát cesty k souboru pro jednotlivé stránky vykresleného dokumentu s komentáři.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## Krok 3: Vytvořte objekt prohlížeče
- Vytvořte instanci souboru`Viewer` třídy, předá jako parametr cestu k dokumentu s komentáři.
+## Krok 3: Vytvoření instance objektu Viewer
+Vytvořte instanci `Viewer` třída, která předá cestu k dokumentu s komentáři jako parametrem.
 ```csharp
 using (Viewer viewer = new Viewer("Path to Your Document with Comments"))
 {
     // Možnosti vykreslování
 }
 ```
-## Krok 4: Nakonfigurujte možnosti vykreslování
+## Krok 4: Konfigurace možností vykreslování
 Zadejte možnosti vykreslování, včetně nastavení pro vložené zdroje a komentáře.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.RenderComments = true;
 ```
 ## Krok 5: Vykreslení dokumentu s komentáři
- Vyvolat`View` metoda`Viewer` objekt, předávání možností vykreslování.
+Vyvolat `View` metoda `Viewer` objekt, předání možností vykreslování.
 ```csharp
 viewer.View(options);
 ```
-## Krok 6: Zobrazte zprávu o úspěchu
-Informujte uživatele, že dokument s komentáři byl úspěšně vykreslen.
+## Krok 6: Zobrazení zprávy o úspěchu
+Upozornit uživatele, že dokument s komentáři byl úspěšně vykreslen.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Závěr
-V tomto tutoriálu jsme pokryli proces vykreslování dokumentů s komentáři pomocí GroupDocs.Viewer pro .NET. Pokud budete postupovat podle podrobného průvodce a ujistíte se, že splňujete předpoklady, můžete bezproblémově integrovat možnosti vykreslování dokumentů do svých aplikací .NET.
-## FAQ
-### Dokáže GroupDocs.Viewer vykreslit dokumenty se složitým formátováním?
-Ano, GroupDocs.Viewer podporuje vykreslování dokumentů s různými prvky formátování, včetně tabulek, obrázků a písem.
+V tomto tutoriálu jsme se zabývali procesem vykreslování dokumentů s komentáři pomocí GroupDocs.Viewer pro .NET. Dodržováním podrobných pokynů a zajištěním splnění požadavků můžete bezproblémově integrovat funkce vykreslování dokumentů do svých aplikací .NET.
+## Často kladené otázky
+### Může GroupDocs.Viewer vykreslit dokumenty se složitým formátováním?
+Ano, GroupDocs.Viewer podporuje vykreslování dokumentů s různými formátovacími prvky, včetně tabulek, obrázků a písem.
 ### Je GroupDocs.Viewer kompatibilní s různými formáty dokumentů?
-GroupDocs.Viewer rozhodně dokáže vykreslit širokou škálu formátů dokumentů, včetně PDF, DOCX, XLSX, PPTX a dalších.
-### Mohu přizpůsobit možnosti vykreslování pro konkrétní požadavky?
-Ano, GroupDocs.Viewer poskytuje flexibilní možnosti vykreslování, které vám umožní přizpůsobit výstup podle potřeb vaší aplikace.
+GroupDocs.Viewer samozřejmě dokáže vykreslit širokou škálu formátů dokumentů, včetně PDF, DOCX, XLSX, PPTX a dalších.
+### Mohu si přizpůsobit možnosti vykreslování podle specifických požadavků?
+Ano, GroupDocs.Viewer nabízí flexibilní možnosti vykreslování, které vám umožňují přizpůsobit výstup potřebám vaší aplikace.
 ### Podporuje GroupDocs.Viewer vykreslování dokumentů z externích zdrojů?
-Ano, můžete vykreslovat dokumenty z různých zdrojů, včetně místních souborů, streamů a adres URL.
+Ano, dokumenty můžete vykreslovat z různých zdrojů, včetně lokálních souborů, streamů a URL adres.
 ### Je k dispozici zkušební verze pro GroupDocs.Viewer?
 Ano, můžete začít s bezplatnou zkušební verzí GroupDocs.Viewer a prozkoumat jeho funkce a možnosti.

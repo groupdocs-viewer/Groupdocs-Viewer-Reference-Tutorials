@@ -1,31 +1,34 @@
 ---
-title: Render Gambar CDR
-linktitle: Render Gambar CDR
-second_title: GroupDocs.Viewer .NET API
-description: Pelajari cara merender gambar CDR ke HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk .NET. Konversi file CorelDRAW dengan mudah menggunakan tutorial ini.
-weight: 12
-url: /id/net/image-rendering/render-cdr-images/
+"description": "Pelajari cara mengubah gambar CDR menjadi HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk .NET. Ubah file CorelDRAW dengan mudah menggunakan tutorial ini."
+"linktitle": "Render Gambar CDR"
+"second_title": "API Penampil GroupDocs.NET"
+"title": "Render Gambar CDR"
+"url": "/id/net/image-rendering/render-cdr-images/"
+"weight": 12
 ---
 
 # Render Gambar CDR
 
 ## Perkenalan
-Dalam tutorial ini, kami akan memandu Anda melalui proses rendering gambar CDR (CorelDRAW) menggunakan GroupDocs.Viewer untuk .NET. CDR adalah format file yang terutama dikaitkan dengan CorelDRAW, editor grafis vektor. Dengan GroupDocs.Viewer, Anda dapat dengan mudah mengonversi file CDR ke berbagai format seperti HTML, JPG, PNG, dan PDF.
+Dalam tutorial ini, kami akan memandu Anda melalui proses rendering gambar CDR (CorelDRAW) menggunakan GroupDocs.Viewer untuk .NET. CDR adalah format file yang terutama dikaitkan dengan CorelDRAW, editor grafik vektor. Dengan GroupDocs.Viewer, Anda dapat dengan mudah mengonversi file CDR ke berbagai format seperti HTML, JPG, PNG, dan PDF.
+
+![Render Gambar CDR dengan GroupDocs.Viewer untuk .NET](/viewer/image-rendering/render-cdr-images.png)
+
 ## Prasyarat
 Sebelum memulai, pastikan Anda memiliki prasyarat berikut:
-1.  GroupDocs.Viewer untuk .NET: Pastikan Anda telah menginstal GroupDocs.Viewer untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.groupdocs.com/viewer/net/).
-2. Direktori Dokumen: Siapkan direktori tempat Anda ingin menyimpan gambar yang dirender.
+1. GroupDocs.Viewer untuk .NET: Pastikan Anda telah menginstal GroupDocs.Viewer untuk .NET. Anda dapat mengunduhnya dari [Di Sini](https://releases.groupdocs.com/viewer/net/).
+2. Direktori Dokumen: Siapkan direktori tempat Anda ingin menyimpan gambar yang telah dirender.
 3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# diperlukan untuk memahami contoh kode.
-## Impor Namespace
-Sebelum mendalami contoh kode, impor namespace yang diperlukan dalam file C# Anda:
+## Mengimpor Ruang Nama
+Sebelum menyelami contoh kode, impor namespace yang diperlukan dalam file C# Anda:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-Sekarang, mari kita bagi setiap contoh menjadi beberapa langkah:
+Sekarang, mari kita uraikan setiap contoh menjadi beberapa langkah:
 ## Merender ke HTML
-1. Tentukan direktori keluaran tempat Anda ingin menyimpan file HTML yang dirender:
+1. Tentukan direktori keluaran tempat Anda ingin menyimpan file HTML yang telah dirender:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
@@ -84,17 +87,17 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR))
     viewer.View(options);
 }
 ```
-3.  Secara opsional, Anda dapat menentukan opsi rendering atau merender halaman tertentu dengan meneruskan parameter tambahan ke`viewer.View()` metode.
+3. Secara opsional, Anda dapat menentukan opsi rendering atau merender halaman tertentu dengan meneruskan parameter tambahan ke `viewer.View()` metode.
 ## Kesimpulan
-Merender gambar CDR ke berbagai format seperti HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk .NET adalah proses yang mudah. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat secara efisien mengonversi file CDR ke format berbeda berdasarkan kebutuhan Anda.
-## FAQ
+Merender gambar CDR ke berbagai format seperti HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk .NET merupakan proses yang mudah. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat mengonversi file CDR ke berbagai format berdasarkan kebutuhan Anda secara efisien.
+## Pertanyaan yang Sering Diajukan
 ### Apakah GroupDocs.Viewer untuk .NET kompatibel dengan semua versi file CDR?
 GroupDocs.Viewer untuk .NET mendukung rendering file CDR yang dibuat oleh berbagai versi CorelDRAW.
-### Bisakah saya menyesuaikan keluaran file yang dirender?
-Ya, GroupDocs.Viewer untuk .NET menyediakan berbagai opsi untuk menyesuaikan keluaran, seperti menyesuaikan kualitas gambar, mengatur tanda air, dll.
-### Apakah GroupDocs.Viewer untuk .NET memerlukan ketergantungan eksternal?
-Tidak, GroupDocs.Viewer untuk .NET adalah perpustakaan mandiri dan tidak memerlukan ketergantungan eksternal apa pun untuk merender dokumen.
+### Bisakah saya menyesuaikan output file yang dirender?
+Ya, GroupDocs.Viewer untuk .NET menyediakan berbagai opsi untuk menyesuaikan output, seperti menyesuaikan kualitas gambar, mengatur tanda air, dll.
+### Apakah GroupDocs.Viewer untuk .NET memerlukan dependensi eksternal?
+Tidak, GroupDocs.Viewer untuk .NET adalah pustaka mandiri dan tidak memerlukan dependensi eksternal apa pun untuk merender dokumen.
 ### Apakah ada versi uji coba yang tersedia untuk GroupDocs.Viewer untuk .NET?
- Ya, Anda dapat mengunduh GroupDocs.Viewer versi uji coba gratis untuk .NET dari[Di Sini](https://releases.groupdocs.com/).
+Ya, Anda dapat mengunduh versi uji coba gratis GroupDocs.Viewer untuk .NET dari [Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya bisa mendapatkan dukungan untuk GroupDocs.Viewer untuk .NET?
- Anda bisa mendapatkan dukungan dari forum komunitas GroupDocs.Viewer[Di Sini](https://forum.groupdocs.com/c/viewer/9).
+Anda bisa mendapatkan dukungan dari forum komunitas GroupDocs.Viewer [Di Sini](https://forum.groupdocs.com/c/viewer/9).

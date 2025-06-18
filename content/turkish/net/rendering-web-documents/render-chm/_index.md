@@ -1,24 +1,24 @@
 ---
-title: CHM Dosyalarını İşleme
-linktitle: CHM Dosyalarını İşleme
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer'ı kullanarak CHM dosyalarını .NET'te nasıl oluşturacağınızı öğrenin. CHM'yi zahmetsizce HTML, JPG, PNG ve PDF formatlarına dönüştürün.
-weight: 10
-url: /tr/net/rendering-web-documents/render-chm/
+"description": "GroupDocs.Viewer kullanarak CHM dosyalarını .NET'te nasıl oluşturacağınızı öğrenin. CHM'yi HTML, JPG, PNG ve PDF formatlarına zahmetsizce dönüştürün."
+"linktitle": "CHM Dosyalarını Oluştur"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "CHM Dosyalarını Oluştur"
+"url": "/tr/net/rendering-web-documents/render-chm/"
+"weight": 10
 ---
 
-# CHM Dosyalarını İşleme
+# CHM Dosyalarını Oluştur
 
 ## giriiş
-Bu öğreticide, GroupDocs.Viewer for .NET'i kullanarak CHM (Derlenmiş HTML Yardımı) dosyalarının nasıl oluşturulacağını keşfedeceğiz. GroupDocs.Viewer for .NET, geliştiricilerin herhangi bir harici yazılım kurulumu gerektirmeden .NET uygulamalarında 170'in üzerinde belge türünü görüntülemesine olanak tanıyan güçlü bir belge işleme API'sidir.
+Bu eğitimde, .NET için GroupDocs.Viewer'ı kullanarak CHM (Derlenmiş HTML Yardımı) dosyalarının nasıl işleneceğini inceleyeceğiz. .NET için GroupDocs.Viewer, geliştiricilerin herhangi bir harici yazılım kurulumu gerektirmeden .NET uygulamalarında 170'ten fazla belge türünü görüntülemelerine olanak tanıyan güçlü bir belge işleme API'sidir.
 
-## Önkoşullar
+## Ön koşullar
 
-CHM dosyalarını oluşturmaya başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+CHM dosyalarının işlenmesine başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
 ### .NET için GroupDocs.Viewer'ı yükleme
 
- Başlamak için GroupDocs.Viewer for .NET'i yüklemeniz gerekir. Kütüphaneyi adresinden indirebilirsiniz.[GroupDocs web sitesi](https://releases.groupdocs.com/viewer/net/) veya Paket Yöneticisi Konsolunda aşağıdaki komutu çalıştırarak NuGet Paket Yöneticisi aracılığıyla yükleyin:
+Başlamak için, .NET için GroupDocs.Viewer'ı yüklemeniz gerekir. Kütüphaneyi şuradan indirebilirsiniz: [GroupDocs web sitesi](https://releases.groupdocs.com/viewer/net/) veya NuGet Paket Yöneticisi Konsolunda aşağıdaki komutu çalıştırarak NuGet Paket Yöneticisi aracılığıyla yükleyin:
 
 ```bash
 Install-Package GroupDocs.Viewer
@@ -36,9 +36,9 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Şimdi işleme sürecini birden fazla adıma ayıralım:
+Şimdi render sürecini birden fazla adıma bölelim:
 
-## Adım 1: Çıkış Dizinini Tanımlayın
+## Adım 1: Çıktı Dizinini Tanımlayın
 
 İşlenen dosyaların kaydedilmesini istediğiniz dizini tanımlayın:
 
@@ -46,7 +46,7 @@ using GroupDocs.Viewer.Options;
 string outputDirectory = "Your Document Directory";
 ```
 
-## 2. Adım: HTML'ye dönüştürün
+## Adım 2: HTML'ye dönüştürün
 
 CHM dosyalarını HTML'ye dönüştürmek için aşağıdaki kod parçacığını kullanın:
 
@@ -56,15 +56,15 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.html")
 using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    options.RenderToSinglePage = true; // Tüm CHM içeriğini tek bir sayfaya dönüştürmek için true olarak ayarlayın
+    options.RenderToSinglePage = true; // Tüm CHM içeriğini tek bir sayfaya dönüştürmek için doğru olarak ayarlayın
 
-    viewer.View(options); //Tüm sayfaları dönüştür
+    viewer.View(options); // Tüm sayfaları dönüştür
 }
 ```
 
-## 3. Adım: JPG'ye dönüştürün
+## Adım 3: JPG'ye dönüştürün
 
-CHM dosyalarını JPG görsellerine dönüştürmek için aşağıdaki kod parçacığını kullanın:
+CHM dosyalarını JPG resimlerine dönüştürmek için aşağıdaki kod parçacığını kullanın:
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.jpg");
@@ -73,7 +73,7 @@ using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
 
-    viewer.View(options, 1, 2, 3); // Yalnızca 1, 2, 3. sayfaları dönüştür
+    viewer.View(options, 1, 2, 3); // Yalnızca 1, 2, 3 sayfalarını dönüştür
 }
 ```
 
@@ -88,11 +88,11 @@ using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
 
-    viewer.View(options, 1, 2, 3); // Yalnızca 1, 2, 3. sayfaları dönüştür
+    viewer.View(options, 1, 2, 3); // Yalnızca 1, 2, 3 sayfalarını dönüştür
 }
 ```
 
-## Adım 5: PDF'ye Dönüştür
+## Adım 5: PDF'ye dönüştürün
 
 CHM dosyalarını PDF belgesine dönüştürmek için aşağıdaki kod parçacığını kullanın:
 
@@ -103,13 +103,13 @@ using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
 
-    viewer.View(options); //Tüm sayfaları dönüştür
+    viewer.View(options); // Tüm sayfaları dönüştür
 }
 ```
 
 ## Adım 6: Çıktıyı Kontrol Edin
 
-Oluşturma işlemi tamamlandıktan sonra, oluşturulan dosyalar için belirtilen çıktı dizinini kontrol edin:
+İşleme süreci tamamlandıktan sonra, işlenen dosyalar için belirtilen çıktı dizinini kontrol edin:
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -117,26 +117,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Çözüm
 
-CHM dosyalarını GroupDocs.Viewer for .NET kullanarak oluşturmak basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek, CHM belgelerini .NET uygulamalarınızda HTML, resimler (JPG, PNG) ve PDF gibi çeşitli formatlara verimli bir şekilde dönüştürebilirsiniz.
+GroupDocs.Viewer for .NET kullanarak CHM dosyalarını işlemek basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek, CHM belgelerini .NET uygulamalarınızda HTML, resim (JPG, PNG) ve PDF gibi çeşitli biçimlere verimli bir şekilde dönüştürebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### S1: GroupDocs.Viewer, CHM dışındaki diğer belge formatlarını görüntüleyebilir mi?
+### S1: GroupDocs.Viewer CHM dışındaki diğer belge formatlarını da işleyebilir mi?
 
-Cevap1: Evet, GroupDocs.Viewer, PDF, DOCX, XLSX, PPTX ve daha fazlasını içeren 170'in üzerinde belge formatının görüntülenmesini destekler.
+C1: Evet, GroupDocs.Viewer PDF, DOCX, XLSX, PPTX ve daha fazlası dahil olmak üzere 170'ten fazla belge formatının işlenmesini destekler.
 
-### S2: GroupDocs.Viewer .NET Core ile uyumlu mu?
+### S2: GroupDocs.Viewer .NET Core ile uyumlu mudur?
 
-C2: Evet, GroupDocs.Viewer geleneksel .NET Framework'e ek olarak .NET Core'u da destekler.
+C2: Evet, GroupDocs.Viewer geleneksel .NET Framework'ün yanı sıra .NET Core'u da destekler.
 
-### S3: Farklı çıktı formatları için işleme seçeneklerini özelleştirebilir miyim?
+### S3: Farklı çıktı biçimleri için işleme seçeneklerini özelleştirebilir miyim?
 
-C3: Evet, GroupDocs.Viewer sayfa numaralarını belirlemek, görüntü kalitesini ayarlamak ve çıktı yollarını yapılandırmak gibi işleme sürecini özelleştirmek için çeşitli seçenekler sunar.
+C3: Evet, GroupDocs.Viewer, sayfa numaralarını belirtme, görüntü kalitesini ayarlama ve çıktı yollarını yapılandırma gibi, işleme sürecini özelleştirmek için çeşitli seçenekler sunar.
 
-### S4: GroupDocs.Viewer, belgelerin işlenmesi için herhangi bir dış bağımlılığa ihtiyaç duyuyor mu?
+### S4: GroupDocs.Viewer'ın belgeleri işlemek için herhangi bir harici bağımlılığa ihtiyacı var mı?
 
-C4: Hayır, GroupDocs.Viewer bağımsız bir kitaplıktır ve herhangi bir harici bağımlılık veya üçüncü taraf yazılım kurulumu gerektirmez.
+C4: Hayır, GroupDocs.Viewer bağımsız bir kütüphanedir ve herhangi bir harici bağımlılık veya üçüncü taraf yazılım kurulumu gerektirmez.
 
-### S5: GroupDocs.Viewer'ın ücretsiz deneme sürümü mevcut mu?
+### S5: GroupDocs.Viewer için ücretsiz deneme sürümü var mı?
 
- C5: Evet, GroupDocs.Viewer'ın ücretsiz denemesinden şu adresi ziyaret ederek yararlanabilirsiniz:[İnternet sitesi](https://releases.groupdocs.com/).
+C5: Evet, GroupDocs.Viewer'ın ücretsiz deneme sürümünden yararlanmak için şu adresi ziyaret edebilirsiniz: [web sitesi](https://releases.groupdocs.com/).

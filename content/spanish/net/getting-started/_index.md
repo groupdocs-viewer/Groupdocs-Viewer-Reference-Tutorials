@@ -1,10 +1,10 @@
 ---
-title: Empezando
-linktitle: Empezando
-second_title: API GroupDocs.Viewer .NET
-description: Descubra tutoriales paso a paso para integrar GroupDocs.Viewer para .NET sin problemas en sus aplicaciones. Aprenda a configurar licencias y personalizar la apariencia del visor.
-weight: 26
-url: /es/net/getting-started/
+"description": "Descubra tutoriales paso a paso para integrar GroupDocs.Viewer para .NET sin problemas en sus aplicaciones. Aprenda a configurar licencias y personalizar la apariencia del visor."
+"linktitle": "Empezando"
+"second_title": "API .NET de GroupDocs.Viewer"
+"title": "Empezando"
+"url": "/es/net/getting-started/"
+"weight": 26
 ---
 
 # Empezando
@@ -12,31 +12,33 @@ url: /es/net/getting-started/
 
 ## Introducción
 
-¿Está listo para mejorar sus aplicaciones .NET con potentes capacidades de visualización de documentos? ¡No busque más! En esta guía completa, lo guiaremos a través de todo lo que necesita saber sobre la integración perfecta de GroupDocs.Viewer para .NET en sus proyectos.
+¿Listo para mejorar tus aplicaciones .NET con potentes funciones de visualización de documentos? ¡No busques más! En esta guía completa, te explicaremos todo lo que necesitas saber para integrar GroupDocs.Viewer para .NET sin problemas en tus proyectos.
+
+![Visualización de documentos con GroupDocs.Viewer para .NET](/viewer/getting-started/image.png)
 
 ## Tutoriales de introducción
 
-¿Es usted nuevo en GroupDocs.Viewer para .NET? ¡No hay problema! Nuestros tutoriales de "Introducción" están diseñados para ayudarlo a comenzar su viaje con facilidad. Ya sea que esté configurando una licencia a partir de un archivo o una secuencia, u optando por una licencia medida, lo tenemos cubierto.
+¿Es nuevo en GroupDocs.Viewer para .NET? ¡No se preocupe! Nuestros tutoriales de "Introducción" están diseñados para ayudarle a empezar fácilmente. Ya sea que configure una licencia desde un archivo o una secuencia, o que opte por una licencia medida, lo tenemos cubierto.
 
 ## Establecer licencia desde archivo
 
-En este tutorial, lo guiaremos a través del proceso de configurar una licencia a partir de un archivo. Es un paso simple pero esencial para integrar GroupDocs.Viewer para .NET en sus aplicaciones sin esfuerzo. Con sólo unas pocas líneas de código, podrá desbloquear potentes funciones de visualización de documentos.
+En este tutorial, le guiaremos a través del proceso de configuración de una licencia desde un archivo. Es un paso sencillo pero esencial para integrar GroupDocs.Viewer para .NET en sus aplicaciones sin esfuerzo. Con solo unas pocas líneas de código, podrá acceder a potentes funciones de visualización de documentos.
 
 ## Establecer licencia desde Stream
 
-¿Busca una forma flexible de configurar su licencia? Nuestro tutorial sobre cómo configurar una licencia desde una transmisión es justo lo que necesita. Le mostraremos cómo integrar perfectamente GroupDocs.Viewer para .NET en sus aplicaciones .NET, garantizando experiencias de visualización de documentos fluidas para sus usuarios.
+¿Busca una forma flexible de configurar su licencia? Nuestro tutorial sobre cómo configurar una licencia desde una transmisión es justo lo que necesita. Le mostraremos cómo integrar GroupDocs.Viewer para .NET a la perfección en sus aplicaciones .NET, garantizando una experiencia de visualización de documentos fluida para sus usuarios.
 
 ## Establecer licencia medida
 
-¿Quiere realizar un seguimiento del uso de visualización de documentos? Nuestro tutorial sobre cómo configurar una licencia medida lo tiene cubierto. Aprenda cómo integrar fácilmente funcionalidades de representación de documentos en sus proyectos mientras controla su uso. Es una forma sencilla de gestionar sus necesidades de visualización de documentos.
+¿Quieres controlar el uso de la visualización de tus documentos? Nuestro tutorial sobre cómo configurar una licencia con límite de uso te ayudará. Aprende a integrar fácilmente las funciones de renderizado de documentos en tus proyectos y a controlar tu uso. Es una forma sencilla de gestionar tus necesidades de visualización de documentos.
 
-Ya sea que sea un desarrollador experimentado o esté comenzando con el desarrollo de .NET, nuestros tutoriales hacen que la integración de GroupDocs.Viewer sea muy sencilla. Con explicaciones claras y fragmentos de código, estará listo y funcionando en poco tiempo.
+Tanto si eres un desarrollador experimentado como si te estás iniciando en el desarrollo .NET, nuestros tutoriales facilitan la integración de GroupDocs.Viewer. Con explicaciones claras y fragmentos de código, estarás listo para usar enseguida.
 
-Entonces, ¿por qué esperar? ¡Sumérgete en nuestros tutoriales hoy y desbloquea todo el potencial de GroupDocs.Viewer para .NET!
+¿A qué esperas? ¡Sumérgete en nuestros tutoriales hoy mismo y descubre todo el potencial de GroupDocs.Viewer para .NET!
 
 ---
 
-## ¿Listo para comenzar? Mira nuestros tutoriales:
+## ¿Listo para empezar? Consulta nuestros tutoriales:
 
 - [Establecer licencia desde archivo](./set-license-from-file/)
 - [Establecer licencia desde Stream](./set-license-from-stream/)
@@ -44,8 +46,12 @@ Entonces, ¿por qué esperar? ¡Sumérgete en nuestros tutoriales hoy y desbloqu
 
 ## Tutoriales de introducción
 ### [Establecer licencia desde archivo](./set-license-from-file/)
-Aprenda cómo integrar GroupDocs.Viewer para .NET en sus aplicaciones sin esfuerzo. Establezca licencias, vea documentos y personalice la apariencia del visor.
+Aprenda a integrar GroupDocs.Viewer para .NET en sus aplicaciones fácilmente. Configure la licencia, visualice documentos y personalice la apariencia del visor.
 ### [Establecer licencia desde Stream](./set-license-from-stream/)
-Mejore sus aplicaciones .NET con GroupDocs.Viewer para una visualización perfecta de documentos. Siga nuestra guía paso a paso e integre potentes capacidades de visualización de documentos sin esfuerzo.
+Mejore sus aplicaciones .NET con GroupDocs.Viewer para una visualización fluida de documentos. Siga nuestra guía paso a paso e integre fácilmente potentes funciones de visualización de documentos.
 ### [Establecer licencia medida](./set-metered-license/)
-Mejore sus aplicaciones .NET con GroupDocs.Viewer para una visualización perfecta de documentos. Integre fácilmente funcionalidades de representación de documentos en sus proyectos.
+Mejore sus aplicaciones .NET con GroupDocs.Viewer para una visualización fluida de documentos. Integre fácilmente funciones de renderizado de documentos en sus proyectos.
+### [Dominar la gestión de licencias en GroupDocs.Viewer para .NET: una guía completa](./groupdocs-viewer-license-management-net/)
+Aprenda a administrar licencias eficazmente en GroupDocs.Viewer para .NET con esta guía detallada. Explore la ruta de archivo y los métodos de recursos integrados.
+### [Configuración de la licencia .NET de GroupDocs.Viewer mediante Stream: una guía completa](./groupdocs-viewer-net-license-stream-setup-guide/)
+Aprenda a configurar una licencia .NET de GroupDocs.Viewer mediante un flujo de archivos con esta guía completa. Ideal para desarrolladores que buscan una gestión dinámica de licencias.

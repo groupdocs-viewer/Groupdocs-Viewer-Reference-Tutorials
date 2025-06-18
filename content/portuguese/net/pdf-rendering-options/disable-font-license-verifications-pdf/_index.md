@@ -1,27 +1,30 @@
 ---
-title: Desativar verificações de licença de fonte em PDF
-linktitle: Desativar verificações de licença de fonte em PDF
-second_title: API GroupDocs.Viewer .NET
-description: Desbloqueie recursos integrados de visualização de documentos em seu .NET com GroupDocs.Viewer for .NET. Integre e personalize facilmente a renderização de documentos com dependências mínimas.
-weight: 12
-url: /pt/net/pdf-rendering-options/disable-font-license-verifications-pdf/
+"description": "Desbloqueie recursos de visualização de documentos integrados no seu .NET com o GroupDocs.Viewer para .NET. Integre e personalize facilmente a renderização de documentos com o mínimo de dependências."
+"linktitle": "Desativar verificações de licença de fonte em PDF"
+"second_title": "API .NET do GroupDocs.Viewer"
+"title": "Desativar verificações de licença de fonte em PDF"
+"url": "/pt/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
+"weight": 12
 ---
 
 # Desativar verificações de licença de fonte em PDF
 
 ## Introdução
-No domínio do desenvolvimento .NET, o gerenciamento e a manipulação de documentos costumam ser um aspecto crucial de muitos aplicativos. Seja para visualizar PDFs, documentos do Word ou outros tipos de arquivo, é essencial ter ferramentas robustas para lidar com essas tarefas com eficiência. É aqui que o GroupDocs.Viewer for .NET entra em ação. Esta poderosa biblioteca oferece aos desenvolvedores a capacidade de integrar perfeitamente a funcionalidade de visualização de documentos em seus aplicativos .NET.
+No âmbito do desenvolvimento .NET, gerenciar e manipular documentos costuma ser um aspecto crucial de muitas aplicações. Seja para visualizar PDFs, documentos do Word ou outros tipos de arquivo, ter ferramentas robustas para lidar com essas tarefas com eficiência é essencial. É aqui que o GroupDocs.Viewer para .NET entra em ação. Esta poderosa biblioteca oferece aos desenvolvedores a capacidade de integrar perfeitamente a funcionalidade de visualização de documentos em suas aplicações .NET.
+
+![Desabilitar verificações de licença de fonte em PDF com GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/disable-font-license-verifications-in-pdf.png)
+
 ## Pré-requisitos
-Antes de começar a usar o GroupDocs.Viewer for .NET, existem alguns pré-requisitos que você precisa ter em vigor:
+Antes de começar a usar o GroupDocs.Viewer para .NET, há alguns pré-requisitos que você precisa ter:
 ### 1. Instale o Visual Studio
-Em primeiro lugar, certifique-se de ter o Visual Studio instalado em seu sistema. Você pode baixá-lo do site da Microsoft, caso ainda não o tenha feito.
-### 2. Baixe GroupDocs.Viewer para .NET
- Vá para o[Link para Download](https://releases.groupdocs.com/viewer/net/) para adquirir a versão mais recente do GroupDocs.Viewer for .NET. Siga as instruções de instalação fornecidas para configurá-lo em seu ambiente de desenvolvimento.
+Antes de mais nada, certifique-se de ter o Visual Studio instalado no seu sistema. Você pode baixá-lo do site da Microsoft, caso ainda não o tenha feito.
+### 2. Baixe o GroupDocs.Viewer para .NET
+Vá até o [link para download](https://releases.groupdocs.com/viewer/net/) para adquirir a versão mais recente do GroupDocs.Viewer para .NET. Siga as instruções de instalação fornecidas para configurá-lo em seu ambiente de desenvolvimento.
 ### 3. Obtenha uma licença temporária
- Para desbloquear todo o potencial do GroupDocs.Viewer for .NET durante o desenvolvimento e teste, é recomendável obter uma licença temporária. Você pode solicitar um de[aqui](https://purchase.groupdocs.com/temporary-license/).
+Para liberar todo o potencial do GroupDocs.Viewer para .NET durante o desenvolvimento e os testes, é recomendável obter uma licença temporária. Você pode solicitá-la em [aqui](https://purchase.groupdocs.com/temporary-license/).
 
 ## Importar namespaces
-Depois de concluir os pré-requisitos, você estará pronto para começar a utilizar o GroupDocs.Viewer for .NET em seus projetos. Comece importando os namespaces necessários para sua base de código.
+Após concluir os pré-requisitos, você estará pronto para começar a utilizar o GroupDocs.Viewer para .NET em seus projetos. Comece importando os namespaces necessários para sua base de código.
 ```csharp
 using System;
 using System.IO;
@@ -29,32 +32,32 @@ using GroupDocs.Viewer.Options;
 ```
 
 Vamos dividir o exemplo fornecido em várias etapas para uma compreensão mais clara:
-## Etapa 1: definir o diretório de saída
-Comece definindo o diretório onde deseja que as páginas do documento renderizado sejam armazenadas.
+## Etapa 1: definir diretório de saída
+Comece definindo o diretório onde você deseja que as páginas do documento renderizado sejam armazenadas.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## Etapa 2: definir o formato do caminho do arquivo de página
-Defina o formato dos caminhos de arquivo de páginas individuais do documento.
+## Etapa 2: Definir o formato do caminho do arquivo de página
+Defina o formato para os caminhos de arquivo de páginas individuais do documento.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.png");
 ```
-## Etapa 3: inicializar o objeto visualizador
-Crie uma instância da classe Viewer, passando o caminho do documento que deseja visualizar.
+## Etapa 3: Inicializar objeto do visualizador
+Crie uma instância da classe Viewer, passando o caminho para o documento que você deseja visualizar.
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.OXPS_EMBEDDED_FONT))
 ```
-## Etapa 4: configurar opções de visualização HTML
-Defina as opções de visualização do documento como HTML, especificando o formato dos recursos incorporados (ex.: imagens).
+## Etapa 4: Configurar opções de visualização HTML
+Defina as opções para visualizar o documento como HTML, especificando o formato para recursos incorporados (por exemplo, imagens).
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-## Etapa 5: desative as verificações de licença de fonte
-Ative a opção de desativar as verificações de licença de fonte para garantir uma renderização suave.
+## Etapa 5: Desabilitar Verificações de Licença de Fonte
+Ative a opção para desabilitar as verificações de licença de fonte para garantir uma renderização suave.
 ```csharp
 options.PdfOptions.DisableFontLicenseVerifications = true;
 ```
-## Etapa 6: visualizar o documento
+## Etapa 6: Visualizar documento
 Invoque o método View do objeto Viewer, passando as opções configuradas.
 ```csharp
 viewer.View(options);
@@ -66,15 +69,15 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 ```
 
 ## Conclusão
-GroupDocs.Viewer for .NET oferece aos desenvolvedores uma solução abrangente para integrar recursos de visualização de documentos em seus aplicativos .NET sem esforço. Seguindo as etapas descritas neste tutorial, você pode utilizar com eficácia esta poderosa biblioteca para aprimorar seus fluxos de trabalho de gerenciamento de documentos.
+O GroupDocs.Viewer para .NET oferece aos desenvolvedores uma solução abrangente para integrar recursos de visualização de documentos em seus aplicativos .NET sem esforço. Seguindo os passos descritos neste tutorial, você poderá utilizar esta poderosa biblioteca com eficiência para aprimorar seus fluxos de trabalho de gerenciamento de documentos.
 ## Perguntas frequentes
-### O GroupDocs.Viewer for .NET pode lidar com vários formatos de documentos?
-Sim, o GroupDocs.Viewer oferece suporte a uma ampla variedade de formatos de documentos, incluindo PDF, Microsoft Word, Excel, PowerPoint e muito mais.
-### O GroupDocs.Viewer for .NET é adequado para aplicativos da web?
-Com certeza, o GroupDocs.Viewer pode ser perfeitamente integrado em aplicativos desktop e web desenvolvidos com tecnologias .NET.
+### O GroupDocs.Viewer para .NET pode manipular vários formatos de documentos?
+Sim, o GroupDocs.Viewer suporta uma ampla variedade de formatos de documentos, incluindo PDF, Microsoft Word, Excel, PowerPoint e muito mais.
+### GroupDocs.Viewer para .NET é adequado para aplicativos web?
+Com certeza, o GroupDocs.Viewer pode ser perfeitamente integrado a aplicativos de desktop e web desenvolvidos usando tecnologias .NET.
 ### O GroupDocs.Viewer requer alguma dependência adicional?
-Não, o GroupDocs.Viewer for .NET tem dependências mínimas e pode ser facilmente integrado aos seus projetos existentes.
+Não, o GroupDocs.Viewer para .NET tem dependências mínimas e pode ser facilmente integrado aos seus projetos existentes.
 ### Posso personalizar a aparência dos documentos renderizados?
 Sim, o GroupDocs.Viewer oferece várias opções para personalizar a aparência e o comportamento dos documentos renderizados para atender às suas necessidades específicas.
-### O suporte técnico está disponível para GroupDocs.Viewer for .NET?
- Sim, você pode buscar assistência e orientação da equipe de suporte dedicada por meio do[fórum](https://forum.groupdocs.com/c/viewer/9).
+### Há suporte técnico disponível para o GroupDocs.Viewer para .NET?
+Sim, você pode buscar assistência e orientação da equipe de suporte dedicada por meio do [fórum](https://forum.groupdocs.com/c/viewer/9).

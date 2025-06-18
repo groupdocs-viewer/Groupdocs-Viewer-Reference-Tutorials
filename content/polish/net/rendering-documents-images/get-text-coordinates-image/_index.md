@@ -1,45 +1,45 @@
 ---
-title: Uzyskaj współrzędne tekstu do renderowania obrazu
-linktitle: Uzyskaj współrzędne tekstu do renderowania obrazu
-second_title: GroupDocs.Viewer API .NET
-description: Dowiedz się, jak wyodrębnić współrzędne tekstu na potrzeby renderowania obrazu za pomocą programu GroupDocs.Viewer dla platformy .NET. Bez wysiłku zwiększ swoje możliwości przetwarzania dokumentów.
-weight: 12
-url: /pl/net/rendering-documents-images/get-text-coordinates-image/
+"description": "Dowiedz się, jak wyodrębnić współrzędne tekstu w celu renderowania obrazu za pomocą GroupDocs.Viewer dla .NET. Bezproblemowo rozszerz możliwości przetwarzania dokumentów."
+"linktitle": "Uzyskaj współrzędne tekstu do renderowania obrazu"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Uzyskaj współrzędne tekstu do renderowania obrazu"
+"url": "/pl/net/rendering-documents-images/get-text-coordinates-image/"
+"weight": 12
 ---
 
 # Uzyskaj współrzędne tekstu do renderowania obrazu
 
 ## Wstęp
-GroupDocs.Viewer dla .NET to potężny interfejs API do renderowania dokumentów, który umożliwia programistom płynne renderowanie dokumentów w różnych formatach, takich jak PDF, Microsoft Office i wielu innych. Jedną z jego kluczowych funkcjonalności jest możliwość wyodrębnienia współrzędnych tekstu w celu precyzyjnego renderowania obrazu.
-## Warunki wstępne
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
-1.  GroupDocs.Viewer dla .NET: Pobierz i zainstaluj najnowszą wersję z[Tutaj](https://releases.groupdocs.com/viewer/net/).
+GroupDocs.Viewer dla .NET to potężny interfejs API renderowania dokumentów, który umożliwia deweloperom bezproblemowe renderowanie dokumentów w różnych formatach, takich jak PDF, Microsoft Office i wiele innych. Jedną z jego kluczowych funkcjonalności jest możliwość wyodrębniania współrzędnych tekstu w celu precyzyjnego renderowania obrazu.
+## Wymagania wstępne
+Zanim zaczniemy, upewnij się, że spełniasz następujące wymagania wstępne:
+1. GroupDocs.Viewer dla .NET: Pobierz i zainstaluj najnowszą wersję z [Tutaj](https://releases.groupdocs.com/viewer/net/).
 2. Środowisko programistyczne: skonfiguruj preferowane środowisko IDE z obsługą platformy .NET.
-3. Pliki dokumentów: przygotuj przykładowe pliki dokumentów do celów testowych.
+3. Pliki dokumentów: Przygotuj przykładowe pliki dokumentów do celów testowych.
 
 ## Importowanie przestrzeni nazw
-Zanim zagłębimy się w proces kodowania, zaimportujmy niezbędne przestrzenie nazw, aby uzyskać dostęp do funkcjonalności GroupDocs.Viewer dla .NET.
+Zanim rozpoczniemy kodowanie, zaimportujmy niezbędne przestrzenie nazw, aby uzyskać dostęp do funkcjonalności GroupDocs.Viewer dla .NET.
 ```csharp
 using System;
 using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 ## Krok 1: Zainicjuj GroupDocs.Viewer
-Rozpocznij od zainicjowania obiektu GroupDocs.Viewer plikiem dokumentu, który chcesz przetworzyć.
+Zacznij od zainicjowania obiektu GroupDocs.Viewer plikiem dokumentu, który zamierzasz przetworzyć.
 ```csharp
 using (Viewer viewer = new Viewer("path/to/your/document"))
 {
-    // Twój kod trafia tutaj
+    // Twój kod wpisz tutaj
 }
 ```
 ## Krok 2: Uzyskaj informacje o widoku
-Następnie pobierz informacje o widoku dokumentu, w tym współrzędne tekstowe do renderowania obrazu.
+Następnie pobierz informacje o widoku dokumentu, w tym współrzędne tekstu do renderowania obrazu.
 ```csharp
 ViewInfoOptions options = ViewInfoOptions.ForPngView(true);
 ViewInfo viewInfo = viewer.GetViewInfo(options);
 ```
 ## Krok 3: Iteruj po stronach
-Przeglądaj każdą stronę dokumentu, aby uzyskać dostęp do linii tekstu, słów i znaków.
+Przejdź przez każdą stronę dokumentu, aby uzyskać dostęp do wierszy tekstu, słów i znaków.
 ```csharp
 foreach (Page page in viewInfo.Pages)
 {
@@ -60,19 +60,19 @@ foreach (Page page in viewInfo.Pages)
 ## Krok 4: Wyodrębnij współrzędne tekstu
 Wyodrębnij współrzędne tekstu, aby ułatwić precyzyjne renderowanie obrazu.
 ```csharp
-// Twój kod do ekstrakcji współrzędnych tekstowych znajduje się tutaj
+// Twój kod do ekstrakcji współrzędnych tekstu znajduje się tutaj
 ```
 
 ## Wniosek
-Podsumowując, opanowanie wyodrębniania współrzędnych tekstu do renderowania obrazów przy użyciu programu GroupDocs.Viewer dla platformy .NET może znacznie zwiększyć możliwości przetwarzania dokumentów. Postępując zgodnie z tym samouczkiem, znasz już podstawowe kroki umożliwiające skuteczne wykonanie tego zadania.
-## Często zadawane pytania
+Podsumowując, opanowanie ekstrakcji współrzędnych tekstu do renderowania obrazu za pomocą GroupDocs.Viewer dla .NET może znacznie zwiększyć możliwości przetwarzania dokumentów. Postępując zgodnie z tym samouczkiem, nauczyłeś się podstawowych kroków, aby wykonać to zadanie wydajnie.
+## Najczęściej zadawane pytania
 ### Czy GroupDocs.Viewer dla .NET jest kompatybilny ze wszystkimi formatami dokumentów?
-GroupDocs.Viewer dla .NET obsługuje szeroką gamę formatów dokumentów, w tym PDF, Microsoft Office i inne.
-### Czy mogę zintegrować GroupDocs.Viewer for .NET z moją istniejącą aplikacją .NET?
-Tak, GroupDocs.Viewer dla .NET został zaprojektowany tak, aby bezproblemowo integrować się z aplikacjami .NET.
-### Czy GroupDocs.Viewer dla .NET oferuje obsługę wyodrębniania współrzędnych tekstowych?
-Tak, jak pokazano w tym samouczku, GroupDocs.Viewer dla .NET zapewnia funkcję wyodrębniania współrzędnych tekstowych.
-### Gdzie mogę znaleźć dodatkową dokumentację i wsparcie dla GroupDocs.Viewer dla .NET?
- Możesz uzyskać dostęp do dokumentacji i uzyskać pomoc na forum GroupDocs.Viewer[Tutaj](https://forum.groupdocs.com/c/viewer/9).
-### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Viewer dla platformy .NET?
- Tak, możesz skorzystać z bezpłatnego okresu próbnego w witrynie GroupDocs[Tutaj](https://releases.groupdocs.com/).
+GroupDocs.Viewer dla platformy .NET obsługuje szeroką gamę formatów dokumentów, w tym PDF, Microsoft Office i inne.
+### Czy mogę zintegrować GroupDocs.Viewer dla .NET z moją istniejącą aplikacją .NET?
+Tak, GroupDocs.Viewer dla .NET został zaprojektowany tak, aby można go było bezproblemowo zintegrować z aplikacjami .NET.
+### Czy GroupDocs.Viewer dla .NET obsługuje wyodrębnianie współrzędnych tekstu?
+Tak, jak pokazano w tym samouczku, GroupDocs.Viewer dla .NET oferuje funkcjonalność umożliwiającą wyodrębnianie współrzędnych tekstu.
+### Gdzie mogę znaleźć dodatkową dokumentację i pomoc dotyczącą GroupDocs.Viewer dla platformy .NET?
+Dostęp do dokumentacji i pomoc można uzyskać na forum GroupDocs.Viewer [Tutaj](https://forum.groupdocs.com/c/viewer/9).
+### Czy jest dostępna bezpłatna wersja próbna GroupDocs.Viewer dla .NET?
+Tak, możesz skorzystać z bezpłatnej wersji próbnej na stronie internetowej GroupDocs [Tutaj](https://releases.groupdocs.com/).

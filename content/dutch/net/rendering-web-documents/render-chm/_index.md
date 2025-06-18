@@ -1,24 +1,24 @@
 ---
-title: Geef CHM-bestanden weer
-linktitle: Geef CHM-bestanden weer
-second_title: GroupDocs.Viewer .NET-API
-description: Leer hoe u CHM-bestanden kunt renderen in .NET met GroupDocs.Viewer. Converteer CHM moeiteloos naar HTML-, JPG-, PNG- en PDF-formaten.
-weight: 10
-url: /nl/net/rendering-web-documents/render-chm/
+"description": "Leer hoe u CHM-bestanden in .NET kunt renderen met GroupDocs.Viewer. Converteer CHM moeiteloos naar HTML-, JPG-, PNG- en PDF-formaten."
+"linktitle": "CHM-bestanden renderen"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "CHM-bestanden renderen"
+"url": "/nl/net/rendering-web-documents/render-chm/"
+"weight": 10
 ---
 
-# Geef CHM-bestanden weer
+# CHM-bestanden renderen
 
 ## Invoering
-In deze zelfstudie onderzoeken we hoe u CHM-bestanden (Compiled HTML Help) kunt weergeven met GroupDocs.Viewer voor .NET. GroupDocs.Viewer voor .NET is een krachtige API voor documentweergave waarmee ontwikkelaars meer dan 170 documenttypen binnen hun .NET-applicaties kunnen weergeven zonder dat hiervoor externe software-installaties nodig zijn.
+In deze tutorial leggen we uit hoe u CHM-bestanden (Compiled HTML Help) kunt renderen met GroupDocs.Viewer voor .NET. GroupDocs.Viewer voor .NET is een krachtige API voor het renderen van documenten waarmee ontwikkelaars meer dan 170 documenttypen in hun .NET-toepassingen kunnen weergeven zonder dat er externe software geïnstalleerd hoeft te worden.
 
 ## Vereisten
 
-Voordat we dieper ingaan op het renderen van CHM-bestanden, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat we beginnen met het renderen van CHM-bestanden, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
 ### GroupDocs.Viewer voor .NET installeren
 
- Om aan de slag te gaan, moet u GroupDocs.Viewer voor .NET installeren. U kunt de bibliotheek downloaden via de[GroupDocs-website](https://releases.groupdocs.com/viewer/net/) of installeer het via NuGet Package Manager door de volgende opdracht uit te voeren in de Package Manager Console:
+Om te beginnen moet u GroupDocs.Viewer voor .NET installeren. U kunt de bibliotheek downloaden van de [GroupDocs-website](https://releases.groupdocs.com/viewer/net/) of installeer het via NuGet Package Manager door de volgende opdracht uit te voeren in de Package Manager Console:
 
 ```bash
 Install-Package GroupDocs.Viewer
@@ -36,9 +36,9 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Laten we nu het weergaveproces in meerdere stappen opsplitsen:
+Laten we het renderingproces nu opsplitsen in meerdere stappen:
 
-## Stap 1: Definieer de uitvoerdirectory
+## Stap 1: Definieer de uitvoermap
 
 Definieer de map waarin u de gerenderde bestanden wilt opslaan:
 
@@ -56,15 +56,15 @@ string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.html")
 using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    options.RenderToSinglePage = true; // Stel deze in op true om alle CHM-inhoud naar één pagina te converteren
+    options.RenderToSinglePage = true; // Instellen op 'true' om alle CHM-inhoud naar één pagina te converteren
 
-    viewer.View(options); //Converteer alle pagina's
+    viewer.View(options); // Converteer alle pagina's
 }
 ```
 
 ## Stap 3: Renderen naar JPG
 
-Gebruik het volgende codefragment om CHM-bestanden om te zetten in JPG-afbeeldingen:
+Gebruik het volgende codefragment om CHM-bestanden naar JPG-afbeeldingen te renderen:
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "chm_result_{0}.jpg");
@@ -103,13 +103,13 @@ using (Viewer viewer = new Viewer("Your_CHM_File_Path"))
 {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
 
-    viewer.View(options); //Converteer alle pagina's
+    viewer.View(options); // Converteer alle pagina's
 }
 ```
 
 ## Stap 6: Controleer de uitvoer
 
-Zodra het weergaveproces is voltooid, controleert u de opgegeven uitvoermap voor de weergegeven bestanden:
+Zodra het renderingproces is voltooid, controleert u de opgegeven uitvoermap op de gerenderde bestanden:
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -117,13 +117,13 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Conclusie
 
-Het renderen van CHM-bestanden met GroupDocs.Viewer voor .NET is een eenvoudig proces. Door de stappen in deze tutorial te volgen, kunt u CHM-documenten efficiënt converteren naar verschillende formaten, zoals HTML, afbeeldingen (JPG, PNG) en PDF binnen uw .NET-applicaties.
+Het renderen van CHM-bestanden met GroupDocs.Viewer voor .NET is een eenvoudig proces. Door de stappen in deze tutorial te volgen, kunt u CHM-documenten efficiënt converteren naar verschillende formaten, zoals HTML, afbeeldingen (JPG, PNG) en PDF, binnen uw .NET-applicaties.
 
 ## Veelgestelde vragen
 
 ### V1: Kan GroupDocs.Viewer andere documentformaten weergeven dan CHM?
 
-A1: Ja, GroupDocs.Viewer ondersteunt het renderen van meer dan 170 documentformaten, waaronder PDF, DOCX, XLSX, PPTX en meer.
+A1: Ja, GroupDocs.Viewer ondersteunt de weergave van meer dan 170 documentformaten, waaronder PDF, DOCX, XLSX, PPTX en meer.
 
 ### V2: Is GroupDocs.Viewer compatibel met .NET Core?
 
@@ -131,12 +131,12 @@ A2: Ja, GroupDocs.Viewer ondersteunt .NET Core naast het traditionele .NET Frame
 
 ### V3: Kan ik de weergaveopties voor verschillende uitvoerformaten aanpassen?
 
-A3: Ja, GroupDocs.Viewer biedt verschillende opties voor het aanpassen van het weergaveproces, zoals het opgeven van paginanummers, het instellen van de afbeeldingskwaliteit en het configureren van uitvoerpaden.
+A3: Ja, GroupDocs.Viewer biedt verschillende opties voor het aanpassen van het renderingproces, zoals het opgeven van paginanummers, het instellen van de beeldkwaliteit en het configureren van uitvoerpaden.
 
 ### V4: Heeft GroupDocs.Viewer externe afhankelijkheden nodig voor het weergeven van documenten?
 
-A4: Nee, GroupDocs.Viewer is een zelfstandige bibliotheek en vereist geen externe afhankelijkheden of software-installaties van derden.
+A4: Nee, GroupDocs.Viewer is een zelfstandige bibliotheek en vereist geen externe afhankelijkheden of installatie van software van derden.
 
 ### V5: Is er een gratis proefversie beschikbaar voor GroupDocs.Viewer?
 
- A5: Ja, u kunt profiteren van een gratis proefversie van GroupDocs.Viewer door naar de[website](https://releases.groupdocs.com/).
+A5: Ja, u kunt GroupDocs.Viewer gratis uitproberen door naar de website te gaan. [website](https://releases.groupdocs.com/).

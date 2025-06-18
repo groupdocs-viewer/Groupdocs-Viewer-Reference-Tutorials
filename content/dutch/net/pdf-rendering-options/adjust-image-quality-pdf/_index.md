@@ -1,21 +1,24 @@
 ---
-title: Pas de beeldkwaliteit in PDF aan
-linktitle: Pas de beeldkwaliteit in PDF aan
-second_title: GroupDocs.Viewer .NET-API
-description: Leer hoe u de beeldkwaliteit in PDF-documenten kunt aanpassen met GroupDocs.Viewer voor .NET. Volg onze stap-voor-stap handleiding voor een naadloze integratie.
-weight: 10
-url: /nl/net/pdf-rendering-options/adjust-image-quality-pdf/
+"description": "Leer hoe u de beeldkwaliteit in PDF-documenten kunt aanpassen met GroupDocs.Viewer voor .NET. Volg onze stapsgewijze tutorial voor naadloze integratie."
+"linktitle": "Pas de beeldkwaliteit in PDF aan"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Pas de beeldkwaliteit in PDF aan"
+"url": "/nl/net/pdf-rendering-options/adjust-image-quality-pdf/"
+"weight": 10
 ---
 
 # Pas de beeldkwaliteit in PDF aan
 
 ## Invoering
-GroupDocs.Viewer voor .NET is een krachtige bibliotheek waarmee ontwikkelaars de mogelijkheden voor documentweergave moeiteloos in hun .NET-applicaties kunnen integreren. Een van de belangrijkste kenmerken van deze bibliotheek is de mogelijkheid om de beeldkwaliteit aan te passen bij het renderen van PDF-documenten. In deze zelfstudie leiden we u stap voor stap door het proces van het aanpassen van de beeldkwaliteit met behulp van GroupDocs.Viewer voor .NET.
+GroupDocs.Viewer voor .NET is een krachtige bibliotheek waarmee ontwikkelaars moeiteloos mogelijkheden voor documentrendering in hun .NET-applicaties kunnen integreren. Een van de belangrijkste functies van deze bibliotheek is de mogelijkheid om de beeldkwaliteit aan te passen tijdens het renderen van PDF-documenten. In deze tutorial leiden we je stap voor stap door het proces van het aanpassen van de beeldkwaliteit met behulp van GroupDocs.Viewer voor .NET.
+
+![Pas de beeldkwaliteit in PDF aan met GroupDocs.Viewer .NET](/viewer/pdf-rendering-options/adjust-image-quality-in-pdf.png)
+
 ## Vereisten
-Voordat we aan de slag gaan, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
-1. Basiskennis van programmeren in C#.
-2. Visual Studio is op uw systeem geïnstalleerd.
-3. GroupDocs.Viewer voor .NET-bibliotheek gedownload en geïnstalleerd. Je kunt het downloaden van[hier](https://releases.groupdocs.com/viewer/net/).
+Voordat we beginnen, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+1. Basiskennis van C#-programmering.
+2. Visual Studio op uw systeem geïnstalleerd.
+3. GroupDocs.Viewer voor .NET-bibliotheek gedownload en geïnstalleerd. U kunt het downloaden van [hier](https://releases.groupdocs.com/viewer/net/).
 
 ## Naamruimten importeren
 Eerst moet u de benodigde naamruimten importeren om met GroupDocs.Viewer voor .NET te kunnen werken:
@@ -24,16 +27,16 @@ using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## Stap 1: Definieer de uitvoerdirectory
+## Stap 1: Definieer de uitvoermap
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
- Vervangen`"Your Document Directory"` met het pad waar u de weergegeven HTML-pagina's wilt opslaan.
-## Stap 2: Definieer het paginabestandspadformaat
+Vervangen `"Your Document Directory"` met het pad waar u de gerenderde HTML-pagina's wilt opslaan.
+## Stap 2: Definieer het padformaat van het paginabestand
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
- Deze regel definieert het formaat voor het bestandspad van elke weergegeven HTML-pagina.`{0}` is een tijdelijke aanduiding voor het paginanummer.
+Deze regel definieert de indeling voor het bestandspad van elke gerenderde HTML-pagina. `{0}` is een tijdelijke aanduiding voor het paginanummer.
 ## Stap 3: Pas de beeldkwaliteit aan
 ```csharp
 using (Viewer viewer = new Viewer("Your PDF File Path"))
@@ -43,23 +46,23 @@ using (Viewer viewer = new Viewer("Your PDF File Path"))
     viewer.View(options);
 }
 ```
- Vervangen`"Your PDF File Path"` met het pad naar uw PDF-document.
-## Stap 4: Geef het uitvoerpad weer
+Vervangen `"Your PDF File Path"` met het pad naar uw PDF-document.
+## Stap 4: Uitvoerpad weergeven
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-Deze regel geeft het pad weer waar de weergegeven HTML-pagina's worden opgeslagen.
+Deze regel geeft het pad weer waar de gerenderde HTML-pagina's worden opgeslagen.
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u de afbeeldingskwaliteit kunt aanpassen bij het renderen van PDF-documenten met GroupDocs.Viewer voor .NET. Door de eenvoudige stappen hierboven te volgen, kunt u de beeldkwaliteit eenvoudig aanpassen aan uw wensen.
+In deze tutorial hebben we geleerd hoe je de beeldkwaliteit kunt aanpassen bij het renderen van PDF-documenten met GroupDocs.Viewer voor .NET. Door de bovenstaande eenvoudige stappen te volgen, kun je de beeldkwaliteit eenvoudig aanpassen aan je wensen.
 ## Veelgestelde vragen
 ### Kan ik de beeldkwaliteit aanpassen voor andere documentformaten dan PDF?
-Ja, GroupDocs.Viewer voor .NET ondersteunt verschillende documentformaten, en voor de meeste kunt u de beeldkwaliteit aanpassen.
-### Wat zijn de beschikbare opties voor beeldkwaliteit?
+Ja, GroupDocs.Viewer voor .NET ondersteunt verschillende documentindelingen en u kunt voor de meeste hiervan de afbeeldingskwaliteit aanpassen.
+### Welke opties zijn er beschikbaar voor beeldkwaliteit?
 GroupDocs.Viewer voor .NET biedt opties voor lage, gemiddelde en hoge beeldkwaliteit.
-### Is er een manier om een voorbeeld van het document te bekijken voordat het met aangepaste beeldkwaliteit wordt weergegeven?
-Ja, u kunt GroupDocs.Viewer voor .NET gebruiken om documentvoorbeelden te genereren met verschillende beeldkwaliteitsinstellingen.
+### Is er een manier om een voorbeeld van het document te bekijken voordat ik het met de aangepaste afbeeldingskwaliteit weergeef?
+Ja, u kunt GroupDocs.Viewer voor .NET gebruiken om documentvoorbeelden te genereren met verschillende instellingen voor de beeldkwaliteit.
 ### Heeft GroupDocs.Viewer voor .NET een licentie nodig voor commercieel gebruik?
- Ja, u heeft een licentie nodig voor commercieel gebruik. U kunt een licentie kopen bij[hier](https://purchase.groupdocs.com/buy).
+Ja, u heeft een licentie nodig voor commercieel gebruik. U kunt een licentie kopen bij [hier](https://purchase.groupdocs.com/buy).
 ### Waar kan ik ondersteuning krijgen voor GroupDocs.Viewer voor .NET?
- U kunt ondersteuning krijgen via het GroupDocs.Viewer-forum[hier](https://forum.groupdocs.com/c/viewer/9).
+U kunt ondersteuning krijgen via het GroupDocs.Viewer-forum [hier](https://forum.groupdocs.com/c/viewer/9).

@@ -1,71 +1,73 @@
 ---
-title: Opsi Rendering Spreadsheet
-linktitle: Opsi Rendering Spreadsheet
-second_title: GroupDocs.Viewer .NET API
-description: Tingkatkan visualisasi dokumen dengan mudah di .NET dengan tutorial GroupDocs.Viewer. Pelajari cara menyesuaikan luapan teks, merender garis kisi, dan banyak lagi.
-weight: 37
-url: /id/net/spreadsheet-rendering-options/
+"description": "Tingkatkan visualisasi dokumen dengan mudah dalam .NET dengan tutorial GroupDocs.Viewer. Pelajari cara menyesuaikan luapan teks, merender garis kisi, dan banyak lagi."
+"linktitle": "Opsi Rendering Spreadsheet"
+"second_title": "API Penampil GroupDocs.NET"
+"title": "Opsi Rendering Spreadsheet"
+"url": "/id/net/spreadsheet-rendering-options/"
+"weight": 37
 ---
 
 # Opsi Rendering Spreadsheet
 
 ## Perkenalan
 
-Apakah Anda siap untuk meningkatkan pengalaman melihat dokumen Anda di .NET? GroupDocs.Viewer untuk .NET menawarkan serangkaian tutorial komprehensif, memberdayakan Anda untuk mengoptimalkan rendering spreadsheet. Dari menyesuaikan luapan teks hingga merender kolom dan baris tersembunyi, kami siap membantu Anda. Mari selami dunia opsi rendering spreadsheet dan buka potensi penuh GroupDocs.Viewer untuk .NET.
+Apakah Anda siap untuk meningkatkan pengalaman melihat dokumen Anda dalam .NET? GroupDocs.Viewer untuk .NET menawarkan serangkaian tutorial yang komprehensif, yang memberdayakan Anda untuk mengoptimalkan tampilan spreadsheet. Dari menyesuaikan teks yang meluap hingga menampilkan kolom dan baris tersembunyi, kami siap membantu Anda. Mari selami dunia opsi tampilan spreadsheet dan manfaatkan potensi penuh GroupDocs.Viewer untuk .NET.
 
-## Sesuaikan Luapan Teks di Sel
+![Opsi Pemrosesan Spreadsheet dengan GroupDocs.Viewer .NET](/viewer/spreadsheet-rendering-options/image.png)
 
- Berjuang dengan teks yang meluap di dokumen .NET? Tutorial kami tentang menyesuaikan luapan teks dalam sel dengan GroupDocs.Viewer memberikan solusi yang mulus. Tingkatkan keterbacaan, tingkatkan pengalaman pengguna, dan kelola luapan teks dengan mudah.[Belajarlah lagi](./adjust-text-overflow-cells/) dan menghadirkan tingkat kejelasan baru pada dokumen Anda.
+## Sesuaikan Teks yang Meluap di Sel
+
+Berjuang dengan teks yang meluap dalam dokumen .NET? Tutorial kami tentang menyesuaikan teks yang meluap dalam sel dengan GroupDocs.Viewer memberikan solusi yang mudah. Tingkatkan keterbacaan, tingkatkan pengalaman pengguna, dan kelola teks yang meluap dengan mudah. [Pelajari lebih lanjut](./adjust-text-overflow-cells/) dan membawa tingkat kejelasan baru pada dokumen Anda.
 
 ## Dapatkan Nama Lembar Kerja
 
-Temukan keajaiban mengintegrasikan tampilan dokumen ke dalam aplikasi Anda dengan GroupDocs.Viewer untuk .NET. Dalam tutorial kami tentang cara mendapatkan nama lembar kerja, Anda akan mempelajari cara menggabungkan fungsi ini dengan lancar. Siap untuk mengalaminya sendiri?[Belajarlah lagi](./get-worksheets-names/) dan saksikan transformasi dalam penanganan dokumen.
+Temukan keajaiban mengintegrasikan tampilan dokumen ke dalam aplikasi Anda dengan GroupDocs.Viewer untuk .NET. Dalam tutorial kami tentang cara mendapatkan nama lembar kerja, Anda akan mempelajari cara menggabungkan fungsi ini dengan lancar. Siap untuk mencobanya sendiri? [Pelajari lebih lanjut](./get-worksheets-names/) dan menyaksikan transformasi dalam penanganan dokumen.
 
-## Render Garis Kisi
+## Render Garis Grid
 
- Daya tarik visual itu penting! Tingkatkan visualisasi dokumen dengan merender garis kisi dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Dalam tutorial kami, kami memandu Anda langkah demi langkah untuk mencapai hal ini dengan lancar. Tingkatkan pengalaman melihat dokumen Anda dengan mencoba uji coba gratis[Belajarlah lagi](./render-grid-lines/) dan saksikan perbedaan kejelasannya.
+Daya tarik visual itu penting! Tingkatkan visualisasi dokumen dengan merender garis kisi dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Dalam tutorial kami, kami memandu Anda langkah demi langkah untuk mencapainya dengan lancar. Tingkatkan pengalaman melihat dokumen Anda dengan mencoba uji coba gratis [Pelajari lebih lanjut](./render-grid-lines/) dan saksikan perbedaan dalam kejelasannya.
 
 ## Render Kolom dan Baris Tersembunyi
 
- Buka kunci data tersembunyi di spreadsheet dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Panduan langkah demi langkah kami mengungkap rahasia untuk mengungkap kolom dan baris tersembunyi. Siap mengungkap yang tersembunyi? Jelajahi tutorialnya[Belajarlah lagi](./render-hidden-columns-rows/) dan tingkatkan pemeriksaan dokumen Anda dengan mudah.
+Buka data tersembunyi di spreadsheet dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Panduan langkah demi langkah kami mengungkap rahasia untuk mengungkap kolom dan baris tersembunyi. Siap mengungkap yang tersembunyi? Jelajahi tutorialnya [Pelajari lebih lanjut](./render-hidden-columns-rows/) dan meningkatkan pemeriksaan dokumen Anda dengan mudah.
 
-## Render berdasarkan Page Breaks
+## Rendering berdasarkan Hentian Halaman
 
-Presisi penting dalam rendering dokumen! Jelajahi kekuatan GroupDocs.Viewer untuk .NET dalam merender dokumen dengan presisi maksimal. Tutorial langkah demi langkah kami tentang rendering berdasarkan hentian halaman memastikan pengalaman yang lancar. Siap untuk menyempurnakan perjalanan melihat dokumen Anda? Jelajahi tutorialnya[Belajarlah lagi](./rendering-by-page-breaks/) dan saksikan ketepatannya.
+Presisi penting dalam rendering dokumen! Jelajahi kekuatan GroupDocs.Viewer untuk .NET dalam merender dokumen dengan presisi tertinggi. Tutorial langkah demi langkah kami tentang rendering dengan pemisah halaman memastikan pengalaman yang lancar. Siap untuk menyempurnakan pengalaman melihat dokumen Anda? Jelajahi tutorialnya [Pelajari lebih lanjut](./rendering-by-page-breaks/) dan saksikan ketepatannya.
 
-## Merender Nomor
+## Angka Render
 
- Render file angka menjadi mudah! Selami kemampuan GroupDocs.Viewer untuk .NET dalam merender file Numbers dengan lancar. Konversikan ke HTML, JPG, PNG, dan PDF dengan mudah. Siap menjelajah? Lihat tutorialnya[Belajarlah lagi](./rendering-numbers/) dan memanfaatkan kekuatan rendering yang efisien.
+Rendering file Numbers jadi mudah! Pelajari kemampuan GroupDocs.Viewer untuk .NET dalam merender file Numbers dengan mudah. Konversi ke HTML, JPG, PNG, dan PDF dengan mudah. Siap untuk menjelajah? Lihat tutorialnya [Pelajari lebih lanjut](./rendering-numbers/) dan memanfaatkan kekuatan rendering yang efisien.
 
-## Merender XML SpreadSheetML
+## Merender SpreadSheetML XML
 
- Render file XML SpreadSheetML dengan mudah dalam berbagai format menggunakan GroupDocs.Viewer untuk .NET. Integrasikan perpustakaan canggih ini ke dalam aplikasi Anda untuk meningkatkan kemampuan melihat dokumen. Siap menjelajahi rendering yang mulus? Ikuti tutorialnya[Belajarlah lagi](./rendering-xml-spreadsheetml/) dan membuka potensinya.
+Render file XML SpreadSheetML dalam berbagai format dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Integrasikan pustaka canggih ini ke dalam aplikasi Anda untuk meningkatkan kemampuan tampilan dokumen. Siap untuk mencoba rendering yang lancar? Ikuti tutorialnya [Pelajari lebih lanjut](./rendering-xml-spreadsheetml/) dan membuka potensinya.
 
 ## Render Area Cetak
 
-Jelajahi GroupDocs.Viewer untuk .NET dan render area pencetakan dengan mudah dalam berbagai format dokumen. Tutorial kami memandu Anda melalui proses dengan lancar. Siap mengoptimalkan rendering dokumen Anda?[Belajarlah lagi](./render-print-areas/) dan saksikan transformasinya.
+Jelajahi GroupDocs.Viewer untuk .NET dan render area cetak dalam berbagai format dokumen dengan mudah. Tutorial kami memandu Anda melalui proses ini dengan lancar. Siap mengoptimalkan rendering dokumen Anda? [Pelajari lebih lanjut](./render-print-areas/) dan menyaksikan transformasinya.
 
 ## Render Judul Baris dan Kolom
 
- Tingkatkan tampilan dokumen di .NET dengan mempelajari cara merender judul baris dan kolom menggunakan GroupDocs.Viewer untuk .NET. Jelajahi keluaran dalam format HTML, JPG, PNG, dan PDF. Siap untuk meningkatkan presentasi dokumen Anda? Ikuti tutorialnya[Belajarlah lagi](./render-row-column-headings/) dan menghadirkan tingkat profesionalisme baru pada dokumen Anda.
+Tingkatkan tampilan dokumen dalam .NET dengan mempelajari cara merender judul baris dan kolom menggunakan GroupDocs.Viewer untuk .NET. Jelajahi output dalam format HTML, JPG, PNG, dan PDF. Siap untuk meningkatkan presentasi dokumen Anda? Ikuti tutorialnya [Pelajari lebih lanjut](./render-row-column-headings/) dan membawa tingkat profesionalisme baru ke dokumen Anda.
 
-Tingkatkan keterampilan rendering dokumen Anda ke tingkat berikutnya dengan GroupDocs.Viewer untuk .NET. Unduh uji coba gratis Anda sekarang dan buka berbagai kemungkinan dalam visualisasi dokumen. Pengalaman dokumen Anda yang dioptimalkan menanti!
-## Tutorial Opsi Rendering Spreadsheet
-### [Sesuaikan Luapan Teks di Sel](./adjust-text-overflow-cells/)
-Kelola luapan teks dengan mudah di dokumen .NET dengan GroupDocs.Viewer. Meningkatkan keterbacaan dan pengalaman pengguna. Unduh uji coba gratis Anda sekarang.
+Tingkatkan keterampilan Anda dalam membuat dokumen ke tingkat berikutnya dengan GroupDocs.Viewer untuk .NET. Unduh uji coba gratis Anda sekarang dan buka dunia kemungkinan dalam visualisasi dokumen. Pengalaman dokumen Anda yang optimal menanti!
+## Tutorial Opsi Pemrosesan Spreadsheet
+### [Sesuaikan Teks yang Meluap di Sel](./adjust-text-overflow-cells/)
+Kelola teks yang berlebihan dalam dokumen .NET dengan mudah menggunakan GroupDocs.Viewer. Tingkatkan keterbacaan dan pengalaman pengguna. Unduh uji coba gratis Anda sekarang.
 ### [Dapatkan Nama Lembar Kerja](./get-worksheets-names/)
-Jelajahi keajaiban GroupDocs.Viewer untuk .NET – integrasikan tampilan dokumen dengan mulus ke dalam aplikasi Anda. Coba uji coba gratis sekarang!
-### [Render Garis Kisi](./render-grid-lines/)
+Jelajahi keajaiban GroupDocs.Viewer untuk .NET – integrasikan tampilan dokumen dengan lancar ke dalam aplikasi Anda. Coba uji coba gratis sekarang!
+### [Render Garis Grid](./render-grid-lines/)
 Tingkatkan visualisasi dokumen dengan GroupDocs.Viewer untuk .NET. Render garis grid dengan mudah. Coba uji coba gratis sekarang!
 ### [Render Kolom dan Baris Tersembunyi](./render-hidden-columns-rows/)
-Buka kunci data tersembunyi di spreadsheet dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Ikuti panduan langkah demi langkah kami untuk menampilkan kolom dan baris yang tersembunyi.
-### [Render berdasarkan Page Breaks](./rendering-by-page-breaks/)
-Jelajahi kekuatan GroupDocs.Viewer untuk .NET dalam merender dokumen dengan presisi. Ikuti tutorial langkah demi langkah kami untuk merender berdasarkan hentian halaman dan meningkatkan pengalaman melihat dokumen Anda.
-### [Merender Nomor](./rendering-numbers/)
-Jelajahi kecanggihan Groupdocs.Viewer untuk .NET dalam merender file Numbers dengan lancar. Konversikan ke HTML, JPG, PNG, dan PDF dengan mudah.
-### [Merender XML SpreadSheetML](./rendering-xml-spreadsheetml/)
-Jelajahi rendering file XML SpreadSheetML yang mulus dalam berbagai format menggunakan GroupDocs.Viewer untuk .NET. Integrasikan perpustakaan canggih ini dengan mudah ke dalam aplikasi Anda untuk meningkatkan kemampuan melihat dokumen.
+Buka data tersembunyi di spreadsheet dengan mudah menggunakan GroupDocs.Viewer untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengungkap kolom dan baris tersembunyi.
+### [Rendering berdasarkan Hentian Halaman](./rendering-by-page-breaks/)
+Jelajahi kekuatan GroupDocs.Viewer untuk .NET dalam merender dokumen dengan presisi. Ikuti tutorial langkah demi langkah kami untuk merender berdasarkan pemisah halaman dan tingkatkan pengalaman melihat dokumen Anda.
+### [Angka Render](./rendering-numbers/)
+Jelajahi kekuatan Groupdocs.Viewer untuk .NET dalam merender file Numbers dengan lancar. Konversi ke HTML, JPG, PNG, dan PDF dengan mudah.
+### [Merender SpreadSheetML XML](./rendering-xml-spreadsheetml/)
+Jelajahi rendering file XML SpreadSheetML yang lancar dalam berbagai format menggunakan GroupDocs.Viewer untuk .NET. Integrasikan pustaka canggih ini ke dalam aplikasi Anda dengan mudah untuk meningkatkan kemampuan tampilan dokumen.
 ### [Render Area Cetak](./render-print-areas/)
-Jelajahi GroupDocs.Viewer untuk .NET dan render area pencetakan dengan mudah dalam berbagai format dokumen. Coba uji coba gratis sekarang!
+Jelajahi GroupDocs.Viewer untuk .NET dan tampilkan area cetak dalam berbagai format dokumen dengan mudah. Coba uji coba gratis sekarang!
 ### [Render Judul Baris dan Kolom](./render-row-column-headings/)
-Tingkatkan tampilan dokumen di .NET! Pelajari cara merender judul baris dan kolom menggunakan GroupDocs.Viewer untuk .NET. Jelajahi keluaran HTML, JPG, PNG, dan PDF.
+Tingkatkan tampilan dokumen dalam .NET! Pelajari cara menampilkan judul baris dan kolom menggunakan GroupDocs.Viewer untuk .NET. Jelajahi keluaran HTML, JPG, PNG, dan PDF.

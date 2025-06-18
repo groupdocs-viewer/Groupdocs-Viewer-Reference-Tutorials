@@ -1,25 +1,28 @@
 ---
-title: Hämta och spara dokumentbilagor
-linktitle: Hämta och spara dokumentbilagor
-second_title: GroupDocs.Viewer .NET API
-description: Hantera dokumentbilagor effektivt i .NET-applikationer med GroupDocs.Viewer. Hämta och spara bilagor problemfritt.
-weight: 12
-url: /sv/net/processing-document-attachments/retrieve-and-save-attachments/
+"description": "Hantera dokumentbilagor effektivt i .NET-applikationer med GroupDocs.Viewer. Hämta och spara bilagor problemfritt."
+"linktitle": "Hämta och spara dokumentbilagor"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Hämta och spara dokumentbilagor"
+"url": "/sv/net/processing-document-attachments/retrieve-and-save-attachments/"
+"weight": 12
 ---
 
 # Hämta och spara dokumentbilagor
 
 ## Introduktion
-I den digitala eran är effektiv dokumenthantering avgörande för både företag och privatpersoner. Oavsett om det handlar om att hantera e-postmeddelanden, visa kontrakt eller få tillgång till rapporter är det viktigt att ha ett tillförlitligt verktyg för dokumentvisualisering. GroupDocs.Viewer för .NET framstår som en robust lösning som ger användarna möjlighet att enkelt se och interagera med olika dokumentformat direkt i sina .NET-applikationer.
-## Förutsättningar
-Innan du fördjupar dig i att använda GroupDocs.Viewer för .NET för att hämta och spara dokumentbilagor, se till att du har följande förutsättningar:
-1. Driftmiljö: En arbetsmiljö som är inrättad med .NET-ramverk.
-2.  Installation: GroupDocs.Viewer för .NET-biblioteket laddades ner och installerades. Du kan komma åt biblioteket från[nedladdningslänk](https://releases.groupdocs.com/viewer/net/).
-3. Grundläggande förståelse: Kännedom om programmeringsspråket C#.
-4. Dokumentkälla: Tillgång till ett exempeldokument med bilagor för demonstrationsändamål.
+I den digitala eran är effektiv dokumenthantering avgörande för både företag och privatpersoner. Oavsett om det gäller att hantera e-post, visa avtal eller komma åt rapporter är det viktigt att ha ett pålitligt verktyg för dokumentvisualisering. GroupDocs.Viewer för .NET framstår som en robust lösning som gör det möjligt för användare att enkelt visa och interagera med olika dokumentformat direkt i sina .NET-applikationer.
 
-## Importera namnområden
-För att börja använda GroupDocs.Viewer för .NET för att hämta och spara dokumentbilagor, importera nödvändiga namnområden:
+![Hämta och spara dokumentbilagor med GroupDocs.Viewer .NET](/viewer/processing-document-attachments/retrieve-and-save-document-attachments.png)
+
+## Förkunskapskrav
+Innan du börjar använda GroupDocs.Viewer för .NET för att hämta och spara dokumentbilagor, se till att du har följande förutsättningar:
+1. Driftmiljö: En arbetsmiljö konfigurerad med .NET Framework.
+2. Installation: GroupDocs.Viewer för .NET-biblioteket har laddats ner och installerats. Du kan komma åt biblioteket från [nedladdningslänk](https://releases.groupdocs.com/viewer/net/).
+3. Grundläggande förståelse: Bekantskap med programmeringsspråket C#.
+4. Dokumentkälla: Åtkomst till ett exempeldokument med bilagor för demonstrationsändamål.
+
+## Importera namnrymder
+För att börja använda GroupDocs.Viewer för .NET för att hämta och spara dokumentbilagor, importera nödvändiga namnrymder:
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -32,11 +35,11 @@ using GroupDocs.Viewer.Results;
 string outputDirectory = "Your Document Directory";
 ```
 Definiera katalogen där du vill spara de bilagor som hämtats från dokumentet.
-## Steg 2: Instantiera Viewer Object
+## Steg 2: Instansiera Viewer-objekt
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG_WITH_ATTACHMENTS))
 ```
-Instantiera Viewer-objektet med sökvägen till dokumentet som innehåller bilagor.
+Instansiera Viewer-objektet med sökvägen till dokumentet som innehåller bilagor.
 ## Steg 3: Hämta bilagor
 ```csharp
 IList<Attachment> attachments = viewer.GetAttachments();
@@ -50,23 +53,23 @@ foreach(Attachment attachment in attachments)
     viewer.SaveAttachment(attachment, File.OpenWrite(filePath)); 
 }
 ```
-Iterera genom varje bilaga, definiera filsökvägen och spara bilagan i den angivna katalogen.
-## Steg 5: Visa framgångsmeddelande
+Gå igenom varje bilaga, definiera sökvägen och spara den bifogade filen i den angivna katalogen.
+## Steg 5: Visa meddelande om framgång
 ```csharp
 Console.WriteLine($"\nAttachments saved successfully.\nCheck output in {outputDirectory}.");
 ```
-Visa ett lyckat meddelande som indikerar att bilagor har sparats tillsammans med katalogsökvägen.
+Visa ett meddelande som anger att bilagorna har sparats tillsammans med sökvägen till katalogen.
 
 ## Slutsats
-Att integrera GroupDocs.Viewer för .NET i dina dokumenthanteringsarbetsflöden effektiviserar processen för att hantera bilagor, vilket ger effektivitet och bekvämlighet. Genom att följa den steg-för-steg-guide som beskrivs ovan kan användare sömlöst hämta och spara dokumentbilagor i sina .NET-applikationer.
-## FAQ's
+Att integrera GroupDocs.Viewer för .NET i dina dokumenthanteringsarbetsflöden effektiviserar processen att hantera bilagor, vilket ger effektivitet och bekvämlighet. Genom att följa steg-för-steg-guiden som beskrivs ovan kan användare smidigt hämta och spara dokumentbilagor i sina .NET-applikationer.
+## Vanliga frågor
 ### Kan GroupDocs.Viewer för .NET hantera olika dokumentformat?
-Ja, GroupDocs.Viewer stöder ett brett utbud av dokumentformat, inklusive PDF, Microsoft Office-dokument, bilder och mer.
-### Finns det en gratis testversion tillgänglig för GroupDocs.Viewer för .NET?
- Ja, du kan komma åt den kostnadsfria provperioden från[här](https://releases.groupdocs.com/).
+Ja, GroupDocs.Viewer stöder en mängd olika dokumentformat, inklusive PDF, Microsoft Office-dokument, bilder och mer.
+### Finns det en gratis testversion av GroupDocs.Viewer för .NET?
+Ja, du kan få tillgång till gratis provperioden från [här](https://releases.groupdocs.com/).
 ### Hur kan jag få tillfälliga licenser för GroupDocs.Viewer för .NET?
- Tillfälliga licenser kan erhållas från[den här länken](https://purchase.groupdocs.com/temporary-license/).
+Tillfälliga licenser kan erhållas från [den här länken](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag hitta dokumentation för GroupDocs.Viewer för .NET?
- Omfattande dokumentation finns tillgänglig[här](https://tutorials.groupdocs.com/viewer/net/).
+Omfattande dokumentation finns tillgänglig [här](https://tutorials.groupdocs.com/viewer/net/).
 ### Vilka supportalternativ finns tillgängliga för GroupDocs.Viewer för .NET?
- Du kan söka hjälp från communityforumet[här](https://forum.groupdocs.com/c/viewer/9).
+Du kan söka hjälp från communityforumet [här](https://forum.groupdocs.com/c/viewer/9).

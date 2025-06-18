@@ -1,24 +1,27 @@
 ---
-title: Yapay Zeka Görüntülerini Oluşturma
-linktitle: Yapay Zeka Görüntülerini Oluşturma
-second_title: GroupDocs.Viewer .NET API'si
-description: GroupDocs.Viewer for .NET'i kullanarak .NET uygulamalarında yapay zeka görüntülerini zahmetsizce nasıl oluşturacağınızı öğrenin. Sorunsuz entegrasyon için adım adım eğitimimizi izleyin.
-weight: 10
-url: /tr/net/image-rendering/render-ai-images/
+"description": "GroupDocs.Viewer for .NET kullanarak .NET uygulamalarında AI görüntülerini zahmetsizce nasıl oluşturacağınızı öğrenin. Sorunsuz entegrasyon için adım adım öğreticimizi izleyin."
+"linktitle": "AI Görüntülerini Oluştur"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "AI Görüntülerini Oluştur"
+"url": "/tr/net/image-rendering/render-ai-images/"
+"weight": 10
 ---
 
-# Yapay Zeka Görüntülerini Oluşturma
+# AI Görüntülerini Oluştur
 
 ## giriiş
-GroupDocs.Viewer for .NET, geliştiricilerin .NET uygulamalarında çeşitli belge formatlarını zahmetsizce oluşturmasına olanak tanıyan güçlü bir kitaplıktır. AI görüntülerini, PDF'leri veya diğer belge türlerini görüntülemeniz gerektiğinde GroupDocs.Viewer, projelerinize kusursuz entegrasyon için birden fazla çıktı formatı sunarak süreci basitleştirir. Bu eğitim, GroupDocs.Viewer for .NET'i kullanarak AI görüntülerini adım adım işleme konusunda size rehberlik edecektir.
-## Önkoşullar
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+GroupDocs.Viewer for .NET, geliştiricilerin .NET uygulamaları içinde çeşitli belge biçimlerini zahmetsizce işlemelerini sağlayan güçlü bir kütüphanedir. AI görüntüleri, PDF'ler veya diğer belge türlerini görüntülemeniz gerekip gerekmediğine bakılmaksızın, GroupDocs.Viewer süreci basitleştirir ve projelerinize sorunsuz entegrasyon için birden fazla çıktı biçimi sunar. Bu eğitim, GroupDocs.Viewer for .NET kullanarak AI görüntülerini adım adım işlemenize rehberlik edecektir.
+
+![.NET için GroupDocs.Viewer ile AI Görüntülerini Oluşturun](/viewer/image-rendering/render-ai-images.png)
+
+## Ön koşullar
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 1. Visual Studio: Sisteminize Visual Studio IDE'yi yükleyin.
-2.  GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NET'i şu adresten indirip yükleyin:[İnternet sitesi](https://releases.groupdocs.com/viewer/net/).
-3. Temel C# bilgisi: Kod örneklerini anlamak için C# programlama diline aşinalık gerekir.
+2. GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NET'i şuradan indirin ve yükleyin: [web sitesi](https://releases.groupdocs.com/viewer/net/).
+3. Temel C# bilgisi: Kod örneklerini anlayabilmek için C# programlama diline aşinalık gerekmektedir.
 
 ## Ad Alanlarını İçe Aktar
-C# projenizde, GroupDocs.Viewer for .NET işlevlerine erişmek için gerekli ad alanlarını içe aktarın.
+C# projenizde, .NET için GroupDocs.Viewer işlevlerine erişmek için gerekli ad alanlarını içe aktarın.
 
 ```csharp
 using GroupDocs.Viewer.Options;
@@ -26,8 +29,8 @@ using System;
 using System.IO;
 ```
 
-Yapay zeka görüntülerinin GroupDocs.Viewer for .NET ile işlenmesi, her biri belirli bir çıktı formatını karşılayan birkaç adımdan oluşur. Aşağıda, netlik sağlamak için süreci bireysel adımlara ayıracağız.
-## Adım 1: Çıkış Dizinini Belirleyin
+AI görüntülerini GroupDocs.Viewer for .NET ile işlemek, her biri belirli bir çıktı biçimine hitap eden birkaç adım içerir. Aşağıda, netlik sağlamak için süreci ayrı adımlara ayıracağız.
+## Adım 1: Çıktı Dizinini Belirleyin
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
@@ -40,7 +43,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
     viewer.View(options);
 }
 ```
-## 3. Adım: JPG'ye dönüştürme
+## Adım 3: JPG'ye dönüştürme
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "ai_result.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
@@ -58,7 +61,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
     viewer.View(options);
 }
 ```
-## Adım 5: PDF'ye Dönüştürme
+## Adım 5: PDF'ye dönüştürme
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "ai_result.pdf");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
@@ -69,15 +72,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
 ```
 
 ## Çözüm
-GroupDocs.Viewer for .NET, .NET uygulamalarında yapay zeka görüntülerinin ve çeşitli belge formatlarının işlenmesi için kusursuz bir çözüm sunar. Geliştiriciler, bu eğitimde sağlanan adım adım kılavuzu izleyerek belge oluşturma yeteneklerini projelerine zahmetsizce entegre edebilirler.
-## SSS'ler
+GroupDocs.Viewer for .NET, .NET uygulamaları içinde AI görüntüleri ve çeşitli belge biçimlerini işlemek için kusursuz bir çözüm sunar. Geliştiriciler, bu eğitimde sağlanan adım adım kılavuzu izleyerek, belge işleme yeteneklerini projelerine zahmetsizce entegre edebilirler.
+## SSS
 ### AI görüntülerini işlerken çıktı görünümünü özelleştirebilir miyim?
-Evet, GroupDocs.Viewer for .NET, sayfa boyutu, görüntü kalitesi ve daha fazlası dahil olmak üzere çıktı görünümünü özelleştirmek için çeşitli seçenekler sunar.
+Evet, .NET için GroupDocs.Viewer sayfa boyutu, görüntü kalitesi ve daha fazlası dahil olmak üzere çıktı görünümünü özelleştirmek için çeşitli seçenekler sunar.
 ### Test amaçlı deneme sürümü mevcut mu?
- Evet, GroupDocs'tan ücretsiz deneme sürümünü indirebilirsiniz[İnternet sitesi](https://releases.groupdocs.com/viewer/net/) Bir satın alma işlemi yapmadan önce kütüphanenin özelliklerini değerlendirmek.
-### GroupDocs.Viewer şifrelenmiş AI görüntülerinin oluşturulmasını destekliyor mu?
-Evet, GroupDocs.Viewer for .NET, sağlanan uygun şifre çözme anahtarlarıyla şifrelenmiş AI görüntülerinin oluşturulmasını destekler.
-### AI görüntülerini doğrudan URL'lerden oluşturabilir miyim?
-Evet, GroupDocs.Viewer for .NET, yerel dosya yolu yerine URL yolunu belirterek URL'lerden AI görüntülerinin oluşturulmasına olanak tanır.
+Evet, GroupDocs'tan ücretsiz deneme sürümünü indirebilirsiniz [web sitesi](https://releases.groupdocs.com/viewer/net/) Satın alma işlemi yapmadan önce kütüphanenin özelliklerini değerlendirmek.
+### GroupDocs.Viewer şifrelenmiş AI görüntülerinin işlenmesini destekliyor mu?
+Evet, GroupDocs.Viewer for .NET, uygun şifre çözme anahtarları sağlandığında şifrelenmiş AI görüntülerinin işlenmesini destekler.
+### URL'lerden doğrudan AI görselleri oluşturabilir miyim?
+Evet, .NET için GroupDocs.Viewer, yerel dosya yolu yerine URL yolunu belirterek URL'lerden AI görüntülerinin oluşturulmasına olanak tanır.
 ### GroupDocs.Viewer for .NET için teknik destek mevcut mu?
- Evet, GroupDocs aracılığıyla teknik destek sağlanmaktadır[forum](https://forum.groupdocs.com/c/viewer/9)Soru sorabileceğiniz, sorunları bildirebileceğiniz ve topluluktan yardım isteyebileceğiniz yer.
+Evet, GroupDocs aracılığıyla teknik destek mevcuttur [forum](https://forum.groupdocs.com/c/viewer/9)Sorularınızı sorabileceğiniz, sorunlarınızı bildirebileceğiniz ve topluluktan yardım isteyebileceğiniz bir yer.

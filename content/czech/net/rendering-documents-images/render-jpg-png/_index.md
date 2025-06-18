@@ -1,33 +1,33 @@
 ---
-title: Vykreslit dokument do formátu JPGPNG
-linktitle: Vykreslit dokument do formátu JPGPNG
-second_title: GroupDocs.Viewer .NET API
-description: Objevte, jak plynule vykreslovat dokumenty do formátu JPG/PNG v .NET pomocí GroupDocs.Viewer pro lepší uživatelský zážitek a produktivitu.
-weight: 10
-url: /cs/net/rendering-documents-images/render-jpg-png/
+"description": "Zjistěte, jak bezproblémově vykreslovat dokumenty do formátu JPG/PNG v prostředí .NET pomocí nástroje GroupDocs.Viewer pro lepší uživatelský komfort a produktivitu."
+"linktitle": "Vykreslení dokumentu do formátu JPGPNG"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Vykreslení dokumentu do formátu JPGPNG"
+"url": "/cs/net/rendering-documents-images/render-jpg-png/"
+"weight": 10
 ---
 
-# Vykreslit dokument do formátu JPGPNG
+# Vykreslení dokumentu do formátu JPGPNG
 
-## Úvod
+## Zavedení
 
-Ve světě vývoje .NET je efektivní nakládání s dokumenty pro různé aplikace zásadní. Ať už budujete systém správy dokumentů, platformu elektronického obchodování nebo aplikaci s bohatým obsahem, schopnost bezproblémového prohlížení dokumentů je zásadní. Zde vstupuje do hry GroupDocs.Viewer for .NET, který nabízí komplexní řešení pro vykreslování dokumentů do různých formátů, jako jsou JPG a PNG.
+Ve světě vývoje v .NET je efektivní práce s dokumenty nezbytná pro různé aplikace. Ať už vytváříte systém pro správu dokumentů, platformu pro elektronické obchodování nebo aplikaci bohatou na obsah, schopnost bezproblémového prohlížení dokumentů je klíčová. A právě zde přichází na řadu GroupDocs.Viewer pro .NET, který nabízí komplexní řešení pro vykreslování dokumentů do různých formátů, jako jsou JPG a PNG.
 
 ## Předpoklady
 
-Než se pustíte do používání GroupDocs.Viewer pro .NET, je třeba zajistit několik předpokladů:
+Než se pustíte do používání GroupDocs.Viewer pro .NET, je třeba splnit několik předpokladů:
 
-1. Vývojové prostředí .NET: Ujistěte se, že máte na svém počítači nastavené funkční vývojové prostředí .NET. To zahrnuje instalaci sady .NET SDK.
+1. Vývojové prostředí .NET: Ujistěte se, že máte na svém počítači nainstalované funkční vývojové prostředí .NET. To zahrnuje i instalaci sady .NET SDK.
 
-2. Licence GroupDocs.Viewer: Získejte platnou licenci pro GroupDocs.Viewer. Můžete si zakoupit licenci nebo použít dočasnou pro účely hodnocení.
+2. Licence pro GroupDocs.Viewer: Získejte platnou licenci pro GroupDocs.Viewer. Licenci si můžete buď zakoupit, nebo použít dočasnou licenci pro účely zkušebního používání.
 
-3.  Instalace: Stáhněte a nainstalujte GroupDocs.Viewer for .NET z poskytnutého[odkaz ke stažení](https://releases.groupdocs.com/viewer/net/).
+3. Instalace: Stáhněte a nainstalujte GroupDocs.Viewer pro .NET z dodaného [odkaz ke stažení](https://releases.groupdocs.com/viewer/net/).
 
-4. Soubory dokumentů: Připravte si soubory dokumentů, které chcete vykreslit. GroupDocs.Viewer podporuje různé formáty včetně DOCX, PDF, PPT a dalších.
+4. Soubory dokumentů: Mějte připravené soubory dokumentů, které chcete vykreslit. GroupDocs.Viewer podporuje různé formáty včetně DOCX, PDF, PPT a dalších.
 
 ## Importovat jmenné prostory
 
-Chcete-li začít s vykreslováním dokumentů pomocí GroupDocs.Viewer for .NET, musíte do projektu importovat potřebné jmenné prostory. To vám umožní přístup k funkcím, které knihovna poskytuje.
+Abyste mohli začít s vykreslováním dokumentů pomocí GroupDocs.Viewer pro .NET, je třeba do projektu importovat potřebné jmenné prostory. To vám umožní přístup k funkcím poskytovaným knihovnou.
 
 ```csharp
 using System;
@@ -35,38 +35,38 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Vykreslení dokumentu do formátu JPG nebo PNG je s GroupDocs.Viewer pro .NET jednoduchý proces. Níže je uveden podrobný průvodce, který vám toho pomůže:
+Vykreslení dokumentu do formátu JPG nebo PNG je s GroupDocs.Viewer pro .NET jednoduchý proces. Níže je uveden podrobný návod, který vám s tím pomůže:
 
-## Krok 1: Definujte výstupní adresář
+## Krok 1: Definování výstupního adresáře
 
-Nejprve definujte adresář, kam chcete ukládat vykreslené stránky. Tento adresář by měl existovat a být přístupný pro aplikaci.
+Nejprve definujte adresář, kam chcete ukládat vykreslené stránky. Tento adresář by měl existovat a měl by být přístupný aplikaci.
 
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 
-## Krok 2: Definujte formát cesty k souboru stránky
+## Krok 2: Definování formátu cesty k souboru stránky
 
- Zadejte formát cest k souboru každé vykreslené stránky. GroupDocs.Viewer nahradí`{0}` s číslem stránky při ukládání souborů.
+Zadejte formát cest k souborům každé vykreslené stránky. GroupDocs.Viewer nahradí `{0}` s číslem stránky při ukládání souborů.
 
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.jpg");
 ```
 
-## Krok 3: Vytvořte objekt prohlížeče
+## Krok 3: Vytvoření instance objektu Viewer
 
- Vytvořte instanci souboru`Viewer` třídy zadáním cesty k souboru dokumentu, který chcete vykreslit.
+Vytvořte instanci `Viewer` třídu zadáním cesty k souboru dokumentu, který chcete vykreslit.
 
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_Your_Document"))
 {
-    // Kód pro vykreslování je zde
+    // Kód pro vykreslování se nachází zde
 }
 ```
 
-## Krok 4: Definujte možnosti vykreslování
+## Krok 4: Definování možností vykreslování
 
-Zadejte možnosti vykreslení podle svých požadavků. Pro vykreslování JPG/PNG použijete`JpgViewOptions` nebo`PngViewOptions`.
+Zadejte možnosti vykreslování podle vašich požadavků. Pro vykreslování JPG/PNG použijete `JpgViewOptions` nebo `PngViewOptions`.
 
 ```csharp
 JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
@@ -74,7 +74,7 @@ JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
 
 ## Krok 5: Vykreslení dokumentu
 
- Vyvolat`View` metoda`Viewer` objekt a předat možnosti vykreslování vytvořené dříve.
+Vyvolat `View` metoda `Viewer` objekt a předat dříve vytvořené možnosti vykreslování.
 
 ```csharp
 viewer.View(options);
@@ -82,7 +82,7 @@ viewer.View(options);
 
 ## Krok 6: Výstup výsledků
 
-Jakmile je proces vykreslování dokončen, můžete uživatele informovat o úspěšném vykreslování a poskytnout adresář, do kterého jsou vyrenderované stránky uloženy.
+Jakmile je proces vykreslování dokončen, můžete uživatele informovat o úspěšném vykreslování a poskytnout mu adresář, kam jsou vykreslené stránky uloženy.
 
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
@@ -90,26 +90,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Závěr
 
-Na závěr, GroupDocs.Viewer for .NET nabízí výkonné řešení pro vykreslování dokumentů do různých formátů, včetně JPG a PNG. Dodržováním kroků uvedených v tomto kurzu můžete bezproblémově integrovat funkce vykreslování dokumentů do vašich aplikací .NET a zlepšit tak uživatelskou zkušenost a produktivitu.
+Závěrem lze říci, že GroupDocs.Viewer pro .NET nabízí výkonné řešení pro vykreslování dokumentů do různých formátů, včetně JPG a PNG. Dodržováním kroků popsaných v tomto tutoriálu můžete bezproblémově integrovat funkce vykreslování dokumentů do svých .NET aplikací, a tím zlepšit uživatelský komfort a produktivitu.
 
-## FAQ
+## Často kladené otázky
 
-### Otázka: Mohu pomocí GroupDocs.Viewer for .NET vykreslit jiné dokumenty než DOCX?
+### Otázka: Mohu pomocí GroupDocs.Viewer pro .NET vykreslovat dokumenty jiné než DOCX?
 
-Odpověď: Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů včetně PDF, PPT, XLS a dalších.
+A: Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně PDF, PPT, XLS a dalších.
 
-### Otázka: Je k dispozici bezplatná zkušební verze pro GroupDocs.Viewer pro .NET?
+### Otázka: Je k dispozici bezplatná zkušební verze GroupDocs.Viewer pro .NET?
 
- Odpověď: Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.groupdocs.com/).
+A: Ano, můžete si stáhnout bezplatnou zkušební verzi z [zde](https://releases.groupdocs.com/).
 
 ### Otázka: Jak mohu získat dočasnou licenci pro účely hodnocení?
 
-Odpověď: Můžete požádat o dočasnou licenci od[tady](https://purchase.groupdocs.com/temporary-license/).
+A: O dočasnou licenci můžete požádat od [zde](https://purchase.groupdocs.com/temporary-license/).
 
 ### Otázka: Kde najdu dokumentaci k GroupDocs.Viewer pro .NET?
 
- Odpověď: K dispozici je podrobná dokumentace[tady](https://tutorials.groupdocs.com/viewer/net/).
+A: Podrobná dokumentace je k dispozici [zde](https://tutorials.groupdocs.com/viewer/net/).
 
-### Otázka: Kde mohu získat podporu nebo klást otázky týkající se GroupDocs.Viewer pro .NET?
+### Otázka: Kde mohu získat podporu nebo se zeptat na otázky týkající se GroupDocs.Viewer pro .NET?
 
- Odpověď: Můžete navštívit fórum podpory[tady](https://forum.groupdocs.com/c/viewer/9) pro pomoc.
+A: Můžete navštívit fórum podpory [zde](https://forum.groupdocs.com/c/viewer/9) o pomoc.

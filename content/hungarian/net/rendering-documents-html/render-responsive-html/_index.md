@@ -1,76 +1,76 @@
 ---
-title: Reszponzív HTML megjelenítése
-linktitle: Reszponzív HTML megjelenítése
-second_title: GroupDocs.Viewer .NET API
-description: Ismerje meg, hogyan lehet reszponzív HTML-kódot előállítani a Groupdocs.Viewer for .NET segítségével, így biztosítva az optimális megtekintési élményt az eszközökön.
-weight: 13
-url: /hu/net/rendering-documents-html/render-responsive-html/
+"description": "Ismerje meg, hogyan jeleníthet reszponzív HTML-t a Groupdocs.Viewer for .NET segítségével, biztosítva az optimális megtekintési élményt minden eszközön."
+"linktitle": "Reszponzív HTML renderelés"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "Reszponzív HTML renderelés"
+"url": "/hu/net/rendering-documents-html/render-responsive-html/"
+"weight": 13
 ---
 
-# Reszponzív HTML megjelenítése
+# Reszponzív HTML renderelés
 
 ## Bevezetés
-A Groupdocs.Viewer for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokat reszponzív HTML-be rendereljenek. Ez az oktatóanyag végigvezeti a reszponzív HTML-megjelenítés folyamatán a Groupdocs.Viewer for .NET használatával. Ennek az oktatóanyagnak a végére zökkenőmentesen konvertálhatja a dokumentumokat HTML-formátumba, amely alkalmazkodik a különböző képernyőméretekhez, így biztosítva az optimális megtekintési élményt minden eszközön.
+Groupdocs.Viewer for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokat reszponzív HTML formátumba rendereljenek. Ez az oktatóanyag végigvezeti Önt a reszponzív HTML renderelésének folyamatán a Groupdocs.Viewer for .NET használatával. Az oktatóanyag végére zökkenőmentesen konvertálhatja a dokumentumokat HTML formátumba, amely alkalmazkodik a különböző képernyőméretekhez, biztosítva az optimális megtekintési élményt minden eszközön.
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-1.  Groupdocs.Viewer for .NET Library: Töltse le és telepítse a könyvtárat a[weboldal](https://releases.groupdocs.com/viewer/net/).
-2. Fejlesztői környezet: Győződjön meg arról, hogy megfelelő fejlesztői környezetet állít be a .NET fejlesztéshez.
-3. Dokumentumfájlok: Készítse elő azokat a dokumentumfájlokat, amelyeket reszponzív HTML-be szeretne renderelni.
+Mielőtt elkezdené, győződjön meg arról, hogy a következőkkel rendelkezik:
+1. Groupdocs.Viewer .NET könyvtárhoz: Töltse le és telepítse a könyvtárat a következő helyről: [weboldal](https://releases.groupdocs.com/viewer/net/).
+2. Fejlesztői környezet: Győződjön meg róla, hogy megfelelő fejlesztői környezettel rendelkezik a .NET fejlesztéséhez.
+3. Dokumentumfájlok: Készítse elő a reszponzív HTML formátumban megjeleníteni kívánt dokumentumfájlokat.
 
 ## Névterek importálása
-A reszponzív HTML megjelenítésének megkezdéséhez importálja a szükséges névtereket a projektbe:
+A reszponzív HTML renderelésének megkezdéséhez importáld a szükséges névtereket a projektedbe:
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Bontsuk le a megjelenítési folyamatot több lépésre:
-## 1. lépés: Állítsa be a kimeneti könyvtárat
-Határozza meg azt a könyvtárat, ahová a renderelt HTML-oldalakat menteni szeretné:
+Bontsuk a renderelési folyamatot több lépésre:
+## 1. lépés: Kimeneti könyvtár beállítása
+Adja meg azt a könyvtárat, ahová a megjelenített HTML oldalakat menteni szeretné:
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## 2. lépés: Határozza meg az oldalfájl elérési út formátumát
-Adja meg az egyes oldalak HTML-fájlok elnevezésének formátumát:
+## 2. lépés: Oldalfájl elérési útjának formátumának meghatározása
+Adja meg az egyes oldalak HTML-fájljainak elnevezési formátumát:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-## 3. lépés: Inicializálja a Viewer Object-et
-Hozzon létre egy példányt a Viewer osztályból, és adja meg a megjelenítendő dokumentumot:
+## 3. lépés: Viewer objektum inicializálása
+Hozz létre egy példányt a Viewer osztályból, és add meg a megjelenítendő dokumentumot:
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 {
-    // A renderelési kód ide kerül
+    // A renderelési kód ide fog kerülni
 }
 ```
-## 4. lépés: Konfigurálja a HTML nézet beállításait
-Állítsa be a HTML nézetbeállításokat, beleértve a reszponzív megjelenítés engedélyezését:
+## 4. lépés: HTML nézet beállításainak konfigurálása
+Állítsa be a HTML nézet beállításait, beleértve a reszponzív megjelenítés engedélyezését is:
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.RenderResponsive = true;
 ```
-## 5. lépés: Renderelje le a dokumentumot HTML formátumban
-Használja a Viewer objektum View metódusát, hogy a dokumentumot HTML formátumba renderelje:
+## 5. lépés: Dokumentum renderelése HTML-be
+A Viewer objektum View metódusával HTML formátumba renderelhetjük a dokumentumot:
 ```csharp
 viewer.View(options);
 ```
 ## 6. lépés: Sikeres üzenet kiadása
-Jelenítsen meg egy üzenetet, amely jelzi, hogy a dokumentumot sikeresen renderelték:
+Jelenítsen meg egy üzenetet, amely jelzi, hogy a dokumentum sikeresen megjelenítve lett:
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## Következtetés
-Összefoglalva, a Groupdocs.Viewer for .NET zökkenőmentes megoldást kínál a dokumentumok reszponzív HTML formátumba való renderelésére. Az oktatóanyagban ismertetett lépések követésével könnyedén konvertálhatja dokumentumait HTML formátumba, amely alkalmazkodik a különböző képernyőméretekhez, így biztosítva az optimális megtekintési élményt a felhasználók számára.
+Összefoglalva, a Groupdocs.Viewer for .NET zökkenőmentes megoldást kínál a dokumentumok reszponzív HTML formátumba történő renderelésére. Az ebben az oktatóanyagban ismertetett lépéseket követve könnyedén konvertálhatja dokumentumait HTML formátumba, amely alkalmazkodik a különböző képernyőméretekhez, biztosítva az optimális megtekintési élményt a felhasználók számára.
 ## GYIK
 ### A Groupdocs.Viewer for .NET kompatibilis az összes dokumentumformátummal?
-A Groupdocs.Viewer for .NET a dokumentumformátumok széles skáláját támogatja, beleértve a DOCX, PDF, PPTX, XLSX és egyebeket.
-### Testreszabhatom a renderelt HTML megjelenését?
-Igen, igényei szerint testreszabhatja a különféle megjelenítési beállításokat, például az oldal tájolását, minőségét és vízjelét.
-### A Groupdocs.Viewer for .NET használatához licenc szükséges a kereskedelmi használatra?
- Igen, a Groupdocs.Viewer for .NET éles környezetben való használatához kereskedelmi licenc szükséges. Engedélyt vásárolhat a[weboldal](https://purchase.groupdocs.com/buy).
-### Elérhető ingyenes próbaverzió a Groupdocs.Viewer for .NET számára?
- Igen, igénybe veheti a Groupdocs.Viewer for .NET ingyenes próbaverzióját a webhelyről[weboldal](https://releases.groupdocs.com/).
-### Hol kaphatok támogatást a Groupdocs.Viewer for .NET számára?
-Támogatást kaphat a Groupdocs.Viewer közösségi fórumain[itt](https://forum.groupdocs.com/c/viewer/9).
+A Groupdocs.Viewer for .NET számos dokumentumformátumot támogat, beleértve a DOCX, PDF, PPTX, XLSX és egyebeket.
+### Testreszabhatom a megjelenített HTML megjelenését?
+Igen, testreszabhatja a különböző megjelenítési beállításokat, például az oldal tájolását, a minőséget és a vízjelet az igényei szerint.
+### Szükséges-e licenc a Groupdocs.Viewer for .NET kereskedelmi célú használatához?
+Igen, a Groupdocs.Viewer for .NET éles környezetben történő használatához kereskedelmi licenc szükséges. Licencet vásárolhat a következő címen: [weboldal](https://purchase.groupdocs.com/buy).
+### Van ingyenes próbaverzió a Groupdocs.Viewer for .NET-hez?
+Igen, igénybe veheti a Groupdocs.Viewer for .NET ingyenes próbaverzióját a következő címen: [weboldal](https://releases.groupdocs.com/).
+### Hol kaphatok támogatást a Groupdocs.Viewer for .NET-hez?
+Támogatást kaphatsz a Groupdocs.Viewer közösségi fórumokon. [itt](https://forum.groupdocs.com/c/viewer/9).

@@ -1,21 +1,24 @@
 ---
-title: PDFの画質を調整する
-linktitle: PDFの画質を調整する
-second_title: GroupDocs.Viewer .NET API
-description: GroupDocs.Viewer for .NET を使用して PDF ドキュメントの画質を調整する方法を学びます。シームレスな統合については、段階的なチュートリアルに従ってください。
-weight: 10
-url: /ja/net/pdf-rendering-options/adjust-image-quality-pdf/
+"description": "GroupDocs.Viewer for .NET を使用してPDFドキュメントの画像品質を調整する方法を学びましょう。ステップバイステップのチュートリアルに従って、シームレスに統合しましょう。"
+"linktitle": "PDFの画像品質を調整する"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "PDFの画像品質を調整する"
+"url": "/ja/net/pdf-rendering-options/adjust-image-quality-pdf/"
+"weight": 10
 ---
 
-# PDFの画質を調整する
+# PDFの画像品質を調整する
 
 ## 導入
-GroupDocs.Viewer for .NET は、開発者がドキュメント レンダリング機能を .NET アプリケーションに簡単に統合できるようにする強力なライブラリです。このライブラリの重要な機能の 1 つは、PDF ドキュメントをレンダリングするときに画質を調整できることです。このチュートリアルでは、GroupDocs.Viewer for .NET を使用して画質を調整するプロセスを段階的に説明します。
+GroupDocs.Viewer for .NETは、開発者が.NETアプリケーションにドキュメントレンダリング機能を簡単に統合できる強力なライブラリです。このライブラリの重要な機能の一つは、PDFドキュメントのレンダリング時に画質を調整できることです。このチュートリアルでは、GroupDocs.Viewer for .NETを使用して画質を調整する手順を段階的に説明します。
+
+![GroupDocs.Viewer .NET で PDF の画像品質を調整する](/viewer/pdf-rendering-options/adjust-image-quality-in-pdf.png)
+
 ## 前提条件
-始める前に、次の前提条件を満たしていることを確認してください。
-1. C# プログラミングの基本的な知識。
-2. Visual Studio がシステムにインストールされている。
-3. GroupDocs.Viewer for .NET ライブラリがダウンロードされ、インストールされました。からダウンロードできます[ここ](https://releases.groupdocs.com/viewer/net/).
+始める前に、次の前提条件が満たされていることを確認してください。
+1. C# プログラミングの基礎知識。
+2. Visual Studio がシステムにインストールされています。
+3. GroupDocs.Viewer for .NETライブラリをダウンロードしてインストールしてください。ダウンロードはこちらから。 [ここ](https://releases。groupdocs.com/viewer/net/).
 
 ## 名前空間のインポート
 まず、GroupDocs.Viewer for .NET を操作するために必要な名前空間をインポートする必要があります。
@@ -24,17 +27,17 @@ using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-## ステップ 1: 出力ディレクトリを定義する
+## ステップ1: 出力ディレクトリを定義する
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-交換する`"Your Document Directory"`レンダリングされた HTML ページを保存するパスを指定します。
-## ステップ 2: ページ ファイルのパス形式を定義する
+交換する `"Your Document Directory"` レンダリングされた HTML ページを保存するパスに置き換えます。
+## ステップ2: ページファイルパスの形式を定義する
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-この行は、レンダリングされる各 HTML ページのファイル パスの形式を定義します。`{0}`はページ番号のプレースホルダーです。
-## ステップ 3: 画質を調整する
+この行は、レンダリングされた各 HTML ページのファイル パスの形式を定義します。 `{0}` ページ番号のプレースホルダーです。
+## ステップ3：画質を調整する
 ```csharp
 using (Viewer viewer = new Viewer("Your PDF File Path"))
 {
@@ -43,23 +46,23 @@ using (Viewer viewer = new Viewer("Your PDF File Path"))
     viewer.View(options);
 }
 ```
-交換する`"Your PDF File Path"`PDF ドキュメントへのパスを含めます。
-## ステップ 4: 出力パスを表示する
+交換する `"Your PDF File Path"` PDF ドキュメントへのパスを入力します。
+## ステップ4: 出力パスを表示する
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 この行には、レンダリングされた HTML ページが保存されるパスが表示されます。
 
 ## 結論
-このチュートリアルでは、GroupDocs.Viewer for .NET を使用して PDF ドキュメントをレンダリングするときに画質を調整する方法を学習しました。上記の簡単な手順に従うことで、要件に応じて画質を簡単にカスタマイズできます。
+このチュートリアルでは、GroupDocs.Viewer for .NETを使用してPDFドキュメントをレンダリングする際の画質を調整する方法を学びました。上記の簡単な手順に従うだけで、ニーズに合わせて画質を簡単にカスタマイズできます。
 ## よくある質問
-### PDF 以外のドキュメント形式の画質を調整できますか?
-はい、GroupDocs.Viewer for .NET はさまざまなドキュメント形式をサポートしており、ほとんどの形式で画質を調整できます。
+### PDF 以外のドキュメント形式の画像品質を調整できますか?
+はい、GroupDocs.Viewer for .NET はさまざまなドキュメント形式をサポートしており、そのほとんどで画像品質を調整できます。
 ### 利用可能な画質オプションは何ですか?
-GroupDocs.Viewer for .NET には、低、中、高の画質のオプションが用意されています。
-### 調整された画質でドキュメントをレンダリングする前にドキュメントをプレビューする方法はありますか?
+GroupDocs.Viewer for .NET には、低、中、高品質の画像品質のオプションが用意されています。
+### 調整された画質でレンダリングする前にドキュメントをプレビューする方法はありますか?
 はい、GroupDocs.Viewer for .NET を使用して、さまざまな画質設定でドキュメント プレビューを生成できます。
-### GroupDocs.Viewer for .NET を商用利用するにはライセンスが必要ですか?
-はい、商用利用するにはライセンスを取得する必要があります。ライセンスは以下から購入できます[ここ](https://purchase.groupdocs.com/buy).
+### GroupDocs.Viewer for .NET を商用利用する場合、ライセンスは必要ですか?
+はい、商用利用にはライセンスが必要です。ライセンスは以下からご購入いただけます。 [ここ](https://purchase。groupdocs.com/buy).
 ### GroupDocs.Viewer for .NET のサポートはどこで受けられますか?
-GroupDocs.Viewer フォーラムからサポートを受けることができます[ここ](https://forum.groupdocs.com/c/viewer/9).
+GroupDocs.Viewerフォーラムからサポートを受けることができます [ここ](https://forum。groupdocs.com/c/viewer/9).

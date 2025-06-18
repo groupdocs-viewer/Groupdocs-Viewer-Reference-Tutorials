@@ -1,27 +1,27 @@
 ---
-title: Získejte informace o zobrazení výkresů CAD
-linktitle: Získejte informace o zobrazení výkresů CAD
-second_title: GroupDocs.Viewer .NET API
-description: Naučte se, jak získat informace o zobrazení pro výkresy CAD pomocí GroupDocs.Viewer pro .NET. Vylepšete své aplikace .NET bezproblémovou manipulací se soubory CAD.
-weight: 10
-url: /cs/net/rendering-cad-drawings/get-view-info-cad-drawing/
+"description": "Naučte se, jak načíst informace o pohledech pro výkresy CAD pomocí nástroje GroupDocs.Viewer pro .NET. Vylepšete své aplikace .NET pomocí bezproblémové práce se soubory CAD."
+"linktitle": "Získejte informace o zobrazení pro výkresy CAD"
+"second_title": "Rozhraní GroupDocs.Viewer .NET API"
+"title": "Získejte informace o zobrazení pro výkresy CAD"
+"url": "/cs/net/rendering-cad-drawings/get-view-info-cad-drawing/"
+"weight": 10
 ---
 
-# Získejte informace o zobrazení výkresů CAD
+# Získejte informace o zobrazení pro výkresy CAD
 
-## Úvod
-Ve světě vývoje softwaru je efektivní zpracování CAD výkresů zásadní. Bez ohledu na to, zda vytváříte aplikace pro architekty, inženýry nebo designéry, poskytování bezproblémového prohlížení souborů CAD může výrazně zvýšit spokojenost uživatelů. GroupDocs.Viewer for .NET nabízí výkonné řešení pro snadnou integraci možností prohlížení souborů CAD do vašich aplikací .NET. V tomto tutoriálu vás provedeme procesem získání informací o zobrazení výkresů CAD pomocí GroupDocs.Viewer pro .NET.
+## Zavedení
+Ve světě vývoje softwaru je efektivní práce s CAD výkresy klíčová. Ať už vytváříte aplikace pro architekty, inženýry nebo designéry, zajištění plynulého prohlížení CAD souborů může výrazně zvýšit spokojenost uživatelů. GroupDocs.Viewer pro .NET nabízí výkonné řešení pro snadnou integraci funkcí prohlížení CAD souborů do vašich .NET aplikací. V tomto tutoriálu vás provedeme procesem získávání informací o zobrazení CAD výkresů pomocí GroupDocs.Viewer pro .NET.
 ## Předpoklady
-Než se pustíme do výukového programu, ujistěte se, že máte následující předpoklady:
+Než se pustíme do tutoriálu, ujistěte se, že máte následující předpoklady:
 ### 1. Nainstalujte GroupDocs.Viewer pro .NET
- V první řadě je potřeba mít ve vývojovém prostředí nainstalovaný GroupDocs.Viewer for .NET. Nejnovější verzi si můžete stáhnout z[Web GroupDocs](https://releases.groupdocs.com/viewer/net/).
-### 2. Základní porozumění .NET Framework
-Spolu s tímto výukovým programem je nezbytná znalost frameworku .NET a programovacího jazyka C#.
-### 3. Nastavte vývojové prostředí
-Ujistěte se, že máte vývojové prostředí nastavené pomocí sady Visual Studio nebo jiného IDE kompatibilního s .NET.
+první řadě musíte mít ve svém vývojovém prostředí nainstalovaný GroupDocs.Viewer pro .NET. Nejnovější verzi si můžete stáhnout z [Webové stránky GroupDocs](https://releases.groupdocs.com/viewer/net/).
+### 2. Základní znalost .NET Frameworku
+Pro pokračování v tomto tutoriálu je nezbytná znalost frameworku .NET a programovacího jazyka C#.
+### 3. Nastavení vývojového prostředí
+Ujistěte se, že máte nastavené vývojové prostředí s Visual Studiem nebo jiným IDE kompatibilním s .NET.
 
 ## Importovat jmenné prostory
-Do svého projektu C# importujte potřebné jmenné prostory, abyste mohli využívat funkce GroupDocs.Viewer.
+Ve vašem projektu C# importujte potřebné jmenné prostory pro využití funkcí GroupDocs.Viewer.
 
 ```csharp
 using System;
@@ -29,27 +29,27 @@ using GroupDocs.Viewer.Options;
 using GroupDocs.Viewer.Results;
 ```
 
-## Krok 1: Definujte možnosti zobrazení informací
+## Krok 1: Definování možností zobrazení informací
 ```csharp
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
 ```
- V tomto kroku inicializujeme instanci`ViewInfoOptions` určete možnosti pro načítání informací o zobrazení. Používáme`ForHtmlView()` označující, že chceme získat informace pro zobrazení HTML.
+V tomto kroku inicializujeme instanci `ViewInfoOptions` pro určení možností pro načítání informací o zobrazení. Používáme `ForHtmlView()` metoda, která indikuje, že chceme načíst informace pro zobrazení HTML.
 ## Krok 2: Konfigurace možností vykreslování CAD
 ```csharp
 viewInfoOptions.CadOptions.RenderLayouts = true;
 ```
- Tady jsme nastavili`RenderLayouts` majetek do`true` zahrnout všechna rozvržení. To zajistí, že budou vykreslena všechna rozvržení v souboru CAD.
-## Krok 3: Získejte informace o zobrazení CAD
+Zde jsme nastavili `RenderLayouts` majetek `true` zahrnout všechna rozvržení. Tím se zajistí, že budou vykreslena všechna rozvržení v souboru CAD.
+## Krok 3: Načtení informací o zobrazení CAD
 ```csharp
 CadViewInfo info = viewer.GetViewInfo(viewInfoOptions) as CadViewInfo;
 ```
- voláme`GetViewInfo()` metoda na objekt diváka, předávání`viewInfoOptions` jako parametr pro načtení informací o zobrazení pro soubor CAD. Odlijeme vrácené`ViewInfo` namítat proti`CadViewInfo` typ.
-## Krok 4: Zobrazte typ dokumentu a počet stránek
+Voláme `GetViewInfo()` metodu na objektu prohlížeče, která předá `viewInfoOptions` jako parametr pro načtení informací o pohledu pro CAD soubor. Vrácenou hodnotu přetypujeme `ViewInfo` námitka proti `CadViewInfo` typ.
+## Krok 4: Zobrazení typu dokumentu a počtu stránek
 ```csharp
 Console.WriteLine("Document type is: " + info.FileType);
 Console.WriteLine("Pages count: " + info.Pages.Count);
 ```
-V tomto kroku vytiskneme do konzole typ dokumentu a celkový počet stránek v CAD souboru.
+V tomto kroku vypíšeme do konzole typ dokumentu a celkový počet stránek v souboru CAD.
 ## Krok 5: Zobrazení rozvržení a vrstev
 ```csharp
 Console.WriteLine("\nLayouts:");
@@ -59,18 +59,18 @@ Console.WriteLine("\nLayers:");
 foreach (Layer layer in info.Layers)
     Console.WriteLine(layer);
 ```
-Nakonec iterujeme rozvržení a vrstvy načtené ze souboru CAD a vytiskneme je do konzoly.
+Nakonec iterujeme rozvrženími a vrstvami načtenými ze souboru CAD a vytiskneme je do konzole.
 
 ## Závěr
-Podle tohoto návodu jste se naučili používat GroupDocs.Viewer pro .NET k bezproblémovému získávání informací o zobrazení pro výkresy CAD. Integrace této schopnosti do vašich aplikací .NET může výrazně zlepšit uživatelskou zkušenost a zjednodušit práci se soubory CAD.
-## FAQ
-### Otázka: Je GroupDocs.Viewer for .NET kompatibilní se všemi formáty souborů CAD?
-GroupDocs.Viewer for .NET podporuje různé formáty souborů CAD včetně DWG, DXF, DWF a mnoha dalších.
-### Otázka: Mohu přizpůsobit možnosti vykreslování pro soubory CAD?
-Ano, můžete přizpůsobit možnosti vykreslování, jako jsou rozvržení, vrstvy a výstupní formáty, podle vašich požadavků.
-### Otázka: Je k dispozici bezplatná zkušební verze pro GroupDocs.Viewer pro .NET?
-Ano, z webu máte přístup k bezplatné zkušební verzi GroupDocs.Viewer for .NET a prozkoumejte jeho funkce před nákupem.
+Díky tomuto tutoriálu jste se naučili, jak používat GroupDocs.Viewer pro .NET k bezproblémovému získávání informací o zobrazení výkresů CAD. Integrace této funkce do vašich aplikací .NET může výrazně zlepšit uživatelský komfort a zefektivnit práci se soubory CAD.
+## Často kladené otázky
+### Otázka: Je GroupDocs.Viewer pro .NET kompatibilní se všemi formáty souborů CAD?
+GroupDocs.Viewer pro .NET podporuje různé formáty CAD souborů včetně DWG, DXF, DWF a mnoha dalších.
+### Otázka: Mohu si přizpůsobit možnosti vykreslování pro soubory CAD?
+Ano, možnosti vykreslování, jako jsou rozvržení, vrstvy a výstupní formáty, si můžete přizpůsobit podle svých požadavků.
+### Otázka: Je k dispozici bezplatná zkušební verze GroupDocs.Viewer pro .NET?
+Ano, můžete si z webových stránek stáhnout bezplatnou zkušební verzi GroupDocs.Viewer pro .NET a prozkoumat jeho funkce před provedením nákupu.
 ### Otázka: Jak často jsou vydávány aktualizace pro GroupDocs.Viewer pro .NET?
-GroupDocs pravidelně vydává aktualizace a vylepšení s cílem zajistit kompatibilitu s nejnovějšími formáty souborů CAD a zlepšit celkový výkon.
+GroupDocs pravidelně vydává aktualizace a vylepšení, aby zajistila kompatibilitu s nejnovějšími formáty souborů CAD a zlepšila celkový výkon.
 ### Otázka: Kde mohu hledat podporu nebo pomoc ohledně GroupDocs.Viewer pro .NET?
 V případě jakýchkoli dotazů, technické pomoci nebo řešení problémů můžete navštívit fórum GroupDocs.Viewer nebo kontaktovat podporu.

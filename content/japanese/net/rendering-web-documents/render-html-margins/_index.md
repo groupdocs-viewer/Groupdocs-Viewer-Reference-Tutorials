@@ -1,41 +1,41 @@
 ---
-title: ユーザー定義のマージンを使用して HTML をレンダリングする
-linktitle: ユーザー定義のマージンを使用して HTML をレンダリングする
-second_title: GroupDocs.Viewer .NET API
-description: GroupDocs.Viewer を使用して、.NET でカスタム マージンを使用して HTML をレンダリングする方法を学びます。ドキュメントのプレゼンテーションを簡単に強化します。
-weight: 11
-url: /ja/net/rendering-web-documents/render-html-margins/
+"description": "GroupDocs.Viewerを使用して、.NETでカスタムマージン付きのHTMLをレンダリングする方法を学びましょう。ドキュメントのプレゼンテーションを簡単に強化できます。"
+"linktitle": "ユーザー定義の余白でHTMLをレンダリングする"
+"second_title": "GroupDocs.Viewer .NET API"
+"title": "ユーザー定義の余白でHTMLをレンダリングする"
+"url": "/ja/net/rendering-web-documents/render-html-margins/"
+"weight": 11
 ---
 
-# ユーザー定義のマージンを使用して HTML をレンダリングする
+# ユーザー定義の余白でHTMLをレンダリングする
 
 ## 導入
-.NET 開発の分野では、ユーザー定義のマージンを使用して HTML をレンダリングすることは、視覚的に魅力的なドキュメントを作成する上で重要な要素です。 Web サイトの余白を調整する場合でも、印刷レイアウトを構成する場合でも、余白を正確に制御することで、コンテンツ全体のプレゼンテーションが向上します。このチュートリアルでは、GroupDocs.Viewer for .NET を利用してこの機能をシームレスに実現する方法について詳しく説明します。
+.NET開発において、ユーザー定義の余白でHTMLをレンダリングすることは、視覚的に魅力的なドキュメントを作成する上で非常に重要です。ウェブサイトの余白を調整する場合でも、印刷レイアウトを設定する場合でも、余白を正確に制御することで、コンテンツ全体の見栄えが向上します。このチュートリアルでは、GroupDocs.Viewer for .NETを活用して、この機能をシームレスに実現する方法について詳しく説明します。
 ## 前提条件
-チュートリアルに進む前に、次の前提条件を満たしていることを確認してください。
-1.  GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NET ライブラリをインストールします。からダウンロードできます。[Webサイト](https://releases.groupdocs.com/viewer/net/).
-2. .NET 環境: .NET 開発のための作業環境を用意します。
-3. HTML ドキュメント: カスタム マージンを使用してレンダリングする HTML ドキュメントを準備します。
+チュートリアルに進む前に、次の前提条件が満たされていることを確認してください。
+1. GroupDocs.Viewer for .NET: GroupDocs.Viewer for .NETライブラリをインストールします。ダウンロードは以下から行えます。 [Webサイト](https://releases。groupdocs.com/viewer/net/).
+2. .NET 環境: .NET 開発用の作業環境を用意します。
+3. HTML ドキュメント: カスタム マージンでレンダリングする HTML ドキュメントを準備します。
 
 ## 名前空間のインポート
-始める前に、必ず必要な名前空間をインポートしてください。
+始める前に、必要な名前空間をインポートしてください。
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## ステップ 1: 出力ディレクトリを設定する
+## ステップ1: 出力ディレクトリを設定する
 レンダリングされたファイルを保存するディレクトリを定義します。
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## ステップ 2: ページ ファイルのパス形式を定義する
+## ステップ2: ページファイルパスの形式を定義する
 レンダリングされたページのファイル パスの形式を設定します。
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "html_render_margins_page_{0}.jpg");
 ```
-## ステップ 3: JPG レンダリングのマージンを調整する
-HTML を JPG 形式にレンダリングするためのマージンを構成します。
+## ステップ3：JPGレンダリングの余白を調整する
+HTML を JPG 形式にレンダリングするための余白を設定します。
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
 {
@@ -47,8 +47,8 @@ using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
     viewer.View(options);
 }
 ```
-## ステップ 4: PNG レンダリングのマージンを調整する
-同様に、HTML を PNG 形式にレンダリングするためのマージンを調整します。
+## ステップ4: PNGレンダリングの余白を調整する
+同様に、HTML を PNG 形式にレンダリングするための余白を調整します。
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
 {
@@ -60,7 +60,7 @@ using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
     viewer.View(options);
 }
 ```
-## ステップ 5: PDF レンダリングの余白を調整する
+## ステップ5: PDFレンダリングの余白を調整する
 PDF レンダリングの場合は、それに応じて余白を設定します。
 ```csharp
 using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
@@ -75,15 +75,15 @@ using (Viewer viewer = new Viewer("Path_to_your_HTML_file"))
 ```
 
 ## 結論
-GroupDocs.Viewer を使用して .NET で HTML ドキュメントをレンダリングするときにマージンをカスタマイズすると、開発者はコンテンツのプレゼンテーションを正確に調整できます。このチュートリアルに従うことで、JPG、PNG、または PDF 出力形式の余白を簡単に調整して、ドキュメントの視覚的な魅力と読みやすさを向上させることができます。
+GroupDocs.Viewerを使用して.NETでHTMLドキュメントをレンダリングする際の余白をカスタマイズすることで、開発者はコンテンツの表示を正確に調整できます。このチュートリアルに従うことで、JPG、PNG、またはPDF出力形式の余白を簡単に調整し、ドキュメントの見栄えと読みやすさを向上させることができます。
 ## よくある質問
 ### GroupDocs.Viewer for .NET はさまざまな HTML 形式と互換性がありますか?
-GroupDocs.Viewer は幅広い HTML 形式をサポートし、さまざまな HTML ドキュメントとの互換性を保証します。
-### ドキュメントの内容に基づいてマージンを動的に調整できますか?
-はい、ドキュメントのプロパティやユーザー設定に基づいて、プログラムで余白を調整できます。
+GroupDocs.Viewer は幅広い HTML 形式をサポートしており、さまざまな HTML ドキュメントとの互換性が保証されます。
+### ドキュメントの内容に基づいて余白を動的に調整できますか?
+はい、ドキュメントのプロパティまたはユーザー チュートリアルに基づいて、プログラムで余白を調整できます。
 ### マージン調整に制限はありますか?
-GroupDocs.Viewer はマージン調整に柔軟性を提供し、妥当な制限内でのカスタマイズを可能にします。
-### GroupDocs.Viewer は、JPG、PNG、PDF 以外の出力形式をサポートしていますか?
-はい、GroupDocs.Viewer は、TIFF、SVG などのさまざまな形式へのレンダリングをサポートしています。
-### さらにサポートを求めたり、GroupDocs.Viewer に関連する問題を報告するにはどうすればよいですか?
- GroupDocs.Viewer フォーラムにアクセスしてください。[ここ](https://forum.groupdocs.com/c/viewer/9)サポートとディスカッションのため。
+GroupDocs.Viewer は余白調整の柔軟性を提供し、合理的な範囲内でカスタマイズを可能にします。
+### GroupDocs.Viewer は JPG、PNG、PDF 以外の出力形式をサポートしていますか?
+はい、GroupDocs.Viewer は TIFF、SVG など、さまざまな形式へのレンダリングをサポートしています。
+### GroupDocs.Viewer に関するさらなるサポートを求めたり、問題を報告したりするにはどうすればよいですか?
+GroupDocs.Viewerフォーラムにアクセスしてください [ここ](https://forum.groupdocs.com/c/viewer/9) サポートとディスカッションのため。
