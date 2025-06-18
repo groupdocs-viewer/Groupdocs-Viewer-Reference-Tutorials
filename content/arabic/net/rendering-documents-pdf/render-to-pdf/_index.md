@@ -1,25 +1,25 @@
 ---
-title: تقديم الوثيقة إلى PDF
-linktitle: تقديم الوثيقة إلى PDF
-second_title: GroupDocs.Viewer .NET API
-description: تعرف على كيفية تقديم المستندات إلى PDF باستخدام GroupDocs.Viewer لـ .NET. دليل خطوة بخطوة يتضمن المتطلبات الأساسية والأسئلة الشائعة.
-weight: 10
-url: /ar/net/rendering-documents-pdf/render-to-pdf/
+"description": "تعرّف على كيفية تحويل المستندات إلى PDF باستخدام GroupDocs.Viewer لـ .NET. دليل خطوة بخطوة يتضمن المتطلبات الأساسية والأسئلة الشائعة."
+"linktitle": "تحويل المستند إلى PDF"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "تحويل المستند إلى PDF"
+"url": "/ar/net/rendering-documents-pdf/render-to-pdf/"
+"weight": 10
 ---
 
-# تقديم الوثيقة إلى PDF
+# تحويل المستند إلى PDF
 
 ## مقدمة
-يعد GroupDocs.Viewer for .NET أداة قوية لعرض تنسيقات المستندات المختلفة في PDF. في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة.
+GroupDocs.Viewer لـ .NET أداة فعّالة لتحويل مختلف تنسيقات المستندات إلى PDF. في هذا البرنامج التعليمي، سنرشدك خطوة بخطوة خلال العملية.
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
-1.  GroupDocs.Viewer لمكتبة .NET: يمكنك تنزيل المكتبة من[هنا](https://releases.groupdocs.com/viewer/net/).
+1. GroupDocs.Viewer لمكتبة .NET: يمكنك تنزيل المكتبة من [هنا](https://releases.groupdocs.com/viewer/net/).
 2. .NET Framework: تأكد من تثبيت الإصدار المناسب من .NET Framework على جهازك.
-3. ملفات المستندات: قم بإعداد ملفات المستندات التي تريد عرضها. تتضمن التنسيقات المدعومة DOCX وPDF وPPTX وXLSX والمزيد.
+3. ملفات المستندات: جهّز ملفات المستندات التي ترغب في عرضها. تشمل التنسيقات المدعومة DOCX وPDF وPPTX وXLSX وغيرها.
 
-## استيراد مساحات الأسماء:
-قبل الغوص في التعليمات البرمجية، تأكد من استيراد مساحات الأسماء الضرورية:
+## استيراد المساحات الاسمية:
+قبل الغوص في الكود، تأكد من استيراد المساحات الأساسية الضرورية:
 ```csharp
 using System;
 using System.IO;
@@ -32,20 +32,20 @@ using GroupDocs.Viewer.Options;
 string outputDirectory = "Your Document Directory";
 string outputFilePath = Path.Combine(outputDirectory, "output.pdf");
 ```
- تأكد من الاستبدال`"Your Document Directory"` مع الدليل الذي تريد حفظ ملف PDF المقدم فيه.
+تأكد من الاستبدال `"Your Document Directory"` مع الدليل الذي تريد حفظ ملف PDF المُقدم فيه.
 ## الخطوة 2: إنشاء كائن العارض
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 {
-    // الرمز الخاص بك هنا
+    // الكود الخاص بك هنا
 }
 ```
- يستبدل`TestFiles.SAMPLE_DOCX` مع المسار إلى ملف المستند الخاص بك.
-## الخطوة 3: ضبط خيارات عرض PDF
+يستبدل `TestFiles.SAMPLE_DOCX` مع المسار إلى ملف المستند الخاص بك.
+## الخطوة 3: تعيين خيارات عرض PDF
 ```csharp
 PdfViewOptions options = new PdfViewOptions(outputFilePath);
 ```
-## الخطوة 4: تقديم المستند إلى PDF
+## الخطوة 4: تحويل المستند إلى PDF
 ```csharp
 viewer.View(options);
 ```
@@ -53,18 +53,18 @@ viewer.View(options);
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-بعد اتباع هذه الخطوات، ستكون قد نجحت في تحويل مستندك إلى PDF باستخدام GroupDocs.Viewer for .NET.
+بعد اتباع هذه الخطوات، ستتمكن من تحويل مستندك إلى PDF بنجاح باستخدام GroupDocs.Viewer لـ .NET.
 
 ## خاتمة
-يعد تحويل المستندات إلى PDF مطلبًا شائعًا في التطبيقات المختلفة. باستخدام GroupDocs.Viewer for .NET، تصبح هذه العملية سلسة وفعالة، مما يسمح لك بالتعامل مع نطاق واسع من تنسيقات المستندات بسهولة.
+يُعد تحويل المستندات إلى PDF متطلبًا شائعًا في مختلف التطبيقات. مع GroupDocs.Viewer لـ .NET، تصبح هذه العملية سلسة وفعالة، مما يتيح لك التعامل مع مجموعة واسعة من تنسيقات المستندات بسهولة.
 ## الأسئلة الشائعة
-### هل يمكنني تحويل مستندات بخلاف DOCX إلى PDF؟
-نعم، يدعم GroupDocs.Viewer for .NET العديد من التنسيقات مثل PDF وPPTX وXLSX والمزيد.
+### هل يمكنني تحويل مستندات غير DOCX إلى PDF؟
+نعم، يدعم GroupDocs.Viewer لـ .NET تنسيقات مختلفة مثل PDF، وPPTX، وXLSX، والمزيد.
 ### هل هناك نسخة تجريبية متاحة؟
- نعم، يمكنك تنزيل نسخة تجريبية مجانية من[هنا](https://releases.groupdocs.com/).
+نعم، يمكنك تنزيل نسخة تجريبية مجانية من [هنا](https://releases.groupdocs.com/).
 ### كيف يمكنني الحصول على الدعم إذا واجهت أي مشاكل؟
- يمكنك زيارة منتدى GroupDocs.Viewer[هنا](https://forum.groupdocs.com/c/viewer/9) للمساعدة.
+يمكنك زيارة منتدى GroupDocs.Viewer [هنا](https://forum.groupdocs.com/c/viewer/9) للحصول على المساعدة.
 ### هل أحتاج إلى ترخيص مؤقت لأغراض الاختبار؟
- نعم يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.groupdocs.com/temporary-license/).
+نعم يمكنك الحصول على ترخيص مؤقت من [هنا](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني شراء ترخيص كامل؟
- يمكنك شراء ترخيص من[هنا](https://purchase.groupdocs.com/buy).
+يمكنك شراء ترخيص من [هنا](https://purchase.groupdocs.com/buy).

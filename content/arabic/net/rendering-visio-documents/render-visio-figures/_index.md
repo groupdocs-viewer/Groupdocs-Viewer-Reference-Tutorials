@@ -1,31 +1,31 @@
 ---
-title: تقديم أرقام Visio
-linktitle: تقديم أرقام Visio
-second_title: GroupDocs.Viewer .NET API
-description: تعرف على كيفية عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET مع هذا البرنامج الشامل. تعزيز إمكانيات عرض المستندات في تطبيقات .NET الخاصة بك.
-weight: 10
-url: /ar/net/rendering-visio-documents/render-visio-figures/
+"description": "تعرّف على كيفية عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET مع هذا الدليل الشامل. حسّن إمكانيات عرض المستندات في تطبيقات .NET."
+"linktitle": "تقديم أشكال Visio"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "تقديم أشكال Visio"
+"url": "/ar/net/rendering-visio-documents/render-visio-figures/"
+"weight": 10
 ---
 
-# تقديم أرقام Visio
+# تقديم أشكال Visio
 
 ## مقدمة
-في العصر الرقمي الحالي، يلعب عرض المستندات دورًا حاسمًا في التطبيقات المختلفة. سواء أكان ذلك عرض المستندات على موقع ويب أو تحويلها إلى تنسيقات مختلفة، فإن العرض الفعال أمر ضروري. يوفر GroupDocs.Viewer for .NET حلاً قويًا لعرض المستندات ومعالجتها داخل تطبيقات .NET. في هذا البرنامج التعليمي، سوف نتعمق في عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET، مع تقسيم العملية إلى خطوات بسيطة.
+في عصرنا الرقمي، يلعب عرض المستندات دورًا محوريًا في مختلف التطبيقات. سواءً كان ذلك لعرض المستندات على موقع ويب أو تحويلها إلى صيغ مختلفة، فإن العرض الفعال أمرٌ أساسي. يوفر GroupDocs.Viewer لـ .NET حلاً فعّالاً لعرض المستندات ومعالجتها داخل تطبيقات .NET. في هذا البرنامج التعليمي، سنتعمق في عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET، مع تقسيم العملية إلى خطوات بسيطة.
 ## المتطلبات الأساسية
 قبل الغوص في البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
 1. إعداد البيئة: تأكد من أن لديك بيئة عمل لتطوير .NET.
-2.  GroupDocs.Viewer لـ .NET: قم بتنزيل وتثبيت GroupDocs.Viewer لـ .NET من[رابط التحميل](https://releases.groupdocs.com/viewer/net/).
-3. الفهم الأساسي لـ C#: تعرف على أساسيات لغة البرمجة C#.
-4. نموذج مستند Visio: احصل على نموذج مستند Visio جاهز للعرض.
+2. GroupDocs.Viewer لـ .NET: قم بتنزيل GroupDocs.Viewer لـ .NET وتثبيته من [رابط التحميل](https://releases.groupdocs.com/viewer/net/).
+3. الفهم الأساسي للغة C#: تعرف على أساسيات لغة البرمجة C#.
+4. نموذج مستند Visio: احصل على نموذج مستند Visio جاهزًا للعرض.
 
 ## استيراد مساحات الأسماء
-في مشروع C# الخاص بك، ابدأ باستيراد مساحات الأسماء الضرورية:
+في مشروع C# الخاص بك، ابدأ باستيراد المساحات الأساسية الضرورية:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-## 1. التقديم إلى HTML
+## 1. العرض إلى HTML
 ```csharp
 string outputDirectory = "Your Document Directory";
 string pageFilePathFormat = Path.Combine(outputDirectory, "result_page.html");
@@ -37,12 +37,12 @@ using (Viewer viewer = new Viewer("YourVisioDocumentPath"))
     viewer.View(options);
 }
 ```
-- دليل الإخراج: حدد الدليل الذي سيتم حفظ ملف HTML المعروض فيه.
+- دليل الإخراج: قم بتحديد الدليل الذي سيتم حفظ HTML المُقدم فيه.
 - تنسيق مسار ملف الصفحة: حدد تنسيق المسار لصفحة HTML.
-- تهيئة العارض: تهيئة كائن العارض بالمسار إلى مستند Visio.
+- تهيئة العارض: تهيئة كائن العارض باستخدام المسار إلى مستند Visio.
 - خيارات عرض HTML: تكوين الخيارات لعرض HTML.
-- خيارات عرض Visio: قم بتعيين الخيارات الخاصة بعرض Visio، مثل عرض الأشكال وعرض الشكل فقط.
-## 2. التقديم إلى JPG
+- خيارات عرض Visio: تعيين خيارات خاصة بعرض Visio، مثل عرض الأشكال وعرض الأشكال فقط.
+## 2. التحويل إلى JPG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "visio_result.jpg");
 using (Viewer viewer = new Viewer("YourVisioDocumentPath"))
@@ -53,7 +53,7 @@ using (Viewer viewer = new Viewer("YourVisioDocumentPath"))
     viewer.View(options);
 }
 ```
-- كما هو الحال مع العرض إلى HTML، قم بتكوين خيارات العرض إلى تنسيق JPG.
+- على غرار العرض إلى HTML، قم بتكوين خيارات العرض إلى تنسيق JPG.
 ## 3. التقديم إلى PNG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "visio_result.png");
@@ -65,8 +65,8 @@ using (Viewer viewer = new Viewer("YourVisioDocumentPath"))
     viewer.View(options);
 }
 ```
-- يتبع تكوين العرض إلى تنسيق PNG نمطًا مشابهًا للعرض JPG.
-## 4. التقديم إلى PDF
+- يتبع تكوين العرض بتنسيق PNG نمطًا مشابهًا لعرض JPG.
+## 4. التحويل إلى PDF
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "visio_result.pdf");
 using (Viewer viewer = new Viewer("YourVisioDocumentPath"))
@@ -77,18 +77,18 @@ using (Viewer viewer = new Viewer("YourVisioDocumentPath"))
     viewer.View(options);
 }
 ```
-- للعرض إلى PDF، قم بتكوين الخيارات الخاصة بتنسيق PDF.
+- للتحويل إلى PDF، قم بتكوين الخيارات الخاصة بتنسيق PDF.
 
 ## خاتمة
-في هذا البرنامج التعليمي، اكتشفنا كيفية عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET. باتباع الدليل الموضح خطوة بخطوة، يمكنك دمج إمكانات عرض المستندات بسلاسة في تطبيقات .NET الخاصة بك، مما يعزز تجربة المستخدم والإنتاجية.
+في هذا البرنامج التعليمي، استكشفنا كيفية عرض أشكال Visio باستخدام GroupDocs.Viewer لـ .NET. باتباع هذا الدليل المفصل، يمكنك دمج إمكانيات عرض المستندات بسلاسة في تطبيقات .NET، مما يُحسّن تجربة المستخدم والإنتاجية.
 ## الأسئلة الشائعة
 ### هل يمكنني تخصيص خيارات العرض لأشكال Visio؟
-نعم، يوفر GroupDocs.Viewer for .NET خيارات شاملة لتخصيص العرض، بما في ذلك عرض الشكل، وعرض الأشكال فقط، والمزيد.
-### هل يعتبر GroupDocs.Viewer for .NET مناسبًا لعرض المستندات على نطاق واسع؟
-بالتأكيد، تم تحسين GroupDocs.Viewer for .NET للتعامل مع عرض المستندات على نطاق واسع بكفاءة.
-### هل يدعم GroupDocs.Viewer تنسيقات المستندات الأخرى بخلاف Visio؟
-نعم، يدعم GroupDocs.Viewer مجموعة واسعة من تنسيقات المستندات، بما في ذلك PDF وMicrosoft Office وAutoCAD والمزيد.
+نعم، يوفر GroupDocs.Viewer لـ .NET خيارات واسعة لتخصيص العرض، بما في ذلك عرض الشكل، وعرض الأشكال فقط، والمزيد.
+### هل GroupDocs.Viewer لـ .NET مناسب لعرض المستندات على نطاق واسع؟
+بالتأكيد، تم تحسين GroupDocs.Viewer لـ .NET للتعامل بكفاءة مع عرض المستندات واسعة النطاق.
+### هل يدعم GroupDocs.Viewer تنسيقات المستندات الأخرى غير Visio؟
+نعم، يدعم GroupDocs.Viewer مجموعة واسعة من تنسيقات المستندات، بما في ذلك PDF، وMicrosoft Office، وAutoCAD، والمزيد.
 ### هل يمكنني دمج GroupDocs.Viewer في تطبيقات الويب؟
 نعم، يمكن دمج GroupDocs.Viewer بسلاسة في تطبيقات الويب لعرض المستندات ومعالجتها.
 ### هل هناك نسخة تجريبية متاحة للاختبار قبل الشراء؟
-نعم، يمكنك الاستفادة من النسخة التجريبية المجانية من[موقع إلكتروني](https://releases.groupdocs.com/) لاختبار قدرات GroupDocs.Viewer لـ .NET.
+نعم، يمكنك الاستفادة من تجربة مجانية من [موقع إلكتروني](https://releases.groupdocs.com/) لاختبار قدرات GroupDocs.Viewer لـ .NET.

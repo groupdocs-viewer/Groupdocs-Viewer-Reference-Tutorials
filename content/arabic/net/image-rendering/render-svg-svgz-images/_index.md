@@ -1,24 +1,27 @@
 ---
-title: عرض صور SVG وSVGZ
-linktitle: عرض صور SVG وSVGZ
-second_title: GroupDocs.Viewer .NET API
-description: تعرف على كيفية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. قم بتحويل الرسومات المتجهة إلى HTML وJPG وPNG وPDF بسهولة.
-weight: 16
-url: /ar/net/image-rendering/render-svg-svgz-images/
+"description": "تعرّف على كيفية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. حوّل الرسومات المتجهة إلى HTML وJPG وPNG وPDF بسهولة."
+"linktitle": "عرض صور SVG وSVGZ"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "عرض صور SVG وSVGZ"
+"url": "/ar/net/image-rendering/render-svg-svgz-images/"
+"weight": 16
 ---
 
 # عرض صور SVG وSVGZ
 
 ## مقدمة
-في هذا البرنامج التعليمي، سنرشدك خلال عملية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. يعد GroupDocs.Viewer for .NET واجهة برمجة تطبيقات قوية لعرض المستندات والتي تمكن المطورين من عرض تنسيقات المستندات المختلفة في تطبيقات .NET الخاصة بهم. يعد SVG وSVGZ من تنسيقات الصور الشائعة المستخدمة للرسومات المتجهة، ومع GroupDocs.Viewer لـ .NET، يمكنك بسهولة تحويلها إلى تنسيقات إخراج مختلفة مثل HTML وJPG وPNG وPDF.
+في هذا البرنامج التعليمي، سنرشدك خلال عملية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. GroupDocs.Viewer لـ .NET هي واجهة برمجة تطبيقات فعّالة لعرض المستندات، تُمكّن المطورين من عرض تنسيقات مستندات متنوعة في تطبيقات .NET الخاصة بهم. يُعدّ SVG وSVGZ تنسيقات صور شائعة الاستخدام في الرسومات المتجهة، وباستخدام GroupDocs.Viewer لـ .NET، يمكنك عرضها بسهولة بتنسيقات إخراج مختلفة مثل HTML وJPG وPNG وPDF.
+
+![عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET](/viewer/image-rendering/render-svg-and-svgz-images.png)
+
 ## المتطلبات الأساسية
 قبل أن نبدأ، تأكد من تثبيت المتطلبات الأساسية التالية وإعدادها:
-1.  GroupDocs.Viewer لـ .NET: قم بتنزيل وتثبيت GroupDocs.Viewer لـ .NET من[هنا](https://releases.groupdocs.com/viewer/net/).
+1. GroupDocs.Viewer لـ .NET: قم بتنزيل GroupDocs.Viewer لـ .NET وتثبيته من [هنا](https://releases.groupdocs.com/viewer/net/).
 2. بيئة التطوير: تأكد من أن لديك بيئة تطوير عمل لتطوير .NET، مثل Visual Studio.
-3. نموذج ملف SVGZ: احصل على نموذج ملف SVGZ جاهز للاختبار.
+3. ملف SVGZ نموذجي: احصل على ملف SVGZ نموذجي جاهز للاختبار.
 
 ## استيراد مساحات الأسماء
-قبل أن نتعمق في الكود، فلنستورد مساحات الأسماء الضرورية:
+قبل أن نتعمق في الكود، دعنا نستورد مساحات الأسماء الضرورية:
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
@@ -35,7 +38,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 }
 ```
 
-## الخطوة 2: تقديم SVGZ إلى JPG
+## الخطوة 2: تحويل SVGZ إلى JPG
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "svgz_result.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
@@ -46,7 +49,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 }
 ```
 
-## الخطوة 3: تقديم SVGZ إلى PNG
+## الخطوة 3: تحويل SVGZ إلى PNG
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "svgz_result.png");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
@@ -57,7 +60,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 }
 ```
 
-## الخطوة 4: تقديم SVGZ إلى PDF
+## الخطوة 4: تحويل SVGZ إلى PDF
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "svgz_result.pdf");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
@@ -69,15 +72,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_SVGZ))
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. من خلال بضع خطوات بسيطة، يمكنك تحويل صور SVGZ إلى تنسيقات إخراج مختلفة مثل HTML، وJPG، وPNG، وPDF، مما يجعلها قابلة للوصول والعرض في بيئات مختلفة.
+في هذا البرنامج التعليمي، تعلمنا كيفية عرض صور SVG وSVGZ باستخدام GroupDocs.Viewer لـ .NET. بخطوات بسيطة، يمكنك تحويل صور SVGZ إلى صيغ إخراج متنوعة مثل HTML وJPG وPNG وPDF، مما يجعلها سهلة الوصول والعرض في بيئات مختلفة.
 ## الأسئلة الشائعة
 ### هل يمكن لـ GroupDocs.Viewer عرض تنسيقات صور أخرى؟
-نعم، يدعم GroupDocs.Viewer عرض تنسيقات الصور المختلفة بما في ذلك PNG وJPEG وBMP وTIFF وGIF والمزيد.
+نعم، يدعم GroupDocs.Viewer عرض تنسيقات الصور المختلفة بما في ذلك PNG، JPEG، BMP، TIFF، GIF، والمزيد.
 ### هل GroupDocs.Viewer متوافق مع .NET Core؟
 نعم، GroupDocs.Viewer متوافق مع كل من .NET Framework و.NET Core.
 ### هل يمكنني تخصيص خيارات العرض؟
-نعم، يوفر GroupDocs.Viewer خيارات عرض شاملة تسمح لك بتخصيص المخرجات وفقًا لمتطلباتك.
-### هل يتطلب GroupDocs.Viewer أي تبعيات لجهة خارجية؟
-لا، GroupDocs.Viewer عبارة عن واجهة برمجة تطبيقات مستقلة ولا تتطلب أي تبعيات لجهة خارجية لعرض المستندات.
+نعم، يوفر GroupDocs.Viewer خيارات عرض شاملة تسمح لك بتخصيص الناتج وفقًا لمتطلباتك.
+### هل يتطلب GroupDocs.Viewer أي تبعيات لجهات خارجية؟
+لا، GroupDocs.Viewer عبارة عن واجهة برمجة تطبيقات مستقلة ولا تتطلب أي تبعيات تابعة لجهات خارجية لعرض المستندات.
 ### هل هناك نسخة تجريبية متاحة للاختبار؟
-نعم، يمكنك تنزيل نسخة تجريبية مجانية من GroupDocs.Viewer من[هنا](https://releases.groupdocs.com/) لتقييم ميزاته قبل إجراء عملية الشراء.
+نعم، يمكنك تنزيل نسخة تجريبية مجانية من GroupDocs.Viewer من [هنا](https://releases.groupdocs.com/) لتقييم مميزاته قبل الشراء.

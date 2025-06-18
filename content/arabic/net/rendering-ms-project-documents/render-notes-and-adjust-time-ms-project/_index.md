@@ -1,32 +1,32 @@
 ---
-title: تقديم الملاحظات وضبط وحدات الوقت (MS Project)
-linktitle: تقديم الملاحظات وضبط وحدات الوقت (MS Project)
-second_title: GroupDocs.Viewer .NET API
-description: إتقان عرض مستندات MS Project باستخدام GroupDocs.Viewer لـ .NET. قم بتدوين الملاحظات وضبط وحدات الوقت واستكشاف تنسيقات الإخراج المختلفة دون عناء.
-weight: 11
-url: /ar/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/
+"description": "أتقن عرض مستندات MS Project باستخدام GroupDocs.Viewer لـ .NET. عرض الملاحظات، وضبط وحدات الوقت، واستكشاف تنسيقات الإخراج المختلفة بسهولة."
+"linktitle": "تقديم الملاحظات وضبط وحدات الوقت (MS Project)"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "تقديم الملاحظات وضبط وحدات الوقت (MS Project)"
+"url": "/ar/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
+"weight": 11
 ---
 
 # تقديم الملاحظات وضبط وحدات الوقت (MS Project)
 
 ## مقدمة
-GroupDocs.Viewer for .NET عبارة عن واجهة برمجة تطبيقات قوية لعرض المستندات تسمح للمطورين بعرض تنسيقات المستندات المختلفة ومعالجتها داخل تطبيقات .NET الخاصة بهم. في هذا البرنامج التعليمي، سنركز على تقديم الملاحظات وضبط وحدات الوقت خصيصًا لمستندات MS Project.
+GroupDocs.Viewer لـ .NET هي واجهة برمجة تطبيقات فعّالة لعرض المستندات، تُمكّن المطورين من عرض ومعالجة تنسيقات المستندات المختلفة ضمن تطبيقات .NET الخاصة بهم. في هذا البرنامج التعليمي، سنركز على عرض الملاحظات وضبط وحدات الوقت خصيصًا لمستندات MS Project.
 ## المتطلبات الأساسية
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
-1. GroupDocs.Viewer لـ .NET: تأكد من تنزيل وتثبيت GroupDocs.Viewer لمكتبة .NET. يمكنك تنزيله من[هنا](https://releases.groupdocs.com/viewer/net/).
-2. بيئة التطوير: قم بإعداد بيئة التطوير المفضلة لديك بدعم .NET.
-3. مستند مشروع MS: احصل على نموذج مستند مشروع MS جاهز للاختبار.
+قبل أن نبدأ، تأكد من أن لديك المتطلبات الأساسية التالية:
+1. GroupDocs.Viewer لـ .NET: تأكد من تنزيل مكتبة GroupDocs.Viewer لـ .NET وتثبيتها. يمكنك تنزيلها من [هنا](https://releases.groupdocs.com/viewer/net/).
+2. بيئة التطوير: قم بإعداد بيئة التطوير المفضلة لديك مع دعم .NET.
+3. مستند MS Project: احصل على مستند MS Project نموذجي جاهز للاختبار.
 ## استيراد مساحات الأسماء
-أولاً، لنستورد مساحات الأسماء الضرورية للبدء في عرض مستندات MS Project:
+أولاً، دعنا نستورد مساحات الأسماء الضرورية للبدء في عرض مستندات MS Project:
 ## الخطوة 1: استيراد مساحات الأسماء
 ```csharp
 using GroupDocs.Viewer.Options;
 using System;
 using System.IO;
 ```
-الآن بعد أن قمنا باستيراد مساحات الأسماء المطلوبة، فلنقسم كل مثال إلى خطوات متعددة لفهم شامل.
-## تقديم وثيقة مشروع MS إلى HTML
-لعرض مستند MS Project إلى تنسيق HTML مع تضمين الملاحظات، اتبع الخطوات التالية:
+الآن بعد أن قمنا باستيراد مساحات الأسماء المطلوبة، دعنا نقسم كل مثال إلى خطوات متعددة للحصول على فهم شامل.
+## تحويل مستند MS Project إلى HTML
+لتحويل مستند MS Project إلى تنسيق HTML مع الملاحظات المضمنة، اتبع الخطوات التالية:
 ### الخطوة 2: تعيين دليل الإخراج وتنسيق الملف
 ```csharp
 string outputDirectory = "Your Document Directory";
@@ -39,13 +39,13 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MPP))
     HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
     options.RenderNotes = true;
 ```
-### الخطوة 4: تقديم المستند إلى HTML
+### الخطوة 4: تحويل المستند إلى HTML
 ```csharp
 viewer.View(options);
 ```
-## تقديم مستند مشروع MS إلى تنسيقات الصور
-يمكنك أيضًا عرض مستندات MS Project بتنسيقات صور مثل JPG وPNG. إليك الطريقة:
-### الخطوة 5: قم بتعيين دليل الإخراج وتنسيق الملف لـ JPG
+## تحويل مستند MS Project إلى تنسيقات الصور
+يمكنك أيضًا تحويل مستندات MS Project إلى صيغ صور مثل JPG وPNG. إليك الطريقة:
+### الخطوة 5: تعيين دليل الإخراج وتنسيق الملف لـ JPG
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "mpp_{0}_result.jpg");
 ```
@@ -56,14 +56,14 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MPP))
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     options.RenderNotes = true;
 ```
-### الخطوة 7: تقديم المستند إلى JPG
+### الخطوة 7: تحويل المستند إلى JPG
 ```csharp
 viewer.View(options);
 ```
-كرر الخطوات المماثلة للعرض إلى PNG وتنسيقات الصور الأخرى.
-## تقديم مستند مشروع MS إلى PDF
-لتحويل مستند MS Project إلى تنسيق PDF، اتبع ما يلي:
-### الخطوة 8: تعيين دليل الإخراج وتنسيق الملف لـ PDF
+كرر الخطوات المماثلة لعرض الصور بتنسيق PNG وغيره من تنسيقات الصور.
+## تحويل مستند MS Project إلى PDF
+لتحويل مستند MS Project إلى تنسيق PDF، اتبع الخطوات التالية:
+### الخطوة 8: تعيين دليل الإخراج وتنسيق الملف لملف PDF
 ```csharp
 pageFilePathFormat = Path.Combine(outputDirectory, "mpp_result.pdf");
 ```
@@ -74,21 +74,21 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_MPP))
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
     options.RenderNotes = true;
 ```
-### الخطوة 10: تقديم المستند إلى PDF
+### الخطوة 10: تحويل المستند إلى PDF
 ```csharp
 viewer.View(options);
 ```
 
 ## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية عرض مستندات MS Project وضبط وحدات الوقت باستخدام GroupDocs.Viewer لـ .NET. قم بدمج هذه المعرفة في مشاريعك لتعزيز إمكانيات عرض المستندات.
+تهانينا! لقد نجحت في تعلم كيفية عرض مستندات MS Project وضبط وحدات الوقت باستخدام GroupDocs.Viewer لـ .NET. استخدم هذه المعرفة في مشاريعك لتحسين إمكانية عرض المستندات.
 ## الأسئلة الشائعة
-### هل يمكنني عرض مستندات MS Project بتنسيقات أخرى غير HTML والصور وPDF؟
-نعم، يدعم GroupDocs.Viewer for .NET العرض بتنسيقات مختلفة مثل DOCX وXLSX وPPTX والمزيد.
-### هل هناك إصدار تجريبي متاح لـ GroupDocs.Viewer لـ .NET؟
- نعم، يمكنك الحصول على نسخة تجريبية مجانية من[هنا](https://releases.groupdocs.com/).
+### هل يمكنني تقديم مستندات MS Project إلى تنسيقات أخرى غير HTML والصور وPDF؟
+نعم، يدعم GroupDocs.Viewer لـ .NET العرض بتنسيقات مختلفة مثل DOCX وXLSX وPPTX والمزيد.
+### هل هناك نسخة تجريبية متاحة لـ GroupDocs.Viewer لـ .NET؟
+نعم، يمكنك الحصول على نسخة تجريبية مجانية من [هنا](https://releases.groupdocs.com/).
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Viewer لـ .NET؟
- يزور[هذا الرابط](https://purchase.groupdocs.com/temporary-license/) للحصول على ترخيص مؤقت.
-### أين يمكنني العثور على وثائق GroupDocs.Viewer لـ .NET؟
- الرجوع إلى الوثائق[هنا](https://tutorials.groupdocs.com/viewer/net/).
-### أين يمكنني طلب الدعم أو طرح الأسئلة المتعلقة بـ GroupDocs.Viewer لـ .NET؟
- يمكنك زيارة منتدى الدعم[هنا](https://forum.groupdocs.com/c/viewer/9).
+يزور [هذا الرابط](https://purchase.groupdocs.com/temporary-license/) للحصول على ترخيص مؤقت.
+### أين يمكنني العثور على الوثائق الخاصة بـ GroupDocs.Viewer لـ .NET؟
+راجع الوثائق [هنا](https://tutorials.groupdocs.com/viewer/net/).
+### أين يمكنني الحصول على الدعم أو طرح الأسئلة المتعلقة بـ GroupDocs.Viewer لـ .NET؟
+يمكنك زيارة منتدى الدعم [هنا](https://forum.groupdocs.com/c/viewer/9).

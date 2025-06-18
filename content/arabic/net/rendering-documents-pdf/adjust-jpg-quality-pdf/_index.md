@@ -1,36 +1,36 @@
 ---
-title: ضبط جودة صورة JPG في ملف PDF المعروض
-linktitle: ضبط جودة صورة JPG في ملف PDF المعروض
-second_title: GroupDocs.Viewer .NET API
-description: تعرف على كيفية ضبط جودة صورة JPG في مستندات PDF المعروضة باستخدام GroupDocs.Viewer لـ .NET. تعزيز تجربة عرض المستندات الخاصة بك.
-weight: 11
-url: /ar/net/rendering-documents-pdf/adjust-jpg-quality-pdf/
+"description": "تعرّف على كيفية ضبط جودة صور JPG في مستندات PDF المُعالجة باستخدام GroupDocs.Viewer لـ .NET. حسّن تجربة عرض مستنداتك."
+"linktitle": "ضبط جودة صورة JPG في ملف PDF المُقدم"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "ضبط جودة صورة JPG في ملف PDF المُقدم"
+"url": "/ar/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
+"weight": 11
 ---
 
-# ضبط جودة صورة JPG في ملف PDF المعروض
+# ضبط جودة صورة JPG في ملف PDF المُقدم
 
 ## مقدمة
-في هذا البرنامج التعليمي، سنتعلم كيفية ضبط جودة صور JPG عند عرض ملف PDF باستخدام GroupDocs.Viewer لـ .NET. تسمح لك هذه المكتبة القوية بعرض ومعالجة تنسيقات المستندات المختلفة في تطبيقات .NET الخاصة بك بسلاسة.
+في هذا البرنامج التعليمي، سنتعلم كيفية ضبط جودة صور JPG عند عرض ملفات PDF باستخدام GroupDocs.Viewer لـ .NET. تتيح لك هذه المكتبة القوية عرض ومعالجة تنسيقات مستندات متنوعة في تطبيقات .NET بسلاسة.
 ## المتطلبات الأساسية
 قبل الغوص في هذا البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
-1.  GroupDocs.Viewer لمكتبة .NET: تأكد من تنزيل وتثبيت GroupDocs.Viewer لمكتبة .NET. يمكنك تنزيله من[هنا](https://releases.groupdocs.com/viewer/net/).
-2. بيئة التطوير: قم بإعداد بيئة تطوير عمل مع تثبيت .NET Framework.
+1. مكتبة GroupDocs.Viewer لـ .NET: تأكد من تنزيل وتثبيت مكتبة GroupDocs.Viewer لـ .NET. يمكنك تنزيلها من [هنا](https://releases.groupdocs.com/viewer/net/).
+2. بيئة التطوير: قم بإعداد بيئة تطوير عمل مع تثبيت إطار عمل .NET.
 
 ## استيراد مساحات الأسماء
-أولاً، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى كود C# الخاص بك. يتيح ذلك لتطبيقك الوصول إلى الوظائف التي يوفرها GroupDocs.Viewer لـ .NET.
+أولاً، عليك استيراد مساحات الأسماء اللازمة إلى شيفرة C#. هذا يسمح لتطبيقك بالوصول إلى الوظائف التي يوفرها GroupDocs.Viewer لـ .NET.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 ## الخطوة 1: تحديد دليل الإخراج ومسار الملف
-قم بتعيين دليل الإخراج حيث سيتم حفظ ملف PDF المقدم وحدد مسار الملف لملف PDF الناتج.
+قم بتعيين دليل الإخراج الذي سيتم حفظ ملف PDF المُقدم فيه وقم بتحديد مسار الملف لملف PDF الناتج.
 ```csharp
 string outputDirectory = "Your Document Directory";
 string filePath = Path.Combine(outputDirectory, "output.pdf");
 ```
-## الخطوة 2: تقديم ملف PDF بجودة صورة JPG المعدلة
-قم بإنشاء مثيل لفئة Viewer وتمرير مسار المستند الذي يحتوي على صور JPG. ثم قم بتكوين خيارات عرض PDF لضبط جودة صورة JPG.
+## الخطوة 2: عرض ملف PDF بجودة صورة JPG المعدلة
+أنشئ فئة العارض وأدخل مسار المستند الذي يحتوي على صور JPG. ثم، اضبط خيارات عرض PDF لضبط جودة صورة JPG.
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.JPG_IMAGE_PPTX))
 {               
@@ -39,21 +39,21 @@ using (Viewer viewer = new Viewer(TestFiles.JPG_IMAGE_PPTX))
 }
 ```
 ## الخطوة 3: عرض رسالة النجاح
-بعد تقديم ملف PDF بنجاح، قم بعرض رسالة لإعلام المستخدم بالاكتمال وموقع ملف الإخراج.
+بعد تقديم ملف PDF بنجاح، قم بعرض رسالة لإعلام المستخدم باستكمال العملية وموقع ملف الإخراج.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي، اكتشفنا كيفية ضبط جودة صورة JPG عند عرض ملف PDF باستخدام GroupDocs.Viewer لـ .NET. باتباع هذه الخطوات، يمكنك التحكم بشكل فعال في جودة الصور في مستندات PDF المقدمة، مما يضمن التمثيل المرئي الأمثل.
+في هذا البرنامج التعليمي، استكشفنا كيفية ضبط جودة صورة JPG عند عرض ملف PDF باستخدام GroupDocs.Viewer لـ .NET. باتباع هذه الخطوات، يمكنك التحكم بفعالية في جودة الصور في مستندات PDF المعروضة، مما يضمن تمثيلًا بصريًا مثاليًا.
 ## الأسئلة الشائعة
-### هل يمكنني ضبط جودة الصورة لتنسيقات أخرى إلى جانب JPG؟
-نعم، يدعم GroupDocs.Viewer for .NET العديد من تنسيقات الصور، ويمكنك ضبط الجودة لـ PNG وTIFF والتنسيقات الأخرى أيضًا.
-### هل يتوافق GroupDocs.Viewer for .NET مع كافة إصدارات .NET Framework؟
-يتوافق GroupDocs.Viewer for .NET مع إصدارات متعددة من .NET Framework، بما في ذلك .NET Core و.NET Standard.
+### هل يمكنني تعديل جودة الصورة لصيغ أخرى غير JPG؟
+نعم، يدعم GroupDocs.Viewer لـ .NET تنسيقات الصور المختلفة، ويمكنك أيضًا ضبط الجودة لتنسيقات PNG وTIFF وغيرها.
+### هل GroupDocs.Viewer لـ .NET متوافق مع كافة إصدارات إطار عمل .NET؟
+يعد GroupDocs.Viewer لـ .NET متوافقًا مع إصدارات متعددة من إطار عمل .NET، بما في ذلك .NET Core و.NET Standard.
 ### هل يمكنني عرض المستندات بشكل غير متزامن باستخدام GroupDocs.Viewer لـ .NET؟
-نعم، يوفر GroupDocs.Viewer for .NET إمكانات عرض غير متزامنة، مما يسمح لك بتحسين أداء تطبيقاتك.
-### هل هناك إصدار تجريبي متاح لـ GroupDocs.Viewer لـ .NET؟
- نعم، يمكنك الوصول إلى الإصدار التجريبي المجاني من GroupDocs.Viewer لـ .NET من[هنا](https://releases.groupdocs.com/).
-### كيف يمكنني الحصول على الدعم أو المساعدة فيما يتعلق بـ GroupDocs.Viewer لـ .NET؟
- يمكنك زيارة منتدى GroupDocs.Viewer لـ .NET[هنا](https://forum.groupdocs.com/c/viewer/9) للحصول على المساعدة وطرح الأسئلة والتفاعل مع المستخدمين والمطورين الآخرين.
+نعم، يوفر GroupDocs.Viewer لـ .NET إمكانيات عرض غير متزامنة، مما يسمح لك بتحسين أداء تطبيقاتك.
+### هل هناك نسخة تجريبية متاحة لـ GroupDocs.Viewer لـ .NET؟
+نعم، يمكنك الوصول إلى إصدار تجريبي مجاني من GroupDocs.Viewer لـ .NET من [هنا](https://releases.groupdocs.com/).
+### كيف يمكنني الحصول على الدعم أو المساعدة مع GroupDocs.Viewer لـ .NET؟
+يمكنك زيارة منتدى GroupDocs.Viewer لـ .NET [هنا](https://forum.groupdocs.com/c/viewer/9) للحصول على المساعدة وطرح الأسئلة والتفاعل مع المستخدمين والمطورين الآخرين.

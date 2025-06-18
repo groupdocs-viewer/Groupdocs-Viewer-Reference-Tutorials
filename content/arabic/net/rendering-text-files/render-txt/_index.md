@@ -1,27 +1,27 @@
 ---
-title: تقديم الملفات النصية (.txt)
-linktitle: تقديم الملفات النصية (.txt)
-second_title: GroupDocs.Viewer .NET API
-description: استكشف التحويل السلس للملفات النصية إلى تنسيقات متعددة باستخدام GroupDocs.Viewer لـ .NET. تعزيز قدرات إدارة المستندات الخاصة بك دون عناء.
-weight: 10
-url: /ar/net/rendering-text-files/render-txt/
+"description": "استكشف التحويل السلس لملفات النصوص إلى صيغ متعددة باستخدام GroupDocs.Viewer لـ .NET. حسّن قدراتك في إدارة المستندات بسهولة."
+"linktitle": "عرض ملفات النصوص (.txt)"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "عرض ملفات النصوص (.txt)"
+"url": "/ar/net/rendering-text-files/render-txt/"
+"weight": 10
 ---
 
-# تقديم الملفات النصية (.txt)
+# عرض ملفات النصوص (.txt)
 
 ## مقدمة
-في مجال إدارة المستندات ومعالجتها، يظهر GroupDocs.Viewer for .NET كأداة قوية تقدم عددًا كبيرًا من الوظائف لتقديم تنسيقات المستندات المختلفة بكفاءة. تتعمق هذه المقالة في تعقيدات استخدام GroupDocs.Viewer لـ .NET لتقديم الملفات النصية (.txt) إلى تنسيقات متعددة. سواء كنت تهدف إلى تحويل الملفات النصية إلى HTML أو JPG أو PNG أو PDF، فإن GroupDocs.Viewer يزودك بالأدوات اللازمة لإنجاز هذه المهام بسلاسة.
+في مجال إدارة المستندات ومعالجتها، يبرز GroupDocs.Viewer لـ .NET كأداة فعّالة، إذ يوفر مجموعة واسعة من الوظائف لعرض مختلف صيغ المستندات بكفاءة. تتناول هذه المقالة تعقيدات استخدام GroupDocs.Viewer لـ .NET لعرض ملفات النصوص (.txt) إلى صيغ متعددة. سواء كنت ترغب في تحويل ملفات النصوص إلى HTML أو JPG أو PNG أو PDF، فإن GroupDocs.Viewer يزودك بالأدوات اللازمة لإنجاز هذه المهام بسلاسة.
 ## المتطلبات الأساسية
 قبل الخوض في عملية التحويل، تأكد من توفر المتطلبات الأساسية التالية:
 ### 1. تثبيت GroupDocs.Viewer لـ .NET
- تأكد من تثبيت GroupDocs.Viewer for .NET في بيئة التطوير الخاصة بك. يمكنك تنزيل الملفات الضرورية من[موقع إلكتروني](https://releases.groupdocs.com/viewer/net/).
-### 2. الإلمام الأساسي ببرنامج .NET Framework
-تعرف على أساسيات إطار عمل .NET، بما في ذلك كيفية إعداد مشروع واستخدام المكتبات الموجودة في قاعدة التعليمات البرمجية الخاصة بك.
-### 3. نماذج الملفات النصية
-قم بإعداد نماذج الملفات النصية (.txt) التي تنوي تحويلها. ستكون هذه الملفات بمثابة مدخلات لعملية التحويل.
+تأكد من تثبيت GroupDocs.Viewer لـ .NET في بيئة التطوير لديك. يمكنك تنزيل الملفات اللازمة من [موقع إلكتروني](https://releases.groupdocs.com/viewer/net/).
+### 2. المعرفة الأساسية بـ .NET Framework
+تعرف على أساسيات إطار عمل .NET، بما في ذلك كيفية إعداد مشروع واستخدام المكتبات داخل قاعدة التعليمات البرمجية الخاصة بك.
+### 3. ملفات نصية نموذجية
+حضّر ملفات نصية نموذجية (.txt) التي تنوي تحويلها. ستكون هذه الملفات بمثابة مُدخلات لعملية التحويل.
 
 ## استيراد مساحات الأسماء
-قبل الغوص في عملية التحويل، تأكد من استيراد مساحات الأسماء الضرورية إلى مشروعك. يتيح لك هذا الوصول إلى الوظائف التي يوفرها GroupDocs.Viewer لـ .NET بسلاسة.
+قبل البدء بعملية التحويل، تأكد من استيراد مساحات الأسماء اللازمة إلى مشروعك. هذا يتيح لك الوصول بسلاسة إلى وظائف GroupDocs.Viewer لـ .NET.
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -30,14 +30,14 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 string outputDirectory = "Your Document Directory";
 ```
-دعنا نقسم كل مثال إلى خطوات متعددة لإرشادك خلال عملية التحويل بفعالية:
+دعنا نقسم كل مثال إلى خطوات متعددة لإرشادك خلال عملية التحويل بشكل فعال:
 
 ## الخطوة 1: تحديد مسار إخراج HTML
 ```csharp
 string pageFileFullPath = Path.Combine(outputDirectory, "Txt_result.html");
 ```
-حدد المسار الكامل لملف إخراج HTML.
-## الخطوة 2: تقديم الملفات النصية إلى صفحات HTML متعددة
+حدد المسار الكامل لملف الإخراج HTML.
+## الخطوة 2: تحويل ملفات النصوص إلى صفحات HTML متعددة
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
 {
@@ -45,13 +45,13 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
     viewer.View(options);
 }
 ```
- إنشاء مثيل أ`Viewer` كائن مع المسار إلى الملف النصي. تهيئة`HtmlViewOptions` للموارد المضمنة وتقديم الملف النصي إلى HTML متعدد الصفحات.
+إنشاء مثيل `Viewer` كائن مع المسار إلى ملف النص. قم بتكوين `HtmlViewOptions` للموارد المضمنة وتحويل ملف النص إلى HTML متعدد الصفحات.
 ## الخطوة 3: تحديد مسار إخراج HTML لصفحة واحدة
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Txt_result_single_page.html");
 ```
-حدد المسار الكامل لملف إخراج HTML ذو الصفحة الواحدة.
-## الخطوة 4: تقديم الملفات النصية إلى صفحة HTML واحدة
+قم بتحديد المسار الكامل لملف الإخراج HTML المكون من صفحة واحدة.
+## الخطوة 4: تحويل ملفات النصوص إلى HTML بصفحة واحدة
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_2_TXT))
 {
@@ -60,13 +60,13 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_2_TXT))
     viewer.View(options);
 }
 ```
- إنشاء مثيل أ`Viewer` كائن مع المسار إلى الملف النصي. تهيئة`HtmlViewOptions` للموارد المضمنة ومجموعة`RenderToSinglePage` إلى صحيح. قم بتحويل الملف النصي إلى ملف HTML من صفحة واحدة.
+إنشاء مثيل `Viewer` كائن مع المسار إلى ملف النص. قم بتكوين `HtmlViewOptions` للموارد المضمنة والمجموعة `RenderToSinglePage` إلى true. تحويل ملف النص إلى HTML بصفحة واحدة.
 ## الخطوة 5: تحديد مسار إخراج JPG
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Txt_result.jpg");
 ```
-حدد المسار الكامل لملف إخراج JPG.
-## الخطوة 6: تحويل الملفات النصية إلى JPG
+حدد المسار الكامل لملف الإخراج JPG.
+## الخطوة 6: تحويل ملفات النصوص إلى صيغة JPG
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
 {
@@ -74,13 +74,13 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
     viewer.View(options);
 }
 ```
- إنشاء مثيل أ`Viewer` كائن مع المسار إلى الملف النصي. تهيئة`JpgViewOptions` لمسار الإخراج وتقديم الملف النصي إلى تنسيق JPG.
+إنشاء مثيل `Viewer` كائن مع المسار إلى ملف النص. قم بتكوين `JpgViewOptions` لمسار الإخراج وتقديم ملف النص بتنسيق JPG.
 ## الخطوة 7: تحديد مسار إخراج PNG
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Txt_result.png");
 ```
-حدد المسار الكامل لملف إخراج PNG.
-## الخطوة 8: تقديم الملفات النصية إلى PNG
+حدد المسار الكامل لملف الإخراج PNG.
+## الخطوة 8: تحويل ملفات النصوص إلى PNG
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
 {
@@ -88,13 +88,13 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
     viewer.View(options);
 }
 ```
- إنشاء مثيل أ`Viewer` كائن مع المسار إلى الملف النصي. تهيئة`PngViewOptions` لمسار الإخراج وتقديم الملف النصي إلى تنسيق PNG.
+إنشاء مثيل `Viewer` كائن مع المسار إلى ملف النص. قم بتكوين `PngViewOptions` لمسار الإخراج وتقديم ملف النص بتنسيق PNG.
 ## الخطوة 9: تحديد مسار إخراج PDF
 ```csharp
 pageFileFullPath = Path.Combine(outputDirectory, "Txt_result.pdf");
 ```
-حدد المسار الكامل لملف إخراج PDF.
-## الخطوة 10: تحويل الملفات النصية إلى PDF
+حدد المسار الكامل لملف الإخراج PDF.
+## الخطوة 10: تحويل ملفات النصوص إلى PDF
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
 {
@@ -102,18 +102,18 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_TXT))
     viewer.View(options);
 }
 ```
- إنشاء مثيل أ`Viewer` كائن مع المسار إلى الملف النصي. تهيئة`PdfViewOptions` لمسار الإخراج وتقديم الملف النصي إلى تنسيق PDF.
+إنشاء مثيل `Viewer` كائن مع المسار إلى ملف النص. قم بتكوين `PdfViewOptions` لمسار الإخراج وتقديم ملف النص بتنسيق PDF.
 
 ## خاتمة
-في الختام، يعمل GroupDocs.Viewer for .NET على تمكين المطورين من عرض الملفات النصية بسهولة إلى تنسيقات مختلفة، بما في ذلك HTML وJPG وPNG وPDF. باتباع الدليل التفصيلي الموضح في هذه المقالة، يمكنك دمج GroupDocs.Viewer بسلاسة في تطبيقات .NET الخاصة بك، مما يعزز إمكانات إدارة المستندات.
+في الختام، يُمكّن GroupDocs.Viewer لـ .NET المطورين من عرض ملفات النصوص بسهولة إلى صيغ متنوعة، بما في ذلك HTML وJPG وPNG وPDF. باتباع الدليل المفصل الموضح في هذه المقالة، يمكنك دمج GroupDocs.Viewer بسلاسة في تطبيقات .NET، مما يُحسّن من إمكانيات إدارة المستندات.
 ## الأسئلة الشائعة
-### س: هل GroupDocs.Viewer لـ .NET متوافق مع كافة إصدارات .NET Framework؟
-نعم، تم تصميم GroupDocs.Viewer for .NET ليكون متوافقًا مع نطاق واسع من إصدارات .NET Framework، مما يضمن التنوع والمرونة في التطوير.
-### س: هل يمكنني تخصيص مظهر الإخراج للمستندات المقدمة؟
-قطعاً! يوفر GroupDocs.Viewer خيارات تخصيص واسعة النطاق، مما يسمح للمطورين بتخصيص مظهر المستندات المقدمة وفقًا لتفضيلاتهم ومتطلباتهم.
-### س: هل هناك إصدار تجريبي متاح لـ GroupDocs.Viewer لـ .NET؟
- نعم، يمكنك استكشاف وظائف GroupDocs.Viewer لـ .NET عن طريق الوصول إلى الإصدار التجريبي المجاني المتاح على[موقع إلكتروني]( https://releases.groupdocs.com/).
-### س: كيف يمكنني الحصول على الدعم أو طلب المساعدة فيما يتعلق بـ GroupDocs.Viewer لـ .NET؟
- لأية استفسارات أو دعم أو مساعدة بخصوص GroupDocs.Viewer for .NET، يمكنك زيارة منتدى الدعم المخصص الذي يمكن الوصول إليه[هنا](https://forum.groupdocs.com/c/viewer/9).
+### س: هل GroupDocs.Viewer لـ .NET متوافق مع كافة إصدارات إطار عمل .NET؟
+نعم، تم تصميم GroupDocs.Viewer لـ .NET ليكون متوافقًا مع مجموعة واسعة من إصدارات إطار عمل .NET، مما يضمن التنوع والمرونة في التطوير.
+### س: هل يمكنني تخصيص مظهر إخراج المستندات المقدمة؟
+بالتأكيد! يوفر GroupDocs.Viewer خيارات تخصيص شاملة، مما يسمح للمطورين بتخصيص مظهر المستندات المعروضة وفقًا لإرشاداتهم ومتطلباتهم.
+### س: هل هناك نسخة تجريبية متاحة لـ GroupDocs.Viewer لـ .NET؟
+نعم، يمكنك استكشاف وظائف GroupDocs.Viewer لـ .NET من خلال الوصول إلى الإصدار التجريبي المجاني المتوفر على [موقع إلكتروني]( https://releases.groupdocs.com/).
+### س: كيف يمكنني الحصول على الدعم أو طلب المساعدة مع GroupDocs.Viewer لـ .NET؟
+لأي استفسارات أو دعم أو مساعدة بخصوص GroupDocs.Viewer لـ .NET، يمكنك زيارة منتدى الدعم المخصص الذي يمكن الوصول إليه [هنا](https://forum.groupdocs.com/c/viewer/9).
 ### س: هل يمكنني شراء ترخيص مؤقت لـ GroupDocs.Viewer لـ .NET؟
-نعم، التراخيص المؤقتة متاحة للشراء، مما يوفر للمستخدمين المرونة والراحة في استخدام GroupDocs.Viewer لـ .NET لفترات محددة.
+نعم، تتوفر تراخيص مؤقتة للشراء، مما يوفر للمستخدمين المرونة والراحة في استخدام GroupDocs.Viewer لـ .NET لفترات زمنية محددة.

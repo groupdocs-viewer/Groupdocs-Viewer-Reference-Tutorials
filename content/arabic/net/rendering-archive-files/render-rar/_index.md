@@ -1,20 +1,20 @@
 ---
-title: تقديم أرشيفات RAR
-linktitle: تقديم أرشيفات RAR
-second_title: GroupDocs.Viewer .NET API
-description: تعرف على كيفية عرض أرشيفات RAR إلى تنسيقات HTML أو JPG أو PNG أو PDF باستخدام GroupDocs.Viewer لـ .NET. عرض ومشاركة محتويات أرشيفات RAR بسهولة.
-weight: 13
-url: /ar/net/rendering-archive-files/render-rar/
+"description": "تعرّف على كيفية تحويل أرشيفات RAR إلى صيغ HTML أو JPG أو PNG أو PDF باستخدام GroupDocs.Viewer لـ .NET. استعرض محتويات أرشيفات RAR وشاركها بسهولة."
+"linktitle": "عرض أرشيفات RAR"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "عرض أرشيفات RAR"
+"url": "/ar/net/rendering-archive-files/render-rar/"
+"weight": 13
 ---
 
-# تقديم أرشيفات RAR
+# عرض أرشيفات RAR
 
 ## مقدمة
-تعد أرشيفات RAR تنسيقًا شائعًا لضغط وتخزين ملفات ومجلدات متعددة في حاوية واحدة. يمكن أن يكون عرض أرشيفات RAR بتنسيقات مختلفة مثل HTML أو JPG أو PNG أو PDF أمرًا ضروريًا لعرض محتويات هذه الأرشيفات أو مشاركتها. في هذا البرنامج التعليمي، سنستكشف كيفية عرض أرشيفات RAR باستخدام GroupDocs.Viewer لـ .NET.
+أرشيفات RAR هي تنسيق شائع لضغط وتخزين ملفات ومجلدات متعددة في حاوية واحدة. يُعدّ عرض أرشيفات RAR بتنسيقات مختلفة، مثل HTML وJPG وPNG وPDF، أمرًا أساسيًا لعرض محتوياتها أو مشاركتها. في هذا البرنامج التعليمي، سنستكشف كيفية عرض أرشيفات RAR باستخدام GroupDocs.Viewer لـ .NET.
 ## المتطلبات الأساسية
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
-1. GroupDocs.Viewer لـ .NET: قم بتثبيت GroupDocs.Viewer لمكتبة .NET من ملف .NET[رابط التحميل](https://releases.groupdocs.com/viewer/net/).
-2. نموذج أرشيف RAR: احصل على نموذج أرشيف RAR جاهز للعرض.
+قبل أن نبدأ، تأكد من أن لديك المتطلبات الأساسية التالية:
+1. GroupDocs.Viewer لـ .NET: قم بتثبيت مكتبة GroupDocs.Viewer لـ .NET من [رابط التحميل](https://releases.groupdocs.com/viewer/net/).
+2. أرشيف RAR نموذجي: احصل على أرشيف RAR نموذجي جاهز للعرض.
 
 ## استيراد مساحات الأسماء
 ```csharp
@@ -27,7 +27,7 @@ using System.IO;
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## الخطوة 2: تقديم إلى HTML
+## الخطوة 2: العرض إلى HTML
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_{0}.html");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -45,7 +45,7 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
     viewer.View(options);
 }
 ```
-## الخطوة 4: تقديم إلى PNG
+## الخطوة 4: التقديم إلى PNG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "RAR_result_{0}.png");
 using (Viewer viewer = new Viewer("YourRarFile.rar"))
@@ -65,15 +65,15 @@ using (Viewer viewer = new Viewer("YourRarFile.rar"))
 ```
 
 ## خاتمة
-أصبح عرض أرشيفات RAR بتنسيقات مختلفة أمرًا بسيطًا باستخدام GroupDocs.Viewer لـ .NET. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك بسهولة تحويل أرشيفات RAR إلى تنسيقات HTML أو JPG أو PNG أو PDF، مما يتيح سهولة عرض محتوياتها ومشاركتها.
+يُسهّل GroupDocs.Viewer لـ .NET عرض أرشيفات RAR بتنسيقات مختلفة. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك بسهولة تحويل أرشيفات RAR إلى تنسيقات HTML أو JPG أو PNG أو PDF، مما يُتيح عرض محتوياتها ومشاركتها بسهولة.
 ## الأسئلة الشائعة
-### هل يستطيع GroupDocs.Viewer لـ .NET التعامل مع أرشيفات RAR المشفرة؟
-نعم، يدعم GroupDocs.Viewer for .NET عرض أرشيفات RAR المشفرة بشرط توفير كلمات المرور الضرورية أثناء عملية العرض.
-### هل من الممكن تخصيص مظهر الإخراج للمستندات المقدمة؟
-قطعاً! يوفر GroupDocs.Viewer for .NET خيارات تخصيص واسعة النطاق تسمح للمستخدمين بتخصيص مظهر المستندات المقدمة وفقًا لتفضيلاتهم.
-### هل يدعم GroupDocs.Viewer for .NET عرض تنسيقات أرشيف أخرى بخلاف RAR؟
-نعم، يدعم GroupDocs.Viewer for .NET عرض تنسيقات الأرشيف المختلفة بما في ذلك ZIP وTAR و7z والمزيد.
+### هل يمكن لـ GroupDocs.Viewer لـ .NET التعامل مع أرشيفات RAR المشفرة؟
+نعم، يدعم GroupDocs.Viewer لـ .NET عرض أرشيفات RAR المشفرة بشرط توفير كلمات المرور اللازمة أثناء عملية العرض.
+### هل من الممكن تخصيص مظهر إخراج المستندات المقدمة؟
+بالتأكيد! يوفر GroupDocs.Viewer لـ .NET خيارات تخصيص شاملة، مما يسمح للمستخدمين بتخصيص مظهر المستندات المعروضة وفقًا لإرشاداتهم.
+### هل يدعم GroupDocs.Viewer لـ .NET عرض تنسيقات أرشيف أخرى غير RAR؟
+نعم، يدعم GroupDocs.Viewer لـ .NET عرض تنسيقات الأرشيف المختلفة بما في ذلك ZIP وTAR و7z والمزيد.
 ### هل يمكنني دمج GroupDocs.Viewer لـ .NET في تطبيق الويب الخاص بي؟
-بالتأكيد! يوفر GroupDocs.Viewer for .NET واجهات برمجة التطبيقات المناسبة للتكامل في كل من تطبيقات سطح المكتب والويب.
-### هل هناك إصدار تجريبي متاح لـ GroupDocs.Viewer لـ .NET؟
- نعم، يمكنك الاستفادة من النسخة التجريبية المجانية من GroupDocs.Viewer لـ .NET من[موقع إلكتروني](https://releases.groupdocs.com/).
+بالتأكيد! يوفر GroupDocs.Viewer لـ .NET واجهات برمجة تطبيقات مناسبة للتكامل مع تطبيقات سطح المكتب والويب.
+### هل هناك نسخة تجريبية متاحة لـ GroupDocs.Viewer لـ .NET؟
+نعم، يمكنك الاستفادة من النسخة التجريبية المجانية من GroupDocs.Viewer لـ .NET من [موقع إلكتروني](https://releases.groupdocs.com/).

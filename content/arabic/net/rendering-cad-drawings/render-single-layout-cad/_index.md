@@ -1,25 +1,25 @@
 ---
-title: تقديم تخطيط واحد في رسومات CAD
-linktitle: تقديم تخطيط واحد في رسومات CAD
-second_title: GroupDocs.Viewer .NET API
-description: تعرف على كيفية عرض تخطيط فردي في رسومات CAD باستخدام GroupDocs.Viewer لـ .NET. خطوات سهلة للتكامل السلس في تطبيقات .NET الخاصة بك.
-weight: 14
-url: /ar/net/rendering-cad-drawings/render-single-layout-cad/
+"description": "تعرّف على كيفية عرض مخطط واحد في رسومات CAD باستخدام GroupDocs.Viewer لـ .NET. خطوات سهلة لدمج سلس في تطبيقات .NET."
+"linktitle": "عرض تخطيط واحد في رسومات CAD"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "عرض تخطيط واحد في رسومات CAD"
+"url": "/ar/net/rendering-cad-drawings/render-single-layout-cad/"
+"weight": 14
 ---
 
-# تقديم تخطيط واحد في رسومات CAD
+# عرض تخطيط واحد في رسومات CAD
 
 ## مقدمة
-في مجال تطوير .NET، يعد التعامل مع رسومات CAD وعرضها مطلبًا شائعًا. يعمل GroupDocs.Viewer for .NET على تبسيط هذه المهمة من خلال توفير حل شامل لعرض رسومات CAD داخل تطبيقات .NET. في هذا البرنامج التعليمي، سوف نتعمق في تقديم تخطيط واحد في رسومات CAD باستخدام GroupDocs.Viewer لـ .NET.
+في مجال تطوير .NET، يُعدّ التعامل مع رسومات CAD وعرضها متطلبًا شائعًا. يُبسّط GroupDocs.Viewer لـ .NET هذه المهمة بتوفيره حلاً شاملاً لعرض رسومات CAD ضمن تطبيقات .NET. في هذا البرنامج التعليمي، سنتعمق في عرض مخطط واحد في رسومات CAD باستخدام GroupDocs.Viewer لـ .NET.
 ## المتطلبات الأساسية
 قبل الغوص في البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
-- الفهم الأساسي للغة البرمجة C# وإطار عمل .NET.
+- فهم أساسي للغة البرمجة C# وإطار عمل .NET.
 - تم تثبيت Visual Studio على نظامك.
--  تم تنزيل GroupDocs.Viewer لمكتبة .NET والإشارة إليها في مشروعك. يمكنك تنزيله من[هنا](https://releases.groupdocs.com/viewer/net/).
-- الإلمام بتنسيقات ملفات CAD وبنيتها.
+- تم تنزيل مكتبة GroupDocs.Viewer لـ .NET وتنزيل الدروس التعليمية في مشروعك. يمكنك تنزيلها من [هنا](https://releases.groupdocs.com/viewer/net/).
+- التعرف على تنسيقات ملفات CAD وبنيتها.
 
 ## استيراد مساحات الأسماء
-أولاً، قم باستيراد مساحات الأسماء الضرورية إلى كود C# الخاص بك للوصول إلى وظائف GroupDocs.Viewer.
+أولاً، قم باستيراد المساحات الأساسية اللازمة إلى كود C# الخاص بك للوصول إلى وظائف GroupDocs.Viewer.
 
 ```csharp
 using System;
@@ -28,51 +28,51 @@ using GroupDocs.Viewer.Options;
 ```
 
 ## الخطوة 1: تحديد دليل الإخراج
-حدد الدليل الذي تريد حفظ المخرجات المقدمة فيه.
+حدد الدليل الذي تريد حفظ الإخراج المقدم فيه.
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
 ## الخطوة 2: تحديد تنسيق مسار ملف الصفحة
-حدد تنسيق مسار الملف لكل صفحة معروضة.
+قم بتحديد تنسيق مسار الملف لكل صفحة مُقدمة.
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 ## الخطوة 3: إنشاء كائن العارض
-قم بإنشاء مثيل لفئة Viewer التي يوفرها GroupDocs.Viewer.
+إنشاء مثيل لفئة Viewer المقدمة بواسطة GroupDocs.Viewer.
 ```csharp
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS))
 ```
 ## الخطوة 4: تكوين خيارات عرض HTML
-قم بتكوين الخيارات لعرض مخرجات HTML مع الموارد المضمنة.
+قم بتكوين خيارات لعرض مخرجات HTML باستخدام الموارد المضمنة.
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 ```
-## الخطوة 5: حدد اسم تخطيط CAD
-حدد اسم تخطيط CAD الذي تريد عرضه.
+## الخطوة 5: تحديد اسم تخطيط CAD
+حدد اسم تخطيط CAD الذي تريد تقديمه.
 ```csharp
 options.CadOptions.LayoutName = "Model";
 ```
 ## الخطوة 6: تقديم رسم CAD
-قم باستدعاء طريقة العرض لكائن العارض بالخيارات المحددة.
+استدعاء طريقة العرض لكائن العارض باستخدام الخيارات المحددة.
 ```csharp
 viewer.View(options);
 ```
 ## الخطوة 7: عرض رسالة النجاح
-أبلغ المستخدم عن العرض الناجح للمستند المصدر.
+إعلام المستخدم بنجاح تقديم المستند المصدر.
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 
 ## خاتمة
-قد يكون تقديم رسومات CAD، خاصة عند التعامل مع التخطيطات، مهمة شاقة. ومع ذلك، مع GroupDocs.Viewer لـ .NET، تصبح العملية سلسة وفعالة. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك بسهولة تقديم تخطيط واحد في رسومات CAD داخل تطبيقات .NET الخاصة بك.
+قد يكون عرض رسومات CAD، وخاصةً عند التعامل مع المخططات، مهمةً شاقة. مع ذلك، مع GroupDocs.Viewer لـ .NET، تصبح العملية سلسة وفعالة. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك عرض مخطط واحد بسهولة في رسومات CAD ضمن تطبيقات .NET.
 ## الأسئلة الشائعة
 ### هل يمكنني عرض تخطيطات متعددة في وقت واحد باستخدام GroupDocs.Viewer لـ .NET؟
-نعم، يدعم GroupDocs.Viewer for .NET عرض تخطيطات متعددة من رسومات CAD.
-### هل يتوافق GroupDocs.Viewer مع تنسيقات ملفات CAD المختلفة؟
+نعم، يدعم GroupDocs.Viewer لـ .NET عرض تخطيطات متعددة من رسومات CAD.
+### هل GroupDocs.Viewer متوافق مع تنسيقات ملفات CAD المختلفة؟
 بالتأكيد، يدعم GroupDocs.Viewer مجموعة واسعة من تنسيقات ملفات CAD، بما في ذلك DWG وDXF وDGN والمزيد.
 ### هل يمكنني تخصيص خيارات العرض لرسومات CAD؟
-نعم، يوفر GroupDocs.Viewer خيارات شاملة لتخصيص إعدادات العرض وفقًا لمتطلباتك.
-### هل تتوفر نسخة تجريبية مجانية من GroupDocs.Viewer لـ .NET؟
- نعم، يمكنك استكشاف ميزات GroupDocs.Viewer من خلال النسخة التجريبية المجانية المتاحة[هنا](https://releases.groupdocs.com/).
-### أين يمكنني الحصول على دعم لـ GroupDocs.Viewer لـ .NET؟
- لأية استفسارات أو مساعدة، يمكنك زيارة منتدى GroupDocs.Viewer[هنا](https://forum.groupdocs.com/c/viewer/9).
+نعم، يوفر GroupDocs.Viewer خيارات واسعة لتخصيص إعدادات العرض وفقًا لمتطلباتك.
+### هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Viewer لـ .NET؟
+نعم، يمكنك استكشاف ميزات GroupDocs.Viewer من خلال الإصدار التجريبي المجاني المتاح [هنا](https://releases.groupdocs.com/).
+### أين يمكنني الحصول على الدعم لـ GroupDocs.Viewer لـ .NET؟
+لأي استفسارات أو مساعدة، يمكنك زيارة منتدى GroupDocs.Viewer [هنا](https://forum.groupdocs.com/c/viewer/9).

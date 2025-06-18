@@ -1,24 +1,27 @@
 ---
-title: عرض صور الذكاء الاصطناعي
-linktitle: عرض صور الذكاء الاصطناعي
-second_title: GroupDocs.Viewer .NET API
-description: تعرف على كيفية عرض صور الذكاء الاصطناعي بسهولة في تطبيقات .NET باستخدام GroupDocs.Viewer لـ .NET. اتبع البرنامج التعليمي خطوة بخطوة لتحقيق التكامل السلس.
-weight: 10
-url: /ar/net/image-rendering/render-ai-images/
+"description": "تعلّم كيفية عرض صور الذكاء الاصطناعي بسهولة في تطبيقات .NET باستخدام GroupDocs.Viewer لـ .NET. اتبع دليلنا خطوة بخطوة لدمج سلس."
+"linktitle": "تقديم صور الذكاء الاصطناعي"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "تقديم صور الذكاء الاصطناعي"
+"url": "/ar/net/image-rendering/render-ai-images/"
+"weight": 10
 ---
 
-# عرض صور الذكاء الاصطناعي
+# تقديم صور الذكاء الاصطناعي
 
 ## مقدمة
-تعد GroupDocs.Viewer for .NET مكتبة قوية تمكن المطورين من عرض تنسيقات المستندات المختلفة بسهولة داخل تطبيقات .NET الخاصة بهم. سواء كنت بحاجة إلى عرض صور AI أو ملفات PDF أو أنواع المستندات الأخرى، فإن GroupDocs.Viewer يبسط العملية، ويقدم تنسيقات إخراج متعددة للتكامل السلس في مشاريعك. سيرشدك هذا البرنامج التعليمي إلى عرض صور الذكاء الاصطناعي خطوة بخطوة باستخدام GroupDocs.Viewer لـ .NET.
+GroupDocs.Viewer لـ .NET مكتبة فعّالة تُمكّن المطورين من عرض صيغ مستندات متنوعة بسهولة ضمن تطبيقات .NET. سواءً كنتَ بحاجة لعرض صور AI أو ملفات PDF أو أنواع مستندات أخرى، فإن GroupDocs.Viewer يُبسّط العملية، مُوفّرًا صيغ إخراج متعددة لدمجها بسلاسة في مشاريعك. سيُرشدك هذا البرنامج التعليمي خطوة بخطوة إلى كيفية عرض صور AI باستخدام GroupDocs.Viewer لـ .NET.
+
+![عرض صور الذكاء الاصطناعي باستخدام GroupDocs.Viewer لـ .NET](/viewer/image-rendering/render-ai-images.png)
+
 ## المتطلبات الأساسية
 قبل الغوص في البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
 1. Visual Studio: قم بتثبيت Visual Studio IDE على نظامك.
-2.  GroupDocs.Viewer لـ .NET: قم بتنزيل وتثبيت GroupDocs.Viewer لـ .NET من[موقع إلكتروني](https://releases.groupdocs.com/viewer/net/).
-3. المعرفة الأساسية بـ C#: الإلمام بلغة البرمجة C# مطلوب لفهم أمثلة التعليمات البرمجية.
+2. GroupDocs.Viewer لـ .NET: قم بتنزيل GroupDocs.Viewer لـ .NET وتثبيته من [موقع إلكتروني](https://releases.groupdocs.com/viewer/net/).
+3. المعرفة الأساسية بلغة C#: مطلوب معرفة لغة البرمجة C# لفهم أمثلة التعليمات البرمجية.
 
 ## استيراد مساحات الأسماء
-في مشروع C# الخاص بك، قم باستيراد مساحات الأسماء الضرورية للوصول إلى وظائف GroupDocs.Viewer لـ .NET.
+في مشروع C# الخاص بك، قم باستيراد المساحات الأساسية اللازمة للوصول إلى وظائف GroupDocs.Viewer لـ .NET.
 
 ```csharp
 using GroupDocs.Viewer.Options;
@@ -26,12 +29,12 @@ using System;
 using System.IO;
 ```
 
-يتضمن عرض صور الذكاء الاصطناعي باستخدام GroupDocs.Viewer لـ .NET عدة خطوات، تلبي كل منها تنسيق إخراج محدد. أدناه، سنقوم بتقسيم العملية إلى خطوات فردية من أجل الوضوح.
+يتضمن عرض صور الذكاء الاصطناعي باستخدام GroupDocs.Viewer لـ .NET عدة خطوات، كل منها يُلبي تنسيق إخراج مُحدد. سنُقسّم العملية أدناه إلى خطوات مُنفصلة للتوضيح.
 ## الخطوة 1: تحديد دليل الإخراج
 ```csharp
 string outputDirectory = "Your Document Directory";
 ```
-## الخطوة 2: التقديم إلى HTML
+## الخطوة 2: العرض إلى HTML
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "ai_result.html");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
@@ -40,7 +43,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
     viewer.View(options);
 }
 ```
-## الخطوة 3: التقديم إلى JPG
+## الخطوة 3: العرض إلى JPG
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "ai_result.jpg");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
@@ -58,7 +61,7 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
     viewer.View(options);
 }
 ```
-## الخطوة 5: التقديم إلى PDF
+## الخطوة 5: التحويل إلى PDF
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "ai_result.pdf");
 using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
@@ -69,15 +72,15 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_AI))
 ```
 
 ## خاتمة
-يقدم GroupDocs.Viewer for .NET حلاً سلسًا لعرض صور AI وتنسيقات المستندات المختلفة داخل تطبيقات .NET. من خلال اتباع الدليل التفصيلي المقدم في هذا البرنامج التعليمي، يمكن للمطورين دمج إمكانات عرض المستندات في مشاريعهم دون عناء.
+يوفر GroupDocs.Viewer لـ .NET حلاً متكاملاً لعرض صور الذكاء الاصطناعي وتنسيقات المستندات المختلفة ضمن تطبيقات .NET. باتباع الدليل المفصل المُقدم في هذا البرنامج التعليمي، يمكن للمطورين دمج إمكانيات عرض المستندات بسهولة في مشاريعهم.
 ## الأسئلة الشائعة
 ### هل يمكنني تخصيص مظهر الإخراج عند عرض صور الذكاء الاصطناعي؟
-نعم، يوفر GroupDocs.Viewer for .NET خيارات متنوعة لتخصيص مظهر الإخراج، بما في ذلك حجم الصفحة وجودة الصورة والمزيد.
+نعم، يوفر GroupDocs.Viewer لـ .NET خيارات مختلفة لتخصيص مظهر الإخراج، بما في ذلك حجم الصفحة وجودة الصورة والمزيد.
 ### هل هناك نسخة تجريبية متاحة لأغراض الاختبار؟
- نعم، يمكنك تنزيل نسخة تجريبية مجانية من GroupDocs[موقع إلكتروني](https://releases.groupdocs.com/viewer/net/) لتقييم مميزات المكتبة قبل إجراء عملية الشراء.
+نعم، يمكنك تنزيل نسخة تجريبية مجانية من GroupDocs [موقع إلكتروني](https://releases.groupdocs.com/viewer/net/) لتقييم مميزات المكتبة قبل الشراء.
 ### هل يدعم GroupDocs.Viewer عرض صور الذكاء الاصطناعي المشفرة؟
-نعم، يدعم GroupDocs.Viewer for .NET عرض صور AI مشفرة مع توفير مفاتيح فك التشفير المناسبة.
+نعم، يدعم GroupDocs.Viewer لـ .NET عرض صور الذكاء الاصطناعي المشفرة باستخدام مفاتيح فك التشفير المناسبة.
 ### هل يمكنني عرض صور الذكاء الاصطناعي من عناوين URL مباشرة؟
-نعم، يسمح GroupDocs.Viewer for .NET بعرض صور AI من عناوين URL عن طريق تحديد مسار URL بدلاً من مسار الملف المحلي.
+نعم، يسمح GroupDocs.Viewer لـ .NET بعرض صور الذكاء الاصطناعي من عناوين URL من خلال تحديد مسار URL بدلاً من مسار الملف المحلي.
 ### هل يتوفر الدعم الفني لـ GroupDocs.Viewer لـ .NET؟
- نعم، يتوفر الدعم الفني من خلال GroupDocs[المنتدى](https://forum.groupdocs.com/c/viewer/9)، حيث يمكنك طرح الأسئلة والإبلاغ عن المشكلات وطلب المساعدة من المجتمع.
+نعم، الدعم الفني متاح من خلال GroupDocs [المنتدى](https://forum.groupdocs.com/c/viewer/9)حيث يمكنك طرح الأسئلة والإبلاغ عن المشكلات وطلب المساعدة من المجتمع.

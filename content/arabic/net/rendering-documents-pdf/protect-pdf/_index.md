@@ -1,20 +1,20 @@
 ---
-title: حماية ملف PDF المقدم بكلمة مرور
-linktitle: حماية ملف PDF المقدم بكلمة مرور
-second_title: GroupDocs.Viewer .NET API
-description: قم بحماية ملفات PDF المقدمة بكلمات مرور بسهولة باستخدام Groupdocs.Viewer لـ .NET. حافظ على مستنداتك آمنة وسرية.
-weight: 12
-url: /ar/net/rendering-documents-pdf/protect-pdf/
+"description": "احمِ ملفات PDF المُعالجة بكلمات مرور بسهولة باستخدام Groupdocs.Viewer لـ .NET. حافظ على أمان مستنداتك وسريتها."
+"linktitle": "حماية ملف PDF المُعالج بكلمة مرور"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "حماية ملف PDF المُعالج بكلمة مرور"
+"url": "/ar/net/rendering-documents-pdf/protect-pdf/"
+"weight": 12
 ---
 
-# حماية ملف PDF المقدم بكلمة مرور
+# حماية ملف PDF المُعالج بكلمة مرور
 
 ## مقدمة
-ستتعلم في هذا البرنامج التعليمي كيفية استخدام Groupdocs.Viewer لـ .NET لحماية ملف PDF المعروض بكلمة مرور. من خلال إضافة إجراءات أمنية، يمكنك التحكم في الوصول إلى مستندات PDF الخاصة بك، مما يضمن السرية والنزاهة.
+في هذا البرنامج التعليمي، ستتعلم كيفية استخدام Groupdocs.Viewer لـ .NET لحماية ملف PDF المُعالج بكلمة مرور. بإضافة إجراءات أمان، يمكنك التحكم في الوصول إلى مستندات PDF الخاصة بك، مما يضمن سريتها وسلامتها.
 ## المتطلبات الأساسية
 قبل أن تبدأ، تأكد من أن لديك ما يلي:
-1.  Groupdocs.Viewer لمكتبة .NET: قم بتنزيل المكتبة وتثبيتها من[موقع إلكتروني](https://releases.groupdocs.com/viewer/net/).
-2. بيئة التطوير: تأكد من أن لديك بيئة تطوير عمل معدة لتطوير .NET.
+1. Groupdocs.Viewer لمكتبة .NET: قم بتنزيل المكتبة وتثبيتها من [موقع إلكتروني](https://releases.groupdocs.com/viewer/net/).
+2. بيئة التطوير: تأكد من أن لديك بيئة تطوير عمل مهيأة لتطوير .NET.
 
 ## استيراد مساحات الأسماء
 ```csharp
@@ -38,14 +38,14 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
         Permissions = Permissions.AllowAll ^ Permissions.DenyPrinting
     };
 ```
-## الخطوة 3: ضبط خيارات عرض PDF
+## الخطوة 3: تعيين خيارات عرض PDF
 ```csharp
     PdfViewOptions options = new PdfViewOptions(filePath)
     {
         Security = security
     };
 ```
-## الخطوة 4: تقديم المستند مع خيارات الأمان
+## الخطوة 4: عرض المستند باستخدام خيارات الأمان
 ```csharp
     viewer.View(options);
 }
@@ -54,19 +54,19 @@ using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
-باتباع هذه الخطوات، يمكنك حماية ملف PDF المعروض بكلمة مرور باستخدام Groupdocs.Viewer لـ .NET. وهذا يضمن أن تظل مستنداتك آمنة ولا يمكن الوصول إليها إلا للمستخدمين المصرح لهم.
+باتباع هذه الخطوات، يمكنك حماية ملف PDF المُعالج بكلمة مرور باستخدام Groupdocs.Viewer لـ .NET. هذا يضمن بقاء مستنداتك آمنةً ومتاحةً فقط للمستخدمين المُصرّح لهم.
 
 ## خاتمة
-يعد تأمين مستندات PDF أمرًا ضروريًا للحفاظ على السرية والنزاهة. باستخدام Groupdocs.Viewer for .NET، يمكنك بسهولة حماية ملفات PDF المقدمة بكلمات مرور، والتحكم في الوصول إلى المعلومات الحساسة.
+يُعد تأمين مستندات PDF أمرًا أساسيًا للحفاظ على السرية والنزاهة. مع Groupdocs.Viewer لـ .NET، يمكنك بسهولة حماية ملفات PDF المُعالجة بكلمات مرور، مما يُتيح لك التحكم في الوصول إلى المعلومات الحساسة.
 
 ## الأسئلة الشائعة
 ### هل يمكنني حماية ملفات PDF بمستويات مختلفة من الأذونات؟
 نعم، يمكنك تحديد أذونات مختلفة للعرض والطباعة والنسخ والمزيد مع حماية ملفات PDF بكلمات مرور.
 ### هل Groupdocs.Viewer متوافق مع تنسيقات الملفات المختلفة؟
-قطعاً! يدعم Groupdocs.Viewer عرض مجموعة واسعة من تنسيقات الملفات، بما في ذلك DOCX وXLSX وPPTX وPDF والمزيد.
-### هل يمكنني دمج Groupdocs.Viewer في تطبيق .NET الموجود لدي؟
-بالتأكيد! يوفر Groupdocs.Viewer واجهات برمجة التطبيقات للتكامل السلس في تطبيقات .NET، مما يوفر إمكانات قوية لعرض المستندات.
-### هل يقدم Groupdocs.Viewer الدعم لخدمات التخزين السحابية؟
-نعم، يدعم Groupdocs.Viewer التكامل مع خدمات التخزين السحابية الشائعة مثل Dropbox وGoogle Drive وAmazon S3، مما يسمح لك بعرض المستندات المخزنة في السحابة.
-### هل هناك إصدار تجريبي متاح لـ Groupdocs.Viewer؟
- نعم، يمكنك البدء باستخدام Groupdocs.Viewer عن طريق الوصول إلى الإصدار التجريبي المجاني من[موقع إلكتروني](https://releases.groupdocs.com/).
+بالتأكيد! يدعم Groupdocs.Viewer عرض مجموعة واسعة من تنسيقات الملفات، بما في ذلك DOCX وXLSX وPPTX وPDF وغيرها.
+### هل يمكنني دمج Groupdocs.Viewer في تطبيق .NET الحالي الخاص بي؟
+بالتأكيد! يوفر Groupdocs.Viewer واجهات برمجة تطبيقات للتكامل السلس مع تطبيقات .NET، مما يوفر إمكانيات عرض مستندات فعّالة.
+### هل يوفر Groupdocs.Viewer الدعم لخدمات التخزين السحابي؟
+نعم، يدعم Groupdocs.Viewer التكامل مع خدمات التخزين السحابي الشهيرة مثل Dropbox وGoogle Drive وAmazon S3، مما يسمح لك بعرض المستندات المخزنة في السحابة.
+### هل هناك نسخة تجريبية متاحة لـ Groupdocs.Viewer؟
+نعم، يمكنك البدء في استخدام Groupdocs.Viewer من خلال الوصول إلى الإصدار التجريبي المجاني من [موقع إلكتروني](https://releases.groupdocs.com/).

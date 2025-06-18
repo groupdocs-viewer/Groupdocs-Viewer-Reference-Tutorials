@@ -1,23 +1,23 @@
 ---
-title: عرض مناطق الطباعة باستخدام GroupDocs.Viewer لـ .NET
-linktitle: تقديم مناطق الطباعة
-second_title: GroupDocs.Viewer .NET API
-description: استكشف GroupDocs.Viewer لـ .NET واعرض مناطق الطباعة بتنسيقات مختلفة للمستندات دون عناء. جرب النسخة التجريبية المجانية الآن! #GroupDocs.Viewer
-weight: 17
-url: /ar/net/spreadsheet-rendering-options/render-print-areas/
+"description": "استكشف GroupDocs.Viewer لـ .NET، واعرض مساحات الطباعة بسهولة بتنسيقات مستندات متنوعة. جرّب النسخة التجريبية المجانية الآن!"
+"linktitle": "عرض مناطق الطباعة"
+"second_title": "واجهة برمجة تطبيقات GroupDocs.Viewer .NET"
+"title": "عرض مناطق الطباعة باستخدام GroupDocs.Viewer لـ .NET"
+"url": "/ar/net/spreadsheet-rendering-options/render-print-areas/"
+"weight": 17
 ---
 
 # عرض مناطق الطباعة باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة
-مرحبًا بك في هذا الدليل الشامل حول الاستفادة من GroupDocs.Viewer لـ .NET لعرض مناطق الطباعة في مستنداتك. إذا كنت أحد مطوري .NET وتبحث عن حل قوي لعرض المستندات، فأنت في المكان الصحيح. في هذا البرنامج التعليمي، سنرشدك خلال عملية عرض مناطق الطباعة باستخدام GroupDocs.Viewer، مما يضمن تجربة سلسة في تطبيقاتك.
+مرحبًا بكم في هذا الدليل الشامل حول استخدام GroupDocs.Viewer لـ .NET لعرض مساحات الطباعة في مستنداتكم. إذا كنتم مطوري .NET وتبحثون عن حل فعّال لعرض المستندات، فأنتم في المكان المناسب. في هذا البرنامج التعليمي، سنشرح لكم عملية عرض مساحات الطباعة باستخدام GroupDocs.Viewer، لضمان تجربة سلسة في تطبيقاتكم.
 ## المتطلبات الأساسية
-قبل الغوص في البرنامج التعليمي، تأكد من توفر المتطلبات الأساسية التالية:
+قبل الغوص في البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
 - معرفة عملية بتطوير C# و.NET.
--  تم تثبيت GroupDocs.Viewer لـ .NET. يمكنك تنزيله[هنا](https://releases.groupdocs.com/viewer/net/).
-- مستند نموذجي (على سبيل المثال، "SAMPLE.XLSX") في دليل المستند المحدد.
+- تم تثبيت GroupDocs.Viewer لـ .NET. يمكنك تنزيله [هنا](https://releases.groupdocs.com/viewer/net/).
+- مستند نموذجي (على سبيل المثال، "SAMPLE.XLSX") في دليل المستندات المحدد.
 ## استيراد مساحات الأسماء
-تأكد من استيراد مساحات الأسماء الضرورية في كود C# الخاص بك للتنفيذ الصحيح:
+تأكد من استيراد المساحات الأساسية اللازمة في كود C# الخاص بك للتنفيذ السليم:
 ```csharp
 using System;
 using System.IO;
@@ -29,42 +29,42 @@ using GroupDocs.Viewer.Options;
 string outputDirectory = "Your Document Directory";
 ```
 ## الخطوة 2: تحديد تنسيق مسار ملف الصفحة
-قم بإنشاء تنسيق لمسارات ملف الصفحة، مع دمج دليل الإخراج وعنصر نائب لرقم الصفحة:
+إنشاء تنسيق لمسارات ملفات الصفحات، من خلال الجمع بين دليل الإخراج وعنصر نائب لرقم الصفحة:
 ```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
 ## الخطوة 3: تهيئة GroupDocs.Viewer
-قم بإنشاء مثيل لفئة Viewer باستخدام المسار إلى نموذج المستند الخاص بك:
+قم بإنشاء فئة Viewer باستخدام المسار إلى مستند العينة الخاص بك:
 ```csharp
 using (Viewer viewer = new Viewer("SAMPLE.XLSX"))
 {
 ```
 ## الخطوة 4: تكوين خيارات عرض HTML
-تكوين خيارات عرض HTML، وتحديد تنسيق مسار ملف الصفحة وتمكين الخيارات لعرض مناطق الطباعة:
+قم بتكوين خيارات عرض HTML، وتحديد تنسيق مسار ملف الصفحة وتمكين الخيارات لعرض مناطق الطباعة:
 ```csharp
 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 options.SpreadsheetOptions = SpreadsheetOptions.ForRenderingPrintArea();
 ```
-## الخطوة 5: تقديم الوثيقة
- استدعاء`View` طريقة عرض المستند بالخيارات المحددة:
+## الخطوة 5: تقديم المستند
+استدعاء `View` الطريقة لعرض المستند بالخيارات المحددة:
 ```csharp
 viewer.View(options);
 ```
 ## الخطوة 6: عرض رسالة النجاح
-اطبع رسالة نجاح، تشير إلى أنه تم عرض المستند المصدر بنجاح:
+اطبع رسالة نجاح تشير إلى أن المستند المصدر تم عرضه بنجاح:
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
 ## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية استخدام GroupDocs.Viewer لـ .NET لعرض مناطق الطباعة في مستنداتك. تفتح هذه الأداة القوية إمكانيات جديدة لعرض المستندات في تطبيقات .NET الخاصة بك.
+تهانينا! لقد تعلمت بنجاح كيفية استخدام GroupDocs.Viewer لـ .NET لعرض مساحات الطباعة في مستنداتك. تتيح لك هذه الأداة الفعّالة إمكانيات جديدة لعرض المستندات في تطبيقات .NET.
 ## الأسئلة الشائعة
 ### هل GroupDocs.Viewer متوافق مع تنسيقات المستندات المختلفة؟
- نعم، يدعم GroupDocs.Viewer مجموعة واسعة من تنسيقات المستندات، بما في ذلك PDF وDOCX وXLSX والمزيد. الرجوع إلى[توثيق](https://tutorials.groupdocs.com/viewer/net/) للحصول على قائمة كاملة.
-### هل يمكنني تجربة GroupDocs.Viewer قبل إجراء عملية الشراء؟
- قطعاً! يمكنك استكشاف الأداة من خلال الإصدار التجريبي المجاني المتاح[هنا](https://releases.groupdocs.com/).
-### أين يمكنني العثور على الدعم أو طلب المساعدة في أي مشكلة؟
- قم بزيارة[منتدى GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9)للتواصل مع المجتمع والحصول على المساعدة.
-### هل هناك خيار ترخيص مؤقت متاح؟
- نعم يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.groupdocs.com/temporary-license/).
+نعم، يدعم GroupDocs.Viewer مجموعة واسعة من تنسيقات المستندات، بما في ذلك PDF وDOCX وXLSX وغيرها. راجع [التوثيق](https://tutorials.groupdocs.com/viewer/net/) للحصول على القائمة الكاملة.
+### هل يمكنني تجربة GroupDocs.Viewer قبل إجراء عملية شراء؟
+بالتأكيد! يمكنك استكشاف الأداة من خلال نسخة تجريبية مجانية متاحة. [هنا](https://releases.groupdocs.com/).
+### أين يمكنني العثور على الدعم أو طلب المساعدة لأية مشاكل؟
+قم بزيارة [منتدى GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9) للتواصل مع المجتمع والحصول على المساعدة.
+### هل يتوفر خيار الترخيص المؤقت؟
+نعم يمكنك الحصول على ترخيص مؤقت [هنا](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني شراء GroupDocs.Viewer لـ .NET؟
- يمكنك إجراء عملية الشراء الخاصة بك[هنا](https://purchase.groupdocs.com/buy).
+يمكنك إجراء عملية الشراء الخاصة بك [هنا](https://purchase.groupdocs.com/buy).
