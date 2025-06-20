@@ -17,7 +17,7 @@ keywords:
 ## Introduction
 Are you looking for an efficient way to convert HPG documents into HTML, JPG, PNG, or PDF using .NET? This comprehensive tutorial will guide you through rendering HPG files with **GroupDocs.Viewer for .NET**, enabling seamless transformation into multiple formats. By the end of this guide, you'll understand how to set up and use GroupDocs.Viewer effectively.
 
-![Render HPG Documents to HTML, JPG, PNG, PDF  with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-hpg-documents-to-html-jpg-png-pdf .png)
+![Render HPG Documents to HTML, JPG, PNG, PDF  with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-hpg-documents-to-html-jpg-png-pdf.png)
 
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer for .NET

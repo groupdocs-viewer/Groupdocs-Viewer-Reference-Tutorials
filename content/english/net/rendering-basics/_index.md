@@ -19,9 +19,6 @@ Learn how to render Adobe Illustrator AI files into HTML, JPG, PNG, and PDF form
 ### [Convert Documents to JPG with GroupDocs.Viewer for .NET&#58; A Comprehensive Guide](./render-documents-jpg-groupdocs-viewer-dotnet/)
 Learn how to render documents as JPG images using GroupDocs.Viewer for .NET. This guide covers setup, rendering steps, and practical applications.
 
-### [Convert PPTX to HTML with Notes Using GroupDocs.Viewer for .NET](./render-pptx-notes-html-groupdocs-viewer-net/)
-Learn how to convert PowerPoint presentations (PPTX) with notes into web-friendly HTML formats using GroupDocs.Viewer for .NET. Streamline your workflow with detailed steps and best practices.
-
 ### [Efficiently Render HPG Documents to HTML, JPG, PNG, PDF Using GroupDocs.Viewer .NET](./groupdocs-viewer-net-hpg-rendering-guide/)
 Learn how to efficiently render HPG documents into various formats using GroupDocs.Viewer for .NET. This guide covers setup, implementation, and performance optimization.
 
