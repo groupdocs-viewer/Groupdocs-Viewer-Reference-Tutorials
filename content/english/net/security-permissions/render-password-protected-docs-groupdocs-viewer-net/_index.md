@@ -18,6 +18,8 @@ keywords:
 
 Securing and rendering password-protected documents is a key challenge in software development, particularly when managing sensitive information or controlling document access. **GroupDocs.Viewer for .NET** offers a robust solution to simplify this process.
 
+![Render Password-Protected Documents with GroupDocs.Viewer .NET](/viewer/security-permissions/render-password-protected-documents.png)
+
 In this tutorial, you'll learn how to use GroupDocs.Viewer for .NET to render password-protected Word documents into HTML format effortlessly. By the end, you’ll understand:
 - How to configure and initialize GroupDocs.Viewer for .NET
 - Steps to render a password-protected document

@@ -18,6 +18,9 @@ keywords:
 
 Are you looking for a versatile tool to convert Microsoft Visio diagrams into formats like HTML, JPG, PNG, or PDF? This tutorial will guide you through using **GroupDocs.Viewer for .NET**, a powerful library designed to streamline document conversion. By the end of this article, you'll know how to efficiently transform Visio files into different formats, improving accessibility and usability.
 
+![Render Visio Documents as HTML, JPG, PNG, and PDF with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-visio-documents-as-html-jpg-png-pdf.png)
+
+
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer in a .NET environment
 - Step-by-step instructions for rendering diagrams as HTML, JPG, PNG, and PDF

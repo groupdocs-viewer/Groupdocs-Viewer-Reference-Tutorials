@@ -20,6 +20,8 @@ Struggling with rendering messages from the Inbox folder of an Outlook data file
 
 GroupDocs.Viewer simplifies extracting and displaying emails stored in your Outlook data files directly within your application. By following this guide, you'll learn how to set up your environment, implement code for rendering messages, and optimize performance for large datasets.
 
+![Render Outlook OST Files with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-outlook-ost-files.png)
+
 **Key Learnings:**
 - Setting up GroupDocs.Viewer for .NET
 - Rendering OST files using C#

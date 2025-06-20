@@ -18,6 +18,8 @@ keywords:
 
 Protecting sensitive information in your PDF documents is crucial, especially when converting them into an HTML format. Unauthorized text selection can lead to potential misuse or distribution of content. This tutorial will guide you through using GroupDocs.Viewer for .NET to disable text selection during the conversion process.
 
+![Disable Text Selection in PDFs with GroupDocs.Viewer .NET](/viewer/security-permissions/disable-text-selection-in-pdfs.png)
+
 By leveraging the `RenderTextAsImage` feature in GroupDocs.Viewer, we can convert text into images within HTML output, thereby enhancing document security and control over content distribution.
 
 **What You'll Learn:**

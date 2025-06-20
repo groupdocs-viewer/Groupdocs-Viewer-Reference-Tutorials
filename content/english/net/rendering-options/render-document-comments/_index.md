@@ -12,6 +12,9 @@ url: /net/rendering-options/render-document-comments/
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful library that enables developers to seamlessly integrate document rendering capabilities into their .NET applications. Whether you need to display Word documents, Excel spreadsheets, PowerPoint presentations, PDF files, or other formats, GroupDocs.Viewer provides a straightforward solution.
 In this tutorial, we'll focus on rendering documents with comments using GroupDocs.Viewer for .NET. We'll walk you through the prerequisites, importing namespaces, and provide a step-by-step guide to render documents with comments, ensuring that you grasp each concept thoroughly.
+
+![Render Document with Comments with GroupDocs.Viewer .NET](/viewer/rendering-options/render-document-with-comments.png)
+
 ## Prerequisites
 Before diving into rendering documents with comments using GroupDocs.Viewer for .NET, ensure that you have the following prerequisites in place:
 ### .NET Development Environment Setup

@@ -11,6 +11,9 @@ url: /net/rendering-ms-project-documents/get-view-info-ms-project/
 
 ## Introduction
 In the realm of document management and viewing solutions, Groupdocs.Viewer for .NET stands out as a versatile and robust tool. Whether you're a developer seeking to integrate document viewing capabilities into your .NET applications or an enthusiast eager to explore its functionalities, this tutorial will guide you through the process of leveraging Groupdocs.Viewer for .NET to retrieve view information for Microsoft Project documents.
+
+![Get View Information for Microsoft Project Documents with GroupDocs.Viewer .NET](/viewer/rendering-microsoft-project-documents/get-view-information-for-microsoft-project-documents.png)
+
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites in place:
 1. Basic Understanding of .NET Framework: Familiarity with the .NET framework will aid in comprehending the integration process.

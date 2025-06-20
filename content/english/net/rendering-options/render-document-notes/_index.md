@@ -11,6 +11,9 @@ url: /net/rendering-options/render-document-notes/
 
 ## Introduction
 In the realm of document manipulation and viewing, GroupDocs.Viewer for .NET stands as a robust solution, offering seamless integration and powerful functionalities. This tutorial aims to guide you through the process of rendering documents with notes using GroupDocs.Viewer for .NET. Whether you're a seasoned developer or just diving into the world of .NET, this step-by-step guide will help you navigate the intricacies of document rendering with ease.
+
+![Render Document with Notes with GroupDocs.Viewer .NET](/viewer/rendering-options/render-document-with-notes.png)
+
 ## Prerequisites
 Before delving into the tutorial, ensure that you have the following prerequisites in place:
 ### 1. Installation of GroupDocs.Viewer for .NET

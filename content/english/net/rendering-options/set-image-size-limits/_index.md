@@ -11,6 +11,9 @@ url: /net/rendering-options/set-image-size-limits/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool designed to facilitate seamless document viewing within .NET applications. With its robust features and intuitive interface, developers can effortlessly integrate document viewing capabilities into their projects, enhancing user experience and productivity. In this tutorial, we will explore how to set image size limits using GroupDocs.Viewer for .NET, ensuring optimal display of documents while maintaining performance and efficiency.
+
+![Set Image Size Limits with GroupDocs.Viewer .NET](/viewer/rendering-options/set-image-size-limits.png)
+
 ## Prerequisites
 Before diving into the tutorial, make sure you have the following prerequisites in place:
 1. GroupDocs.Viewer for .NET: Ensure you have the necessary GroupDocs.Viewer for .NET library installed in your development environment. You can download it from the [website](https://releases.groupdocs.com/viewer/net/).

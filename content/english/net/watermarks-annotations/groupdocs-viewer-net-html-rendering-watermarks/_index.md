@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to efficiently convert documents into HTML while preserving their integrity and adding features like watermarks? Whether for website previews or ensuring document security, rendering files can be challenging. This tutorial will guide you through using GroupDocs.Viewer for .NET to render documents into HTML format with embedded resources and seamlessly add watermarks.
 
+![Document Rendering with GroupDocs.Viewer .NET](/viewer/watermarks-annotations/document-rendering.png)
+
 **What You'll Learn:**
 - Setting up and using GroupDocs.Viewer for .NET
 - Rendering documents to HTML with embedded resources

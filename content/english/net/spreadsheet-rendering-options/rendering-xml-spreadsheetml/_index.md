@@ -11,6 +11,9 @@ url: /net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/
 
 ## Introduction
 Welcome to the world of GroupDocs.Viewer for .NET! In this tutorial, we will guide you through rendering XML SpreadSheetML files with ease using GroupDocs.Viewer, a powerful .NET library. Whether you are a seasoned developer or just starting, this step-by-step guide will help you effortlessly integrate XML SpreadSheetML rendering into your applications.
+
+![Rendering XML SpreadSheetML with GroupDocs.Viewer .NET](/viewer/spreadsheet-rendering-options/rendering-xml-spreadSheet-ml.png)
+
 ## Prerequisites
 Before diving into the tutorial, make sure you have the following prerequisites set up:
 - A development environment with .NET support.

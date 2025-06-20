@@ -11,6 +11,9 @@ url: /net/rendering-options/add-watermark/
 
 ## Introduction
 In today's digital age, managing and viewing various document formats seamlessly is a necessity for many businesses and individuals alike. Fortunately, with tools like GroupDocs.Viewer for .NET, handling documents becomes a breeze. This powerful .NET library enables developers to effortlessly integrate document viewing functionality into their applications, allowing users to view documents without needing the original software that created them.
+
+![Add Watermark in Document with GroupDocs.Viewer .NET](/viewer/rendering-options/add-watermark-in-document.png)
+
 ## Prerequisites
 Before diving into using GroupDocs.Viewer for .NET to add watermarks to documents, ensure you have the following:
 1. Environment Setup: Have a development environment set up with .NET Framework or .NET Core installed.

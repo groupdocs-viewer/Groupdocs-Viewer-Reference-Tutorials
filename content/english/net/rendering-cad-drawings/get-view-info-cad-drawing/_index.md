@@ -11,6 +11,9 @@ url: /net/rendering-cad-drawings/get-view-info-cad-drawing/
 
 ## Introduction
 In the world of software development, handling CAD drawings efficiently is crucial. Whether you're building applications for architects, engineers, or designers, providing a seamless viewing experience for CAD files can greatly enhance user satisfaction. GroupDocs.Viewer for .NET offers a powerful solution to effortlessly integrate CAD file viewing capabilities into your .NET applications. In this tutorial, we'll walk you through the process of getting view information for CAD drawings using GroupDocs.Viewer for .NET.
+
+![Get View Information for CAD Drawings with GroupDocs.Viewer .NET](/viewer/rendering-cad-drawings/get-view-information-for-cad-drawings.png)
+
 ## Prerequisites
 Before we dive into the tutorial, make sure you have the following prerequisites:
 ### 1. Install GroupDocs.Viewer for .NET

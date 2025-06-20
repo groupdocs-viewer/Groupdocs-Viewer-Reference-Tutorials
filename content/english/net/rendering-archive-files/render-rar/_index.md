@@ -11,6 +11,9 @@ url: /net/rendering-archive-files/render-rar/
 
 ## Introduction
 RAR archives are a popular format for compressing and storing multiple files and folders into a single container. Rendering RAR archives into various formats such as HTML, JPG, PNG, or PDF can be essential for viewing or sharing the contents of these archives. In this tutorial, we will explore how to render RAR archives using GroupDocs.Viewer for .NET.
+
+![Render RAR Archives with GroupDocs.Viewer .NET](/viewer/rendering-archive-files/render-rar-archives.png)
+
 ## Prerequisites
 Before we begin, ensure that you have the following prerequisites:
 1. GroupDocs.Viewer for .NET: Install GroupDocs.Viewer for .NET library from the [download link](https://releases.groupdocs.com/viewer/net/).

@@ -18,6 +18,8 @@ keywords:
 
 Working with Adobe Illustrator (.ai) files can be challenging when you need to convert them into more widely supported formats such as HTML, JPG, PNG, or PDF. **GroupDocs.Viewer for .NET** provides an efficient solution for rendering AI documents seamlessly.
 
+![Rendering AI Files with GroupDocs.Viewer .NET](/viewer/rendering-basics/rendering-ai-files.png)
+
 Whether you're a developer integrating document viewing capabilities into your application or a business looking to enhance its document management system, this guide will take you through converting AI files using GroupDocs.Viewer in C#. By the end of this tutorial, you'll be equipped to:
 - Render AI files as HTML with embedded resources.
 - Convert AI files to JPG and PNG images.

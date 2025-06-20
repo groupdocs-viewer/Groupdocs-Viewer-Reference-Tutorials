@@ -11,6 +11,9 @@ url: /net/rendering-options/replace-missing-font/
 
 ## Introduction
 In the world of .NET development, efficient document handling is crucial. GroupDocs.Viewer for .NET provides a powerful solution for viewing various document formats within your .NET applications. In this tutorial, we'll explore how to use GroupDocs.Viewer for .NET to replace missing fonts in documents. Whether you're dealing with PDFs, PowerPoint presentations, or Word documents, GroupDocs.Viewer simplifies the process, ensuring that your documents are rendered accurately, even when fonts are missing.
+
+![Replace Missing Font with GroupDocs.Viewer .NET](/viewer/rendering-options/replace-missing-font.png)
+
 ## Prerequisites
 Before diving into this tutorial, ensure you have the following:
 1. GroupDocs.Viewer for .NET: Download and install the GroupDocs.Viewer library from the website](https://releases.groupdocs.com/viewer/net/).

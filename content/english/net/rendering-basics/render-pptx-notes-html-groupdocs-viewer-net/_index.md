@@ -18,6 +18,8 @@ keywords:
 
 Need to convert PowerPoint presentations (PPTX) into web-friendly formats while preserving notes? This guide shows you how to use **GroupDocs.Viewer for .NET** to render PPTX files along with their embedded notes into HTML effortlessly.
 
+![Convert PPTX to HTML with Notes with GroupDocs.Viewer .NET](/viewer/rendering-basics/convert-pptx-to-html-with-notes.png)
+
 ### What You'll Learn
 - Setting up GroupDocs.Viewer for .NET
 - Step-by-step instructions to convert presentations with notes

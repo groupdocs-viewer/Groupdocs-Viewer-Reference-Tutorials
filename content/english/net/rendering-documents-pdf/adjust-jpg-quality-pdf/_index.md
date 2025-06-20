@@ -11,6 +11,9 @@ url: /net/rendering-documents-pdf/adjust-jpg-quality-pdf/
 
 ## Introduction
 In this tutorial, we'll learn how to adjust the quality of JPG images when rendering a PDF using GroupDocs.Viewer for .NET. This powerful library allows you to view and manipulate various document formats in your .NET applications seamlessly.
+
+![Adjust JPG Image Quality in Rendered PDF with GroupDocs.Viewer .NET](/viewer/rendering-documents-pdf/adjust-jpg-image-quality-in-rendered-pdf.png)
+
 ## Prerequisites
 Before diving into this tutorial, ensure you have the following prerequisites:
 1. GroupDocs.Viewer for .NET Library: Make sure you have downloaded and installed the GroupDocs.Viewer for .NET library. You can download it from [here](https://releases.groupdocs.com/viewer/net/).

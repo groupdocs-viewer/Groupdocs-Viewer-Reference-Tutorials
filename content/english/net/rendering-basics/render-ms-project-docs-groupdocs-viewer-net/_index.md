@@ -18,6 +18,8 @@ keywords:
 
 When managing large-scale projects, rendering Microsoft Project (MS Project) documents effectively is crucial. Visualizing project timelines and tasks in a web-friendly format allows stakeholders to easily access and understand project details. This tutorial will guide you through using **GroupDocs.Viewer for .NET** to render MS Project documents with an adjustable time unit, enhancing your project management capabilities.
 
+![Render MS Project Documents with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-ms-project-documents.png)
+
 ### What You’ll Learn:
 - How to set up GroupDocs.Viewer for .NET
 - Rendering MS Project documents as HTML with embedded resources

@@ -18,6 +18,8 @@ keywords:
 
 In today's fast-paced project management environment, efficiently sharing detailed project plans and notes across teams is crucial. Whether you're a developer building collaboration tools or a project manager seeking better communication channels, rendering Microsoft Project files into various formats while preserving all important notes can significantly enhance productivity. GroupDocs.Viewer for .NET simplifies this process by converting MS Project documents into HTML, JPG, PNG, and PDF formats with embedded notes.
 
+![Render MS Project Files with Notes with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-ms-project-files-with-notes.png)
+
 **What You'll Learn:**
 - How to convert MS Project files using GroupDocs.Viewer for .NET
 - Configuring your environment to use the latest version of GroupDocs.Viewer

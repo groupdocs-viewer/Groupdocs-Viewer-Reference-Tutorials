@@ -11,6 +11,10 @@ url: /net/spreadsheet-rendering-options/render-hidden-columns-rows/
 
 ## Introduction
 In the realm of document visualization, GroupDocs.Viewer for .NET stands tall as a robust tool that facilitates seamless rendering of various document formats. One intriguing capability is the ability to reveal hidden columns and rows within spreadsheets. In this tutorial, we'll delve into the steps to unlock this feature and unleash the potential of your data.
+
+
+![Render Hidden Columns and Rows with GroupDocs.Viewer .NET](/viewer/spreadsheet-rendering-options/render-hidden-columns-and-rows.png)
+
 ## Prerequisites
 Before embarking on this journey, ensure you have the following prerequisites in place:
 - GroupDocs.Viewer for .NET: Make sure you have the latest version installed. If not, you can download it from the [official website](https://releases.groupdocs.com/viewer/net/).

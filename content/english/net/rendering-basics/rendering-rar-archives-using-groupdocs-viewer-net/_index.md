@@ -16,6 +16,8 @@ keywords:
 
 In today's data-driven world, managing and sharing compressed files like RAR archives efficiently is crucial. Whether you're a developer integrating file conversion capabilities into your application or someone needing to extract content from RAR files for various purposes, GroupDocs.Viewer for .NET offers robust solutions. In this tutorial, we'll explore how to render RAR archives into HTML, JPG, PNG, and PDF formats using GroupDocs.Viewer for .NET.
 
+![Render RAR Archives to HTML, JPG, PNG, and PDF Formats with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-rar-archives-to-html-jpg-png-pdf-formats.png)
+
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer for .NET.
 - Techniques to render RAR files to different formats (HTML, JPG, PNG, PDF).

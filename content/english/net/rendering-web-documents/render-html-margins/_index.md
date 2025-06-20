@@ -11,6 +11,9 @@ url: /net/rendering-web-documents/render-html-margins/
 
 ## Introduction
 In the realm of .NET development, rendering HTML with user-defined margins is a crucial aspect of creating visually appealing documents. Whether it's adjusting margins for a website or configuring print layouts, precise control over margins enhances the overall presentation of content. In this tutorial, we'll delve into utilizing GroupDocs.Viewer for .NET to achieve this functionality seamlessly.
+
+![Render HTML with User-Defined Margins with GroupDocs.Viewer .NET](/viewer/rendering-web-documents/render-html-with-user-defined-margins.png)
+
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites:
 1. GroupDocs.Viewer for .NET: Install GroupDocs.Viewer for .NET library. You can download it from the [website](https://releases.groupdocs.com/viewer/net/).

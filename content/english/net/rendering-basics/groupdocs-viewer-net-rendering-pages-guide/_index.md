@@ -18,6 +18,8 @@ keywords:
 
 In the digital age, rendering specific sections of large documents can significantly streamline workflows and boost productivity. This tutorial will show you how to use GroupDocs.Viewer for .NET to selectively render pages from your documents—a crucial skill for businesses that need quick access to particular information without processing entire files.
 
+![Rendering Specific Pages with GroupDocs.Viewer .NET](/viewer/rendering-basics/rendering-specific-pages.png)
+
 **What You'll Learn:**
 - Configuring GroupDocs.Viewer for .NET to render a specified range of document pages.
 - Best practices for setting up and integrating the library into your projects.

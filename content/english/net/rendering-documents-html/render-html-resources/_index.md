@@ -13,6 +13,8 @@ url: /net/rendering-documents-html/render-html-resources/
 
 In the world of .NET development, efficient document viewing is a crucial aspect of many applications. GroupDocs.Viewer for .NET provides a powerful solution for rendering documents with embedded or external resources. In this tutorial, we'll explore how to utilize GroupDocs.Viewer to render documents seamlessly, breaking down each step for clarity and understanding.
 
+![Render with Embedded or External Resources with GroupDocs.Viewer .NET](/viewer/rendering-documents-html/render-with-embedded-or-external-resources.png)
+
 ## Prerequisites
 
 Before diving into the tutorial, ensure you have the following prerequisites:

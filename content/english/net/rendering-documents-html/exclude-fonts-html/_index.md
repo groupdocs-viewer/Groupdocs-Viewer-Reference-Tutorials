@@ -11,6 +11,9 @@ url: /net/rendering-documents-html/exclude-fonts-html/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful document rendering library that allows developers to display over 50 document formats in their .NET applications without the need for external dependencies. In this tutorial, we'll focus on a specific feature of GroupDocs.Viewer: excluding fonts from rendered HTML output. 
+
+![Exclude Fonts from Rendered HTML with GroupDocs.Viewer .NET](/viewer/rendering-documents-html/exclude-fonts-from-rendered-html.png)
+
 ## Prerequisites
 Before you begin, ensure you have the following:
 1. Basic understanding of C# and .NET development.

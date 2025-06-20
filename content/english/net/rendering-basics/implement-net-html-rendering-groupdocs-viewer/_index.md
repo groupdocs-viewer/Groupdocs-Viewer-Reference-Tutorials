@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to seamlessly convert documents into HTML format in your .NET applications? You're in the right place! This tutorial guides you through using GroupDocs.Viewer for .NET to render documents as HTML. Enhance user experience and accessibility whether you are developing a web application or an internal tool.
 
+![HTML Rendering with GroupDocs.Viewer .NET](/viewer/rendering-basics/html-rendering.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET
 - Rendering a document into HTML with embedded resources

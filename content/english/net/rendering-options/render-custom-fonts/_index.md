@@ -11,6 +11,9 @@ url: /net/rendering-options/render-custom-fonts/
 
 ## Introduction
 In the realm of .NET development, GroupDocs.Viewer offers a powerful solution for rendering documents of various formats. Among its many capabilities, GroupDocs.Viewer enables the rendering of documents with custom fonts, adding a layer of personalization and flexibility to your applications.
+
+![Render with Custom Fonts with GroupDocs.Viewer .NET](/viewer/rendering-options/render-with-custom-fonts.png)
+
 ## Prerequisites
 Before diving into rendering documents with custom fonts using GroupDocs.Viewer for .NET, ensure you have the following prerequisites in place:
 ### 1. Install GroupDocs.Viewer for .NET

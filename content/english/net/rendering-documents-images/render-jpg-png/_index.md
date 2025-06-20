@@ -13,6 +13,8 @@ url: /net/rendering-documents-images/render-jpg-png/
 
 In the world of .NET development, handling documents efficiently is essential for various applications. Whether you're building a document management system, an e-commerce platform, or a content-rich application, the ability to view documents seamlessly is crucial. This is where GroupDocs.Viewer for .NET comes into play, offering a comprehensive solution for rendering documents to various formats such as JPG and PNG.
 
+![Render Document to JPG PNG with GroupDocs.Viewer .NET](/viewer/rendering-documents-images/render-document-to-jpg-png.png)
+
 ## Prerequisites
 
 Before diving into using GroupDocs.Viewer for .NET, there are a few prerequisites you need to ensure:

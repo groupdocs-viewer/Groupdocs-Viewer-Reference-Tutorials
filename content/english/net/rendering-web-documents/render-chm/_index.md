@@ -12,6 +12,8 @@ url: /net/rendering-web-documents/render-chm/
 ## Introduction
 In this tutorial, we'll explore how to render CHM (Compiled HTML Help) files using GroupDocs.Viewer for .NET. GroupDocs.Viewer for .NET is a powerful document rendering API that allows developers to display over 170 document types within their .NET applications without requiring any external software installations.
 
+![Render CHM Files with GroupDocs.Viewer .NET](/viewer/rendering-web-documents/render-chm-files.png)
+
 ## Prerequisites
 
 Before we dive into rendering CHM files, ensure you have the following prerequisites:

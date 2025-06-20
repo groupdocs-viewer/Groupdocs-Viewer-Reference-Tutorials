@@ -17,6 +17,8 @@ keywords:
 ### Introduction
 Converting Word documents (DOCX) into PNG images is essential for preserving formatting and ensuring compatibility across platforms. This tutorial demonstrates how to use **GroupDocs.Viewer .NET** to render each page of a DOCX file as separate PNG images.
 
+![Render DOCX to PNG with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-docx-to-png.png)
+
 #### What You'll Learn:
 - Setting up GroupDocs.Viewer for .NET
 - Converting DOCX documents into PNG images

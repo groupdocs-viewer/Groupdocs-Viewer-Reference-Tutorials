@@ -11,6 +11,9 @@ url: /net/rendering-options/render-hidden-pages/
 
 ## Introduction
 In the world of .NET development, managing and displaying documents efficiently is crucial. Whether it's for internal use, client presentations, or web applications, having the ability to view various document formats seamlessly is a necessity. This is where GroupDocs.Viewer for .NET comes into play. With its powerful features and intuitive interface, GroupDocs.Viewer simplifies the process of rendering documents in your .NET applications.
+
+![Render Hidden Pages with GroupDocs.Viewer .NET](/viewer/rendering-options/render-hidden-pages.png)
+
 ## Prerequisites
 Before diving into using GroupDocs.Viewer for .NET, ensure you have the following:
 ### 1. Knowledge of .NET Development

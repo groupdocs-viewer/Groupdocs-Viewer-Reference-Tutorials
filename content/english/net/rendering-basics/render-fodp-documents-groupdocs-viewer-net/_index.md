@@ -18,6 +18,8 @@ keywords:
 
 In today's digital world, efficiently converting documents into various formats is essential. Whether you're sharing a report, preparing presentation materials, or archiving important files, seamless conversion can save time and enhance productivity. This comprehensive guide demonstrates how to render FODP (Form Design Project) documents into popular formats such as HTML, JPG, PNG, and PDF using GroupDocs.Viewer for .NET.
 
+![Render FODP Documents with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-fodp-documents.png)
+
 **What You'll Learn:**
 - Setting up your environment with GroupDocs.Viewer for .NET
 - Rendering FODP files to HTML, JPG, PNG, and PDF step-by-step

@@ -11,6 +11,10 @@ url: /net/rendering-cad-drawings/render-all-layouts-cad/
 
 ## Introduction
 In the realm of document management and visualization, GroupDocs.Viewer for .NET stands tall as a versatile solution, empowering developers to effortlessly render various document types within their .NET applications. Among its myriad capabilities lies the ability to efficiently render CAD drawings, including the intricate layouts they entail. In this tutorial, we will delve into the process of leveraging GroupDocs.Viewer for .NET to render all layouts present in CAD drawings. 
+
+![Render All Layouts in CAD Drawings with GroupDocs.Viewer .NET](/viewer/rendering-cad-drawings/render-all-layouts-in-cad-drawings.png)
+
+
 ## Prerequisites
 Before embarking on this tutorial, ensure you have the following prerequisites:
 1. Basic Understanding of .NET Development: Familiarity with .NET development fundamentals will be beneficial in comprehending the implementation steps outlined in this tutorial.

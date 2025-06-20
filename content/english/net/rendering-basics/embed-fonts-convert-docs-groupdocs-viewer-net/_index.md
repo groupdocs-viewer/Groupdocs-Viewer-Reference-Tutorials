@@ -18,6 +18,8 @@ keywords:
 
 In the digital era, seamless document rendering is essential for businesses that need dynamic content presentation across various platforms. Whether you're a developer working on cross-platform applications or managing internal document workflows, ensuring consistent font rendering and efficient document conversion can be challenging. This tutorial addresses these challenges by using GroupDocs.Viewer .NET to detect fonts paths based on operating systems, configure font sources, and render documents into HTML with embedded resources.
 
+![Embed Fonts and Convert Documents to HTML with GroupDocs.Viewer .NET](/viewer/rendering-basics/embed-fonts-and-convert-documents-to-html.png)
+
 In this guide, you'll learn how to:
 - Detect and set appropriate font paths for different OS platforms
 - Configure font sources using GroupDocs.Viewer .NET

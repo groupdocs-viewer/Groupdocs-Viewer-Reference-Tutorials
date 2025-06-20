@@ -11,6 +11,9 @@ url: /net/rendering-word-processing-documents/render-tracked-changes/
 
 ## Introduction
 In today's digital era, managing and viewing documents efficiently is crucial for businesses and individuals alike. With the advent of advanced technologies, solutions like GroupDocs.Viewer for .NET have revolutionized how we interact with various document formats, including Word documents, PDFs, and more. In this comprehensive guide, we'll delve into how to leverage GroupDocs.Viewer for .NET to render tracked changes in your documents seamlessly.
+
+![Render Tracked Changes with GroupDocs.Viewer .NET](/viewer/rendering-word-processing-documents/render-tracked-changes.png)
+
 ## Prerequisites
 Before diving into the tutorial, ensure you have the following prerequisites:
 1. GroupDocs.Viewer for .NET Installation: Download and install GroupDocs.Viewer for .NET from the [website](https://releases.groupdocs.com/viewer/net/).

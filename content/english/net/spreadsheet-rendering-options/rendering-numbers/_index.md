@@ -11,6 +11,9 @@ url: /net/spreadsheet-rendering-options/rendering-numbers/
 
 ## Introduction
 Welcome to this step-by-step tutorial on rendering Numbers files using Groupdocs.Viewer for .NET. Whether you're a seasoned developer or a beginner, this guide will walk you through the process of converting Numbers documents into various formats. Groupdocs.Viewer for .NET is a powerful tool that allows you to seamlessly integrate document viewing capabilities into your .NET applications.
+
+![Rendering Numbers with GroupDocs.Viewer .NET](/viewer/spreadsheet-rendering-options/rendering-numbers.png)
+
 ## Prerequisites
 Before diving into the tutorial, make sure you have the following prerequisites in place:
 - A working knowledge of C# and .NET development.

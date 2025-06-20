@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to seamlessly convert Word documents (DOCX) into web-friendly HTML formats using C#? Whether it's for content management systems, online document viewing applications, or integrating documents with web interfaces, rendering DOCX files as HTML is a common challenge. This tutorial will guide you through the process of utilizing GroupDocs.Viewer for .NET to achieve this functionality efficiently.
 
+![Convert DOCX to HTML with GroupDocs.Viewer .NET](/viewer/rendering-basics/convert-docx-to-html.png)
+
 In this comprehensive guide, we'll explore how to:
 - Set up and install GroupDocs.Viewer for .NET
 - Render DOCX documents into HTML using C#

@@ -11,6 +11,9 @@ url: /net/rendering-documents-images/get-text-coordinates-image/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful document rendering API that allows developers to seamlessly render documents in various formats such as PDF, Microsoft Office, and many more. One of its key functionalities is the ability to extract text coordinates for precise image rendering.
+
+![Get Text Coordinates for Image Rendering with GroupDocs.Viewer .NET](/viewer/rendering-documents-images/get-text-coordinates-for-image-rendering.png)
+
 ## Prerequisites
 Before we begin, ensure you have the following prerequisites:
 1. GroupDocs.Viewer for .NET: Download and install the latest version from [here](https://releases.groupdocs.com/viewer/net/).

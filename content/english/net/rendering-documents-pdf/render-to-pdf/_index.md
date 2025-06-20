@@ -11,6 +11,9 @@ url: /net/rendering-documents-pdf/render-to-pdf/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool for rendering various document formats into PDF. In this tutorial, we'll guide you through the process step by step.
+
+![Render Document to PDF with GroupDocs.Viewer .NET](/viewer/rendering-documents-pdf/render-document-to-pdf.png)
+
 ## Prerequisites
 
 Before we begin, ensure you have the following:

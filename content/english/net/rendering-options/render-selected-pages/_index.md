@@ -13,6 +13,8 @@ url: /net/rendering-options/render-selected-pages/
 
 In this tutorial, we'll delve into how to utilize Groupdocs.Viewer for .NET to render selected pages from a document. Whether you're a seasoned developer or just starting out, this step-by-step guide will walk you through the process with ease.
 
+![Render Selected Pages with GroupDocs.Viewer .NET](/viewer/rendering-options/render-selected-pages.png)
+
 ## Prerequisites
 
 Before we begin, make sure you have the following prerequisites in place:

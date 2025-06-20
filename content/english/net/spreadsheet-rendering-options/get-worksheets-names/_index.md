@@ -11,6 +11,9 @@ url: /net/spreadsheet-rendering-options/get-worksheets-names/
 
 ## Introduction
 Welcome to the fascinating world of GroupDocs.Viewer for .NET! If you're a developer or enthusiast keen on exploring powerful document viewing capabilities within your .NET applications, you're in for a treat. In this comprehensive guide, we'll delve into the intricacies of retrieving worksheet names using GroupDocs.Viewer. So, fasten your seatbelt and let's embark on this exciting journey!
+
+![Get Worksheets Names with GroupDocs.Viewer .NET](/viewer/spreadsheet-rendering-options/get-worksheets-names.png)
+
 ## Prerequisites
 Before we dive into the coding magic, let's ensure you have everything set up:
 1. Install GroupDocs.Viewer for .NET: Head over to the [download link](https://releases.groupdocs.com/viewer/net/) to grab the latest version of GroupDocs.Viewer for .NET. Follow the installation instructions to integrate it seamlessly into your development environment.

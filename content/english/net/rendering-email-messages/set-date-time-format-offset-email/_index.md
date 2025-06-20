@@ -12,6 +12,9 @@ url: /net/rendering-email-messages/set-date-time-format-offset-email/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool that enables developers to seamlessly integrate document viewing capabilities into their .NET applications. With GroupDocs.Viewer, you can display a wide range of document formats including PDFs, Microsoft Office documents, images, and more directly within your application, without the need for any external plugins or viewers. In this comprehensive tutorial, we'll guide you through the process of setting up GroupDocs.Viewer for .NET, exploring its features, and demonstrating how to utilize it effectively to enhance your application's document viewing capabilities.
+
+![Set DateTime Format and Time Zone Offset (Email) with GroupDocs.Viewer .NET](/viewer/rendering-email-messages/set-date-time-format-and-time-zone-offset.png)
+
 ## Prerequisites
 Before diving into this tutorial, ensure that you have the following prerequisites set up:
 1. Visual Studio: Make sure you have Visual Studio installed on your system. GroupDocs.Viewer for .NET is fully compatible with Visual Studio, enabling seamless integration into your .NET projects.

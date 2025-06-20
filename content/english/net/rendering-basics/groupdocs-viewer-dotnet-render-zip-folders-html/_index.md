@@ -18,6 +18,9 @@ keywords:
 
 In this tutorial, you'll learn how to use **GroupDocs.Viewer .NET** to extract specific folders from a ZIP archive and render them as HTML files. This is an efficient way to focus on rendering selected content within an archive.
 
+
+![Render Specific Folders from ZIP Archives to HTML with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-specific-folders-from-zip-archives-to-html.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer in a .NET environment
 - Rendering specific folders from ZIP archives as HTML files

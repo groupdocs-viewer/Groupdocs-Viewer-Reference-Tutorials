@@ -18,6 +18,8 @@ keywords:
 
 Struggling with file downloads or document rendering in web-friendly formats? This tutorial will guide you through using GroupDocs.Viewer for .NET to effortlessly handle these tasks, enhancing workflows and user experience.
 
+![Render HTML Documents with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-html-documents.png)
+
 **What You'll Learn:**
 - How to download files from a URL using C#.
 - Rendering documents into HTML format with GroupDocs.Viewer for .NET.

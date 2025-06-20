@@ -18,6 +18,8 @@ keywords:
 
 Converting documents into JPG images can significantly enhance accessibility and compatibility across platforms, making document distribution easier. This tutorial guides you through using GroupDocs.Viewer for .NET to render documents as JPG—a critical skill for developers.
 
+![Convert Documents to JPG with GroupDocs.Viewer .NET](/viewer/rendering-basics/convert-documents-to-jpg.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for .NET
 - Step-by-step instructions on rendering documents to JPG

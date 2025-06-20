@@ -11,6 +11,9 @@ url: /net/rendering-archive-files/render-archives-html/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful document rendering library that allows developers to effortlessly integrate document viewing capabilities into their .NET applications. Whether you need to render archives to single or multiple HTML pages, this tutorial will guide you through the process step by step.
+
+![Render Archives to Single or Multiple HTML Pages with GroupDocs.Viewer .NET](/viewer/rendering-archive-files/render-archives-to-single-or-multiple-html-pages.png)
+
 ## Prerequisites
 Before diving into this tutorial, ensure you have the following prerequisites:
 1. GroupDocs.Viewer for .NET: Make sure you have the library installed in your project. You can download it from [here](https://releases.groupdocs.com/viewer/net/).

@@ -18,6 +18,8 @@ keywords:
 
 Are you struggling with rendering Truevision TGA (TARGA) files into different formats using a .NET environment? Converting image formats, especially when targeting outputs like HTML, JPG, PNG, and PDF, can be challenging for many developers. In this guide, we will show you how to use GroupDocs.Viewer for .NET to effortlessly render TGA images across these formats. By the end of this tutorial, you’ll have mastered:
 
+![Render TGA Files with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-tga-files.png)
+
 - Rendering TGA files as embedded HTML
 - Converting TGA files into high-quality JPG images
 - Generating PNG outputs from TGA files

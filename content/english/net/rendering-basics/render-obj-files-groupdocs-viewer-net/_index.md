@@ -17,6 +17,8 @@ keywords:
 ## Introduction to Rendering Basics
 Rendering 3D objects in various formats is crucial across fields such as architecture, gaming, and design. Converting OBJ files to formats like HTML, JPG, PNG, and PDF can be challenging without the right tools. This tutorial demonstrates how **GroupDocs.Viewer .NET** simplifies this process.
 
+![Render OBJ Files with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-obj-files.png)
+
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer for .NET
 - Step-by-step guide on rendering OBJ files to various formats

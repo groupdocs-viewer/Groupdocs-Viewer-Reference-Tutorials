@@ -11,6 +11,9 @@ url: /net/rendering-cad-drawings/render-layers-cad/
 
 ## Introduction
 GroupDocs.Viewer for .NET is a powerful tool that enables developers to seamlessly integrate document rendering capabilities into their .NET applications. Whether you need to render CAD drawings, PDFs, Microsoft Office documents, or more, GroupDocs.Viewer provides a comprehensive solution.
+
+![Render Layers in CAD Drawings with GroupDocs.Viewer .NET](/viewer/rendering-cad-drawings/render-layers-in-cad-drawings.png)
+
 ## Prerequisites
 Before diving into using GroupDocs.Viewer for .NET, ensure you have the following prerequisites:
 - Basic understanding of C# programming language.

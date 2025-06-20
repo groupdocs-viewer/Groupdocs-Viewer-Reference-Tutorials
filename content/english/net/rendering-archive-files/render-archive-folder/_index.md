@@ -11,6 +11,9 @@ url: /net/rendering-archive-files/render-archive-folder/
 
 ## Introduction
 In today's digital age, accessing and viewing documents seamlessly is crucial for businesses and individuals alike. Fortunately, with the advancement of technology, developers now have powerful tools at their disposal to integrate document viewing capabilities into their applications effortlessly. One such tool is GroupDocs.Viewer for .NET, a versatile library that empowers developers to render various document formats within their .NET applications.
+
+![Render Archive Folder with GroupDocs.Viewer .NET](/viewer/rendering-archive-files/render-archive-folder.png)
+
 ## Prerequisites
 Before diving into the integration of GroupDocs.Viewer for .NET into your project, ensure you have the following prerequisites in place:
 ### Knowledge of C# Programming

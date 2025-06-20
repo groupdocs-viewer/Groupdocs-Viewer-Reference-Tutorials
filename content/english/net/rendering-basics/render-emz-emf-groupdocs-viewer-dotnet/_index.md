@@ -16,6 +16,8 @@ keywords:
 ## Rendering Basics
 This tutorial demonstrates how to render Enhanced Metafile (EMF) or Embedded Metafile (EMZ) files using GroupDocs.Viewer for .NET. Whether you're integrating versatile file conversion capabilities into your application or managing documents, this guide covers rendering these formats into HTML, JPG, PNG, and PDF.
 
+![Render EMZ/EMF Files with GroupDocs.Viewer .NET](/viewer/rendering-basics/renderemz-emf-files.png)
+
 ### Prerequisites
 - **Libraries**: Ensure you have GroupDocs.Viewer for .NET (version 25.3.0).
 - **Environment**: Use a .NET development environment like Visual Studio.

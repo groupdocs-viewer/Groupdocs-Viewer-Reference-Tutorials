@@ -11,6 +11,9 @@ url: /net/rendering-cad-drawings/adjust-output-image-size-cad/
 
 ## Introduction
 CAD drawings often require specific adjustments for optimal viewing and presentation. GroupDocs.Viewer for .NET provides a powerful toolset to manage and customize CAD drawings output. In this tutorial, we will guide you through the process of adjusting output image size for CAD drawings step by step.
+
+![Adjust Output Image Size for CAD Drawings with GroupDocs.Viewer .NET](/viewer/rendering-cad-drawings/adjust-output-image-size-for-cad-drawings.png)
+
 ## Prerequisites
 Before you begin, ensure you have the following prerequisites:
 1. GroupDocs.Viewer for .NET: Download and install GroupDocs.Viewer for .NET from [here](https://releases.groupdocs.com/viewer/net/).

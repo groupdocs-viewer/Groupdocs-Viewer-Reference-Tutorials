@@ -18,6 +18,8 @@ keywords:
 
 Are you struggling with converting IGS files into formats like HTML, JPG, PNG, or PDF within your .NET applications? This guide will help you use GroupDocs.Viewer for .NET to render IGS files efficiently. We'll cover everything from installation to practical applications.
 
+![Render IGS Files with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-igs-files.png)
+
 In this article, we'll explore:
 - **What Is an IGS File?**
 - **Why Use GroupDocs.Viewer for .NET?**

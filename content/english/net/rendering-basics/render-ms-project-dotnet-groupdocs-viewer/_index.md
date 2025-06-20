@@ -16,6 +16,8 @@ keywords:
 ## Introduction
 In today's fast-paced business environments, efficiently managing project timelines and resources is crucial. Stakeholders often need to view specific portions of a project without the clutter of an entire MS Project file. This tutorial dives into how you can render sections of your MS Project documents within specified time intervals using GroupDocs.Viewer for .NET—your key solution to this common problem.
 
+![Render MS Project Documents with GroupDocs.Viewer .NET](/viewer/rendering-basics/render-ms-project-documents1.png)
+
 **What You'll Learn:**
 - How to set up and configure GroupDocs.Viewer for .NET.
 - Rendering specific portions of an MS Project document based on date ranges.
