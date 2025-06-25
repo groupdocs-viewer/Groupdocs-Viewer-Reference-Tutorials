@@ -17,6 +17,8 @@ keywords:
 ## Introduction
 Struggling to convert documents into professional-quality PDFs using Java? **GroupDocs.Viewer for Java** is a powerful library designed to render various document types like DOCX, XLSX, PPTX, and more into PDFs efficiently. This guide will help you enhance your application's document handling capabilities or provide a robust solution for enterprise-level document management.
 
+![Convert Documents to PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-documents-to-pdf-java.png)
+
 ### What You'll Learn:
 - Set up GroupDocs.Viewer for Java using Maven.
 - Render documents to PDF with simple code snippets.

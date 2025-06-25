@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to extract and manage document attachments programmatically in your Java applications? With the rise of digital document management, it's crucial to have tools that streamline these processes efficiently. Enter GroupDocs.Viewer for Java—your go-to solution for seamlessly retrieving and saving document attachments with ease.
 
+![Retrieve and Save Document Attachments with GroupDocs.Viewer for Java](/viewer/custom-rendering/retrieve-and-save-document-attachments-java.png)
+
 In this tutorial, we'll explore how you can harness the power of GroupDocs.Viewer to retrieve attachments from documents and save them to your desired directory. By following along, you'll gain practical skills in managing document data effectively within a Java environment.
 
 **What You’ll Learn:**

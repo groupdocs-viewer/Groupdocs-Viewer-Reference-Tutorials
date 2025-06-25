@@ -18,6 +18,8 @@ keywords:
 
 In the fast-paced digital world, efficient management of external resources is key to maintaining seamless user experiences. When dealing with documents containing embedded images or media, timely loading becomes essential. This tutorial guides you through setting a resource loading timeout using GroupDocs.Viewer for Java, preventing indefinite waits and enhancing application responsiveness.
 
+![Set Resource Loading Timeout with GroupDocs.Viewer for Java](/viewer/caching-resource-management/set-resource-loading-timeout-java.png)
+
 **What You'll Learn:**
 - Set up the GroupDocs.Viewer library in your Java project.
 - Implement resource loading timeouts with GroupDocs.Viewer.

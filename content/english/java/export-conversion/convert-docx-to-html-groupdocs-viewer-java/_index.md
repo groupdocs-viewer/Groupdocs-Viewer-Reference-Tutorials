@@ -18,6 +18,8 @@ keywords:
 
 Converting Word documents into web-friendly formats can be tedious and time-consuming. In this step-by-step guide, we'll show you how GroupDocs.Viewer for Java simplifies the conversion of DOCX files to HTML with embedded resources. This powerful library not only streamlines document processing but also enhances your application's ability to display content seamlessly on the web.
 
+![Convert DOCX to HTML with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-docx-to-html.png)
+
 ### What You'll Learn
 - How to set up GroupDocs.Viewer for Java
 - Converting Word documents to HTML using embedded resources

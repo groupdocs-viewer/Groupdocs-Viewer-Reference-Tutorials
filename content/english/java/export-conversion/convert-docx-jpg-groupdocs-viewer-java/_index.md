@@ -17,6 +17,8 @@ keywords:
 ## Introduction
 In today's digital landscape, converting documents into images is essential for web sharing or application embedding. This tutorial demonstrates how to convert a Word document (DOCX) into high-quality JPEG images using **GroupDocs.Viewer** in Java, allowing control over image quality and file size.
 
+![Convert DOCX to JPG with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-docx-to-jpg.png)
+
 By following this guide, you'll learn:
 - Setting up GroupDocs.Viewer for Java
 - Rendering DOCX files to JPG with adjustable quality settings

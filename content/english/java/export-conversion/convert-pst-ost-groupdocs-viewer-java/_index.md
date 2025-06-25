@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to convert your Outlook PST or OST files into more accessible formats like HTML, JPG, PNG, or PDF? With the powerful GroupDocs.Viewer for Java library, this task is straightforward and efficient. This tutorial guides you through rendering PST/OST documents using GroupDocs.Viewer for Java, enabling easy sharing and viewing across different platforms.
 
+![Convert PST/OST to HTML, JPG, PNG, PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-pst-ost-to-html-jpg-png-pdf.png)
+
 **What You'll Learn:**
 - How to set up your environment with GroupDocs.Viewer for Java.
 - Step-by-step instructions for converting PST/OST files into HTML, JPG, PNG, and PDF formats.

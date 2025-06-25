@@ -18,6 +18,8 @@ keywords:
 
 Rendering documents directly from an FTP server can significantly streamline workflow processes, particularly in cloud and remote document rendering applications. This tutorial walks you through the steps to load and render documents into HTML using **GroupDocs.Viewer** in Java, leveraging this robust library for efficient document viewing tasks.
 
+![Render Documents from FTP with GroupDocs.Viewer for Java](/viewer/cloud-remote-document-rendering/render-documents-from-ftp.png)
+
 ### What You'll Learn
 
 - Connect to an FTP server and retrieve files efficiently.

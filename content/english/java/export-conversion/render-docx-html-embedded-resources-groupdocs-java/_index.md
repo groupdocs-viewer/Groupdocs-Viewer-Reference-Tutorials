@@ -18,6 +18,8 @@ keywords:
 
 Sharing documents online often leads to issues like missing images or broken links due to external resources not being embedded. This tutorial demonstrates how to render a DOCX document into an HTML format using **GroupDocs.Viewer for Java**, ensuring all resources such as images and styles are seamlessly integrated into each page.
 
+![Convert DOCX to HTML with Embedded Resources with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-docx-to-html-with-embedded-resources-java.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for Java in your project
 - A step-by-step guide to rendering DOCX files with embedded resources

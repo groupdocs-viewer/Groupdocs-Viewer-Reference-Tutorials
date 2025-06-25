@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to convert 3D model files effortlessly within your Java applications? Transforming OBJ files into accessible formats like HTML, JPG, PNG, or PDF can be challenging. This comprehensive guide simplifies this process using GroupDocs.Viewer for Java, a powerful library designed for complex file conversions.
 
+![OBJ to HTML/JPG/PNG/PDF Conversion in Java with GroupDocs.Viewer for Java](/viewer/export-conversion/obj-to-html-jpg-png-pdf-conversion-in-java.png)
+
 In this tutorial, you'll learn how to:
 - Set up your environment with GroupDocs.Viewer
 - Convert OBJ files into HTML, JPG, PNG, and PDF formats

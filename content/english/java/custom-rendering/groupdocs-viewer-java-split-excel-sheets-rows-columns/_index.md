@@ -18,6 +18,8 @@ keywords:
 
 Handling large Excel files can be challenging, especially when presenting specific data segments without overwhelming your audience. With GroupDocs.Viewer for Java, you can split worksheets into manageable chunks based on rows and columns, enhancing readability and streamlining data management.
 
+![Split Excel Sheets by Rows and Columns with GroupDocs.Viewer for Java](/viewer/custom-rendering/split-excel-sheets-by-rows-and-columns.png)
+
 In this comprehensive guide, we'll explore how to use GroupDocs.Viewer to effectively divide Excel sheets by rows and columns. You'll learn:
 - How to set up GroupDocs.Viewer for Java
 - Step-by-step implementation of splitting worksheets

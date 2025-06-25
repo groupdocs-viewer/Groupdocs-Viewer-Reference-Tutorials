@@ -18,6 +18,8 @@ keywords:
 
 Struggling with converting OpenDocument Format (ODF) files into versatile formats like HTML, JPG, PNG, or PDF? This tutorial guides you through rendering FODG/ODG documents using GroupDocs.Viewer for Java. By the end, you'll know how to convert ODF documents into multiple formats using Java.
 
+![Convert ODF to HTML, JPG, PNG, PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-odf-to-html-jpg-png-pdf.png)
+
 ## Prerequisites
 
 Before starting, ensure you have:

@@ -18,6 +18,8 @@ keywords:
 
 In today's digital landscape, efficiently converting document formats is essential for businesses and individuals alike. Converting Complex Multi-Extension (CMX) documents to universally accessible formats like HTML, JPG, PNG, or PDF can be challenging. Enter **GroupDocs.Viewer for Java**, a powerful tool that streamlines this process with ease. This tutorial will guide you through rendering CMX files into various formats using GroupDocs.Viewer Java.
 
+![CMX Document Conversion in Java with GroupDocs.Viewer for Java](/viewer/export-conversion/cmx-document-conversion-java.png)
+
 ### What You'll Learn:
 - Setting up and using GroupDocs.Viewer for Java
 - Converting CMX documents to HTML, JPG, PNG, and PDF

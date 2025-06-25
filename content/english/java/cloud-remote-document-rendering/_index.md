@@ -9,6 +9,8 @@ url: "/java/cloud-remote-document-rendering/"
 
 Learn to implement cloud and remote document rendering with our GroupDocs.Viewer Java tutorials. These practical guides demonstrate techniques for loading and rendering documents from cloud storage providers, handling remote URLs, managing network file sources, and implementing distributed document viewing solutions. Each tutorial includes detailed Java code examples for common cloud and remote rendering scenarios, helping you build applications with flexible document access capabilities.
 
+![Cloud and Remote Document Rendering with GroupDocs.Viewer for Java](/viewer/cloud-remote-document-rendering/img-java.png)
+
 ## Available Tutorials
 
 ### [Render Documents from FTP Using GroupDocs.Viewer for Java&#58; A Comprehensive Guide](./groupdocs-viewer-java-render-ftp-documents/)

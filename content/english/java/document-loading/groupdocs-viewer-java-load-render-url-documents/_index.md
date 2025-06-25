@@ -18,6 +18,8 @@ keywords:
 
 In today's digital age, dynamically loading and rendering documents from URLs is crucial for developers aiming to enhance both internal tools and customer-facing applications. This tutorial focuses on using the powerful GroupDocs.Viewer Java library to achieve seamless document management solutions, improving user experience by efficiently rendering documents.
 
+![Load and Render Documents from URLs with GroupDocs.Viewer for Java](/viewer/document-loading/load-and-render-documents-from-urls.png)
+
 **What You'll Learn:**
 - Understand the capabilities of GroupDocs.Viewer Java
 - Set up your environment for optimal performance with GroupDocs.Viewer

@@ -9,6 +9,8 @@ url: "/java/advanced-rendering/"
 
 Explore advanced document rendering capabilities with our comprehensive GroupDocs.Viewer tutorials for Java developers. These detailed guides cover complex rendering scenarios, including multi-page document handling, custom rendering configurations, performance optimization, and implementation of specialized rendering techniques. Each tutorial provides practical Java code examples that demonstrate how to create sophisticated document viewing solutions with precise control over rendering processes.
 
+![Advanced Document Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/img-java.png)
+
 ## Available Tutorials
 
 ### [Convert DOCX to HTML with External Resources Using GroupDocs.Viewer for Java](./render-docx-html-external-resources-groupdocs-java/)

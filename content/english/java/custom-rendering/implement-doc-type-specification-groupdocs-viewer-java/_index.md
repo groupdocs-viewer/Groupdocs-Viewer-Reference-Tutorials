@@ -20,6 +20,8 @@ A step-by-step guide on specifying the file type for rendering DOCX files using 
 
 Struggling with seamless loading and displaying of various document types in your Java applications? Using GroupDocs.Viewer for Java can streamline this process by allowing you to specify the file type explicitly. This feature ensures that documents are rendered correctly, enhancing both performance and accuracy.
 
+![Implement Document Type Specification with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-document-type-specification-java.png)
+
 In this tutorial, we'll explore how to use GroupDocs.Viewer for Java to set a specific file type when loading DOCX files, making your document viewing experience more efficient.
 
 **What You'll Learn:**

@@ -9,6 +9,8 @@ url: "/java/document-loading/"
 
 Our document loading tutorials provide comprehensive guidance for handling document sources in Java. Follow these step-by-step guides to learn how to load documents from different storage types, handle various file formats, manage input streams, and implement flexible document loading strategies. These practical tutorials include complete code examples for document source handling, helping you build robust document viewing applications with versatile loading capabilities.
 
+![Document Loading and Source Handling Tutorials with GroupDocs.Viewer for Java](/viewer/document-loading/img-java.png)
+
 ## Available Tutorials
 
 ### [How to Load Documents with Specific Encoding in Java Using GroupDocs.Viewer](./groupdocs-viewer-java-specific-encoding/)

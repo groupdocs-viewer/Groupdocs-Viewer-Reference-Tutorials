@@ -18,6 +18,8 @@ keywords:
 
 Are you facing challenges with default fonts not matching your brand's aesthetic or readability requirements? Whether it’s business reports, legal documents, or presentations, custom fonts can significantly enhance document appeal and professionalism. In this step-by-step guide, we will explore how to use **GroupDocs.Viewer Java** for effective custom font rendering.
 
+![Implement Custom Font Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
+
 ### What You’ll Learn:
 - Setting up GroupDocs.Viewer for Java
 - Integrating custom fonts in document rendering

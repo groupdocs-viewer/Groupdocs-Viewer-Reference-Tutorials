@@ -9,6 +9,8 @@ url: "/java/caching-resource-management/"
 
 Master advanced caching and resource management with our GroupDocs.Viewer Java tutorials. These comprehensive guides demonstrate how to implement efficient caching strategies, manage rendering resources, optimize memory usage, and improve document viewing performance. Each tutorial provides practical Java code examples for implementing sophisticated caching mechanisms that enhance application responsiveness and reduce computational overhead.
 
+![Document Rendering Caching with GroupDocs.Viewer for Java](/viewer/caching-resource-management/img-java.png)
+
 ## Available Tutorials
 
 ### [Set Resource Loading Timeout in GroupDocs.Viewer for Java&#58; Enhance Document Performance](./groupdocs-viewer-java-resource-loading-timeout/)

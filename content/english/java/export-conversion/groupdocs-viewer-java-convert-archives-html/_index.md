@@ -18,6 +18,8 @@ keywords:
 
 Converting archive files like ZIP or RAR into web-friendly formats is a common requirement for sharing, reviewing, and integrating documents within systems. This tutorial will guide you through using GroupDocs.Viewer Java—a powerful library designed for seamless document conversions.
 
+![Convert Archives to HTML with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-archives-to-html-java.png)
+
 **What You'll Learn:**
 - Rendering archives to single-page and multi-page HTML formats.
 - Configuring options for embedded resources in your HTML output.

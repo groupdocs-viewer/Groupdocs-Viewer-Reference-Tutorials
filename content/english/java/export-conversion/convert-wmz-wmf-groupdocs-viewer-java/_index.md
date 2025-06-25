@@ -18,6 +18,8 @@ keywords:
 
 Converting Windows Metafile (WMF) and Web Metafile (WMZ) formats into more accessible formats like HTML, JPG, PNG, or PDF can be challenging due to their unique structures. With GroupDocs.Viewer for Java, you can easily render WMZ/WMF documents into a variety of widely used formats.
 
+![Convert WMZ/WMF Documents with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-wmz-wmf-documents.png)
+
 In this tutorial, we'll guide you through using the powerful GroupDocs.Viewer library in Java to transform WMZ and WMF files into HTML, JPG, PNG, and PDF. By following along, you’ll gain the skills needed for seamless document conversion.
 
 **What You'll Learn:**

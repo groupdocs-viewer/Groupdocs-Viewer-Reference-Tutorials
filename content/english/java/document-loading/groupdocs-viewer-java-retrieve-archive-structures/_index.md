@@ -18,6 +18,8 @@ keywords:
 
 Managing archive files effectively requires a clear understanding of their structure. This comprehensive guide demonstrates how to use the GroupDocs.Viewer library in Java to extract information about archive files, including folder structures. By mastering these techniques, you'll streamline your data management processes and enhance workflow efficiency.
 
+![Archive Structures with GroupDocs.Viewer for Java](/viewer/document-loading/archive-structures-java.png)
+
 **What You'll Learn:**
 - Setting up and configuring GroupDocs.Viewer for Java.
 - Methods to retrieve view info from archives.

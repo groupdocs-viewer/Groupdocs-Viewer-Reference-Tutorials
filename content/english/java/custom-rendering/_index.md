@@ -9,6 +9,8 @@ url: "/java/custom-rendering/"
 
 Master advanced customization techniques with our GroupDocs.Viewer Java tutorials for custom rendering. These comprehensive guides demonstrate how to create custom rendering handlers, implement specialized rendering logic, extend built-in rendering capabilities, and develop sophisticated document processing solutions. Each tutorial provides detailed Java code examples showing how to implement flexible, tailored document rendering strategies that go beyond standard rendering approaches.
 
+![Custom Document Rendering Tutorials with GroupDocs.Viewer for Java](/viewer/custom-rendering/img-java.png)
+
 ## Available Tutorials
 
 ### [How to Adjust MS Project Time Units Using GroupDocs.Viewer Java&#58; A Step-by-Step Guide](./adjust-ms-project-time-units-groupdocs-viewer-java/)

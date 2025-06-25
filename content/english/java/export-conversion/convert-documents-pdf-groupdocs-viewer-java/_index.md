@@ -18,6 +18,8 @@ keywords:
 
 In today's digital world, ensuring that documents are consistently accessible as PDFs is invaluable for compatibility and security across platforms. This comprehensive guide will show you how to convert any document into a PDF format using the powerful **GroupDocs.Viewer for Java** library. Master this process to enhance your document management capabilities.
 
+![Convert Documents to PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-documents-to-pdf-java.png)
+
 ### What You'll Learn:
 - How to set up GroupDocs.Viewer in your Java project
 - Steps involved in converting documents to PDF

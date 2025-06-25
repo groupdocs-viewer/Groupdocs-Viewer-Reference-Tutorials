@@ -18,6 +18,8 @@ keywords:
 
 In today's digital world, efficient document management is key for both businesses and individuals. Whether you need to display text documents on the web or archive files in various formats, converting Text (TXT) files is a frequent requirement. **GroupDocs.Viewer for Java** provides an effective solution for rendering TXT files into multiple formats such as HTML, JPG, PNG, and PDF with ease. This guide will walk you through using this versatile library to achieve seamless conversions.
 
+![Convert TXT Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-txt-files-to-html-jpg-png-and-pdf-java.png)
+
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer in your Java environment
 - Converting TXT files to multi-page and single-page HTML

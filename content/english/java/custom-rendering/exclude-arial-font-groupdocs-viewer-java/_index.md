@@ -18,6 +18,8 @@ keywords:
 
 Have you ever faced a challenge where specific fonts in your documents disrupt the uniformity of your web presentations? This step-by-step guide will show you how to use GroupDocs.Viewer for Java to exclude the Arial font when rendering documents into HTML format. Whether preparing professional reports or creating consistent web content, this functionality ensures your output aligns with design standards.
 
+![Exclude Arial Font in HTML Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/exclude-arial-font-in-html-rendering-java.png)
+
 **What You'll Learn:**
 - How to configure GroupDocs.Viewer for Java to render documents in HTML.
 - The process of excluding specific fonts like Arial during document conversion.

@@ -18,6 +18,8 @@ keywords:
 
 Struggling with handling documents of various encodings in Java? This comprehensive tutorial guides you through using the GroupDocs.Viewer library to load and render files accurately. Whether it's displaying text correctly or ensuring precise data representation, mastering document encoding is essential.
 
+![Load Documents with Specific Encoding with GroupDocs.Viewer for Java](/viewer/document-loading/load-documents-with-specific-encoding.png)
+
 **What You'll Learn:**
 - Set up and use GroupDocs.Viewer for Java.
 - Specify character encodings when loading documents.
