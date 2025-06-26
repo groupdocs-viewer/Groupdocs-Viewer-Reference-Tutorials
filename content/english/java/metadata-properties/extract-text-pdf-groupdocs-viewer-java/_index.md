@@ -16,6 +16,8 @@ keywords:
 ## Introduction
 Extracting text from PDFs is crucial for efficient digital document management. In this comprehensive tutorial, we'll demonstrate how to use **GroupDocs.Viewer Java** to extract text seamlessly from PDF files.
 
+![Extract Text from PDF with GroupDocs.Viewer for Java](/viewer/metadata-properties/extract-text-from-pdf.png)
+
 ### What You'll Learn:
 - Setup GroupDocs.Viewer for Java
 - Extract text using the powerful API of GroupDocs.Viewer

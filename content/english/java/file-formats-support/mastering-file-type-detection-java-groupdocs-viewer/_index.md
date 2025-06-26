@@ -16,6 +16,8 @@ keywords:
 
 Discover the power of **GroupDocs.Viewer** to seamlessly identify file types from extensions, media-types, and streams. This robust library simplifies development processes and enhances application capabilities.
 
+![File Type Detection with GroupDocs.Viewer for Java](/viewer/file-formats-support/file-type-detection-java.png)
+
 ## Introduction
 
 In today's digital landscape, efficiently managing diverse file formats is crucial for any application. Identifying a file type based on its extension or content can be challenging. **GroupDocs.Viewer** offers an elegant solution to this problem, enabling developers to determine file types with ease and precision.

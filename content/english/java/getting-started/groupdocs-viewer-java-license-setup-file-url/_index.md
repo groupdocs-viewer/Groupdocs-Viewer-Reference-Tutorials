@@ -20,6 +20,9 @@ Unlock the full potential of GroupDocs.Viewer for your Java applications by sett
 
 Licensing is essential when using GroupDocs.Viewer in Java to unlock its full suite of capabilities beyond the evaluation mode. Whether your license file is stored locally or fetched from a URL, managing it effectively ensures uninterrupted functionality.
 
+
+![Local File or URL Guide with GroupDocs.Viewer for Java](/viewer/getting-started/local-file-or-url-guide.png)
+
 **What You'll Learn:**
 - How to set up a GroupDocs Viewer Java license using a local file
 - Setting up a license via a URL for online resources

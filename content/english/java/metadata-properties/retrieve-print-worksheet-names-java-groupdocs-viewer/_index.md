@@ -18,6 +18,8 @@ keywords:
 
 Managing multiple worksheets within spreadsheet files can be challenging, especially when handling large datasets or automating report generation. The GroupDocs.Viewer for Java API simplifies this task by allowing you to programmatically retrieve worksheet names, saving time and enhancing automation workflows. This tutorial will walk you through the process of using the GroupDocs.Viewer for Java to extract and display worksheet names from a spreadsheet document.
 
+![Extract and Display Worksheet Names with GroupDocs.Viewer for Java](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
+
 **Key Takeaways:**
 - Setting up your environment with GroupDocs.Viewer
 - Initializing the Viewer and configuring options

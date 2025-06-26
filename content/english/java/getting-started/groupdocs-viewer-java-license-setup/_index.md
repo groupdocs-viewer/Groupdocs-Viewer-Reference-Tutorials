@@ -17,6 +17,8 @@ keywords:
 ## Introduction
 Managing licenses efficiently is crucial when integrating third-party libraries like **GroupDocs.Viewer for Java** into your applications. This guide addresses a common challenge developers face—setting up and managing licenses seamlessly, whether stored locally or accessed via URLs. By understanding these scenarios, you can ensure that your application remains compliant with licensing requirements while maintaining its performance.
 
+![File and URL Setup with GroupDocs.Viewer for Java](/viewer/getting-started/file-and-url-setup-png.png)
+
 ### What You'll Learn
 - How to set a license for GroupDocs.Viewer from a local file.
 - Handling HTTP URL-based licenses effectively.

@@ -18,6 +18,9 @@ keywords:
 
 Extracting and displaying detailed information from MS Project files seamlessly is crucial for informed decision-making in projects. Whether you're a project manager, developer, or business analyst, this guide will show you how to use **GroupDocs.Viewer for Java** to retrieve view info from an MS Project document efficiently.
 
+![MS Project Viewing with GroupDocs.Viewer for Java](/viewer/file-formats-support/ms-project-viewing.png)
+
+
 By the end of this tutorial, you'll learn:
 - How to set up GroupDocs.Viewer for Java.
 - Retrieve view information from an MS Project file using GroupDocs.Viewer.

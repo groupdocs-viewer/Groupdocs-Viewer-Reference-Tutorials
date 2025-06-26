@@ -9,6 +9,8 @@ url: "/java/getting-started/"
 
 Begin your journey with these essential GroupDocs.Viewer tutorials that walk you through installation, licensing configuration, and creating your first document viewer in Java. Our beginner-friendly guides demonstrate how to set up your development environment, initialize the GroupDocs.Viewer library, and perform fundamental document rendering operations. Follow these tutorials to quickly master the basics and prepare for more advanced document viewing tasks in your Java applications.
 
+![Getting Started Tutorials with GroupDocs.Viewer for Java](/viewer/getting-started/img-java.png)
+
 ## Available Tutorials
 
 ### [Configuring Logging in GroupDocs.Viewer for Java&#58; Console and File Logging Guide](./groupdocs-viewer-java-logging-setup/)

@@ -18,6 +18,8 @@ keywords:
 
 Displaying Apple Numbers documents across different platforms can be challenging, especially when aiming for seamless web integration or creating shareable images and PDFs. This guide will demonstrate how to use **GroupDocs.Viewer for Java** to render Numbers documents into HTML, JPG, PNG, and PDF formats effortlessly.
 
+![Render Apple Numbers Documents with GroupDocs.Viewer for Java](/viewer/file-formats-support/render-apple-numbers-documents-java.png)
+
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer in your Java project
 - Step-by-step guides on rendering Numbers documents to various file types

@@ -9,6 +9,8 @@ url: "/java/performance-optimization/"
 
 Master performance optimization for document rendering with our GroupDocs.Viewer Java tutorials. These practical guides demonstrate techniques for efficient memory management, improving rendering speed, caching strategies, and handling large or complex documents effectively. Each tutorial includes detailed Java code examples and best practices for optimizing critical rendering aspects, ensuring your applications remain responsive and reliable even when processing substantial document collections.
 
+![Document Rendering Performance with GroupDocs.Viewer .NET](/viewer/performance-optimization/img-java.png)
+
 ## Available Tutorials
 
 ### [How to Minify HTML Files in Java Using GroupDocs.Viewer for Performance Optimization](./groupdocs-viewer-java-html-minification-guide/)

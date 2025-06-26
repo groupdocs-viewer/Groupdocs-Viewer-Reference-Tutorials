@@ -17,6 +17,8 @@ keywords:
 ## Introduction
 Enhance your document rendering process in Java applications using **GroupDocs.Viewer for Java**. This tutorial guides you through configuring logging either to the console or a file, providing crucial insights into how your document rendering operates.
 
+![Console and File Logging with GroupDocs.Viewer for Java](/viewer/getting-started/console-and-file-logging-java.png)
+
 **Key Learning Points:**
 - Configure logging in GroupDocs.Viewer for Java.
 - Implement both console and file-based logging systems.

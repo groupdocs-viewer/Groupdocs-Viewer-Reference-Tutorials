@@ -9,6 +9,8 @@ url: "/java/file-formats-support/"
 
 Explore comprehensive document format support with our GroupDocs.Viewer tutorials for Java. These detailed guides demonstrate how to render and handle various file formats including PDF, Microsoft Office documents, images, CAD files, and specialized formats. Each tutorial provides working Java code examples showing how to implement flexible, multi-format document viewing solutions that can handle diverse document types with consistent rendering quality.
 
+![Multi-Format Document Rendering with GroupDocs.Viewer for Java](/viewer/file-formats-support/img-java.png)
+
 ## Available Tutorials
 
 ### [Master MS Project Viewing in Java with GroupDocs.Viewer&#58; A Comprehensive Guide](./mastering-ms-project-viewing-groupdocs-java/)

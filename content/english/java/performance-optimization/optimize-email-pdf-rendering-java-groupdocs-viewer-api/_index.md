@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to seamlessly convert email messages into PDF format using Java? This tutorial will guide you through optimizing page size for rendering emails to PDF with the GroupDocs.Viewer API, a feature-rich tool designed specifically for such tasks. Whether you're dealing with MSG files or other email formats, this solution simplifies your workflow and ensures consistent output.
 
+![Optimize Email-to-PDF Rendering with GroupDocs.Viewer .NET](/viewer/performance-optimization/optimize-email-to-pdf-rendering-java.png)
+
 In this tutorial, we'll explore how to adjust the page size when rendering emails using GroupDocs.Viewer Java, allowing for greater customization and control over the output format. By leveraging this powerful API, you can streamline document conversion processes in your applications with ease.
 
 **What You’ll Learn:**

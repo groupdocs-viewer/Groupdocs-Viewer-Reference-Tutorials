@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to analyze documents programmatically? Whether extracting data or understanding content layouts, it can be challenging. **GroupDocs.Viewer for Java** simplifies this by offering powerful features to extract page metadata and text lines efficiently. This tutorial guides you through setting up and using GroupDocs.Viewer in your Java applications.
 
+![Document Analysis with GroupDocs.Viewer for Java](/viewer/metadata-properties/document-analysis.png)
+
 ### What You'll Learn
 
 - Setting up GroupDocs.Viewer for Java

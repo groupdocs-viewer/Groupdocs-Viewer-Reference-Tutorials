@@ -16,6 +16,8 @@ keywords:
 
 Welcome to this detailed guide on rendering CorelDRAW (CDR) documents into various formats like HTML, JPG, PNG, and PDF using GroupDocs.Viewer for Java. If you're dealing with graphic files and need a seamless way to convert them across platforms, this tutorial is your go-to resource.
 
+![Render CDR Files with GroupDocs.Viewer for Java](/viewer/file-formats-support/render-cdr-files.png)
+
 ## What You'll Learn:
 - How to set up GroupDocs.Viewer in your Java environment
 - Step-by-step implementation of rendering CDR documents into HTML, JPG, PNG, and PDF formats

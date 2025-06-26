@@ -9,6 +9,8 @@ url: "/java/metadata-properties/"
 
 Learn to work with document metadata and properties with our GroupDocs.Viewer Java tutorials. These practical guides demonstrate how to extract document information, read metadata fields, manage document properties, and implement metadata-based document processing. Each tutorial includes working Java code examples for common metadata scenarios, helping you build applications that can effectively analyze and manage document information.
 
+![Document Metadata Extraction with GroupDocs.Viewer for Java](/viewer/metadata-properties/img-java.png)
+
 ## Available Tutorials
 
 ### [Extract Text from PDF using GroupDocs.Viewer Java&#58; A Comprehensive Guide for Developers](./extract-text-pdf-groupdocs-viewer-java/)

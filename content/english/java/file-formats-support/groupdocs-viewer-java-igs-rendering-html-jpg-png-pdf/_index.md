@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to convert complex IGS files into accessible formats like HTML, JPG, PNG, or PDF using Java? This comprehensive guide will help you master the GroupDocs.Viewer for Java library. Whether you're a seasoned developer or just starting out, this tutorial will enable you to render IGS documents effortlessly.
 
+![Convert IGS Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/file-formats-support/convert-igs-files-to-html-jpg-png-and-pdf-java.png)
+
 **What You'll Learn:**
 - How to set up and configure GroupDocs.Viewer for Java.
 - Step-by-step instructions on rendering IGS files into HTML, JPG, PNG, and PDF formats.
