@@ -18,6 +18,8 @@ keywords:
 
 Struggling with managing document attachments in Java applications? Whether you're handling complex documents or need an efficient way to access attached files, **GroupDocs.Viewer for Java** is your solution. This powerful library enables developers to effortlessly retrieve and print all attachments from various document formats.
 
+![Retrieve and Print Document Attachments with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-and-print-document-attachments-java.png)
+
 In this tutorial, we'll explore how you can integrate GroupDocs.Viewer Java into your workflow to streamline document attachment management. By the end of this guide, you will learn:
 - How to set up GroupDocs.Viewer for Java in your project
 - The steps to retrieve and print document attachments efficiently

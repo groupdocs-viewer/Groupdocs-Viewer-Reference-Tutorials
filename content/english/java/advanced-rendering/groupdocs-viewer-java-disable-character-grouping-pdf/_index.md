@@ -18,6 +18,8 @@ keywords:
 
 When working with PDF documents, precision in rendering is crucial—especially when dealing with complex text structures like hieroglyphics or languages that require precise character representation. The "Character Grouping" feature often causes issues by grouping characters incorrectly, leading to misinterpretation of the document content. This can be particularly problematic for users needing exact replication of their documents' text layout.
 
+![Precise Rendering Techniques with GroupDocs.Viewer for Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
+
 In this tutorial, you'll learn how to use GroupDocs.Viewer for Java to disable character grouping in PDF rendering, ensuring maximum accuracy and precision. By the end, you will have mastered:
 - Setting up GroupDocs.Viewer for Java
 - Configuring PDF rendering options to disable character grouping

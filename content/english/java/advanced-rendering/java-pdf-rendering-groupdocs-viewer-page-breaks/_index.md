@@ -20,6 +20,8 @@ Unlock the power of spreadsheet rendering in your Java applications using GroupD
 
 In today’s data-driven world, efficient document management is crucial for businesses looking to streamline their operations. Often, spreadsheets are a primary source of data that needs to be shared in a consistent format across platforms. This tutorial addresses the challenge of rendering spreadsheets with page breaks into PDFs using GroupDocs.Viewer for Java—a versatile tool designed to simplify this process.
 
+![Page Breaks in Spreadsheets with GroupDocs.Viewer for Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
+
 **What You'll Learn:**
 - How to render spreadsheets by page breaks into PDFs.
 - Configuring spreadsheet rendering options such as grid lines and headings.

@@ -18,6 +18,8 @@ keywords:
 
 Struggling to convert your CAD drawings into high-quality images while maintaining specific dimensions and aesthetics? With GroupDocs.Viewer for Java, this task becomes seamless. This tutorial will guide you through rendering CAD drawings as PNG files with custom sizes and background colors using GroupDocs.Viewer. By integrating these features, ensure that your technical documents are visually appealing and precisely dimensioned to meet your needs.
 
+![Render CAD Drawings as PNG with Custom Size & Background Color with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-cad-drawings-as-png-with-custom-size-background-color-java.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for Java in your project
 - Rendering CAD drawings into PNG format with custom dimensions

@@ -17,6 +17,8 @@ keywords:
 ## Overview
 Struggling with managing large Outlook data files such as PST or OST? This guide demonstrates how to limit the number of items processed while rendering these files using GroupDocs.Viewer for Java, enhancing your application's efficiency and responsiveness.
 
+![Limit Outlook Item Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/limit-outlook-item-rendering-java.png)
+
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer for Java
 - Configuring the library to limit item counts in Outlook files

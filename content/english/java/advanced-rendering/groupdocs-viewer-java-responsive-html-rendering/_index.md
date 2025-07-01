@@ -18,6 +18,8 @@ keywords:
 
 In today's digital landscape, presenting documents in a visually appealing and accessible format is crucial. Struggling to render documents into responsive HTML using Java? This tutorial will guide you through **GroupDocs.Viewer for Java** to seamlessly convert documents into responsive HTML. By the end of this article, you'll master rendering adaptable documents across all devices.
 
+![Responsive HTML Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/responsive-html-rendering-java.png)
+
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer in your Java project.
 - Implementing responsive HTML rendering with GroupDocs.Viewer.

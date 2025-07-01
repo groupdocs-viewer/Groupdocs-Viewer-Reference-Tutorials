@@ -18,6 +18,8 @@ keywords:
 
 Converting your DOCX documents into HTML while preserving external resources such as images, stylesheets, and fonts can be challenging. With **GroupDocs.Viewer for Java**, rendering a document to an HTML format that includes all necessary assets becomes seamless. This feature is particularly beneficial when ensuring consistent presentation across various platforms.
 
+![Convert DOCX to HTML with External Resources with GroupDocs.Viewer for Java](/viewer/advanced-rendering/convert-docx-to-html-with-external-resources-java.png)
+
 In this tutorial, you will learn how to use GroupDocs.Viewer for Java to render DOCX files as HTML with external resources efficiently. By the end of this guide, you will understand:
 - How to set up and configure GroupDocs.Viewer for Java.
 - The steps required to convert a DOCX document into an HTML format using external resources.

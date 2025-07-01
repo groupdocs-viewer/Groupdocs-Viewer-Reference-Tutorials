@@ -9,6 +9,8 @@ url: "/java/watermarks-annotations/"
 
 Master document annotation and watermarking techniques with our GroupDocs.Viewer Java tutorials. These step-by-step guides demonstrate how to add text and image watermarks, implement annotations, control watermark positioning and transparency, and render documents with embedded annotations. Each tutorial includes practical Java code examples for adding visual metadata and protective markings to your documents, enhancing document tracking and branding capabilities.
 
+![Document Watermark and Annotation with GroupDocs.Viewer Java](/viewer/watermarks-annotations/img-java.png)
+
 ## Available Tutorials
 
 ### [Add Watermarks to Documents Using GroupDocs.Viewer Java&#58; A Comprehensive Guide](./groupdocs-viewer-java-add-watermark-documents/)

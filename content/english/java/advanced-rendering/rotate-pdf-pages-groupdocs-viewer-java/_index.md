@@ -18,6 +18,8 @@ keywords:
 
 Rotating specific pages within a PDF can be essential for aligning documents or adjusting presentation slides. This tutorial demonstrates how to easily rotate PDF pages using GroupDocs.Viewer for Java.
 
+![Rotate Specific PDF Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer in your Java project
 - Programmatically rotating specific PDF pages

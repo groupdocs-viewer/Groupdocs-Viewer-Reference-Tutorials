@@ -18,6 +18,8 @@ keywords:
 
 Are you struggling to display password-protected documents in your Java application? Whether it's a confidential report or a secure PDF, managing access while ensuring seamless viewing is crucial. This tutorial guides you through using **GroupDocs.Viewer for Java** to render such documents efficiently and securely.
 
+![Render Password-Protected Documents with GroupDocs.Viewer Java](/viewer/security-permissions/render-password-protected-documents-java.png)
+
 In this guide, we'll cover:
 - Setting up GroupDocs.Viewer in your Java environment
 - Loading password-protected documents

@@ -18,6 +18,8 @@ keywords:
 
 Struggling to display tracked changes in Word documents within your Java applications? Whether you're developing a document management system or need to visualize edits, rendering these changes seamlessly can be challenging. Enter **GroupDocs.Viewer for Java**, the robust library that simplifies this process by allowing you to render Word documents with tracked changes directly into HTML.
 
+![Render Tracked Changes in Word Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
+
 In this tutorial, we'll walk you through how to implement this feature step-by-step, focusing on key aspects such as setting up your environment, configuring options, and rendering the document. By the end of this guide, you’ll be able to effectively integrate **GroupDocs.Viewer for Java** into your project for seamless document viewing.
 
 ### What You'll Learn:

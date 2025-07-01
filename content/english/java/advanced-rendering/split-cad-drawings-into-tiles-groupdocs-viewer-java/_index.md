@@ -17,6 +17,8 @@ keywords:
 ## Introduction
 Struggling to manage and render large CAD drawings efficiently in your Java application? This guide will demonstrate how to use GroupDocs.Viewer for Java to split these drawings into manageable tiles. By dividing the drawing into smaller sections, you can significantly enhance performance and ease of handling.
 
+![Split CAD Drawings with GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
+
 **What You'll Learn:**
 - Setting up and configuring GroupDocs.Viewer for Java.
 - A step-by-step process to split CAD drawings into tiles.

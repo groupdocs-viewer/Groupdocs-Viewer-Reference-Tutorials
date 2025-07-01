@@ -22,6 +22,8 @@ keywords:
 
 Leverage the powerful features of GroupDocs.Viewer for Java to extract detailed information about document views in your applications. This tutorial guides you through setting up and utilizing this library effectively.
 
+![Retrieve Document View Information and Insights with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for Java.
 - Retrieving and using document view information.

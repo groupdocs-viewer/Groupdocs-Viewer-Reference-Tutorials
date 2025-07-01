@@ -19,6 +19,8 @@ keywords:
 ## Introduction
 Do you want to display documents on your web application while preserving text clarity? Rendering documents as images can be challenging, especially when it comes to overlaying text that remains selectable and searchable. This tutorial will guide you through rendering a DOCX document into an image with an overlaid text layer using GroupDocs.Viewer for Java.
 
+![Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
+
 **What You'll Learn:**
 - Setting up your environment for GroupDocs.Viewer.
 - Implementing GroupDocs.Viewer to render documents with text layers in Java.

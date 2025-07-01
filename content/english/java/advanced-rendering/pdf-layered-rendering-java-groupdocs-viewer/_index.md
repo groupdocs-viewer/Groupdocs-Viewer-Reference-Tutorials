@@ -18,6 +18,8 @@ keywords:
 
 Rendering complex PDFs while preserving their visual hierarchy is a challenge that layered rendering addresses effectively by respecting the Z-Index of content within source documents. This tutorial explores how to leverage **GroupDocs.Viewer for Java** to implement efficient PDF layered rendering.
 
+![PDF Layered Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
+
 ### What You'll Learn
 
 - Setting up GroupDocs.Viewer in your Java project

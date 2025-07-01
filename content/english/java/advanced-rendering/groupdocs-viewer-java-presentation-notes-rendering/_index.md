@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to integrate presentation rendering along with notes into your Java application seamlessly? This comprehensive guide will walk you through the process of using **GroupDocs.Viewer for Java**. By leveraging this powerful tool, you can effortlessly display presentations and their corresponding notes, making it ideal for applications requiring detailed document viewing capabilities.
 
+![Render Presentations with Notes with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
+
 In this tutorial, we'll cover:
 - How to set up GroupDocs.Viewer for Java in your project.
 - Step-by-step implementation of presentation rendering with notes.

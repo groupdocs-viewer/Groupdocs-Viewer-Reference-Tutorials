@@ -18,6 +18,8 @@ keywords:
 
 In today's fast-paced digital world, effective email management is crucial for businesses and individuals alike. Whether you're archiving emails or converting them into a user-friendly HTML format, customization is key. This tutorial will guide you through rendering email messages with custom date-time formats using GroupDocs.Viewer for Java—a powerful library that simplifies document viewing and conversion.
 
+![Render Emails with Custom DateTime with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-emails-with-custom-datetime-java.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer in a Java project
 - Rendering emails into HTML format with embedded resources

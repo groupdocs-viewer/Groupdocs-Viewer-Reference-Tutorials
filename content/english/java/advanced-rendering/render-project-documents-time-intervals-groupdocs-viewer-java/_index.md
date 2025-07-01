@@ -18,6 +18,8 @@ keywords:
 
 Struggling to render project documents within specific time intervals? This comprehensive tutorial will guide you through solving this problem using the powerful GroupDocs.Viewer API in Java. Whether managing timelines or visualizing project phases, mastering this feature can significantly enhance your document management capabilities.
 
+![Render Project Documents by Time Intervals with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-project-documents-by-time-intervals-java.png)
+
 ### What You'll Learn:
 - Setting up and configuring GroupDocs.Viewer for Java
 - The step-by-step process of rendering project documents within a specified time interval

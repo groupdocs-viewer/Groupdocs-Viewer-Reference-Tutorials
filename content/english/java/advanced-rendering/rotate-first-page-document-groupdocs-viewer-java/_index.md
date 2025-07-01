@@ -18,6 +18,8 @@ keywords:
 
 Have you ever needed to adjust specific pages within a document, especially when preparing files for presentations or printing? This advanced guide will show you how to use GroupDocs.Viewer for Java to rotate the first page of your documents by 90 degrees clockwise. With this feature, transforming PDFs and Word documents becomes seamless, enhancing document presentation with minimal effort.
 
+![Rotate the First Page of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
+
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer in a Java project
 - Steps to rotate specific pages in a document
