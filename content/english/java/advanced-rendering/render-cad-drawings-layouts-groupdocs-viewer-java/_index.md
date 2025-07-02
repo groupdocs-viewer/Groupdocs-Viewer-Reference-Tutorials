@@ -18,8 +18,6 @@ keywords:
 
 When working with CAD files, viewing all layouts within a single file efficiently is often crucial. **GroupDocs.Viewer for Java** makes it simple to render all layouts from a CAD drawing into HTML format, enhancing accessibility and shareability.
 
-![Render All CAD Layouts with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-all-cad-layouts.png)
-
 This tutorial will guide you through using GroupDocs.Viewer for Java to render CAD drawings effectively:
 - Setting up the necessary environment and libraries
 - Configuring rendering options for CAD files

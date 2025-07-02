@@ -18,8 +18,6 @@ keywords:
 
 Are you looking to display hidden slides or sections in your documents? This tutorial will guide you through using GroupDocs.Viewer for Java to reveal those hidden pages. Whether it's PowerPoint presentations, Word documents, or other file formats supported by GroupDocs, this feature ensures all content is visible.
 
-![Render Hidden Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
-
 **What You'll Learn:**
 - Setting up and using GroupDocs.Viewer in Java projects.
 - Enabling rendering of hidden pages within documents.

@@ -16,13 +16,14 @@ keywords:
 
 Balancing image quality and file size is a critical challenge when converting PDF documents, especially for online sharing or archiving. **GroupDocs.Viewer for Java** provides a powerful solution to efficiently adjust image quality when rendering PDFs into HTML format. This tutorial will guide you through the process of optimizing image quality in your PDF files.
 
-![Optimize PDF Image Quality with GroupDocs.Viewer for Java](/viewer/advanced-rendering/optimize-pdf-image-quality-java.png)
 
-You will learn how to:
-- Set up and configure GroupDocs.Viewer for Java.
-- Adjust image quality within a source PDF document step-by-step.
-- Apply best practices for performance optimization during rendering.
-- Explore practical applications of this feature.
+**What You'll Learn:**
+- Setting up and configuring GroupDocs.Viewer for Java.
+- Step-by-step instructions on adjusting image quality within a source PDF document.
+- Best practices for optimizing performance when rendering documents.
+- Practical applications of this feature in real-world scenarios.
+
+Let's start with the prerequisites before diving into implementation.
 
 ## Prerequisites
 

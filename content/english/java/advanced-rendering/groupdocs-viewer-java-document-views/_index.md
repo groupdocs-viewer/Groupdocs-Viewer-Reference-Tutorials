@@ -18,10 +18,11 @@ Unlock the power of **GroupDocs.Viewer for Java** to extract detailed informatio
 
 ![Retrieve Document View Information and Insights with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
-In this guide, you will learn how to:
-- Configure GroupDocs.Viewer for Java in your project.
-- Retrieve and utilize document view information.
-- Apply best practices for seamless integration.
+**What You'll Learn:**
+- Setting up GroupDocs.Viewer for Java.
+- Retrieving and using document view information.
+- Best practices for integration into your applications.
+
 
 ## Prerequisites
 

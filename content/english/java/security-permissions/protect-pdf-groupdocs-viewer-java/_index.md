@@ -18,8 +18,6 @@ keywords:
 
 Are you concerned about unauthorized access to your sensitive PDF documents? Implementing document protection is crucial for maintaining confidentiality and ensuring that only authorized users can view or modify the content. This tutorial will guide you through using GroupDocs.Viewer for Java to effectively protect a PDF document with passwords and restricted permissions.
 
-![Password Protection & Permissions Guide with GroupDocs.Viewer Java](/viewer/security-permissions/password-protection-and-permissions-guide-java.png)
-
 In this guide, you’ll learn:
 - How to set up GroupDocs.Viewer for Java
 - Steps to secure your PDF documents using password protection

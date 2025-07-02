@@ -18,8 +18,6 @@ keywords:
 
 Are you struggling to visualize hidden rows and columns within a spreadsheet when converting it to HTML using Java? You're not alone! Many developers face this challenge while trying to maintain the integrity of data visualization across different formats. This tutorial will guide you through how to effectively render hidden rows and columns in spreadsheets using GroupDocs.Viewer for Java, ensuring no crucial information is lost during conversion.
 
-![Render Hidden Rows & Columns with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
-
 In this article, we’ll cover:
 - Configuring GroupDocs.Viewer for rendering hidden spreadsheet elements
 - Setting up your environment with Maven dependencies

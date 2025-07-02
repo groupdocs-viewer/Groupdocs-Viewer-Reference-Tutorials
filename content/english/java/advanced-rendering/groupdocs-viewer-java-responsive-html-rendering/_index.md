@@ -18,11 +18,13 @@ In today's multi-device world, ensuring your documents are accessible and visual
 
 ![Responsive HTML Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/responsive-html-rendering-java.png)
 
-You will learn how to:
-- Configure GroupDocs.Viewer in your Java project.
-- Implement responsive HTML rendering with just a few lines of code.
-- Explore practical applications and integration possibilities.
-- Optimize performance for efficient resource management.
+### What You'll Learn:
+- Setting up GroupDocs.Viewer in your Java project.
+- Implementing responsive HTML rendering with GroupDocs.Viewer.
+- Exploring practical applications and integration possibilities.
+- Performance optimization tips for efficient resource management.
+
+Ready to enhance document rendering? Let's start by exploring the prerequisites you need before implementation.
 
 ## Prerequisites
 

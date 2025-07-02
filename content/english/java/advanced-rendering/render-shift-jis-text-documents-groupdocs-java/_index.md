@@ -18,8 +18,6 @@ keywords:
 
 Are you facing challenges rendering text documents encoded in Shift_JIS using Java? You're not alone! Many developers encounter difficulties with different character encodings, particularly for languages like Japanese. This tutorial will guide you through loading and rendering text documents with a specific charset using GroupDocs.Viewer for Java.
 
-![Render Text Documents in Shift_JIS with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java .png)
-
 **What You'll Learn:**
 - Configuring GroupDocs.Viewer for Java
 - Loading documents with Shift_JIS encoding

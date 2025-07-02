@@ -18,8 +18,6 @@ keywords:
 
 Are you looking to efficiently render specific folders within archive files such as ZIPs in your Java applications? This detailed tutorial will guide you through the process of using GroupDocs.Viewer for Java. By the end, you'll know how to leverage this powerful tool to streamline document management tasks.
 
-![Rendering Archive Folders with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rendering-archive-folders-java.png)
-
 ### What You’ll Learn
 - Understanding and utilizing GroupDocs.Viewer for Java.
 - Setting up GroupDocs.Viewer in your project environment.

@@ -17,8 +17,6 @@ keywords:
 ## Introduction
 In today's digital landscape, managing document security is crucial. Whether you're a software developer or an IT professional, mastering file detection and encryption checks using tools like GroupDocs.Viewer for Java can significantly boost your data management strategies. This tutorial will guide you through implementing these functionalities effectively.
 
-![File Detection and Encryption Checks with GroupDocs.Viewer Java](/viewer/security-permissions/file-detection-and-encryption-checks-java.png)
-
 ### What You'll Learn
 - Setting up GroupDocs.Viewer for Java
 - Techniques to detect file types with precision

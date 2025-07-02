@@ -18,8 +18,6 @@ keywords:
 
 Are you looking to optimize the quality of JPG images within your PDF documents? With GroupDocs.Viewer for Java, adjusting image quality becomes a seamless task, allowing you to balance between file size and visual fidelity. This tutorial dives into how you can leverage this feature effectively.
 
-![Optimize JPG Quality in PDFs with GroupDocs.Viewer for Java](/viewer/advanced-rendering/optimize-jpg-quality-in-pdfs.png)
-
 **What You'll Learn:**
 - How to adjust the quality of JPG images in PDFs using GroupDocs.Viewer for Java
 - Setting up your environment with Maven and configuring dependencies

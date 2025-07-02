@@ -17,8 +17,6 @@ keywords:
 ## Introduction
 Rendering specific sections, like print areas, of a spreadsheet can significantly improve efficiency when sharing or generating previews without overwhelming users with extraneous data. This tutorial guides you through using **GroupDocs.Viewer for Java** to render print areas effectively, ideal for developers aiming to enhance their applications.
 
-![Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
-
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer for Java
 - Efficiently rendering spreadsheet print areas

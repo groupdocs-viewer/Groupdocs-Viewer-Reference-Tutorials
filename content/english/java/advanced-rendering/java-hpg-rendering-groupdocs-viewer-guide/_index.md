@@ -18,8 +18,6 @@ keywords:
 
 Are you looking for an efficient way to convert High Precision Graphics (HPG) files into accessible formats like HTML, JPG, PNG, or PDF using Java? This guide is tailored for developers aiming to enhance document accessibility and usability in web publishing and document management. Learn how to use GroupDocs.Viewer for Java to transform HPG files seamlessly.
 
-![HPG Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/hpg-rendering-java.png)
-
 **What You'll Learn:**
 - Render HPG files into HTML, JPG, PNG, and PDF formats using GroupDocs.Viewer
 - Set up your development environment with ease

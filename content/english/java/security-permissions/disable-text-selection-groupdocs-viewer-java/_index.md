@@ -15,9 +15,6 @@ keywords:
 # How to Implement Disable Text Selection in PDF Rendering with GroupDocs.Viewer Java
 ## Introduction
 Do you need a secure way to display PDFs on the web without allowing text selection? This comprehensive guide demonstrates how to disable text selection using the GroupDocs.Viewer for Java library. By converting text into images, your content remains secure and uneditable when displayed online.
-
-![Disable Text Selection in PDFs with GroupDocs.Viewer Java](/viewer/security-permissions/disable-text-selection-in-pdfs-java.png)
-
 **What You'll Learn:**
 - Configuring GroupDocs.Viewer to render PDFs with disabled text selection
 - Setting up your environment with GroupDocs.Viewer

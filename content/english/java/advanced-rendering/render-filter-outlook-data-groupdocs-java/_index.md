@@ -18,8 +18,6 @@ keywords:
 
 Managing countless emails in Outlook can be daunting. With **GroupDocs.Viewer for Java**, you can filter messages by text or sender/recipient seamlessly while rendering these files, saving time and effort. This tutorial will guide you through setting up and using **GroupDocs.Viewer for Java** to enhance your email management tasks.
 
-![Outlook Data Rendering and Filtering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
-
 **What You’ll Learn:**
 - Setting up GroupDocs.Viewer in a Java environment
 - Filtering and rendering Outlook data files step-by-step

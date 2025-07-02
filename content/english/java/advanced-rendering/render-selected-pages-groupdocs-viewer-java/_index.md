@@ -18,8 +18,6 @@ keywords:
 
 Displaying only particular sections of a document in your web application can be challenging. With the growing need for efficient data presentation, rendering selected pages without overwhelming users is essential. **GroupDocs.Viewer for Java** simplifies this task by allowing specific sections to be displayed as HTML with embedded resources. This tutorial will guide you through rendering selected pages using GroupDocs.Viewer.
 
-![Render Selected Pages of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
-
 ### What You'll Learn:
 - Setting up GroupDocs.Viewer in your Java environment
 - Rendering specific document pages using the Viewer API

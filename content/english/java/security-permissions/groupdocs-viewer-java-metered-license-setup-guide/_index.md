@@ -18,8 +18,6 @@ keywords:
 
 Managing document viewing efficiently and cost-effectively is crucial for Java applications. By setting a metered license using GroupDocs.Viewer for Java, you can control your usage based on the number of documents processed or viewed, ensuring scalability without unexpected costs.
 
-![Metered License with GroupDocs.Viewer Java](/viewer/security-permissions/metered-license-java.png)
-
 In this comprehensive guide, you'll learn how to set up and configure a metered license for GroupDocs.Viewer in your Java applications. You’ll understand:
 - How to acquire and apply a metered license
 - The setup steps required for integrating GroupDocs.Viewer into your project

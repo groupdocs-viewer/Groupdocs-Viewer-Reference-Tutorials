@@ -18,9 +18,7 @@ keywords:
 
 In today's digital world, efficiently converting complex documents is crucial for developers aiming to enhance workflows and user experiences. This tutorial will guide you through using GroupDocs.Viewer for Java to render Formatted Open Document Pages (FODPs) into HTML, JPG, PNG, or PDF formats.
 
-![Render FODP Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-fodp-documents-java.png)
-
- Learn:**
+**What You'll Learn:**
 - Setting up GroupDocs.Viewer for Java
 - Rendering FODP files to multiple formats with step-by-step instructions
 - Real-world applications of document rendering

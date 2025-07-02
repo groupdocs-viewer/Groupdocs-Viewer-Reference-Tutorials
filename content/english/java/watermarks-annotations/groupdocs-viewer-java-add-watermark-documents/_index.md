@@ -17,8 +17,6 @@ keywords:
 
 Protect your documents by adding watermarks during rendering for copyright protection or branding purposes. This guide will walk you through using the GroupDocs.Viewer library in Java to seamlessly add watermarks, enhancing document security and brand visibility.
 
-![Add Watermarks to Documents with GroupDocs.Viewer Java](/viewer/watermarks-annotations/add-watermarks-to-documents.png)
-
 **Understanding GroupDocs.Viewer Java**: 
 Set up and use this powerful library.
 **Efficient Watermark Application**: 

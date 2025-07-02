@@ -18,7 +18,7 @@ keywords:
 
 Are you struggling with inefficient spreadsheet rendering due to unnecessary empty columns? Improve your document processing efficiency by leveraging the `SkipEmptyColumns` feature of GroupDocs.Viewer for Java. This guide will walk you through optimizing your spreadsheet rendering, resulting in faster load times and reduced output sizes.
 
-![Optimize Java Spreadsheet Rendering with GroupDocs.Viewer Java](/viewer/performance-optimization/optimize-java-spreadsheet-rendering-java.png)
+![Optimize Java Spreadsheet Rendering with GroupDocs.Viewer .NET](/viewer/performance-optimization/optimize-java-spreadsheet-rendering-java.png)
 
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer for Java.

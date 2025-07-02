@@ -9,8 +9,6 @@ url: "/java/security-permissions/"
 
 Learn to secure document viewing with our comprehensive GroupDocs.Viewer security tutorials for Java developers. These detailed guides demonstrate how to implement password protection, manage document permissions, handle encrypted files, and control access to sensitive documents programmatically. Each tutorial provides working Java code examples for common security scenarios, helping you build applications that maintain document confidentiality and integrity while providing controlled viewing capabilities.
 
-![Document Security and Access Control with GroupDocs.Viewer Java](/viewer/security-permissions/img-java.png)
-
 ## Available Tutorials
 
 ### [How to Disable Text Selection in PDFs Using GroupDocs.Viewer Java&#58; A Comprehensive Guide](./disable-text-selection-groupdocs-viewer-java/)

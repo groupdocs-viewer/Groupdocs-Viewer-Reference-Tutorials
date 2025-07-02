@@ -15,9 +15,6 @@ keywords:
 # How to Render Documents with Comments in Java Using GroupDocs.Viewer
 ## Introduction
 Struggling to convert documents into HTML while preserving comments? This guide walks you through rendering a document with its comments using the powerful GroupDocs.Viewer library in Java. Whether you're managing documents seamlessly or enhancing your Java skills, this tutorial is for you.
-
-![Render Documents with Comments with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-with-comments.png)
-
 In this comprehensive walkthrough, learn how to set up and use GroupDocs.Viewer for Java to render documents with embedded comments into HTML format. We'll cover everything from installation and setup to practical applications and performance optimization.
 **What You'll Learn:**
 - How to install and configure GroupDocs.Viewer for Java

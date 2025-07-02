@@ -18,11 +18,13 @@ Struggling with generic or incorrect filenames when converting archive files to 
 
 ![Custom Filenames for PDF Rendering of Archives with GroupDocs.Viewer for Java](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
 
-In this guide, you will learn how to:
-- Set up GroupDocs.Viewer for Java in your project.
-- Render archive files to PDF with a specified filename.
-- Explore practical applications of this feature.
-- Optimize performance for efficient rendering.
+**What You'll Learn:**
+- Setting up GroupDocs.Viewer for Java
+- Rendering archive files into PDF with specified filenames
+- Practical applications of custom filename features
+- Best practices for performance optimization
+
+Let's dive in by setting up your environment and exploring the key features that make GroupDocs.Viewer a powerful tool for document rendering.
 
 ## Prerequisites
 

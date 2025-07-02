@@ -18,8 +18,6 @@ keywords:
 
 Managing the order of pages when converting documents to PDFs can be challenging. Whether you're reorganizing presentation slides or aligning sections in a report, maintaining the correct page sequence is crucial. With **GroupDocs.Viewer for Java**, you can effortlessly reorder pages during PDF rendering, ensuring your documents are always presented as intended.
 
-![PDF Page Reordering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-page-reordering-java.png)
-
 This comprehensive tutorial will guide you through using GroupDocs.Viewer to reorder pages in a PDF document. You'll learn how to:
 - Set up and configure GroupDocs.Viewer for Java
 - Implement page reordering when converting documents to PDFs
