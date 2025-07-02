@@ -16,6 +16,8 @@ keywords:
 ## Introduction
 Are you looking to render Compiled HTML Help (CHM) files into more widely supported formats like HTML, JPG, PNG, and PDF? Whether it's for archival purposes or enhancing accessibility on various platforms, converting these documents can be a game-changer. This tutorial explores how to seamlessly accomplish this using GroupDocs.Viewer Java. You'll learn the ins and outs of rendering CHM files efficiently with this powerful library.
 
+![Render CHM Files with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-chm-files-java.png)
+
 **What You'll Learn:**
 - How to set up GroupDocs.Viewer for Java in your project.
 - Step-by-step guides on converting CHM documents to HTML, JPG, PNG, and PDF formats.

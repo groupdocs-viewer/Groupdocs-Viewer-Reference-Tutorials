@@ -20,6 +20,8 @@ Discover the process of transforming Animated PNG (APNG) files into various form
 
 Displaying animated images on websites or applications can be challenging. APNGs are perfect for rich graphics, but converting them across platforms requires a robust solution. **GroupDocs.Viewer for Java** simplifies rendering these animations into multiple formats seamlessly.
 
+![Render Animated PNGs with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-animated-pngs-java.png)
+
 In this tutorial, you'll learn how to use GroupDocs.Viewer to:
 - Render APNG files as embedded HTML documents.
 - Convert each APNG frame into separate JPG images.

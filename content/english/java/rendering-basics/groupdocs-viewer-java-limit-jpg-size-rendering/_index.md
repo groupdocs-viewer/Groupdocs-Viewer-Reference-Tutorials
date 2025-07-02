@@ -18,6 +18,8 @@ keywords:
 
 In today's digital world, efficiently managing document rendering is crucial for businesses aiming to streamline operations and enhance user experience. One common challenge developers face is controlling the output size of rendered images when converting documents to JPG format. This tutorial addresses this issue by demonstrating how to set an image size limit using GroupDocs.Viewer for Java.
 
+![Limit JPG Size in Document Rendering with GroupDocs.Viewer for Java](/viewer/rendering-basics/limit-jpg-size-in-document-rendering-java.png)
+
 **What You'll Learn:**
 - How to configure GroupDocs.Viewer for Java
 - Implementing image size limits in document rendering

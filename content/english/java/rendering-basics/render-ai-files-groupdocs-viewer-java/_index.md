@@ -18,6 +18,8 @@ keywords:
 
 In the digital landscape, efficiently converting Adobe Illustrator (AI) documents into various formats is a crucial task for developers and businesses. Whether you need to display an AI file on a web page or convert it into high-resolution images or PDFs, the right tools are essential. GroupDocs.Viewer for Java offers a robust solution to this challenge, simplifying the process of converting AI files into HTML, JPG, PNG, and PDF formats.
 
+![Render AI Files with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-ai-files-java.png)
+
 This tutorial will guide you through using GroupDocs.Viewer for Java to perform these conversions seamlessly. By the end of this guide, you'll be equipped with the knowledge needed to render AI files in multiple formats efficiently.
 
 **What You’ll Learn:**

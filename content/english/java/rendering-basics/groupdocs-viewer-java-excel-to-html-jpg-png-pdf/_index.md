@@ -18,6 +18,8 @@ keywords:
 
 Transforming spreadsheet data into various formats like HTML, JPG, PNG, or PDF while retaining crucial details such as row and column headings is essential in many scenarios. Whether you're generating reports, sharing information with stakeholders, or integrating spreadsheets into web applications, converting Excel sheets can be a key requirement. This guide will walk you through how GroupDocs.Viewer Java makes these tasks easy and precise.
 
+![convert Excel files into HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/rendering-basics/convert-excel-files-into-html-jpg-png-and-pdf.png)
+
 **What You'll Learn:**
 - Setting up and using GroupDocs.Viewer for Java
 - Rendering Excel files into HTML, JPG, PNG, and PDF formats

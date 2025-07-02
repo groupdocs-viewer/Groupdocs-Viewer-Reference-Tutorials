@@ -18,6 +18,8 @@ keywords:
 
 Working with Microsoft Project (MS Project) documents often requires sharing detailed project information, including notes, in accessible formats like HTML, JPG, PNG, or PDF. This guide will show you how to effortlessly render MS Project documents into these formats using GroupDocs.Viewer for Java. Whether you're a developer looking to streamline your workflow or an organization aiming to enhance document accessibility, this tutorial will equip you with the necessary tools and knowledge.
 
+![Render MS Project Files as HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-ms-project-files-as-html-jpg-png-and-pdf-java.png)
+
 ## What You'll Learn:
 - How to use GroupDocs.Viewer for Java to convert MS Project files.
 - Steps to render documents into HTML, JPG, PNG, and PDF formats.

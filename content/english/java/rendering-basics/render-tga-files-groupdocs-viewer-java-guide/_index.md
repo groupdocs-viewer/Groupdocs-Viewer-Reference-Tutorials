@@ -18,6 +18,8 @@ keywords:
 
 Struggling to convert your Truevision TGA (TARGA) files into more accessible formats like HTML, JPG, PNG, or PDF? Whether for web presentation, image processing, or document archiving, converting TGA files can be daunting. This tutorial guides you through using GroupDocs.Viewer Java—a powerful tool that simplifies these conversions with ease.
 
+![Render Truevision TGA Files with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-truevision-tga-files-java.png)
+
 **What You'll Learn:**
 - How to set up and use GroupDocs.Viewer Java.
 - Step-by-step guides for rendering TGA files into HTML, JPG, PNG, and PDF formats.

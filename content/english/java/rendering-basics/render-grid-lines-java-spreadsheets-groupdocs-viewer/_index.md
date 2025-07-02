@@ -18,6 +18,8 @@ keywords:
 
 Struggling to visualize spreadsheet documents clearly, especially when it comes to essential grid lines? Whether you're creating reports or analyzing complex datasets, grid lines significantly enhance data interpretation. **GroupDocs.Viewer for Java** offers a straightforward solution for rendering these crucial elements.
 
+![Render Grid Lines with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-grid-lines-java.png)
+
 In this tutorial, we'll guide you through using GroupDocs.Viewer to render grid lines in spreadsheet documents. By the end, you will have hands-on experience with:
 - Setting up GroupDocs.Viewer for Java
 - Configuring HTML view options for embedded resources and grid line rendering

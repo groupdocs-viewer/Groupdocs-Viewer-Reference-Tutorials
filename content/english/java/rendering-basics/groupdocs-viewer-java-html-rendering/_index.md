@@ -18,6 +18,8 @@ keywords:
 
 In today's digital environment, converting documents to universally accessible formats like HTML is essential for seamless sharing across platforms. GroupDocs.Viewer for Java simplifies this process by allowing you to load and render local disk-stored documents into HTML with embedded resources. This tutorial will guide you through using this powerful tool for document conversion.
 
+![Load and Render Documents as HTML with GroupDocs.Viewer for Java](/viewer/rendering-basics/load-and-render-documents-as-html.png)
+
 **What You'll Learn:**
 - Setting up GroupDocs.Viewer in a Java environment
 - Steps to convert local documents to HTML files

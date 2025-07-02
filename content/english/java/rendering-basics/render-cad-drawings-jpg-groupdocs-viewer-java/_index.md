@@ -18,6 +18,8 @@ keywords:
 
 Converting intricate Computer-Aided Design (CAD) drawings from DWG format into more accessible JPG images can be challenging. This comprehensive guide will demonstrate how to utilize GroupDocs.Viewer for Java to render CAD drawings with specific configurations using a PC3 configuration file.
 
+![Render CAD Drawings as JPG with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-cad-drawings-as-jpg-java.png)
+
 **What You'll Learn:**
 - Setting up your environment for GroupDocs.Viewer
 - Configuring paths for rendering output

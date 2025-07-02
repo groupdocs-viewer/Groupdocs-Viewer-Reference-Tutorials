@@ -18,6 +18,8 @@ keywords:
 
 Displaying document attachments effectively in web applications can be challenging. **GroupDocs.Viewer for Java** offers a robust solution to render these attachments seamlessly into HTML format, transforming documents like emails with embedded files into interactive and visually appealing HTML pages.
 
+![Render Document Attachments into HTML with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-document-attachments-into-html-java.png)
+
 In this tutorial, you'll learn how to use the GroupDocs.Viewer Java library to enhance your application's functionality by rendering document attachments. 
 
 **Key Learnings:**

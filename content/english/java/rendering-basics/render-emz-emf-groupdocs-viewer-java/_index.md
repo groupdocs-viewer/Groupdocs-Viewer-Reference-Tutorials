@@ -18,6 +18,8 @@ keywords:
 
 Need to convert Enhanced Metafile (EMF) or compressed EMZ files into more accessible formats like HTML, JPG, PNG, or PDF? This guide demonstrates how to use **GroupDocs.Viewer for Java** to achieve seamless conversions. By the end of this tutorial, you'll know how to render these vector graphics efficiently across platforms.
 
+![Render EMZ/EMF Files with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-emz-emf-files-java.png)
+
 ### What You'll Learn
 - Setting up GroupDocs.Viewer in a Java environment.
 - Step-by-step rendering of EMZ/EMF files into HTML, JPG, PNG, and PDF.

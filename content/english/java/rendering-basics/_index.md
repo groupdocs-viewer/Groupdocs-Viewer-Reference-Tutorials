@@ -9,6 +9,8 @@ url: "/java/rendering-basics/"
 
 Master document rendering techniques with our detailed GroupDocs.Viewer Java tutorials. These step-by-step guides demonstrate how to convert and render documents to various output formats, control rendering quality, manage page-level rendering, and implement cross-format document visualization. Each tutorial includes working Java code examples for common rendering scenarios, helping you build applications that can transform documents into multiple presentation formats.
 
+![Document Rendering Fundamentals with GroupDocs.Viewer for Java](/viewer/rendering-basics/img-java.png)
+
 ## Available Tutorials
 
 ### [Comprehensive Guide&#58; Convert Excel 2003 XML to HTML/JPG/PNG/PDF with GroupDocs.Viewer Java](./groupdocs-viewer-java-excel-2003-xml-conversion/)

@@ -17,6 +17,8 @@ keywords:
 ## Introduction
 Are you looking for an efficient way to convert your Excel 2003 XML files into different formats like HTML, JPG, PNG, or PDF? This tutorial will demonstrate how to seamlessly render these files using GroupDocs.Viewer for Java. Automate this conversion process to save time and ensure your data is presented in the required format.
 
+![Convert Excel 2003 XML to HTML/JPG/PNG/PDF with GroupDocs.Viewer for Java](/viewer/rendering-basics/convert-excel-2003-xml-to-html-jpg-png-pdf.png)
+
 In this guide, you'll learn:
 - How to render Excel 2003 XML files into HTML
 - Convert them to JPG images

@@ -18,6 +18,8 @@ keywords:
 
 In the digital era, rendering documents seamlessly within applications is essential for providing smooth user experiences. Whether you're developing enterprise solutions or web-based document management systems, handling file formats like DOCX in real-time can be challenging. **GroupDocs.Viewer for Java** simplifies this process with its robust features and ease of use.
 
+![Render DOCX Files from InputStream with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-docx-files-from-inputstream-java.png)
+
 This tutorial guides you through loading and rendering a DOCX file directly from an `InputStream` using GroupDocs.Viewer for Java, ideal for scenarios where documents are streamed or generated on-the-fly.
 
 **What You'll Learn:**

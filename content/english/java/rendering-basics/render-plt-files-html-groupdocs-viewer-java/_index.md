@@ -18,6 +18,8 @@ keywords:
 
 Converting Plotter files (PLT) to HTML can be challenging, especially within a Java environment. This step-by-step guide demonstrates how to render PLT files into HTML using the powerful GroupDocs.Viewer for Java library. By transforming these files into HTML, you make them easier to view and share across different platforms and devices. In this guide, we'll cover each step of setting up your environment, implementing the conversion process, and optimizing your application's performance.
 
+![Render PLT Files to HTML with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-plt-files-to-html-java.png)
+
 **What You’ll Learn:**
 - Configuring GroupDocs.Viewer for Java
 - Steps to render PLT files into HTML format

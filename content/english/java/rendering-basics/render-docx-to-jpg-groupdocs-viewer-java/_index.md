@@ -18,6 +18,8 @@ keywords:
 
 Converting document pages into image files can simplify sharing and presentation. Rendering documents as images is particularly useful in web applications or digital archives. This tutorial will guide you through using GroupDocs.Viewer for Java to transform each page of a DOCX file into individual JPG images.
 
+![Render DOCX to JPG with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-docx-to-jpg-java.png)
+
 In this comprehensive guide, you'll learn how to:
 - Set up and configure GroupDocs.Viewer for Java.
 - Convert document pages into high-quality JPG images.

@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to display only certain pages from a document in your Java application? Whether it's for generating previews, creating custom PDFs, or managing content more effectively, rendering specific pages can be highly beneficial. In this tutorial, we'll explore how the **GroupDocs.Viewer Java** library simplifies displaying a range of consecutive pages from any document type. Follow along to set up your environment and implement this solution step-by-step.
 
+![Render Specific Pages with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-specific-pages-java.png)
+
 ### What You'll Learn:
 - How to set up GroupDocs.Viewer for Java
 - Rendering specific pages from documents using the GroupDocs.Viewer API

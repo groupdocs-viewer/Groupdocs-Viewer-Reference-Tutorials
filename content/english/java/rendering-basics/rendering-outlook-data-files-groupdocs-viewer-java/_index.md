@@ -18,6 +18,8 @@ keywords:
 
 Rendering messages from Outlook data files directly within a Java application? Use the powerful GroupDocs.Viewer library for this purpose. This tutorial demonstrates how to display contents of an OST or PST file's Inbox folder as HTML pages embedded with resources, making it ideal for integrating email functionalities into your Java applications.
 
+![Render Outlook Data Files with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-outlook-data-files-java.png)
+
 **What You'll Learn:**
 - Configuring GroupDocs.Viewer in a Java project.
 - Rendering messages from the Inbox folder of Outlook data files.

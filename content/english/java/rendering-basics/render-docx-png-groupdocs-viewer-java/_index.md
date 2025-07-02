@@ -18,6 +18,8 @@ keywords:
 
 Converting Word documents into image formats like PNG is essential for various purposes such as archiving, sharing without editing capabilities, or creating document thumbnails. This tutorial guides you through using **GroupDocs.Viewer for Java** to transform your Word documents into high-quality PNG images effortlessly.
 
+![Convert DOCX Files to PNG with GroupDocs.Viewer for Java](/viewer/rendering-basics/convert-docx-files-to-png-java.png)
+
 ### What You'll Learn:
 - How to set up and configure GroupDocs.Viewer for Java.
 - A step-by-step guide on rendering DOCX files to PNG images.

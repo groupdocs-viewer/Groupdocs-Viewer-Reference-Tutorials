@@ -18,6 +18,8 @@ keywords:
 
 Converting your DOCX documents into images can streamline sharing specific pages or creating visual content. In this tutorial, we'll explore how to render documents as images using **GroupDocs.Viewer for Java** effectively and efficiently.
 
+![Render DOCX to Image with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-docx-to-image.png)
+
 With this powerful library, you gain the ability to set custom image dimensions, manage resources optimally, and integrate document rendering seamlessly into your applications.
 
 ### What You'll Learn

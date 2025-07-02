@@ -18,6 +18,8 @@ keywords:
 
 Converting Outlook PST and OST files to HTML using Java can streamline data accessibility in web applications or automate email processing tasks. This tutorial leverages the power of GroupDocs.Viewer for Java, a powerful library for rendering various document types, including Outlook data files.
 
+![Render Outlook PST and OST Files to HTML with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-outlookpst-and-ost-files-to-html-java.png)
+
 By following this guide, you'll learn how to:
 - Set up GroupDocs.Viewer in your Java project
 - Retrieve view information from Outlook data files (PST/OST)

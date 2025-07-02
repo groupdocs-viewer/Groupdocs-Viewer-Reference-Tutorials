@@ -18,6 +18,8 @@ keywords:
 
 Rendering specific layouts from CAD drawings is essential for focusing on particular design elements, enhancing visual presentations' precision. This tutorial demonstrates how to extract and display designated sections of a CAD file using **GroupDocs.Viewer for Java**.
 
+![Render Specific CAD Drawings with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-specific-cad-drawings-java.png)
+
 In this guide, you'll learn:
 - How to set up GroupDocs.Viewer for Java
 - Steps to render specific layouts from CAD files

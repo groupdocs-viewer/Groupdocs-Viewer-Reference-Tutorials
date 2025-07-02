@@ -18,6 +18,8 @@ keywords:
 
 Converting complex CAD files like CF2 into accessible formats such as HTML, JPG, PNG, or PDF can be challenging. This guide will show you how to use **GroupDocs.Viewer for Java** to render CF2 files—commonly used in 3D modeling—into various output formats effortlessly. By the end of this tutorial, you'll know how to transform CAD drawings into user-friendly documents.
 
+![Render CF2 Files to HTML, JPG, PNG, PDF with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-cf2-files-to-html-jpg-png-pdf-java.png)
+
 ### What You'll Learn:
 - Rendering CF2 files to HTML, JPG, PNG, and PDF using GroupDocs.Viewer for Java.
 - Setting up your development environment for GroupDocs.Viewer.
