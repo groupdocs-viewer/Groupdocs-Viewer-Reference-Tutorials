@@ -17,7 +17,7 @@ keywords:
 ## Introduction
 In today's digital world, optimizing web content is crucial for faster loading times and improved user experiences. One effective way to achieve this is by minifying HTML documents, which reduces file size by removing unnecessary characters without affecting functionality. This guide shows you how to use **GroupDocs.Viewer** with Java to efficiently minify HTML documents.
 
-![Minify HTML Files with GroupDocs.Viewer .NET](/viewer/performance-optimization/minify-html-files-java.png)
+![Minify HTML Files with GroupDocs.Viewer Java](/viewer/performance-optimization/minify-html-files-java.png)
 
 **What You'll Learn:**
 - How GroupDocs.Viewer simplifies the process of minifying HTML files.

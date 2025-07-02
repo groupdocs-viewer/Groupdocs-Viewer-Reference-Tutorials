@@ -18,6 +18,8 @@ keywords:
 
 Are you looking to customize email metadata while converting emails to HTML? This comprehensive guide will walk you through renaming email fields using GroupDocs.Viewer for Java. With this powerful tool, developers can render documents seamlessly and tailor how email headers appear in the HTML output, enhancing readability and usability.
 
+![Rename Email Fields When Converting Emails to HTML with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+
 ### What You'll Learn:
 - How to use GroupDocs.Viewer for Java to convert emails to HTML format.
 - Techniques to rename email fields such as "From," "To," "Sent," and "Subject."
