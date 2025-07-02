@@ -15,6 +15,9 @@ keywords:
 
 In today's digital age, safeguarding sensitive documents is crucial. Whether you are a business protecting intellectual property or an individual securing personal information, converting Word files into password-protected PDFs can be a game-changer. This tutorial will guide you through using **GroupDocs.Viewer for .NET** to render DOCX documents into protected PDFs with specific restrictions, such as denying printing.
 
+![Secure DOCX Files as PDFs with GroupDocs.Viewer .NET](/viewer/security-permissions/secure-docx-files-aspdfs.png)
+
+
 You will learn how to:
 
 - Install and set up GroupDocs.Viewer for .NET.

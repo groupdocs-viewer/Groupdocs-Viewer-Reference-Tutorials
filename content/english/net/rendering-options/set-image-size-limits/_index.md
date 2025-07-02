@@ -1,98 +1,73 @@
 ---
-title: "Set Image Size Limits in .NET | GroupDocs.Viewer"
-description: "Learn how to set image size limits when rendering documents to JPG in your .NET applications using GroupDocs.Viewer, enhancing document viewing experiences."
+title: Set Image Size Limits
+linktitle: Set Image Size Limits
+second_title: GroupDocs.Viewer .NET API
+description: Learn how to set image size limits in .NET applications effortlessly using GroupDocs.Viewer for .NET, enhancing document viewing experiences.
 weight: 21
-url: "/net/rendering-options/set-image-size-limits/"
-keywords:
-- set image size limits .net
-- groupdocs.viewer for .net
-- .net document rendering
-- limit image width .net
-
+url: /net/rendering-options/set-image-size-limits/
 ---
 
-## Introduction
+# Set Image Size Limits
 
-**GroupDocs.Viewer for .NET** is a powerful tool designed to facilitate seamless document viewing within .NET applications. With its robust features and intuitive interface, developers can effortlessly integrate document viewing capabilities into their projects, enhancing user experience and productivity. In this tutorial, we will explore how to set image size limits using GroupDocs.Viewer for .NET, ensuring optimal display of documents while maintaining performance and efficiency.
+## Introduction
+GroupDocs.Viewer for .NET is a powerful tool designed to facilitate seamless document viewing within .NET applications. With its robust features and intuitive interface, developers can effortlessly integrate document viewing capabilities into their projects, enhancing user experience and productivity. In this tutorial, we will explore how to set image size limits using GroupDocs.Viewer for .NET, ensuring optimal display of documents while maintaining performance and efficiency.
+
+![Set Image Size Limits with GroupDocs.Viewer .NET](/viewer/rendering-options/set-image-size-limits.png)
 
 ## Prerequisites
-
-Before you begin, ensure you have the following:
-*   A working knowledge of C# and .NET development.
-*   **.NET SDK:** Installed on your machine.
-*   **GroupDocs.Viewer for .NET:** Download the library [here](https://releases.groupdocs.com/viewer/net/).
-*   **IDE:** Visual Studio or any other .NET development environment.
-*   **Sample Document:** A document file (e.g., DOCX, PDF) for testing.
+Before diving into the tutorial, make sure you have the following prerequisites in place:
+1. GroupDocs.Viewer for .NET: Ensure you have the necessary GroupDocs.Viewer for .NET library installed in your development environment. You can download it from the [website](https://releases.groupdocs.com/viewer/net/).
+2. Development Environment: Set up your preferred .NET development environment, such as Visual Studio, with the required configurations.
+3. Document Directory: Have a designated directory where your documents are stored, and ensure that the directory path is accessible within your application.
 
 ## Import Namespaces
-
-Before proceeding with the implementation, it is essential to import the required namespaces to access the functionalities of GroupDocs.Viewer for .NET effectively.
-
+Before proceeding with the implementation, it's essential to import the required namespaces to access the functionalities of GroupDocs.Viewer for .NET effectively.
 ```csharp
 using System;
 using System.IO;
 using GroupDocs.Viewer.Options;
 ```
-
 ## Step 1: Define Output Directory and File Path
-
-First, define the directory where you want the rendered image to be saved and the full path for the output file.
-
 ```csharp
 string outputDirectory = "Your Document Directory";
-string outputFilePath = Path.Combine(outputDirectory, "result_image_size_limit.jpg");
+string outputFile = Path.Combine(outputDirectory, "result_image_size_limit.jpg");
 ```
-**Note:** Replace `"Your Document Directory"` with the actual path.
-
-## Step 2: Initialize Viewer and Configure JPG View Options
-
-Initialize a `Viewer` object with the path to your document. Then, configure the `JpgViewOptions` to set the maximum width for the rendered image.
-
+Ensure to replace `"Your Document Directory"` with the actual path to your document directory.
+## Step 2: Initialize Viewer Object and Specify Document Path
 ```csharp
-using (Viewer viewer = new Viewer("SAMPLE.DOCX"))
+using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 {
-    JpgViewOptions options = new JpgViewOptions(outputFilePath);
-    options.MaxWidth = 400;
-    
-    // The rendering process will go here
-}
+    // TestFiles.SAMPLE_DOCX represents the path to the sample document.
+    // Replace it with the path to your desired document.
 ```
-**Note:** Replace `"SAMPLE.DOCX"` with the path to your document. The `MaxWidth` property ensures that the rendered image does not exceed the specified width, maintaining an optimal display.
-
-## Step 3: Render the Document with Specified Options
-
-This line of code triggers the rendering process, generating the output image with the defined size limits.
-
+Replace `TestFiles.SAMPLE_DOCX` with the path to your document. This could be a DOCX, PDF, or any other supported file format.
+## Step 3: Configure JPEG View Options
 ```csharp
-// Inside the using block
+JpgViewOptions options = new JpgViewOptions(outputFile);
+options.MaxWidth = 400;
+```
+Adjust the `MaxWidth` property to set the maximum width of the rendered image as per your requirements. This ensures that the image does not exceed the specified width, maintaining optimal display.
+## Step 4: Render Document with Specified Options
+```csharp
 viewer.View(options);
 ```
-
-## Step 4: Display Success Message
-
-Upon successful rendering, a message indicating the completion and the output directory path is displayed.
-
+This line of code triggers the rendering process, generating the output image with the defined size limits.
+## Step 5: Display Success Message
 ```csharp
 Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
 ```
+Upon successful rendering, a message indicating the successful completion along with the output directory path is displayed.
 
 ## Conclusion
-
 In conclusion, mastering the art of setting image size limits using GroupDocs.Viewer for .NET can significantly enhance document viewing experiences within your .NET applications. By following the step-by-step guide outlined in this tutorial, you can effortlessly optimize image display while ensuring performance and efficiency.
-
-## FAQs
-
+## FAQ's
 ### Can I set both maximum width and height for the rendered images?
-Yes, you can set both `MaxWidth` and `MaxHeight` properties in the view options to control the dimensions of the rendered image.
-
+Yes, you can set both maximum width and height using the appropriate properties in the view options.
 ### What document formats are supported by GroupDocs.Viewer for .NET?
 GroupDocs.Viewer for .NET supports a wide range of document formats, including DOCX, PDF, PPT, XLS, and more.
-
 ### Is GroupDocs.Viewer for .NET compatible with .NET Core?
 Yes, GroupDocs.Viewer for .NET offers compatibility with .NET Core, allowing seamless integration into modern .NET applications.
-
-### Can I customize the output image format to something other than JPEG?
+### Can I customize the output image format other than JPEG?
 Yes, GroupDocs.Viewer for .NET provides support for various output formats, including PNG, TIFF, and PDF.
-
 ### Is there a trial version available for testing before purchasing?
-Yes, you can get a [free trial](https://releases.groupdocs.com/) from the official website to explore the features and functionalities of GroupDocs.Viewer for .NET before making a purchase.
+Yes, you can avail of a free trial version from the [website](https://releases.groupdocs.com/viewer/net/). to explore the features and functionalities of GroupDocs.Viewer for .NET before making a purchase.

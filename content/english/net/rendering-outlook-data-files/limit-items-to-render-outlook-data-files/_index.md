@@ -14,6 +14,9 @@ keywords:
 
 **GroupDocs.Viewer for .NET** is a powerful tool for developers looking to integrate document viewing capabilities into their .NET applications seamlessly. Whether you need to display PDFs, Microsoft Office documents, or Outlook data files, GroupDocs.Viewer offers a robust solution. In this tutorial, we will delve into how to limit the number of items rendered specifically in Outlook data files, using step-by-step instructions.
 
+![Limit Number of Items to Render in Outlook Data Files with GroupDocs.Viewer .NET](/viewer/rendering-outlook-data-files/limit-number-of-items-to-render-in-outlook-data-files.png)
+
+
 ## Prerequisites
 
 Before getting started, ensure you have the following:

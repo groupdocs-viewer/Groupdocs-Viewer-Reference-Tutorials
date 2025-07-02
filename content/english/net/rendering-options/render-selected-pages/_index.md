@@ -1,30 +1,29 @@
 ---
-title: "Render Selected Pages of a Document in .NET | GroupDocs.Viewer"
-description: "Learn how to render selected pages from a document to HTML in your .NET applications using GroupDocs.Viewer. A step-by-step tutorial with code examples."
+title: Render Selected Pages
+linktitle: Render Selected Pages
+second_title: GroupDocs.Viewer .NET API
+description: Learn how to render selected pages from documents using Groupdocs.Viewer for .NET. Step-by-step tutorial with code examples included.
 weight: 17
-url: "/net/rendering-options/render-selected-pages/"
-keywords:
-- render selected pages .net
-- groupdocs.viewer for .net
-- .net document rendering
-- view specific pages .net
-
+url: /net/rendering-options/render-selected-pages/
 ---
+
+# Render Selected Pages
 
 ## Introduction
 
-In this tutorial, we will delve into how to utilize **GroupDocs.Viewer for .NET** to render selected pages from a document. Whether you are a seasoned developer or just starting, this step-by-step guide will walk you through the process with ease.
+In this tutorial, we'll delve into how to utilize Groupdocs.Viewer for .NET to render selected pages from a document. Whether you're a seasoned developer or just starting out, this step-by-step guide will walk you through the process with ease.
+
+![Render Selected Pages with GroupDocs.Viewer .NET](/viewer/rendering-options/render-selected-pages.png)
 
 ## Prerequisites
 
-Before you begin, ensure you have the following:
-*   A working knowledge of C# and .NET development.
-*   **.NET SDK:** Installed on your machine.
-*   **GroupDocs.Viewer for .NET:** Download the library [here](https://releases.groupdocs.com/viewer/net/).
-*   **IDE:** Visual Studio or any other .NET development environment.
-*   **Sample Document:** A document file (e.g., DOCX, PDF) for testing purposes.
+Before we begin, make sure you have the following prerequisites in place:
 
-## Import Namespaces
+### 1. Installation
+
+Ensure that you have Groupdocs.Viewer for .NET installed in your development environment. If not, you can download it from the [Download link](https://releases.groupdocs.com/viewer/net/).
+
+## Importing Namespaces
 
 In your C# code file, import the necessary namespaces to access the required classes and methods. You can do this using the `using` directive:
 
@@ -34,42 +33,49 @@ using System.IO;
 using GroupDocs.Viewer.Options;
 ```
 
-Now, let's break down the example code into multiple steps.
+Now let's break down the example code provided into multiple steps:
 
-## Step 1: Define Output Directory and File Path Format
+## Step 1: Set Output Directory
 
-First, define the directory where you want the rendered pages to be saved and the format for the file paths of the rendered pages.
+Define the directory where you want the rendered pages to be saved. Replace `"Your Document Directory"` with the desired directory path.
 
 ```csharp
 string outputDirectory = "Your Document Directory";
+```
+
+## Step 2: Define Page File Path Format
+
+Specify the format for the file paths of the rendered pages. This will be used to save each page as an HTML file in the output directory.
+
+```csharp
 string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 ```
-**Note:** Replace `"Your Document Directory"` with the actual path.
 
-## Step 2: Initialize Viewer and Configure HTML View Options
+## Step 3: Instantiate Viewer Object
 
-Create an instance of the `Viewer` class, passing the path of the document you want to render as an argument. Then, set up the `HtmlViewOptions` for rendering.
+Create an instance of the Viewer class, passing the path of the document you want to render as an argument.
 
 ```csharp
-using (Viewer viewer = new Viewer("SAMPLE.DOCX"))
-{
-    HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-    
-    // The rendering process will go here
-}
+using (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX))
 ```
-**Note:** Replace `"SAMPLE.DOCX"` with the path to your document.
 
-## Step 3: Render Selected Pages
+## Step 4: Configure HTML View Options
 
-Specify the page numbers you want to render. In this case, we are rendering pages 1 and 3. Then, call the `View` method on the `Viewer` object, passing the options and page numbers as arguments.
+Set up the HTML view options for rendering. In this example, we're configuring options to embed resources in the HTML output.
 
 ```csharp
-// Inside the using block
+HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
+```
+
+## Step 5: Render Selected Pages
+
+Specify the page numbers you want to render. In this case, we're rendering pages 1 to 3. Then, call the View method on the Viewer object, passing the options and page numbers as arguments.
+
+```csharp
 viewer.View(options, 1, 3);
 ```
 
-## Step 4: Display Output Result
+## Step 6: Output Result
 
 Finally, display a message indicating the successful rendering of the document and the location where the output files are saved.
 
@@ -79,21 +85,26 @@ Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {o
 
 ## Conclusion
 
-Congratulations! You have successfully learned how to render selected pages from a document using GroupDocs.Viewer for .NET. With this knowledge, you can now integrate document rendering capabilities into your .NET applications with ease.
+Congratulations! You've successfully learned how to render selected pages from a document using Groupdocs.Viewer for .NET. With this knowledge, you can now integrate document rendering capabilities into your .NET applications with ease.
 
-## FAQs
+## FAQ's
 
-### Can I render pages from different types of documents, such as PDFs or images?
-Yes, GroupDocs.Viewer for .NET supports rendering pages from various document formats, including PDFs, Microsoft Office documents, and image files.
+### Q: Can I render pages from different types of documents, such as PDFs or images?
 
-### Is there a trial version available for testing before purchasing?
-Yes, you can access a [free trial](https://releases.groupdocs.com/) of GroupDocs.Viewer for .NET from the official website.
+A: Yes, Groupdocs.Viewer for .NET supports rendering pages from various document formats, including PDFs, Microsoft Office documents, and image files.
 
-### Can I customize the output format to something other than HTML?
-Absolutely, GroupDocs.Viewer for .NET provides options to render pages as images (JPG, PNG), PDF, and more, in addition to HTML.
+### Q: Is there a trial version available for testing before purchasing?
 
-### How can I obtain a temporary license for testing purposes?
-Temporary licenses can be acquired from the [temporary license page](https://purchase.groupdocs.com/temporary-license/) on the GroupDocs website.
+A: Yes, you can access a free trial version of Groupdocs.Viewer for .NET from the [website](https://releases.groupdocs.com/).
 
-### Where can I seek assistance or get help with any issues I encounter?
-You can visit the [GroupDocs.Viewer forum](https://forum.groupdocs.com/c/viewer/9) for support and guidance from the community and developers.
+### Q: Can I customize the output format other than HTML?
+
+A: Absolutely, Groupdocs.Viewer for .NET provides options to render pages as images, PDFs, and more, in addition to HTML.
+
+### Q: How can I obtain temporary licenses for testing purposes?
+
+A: Temporary licenses can be acquired from the [temporary license page](https://purchase.groupdocs.com/temporary-license/) on the Groupdocs website.
+
+### Q: Where can I seek assistance or get help with any issues I encounter?
+
+A: You can visit the [Groupdocs.Viewer forum](https://forum.groupdocs.com/c/viewer/9) for support and guidance from the community and developers.
