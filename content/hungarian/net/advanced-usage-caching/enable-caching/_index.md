@@ -5,8 +5,8 @@
 "title": "Gyorsítótár engedélyezése a gyorsabb dokumentumfeldolgozás érdekében"
 "url": "/hu/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Gyorsítótár engedélyezése a gyorsabb dokumentumfeldolgozás érdekében
 
 ## Bevezetés

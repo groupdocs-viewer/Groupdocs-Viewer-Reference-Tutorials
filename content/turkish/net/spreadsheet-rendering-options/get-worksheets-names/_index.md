@@ -5,8 +5,8 @@
 "title": "Çalışma Sayfaları Adlarını Alın"
 "url": "/tr/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Çalışma Sayfaları Adlarını Alın
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ภาพวาด CAD"
 "url": "/th/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # การเรนเดอร์ภาพวาด CAD
 
 

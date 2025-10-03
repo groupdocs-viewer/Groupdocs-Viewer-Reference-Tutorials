@@ -4,8 +4,8 @@
 "title": "如何在 GroupDocs.Viewer Java&#58; 文件和 URL 设置指南中设置许可证"
 "url": "/zh/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # 如何在 GroupDocs.Viewer Java 中设置许可证：文件和 URL 设置指南
 
 ## 介绍

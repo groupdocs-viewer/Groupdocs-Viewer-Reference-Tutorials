@@ -4,8 +4,8 @@
 "title": "Vykreslování PDF v Javě pomocí GroupDocs.Viewer a implementace zalomení stránek v tabulkách"
 "url": "/cs/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí vykreslování PDF v Javě: GroupDocs.Viewer s konci stránek
 
 Odemkněte sílu vykreslování tabulek ve vašich aplikacích Java pomocí GroupDocs.Viewer. Tato komplexní příručka vám ukáže, jak implementovat vykreslování PDF v Javě s zalomením stránek pro bezproblémový převod do PDF.

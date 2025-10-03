@@ -5,8 +5,8 @@
 "title": "按分頁符號渲染"
 "url": "/zh-hant/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # 按分頁符號渲染
 
 ## 介紹

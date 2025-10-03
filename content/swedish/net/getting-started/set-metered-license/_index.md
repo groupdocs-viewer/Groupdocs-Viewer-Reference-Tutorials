@@ -5,8 +5,8 @@
 "title": "Ställ in uppmätt licens"
 "url": "/sv/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Ställ in uppmätt licens
 
 ## Introduktion

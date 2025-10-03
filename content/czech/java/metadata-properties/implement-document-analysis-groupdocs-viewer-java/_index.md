@@ -4,8 +4,8 @@
 "title": "Implementace analýzy dokumentů pomocí GroupDocs.Viewer pro Javu – extrakce metadat stránek a textových řádků"
 "url": "/cs/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Implementace analýzy dokumentů pomocí GroupDocs.Viewer pro Javu: Extrakce metadat stránky a textových řádků
 
 ## Zavedení

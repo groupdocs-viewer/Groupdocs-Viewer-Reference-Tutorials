@@ -5,8 +5,8 @@
 "title": "TGA képek renderelése"
 "url": "/hu/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # TGA képek renderelése
 
 ## Bevezetés

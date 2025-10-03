@@ -5,8 +5,8 @@
 "title": "Hiển thị tệp CHM"
 "url": "/vi/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Hiển thị tệp CHM
 
 ## Giới thiệu

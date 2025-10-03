@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके PST/OST को HTML, JPG, PNG, PDF में बदलें | निर्यात और रूपांतरण गाइड"
 "url": "/hi/java/export-conversion/convert-pst-ost-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके PST/OST को HTML, JPG, PNG, PDF में परिवर्तित करें
 
 ## परिचय

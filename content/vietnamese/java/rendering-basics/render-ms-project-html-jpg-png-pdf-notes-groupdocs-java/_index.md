@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp MS Project dưới dạng HTML, JPG, PNG và PDF với ghi chú bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp MS Project dưới dạng HTML, JPG, PNG và PDF với ghi chú bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

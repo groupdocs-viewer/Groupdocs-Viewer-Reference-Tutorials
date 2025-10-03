@@ -5,8 +5,8 @@
 "title": "Render Kolom dan Baris Tersembunyi"
 "url": "/id/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Render Kolom dan Baris Tersembunyi
 
 ## Perkenalan

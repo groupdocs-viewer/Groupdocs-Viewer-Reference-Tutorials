@@ -4,8 +4,8 @@
 "title": "Unduh dan Render Dokumen dari FTP secara Efisien menggunakan GroupDocs.Viewer .NET"
 "url": "/id/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengunduh dan Merender Dokumen dari FTP Secara Efisien Menggunakan GroupDocs.Viewer .NET
 
 ## Perkenalan

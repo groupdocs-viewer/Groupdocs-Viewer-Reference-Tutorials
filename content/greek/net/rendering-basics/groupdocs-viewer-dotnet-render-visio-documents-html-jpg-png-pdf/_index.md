@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε έγγραφα του Visio ως HTML, JPG, PNG και PDF σε .NET χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε έγγραφα του Visio ως HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer σε .NET
 
 ## Εισαγωγή

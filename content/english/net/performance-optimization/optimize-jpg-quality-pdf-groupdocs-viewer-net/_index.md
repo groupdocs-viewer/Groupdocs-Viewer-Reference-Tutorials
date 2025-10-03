@@ -8,10 +8,8 @@ keywords:
 - optimize JPG quality PDF
 - GroupDocs.Viewer .NET
 - PDF rendering with GroupDocs
-
+type: docs
 ---
-
-
 # Optimize JPG Quality in PDFs with GroupDocs.Viewer .NET
 
 ## Introduction

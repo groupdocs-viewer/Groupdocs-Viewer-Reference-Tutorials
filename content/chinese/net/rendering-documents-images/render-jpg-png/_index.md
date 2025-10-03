@@ -5,8 +5,8 @@
 "title": "将文档渲染为 JPGPNG"
 "url": "/zh/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # 将文档渲染为 JPGPNG
 
 ## 介绍

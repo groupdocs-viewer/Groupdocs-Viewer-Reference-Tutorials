@@ -5,8 +5,8 @@
 "title": "विज़ियो आंकड़े रेंडर करें"
 "url": "/hi/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # विज़ियो आंकड़े रेंडर करें
 
 ## परिचय

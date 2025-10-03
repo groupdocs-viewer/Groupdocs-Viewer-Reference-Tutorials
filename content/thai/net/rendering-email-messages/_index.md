@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ข้อความอีเมล์"
 "url": "/th/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # การเรนเดอร์ข้อความอีเมล์
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - Excel to HTML conversion
 - Excel to JPG/PNG/PDF rendering
-
+type: docs
 ---
-
-
 # How to Use GroupDocs.Viewer Java for Excel to HTML/JPG/PNG/PDF Conversion: A Step-by-Step Guide
 
 ## Introduction

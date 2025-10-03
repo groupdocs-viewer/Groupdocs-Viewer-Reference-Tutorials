@@ -5,8 +5,8 @@
 "title": "वर्कशीट के नाम प्राप्त करें"
 "url": "/hi/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # वर्कशीट के नाम प्राप्त करें
 
 ## परिचय

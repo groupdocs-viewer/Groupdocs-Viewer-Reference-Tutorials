@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["GroupDocs.Viewer"]
 tags: ["archive-rendering", "dotnet", "csharp", "document-viewer"]
+type: docs
 ---
-
 # How to Render Archive Files in .NET with Custom Filenames
 
 ## Introduction

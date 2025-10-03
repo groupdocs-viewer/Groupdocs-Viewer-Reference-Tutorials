@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ अनुलग्नक को कैसे पुनर्प्राप्त करें और प्रिंट करें | उन्नत रेंडरिंग गाइड"
 "url": "/hi/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ अनुलग्नक को कैसे पुनर्प्राप्त करें और प्रिंट करें | उन्नत रेंडरिंग गाइड
 
 ## परिचय

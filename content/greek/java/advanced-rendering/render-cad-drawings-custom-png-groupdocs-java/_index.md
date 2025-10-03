@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε σχέδια CAD ως PNG με προσαρμοσμένο μέγεθος και χρώμα φόντου χρησιμοποιώντας το GroupDocs.Viewer για Java"
 "url": "/el/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε σχέδια CAD ως PNG με προσαρμοσμένο μέγεθος και χρώμα φόντου χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Jak vykreslit vybrané stránky pomocí GroupDocs.Viewer .NET – Komplexní průvodce pro vývojáře"
 "url": "/cs/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit konkrétní stránky pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Отображение областей печати электронных таблиц Java с помощью GroupDocs.Viewer для Java&#58; Полное руководство"
 "url": "/ru/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Визуализация областей печати электронных таблиц Java с помощью GroupDocs.Viewer для Java
 
 ## Введение

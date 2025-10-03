@@ -5,8 +5,8 @@
 "title": "ปรับขนาดหน้าเมื่อแสดงข้อความอีเมล์"
 "url": "/th/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # ปรับขนาดหน้าเมื่อแสดงข้อความอีเมล์
 
 ## การแนะนำ

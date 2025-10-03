@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके कुशल Excel प्रिंट क्षेत्र रेंडरिंग"
 "url": "/hi/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके कुशल Excel प्रिंट क्षेत्र रेंडरिंग
 
 ## परिचय

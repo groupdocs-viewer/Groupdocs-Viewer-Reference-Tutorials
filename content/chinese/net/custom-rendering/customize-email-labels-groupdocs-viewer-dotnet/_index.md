@@ -4,8 +4,8 @@
 "title": "在 GroupDocs.Viewer for .NET 中自定义电子邮件标签——重命名字段的完整指南"
 "url": "/zh/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer for .NET 中自定义电子邮件标签：重命名字段的完整指南
 
 ## 介绍

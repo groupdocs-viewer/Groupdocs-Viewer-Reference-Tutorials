@@ -4,8 +4,8 @@
 "title": "Optimieren Sie die Outlook-Datenwiedergabe in .NET mit GroupDocs.Viewer – Leistungstipps und -techniken"
 "url": "/de/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimieren Sie die Outlook-Datenwiedergabe mit GroupDocs.Viewer .NET
 
 ## Einführung

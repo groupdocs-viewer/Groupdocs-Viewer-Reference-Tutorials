@@ -4,8 +4,8 @@
 "title": "Cara Membuat Perubahan Terlacak dalam Dokumen Word Menggunakan GroupDocs.Viewer untuk Java; Panduan Lengkap"
 "url": "/id/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Menampilkan Perubahan Terlacak dalam Dokumen Word dengan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

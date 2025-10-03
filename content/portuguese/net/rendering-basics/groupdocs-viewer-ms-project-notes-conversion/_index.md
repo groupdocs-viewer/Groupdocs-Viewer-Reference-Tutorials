@@ -4,8 +4,8 @@
 "title": "Renderize arquivos do MS Project com eficiência usando o GroupDocs.Viewer para .NET"
 "url": "/pt/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Renderize arquivos do MS Project com eficiência usando o GroupDocs.Viewer para .NET
 
 ## Introdução

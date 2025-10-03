@@ -4,8 +4,8 @@
 "title": "Ottimizza le dimensioni del disegno CAD utilizzando GroupDocs.Viewer .NET per prestazioni Web migliorate"
 "url": "/it/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Ottimizza le dimensioni del disegno CAD utilizzando GroupDocs.Viewer .NET per prestazioni Web migliorate
 
 ## Introduzione

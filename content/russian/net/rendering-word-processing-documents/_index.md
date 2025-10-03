@@ -5,8 +5,8 @@
 "title": "Обработка текстовых документов"
 "url": "/ru/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Обработка текстовых документов
 
 

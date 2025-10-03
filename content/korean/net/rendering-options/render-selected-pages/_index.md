@@ -5,8 +5,8 @@
 "title": "선택한 페이지 렌더링"
 "url": "/ko/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # 선택한 페이지 렌더링
 
 ## 소개

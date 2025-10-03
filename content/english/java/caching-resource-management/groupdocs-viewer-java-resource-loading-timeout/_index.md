@@ -9,8 +9,8 @@ weight: 1
 url: "/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 categories: ["Java Development"]
 tags: ["GroupDocs", "document-rendering", "performance-optimization", "java-tutorials"]
+type: docs
 ---
-
 # GroupDocs Viewer Java Timeout: Stop Documents from Hanging Forever
 
 ## Why Your Documents Keep Hanging (And How to Fix It)

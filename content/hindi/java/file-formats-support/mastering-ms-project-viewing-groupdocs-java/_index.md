@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ जावा में MS प्रोजेक्ट देखने में महारत हासिल करें एक व्यापक गाइड"
 "url": "/hi/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # जावा में GroupDocs.Viewer के साथ MS प्रोजेक्ट दस्तावेज़ देखने में महारत हासिल करना
 
 ## परिचय

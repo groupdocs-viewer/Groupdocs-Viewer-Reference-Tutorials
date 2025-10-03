@@ -5,8 +5,8 @@
 "title": "ระบุชื่อไฟล์เมื่อเรนเดอร์ไฟล์เก็บถาวร"
 "url": "/th/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # ระบุชื่อไฟล์เมื่อเรนเดอร์ไฟล์เก็บถาวร
 
 ## การแนะนำ

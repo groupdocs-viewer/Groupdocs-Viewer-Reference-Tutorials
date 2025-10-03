@@ -3,8 +3,8 @@
 "title": "Výukové programy pro extrakci metadat dokumentů pro GroupDocs.Viewer .NET"
 "url": "/cs/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Výukové programy pro extrakci metadat dokumentů pro GroupDocs.Viewer .NET
 
 Naučte se pracovat s metadaty a vlastnostmi dokumentů v našich tutoriálech pro GroupDocs.Viewer v .NET. Tyto praktické průvodce ukazují, jak extrahovat informace o dokumentech, číst pole metadat, spravovat vlastnosti dokumentů a implementovat zpracování dokumentů založené na metadatech. Každý tutoriál obsahuje funkční příklady kódu .NET pro běžné scénáře metadat, které vám pomohou vytvářet aplikace, které dokáží efektivně analyzovat a spravovat informace o dokumentech.

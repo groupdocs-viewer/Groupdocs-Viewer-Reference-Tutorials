@@ -5,8 +5,8 @@
 "title": "تحويل المستندات إلى HTML"
 "url": "/ar/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # تحويل المستندات إلى HTML
 
 

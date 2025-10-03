@@ -5,8 +5,8 @@
 "title": "将档案渲染为单个或多个 HTML 页面"
 "url": "/zh/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # 将档案渲染为单个或多个 HTML 页面
 
 ## 介绍

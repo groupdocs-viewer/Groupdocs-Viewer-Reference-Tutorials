@@ -5,8 +5,8 @@
 "title": "Betűtípus-tippek engedélyezése PDF-ben"
 "url": "/hu/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Betűtípus-tippek engedélyezése PDF-ben
 
 ## Bevezetés

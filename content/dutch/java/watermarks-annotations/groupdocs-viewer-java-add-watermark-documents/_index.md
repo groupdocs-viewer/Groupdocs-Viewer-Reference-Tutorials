@@ -4,8 +4,8 @@
 "title": "Watermerken toevoegen aan documenten met GroupDocs.Viewer Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Watermerken toevoegen aan documenten met GroupDocs.Viewer Java: een uitgebreide handleiding
 
 ## Invoering

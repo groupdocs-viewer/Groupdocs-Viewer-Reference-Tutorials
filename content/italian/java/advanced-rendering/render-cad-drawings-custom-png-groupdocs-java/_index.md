@@ -4,8 +4,8 @@
 "title": "Come visualizzare disegni CAD in formato PNG con dimensioni e colori di sfondo personalizzati utilizzando GroupDocs.Viewer per Java"
 "url": "/it/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Come visualizzare disegni CAD in formato PNG con dimensioni e colori di sfondo personalizzati utilizzando GroupDocs.Viewer per Java
 
 ## Introduzione

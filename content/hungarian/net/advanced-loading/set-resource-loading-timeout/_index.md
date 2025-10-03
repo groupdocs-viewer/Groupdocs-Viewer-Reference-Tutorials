@@ -5,8 +5,8 @@
 "title": "Erőforrás betöltési időkorlátjának beállítása (speciális)"
 "url": "/hu/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Erőforrás betöltési időkorlátjának beállítása (speciális)
 
 ## Bevezetés

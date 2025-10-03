@@ -4,8 +4,8 @@
 "title": "उन्नत परियोजना प्रबंधन के लिए GroupDocs.Viewer .NET का उपयोग करके MS प्रोजेक्ट दस्तावेज़ प्रस्तुत करें"
 "url": "/hi/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके MS प्रोजेक्ट दस्तावेज़ों को मास्टर रेंडर करना
 
 ## परिचय

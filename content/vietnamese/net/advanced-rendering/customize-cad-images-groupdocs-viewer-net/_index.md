@@ -4,8 +4,8 @@
 "title": "Tùy chỉnh hình ảnh CAD với GroupDocs.Viewer .NET&#58; Kỹ thuật dựng hình nâng cao"
 "url": "/vi/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất và tùy chỉnh hình ảnh CAD bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

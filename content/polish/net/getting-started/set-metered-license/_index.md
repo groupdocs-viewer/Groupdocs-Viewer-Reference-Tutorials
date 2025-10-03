@@ -5,8 +5,8 @@
 "title": "Ustaw licencję licznikową"
 "url": "/pl/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Ustaw licencję licznikową
 
 ## Wstęp

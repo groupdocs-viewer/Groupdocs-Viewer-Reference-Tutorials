@@ -4,8 +4,8 @@
 "title": "PDF metaadatok és tulajdonságok lekérése a GroupDocs.Viewer használatával Java nyelven – lépésről lépésre útmutató"
 "url": "/hu/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # PDF metaadatok és tulajdonságok lekérése a GroupDocs.Viewer használatával Java-ban
 
 Üdvözlünk ebben az átfogó útmutatóban, amely bemutatja, hogyan lehet megtekintési információkat kinyerni egy PDF-dokumentumból a Java nyelven futó GroupDocs.Viewer könyvtár segítségével. Ha programozottan szeretne kinyerni olyan adatokat, mint az oldalszám, a dokumentumtípus és az engedélyek PDF-fájlokból, jó helyen jár.

@@ -4,8 +4,8 @@
 "title": "Wdrażanie renderowania .NET WMZ/WMF za pomocą GroupDocs.Viewer w celu zapewnienia zgodności z siecią Web i wieloma platformami"
 "url": "/pl/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Wdrażanie renderowania .NET WMZ/WMF za pomocą GroupDocs.Viewer w celu zapewnienia zgodności z siecią Web i wieloma platformami
 
 ## Wstęp

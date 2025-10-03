@@ -4,8 +4,8 @@
 "title": "Extrahera och visa kalkylbladsnamn i Java med hjälp av GroupDocs.Viewer API"
 "url": "/sv/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Extrahera och visa kalkylbladsnamn i Java med hjälp av GroupDocs.Viewer API
 
 ## Introduktion

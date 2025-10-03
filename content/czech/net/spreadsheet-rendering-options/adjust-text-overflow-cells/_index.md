@@ -5,8 +5,8 @@
 "title": "Úprava přetečení textu v buňkách"
 "url": "/cs/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Úprava přetečení textu v buňkách
 
 ## Zavedení

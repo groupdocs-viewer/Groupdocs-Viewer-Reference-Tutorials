@@ -3,8 +3,8 @@
 "title": "Tutorials voor het extraheren van documentmetagegevens voor GroupDocs.Viewer Java"
 "url": "/nl/java/metadata-properties/"
 "weight": 14
+type: docs
 ---
-
 # Tutorials voor het extraheren van documentmetagegevens voor GroupDocs.Viewer Java
 
 Leer werken met documentmetadata en -eigenschappen met onze GroupDocs.Viewer Java-tutorials. Deze praktische handleidingen laten zien hoe u documentinformatie kunt extraheren, metadatavelden kunt lezen, documenteigenschappen kunt beheren en metadata-gebaseerde documentverwerking kunt implementeren. Elke tutorial bevat werkende Java-codevoorbeelden voor veelvoorkomende metadatascenario's, waarmee u applicaties kunt bouwen die documentinformatie effectief kunnen analyseren en beheren.

@@ -4,8 +4,8 @@
 "title": "Merender Folder Arsip di Java Menggunakan GroupDocs.Viewer&#58; Panduan Langkah demi Langkah"
 "url": "/id/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Merender Folder Arsip dengan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

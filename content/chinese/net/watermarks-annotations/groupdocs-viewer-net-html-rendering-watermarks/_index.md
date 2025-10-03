@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 和 HTML 转换与水印集成掌握 .NET 中的文档渲染"
 "url": "/zh/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET 中的文档渲染：HTML 转换和水印集成
 
 ## 介绍

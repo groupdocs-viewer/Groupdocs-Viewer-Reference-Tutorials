@@ -5,8 +5,8 @@
 "title": "Ajuster le débordement de texte dans les cellules"
 "url": "/fr/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Ajuster le débordement de texte dans les cellules
 
 ## Introduction

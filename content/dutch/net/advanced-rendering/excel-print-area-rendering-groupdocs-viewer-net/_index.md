@@ -4,8 +4,8 @@
 "title": "Efficiënte weergave van Excel-afdrukgebieden met GroupDocs.Viewer voor .NET"
 "url": "/nl/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Efficiënte weergave van Excel-afdrukgebieden met GroupDocs.Viewer voor .NET
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Jak vykreslit CAD výkresy jako PNG s vlastní velikostí a barvou pozadí pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit CAD výkresy jako PNG s vlastní velikostí a barvou pozadí pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

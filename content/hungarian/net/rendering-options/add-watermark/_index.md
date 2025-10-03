@@ -5,8 +5,8 @@
 "title": "Vízjel hozzáadása a dokumentumhoz"
 "url": "/hu/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Vízjel hozzáadása a dokumentumhoz
 
 ## Bevezetés

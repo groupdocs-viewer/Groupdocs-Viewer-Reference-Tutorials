@@ -5,8 +5,8 @@
 "title": "从文件设置许可证"
 "url": "/zh/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # 从文件设置许可证
 
 ## 介绍

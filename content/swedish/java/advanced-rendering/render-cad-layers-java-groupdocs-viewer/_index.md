@@ -4,8 +4,8 @@
 "title": "Rendera specifika CAD-lager i Java med GroupDocs.Viewer – en omfattande guide"
 "url": "/sv/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rendera specifika CAD-lager i Java med GroupDocs.Viewer
 ## Introduktion
 Har du svårt att rendera specifika lager från en CAD-ritning? Oavsett om du är ingenjör, arkitekt eller utvecklare som arbetar med komplexa konstruktioner kan det vara utmanande att hantera och visualisera specifika CAD-lager. Den här guiden visar hur du renderar specifika lager effektivt med hjälp av det kraftfulla GroupDocs.Viewer för Java.

@@ -4,8 +4,8 @@
 "title": "Domine la representación SVGZ en .NET con GroupDocs.Viewer&#58; una guía completa para desarrolladores"
 "url": "/es/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Cómo dominar la representación SVGZ en .NET con GroupDocs.Viewer: una guía completa para desarrolladores
 
 ## Introducción

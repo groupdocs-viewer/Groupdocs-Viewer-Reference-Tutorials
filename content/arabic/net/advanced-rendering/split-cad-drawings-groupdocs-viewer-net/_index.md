@@ -4,8 +4,8 @@
 "title": "كيفية تقسيم رسومات CAD إلى مربعات باستخدام GroupDocs.Viewer .NET للحصول على عرض فعال"
 "url": "/ar/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تقسيم رسومات CAD إلى مربعات باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

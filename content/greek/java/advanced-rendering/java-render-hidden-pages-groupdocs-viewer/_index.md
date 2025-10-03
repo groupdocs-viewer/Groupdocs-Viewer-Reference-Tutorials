@@ -4,8 +4,8 @@
 "title": "Java Πώς να αποδώσετε κρυφές σελίδες χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Πώς να αποδώσετε κρυφές σελίδες χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

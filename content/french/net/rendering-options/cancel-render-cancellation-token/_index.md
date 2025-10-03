@@ -5,8 +5,8 @@
 "title": "Annuler le rendu avec le jeton d'annulation"
 "url": "/fr/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Annuler le rendu avec le jeton d'annulation
 
 ## Introduction

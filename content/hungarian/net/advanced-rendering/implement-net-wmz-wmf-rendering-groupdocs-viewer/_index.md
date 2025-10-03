@@ -4,8 +4,8 @@
 "title": ".NET WMZ/WMF renderelés implementálása GroupDocs.Viewer segítségével webes és platformfüggetlen kompatibilitás érdekében"
 "url": "/hu/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # .NET WMZ/WMF renderelés implementálása GroupDocs.Viewer segítségével webes és platformfüggetlen kompatibilitás érdekében
 
 ## Bevezetés

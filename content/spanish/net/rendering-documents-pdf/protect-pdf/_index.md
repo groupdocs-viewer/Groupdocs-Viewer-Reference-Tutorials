@@ -5,8 +5,8 @@
 "title": "Proteger el PDF renderizado con contraseña"
 "url": "/es/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Proteger el PDF renderizado con contraseña
 
 ## Introducción

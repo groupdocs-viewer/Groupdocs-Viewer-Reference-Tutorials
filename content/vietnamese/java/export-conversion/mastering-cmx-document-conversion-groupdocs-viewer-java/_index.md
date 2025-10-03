@@ -4,8 +4,8 @@
 "title": "Chuyển đổi tài liệu CMX hiệu quả bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Chuyển đổi tài liệu CMX hiệu quả bằng GroupDocs.Viewer cho Java: Hướng dẫn toàn diện
 
 ## Giới thiệu

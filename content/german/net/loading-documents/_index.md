@@ -5,8 +5,8 @@
 "title": "Dokumente laden"
 "url": "/de/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Dokumente laden
 
 ## Einführung

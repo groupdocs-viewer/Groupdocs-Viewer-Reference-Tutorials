@@ -5,8 +5,8 @@
 "title": "渲染存档文件时指定文件名"
 "url": "/zh/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # 渲染存档文件时指定文件名
 
 ## 介绍

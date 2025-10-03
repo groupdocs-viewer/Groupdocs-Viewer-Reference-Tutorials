@@ -4,8 +4,8 @@
 "title": "Эффективное преобразование документов HPG в HTML, JPG, PNG, PDF с помощью GroupDocs.Viewer .NET"
 "url": "/ru/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать документы HPG с помощью GroupDocs.Viewer .NET
 
 ## Введение

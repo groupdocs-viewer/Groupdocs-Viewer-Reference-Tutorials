@@ -5,8 +5,8 @@
 "title": "Rinomina i campi e-mail durante il rendering"
 "url": "/it/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Rinomina i campi e-mail durante il rendering
 
 ## Introduzione

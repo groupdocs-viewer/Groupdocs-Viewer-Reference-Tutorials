@@ -4,8 +4,8 @@
 "title": "Como recuperar layouts e camadas CAD usando GroupDocs.Viewer .NET para gerenciamento eficiente de design"
 "url": "/pt/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Como recuperar layouts e camadas CAD usando GroupDocs.Viewer .NET
 ## Introdução
 No âmbito do Design Assistido por Computador (CAD), gerenciar desenhos complexos com eficiência é crucial, principalmente ao lidar com múltiplos layouts e camadas em um único arquivo. Para arquitetos, engenheiros e designers, o acesso rápido a informações específicas aumenta a produtividade. **GroupDocs.Viewer .NET** oferece uma solução poderosa permitindo que desenvolvedores extraiam programaticamente layouts e camadas de desenhos CAD.

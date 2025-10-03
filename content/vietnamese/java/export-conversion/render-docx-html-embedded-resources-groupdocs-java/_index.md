@@ -4,8 +4,8 @@
 "title": "Chuyển đổi DOCX sang HTML với Tài nguyên nhúng bằng cách sử dụng GroupDocs.Viewer cho Java"
 "url": "/vi/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Chuyển đổi DOCX sang HTML với Tài nguyên nhúng bằng cách sử dụng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

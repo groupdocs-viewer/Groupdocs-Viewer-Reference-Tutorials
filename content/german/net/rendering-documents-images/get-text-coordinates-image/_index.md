@@ -5,8 +5,8 @@
 "title": "Holen Sie sich Textkoordinaten für die Bildwiedergabe"
 "url": "/de/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Holen Sie sich Textkoordinaten für die Bildwiedergabe
 
 ## Einführung

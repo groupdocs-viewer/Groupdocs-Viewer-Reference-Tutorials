@@ -4,8 +4,8 @@
 "title": "كيفية تحميل المستندات باستخدام ترميز محدد في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تحميل المستندات باستخدام ترميز محدد في Java باستخدام GroupDocs.Viewer
 
 ## مقدمة

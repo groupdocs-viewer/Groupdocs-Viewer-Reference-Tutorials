@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory TGA v .NET pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory TGA v .NET pomocí GroupDocs.Viewer: Komplexní průvodce
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "渲染电子邮件消息"
 "url": "/zh/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # 渲染电子邮件消息
 
 ## 介绍

@@ -4,8 +4,8 @@
 "title": "Optimera kalkylbladsrendering med GroupDocs.Viewer för .NET &#50; Hoppa över tomma kolumner"
 "url": "/sv/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimera kalkylbladsrendering med GroupDocs.Viewer för .NET
 ## Så här hoppar du över rendering av tomma kolumner i kalkylblad med GroupDocs.Viewer .NET
 ### Introduktion

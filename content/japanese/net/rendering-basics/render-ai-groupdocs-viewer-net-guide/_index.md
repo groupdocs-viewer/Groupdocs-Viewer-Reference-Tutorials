@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用した AI ファイルのレンダリングに関する開発者向け総合ガイド"
 "url": "/ja/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用した AI ファイルのレンダリングに関する開発者向け総合ガイド
 
 ## 導入

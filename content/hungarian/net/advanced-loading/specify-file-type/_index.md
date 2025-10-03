@@ -5,8 +5,8 @@
 "title": "Fájltípus megadása dokumentumok betöltésekor"
 "url": "/hu/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Fájltípus megadása dokumentumok betöltésekor
 
 ## Bevezetés

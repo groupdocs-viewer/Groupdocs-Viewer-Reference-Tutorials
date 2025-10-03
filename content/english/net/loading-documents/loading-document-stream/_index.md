@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Loading"]
 tags: ["streams", "document-viewer", "dotnet", "groupdocs"]
+type: docs
 ---
-
 # Load Documents from Stream in .NET - Complete Guide
 
 ## Introduction

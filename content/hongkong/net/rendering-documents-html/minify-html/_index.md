@@ -5,8 +5,8 @@
 "title": "縮小渲染的 HTML 文件"
 "url": "/zh-hant/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # 縮小渲染的 HTML 文件
 
 ## 介紹

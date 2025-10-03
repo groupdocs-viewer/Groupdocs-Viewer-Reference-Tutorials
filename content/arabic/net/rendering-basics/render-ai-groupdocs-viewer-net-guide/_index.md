@@ -4,8 +4,8 @@
 "title": "دليل شامل لعرض ملفات الذكاء الاصطناعي باستخدام GroupDocs.Viewer .NET للمطورين"
 "url": "/ar/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # دليل شامل لعرض ملفات الذكاء الاصطناعي باستخدام GroupDocs.Viewer .NET للمطورين
 
 ## مقدمة

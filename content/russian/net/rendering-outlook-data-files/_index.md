@@ -5,8 +5,8 @@
 "title": "Рендеринг файлов данных Outlook (PST, OST)"
 "url": "/ru/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Рендеринг файлов данных Outlook (PST, OST)
 
 ## Введение

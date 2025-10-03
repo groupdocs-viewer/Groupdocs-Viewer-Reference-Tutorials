@@ -4,8 +4,8 @@
 "title": "Renderize todos os layouts CAD com eficiência usando o GroupDocs.Viewer para Java"
 "url": "/pt/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderize todos os layouts CAD com eficiência usando o GroupDocs.Viewer para Java
 
 ## Introdução

@@ -5,8 +5,8 @@
 "title": "Aktivera teckensnittstips i PDF"
 "url": "/sv/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Aktivera teckensnittstips i PDF
 
 ## Introduktion

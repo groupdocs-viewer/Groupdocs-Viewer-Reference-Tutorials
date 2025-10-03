@@ -4,8 +4,8 @@
 "title": "عرض ملفات OBJ باستخدام GroupDocs.Viewer .NET - دليل شامل لتحويل HTML وJPG وPNG وPDF"
 "url": "/ar/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # عرض ملفات OBJ باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة إلى أساسيات العرض

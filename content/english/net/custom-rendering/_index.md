@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["GroupDocs.Viewer"]
 tags: ["custom-rendering", "dotnet", "document-viewer", "tutorials"]
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Custom Rendering - Complete Tutorial Guide
 
 Want to take your .NET document viewing applications beyond standard rendering? You're in the right place. Custom rendering with GroupDocs.Viewer .NET lets you create tailored document processing solutions that match your exact business requirements - whether you're building specialized viewers, implementing unique formatting rules, or creating industry-specific document workflows.

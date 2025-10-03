@@ -4,8 +4,8 @@
 "title": "Dostosowywanie formatów daty i godziny oraz przesunięć stref czasowych w wiadomościach e-mail za pomocą GroupDocs.Viewer .NET"
 "url": "/pl/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Dostosowywanie formatów daty i godziny oraz stref czasowych w wiadomościach e-mail za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

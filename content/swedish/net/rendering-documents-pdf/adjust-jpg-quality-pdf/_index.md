@@ -5,8 +5,8 @@
 "title": "Justera JPG-bildkvaliteten i renderad PDF"
 "url": "/sv/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Justera JPG-bildkvaliteten i renderad PDF
 
 ## Introduktion

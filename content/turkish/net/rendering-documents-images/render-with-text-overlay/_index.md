@@ -5,8 +5,8 @@
 "title": "Görüntüleme için Metin Üzerine Yerleştirilmiş Şekilde Oluştur"
 "url": "/tr/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Görüntüleme için Metin Üzerine Yerleştirilmiş Şekilde Oluştur
 
 ## giriiş

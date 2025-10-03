@@ -4,8 +4,8 @@
 "title": "TGA fájlok renderelése .NET-ben a GroupDocs.Viewer használatával – Átfogó útmutató"
 "url": "/hu/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # TGA fájlok renderelése .NET-ben a GroupDocs.Viewer használatával: Átfogó útmutató
 
 ## Bevezetés

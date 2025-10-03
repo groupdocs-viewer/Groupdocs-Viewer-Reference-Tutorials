@@ -5,8 +5,8 @@
 "title": "Vykreslení jednoho rozvržení ve výkresech CAD"
 "url": "/cs/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Vykreslení jednoho rozvržení ve výkresech CAD
 
 ## Zavedení

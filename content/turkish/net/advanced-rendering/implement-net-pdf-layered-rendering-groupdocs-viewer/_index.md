@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile .NET PDF Katmanlı İşlemede Ustalaşın&#58; Adım Adım Kılavuz"
 "url": "/tr/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile .NET PDF Katmanlı İşlemede Ustalaşın: Adım Adım Kılavuz
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Rendering Area Cetak Spreadsheet Java dengan GroupDocs.Viewer untuk Java; Panduan Lengkap"
 "url": "/id/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Rendering Area Cetak Spreadsheet Java dengan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

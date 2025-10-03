@@ -5,8 +5,8 @@
 "title": "Απόδοση αρχείων σε μία ή πολλές σελίδες HTML"
 "url": "/el/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Απόδοση αρχείων σε μία ή πολλές σελίδες HTML
 
 ## Εισαγωγή

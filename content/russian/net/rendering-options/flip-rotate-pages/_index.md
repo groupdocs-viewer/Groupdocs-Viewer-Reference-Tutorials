@@ -5,8 +5,8 @@
 "title": "Переворачивать и вращать страницы"
 "url": "/ru/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Переворачивать и вращать страницы
 
 ## Введение

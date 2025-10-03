@@ -8,10 +8,8 @@ keywords:
 - customize email labels in GroupDocs Viewer
 - rename email fields .NET
 - GroupDocs Viewer C# guide
-
+type: docs
 ---
-
-
 # Customize Email Labels in GroupDocs.Viewer for .NET: A Complete Guide to Renaming Fields
 
 ## Introduction

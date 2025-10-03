@@ -5,8 +5,8 @@
 "title": "Отображение скрытых столбцов и строк"
 "url": "/ru/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Отображение скрытых столбцов и строк
 
 ## Введение

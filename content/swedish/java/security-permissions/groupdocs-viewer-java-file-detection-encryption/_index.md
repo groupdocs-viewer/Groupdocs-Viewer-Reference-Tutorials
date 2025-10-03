@@ -4,8 +4,8 @@
 "title": "Implementera fildetektering och krypteringskontroller i Java med GroupDocs.Viewer"
 "url": "/sv/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Implementera fildetektering och krypteringskontroller med GroupDocs.Viewer för Java
 
 ## Introduktion

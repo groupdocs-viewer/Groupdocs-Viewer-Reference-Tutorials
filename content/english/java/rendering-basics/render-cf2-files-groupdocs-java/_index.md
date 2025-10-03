@@ -8,10 +8,8 @@ keywords:
 - render CF2 files
 - GroupDocs.Viewer Java
 - convert CAD drawings
-
+type: docs
 ---
-
-
 # Comprehensive Guide: Rendering CF2 Files to Various Formats Using GroupDocs.Viewer in Java
 
 ## Introduction

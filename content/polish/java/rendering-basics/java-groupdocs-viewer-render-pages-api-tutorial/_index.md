@@ -4,8 +4,8 @@
 "title": "Java Guide&#58; Renderowanie określonych stron za pomocą GroupDocs.Viewer API do podglądu i zarządzania dokumentami"
 "url": "/pl/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Implementacja Java: Renderowanie określonych stron za pomocą API GroupDocs.Viewer
 
 ## Wstęp

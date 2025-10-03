@@ -5,8 +5,8 @@
 "title": "SVG és SVGZ képek renderelése"
 "url": "/hu/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # SVG és SVGZ képek renderelése
 
 ## Bevezetés

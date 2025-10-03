@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสารโครงการตามช่วงเวลาโดยใช้ GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการใช้ GroupDocs.Viewer สำหรับ Java เพื่อทำการเรนเดอร์เอกสารโครงการพร้อมช่วงเวลา
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer에서 이메일 레이블 사용자 지정하기&#58; 필드 이름 바꾸기에 대한 완벽한 가이드"
 "url": "/ko/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer에서 이메일 레이블 사용자 지정: 필드 이름 바꾸기에 대한 완벽한 가이드
 
 ## 소개

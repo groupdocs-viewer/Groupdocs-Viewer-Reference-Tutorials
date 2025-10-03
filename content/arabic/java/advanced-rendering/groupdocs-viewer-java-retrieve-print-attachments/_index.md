@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer لـ Java - استرداد وطباعة مرفقات المستندات"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer لـ Java: استرداد مرفقات المستندات وطباعتها
 
 ## مقدمة

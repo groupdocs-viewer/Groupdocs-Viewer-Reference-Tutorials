@@ -4,8 +4,8 @@
 "title": "So passen Sie den Textüberlauf in Excel-Tabellen mit GroupDocs.Viewer für Java an"
 "url": "/de/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # So passen Sie den Textüberlauf in Excel-Tabellen mit GroupDocs.Viewer für Java an
 ## Einführung
 Der Umgang mit überquellendem Text in Tabellenzellen bei der Konvertierung von Dokumenten in HTML ist eine häufige Herausforderung, insbesondere bei umfangreichen Excel-Dateien. **GroupDocs.Viewer für Java** vereinfacht diesen Vorgang und ermöglicht Ihnen, überlaufenden Text effizient zu verwalten und auszublenden.

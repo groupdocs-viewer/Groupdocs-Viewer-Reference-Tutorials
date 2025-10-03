@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["remote-rendering", "cloud-integration", "ftp-documents", "dotnet-tutorials"]
+type: docs
 ---
-
 # Remote Document Rendering .NET - Complete Cloud Integration Guide
 
 Are you struggling with document rendering when your files are stored remotely? Whether you're dealing with cloud storage providers, FTP servers, or distributed file systems, rendering documents from remote sources can be challenging. This comprehensive guide shows you exactly how to implement robust remote document rendering solutions using GroupDocs.Viewer for .NET.

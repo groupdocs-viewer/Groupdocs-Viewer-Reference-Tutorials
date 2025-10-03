@@ -5,8 +5,8 @@
 "title": "Rendera XML-kalkylblad"
 "url": "/sv/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Rendera XML-kalkylblad
 
 ## Introduktion

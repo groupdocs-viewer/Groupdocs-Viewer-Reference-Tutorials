@@ -4,8 +4,8 @@
 "title": "Rendering di cartelle di archivio in Java utilizzando GroupDocs.Viewer&#58; una guida passo passo"
 "url": "/it/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendering delle cartelle di archivio con GroupDocs.Viewer per Java
 
 ## Introduzione

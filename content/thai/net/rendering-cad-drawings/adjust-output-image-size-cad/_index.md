@@ -5,8 +5,8 @@
 "title": "ปรับขนาดภาพเอาท์พุตสำหรับรูปวาด CAD"
 "url": "/th/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # ปรับขนาดภาพเอาท์พุตสำหรับรูปวาด CAD
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "احصل على معلومات العرض لرسومات CAD"
 "url": "/ar/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # احصل على معلومات العرض لرسومات CAD
 
 ## مقدمة

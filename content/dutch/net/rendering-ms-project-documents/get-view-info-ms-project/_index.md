@@ -5,8 +5,8 @@
 "title": "Informatie over Microsoft Project-documenten weergeven"
 "url": "/nl/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Informatie over Microsoft Project-documenten weergeven
 
 ## Invoering

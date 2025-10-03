@@ -5,8 +5,8 @@
 "title": "Deaktivieren Sie die Überprüfung der Schriftartlizenz in PDF"
 "url": "/de/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Deaktivieren Sie die Überprüfung der Schriftartlizenz in PDF
 
 ## Einführung

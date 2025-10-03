@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer ile Elektronik Tablo Oluşturmayı Optimize Edin&#58; Boş Sütunları Atlayın"
 "url": "/tr/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer ile Elektronik Tablo Oluşturmayı Optimize Edin
 ## GroupDocs.Viewer .NET Kullanılarak E-Tablolarda Boş Sütunların Oluşturulması Nasıl Atlanır
 ### giriiş

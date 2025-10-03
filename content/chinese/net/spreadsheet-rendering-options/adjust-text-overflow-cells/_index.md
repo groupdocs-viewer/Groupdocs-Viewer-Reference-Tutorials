@@ -5,8 +5,8 @@
 "title": "调整单元格中的文本溢出"
 "url": "/zh/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # 调整单元格中的文本溢出
 
 ## 介绍

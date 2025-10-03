@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["archive-files", "groupdocs-viewer", "dotnet", "document-management"]
+type: docs
 ---
-
 # How to Render Archive Files in .NET Applications
 
 ## Introduction

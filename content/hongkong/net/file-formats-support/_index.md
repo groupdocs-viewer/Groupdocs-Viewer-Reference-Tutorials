@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 多格式文件渲染教學"
 "url": "/zh-hant/net/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 多格式文件渲染教學
 
 透過我們適用於 .NET 的 GroupDocs.Viewer 教程，探索全面的文件格式支援。這些詳細的指南示範如何渲染和處理各種文件格式，包括 PDF、Microsoft Office 文件、圖像、CAD 文件以及特殊格式。每個教學課程都提供了可運行的 .NET 程式碼範例，展示如何實現靈活的多格式文件檢視解決方案，以處理各種文件類型並保持一致的渲染品質。

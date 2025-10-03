@@ -5,8 +5,8 @@
 "title": "Załaduj dokumenty z dysku lokalnego"
 "url": "/pl/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Załaduj dokumenty z dysku lokalnego
 
 ## Wstęp

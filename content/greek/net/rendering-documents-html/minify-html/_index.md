@@ -5,8 +5,8 @@
 "title": "Ελαχιστοποίηση αποδοσμένου εγγράφου HTML"
 "url": "/el/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Ελαχιστοποίηση αποδοσμένου εγγράφου HTML
 
 ## Εισαγωγή

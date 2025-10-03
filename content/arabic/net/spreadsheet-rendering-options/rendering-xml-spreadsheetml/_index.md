@@ -5,8 +5,8 @@
 "title": "عرض XML SpreadSheetML"
 "url": "/ar/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # عرض XML SpreadSheetML
 
 ## مقدمة

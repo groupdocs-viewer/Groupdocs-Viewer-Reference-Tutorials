@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - OBJ file rendering
 - 3D model conversion
-
+type: docs
 ---
-
-
 # Render OBJ Files Using GroupDocs.Viewer .NET
 
 ## Introduction to Rendering Basics

@@ -4,8 +4,8 @@
 "title": "Optimalizace kvality JPG v PDF souborech pomocí komplexního průvodce GroupDocs.Viewer .NET"
 "url": "/cs/net/performance-optimization/optimize-jpg-quality-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizace kvality JPG v PDF souborech pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

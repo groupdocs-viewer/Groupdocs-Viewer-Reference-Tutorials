@@ -4,8 +4,8 @@
 "title": "Menguasai Rendering HTML dengan Margin Kustom di .NET Menggunakan GroupDocs.Viewer"
 "url": "/id/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Rendering HTML dengan Margin yang Ditentukan Pengguna di .NET Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

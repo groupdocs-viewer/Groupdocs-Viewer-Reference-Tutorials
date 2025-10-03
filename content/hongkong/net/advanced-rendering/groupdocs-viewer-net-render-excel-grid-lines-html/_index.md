@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 在 Excel 電子表格中呈現網格線以進行 HTML 輸出"
 "url": "/zh-hant/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 在 Excel 電子表格中呈現網格線以進行 HTML 輸出
 
 ## 介紹

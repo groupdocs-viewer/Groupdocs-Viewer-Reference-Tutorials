@@ -5,8 +5,8 @@
 "title": "Erweiterte Nutzung (Caching)"
 "url": "/de/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Erweiterte Nutzung (Caching)
 
 

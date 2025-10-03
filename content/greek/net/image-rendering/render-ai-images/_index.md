@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων τεχνητής νοημοσύνης"
 "url": "/el/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Απόδοση εικόνων τεχνητής νοημοσύνης
 
 ## Εισαγωγή

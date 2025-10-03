@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp dữ liệu Outlook bằng GroupDocs.Viewer trong Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp dữ liệu Outlook bằng GroupDocs.Viewer trong Java: Hướng dẫn từng bước
 
 ## Giới thiệu

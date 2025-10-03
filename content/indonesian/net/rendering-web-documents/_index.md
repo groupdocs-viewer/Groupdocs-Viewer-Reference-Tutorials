@@ -5,8 +5,8 @@
 "title": "Merender Dokumen Web"
 "url": "/id/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Merender Dokumen Web
 
 ## Perkenalan

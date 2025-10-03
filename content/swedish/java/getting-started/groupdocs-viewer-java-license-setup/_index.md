@@ -4,8 +4,8 @@
 "title": "Så här ställer du in licenser i GroupDocs.Viewer i Java-fil- och URL-installationsguiden"
 "url": "/sv/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Så här ställer du in licenser i GroupDocs.Viewer Java: Guide för installation av filer och URL:er
 
 ## Introduktion

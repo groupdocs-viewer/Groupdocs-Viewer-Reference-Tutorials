@@ -4,8 +4,8 @@
 "title": "Come visualizzare le linee della griglia nei fogli di calcolo di Excel utilizzando GroupDocs.Viewer .NET per l'output HTML"
 "url": "/it/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Come visualizzare le linee della griglia nei fogli di calcolo di Excel utilizzando GroupDocs.Viewer .NET per l'output HTML
 
 ## Introduzione

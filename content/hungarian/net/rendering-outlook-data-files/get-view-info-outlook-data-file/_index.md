@@ -5,8 +5,8 @@
 "title": "Outlook adatfájlok (PST, OST) megtekintési információinak lekérése"
 "url": "/hu/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Outlook adatfájlok (PST, OST) megtekintési információinak lekérése
 
 ## Bevezetés

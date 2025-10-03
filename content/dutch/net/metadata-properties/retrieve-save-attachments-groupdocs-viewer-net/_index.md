@@ -4,8 +4,8 @@
 "title": "Documentbijlagen ophalen en opslaan met GroupDocs.Viewer .NET voor efficiënt metagegevensbeheer"
 "url": "/nl/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Documentbijlagen ophalen en opslaan met GroupDocs.Viewer .NET
 
 ## Invoering

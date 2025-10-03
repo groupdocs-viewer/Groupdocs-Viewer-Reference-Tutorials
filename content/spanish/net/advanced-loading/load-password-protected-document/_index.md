@@ -5,8 +5,8 @@
 "title": "Cargar documentos protegidos con contraseña"
 "url": "/es/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Cargar documentos protegidos con contraseña
 
 ## Introducción

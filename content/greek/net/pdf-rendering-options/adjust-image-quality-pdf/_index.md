@@ -5,8 +5,8 @@
 "title": "Προσαρμογή ποιότητας εικόνας σε PDF"
 "url": "/el/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Προσαρμογή ποιότητας εικόνας σε PDF
 
 ## Εισαγωγή

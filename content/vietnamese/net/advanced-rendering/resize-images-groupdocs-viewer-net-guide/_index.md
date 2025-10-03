@@ -4,8 +4,8 @@
 "title": "Cách thay đổi kích thước hình ảnh bằng GroupDocs.Viewer .NET&#58; Hướng dẫn từng bước dành cho nhà phát triển"
 "url": "/vi/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Cách thay đổi kích thước hình ảnh bằng GroupDocs.Viewer .NET: Hướng dẫn từng bước dành cho nhà phát triển
 
 ## Giới thiệu

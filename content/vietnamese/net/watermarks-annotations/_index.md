@@ -3,8 +3,8 @@
 "title": "Hướng dẫn chú thích và hình mờ tài liệu cho GroupDocs.Viewer .NET"
 "url": "/vi/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Hướng dẫn chú thích và hình mờ tài liệu cho GroupDocs.Viewer .NET
 
 Làm chủ các kỹ thuật chú thích và đóng dấu bản quyền tài liệu với hướng dẫn GroupDocs.Viewer .NET của chúng tôi. Các hướng dẫn từng bước này trình bày cách thêm hình mờ văn bản và hình ảnh, triển khai chú thích, kiểm soát vị trí và độ trong suốt của hình mờ và hiển thị tài liệu với chú thích nhúng. Mỗi hướng dẫn đều bao gồm các ví dụ mã .NET thực tế để thêm siêu dữ liệu trực quan và đánh dấu bảo vệ vào tài liệu của bạn, nâng cao khả năng theo dõi tài liệu và xây dựng thương hiệu.

@@ -5,8 +5,8 @@
 "title": "Passen Sie die Ausgabebildgröße für CAD-Zeichnungen an"
 "url": "/de/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Passen Sie die Ausgabebildgröße für CAD-Zeichnungen an
 
 ## Einführung

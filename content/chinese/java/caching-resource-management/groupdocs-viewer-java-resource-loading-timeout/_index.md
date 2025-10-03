@@ -4,8 +4,8 @@
 "title": "在 GroupDocs.Viewer for Java 中设置资源加载超时&#58;增强文档性能"
 "url": "/zh/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer for Java 中设置资源加载超时：提高文档渲染效率
 
 ## 介绍

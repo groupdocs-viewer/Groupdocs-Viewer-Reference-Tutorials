@@ -5,8 +5,8 @@
 "title": "渲染 AI 影像"
 "url": "/zh-hant/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # 渲染 AI 影像
 
 ## 介紹

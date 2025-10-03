@@ -4,8 +4,8 @@
 "title": "Απόδοση υπολογιστικών φύλλων Excel ανά αλλαγή σελίδας χρησιμοποιώντας το GroupDocs.Viewer για .NET"
 "url": "/el/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση υπολογιστικών φύλλων Excel ανά αλλαγή σελίδας χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

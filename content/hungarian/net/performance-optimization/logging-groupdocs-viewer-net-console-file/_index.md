@@ -4,8 +4,8 @@
 "title": "Hatékony naplózás megvalósítása a GroupDocs.Viewer .NET-ben konzol- és fájlkimenetekhez"
 "url": "/hu/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Hatékony naplózás megvalósítása a GroupDocs.Viewer .NET-ben
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "Рендеринг файлов OBJ с помощью GroupDocs.Viewer .NET&#58; Полное руководство по конвертации HTML, JPG, PNG и PDF"
 "url": "/ru/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Рендеринг OBJ-файлов с помощью GroupDocs.Viewer .NET
 
 ## Введение в основы рендеринга

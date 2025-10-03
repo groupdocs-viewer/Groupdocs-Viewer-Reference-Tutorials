@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เอกสารการประมวลผลคำ"
 "url": "/th/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # การเรนเดอร์เอกสารการประมวลผลคำ
 
 

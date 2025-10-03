@@ -4,8 +4,8 @@
 "title": "Hiển thị các hàng và cột ẩn trong bảng tính Java bằng GroupDocs.Viewer"
 "url": "/vi/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị các hàng và cột ẩn trong bảng tính Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

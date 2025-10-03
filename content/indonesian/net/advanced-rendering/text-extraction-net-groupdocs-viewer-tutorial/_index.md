@@ -4,8 +4,8 @@
 "title": "Menguasai Ekstraksi Teks di .NET dengan GroupDocs.Viewer&#58; Panduan Lengkap"
 "url": "/id/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Ekstraksi Teks di .NET dengan GroupDocs.Viewer: Tutorial Komprehensif
 
 ## Perkenalan

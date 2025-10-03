@@ -8,10 +8,8 @@ keywords:
 - file type detection Java
 - GroupDocs Viewer Java
 - Java MIME type identification
-
+type: docs
 ---
-
-
 # Mastering File Type Detection in Java Using GroupDocs.Viewer
 
 Discover the power of **GroupDocs.Viewer** to seamlessly identify file types from extensions, media-types, and streams. This robust library simplifies development processes and enhances application capabilities.

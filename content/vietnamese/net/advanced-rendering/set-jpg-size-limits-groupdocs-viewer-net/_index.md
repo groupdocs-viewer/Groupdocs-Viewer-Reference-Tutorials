@@ -4,8 +4,8 @@
 "title": "Cách thiết lập giới hạn kích thước hình ảnh JPG tối đa bằng GroupDocs.Viewer .NET"
 "url": "/vi/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách thiết lập giới hạn kích thước hình ảnh JPG tối đa bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

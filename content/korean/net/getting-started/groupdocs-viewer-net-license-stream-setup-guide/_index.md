@@ -4,8 +4,8 @@
 "title": "Stream을 통한 GroupDocs.Viewer .NET 라이선스 설정&#58; 완전 가이드"
 "url": "/ko/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Stream을 통한 GroupDocs.Viewer .NET 라이선스 설정: 완전한 가이드
 
 ## 소개

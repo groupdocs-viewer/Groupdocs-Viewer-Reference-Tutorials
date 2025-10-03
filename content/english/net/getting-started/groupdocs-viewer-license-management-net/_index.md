@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer license management for .NET
 - Setting up GroupDocs.Viewer license from file path
 - Embedding GroupDocs.Viewer license resource
-
+type: docs
 ---
-
-
 # Mastering License Management in GroupDocs.Viewer for .NET
 ## A Comprehensive Guide
 

@@ -4,8 +4,8 @@
 "title": "MS projektek megtekintésének elsajátítása Java nyelven a GroupDocs.Viewer segítségével – Átfogó útmutató"
 "url": "/hu/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # MS Project dokumentummegtekintés elsajátítása GroupDocs.Viewer segítségével Java nyelven
 
 ## Bevezetés

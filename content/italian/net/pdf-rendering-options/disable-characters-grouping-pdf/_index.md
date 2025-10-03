@@ -5,8 +5,8 @@
 "title": "Disabilitare il raggruppamento dei caratteri in PDF"
 "url": "/it/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Disabilitare il raggruppamento dei caratteri in PDF
 
 ## Introduzione

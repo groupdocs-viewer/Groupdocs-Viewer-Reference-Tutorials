@@ -5,8 +5,8 @@
 "title": "PDF'yi Orijinal Sayfa Boyutuyla Oluştur"
 "url": "/tr/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # PDF'yi Orijinal Sayfa Boyutuyla Oluştur
 
 ## giriiş

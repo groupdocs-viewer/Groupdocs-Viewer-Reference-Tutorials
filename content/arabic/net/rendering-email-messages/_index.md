@@ -5,8 +5,8 @@
 "title": "عرض رسائل البريد الإلكتروني"
 "url": "/ar/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # عرض رسائل البريد الإلكتروني
 
 ## مقدمة

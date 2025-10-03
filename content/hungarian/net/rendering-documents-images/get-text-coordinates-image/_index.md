@@ -5,8 +5,8 @@
 "title": "Szövegkoordináták lekérése képmegjelenítéshez"
 "url": "/hu/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Szövegkoordináták lekérése képmegjelenítéshez
 
 ## Bevezetés

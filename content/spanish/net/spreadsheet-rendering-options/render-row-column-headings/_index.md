@@ -5,8 +5,8 @@
 "title": "Representar encabezados de filas y columnas"
 "url": "/es/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Representar encabezados de filas y columnas
 
 ## Introducción

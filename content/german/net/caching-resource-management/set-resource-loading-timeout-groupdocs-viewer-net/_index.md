@@ -4,8 +4,8 @@
 "title": "Implementieren eines Ressourcenlade-Timeouts in GroupDocs.Viewer für .NET – Eine vollständige Anleitung"
 "url": "/de/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Implementieren eines Ressourcenladetimeouts in GroupDocs.Viewer für .NET
 
 ## Einführung

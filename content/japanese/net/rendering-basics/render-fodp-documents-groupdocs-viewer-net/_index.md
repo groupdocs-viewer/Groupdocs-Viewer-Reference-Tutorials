@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して FODP ドキュメントをレンダリングする方法 包括的なガイド"
 "url": "/ja/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して FODP ドキュメントをレンダリングする方法: 包括的なガイド
 
 ## 導入

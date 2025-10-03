@@ -5,8 +5,8 @@
 "title": "Angka Render"
 "url": "/id/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Angka Render
 
 ## Perkenalan

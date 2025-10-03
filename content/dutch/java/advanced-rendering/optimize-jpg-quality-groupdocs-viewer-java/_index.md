@@ -4,8 +4,8 @@
 "title": "Optimaliseer de JPG-kwaliteit in PDF's met GroupDocs.Viewer voor Java"
 "url": "/nl/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Optimaliseer de JPG-kwaliteit in PDF's met GroupDocs.Viewer voor Java
 
 ## Invoering

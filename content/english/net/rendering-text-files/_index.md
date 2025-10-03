@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Conversion"]
 tags: ["txt-conversion", "pdf-generation", "text-rendering", "csharp-tutorial"]
+type: docs
 ---
-
 # Convert TXT Files to PDF C# - Complete GroupDocs.Viewer Guide
 
 ## Introduction

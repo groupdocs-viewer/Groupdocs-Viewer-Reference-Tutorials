@@ -4,8 +4,8 @@
 "title": "Comment diviser des dessins CAO en mosaïques à l'aide de GroupDocs.Viewer .NET pour un rendu efficace"
 "url": "/fr/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment diviser des dessins CAO en mosaïques avec GroupDocs.Viewer .NET
 
 ## Introduction

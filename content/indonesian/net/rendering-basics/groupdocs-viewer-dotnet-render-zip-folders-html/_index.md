@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Merender Folder Tertentu dari Arsip ZIP ke HTML"
 "url": "/id/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Tutorial: Menerapkan GroupDocs.Viewer .NET untuk Merender Folder Tertentu dari Arsip ZIP ke HTML
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "रेंडरिंग विकल्प"
 "url": "/hi/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # रेंडरिंग विकल्प
 
 

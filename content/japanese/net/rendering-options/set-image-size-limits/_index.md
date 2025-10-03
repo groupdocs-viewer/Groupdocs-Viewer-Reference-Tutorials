@@ -5,8 +5,8 @@
 "title": "画像サイズの制限を設定する"
 "url": "/ja/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # 画像サイズの制限を設定する
 
 ## 導入

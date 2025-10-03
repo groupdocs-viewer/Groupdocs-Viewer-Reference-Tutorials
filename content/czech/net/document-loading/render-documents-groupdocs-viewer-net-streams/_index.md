@@ -4,8 +4,8 @@
 "title": "Vykreslování dokumentů pomocí GroupDocs.Viewer .NET ze streamů – Komplexní průvodce pro vývojáře"
 "url": "/cs/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování dokumentů pomocí GroupDocs.Viewer .NET ze streamů: Komplexní průvodce pro vývojáře
 
 ## Zavedení

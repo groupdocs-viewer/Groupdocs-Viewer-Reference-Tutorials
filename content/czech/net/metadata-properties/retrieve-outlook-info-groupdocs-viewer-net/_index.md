@@ -4,8 +4,8 @@
 "title": "Jak načíst informace o datech Outlooku pomocí nástroje GroupDocs.Viewer pro .NET"
 "url": "/cs/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst informace o datech Outlooku pomocí nástroje GroupDocs.Viewer pro .NET
 
 ## Zavedení

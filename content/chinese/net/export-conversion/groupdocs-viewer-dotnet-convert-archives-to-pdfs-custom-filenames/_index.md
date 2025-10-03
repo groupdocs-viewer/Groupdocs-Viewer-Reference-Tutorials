@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 将档案转换为具有自定义文件名的 PDF"
 "url": "/zh/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 将档案转换为具有自定义文件名的 PDF
 
 ## 介绍

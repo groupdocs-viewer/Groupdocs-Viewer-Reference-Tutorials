@@ -5,8 +5,8 @@
 "title": "Renderování obrázků CMX"
 "url": "/cs/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # Renderování obrázků CMX
 
 ## Zavedení

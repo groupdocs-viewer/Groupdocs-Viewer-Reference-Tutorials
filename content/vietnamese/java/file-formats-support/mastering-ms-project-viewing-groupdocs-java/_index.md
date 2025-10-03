@@ -4,8 +4,8 @@
 "title": "Làm chủ MS Project Viewing trong Java với GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ việc xem tài liệu MS Project với GroupDocs.Viewer trong Java
 
 ## Giới thiệu

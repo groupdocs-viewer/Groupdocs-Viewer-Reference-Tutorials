@@ -4,8 +4,8 @@
 "title": "Renderizando pastas de arquivo em Java usando GroupDocs.Viewer - Um guia passo a passo"
 "url": "/pt/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderizando pastas de arquivo com GroupDocs.Viewer para Java
 
 ## Introdução

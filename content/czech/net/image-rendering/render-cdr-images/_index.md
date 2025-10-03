@@ -5,8 +5,8 @@
 "title": "Vykreslení obrázků CDR"
 "url": "/cs/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # Vykreslení obrázků CDR
 
 ## Zavedení

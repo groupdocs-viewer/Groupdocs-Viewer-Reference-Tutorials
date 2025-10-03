@@ -5,8 +5,8 @@
 "title": "Renderen met overlappende tekst voor weergave"
 "url": "/nl/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Renderen met overlappende tekst voor weergave
 
 ## Invoering

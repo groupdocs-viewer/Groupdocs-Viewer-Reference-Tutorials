@@ -4,8 +4,8 @@
 "title": "Cara Merender Dokumen Visio sebagai HTML, JPG, PNG, dan PDF di .NET menggunakan GroupDocs.Viewer"
 "url": "/id/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Dokumen Visio sebagai HTML, JPG, PNG, dan PDF Menggunakan GroupDocs.Viewer di .NET
 
 ## Perkenalan

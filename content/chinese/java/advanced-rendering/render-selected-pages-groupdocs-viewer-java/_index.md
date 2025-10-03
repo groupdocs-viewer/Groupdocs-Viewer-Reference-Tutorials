@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 呈现文档的选定页面"
 "url": "/zh/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 渲染特定页面
 
 ## 介绍

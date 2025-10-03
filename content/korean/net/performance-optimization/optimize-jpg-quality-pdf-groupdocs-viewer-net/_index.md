@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 PDF의 JPG 품질 최적화하기 - 종합 가이드"
 "url": "/ko/net/performance-optimization/optimize-jpg-quality-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 PDF의 JPG 품질 최적화
 
 ## 소개

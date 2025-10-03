@@ -5,8 +5,8 @@
 "title": "加载受密码保护的文档"
 "url": "/zh/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # 加载受密码保护的文档
 
 ## 介绍

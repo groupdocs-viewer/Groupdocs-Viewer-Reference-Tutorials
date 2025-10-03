@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Nhúng phông chữ và chuyển đổi tài liệu sang HTML hiệu quả"
 "url": "/vi/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ việc kết xuất tài liệu với GroupDocs.Viewer .NET: Nhúng phông chữ và chuyển đổi sang HTML
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 .NET에서 PDF 페이지 재정렬 마스터하기&#58; 개발자 가이드"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용한 PDF 페이지 재정렬 마스터하기: 포괄적인 개발자 가이드
 
 ## 소개

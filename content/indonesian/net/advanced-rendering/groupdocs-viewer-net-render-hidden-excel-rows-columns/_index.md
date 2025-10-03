@@ -4,8 +4,8 @@
 "title": "Menampilkan Baris & Kolom Tersembunyi di File Excel Menggunakan GroupDocs.Viewer untuk .NET - Panduan Lanjutan"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Menampilkan Baris & Kolom Tersembunyi di File Excel Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

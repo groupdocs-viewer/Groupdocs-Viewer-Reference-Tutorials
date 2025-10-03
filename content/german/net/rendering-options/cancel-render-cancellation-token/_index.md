@@ -5,8 +5,8 @@
 "title": "Rendern mit Abbruchtoken abbrechen"
 "url": "/de/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Rendern mit Abbruchtoken abbrechen
 
 ## Einführung

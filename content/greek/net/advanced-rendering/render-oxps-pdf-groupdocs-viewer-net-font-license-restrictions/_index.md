@@ -4,8 +4,8 @@
 "title": "Απόδοση PDF/OXPS με περιορισμούς γραμματοσειράς χρησιμοποιώντας το GroupDocs.Viewer .NET™ Ένας ολοκληρωμένος οδηγός"
 "url": "/el/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση PDF/OXPS με περιορισμούς γραμματοσειράς χρησιμοποιώντας το GroupDocs.Viewer .NET: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

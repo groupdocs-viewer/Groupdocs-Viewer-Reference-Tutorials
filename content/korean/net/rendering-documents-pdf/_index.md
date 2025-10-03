@@ -5,8 +5,8 @@
 "title": "문서를 PDF로 렌더링"
 "url": "/ko/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # 문서를 PDF로 렌더링
 
 

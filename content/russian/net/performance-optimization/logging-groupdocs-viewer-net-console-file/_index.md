@@ -4,8 +4,8 @@
 "title": "Реализация эффективного ведения журнала в GroupDocs.Viewer .NET для вывода на консоль и в файл"
 "url": "/ru/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Реализация эффективного ведения журнала в GroupDocs.Viewer .NET
 
 ## Введение

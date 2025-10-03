@@ -4,8 +4,8 @@
 "title": "Chuyển đổi CHM sang HTML, JPG, PNG, PDF bằng GroupDocs.Viewer .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/export-conversion/convert-chm-to-html-jpg-png-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Chuyển đổi tệp CHM sang HTML, JPG, PNG và PDF bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

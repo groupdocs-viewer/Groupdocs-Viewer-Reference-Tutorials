@@ -4,8 +4,8 @@
 "title": "Como renderizar linhas de grade em planilhas do Excel usando GroupDocs.Viewer .NET para saída HTML"
 "url": "/pt/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar linhas de grade em planilhas do Excel usando GroupDocs.Viewer .NET para saída HTML
 
 ## Introdução

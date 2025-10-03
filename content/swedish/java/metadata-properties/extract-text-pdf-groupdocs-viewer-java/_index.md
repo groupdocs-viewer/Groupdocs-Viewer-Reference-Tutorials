@@ -4,8 +4,8 @@
 "title": "Extrahera text från PDF med GroupDocs.Viewer Java&#58; En omfattande guide för utvecklare"
 "url": "/sv/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Extrahera text från PDF med GroupDocs.Viewer Java
 
 ## Introduktion

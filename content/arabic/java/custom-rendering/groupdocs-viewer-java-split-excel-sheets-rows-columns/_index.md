@@ -4,8 +4,8 @@
 "title": "تقسيم جداول بيانات Excel حسب الصفوف والأعمدة باستخدام GroupDocs.Viewer في Java - دليل شامل"
 "url": "/ar/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # تقسيم جداول بيانات Excel حسب الصفوف والأعمدة باستخدام GroupDocs.Viewer في Java
 
 ## مقدمة

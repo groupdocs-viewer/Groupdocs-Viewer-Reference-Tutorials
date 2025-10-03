@@ -4,8 +4,8 @@
 "title": "Kết xuất vùng in bảng tính Java với GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất vùng in bảng tính Java với GroupDocs.Viewer cho Java
 
 ## Giới thiệu

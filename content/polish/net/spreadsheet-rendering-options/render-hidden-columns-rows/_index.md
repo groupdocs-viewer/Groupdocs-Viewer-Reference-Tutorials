@@ -5,8 +5,8 @@
 "title": "Renderuj ukryte kolumny i wiersze"
 "url": "/pl/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Renderuj ukryte kolumny i wiersze
 
 ## Wstęp

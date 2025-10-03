@@ -5,8 +5,8 @@
 "title": "グリッドラインをレンダリングする"
 "url": "/ja/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # グリッドラインをレンダリングする
 
 ## 導入

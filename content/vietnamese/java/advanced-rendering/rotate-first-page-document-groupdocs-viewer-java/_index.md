@@ -4,8 +4,8 @@
 "title": "Xoay Trang Đầu Tiên Của Tài Liệu Sử Dụng GroupDocs.Viewer Cho Java (Hướng Dẫn Nâng Cao)"
 "url": "/vi/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Xoay Trang Đầu Tiên Của Tài Liệu Sử Dụng GroupDocs.Viewer Cho Java
 
 ## Giới thiệu

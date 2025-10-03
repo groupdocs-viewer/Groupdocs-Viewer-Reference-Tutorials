@@ -4,8 +4,8 @@
 "title": "Átfogó útmutató AI-fájlok rendereléséhez GroupDocs.Viewer .NET használatával fejlesztőknek"
 "url": "/hu/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Átfogó útmutató AI-fájlok rendereléséhez GroupDocs.Viewer .NET használatával fejlesztőknek
 
 ## Bevezetés

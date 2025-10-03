@@ -4,8 +4,8 @@
 "title": "Αποδοτική απόδοση όλων των διατάξεων CAD χρησιμοποιώντας το GroupDocs.Viewer για Java"
 "url": "/el/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Αποδοτική απόδοση όλων των διατάξεων CAD χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

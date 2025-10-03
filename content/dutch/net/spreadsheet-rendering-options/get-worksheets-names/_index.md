@@ -5,8 +5,8 @@
 "title": "Werkbladnamen ophalen"
 "url": "/nl/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Werkbladnamen ophalen
 
 ## Invoering

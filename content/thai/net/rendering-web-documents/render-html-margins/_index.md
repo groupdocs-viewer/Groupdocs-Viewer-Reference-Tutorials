@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ HTML พร้อมระยะขอบที่ผู้ใช้กำหนด"
 "url": "/th/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # เรนเดอร์ HTML พร้อมระยะขอบที่ผู้ใช้กำหนด
 
 ## การแนะนำ

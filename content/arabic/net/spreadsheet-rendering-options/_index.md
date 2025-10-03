@@ -5,8 +5,8 @@
 "title": "خيارات عرض جدول البيانات"
 "url": "/ar/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # خيارات عرض جدول البيانات
 
 ## مقدمة

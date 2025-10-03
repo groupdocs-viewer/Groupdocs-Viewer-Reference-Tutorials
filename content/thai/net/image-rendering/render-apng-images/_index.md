@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ภาพ APNG"
 "url": "/th/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # เรนเดอร์ภาพ APNG
 
 ## การแนะนำ

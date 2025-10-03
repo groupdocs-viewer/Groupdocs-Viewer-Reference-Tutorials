@@ -4,8 +4,8 @@
 "title": "Visualizzare documenti protetti da password in Java utilizzando GroupDocs.Viewer"
 "url": "/it/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Visualizzare documenti protetti da password in Java utilizzando GroupDocs.Viewer
 
 ## Introduzione

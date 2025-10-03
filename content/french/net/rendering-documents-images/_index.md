@@ -5,8 +5,8 @@
 "title": "Rendu de documents en images"
 "url": "/fr/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Rendu de documents en images
 
 ## Introduction

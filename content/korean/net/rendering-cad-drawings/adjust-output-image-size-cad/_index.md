@@ -5,8 +5,8 @@
 "title": "CAD 도면의 출력 이미지 크기 조정"
 "url": "/ko/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # CAD 도면의 출력 이미지 크기 조정
 
 ## 소개

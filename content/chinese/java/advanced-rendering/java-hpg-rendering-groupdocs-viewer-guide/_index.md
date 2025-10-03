@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 进行 Java HPG 渲染——完整指南"
 "url": "/zh/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 实现 Java HPG 渲染的综合指南
 
 ## 介绍

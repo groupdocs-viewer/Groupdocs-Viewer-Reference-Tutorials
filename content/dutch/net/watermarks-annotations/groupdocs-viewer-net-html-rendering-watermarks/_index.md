@@ -4,8 +4,8 @@
 "title": "Rendering van hoofddocumenten in .NET met behulp van GroupDocs.Viewer, HTML-conversie en watermerkintegratie"
 "url": "/nl/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Masterdocumentrendering in .NET met behulp van GroupDocs.Viewer: HTML-conversie en watermerkintegratie
 
 ## Invoering

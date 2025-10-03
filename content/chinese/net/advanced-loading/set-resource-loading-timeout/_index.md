@@ -5,8 +5,8 @@
 "title": "设置资源加载超时（高级）"
 "url": "/zh/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # 设置资源加载超时（高级）
 
 ## 介绍

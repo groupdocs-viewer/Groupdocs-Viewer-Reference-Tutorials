@@ -4,8 +4,8 @@
 "title": "Jak renderować animowane pliki PNG w Javie za pomocą GroupDocs.Viewer"
 "url": "/pl/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować animowane obrazy PNG za pomocą GroupDocs.Viewer w Javie
 
 Poznaj proces przekształcania animowanych plików PNG (APNG) do różnych formatów, takich jak HTML, JPG, PNG i PDF, przy użyciu potężnej biblioteki GroupDocs.Viewer for Java.

@@ -4,8 +4,8 @@
 "title": "Gelişmiş Görüntü İşleme için GroupDocs.Viewer .NET'te JPG Kalitesini Optimize Etme"
 "url": "/tr/net/advanced-rendering/adjust-jpg-quality-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET'te JPG Kalitesini Optimize Etme
 
 ## giriiş

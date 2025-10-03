@@ -4,8 +4,8 @@
 "title": "Java&#58; วิธีการเรนเดอร์หน้าที่ซ่อนอยู่โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: วิธีการเรนเดอร์หน้าที่ซ่อนอยู่โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

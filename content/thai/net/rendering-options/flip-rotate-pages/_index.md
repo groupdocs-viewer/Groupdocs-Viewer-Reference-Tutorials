@@ -5,8 +5,8 @@
 "title": "พลิกและหมุนหน้า"
 "url": "/th/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # พลิกและหมุนหน้า
 
 ## การแนะนำ

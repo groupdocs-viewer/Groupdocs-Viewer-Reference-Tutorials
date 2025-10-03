@@ -4,8 +4,8 @@
 "title": "Kết xuất tệp AI bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tệp AI bằng GroupDocs.Viewer cho Java: Hướng dẫn toàn diện
 
 ## Giới thiệu

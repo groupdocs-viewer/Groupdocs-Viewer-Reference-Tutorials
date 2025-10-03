@@ -5,8 +5,8 @@
 "title": "Görüntü Boyutu Sınırlarını Ayarla"
 "url": "/tr/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Görüntü Boyutu Sınırlarını Ayarla
 
 ## giriiş

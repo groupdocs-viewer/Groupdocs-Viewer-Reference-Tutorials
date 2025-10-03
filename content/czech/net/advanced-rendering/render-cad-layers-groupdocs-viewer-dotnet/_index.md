@@ -4,8 +4,8 @@
 "title": "Jak vykreslit specifické vrstvy CAD pomocí GroupDocs.Viewer pro .NET – Komplexní průvodce"
 "url": "/cs/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit konkrétní vrstvy výkresů CAD pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

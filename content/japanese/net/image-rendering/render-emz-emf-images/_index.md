@@ -5,8 +5,8 @@
 "title": "EMZおよびEMF画像をレンダリングする"
 "url": "/ja/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # EMZおよびEMF画像をレンダリングする
 
 ## 導入

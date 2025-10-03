@@ -4,8 +4,8 @@
 "title": "Cara Mengganti Nama Kolom Email Saat Mengonversi Email ke HTML Menggunakan GroupDocs.Viewer Java"
 "url": "/id/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengganti Nama Kolom Email Saat Merender Email ke HTML dengan GroupDocs.Viewer Java
 
 ## Perkenalan

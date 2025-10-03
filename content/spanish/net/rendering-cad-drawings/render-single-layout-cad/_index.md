@@ -5,8 +5,8 @@
 "title": "Renderizar un diseño único en dibujos CAD"
 "url": "/es/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Renderizar un diseño único en dibujos CAD
 
 ## Introducción

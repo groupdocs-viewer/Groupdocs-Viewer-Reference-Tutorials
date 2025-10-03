@@ -5,8 +5,8 @@
 "title": "Рендеринг изображения"
 "url": "/ru/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Рендеринг изображения
 
 

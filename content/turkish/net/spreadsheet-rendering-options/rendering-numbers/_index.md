@@ -5,8 +5,8 @@
 "title": "Sayıların Oluşturulması"
 "url": "/tr/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Sayıların Oluşturulması
 
 ## giriiş

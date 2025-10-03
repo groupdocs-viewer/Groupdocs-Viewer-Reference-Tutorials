@@ -5,8 +5,8 @@
 "title": "Установить лицензию из файла"
 "url": "/ru/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Установить лицензию из файла
 
 ## Введение

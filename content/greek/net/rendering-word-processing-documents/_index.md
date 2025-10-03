@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφων επεξεργασίας κειμένου"
 "url": "/el/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Απόδοση εγγράφων επεξεργασίας κειμένου
 
 

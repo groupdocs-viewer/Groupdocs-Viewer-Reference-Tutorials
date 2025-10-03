@@ -4,8 +4,8 @@
 "title": "Πώς να εφαρμόσετε την απόδοση HTML .NET με το GroupDocs.Viewer - Ένας οδηγός βήμα προς βήμα"
 "url": "/el/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να εφαρμόσετε την απόδοση HTML .NET με το GroupDocs.Viewer: Οδηγός βήμα προς βήμα
 
 ## Εισαγωγή

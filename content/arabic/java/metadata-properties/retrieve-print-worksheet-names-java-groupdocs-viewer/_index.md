@@ -4,8 +4,8 @@
 "title": "استخراج أسماء أوراق العمل وعرضها في Java باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer"
 "url": "/ar/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # استخراج أسماء أوراق العمل وعرضها في Java باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer
 
 ## مقدمة

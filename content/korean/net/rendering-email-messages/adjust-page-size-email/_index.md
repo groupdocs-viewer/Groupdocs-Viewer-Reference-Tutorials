@@ -5,8 +5,8 @@
 "title": "이메일 메시지 렌더링 시 페이지 크기 조정"
 "url": "/ko/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # 이메일 메시지 렌더링 시 페이지 크기 조정
 
 ## 소개

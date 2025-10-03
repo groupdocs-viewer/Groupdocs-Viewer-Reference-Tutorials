@@ -5,8 +5,8 @@
 "title": "Cambiar el nombre de los campos de correo electrónico durante la representación"
 "url": "/es/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Cambiar el nombre de los campos de correo electrónico durante la representación
 
 ## Introducción

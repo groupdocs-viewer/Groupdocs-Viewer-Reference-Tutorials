@@ -5,8 +5,8 @@
 "title": "Vykreslit N po sobě jdoucích stránek"
 "url": "/cs/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Vykreslit N po sobě jdoucích stránek
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET で PDF ページを回転する方法 開発者ガイド"
 "url": "/ja/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して PDF ページを回転する方法: 開発者ガイド
 
 ## 導入

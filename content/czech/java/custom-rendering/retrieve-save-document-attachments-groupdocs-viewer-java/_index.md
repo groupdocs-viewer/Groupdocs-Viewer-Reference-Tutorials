@@ -4,8 +4,8 @@
 "title": "Jak načíst a uložit přílohy dokumentů pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst a uložit přílohy dokumentů pomocí GroupDocs.Viewer pro Javu: Komplexní průvodce
 
 ## Zavedení

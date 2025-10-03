@@ -5,8 +5,8 @@
 "title": "Arşiv Dosyalarını İşlerken Dosya Adını Belirleyin"
 "url": "/tr/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Arşiv Dosyalarını İşlerken Dosya Adını Belirleyin
 
 ## giriiş

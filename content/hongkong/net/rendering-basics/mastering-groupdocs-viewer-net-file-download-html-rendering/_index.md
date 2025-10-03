@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer .NET&#58; 輕鬆下載文件並渲染 HTML 文檔"
 "url": "/zh-hant/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 掌握 GroupDocs.Viewer .NET：輕鬆下載文件和呈現文檔
 
 ## 介紹

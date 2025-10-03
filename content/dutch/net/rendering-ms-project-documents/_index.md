@@ -5,8 +5,8 @@
 "title": "Microsoft Project-documenten renderen"
 "url": "/nl/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Microsoft Project-documenten renderen
 
 ## Invoering

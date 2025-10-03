@@ -4,8 +4,8 @@
 "title": "Hur man renderar presentationer med anteckningar med GroupDocs.Viewer för Java – en omfattande guide"
 "url": "/sv/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar presentationer med anteckningar med GroupDocs.Viewer för Java
 
 ## Introduktion

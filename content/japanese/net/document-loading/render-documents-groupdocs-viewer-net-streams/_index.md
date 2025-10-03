@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して Streams からドキュメントをレンダリングする - 開発者向け総合ガイド"
 "url": "/ja/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用してストリームからドキュメントをレンダリングする: 開発者向け総合ガイド
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "Dokumentumok PDF-be konvertálása a GroupDocs.Viewer for Java használatával – Teljes körű útmutató"
 "url": "/hu/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumok PDF-be konvertálása a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

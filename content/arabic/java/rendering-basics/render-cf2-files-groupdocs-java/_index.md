@@ -4,8 +4,8 @@
 "title": "كيفية تحويل ملفات CF2 إلى HTML وJPG وPNG وPDF في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/rendering-basics/render-cf2-files-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # دليل شامل: عرض ملفات CF2 بتنسيقات مختلفة باستخدام GroupDocs.Viewer في Java
 
 ## مقدمة

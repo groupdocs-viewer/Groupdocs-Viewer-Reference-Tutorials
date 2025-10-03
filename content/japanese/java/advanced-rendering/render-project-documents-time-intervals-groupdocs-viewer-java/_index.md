@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用してプロジェクト ドキュメントを時間間隔でレンダリングする"
 "url": "/ja/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用して、時間間隔でプロジェクト ドキュメントをレンダリングする実装方法
 
 ## 導入

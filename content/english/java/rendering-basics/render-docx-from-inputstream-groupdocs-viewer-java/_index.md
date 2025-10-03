@@ -8,10 +8,8 @@ keywords:
 - render DOCX from InputStream
 - GroupDocs.Viewer for Java
 - Java document rendering
-
+type: docs
 ---
-
-
 # How to Load and Render a DOCX File from an InputStream Using GroupDocs.Viewer for Java
 
 ## Introduction

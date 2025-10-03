@@ -5,8 +5,8 @@
 "title": "عرض عناوين الصفوف والأعمدة"
 "url": "/ar/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # عرض عناوين الصفوف والأعمدة
 
 ## مقدمة

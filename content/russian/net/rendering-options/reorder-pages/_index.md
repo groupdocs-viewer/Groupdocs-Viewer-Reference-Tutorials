@@ -5,8 +5,8 @@
 "title": "Изменить порядок страниц в документе"
 "url": "/ru/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Изменить порядок страниц в документе
 
 ## Введение

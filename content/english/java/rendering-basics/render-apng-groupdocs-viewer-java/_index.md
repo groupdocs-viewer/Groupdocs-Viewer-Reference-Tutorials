@@ -8,10 +8,8 @@ keywords:
 - render animated PNG
 - GroupDocs.Viewer Java
 - APNG conversion
-
+type: docs
 ---
-
-
 # How to Render Animated PNGs with GroupDocs.Viewer in Java
 
 Discover the process of transforming Animated PNG (APNG) files into various formats like HTML, JPG, PNG, and PDF using the powerful GroupDocs.Viewer for Java library.

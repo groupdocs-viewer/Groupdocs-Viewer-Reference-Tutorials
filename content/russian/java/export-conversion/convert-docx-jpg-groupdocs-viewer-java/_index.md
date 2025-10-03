@@ -4,8 +4,8 @@
 "title": "Конвертируйте DOCX в JPG в Java с помощью GroupDocs.Viewer&#58; Подробное руководство"
 "url": "/ru/java/export-conversion/convert-docx-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Мастер рендеринга DOCX в JPG на Java с помощью GroupDocs.Viewer
 
 ## Введение

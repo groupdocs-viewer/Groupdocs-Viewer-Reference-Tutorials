@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 .NET 中的 PDF 頁面重新排序－開發人員指南"
 "url": "/zh-hant/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 掌握 PDF 頁面重新排序：全面的開發人員指南
 
 ## 介紹

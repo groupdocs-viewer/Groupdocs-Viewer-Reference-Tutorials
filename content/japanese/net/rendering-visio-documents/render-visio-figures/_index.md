@@ -5,8 +5,8 @@
 "title": "Visioの図をレンダリングする"
 "url": "/ja/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Visioの図をレンダリングする
 
 ## 導入

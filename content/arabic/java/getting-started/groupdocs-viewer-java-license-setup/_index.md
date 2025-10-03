@@ -4,8 +4,8 @@
 "title": "كيفية تعيين التراخيص في GroupDocs.Viewer دليل إعداد الملفات وعناوين URL في Java"
 "url": "/ar/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تعيين التراخيص في GroupDocs.Viewer Java: دليل إعداد الملف وعناوين URL
 
 ## مقدمة

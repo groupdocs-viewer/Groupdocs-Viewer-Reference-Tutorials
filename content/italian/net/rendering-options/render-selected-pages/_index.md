@@ -5,8 +5,8 @@
 "title": "Visualizza pagine selezionate"
 "url": "/it/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Visualizza pagine selezionate
 
 ## Introduzione

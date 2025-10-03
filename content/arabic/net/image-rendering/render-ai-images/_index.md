@@ -5,8 +5,8 @@
 "title": "تقديم صور الذكاء الاصطناعي"
 "url": "/ar/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # تقديم صور الذكاء الاصطناعي
 
 ## مقدمة

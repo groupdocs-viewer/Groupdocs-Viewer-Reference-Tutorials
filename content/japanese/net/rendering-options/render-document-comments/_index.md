@@ -5,8 +5,8 @@
 "title": "コメント付きドキュメントのレンダリング"
 "url": "/ja/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # コメント付きドキュメントのレンダリング
 
 ## 導入

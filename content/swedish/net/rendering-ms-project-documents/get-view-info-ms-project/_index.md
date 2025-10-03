@@ -5,8 +5,8 @@
 "title": "Hämta visningsinformation för Microsoft Project-dokument"
 "url": "/sv/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Hämta visningsinformation för Microsoft Project-dokument
 
 ## Introduktion

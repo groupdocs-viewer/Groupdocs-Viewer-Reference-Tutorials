@@ -4,8 +4,8 @@
 "title": "Πώς να μετονομάσετε πεδία email κατά τη μετατροπή email σε HTML χρησιμοποιώντας το GroupDocs.Viewer Java"
 "url": "/el/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να μετονομάσετε πεδία email κατά την απόδοση email σε HTML με το GroupDocs.Viewer Java
 
 ## Εισαγωγή

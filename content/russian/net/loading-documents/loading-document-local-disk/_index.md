@@ -5,8 +5,8 @@
 "title": "Загрузить документы с локального диска"
 "url": "/ru/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Загрузить документы с локального диска
 
 ## Введение

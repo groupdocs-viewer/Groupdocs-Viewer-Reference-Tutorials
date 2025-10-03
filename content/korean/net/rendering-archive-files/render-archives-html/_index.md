@@ -5,8 +5,8 @@
 "title": "아카이브를 단일 또는 여러 HTML 페이지로 렌더링"
 "url": "/ko/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # 아카이브를 단일 또는 여러 HTML 페이지로 렌더링
 
 ## 소개

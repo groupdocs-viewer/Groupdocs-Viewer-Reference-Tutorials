@@ -4,8 +4,8 @@
 "title": "Java'da GroupDocs.Viewer için Ölçülü Lisans Uygulaması&#58; Bir Geliştiricinin Kılavuzu"
 "url": "/tr/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java için Ölçülü Lisans Uygulama: Geliştiricinin Kılavuzu
 
 ## giriiş

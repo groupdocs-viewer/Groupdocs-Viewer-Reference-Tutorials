@@ -4,8 +4,8 @@
 "title": "Konwertuj pliki NSF do formatu HTML, JPG, PNG i PDF za pomocą GroupDocs.Viewer dla języka Java"
 "url": "/pl/java/export-conversion/convert-nsf-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Konwertuj pliki NSF do wielu formatów za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

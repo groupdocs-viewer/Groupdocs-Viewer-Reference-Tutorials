@@ -5,8 +5,8 @@
 "title": "Protéger le PDF rendu avec un mot de passe"
 "url": "/fr/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Protéger le PDF rendu avec un mot de passe
 
 ## Introduction

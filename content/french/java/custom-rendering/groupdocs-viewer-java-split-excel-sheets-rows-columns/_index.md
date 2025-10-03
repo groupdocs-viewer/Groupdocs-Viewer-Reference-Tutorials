@@ -4,8 +4,8 @@
 "title": "Diviser des feuilles Excel par lignes et colonnes avec GroupDocs.Viewer en Java – Un guide complet"
 "url": "/fr/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Fractionnement de feuilles Excel par lignes et colonnes à l'aide de GroupDocs.Viewer en Java
 
 ## Introduction

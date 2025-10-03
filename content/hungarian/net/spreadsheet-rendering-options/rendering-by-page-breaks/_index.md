@@ -5,8 +5,8 @@
 "title": "Oldaltörések szerinti renderelés"
 "url": "/hu/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Oldaltörések szerinti renderelés
 
 ## Bevezetés

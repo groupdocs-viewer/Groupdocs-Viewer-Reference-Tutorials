@@ -8,10 +8,8 @@ keywords:
 - Convert CHM to HTML
 - GroupDocs.Viewer .NET
 - CHM file conversion
-
+type: docs
 ---
-
-
 # Convert CHM Files to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer .NET
 
 ## Introduction

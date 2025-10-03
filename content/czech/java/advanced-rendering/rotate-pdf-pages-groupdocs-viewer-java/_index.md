@@ -4,8 +4,8 @@
 "title": "Otáčení konkrétních stránek PDF pomocí GroupDocs.Viewer v Javě – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Otočení konkrétních stránek PDF pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

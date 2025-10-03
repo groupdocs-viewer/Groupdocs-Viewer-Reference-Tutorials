@@ -5,8 +5,8 @@
 "title": "CHM fájlok renderelése"
 "url": "/hu/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # CHM fájlok renderelése
 
 ## Bevezetés

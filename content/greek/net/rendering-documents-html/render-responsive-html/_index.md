@@ -5,8 +5,8 @@
 "title": "Απόδοση HTML με δυνατότητα απόκρισης"
 "url": "/el/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Απόδοση HTML με δυνατότητα απόκρισης
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Βελτίωση απόδοσης PDF σε .NET! Ενεργοποίηση υποδείξεων γραμματοσειράς με το GroupDocs.Viewer"
 "url": "/el/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να βελτιώσετε την απόδοση PDF σε .NET χρησιμοποιώντας το GroupDocs.Viewer: Ενεργοποίηση υποδείξεων γραμματοσειράς
 
 ## Εισαγωγή

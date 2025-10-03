@@ -4,8 +4,8 @@
 "title": "Làm chủ Quản lý Giấy phép trong GroupDocs.Viewer cho .NET&#58; Hướng dẫn Toàn diện"
 "url": "/vi/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ Quản lý Giấy phép trong GroupDocs.Viewer cho .NET
 ## Hướng dẫn toàn diện
 

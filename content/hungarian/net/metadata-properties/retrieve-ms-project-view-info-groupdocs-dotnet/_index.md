@@ -4,8 +4,8 @@
 "title": "MS Project View információk lekérése a GroupDocs.Viewer .NET használatával | Metaadatok és tulajdonságok"
 "url": "/hu/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # MS Project View információk lekérése a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

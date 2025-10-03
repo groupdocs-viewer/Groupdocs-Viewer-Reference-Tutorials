@@ -3,8 +3,8 @@
 "title": "Tutorial Tanda Air dan Anotasi Dokumen untuk GroupDocs.Viewer Java"
 "url": "/id/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Tutorial Tanda Air dan Anotasi Dokumen untuk GroupDocs.Viewer Java
 
 Kuasai teknik anotasi dan pemberian tanda air pada dokumen dengan tutorial Java GroupDocs.Viewer kami. Panduan langkah demi langkah ini menunjukkan cara menambahkan tanda air pada teks dan gambar, menerapkan anotasi, mengontrol posisi dan transparansi tanda air, serta merender dokumen dengan anotasi yang disematkan. Setiap tutorial mencakup contoh kode Java praktis untuk menambahkan metadata visual dan tanda pelindung pada dokumen Anda, meningkatkan kemampuan pelacakan dan pemberian merek pada dokumen.

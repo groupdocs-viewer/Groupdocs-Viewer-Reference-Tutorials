@@ -4,8 +4,8 @@
 "title": "Web ve Platformlar Arası Uyumluluk için GroupDocs.Viewer ile .NET WMZ/WMF Oluşturmayı Uygulayın"
 "url": "/tr/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Web ve Platformlar Arası Uyumluluk için GroupDocs.Viewer ile .NET WMZ/WMF Oluşturmayı Uygulayın
 
 ## giriiş

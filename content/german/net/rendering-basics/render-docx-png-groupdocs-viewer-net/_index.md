@@ -4,8 +4,8 @@
 "title": "So rendern Sie DOCX in PNG mit GroupDocs.Viewer .NET – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/net/rendering-basics/render-docx-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So rendern Sie DOCX in PNG mit GroupDocs.Viewer .NET: Eine Schritt-für-Schritt-Anleitung
 ## Rendering-Grundlagen
 ### Einführung

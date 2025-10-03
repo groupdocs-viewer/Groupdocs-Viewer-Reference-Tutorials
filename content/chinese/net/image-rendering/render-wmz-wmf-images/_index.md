@@ -5,8 +5,8 @@
 "title": "渲染 WMZ 和 WMF 图像"
 "url": "/zh/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # 渲染 WMZ 和 WMF 图像
 
 ## 介绍

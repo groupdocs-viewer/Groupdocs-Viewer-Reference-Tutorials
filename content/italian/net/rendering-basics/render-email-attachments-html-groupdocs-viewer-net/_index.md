@@ -4,8 +4,8 @@
 "title": "Trasforma gli allegati e-mail in HTML con GroupDocs.Viewer per .NET"
 "url": "/it/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Come convertire gli allegati di posta elettronica in HTML utilizzando GroupDocs.Viewer per .NET
 ## Introduzione
 Hai bisogno di un modo efficiente per convertire gli allegati email in HTML facilmente visualizzabili? Che si tratti di migliorare l'accessibilità dei documenti o di semplificare la condivisione dei contenuti, il rendering degli allegati è essenziale per una gestione efficace della corrispondenza digitale. Questa guida ti guiderà nell'utilizzo. **GroupDocs.Viewer per .NET** per raggiungere questo obiettivo con facilità.

@@ -4,8 +4,8 @@
 "title": "Guide complet pour le rendu de fichiers IA à l'aide de GroupDocs.Viewer .NET pour les développeurs"
 "url": "/fr/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Guide complet pour le rendu de fichiers IA à l'aide de GroupDocs.Viewer .NET pour les développeurs
 
 ## Introduction

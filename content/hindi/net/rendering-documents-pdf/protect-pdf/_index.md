@@ -5,8 +5,8 @@
 "title": "रेंडर किए गए PDF को पासवर्ड से सुरक्षित करें"
 "url": "/hi/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # रेंडर किए गए PDF को पासवर्ड से सुरक्षित करें
 
 ## परिचय

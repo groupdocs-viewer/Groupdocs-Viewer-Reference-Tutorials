@@ -4,8 +4,8 @@
 "title": "SVGZ-rendering in .NET onder de knie krijgen met GroupDocs.Viewer&#58; een complete handleiding voor ontwikkelaars"
 "url": "/nl/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # SVGZ-rendering in .NET onder de knie krijgen met GroupDocs.Viewer: een complete gids voor ontwikkelaars
 
 ## Invoering

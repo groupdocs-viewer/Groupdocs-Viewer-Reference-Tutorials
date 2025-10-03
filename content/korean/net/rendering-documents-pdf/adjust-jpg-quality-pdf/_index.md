@@ -5,8 +5,8 @@
 "title": "렌더링된 PDF에서 JPG 이미지 품질 조정"
 "url": "/ko/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # 렌더링된 PDF에서 JPG 이미지 품질 조정
 
 ## 소개

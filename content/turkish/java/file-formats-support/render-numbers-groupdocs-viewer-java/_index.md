@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58;ı Kullanarak Java'da Apple Numbers Belgelerini Oluşturun Kapsamlı Bir Kılavuz"
 "url": "/tr/java/file-formats-support/render-numbers-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Apple Numbers Belgeleri Nasıl Oluşturulur
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 將電子郵件附件呈現為 HTML"
 "url": "/zh-hant/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 將電子郵件附件呈現為 HTML
 ## 介紹
 您是否需要一種高效的方法來將電子郵件附件轉換為易於查看的 HTML？無論是為了增強文件可存取性還是簡化內容共享，渲染附件對於有效的數位通訊管理至關重要。本指南將指導您如何使用 **適用於 .NET 的 GroupDocs.Viewer** 輕鬆實現這一目標。

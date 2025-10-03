@@ -4,8 +4,8 @@
 "title": "Reszponzív HTML-megjelenítés a GroupDocs.Viewer for Java segítségével – Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Reszponzív HTML-megjelenítés a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

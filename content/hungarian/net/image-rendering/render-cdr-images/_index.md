@@ -5,8 +5,8 @@
 "title": "CDR képek renderelése"
 "url": "/hu/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # CDR képek renderelése
 
 ## Bevezetés

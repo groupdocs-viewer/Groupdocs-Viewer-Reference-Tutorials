@@ -5,8 +5,8 @@
 "title": "Nonaktifkan Pemilihan Teks dalam PDF"
 "url": "/id/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Nonaktifkan Pemilihan Teks dalam PDF
 
 ## Perkenalan

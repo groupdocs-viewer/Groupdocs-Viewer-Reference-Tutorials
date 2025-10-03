@@ -5,8 +5,8 @@
 "title": "Arşivleri Tek veya Çoklu HTML Sayfalarına Dönüştürün"
 "url": "/tr/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Arşivleri Tek veya Çoklu HTML Sayfalarına Dönüştürün
 
 ## giriiş

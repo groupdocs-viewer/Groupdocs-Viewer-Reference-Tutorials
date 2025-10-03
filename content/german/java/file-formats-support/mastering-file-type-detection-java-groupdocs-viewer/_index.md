@@ -4,8 +4,8 @@
 "title": "Beherrschen der Dateityperkennung in Java mit GroupDocs.Viewer"
 "url": "/de/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Beherrschen der Dateityperkennung in Java mit GroupDocs.Viewer
 
 Entdecken Sie die Kraft von **GroupDocs.Viewer** zur nahtlosen Identifizierung von Dateitypen anhand von Erweiterungen, Medientypen und Streams. Diese robuste Bibliothek vereinfacht Entwicklungsprozesse und erweitert die Anwendungsfunktionen.

@@ -5,8 +5,8 @@
 "title": "Render Semua Tata Letak dalam Gambar CAD"
 "url": "/id/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Render Semua Tata Letak dalam Gambar CAD
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε επιλεγμένες σελίδες χρησιμοποιώντας το GroupDocs.Viewer .NET® Ένας πλήρης οδηγός για προγραμματιστές"
 "url": "/el/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε συγκεκριμένες σελίδες χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Master Outlook-datarendering och filtrering med GroupDocs.Viewer för Java"
 "url": "/sv/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Master Outlook-datarendering och filtrering med GroupDocs.Viewer för Java
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "Renderizar imágenes con IA"
 "url": "/es/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar imágenes con IA
 
 ## Introducción

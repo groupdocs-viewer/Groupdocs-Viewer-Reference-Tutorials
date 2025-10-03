@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 实现 .NET HTML 渲染——分步指南"
 "url": "/zh/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 实现 .NET HTML 渲染：分步指南
 
 ## 介绍

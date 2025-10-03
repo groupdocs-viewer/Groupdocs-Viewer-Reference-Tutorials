@@ -4,8 +4,8 @@
 "title": "Menerapkan Lisensi Terukur untuk GroupDocs.Viewer di Java; Panduan Pengembang"
 "url": "/id/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Lisensi Terukur untuk GroupDocs.Viewer untuk Java: Panduan Pengembang
 
 ## Perkenalan

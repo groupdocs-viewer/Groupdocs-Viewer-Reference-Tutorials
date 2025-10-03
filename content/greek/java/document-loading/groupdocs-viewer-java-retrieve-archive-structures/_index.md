@@ -4,8 +4,8 @@
 "title": "Πώς να ανακτήσετε δομές αρχειοθέτησης χρησιμοποιώντας το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να ανακτήσετε δομές αρχειοθέτησης χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

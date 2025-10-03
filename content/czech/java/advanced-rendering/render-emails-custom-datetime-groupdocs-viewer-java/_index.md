@@ -4,8 +4,8 @@
 "title": "Vykreslení e-mailů s vlastním datem a časem v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení e-mailů s vlastním datem a časem v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

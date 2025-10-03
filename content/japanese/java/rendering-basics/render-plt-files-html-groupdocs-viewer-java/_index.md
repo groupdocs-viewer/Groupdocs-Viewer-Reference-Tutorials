@@ -4,8 +4,8 @@
 "title": "JavaでGroupDocs.Viewerを使用してPLTファイルをHTMLに変換する方法 - ステップバイステップガイド"
 "url": "/ja/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # JavaでGroupDocs.Viewerを使用してPLTファイルをHTMLに変換する方法：開発者ガイド
 
 ## 導入

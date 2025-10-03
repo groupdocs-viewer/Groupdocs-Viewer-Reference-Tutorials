@@ -4,8 +4,8 @@
 "title": "Cách điều chỉnh tràn văn bản trong bảng tính Excel bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Cách điều chỉnh tràn văn bản trong bảng tính Excel bằng GroupDocs.Viewer cho Java
 ## Giới thiệu
 Việc xử lý tình trạng tràn văn bản trong các ô bảng tính khi chuyển đổi tài liệu sang HTML là một thách thức thường gặp, đặc biệt là đối với các tệp Excel lớn. **GroupDocs.Viewer cho Java** đơn giản hóa quá trình này, cho phép bạn quản lý và ẩn văn bản tràn lề một cách hiệu quả.

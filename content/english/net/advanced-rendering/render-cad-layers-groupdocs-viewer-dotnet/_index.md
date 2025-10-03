@@ -8,10 +8,8 @@ keywords:
 - render CAD layers .NET
 - GroupDocs.Viewer setup guide
 - optimize CAD rendering with GroupDocs
-
+type: docs
 ---
-
-
 # How to Render Specific CAD Drawing Layers Using GroupDocs.Viewer for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Zmień nazwy pól e-mail podczas renderowania"
 "url": "/pl/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Zmień nazwy pól e-mail podczas renderowania
 
 ## Wstęp

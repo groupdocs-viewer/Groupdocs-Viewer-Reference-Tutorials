@@ -5,8 +5,8 @@
 "title": "PDF-renderingopties"
 "url": "/nl/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF-renderingopties
 
 

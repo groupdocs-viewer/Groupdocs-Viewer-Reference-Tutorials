@@ -4,8 +4,8 @@
 "title": "Πώς να εξαιρέσετε τη γραμματοσειρά Arial σε απόδοση HTML με το GroupDocs.Viewer Java - Οδηγός βήμα προς βήμα"
 "url": "/el/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να εξαιρέσετε τη γραμματοσειρά Arial κατά την απόδοση εγγράφων σε HTML χρησιμοποιώντας το GroupDocs.Viewer Java
 
 ## Εισαγωγή

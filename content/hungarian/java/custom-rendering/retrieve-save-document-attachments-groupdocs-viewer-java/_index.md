@@ -4,8 +4,8 @@
 "title": "Dokumentummellékletek lekérése és mentése a GroupDocs.Viewer for Java használatával – Átfogó útmutató"
 "url": "/hu/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentummellékletek lekérése és mentése a GroupDocs.Viewer for Java használatával: Átfogó útmutató
 
 ## Bevezetés

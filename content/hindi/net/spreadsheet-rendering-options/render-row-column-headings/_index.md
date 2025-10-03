@@ -5,8 +5,8 @@
 "title": "पंक्ति और स्तंभ शीर्षक प्रस्तुत करें"
 "url": "/hi/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # पंक्ति और स्तंभ शीर्षक प्रस्तुत करें
 
 ## परिचय

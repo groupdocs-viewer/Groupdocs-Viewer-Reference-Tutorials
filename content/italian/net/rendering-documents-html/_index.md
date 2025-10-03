@@ -5,8 +5,8 @@
 "title": "Rendering di documenti in HTML"
 "url": "/it/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Rendering di documenti in HTML
 
 

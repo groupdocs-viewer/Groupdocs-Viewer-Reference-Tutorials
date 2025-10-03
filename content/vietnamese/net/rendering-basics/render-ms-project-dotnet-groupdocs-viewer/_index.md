@@ -4,8 +4,8 @@
 "title": "Kết xuất tài liệu MS Project trong .NET với GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ việc kết xuất tài liệu MS Project trong .NET với GroupDocs.Viewer
 ## Giới thiệu
 Trong môi trường kinh doanh phát triển nhanh như hiện nay, việc quản lý hiệu quả các mốc thời gian và nguồn lực của dự án là rất quan trọng. Các bên liên quan thường cần xem các phần cụ thể của dự án mà không cần phải xem toàn bộ tệp MS Project. Hướng dẫn này sẽ đi sâu vào cách bạn có thể hiển thị các phần của tài liệu MS Project trong khoảng thời gian cụ thể bằng GroupDocs.Viewer cho .NET—giải pháp chính của bạn cho vấn đề phổ biến này.

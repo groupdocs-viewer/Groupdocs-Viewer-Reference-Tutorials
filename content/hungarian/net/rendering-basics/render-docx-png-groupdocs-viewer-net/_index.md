@@ -4,8 +4,8 @@
 "title": "DOCX fájl PNG formátumba renderelése a GroupDocs.Viewer .NET használatával – lépésről lépésre útmutató"
 "url": "/hu/net/rendering-basics/render-docx-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # DOCX PNG formátumba renderelése a GroupDocs.Viewer .NET használatával: lépésről lépésre útmutató
 ## Renderelés alapjai
 ### Bevezetés

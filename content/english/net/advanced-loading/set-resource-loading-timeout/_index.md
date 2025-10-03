@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["timeout", "performance", "troubleshooting", "advanced-configuration"]
+type: docs
 ---
-
 # GroupDocs.Viewer Timeout Configuration - Prevent Document Rendering Hang
 
 ## Introduction

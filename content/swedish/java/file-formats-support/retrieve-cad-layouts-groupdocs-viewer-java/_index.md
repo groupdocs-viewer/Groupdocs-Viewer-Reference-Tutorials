@@ -4,8 +4,8 @@
 "title": "Hämta CAD-layouter och lager i Java med GroupDocs.Viewer"
 "url": "/sv/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar du CAD-layouter och lager med GroupDocs.Viewer för Java
 
 Inom ingenjörs- och designvärlden är CAD-filer (Computer-Aided Design) oumbärliga verktyg som lagrar stora mängder detaljerad information om konstruktioner. Dessa filer kan vara komplexa och innehålla flera layouter och lager som kräver exakt hantering och hämtning för effektivt projektgenomförande. Om du vill extrahera specifika detaljer från CAD-ritningar programmatiskt i Java är GroupDocs.Viewer för Java din lösning. Den här handledningen guidar dig genom processen att hämta alla layouter och lager från en CAD-ritning med GroupDocs.Viewer.

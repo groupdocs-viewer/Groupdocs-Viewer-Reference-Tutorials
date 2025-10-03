@@ -4,8 +4,8 @@
 "title": "Dostosowywanie etykiet e-mail w GroupDocs.Viewer dla .NET&#58; Kompletny przewodnik po zmianie nazw pól"
 "url": "/pl/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Dostosowywanie etykiet e-mail w GroupDocs.Viewer dla .NET: Kompletny przewodnik po zmianie nazw pól
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ अनुलग्नक पुनर्प्राप्त करें और सहेजें"
 "url": "/hi/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # दस्तावेज़ अनुलग्नक पुनर्प्राप्त करें और सहेजें
 
 ## परिचय

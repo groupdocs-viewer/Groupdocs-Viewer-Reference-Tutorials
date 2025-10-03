@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 PPTX를 HTML로 변환"
 "url": "/ko/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 PPTX 프레젠테이션을 노트가 포함된 HTML로 변환
 
 ## 소개

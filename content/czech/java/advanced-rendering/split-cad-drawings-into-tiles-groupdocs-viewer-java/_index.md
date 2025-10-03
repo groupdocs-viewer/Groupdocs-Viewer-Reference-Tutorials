@@ -4,8 +4,8 @@
 "title": "Rozdělení CAD výkresů na dlaždice pomocí GroupDocs.Viewer v Javě pro efektivní vykreslování"
 "url": "/cs/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rozdělení CAD výkresů na dlaždice pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

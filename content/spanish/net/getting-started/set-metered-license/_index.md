@@ -5,8 +5,8 @@
 "title": "Establecer licencia medida"
 "url": "/es/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Establecer licencia medida
 
 ## Introducción

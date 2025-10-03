@@ -4,8 +4,8 @@
 "title": "Konversi Dokumen ke JPG dengan GroupDocs.Viewer untuk .NET&#58; Panduan Lengkap"
 "url": "/id/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Konversi Dokumen ke JPG dengan GroupDocs.Viewer untuk .NET: Panduan Lengkap
 
 ## Perkenalan

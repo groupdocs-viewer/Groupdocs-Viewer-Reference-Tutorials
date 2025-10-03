@@ -5,8 +5,8 @@
 "title": "렌더링 중 이메일 필드 이름 바꾸기"
 "url": "/ko/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # 렌더링 중 이메일 필드 이름 바꾸기
 
 ## 소개

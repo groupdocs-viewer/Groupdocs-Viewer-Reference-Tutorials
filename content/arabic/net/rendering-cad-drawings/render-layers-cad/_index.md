@@ -5,8 +5,8 @@
 "title": "طبقات العرض في رسومات CAD"
 "url": "/ar/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # طبقات العرض في رسومات CAD
 
 ## مقدمة

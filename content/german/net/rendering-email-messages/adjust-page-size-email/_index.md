@@ -5,8 +5,8 @@
 "title": "Passen Sie die Seitengröße beim Rendern von E-Mail-Nachrichten an"
 "url": "/de/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Passen Sie die Seitengröße beim Rendern von E-Mail-Nachrichten an
 
 ## Einführung

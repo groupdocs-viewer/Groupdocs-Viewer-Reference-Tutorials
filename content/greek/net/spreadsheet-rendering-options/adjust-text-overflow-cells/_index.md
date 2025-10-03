@@ -5,8 +5,8 @@
 "title": "Προσαρμογή υπερχείλισης κειμένου σε κελιά"
 "url": "/el/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Προσαρμογή υπερχείλισης κειμένου σε κελιά
 
 ## Εισαγωγή

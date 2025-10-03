@@ -4,8 +4,8 @@
 "title": "Excel-bladen splitsen in rijen en kolommen met GroupDocs.Viewer in Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Excel-bladen splitsen op rijen en kolommen met GroupDocs.Viewer in Java
 
 ## Invoering

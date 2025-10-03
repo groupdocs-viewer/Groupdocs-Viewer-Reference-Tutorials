@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 將文件轉換為 PDF 完整指南"
 "url": "/zh-hant/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 將文件轉換為 PDF
 
 ## 介紹

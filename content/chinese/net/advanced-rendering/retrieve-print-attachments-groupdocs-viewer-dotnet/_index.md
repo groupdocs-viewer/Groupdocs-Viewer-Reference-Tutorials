@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 检索和打印文档附件 | 高级渲染指南"
 "url": "/zh/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 检索和打印文档附件 | 高级渲染指南
 
 ## 介绍

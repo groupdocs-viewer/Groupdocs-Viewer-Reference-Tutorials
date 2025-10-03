@@ -5,8 +5,8 @@
 "title": "Pasta de arquivo de renderização"
 "url": "/pt/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Pasta de arquivo de renderização
 
 ## Introdução

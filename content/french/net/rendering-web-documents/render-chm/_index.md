@@ -5,8 +5,8 @@
 "title": "Rendu des fichiers CHM"
 "url": "/fr/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Rendu des fichiers CHM
 
 ## Introduction

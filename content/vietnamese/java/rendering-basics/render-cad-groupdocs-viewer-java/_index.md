@@ -4,8 +4,8 @@
 "title": "Cách kết xuất bản vẽ CAD cụ thể trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất bản vẽ CAD cụ thể trong Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

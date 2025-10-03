@@ -5,8 +5,8 @@
 "title": "Преобразование документов в PDF"
 "url": "/ru/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Преобразование документов в PDF
 
 

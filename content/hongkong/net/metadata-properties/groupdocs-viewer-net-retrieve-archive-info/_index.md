@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 擷取存檔資訊－綜合指南"
 "url": "/zh-hant/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 擷取存檔資訊：綜合指南
 
 ## 介紹

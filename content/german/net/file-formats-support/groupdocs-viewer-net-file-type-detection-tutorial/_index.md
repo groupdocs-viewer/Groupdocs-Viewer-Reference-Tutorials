@@ -4,8 +4,8 @@
 "title": "So erkennen Sie Dateitypen mit GroupDocs.Viewer für .NET – Ein umfassendes Tutorial"
 "url": "/de/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # So erkennen Sie Dateitypen mit GroupDocs.Viewer für .NET: Ein umfassendes Tutorial
 
 ## Einführung

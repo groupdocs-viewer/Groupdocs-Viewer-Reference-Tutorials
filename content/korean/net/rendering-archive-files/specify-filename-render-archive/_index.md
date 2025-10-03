@@ -5,8 +5,8 @@
 "title": "아카이브 파일을 렌더링할 때 파일 이름 지정"
 "url": "/ko/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # 아카이브 파일을 렌더링할 때 파일 이름 지정
 
 ## 소개

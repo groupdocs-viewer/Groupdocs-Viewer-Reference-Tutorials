@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58;i Kullanarak TXT'yi HTML, JPG, PNG, PDF'ye Dönüştürme Tam Bir Kılavuz"
 "url": "/tr/net/export-conversion/groupdocs-viewer-dotnet-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile TXT'yi Çoklu Biçimlere Dönüştürün
 
 ## giriiş

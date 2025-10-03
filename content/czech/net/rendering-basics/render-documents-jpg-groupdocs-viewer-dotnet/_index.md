@@ -4,8 +4,8 @@
 "title": "Převod dokumentů do formátu JPG pomocí GroupDocs.Viewer pro .NET – Komplexní průvodce"
 "url": "/cs/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Převod dokumentů do formátu JPG pomocí GroupDocs.Viewer pro .NET: Komplexní průvodce
 
 ## Zavedení

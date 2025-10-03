@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["responsive-html", "groupdocs-viewer", "dotnet", "document-conversion"]
+type: docs
 ---
-
 # Render Responsive HTML with GroupDocs.Viewer .NET
 
 ## Introduction

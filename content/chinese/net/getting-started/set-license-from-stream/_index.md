@@ -5,8 +5,8 @@
 "title": "从流设置许可证"
 "url": "/zh/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # 从流设置许可证
 
 ## 介绍

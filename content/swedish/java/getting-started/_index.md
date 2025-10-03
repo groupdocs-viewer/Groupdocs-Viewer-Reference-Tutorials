@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Komma igång-handledningar för Java-utvecklare"
 "url": "/sv/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Komma igång-handledningar för Java-utvecklare
 
 Börja din resa med dessa viktiga GroupDocs.Viewer-handledningar som guidar dig genom installation, licenskonfiguration och hur du skapar din första dokumentvisare i Java. Våra nybörjarvänliga guider visar hur du konfigurerar din utvecklingsmiljö, initierar GroupDocs.Viewer-biblioteket och utför grundläggande dokumentrenderingsåtgärder. Följ dessa handledningar för att snabbt behärska grunderna och förbereda dig för mer avancerade dokumentvisningsuppgifter i dina Java-applikationer.

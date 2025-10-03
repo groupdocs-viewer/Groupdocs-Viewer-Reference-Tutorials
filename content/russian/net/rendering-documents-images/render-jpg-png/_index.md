@@ -5,8 +5,8 @@
 "title": "Преобразовать документ в JPGPNG"
 "url": "/ru/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Преобразовать документ в JPGPNG
 
 ## Введение

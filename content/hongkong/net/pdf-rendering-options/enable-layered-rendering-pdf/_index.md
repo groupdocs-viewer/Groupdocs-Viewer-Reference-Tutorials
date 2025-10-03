@@ -5,8 +5,8 @@
 "title": "在 PDF 中啟用分層渲染"
 "url": "/zh-hant/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # 在 PDF 中啟用分層渲染
 
 ## 介紹

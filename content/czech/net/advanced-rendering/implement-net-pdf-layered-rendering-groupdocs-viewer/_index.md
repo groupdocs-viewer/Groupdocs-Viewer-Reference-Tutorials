@@ -4,8 +4,8 @@
 "title": "Zvládněte vrstvené vykreslování PDF v .NET pomocí GroupDocs.Viewer – podrobný návod"
 "url": "/cs/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Zvládněte vrstvené vykreslování PDF v .NET pomocí GroupDocs.Viewer: Podrobný průvodce
 
 ## Zavedení

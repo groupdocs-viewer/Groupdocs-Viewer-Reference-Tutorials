@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 CAD 도면 크기 최적화로 웹 성능 향상"
 "url": "/ko/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 CAD 도면 크기 최적화로 웹 성능 향상
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer Java&#58; 如何有效率地從 URL 載入和渲染文檔"
 "url": "/zh-hant/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # 掌握 GroupDocs.Viewer Java：有效率地從 URL 載入和呈現文檔
 
 ## 介紹

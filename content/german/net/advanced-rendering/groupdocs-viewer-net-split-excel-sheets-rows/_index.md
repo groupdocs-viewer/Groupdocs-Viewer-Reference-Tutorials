@@ -4,8 +4,8 @@
 "title": "Teilen Sie Excel-Tabellen mit GroupDocs.Viewer .NET für eine effiziente Datenverwaltung in Seiten nach Zeilen auf"
 "url": "/de/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Aufteilen von Excel-Tabellen in Seiten nach Zeilen mit GroupDocs.Viewer .NET
 
 ## Einführung

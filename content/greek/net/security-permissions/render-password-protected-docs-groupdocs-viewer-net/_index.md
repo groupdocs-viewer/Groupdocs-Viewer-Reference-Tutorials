@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε έγγραφα που προστατεύονται με κωδικό πρόσβασης με το GroupDocs.Viewer .NET"
 "url": "/el/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση εγγράφων που προστατεύονται με κωδικό πρόσβασης με το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

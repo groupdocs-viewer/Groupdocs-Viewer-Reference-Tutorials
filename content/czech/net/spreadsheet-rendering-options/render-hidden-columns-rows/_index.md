@@ -5,8 +5,8 @@
 "title": "Vykreslení skrytých sloupců a řádků"
 "url": "/cs/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Vykreslení skrytých sloupců a řádků
 
 ## Zavedení

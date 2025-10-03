@@ -5,8 +5,8 @@
 "title": "Définir une licence mesurée"
 "url": "/fr/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Définir une licence mesurée
 
 ## Introduction

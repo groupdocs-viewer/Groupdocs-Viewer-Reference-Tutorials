@@ -4,8 +4,8 @@
 "title": "Comment afficher des documents protégés par mot de passe avec GroupDocs.Viewer .NET"
 "url": "/fr/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendu de documents protégés par mot de passe avec GroupDocs.Viewer .NET
 
 ## Introduction

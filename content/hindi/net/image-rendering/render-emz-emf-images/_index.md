@@ -5,8 +5,8 @@
 "title": "EMZ और EMF छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # EMZ और EMF छवियाँ प्रस्तुत करें
 
 ## परिचय

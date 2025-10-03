@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java-hoz – Dokumentuminformációk és elemzések lekérése"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumnézetek elsajátítása a GroupDocs.Viewer for Java segítségével
 ## Fejlett renderelési technikák
 **SEO URL:** groupdocs-viewer-java-document-views

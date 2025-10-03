@@ -4,8 +4,8 @@
 "title": "Verbeter PDF-rendering in .NET - Schakel lettertypehinting in met GroupDocs.Viewer"
 "url": "/nl/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # PDF-rendering verbeteren in .NET met GroupDocs.Viewer: lettertypehinting inschakelen
 
 ## Invoering

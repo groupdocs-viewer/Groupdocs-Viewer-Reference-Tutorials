@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 Java 中 OBJ 到 HTML/JPG/PNG/PDF 的转换"
 "url": "/zh/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # 掌握文件转换：使用 GroupDocs.Viewer 在 Java 中将 OBJ 转换为 HTML/JPG/PNG/PDF
 
 ## 介绍

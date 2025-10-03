@@ -4,8 +4,8 @@
 "title": "Filtrerad Outlook-datarendering med GroupDocs.Viewer för .NET – en omfattande guide"
 "url": "/sv/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Filtrerad Outlook-datarendering med GroupDocs.Viewer för .NET: En omfattande guide
 ## Introduktion
 Har du svårt att effektivt rendera Outlook-datafiler (.ost) samtidigt som du använder specifika filter som meddelandeinnehåll och avsändare? Många utvecklare behöver en effektiv lösning för att visa Outlook-meddelanden med exakta kriterier. I den här omfattande guiden utforskar vi hur man uppnår filtrerad rendering av Outlook-data med GroupDocs.Viewer för .NET – ett kraftfullt bibliotek som förenklar dokumenthantering.

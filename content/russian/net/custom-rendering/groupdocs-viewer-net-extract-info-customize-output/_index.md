@@ -4,8 +4,8 @@
 "title": "Извлечение информации о документе и настройка вывода с помощью GroupDocs.Viewer .NET&#58; Подробное руководство"
 "url": "/ru/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Извлечение информации о документе и настройка вывода с помощью GroupDocs.Viewer .NET
 ## Учебник по пользовательскому рендерингу
 ### Что вы узнаете:

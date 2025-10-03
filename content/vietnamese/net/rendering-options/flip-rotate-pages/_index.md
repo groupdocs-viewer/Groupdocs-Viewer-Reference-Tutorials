@@ -5,8 +5,8 @@
 "title": "Lật và Xoay Trang"
 "url": "/vi/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Lật và Xoay Trang
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Отображение таблиц Excel по разрывам страниц с помощью GroupDocs.Viewer для .NET"
 "url": "/ru/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Отображение таблиц Excel по разрывам страниц с помощью GroupDocs.Viewer для .NET
 
 ## Введение

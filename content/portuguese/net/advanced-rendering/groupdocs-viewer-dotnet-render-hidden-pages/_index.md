@@ -4,8 +4,8 @@
 "title": "Renderizar páginas ocultas em documentos usando GroupDocs.Viewer para .NET - Um guia passo a passo"
 "url": "/pt/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar páginas ocultas em documentos usando o GroupDocs.Viewer para .NET: um guia passo a passo
 
 ## Introdução

@@ -4,8 +4,8 @@
 "title": "Verberg tekstoverloop in Excel met GroupDocs.Viewer .NET&#58; een uitgebreide handleiding"
 "url": "/nl/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Verberg tekstoverloop in Excel met GroupDocs.Viewer .NET
 
 ## Invoering

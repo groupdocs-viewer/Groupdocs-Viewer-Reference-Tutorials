@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-
+type: docs
 ---
-
-
 # Mastering Document Views with GroupDocs.Viewer for Java
 ## Advanced Rendering Techniques
 **SEO URL:** groupdocs-viewer-java-document-views

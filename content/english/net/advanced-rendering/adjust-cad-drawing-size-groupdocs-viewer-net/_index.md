@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - CAD drawing size adjustment
 - rendering CAD files
-
+type: docs
 ---
-
-
 # Optimize CAD Drawing Size Using GroupDocs.Viewer .NET for Enhanced Web Performance
 
 ## Introduction

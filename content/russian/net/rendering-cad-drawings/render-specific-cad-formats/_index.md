@@ -5,8 +5,8 @@
 "title": "Специфические форматы САПР для визуализации (CF2)"
 "url": "/ru/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Специфические форматы САПР для визуализации (CF2)
 
 ## Введение

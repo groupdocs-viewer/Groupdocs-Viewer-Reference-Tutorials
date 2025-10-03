@@ -5,8 +5,8 @@
 "title": "ドキュメントをHTMLにレンダリングする"
 "url": "/ja/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # ドキュメントをHTMLにレンダリングする
 
 

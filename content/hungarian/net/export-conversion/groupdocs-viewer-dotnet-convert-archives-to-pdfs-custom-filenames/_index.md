@@ -4,8 +4,8 @@
 "title": "Archívumok konvertálása PDF-ekké egyéni fájlnevekkel a GroupDocs.Viewer for .NET használatával"
 "url": "/hu/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # Archívumok konvertálása PDF-ekké egyéni fájlnevekkel a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

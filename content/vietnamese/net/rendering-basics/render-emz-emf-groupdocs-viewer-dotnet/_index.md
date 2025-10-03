@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp EMZ/EMF bằng GroupDocs.Viewer .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp EMZ/EMF bằng GroupDocs.Viewer .NET: Hướng dẫn toàn diện
 ## Cơ bản về Render
 Hướng dẫn này trình bày cách hiển thị các tệp Enhanced Metafile (EMF) hoặc Embedded Metafile (EMZ) bằng GroupDocs.Viewer cho .NET. Cho dù bạn đang tích hợp các khả năng chuyển đổi tệp đa năng vào ứng dụng của mình hay quản lý tài liệu, hướng dẫn này sẽ đề cập đến việc hiển thị các định dạng này thành HTML, JPG, PNG và PDF.

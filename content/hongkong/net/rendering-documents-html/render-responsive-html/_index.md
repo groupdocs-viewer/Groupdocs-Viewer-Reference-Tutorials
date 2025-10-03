@@ -5,8 +5,8 @@
 "title": "渲染響應式 HTML"
 "url": "/zh-hant/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # 渲染響應式 HTML
 
 ## 介紹

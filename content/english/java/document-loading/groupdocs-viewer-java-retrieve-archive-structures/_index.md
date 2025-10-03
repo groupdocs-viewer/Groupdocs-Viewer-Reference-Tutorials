@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve archive structures
 - Java document viewer
-
+type: docs
 ---
-
-
 # How to Retrieve Archive Structures Using GroupDocs.Viewer for Java
 
 ## Introduction

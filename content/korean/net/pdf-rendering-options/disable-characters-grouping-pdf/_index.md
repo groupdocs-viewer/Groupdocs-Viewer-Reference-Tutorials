@@ -5,8 +5,8 @@
 "title": "PDF에서 문자 그룹화 비활성화"
 "url": "/ko/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # PDF에서 문자 그룹화 비활성화
 
 ## 소개

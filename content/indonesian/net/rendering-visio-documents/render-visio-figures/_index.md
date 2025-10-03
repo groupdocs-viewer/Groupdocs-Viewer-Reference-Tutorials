@@ -5,8 +5,8 @@
 "title": "Render Gambar Visio"
 "url": "/id/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Render Gambar Visio
 
 ## Perkenalan

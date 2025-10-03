@@ -5,8 +5,8 @@
 "title": "Obtenir les informations d'affichage du document PDF"
 "url": "/fr/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Obtenir les informations d'affichage du document PDF
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เอกสาร Microsoft Project"
 "url": "/th/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # การเรนเดอร์เอกสาร Microsoft Project
 
 ## การแนะนำ

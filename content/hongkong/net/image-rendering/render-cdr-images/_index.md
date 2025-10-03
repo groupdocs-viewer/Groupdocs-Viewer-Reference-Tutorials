@@ -5,8 +5,8 @@
 "title": "渲染 CDR 影像"
 "url": "/zh-hant/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # 渲染 CDR 影像
 
 ## 介紹

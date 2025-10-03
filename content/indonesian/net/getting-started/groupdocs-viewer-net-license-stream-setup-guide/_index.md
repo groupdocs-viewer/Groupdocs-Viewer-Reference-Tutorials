@@ -4,8 +4,8 @@
 "title": "Menyiapkan Lisensi GroupDocs.Viewer .NET melalui Stream&#58; Panduan Lengkap"
 "url": "/id/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Menyiapkan Lisensi GroupDocs.Viewer .NET melalui Stream: Panduan Lengkap
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "Bekijk informatie voor CAD-tekeningen"
 "url": "/nl/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Bekijk informatie voor CAD-tekeningen
 
 ## Invoering

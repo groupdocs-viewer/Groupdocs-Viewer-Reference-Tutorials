@@ -3,8 +3,8 @@
 "title": "Tutoriales de exportación y conversión de documentos para GroupDocs.Viewer .NET"
 "url": "/es/net/export-conversion/"
 "weight": 12
+type: docs
 ---
-
 # Tutoriales de exportación y conversión de documentos para GroupDocs.Viewer .NET
 
 Domine las técnicas de exportación y conversión de documentos con nuestros tutoriales de GroupDocs.Viewer .NET. Estas guías paso a paso muestran cómo convertir documentos entre múltiples formatos, implementar estrategias de exportación, mantener el formato durante la conversión y gestionar el procesamiento complejo de documentos multiformato. Cada tutorial incluye ejemplos detallados de código .NET para escenarios comunes de exportación y conversión, lo que le ayudará a crear soluciones flexibles de transformación de documentos.

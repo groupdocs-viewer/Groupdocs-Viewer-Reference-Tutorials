@@ -4,8 +4,8 @@
 "title": "Java útmutató&#58; Oldalak renderelése GroupDocs.Viewer API-val dokumentumok előnézetéhez és kezeléséhez"
 "url": "/hu/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Java implementálása: Oldalak renderelése GroupDocs.Viewer API-val
 
 ## Bevezetés

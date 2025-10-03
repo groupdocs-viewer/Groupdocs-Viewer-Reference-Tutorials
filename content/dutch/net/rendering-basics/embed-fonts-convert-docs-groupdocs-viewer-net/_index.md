@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; lettertypen insluiten en documenten efficiënt naar HTML converteren"
 "url": "/nl/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Documentweergave onder de knie krijgen met GroupDocs.Viewer .NET: lettertypen insluiten en converteren naar HTML
 
 ## Invoering

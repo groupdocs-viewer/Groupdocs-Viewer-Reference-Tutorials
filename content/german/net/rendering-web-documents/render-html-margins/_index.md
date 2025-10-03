@@ -5,8 +5,8 @@
 "title": "HTML mit benutzerdefinierten Rändern rendern"
 "url": "/de/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # HTML mit benutzerdefinierten Rändern rendern
 
 ## Einführung

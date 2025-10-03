@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Processing"]
 tags: ["groupdocs-viewer", "pdf-rendering", "dotnet-api", "document-viewer"]
+type: docs
 ---
-
 # PDF Rendering Options .NET - Complete Customization Guide
 
 ## Introduction

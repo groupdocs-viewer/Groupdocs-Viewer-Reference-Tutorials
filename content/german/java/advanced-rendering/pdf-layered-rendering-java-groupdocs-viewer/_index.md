@@ -4,8 +4,8 @@
 "title": "Effizientes PDF-Layer-Rendering in Java mit GroupDocs.Viewer"
 "url": "/de/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Effizientes PDF-Layer-Rendering in Java mit GroupDocs.Viewer
 
 ## Einführung

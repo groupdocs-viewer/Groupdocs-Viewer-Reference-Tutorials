@@ -4,8 +4,8 @@
 "title": "Szöveg kinyerése PDF-ből a GroupDocs.Viewer Java használatával; Átfogó útmutató fejlesztőknek"
 "url": "/hu/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Szöveg kinyerése PDF-ből a GroupDocs.Viewer Java használatával
 
 ## Bevezetés

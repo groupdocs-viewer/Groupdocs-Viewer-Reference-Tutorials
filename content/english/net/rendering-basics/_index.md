@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "document-rendering", "dotnet", "html-conversion", "pdf-rendering"]
+type: docs
 ---
-
 # Document Rendering .NET: Complete GroupDocs.Viewer Implementation Guide
 
 Looking to add powerful document rendering capabilities to your .NET application? You're in the right place. This comprehensive guide walks you through everything you need to know about converting and rendering documents using GroupDocs.Viewer for .NET—from basic setup to advanced optimization techniques.

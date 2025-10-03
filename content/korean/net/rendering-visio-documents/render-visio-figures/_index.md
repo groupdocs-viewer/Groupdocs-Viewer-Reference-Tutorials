@@ -5,8 +5,8 @@
 "title": "Visio 그림 렌더링"
 "url": "/ko/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Visio 그림 렌더링
 
 ## 소개

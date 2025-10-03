@@ -4,8 +4,8 @@
 "title": "Chia các trang tính Excel theo hàng và cột bằng GroupDocs.Viewer trong Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Chia tách các trang tính Excel theo hàng và cột bằng GroupDocs.Viewer trong Java
 
 ## Giới thiệu

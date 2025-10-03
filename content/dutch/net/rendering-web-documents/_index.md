@@ -5,8 +5,8 @@
 "title": "Webdocumenten renderen"
 "url": "/nl/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Webdocumenten renderen
 
 ## Invoering

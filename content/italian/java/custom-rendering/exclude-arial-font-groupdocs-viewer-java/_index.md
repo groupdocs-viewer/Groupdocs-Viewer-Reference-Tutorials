@@ -4,8 +4,8 @@
 "title": "Come escludere il font Arial nel rendering HTML con GroupDocs.Viewer Java&#58; una guida passo passo"
 "url": "/it/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Come escludere il font Arial durante il rendering di documenti in HTML utilizzando GroupDocs.Viewer Java
 
 ## Introduzione

@@ -5,8 +5,8 @@
 "title": "高级加载选项"
 "url": "/zh/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # 高级加载选项
 
 ## 介绍

@@ -5,8 +5,8 @@
 "title": "Abrufen und Speichern von Dokumentanhängen"
 "url": "/de/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Abrufen und Speichern von Dokumentanhängen
 
 ## Einführung

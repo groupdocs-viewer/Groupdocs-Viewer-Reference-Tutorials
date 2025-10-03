@@ -4,8 +4,8 @@
 "title": "عرض ملفات MS Project مع الملاحظات بكفاءة باستخدام GroupDocs.Viewer لـ .NET"
 "url": "/ar/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # عرض ملفات MS Project مع الملاحظات بكفاءة باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "ग्रिड लाइन्स रेंडर करें"
 "url": "/hi/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # ग्रिड लाइन्स रेंडर करें
 
 ## परिचय

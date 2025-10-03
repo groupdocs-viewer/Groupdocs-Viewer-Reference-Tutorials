@@ -4,8 +4,8 @@
 "title": "Kết xuất PDF Java với GroupDocs.Viewer&#58; Triển khai ngắt trang trong bảng tính"
 "url": "/vi/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ Java PDF Rendering: GroupDocs.Viewer với ngắt trang
 
 Mở khóa sức mạnh của việc kết xuất bảng tính trong các ứng dụng Java của bạn bằng GroupDocs.Viewer. Hướng dẫn toàn diện này sẽ chỉ cho bạn cách triển khai kết xuất PDF Java với ngắt trang để chuyển đổi liền mạch sang PDF.

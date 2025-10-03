@@ -5,8 +5,8 @@
 "title": "Získání informací o zobrazení datových souborů aplikace Outlook (PST, OST)"
 "url": "/cs/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Získání informací o zobrazení datových souborů aplikace Outlook (PST, OST)
 
 ## Zavedení

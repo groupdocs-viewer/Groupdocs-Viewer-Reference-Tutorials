@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用して HTML 出力から特定のフォントを除外する方法"
 "url": "/ja/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して HTML 出力からフォントを除外する方法
 
 ## 導入

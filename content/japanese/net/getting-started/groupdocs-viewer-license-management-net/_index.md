@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET のライセンス管理をマスターする包括的なガイド"
 "url": "/ja/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET でのライセンス管理の習得
 ## 包括的なガイド
 

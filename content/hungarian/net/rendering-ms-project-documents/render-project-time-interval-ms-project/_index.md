@@ -5,8 +5,8 @@
 "title": "Renderelési specifikus projekt időintervallum (MS Project)"
 "url": "/hu/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Renderelési specifikus projekt időintervallum (MS Project)
 
 ## Bevezetés

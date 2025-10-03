@@ -5,8 +5,8 @@
 "title": "Réduire le rendu du document HTML"
 "url": "/fr/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Réduire le rendu du document HTML
 
 ## Introduction

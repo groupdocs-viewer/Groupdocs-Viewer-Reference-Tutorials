@@ -5,8 +5,8 @@
 "title": "Réteges renderelés engedélyezése PDF-ben"
 "url": "/hu/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Réteges renderelés engedélyezése PDF-ben
 
 ## Bevezetés

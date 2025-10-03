@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer Kullanılarak Belge İşlemede JPG Boyutu Nasıl Sınırlandırılır"
 "url": "/tr/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanılarak Belge İşlemede JPG Boyutu Nasıl Sınırlandırılır
 
 ## giriiş

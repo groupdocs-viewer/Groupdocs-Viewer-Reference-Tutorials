@@ -5,8 +5,8 @@
 "title": "Nachverfolgte Änderungen rendern"
 "url": "/de/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Nachverfolgte Änderungen rendern
 
 ## Einführung

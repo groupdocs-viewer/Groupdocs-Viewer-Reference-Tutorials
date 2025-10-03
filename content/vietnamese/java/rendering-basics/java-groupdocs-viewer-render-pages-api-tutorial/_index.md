@@ -4,8 +4,8 @@
 "title": "Hướng dẫn Java&#58; Hiển thị các trang cụ thể với GroupDocs.Viewer API để xem trước và quản lý tài liệu"
 "url": "/vi/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai Java: Hiển thị các trang cụ thể bằng API GroupDocs.Viewer
 
 ## Giới thiệu

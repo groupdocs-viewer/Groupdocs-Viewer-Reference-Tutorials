@@ -5,8 +5,8 @@
 "title": "Рендеринг с пользовательскими шрифтами"
 "url": "/ru/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Рендеринг с пользовательскими шрифтами
 
 ## Введение

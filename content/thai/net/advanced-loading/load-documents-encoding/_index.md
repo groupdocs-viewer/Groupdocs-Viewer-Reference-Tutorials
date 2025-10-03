@@ -5,8 +5,8 @@
 "title": "โหลดเอกสารที่มีการเข้ารหัสเฉพาะ"
 "url": "/th/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # โหลดเอกสารที่มีการเข้ารหัสเฉพาะ
 
 ## การแนะนำ

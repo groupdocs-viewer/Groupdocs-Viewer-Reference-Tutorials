@@ -5,8 +5,8 @@
 "title": "Rendern von Archivdateien"
 "url": "/de/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Rendern von Archivdateien
 
 ## Einführung

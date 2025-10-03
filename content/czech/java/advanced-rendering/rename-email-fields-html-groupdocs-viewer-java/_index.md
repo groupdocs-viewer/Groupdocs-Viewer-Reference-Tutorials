@@ -4,8 +4,8 @@
 "title": "Jak přejmenovat pole e-mailu při převodu e-mailů do HTML pomocí GroupDocs.Viewer v Javě"
 "url": "/cs/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak přejmenovat pole e-mailu při vykreslování e-mailů do HTML pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

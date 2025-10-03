@@ -4,8 +4,8 @@
 "title": "Cómo renderizar dibujos CAD específicos en Java usando GroupDocs.Viewer"
 "url": "/es/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cómo renderizar dibujos CAD específicos en Java usando GroupDocs.Viewer
 
 ## Introducción

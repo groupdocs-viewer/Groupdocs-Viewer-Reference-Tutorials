@@ -3,8 +3,8 @@
 "title": "Tutorial sulla filigrana e l'annotazione dei documenti per GroupDocs.Viewer .NET"
 "url": "/it/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Tutorial sulla filigrana e l'annotazione dei documenti per GroupDocs.Viewer .NET
 
 Padroneggia le tecniche di annotazione e filigrana dei documenti con i nostri tutorial .NET di GroupDocs.Viewer. Queste guide passo passo illustrano come aggiungere filigrane di testo e immagini, implementare annotazioni, controllare il posizionamento e la trasparenza delle filigrane e visualizzare i documenti con annotazioni incorporate. Ogni tutorial include esempi pratici di codice .NET per aggiungere metadati visivi e marcature protettive ai documenti, migliorando le funzionalità di tracciamento e branding dei documenti.

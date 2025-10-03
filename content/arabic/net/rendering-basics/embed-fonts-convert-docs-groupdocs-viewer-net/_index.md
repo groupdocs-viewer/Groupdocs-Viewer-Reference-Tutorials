@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET - تضمين الخطوط وتحويل المستندات إلى HTML بكفاءة"
 "url": "/ar/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض المستندات باستخدام GroupDocs.Viewer .NET: تضمين الخطوط وتحويلها إلى HTML
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "Képmegjelenítés"
 "url": "/hu/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Képmegjelenítés
 
 

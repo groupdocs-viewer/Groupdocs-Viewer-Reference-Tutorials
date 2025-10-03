@@ -4,8 +4,8 @@
 "title": "เพิ่มลายน้ำลงในเอกสารโดยใช้ GroupDocs.Viewer Java คำแนะนำที่ครอบคลุม"
 "url": "/th/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # เพิ่มลายน้ำลงในเอกสารโดยใช้ GroupDocs.Viewer Java: คู่มือฉบับสมบูรณ์
 
 ## การแนะนำ

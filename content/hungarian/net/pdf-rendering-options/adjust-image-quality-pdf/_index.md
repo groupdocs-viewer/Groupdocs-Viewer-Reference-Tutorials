@@ -5,8 +5,8 @@
 "title": "Képminőség beállítása PDF-ben"
 "url": "/hu/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Képminőség beállítása PDF-ben
 
 ## Bevezetés

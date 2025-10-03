@@ -5,8 +5,8 @@
 "title": "Επιλογές απόδοσης PDF"
 "url": "/el/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # Επιλογές απόδοσης PDF
 
 

@@ -4,8 +4,8 @@
 "title": "Renderowanie ukrytych wierszy i kolumn w plikach Excela przy użyciu GroupDocs.Viewer dla .NET — przewodnik zaawansowany"
 "url": "/pl/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie ukrytych wierszy i kolumn w plikach Excela przy użyciu GroupDocs.Viewer dla .NET
 
 ## Wstęp

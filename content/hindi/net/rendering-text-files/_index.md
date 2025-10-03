@@ -5,8 +5,8 @@
 "title": "पाठ फ़ाइलें रेंडर करना"
 "url": "/hi/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # पाठ फ़ाइलें रेंडर करना
 
 ## परिचय

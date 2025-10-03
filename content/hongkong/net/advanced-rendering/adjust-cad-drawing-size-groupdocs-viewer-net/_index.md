@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 最佳化 CAD 繪圖大小以增強 Web 效能"
 "url": "/zh-hant/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 最佳化 CAD 繪圖大小以增強 Web 效能
 
 ## 介紹

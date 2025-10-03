@@ -5,8 +5,8 @@
 "title": "Φόρτωση εγγράφων από τοπικό δίσκο"
 "url": "/el/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Φόρτωση εγγράφων από τοπικό δίσκο
 
 ## Εισαγωγή

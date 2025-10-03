@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Processing"]
 tags: ["GroupDocs.Viewer", "PDF-rendering", "page-size", "NET-development"]
+type: docs
 ---
-
 # How to Render PDF with Original Page Size in .NET
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Cách lấy và lưu tệp đính kèm tài liệu bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy và lưu tệp đính kèm tài liệu bằng GroupDocs.Viewer cho Java: Hướng dẫn toàn diện
 
 ## Giới thiệu

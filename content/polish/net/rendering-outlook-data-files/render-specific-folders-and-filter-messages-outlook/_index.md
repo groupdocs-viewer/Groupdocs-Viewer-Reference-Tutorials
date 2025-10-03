@@ -5,8 +5,8 @@
 "title": "Renderuj określone foldery i filtruj wiadomości (Outlook)"
 "url": "/pl/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Renderuj określone foldery i filtruj wiadomości (Outlook)
 
 ## Wstęp

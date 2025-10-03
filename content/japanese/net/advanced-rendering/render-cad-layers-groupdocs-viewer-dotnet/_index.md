@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用して特定の CAD レイヤーをレンダリングする方法 包括的なガイド"
 "url": "/ja/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して特定の CAD 図面レイヤーをレンダリングする方法
 
 ## 導入

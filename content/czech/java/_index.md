@@ -5,8 +5,8 @@
 "title": "Komplexní návody a příklady pro GroupDocs.Viewer pro Javu"
 "url": "/cs/java/"
 "weight": 10
+type: docs
 ---
-
 # Komplexní návody a příklady pro GroupDocs.Viewer pro Javu
 
 ## Zavedení

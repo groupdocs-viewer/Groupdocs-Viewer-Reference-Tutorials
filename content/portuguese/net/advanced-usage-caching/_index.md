@@ -5,8 +5,8 @@
 "title": "Uso avançado (cache)"
 "url": "/pt/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Uso avançado (cache)
 
 

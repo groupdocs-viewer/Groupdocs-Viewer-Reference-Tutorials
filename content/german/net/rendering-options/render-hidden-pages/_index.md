@@ -5,8 +5,8 @@
 "title": "Versteckte Seiten rendern"
 "url": "/de/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Versteckte Seiten rendern
 
 ## Einführung

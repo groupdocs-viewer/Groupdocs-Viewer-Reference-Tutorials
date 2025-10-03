@@ -4,8 +4,8 @@
 "title": "Vykreslování archivních složek v Javě pomocí GroupDocs.Viewer – Podrobný návod"
 "url": "/cs/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování archivních složek pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

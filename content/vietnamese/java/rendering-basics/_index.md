@@ -3,8 +3,8 @@
 "title": "Hướng dẫn cơ bản về kết xuất tài liệu cho GroupDocs.Viewer Java"
 "url": "/vi/java/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # Hướng dẫn cơ bản về kết xuất tài liệu cho GroupDocs.Viewer Java
 
 Nắm vững các kỹ thuật kết xuất tài liệu với hướng dẫn Java GroupDocs.Viewer chi tiết của chúng tôi. Các hướng dẫn từng bước này trình bày cách chuyển đổi và kết xuất tài liệu sang nhiều định dạng đầu ra khác nhau, kiểm soát chất lượng kết xuất, quản lý kết xuất cấp trang và triển khai trực quan hóa tài liệu đa định dạng. Mỗi hướng dẫn bao gồm các ví dụ mã Java đang hoạt động cho các tình huống kết xuất phổ biến, giúp bạn xây dựng các ứng dụng có thể chuyển đổi tài liệu thành nhiều định dạng trình bày.

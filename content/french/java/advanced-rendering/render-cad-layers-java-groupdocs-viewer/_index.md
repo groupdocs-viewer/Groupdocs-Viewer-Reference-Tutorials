@@ -4,8 +4,8 @@
 "title": "Rendu de calques CAO spécifiques en Java à l'aide de GroupDocs.Viewer - Guide complet"
 "url": "/fr/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rendu de calques CAO spécifiques en Java à l'aide de GroupDocs.Viewer
 ## Introduction
 Vous avez des difficultés à générer le rendu de calques spécifiques à partir d'un dessin CAO ? Que vous soyez ingénieur, architecte ou développeur et que vous gériez des conceptions complexes, la gestion et la visualisation de calques CAO spécifiques peuvent s'avérer complexes. Ce guide explique comment générer efficacement le rendu de calques spécifiques grâce au puissant GroupDocs.Viewer pour Java.

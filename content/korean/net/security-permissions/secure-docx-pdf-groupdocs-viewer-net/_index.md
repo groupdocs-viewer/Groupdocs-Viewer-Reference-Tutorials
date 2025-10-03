@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 DOCX 파일을 PDF로 보호하는 방법 - 단계별 가이드"
 "url": "/ko/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 DOCX 파일을 PDF로 보호하는 방법: 단계별 가이드
 
 오늘날의 디지털 시대에는 민감한 문서를 보호하는 것이 매우 중요합니다. 지적 재산을 보호하는 기업이든 개인 정보를 보호하는 개인이든, Word 파일을 암호로 보호된 PDF로 변환하는 것은 획기적인 변화를 가져올 수 있습니다. 이 튜토리얼에서는 GroupDocs.Viewer for .NET을 사용하여 DOCX 문서를 인쇄 거부와 같은 특정 제한 사항이 적용된 보호된 PDF로 변환하는 방법을 안내합니다.

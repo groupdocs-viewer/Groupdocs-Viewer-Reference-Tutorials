@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中渲染存檔資料夾－逐步指南"
 "url": "/zh-hant/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 渲染存檔資料夾
 
 ## 介紹

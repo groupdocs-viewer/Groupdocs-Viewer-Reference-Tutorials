@@ -5,8 +5,8 @@
 "title": "Dokumentumok betöltése meghatározott kódolással"
 "url": "/hu/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Dokumentumok betöltése meghatározott kódolással
 
 ## Bevezetés

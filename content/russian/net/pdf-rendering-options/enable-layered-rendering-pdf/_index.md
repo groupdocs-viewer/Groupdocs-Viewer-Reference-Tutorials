@@ -5,8 +5,8 @@
 "title": "Включить многослойную визуализацию в PDF"
 "url": "/ru/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Включить многослойную визуализацию в PDF
 
 ## Введение

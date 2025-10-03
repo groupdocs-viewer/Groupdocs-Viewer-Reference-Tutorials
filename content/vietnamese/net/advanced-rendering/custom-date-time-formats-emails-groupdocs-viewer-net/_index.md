@@ -4,8 +4,8 @@
 "title": "Tùy chỉnh Định dạng Ngày-Giờ và Độ lệch Múi giờ trong Email với GroupDocs.Viewer .NET"
 "url": "/vi/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Tùy chỉnh Định dạng Ngày-Giờ và Múi giờ trong Email với GroupDocs.Viewer .NET
 
 ## Giới thiệu

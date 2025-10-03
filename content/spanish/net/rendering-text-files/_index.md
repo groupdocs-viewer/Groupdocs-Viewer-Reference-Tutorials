@@ -5,8 +5,8 @@
 "title": "Representación de archivos de texto"
 "url": "/es/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Representación de archivos de texto
 
 ## Introducción

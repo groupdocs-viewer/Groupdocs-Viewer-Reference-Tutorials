@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET kullanarak FTP'den Belgeleri Verimli Şekilde İndirin ve Oluşturun"
 "url": "/tr/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak FTP'den Belgeleri Verimli Şekilde Nasıl İndirebilir ve Oluşturabilirsiniz
 
 ## giriiş

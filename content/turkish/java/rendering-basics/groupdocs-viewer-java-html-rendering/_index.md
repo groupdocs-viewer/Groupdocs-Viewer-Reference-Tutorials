@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer'ı kullanarak Belgeleri HTML Olarak Yükleme ve Oluşturma"
 "url": "/tr/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanarak Belgeleri HTML Olarak Yükleme ve Oluşturma
 
 ## giriiş

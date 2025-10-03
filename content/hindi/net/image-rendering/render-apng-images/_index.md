@@ -5,8 +5,8 @@
 "title": "APNG छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # APNG छवियाँ प्रस्तुत करें
 
 ## परिचय

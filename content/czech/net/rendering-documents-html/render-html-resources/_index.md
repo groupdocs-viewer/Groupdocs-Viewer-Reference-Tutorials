@@ -5,8 +5,8 @@
 "title": "Renderování s vloženými nebo externími zdroji"
 "url": "/cs/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Renderování s vloženými nebo externími zdroji
 
 ## Zavedení

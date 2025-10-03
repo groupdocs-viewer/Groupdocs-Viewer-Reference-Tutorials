@@ -4,8 +4,8 @@
 "title": "Chuyển đổi Lưu trữ sang PDF với Tên tệp Tùy chỉnh Sử dụng GroupDocs.Viewer cho .NET"
 "url": "/vi/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # Chuyển đổi Lưu trữ sang PDF với Tên tệp Tùy chỉnh Sử dụng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

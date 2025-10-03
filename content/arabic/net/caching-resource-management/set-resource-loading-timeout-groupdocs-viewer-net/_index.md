@@ -4,8 +4,8 @@
 "title": "تنفيذ مهلة تحميل الموارد في GroupDocs.Viewer لـ .NET - دليل كامل"
 "url": "/ar/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # تنفيذ مهلة تحميل الموارد في GroupDocs.Viewer لـ .NET
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "Προσαρμογή μεγέθους και ποιότητας εικόνας (JPG)"
 "url": "/el/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Προσαρμογή μεγέθους και ποιότητας εικόνας (JPG)
 
 ## Εισαγωγή

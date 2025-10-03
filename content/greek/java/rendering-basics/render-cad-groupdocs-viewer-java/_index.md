@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε συγκεκριμένα σχέδια CAD σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε συγκεκριμένα σχέδια CAD σε Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

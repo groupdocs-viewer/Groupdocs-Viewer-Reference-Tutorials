@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 특정 CAD 도면을 렌더링하는 방법"
 "url": "/ko/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 특정 CAD 도면을 렌더링하는 방법
 
 ## 소개

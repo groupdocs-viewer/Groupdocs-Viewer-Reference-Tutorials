@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java を使用して CAD 図面をタイルに分割し、効率的にレンダリングする"
 "url": "/ja/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java を使用して CAD 図面をタイルに分割する
 
 ## 導入

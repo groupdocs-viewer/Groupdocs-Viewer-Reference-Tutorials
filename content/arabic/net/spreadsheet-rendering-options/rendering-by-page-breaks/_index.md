@@ -5,8 +5,8 @@
 "title": "العرض عن طريق فواصل الصفحات"
 "url": "/ar/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # العرض عن طريق فواصل الصفحات
 
 ## مقدمة

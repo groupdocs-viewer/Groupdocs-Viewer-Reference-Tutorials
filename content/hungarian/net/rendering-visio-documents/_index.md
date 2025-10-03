@@ -5,8 +5,8 @@
 "title": "Visio dokumentumok renderelése"
 "url": "/hu/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Visio dokumentumok renderelése
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "PDF で文字のグループ化を無効にする"
 "url": "/ja/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # PDF で文字のグループ化を無効にする
 
 ## 導入

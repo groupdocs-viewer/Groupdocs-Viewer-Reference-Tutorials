@@ -5,8 +5,8 @@
 "title": "Ανάκτηση και εκτύπωση συνημμένων εγγράφων"
 "url": "/el/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Ανάκτηση και εκτύπωση συνημμένων εγγράφων
 
 ## Εισαγωγή

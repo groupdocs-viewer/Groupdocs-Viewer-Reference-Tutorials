@@ -4,8 +4,8 @@
 "title": "Απόδοση συγκεκριμένων σελίδων σε .NET με το GroupDocs.Viewer&#58; Ένας πλήρης οδηγός"
 "url": "/el/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση συγκεκριμένων σελίδων σε .NET με το GroupDocs.Viewer: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

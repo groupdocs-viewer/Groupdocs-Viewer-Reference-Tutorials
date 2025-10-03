@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java スプレッドシートで非表示の行と列をレンダリングする"
 "url": "/ja/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java スプレッドシートで非表示の行と列をレンダリングする
 
 ## 導入

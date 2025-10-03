@@ -4,8 +4,8 @@
 "title": "Как извлекать и сохранять вложения документов с помощью GroupDocs.Viewer .NET для эффективного управления метаданными"
 "url": "/ru/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как извлекать и сохранять вложения документов с помощью GroupDocs.Viewer .NET
 
 ## Введение

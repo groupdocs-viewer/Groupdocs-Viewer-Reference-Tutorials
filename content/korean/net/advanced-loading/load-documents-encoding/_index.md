@@ -5,8 +5,8 @@
 "title": "특정 인코딩이 있는 문서 로드"
 "url": "/ko/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # 특정 인코딩이 있는 문서 로드
 
 ## 소개

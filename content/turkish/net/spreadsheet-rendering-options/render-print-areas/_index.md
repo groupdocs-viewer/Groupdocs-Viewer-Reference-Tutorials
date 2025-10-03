@@ -5,8 +5,8 @@
 "title": ".NET için GroupDocs.Viewer ile Baskı Alanlarını Oluşturun"
 "url": "/tr/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer ile Baskı Alanlarını Oluşturun
 
 ## giriiş

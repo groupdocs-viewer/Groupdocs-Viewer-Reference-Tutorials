@@ -5,8 +5,8 @@
 "title": "Carica documenti protetti da password"
 "url": "/it/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Carica documenti protetti da password
 
 ## Introduzione

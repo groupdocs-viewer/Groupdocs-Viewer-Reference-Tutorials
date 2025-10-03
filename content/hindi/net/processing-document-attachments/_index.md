@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/hi/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # दस्तावेज़ अनुलग्नकों का प्रसंस्करण
 
 ## परिचय

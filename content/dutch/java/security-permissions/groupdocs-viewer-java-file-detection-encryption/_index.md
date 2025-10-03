@@ -4,8 +4,8 @@
 "title": "Implementatie van bestandsdetectie en encryptiecontroles in Java met GroupDocs.Viewer"
 "url": "/nl/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Implementatie van bestandsdetectie en encryptiecontroles met GroupDocs.Viewer voor Java
 
 ## Invoering

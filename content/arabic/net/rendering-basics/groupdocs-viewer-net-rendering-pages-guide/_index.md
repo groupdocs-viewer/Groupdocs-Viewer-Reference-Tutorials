@@ -4,8 +4,8 @@
 "title": "عرض صفحات محددة في .NET باستخدام GroupDocs.Viewer - دليل شامل"
 "url": "/ar/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # عرض صفحات محددة في .NET باستخدام GroupDocs.Viewer: دليل شامل
 
 ## مقدمة

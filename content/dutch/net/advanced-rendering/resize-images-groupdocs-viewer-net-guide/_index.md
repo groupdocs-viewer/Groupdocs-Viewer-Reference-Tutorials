@@ -4,8 +4,8 @@
 "title": "Afbeeldingen vergroten of verkleinen met GroupDocs.Viewer .NET&#58; een stapsgewijze handleiding voor ontwikkelaars"
 "url": "/nl/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Afbeeldingen vergroten of verkleinen met GroupDocs.Viewer .NET: een stapsgewijze handleiding voor ontwikkelaars
 
 ## Invoering

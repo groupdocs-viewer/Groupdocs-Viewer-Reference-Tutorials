@@ -4,8 +4,8 @@
 "title": "बेहतर वेब प्रदर्शन के लिए GroupDocs.Viewer .NET का उपयोग करके CAD ड्राइंग आकार को अनुकूलित करें"
 "url": "/hi/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # बेहतर वेब प्रदर्शन के लिए GroupDocs.Viewer .NET का उपयोग करके CAD ड्राइंग आकार को अनुकूलित करें
 
 ## परिचय

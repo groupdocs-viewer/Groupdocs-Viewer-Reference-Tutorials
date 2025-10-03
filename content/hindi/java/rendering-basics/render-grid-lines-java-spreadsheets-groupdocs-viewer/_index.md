@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा स्प्रेडशीट में ग्रिड लाइन्स को कैसे रेंडर करें"
 "url": "/hi/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा स्प्रेडशीट में ग्रिड लाइन्स को कैसे रेंडर करें
 
 ## परिचय

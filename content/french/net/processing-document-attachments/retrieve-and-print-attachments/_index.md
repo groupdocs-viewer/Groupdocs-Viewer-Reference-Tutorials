@@ -5,8 +5,8 @@
 "title": "Récupérer et imprimer les pièces jointes des documents"
 "url": "/fr/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Récupérer et imprimer les pièces jointes des documents
 
 ## Introduction

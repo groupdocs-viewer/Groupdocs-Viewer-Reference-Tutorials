@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 实现 .NET WMZ/WMF 渲染，实现 Web 和跨平台兼容性"
 "url": "/zh/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 实现 .NET WMZ/WMF 渲染，实现 Web 和跨平台兼容性
 
 ## 介绍

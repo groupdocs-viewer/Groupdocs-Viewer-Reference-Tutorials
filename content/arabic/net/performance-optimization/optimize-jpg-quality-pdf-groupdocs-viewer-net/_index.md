@@ -4,8 +4,8 @@
 "title": "تحسين جودة JPG في ملفات PDF باستخدام GroupDocs.Viewer .NET - دليل شامل"
 "url": "/ar/net/performance-optimization/optimize-jpg-quality-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # تحسين جودة JPG في ملفات PDF باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

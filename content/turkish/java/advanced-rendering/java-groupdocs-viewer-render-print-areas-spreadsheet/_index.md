@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer ile Java E-Tablo Yazdırma Alanları Oluşturma&#58; Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Java E-Tablo Yazdırma Alanları GroupDocs.Viewer for Java ile Oluşturma
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Minifikace vykresleného HTML dokumentu"
 "url": "/cs/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Minifikace vykresleného HTML dokumentu
 
 ## Zavedení

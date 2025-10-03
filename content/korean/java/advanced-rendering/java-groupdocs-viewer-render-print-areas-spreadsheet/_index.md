@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용한 Java 스프레드시트 인쇄 영역 렌더링 - 포괄적인 가이드"
 "url": "/ko/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용한 Java 스프레드시트 인쇄 영역 렌더링
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "Documenten laden met specifieke codering"
 "url": "/nl/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Documenten laden met specifieke codering
 
 ## Invoering

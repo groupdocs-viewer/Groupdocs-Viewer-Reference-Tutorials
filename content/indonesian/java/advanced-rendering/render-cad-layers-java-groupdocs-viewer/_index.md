@@ -4,8 +4,8 @@
 "title": "Render Layer CAD Tertentu di Java Menggunakan GroupDocs.Viewer&#58; Panduan Lengkap"
 "url": "/id/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Membuat Lapisan CAD Tertentu di Java Menggunakan GroupDocs.Viewer
 ## Perkenalan
 Kesulitan merender lapisan tertentu dari gambar CAD? Baik Anda seorang insinyur, arsitek, atau pengembang yang menangani desain yang rumit, mengelola dan memvisualisasikan lapisan CAD tertentu dapat menjadi tantangan. Panduan ini menunjukkan cara merender lapisan tertentu secara efisien menggunakan GroupDocs.Viewer for Java yang canggih.

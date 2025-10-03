@@ -4,8 +4,8 @@
 "title": "Üres sorok renderelésének kihagyása Java-ban a GroupDocs.Viewer használatával - Teljesítménymutató"
 "url": "/hu/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Üres sorok renderelésének kihagyása Java-ban a GroupDocs.Viewer használatával
 ## Bevezetés
 táblázatok HTML-be konvertálása során a felesleges üres sorok megjelenítése túlzsúfoltságot okozhat a kimenetben, és extra erőforrásokat fogyaszthat. Ez komoly aggodalomra ad okot a teljesítményorientált fejlesztők számára. A "GroupDocs.Viewer Java" könyvtárral hatékonyan kihagyhatja ezen üres sorok megjelenítését, növelve ezzel az alkalmazások sebességét és áttekinthetőségét.

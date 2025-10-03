@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java 的响应式 HTML 渲染——综合指南"
 "url": "/zh/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 实现响应式 HTML 渲染
 
 ## 介绍

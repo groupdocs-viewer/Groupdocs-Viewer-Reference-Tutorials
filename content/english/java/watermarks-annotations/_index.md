@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["watermarks", "document-processing", "java-tutorials", "groupdocs-viewer"]
+type: docs
 ---
-
 # How to Add Watermarks to Documents Using Java - Complete Tutorial
 
 Adding watermarks to documents is a crucial requirement for many applications - whether you're protecting intellectual property, adding branding elements, or implementing document tracking systems. If you're working with Java and need a reliable solution for document watermarking and annotations, you've come to the right place.

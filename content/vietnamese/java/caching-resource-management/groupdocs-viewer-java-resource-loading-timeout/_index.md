@@ -4,8 +4,8 @@
 "title": "Thiết lập thời gian chờ tải tài nguyên trong GroupDocs.Viewer cho Java&#58; Nâng cao hiệu suất tài liệu"
 "url": "/vi/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Đặt thời gian chờ tải tài nguyên trong GroupDocs.Viewer cho Java: Cải thiện hiệu quả kết xuất tài liệu
 
 ## Giới thiệu

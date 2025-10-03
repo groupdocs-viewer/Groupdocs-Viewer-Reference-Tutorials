@@ -4,8 +4,8 @@
 "title": "Cara Membagi Gambar CAD Menjadi Petak Menggunakan GroupDocs.Viewer .NET untuk Rendering yang Efisien"
 "url": "/id/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membagi Gambar CAD menjadi Beberapa Petak dengan GroupDocs.Viewer .NET
 
 ## Perkenalan

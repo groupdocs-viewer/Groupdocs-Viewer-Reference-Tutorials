@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Processing"]
 tags: ["pdf-rendering", "layered-documents", "interactive-viewer", "groupdocs-viewer"]
+type: docs
 ---
-
 # PDF Layered Rendering .NET - Enable Interactive Document Viewing
 
 ## Introduction

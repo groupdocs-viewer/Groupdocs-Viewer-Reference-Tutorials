@@ -4,8 +4,8 @@
 "title": "Jak vykreslit DOCX do PNG pomocí GroupDocs.Viewer .NET – Podrobný návod"
 "url": "/cs/net/rendering-basics/render-docx-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit DOCX do PNG pomocí GroupDocs.Viewer .NET: Podrobný návod
 ## Základy renderování
 ### Zavedení

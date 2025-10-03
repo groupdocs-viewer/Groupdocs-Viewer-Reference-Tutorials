@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用してドキュメントを HTML として読み込み、レンダリングする方法"
 "url": "/ja/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用してドキュメントを HTML として読み込み、レンダリングする方法
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 보관 파일을 HTML로 렌더링하는 방법 - 단계별 가이드"
 "url": "/ko/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 보관 파일을 HTML로 렌더링하는 방법: 단계별 가이드
 ## 소개
 RAR이나 ZIP 같은 압축 파일을 웹 페이지에 표시하는 데 어려움을 겪고 계신가요? 이러한 복잡한 파일 형식을 사용자 친화적인 HTML 문서로 변환하는 것은 원활한 콘텐츠 전달에 필수적입니다. GroupDocs.Viewer for .NET을 사용하면 이 작업이 간편하고 효율적입니다.

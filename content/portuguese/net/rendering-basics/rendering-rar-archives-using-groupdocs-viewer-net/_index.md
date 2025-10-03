@@ -4,8 +4,8 @@
 "title": "Como renderizar arquivos RAR para os formatos HTML, JPG, PNG e PDF usando o GroupDocs.Viewer .NET"
 "url": "/pt/net/rendering-basics/rendering-rar-archives-using-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar arquivos RAR em vários formatos usando o GroupDocs.Viewer .NET
 
 No mundo atual, impulsionado por dados, gerenciar e compartilhar arquivos compactados, como arquivos RAR, com eficiência é crucial. Seja você um desenvolvedor integrando recursos de conversão de arquivos ao seu aplicativo ou alguém que precisa extrair conteúdo de arquivos RAR para diversos fins, o GroupDocs.Viewer para .NET oferece soluções robustas. Neste tutorial, exploraremos como renderizar arquivos RAR nos formatos HTML, JPG, PNG e PDF usando o GroupDocs.Viewer para .NET.

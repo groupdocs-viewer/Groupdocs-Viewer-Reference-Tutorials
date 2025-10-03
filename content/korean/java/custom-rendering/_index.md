@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java를 위한 사용자 정의 문서 렌더링 튜토리얼"
 "url": "/ko/java/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # GroupDocs.Viewer Java를 위한 사용자 정의 문서 렌더링 튜토리얼
 
 GroupDocs.Viewer Java 튜토리얼을 통해 사용자 정의 렌더링을 위한 고급 사용자 정의 기술을 익혀 보세요. 이 포괄적인 가이드는 사용자 정의 렌더링 핸들러 생성, 특수 렌더링 로직 구현, 내장 렌더링 기능 확장, 정교한 문서 처리 솔루션 개발 방법을 보여줍니다. 각 튜토리얼은 표준 렌더링 방식을 뛰어넘는 유연하고 맞춤형 문서 렌더링 전략을 구현하는 방법을 보여주는 자세한 Java 코드 예제를 제공합니다.

@@ -5,8 +5,8 @@
 "title": "Vykreslení responzivního HTML"
 "url": "/cs/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Vykreslení responzivního HTML
 
 ## Zavedení

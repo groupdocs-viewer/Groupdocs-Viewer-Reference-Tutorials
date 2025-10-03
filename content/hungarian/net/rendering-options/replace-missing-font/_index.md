@@ -5,8 +5,8 @@
 "title": "Hiányzó betűtípus cseréje"
 "url": "/hu/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Hiányzó betűtípus cseréje
 
 ## Bevezetés

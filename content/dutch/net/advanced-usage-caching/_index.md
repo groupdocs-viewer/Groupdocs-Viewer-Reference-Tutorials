@@ -5,8 +5,8 @@
 "title": "Geavanceerd gebruik (caching)"
 "url": "/nl/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Geavanceerd gebruik (caching)
 
 

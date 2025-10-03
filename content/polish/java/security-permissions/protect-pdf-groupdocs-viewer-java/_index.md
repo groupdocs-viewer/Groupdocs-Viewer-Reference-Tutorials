@@ -4,8 +4,8 @@
 "title": "Zabezpiecz swoje pliki PDF za pomocą GroupDocs.Viewer w Javie&#58; Przewodnik po ochronie hasłem i uprawnieniach"
 "url": "/pl/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Zabezpiecz swoje pliki PDF za pomocą GroupDocs.Viewer w Javie
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Incruste fuentes y convierta documentos a HTML de manera eficiente"
 "url": "/es/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Domine la representación de documentos con GroupDocs.Viewer .NET: Incruste fuentes y convierta a HTML
 
 ## Introducción

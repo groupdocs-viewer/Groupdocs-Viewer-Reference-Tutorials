@@ -5,8 +5,8 @@
 "title": "Aktivieren Sie das Caching für eine schnellere Dokumentverarbeitung"
 "url": "/de/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Aktivieren Sie das Caching für eine schnellere Dokumentverarbeitung
 
 ## Einführung

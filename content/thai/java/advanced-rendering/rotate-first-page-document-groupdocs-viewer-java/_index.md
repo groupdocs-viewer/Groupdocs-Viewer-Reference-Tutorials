@@ -4,8 +4,8 @@
 "title": "หมุนหน้าแรกของเอกสารโดยใช้ GroupDocs.Viewer สำหรับ Java (คู่มือขั้นสูง)"
 "url": "/th/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # หมุนหน้าแรกของเอกสารโดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

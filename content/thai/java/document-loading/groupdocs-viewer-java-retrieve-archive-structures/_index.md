@@ -4,8 +4,8 @@
 "title": "วิธีการดึงโครงสร้างไฟล์เก็บถาวรโดยใช้ GroupDocs.Viewer สำหรับ Java - คำแนะนำที่ครอบคลุม"
 "url": "/th/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการดึงโครงสร้างไฟล์เก็บถาวรโดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

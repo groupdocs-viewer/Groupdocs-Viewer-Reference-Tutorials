@@ -5,8 +5,8 @@
 "title": "FODGおよびODGイメージのレンダリング"
 "url": "/ja/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # FODGおよびODGイメージのレンダリング
 
 ## 導入

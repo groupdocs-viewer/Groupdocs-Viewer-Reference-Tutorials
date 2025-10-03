@@ -5,8 +5,8 @@
 "title": "Ogranicz liczbę elementów do renderowania w plikach danych programu Outlook"
 "url": "/pl/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Ogranicz liczbę elementów do renderowania w plikach danych programu Outlook
 
 ## Wstęp

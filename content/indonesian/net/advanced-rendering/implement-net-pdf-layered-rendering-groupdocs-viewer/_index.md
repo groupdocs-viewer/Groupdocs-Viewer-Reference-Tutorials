@@ -4,8 +4,8 @@
 "title": "Kuasai Rendering PDF Berlapis .NET dengan GroupDocs.Viewer&#58; Panduan Langkah demi Langkah"
 "url": "/id/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Rendering PDF Berlapis .NET dengan GroupDocs.Viewer: Panduan Langkah demi Langkah
 
 ## Perkenalan

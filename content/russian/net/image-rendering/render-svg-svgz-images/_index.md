@@ -5,8 +5,8 @@
 "title": "Рендеринг изображений SVG и SVGZ"
 "url": "/ru/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # Рендеринг изображений SVG и SVGZ
 
 ## Введение

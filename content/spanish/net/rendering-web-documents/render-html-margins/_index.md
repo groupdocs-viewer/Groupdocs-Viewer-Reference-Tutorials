@@ -5,8 +5,8 @@
 "title": "Renderizar HTML con márgenes definidos por el usuario"
 "url": "/es/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Renderizar HTML con márgenes definidos por el usuario
 
 ## Introducción

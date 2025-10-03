@@ -4,8 +4,8 @@
 "title": "Pomiń renderowanie pustych wierszy w Javie za pomocą GroupDocs.Viewer&#58; Przewodnik po wydajności"
 "url": "/pl/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Pomiń renderowanie pustych wierszy w Javie za pomocą GroupDocs.Viewer
 ## Wstęp
 Renderowanie niepotrzebnych pustych wierszy podczas konwersji arkuszy kalkulacyjnych do HTML może zaśmiecać dane wyjściowe i zużywać dodatkowe zasoby. Jest to poważny problem dla programistów zorientowanych na wydajność. Dzięki bibliotece „GroupDocs.Viewer Java” możesz skutecznie pominąć renderowanie tych pustych wierszy, zwiększając zarówno szybkość, jak i przejrzystość swoich aplikacji.

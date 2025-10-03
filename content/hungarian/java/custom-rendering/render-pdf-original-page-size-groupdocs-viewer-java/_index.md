@@ -4,8 +4,8 @@
 "title": "PDF-ek renderelése eredeti méretben a GroupDocs.Viewer for Java használatával – Átfogó útmutató"
 "url": "/hu/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # PDF-ek renderelése eredeti oldalméretükben a GroupDocs.Viewer for Java használatával
 
 A PDF renderelésekor az eredeti oldalméret megőrzése elengedhetetlen a pontos megjelenítéshez különböző platformokon és eszközökön. Ez az átfogó útmutató végigvezeti Önt a funkció megvalósításán a GroupDocs.Viewer for Java API használatával. A következő lépések követésével biztosíthatja, hogy PDF-jei megőrizzék eredeti képhűségüket a renderelés során.

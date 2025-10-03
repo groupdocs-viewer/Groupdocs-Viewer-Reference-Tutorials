@@ -4,8 +4,8 @@
 "title": "Java'da GroupDocs.Viewer Kullanarak Belirli PDF Sayfalarını Döndürme - Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java'da GroupDocs.Viewer Kullanarak Belirli PDF Sayfalarını Döndürme
 
 ## giriiş

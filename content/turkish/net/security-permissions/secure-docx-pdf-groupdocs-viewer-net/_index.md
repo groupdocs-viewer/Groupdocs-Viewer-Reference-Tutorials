@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak DOCX Dosyalarını PDF Olarak Nasıl Güvence Altına Alırsınız Adım Adım Kılavuz"
 "url": "/tr/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak DOCX Dosyalarını PDF Olarak Nasıl Güvence Altına Alırsınız: Adım Adım Kılavuz
 
 Günümüzün dijital çağında, hassas belgeleri korumak hayati önem taşır. İster fikri mülkiyeti koruyan bir işletme olun, ister kişisel bilgileri güvence altına alan bir birey olun, Word dosyalarını parola korumalı PDF'lere dönüştürmek dönüştürücü olabilir. Bu eğitim, DOCX belgelerini yazdırmayı reddetme gibi belirli kısıtlamalarla korumalı PDF'lere dönüştürmek için GroupDocs.Viewer for .NET'i kullanma konusunda size rehberlik eder.

@@ -4,8 +4,8 @@
 "title": "Truy xuất các bố cục và lớp CAD trong Java với GroupDocs.Viewer"
 "url": "/vi/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy bố cục và lớp CAD bằng GroupDocs.Viewer cho Java
 
 Trong thế giới kỹ thuật và thiết kế, các tệp Thiết kế hỗ trợ máy tính (CAD) là những công cụ không thể thiếu để lưu trữ lượng lớn thông tin chi tiết về thiết kế. Các tệp này có thể phức tạp, chứa nhiều bố cục và lớp cần được quản lý và truy xuất chính xác để thực hiện dự án hiệu quả. Nếu bạn đang muốn trích xuất các chi tiết cụ thể từ bản vẽ CAD theo chương trình trong Java, GroupDocs.Viewer for Java là giải pháp dành cho bạn. Hướng dẫn này sẽ hướng dẫn bạn quy trình truy xuất tất cả các bố cục và lớp từ bản vẽ CAD bằng GroupDocs.Viewer.

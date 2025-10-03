@@ -5,8 +5,8 @@
 "title": "उपयोगकर्ता-परिभाषित मार्जिन के साथ HTML प्रस्तुत करें"
 "url": "/hi/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # उपयोगकर्ता-परिभाषित मार्जिन के साथ HTML प्रस्तुत करें
 
 ## परिचय

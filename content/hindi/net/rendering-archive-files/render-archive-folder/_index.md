@@ -5,8 +5,8 @@
 "title": "पुरालेख फ़ोल्डर रेंडर करें"
 "url": "/hi/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # पुरालेख फ़ोल्डर रेंडर करें
 
 ## परिचय

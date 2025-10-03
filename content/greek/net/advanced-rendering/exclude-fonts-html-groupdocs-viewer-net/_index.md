@@ -4,8 +4,8 @@
 "title": "Πώς να εξαιρέσετε συγκεκριμένες γραμματοσειρές από την έξοδο HTML χρησιμοποιώντας το GroupDocs.Viewer για .NET"
 "url": "/el/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να εξαιρέσετε γραμματοσειρές από την έξοδο HTML χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

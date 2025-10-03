@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET का उपयोग करके MS प्रोजेक्ट दृश्य जानकारी प्राप्त करें | मेटाडेटा और गुण"
 "url": "/hi/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके MS प्रोजेक्ट दृश्य जानकारी प्राप्त करें
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58;yı Kullanarak Truevision TGA Dosyaları Nasıl Oluşturulur Adım Adım Kılavuz"
 "url": "/tr/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java Kullanarak Truevision TGA Dosyaları Nasıl Oluşturulur
 
 ## giriiş

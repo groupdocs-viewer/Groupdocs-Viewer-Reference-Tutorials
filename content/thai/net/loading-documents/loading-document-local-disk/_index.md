@@ -5,8 +5,8 @@
 "title": "โหลดเอกสารจากดิสก์ภายในเครื่อง"
 "url": "/th/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # โหลดเอกสารจากดิสก์ภายในเครื่อง
 
 ## การแนะนำ

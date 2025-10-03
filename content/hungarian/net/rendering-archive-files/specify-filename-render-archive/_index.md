@@ -5,8 +5,8 @@
 "title": "Fájlnév megadása archív fájlok renderelésekor"
 "url": "/hu/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Fájlnév megadása archív fájlok renderelésekor
 
 ## Bevezetés

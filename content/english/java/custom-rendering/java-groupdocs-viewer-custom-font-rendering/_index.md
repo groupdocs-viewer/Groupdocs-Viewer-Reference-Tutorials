@@ -8,10 +8,8 @@ keywords:
 - custom font rendering Java
 - GroupDocs Viewer setup
 - Java GroupDocs Viewer custom fonts
-
+type: docs
 ---
-
-
 # How to Implement Custom Font Rendering in Java with GroupDocs.Viewer: A Step-by-Step Guide
 
 ## Introduction

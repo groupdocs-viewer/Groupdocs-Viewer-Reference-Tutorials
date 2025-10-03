@@ -5,8 +5,8 @@
 "title": "تحديد نوع الملف عند تحميل المستندات"
 "url": "/ar/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # تحديد نوع الملف عند تحميل المستندات
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "عرض تخطيطات CAD بكفاءة باستخدام GroupDocs.Viewer لـ .NET - دليل خطوة بخطوة"
 "url": "/ar/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # عرض تخطيط CAD بكفاءة باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

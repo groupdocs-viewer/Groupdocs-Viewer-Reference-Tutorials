@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Processing"]
 tags: ["GroupDocs.Viewer", "PDF", "Image Quality", "NET", "Document Rendering"]
+type: docs
 ---
-
 # Adjust PDF Image Quality in .NET Applications
 
 ## Introduction

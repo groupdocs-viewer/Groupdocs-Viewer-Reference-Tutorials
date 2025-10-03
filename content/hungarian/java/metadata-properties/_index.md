@@ -3,8 +3,8 @@
 "title": "Dokumentum metaadatok kinyerésének oktatóanyagai a GroupDocs.Viewer Java-hoz"
 "url": "/hu/java/metadata-properties/"
 "weight": 14
+type: docs
 ---
-
 # Dokumentum metaadatok kinyerésének oktatóanyagai a GroupDocs.Viewer Java-hoz
 
 Tanulja meg a dokumentumok metaadatainak és tulajdonságainak kezelését a GroupDocs.Viewer Java oktatóanyagaink segítségével. Ezek a gyakorlati útmutatók bemutatják, hogyan lehet kinyerni a dokumentuminformációkat, beolvasni a metaadatmezőket, kezelni a dokumentumtulajdonságokat, és hogyan lehet metaadat-alapú dokumentumfeldolgozást megvalósítani. Minden oktatóanyag működő Java kódpéldákat tartalmaz a gyakori metaadat-forgatókönyvekhez, segítve olyan alkalmazások létrehozásában, amelyek hatékonyan képesek elemezni és kezelni a dokumentuminformációkat.

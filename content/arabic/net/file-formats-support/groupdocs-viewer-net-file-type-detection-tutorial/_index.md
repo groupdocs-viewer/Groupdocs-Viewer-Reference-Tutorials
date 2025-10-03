@@ -4,8 +4,8 @@
 "title": "كيفية اكتشاف أنواع الملفات باستخدام GroupDocs.Viewer لـ .NET - برنامج تعليمي شامل"
 "url": "/ar/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # كيفية اكتشاف أنواع الملفات باستخدام GroupDocs.Viewer لـ .NET: برنامج تعليمي شامل
 
 ## مقدمة

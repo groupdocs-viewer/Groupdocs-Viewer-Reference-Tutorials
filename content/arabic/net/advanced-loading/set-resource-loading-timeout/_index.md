@@ -5,8 +5,8 @@
 "title": "تعيين مهلة تحميل الموارد (متقدم)"
 "url": "/ar/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # تعيين مهلة تحميل الموارد (متقدم)
 
 ## مقدمة

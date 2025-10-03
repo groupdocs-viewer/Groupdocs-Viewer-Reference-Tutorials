@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 문서를 HTML로 로드하고 렌더링하는 방법"
 "url": "/ko/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 문서를 HTML로 로드하고 렌더링하는 방법
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "渲染选定的页面"
 "url": "/zh/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # 渲染选定的页面
 
 ## 介绍

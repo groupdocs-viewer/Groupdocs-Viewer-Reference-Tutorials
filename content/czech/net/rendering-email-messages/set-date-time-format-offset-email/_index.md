@@ -5,8 +5,8 @@
 "title": "Nastavení formátu data a času a časového posunu (e-mail)"
 "url": "/cs/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Nastavení formátu data a času a časového posunu (e-mail)
 
 

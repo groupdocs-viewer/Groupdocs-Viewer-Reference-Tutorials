@@ -4,8 +4,8 @@
 "title": "เรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

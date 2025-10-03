@@ -5,8 +5,8 @@
 "title": "पीडीएफ में वर्ण समूहन अक्षम करें"
 "url": "/hi/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # पीडीएफ में वर्ण समूहन अक्षम करें
 
 ## परिचय

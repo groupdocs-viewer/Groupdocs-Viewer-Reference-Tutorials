@@ -4,8 +4,8 @@
 "title": "Rendu efficace de toutes les mises en page CAO à l'aide de GroupDocs.Viewer pour Java"
 "url": "/fr/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendu efficace de toutes les mises en page CAO à l'aide de GroupDocs.Viewer pour Java
 
 ## Introduction

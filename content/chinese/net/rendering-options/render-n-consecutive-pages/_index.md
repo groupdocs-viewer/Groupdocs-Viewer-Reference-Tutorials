@@ -5,8 +5,8 @@
 "title": "渲染 N 个连续页面"
 "url": "/zh/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # 渲染 N 个连续页面
 
 ## 介绍

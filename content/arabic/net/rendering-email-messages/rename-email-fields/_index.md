@@ -5,8 +5,8 @@
 "title": "إعادة تسمية حقول البريد الإلكتروني أثناء العرض"
 "url": "/ar/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # إعادة تسمية حقول البريد الإلكتروني أثناء العرض
 
 ## مقدمة

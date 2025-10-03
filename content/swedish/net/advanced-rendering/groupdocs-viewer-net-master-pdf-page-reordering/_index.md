@@ -4,8 +4,8 @@
 "title": "Omordning av huvud-PDF-sidor i .NET med GroupDocs.Viewer – en utvecklarguide"
 "url": "/sv/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra omordning av PDF-sidor med GroupDocs.Viewer .NET: En omfattande utvecklarguide
 
 ## Introduktion

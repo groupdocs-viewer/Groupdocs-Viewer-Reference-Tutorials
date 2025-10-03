@@ -5,8 +5,8 @@
 "title": "FTP से दस्तावेज़ लोड करें (उन्नत)"
 "url": "/hi/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # FTP से दस्तावेज़ लोड करें (उन्नत)
 
 ## परिचय

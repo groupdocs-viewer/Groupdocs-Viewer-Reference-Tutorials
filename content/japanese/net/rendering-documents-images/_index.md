@@ -5,8 +5,8 @@
 "title": "ドキュメントを画像に変換する"
 "url": "/ja/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # ドキュメントを画像に変換する
 
 ## 導入

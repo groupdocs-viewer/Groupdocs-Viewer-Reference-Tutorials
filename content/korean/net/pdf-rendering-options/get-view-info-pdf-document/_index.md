@@ -5,8 +5,8 @@
 "title": "PDF 문서에 대한 보기 정보 가져오기"
 "url": "/ko/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # PDF 문서에 대한 보기 정보 가져오기
 
 ## 소개

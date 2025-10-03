@@ -5,8 +5,8 @@
 "title": "Microsoft Project 문서 렌더링"
 "url": "/ko/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Microsoft Project 문서 렌더링
 
 ## 소개

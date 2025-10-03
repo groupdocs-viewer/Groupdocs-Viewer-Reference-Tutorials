@@ -4,8 +4,8 @@
 "title": "Triển khai Kiểm tra Phát hiện và Mã hóa Tệp trong Java với GroupDocs.Viewer"
 "url": "/vi/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai Kiểm tra Phát hiện và Mã hóa Tệp bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

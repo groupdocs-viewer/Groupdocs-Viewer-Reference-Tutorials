@@ -4,8 +4,8 @@
 "title": "แบ่งแผ่นงาน Excel ออกเป็นหน้าตามแถวโดยใช้ GroupDocs.Viewer .NET เพื่อการจัดการข้อมูลที่มีประสิทธิภาพ"
 "url": "/th/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # การแบ่งแผ่นงาน Excel ออกเป็นหน้าตามแถวด้วย GroupDocs.Viewer .NET
 
 ## การแนะนำ

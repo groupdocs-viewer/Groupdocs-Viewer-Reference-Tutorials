@@ -4,8 +4,8 @@
 "title": "Nonaktifkan Pengelompokan Karakter dalam PDF dengan GroupDocs.Viewer untuk Teknik Rendering Tepat Java"
 "url": "/id/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Nonaktifkan Pengelompokan Karakter dalam PDF dengan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

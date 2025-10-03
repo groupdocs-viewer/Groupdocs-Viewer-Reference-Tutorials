@@ -4,8 +4,8 @@
 "title": "Hoe u rasterlijnen in Java-spreadsheets kunt weergeven met GroupDocs.Viewer"
 "url": "/nl/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u rasterlijnen in Java-spreadsheets kunt weergeven met GroupDocs.Viewer
 
 ## Invoering

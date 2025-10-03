@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["groupdocs-viewer", "html-rendering", "embedded-resources", "dotnet-tutorial"]
+type: docs
 ---
-
 # GroupDocs Viewer Render HTML Resources: Complete .NET Guide
 
 ## Introduction

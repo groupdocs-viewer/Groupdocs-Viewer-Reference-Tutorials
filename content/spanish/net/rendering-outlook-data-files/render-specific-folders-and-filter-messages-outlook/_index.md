@@ -5,8 +5,8 @@
 "title": "Representar carpetas específicas y filtrar mensajes (Outlook)"
 "url": "/es/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Representar carpetas específicas y filtrar mensajes (Outlook)
 
 ## Introducción

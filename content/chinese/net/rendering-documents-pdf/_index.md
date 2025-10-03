@@ -5,8 +5,8 @@
 "title": "将文档渲染为 PDF"
 "url": "/zh/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # 将文档渲染为 PDF
 
 

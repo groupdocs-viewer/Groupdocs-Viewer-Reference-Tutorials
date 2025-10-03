@@ -4,8 +4,8 @@
 "title": "Zvládnutí GroupDocs.Viewer v Javě&#58; Převod souborů IGS do HTML, JPG, PNG a PDF"
 "url": "/cs/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí GroupDocs.Viewer Java: Převod souborů IGS do více formátů
 
 ## Zavedení

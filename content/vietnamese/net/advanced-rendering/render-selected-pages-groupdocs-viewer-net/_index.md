@@ -4,8 +4,8 @@
 "title": "Cách Hiển thị các Trang đã Chọn bằng GroupDocs.Viewer .NET&#58; Hướng dẫn Toàn diện dành cho Nhà phát triển"
 "url": "/vi/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách hiển thị các trang cụ thể bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

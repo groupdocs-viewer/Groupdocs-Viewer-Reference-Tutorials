@@ -5,8 +5,8 @@
 "title": "Ορισμός άδειας χρήσης από τη ροή"
 "url": "/el/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Ορισμός άδειας χρήσης από τη ροή
 
 ## Εισαγωγή

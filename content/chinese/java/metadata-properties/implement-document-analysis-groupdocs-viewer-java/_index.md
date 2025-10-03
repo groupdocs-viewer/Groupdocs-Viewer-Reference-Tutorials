@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 实现文档分析——提取页面元数据和文本行"
 "url": "/zh/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 实现文档分析：提取页面元数据和文本行
 
 ## 介绍

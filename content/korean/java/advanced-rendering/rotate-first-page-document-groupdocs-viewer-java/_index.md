@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 문서의 첫 페이지 회전(고급 가이드)"
 "url": "/ko/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 문서의 첫 페이지 회전
 
 ## 소개

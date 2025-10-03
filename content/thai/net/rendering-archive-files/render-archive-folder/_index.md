@@ -5,8 +5,8 @@
 "title": "โฟลเดอร์เก็บถาวรการเรนเดอร์"
 "url": "/th/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # โฟลเดอร์เก็บถาวรการเรนเดอร์
 
 ## การแนะนำ

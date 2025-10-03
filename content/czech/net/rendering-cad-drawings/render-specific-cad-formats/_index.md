@@ -5,8 +5,8 @@
 "title": "Formáty CAD specifické pro renderování (CF2)"
 "url": "/cs/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Formáty CAD specifické pro renderování (CF2)
 
 ## Zavedení

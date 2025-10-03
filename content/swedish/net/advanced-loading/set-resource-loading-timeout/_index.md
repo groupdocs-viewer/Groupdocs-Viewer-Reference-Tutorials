@@ -5,8 +5,8 @@
 "title": "Ställ in tidsgräns för resursinläsning (avancerat)"
 "url": "/sv/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Ställ in tidsgräns för resursinläsning (avancerat)
 
 ## Introduktion

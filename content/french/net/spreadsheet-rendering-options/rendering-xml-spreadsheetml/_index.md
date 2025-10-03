@@ -5,8 +5,8 @@
 "title": "Rendu XML SpreadSheetML"
 "url": "/fr/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Rendu XML SpreadSheetML
 
 ## Introduction

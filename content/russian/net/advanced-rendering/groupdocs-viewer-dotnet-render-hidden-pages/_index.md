@@ -4,8 +4,8 @@
 "title": "Отображение скрытых страниц в документах с помощью GroupDocs.Viewer для .NET&#58; Пошаговое руководство"
 "url": "/ru/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Отображение скрытых страниц в документах с помощью GroupDocs.Viewer для .NET: пошаговое руководство
 
 ## Введение

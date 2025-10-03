@@ -5,8 +5,8 @@
 "title": "Thiết lập giấy phép từ Stream"
 "url": "/vi/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Thiết lập giấy phép từ Stream
 
 ## Giới thiệu

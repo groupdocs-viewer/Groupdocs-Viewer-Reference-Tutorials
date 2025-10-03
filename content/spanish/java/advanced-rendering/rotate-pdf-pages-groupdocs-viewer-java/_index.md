@@ -4,8 +4,8 @@
 "title": "Girar páginas PDF específicas con GroupDocs.Viewer en Java&#58; una guía completa"
 "url": "/es/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rotar páginas PDF específicas con GroupDocs.Viewer en Java
 
 ## Introducción

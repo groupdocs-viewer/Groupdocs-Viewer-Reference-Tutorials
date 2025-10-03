@@ -4,8 +4,8 @@
 "title": "Implementieren einer gebührenpflichtigen Lizenz für GroupDocs.Viewer in Java – Ein Entwicklerhandbuch"
 "url": "/de/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementieren einer gebührenpflichtigen Lizenz für GroupDocs.Viewer für Java: Ein Entwicklerhandbuch
 
 ## Einführung

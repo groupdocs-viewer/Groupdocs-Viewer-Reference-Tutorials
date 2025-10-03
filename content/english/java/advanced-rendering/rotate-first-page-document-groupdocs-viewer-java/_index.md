@@ -8,10 +8,8 @@ keywords:
 - rotate first page GroupDocs Viewer Java
 - GroupDocs Viewer Java setup
 - rotate pages in documents using Java
-
+type: docs
 ---
-
-
 # Rotate the First Page of a Document Using GroupDocs.Viewer for Java
 
 ## Introduction

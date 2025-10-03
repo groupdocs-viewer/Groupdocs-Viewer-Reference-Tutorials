@@ -5,8 +5,8 @@
 "title": "電子表格渲染選項"
 "url": "/zh-hant/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # 電子表格渲染選項
 
 ## 介紹

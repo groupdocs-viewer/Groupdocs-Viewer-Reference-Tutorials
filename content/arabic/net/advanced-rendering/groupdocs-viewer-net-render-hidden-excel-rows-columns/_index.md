@@ -4,8 +4,8 @@
 "title": "عرض الصفوف والأعمدة المخفية في ملفات Excel باستخدام GroupDocs.Viewer لـ .NET - دليل متقدم"
 "url": "/ar/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # عرض الصفوف والأعمدة المخفية في ملفات Excel باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ को JPGPNG में प्रस्तुत करें"
 "url": "/hi/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # दस्तावेज़ को JPGPNG में प्रस्तुत करें
 
 ## परिचय

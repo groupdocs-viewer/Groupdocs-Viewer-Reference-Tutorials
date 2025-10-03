@@ -4,8 +4,8 @@
 "title": "Cách hiển thị đường lưới trong bảng tính Java bằng GroupDocs.Viewer"
 "url": "/vi/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Cách hiển thị đường lưới trong bảng tính Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

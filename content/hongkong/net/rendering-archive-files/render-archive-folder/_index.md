@@ -5,8 +5,8 @@
 "title": "渲染存檔資料夾"
 "url": "/zh-hant/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # 渲染存檔資料夾
 
 ## 介紹

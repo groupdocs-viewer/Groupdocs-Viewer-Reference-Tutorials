@@ -5,8 +5,8 @@
 "title": "Aktivieren Sie Font Hinting in PDF"
 "url": "/de/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Aktivieren Sie Font Hinting in PDF
 
 ## Einführung

@@ -5,8 +5,8 @@
 "title": "渲染 APNG 图像"
 "url": "/zh/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # 渲染 APNG 图像
 
 ## 介绍

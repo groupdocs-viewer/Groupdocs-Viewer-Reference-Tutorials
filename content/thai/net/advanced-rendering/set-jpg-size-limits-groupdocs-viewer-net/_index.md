@@ -4,8 +4,8 @@
 "title": "วิธีตั้งค่าขีดจำกัดขนาดรูปภาพ JPG สูงสุดโดยใช้ GroupDocs.Viewer .NET"
 "url": "/th/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีตั้งค่าขีดจำกัดขนาดรูปภาพ JPG สูงสุดโดยใช้ GroupDocs.Viewer .NET
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Πώς να ανακτήσετε και να αποθηκεύσετε συνημμένα έγγραφα χρησιμοποιώντας το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να ανακτήσετε και να αποθηκεύσετε συνημμένα έγγραφα χρησιμοποιώντας το GroupDocs.Viewer για Java: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

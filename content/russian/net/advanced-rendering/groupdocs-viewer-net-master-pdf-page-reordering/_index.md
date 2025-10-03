@@ -4,8 +4,8 @@
 "title": "Мастер переупорядочивания страниц PDF в .NET с помощью GroupDocs.Viewer&#58; Руководство разработчика"
 "url": "/ru/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Освоение переупорядочивания страниц PDF с помощью GroupDocs.Viewer .NET: полное руководство разработчика
 
 ## Введение

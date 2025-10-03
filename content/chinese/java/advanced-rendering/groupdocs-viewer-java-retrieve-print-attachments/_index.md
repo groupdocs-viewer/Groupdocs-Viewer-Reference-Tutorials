@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer for Java&#58; 检索和打印文档附件"
 "url": "/zh/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # 掌握 Java 版 GroupDocs.Viewer：检索和打印文档附件
 
 ## 介绍

@@ -5,8 +5,8 @@
 "title": "Λήψη συντεταγμένων κειμένου για απόδοση εικόνας"
 "url": "/el/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Λήψη συντεταγμένων κειμένου για απόδοση εικόνας
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용한 반응형 HTML 렌더링 - 포괄적인 가이드"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용한 반응형 HTML 렌더링
 
 ## 소개

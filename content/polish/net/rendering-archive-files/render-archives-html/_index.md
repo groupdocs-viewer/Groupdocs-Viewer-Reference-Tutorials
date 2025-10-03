@@ -5,8 +5,8 @@
 "title": "Renderuj archiwa do pojedynczych lub wielu stron HTML"
 "url": "/pl/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Renderuj archiwa do pojedynczych lub wielu stron HTML
 
 ## Wstęp

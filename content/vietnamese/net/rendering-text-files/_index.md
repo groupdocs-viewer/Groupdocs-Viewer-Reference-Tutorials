@@ -5,8 +5,8 @@
 "title": "Hiển thị tệp văn bản"
 "url": "/vi/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Hiển thị tệp văn bản
 
 ## Giới thiệu

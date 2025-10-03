@@ -5,8 +5,8 @@
 "title": "Recupera e stampa gli allegati dei documenti"
 "url": "/it/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Recupera e stampa gli allegati dei documenti
 
 ## Introduzione

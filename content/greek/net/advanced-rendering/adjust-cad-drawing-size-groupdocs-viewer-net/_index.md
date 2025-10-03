@@ -4,8 +4,8 @@
 "title": "Βελτιστοποιήστε το μέγεθος σχεδίου CAD χρησιμοποιώντας το GroupDocs.Viewer .NET για βελτιωμένη απόδοση ιστού"
 "url": "/el/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Βελτιστοποιήστε το μέγεθος σχεδίου CAD χρησιμοποιώντας το GroupDocs.Viewer .NET για βελτιωμένη απόδοση ιστού
 
 ## Εισαγωγή

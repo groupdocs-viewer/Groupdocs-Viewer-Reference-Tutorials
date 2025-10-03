@@ -5,8 +5,8 @@
 "title": "Avancerad användning (cachning)"
 "url": "/sv/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Avancerad användning (cachning)
 
 

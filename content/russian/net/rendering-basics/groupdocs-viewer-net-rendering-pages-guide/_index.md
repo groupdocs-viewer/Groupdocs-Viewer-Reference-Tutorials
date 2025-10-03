@@ -4,8 +4,8 @@
 "title": "Отображение определенных страниц в .NET с помощью GroupDocs.Viewer&#58; Подробное руководство"
 "url": "/ru/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Отображение определенных страниц в .NET с помощью GroupDocs.Viewer: подробное руководство
 
 ## Введение

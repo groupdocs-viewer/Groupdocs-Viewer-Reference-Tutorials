@@ -4,8 +4,8 @@
 "title": "Så här renderar du arkivfiler till HTML med GroupDocs.Viewer .NET - En steg-för-steg-guide"
 "url": "/sv/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här renderar du arkivfiler till HTML med GroupDocs.Viewer .NET: En steg-för-steg-guide
 ## Introduktion
 Har du svårt att presentera arkivfiler som RAR eller ZIP på en webbsida? Att konvertera dessa komplexa filformat till användarvänliga HTML-dokument är avgörande för sömlös innehållsleverans. Med GroupDocs.Viewer för .NET blir denna uppgift enkel och effektiv.

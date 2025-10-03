@@ -4,8 +4,8 @@
 "title": "Configuration de la journalisation dans GroupDocs.Viewer pour Java - Guide de journalisation de la console et des fichiers"
 "url": "/fr/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Configuration de la journalisation dans GroupDocs.Viewer pour Java
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "优化 GroupDocs.Viewer .NET 中的 JPG 质量以增强图像渲染"
 "url": "/zh/net/advanced-rendering/adjust-jpg-quality-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer .NET 中优化 JPG 质量
 
 ## 介绍

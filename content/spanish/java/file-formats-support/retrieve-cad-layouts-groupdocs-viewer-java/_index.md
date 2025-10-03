@@ -4,8 +4,8 @@
 "title": "Recuperar diseños y capas CAD en Java con GroupDocs.Viewer"
 "url": "/es/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cómo recuperar diseños y capas CAD mediante GroupDocs.Viewer para Java
 
 En el mundo de la ingeniería y el diseño, los archivos de Diseño Asistido por Computadora (CAD) son herramientas indispensables que almacenan grandes cantidades de información detallada sobre los diseños. Estos archivos pueden ser complejos y contener múltiples diseños y capas que requieren una gestión y recuperación precisas para una ejecución eficaz del proyecto. Si busca extraer detalles específicos de dibujos CAD mediante programación en Java, GroupDocs.Viewer para Java es la solución ideal. Este tutorial le guiará en el proceso de recuperación de todos los diseños y capas de un dibujo CAD con GroupDocs.Viewer.

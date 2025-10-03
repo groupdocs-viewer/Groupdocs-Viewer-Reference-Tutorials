@@ -8,10 +8,8 @@ keywords:
 - MS Project viewing
 - Java GroupDocs.Viewer
 - extracting project information
-
+type: docs
 ---
-
-
 # Mastering MS Project Document Viewing with GroupDocs.Viewer in Java
 
 ## Introduction

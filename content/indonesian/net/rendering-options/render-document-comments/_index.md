@@ -5,8 +5,8 @@
 "title": "Render Dokumen dengan Komentar"
 "url": "/id/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Render Dokumen dengan Komentar
 
 ## Perkenalan

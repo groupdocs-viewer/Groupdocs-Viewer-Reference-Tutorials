@@ -4,8 +4,8 @@
 "title": "Cara Merender File EMZ/EMF Menggunakan GroupDocs.Viewer .NET&#58; Panduan Lengkap"
 "url": "/id/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File EMZ/EMF Menggunakan GroupDocs.Viewer .NET: Panduan Lengkap
 ## Dasar-dasar Rendering
 Tutorial ini menunjukkan cara merender file Enhanced Metafile (EMF) atau Embedded Metafile (EMZ) menggunakan GroupDocs.Viewer untuk .NET. Baik Anda mengintegrasikan kemampuan konversi file serbaguna ke dalam aplikasi atau mengelola dokumen, panduan ini mencakup proses merender format ini ke dalam HTML, JPG, PNG, dan PDF.

@@ -4,8 +4,8 @@
 "title": "Πώς να αλλάξετε το μέγεθος εικόνων με το GroupDocs.Viewer .NET™ - Ένας οδηγός βήμα προς βήμα για προγραμματιστές"
 "url": "/el/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αλλάξετε το μέγεθος εικόνων με το GroupDocs.Viewer .NET: Ένας οδηγός βήμα προς βήμα για προγραμματιστές
 
 ## Εισαγωγή

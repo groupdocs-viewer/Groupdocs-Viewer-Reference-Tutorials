@@ -4,8 +4,8 @@
 "title": "Archieven converteren naar PDF's met aangepaste bestandsnamen met GroupDocs.Viewer voor .NET"
 "url": "/nl/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # Archieven converteren naar PDF's met aangepaste bestandsnamen met GroupDocs.Viewer voor .NET
 
 ## Invoering

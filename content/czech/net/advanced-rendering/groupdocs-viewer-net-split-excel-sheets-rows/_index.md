@@ -4,8 +4,8 @@
 "title": "Rozdělení excelových listů na stránky podle řádků pomocí GroupDocs.Viewer .NET pro efektivní správu dat"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Rozdělení excelových listů na stránky podle řádků pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

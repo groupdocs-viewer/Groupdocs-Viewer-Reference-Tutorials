@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["custom-fonts", "document-viewer", "typography", "rendering"]
+type: docs
 ---
-
 # Render Documents with Custom Fonts in .NET
 
 ## Introduction

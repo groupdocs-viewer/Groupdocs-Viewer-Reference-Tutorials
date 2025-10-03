@@ -5,8 +5,8 @@
 "title": "تقديم أشكال Visio"
 "url": "/ar/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # تقديم أشكال Visio
 
 ## مقدمة

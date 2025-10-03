@@ -5,8 +5,8 @@
 "title": "Извлечение и печать вложений документов"
 "url": "/ru/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Извлечение и печать вложений документов
 
 ## Введение

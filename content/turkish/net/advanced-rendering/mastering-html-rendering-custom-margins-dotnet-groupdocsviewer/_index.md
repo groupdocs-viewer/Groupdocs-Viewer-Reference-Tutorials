@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak .NET'te Özel Kenar Boşluklarıyla HTML İşlemede Ustalaşın"
 "url": "/tr/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak .NET'te Kullanıcı Tanımlı Kenar Boşluklarıyla HTML Oluşturmada Ustalaşma
 
 ## giriiş

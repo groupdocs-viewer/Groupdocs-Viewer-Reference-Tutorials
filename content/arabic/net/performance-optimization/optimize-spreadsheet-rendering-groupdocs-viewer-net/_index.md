@@ -4,8 +4,8 @@
 "title": "تحسين عرض جداول البيانات باستخدام GroupDocs.Viewer لـ .NET - تخطي الأعمدة الفارغة"
 "url": "/ar/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # تحسين عرض جدول البيانات باستخدام GroupDocs.Viewer لـ .NET
 ## كيفية تخطي عرض الأعمدة الفارغة في جداول البيانات باستخدام GroupDocs.Viewer .NET
 ### مقدمة

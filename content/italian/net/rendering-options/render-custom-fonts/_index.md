@@ -5,8 +5,8 @@
 "title": "Rendering con caratteri personalizzati"
 "url": "/it/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Rendering con caratteri personalizzati
 
 ## Introduzione

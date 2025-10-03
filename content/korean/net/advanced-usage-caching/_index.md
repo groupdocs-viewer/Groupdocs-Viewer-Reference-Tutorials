@@ -5,8 +5,8 @@
 "title": "고급 사용법(캐싱)"
 "url": "/ko/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # 고급 사용법(캐싱)
 
 

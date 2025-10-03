@@ -5,8 +5,8 @@
 "title": "渲染 XML SpreadSheetML"
 "url": "/zh/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # 渲染 XML SpreadSheetML
 
 ## 介绍

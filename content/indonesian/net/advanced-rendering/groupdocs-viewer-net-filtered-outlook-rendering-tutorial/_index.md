@@ -4,8 +4,8 @@
 "title": "Penyajian Data Outlook yang Difilter dengan GroupDocs.Viewer untuk .NET&#58; Panduan Lengkap"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Penyajian Data Outlook yang Difilter dengan GroupDocs.Viewer untuk .NET: Panduan Lengkap
 ## Perkenalan
 Apakah Anda kesulitan untuk merender file data Outlook (.ost) secara efisien saat menerapkan filter tertentu seperti konten pesan dan pengirim? Banyak pengembang memerlukan solusi yang efisien untuk melihat pesan Outlook dengan kriteria yang tepat. Dalam panduan komprehensif ini, kami akan membahas cara mencapai rendering data Outlook yang difilter menggunakan GroupDocs.Viewer for .NET—pustaka canggih yang menyederhanakan pemrosesan dokumen.

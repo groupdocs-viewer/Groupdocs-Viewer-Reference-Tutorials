@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ अनुलग्नकों को कैसे पुनर्प्राप्त और सहेजें&#58; एक व्यापक गाइड"
 "url": "/hi/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ अनुलग्नक को कैसे पुनर्प्राप्त और सहेजें: एक व्यापक मार्गदर्शिका
 
 ## परिचय

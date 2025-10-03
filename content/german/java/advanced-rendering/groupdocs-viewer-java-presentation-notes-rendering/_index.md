@@ -4,8 +4,8 @@
 "title": "So rendern Sie Präsentationen mit Notizen mithilfe von GroupDocs.Viewer für Java – Ein umfassender Leitfaden"
 "url": "/de/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # So rendern Sie Präsentationen mit Notizen mithilfe von GroupDocs.Viewer für Java
 
 ## Einführung

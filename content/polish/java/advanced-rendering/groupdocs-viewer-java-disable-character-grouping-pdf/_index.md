@@ -4,8 +4,8 @@
 "title": "Wyłącz grupowanie znaków w plikach PDF za pomocą GroupDocs.Viewer dla precyzyjnych technik renderowania Java"
 "url": "/pl/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Wyłączanie grupowania znaków w plikach PDF za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

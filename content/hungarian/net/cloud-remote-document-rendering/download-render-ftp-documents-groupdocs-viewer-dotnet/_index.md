@@ -4,8 +4,8 @@
 "title": "Dokumentumok hatékony letöltése és renderelése FTP-ről a GroupDocs.Viewer .NET használatával"
 "url": "/hu/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan lehet hatékonyan letölteni és megjeleníteni dokumentumokat FTP-ről a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

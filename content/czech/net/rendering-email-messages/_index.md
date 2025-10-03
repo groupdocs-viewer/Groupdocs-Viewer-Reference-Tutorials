@@ -5,8 +5,8 @@
 "title": "Vykreslování e-mailových zpráv"
 "url": "/cs/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Vykreslování e-mailových zpráv
 
 ## Zavedení

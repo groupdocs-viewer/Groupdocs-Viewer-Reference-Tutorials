@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Processing"]
 tags: ["image-rendering", "dotnet", "document-conversion", "groupdocs-viewer"]
+type: docs
 ---
-
 # How to Render Images in .NET Applications
 
 ## Introduction

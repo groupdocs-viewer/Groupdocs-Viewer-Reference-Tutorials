@@ -4,8 +4,8 @@
 "title": "CAD-layouts en -lagen ophalen met GroupDocs.Viewer .NET voor efficiënt ontwerpbeheer"
 "url": "/nl/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # CAD-layouts en lagen ophalen met GroupDocs.Viewer .NET
 ## Invoering
 In de wereld van Computer-Aided Design (CAD) is het efficiënt beheren van complexe tekeningen cruciaal, vooral wanneer er met meerdere lay-outs en lagen binnen één bestand wordt gewerkt. Voor architecten, ingenieurs en ontwerpers verhoogt de snelle toegang tot specifieke informatie de productiviteit. **GroupDocs.Viewer .NET** biedt een krachtige oplossing waarmee ontwikkelaars programmatisch lay-outs en lagen uit CAD-tekeningen kunnen halen.

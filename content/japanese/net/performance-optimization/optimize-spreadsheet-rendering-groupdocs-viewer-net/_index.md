@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET でスプレッドシートのレンダリングを最適化し、空の列をスキップする"
 "url": "/ja/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET でスプレッドシートのレンダリングを最適化する
 ## GroupDocs.Viewer .NET を使用してスプレッドシート内の空の列のレンダリングをスキップする方法
 ### 導入

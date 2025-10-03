@@ -4,8 +4,8 @@
 "title": "Υλοποίηση .NET Responsive HTML Rendering με το GroupDocs.Viewer® Ένας ολοκληρωμένος οδηγός για προγραμματιστές"
 "url": "/el/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση .NET Responsive HTML Rendering με το GroupDocs.Viewer: Οδηγός για προγραμματιστές
 
 ## Εισαγωγή

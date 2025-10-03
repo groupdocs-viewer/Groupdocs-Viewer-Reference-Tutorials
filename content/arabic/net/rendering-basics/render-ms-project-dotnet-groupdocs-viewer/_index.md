@@ -4,8 +4,8 @@
 "title": "عرض مستندات MS Project في .NET باستخدام GroupDocs.Viewer - دليل شامل"
 "url": "/ar/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض مستندات MS Project في .NET باستخدام GroupDocs.Viewer
 ## مقدمة
 في بيئات الأعمال سريعة التطور اليوم، تُعدّ إدارة الجداول الزمنية للمشاريع ومواردها بكفاءة أمرًا بالغ الأهمية. غالبًا ما يحتاج أصحاب المصلحة إلى عرض أجزاء محددة من المشروع دون الحاجة إلى ملف MS Project كامل. يشرح هذا البرنامج التعليمي كيفية عرض أجزاء من مستندات MS Project ضمن فترات زمنية محددة باستخدام GroupDocs.Viewer لـ .NET، وهو الحل الأمثل لهذه المشكلة الشائعة.

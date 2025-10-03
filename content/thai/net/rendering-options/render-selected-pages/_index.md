@@ -5,8 +5,8 @@
 "title": "แสดงผลหน้าที่เลือก"
 "url": "/th/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # แสดงผลหน้าที่เลือก
 
 ## การแนะนำ

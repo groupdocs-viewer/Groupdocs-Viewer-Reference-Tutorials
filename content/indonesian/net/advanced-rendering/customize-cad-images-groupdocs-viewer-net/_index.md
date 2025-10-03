@@ -4,8 +4,8 @@
 "title": "Menyesuaikan Gambar CAD dengan GroupDocs.Viewer .NET&#58; Teknik Rendering Canggih"
 "url": "/id/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat dan Menyesuaikan Gambar CAD Menggunakan GroupDocs.Viewer .NET
 
 ## Perkenalan

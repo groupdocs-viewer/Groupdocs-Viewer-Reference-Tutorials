@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh"
 "url": "/vi/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Kết xuất hình ảnh
 
 

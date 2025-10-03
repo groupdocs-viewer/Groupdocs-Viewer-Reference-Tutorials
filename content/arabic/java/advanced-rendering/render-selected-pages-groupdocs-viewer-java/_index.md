@@ -4,8 +4,8 @@
 "title": "كيفية عرض صفحات محددة من مستند باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض صفحات محددة باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

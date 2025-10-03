@@ -4,8 +4,8 @@
 "title": "Java Guide&#58; Отображение определенных страниц с помощью API GroupDocs.Viewer для предварительного просмотра и управления документами"
 "url": "/ru/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Реализация Java: визуализация определенных страниц с помощью API GroupDocs.Viewer
 
 ## Введение

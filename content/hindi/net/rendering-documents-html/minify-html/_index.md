@@ -5,8 +5,8 @@
 "title": "रेंडर किए गए HTML दस्तावेज़ को छोटा करें"
 "url": "/hi/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # रेंडर किए गए HTML दस्तावेज़ को छोटा करें
 
 ## परिचय

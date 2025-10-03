@@ -5,8 +5,8 @@
 "title": "Képméret és -minőség beállítása (JPG)"
 "url": "/hu/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Képméret és -minőség beállítása (JPG)
 
 ## Bevezetés

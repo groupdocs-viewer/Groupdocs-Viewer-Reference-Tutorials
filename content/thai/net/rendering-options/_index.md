@@ -5,8 +5,8 @@
 "title": "ตัวเลือกการเรนเดอร์"
 "url": "/th/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # ตัวเลือกการเรนเดอร์
 
 

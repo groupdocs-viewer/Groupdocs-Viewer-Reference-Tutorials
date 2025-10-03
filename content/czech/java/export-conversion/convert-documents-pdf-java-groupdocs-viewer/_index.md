@@ -4,8 +4,8 @@
 "title": "Převod dokumentů do PDF v Javě pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/java/export-conversion/convert-documents-pdf-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Převod dokumentů do PDF v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

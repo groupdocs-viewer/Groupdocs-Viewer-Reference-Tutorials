@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET でドキュメント情報を抽出し、出力をカスタマイズする包括的なガイド"
 "url": "/ja/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET でドキュメント情報を抽出し、出力をカスタマイズする
 ## カスタムレンダリングチュートリアル
 ### 学習内容:

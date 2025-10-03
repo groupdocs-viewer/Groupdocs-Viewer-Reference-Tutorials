@@ -5,8 +5,8 @@
 "title": "Notizen rendern und Zeiteinheiten anpassen (MS Project)"
 "url": "/de/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Notizen rendern und Zeiteinheiten anpassen (MS Project)
 
 ## Einführung

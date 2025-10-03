@@ -4,8 +4,8 @@
 "title": "Jak upravit časové jednotky MS Project pomocí GroupDocs.Viewer v Javě – podrobný návod"
 "url": "/cs/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak upravit časové jednotky MS Project pomocí GroupDocs.Viewer v Javě: Podrobný návod
 ## Zavedení
 Už vás nebaví ručně upravovat časové jednotky v dokumentech MS Project před jejich vykreslením do formátu HTML? Tento proces může být zdlouhavý a náchylný k chybám, zejména při práci s velkými projekty. **GroupDocs.Viewer pro Javu**, můžete snadno programově upravit nastavení časových jednotek, což zajistí přesnost a efektivitu.

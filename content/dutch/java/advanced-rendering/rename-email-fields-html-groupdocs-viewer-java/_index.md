@@ -4,8 +4,8 @@
 "title": "Hoe u e-mailvelden hernoemt bij het converteren van e-mails naar HTML met behulp van GroupDocs.Viewer Java"
 "url": "/nl/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u e-mailvelden kunt hernoemen bij het renderen van e-mails naar HTML met GroupDocs.Viewer Java
 
 ## Invoering

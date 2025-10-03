@@ -4,8 +4,8 @@
 "title": "Απόδοση εγγράφων κειμένου σε Shift_JIS χρησιμοποιώντας GroupDocs.Viewer για Java"
 "url": "/el/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση εγγράφων κειμένου σε Shift_JIS χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

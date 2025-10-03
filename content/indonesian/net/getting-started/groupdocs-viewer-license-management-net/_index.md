@@ -4,8 +4,8 @@
 "title": "Menguasai Manajemen Lisensi di GroupDocs.Viewer untuk .NET&#58; Panduan Lengkap"
 "url": "/id/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Manajemen Lisensi di GroupDocs.Viewer untuk .NET
 ## Panduan Lengkap
 

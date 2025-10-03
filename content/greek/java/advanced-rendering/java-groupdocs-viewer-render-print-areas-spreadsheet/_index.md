@@ -4,8 +4,8 @@
 "title": "Απόδοση περιοχών εκτύπωσης υπολογιστικού φύλλου Java με το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση περιοχών εκτύπωσης υπολογιστικού φύλλου Java με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

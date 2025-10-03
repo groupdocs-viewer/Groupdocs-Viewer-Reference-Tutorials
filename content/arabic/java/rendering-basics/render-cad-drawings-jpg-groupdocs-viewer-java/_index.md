@@ -4,8 +4,8 @@
 "title": "عرض رسومات CAD بصيغة JPG باستخدام GroupDocs.Viewer Java - دليل شامل"
 "url": "/ar/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض رسومات CAD بصيغة JPG باستخدام GroupDocs.Viewer Java: برنامج تعليمي خطوة بخطوة
 
 ## مقدمة

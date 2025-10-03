@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा में Outlook आइटम रेंडरिंग को सीमित करें एक व्यापक गाइड"
 "url": "/hi/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा में Outlook आइटम रेंडरिंग को सीमित करना
 
 ## अवलोकन

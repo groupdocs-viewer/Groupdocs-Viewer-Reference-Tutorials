@@ -5,8 +5,8 @@
 "title": "कस्टम फ़ॉन्ट के साथ रेंडर करें"
 "url": "/hi/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # कस्टम फ़ॉन्ट के साथ रेंडर करें
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 渲染 FODP 文件－完整指南"
 "url": "/zh-hant/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 渲染 FODP 文件：完整指南
 
 ## 介紹

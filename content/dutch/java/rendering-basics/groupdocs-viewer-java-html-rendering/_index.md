@@ -4,8 +4,8 @@
 "title": "Documenten laden en weergeven als HTML met GroupDocs.Viewer voor Java"
 "url": "/nl/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Documenten laden en weergeven als HTML met GroupDocs.Viewer voor Java
 
 ## Invoering

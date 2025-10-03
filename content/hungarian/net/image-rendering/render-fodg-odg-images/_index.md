@@ -5,8 +5,8 @@
 "title": "FODG és ODG képek renderelése"
 "url": "/hu/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # FODG és ODG képek renderelése
 
 ## Bevezetés

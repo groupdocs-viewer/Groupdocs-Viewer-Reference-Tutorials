@@ -5,8 +5,8 @@
 "title": "PDFレンダリングオプション"
 "url": "/ja/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDFレンダリングオプション
 
 

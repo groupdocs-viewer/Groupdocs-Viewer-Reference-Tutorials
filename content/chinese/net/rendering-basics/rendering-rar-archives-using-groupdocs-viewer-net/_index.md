@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 将 RAR 档案渲染为 HTML、JPG、PNG 和 PDF 格式"
 "url": "/zh/net/rendering-basics/rendering-rar-archives-using-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 将 RAR 档案渲染为各种格式
 
 在当今数据驱动的世界中，高效地管理和共享 RAR 等压缩文件至关重要。无论您是将文件转换功能集成到应用程序中的开发人员，还是需要从 RAR 文件中提取内容以用于各种用途的用户，GroupDocs.Viewer for .NET 都能提供强大的解决方案。在本教程中，我们将探索如何使用 GroupDocs.Viewer for .NET 将 RAR 压缩文件渲染为 HTML、JPG、PNG 和 PDF 格式。

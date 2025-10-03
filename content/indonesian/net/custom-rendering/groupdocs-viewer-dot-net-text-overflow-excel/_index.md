@@ -4,8 +4,8 @@
 "title": "Menyembunyikan Teks yang Meluap di Excel Menggunakan GroupDocs.Viewer .NET&#58; Panduan Lengkap"
 "url": "/id/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Sembunyikan Teks Berlebihan di Excel dengan GroupDocs.Viewer .NET
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET का उपयोग करके HPG दस्तावेज़ों को HTML, JPG, PNG, PDF में कुशलतापूर्वक प्रस्तुत करें"
 "url": "/hi/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके HPG दस्तावेज़ों को कैसे प्रस्तुत करें
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "استخراج النصوص الأساسية في .NET باستخدام GroupDocs.Viewer - دليل شامل"
 "url": "/ar/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # إتقان استخراج النصوص في .NET باستخدام GroupDocs.Viewer: برنامج تعليمي شامل
 
 ## مقدمة

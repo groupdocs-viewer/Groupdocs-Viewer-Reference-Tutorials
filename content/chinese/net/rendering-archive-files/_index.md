@@ -5,8 +5,8 @@
 "title": "渲染存档文件"
 "url": "/zh/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # 渲染存档文件
 
 ## 介绍

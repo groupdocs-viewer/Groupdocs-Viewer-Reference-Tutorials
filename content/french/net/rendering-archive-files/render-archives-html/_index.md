@@ -5,8 +5,8 @@
 "title": "Rendre les archives sur une ou plusieurs pages HTML"
 "url": "/fr/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Rendre les archives sur une ou plusieurs pages HTML
 
 ## Introduction

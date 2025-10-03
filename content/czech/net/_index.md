@@ -5,8 +5,8 @@
 "title": "Komplexní návody a příklady pro GroupDocs.Viewer pro .NET"
 "url": "/cs/net/"
 "weight": 10
+type: docs
 ---
-
 # Komplexní návody a příklady pro GroupDocs.Viewer pro .NET
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Cómo recuperar y guardar archivos adjuntos de documentos usando GroupDocs.Viewer .NET para una gestión eficiente de metadatos"
 "url": "/es/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cómo recuperar y guardar archivos adjuntos de documentos mediante GroupDocs.Viewer .NET
 
 ## Introducción

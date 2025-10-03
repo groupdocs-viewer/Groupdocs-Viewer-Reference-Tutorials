@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Hiển thị các thư mục cụ thể từ tệp ZIP sang HTML"
 "url": "/vi/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Hướng dẫn: Triển khai GroupDocs.Viewer .NET để hiển thị các thư mục cụ thể từ tệp ZIP sang HTML
 
 ## Giới thiệu

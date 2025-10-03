@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 電子表格中呈現隱藏的行和列"
 "url": "/zh-hant/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 Java 電子表格中呈現隱藏的行和列
 
 ## 介紹

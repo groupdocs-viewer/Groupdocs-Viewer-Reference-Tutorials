@@ -5,8 +5,8 @@
 "title": "E-Mail-Felder während des Renderns umbenennen"
 "url": "/de/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # E-Mail-Felder während des Renderns umbenennen
 
 ## Einführung

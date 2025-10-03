@@ -5,8 +5,8 @@
 "title": "Giới hạn số lượng mục để hiển thị trong tệp dữ liệu Outlook"
 "url": "/vi/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Giới hạn số lượng mục để hiển thị trong tệp dữ liệu Outlook
 
 ## Giới thiệu

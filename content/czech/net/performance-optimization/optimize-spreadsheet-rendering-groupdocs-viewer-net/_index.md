@@ -4,8 +4,8 @@
 "title": "Optimalizace vykreslování tabulek pomocí GroupDocs.Viewer pro .NET - Přeskočení prázdných sloupců"
 "url": "/cs/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizace vykreslování tabulek pomocí GroupDocs.Viewer pro .NET
 ## Jak přeskočit vykreslování prázdných sloupců v tabulkách pomocí GroupDocs.Viewer .NET
 ### Zavedení

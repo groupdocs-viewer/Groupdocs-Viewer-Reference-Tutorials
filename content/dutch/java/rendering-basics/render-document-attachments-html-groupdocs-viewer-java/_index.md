@@ -4,8 +4,8 @@
 "title": "Documentbijlagen in HTML weergeven met GroupDocs.Viewer Java&#58; een stapsgewijze handleiding"
 "url": "/nl/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Documentbijlagen in HTML weergeven met GroupDocs.Viewer Java
 
 ## Invoering

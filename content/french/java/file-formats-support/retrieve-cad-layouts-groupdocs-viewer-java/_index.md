@@ -4,8 +4,8 @@
 "title": "Récupérer des mises en page et des calques CAO en Java avec GroupDocs.Viewer"
 "url": "/fr/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment récupérer des mises en page et des calques CAO à l'aide de GroupDocs.Viewer pour Java
 
 Dans le monde de l'ingénierie et de la conception, les fichiers de Conception Assistée par Ordinateur (CAO) sont des outils indispensables qui stockent de vastes quantités d'informations détaillées sur les conceptions. Ces fichiers peuvent être complexes et contenir de multiples mises en page et calques qui nécessitent une gestion et une récupération précises pour une exécution efficace du projet. Si vous souhaitez extraire des détails spécifiques de dessins CAO par programmation en Java, GroupDocs.Viewer pour Java est la solution idéale. Ce tutoriel vous guidera dans le processus de récupération de toutes les mises en page et calques d'un dessin CAO avec GroupDocs.Viewer.

@@ -4,8 +4,8 @@
 "title": "Archívumok HTML-be konvertálása a GroupDocs.Viewer Java segítségével&#58; Átfogó útmutató"
 "url": "/hu/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # Archívumok HTML-be konvertálása a GroupDocs.Viewer Java segítségével: Átfogó útmutató
 
 ## Bevezetés

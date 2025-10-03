@@ -5,8 +5,8 @@
 "title": "Thiết lập giấy phép đo lường"
 "url": "/vi/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Thiết lập giấy phép đo lường
 
 ## Giới thiệu

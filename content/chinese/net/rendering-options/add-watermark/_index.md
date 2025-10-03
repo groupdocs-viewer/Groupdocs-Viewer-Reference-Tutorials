@@ -5,8 +5,8 @@
 "title": "在文档中添加水印"
 "url": "/zh/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # 在文档中添加水印
 
 ## 介绍

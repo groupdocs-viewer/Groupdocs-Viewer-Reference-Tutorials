@@ -5,8 +5,8 @@
 "title": "เรนเดอร์เค้าโครงทั้งหมดในรูปแบบ CAD"
 "url": "/th/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # เรนเดอร์เค้าโครงทั้งหมดในรูปแบบ CAD
 
 ## การแนะนำ

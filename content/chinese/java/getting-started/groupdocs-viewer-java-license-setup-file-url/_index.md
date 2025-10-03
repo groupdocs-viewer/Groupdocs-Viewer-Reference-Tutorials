@@ -4,8 +4,8 @@
 "title": "如何设置 GroupDocs.Viewer Java 许可证&#58;本地文件或 URL 指南"
 "url": "/zh/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # 如何设置 GroupDocs.Viewer Java 许可证：本地文件或 URL
 
 通过从本地文件或在线资源设置许可证，充分释放 GroupDocs.Viewer 在您的 Java 应用程序上的潜力。本指南将帮助您高效地实现这两种方法，确保您能够访问这款强大的文档查看工具提供的所有功能。

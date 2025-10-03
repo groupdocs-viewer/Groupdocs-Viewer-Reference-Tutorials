@@ -8,10 +8,8 @@ keywords:
 - render archive files to HTML
 - GroupDocs.Viewer .NET tutorial
 - convert ZIP and RAR to HTML
-
+type: docs
 ---
-
-
 # How to Render Archive Files to HTML Using GroupDocs.Viewer .NET: A Step-by-Step Guide
 ## Introduction
 Struggling with presenting archive files like RAR or ZIP on a web page? Converting these complex file formats into user-friendly HTML documents is crucial for seamless content delivery. With GroupDocs.Viewer for .NET, this task becomes straightforward and efficient.

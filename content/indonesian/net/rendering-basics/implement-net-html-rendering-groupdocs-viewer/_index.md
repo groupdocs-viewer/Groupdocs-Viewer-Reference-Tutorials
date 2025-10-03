@@ -4,8 +4,8 @@
 "title": "Cara Menerapkan Rendering HTML .NET dengan GroupDocs.Viewer&#58; Panduan Langkah demi Langkah"
 "url": "/id/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menerapkan Rendering HTML .NET dengan GroupDocs.Viewer: Panduan Langkah demi Langkah
 
 ## Perkenalan

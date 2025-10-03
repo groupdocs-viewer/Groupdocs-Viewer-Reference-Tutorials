@@ -5,8 +5,8 @@
 "title": "Dokumentumok betöltése FTP-ről (Speciális)"
 "url": "/hu/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Dokumentumok betöltése FTP-ről (Speciális)
 
 ## Bevezetés

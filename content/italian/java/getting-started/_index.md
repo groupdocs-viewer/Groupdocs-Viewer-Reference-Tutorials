@@ -3,8 +3,8 @@
 "title": "Tutorial introduttivi di GroupDocs.Viewer per sviluppatori Java"
 "url": "/it/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # Tutorial introduttivi di GroupDocs.Viewer per sviluppatori Java
 
 Inizia il tuo percorso con questi tutorial essenziali su GroupDocs.Viewer che ti guideranno attraverso l'installazione, la configurazione delle licenze e la creazione del tuo primo visualizzatore di documenti in Java. Le nostre guide, pensate per i principianti, ti mostreranno come configurare il tuo ambiente di sviluppo, inizializzare la libreria GroupDocs.Viewer ed eseguire operazioni fondamentali di rendering dei documenti. Segui questi tutorial per padroneggiare rapidamente le basi e prepararti per attività di visualizzazione dei documenti più avanzate nelle tue applicazioni Java.

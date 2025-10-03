@@ -5,8 +5,8 @@
 "title": "行見出しと列見出しをレンダリングする"
 "url": "/ja/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # 行見出しと列見出しをレンダリングする
 
 ## 導入

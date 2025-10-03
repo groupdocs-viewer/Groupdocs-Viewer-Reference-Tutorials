@@ -5,8 +5,8 @@
 "title": "Renderizar áreas de impressão com GroupDocs.Viewer para .NET"
 "url": "/pt/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Renderizar áreas de impressão com GroupDocs.Viewer para .NET
 
 ## Introdução

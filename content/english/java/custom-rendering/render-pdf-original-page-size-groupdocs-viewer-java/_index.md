@@ -8,10 +8,8 @@ keywords:
 - Render PDF Original Size
 - GroupDocs Viewer Java API
 - PDF Rendering with Java
-
+type: docs
 ---
-
-
 # How to Render PDFs with Their Original Page Size Using GroupDocs.Viewer for Java
 
 Rendering a PDF while maintaining its original page size is essential for accurate display across various platforms and devices. This comprehensive guide will walk you through implementing this feature using the GroupDocs.Viewer for Java API. By following these steps, you'll ensure your PDFs retain their fidelity during rendering.

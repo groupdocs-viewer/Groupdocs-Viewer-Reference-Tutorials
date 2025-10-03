@@ -5,8 +5,8 @@
 "title": "画像のサイズと品質を調整する（JPG）"
 "url": "/ja/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # 画像のサイズと品質を調整する（JPG）
 
 ## 導入

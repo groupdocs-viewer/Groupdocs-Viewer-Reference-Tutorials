@@ -4,8 +4,8 @@
 "title": "Améliorez le rendu PDF dans .NET et activez l'indication des polices avec GroupDocs.Viewer."
 "url": "/fr/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Comment améliorer le rendu PDF dans .NET avec GroupDocs.Viewer : activer l'indication de police
 
 ## Introduction

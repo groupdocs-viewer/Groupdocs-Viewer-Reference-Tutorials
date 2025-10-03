@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java を使用してドキュメントの添付ファイルを HTML に変換する手順"
 "url": "/ja/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java を使用してドキュメントの添付ファイルを HTML に変換する
 
 ## 導入

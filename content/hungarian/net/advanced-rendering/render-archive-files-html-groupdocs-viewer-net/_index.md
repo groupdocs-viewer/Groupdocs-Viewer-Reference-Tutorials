@@ -4,8 +4,8 @@
 "title": "Archív fájlok HTML formátumba renderelése a GroupDocs.Viewer .NET használatával – lépésről lépésre útmutató"
 "url": "/hu/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Archív fájlok HTML formátumba renderelése a GroupDocs.Viewer .NET használatával: lépésről lépésre útmutató
 ## Bevezetés
 Nehezen jelenít meg archív fájlokat, például RAR vagy ZIP fájlokat egy weboldalon? Ezen összetett fájlformátumok felhasználóbarát HTML dokumentumokká konvertálása kulcsfontosságú a zökkenőmentes tartalomszolgáltatáshoz. A GroupDocs.Viewer for .NET segítségével ez a feladat egyszerűvé és hatékonnyá válik.

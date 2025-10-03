@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET을 위한 문서 메타데이터 추출 튜토리얼"
 "url": "/ko/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 위한 문서 메타데이터 추출 튜토리얼
 
 GroupDocs.Viewer .NET 튜토리얼을 통해 문서 메타데이터 및 속성 작업 방법을 알아보세요. 이 실용적인 가이드는 문서 정보 추출, 메타데이터 필드 읽기, 문서 속성 관리, 메타데이터 기반 문서 처리 구현 방법을 보여줍니다. 각 튜토리얼에는 일반적인 메타데이터 시나리오에 대한 .NET 코드 예제가 포함되어 있어 문서 정보를 효과적으로 분석하고 관리할 수 있는 애플리케이션을 구축하는 데 도움이 됩니다.

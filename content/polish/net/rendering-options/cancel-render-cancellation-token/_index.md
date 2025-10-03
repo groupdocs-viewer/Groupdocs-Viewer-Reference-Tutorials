@@ -5,8 +5,8 @@
 "title": "Anuluj renderowanie za pomocą tokena anulowania"
 "url": "/pl/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Anuluj renderowanie za pomocą tokena anulowania
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "خيارات عرض PDF"
 "url": "/ar/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # خيارات عرض PDF
 
 

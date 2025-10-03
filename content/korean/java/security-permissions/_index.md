@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java를 위한 문서 보안 및 액세스 제어 튜토리얼"
 "url": "/ko/java/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # GroupDocs.Viewer Java를 위한 문서 보안 및 액세스 제어 튜토리얼
 
 Java 개발자를 위한 GroupDocs.Viewer 보안 튜토리얼을 통해 문서 보기 보안을 강화하는 방법을 알아보세요. 이 상세한 가이드는 암호 보호 구현, 문서 권한 관리, 암호화된 파일 처리, 민감한 문서에 대한 접근 제어 방법을 프로그래밍 방식으로 보여줍니다. 각 튜토리얼은 일반적인 보안 시나리오에 대한 Java 코드 예제를 제공하여 문서의 기밀성과 무결성을 유지하면서도 제어된 보기 기능을 제공하는 애플리케이션을 구축하는 데 도움을 줍니다.

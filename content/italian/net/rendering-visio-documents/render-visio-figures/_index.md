@@ -5,8 +5,8 @@
 "title": "Rendering di figure Visio"
 "url": "/it/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Rendering di figure Visio
 
 ## Introduzione

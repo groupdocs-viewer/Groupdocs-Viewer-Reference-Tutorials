@@ -8,10 +8,8 @@ keywords:
 - render tracked changes Word docs GroupDocs Viewer Java
 - GroupDocs Viewer Java setup
 - Java document rendering
-
+type: docs
 ---
-
-
 # Rendering Tracked Changes in Word Documents with GroupDocs.Viewer for Java
 
 ## Introduction

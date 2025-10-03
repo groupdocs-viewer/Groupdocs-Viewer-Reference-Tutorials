@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java license
 - setting license from file
 - setting license via URL
-
+type: docs
 ---
-
-
 # How to Set GroupDocs.Viewer Java License: Local File or URL
 
 Unlock the full potential of GroupDocs.Viewer for your Java applications by setting up your license from either a local file or an online resource. This comprehensive guide will help you implement both methods efficiently, ensuring access to all features offered by this powerful document viewing tool.

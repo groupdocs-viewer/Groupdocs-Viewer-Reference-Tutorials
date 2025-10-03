@@ -4,8 +4,8 @@
 "title": "Rendern Sie Dokumente als Bilder mit Textebene in Java mithilfe von GroupDocs.Viewer"
 "url": "/de/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendern Sie Dokumente als Bilder mit Textebene in Java mithilfe von GroupDocs.Viewer
 ## Erweitertes Rendering-Tutorial
 **Aktuelle SEO-URL**: /Rendern von Dokumenten in Bilder mit Textebene-Java

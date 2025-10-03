@@ -5,8 +5,8 @@
 "title": "Kết xuất Bố cục Đơn trong Bản vẽ CAD"
 "url": "/vi/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Kết xuất Bố cục Đơn trong Bản vẽ CAD
 
 ## Giới thiệu

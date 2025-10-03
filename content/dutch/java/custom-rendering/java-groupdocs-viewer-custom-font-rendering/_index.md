@@ -4,8 +4,8 @@
 "title": "Hoe u aangepaste lettertypeweergave in Java implementeert met GroupDocs.Viewer&#58; een stapsgewijze handleiding"
 "url": "/nl/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u aangepaste lettertypeweergave in Java implementeert met GroupDocs.Viewer: een stapsgewijze handleiding
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 渲染附註解的簡報－綜合指南"
 "url": "/zh-hant/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 渲染已註解的簡報
 
 ## 介紹

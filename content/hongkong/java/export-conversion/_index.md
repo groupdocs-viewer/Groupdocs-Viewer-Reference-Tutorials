@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文件匯出與轉換教學課程"
 "url": "/zh-hant/java/export-conversion/"
 "weight": 15
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文件匯出與轉換教學課程
 
 使用我們的 GroupDocs.Viewer Java 教學掌握文件匯出和轉換技巧。這些逐步指南示範如何在多種格式之間轉換文件、實施匯出策略、在轉換過程中維護格式以及處理複雜的多格式文件。每個教學課程都包含常見匯出和轉換場景的詳細 Java 程式碼範例，可協助您建立靈活的文件轉換解決方案。

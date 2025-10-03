@@ -4,8 +4,8 @@
 "title": "Ukryj przepełnienie tekstem w programie Excel za pomocą GroupDocs.Viewer .NET&#58; Kompleksowy przewodnik"
 "url": "/pl/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Ukryj przepełnienie tekstem w programie Excel za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

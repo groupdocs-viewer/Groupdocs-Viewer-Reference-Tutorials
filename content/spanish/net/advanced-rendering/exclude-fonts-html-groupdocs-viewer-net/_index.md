@@ -4,8 +4,8 @@
 "title": "Cómo excluir fuentes específicas de la salida HTML usando GroupDocs.Viewer para .NET"
 "url": "/es/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cómo excluir fuentes de la salida HTML usando GroupDocs.Viewer para .NET
 
 ## Introducción

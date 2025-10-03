@@ -5,8 +5,8 @@
 "title": "Cartella di archivio di rendering"
 "url": "/it/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Cartella di archivio di rendering
 
 ## Introduzione

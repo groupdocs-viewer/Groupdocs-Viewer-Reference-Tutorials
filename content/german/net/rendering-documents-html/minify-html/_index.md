@@ -5,8 +5,8 @@
 "title": "Gerendertes HTML-Dokument minimieren"
 "url": "/de/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Gerendertes HTML-Dokument minimieren
 
 ## Einführung

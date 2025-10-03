@@ -4,8 +4,8 @@
 "title": "Rendern von Druckbereichen in Java-Tabellen mit GroupDocs.Viewer für Java – Ein umfassender Leitfaden"
 "url": "/de/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Rendern von Druckbereichen in Java-Tabellen mit GroupDocs.Viewer für Java
 
 ## Einführung

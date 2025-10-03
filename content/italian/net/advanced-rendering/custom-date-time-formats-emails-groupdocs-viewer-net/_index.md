@@ -4,8 +4,8 @@
 "title": "Personalizzazione dei formati data-ora e degli offset del fuso orario nelle e-mail con GroupDocs.Viewer .NET"
 "url": "/it/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Personalizzazione dei formati data-ora e dei fusi orari nelle e-mail con GroupDocs.Viewer .NET
 
 ## Introduzione

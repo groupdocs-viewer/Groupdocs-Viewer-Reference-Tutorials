@@ -5,8 +5,8 @@
 "title": "Arşiv Klasörünü Oluştur"
 "url": "/tr/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Arşiv Klasörünü Oluştur
 
 ## giriiş

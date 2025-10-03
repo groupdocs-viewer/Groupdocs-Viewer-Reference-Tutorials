@@ -5,8 +5,8 @@
 "title": "Render Halaman Terpilih"
 "url": "/id/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Render Halaman Terpilih
 
 ## Perkenalan

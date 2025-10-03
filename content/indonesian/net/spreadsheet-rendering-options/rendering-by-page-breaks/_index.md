@@ -5,8 +5,8 @@
 "title": "Rendering berdasarkan Hentian Halaman"
 "url": "/id/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Rendering berdasarkan Hentian Halaman
 
 ## Perkenalan

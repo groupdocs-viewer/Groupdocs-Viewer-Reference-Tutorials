@@ -4,8 +4,8 @@
 "title": "Dokumentummellékletek lekérése és mentése a GroupDocs.Viewer .NET használatával a metaadatok hatékony kezeléséhez"
 "url": "/hu/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentummellékletek lekérése és mentése a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

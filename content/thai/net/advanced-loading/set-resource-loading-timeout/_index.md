@@ -5,8 +5,8 @@
 "title": "ตั้งค่าการหมดเวลาการโหลดทรัพยากร (ขั้นสูง)"
 "url": "/th/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # ตั้งค่าการหมดเวลาการโหลดทรัพยากร (ขั้นสูง)
 
 ## การแนะนำ

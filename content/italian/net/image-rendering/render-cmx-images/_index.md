@@ -5,8 +5,8 @@
 "title": "Rendering di immagini CMX"
 "url": "/it/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # Rendering di immagini CMX
 
 ## Introduzione

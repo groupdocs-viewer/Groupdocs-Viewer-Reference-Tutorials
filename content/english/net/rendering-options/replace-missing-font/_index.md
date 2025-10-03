@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["font-replacement", "document-rendering", "groupdocs-viewer", "dotnet"]
+type: docs
 ---
-
 # Replace Missing Fonts in .NET Documents - Complete Developer Guide
 
 ## Introduction

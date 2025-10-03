@@ -5,8 +5,8 @@
 "title": "Απόδοση αριθμών"
 "url": "/el/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Απόδοση αριθμών
 
 ## Εισαγωγή

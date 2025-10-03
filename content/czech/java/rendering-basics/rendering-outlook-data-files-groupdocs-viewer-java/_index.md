@@ -4,8 +4,8 @@
 "title": "Jak vykreslit datové soubory Outlooku pomocí GroupDocs.Viewer v Javě – podrobný návod"
 "url": "/cs/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit datové soubory Outlooku pomocí GroupDocs.Viewer v Javě: Podrobný návod
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "كيفية عرض مستندات FODP باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض مستندات FODP باستخدام GroupDocs.Viewer لـ Java: دليل شامل
 
 ## مقدمة

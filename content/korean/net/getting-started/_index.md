@@ -5,8 +5,8 @@
 "title": "시작하기"
 "url": "/ko/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # 시작하기
 
 

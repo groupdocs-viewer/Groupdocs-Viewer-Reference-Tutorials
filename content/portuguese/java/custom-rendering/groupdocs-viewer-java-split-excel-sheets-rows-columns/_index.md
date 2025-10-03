@@ -4,8 +4,8 @@
 "title": "Dividir planilhas do Excel por linhas e colunas com GroupDocs.Viewer em Java - Um guia completo"
 "url": "/pt/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Dividindo planilhas do Excel por linhas e colunas usando GroupDocs.Viewer em Java
 
 ## Introdução

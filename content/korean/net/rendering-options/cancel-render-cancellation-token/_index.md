@@ -5,8 +5,8 @@
 "title": "취소 토큰을 사용하여 렌더링 취소"
 "url": "/ko/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # 취소 토큰을 사용하여 렌더링 취소
 
 ## 소개

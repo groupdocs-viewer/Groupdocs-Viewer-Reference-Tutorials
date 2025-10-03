@@ -8,10 +8,8 @@ keywords:
 - render email attachments to HTML
 - GroupDocs.Viewer for .NET
 - convert email attachments to HTML
-
+type: docs
 ---
-
-
 # How to Render Email Attachments to HTML Using GroupDocs.Viewer for .NET
 ## Introduction
 Do you need an efficient way to convert email attachments into easily viewable HTML? Whether it's to enhance document accessibility or simplify content sharing, rendering attachments is essential for effective digital correspondence management. This guide will walk you through using **GroupDocs.Viewer for .NET** to achieve this with ease.

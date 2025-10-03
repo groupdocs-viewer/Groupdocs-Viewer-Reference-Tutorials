@@ -3,8 +3,8 @@
 "title": "Tutoriels de rendu de documents cloud et distants pour GroupDocs.Viewer .NET"
 "url": "/fr/net/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Tutoriels de rendu de documents cloud et distants pour GroupDocs.Viewer .NET
 
 Apprenez à implémenter le rendu de documents cloud et distant grâce à nos tutoriels GroupDocs.Viewer .NET. Ces guides pratiques présentent des techniques de chargement et de rendu de documents depuis des fournisseurs de stockage cloud, de gestion des URL distantes, de gestion des sources de fichiers réseau et de mise en œuvre de solutions de visualisation de documents distribuées. Chaque tutoriel inclut des exemples de code .NET détaillés pour des scénarios courants de rendu cloud et distant, vous aidant à créer des applications avec des fonctionnalités flexibles d'accès aux documents.

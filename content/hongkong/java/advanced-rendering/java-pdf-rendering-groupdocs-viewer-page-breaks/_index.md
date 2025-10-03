@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 進行 Java PDF 渲染－在電子表格中實現分頁"
 "url": "/zh-hant/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # 掌握 Java PDF 渲染：帶有分頁符號的 GroupDocs.Viewer
 
 使用 GroupDocs.Viewer 在您的 Java 應用程式中釋放電子表格渲染的強大功能。本指南將向您展示如何實現帶有分頁符的 Java PDF 渲染，從而無縫轉換為 PDF。

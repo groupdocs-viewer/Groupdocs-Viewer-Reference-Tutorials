@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 渲染 Java 電子表格列印區域－綜合指南"
 "url": "/zh-hant/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 渲染 Java 電子表格列印區域
 
 ## 介紹

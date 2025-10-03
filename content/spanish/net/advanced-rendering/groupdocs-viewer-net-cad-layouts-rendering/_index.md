@@ -4,8 +4,8 @@
 "title": "Representación eficiente de diseños CAD con GroupDocs.Viewer para .NET&#58; guía paso a paso"
 "url": "/es/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Representación eficiente de diseños CAD con GroupDocs.Viewer para .NET
 
 ## Introducción

@@ -8,10 +8,8 @@ keywords:
 - Outlook data rendering
 - filtering Outlook files with Java
 - using GroupDocs.Viewer for Java
-
+type: docs
 ---
-
-
 # Master Outlook Data Rendering and Filtering with GroupDocs.Viewer for Java
 
 ## Introduction

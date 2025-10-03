@@ -5,8 +5,8 @@
 "title": "重新排序文档中的页面"
 "url": "/zh/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # 重新排序文档中的页面
 
 ## 介绍

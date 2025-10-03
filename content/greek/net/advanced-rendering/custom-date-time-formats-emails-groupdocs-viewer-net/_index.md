@@ -4,8 +4,8 @@
 "title": "Προσαρμογή μορφών ημερομηνίας-ώρας και μετατοπίσεων ζώνης ώρας σε email με το GroupDocs.Viewer .NET"
 "url": "/el/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Προσαρμογή μορφών ημερομηνίας-ώρας και ζωνών ώρας σε email με το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

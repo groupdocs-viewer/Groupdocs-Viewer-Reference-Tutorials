@@ -5,8 +5,8 @@
 "title": "ユーザー定義の余白でHTMLをレンダリングする"
 "url": "/ja/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # ユーザー定義の余白でHTMLをレンダリングする
 
 ## 導入

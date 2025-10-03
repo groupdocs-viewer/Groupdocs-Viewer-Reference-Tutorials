@@ -5,8 +5,8 @@
 "title": "Anzeigeinformationen für PDF-Dokument abrufen"
 "url": "/de/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Anzeigeinformationen für PDF-Dokument abrufen
 
 ## Einführung

@@ -5,8 +5,8 @@
 "title": "Memuat Dokumen dari FTP (Lanjutan)"
 "url": "/id/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Memuat Dokumen dari FTP (Lanjutan)
 
 ## Perkenalan

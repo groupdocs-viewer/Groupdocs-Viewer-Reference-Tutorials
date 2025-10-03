@@ -4,8 +4,8 @@
 "title": "Convertir archivos adjuntos de documentos en HTML con GroupDocs.Viewer Java&#58; guía paso a paso"
 "url": "/es/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Convertir archivos adjuntos de documentos en HTML con GroupDocs.Viewer Java
 
 ## Introducción

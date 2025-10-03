@@ -4,8 +4,8 @@
 "title": "Αποδοτική απόδοση περιοχής εκτύπωσης Excel χρησιμοποιώντας το GroupDocs.Viewer για .NET"
 "url": "/el/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Αποδοτική απόδοση περιοχής εκτύπωσης Excel χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

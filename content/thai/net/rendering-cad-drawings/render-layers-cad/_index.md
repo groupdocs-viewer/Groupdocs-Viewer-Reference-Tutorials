@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เลเยอร์ในภาพวาด CAD"
 "url": "/th/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # การเรนเดอร์เลเยอร์ในภาพวาด CAD
 
 ## การแนะนำ

@@ -3,8 +3,8 @@
 "title": "Tutorial Ekstraksi Metadata Dokumen untuk GroupDocs.Viewer .NET"
 "url": "/id/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Tutorial Ekstraksi Metadata Dokumen untuk GroupDocs.Viewer .NET
 
 Pelajari cara bekerja dengan metadata dan properti dokumen dengan tutorial GroupDocs.Viewer .NET kami. Panduan praktis ini menunjukkan cara mengekstrak informasi dokumen, membaca bidang metadata, mengelola properti dokumen, dan menerapkan pemrosesan dokumen berbasis metadata. Setiap tutorial mencakup contoh kode .NET yang berfungsi untuk skenario metadata umum, membantu Anda membangun aplikasi yang dapat menganalisis dan mengelola informasi dokumen secara efektif.

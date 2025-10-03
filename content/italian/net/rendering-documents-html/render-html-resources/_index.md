@@ -5,8 +5,8 @@
 "title": "Rendering con risorse incorporate o esterne"
 "url": "/it/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Rendering con risorse incorporate o esterne
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "Efektivní konverze dokumentů CMX pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Efektivní konverze dokumentů CMX pomocí GroupDocs.Viewer pro Javu: Komplexní průvodce
 
 ## Zavedení

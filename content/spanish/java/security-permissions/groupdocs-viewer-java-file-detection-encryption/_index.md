@@ -4,8 +4,8 @@
 "title": "Implementación de comprobaciones de detección y cifrado de archivos en Java con GroupDocs.Viewer"
 "url": "/es/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Implementación de comprobaciones de detección y cifrado de archivos mediante GroupDocs.Viewer para Java
 
 ## Introducción

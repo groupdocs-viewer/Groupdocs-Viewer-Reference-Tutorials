@@ -4,8 +4,8 @@
 "title": "E-mails met aangepaste datum/tijd weergeven in Java met GroupDocs.Viewer"
 "url": "/nl/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # E-mails met aangepaste datum/tijd weergeven in Java met GroupDocs.Viewer
 
 ## Invoering

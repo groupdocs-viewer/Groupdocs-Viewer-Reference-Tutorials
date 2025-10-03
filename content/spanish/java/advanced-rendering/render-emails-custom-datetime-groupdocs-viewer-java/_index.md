@@ -4,8 +4,8 @@
 "title": "Representar correos electrónicos con fecha y hora personalizadas en Java usando GroupDocs.Viewer"
 "url": "/es/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Representar correos electrónicos con fecha y hora personalizadas en Java mediante GroupDocs.Viewer
 
 ## Introducción

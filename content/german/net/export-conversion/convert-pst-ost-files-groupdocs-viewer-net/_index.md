@@ -4,8 +4,8 @@
 "title": "Konvertieren Sie PST/OST-Dateien mit GroupDocs.Viewer .NET in HTML, JPG, PNG, PDF – eine umfassende Anleitung"
 "url": "/de/net/export-conversion/convert-pst-ost-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Konvertieren Sie PST/OST-Dateien mit GroupDocs.Viewer .NET in HTML, JPG, PNG, PDF
 
 **Kategorie**: Export & Konvertierung

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java Kullanılarak EMZ/EMF Dosyaları Nasıl Oluşturulur? Adım Adım Kılavuz"
 "url": "/tr/java/rendering-basics/render-emz-emf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Kapsamlı Kılavuz: Java için GroupDocs.Viewer ile EMZ/EMF Dosyalarının Oluşturulması
 
 ## giriiş

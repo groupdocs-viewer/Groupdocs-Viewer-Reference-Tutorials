@@ -4,8 +4,8 @@
 "title": "Zvládnutí konverze OBJ do HTML/JPG/PNG/PDF v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí konverze souborů: Převod OBJ do HTML/JPG/PNG/PDF v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

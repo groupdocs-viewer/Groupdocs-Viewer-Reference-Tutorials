@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके Shift_JIS में टेक्स्ट दस्तावेज़ प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके Shift_JIS में टेक्स्ट दस्तावेज़ प्रस्तुत करें
 
 ## परिचय

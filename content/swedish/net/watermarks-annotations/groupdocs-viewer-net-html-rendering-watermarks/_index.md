@@ -4,8 +4,8 @@
 "title": "Rendering av huvuddokument i .NET med GroupDocs.Viewer HTML-konvertering och vattenstämpelintegration"
 "url": "/sv/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Rendering av huvuddokument i .NET med GroupDocs.Viewer: HTML-konvertering och vattenstämpelintegration
 
 ## Introduktion

@@ -4,8 +4,8 @@
 "title": "Защитите свои PDF-файлы с помощью GroupDocs.Viewer в Java&#58; Руководство по защите паролем и правам доступа"
 "url": "/ru/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Защитите свои PDF-файлы с помощью GroupDocs.Viewer на Java
 
 ## Введение

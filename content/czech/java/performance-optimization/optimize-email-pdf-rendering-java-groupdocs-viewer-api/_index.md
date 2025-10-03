@@ -4,8 +4,8 @@
 "title": "Optimalizace vykreslování e-mailů do PDF v Javě pomocí GroupDocs.Viewer API pro lepší výkon"
 "url": "/cs/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizace vykreslování e-mailů do PDF v Javě pomocí GroupDocs.Viewer API
 
 ## Zavedení

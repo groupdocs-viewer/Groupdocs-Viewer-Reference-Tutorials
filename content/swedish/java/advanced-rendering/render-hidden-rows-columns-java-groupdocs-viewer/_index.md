@@ -4,8 +4,8 @@
 "title": "Rendera dolda rader och kolumner i Java-kalkylblad med GroupDocs.Viewer"
 "url": "/sv/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rendera dolda rader och kolumner i Java-kalkylblad med GroupDocs.Viewer
 
 ## Introduktion

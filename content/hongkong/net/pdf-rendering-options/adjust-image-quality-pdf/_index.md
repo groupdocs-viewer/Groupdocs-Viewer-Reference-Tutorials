@@ -5,8 +5,8 @@
 "title": "調整 PDF 中的影像質量"
 "url": "/zh-hant/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # 調整 PDF 中的影像質量
 
 ## 介紹

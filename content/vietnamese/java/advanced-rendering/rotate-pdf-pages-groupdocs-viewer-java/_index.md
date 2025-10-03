@@ -4,8 +4,8 @@
 "title": "Xoay các trang PDF cụ thể bằng GroupDocs.Viewer trong Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Xoay các trang PDF cụ thể bằng GroupDocs.Viewer trong Java
 
 ## Giới thiệu

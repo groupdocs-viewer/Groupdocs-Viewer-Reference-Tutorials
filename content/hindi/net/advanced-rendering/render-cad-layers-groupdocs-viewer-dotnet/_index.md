@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके विशिष्ट CAD परतों को कैसे प्रस्तुत करें? एक व्यापक गाइड"
 "url": "/hi/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके विशिष्ट CAD ड्राइंग परतों को कैसे प्रस्तुत करें
 
 ## परिचय

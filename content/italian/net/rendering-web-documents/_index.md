@@ -5,8 +5,8 @@
 "title": "Rendering di documenti Web"
 "url": "/it/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Rendering di documenti Web
 
 ## Introduzione

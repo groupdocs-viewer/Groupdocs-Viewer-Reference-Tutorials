@@ -8,10 +8,8 @@ keywords:
 - .NET HTML rendering
 - GroupDocs.Viewer setup
 - embedded resources in HTML
-
+type: docs
 ---
-
-
 # How to Implement .NET HTML Rendering with GroupDocs.Viewer: A Step-by-Step Guide
 
 ## Introduction

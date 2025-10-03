@@ -4,8 +4,8 @@
 "title": "Menampilkan Lembar Kerja Excel berdasarkan Hentian Halaman Menggunakan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Menampilkan Lembar Kerja Excel berdasarkan Hentian Halaman Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

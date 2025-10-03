@@ -4,8 +4,8 @@
 "title": "Πώς να ανακτήσετε και να εκτυπώσετε συνημμένα έγγραφα χρησιμοποιώντας το GroupDocs.Viewer για .NET | Οδηγός απόδοσης για προχωρημένους"
 "url": "/el/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να ανακτήσετε και να εκτυπώσετε συνημμένα έγγραφα χρησιμοποιώντας το GroupDocs.Viewer για .NET | Οδηγός απόδοσης για προχωρημένους
 
 ## Εισαγωγή

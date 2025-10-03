@@ -5,8 +5,8 @@
 "title": "เรนเดอร์พร้อมข้อความซ้อนทับสำหรับการแสดงผล"
 "url": "/th/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # เรนเดอร์พร้อมข้อความซ้อนทับสำหรับการแสดงผล
 
 ## การแนะนำ

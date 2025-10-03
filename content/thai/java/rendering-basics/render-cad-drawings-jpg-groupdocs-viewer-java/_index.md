@@ -4,8 +4,8 @@
 "title": "เรนเดอร์ภาพวาด CAD เป็น JPG โดยใช้ GroupDocs.Viewer Java คู่มือฉบับสมบูรณ์"
 "url": "/th/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์ภาพวาด CAD เป็น JPG โดยใช้ GroupDocs.Viewer Java: บทช่วยสอนทีละขั้นตอน
 
 ## การแนะนำ

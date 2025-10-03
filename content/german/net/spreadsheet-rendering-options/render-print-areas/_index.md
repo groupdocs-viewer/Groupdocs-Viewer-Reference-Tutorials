@@ -5,8 +5,8 @@
 "title": "Druckbereiche mit GroupDocs.Viewer für .NET rendern"
 "url": "/de/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Druckbereiche mit GroupDocs.Viewer für .NET rendern
 
 ## Einführung

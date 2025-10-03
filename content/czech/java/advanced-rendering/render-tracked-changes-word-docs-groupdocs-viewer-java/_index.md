@@ -4,8 +4,8 @@
 "title": "Jak vykreslit sledované změny v dokumentech Wordu pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování sledovaných změn v dokumentech Wordu pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

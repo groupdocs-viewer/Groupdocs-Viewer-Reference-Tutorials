@@ -4,8 +4,8 @@
 "title": "PDF képminőség optimalizálása Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan optimalizálható a PDF képminősége Java-ban a GroupDocs.Viewer segítségével
 
 ## Bevezetés

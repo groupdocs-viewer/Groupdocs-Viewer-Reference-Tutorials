@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java開発者向け入門チュートリアル"
 "url": "/ja/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java開発者向け入門チュートリアル
 
 GroupDocs.Viewerの基本的なチュートリアルから始めましょう。インストール、ライセンス設定、そしてJavaで初めてのドキュメントビューアを作成する手順を丁寧に解説します。初心者向けのガイドでは、開発環境の設定方法、GroupDocs.Viewerライブラリの初期化方法、そして基本的なドキュメントレンダリング操作の実行方法を解説します。これらのチュートリアルに沿って、基本を素早く習得し、Javaアプリケーションでより高度なドキュメント表示タスクを実行する準備をしましょう。

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して FTP からドキュメントを効率的にダウンロードしてレンダリングする"
 "url": "/ja/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して FTP からドキュメントを効率的にダウンロードしてレンダリングする方法
 
 ## 導入

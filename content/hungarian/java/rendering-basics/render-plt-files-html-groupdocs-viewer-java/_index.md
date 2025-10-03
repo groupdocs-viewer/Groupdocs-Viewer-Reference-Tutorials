@@ -4,8 +4,8 @@
 "title": "PLT fájlok HTML formátumba renderelése a GroupDocs.Viewer használatával Java-ban – lépésről lépésre útmutató"
 "url": "/hu/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # PLT fájlok HTML formátumba renderelése a GroupDocs.Viewer használatával Java-ban: Fejlesztői útmutató
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 渲染 EMZ/EMF 檔案—綜合指南"
 "url": "/zh-hant/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 呈現 EMZ/EMF 檔案：綜合指南
 ## 渲染基礎
 本教學課程示範如何使用 GroupDocs.Viewer for .NET 渲染增強型圖元檔案 (EMF) 或嵌入式圖元檔案 (EMZ)。無論您是想將多功能文件轉換功能整合到應用程式中，還是想管理文檔，本指南都能幫助您將這些格式渲染為 HTML、JPG、PNG 和 PDF。

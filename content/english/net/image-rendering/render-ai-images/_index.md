@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["ai-images", "groupdocs-viewer", "dotnet", "csharp", "image-conversion"]
+type: docs
 ---
-
 # How to Render AI Images in .NET Applications
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Läs in dokument från lokal disk"
 "url": "/sv/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Läs in dokument från lokal disk
 
 ## Introduktion

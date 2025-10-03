@@ -4,8 +4,8 @@
 "title": "تحويل الأرشيفات إلى ملفات PDF بأسماء ملفات مخصصة باستخدام GroupDocs.Viewer لـ .NET"
 "url": "/ar/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # تحويل الأرشيفات إلى ملفات PDF بأسماء ملفات مخصصة باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

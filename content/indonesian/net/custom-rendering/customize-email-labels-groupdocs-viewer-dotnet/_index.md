@@ -4,8 +4,8 @@
 "title": "Kustomisasi Label Email di GroupDocs.Viewer untuk .NET&#58; Panduan Lengkap untuk Mengganti Nama Bidang"
 "url": "/id/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Menyesuaikan Label Email di GroupDocs.Viewer untuk .NET: Panduan Lengkap untuk Mengganti Nama Kolom
 
 ## Perkenalan

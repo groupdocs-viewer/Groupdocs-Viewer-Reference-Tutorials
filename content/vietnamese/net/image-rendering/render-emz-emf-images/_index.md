@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh EMZ và EMF"
 "url": "/vi/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Kết xuất hình ảnh EMZ và EMF
 
 ## Giới thiệu

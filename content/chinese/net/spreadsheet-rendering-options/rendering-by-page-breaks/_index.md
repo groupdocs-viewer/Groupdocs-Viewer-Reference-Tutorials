@@ -5,8 +5,8 @@
 "title": "按分页符渲染"
 "url": "/zh/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # 按分页符渲染
 
 ## 介绍

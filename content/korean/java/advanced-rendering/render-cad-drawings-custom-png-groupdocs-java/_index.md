@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용하여 사용자 지정 크기 및 배경색을 사용하여 CAD 도면을 PNG로 렌더링하는 방법"
 "url": "/ko/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java를 사용하여 사용자 지정 크기 및 배경색을 사용하여 CAD 도면을 PNG로 렌더링하는 방법
 
 ## 소개

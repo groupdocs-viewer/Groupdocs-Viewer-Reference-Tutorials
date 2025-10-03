@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์ PDF ด้วย Java ด้วย GroupDocs.Viewer และการนำการแบ่งหน้าไปใช้งานในสเปรดชีต"
 "url": "/th/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # เรียนรู้การเรนเดอร์ PDF ของ Java ด้วย GroupDocs.Viewer พร้อมการแบ่งหน้า
 
 ปลดล็อกพลังของการเรนเดอร์สเปรดชีตในแอปพลิเคชัน Java ของคุณด้วย GroupDocs.Viewer คู่มือที่ครอบคลุมนี้จะแสดงให้คุณเห็นถึงวิธีการนำการเรนเดอร์ PDF ของ Java ที่มีการแบ่งหน้าไปใช้งานเพื่อการแปลงเป็น PDF ได้อย่างราบรื่น

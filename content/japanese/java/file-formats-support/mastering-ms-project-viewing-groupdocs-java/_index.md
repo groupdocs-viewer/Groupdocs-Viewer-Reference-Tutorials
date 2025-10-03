@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使って Java で MS プロジェクトの表示をマスターする包括的なガイド"
 "url": "/ja/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使って Java で MS Project ドキュメントの表示をマスターする
 
 ## 導入

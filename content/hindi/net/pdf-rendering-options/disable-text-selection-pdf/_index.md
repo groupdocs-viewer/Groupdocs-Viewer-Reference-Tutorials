@@ -5,8 +5,8 @@
 "title": "पीडीएफ में पाठ चयन अक्षम करें"
 "url": "/hi/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # पीडीएफ में पाठ चयन अक्षम करें
 
 ## परिचय

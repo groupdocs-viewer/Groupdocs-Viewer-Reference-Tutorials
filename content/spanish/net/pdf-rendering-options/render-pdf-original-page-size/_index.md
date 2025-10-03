@@ -5,8 +5,8 @@
 "title": "Renderizar PDF con el tamaño de página original"
 "url": "/es/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Renderizar PDF con el tamaño de página original
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "Ottimizza il rendering del foglio di calcolo con GroupDocs.Viewer per .NET e salta le colonne vuote"
 "url": "/it/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Ottimizza il rendering dei fogli di calcolo con GroupDocs.Viewer per .NET
 ## Come saltare il rendering delle colonne vuote nei fogli di calcolo utilizzando GroupDocs.Viewer .NET
 ### Introduzione

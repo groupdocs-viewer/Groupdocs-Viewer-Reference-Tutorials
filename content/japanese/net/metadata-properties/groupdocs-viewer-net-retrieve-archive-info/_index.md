@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用してアーカイブ情報を取得する方法 包括的なガイド"
 "url": "/ja/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用してアーカイブ情報を取得する方法: 包括的なガイド
 
 ## 導入

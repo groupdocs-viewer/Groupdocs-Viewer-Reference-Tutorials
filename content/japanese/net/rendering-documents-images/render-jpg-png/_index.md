@@ -5,8 +5,8 @@
 "title": "ドキュメントをJPGPNGにレンダリングする"
 "url": "/ja/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # ドキュメントをJPGPNGにレンダリングする
 
 ## 導入

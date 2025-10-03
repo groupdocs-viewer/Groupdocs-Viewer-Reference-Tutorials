@@ -4,8 +4,8 @@
 "title": ".NET में PDF रेंडरिंग को बेहतर बनाएँ; GroupDocs.Viewer के साथ फ़ॉन्ट हिंटिंग सक्षम करें"
 "url": "/hi/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके .NET में PDF रेंडरिंग को कैसे बेहतर बनाएं: फ़ॉन्ट हिंटिंग सक्षम करें
 
 ## परिचय

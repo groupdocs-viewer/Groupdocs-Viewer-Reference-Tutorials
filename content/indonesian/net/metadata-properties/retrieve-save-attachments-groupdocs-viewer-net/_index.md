@@ -4,8 +4,8 @@
 "title": "Cara Mengambil dan Menyimpan Lampiran Dokumen menggunakan GroupDocs.Viewer .NET untuk Manajemen Metadata yang Efisien"
 "url": "/id/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengambil dan Menyimpan Lampiran Dokumen Menggunakan GroupDocs.Viewer .NET
 
 ## Perkenalan

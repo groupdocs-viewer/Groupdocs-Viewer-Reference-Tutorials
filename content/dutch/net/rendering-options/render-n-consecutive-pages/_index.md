@@ -5,8 +5,8 @@
 "title": "Render N opeenvolgende pagina's"
 "url": "/nl/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Render N opeenvolgende pagina's
 
 ## Invoering

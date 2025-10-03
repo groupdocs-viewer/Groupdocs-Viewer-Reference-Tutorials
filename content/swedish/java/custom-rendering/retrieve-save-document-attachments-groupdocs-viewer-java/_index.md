@@ -4,8 +4,8 @@
 "title": "Så här hämtar och sparar du dokumentbilagor med GroupDocs.Viewer för Java - En omfattande guide"
 "url": "/sv/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar och sparar du dokumentbilagor med GroupDocs.Viewer för Java: En omfattande guide
 
 ## Introduktion

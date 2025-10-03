@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer에서 로깅 구성&#58; 콘솔 및 파일 로깅 가이드"
 "url": "/ko/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer에서 로깅 구성
 
 ## 소개

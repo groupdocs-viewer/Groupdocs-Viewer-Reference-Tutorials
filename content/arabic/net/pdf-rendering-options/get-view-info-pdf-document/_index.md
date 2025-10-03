@@ -5,8 +5,8 @@
 "title": "احصل على معلومات العرض لمستند PDF"
 "url": "/ar/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # احصل على معلومات العرض لمستند PDF
 
 ## مقدمة

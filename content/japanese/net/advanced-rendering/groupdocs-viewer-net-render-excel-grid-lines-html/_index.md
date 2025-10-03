@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して HTML 出力で Excel スプレッドシートにグリッド線をレンダリングする方法"
 "url": "/ja/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して HTML 出力で Excel スプレッドシートにグリッド線をレンダリングする方法
 
 ## 導入

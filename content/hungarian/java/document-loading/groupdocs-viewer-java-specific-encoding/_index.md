@@ -4,8 +4,8 @@
 "title": "Hogyan tölthetünk be dokumentumokat meghatározott kódolással Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan tölthetünk be dokumentumokat meghatározott kódolással Java-ban a GroupDocs.Viewer használatával
 
 ## Bevezetés

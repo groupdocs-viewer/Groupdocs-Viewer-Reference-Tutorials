@@ -5,8 +5,8 @@
 "title": "파일에서 라이센스 설정"
 "url": "/ko/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # 파일에서 라이센스 설정
 
 ## 소개

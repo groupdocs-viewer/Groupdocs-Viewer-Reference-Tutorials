@@ -5,8 +5,8 @@
 "title": "Számok megjelenítése"
 "url": "/hu/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Számok megjelenítése
 
 ## Bevezetés

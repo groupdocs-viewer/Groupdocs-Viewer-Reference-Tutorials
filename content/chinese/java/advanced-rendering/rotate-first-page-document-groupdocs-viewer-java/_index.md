@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 旋转文档的第一页（高级指南）"
 "url": "/zh/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 旋转文档的第一页
 
 ## 介绍

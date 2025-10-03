@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer'ı Kullanarak Bir Belgenin İlk Sayfasını Döndürme (Gelişmiş Kılavuz)"
 "url": "/tr/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'ı Kullanarak Bir Belgenin İlk Sayfasını Döndürme
 
 ## giriiş

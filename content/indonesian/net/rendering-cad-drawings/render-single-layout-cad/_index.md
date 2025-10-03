@@ -5,8 +5,8 @@
 "title": "Render Tata Letak Tunggal dalam Gambar CAD"
 "url": "/id/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Render Tata Letak Tunggal dalam Gambar CAD
 
 ## Perkenalan

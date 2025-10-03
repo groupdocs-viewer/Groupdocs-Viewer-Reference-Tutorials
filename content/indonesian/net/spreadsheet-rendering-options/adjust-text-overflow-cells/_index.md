@@ -5,8 +5,8 @@
 "title": "Sesuaikan Teks yang Meluap di Sel"
 "url": "/id/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Sesuaikan Teks yang Meluap di Sel
 
 ## Perkenalan

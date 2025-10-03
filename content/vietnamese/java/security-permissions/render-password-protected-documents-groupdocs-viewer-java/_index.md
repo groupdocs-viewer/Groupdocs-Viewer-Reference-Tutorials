@@ -4,8 +4,8 @@
 "title": "Hiển thị các tài liệu được bảo vệ bằng mật khẩu trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị các tài liệu được bảo vệ bằng mật khẩu trong Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

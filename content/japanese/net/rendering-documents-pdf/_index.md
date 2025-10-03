@@ -5,8 +5,8 @@
 "title": "ドキュメントをPDFに変換する"
 "url": "/ja/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # ドキュメントをPDFに変換する
 
 

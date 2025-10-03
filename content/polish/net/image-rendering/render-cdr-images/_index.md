@@ -5,8 +5,8 @@
 "title": "Renderuj obrazy CDR"
 "url": "/pl/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # Renderuj obrazy CDR
 
 ## Wstęp

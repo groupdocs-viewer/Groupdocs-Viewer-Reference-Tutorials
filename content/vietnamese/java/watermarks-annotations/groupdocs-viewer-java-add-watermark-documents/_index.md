@@ -4,8 +4,8 @@
 "title": "Thêm hình mờ vào tài liệu bằng GroupDocs.Viewer Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Thêm hình mờ vào tài liệu bằng GroupDocs.Viewer Java: Hướng dẫn toàn diện
 
 ## Giới thiệu

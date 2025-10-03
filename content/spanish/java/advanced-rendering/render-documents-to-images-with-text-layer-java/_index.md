@@ -4,8 +4,8 @@
 "title": "Representar documentos como imágenes con una capa de texto en Java usando GroupDocs.Viewer"
 "url": "/es/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Representar documentos como imágenes con una capa de texto en Java usando GroupDocs.Viewer
 ## Tutorial de renderizado avanzado
 **URL SEO actual**: /renderizar documentos a imágenes con capa de texto en Java

@@ -4,8 +4,8 @@
 "title": "Εξαγωγή κειμένου από PDF χρησιμοποιώντας το GroupDocs.Viewer Java&#58; Ένας ολοκληρωμένος οδηγός για προγραμματιστές"
 "url": "/el/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Εξαγωγή κειμένου από PDF χρησιμοποιώντας το GroupDocs.Viewer Java
 
 ## Εισαγωγή

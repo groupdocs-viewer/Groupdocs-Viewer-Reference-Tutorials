@@ -5,8 +5,8 @@
 "title": "Renderuj folder archiwum"
 "url": "/pl/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Renderuj folder archiwum
 
 ## Wstęp

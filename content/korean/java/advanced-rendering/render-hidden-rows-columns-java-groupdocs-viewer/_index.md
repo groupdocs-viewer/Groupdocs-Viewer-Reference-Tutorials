@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java 스프레드시트에서 숨겨진 행과 열 렌더링"
 "url": "/ko/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java 스프레드시트에서 숨겨진 행과 열 렌더링
 
 ## 소개

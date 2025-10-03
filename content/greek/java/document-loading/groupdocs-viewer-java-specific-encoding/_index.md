@@ -4,8 +4,8 @@
 "title": "Πώς να φορτώσετε έγγραφα με συγκεκριμένη κωδικοποίηση σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να φορτώσετε έγγραφα με συγκεκριμένη κωδικοποίηση σε Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

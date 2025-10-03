@@ -4,8 +4,8 @@
 "title": "Конвертируйте архивы в PDF-файлы с пользовательскими именами файлов с помощью GroupDocs.Viewer для .NET"
 "url": "/ru/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # Конвертируйте архивы в PDF-файлы с пользовательскими именами файлов с помощью GroupDocs.Viewer для .NET
 
 ## Введение

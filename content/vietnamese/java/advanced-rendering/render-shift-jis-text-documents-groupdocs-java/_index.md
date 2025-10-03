@@ -4,8 +4,8 @@
 "title": "Hiển thị tài liệu văn bản trong Shift_JIS bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị tài liệu văn bản trong Shift_JIS bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

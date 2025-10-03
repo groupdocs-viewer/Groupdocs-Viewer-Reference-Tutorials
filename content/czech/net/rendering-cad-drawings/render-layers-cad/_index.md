@@ -5,8 +5,8 @@
 "title": "Renderování vrstev ve výkresech CAD"
 "url": "/cs/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Renderování vrstev ve výkresech CAD
 
 ## Zavedení

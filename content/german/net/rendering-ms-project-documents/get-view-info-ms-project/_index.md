@@ -5,8 +5,8 @@
 "title": "Abrufen von Anzeigeinformationen für Microsoft Project-Dokumente"
 "url": "/de/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Abrufen von Anzeigeinformationen für Microsoft Project-Dokumente
 
 ## Einführung

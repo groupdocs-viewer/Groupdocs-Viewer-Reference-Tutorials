@@ -4,8 +4,8 @@
 "title": "Как разделить чертежи САПР на фрагменты с помощью GroupDocs.Viewer .NET для эффективного рендеринга"
 "url": "/ru/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как разделить чертежи САПР на фрагменты с помощью GroupDocs.Viewer .NET
 
 ## Введение

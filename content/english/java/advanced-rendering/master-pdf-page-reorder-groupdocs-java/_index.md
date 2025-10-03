@@ -8,10 +8,8 @@ keywords:
 - PDF page reordering
 - GroupDocs.Viewer Java
 - Java PDF rendering
-
+type: docs
 ---
-
-
 # Efficient PDF Page Reordering with GroupDocs.Viewer for Java
 
 ## Introduction

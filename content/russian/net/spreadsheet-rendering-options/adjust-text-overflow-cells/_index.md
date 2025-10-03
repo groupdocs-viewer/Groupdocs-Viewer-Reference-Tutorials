@@ -5,8 +5,8 @@
 "title": "Отрегулируйте переполнение текстом ячеек"
 "url": "/ru/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Отрегулируйте переполнение текстом ячеек
 
 ## Введение

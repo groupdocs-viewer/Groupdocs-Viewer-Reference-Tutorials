@@ -5,8 +5,8 @@
 "title": "CMX Görüntülerini Oluştur"
 "url": "/tr/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # CMX Görüntülerini Oluştur
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Načtení metadat a vlastností PDF pomocí GroupDocs.Viewer v Javě – Podrobný návod"
 "url": "/cs/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Načtení metadat a vlastností PDF pomocí GroupDocs.Viewer v Javě
 
 Vítejte v tomto komplexním průvodci pro načítání informací o zobrazení z dokumentu PDF pomocí knihovny GroupDocs.Viewer v Javě. Pokud chcete programově extrahovat podrobnosti, jako je počet stránek, typ dokumentu a oprávnění ze souborů PDF, jste na správném místě.

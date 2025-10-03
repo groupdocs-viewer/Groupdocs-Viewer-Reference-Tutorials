@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Menyisipkan Font dan Mengonversi Dokumen ke HTML Secara Efisien"
 "url": "/id/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Rendering Dokumen dengan GroupDocs.Viewer .NET: Menanamkan Font dan Mengonversi ke HTML
 
 ## Perkenalan

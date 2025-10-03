@@ -5,8 +5,8 @@
 "title": "Воспроизвести PDF с исходным размером страницы"
 "url": "/ru/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Воспроизвести PDF с исходным размером страницы
 
 ## Введение

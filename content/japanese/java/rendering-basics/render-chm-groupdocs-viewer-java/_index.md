@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Javaを使用してCHMファイルをレンダリングする方法 包括的なガイド"
 "url": "/ja/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java を使用して CHM ファイルをレンダリングする方法: 包括的なガイド
 ## 導入
 コンパイル済みHTMLヘルプ（CHM）ファイルを、HTML、JPG、PNG、PDFといったより広くサポートされている形式に変換したいとお考えですか？アーカイブ目的でも、様々なプラットフォームでのアクセシビリティ向上のためでも、これらのドキュメントの変換は画期的な成果をもたらす可能性があります。このチュートリアルでは、GroupDocs.Viewer Javaを使ってシームレスに実現する方法を解説します。この強力なライブラリを使って、CHMファイルを効率的にレンダリングする方法を詳しく解説します。

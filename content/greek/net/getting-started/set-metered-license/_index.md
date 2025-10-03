@@ -5,8 +5,8 @@
 "title": "Ορισμός άδειας χρήσης με ογκοχρέωση"
 "url": "/el/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Ορισμός άδειας χρήσης με ογκοχρέωση
 
 ## Εισαγωγή

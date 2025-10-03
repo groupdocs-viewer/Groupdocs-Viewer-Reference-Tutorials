@@ -5,8 +5,8 @@
 "title": "非表示の列と行をレンダリングする"
 "url": "/ja/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # 非表示の列と行をレンダリングする
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "Rendu de formats CAO spécifiques (CF2)"
 "url": "/fr/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Rendu de formats CAO spécifiques (CF2)
 
 ## Introduction

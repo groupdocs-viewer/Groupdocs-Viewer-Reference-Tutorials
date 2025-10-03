@@ -4,8 +4,8 @@
 "title": "Omezení vykreslování položek Outlooku v Javě pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Omezení vykreslování položek Outlooku v Javě pomocí GroupDocs.Viewer
 
 ## Přehled

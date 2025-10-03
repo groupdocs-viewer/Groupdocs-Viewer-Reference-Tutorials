@@ -5,8 +5,8 @@
 "title": "عرض التغييرات المتعقبة"
 "url": "/ar/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # عرض التغييرات المتعقبة
 
 ## مقدمة

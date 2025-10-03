@@ -4,8 +4,8 @@
 "title": "Διαχωρισμός φύλλων Excel ανά γραμμές και στήλες με το GroupDocs.Viewer σε Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Διαχωρισμός φύλλων Excel σε γραμμές και στήλες χρησιμοποιώντας το GroupDocs.Viewer σε Java
 
 ## Εισαγωγή

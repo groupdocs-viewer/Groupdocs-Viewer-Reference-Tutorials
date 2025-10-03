@@ -10,8 +10,8 @@ lastmod: "2025-01-02"
 categories: ["Document Management"]
 tags: ["GroupDocs", "Document Viewer", "NET Tutorial", "Document Rendering"]
 is_root: true
+type: docs
 ---
-
 # The Complete GroupDocs.Viewer .NET Tutorial Guide
 
 ## What You'll Learn in This Comprehensive Guide

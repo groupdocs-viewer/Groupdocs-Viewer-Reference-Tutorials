@@ -4,8 +4,8 @@
 "title": "Как повернуть страницы PDF с помощью GroupDocs.Viewer для .NET&#58; Руководство разработчика"
 "url": "/ru/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как повернуть страницы PDF с помощью GroupDocs.Viewer для .NET: руководство разработчика
 
 ## Введение

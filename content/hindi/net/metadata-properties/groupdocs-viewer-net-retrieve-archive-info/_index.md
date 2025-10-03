@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके पुरालेख जानकारी कैसे प्राप्त करें एक व्यापक गाइड"
 "url": "/hi/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके पुरालेख जानकारी कैसे प्राप्त करें: एक व्यापक गाइड
 
 ## परिचय

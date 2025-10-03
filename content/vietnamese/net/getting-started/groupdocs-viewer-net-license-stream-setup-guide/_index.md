@@ -4,8 +4,8 @@
 "title": "Thiết lập giấy phép GroupDocs.Viewer .NET qua Stream&#58; Hướng dẫn đầy đủ"
 "url": "/vi/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Thiết lập giấy phép GroupDocs.Viewer .NET qua Stream: Hướng dẫn đầy đủ
 
 ## Giới thiệu

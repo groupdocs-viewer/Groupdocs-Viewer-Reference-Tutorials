@@ -4,8 +4,8 @@
 "title": "Konfigurieren der Protokollierung in GroupDocs.Viewer für Java – Handbuch zur Konsolen- und Dateiprotokollierung"
 "url": "/de/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Konfigurieren der Protokollierung in GroupDocs.Viewer für Java
 
 ## Einführung

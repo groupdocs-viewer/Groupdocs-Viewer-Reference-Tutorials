@@ -4,8 +4,8 @@
 "title": "Hur man hämtar CAD-layouter och lager med GroupDocs.Viewer .NET för effektiv designhantering"
 "url": "/sv/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar du CAD-layouter och lager med GroupDocs.Viewer .NET
 ## Introduktion
 Inom datorstödd design (CAD) är det avgörande att hantera komplexa ritningar effektivt, särskilt när man hanterar flera layouter och lager i en enda fil. För arkitekter, ingenjörer och designers ökar produktiviteten att snabbt få tillgång till specifik information. **GroupDocs.Viewer .NET** erbjuder en kraftfull lösning genom att låta utvecklare programmatiskt extrahera layouter och lager från CAD-ritningar.

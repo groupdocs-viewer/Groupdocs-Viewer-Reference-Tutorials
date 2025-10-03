@@ -4,8 +4,8 @@
 "title": "Extrahera dokumentinformation och anpassa utdata med GroupDocs.Viewer .NET – En omfattande guide"
 "url": "/sv/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Extrahera dokumentinformation och anpassa utdata med GroupDocs.Viewer .NET
 ## Handledning för anpassad rendering
 ### Vad du kommer att lära dig:

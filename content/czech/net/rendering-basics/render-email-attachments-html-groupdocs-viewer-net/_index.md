@@ -4,8 +4,8 @@
 "title": "Vykreslení e-mailových příloh do HTML pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit e-mailové přílohy do HTML pomocí GroupDocs.Viewer pro .NET
 ## Zavedení
 Potřebujete efektivní způsob, jak převést e-mailové přílohy do snadno zobrazitelného HTML? Ať už jde o zlepšení přístupnosti dokumentů nebo zjednodušení sdílení obsahu, vykreslování příloh je nezbytné pro efektivní správu digitální korespondence. Tato příručka vás provede používáním... **GroupDocs.Viewer pro .NET** toho s lehkostí dosáhnout.

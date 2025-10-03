@@ -4,8 +4,8 @@
 "title": "Afficher les pages masquées dans les documents à l'aide de GroupDocs.Viewer pour .NET &#58; un guide étape par étape"
 "url": "/fr/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Afficher les pages masquées dans les documents à l'aide de GroupDocs.Viewer pour .NET : guide étape par étape
 
 ## Introduction

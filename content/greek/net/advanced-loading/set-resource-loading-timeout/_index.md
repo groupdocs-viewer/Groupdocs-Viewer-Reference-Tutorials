@@ -5,8 +5,8 @@
 "title": "Ορισμός χρονικού ορίου φόρτωσης πόρων (Για προχωρημένους)"
 "url": "/el/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Ορισμός χρονικού ορίου φόρτωσης πόρων (Για προχωρημένους)
 
 ## Εισαγωγή

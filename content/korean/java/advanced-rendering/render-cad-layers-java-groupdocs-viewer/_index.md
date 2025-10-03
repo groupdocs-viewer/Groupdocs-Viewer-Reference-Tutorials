@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 특정 CAD 레이어 렌더링하기 - 포괄적인 가이드"
 "url": "/ko/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 특정 CAD 레이어 렌더링
 ## 소개
 CAD 도면에서 특정 레이어를 렌더링하는 데 어려움을 겪고 계신가요? 엔지니어, 건축가, 개발자 등 복잡한 설계를 다루는 사람이라면 특정 CAD 레이어를 관리하고 시각화하는 것이 어려울 수 있습니다. 이 가이드에서는 강력한 Java용 GroupDocs.Viewer를 사용하여 특정 레이어를 효율적으로 렌더링하는 방법을 보여줍니다.

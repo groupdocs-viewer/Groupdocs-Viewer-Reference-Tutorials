@@ -5,8 +5,8 @@
 "title": "使用原始页面大小渲染 PDF"
 "url": "/zh/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # 使用原始页面大小渲染 PDF
 
 ## 介绍

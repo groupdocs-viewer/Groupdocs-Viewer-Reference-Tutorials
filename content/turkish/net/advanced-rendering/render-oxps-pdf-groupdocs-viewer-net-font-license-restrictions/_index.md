@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58;i Kullanarak Yazı Tipi Kısıtlamalarıyla PDF/OXPS Oluşturun Kapsamlı Bir Kılavuz"
 "url": "/tr/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak Yazı Tipi Kısıtlamalarıyla PDF/OXPS Oluşturma: Kapsamlı Bir Kılavuz
 
 ## giriiş

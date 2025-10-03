@@ -4,8 +4,8 @@
 "title": ".NET reszponzív HTML renderelés megvalósítása a GroupDocs.Viewer segítségével – Átfogó útmutató fejlesztőknek"
 "url": "/hu/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # .NET reszponzív HTML-megjelenítés megvalósítása a GroupDocs.Viewer segítségével: Fejlesztői útmutató
 
 ## Bevezetés

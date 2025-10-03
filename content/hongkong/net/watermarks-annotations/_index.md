@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 的文件浮水印與註解教學課程"
 "url": "/zh-hant/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 的文件浮水印與註解教學課程
 
 使用我們的 GroupDocs.Viewer .NET 教學掌握文件註解和浮水印技術。這些逐步指南示範如何新增文字和影像浮水印、實作註解、控制浮水印位置和透明度，以及如何渲染嵌入註解的文件。每個教學課程都包含實用的 .NET 程式碼範例，用於為文件添加視覺化元資料和保護性標記，從而增強文件追蹤和品牌推廣功能。

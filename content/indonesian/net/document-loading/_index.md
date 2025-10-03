@@ -3,8 +3,8 @@
 "title": "Tutorial Pemuatan Dokumen dan Penanganan Sumber untuk GroupDocs.Viewer .NET"
 "url": "/id/net/document-loading/"
 "weight": 2
+type: docs
 ---
-
 # Tutorial Pemuatan Dokumen dan Penanganan Sumber untuk GroupDocs.Viewer .NET
 
 Tutorial pemuatan dokumen kami menyediakan panduan komprehensif untuk menangani sumber dokumen dalam .NET. Ikuti panduan langkah demi langkah ini untuk mempelajari cara memuat dokumen dari berbagai jenis penyimpanan, menangani berbagai format file, mengelola aliran input, dan menerapkan strategi pemuatan dokumen yang fleksibel. Tutorial praktis ini mencakup contoh kode lengkap untuk penanganan sumber dokumen, yang membantu Anda membangun aplikasi tampilan dokumen yang tangguh dengan kemampuan pemuatan yang serbaguna.

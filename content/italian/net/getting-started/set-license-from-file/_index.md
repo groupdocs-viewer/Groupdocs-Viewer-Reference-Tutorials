@@ -5,8 +5,8 @@
 "title": "Imposta licenza da file"
 "url": "/it/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Imposta licenza da file
 
 ## Introduzione

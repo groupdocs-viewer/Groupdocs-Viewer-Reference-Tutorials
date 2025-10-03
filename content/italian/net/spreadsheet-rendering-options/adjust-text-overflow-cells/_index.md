@@ -5,8 +5,8 @@
 "title": "Regola il testo in eccesso nelle celle"
 "url": "/it/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Regola il testo in eccesso nelle celle
 
 ## Introduzione

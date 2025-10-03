@@ -4,8 +4,8 @@
 "title": "Načtení CAD rozvržení a vrstev v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst rozvržení a vrstvy CAD pomocí GroupDocs.Viewer pro Javu
 
 Ve světě inženýrství a designu jsou soubory CAD (Computer-Aided Design) nepostradatelnými nástroji, které ukládají obrovské množství podrobných informací o návrzích. Tyto soubory mohou být složité a obsahovat více rozvržení a vrstev, které vyžadují přesnou správu a načítání pro efektivní realizaci projektu. Pokud chcete programově extrahovat specifické detaily z výkresů CAD v Javě, GroupDocs.Viewer pro Javu je vaším ideálním řešením. Tento tutoriál vás provede procesem načítání všech rozvržení a vrstev z výkresu CAD pomocí GroupDocs.Viewer.

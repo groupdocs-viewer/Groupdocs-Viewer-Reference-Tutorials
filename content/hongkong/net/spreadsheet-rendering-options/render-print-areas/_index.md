@@ -5,8 +5,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 渲染列印區域"
 "url": "/zh-hant/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 渲染列印區域
 
 ## 介紹

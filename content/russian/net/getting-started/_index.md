@@ -5,8 +5,8 @@
 "title": "Начиная"
 "url": "/ru/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Начиная
 
 

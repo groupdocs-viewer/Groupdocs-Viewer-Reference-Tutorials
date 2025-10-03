@@ -4,8 +4,8 @@
 "title": "Documentinfo extraheren en de uitvoer aanpassen met GroupDocs.Viewer .NET&#58; een uitgebreide handleiding"
 "url": "/nl/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Documentinfo extraheren en uitvoer aanpassen met GroupDocs.Viewer .NET
 ## Tutorial voor aangepaste rendering
 ### Wat je leert:

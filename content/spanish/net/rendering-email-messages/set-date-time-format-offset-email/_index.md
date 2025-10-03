@@ -5,8 +5,8 @@
 "title": "Establecer el formato de fecha y hora y la diferencia horaria (correo electrónico)"
 "url": "/es/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Establecer el formato de fecha y hora y la diferencia horaria (correo electrónico)
 
 

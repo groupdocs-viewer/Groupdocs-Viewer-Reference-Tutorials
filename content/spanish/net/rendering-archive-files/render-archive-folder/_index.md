@@ -5,8 +5,8 @@
 "title": "Carpeta de archivo de renderizado"
 "url": "/es/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Carpeta de archivo de renderizado
 
 ## Introducción

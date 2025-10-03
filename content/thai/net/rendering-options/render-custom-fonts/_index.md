@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ด้วยแบบอักษรที่กำหนดเอง"
 "url": "/th/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # เรนเดอร์ด้วยแบบอักษรที่กำหนดเอง
 
 ## การแนะนำ

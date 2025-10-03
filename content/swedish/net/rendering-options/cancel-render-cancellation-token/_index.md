@@ -5,8 +5,8 @@
 "title": "Avbryt rendering med avbokningstoken"
 "url": "/sv/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Avbryt rendering med avbokningstoken
 
 ## Introduktion

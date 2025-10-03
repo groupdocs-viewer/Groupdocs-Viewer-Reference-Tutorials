@@ -5,8 +5,8 @@
 "title": "Lấy tọa độ văn bản để kết xuất hình ảnh"
 "url": "/vi/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Lấy tọa độ văn bản để kết xuất hình ảnh
 
 ## Giới thiệu

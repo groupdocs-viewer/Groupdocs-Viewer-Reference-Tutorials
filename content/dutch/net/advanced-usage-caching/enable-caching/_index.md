@@ -5,8 +5,8 @@
 "title": "Caching inschakelen voor snellere documentverwerking"
 "url": "/nl/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Caching inschakelen voor snellere documentverwerking
 
 ## Invoering

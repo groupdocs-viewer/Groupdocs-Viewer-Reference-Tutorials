@@ -5,8 +5,8 @@
 "title": "Rendern mit benutzerdefinierten Schriftarten"
 "url": "/de/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Rendern mit benutzerdefinierten Schriftarten
 
 ## Einführung

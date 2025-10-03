@@ -5,8 +5,8 @@
 "title": "Pas de JPG-beeldkwaliteit aan in gerenderde PDF"
 "url": "/nl/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Pas de JPG-beeldkwaliteit aan in gerenderde PDF
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Master MS-projektvisning i Java med GroupDocs.Viewer – en omfattande guide"
 "url": "/sv/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra MS Project-dokumentvisning med GroupDocs.Viewer i Java
 
 ## Introduktion

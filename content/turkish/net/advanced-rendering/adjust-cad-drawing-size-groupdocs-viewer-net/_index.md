@@ -4,8 +4,8 @@
 "title": "Gelişmiş Web Performansı için GroupDocs.Viewer .NET Kullanarak CAD Çizim Boyutunu Optimize Edin"
 "url": "/tr/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Gelişmiş Web Performansı için GroupDocs.Viewer .NET Kullanarak CAD Çizim Boyutunu Optimize Edin
 
 ## giriiş

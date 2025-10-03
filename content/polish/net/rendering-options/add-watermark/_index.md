@@ -5,8 +5,8 @@
 "title": "Dodaj znak wodny w dokumencie"
 "url": "/pl/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Dodaj znak wodny w dokumencie
 
 ## Wstęp

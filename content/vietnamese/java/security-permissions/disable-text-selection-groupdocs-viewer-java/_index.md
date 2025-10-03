@@ -4,8 +4,8 @@
 "title": "Cách vô hiệu hóa lựa chọn văn bản trong PDF bằng GroupDocs.Viewer Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách triển khai vô hiệu hóa lựa chọn văn bản trong kết xuất PDF với GroupDocs.Viewer Java
 ## Giới thiệu
 Bạn có cần một cách an toàn để hiển thị PDF trên web mà không cho phép chọn văn bản không? Hướng dẫn toàn diện này sẽ trình bày cách vô hiệu hóa việc chọn văn bản bằng thư viện GroupDocs.Viewer cho Java. Bằng cách chuyển đổi văn bản thành hình ảnh, nội dung của bạn vẫn an toàn và không thể chỉnh sửa khi hiển thị trực tuyến.

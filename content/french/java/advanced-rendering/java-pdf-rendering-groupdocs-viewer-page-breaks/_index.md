@@ -4,8 +4,8 @@
 "title": "Rendu PDF Java avec GroupDocs.Viewer &#58; implémentation des sauts de page dans les feuilles de calcul"
 "url": "/fr/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Maîtriser le rendu PDF Java : GroupDocs.Viewer avec sauts de page
 
 Exploitez la puissance du rendu de feuilles de calcul dans vos applications Java grâce à GroupDocs.Viewer. Ce guide complet vous explique comment implémenter le rendu PDF Java avec sauts de page pour une conversion fluide au format PDF.

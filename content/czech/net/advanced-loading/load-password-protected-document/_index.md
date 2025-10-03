@@ -5,8 +5,8 @@
 "title": "Načíst dokumenty chráněné heslem"
 "url": "/cs/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Načíst dokumenty chráněné heslem
 
 ## Zavedení

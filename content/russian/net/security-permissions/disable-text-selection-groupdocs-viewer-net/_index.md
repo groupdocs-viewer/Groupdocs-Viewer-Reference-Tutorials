@@ -4,8 +4,8 @@
 "title": "Как отключить выделение текста в PDF-файлах с помощью GroupDocs.Viewer .NET для повышения безопасности"
 "url": "/ru/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как использовать GroupDocs.Viewer .NET для отключения выделения текста при отображении PDF-файлов в формате HTML
 
 ## Введение

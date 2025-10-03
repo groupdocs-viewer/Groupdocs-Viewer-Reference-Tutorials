@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory EMZ/EMF pomocí GroupDocs.Viewer pro Javu – podrobný návod"
 "url": "/cs/java/rendering-basics/render-emz-emf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Komplexní průvodce: Vykreslování souborů EMZ/EMF pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

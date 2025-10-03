@@ -4,8 +4,8 @@
 "title": "ปรับขนาดภาพวาด CAD ให้เหมาะสมโดยใช้ GroupDocs.Viewer .NET เพื่อประสิทธิภาพเว็บที่ดีขึ้น"
 "url": "/th/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # ปรับขนาดภาพวาด CAD ให้เหมาะสมโดยใช้ GroupDocs.Viewer .NET เพื่อประสิทธิภาพเว็บที่ดีขึ้น
 
 ## การแนะนำ

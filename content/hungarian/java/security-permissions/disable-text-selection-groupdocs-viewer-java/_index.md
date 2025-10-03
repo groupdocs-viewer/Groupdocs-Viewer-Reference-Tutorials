@@ -4,8 +4,8 @@
 "title": "Hogyan lehet letiltani a szövegkijelölést PDF-ekben a GroupDocs.Viewer Java használatával? Átfogó útmutató"
 "url": "/hu/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan lehet letiltani a szövegkijelölést PDF-rendereléshez a GroupDocs.Viewer Java segítségével?
 ## Bevezetés
 Szüksége van egy biztonságos módszerre PDF-fájlok webes megjelenítéséhez szövegkijelölés engedélyezése nélkül? Ez az átfogó útmutató bemutatja, hogyan tilthatja le a szövegkijelölést a GroupDocs.Viewer for Java könyvtár használatával. A szöveg képpé alakításával tartalma biztonságban és szerkeszthetetlenül marad online megjelenítéskor.

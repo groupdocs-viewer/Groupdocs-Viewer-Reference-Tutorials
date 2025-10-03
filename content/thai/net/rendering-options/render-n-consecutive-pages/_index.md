@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ N หน้าติดต่อกัน"
 "url": "/th/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # เรนเดอร์ N หน้าติดต่อกัน
 
 ## การแนะนำ

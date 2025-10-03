@@ -5,8 +5,8 @@
 "title": "Options de rendu"
 "url": "/fr/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Options de rendu
 
 

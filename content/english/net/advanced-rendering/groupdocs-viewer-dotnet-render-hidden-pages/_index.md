@@ -8,10 +8,8 @@ keywords:
 - render hidden pages with GroupDocs.Viewer for .NET
 - GroupDocs.Viewer .NET tutorial
 - hidden slides rendering in .NET
-
+type: docs
 ---
-
-
 # Render Hidden Pages in Documents Using GroupDocs.Viewer for .NET: A Step-by-Step Guide
 
 ## Introduction

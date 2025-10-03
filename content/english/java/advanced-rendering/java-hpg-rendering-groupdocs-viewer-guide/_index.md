@@ -8,10 +8,8 @@ keywords:
 - Java HPG Rendering
 - GroupDocs.Viewer for Java
 - Document Conversion
-
+type: docs
 ---
-
-
 # Comprehensive Guide to Implementing Java HPG Rendering with GroupDocs.Viewer
 
 ## Introduction

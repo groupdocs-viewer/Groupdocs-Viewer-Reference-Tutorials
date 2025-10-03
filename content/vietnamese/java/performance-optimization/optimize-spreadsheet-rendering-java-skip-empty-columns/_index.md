@@ -4,8 +4,8 @@
 "title": "Tối ưu hóa kết xuất bảng tính Java&#58; Bỏ qua các cột trống với GroupDocs.Viewer"
 "url": "/vi/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Cách tối ưu hóa việc hiển thị bảng tính trong Java: Bỏ qua các cột trống với GroupDocs.Viewer
 
 ## Giới thiệu

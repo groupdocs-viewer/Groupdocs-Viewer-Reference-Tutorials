@@ -4,8 +4,8 @@
 "title": "Vykreslení příloh dokumentů do HTML pomocí GroupDocs.Viewer v Javě – Podrobný návod"
 "url": "/cs/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení příloh dokumentů do HTML pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

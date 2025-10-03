@@ -5,8 +5,8 @@
 "title": "Schriftarten aus gerendertem HTML ausschließen"
 "url": "/de/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Schriftarten aus gerendertem HTML ausschließen
 
 ## Einführung

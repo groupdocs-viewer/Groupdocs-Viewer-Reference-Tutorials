@@ -5,8 +5,8 @@
 "title": "Speciális betöltési beállítások"
 "url": "/hu/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Speciális betöltési beállítások
 
 ## Bevezetés

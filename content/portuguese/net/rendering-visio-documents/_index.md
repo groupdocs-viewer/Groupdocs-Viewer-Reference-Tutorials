@@ -5,8 +5,8 @@
 "title": "Renderizando documentos do Visio"
 "url": "/pt/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Renderizando documentos do Visio
 
 ## Introdução

@@ -5,8 +5,8 @@
 "title": "एम्बेडेड या बाहरी संसाधनों के साथ रेंडर करें"
 "url": "/hi/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # एम्बेडेड या बाहरी संसाधनों के साथ रेंडर करें
 
 ## परिचय

@@ -5,8 +5,8 @@
 "title": "Virar e girar páginas"
 "url": "/pt/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Virar e girar páginas
 
 ## Introdução

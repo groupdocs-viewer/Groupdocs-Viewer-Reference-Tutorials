@@ -5,8 +5,8 @@
 "title": "Renderuj z nałożonym tekstem do wyświetlenia"
 "url": "/pl/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Renderuj z nałożonym tekstem do wyświetlenia
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "在 CAD 图纸中渲染所有布局"
 "url": "/zh/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # 在 CAD 图纸中渲染所有布局
 
 ## 介绍

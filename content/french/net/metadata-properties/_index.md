@@ -3,8 +3,8 @@
 "title": "Tutoriels d'extraction de métadonnées de documents pour GroupDocs.Viewer .NET"
 "url": "/fr/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Tutoriels d'extraction de métadonnées de documents pour GroupDocs.Viewer .NET
 
 Apprenez à utiliser les métadonnées et les propriétés des documents grâce à nos tutoriels GroupDocs.Viewer .NET. Ces guides pratiques expliquent comment extraire les informations des documents, lire les champs de métadonnées, gérer les propriétés des documents et implémenter le traitement des documents basé sur les métadonnées. Chaque tutoriel inclut des exemples de code .NET fonctionnels pour des scénarios de métadonnées courants, vous aidant à créer des applications capables d'analyser et de gérer efficacement les informations des documents.

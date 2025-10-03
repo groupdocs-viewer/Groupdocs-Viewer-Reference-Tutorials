@@ -4,8 +4,8 @@
 "title": "Maximale limieten voor JPG-afbeeldingsgrootte instellen met GroupDocs.Viewer .NET"
 "url": "/nl/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Maximale limieten voor JPG-afbeeldingsgrootte instellen met GroupDocs.Viewer .NET
 
 ## Invoering

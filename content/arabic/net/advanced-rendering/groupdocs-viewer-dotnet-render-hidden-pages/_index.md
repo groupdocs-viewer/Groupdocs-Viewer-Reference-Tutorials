@@ -4,8 +4,8 @@
 "title": "عرض الصفحات المخفية في المستندات باستخدام GroupDocs.Viewer لـ .NET - دليل خطوة بخطوة"
 "url": "/ar/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # عرض الصفحات المخفية في المستندات باستخدام GroupDocs.Viewer لـ .NET: دليل خطوة بخطوة
 
 ## مقدمة

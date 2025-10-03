@@ -5,8 +5,8 @@
 "title": "Textdateien rendern (.txt)"
 "url": "/de/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Textdateien rendern (.txt)
 
 ## Einführung

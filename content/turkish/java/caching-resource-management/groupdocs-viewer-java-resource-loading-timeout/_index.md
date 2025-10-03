@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java'da Kaynak Yükleme Zaman Aşımını Ayarlayın&#58; Belge Performansını Geliştirin"
 "url": "/tr/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'da Kaynak Yükleme Zaman Aşımını Ayarlayın: Belge İşleme Verimliliğini İyileştirin
 
 ## giriiş

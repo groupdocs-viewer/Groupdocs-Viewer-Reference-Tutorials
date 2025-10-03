@@ -5,8 +5,8 @@
 "title": "Daha Hızlı Belge İşleme için Önbelleğe Almayı Etkinleştirin"
 "url": "/tr/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Daha Hızlı Belge İşleme için Önbelleğe Almayı Etkinleştirin
 
 ## giriiş

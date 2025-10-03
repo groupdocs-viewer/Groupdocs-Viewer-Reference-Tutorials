@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for .NET
 - convert archive to PDF
 - render archives with custom filenames
-
+type: docs
 ---
-
-
 # Convert Archives to PDFs with Custom Filenames Using GroupDocs.Viewer for .NET
 
 ## Introduction

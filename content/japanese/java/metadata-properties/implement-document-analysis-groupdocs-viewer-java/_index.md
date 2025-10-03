@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java によるドキュメント分析の実装 - ページメタデータとテキスト行の抽出"
 "url": "/ja/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java によるドキュメント分析の実装: ページメタデータとテキスト行の抽出
 
 ## 導入

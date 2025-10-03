@@ -4,8 +4,8 @@
 "title": "Απόδοση εγγράφων Apple Numbers σε Java χρησιμοποιώντας το GroupDocs.Viewer® Ένας πλήρης οδηγός"
 "url": "/el/java/file-formats-support/render-numbers-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε έγγραφα Apple Numbers με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

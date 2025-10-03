@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 文档渲染性能教程"
 "url": "/zh/net/performance-optimization/"
 "weight": 5
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 文档渲染性能教程
 
 使用我们的 GroupDocs.Viewer .NET 教程，掌握文档渲染的性能优化。这些实用指南演示了高效内存管理、提升渲染速度、缓存策略以及有效处理大型或复杂文档的技术。每个教程都包含详细的 .NET 代码示例和优化关键渲染方面的最佳实践，确保您的应用程序即使在处理大量文档集时也能保持响应迅速且可靠。

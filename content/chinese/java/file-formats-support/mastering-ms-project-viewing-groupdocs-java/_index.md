@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 Java 中的 MS Project 查看——综合指南"
 "url": "/zh/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 Java 中的 GroupDocs.Viewer 掌握 MS Project 文档查看
 
 ## 介绍

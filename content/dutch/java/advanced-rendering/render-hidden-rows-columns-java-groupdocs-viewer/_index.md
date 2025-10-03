@@ -4,8 +4,8 @@
 "title": "Verborgen rijen en kolommen in Java-spreadsheets weergeven met GroupDocs.Viewer"
 "url": "/nl/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Verborgen rijen en kolommen in Java-spreadsheets weergeven met GroupDocs.Viewer
 
 ## Invoering

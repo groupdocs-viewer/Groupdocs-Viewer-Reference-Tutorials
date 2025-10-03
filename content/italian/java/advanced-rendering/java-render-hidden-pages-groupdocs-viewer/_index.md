@@ -4,8 +4,8 @@
 "title": "Java&#58; come visualizzare le pagine nascoste utilizzando GroupDocs.Viewer"
 "url": "/it/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: come visualizzare le pagine nascoste utilizzando GroupDocs.Viewer
 
 ## Introduzione

@@ -8,10 +8,8 @@ keywords:
 - rotate PDF pages Java
 - GroupDocs.Viewer setup Java
 - programmatically rotate PDF Java
-
+type: docs
 ---
-
-
 # Rotate Specific PDF Pages Using GroupDocs.Viewer in Java
 
 ## Introduction

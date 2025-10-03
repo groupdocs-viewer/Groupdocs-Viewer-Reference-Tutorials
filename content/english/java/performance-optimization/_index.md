@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["performance-optimization", "document-rendering", "java-programming", "groupdocs-viewer"]
+type: docs
 ---
-
 # Java Document Rendering Optimization - Complete Performance Guide
 
 When you're building Java applications that handle document rendering, performance can make or break the user experience. Slow document loading, memory leaks, and sluggish PDF generation are common pain points that frustrate both developers and end users. The good news? With the right optimization techniques and GroupDocs.Viewer for Java, you can dramatically improve your document rendering performance.

@@ -5,8 +5,8 @@
 "title": "Belgeleri Görüntülere Dönüştürme"
 "url": "/tr/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Belgeleri Görüntülere Dönüştürme
 
 ## giriiş

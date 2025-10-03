@@ -4,8 +4,8 @@
 "title": "Cara Membuat Garis Grid di Spreadsheet Excel Menggunakan GroupDocs.Viewer .NET untuk Output HTML"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat Garis Grid di Spreadsheet Excel Menggunakan GroupDocs.Viewer .NET untuk Output HTML
 
 ## Perkenalan

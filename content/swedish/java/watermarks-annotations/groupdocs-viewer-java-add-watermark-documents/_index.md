@@ -4,8 +4,8 @@
 "title": "Lägg till vattenstämplar i dokument med GroupDocs.Viewer Java – en omfattande guide"
 "url": "/sv/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Lägg till vattenstämplar i dokument med GroupDocs.Viewer Java: En omfattande guide
 
 ## Introduktion

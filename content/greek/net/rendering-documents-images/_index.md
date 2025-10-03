@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφων σε εικόνες"
 "url": "/el/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Απόδοση εγγράφων σε εικόνες
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Java &#58; Comment afficher les pages masquées à l'aide de GroupDocs.Viewer"
 "url": "/fr/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java : Comment afficher des pages masquées avec GroupDocs.Viewer
 
 ## Introduction

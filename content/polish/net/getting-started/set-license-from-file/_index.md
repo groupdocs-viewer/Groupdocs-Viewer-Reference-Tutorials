@@ -5,8 +5,8 @@
 "title": "Ustaw licencję z pliku"
 "url": "/pl/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Ustaw licencję z pliku
 
 ## Wstęp

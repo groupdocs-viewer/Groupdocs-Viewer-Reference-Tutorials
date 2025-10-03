@@ -5,8 +5,8 @@
 "title": "Speciális használat (gyorsítótár)"
 "url": "/hu/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Speciális használat (gyorsítótár)
 
 

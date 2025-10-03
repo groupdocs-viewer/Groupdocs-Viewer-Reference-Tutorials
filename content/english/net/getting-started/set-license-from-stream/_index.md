@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Getting Started"]
 tags: ["licensing", "configuration", "stream", "security"]
+type: docs
 ---
-
 # GroupDocs.Viewer License Setup .NET - Complete Configuration Guide
 
 ## Introduction

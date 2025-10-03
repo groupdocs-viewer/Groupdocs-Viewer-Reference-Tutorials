@@ -4,8 +4,8 @@
 "title": "Representación de áreas de impresión en hojas de cálculo de Java con GroupDocs.Viewer para Java&#58; una guía completa"
 "url": "/es/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Representación de áreas de impresión en hojas de cálculo Java con GroupDocs.Viewer para Java
 
 ## Introducción

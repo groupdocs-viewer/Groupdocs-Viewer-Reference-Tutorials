@@ -5,8 +5,8 @@
 "title": "تحويل المستندات إلى PDF"
 "url": "/ar/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # تحويل المستندات إلى PDF
 
 

@@ -4,8 +4,8 @@
 "title": "Απόδοση και φιλτράρισμα δεδομένων Master Outlook με το GroupDocs.Viewer για Java"
 "url": "/el/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση και φιλτράρισμα δεδομένων Master Outlook με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

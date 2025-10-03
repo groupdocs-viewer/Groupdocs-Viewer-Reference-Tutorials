@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["outlook-files", "pst-ost", "dotnet-api", "file-viewer"]
+type: docs
 ---
-
 # How to Extract Outlook PST OST File Information in .NET
 
 ## Introduction

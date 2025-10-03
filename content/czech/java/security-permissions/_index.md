@@ -3,8 +3,8 @@
 "title": "Výukové programy pro zabezpečení dokumentů a řízení přístupu v aplikaci GroupDocs.Viewer v Javě"
 "url": "/cs/java/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Výukové programy pro zabezpečení dokumentů a řízení přístupu v aplikaci GroupDocs.Viewer v Javě
 
 Naučte se zabezpečit prohlížení dokumentů s našimi komplexními bezpečnostními tutoriály GroupDocs.Viewer pro vývojáře v Javě. Tyto podrobné průvodce ukazují, jak implementovat ochranu heslem, spravovat oprávnění dokumentů, pracovat se šifrovanými soubory a programově řídit přístup k citlivým dokumentům. Každý tutoriál poskytuje funkční příklady kódu Java pro běžné bezpečnostní scénáře a pomáhá vám vytvářet aplikace, které zachovávají důvěrnost a integritu dokumentů a zároveň poskytují možnosti kontrolovaného prohlížení.

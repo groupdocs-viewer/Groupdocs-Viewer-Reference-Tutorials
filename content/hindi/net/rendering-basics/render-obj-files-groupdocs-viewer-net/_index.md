@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके OBJ फ़ाइलें प्रस्तुत करें .NET' HTML, JPG, PNG, और PDF रूपांतरण के लिए एक व्यापक गाइड"
 "url": "/hi/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके OBJ फ़ाइलें प्रस्तुत करें
 
 ## रेंडरिंग मूल बातें का परिचय

@@ -5,8 +5,8 @@
 "title": "Vykreslování čísel"
 "url": "/cs/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Vykreslování čísel
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Efektivní vykreslení všech CAD rozvržení pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Efektivní vykreslení všech CAD rozvržení pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 .NET 中自訂邊距的 HTML 渲染"
 "url": "/zh-hant/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET 中具有使用者定義邊距的 HTML 渲染
 
 ## 介紹

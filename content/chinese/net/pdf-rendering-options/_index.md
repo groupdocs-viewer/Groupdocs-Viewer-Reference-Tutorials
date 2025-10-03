@@ -5,8 +5,8 @@
 "title": "PDF 渲染选项"
 "url": "/zh/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF 渲染选项
 
 

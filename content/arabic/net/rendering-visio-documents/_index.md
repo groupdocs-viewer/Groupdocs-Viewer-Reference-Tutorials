@@ -5,8 +5,8 @@
 "title": "عرض مستندات Visio"
 "url": "/ar/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # عرض مستندات Visio
 
 ## مقدمة

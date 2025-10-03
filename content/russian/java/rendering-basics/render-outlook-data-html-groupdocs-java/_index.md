@@ -4,8 +4,8 @@
 "title": "Преобразование файлов Outlook PST и OST в HTML с помощью Java и GroupDocs.Viewer"
 "url": "/ru/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Как преобразовать файлы данных Outlook в HTML с помощью GroupDocs.Viewer для Java
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "Dostosuj obrazy CAD za pomocą zaawansowanych technik renderowania GroupDocs.Viewer .NET"
 "url": "/pl/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować i dostosowywać obrazy CAD za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

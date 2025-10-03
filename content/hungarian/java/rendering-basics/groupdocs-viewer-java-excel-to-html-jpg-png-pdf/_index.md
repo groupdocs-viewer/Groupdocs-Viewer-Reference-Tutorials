@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java használata Excelből HTML/JPG/PNG/PDF konvertáláshoz – lépésről lépésre útmutató"
 "url": "/hu/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # A GroupDocs.Viewer Java használata Excelből HTML/JPG/PNG/PDF konvertáláshoz: lépésről lépésre útmutató
 
 ## Bevezetés

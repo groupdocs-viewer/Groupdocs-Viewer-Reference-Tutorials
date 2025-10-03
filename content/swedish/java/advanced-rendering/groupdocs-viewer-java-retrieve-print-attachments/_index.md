@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer för Java Hämta och skriva ut dokumentbilagor"
 "url": "/sv/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer för Java: Hämta och skriva ut dokumentbilagor
 
 ## Introduktion

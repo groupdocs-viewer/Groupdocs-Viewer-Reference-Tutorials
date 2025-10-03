@@ -4,8 +4,8 @@
 "title": "Hiển thị các trang cụ thể trong .NET với GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị các trang cụ thể trong .NET với GroupDocs.Viewer: Hướng dẫn toàn diện
 
 ## Giới thiệu

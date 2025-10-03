@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 實作文件分析－擷取頁面元資料和文字行"
 "url": "/zh-hant/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 實作文件分析：擷取頁面元資料和文字行
 
 ## 介紹

@@ -5,8 +5,8 @@
 "title": "Renommer les champs de courrier électronique pendant le rendu"
 "url": "/fr/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Renommer les champs de courrier électronique pendant le rendu
 
 ## Introduction

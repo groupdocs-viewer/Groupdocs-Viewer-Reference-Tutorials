@@ -5,8 +5,8 @@
 "title": "Renderelés beágyazott vagy külső erőforrásokkal"
 "url": "/hu/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Renderelés beágyazott vagy külső erőforrásokkal
 
 ## Bevezetés

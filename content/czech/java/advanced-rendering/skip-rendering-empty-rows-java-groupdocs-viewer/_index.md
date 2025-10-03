@@ -4,8 +4,8 @@
 "title": "Přeskočení vykreslování prázdných řádků v Javě pomocí GroupDocs.Viewer – Průvodce výkonem"
 "url": "/cs/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Přeskočit vykreslování prázdných řádků v Javě pomocí GroupDocs.Viewer
 ## Zavedení
 Vykreslování zbytečných prázdných řádků při převodu tabulek do HTML může zahlcovat výstup a spotřebovávat další zdroje. To je významný problém pro vývojáře orientované na výkon. S knihovnou „GroupDocs.Viewer Java“ můžete efektivně přeskočit vykreslování těchto prázdných řádků, čímž zvýšíte rychlost i přehlednost svých aplikací.

@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ไฟล์ RAR"
 "url": "/th/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # เรนเดอร์ไฟล์ RAR
 
 ## การแนะนำ

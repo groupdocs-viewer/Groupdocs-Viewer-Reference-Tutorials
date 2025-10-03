@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET का उपयोग करके फ़ॉन्ट प्रतिबंधों के साथ PDF/OXPS रेंडर करें एक व्यापक गाइड"
 "url": "/hi/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके फ़ॉन्ट प्रतिबंधों के साथ PDF/OXPS रेंडर करें .NET: एक व्यापक गाइड
 
 ## परिचय

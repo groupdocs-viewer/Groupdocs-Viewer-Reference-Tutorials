@@ -4,8 +4,8 @@
 "title": "Rendu de fichiers IA à l'aide de GroupDocs.Viewer pour Java - Guide complet"
 "url": "/fr/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendu de fichiers IA avec GroupDocs.Viewer pour Java : guide complet
 
 ## Introduction

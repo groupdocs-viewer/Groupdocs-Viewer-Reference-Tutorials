@@ -5,8 +5,8 @@
 "title": "Pagina's omdraaien en roteren"
 "url": "/nl/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Pagina's omdraaien en roteren
 
 ## Invoering

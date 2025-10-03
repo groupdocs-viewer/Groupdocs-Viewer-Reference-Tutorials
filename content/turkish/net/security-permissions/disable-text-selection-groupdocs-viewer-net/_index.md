@@ -4,8 +4,8 @@
 "title": "Gelişmiş Güvenlik için GroupDocs.Viewer .NET Kullanarak PDF'lerde Metin Seçimi Nasıl Devre Dışı Bırakılır"
 "url": "/tr/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PDF'leri HTML Olarak İşlerken Metin Seçimini Devre Dışı Bırakmak İçin GroupDocs.Viewer .NET Nasıl Kullanılır
 
 ## giriiş

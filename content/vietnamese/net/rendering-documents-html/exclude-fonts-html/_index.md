@@ -5,8 +5,8 @@
 "title": "Loại trừ phông chữ khỏi HTML được hiển thị"
 "url": "/vi/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Loại trừ phông chữ khỏi HTML được hiển thị
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile Java'da Özel Yazı Tipi Oluşturma Nasıl Uygulanır&#58; Adım Adım Kılavuz"
 "url": "/tr/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile Java'da Özel Yazı Tipi Oluşturma Nasıl Uygulanır: Adım Adım Kılavuz
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Maîtriser le rendu HTML avec des marges personnalisées dans .NET grâce à GroupDocs.Viewer"
 "url": "/fr/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Maîtriser le rendu HTML avec des marges définies par l'utilisateur dans .NET à l'aide de GroupDocs.Viewer
 
 ## Introduction

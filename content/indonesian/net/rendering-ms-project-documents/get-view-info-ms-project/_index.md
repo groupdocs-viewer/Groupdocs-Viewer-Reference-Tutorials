@@ -5,8 +5,8 @@
 "title": "Dapatkan Informasi Tampilan untuk Dokumen Microsoft Project"
 "url": "/id/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Dapatkan Informasi Tampilan untuk Dokumen Microsoft Project
 
 ## Perkenalan

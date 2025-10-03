@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 특정 인코딩이 있는 문서를 로드하는 방법"
 "url": "/ko/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 특정 인코딩이 있는 문서를 로드하는 방법
 
 ## 소개

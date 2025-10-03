@@ -4,8 +4,8 @@
 "title": "Stream経由でGroupDocs.Viewer .NETライセンスを設定するための完全ガイド"
 "url": "/ja/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Stream 経由で GroupDocs.Viewer .NET ライセンスを設定する: 完全ガイド
 
 ## 導入

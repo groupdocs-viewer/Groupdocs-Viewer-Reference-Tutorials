@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Rendering"]
 tags: ["groupdocs-viewer", "pdf-rendering", "dotnet", "text-spacing"]
+type: docs
 ---
-
 # How to Disable Characters Grouping in PDF .NET - Fix Text Spacing Issues
 
 ## Introduction

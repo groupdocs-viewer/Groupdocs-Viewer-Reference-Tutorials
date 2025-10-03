@@ -4,8 +4,8 @@
 "title": "Vô hiệu hóa nhóm ký tự trong PDF với GroupDocs.Viewer cho Java - Kỹ thuật kết xuất chính xác"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Tắt tính năng nhóm ký tự trong PDF bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

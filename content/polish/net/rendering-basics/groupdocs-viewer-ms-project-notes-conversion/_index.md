@@ -4,8 +4,8 @@
 "title": "Efektywne renderowanie plików MS Project z notatkami przy użyciu GroupDocs.Viewer dla .NET"
 "url": "/pl/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Efektywne renderowanie plików MS Project z notatkami przy użyciu GroupDocs.Viewer dla .NET
 
 ## Wstęp

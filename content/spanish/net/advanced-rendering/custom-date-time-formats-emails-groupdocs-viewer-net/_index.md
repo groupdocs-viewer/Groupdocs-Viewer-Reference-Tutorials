@@ -4,8 +4,8 @@
 "title": "Personalización de formatos de fecha y hora y desplazamientos de zona horaria en correos electrónicos con GroupDocs.Viewer .NET"
 "url": "/es/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Personalización de formatos de fecha y hora y zonas horarias en correos electrónicos con GroupDocs.Viewer .NET
 
 ## Introducción

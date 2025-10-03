@@ -4,8 +4,8 @@
 "title": "Mengoptimalkan Ukuran Gambar CAD Menggunakan GroupDocs.Viewer .NET untuk Meningkatkan Performa Web"
 "url": "/id/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Mengoptimalkan Ukuran Gambar CAD Menggunakan GroupDocs.Viewer .NET untuk Meningkatkan Performa Web
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Rendern von Archivordnern in Java mit GroupDocs.Viewer – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendern von Archivordnern mit GroupDocs.Viewer für Java
 
 ## Einführung

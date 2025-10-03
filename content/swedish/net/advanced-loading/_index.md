@@ -5,8 +5,8 @@
 "title": "Avancerade laddningsalternativ"
 "url": "/sv/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Avancerade laddningsalternativ
 
 ## Introduktion

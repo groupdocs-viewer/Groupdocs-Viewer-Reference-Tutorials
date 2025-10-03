@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용하여 PDF에서 문자 그룹화 비활성화&#58; 정밀 렌더링 기술"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 PDF에서 문자 그룹화 비활성화
 
 ## 소개

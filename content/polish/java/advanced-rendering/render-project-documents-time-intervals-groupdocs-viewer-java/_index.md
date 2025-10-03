@@ -4,8 +4,8 @@
 "title": "Renderowanie dokumentów projektu według przedziałów czasowych przy użyciu GroupDocs.Viewer dla języka Java"
 "url": "/pl/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak wdrożyć dokumenty projektu renderowania z przedziałami czasowymi przy użyciu GroupDocs.Viewer dla Java
 
 ## Wstęp

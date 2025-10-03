@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu Web"
 "url": "/vi/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Kết xuất tài liệu Web
 
 ## Giới thiệu

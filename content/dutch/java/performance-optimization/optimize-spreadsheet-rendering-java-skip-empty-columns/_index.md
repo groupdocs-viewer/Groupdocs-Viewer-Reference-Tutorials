@@ -4,8 +4,8 @@
 "title": "Optimaliseer Java-spreadsheetrendering&#58; sla lege kolommen over met GroupDocs.Viewer"
 "url": "/nl/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Spreadsheetweergave in Java optimaliseren: lege kolommen overslaan met GroupDocs.Viewer
 
 ## Invoering

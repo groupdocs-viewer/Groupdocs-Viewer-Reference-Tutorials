@@ -8,10 +8,8 @@ keywords:
 - convert Apple Numbers to HTML, JPG, PNG, PDF
 - GroupDocs.Viewer .NET tutorial
 - render Apple Numbers documents
-
+type: docs
 ---
-
-
 # Convert Apple Numbers to HTML, JPG, PNG, PDF Using GroupDocs.Viewer .NET
 
 ## Introduction

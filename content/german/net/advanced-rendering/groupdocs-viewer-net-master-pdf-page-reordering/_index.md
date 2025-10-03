@@ -4,8 +4,8 @@
 "title": "Beherrschen Sie die Neuanordnung von PDF-Seiten in .NET mit GroupDocs.Viewer – Ein Entwicklerhandbuch"
 "url": "/de/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # PDF-Seiten neu anordnen mit GroupDocs.Viewer .NET: Ein umfassender Leitfaden für Entwickler
 
 ## Einführung

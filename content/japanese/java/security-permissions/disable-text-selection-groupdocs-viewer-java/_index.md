@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Javaを使用してPDFのテキスト選択を無効にする方法 包括的なガイド"
 "url": "/ja/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java を使用して PDF レンダリングでテキスト選択を無効にする方法
 ## 導入
 テキスト選択を許可せずに、Web上でPDFを安全に表示する方法をお探しですか？この包括的なガイドでは、GroupDocs.Viewer for Javaライブラリを使用してテキスト選択を無効にする方法を説明します。テキストを画像に変換することで、オンラインで表示されるコンテンツは安全かつ編集不可能な状態を保ちます。

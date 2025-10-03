@@ -5,8 +5,8 @@
 "title": "Rendering dei messaggi di posta elettronica"
 "url": "/it/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Rendering dei messaggi di posta elettronica
 
 ## Introduzione

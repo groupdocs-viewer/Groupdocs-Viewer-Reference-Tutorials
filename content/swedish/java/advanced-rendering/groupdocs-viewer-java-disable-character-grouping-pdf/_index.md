@@ -4,8 +4,8 @@
 "title": "Inaktivera teckengruppering i PDF-filer med GroupDocs.Viewer för Java Precise Rendering Techniques"
 "url": "/sv/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Inaktivera teckengruppering i PDF-filer med GroupDocs.Viewer för Java
 
 ## Introduktion

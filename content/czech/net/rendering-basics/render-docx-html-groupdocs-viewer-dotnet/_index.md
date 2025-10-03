@@ -4,8 +4,8 @@
 "title": "Jak převést DOCX do HTML pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/rendering-basics/render-docx-html-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak převést DOCX do HTML pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

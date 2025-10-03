@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory CHM pomocí GroupDocs.Viewer v Javě&#58; Komplexní průvodce"
 "url": "/cs/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory CHM pomocí GroupDocs.Viewer v Javě: Komplexní průvodce
 ## Zavedení
 Chcete vykreslit soubory kompilované nápovědy HTML (CHM) do široce podporovaných formátů, jako jsou HTML, JPG, PNG a PDF? Ať už jde o archivační účely nebo zlepšení přístupnosti na různých platformách, převod těchto dokumentů může být zásadní. Tento tutoriál se zabývá tím, jak toho bez problémů dosáhnout pomocí GroupDocs.Viewer v Javě. Naučíte se vše o efektivním vykreslování souborů CHM s touto výkonnou knihovnou.

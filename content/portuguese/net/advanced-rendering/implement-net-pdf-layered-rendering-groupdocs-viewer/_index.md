@@ -4,8 +4,8 @@
 "title": "Domine a renderização em camadas de PDF .NET com o GroupDocs.Viewer - Um guia passo a passo"
 "url": "/pt/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Domine a renderização em camadas de PDF .NET com o GroupDocs.Viewer: um guia passo a passo
 
 ## Introdução

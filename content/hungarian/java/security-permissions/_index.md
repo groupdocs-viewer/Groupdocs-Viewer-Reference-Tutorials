@@ -3,8 +3,8 @@
 "title": "Dokumentumbiztonsági és hozzáférés-vezérlési oktatóanyagok a GroupDocs.Viewer Java-hoz"
 "url": "/hu/java/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Dokumentumbiztonsági és hozzáférés-vezérlési oktatóanyagok a GroupDocs.Viewer Java-hoz
 
 Tanulja meg a dokumentumok biztonságos megtekintését átfogó GroupDocs.Viewer biztonsági oktatóanyagainkkal Java-fejlesztőknek. Ezek a részletes útmutatók bemutatják, hogyan valósíthat meg jelszóvédelmet, kezelheti a dokumentumengedélyeket, kezelheti a titkosított fájlokat, és hogyan szabályozhatja programozottan a bizalmas dokumentumokhoz való hozzáférést. Minden oktatóanyag működő Java-kódpéldákat tartalmaz a gyakori biztonsági forgatókönyvekhez, segítve olyan alkalmazások létrehozásában, amelyek megőrzik a dokumentumok titkosságát és integritását, miközben szabályozott megtekintési lehetőségeket biztosítanak.

@@ -5,8 +5,8 @@
 "title": "CMX 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # CMX 이미지 렌더링
 
 ## 소개

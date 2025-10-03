@@ -4,8 +4,8 @@
 "title": "Implementación de un registro efectivo en GroupDocs.Viewer .NET para salidas de consola y archivos"
 "url": "/es/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Implementación de un registro efectivo en GroupDocs.Viewer .NET
 
 ## Introducción

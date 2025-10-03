@@ -4,8 +4,8 @@
 "title": "Erőforrás-betöltési időtúllépés implementálása a GroupDocs.Viewer for .NET-ben – Teljes körű útmutató"
 "url": "/hu/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Erőforrás-betöltési időtúllépés implementálása a GroupDocs.Viewer for .NET-ben
 
 ## Bevezetés

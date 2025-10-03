@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 효율적인 메타데이터 관리를 위한 문서 첨부 파일 검색 및 저장 방법"
 "url": "/ko/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 문서 첨부 파일을 검색하고 저장하는 방법
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "ドキュメントの読み込み"
 "url": "/ja/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # ドキュメントの読み込み
 
 ## 導入

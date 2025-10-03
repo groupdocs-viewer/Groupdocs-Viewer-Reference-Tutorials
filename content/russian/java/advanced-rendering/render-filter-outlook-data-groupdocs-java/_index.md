@@ -4,8 +4,8 @@
 "title": "Мастер рендеринга и фильтрации данных Outlook с помощью GroupDocs.Viewer для Java"
 "url": "/ru/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Мастер рендеринга и фильтрации данных Outlook с помощью GroupDocs.Viewer для Java
 
 ## Введение

@@ -8,10 +8,8 @@ keywords:
 - convert DOCX to JPG
 - GroupDocs.Viewer Java
 - render documents in Java
-
+type: docs
 ---
-
-
 # Master Rendering DOCX to JPG in Java with GroupDocs.Viewer
 
 ## Introduction

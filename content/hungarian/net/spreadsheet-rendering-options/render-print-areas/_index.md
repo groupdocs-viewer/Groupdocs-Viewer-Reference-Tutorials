@@ -5,8 +5,8 @@
 "title": "Nyomtatási területek renderelése a GroupDocs.Viewer for .NET segítségével"
 "url": "/hu/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Nyomtatási területek renderelése a GroupDocs.Viewer for .NET segítségével
 
 ## Bevezetés

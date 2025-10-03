@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer'ı Kullanarak Sayfa Sonlarına Göre Excel Elektronik Tablolarını Oluşturun"
 "url": "/tr/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer'ı Kullanarak Sayfa Sonlarına Göre Excel Elektronik Tablolarını Oluşturun
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Masquer le débordement de texte dans Excel à l'aide de GroupDocs.Viewer .NET - Un guide complet"
 "url": "/fr/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Masquer le débordement de texte dans Excel avec GroupDocs.Viewer .NET
 
 ## Introduction

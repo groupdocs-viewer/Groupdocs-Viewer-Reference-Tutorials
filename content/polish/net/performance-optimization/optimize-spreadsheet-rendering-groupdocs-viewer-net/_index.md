@@ -4,8 +4,8 @@
 "title": "Optymalizacja renderowania arkusza kalkulacyjnego za pomocą GroupDocs.Viewer dla .NET&#58; Pomiń puste kolumny"
 "url": "/pl/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optymalizacja renderowania arkusza kalkulacyjnego za pomocą GroupDocs.Viewer dla .NET
 ## Jak pominąć renderowanie pustych kolumn w arkuszach kalkulacyjnych za pomocą GroupDocs.Viewer .NET
 ### Wstęp

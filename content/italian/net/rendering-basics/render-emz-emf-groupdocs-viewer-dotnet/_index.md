@@ -4,8 +4,8 @@
 "title": "Come eseguire il rendering di file EMZ/EMF utilizzando GroupDocs.Viewer .NET&#58; una guida completa"
 "url": "/it/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Come eseguire il rendering di file EMZ/EMF utilizzando GroupDocs.Viewer .NET: una guida completa
 ## Nozioni di base sul rendering
 Questo tutorial illustra come eseguire il rendering di file Enhanced Metafile (EMF) o Embedded Metafile (EMZ) utilizzando GroupDocs.Viewer per .NET. Che tu stia integrando funzionalità di conversione file versatili nella tua applicazione o gestendo documenti, questa guida illustra come eseguire il rendering di questi formati in HTML, JPG, PNG e PDF.

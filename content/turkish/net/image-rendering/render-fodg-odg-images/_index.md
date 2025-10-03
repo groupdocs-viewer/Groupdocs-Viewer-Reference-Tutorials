@@ -5,8 +5,8 @@
 "title": "FODG ve ODG Görüntülerini Oluşturun"
 "url": "/tr/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # FODG ve ODG Görüntülerini Oluşturun
 
 ## giriiş

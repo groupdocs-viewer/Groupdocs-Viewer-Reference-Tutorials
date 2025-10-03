@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε έγγραφα FODP με το GroupDocs.Viewer για Java - Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε έγγραφα FODP με το GroupDocs.Viewer για Java: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

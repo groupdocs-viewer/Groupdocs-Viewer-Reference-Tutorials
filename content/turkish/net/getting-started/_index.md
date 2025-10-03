@@ -5,8 +5,8 @@
 "title": "Başlarken"
 "url": "/tr/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Başlarken
 
 

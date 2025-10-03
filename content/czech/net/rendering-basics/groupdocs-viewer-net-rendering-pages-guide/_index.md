@@ -4,8 +4,8 @@
 "title": "Vykreslování konkrétních stránek v .NET pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování konkrétních stránek v .NET pomocí GroupDocs.Viewer: Komplexní průvodce
 
 ## Zavedení

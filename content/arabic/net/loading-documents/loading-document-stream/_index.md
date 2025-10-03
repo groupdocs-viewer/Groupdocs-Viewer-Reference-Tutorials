@@ -5,8 +5,8 @@
 "title": "تحميل المستندات من الدفق"
 "url": "/ar/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # تحميل المستندات من الدفق
 
 ## مقدمة

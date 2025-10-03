@@ -5,8 +5,8 @@
 "title": "Microsoft Project 문서에 대한 보기 정보 가져오기"
 "url": "/ko/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Microsoft Project 문서에 대한 보기 정보 가져오기
 
 ## 소개

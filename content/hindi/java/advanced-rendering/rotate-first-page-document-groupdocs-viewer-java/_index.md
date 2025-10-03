@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ के पहले पृष्ठ को घुमाएँ (उन्नत मार्गदर्शिका)"
 "url": "/hi/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ के पहले पृष्ठ को घुमाएँ
 
 ## परिचय

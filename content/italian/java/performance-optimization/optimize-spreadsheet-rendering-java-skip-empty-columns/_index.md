@@ -4,8 +4,8 @@
 "title": "Ottimizza il rendering dei fogli di calcolo Java&#58; salta le colonne vuote con GroupDocs.Viewer"
 "url": "/it/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Come ottimizzare il rendering dei fogli di calcolo in Java: saltare le colonne vuote con GroupDocs.Viewer
 
 ## Introduzione

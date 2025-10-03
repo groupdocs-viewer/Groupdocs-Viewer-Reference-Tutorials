@@ -5,8 +5,8 @@
 "title": "Licentie instellen vanuit stream"
 "url": "/nl/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Licentie instellen vanuit stream
 
 ## Invoering

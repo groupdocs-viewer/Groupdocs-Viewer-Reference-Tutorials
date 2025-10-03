@@ -5,8 +5,8 @@
 "title": "이미지 렌더링"
 "url": "/ko/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # 이미지 렌더링
 
 

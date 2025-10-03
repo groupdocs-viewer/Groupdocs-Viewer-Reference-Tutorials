@@ -4,8 +4,8 @@
 "title": "Documenten met opmerkingen in Java weergeven met GroupDocs.Viewer"
 "url": "/nl/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Documenten met opmerkingen in Java weergeven met GroupDocs.Viewer
 ## Invoering
 Heb je moeite met het converteren van documenten naar HTML met behoud van opmerkingen? Deze handleiding begeleidt je bij het renderen van een document met opmerkingen met behulp van de krachtige GroupDocs.Viewer-bibliotheek in Java. Of je nu documenten naadloos wilt beheren of je Java-vaardigheden wilt verbeteren, deze tutorial is perfect voor jou.

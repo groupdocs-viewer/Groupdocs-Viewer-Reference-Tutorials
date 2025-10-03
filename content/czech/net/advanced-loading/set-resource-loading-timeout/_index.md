@@ -5,8 +5,8 @@
 "title": "Nastavení časového limitu načítání zdrojů (pokročilé)"
 "url": "/cs/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Nastavení časového limitu načítání zdrojů (pokročilé)
 
 ## Zavedení

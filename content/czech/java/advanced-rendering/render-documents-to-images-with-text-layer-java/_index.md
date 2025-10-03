@@ -4,8 +4,8 @@
 "title": "Vykreslení dokumentů jako obrázků s textovou vrstvou v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení dokumentů jako obrázků s textovou vrstvou v Javě pomocí GroupDocs.Viewer
 ## Pokročilý tutoriál renderování
 **Aktuální SEO URL**/render-documents-to-images-with-text-layer-java

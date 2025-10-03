@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer'da Lisanslar Nasıl Ayarlanır Java&#58; Dosyası ve URL Kurulum Kılavuzu"
 "url": "/tr/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java'da Lisanslar Nasıl Ayarlanır: Dosya ve URL Kurulum Kılavuzu
 
 ## giriiş

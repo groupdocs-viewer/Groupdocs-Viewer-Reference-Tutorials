@@ -5,8 +5,8 @@
 "title": "PDF에서 글꼴 힌팅 활성화"
 "url": "/ko/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # PDF에서 글꼴 힌팅 활성화
 
 ## 소개

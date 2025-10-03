@@ -8,10 +8,8 @@ keywords:
 - HTML rendering .NET
 - custom margins document conversion
 - GroupDocs.Viewer integration
-
+type: docs
 ---
-
-
 # Mastering HTML Rendering with User-Defined Margins in .NET Using GroupDocs.Viewer
 
 ## Introduction

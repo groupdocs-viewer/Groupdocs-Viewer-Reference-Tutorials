@@ -5,8 +5,8 @@
 "title": "Włącz renderowanie warstwowe w PDF"
 "url": "/pl/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Włącz renderowanie warstwowe w PDF
 
 ## Wstęp

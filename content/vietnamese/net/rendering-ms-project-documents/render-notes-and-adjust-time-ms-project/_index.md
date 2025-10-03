@@ -5,8 +5,8 @@
 "title": "Render Notes và điều chỉnh đơn vị thời gian (MS Project)"
 "url": "/vi/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Render Notes và điều chỉnh đơn vị thời gian (MS Project)
 
 ## Giới thiệu

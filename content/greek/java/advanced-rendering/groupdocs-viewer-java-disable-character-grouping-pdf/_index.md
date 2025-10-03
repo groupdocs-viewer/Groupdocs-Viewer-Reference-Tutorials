@@ -4,8 +4,8 @@
 "title": "Απενεργοποίηση ομαδοποίησης χαρακτήρων σε PDF με το GroupDocs.Viewer για τεχνικές ακριβούς απόδοσης Java"
 "url": "/el/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Απενεργοποίηση ομαδοποίησης χαρακτήρων σε PDF με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

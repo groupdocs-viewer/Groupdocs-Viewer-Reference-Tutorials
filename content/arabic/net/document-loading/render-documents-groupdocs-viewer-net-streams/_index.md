@@ -4,8 +4,8 @@
 "title": "عرض المستندات باستخدام GroupDocs.Viewer .NET من Streams - دليل شامل للمطورين"
 "url": "/ar/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # عرض المستندات باستخدام GroupDocs.Viewer .NET من Streams: دليل شامل للمطورين
 
 ## مقدمة

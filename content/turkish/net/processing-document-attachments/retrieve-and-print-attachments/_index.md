@@ -5,8 +5,8 @@
 "title": "Belge Eklerini Al ve Yazdır"
 "url": "/tr/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Belge Eklerini Al ve Yazdır
 
 ## giriiş

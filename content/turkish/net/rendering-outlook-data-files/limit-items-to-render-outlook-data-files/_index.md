@@ -5,8 +5,8 @@
 "title": "Outlook Veri Dosyalarında İşlenecek Öğe Sayısını Sınırla"
 "url": "/tr/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Outlook Veri Dosyalarında İşlenecek Öğe Sayısını Sınırla
 
 ## giriiş

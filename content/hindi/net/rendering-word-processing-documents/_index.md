@@ -5,8 +5,8 @@
 "title": "वर्ड प्रोसेसिंग दस्तावेज़ प्रस्तुत करना"
 "url": "/hi/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # वर्ड प्रोसेसिंग दस्तावेज़ प्रस्तुत करना
 
 

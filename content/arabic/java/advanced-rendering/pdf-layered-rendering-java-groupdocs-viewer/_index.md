@@ -4,8 +4,8 @@
 "title": "عرض PDF متعدد الطبقات بكفاءة في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # عرض PDF متعدد الطبقات بكفاءة في Java باستخدام GroupDocs.Viewer
 
 ## مقدمة

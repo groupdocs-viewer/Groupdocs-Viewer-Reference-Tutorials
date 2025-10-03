@@ -3,8 +3,8 @@
 "title": "Hướng dẫn bảo mật tài liệu và kiểm soát truy cập cho GroupDocs.Viewer .NET"
 "url": "/vi/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Hướng dẫn bảo mật tài liệu và kiểm soát truy cập cho GroupDocs.Viewer .NET
 
 Học cách bảo mật việc xem tài liệu với hướng dẫn bảo mật GroupDocs.Viewer toàn diện của chúng tôi dành cho các nhà phát triển .NET. Các hướng dẫn chi tiết này trình bày cách triển khai bảo vệ bằng mật khẩu, quản lý quyền tài liệu, xử lý các tệp được mã hóa và kiểm soát quyền truy cập vào các tài liệu nhạy cảm theo chương trình. Mỗi hướng dẫn cung cấp các ví dụ mã .NET đang hoạt động cho các tình huống bảo mật phổ biến, giúp bạn xây dựng các ứng dụng duy trì tính bảo mật và toàn vẹn của tài liệu trong khi cung cấp khả năng xem được kiểm soát.

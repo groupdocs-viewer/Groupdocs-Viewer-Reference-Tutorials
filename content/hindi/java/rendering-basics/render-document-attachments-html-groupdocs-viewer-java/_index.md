@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java का उपयोग करके दस्तावेज़ अनुलग्नकों को HTML में प्रस्तुत करें एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java के साथ HTML में दस्तावेज़ अनुलग्नक प्रस्तुत करें
 
 ## परिचय

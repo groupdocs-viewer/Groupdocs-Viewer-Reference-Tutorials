@@ -4,8 +4,8 @@
 "title": "Настройка ведения журнала в GroupDocs.Viewer для Java&#58; Руководство по ведению журнала консоли и файла"
 "url": "/ru/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Настройка ведения журнала в GroupDocs.Viewer для Java
 
 ## Введение

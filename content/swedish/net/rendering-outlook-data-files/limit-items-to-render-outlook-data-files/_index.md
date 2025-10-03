@@ -5,8 +5,8 @@
 "title": "Begränsa antalet objekt som ska renderas i Outlook-datafiler"
 "url": "/sv/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Begränsa antalet objekt som ska renderas i Outlook-datafiler
 
 ## Introduktion

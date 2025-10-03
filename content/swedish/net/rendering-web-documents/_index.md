@@ -5,8 +5,8 @@
 "title": "Rendera webbdokument"
 "url": "/sv/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Rendera webbdokument
 
 ## Introduktion

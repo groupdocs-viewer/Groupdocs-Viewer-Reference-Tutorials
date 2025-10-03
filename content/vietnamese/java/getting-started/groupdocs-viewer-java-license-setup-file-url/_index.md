@@ -4,8 +4,8 @@
 "title": "Hướng dẫn thiết lập tệp cục bộ hoặc URL của giấy phép Java GroupDocs.Viewer"
 "url": "/vi/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # Cách thiết lập giấy phép Java của GroupDocs.Viewer: Tệp cục bộ hoặc URL
 
 Mở khóa toàn bộ tiềm năng của GroupDocs.Viewer cho các ứng dụng Java của bạn bằng cách thiết lập giấy phép từ tệp cục bộ hoặc tài nguyên trực tuyến. Hướng dẫn toàn diện này sẽ giúp bạn triển khai cả hai phương pháp một cách hiệu quả, đảm bảo quyền truy cập vào tất cả các tính năng do công cụ xem tài liệu mạnh mẽ này cung cấp.

@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu sang PDF"
 "url": "/vi/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Kết xuất tài liệu sang PDF
 
 

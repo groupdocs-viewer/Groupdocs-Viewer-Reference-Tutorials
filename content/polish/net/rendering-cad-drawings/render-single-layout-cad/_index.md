@@ -5,8 +5,8 @@
 "title": "Renderuj pojedynczy układ na rysunkach CAD"
 "url": "/pl/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Renderuj pojedynczy układ na rysunkach CAD
 
 ## Wstęp

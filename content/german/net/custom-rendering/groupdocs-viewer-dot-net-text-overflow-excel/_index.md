@@ -4,8 +4,8 @@
 "title": "Textüberlauf in Excel mit GroupDocs.Viewer .NET ausblenden – Eine umfassende Anleitung"
 "url": "/de/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Textüberlauf in Excel mit GroupDocs.Viewer .NET ausblenden
 
 ## Einführung

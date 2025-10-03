@@ -4,8 +4,8 @@
 "title": "Optymalizacja renderowania danych programu Outlook w środowisku .NET za pomocą GroupDocs.Viewer&#58; Porady i techniki dotyczące wydajności"
 "url": "/pl/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optymalizacja renderowania danych programu Outlook za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

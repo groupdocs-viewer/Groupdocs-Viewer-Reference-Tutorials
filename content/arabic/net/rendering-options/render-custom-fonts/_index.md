@@ -5,8 +5,8 @@
 "title": "العرض باستخدام الخطوط المخصصة"
 "url": "/ar/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # العرض باستخدام الخطوط المخصصة
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "TXT konvertálása HTML, JPG, PNG és PDF fájlokká a GroupDocs.Viewer .NET használatával – Teljes körű útmutató"
 "url": "/hu/net/export-conversion/groupdocs-viewer-dotnet-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # TXT fájlok konvertálása több formátumba a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

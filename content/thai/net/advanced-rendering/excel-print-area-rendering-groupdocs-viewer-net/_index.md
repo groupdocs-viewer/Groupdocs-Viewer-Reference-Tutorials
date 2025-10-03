@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์พื้นที่พิมพ์ Excel อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ .NET"
 "url": "/th/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์พื้นที่พิมพ์ Excel อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

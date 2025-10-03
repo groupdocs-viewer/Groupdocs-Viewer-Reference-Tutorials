@@ -5,8 +5,8 @@
 "title": "เรนเดอร์เส้นกริด"
 "url": "/th/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # เรนเดอร์เส้นกริด
 
 ## การแนะนำ

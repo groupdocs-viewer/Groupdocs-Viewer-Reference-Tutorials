@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία EMZ/EMF χρησιμοποιώντας το GroupDocs.Viewer .NET# Ένας πλήρης οδηγός"
 "url": "/el/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία EMZ/EMF χρησιμοποιώντας το GroupDocs.Viewer .NET: Ένας πλήρης οδηγός
 ## Βασικά στοιχεία απόδοσης
 Αυτό το σεμινάριο δείχνει πώς να αποδώσετε αρχεία Enhanced Metafile (EMF) ή Embedded Metafile (EMZ) χρησιμοποιώντας το GroupDocs.Viewer για .NET. Είτε ενσωματώνετε ευέλικτες δυνατότητες μετατροπής αρχείων στην εφαρμογή σας είτε διαχειρίζεστε έγγραφα, αυτός ο οδηγός καλύπτει την απόδοση αυτών των μορφών σε HTML, JPG, PNG και PDF.

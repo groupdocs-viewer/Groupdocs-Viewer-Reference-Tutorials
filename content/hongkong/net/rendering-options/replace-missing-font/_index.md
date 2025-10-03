@@ -5,8 +5,8 @@
 "title": "替換缺失字體"
 "url": "/zh-hant/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # 替換缺失字體
 
 ## 介紹

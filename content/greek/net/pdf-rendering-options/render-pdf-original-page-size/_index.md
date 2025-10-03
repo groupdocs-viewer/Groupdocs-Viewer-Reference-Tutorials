@@ -5,8 +5,8 @@
 "title": "Απόδοση PDF με αρχικό μέγεθος σελίδας"
 "url": "/el/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Απόδοση PDF με αρχικό μέγεθος σελίδας
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@
 "title": "Рендеринг с использованием встроенных или внешних ресурсов"
 "url": "/ru/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Рендеринг с использованием встроенных или внешних ресурсов
 
 ## Введение

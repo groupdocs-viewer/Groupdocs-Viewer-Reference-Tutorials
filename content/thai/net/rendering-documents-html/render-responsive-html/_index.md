@@ -5,8 +5,8 @@
 "title": "แสดงผล HTML แบบตอบสนอง"
 "url": "/th/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # แสดงผล HTML แบบตอบสนอง
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Optimera CAD-ritningsstorleken med GroupDocs.Viewer .NET för förbättrad webbprestanda"
 "url": "/sv/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimera CAD-ritningsstorleken med GroupDocs.Viewer .NET för förbättrad webbprestanda
 
 ## Introduktion

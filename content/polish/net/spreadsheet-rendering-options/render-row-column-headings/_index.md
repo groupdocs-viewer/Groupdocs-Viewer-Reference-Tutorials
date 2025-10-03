@@ -5,8 +5,8 @@
 "title": "Renderuj nagłówki wierszy i kolumn"
 "url": "/pl/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Renderuj nagłówki wierszy i kolumn
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "Отображение определенных папок и фильтрация сообщений (Outlook)"
 "url": "/ru/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Отображение определенных папок и фильтрация сообщений (Outlook)
 
 ## Введение

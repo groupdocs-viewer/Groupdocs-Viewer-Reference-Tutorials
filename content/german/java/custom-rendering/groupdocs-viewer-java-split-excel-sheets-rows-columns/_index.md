@@ -4,8 +4,8 @@
 "title": "Excel-Tabellen nach Zeilen und Spalten aufteilen mit GroupDocs.Viewer in Java – Eine umfassende Anleitung"
 "url": "/de/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Aufteilen von Excel-Tabellen nach Zeilen und Spalten mit GroupDocs.Viewer in Java
 
 ## Einführung

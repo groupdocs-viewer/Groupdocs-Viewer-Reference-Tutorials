@@ -4,8 +4,8 @@
 "title": "So implementieren Sie benutzerdefiniertes Font-Rendering in Java mit GroupDocs.Viewer – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # So implementieren Sie benutzerdefiniertes Schriftart-Rendering in Java mit GroupDocs.Viewer: Eine Schritt-für-Schritt-Anleitung
 
 ## Einführung

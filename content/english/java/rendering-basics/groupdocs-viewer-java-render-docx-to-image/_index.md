@@ -8,10 +8,8 @@ keywords:
 - render DOCX to image
 - GroupDocs Viewer for Java
 - Java document rendering
-
+type: docs
 ---
-
-
 # Render DOCX to Image with GroupDocs Viewer for Java
 
 ## Introduction

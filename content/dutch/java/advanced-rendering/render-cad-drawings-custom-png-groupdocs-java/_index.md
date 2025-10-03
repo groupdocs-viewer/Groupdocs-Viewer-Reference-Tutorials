@@ -4,8 +4,8 @@
 "title": "CAD-tekeningen renderen als PNG met aangepaste grootte en achtergrondkleur met GroupDocs.Viewer voor Java"
 "url": "/nl/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD-tekeningen renderen als PNG met aangepaste grootte en achtergrondkleur met GroupDocs.Viewer voor Java
 
 ## Invoering

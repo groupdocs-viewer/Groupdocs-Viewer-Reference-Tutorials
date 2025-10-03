@@ -4,8 +4,8 @@
 "title": "Panduan Java&#58; Render Halaman Tertentu dengan API GroupDocs.Viewer untuk Pratinjau dan Manajemen Dokumen"
 "url": "/id/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Java: Render Halaman Tertentu dengan API GroupDocs.Viewer
 
 ## Perkenalan

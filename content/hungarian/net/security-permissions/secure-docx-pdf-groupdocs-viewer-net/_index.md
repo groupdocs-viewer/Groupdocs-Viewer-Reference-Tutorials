@@ -4,8 +4,8 @@
 "title": "DOCX fájlok PDF formátumban történő biztonságossá tétele a GroupDocs.Viewer .NET használatával – lépésről lépésre útmutató"
 "url": "/hu/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # DOCX fájlok PDF formátumban történő védelme a GroupDocs.Viewer .NET használatával: Lépésről lépésre útmutató
 
 mai digitális korban a bizalmas dokumentumok védelme kulcsfontosságú. Akár vállalkozásként, akár magánszemélyként szeretné megvédeni a szellemi tulajdonát, a Word-fájlok jelszóval védett PDF-ekké konvertálása átalakulást hozhat. Ez az oktatóanyag bemutatja, hogyan használhatja a GroupDocs.Viewer for .NET programot DOCX dokumentumok védett PDF-ekké konvertálásához, bizonyos korlátozásokkal, például a nyomtatás letiltásával.

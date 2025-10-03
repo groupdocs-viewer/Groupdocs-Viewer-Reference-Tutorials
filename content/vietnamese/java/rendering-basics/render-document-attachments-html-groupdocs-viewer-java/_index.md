@@ -4,8 +4,8 @@
 "title": "Hiển thị tệp đính kèm tài liệu thành HTML bằng GroupDocs.Viewer Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tệp đính kèm tài liệu thành HTML với GroupDocs.Viewer Java
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 呈現密碼保護的文檔"
 "url": "/zh-hant/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 呈現受密碼保護的文檔
 
 ## 介紹

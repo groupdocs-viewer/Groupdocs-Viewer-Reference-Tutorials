@@ -5,8 +5,8 @@
 "title": "Ange filnamn vid rendering av arkivfiler"
 "url": "/sv/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Ange filnamn vid rendering av arkivfiler
 
 ## Introduktion

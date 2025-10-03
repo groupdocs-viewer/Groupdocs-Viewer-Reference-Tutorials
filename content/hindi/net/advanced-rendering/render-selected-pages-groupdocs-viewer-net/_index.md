@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET का उपयोग करके चयनित पृष्ठों को कैसे प्रस्तुत करें डेवलपर्स के लिए एक व्यापक गाइड"
 "url": "/hi/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके विशिष्ट पृष्ठों को कैसे प्रस्तुत करें
 
 ## परिचय

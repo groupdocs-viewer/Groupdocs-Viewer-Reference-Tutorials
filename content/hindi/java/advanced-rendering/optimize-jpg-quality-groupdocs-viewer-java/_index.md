@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके PDF में JPG गुणवत्ता अनुकूलित करें"
 "url": "/hi/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके PDF में JPG गुणवत्ता अनुकूलित करें
 
 ## परिचय

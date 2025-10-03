@@ -4,8 +4,8 @@
 "title": "Cách kết xuất bản vẽ CAD dưới dạng PNG với kích thước và màu nền tùy chỉnh bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất bản vẽ CAD dưới dạng PNG với kích thước và màu nền tùy chỉnh bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

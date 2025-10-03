@@ -5,8 +5,8 @@
 "title": "Merender Dokumen ke HTML"
 "url": "/id/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Merender Dokumen ke HTML
 
 

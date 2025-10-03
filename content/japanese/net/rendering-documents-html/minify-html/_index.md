@@ -5,8 +5,8 @@
 "title": "レンダリングされた HTML ドキュメントを縮小する"
 "url": "/ja/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # レンダリングされた HTML ドキュメントを縮小する
 
 ## 導入

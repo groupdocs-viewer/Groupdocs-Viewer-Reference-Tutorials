@@ -3,8 +3,8 @@
 "title": "Hướng dẫn kết xuất tài liệu tùy chỉnh cho GroupDocs.Viewer Java"
 "url": "/vi/java/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # Hướng dẫn kết xuất tài liệu tùy chỉnh cho GroupDocs.Viewer Java
 
 Nắm vững các kỹ thuật tùy chỉnh nâng cao với hướng dẫn Java GroupDocs.Viewer của chúng tôi để dựng hình tùy chỉnh. Các hướng dẫn toàn diện này trình bày cách tạo trình xử lý dựng hình tùy chỉnh, triển khai logic dựng hình chuyên biệt, mở rộng khả năng dựng hình tích hợp và phát triển các giải pháp xử lý tài liệu tinh vi. Mỗi hướng dẫn cung cấp các ví dụ mã Java chi tiết cho thấy cách triển khai các chiến lược dựng hình tài liệu linh hoạt, được thiết kế riêng, vượt ra ngoài các phương pháp dựng hình tiêu chuẩn.

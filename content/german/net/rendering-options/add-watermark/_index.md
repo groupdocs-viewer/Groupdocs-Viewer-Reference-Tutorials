@@ -5,8 +5,8 @@
 "title": "Wasserzeichen zum Dokument hinzufügen"
 "url": "/de/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Wasserzeichen zum Dokument hinzufügen
 
 ## Einführung

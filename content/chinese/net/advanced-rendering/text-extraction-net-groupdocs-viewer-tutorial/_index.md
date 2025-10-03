@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 .NET 中的文本提取——综合指南"
 "url": "/zh/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET 中的文本提取：综合教程
 
 ## 介绍

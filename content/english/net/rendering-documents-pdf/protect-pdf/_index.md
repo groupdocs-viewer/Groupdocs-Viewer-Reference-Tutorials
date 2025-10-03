@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Security"]
 tags: ["pdf-protection", "document-security", "groupdocs-viewer", "dotnet"]
+type: docs
 ---
-
 # How to Protect PDF with Password in .NET - Complete Guide
 
 ## Introduction

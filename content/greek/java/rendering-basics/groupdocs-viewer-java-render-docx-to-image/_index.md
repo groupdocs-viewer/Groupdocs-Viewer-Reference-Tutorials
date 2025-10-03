@@ -4,8 +4,8 @@
 "title": "Απόδοση DOCX σε εικόνα χρησιμοποιώντας το GroupDocs Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση DOCX σε εικόνα με το GroupDocs Viewer για Java
 
 ## Εισαγωγή

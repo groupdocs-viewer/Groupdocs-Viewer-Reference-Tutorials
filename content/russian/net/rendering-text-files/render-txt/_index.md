@@ -5,8 +5,8 @@
 "title": "Текстовые файлы рендеринга (.txt)"
 "url": "/ru/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Текстовые файлы рендеринга (.txt)
 
 ## Введение

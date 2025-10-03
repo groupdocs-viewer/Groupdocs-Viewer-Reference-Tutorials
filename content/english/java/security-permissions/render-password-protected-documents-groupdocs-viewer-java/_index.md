@@ -8,10 +8,8 @@ keywords:
 - render password-protected documents Java
 - GroupDocs.Viewer Java setup
 - Java document rendering security
-
+type: docs
 ---
-
-
 # Render Password-Protected Documents in Java Using GroupDocs.Viewer
 
 ## Introduction

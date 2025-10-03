@@ -4,8 +4,8 @@
 "title": "Extrakce a zobrazení názvů pracovních listů v Javě pomocí rozhraní GroupDocs.Viewer API"
 "url": "/cs/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Extrakce a zobrazení názvů pracovních listů v Javě pomocí rozhraní GroupDocs.Viewer API
 
 ## Zavedení

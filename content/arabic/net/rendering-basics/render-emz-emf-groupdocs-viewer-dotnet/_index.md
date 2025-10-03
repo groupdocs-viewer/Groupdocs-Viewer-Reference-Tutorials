@@ -4,8 +4,8 @@
 "title": "كيفية عرض ملفات EMZ/EMF باستخدام GroupDocs.Viewer .NET - دليل شامل"
 "url": "/ar/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض ملفات EMZ/EMF باستخدام GroupDocs.Viewer .NET: دليل شامل
 ## أساسيات العرض
 يوضح هذا البرنامج التعليمي كيفية عرض ملفات الملفات الوصفية المحسنة (EMF) أو الملفات الوصفية المضمنة (EMZ) باستخدام GroupDocs.Viewer لـ .NET. سواءً كنت تُدمج إمكانيات تحويل ملفات متعددة في تطبيقك أو تُدير مستنداتك، يُغطي هذا الدليل عرض هذه التنسيقات إلى HTML وJPG وPNG وPDF.

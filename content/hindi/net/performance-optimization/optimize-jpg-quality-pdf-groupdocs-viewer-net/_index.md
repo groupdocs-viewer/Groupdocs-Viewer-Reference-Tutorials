@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET के साथ PDF में JPG गुणवत्ता को अनुकूलित करें एक व्यापक गाइड"
 "url": "/hi/net/performance-optimization/optimize-jpg-quality-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ PDF में JPG गुणवत्ता अनुकूलित करें
 
 ## परिचय

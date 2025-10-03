@@ -4,8 +4,8 @@
 "title": "Cách đổi tên trường email khi chuyển đổi email sang HTML bằng GroupDocs.Viewer Java"
 "url": "/vi/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách đổi tên trường email khi hiển thị email sang HTML bằng GroupDocs.Viewer Java
 
 ## Giới thiệu

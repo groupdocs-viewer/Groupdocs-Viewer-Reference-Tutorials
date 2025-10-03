@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory MS Project jako HTML, JPG, PNG a PDF s poznámkami pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory MS Project jako HTML, JPG, PNG a PDF s poznámkami pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

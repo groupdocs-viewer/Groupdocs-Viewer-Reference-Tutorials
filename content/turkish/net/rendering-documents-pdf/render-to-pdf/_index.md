@@ -5,8 +5,8 @@
 "title": "Belgeyi PDF'ye Dönüştür"
 "url": "/tr/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Belgeyi PDF'ye Dönüştür
 
 ## giriiş

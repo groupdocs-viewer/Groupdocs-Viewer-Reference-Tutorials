@@ -4,8 +4,8 @@
 "title": "So rendern Sie Dokumente mit Kommentaren in Java mithilfe von GroupDocs.Viewer"
 "url": "/de/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # So rendern Sie Dokumente mit Kommentaren in Java mithilfe von GroupDocs.Viewer
 ## Einführung
 Haben Sie Schwierigkeiten, Dokumente in HTML zu konvertieren und dabei Kommentare beizubehalten? Diese Anleitung führt Sie durch die Darstellung eines Dokuments mit Kommentaren mithilfe der leistungsstarken GroupDocs.Viewer-Bibliothek in Java. Egal, ob Sie Dokumente nahtlos verwalten oder Ihre Java-Kenntnisse verbessern möchten – dieses Tutorial ist genau das Richtige für Sie.

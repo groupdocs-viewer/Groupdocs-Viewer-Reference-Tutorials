@@ -5,8 +5,8 @@
 "title": "数値のレンダリング"
 "url": "/ja/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # 数値のレンダリング
 
 ## 導入

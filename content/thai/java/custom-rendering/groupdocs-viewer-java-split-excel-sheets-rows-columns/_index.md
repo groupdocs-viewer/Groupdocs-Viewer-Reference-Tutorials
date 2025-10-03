@@ -4,8 +4,8 @@
 "title": "แบ่งแผ่นงาน Excel ตามแถวและคอลัมน์ด้วย GroupDocs.Viewer ใน Java - คำแนะนำที่ครอบคลุม"
 "url": "/th/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # การแบ่งแผ่นงาน Excel ตามแถวและคอลัมน์โดยใช้ GroupDocs.Viewer ใน Java
 
 ## การแนะนำ

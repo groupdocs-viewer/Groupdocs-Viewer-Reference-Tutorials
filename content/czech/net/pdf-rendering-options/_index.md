@@ -5,8 +5,8 @@
 "title": "Možnosti vykreslování PDF"
 "url": "/cs/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # Možnosti vykreslování PDF
 
 

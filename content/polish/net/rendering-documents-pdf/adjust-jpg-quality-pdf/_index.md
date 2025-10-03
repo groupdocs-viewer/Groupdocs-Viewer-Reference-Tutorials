@@ -5,8 +5,8 @@
 "title": "Dostosuj jakość obrazu JPG w renderowanym pliku PDF"
 "url": "/pl/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Dostosuj jakość obrazu JPG w renderowanym pliku PDF
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "تحسين حجم رسومات CAD باستخدام GroupDocs.Viewer .NET لتحسين أداء الويب"
 "url": "/ar/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # تحسين حجم رسومات CAD باستخدام GroupDocs.Viewer .NET لتحسين أداء الويب
 
 ## مقدمة

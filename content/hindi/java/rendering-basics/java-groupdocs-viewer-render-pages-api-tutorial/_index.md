@@ -4,8 +4,8 @@
 "title": "जावा गाइड&#58; दस्तावेज़ पूर्वावलोकन और प्रबंधन के लिए GroupDocs.Viewer API के साथ विशिष्ट पृष्ठों को प्रस्तुत करें"
 "url": "/hi/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # जावा का क्रियान्वयन: GroupDocs.Viewer API के साथ विशिष्ट पृष्ठों को रेंडर करना
 
 ## परिचय

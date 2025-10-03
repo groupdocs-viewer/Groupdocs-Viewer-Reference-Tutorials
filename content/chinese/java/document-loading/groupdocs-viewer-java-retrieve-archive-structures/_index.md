@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 检索档案结构——综合指南"
 "url": "/zh/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 检索档案结构
 
 ## 介绍

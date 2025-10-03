@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer में दस्तावेज़ प्रकार विनिर्देश कैसे लागू करें - एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer में दस्तावेज़ प्रकार विनिर्देशन को कैसे लागू करें
 
 Java के लिए GroupDocs.Viewer का उपयोग करके DOCX फ़ाइलों को रेंडर करने के लिए फ़ाइल प्रकार निर्दिष्ट करने पर चरण-दर-चरण मार्गदर्शिका।

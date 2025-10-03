@@ -4,8 +4,8 @@
 "title": "Efektivní vykreslování CAD rozvržení s GroupDocs.Viewer pro .NET – Podrobný návod"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Efektivní vykreslování CAD rozvržení s GroupDocs.Viewer pro .NET
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Απόδοση επιπέδων σε σχέδια CAD"
 "url": "/el/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Απόδοση επιπέδων σε σχέδια CAD
 
 ## Εισαγωγή

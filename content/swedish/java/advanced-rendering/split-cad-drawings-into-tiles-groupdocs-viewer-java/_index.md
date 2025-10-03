@@ -4,8 +4,8 @@
 "title": "Dela upp CAD-ritningar i kakel med GroupDocs.Viewer Java för effektiv rendering"
 "url": "/sv/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dela upp CAD-ritningar i kakel med GroupDocs.Viewer Java
 
 ## Introduktion

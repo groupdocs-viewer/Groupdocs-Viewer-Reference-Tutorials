@@ -5,8 +5,8 @@
 "title": "Commencer"
 "url": "/fr/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Commencer
 
 

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET logging
 - console logging in GroupDocs.Viewer .NET
 - file logging with GroupDocs.Viewer .NET
-
+type: docs
 ---
-
-
 # Implementing Effective Logging in GroupDocs.Viewer .NET
 
 ## Introduction

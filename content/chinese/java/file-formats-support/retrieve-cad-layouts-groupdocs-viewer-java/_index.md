@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中检索 CAD 布局和图层"
 "url": "/zh/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 检索 CAD 布局和图层
 
 在工程和设计领域，计算机辅助设计 (CAD) 文件是不可或缺的工具，用于存储大量与设计相关的详细信息。这些文件可能非常复杂，包含多个布局和图层，需要精确的管理和检索才能有效地执行项目。如果您希望使用 Java 以编程方式从 CAD 图纸中提取特定细节，那么 GroupDocs.Viewer for Java 是您的首选解决方案。本教程将指导您使用 GroupDocs.Viewer 从 CAD 图纸中检索所有布局和图层。

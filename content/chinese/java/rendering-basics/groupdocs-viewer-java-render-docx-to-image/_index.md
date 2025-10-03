@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs Viewer for Java 将 DOCX 渲染为图像——综合指南"
 "url": "/zh/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs Viewer for Java 将 DOCX 渲染为图像
 
 ## 介绍

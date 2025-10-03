@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ अनुलग्नक पुनर्प्राप्त करें और प्रिंट करें"
 "url": "/hi/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # दस्तावेज़ अनुलग्नक पुनर्प्राप्त करें और प्रिंट करें
 
 ## परिचय

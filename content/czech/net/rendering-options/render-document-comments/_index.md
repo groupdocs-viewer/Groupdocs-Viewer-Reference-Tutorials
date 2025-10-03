@@ -5,8 +5,8 @@
 "title": "Vykreslení dokumentu s komentáři"
 "url": "/cs/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Vykreslení dokumentu s komentáři
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Optimera JPG-kvalitet i GroupDocs.Viewer .NET för förbättrad bildrendering"
 "url": "/sv/net/advanced-rendering/adjust-jpg-quality-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Optimera JPG-kvalitet i GroupDocs.Viewer .NET
 
 ## Introduktion

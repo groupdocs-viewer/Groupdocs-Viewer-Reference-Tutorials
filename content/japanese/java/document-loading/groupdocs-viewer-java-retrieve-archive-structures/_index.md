@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用してアーカイブ構造を取得する方法 - 包括的なガイド"
 "url": "/ja/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用してアーカイブ構造を取得する方法
 
 ## 導入

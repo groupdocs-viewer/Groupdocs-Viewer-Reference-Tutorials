@@ -4,8 +4,8 @@
 "title": "Splits CAD-tekeningen in tegels met GroupDocs.Viewer Java voor efficiënte rendering"
 "url": "/nl/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD-tekeningen splitsen in tegels met GroupDocs.Viewer Java
 
 ## Invoering

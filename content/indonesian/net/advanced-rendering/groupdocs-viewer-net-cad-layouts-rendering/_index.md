@@ -4,8 +4,8 @@
 "title": "Rendering Tata Letak CAD yang Efisien dengan GroupDocs.Viewer untuk .NET&#58; Panduan Langkah demi Langkah"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Rendering Tata Letak CAD yang Efisien dengan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

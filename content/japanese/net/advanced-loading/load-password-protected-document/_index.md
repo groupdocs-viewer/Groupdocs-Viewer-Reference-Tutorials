@@ -5,8 +5,8 @@
 "title": "パスワードで保護されたドキュメントを読み込む"
 "url": "/ja/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # パスワードで保護されたドキュメントを読み込む
 
 ## 導入

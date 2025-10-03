@@ -4,8 +4,8 @@
 "title": "Otočení první stránky dokumentu pomocí GroupDocs.Viewer pro Javu (pokročilý průvodce)"
 "url": "/cs/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Otočení první stránky dokumentu pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

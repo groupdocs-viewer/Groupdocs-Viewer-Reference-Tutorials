@@ -4,8 +4,8 @@
 "title": "Visualizzare righe e colonne nascoste nei file Excel utilizzando GroupDocs.Viewer per .NET - Guida avanzata"
 "url": "/it/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Visualizza righe e colonne nascoste nei file Excel utilizzando GroupDocs.Viewer per .NET
 
 ## Introduzione

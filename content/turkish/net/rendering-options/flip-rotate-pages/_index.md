@@ -5,8 +5,8 @@
 "title": "Sayfaları Çevirin ve Döndürün"
 "url": "/tr/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Sayfaları Çevirin ve Döndürün
 
 ## giriiş

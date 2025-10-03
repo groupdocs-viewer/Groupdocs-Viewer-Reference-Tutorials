@@ -4,8 +4,8 @@
 "title": "Estrarre informazioni sui documenti e personalizzare l'output con GroupDocs.Viewer .NET - Una guida completa"
 "url": "/it/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Estrarre informazioni sul documento e personalizzare l'output con GroupDocs.Viewer .NET
 ## Tutorial sul rendering personalizzato
 ### Cosa imparerai:

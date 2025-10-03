@@ -4,8 +4,8 @@
 "title": ".NET에서 PDF 렌더링 향상&#58; GroupDocs.Viewer로 글꼴 힌팅 활성화"
 "url": "/ko/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 .NET에서 PDF 렌더링을 향상시키는 방법: 글꼴 힌팅 활성화
 
 ## 소개

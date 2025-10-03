@@ -4,8 +4,8 @@
 "title": "Come implementare la minimizzazione HTML con GroupDocs.Viewer .NET per pagine Web più veloci"
 "url": "/it/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Come implementare la minimizzazione HTML con GroupDocs.Viewer .NET per pagine Web più veloci
 
 ## Introduzione

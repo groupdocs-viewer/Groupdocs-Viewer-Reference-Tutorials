@@ -4,8 +4,8 @@
 "title": "Efektywne renderowanie obszaru wydruku programu Excel przy użyciu GroupDocs.Viewer dla platformy .NET"
 "url": "/pl/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Efektywne renderowanie obszaru wydruku programu Excel przy użyciu GroupDocs.Viewer dla platformy .NET
 
 ## Wstęp

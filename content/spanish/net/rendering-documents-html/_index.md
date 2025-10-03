@@ -5,8 +5,8 @@
 "title": "Representación de documentos en HTML"
 "url": "/es/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Representación de documentos en HTML
 
 

@@ -4,8 +4,8 @@
 "title": "कुशल रेंडरिंग के लिए GroupDocs.Viewer .NET का उपयोग करके CAD ड्रॉइंग को टाइल्स में कैसे विभाजित करें"
 "url": "/hi/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ CAD ड्रॉइंग को टाइल्स में कैसे विभाजित करें
 
 ## परिचय

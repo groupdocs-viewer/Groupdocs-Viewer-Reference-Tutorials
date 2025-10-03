@@ -4,8 +4,8 @@
 "title": "Så här renderar du FODP-dokument med GroupDocs.Viewer .NET &#58; En omfattande guide"
 "url": "/sv/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här renderar du FODP-dokument med GroupDocs.Viewer .NET: En omfattande guide
 
 ## Introduktion

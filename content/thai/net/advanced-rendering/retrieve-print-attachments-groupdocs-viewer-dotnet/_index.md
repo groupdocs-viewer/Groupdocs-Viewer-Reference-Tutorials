@@ -4,8 +4,8 @@
 "title": "วิธีการดึงข้อมูลและพิมพ์เอกสารแนบโดยใช้ GroupDocs.Viewer สำหรับ .NET | คู่มือการเรนเดอร์ขั้นสูง"
 "url": "/th/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการดึงข้อมูลและพิมพ์เอกสารแนบโดยใช้ GroupDocs.Viewer สำหรับ .NET | คู่มือการเรนเดอร์ขั้นสูง
 
 ## การแนะนำ

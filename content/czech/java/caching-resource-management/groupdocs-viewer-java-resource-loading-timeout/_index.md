@@ -4,8 +4,8 @@
 "title": "Nastavení časového limitu načítání zdrojů v GroupDocs.Viewer pro Javu – vylepšení výkonu dokumentů"
 "url": "/cs/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Nastavení časového limitu pro načítání zdrojů v GroupDocs.Viewer pro Javu: Zlepšení efektivity vykreslování dokumentů
 
 ## Zavedení

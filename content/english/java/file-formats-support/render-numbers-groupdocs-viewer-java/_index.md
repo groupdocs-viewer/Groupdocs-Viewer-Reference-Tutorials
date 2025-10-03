@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - render Apple Numbers documents
 - convert Numbers to HTML, JPG, PNG, PDF
-
+type: docs
 ---
-
-
 # How to Render Apple Numbers Documents with GroupDocs.Viewer for Java
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสารข้อความใน Shift_JIS โดยใช้ GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์เอกสารข้อความใน Shift_JIS โดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

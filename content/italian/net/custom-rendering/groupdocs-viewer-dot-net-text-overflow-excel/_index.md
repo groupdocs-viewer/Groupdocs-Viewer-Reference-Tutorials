@@ -4,8 +4,8 @@
 "title": "Nascondere il testo in eccesso in Excel utilizzando GroupDocs.Viewer .NET - Una guida completa"
 "url": "/it/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Nascondi il testo in eccesso in Excel con GroupDocs.Viewer .NET
 
 ## Introduzione

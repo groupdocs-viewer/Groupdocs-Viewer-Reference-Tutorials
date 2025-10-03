@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용하여 문서 첨부 파일을 검색하고 저장하는 방법&#58; 종합 가이드"
 "url": "/ko/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 문서 첨부 파일을 검색하고 저장하는 방법: 포괄적인 가이드
 
 ## 소개

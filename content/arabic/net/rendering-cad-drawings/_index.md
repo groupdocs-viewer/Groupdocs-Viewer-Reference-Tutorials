@@ -5,8 +5,8 @@
 "title": "تقديم رسومات CAD"
 "url": "/ar/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # تقديم رسومات CAD
 
 

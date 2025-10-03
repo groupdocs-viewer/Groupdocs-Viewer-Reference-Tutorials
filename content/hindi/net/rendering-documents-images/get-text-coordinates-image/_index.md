@@ -5,8 +5,8 @@
 "title": "छवि रेंडरिंग के लिए पाठ निर्देशांक प्राप्त करें"
 "url": "/hi/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # छवि रेंडरिंग के लिए पाठ निर्देशांक प्राप्त करें
 
 ## परिचय

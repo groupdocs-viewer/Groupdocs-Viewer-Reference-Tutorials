@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java'da Dosya Türü Algılamada Ustalaşma"
 "url": "/tr/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java'da Dosya Türü Algılamada Ustalaşma
 
 Gücünü keşfedin **GrupDokümanları.Görüntüleyici** dosya türlerini uzantılardan, medya türlerinden ve akışlardan sorunsuz bir şekilde tanımlamak için. Bu sağlam kütüphane geliştirme süreçlerini basitleştirir ve uygulama yeteneklerini geliştirir.

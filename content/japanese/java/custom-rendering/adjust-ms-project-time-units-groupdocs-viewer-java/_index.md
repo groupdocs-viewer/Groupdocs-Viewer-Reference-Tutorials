@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java を使用して MS Project の時間単位を調整する方法 - ステップバイステップガイド"
 "url": "/ja/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java を使用して MS Project の時間単位を調整する方法: ステップバイステップガイド
 ## 導入
 MS ProjectのドキュメントをHTML形式に変換する前に、手動で時間単位を調整するのにうんざりしていませんか？特に大規模なプロジェクトでは、この作業は面倒で、間違いが発生しやすくなります。 **GroupDocs.Viewer（Java用）**、時間単位の設定をプログラムで簡単に調整できるため、正確性と効率性が確保されます。

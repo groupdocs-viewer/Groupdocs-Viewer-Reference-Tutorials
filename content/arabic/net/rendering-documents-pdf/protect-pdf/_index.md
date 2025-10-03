@@ -5,8 +5,8 @@
 "title": "حماية ملف PDF المُعالج بكلمة مرور"
 "url": "/ar/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # حماية ملف PDF المُعالج بكلمة مرور
 
 ## مقدمة

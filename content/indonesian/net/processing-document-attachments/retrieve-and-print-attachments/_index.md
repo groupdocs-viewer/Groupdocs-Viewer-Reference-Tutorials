@@ -5,8 +5,8 @@
 "title": "Ambil dan Cetak Lampiran Dokumen"
 "url": "/id/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Ambil dan Cetak Lampiran Dokumen
 
 ## Perkenalan

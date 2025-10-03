@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - MS Project time units adjustment
 - render MS Project files
-
+type: docs
 ---
-
-
 # How to Adjust MS Project Time Units Using GroupDocs.Viewer Java: A Step-by-Step Guide
 ## Introduction
 Are you tired of manually adjusting time units in your MS Project documents before rendering them into HTML format? The process can be tedious and prone to errors, especially when dealing with large projects. With **GroupDocs.Viewer for Java**, you can easily adjust the time unit settings programmatically, ensuring accuracy and efficiency.

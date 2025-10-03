@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 .NET에서 TGA 파일을 렌더링하는 방법 - 포괄적인 가이드"
 "url": "/ko/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 .NET에서 TGA 파일을 렌더링하는 방법: 포괄적인 가이드
 
 ## 소개

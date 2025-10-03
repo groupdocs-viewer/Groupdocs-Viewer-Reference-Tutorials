@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58; Özel Dosya Adlarının Arşivlerin PDF Olarak İşlenmesinde Ustalaşması"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java'da Ustalaşma: Arşivleri PDF'ye İşlerken Özel Dosya Adlarını Belirleme
 
 ## giriiş

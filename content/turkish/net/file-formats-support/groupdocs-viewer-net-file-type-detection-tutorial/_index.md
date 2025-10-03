@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanarak Dosya Türlerini Nasıl Algılarsınız? Kapsamlı Bir Eğitim"
 "url": "/tr/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET Kullanılarak Dosya Türleri Nasıl Algılanır: Kapsamlı Bir Eğitim
 
 ## giriiş

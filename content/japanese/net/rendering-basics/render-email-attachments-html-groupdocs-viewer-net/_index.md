@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用してメールの添付ファイルを HTML に変換する"
 "url": "/ja/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用してメールの添付ファイルを HTML でレンダリングする方法
 ## 導入
 メールの添付ファイルを、見やすいHTML形式に変換する効率的な方法をお探しですか？ドキュメントのアクセシビリティ向上やコンテンツ共有の簡素化など、添付ファイルのレンダリングは効果的なデジタル文書管理に不可欠です。このガイドでは、 **.NET 用 GroupDocs.Viewer** これを簡単に達成できます。

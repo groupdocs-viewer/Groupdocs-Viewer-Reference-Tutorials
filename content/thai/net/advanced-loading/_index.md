@@ -5,8 +5,8 @@
 "title": "ตัวเลือกการโหลดขั้นสูง"
 "url": "/th/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # ตัวเลือกการโหลดขั้นสูง
 
 ## การแนะนำ

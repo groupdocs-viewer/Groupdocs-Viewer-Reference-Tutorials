@@ -5,8 +5,8 @@
 "title": "Renderuj N kolejnych stron"
 "url": "/pl/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Renderuj N kolejnych stron
 
 ## Wstęp

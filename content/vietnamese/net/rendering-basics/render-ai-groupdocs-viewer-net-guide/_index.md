@@ -4,8 +4,8 @@
 "title": "Hướng dẫn toàn diện về cách kết xuất tệp AI bằng GroupDocs.Viewer .NET dành cho nhà phát triển"
 "url": "/vi/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Hướng dẫn toàn diện về cách kết xuất tệp AI bằng GroupDocs.Viewer .NET dành cho nhà phát triển
 
 ## Giới thiệu

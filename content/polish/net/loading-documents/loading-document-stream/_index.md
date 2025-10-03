@@ -5,8 +5,8 @@
 "title": "Załaduj dokumenty ze strumienia"
 "url": "/pl/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Załaduj dokumenty ze strumienia
 
 ## Wstęp

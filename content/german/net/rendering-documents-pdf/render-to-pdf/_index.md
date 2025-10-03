@@ -5,8 +5,8 @@
 "title": "Dokument als PDF rendern"
 "url": "/de/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Dokument als PDF rendern
 
 ## Einführung

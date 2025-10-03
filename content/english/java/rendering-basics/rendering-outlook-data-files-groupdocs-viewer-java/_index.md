@@ -8,10 +8,8 @@ keywords:
 - render Outlook data files Java
 - GroupDocs Viewer Java setup
 - Outlook PST OST rendering
-
+type: docs
 ---
-
-
 # How to Render Outlook Data Files Using GroupDocs.Viewer in Java: A Step-by-Step Guide
 
 ## Introduction

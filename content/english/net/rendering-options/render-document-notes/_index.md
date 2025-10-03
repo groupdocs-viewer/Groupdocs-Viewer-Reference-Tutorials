@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "document-rendering", "dotnet", "csharp", "pdf-notes"]
+type: docs
 ---
-
 # How to Render Documents with Notes in .NET
 
 ## Introduction

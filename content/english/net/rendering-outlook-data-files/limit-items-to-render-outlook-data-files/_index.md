@@ -8,8 +8,8 @@ keywords:
   - groupdocs.viewer for .net
   - .net outlook rendering
   - render ost files .net
+type: docs
 ---
-
 ## Introduction
 
 **GroupDocs.Viewer for .NET** is a powerful tool for developers looking to integrate document viewing capabilities into their .NET applications seamlessly. Whether you need to display PDFs, Microsoft Office documents, or Outlook data files, GroupDocs.Viewer offers a robust solution. In this tutorial, we will delve into how to limit the number of items rendered specifically in Outlook data files, using step-by-step instructions.

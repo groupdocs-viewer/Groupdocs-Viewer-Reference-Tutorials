@@ -4,8 +4,8 @@
 "title": "كيفية ضبط تجاوز النص في جداول بيانات Excel باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # كيفية ضبط تجاوز النص في جداول بيانات Excel باستخدام GroupDocs.Viewer لـ Java
 ## مقدمة
 يعد التعامل مع النصوص الزائدة في خلايا جدول البيانات عند تحويل المستندات إلى HTML تحديًا شائعًا، وخاصة بالنسبة لملفات Excel الضخمة. **GroupDocs.Viewer لـ Java** يُبسط هذه العملية، مما يسمح لك بإدارة النص الزائد وإخفائه بكفاءة.

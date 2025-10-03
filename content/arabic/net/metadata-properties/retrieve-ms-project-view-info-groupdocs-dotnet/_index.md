@@ -4,8 +4,8 @@
 "title": "استرجاع معلومات عرض MS Project باستخدام GroupDocs.Viewer .NET | البيانات الوصفية والخصائص"
 "url": "/ar/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # استرداد معلومات عرض MS Project باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

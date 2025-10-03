@@ -5,8 +5,8 @@
 "title": "Hiển thị các trang ẩn"
 "url": "/vi/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Hiển thị các trang ẩn
 
 ## Giới thiệu

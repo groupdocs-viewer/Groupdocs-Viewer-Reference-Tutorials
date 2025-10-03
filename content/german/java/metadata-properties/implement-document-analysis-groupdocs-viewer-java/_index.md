@@ -4,8 +4,8 @@
 "title": "Implementierung der Dokumentanalyse mit GroupDocs.Viewer für Java&#58; Extrahieren von Seitenmetadaten und Textzeilen"
 "url": "/de/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Implementierung der Dokumentanalyse mit GroupDocs.Viewer für Java: Extrahieren von Seitenmetadaten und Textzeilen
 
 ## Einführung

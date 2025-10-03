@@ -4,8 +4,8 @@
 "title": "Vykreslení skrytých řádků a sloupců v tabulkách Java pomocí GroupDocs.Viewer"
 "url": "/cs/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení skrytých řádků a sloupců v tabulkách Java pomocí GroupDocs.Viewer
 
 ## Zavedení

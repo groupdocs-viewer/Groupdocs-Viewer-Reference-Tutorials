@@ -5,8 +5,8 @@
 "title": "Rendern Sie N aufeinanderfolgende Seiten"
 "url": "/de/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Rendern Sie N aufeinanderfolgende Seiten
 
 ## Einführung

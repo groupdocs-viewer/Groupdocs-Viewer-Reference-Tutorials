@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET® – Fájlok letöltése és HTML dokumentumok renderelése könnyedén"
 "url": "/hu/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET elsajátítása: Könnyed fájlletöltés és dokumentumrenderelés
 
 ## Bevezetés

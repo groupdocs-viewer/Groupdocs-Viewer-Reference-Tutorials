@@ -4,8 +4,8 @@
 "title": "Renderice documentos de MS Project con GroupDocs.Viewer .NET para una mejor gestión de proyectos"
 "url": "/es/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Master en la representación de documentos de MS Project con GroupDocs.Viewer .NET
 
 ## Introducción

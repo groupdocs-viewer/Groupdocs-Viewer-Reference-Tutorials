@@ -4,8 +4,8 @@
 "title": "Konversi Arsip ke HTML dengan GroupDocs.Viewer Java&#58; Panduan Lengkap"
 "url": "/id/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # Konversi Arsip ke HTML dengan GroupDocs.Viewer Java: Panduan Lengkap
 
 ## Perkenalan

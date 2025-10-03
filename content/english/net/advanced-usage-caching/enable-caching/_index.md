@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Performance Optimization"]
 tags: ["caching", "performance", "document-processing", "groupdocs-viewer"]
+type: docs
 ---
-
 # GroupDocs.Viewer Caching Tutorial - Boost Document Processing Speed by 300%
 
 ## Introduction

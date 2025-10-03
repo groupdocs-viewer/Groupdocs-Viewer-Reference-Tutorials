@@ -4,8 +4,8 @@
 "title": "So rendern Sie Gitternetzlinien in Java-Tabellen mit GroupDocs.Viewer"
 "url": "/de/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # So rendern Sie Gitternetzlinien in Java-Tabellen mit GroupDocs.Viewer
 
 ## Einführung

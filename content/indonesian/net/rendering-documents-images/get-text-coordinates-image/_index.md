@@ -5,8 +5,8 @@
 "title": "Dapatkan Koordinat Teks untuk Rendering Gambar"
 "url": "/id/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Dapatkan Koordinat Teks untuk Rendering Gambar
 
 ## Perkenalan

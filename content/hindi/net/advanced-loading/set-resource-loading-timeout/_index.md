@@ -5,8 +5,8 @@
 "title": "संसाधन लोडिंग टाइमआउट सेट करें (उन्नत)"
 "url": "/hi/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # संसाधन लोडिंग टाइमआउट सेट करें (उन्नत)
 
 ## परिचय

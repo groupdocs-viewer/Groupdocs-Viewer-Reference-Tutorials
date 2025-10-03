@@ -4,8 +4,8 @@
 "title": "تحسين عرض البريد الإلكتروني إلى PDF في Java باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer للحصول على أداء أفضل"
 "url": "/ar/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # تحسين عرض البريد الإلكتروني إلى PDF في Java باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer
 
 ## مقدمة

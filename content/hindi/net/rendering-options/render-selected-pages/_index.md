@@ -5,8 +5,8 @@
 "title": "चयनित पृष्ठ प्रस्तुत करें"
 "url": "/hi/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # चयनित पृष्ठ प्रस्तुत करें
 
 ## परिचय

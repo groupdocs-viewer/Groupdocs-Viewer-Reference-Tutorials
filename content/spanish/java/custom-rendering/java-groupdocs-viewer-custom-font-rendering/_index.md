@@ -4,8 +4,8 @@
 "title": "Cómo implementar la representación de fuentes personalizadas en Java con GroupDocs.Viewer&#58; una guía paso a paso"
 "url": "/es/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cómo implementar la representación de fuentes personalizadas en Java con GroupDocs.Viewer: una guía paso a paso
 
 ## Introducción

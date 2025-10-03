@@ -4,8 +4,8 @@
 "title": "Dela upp Excel-ark efter rader och kolumner med GroupDocs.Viewer i Java – en omfattande guide"
 "url": "/sv/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Dela upp Excel-ark efter rader och kolumner med GroupDocs.Viewer i Java
 
 ## Introduktion

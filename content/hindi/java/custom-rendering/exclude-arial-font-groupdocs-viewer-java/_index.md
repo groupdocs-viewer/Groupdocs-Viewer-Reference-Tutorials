@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java के साथ HTML रेंडरिंग में एरियल फ़ॉन्ट को कैसे बाहर निकालें एक चरण-दर-चरण गाइड"
 "url": "/hi/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java का उपयोग करके HTML में दस्तावेज़ों को रेंडर करते समय एरियल फ़ॉन्ट को कैसे बाहर रखें
 
 ## परिचय

@@ -5,8 +5,8 @@
 "title": "停用 PDF 中的字型許可證驗證"
 "url": "/zh-hant/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # 停用 PDF 中的字型許可證驗證
 
 ## 介紹

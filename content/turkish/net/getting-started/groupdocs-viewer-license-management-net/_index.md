@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET&#58;da Lisans Yönetiminde Ustalaşma Kapsamlı Bir Kılavuz"
 "url": "/tr/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET'te Lisans Yönetiminde Uzmanlaşma
 ## Kapsamlı Bir Rehber
 

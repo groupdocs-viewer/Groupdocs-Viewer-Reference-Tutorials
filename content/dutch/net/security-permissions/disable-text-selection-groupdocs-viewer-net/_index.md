@@ -4,8 +4,8 @@
 "title": "Tekstselectie in PDF's uitschakelen met GroupDocs.Viewer .NET voor verbeterde beveiliging"
 "url": "/nl/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u GroupDocs.Viewer .NET kunt gebruiken om tekstselectie uit te schakelen bij het renderen van PDF's als HTML
 
 ## Invoering

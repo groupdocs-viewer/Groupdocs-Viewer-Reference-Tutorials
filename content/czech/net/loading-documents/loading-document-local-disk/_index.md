@@ -5,8 +5,8 @@
 "title": "Načítání dokumentů z lokálního disku"
 "url": "/cs/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Načítání dokumentů z lokálního disku
 
 ## Zavedení

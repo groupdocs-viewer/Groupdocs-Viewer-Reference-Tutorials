@@ -5,8 +5,8 @@
 "title": "Dokumente von der lokalen Festplatte laden"
 "url": "/de/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Dokumente von der lokalen Festplatte laden
 
 ## Einführung

@@ -5,8 +5,8 @@
 "title": "CMXイメージのレンダリング"
 "url": "/ja/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # CMXイメージのレンダリング
 
 ## 導入

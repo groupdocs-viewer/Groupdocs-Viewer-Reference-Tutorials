@@ -4,8 +4,8 @@
 "title": "Comment récupérer et imprimer des pièces jointes à un document avec GroupDocs.Viewer pour .NET | Guide de rendu avancé"
 "url": "/fr/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Comment récupérer et imprimer des pièces jointes à un document avec GroupDocs.Viewer pour .NET | Guide de rendu avancé
 
 ## Introduction

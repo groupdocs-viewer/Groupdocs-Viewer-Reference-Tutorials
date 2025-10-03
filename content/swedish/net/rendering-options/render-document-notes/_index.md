@@ -5,8 +5,8 @@
 "title": "Rendera dokument med anteckningar"
 "url": "/sv/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Rendera dokument med anteckningar
 
 ## Introduktion

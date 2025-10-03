@@ -4,8 +4,8 @@
 "title": "Υλοποίηση Ελέγχων Ανίχνευσης και Κρυπτογράφησης Αρχείων σε Java με το GroupDocs.Viewer"
 "url": "/el/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση Ελέγχων Ανίχνευσης και Κρυπτογράφησης Αρχείων με Χρήση του GroupDocs.Viewer για Java
 
 ## Εισαγωγή

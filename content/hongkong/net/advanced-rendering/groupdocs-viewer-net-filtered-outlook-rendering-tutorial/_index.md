@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 篩選 Outlook 資料呈現－綜合指南"
 "url": "/zh-hant/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 篩選 Outlook 資料呈現：綜合指南
 ## 介紹
 您是否在套用特定篩選器（例如郵件內容和寄件者）的同時，難以有效率地呈現 Outlook 資料檔 (.ost)？許多開發人員需要一個精簡的解決方案，以便根據精確的條件查看 Outlook 郵件。在本指南中，我們將探討如何使用 GroupDocs.Viewer for .NET（一個功能強大的函式庫，可簡化文件處理）實作 Outlook 資料的篩選呈現。

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58;yı Kullanarak PDF'lerde Metin Seçimi Nasıl Devre Dışı Bırakılır? Kapsamlı Bir Kılavuz"
 "url": "/tr/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java ile PDF Oluşturmada Metin Seçimini Devre Dışı Bırakma Nasıl Uygulanır
 ## giriiş
 Web'de metin seçimine izin vermeden PDF'leri görüntülemek için güvenli bir yola mı ihtiyacınız var? Bu kapsamlı kılavuz, GroupDocs.Viewer for Java kütüphanesini kullanarak metin seçimini nasıl devre dışı bırakacağınızı gösterir. Metni görsellere dönüştürerek, içeriğiniz çevrimiçi görüntülendiğinde güvenli ve düzenlenemez kalır.

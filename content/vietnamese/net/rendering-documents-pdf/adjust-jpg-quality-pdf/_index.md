@@ -5,8 +5,8 @@
 "title": "Điều chỉnh chất lượng hình ảnh JPG trong PDF đã kết xuất"
 "url": "/vi/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Điều chỉnh chất lượng hình ảnh JPG trong PDF đã kết xuất
 
 ## Giới thiệu

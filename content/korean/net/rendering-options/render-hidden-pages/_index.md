@@ -5,8 +5,8 @@
 "title": "숨겨진 페이지 렌더링"
 "url": "/ko/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # 숨겨진 페이지 렌더링
 
 ## 소개

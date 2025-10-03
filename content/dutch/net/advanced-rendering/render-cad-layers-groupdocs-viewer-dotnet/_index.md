@@ -4,8 +4,8 @@
 "title": "Hoe u specifieke CAD-lagen kunt renderen met GroupDocs.Viewer voor .NET&#58; een uitgebreide handleiding"
 "url": "/nl/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Specifieke CAD-tekeninglagen renderen met GroupDocs.Viewer voor .NET
 
 ## Invoering

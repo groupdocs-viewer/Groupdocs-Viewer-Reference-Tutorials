@@ -5,8 +5,8 @@
 "title": "문서의 페이지 순서 변경"
 "url": "/ko/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # 문서의 페이지 순서 변경
 
 ## 소개

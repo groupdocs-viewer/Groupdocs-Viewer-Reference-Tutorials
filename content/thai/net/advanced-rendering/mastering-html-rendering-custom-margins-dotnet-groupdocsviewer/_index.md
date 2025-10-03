@@ -4,8 +4,8 @@
 "title": "เชี่ยวชาญการเรนเดอร์ HTML ด้วยระยะขอบที่กำหนดเองใน .NET โดยใช้ GroupDocs.Viewer"
 "url": "/th/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # เรียนรู้การเรนเดอร์ HTML ด้วยระยะขอบที่ผู้ใช้กำหนดใน .NET โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

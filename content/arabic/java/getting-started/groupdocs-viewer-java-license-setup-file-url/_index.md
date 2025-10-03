@@ -4,8 +4,8 @@
 "title": "كيفية تعيين ترخيص Java لـ GroupDocs.Viewer - دليل الملف المحلي أو عنوان URL"
 "url": "/ar/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تعيين ترخيص Java لـ GroupDocs.Viewer: ملف محلي أو عنوان URL
 
 أطلق العنان لإمكانات GroupDocs.Viewer الكاملة لتطبيقات Java لديك من خلال إعداد ترخيصك إما من ملف محلي أو من مصدر إلكتروني. سيساعدك هذا الدليل الشامل على تطبيق كلتا الطريقتين بكفاءة، مما يضمن لك الوصول إلى جميع ميزات أداة عرض المستندات القوية هذه.

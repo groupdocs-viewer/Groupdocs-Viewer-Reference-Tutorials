@@ -5,8 +5,8 @@
 "title": "Rendera lager i CAD-ritningar"
 "url": "/sv/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Rendera lager i CAD-ritningar
 
 ## Introduktion

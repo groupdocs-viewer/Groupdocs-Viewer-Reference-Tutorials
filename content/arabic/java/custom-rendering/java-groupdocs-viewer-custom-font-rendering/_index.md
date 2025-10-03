@@ -4,8 +4,8 @@
 "title": "كيفية تنفيذ عرض الخطوط المخصصة في جافا باستخدام GroupDocs.Viewer - دليل خطوة بخطوة"
 "url": "/ar/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تنفيذ عرض الخطوط المخصصة في Java باستخدام GroupDocs.Viewer: دليل خطوة بخطوة
 
 ## مقدمة

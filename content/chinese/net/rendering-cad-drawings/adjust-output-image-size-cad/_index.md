@@ -5,8 +5,8 @@
 "title": "调整 CAD 绘图的输出图像大小"
 "url": "/zh/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # 调整 CAD 绘图的输出图像大小
 
 ## 介绍

@@ -4,8 +4,8 @@
 "title": "Jak vykreslit dokumenty chráněné heslem pomocí GroupDocs.Viewer .NET"
 "url": "/cs/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování dokumentů chráněných heslem pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Hücrelerdeki Metin Taşmasını Ayarla"
 "url": "/tr/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Hücrelerdeki Metin Taşmasını Ayarla
 
 ## giriiş

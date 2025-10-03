@@ -3,8 +3,8 @@
 "title": "Handledningar för extraktion av dokumentmetadata för GroupDocs.Viewer Java"
 "url": "/sv/java/metadata-properties/"
 "weight": 14
+type: docs
 ---
-
 # Handledningar för extraktion av dokumentmetadata för GroupDocs.Viewer Java
 
 Lär dig arbeta med dokumentmetadata och egenskaper med våra GroupDocs.Viewer Java-handledningar. Dessa praktiska guider visar hur man extraherar dokumentinformation, läser metadatafält, hanterar dokumentegenskaper och implementerar metadatabaserad dokumentbehandling. Varje handledning innehåller fungerande Java-kodexempel för vanliga metadatascenarier, vilket hjälper dig att bygga applikationer som effektivt kan analysera och hantera dokumentinformation.

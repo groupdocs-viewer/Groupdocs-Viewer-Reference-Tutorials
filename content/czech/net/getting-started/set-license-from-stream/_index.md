@@ -5,8 +5,8 @@
 "title": "Nastavení licence ze streamu"
 "url": "/cs/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Nastavení licence ze streamu
 
 ## Zavedení

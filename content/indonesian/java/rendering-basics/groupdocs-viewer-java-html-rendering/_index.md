@@ -4,8 +4,8 @@
 "title": "Cara Memuat dan Merender Dokumen sebagai HTML menggunakan GroupDocs.Viewer untuk Java"
 "url": "/id/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cara Memuat dan Merender Dokumen sebagai HTML Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

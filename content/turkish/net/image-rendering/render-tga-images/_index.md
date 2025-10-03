@@ -5,8 +5,8 @@
 "title": "TGA Görüntülerini Oluştur"
 "url": "/tr/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # TGA Görüntülerini Oluştur
 
 ## giriiş

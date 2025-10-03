@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 渲染 AI 文件——综合指南"
 "url": "/zh/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 渲染 AI 文件：综合指南
 
 ## 介绍

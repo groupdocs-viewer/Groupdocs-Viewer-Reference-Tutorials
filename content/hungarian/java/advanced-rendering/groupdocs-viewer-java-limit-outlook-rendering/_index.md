@@ -4,8 +4,8 @@
 "title": "Az Outlook-elemek megjelenítésének korlátozása Java-ban a GroupDocs.Viewer használatával – Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Outlook-elemek megjelenítésének korlátozása Java-ban a GroupDocs.Viewer használatával
 
 ## Áttekintés

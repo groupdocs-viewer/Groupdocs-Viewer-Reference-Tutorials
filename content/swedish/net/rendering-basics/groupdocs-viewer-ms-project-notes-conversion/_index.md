@@ -4,8 +4,8 @@
 "title": "Effektiv rendering av MS Project-filer med anteckningar med GroupDocs.Viewer för .NET"
 "url": "/sv/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Effektiv rendering av MS Project-filer med anteckningar med GroupDocs.Viewer för .NET
 
 ## Introduktion

@@ -4,8 +4,8 @@
 "title": "تنفيذ عرض HTML المتجاوب مع .NET باستخدام GroupDocs.Viewer - دليل شامل للمطورين"
 "url": "/ar/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # تنفيذ عرض HTML المتجاوب مع .NET باستخدام GroupDocs.Viewer: دليل المطور
 
 ## مقدمة

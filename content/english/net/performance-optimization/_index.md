@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Performance"]
 tags: ["groupdocs-viewer", "performance", "optimization", "dotnet"]
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Performance Optimization - Complete Developer Guide
 
 Are you struggling with slow document rendering or memory issues in your .NET applications? You're not alone. Many developers face performance challenges when working with GroupDocs.Viewer, especially when dealing with large documents or high-volume processing scenarios.

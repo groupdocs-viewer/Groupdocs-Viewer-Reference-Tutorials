@@ -8,10 +8,8 @@ keywords:
 - render text documents Shift_JIS
 - GroupDocs Viewer Java setup
 - Shift_JIS encoding in Java
-
+type: docs
 ---
-
-
 # Render Text Documents in Shift_JIS Using GroupDocs.Viewer for Java
 
 ## Introduction

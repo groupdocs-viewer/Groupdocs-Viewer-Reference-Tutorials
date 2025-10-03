@@ -5,8 +5,8 @@
 "title": "Satır ve Sütun Başlıklarını Oluştur"
 "url": "/tr/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Satır ve Sütun Başlıklarını Oluştur
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中將文件渲染為帶有文字圖層的圖像"
 "url": "/zh-hant/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 Java 中將文件渲染為帶有文字圖層的圖像
 ## 進階渲染教學
 **目前 SEO URL**：/使用文字圖層 java 將文件渲染為圖像

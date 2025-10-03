@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer для Java&#58; Извлечение и печать вложений документов"
 "url": "/ru/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer для Java: извлечение и печать вложений документов
 
 ## Введение

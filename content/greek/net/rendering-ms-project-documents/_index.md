@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφων του Microsoft Project"
 "url": "/el/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Απόδοση εγγράφων του Microsoft Project
 
 ## Εισαγωγή

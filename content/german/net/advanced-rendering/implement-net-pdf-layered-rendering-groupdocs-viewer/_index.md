@@ -4,8 +4,8 @@
 "title": "Meistern Sie das .NET PDF-Layer-Rendering mit GroupDocs.Viewer – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Meistern Sie das .NET PDF-Layer-Rendering mit GroupDocs.Viewer: Eine Schritt-für-Schritt-Anleitung
 
 ## Einführung

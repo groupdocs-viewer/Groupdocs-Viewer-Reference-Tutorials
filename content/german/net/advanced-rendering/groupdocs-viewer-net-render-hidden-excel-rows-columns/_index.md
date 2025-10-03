@@ -4,8 +4,8 @@
 "title": "Rendern Sie versteckte Zeilen und Spalten in Excel-Dateien mit GroupDocs.Viewer für .NET – Erweiterte Anleitung"
 "url": "/de/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Rendern Sie versteckte Zeilen und Spalten in Excel-Dateien mit GroupDocs.Viewer für .NET
 
 ## Einführung

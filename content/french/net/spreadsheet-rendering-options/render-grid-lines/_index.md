@@ -5,8 +5,8 @@
 "title": "Rendu des lignes de la grille"
 "url": "/fr/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Rendu des lignes de la grille
 
 ## Introduction

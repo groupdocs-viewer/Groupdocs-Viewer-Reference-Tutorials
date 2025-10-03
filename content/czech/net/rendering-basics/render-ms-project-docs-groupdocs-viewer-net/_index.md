@@ -4,8 +4,8 @@
 "title": "Vykreslování dokumentů MS Project pomocí GroupDocs.Viewer .NET pro vylepšenou správu projektů"
 "url": "/cs/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování hlavních dokumentů MS Project pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

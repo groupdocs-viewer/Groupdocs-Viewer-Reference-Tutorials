@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 开发人员入门教程"
 "url": "/zh/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java 开发人员入门教程
 
 从这些 GroupDocs.Viewer 的入门教程开始您的旅程，这些教程将指导您完成安装、许可配置以及如何使用 Java 创建您的第一个文档查看器。我们面向初学者的指南演示了如何设置开发环境、初始化 GroupDocs.Viewer 库以及执行基本的文档渲染操作。遵循这些教程，您可以快速掌握基础知识，并为在 Java 应用程序中执行更高级的文档查看任务做好准备。

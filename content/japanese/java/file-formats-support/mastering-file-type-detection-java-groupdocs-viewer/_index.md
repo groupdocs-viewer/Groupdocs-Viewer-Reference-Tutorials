@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でファイル タイプ検出をマスターする"
 "url": "/ja/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java でファイル タイプ検出をマスターする
 
 の力を発見 **GroupDocs.Viewer** 拡張子、メディアタイプ、ストリームからファイルの種類をシームレスに識別します。この堅牢なライブラリは、開発プロセスを簡素化し、アプリケーションの機能を強化します。

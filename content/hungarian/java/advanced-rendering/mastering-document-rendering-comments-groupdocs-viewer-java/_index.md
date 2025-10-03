@@ -4,8 +4,8 @@
 "title": "Hogyan jelenítsünk meg dokumentumokat megjegyzésekkel Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan jelenítsünk meg dokumentumokat megjegyzésekkel Java-ban a GroupDocs.Viewer használatával
 ## Bevezetés
 Nehezen tud dokumentumokat HTML-be konvertálni a megjegyzések megőrzése mellett? Ez az útmutató végigvezet a dokumentumok megjegyzésekkel való renderelésének folyamatán a hatékony Java GroupDocs.Viewer könyvtár használatával. Akár zökkenőmentesen kezeli a dokumentumokat, akár fejleszti Java-ismereteit, ez az oktatóanyag Önnek szól.

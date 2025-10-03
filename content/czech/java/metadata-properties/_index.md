@@ -3,8 +3,8 @@
 "title": "Výukové programy pro extrakci metadat dokumentů pro GroupDocs.Viewer v Javě"
 "url": "/cs/java/metadata-properties/"
 "weight": 14
+type: docs
 ---
-
 # Výukové programy pro extrakci metadat dokumentů pro GroupDocs.Viewer v Javě
 
 Naučte se pracovat s metadaty a vlastnostmi dokumentů v našich tutoriálech pro GroupDocs.Viewer v Javě. Tyto praktické průvodce ukazují, jak extrahovat informace z dokumentů, číst pole metadat, spravovat vlastnosti dokumentů a implementovat zpracování dokumentů založené na metadatech. Každý tutoriál obsahuje funkční příklady kódu Java pro běžné scénáře metadat, které vám pomohou vytvářet aplikace, jež dokáží efektivně analyzovat a spravovat informace o dokumentech.

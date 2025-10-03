@@ -4,8 +4,8 @@
 "title": "Render các lớp CAD cụ thể trong Java bằng GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất các lớp CAD cụ thể trong Java bằng GroupDocs.Viewer
 ## Giới thiệu
 Bạn đang gặp khó khăn khi kết xuất các lớp cụ thể từ bản vẽ CAD? Cho dù bạn là kỹ sư, kiến trúc sư hay nhà phát triển xử lý các thiết kế phức tạp, việc quản lý và trực quan hóa các lớp CAD cụ thể có thể là một thách thức. Hướng dẫn này trình bày cách kết xuất các lớp cụ thể một cách hiệu quả bằng cách sử dụng GroupDocs.Viewer mạnh mẽ cho Java.

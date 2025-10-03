@@ -5,8 +5,8 @@
 "title": "キャッシュを有効にしてドキュメント処理を高速化する"
 "url": "/ja/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # キャッシュを有効にしてドキュメント処理を高速化する
 
 ## 導入

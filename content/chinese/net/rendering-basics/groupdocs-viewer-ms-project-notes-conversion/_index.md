@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 高效呈现带有注释的 MS Project 文件"
 "url": "/zh/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 高效呈现带有注释的 MS Project 文件
 
 ## 介绍

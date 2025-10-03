@@ -4,8 +4,8 @@
 "title": "Podziel rysunki CAD na kafelki za pomocą GroupDocs.Viewer Java w celu wydajnego renderowania"
 "url": "/pl/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Podziel rysunki CAD na kafelki za pomocą GroupDocs.Viewer Java
 
 ## Wstęp

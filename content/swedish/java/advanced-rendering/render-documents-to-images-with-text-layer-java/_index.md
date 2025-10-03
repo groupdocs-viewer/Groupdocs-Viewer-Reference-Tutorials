@@ -4,8 +4,8 @@
 "title": "Rendera dokument som bilder med textlager i Java med GroupDocs.Viewer"
 "url": "/sv/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendera dokument som bilder med textlager i Java med GroupDocs.Viewer
 ## Avancerad renderingshandledning
 **Nuvarande SEO-URL**: /rendera-dokument-till-bilder-med-textlager-java

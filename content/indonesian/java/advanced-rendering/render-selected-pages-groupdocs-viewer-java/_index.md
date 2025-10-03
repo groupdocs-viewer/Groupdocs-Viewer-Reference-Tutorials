@@ -4,8 +4,8 @@
 "title": "Cara Merender Halaman Dokumen Terpilih Menggunakan GroupDocs.Viewer untuk Java"
 "url": "/id/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Halaman Tertentu dengan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

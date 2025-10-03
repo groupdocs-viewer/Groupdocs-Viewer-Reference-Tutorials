@@ -5,8 +5,8 @@
 "title": "Rendu de documents Visio"
 "url": "/fr/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Rendu de documents Visio
 
 ## Introduction

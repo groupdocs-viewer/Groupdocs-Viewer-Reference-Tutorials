@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Representa carpetas específicas de archivos ZIP a HTML"
 "url": "/es/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Tutorial: Implementación de GroupDocs.Viewer .NET para convertir carpetas específicas de archivos ZIP a HTML
 
 ## Introducción

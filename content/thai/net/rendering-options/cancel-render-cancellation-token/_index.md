@@ -5,8 +5,8 @@
 "title": "ยกเลิกการแสดงผลด้วยโทเค็นการยกเลิก"
 "url": "/th/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # ยกเลิกการแสดงผลด้วยโทเค็นการยกเลิก
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "Bijgehouden wijzigingen weergeven"
 "url": "/nl/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Bijgehouden wijzigingen weergeven
 
 ## Invoering

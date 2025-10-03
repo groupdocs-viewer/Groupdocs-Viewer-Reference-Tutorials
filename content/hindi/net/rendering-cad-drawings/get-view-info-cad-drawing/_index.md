@@ -5,8 +5,8 @@
 "title": "CAD चित्रों के लिए जानकारी देखें"
 "url": "/hi/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # CAD चित्रों के लिए जानकारी देखें
 
 ## परिचय

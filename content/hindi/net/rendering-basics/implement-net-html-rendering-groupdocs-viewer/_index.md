@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ .NET HTML रेंडरिंग को कैसे लागू करें - एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ .NET HTML रेंडरिंग को कैसे लागू करें: एक चरण-दर-चरण मार्गदर्शिका
 
 ## परिचय

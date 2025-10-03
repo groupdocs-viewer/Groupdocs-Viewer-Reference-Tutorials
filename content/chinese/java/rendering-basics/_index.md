@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文档渲染基础教程"
 "url": "/zh/java/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文档渲染基础教程
 
 通过我们详细的 GroupDocs.Viewer Java 教程掌握文档渲染技巧。这些分步指南演示了如何将文档转换并渲染为各种输出格式、控制渲染质量、管理页面级渲染以及实现跨格式文档可视化。每个教程都包含针对常见渲染场景的 Java 代码示例，帮助您构建能够将文档转换为多种演示格式的应用程序。

@@ -4,8 +4,8 @@
 "title": "Menyesuaikan Format Tanggal-Waktu dan Zona Waktu dalam Email dengan GroupDocs.Viewer .NET"
 "url": "/id/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Menyesuaikan Format Tanggal-Waktu dan Zona Waktu dalam Email dengan GroupDocs.Viewer .NET
 
 ## Perkenalan

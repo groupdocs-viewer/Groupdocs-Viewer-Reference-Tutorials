@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Gelişmiş İşleme Teknikleri ile CAD Görüntülerini Özelleştirin"
 "url": "/tr/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak CAD Görüntülerini Nasıl Oluşturur ve Özelleştirirsiniz
 
 ## giriiş

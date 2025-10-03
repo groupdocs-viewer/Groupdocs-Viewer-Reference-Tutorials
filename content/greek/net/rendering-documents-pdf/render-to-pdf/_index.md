@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφου σε PDF"
 "url": "/el/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Απόδοση εγγράφου σε PDF
 
 ## Εισαγωγή

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["caching", "performance", "resource-management", "tutorials"]
+type: docs
 ---
-
 # Java Document Caching Tutorial - Complete GroupDocs.Viewer Guide
 
 Looking to supercharge your Java application's document viewing performance? You're in the right place. Document rendering can be a real bottleneck (especially with large files), but with proper caching strategies, you can transform sluggish document viewers into lightning-fast experiences that your users will love.

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 優化電子表格渲染&#58;跳過空列"
 "url": "/zh-hant/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 優化電子表格渲染
 ## 如何使用 GroupDocs.Viewer .NET 跳過電子表格中空列的渲染
 ### 介紹

@@ -4,8 +4,8 @@
 "title": "Реализация обнаружения файлов и проверок шифрования в Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Реализация обнаружения файлов и проверок шифрования с использованием GroupDocs.Viewer для Java
 
 ## Введение

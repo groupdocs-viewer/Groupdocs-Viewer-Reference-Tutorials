@@ -5,8 +5,8 @@
 "title": "العرض مع النص المتراكب للعرض"
 "url": "/ar/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # العرض مع النص المتراكب للعرض
 
 ## مقدمة

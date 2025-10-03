@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer لـ Java - استرداد معلومات ورؤى عرض المستندات"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض المستندات باستخدام GroupDocs.Viewer لـ Java
 ## تقنيات العرض المتقدمة
 **رابط SEO:** عارض مستندات المجموعة - عروض مستندات جافا

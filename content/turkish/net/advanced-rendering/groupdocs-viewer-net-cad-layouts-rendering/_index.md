@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET ile Verimli CAD Düzeni Oluşturma&#58; Adım Adım Kılavuz"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET ile Verimli CAD Düzeni Oluşturma
 
 ## giriiş

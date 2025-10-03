@@ -5,8 +5,8 @@
 "title": "在 CAD 图纸中渲染单一布局"
 "url": "/zh/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # 在 CAD 图纸中渲染单一布局
 
 ## 介绍

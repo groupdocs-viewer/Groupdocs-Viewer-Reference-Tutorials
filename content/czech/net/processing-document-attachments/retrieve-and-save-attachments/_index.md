@@ -5,8 +5,8 @@
 "title": "Načtení a uložení příloh dokumentů"
 "url": "/cs/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Načtení a uložení příloh dokumentů
 
 ## Zavedení

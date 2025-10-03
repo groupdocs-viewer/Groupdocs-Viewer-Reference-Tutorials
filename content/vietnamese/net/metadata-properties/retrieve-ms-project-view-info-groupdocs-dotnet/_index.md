@@ -4,8 +4,8 @@
 "title": "Truy xuất thông tin MS Project View bằng GroupDocs.Viewer .NET | Siêu dữ liệu & Thuộc tính"
 "url": "/vi/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Truy xuất thông tin MS Project View bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

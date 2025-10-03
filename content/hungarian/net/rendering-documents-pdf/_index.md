@@ -5,8 +5,8 @@
 "title": "Dokumentumok PDF formátumba renderelése"
 "url": "/hu/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Dokumentumok PDF formátumba renderelése
 
 

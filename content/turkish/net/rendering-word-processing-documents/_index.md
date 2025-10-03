@@ -5,8 +5,8 @@
 "title": "Kelime İşleme Belgelerinin İşlenmesi"
 "url": "/tr/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Kelime İşleme Belgelerinin İşlenmesi
 
 

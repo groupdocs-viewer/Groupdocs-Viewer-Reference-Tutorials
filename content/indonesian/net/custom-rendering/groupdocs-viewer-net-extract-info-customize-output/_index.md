@@ -4,8 +4,8 @@
 "title": "Ekstrak Info Dokumen & Sesuaikan Output dengan GroupDocs.Viewer .NET&#58; Panduan Lengkap"
 "url": "/id/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Ekstrak Info Dokumen & Sesuaikan Output dengan GroupDocs.Viewer .NET
 ## Tutorial Rendering Kustom
 ### Apa yang Akan Anda Pelajari:

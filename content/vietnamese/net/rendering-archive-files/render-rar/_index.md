@@ -5,8 +5,8 @@
 "title": "Kết xuất Lưu trữ RAR"
 "url": "/vi/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Kết xuất Lưu trữ RAR
 
 ## Giới thiệu

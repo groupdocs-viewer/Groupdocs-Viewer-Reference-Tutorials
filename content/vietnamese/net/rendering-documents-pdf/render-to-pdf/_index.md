@@ -5,8 +5,8 @@
 "title": "Chuyển đổi tài liệu sang PDF"
 "url": "/vi/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Chuyển đổi tài liệu sang PDF
 
 ## Giới thiệu

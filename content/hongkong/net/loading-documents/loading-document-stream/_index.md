@@ -5,8 +5,8 @@
 "title": "從流程載入文檔"
 "url": "/zh-hant/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # 從流程載入文檔
 
 ## 介紹

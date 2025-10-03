@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 提取文档信息并自定义输出——综合指南"
 "url": "/zh/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 提取文档信息并自定义输出
 ## 自定义渲染教程
 ### 您将学到什么：

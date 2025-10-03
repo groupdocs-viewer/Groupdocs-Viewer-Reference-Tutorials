@@ -4,8 +4,8 @@
 "title": "จัดการการแสดงและการกรองข้อมูล Outlook ด้วย GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # จัดการการแสดงและการกรองข้อมูล Outlook ด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

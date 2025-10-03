@@ -5,8 +5,8 @@
 "title": "PDF-Rendering-Optionen"
 "url": "/de/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF-Rendering-Optionen
 
 

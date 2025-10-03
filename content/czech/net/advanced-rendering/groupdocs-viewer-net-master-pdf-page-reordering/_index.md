@@ -4,8 +4,8 @@
 "title": "Změna pořadí hlavních stránek PDF v .NET pomocí GroupDocs.Viewer – Průvodce pro vývojáře"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí změny pořadí stránek v PDF pomocí GroupDocs.Viewer .NET: Komplexní průvodce pro vývojáře
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Vykreslování filtrovaných dat Outlooku pomocí GroupDocs.Viewer pro .NET – Komplexní průvodce"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování filtrovaných dat Outlooku pomocí GroupDocs.Viewer pro .NET: Komplexní průvodce
 ## Zavedení
 Máte potíže s efektivním vykreslováním datových souborů Outlooku (OST) při použití specifických filtrů, jako je obsah zprávy a odesílatel? Mnoho vývojářů potřebuje efektivní řešení pro prohlížení zpráv Outlooku s přesnými kritérii. V této komplexní příručce prozkoumáme, jak dosáhnout filtrovaného vykreslování dat Outlooku pomocí GroupDocs.Viewer pro .NET – výkonné knihovny, která zjednodušuje zpracování dokumentů.

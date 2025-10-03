@@ -5,8 +5,8 @@
 "title": "Tetapkan Lisensi Terukur"
 "url": "/id/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Tetapkan Lisensi Terukur
 
 ## Perkenalan

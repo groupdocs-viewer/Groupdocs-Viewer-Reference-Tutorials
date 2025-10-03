@@ -4,8 +4,8 @@
 "title": "عرض المستند الرئيسي في .NET باستخدام GroupDocs.Viewer وتحويل HTML ودمج العلامة المائية"
 "url": "/ar/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # عرض المستند الرئيسي في .NET باستخدام GroupDocs.Viewer: تحويل HTML وتكامل العلامة المائية
 
 ## مقدمة

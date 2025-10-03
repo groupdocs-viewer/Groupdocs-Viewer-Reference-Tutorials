@@ -4,8 +4,8 @@
 "title": "Hur man implementerar anpassad teckensnittsrendering i Java med GroupDocs.Viewer – en steg-för-steg-guide"
 "url": "/sv/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Hur man implementerar anpassad teckensnittsrendering i Java med GroupDocs.Viewer: En steg-för-steg-guide
 
 ## Introduktion

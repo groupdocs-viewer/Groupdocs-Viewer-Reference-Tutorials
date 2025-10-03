@@ -4,8 +4,8 @@
 "title": "Hogyan valósítsunk meg egyéni betűtípus-megjelenítést Java-ban a GroupDocs.Viewer segítségével? Lépésről lépésre útmutató"
 "url": "/hu/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Egyéni betűtípus-megjelenítés megvalósítása Java-ban a GroupDocs.Viewer segítségével: lépésről lépésre útmutató
 
 ## Bevezetés

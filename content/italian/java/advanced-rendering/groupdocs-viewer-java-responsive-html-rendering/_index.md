@@ -4,8 +4,8 @@
 "title": "Rendering HTML reattivo con GroupDocs.Viewer per Java&#58; una guida completa"
 "url": "/it/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Rendering HTML reattivo con GroupDocs.Viewer per Java
 
 ## Introduzione

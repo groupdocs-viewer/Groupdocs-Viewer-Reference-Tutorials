@@ -5,8 +5,8 @@
 "title": "Nhận thông tin xem cho tài liệu PDF"
 "url": "/vi/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Nhận thông tin xem cho tài liệu PDF
 
 ## Giới thiệu

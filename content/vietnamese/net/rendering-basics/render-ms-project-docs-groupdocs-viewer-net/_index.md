@@ -4,8 +4,8 @@
 "title": "Kết xuất tài liệu MS Project bằng GroupDocs.Viewer .NET để quản lý dự án nâng cao"
 "url": "/vi/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ việc kết xuất tài liệu MS Project bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

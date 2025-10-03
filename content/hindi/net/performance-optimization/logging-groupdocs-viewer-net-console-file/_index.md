@@ -4,8 +4,8 @@
 "title": "कंसोल और फ़ाइल आउटपुट के लिए GroupDocs.Viewer .NET में प्रभावी लॉगिंग लागू करना"
 "url": "/hi/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET में प्रभावी लॉगिंग लागू करना
 
 ## परिचय

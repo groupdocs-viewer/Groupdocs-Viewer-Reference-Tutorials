@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์หน้าที่เลือกของเอกสารโดยใช้ GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์หน้าเฉพาะด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

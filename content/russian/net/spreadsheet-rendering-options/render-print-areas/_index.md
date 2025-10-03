@@ -5,8 +5,8 @@
 "title": "Визуализация областей печати с помощью GroupDocs.Viewer для .NET"
 "url": "/ru/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Визуализация областей печати с помощью GroupDocs.Viewer для .NET
 
 ## Введение

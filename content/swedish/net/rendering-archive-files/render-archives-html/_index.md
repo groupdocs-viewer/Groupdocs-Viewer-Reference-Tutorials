@@ -5,8 +5,8 @@
 "title": "Rendera arkiv till en eller flera HTML-sidor"
 "url": "/sv/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Rendera arkiv till en eller flera HTML-sidor
 
 ## Introduktion

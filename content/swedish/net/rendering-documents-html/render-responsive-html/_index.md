@@ -5,8 +5,8 @@
 "title": "Rendera responsiv HTML"
 "url": "/sv/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Rendera responsiv HTML
 
 ## Introduktion

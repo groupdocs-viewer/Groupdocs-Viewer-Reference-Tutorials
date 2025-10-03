@@ -4,8 +4,8 @@
 "title": "Αποτελεσματική λήψη και απόδοση εγγράφων από FTP χρησιμοποιώντας το GroupDocs.Viewer .NET"
 "url": "/el/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να κατεβάσετε και να αποδώσετε αποτελεσματικά έγγραφα από FTP χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

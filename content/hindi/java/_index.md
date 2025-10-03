@@ -5,8 +5,8 @@
 "title": "जावा के लिए GroupDocs.Viewer के व्यापक ट्यूटोरियल और उदाहरण"
 "url": "/hi/java/"
 "weight": 10
+type: docs
 ---
-
 # जावा के लिए GroupDocs.Viewer के व्यापक ट्यूटोरियल और उदाहरण
 
 ## परिचय

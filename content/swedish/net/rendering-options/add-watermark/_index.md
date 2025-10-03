@@ -5,8 +5,8 @@
 "title": "Lägg till vattenstämpel i dokument"
 "url": "/sv/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Lägg till vattenstämpel i dokument
 
 ## Introduktion

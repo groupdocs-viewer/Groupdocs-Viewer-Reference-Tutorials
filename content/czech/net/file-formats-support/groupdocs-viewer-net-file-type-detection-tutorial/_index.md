@@ -4,8 +4,8 @@
 "title": "Jak detekovat typy souborů pomocí GroupDocs.Viewer pro .NET – komplexní tutoriál"
 "url": "/cs/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Jak detekovat typy souborů pomocí GroupDocs.Viewer pro .NET: Komplexní tutoriál
 
 ## Zavedení

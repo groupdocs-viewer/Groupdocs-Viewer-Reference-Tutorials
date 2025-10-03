@@ -4,8 +4,8 @@
 "title": "Cómo recuperar diseños y capas CAD mediante GroupDocs.Viewer .NET para una gestión eficiente del diseño"
 "url": "/es/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Cómo recuperar diseños y capas CAD mediante GroupDocs.Viewer .NET
 ## Introducción
 En el ámbito del Diseño Asistido por Computadora (CAD), la gestión eficiente de dibujos complejos es crucial, sobre todo al trabajar con múltiples diseños y capas en un mismo archivo. Para arquitectos, ingenieros y diseñadores, el acceso rápido a información específica mejora la productividad. **Visor de GroupDocs.NET** ofrece una solución poderosa al permitir a los desarrolladores extraer programáticamente diseños y capas de dibujos CAD.

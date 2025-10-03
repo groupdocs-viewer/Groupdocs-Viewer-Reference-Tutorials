@@ -8,10 +8,8 @@ keywords:
 - render MS Project files
 - GroupDocs.Viewer for Java
 - convert MS Project
-
+type: docs
 ---
-
-
 # How to Render MS Project Files as HTML, JPG, PNG, and PDF with Notes Using GroupDocs.Viewer for Java
 
 ## Introduction

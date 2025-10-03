@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε γραμμές πλέγματος σε υπολογιστικά φύλλα Excel χρησιμοποιώντας το GroupDocs.Viewer .NET για έξοδο HTML"
 "url": "/el/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε γραμμές πλέγματος σε υπολογιστικά φύλλα Excel χρησιμοποιώντας το GroupDocs.Viewer .NET για έξοδο HTML
 
 ## Εισαγωγή

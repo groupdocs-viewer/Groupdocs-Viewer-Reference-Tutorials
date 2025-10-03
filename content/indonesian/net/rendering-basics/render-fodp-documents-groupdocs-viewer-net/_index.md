@@ -4,8 +4,8 @@
 "title": "Cara Merender Dokumen FODP Menggunakan GroupDocs.Viewer .NET&#58; Panduan Lengkap"
 "url": "/id/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Dokumen FODP Menggunakan GroupDocs.Viewer .NET: Panduan Lengkap
 
 ## Perkenalan

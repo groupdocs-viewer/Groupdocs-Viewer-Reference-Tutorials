@@ -4,8 +4,8 @@
 "title": "Konfigurowanie rejestrowania w GroupDocs.Viewer dla konsoli Java i przewodnika rejestrowania plików"
 "url": "/pl/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Konfigurowanie rejestrowania w GroupDocs.Viewer dla Java
 
 ## Wstęp

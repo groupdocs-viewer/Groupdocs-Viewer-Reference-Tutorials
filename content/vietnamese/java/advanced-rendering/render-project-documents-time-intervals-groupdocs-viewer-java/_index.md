@@ -4,8 +4,8 @@
 "title": "Hiển thị tài liệu dự án theo khoảng thời gian bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách triển khai Render Project Documents với các khoảng thời gian bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

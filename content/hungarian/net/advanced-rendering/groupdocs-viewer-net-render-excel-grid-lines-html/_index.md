@@ -4,8 +4,8 @@
 "title": "Rácsvonalak renderelése Excel-táblázatokban a GroupDocs.Viewer .NET HTML-kimenethez használatával"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Rácsvonalak renderelése Excel-táblázatokban a GroupDocs.Viewer .NET HTML-kimenethez használatával
 
 ## Bevezetés

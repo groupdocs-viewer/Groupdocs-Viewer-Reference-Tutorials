@@ -4,8 +4,8 @@
 "title": "การกำหนดค่าการบันทึกข้อมูลใน GroupDocs.Viewer สำหรับคอนโซล Java และคู่มือการบันทึกข้อมูลไฟล์"
 "url": "/th/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # การกำหนดค่าการบันทึกข้อมูลใน GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

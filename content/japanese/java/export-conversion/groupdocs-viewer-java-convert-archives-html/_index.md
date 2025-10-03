@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer JavaでアーカイブをHTMLに変換する方法 総合ガイド"
 "url": "/ja/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java でアーカイブを HTML に変換する: 総合ガイド
 
 ## 導入

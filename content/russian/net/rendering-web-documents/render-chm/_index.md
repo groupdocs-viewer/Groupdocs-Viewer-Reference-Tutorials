@@ -5,8 +5,8 @@
 "title": "Рендеринг файлов CHM"
 "url": "/ru/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Рендеринг файлов CHM
 
 ## Введение

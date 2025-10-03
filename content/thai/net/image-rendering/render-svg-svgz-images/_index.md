@@ -5,8 +5,8 @@
 "title": "เรนเดอร์รูปภาพ SVG และ SVGZ"
 "url": "/th/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # เรนเดอร์รูปภาพ SVG และ SVGZ
 
 ## การแนะนำ

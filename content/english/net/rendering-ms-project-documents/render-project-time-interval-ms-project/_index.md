@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["MS-Project", "GroupDocs-Viewer", "NET-API", "Project-Management"]
+type: docs
 ---
-
 # How to Render MS Project Time Intervals in .NET Applications
 
 ## Why You Need Selective Project Timeline Rendering

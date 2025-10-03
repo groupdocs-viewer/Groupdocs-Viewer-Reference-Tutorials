@@ -5,8 +5,8 @@
 "title": "Рендеринг веб-документов"
 "url": "/ru/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Рендеринг веб-документов
 
 ## Введение

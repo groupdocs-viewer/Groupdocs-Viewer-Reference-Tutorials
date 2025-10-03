@@ -5,8 +5,8 @@
 "title": "注釈付きドキュメントのレンダリング"
 "url": "/ja/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # 注釈付きドキュメントのレンダリング
 
 ## 導入

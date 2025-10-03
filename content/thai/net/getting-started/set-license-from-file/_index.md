@@ -5,8 +5,8 @@
 "title": "ตั้งค่าใบอนุญาตจากไฟล์"
 "url": "/th/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # ตั้งค่าใบอนุญาตจากไฟล์
 
 ## การแนะนำ

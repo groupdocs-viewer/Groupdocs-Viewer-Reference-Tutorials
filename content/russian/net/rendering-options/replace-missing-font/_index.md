@@ -5,8 +5,8 @@
 "title": "Заменить отсутствующий шрифт"
 "url": "/ru/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Заменить отсутствующий шрифт
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java licenc beállítása helyi fájl vagy URL útmutató"
 "url": "/hu/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java licenc beállítása: Helyi fájl vagy URL
 
 Használja ki a GroupDocs.Viewer teljes potenciálját Java-alkalmazásaihoz a licenc helyi fájlból vagy online forrásból történő beállításával. Ez az átfogó útmutató segít mindkét módszer hatékony megvalósításában, biztosítva a hozzáférést a hatékony dokumentummegjelenítő eszköz által kínált összes funkcióhoz.

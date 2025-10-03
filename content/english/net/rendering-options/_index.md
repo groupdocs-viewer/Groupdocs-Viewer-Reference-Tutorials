@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["rendering", "document-viewer", "watermarks", "custom-fonts", "page-manipulation"]
+type: docs
 ---
-
 # Document Rendering Options for .NET Applications
 
 ## Introduction

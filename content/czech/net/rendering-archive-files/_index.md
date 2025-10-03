@@ -5,8 +5,8 @@
 "title": "Vykreslování archivních souborů"
 "url": "/cs/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Vykreslování archivních souborů
 
 ## Zavedení

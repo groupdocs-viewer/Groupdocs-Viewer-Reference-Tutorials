@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 高级文档渲染教程"
 "url": "/zh/net/advanced-rendering/"
 "weight": 4
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 高级文档渲染教程
 
 通过我们面向 .NET 开发者的全面 GroupDocs.Viewer 教程，探索高级文档渲染功能。这些详细的指南涵盖了复杂的渲染场景、自定义渲染配置、性能优化以及专业渲染技术的实现。每个教程都提供了实用的 .NET 代码示例，演示了如何创建复杂的文档查看解决方案，并精确控制渲染过程。

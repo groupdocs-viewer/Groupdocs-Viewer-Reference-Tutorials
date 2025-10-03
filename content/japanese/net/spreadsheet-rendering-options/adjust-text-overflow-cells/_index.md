@@ -5,8 +5,8 @@
 "title": "セル内のテキストオーバーフローを調整する"
 "url": "/ja/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # セル内のテキストオーバーフローを調整する
 
 ## 導入

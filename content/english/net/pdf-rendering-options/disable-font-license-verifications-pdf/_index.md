@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Rendering"]
 tags: ["font-issues", "pdf-troubleshooting", "groupdocs-viewer", "font-licensing"]
+type: docs
 ---
-
 # How to Disable Font License Verification in PDF with GroupDocs.Viewer
 
 ## Introduction

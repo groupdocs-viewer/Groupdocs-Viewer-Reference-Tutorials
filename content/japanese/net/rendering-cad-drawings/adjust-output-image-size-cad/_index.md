@@ -5,8 +5,8 @@
 "title": "CAD図面の出力画像サイズを調整する"
 "url": "/ja/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # CAD図面の出力画像サイズを調整する
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "특정 폴더 렌더링 및 필터 메시지(Outlook)"
 "url": "/ko/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # 특정 폴더 렌더링 및 필터 메시지(Outlook)
 
 ## 소개

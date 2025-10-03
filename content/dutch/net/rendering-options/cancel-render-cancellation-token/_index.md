@@ -5,8 +5,8 @@
 "title": "Annuleer Render met Annuleringstoken"
 "url": "/nl/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Annuleer Render met Annuleringstoken
 
 ## Invoering

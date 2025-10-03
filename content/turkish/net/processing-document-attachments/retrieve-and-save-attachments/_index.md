@@ -5,8 +5,8 @@
 "title": "Belge Eklerini Al ve Kaydet"
 "url": "/tr/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Belge Eklerini Al ve Kaydet
 
 ## giriiş

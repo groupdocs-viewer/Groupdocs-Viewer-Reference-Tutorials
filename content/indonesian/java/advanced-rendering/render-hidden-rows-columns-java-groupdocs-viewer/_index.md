@@ -4,8 +4,8 @@
 "title": "Menampilkan Baris & Kolom Tersembunyi di Spreadsheet Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Menampilkan Baris & Kolom Tersembunyi di Spreadsheet Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

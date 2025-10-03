@@ -4,8 +4,8 @@
 "title": "보안 강화를 위해 GroupDocs.Viewer .NET을 사용하여 PDF에서 텍스트 선택을 비활성화하는 방법"
 "url": "/ko/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PDF를 HTML로 렌더링할 때 텍스트 선택을 비활성화하기 위해 GroupDocs.Viewer .NET을 사용하는 방법
 
 ## 소개

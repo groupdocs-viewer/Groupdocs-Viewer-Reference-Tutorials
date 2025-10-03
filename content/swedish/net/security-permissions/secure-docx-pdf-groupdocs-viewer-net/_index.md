@@ -4,8 +4,8 @@
 "title": "Så här säkrar du DOCX-filer som PDF-filer med GroupDocs.Viewer .NET – en steg-för-steg-guide"
 "url": "/sv/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här säkrar du DOCX-filer som PDF-filer med GroupDocs.Viewer .NET: En steg-för-steg-guide
 
 dagens digitala tidsålder är det avgörande att skydda känsliga dokument. Oavsett om du är ett företag som skyddar immateriella rättigheter eller en individ som skyddar personlig information, kan det vara omvälvande att konvertera Word-filer till lösenordsskyddade PDF-filer. Den här handledningen guidar dig genom att använda GroupDocs.Viewer för .NET för att rendera DOCX-dokument till skyddade PDF-filer med specifika begränsningar som att neka utskrift.

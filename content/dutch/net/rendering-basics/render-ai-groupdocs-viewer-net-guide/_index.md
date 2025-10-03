@@ -4,8 +4,8 @@
 "title": "Uitgebreide handleiding voor het renderen van AI-bestanden met GroupDocs.Viewer .NET voor ontwikkelaars"
 "url": "/nl/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Uitgebreide handleiding voor het renderen van AI-bestanden met GroupDocs.Viewer .NET voor ontwikkelaars
 
 ## Invoering

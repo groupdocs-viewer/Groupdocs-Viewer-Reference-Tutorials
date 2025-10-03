@@ -4,8 +4,8 @@
 "title": "Jak nastavit maximální limity velikosti obrázku JPG pomocí GroupDocs.Viewer .NET"
 "url": "/cs/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak nastavit maximální limity velikosti obrázku JPG pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

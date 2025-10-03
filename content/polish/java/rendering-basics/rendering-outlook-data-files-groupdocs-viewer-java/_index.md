@@ -4,8 +4,8 @@
 "title": "Jak renderować pliki danych programu Outlook za pomocą GroupDocs.Viewer w języku Java? Przewodnik krok po kroku"
 "url": "/pl/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować pliki danych programu Outlook za pomocą GroupDocs.Viewer w języku Java: przewodnik krok po kroku
 
 ## Wstęp

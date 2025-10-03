@@ -4,8 +4,8 @@
 "title": "كيفية تنفيذ مواصفات نوع المستند في GroupDocs.Viewer لـ Java - دليل خطوة بخطوة"
 "url": "/ar/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تنفيذ مواصفات نوع المستند في GroupDocs.Viewer لـ Java
 
 دليل خطوة بخطوة حول تحديد نوع الملف لعرض ملفات DOCX باستخدام GroupDocs.Viewer لـ Java.

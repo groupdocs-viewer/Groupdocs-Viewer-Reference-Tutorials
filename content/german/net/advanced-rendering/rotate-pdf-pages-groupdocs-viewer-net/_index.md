@@ -4,8 +4,8 @@
 "title": "So drehen Sie PDF-Seiten mit GroupDocs.Viewer für .NET – Ein Entwicklerhandbuch"
 "url": "/de/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So drehen Sie PDF-Seiten mit GroupDocs.Viewer für .NET: Ein Entwicklerhandbuch
 
 ## Einführung

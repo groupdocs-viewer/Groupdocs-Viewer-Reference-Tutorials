@@ -5,8 +5,8 @@
 "title": "EMZ és EMF képek renderelése"
 "url": "/hu/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # EMZ és EMF képek renderelése
 
 ## Bevezetés

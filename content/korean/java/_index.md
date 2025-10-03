@@ -5,8 +5,8 @@
 "title": "Java용 GroupDocs.Viewer의 포괄적인 튜토리얼 및 예제"
 "url": "/ko/java/"
 "weight": 10
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer의 포괄적인 튜토리얼 및 예제
 
 ## 소개

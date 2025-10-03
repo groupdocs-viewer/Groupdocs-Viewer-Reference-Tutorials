@@ -4,8 +4,8 @@
 "title": "Cách triển khai kết xuất phông chữ tùy chỉnh trong Java với GroupDocs.Viewer&#58; Hướng dẫn từng bước"
 "url": "/vi/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cách triển khai kết xuất phông chữ tùy chỉnh trong Java với GroupDocs.Viewer: Hướng dẫn từng bước
 
 ## Giới thiệu

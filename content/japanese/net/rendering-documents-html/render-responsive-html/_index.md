@@ -5,8 +5,8 @@
 "title": "レスポンシブHTMLのレンダリング"
 "url": "/ja/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # レスポンシブHTMLのレンダリング
 
 ## 導入

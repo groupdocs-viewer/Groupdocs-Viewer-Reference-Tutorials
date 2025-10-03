@@ -5,8 +5,8 @@
 "title": "CAD Çizimlerinde Katmanları Oluşturma"
 "url": "/tr/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # CAD Çizimlerinde Katmanları Oluşturma
 
 ## giriiş

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["ms-project", "groupdocs-viewer", "dotnet", "document-conversion"]
+type: docs
 ---
-
 # How to Render MS Project Files in .NET - Complete Developer Guide
 
 ## Why You Need to Render MS Project Files Programmatically

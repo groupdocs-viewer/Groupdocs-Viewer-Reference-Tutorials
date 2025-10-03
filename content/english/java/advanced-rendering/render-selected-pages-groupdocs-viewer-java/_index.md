@@ -8,10 +8,8 @@ keywords:
 - render selected pages GroupDocs.Viewer Java
 - GroupDocs Viewer for Java setup
 - render HTML with embedded resources
-
+type: docs
 ---
-
-
 # How to Render Specific Pages with GroupDocs.Viewer for Java
 
 ## Introduction

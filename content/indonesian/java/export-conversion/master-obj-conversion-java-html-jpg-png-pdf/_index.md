@@ -4,8 +4,8 @@
 "title": "Menguasai Konversi OBJ ke HTML/JPG/PNG/PDF di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Konversi File: Konversi OBJ ke HTML/JPG/PNG/PDF di Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Cara Membuat Gambar CAD Tertentu di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat Gambar CAD Tertentu di Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

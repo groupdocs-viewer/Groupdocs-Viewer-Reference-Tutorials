@@ -5,8 +5,8 @@
 "title": "Membalik dan Memutar Halaman"
 "url": "/id/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Membalik dan Memutar Halaman
 
 ## Perkenalan

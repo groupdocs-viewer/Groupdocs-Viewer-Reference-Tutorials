@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java Kullanarak Notlarla Sunumlar Nasıl Oluşturulur? Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanarak Notlarla Sunumlar Nasıl Oluşturulur
 
 ## giriiş

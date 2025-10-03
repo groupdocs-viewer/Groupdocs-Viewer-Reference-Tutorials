@@ -4,8 +4,8 @@
 "title": ".NET'te PDF Oluşturmayı Geliştirin&#58; GroupDocs.Viewer ile Yazı Tipi İpucunu Etkinleştirin"
 "url": "/tr/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak .NET'te PDF Oluşturma Nasıl Geliştirilir: Yazı Tipi İpucu Etkinleştirme
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Как переименовать поля электронной почты при конвертации писем в HTML с помощью GroupDocs.Viewer Java"
 "url": "/ru/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Как переименовать поля электронной почты при преобразовании писем в HTML с помощью GroupDocs.Viewer Java
 
 ## Введение

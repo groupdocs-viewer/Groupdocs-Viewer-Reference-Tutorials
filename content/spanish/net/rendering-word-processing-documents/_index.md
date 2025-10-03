@@ -5,8 +5,8 @@
 "title": "Representación de documentos de procesamiento de textos"
 "url": "/es/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Representación de documentos de procesamiento de textos
 
 

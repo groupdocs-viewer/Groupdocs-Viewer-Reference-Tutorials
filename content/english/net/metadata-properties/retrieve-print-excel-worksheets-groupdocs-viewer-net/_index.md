@@ -8,10 +8,8 @@ keywords:
 - retrieve excel worksheet names
 - print worksheets using GroupDocs
 - GroupDocs.Viewer .NET
-
+type: docs
 ---
-
-
 # How to Retrieve and Print Excel Worksheet Names Using GroupDocs.Viewer for .NET: A Comprehensive Guide
 
 ## Introduction

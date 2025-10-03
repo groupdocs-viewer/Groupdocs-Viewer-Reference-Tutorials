@@ -5,8 +5,8 @@
 "title": "Załaduj dokumenty z FTP (zaawansowane)"
 "url": "/pl/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Załaduj dokumenty z FTP (zaawansowane)
 
 ## Wstęp

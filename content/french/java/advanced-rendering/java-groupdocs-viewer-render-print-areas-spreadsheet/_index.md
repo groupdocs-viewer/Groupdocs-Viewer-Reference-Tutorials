@@ -4,8 +4,8 @@
 "title": "Rendu des zones d'impression d'une feuille de calcul Java avec GroupDocs.Viewer pour Java - Guide complet"
 "url": "/fr/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Rendu des zones d'impression d'une feuille de calcul Java avec GroupDocs.Viewer pour Java
 
 ## Introduction

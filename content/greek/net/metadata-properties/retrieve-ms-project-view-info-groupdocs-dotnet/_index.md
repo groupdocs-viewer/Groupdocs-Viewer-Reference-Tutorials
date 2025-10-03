@@ -4,8 +4,8 @@
 "title": "Ανάκτηση πληροφοριών προβολής MS Project χρησιμοποιώντας το GroupDocs.Viewer .NET | Μεταδεδομένα και ιδιότητες"
 "url": "/el/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Ανάκτηση πληροφοριών προβολής MS Project χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

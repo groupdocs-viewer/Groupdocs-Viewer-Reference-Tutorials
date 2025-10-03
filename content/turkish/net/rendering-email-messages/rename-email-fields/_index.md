@@ -5,8 +5,8 @@
 "title": "İşleme Sırasında E-posta Alanlarını Yeniden Adlandır"
 "url": "/tr/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # İşleme Sırasında E-posta Alanlarını Yeniden Adlandır
 
 ## giriiş

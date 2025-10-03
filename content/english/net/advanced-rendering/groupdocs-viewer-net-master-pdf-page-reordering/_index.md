@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET PDF page reordering
 - reorder PDF pages with .NET
 - .NET document management
-
+type: docs
 ---
-
-
 # Mastering PDF Page Reordering with GroupDocs.Viewer .NET: A Comprehensive Developer's Guide
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Renderizar imagens CDR"
 "url": "/pt/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # Renderizar imagens CDR
 
 ## Introdução

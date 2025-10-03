@@ -4,8 +4,8 @@
 "title": "Triển khai ghi nhật ký hiệu quả trong GroupDocs.Viewer .NET cho đầu ra bảng điều khiển và tệp"
 "url": "/vi/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai ghi nhật ký hiệu quả trong GroupDocs.Viewer .NET
 
 ## Giới thiệu

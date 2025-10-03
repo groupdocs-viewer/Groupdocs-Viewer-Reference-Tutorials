@@ -5,8 +5,8 @@
 "title": "Obter nomes de planilhas"
 "url": "/pt/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Obter nomes de planilhas
 
 ## Introdução

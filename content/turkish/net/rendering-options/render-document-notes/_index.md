@@ -5,8 +5,8 @@
 "title": "Notlarla Belgeyi Oluştur"
 "url": "/tr/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Notlarla Belgeyi Oluştur
 
 ## giriiş

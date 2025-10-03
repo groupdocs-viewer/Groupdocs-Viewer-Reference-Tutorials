@@ -4,8 +4,8 @@
 "title": "Jak načíst informace z archivu pomocí GroupDocs.Viewer pro .NET – Komplexní průvodce"
 "url": "/cs/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst informace z archivu pomocí GroupDocs.Viewer pro .NET: Komplexní průvodce
 
 ## Zavedení

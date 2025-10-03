@@ -8,10 +8,8 @@ keywords:
 - CMX Document Conversion
 - GroupDocs Viewer Java
 - Document Format Conversion
-
+type: docs
 ---
-
-
 # Efficient CMX Document Conversion Using GroupDocs.Viewer for Java: A Comprehensive Guide
 
 ## Introduction

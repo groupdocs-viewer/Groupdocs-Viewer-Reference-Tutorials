@@ -4,8 +4,8 @@
 "title": "在 GroupDocs.Viewer .NET 中为控制台和文件输出实现有效日志记录"
 "url": "/zh/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer .NET 中实现有效日志记录
 
 ## 介绍

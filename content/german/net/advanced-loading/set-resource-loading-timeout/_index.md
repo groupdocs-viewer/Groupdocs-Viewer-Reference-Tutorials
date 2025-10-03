@@ -5,8 +5,8 @@
 "title": "Timeout für das Laden von Ressourcen festlegen (Erweitert)"
 "url": "/de/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Timeout für das Laden von Ressourcen festlegen (Erweitert)
 
 ## Einführung

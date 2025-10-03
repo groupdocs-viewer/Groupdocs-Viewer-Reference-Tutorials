@@ -4,8 +4,8 @@
 "title": "การจัดเรียงหน้า PDF อย่างมีประสิทธิภาพด้วย GroupDocs.Viewer สำหรับ Java และคู่มือฉบับสมบูรณ์"
 "url": "/th/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # การเรียงลำดับหน้า PDF อย่างมีประสิทธิภาพด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

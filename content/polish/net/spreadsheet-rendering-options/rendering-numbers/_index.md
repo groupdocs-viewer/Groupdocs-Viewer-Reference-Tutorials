@@ -5,8 +5,8 @@
 "title": "Renderowanie liczb"
 "url": "/pl/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Renderowanie liczb
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer Kullanılarak Arşiv Yapıları Nasıl Alınır? Kapsamlı Bir Kılavuz"
 "url": "/tr/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanılarak Arşiv Yapıları Nasıl Alınır
 
 ## giriiş

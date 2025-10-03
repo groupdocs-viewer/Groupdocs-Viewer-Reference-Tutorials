@@ -5,8 +5,8 @@
 "title": "Bảo vệ PDF đã kết xuất bằng mật khẩu"
 "url": "/vi/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Bảo vệ PDF đã kết xuất bằng mật khẩu
 
 ## Giới thiệu

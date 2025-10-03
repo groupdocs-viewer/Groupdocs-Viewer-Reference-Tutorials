@@ -5,8 +5,8 @@
 "title": "เปลี่ยนแบบอักษรที่หายไป"
 "url": "/th/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # เปลี่ยนแบบอักษรที่หายไป
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "Rendera dokument med kommentarer"
 "url": "/sv/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Rendera dokument med kommentarer
 
 ## Introduktion

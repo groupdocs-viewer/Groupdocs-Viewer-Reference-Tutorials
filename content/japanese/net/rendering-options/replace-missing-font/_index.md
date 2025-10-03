@@ -5,8 +5,8 @@
 "title": "不足しているフォントを置き換える"
 "url": "/ja/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # 不足しているフォントを置き換える
 
 ## 導入

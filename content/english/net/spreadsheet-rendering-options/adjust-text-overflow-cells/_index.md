@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["groupdocs-viewer", "text-overflow", "spreadsheet-rendering", "dotnet"]
+type: docs
 ---
-
 # How to Fix Text Overflow in Cells with GroupDocs.Viewer .NET
 
 ## Introduction

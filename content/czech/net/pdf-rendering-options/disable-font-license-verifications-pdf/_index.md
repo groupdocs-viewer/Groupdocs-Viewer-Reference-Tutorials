@@ -5,8 +5,8 @@
 "title": "Zakázat ověřování licencí písem v PDF"
 "url": "/cs/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Zakázat ověřování licencí písem v PDF
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "إضافة علامات مائية إلى المستندات باستخدام GroupDocs.Viewer Java - دليل شامل"
 "url": "/ar/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # إضافة علامات مائية إلى المستندات باستخدام GroupDocs.Viewer Java: دليل شامل
 
 ## مقدمة

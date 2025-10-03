@@ -5,8 +5,8 @@
 "title": "Belgeleri PDF'ye Dönüştürme"
 "url": "/tr/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Belgeleri PDF'ye Dönüştürme
 
 

@@ -5,8 +5,8 @@
 "title": "Muat Dokumen dari Aliran"
 "url": "/id/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Muat Dokumen dari Aliran
 
 ## Perkenalan

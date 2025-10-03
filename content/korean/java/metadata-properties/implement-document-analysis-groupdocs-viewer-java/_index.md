@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 문서 분석 구현 및 페이지 메타데이터 및 텍스트 줄 추출"
 "url": "/ko/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용한 문서 분석 구현: 페이지 메타데이터 및 텍스트 줄 추출
 
 ## 소개

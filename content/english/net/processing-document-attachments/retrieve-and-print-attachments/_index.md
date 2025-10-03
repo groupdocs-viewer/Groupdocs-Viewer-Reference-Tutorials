@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "document-attachments", "dotnet", "csharp", "pdf-attachments"]
+type: docs
 ---
-
 # Retrieve Document Attachments .NET - Complete Developer Guide
 
 ## Why Document Attachment Handling Matters in Modern Applications

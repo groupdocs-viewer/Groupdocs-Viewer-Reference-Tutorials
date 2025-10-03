@@ -5,8 +5,8 @@
 "title": "Archiefmap weergeven"
 "url": "/nl/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Archiefmap weergeven
 
 ## Invoering

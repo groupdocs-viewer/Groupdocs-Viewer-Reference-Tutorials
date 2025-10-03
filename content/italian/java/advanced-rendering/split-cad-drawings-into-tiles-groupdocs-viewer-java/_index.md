@@ -4,8 +4,8 @@
 "title": "Dividi i disegni CAD in riquadri utilizzando GroupDocs.Viewer Java per un rendering efficiente"
 "url": "/it/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dividi i disegni CAD in riquadri con GroupDocs.Viewer Java
 
 ## Introduzione

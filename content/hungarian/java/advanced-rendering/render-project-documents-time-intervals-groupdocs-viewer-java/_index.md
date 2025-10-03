@@ -4,8 +4,8 @@
 "title": "Projektdokumentumok renderelése időintervallumok szerint a GroupDocs.Viewer for Java használatával"
 "url": "/hu/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan valósítsunk meg időintervallumokkal rendelkező renderelési projektdokumentumokat a GroupDocs.Viewer for Java használatával?
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "E-posta Mesajlarını Görüntüleme"
 "url": "/tr/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # E-posta Mesajlarını Görüntüleme
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "レンダリングされた HTML からフォントを除外する"
 "url": "/ja/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # レンダリングされた HTML からフォントを除外する
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "Spécifier le type de fichier lors du chargement des documents"
 "url": "/fr/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Spécifier le type de fichier lors du chargement des documents
 
 ## Introduction

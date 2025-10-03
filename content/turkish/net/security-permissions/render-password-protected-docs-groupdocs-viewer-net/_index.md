@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET ile Parola Korumalı Belgeler Nasıl Oluşturulur"
 "url": "/tr/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile Parola Korumalı Belgelerin Oluşturulması
 
 ## giriiş

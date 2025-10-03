@@ -4,8 +4,8 @@
 "title": "PDF'lerinizi Java'da GroupDocs.Viewer ile Güvende Tutun&#58; Parola Koruması ve İzinler Kılavuzu"
 "url": "/tr/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # PDF'lerinizi Java'da GroupDocs.Viewer ile Güvende Tutun
 
 ## giriiş

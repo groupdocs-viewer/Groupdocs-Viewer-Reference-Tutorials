@@ -5,8 +5,8 @@
 "title": "Lisansı Dosyadan Ayarla"
 "url": "/tr/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Lisansı Dosyadan Ayarla
 
 ## giriiş

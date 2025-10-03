@@ -5,8 +5,8 @@
 "title": "사용자 정의 여백으로 HTML 렌더링"
 "url": "/ko/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # 사용자 정의 여백으로 HTML 렌더링
 
 ## 소개

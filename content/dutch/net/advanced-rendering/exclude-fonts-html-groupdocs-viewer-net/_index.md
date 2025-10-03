@@ -4,8 +4,8 @@
 "title": "Specifieke lettertypen uitsluiten van HTML-uitvoer met GroupDocs.Viewer voor .NET"
 "url": "/nl/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Lettertypen uitsluiten van HTML-uitvoer met GroupDocs.Viewer voor .NET
 
 ## Invoering

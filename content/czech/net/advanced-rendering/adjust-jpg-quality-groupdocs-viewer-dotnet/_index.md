@@ -4,8 +4,8 @@
 "title": "Optimalizace kvality JPG v GroupDocs.Viewer .NET pro vylepšené vykreslování obrázků"
 "url": "/cs/net/advanced-rendering/adjust-jpg-quality-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizace kvality JPG v GroupDocs.Viewer .NET
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "レンダリングされたPDFのJPG画像の品質を調整する"
 "url": "/ja/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # レンダリングされたPDFのJPG画像の品質を調整する
 
 ## 導入

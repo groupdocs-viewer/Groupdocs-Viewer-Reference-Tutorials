@@ -4,8 +4,8 @@
 "title": "Hiển thị bảng tính Excel theo ngắt trang bằng GroupDocs.Viewer cho .NET"
 "url": "/vi/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị bảng tính Excel theo ngắt trang bằng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

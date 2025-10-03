@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 HTML 출력에서 특정 글꼴을 제외하는 방법"
 "url": "/ko/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 HTML 출력에서 글꼴을 제외하는 방법
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して Excel シートを行ごとにページに分割し、効率的なデータ管理を実現する"
 "url": "/ja/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して Excel シートを行ごとにページに分割する
 
 ## 導入

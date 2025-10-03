@@ -4,8 +4,8 @@
 "title": "Render Dokumen Proyek Berdasarkan Interval Waktu Menggunakan GroupDocs.Viewer untuk Java"
 "url": "/id/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menerapkan Render Dokumen Proyek dengan Interval Waktu menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

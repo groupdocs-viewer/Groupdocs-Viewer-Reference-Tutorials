@@ -5,8 +5,8 @@
 "title": "페이지 나누기로 렌더링"
 "url": "/ko/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # 페이지 나누기로 렌더링
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java를 사용하여 문서에 워터마크 추가하기 - 종합 가이드"
 "url": "/ko/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java를 사용하여 문서에 워터마크 추가: 포괄적인 가이드
 
 ## 소개

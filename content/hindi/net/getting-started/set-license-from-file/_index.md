@@ -5,8 +5,8 @@
 "title": "फ़ाइल से लाइसेंस सेट करें"
 "url": "/hi/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # फ़ाइल से लाइसेंस सेट करें
 
 ## परिचय

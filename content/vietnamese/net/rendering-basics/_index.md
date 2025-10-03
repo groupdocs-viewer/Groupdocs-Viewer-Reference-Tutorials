@@ -3,8 +3,8 @@
 "title": "Hướng dẫn cơ bản về kết xuất tài liệu cho GroupDocs.Viewer .NET"
 "url": "/vi/net/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # Hướng dẫn cơ bản về kết xuất tài liệu cho GroupDocs.Viewer .NET
 
 Nắm vững các kỹ thuật kết xuất tài liệu với hướng dẫn chi tiết về GroupDocs.Viewer .NET của chúng tôi. Các hướng dẫn từng bước này trình bày cách chuyển đổi và kết xuất tài liệu sang nhiều định dạng đầu ra khác nhau, kiểm soát chất lượng kết xuất, quản lý kết xuất cấp trang và triển khai trực quan hóa tài liệu đa định dạng một cách chính xác và hiệu quả.

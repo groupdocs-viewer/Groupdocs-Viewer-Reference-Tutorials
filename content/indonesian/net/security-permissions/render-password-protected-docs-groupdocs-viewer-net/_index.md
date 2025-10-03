@@ -4,8 +4,8 @@
 "title": "Cara Menampilkan Dokumen yang Dilindungi Kata Sandi dengan GroupDocs.Viewer .NET"
 "url": "/id/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Merender Dokumen yang Dilindungi Kata Sandi dengan GroupDocs.Viewer .NET
 
 ## Perkenalan

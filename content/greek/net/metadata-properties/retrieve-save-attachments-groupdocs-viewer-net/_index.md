@@ -4,8 +4,8 @@
 "title": "Πώς να ανακτήσετε και να αποθηκεύσετε συνημμένα εγγράφων χρησιμοποιώντας το GroupDocs.Viewer .NET για αποτελεσματική διαχείριση μεταδεδομένων"
 "url": "/el/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να ανακτήσετε και να αποθηκεύσετε συνημμένα έγγραφα χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

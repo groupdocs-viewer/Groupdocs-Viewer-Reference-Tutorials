@@ -4,8 +4,8 @@
 "title": "Jak wyłączyć zaznaczanie tekstu w plikach PDF za pomocą GroupDocs.Viewer Java? Kompleksowy przewodnik"
 "url": "/pl/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak wdrożyć funkcję Wyłącz zaznaczanie tekstu w renderowaniu PDF za pomocą GroupDocs.Viewer Java
 ## Wstęp
 Czy potrzebujesz bezpiecznego sposobu wyświetlania plików PDF w sieci bez zezwalania na zaznaczanie tekstu? Ten kompleksowy przewodnik pokazuje, jak wyłączyć zaznaczanie tekstu za pomocą biblioteki GroupDocs.Viewer for Java. Dzięki konwersji tekstu na obrazy Twoja treść pozostaje bezpieczna i nieedytowalna podczas wyświetlania online.

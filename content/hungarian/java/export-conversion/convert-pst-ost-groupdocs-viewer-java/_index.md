@@ -4,8 +4,8 @@
 "title": "PST/OST fájlok konvertálása HTML, JPG, PNG és PDF formátumba GroupDocs.Viewer for Java használatával | Exportálási és konvertálási útmutató"
 "url": "/hu/java/export-conversion/convert-pst-ost-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # PST/OST fájlok konvertálása HTML, JPG, PNG és PDF formátumba a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

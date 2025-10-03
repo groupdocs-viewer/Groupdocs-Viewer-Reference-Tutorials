@@ -4,8 +4,8 @@
 "title": "优化 Java 电子表格渲染 &#58; 使用 GroupDocs.Viewer 跳过空列"
 "url": "/zh/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # 如何优化 Java 中的电子表格渲染：使用 GroupDocs.Viewer 跳过空列
 
 ## 介绍

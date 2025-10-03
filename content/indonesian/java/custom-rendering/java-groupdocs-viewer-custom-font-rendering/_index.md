@@ -4,8 +4,8 @@
 "title": "Cara Menerapkan Rendering Font Kustom di Java dengan GroupDocs.Viewer&#58; Panduan Langkah demi Langkah"
 "url": "/id/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menerapkan Rendering Font Kustom di Java dengan GroupDocs.Viewer: Panduan Langkah demi Langkah
 
 ## Perkenalan

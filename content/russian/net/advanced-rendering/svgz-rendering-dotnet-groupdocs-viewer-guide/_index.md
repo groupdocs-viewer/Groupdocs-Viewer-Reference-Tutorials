@@ -4,8 +4,8 @@
 "title": "Мастер рендеринга SVGZ в .NET с помощью GroupDocs.Viewer&#58; Полное руководство для разработчиков"
 "url": "/ru/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Освоение рендеринга SVGZ в .NET с помощью GroupDocs.Viewer: полное руководство для разработчиков
 
 ## Введение

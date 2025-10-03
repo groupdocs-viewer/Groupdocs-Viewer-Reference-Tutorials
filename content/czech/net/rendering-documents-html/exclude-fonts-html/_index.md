@@ -5,8 +5,8 @@
 "title": "Vyloučení fontů z vykresleného HTML"
 "url": "/cs/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Vyloučení fontů z vykresleného HTML
 
 ## Zavedení

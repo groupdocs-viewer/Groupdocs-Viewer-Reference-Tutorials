@@ -4,8 +4,8 @@
 "title": "إتقان عرض SVGZ في .NET باستخدام GroupDocs.Viewer - دليل كامل للمطورين"
 "url": "/ar/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض SVGZ في .NET باستخدام GroupDocs.Viewer: دليل كامل للمطورين
 
 ## مقدمة

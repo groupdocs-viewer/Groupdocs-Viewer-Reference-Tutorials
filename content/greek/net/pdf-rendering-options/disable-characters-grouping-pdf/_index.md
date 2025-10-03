@@ -5,8 +5,8 @@
 "title": "Απενεργοποίηση ομαδοποίησης χαρακτήρων σε PDF"
 "url": "/el/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Απενεργοποίηση ομαδοποίησης χαρακτήρων σε PDF
 
 ## Εισαγωγή

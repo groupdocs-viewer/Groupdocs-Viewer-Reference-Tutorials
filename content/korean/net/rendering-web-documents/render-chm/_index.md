@@ -5,8 +5,8 @@
 "title": "CHM 파일 렌더링"
 "url": "/ko/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # CHM 파일 렌더링
 
 ## 소개

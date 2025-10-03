@@ -5,8 +5,8 @@
 "title": "Retourner et faire pivoter les pages"
 "url": "/fr/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Retourner et faire pivoter les pages
 
 ## Introduction

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["HTML-rendering", "document-viewer", "dotnet-development"]
+type: docs
 ---
-
 # HTML Document Viewer .NET - Complete Rendering Guide
 
 ## Introduction

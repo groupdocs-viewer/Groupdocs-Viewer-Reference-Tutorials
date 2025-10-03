@@ -5,8 +5,8 @@
 "title": "Render Interval Waktu Proyek Tertentu (MS Project)"
 "url": "/id/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Render Interval Waktu Proyek Tertentu (MS Project)
 
 ## Perkenalan

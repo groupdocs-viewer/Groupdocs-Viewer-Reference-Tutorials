@@ -3,8 +3,8 @@
 "title": "Dokumentum metaadatok kinyerésének oktatóanyagai a GroupDocs.Viewer .NET-hez"
 "url": "/hu/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Dokumentum metaadatok kinyerésének oktatóanyagai a GroupDocs.Viewer .NET-hez
 
 Tanulja meg a dokumentumok metaadatainak és tulajdonságainak kezelését a GroupDocs.Viewer .NET oktatóanyagaink segítségével. Ezek a gyakorlati útmutatók bemutatják, hogyan lehet kinyerni a dokumentuminformációkat, beolvasni a metaadatmezőket, kezelni a dokumentumtulajdonságokat, és hogyan lehet metaadat-alapú dokumentumfeldolgozást megvalósítani. Minden oktatóanyag működő .NET kódpéldákat tartalmaz a gyakori metaadat-forgatókönyvekhez, segítve olyan alkalmazások létrehozásában, amelyek hatékonyan képesek elemezni és kezelni a dokumentuminformációkat.

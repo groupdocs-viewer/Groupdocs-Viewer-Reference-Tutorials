@@ -5,8 +5,8 @@
 "title": "Karaktercsoportosítás letiltása PDF-ben"
 "url": "/hu/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Karaktercsoportosítás letiltása PDF-ben
 
 ## Bevezetés

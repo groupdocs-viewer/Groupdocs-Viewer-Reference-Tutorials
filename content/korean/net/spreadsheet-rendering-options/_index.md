@@ -5,8 +5,8 @@
 "title": "스프레드시트 렌더링 옵션"
 "url": "/ko/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # 스프레드시트 렌더링 옵션
 
 ## 소개

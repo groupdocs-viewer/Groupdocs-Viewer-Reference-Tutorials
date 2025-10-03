@@ -8,10 +8,8 @@ keywords:
 - render DOCX to PNG
 - GroupDocs.Viewer for Java
 - Java document conversion
-
+type: docs
 ---
-
-
 # How to Convert DOCX Files to PNG Using GroupDocs.Viewer for Java
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Hiển thị tệp đính kèm email thành HTML với GroupDocs.Viewer cho .NET"
 "url": "/vi/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp đính kèm email thành HTML bằng GroupDocs.Viewer cho .NET
 ## Giới thiệu
 Bạn có cần một cách hiệu quả để chuyển đổi tệp đính kèm email thành HTML dễ xem không? Cho dù là để tăng khả năng truy cập tài liệu hay đơn giản hóa việc chia sẻ nội dung, việc hiển thị tệp đính kèm là điều cần thiết để quản lý thư từ kỹ thuật số hiệu quả. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng **GroupDocs.Viewer cho .NET** để đạt được điều này một cách dễ dàng.

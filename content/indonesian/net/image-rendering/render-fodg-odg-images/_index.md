@@ -5,8 +5,8 @@
 "title": "Render Gambar FODG dan ODG"
 "url": "/id/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # Render Gambar FODG dan ODG
 
 ## Perkenalan

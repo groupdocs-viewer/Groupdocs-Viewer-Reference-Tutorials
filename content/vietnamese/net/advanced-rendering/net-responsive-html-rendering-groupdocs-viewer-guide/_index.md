@@ -4,8 +4,8 @@
 "title": "Triển khai .NET Responsive HTML Rendering với GroupDocs.Viewer&#58; Hướng dẫn toàn diện cho nhà phát triển"
 "url": "/vi/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai .NET Responsive HTML Rendering với GroupDocs.Viewer: Hướng dẫn dành cho nhà phát triển
 
 ## Giới thiệu

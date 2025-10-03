@@ -4,8 +4,8 @@
 "title": "Menguasai Penataan Ulang Halaman PDF di .NET dengan GroupDocs.Viewer&#58; Panduan Pengembang"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Penataan Ulang Halaman PDF dengan GroupDocs.Viewer .NET: Panduan Pengembang yang Komprehensif
 
 ## Perkenalan

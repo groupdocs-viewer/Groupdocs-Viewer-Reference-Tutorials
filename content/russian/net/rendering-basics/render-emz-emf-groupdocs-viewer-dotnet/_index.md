@@ -4,8 +4,8 @@
 "title": "Как визуализировать файлы EMZ/EMF с помощью GroupDocs.Viewer .NET&#58; Подробное руководство"
 "url": "/ru/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать файлы EMZ/EMF с помощью GroupDocs.Viewer .NET: подробное руководство
 ## Основы рендеринга
 В этом руководстве показано, как визуализировать файлы Enhanced Metafile (EMF) или Embedded Metafile (EMZ) с помощью GroupDocs.Viewer для .NET. Независимо от того, интегрируете ли вы универсальные возможности преобразования файлов в свое приложение или управляете документами, в этом руководстве рассматривается визуализация этих форматов в HTML, JPG, PNG и PDF.

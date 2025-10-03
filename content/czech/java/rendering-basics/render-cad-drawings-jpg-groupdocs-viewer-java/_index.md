@@ -4,8 +4,8 @@
 "title": "Renderování CAD výkresů jako JPG pomocí GroupDocs.Viewer v Javě – Komplexní průvodce"
 "url": "/cs/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit CAD výkresy jako JPG pomocí GroupDocs.Viewer v Javě: Podrobný návod
 
 ## Zavedení

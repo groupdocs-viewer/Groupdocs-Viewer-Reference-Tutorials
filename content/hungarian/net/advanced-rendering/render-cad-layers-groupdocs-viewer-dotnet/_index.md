@@ -4,8 +4,8 @@
 "title": "Hogyan jelenítsünk meg bizonyos CAD rétegeket a GroupDocs.Viewer for .NET használatával? Átfogó útmutató"
 "url": "/hu/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan jelenítsünk meg bizonyos CAD rajzrétegeket a GroupDocs.Viewer for .NET használatával?
 
 ## Bevezetés

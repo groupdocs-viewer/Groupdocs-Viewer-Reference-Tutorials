@@ -8,10 +8,8 @@ keywords:
 - render CAD layouts
 - GroupDocs.Viewer for Java
 - Java rendering options
-
+type: docs
 ---
-
-
 # Render All CAD Layouts Efficiently Using GroupDocs.Viewer for Java
 
 ## Introduction

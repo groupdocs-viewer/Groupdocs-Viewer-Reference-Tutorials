@@ -4,8 +4,8 @@
 "title": "Rendi efficiente i documenti HPG in HTML, JPG, PNG, PDF utilizzando GroupDocs.Viewer .NET"
 "url": "/it/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # Come eseguire il rendering di documenti HPG utilizzando GroupDocs.Viewer .NET
 
 ## Introduzione

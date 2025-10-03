@@ -8,10 +8,8 @@ keywords:
 - render TGA files in .NET
 - GroupDocs.Viewer for .NET
 - TGA image rendering
-
+type: docs
 ---
-
-
 # How to Render TGA Files in .NET Using GroupDocs.Viewer: A Comprehensive Guide
 
 ## Introduction

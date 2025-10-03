@@ -5,8 +5,8 @@
 "title": "EMZ- en EMF-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # EMZ- en EMF-afbeeldingen renderen
 
 ## Invoering

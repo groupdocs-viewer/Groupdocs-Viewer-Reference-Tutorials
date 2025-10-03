@@ -5,8 +5,8 @@
 "title": "Geavanceerde laadopties"
 "url": "/nl/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Geavanceerde laadopties
 
 ## Invoering

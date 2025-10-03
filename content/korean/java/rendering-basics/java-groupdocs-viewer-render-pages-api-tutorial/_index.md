@@ -4,8 +4,8 @@
 "title": "Java 가이드&#58; 문서 미리보기 및 관리를 위한 GroupDocs.Viewer API를 사용하여 특정 페이지 렌더링"
 "url": "/ko/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Java 구현: GroupDocs.Viewer API를 사용하여 특정 페이지 렌더링
 
 ## 소개

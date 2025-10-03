@@ -4,8 +4,8 @@
 "title": "Mért licenc implementálása a GroupDocs.Viewerhez Java-ban – Fejlesztői útmutató"
 "url": "/hu/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Mért licenc megvalósítása a GroupDocs.Viewerhez Java-ban: Fejlesztői útmutató
 
 ## Bevezetés

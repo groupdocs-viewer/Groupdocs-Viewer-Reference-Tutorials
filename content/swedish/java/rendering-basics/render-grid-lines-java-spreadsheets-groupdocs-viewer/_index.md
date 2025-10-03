@@ -4,8 +4,8 @@
 "title": "Hur man renderar rutnät i Java-kalkylblad med GroupDocs.Viewer"
 "url": "/sv/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar rutnät i Java-kalkylblad med GroupDocs.Viewer
 
 ## Introduktion

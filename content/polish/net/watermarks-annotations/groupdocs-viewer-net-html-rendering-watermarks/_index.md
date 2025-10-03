@@ -4,8 +4,8 @@
 "title": "Renderowanie dokumentu głównego w .NET przy użyciu GroupDocs.Viewer&#58; Konwersja HTML i integracja znaku wodnego"
 "url": "/pl/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie dokumentu głównego w .NET przy użyciu GroupDocs.Viewer: konwersja HTML i integracja znaku wodnego
 
 ## Wstęp

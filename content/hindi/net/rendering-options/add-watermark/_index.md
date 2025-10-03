@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ में वॉटरमार्क जोड़ें"
 "url": "/hi/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # दस्तावेज़ में वॉटरमार्क जोड़ें
 
 ## परिचय

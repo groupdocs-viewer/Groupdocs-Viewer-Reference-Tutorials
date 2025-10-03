@@ -4,8 +4,8 @@
 "title": "Přizpůsobení formátů data a času a časových pásem v e-mailech pomocí GroupDocs.Viewer .NET"
 "url": "/cs/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Přizpůsobení formátů data a času a časových pásem v e-mailech pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

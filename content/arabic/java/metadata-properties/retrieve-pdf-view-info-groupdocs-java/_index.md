@@ -4,8 +4,8 @@
 "title": "استرداد بيانات PDF وخصائصها باستخدام GroupDocs.Viewer في Java - دليل خطوة بخطوة"
 "url": "/ar/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # استرداد بيانات PDF وخصائصها باستخدام GroupDocs.Viewer في Java
 
 مرحبًا بكم في هذا الدليل الشامل حول استرداد معلومات العرض من مستند PDF باستخدام مكتبة GroupDocs.Viewer في جافا. إذا كنت ترغب في استخراج تفاصيل برمجية مثل عدد الصفحات ونوع المستند والأذونات من ملفات PDF، فأنت في المكان الصحيح.

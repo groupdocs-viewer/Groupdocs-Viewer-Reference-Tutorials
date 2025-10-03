@@ -5,8 +5,8 @@
 "title": "XML SpreadSheetML のレンダリング"
 "url": "/ja/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # XML SpreadSheetML のレンダリング
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "MS Project View-informatie ophalen met GroupDocs.Viewer .NET | Metadata en eigenschappen"
 "url": "/nl/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # MS Project View-informatie ophalen met GroupDocs.Viewer .NET
 
 ## Invoering

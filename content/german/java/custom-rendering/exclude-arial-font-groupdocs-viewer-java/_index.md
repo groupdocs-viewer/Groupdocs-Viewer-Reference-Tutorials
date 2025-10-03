@@ -4,8 +4,8 @@
 "title": "So schließen Sie die Schriftart Arial beim HTML-Rendering mit GroupDocs.Viewer Java aus – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # So schließen Sie die Schriftart Arial beim Rendern von Dokumenten in HTML mit GroupDocs.Viewer Java aus
 
 ## Einführung

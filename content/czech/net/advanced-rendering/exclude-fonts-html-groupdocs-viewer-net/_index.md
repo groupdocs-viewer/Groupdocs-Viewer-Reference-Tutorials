@@ -4,8 +4,8 @@
 "title": "Jak vyloučit konkrétní písma z HTML výstupu pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vyloučit písma z HTML výstupu pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

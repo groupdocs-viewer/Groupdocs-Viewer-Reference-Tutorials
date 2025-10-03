@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak .NET'te IGS Dosyaları Nasıl Oluşturulur? Tam Bir Kılavuz"
 "url": "/tr/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak .NET'te IGS Dosyaları Nasıl Oluşturulur: Eksiksiz Bir Kılavuz
 
 ## giriiş

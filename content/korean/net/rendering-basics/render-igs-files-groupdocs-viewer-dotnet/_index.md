@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 .NET에서 IGS 파일을 렌더링하는 방법 - 완벽한 가이드"
 "url": "/ko/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 .NET에서 IGS 파일을 렌더링하는 방법: 완전한 가이드
 
 ## 소개

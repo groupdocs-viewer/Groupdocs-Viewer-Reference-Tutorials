@@ -5,8 +5,8 @@
 "title": "Microsoft Project Belgelerinin İşlenmesi"
 "url": "/tr/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Microsoft Project Belgelerinin İşlenmesi
 
 ## giriiş

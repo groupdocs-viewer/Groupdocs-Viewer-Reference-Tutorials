@@ -8,10 +8,8 @@ keywords:
 - render FODP with GroupDocs.Viewer Java
 - GroupDocs.Viewer Java setup
 - convert FODP document formats
-
+type: docs
 ---
-
-
 # How to Render FODP Documents with GroupDocs.Viewer for Java: A Complete Guide
 
 ## Introduction

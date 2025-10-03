@@ -4,8 +4,8 @@
 "title": "Java táblázatkezelő nyomtatási területek renderelése a GroupDocs.Viewer for Java programmal – Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Java táblázat nyomtatási területek renderelése a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

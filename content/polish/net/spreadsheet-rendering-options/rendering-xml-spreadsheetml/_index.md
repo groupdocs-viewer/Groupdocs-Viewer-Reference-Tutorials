@@ -5,8 +5,8 @@
 "title": "Renderowanie arkusza kalkulacyjnego XML SpreadSheetML"
 "url": "/pl/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Renderowanie arkusza kalkulacyjnego XML SpreadSheetML
 
 ## Wstęp

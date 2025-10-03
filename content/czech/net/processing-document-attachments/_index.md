@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/cs/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # Zpracování příloh dokumentů
 
 ## Zavedení

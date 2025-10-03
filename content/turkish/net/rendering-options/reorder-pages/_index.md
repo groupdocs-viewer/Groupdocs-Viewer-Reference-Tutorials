@@ -5,8 +5,8 @@
 "title": "Belgedeki Sayfaları Yeniden Sırala"
 "url": "/tr/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Belgedeki Sayfaları Yeniden Sırala
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "E-mail üzenetek megjelenítése"
 "url": "/hu/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # E-mail üzenetek megjelenítése
 
 ## Bevezetés

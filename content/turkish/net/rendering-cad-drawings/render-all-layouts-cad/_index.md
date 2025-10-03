@@ -5,8 +5,8 @@
 "title": "Tüm Düzenleri CAD Çizimlerinde Oluştur"
 "url": "/tr/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Tüm Düzenleri CAD Çizimlerinde Oluştur
 
 ## giriiş

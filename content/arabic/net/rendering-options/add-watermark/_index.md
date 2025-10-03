@@ -5,8 +5,8 @@
 "title": "إضافة علامة مائية في المستند"
 "url": "/ar/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # إضافة علامة مائية في المستند
 
 ## مقدمة

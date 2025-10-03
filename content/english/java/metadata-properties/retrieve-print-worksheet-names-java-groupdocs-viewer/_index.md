@@ -8,10 +8,8 @@ keywords:
 - extract worksheet names Java
 - retrieve spreadsheet sheets GroupDocs
 - automate document processing Java
-
+type: docs
 ---
-
-
 # Extract and Display Worksheet Names in Java Using GroupDocs.Viewer API
 
 ## Introduction

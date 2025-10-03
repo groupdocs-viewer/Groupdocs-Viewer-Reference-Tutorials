@@ -5,8 +5,8 @@
 "title": "고급 로딩 옵션"
 "url": "/ko/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # 고급 로딩 옵션
 
 ## 소개

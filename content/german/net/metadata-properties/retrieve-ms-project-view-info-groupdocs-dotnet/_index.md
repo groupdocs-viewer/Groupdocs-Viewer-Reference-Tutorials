@@ -4,8 +4,8 @@
 "title": "Abrufen von MS Project-Ansichtsinformationen mit GroupDocs.Viewer .NET | Metadaten und Eigenschaften"
 "url": "/de/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Abrufen von MS Project-Ansichtsinformationen mit GroupDocs.Viewer .NET
 
 ## Einführung

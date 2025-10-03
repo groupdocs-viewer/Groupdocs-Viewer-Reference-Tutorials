@@ -4,8 +4,8 @@
 "title": "Förbättra PDF-rendering i .NET &#53; Aktivera teckensnittstips med GroupDocs.Viewer"
 "url": "/sv/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Så här förbättrar du PDF-rendering i .NET med GroupDocs.Viewer: Aktivera teckensnittstips
 
 ## Introduktion

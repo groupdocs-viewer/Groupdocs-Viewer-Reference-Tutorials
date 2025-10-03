@@ -4,8 +4,8 @@
 "title": "Rendern Sie Projektdokumente nach Zeitintervallen mit GroupDocs.Viewer für Java"
 "url": "/de/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # So implementieren Sie das Rendern von Projektdokumenten mit Zeitintervallen mithilfe von GroupDocs.Viewer für Java
 
 ## Einführung

@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 的文件安全與存取控制教學課程"
 "url": "/zh-hant/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 的文件安全與存取控制教學課程
 
 透過我們針對 .NET 開發人員的全面 GroupDocs.Viewer 安全教學，學習如何安全地檢視文件。這些詳細的指南示範如何實現密碼保護、管理文件權限、處理加密文件以及如何以程式方式控制對敏感文件的存取。每個教學課程都提供了常見安全場景的 .NET 程式碼範例，可協助您建立既能維護文件機密性和完整性，又能提供受控檢視功能的應用程式。

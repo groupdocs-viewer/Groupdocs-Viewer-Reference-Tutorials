@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 문서 정보 추출 및 출력 사용자 정의 - 포괄적인 가이드"
 "url": "/ko/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 문서 정보 추출 및 출력 사용자 지정
 ## 사용자 정의 렌더링 튜토리얼
 ### 배울 내용:

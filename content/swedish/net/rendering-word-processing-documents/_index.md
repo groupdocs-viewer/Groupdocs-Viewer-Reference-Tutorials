@@ -5,8 +5,8 @@
 "title": "Rendera ordbehandlingsdokument"
 "url": "/sv/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Rendera ordbehandlingsdokument
 
 

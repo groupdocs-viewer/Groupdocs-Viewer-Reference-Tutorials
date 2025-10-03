@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 將 DOCX 渲染為 PNG——逐步指南"
 "url": "/zh-hant/net/rendering-basics/render-docx-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 將 DOCX 渲染為 PNG：逐步指南
 ## 渲染基礎
 ### 介紹

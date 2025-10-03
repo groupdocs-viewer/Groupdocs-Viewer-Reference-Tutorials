@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Hướng dẫn bắt đầu cho các nhà phát triển Java"
 "url": "/vi/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Hướng dẫn bắt đầu cho các nhà phát triển Java
 
 Bắt đầu hành trình của bạn với các hướng dẫn thiết yếu của GroupDocs.Viewer hướng dẫn bạn cài đặt, cấu hình cấp phép và tạo trình xem tài liệu đầu tiên của bạn trong Java. Các hướng dẫn dành cho người mới bắt đầu của chúng tôi trình bày cách thiết lập môi trường phát triển của bạn, khởi tạo thư viện GroupDocs.Viewer và thực hiện các hoạt động kết xuất tài liệu cơ bản. Làm theo các hướng dẫn này để nhanh chóng nắm vững những điều cơ bản và chuẩn bị cho các tác vụ xem tài liệu nâng cao hơn trong các ứng dụng Java của bạn.

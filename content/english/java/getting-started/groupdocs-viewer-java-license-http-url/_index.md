@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java License
 - Java License HTTP URL
 - Maven GroupDocs.Viewer
-
+type: docs
 ---
-
-
 # How to Set a GroupDocs.Viewer Java License Using an HTTP URL
 
 In today's fast-paced digital environment, properly licensing document management tools is essential for seamless operations. This comprehensive guide will show you how to set a license for GroupDocs.Viewer in Java using an HTTP URL—streamlining your workflow without the need for local downloads. Mastering this process enhances both application compliance and efficiency.

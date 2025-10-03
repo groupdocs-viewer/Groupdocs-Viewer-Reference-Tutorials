@@ -5,8 +5,8 @@
 "title": "渲染带注释的文档"
 "url": "/zh/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # 渲染带注释的文档
 
 ## 介绍

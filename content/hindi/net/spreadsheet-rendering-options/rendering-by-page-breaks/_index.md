@@ -5,8 +5,8 @@
 "title": "पेज ब्रेक द्वारा रेंडरिंग"
 "url": "/hi/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # पेज ब्रेक द्वारा रेंडरिंग
 
 ## परिचय

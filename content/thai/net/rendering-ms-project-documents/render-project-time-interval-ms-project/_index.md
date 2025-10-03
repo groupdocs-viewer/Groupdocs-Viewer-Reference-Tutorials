@@ -5,8 +5,8 @@
 "title": "ช่วงเวลาการเรนเดอร์เฉพาะโครงการ (MS Project)"
 "url": "/th/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # ช่วงเวลาการเรนเดอร์เฉพาะโครงการ (MS Project)
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Hatékony CAD elrendezés-renderelés a GroupDocs.Viewer for .NET segítségével – lépésről lépésre útmutató"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Hatékony CAD elrendezés-renderelés a GroupDocs.Viewer for .NET segítségével
 
 ## Bevezetés

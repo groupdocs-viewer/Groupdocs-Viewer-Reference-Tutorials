@@ -5,8 +5,8 @@
 "title": "Rejtett oszlopok és sorok megjelenítése"
 "url": "/hu/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Rejtett oszlopok és sorok megjelenítése
 
 ## Bevezetés

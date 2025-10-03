@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh AI"
 "url": "/vi/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Kết xuất hình ảnh AI
 
 ## Giới thiệu

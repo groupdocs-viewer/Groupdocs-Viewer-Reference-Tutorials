@@ -5,8 +5,8 @@
 "title": "दिनांक-समय प्रारूप और समय क्षेत्र ऑफसेट सेट करें (ईमेल)"
 "url": "/hi/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # दिनांक-समय प्रारूप और समय क्षेत्र ऑफसेट सेट करें (ईमेल)
 
 

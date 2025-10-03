@@ -4,8 +4,8 @@
 "title": "Como renderizar apresentações com notas usando GroupDocs.Viewer para Java - Um guia completo"
 "url": "/pt/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar apresentações com notas usando GroupDocs.Viewer para Java
 
 ## Introdução

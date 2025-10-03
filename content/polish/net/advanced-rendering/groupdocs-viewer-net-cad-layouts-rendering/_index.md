@@ -4,8 +4,8 @@
 "title": "Efektywne renderowanie układów CAD z GroupDocs.Viewer dla .NET&#58; Przewodnik krok po kroku"
 "url": "/pl/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Efektywne renderowanie układów CAD z GroupDocs.Viewer dla .NET
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Otimize a renderização de planilhas Java e ignore colunas vazias com GroupDocs.Viewer"
 "url": "/pt/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Como otimizar a renderização de planilhas em Java: ignorando colunas vazias com GroupDocs.Viewer
 
 ## Introdução

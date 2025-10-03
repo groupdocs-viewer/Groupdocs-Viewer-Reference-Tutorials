@@ -5,8 +5,8 @@
 "title": "Tekstselectie in PDF uitschakelen"
 "url": "/nl/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Tekstselectie in PDF uitschakelen
 
 ## Invoering

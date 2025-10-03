@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer untuk Java; Ambil dan Cetak Lampiran Dokumen"
 "url": "/id/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer untuk Java: Mengambil dan Mencetak Lampiran Dokumen
 
 ## Perkenalan

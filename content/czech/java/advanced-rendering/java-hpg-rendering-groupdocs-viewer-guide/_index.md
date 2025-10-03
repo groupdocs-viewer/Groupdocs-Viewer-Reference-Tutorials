@@ -4,8 +4,8 @@
 "title": "Vykreslování HPG v Javě pomocí GroupDocs.Viewer – kompletní průvodce"
 "url": "/cs/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Komplexní průvodce implementací vykreslování HPG v jazyce Java pomocí GroupDocs.Viewer
 
 ## Zavedení

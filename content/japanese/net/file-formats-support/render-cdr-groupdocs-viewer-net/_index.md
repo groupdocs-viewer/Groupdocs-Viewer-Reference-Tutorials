@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用して CDR ドキュメントをレンダリングする方法 - 包括的なガイド"
 "url": "/ja/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して CDR ドキュメントをレンダリングする方法
 
 ## 導入

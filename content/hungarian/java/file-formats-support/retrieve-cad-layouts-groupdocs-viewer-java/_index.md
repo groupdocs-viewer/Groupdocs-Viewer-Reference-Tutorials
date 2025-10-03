@@ -4,8 +4,8 @@
 "title": "CAD elrendezések és rétegek lekérése Java-ban a GroupDocs.Viewer segítségével"
 "url": "/hu/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD-elrendezések és rétegek lekérése a GroupDocs.Viewer for Java használatával
 
 A mérnöki és tervezési világban a számítógéppel segített tervezés (CAD) fájlok nélkülözhetetlen eszközök, amelyek hatalmas mennyiségű részletes információt tárolnak a tervekről. Ezek a fájlok összetettek lehetnek, több elrendezést és réteget tartalmazhatnak, amelyek precíz kezelést és visszakeresést igényelnek a hatékony projektvégrehajtáshoz. Ha programozottan szeretne kinyerni bizonyos részleteket a CAD-rajzokból Java-ban, a GroupDocs.Viewer for Java a megfelelő megoldás. Ez az oktatóanyag végigvezeti Önt azon, hogyan lehet az összes elrendezést és réteget visszakeresni egy CAD-rajzból a GroupDocs.Viewer segítségével.

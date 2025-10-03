@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; ZIP archívumokból HTML formátumba renderelt mappák"
 "url": "/hu/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Oktatóanyag: GroupDocs.Viewer .NET implementálása adott mappák ZIP archívumokból HTML formátumba rendereléséhez
 
 ## Bevezetés

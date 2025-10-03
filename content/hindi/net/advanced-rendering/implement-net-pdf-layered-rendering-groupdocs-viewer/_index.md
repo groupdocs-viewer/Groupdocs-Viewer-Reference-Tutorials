@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ .NET PDF लेयर्ड रेंडरिंग में महारत हासिल करें एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ .NET PDF लेयर्ड रेंडरिंग में महारत हासिल करें: एक चरण-दर-चरण मार्गदर्शिका
 
 ## परिचय

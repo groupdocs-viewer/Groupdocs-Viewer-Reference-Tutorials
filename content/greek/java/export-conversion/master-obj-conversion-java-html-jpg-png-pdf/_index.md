@@ -4,8 +4,8 @@
 "title": "Κατανόηση της μετατροπής OBJ σε HTML/JPG/PNG/PDF σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Mastering Μετατροπή Αρχείων: Μετατροπή OBJ σε HTML/JPG/PNG/PDF σε Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

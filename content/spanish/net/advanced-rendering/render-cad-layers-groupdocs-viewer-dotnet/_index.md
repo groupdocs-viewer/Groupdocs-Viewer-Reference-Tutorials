@@ -4,8 +4,8 @@
 "title": "Cómo renderizar capas CAD específicas con GroupDocs.Viewer para .NET&#58; una guía completa"
 "url": "/es/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cómo renderizar capas específicas de dibujo CAD usando GroupDocs.Viewer para .NET
 
 ## Introducción

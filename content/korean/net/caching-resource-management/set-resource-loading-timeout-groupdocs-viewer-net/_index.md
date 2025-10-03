@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer에서 리소스 로딩 시간 초과 구현 - 전체 가이드"
 "url": "/ko/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer에서 리소스 로딩 시간 초과 구현
 
 ## 소개

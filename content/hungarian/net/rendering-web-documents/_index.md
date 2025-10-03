@@ -5,8 +5,8 @@
 "title": "Webes dokumentumok renderelése"
 "url": "/hu/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Webes dokumentumok renderelése
 
 ## Bevezetés

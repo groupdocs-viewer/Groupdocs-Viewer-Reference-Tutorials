@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ में पृष्ठों को पुनः क्रमित करें"
 "url": "/hi/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # दस्तावेज़ में पृष्ठों को पुनः क्रमित करें
 
 ## परिचय

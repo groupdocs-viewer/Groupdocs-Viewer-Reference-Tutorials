@@ -4,8 +4,8 @@
 "title": "Visualizza email con data e ora personalizzate in Java utilizzando GroupDocs.Viewer"
 "url": "/it/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Visualizza email con data e ora personalizzate in Java utilizzando GroupDocs.Viewer
 
 ## Introduzione

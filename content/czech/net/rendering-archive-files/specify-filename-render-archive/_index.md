@@ -5,8 +5,8 @@
 "title": "Zadání názvu souboru při vykreslování archivních souborů"
 "url": "/cs/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Zadání názvu souboru při vykreslování archivních souborů
 
 ## Zavedení

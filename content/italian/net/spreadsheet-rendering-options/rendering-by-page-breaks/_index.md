@@ -5,8 +5,8 @@
 "title": "Rendering tramite interruzioni di pagina"
 "url": "/it/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Rendering tramite interruzioni di pagina
 
 ## Introduzione

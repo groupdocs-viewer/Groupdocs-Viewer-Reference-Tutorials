@@ -4,8 +4,8 @@
 "title": "Documentanalyse implementeren met GroupDocs.Viewer voor Java&#58; paginametagegevens en tekstregels extraheren"
 "url": "/nl/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Documentanalyse implementeren met GroupDocs.Viewer voor Java: paginametagegevens en tekstregels extraheren
 
 ## Invoering

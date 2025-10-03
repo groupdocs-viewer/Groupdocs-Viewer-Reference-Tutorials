@@ -5,8 +5,8 @@
 "title": "Bildwiedergabe"
 "url": "/de/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Bildwiedergabe
 
 

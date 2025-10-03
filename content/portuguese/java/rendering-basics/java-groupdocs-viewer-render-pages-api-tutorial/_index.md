@@ -4,8 +4,8 @@
 "title": "Guia Java - Renderizar páginas específicas com a API GroupDocs.Viewer para visualização e gerenciamento de documentos"
 "url": "/pt/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Implementando Java: Renderizar páginas específicas com a API GroupDocs.Viewer
 
 ## Introdução

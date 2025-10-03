@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 和 HTML 轉換與浮水印整合掌握 .NET 中的文件渲染"
 "url": "/zh-hant/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET 中的文件渲染：HTML 轉換和浮水印集成
 
 ## 介紹

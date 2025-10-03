@@ -5,8 +5,8 @@
 "title": "取得工作表名稱"
 "url": "/zh-hant/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # 取得工作表名稱
 
 ## 介紹

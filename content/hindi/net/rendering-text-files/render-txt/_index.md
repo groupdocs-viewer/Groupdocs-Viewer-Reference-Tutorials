@@ -5,8 +5,8 @@
 "title": "टेक्स्ट फ़ाइलें (.txt) प्रस्तुत करें"
 "url": "/hi/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # टेक्स्ट फ़ाइलें (.txt) प्रस्तुत करें
 
 ## परिचय

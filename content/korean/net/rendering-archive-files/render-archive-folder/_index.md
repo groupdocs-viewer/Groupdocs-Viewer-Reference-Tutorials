@@ -5,8 +5,8 @@
 "title": "렌더 아카이브 폴더"
 "url": "/ko/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # 렌더 아카이브 폴더
 
 ## 소개

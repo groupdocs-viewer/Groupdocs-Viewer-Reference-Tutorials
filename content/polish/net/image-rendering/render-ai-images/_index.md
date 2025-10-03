@@ -5,8 +5,8 @@
 "title": "Renderuj obrazy AI"
 "url": "/pl/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Renderuj obrazy AI
 
 ## Wstęp

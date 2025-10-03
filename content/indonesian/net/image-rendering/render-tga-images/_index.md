@@ -5,8 +5,8 @@
 "title": "Render Gambar TGA"
 "url": "/id/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # Render Gambar TGA
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "渲染特定项目时间间隔（MS Project）"
 "url": "/zh/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # 渲染特定项目时间间隔（MS Project）
 
 ## 介绍

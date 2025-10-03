@@ -4,8 +4,8 @@
 "title": "在 GroupDocs.Viewer for .NET 中實作資源載入逾時 - 完整指南"
 "url": "/zh-hant/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer for .NET 中實作資源載入逾時
 
 ## 介紹

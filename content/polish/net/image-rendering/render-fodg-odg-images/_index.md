@@ -5,8 +5,8 @@
 "title": "Renderuj obrazy FODG i ODG"
 "url": "/pl/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # Renderuj obrazy FODG i ODG
 
 ## Wstęp

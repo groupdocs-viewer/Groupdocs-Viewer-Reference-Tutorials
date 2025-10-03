@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 將 HPG 文件有效地渲染為 HTML、JPG、PNG、PDF"
 "url": "/zh-hant/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 呈現 HPG 文檔
 
 ## 介紹

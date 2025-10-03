@@ -4,8 +4,8 @@
 "title": "Tối ưu hóa kích thước bản vẽ CAD bằng GroupDocs.Viewer .NET để nâng cao hiệu suất web"
 "url": "/vi/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Tối ưu hóa kích thước bản vẽ CAD bằng GroupDocs.Viewer .NET để nâng cao hiệu suất web
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "如何使用 Java 中的 GroupDocs.Viewer 呈現 Outlook 資料檔－逐步指南"
 "url": "/zh-hant/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 Java 中的 GroupDocs.Viewer 呈現 Outlook 資料檔：逐步指南
 
 ## 介紹

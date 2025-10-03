@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak Apple Sayılarını HTML, JPG, PNG, PDF'ye Dönüştürün"
 "url": "/tr/net/export-conversion/convert-apple-numbers-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak Apple Sayılarını HTML, JPG, PNG, PDF'ye Dönüştürün
 
 ## giriiş

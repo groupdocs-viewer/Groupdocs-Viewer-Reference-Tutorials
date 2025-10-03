@@ -4,8 +4,8 @@
 "title": "Kết xuất bố cục CAD hiệu quả với GroupDocs.Viewer cho .NET&#58; Hướng dẫn từng bước"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất bố cục CAD hiệu quả với GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

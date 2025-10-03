@@ -5,8 +5,8 @@
 "title": "Ottieni informazioni di visualizzazione per il documento PDF"
 "url": "/it/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Ottieni informazioni di visualizzazione per il documento PDF
 
 ## Introduzione

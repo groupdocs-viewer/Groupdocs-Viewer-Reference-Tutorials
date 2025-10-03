@@ -4,8 +4,8 @@
 "title": "عرض رسائل البريد الإلكتروني باستخدام التاريخ والوقت المخصصين في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض رسائل البريد الإلكتروني باستخدام التاريخ والوقت المخصصين في Java باستخدام GroupDocs.Viewer
 
 ## مقدمة

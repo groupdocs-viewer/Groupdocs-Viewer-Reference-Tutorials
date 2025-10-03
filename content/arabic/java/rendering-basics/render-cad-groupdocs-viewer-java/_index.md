@@ -4,8 +4,8 @@
 "title": "كيفية عرض رسومات CAD محددة في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض رسومات CAD محددة في Java باستخدام GroupDocs.Viewer
 
 ## مقدمة

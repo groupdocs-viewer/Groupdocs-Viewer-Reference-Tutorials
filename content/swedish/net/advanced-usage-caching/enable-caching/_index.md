@@ -5,8 +5,8 @@
 "title": "Aktivera cachning för snabbare dokumentbehandling"
 "url": "/sv/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Aktivera cachning för snabbare dokumentbehandling
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "Átfogó oktatóanyagok és példák a GroupDocs.Viewer for .NET használatához"
 "url": "/hu/net/"
 "weight": 10
+type: docs
 ---
-
 # Átfogó oktatóanyagok és példák a GroupDocs.Viewer for .NET használatához
 
 ## Bevezetés

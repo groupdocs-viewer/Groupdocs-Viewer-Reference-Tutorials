@@ -4,8 +4,8 @@
 "title": "Разделение листов Excel на страницы по строкам с помощью GroupDocs.Viewer .NET для эффективного управления данными"
 "url": "/ru/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Разделение листов Excel на страницы по строкам с помощью GroupDocs.Viewer .NET
 
 ## Введение

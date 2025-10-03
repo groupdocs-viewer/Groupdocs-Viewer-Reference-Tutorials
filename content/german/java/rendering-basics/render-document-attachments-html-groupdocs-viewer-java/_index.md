@@ -4,8 +4,8 @@
 "title": "Dokumentanhänge mit GroupDocs.Viewer Java in HTML rendern – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendern Sie Dokumentanhänge in HTML mit GroupDocs.Viewer Java
 
 ## Einführung

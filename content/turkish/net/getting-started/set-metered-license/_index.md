@@ -5,8 +5,8 @@
 "title": "Ölçülü Lisans Ayarla"
 "url": "/tr/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Ölçülü Lisans Ayarla
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Πώς να κάνετε απόδοση παρουσιάσεων με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε παρουσιάσεις με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": ".NET में GroupDocs.Viewer'HTML रूपांतरण और वॉटरमार्क एकीकरण का उपयोग करके मास्टर दस्तावेज़ रेंडरिंग"
 "url": "/hi/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके .NET में मास्टर दस्तावेज़ रेंडरिंग: HTML रूपांतरण और वॉटरमार्क एकीकरण
 
 ## परिचय

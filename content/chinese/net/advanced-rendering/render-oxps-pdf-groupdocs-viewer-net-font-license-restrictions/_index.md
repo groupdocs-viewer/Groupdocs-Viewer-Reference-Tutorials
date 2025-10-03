@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 渲染具有字体限制的 PDF/OXPS 综合指南"
 "url": "/zh/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 渲染具有字体限制的 PDF/OXPS：综合指南
 
 ## 介绍

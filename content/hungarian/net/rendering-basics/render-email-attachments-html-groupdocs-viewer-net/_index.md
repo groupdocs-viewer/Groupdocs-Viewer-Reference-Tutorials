@@ -4,8 +4,8 @@
 "title": "E-mail mellékletek HTML formátumba renderelése a GroupDocs.Viewer for .NET segítségével"
 "url": "/hu/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # E-mail mellékletek HTML formátumba renderelése a GroupDocs.Viewer for .NET használatával
 ## Bevezetés
 Szüksége van egy hatékony módszerre az e-mail mellékletek könnyen látható HTML formátumba konvertálására? Akár a dokumentumok hozzáférhetőségének javításáról, akár a tartalommegosztás egyszerűsítéséről van szó, a mellékletek megjelenítése elengedhetetlen a hatékony digitális levelezéskezeléshez. Ez az útmutató végigvezeti Önt a használatán. **GroupDocs.Viewer .NET-hez** hogy ezt könnyedén elérje.

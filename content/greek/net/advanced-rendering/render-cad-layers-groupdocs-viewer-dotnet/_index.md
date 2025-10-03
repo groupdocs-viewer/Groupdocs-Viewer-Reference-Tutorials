@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε συγκεκριμένα επίπεδα CAD χρησιμοποιώντας το GroupDocs.Viewer για .NET™; Ένας πλήρης οδηγός"
 "url": "/el/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε συγκεκριμένα επίπεδα σχεδίασης CAD χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

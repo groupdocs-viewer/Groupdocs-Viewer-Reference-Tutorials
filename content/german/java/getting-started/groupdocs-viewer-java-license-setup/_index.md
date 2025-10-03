@@ -4,8 +4,8 @@
 "title": "So legen Sie Lizenzen in GroupDocs.Viewer fest – Anleitung zur Einrichtung von Java-Dateien und URLs"
 "url": "/de/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # So legen Sie Lizenzen in GroupDocs.Viewer Java fest: Anleitung zur Datei- und URL-Einrichtung
 
 ## Einführung

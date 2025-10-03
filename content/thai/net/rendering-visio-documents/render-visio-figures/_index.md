@@ -5,8 +5,8 @@
 "title": "เรนเดอร์รูปภาพ Visio"
 "url": "/th/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # เรนเดอร์รูปภาพ Visio
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Rejtett sorok és oszlopok renderelése Java táblázatokban a GroupDocs.Viewer használatával"
 "url": "/hu/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rejtett sorok és oszlopok renderelése Java táblázatokban a GroupDocs.Viewer használatával
 
 ## Bevezetés

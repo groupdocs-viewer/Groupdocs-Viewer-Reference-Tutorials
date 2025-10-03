@@ -5,8 +5,8 @@
 "title": "渲染文字文件"
 "url": "/zh-hant/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # 渲染文字文件
 
 ## 介紹

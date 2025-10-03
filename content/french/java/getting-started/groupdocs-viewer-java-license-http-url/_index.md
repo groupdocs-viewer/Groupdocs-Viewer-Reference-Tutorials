@@ -4,8 +4,8 @@
 "title": "Comment définir une licence Java GroupDocs.Viewer à l'aide d'une URL HTTP ? Un guide complet"
 "url": "/fr/java/getting-started/groupdocs-viewer-java-license-http-url/"
 "weight": 1
+type: docs
 ---
-
 # Comment définir une licence Java GroupDocs.Viewer à l'aide d'une URL HTTP
 
 Dans l'environnement numérique actuel en constante évolution, il est essentiel de gérer correctement les licences des outils de gestion documentaire pour garantir la fluidité de vos opérations. Ce guide complet vous explique comment configurer une licence pour GroupDocs.Viewer en Java via une URL HTTP, simplifiant ainsi votre flux de travail sans téléchargement local. Maîtriser ce processus améliore la conformité et l'efficacité de vos applications.

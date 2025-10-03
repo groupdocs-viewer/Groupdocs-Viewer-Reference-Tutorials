@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; 將特定資料夾從 ZIP 檔案渲染為 HTML"
 "url": "/zh-hant/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # 教學課程：實作 GroupDocs.Viewer .NET 將特定資料夾從 ZIP 檔案渲染為 HTML
 
 ## 介紹

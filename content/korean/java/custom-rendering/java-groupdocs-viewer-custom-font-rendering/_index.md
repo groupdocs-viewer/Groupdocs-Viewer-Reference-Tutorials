@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 글꼴 렌더링을 구현하는 방법 - 단계별 가이드"
 "url": "/ko/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 글꼴 렌더링을 구현하는 방법: 단계별 가이드
 
 ## 소개

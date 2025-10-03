@@ -5,8 +5,8 @@
 "title": "Визуализация документа с комментариями"
 "url": "/ru/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Визуализация документа с комментариями
 
 ## Введение

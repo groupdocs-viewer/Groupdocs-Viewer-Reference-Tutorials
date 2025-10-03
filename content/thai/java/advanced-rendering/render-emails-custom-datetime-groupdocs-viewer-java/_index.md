@@ -4,8 +4,8 @@
 "title": "เรนเดอร์อีเมลด้วย DateTime ที่กำหนดเองใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์อีเมลด้วย DateTime ที่กำหนดเองใน Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

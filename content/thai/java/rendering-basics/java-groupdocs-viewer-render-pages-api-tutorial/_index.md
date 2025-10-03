@@ -4,8 +4,8 @@
 "title": "คู่มือ Java สำหรับการเรนเดอร์หน้าเฉพาะด้วย GroupDocs.Viewer API สำหรับการดูตัวอย่างและการจัดการเอกสาร"
 "url": "/th/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # การใช้งาน Java: เรนเดอร์หน้าเฉพาะด้วย GroupDocs.Viewer API
 
 ## การแนะนำ

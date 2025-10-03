@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer で .NET PDF の階層化レンダリングをマスターする - ステップバイステップガイド"
 "url": "/ja/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer で .NET PDF の階層化レンダリングをマスターする: ステップバイステップガイド
 
 ## 導入

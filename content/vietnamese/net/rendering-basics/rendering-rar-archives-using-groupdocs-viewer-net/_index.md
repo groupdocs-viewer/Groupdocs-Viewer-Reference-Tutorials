@@ -4,8 +4,8 @@
 "title": "Cách kết xuất các tệp lưu trữ RAR sang các định dạng HTML, JPG, PNG và PDF bằng GroupDocs.Viewer .NET"
 "url": "/vi/net/rendering-basics/rendering-rar-archives-using-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất các tệp lưu trữ RAR sang nhiều định dạng khác nhau bằng GroupDocs.Viewer .NET
 
 Trong thế giới dữ liệu ngày nay, việc quản lý và chia sẻ các tệp nén như tệp lưu trữ RAR một cách hiệu quả là rất quan trọng. Cho dù bạn là nhà phát triển tích hợp khả năng chuyển đổi tệp vào ứng dụng của mình hay là người cần trích xuất nội dung từ các tệp RAR cho nhiều mục đích khác nhau, GroupDocs.Viewer for .NET đều cung cấp các giải pháp mạnh mẽ. Trong hướng dẫn này, chúng ta sẽ khám phá cách hiển thị các tệp lưu trữ RAR thành các định dạng HTML, JPG, PNG và PDF bằng GroupDocs.Viewer for .NET.

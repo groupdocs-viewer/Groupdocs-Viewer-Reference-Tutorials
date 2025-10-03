@@ -4,8 +4,8 @@
 "title": "Chuyển đổi Lưu trữ sang HTML với GroupDocs.Viewer Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # Chuyển đổi Lưu trữ sang HTML với GroupDocs.Viewer Java: Hướng dẫn toàn diện
 
 ## Giới thiệu

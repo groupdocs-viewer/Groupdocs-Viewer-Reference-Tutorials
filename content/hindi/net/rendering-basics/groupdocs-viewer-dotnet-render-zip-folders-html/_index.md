@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET'ZIP अभिलेखागार से HTML में विशिष्ट फ़ोल्डर्स प्रस्तुत करता है"
 "url": "/hi/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # ट्यूटोरियल: ZIP अभिलेखागार से HTML में विशिष्ट फ़ोल्डर्स को प्रस्तुत करने के लिए GroupDocs.Viewer .NET को लागू करना
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "การนำการบันทึกข้อมูลที่มีประสิทธิภาพไปใช้ใน GroupDocs.Viewer .NET สำหรับคอนโซลและเอาต์พุตไฟล์"
 "url": "/th/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # การนำการบันทึกข้อมูลที่มีประสิทธิภาพไปใช้ใน GroupDocs.Viewer .NET
 
 ## การแนะนำ

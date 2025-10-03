@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 擷取 Outlook 資料資訊"
 "url": "/zh-hant/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 擷取 Outlook 資料資訊
 
 ## 介紹

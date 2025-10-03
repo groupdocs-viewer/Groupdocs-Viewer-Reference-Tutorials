@@ -5,8 +5,8 @@
 "title": "Wyłącz zaznaczanie tekstu w pliku PDF"
 "url": "/pl/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Wyłącz zaznaczanie tekstu w pliku PDF
 
 ## Wstęp

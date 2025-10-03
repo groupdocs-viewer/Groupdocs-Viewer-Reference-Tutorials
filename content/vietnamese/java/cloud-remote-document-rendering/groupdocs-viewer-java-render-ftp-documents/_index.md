@@ -4,8 +4,8 @@
 "title": "Kết xuất tài liệu từ FTP bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tài liệu từ FTP bằng GroupDocs.Viewer cho Java: Hướng dẫn toàn diện
 
 ## Giới thiệu

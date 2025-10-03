@@ -5,8 +5,8 @@
 "title": "Renderuj wszystkie układy na rysunkach CAD"
 "url": "/pl/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Renderuj wszystkie układy na rysunkach CAD
 
 ## Wstęp

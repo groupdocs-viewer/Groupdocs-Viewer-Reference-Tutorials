@@ -4,8 +4,8 @@
 "title": "Wdrażanie licencji licznikowej dla GroupDocs.Viewer w Javie — Podręcznik programisty"
 "url": "/pl/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Wdrażanie licencji licznikowej dla GroupDocs.Viewer dla Java: Podręcznik programisty
 
 ## Wstęp

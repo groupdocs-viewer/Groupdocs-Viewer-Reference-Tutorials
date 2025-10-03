@@ -5,8 +5,8 @@
 "title": "渲染追蹤的更改"
 "url": "/zh-hant/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # 渲染追蹤的更改
 
 ## 介紹

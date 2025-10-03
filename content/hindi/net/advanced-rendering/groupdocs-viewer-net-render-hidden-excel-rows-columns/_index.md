@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके Excel फ़ाइलों में छिपी हुई पंक्तियाँ और स्तंभ प्रस्तुत करें - उन्नत गाइड"
 "url": "/hi/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके Excel फ़ाइलों में छिपी हुई पंक्तियाँ और स्तंभ प्रस्तुत करें
 
 ## परिचय

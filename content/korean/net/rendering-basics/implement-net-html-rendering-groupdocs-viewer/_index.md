@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 .NET HTML 렌더링을 구현하는 방법&#58; 단계별 가이드"
 "url": "/ko/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 .NET HTML 렌더링을 구현하는 방법: 단계별 가이드
 
 ## 소개

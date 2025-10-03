@@ -4,8 +4,8 @@
 "title": "Načtení informací o zobrazení projektu MS pomocí GroupDocs.Viewer .NET | Metadata a vlastnosti"
 "url": "/cs/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Načtení informací o zobrazení projektu MS pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

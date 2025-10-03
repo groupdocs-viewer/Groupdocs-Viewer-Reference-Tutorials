@@ -5,8 +5,8 @@
 "title": "บทช่วยสอนและตัวอย่างที่ครอบคลุมของ GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/"
 "weight": 10
+type: docs
 ---
-
 # บทช่วยสอนและตัวอย่างที่ครอบคลุมของ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Átfogó útmutató az Excel 2003 XML konvertálásához HTML/JPG/PNG/PDF formátumba a GroupDocs.Viewer Java segítségével"
 "url": "/hu/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Átfogó útmutató: Excel 2003 XML konvertálása HTML/JPG/PNG/PDF formátumba a GroupDocs.Viewer Java segítségével
 
 ## Bevezetés

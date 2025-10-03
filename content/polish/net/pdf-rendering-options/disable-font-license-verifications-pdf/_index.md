@@ -5,8 +5,8 @@
 "title": "Wyłącz weryfikację licencji czcionek w formacie PDF"
 "url": "/pl/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Wyłącz weryfikację licencji czcionek w formacie PDF
 
 ## Wstęp

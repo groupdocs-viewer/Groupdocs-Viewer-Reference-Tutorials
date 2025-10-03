@@ -4,8 +4,8 @@
 "title": "Documentbijlagen ophalen en opslaan met GroupDocs.Viewer voor Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Documentbijlagen ophalen en opslaan met GroupDocs.Viewer voor Java: een uitgebreide handleiding
 
 ## Invoering

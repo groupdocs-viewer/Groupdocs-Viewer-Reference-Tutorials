@@ -4,8 +4,8 @@
 "title": "Cara Mendeteksi Jenis File Menggunakan GroupDocs.Viewer untuk .NET&#58; Tutorial Lengkap"
 "url": "/id/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mendeteksi Jenis File Menggunakan GroupDocs.Viewer untuk .NET: Tutorial Lengkap
 
 ## Perkenalan

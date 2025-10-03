@@ -5,8 +5,8 @@
 "title": "CAD 도면의 렌더 레이어"
 "url": "/ko/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # CAD 도면의 렌더 레이어
 
 ## 소개

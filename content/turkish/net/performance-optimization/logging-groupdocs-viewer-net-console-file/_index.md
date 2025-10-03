@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET'te Konsol ve Dosya Çıktıları için Etkili Günlük Kaydı Uygulama"
 "url": "/tr/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET'te Etkili Günlük Kaydı Uygulama
 
 ## giriiş

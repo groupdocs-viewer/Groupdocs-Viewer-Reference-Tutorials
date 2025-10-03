@@ -4,8 +4,8 @@
 "title": "Tùy chỉnh nhãn email trong GroupDocs.Viewer cho .NET&#58; Hướng dẫn đầy đủ về cách đổi tên trường"
 "url": "/vi/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Tùy chỉnh nhãn email trong GroupDocs.Viewer cho .NET: Hướng dẫn đầy đủ về cách đổi tên trường
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "عرض تخطيط واحد في رسومات CAD"
 "url": "/ar/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # عرض تخطيط واحد في رسومات CAD
 
 ## مقدمة

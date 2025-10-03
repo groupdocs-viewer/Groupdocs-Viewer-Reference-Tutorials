@@ -5,8 +5,8 @@
 "title": "Określ nazwę pliku podczas renderowania plików archiwum"
 "url": "/pl/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Określ nazwę pliku podczas renderowania plików archiwum
 
 ## Wstęp

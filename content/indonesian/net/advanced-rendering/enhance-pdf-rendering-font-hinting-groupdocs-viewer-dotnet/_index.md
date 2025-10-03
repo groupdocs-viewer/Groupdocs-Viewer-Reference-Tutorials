@@ -4,8 +4,8 @@
 "title": "Meningkatkan Rendering PDF di .NET; Mengaktifkan Font Hinting dengan GroupDocs.Viewer"
 "url": "/id/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cara Meningkatkan Rendering PDF di .NET Menggunakan GroupDocs.Viewer: Aktifkan Font Hinting
 
 ## Perkenalan

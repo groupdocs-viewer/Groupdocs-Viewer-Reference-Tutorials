@@ -5,8 +5,8 @@
 "title": "Отображать адаптивный HTML"
 "url": "/ru/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Отображать адаптивный HTML
 
 ## Введение

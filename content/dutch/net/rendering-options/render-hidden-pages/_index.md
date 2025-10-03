@@ -5,8 +5,8 @@
 "title": "Verborgen pagina's weergeven"
 "url": "/nl/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Verborgen pagina's weergeven
 
 ## Invoering

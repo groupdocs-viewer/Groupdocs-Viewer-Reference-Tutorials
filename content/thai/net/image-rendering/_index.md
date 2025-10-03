@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ภาพ"
 "url": "/th/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # การเรนเดอร์ภาพ
 
 

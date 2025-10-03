@@ -4,8 +4,8 @@
 "title": "Como redimensionar imagens com GroupDocs.Viewer .NET - Um guia passo a passo para desenvolvedores"
 "url": "/pt/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Como redimensionar imagens com o GroupDocs.Viewer .NET: um guia passo a passo para desenvolvedores
 
 ## Introdução

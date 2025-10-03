@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET - عرض مجلدات محددة من أرشيفات ZIP إلى HTML"
 "url": "/ar/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # برنامج تعليمي: تنفيذ GroupDocs.Viewer .NET لعرض مجلدات محددة من أرشيفات ZIP إلى HTML
 
 ## مقدمة

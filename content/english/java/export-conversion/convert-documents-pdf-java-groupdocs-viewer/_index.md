@@ -8,10 +8,8 @@ keywords:
 - convert documents to PDF in Java
 - GroupDocs.Viewer for Java setup
 - render documents to PDF
-
+type: docs
 ---
-
-
 # Convert Documents to PDF in Java with GroupDocs.Viewer
 
 ## Introduction

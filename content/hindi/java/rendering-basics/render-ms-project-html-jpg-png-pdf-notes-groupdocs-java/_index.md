@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ MS प्रोजेक्ट फ़ाइलों को HTML, JPG, PNG और PDF के रूप में कैसे प्रस्तुत करें"
 "url": "/hi/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ MS प्रोजेक्ट फ़ाइलों को HTML, JPG, PNG और PDF के रूप में कैसे प्रस्तुत करें
 
 ## परिचय

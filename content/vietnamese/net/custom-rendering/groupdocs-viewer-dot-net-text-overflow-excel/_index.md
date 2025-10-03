@@ -4,8 +4,8 @@
 "title": "Ẩn văn bản tràn trong Excel bằng GroupDocs.Viewer .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Ẩn văn bản tràn trong Excel với GroupDocs.Viewer .NET
 
 ## Giới thiệu

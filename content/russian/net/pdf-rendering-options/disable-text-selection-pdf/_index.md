@@ -5,8 +5,8 @@
 "title": "Отключить выделение текста в PDF"
 "url": "/ru/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Отключить выделение текста в PDF
 
 ## Введение

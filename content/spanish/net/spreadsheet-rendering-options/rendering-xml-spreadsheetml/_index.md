@@ -5,8 +5,8 @@
 "title": "Representación de XML SpreadSheetML"
 "url": "/es/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Representación de XML SpreadSheetML
 
 ## Introducción

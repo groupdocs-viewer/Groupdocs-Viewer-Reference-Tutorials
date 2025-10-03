@@ -5,8 +5,8 @@
 "title": "원래 페이지 크기로 PDF 렌더링"
 "url": "/ko/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # 원래 페이지 크기로 PDF 렌더링
 
 ## 소개

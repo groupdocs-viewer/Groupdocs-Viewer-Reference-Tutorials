@@ -4,8 +4,8 @@
 "title": "Jak vykreslit vybrané stránky dokumentu pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit konkrétní stránky pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

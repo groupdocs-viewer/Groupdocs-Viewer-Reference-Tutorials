@@ -4,8 +4,8 @@
 "title": "วิธีการแบ่งภาพวาด CAD ออกเป็นไทล์โดยใช้ GroupDocs.Viewer .NET เพื่อการเรนเดอร์ที่มีประสิทธิภาพ"
 "url": "/th/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการแยกแบบ CAD ออกเป็นไทล์ด้วย GroupDocs.Viewer .NET
 
 ## การแนะนำ

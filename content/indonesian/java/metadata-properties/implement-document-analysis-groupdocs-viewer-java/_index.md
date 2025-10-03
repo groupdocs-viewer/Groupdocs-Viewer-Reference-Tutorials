@@ -4,8 +4,8 @@
 "title": "Menerapkan Analisis Dokumen dengan GroupDocs.Viewer untuk Java; Mengekstrak Metadata Halaman dan Baris Teks"
 "url": "/id/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Analisis Dokumen dengan GroupDocs.Viewer untuk Java: Mengekstrak Metadata Halaman dan Baris Teks
 
 ## Perkenalan

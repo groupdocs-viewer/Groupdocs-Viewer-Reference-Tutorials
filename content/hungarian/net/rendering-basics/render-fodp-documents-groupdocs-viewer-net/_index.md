@@ -4,8 +4,8 @@
 "title": "FODP dokumentumok renderelése a GroupDocs.Viewer .NET használatával – Átfogó útmutató"
 "url": "/hu/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # FODP dokumentumok renderelése a GroupDocs.Viewer .NET használatával: Átfogó útmutató
 
 ## Bevezetés

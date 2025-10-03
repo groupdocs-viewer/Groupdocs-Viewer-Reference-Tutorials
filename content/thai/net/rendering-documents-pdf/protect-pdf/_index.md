@@ -5,8 +5,8 @@
 "title": "ป้องกัน PDF ที่แสดงผลด้วยรหัสผ่าน"
 "url": "/th/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # ป้องกัน PDF ที่แสดงผลด้วยรหัสผ่าน
 
 ## การแนะนำ

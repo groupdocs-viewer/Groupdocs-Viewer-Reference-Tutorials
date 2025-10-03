@@ -5,8 +5,8 @@
 "title": "Ladda dokument från FTP (avancerat)"
 "url": "/sv/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Ladda dokument från FTP (avancerat)
 
 ## Introduktion

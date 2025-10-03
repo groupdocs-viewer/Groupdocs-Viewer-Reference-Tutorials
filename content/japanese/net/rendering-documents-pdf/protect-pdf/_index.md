@@ -5,8 +5,8 @@
 "title": "レンダリングされたPDFをパスワードで保護する"
 "url": "/ja/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # レンダリングされたPDFをパスワードで保護する
 
 ## 導入

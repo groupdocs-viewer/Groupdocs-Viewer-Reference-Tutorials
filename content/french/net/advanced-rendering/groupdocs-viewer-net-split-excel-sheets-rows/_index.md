@@ -4,8 +4,8 @@
 "title": "Divisez les feuilles Excel en pages par lignes à l'aide de GroupDocs.Viewer .NET pour une gestion efficace des données"
 "url": "/fr/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Division de feuilles Excel en pages par lignes avec GroupDocs.Viewer .NET
 
 ## Introduction

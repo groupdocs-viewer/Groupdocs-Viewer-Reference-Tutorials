@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ .NET में मास्टर टेक्स्ट एक्सट्रैक्शन एक व्यापक गाइड"
 "url": "/hi/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ .NET में टेक्स्ट एक्सट्रैक्शन में महारत हासिल करना: एक व्यापक ट्यूटोरियल
 
 ## परिचय

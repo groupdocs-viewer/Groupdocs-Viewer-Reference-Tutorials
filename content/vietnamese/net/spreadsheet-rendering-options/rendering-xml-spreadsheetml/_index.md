@@ -5,8 +5,8 @@
 "title": "Hiển thị XML SpreadSheetML"
 "url": "/vi/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Hiển thị XML SpreadSheetML
 
 ## Giới thiệu

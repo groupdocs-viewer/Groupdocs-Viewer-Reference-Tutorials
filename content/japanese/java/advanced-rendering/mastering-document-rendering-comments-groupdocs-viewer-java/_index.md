@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でコメント付きドキュメントをレンダリングする方法"
 "url": "/ja/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java でコメント付きドキュメントをレンダリングする方法
 ## 導入
 コメントを保持したままドキュメントをHTMLに変換するのに苦労していませんか？このガイドでは、Javaの強力なGroupDocs.Viewerライブラリを使用して、コメント付きのドキュメントをレンダリングする方法を順を追って説明します。ドキュメントをシームレスに管理したい場合でも、Javaスキルを向上させたい場合でも、このチュートリアルは役に立ちます。

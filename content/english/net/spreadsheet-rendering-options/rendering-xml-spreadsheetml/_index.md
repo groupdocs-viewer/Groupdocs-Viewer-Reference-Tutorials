@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["xml-spreadsheetml", "excel-2003", "document-viewer", "file-conversion"]
+type: docs
 ---
-
 # XML SpreadSheetML Viewer .NET - Complete Rendering Guide
 
 ## Introduction

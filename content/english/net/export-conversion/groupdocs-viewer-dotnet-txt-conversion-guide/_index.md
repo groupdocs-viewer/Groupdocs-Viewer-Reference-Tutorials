@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for .NET
 - convert TXT to HTML
 - TXT file conversion
-
+type: docs
 ---
-
-
 # Convert TXT to Multiple Formats with GroupDocs.Viewer .NET
 
 ## Introduction

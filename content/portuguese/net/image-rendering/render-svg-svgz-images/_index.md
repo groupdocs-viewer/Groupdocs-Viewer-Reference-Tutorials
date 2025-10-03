@@ -5,8 +5,8 @@
 "title": "Renderizar imagens SVG e SVGZ"
 "url": "/pt/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # Renderizar imagens SVG e SVGZ
 
 ## Introdução

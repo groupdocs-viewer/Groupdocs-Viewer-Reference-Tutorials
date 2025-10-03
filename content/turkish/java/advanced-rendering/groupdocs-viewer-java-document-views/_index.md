@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer for Java&#58; Belge Görünümü Bilgilerini ve İçgörülerini Al"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Belge Görünümlerinde Ustalaşma
 ## Gelişmiş Render Teknikleri
 **SEO URL'si:** groupdocs-görüntüleyici-java-belge-görünümleri

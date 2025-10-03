@@ -5,8 +5,8 @@
 "title": "Dokumentum renderelése JPGPNG formátumba"
 "url": "/hu/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Dokumentum renderelése JPGPNG formátumba
 
 ## Bevezetés

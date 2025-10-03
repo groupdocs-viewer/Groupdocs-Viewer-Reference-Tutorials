@@ -5,8 +5,8 @@
 "title": "CDRイメージのレンダリング"
 "url": "/ja/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # CDRイメージのレンダリング
 
 ## 導入

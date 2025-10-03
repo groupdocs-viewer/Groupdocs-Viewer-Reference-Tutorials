@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET का उपयोग करके अधिकतम JPG छवि आकार सीमा कैसे सेट करें"
 "url": "/hi/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके अधिकतम JPG छवि आकार सीमा कैसे सेट करें
 
 ## परिचय

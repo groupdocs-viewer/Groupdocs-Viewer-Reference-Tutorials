@@ -5,8 +5,8 @@
 "title": "Настройте качество изображения в PDF"
 "url": "/ru/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Настройте качество изображения в PDF
 
 ## Введение

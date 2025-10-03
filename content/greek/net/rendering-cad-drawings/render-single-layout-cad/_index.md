@@ -5,8 +5,8 @@
 "title": "Απόδοση Μονής Διάταξης σε Σχέδια CAD"
 "url": "/el/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Απόδοση Μονής Διάταξης σε Σχέδια CAD
 
 ## Εισαγωγή

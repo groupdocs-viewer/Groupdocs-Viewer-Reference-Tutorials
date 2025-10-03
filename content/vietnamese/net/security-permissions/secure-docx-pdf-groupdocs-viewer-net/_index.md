@@ -4,8 +4,8 @@
 "title": "Cách bảo mật tệp DOCX dưới dạng PDF bằng GroupDocs.Viewer .NET&#58; Hướng dẫn từng bước"
 "url": "/vi/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách bảo mật tệp DOCX dưới dạng PDF bằng GroupDocs.Viewer .NET: Hướng dẫn từng bước
 
 Trong thời đại kỹ thuật số ngày nay, việc bảo vệ các tài liệu nhạy cảm là rất quan trọng. Cho dù bạn là một doanh nghiệp bảo vệ sở hữu trí tuệ hay một cá nhân bảo vệ thông tin cá nhân, việc chuyển đổi các tệp Word thành PDF được bảo vệ bằng mật khẩu có thể mang tính chuyển đổi. Hướng dẫn này hướng dẫn bạn cách sử dụng GroupDocs.Viewer cho .NET để chuyển đổi các tài liệu DOCX thành PDF được bảo vệ với các hạn chế cụ thể như từ chối in.

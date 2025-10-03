@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu với các bình luận"
 "url": "/vi/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Kết xuất tài liệu với các bình luận
 
 ## Giới thiệu

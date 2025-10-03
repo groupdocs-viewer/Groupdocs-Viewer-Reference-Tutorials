@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 检索和保存文档附件——综合指南"
 "url": "/zh/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 检索和保存文档附件：综合指南
 
 ## 介绍

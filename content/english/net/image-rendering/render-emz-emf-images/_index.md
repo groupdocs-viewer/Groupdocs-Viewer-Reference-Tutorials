@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["EMZ", "EMF", "metafile", "image-rendering", "dotnet"]
+type: docs
 ---
-
 # How to Render EMZ and EMF Images in .NET Applications
 
 ## Introduction

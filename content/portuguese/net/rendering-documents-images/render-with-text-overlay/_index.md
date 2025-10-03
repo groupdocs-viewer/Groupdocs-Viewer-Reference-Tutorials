@@ -5,8 +5,8 @@
 "title": "Renderizar com texto sobreposto para exibição"
 "url": "/pt/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Renderizar com texto sobreposto para exibição
 
 ## Introdução

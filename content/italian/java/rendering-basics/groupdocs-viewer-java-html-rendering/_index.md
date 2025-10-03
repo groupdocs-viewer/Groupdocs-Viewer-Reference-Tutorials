@@ -4,8 +4,8 @@
 "title": "Come caricare e visualizzare documenti in formato HTML utilizzando GroupDocs.Viewer per Java"
 "url": "/it/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Come caricare e visualizzare documenti in formato HTML utilizzando GroupDocs.Viewer per Java
 
 ## Introduzione

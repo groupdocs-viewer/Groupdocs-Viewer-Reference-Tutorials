@@ -4,8 +4,8 @@
 "title": "Hogyan jelenítsünk meg konkrét CAD rajzokat Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan jelenítsünk meg konkrét CAD rajzokat Java-ban a GroupDocs.Viewer használatával
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "كيفية استرداد معلومات الأرشيف باستخدام GroupDocs.Viewer لـ .NET - دليل شامل"
 "url": "/ar/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استرداد معلومات الأرشيف باستخدام GroupDocs.Viewer لـ .NET: دليل شامل
 
 ## مقدمة

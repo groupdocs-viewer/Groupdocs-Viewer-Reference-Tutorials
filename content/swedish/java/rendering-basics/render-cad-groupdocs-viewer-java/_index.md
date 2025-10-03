@@ -4,8 +4,8 @@
 "title": "Hur man renderar specifika CAD-ritningar i Java med GroupDocs.Viewer"
 "url": "/sv/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar specifika CAD-ritningar i Java med GroupDocs.Viewer
 
 ## Introduktion

@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ों में छिपे हुए पृष्ठों को प्रस्तुत करें एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके दस्तावेज़ों में छिपे हुए पृष्ठों को प्रस्तुत करें: एक चरण-दर-चरण मार्गदर्शिका
 
 ## परिचय

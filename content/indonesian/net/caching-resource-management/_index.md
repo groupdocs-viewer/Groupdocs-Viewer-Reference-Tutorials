@@ -3,8 +3,8 @@
 "title": "Tutorial Pencadangan Dokumen untuk GroupDocs.Viewer .NET"
 "url": "/id/net/caching-resource-management/"
 "weight": 10
+type: docs
 ---
-
 # Tutorial Pencadangan Dokumen untuk GroupDocs.Viewer .NET
 
 Kuasai caching tingkat lanjut dan manajemen sumber daya dengan tutorial GroupDocs.Viewer .NET kami. Panduan komprehensif ini menunjukkan cara menerapkan strategi caching yang efisien, mengelola sumber daya rendering, mengoptimalkan penggunaan memori, dan meningkatkan kinerja tampilan dokumen. Setiap tutorial menyediakan contoh kode .NET praktis untuk menerapkan mekanisme caching canggih yang meningkatkan responsivitas aplikasi dan mengurangi overhead komputasi.

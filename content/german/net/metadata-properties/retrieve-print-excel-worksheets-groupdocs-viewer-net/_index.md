@@ -4,8 +4,8 @@
 "title": "So rufen Sie Excel-Arbeitsblattnamen mit GroupDocs.Viewer für .NET ab und drucken sie (Handbuch 2023)"
 "url": "/de/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie Excel-Arbeitsblattnamen mit GroupDocs.Viewer für .NET ab und drucken sie: Eine umfassende Anleitung
 
 ## Einführung

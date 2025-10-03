@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して .NET で SVGZ レンダリングをマスターする - 開発者向け完全ガイド"
 "url": "/ja/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用した .NET での SVGZ レンダリングの習得: 開発者向け完全ガイド
 
 ## 導入

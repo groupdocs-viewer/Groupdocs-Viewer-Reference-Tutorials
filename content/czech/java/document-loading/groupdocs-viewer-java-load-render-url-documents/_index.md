@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer v Javě&#58; Efektivní načítání a vykreslování dokumentů z URL adres"
 "url": "/cs/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer v Javě: Efektivní načítání a vykreslování dokumentů z URL adres
 
 ## Zavedení

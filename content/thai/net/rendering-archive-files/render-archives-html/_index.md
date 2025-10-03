@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ไฟล์เก็บถาวรไปยังหน้า HTML เดียวหรือหลายหน้า"
 "url": "/th/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # เรนเดอร์ไฟล์เก็บถาวรไปยังหน้า HTML เดียวหรือหลายหน้า
 
 ## การแนะนำ

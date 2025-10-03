@@ -4,8 +4,8 @@
 "title": "So rufen Sie Dokumentanhänge mit GroupDocs.Viewer für .NET ab und drucken sie | Erweitertes Rendering-Handbuch"
 "url": "/de/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie Dokumentanhänge mit GroupDocs.Viewer für .NET ab und drucken sie | Erweitertes Rendering-Handbuch
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET licenc beállítása Streamen keresztül&#58; Teljes körű útmutató"
 "url": "/hu/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET licenc beállítása Streamen keresztül: Teljes körű útmutató
 
 ## Bevezetés

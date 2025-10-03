@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["groupdocs-viewer", "text-overlay", "document-rendering", "text-extraction"]
+type: docs
 ---
-
 # Render Documents with Text Overlay .NET - Complete Guide
 
 ## Introduction

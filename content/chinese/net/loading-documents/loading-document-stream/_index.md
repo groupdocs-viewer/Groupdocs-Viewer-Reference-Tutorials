@@ -5,8 +5,8 @@
 "title": "从流中加载文档"
 "url": "/zh/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # 从流中加载文档
 
 ## 介绍

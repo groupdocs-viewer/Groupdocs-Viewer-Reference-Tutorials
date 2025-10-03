@@ -5,8 +5,8 @@
 "title": "Ορισμός μορφής ημερομηνίας/ώρας και μετατόπισης ζώνης ώρας (Email)"
 "url": "/el/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Ορισμός μορφής ημερομηνίας/ώρας και μετατόπισης ζώνης ώρας (Email)
 
 

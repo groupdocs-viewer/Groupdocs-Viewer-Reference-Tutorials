@@ -5,8 +5,8 @@
 "title": "获取工作表名称"
 "url": "/zh/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # 获取工作表名称
 
 ## 介绍

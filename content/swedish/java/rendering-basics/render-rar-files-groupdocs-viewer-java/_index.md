@@ -4,8 +4,8 @@
 "title": "Rendera RAR-filer till HTML, JPG, PNG och PDF med GroupDocs.Viewer för Java"
 "url": "/sv/java/rendering-basics/render-rar-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendera RAR-filer till olika format med GroupDocs.Viewer för Java
 
 Frigör potentialen i dina RAR-arkiv genom att omvandla dem till tillgängliga format som HTML, JPG, PNG och PDF med GroupDocs.Viewer för Java. Den här handledningen guidar dig genom varje steg och möjliggör sömlös dokumenthantering och presentation.

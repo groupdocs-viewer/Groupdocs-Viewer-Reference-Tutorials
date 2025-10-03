@@ -4,8 +4,8 @@
 "title": "วิธีการหมุนหน้า PDF ด้วย GroupDocs.Viewer สำหรับ .NET&#58; คู่มือสำหรับนักพัฒนา"
 "url": "/th/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการหมุนหน้า PDF โดยใช้ GroupDocs.Viewer สำหรับ .NET: คู่มือสำหรับนักพัฒนา
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Как визуализировать определенные чертежи САПР в Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать определенные чертежи САПР в Java с помощью GroupDocs.Viewer
 
 ## Введение

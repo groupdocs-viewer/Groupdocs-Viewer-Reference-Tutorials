@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["encoding", "international-documents", "character-sets", "document-viewer"]
+type: docs
 ---
-
 # Load Documents with Encoding .NET - Fix Character Display Issues
 
 ## Introduction

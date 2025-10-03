@@ -5,8 +5,8 @@
 "title": "Renderizar imágenes TGA"
 "url": "/es/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # Renderizar imágenes TGA
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java'da Belgeleri PDF'ye Dönüştürme Kapsamlı Bir Kılavuz"
 "url": "/tr/java/export-conversion/convert-documents-pdf-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile Java'da Belgeleri PDF'ye Dönüştürün
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Chuyển đổi TXT sang HTML, JPG, PNG, PDF bằng GroupDocs.Viewer .NET&#58; Hướng dẫn đầy đủ"
 "url": "/vi/net/export-conversion/groupdocs-viewer-dotnet-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # Chuyển đổi TXT sang nhiều định dạng với GroupDocs.Viewer .NET
 
 ## Giới thiệu

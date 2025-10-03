@@ -4,8 +4,8 @@
 "title": "Απόδοση DOCX σε JPG χρησιμοποιώντας το GroupDocs.Viewer για Java - Οδηγός βήμα προς βήμα"
 "url": "/el/java/rendering-basics/render-docx-to-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε ένα έγγραφο DOCX σε εικόνες JPG χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

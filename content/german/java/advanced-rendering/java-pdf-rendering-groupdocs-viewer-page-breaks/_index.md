@@ -4,8 +4,8 @@
 "title": "Java-PDF-Rendering mit GroupDocs.Viewer – Implementieren von Seitenumbrüchen in Tabellenkalkulationen"
 "url": "/de/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Java-PDF-Rendering meistern: GroupDocs.Viewer mit Seitenumbrüchen
 
 Nutzen Sie die Leistungsfähigkeit der Tabellenkalkulation in Ihren Java-Anwendungen mit GroupDocs.Viewer. Diese umfassende Anleitung zeigt Ihnen, wie Sie Java-PDF-Rendering mit Seitenumbrüchen für eine nahtlose PDF-Konvertierung implementieren.

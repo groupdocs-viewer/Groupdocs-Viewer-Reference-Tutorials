@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ภาพ AI"
 "url": "/th/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # เรนเดอร์ภาพ AI
 
 ## การแนะนำ

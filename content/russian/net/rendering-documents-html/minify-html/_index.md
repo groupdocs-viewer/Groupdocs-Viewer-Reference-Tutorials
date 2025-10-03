@@ -5,8 +5,8 @@
 "title": "Уменьшить визуализированный HTML-документ"
 "url": "/ru/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Уменьшить визуализированный HTML-документ
 
 ## Введение

@@ -5,8 +5,8 @@
 "title": "Abrufen und Drucken von Dokumentanhängen"
 "url": "/de/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Abrufen und Drucken von Dokumentanhängen
 
 ## Einführung

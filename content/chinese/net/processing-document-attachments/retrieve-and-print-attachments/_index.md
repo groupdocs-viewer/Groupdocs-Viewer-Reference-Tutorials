@@ -5,8 +5,8 @@
 "title": "检索和打印文档附件"
 "url": "/zh/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # 检索和打印文档附件
 
 ## 介绍

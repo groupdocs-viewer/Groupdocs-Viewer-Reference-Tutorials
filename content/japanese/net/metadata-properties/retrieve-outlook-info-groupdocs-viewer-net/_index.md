@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用して Outlook データ情報を取得する方法"
 "url": "/ja/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して Outlook データ情報を取得する方法
 
 ## 導入

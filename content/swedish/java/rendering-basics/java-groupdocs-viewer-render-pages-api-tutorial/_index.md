@@ -4,8 +4,8 @@
 "title": "Java Guide Rendera specifika sidor med GroupDocs.Viewer API för dokumentförhandsgranskning och hantering"
 "url": "/sv/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Implementera Java: Rendera specifika sidor med GroupDocs.Viewer API
 
 ## Introduktion

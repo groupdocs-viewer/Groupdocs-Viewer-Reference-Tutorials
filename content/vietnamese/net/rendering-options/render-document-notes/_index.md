@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu với ghi chú"
 "url": "/vi/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Kết xuất tài liệu với ghi chú
 
 ## Giới thiệu

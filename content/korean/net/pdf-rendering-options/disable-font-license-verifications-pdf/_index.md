@@ -5,8 +5,8 @@
 "title": "PDF에서 글꼴 라이선스 확인 비활성화"
 "url": "/ko/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # PDF에서 글꼴 라이선스 확인 비활성화
 
 ## 소개

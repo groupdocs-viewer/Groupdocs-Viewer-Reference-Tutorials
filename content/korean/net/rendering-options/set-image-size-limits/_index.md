@@ -5,8 +5,8 @@
 "title": "이미지 크기 제한 설정"
 "url": "/ko/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # 이미지 크기 제한 설정
 
 ## 소개

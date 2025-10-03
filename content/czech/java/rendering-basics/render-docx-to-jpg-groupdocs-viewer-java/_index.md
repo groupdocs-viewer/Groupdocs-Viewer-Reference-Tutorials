@@ -4,8 +4,8 @@
 "title": "Renderování DOCX do JPG pomocí GroupDocs.Viewer pro Javu – Podrobný návod"
 "url": "/cs/java/rendering-basics/render-docx-to-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokument DOCX do obrázků JPG pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Archív mappák renderelése Java-ban a GroupDocs.Viewer használatával – lépésről lépésre útmutató"
 "url": "/hu/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Archív mappák renderelése a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

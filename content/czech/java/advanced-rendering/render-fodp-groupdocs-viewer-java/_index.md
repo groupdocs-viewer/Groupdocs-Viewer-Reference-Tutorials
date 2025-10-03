@@ -4,8 +4,8 @@
 "title": "Jak vykreslit dokumenty FODP pomocí GroupDocs.Viewer pro Javu – kompletní průvodce"
 "url": "/cs/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokumenty FODP pomocí GroupDocs.Viewer pro Javu: Kompletní průvodce
 
 ## Zavedení

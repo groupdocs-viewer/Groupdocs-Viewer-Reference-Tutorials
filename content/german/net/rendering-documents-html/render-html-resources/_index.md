@@ -5,8 +5,8 @@
 "title": "Rendern mit eingebetteten oder externen Ressourcen"
 "url": "/de/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Rendern mit eingebetteten oder externen Ressourcen
 
 ## Einführung

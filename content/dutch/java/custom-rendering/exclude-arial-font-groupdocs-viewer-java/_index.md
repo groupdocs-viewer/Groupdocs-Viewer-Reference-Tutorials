@@ -4,8 +4,8 @@
 "title": "Hoe u het Arial-lettertype uitsluit bij HTML-rendering met GroupDocs.Viewer Java&#58; een stapsgewijze handleiding"
 "url": "/nl/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u het Arial-lettertype kunt uitsluiten bij het renderen van documenten naar HTML met behulp van GroupDocs.Viewer Java
 
 ## Invoering

@@ -5,8 +5,8 @@
 "title": "渲染電子郵件時調整頁面大小"
 "url": "/zh-hant/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # 渲染電子郵件時調整頁面大小
 
 ## 介紹

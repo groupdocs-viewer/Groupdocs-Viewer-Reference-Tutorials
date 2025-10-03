@@ -5,8 +5,8 @@
 "title": "Απόδοση με επικάλυψη κειμένου για προβολή"
 "url": "/el/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Απόδοση με επικάλυψη κειμένου για προβολή
 
 ## Εισαγωγή

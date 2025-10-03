@@ -4,8 +4,8 @@
 "title": "تدوير الصفحة الأولى من مستند باستخدام GroupDocs.Viewer لـ Java (دليل متقدم)"
 "url": "/ar/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # تدوير الصفحة الأولى من المستند باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

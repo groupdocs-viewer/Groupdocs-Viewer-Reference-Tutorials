@@ -4,8 +4,8 @@
 "title": "DOCX konvertálása JPG-vé Java-ban a GroupDocs.Viewer használatával – Átfogó útmutató"
 "url": "/hu/java/export-conversion/convert-docx-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # DOCX JPG-vé konvertálásának mesteri lépései Java-ban a GroupDocs.Viewer segítségével
 
 ## Bevezetés

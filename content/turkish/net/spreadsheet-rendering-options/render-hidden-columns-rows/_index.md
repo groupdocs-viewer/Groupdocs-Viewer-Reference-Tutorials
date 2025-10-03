@@ -5,8 +5,8 @@
 "title": "Gizli Sütunları ve Satırları Oluştur"
 "url": "/tr/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Gizli Sütunları ve Satırları Oluştur
 
 ## giriiş

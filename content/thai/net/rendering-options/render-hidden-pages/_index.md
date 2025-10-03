@@ -5,8 +5,8 @@
 "title": "เรนเดอร์หน้าที่ซ่อนอยู่"
 "url": "/th/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # เรนเดอร์หน้าที่ซ่อนอยู่
 
 ## การแนะนำ

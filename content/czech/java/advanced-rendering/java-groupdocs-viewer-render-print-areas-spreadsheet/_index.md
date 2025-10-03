@@ -4,8 +4,8 @@
 "title": "Vykreslování tiskových oblastí v tabulkách Java pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování tiskových oblastí v tabulkách Javy pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

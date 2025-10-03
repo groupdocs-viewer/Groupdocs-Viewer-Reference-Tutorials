@@ -5,8 +5,8 @@
 "title": "E-mailberichten weergeven"
 "url": "/nl/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # E-mailberichten weergeven
 
 ## Invoering

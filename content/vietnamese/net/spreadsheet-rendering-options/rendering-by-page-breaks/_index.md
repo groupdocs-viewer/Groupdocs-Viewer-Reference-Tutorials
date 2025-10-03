@@ -5,8 +5,8 @@
 "title": "Hiển thị bằng ngắt trang"
 "url": "/vi/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Hiển thị bằng ngắt trang
 
 ## Giới thiệu

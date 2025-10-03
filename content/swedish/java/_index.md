@@ -5,8 +5,8 @@
 "title": "Omfattande handledningar och exempel på GroupDocs.Viewer för Java"
 "url": "/sv/java/"
 "weight": 10
+type: docs
 ---
-
 # Omfattande handledningar och exempel på GroupDocs.Viewer för Java
 
 ## Introduktion

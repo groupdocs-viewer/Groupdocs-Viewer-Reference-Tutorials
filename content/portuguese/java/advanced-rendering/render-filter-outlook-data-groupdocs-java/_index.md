@@ -4,8 +4,8 @@
 "title": "Domine a renderização e filtragem de dados do Outlook com o GroupDocs.Viewer para Java"
 "url": "/pt/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Domine a renderização e filtragem de dados do Outlook com o GroupDocs.Viewer para Java
 
 ## Introdução

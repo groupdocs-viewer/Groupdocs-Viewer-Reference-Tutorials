@@ -4,8 +4,8 @@
 "title": "Cách loại trừ các phông chữ cụ thể khỏi đầu ra HTML bằng GroupDocs.Viewer cho .NET"
 "url": "/vi/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách loại trừ phông chữ khỏi đầu ra HTML bằng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

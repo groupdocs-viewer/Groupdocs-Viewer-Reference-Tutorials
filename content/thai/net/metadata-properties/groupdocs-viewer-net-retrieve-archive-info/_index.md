@@ -4,8 +4,8 @@
 "title": "วิธีดึงข้อมูลเก็บถาวรโดยใช้ GroupDocs.Viewer สำหรับ .NET คำแนะนำที่ครอบคลุม"
 "url": "/th/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # วิธีดึงข้อมูลเก็บถาวรโดยใช้ GroupDocs.Viewer สำหรับ .NET: คู่มือฉบับสมบูรณ์
 
 ## การแนะนำ

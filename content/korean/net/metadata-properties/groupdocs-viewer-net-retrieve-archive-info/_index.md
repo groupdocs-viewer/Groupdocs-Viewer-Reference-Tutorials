@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 아카이브 정보를 검색하는 방법&#58; 종합 가이드"
 "url": "/ko/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용하여 보관 정보를 검색하는 방법: 포괄적인 가이드
 
 ## 소개

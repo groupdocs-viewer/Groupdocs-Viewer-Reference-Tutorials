@@ -4,8 +4,8 @@
 "title": "使用 Java 中的 GroupDocs.Viewer 按行和列拆分 Excel 工作表——综合指南"
 "url": "/zh/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # 使用 Java 中的 GroupDocs.Viewer 按行和列拆分 Excel 工作表
 
 ## 介绍

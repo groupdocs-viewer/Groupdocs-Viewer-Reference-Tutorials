@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - Java document analysis
 - extracting page metadata
-
+type: docs
 ---
-
-
 # Implementing Document Analysis with GroupDocs.Viewer for Java: Extracting Page Metadata and Text Lines
 
 ## Introduction

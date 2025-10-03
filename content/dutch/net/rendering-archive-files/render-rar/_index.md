@@ -5,8 +5,8 @@
 "title": "RAR-archieven renderen"
 "url": "/nl/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # RAR-archieven renderen
 
 ## Invoering

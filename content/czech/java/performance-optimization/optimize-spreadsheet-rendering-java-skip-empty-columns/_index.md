@@ -4,8 +4,8 @@
 "title": "Optimalizace vykreslování tabulek v Javě – přeskočení prázdných sloupců pomocí GroupDocs.Viewer"
 "url": "/cs/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Jak optimalizovat vykreslování tabulky v Javě: Přeskakování prázdných sloupců pomocí GroupDocs.Viewer
 
 ## Zavedení

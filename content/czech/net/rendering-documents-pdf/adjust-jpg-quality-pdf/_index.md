@@ -5,8 +5,8 @@
 "title": "Úprava kvality obrázku JPG v renderovaném PDF"
 "url": "/cs/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Úprava kvality obrázku JPG v renderovaném PDF
 
 ## Zavedení

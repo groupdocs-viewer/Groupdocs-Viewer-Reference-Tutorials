@@ -5,8 +5,8 @@
 "title": "Oldalak átrendezése a dokumentumban"
 "url": "/hu/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Oldalak átrendezése a dokumentumban
 
 ## Bevezetés

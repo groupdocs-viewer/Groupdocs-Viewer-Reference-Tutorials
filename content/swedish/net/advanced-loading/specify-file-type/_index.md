@@ -5,8 +5,8 @@
 "title": "Ange filtyp när du laddar dokument"
 "url": "/sv/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Ange filtyp när du laddar dokument
 
 ## Introduktion

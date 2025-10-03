@@ -4,8 +4,8 @@
 "title": "Render Tài liệu Sử dụng GroupDocs.Viewer .NET từ Streams&#58; Hướng dẫn Toàn diện dành cho Nhà phát triển"
 "url": "/vi/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tài liệu bằng GroupDocs.Viewer .NET từ Streams: Hướng dẫn toàn diện cho nhà phát triển
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "Abilitare il suggerimento del carattere in PDF"
 "url": "/it/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Abilitare il suggerimento del carattere in PDF
 
 ## Introduzione

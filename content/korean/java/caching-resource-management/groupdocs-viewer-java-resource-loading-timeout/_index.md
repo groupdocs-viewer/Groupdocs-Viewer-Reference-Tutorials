@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer에서 리소스 로딩 시간 초과 설정&#58; 문서 성능 향상"
 "url": "/ko/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer에서 리소스 로딩 시간 초과 설정: 문서 렌더링 효율성 개선
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ไฟล์ CHM"
 "url": "/th/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # เรนเดอร์ไฟล์ CHM
 
 ## การแนะนำ

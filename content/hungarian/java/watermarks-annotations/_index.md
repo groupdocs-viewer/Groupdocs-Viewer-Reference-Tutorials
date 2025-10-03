@@ -3,8 +3,8 @@
 "title": "Dokumentum vízjel és jegyzet oktatóanyagok GroupDocs.Viewer Java-hoz"
 "url": "/hu/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Dokumentum vízjel és jegyzet oktatóanyagok GroupDocs.Viewer Java-hoz
 
 Sajátítsa el a dokumentumokhoz tartozó annotációk és vízjelek elkészítés technikáit GroupDocs.Viewer Java oktatóanyagaink segítségével. Ezek a lépésről lépésre bemutatják, hogyan adhat hozzá szöveges és képes vízjeleket, hogyan valósíthat meg annotációkat, hogyan szabályozhatja a vízjelek elhelyezkedését és átlátszóságát, valamint hogyan jeleníthet meg dokumentumokat beágyazott annotációkkal. Minden oktatóanyag gyakorlati Java kódpéldákat tartalmaz vizuális metaadatok és védőjelek hozzáadásához a dokumentumokhoz, a dokumentumok nyomon követésének és a márkaépítési képességek javításához.

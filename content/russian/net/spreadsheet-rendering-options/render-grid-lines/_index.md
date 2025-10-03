@@ -5,8 +5,8 @@
 "title": "Рендеринг линий сетки"
 "url": "/ru/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Рендеринг линий сетки
 
 ## Введение

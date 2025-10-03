@@ -3,8 +3,8 @@
 "title": "Hướng dẫn tải tài liệu và xử lý nguồn cho GroupDocs.Viewer Java"
 "url": "/vi/java/document-loading/"
 "weight": 2
+type: docs
 ---
-
 # Hướng dẫn tải tài liệu và xử lý nguồn cho GroupDocs.Viewer Java
 
 Hướng dẫn tải tài liệu của chúng tôi cung cấp hướng dẫn toàn diện để xử lý nguồn tài liệu trong Java. Thực hiện theo các hướng dẫn từng bước này để tìm hiểu cách tải tài liệu từ các loại lưu trữ khác nhau, xử lý nhiều định dạng tệp khác nhau, quản lý luồng đầu vào và triển khai các chiến lược tải tài liệu linh hoạt. Các hướng dẫn thực tế này bao gồm các ví dụ mã hoàn chỉnh để xử lý nguồn tài liệu, giúp bạn xây dựng các ứng dụng xem tài liệu mạnh mẽ với khả năng tải đa dạng.

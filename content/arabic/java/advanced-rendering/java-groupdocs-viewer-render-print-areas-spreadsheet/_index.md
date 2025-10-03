@@ -4,8 +4,8 @@
 "title": "عرض مساحات الطباعة في جداول بيانات Java باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # عرض مناطق الطباعة في جداول بيانات Java باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

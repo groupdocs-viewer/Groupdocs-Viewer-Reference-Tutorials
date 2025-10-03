@@ -5,8 +5,8 @@
 "title": "將文件渲染為圖像"
 "url": "/zh-hant/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # 將文件渲染為圖像
 
 ## 介紹

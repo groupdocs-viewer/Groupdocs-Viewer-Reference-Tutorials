@@ -5,8 +5,8 @@
 "title": "Rendu avec des ressources intégrées ou externes"
 "url": "/fr/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Rendu avec des ressources intégrées ou externes
 
 ## Introduction

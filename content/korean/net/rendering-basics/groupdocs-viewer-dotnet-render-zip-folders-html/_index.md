@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; ZIP 아카이브에서 HTML로 특정 폴더 렌더링"
 "url": "/ko/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # 튜토리얼: ZIP 아카이브에서 특정 폴더를 HTML로 렌더링하기 위한 GroupDocs.Viewer .NET 구현
 
 ## 소개

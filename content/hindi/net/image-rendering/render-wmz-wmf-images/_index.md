@@ -5,8 +5,8 @@
 "title": "WMZ और WMF छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # WMZ और WMF छवियाँ प्रस्तुत करें
 
 ## परिचय

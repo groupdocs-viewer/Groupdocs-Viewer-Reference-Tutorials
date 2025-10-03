@@ -5,8 +5,8 @@
 "title": "レンダリング中にメールフィールドの名前を変更する"
 "url": "/ja/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # レンダリング中にメールフィールドの名前を変更する
 
 ## 導入

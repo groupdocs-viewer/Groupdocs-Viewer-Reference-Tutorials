@@ -4,8 +4,8 @@
 "title": "Opanuj renderowanie warstwowe plików PDF .NET za pomocą GroupDocs.Viewer&#58; Przewodnik krok po kroku"
 "url": "/pl/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Opanuj renderowanie warstwowe plików PDF .NET za pomocą GroupDocs.Viewer: przewodnik krok po kroku
 
 ## Wstęp

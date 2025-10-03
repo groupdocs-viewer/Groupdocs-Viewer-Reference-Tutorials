@@ -4,8 +4,8 @@
 "title": "Dokumentumok renderelése a GroupDocs.Viewer .NET használatával a Streamsből – Átfogó útmutató fejlesztőknek"
 "url": "/hu/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumok renderelése GroupDocs.Viewer .NET használatával Streamsből: Átfogó útmutató fejlesztőknek
 
 ## Bevezetés

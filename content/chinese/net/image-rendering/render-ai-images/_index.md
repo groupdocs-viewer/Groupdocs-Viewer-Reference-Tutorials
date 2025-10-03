@@ -5,8 +5,8 @@
 "title": "渲染 AI 图像"
 "url": "/zh/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # 渲染 AI 图像
 
 ## 介绍

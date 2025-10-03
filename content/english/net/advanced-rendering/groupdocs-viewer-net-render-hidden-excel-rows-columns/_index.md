@@ -8,10 +8,8 @@ keywords:
 - render hidden rows columns Excel
 - GroupDocs Viewer .NET
 - Excel data visibility
-
+type: docs
 ---
-
-
 # Render Hidden Rows & Columns in Excel Files Using GroupDocs.Viewer for .NET
 
 ## Introduction

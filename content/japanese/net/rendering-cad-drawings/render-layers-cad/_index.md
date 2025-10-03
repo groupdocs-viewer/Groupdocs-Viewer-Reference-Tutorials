@@ -5,8 +5,8 @@
 "title": "CAD図面のレンダリングレイヤー"
 "url": "/ja/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # CAD図面のレンダリングレイヤー
 
 ## 導入

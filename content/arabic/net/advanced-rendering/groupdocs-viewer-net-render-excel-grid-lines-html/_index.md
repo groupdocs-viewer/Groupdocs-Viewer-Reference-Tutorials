@@ -4,8 +4,8 @@
 "title": "كيفية عرض خطوط الشبكة في جداول بيانات Excel باستخدام GroupDocs.Viewer .NET لإخراج HTML"
 "url": "/ar/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض خطوط الشبكة في جداول بيانات Excel باستخدام GroupDocs.Viewer .NET لإخراج HTML
 
 ## مقدمة

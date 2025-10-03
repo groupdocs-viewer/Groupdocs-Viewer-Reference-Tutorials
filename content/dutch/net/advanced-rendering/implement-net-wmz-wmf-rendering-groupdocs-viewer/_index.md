@@ -4,8 +4,8 @@
 "title": "Implementeer .NET WMZ/WMF-rendering met GroupDocs.Viewer voor web- en platformonafhankelijke compatibiliteit"
 "url": "/nl/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Implementeer .NET WMZ/WMF-rendering met GroupDocs.Viewer voor web- en platformonafhankelijke compatibiliteit
 
 ## Invoering

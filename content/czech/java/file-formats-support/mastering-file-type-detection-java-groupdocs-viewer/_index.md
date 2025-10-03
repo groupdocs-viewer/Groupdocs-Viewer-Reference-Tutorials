@@ -4,8 +4,8 @@
 "title": "Zvládnutí detekce typů souborů v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí detekce typů souborů v Javě pomocí GroupDocs.Viewer
 
 Objevte sílu **Prohlížeč skupinových dokumentů** pro bezproblémovou identifikaci typů souborů z přípon, typů médií a streamů. Tato robustní knihovna zjednodušuje vývojové procesy a vylepšuje možnosti aplikací.

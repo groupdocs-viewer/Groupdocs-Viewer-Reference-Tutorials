@@ -4,8 +4,8 @@
 "title": "Umfassender Leitfaden zum Rendern von AI-Dateien mit GroupDocs.Viewer .NET für Entwickler"
 "url": "/de/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Umfassender Leitfaden zum Rendern von AI-Dateien mit GroupDocs.Viewer .NET für Entwickler
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "Rejtett sorok és oszlopok renderelése Excel fájlokban a GroupDocs.Viewer for .NET használatával – Speciális útmutató"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Rejtett sorok és oszlopok renderelése Excel fájlokban a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

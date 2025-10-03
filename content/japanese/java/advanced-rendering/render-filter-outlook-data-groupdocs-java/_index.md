@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java で Outlook データのレンダリングとフィルタリングをマスターする"
 "url": "/ja/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java で Outlook データのレンダリングとフィルタリングをマスターする
 
 ## 導入

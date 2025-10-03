@@ -5,8 +5,8 @@
 "title": "Получить текстовые координаты для рендеринга изображения"
 "url": "/ru/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Получить текстовые координаты для рендеринга изображения
 
 ## Введение

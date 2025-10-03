@@ -4,8 +4,8 @@
 "title": "Implementace efektivního protokolování v GroupDocs.Viewer .NET pro konzolové a souborové výstupy"
 "url": "/cs/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Implementace efektivního protokolování v GroupDocs.Viewer .NET
 
 ## Zavedení

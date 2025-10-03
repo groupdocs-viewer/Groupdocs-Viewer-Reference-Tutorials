@@ -4,8 +4,8 @@
 "title": "Cara Membuat Gambar CAD sebagai PNG dengan Ukuran Kustom & Warna Latar Belakang Menggunakan GroupDocs.Viewer untuk Java"
 "url": "/id/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat Gambar CAD sebagai PNG dengan Ukuran Kustom & Warna Latar Belakang Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

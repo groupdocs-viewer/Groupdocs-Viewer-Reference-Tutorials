@@ -4,8 +4,8 @@
 "title": "Afficher des documents à l'aide de GroupDocs.Viewer .NET à partir de flux - Un guide complet pour les développeurs"
 "url": "/fr/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Afficher des documents à partir de flux avec GroupDocs.Viewer .NET : guide complet pour les développeurs
 
 ## Introduction

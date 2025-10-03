@@ -5,8 +5,8 @@
 "title": "Vervang ontbrekend lettertype"
 "url": "/nl/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Vervang ontbrekend lettertype
 
 ## Invoering

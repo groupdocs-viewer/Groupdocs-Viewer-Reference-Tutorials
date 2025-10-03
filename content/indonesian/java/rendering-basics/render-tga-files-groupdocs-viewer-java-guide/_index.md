@@ -4,8 +4,8 @@
 "title": "Cara Merender File Truevision TGA Menggunakan GroupDocs.Viewer Java&#58; Panduan Langkah demi Langkah"
 "url": "/id/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File Truevision TGA Menggunakan GroupDocs.Viewer Java
 
 ## Perkenalan

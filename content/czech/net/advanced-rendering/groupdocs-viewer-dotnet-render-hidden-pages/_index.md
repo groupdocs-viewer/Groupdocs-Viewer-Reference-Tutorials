@@ -4,8 +4,8 @@
 "title": "Vykreslení skrytých stránek v dokumentech pomocí GroupDocs.Viewer pro .NET – Podrobný návod"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení skrytých stránek v dokumentech pomocí GroupDocs.Viewer pro .NET: Podrobný návod
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Nhận thông tin xem cho bản vẽ CAD"
 "url": "/vi/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Nhận thông tin xem cho bản vẽ CAD
 
 ## Giới thiệu

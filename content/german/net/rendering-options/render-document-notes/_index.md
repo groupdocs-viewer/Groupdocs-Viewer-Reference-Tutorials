@@ -5,8 +5,8 @@
 "title": "Dokument mit Notizen rendern"
 "url": "/de/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Dokument mit Notizen rendern
 
 ## Einführung

@@ -5,8 +5,8 @@
 "title": "翻转和旋转页面"
 "url": "/zh/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # 翻转和旋转页面
 
 ## 介绍

@@ -5,8 +5,8 @@
 "title": "Renderebenen in CAD-Zeichnungen"
 "url": "/de/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Renderebenen in CAD-Zeichnungen
 
 ## Einführung

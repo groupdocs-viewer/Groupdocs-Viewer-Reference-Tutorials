@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 将 CAD 图纸渲染为具有自定义大小和背景颜色的 PNG"
 "url": "/zh/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 将 CAD 图纸渲染为具有自定义大小和背景颜色的 PNG
 
 ## 介绍

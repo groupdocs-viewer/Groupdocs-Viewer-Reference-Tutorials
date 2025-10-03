@@ -4,8 +4,8 @@
 "title": "콘솔 및 파일 출력을 위한 GroupDocs.Viewer .NET에서 효과적인 로깅 구현"
 "url": "/ko/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET에서 효과적인 로깅 구현
 
 ## 소개

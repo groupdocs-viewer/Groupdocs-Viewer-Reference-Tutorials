@@ -5,8 +5,8 @@
 "title": "SVG- en SVGZ-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # SVG- en SVGZ-afbeeldingen renderen
 
 ## Invoering

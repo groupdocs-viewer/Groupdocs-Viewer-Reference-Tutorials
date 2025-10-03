@@ -5,8 +5,8 @@
 "title": "Časový interval specifický pro projekt renderování (MS Project)"
 "url": "/cs/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Časový interval specifický pro projekt renderování (MS Project)
 
 ## Zavedení

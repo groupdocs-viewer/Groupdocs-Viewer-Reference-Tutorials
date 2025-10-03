@@ -4,8 +4,8 @@
 "title": "Podziel arkusze Excela na strony według wierszy za pomocą GroupDocs.Viewer .NET w celu wydajnego zarządzania danymi"
 "url": "/pl/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Dzielenie arkuszy Excela na strony według wierszy za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

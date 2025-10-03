@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε έγγραφα FODP χρησιμοποιώντας το GroupDocs.Viewer .NET® Ένας πλήρης οδηγός"
 "url": "/el/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε έγγραφα FODP χρησιμοποιώντας το GroupDocs.Viewer .NET: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

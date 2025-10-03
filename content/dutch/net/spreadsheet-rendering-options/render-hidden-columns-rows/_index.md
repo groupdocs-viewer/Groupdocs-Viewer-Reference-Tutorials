@@ -5,8 +5,8 @@
 "title": "Verborgen kolommen en rijen weergeven"
 "url": "/nl/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Verborgen kolommen en rijen weergeven
 
 ## Invoering

@@ -5,8 +5,8 @@
 "title": "Utilizzo avanzato (memorizzazione nella cache)"
 "url": "/it/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Utilizzo avanzato (memorizzazione nella cache)
 
 

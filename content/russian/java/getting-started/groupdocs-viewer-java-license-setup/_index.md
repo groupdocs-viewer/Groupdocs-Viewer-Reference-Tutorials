@@ -4,8 +4,8 @@
 "title": "Как установить лицензии в GroupDocs.Viewer Java&#58; Руководство по настройке файлов и URL"
 "url": "/ru/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Как установить лицензии в GroupDocs.Viewer Java: Руководство по настройке файлов и URL
 
 ## Введение

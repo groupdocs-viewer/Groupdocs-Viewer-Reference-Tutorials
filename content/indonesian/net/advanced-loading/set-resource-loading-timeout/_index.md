@@ -5,8 +5,8 @@
 "title": "Mengatur Batas Waktu Pemuatan Sumber Daya (Lanjutan)"
 "url": "/id/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Mengatur Batas Waktu Pemuatan Sumber Daya (Lanjutan)
 
 ## Perkenalan

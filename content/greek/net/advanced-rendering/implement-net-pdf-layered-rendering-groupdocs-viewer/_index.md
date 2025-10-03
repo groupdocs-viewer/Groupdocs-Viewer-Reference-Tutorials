@@ -4,8 +4,8 @@
 "title": "Master .NET PDF Layered Rendering με το GroupDocs.Viewer™ Οδηγός βήμα προς βήμα"
 "url": "/el/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Απεικόνιση σε επίπεδα σε Master .NET PDF με το GroupDocs.Viewer: Οδηγός βήμα προς βήμα
 
 ## Εισαγωγή

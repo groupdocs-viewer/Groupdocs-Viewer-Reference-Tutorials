@@ -4,8 +4,8 @@
 "title": "แปลงไฟล์เก็บถาวรเป็น HTML ด้วย GroupDocs.Viewer Java คำแนะนำที่ครอบคลุม"
 "url": "/th/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # แปลงไฟล์เก็บถาวรเป็น HTML ด้วย GroupDocs.Viewer Java: คู่มือฉบับสมบูรณ์
 
 ## การแนะนำ

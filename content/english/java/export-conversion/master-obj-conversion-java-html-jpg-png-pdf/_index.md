@@ -8,10 +8,8 @@ keywords:
 - OBJ to HTML conversion in Java
 - GroupDocs.Viewer for Java
 - 3D model file conversion
-
+type: docs
 ---
-
-
 # Mastering File Conversion: Convert OBJ to HTML/JPG/PNG/PDF in Java Using GroupDocs.Viewer
 
 ## Introduction

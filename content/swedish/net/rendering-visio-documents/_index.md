@@ -5,8 +5,8 @@
 "title": "Rendera Visio-dokument"
 "url": "/sv/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Rendera Visio-dokument
 
 ## Introduktion

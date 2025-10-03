@@ -5,8 +5,8 @@
 "title": "Ładowanie dokumentów"
 "url": "/pl/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Ładowanie dokumentów
 
 ## Wstęp

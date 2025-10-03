@@ -4,8 +4,8 @@
 "title": "Cara Mengambil dan Mencetak Lampiran Dokumen Menggunakan GroupDocs.Viewer untuk .NET | Panduan Rendering Lanjutan"
 "url": "/id/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengambil dan Mencetak Lampiran Dokumen Menggunakan GroupDocs.Viewer untuk .NET | Panduan Rendering Lanjutan
 
 ## Perkenalan

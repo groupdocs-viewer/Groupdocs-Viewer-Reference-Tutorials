@@ -5,8 +5,8 @@
 "title": "Renderování obrázků s umělou inteligencí"
 "url": "/cs/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Renderování obrázků s umělou inteligencí
 
 ## Zavedení

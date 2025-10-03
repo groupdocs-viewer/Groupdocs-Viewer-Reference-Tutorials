@@ -5,8 +5,8 @@
 "title": "啟用快取以加快文件處理速度"
 "url": "/zh-hant/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # 啟用快取以加快文件處理速度
 
 ## 介紹

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java license
 - setting license in Java
 - HTTP URL-based licenses
-
+type: docs
 ---
-
-
 # How to Set Licenses in GroupDocs.Viewer Java: File and URL Setup Guide
 
 ## Introduction

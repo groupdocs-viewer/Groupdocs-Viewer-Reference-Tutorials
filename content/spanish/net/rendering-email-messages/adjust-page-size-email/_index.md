@@ -5,8 +5,8 @@
 "title": "Ajustar el tamaño de la página al mostrar mensajes de correo electrónico"
 "url": "/es/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Ajustar el tamaño de la página al mostrar mensajes de correo electrónico
 
 ## Introducción

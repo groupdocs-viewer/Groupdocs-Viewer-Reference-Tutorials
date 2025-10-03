@@ -5,8 +5,8 @@
 "title": "Numeri di rendering"
 "url": "/it/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Numeri di rendering
 
 ## Introduzione

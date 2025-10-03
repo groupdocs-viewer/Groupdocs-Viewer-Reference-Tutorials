@@ -5,8 +5,8 @@
 "title": "设置图像大小限制"
 "url": "/zh/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # 设置图像大小限制
 
 ## 介绍

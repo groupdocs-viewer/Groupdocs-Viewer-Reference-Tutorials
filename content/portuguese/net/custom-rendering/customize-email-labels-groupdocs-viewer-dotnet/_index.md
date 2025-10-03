@@ -4,8 +4,8 @@
 "title": "Personalize rótulos de e-mail no GroupDocs.Viewer para .NET - Um guia completo para renomear campos"
 "url": "/pt/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Personalize rótulos de e-mail no GroupDocs.Viewer para .NET: um guia completo para renomear campos
 
 ## Introdução

@@ -4,8 +4,8 @@
 "title": "Cara Merender File IGS dalam .NET Menggunakan GroupDocs.Viewer&#58; Panduan Lengkap"
 "url": "/id/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File IGS dalam .NET Menggunakan GroupDocs.Viewer: Panduan Lengkap
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory Truevision TGA pomocí GroupDocs.Viewer v Javě – podrobný návod"
 "url": "/cs/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory Truevision TGA pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

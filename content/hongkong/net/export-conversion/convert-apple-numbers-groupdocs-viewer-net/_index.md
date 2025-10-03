@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 將 Apple Numbers 轉換為 HTML、JPG、PNG、PDF"
 "url": "/zh-hant/net/export-conversion/convert-apple-numbers-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 將 Apple Numbers 轉換為 HTML、JPG、PNG、PDF
 
 ## 介紹

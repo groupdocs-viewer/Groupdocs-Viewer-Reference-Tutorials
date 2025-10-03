@@ -8,10 +8,8 @@ keywords:
 - render HPG documents
 - GroupDocs.Viewer for .NET setup
 - convert HPG files
-
+type: docs
 ---
-
-
 # How to Render HPG Documents Using GroupDocs.Viewer .NET
 
 ## Introduction

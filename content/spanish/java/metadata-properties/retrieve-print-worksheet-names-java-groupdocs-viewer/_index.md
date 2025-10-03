@@ -4,8 +4,8 @@
 "title": "Extraer y mostrar nombres de hojas de trabajo en Java mediante la API GroupDocs.Viewer"
 "url": "/es/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Extraer y mostrar nombres de hojas de trabajo en Java mediante la API GroupDocs.Viewer
 
 ## Introducción

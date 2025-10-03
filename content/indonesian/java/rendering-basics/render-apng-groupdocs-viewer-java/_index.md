@@ -4,8 +4,8 @@
 "title": "Cara Membuat PNG Animasi di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat PNG Animasi dengan GroupDocs.Viewer di Java
 
 Temukan proses mengubah file Animated PNG (APNG) ke dalam berbagai format seperti HTML, JPG, PNG, dan PDF menggunakan pustaka GroupDocs.Viewer untuk Java yang canggih.

@@ -5,8 +5,8 @@
 "title": "Hämta och spara dokumentbilagor"
 "url": "/sv/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Hämta och spara dokumentbilagor
 
 ## Introduktion

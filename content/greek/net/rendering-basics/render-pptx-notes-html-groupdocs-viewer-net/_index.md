@@ -4,8 +4,8 @@
 "title": "Μετατροπή PPTX σε HTML με Σημειώσεις Χρησιμοποιώντας το GroupDocs.Viewer για .NET"
 "url": "/el/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Μετατροπή παρουσιάσεων PPTX σε HTML με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

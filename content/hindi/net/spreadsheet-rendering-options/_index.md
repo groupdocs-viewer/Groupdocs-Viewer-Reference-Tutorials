@@ -5,8 +5,8 @@
 "title": "स्प्रेडशीट रेंडरिंग विकल्प"
 "url": "/hi/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # स्प्रेडशीट रेंडरिंग विकल्प
 
 ## परिचय

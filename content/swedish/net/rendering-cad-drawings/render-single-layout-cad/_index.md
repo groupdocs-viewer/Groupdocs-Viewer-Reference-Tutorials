@@ -5,8 +5,8 @@
 "title": "Rendera en enda layout i CAD-ritningar"
 "url": "/sv/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Rendera en enda layout i CAD-ritningar
 
 ## Introduktion

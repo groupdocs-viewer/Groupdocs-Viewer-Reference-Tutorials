@@ -5,8 +5,8 @@
 "title": "नोट्स प्रस्तुत करें और समय इकाइयाँ समायोजित करें (MS प्रोजेक्ट)"
 "url": "/hi/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # नोट्स प्रस्तुत करें और समय इकाइयाँ समायोजित करें (MS प्रोजेक्ट)
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "Java&#58; Verborgen pagina's weergeven met GroupDocs.Viewer"
 "url": "/nl/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Verborgen pagina's weergeven met GroupDocs.Viewer
 
 ## Invoering

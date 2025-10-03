@@ -3,8 +3,8 @@
 "title": "Tutoriales sobre los fundamentos de la representación de documentos para GroupDocs.Viewer .NET"
 "url": "/es/net/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # Tutoriales sobre los fundamentos de la representación de documentos para GroupDocs.Viewer .NET
 
 Domine las técnicas de renderizado de documentos con nuestros detallados tutoriales de GroupDocs.Viewer .NET. Estas guías paso a paso muestran cómo convertir y renderizar documentos a diversos formatos de salida, controlar la calidad del renderizado, gestionar el renderizado a nivel de página e implementar la visualización de documentos en distintos formatos con precisión y eficiencia.

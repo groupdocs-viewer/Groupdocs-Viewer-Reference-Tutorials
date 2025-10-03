@@ -4,8 +4,8 @@
 "title": "Làm chủ HTML Rendering với Lề tùy chỉnh trong .NET bằng cách sử dụng GroupDocs.Viewer"
 "url": "/vi/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ việc kết xuất HTML với lề do người dùng xác định trong .NET bằng cách sử dụng GroupDocs.Viewer
 
 ## Giới thiệu

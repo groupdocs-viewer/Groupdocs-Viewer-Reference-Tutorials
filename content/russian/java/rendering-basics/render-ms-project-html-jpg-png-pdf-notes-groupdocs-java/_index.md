@@ -4,8 +4,8 @@
 "title": "Как визуализировать файлы MS Project в форматах HTML, JPG, PNG и PDF с примечаниями с помощью GroupDocs.Viewer для Java"
 "url": "/ru/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать файлы MS Project в форматах HTML, JPG, PNG и PDF с примечаниями с помощью GroupDocs.Viewer для Java
 
 ## Введение

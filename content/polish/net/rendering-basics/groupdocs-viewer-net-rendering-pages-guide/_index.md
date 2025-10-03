@@ -4,8 +4,8 @@
 "title": "Renderowanie określonych stron w .NET za pomocą GroupDocs.Viewer&#58; Kompleksowy przewodnik"
 "url": "/pl/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie określonych stron w .NET za pomocą GroupDocs.Viewer: kompleksowy przewodnik
 
 ## Wstęp

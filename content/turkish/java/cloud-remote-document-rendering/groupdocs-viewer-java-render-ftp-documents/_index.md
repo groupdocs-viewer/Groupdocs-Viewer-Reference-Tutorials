@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java Kullanarak FTP'den Belgeleri Oluşturun&#58; Kapsamlı Bir Kılavuz"
 "url": "/tr/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'ı Kullanarak FTP'den Belgeleri Oluşturma: Kapsamlı Bir Kılavuz
 
 ## giriiş

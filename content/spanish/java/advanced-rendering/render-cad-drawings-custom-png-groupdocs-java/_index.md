@@ -4,8 +4,8 @@
 "title": "Cómo renderizar dibujos CAD como PNG con tamaño y color de fondo personalizados usando GroupDocs.Viewer para Java"
 "url": "/es/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Cómo renderizar dibujos CAD como PNG con tamaño y color de fondo personalizados usando GroupDocs.Viewer para Java
 
 ## Introducción

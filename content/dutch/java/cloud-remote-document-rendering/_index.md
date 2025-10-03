@@ -3,8 +3,8 @@
 "title": "Tutorials voor het renderen van documenten in de cloud en op afstand voor GroupDocs.Viewer Java"
 "url": "/nl/java/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Tutorials voor het renderen van documenten in de cloud en op afstand voor GroupDocs.Viewer Java
 
 Leer hoe u documenten in de cloud en op afstand kunt renderen met onze GroupDocs.Viewer Java-tutorials. Deze praktische handleidingen demonstreren technieken voor het laden en renderen van documenten van cloudopslagproviders, het verwerken van externe URL's, het beheren van netwerkbestandsbronnen en het implementeren van oplossingen voor gedistribueerde documentweergave. Elke tutorial bevat gedetailleerde Java-codevoorbeelden voor veelvoorkomende scenario's voor rendering in de cloud en op afstand, waarmee u applicaties kunt bouwen met flexibele mogelijkheden voor documenttoegang.

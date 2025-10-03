@@ -5,8 +5,8 @@
 "title": "Atur Lisensi dari Stream"
 "url": "/id/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Atur Lisensi dari Stream
 
 ## Perkenalan

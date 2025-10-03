@@ -5,8 +5,8 @@
 "title": "Rendering di documenti di Microsoft Project"
 "url": "/it/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Rendering di documenti di Microsoft Project
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "Cách lấy lại cấu trúc lưu trữ bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy lại cấu trúc lưu trữ bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

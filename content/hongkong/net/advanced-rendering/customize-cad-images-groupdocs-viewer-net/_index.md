@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 和進階渲染技術自訂 CAD 影像"
 "url": "/zh-hant/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 渲染和自訂 CAD 映像
 
 ## 介紹

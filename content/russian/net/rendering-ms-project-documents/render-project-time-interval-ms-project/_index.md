@@ -5,8 +5,8 @@
 "title": "Интервал времени для конкретного проекта рендеринга (MS Project)"
 "url": "/ru/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Интервал времени для конкретного проекта рендеринга (MS Project)
 
 ## Введение

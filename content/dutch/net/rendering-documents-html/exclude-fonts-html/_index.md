@@ -5,8 +5,8 @@
 "title": "Lettertypen uitsluiten van gerenderde HTML"
 "url": "/nl/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Lettertypen uitsluiten van gerenderde HTML
 
 ## Invoering

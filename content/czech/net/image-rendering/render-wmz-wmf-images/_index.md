@@ -5,8 +5,8 @@
 "title": "Vykreslení obrázků WMZ a WMF"
 "url": "/cs/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # Vykreslení obrázků WMZ a WMF
 
 ## Zavedení

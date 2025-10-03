@@ -4,8 +4,8 @@
 "title": "Как реализовать пользовательский рендеринг шрифтов в Java с помощью GroupDocs.Viewer&#58; Пошаговое руководство"
 "url": "/ru/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Как реализовать пользовательский рендеринг шрифтов в Java с помощью GroupDocs.Viewer: пошаговое руководство
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "Optimalkan Rendering Spreadsheet dengan GroupDocs.Viewer untuk .NET&#58; Lewati Kolom Kosong"
 "url": "/id/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Mengoptimalkan Rendering Spreadsheet dengan GroupDocs.Viewer untuk .NET
 ## Cara Melewati Rendering Kolom Kosong di Spreadsheet menggunakan GroupDocs.Viewer .NET
 ### Perkenalan

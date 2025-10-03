@@ -8,10 +8,8 @@ keywords:
 - render documents from FTP
 - GroupDocs.Viewer for Java
 - document rendering in Java
-
+type: docs
 ---
-
-
 # Render Documents from FTP Using GroupDocs.Viewer for Java: A Comprehensive Guide
 
 ## Introduction

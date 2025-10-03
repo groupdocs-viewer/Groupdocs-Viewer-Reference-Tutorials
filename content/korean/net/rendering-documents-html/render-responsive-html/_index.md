@@ -5,8 +5,8 @@
 "title": "반응형 HTML 렌더링"
 "url": "/ko/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # 반응형 HTML 렌더링
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Jelszóval védett dokumentumok renderelése Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jelszóval védett dokumentumok renderelése Java-ban a GroupDocs.Viewer használatával
 
 ## Bevezetés

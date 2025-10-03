@@ -5,8 +5,8 @@
 "title": "Исключить шрифты из визуализированного HTML"
 "url": "/ru/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Исключить шрифты из визуализированного HTML
 
 ## Введение

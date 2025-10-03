@@ -4,8 +4,8 @@
 "title": "Kết xuất các tệp RAR thành HTML, JPG, PNG và PDF bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/rendering-basics/render-rar-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất các tệp RAR sang nhiều định dạng khác nhau bằng GroupDocs.Viewer cho Java
 
 Mở khóa tiềm năng của kho lưu trữ RAR của bạn bằng cách chuyển đổi chúng thành các định dạng có thể truy cập như HTML, JPG, PNG và PDF với GroupDocs.Viewer for Java. Hướng dẫn này sẽ hướng dẫn bạn từng bước, cho phép quản lý và trình bày tài liệu liền mạch.

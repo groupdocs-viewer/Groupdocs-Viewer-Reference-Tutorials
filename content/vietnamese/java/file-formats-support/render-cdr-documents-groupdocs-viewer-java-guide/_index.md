@@ -4,8 +4,8 @@
 "title": "Kết xuất tệp CDR bằng GroupDocs.Viewer Java&#58; Hướng dẫn đầy đủ về chuyển đổi HTML, JPG, PNG và PDF"
 "url": "/vi/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tệp CDR bằng GroupDocs.Viewer Java: Hướng dẫn đầy đủ về chuyển đổi HTML, JPG, PNG và PDF
 
 Chào mừng bạn đến với hướng dẫn chi tiết này về cách kết xuất tài liệu CorelDRAW (CDR) thành nhiều định dạng khác nhau như HTML, JPG, PNG và PDF bằng GroupDocs.Viewer for Java. Nếu bạn đang xử lý các tệp đồ họa và cần một cách liền mạch để chuyển đổi chúng trên nhiều nền tảng, hướng dẫn này chính là tài nguyên dành cho bạn.

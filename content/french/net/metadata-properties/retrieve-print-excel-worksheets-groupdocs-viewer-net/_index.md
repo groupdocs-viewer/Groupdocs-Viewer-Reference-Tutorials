@@ -4,8 +4,8 @@
 "title": "Comment récupérer et imprimer les noms des feuilles de calcul Excel avec GroupDocs.Viewer pour .NET (Guide 2023)"
 "url": "/fr/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment récupérer et imprimer les noms des feuilles de calcul Excel à l'aide de GroupDocs.Viewer pour .NET : guide complet
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Эффективная визуализация области печати Excel с использованием GroupDocs.Viewer для .NET"
 "url": "/ru/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Эффективная визуализация области печати Excel с использованием GroupDocs.Viewer для .NET
 
 ## Введение

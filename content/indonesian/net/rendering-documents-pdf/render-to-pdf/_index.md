@@ -5,8 +5,8 @@
 "title": "Render Dokumen ke PDF"
 "url": "/id/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Render Dokumen ke PDF
 
 ## Perkenalan

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["GroupDocs-Viewer", "Archive-Rendering", "HTML-Output", "NET-Development"]
+type: docs
 ---
-
 # Render Archives to HTML .NET - Complete Guide for RAR, ZIP Files
 
 ## Introduction

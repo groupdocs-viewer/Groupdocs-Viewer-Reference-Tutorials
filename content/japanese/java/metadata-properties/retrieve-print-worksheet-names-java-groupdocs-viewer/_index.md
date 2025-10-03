@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer API を使用して Java でワークシート名を抽出して表示する"
 "url": "/ja/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer API を使用して Java でワークシート名を抽出して表示する
 
 ## 導入

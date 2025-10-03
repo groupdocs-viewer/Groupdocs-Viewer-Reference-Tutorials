@@ -3,8 +3,8 @@
 "title": "Tutoriais de cache de renderização de documentos para GroupDocs.Viewer .NET"
 "url": "/pt/net/caching-resource-management/"
 "weight": 10
+type: docs
 ---
-
 # Tutoriais de cache de renderização de documentos para GroupDocs.Viewer .NET
 
 Domine o cache avançado e o gerenciamento de recursos com nossos tutoriais do GroupDocs.Viewer .NET. Estes guias abrangentes demonstram como implementar estratégias de cache eficientes, gerenciar recursos de renderização, otimizar o uso de memória e melhorar o desempenho da visualização de documentos. Cada tutorial fornece exemplos práticos de código .NET para implementar mecanismos sofisticados de cache que aprimoram a capacidade de resposta dos aplicativos e reduzem a sobrecarga computacional.

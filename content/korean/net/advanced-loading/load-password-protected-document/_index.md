@@ -5,8 +5,8 @@
 "title": "암호로 보호된 문서 로드"
 "url": "/ko/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # 암호로 보호된 문서 로드
 
 ## 소개

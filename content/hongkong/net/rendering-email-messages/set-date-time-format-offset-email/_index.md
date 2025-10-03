@@ -5,8 +5,8 @@
 "title": "設定日期時間格式和時區偏移量（電子郵件）"
 "url": "/zh-hant/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # 設定日期時間格式和時區偏移量（電子郵件）
 
 

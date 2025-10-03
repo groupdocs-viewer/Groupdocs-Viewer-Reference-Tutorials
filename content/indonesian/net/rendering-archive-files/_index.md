@@ -5,8 +5,8 @@
 "title": "Merender File Arsip"
 "url": "/id/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Merender File Arsip
 
 ## Perkenalan

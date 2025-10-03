@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์โฟลเดอร์เก็บถาวรใน Java โดยใช้ GroupDocs.Viewer คำแนะนำทีละขั้นตอน"
 "url": "/th/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์โฟลเดอร์เก็บถาวรด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

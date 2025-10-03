@@ -4,8 +4,8 @@
 "title": "Απόδοση κρυφών σελίδων σε έγγραφα χρησιμοποιώντας το GroupDocs.Viewer για .NET® - Ένας οδηγός βήμα προς βήμα"
 "url": "/el/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση κρυφών σελίδων σε έγγραφα χρησιμοποιώντας το GroupDocs.Viewer για .NET: Οδηγός βήμα προς βήμα
 
 ## Εισαγωγή

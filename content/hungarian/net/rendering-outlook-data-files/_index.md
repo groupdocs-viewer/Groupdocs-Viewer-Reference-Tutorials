@@ -5,8 +5,8 @@
 "title": "Outlook adatfájlok (PST, OST) renderelése"
 "url": "/hu/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Outlook adatfájlok (PST, OST) renderelése
 
 ## Bevezetés

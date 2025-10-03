@@ -4,8 +4,8 @@
 "title": "Jak implementovat specifikaci typu dokumentu v GroupDocs.Viewer pro Javu – Podrobný návod"
 "url": "/cs/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak implementovat specifikaci typu dokumentu v GroupDocs.Viewer pro Javu
 
 Podrobný návod k určení typu souboru pro vykreslování souborů DOCX pomocí GroupDocs.Viewer pro Javu.

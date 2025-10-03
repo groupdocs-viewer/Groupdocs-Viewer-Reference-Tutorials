@@ -4,8 +4,8 @@
 "title": "Απόδοση κρυφών γραμμών και στηλών σε αρχεία Excel χρησιμοποιώντας το GroupDocs.Viewer για .NET - Οδηγός για προχωρημένους"
 "url": "/el/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση κρυφών γραμμών και στηλών σε αρχεία Excel χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

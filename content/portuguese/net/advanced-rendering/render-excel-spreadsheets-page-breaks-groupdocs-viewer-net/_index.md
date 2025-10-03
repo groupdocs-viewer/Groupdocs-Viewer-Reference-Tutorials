@@ -4,8 +4,8 @@
 "title": "Renderizar planilhas do Excel por quebras de página usando GroupDocs.Viewer para .NET"
 "url": "/pt/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar planilhas do Excel por quebras de página usando GroupDocs.Viewer para .NET
 
 ## Introdução

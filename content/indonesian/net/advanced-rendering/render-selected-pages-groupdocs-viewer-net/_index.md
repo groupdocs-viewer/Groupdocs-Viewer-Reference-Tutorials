@@ -4,8 +4,8 @@
 "title": "Cara Merender Halaman Terpilih Menggunakan GroupDocs.Viewer .NET&#58; Panduan Lengkap untuk Pengembang"
 "url": "/id/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Halaman Tertentu Menggunakan GroupDocs.Viewer .NET
 
 ## Perkenalan

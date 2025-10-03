@@ -4,8 +4,8 @@
 "title": "Personnalisez les images CAO avec les techniques de rendu avancées de GroupDocs.Viewer .NET"
 "url": "/fr/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment rendre et personnaliser des images CAO à l'aide de GroupDocs.Viewer .NET
 
 ## Introduction

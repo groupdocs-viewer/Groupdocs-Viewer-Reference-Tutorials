@@ -4,8 +4,8 @@
 "title": "Kết xuất tài liệu dưới dạng hình ảnh với lớp văn bản trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tài liệu dưới dạng hình ảnh với lớp văn bản trong Java bằng GroupDocs.Viewer
 ## Hướng dẫn kết xuất nâng cao
 **URL SEO hiện tại**: /render-documents-to-images-with-text-layer-java

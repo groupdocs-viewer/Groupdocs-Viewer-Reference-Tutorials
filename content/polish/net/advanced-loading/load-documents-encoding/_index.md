@@ -5,8 +5,8 @@
 "title": "Załaduj dokumenty ze specyficznym kodowaniem"
 "url": "/pl/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Załaduj dokumenty ze specyficznym kodowaniem
 
 ## Wstęp

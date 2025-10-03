@@ -5,8 +5,8 @@
 "title": "ضبط حجم الصورة الناتجة لرسومات CAD"
 "url": "/ar/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # ضبط حجم الصورة الناتجة لرسومات CAD
 
 ## مقدمة

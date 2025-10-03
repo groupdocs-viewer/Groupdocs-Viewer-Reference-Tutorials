@@ -5,8 +5,8 @@
 "title": "Minificar documento HTML renderizado"
 "url": "/pt/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Minificar documento HTML renderizado
 
 ## Introdução

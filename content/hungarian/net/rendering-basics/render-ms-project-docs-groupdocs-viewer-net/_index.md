@@ -4,8 +4,8 @@
 "title": "MS Project dokumentumok renderelése GroupDocs.Viewer .NET használatával a továbbfejlesztett projektmenedzsment érdekében"
 "url": "/hu/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # MS Project dokumentumok renderelési mesterszintű bemutatása GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

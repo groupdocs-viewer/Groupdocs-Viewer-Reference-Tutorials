@@ -5,8 +5,8 @@
 "title": "Bildgrößenbeschränkungen festlegen"
 "url": "/de/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Bildgrößenbeschränkungen festlegen
 
 ## Einführung

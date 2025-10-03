@@ -4,8 +4,8 @@
 "title": "CDR dokumentumok renderelése a GroupDocs.Viewer for .NET használatával – Átfogó útmutató"
 "url": "/hu/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # CDR dokumentumok renderelése a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

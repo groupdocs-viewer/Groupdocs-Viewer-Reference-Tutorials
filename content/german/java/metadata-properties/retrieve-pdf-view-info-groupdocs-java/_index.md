@@ -4,8 +4,8 @@
 "title": "Abrufen von PDF-Metadaten und -Eigenschaften mit GroupDocs.Viewer in Java – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Abrufen von PDF-Metadaten und -Eigenschaften mit GroupDocs.Viewer in Java
 
 Willkommen zu dieser umfassenden Anleitung zum Abrufen von Ansichtsinformationen aus einem PDF-Dokument mit der GroupDocs.Viewer-Bibliothek in Java. Wenn Sie Details wie Seitenanzahl, Dokumenttyp und Berechtigungen programmgesteuert aus PDF-Dateien extrahieren möchten, sind Sie hier richtig.

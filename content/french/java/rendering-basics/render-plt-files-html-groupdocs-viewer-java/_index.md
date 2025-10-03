@@ -4,8 +4,8 @@
 "title": "Comment convertir des fichiers PLT en HTML à l'aide de GroupDocs.Viewer en Java ? Guide étape par étape"
 "url": "/fr/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment convertir des fichiers PLT en HTML avec GroupDocs.Viewer en Java : Guide du développeur
 
 ## Introduction

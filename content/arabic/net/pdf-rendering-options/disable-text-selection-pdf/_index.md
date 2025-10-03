@@ -5,8 +5,8 @@
 "title": "تعطيل تحديد النص في PDF"
 "url": "/ar/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # تعطيل تحديد النص في PDF
 
 ## مقدمة

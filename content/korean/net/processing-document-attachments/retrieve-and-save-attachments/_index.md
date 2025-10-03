@@ -5,8 +5,8 @@
 "title": "문서 첨부 파일 검색 및 저장"
 "url": "/ko/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # 문서 첨부 파일 검색 및 저장
 
 ## 소개

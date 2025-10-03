@@ -4,8 +4,8 @@
 "title": "เพิ่มประสิทธิภาพการเรนเดอร์สเปรดชีตด้วย GroupDocs.Viewer สำหรับ .NET&#58; ข้ามคอลัมน์ว่าง"
 "url": "/th/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # เพิ่มประสิทธิภาพการเรนเดอร์สเปรดชีตด้วย GroupDocs.Viewer สำหรับ .NET
 ## วิธีข้ามการแสดงผลคอลัมน์ว่างในสเปรดชีตโดยใช้ GroupDocs.Viewer .NET
 ### การแนะนำ

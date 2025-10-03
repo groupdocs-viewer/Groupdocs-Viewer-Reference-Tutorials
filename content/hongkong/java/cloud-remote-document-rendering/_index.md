@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 的雲端和遠端文件渲染教學"
 "url": "/zh-hant/java/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # GroupDocs.Viewer Java 的雲端和遠端文件渲染教學
 
 使用我們的 GroupDocs.Viewer Java 教學課程學習如何實現雲端和遠端文件渲染。這些實用指南示範了從雲端儲存提供者載入和渲染文件、處理遠端 URL、管理網路文件來源以及實現分散式文件檢視解決方案的技術。每個教學課程都包含針對常見雲端和遠端渲染場景的詳細 Java 程式碼範例，可協助您建立具有靈活文件存取功能的應用程式。

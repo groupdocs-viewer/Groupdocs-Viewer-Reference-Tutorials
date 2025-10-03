@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 的文档安全和访问控制教程"
 "url": "/zh/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 的文档安全和访问控制教程
 
 通过我们面向 .NET 开发人员的全面 GroupDocs.Viewer 安全教程，学习如何安全地查看文档。这些详细的指南演示了如何实现密码保护、管理文档权限、处理加密文件以及如何以编程方式控制对敏感文档的访问。每个教程都提供了针对常见安全场景的 .NET 代码示例，帮助您构建既能维护文档机密性和完整性，又能提供受控查看功能的应用程序。

@@ -4,8 +4,8 @@
 "title": "Jak implementovat vlastní vykreslování písem v Javě pomocí GroupDocs.Viewer – Podrobný návod"
 "url": "/cs/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jak implementovat vlastní vykreslování písem v Javě pomocí GroupDocs.Viewer: Podrobný návod
 
 ## Zavedení

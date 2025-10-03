@@ -4,8 +4,8 @@
 "title": "MS Project-documenten renderen met GroupDocs.Viewer .NET voor verbeterd projectbeheer"
 "url": "/nl/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # MS-projectdocumenten masteren met GroupDocs.Viewer .NET
 
 ## Invoering

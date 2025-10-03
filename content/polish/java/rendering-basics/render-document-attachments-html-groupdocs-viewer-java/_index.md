@@ -4,8 +4,8 @@
 "title": "Renderowanie załączników dokumentów do HTML za pomocą GroupDocs.Viewer Java&#58; Przewodnik krok po kroku"
 "url": "/pl/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderuj załączniki dokumentów do HTML za pomocą GroupDocs.Viewer Java
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "从渲染的 HTML 中排除字体"
 "url": "/zh/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # 从渲染的 HTML 中排除字体
 
 ## 介绍

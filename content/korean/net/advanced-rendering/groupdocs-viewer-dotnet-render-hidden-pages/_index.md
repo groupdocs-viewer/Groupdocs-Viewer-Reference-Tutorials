@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer를 사용하여 문서의 숨겨진 페이지 렌더링하기&#58; 단계별 가이드"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용하여 문서의 숨겨진 페이지 렌더링: 단계별 가이드
 
 ## 소개

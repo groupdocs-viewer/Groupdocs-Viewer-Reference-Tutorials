@@ -5,8 +5,8 @@
 "title": "تقديم الملاحظات وضبط وحدات الوقت (MS Project)"
 "url": "/ar/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # تقديم الملاحظات وضبط وحدات الوقت (MS Project)
 
 ## مقدمة

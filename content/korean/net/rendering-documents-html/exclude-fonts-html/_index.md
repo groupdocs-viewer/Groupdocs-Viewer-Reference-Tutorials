@@ -5,8 +5,8 @@
 "title": "렌더링된 HTML에서 글꼴 제외"
 "url": "/ko/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # 렌더링된 HTML에서 글꼴 제외
 
 ## 소개

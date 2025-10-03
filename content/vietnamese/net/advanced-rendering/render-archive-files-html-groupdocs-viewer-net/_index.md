@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp lưu trữ sang HTML bằng GroupDocs.Viewer .NET&#58; Hướng dẫn từng bước"
 "url": "/vi/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp lưu trữ sang HTML bằng GroupDocs.Viewer .NET: Hướng dẫn từng bước
 ## Giới thiệu
 Bạn đang gặp khó khăn khi trình bày các tệp lưu trữ như RAR hoặc ZIP trên trang web? Việc chuyển đổi các định dạng tệp phức tạp này thành các tài liệu HTML thân thiện với người dùng là rất quan trọng để phân phối nội dung liền mạch. Với GroupDocs.Viewer for .NET, nhiệm vụ này trở nên đơn giản và hiệu quả.

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 从 HTML 输出中排除特定字体"
 "url": "/zh/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 从 HTML 输出中排除字体
 
 ## 介绍

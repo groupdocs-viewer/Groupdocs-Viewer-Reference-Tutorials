@@ -3,8 +3,8 @@
 "title": "Tutoriales de marcas de agua y anotaciones de documentos para GroupDocs.Viewer .NET"
 "url": "/es/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Tutoriales de marcas de agua y anotaciones de documentos para GroupDocs.Viewer .NET
 
 Domine las técnicas de anotación y marca de agua en documentos con nuestros tutoriales .NET de GroupDocs.Viewer. Estas guías paso a paso muestran cómo agregar marcas de agua de texto e imagen, implementar anotaciones, controlar la posición y la transparencia de las marcas de agua, y renderizar documentos con anotaciones incrustadas. Cada tutorial incluye ejemplos prácticos de código .NET para agregar metadatos visuales y marcas de protección a sus documentos, mejorando así el seguimiento de documentos y las funciones de marca.

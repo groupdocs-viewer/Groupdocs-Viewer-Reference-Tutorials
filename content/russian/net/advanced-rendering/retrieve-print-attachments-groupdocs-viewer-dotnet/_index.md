@@ -4,8 +4,8 @@
 "title": "Как извлечь и распечатать вложения к документам с помощью GroupDocs.Viewer для .NET | Расширенное руководство по рендерингу"
 "url": "/ru/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Как извлечь и распечатать вложения к документам с помощью GroupDocs.Viewer для .NET | Расширенное руководство по рендерингу
 
 ## Введение

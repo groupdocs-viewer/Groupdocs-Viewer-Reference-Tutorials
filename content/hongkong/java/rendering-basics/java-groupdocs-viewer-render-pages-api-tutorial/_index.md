@@ -4,8 +4,8 @@
 "title": "Java 指南 - 使用 GroupDocs.Viewer API 渲染特定頁面以進行文件預覽和管理"
 "url": "/zh-hant/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # 實作 Java：使用 GroupDocs.Viewer API 渲染特定頁面
 
 ## 介紹

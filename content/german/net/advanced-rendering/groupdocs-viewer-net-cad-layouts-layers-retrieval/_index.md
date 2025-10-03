@@ -4,8 +4,8 @@
 "title": "So rufen Sie CAD-Layouts und -Ebenen mit GroupDocs.Viewer .NET für ein effizientes Designmanagement ab"
 "url": "/de/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie CAD-Layouts und -Ebenen mit GroupDocs.Viewer .NET ab
 ## Einführung
 Im Bereich Computer-Aided Design (CAD) ist die effiziente Verwaltung komplexer Zeichnungen entscheidend, insbesondere bei der Verarbeitung mehrerer Layouts und Ebenen in einer Datei. Für Architekten, Ingenieure und Designer steigert der schnelle Zugriff auf spezifische Informationen die Produktivität. **GroupDocs.Viewer .NET** bietet eine leistungsstarke Lösung, indem es Entwicklern ermöglicht, Layouts und Ebenen programmgesteuert aus CAD-Zeichnungen zu extrahieren.

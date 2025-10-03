@@ -4,8 +4,8 @@
 "title": "Hoe IGS-bestanden in .NET renderen met GroupDocs.Viewer&#58; een complete handleiding"
 "url": "/nl/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # IGS-bestanden renderen in .NET met GroupDocs.Viewer: een complete handleiding
 
 ## Invoering

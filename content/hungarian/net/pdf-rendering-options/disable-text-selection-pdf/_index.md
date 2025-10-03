@@ -5,8 +5,8 @@
 "title": "Szövegkijelölés letiltása PDF-ben"
 "url": "/hu/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Szövegkijelölés letiltása PDF-ben
 
 ## Bevezetés

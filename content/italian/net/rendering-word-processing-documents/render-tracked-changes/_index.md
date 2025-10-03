@@ -5,8 +5,8 @@
 "title": "Esegui il rendering delle modifiche tracciate"
 "url": "/it/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Esegui il rendering delle modifiche tracciate
 
 ## Introduzione

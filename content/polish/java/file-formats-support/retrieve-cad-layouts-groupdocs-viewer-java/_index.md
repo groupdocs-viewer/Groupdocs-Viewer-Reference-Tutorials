@@ -4,8 +4,8 @@
 "title": "Pobieranie układów i warstw CAD w języku Java za pomocą GroupDocs.Viewer"
 "url": "/pl/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak pobierać układy i warstwy CAD za pomocą GroupDocs.Viewer dla Java
 
 W świecie inżynierii i projektowania pliki CAD (Computer-Aided Design) są niezbędnymi narzędziami, które przechowują ogromne ilości szczegółowych informacji o projektach. Pliki te mogą być złożone, zawierać wiele układów i warstw, które wymagają precyzyjnego zarządzania i pobierania w celu efektywnego wykonania projektu. Jeśli chcesz wyodrębnić określone szczegóły z rysunków CAD programowo w Javie, GroupDocs.Viewer dla Javy jest rozwiązaniem dla Ciebie. Ten samouczek przeprowadzi Cię przez proces pobierania wszystkich układów i warstw z rysunku CAD za pomocą GroupDocs.Viewer.

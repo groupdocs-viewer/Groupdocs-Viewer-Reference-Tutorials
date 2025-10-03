@@ -5,8 +5,8 @@
 "title": "Hämta visningsinformation för Outlook-datafiler (PST, OST)"
 "url": "/sv/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Hämta visningsinformation för Outlook-datafiler (PST, OST)
 
 ## Introduktion

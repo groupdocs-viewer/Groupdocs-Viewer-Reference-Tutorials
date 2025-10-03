@@ -5,8 +5,8 @@
 "title": "Renderizar archivos CHM"
 "url": "/es/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar archivos CHM
 
 ## Introducción

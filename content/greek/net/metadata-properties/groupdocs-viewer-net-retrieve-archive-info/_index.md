@@ -4,8 +4,8 @@
 "title": "Πώς να ανακτήσετε πληροφορίες αρχειοθέτησης χρησιμοποιώντας το GroupDocs.Viewer για .NET™; Ένας πλήρης οδηγός"
 "url": "/el/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να ανακτήσετε πληροφορίες αρχειοθέτησης χρησιμοποιώντας το GroupDocs.Viewer για .NET: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

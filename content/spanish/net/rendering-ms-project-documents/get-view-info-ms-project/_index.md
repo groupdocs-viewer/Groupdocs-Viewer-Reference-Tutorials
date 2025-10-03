@@ -5,8 +5,8 @@
 "title": "Obtener información de visualización para documentos de Microsoft Project"
 "url": "/es/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Obtener información de visualización para documentos de Microsoft Project
 
 ## Introducción

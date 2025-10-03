@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java をマスターして URL からドキュメントを効率的に読み込み、レンダリングする"
 "url": "/ja/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java をマスター: URL からドキュメントを効率的に読み込み、レンダリングする
 
 ## 導入

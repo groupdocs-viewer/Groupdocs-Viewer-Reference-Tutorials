@@ -5,8 +5,8 @@
 "title": "Justera bildkvaliteten i PDF"
 "url": "/sv/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Justera bildkvaliteten i PDF
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "Zminimalizuj wyrenderowany dokument HTML"
 "url": "/pl/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Zminimalizuj wyrenderowany dokument HTML
 
 ## Wstęp

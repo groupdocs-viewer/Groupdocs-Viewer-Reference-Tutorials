@@ -5,8 +5,8 @@
 "title": "呈现特定文件夹和过滤消息（Outlook）"
 "url": "/zh/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # 呈现特定文件夹和过滤消息（Outlook）
 
 ## 介绍

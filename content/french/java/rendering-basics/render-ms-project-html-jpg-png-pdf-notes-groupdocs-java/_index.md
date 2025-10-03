@@ -4,8 +4,8 @@
 "title": "Comment afficher des fichiers MS Project au format HTML, JPG, PNG et PDF avec des notes à l'aide de GroupDocs.Viewer pour Java"
 "url": "/fr/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des fichiers MS Project au format HTML, JPG, PNG et PDF avec des notes à l'aide de GroupDocs.Viewer pour Java
 
 ## Introduction

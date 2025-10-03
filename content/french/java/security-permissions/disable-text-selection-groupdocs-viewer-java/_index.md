@@ -4,8 +4,8 @@
 "title": "Comment désactiver la sélection de texte dans les fichiers PDF à l'aide de GroupDocs.Viewer Java ? Un guide complet"
 "url": "/fr/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment désactiver la sélection de texte dans le rendu PDF avec GroupDocs.Viewer Java
 ## Introduction
 Besoin d'un moyen sécurisé d'afficher des PDF sur le Web sans autoriser la sélection de texte ? Ce guide complet explique comment désactiver la sélection de texte à l'aide de la bibliothèque GroupDocs.Viewer pour Java. En convertissant le texte en images, votre contenu reste sécurisé et non modifiable lorsqu'il est affiché en ligne.

@@ -4,8 +4,8 @@
 "title": "Vykreslování dokumentů z FTP pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování dokumentů z FTP pomocí GroupDocs.Viewer pro Javu: Komplexní průvodce
 
 ## Zavedení

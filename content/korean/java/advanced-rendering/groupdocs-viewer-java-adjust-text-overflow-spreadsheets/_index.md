@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 Excel 스프레드시트의 텍스트 오버플로를 조정하는 방법"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 Excel 스프레드시트의 텍스트 오버플로를 조정하는 방법
 ## 소개
 문서를 HTML로 변환할 때 스프레드시트 셀에 넘치는 텍스트를 처리하는 것은 일반적인 과제이며, 특히 방대한 Excel 파일의 경우 더욱 그렇습니다. **Java용 GroupDocs.Viewer** 이 과정을 간소화하여 넘치는 텍스트를 효율적으로 관리하고 숨길 수 있습니다.

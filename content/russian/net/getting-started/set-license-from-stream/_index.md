@@ -5,8 +5,8 @@
 "title": "Установить лицензию из потока"
 "url": "/ru/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Установить лицензию из потока
 
 ## Введение

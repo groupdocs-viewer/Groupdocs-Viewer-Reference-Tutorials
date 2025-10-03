@@ -5,8 +5,8 @@
 "title": "تحميل المستندات من FTP (متقدم)"
 "url": "/ar/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # تحميل المستندات من FTP (متقدم)
 
 ## مقدمة

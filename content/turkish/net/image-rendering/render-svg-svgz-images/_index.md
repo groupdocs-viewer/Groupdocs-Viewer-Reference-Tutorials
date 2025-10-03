@@ -5,8 +5,8 @@
 "title": "SVG ve SVGZ Görüntülerini Oluştur"
 "url": "/tr/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # SVG ve SVGZ Görüntülerini Oluştur
 
 ## giriiş

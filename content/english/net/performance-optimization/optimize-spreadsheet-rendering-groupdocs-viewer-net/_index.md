@@ -8,10 +8,8 @@ keywords:
 - optimize spreadsheet rendering
 - GroupDocs.Viewer for .NET
 - skip empty columns in spreadsheets
-
+type: docs
 ---
-
-
 # Optimize Spreadsheet Rendering with GroupDocs.Viewer for .NET
 ## How to Skip Rendering of Empty Columns in Spreadsheets using GroupDocs.Viewer .NET
 ### Introduction

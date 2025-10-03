@@ -5,8 +5,8 @@
 "title": "將檔案渲染為單一或多個 HTML 頁面"
 "url": "/zh-hant/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # 將檔案渲染為單一或多個 HTML 頁面
 
 ## 介紹

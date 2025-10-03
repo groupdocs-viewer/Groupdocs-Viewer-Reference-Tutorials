@@ -4,8 +4,8 @@
 "title": "Jak vyloučit písmo Arial při vykreslování HTML pomocí GroupDocs.Viewer v Javě – podrobný návod"
 "url": "/cs/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vyloučit písmo Arial při vykreslování dokumentů do HTML pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

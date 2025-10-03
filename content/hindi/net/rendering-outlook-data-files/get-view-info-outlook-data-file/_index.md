@@ -5,8 +5,8 @@
 "title": "Outlook डेटा फ़ाइलों (PST, OST) के लिए दृश्य जानकारी प्राप्त करें"
 "url": "/hi/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Outlook डेटा फ़ाइलों (PST, OST) के लिए दृश्य जानकारी प्राप्त करें
 
 ## परिचय

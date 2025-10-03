@@ -5,8 +5,8 @@
 "title": "Warstwy renderowania w rysunkach CAD"
 "url": "/pl/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Warstwy renderowania w rysunkach CAD
 
 ## Wstęp

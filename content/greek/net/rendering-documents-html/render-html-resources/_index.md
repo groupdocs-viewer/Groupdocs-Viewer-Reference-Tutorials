@@ -5,8 +5,8 @@
 "title": "Απόδοση με ενσωματωμένους ή εξωτερικούς πόρους"
 "url": "/el/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Απόδοση με ενσωματωμένους ή εξωτερικούς πόρους
 
 ## Εισαγωγή

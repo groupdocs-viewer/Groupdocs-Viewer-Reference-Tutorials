@@ -5,8 +5,8 @@
 "title": "Activer la mise en cache pour un traitement plus rapide des documents"
 "url": "/fr/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Activer la mise en cache pour un traitement plus rapide des documents
 
 ## Introduction

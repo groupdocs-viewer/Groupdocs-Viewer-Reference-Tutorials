@@ -4,8 +4,8 @@
 "title": "Szövegtúlcsordulás elrejtése Excelben a GroupDocs.Viewer .NET használatával – Átfogó útmutató"
 "url": "/hu/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Szöveg túlcsordulás elrejtése Excelben a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

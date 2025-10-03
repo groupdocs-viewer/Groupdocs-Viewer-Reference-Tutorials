@@ -4,8 +4,8 @@
 "title": "Implementacja kontroli wykrywania i szyfrowania plików w Javie za pomocą GroupDocs.Viewer"
 "url": "/pl/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Implementacja kontroli wykrywania i szyfrowania plików przy użyciu GroupDocs.Viewer dla języka Java
 
 ## Wstęp

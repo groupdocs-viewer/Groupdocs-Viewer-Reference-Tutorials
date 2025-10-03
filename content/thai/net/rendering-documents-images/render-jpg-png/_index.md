@@ -5,8 +5,8 @@
 "title": "เรนเดอร์เอกสารเป็น JPGPNG"
 "url": "/th/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # เรนเดอร์เอกสารเป็น JPGPNG
 
 ## การแนะนำ

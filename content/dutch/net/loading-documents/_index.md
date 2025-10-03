@@ -5,8 +5,8 @@
 "title": "Documenten laden"
 "url": "/nl/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Documenten laden
 
 ## Invoering

@@ -5,8 +5,8 @@
 "title": "Renderopties"
 "url": "/nl/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Renderopties
 
 

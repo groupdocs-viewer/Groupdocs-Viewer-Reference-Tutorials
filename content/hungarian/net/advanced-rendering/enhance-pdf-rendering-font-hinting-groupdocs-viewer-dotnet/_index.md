@@ -4,8 +4,8 @@
 "title": "PDF-megjelenítés javítása .NET-ben – Betűtípus-tippek engedélyezése a GroupDocs.Viewer segítségével"
 "url": "/hu/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # PDF-megjelenítés javítása .NET-ben a GroupDocs.Viewer használatával: Betűtípus-tippek engedélyezése
 
 ## Bevezetés

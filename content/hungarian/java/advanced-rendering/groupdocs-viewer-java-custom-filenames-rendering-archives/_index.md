@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java egyéni fájlneveinek elsajátítása archívumok PDF-megjelenítéséhez"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java elsajátítása: Egyéni fájlnevek megadása archívumok PDF-be renderelésekor
 
 ## Bevezetés

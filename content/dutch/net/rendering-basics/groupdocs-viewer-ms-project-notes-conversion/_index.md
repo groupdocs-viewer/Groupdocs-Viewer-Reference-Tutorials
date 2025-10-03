@@ -4,8 +4,8 @@
 "title": "MS-projectbestanden efficiënt renderen met notities met GroupDocs.Viewer voor .NET"
 "url": "/nl/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # MS-projectbestanden efficiënt renderen met notities met GroupDocs.Viewer voor .NET
 
 ## Invoering

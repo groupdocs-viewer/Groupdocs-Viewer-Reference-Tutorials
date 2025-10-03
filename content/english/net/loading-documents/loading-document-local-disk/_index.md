@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["groupdocs-viewer", "local-files", "document-rendering", "dotnet"]
+type: docs
 ---
-
 # Render Documents from Local Files in .NET Applications
 
 ## Introduction

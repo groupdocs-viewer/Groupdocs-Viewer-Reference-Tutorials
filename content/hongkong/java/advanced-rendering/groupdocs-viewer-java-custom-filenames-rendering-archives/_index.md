@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer Java 及其自訂檔名，用於 PDF 檔案渲染"
 "url": "/zh-hant/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # 掌握 GroupDocs.Viewer Java：將檔案渲染為 PDF 時指定自訂檔名
 
 ## 介紹

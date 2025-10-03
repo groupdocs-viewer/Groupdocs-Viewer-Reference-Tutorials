@@ -5,8 +5,8 @@
 "title": "Limitar el número de elementos a representar en los archivos de datos de Outlook"
 "url": "/es/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Limitar el número de elementos a representar en los archivos de datos de Outlook
 
 ## Introducción

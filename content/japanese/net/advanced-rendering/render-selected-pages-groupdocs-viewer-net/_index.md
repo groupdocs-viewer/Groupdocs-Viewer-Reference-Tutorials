@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して選択したページをレンダリングする方法 開発者向け総合ガイド"
 "url": "/ja/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して特定のページをレンダリングする方法
 
 ## 導入

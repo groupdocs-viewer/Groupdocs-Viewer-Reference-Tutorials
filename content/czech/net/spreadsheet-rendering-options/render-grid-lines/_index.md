@@ -5,8 +5,8 @@
 "title": "Vykreslení mřížkových čar"
 "url": "/cs/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Vykreslení mřížkových čar
 
 ## Zavedení

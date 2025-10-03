@@ -5,8 +5,8 @@
 "title": "Ustaw limity rozmiaru obrazu"
 "url": "/pl/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Ustaw limity rozmiaru obrazu
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Renderuj wiadomości e-mail z niestandardową datą i godziną w Java przy użyciu GroupDocs.Viewer"
 "url": "/pl/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderuj wiadomości e-mail z niestandardową datą i godziną w Javie przy użyciu GroupDocs.Viewer
 
 ## Wstęp

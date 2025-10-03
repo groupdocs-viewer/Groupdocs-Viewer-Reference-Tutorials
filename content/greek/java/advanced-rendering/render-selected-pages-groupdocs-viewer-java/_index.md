@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε επιλεγμένες σελίδες ενός εγγράφου χρησιμοποιώντας το GroupDocs.Viewer για Java"
 "url": "/el/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε συγκεκριμένες σελίδες με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

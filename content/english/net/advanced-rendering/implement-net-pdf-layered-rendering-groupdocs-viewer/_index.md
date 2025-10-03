@@ -8,10 +8,8 @@ keywords:
 - .NET PDF rendering
 - GroupDocs.Viewer layered rendering
 - PDF document structure in .NET
-
+type: docs
 ---
-
-
 # Master .NET PDF Layered Rendering with GroupDocs.Viewer: A Step-by-Step Guide
 
 ## Introduction

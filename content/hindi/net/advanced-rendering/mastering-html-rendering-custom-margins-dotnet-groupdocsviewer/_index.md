@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके .NET में कस्टम मार्जिन के साथ HTML रेंडरिंग में महारत हासिल करें"
 "url": "/hi/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके .NET में उपयोगकर्ता-परिभाषित मार्जिन के साथ HTML रेंडरिंग में महारत हासिल करना
 
 ## परिचय

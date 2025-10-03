@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer를 사용하여 스프레드시트 렌더링 최적화&#58; 빈 열 건너뛰기"
 "url": "/ko/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 스프레드시트 렌더링 최적화
 ## GroupDocs.Viewer .NET을 사용하여 스프레드시트에서 빈 열 렌더링을 건너뛰는 방법
 ### 소개

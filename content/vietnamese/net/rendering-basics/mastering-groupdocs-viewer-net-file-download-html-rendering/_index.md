@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Tải xuống tệp & Hiển thị tài liệu HTML dễ dàng"
 "url": "/vi/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ GroupDocs.Viewer .NET: Tải xuống tệp và kết xuất tài liệu dễ dàng
 
 ## Giới thiệu

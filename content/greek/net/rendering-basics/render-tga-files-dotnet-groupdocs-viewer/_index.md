@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία TGA σε .NET χρησιμοποιώντας το GroupDocs.Viewer® Ένας πλήρης οδηγός"
 "url": "/el/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία TGA σε .NET χρησιμοποιώντας το GroupDocs.Viewer: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

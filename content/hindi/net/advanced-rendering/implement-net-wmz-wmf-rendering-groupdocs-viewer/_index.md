@@ -4,8 +4,8 @@
 "title": "वेब और क्रॉस-प्लेटफ़ॉर्म संगतता के लिए GroupDocs.Viewer के साथ .NET WMZ/WMF रेंडरिंग लागू करें"
 "url": "/hi/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # वेब और क्रॉस-प्लेटफ़ॉर्म संगतता के लिए GroupDocs.Viewer के साथ .NET WMZ/WMF रेंडरिंग लागू करें
 
 ## परिचय

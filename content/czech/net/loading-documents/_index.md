@@ -5,8 +5,8 @@
 "title": "Načítání dokumentů"
 "url": "/cs/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Načítání dokumentů
 
 ## Zavedení

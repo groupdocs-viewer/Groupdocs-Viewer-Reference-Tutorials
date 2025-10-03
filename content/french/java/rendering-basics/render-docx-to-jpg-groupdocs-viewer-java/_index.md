@@ -4,8 +4,8 @@
 "title": "Convertir un fichier DOCX en JPG à l'aide de GroupDocs.Viewer pour Java &#58; guide étape par étape"
 "url": "/fr/java/rendering-basics/render-docx-to-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment convertir un document DOCX en images JPG à l'aide de GroupDocs.Viewer pour Java
 
 ## Introduction

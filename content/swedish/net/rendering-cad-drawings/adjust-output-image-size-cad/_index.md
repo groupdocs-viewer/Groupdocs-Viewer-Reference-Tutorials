@@ -5,8 +5,8 @@
 "title": "Justera utdatabildens storlek för CAD-ritningar"
 "url": "/sv/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Justera utdatabildens storlek för CAD-ritningar
 
 ## Introduktion

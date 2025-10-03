@@ -5,8 +5,8 @@
 "title": "Alle lay-outs weergeven in CAD-tekeningen"
 "url": "/nl/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Alle lay-outs weergeven in CAD-tekeningen
 
 ## Invoering

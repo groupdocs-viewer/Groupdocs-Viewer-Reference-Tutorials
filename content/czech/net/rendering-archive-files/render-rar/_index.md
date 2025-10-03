@@ -5,8 +5,8 @@
 "title": "Render RAR archivů"
 "url": "/cs/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Render RAR archivů
 
 ## Zavedení

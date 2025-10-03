@@ -8,10 +8,8 @@ keywords:
 - render MS Project files
 - GroupDocs.Viewer for .NET
 - convert MS Project notes
-
+type: docs
 ---
-
-
 # Efficiently Render MS Project Files with Notes Using GroupDocs.Viewer for .NET
 
 ## Introduction

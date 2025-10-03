@@ -4,8 +4,8 @@
 "title": "Outlook-gegevensbestanden weergeven met GroupDocs.Viewer in Java&#58; een stapsgewijze handleiding"
 "url": "/nl/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Outlook-gegevensbestanden renderen met GroupDocs.Viewer in Java: een stapsgewijze handleiding
 
 ## Invoering

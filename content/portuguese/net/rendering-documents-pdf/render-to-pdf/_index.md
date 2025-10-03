@@ -5,8 +5,8 @@
 "title": "Renderizar documento para PDF"
 "url": "/pt/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar documento para PDF
 
 ## Introdução

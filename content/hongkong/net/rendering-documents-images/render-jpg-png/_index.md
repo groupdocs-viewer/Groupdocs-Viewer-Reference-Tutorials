@@ -5,8 +5,8 @@
 "title": "將文件渲染為 JPGPNG"
 "url": "/zh-hant/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # 將文件渲染為 JPGPNG
 
 ## 介紹

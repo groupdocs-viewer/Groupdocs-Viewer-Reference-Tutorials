@@ -5,8 +5,8 @@
 "title": "Fichiers texte de rendu (.txt)"
 "url": "/fr/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Fichiers texte de rendu (.txt)
 
 ## Introduction

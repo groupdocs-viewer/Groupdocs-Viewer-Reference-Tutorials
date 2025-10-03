@@ -4,8 +4,8 @@
 "title": "HTML Çıktısı için GroupDocs.Viewer .NET Kullanılarak Excel E-Tablolarında Izgara Çizgileri Nasıl Oluşturulur"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # HTML Çıktısı için GroupDocs.Viewer .NET Kullanılarak Excel E-Tablolarında Izgara Çizgileri Nasıl Oluşturulur
 
 ## giriiş

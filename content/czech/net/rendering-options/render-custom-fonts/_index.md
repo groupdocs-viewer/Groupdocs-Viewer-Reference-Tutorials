@@ -5,8 +5,8 @@
 "title": "Vykreslení s vlastními fonty"
 "url": "/cs/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Vykreslení s vlastními fonty
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Gelişmiş Proje Yönetimi için GroupDocs.Viewer .NET Kullanarak MS Project Belgelerini Oluşturun"
 "url": "/tr/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak MS Project Belgelerinin Ana Render'ı
 
 ## giriiş

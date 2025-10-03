@@ -5,8 +5,8 @@
 "title": "Pagina's in document opnieuw ordenen"
 "url": "/nl/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Pagina's in document opnieuw ordenen
 
 ## Invoering

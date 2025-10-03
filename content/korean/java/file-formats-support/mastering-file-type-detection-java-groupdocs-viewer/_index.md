@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 파일 유형 감지 마스터하기"
 "url": "/ko/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 파일 유형 감지 마스터하기
 
 의 힘을 발견하세요 **그룹 문서 뷰어** 확장자, 미디어 유형, 스트림을 통해 파일 유형을 원활하게 식별합니다. 이 강력한 라이브러리는 개발 프로세스를 간소화하고 애플리케이션 기능을 향상시킵니다.

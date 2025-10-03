@@ -5,8 +5,8 @@
 "title": "Dokumente von FTP laden (Erweitert)"
 "url": "/de/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Dokumente von FTP laden (Erweitert)
 
 ## Einführung

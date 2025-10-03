@@ -5,8 +5,8 @@
 "title": "Archivi RAR di Render"
 "url": "/it/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Archivi RAR di Render
 
 ## Introduzione

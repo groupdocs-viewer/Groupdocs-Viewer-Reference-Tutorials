@@ -4,8 +4,8 @@
 "title": "Rendera e-postmeddelanden med anpassat datum och tid i Java med GroupDocs.Viewer"
 "url": "/sv/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendera e-postmeddelanden med anpassat datum och tid i Java med GroupDocs.Viewer
 
 ## Introduktion

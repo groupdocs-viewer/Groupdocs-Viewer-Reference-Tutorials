@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET ile E-postalardaki Tarih-Saat Biçimlerini ve Saat Dilimi Farklarını Özelleştirme"
 "url": "/tr/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile E-postalardaki Tarih-Saat Biçimlerini ve Saat Dilimlerini Özelleştirme
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 CAD 레이아웃 및 레이어 검색"
 "url": "/ko/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 CAD 레이아웃 및 레이어를 검색하는 방법
 
 엔지니어링 및 설계 분야에서 컴퓨터 지원 설계(CAD) 파일은 설계에 대한 방대한 양의 상세 정보를 저장하는 필수적인 도구입니다. 이러한 파일은 여러 레이아웃과 레이어를 포함하여 복잡할 수 있으며, 효과적인 프로젝트 실행을 위해 정밀한 관리 및 검색이 필요합니다. Java에서 프로그래밍 방식으로 CAD 도면의 특정 세부 정보를 추출하려는 경우, GroupDocs.Viewer for Java가 최적의 솔루션입니다. 이 튜토리얼에서는 GroupDocs.Viewer를 사용하여 CAD 도면의 모든 레이아웃과 레이어를 검색하는 과정을 안내합니다.

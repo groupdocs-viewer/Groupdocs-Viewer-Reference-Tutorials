@@ -5,8 +5,8 @@
 "title": "Time-out voor het laden van bronnen instellen (geavanceerd)"
 "url": "/nl/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Time-out voor het laden van bronnen instellen (geavanceerd)
 
 ## Invoering

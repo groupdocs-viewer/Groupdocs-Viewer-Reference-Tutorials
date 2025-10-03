@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสารที่ป้องกันด้วยรหัสผ่านใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์เอกสารที่ป้องกันด้วยรหัสผ่านใน Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

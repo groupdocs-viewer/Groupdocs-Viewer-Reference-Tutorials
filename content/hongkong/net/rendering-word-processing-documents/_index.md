@@ -5,8 +5,8 @@
 "title": "渲染文字處理文檔"
 "url": "/zh-hant/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # 渲染文字處理文檔
 
 

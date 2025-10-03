@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Performance Optimization"]
 tags: ["caching", "performance", "resource-management", "timeout-configuration"]
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Caching - Complete Performance Optimization Guide
 
 If you're building applications that handle document viewing at scale, you've probably noticed that rendering performance can make or break the user experience. That's where smart caching strategies come in—and GroupDocs.Viewer for .NET gives you powerful tools to implement them effectively.

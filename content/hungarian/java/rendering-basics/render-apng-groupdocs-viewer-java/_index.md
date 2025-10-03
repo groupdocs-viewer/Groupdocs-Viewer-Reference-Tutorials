@@ -4,8 +4,8 @@
 "title": "Animált PNG-k renderelése Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Animált PNG-k renderelése GroupDocs.Viewer segítségével Java-ban
 
 Fedezze fel az animált PNG (APNG) fájlok HTML, JPG, PNG és PDF formátumba konvertálásának folyamatát a hatékony GroupDocs.Viewer for Java könyvtár segítségével.

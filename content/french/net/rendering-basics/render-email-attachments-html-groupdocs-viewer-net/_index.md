@@ -4,8 +4,8 @@
 "title": "Convertir les pièces jointes des e-mails en HTML avec GroupDocs.Viewer pour .NET"
 "url": "/fr/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment convertir les pièces jointes d'un e-mail en HTML à l'aide de GroupDocs.Viewer pour .NET
 ## Introduction
 Besoin d'un moyen efficace de convertir les pièces jointes de vos e-mails en HTML facilement lisible ? Que ce soit pour améliorer l'accessibilité des documents ou simplifier le partage de contenu, le rendu des pièces jointes est essentiel à une gestion efficace de la correspondance numérique. Ce guide vous guidera dans leur utilisation. **GroupDocs.Viewer pour .NET** pour y parvenir facilement.

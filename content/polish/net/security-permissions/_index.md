@@ -3,8 +3,8 @@
 "title": "Samouczki dotyczące bezpieczeństwa dokumentów i kontroli dostępu dla GroupDocs.Viewer .NET"
 "url": "/pl/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Samouczki dotyczące bezpieczeństwa dokumentów i kontroli dostępu dla GroupDocs.Viewer .NET
 
 Naucz się zabezpieczać przeglądanie dokumentów dzięki naszym kompleksowym samouczkom dotyczącym bezpieczeństwa GroupDocs.Viewer dla programistów .NET. Te szczegółowe przewodniki pokazują, jak wdrożyć ochronę hasłem, zarządzać uprawnieniami do dokumentów, obsługiwać zaszyfrowane pliki i kontrolować dostęp do poufnych dokumentów programowo. Każdy samouczek zawiera działające przykłady kodu .NET dla typowych scenariuszy bezpieczeństwa, pomagając w tworzeniu aplikacji, które zachowują poufność i integralność dokumentów, zapewniając jednocześnie kontrolowane możliwości przeglądania.

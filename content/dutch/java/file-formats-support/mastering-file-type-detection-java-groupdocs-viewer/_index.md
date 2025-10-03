@@ -4,8 +4,8 @@
 "title": "Bestandstypedetectie in Java onder de knie krijgen met GroupDocs.Viewer"
 "url": "/nl/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Bestandstypedetectie in Java onder de knie krijgen met GroupDocs.Viewer
 
 Ontdek de kracht van **GroupDocs.Viewer** om bestandstypen naadloos te identificeren op basis van extensies, mediatypen en streams. Deze robuuste bibliotheek vereenvoudigt ontwikkelprocessen en verbetert de applicatiemogelijkheden.

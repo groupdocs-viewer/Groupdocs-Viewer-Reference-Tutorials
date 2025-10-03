@@ -5,8 +5,8 @@
 "title": "Περιορισμός αριθμού στοιχείων για απόδοση σε αρχεία δεδομένων του Outlook"
 "url": "/el/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Περιορισμός αριθμού στοιχείων για απόδοση σε αρχεία δεδομένων του Outlook
 
 ## Εισαγωγή

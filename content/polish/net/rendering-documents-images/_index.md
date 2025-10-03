@@ -5,8 +5,8 @@
 "title": "Renderowanie dokumentów do obrazów"
 "url": "/pl/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Renderowanie dokumentów do obrazów
 
 ## Wstęp

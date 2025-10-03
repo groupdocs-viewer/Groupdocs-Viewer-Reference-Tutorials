@@ -5,8 +5,8 @@
 "title": "渲染 TGA 图像"
 "url": "/zh/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # 渲染 TGA 图像
 
 ## 介绍

@@ -8,10 +8,8 @@ keywords:
 - split excel sheets into pages by rows
 - groupdocs viewer net setup
 - manageable excel data
-
+type: docs
 ---
-
-
 # Splitting Excel Sheets into Pages by Rows with GroupDocs.Viewer .NET
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Zvládnutí správy licencí v GroupDocs.Viewer pro .NET – Komplexní průvodce"
 "url": "/cs/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí správy licencí v GroupDocs.Viewer pro .NET
 ## Komplexní průvodce
 

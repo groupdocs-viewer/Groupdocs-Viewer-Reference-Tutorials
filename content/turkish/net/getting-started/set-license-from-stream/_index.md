@@ -5,8 +5,8 @@
 "title": "Akıştan Lisans Ayarla"
 "url": "/tr/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Akıştan Lisans Ayarla
 
 ## giriiş

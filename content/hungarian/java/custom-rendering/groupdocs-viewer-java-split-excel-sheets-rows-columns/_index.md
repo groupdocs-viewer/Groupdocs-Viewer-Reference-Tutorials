@@ -4,8 +4,8 @@
 "title": "Excel-táblázatok sorok és oszlopok szerinti felosztása a GroupDocs.Viewer segítségével Java-ban – Átfogó útmutató"
 "url": "/hu/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Excel-táblázatok sorok és oszlopok szerinti felosztása a GroupDocs.Viewer használatával Java-ban
 
 ## Bevezetés

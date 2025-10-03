@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["SVG", "SVGZ", "vector-graphics", "image-conversion", "net-api"]
+type: docs
 ---
-
 # How to Render SVG Images in .NET Applications
 
 If you're working with vector graphics in your .NET applications, you've probably encountered the need to render SVG and SVGZ images into different formats. Whether you're building a document management system, creating image galleries, or developing web applications that need to display vector graphics, knowing how to efficiently convert these files is crucial.

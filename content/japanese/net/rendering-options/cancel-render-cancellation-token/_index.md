@@ -5,8 +5,8 @@
 "title": "キャンセルトークンを使用してレンダリングをキャンセルする"
 "url": "/ja/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # キャンセルトークンを使用してレンダリングをキャンセルする
 
 ## 導入

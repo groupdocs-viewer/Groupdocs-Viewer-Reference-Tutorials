@@ -5,8 +5,8 @@
 "title": "Hiển thị HTML với Lề do Người dùng Xác định"
 "url": "/vi/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Hiển thị HTML với Lề do Người dùng Xác định
 
 ## Giới thiệu

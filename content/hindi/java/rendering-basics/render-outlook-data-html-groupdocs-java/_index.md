@@ -4,8 +4,8 @@
 "title": "जावा और GroupDocs.Viewer का उपयोग करके Outlook PST और OST फ़ाइलों को HTML में प्रस्तुत करें"
 "url": "/hi/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके Outlook डेटा फ़ाइलों को HTML में कैसे प्रस्तुत करें
 
 ## परिचय

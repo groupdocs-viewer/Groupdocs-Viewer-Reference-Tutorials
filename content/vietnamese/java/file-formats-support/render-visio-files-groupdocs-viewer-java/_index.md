@@ -4,8 +4,8 @@
 "title": "Kết xuất tệp Visio bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện về chuyển đổi tệp"
 "url": "/vi/java/file-formats-support/render-visio-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tệp Visio bằng GroupDocs.Viewer cho Java: Hướng dẫn toàn diện
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc chia sẻ và hiển thị các sơ đồ phức tạp một cách hiệu quả là rất quan trọng. Cho dù bạn là nhà phát triển phần mềm hay chuyên gia kinh doanh, việc chuyển đổi tài liệu Microsoft Visio sang các định dạng có thể truy cập phổ biến như HTML, JPG, PNG hoặc PDF có thể cải thiện đáng kể khả năng cộng tác và trình bày. Hướng dẫn này sẽ hướng dẫn bạn sử dụng GroupDocs.Viewer for Java để hiển thị tài liệu Visio một cách liền mạch sang các định dạng này.

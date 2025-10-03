@@ -5,8 +5,8 @@
 "title": "Отображение заметок и настройка единиц времени (MS Project)"
 "url": "/ru/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Отображение заметок и настройка единиц времени (MS Project)
 
 ## Введение

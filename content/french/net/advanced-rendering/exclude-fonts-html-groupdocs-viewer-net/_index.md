@@ -4,8 +4,8 @@
 "title": "Comment exclure des polices spécifiques de la sortie HTML à l'aide de GroupDocs.Viewer pour .NET"
 "url": "/fr/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment exclure des polices de la sortie HTML à l'aide de GroupDocs.Viewer pour .NET
 
 ## Introduction

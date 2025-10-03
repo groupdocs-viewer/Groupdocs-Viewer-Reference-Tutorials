@@ -4,8 +4,8 @@
 "title": "Rendering di livelli CAD specifici in Java utilizzando GroupDocs.Viewer&#58; una guida completa"
 "url": "/it/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rendering di livelli CAD specifici in Java utilizzando GroupDocs.Viewer
 ## Introduzione
 Hai difficoltà a visualizzare livelli specifici di un disegno CAD? Che tu sia un ingegnere, un architetto o uno sviluppatore alle prese con progetti complessi, gestire e visualizzare livelli CAD specifici può essere un'impresa ardua. Questa guida illustra come visualizzare livelli specifici in modo efficiente utilizzando il potente GroupDocs.Viewer per Java.

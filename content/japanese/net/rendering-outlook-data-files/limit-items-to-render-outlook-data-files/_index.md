@@ -5,8 +5,8 @@
 "title": "Outlook データ ファイルでレンダリングするアイテムの数を制限する"
 "url": "/ja/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Outlook データ ファイルでレンダリングするアイテムの数を制限する
 
 ## 導入

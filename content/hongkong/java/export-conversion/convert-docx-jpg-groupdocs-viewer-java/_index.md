@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中將 DOCX 轉換為 JPG——綜合指南"
 "url": "/zh-hant/java/export-conversion/convert-docx-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 Java 中將 DOCX 渲染為 JPG
 
 ## 介紹

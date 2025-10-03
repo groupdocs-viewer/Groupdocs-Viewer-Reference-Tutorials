@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET フォント埋め込みとドキュメントの HTML への効率的な変換"
 "url": "/ja/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET でドキュメントレンダリングをマスターする: フォントを埋め込んで HTML に変換する
 
 ## 導入

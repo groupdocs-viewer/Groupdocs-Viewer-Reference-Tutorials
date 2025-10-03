@@ -4,8 +4,8 @@
 "title": "Εξαγωγή κύριου κειμένου σε .NET με το GroupDocs.Viewer&#58; Ένας πλήρης οδηγός"
 "url": "/el/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Εξοικείωση με την εξαγωγή κειμένου σε .NET με το GroupDocs.Viewer: Ένα ολοκληρωμένο σεμινάριο
 
 ## Εισαγωγή

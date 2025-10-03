@@ -4,8 +4,8 @@
 "title": "使用 Java 實作 GroupDocs.Viewer 的計量許可證－開發人員指南"
 "url": "/zh-hant/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # 為 GroupDocs.Viewer for Java 實作計量許可證：開發人員指南
 
 ## 介紹

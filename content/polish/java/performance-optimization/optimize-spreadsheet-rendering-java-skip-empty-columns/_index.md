@@ -4,8 +4,8 @@
 "title": "Optymalizacja renderowania arkusza kalkulacyjnego Java i pomijanie pustych kolumn za pomocą GroupDocs.Viewer"
 "url": "/pl/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Jak zoptymalizować renderowanie arkusza kalkulacyjnego w Javie: pomijanie pustych kolumn za pomocą GroupDocs.Viewer
 
 ## Wstęp

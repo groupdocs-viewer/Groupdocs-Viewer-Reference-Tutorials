@@ -5,8 +5,8 @@
 "title": "Úprava velikosti stránky při vykreslování e-mailových zpráv"
 "url": "/cs/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Úprava velikosti stránky při vykreslování e-mailových zpráv
 
 ## Zavedení

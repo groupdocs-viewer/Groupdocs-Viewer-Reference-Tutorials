@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων CMX"
 "url": "/el/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # Απόδοση εικόνων CMX
 
 ## Εισαγωγή

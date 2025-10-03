@@ -4,8 +4,8 @@
 "title": "Implemente la representación .NET WMZ/WMF con GroupDocs.Viewer para compatibilidad web y multiplataforma"
 "url": "/es/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Implemente la representación .NET WMZ/WMF con GroupDocs.Viewer para compatibilidad web y multiplataforma
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET は、ZIP アーカイブから特定のフォルダを HTML にレンダリングします。"
 "url": "/ja/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # チュートリアル: GroupDocs.Viewer .NET を実装して、ZIP アーカイブから特定のフォルダーを HTML にレンダリングする
 
 ## 導入

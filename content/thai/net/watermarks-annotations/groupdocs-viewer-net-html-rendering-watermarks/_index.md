@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์เอกสารหลักใน .NET โดยใช้ GroupDocs.Viewer การแปลง HTML และการผสานรวมลายน้ำ"
 "url": "/th/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์เอกสารหลักใน .NET โดยใช้ GroupDocs.Viewer: การแปลง HTML และการบูรณาการลายน้ำ
 
 ## การแนะนำ

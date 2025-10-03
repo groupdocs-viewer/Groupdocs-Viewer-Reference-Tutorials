@@ -5,8 +5,8 @@
 "title": "Ajustar o estouro de texto nas células"
 "url": "/pt/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Ajustar o estouro de texto nas células
 
 ## Introdução

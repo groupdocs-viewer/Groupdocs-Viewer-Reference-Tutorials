@@ -4,8 +4,8 @@
 "title": "Cómo ajustar el desbordamiento de texto en hojas de cálculo de Excel con GroupDocs.Viewer para Java"
 "url": "/es/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Cómo ajustar el desbordamiento de texto en hojas de cálculo de Excel con GroupDocs.Viewer para Java
 ## Introducción
 Lidiar con texto desbordado en celdas de hojas de cálculo al convertir documentos a HTML es un desafío común, especialmente para archivos Excel extensos. **GroupDocs.Viewer para Java** Simplifica este proceso, permitiéndole administrar y ocultar el texto desbordado de manera eficiente.

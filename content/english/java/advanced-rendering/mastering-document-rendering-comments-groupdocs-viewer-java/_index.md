@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["groupdocs-viewer", "java-tutorial", "document-rendering", "html-conversion"]
+type: docs
 ---
-
 # GroupDocs Viewer Java Tutorial: Render Documents with Comments (2025 Guide)
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Vänd och rotera sidor"
 "url": "/sv/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Vänd och rotera sidor
 
 ## Introduktion

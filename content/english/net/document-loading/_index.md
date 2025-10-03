@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "document-loading", "streams", "dotnet", "csharp"]
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Document Loading - Complete Developer Guide
 
 Loading documents efficiently is the foundation of any successful document viewing application. Whether you're building an enterprise document management system or a simple file viewer, understanding how to properly load documents from various sources can make or break your application's performance and user experience.

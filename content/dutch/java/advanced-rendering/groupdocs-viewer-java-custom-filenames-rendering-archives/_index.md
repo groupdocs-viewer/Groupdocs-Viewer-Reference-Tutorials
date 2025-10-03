@@ -4,8 +4,8 @@
 "title": "Mastering GroupDocs.Viewer Java&#58; aangepaste bestandsnamen voor PDF-rendering van archieven"
 "url": "/nl/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java onder de knie krijgen: aangepaste bestandsnamen opgeven bij het renderen van archieven naar PDF
 
 ## Invoering

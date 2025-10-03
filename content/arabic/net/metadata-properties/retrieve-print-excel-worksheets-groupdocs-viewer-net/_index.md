@@ -4,8 +4,8 @@
 "title": "كيفية استرداد أسماء أوراق عمل Excel وطباعتها باستخدام GroupDocs.Viewer لـ .NET (دليل 2023)"
 "url": "/ar/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استرداد أسماء أوراق عمل Excel وطباعتها باستخدام GroupDocs.Viewer لـ .NET: دليل شامل
 
 ## مقدمة

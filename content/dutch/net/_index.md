@@ -5,8 +5,8 @@
 "title": "Uitgebreide tutorials en voorbeelden van GroupDocs.Viewer voor .NET"
 "url": "/nl/net/"
 "weight": 10
+type: docs
 ---
-
 # Uitgebreide tutorials en voorbeelden van GroupDocs.Viewer voor .NET
 
 ## Invoering

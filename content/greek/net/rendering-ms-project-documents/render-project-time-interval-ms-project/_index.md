@@ -5,8 +5,8 @@
 "title": "Χρονικό διάστημα συγκεκριμένου έργου απόδοσης (MS Project)"
 "url": "/el/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Χρονικό διάστημα συγκεκριμένου έργου απόδοσης (MS Project)
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 偵測文件類型－綜合教學"
 "url": "/zh-hant/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 偵測文件類型：綜合教學
 
 ## 介紹

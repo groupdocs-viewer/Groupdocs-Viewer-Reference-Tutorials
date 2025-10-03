@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp CHM bằng GroupDocs.Viewer Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp CHM bằng GroupDocs.Viewer Java: Hướng dẫn toàn diện
 ## Giới thiệu
 Bạn có muốn chuyển đổi các tệp Trợ giúp HTML biên dịch (CHM) sang các định dạng được hỗ trợ rộng rãi hơn như HTML, JPG, PNG và PDF không? Cho dù là vì mục đích lưu trữ hay tăng cường khả năng truy cập trên nhiều nền tảng khác nhau, việc chuyển đổi các tài liệu này có thể là một bước ngoặt. Hướng dẫn này khám phá cách thực hiện việc này một cách liền mạch bằng GroupDocs.Viewer Java. Bạn sẽ tìm hiểu những điều cơ bản về việc chuyển đổi các tệp CHM một cách hiệu quả với thư viện mạnh mẽ này.

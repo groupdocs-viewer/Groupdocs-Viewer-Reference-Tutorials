@@ -5,8 +5,8 @@
 "title": "Pobieranie i zapisywanie załączników dokumentów"
 "url": "/pl/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Pobieranie i zapisywanie załączników dokumentów
 
 ## Wstęp

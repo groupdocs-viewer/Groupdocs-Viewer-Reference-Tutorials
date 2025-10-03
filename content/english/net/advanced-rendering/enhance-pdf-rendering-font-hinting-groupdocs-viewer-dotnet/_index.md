@@ -8,10 +8,8 @@ keywords:
 - PDF Rendering in .NET
 - Enable Font Hinting
 - GroupDocs.Viewer
-
+type: docs
 ---
-
-
 # How to Enhance PDF Rendering in .NET Using GroupDocs.Viewer: Enable Font Hinting
 
 ## Introduction

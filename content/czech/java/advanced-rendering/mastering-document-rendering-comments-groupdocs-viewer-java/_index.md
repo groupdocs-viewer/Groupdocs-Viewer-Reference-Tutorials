@@ -4,8 +4,8 @@
 "title": "Jak vykreslit dokumenty s komentáři v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokumenty s komentáři v Javě pomocí GroupDocs.Viewer
 ## Zavedení
 Máte potíže s převodem dokumentů do HTML a zároveň zachováním komentářů? Tato příručka vás provede vykreslením dokumentu s jeho komentáři pomocí výkonné knihovny GroupDocs.Viewer v Javě. Ať už chcete dokumenty spravovat bez problémů, nebo si zdokonalovat své znalosti Javy, tento tutoriál je pro vás.

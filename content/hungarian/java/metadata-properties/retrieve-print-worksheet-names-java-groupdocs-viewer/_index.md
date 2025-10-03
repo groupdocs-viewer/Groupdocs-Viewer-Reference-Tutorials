@@ -4,8 +4,8 @@
 "title": "Munkalapnevek kinyerése és megjelenítése Java-ban a GroupDocs.Viewer API használatával"
 "url": "/hu/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Munkalapnevek kinyerése és megjelenítése Java-ban a GroupDocs.Viewer API használatával
 
 ## Bevezetés

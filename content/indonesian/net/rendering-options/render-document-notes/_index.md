@@ -5,8 +5,8 @@
 "title": "Render Dokumen dengan Catatan"
 "url": "/id/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Render Dokumen dengan Catatan
 
 ## Perkenalan

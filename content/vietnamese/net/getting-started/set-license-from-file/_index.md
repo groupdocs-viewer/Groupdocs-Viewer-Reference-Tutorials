@@ -5,8 +5,8 @@
 "title": "Thiết lập Giấy phép từ File"
 "url": "/vi/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Thiết lập Giấy phép từ File
 
 ## Giới thiệu

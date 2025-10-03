@@ -5,8 +5,8 @@
 "title": "Visio Şekillerini Oluştur"
 "url": "/tr/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Visio Şekillerini Oluştur
 
 ## giriiş

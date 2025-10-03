@@ -5,8 +5,8 @@
 "title": "AI Görüntülerini Oluştur"
 "url": "/tr/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # AI Görüntülerini Oluştur
 
 ## giriiş

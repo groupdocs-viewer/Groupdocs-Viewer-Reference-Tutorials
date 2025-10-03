@@ -5,8 +5,8 @@
 "title": "ปิดใช้งานการเลือกข้อความใน PDF"
 "url": "/th/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # ปิดใช้งานการเลือกข้อความใน PDF
 
 ## การแนะนำ

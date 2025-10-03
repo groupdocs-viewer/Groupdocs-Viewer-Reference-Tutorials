@@ -5,8 +5,8 @@
 "title": "Zeilen- und Spaltenüberschriften rendern"
 "url": "/de/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Zeilen- und Spaltenüberschriften rendern
 
 ## Einführung

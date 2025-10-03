@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์พื้นที่การพิมพ์สเปรดชีต Java ด้วย GroupDocs.Viewer สำหรับ Java คำแนะนำที่ครอบคลุม"
 "url": "/th/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์พื้นที่การพิมพ์สเปรดชีต Java ด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "Wyłącz grupowanie znaków w pliku PDF"
 "url": "/pl/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Wyłącz grupowanie znaków w pliku PDF
 
 ## Wstęp

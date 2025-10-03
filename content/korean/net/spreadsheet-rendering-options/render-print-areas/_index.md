@@ -5,8 +5,8 @@
 "title": ".NET용 GroupDocs.Viewer를 사용하여 인쇄 영역 렌더링"
 "url": "/ko/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용하여 인쇄 영역 렌더링
 
 ## 소개

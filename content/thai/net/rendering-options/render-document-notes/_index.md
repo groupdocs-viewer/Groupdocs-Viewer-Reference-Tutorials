@@ -5,8 +5,8 @@
 "title": "เรนเดอร์เอกสารพร้อมหมายเหตุ"
 "url": "/th/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # เรนเดอร์เอกสารพร้อมหมายเหตุ
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์ PDF แบบแบ่งชั้นอย่างมีประสิทธิภาพใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์ PDF แบบแบ่งชั้นอย่างมีประสิทธิภาพใน Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

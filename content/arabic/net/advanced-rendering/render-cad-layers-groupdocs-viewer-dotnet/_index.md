@@ -4,8 +4,8 @@
 "title": "كيفية عرض طبقات CAD محددة باستخدام GroupDocs.Viewer لـ .NET - دليل شامل"
 "url": "/ar/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض طبقات رسم CAD محددة باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

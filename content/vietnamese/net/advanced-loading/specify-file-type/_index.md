@@ -5,8 +5,8 @@
 "title": "Chỉ định loại tệp khi tải tài liệu"
 "url": "/vi/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Chỉ định loại tệp khi tải tài liệu
 
 ## Giới thiệu

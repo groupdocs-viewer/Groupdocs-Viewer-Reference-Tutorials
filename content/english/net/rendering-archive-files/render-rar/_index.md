@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Archive Processing"]
 tags: ["RAR", "GroupDocs.Viewer", "C#", "File Conversion"]
+type: docs
 ---
-
 # How to Render RAR Archives in .NET: A Complete Guide
 
 ## Introduction

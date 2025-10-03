@@ -5,8 +5,8 @@
 "title": "在 CAD 圖紙中渲染單一佈局"
 "url": "/zh-hant/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # 在 CAD 圖紙中渲染單一佈局
 
 ## 介紹

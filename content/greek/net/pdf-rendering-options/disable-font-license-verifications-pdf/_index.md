@@ -5,8 +5,8 @@
 "title": "Απενεργοποίηση επαληθεύσεων άδειας χρήσης γραμματοσειράς σε PDF"
 "url": "/el/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Απενεργοποίηση επαληθεύσεων άδειας χρήσης γραμματοσειράς σε PDF
 
 ## Εισαγωγή

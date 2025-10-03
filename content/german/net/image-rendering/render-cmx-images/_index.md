@@ -5,8 +5,8 @@
 "title": "CMX-Bilder rendern"
 "url": "/de/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # CMX-Bilder rendern
 
 ## Einführung

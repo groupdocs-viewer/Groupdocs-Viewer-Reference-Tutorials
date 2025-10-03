@@ -5,8 +5,8 @@
 "title": "將文件渲染為 PDF"
 "url": "/zh-hant/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # 將文件渲染為 PDF
 
 

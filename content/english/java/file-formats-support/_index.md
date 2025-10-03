@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["document-viewer", "java-library", "pdf-rendering", "multi-format-support"]
+type: docs
 ---
-
 # Java Document Viewer Library - Multi-Format Rendering with GroupDocs.Viewer
 
 Are you struggling to display different document formats in your Java application? Whether you're building a document management system, web portal, or enterprise application, handling multiple file types can quickly become a nightmare. Users expect to view PDFs, Word documents, Excel spreadsheets, PowerPoint presentations, and dozens of other formats seamlessly—without downloading files or switching between applications.

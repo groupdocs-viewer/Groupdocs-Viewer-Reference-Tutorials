@@ -4,8 +4,8 @@
 "title": "Afficher les lignes et colonnes masquées dans les feuilles de calcul Java à l'aide de GroupDocs.Viewer"
 "url": "/fr/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Afficher les lignes et colonnes masquées dans les feuilles de calcul Java à l'aide de GroupDocs.Viewer
 
 ## Introduction

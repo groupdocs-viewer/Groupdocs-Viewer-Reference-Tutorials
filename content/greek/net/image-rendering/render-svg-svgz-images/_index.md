@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων SVG και SVGZ"
 "url": "/el/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # Απόδοση εικόνων SVG και SVGZ
 
 ## Εισαγωγή

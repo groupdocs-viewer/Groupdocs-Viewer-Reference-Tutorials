@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 禁用 PDF 中的文本选择以增强安全性"
 "url": "/zh/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 在将 PDF 渲染为 HTML 时禁用文本选择
 
 ## 介绍

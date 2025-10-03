@@ -5,8 +5,8 @@
 "title": "Отключить группировку символов в PDF"
 "url": "/ru/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Отключить группировку символов в PDF
 
 ## Введение

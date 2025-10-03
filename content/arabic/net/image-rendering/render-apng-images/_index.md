@@ -5,8 +5,8 @@
 "title": "عرض صور APNG"
 "url": "/ar/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # عرض صور APNG
 
 ## مقدمة

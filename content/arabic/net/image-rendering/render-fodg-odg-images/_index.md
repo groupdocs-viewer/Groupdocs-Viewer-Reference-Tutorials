@@ -5,8 +5,8 @@
 "title": "تقديم صور FODG وODG"
 "url": "/ar/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # تقديم صور FODG وODG
 
 ## مقدمة

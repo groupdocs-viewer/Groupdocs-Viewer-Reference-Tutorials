@@ -5,8 +5,8 @@
 "title": "PDF'de Font Lisans Doğrulamalarını Devre Dışı Bırak"
 "url": "/tr/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # PDF'de Font Lisans Doğrulamalarını Devre Dışı Bırak
 
 ## giriiş

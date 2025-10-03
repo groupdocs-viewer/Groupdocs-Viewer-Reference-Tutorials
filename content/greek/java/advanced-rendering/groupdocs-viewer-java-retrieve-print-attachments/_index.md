@@ -4,8 +4,8 @@
 "title": "Κύριο GroupDocs.Viewer για Java Ανάκτηση και εκτύπωση συνημμένων εγγράφων"
 "url": "/el/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Κύριο GroupDocs.Viewer για Java: Ανάκτηση και εκτύπωση συνημμένων εγγράφων
 
 ## Εισαγωγή

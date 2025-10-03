@@ -4,8 +4,8 @@
 "title": "Jak zmienić nazwy pól e-mail podczas konwersji wiadomości e-mail do formatu HTML za pomocą GroupDocs.Viewer Java"
 "url": "/pl/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak zmienić nazwy pól e-mail podczas renderowania wiadomości e-mail do formatu HTML za pomocą GroupDocs.Viewer Java
 
 ## Wstęp

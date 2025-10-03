@@ -4,8 +4,8 @@
 "title": "إعداد ترخيص GroupDocs.Viewer .NET عبر Stream - دليل شامل"
 "url": "/ar/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # إعداد ترخيص GroupDocs.Viewer .NET عبر Stream: دليل شامل
 
 ## مقدمة

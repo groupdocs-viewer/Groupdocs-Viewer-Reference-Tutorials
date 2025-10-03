@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["GroupDocs.Viewer", "Image Rendering", "Document Conversion", ".NET Tutorial"]
+type: docs
 ---
-
 # How to Convert Documents to Images in .NET: Complete Developer Guide
 
 ## Why Convert Documents to Images? (And When You Should Do It)

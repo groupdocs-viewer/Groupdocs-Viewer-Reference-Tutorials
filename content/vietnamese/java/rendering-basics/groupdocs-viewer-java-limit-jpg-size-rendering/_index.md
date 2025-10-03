@@ -4,8 +4,8 @@
 "title": "Cách giới hạn kích thước JPG trong kết xuất tài liệu bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cách giới hạn kích thước JPG trong kết xuất tài liệu bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

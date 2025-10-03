@@ -8,10 +8,8 @@ keywords:
 - convert WMZ/WMF documents
 - GroupDocs Viewer for Java
 - rendering formats
-
+type: docs
 ---
-
-
 # How to Convert WMZ/WMF Documents Using GroupDocs Viewer for Java: A Comprehensive Guide
 
 ## Introduction

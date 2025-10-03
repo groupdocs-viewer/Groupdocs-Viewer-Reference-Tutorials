@@ -5,8 +5,8 @@
 "title": "Munkalapok nevének lekérése"
 "url": "/hu/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Munkalapok nevének lekérése
 
 ## Bevezetés

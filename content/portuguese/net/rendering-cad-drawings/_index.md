@@ -5,8 +5,8 @@
 "title": "Renderização de desenhos CAD"
 "url": "/pt/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Renderização de desenhos CAD
 
 

@@ -5,8 +5,8 @@
 "title": "Dossier d'archives de rendu"
 "url": "/fr/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Dossier d'archives de rendu
 
 ## Introduction

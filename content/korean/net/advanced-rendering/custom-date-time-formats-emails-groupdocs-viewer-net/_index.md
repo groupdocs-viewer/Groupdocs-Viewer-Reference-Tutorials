@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 이메일의 날짜-시간 형식 및 시간대 오프셋 사용자 지정"
 "url": "/ko/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 이메일의 날짜-시간 형식 및 시간대 사용자 지정
 
 ## 소개

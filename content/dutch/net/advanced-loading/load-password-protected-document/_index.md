@@ -5,8 +5,8 @@
 "title": "Laad wachtwoordbeveiligde documenten"
 "url": "/nl/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Laad wachtwoordbeveiligde documenten
 
 ## Invoering

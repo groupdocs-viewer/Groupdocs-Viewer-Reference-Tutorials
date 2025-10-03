@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 마스터하여 글꼴을 내장하고 문서를 HTML로 효율적으로 변환하세요."
 "url": "/ko/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용한 문서 렌더링 마스터링: 글꼴 포함 및 HTML로 변환
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "문서 첨부 파일 검색 및 인쇄"
 "url": "/ko/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # 문서 첨부 파일 검색 및 인쇄
 
 ## 소개

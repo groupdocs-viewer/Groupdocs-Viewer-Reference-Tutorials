@@ -5,8 +5,8 @@
 "title": "Προσαρμογή ποιότητας εικόνας JPG σε PDF που έχει αποδοθεί"
 "url": "/el/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Προσαρμογή ποιότητας εικόνας JPG σε PDF που έχει αποδοθεί
 
 ## Εισαγωγή

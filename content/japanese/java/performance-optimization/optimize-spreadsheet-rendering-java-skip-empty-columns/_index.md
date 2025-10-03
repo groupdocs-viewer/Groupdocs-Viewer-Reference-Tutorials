@@ -4,8 +4,8 @@
 "title": "Java スプレッドシートのレンダリングを最適化し、GroupDocs.Viewer で空の列をスキップする"
 "url": "/ja/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Javaでスプレッドシートのレンダリングを最適化する方法：GroupDocs.Viewerで空の列をスキップする
 
 ## 導入

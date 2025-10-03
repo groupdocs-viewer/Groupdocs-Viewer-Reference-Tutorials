@@ -5,8 +5,8 @@
 "title": "Ange licens från ström"
 "url": "/sv/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Ange licens från ström
 
 ## Introduktion

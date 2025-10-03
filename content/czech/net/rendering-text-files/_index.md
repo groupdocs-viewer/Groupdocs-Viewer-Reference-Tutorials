@@ -5,8 +5,8 @@
 "title": "Vykreslování textových souborů"
 "url": "/cs/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Vykreslování textových souborů
 
 ## Zavedení

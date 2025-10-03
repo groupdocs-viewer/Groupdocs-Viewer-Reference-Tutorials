@@ -5,8 +5,8 @@
 "title": "استرداد مرفقات المستندات وحفظها"
 "url": "/ar/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # استرداد مرفقات المستندات وحفظها
 
 ## مقدمة

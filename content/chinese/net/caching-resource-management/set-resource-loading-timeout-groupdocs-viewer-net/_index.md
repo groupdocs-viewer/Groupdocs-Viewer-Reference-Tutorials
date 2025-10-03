@@ -4,8 +4,8 @@
 "title": "在 GroupDocs.Viewer for .NET 中实现资源加载超时 - 完整指南"
 "url": "/zh/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer for .NET 中实现资源加载超时
 
 ## 介绍

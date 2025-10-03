@@ -5,8 +5,8 @@
 "title": "إعادة ترتيب الصفحات في المستند"
 "url": "/ar/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # إعادة ترتيب الصفحات في المستند
 
 ## مقدمة

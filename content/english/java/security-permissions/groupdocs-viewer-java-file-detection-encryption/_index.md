@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - file detection in Java
 - encryption checks in Java
-
+type: docs
 ---
-
-
 # Implementing File Detection and Encryption Checks Using GroupDocs.Viewer for Java
 
 ## Introduction

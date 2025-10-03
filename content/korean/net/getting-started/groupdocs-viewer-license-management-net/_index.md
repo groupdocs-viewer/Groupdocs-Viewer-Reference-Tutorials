@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer에서 라이선스 관리 마스터하기&#58; 종합 가이드"
 "url": "/ko/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer에서 라이선스 관리 마스터하기
 ## 종합 가이드
 

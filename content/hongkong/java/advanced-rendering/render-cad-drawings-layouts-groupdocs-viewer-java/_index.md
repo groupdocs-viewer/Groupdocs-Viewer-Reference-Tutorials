@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 高效渲染所有 CAD 佈局"
 "url": "/zh-hant/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 高效渲染所有 CAD 佈局
 
 ## 介紹

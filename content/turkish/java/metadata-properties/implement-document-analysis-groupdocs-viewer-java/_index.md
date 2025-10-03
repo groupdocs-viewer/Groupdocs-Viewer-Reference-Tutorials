@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer ile Belge Analizini Uygulama&#58; Sayfa Meta Verilerini ve Metin Satırlarını Çıkarma"
 "url": "/tr/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Belge Analizini Uygulama: Sayfa Meta Verilerini ve Metin Satırlarını Çıkarma
 
 ## giriiş

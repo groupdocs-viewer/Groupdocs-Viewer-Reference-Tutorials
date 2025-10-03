@@ -4,8 +4,8 @@
 "title": "Menampilkan Dokumen yang Dilindungi Kata Sandi di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Menampilkan Dokumen yang Dilindungi Kata Sandi di Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

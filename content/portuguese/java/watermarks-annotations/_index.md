@@ -3,8 +3,8 @@
 "title": "Tutoriais de marca d'água e anotação em documentos para GroupDocs.Viewer Java"
 "url": "/pt/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Tutoriais de marca d'água e anotação em documentos para GroupDocs.Viewer Java
 
 Domine técnicas de anotação e marca d'água em documentos com nossos tutoriais Java do GroupDocs.Viewer. Estes guias passo a passo demonstram como adicionar marcas d'água de texto e imagem, implementar anotações, controlar o posicionamento e a transparência de marcas d'água e renderizar documentos com anotações incorporadas. Cada tutorial inclui exemplos práticos de código Java para adicionar metadados visuais e marcações de proteção aos seus documentos, aprimorando o rastreamento de documentos e os recursos de branding.

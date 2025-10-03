@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "tracked-changes", "dotnet", "document-rendering"]
+type: docs
 ---
-
 # How to Render Tracked Changes in .NET Documents
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Cách điều chỉnh đơn vị thời gian của MS Project bằng GroupDocs.Viewer Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách điều chỉnh đơn vị thời gian của MS Project bằng GroupDocs.Viewer Java: Hướng dẫn từng bước
 ## Giới thiệu
 Bạn có thấy mệt mỏi khi phải tự tay điều chỉnh đơn vị thời gian trong tài liệu MS Project trước khi chuyển chúng sang định dạng HTML không? Quá trình này có thể rất tẻ nhạt và dễ xảy ra lỗi, đặc biệt là khi xử lý các dự án lớn. Với **GroupDocs.Viewer cho Java**, bạn có thể dễ dàng điều chỉnh cài đặt đơn vị thời gian theo chương trình, đảm bảo độ chính xác và hiệu quả.

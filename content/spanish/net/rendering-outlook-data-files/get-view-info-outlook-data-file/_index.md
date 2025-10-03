@@ -5,8 +5,8 @@
 "title": "Obtener información de visualización de archivos de datos de Outlook (PST, OST)"
 "url": "/es/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Obtener información de visualización de archivos de datos de Outlook (PST, OST)
 
 ## Introducción

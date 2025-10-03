@@ -5,8 +5,8 @@
 "title": "Lấy và Lưu Tệp Đính Kèm Tài Liệu"
 "url": "/vi/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Lấy và Lưu Tệp Đính Kèm Tài Liệu
 
 ## Giới thiệu

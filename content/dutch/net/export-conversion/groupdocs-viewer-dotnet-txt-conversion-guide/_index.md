@@ -4,8 +4,8 @@
 "title": "Converteer TXT naar HTML, JPG, PNG, PDF met GroupDocs.Viewer .NET&#58; een complete handleiding"
 "url": "/nl/net/export-conversion/groupdocs-viewer-dotnet-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # Converteer TXT naar meerdere formaten met GroupDocs.Viewer .NET
 
 ## Invoering

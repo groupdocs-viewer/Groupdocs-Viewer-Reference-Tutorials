@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ को पीडीएफ में प्रस्तुत करें"
 "url": "/hi/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # दस्तावेज़ को पीडीएफ में प्रस्तुत करें
 
 ## परिचय

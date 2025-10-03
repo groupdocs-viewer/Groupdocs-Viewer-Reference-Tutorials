@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer API를 사용하여 Java에서 이메일-PDF 렌더링을 최적화하여 성능 향상"
 "url": "/ko/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer API를 사용하여 Java에서 이메일-PDF 렌더링 최적화
 
 ## 소개

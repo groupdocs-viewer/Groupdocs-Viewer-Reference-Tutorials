@@ -4,8 +4,8 @@
 "title": "Pagina's in PDF-masters opnieuw ordenen in .NET met GroupDocs.Viewer&#58; een handleiding voor ontwikkelaars"
 "url": "/nl/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # PDF-pagina's opnieuw ordenen met GroupDocs.Viewer .NET: een uitgebreide handleiding voor ontwikkelaars
 
 ## Invoering

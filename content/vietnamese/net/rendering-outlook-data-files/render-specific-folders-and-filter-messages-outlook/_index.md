@@ -5,8 +5,8 @@
 "title": "Hiển thị các thư mục cụ thể và lọc tin nhắn (Outlook)"
 "url": "/vi/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Hiển thị các thư mục cụ thể và lọc tin nhắn (Outlook)
 
 ## Giới thiệu

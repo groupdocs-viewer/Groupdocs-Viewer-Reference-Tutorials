@@ -5,8 +5,8 @@
 "title": "Akıştan Belgeleri Yükle"
 "url": "/tr/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Akıştan Belgeleri Yükle
 
 ## giriiş

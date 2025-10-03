@@ -5,8 +5,8 @@
 "title": "Renderuj linie siatki"
 "url": "/pl/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Renderuj linie siatki
 
 ## Wstęp

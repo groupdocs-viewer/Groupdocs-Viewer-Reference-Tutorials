@@ -4,8 +4,8 @@
 "title": "تخصيص تنسيقات التاريخ والوقت وإزاحات المنطقة الزمنية في رسائل البريد الإلكتروني باستخدام GroupDocs.Viewer .NET"
 "url": "/ar/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # تخصيص تنسيقات التاريخ والوقت والمناطق الزمنية في رسائل البريد الإلكتروني باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

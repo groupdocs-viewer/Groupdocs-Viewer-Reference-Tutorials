@@ -4,8 +4,8 @@
 "title": "Cara Menetapkan Batas Ukuran Gambar JPG Maksimum Menggunakan GroupDocs.Viewer .NET"
 "url": "/id/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menetapkan Batas Ukuran Gambar JPG Maksimum Menggunakan GroupDocs.Viewer .NET
 
 ## Perkenalan

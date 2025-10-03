@@ -3,8 +3,8 @@
 "title": "Zelfstudies over documentbeveiliging en toegangscontrole voor GroupDocs.Viewer .NET"
 "url": "/nl/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Zelfstudies over documentbeveiliging en toegangscontrole voor GroupDocs.Viewer .NET
 
 Leer hoe u documenten veilig kunt bekijken met onze uitgebreide GroupDocs.Viewer-beveiligingstutorials voor .NET-ontwikkelaars. Deze gedetailleerde handleidingen laten zien hoe u wachtwoordbeveiliging implementeert, documentrechten beheert, versleutelde bestanden verwerkt en de toegang tot gevoelige documenten programmatisch beheert. Elke tutorial biedt werkende .NET-codevoorbeelden voor veelvoorkomende beveiligingsscenario's, waarmee u applicaties kunt bouwen die de vertrouwelijkheid en integriteit van documenten behouden en tegelijkertijd gecontroleerde weergavemogelijkheden bieden.

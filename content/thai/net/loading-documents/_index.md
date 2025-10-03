@@ -5,8 +5,8 @@
 "title": "การโหลดเอกสาร"
 "url": "/th/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # การโหลดเอกสาร
 
 ## การแนะนำ

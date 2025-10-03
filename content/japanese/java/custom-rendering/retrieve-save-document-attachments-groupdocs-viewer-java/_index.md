@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用してドキュメントの添付ファイルを取得および保存する方法 - 包括的なガイド"
 "url": "/ja/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用してドキュメントの添付ファイルを取得および保存する方法: 包括的なガイド
 
 ## 導入

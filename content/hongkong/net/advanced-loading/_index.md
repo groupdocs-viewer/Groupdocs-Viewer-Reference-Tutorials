@@ -5,8 +5,8 @@
 "title": "進階載入選項"
 "url": "/zh-hant/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # 進階載入選項
 
 ## 介紹

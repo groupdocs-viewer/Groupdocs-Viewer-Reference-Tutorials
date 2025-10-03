@@ -4,8 +4,8 @@
 "title": "Mengatur Batas Waktu Pemuatan Sumber Daya di GroupDocs.Viewer untuk Java&#58; Meningkatkan Kinerja Dokumen"
 "url": "/id/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Mengatur Batas Waktu Pemuatan Sumber Daya di GroupDocs.Viewer untuk Java: Meningkatkan Efisiensi Rendering Dokumen
 
 ## Perkenalan

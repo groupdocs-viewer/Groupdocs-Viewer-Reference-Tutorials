@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 Java 中的文件類型檢測"
 "url": "/zh-hant/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 Java 中的文件類型檢測
 
 探索 **GroupDocs.檢視器** 無縫識別副檔名、媒體類型和串流中的檔案類型。這個強大的程式庫簡化了開發流程並增強了應用程式功能。

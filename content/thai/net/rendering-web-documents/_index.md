@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เอกสารเว็บ"
 "url": "/th/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # การเรนเดอร์เอกสารเว็บ
 
 ## การแนะนำ

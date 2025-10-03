@@ -4,8 +4,8 @@
 "title": "Truy xuất siêu dữ liệu và thuộc tính PDF bằng GroupDocs.Viewer trong Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Truy xuất siêu dữ liệu và thuộc tính PDF bằng GroupDocs.Viewer trong Java
 
 Chào mừng bạn đến với hướng dẫn toàn diện này về cách lấy thông tin chế độ xem từ tài liệu PDF bằng thư viện GroupDocs.Viewer trong Java. Nếu bạn đang muốn trích xuất thông tin chi tiết theo chương trình như số trang, loại tài liệu và quyền từ tệp PDF, bạn đã đến đúng nơi.

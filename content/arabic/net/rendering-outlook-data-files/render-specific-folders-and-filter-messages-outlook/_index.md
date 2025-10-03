@@ -5,8 +5,8 @@
 "title": "عرض مجلدات محددة وتصفية الرسائل (Outlook)"
 "url": "/ar/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # عرض مجلدات محددة وتصفية الرسائل (Outlook)
 
 ## مقدمة

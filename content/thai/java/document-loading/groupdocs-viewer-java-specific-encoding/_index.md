@@ -4,8 +4,8 @@
 "title": "วิธีโหลดเอกสารที่มีการเข้ารหัสเฉพาะใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # วิธีโหลดเอกสารที่มีการเข้ารหัสเฉพาะใน Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

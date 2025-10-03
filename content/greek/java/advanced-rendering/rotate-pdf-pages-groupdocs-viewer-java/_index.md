@@ -4,8 +4,8 @@
 "title": "Περιστροφή συγκεκριμένων σελίδων PDF χρησιμοποιώντας το GroupDocs.Viewer σε Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Περιστροφή συγκεκριμένων σελίδων PDF χρησιμοποιώντας το GroupDocs.Viewer σε Java
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Làm chủ .NET PDF Layered Rendering với GroupDocs.Viewer&#58; Hướng dẫn từng bước"
 "url": "/vi/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ .NET PDF Layered Rendering với GroupDocs.Viewer: Hướng dẫn từng bước
 
 ## Giới thiệu

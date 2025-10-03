@@ -5,8 +5,8 @@
 "title": "Απόδοση Παρακολουθούμενων Αλλαγών"
 "url": "/el/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Απόδοση Παρακολουθούμενων Αλλαγών
 
 ## Εισαγωγή

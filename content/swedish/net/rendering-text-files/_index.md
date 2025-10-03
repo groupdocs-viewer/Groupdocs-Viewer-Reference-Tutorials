@@ -5,8 +5,8 @@
 "title": "Rendera textfiler"
 "url": "/sv/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Rendera textfiler
 
 ## Introduktion

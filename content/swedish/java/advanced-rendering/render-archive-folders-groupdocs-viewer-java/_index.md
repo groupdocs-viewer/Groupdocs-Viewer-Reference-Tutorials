@@ -4,8 +4,8 @@
 "title": "Rendera arkivmappar i Java med GroupDocs.Viewer – en steg-för-steg-guide"
 "url": "/sv/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendera arkivmappar med GroupDocs.Viewer för Java
 
 ## Introduktion

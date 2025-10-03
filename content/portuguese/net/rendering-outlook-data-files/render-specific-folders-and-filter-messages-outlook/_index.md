@@ -5,8 +5,8 @@
 "title": "Renderizar pastas específicas e filtrar mensagens (Outlook)"
 "url": "/pt/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Renderizar pastas específicas e filtrar mensagens (Outlook)
 
 ## Introdução

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["GroupDocs.Viewer"]
 tags: ["document-rendering", "file-formats", "dotnet-library", "pdf-viewer", "document-viewer"]
+type: docs
 ---
-
 # Document Viewer .NET Library - Multi-Format Rendering Made Simple
 
 Are you struggling to display different document formats in your .NET application? You're not alone. Most developers face the challenge of supporting multiple file types without bloating their applications with numerous third-party libraries. That's where GroupDocs.Viewer for .NET shines – it's a single, powerful document viewer .NET library that handles 170+ file formats with consistent rendering quality.

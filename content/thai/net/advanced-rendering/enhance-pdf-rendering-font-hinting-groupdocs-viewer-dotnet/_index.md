@@ -4,8 +4,8 @@
 "title": "ปรับปรุงการเรนเดอร์ PDF ใน .NET และเปิดใช้งานการบอกใบ้แบบอักษรด้วย GroupDocs.Viewer"
 "url": "/th/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # วิธีปรับปรุงการแสดงผล PDF ใน .NET โดยใช้ GroupDocs.Viewer: เปิดใช้งานคำแนะนำแบบอักษร
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Jak renderować rysunki CAD jako PNG z niestandardowym rozmiarem i kolorem tła za pomocą GroupDocs.Viewer dla Java"
 "url": "/pl/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować rysunki CAD jako PNG z niestandardowym rozmiarem i kolorem tła za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

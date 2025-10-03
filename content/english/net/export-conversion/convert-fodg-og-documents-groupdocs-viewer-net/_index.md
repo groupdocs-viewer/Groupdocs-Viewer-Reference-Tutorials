@@ -8,10 +8,8 @@ keywords:
 - FODG conversion
 - GroupDocs.Viewer for .NET
 - document rendering
-
+type: docs
 ---
-
-
 # Convert FODG/ODG Documents with GroupDocs.Viewer for .NET
 
 ## Introduction

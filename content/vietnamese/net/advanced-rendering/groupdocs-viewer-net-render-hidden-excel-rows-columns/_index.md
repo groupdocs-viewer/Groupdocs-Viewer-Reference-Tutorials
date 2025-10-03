@@ -4,8 +4,8 @@
 "title": "Hiển thị các hàng và cột ẩn trong tệp Excel bằng GroupDocs.Viewer cho .NET - Hướng dẫn nâng cao"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị các hàng và cột ẩn trong tệp Excel bằng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

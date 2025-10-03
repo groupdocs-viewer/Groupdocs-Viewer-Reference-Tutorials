@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 加载和呈现 HTML 文档"
 "url": "/zh/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 加载和呈现 HTML 文档
 
 ## 介绍

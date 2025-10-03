@@ -4,8 +4,8 @@
 "title": "Comment afficher des pages sélectionnées à l'aide de GroupDocs.Viewer .NET - Un guide complet pour les développeurs"
 "url": "/fr/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des pages spécifiques à l'aide de GroupDocs.Viewer .NET
 
 ## Introduction

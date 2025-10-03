@@ -5,8 +5,8 @@
 "title": "Rendi gli archivi in pagine HTML singole o multiple"
 "url": "/it/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Rendi gli archivi in pagine HTML singole o multiple
 
 ## Introduzione

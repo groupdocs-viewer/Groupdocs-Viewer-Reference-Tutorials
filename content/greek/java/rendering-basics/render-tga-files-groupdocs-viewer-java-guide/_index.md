@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία Truevision TGA χρησιμοποιώντας το GroupDocs.Viewer Java - Οδηγός βήμα προς βήμα"
 "url": "/el/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία Truevision TGA χρησιμοποιώντας το GroupDocs.Viewer Java
 
 ## Εισαγωγή

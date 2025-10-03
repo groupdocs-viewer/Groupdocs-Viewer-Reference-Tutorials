@@ -5,8 +5,8 @@
 "title": "Rendre le document au format JPG"
 "url": "/fr/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Rendre le document au format JPG
 
 ## Introduction

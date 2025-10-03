@@ -5,8 +5,8 @@
 "title": "Vykreslení archivů na jednu nebo více HTML stránek"
 "url": "/cs/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Vykreslení archivů na jednu nebo více HTML stránek
 
 ## Zavedení

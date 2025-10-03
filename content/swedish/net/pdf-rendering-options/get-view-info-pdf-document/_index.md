@@ -5,8 +5,8 @@
 "title": "Hämta visningsinformation för PDF-dokument"
 "url": "/sv/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Hämta visningsinformation för PDF-dokument
 
 ## Introduktion

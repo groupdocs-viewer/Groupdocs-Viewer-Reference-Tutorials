@@ -4,8 +4,8 @@
 "title": "Wachtwoordbeveiligde documenten in Java weergeven met GroupDocs.Viewer"
 "url": "/nl/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Wachtwoordbeveiligde documenten in Java weergeven met GroupDocs.Viewer
 
 ## Invoering

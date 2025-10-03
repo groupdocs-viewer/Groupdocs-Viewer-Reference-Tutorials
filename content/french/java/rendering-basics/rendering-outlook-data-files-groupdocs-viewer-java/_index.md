@@ -4,8 +4,8 @@
 "title": "Comment afficher des fichiers de données Outlook à l'aide de GroupDocs.Viewer en Java ? Guide étape par étape"
 "url": "/fr/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des fichiers de données Outlook avec GroupDocs.Viewer en Java : guide étape par étape
 
 ## Introduction

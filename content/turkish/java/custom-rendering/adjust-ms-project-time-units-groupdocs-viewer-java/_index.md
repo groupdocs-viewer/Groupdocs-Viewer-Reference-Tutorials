@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58;yı Kullanarak MS Project Zaman Birimlerini Ayarlama Adım Adım Kılavuz"
 "url": "/tr/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java Kullanarak MS Project Zaman Birimleri Nasıl Ayarlanır: Adım Adım Kılavuz
 ## giriiş
 MS Project belgelerinizdeki zaman birimlerini HTML formatına dönüştürmeden önce manuel olarak ayarlamaktan yoruldunuz mu? Bu süreç, özellikle büyük projelerle uğraşırken sıkıcı ve hatalara açık olabilir. **Java için GroupDocs.Viewer**, zaman birimi ayarlarını programlı olarak kolayca ayarlayabilir, doğruluk ve verimliliği garantileyebilirsiniz.

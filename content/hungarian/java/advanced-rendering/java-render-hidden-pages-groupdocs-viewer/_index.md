@@ -4,8 +4,8 @@
 "title": "Java&#58; Rejtett oldalak renderelése a GroupDocs.Viewer használatával"
 "url": "/hu/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Rejtett oldalak renderelése a GroupDocs.Viewer használatával
 
 ## Bevezetés

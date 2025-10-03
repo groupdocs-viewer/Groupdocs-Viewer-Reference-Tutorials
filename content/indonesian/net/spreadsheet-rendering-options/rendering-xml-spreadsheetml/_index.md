@@ -5,8 +5,8 @@
 "title": "Merender SpreadSheetML XML"
 "url": "/id/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Merender SpreadSheetML XML
 
 ## Perkenalan

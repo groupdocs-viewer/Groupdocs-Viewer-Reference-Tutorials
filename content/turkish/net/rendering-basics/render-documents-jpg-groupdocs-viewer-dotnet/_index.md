@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET ile Belgeleri JPG'ye Dönüştürün Kapsamlı Bir Kılavuz"
 "url": "/tr/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET ile Belgeleri JPG'ye Dönüştürme: Kapsamlı Bir Kılavuz
 
 ## giriiş

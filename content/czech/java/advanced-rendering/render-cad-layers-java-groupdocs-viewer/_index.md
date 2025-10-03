@@ -4,8 +4,8 @@
 "title": "Vykreslení specifických vrstev CAD v Javě pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení specifických CAD vrstev v Javě pomocí GroupDocs.Viewer
 ## Zavedení
 Máte potíže s vykreslováním konkrétních vrstev z CAD výkresu? Ať už jste inženýr, architekt nebo vývojář, který pracuje se složitými návrhy, správa a vizualizace konkrétních CAD vrstev může být náročná. Tato příručka ukazuje, jak efektivně vykreslit konkrétní vrstvy pomocí výkonného nástroje GroupDocs.Viewer pro Javu.

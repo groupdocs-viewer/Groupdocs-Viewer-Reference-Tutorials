@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java HPG Oluşturma&#58; Tam Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile Java HPG Rendering'i Uygulamaya Yönelik Kapsamlı Kılavuz
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Эффективная загрузка и отображение документов с FTP с помощью GroupDocs.Viewer .NET"
 "url": "/ru/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Как эффективно загружать и отображать документы с FTP с помощью GroupDocs.Viewer .NET
 
 ## Введение

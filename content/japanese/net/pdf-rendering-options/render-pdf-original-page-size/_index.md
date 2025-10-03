@@ -5,8 +5,8 @@
 "title": "元のページサイズでPDFをレンダリングする"
 "url": "/ja/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # 元のページサイズでPDFをレンダリングする
 
 ## 導入

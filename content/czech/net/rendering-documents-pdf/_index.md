@@ -5,8 +5,8 @@
 "title": "Vykreslování dokumentů do PDF"
 "url": "/cs/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Vykreslování dokumentů do PDF
 
 

@@ -5,8 +5,8 @@
 "title": "Λήψη ονομάτων φύλλων εργασίας"
 "url": "/el/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Λήψη ονομάτων φύλλων εργασίας
 
 ## Εισαγωγή

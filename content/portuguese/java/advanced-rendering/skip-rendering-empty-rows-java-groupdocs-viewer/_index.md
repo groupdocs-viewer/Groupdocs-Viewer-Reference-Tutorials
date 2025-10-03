@@ -4,8 +4,8 @@
 "title": "Pular a renderização de linhas vazias em Java usando GroupDocs.Viewer - Um guia de desempenho"
 "url": "/pt/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Pular renderização de linhas vazias em Java usando GroupDocs.Viewer
 ## Introdução
 Renderizar linhas vazias desnecessárias ao converter planilhas para HTML pode desorganizar sua saída e consumir recursos extras. Essa é uma preocupação significativa para desenvolvedores focados em desempenho. Com a biblioteca "GroupDocs.Viewer Java", você pode pular a renderização dessas linhas vazias com eficiência, aumentando a velocidade e a clareza dos seus aplicativos.

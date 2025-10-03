@@ -4,8 +4,8 @@
 "title": "Tekstoverloop in Excel-spreadsheets aanpassen met GroupDocs.Viewer voor Java"
 "url": "/nl/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Tekstoverloop in Excel-spreadsheets aanpassen met GroupDocs.Viewer voor Java
 ## Invoering
 Het omgaan met overlopende tekst in spreadsheetcellen bij het converteren van documenten naar HTML is een veelvoorkomend probleem, vooral bij grote Excel-bestanden. **GroupDocs.Viewer voor Java** vereenvoudigt dit proces, zodat u overtollige tekst efficiënt kunt beheren en verbergen.

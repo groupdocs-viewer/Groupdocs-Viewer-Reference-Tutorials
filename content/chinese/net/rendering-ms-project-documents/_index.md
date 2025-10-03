@@ -5,8 +5,8 @@
 "title": "渲染 Microsoft Project 文档"
 "url": "/zh/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # 渲染 Microsoft Project 文档
 
 ## 介绍

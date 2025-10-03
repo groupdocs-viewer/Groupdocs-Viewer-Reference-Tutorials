@@ -4,8 +4,8 @@
 "title": "Chuyển đổi tài liệu sang JPG với GroupDocs.Viewer cho .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Chuyển đổi tài liệu sang JPG với GroupDocs.Viewer cho .NET: Hướng dẫn toàn diện
 
 ## Giới thiệu

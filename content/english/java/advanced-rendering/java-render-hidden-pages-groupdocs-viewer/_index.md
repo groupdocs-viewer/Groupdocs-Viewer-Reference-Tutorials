@@ -8,10 +8,8 @@ keywords:
 - render hidden pages Java
 - GroupDocs Viewer setup
 - Java document rendering
-
+type: docs
 ---
-
-
 # Java: How to Render Hidden Pages Using GroupDocs.Viewer
 
 ## Introduction

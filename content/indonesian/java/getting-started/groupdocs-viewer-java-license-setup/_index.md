@@ -4,8 +4,8 @@
 "title": "Cara Mengatur Lisensi di GroupDocs.Viewer Panduan Pengaturan File dan URL Java"
 "url": "/id/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengatur Lisensi di GroupDocs.Viewer Java: Panduan Pengaturan File dan URL
 
 ## Perkenalan

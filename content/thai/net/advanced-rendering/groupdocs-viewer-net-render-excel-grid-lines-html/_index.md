@@ -4,8 +4,8 @@
 "title": "วิธีการแสดงเส้นตารางในสเปรดชีต Excel โดยใช้ GroupDocs.Viewer .NET สำหรับผลลัพธ์ HTML"
 "url": "/th/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการแสดงเส้นตารางในสเปรดชีต Excel โดยใช้ GroupDocs.Viewer .NET สำหรับผลลัพธ์ HTML
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でカスタム日付時刻のメールをレンダリングする"
 "url": "/ja/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java でカスタム日付時刻のメールをレンダリングする
 
 ## 導入

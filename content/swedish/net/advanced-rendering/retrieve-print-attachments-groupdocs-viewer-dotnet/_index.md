@@ -4,8 +4,8 @@
 "title": "Så här hämtar och skriver du ut dokumentbilagor med GroupDocs.Viewer för .NET | Avancerad renderingsguide"
 "url": "/sv/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar och skriver du ut dokumentbilagor med GroupDocs.Viewer för .NET | Avancerad renderingsguide
 
 ## Introduktion

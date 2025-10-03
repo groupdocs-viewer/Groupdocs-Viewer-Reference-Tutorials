@@ -5,8 +5,8 @@
 "title": "사용자 정의 글꼴로 렌더링"
 "url": "/ko/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # 사용자 정의 글꼴로 렌더링
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Efektivní vrstvené vykreslování PDF v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Efektivní vrstvené vykreslování PDF v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

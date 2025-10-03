@@ -5,8 +5,8 @@
 "title": "İzlenen Değişiklikleri Oluştur"
 "url": "/tr/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # İzlenen Değişiklikleri Oluştur
 
 ## giriiş

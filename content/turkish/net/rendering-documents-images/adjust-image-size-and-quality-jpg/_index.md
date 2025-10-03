@@ -5,8 +5,8 @@
 "title": "Resim Boyutunu ve Kalitesini Ayarla (JPG)"
 "url": "/tr/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Resim Boyutunu ve Kalitesini Ayarla (JPG)
 
 ## giriiş

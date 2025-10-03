@@ -4,8 +4,8 @@
 "title": "SVGZ renderelés elsajátítása .NET-ben a GroupDocs.Viewer használatával – Teljes körű útmutató fejlesztőknek"
 "url": "/hu/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # SVGZ renderelés elsajátítása .NET-ben a GroupDocs.Viewer segítségével: Teljes körű útmutató fejlesztőknek
 
 ## Bevezetés

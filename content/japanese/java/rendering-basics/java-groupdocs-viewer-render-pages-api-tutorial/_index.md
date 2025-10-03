@@ -4,8 +4,8 @@
 "title": "Javaガイド&#58; GroupDocs.Viewer APIを使用して特定のページをレンダリングし、ドキュメントのプレビューと管理を行う"
 "url": "/ja/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Java の実装: GroupDocs.Viewer API を使用して特定のページをレンダリングする
 
 ## 導入

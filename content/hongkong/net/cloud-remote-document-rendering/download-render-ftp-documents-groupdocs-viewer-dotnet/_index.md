@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 從 FTP 高效下載和呈現文檔"
 "url": "/zh-hant/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 從 FTP 有效下載和呈現文檔
 
 ## 介紹

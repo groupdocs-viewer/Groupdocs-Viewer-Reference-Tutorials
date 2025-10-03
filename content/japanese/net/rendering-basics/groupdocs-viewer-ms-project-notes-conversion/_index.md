@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用して、メモ付きの MS Project ファイルを効率的にレンダリングする"
 "url": "/ja/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して、メモ付きの MS Project ファイルを効率的にレンダリングする
 
 ## 導入

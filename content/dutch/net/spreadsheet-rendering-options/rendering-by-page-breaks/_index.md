@@ -5,8 +5,8 @@
 "title": "Rendering door pagina-einden"
 "url": "/nl/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Rendering door pagina-einden
 
 ## Invoering

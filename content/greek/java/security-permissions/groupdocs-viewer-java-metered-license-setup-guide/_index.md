@@ -4,8 +4,8 @@
 "title": "Υλοποίηση Άδειας Χρήσης με Όριο για το GroupDocs.Viewer σε Java&#58; Οδηγός Προγραμματιστή"
 "url": "/el/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση Άδειας Χρήσης με Όριο για το GroupDocs.Viewer για Java: Οδηγός για Προγραμματιστές
 
 ## Εισαγωγή

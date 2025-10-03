@@ -5,8 +5,8 @@
 "title": "Đặt giới hạn kích thước hình ảnh"
 "url": "/vi/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Đặt giới hạn kích thước hình ảnh
 
 ## Giới thiệu

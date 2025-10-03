@@ -5,8 +5,8 @@
 "title": "Linhas de grade de renderização"
 "url": "/pt/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Linhas de grade de renderização
 
 ## Introdução

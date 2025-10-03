@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java를 사용하여 PDF에서 텍스트 추출하기 - 개발자를 위한 종합 가이드"
 "url": "/ko/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java를 사용하여 PDF에서 텍스트 추출
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "เรนเดอร์คอลัมน์และแถวที่ซ่อนอยู่"
 "url": "/th/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # เรนเดอร์คอลัมน์และแถวที่ซ่อนอยู่
 
 ## การแนะนำ

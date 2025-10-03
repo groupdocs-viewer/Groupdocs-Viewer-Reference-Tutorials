@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 检索和保存文档附件以实现高效的元数据管理"
 "url": "/zh/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 检索和保存文档附件
 
 ## 介绍

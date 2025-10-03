@@ -5,8 +5,8 @@
 "title": "限制 Outlook 資料檔中呈現的項目數"
 "url": "/zh-hant/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # 限制 Outlook 資料檔中呈現的項目數
 
 ## 介紹

@@ -4,8 +4,8 @@
 "title": "Come regolare il testo in eccesso nei fogli di calcolo Excel con GroupDocs.Viewer per Java"
 "url": "/it/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Come regolare il testo in eccesso nei fogli di calcolo Excel con GroupDocs.Viewer per Java
 ## Introduzione
 Gestire il testo eccedente nelle celle dei fogli di calcolo quando si convertono documenti in HTML è una sfida comune, soprattutto nel caso di file Excel di grandi dimensioni. **GroupDocs.Viewer per Java** semplifica questo processo, consentendo di gestire e nascondere in modo efficiente il testo eccedente.

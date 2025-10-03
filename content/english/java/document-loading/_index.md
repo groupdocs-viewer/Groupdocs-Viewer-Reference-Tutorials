@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["GroupDocs.Viewer", "document-loading", "java-tutorial", "file-handling"]
+type: docs
 ---
-
 # Java Document Loading Tutorial - GroupDocs.Viewer Examples & Best Practices
 
 If you're building Java applications that need to display documents from various sources, you've probably run into the challenge of handling different file formats, encodings, and storage locations. That's where GroupDocs.Viewer for Java shines – it simplifies document loading from virtually any source while maintaining excellent performance and reliability.

@@ -5,8 +5,8 @@
 "title": "Rendera Microsoft Project-dokument"
 "url": "/sv/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Rendera Microsoft Project-dokument
 
 ## Introduktion

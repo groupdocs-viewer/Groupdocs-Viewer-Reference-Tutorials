@@ -4,8 +4,8 @@
 "title": "Migliora il rendering dei PDF in .NET e abilita i suggerimenti sui caratteri con GroupDocs.Viewer"
 "url": "/it/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Come migliorare il rendering dei PDF in .NET utilizzando GroupDocs.Viewer: abilitare i suggerimenti sui caratteri
 
 ## Introduzione

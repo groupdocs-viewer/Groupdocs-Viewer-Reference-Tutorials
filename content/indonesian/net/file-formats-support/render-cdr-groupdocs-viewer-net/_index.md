@@ -4,8 +4,8 @@
 "title": "Cara Merender Dokumen CDR Menggunakan GroupDocs.Viewer untuk .NET&#58; Panduan Lengkap"
 "url": "/id/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Dokumen CDR Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

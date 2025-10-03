@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Rendern bestimmter Ordner aus ZIP-Archiven in HTML"
 "url": "/de/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Tutorial: Implementieren von GroupDocs.Viewer .NET zum Rendern bestimmter Ordner aus ZIP-Archiven in HTML
 
 ## Einführung

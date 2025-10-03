@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer'da Kaynak Yükleme Zaman Aşımını Uygulama - Eksiksiz Bir Kılavuz"
 "url": "/tr/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer'da Kaynak Yükleme Zaman Aşımını Uygulama
 
 ## giriiş

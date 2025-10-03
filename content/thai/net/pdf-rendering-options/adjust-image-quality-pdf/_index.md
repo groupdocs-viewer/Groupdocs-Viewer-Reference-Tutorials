@@ -5,8 +5,8 @@
 "title": "ปรับคุณภาพรูปภาพใน PDF"
 "url": "/th/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # ปรับคุณภาพรูปภาพใน PDF
 
 ## การแนะนำ

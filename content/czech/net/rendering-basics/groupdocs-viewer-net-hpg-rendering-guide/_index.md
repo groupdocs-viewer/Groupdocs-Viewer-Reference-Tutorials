@@ -4,8 +4,8 @@
 "title": "Efektivní vykreslení dokumentů HPG do HTML, JPG, PNG, PDF pomocí GroupDocs.Viewer .NET"
 "url": "/cs/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokumenty HPG pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

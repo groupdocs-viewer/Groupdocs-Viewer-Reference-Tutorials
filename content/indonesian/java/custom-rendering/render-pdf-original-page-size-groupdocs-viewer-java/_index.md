@@ -4,8 +4,8 @@
 "title": "Render PDF dalam Ukuran Asli Menggunakan GroupDocs.Viewer untuk Java; Panduan Lengkap"
 "url": "/id/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender PDF dengan Ukuran Halaman Aslinya Menggunakan GroupDocs.Viewer untuk Java
 
 Merender PDF sambil mempertahankan ukuran halaman aslinya sangat penting untuk tampilan yang akurat di berbagai platform dan perangkat. Panduan lengkap ini akan memandu Anda menerapkan fitur ini menggunakan GroupDocs.Viewer untuk API Java. Dengan mengikuti langkah-langkah ini, Anda akan memastikan PDF Anda mempertahankan ketepatannya selama proses rendering.

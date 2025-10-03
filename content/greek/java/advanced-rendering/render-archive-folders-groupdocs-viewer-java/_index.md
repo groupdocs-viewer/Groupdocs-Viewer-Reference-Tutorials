@@ -4,8 +4,8 @@
 "title": "Απόδοση φακέλων αρχειοθέτησης σε Java χρησιμοποιώντας το GroupDocs.Viewer - Ένας οδηγός βήμα προς βήμα"
 "url": "/el/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση φακέλων αρχειοθέτησης με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

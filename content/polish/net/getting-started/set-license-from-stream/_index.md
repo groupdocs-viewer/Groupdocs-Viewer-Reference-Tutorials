@@ -5,8 +5,8 @@
 "title": "Ustaw licencję ze strumienia"
 "url": "/pl/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Ustaw licencję ze strumienia
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "ไม่รวมแบบอักษรจากการแสดงผล HTML"
 "url": "/th/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # ไม่รวมแบบอักษรจากการแสดงผล HTML
 
 ## การแนะนำ

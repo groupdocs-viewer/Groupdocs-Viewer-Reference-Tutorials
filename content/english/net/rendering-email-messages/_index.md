@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["email-rendering", "pdf-conversion", "dotnet-api", "document-viewer"]
+type: docs
 ---
-
 # How to Render Email Messages in .NET Applications
 
 ## Why Email Rendering Matters for Your Applications

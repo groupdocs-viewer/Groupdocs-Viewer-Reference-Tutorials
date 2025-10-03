@@ -5,8 +5,8 @@
 "title": "عرض ملفات CHM"
 "url": "/ar/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # عرض ملفات CHM
 
 ## مقدمة

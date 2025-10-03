@@ -4,8 +4,8 @@
 "title": "ดึงข้อมูลเมตาและคุณสมบัติ PDF โดยใช้ GroupDocs.Viewer ใน Java พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # ดึงข้อมูลเมตาและคุณสมบัติของ PDF โดยใช้ GroupDocs.Viewer ใน Java
 
 ยินดีต้อนรับสู่คู่มือที่ครอบคลุมนี้เกี่ยวกับการดึงข้อมูลมุมมองจากเอกสาร PDF ด้วยไลบรารี GroupDocs.Viewer ใน Java หากคุณกำลังมองหาวิธีดึงข้อมูลรายละเอียด เช่น จำนวนหน้า ประเภทเอกสาร และสิทธิ์อนุญาตจากไฟล์ PDF ด้วยโปรแกรม คุณมาถูกที่แล้ว

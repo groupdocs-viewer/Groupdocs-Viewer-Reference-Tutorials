@@ -5,8 +5,8 @@
 "title": "Regola la qualità dell'immagine in PDF"
 "url": "/it/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Regola la qualità dell'immagine in PDF
 
 ## Introduzione

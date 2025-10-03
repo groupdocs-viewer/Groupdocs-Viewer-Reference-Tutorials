@@ -5,8 +5,8 @@
 "title": "埋め込みまたは外部リソースを使用したレンダリング"
 "url": "/ja/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # 埋め込みまたは外部リソースを使用したレンダリング
 
 ## 導入

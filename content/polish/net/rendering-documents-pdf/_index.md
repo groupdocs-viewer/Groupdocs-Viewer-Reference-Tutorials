@@ -5,8 +5,8 @@
 "title": "Renderowanie dokumentów do formatu PDF"
 "url": "/pl/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Renderowanie dokumentów do formatu PDF
 
 

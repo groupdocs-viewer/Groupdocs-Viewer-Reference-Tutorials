@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["CAD File Processing"]
 tags: ["cad-drawings", "groupdocs-viewer", "net-development", "file-rendering"]
+type: docs
 ---
-
 # How to Get CAD Drawing View Information in .NET Applications
 
 ## Introduction

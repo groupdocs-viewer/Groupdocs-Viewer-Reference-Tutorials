@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ जावा में फ़ाइल पहचान और एन्क्रिप्शन जाँच को क्रियान्वित करना"
 "url": "/hi/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके फ़ाइल पहचान और एन्क्रिप्शन जाँच को क्रियान्वित करना
 
 ## परिचय

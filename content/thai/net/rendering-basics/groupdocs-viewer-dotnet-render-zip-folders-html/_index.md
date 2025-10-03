@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET เรนเดอร์โฟลเดอร์เฉพาะจากไฟล์ ZIP เป็น HTML"
 "url": "/th/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # บทช่วยสอน: การนำ GroupDocs.Viewer .NET ไปใช้งานเพื่อเรนเดอร์โฟลเดอร์เฉพาะจากไฟล์ ZIP เป็น HTML
 
 ## การแนะนำ

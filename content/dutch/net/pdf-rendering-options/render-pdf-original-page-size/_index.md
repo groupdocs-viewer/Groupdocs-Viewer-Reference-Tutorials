@@ -5,8 +5,8 @@
 "title": "PDF renderen met originele paginagrootte"
 "url": "/nl/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # PDF renderen met originele paginagrootte
 
 ## Invoering

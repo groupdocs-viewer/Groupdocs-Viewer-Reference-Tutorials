@@ -5,8 +5,8 @@
 "title": "Establecer licencia desde archivo"
 "url": "/es/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Establecer licencia desde archivo
 
 ## Introducción

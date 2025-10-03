@@ -5,8 +5,8 @@
 "title": "Ochrana vykresleného PDF heslem"
 "url": "/cs/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Ochrana vykresleného PDF heslem
 
 ## Zavedení

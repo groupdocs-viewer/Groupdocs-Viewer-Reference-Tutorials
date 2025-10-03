@@ -5,8 +5,8 @@
 "title": "Renderizar todos os layouts em desenhos CAD"
 "url": "/pt/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Renderizar todos os layouts em desenhos CAD
 
 ## Introdução

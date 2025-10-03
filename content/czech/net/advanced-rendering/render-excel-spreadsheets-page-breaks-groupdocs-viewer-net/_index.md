@@ -4,8 +4,8 @@
 "title": "Vykreslení excelových tabulek pomocí zalomení stránek pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení excelových tabulek pomocí zalomení stránek pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

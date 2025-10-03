@@ -4,8 +4,8 @@
 "title": "إخفاء تجاوز النص في Excel باستخدام GroupDocs.Viewer .NET - دليل شامل"
 "url": "/ar/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # إخفاء تجاوز النص في Excel باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

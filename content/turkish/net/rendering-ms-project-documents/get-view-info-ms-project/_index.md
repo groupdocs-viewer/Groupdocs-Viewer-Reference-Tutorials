@@ -5,8 +5,8 @@
 "title": "Microsoft Project Belgeleri için Görünüm Bilgilerini Alın"
 "url": "/tr/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Microsoft Project Belgeleri için Görünüm Bilgilerini Alın
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Comment renommer les champs d'e-mail lors de la conversion d'e-mails au format HTML à l'aide de GroupDocs.Viewer Java"
 "url": "/fr/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment renommer les champs de courrier électronique lors du rendu des courriers électroniques au format HTML avec GroupDocs.Viewer Java
 
 ## Introduction

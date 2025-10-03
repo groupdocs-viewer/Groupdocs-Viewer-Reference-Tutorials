@@ -4,8 +4,8 @@
 "title": "วิธีการใช้การระบุประเภทเอกสารใน GroupDocs.Viewer สำหรับ Java พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการใช้การระบุประเภทเอกสารใน GroupDocs.Viewer สำหรับ Java
 
 คู่มือทีละขั้นตอนในการระบุประเภทไฟล์สำหรับการเรนเดอร์ไฟล์ DOCX โดยใช้ GroupDocs.Viewer สำหรับ Java

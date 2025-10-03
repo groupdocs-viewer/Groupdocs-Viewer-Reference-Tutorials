@@ -5,8 +5,8 @@
 "title": "Render Layer dalam Gambar CAD"
 "url": "/id/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Render Layer dalam Gambar CAD
 
 ## Perkenalan

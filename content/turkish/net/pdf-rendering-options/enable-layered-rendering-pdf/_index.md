@@ -5,8 +5,8 @@
 "title": "PDF'de Katmanlı İşlemeyi Etkinleştir"
 "url": "/tr/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # PDF'de Katmanlı İşlemeyi Etkinleştir
 
 ## giriiş

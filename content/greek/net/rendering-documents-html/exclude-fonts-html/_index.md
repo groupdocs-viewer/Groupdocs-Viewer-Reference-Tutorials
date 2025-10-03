@@ -5,8 +5,8 @@
 "title": "Εξαίρεση γραμματοσειρών από την HTML που αποδίδεται"
 "url": "/el/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Εξαίρεση γραμματοσειρών από την HTML που αποδίδεται
 
 ## Εισαγωγή

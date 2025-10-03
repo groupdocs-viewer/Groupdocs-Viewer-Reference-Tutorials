@@ -5,8 +5,8 @@
 "title": "Erweiterte Ladeoptionen"
 "url": "/de/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Erweiterte Ladeoptionen
 
 ## Einführung

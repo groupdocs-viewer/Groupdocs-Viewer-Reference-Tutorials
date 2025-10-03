@@ -4,8 +4,8 @@
 "title": "كيفية تعطيل تحديد النص في ملفات PDF باستخدام GroupDocs.Viewer .NET لتحسين الأمان"
 "url": "/ar/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استخدام GroupDocs.Viewer .NET لتعطيل تحديد النص عند عرض ملفات PDF بتنسيق HTML
 
 ## مقدمة

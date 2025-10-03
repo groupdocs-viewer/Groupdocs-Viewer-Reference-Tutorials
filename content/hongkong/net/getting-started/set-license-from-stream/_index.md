@@ -5,8 +5,8 @@
 "title": "從串流設定許可證"
 "url": "/zh-hant/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # 從串流設定許可證
 
 ## 介紹

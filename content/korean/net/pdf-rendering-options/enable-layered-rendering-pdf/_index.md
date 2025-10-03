@@ -5,8 +5,8 @@
 "title": "PDF에서 계층형 렌더링 활성화"
 "url": "/ko/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # PDF에서 계층형 렌더링 활성화
 
 ## 소개

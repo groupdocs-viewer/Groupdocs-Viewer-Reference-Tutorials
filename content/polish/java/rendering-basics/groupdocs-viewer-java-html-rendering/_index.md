@@ -4,8 +4,8 @@
 "title": "Jak ładować i renderować dokumenty jako HTML za pomocą GroupDocs.Viewer dla Java"
 "url": "/pl/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jak ładować i renderować dokumenty jako HTML za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

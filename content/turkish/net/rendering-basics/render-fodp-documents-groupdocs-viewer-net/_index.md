@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak FODP Belgeleri Nasıl Oluşturulur? Kapsamlı Bir Kılavuz"
 "url": "/tr/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak FODP Belgeleri Nasıl Oluşturulur: Kapsamlı Bir Kılavuz
 
 ## giriiş

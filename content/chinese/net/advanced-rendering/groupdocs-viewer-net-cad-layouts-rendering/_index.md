@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 实现高效的 CAD 布局渲染——分步指南"
 "url": "/zh/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 实现高效的 CAD 布局渲染
 
 ## 介绍

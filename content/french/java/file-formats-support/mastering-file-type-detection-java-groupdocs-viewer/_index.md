@@ -4,8 +4,8 @@
 "title": "Maîtriser la détection des types de fichiers en Java avec GroupDocs.Viewer"
 "url": "/fr/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Maîtriser la détection des types de fichiers en Java avec GroupDocs.Viewer
 
 Découvrez la puissance de **GroupDocs.Viewer** Pour identifier facilement les types de fichiers à partir des extensions, des types de médias et des flux. Cette bibliothèque robuste simplifie les processus de développement et améliore les fonctionnalités des applications.

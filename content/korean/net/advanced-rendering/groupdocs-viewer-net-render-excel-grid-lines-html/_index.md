@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 HTML 출력을 위한 Excel 스프레드시트의 격자선 렌더링 방법"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 HTML 출력을 위한 Excel 스프레드시트의 격자선 렌더링 방법
 
 ## 소개

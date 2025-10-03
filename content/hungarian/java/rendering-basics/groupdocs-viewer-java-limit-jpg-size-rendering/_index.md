@@ -4,8 +4,8 @@
 "title": "JPG méretének korlátozása dokumentumrendereléshez a GroupDocs.Viewer for Java használatával"
 "url": "/hu/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
 "weight": 1
+type: docs
 ---
-
 # JPG méretének korlátozása dokumentumrendereléshez a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

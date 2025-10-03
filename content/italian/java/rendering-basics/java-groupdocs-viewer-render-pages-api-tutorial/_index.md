@@ -4,8 +4,8 @@
 "title": "Guida Java&#58; rendering di pagine specifiche con l'API GroupDocs.Viewer per l'anteprima e la gestione dei documenti"
 "url": "/it/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Implementazione di Java: rendering di pagine specifiche con l'API GroupDocs.Viewer
 
 ## Introduzione

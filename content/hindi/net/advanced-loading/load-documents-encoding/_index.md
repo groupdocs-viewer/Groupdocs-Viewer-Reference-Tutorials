@@ -5,8 +5,8 @@
 "title": "विशिष्ट एनकोडिंग के साथ दस्तावेज़ लोड करें"
 "url": "/hi/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # विशिष्ट एनकोडिंग के साथ दस्तावेज़ लोड करें
 
 ## परिचय

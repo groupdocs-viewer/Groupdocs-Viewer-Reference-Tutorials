@@ -5,8 +5,8 @@
 "title": "使用自定义字体渲染"
 "url": "/zh/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # 使用自定义字体渲染
 
 ## 介绍

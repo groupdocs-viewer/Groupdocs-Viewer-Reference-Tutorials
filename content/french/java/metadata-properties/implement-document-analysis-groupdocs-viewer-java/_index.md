@@ -4,8 +4,8 @@
 "title": "Implémentation de l'analyse de documents avec GroupDocs.Viewer pour Java &#58; extraction des métadonnées de page et des lignes de texte"
 "url": "/fr/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Implémentation de l'analyse de documents avec GroupDocs.Viewer pour Java : extraction des métadonnées de page et des lignes de texte
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer Java 渲染 CHM 檔案—綜合指南"
 "url": "/zh-hant/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer Java 渲染 CHM 檔案：綜合指南
 ## 介紹
 您是否希望將已編譯的 HTML 幫助 (CHM) 檔案渲染成更受支援的格式，例如 HTML、JPG、PNG 和 PDF？無論是出於存檔目的，還是為了增強在不同平台上的可訪問性，轉換這些文件都可能帶來巨大的改變。本教學將探討如何使用 GroupDocs.Viewer Java 無縫地實現這一點。您將學習如何使用這個強大的庫有效地渲染 CHM 檔案。

@@ -5,8 +5,8 @@
 "title": "Dokumentummellékletek lekérése és nyomtatása"
 "url": "/hu/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Dokumentummellékletek lekérése és nyomtatása
 
 ## Bevezetés

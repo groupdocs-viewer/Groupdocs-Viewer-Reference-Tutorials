@@ -5,8 +5,8 @@
 "title": "Mért licenc beállítása"
 "url": "/hu/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Mért licenc beállítása
 
 ## Bevezetés

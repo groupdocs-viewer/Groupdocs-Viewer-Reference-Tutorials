@@ -4,8 +4,8 @@
 "title": "Come recuperare layout e livelli CAD utilizzando GroupDocs.Viewer .NET per una gestione efficiente della progettazione"
 "url": "/it/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Come recuperare layout e livelli CAD utilizzando GroupDocs.Viewer .NET
 ## Introduzione
 Nell'ambito della progettazione assistita da computer (CAD), la gestione efficiente di disegni complessi è fondamentale, soprattutto quando si gestiscono più layout e livelli all'interno di un singolo file. Per architetti, ingegneri e progettisti, accedere rapidamente a informazioni specifiche aumenta la produttività. **GroupDocs.Viewer .NET** offre una soluzione potente consentendo agli sviluppatori di estrarre a livello di programmazione layout e livelli dai disegni CAD.

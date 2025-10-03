@@ -5,8 +5,8 @@
 "title": "Renderizar arquivos para uma ou várias páginas HTML"
 "url": "/pt/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Renderizar arquivos para uma ou várias páginas HTML
 
 ## Introdução

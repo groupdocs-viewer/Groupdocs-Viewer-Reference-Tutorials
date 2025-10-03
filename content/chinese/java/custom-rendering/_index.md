@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 自定义文档渲染教程"
 "url": "/zh/java/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # GroupDocs.Viewer Java 自定义文档渲染教程
 
 通过我们的 GroupDocs.Viewer Java 教程掌握高级自定义渲染技术。这些全面的指南演示了如何创建自定义渲染处理程序、实现专用渲染逻辑、扩展内置渲染功能以及开发复杂的文档处理解决方案。每个教程都提供了详细的 Java 代码示例，展示了如何实现灵活、定制的文档渲染策略，超越标准的渲染方法。

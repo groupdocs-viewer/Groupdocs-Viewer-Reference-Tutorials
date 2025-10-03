@@ -4,8 +4,8 @@
 "title": "Hogyan lehet CAD rajzokat PNG formátumban renderelni egyéni mérettel és háttérszínnel a GroupDocs.Viewer for Java használatával?"
 "url": "/hu/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan lehet CAD rajzokat PNG formátumban renderelni egyéni mérettel és háttérszínnel a GroupDocs.Viewer for Java használatával?
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "Załaduj dokumenty chronione hasłem"
 "url": "/pl/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Załaduj dokumenty chronione hasłem
 
 ## Wstęp

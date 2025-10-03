@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET'te E-posta Etiketlerini Özelleştirin Alanları Yeniden Adlandırmaya İlişkin Tam Kılavuz"
 "url": "/tr/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer'da E-posta Etiketlerini Özelleştirme: Alanları Yeniden Adlandırmaya İlişkin Tam Kılavuz
 
 ## giriiş

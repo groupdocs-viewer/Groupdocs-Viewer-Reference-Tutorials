@@ -5,8 +5,8 @@
 "title": "Λήψη πληροφοριών προβολής για αρχεία δεδομένων του Outlook (PST, OST)"
 "url": "/el/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Λήψη πληροφοριών προβολής για αρχεία δεδομένων του Outlook (PST, OST)
 
 ## Εισαγωγή

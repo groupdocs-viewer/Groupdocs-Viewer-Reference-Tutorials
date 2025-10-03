@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java で CAD レイアウトとレイヤーを取得する"
 "url": "/ja/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用して CAD レイアウトとレイヤーを取得する方法
 
 エンジニアリングと設計の世界では、コンピュータ支援設計（CAD）ファイルは、設計に関する膨大な詳細情報を保存する不可欠なツールです。これらのファイルは複雑で、複数のレイアウトとレイヤーが含まれる場合があり、プロジェクトの効率的な遂行には正確な管理と取得が不可欠です。Javaでプログラム的にCAD図面から特定の詳細情報を抽出したい場合は、GroupDocs.Viewer for Javaが最適です。このチュートリアルでは、GroupDocs.Viewerを使用してCAD図面からすべてのレイアウトとレイヤーを取得する手順を説明します。

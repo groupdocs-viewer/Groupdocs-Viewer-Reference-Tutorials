@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh CMX"
 "url": "/vi/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # Kết xuất hình ảnh CMX
 
 ## Giới thiệu

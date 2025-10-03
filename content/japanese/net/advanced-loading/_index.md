@@ -5,8 +5,8 @@
 "title": "高度な読み込みオプション"
 "url": "/ja/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # 高度な読み込みオプション
 
 ## 導入

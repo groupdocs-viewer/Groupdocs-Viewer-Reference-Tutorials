@@ -4,8 +4,8 @@
 "title": "JPG minőség optimalizálása a GroupDocs.Viewer .NET-ben a képmegjelenítés javítása érdekében"
 "url": "/hu/net/advanced-rendering/adjust-jpg-quality-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # JPG minőség optimalizálása a GroupDocs.Viewer .NET-ben
 
 ## Bevezetés

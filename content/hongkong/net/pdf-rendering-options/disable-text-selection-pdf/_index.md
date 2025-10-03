@@ -5,8 +5,8 @@
 "title": "停用 PDF 中的文字選擇"
 "url": "/zh-hant/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # 停用 PDF 中的文字選擇
 
 ## 介紹

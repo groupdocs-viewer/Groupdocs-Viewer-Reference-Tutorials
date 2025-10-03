@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 在 Excel 檔案中呈現隱藏行和列 - 進階指南"
 "url": "/zh-hant/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 在 Excel 檔案中呈現隱藏的行和列
 
 ## 介紹

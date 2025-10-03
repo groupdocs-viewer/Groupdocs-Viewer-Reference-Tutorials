@@ -4,8 +4,8 @@
 "title": "Documentbijlagen ophalen en afdrukken met GroupDocs.Viewer voor .NET | Geavanceerde renderinghandleiding"
 "url": "/nl/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Documentbijlagen ophalen en afdrukken met GroupDocs.Viewer voor .NET | Geavanceerde renderinghandleiding
 
 ## Invoering

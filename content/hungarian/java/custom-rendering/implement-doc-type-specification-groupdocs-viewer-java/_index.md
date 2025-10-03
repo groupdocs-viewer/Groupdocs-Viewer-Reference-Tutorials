@@ -4,8 +4,8 @@
 "title": "Hogyan implementáljunk dokumentumtípus-specifikációt a GroupDocs.Viewer for Java programban? Lépésről lépésre útmutató"
 "url": "/hu/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan implementáljunk dokumentumtípus-specifikációt a GroupDocs.Viewer for Java programban?
 
 Lépésről lépésre útmutató a DOCX fájlok GroupDocs.Viewer for Java használatával történő rendereléséhez szükséges fájltípus megadásához.

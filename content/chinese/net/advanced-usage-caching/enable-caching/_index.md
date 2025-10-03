@@ -5,8 +5,8 @@
 "title": "启用缓存以加快文档处理速度"
 "url": "/zh/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # 启用缓存以加快文档处理速度
 
 ## 介绍

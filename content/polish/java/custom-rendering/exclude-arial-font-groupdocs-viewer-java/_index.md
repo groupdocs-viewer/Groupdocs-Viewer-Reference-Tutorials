@@ -4,8 +4,8 @@
 "title": "Jak wykluczyć czcionkę Arial w renderowaniu HTML za pomocą GroupDocs.Viewer Java&#58; Przewodnik krok po kroku"
 "url": "/pl/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak wykluczyć czcionkę Arial podczas renderowania dokumentów do formatu HTML za pomocą GroupDocs.Viewer Java
 
 ## Wstęp

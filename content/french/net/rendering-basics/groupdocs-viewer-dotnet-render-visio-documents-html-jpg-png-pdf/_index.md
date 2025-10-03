@@ -4,8 +4,8 @@
 "title": "Comment afficher des documents Visio au format HTML, JPG, PNG et PDF dans .NET à l'aide de GroupDocs.Viewer"
 "url": "/fr/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des documents Visio au format HTML, JPG, PNG et PDF à l'aide de GroupDocs.Viewer dans .NET
 
 ## Introduction

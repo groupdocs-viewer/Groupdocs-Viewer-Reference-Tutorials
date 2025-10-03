@@ -5,8 +5,8 @@
 "title": "Αναδιάταξη σελίδων σε έγγραφο"
 "url": "/el/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Αναδιάταξη σελίδων σε έγγραφο
 
 ## Εισαγωγή

@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 向けマルチフォーマットドキュメントレンダリングチュートリアル"
 "url": "/ja/java/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # GroupDocs.Viewer Java 向けマルチフォーマットドキュメントレンダリングチュートリアル
 
 GroupDocs.ViewerのJava向けチュートリアルで、包括的なドキュメント形式サポートをご確認ください。これらの詳細なガイドでは、PDF、Microsoft Office文書、画像、CADファイル、特殊形式など、様々なファイル形式のレンダリングと処理方法を解説します。各チュートリアルでは、多様なドキュメント形式を一貫したレンダリング品質で処理できる、柔軟でマルチフォーマットのドキュメント表示ソリューションの実装方法を示すJavaコード例を提供しています。

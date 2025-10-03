@@ -5,8 +5,8 @@
 "title": "Representación de imágenes"
 "url": "/es/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Representación de imágenes
 
 

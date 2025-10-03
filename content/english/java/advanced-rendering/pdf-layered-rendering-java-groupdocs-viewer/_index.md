@@ -8,10 +8,8 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-
+type: docs
 ---
-
-
 # Efficient PDF Layered Rendering in Java Using GroupDocs.Viewer
 
 ## Introduction

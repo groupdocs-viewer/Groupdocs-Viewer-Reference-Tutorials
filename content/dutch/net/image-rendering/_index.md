@@ -5,8 +5,8 @@
 "title": "Beeldweergave"
 "url": "/nl/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Beeldweergave
 
 

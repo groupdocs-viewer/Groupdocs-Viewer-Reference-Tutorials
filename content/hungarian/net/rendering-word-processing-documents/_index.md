@@ -5,8 +5,8 @@
 "title": "Szövegszerkesztési dokumentumok renderelése"
 "url": "/hu/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Szövegszerkesztési dokumentumok renderelése
 
 

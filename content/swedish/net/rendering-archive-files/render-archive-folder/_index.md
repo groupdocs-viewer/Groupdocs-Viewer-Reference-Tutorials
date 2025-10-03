@@ -5,8 +5,8 @@
 "title": "Rendera arkivmapp"
 "url": "/sv/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Rendera arkivmapp
 
 ## Introduktion

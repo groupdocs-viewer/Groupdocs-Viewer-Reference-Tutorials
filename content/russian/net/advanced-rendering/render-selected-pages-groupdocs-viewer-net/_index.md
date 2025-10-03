@@ -4,8 +4,8 @@
 "title": "Как визуализировать выбранные страницы с помощью GroupDocs.Viewer .NET&#58; Подробное руководство для разработчиков"
 "url": "/ru/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать определенные страницы с помощью GroupDocs.Viewer .NET
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "Hogyan állítsuk be a szöveg túlcsordulását az Excel-táblázatokban a GroupDocs.Viewer for Java segítségével?"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan állítsuk be a szöveg túlcsordulását az Excel-táblázatokban a GroupDocs.Viewer for Java segítségével?
 ## Bevezetés
 A dokumentumok HTML-be konvertálásakor a táblázatcellákban túlcsorduló szöveg kezelése gyakori kihívást jelent, különösen a terjedelmes Excel-fájlok esetében. **GroupDocs.Viewer Java-hoz** leegyszerűsíti ezt a folyamatot, lehetővé téve a túlcsorduló szöveg hatékony kezelését és elrejtését.

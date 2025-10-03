@@ -4,8 +4,8 @@
 "title": "Padroneggia il rendering a strati dei PDF .NET con GroupDocs.Viewer&#58; una guida passo passo"
 "url": "/it/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggia il rendering a strati dei PDF .NET con GroupDocs.Viewer: una guida passo passo
 
 ## Introduzione

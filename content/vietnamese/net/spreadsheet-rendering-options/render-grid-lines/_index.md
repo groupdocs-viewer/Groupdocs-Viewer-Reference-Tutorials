@@ -5,8 +5,8 @@
 "title": "Kết xuất các đường lưới"
 "url": "/vi/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Kết xuất các đường lưới
 
 ## Giới thiệu

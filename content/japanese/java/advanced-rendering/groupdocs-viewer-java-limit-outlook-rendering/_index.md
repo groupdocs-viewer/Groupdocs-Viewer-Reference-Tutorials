@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java で Outlook アイテムのレンダリングを制限する包括的なガイド"
 "url": "/ja/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java で Outlook アイテムのレンダリングを制限する
 
 ## 概要

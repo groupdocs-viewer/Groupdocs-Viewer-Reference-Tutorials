@@ -4,8 +4,8 @@
 "title": "Làm chủ GroupDocs.Viewer Java&#58; Chuyển đổi tệp IGS sang HTML, JPG, PNG và PDF"
 "url": "/vi/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ GroupDocs.Viewer Java: Chuyển đổi các tệp IGS sang nhiều định dạng
 
 ## Giới thiệu

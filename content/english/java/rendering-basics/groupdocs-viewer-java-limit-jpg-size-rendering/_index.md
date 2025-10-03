@@ -8,10 +8,8 @@ keywords:
 - limit JPG size document rendering Java
 - GroupDocs.Viewer Java configuration
 - image size limits GroupDocs Viewer
-
+type: docs
 ---
-
-
 # How to Limit JPG Size in Document Rendering Using GroupDocs.Viewer for Java
 
 ## Introduction

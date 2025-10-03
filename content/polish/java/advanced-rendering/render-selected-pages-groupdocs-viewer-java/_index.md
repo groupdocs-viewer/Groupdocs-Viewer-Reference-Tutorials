@@ -4,8 +4,8 @@
 "title": "Jak renderować wybrane strony dokumentu za pomocą GroupDocs.Viewer dla Java"
 "url": "/pl/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować określone strony za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

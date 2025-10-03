@@ -8,10 +8,8 @@ keywords:
 - responsive HTML rendering
 - GroupDocs Viewer Java
 - document conversion
-
+type: docs
 ---
-
-
 # Responsive HTML Rendering with GroupDocs.Viewer for Java
 
 ## Introduction

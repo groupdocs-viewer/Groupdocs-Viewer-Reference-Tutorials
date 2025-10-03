@@ -4,8 +4,8 @@
 "title": "Rendering di pagine specifiche in .NET con GroupDocs.Viewer&#58; una guida completa"
 "url": "/it/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Rendering di pagine specifiche in .NET con GroupDocs.Viewer: una guida completa
 
 ## Introduzione

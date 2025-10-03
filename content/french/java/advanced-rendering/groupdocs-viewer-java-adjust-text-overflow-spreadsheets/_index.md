@@ -4,8 +4,8 @@
 "title": "Comment ajuster le débordement de texte dans les feuilles de calcul Excel avec GroupDocs.Viewer pour Java"
 "url": "/fr/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Comment ajuster le débordement de texte dans les feuilles de calcul Excel avec GroupDocs.Viewer pour Java
 ## Introduction
 La gestion du texte débordant dans les cellules d'une feuille de calcul lors de la conversion de documents en HTML est un défi courant, en particulier pour les fichiers Excel volumineux. **GroupDocs.Viewer pour Java** simplifie ce processus, vous permettant de gérer et de masquer efficacement le texte débordé.

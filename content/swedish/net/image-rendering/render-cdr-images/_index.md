@@ -5,8 +5,8 @@
 "title": "Rendera CDR-bilder"
 "url": "/sv/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # Rendera CDR-bilder
 
 ## Introduktion

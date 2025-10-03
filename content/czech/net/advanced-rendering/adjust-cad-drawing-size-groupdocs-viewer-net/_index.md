@@ -4,8 +4,8 @@
 "title": "Optimalizace velikosti výkresů CAD pomocí GroupDocs.Viewer .NET pro lepší výkon webu"
 "url": "/cs/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizace velikosti výkresů CAD pomocí GroupDocs.Viewer .NET pro lepší výkon webu
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "カスタムフォントでレンダリング"
 "url": "/ja/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # カスタムフォントでレンダリング
 
 ## 導入

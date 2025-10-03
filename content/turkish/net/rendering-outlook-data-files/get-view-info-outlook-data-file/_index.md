@@ -5,8 +5,8 @@
 "title": "Outlook Veri Dosyaları (PST, OST) için Görünüm Bilgilerini Alın"
 "url": "/tr/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Outlook Veri Dosyaları (PST, OST) için Görünüm Bilgilerini Alın
 
 ## giriiş

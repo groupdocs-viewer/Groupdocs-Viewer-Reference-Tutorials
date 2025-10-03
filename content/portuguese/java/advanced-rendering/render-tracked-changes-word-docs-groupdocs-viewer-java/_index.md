@@ -4,8 +4,8 @@
 "title": "Como renderizar alterações rastreadas em documentos do Word usando o GroupDocs.Viewer para Java - Um guia completo"
 "url": "/pt/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderizando alterações rastreadas em documentos do Word com GroupDocs.Viewer para Java
 
 ## Introdução

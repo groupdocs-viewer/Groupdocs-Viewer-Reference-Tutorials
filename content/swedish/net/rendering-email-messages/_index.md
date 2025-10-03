@@ -5,8 +5,8 @@
 "title": "Rendera e-postmeddelanden"
 "url": "/sv/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Rendera e-postmeddelanden
 
 ## Introduktion

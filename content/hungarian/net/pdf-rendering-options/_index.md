@@ -5,8 +5,8 @@
 "title": "PDF renderelési beállítások"
 "url": "/hu/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF renderelési beállítások
 
 

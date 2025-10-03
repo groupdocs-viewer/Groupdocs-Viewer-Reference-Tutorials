@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - download files with C#
 - render documents as HTML
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Viewer .NET: Effortless File Download and Document Rendering
 
 ## Introduction

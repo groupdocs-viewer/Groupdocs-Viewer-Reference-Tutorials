@@ -8,10 +8,8 @@ keywords:
 - load render documents from URL Java
 - GroupDocs.Viewer Java library
 - render documents in HTML format
-
+type: docs
 ---
-
-
 # Master GroupDocs.Viewer Java: Load and Render Documents from URLs Efficiently
 
 ## Introduction

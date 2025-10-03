@@ -5,8 +5,8 @@
 "title": "Zmień kolejność stron w dokumencie"
 "url": "/pl/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Zmień kolejność stron w dokumencie
 
 ## Wstęp

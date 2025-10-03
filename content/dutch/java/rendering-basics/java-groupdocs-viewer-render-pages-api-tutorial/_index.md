@@ -4,8 +4,8 @@
 "title": "Java Guide&#58; specifieke pagina's renderen met GroupDocs.Viewer API voor documentvoorvertoning en -beheer"
 "url": "/nl/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Java implementeren: specifieke pagina's renderen met GroupDocs.Viewer API
 
 ## Invoering

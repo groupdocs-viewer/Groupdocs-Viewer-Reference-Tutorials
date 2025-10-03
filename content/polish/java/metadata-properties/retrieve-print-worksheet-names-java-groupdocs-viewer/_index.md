@@ -4,8 +4,8 @@
 "title": "Wyodrębnij i wyświetl nazwy arkuszy kalkulacyjnych w Javie za pomocą interfejsu API GroupDocs.Viewer"
 "url": "/pl/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Wyodrębnij i wyświetl nazwy arkuszy kalkulacyjnych w Javie za pomocą interfejsu API GroupDocs.Viewer
 
 ## Wstęp

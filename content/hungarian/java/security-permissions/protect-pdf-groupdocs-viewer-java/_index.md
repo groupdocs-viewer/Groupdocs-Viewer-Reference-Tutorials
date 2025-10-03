@@ -4,8 +4,8 @@
 "title": "PDF-fájlok védelme a GroupDocs.Viewer segítségével Java nyelven – Jelszóvédelem és jogosultságok útmutatója"
 "url": "/hu/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # PDF-fájlok védelme a GroupDocs.Viewer segítségével Java-ban
 
 ## Bevezetés

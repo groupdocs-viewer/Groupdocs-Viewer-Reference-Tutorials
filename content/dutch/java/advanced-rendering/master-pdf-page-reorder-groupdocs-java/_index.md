@@ -4,8 +4,8 @@
 "title": "Efficiënt PDF-pagina's opnieuw ordenen met GroupDocs.Viewer voor Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Efficiënt PDF-pagina's opnieuw ordenen met GroupDocs.Viewer voor Java
 
 ## Invoering

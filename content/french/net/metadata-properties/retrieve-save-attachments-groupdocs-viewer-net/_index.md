@@ -4,8 +4,8 @@
 "title": "Comment récupérer et enregistrer des pièces jointes à des documents à l'aide de GroupDocs.Viewer .NET pour une gestion efficace des métadonnées"
 "url": "/fr/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment récupérer et enregistrer des pièces jointes à un document à l'aide de GroupDocs.Viewer .NET
 
 ## Introduction

@@ -3,8 +3,8 @@
 "title": "Tutorial Pembuatan Dokumen Kustom untuk GroupDocs.Viewer Java"
 "url": "/id/java/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # Tutorial Pembuatan Dokumen Kustom untuk GroupDocs.Viewer Java
 
 Kuasai teknik kustomisasi tingkat lanjut dengan tutorial Java GroupDocs.Viewer kami untuk rendering kustom. Panduan komprehensif ini menunjukkan cara membuat pengendali rendering kustom, menerapkan logika rendering khusus, memperluas kemampuan rendering bawaan, dan mengembangkan solusi pemrosesan dokumen yang canggih. Setiap tutorial menyediakan contoh kode Java terperinci yang menunjukkan cara menerapkan strategi rendering dokumen yang fleksibel dan disesuaikan yang melampaui pendekatan rendering standar.

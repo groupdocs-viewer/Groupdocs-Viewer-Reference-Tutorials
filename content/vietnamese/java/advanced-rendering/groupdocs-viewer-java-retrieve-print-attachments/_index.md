@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer cho Java&#58; Truy xuất và in các tệp đính kèm tài liệu"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer cho Java: Truy xuất và in các tệp đính kèm tài liệu
 
 ## Giới thiệu

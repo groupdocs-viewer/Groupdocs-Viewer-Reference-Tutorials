@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document attachments
 - print document attachments
-
+type: docs
 ---
-
-
 # Master GroupDocs.Viewer for Java: Retrieve and Print Document Attachments
 
 ## Introduction

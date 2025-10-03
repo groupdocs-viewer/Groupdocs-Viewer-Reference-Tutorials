@@ -5,8 +5,8 @@
 "title": "Włącz podpowiedzi dotyczące czcionek w pliku PDF"
 "url": "/pl/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Włącz podpowiedzi dotyczące czcionek w pliku PDF
 
 ## Wstęp

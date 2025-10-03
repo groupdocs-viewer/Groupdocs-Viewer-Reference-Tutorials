@@ -5,8 +5,8 @@
 "title": "Sesuaikan Ukuran Gambar Output untuk Gambar CAD"
 "url": "/id/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Sesuaikan Ukuran Gambar Output untuk Gambar CAD
 
 ## Perkenalan

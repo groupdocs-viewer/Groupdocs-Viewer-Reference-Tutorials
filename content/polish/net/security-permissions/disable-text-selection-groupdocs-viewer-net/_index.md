@@ -4,8 +4,8 @@
 "title": "Jak wyłączyć zaznaczanie tekstu w plikach PDF za pomocą GroupDocs.Viewer .NET w celu zwiększenia bezpieczeństwa"
 "url": "/pl/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak używać GroupDocs.Viewer .NET do wyłączania zaznaczania tekstu podczas renderowania plików PDF jako HTML
 
 ## Wstęp

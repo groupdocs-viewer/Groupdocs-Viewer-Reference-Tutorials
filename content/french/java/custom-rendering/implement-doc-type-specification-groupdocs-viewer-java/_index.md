@@ -4,8 +4,8 @@
 "title": "Comment implémenter la spécification de type de document dans GroupDocs.Viewer pour Java – Guide étape par étape"
 "url": "/fr/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment implémenter la spécification du type de document dans GroupDocs.Viewer pour Java
 
 Un guide étape par étape sur la spécification du type de fichier pour le rendu des fichiers DOCX à l'aide de GroupDocs.Viewer pour Java.

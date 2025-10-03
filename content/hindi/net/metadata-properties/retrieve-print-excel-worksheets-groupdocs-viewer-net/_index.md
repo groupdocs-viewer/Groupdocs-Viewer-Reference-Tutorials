@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके Excel वर्कशीट नामों को कैसे पुनर्प्राप्त करें और प्रिंट करें (2023 गाइड)"
 "url": "/hi/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके Excel वर्कशीट नामों को कैसे पुनर्प्राप्त और प्रिंट करें: एक व्यापक गाइड
 
 ## परिचय

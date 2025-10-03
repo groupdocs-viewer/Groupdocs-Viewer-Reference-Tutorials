@@ -5,8 +5,8 @@
 "title": "Rendern von Webdokumenten"
 "url": "/de/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Rendern von Webdokumenten
 
 ## Einführung

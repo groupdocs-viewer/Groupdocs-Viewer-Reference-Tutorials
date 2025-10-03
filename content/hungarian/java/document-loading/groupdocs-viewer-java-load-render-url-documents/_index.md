@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java&#58; Dokumentumok hatékony betöltése és renderelése URL-ekből"
 "url": "/hu/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java mesterképzés: Dokumentumok hatékony betöltése és renderelése URL-ekből
 
 ## Bevezetés

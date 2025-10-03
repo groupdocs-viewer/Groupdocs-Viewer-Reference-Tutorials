@@ -5,8 +5,8 @@
 "title": "Rejtett oldalak megjelenítése"
 "url": "/hu/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Rejtett oldalak megjelenítése
 
 ## Bevezetés

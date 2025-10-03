@@ -5,8 +5,8 @@
 "title": "APNG画像をレンダリングする"
 "url": "/ja/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # APNG画像をレンダリングする
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "Renderize anexos de documentos em HTML usando GroupDocs.Viewer Java - Um guia passo a passo"
 "url": "/pt/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar anexos de documentos em HTML com GroupDocs.Viewer Java
 
 ## Introdução

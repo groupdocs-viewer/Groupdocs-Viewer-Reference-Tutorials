@@ -5,8 +5,8 @@
 "title": "Textauswahl in PDF deaktivieren"
 "url": "/de/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Textauswahl in PDF deaktivieren
 
 ## Einführung

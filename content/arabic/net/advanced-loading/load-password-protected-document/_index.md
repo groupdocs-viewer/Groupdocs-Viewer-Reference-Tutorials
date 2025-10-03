@@ -5,8 +5,8 @@
 "title": "تحميل المستندات المحمية بكلمة مرور"
 "url": "/ar/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # تحميل المستندات المحمية بكلمة مرور
 
 ## مقدمة

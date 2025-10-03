@@ -5,8 +5,8 @@
 "title": "檢索和列印文件附件"
 "url": "/zh-hant/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # 檢索和列印文件附件
 
 ## 介紹

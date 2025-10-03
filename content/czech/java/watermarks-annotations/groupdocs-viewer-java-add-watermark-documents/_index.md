@@ -4,8 +4,8 @@
 "title": "Přidání vodoznaků do dokumentů pomocí GroupDocs.Viewer v Javě – Komplexní průvodce"
 "url": "/cs/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Přidání vodoznaků do dokumentů pomocí GroupDocs.Viewer Java: Komplexní průvodce
 
 ## Zavedení

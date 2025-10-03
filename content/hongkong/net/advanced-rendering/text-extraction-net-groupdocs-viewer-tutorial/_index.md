@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 .NET 中的文字擷取－綜合指南"
 "url": "/zh-hant/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET 中的文字擷取：綜合教學
 
 ## 介紹

@@ -5,8 +5,8 @@
 "title": "그리드 선 렌더링"
 "url": "/ko/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # 그리드 선 렌더링
 
 ## 소개

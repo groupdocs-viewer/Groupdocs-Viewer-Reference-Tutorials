@@ -4,8 +4,8 @@
 "title": "Recupera metadati e proprietà PDF utilizzando GroupDocs.Viewer in Java&#58; una guida passo passo"
 "url": "/it/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Recupera metadati e proprietà PDF utilizzando GroupDocs.Viewer in Java
 
 Benvenuti a questa guida completa su come recuperare informazioni di visualizzazione da un documento PDF con la libreria GroupDocs.Viewer in Java. Se desiderate estrarre programmaticamente dettagli come numero di pagine, tipo di documento e autorizzazioni dai file PDF, siete nel posto giusto.

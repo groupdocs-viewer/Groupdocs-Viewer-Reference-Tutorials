@@ -4,8 +4,8 @@
 "title": "عرض طبقات CAD محددة في Java باستخدام GroupDocs.Viewer - دليل شامل"
 "url": "/ar/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # عرض طبقات CAD محددة في Java باستخدام GroupDocs.Viewer
 ## مقدمة
 هل تواجه صعوبة في عرض طبقات محددة من رسومات CAD؟ سواء كنت مهندسًا أو معماريًا أو مطورًا تتعامل مع تصاميم معقدة، فإن إدارة وتصور طبقات CAD محددة قد يكون أمرًا صعبًا. يوضح هذا الدليل كيفية عرض طبقات محددة بكفاءة باستخدام أداة GroupDocs.Viewer القوية لـ Java.

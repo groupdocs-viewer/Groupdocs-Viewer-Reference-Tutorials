@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 多格式文件渲染教學"
 "url": "/zh-hant/java/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # GroupDocs.Viewer Java 多格式文件渲染教學
 
 透過我們的 GroupDocs.Viewer Java 教學課程，探索全面的文件格式支援。這些詳細的指南示範如何渲染和處理各種文件格式，包括 PDF、Microsoft Office 文件、圖像、CAD 文件以及特殊格式。每個教學課程都提供了可運行的 Java 程式碼範例，展示如何實現靈活的多格式文件檢視解決方案，以一致的渲染品質處理各種文件類型。

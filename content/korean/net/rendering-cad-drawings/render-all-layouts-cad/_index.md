@@ -5,8 +5,8 @@
 "title": "CAD 도면의 모든 레이아웃 렌더링"
 "url": "/ko/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # CAD 도면의 모든 레이아웃 렌더링
 
 ## 소개

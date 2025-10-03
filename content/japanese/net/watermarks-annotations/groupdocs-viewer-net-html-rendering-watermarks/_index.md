@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer の HTML 変換と透かしの統合を使用した .NET でのマスタードキュメントレンダリング"
 "url": "/ja/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用した .NET でのマスタードキュメントレンダリング: HTML 変換と透かしの統合
 
 ## 導入

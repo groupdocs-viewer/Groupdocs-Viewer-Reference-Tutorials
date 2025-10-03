@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer'ı kullanarak Shift_JIS'te Metin Belgelerini Oluşturun"
 "url": "/tr/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'ı Kullanarak Shift_JIS'te Metin Belgelerini Oluşturun
 
 ## giriiş

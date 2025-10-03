@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用して DOCX を HTML に変換する包括的なガイド"
 "url": "/ja/net/export-conversion/groupdocs-viewer-dotnet-docx-to-html/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して DOCX をインタラクティブ HTML に変換する
 
 ## 導入

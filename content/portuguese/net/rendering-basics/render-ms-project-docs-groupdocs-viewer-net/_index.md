@@ -4,8 +4,8 @@
 "title": "Renderize documentos do MS Project usando o GroupDocs.Viewer .NET para gerenciamento avançado de projetos"
 "url": "/pt/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Mestre na renderização de documentos do MS Project usando GroupDocs.Viewer .NET
 
 ## Introdução

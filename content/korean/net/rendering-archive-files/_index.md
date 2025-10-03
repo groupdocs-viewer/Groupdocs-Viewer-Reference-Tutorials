@@ -5,8 +5,8 @@
 "title": "렌더링 아카이브 파일"
 "url": "/ko/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # 렌더링 아카이브 파일
 
 ## 소개

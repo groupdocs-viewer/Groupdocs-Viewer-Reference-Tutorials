@@ -4,8 +4,8 @@
 "title": "Kết xuất HTML đáp ứng với GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất HTML đáp ứng với GroupDocs.Viewer cho Java
 
 ## Giới thiệu

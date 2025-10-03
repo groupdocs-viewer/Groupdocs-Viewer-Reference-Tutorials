@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET bäddar in teckensnitt och konverterar dokument till HTML effektivt"
 "url": "/sv/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra dokumentrendering med GroupDocs.Viewer .NET: Bädda in teckensnitt och konvertera till HTML
 
 ## Introduktion

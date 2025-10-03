@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 빈 행 렌더링 건너뛰기 성능 가이드"
 "url": "/ko/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 빈 행 렌더링 건너뛰기
 ## 소개
 스프레드시트를 HTML로 변환할 때 불필요한 빈 행을 렌더링하면 출력 결과가 복잡해지고 리소스가 추가로 소모될 수 있습니다. 이는 성능 중심 개발자에게 심각한 문제입니다. "GroupDocs.Viewer Java" 라이브러리를 사용하면 이러한 빈 행 렌더링을 효율적으로 건너뛰어 애플리케이션의 속도와 명확성을 향상시킬 수 있습니다.

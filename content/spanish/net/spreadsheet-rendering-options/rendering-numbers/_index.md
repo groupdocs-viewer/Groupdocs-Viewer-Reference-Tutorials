@@ -5,8 +5,8 @@
 "title": "Representación de números"
 "url": "/es/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Representación de números
 
 ## Introducción

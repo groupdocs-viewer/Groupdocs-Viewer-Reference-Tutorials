@@ -4,8 +4,8 @@
 "title": "Come visualizzare le modifiche tracciate nei documenti Word utilizzando GroupDocs.Viewer per Java&#58; una guida completa"
 "url": "/it/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Visualizzazione delle modifiche tracciate nei documenti Word con GroupDocs.Viewer per Java
 
 ## Introduzione

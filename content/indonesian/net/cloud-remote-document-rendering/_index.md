@@ -3,8 +3,8 @@
 "title": "Tutorial Render Dokumen Cloud dan Jarak Jauh untuk GroupDocs.Viewer .NET"
 "url": "/id/net/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Tutorial Render Dokumen Cloud dan Jarak Jauh untuk GroupDocs.Viewer .NET
 
 Pelajari cara mengimplementasikan rendering dokumen jarak jauh dan cloud dengan tutorial GroupDocs.Viewer .NET kami. Panduan praktis ini menunjukkan teknik untuk memuat dan merender dokumen dari penyedia penyimpanan cloud, menangani URL jarak jauh, mengelola sumber file jaringan, dan mengimplementasikan solusi tampilan dokumen terdistribusi. Setiap tutorial menyertakan contoh kode .NET terperinci untuk skenario rendering jarak jauh dan cloud umum, yang membantu Anda membangun aplikasi dengan kemampuan akses dokumen yang fleksibel.

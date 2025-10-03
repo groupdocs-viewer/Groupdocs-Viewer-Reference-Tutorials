@@ -5,8 +5,8 @@
 "title": "Representación de archivos de datos de Outlook (PST, OST)"
 "url": "/es/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Representación de archivos de datos de Outlook (PST, OST)
 
 ## Introducción

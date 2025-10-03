@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java スプレッドシートでグリッド線をレンダリングする方法"
 "url": "/ja/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java スプレッドシートでグリッド線をレンダリングする方法
 
 ## 導入

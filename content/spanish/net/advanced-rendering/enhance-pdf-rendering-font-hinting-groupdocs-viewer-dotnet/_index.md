@@ -4,8 +4,8 @@
 "title": "Mejorar la representación de PDF en .NET y habilitar sugerencias de fuentes con GroupDocs.Viewer"
 "url": "/es/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cómo mejorar la representación de PDF en .NET con GroupDocs.Viewer: habilitar sugerencias de fuentes
 
 ## Introducción

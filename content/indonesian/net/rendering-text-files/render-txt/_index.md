@@ -5,8 +5,8 @@
 "title": "Render File Teks (.txt)"
 "url": "/id/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Render File Teks (.txt)
 
 ## Perkenalan

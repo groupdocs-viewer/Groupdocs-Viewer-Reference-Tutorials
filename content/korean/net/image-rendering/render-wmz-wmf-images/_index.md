@@ -5,8 +5,8 @@
 "title": "WMZ 및 WMF 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # WMZ 및 WMF 이미지 렌더링
 
 ## 소개

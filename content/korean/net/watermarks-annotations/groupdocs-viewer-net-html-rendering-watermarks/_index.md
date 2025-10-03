@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58; HTML 변환 및 워터마크 통합을 사용하여 .NET에서 마스터 문서 렌더링"
 "url": "/ko/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용한 .NET에서의 마스터 문서 렌더링: HTML 변환 및 워터마크 통합
 
 ## 소개

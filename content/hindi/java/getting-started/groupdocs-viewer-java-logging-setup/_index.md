@@ -4,8 +4,8 @@
 "title": "Java कंसोल और फ़ाइल लॉगिंग गाइड के लिए GroupDocs.Viewer में लॉगिंग कॉन्फ़िगर करना"
 "url": "/hi/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer में लॉगिंग कॉन्फ़िगर करना
 
 ## परिचय

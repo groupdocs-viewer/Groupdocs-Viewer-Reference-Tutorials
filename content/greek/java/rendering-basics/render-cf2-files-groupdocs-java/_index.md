@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία CF2 σε HTML, JPG, PNG, PDF σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/rendering-basics/render-cf2-files-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Πλήρης οδηγός: Απόδοση αρχείων CF2 σε διάφορες μορφές χρησιμοποιώντας το GroupDocs.Viewer σε Java
 
 ## Εισαγωγή

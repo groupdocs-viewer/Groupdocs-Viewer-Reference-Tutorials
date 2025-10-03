@@ -4,8 +4,8 @@
 "title": "Jak pobrać struktury archiwum za pomocą GroupDocs.Viewer dla Java? Kompleksowy przewodnik"
 "url": "/pl/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Jak pobrać struktury archiwum za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

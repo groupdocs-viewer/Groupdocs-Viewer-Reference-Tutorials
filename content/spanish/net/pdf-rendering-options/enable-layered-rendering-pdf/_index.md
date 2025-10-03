@@ -5,8 +5,8 @@
 "title": "Habilitar la representación en capas en PDF"
 "url": "/es/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Habilitar la representación en capas en PDF
 
 ## Introducción

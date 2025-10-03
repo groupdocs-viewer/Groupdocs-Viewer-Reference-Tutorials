@@ -5,8 +5,8 @@
 "title": "Ajustar tamanho e qualidade da imagem (JPG)"
 "url": "/pt/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Ajustar tamanho e qualidade da imagem (JPG)
 
 ## Introdução

@@ -4,8 +4,8 @@
 "title": "Java için Master GroupDocs.Viewer&#58; Belge Eklerini Al ve Yazdır"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Java için Master GroupDocs.Viewer: Belge Eklerini Alma ve Yazdırma
 
 ## giriiş

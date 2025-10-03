@@ -4,8 +4,8 @@
 "title": "كيفية استرداد مرفقات المستندات وطباعتها باستخدام GroupDocs.Viewer لـ .NET | دليل العرض المتقدم"
 "url": "/ar/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استرداد مرفقات المستندات وطباعتها باستخدام GroupDocs.Viewer لـ .NET | دليل العرض المتقدم
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "ตั้งค่าใบอนุญาตแบบมิเตอร์"
 "url": "/th/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # ตั้งค่าใบอนุญาตแบบมิเตอร์
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - skip rendering empty rows
 - Java spreadsheet to HTML
-
+type: docs
 ---
-
-
 # Skip Rendering Empty Rows in Java Using GroupDocs.Viewer
 ## Introduction
 Rendering unnecessary empty rows when converting spreadsheets to HTML can clutter your output and consume extra resources. This is a significant concern for performance-oriented developers. With the "GroupDocs.Viewer Java" library, you can efficiently skip rendering these empty rows, enhancing both speed and clarity in your applications.

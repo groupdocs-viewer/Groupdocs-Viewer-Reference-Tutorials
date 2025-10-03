@@ -4,8 +4,8 @@
 "title": "Převod PPTX do HTML s poznámkami pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Převod prezentací PPTX do HTML s poznámkami pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

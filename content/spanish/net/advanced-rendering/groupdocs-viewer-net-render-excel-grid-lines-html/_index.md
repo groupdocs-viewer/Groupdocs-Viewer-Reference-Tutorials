@@ -4,8 +4,8 @@
 "title": "Cómo representar líneas de cuadrícula en hojas de cálculo de Excel con GroupDocs.Viewer .NET para salida HTML"
 "url": "/es/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Cómo representar líneas de cuadrícula en hojas de cálculo de Excel con GroupDocs.Viewer .NET para salida HTML
 
 ## Introducción

@@ -5,8 +5,8 @@
 "title": "Documenten laden uit stream"
 "url": "/nl/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Documenten laden uit stream
 
 ## Invoering

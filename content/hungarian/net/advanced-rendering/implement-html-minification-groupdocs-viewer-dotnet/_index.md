@@ -4,8 +4,8 @@
 "title": "HTML-minifikáció megvalósítása a GroupDocs.Viewer .NET segítségével a gyorsabb weboldalak érdekében"
 "url": "/hu/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # HTML-minifikáció megvalósítása a GroupDocs.Viewer .NET segítségével a gyorsabb weboldalak érdekében
 
 ## Bevezetés

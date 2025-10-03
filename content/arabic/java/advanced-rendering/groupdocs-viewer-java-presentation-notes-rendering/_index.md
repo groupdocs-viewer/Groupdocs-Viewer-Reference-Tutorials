@@ -4,8 +4,8 @@
 "title": "كيفية عرض العروض التقديمية مع الملاحظات باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض العروض التقديمية مع الملاحظات باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

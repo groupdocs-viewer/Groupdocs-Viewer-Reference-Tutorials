@@ -4,8 +4,8 @@
 "title": "EMZ/EMF fájlok renderelése GroupDocs.Viewer for Java használatával – lépésről lépésre útmutató"
 "url": "/hu/java/rendering-basics/render-emz-emf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Átfogó útmutató: EMZ/EMF fájlok renderelése a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

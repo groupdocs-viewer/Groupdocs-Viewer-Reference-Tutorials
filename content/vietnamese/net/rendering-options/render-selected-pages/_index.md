@@ -5,8 +5,8 @@
 "title": "Hiển thị các trang đã chọn"
 "url": "/vi/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Hiển thị các trang đã chọn
 
 ## Giới thiệu

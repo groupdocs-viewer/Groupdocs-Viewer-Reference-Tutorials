@@ -4,8 +4,8 @@
 "title": "OBJ naar HTML/JPG/PNG/PDF-conversie in Java beheersen met GroupDocs.Viewer"
 "url": "/nl/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Bestandsconversie onder de knie krijgen: OBJ naar HTML/JPG/PNG/PDF converteren in Java met GroupDocs.Viewer
 
 ## Invoering

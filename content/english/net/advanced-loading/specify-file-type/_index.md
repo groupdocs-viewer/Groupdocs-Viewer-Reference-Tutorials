@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["GroupDocs.Viewer", "file-type-detection", "document-loading", "NET-API"]
+type: docs
 ---
-
 # How to Specify File Type When Loading Documents in .NET
 
 ## Why Specifying File Types Matters for Document Viewers

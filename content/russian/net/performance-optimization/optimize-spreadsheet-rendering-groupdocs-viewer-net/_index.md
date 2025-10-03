@@ -4,8 +4,8 @@
 "title": "Оптимизируйте отображение электронных таблиц с помощью GroupDocs.Viewer для .NET&#58; Пропускайте пустые столбцы"
 "url": "/ru/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Оптимизируйте рендеринг электронных таблиц с помощью GroupDocs.Viewer для .NET
 ## Как пропустить рендеринг пустых столбцов в электронных таблицах с помощью GroupDocs.Viewer .NET
 ### Введение

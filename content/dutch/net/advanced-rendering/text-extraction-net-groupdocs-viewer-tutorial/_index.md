@@ -4,8 +4,8 @@
 "title": "Master Text Extraction in .NET met GroupDocs.Viewer&#58; een uitgebreide handleiding"
 "url": "/nl/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Tekst extractie in .NET onder de knie krijgen met GroupDocs.Viewer: een uitgebreide tutorial
 
 ## Invoering

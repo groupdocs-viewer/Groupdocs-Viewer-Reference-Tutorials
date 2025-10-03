@@ -4,8 +4,8 @@
 "title": "Implémentation du délai d'expiration du chargement des ressources dans GroupDocs.Viewer pour .NET - Guide complet"
 "url": "/fr/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Implémentation du délai d'expiration du chargement des ressources dans GroupDocs.Viewer pour .NET
 
 ## Introduction

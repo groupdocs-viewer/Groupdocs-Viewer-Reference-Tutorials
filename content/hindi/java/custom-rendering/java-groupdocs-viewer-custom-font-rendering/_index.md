@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ जावा में कस्टम फ़ॉन्ट रेंडरिंग कैसे लागू करें - एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ जावा में कस्टम फ़ॉन्ट रेंडरिंग कैसे लागू करें: एक चरण-दर-चरण मार्गदर्शिका
 
 ## परिचय

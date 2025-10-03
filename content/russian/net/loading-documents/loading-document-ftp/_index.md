@@ -5,8 +5,8 @@
 "title": "Загрузка документов с FTP (расширенная)"
 "url": "/ru/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Загрузка документов с FTP (расширенная)
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "Jak pobrać i wydrukować nazwy arkuszy kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer dla platformy .NET (przewodnik na rok 2023)"
 "url": "/pl/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak pobrać i wydrukować nazwy arkuszy kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer dla platformy .NET: kompleksowy przewodnik
 
 ## Wstęp

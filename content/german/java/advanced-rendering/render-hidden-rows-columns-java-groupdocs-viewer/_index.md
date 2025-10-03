@@ -4,8 +4,8 @@
 "title": "Rendern Sie versteckte Zeilen und Spalten in Java-Tabellen mit GroupDocs.Viewer"
 "url": "/de/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rendern Sie versteckte Zeilen und Spalten in Java-Tabellen mit GroupDocs.Viewer
 
 ## Einführung

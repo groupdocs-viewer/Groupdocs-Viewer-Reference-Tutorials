@@ -5,8 +5,8 @@
 "title": "Hiển thị HTML đáp ứng"
 "url": "/vi/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Hiển thị HTML đáp ứng
 
 ## Giới thiệu

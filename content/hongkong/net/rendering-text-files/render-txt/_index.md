@@ -5,8 +5,8 @@
 "title": "渲染文字檔（.txt）"
 "url": "/zh-hant/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # 渲染文字檔（.txt）
 
 ## 介紹

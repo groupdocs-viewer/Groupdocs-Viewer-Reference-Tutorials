@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 以原始大小渲染 PDF —— 綜合指南"
 "url": "/zh-hant/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 以原始頁面大小呈現 PDF
 
 在渲染 PDF 時保持其原始頁面大小對於在各種平台和裝置上準確顯示至關重要。本指南將指導您使用 GroupDocs.Viewer for Java API 實作此功能。遵循這些步驟，您將確保您的 PDF 在渲染過程中保持其保真度。

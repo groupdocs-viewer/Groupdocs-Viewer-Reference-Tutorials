@@ -5,8 +5,8 @@
 "title": "将文档渲染为 HTML"
 "url": "/zh/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # 将文档渲染为 HTML
 
 

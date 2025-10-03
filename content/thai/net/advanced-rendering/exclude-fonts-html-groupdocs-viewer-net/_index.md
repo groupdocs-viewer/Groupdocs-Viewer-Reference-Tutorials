@@ -4,8 +4,8 @@
 "title": "วิธีการแยกแบบอักษรเฉพาะออกจากการแสดงผล HTML โดยใช้ GroupDocs.Viewer สำหรับ .NET"
 "url": "/th/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการแยกแบบอักษรออกจากการแสดงผล HTML โดยใช้ GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

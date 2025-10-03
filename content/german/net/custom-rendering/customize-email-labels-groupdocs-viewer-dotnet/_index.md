@@ -4,8 +4,8 @@
 "title": "E-Mail-Beschriftungen in GroupDocs.Viewer für .NET anpassen – Eine vollständige Anleitung zum Umbenennen von Feldern"
 "url": "/de/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # E-Mail-Beschriftungen in GroupDocs.Viewer für .NET anpassen: Eine vollständige Anleitung zum Umbenennen von Feldern
 
 ## Einführung

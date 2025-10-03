@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["GroupDocs.Viewer", "Document Processing"]
 tags: ["metadata-extraction", "document-properties", "dotnet", "csharp", "tutorial"]
+type: docs
 ---
-
 # Document Metadata Extraction .NET - Complete GroupDocs.Viewer Guide
 
 Ever wondered what's hidden inside your documents beyond the visible content? Document metadata extraction is your key to unlocking valuable information that can transform how you manage, organize, and process files in your .NET applications. Whether you're building a document management system, implementing automated workflows, or simply need to analyze file properties, this comprehensive guide will show you exactly how to extract document metadata using GroupDocs.Viewer for .NET.

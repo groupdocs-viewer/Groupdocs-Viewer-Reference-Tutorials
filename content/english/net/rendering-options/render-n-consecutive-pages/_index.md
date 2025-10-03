@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["GroupDocs.Viewer", "page-rendering", "dotnet-tutorial"]
+type: docs
 ---
-
 # Render Consecutive Pages .NET - Complete Developer Guide
 
 ## Introduction

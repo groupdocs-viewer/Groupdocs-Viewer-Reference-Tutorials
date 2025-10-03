@@ -5,8 +5,8 @@
 "title": "Nahradit chybějící písmo"
 "url": "/cs/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Nahradit chybějící písmo
 
 ## Zavedení

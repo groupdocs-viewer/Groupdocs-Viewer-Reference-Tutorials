@@ -4,8 +4,8 @@
 "title": "HTML fájlok minimalizálása Java-ban a GroupDocs.Viewer használatával a teljesítmény optimalizálásához"
 "url": "/hu/java/performance-optimization/groupdocs-viewer-java-html-minification-guide/"
 "weight": 1
+type: docs
 ---
-
 # HTML dokumentumok minimalizálása a GroupDocs.Viewer használatával Java-ban
 
 ## Bevezetés

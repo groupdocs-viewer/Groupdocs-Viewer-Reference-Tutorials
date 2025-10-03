@@ -4,8 +4,8 @@
 "title": "Cara Merender File PLT ke HTML Menggunakan GroupDocs.Viewer di Java&#58; Panduan Langkah demi Langkah"
 "url": "/id/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File PLT ke HTML Menggunakan GroupDocs.Viewer di Java: Panduan Pengembang
 
 ## Perkenalan

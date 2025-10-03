@@ -5,8 +5,8 @@
 "title": "Belgeye Filigran Ekle"
 "url": "/tr/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Belgeye Filigran Ekle
 
 ## giriiş

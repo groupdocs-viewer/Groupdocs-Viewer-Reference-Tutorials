@@ -5,8 +5,8 @@
 "title": "Pas de grootte van de uitvoerafbeelding aan voor CAD-tekeningen"
 "url": "/nl/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Pas de grootte van de uitvoerafbeelding aan voor CAD-tekeningen
 
 ## Invoering

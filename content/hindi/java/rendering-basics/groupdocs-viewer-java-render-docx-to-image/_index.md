@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs व्यूअर का उपयोग करके DOCX को छवि में प्रस्तुत करना&#58; एक व्यापक गाइड"
 "url": "/hi/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # जावा के लिए ग्रुपडॉक्स व्यूअर के साथ DOCX को छवि में प्रस्तुत करें
 
 ## परिचय

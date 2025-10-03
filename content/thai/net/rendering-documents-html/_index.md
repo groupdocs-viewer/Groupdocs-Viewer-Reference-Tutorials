@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เอกสารเป็น HTML"
 "url": "/th/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # การเรนเดอร์เอกสารเป็น HTML
 
 

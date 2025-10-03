@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์ภาพวาด CAD เป็น PNG ด้วยขนาดที่กำหนดเองและสีพื้นหลังโดยใช้ GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์ภาพวาด CAD เป็น PNG ด้วยขนาดที่กำหนดเองและสีพื้นหลังโดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

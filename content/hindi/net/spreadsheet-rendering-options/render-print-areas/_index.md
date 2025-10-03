@@ -5,8 +5,8 @@
 "title": ".NET के लिए GroupDocs.Viewer के साथ प्रिंट क्षेत्रों को प्रस्तुत करें"
 "url": "/hi/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer के साथ प्रिंट क्षेत्रों को प्रस्तुत करें
 
 ## परिचय

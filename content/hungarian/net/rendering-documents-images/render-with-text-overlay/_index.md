@@ -5,8 +5,8 @@
 "title": "Szöveggel átfedésben megjelenítendő renderelés"
 "url": "/hu/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Szöveggel átfedésben megjelenítendő renderelés
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "Obtenir des informations d'affichage pour les dessins CAO"
 "url": "/fr/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Obtenir des informations d'affichage pour les dessins CAO
 
 ## Introduction

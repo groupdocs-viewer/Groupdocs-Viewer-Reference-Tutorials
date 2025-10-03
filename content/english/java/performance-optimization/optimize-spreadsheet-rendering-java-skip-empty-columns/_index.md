@@ -8,10 +8,8 @@ keywords:
 - optimize spreadsheet rendering
 - skip empty columns in Java
 - GroupDocs.Viewer performance optimization
-
+type: docs
 ---
-
-
 # How to Optimize Spreadsheet Rendering in Java: Skipping Empty Columns with GroupDocs.Viewer
 
 ## Introduction

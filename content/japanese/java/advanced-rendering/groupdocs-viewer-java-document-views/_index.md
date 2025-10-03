@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer for Java&#58; ドキュメントビュー情報と洞察の取得"
 "url": "/ja/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java でドキュメントビューをマスターする
 ## 高度なレンダリングテクニック
 **SEO URL:** groupdocs-viewer-java-document-views

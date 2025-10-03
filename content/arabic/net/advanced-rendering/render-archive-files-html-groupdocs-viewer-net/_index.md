@@ -4,8 +4,8 @@
 "title": "كيفية تحويل ملفات الأرشيف إلى HTML باستخدام GroupDocs.Viewer .NET - دليل خطوة بخطوة"
 "url": "/ar/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تحويل ملفات الأرشيف إلى HTML باستخدام GroupDocs.Viewer .NET: دليل خطوة بخطوة
 ## مقدمة
 هل تواجه صعوبة في عرض ملفات الأرشيف مثل RAR أو ZIP على صفحات الويب؟ يُعد تحويل هذه التنسيقات المعقدة إلى مستندات HTML سهلة الاستخدام أمرًا بالغ الأهمية لعرض المحتوى بسلاسة. مع GroupDocs.Viewer لـ .NET، تصبح هذه المهمة سهلة وفعالة.

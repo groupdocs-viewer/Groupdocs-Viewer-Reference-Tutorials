@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 渲染 OBJ 文件——HTML、JPG、PNG 和 PDF 转换综合指南"
 "url": "/zh/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 渲染 OBJ 文件
 
 ## 渲染基础知识介绍

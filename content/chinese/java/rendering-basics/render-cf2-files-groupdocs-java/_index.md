@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 Java 中将 CF2 文件渲染为 HTML、JPG、PNG、PDF"
 "url": "/zh/java/rendering-basics/render-cf2-files-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 综合指南：使用 Java 中的 GroupDocs.Viewer 将 CF2 文件渲染为各种格式
 
 ## 介绍

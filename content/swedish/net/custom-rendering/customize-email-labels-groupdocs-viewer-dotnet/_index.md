@@ -4,8 +4,8 @@
 "title": "Anpassa e-postetiketter i GroupDocs.Viewer för .NET &#58; En komplett guide till att byta namn på fält"
 "url": "/sv/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Anpassa e-postetiketter i GroupDocs.Viewer för .NET: En komplett guide till att byta namn på fält
 
 ## Introduktion

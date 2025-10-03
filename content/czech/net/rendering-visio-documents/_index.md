@@ -5,8 +5,8 @@
 "title": "Vykreslování dokumentů Visia"
 "url": "/cs/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Vykreslování dokumentů Visia
 
 ## Zavedení

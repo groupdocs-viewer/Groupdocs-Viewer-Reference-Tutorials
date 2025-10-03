@@ -5,8 +5,8 @@
 "title": "CAD Çizimlerinde Tek Düzeni Oluşturma"
 "url": "/tr/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # CAD Çizimlerinde Tek Düzeni Oluşturma
 
 ## giriiş

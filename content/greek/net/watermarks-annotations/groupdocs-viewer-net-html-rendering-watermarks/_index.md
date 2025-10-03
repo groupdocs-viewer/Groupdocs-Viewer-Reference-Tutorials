@@ -4,8 +4,8 @@
 "title": "Απόδοση κύριου εγγράφου σε .NET χρησιμοποιώντας τη μετατροπή HTML και την ενσωμάτωση υδατογραφήματος του GroupDocs.Viewer"
 "url": "/el/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση κύριου εγγράφου σε .NET χρησιμοποιώντας GroupDocs.Viewer: Μετατροπή HTML και ενσωμάτωση υδατογραφήματος
 
 ## Εισαγωγή

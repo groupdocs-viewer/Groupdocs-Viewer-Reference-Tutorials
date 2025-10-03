@@ -3,8 +3,8 @@
 "title": "Handledningar för rendering av dokument i flera format för GroupDocs.Viewer Java"
 "url": "/sv/java/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # Handledningar för rendering av dokument i flera format för GroupDocs.Viewer Java
 
 Utforska omfattande stöd för dokumentformat med våra GroupDocs.Viewer-handledningar för Java. Dessa detaljerade guider visar hur man renderar och hanterar olika filformat, inklusive PDF, Microsoft Office-dokument, bilder, CAD-filer och specialiserade format. Varje handledning ger exempel på fungerande Java-kod som visar hur man implementerar flexibla dokumentvisningslösningar för flera format som kan hantera olika dokumenttyper med konsekvent renderingskvalitet.

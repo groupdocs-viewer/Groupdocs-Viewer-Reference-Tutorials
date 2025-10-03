@@ -5,8 +5,8 @@
 "title": "Renderizar figuras do Visio"
 "url": "/pt/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar figuras do Visio
 
 ## Introdução

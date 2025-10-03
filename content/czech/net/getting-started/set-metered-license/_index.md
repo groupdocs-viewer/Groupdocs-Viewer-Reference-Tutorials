@@ -5,8 +5,8 @@
 "title": "Nastavit měřenou licenci"
 "url": "/cs/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Nastavit měřenou licenci
 
 ## Zavedení

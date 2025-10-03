@@ -5,8 +5,8 @@
 "title": "Carregar documentos com codificação específica"
 "url": "/pt/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Carregar documentos com codificação específica
 
 ## Introdução

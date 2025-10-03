@@ -5,8 +5,8 @@
 "title": "Sesuaikan Ukuran Halaman Saat Merender Pesan Email"
 "url": "/id/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Sesuaikan Ukuran Halaman Saat Merender Pesan Email
 
 ## Perkenalan

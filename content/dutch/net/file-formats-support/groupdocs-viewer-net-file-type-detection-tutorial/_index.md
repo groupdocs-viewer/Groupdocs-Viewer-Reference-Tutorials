@@ -4,8 +4,8 @@
 "title": "Bestandstypen detecteren met GroupDocs.Viewer voor .NET&#58; een uitgebreide tutorial"
 "url": "/nl/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Bestandstypen detecteren met GroupDocs.Viewer voor .NET: een uitgebreide tutorial
 
 ## Invoering

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["CAD Rendering"]
 tags: ["cad-layers", "dwg-rendering", "dotnet-api", "groupdocs-viewer"]
+type: docs
 ---
-
 # CAD Layer Rendering .NET - Complete Guide to Selective Layer Control
 
 When you're working with complex CAD drawings in your .NET applications, you don't always want to display every single layer. Maybe you need to show only the electrical components, hide the dimensions, or focus on specific structural elements. That's where CAD layer rendering becomes incredibly powerful.

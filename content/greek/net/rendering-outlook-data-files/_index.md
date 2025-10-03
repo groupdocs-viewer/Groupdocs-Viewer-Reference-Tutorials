@@ -5,8 +5,8 @@
 "title": "Απόδοση αρχείων δεδομένων του Outlook (PST, OST)"
 "url": "/el/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Απόδοση αρχείων δεδομένων του Outlook (PST, OST)
 
 ## Εισαγωγή

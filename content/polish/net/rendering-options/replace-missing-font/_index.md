@@ -5,8 +5,8 @@
 "title": "Zastąp brakującą czcionkę"
 "url": "/pl/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Zastąp brakującą czcionkę
 
 ## Wstęp

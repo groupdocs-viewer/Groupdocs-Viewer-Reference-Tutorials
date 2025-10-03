@@ -5,8 +5,8 @@
 "title": "Alternativ för kalkylbladsrendering"
 "url": "/sv/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Alternativ för kalkylbladsrendering
 
 ## Introduktion

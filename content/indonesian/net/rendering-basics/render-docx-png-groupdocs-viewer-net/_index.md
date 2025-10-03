@@ -4,8 +4,8 @@
 "title": "Cara Merender DOCX ke PNG Menggunakan GroupDocs.Viewer .NET&#58; Panduan Langkah demi Langkah"
 "url": "/id/net/rendering-basics/render-docx-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender DOCX ke PNG Menggunakan GroupDocs.Viewer .NET: Panduan Langkah demi Langkah
 ## Dasar-dasar Rendering
 ### Perkenalan

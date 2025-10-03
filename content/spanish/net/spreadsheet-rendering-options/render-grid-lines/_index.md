@@ -5,8 +5,8 @@
 "title": "Líneas de cuadrícula de renderizado"
 "url": "/es/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Líneas de cuadrícula de renderizado
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "Как визуализировать защищенные паролем документы с помощью GroupDocs.Viewer .NET"
 "url": "/ru/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Отображение защищенных паролем документов с помощью GroupDocs.Viewer .NET
 
 ## Введение

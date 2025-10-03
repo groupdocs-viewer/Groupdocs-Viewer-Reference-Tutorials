@@ -5,8 +5,8 @@
 "title": "Dostosuj przepełnienie tekstem w komórkach"
 "url": "/pl/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Dostosuj przepełnienie tekstem w komórkach
 
 ## Wstęp

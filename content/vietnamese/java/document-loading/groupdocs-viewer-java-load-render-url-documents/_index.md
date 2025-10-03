@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java&#58; Tải và Hiển thị Tài liệu từ URL một cách Hiệu quả"
 "url": "/vi/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer Java: Tải và hiển thị tài liệu từ URL một cách hiệu quả
 
 ## Giới thiệu

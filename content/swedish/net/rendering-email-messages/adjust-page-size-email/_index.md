@@ -5,8 +5,8 @@
 "title": "Justera sidstorleken vid rendering av e-postmeddelanden"
 "url": "/sv/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Justera sidstorleken vid rendering av e-postmeddelanden
 
 ## Introduktion

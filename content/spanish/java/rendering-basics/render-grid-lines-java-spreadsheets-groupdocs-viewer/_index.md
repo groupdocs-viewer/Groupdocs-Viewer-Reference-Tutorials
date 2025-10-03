@@ -4,8 +4,8 @@
 "title": "Cómo representar líneas de cuadrícula en hojas de cálculo de Java con GroupDocs.Viewer"
 "url": "/es/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Cómo representar líneas de cuadrícula en hojas de cálculo de Java con GroupDocs.Viewer
 
 ## Introducción

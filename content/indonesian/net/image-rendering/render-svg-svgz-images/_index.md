@@ -5,8 +5,8 @@
 "title": "Render Gambar SVG dan SVGZ"
 "url": "/id/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # Render Gambar SVG dan SVGZ
 
 ## Perkenalan

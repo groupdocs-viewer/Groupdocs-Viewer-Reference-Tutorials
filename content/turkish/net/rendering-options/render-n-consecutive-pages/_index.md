@@ -5,8 +5,8 @@
 "title": "N Ardışık Sayfaları Oluştur"
 "url": "/tr/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # N Ardışık Sayfaları Oluştur
 
 ## giriiş

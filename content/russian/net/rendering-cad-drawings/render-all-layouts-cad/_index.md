@@ -5,8 +5,8 @@
 "title": "Визуализация всех макетов в чертежах САПР"
 "url": "/ru/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Визуализация всех макетов в чертежах САПР
 
 ## Введение

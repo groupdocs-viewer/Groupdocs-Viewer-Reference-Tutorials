@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 有效率地重新排序 PDF 頁面－綜合指南"
 "url": "/zh-hant/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 實作高效率的 PDF 頁面重新排序
 
 ## 介紹

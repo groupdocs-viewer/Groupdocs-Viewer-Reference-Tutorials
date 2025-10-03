@@ -5,8 +5,8 @@
 "title": "Rendera PDF med original sidstorlek"
 "url": "/sv/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Rendera PDF med original sidstorlek
 
 ## Introduktion

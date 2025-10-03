@@ -8,10 +8,8 @@ keywords:
 - render presentations with notes Java
 - GroupDocs.Viewer for Java setup
 - presentation rendering with notes
-
+type: docs
 ---
-
-
 # How to Render Presentations with Notes Using GroupDocs.Viewer for Java
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "渲染 Web 文档"
 "url": "/zh/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # 渲染 Web 文档
 
 ## 介绍

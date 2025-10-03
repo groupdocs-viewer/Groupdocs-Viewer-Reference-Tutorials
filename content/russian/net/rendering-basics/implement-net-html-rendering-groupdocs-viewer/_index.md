@@ -4,8 +4,8 @@
 "title": "Как реализовать .NET HTML-рендеринг с помощью GroupDocs.Viewer&#58; Пошаговое руководство"
 "url": "/ru/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Как реализовать HTML-рендеринг .NET с помощью GroupDocs.Viewer: пошаговое руководство
 
 ## Введение

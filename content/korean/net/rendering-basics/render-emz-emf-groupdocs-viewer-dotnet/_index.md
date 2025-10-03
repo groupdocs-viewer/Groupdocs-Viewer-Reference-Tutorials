@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 EMZ/EMF 파일을 렌더링하는 방법 - 포괄적인 가이드"
 "url": "/ko/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 EMZ/EMF 파일을 렌더링하는 방법: 포괄적인 가이드
 ## 렌더링 기본 사항
 이 튜토리얼에서는 GroupDocs.Viewer for .NET을 사용하여 확장 메타파일(EMF) 또는 임베디드 메타파일(EMZ) 파일을 렌더링하는 방법을 보여줍니다. 다양한 파일 변환 기능을 애플리케이션에 통합하거나 문서를 관리하는 경우, 이 가이드에서는 이러한 형식을 HTML, JPG, PNG, PDF로 렌더링하는 방법을 다룹니다.

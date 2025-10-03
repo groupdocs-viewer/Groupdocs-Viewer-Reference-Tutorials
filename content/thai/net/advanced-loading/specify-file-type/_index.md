@@ -5,8 +5,8 @@
 "title": "ระบุประเภทไฟล์เมื่อโหลดเอกสาร"
 "url": "/th/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # ระบุประเภทไฟล์เมื่อโหลดเอกสาร
 
 ## การแนะนำ

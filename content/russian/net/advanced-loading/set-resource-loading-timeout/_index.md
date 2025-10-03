@@ -5,8 +5,8 @@
 "title": "Установить тайм-аут загрузки ресурсов (расширенный)"
 "url": "/ru/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Установить тайм-аут загрузки ресурсов (расширенный)
 
 ## Введение

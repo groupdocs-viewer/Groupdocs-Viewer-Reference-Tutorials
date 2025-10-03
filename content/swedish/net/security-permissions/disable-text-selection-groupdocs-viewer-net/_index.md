@@ -4,8 +4,8 @@
 "title": "Så här inaktiverar du textmarkering i PDF-filer med GroupDocs.Viewer .NET för förbättrad säkerhet"
 "url": "/sv/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hur man använder GroupDocs.Viewer .NET för att inaktivera textmarkering när PDF-filer renderas som HTML
 
 ## Introduktion

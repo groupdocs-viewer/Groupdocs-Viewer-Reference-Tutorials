@@ -5,8 +5,8 @@
 "title": "리소스 로딩 시간 초과 설정(고급)"
 "url": "/ko/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # 리소스 로딩 시간 초과 설정(고급)
 
 ## 소개

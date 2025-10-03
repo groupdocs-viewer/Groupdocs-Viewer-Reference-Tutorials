@@ -4,8 +4,8 @@
 "title": "Come recuperare informazioni sui dati di Outlook utilizzando GroupDocs.Viewer per .NET"
 "url": "/it/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Come recuperare informazioni sui dati di Outlook utilizzando GroupDocs.Viewer per .NET
 
 ## Introduzione

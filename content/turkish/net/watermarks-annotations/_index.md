@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET için Belge Filigranı ve Açıklama Eğitimleri"
 "url": "/tr/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # GroupDocs.Viewer .NET için Belge Filigranı ve Açıklama Eğitimleri
 
 GroupDocs.Viewer .NET eğitimlerimizle belge açıklama ve filigranlama tekniklerinde ustalaşın. Bu adım adım kılavuzlar, metin ve resim filigranlarının nasıl ekleneceğini, açıklamaların nasıl uygulanacağını, filigran konumlandırma ve şeffaflığın nasıl kontrol edileceğini ve gömülü açıklamalarla belgelerin nasıl işleneceğini gösterir. Her eğitim, belgelerinize görsel meta veri ve koruyucu işaretler eklemek, belge izleme ve markalama yeteneklerini geliştirmek için pratik .NET kod örnekleri içerir.

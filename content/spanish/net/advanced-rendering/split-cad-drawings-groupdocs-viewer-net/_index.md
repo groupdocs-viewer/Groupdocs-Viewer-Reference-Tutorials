@@ -4,8 +4,8 @@
 "title": "Cómo dividir dibujos CAD en mosaicos usando GroupDocs.Viewer .NET para una representación eficiente"
 "url": "/es/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cómo dividir dibujos CAD en mosaicos con GroupDocs.Viewer .NET
 
 ## Introducción

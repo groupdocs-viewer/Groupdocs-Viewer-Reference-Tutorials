@@ -4,8 +4,8 @@
 "title": "Cara Mengambil Struktur Arsip Menggunakan GroupDocs.Viewer untuk Java&#58; Panduan Lengkap"
 "url": "/id/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengambil Struktur Arsip Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

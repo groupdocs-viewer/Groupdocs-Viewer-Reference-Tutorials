@@ -4,8 +4,8 @@
 "title": "Rendera dolda rader och kolumner i Excel-filer med GroupDocs.Viewer för .NET - Avancerad guide"
 "url": "/sv/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Rendera dolda rader och kolumner i Excel-filer med GroupDocs.Viewer för .NET
 
 ## Introduktion

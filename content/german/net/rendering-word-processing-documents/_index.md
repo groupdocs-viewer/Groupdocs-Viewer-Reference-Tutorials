@@ -5,8 +5,8 @@
 "title": "Rendern von Textverarbeitungsdokumenten"
 "url": "/de/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Rendern von Textverarbeitungsdokumenten
 
 

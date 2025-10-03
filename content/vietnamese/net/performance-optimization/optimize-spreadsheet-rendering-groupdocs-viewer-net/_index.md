@@ -4,8 +4,8 @@
 "title": "Tối ưu hóa việc hiển thị bảng tính với GroupDocs.Viewer cho .NET&#58; Bỏ qua các cột trống"
 "url": "/vi/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Tối ưu hóa việc hiển thị bảng tính với GroupDocs.Viewer cho .NET
 ## Cách bỏ qua việc hiển thị các cột trống trong bảng tính bằng GroupDocs.Viewer .NET
 ### Giới thiệu

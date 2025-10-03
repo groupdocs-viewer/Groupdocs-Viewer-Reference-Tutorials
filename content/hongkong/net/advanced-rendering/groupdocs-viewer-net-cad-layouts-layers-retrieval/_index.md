@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 擷取 CAD 佈局和圖層以實現高效的設計管理"
 "url": "/zh-hant/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 擷取 CAD 佈局和圖層
 ## 介紹
 在電腦輔助設計 (CAD) 領域，高效管理複雜圖面至關重要，尤其是在處理單一文件中的多個佈局和圖層時。對於建築師、工程師和設計師來說，快速存取特定資訊可以提高工作效率。 **GroupDocs.Viewer .NET** 透過允許開發人員以程式設計方式從 CAD 圖紙中提取佈局和圖層，提供了強大的解決方案。

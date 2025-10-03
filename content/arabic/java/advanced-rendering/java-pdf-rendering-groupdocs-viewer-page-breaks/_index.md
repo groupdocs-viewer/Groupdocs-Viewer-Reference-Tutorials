@@ -4,8 +4,8 @@
 "title": "عرض ملفات PDF باستخدام Java مع GroupDocs.Viewer - تنفيذ فواصل الصفحات في جداول البيانات"
 "url": "/ar/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض PDF في Java: GroupDocs.Viewer مع فواصل الصفحات
 
 استغلّ إمكانات عرض جداول البيانات في تطبيقات Java باستخدام GroupDocs.Viewer. سيوضح لك هذا الدليل الشامل كيفية تنفيذ عرض PDF في Java مع فواصل الصفحات لتحويل سلس إلى PDF.

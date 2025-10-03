@@ -4,8 +4,8 @@
 "title": "استخراج النص من ملف PDF باستخدام GroupDocs.Viewer Java - دليل شامل للمطورين"
 "url": "/ar/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # استخراج النص من PDF باستخدام GroupDocs.Viewer Java
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "Jak wdrożyć niestandardowe renderowanie czcionek w Javie za pomocą GroupDocs.Viewer&#58; Przewodnik krok po kroku"
 "url": "/pl/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jak wdrożyć niestandardowe renderowanie czcionek w Javie za pomocą GroupDocs.Viewer: przewodnik krok po kroku
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "मूल पृष्ठ आकार के साथ PDF प्रस्तुत करें"
 "url": "/hi/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # मूल पृष्ठ आकार के साथ PDF प्रस्तुत करें
 
 ## परिचय

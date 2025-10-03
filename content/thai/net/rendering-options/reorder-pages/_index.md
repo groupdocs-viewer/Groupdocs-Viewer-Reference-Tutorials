@@ -5,8 +5,8 @@
 "title": "เรียงลำดับหน้าใหม่ในเอกสาร"
 "url": "/th/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # เรียงลำดับหน้าใหม่ในเอกสาร
 
 ## การแนะนำ

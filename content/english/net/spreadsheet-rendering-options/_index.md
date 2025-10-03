@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["spreadsheet-rendering", "dotnet-excel", "groupdocs-viewer", "excel-api"]
+type: docs
 ---
-
 # .NET Spreadsheet Rendering Tutorial - Master Excel Viewer Options
 
 ## Why Spreadsheet Rendering Matters for .NET Developers

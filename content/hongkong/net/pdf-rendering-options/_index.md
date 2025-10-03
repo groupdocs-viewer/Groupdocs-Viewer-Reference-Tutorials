@@ -5,8 +5,8 @@
 "title": "PDF 渲染選項"
 "url": "/zh-hant/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF 渲染選項
 
 

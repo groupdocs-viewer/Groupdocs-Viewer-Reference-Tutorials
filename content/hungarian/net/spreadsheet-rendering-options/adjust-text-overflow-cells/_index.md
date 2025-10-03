@@ -5,8 +5,8 @@
 "title": "Szöveg túlcsordulás beállítása cellákban"
 "url": "/hu/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Szöveg túlcsordulás beállítása cellákban
 
 ## Bevezetés

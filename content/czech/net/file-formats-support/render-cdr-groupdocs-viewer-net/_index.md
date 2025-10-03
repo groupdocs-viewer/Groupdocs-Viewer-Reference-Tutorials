@@ -4,8 +4,8 @@
 "title": "Jak vykreslit dokumenty CDR pomocí GroupDocs.Viewer pro .NET – Komplexní průvodce"
 "url": "/cs/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokumenty CDR pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

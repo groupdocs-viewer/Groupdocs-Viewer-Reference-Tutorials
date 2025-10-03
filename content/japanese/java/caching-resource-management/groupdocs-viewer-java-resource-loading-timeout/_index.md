@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java でリソース読み込みタイムアウトを設定する&#58; ドキュメントのパフォーマンスを向上"
 "url": "/ja/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java でリソース読み込みタイムアウトを設定する: ドキュメントのレンダリング効率を向上
 
 ## 導入

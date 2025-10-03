@@ -4,8 +4,8 @@
 "title": "عرض مستندات Apple Numbers في Java باستخدام GroupDocs.Viewer - دليل شامل"
 "url": "/ar/java/file-formats-support/render-numbers-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض مستندات Apple Numbers باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

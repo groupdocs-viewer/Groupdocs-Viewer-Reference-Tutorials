@@ -5,8 +5,8 @@
 "title": "Renderizando arquivos compactados"
 "url": "/pt/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Renderizando arquivos compactados
 
 ## Introdução

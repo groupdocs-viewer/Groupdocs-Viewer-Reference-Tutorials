@@ -4,8 +4,8 @@
 "title": "Υλοποίηση ανάλυσης εγγράφων με το GroupDocs.Viewer για Java - Εξαγωγή μεταδεδομένων σελίδας και γραμμών κειμένου"
 "url": "/el/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση ανάλυσης εγγράφων με το GroupDocs.Viewer για Java: Εξαγωγή μεταδεδομένων σελίδας και γραμμών κειμένου
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Cara Membuat Garis Grid di Spreadsheet Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat Garis Grid di Spreadsheet Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

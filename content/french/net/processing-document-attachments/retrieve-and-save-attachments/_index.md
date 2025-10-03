@@ -5,8 +5,8 @@
 "title": "Récupérer et enregistrer les pièces jointes des documents"
 "url": "/fr/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Récupérer et enregistrer les pièces jointes des documents
 
 ## Introduction

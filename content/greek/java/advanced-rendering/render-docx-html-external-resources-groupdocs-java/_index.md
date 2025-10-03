@@ -4,8 +4,8 @@
 "title": "Μετατροπή DOCX σε HTML με εξωτερικούς πόρους χρησιμοποιώντας το GroupDocs.Viewer για Java"
 "url": "/el/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Μετατροπή DOCX σε HTML με εξωτερικούς πόρους χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

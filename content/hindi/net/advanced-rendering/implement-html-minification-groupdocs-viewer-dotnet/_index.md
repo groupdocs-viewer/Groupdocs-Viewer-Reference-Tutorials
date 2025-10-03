@@ -4,8 +4,8 @@
 "title": "तेज़ वेब पेजों के लिए GroupDocs.Viewer .NET के साथ HTML मिनिमाइज़ेशन कैसे लागू करें"
 "url": "/hi/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # तेज़ वेब पेजों के लिए GroupDocs.Viewer .NET के साथ HTML मिनिमाइज़ेशन कैसे लागू करें
 
 ## परिचय

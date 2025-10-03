@@ -4,8 +4,8 @@
 "title": "Renderização de PDF em Java com GroupDocs.Viewer - Implementação de quebras de página em planilhas"
 "url": "/pt/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Dominando a renderização de PDF em Java: GroupDocs.Viewer com quebras de página
 
 Libere o poder da renderização de planilhas em seus aplicativos Java usando o GroupDocs.Viewer. Este guia completo mostrará como implementar a renderização de PDF em Java com quebras de página para uma conversão perfeita para PDF.

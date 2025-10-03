@@ -5,8 +5,8 @@
 "title": "Dapatkan Informasi Tampilan untuk Gambar CAD"
 "url": "/id/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Dapatkan Informasi Tampilan untuk Gambar CAD
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "Document renderen naar JPGPNG"
 "url": "/nl/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Document renderen naar JPGPNG
 
 ## Invoering

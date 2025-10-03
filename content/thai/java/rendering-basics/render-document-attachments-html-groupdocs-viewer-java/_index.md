@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสารแนบเป็น HTML โดยใช้ GroupDocs.Viewer Java คำแนะนำทีละขั้นตอน"
 "url": "/th/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์เอกสารแนบเป็น HTML ด้วย GroupDocs.Viewer Java
 
 ## การแนะนำ

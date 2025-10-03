@@ -4,8 +4,8 @@
 "title": "วิธีตั้งค่าใบอนุญาตใน GroupDocs.Viewer คำแนะนำการตั้งค่าไฟล์ Java และ URL"
 "url": "/th/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # วิธีตั้งค่าใบอนุญาตใน GroupDocs.Viewer Java: คู่มือการตั้งค่าไฟล์และ URL
 
 ## การแนะนำ

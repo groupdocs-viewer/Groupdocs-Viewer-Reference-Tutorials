@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 以時間間隔呈現專案文檔"
 "url": "/zh-hant/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 實作按時間間隔渲染專案文檔
 
 ## 介紹

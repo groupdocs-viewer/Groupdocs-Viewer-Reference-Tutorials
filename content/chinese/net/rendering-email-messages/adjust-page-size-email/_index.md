@@ -5,8 +5,8 @@
 "title": "渲染电子邮件时调整页面大小"
 "url": "/zh/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # 渲染电子邮件时调整页面大小
 
 ## 介绍

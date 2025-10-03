@@ -5,8 +5,8 @@
 "title": "Aktivieren Sie die geschichtete Darstellung in PDF"
 "url": "/de/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Aktivieren Sie die geschichtete Darstellung in PDF
 
 ## Einführung

@@ -3,8 +3,8 @@
 "title": "Hướng dẫn trích xuất siêu dữ liệu tài liệu cho GroupDocs.Viewer .NET"
 "url": "/vi/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Hướng dẫn trích xuất siêu dữ liệu tài liệu cho GroupDocs.Viewer .NET
 
 Học cách làm việc với siêu dữ liệu và thuộc tính tài liệu với hướng dẫn GroupDocs.Viewer .NET của chúng tôi. Những hướng dẫn thực tế này trình bày cách trích xuất thông tin tài liệu, đọc các trường siêu dữ liệu, quản lý thuộc tính tài liệu và triển khai xử lý tài liệu dựa trên siêu dữ liệu. Mỗi hướng dẫn bao gồm các ví dụ mã .NET đang hoạt động cho các tình huống siêu dữ liệu phổ biến, giúp bạn xây dựng các ứng dụng có thể phân tích và quản lý thông tin tài liệu hiệu quả.

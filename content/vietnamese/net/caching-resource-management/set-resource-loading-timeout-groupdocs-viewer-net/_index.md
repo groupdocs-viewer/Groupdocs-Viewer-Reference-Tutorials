@@ -4,8 +4,8 @@
 "title": "Triển khai Resource Loading Timeout trong GroupDocs.Viewer cho .NET - Hướng dẫn đầy đủ"
 "url": "/vi/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai thời gian chờ tải tài nguyên trong GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

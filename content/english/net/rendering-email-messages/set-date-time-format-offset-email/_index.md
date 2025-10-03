@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Email Rendering"]
 tags: ["datetime-format", "timezone", "email-rendering", "groupdocs-viewer"]
+type: docs
 ---
-
 # Email DateTime Format .NET - Complete Guide to Timezone Display
 
 ## Why Email DateTime Formatting Matters in Your .NET Applications

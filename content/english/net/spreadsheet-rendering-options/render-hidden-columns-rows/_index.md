@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Spreadsheet Processing"]
 tags: ["hidden-columns", "spreadsheet-rendering", "excel-data", "data-visualization"]
+type: docs
 ---
-
 # How to Show Hidden Columns and Rows in Spreadsheets with .NET
 
 ## Introduction

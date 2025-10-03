@@ -5,8 +5,8 @@
 "title": "Renderování obrázků TGA"
 "url": "/cs/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # Renderování obrázků TGA
 
 ## Zavedení

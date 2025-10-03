@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 DOCX를 PNG로 렌더링하는 방법 - 단계별 가이드"
 "url": "/ko/net/rendering-basics/render-docx-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 DOCX를 PNG로 렌더링하는 방법: 단계별 가이드
 ## 렌더링 기본 사항
 ### 소개

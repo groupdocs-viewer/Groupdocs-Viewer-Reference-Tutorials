@@ -4,8 +4,8 @@
 "title": "Bỏ qua việc hiển thị các hàng trống trong Java bằng GroupDocs.Viewer&#58; Hướng dẫn về hiệu suất"
 "url": "/vi/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Bỏ qua việc hiển thị các hàng trống trong Java bằng GroupDocs.Viewer
 ## Giới thiệu
 Việc hiển thị các hàng trống không cần thiết khi chuyển đổi bảng tính sang HTML có thể làm lộn xộn đầu ra của bạn và tiêu tốn thêm tài nguyên. Đây là mối quan tâm đáng kể đối với các nhà phát triển chú trọng đến hiệu suất. Với thư viện "GroupDocs.Viewer Java", bạn có thể bỏ qua việc hiển thị các hàng trống này một cách hiệu quả, giúp tăng tốc độ và độ rõ nét trong các ứng dụng của bạn.

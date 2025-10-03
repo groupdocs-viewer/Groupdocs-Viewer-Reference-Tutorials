@@ -5,8 +5,8 @@
 "title": "Deshabilitar la agrupación de caracteres en PDF"
 "url": "/es/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Deshabilitar la agrupación de caracteres en PDF
 
 ## Introducción

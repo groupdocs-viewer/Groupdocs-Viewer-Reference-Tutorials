@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["CDR", "CorelDRAW", "GroupDocs.Viewer", "NET", "Image Conversion"]
+type: docs
 ---
-
 # How to Render CDR Files in .NET - Complete CorelDRAW Conversion Guide
 
 ## Introduction

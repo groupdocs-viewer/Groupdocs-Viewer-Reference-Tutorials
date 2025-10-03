@@ -5,8 +5,8 @@
 "title": "Reemplazar fuente faltante"
 "url": "/es/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Reemplazar fuente faltante
 
 ## Introducción

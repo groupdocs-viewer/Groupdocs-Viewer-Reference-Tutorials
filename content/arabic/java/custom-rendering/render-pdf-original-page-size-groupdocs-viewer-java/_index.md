@@ -4,8 +4,8 @@
 "title": "عرض ملفات PDF بالحجم الأصلي باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض ملفات PDF بحجم الصفحة الأصلي باستخدام GroupDocs.Viewer لـ Java
 
 يُعدّ عرض ملف PDF مع الحفاظ على حجم الصفحة الأصلي أمرًا أساسيًا لعرض دقيق على مختلف المنصات والأجهزة. سيرشدك هذا الدليل الشامل إلى كيفية تطبيق هذه الميزة باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer لـ Java. باتباع هذه الخطوات، ستضمن بقاء ملفات PDF الخاصة بك دقيقة أثناء العرض.

@@ -4,8 +4,8 @@
 "title": "Obróć określone strony PDF za pomocą GroupDocs.Viewer w Java&#58; Kompleksowy przewodnik"
 "url": "/pl/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Obróć określone strony PDF za pomocą GroupDocs.Viewer w Javie
 
 ## Wstęp

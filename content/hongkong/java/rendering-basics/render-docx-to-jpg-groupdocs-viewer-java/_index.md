@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 將 DOCX 渲染為 JPG&#58; 逐步指南"
 "url": "/zh-hant/java/rendering-basics/render-docx-to-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 將 DOCX 文件渲染為 JPG 映像
 
 ## 介紹

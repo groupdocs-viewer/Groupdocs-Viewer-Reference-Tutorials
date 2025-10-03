@@ -4,8 +4,8 @@
 "title": "Πώς να εφαρμόσετε την ελαχιστοποίηση HTML με το GroupDocs.Viewer .NET για ταχύτερες ιστοσελίδες"
 "url": "/el/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να εφαρμόσετε την ελαχιστοποίηση HTML με το GroupDocs.Viewer .NET για ταχύτερες ιστοσελίδες
 
 ## Εισαγωγή

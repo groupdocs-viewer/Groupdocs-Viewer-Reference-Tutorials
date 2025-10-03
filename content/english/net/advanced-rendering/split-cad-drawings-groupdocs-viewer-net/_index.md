@@ -8,10 +8,8 @@ keywords:
 - split CAD drawings into tiles
 - GroupDocs.Viewer .NET
 - efficient rendering of CAD files
-
+type: docs
 ---
-
-
 # How to Split CAD Drawings into Tiles with GroupDocs.Viewer .NET
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "PDF에서 텍스트 선택 비활성화"
 "url": "/ko/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # PDF에서 텍스트 선택 비활성화
 
 ## 소개

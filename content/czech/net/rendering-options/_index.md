@@ -5,8 +5,8 @@
 "title": "Možnosti vykreslování"
 "url": "/cs/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Možnosti vykreslování
 
 

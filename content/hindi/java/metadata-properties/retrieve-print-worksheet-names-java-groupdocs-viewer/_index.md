@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer API का उपयोग करके Java में वर्कशीट नाम निकालें और प्रदर्शित करें"
 "url": "/hi/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer API का उपयोग करके Java में वर्कशीट नाम निकालें और प्रदर्शित करें
 
 ## परिचय

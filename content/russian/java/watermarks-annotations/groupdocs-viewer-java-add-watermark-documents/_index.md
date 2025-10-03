@@ -4,8 +4,8 @@
 "title": "Добавление водяных знаков в документы с помощью GroupDocs.Viewer Java&#58; Подробное руководство"
 "url": "/ru/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Добавление водяных знаков в документы с помощью GroupDocs.Viewer Java: подробное руководство
 
 ## Введение

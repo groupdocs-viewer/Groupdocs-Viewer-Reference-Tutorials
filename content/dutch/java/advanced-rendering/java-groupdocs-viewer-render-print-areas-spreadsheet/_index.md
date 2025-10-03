@@ -4,8 +4,8 @@
 "title": "Weergave van afdrukgebieden in Java-spreadsheets met GroupDocs.Viewer voor Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Weergave van afdrukgebieden in Java-spreadsheets met GroupDocs.Viewer voor Java
 
 ## Invoering

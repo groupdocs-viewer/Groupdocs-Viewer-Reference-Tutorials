@@ -5,8 +5,8 @@
 "title": "이메일 메시지 렌더링"
 "url": "/ko/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # 이메일 메시지 렌더링
 
 ## 소개

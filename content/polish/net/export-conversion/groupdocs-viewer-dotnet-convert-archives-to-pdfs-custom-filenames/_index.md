@@ -4,8 +4,8 @@
 "title": "Konwertuj archiwa do plików PDF z niestandardowymi nazwami plików za pomocą GroupDocs.Viewer dla .NET"
 "url": "/pl/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # Konwertuj archiwa do plików PDF z niestandardowymi nazwami plików za pomocą GroupDocs.Viewer dla .NET
 
 ## Wstęp

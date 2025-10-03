@@ -5,8 +5,8 @@
 "title": "ページ区切りによるレンダリング"
 "url": "/ja/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # ページ区切りによるレンダリング
 
 ## 導入

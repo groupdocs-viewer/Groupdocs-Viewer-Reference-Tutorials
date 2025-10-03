@@ -4,8 +4,8 @@
 "title": "Render Dokumen Menggunakan GroupDocs.Viewer .NET dari Streams&#58; Panduan Lengkap untuk Pengembang"
 "url": "/id/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Render Dokumen Menggunakan GroupDocs.Viewer .NET dari Streams: Panduan Lengkap untuk Pengembang
 
 ## Perkenalan

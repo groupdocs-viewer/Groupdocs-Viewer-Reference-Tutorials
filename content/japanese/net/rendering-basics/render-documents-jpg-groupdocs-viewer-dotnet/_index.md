@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET でドキュメントを JPG に変換する方法 - 総合ガイド"
 "url": "/ja/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET でドキュメントを JPG に変換する: 総合ガイド
 
 ## 導入

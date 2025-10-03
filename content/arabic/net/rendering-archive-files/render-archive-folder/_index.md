@@ -5,8 +5,8 @@
 "title": "عرض مجلد الأرشيف"
 "url": "/ar/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # عرض مجلد الأرشيف
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "Afficher les en-têtes de ligne et de colonne"
 "url": "/fr/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Afficher les en-têtes de ligne et de colonne
 
 ## Introduction

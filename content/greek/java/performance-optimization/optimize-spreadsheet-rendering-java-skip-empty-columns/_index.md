@@ -4,8 +4,8 @@
 "title": "Βελτιστοποίηση απόδοσης υπολογιστικών φύλλων Java&#58; Παράλειψη κενών στηλών με το GroupDocs.Viewer"
 "url": "/el/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να βελτιστοποιήσετε την απόδοση υπολογιστικών φύλλων σε Java: Παράλειψη κενών στηλών με το GroupDocs.Viewer
 
 ## Εισαγωγή

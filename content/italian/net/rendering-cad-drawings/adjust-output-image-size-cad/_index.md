@@ -5,8 +5,8 @@
 "title": "Regola le dimensioni dell'immagine di output per i disegni CAD"
 "url": "/it/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Regola le dimensioni dell'immagine di output per i disegni CAD
 
 ## Introduzione

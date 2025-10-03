@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanılarak Java'da Belirli CAD Çizimleri Nasıl Oluşturulur"
 "url": "/tr/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanılarak Java'da Belirli CAD Çizimleri Nasıl Oluşturulur
 
 ## giriiş

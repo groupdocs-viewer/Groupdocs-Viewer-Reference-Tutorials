@@ -5,8 +5,8 @@
 "title": "Renderizando Números"
 "url": "/pt/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Renderizando Números
 
 ## Introdução

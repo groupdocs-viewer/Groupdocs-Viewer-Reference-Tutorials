@@ -4,8 +4,8 @@
 "title": "Převod PDF do PNG s původní velikostí pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/export-conversion/convert-pdfs-to-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Převod PDF do PNG s původní velikostí pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

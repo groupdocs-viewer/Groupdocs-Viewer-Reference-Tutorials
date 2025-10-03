@@ -4,8 +4,8 @@
 "title": "Dátum-idő formátumok és időzóna-eltolások testreszabása e-mailekben a GroupDocs.Viewer .NET segítségével"
 "url": "/hu/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Dátum-idő formátumok és időzónák testreszabása e-mailekben a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

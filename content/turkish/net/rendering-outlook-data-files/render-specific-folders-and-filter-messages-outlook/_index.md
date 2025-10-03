@@ -5,8 +5,8 @@
 "title": "Belirli Klasörleri Oluştur ve Mesajları Filtrele (Outlook)"
 "url": "/tr/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Belirli Klasörleri Oluştur ve Mesajları Filtrele (Outlook)
 
 ## giriiş

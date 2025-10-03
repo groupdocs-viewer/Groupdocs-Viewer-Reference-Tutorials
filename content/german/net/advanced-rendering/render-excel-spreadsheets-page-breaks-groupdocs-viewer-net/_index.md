@@ -4,8 +4,8 @@
 "title": "Rendern Sie Excel-Tabellen durch Seitenumbrüche mit GroupDocs.Viewer für .NET"
 "url": "/de/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendern Sie Excel-Tabellen durch Seitenumbrüche mit GroupDocs.Viewer für .NET
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Unduh File & Render Dokumen HTML dengan Mudah"
 "url": "/id/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai GroupDocs.Viewer .NET: Pengunduhan File dan Pemrosesan Dokumen yang Mudah
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "載入受密碼保護的文檔"
 "url": "/zh-hant/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # 載入受密碼保護的文檔
 
 ## 介紹

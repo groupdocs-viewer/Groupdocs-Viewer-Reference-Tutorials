@@ -4,8 +4,8 @@
 "title": "Wyodrębnij tekst z pliku PDF za pomocą GroupDocs.Viewer Java&#58; Kompleksowy przewodnik dla programistów"
 "url": "/pl/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Wyodrębnij tekst z pliku PDF za pomocą GroupDocs.Viewer Java
 
 ## Wstęp

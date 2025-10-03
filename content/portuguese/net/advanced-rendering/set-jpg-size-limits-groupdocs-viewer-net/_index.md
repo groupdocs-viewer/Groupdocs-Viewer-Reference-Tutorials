@@ -4,8 +4,8 @@
 "title": "Como definir limites máximos de tamanho de imagem JPG usando GroupDocs.Viewer .NET"
 "url": "/pt/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como definir limites máximos de tamanho de imagem JPG usando GroupDocs.Viewer .NET
 
 ## Introdução

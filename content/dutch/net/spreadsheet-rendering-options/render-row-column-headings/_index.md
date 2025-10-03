@@ -5,8 +5,8 @@
 "title": "Rij- en kolomkoppen weergeven"
 "url": "/nl/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Rij- en kolomkoppen weergeven
 
 ## Invoering

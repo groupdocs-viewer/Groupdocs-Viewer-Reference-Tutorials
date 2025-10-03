@@ -4,8 +4,8 @@
 "title": "Så här renderar du CDR-dokument med GroupDocs.Viewer för .NET - En omfattande guide"
 "url": "/sv/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar CDR-dokument med GroupDocs.Viewer för .NET
 
 ## Introduktion

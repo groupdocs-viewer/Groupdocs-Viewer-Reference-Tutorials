@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["outlook-files", "pst-rendering", "ost-files", "email-processing"]
+type: docs
 ---
-
 # How to Render Outlook PST Files in .NET Applications
 
 ## Introduction

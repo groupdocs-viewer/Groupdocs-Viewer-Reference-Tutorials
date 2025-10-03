@@ -4,8 +4,8 @@
 "title": "Afficher des dessins CAO au format JPG à l'aide de GroupDocs.Viewer Java - Un guide complet"
 "url": "/fr/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des dessins CAO au format JPG avec GroupDocs.Viewer Java : tutoriel étape par étape
 
 ## Introduction

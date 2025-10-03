@@ -4,8 +4,8 @@
 "title": "Implementace detekce souborů a kontrol šifrování v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Implementace detekce souborů a kontrol šifrování pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

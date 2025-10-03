@@ -5,8 +5,8 @@
 "title": "Ställ in gränser för bildstorlek"
 "url": "/sv/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Ställ in gränser för bildstorlek
 
 ## Introduktion

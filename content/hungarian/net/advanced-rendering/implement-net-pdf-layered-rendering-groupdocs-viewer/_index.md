@@ -4,8 +4,8 @@
 "title": "Sajátítsa el a .NET PDF réteges renderelését a GroupDocs.Viewer segítségével – lépésről lépésre útmutató"
 "url": "/hu/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # .NET PDF réteges renderelés elsajátítása a GroupDocs.Viewer segítségével: lépésről lépésre útmutató
 
 ## Bevezetés

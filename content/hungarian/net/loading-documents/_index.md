@@ -5,8 +5,8 @@
 "title": "Dokumentumok betöltése"
 "url": "/hu/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Dokumentumok betöltése
 
 ## Bevezetés

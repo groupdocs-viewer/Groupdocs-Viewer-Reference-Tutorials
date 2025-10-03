@@ -5,8 +5,8 @@
 "title": "Rétegek renderelése CAD rajzokban"
 "url": "/hu/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Rétegek renderelése CAD rajzokban
 
 ## Bevezetés

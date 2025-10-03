@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["visio", "net-api", "document-converter", "diagram-rendering"]
+type: docs
 ---
-
 # How to Render Visio Diagrams in .NET Applications
 
 ## Why Visio Diagram Rendering Matters in Modern Applications

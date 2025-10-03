@@ -5,8 +5,8 @@
 "title": "Rendera dokument till PDF"
 "url": "/sv/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Rendera dokument till PDF
 
 

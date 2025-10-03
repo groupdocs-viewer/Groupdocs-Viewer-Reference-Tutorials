@@ -4,8 +4,8 @@
 "title": "Verborgen rijen en kolommen in Excel-bestanden weergeven met GroupDocs.Viewer voor .NET - Geavanceerde handleiding"
 "url": "/nl/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Verborgen rijen en kolommen in Excel-bestanden weergeven met GroupDocs.Viewer voor .NET
 
 ## Invoering

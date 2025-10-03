@@ -8,10 +8,8 @@ keywords:
 - protect PDFs with GroupDocs.Viewer
 - password protection for PDFs in Java
 - configure PDF permissions using GroupDocs
-
+type: docs
 ---
-
-
 # Secure Your PDFs with GroupDocs.Viewer in Java
 
 ## Introduction

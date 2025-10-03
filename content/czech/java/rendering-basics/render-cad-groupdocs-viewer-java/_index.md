@@ -4,8 +4,8 @@
 "title": "Jak vykreslit specifické CAD výkresy v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit specifické CAD výkresy v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

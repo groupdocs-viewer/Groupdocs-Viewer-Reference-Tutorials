@@ -5,8 +5,8 @@
 "title": "Calques de rendu dans les dessins CAO"
 "url": "/fr/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Calques de rendu dans les dessins CAO
 
 ## Introduction

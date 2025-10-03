@@ -4,8 +4,8 @@
 "title": "जावा की सटीक रेंडरिंग तकनीकों के लिए GroupDocs.Viewer के साथ PDF में वर्ण समूहन अक्षम करें"
 "url": "/hi/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer के साथ PDF में वर्ण समूहन अक्षम करें
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสารโดยใช้ GroupDocs.Viewer .NET จาก Streams&#58; คู่มือครอบคลุมสำหรับนักพัฒนา"
 "url": "/th/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์เอกสารโดยใช้ GroupDocs.Viewer .NET จาก Streams: คู่มือที่ครอบคลุมสำหรับนักพัฒนา
 
 ## การแนะนำ

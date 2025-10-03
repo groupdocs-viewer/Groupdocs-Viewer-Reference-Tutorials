@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 限制 Java 中的 Outlook 專案渲染－綜合指南"
 "url": "/zh-hant/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 限制 Java 中的 Outlook 專案渲染
 
 ## 概述

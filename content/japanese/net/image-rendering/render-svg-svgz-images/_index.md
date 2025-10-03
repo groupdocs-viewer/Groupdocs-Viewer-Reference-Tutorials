@@ -5,8 +5,8 @@
 "title": "SVGおよびSVGZ画像のレンダリング"
 "url": "/ja/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # SVGおよびSVGZ画像のレンダリング
 
 ## 導入

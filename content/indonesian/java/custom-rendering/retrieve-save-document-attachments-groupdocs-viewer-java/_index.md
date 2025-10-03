@@ -4,8 +4,8 @@
 "title": "Cara Mengambil dan Menyimpan Lampiran Dokumen Menggunakan GroupDocs.Viewer untuk Java; Panduan Lengkap"
 "url": "/id/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengambil dan Menyimpan Lampiran Dokumen Menggunakan GroupDocs.Viewer untuk Java: Panduan Lengkap
 
 ## Perkenalan

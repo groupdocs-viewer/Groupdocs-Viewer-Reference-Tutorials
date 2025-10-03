@@ -4,8 +4,8 @@
 "title": "Renderizar PDF/OXPS com restrições de fonte usando GroupDocs.Viewer .NET - Um guia completo"
 "url": "/pt/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar PDF/OXPS com Restrições de Fonte Usando GroupDocs.Viewer .NET: Um Guia Completo
 
 ## Introdução

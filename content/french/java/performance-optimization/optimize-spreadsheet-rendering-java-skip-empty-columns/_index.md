@@ -4,8 +4,8 @@
 "title": "Optimiser le rendu des feuilles de calcul Java &#58; ignorer les colonnes vides avec GroupDocs.Viewer"
 "url": "/fr/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Comment optimiser le rendu d'une feuille de calcul en Java : ignorer les colonnes vides avec GroupDocs.Viewer
 
 ## Introduction

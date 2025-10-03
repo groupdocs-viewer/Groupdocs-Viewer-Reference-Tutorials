@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp Truevision TGA bằng GroupDocs.Viewer Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp Truevision TGA bằng GroupDocs.Viewer Java
 
 ## Giới thiệu

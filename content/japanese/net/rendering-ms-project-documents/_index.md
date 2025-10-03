@@ -5,8 +5,8 @@
 "title": "Microsoft Project ドキュメントのレンダリング"
 "url": "/ja/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Microsoft Project ドキュメントのレンダリング
 
 ## 導入

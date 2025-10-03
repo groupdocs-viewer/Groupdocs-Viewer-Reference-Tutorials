@@ -5,8 +5,8 @@
 "title": "Rendera CHM-filer"
 "url": "/sv/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Rendera CHM-filer
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "渲染 CMX 图像"
 "url": "/zh/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # 渲染 CMX 图像
 
 ## 介绍

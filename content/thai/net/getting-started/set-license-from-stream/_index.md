@@ -5,8 +5,8 @@
 "title": "ตั้งค่าใบอนุญาตจากสตรีม"
 "url": "/th/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # ตั้งค่าใบอนุญาตจากสตรีม
 
 ## การแนะนำ

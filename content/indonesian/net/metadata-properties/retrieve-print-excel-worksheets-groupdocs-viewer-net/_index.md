@@ -4,8 +4,8 @@
 "title": "Cara Mendapatkan dan Mencetak Nama Lembar Kerja Excel Menggunakan GroupDocs.Viewer untuk .NET (Panduan 2023)"
 "url": "/id/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mendapatkan dan Mencetak Nama Lembar Kerja Excel Menggunakan GroupDocs.Viewer untuk .NET: Panduan Lengkap
 
 ## Perkenalan

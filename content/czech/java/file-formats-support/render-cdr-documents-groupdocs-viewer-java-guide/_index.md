@@ -4,8 +4,8 @@
 "title": "Vykreslení souborů CDR pomocí GroupDocs.Viewer v Javě&#58; Kompletní průvodce konverzí HTML, JPG, PNG a PDF"
 "url": "/cs/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení souborů CDR pomocí GroupDocs.Viewer v Javě: Kompletní průvodce konverzí HTML, JPG, PNG a PDF
 
 Vítejte v tomto podrobném návodu na vykreslování dokumentů CorelDRAW (CDR) do různých formátů, jako jsou HTML, JPG, PNG a PDF, pomocí nástroje GroupDocs.Viewer pro Javu. Pokud pracujete s grafickými soubory a potřebujete bezproblémový způsob, jak je převádět napříč platformami, je tento návod vaším oblíbeným zdrojem.

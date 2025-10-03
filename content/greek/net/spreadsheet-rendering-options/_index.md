@@ -5,8 +5,8 @@
 "title": "Επιλογές απόδοσης υπολογιστικών φύλλων"
 "url": "/el/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Επιλογές απόδοσης υπολογιστικών φύλλων
 
 ## Εισαγωγή

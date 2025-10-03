@@ -4,8 +4,8 @@
 "title": "Como recuperar e imprimir nomes de planilhas do Excel usando o GroupDocs.Viewer para .NET (Guia de 2023)"
 "url": "/pt/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como recuperar e imprimir nomes de planilhas do Excel usando o GroupDocs.Viewer para .NET: um guia completo
 
 ## Introdução

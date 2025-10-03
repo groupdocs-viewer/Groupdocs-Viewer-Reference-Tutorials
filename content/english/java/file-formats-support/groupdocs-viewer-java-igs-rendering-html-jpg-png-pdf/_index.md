@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - Convert IGS Files
 - Render IGS Documents
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Viewer Java: Convert IGS Files to Multiple Formats
 
 ## Introduction

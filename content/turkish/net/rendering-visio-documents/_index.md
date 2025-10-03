@@ -5,8 +5,8 @@
 "title": "Visio Belgelerinin İşlenmesi"
 "url": "/tr/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Visio Belgelerinin İşlenmesi
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Metin Dosyalarını (.txt) Oluştur"
 "url": "/tr/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Metin Dosyalarını (.txt) Oluştur
 
 ## giriiş

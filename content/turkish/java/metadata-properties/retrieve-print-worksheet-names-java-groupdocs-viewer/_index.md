@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer API'sini Kullanarak Java'da Çalışma Sayfası Adlarını Ayıklama ve Görüntüleme"
 "url": "/tr/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer API'sini Kullanarak Java'da Çalışma Sayfası Adlarını Ayıklama ve Görüntüleme
 
 ## giriiş

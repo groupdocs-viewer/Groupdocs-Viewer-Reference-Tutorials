@@ -5,8 +5,8 @@
 "title": "CAD चित्रों के लिए आउटपुट छवि का आकार समायोजित करें"
 "url": "/hi/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # CAD चित्रों के लिए आउटपुट छवि का आकार समायोजित करें
 
 ## परिचय

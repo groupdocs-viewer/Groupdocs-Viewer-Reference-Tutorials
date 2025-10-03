@@ -4,8 +4,8 @@
 "title": "Rendering delle aree di stampa dei fogli di calcolo Java con GroupDocs.Viewer per Java&#58; una guida completa"
 "url": "/it/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Rendering delle aree di stampa dei fogli di calcolo Java con GroupDocs.Viewer per Java
 
 ## Introduzione

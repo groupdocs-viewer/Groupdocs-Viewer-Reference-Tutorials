@@ -5,8 +5,8 @@
 "title": "N개의 연속된 페이지 렌더링"
 "url": "/ko/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # N개의 연속된 페이지 렌더링
 
 ## 소개

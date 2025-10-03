@@ -5,8 +5,8 @@
 "title": "Obtener coordenadas de texto para la representación de imágenes"
 "url": "/es/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Obtener coordenadas de texto para la representación de imágenes
 
 ## Introducción

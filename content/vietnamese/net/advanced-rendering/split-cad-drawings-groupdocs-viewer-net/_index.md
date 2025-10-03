@@ -4,8 +4,8 @@
 "title": "Cách chia bản vẽ CAD thành các ô bằng GroupDocs.Viewer .NET để kết xuất hiệu quả"
 "url": "/vi/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách chia bản vẽ CAD thành các ô bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

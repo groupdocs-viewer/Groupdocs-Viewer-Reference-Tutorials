@@ -5,8 +5,8 @@
 "title": "Ακύρωση απόδοσης με διακριτικό ακύρωσης"
 "url": "/el/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Ακύρωση απόδοσης με διακριτικό ακύρωσης
 
 ## Εισαγωγή

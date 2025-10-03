@@ -5,8 +5,8 @@
 "title": "Vykreslení s překrytím textu pro zobrazení"
 "url": "/cs/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Vykreslení s překrytím textu pro zobrazení
 
 ## Zavedení

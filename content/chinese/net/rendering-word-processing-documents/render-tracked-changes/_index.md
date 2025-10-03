@@ -5,8 +5,8 @@
 "title": "渲染跟踪的更改"
 "url": "/zh/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # 渲染跟踪的更改
 
 ## 介绍

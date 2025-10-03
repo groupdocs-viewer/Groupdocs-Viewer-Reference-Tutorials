@@ -5,8 +5,8 @@
 "title": "Opcje renderowania arkusza kalkulacyjnego"
 "url": "/pl/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Opcje renderowania arkusza kalkulacyjnego
 
 ## Wstęp

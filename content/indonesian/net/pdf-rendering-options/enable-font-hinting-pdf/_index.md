@@ -5,8 +5,8 @@
 "title": "Aktifkan Petunjuk Font di PDF"
 "url": "/id/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Aktifkan Petunjuk Font di PDF
 
 ## Perkenalan

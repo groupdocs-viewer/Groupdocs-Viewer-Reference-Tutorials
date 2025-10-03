@@ -4,8 +4,8 @@
 "title": "Comment définir la licence Java de GroupDocs.Viewer ? Guide de fichier local ou d'URL"
 "url": "/fr/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # Comment définir la licence Java de GroupDocs.Viewer : fichier local ou URL
 
 Exploitez tout le potentiel de GroupDocs.Viewer pour vos applications Java en configurant votre licence depuis un fichier local ou une ressource en ligne. Ce guide complet vous aidera à mettre en œuvre efficacement ces deux méthodes, vous garantissant ainsi l'accès à toutes les fonctionnalités de ce puissant outil de visualisation de documents.

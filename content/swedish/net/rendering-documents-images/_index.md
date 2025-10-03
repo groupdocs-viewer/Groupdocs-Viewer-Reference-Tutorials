@@ -5,8 +5,8 @@
 "title": "Rendera dokument till bilder"
 "url": "/sv/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Rendera dokument till bilder
 
 ## Introduktion

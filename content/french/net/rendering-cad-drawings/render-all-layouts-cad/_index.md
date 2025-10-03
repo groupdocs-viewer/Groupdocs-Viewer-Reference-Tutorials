@@ -5,8 +5,8 @@
 "title": "Rendre toutes les dispositions dans les dessins CAO"
 "url": "/fr/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Rendre toutes les dispositions dans les dessins CAO
 
 ## Introduction

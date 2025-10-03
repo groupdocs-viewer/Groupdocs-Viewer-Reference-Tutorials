@@ -4,8 +4,8 @@
 "title": "Effektiv rendering av utskriftsområden i Excel med GroupDocs.Viewer för .NET"
 "url": "/sv/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Effektiv rendering av utskriftsområden i Excel med GroupDocs.Viewer för .NET
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "Outlook データ ファイル (PST、OST) の表示情報を取得する"
 "url": "/ja/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Outlook データ ファイル (PST、OST) の表示情報を取得する
 
 ## 導入

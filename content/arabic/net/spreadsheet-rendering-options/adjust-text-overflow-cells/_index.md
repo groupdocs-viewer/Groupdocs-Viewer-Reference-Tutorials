@@ -5,8 +5,8 @@
 "title": "ضبط تجاوز النص في الخلايا"
 "url": "/ar/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # ضبط تجاوز النص في الخلايا
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "Datums./Uhrzeitformat und Zeitzonenverschiebung festlegen (E-Mail)"
 "url": "/de/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Datums./Uhrzeitformat und Zeitzonenverschiebung festlegen (E-Mail)
 
 

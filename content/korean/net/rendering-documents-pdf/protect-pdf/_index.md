@@ -5,8 +5,8 @@
 "title": "암호로 렌더링된 PDF 보호"
 "url": "/ko/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # 암호로 렌더링된 PDF 보호
 
 ## 소개

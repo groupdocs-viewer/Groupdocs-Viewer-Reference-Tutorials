@@ -5,8 +5,8 @@
 "title": "特定のフォルダーをレンダリングしてメッセージをフィルターする (Outlook)"
 "url": "/ja/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # 特定のフォルダーをレンダリングしてメッセージをフィルターする (Outlook)
 
 ## 導入

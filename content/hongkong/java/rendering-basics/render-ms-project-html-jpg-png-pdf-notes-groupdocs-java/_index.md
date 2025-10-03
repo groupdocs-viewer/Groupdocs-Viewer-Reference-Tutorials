@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 將 MS Project 檔案渲染為帶有註解的 HTML、JPG、PNG 和 PDF"
 "url": "/zh-hant/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 將 MS Project 檔案渲染為帶有註解的 HTML、JPG、PNG 和 PDF
 
 ## 介紹

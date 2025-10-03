@@ -4,8 +4,8 @@
 "title": "Licentiebeheer in GroupDocs.Viewer voor .NET onder de knie krijgen&#58; een uitgebreide handleiding"
 "url": "/nl/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Licentiebeheer onder de knie krijgen in GroupDocs.Viewer voor .NET
 ## Een uitgebreide gids
 

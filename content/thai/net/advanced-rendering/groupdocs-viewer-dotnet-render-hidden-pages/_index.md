@@ -4,8 +4,8 @@
 "title": "เรนเดอร์หน้าที่ซ่อนอยู่ในเอกสารโดยใช้ GroupDocs.Viewer สำหรับ .NET คำแนะนำทีละขั้นตอน"
 "url": "/th/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์หน้าที่ซ่อนอยู่ในเอกสารโดยใช้ GroupDocs.Viewer สำหรับ .NET: คำแนะนำทีละขั้นตอน
 
 ## การแนะนำ

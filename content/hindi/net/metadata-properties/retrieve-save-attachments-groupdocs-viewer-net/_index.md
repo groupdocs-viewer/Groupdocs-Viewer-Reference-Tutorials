@@ -4,8 +4,8 @@
 "title": "कुशल मेटाडेटा प्रबंधन के लिए GroupDocs.Viewer .NET का उपयोग करके दस्तावेज़ अनुलग्नक को कैसे पुनर्प्राप्त करें और सहेजें"
 "url": "/hi/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके दस्तावेज़ अनुलग्नक को कैसे पुनर्प्राप्त करें और सहेजें
 
 ## परिचय

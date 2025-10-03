@@ -4,8 +4,8 @@
 "title": "Rejtett oldalak renderelése dokumentumokban a GroupDocs.Viewer for .NET használatával – lépésről lépésre útmutató"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Rejtett oldalak renderelése dokumentumokban a GroupDocs.Viewer for .NET használatával: lépésről lépésre útmutató
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "Визуализация единого макета в чертежах САПР"
 "url": "/ru/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Визуализация единого макета в чертежах САПР
 
 ## Введение

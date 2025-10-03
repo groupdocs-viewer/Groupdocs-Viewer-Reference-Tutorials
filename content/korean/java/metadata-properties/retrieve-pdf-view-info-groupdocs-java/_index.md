@@ -4,8 +4,8 @@
 "title": "Java에서 GroupDocs.Viewer를 사용하여 PDF 메타데이터 및 속성 검색하기 - 단계별 가이드"
 "url": "/ko/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java에서 GroupDocs.Viewer를 사용하여 PDF 메타데이터 및 속성 검색
 
 Java 기반 GroupDocs.Viewer 라이브러리를 사용하여 PDF 문서에서 뷰 정보를 가져오는 방법에 대한 포괄적인 가이드에 오신 것을 환영합니다. PDF 파일에서 페이지 수, 문서 유형, 권한 등의 세부 정보를 프로그래밍 방식으로 추출하고 싶다면, 이 가이드가 딱 맞습니다.

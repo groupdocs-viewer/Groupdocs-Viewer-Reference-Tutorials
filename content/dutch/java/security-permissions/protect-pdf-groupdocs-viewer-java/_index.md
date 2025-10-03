@@ -4,8 +4,8 @@
 "title": "Beveilig uw PDF's met GroupDocs.Viewer in Java&#58; handleiding voor wachtwoordbeveiliging en machtigingen"
 "url": "/nl/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Beveilig uw PDF's met GroupDocs.Viewer in Java
 
 ## Invoering

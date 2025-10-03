@@ -5,8 +5,8 @@
 "title": "TGA画像のレンダリング"
 "url": "/ja/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # TGA画像のレンダリング
 
 ## 導入

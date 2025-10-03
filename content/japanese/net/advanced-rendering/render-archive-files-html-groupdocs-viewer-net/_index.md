@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用してアーカイブ ファイルを HTML に変換する方法 - ステップバイステップ ガイド"
 "url": "/ja/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用してアーカイブ ファイルを HTML に変換する方法: ステップバイステップ ガイド
 ## 導入
 RARやZIPなどのアーカイブファイルをWebページで表示するのに苦労していませんか？これらの複雑なファイル形式をユーザーフレンドリーなHTMLドキュメントに変換することは、シームレスなコンテンツ配信に不可欠です。GroupDocs.Viewer for .NETを使えば、この作業は簡単かつ効率的になります。

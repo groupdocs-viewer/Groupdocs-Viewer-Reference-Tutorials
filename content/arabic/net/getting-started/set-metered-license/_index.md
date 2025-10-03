@@ -5,8 +5,8 @@
 "title": "تعيين ترخيص مقنن"
 "url": "/ar/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # تعيين ترخيص مقنن
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "كيفية تغيير حجم الصور باستخدام GroupDocs.Viewer .NET - دليل خطوة بخطوة للمطورين"
 "url": "/ar/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تغيير حجم الصور باستخدام GroupDocs.Viewer .NET: دليل خطوة بخطوة للمطورين
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer Kullanarak AI Dosyalarını Oluşturun - Kapsamlı Bir Kılavuz"
 "url": "/tr/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanarak AI Dosyalarını Oluşturma: Kapsamlı Bir Kılavuz
 
 ## giriiş

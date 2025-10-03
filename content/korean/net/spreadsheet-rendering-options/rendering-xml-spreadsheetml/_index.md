@@ -5,8 +5,8 @@
 "title": "XML SpreadSheetML 렌더링"
 "url": "/ko/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # XML SpreadSheetML 렌더링
 
 ## 소개

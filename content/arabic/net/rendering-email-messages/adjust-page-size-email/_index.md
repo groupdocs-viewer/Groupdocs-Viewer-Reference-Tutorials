@@ -5,8 +5,8 @@
 "title": "ضبط حجم الصفحة عند عرض رسائل البريد الإلكتروني"
 "url": "/ar/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # ضبط حجم الصفحة عند عرض رسائل البريد الإلكتروني
 
 ## مقدمة

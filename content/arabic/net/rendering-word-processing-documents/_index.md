@@ -5,8 +5,8 @@
 "title": "عرض مستندات معالجة النصوص"
 "url": "/ar/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # عرض مستندات معالجة النصوص
 
 

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用して EMZ/EMF ファイルをレンダリングする方法 - ステップバイステップガイド"
 "url": "/ja/java/rendering-basics/render-emz-emf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 総合ガイド: GroupDocs.Viewer for Java で EMZ/EMF ファイルをレンダリングする
 
 ## 導入

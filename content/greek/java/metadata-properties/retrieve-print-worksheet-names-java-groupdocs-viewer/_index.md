@@ -4,8 +4,8 @@
 "title": "Εξαγωγή και εμφάνιση ονομάτων φύλλων εργασίας σε Java χρησιμοποιώντας το GroupDocs.Viewer API"
 "url": "/el/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Εξαγωγή και εμφάνιση ονομάτων φύλλων εργασίας σε Java χρησιμοποιώντας το GroupDocs.Viewer API
 
 ## Εισαγωγή

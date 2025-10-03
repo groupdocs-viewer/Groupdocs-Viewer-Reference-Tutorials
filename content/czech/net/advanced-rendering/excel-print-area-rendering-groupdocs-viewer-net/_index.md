@@ -4,8 +4,8 @@
 "title": "Efektivní vykreslování tiskové oblasti v Excelu pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Efektivní vykreslování tiskové oblasti v Excelu pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 渲染 MS Project 文件以增強專案管理"
 "url": "/zh-hant/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 掌握如何使用 GroupDocs.Viewer .NET 渲染 MS Project 文檔
 
 ## 介紹

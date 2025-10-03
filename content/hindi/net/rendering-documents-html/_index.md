@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ों को HTML में प्रस्तुत करना"
 "url": "/hi/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # दस्तावेज़ों को HTML में प्रस्तुत करना
 
 

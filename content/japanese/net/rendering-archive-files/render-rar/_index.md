@@ -5,8 +5,8 @@
 "title": "RARアーカイブのレンダリング"
 "url": "/ja/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # RARアーカイブのレンダリング
 
 ## 導入

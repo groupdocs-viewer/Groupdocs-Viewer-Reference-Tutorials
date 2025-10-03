@@ -4,8 +4,8 @@
 "title": "Implementieren von Dateierkennung und Verschlüsselungsprüfungen in Java mit GroupDocs.Viewer"
 "url": "/de/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Implementieren von Dateierkennung und Verschlüsselungsprüfungen mit GroupDocs.Viewer für Java
 
 ## Einführung

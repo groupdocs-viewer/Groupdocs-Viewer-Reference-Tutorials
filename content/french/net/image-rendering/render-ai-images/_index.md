@@ -5,8 +5,8 @@
 "title": "Rendu d'images IA"
 "url": "/fr/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Rendu d'images IA
 
 ## Introduction

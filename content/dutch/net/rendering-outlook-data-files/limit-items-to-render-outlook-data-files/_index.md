@@ -5,8 +5,8 @@
 "title": "Beperk het aantal items dat wordt weergegeven in Outlook-gegevensbestanden"
 "url": "/nl/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Beperk het aantal items dat wordt weergegeven in Outlook-gegevensbestanden
 
 ## Invoering

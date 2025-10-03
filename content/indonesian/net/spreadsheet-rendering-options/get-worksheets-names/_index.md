@@ -5,8 +5,8 @@
 "title": "Dapatkan Nama Lembar Kerja"
 "url": "/id/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Dapatkan Nama Lembar Kerja
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Hogyan konvertálhatunk DOCX fájlokat PNG-vé a GroupDocs.Viewer for Java használatával?"
 "url": "/hu/java/rendering-basics/render-docx-png-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan konvertálhatunk DOCX fájlokat PNG-vé a GroupDocs.Viewer for Java használatával?
 
 ## Bevezetés

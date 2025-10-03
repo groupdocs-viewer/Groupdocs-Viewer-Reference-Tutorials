@@ -5,8 +5,8 @@
 "title": "从 FTP 加载文档（高级）"
 "url": "/zh/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # 从 FTP 加载文档（高级）
 
 ## 介绍

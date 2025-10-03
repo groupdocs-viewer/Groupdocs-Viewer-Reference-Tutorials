@@ -5,8 +5,8 @@
 "title": "Renderizar con fuentes personalizadas"
 "url": "/es/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Renderizar con fuentes personalizadas
 
 ## Introducción

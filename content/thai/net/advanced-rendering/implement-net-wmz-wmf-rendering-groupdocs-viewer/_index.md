@@ -4,8 +4,8 @@
 "title": "นำการเรนเดอร์ WMZ/WMF ของ .NET ไปใช้กับ GroupDocs.Viewer เพื่อความเข้ากันได้กับเว็บและแพลตฟอร์มข้ามแพลตฟอร์ม"
 "url": "/th/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # นำการเรนเดอร์ WMZ/WMF ของ .NET ไปใช้กับ GroupDocs.Viewer เพื่อความเข้ากันได้กับเว็บและแพลตฟอร์มข้ามแพลตฟอร์ม
 
 ## การแนะนำ

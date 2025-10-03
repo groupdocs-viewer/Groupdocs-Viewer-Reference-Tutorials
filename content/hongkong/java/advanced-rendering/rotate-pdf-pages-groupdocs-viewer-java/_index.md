@@ -4,8 +4,8 @@
 "title": "使用 Java 中的 GroupDocs.Viewer 旋轉特定 PDF 頁面—綜合指南"
 "url": "/zh-hant/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 Java 中的 GroupDocs.Viewer 旋轉特定的 PDF 頁面
 
 ## 介紹

@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके HTML आउटपुट से विशिष्ट फ़ॉन्ट्स को कैसे बाहर निकालें"
 "url": "/hi/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके HTML आउटपुट से फ़ॉन्ट्स को कैसे बाहर निकालें
 
 ## परिचय

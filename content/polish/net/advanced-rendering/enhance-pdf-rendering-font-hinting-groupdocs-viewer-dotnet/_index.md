@@ -4,8 +4,8 @@
 "title": "Ulepsz renderowanie PDF w .NET i włącz podpowiedzi dotyczące czcionek za pomocą GroupDocs.Viewer"
 "url": "/pl/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak ulepszyć renderowanie PDF w .NET za pomocą GroupDocs.Viewer: Włącz podpowiedzi dotyczące czcionek
 
 ## Wstęp

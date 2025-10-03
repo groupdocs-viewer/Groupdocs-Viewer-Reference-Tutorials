@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ตัวเลข"
 "url": "/th/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # การเรนเดอร์ตัวเลข
 
 ## การแนะนำ

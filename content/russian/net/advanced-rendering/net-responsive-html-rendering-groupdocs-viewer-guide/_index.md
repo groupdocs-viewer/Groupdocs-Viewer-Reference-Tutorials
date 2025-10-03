@@ -4,8 +4,8 @@
 "title": "Реализуйте адаптивный рендеринг HTML .NET с помощью GroupDocs.Viewer&#58; Полное руководство для разработчиков"
 "url": "/ru/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Реализация адаптивного рендеринга HTML .NET с помощью GroupDocs.Viewer: руководство разработчика
 
 ## Введение

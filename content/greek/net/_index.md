@@ -5,8 +5,8 @@
 "title": "Πλήρη σεμινάρια και παραδείγματα του GroupDocs.Viewer για .NET"
 "url": "/el/net/"
 "weight": 10
+type: docs
 ---
-
 # Πλήρη σεμινάρια και παραδείγματα του GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

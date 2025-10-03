@@ -5,8 +5,8 @@
 "title": "CAD चित्रों में परतें प्रस्तुत करना"
 "url": "/hi/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # CAD चित्रों में परतें प्रस्तुत करना
 
 ## परिचय

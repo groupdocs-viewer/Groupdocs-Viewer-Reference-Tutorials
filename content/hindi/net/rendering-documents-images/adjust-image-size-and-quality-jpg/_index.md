@@ -5,8 +5,8 @@
 "title": "छवि का आकार और गुणवत्ता समायोजित करें (JPG)"
 "url": "/hi/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # छवि का आकार और गुणवत्ता समायोजित करें (JPG)
 
 ## परिचय

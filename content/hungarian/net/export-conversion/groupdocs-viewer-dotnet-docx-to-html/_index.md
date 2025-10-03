@@ -4,8 +4,8 @@
 "title": "DOCX konvertálása HTML-lé a GroupDocs.Viewer for .NET használatával – Átfogó útmutató"
 "url": "/hu/net/export-conversion/groupdocs-viewer-dotnet-docx-to-html/"
 "weight": 1
+type: docs
 ---
-
 # DOCX konvertálása interaktív HTML-lé a GroupDocs.Viewer for .NET segítségével
 
 ## Bevezetés

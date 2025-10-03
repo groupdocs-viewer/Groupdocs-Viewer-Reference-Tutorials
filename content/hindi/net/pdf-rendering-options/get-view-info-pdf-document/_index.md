@@ -5,8 +5,8 @@
 "title": "पीडीएफ दस्तावेज़ के लिए दृश्य जानकारी प्राप्त करें"
 "url": "/hi/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # पीडीएफ दस्तावेज़ के लिए दृश्य जानकारी प्राप्त करें
 
 ## परिचय

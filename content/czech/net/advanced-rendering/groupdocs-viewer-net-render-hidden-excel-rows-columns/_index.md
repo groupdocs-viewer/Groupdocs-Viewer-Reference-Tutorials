@@ -4,8 +4,8 @@
 "title": "Vykreslení skrytých řádků a sloupců v souborech aplikace Excel pomocí nástroje GroupDocs.Viewer pro .NET – Průvodce pro pokročilé"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení skrytých řádků a sloupců v souborech aplikace Excel pomocí nástroje GroupDocs.Viewer pro .NET
 
 ## Zavedení

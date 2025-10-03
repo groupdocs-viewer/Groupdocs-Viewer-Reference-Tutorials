@@ -5,8 +5,8 @@
 "title": "調整影像大小和品質 (JPG)"
 "url": "/zh-hant/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # 調整影像大小和品質 (JPG)
 
 ## 介紹

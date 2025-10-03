@@ -5,8 +5,8 @@
 "title": "Rendera utskriftsområden med GroupDocs.Viewer för .NET"
 "url": "/sv/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Rendera utskriftsområden med GroupDocs.Viewer för .NET
 
 ## Introduktion

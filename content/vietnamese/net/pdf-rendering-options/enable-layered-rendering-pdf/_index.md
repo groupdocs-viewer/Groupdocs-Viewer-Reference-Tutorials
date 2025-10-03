@@ -5,8 +5,8 @@
 "title": "Bật tính năng kết xuất theo lớp trong PDF"
 "url": "/vi/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Bật tính năng kết xuất theo lớp trong PDF
 
 ## Giới thiệu

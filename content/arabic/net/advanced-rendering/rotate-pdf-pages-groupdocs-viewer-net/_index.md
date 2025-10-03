@@ -4,8 +4,8 @@
 "title": "كيفية تدوير صفحات PDF باستخدام GroupDocs.Viewer لـ .NET - دليل المطور"
 "url": "/ar/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تدوير صفحات PDF باستخدام GroupDocs.Viewer لـ .NET: دليل المطور
 
 ## مقدمة

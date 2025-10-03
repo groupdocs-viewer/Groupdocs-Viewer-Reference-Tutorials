@@ -4,8 +4,8 @@
 "title": "Implementeer .NET Responsive HTML Rendering met GroupDocs.Viewer&#58; een uitgebreide handleiding voor ontwikkelaars"
 "url": "/nl/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementeer .NET Responsive HTML-rendering met GroupDocs.Viewer: een handleiding voor ontwikkelaars
 
 ## Invoering

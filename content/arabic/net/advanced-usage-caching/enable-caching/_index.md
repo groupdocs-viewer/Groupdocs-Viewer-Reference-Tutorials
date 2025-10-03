@@ -5,8 +5,8 @@
 "title": "تمكين التخزين المؤقت لمعالجة المستندات بشكل أسرع"
 "url": "/ar/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # تمكين التخزين المؤقت لمعالجة المستندات بشكل أسرع
 
 ## مقدمة

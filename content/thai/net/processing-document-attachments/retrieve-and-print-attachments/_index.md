@@ -5,8 +5,8 @@
 "title": "เรียกค้นและพิมพ์เอกสารแนบ"
 "url": "/th/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # เรียกค้นและพิมพ์เอกสารแนบ
 
 ## การแนะนำ

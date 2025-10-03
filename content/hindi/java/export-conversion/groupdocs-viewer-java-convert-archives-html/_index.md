@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58; के साथ अभिलेखागार को HTML में परिवर्तित करें एक व्यापक गाइड"
 "url": "/hi/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java के साथ अभिलेखागार को HTML में बदलें: एक व्यापक गाइड
 
 ## परिचय

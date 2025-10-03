@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して CAD レイアウトとレイヤーを取得し、効率的な設計管理を行う方法"
 "url": "/ja/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して CAD レイアウトとレイヤーを取得する方法
 ## 導入
 コンピュータ支援設計（CAD）の分野では、複雑な図面を効率的に管理することが非常に重要です。特に、単一のファイル内で複数のレイアウトやレイヤーを扱う場合はなおさらです。建築家、エンジニア、デザイナーにとって、特定の情報に迅速にアクセスできることは生産性の向上につながります。 **GroupDocs.Viewer .NET** 開発者が CAD 図面からレイアウトとレイヤーをプログラムで抽出できるようにすることで、強力なソリューションを提供します。

@@ -4,8 +4,8 @@
 "title": "使用 Java 中的 GroupDocs.Viewer 保护您的 PDF 及其密码保护和权限指南"
 "url": "/zh/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 Java 中的 GroupDocs.Viewer 保护您的 PDF
 
 ## 介绍

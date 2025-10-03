@@ -4,8 +4,8 @@
 "title": "Menerapkan Rendering .NET WMZ/WMF dengan GroupDocs.Viewer untuk Kompatibilitas Web dan Lintas Platform"
 "url": "/id/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Rendering .NET WMZ/WMF dengan GroupDocs.Viewer untuk Kompatibilitas Web dan Lintas Platform
 
 ## Perkenalan

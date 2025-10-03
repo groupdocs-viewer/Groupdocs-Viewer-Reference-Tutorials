@@ -5,8 +5,8 @@
 "title": "Tải tài liệu từ FTP (Nâng cao)"
 "url": "/vi/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Tải tài liệu từ FTP (Nâng cao)
 
 ## Giới thiệu

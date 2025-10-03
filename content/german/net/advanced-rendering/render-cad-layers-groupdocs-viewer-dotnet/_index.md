@@ -4,8 +4,8 @@
 "title": "So rendern Sie bestimmte CAD-Ebenen mit GroupDocs.Viewer für .NET – Ein umfassender Leitfaden"
 "url": "/de/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # So rendern Sie bestimmte CAD-Zeichnungsebenen mit GroupDocs.Viewer für .NET
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "عرض HTML المتجاوب باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # عرض HTML المستجيب باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

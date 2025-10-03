@@ -5,8 +5,8 @@
 "title": "गायब फ़ॉन्ट बदलें"
 "url": "/hi/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # गायब फ़ॉन्ट बदलें
 
 ## परिचय

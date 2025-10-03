@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ภาพ FODG และ ODG"
 "url": "/th/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # เรนเดอร์ภาพ FODG และ ODG
 
 ## การแนะนำ

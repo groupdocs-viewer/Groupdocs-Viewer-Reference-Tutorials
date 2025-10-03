@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 将 PPTX 转换为带有注释的 HTML"
 "url": "/zh/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 将 PPTX 演示文稿转换为带有注释的 HTML
 
 ## 介绍

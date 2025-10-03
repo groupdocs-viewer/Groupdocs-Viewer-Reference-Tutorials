@@ -4,8 +4,8 @@
 "title": "การแยกและแสดงชื่อเวิร์กชีตใน Java โดยใช้ GroupDocs.Viewer API"
 "url": "/th/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # การแยกและแสดงชื่อเวิร์กชีตใน Java โดยใช้ GroupDocs.Viewer API
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "Απόδοση αρχείων PST και OST του Outlook σε HTML χρησιμοποιώντας Java και GroupDocs.Viewer"
 "url": "/el/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία δεδομένων του Outlook σε HTML χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

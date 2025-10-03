@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile CDR Dosyalarını Oluşturun Java&#58; HTML, JPG, PNG ve PDF Dönüştürme için Tam Kılavuz"
 "url": "/tr/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java ile CDR Dosyalarını Oluşturun: HTML, JPG, PNG ve PDF Dönüştürme için Tam Kılavuz
 
 CorelDRAW (CDR) belgelerini GroupDocs.Viewer for Java kullanarak HTML, JPG, PNG ve PDF gibi çeşitli biçimlere dönüştürmeye yönelik bu ayrıntılı kılavuza hoş geldiniz. Grafik dosyalarıyla uğraşıyorsanız ve bunları platformlar arasında sorunsuz bir şekilde dönüştürmenin bir yoluna ihtiyacınız varsa, bu eğitim sizin için vazgeçilmez bir kaynaktır.

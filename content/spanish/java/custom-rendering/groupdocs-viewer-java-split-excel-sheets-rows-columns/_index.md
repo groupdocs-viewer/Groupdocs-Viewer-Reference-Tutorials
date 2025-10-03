@@ -4,8 +4,8 @@
 "title": "Dividir hojas de Excel por filas y columnas con GroupDocs.Viewer en Java&#58; una guía completa"
 "url": "/es/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Cómo dividir hojas de Excel en filas y columnas con GroupDocs.Viewer en Java
 
 ## Introducción

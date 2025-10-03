@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के प्रदर्शन सुझावों और तकनीकों के साथ .NET में Outlook डेटा रेंडरिंग को अनुकूलित करें"
 "url": "/hi/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ Outlook डेटा रेंडरिंग को अनुकूलित करें
 
 ## परिचय

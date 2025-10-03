@@ -5,8 +5,8 @@
 "title": "Vykreslení specifických složek a filtrování zpráv (Outlook)"
 "url": "/cs/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Vykreslení specifických složek a filtrování zpráv (Outlook)
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET - تنزيل الملفات وعرض مستندات HTML بسهولة"
 "url": "/ar/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # إتقان GroupDocs.Viewer .NET: تنزيل الملفات وعرض المستندات بسهولة
 
 ## مقدمة

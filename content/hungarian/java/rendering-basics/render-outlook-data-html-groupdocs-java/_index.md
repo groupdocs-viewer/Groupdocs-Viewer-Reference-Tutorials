@@ -4,8 +4,8 @@
 "title": "Outlook PST és OST fájlok HTML formátumba renderelése Java és GroupDocs.Viewer használatával"
 "url": "/hu/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Outlook adatfájlok HTML formátumba renderelése a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

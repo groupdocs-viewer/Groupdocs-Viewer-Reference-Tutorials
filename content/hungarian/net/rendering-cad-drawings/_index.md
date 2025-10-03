@@ -5,8 +5,8 @@
 "title": "CAD rajzok renderelése"
 "url": "/hu/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # CAD rajzok renderelése
 
 

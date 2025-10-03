@@ -4,8 +4,8 @@
 "title": "如何在 GroupDocs.Viewer for Java 中實作文件類型規格－逐步指南"
 "url": "/zh-hant/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何在 GroupDocs.Viewer for Java 中實作文件類型規範
 
 有關使用 GroupDocs.Viewer for Java 呈現 DOCX 檔案的檔案類型的逐步指南。

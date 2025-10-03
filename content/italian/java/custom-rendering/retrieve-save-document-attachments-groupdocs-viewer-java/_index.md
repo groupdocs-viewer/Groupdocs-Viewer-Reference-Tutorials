@@ -4,8 +4,8 @@
 "title": "Come recuperare e salvare gli allegati dei documenti utilizzando GroupDocs.Viewer per Java&#58; una guida completa"
 "url": "/it/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Come recuperare e salvare gli allegati dei documenti utilizzando GroupDocs.Viewer per Java: una guida completa
 
 ## Introduzione

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["document-rendering", "file-conversion", "java-api", "groupdocs-viewer"]
+type: docs
 ---
-
 # Java Document Rendering Tutorial - Convert Files to HTML, PDF & Images
 
 If you're building applications that need to display, convert, or process various document formats, you've come to the right place. This comprehensive tutorial collection shows you how to master document rendering in Java using GroupDocs.Viewer - from simple file conversions to advanced rendering techniques.

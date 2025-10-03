@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 텍스트 레이어가 있는 이미지로 문서 렌더링"
 "url": "/ko/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 텍스트 레이어가 있는 이미지로 문서 렌더링
 ## 고급 렌더링 튜토리얼
 **현재 SEO URL**: /렌더-문서를-이미지를-텍스트-레이어-자바로-만들기

@@ -5,8 +5,8 @@
 "title": "Habilitar dicas de fonte em PDF"
 "url": "/pt/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Habilitar dicas de fonte em PDF
 
 ## Introdução

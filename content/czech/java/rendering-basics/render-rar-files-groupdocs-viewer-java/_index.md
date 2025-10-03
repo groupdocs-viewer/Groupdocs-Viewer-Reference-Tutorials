@@ -4,8 +4,8 @@
 "title": "Renderování souborů RAR do HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/rendering-basics/render-rar-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderování souborů RAR do různých formátů pomocí GroupDocs.Viewer pro Javu
 
 Odemkněte potenciál svých archivů RAR jejich transformací do přístupných formátů, jako je HTML, JPG, PNG a PDF, pomocí nástroje GroupDocs.Viewer pro Javu. Tento tutoriál vás provede jednotlivými kroky a umožní vám bezproblémovou správu a prezentaci dokumentů.

@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET! Ενσωματώστε γραμματοσειρές και μετατρέψτε έγγραφα σε HTML αποτελεσματικά"
 "url": "/el/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Εξοικείωση με την απόδοση εγγράφων με το GroupDocs.Viewer .NET: Ενσωμάτωση γραμματοσειρών και μετατροπή σε HTML
 
 ## Εισαγωγή

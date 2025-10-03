@@ -4,8 +4,8 @@
 "title": "Outlook OST-bestanden renderen met GroupDocs.Viewer voor .NET | Stapsgewijze handleiding"
 "url": "/nl/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Outlook OST-bestanden renderen met GroupDocs.Viewer voor .NET: een uitgebreide stapsgewijze handleiding
 
 ## Invoering

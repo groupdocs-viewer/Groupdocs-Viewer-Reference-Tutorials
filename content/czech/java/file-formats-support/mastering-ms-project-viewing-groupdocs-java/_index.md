@@ -4,8 +4,8 @@
 "title": "Zvládněte prohlížení MS projektů v Javě pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí prohlížení dokumentů MS Project pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

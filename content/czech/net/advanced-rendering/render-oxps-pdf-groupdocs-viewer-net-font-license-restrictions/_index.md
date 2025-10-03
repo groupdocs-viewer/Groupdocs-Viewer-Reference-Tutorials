@@ -4,8 +4,8 @@
 "title": "Vykreslení PDF/OXPS s omezeními písma pomocí GroupDocs.Viewer .NET – Komplexní průvodce"
 "url": "/cs/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení PDF/OXPS s omezeními písma pomocí GroupDocs.Viewer .NET: Komplexní průvodce
 
 ## Zavedení

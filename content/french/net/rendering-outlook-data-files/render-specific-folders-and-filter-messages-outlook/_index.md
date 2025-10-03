@@ -5,8 +5,8 @@
 "title": "Afficher des dossiers spécifiques et filtrer les messages (Outlook)"
 "url": "/fr/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Afficher des dossiers spécifiques et filtrer les messages (Outlook)
 
 ## Introduction

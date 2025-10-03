@@ -5,8 +5,8 @@
 "title": "Zadejte typ souboru při načítání dokumentů"
 "url": "/cs/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Zadejte typ souboru při načítání dokumentů
 
 ## Zavedení

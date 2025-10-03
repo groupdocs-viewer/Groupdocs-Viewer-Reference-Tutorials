@@ -5,8 +5,8 @@
 "title": "Renderizar cabeçalhos de linhas e colunas"
 "url": "/pt/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Renderizar cabeçalhos de linhas e colunas
 
 ## Introdução

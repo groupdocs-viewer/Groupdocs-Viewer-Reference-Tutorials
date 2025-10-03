@@ -5,8 +5,8 @@
 "title": "Rendering via sidbrytningar"
 "url": "/sv/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Rendering via sidbrytningar
 
 ## Introduktion

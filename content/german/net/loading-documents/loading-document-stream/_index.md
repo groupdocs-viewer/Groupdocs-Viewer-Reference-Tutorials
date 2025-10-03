@@ -5,8 +5,8 @@
 "title": "Dokumente aus dem Stream laden"
 "url": "/de/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Dokumente aus dem Stream laden
 
 ## Einführung

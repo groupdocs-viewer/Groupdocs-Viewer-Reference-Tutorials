@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा में कस्टम दिनांक-समय के साथ ईमेल प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा में कस्टम दिनांक-समय के साथ ईमेल प्रस्तुत करें
 
 ## परिचय

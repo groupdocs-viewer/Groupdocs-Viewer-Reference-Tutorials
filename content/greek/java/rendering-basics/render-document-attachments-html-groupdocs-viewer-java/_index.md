@@ -4,8 +4,8 @@
 "title": "Απόδοση συνημμένων εγγράφων σε HTML χρησιμοποιώντας το GroupDocs.Viewer Java - Οδηγός βήμα προς βήμα"
 "url": "/el/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση συνημμένων εγγράφων σε HTML με το GroupDocs.Viewer Java
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer Kullanarak Belgelerdeki Gizli Sayfaları Oluşturma&#58; Adım Adım Kılavuz"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer Kullanarak Belgelerdeki Gizli Sayfaları Oluşturma: Adım Adım Kılavuz
 
 ## giriiş

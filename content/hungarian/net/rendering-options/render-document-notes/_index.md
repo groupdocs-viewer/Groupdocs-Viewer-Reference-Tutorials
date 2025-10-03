@@ -5,8 +5,8 @@
 "title": "Dokumentum renderelése jegyzetekkel"
 "url": "/hu/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Dokumentum renderelése jegyzetekkel
 
 ## Bevezetés

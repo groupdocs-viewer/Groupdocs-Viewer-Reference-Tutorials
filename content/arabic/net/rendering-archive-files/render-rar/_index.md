@@ -5,8 +5,8 @@
 "title": "عرض أرشيفات RAR"
 "url": "/ar/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # عرض أرشيفات RAR
 
 ## مقدمة

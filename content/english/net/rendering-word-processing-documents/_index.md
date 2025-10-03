@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["word-documents", "tracked-changes", "document-collaboration", "groupdocs-viewer"]
+type: docs
 ---
-
 # How to Render Tracked Changes in Word Documents
 
 ## Why Document Collaboration Gets Messy (And How to Fix It)

@@ -5,8 +5,8 @@
 "title": "PDFでフォントヒントを有効にする"
 "url": "/ja/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # PDFでフォントヒントを有効にする
 
 ## 導入

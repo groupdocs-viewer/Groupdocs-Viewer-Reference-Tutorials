@@ -5,8 +5,8 @@
 "title": "E-mail mezők átnevezése renderelés közben"
 "url": "/hu/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # E-mail mezők átnevezése renderelés közben
 
 ## Bevezetés

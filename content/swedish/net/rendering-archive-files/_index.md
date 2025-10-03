@@ -5,8 +5,8 @@
 "title": "Rendera arkivfiler"
 "url": "/sv/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Rendera arkivfiler
 
 ## Introduktion

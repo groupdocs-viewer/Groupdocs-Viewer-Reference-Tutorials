@@ -5,8 +5,8 @@
 "title": "Преобразовать документ в PDF"
 "url": "/ru/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Преобразовать документ в PDF
 
 ## Введение

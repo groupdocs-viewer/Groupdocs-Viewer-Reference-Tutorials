@@ -4,8 +4,8 @@
 "title": "Divida hojas de Excel en páginas por filas usando GroupDocs.Viewer .NET para una gestión de datos eficiente"
 "url": "/es/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Dividir hojas de Excel en páginas por filas con GroupDocs.Viewer .NET
 
 ## Introducción

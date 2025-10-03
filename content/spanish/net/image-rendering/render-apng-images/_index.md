@@ -5,8 +5,8 @@
 "title": "Renderizar imágenes APNG"
 "url": "/es/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Renderizar imágenes APNG
 
 ## Introducción

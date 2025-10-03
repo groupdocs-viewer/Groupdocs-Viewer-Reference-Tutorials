@@ -5,8 +5,8 @@
 "title": "Belirli CAD Formatlarını (CF2) Oluşturun"
 "url": "/tr/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Belirli CAD Formatlarını (CF2) Oluşturun
 
 ## giriiş

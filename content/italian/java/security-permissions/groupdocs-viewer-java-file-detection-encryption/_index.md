@@ -4,8 +4,8 @@
 "title": "Implementazione di controlli di rilevamento e crittografia dei file in Java con GroupDocs.Viewer"
 "url": "/it/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Implementazione di controlli di rilevamento e crittografia dei file tramite GroupDocs.Viewer per Java
 
 ## Introduzione

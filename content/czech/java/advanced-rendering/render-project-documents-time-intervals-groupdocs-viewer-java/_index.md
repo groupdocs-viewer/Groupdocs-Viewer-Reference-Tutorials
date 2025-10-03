@@ -4,8 +4,8 @@
 "title": "Vykreslení dokumentů projektu podle časových intervalů pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak implementovat vykreslování dokumentů projektu s časovými intervaly pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Effizientes Herunterladen und Rendern von Dokumenten vom FTP mit GroupDocs.Viewer .NET"
 "url": "/de/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # So laden Sie Dokumente effizient von FTP herunter und rendern sie mit GroupDocs.Viewer .NET
 
 ## Einführung

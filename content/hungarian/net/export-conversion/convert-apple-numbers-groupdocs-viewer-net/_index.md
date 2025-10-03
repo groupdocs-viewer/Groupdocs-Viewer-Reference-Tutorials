@@ -4,8 +4,8 @@
 "title": "Apple számok konvertálása HTML, JPG, PNG és PDF formátumba a GroupDocs.Viewer .NET használatával"
 "url": "/hu/net/export-conversion/convert-apple-numbers-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Apple számok konvertálása HTML, JPG, PNG és PDF formátumba a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "تنفيذ تسجيل فعال في GroupDocs.Viewer .NET لمخرجات وحدة التحكم والملفات"
 "url": "/ar/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # تنفيذ تسجيل فعال في GroupDocs.Viewer .NET
 
 ## مقدمة

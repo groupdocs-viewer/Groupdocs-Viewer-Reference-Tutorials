@@ -5,8 +5,8 @@
 "title": "Representación por saltos de página"
 "url": "/es/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Representación por saltos de página
 
 ## Introducción

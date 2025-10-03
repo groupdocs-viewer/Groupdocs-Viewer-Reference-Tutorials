@@ -5,8 +5,8 @@
 "title": "Rendu d'image"
 "url": "/fr/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Rendu d'image
 
 

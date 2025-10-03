@@ -5,8 +5,8 @@
 "title": "Načtení a tisk příloh dokumentů"
 "url": "/cs/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Načtení a tisk příloh dokumentů
 
 ## Zavedení

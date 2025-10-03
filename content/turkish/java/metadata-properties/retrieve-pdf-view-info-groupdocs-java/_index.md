@@ -4,8 +4,8 @@
 "title": "Java'da GroupDocs.Viewer Kullanarak PDF Meta Verilerini ve Özelliklerini Alın&#58; Adım Adım Kılavuz"
 "url": "/tr/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java'da GroupDocs.Viewer Kullanarak PDF Meta Verilerini ve Özelliklerini Alma
 
 Java'da GroupDocs.Viewer kütüphanesi ile bir PDF belgesinden görünüm bilgilerini almaya yönelik bu kapsamlı kılavuza hoş geldiniz. Sayfa sayısı, belge türü ve izinler gibi ayrıntıları PDF dosyalarından programlı olarak çıkarmak istiyorsanız doğru yerdesiniz.

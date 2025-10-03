@@ -5,8 +5,8 @@
 "title": "渲染 Visio 文档"
 "url": "/zh/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # 渲染 Visio 文档
 
 ## 介绍

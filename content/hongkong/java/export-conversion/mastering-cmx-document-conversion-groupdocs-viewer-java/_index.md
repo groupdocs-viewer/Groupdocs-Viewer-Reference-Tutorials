@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 進行高效率的 CMX 文件轉換－綜合指南"
 "url": "/zh-hant/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 實現高效的 CMX 文件轉換：綜合指南
 
 ## 介紹

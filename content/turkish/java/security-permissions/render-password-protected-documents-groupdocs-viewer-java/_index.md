@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java'da Parola Korumalı Belgeleri Oluşturma"
 "url": "/tr/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java'da Parola Korumalı Belgeleri Oluşturma
 
 ## giriiş

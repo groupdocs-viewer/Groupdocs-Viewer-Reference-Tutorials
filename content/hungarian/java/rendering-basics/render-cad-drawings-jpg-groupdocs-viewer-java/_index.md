@@ -4,8 +4,8 @@
 "title": "CAD rajzok renderelése JPG formátumban a GroupDocs.Viewer Java használatával&#58; Átfogó útmutató"
 "url": "/hu/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD rajzok JPG formátumban történő renderelése GroupDocs.Viewer Java használatával: Lépésről lépésre bemutató
 
 ## Bevezetés

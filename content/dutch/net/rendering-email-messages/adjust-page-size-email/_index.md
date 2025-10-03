@@ -5,8 +5,8 @@
 "title": "Paginaformaat aanpassen bij het weergeven van e-mailberichten"
 "url": "/nl/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Paginaformaat aanpassen bij het weergeven van e-mailberichten
 
 ## Invoering

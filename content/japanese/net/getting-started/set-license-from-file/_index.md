@@ -5,8 +5,8 @@
 "title": "ファイルからライセンスを設定する"
 "url": "/ja/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # ファイルからライセンスを設定する
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "Come visualizzare le pagine nascoste nei documenti utilizzando GroupDocs.Viewer per .NET&#58; una guida passo passo"
 "url": "/it/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Visualizzare le pagine nascoste nei documenti utilizzando GroupDocs.Viewer per .NET: una guida passo passo
 
 ## Introduzione

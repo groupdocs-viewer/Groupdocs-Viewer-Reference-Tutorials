@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer の従量制ライセンスを Java で実装する - 開発者ガイド"
 "url": "/ja/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java の従量制ライセンスの実装: 開発者ガイド
 
 ## 導入

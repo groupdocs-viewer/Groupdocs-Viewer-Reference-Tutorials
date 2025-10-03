@@ -4,8 +4,8 @@
 "title": "Jak implementovat vykreslování HTML v .NET pomocí GroupDocs.Viewer – podrobný návod"
 "url": "/cs/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Jak implementovat vykreslování HTML v .NET pomocí GroupDocs.Viewer: Podrobný návod
 
 ## Zavedení

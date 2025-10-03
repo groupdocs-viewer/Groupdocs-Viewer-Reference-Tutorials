@@ -4,8 +4,8 @@
 "title": "Εξοικείωση με τη Διαχείριση Αδειών Χρήσης στο GroupDocs.Viewer για .NET™ Ένας Πλήρης Οδηγός"
 "url": "/el/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Εξοικείωση με τη Διαχείριση Αδειών Χρήσης στο GroupDocs.Viewer για .NET
 ## Ένας ολοκληρωμένος οδηγός
 

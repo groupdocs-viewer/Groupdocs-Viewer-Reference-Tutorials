@@ -4,8 +4,8 @@
 "title": "Menerapkan Batas Waktu Pemuatan Sumber Daya di GroupDocs.Viewer untuk .NET - Panduan Lengkap"
 "url": "/id/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Batas Waktu Pemuatan Sumber Daya di GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

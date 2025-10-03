@@ -4,8 +4,8 @@
 "title": "Cara Merender Dokumen FODP dengan GroupDocs.Viewer untuk Java&#58; Panduan Lengkap"
 "url": "/id/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Dokumen FODP dengan GroupDocs.Viewer untuk Java: Panduan Lengkap
 
 ## Perkenalan

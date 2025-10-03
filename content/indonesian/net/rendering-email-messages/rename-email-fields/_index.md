@@ -5,8 +5,8 @@
 "title": "Ganti Nama Bidang Email Selama Rendering"
 "url": "/id/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Ganti Nama Bidang Email Selama Rendering
 
 ## Perkenalan

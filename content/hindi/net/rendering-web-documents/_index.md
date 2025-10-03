@@ -5,8 +5,8 @@
 "title": "वेब दस्तावेज़ प्रस्तुत करना"
 "url": "/hi/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # वेब दस्तावेज़ प्रस्तुत करना
 
 ## परिचय

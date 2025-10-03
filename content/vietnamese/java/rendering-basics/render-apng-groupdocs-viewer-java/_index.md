@@ -4,8 +4,8 @@
 "title": "Cách kết xuất PNG động trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất PNG động bằng GroupDocs.Viewer trong Java
 
 Khám phá quá trình chuyển đổi tệp PNG động (APNG) sang nhiều định dạng khác nhau như HTML, JPG, PNG và PDF bằng thư viện GroupDocs.Viewer mạnh mẽ dành cho Java.

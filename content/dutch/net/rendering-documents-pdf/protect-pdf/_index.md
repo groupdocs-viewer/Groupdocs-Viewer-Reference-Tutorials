@@ -5,8 +5,8 @@
 "title": "Beveilig gerenderde PDF met wachtwoord"
 "url": "/nl/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Beveilig gerenderde PDF met wachtwoord
 
 ## Invoering

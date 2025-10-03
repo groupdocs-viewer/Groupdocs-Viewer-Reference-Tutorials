@@ -5,8 +5,8 @@
 "title": "Rendering di documenti Visio"
 "url": "/it/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Rendering di documenti Visio
 
 ## Introduzione

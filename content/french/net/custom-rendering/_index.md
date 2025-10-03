@@ -3,8 +3,8 @@
 "title": "Tutoriels de rendu de documents personnalisés pour GroupDocs.Viewer .NET"
 "url": "/fr/net/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # Tutoriels de rendu de documents personnalisés pour GroupDocs.Viewer .NET
 
 Maîtrisez les techniques de personnalisation avancées grâce à nos tutoriels GroupDocs.Viewer .NET pour un rendu personnalisé. Ces guides complets expliquent comment créer des gestionnaires de rendu personnalisés, implémenter une logique de rendu spécialisée, étendre les fonctionnalités de rendu intégrées et développer des solutions de traitement de documents sophistiquées. Chaque tutoriel fournit des exemples de code .NET détaillés montrant comment mettre en œuvre des stratégies de rendu de documents flexibles et sur mesure, allant au-delà des approches de rendu standard.

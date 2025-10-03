@@ -5,8 +5,8 @@
 "title": "Render Halaman Tersembunyi"
 "url": "/id/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Render Halaman Tersembunyi
 
 ## Perkenalan

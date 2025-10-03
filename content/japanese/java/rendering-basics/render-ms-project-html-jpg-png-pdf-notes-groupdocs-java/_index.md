@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用して MS Project ファイルを HTML、JPG、PNG、PDF としてレンダリングし、メモを付ける方法"
 "url": "/ja/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用して MS Project ファイルを HTML、JPG、PNG、PDF としてレンダリングし、メモを付ける方法
 
 ## 導入

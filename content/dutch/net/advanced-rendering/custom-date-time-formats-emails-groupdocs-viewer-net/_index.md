@@ -4,8 +4,8 @@
 "title": "Datum-tijdnotaties en tijdzone-offsets in e-mails aanpassen met GroupDocs.Viewer .NET"
 "url": "/nl/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Datum-tijdnotaties en tijdzones in e-mails aanpassen met GroupDocs.Viewer .NET
 
 ## Invoering

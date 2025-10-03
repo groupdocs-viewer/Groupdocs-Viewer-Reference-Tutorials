@@ -5,8 +5,8 @@
 "title": "텍스트 파일 렌더링"
 "url": "/ko/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # 텍스트 파일 렌더링
 
 ## 소개

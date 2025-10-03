@@ -5,8 +5,8 @@
 "title": "スプレッドシートのレンダリングオプション"
 "url": "/ja/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # スプレッドシートのレンダリングオプション
 
 ## 導入

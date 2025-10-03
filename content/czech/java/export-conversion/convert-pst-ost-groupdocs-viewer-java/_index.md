@@ -4,8 +4,8 @@
 "title": "Převod PST/OST do HTML, JPG, PNG, PDF pomocí GroupDocs.Viewer pro Javu | Průvodce exportem a konverzí"
 "url": "/cs/java/export-conversion/convert-pst-ost-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Převod PST/OST do HTML, JPG, PNG, PDF pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

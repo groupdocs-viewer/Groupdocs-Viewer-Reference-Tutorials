@@ -5,8 +5,8 @@
 "title": "문서를 로드할 때 파일 유형 지정"
 "url": "/ko/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # 문서를 로드할 때 파일 유형 지정
 
 ## 소개

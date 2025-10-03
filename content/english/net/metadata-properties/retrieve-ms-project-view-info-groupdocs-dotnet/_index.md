@@ -8,10 +8,8 @@ keywords:
 - Retrieve MS Project View Information
 - GroupDocs.Viewer for .NET
 - MS Project document view info
-
+type: docs
 ---
-
-
 # Retrieve MS Project View Information Using GroupDocs.Viewer .NET
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Отображение HTML с заданными пользователем полями"
 "url": "/ru/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Отображение HTML с заданными пользователем полями
 
 ## Введение

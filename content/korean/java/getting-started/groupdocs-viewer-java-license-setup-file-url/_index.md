@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java 라이선스 설정 방법&#58; 로컬 파일 또는 URL 가이드"
 "url": "/ko/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java 라이선스 설정 방법: 로컬 파일 또는 URL
 
 로컬 파일이나 온라인 리소스에서 라이선스를 설정하여 Java 애플리케이션에서 GroupDocs.Viewer의 잠재력을 최대한 활용하세요. 이 포괄적인 가이드는 두 가지 방법을 효율적으로 구현하고 이 강력한 문서 보기 도구가 제공하는 모든 기능에 액세스할 수 있도록 도와줍니다.

@@ -4,8 +4,8 @@
 "title": "Cómo renderizar archivos EMZ/EMF con GroupDocs.Viewer .NET&#58; una guía completa"
 "url": "/es/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cómo renderizar archivos EMZ/EMF con GroupDocs.Viewer .NET: una guía completa
 ## Conceptos básicos de renderizado
 Este tutorial muestra cómo renderizar archivos de metarchivo mejorado (EMF) o metarchivo incrustado (EMZ) con GroupDocs.Viewer para .NET. Tanto si integra funciones versátiles de conversión de archivos en su aplicación como si gestiona documentos, esta guía explica cómo renderizar estos formatos a HTML, JPG, PNG y PDF.

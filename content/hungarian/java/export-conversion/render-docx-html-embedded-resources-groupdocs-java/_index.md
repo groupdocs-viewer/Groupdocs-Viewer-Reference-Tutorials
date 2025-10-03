@@ -4,8 +4,8 @@
 "title": "DOCX konvertálása HTML-be beágyazott erőforrásokkal a GroupDocs.Viewer for Java használatával"
 "url": "/hu/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # DOCX konvertálása HTML-be beágyazott erőforrásokkal a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

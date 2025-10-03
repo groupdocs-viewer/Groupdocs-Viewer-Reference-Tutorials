@@ -4,8 +4,8 @@
 "title": "Hoe u de tijdseenheden van MS-projecten kunt aanpassen met behulp van GroupDocs.Viewer Java&#58; een stapsgewijze handleiding"
 "url": "/nl/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u de tijdseenheden van MS-projecten kunt aanpassen met behulp van GroupDocs.Viewer Java: een stapsgewijze handleiding
 ## Invoering
 Bent u het zat om handmatig tijdseenheden in uw MS Project-documenten aan te passen voordat u ze in HTML-formaat omzet? Dit proces kan omslachtig en foutgevoelig zijn, vooral bij grote projecten. **GroupDocs.Viewer voor Java**kunt u de instellingen voor de tijdseenheid eenvoudig programmatisch aanpassen, waardoor nauwkeurigheid en efficiëntie worden gegarandeerd.

@@ -4,8 +4,8 @@
 "title": "Renderuj załączniki e-mail do formatu HTML za pomocą GroupDocs.Viewer dla .NET"
 "url": "/pl/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować załączniki e-mail do formatu HTML za pomocą GroupDocs.Viewer dla .NET
 ## Wstęp
 Czy potrzebujesz wydajnego sposobu na konwersję załączników e-mail do łatwo widocznego HTML? Niezależnie od tego, czy chodzi o zwiększenie dostępności dokumentów, czy uproszczenie udostępniania treści, renderowanie załączników jest niezbędne do efektywnego zarządzania korespondencją cyfrową. Ten przewodnik przeprowadzi Cię przez korzystanie z **GroupDocs.Viewer dla .NET** aby osiągnąć to z łatwością.

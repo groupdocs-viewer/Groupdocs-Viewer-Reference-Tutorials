@@ -4,8 +4,8 @@
 "title": "عرض مستندات نصية في Shift_JIS باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض مستندات نصية في Shift_JIS باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

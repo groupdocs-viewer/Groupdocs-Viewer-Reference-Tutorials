@@ -5,8 +5,8 @@
 "title": "Dokumentummellékletek lekérése és mentése"
 "url": "/hu/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Dokumentummellékletek lekérése és mentése
 
 ## Bevezetés

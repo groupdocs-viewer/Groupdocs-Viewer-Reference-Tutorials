@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 优化 PDF 中的 JPG 质量——综合指南"
 "url": "/zh/net/performance-optimization/optimize-jpg-quality-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 优化 PDF 中的 JPG 质量
 
 ## 介绍

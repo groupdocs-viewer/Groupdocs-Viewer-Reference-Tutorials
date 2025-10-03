@@ -5,8 +5,8 @@
 "title": "調整儲存格中的文字溢出"
 "url": "/zh-hant/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # 調整儲存格中的文字溢出
 
 ## 介紹

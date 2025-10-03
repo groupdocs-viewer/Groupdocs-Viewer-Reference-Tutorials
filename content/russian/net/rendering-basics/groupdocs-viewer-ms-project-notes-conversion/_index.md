@@ -4,8 +4,8 @@
 "title": "Эффективная визуализация файлов MS Project с примечаниями с помощью GroupDocs.Viewer для .NET"
 "url": "/ru/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Эффективная визуализация файлов MS Project с примечаниями с помощью GroupDocs.Viewer для .NET
 
 ## Введение

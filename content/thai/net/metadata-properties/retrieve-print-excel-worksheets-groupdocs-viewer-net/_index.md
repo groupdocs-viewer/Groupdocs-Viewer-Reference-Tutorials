@@ -4,8 +4,8 @@
 "title": "วิธีดึงข้อมูลและพิมพ์ชื่อเวิร์กชีต Excel โดยใช้ GroupDocs.Viewer สำหรับ .NET (คู่มือปี 2023)"
 "url": "/th/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการดึงข้อมูลและพิมพ์ชื่อเวิร์กชีต Excel โดยใช้ GroupDocs.Viewer สำหรับ .NET: คู่มือฉบับสมบูรณ์
 
 ## การแนะนำ

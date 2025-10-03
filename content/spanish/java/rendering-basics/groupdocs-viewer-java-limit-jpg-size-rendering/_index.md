@@ -4,8 +4,8 @@
 "title": "Cómo limitar el tamaño de JPG al renderizar documentos con GroupDocs.Viewer para Java"
 "url": "/es/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cómo limitar el tamaño de JPG al renderizar documentos con GroupDocs.Viewer para Java
 
 ## Introducción

@@ -5,8 +5,8 @@
 "title": "รับข้อมูลการดูแบบ CAD"
 "url": "/th/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # รับข้อมูลการดูแบบ CAD
 
 ## การแนะนำ

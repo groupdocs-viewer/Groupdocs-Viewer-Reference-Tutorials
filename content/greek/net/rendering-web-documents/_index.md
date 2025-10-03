@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφων ιστού"
 "url": "/el/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Απόδοση εγγράφων ιστού
 
 ## Εισαγωγή

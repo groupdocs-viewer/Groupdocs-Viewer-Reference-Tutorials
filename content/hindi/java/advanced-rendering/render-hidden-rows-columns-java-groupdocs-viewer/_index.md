@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा स्प्रेडशीट में छिपी हुई पंक्तियों और स्तंभों को प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा स्प्रेडशीट में छिपी हुई पंक्तियों और स्तंभों को प्रस्तुत करें
 
 ## परिचय

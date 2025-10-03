@@ -4,8 +4,8 @@
 "title": "Cách chuyển đổi tệp DOCX sang PNG bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/rendering-basics/render-docx-png-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách chuyển đổi tệp DOCX sang PNG bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

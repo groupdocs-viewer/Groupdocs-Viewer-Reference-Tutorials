@@ -5,8 +5,8 @@
 "title": "عرض ملفات بيانات Outlook (PST وOST)"
 "url": "/ar/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # عرض ملفات بيانات Outlook (PST وOST)
 
 ## مقدمة

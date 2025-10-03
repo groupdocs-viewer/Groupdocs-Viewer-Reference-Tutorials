@@ -4,8 +4,8 @@
 "title": "Padroneggia il rendering HTML con margini personalizzati in .NET utilizzando GroupDocs.Viewer"
 "url": "/it/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggiare il rendering HTML con margini definiti dall'utente in .NET utilizzando GroupDocs.Viewer
 
 ## Introduzione

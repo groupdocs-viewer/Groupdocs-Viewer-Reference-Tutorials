@@ -4,8 +4,8 @@
 "title": "Szöveges dokumentumok renderelése Shift_JIS-ben GroupDocs.Viewer for Java használatával"
 "url": "/hu/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Szöveges dokumentumok renderelése Shift_JIS-ben GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

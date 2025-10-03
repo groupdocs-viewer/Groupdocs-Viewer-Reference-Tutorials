@@ -5,8 +5,8 @@
 "title": "Φάκελος αρχειοθέτησης απόδοσης"
 "url": "/el/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Φάκελος αρχειοθέτησης απόδοσης
 
 ## Εισαγωγή

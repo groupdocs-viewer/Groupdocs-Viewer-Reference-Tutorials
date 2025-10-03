@@ -5,8 +5,8 @@
 "title": "Vykreslení dokumentu s poznámkami"
 "url": "/cs/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Vykreslení dokumentu s poznámkami
 
 ## Zavedení

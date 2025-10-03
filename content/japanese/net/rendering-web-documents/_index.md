@@ -5,8 +5,8 @@
 "title": "Webドキュメントのレンダリング"
 "url": "/ja/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Webドキュメントのレンダリング
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "使用取消令牌取消渲染"
 "url": "/zh-hant/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # 使用取消令牌取消渲染
 
 ## 介紹

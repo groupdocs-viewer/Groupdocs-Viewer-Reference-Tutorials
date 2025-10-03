@@ -5,8 +5,8 @@
 "title": "Outlook 데이터 파일에서 렌더링할 항목 수 제한"
 "url": "/ko/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Outlook 데이터 파일에서 렌더링할 항목 수 제한
 
 ## 소개

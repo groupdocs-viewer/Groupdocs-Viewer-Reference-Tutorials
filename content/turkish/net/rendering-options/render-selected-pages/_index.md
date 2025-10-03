@@ -5,8 +5,8 @@
 "title": "Seçili Sayfaları Oluştur"
 "url": "/tr/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Seçili Sayfaları Oluştur
 
 ## giriiş

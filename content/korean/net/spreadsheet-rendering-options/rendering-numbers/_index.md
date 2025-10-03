@@ -5,8 +5,8 @@
 "title": "렌더링 번호"
 "url": "/ko/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # 렌더링 번호
 
 ## 소개

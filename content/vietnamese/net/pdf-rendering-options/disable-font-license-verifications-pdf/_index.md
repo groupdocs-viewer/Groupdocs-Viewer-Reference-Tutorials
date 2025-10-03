@@ -5,8 +5,8 @@
 "title": "Tắt xác minh giấy phép phông chữ trong PDF"
 "url": "/vi/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Tắt xác minh giấy phép phông chữ trong PDF
 
 ## Giới thiệu

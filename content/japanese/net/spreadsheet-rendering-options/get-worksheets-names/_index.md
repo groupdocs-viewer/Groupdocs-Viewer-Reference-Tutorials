@@ -5,8 +5,8 @@
 "title": "ワークシート名を取得する"
 "url": "/ja/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # ワークシート名を取得する
 
 ## 導入

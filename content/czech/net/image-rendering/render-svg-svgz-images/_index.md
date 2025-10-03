@@ -5,8 +5,8 @@
 "title": "Renderování obrázků SVG a SVGZ"
 "url": "/cs/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # Renderování obrázků SVG a SVGZ
 
 ## Zavedení

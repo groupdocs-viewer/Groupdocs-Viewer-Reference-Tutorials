@@ -5,8 +5,8 @@
 "title": "Pokročilé použití (ukládání do mezipaměti)"
 "url": "/cs/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Pokročilé použití (ukládání do mezipaměti)
 
 

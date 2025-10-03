@@ -5,8 +5,8 @@
 "title": "Render Gambar CMX"
 "url": "/id/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # Render Gambar CMX
 
 ## Perkenalan

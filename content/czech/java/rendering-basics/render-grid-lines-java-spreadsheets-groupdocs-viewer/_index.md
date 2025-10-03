@@ -4,8 +4,8 @@
 "title": "Jak vykreslit mřížku v tabulkách Java pomocí GroupDocs.Viewer"
 "url": "/cs/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit mřížku v tabulkách Java pomocí GroupDocs.Viewer
 
 ## Zavedení

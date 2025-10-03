@@ -5,8 +5,8 @@
 "title": "Licentie instellen vanuit bestand"
 "url": "/nl/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Licentie instellen vanuit bestand
 
 ## Invoering

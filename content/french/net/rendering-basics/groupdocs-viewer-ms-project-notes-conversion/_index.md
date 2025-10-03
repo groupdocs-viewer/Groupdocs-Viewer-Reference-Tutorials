@@ -4,8 +4,8 @@
 "title": "Restituez efficacement des fichiers MS Project avec des notes à l'aide de GroupDocs.Viewer pour .NET"
 "url": "/fr/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Restituez efficacement des fichiers MS Project avec des notes à l'aide de GroupDocs.Viewer pour .NET
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ภาพ EMZ และ EMF"
 "url": "/th/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # เรนเดอร์ภาพ EMZ และ EMF
 
 ## การแนะนำ

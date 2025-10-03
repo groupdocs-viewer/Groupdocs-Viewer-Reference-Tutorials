@@ -4,8 +4,8 @@
 "title": ".NET での PDF レンダリングの強化&#58; GroupDocs.Viewer でフォントヒントを有効にする"
 "url": "/ja/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して .NET で PDF レンダリングを強化する方法: フォントヒントを有効にする
 
 ## 導入

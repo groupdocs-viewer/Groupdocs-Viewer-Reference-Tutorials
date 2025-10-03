@@ -4,8 +4,8 @@
 "title": "Sắp xếp lại trang PDF hiệu quả với GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Sắp xếp lại trang PDF hiệu quả với GroupDocs.Viewer cho Java
 
 ## Giới thiệu

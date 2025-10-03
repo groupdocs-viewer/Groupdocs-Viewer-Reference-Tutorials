@@ -5,8 +5,8 @@
 "title": "تحميل المستندات"
 "url": "/ar/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # تحميل المستندات
 
 ## مقدمة

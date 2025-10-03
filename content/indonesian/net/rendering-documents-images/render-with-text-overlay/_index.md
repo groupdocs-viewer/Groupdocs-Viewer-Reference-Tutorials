@@ -5,8 +5,8 @@
 "title": "Render dengan Teks yang Dilapisi untuk Tampilan"
 "url": "/id/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Render dengan Teks yang Dilapisi untuk Tampilan
 
 ## Perkenalan

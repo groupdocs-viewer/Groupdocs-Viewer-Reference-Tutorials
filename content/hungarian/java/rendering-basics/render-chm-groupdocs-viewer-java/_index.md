@@ -4,8 +4,8 @@
 "title": "CHM fájlok renderelése GroupDocs.Viewer Java használatával – Átfogó útmutató"
 "url": "/hu/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CHM fájlok renderelése GroupDocs.Viewer Java használatával: Átfogó útmutató
 ## Bevezetés
 Szeretnéd a Fordított HTML Súgó (CHM) fájlokat szélesebb körben támogatott formátumokba, például HTML, JPG, PNG és PDF formátumba renderelgetni? Akár archiválási célokat szolgál, akár a különböző platformokon való hozzáférhetőség javítását, ezeknek a dokumentumoknak a konvertálása gyökeresen megváltoztathatja a játékszabályokat. Ez az oktatóanyag bemutatja, hogyan valósíthatod meg ezt zökkenőmentesen a GroupDocs.Viewer Java használatával. Megtanulod a CHM fájlok hatékony renderelésének minden csínját-bínját ezzel a hatékony könyvtárral.

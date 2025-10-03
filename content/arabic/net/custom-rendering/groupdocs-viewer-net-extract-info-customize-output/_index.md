@@ -4,8 +4,8 @@
 "title": "استخراج معلومات المستند وتخصيص النتائج باستخدام GroupDocs.Viewer .NET - دليل شامل"
 "url": "/ar/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # استخراج معلومات المستند وتخصيص الإخراج باستخدام GroupDocs.Viewer .NET
 ## برنامج تعليمي للعرض المخصص
 ### ما سوف تتعلمه:

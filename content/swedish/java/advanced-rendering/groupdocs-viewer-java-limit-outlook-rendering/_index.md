@@ -4,8 +4,8 @@
 "title": "Begränsa rendering av Outlook-objekt i Java med GroupDocs.Viewer – en omfattande guide"
 "url": "/sv/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Begränsa rendering av Outlook-objekt i Java med GroupDocs.Viewer
 
 ## Översikt

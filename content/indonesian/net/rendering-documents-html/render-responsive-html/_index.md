@@ -5,8 +5,8 @@
 "title": "Render HTML Responsif"
 "url": "/id/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Render HTML Responsif
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "पीडीएफ में फ़ॉन्ट संकेत सक्षम करें"
 "url": "/hi/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # पीडीएफ में फ़ॉन्ट संकेत सक्षम करें
 
 ## परिचय

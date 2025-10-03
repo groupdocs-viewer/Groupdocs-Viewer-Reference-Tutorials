@@ -4,8 +4,8 @@
 "title": "Optimiser la taille des dessins CAO à l'aide de GroupDocs.Viewer .NET pour des performances Web améliorées"
 "url": "/fr/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimiser la taille des dessins CAO à l'aide de GroupDocs.Viewer .NET pour des performances Web améliorées
 
 ## Introduction

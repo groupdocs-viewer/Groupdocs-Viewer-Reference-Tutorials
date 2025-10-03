@@ -5,8 +5,8 @@
 "title": "Tutorial dan Contoh Lengkap GroupDocs.Viewer untuk .NET"
 "url": "/id/net/"
 "weight": 10
+type: docs
 ---
-
 # Tutorial dan Contoh Lengkap GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

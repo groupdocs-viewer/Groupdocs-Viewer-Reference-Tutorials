@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でカスタムフォントレンダリングを実装する方法 - ステップバイステップガイド"
 "url": "/ja/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java でカスタムフォントレンダリングを実装する方法: ステップバイステップガイド
 
 ## 導入

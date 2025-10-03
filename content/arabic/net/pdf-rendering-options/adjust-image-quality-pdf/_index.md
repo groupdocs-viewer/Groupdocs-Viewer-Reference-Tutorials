@@ -5,8 +5,8 @@
 "title": "ضبط جودة الصورة في PDF"
 "url": "/ar/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # ضبط جودة الصورة في PDF
 
 ## مقدمة

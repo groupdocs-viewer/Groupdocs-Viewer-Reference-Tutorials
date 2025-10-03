@@ -5,8 +5,8 @@
 "title": "خيارات التحميل المتقدمة"
 "url": "/ar/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # خيارات التحميل المتقدمة
 
 ## مقدمة

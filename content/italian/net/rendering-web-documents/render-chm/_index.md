@@ -5,8 +5,8 @@
 "title": "File CHM di rendering"
 "url": "/it/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # File CHM di rendering
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "Java용 Master GroupDocs.Viewer&#58; 문서 보기 정보 및 통찰력 검색"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 문서 보기 마스터하기
 ## 고급 렌더링 기술
 **SEO URL:** groupdocs-viewer-java-문서-뷰

@@ -5,8 +5,8 @@
 "title": "เรนเดอร์โฟลเดอร์เฉพาะและกรองข้อความ (Outlook)"
 "url": "/th/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # เรนเดอร์โฟลเดอร์เฉพาะและกรองข้อความ (Outlook)
 
 ## การแนะนำ

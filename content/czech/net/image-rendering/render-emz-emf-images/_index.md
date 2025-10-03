@@ -5,8 +5,8 @@
 "title": "Renderování obrázků EMZ a EMF"
 "url": "/cs/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Renderování obrázků EMZ a EMF
 
 ## Zavedení

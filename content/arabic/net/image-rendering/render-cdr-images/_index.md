@@ -5,8 +5,8 @@
 "title": "عرض صور CDR"
 "url": "/ar/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # عرض صور CDR
 
 ## مقدمة

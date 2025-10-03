@@ -5,8 +5,8 @@
 "title": "रद्दीकरण टोकन के साथ रेंडर रद्द करें"
 "url": "/hi/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # रद्दीकरण टोकन के साथ रेंडर रद्द करें
 
 ## परिचय

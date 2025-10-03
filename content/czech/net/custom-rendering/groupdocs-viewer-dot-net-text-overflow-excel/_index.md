@@ -4,8 +4,8 @@
 "title": "Skrytí přetečení textu v Excelu pomocí GroupDocs.Viewer .NET – Komplexní průvodce"
 "url": "/cs/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Skrýt přetečení textu v Excelu pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

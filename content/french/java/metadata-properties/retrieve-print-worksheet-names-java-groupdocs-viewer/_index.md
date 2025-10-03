@@ -4,8 +4,8 @@
 "title": "Extraire et afficher les noms des feuilles de calcul en Java à l'aide de l'API GroupDocs.Viewer"
 "url": "/fr/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Extraire et afficher les noms des feuilles de calcul en Java à l'aide de l'API GroupDocs.Viewer
 
 ## Introduction

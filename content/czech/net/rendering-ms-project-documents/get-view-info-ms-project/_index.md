@@ -5,8 +5,8 @@
 "title": "Získání informací o zobrazení pro dokumenty Microsoft Project"
 "url": "/cs/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Získání informací o zobrazení pro dokumenty Microsoft Project
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Αποτελεσματική απόδοση εγγράφων HPG σε HTML, JPG, PNG, PDF χρησιμοποιώντας το GroupDocs.Viewer .NET"
 "url": "/el/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε έγγραφα HPG χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

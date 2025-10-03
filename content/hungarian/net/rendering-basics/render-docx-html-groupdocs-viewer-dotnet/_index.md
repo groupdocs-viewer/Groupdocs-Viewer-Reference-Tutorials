@@ -4,8 +4,8 @@
 "title": "Hogyan konvertálhatunk DOCX-et HTML-lé a GroupDocs.Viewer for .NET segítségével?"
 "url": "/hu/net/rendering-basics/render-docx-html-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan konvertálhatunk DOCX-et HTML-be a GroupDocs.Viewer for .NET használatával?
 
 ## Bevezetés

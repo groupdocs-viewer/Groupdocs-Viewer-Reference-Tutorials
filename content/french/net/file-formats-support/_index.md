@@ -3,8 +3,8 @@
 "title": "Tutoriels de rendu de documents multiformats pour GroupDocs.Viewer .NET"
 "url": "/fr/net/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # Tutoriels de rendu de documents multiformats pour GroupDocs.Viewer .NET
 
 Découvrez une prise en charge complète des formats de documents grâce à nos tutoriels GroupDocs.Viewer pour .NET. Ces guides détaillés expliquent comment afficher et gérer différents formats de fichiers, notamment les PDF, les documents Microsoft Office, les images, les fichiers CAO et les formats spécialisés. Chaque tutoriel fournit des exemples de code .NET fonctionnels montrant comment mettre en œuvre des solutions de visualisation de documents flexibles et multiformats, capables de gérer divers types de documents avec une qualité de rendu constante.

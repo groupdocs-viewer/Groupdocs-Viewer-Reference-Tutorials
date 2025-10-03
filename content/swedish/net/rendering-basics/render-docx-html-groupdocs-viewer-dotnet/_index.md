@@ -4,8 +4,8 @@
 "title": "Hur man konverterar DOCX till HTML med GroupDocs.Viewer för .NET"
 "url": "/sv/net/rendering-basics/render-docx-html-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Hur man konverterar DOCX till HTML med GroupDocs.Viewer för .NET
 
 ## Introduktion

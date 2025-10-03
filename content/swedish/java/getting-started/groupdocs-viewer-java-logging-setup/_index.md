@@ -4,8 +4,8 @@
 "title": "Konfigurera loggning i GroupDocs.Viewer för Java-konsolen och guiden för filloggning"
 "url": "/sv/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Konfigurera loggning i GroupDocs.Viewer för Java
 
 ## Introduktion

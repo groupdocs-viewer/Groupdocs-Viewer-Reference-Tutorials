@@ -4,8 +4,8 @@
 "title": "So sichern Sie DOCX-Dateien als PDFs mit GroupDocs.Viewer .NET – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So sichern Sie DOCX-Dateien als PDFs mit GroupDocs.Viewer .NET: Eine Schritt-für-Schritt-Anleitung
 
 Im digitalen Zeitalter ist der Schutz vertraulicher Dokumente unerlässlich. Ob Unternehmen, die geistiges Eigentum schützen, oder Privatpersonen, die persönliche Daten sichern – die Konvertierung von Word-Dateien in passwortgeschützte PDFs kann entscheidend sein. Dieses Tutorial führt Sie durch die Verwendung von GroupDocs.Viewer für .NET, um DOCX-Dokumente in geschützte PDFs mit bestimmten Einschränkungen wie dem Druckverweigerungsrecht umzuwandeln.

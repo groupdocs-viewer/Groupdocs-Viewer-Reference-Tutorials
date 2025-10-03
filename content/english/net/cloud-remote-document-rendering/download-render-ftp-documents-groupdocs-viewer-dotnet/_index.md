@@ -8,10 +8,8 @@ keywords:
 - download render documents ftp groupdocs viewer dotnet
 - groupdocs viewer net document rendering
 - render documents from ftp using groupdocs
-
+type: docs
 ---
-
-
 # How to Efficiently Download and Render Documents from FTP Using GroupDocs.Viewer .NET
 
 ## Introduction

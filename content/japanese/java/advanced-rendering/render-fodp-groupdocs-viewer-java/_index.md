@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for JavaでFODPドキュメントをレンダリングする方法 - 完全ガイド"
 "url": "/ja/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java で FODP ドキュメントをレンダリングする方法: 完全ガイド
 
 ## 導入

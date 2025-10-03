@@ -5,8 +5,8 @@
 "title": "Visio-documenten weergeven"
 "url": "/nl/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Visio-documenten weergeven
 
 ## Invoering

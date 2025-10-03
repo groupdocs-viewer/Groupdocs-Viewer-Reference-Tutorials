@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 .NET 中渲染 TGA 檔案—綜合指南"
 "url": "/zh-hant/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 在 .NET 中渲染 TGA 檔案：綜合指南
 
 ## 介紹

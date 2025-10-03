@@ -4,8 +4,8 @@
 "title": "Konversi FODG/ODG ke HTML, JPG, PNG, dan PDF Menggunakan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/export-conversion/convert-fodg-og-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Konversi Dokumen FODG/ODG dengan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

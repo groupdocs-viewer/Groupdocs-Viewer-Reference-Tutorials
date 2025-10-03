@@ -4,8 +4,8 @@
 "title": "Convierta archivos TXT a HTML, JPG, PNG y PDF con GroupDocs.Viewer para Java"
 "url": "/es/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # Convertir archivos TXT con GroupDocs.Viewer para Java: una guía completa
 
 ## Introducción

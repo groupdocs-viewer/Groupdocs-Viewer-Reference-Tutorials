@@ -5,8 +5,8 @@
 "title": "Opties voor spreadsheetweergave"
 "url": "/nl/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Opties voor spreadsheetweergave
 
 ## Invoering

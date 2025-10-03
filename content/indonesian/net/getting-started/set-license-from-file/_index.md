@@ -5,8 +5,8 @@
 "title": "Tetapkan Lisensi dari File"
 "url": "/id/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Tetapkan Lisensi dari File
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "Προσαρμογή μεγέθους εικόνας εξόδου για σχέδια CAD"
 "url": "/el/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Προσαρμογή μεγέθους εικόνας εξόδου για σχέδια CAD
 
 ## Εισαγωγή

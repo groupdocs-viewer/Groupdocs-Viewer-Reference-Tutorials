@@ -3,8 +3,8 @@
 "title": "Výukové programy pro zabezpečení dokumentů a řízení přístupu pro GroupDocs.Viewer .NET"
 "url": "/cs/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Výukové programy pro zabezpečení dokumentů a řízení přístupu pro GroupDocs.Viewer .NET
 
 Naučte se zabezpečit prohlížení dokumentů s našimi komplexními bezpečnostními tutoriály pro vývojáře .NET v nástroji GroupDocs.Viewer. Tyto podrobné průvodce ukazují, jak implementovat ochranu heslem, spravovat oprávnění k dokumentům, pracovat se šifrovanými soubory a programově řídit přístup k citlivým dokumentům. Každý tutoriál poskytuje funkční příklady kódu .NET pro běžné bezpečnostní scénáře a pomáhá vám vytvářet aplikace, které zachovávají důvěrnost a integritu dokumentů a zároveň poskytují možnosti kontrolovaného prohlížení.

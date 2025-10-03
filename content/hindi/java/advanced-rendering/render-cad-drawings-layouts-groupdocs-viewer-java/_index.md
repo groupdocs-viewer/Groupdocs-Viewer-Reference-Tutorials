@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके सभी CAD लेआउट को कुशलतापूर्वक प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके सभी CAD लेआउट को कुशलतापूर्वक प्रस्तुत करें
 
 ## परिचय

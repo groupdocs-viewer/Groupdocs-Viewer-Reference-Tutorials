@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 从 PDF 中提取文本——开发人员综合指南"
 "url": "/zh/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer Java 从 PDF 中提取文本
 
 ## 介绍

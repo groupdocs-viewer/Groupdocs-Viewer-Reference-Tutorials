@@ -4,8 +4,8 @@
 "title": "Làm chủ việc kết xuất và lọc dữ liệu Outlook với GroupDocs.Viewer cho Java"
 "url": "/vi/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ việc kết xuất và lọc dữ liệu Outlook với GroupDocs.Viewer cho Java
 
 ## Giới thiệu

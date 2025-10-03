@@ -5,8 +5,8 @@
 "title": "Abrufen von Ansichtsinformationen für CAD-Zeichnungen"
 "url": "/de/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Abrufen von Ansichtsinformationen für CAD-Zeichnungen
 
 ## Einführung

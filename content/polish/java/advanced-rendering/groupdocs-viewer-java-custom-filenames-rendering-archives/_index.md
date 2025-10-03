@@ -4,8 +4,8 @@
 "title": "Opanowanie GroupDocs.Viewer Java&#58; Niestandardowe nazwy plików do renderowania archiwów w formacie PDF"
 "url": "/pl/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie GroupDocs.Viewer Java: Określanie niestandardowych nazw plików podczas renderowania archiwów do formatu PDF
 
 ## Wstęp

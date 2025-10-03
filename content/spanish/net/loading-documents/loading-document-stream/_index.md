@@ -5,8 +5,8 @@
 "title": "Cargar documentos desde Stream"
 "url": "/es/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Cargar documentos desde Stream
 
 ## Introducción

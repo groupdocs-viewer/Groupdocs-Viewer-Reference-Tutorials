@@ -4,8 +4,8 @@
 "title": "Πώς να περιστρέψετε σελίδες PDF με το GroupDocs.Viewer για .NET™ Οδηγός για προγραμματιστές"
 "url": "/el/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να περιστρέψετε σελίδες PDF χρησιμοποιώντας το GroupDocs.Viewer για .NET: Οδηγός για προγραμματιστές
 
 ## Εισαγωγή

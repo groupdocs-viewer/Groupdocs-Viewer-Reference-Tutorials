@@ -5,8 +5,8 @@
 "title": "Rendre le document au format PDF"
 "url": "/fr/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Rendre le document au format PDF
 
 ## Introduction

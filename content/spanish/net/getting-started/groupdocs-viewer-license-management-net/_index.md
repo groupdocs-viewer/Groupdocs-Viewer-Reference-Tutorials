@@ -4,8 +4,8 @@
 "title": "Dominar la gestión de licencias en GroupDocs.Viewer para .NET&#58; una guía completa"
 "url": "/es/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Dominio de la gestión de licencias en GroupDocs.Viewer para .NET
 ## Una guía completa
 

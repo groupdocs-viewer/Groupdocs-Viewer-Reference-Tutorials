@@ -5,8 +5,8 @@
 "title": "Representar archivos en una o varias páginas HTML"
 "url": "/es/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Representar archivos en una o varias páginas HTML
 
 ## Introducción

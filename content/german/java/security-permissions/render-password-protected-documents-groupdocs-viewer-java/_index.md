@@ -4,8 +4,8 @@
 "title": "Rendern Sie passwortgeschützte Dokumente in Java mit GroupDocs.Viewer"
 "url": "/de/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendern Sie passwortgeschützte Dokumente in Java mit GroupDocs.Viewer
 
 ## Einführung

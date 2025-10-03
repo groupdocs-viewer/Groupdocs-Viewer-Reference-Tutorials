@@ -4,8 +4,8 @@
 "title": "Werkbladnamen extraheren en weergeven in Java met behulp van de GroupDocs.Viewer API"
 "url": "/nl/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Werkbladnamen extraheren en weergeven in Java met behulp van de GroupDocs.Viewer API
 
 ## Invoering

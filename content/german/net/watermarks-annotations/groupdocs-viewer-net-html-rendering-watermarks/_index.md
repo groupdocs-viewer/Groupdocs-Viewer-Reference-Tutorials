@@ -4,8 +4,8 @@
 "title": "Meistern Sie das Dokument-Rendering in .NET mit GroupDocs.Viewer, HTML-Konvertierung und Wasserzeichenintegration"
 "url": "/de/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Master-Dokumenten-Rendering in .NET mit GroupDocs.Viewer: HTML-Konvertierung und Wasserzeichenintegration
 
 ## Einführung

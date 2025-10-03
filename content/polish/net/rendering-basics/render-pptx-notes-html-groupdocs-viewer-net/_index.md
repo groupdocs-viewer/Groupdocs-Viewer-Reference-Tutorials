@@ -4,8 +4,8 @@
 "title": "Konwertuj PPTX na HTML z notatkami przy użyciu GroupDocs.Viewer dla .NET"
 "url": "/pl/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Konwertuj prezentacje PPTX do HTML z notatkami przy użyciu GroupDocs.Viewer dla .NET
 
 ## Wstęp

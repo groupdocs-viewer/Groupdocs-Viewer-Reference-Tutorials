@@ -4,8 +4,8 @@
 "title": "Visualizzare fogli di calcolo Excel tramite interruzioni di pagina utilizzando GroupDocs.Viewer per .NET"
 "url": "/it/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Visualizzare fogli di calcolo Excel tramite interruzioni di pagina utilizzando GroupDocs.Viewer per .NET
 
 ## Introduzione

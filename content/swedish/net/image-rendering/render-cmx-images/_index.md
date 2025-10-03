@@ -5,8 +5,8 @@
 "title": "Rendera CMX-bilder"
 "url": "/sv/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # Rendera CMX-bilder
 
 ## Introduktion

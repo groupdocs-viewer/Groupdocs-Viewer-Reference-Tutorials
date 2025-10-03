@@ -5,8 +5,8 @@
 "title": "AI 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # AI 이미지 렌더링
 
 ## 소개

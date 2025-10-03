@@ -5,8 +5,8 @@
 "title": "Включить подсказки шрифтов в PDF"
 "url": "/ru/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Включить подсказки шрифтов в PDF
 
 ## Введение

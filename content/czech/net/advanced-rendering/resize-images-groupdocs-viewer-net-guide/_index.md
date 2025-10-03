@@ -4,8 +4,8 @@
 "title": "Jak změnit velikost obrázků pomocí GroupDocs.Viewer .NET – Podrobný návod pro vývojáře"
 "url": "/cs/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Jak změnit velikost obrázků pomocí GroupDocs.Viewer .NET: Podrobný návod pro vývojáře
 
 ## Zavedení

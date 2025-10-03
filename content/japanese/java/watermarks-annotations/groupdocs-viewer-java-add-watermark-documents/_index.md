@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Javaを使用してドキュメントに透かしを追加する包括的なガイド"
 "url": "/ja/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java を使用してドキュメントに透かしを追加する: 総合ガイド
 
 ## 導入

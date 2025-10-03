@@ -5,8 +5,8 @@
 "title": "Προστατέψτε το PDF που έχει αποδοθεί με κωδικό πρόσβασης"
 "url": "/el/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Προστατέψτε το PDF που έχει αποδοθεί με κωδικό πρόσβασης
 
 ## Εισαγωγή

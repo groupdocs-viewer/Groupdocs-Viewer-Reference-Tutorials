@@ -4,8 +4,8 @@
 "title": "كيفية عرض صفحات محددة باستخدام GroupDocs.Viewer .NET - دليل شامل للمطورين"
 "url": "/ar/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض صفحات محددة باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

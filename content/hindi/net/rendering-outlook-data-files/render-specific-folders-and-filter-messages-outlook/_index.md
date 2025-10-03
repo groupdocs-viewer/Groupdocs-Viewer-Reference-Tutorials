@@ -5,8 +5,8 @@
 "title": "विशिष्ट फ़ोल्डर्स रेंडर करें और संदेश फ़िल्टर करें (Outlook)"
 "url": "/hi/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # विशिष्ट फ़ोल्डर्स रेंडर करें और संदेश फ़िल्टर करें (Outlook)
 
 ## परिचय

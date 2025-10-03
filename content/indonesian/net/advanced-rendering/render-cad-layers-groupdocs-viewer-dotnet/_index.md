@@ -4,8 +4,8 @@
 "title": "Cara Membuat Render Layer CAD Tertentu Menggunakan GroupDocs.Viewer untuk .NET&#58; Panduan Lengkap"
 "url": "/id/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat Layer Gambar CAD Tertentu Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

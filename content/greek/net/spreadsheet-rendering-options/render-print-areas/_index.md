@@ -5,8 +5,8 @@
 "title": "Απόδοση περιοχών εκτύπωσης με το GroupDocs.Viewer για .NET"
 "url": "/el/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Απόδοση περιοχών εκτύπωσης με το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

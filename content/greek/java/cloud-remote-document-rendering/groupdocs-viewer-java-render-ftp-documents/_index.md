@@ -4,8 +4,8 @@
 "title": "Απόδοση εγγράφων από FTP χρησιμοποιώντας το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση εγγράφων από FTP χρησιμοποιώντας το GroupDocs.Viewer για Java: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

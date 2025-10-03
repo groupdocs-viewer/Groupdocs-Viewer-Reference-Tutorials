@@ -5,8 +5,8 @@
 "title": "Rendera Outlook-datafiler (PST, OST)"
 "url": "/sv/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Rendera Outlook-datafiler (PST, OST)
 
 ## Introduktion

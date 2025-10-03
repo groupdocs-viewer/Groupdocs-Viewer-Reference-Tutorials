@@ -5,8 +5,8 @@
 "title": "Renderizando documentos para PDF"
 "url": "/pt/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Renderizando documentos para PDF
 
 

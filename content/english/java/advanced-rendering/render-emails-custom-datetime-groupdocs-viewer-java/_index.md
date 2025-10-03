@@ -8,10 +8,8 @@ keywords:
 - render emails with custom datetime
 - GroupDocs Viewer for Java
 - email rendering HTML
-
+type: docs
 ---
-
-
 # Render Emails with Custom DateTime in Java Using GroupDocs.Viewer
 
 ## Introduction

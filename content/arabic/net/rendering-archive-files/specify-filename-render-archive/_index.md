@@ -5,8 +5,8 @@
 "title": "تحديد اسم الملف عند عرض ملفات الأرشيف"
 "url": "/ar/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # تحديد اسم الملف عند عرض ملفات الأرشيف
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "Cách triển khai đặc tả loại tài liệu trong GroupDocs.Viewer cho Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách triển khai đặc tả loại tài liệu trong GroupDocs.Viewer cho Java
 
 Hướng dẫn từng bước về cách chỉ định loại tệp để hiển thị tệp DOCX bằng GroupDocs.Viewer cho Java.

@@ -5,8 +5,8 @@
 "title": "Απόδοση γραμμών πλέγματος"
 "url": "/el/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Απόδοση γραμμών πλέγματος
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@
 "title": "隠しページをレンダリングする"
 "url": "/ja/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # 隠しページをレンダリングする
 
 ## 導入

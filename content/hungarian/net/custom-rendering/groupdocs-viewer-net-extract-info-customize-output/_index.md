@@ -4,8 +4,8 @@
 "title": "Dokumentuminformációk kinyerése és a kimenet testreszabása a GroupDocs.Viewer .NET segítségével – Átfogó útmutató"
 "url": "/hu/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentuminformációk kinyerése és a kimenet testreszabása a GroupDocs.Viewer .NET segítségével
 ## Egyéni renderelési oktatóanyag
 ### Amit tanulni fogsz:

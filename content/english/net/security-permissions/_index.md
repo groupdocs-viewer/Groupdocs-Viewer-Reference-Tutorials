@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Security"]
 tags: ["document-security", "access-control", "password-protection", "secure-rendering"]
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Document Security - Complete Implementation Guide
 
 Protecting sensitive documents while maintaining seamless viewing experiences is crucial for modern .NET applications. Whether you're building enterprise software, client portals, or document management systems, implementing robust security measures with GroupDocs.Viewer .NET ensures your documents stay protected while remaining accessible to authorized users.

@@ -4,8 +4,8 @@
 "title": "Outlook-adatok lekérése a GroupDocs.Viewer for .NET használatával"
 "url": "/hu/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Outlook-adatok lekérése a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

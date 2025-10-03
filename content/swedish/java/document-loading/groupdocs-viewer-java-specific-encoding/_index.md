@@ -4,8 +4,8 @@
 "title": "Hur man laddar dokument med specifik kodning i Java med GroupDocs.Viewer"
 "url": "/sv/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # Hur man laddar dokument med specifik kodning i Java med GroupDocs.Viewer
 
 ## Introduktion

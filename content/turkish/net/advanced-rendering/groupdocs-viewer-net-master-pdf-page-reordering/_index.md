@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile .NET'te PDF Sayfa Yeniden Sıralamada Ustalaşın&#58; Bir Geliştiricinin Kılavuzu"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile PDF Sayfa Yeniden Sıralamada Ustalaşma: Kapsamlı Bir Geliştirici Kılavuzu
 
 ## giriiş

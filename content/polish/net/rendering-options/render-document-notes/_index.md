@@ -5,8 +5,8 @@
 "title": "Renderuj dokument z notatkami"
 "url": "/pl/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Renderuj dokument z notatkami
 
 ## Wstęp

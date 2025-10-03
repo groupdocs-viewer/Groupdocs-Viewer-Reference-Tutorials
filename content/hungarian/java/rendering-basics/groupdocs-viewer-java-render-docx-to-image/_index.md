@@ -4,8 +4,8 @@
 "title": "DOCX képfájl renderelése GroupDocs Viewer for Java használatával – Átfogó útmutató"
 "url": "/hu/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # DOCX képpé renderelése GroupDocs Viewer for Java segítségével
 
 ## Bevezetés

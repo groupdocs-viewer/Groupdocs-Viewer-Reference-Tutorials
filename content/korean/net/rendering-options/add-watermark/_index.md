@@ -5,8 +5,8 @@
 "title": "문서에 워터마크 추가"
 "url": "/ko/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # 문서에 워터마크 추가
 
 ## 소개

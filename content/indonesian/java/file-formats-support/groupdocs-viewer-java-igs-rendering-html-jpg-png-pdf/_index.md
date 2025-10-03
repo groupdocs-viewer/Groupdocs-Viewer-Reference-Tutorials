@@ -4,8 +4,8 @@
 "title": "Menguasai GroupDocs.Viewer Java&#58; Mengonversi File IGS ke HTML, JPG, PNG, dan PDF"
 "url": "/id/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai GroupDocs.Viewer Java: Mengonversi File IGS ke Berbagai Format
 
 ## Perkenalan

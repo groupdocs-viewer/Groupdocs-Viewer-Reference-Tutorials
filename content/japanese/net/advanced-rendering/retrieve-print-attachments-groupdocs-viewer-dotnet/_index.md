@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用してドキュメントの添付ファイルを取得および印刷する方法 | 高度なレンダリングガイド"
 "url": "/ja/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用してドキュメントの添付ファイルを取得および印刷する方法 | 高度なレンダリングガイド
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "عرض ملفات PDF/OXPS مع قيود الخطوط باستخدام GroupDocs.Viewer .NET - دليل شامل"
 "url": "/ar/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # عرض ملفات PDF/OXPS مع قيود الخطوط باستخدام GroupDocs.Viewer .NET: دليل شامل
 
 ## مقدمة

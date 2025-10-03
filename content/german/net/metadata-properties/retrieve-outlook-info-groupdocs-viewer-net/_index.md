@@ -4,8 +4,8 @@
 "title": "So rufen Sie Outlook-Dateninformationen mit GroupDocs.Viewer für .NET ab"
 "url": "/de/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie Outlook-Dateninformationen mit GroupDocs.Viewer für .NET ab
 
 ## Einführung

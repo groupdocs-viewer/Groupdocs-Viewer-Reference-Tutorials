@@ -5,8 +5,8 @@
 "title": "渲染隱藏的列和列"
 "url": "/zh-hant/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # 渲染隱藏的列和列
 
 ## 介紹

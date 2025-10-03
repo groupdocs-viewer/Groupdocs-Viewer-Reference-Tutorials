@@ -3,8 +3,8 @@
 "title": "Hướng dẫn xuất và chuyển đổi tài liệu cho GroupDocs.Viewer Java"
 "url": "/vi/java/export-conversion/"
 "weight": 15
+type: docs
 ---
-
 # Hướng dẫn xuất và chuyển đổi tài liệu cho GroupDocs.Viewer Java
 
 Làm chủ các kỹ thuật xuất và chuyển đổi tài liệu với hướng dẫn Java GroupDocs.Viewer của chúng tôi. Các hướng dẫn từng bước này trình bày cách chuyển đổi tài liệu giữa nhiều định dạng, triển khai các chiến lược xuất, duy trì định dạng trong quá trình chuyển đổi và xử lý quá trình xử lý tài liệu đa định dạng phức tạp. Mỗi hướng dẫn bao gồm các ví dụ mã Java chi tiết cho các tình huống xuất và chuyển đổi phổ biến, giúp bạn xây dựng các giải pháp chuyển đổi tài liệu linh hoạt.

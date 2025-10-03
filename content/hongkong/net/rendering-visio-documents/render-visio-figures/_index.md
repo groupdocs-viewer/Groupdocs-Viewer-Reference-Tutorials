@@ -5,8 +5,8 @@
 "title": "渲染 Visio 圖形"
 "url": "/zh-hant/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # 渲染 Visio 圖形
 
 ## 介紹

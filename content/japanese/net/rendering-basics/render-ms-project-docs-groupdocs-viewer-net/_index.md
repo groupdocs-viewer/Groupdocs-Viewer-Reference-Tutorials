@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して MS Project ドキュメントをレンダリングし、プロジェクト管理を強化する"
 "url": "/ja/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用した MS Project ドキュメントのレンダリングのマスター
 
 ## 導入

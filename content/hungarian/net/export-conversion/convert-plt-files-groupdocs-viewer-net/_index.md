@@ -4,8 +4,8 @@
 "title": "PLT fájlok konvertálása HTML, JPG, PNG és PDF formátumba a GroupDocs.Viewer .NET segítségével"
 "url": "/hu/net/export-conversion/convert-plt-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PLT fájlok konvertálása a GroupDocs.Viewer .NET használatával
 ## Bevezetés
 Nehezen tud mérnöki rajzokat PLT fájlokból konvertálni? Fedezze fel, hogyan konvertálhatja őket zökkenőmentesen HTML, JPG, PNG vagy PDF formátumba a hatékony GroupDocs.Viewer .NET könyvtár segítségével. Akár webes megjelenítéshez, akár prezentációs célokra van szüksége ezekre a formátumokra, ez az útmutató segít optimalizálni a megvalósítását.

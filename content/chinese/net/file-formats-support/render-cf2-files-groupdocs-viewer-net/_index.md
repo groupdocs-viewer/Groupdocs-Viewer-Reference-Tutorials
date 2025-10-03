@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 将 CF2 文件渲染为 HTML、JPG、PNG 和 PDF"
 "url": "/zh/net/file-formats-support/render-cf2-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 渲染 CF2 文件
 
 ## 如何使用 GroupDocs.Viewer for .NET 转换 CF2 文件

@@ -5,8 +5,8 @@
 "title": "تقديم صور TGA"
 "url": "/ar/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # تقديم صور TGA
 
 ## مقدمة

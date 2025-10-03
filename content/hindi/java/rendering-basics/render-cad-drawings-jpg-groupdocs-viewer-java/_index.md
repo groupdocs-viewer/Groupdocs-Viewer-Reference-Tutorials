@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java का उपयोग करके CAD चित्रों को JPG के रूप में प्रस्तुत करें एक व्यापक गाइड"
 "url": "/hi/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java का उपयोग करके CAD ड्रॉइंग को JPG के रूप में कैसे प्रस्तुत करें: एक चरण-दर-चरण ट्यूटोरियल
 
 ## परिचय

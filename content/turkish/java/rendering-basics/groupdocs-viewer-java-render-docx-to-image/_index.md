@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs Görüntüleyicisini Kullanarak DOCX'i Görüntüye Dönüştürme&#58; Kapsamlı Bir Kılavuz"
 "url": "/tr/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs Görüntüleyicisi ile DOCX'i Görüntüye Dönüştürme
 
 ## giriiş

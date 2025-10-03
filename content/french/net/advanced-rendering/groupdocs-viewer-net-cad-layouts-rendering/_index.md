@@ -4,8 +4,8 @@
 "title": "Rendu de mise en page CAO efficace avec GroupDocs.Viewer pour .NET &#58; un guide étape par étape"
 "url": "/fr/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Rendu de mise en page CAO efficace avec GroupDocs.Viewer pour .NET
 
 ## Introduction

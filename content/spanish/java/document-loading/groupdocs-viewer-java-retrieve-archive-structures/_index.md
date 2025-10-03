@@ -4,8 +4,8 @@
 "title": "Cómo recuperar estructuras de archivo con GroupDocs.Viewer para Java&#58; una guía completa"
 "url": "/es/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Cómo recuperar estructuras de archivo mediante GroupDocs.Viewer para Java
 
 ## Introducción

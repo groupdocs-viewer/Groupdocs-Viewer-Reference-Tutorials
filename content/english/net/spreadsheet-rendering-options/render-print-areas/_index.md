@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "excel-rendering", "print-areas", "csharp", "dotnet"]
+type: docs
 ---
-
 # How to Render Excel Print Areas in .NET - Complete Developer Guide
 
 ## Introduction

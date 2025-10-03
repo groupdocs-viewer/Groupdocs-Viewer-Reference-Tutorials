@@ -8,10 +8,8 @@ keywords:
 - Render CF2 Files
 - CF2 File Conversion
 - GroupDocs.Viewer for .NET
-
+type: docs
 ---
-
-
 # Render CF2 Files with GroupDocs.Viewer for .NET
 
 ## How to Convert CF2 Files Using GroupDocs.Viewer for .NET

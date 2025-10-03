@@ -5,8 +5,8 @@
 "title": "渲染 EMZ 和 EMF 图像"
 "url": "/zh/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # 渲染 EMZ 和 EMF 图像
 
 ## 介绍

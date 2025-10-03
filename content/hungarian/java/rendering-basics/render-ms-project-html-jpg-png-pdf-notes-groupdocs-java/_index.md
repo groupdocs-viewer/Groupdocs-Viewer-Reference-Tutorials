@@ -4,8 +4,8 @@
 "title": "MS Project fájlok HTML, JPG, PNG és PDF formátumban történő renderelése jegyzetekkel a GroupDocs.Viewer for Java használatával"
 "url": "/hu/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # MS Project fájlok HTML, JPG, PNG és PDF formátumban történő renderelése jegyzetekkel a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

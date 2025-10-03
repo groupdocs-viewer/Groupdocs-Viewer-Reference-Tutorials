@@ -4,8 +4,8 @@
 "title": "Разделение чертежей САПР на фрагменты с помощью GroupDocs.Viewer Java для эффективного рендеринга"
 "url": "/ru/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Разделение чертежей САПР на фрагменты с помощью GroupDocs.Viewer Java
 
 ## Введение

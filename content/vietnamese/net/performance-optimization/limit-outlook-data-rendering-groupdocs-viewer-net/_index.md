@@ -4,8 +4,8 @@
 "title": "Tối ưu hóa việc kết xuất dữ liệu Outlook trong .NET với các mẹo và kỹ thuật về hiệu suất của GroupDocs.Viewer"
 "url": "/vi/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Tối ưu hóa việc kết xuất dữ liệu Outlook với GroupDocs.Viewer .NET
 
 ## Giới thiệu

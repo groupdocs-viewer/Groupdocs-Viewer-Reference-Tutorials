@@ -5,8 +5,8 @@
 "title": "ドキュメントを読み込むときにファイルの種類を指定する"
 "url": "/ja/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # ドキュメントを読み込むときにファイルの種類を指定する
 
 ## 導入

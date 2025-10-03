@@ -5,8 +5,8 @@
 "title": "Ställ in datum- och tidsformat och tidszonsförskjutning (e-post)"
 "url": "/sv/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Ställ in datum- och tidsformat och tidszonsförskjutning (e-post)
 
 

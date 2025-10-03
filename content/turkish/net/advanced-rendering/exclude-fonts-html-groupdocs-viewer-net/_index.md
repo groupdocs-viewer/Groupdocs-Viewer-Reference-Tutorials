@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer Kullanılarak HTML Çıktısından Belirli Yazı Tipleri Nasıl Hariç Tutulur"
 "url": "/tr/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer Kullanılarak Yazı Tipleri HTML Çıktısından Nasıl Hariç Tutulur
 
 ## giriiş

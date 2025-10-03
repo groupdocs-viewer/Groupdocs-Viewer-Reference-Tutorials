@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer Kullanılarak Bir Belgenin Seçili Sayfaları Nasıl Oluşturulur"
 "url": "/tr/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Belirli Sayfaların Nasıl Oluşturulacağı
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Načíst dokumenty ze streamu"
 "url": "/cs/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Načíst dokumenty ze streamu
 
 ## Zavedení

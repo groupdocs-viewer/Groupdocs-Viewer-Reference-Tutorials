@@ -4,8 +4,8 @@
 "title": "Рендеринг Java PDF с помощью GroupDocs.Viewer&#58; Реализация разрывов страниц в электронных таблицах"
 "url": "/ru/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Освоение рендеринга Java PDF: GroupDocs.Viewer с разрывами страниц
 
 Откройте для себя мощь рендеринга электронных таблиц в ваших приложениях Java с помощью GroupDocs.Viewer. Это всеобъемлющее руководство покажет вам, как реализовать рендеринг Java PDF с разрывами страниц для бесшовного преобразования в PDF.

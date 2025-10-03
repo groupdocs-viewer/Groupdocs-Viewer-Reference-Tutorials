@@ -5,8 +5,8 @@
 "title": "Ambil dan Simpan Lampiran Dokumen"
 "url": "/id/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Ambil dan Simpan Lampiran Dokumen
 
 ## Perkenalan

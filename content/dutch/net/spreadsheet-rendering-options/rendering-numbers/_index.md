@@ -5,8 +5,8 @@
 "title": "Weergavecijfers"
 "url": "/nl/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Weergavecijfers
 
 ## Invoering

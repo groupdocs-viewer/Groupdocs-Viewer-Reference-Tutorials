@@ -4,8 +4,8 @@
 "title": "Renderizar documentos con GroupDocs.Viewer .NET desde Streams&#58; una guía completa para desarrolladores"
 "url": "/es/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar documentos usando GroupDocs.Viewer .NET desde secuencias: una guía completa para desarrolladores
 
 ## Introducción

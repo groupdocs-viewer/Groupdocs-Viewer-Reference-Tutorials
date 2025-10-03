@@ -4,8 +4,8 @@
 "title": "Implementatie van een gelicentieerde licentie voor GroupDocs.Viewer in Java&#58; een handleiding voor ontwikkelaars"
 "url": "/nl/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementatie van een gelicentieerde licentie voor GroupDocs.Viewer voor Java: een handleiding voor ontwikkelaars
 
 ## Invoering

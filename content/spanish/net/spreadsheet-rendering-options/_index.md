@@ -5,8 +5,8 @@
 "title": "Opciones de representación de hojas de cálculo"
 "url": "/es/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Opciones de representación de hojas de cálculo
 
 ## Introducción

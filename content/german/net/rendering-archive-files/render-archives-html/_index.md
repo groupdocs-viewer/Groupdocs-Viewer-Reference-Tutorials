@@ -5,8 +5,8 @@
 "title": "Rendern Sie Archive auf einzelne oder mehrere HTML-Seiten"
 "url": "/de/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Rendern Sie Archive auf einzelne oder mehrere HTML-Seiten
 
 ## Einführung

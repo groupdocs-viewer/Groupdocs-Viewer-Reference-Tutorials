@@ -4,8 +4,8 @@
 "title": "إتقان إعادة ترتيب صفحات PDF في .NET باستخدام GroupDocs.Viewer - دليل المطور"
 "url": "/ar/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # إتقان إعادة ترتيب صفحات PDF باستخدام GroupDocs.Viewer .NET: دليل شامل للمطورين
 
 ## مقدمة

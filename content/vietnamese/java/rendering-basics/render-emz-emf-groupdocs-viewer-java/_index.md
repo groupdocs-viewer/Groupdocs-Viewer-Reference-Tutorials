@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp EMZ/EMF bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/rendering-basics/render-emz-emf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hướng dẫn toàn diện: Kết xuất tệp EMZ/EMF bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

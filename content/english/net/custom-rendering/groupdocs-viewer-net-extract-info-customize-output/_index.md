@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - extract document info
 - customize output directory
-
+type: docs
 ---
-
-
 # Extract Document Info & Customize Output with GroupDocs.Viewer .NET
 ## Custom Rendering Tutorial
 ### What You'll Learn:

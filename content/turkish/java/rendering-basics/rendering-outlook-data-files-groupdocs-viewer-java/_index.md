@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer'ı Java'da Kullanarak Outlook Veri Dosyalarını Nasıl Oluşturursunuz? Adım Adım Kılavuz"
 "url": "/tr/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java'da GroupDocs.Viewer Kullanarak Outlook Veri Dosyaları Nasıl Oluşturulur: Adım Adım Kılavuz
 
 ## giriiş

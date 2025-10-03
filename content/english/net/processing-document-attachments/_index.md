@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["attachments", "document-viewer", "dotnet", "groupdocs"]
+type: docs
 ---
-
 # Document Attachment Processing in .NET Applications
 
 ## Introduction

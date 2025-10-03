@@ -3,8 +3,8 @@
 "title": "Tutoriales de extracción de metadatos de documentos para GroupDocs.Viewer .NET"
 "url": "/es/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Tutoriales de extracción de metadatos de documentos para GroupDocs.Viewer .NET
 
 Aprenda a trabajar con metadatos y propiedades de documentos con nuestros tutoriales .NET de GroupDocs.Viewer. Estas guías prácticas muestran cómo extraer información de documentos, leer campos de metadatos, administrar propiedades de documentos e implementar el procesamiento de documentos basado en metadatos. Cada tutorial incluye ejemplos de código .NET funcionales para escenarios comunes de metadatos, lo que le ayudará a crear aplicaciones que puedan analizar y administrar eficazmente la información de los documentos.

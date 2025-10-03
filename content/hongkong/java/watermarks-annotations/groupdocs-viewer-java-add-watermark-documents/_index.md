@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 為文件添加浮水印－綜合指南"
 "url": "/zh-hant/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer Java 為文件添加浮水印：綜合指南
 
 ## 介紹

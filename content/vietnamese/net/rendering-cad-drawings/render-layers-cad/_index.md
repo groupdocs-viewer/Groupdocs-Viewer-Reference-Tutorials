@@ -5,8 +5,8 @@
 "title": "Kết xuất các lớp trong bản vẽ CAD"
 "url": "/vi/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Kết xuất các lớp trong bản vẽ CAD
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์เลเยอร์ CAD เฉพาะโดยใช้ GroupDocs.Viewer สำหรับ .NET คำแนะนำที่ครอบคลุม"
 "url": "/th/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์เลเยอร์การวาด CAD เฉพาะโดยใช้ GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

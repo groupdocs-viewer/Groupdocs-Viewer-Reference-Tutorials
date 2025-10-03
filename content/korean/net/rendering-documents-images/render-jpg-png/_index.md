@@ -5,8 +5,8 @@
 "title": "문서를 JPGPNG로 렌더링"
 "url": "/ko/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # 문서를 JPGPNG로 렌더링
 
 ## 소개

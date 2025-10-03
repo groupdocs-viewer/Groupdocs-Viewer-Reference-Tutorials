@@ -5,8 +5,8 @@
 "title": "Hämta och skriva ut dokumentbilagor"
 "url": "/sv/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Hämta och skriva ut dokumentbilagor
 
 ## Introduktion

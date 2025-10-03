@@ -4,8 +4,8 @@
 "title": "Cara Merender File TGA dalam .NET Menggunakan GroupDocs.Viewer&#58; Panduan Lengkap"
 "url": "/id/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File TGA dalam .NET Menggunakan GroupDocs.Viewer: Panduan Lengkap
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "Watermerk toevoegen in document"
 "url": "/nl/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Watermerk toevoegen in document
 
 ## Invoering

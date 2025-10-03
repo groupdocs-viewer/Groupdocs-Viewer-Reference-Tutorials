@@ -5,8 +5,8 @@
 "title": "Visio-figuren renderen"
 "url": "/nl/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Visio-figuren renderen
 
 ## Invoering

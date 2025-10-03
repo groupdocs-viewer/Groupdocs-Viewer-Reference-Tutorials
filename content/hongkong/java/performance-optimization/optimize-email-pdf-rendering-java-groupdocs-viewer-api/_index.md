@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer API 優化 Java 中的電子郵件到 PDF 渲染以獲得更好的效能"
 "url": "/zh-hant/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer API 優化 Java 中電子郵件轉 PDF 的渲染
 
 ## 介紹

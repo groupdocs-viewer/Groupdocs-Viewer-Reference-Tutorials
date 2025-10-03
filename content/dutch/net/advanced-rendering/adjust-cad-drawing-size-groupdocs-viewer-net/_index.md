@@ -4,8 +4,8 @@
 "title": "Optimaliseer de grootte van CAD-tekeningen met GroupDocs.Viewer .NET voor verbeterde webprestaties"
 "url": "/nl/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimaliseer de grootte van CAD-tekeningen met GroupDocs.Viewer .NET voor verbeterde webprestaties
 
 ## Invoering

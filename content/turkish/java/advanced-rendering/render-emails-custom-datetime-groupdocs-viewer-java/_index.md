@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer kullanarak Java'da E-postaları Özel Tarih ve Saatle Oluşturun"
 "url": "/tr/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java'da E-postaları Özel Tarih ve Saatle Oluşturma
 
 ## giriiş

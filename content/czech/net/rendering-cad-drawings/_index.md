@@ -5,8 +5,8 @@
 "title": "Renderování CAD výkresů"
 "url": "/cs/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Renderování CAD výkresů
 
 

@@ -5,8 +5,8 @@
 "title": "TGA छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # TGA छवियाँ प्रस्तुत करें
 
 ## परिचय

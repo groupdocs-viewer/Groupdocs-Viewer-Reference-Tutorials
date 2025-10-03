@@ -8,10 +8,8 @@ keywords:
 - render document attachments to HTML
 - GroupDocs.Viewer Java library
 - efficient attachment management
-
+type: docs
 ---
-
-
 # Render Document Attachments into HTML with GroupDocs.Viewer Java
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Визуализация чертежей САПР в формате JPG с помощью GroupDocs.Viewer Java&#58; Подробное руководство"
 "url": "/ru/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать чертежи САПР в формате JPG с помощью GroupDocs.Viewer Java: пошаговое руководство
 
 ## Введение

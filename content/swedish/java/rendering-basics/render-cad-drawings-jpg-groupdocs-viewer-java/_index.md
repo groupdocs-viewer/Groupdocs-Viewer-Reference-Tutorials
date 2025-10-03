@@ -4,8 +4,8 @@
 "title": "Rendera CAD-ritningar som JPG-filer med GroupDocs.Viewer Java – en omfattande guide"
 "url": "/sv/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar CAD-ritningar som JPG-filer med GroupDocs.Viewer Java: En steg-för-steg-handledning
 
 ## Introduktion

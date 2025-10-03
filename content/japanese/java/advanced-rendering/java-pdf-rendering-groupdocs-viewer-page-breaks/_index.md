@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用した Java PDF レンダリングとスプレッドシートへの改ページの実装"
 "url": "/ja/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Java PDF レンダリングのマスター: ページ区切り付きの GroupDocs.Viewer
 
 GroupDocs.Viewer を使えば、Java アプリケーションでスプレッドシートのレンダリングの威力を最大限に引き出すことができます。この包括的なガイドでは、ページ区切り付きの Java PDF レンダリングを実装し、シームレスに PDF に変換する方法を説明します。

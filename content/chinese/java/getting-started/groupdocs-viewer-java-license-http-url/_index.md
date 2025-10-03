@@ -4,8 +4,8 @@
 "title": "如何使用 HTTP URL 设置 GroupDocs.Viewer Java 许可证——完整指南"
 "url": "/zh/java/getting-started/groupdocs-viewer-java-license-http-url/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 HTTP URL 设置 GroupDocs.Viewer Java 许可证
 
 在当今快节奏的数字环境中，为文档管理工具设置合适的许可证对于实现无缝运营至关重要。本指南将向您展示如何使用 HTTP URL 在 Java 中为 GroupDocs.Viewer 设置许可证，从而简化您的工作流程，无需本地下载。掌握此流程可提高应用程序的合规性和效率。

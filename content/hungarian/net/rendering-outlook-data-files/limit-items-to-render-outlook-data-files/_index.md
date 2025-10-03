@@ -5,8 +5,8 @@
 "title": "Az Outlook adatfájlokban megjelenítendő elemek számának korlátozása"
 "url": "/hu/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Az Outlook adatfájlokban megjelenítendő elemek számának korlátozása
 
 ## Bevezetés

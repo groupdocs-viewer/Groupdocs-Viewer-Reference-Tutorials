@@ -4,8 +4,8 @@
 "title": "Effektiv omordning av PDF-sidor med GroupDocs.Viewer för Java – en omfattande guide"
 "url": "/sv/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Effektiv omordning av PDF-sidor med GroupDocs.Viewer för Java
 
 ## Introduktion

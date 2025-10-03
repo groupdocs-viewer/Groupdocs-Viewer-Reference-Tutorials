@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak HPG Belgelerini HTML, JPG, PNG, PDF'ye Verimli Şekilde Dönüştürün"
 "url": "/tr/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak HPG Belgeleri Nasıl Oluşturulur
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Renderizar e-mails com data e hora personalizadas em Java usando GroupDocs.Viewer"
 "url": "/pt/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar e-mails com data e hora personalizadas em Java usando GroupDocs.Viewer
 
 ## Introdução

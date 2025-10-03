@@ -5,8 +5,8 @@
 "title": "渲染文字处理文档"
 "url": "/zh/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # 渲染文字处理文档
 
 

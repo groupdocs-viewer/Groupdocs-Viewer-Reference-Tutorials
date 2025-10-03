@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 CAD 도면을 타일로 분할하여 효율적인 렌더링을 수행하는 방법"
 "url": "/ko/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 CAD 도면을 타일로 분할하는 방법
 
 ## 소개

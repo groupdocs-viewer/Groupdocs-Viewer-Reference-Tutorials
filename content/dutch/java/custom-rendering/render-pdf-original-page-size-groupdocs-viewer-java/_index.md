@@ -4,8 +4,8 @@
 "title": "PDF's in originele grootte weergeven met GroupDocs.Viewer voor Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # PDF's weergeven met hun oorspronkelijke paginaformaat met GroupDocs.Viewer voor Java
 
 Het renderen van een PDF met behoud van de oorspronkelijke paginagrootte is essentieel voor een nauwkeurige weergave op verschillende platforms en apparaten. Deze uitgebreide handleiding begeleidt u bij de implementatie van deze functie met behulp van de GroupDocs.Viewer voor Java API. Door deze stappen te volgen, zorgt u ervoor dat uw PDF's hun getrouwheid behouden tijdens het renderen.

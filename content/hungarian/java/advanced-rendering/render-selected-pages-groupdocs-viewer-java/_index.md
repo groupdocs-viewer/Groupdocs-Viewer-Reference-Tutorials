@@ -4,8 +4,8 @@
 "title": "Hogyan jelenítsük meg egy dokumentum kiválasztott oldalait a GroupDocs.Viewer for Java használatával?"
 "url": "/hu/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan jelenítsünk meg adott oldalakat a GroupDocs.Viewer for Java segítségével?
 
 ## Bevezetés

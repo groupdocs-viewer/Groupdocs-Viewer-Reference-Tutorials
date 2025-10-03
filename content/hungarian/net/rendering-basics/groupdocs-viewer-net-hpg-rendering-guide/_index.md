@@ -4,8 +4,8 @@
 "title": "HPG dokumentumok hatékony renderelése HTML, JPG, PNG és PDF formátumba a GroupDocs.Viewer .NET használatával"
 "url": "/hu/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # HPG dokumentumok renderelése a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용한 효율적인 CAD 레이아웃 렌더링 단계별 가이드"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용한 효율적인 CAD 레이아웃 렌더링
 
 ## 소개

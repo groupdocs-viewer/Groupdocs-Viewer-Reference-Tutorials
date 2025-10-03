@@ -5,8 +5,8 @@
 "title": "Membuat Gambar CAD"
 "url": "/id/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Membuat Gambar CAD
 
 

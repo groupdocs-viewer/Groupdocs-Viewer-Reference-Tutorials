@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων TGA"
 "url": "/el/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # Απόδοση εικόνων TGA
 
 ## Εισαγωγή

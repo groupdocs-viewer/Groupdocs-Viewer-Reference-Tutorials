@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용한 .NET PDF 레이어 렌더링 마스터하기&#58; 단계별 가이드"
 "url": "/ko/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용한 .NET PDF 레이어 렌더링 마스터하기: 단계별 가이드
 
 ## 소개

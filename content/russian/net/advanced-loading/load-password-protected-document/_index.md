@@ -5,8 +5,8 @@
 "title": "Загрузить защищенные паролем документы"
 "url": "/ru/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Загрузить защищенные паролем документы
 
 ## Введение

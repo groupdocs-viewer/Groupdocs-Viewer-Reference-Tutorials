@@ -5,8 +5,8 @@
 "title": "Outlook डेटा फ़ाइलों में रेंडर किए जाने वाले आइटमों की संख्या सीमित करें"
 "url": "/hi/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Outlook डेटा फ़ाइलों में रेंडर किए जाने वाले आइटमों की संख्या सीमित करें
 
 ## परिचय

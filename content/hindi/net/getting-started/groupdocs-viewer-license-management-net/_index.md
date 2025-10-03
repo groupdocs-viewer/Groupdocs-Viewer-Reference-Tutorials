@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer में लाइसेंस प्रबंधन में महारत हासिल करना एक व्यापक गाइड"
 "url": "/hi/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer में लाइसेंस प्रबंधन में महारत हासिल करना
 ## एक व्यापक गाइड
 

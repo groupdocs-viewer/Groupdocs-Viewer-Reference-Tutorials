@@ -5,8 +5,8 @@
 "title": "Rendern von Dokumenten in PDF"
 "url": "/de/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Rendern von Dokumenten in PDF
 
 

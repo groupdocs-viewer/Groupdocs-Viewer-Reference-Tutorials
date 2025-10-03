@@ -4,8 +4,8 @@
 "title": "Extrahování informací o dokumentu a úprava výstupu pomocí GroupDocs.Viewer .NET – Komplexní průvodce"
 "url": "/cs/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Extrahujte informace o dokumentu a upravte výstup pomocí GroupDocs.Viewer .NET
 ## Tutoriál k vlastnímu vykreslování
 ### Co se naučíte:

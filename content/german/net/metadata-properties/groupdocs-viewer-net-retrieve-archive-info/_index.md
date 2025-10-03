@@ -4,8 +4,8 @@
 "title": "So rufen Sie Archivinformationen mit GroupDocs.Viewer für .NET ab – Ein umfassender Leitfaden"
 "url": "/de/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie Archivinformationen mit GroupDocs.Viewer für .NET ab: Eine umfassende Anleitung
 
 ## Einführung

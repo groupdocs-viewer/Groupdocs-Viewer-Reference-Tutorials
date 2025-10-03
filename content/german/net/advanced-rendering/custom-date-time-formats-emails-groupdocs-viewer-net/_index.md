@@ -4,8 +4,8 @@
 "title": "Anpassen von Datums./Uhrzeitformaten und Zeitzonen-Offsets in E-Mails mit GroupDocs.Viewer .NET"
 "url": "/de/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Anpassen von Datums./Uhrzeitformaten und Zeitzonen in E-Mails mit GroupDocs.Viewer .NET
 
 ## Einführung

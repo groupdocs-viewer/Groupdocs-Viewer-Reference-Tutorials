@@ -4,8 +4,8 @@
 "title": "Jak omezit velikost JPG při vykreslování dokumentů pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jak omezit velikost JPG při vykreslování dokumentů pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

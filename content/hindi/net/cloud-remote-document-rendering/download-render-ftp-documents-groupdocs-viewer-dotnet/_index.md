@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET का उपयोग करके FTP से दस्तावेज़ों को कुशलतापूर्वक डाउनलोड और रेंडर करें"
 "url": "/hi/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके FTP से दस्तावेज़ों को कुशलतापूर्वक डाउनलोड और रेंडर कैसे करें
 
 ## परिचय

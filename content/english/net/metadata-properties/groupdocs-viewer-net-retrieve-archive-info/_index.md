@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for .NET
 - extract archive information
 - retrieve view information
-
+type: docs
 ---
-
-
 # How to Retrieve Archive Information Using GroupDocs.Viewer for .NET: A Comprehensive Guide
 
 ## Introduction

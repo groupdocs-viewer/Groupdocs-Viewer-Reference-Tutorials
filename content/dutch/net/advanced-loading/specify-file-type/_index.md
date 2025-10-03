@@ -5,8 +5,8 @@
 "title": "Geef het bestandstype op bij het laden van documenten"
 "url": "/nl/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Geef het bestandstype op bij het laden van documenten
 
 ## Invoering

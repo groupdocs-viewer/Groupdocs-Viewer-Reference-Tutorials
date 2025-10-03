@@ -4,8 +4,8 @@
 "title": ".NET HTML renderelés megvalósítása a GroupDocs.Viewer segítségével – lépésről lépésre útmutató"
 "url": "/hu/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # .NET HTML renderelés megvalósítása a GroupDocs.Viewer segítségével: lépésről lépésre útmutató
 
 ## Bevezetés

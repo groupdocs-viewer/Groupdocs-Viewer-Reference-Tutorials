@@ -5,8 +5,8 @@
 "title": "Belgeleri HTML'ye Dönüştürme"
 "url": "/tr/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Belgeleri HTML'ye Dönüştürme
 
 

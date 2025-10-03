@@ -5,8 +5,8 @@
 "title": "Verklein het gerenderde HTML-document"
 "url": "/nl/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Verklein het gerenderde HTML-document
 
 ## Invoering

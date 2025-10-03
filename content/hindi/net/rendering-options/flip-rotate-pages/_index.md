@@ -5,8 +5,8 @@
 "title": "पेज पलटें और घुमाएँ"
 "url": "/hi/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # पेज पलटें और घुमाएँ
 
 ## परिचय

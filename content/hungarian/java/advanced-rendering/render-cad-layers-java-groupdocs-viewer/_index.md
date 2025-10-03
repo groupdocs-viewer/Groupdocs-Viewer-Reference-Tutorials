@@ -4,8 +4,8 @@
 "title": "Specifikus CAD rétegek renderelése Java-ban a GroupDocs.Viewer használatával – Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Specifikus CAD rétegek renderelése Java-ban a GroupDocs.Viewer használatával
 ## Bevezetés
 Nehezen tud renderelni bizonyos rétegeket egy CAD rajzból? Akár mérnök, építész vagy fejlesztő vagy, aki összetett tervekkel foglalkozik, az egyes CAD rétegek kezelése és vizualizálása kihívást jelenthet. Ez az útmutató bemutatja, hogyan renderelhetsz hatékonyan bizonyos rétegeket a hatékony GroupDocs.Viewer for Java segítségével.

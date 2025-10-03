@@ -5,8 +5,8 @@
 "title": "Renderelés visszavonása visszavonási tokennel"
 "url": "/hu/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Renderelés visszavonása visszavonási tokennel
 
 ## Bevezetés

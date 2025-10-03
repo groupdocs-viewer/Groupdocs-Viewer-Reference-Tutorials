@@ -5,8 +5,8 @@
 "title": "Intervalle de temps de projet spécifique au rendu (MS Project)"
 "url": "/fr/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Intervalle de temps de projet spécifique au rendu (MS Project)
 
 ## Introduction

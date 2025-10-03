@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET ile Filtrelenmiş Outlook Veri İşleme Kapsamlı Bir Kılavuz"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET ile Filtrelenmiş Outlook Veri İşleme: Kapsamlı Bir Kılavuz
 ## giriiş
 İleti içeriği ve gönderen gibi belirli filtreler uygularken Outlook veri dosyalarını (.ost) verimli bir şekilde işlemekte zorlanıyor musunuz? Birçok geliştirici, Outlook iletilerini kesin ölçütlerle görüntülemek için kolaylaştırılmış bir çözüme ihtiyaç duyar. Bu kapsamlı kılavuzda, belge işlemeyi basitleştiren güçlü bir kitaplık olan GroupDocs.Viewer for .NET kullanarak Outlook verilerinin filtrelenmiş işlenmesinin nasıl gerçekleştirileceğini inceleyeceğiz.

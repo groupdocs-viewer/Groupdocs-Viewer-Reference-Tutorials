@@ -4,8 +4,8 @@
 "title": "Эффективная многослойная визуализация PDF-файлов в Java с использованием GroupDocs.Viewer"
 "url": "/ru/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Эффективная многослойная визуализация PDF-файлов в Java с использованием GroupDocs.Viewer
 
 ## Введение

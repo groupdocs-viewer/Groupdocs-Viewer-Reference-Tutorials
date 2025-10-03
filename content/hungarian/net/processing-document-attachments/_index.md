@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/hu/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # Dokumentummellékletek feldolgozása
 
 ## Bevezetés

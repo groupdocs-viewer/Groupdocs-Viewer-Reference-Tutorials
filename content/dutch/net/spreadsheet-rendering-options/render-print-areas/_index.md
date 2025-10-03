@@ -5,8 +5,8 @@
 "title": "Afdrukgebieden renderen met GroupDocs.Viewer voor .NET"
 "url": "/nl/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Afdrukgebieden renderen met GroupDocs.Viewer voor .NET
 
 ## Invoering

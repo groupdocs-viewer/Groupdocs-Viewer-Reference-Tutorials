@@ -4,8 +4,8 @@
 "title": "Personalizando formatos de data e hora e compensações de fuso horário em e-mails com GroupDocs.Viewer .NET"
 "url": "/pt/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Personalizando formatos de data e hora e fusos horários em e-mails com GroupDocs.Viewer .NET
 
 ## Introdução

@@ -5,8 +5,8 @@
 "title": "Ανάκτηση και αποθήκευση συνημμένων εγγράφων"
 "url": "/el/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Ανάκτηση και αποθήκευση συνημμένων εγγράφων
 
 ## Εισαγωγή

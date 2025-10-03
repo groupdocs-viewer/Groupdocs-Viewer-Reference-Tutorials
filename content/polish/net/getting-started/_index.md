@@ -5,8 +5,8 @@
 "title": "Pierwsze kroki"
 "url": "/pl/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Pierwsze kroki
 
 

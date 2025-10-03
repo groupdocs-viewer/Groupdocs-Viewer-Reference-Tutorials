@@ -4,8 +4,8 @@
 "title": "เรนเดอร์สเปรดชีต Excel โดยแบ่งหน้าโดยใช้ GroupDocs.Viewer สำหรับ .NET"
 "url": "/th/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์สเปรดชีต Excel โดยแบ่งหน้าโดยใช้ GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

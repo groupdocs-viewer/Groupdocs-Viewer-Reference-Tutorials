@@ -5,8 +5,8 @@
 "title": "載入具有特定編碼的文檔"
 "url": "/zh-hant/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # 載入具有特定編碼的文檔
 
 ## 介紹

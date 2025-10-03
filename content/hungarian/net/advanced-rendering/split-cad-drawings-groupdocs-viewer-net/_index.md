@@ -4,8 +4,8 @@
 "title": "CAD rajzok csempékre osztása a GroupDocs.Viewer .NET használatával a hatékony renderelés érdekében"
 "url": "/hu/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # CAD rajzok csempékre osztása a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

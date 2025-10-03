@@ -5,8 +5,8 @@
 "title": "Reordenar páginas en el documento"
 "url": "/es/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Reordenar páginas en el documento
 
 ## Introducción

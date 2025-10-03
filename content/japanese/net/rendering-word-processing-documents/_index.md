@@ -5,8 +5,8 @@
 "title": "ワープロ文書のレンダリング"
 "url": "/ja/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # ワープロ文書のレンダリング
 
 

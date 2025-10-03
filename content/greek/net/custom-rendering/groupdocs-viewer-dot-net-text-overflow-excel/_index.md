@@ -4,8 +4,8 @@
 "title": "Απόκρυψη υπερχείλισης κειμένου στο Excel χρησιμοποιώντας το GroupDocs.Viewer .NET® Ένας πλήρης οδηγός"
 "url": "/el/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Απόκρυψη υπερχείλισης κειμένου στο Excel με το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

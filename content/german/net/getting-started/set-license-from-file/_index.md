@@ -5,8 +5,8 @@
 "title": "Lizenz aus Datei festlegen"
 "url": "/de/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Lizenz aus Datei festlegen
 
 ## Einführung

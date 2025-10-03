@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Schriftarten einbetten und Dokumente effizient in HTML konvertieren"
 "url": "/de/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Dokument-Rendering mit GroupDocs.Viewer .NET meistern: Schriftarten einbetten und in HTML konvertieren
 
 ## Einführung

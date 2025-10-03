@@ -5,8 +5,8 @@
 "title": "รับข้อมูลการดูเอกสาร PDF"
 "url": "/th/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # รับข้อมูลการดูเอกสาร PDF
 
 ## การแนะนำ

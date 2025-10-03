@@ -8,10 +8,8 @@ keywords:
 - render documents to JPG
 - GroupDocs.Viewer for .NET setup
 - document rendering with GroupDocs
-
+type: docs
 ---
-
-
 # Convert Documents to JPG with GroupDocs.Viewer for .NET: A Comprehensive Guide
 
 ## Introduction

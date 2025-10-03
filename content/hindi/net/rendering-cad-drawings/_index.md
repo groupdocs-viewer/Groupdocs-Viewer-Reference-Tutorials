@@ -5,8 +5,8 @@
 "title": "सीएडी चित्र प्रस्तुत करना"
 "url": "/hi/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # सीएडी चित्र प्रस्तुत करना
 
 

@@ -4,8 +4,8 @@
 "title": "JPG képméret maximális korlátjának beállítása a GroupDocs.Viewer .NET használatával"
 "url": "/hu/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # JPG képméret maximális korlátjának beállítása a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

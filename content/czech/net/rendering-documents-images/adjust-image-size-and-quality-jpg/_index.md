@@ -5,8 +5,8 @@
 "title": "Úprava velikosti a kvality obrázku (JPG)"
 "url": "/cs/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Úprava velikosti a kvality obrázku (JPG)
 
 ## Zavedení

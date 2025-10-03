@@ -5,8 +5,8 @@
 "title": "PDF-renderingsalternativ"
 "url": "/sv/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF-renderingsalternativ
 
 

@@ -5,8 +5,8 @@
 "title": "Visioドキュメントのレンダリング"
 "url": "/ja/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Visioドキュメントのレンダリング
 
 ## 導入

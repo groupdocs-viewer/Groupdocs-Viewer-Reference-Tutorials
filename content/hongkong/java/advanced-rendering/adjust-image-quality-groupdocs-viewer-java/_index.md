@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中優化 PDF 影像質量"
 "url": "/zh-hant/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 在 Java 中優化 PDF 影像質量
 
 ## 介紹

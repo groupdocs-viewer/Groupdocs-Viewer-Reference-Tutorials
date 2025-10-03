@@ -5,8 +5,8 @@
 "title": "Укажите тип файла при загрузке документов"
 "url": "/ru/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Укажите тип файла при загрузке документов
 
 ## Введение

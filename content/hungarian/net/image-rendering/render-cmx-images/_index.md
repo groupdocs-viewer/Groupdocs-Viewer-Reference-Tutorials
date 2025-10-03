@@ -5,8 +5,8 @@
 "title": "CMX képek renderelése"
 "url": "/hu/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # CMX képek renderelése
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "透過 Stream 設定 GroupDocs.Viewer .NET 授權—完整指南"
 "url": "/zh-hant/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # 透過 Stream 設定 GroupDocs.Viewer .NET 許可證：完整指南
 
 ## 介紹

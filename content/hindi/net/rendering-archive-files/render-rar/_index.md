@@ -5,8 +5,8 @@
 "title": "RAR अभिलेखागार प्रस्तुत करें"
 "url": "/hi/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # RAR अभिलेखागार प्रस्तुत करें
 
 ## परिचय

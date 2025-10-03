@@ -8,10 +8,8 @@ keywords:
 - convert Excel 2003 XML
 - GroupDocs.Viewer Java
 - automate document conversion
-
+type: docs
 ---
-
-
 # Comprehensive Guide: Convert Excel 2003 XML to HTML/JPG/PNG/PDF with GroupDocs.Viewer Java
 
 ## Introduction

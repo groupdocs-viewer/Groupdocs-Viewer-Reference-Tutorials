@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer ile Verimli PDF Sayfa Yeniden Sıralama&#58; Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Verimli PDF Sayfa Yeniden Sıralama
 
 ## giriiş

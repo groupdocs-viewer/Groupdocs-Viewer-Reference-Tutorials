@@ -5,8 +5,8 @@
 "title": "더 빠른 문서 처리를 위해 캐싱을 활성화하세요"
 "url": "/ko/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # 더 빠른 문서 처리를 위해 캐싱을 활성화하세요
 
 ## 소개

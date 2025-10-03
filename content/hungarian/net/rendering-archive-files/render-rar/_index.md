@@ -5,8 +5,8 @@
 "title": "RAR archívumok renderelése"
 "url": "/hu/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # RAR archívumok renderelése
 
 ## Bevezetés

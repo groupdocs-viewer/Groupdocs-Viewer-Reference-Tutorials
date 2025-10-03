@@ -4,8 +4,8 @@
 "title": "วิธีการใช้การย่อขนาด HTML ด้วย GroupDocs.Viewer .NET เพื่อให้หน้าเว็บทำงานเร็วขึ้น"
 "url": "/th/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการใช้การย่อขนาด HTML ด้วย GroupDocs.Viewer .NET เพื่อให้หน้าเว็บทำงานเร็วขึ้น
 
 ## การแนะนำ

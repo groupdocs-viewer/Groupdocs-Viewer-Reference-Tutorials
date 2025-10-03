@@ -4,8 +4,8 @@
 "title": "Archiefstructuren ophalen met GroupDocs.Viewer voor Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Archiefstructuren ophalen met GroupDocs.Viewer voor Java
 
 ## Invoering

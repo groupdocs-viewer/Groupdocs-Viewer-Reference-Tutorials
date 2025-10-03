@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 글꼴 제한이 있는 PDF/OXPS 렌더링하기&#58; 종합 가이드"
 "url": "/ko/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 글꼴 제한이 있는 PDF/OXPS 렌더링: 포괄적인 가이드
 
 ## 소개

@@ -3,8 +3,8 @@
 "title": "Handledningar om dokumentsäkerhet och åtkomstkontroll för GroupDocs.Viewer Java"
 "url": "/sv/java/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Handledningar om dokumentsäkerhet och åtkomstkontroll för GroupDocs.Viewer Java
 
 Lär dig säkra dokumentvisning med våra omfattande säkerhetshandledningar för GroupDocs.Viewer för Java-utvecklare. Dessa detaljerade guider visar hur man implementerar lösenordsskydd, hanterar dokumentbehörigheter, hanterar krypterade filer och kontrollerar åtkomst till känsliga dokument programmatiskt. Varje handledning ger exempel på fungerande Java-kod för vanliga säkerhetsscenarier, vilket hjälper dig att bygga applikationer som upprätthåller dokumentkonfidentialitet och integritet samtidigt som de erbjuder kontrollerade visningsfunktioner.

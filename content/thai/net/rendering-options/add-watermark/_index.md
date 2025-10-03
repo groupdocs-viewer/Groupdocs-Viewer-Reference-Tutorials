@@ -5,8 +5,8 @@
 "title": "เพิ่มลายน้ำในเอกสาร"
 "url": "/th/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # เพิ่มลายน้ำในเอกสาร
 
 ## การแนะนำ

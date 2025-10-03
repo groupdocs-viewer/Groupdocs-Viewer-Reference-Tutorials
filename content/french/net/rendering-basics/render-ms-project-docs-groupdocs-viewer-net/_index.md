@@ -4,8 +4,8 @@
 "title": "Rendu de documents MS Project à l'aide de GroupDocs.Viewer .NET pour une gestion de projet améliorée"
 "url": "/fr/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendu principal des documents MS Project à l'aide de GroupDocs.Viewer .NET
 
 ## Introduction

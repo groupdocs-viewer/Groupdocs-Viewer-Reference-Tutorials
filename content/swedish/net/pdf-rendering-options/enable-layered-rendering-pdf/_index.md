@@ -5,8 +5,8 @@
 "title": "Aktivera lagerrendering i PDF"
 "url": "/sv/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Aktivera lagerrendering i PDF
 
 ## Introduktion

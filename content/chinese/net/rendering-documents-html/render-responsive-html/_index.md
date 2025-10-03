@@ -5,8 +5,8 @@
 "title": "渲染响应式 HTML"
 "url": "/zh/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # 渲染响应式 HTML
 
 ## 介绍

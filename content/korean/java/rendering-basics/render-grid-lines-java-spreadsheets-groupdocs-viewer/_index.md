@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java 스프레드시트에서 격자선을 렌더링하는 방법"
 "url": "/ko/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java 스프레드시트에서 격자선을 렌더링하는 방법
 
 ## 소개

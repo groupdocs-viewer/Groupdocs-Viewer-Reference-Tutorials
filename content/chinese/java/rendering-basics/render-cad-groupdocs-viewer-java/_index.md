@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 Java 中渲染特定的 CAD 图纸"
 "url": "/zh/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 在 Java 中渲染特定的 CAD 图纸
 
 ## 介绍

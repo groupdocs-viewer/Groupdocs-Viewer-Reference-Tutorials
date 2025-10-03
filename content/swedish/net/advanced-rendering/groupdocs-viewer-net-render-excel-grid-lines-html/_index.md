@@ -4,8 +4,8 @@
 "title": "Hur man renderar rutnät i Excel-kalkylblad med GroupDocs.Viewer .NET för HTML-utdata"
 "url": "/sv/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar rutnät i Excel-kalkylblad med GroupDocs.Viewer .NET för HTML-utdata
 
 ## Introduktion

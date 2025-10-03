@@ -5,8 +5,8 @@
 "title": "Рендеринг изображений APNG"
 "url": "/ru/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Рендеринг изображений APNG
 
 ## Введение

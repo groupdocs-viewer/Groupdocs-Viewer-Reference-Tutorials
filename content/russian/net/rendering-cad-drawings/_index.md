@@ -5,8 +5,8 @@
 "title": "Визуализация чертежей САПР"
 "url": "/ru/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Визуализация чертежей САПР
 
 

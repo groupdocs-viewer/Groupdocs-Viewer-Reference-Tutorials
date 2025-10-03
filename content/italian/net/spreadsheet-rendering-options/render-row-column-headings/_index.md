@@ -5,8 +5,8 @@
 "title": "Rendering delle intestazioni di riga e colonna"
 "url": "/it/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Rendering delle intestazioni di riga e colonna
 
 ## Introduzione

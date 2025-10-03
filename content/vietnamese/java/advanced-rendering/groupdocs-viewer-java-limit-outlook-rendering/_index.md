@@ -4,8 +4,8 @@
 "title": "Giới hạn hiển thị mục Outlook trong Java bằng GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Giới hạn kết xuất mục Outlook trong Java bằng GroupDocs.Viewer
 
 ## Tổng quan

@@ -4,8 +4,8 @@
 "title": "كيفية عرض ملفات MS Project بتنسيق HTML وJPG وPNG وPDF مع الملاحظات باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض ملفات MS Project بتنسيق HTML وJPG وPNG وPDF مع الملاحظات باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "Imposta licenza da Stream"
 "url": "/it/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Imposta licenza da Stream
 
 ## Introduzione

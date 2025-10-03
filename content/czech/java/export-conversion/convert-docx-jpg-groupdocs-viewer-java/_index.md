@@ -4,8 +4,8 @@
 "title": "Převod DOCX do JPG v Javě pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/java/export-conversion/convert-docx-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Zvládněte vykreslování DOCX do JPG v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

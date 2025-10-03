@@ -3,8 +3,8 @@
 "title": "Handledningar om dokumentsäkerhet och åtkomstkontroll för GroupDocs.Viewer .NET"
 "url": "/sv/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Handledningar om dokumentsäkerhet och åtkomstkontroll för GroupDocs.Viewer .NET
 
 Lär dig säkra dokumentvisning med våra omfattande GroupDocs.Viewer-säkerhetshandledningar för .NET-utvecklare. Dessa detaljerade guider visar hur man implementerar lösenordsskydd, hanterar dokumentbehörigheter, hanterar krypterade filer och kontrollerar åtkomst till känsliga dokument programmatiskt. Varje handledning ger fungerande .NET-kodexempel för vanliga säkerhetsscenarier, vilket hjälper dig att bygga applikationer som upprätthåller dokumentkonfidentialitet och integritet samtidigt som de erbjuder kontrollerade visningsfunktioner.

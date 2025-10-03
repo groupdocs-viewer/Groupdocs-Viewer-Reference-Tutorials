@@ -3,8 +3,8 @@
 "title": "Výukové programy pro cloudové a vzdálené vykreslování dokumentů pro GroupDocs.Viewer .NET"
 "url": "/cs/net/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Výukové programy pro cloudové a vzdálené vykreslování dokumentů pro GroupDocs.Viewer .NET
 
 Naučte se implementovat cloudové a vzdálené vykreslování dokumentů s našimi tutoriály o GroupDocs.Viewer v .NET. Tyto praktické průvodce demonstrují techniky načítání a vykreslování dokumentů z poskytovatelů cloudových úložišť, práci se vzdálenými URL adresami, správu síťových zdrojů souborů a implementaci distribuovaných řešení pro prohlížení dokumentů. Každý tutoriál obsahuje podrobné příklady kódu .NET pro běžné scénáře cloudového a vzdáleného vykreslování, které vám pomohou vytvářet aplikace s flexibilními možnostmi přístupu k dokumentům.

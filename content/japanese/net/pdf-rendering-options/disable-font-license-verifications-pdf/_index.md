@@ -5,8 +5,8 @@
 "title": "PDF のフォントライセンス検証を無効にする"
 "url": "/ja/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # PDF のフォントライセンス検証を無効にする
 
 ## 導入

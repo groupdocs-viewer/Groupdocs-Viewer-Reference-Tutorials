@@ -5,8 +5,8 @@
 "title": "高級用法（快取）"
 "url": "/zh-hant/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # 高級用法（快取）
 
 

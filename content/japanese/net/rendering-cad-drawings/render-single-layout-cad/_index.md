@@ -5,8 +5,8 @@
 "title": "CAD図面で単一レイアウトをレンダリングする"
 "url": "/ja/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # CAD図面で単一レイアウトをレンダリングする
 
 ## 導入

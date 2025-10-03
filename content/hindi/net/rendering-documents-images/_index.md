@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ों को छवियों में बदलना"
 "url": "/hi/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # दस्तावेज़ों को छवियों में बदलना
 
 ## परिचय

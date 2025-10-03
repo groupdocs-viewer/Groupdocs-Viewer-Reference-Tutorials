@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["microsoft-project", "dotnet", "document-viewer", "groupdocs"]
+type: docs
 ---
-
 # How to Render Microsoft Project Files in .NET Applications
 
 ## Introduction

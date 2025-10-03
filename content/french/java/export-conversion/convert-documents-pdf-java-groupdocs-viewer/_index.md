@@ -4,8 +4,8 @@
 "title": "Convertir des documents au format PDF en Java à l'aide de GroupDocs.Viewer &#58; un guide complet"
 "url": "/fr/java/export-conversion/convert-documents-pdf-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Convertir des documents au format PDF en Java avec GroupDocs.Viewer
 
 ## Introduction

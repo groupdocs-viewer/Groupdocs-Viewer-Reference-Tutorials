@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Lisansını Stream Üzerinden Kurma&#58; Eksiksiz Bir Kılavuz"
 "url": "/tr/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Lisansını Stream Üzerinden Kurma: Eksiksiz Bir Kılavuz
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Byt namn på e-postfält under rendering"
 "url": "/sv/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Byt namn på e-postfält under rendering
 
 ## Introduktion

@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία PLT σε HTML χρησιμοποιώντας το GroupDocs.Viewer σε Java - Οδηγός βήμα προς βήμα"
 "url": "/el/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία PLT σε HTML χρησιμοποιώντας το GroupDocs.Viewer σε Java: Οδηγός για προγραμματιστές
 
 ## Εισαγωγή

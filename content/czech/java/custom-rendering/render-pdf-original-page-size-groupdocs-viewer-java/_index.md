@@ -4,8 +4,8 @@
 "title": "Vykreslení PDF souborů v původní velikosti pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit PDF soubory s jejich původní velikostí stránky pomocí GroupDocs.Viewer pro Javu
 
 Vykreslení PDF souboru se zachováním původní velikosti stránky je nezbytné pro přesné zobrazení na různých platformách a zařízeních. Tato komplexní příručka vás provede implementací této funkce pomocí rozhraní GroupDocs.Viewer pro Java API. Dodržením těchto kroků zajistíte, že si vaše PDF soubory během vykreslování zachovají věrnost.

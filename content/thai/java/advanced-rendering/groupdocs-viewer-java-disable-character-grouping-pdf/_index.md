@@ -4,8 +4,8 @@
 "title": "ปิดใช้งานการจัดกลุ่มอักขระในไฟล์ PDF ด้วย GroupDocs.Viewer สำหรับเทคนิคการเรนเดอร์ที่แม่นยำของ Java"
 "url": "/th/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # ปิดใช้งานการจัดกลุ่มอักขระในไฟล์ PDF ด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

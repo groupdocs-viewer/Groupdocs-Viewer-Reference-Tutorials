@@ -4,8 +4,8 @@
 "title": "Cómo deshabilitar la selección de texto en archivos PDF con GroupDocs.Viewer .NET para mayor seguridad"
 "url": "/es/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cómo usar GroupDocs.Viewer .NET para deshabilitar la selección de texto al renderizar archivos PDF como HTML
 
 ## Introducción

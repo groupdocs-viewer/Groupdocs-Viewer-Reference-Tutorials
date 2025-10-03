@@ -4,8 +4,8 @@
 "title": "Como renderizar arquivos compactados em HTML usando o GroupDocs.Viewer .NET - Um guia passo a passo"
 "url": "/pt/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar arquivos compactados em HTML usando o GroupDocs.Viewer .NET: um guia passo a passo
 ## Introdução
 Com dificuldades para apresentar arquivos compactados como RAR ou ZIP em uma página da web? Converter esses formatos complexos em documentos HTML fáceis de usar é crucial para uma entrega de conteúdo impecável. Com o GroupDocs.Viewer para .NET, essa tarefa se torna simples e eficiente.

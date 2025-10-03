@@ -4,8 +4,8 @@
 "title": "Personnalisation des formats date-heure et décalage horaire dans les e-mails avec GroupDocs.Viewer .NET"
 "url": "/fr/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Personnalisation des formats de date et d'heure et des fuseaux horaires dans les e-mails avec GroupDocs.Viewer .NET
 
 ## Introduction

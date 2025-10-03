@@ -4,8 +4,8 @@
 "title": "Outlook adatmegjelenítés és -szűrés mesterszintű ismertetése a GroupDocs.Viewer for Java segítségével"
 "url": "/hu/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Outlook adatmegjelenítés és -szűrés mesterszintű ismertetése a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

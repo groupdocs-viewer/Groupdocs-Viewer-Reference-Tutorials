@@ -5,8 +5,8 @@
 "title": "عرض الصفحات المخفية"
 "url": "/ar/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # عرض الصفحات المخفية
 
 ## مقدمة

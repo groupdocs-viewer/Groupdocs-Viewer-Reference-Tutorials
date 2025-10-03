@@ -4,8 +4,8 @@
 "title": "Πώς να εφαρμόσετε την προδιαγραφή τύπου εγγράφου στο GroupDocs.Viewer για Java - Ένας οδηγός βήμα προς βήμα"
 "url": "/el/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να εφαρμόσετε την προδιαγραφή τύπου εγγράφου στο GroupDocs.Viewer για Java
 
 Ένας οδηγός βήμα προς βήμα για τον καθορισμό του τύπου αρχείου για την απόδοση αρχείων DOCX χρησιμοποιώντας το GroupDocs.Viewer για Java.

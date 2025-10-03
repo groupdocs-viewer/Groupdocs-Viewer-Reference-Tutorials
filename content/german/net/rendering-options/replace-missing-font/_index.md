@@ -5,8 +5,8 @@
 "title": "Fehlende Schriftart ersetzen"
 "url": "/de/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Fehlende Schriftart ersetzen
 
 ## Einführung

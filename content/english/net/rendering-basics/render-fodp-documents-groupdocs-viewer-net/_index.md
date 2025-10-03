@@ -8,10 +8,8 @@ keywords:
 - render FODP documents
 - GroupDocs.Viewer for .NET
 - document conversion
-
+type: docs
 ---
-
-
 # How to Render FODP Documents Using GroupDocs.Viewer .NET: A Comprehensive Guide
 
 ## Introduction

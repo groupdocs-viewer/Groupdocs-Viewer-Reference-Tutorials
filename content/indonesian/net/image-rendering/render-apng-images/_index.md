@@ -5,8 +5,8 @@
 "title": "Render Gambar APNG"
 "url": "/id/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Render Gambar APNG
 
 ## Perkenalan

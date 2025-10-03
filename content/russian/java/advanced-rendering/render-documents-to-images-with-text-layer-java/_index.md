@@ -4,8 +4,8 @@
 "title": "Визуализация документов в виде изображений с текстовым слоем в Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Визуализация документов в виде изображений с текстовым слоем в Java с помощью GroupDocs.Viewer
 ## Расширенное руководство по рендерингу
 **Текущий URL-адрес SEO**: /рендер-документов-в-изображения-с-текстовым-слоем-java

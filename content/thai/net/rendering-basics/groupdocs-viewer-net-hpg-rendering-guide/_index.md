@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสาร HPG เป็น HTML, JPG, PNG, PDF อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer .NET"
 "url": "/th/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์เอกสาร HPG โดยใช้ GroupDocs.Viewer .NET
 
 ## การแนะนำ

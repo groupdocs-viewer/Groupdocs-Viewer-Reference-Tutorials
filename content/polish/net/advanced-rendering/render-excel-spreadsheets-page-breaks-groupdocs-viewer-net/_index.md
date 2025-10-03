@@ -4,8 +4,8 @@
 "title": "Renderowanie arkuszy kalkulacyjnych programu Excel za pomocą podziałów stron przy użyciu GroupDocs.Viewer dla platformy .NET"
 "url": "/pl/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie arkuszy kalkulacyjnych programu Excel za pomocą podziałów stron przy użyciu GroupDocs.Viewer dla platformy .NET
 
 ## Wstęp

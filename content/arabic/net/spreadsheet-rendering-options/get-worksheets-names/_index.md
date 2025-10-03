@@ -5,8 +5,8 @@
 "title": "الحصول على أسماء أوراق العمل"
 "url": "/ar/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # الحصول على أسماء أوراق العمل
 
 ## مقدمة

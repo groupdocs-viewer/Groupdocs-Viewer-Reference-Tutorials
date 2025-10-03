@@ -5,8 +5,8 @@
 "title": "Obtener información de visualización para dibujos CAD"
 "url": "/es/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Obtener información de visualización para dibujos CAD
 
 ## Introducción

@@ -5,8 +5,8 @@
 "title": "Tùy chọn kết xuất"
 "url": "/vi/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Tùy chọn kết xuất
 
 

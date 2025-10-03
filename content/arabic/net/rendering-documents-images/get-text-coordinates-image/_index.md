@@ -5,8 +5,8 @@
 "title": "الحصول على إحداثيات النص لعرض الصورة"
 "url": "/ar/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # الحصول على إحداثيات النص لعرض الصورة
 
 ## مقدمة

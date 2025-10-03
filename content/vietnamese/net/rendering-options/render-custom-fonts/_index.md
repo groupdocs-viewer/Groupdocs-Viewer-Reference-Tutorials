@@ -5,8 +5,8 @@
 "title": "Hiển thị với Phông chữ Tùy chỉnh"
 "url": "/vi/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Hiển thị với Phông chữ Tùy chỉnh
 
 ## Giới thiệu

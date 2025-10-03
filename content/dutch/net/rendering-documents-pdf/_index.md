@@ -5,8 +5,8 @@
 "title": "Documenten naar PDF renderen"
 "url": "/nl/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Documenten naar PDF renderen
 
 

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - custom filenames PDF rendering
 - archive files to PDF
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Viewer Java: Specify Custom Filenames When Rendering Archives to PDF
 
 ## Introduction

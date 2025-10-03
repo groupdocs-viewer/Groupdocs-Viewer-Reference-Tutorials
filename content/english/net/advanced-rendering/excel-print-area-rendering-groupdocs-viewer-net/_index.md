@@ -8,10 +8,8 @@ keywords:
 - Excel Print Area Rendering
 - GroupDocs.Viewer for .NET
 - Rendering Excel Print Areas
-
+type: docs
 ---
-
-
 # Efficient Excel Print Area Rendering Using GroupDocs.Viewer for .NET
 
 ## Introduction

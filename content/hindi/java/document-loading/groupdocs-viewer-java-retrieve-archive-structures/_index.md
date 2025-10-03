@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके पुरालेख संरचनाओं को कैसे पुनर्प्राप्त करें&#58; एक व्यापक गाइड"
 "url": "/hi/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके पुरालेख संरचनाओं को कैसे पुनर्प्राप्त करें
 
 ## परिचय

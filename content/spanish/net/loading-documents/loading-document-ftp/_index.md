@@ -5,8 +5,8 @@
 "title": "Cargar documentos desde FTP (Avanzado)"
 "url": "/es/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Cargar documentos desde FTP (Avanzado)
 
 ## Introducción

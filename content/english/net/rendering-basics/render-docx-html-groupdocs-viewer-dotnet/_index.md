@@ -8,10 +8,8 @@ keywords:
 - convert DOCX to HTML
 - render Word documents in C#
 - document rendering with GroupDocs
-
+type: docs
 ---
-
-
 # How to Convert DOCX to HTML Using GroupDocs.Viewer for .NET
 
 ## Introduction

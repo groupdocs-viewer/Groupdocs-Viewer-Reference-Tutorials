@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["spreadsheet-rendering", "grid-lines", "groupdocs-viewer", "dotnet"]
+type: docs
 ---
-
 # How to Render Spreadsheet Grid Lines in .NET Applications
 
 ## Introduction

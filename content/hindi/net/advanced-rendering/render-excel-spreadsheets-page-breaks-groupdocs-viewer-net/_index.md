@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके पेज ब्रेक द्वारा Excel स्प्रेडशीट प्रस्तुत करें"
 "url": "/hi/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके पेज ब्रेक द्वारा Excel स्प्रेडशीट प्रस्तुत करें
 
 ## परिचय

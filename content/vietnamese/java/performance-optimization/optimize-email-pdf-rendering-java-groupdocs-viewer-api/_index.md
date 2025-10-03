@@ -4,8 +4,8 @@
 "title": "Tối ưu hóa việc kết xuất Email sang PDF trong Java bằng API GroupDocs.Viewer để có hiệu suất tốt hơn"
 "url": "/vi/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # Tối ưu hóa việc kết xuất Email sang PDF trong Java với API GroupDocs.Viewer
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "Oldalméret beállítása e-mail üzenetek megjelenítésekor"
 "url": "/hu/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Oldalméret beállítása e-mail üzenetek megjelenítésekor
 
 ## Bevezetés

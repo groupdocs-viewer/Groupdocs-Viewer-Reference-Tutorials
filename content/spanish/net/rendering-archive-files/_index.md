@@ -5,8 +5,8 @@
 "title": "Representación de archivos comprimidos"
 "url": "/es/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Representación de archivos comprimidos
 
 ## Introducción

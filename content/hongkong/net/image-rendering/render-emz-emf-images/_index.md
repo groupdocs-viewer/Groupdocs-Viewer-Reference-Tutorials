@@ -5,8 +5,8 @@
 "title": "渲染 EMZ 和 EMF 影像"
 "url": "/zh-hant/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # 渲染 EMZ 和 EMF 影像
 
 ## 介紹

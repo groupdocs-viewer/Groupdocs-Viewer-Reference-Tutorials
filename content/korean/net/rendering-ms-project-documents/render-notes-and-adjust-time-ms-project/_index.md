@@ -5,8 +5,8 @@
 "title": "렌더링 노트 및 시간 단위 조정(MS Project)"
 "url": "/ko/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # 렌더링 노트 및 시간 단위 조정(MS Project)
 
 ## 소개

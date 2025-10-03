@@ -5,8 +5,8 @@
 "title": "Outlook Veri Dosyalarının (PST, OST) İşlenmesi"
 "url": "/tr/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Outlook Veri Dosyalarının (PST, OST) İşlenmesi
 
 ## giriiş

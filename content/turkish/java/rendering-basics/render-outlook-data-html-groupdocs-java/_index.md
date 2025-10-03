@@ -4,8 +4,8 @@
 "title": "Java ve GroupDocs.Viewer Kullanarak Outlook PST ve OST Dosyalarını HTML'ye Dönüştürün"
 "url": "/tr/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java Kullanılarak Outlook Veri Dosyaları HTML'ye Nasıl Dönüştürülür
 
 ## giriiş

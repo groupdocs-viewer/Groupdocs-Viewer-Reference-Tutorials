@@ -5,8 +5,8 @@
 "title": "تعيين الترخيص من البث"
 "url": "/ar/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # تعيين الترخيص من البث
 
 ## مقدمة

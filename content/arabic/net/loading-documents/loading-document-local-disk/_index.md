@@ -5,8 +5,8 @@
 "title": "تحميل المستندات من القرص المحلي"
 "url": "/ar/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # تحميل المستندات من القرص المحلي
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "Jak převést dokumenty WMZ/WMF pomocí prohlížeče GroupDocs pro Javu – komplexní průvodce"
 "url": "/cs/java/export-conversion/convert-wmz-wmf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak převést dokumenty WMZ/WMF pomocí prohlížeče GroupDocs pro Javu: Komplexní průvodce
 
 ## Zavedení

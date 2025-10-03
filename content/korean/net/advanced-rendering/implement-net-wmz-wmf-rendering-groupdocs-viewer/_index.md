@@ -4,8 +4,8 @@
 "title": "웹 및 크로스 플랫폼 호환성을 위해 GroupDocs.Viewer를 사용하여 .NET WMZ/WMF 렌더링 구현"
 "url": "/ko/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 웹 및 크로스 플랫폼 호환성을 위해 GroupDocs.Viewer를 사용하여 .NET WMZ/WMF 렌더링 구현
 
 ## 소개

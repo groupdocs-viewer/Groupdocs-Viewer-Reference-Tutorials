@@ -5,8 +5,8 @@
 "title": "Render Gambar EMZ dan EMF"
 "url": "/id/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Render Gambar EMZ dan EMF
 
 ## Perkenalan

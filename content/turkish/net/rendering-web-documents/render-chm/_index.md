@@ -5,8 +5,8 @@
 "title": "CHM Dosyalarını Oluştur"
 "url": "/tr/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # CHM Dosyalarını Oluştur
 
 ## giriiş

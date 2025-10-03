@@ -4,8 +4,8 @@
 "title": "Verimli İşleme için GroupDocs.Viewer Java'yı Kullanarak CAD Çizimlerini Döşemelere Bölme"
 "url": "/tr/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java ile CAD Çizimlerini Döşemelere Bölme
 
 ## giriiş

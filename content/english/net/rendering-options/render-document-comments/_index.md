@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["GroupDocs.Viewer", "Comments", "Document Display", "C#"]
+type: docs
 ---
-
 # How to Render Documents with Comments in .NET
 
 ## Introduction

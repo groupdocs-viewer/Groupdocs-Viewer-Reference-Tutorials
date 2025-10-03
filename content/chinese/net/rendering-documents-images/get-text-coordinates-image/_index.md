@@ -5,8 +5,8 @@
 "title": "获取图像渲染的文本坐标"
 "url": "/zh/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # 获取图像渲染的文本坐标
 
 ## 介绍

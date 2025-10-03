@@ -5,8 +5,8 @@
 "title": "Renderelési archívum mappa"
 "url": "/hu/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Renderelési archívum mappa
 
 ## Bevezetés

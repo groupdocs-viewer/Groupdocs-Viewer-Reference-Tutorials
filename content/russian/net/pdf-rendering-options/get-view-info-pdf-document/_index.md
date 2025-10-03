@@ -5,8 +5,8 @@
 "title": "Получить информацию о просмотре документа PDF"
 "url": "/ru/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Получить информацию о просмотре документа PDF
 
 ## Введение

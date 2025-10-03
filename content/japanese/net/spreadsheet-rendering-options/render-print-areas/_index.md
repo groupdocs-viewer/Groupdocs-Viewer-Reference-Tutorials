@@ -5,8 +5,8 @@
 "title": "GroupDocs.Viewer for .NET で印刷領域をレンダリングする"
 "url": "/ja/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET で印刷領域をレンダリングする
 
 ## 導入

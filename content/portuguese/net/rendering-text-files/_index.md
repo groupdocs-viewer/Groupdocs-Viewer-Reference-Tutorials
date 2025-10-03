@@ -5,8 +5,8 @@
 "title": "Renderizando arquivos de texto"
 "url": "/pt/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Renderizando arquivos de texto
 
 ## Introdução

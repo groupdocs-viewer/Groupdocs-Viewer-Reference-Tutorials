@@ -5,8 +5,8 @@
 "title": "Documenten laden van lokale schijf"
 "url": "/nl/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Documenten laden van lokale schijf
 
 ## Invoering

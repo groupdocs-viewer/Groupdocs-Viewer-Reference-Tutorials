@@ -5,8 +5,8 @@
 "title": "Đang tải tài liệu"
 "url": "/vi/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Đang tải tài liệu
 
 ## Giới thiệu

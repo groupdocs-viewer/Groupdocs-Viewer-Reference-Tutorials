@@ -4,8 +4,8 @@
 "title": "Wdrażanie responsywnego renderowania HTML .NET za pomocą GroupDocs.Viewer&#58; Kompleksowy przewodnik dla programistów"
 "url": "/pl/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementacja responsywnego renderowania HTML .NET za pomocą GroupDocs.Viewer: Podręcznik programisty
 
 ## Wstęp

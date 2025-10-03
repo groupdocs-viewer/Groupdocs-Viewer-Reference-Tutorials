@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["chm-files", "dotnet", "groupdocs-viewer", "document-conversion"]
+type: docs
 ---
-
 # How to Render CHM Files in .NET Applications
 
 ## Why You Need CHM File Rendering in Your .NET Apps

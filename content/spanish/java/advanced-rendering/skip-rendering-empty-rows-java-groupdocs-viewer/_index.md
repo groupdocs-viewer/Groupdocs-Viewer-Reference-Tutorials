@@ -4,8 +4,8 @@
 "title": "Omitir la representación de filas vacías en Java con GroupDocs.Viewer&#58; una guía de rendimiento"
 "url": "/es/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Omitir la representación de filas vacías en Java con GroupDocs.Viewer
 ## Introducción
 Representar filas vacías innecesarias al convertir hojas de cálculo a HTML puede saturar el resultado y consumir recursos adicionales. Esto supone una preocupación importante para los desarrolladores que priorizan el rendimiento. Con la biblioteca "GroupDocs.Viewer Java", puede omitir eficazmente la representación de estas filas vacías, mejorando así la velocidad y la claridad de sus aplicaciones.

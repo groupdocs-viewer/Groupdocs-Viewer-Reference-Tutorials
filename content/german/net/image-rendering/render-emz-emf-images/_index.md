@@ -5,8 +5,8 @@
 "title": "Rendern Sie EMZ- und EMF-Bilder"
 "url": "/de/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Rendern Sie EMZ- und EMF-Bilder
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "JavaでGroupDocs.Viewerを使ってExcelシートを行と列で分割する：包括的なガイド"
 "url": "/ja/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # JavaでGroupDocs.Viewerを使用してExcelシートを行と列で分割する
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "在 GroupDocs.Viewer for .NET 中自訂電子郵件標籤－重新命名欄位的完整指南"
 "url": "/zh-hant/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer for .NET 中自訂電子郵件標籤：重新命名欄位的完整指南
 
 ## 介紹

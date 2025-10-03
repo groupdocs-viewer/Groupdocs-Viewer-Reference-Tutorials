@@ -3,8 +3,8 @@
 "title": "Tutorials zu Dokumentwasserzeichen und Anmerkungen für GroupDocs.Viewer .NET"
 "url": "/de/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Tutorials zu Dokumentwasserzeichen und Anmerkungen für GroupDocs.Viewer .NET
 
 Meistern Sie Dokumentanmerkungen und Wasserzeichentechniken mit unseren GroupDocs.Viewer .NET-Tutorials. Diese Schritt-für-Schritt-Anleitungen zeigen Ihnen, wie Sie Text- und Bildwasserzeichen hinzufügen, Anmerkungen implementieren, die Positionierung und Transparenz von Wasserzeichen steuern und Dokumente mit eingebetteten Anmerkungen rendern. Jedes Tutorial enthält praktische .NET-Codebeispiele zum Hinzufügen visueller Metadaten und Schutzmarkierungen zu Ihren Dokumenten und verbessert so die Dokumentenverfolgung und das Branding.

@@ -5,8 +5,8 @@
 "title": "渲染隱藏頁面"
 "url": "/zh-hant/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # 渲染隱藏頁面
 
 ## 介紹

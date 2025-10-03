@@ -4,8 +4,8 @@
 "title": "Mengonfigurasi Pencatatan Log di GroupDocs.Viewer untuk Konsol Java dan Panduan Pencatatan File"
 "url": "/id/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Mengonfigurasi Pencatatan di GroupDocs.Viewer untuk Java
 
 ## Perkenalan

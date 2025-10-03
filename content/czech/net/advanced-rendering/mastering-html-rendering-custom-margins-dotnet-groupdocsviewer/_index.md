@@ -4,8 +4,8 @@
 "title": "Zvládněte vykreslování HTML s vlastními okraji v .NET pomocí GroupDocs.Viewer"
 "url": "/cs/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí vykreslování HTML s uživatelsky definovanými okraji v .NET pomocí GroupDocs.Viewer
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Ορισμός ορίων μεγέθους εικόνας"
 "url": "/el/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Ορισμός ορίων μεγέθους εικόνας
 
 ## Εισαγωγή

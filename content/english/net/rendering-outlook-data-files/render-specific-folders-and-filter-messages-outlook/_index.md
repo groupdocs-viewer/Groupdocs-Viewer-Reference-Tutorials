@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["outlook", "groupdocs-viewer", "dotnet", "email-rendering"]
+type: docs
 ---
-
 # How to Render Outlook Folders in .NET - Complete Developer Guide
 
 ## Introduction

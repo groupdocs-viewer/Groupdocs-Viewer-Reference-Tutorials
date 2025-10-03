@@ -4,8 +4,8 @@
 "title": "Cara Merender Dokumen dengan Komentar di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Dokumen dengan Komentar di Java Menggunakan GroupDocs.Viewer
 ## Perkenalan
 Kesulitan mengonversi dokumen ke HTML sambil mempertahankan komentar? Panduan ini memandu Anda merender dokumen beserta komentarnya menggunakan pustaka GroupDocs.Viewer yang canggih di Java. Baik Anda mengelola dokumen dengan lancar atau meningkatkan keterampilan Java Anda, tutorial ini cocok untuk Anda.

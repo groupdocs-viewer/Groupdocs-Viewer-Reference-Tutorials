@@ -5,8 +5,8 @@
 "title": "E-mailvelden hernoemen tijdens het renderen"
 "url": "/nl/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # E-mailvelden hernoemen tijdens het renderen
 
 ## Invoering

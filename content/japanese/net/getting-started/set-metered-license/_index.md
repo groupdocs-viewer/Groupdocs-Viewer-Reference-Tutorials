@@ -5,8 +5,8 @@
 "title": "従量制ライセンスの設定"
 "url": "/ja/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # 従量制ライセンスの設定
 
 ## 導入

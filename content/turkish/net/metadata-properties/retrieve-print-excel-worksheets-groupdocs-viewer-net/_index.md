@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanılarak Excel Çalışma Sayfası Adları Nasıl Alınır ve Yazdırılır (2023 Kılavuzu)"
 "url": "/tr/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer Kullanarak Excel Çalışma Sayfası Adlarını Alma ve Yazdırma: Kapsamlı Bir Kılavuz
 
 ## giriiş

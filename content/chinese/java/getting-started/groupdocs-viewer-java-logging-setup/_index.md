@@ -4,8 +4,8 @@
 "title": "在 GroupDocs.Viewer for Java 中配置日志记录&#58;控制台和文件日志记录指南"
 "url": "/zh/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # 在 GroupDocs.Viewer for Java 中配置日志记录
 
 ## 介绍

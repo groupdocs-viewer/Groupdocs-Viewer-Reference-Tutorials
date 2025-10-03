@@ -5,8 +5,8 @@
 "title": "Imposta il formato data/ora e l'offset del fuso orario (e-mail)"
 "url": "/it/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Imposta il formato data/ora e l'offset del fuso orario (e-mail)
 
 

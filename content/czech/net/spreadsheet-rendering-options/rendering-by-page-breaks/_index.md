@@ -5,8 +5,8 @@
 "title": "Vykreslování pomocí zalomení stránek"
 "url": "/cs/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Vykreslování pomocí zalomení stránek
 
 ## Zavedení

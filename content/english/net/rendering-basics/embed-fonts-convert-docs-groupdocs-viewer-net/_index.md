@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - Embed Fonts in Documents
 - Convert to HTML with Embedded Resources
-
+type: docs
 ---
-
-
 # Mastering Document Rendering with GroupDocs.Viewer .NET: Embed Fonts and Convert to HTML
 
 ## Introduction

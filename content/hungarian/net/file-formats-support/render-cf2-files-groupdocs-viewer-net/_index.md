@@ -4,8 +4,8 @@
 "title": "CF2 fájlok renderelése HTML, JPG, PNG és PDF formátumba a GroupDocs.Viewer for .NET segítségével"
 "url": "/hu/net/file-formats-support/render-cf2-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # CF2 fájlok renderelése a GroupDocs.Viewer for .NET segítségével
 
 ## CF2 fájlok konvertálása a GroupDocs.Viewer for .NET használatával

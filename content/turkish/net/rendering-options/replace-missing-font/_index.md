@@ -5,8 +5,8 @@
 "title": "Eksik Yazı Tipini Değiştir"
 "url": "/tr/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Eksik Yazı Tipini Değiştir
 
 ## giriiş

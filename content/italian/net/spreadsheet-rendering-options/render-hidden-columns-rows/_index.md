@@ -5,8 +5,8 @@
 "title": "Rendi colonne e righe nascoste"
 "url": "/it/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Rendi colonne e righe nascoste
 
 ## Introduzione

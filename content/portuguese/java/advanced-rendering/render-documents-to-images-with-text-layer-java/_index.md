@@ -4,8 +4,8 @@
 "title": "Renderizar documentos como imagens com camada de texto em Java usando GroupDocs.Viewer"
 "url": "/pt/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar documentos como imagens com camada de texto em Java usando GroupDocs.Viewer
 ## Tutorial de renderização avançada
 **URL de SEO atual**: /renderizar-documentos-em-imagens-com-camada-de-texto-java

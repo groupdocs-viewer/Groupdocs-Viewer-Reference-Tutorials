@@ -5,8 +5,8 @@
 "title": "Renderizar archivos RAR"
 "url": "/es/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Renderizar archivos RAR
 
 ## Introducción

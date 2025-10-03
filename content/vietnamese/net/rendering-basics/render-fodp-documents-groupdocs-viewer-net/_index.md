@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tài liệu FODP bằng GroupDocs.Viewer .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tài liệu FODP bằng GroupDocs.Viewer .NET: Hướng dẫn toàn diện
 
 ## Giới thiệu

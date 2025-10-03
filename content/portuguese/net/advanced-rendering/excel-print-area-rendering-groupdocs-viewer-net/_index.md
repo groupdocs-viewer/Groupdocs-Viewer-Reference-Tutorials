@@ -4,8 +4,8 @@
 "title": "Renderização eficiente da área de impressão do Excel usando GroupDocs.Viewer para .NET"
 "url": "/pt/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Renderização eficiente da área de impressão do Excel usando GroupDocs.Viewer para .NET
 
 ## Introdução

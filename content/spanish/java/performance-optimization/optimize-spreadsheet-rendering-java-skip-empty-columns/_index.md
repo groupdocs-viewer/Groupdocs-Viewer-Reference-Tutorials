@@ -4,8 +4,8 @@
 "title": "Optimice la representación de hojas de cálculo Java&#58; omita columnas vacías con GroupDocs.Viewer"
 "url": "/es/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Cómo optimizar la representación de hojas de cálculo en Java: omitir columnas vacías con GroupDocs.Viewer
 
 ## Introducción

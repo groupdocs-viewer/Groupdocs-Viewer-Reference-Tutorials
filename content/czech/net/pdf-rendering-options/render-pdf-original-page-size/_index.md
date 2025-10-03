@@ -5,8 +5,8 @@
 "title": "Vykreslit PDF s původní velikostí stránky"
 "url": "/cs/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Vykreslit PDF s původní velikostí stránky
 
 ## Zavedení

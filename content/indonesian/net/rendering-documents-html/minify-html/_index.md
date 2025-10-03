@@ -5,8 +5,8 @@
 "title": "Memperkecil Dokumen HTML yang Dirender"
 "url": "/id/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Memperkecil Dokumen HTML yang Dirender
 
 ## Perkenalan

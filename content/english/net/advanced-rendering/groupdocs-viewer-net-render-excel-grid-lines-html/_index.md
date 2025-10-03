@@ -8,10 +8,8 @@ keywords:
 - render grid lines in Excel
 - GroupDocs.Viewer .NET HTML rendering
 - Excel spreadsheet to HTML conversion
-
+type: docs
 ---
-
-
 # How to Render Grid Lines in Excel Spreadsheets Using GroupDocs.Viewer .NET for HTML Output
 
 ## Introduction

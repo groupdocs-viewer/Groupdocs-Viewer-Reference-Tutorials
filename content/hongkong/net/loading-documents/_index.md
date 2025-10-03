@@ -5,8 +5,8 @@
 "title": "載入文檔"
 "url": "/zh-hant/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # 載入文檔
 
 ## 介紹

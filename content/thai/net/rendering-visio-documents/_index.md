@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เอกสาร Visio"
 "url": "/th/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # การเรนเดอร์เอกสาร Visio
 
 ## การแนะนำ

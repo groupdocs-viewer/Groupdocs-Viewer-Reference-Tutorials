@@ -5,8 +5,8 @@
 "title": "Vykreslení vybraných stránek"
 "url": "/cs/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Vykreslení vybraných stránek
 
 ## Zavedení

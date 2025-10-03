@@ -5,8 +5,8 @@
 "title": "Đặt thời gian chờ tải tài nguyên (Nâng cao)"
 "url": "/vi/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Đặt thời gian chờ tải tài nguyên (Nâng cao)
 
 ## Giới thiệu

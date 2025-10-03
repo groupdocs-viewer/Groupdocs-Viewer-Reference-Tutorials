@@ -3,8 +3,8 @@
 "title": "Zelfstudies voor het renderen van documenten in de cloud en op afstand voor GroupDocs.Viewer .NET"
 "url": "/nl/net/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Zelfstudies voor het renderen van documenten in de cloud en op afstand voor GroupDocs.Viewer .NET
 
 Leer hoe u documenten in de cloud en op afstand kunt renderen met onze GroupDocs.Viewer .NET-tutorials. Deze praktische handleidingen demonstreren technieken voor het laden en renderen van documenten van cloudopslagproviders, het verwerken van externe URL's, het beheren van netwerkbestandsbronnen en het implementeren van oplossingen voor gedistribueerde documentweergave. Elke tutorial bevat gedetailleerde .NET-codevoorbeelden voor veelvoorkomende scenario's voor rendering in de cloud en op afstand, waarmee u applicaties kunt bouwen met flexibele mogelijkheden voor documenttoegang.

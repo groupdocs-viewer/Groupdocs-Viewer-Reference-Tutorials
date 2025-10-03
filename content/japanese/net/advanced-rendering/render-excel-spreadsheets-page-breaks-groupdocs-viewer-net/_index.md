@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用して Excel スプレッドシートを改ページによってレンダリングする"
 "url": "/ja/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用して Excel スプレッドシートを改ページによってレンダリングする
 
 ## 導入

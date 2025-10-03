@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 将存档文件渲染为 HTML 格式——分步指南"
 "url": "/zh/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 将存档文件渲染为 HTML：分步指南
 ## 介绍
 还在为在网页上展示 RAR 或 ZIP 等存档文件而苦恼吗？将这些复杂的文件格式转换为用户友好的 HTML 文档，对于无缝内容交付至关重要。借助 GroupDocs.Viewer for .NET，这项任务变得简单高效。

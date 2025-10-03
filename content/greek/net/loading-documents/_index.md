@@ -5,8 +5,8 @@
 "title": "Φόρτωση εγγράφων"
 "url": "/el/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Φόρτωση εγγράφων
 
 ## Εισαγωγή

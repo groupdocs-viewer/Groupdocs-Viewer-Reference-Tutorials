@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer voor Java&#58; documentbijlagen ophalen en afdrukken"
 "url": "/nl/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer voor Java: documentbijlagen ophalen en afdrukken
 
 ## Invoering

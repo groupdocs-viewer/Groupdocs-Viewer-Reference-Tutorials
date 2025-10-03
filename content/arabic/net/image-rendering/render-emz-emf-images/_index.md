@@ -5,8 +5,8 @@
 "title": "عرض صور EMZ وEMF"
 "url": "/ar/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # عرض صور EMZ وEMF
 
 ## مقدمة

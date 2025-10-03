@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 检索 MS Project View 信息 | 元数据和属性"
 "url": "/zh/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 检索 MS Project View 信息
 
 ## 介绍

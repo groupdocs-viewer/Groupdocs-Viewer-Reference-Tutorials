@@ -5,8 +5,8 @@
 "title": "Rendern von KI-Bildern"
 "url": "/de/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Rendern von KI-Bildern
 
 ## Einführung

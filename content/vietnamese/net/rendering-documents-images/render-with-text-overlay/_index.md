@@ -5,8 +5,8 @@
 "title": "Hiển thị với văn bản chồng lên nhau để hiển thị"
 "url": "/vi/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Hiển thị với văn bản chồng lên nhau để hiển thị
 
 ## Giới thiệu

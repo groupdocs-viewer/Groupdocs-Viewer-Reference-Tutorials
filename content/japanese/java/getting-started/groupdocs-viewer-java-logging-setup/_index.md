@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java のコンソールおよびファイル ログ記録ガイドでのログ記録の構成"
 "url": "/ja/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java でのログ記録の構成
 
 ## 導入

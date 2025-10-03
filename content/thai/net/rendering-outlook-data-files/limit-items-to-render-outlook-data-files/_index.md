@@ -5,8 +5,8 @@
 "title": "จำกัดจำนวนรายการที่จะแสดงในไฟล์ข้อมูล Outlook"
 "url": "/th/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # จำกัดจำนวนรายการที่จะแสดงในไฟล์ข้อมูล Outlook
 
 ## การแนะนำ

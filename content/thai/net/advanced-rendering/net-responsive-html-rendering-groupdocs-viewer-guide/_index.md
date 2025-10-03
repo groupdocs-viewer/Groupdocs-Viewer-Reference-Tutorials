@@ -4,8 +4,8 @@
 "title": "นำการแสดงผล HTML แบบตอบสนองของ .NET ไปใช้กับ GroupDocs.Viewer คู่มือฉบับสมบูรณ์สำหรับนักพัฒนา"
 "url": "/th/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # การนำ .NET Responsive HTML Rendering ไปใช้งานกับ GroupDocs.Viewer: คู่มือสำหรับนักพัฒนา
 
 ## การแนะนำ

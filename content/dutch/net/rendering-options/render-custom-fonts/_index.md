@@ -5,8 +5,8 @@
 "title": "Renderen met aangepaste lettertypen"
 "url": "/nl/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Renderen met aangepaste lettertypen
 
 ## Invoering

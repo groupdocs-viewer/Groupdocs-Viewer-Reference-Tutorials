@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["CAD Rendering"]
 tags: ["GroupDocs.Viewer", "CAD", "DWG", "Layout Rendering", ".NET"]
+type: docs
 ---
-
 # How to Render CAD Layouts .NET: Complete Developer Guide
 
 ## Introduction

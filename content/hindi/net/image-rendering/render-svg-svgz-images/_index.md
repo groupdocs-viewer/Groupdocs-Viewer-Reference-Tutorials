@@ -5,8 +5,8 @@
 "title": "SVG और SVGZ छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # SVG और SVGZ छवियाँ प्रस्तुत करें
 
 ## परिचय

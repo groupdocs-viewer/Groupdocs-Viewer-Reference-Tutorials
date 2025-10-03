@@ -5,8 +5,8 @@
 "title": "스트림에서 라이센스 설정"
 "url": "/ko/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # 스트림에서 라이센스 설정
 
 ## 소개

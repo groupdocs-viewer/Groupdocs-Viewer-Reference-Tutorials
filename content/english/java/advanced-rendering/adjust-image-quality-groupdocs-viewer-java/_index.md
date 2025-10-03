@@ -8,10 +8,8 @@ keywords:
 - optimize PDF image quality Java
 - adjust image quality GroupDocs.Viewer
 - Java PDF rendering
-
+type: docs
 ---
-
-
 # How to Optimize PDF Image Quality in Java with GroupDocs.Viewer
 
 ## Introduction

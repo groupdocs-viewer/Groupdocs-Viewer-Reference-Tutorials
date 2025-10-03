@@ -5,8 +5,8 @@
 "title": "अभिलेखों को एकल या एकाधिक HTML पृष्ठों में प्रस्तुत करें"
 "url": "/hi/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # अभिलेखों को एकल या एकाधिक HTML पृष्ठों में प्रस्तुत करें
 
 ## परिचय

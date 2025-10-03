@@ -5,8 +5,8 @@
 "title": "Tekstcoördinaten ophalen voor beeldweergave"
 "url": "/nl/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Tekstcoördinaten ophalen voor beeldweergave
 
 ## Invoering

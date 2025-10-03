@@ -5,8 +5,8 @@
 "title": "Получить имена рабочих листов"
 "url": "/ru/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Получить имена рабочих листов
 
 ## Введение

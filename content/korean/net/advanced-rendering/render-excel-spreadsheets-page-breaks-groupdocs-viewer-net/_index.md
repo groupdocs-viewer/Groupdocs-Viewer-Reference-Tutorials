@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 페이지 나누기로 Excel 스프레드시트 렌더링"
 "url": "/ko/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 페이지 나누기로 Excel 스프레드시트 렌더링
 
 ## 소개

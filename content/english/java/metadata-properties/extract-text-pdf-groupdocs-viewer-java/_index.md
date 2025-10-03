@@ -8,9 +8,8 @@ keywords:
 - extract text from PDF
 - GroupDocs.Viewer Java
 - text extraction API
-
+type: docs
 ---
-
 # Extract Text from PDF using GroupDocs.Viewer Java
 
 ## Introduction

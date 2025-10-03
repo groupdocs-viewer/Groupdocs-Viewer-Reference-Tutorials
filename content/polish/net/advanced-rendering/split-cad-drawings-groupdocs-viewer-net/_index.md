@@ -4,8 +4,8 @@
 "title": "Jak podzielić rysunki CAD na kafelki za pomocą GroupDocs.Viewer .NET w celu wydajnego renderowania"
 "url": "/pl/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak podzielić rysunki CAD na kafelki za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

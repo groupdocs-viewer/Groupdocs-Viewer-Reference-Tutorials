@@ -8,10 +8,8 @@ keywords:
 - render CDR documents
 - GroupDocs.Viewer for .NET
 - convert CDR files
-
+type: docs
 ---
-
-
 # How to Render CDR Documents Using GroupDocs.Viewer for .NET
 
 ## Introduction

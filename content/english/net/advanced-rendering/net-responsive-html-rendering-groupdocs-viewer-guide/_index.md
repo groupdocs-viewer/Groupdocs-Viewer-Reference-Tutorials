@@ -8,10 +8,8 @@ keywords:
 - .NET Responsive HTML Rendering
 - GroupDocs.Viewer for .NET
 - Responsive Document Rendering
-
+type: docs
 ---
-
-
 # Implement .NET Responsive HTML Rendering with GroupDocs.Viewer: A Developer's Guide
 
 ## Introduction

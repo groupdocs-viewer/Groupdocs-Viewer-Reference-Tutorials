@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory PLT do HTML pomocí GroupDocs.Viewer v Javě – podrobný návod"
 "url": "/cs/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory PLT do HTML pomocí GroupDocs.Viewer v Javě: Průvodce pro vývojáře
 
 ## Zavedení

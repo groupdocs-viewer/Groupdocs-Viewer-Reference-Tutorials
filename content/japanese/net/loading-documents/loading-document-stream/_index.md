@@ -5,8 +5,8 @@
 "title": "ストリームからドキュメントを読み込む"
 "url": "/ja/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # ストリームからドキュメントを読み込む
 
 ## 導入

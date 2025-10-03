@@ -4,8 +4,8 @@
 "title": "เรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในไฟล์ Excel โดยใช้ GroupDocs.Viewer สำหรับ .NET - คู่มือขั้นสูง"
 "url": "/th/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในไฟล์ Excel โดยใช้ GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

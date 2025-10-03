@@ -5,8 +5,8 @@
 "title": "تحديد عدد العناصر المراد عرضها في ملفات بيانات Outlook"
 "url": "/ar/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # تحديد عدد العناصر المراد عرضها في ملفات بيانات Outlook
 
 ## مقدمة

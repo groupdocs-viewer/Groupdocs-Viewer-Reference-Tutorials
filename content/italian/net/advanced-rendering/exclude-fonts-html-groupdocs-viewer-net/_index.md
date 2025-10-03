@@ -4,8 +4,8 @@
 "title": "Come escludere specifici font dall'output HTML utilizzando GroupDocs.Viewer per .NET"
 "url": "/it/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Come escludere i font dall'output HTML utilizzando GroupDocs.Viewer per .NET
 
 ## Introduzione

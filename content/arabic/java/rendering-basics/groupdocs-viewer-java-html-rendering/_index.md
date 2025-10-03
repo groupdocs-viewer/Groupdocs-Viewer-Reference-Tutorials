@@ -4,8 +4,8 @@
 "title": "كيفية تحميل وعرض المستندات بتنسيق HTML باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تحميل وعرض المستندات بتنسيق HTML باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

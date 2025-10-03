@@ -4,8 +4,8 @@
 "title": "E-mail mezők átnevezése e-mailek HTML-be konvertálásakor a GroupDocs.Viewer Java használatával"
 "url": "/hu/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan nevezzük át az e-mail mezőket, amikor e-maileket HTML-be renderelünk a GroupDocs.Viewer Java segítségével?
 
 ## Bevezetés

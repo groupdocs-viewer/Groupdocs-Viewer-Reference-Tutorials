@@ -4,8 +4,8 @@
 "title": "كيفية عرض مستندات Visio بتنسيق HTML وJPG وPNG وPDF في .NET باستخدام GroupDocs.Viewer"
 "url": "/ar/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض مستندات Visio بتنسيق HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer في .NET
 
 ## مقدمة

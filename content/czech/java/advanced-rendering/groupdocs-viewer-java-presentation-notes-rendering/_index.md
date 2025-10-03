@@ -4,8 +4,8 @@
 "title": "Jak vykreslit prezentace s poznámkami pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit prezentace s poznámkami pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Zakázat výběr textu v PDF"
 "url": "/cs/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Zakázat výběr textu v PDF
 
 ## Zavedení

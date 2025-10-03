@@ -5,8 +5,8 @@
 "title": ".NET के लिए GroupDocs.Viewer के व्यापक ट्यूटोरियल और उदाहरण"
 "url": "/hi/net/"
 "weight": 10
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer के व्यापक ट्यूटोरियल और उदाहरण
 
 ## परिचय

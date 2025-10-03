@@ -4,8 +4,8 @@
 "title": "Преобразование вложений документов в HTML с помощью GroupDocs.Viewer Java&#58; Пошаговое руководство"
 "url": "/ru/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Преобразование вложений документов в HTML с помощью GroupDocs.Viewer Java
 
 ## Введение

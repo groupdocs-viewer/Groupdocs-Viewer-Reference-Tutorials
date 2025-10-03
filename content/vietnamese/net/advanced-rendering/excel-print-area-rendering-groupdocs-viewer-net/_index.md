@@ -4,8 +4,8 @@
 "title": "Kết xuất vùng in Excel hiệu quả bằng GroupDocs.Viewer cho .NET"
 "url": "/vi/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất vùng in Excel hiệu quả bằng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

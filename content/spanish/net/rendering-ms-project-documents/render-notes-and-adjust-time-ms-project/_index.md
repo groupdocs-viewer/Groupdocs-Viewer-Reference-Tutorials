@@ -5,8 +5,8 @@
 "title": "Notas de renderizado y ajuste de unidades de tiempo (MS Project)"
 "url": "/es/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Notas de renderizado y ajuste de unidades de tiempo (MS Project)
 
 ## Introducción

@@ -5,8 +5,8 @@
 "title": "Visio 문서 렌더링"
 "url": "/ko/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Visio 문서 렌더링
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "จำกัดการแสดงรายการ Outlook ใน Java โดยใช้ GroupDocs.Viewer คำแนะนำที่ครอบคลุม"
 "url": "/th/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # การจำกัดการแสดงผลรายการ Outlook ใน Java โดยใช้ GroupDocs.Viewer
 
 ## ภาพรวม

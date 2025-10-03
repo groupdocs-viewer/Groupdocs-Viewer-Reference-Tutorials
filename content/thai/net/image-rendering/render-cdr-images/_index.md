@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ภาพ CDR"
 "url": "/th/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # เรนเดอร์ภาพ CDR
 
 ## การแนะนำ

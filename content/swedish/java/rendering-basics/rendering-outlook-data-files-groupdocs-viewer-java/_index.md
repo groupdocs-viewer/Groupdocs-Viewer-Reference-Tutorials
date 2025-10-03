@@ -4,8 +4,8 @@
 "title": "Så här renderar du Outlook-datafiler med GroupDocs.Viewer i Java - en steg-för-steg-guide"
 "url": "/sv/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Så här renderar du Outlook-datafiler med GroupDocs.Viewer i Java: En steg-för-steg-guide
 
 ## Introduktion

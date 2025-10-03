@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java で Apple Numbers ドキュメントをレンダリングする包括的なガイド"
 "url": "/ja/java/file-formats-support/render-numbers-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java で Apple Numbers ドキュメントをレンダリングする方法
 
 ## 導入

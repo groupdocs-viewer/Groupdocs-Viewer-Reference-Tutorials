@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 在 Word 文件中呈現追蹤的修訂－綜合指南"
 "url": "/zh-hant/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 在 Word 文件中呈現追蹤的更改
 
 ## 介紹

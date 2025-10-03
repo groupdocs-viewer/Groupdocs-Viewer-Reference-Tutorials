@@ -5,8 +5,8 @@
 "title": "Hiển thị Tài liệu Microsoft Project"
 "url": "/vi/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Hiển thị Tài liệu Microsoft Project
 
 ## Giới thiệu

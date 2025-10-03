@@ -4,8 +4,8 @@
 "title": "Optimera rendering av Java-kalkylblad &#5; Hoppa över tomma kolumner med GroupDocs.Viewer"
 "url": "/sv/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Hur man optimerar kalkylbladsrendering i Java: Hoppa över tomma kolumner med GroupDocs.Viewer
 
 ## Introduktion

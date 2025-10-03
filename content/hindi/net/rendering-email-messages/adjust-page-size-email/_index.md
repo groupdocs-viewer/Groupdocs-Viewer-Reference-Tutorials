@@ -5,8 +5,8 @@
 "title": "ईमेल संदेश प्रस्तुत करते समय पृष्ठ का आकार समायोजित करें"
 "url": "/hi/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # ईमेल संदेश प्रस्तुत करते समय पृष्ठ का आकार समायोजित करें
 
 ## परिचय

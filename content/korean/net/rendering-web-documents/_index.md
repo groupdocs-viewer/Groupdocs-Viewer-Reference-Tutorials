@@ -5,8 +5,8 @@
 "title": "웹 문서 렌더링"
 "url": "/ko/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # 웹 문서 렌더링
 
 ## 소개

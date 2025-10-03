@@ -4,8 +4,8 @@
 "title": "Renderowanie Java HPG przy użyciu GroupDocs.Viewer&#58; Kompletny przewodnik"
 "url": "/pl/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Kompleksowy przewodnik po implementacji renderowania Java HPG za pomocą GroupDocs.Viewer
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "CAD-elrendezések és rétegek lekérése a GroupDocs.Viewer .NET használatával a hatékony tervkezelés érdekében"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # CAD-elrendezések és rétegek lekérése a GroupDocs.Viewer .NET használatával
 ## Bevezetés
 A számítógéppel segített tervezés (CAD) területén a komplex rajzok hatékony kezelése kulcsfontosságú, különösen akkor, ha egyetlen fájlon belül több elrendezéssel és réteggel kell foglalkozni. Az építészek, mérnökök és tervezők számára a konkrét információk gyors elérése növeli a termelékenységet. **GroupDocs.Viewer .NET** hatékony megoldást kínál azáltal, hogy lehetővé teszi a fejlesztők számára, hogy programozottan kinyerjék az elrendezéseket és rétegeket a CAD rajzokból.

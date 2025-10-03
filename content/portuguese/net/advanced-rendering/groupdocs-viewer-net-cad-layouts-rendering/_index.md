@@ -4,8 +4,8 @@
 "title": "Renderização eficiente de layout CAD com GroupDocs.Viewer para .NET - Um guia passo a passo"
 "url": "/pt/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Renderização eficiente de layout CAD com GroupDocs.Viewer para .NET
 
 ## Introdução

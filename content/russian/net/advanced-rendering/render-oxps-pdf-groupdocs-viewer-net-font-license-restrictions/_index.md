@@ -4,8 +4,8 @@
 "title": "Отображение PDF/OXPS с ограничениями шрифтов с помощью GroupDocs.Viewer .NET&#58; Подробное руководство"
 "url": "/ru/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Визуализация PDF/OXPS с ограничениями шрифтов с помощью GroupDocs.Viewer .NET: подробное руководство
 
 ## Введение

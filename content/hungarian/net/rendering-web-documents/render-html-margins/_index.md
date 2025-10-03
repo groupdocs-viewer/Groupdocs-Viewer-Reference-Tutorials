@@ -5,8 +5,8 @@
 "title": "HTML renderelése felhasználó által definiált margókkal"
 "url": "/hu/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # HTML renderelése felhasználó által definiált margókkal
 
 ## Bevezetés

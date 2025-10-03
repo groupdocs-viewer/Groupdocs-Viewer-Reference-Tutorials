@@ -5,8 +5,8 @@
 "title": "Outlook 데이터 파일(PST, OST) 렌더링"
 "url": "/ko/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Outlook 데이터 파일(PST, OST) 렌더링
 
 ## 소개

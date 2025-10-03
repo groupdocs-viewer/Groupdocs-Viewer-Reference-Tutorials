@@ -4,8 +4,8 @@
 "title": "Konvertieren Sie Dokumente in JPG mit GroupDocs.Viewer für .NET – Ein umfassender Leitfaden"
 "url": "/de/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Konvertieren Sie Dokumente mit GroupDocs.Viewer für .NET in JPG: Ein umfassender Leitfaden
 
 ## Einführung

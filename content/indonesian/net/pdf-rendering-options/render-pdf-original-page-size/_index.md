@@ -5,8 +5,8 @@
 "title": "Render PDF dengan Ukuran Halaman Asli"
 "url": "/id/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Render PDF dengan Ukuran Halaman Asli
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "Rendera alla layouter i CAD-ritningar"
 "url": "/sv/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Rendera alla layouter i CAD-ritningar
 
 ## Introduktion

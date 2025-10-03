@@ -4,8 +4,8 @@
 "title": "Menambahkan Tanda Air ke Dokumen Menggunakan GroupDocs.Viewer Java&#58; Panduan Lengkap"
 "url": "/id/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Menambahkan Tanda Air ke Dokumen Menggunakan GroupDocs.Viewer Java: Panduan Lengkap
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Deaktivieren Sie die Zeichengruppierung in PDFs mit GroupDocs.Viewer für Java – präzise Rendering-Techniken"
 "url": "/de/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Deaktivieren Sie die Zeichengruppierung in PDFs mit GroupDocs.Viewer für Java
 
 ## Einführung

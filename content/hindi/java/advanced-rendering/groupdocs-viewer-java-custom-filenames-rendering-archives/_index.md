@@ -4,8 +4,8 @@
 "title": "अभिलेखागार के पीडीएफ रेंडरिंग के लिए ग्रुपडॉक्स.व्यूअर जावा के कस्टम फ़ाइलनामों में महारत हासिल करना"
 "url": "/hi/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java में महारत हासिल करना: अभिलेखागार को PDF में रेंडर करते समय कस्टम फ़ाइल नाम निर्दिष्ट करें
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "Rendering PDF Java con GroupDocs.Viewer - Implementazione di interruzioni di pagina nei fogli di calcolo"
 "url": "/it/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggiare il rendering PDF Java: GroupDocs.Viewer con interruzioni di pagina
 
 Sfrutta la potenza del rendering dei fogli di calcolo nelle tue applicazioni Java utilizzando GroupDocs.Viewer. Questa guida completa ti mostrerà come implementare il rendering PDF Java con interruzioni di pagina per una conversione fluida in PDF.

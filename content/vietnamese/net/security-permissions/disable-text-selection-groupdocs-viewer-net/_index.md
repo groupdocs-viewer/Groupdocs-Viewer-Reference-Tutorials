@@ -4,8 +4,8 @@
 "title": "Cách vô hiệu hóa lựa chọn văn bản trong PDF bằng GroupDocs.Viewer .NET để tăng cường bảo mật"
 "url": "/vi/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách sử dụng GroupDocs.Viewer .NET để vô hiệu hóa lựa chọn văn bản khi kết xuất PDF dưới dạng HTML
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "Memuat Dokumen dengan Pengkodean Tertentu"
 "url": "/id/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Memuat Dokumen dengan Pengkodean Tertentu
 
 ## Perkenalan

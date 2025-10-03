@@ -8,10 +8,8 @@ keywords:
 - exclude Arial font GroupDocs.Viewer Java
 - render documents to HTML with GroupDocs
 - customize document rendering in Java
-
+type: docs
 ---
-
-
 # How to Exclude the Arial Font When Rendering Documents to HTML Using GroupDocs.Viewer Java
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - custom date-time formats emails
 - GroupDocs.Viewer .NET customization
 - email rendering time zone
-
+type: docs
 ---
-
-
 # Customizing Date-Time Formats and Time Zones in Emails with GroupDocs.Viewer .NET
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Divida desenhos CAD em blocos usando GroupDocs.Viewer Java para renderização eficiente"
 "url": "/pt/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dividir desenhos CAD em blocos com GroupDocs.Viewer Java
 
 ## Introdução

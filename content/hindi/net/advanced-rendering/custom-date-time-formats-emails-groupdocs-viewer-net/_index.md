@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET के साथ ईमेल में दिनांक-समय प्रारूप और समय क्षेत्र ऑफसेट को अनुकूलित करना"
 "url": "/hi/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ ईमेल में दिनांक-समय प्रारूप और समय क्षेत्र को अनुकूलित करना
 
 ## परिचय

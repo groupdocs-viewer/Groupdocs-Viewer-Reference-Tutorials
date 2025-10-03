@@ -5,8 +5,8 @@
 "title": "विशिष्ट CAD प्रारूप प्रस्तुत करें (CF2)"
 "url": "/hi/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # विशिष्ट CAD प्रारूप प्रस्तुत करें (CF2)
 
 ## परिचय

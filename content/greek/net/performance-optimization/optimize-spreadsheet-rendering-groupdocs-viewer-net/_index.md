@@ -4,8 +4,8 @@
 "title": "Βελτιστοποίηση απόδοσης υπολογιστικών φύλλων με το GroupDocs.Viewer για παράλειψη κενών στηλών .NET"
 "url": "/el/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Βελτιστοποίηση απόδοσης υπολογιστικών φύλλων με το GroupDocs.Viewer για .NET
 ## Πώς να παραλείψετε την απόδοση κενών στηλών σε υπολογιστικά φύλλα χρησιμοποιώντας το GroupDocs.Viewer .NET
 ### Εισαγωγή

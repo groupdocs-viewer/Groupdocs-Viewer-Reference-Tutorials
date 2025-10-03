@@ -5,8 +5,8 @@
 "title": "Abilita il rendering a strati in PDF"
 "url": "/it/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Abilita il rendering a strati in PDF
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 파일 유형을 감지하는 방법&#58; 포괄적인 튜토리얼"
 "url": "/ko/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용하여 파일 유형을 감지하는 방법: 포괄적인 튜토리얼
 
 ## 소개

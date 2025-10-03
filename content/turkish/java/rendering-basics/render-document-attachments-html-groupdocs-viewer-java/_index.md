@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58;yı Kullanarak Belge Eklerini HTML'ye Dönüştürme Adım Adım Kılavuz"
 "url": "/tr/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java ile Belge Eklerini HTML'ye Dönüştürün
 
 ## giriiş

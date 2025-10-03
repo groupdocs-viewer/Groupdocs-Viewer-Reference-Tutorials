@@ -4,8 +4,8 @@
 "title": "Cara Membuat Presentasi dengan Catatan Menggunakan GroupDocs.Viewer untuk Java&#58; Panduan Lengkap"
 "url": "/id/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat Presentasi dengan Catatan Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "تنفيذ تحليل المستندات باستخدام GroupDocs.Viewer لـ Java - استخراج بيانات الصفحة وسطور النص"
 "url": "/ar/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # تنفيذ تحليل المستندات باستخدام GroupDocs.Viewer لـ Java: استخراج بيانات الصفحة وسطور النص
 
 ## مقدمة

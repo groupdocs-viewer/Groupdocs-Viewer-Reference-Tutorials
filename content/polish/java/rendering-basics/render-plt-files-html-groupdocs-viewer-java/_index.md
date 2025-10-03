@@ -4,8 +4,8 @@
 "title": "Jak renderować pliki PLT do HTML za pomocą GroupDocs.Viewer w Javie? Przewodnik krok po kroku"
 "url": "/pl/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować pliki PLT do HTML za pomocą GroupDocs.Viewer w Javie: Podręcznik programisty
 
 ## Wstęp

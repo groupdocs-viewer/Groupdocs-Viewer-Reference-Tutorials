@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer for .NET 中的許可證管理－綜合指南"
 "url": "/zh-hant/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # 掌握 GroupDocs.Viewer for .NET 中的授權管理
 ## 綜合指南
 

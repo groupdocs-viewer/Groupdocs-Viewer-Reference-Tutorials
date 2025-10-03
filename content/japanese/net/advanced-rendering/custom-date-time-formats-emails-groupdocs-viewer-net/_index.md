@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET でメールの日付と時刻の形式とタイムゾーンのオフセットをカスタマイズする"
 "url": "/ja/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET でメールの日付と時刻の形式とタイムゾーンをカスタマイズする
 
 ## 導入

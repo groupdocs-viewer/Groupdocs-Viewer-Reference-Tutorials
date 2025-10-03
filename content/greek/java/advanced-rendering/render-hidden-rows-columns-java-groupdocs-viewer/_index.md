@@ -4,8 +4,8 @@
 "title": "Απόδοση κρυφών γραμμών και στηλών σε υπολογιστικά φύλλα Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση κρυφών γραμμών και στηλών σε υπολογιστικά φύλλα Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

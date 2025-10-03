@@ -5,8 +5,8 @@
 "title": "电子表格渲染选项"
 "url": "/zh/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # 电子表格渲染选项
 
 ## 介绍

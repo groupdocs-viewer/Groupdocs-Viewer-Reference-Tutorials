@@ -5,8 +5,8 @@
 "title": "在 PDF 中啟用字體提示"
 "url": "/zh-hant/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # 在 PDF 中啟用字體提示
 
 ## 介紹

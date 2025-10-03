@@ -5,8 +5,8 @@
 "title": "Oldalak lapozása és forgatása"
 "url": "/hu/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Oldalak lapozása és forgatása
 
 ## Bevezetés

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["CAD Integration"]
 tags: ["cad-rendering", "dotnet-tutorial", "groupdocs-viewer"]
+type: docs
 ---
-
 # How to Render CAD Drawings in .NET - Single Layout Guide
 
 ## Introduction

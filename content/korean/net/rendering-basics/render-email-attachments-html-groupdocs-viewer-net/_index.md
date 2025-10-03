@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 이메일 첨부 파일을 HTML로 렌더링"
 "url": "/ko/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 이메일 첨부 파일을 HTML로 렌더링하는 방법
 ## 소개
 이메일 첨부 파일을 보기 쉬운 HTML로 변환하는 효율적인 방법이 필요하신가요? 문서 접근성을 높이거나 콘텐츠 공유를 간소화하는 등, 첨부 파일 렌더링은 효과적인 디지털 서신 관리에 필수적입니다. 이 가이드에서는 **.NET용 GroupDocs.Viewer** 이를 쉽게 달성할 수 있습니다.

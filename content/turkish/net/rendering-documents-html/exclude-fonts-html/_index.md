@@ -5,8 +5,8 @@
 "title": "Yazı Tiplerini İşlenen HTML'den Hariç Tut"
 "url": "/tr/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Yazı Tiplerini İşlenen HTML'den Hariç Tut
 
 ## giriiş

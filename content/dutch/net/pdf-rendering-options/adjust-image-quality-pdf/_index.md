@@ -5,8 +5,8 @@
 "title": "Pas de beeldkwaliteit in PDF aan"
 "url": "/nl/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Pas de beeldkwaliteit in PDF aan
 
 ## Invoering

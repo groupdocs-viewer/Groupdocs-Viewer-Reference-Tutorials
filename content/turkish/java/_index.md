@@ -5,8 +5,8 @@
 "title": "Java için GroupDocs.Viewer'ın Kapsamlı Eğitimleri ve Örnekleri"
 "url": "/tr/java/"
 "weight": 10
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'ın Kapsamlı Eğitimleri ve Örnekleri
 
 ## giriiş

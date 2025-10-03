@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java 스프레드시트 렌더링 최적화 및 빈 열 건너뛰기"
 "url": "/ko/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Java에서 스프레드시트 렌더링을 최적화하는 방법: GroupDocs.Viewer를 사용하여 빈 열 건너뛰기
 
 ## 소개

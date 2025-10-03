@@ -5,8 +5,8 @@
 "title": "PDF 이미지 품질 조정"
 "url": "/ko/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # PDF 이미지 품질 조정
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Rendera specifika sidor i .NET med GroupDocs.Viewer – en omfattande guide"
 "url": "/sv/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Rendera specifika sidor i .NET med GroupDocs.Viewer: En omfattande guide
 
 ## Introduktion

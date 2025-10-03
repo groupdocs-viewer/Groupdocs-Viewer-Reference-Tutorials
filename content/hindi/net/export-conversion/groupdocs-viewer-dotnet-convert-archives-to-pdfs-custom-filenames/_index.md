@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके कस्टम फ़ाइल नामों के साथ अभिलेखागार को PDF में परिवर्तित करें"
 "url": "/hi/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके कस्टम फ़ाइल नामों के साथ अभिलेखागार को PDF में परिवर्तित करें
 
 ## परिचय

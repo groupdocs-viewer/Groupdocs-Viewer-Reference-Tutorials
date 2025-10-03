@@ -5,8 +5,8 @@
 "title": "渲染文本文件（.txt）"
 "url": "/zh/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # 渲染文本文件（.txt）
 
 ## 介绍

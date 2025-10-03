@@ -4,8 +4,8 @@
 "title": "CAD-Zeichnungen mit GroupDocs.Viewer Java in Kacheln aufteilen, um effizientes Rendering zu ermöglichen"
 "url": "/de/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD-Zeichnungen mit GroupDocs.Viewer Java in Kacheln aufteilen
 
 ## Einführung

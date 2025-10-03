@@ -5,8 +5,8 @@
 "title": "Renderen met ingebedde of externe bronnen"
 "url": "/nl/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Renderen met ingebedde of externe bronnen
 
 ## Invoering

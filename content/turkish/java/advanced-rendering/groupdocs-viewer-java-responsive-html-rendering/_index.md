@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java ile Duyarlı HTML Oluşturma&#58; Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Duyarlı HTML Oluşturma
 
 ## giriiş

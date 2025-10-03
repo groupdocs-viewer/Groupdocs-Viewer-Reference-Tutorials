@@ -5,8 +5,8 @@
 "title": "Vykreslení poznámek a úprava časových jednotek (MS Project)"
 "url": "/cs/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Vykreslení poznámek a úprava časových jednotek (MS Project)
 
 ## Zavedení

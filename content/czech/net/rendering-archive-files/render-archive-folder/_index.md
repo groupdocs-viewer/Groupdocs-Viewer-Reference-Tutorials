@@ -5,8 +5,8 @@
 "title": "Složka archivu renderování"
 "url": "/cs/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Složka archivu renderování
 
 ## Zavedení

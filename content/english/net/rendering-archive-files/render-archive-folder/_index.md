@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["archive-rendering", "groupdocs-viewer", "dotnet", "zip-files"]
+type: docs
 ---
-
 # How to Render Archive Folder in .NET Applications
 
 ## Introduction

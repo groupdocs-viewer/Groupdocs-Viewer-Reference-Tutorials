@@ -8,10 +8,8 @@ keywords:
 - load documents with specific encoding in java
 - groupdocs.viewer java setup
 - java character encoding
-
+type: docs
 ---
-
-
 # How to Load Documents with Specific Encoding in Java Using GroupDocs.Viewer
 
 ## Introduction

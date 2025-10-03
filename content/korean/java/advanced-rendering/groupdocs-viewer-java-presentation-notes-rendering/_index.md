@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용하여 노트가 포함된 프레젠테이션을 렌더링하는 방법&#58; 종합 가이드"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 노트가 포함된 프레젠테이션을 렌더링하는 방법
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Come recuperare e stampare i nomi dei fogli di lavoro Excel utilizzando GroupDocs.Viewer per .NET (Guida 2023)"
 "url": "/it/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Come recuperare e stampare i nomi dei fogli di lavoro di Excel utilizzando GroupDocs.Viewer per .NET: una guida completa
 
 ## Introduzione

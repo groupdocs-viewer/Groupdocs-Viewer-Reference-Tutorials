@@ -4,8 +4,8 @@
 "title": "Renderize desenhos CAD como JPGs usando GroupDocs.Viewer Java - Um guia completo"
 "url": "/pt/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar desenhos CAD como JPGs usando o GroupDocs.Viewer Java: um tutorial passo a passo
 
 ## Introdução

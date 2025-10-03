@@ -4,8 +4,8 @@
 "title": "Agregar marcas de agua a documentos con GroupDocs.Viewer Java&#58; una guía completa"
 "url": "/es/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Agregar marcas de agua a documentos con GroupDocs.Viewer Java: una guía completa
 
 ## Introducción

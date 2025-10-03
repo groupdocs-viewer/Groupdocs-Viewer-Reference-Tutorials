@@ -5,8 +5,8 @@
 "title": "電子メールメッセージのレンダリング"
 "url": "/ja/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # 電子メールメッセージのレンダリング
 
 ## 導入

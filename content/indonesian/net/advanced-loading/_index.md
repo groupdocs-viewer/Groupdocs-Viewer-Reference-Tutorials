@@ -5,8 +5,8 @@
 "title": "Opsi Pemuatan Lanjutan"
 "url": "/id/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Opsi Pemuatan Lanjutan
 
 ## Perkenalan

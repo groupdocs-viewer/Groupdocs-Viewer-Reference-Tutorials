@@ -4,8 +4,8 @@
 "title": "Vylepšení vykreslování PDF v .NET – Povolení nápovědy k písmům pomocí GroupDocs.Viewer"
 "url": "/cs/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak vylepšit vykreslování PDF v .NET pomocí GroupDocs.Viewer: Povolení nápovědy k písmu
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Jelszóval védett dokumentumok renderelése a GroupDocs.Viewer .NET segítségével"
 "url": "/hu/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jelszóval védett dokumentumok renderelése a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

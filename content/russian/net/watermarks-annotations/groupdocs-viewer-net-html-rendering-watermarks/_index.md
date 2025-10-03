@@ -4,8 +4,8 @@
 "title": "Рендеринг главного документа в .NET с использованием GroupDocs.Viewer&#58; Преобразование HTML и интеграция водяных знаков"
 "url": "/ru/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Рендеринг главного документа в .NET с использованием GroupDocs.Viewer: преобразование HTML и интеграция водяных знаков
 
 ## Введение

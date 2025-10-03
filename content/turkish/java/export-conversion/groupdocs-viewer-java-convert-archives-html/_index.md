@@ -4,8 +4,8 @@
 "title": "Arşivleri GroupDocs.Viewer Java ile HTML'ye Dönüştürme Kapsamlı Bir Kılavuz"
 "url": "/tr/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java ile Arşivleri HTML'ye Dönüştürme: Kapsamlı Bir Kılavuz
 
 ## giriiş

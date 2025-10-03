@@ -5,8 +5,8 @@
 "title": "ईमेल संदेश प्रस्तुत करना"
 "url": "/hi/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # ईमेल संदेश प्रस्तुत करना
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "Konversi ODF ke HTML, JPG, PNG, PDF Menggunakan GroupDocs.Viewer untuk Java"
 "url": "/id/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Konversi Dokumen ODF ke Berbagai Format Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

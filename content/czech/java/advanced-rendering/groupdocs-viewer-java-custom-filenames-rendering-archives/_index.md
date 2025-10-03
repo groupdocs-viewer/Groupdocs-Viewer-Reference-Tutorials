@@ -4,8 +4,8 @@
 "title": "Zvládnutí vlastních názvů souborů v Javě v GroupDocs.Viewer pro vykreslování archivů ve formátu PDF"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí GroupDocs.Viewer v Javě: Zadání vlastních názvů souborů při vykreslování archivů do PDF
 
 ## Zavedení

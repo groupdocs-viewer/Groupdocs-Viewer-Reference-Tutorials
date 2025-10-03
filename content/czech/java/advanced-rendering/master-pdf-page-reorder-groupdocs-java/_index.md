@@ -4,8 +4,8 @@
 "title": "Efektivní změna pořadí stránek PDF pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Efektivní změna pořadí stránek PDF pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

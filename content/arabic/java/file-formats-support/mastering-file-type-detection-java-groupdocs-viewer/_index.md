@@ -4,8 +4,8 @@
 "title": "إتقان اكتشاف نوع الملف في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # إتقان اكتشاف نوع الملف في Java باستخدام GroupDocs.Viewer
 
 اكتشف قوة **عارض GroupDocs** لتحديد أنواع الملفات بسلاسة من الامتدادات وأنواع الوسائط والتدفقات. تُبسّط هذه المكتبة القوية عمليات التطوير وتُحسّن قدرات التطبيقات.

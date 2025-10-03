@@ -5,8 +5,8 @@
 "title": "ノートをレンダリングして時間単位を調整する (MS Project)"
 "url": "/ja/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # ノートをレンダリングして時間単位を調整する (MS Project)
 
 ## 導入

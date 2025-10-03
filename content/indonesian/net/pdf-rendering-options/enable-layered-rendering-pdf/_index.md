@@ -5,8 +5,8 @@
 "title": "Aktifkan Rendering Berlapis dalam PDF"
 "url": "/id/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Aktifkan Rendering Berlapis dalam PDF
 
 ## Perkenalan

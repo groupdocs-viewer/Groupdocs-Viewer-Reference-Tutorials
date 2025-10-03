@@ -5,8 +5,8 @@
 "title": "टिप्पणियों के साथ दस्तावेज़ प्रस्तुत करें"
 "url": "/hi/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # टिप्पणियों के साथ दस्तावेज़ प्रस्तुत करें
 
 ## परिचय

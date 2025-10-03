@@ -5,8 +5,8 @@
 "title": "Απόδοση αρχείων CHM"
 "url": "/el/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Απόδοση αρχείων CHM
 
 ## Εισαγωγή

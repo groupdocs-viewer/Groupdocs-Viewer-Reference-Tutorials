@@ -4,8 +4,8 @@
 "title": "Définir le délai d'expiration du chargement des ressources dans GroupDocs.Viewer pour Java ; améliorer les performances des documents"
 "url": "/fr/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Définir le délai d'expiration du chargement des ressources dans GroupDocs.Viewer pour Java : améliorer l'efficacité du rendu des documents
 
 ## Introduction

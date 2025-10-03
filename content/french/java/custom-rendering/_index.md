@@ -3,8 +3,8 @@
 "title": "Tutoriels de rendu de documents personnalisés pour GroupDocs.Viewer Java"
 "url": "/fr/java/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # Tutoriels de rendu de documents personnalisés pour GroupDocs.Viewer Java
 
 Maîtrisez les techniques de personnalisation avancées grâce à nos tutoriels Java GroupDocs.Viewer pour le rendu personnalisé. Ces guides complets expliquent comment créer des gestionnaires de rendu personnalisés, implémenter une logique de rendu spécialisée, étendre les fonctionnalités de rendu intégrées et développer des solutions de traitement de documents sophistiquées. Chaque tutoriel fournit des exemples de code Java détaillés montrant comment mettre en œuvre des stratégies de rendu de documents flexibles et sur mesure, allant au-delà des approches de rendu standard.

@@ -4,8 +4,8 @@
 "title": "Efficiënte CAD-layoutrendering met GroupDocs.Viewer voor .NET&#58; een stapsgewijze handleiding"
 "url": "/nl/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Efficiënte CAD-layoutrendering met GroupDocs.Viewer voor .NET
 
 ## Invoering

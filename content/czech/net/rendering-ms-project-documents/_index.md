@@ -5,8 +5,8 @@
 "title": "Vykreslování dokumentů Microsoft Projectu"
 "url": "/cs/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Vykreslování dokumentů Microsoft Projectu
 
 ## Zavedení

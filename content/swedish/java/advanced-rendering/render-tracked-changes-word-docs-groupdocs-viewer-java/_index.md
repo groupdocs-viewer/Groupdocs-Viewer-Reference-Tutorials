@@ -4,8 +4,8 @@
 "title": "Så här renderar du spårade ändringar i Word-dokument med GroupDocs.Viewer för Java - En omfattande guide"
 "url": "/sv/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendera spårade ändringar i Word-dokument med GroupDocs.Viewer för Java
 
 ## Introduktion

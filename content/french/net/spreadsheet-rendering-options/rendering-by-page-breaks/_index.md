@@ -5,8 +5,8 @@
 "title": "Rendu par sauts de page"
 "url": "/fr/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Rendu par sauts de page
 
 ## Introduction

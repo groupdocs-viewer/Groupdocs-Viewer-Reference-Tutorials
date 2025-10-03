@@ -4,8 +4,8 @@
 "title": "Geselecteerde pagina's van een document renderen met GroupDocs.Viewer voor Java"
 "url": "/nl/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Specifieke pagina's renderen met GroupDocs.Viewer voor Java
 
 ## Invoering

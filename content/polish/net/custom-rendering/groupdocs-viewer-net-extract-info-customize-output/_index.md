@@ -4,8 +4,8 @@
 "title": "Wyodrębnij informacje o dokumencie i dostosuj dane wyjściowe za pomocą GroupDocs.Viewer .NET&#58; Kompleksowy przewodnik"
 "url": "/pl/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Wyodrębnij informacje o dokumencie i dostosuj dane wyjściowe za pomocą GroupDocs.Viewer .NET
 ## Samouczek dotyczący renderowania niestandardowego
 ### Czego się nauczysz:

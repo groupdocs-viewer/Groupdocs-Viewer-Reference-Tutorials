@@ -5,8 +5,8 @@
 "title": "Render con texto superpuesto para visualización"
 "url": "/es/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Render con texto superpuesto para visualización
 
 ## Introducción

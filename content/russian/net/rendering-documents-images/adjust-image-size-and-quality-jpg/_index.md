@@ -5,8 +5,8 @@
 "title": "Настройте размер и качество изображения (JPG)"
 "url": "/ru/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Настройте размер и качество изображения (JPG)
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "Làm chủ GroupDocs.Viewer Java&#58; Tên tệp tùy chỉnh để kết xuất PDF của Lưu trữ"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ GroupDocs.Viewer Java: Chỉ định tên tệp tùy chỉnh khi kết xuất lưu trữ thành PDF
 
 ## Giới thiệu

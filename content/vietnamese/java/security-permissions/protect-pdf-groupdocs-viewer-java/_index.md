@@ -4,8 +4,8 @@
 "title": "Bảo vệ PDF của bạn bằng GroupDocs.Viewer trong Java&#58; Hướng dẫn về quyền và bảo vệ bằng mật khẩu"
 "url": "/vi/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Bảo mật PDF của bạn với GroupDocs.Viewer trong Java
 
 ## Giới thiệu

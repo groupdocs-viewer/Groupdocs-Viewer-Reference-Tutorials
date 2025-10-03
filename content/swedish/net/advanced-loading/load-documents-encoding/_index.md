@@ -5,8 +5,8 @@
 "title": "Ladda dokument med specifik kodning"
 "url": "/sv/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Ladda dokument med specifik kodning
 
 ## Introduktion

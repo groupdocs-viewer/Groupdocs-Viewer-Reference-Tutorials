@@ -4,8 +4,8 @@
 "title": "كيفية استبعاد خطوط معينة من مخرجات HTML باستخدام GroupDocs.Viewer لـ .NET"
 "url": "/ar/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استبعاد الخطوط من مخرجات HTML باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

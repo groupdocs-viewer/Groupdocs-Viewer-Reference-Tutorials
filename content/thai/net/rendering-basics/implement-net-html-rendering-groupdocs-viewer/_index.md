@@ -4,8 +4,8 @@
 "title": "วิธีการใช้การเรนเดอร์ HTML ของ .NET ด้วย GroupDocs.Viewer พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการใช้ .NET HTML Rendering กับ GroupDocs.Viewer: คำแนะนำทีละขั้นตอน
 
 ## การแนะนำ

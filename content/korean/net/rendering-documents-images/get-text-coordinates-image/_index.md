@@ -5,8 +5,8 @@
 "title": "이미지 렌더링을 위한 텍스트 좌표 가져오기"
 "url": "/ko/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # 이미지 렌더링을 위한 텍스트 좌표 가져오기
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสารเป็นรูปภาพด้วย Text Layer ใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์เอกสารเป็นรูปภาพด้วย Text Layer ใน Java โดยใช้ GroupDocs.Viewer
 ## บทช่วยสอนการเรนเดอร์ขั้นสูง
 **URL SEO ปัจจุบัน**: /เรนเดอร์เอกสารเป็นรูปภาพด้วยเลเยอร์ข้อความ-java

@@ -4,8 +4,8 @@
 "title": "Dividi i fogli Excel in pagine per righe utilizzando GroupDocs.Viewer .NET per una gestione efficiente dei dati"
 "url": "/it/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Suddivisione dei fogli Excel in pagine per righe con GroupDocs.Viewer .NET
 
 ## Introduzione

@@ -3,8 +3,8 @@
 "title": "Samouczki dotyczące ekstrakcji metadanych dokumentu dla GroupDocs.Viewer .NET"
 "url": "/pl/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Samouczki dotyczące ekstrakcji metadanych dokumentu dla GroupDocs.Viewer .NET
 
 Naucz się pracować z metadanymi i właściwościami dokumentu dzięki naszym samouczkom GroupDocs.Viewer .NET. Te praktyczne przewodniki pokazują, jak wyodrębnić informacje o dokumencie, odczytać pola metadanych, zarządzać właściwościami dokumentu i wdrożyć przetwarzanie dokumentów oparte na metadanych. Każdy samouczek zawiera działające przykłady kodu .NET dla typowych scenariuszy metadanych, pomagając w tworzeniu aplikacji, które mogą skutecznie analizować i zarządzać informacjami o dokumencie.

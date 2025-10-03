@@ -4,8 +4,8 @@
 "title": "Efektywne renderowanie warstwowe PDF w Javie przy użyciu GroupDocs.Viewer"
 "url": "/pl/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Efektywne renderowanie warstwowe PDF w Javie przy użyciu GroupDocs.Viewer
 
 ## Wstęp

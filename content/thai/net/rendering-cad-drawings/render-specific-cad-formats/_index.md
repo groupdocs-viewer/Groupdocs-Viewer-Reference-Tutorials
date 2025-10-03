@@ -5,8 +5,8 @@
 "title": "เรนเดอร์รูปแบบ CAD เฉพาะ (CF2)"
 "url": "/th/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # เรนเดอร์รูปแบบ CAD เฉพาะ (CF2)
 
 ## การแนะนำ

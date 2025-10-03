@@ -5,8 +5,8 @@
 "title": "Thu nhỏ tài liệu HTML đã kết xuất"
 "url": "/vi/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Thu nhỏ tài liệu HTML đã kết xuất
 
 ## Giới thiệu

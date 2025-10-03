@@ -5,8 +5,8 @@
 "title": "Renderização por quebras de página"
 "url": "/pt/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Renderização por quebras de página
 
 ## Introdução

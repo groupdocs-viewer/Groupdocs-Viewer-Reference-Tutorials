@@ -4,8 +4,8 @@
 "title": "Comment restituer des fichiers EMZ/EMF à l'aide de GroupDocs.Viewer .NET ? Un guide complet"
 "url": "/fr/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Comment restituer des fichiers EMZ/EMF avec GroupDocs.Viewer .NET : guide complet
 ## Notions de base sur le rendu
 Ce tutoriel explique comment restituer des fichiers EMF (Enhanced Metafile) ou EMZ (Embedded Metafile) avec GroupDocs.Viewer pour .NET. Que vous intégriez des fonctionnalités polyvalentes de conversion de fichiers à votre application ou que vous gériez des documents, ce guide couvre le rendu de ces formats aux formats HTML, JPG, PNG et PDF.

@@ -4,8 +4,8 @@
 "title": "Menampilkan Email dengan Tanggal dan Waktu Kustom di Java menggunakan GroupDocs.Viewer"
 "url": "/id/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Menampilkan Email dengan Tanggal dan Waktu Kustom di Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

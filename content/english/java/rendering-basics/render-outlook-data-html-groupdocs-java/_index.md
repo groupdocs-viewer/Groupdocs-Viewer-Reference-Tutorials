@@ -8,10 +8,8 @@ keywords:
 - Render Outlook PST to HTML
 - GroupDocs.Viewer for Java
 - Java email rendering
-
+type: docs
 ---
-
-
 # How to Render Outlook Data Files to HTML Using GroupDocs.Viewer for Java
 
 ## Introduction

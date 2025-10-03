@@ -4,8 +4,8 @@
 "title": "Responzivní vykreslování HTML pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Responzivní vykreslování HTML pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

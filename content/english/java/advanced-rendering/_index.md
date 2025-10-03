@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["groupdocs-viewer", "document-rendering", "java-tutorials", "pdf-processing"]
+type: docs
 ---
-
 # GroupDocs.Viewer Java Advanced Rendering - Complete Developer Guide
 
 Looking to implement sophisticated document rendering in your Java applications? You've come to the right place. This comprehensive collection of GroupDocs.Viewer Java tutorials will transform you from a basic document viewer implementer into an advanced rendering expert.

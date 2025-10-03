@@ -5,8 +5,8 @@
 "title": "Regola le dimensioni della pagina durante il rendering dei messaggi di posta elettronica"
 "url": "/it/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Regola le dimensioni della pagina durante il rendering dei messaggi di posta elettronica
 
 ## Introduzione

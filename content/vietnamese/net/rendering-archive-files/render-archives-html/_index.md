@@ -5,8 +5,8 @@
 "title": "Hiển thị Lưu trữ thành Một hoặc Nhiều Trang HTML"
 "url": "/vi/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Hiển thị Lưu trữ thành Một hoặc Nhiều Trang HTML
 
 ## Giới thiệu

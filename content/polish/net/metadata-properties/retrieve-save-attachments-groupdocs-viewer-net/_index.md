@@ -4,8 +4,8 @@
 "title": "Jak pobierać i zapisywać załączniki do dokumentów za pomocą GroupDocs.Viewer .NET w celu wydajnego zarządzania metadanymi"
 "url": "/pl/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak pobierać i zapisywać załączniki dokumentów za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

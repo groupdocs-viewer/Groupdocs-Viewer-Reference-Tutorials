@@ -4,8 +4,8 @@
 "title": "Kết xuất hiệu quả các tệp MS Project với ghi chú bằng GroupDocs.Viewer cho .NET"
 "url": "/vi/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất hiệu quả các tệp MS Project với ghi chú bằng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

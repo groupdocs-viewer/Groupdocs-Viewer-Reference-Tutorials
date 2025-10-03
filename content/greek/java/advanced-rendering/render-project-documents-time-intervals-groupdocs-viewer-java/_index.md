@@ -4,8 +4,8 @@
 "title": "Απόδοση εγγράφων έργου ανά χρονικά διαστήματα χρησιμοποιώντας το GroupDocs.Viewer για Java"
 "url": "/el/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να υλοποιήσετε έγγραφα έργου Render με χρονικά διαστήματα χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

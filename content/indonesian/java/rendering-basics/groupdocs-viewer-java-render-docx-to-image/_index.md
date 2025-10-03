@@ -4,8 +4,8 @@
 "title": "Render DOCX ke Gambar Menggunakan GroupDocs Viewer untuk Java; Panduan Lengkap"
 "url": "/id/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # Render DOCX ke Gambar dengan GroupDocs Viewer untuk Java
 
 ## Perkenalan

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["GroupDocs.Viewer", "document-loading", "dotnet", "PDF-rendering"]
+type: docs
 ---
-
 # How to Load Documents in .NET Applications
 
 ## Why Document Loading Matters for Your .NET Projects

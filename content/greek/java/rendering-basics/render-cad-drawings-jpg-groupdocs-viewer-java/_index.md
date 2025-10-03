@@ -4,8 +4,8 @@
 "title": "Απόδοση σχεδίων CAD ως JPG χρησιμοποιώντας το GroupDocs.Viewer Java&#58; Ένας ολοκληρωμένος οδηγός"
 "url": "/el/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε σχέδια CAD ως JPG χρησιμοποιώντας το GroupDocs.Viewer Java: Ένα βήμα προς βήμα σεμινάριο
 
 ## Εισαγωγή

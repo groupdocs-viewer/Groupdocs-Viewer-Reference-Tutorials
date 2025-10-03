@@ -5,8 +5,8 @@
 "title": "Obter informações de visualização para documento PDF"
 "url": "/pt/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Obter informações de visualização para documento PDF
 
 ## Introdução

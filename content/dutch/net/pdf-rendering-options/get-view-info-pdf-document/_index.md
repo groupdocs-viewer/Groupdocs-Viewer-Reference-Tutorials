@@ -5,8 +5,8 @@
 "title": "Bekijk informatie voor PDF-document"
 "url": "/nl/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Bekijk informatie voor PDF-document
 
 ## Invoering

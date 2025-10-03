@@ -4,8 +4,8 @@
 "title": "Pobieranie metadanych i właściwości PDF za pomocą GroupDocs.Viewer w Javie — przewodnik krok po kroku"
 "url": "/pl/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Pobieranie metadanych i właściwości PDF za pomocą GroupDocs.Viewer w Javie
 
 Witamy w tym kompleksowym przewodniku dotyczącym pobierania informacji o widoku z dokumentu PDF za pomocą biblioteki GroupDocs.Viewer w Javie. Jeśli chcesz programowo wyodrębnić szczegóły, takie jak liczba stron, typ dokumentu i uprawnienia z plików PDF, trafiłeś we właściwe miejsce.

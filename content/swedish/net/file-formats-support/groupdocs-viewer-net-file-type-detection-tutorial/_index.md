@@ -4,8 +4,8 @@
 "title": "Så här identifierar du filtyper med GroupDocs.Viewer för .NET - En omfattande handledning"
 "url": "/sv/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Så här identifierar du filtyper med GroupDocs.Viewer för .NET: En omfattande handledning
 
 ## Introduktion

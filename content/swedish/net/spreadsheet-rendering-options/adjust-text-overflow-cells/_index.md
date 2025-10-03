@@ -5,8 +5,8 @@
 "title": "Justera textöverflöde i celler"
 "url": "/sv/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Justera textöverflöde i celler
 
 ## Introduktion

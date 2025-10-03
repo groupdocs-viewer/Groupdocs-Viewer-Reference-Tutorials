@@ -5,8 +5,8 @@
 "title": "Загрузка документов"
 "url": "/ru/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Загрузка документов
 
 ## Введение

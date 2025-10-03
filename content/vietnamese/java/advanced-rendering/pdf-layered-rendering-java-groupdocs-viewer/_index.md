@@ -4,8 +4,8 @@
 "title": "Kết xuất PDF nhiều lớp hiệu quả trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất PDF nhiều lớp hiệu quả trong Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

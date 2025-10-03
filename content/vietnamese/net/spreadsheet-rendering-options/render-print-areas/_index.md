@@ -5,8 +5,8 @@
 "title": "Hiển thị vùng in với GroupDocs.Viewer cho .NET"
 "url": "/vi/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Hiển thị vùng in với GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

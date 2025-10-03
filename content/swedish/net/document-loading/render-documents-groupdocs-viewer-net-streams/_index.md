@@ -4,8 +4,8 @@
 "title": "Rendera dokument med GroupDocs.Viewer .NET från Streams&#58; En omfattande guide för utvecklare"
 "url": "/sv/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Rendera dokument med GroupDocs.Viewer .NET från Streams: En omfattande guide för utvecklare
 
 ## Introduktion

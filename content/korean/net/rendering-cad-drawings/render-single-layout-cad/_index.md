@@ -5,8 +5,8 @@
 "title": "CAD 도면에서 단일 레이아웃 렌더링"
 "url": "/ko/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # CAD 도면에서 단일 레이아웃 렌더링
 
 ## 소개

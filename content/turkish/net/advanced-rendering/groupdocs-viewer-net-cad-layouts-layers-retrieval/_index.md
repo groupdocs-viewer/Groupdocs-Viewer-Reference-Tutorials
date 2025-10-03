@@ -4,8 +4,8 @@
 "title": "Verimli Tasarım Yönetimi için GroupDocs.Viewer .NET Kullanılarak CAD Düzenleri ve Katmanları Nasıl Alınır"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak CAD Düzenleri ve Katmanları Nasıl Alınır
 ## giriiş
 Bilgisayar Destekli Tasarım (CAD) alanında, karmaşık çizimleri verimli bir şekilde yönetmek, özellikle tek bir dosyada birden fazla düzen ve katmanla uğraşırken çok önemlidir. Mimarlar, mühendisler ve tasarımcılar için belirli bilgilere hızlı bir şekilde erişmek üretkenliği artırır. **GrupDokümanları.Görüntüleyici .NET** Geliştiricilerin CAD çizimlerinden düzenleri ve katmanları programlı olarak çıkarmasına olanak tanıyarak güçlü bir çözüm sunar.

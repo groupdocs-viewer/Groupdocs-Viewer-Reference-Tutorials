@@ -4,8 +4,8 @@
 "title": "Jegyzetekkel ellátott prezentációk renderelése a GroupDocs.Viewer for Java használatával – Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jegyzetekkel ellátott prezentációk renderelése a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["web-documents", "chm-files", "html-rendering", "dotnet", "groupdocs"]
+type: docs
 ---
-
 # How to Render Web Documents in .NET: The Complete Developer Guide
 
 Web document rendering can be tricky—especially when you're dealing with legacy CHM files or need pixel-perfect HTML margins. If you've ever spent hours wrestling with document conversion libraries that either break your formatting or don't support the formats you need, you're in the right place.

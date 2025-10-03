@@ -4,8 +4,8 @@
 "title": "Отображение писем с пользовательской датой и временем в Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Отображение писем с пользовательской датой и временем в Java с помощью GroupDocs.Viewer
 
 ## Введение

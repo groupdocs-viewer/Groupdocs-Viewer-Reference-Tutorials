@@ -8,10 +8,8 @@ keywords:
 - render CAD drawings PNG
 - GroupDocs.Viewer for Java setup
 - custom image size and background color
-
+type: docs
 ---
-
-
 # How to Render CAD Drawings as PNG with Custom Size & Background Color Using GroupDocs.Viewer for Java
 
 ## Introduction

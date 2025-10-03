@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - split CAD drawings into tiles
 - rendering large CAD files
-
+type: docs
 ---
-
-
 # Split CAD Drawings into Tiles with GroupDocs.Viewer Java
 
 ## Introduction

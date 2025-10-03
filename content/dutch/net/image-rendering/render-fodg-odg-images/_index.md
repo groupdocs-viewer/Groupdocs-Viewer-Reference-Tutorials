@@ -5,8 +5,8 @@
 "title": "FODG- en ODG-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # FODG- en ODG-afbeeldingen renderen
 
 ## Invoering

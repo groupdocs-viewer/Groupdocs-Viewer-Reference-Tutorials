@@ -5,8 +5,8 @@
 "title": "Parola Korumalı Belgeleri Yükle"
 "url": "/tr/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Parola Korumalı Belgeleri Yükle
 
 ## giriiş

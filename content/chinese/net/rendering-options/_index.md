@@ -5,8 +5,8 @@
 "title": "渲染选项"
 "url": "/zh/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # 渲染选项
 
 

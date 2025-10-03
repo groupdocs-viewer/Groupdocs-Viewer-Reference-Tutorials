@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文件渲染基礎教學"
 "url": "/zh-hant/java/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文件渲染基礎教學
 
 透過我們詳細的 GroupDocs.Viewer Java 教學掌握文件渲染技巧。這些逐步指南示範如何將文件轉換並渲染為各種輸出格式、控制渲染品質、管理頁面層級渲染以及實現跨格式文件視覺化。每個教學課程都包含針對常見渲染場景的 Java 程式碼範例，可協助您建立能夠將文件轉換為多種演示格式的應用程式。

@@ -4,8 +4,8 @@
 "title": "Làm chủ chuyển đổi OBJ sang HTML/JPG/PNG/PDF trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ chuyển đổi tệp: Chuyển đổi OBJ sang HTML/JPG/PNG/PDF trong Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

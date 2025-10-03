@@ -4,8 +4,8 @@
 "title": "Κατανόηση των προσαρμοσμένων ονομάτων αρχείων Java του GroupDocs.Viewer για την απόδοση αρχείων σε μορφή PDF"
 "url": "/el/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Εξοικείωση με το GroupDocs.Viewer Java: Καθορισμός προσαρμοσμένων ονομάτων αρχείων κατά την απόδοση αρχείων σε PDF
 
 ## Εισαγωγή

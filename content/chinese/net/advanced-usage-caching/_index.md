@@ -5,8 +5,8 @@
 "title": "高级用法（缓存）"
 "url": "/zh/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # 高级用法（缓存）
 
 

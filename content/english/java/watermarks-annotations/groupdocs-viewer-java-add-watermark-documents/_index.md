@@ -8,9 +8,8 @@ keywords:
 - add watermark to documents
 - GroupDocs.Viewer Java
 - document rendering with watermarks
+type: docs
 ---
-
-
 # Add Watermarks to Documents Using GroupDocs.Viewer Java: A Comprehensive Guide
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Archiefmappen weergeven in Java met GroupDocs.Viewer&#58; een stapsgewijze handleiding"
 "url": "/nl/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Archiefmappen renderen met GroupDocs.Viewer voor Java
 
 ## Invoering

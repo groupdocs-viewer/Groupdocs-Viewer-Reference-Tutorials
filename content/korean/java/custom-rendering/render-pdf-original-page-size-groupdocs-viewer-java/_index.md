@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용하여 PDF를 원본 크기로 렌더링하는 포괄적인 가이드"
 "url": "/ko/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 PDF를 원래 페이지 크기로 렌더링하는 방법
 
 다양한 플랫폼과 기기에서 PDF를 정확하게 표시하려면 원래 페이지 크기를 유지하면서 렌더링하는 것이 필수적입니다. 이 종합 가이드에서는 GroupDocs.Viewer for Java API를 사용하여 이 기능을 구현하는 방법을 안내합니다. 다음 단계를 따르면 PDF 렌더링 중에도 원본 페이지 크기를 그대로 유지할 수 있습니다.

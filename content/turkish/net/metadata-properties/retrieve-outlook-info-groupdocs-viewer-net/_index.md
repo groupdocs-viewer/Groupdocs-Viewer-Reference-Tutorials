@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanılarak Outlook Veri Bilgileri Nasıl Alınır"
 "url": "/tr/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET Kullanılarak Outlook Veri Bilgileri Nasıl Alınır
 
 ## giriiş

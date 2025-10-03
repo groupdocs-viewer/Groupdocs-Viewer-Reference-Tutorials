@@ -5,8 +5,8 @@
 "title": "Sắp xếp lại các trang trong tài liệu"
 "url": "/vi/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Sắp xếp lại các trang trong tài liệu
 
 ## Giới thiệu

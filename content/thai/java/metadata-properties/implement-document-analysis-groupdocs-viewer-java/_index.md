@@ -4,8 +4,8 @@
 "title": "การนำการวิเคราะห์เอกสารไปใช้งานด้วย GroupDocs.Viewer สำหรับ Java และการแยกข้อมูลเมตาของหน้าและบรรทัดข้อความ"
 "url": "/th/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # การนำการวิเคราะห์เอกสารไปใช้งานด้วย GroupDocs.Viewer สำหรับ Java: การแยกข้อมูลเมตาของหน้าและบรรทัดข้อความ
 
 ## การแนะนำ

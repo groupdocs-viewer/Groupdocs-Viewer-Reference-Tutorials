@@ -5,8 +5,8 @@
 "title": "渲染帶有註釋的文檔"
 "url": "/zh-hant/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # 渲染帶有註釋的文檔
 
 ## 介紹

@@ -5,8 +5,8 @@
 "title": "HTML renderen met door de gebruiker gedefinieerde marges"
 "url": "/nl/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # HTML renderen met door de gebruiker gedefinieerde marges
 
 ## Invoering

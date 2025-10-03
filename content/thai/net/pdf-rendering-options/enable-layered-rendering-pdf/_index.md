@@ -5,8 +5,8 @@
 "title": "เปิดใช้งานการเรนเดอร์แบบเลเยอร์ใน PDF"
 "url": "/th/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # เปิดใช้งานการเรนเดอร์แบบเลเยอร์ใน PDF
 
 ## การแนะนำ

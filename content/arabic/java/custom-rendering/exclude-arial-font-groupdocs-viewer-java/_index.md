@@ -4,8 +4,8 @@
 "title": "كيفية استبعاد خط Arial في عرض HTML باستخدام GroupDocs.Viewer Java - دليل خطوة بخطوة"
 "url": "/ar/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استبعاد الخط Arial عند عرض المستندات إلى HTML باستخدام GroupDocs.Viewer Java
 
 ## مقدمة

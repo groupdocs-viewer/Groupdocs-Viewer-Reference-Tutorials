@@ -5,8 +5,8 @@
 "title": "Kết xuất bản vẽ CAD"
 "url": "/vi/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Kết xuất bản vẽ CAD
 
 

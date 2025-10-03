@@ -5,8 +5,8 @@
 "title": "Renderizza il documento con commenti"
 "url": "/it/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Renderizza il documento con commenti
 
 ## Introduzione

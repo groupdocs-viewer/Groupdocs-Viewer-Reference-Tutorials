@@ -5,8 +5,8 @@
 "title": "Átfogó oktatóanyagok és példák a GroupDocs.Viewer Java-hoz használatához"
 "url": "/hu/java/"
 "weight": 10
+type: docs
 ---
-
 # Átfogó oktatóanyagok és példák a GroupDocs.Viewer Java-hoz használatához
 
 ## Bevezetés

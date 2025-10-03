@@ -4,8 +4,8 @@
 "title": "Rendering PDF Berlapis yang Efisien di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rendering PDF Berlapis yang Efisien di Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

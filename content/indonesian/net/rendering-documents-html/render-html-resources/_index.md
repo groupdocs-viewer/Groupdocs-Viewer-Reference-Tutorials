@@ -5,8 +5,8 @@
 "title": "Render dengan Sumber Daya Tertanam atau Eksternal"
 "url": "/id/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Render dengan Sumber Daya Tertanam atau Eksternal
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中從 InputStream 渲染 DOCX 文件"
 "url": "/zh-hant/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 從 InputStream 載入並呈現 DOCX 文件
 
 ## 介紹

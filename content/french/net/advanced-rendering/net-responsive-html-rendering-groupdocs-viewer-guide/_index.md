@@ -4,8 +4,8 @@
 "title": "Implémenter le rendu HTML réactif .NET avec GroupDocs.Viewer – Un guide complet pour les développeurs"
 "url": "/fr/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implémenter le rendu HTML réactif .NET avec GroupDocs.Viewer : Guide du développeur
 
 ## Introduction

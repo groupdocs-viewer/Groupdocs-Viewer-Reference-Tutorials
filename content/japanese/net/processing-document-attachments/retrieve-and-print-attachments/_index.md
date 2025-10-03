@@ -5,8 +5,8 @@
 "title": "ドキュメントの添付ファイルを取得して印刷する"
 "url": "/ja/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # ドキュメントの添付ファイルを取得して印刷する
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "عرض المستند مع الملاحظات"
 "url": "/ar/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # عرض المستند مع الملاحظات
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "CAD Çizimleri için Çıktı Görüntü Boyutunu Ayarla"
 "url": "/tr/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # CAD Çizimleri için Çıktı Görüntü Boyutunu Ayarla
 
 ## giriiş

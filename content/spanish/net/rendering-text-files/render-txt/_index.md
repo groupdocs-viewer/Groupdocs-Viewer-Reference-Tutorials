@@ -5,8 +5,8 @@
 "title": "Renderizar archivos de texto (.txt)"
 "url": "/es/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar archivos de texto (.txt)
 
 ## Introducción

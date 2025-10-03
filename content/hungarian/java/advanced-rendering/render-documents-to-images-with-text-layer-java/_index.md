@@ -4,8 +4,8 @@
 "title": "Dokumentumok renderelése képként szöveges réteggel Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumok renderelése képként szöveges réteggel Java-ban a GroupDocs.Viewer használatával
 ## Haladó renderelési oktatóanyag
 **Jelenlegi SEO URL**: /render-documents-to-images-with-text-layer-java

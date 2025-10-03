@@ -4,8 +4,8 @@
 "title": "Extrahieren Sie Dokumentinformationen und passen Sie die Ausgabe mit GroupDocs.Viewer .NET an – Ein umfassender Leitfaden"
 "url": "/de/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Extrahieren Sie Dokumentinformationen und passen Sie die Ausgabe mit GroupDocs.Viewer .NET an
 ## Tutorial zum benutzerdefinierten Rendering
 ### Was Sie lernen werden:

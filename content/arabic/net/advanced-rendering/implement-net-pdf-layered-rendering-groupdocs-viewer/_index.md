@@ -4,8 +4,8 @@
 "title": "إتقان عرض ملفات PDF متعددة الطبقات باستخدام GroupDocs.Viewer - دليل خطوة بخطوة"
 "url": "/ar/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض ملفات PDF بتنسيق .NET متعدد الطبقات باستخدام GroupDocs.Viewer: دليل خطوة بخطوة
 
 ## مقدمة

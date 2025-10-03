@@ -5,8 +5,8 @@
 "title": "छवि आकार सीमा निर्धारित करें"
 "url": "/hi/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # छवि आकार सीमा निर्धारित करें
 
 ## परिचय

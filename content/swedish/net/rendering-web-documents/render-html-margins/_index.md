@@ -5,8 +5,8 @@
 "title": "Rendera HTML med användardefinierade marginaler"
 "url": "/sv/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Rendera HTML med användardefinierade marginaler
 
 ## Introduktion

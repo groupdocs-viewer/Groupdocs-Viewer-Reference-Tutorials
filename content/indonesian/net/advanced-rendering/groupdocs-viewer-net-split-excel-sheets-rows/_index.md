@@ -4,8 +4,8 @@
 "title": "Membagi Lembar Excel menjadi Halaman per Baris Menggunakan GroupDocs.Viewer .NET untuk Manajemen Data yang Efisien"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Membagi Lembar Excel menjadi Halaman per Baris dengan GroupDocs.Viewer .NET
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用して Word 文書の変更履歴を表示する方法 - 総合ガイド"
 "url": "/ja/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java で Word 文書の変更履歴を表示する
 
 ## 導入

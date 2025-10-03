@@ -5,8 +5,8 @@
 "title": "Απόδοση XML SpreadSheetML"
 "url": "/el/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Απόδοση XML SpreadSheetML
 
 ## Εισαγωγή

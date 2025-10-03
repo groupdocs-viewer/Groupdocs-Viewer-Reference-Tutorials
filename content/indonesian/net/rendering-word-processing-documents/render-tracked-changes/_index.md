@@ -5,8 +5,8 @@
 "title": "Render Perubahan yang Dilacak"
 "url": "/id/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Render Perubahan yang Dilacak
 
 ## Perkenalan

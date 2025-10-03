@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu sang HTML"
 "url": "/vi/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Kết xuất tài liệu sang HTML
 
 

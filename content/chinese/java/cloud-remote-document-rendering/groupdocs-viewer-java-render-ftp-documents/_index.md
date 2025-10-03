@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 从 FTP 渲染文档——综合指南"
 "url": "/zh/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 从 FTP 渲染文档：综合指南
 
 ## 介绍

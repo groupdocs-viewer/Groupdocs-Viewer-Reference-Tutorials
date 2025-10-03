@@ -8,10 +8,8 @@ keywords:
 - retrieve CAD layouts Java
 - GroupDocs.Viewer Java
 - manage CAD layers programmatically
-
+type: docs
 ---
-
-
 # How to Retrieve CAD Layouts and Layers using GroupDocs.Viewer for Java
 
 In the world of engineering and design, Computer-Aided Design (CAD) files are indispensable tools that store vast amounts of detailed information about designs. These files can be complex, containing multiple layouts and layers that need precise management and retrieval for effective project execution. If you're looking to extract specific details from CAD drawings programmatically in Java, GroupDocs.Viewer for Java is your go-to solution. This tutorial will guide you through the process of retrieving all layouts and layers from a CAD drawing using GroupDocs.Viewer.

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile .NET HTML Oluşturma Nasıl Uygulanır&#58; Adım Adım Kılavuz"
 "url": "/tr/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile .NET HTML Oluşturma Nasıl Uygulanır: Adım Adım Kılavuz
 
 ## giriiş

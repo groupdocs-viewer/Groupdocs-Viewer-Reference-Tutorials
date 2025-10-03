@@ -5,8 +5,8 @@
 "title": "從 FTP 載入文檔（進階）"
 "url": "/zh-hant/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # 從 FTP 載入文檔（進階）
 
 ## 介紹

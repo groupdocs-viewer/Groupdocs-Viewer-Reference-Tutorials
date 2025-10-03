@@ -5,8 +5,8 @@
 "title": "استبدال الخط المفقود"
 "url": "/ar/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # استبدال الخط المفقود
 
 ## مقدمة

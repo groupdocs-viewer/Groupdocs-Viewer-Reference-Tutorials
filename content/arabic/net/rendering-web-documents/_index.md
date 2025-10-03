@@ -5,8 +5,8 @@
 "title": "عرض مستندات الويب"
 "url": "/ar/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # عرض مستندات الويب
 
 ## مقدمة

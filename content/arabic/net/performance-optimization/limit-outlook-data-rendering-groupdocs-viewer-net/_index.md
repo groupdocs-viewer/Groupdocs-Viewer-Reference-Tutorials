@@ -4,8 +4,8 @@
 "title": "تحسين عرض بيانات Outlook في .NET باستخدام نصائح وتقنيات GroupDocs.Viewer لتحسين الأداء"
 "url": "/ar/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # تحسين عرض بيانات Outlook باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "렌더링된 HTML 문서 축소"
 "url": "/ko/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # 렌더링된 HTML 문서 축소
 
 ## 소개

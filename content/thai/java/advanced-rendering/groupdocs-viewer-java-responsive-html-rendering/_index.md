@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์ HTML แบบตอบสนองด้วย GroupDocs.Viewer สำหรับ Java - คู่มือฉบับสมบูรณ์"
 "url": "/th/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์ HTML แบบตอบสนองด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

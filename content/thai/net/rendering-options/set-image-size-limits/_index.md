@@ -5,8 +5,8 @@
 "title": "ตั้งค่าขีดจำกัดขนาดรูปภาพ"
 "url": "/th/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # ตั้งค่าขีดจำกัดขนาดรูปภาพ
 
 ## การแนะนำ

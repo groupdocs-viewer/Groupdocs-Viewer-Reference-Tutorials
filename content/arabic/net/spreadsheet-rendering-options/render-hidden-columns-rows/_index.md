@@ -5,8 +5,8 @@
 "title": "عرض الأعمدة والصفوف المخفية"
 "url": "/ar/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # عرض الأعمدة والصفوف المخفية
 
 ## مقدمة

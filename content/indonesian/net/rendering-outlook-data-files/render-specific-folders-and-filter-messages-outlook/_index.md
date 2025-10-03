@@ -5,8 +5,8 @@
 "title": "Menampilkan Folder Tertentu dan Memfilter Pesan (Outlook)"
 "url": "/id/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Menampilkan Folder Tertentu dan Memfilter Pesan (Outlook)
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Jak renderować określone warstwy CAD za pomocą GroupDocs.Viewer dla .NET&#58; Kompleksowy przewodnik"
 "url": "/pl/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować określone warstwy rysunków CAD za pomocą GroupDocs.Viewer dla .NET
 
 ## Wstęp

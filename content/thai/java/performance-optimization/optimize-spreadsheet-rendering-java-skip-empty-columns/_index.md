@@ -4,8 +4,8 @@
 "title": "เพิ่มประสิทธิภาพการเรนเดอร์สเปรดชีต Java&#58; ข้ามคอลัมน์ว่างด้วย GroupDocs.Viewer"
 "url": "/th/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # วิธีเพิ่มประสิทธิภาพการแสดงผลสเปรดชีตใน Java: การข้ามคอลัมน์ว่างด้วย GroupDocs.Viewer
 
 ## การแนะนำ

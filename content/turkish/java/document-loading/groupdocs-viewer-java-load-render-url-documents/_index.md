@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java&#58; URL'lerden Belgeleri Verimli Şekilde Yükleyin ve Oluşturun"
 "url": "/tr/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer Java: URL'lerden Belgeleri Verimli Şekilde Yükleyin ve Oluşturun
 
 ## giriiş

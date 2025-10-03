@@ -4,8 +4,8 @@
 "title": "Renderizar documentos de FTP usando GroupDocs.Viewer para Java - Um guia completo"
 "url": "/pt/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar documentos de FTP usando GroupDocs.Viewer para Java: um guia completo
 
 ## Introdução

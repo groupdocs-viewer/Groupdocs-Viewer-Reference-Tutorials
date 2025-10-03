@@ -5,8 +5,8 @@
 "title": "Rasterlinien rendern"
 "url": "/de/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Rasterlinien rendern
 
 ## Einführung

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - convert TXT to HTML
 - render TXT as JPG/PNG
-
+type: docs
 ---
-
-
 # Convert TXT Files with GroupDocs.Viewer for Java: A Comprehensive Guide
 
 ## Introduction

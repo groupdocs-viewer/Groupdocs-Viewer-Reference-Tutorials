@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων WMZ και WMF"
 "url": "/el/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # Απόδοση εικόνων WMZ και WMF
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Vykreslení souborů DOCX z InputStream v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst a vykreslit soubor DOCX z InputStream pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

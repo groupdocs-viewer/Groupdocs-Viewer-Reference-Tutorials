@@ -5,8 +5,8 @@
 "title": "Rácsvonalak renderelése"
 "url": "/hu/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Rácsvonalak renderelése
 
 ## Bevezetés

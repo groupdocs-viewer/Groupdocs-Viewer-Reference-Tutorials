@@ -5,8 +5,8 @@
 "title": "Rendering di documenti in immagini"
 "url": "/it/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Rendering di documenti in immagini
 
 ## Introduzione

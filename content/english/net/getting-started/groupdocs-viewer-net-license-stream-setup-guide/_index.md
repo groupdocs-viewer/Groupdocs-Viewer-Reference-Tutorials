@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - set license stream
 - dynamic license management
-
+type: docs
 ---
-
-
 # Setting Up GroupDocs.Viewer .NET License via Stream: A Complete Guide
 
 ## Introduction

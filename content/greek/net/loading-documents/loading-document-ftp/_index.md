@@ -5,8 +5,8 @@
 "title": "Φόρτωση εγγράφων από FTP (Για προχωρημένους)"
 "url": "/el/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Φόρτωση εγγράφων από FTP (Για προχωρημένους)
 
 ## Εισαγωγή

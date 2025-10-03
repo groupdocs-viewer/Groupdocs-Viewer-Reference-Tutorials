@@ -5,8 +5,8 @@
 "title": "दस्तावेज़ लोड हो रहे हैं"
 "url": "/hi/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # दस्तावेज़ लोड हो रहे हैं
 
 ## परिचय

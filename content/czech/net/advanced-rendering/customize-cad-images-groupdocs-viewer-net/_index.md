@@ -4,8 +4,8 @@
 "title": "Úprava obrázků CAD pomocí pokročilých technik vykreslování v GroupDocs.Viewer .NET"
 "url": "/cs/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit a upravit obrázky CAD pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

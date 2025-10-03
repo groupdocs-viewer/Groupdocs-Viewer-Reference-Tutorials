@@ -5,8 +5,8 @@
 "title": "Φόρτωση εγγράφων με συγκεκριμένη κωδικοποίηση"
 "url": "/el/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Φόρτωση εγγράφων με συγκεκριμένη κωδικοποίηση
 
 ## Εισαγωγή

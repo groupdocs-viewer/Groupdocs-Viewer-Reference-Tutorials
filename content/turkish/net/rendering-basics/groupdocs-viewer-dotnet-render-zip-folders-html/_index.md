@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Belirli Klasörleri ZIP Arşivlerinden HTML'ye Dönüştürme"
 "url": "/tr/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Eğitim: GroupDocs.Viewer .NET'i ZIP Arşivlerinden HTML'e Belirli Klasörleri İşlemek İçin Uygulama
 
 ## giriiş

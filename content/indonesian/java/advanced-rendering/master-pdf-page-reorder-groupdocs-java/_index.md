@@ -4,8 +4,8 @@
 "title": "Penataan Ulang Halaman PDF yang Efisien dengan GroupDocs.Viewer untuk Java; Panduan Lengkap"
 "url": "/id/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Penataan Ulang Halaman PDF yang Efisien dengan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

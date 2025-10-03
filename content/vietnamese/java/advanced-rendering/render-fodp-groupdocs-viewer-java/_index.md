@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tài liệu FODP bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn đầy đủ"
 "url": "/vi/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tài liệu FODP bằng GroupDocs.Viewer cho Java: Hướng dẫn đầy đủ
 
 ## Giới thiệu

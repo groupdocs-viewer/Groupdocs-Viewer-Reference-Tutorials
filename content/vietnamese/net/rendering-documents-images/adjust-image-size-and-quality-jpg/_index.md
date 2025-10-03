@@ -5,8 +5,8 @@
 "title": "Điều chỉnh kích thước và chất lượng hình ảnh (JPG)"
 "url": "/vi/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Điều chỉnh kích thước và chất lượng hình ảnh (JPG)
 
 ## Giới thiệu

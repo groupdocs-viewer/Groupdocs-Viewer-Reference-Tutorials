@@ -8,10 +8,8 @@ keywords:
 - render documents .NET streams
 - GroupDocs.Viewer setup
 - stream-based document rendering
-
+type: docs
 ---
-
-
 # Render Documents Using GroupDocs.Viewer .NET from Streams: A Comprehensive Guide for Developers
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "ดึงข้อมูลและบันทึกเอกสารแนบ"
 "url": "/th/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # ดึงข้อมูลและบันทึกเอกสารแนบ
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - render ZIP folders to HTML
 - extract specific folders from ZIP
-
+type: docs
 ---
-
-
 # Tutorial: Implementing GroupDocs.Viewer .NET to Render Specific Folders from ZIP Archives to HTML
 
 ## Introduction

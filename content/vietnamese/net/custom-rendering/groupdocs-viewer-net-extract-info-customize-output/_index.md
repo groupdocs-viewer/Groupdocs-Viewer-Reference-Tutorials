@@ -4,8 +4,8 @@
 "title": "Trích xuất thông tin tài liệu và tùy chỉnh đầu ra với GroupDocs.Viewer .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Trích xuất thông tin tài liệu và tùy chỉnh đầu ra với GroupDocs.Viewer .NET
 ## Hướng dẫn kết xuất tùy chỉnh
 ### Những gì bạn sẽ học được:

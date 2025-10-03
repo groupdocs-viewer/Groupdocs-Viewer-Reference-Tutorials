@@ -8,10 +8,8 @@ keywords:
 - render archive folders
 - GroupDocs.Viewer for Java
 - rendering specific folders in archives
-
+type: docs
 ---
-
-
 # Rendering Archive Folders with GroupDocs.Viewer for Java
 
 ## Introduction

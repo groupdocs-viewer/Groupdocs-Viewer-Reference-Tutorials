@@ -4,8 +4,8 @@
 "title": "Как извлечь и распечатать имена рабочих листов Excel с помощью GroupDocs.Viewer для .NET (руководство 2023 г.)"
 "url": "/ru/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как извлечь и распечатать имена листов Excel с помощью GroupDocs.Viewer для .NET: подробное руководство
 
 ## Введение

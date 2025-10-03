@@ -4,8 +4,8 @@
 "title": "Ambil Tata Letak dan Lapisan CAD di Java dengan GroupDocs.Viewer"
 "url": "/id/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengambil Tata Letak dan Lapisan CAD menggunakan GroupDocs.Viewer untuk Java
 
 Dalam dunia teknik dan desain, file Computer-Aided Design (CAD) merupakan alat yang sangat diperlukan yang menyimpan sejumlah besar informasi terperinci tentang desain. File-file ini dapat bersifat kompleks, berisi beberapa tata letak dan lapisan yang memerlukan manajemen dan pengambilan yang tepat untuk pelaksanaan proyek yang efektif. Jika Anda ingin mengekstrak detail tertentu dari gambar CAD secara terprogram di Java, GroupDocs.Viewer untuk Java adalah solusi yang tepat untuk Anda. Tutorial ini akan memandu Anda melalui proses pengambilan semua tata letak dan lapisan dari gambar CAD menggunakan GroupDocs.Viewer.

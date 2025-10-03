@@ -4,8 +4,8 @@
 "title": "Java'da GroupDocs.Viewer ile Excel Sayfalarını Satırlara ve Sütunlara Bölme - Kapsamlı Bir Kılavuz"
 "url": "/tr/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Java'da GroupDocs.Viewer Kullanarak Excel Sayfalarını Satırlara ve Sütunlara Bölme
 
 ## giriiş

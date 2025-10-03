@@ -4,8 +4,8 @@
 "title": "Hoe u FODP-documenten kunt renderen met GroupDocs.Viewer voor Java&#58; een complete handleiding"
 "url": "/nl/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # FODP-documenten renderen met GroupDocs.Viewer voor Java: een complete handleiding
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tài liệu có chú thích trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tài liệu có chú thích trong Java bằng GroupDocs.Viewer
 ## Giới thiệu
 Bạn đang gặp khó khăn trong việc chuyển đổi tài liệu thành HTML trong khi vẫn giữ nguyên chú thích? Hướng dẫn này sẽ hướng dẫn bạn cách kết xuất tài liệu với chú thích bằng thư viện GroupDocs.Viewer mạnh mẽ trong Java. Cho dù bạn đang quản lý tài liệu một cách liền mạch hay đang nâng cao kỹ năng Java của mình, hướng dẫn này là dành cho bạn.

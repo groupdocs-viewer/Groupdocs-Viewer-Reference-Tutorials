@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 渲染文档中的隐藏页面——分步指南"
 "url": "/zh/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 渲染文档中的隐藏页面：分步指南
 
 ## 介绍

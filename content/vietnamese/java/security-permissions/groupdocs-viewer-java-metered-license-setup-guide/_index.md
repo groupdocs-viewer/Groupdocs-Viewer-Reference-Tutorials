@@ -4,8 +4,8 @@
 "title": "Triển khai Giấy phép theo mét cho GroupDocs.Viewer trong Java&#58; Hướng dẫn dành cho nhà phát triển"
 "url": "/vi/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai Giấy phép theo đơn vị cho GroupDocs.Viewer dành cho Java: Hướng dẫn dành cho nhà phát triển
 
 ## Giới thiệu

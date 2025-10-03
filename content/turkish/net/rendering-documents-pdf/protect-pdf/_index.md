@@ -5,8 +5,8 @@
 "title": "İşlenmiş PDF'yi Parola ile Koru"
 "url": "/tr/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # İşlenmiş PDF'yi Parola ile Koru
 
 ## giriiş

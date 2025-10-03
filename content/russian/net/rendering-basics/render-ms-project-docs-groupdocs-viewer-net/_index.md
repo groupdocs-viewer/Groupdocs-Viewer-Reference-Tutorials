@@ -4,8 +4,8 @@
 "title": "Визуализация документов MS Project с помощью GroupDocs.Viewer .NET для улучшенного управления проектами"
 "url": "/ru/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Мастер рендеринга документов MS Project с использованием GroupDocs.Viewer .NET
 
 ## Введение

@@ -5,8 +5,8 @@
 "title": "Kết xuất tất cả các bố cục trong bản vẽ CAD"
 "url": "/vi/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Kết xuất tất cả các bố cục trong bản vẽ CAD
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "PDF dokumentum megtekintési adatainak lekérése"
 "url": "/hu/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # PDF dokumentum megtekintési adatainak lekérése
 
 ## Bevezetés

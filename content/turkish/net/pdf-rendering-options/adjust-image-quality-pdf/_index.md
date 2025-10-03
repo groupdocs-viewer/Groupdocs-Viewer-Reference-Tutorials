@@ -5,8 +5,8 @@
 "title": "PDF'deki Görüntü Kalitesini Ayarla"
 "url": "/tr/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # PDF'deki Görüntü Kalitesini Ayarla
 
 ## giriiş

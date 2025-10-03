@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - render CAD images
 - customize CAD drawings
-
+type: docs
 ---
-
-
 # How to Render and Customize CAD Images Using GroupDocs.Viewer .NET
 
 ## Introduction

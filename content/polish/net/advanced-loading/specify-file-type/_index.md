@@ -5,8 +5,8 @@
 "title": "Określ typ pliku podczas ładowania dokumentów"
 "url": "/pl/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Określ typ pliku podczas ładowania dokumentów
 
 ## Wstęp

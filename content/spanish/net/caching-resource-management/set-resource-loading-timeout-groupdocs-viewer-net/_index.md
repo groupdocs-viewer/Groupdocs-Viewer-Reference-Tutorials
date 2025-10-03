@@ -4,8 +4,8 @@
 "title": "Implementación del tiempo de espera de carga de recursos en GroupDocs.Viewer para .NET&#58; una guía completa"
 "url": "/es/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Implementación del tiempo de espera de carga de recursos en GroupDocs.Viewer para .NET
 
 ## Introducción

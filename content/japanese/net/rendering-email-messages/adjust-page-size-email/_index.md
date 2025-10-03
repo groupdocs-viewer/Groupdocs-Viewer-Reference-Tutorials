@@ -5,8 +5,8 @@
 "title": "メールメッセージのレンダリング時にページサイズを調整する"
 "url": "/ja/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # メールメッセージのレンダリング時にページサイズを調整する
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "調整渲染 PDF 中的 JPG 影像質量"
 "url": "/zh-hant/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # 調整渲染 PDF 中的 JPG 影像質量
 
 ## 介紹

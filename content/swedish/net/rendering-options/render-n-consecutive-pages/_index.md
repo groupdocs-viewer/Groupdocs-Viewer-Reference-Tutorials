@@ -5,8 +5,8 @@
 "title": "Rendera N sidor i följd"
 "url": "/sv/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Rendera N sidor i följd
 
 ## Introduktion

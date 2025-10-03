@@ -4,8 +4,8 @@
 "title": "Cách triển khai thu nhỏ HTML với GroupDocs.Viewer .NET để có trang web nhanh hơn"
 "url": "/vi/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cách triển khai thu nhỏ HTML với GroupDocs.Viewer .NET để có trang web nhanh hơn
 
 ## Giới thiệu

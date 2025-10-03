@@ -4,8 +4,8 @@
 "title": "Så här renderar du PLT-filer till HTML med GroupDocs.Viewer i Java - en steg-för-steg-guide"
 "url": "/sv/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar PLT-filer till HTML med GroupDocs.Viewer i Java: En utvecklarguide
 
 ## Introduktion

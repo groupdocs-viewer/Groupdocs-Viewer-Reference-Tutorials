@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε γραμμές πλέγματος σε υπολογιστικά φύλλα Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε γραμμές πλέγματος σε υπολογιστικά φύλλα Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

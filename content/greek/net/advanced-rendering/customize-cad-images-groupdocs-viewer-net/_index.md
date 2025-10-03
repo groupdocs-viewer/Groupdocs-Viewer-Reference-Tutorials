@@ -4,8 +4,8 @@
 "title": "Προσαρμόστε εικόνες CAD με τις προηγμένες τεχνικές απόδοσης GroupDocs.Viewer .NET®"
 "url": "/el/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε και να προσαρμόσετε εικόνες CAD χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

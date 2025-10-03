@@ -4,8 +4,8 @@
 "title": "Fődokumentum renderelése .NET-ben GroupDocs.Viewer HTML konverzió és vízjel integráció használatával"
 "url": "/hu/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Fődokumentum renderelése .NET-ben GroupDocs.Viewer használatával: HTML konvertálás és vízjel integráció
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 渲染 CDR 檔案&#58;HTML、JPG、PNG 和 PDF 轉換完整指南"
 "url": "/zh-hant/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer Java 渲染 CDR 檔案：HTML、JPG、PNG 和 PDF 轉換完整指南
 
 歡迎閱讀本詳細指南，了解如何使用 GroupDocs.Viewer for Java 將 CorelDRAW (CDR) 文件渲染為 HTML、JPG、PNG 和 PDF 等各種格式。如果您正在處理圖形文件，並且需要一種跨平台無縫轉換的方法，那麼本教學將是您的首選資源。

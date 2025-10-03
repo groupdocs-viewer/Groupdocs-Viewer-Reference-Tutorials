@@ -5,8 +5,8 @@
 "title": "Φόρτωση εγγράφων από τη ροή"
 "url": "/el/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Φόρτωση εγγράφων από τη ροή
 
 ## Εισαγωγή

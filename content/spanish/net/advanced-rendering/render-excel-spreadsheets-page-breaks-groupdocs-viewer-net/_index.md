@@ -4,8 +4,8 @@
 "title": "Representar hojas de cálculo de Excel por saltos de página con GroupDocs.Viewer para .NET"
 "url": "/es/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Representar hojas de cálculo de Excel por saltos de página con GroupDocs.Viewer para .NET
 
 ## Introducción

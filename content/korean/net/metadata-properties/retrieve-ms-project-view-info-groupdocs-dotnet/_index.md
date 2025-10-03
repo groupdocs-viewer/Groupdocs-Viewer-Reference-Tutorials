@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 MS Project 뷰 정보 검색 | 메타데이터 및 속성"
 "url": "/ko/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 MS Project View 정보 검색
 
 ## 소개

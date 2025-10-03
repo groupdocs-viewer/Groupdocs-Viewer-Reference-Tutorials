@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 呈现 FODP 文档——综合指南"
 "url": "/zh/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 呈现 FODP 文档：综合指南
 
 ## 介绍

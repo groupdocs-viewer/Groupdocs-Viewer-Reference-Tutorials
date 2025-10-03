@@ -5,8 +5,8 @@
 "title": "추적된 변경 사항 렌더링"
 "url": "/ko/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # 추적된 변경 사항 렌더링
 
 ## 소개

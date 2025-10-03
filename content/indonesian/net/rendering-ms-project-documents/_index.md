@@ -5,8 +5,8 @@
 "title": "Merender Dokumen Microsoft Project"
 "url": "/id/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Merender Dokumen Microsoft Project
 
 ## Perkenalan

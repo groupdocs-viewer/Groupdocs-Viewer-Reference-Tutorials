@@ -4,8 +4,8 @@
 "title": "แสดงไฟล์ Outlook PST และ OST เป็น HTML โดยใช้ Java และ GroupDocs.Viewer"
 "url": "/th/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์ไฟล์ข้อมูล Outlook เป็น HTML โดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

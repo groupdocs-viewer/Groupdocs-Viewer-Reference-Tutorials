@@ -4,8 +4,8 @@
 "title": "วิธีใช้ GroupDocs.Viewer Java สำหรับการแปลง Excel เป็น HTML/JPG/PNG/PDF พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # วิธีใช้ GroupDocs.Viewer Java สำหรับการแปลง Excel เป็น HTML/JPG/PNG/PDF: คำแนะนำทีละขั้นตอน
 
 ## การแนะนำ

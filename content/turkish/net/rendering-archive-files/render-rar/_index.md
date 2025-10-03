@@ -5,8 +5,8 @@
 "title": "RAR Arşivlerini Oluştur"
 "url": "/tr/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # RAR Arşivlerini Oluştur
 
 ## giriiş

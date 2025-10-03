@@ -4,8 +4,8 @@
 "title": "Implémentation d'une journalisation efficace dans GroupDocs.Viewer .NET pour les sorties de console et de fichiers"
 "url": "/fr/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Implémentation d'une journalisation efficace dans GroupDocs.Viewer .NET
 
 ## Introduction

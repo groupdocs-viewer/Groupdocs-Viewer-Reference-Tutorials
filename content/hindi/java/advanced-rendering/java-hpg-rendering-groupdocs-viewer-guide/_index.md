@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा HPG रेंडरिंग एक संपूर्ण गाइड"
 "url": "/hi/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ जावा HPG रेंडरिंग को लागू करने के लिए व्यापक गाइड
 
 ## परिचय

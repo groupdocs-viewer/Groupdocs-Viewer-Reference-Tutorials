@@ -5,8 +5,8 @@
 "title": "โหลดเอกสารจาก FTP (ขั้นสูง)"
 "url": "/th/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # โหลดเอกสารจาก FTP (ขั้นสูง)
 
 ## การแนะนำ

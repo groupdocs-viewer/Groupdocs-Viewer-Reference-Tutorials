@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer के साथ कुशल CAD लेआउट रेंडरिंग एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer के साथ कुशल CAD लेआउट रेंडरिंग
 
 ## परिचय

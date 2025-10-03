@@ -4,8 +4,8 @@
 "title": "स्ट्रीम के माध्यम से GroupDocs.Viewer .NET लाइसेंस सेट अप करना एक संपूर्ण गाइड"
 "url": "/hi/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # स्ट्रीम के माध्यम से GroupDocs.Viewer .NET लाइसेंस सेट अप करना: एक संपूर्ण गाइड
 
 ## परिचय

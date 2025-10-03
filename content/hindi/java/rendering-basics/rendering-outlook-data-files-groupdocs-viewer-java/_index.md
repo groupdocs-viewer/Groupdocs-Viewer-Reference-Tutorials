@@ -4,8 +4,8 @@
 "title": "जावा में GroupDocs.Viewer का उपयोग करके Outlook डेटा फ़ाइलों को कैसे प्रस्तुत करें&#58; एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # जावा में GroupDocs.Viewer का उपयोग करके Outlook डेटा फ़ाइलों को कैसे प्रस्तुत करें: एक चरण-दर-चरण मार्गदर्शिका
 
 ## परिचय

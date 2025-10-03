@@ -5,8 +5,8 @@
 "title": "Přidat vodoznak do dokumentu"
 "url": "/cs/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Přidat vodoznak do dokumentu
 
 ## Zavedení

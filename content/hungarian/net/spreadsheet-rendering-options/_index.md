@@ -5,8 +5,8 @@
 "title": "Táblázat megjelenítési beállításai"
 "url": "/hu/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Táblázat megjelenítési beállításai
 
 ## Bevezetés

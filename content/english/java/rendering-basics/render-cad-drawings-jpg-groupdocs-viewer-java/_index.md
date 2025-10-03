@@ -8,10 +8,8 @@ keywords:
 - render CAD drawings as JPG
 - GroupDocs.Viewer for Java
 - convert DWG to JPG
-
+type: docs
 ---
-
-
 # How to Render CAD Drawings as JPGs Using GroupDocs.Viewer Java: A Step-by-Step Tutorial
 
 ## Introduction

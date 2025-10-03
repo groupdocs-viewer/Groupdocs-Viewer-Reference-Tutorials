@@ -4,8 +4,8 @@
 "title": "Dokumentumok betöltése és megjelenítése HTML-ként a GroupDocs.Viewer for Java használatával"
 "url": "/hu/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumok betöltése és megjelenítése HTML-ként a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

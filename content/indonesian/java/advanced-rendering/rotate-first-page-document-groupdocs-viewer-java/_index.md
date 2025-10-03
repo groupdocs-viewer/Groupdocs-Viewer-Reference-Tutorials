@@ -4,8 +4,8 @@
 "title": "Memutar Halaman Pertama Dokumen Menggunakan GroupDocs.Viewer untuk Java (Panduan Lanjutan)"
 "url": "/id/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Memutar Halaman Pertama Dokumen Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

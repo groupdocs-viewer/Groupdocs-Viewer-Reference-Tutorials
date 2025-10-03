@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφων σε HTML"
 "url": "/el/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Απόδοση εγγράφων σε HTML
 
 

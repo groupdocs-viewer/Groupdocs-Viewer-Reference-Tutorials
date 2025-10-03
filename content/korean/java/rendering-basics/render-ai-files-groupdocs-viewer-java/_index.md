@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용하여 AI 파일 렌더링하기&#58; 종합 가이드"
 "url": "/ko/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 AI 파일 렌더링: 포괄적인 가이드
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Cách thiết lập giấy phép trong GroupDocs.Viewer Java&#58; Hướng dẫn thiết lập tệp và URL"
 "url": "/vi/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Cách thiết lập giấy phép trong GroupDocs.Viewer Java: Hướng dẫn thiết lập tệp và URL
 
 ## Giới thiệu

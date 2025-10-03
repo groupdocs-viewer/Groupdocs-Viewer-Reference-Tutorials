@@ -3,8 +3,8 @@
 "title": "Handledningar för dokumentinläsning och källhantering för GroupDocs.Viewer Java"
 "url": "/sv/java/document-loading/"
 "weight": 2
+type: docs
 ---
-
 # Handledningar för dokumentinläsning och källhantering för GroupDocs.Viewer Java
 
 Våra handledningar för dokumentinläsning ger omfattande vägledning för hantering av dokumentkällor i Java. Följ dessa steg-för-steg-guider för att lära dig hur du laddar dokument från olika lagringstyper, hanterar olika filformat, hanterar indataströmmar och implementerar flexibla strategier för dokumentinläsning. Dessa praktiska handledningar innehåller kompletta kodexempel för hantering av dokumentkällor, vilket hjälper dig att bygga robusta dokumentvisningsprogram med mångsidiga inläsningsmöjligheter.

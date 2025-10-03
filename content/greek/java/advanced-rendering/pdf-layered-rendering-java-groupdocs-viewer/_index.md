@@ -4,8 +4,8 @@
 "title": "Αποδοτική απόδοση PDF σε στρώσεις σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Αποδοτική απόδοση PDF σε στρώσεις σε Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

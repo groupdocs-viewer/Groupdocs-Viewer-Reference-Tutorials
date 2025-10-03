@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp IGS trong .NET bằng GroupDocs.Viewer&#58; Hướng dẫn đầy đủ"
 "url": "/vi/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp IGS trong .NET bằng GroupDocs.Viewer: Hướng dẫn đầy đủ
 
 ## Giới thiệu

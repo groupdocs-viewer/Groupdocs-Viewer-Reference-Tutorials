@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 優化 .NET 中的 Outlook 資料呈現及其效能技巧"
 "url": "/zh-hant/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 最佳化 Outlook 資料呈現
 
 ## 介紹

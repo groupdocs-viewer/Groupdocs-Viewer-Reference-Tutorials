@@ -8,10 +8,8 @@ keywords:
 - text extraction .NET
 - GroupDocs.Viewer .NET setup
 - text extraction tutorial .NET
-
+type: docs
 ---
-
-
 # Mastering Text Extraction in .NET with GroupDocs.Viewer: A Comprehensive Tutorial
 
 ## Introduction

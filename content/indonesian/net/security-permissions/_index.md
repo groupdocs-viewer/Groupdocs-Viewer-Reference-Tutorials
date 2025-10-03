@@ -3,8 +3,8 @@
 "title": "Tutorial Keamanan Dokumen dan Kontrol Akses untuk GroupDocs.Viewer .NET"
 "url": "/id/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Tutorial Keamanan Dokumen dan Kontrol Akses untuk GroupDocs.Viewer .NET
 
 Pelajari cara mengamankan tampilan dokumen dengan tutorial keamanan GroupDocs.Viewer kami yang komprehensif untuk pengembang .NET. Panduan terperinci ini menunjukkan cara menerapkan perlindungan kata sandi, mengelola izin dokumen, menangani file terenkripsi, dan mengontrol akses ke dokumen sensitif secara terprogram. Setiap tutorial menyediakan contoh kode .NET yang berfungsi untuk skenario keamanan umum, membantu Anda membangun aplikasi yang menjaga kerahasiaan dan integritas dokumen sekaligus menyediakan kemampuan tampilan yang terkendali.

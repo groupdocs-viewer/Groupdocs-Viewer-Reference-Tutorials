@@ -5,8 +5,8 @@
 "title": "Xem thông tin cho tệp dữ liệu Outlook (PST, OST)"
 "url": "/vi/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Xem thông tin cho tệp dữ liệu Outlook (PST, OST)
 
 ## Giới thiệu

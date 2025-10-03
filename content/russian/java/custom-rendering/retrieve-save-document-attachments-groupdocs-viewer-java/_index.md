@@ -4,8 +4,8 @@
 "title": "Как извлекать и сохранять вложения документов с помощью GroupDocs.Viewer для Java&#58; Подробное руководство"
 "url": "/ru/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Как извлекать и сохранять вложения документов с помощью GroupDocs.Viewer для Java: подробное руководство
 
 ## Введение

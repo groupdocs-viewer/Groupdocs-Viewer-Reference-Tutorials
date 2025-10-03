@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java Kullanılarak Word Belgelerinde İzlenen Değişiklikler Nasıl Oluşturulur? Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Word Belgelerinde İzlenen Değişiklikleri Oluşturma
 
 ## giriiş

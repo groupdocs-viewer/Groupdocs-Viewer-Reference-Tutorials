@@ -4,8 +4,8 @@
 "title": "PDF-metagegevens en eigenschappen ophalen met GroupDocs.Viewer in Java&#58; een stapsgewijze handleiding"
 "url": "/nl/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # PDF-metagegevens en eigenschappen ophalen met GroupDocs.Viewer in Java
 
 Welkom bij deze uitgebreide handleiding over het ophalen van weergavegegevens uit een PDF-document met de GroupDocs.Viewer-bibliotheek in Java. Als u programmatisch details zoals paginanummering, documenttype en machtigingen uit PDF-bestanden wilt halen, bent u hier aan het juiste adres.

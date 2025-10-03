@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["text-extraction", "coordinates", "document-rendering", "dotnet"]
+type: docs
 ---
-
 # How to Extract Text Coordinates .NET - Complete Guide
 
 ## Introduction

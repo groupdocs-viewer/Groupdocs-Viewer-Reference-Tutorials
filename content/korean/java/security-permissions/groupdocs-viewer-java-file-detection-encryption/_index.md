@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java로 파일 감지 및 암호화 검사 구현"
 "url": "/ko/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 파일 감지 및 암호화 검사 구현
 
 ## 소개

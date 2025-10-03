@@ -4,8 +4,8 @@
 "title": "Menerapkan Deteksi File dan Pemeriksaan Enkripsi di Java dengan GroupDocs.Viewer"
 "url": "/id/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Deteksi File dan Pemeriksaan Enkripsi Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

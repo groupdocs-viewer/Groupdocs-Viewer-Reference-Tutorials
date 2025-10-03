@@ -5,8 +5,8 @@
 "title": "Tutorial completi ed esempi di GroupDocs.Viewer per Java"
 "url": "/it/java/"
 "weight": 10
+type: docs
 ---
-
 # Tutorial completi ed esempi di GroupDocs.Viewer per Java
 
 ## Introduzione

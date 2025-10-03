@@ -4,8 +4,8 @@
 "title": "แปลงไฟล์เก็บถาวรเป็น PDF ด้วยชื่อไฟล์ที่กำหนดเองโดยใช้ GroupDocs.Viewer สำหรับ .NET"
 "url": "/th/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # แปลงไฟล์เก็บถาวรเป็น PDF ด้วยชื่อไฟล์ที่กำหนดเองโดยใช้ GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

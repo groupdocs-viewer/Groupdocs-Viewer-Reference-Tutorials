@@ -4,8 +4,8 @@
 "title": "Deshabilitar la agrupación de caracteres en archivos PDF con GroupDocs.Viewer para Java&#58; técnicas de representación precisa"
 "url": "/es/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Deshabilitar la agrupación de caracteres en archivos PDF con GroupDocs.Viewer para Java
 
 ## Introducción

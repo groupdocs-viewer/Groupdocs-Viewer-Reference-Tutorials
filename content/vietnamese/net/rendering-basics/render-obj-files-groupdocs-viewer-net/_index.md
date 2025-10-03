@@ -4,8 +4,8 @@
 "title": "Kết xuất các tệp OBJ bằng GroupDocs.Viewer .NET&#58; Hướng dẫn toàn diện về chuyển đổi HTML, JPG, PNG và PDF"
 "url": "/vi/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất các tệp OBJ bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu về Rendering Basics

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用してドキュメント内の非表示ページをレンダリングするステップバイステップガイド"
 "url": "/ja/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用してドキュメント内の非表示ページをレンダリングする: ステップバイステップガイド
 
 ## 導入

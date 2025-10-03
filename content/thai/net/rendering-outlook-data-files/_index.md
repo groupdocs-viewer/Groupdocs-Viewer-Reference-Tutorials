@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ไฟล์ข้อมูล Outlook (PST, OST)"
 "url": "/th/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # การเรนเดอร์ไฟล์ข้อมูล Outlook (PST, OST)
 
 ## การแนะนำ

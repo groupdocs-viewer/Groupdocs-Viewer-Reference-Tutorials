@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java تحميل وعرض المستندات من عناوين URL بكفاءة"
 "url": "/ar/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer Java: تحميل وعرض المستندات من عناوين URL بكفاءة
 
 ## مقدمة

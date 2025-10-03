@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 文件渲染效能教學課程"
 "url": "/zh-hant/net/performance-optimization/"
 "weight": 5
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 文件渲染效能教學課程
 
 使用我們的 GroupDocs.Viewer .NET 教學課程，掌握文件渲染的效能最佳化。這些實用指南演示了高效能記憶體管理、提升渲染速度、快取策略以及有效處理大型或複雜文件的技術。每個教學課程都包含詳細的 .NET 程式碼範例和優化關鍵渲染方面的最佳實踐，確保您的應用程式即使在處理大量文件集時也能保持響應迅速且可靠。

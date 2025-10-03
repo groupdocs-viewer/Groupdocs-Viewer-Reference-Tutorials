@@ -5,8 +5,8 @@
 "title": "Αντικατάσταση γραμματοσειράς που λείπει"
 "url": "/el/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Αντικατάσταση γραμματοσειράς που λείπει
 
 ## Εισαγωγή

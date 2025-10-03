@@ -5,8 +5,8 @@
 "title": "Rendu de documents au format HTML"
 "url": "/fr/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Rendu de documents au format HTML
 
 

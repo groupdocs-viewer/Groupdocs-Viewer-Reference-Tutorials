@@ -4,8 +4,8 @@
 "title": "Περιστροφή της πρώτης σελίδας ενός εγγράφου χρησιμοποιώντας το GroupDocs.Viewer για Java (Οδηγός για προχωρημένους)"
 "url": "/el/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Περιστροφή της πρώτης σελίδας ενός εγγράφου χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

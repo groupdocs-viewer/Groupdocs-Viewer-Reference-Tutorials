@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java&#58;da Günlük Kaydını Yapılandırma&#58; Konsol ve Dosya Günlük Kaydı Kılavuzu"
 "url": "/tr/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'da Günlük Kaydını Yapılandırma
 
 ## giriiş

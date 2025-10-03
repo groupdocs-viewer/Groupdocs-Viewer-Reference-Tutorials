@@ -4,8 +4,8 @@
 "title": "Πώς να εφαρμόσετε προσαρμοσμένη απόδοση γραμματοσειρών σε Java με το GroupDocs.Viewer - Ένας οδηγός βήμα προς βήμα"
 "url": "/el/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να εφαρμόσετε προσαρμοσμένη απόδοση γραμματοσειρών σε Java με το GroupDocs.Viewer: Ένας οδηγός βήμα προς βήμα
 
 ## Εισαγωγή

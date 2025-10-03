@@ -5,8 +5,8 @@
 "title": "Tutoriels complets et exemples de GroupDocs.Viewer pour .NET"
 "url": "/fr/net/"
 "weight": 10
+type: docs
 ---
-
 # Tutoriels complets et exemples de GroupDocs.Viewer pour .NET
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Tắt tính năng nhóm ký tự trong PDF"
 "url": "/vi/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Tắt tính năng nhóm ký tự trong PDF
 
 ## Giới thiệu

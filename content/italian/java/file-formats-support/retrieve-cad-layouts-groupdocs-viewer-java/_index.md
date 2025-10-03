@@ -4,8 +4,8 @@
 "title": "Recupera layout e livelli CAD in Java con GroupDocs.Viewer"
 "url": "/it/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Come recuperare layout e livelli CAD utilizzando GroupDocs.Viewer per Java
 
 Nel mondo dell'ingegneria e della progettazione, i file CAD (Computer-Aided Design) sono strumenti indispensabili che memorizzano enormi quantità di informazioni dettagliate sui progetti. Questi file possono essere complessi e contenere più layout e livelli che richiedono una gestione e un recupero precisi per un'esecuzione efficace del progetto. Se desiderate estrarre dettagli specifici dai disegni CAD tramite programmazione in Java, GroupDocs.Viewer per Java è la soluzione ideale. Questo tutorial vi guiderà attraverso il processo di recupero di tutti i layout e i livelli da un disegno CAD utilizzando GroupDocs.Viewer.

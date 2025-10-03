@@ -5,8 +5,8 @@
 "title": "عرض ملف PDF بحجم الصفحة الأصلي"
 "url": "/ar/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # عرض ملف PDF بحجم الصفحة الأصلي
 
 ## مقدمة

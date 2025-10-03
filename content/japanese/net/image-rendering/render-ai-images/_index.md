@@ -5,8 +5,8 @@
 "title": "AI画像をレンダリングする"
 "url": "/ja/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # AI画像をレンダリングする
 
 ## 導入

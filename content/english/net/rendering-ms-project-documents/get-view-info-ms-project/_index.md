@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["microsoft-project", "mpp-files", "document-metadata", "groupdocs-viewer"]
+type: docs
 ---
-
 # Get Microsoft Project File Info .NET - Extract MPP Metadata Programmatically
 
 ## Introduction

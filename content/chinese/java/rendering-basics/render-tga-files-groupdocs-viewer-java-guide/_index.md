@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer Java 渲染 Truevision TGA 文件——分步指南"
 "url": "/zh/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer Java 渲染 Truevision TGA 文件
 
 ## 介绍

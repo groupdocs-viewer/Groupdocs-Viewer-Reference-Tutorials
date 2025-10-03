@@ -4,8 +4,8 @@
 "title": "Мастер послойного рендеринга .NET PDF с помощью GroupDocs.Viewer&#58; пошаговое руководство"
 "url": "/ru/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Мастер послойного рендеринга .NET PDF с помощью GroupDocs.Viewer: пошаговое руководство
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "AI-bestanden renderen met GroupDocs.Viewer voor Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # AI-bestanden renderen met GroupDocs.Viewer voor Java: een uitgebreide handleiding
 
 ## Invoering

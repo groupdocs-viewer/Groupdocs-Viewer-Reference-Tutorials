@@ -5,8 +5,8 @@
 "title": "XML SpreadSheetML'yi oluşturma"
 "url": "/tr/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # XML SpreadSheetML'yi oluşturma
 
 ## giriiş

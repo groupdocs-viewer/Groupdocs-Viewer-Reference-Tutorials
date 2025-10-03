@@ -5,8 +5,8 @@
 "title": "Charger des documents à partir du disque local"
 "url": "/fr/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Charger des documents à partir du disque local
 
 ## Introduction

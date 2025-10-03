@@ -4,8 +4,8 @@
 "title": "تحسين عرض PDF في .NET - تمكين تلميحات الخطوط باستخدام GroupDocs.Viewer"
 "url": "/ar/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تحسين عرض ملفات PDF في .NET باستخدام GroupDocs.Viewer: تمكين تلميح الخط
 
 ## مقدمة

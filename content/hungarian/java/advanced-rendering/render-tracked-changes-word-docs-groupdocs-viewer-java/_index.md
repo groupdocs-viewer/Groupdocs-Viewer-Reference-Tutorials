@@ -4,8 +4,8 @@
 "title": "Hogyan jelenítsük meg a Word dokumentumokban a követett változásokat a GroupDocs.Viewer for Java használatával? Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Követett változások megjelenítése Word-dokumentumokban a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

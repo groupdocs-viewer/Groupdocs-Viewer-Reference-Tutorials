@@ -4,8 +4,8 @@
 "title": "प्रदर्शन अनुकूलन के लिए GroupDocs.Viewer का उपयोग करके Java में HTML फ़ाइलों को कैसे छोटा करें"
 "url": "/hi/java/performance-optimization/groupdocs-viewer-java-html-minification-guide/"
 "weight": 1
+type: docs
 ---
-
 # Java में GroupDocs.Viewer का उपयोग करके HTML दस्तावेज़ों को कैसे छोटा करें
 
 ## परिचय

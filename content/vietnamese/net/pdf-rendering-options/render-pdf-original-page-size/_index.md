@@ -5,8 +5,8 @@
 "title": "Kết xuất PDF với kích thước trang gốc"
 "url": "/vi/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Kết xuất PDF với kích thước trang gốc
 
 ## Giới thiệu

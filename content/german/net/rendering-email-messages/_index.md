@@ -5,8 +5,8 @@
 "title": "Rendern von E-Mail-Nachrichten"
 "url": "/de/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Rendern von E-Mail-Nachrichten
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "Anpassa datum- och tidsformat och tidszonsförskjutningar i e-postmeddelanden med GroupDocs.Viewer .NET"
 "url": "/sv/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Anpassa datum- och tidsformat och tidszoner i e-postmeddelanden med GroupDocs.Viewer .NET
 
 ## Introduktion

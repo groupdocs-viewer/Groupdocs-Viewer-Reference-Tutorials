@@ -4,8 +4,8 @@
 "title": "Java&#5; Hur man renderar dolda sidor med GroupDocs.Viewer"
 "url": "/sv/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Hur man renderar dolda sidor med GroupDocs.Viewer
 
 ## Introduktion

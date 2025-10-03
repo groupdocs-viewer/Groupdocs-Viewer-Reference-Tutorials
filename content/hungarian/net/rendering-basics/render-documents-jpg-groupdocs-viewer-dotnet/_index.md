@@ -4,8 +4,8 @@
 "title": "Dokumentumok konvertálása JPG formátumba a GroupDocs.Viewer for .NET segítségével – Átfogó útmutató"
 "url": "/hu/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumok konvertálása JPG formátumba a GroupDocs.Viewer for .NET segítségével: Átfogó útmutató
 
 ## Bevezetés

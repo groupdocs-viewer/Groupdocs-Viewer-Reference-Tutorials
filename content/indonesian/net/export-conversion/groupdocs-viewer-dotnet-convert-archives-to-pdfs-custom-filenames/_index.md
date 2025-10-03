@@ -4,8 +4,8 @@
 "title": "Konversi Arsip ke PDF dengan Nama File Kustom Menggunakan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # Konversi Arsip ke PDF dengan Nama File Kustom Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

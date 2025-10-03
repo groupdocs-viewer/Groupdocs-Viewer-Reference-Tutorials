@@ -4,8 +4,8 @@
 "title": "Conversione efficiente dei documenti CMX utilizzando GroupDocs.Viewer per Java&#58; una guida completa"
 "url": "/it/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Conversione efficiente dei documenti CMX utilizzando GroupDocs.Viewer per Java: una guida completa
 
 ## Introduzione

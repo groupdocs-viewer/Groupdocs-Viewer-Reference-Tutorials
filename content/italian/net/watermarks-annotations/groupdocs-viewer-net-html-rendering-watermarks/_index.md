@@ -4,8 +4,8 @@
 "title": "Rendering di documenti master in .NET utilizzando la conversione HTML di GroupDocs.Viewer e l'integrazione della filigrana"
 "url": "/it/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Rendering di documenti master in .NET tramite GroupDocs.Viewer: conversione HTML e integrazione della filigrana
 
 ## Introduzione

@@ -5,8 +5,8 @@
 "title": "Kết xuất khoảng thời gian cụ thể của dự án (MS Project)"
 "url": "/vi/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Kết xuất khoảng thời gian cụ thể của dự án (MS Project)
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Προσαρμογή ετικετών email στο GroupDocs.Viewer για .NET™ Ένας πλήρης οδηγός για τη μετονομασία πεδίων"
 "url": "/el/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Προσαρμογή ετικετών email στο GroupDocs.Viewer για .NET: Ένας πλήρης οδηγός για τη μετονομασία πεδίων
 
 ## Εισαγωγή

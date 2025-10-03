@@ -5,8 +5,8 @@
 "title": "إلغاء العرض باستخدام رمز الإلغاء"
 "url": "/ar/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # إلغاء العرض باستخدام رمز الإلغاء
 
 ## مقدمة

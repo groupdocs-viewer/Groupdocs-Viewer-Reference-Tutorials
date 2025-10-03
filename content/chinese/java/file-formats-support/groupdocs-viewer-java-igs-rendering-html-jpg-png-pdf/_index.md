@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer Java&#58; 将 IGS 文件转换为 HTML、JPG、PNG 和 PDF"
 "url": "/zh/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # 掌握 GroupDocs.Viewer Java：将 IGS 文件转换为多种格式
 
 ## 介绍

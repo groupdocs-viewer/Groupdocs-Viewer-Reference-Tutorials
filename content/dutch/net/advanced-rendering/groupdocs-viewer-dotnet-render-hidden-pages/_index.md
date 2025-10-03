@@ -4,8 +4,8 @@
 "title": "Verborgen pagina's in documenten weergeven met GroupDocs.Viewer voor .NET&#58; een stapsgewijze handleiding"
 "url": "/nl/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Verborgen pagina's in documenten weergeven met GroupDocs.Viewer voor .NET: een stapsgewijze handleiding
 
 ## Invoering

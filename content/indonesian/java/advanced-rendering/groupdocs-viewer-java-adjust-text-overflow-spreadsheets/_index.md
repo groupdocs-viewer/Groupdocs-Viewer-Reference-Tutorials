@@ -4,8 +4,8 @@
 "title": "Cara Menyesuaikan Text Overflow di Spreadsheet Excel dengan GroupDocs.Viewer untuk Java"
 "url": "/id/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menyesuaikan Text Overflow di Spreadsheet Excel dengan GroupDocs.Viewer untuk Java
 ## Perkenalan
 Berurusan dengan teks yang meluap dalam sel spreadsheet saat mengonversi dokumen ke HTML merupakan tantangan umum, terutama untuk file Excel yang besar. **GroupDocs.Viewer untuk Java** menyederhanakan proses ini, sehingga Anda dapat mengelola dan menyembunyikan teks yang meluap secara efisien.

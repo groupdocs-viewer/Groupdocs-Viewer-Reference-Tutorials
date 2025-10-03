@@ -4,8 +4,8 @@
 "title": "Comment afficher des dessins CAO spécifiques en Java avec GroupDocs.Viewer"
 "url": "/fr/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des dessins CAO spécifiques en Java avec GroupDocs.Viewer
 
 ## Introduction

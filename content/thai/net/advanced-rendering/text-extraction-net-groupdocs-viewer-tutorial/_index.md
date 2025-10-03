@@ -4,8 +4,8 @@
 "title": "เรียนรู้การแยกข้อความอย่างเชี่ยวชาญด้วย GroupDocs.Viewer คู่มือฉบับสมบูรณ์"
 "url": "/th/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # เรียนรู้การแยกข้อความใน .NET ด้วย GroupDocs.Viewer: บทช่วยสอนที่ครอบคลุม
 
 ## การแนะนำ

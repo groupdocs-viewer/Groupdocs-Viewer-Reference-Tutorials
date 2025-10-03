@@ -5,8 +5,8 @@
 "title": "Рендеринг изображений EMZ и EMF"
 "url": "/ru/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Рендеринг изображений EMZ и EMF
 
 ## Введение

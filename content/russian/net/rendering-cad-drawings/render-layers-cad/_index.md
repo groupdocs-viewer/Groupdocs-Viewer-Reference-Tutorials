@@ -5,8 +5,8 @@
 "title": "Рендеринг слоев в чертежах САПР"
 "url": "/ru/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Рендеринг слоев в чертежах САПР
 
 ## Введение

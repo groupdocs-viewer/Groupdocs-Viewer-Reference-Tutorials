@@ -4,8 +4,8 @@
 "title": "عرض منطقة الطباعة بكفاءة في Excel باستخدام GroupDocs.Viewer لـ .NET"
 "url": "/ar/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # عرض منطقة الطباعة بكفاءة في Excel باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

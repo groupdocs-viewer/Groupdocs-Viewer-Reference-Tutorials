@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer pro Javu – načítání a tisk příloh dokumentů"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer pro Javu: Načtení a tisk příloh dokumentů
 
 ## Zavedení

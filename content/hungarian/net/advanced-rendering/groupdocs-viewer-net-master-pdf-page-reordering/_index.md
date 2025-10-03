@@ -4,8 +4,8 @@
 "title": "PDF-oldalak átrendezése .NET-ben a GroupDocs.Viewer segítségével – Fejlesztői útmutató"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # PDF oldalak átrendezésének elsajátítása a GroupDocs.Viewer .NET segítségével: Átfogó fejlesztői útmutató
 
 ## Bevezetés

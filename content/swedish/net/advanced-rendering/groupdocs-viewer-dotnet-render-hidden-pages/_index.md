@@ -4,8 +4,8 @@
 "title": "Rendera dolda sidor i dokument med GroupDocs.Viewer för .NET - En steg-för-steg-guide"
 "url": "/sv/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Rendera dolda sidor i dokument med GroupDocs.Viewer för .NET: En steg-för-steg-guide
 
 ## Introduktion

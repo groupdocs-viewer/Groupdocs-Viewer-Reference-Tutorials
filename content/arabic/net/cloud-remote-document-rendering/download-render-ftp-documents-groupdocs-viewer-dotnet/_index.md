@@ -4,8 +4,8 @@
 "title": "تنزيل المستندات وعرضها بكفاءة من FTP باستخدام GroupDocs.Viewer .NET"
 "url": "/ar/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تنزيل المستندات وعرضها بكفاءة من FTP باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

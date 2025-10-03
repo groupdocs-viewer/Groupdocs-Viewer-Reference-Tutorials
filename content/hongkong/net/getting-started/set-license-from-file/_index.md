@@ -5,8 +5,8 @@
 "title": "從文件設定許可證"
 "url": "/zh-hant/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # 從文件設定許可證
 
 ## 介紹

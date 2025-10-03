@@ -4,8 +4,8 @@
 "title": "Cara Mengambil Informasi Arsip Menggunakan GroupDocs.Viewer untuk .NET&#58; Panduan Lengkap"
 "url": "/id/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengambil Informasi Arsip Menggunakan GroupDocs.Viewer untuk .NET: Panduan Lengkap
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile .NET'te MS Project Belgelerini Oluşturun Kapsamlı Bir Kılavuz"
 "url": "/tr/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile .NET'te MS Project Belge Oluşturmada Uzmanlaşma
 ## giriiş
 Günümüzün hızlı tempolu iş ortamlarında, proje zaman çizelgelerini ve kaynaklarını etkin bir şekilde yönetmek hayati önem taşır. Paydaşların genellikle tüm bir MS Project dosyasının karmaşası olmadan bir projenin belirli bölümlerini görüntülemeleri gerekir. Bu eğitim, .NET için GroupDocs.Viewer'ı kullanarak MS Project belgelerinizin bölümlerini belirtilen zaman aralıklarında nasıl işleyebileceğinizi ele alır; bu yaygın soruna yönelik temel çözümünüz.

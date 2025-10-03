@@ -5,8 +5,8 @@
 "title": "Szövegfájlok renderelése"
 "url": "/hu/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Szövegfájlok renderelése
 
 ## Bevezetés

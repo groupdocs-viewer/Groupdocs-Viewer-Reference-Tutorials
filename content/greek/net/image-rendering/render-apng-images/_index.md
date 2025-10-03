@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων APNG"
 "url": "/el/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Απόδοση εικόνων APNG
 
 ## Εισαγωγή

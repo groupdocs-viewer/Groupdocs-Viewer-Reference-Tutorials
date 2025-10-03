@@ -4,8 +4,8 @@
 "title": "วิธีการเปลี่ยนชื่อฟิลด์อีเมลเมื่อแปลงอีเมลเป็น HTML โดยใช้ GroupDocs.Viewer Java"
 "url": "/th/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเปลี่ยนชื่อฟิลด์อีเมลเมื่อเรนเดอร์อีเมลเป็น HTML ด้วย GroupDocs.Viewer Java
 
 ## การแนะนำ

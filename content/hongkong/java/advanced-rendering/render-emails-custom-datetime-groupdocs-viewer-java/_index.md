@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中渲染帶有自訂日期時間的電子郵件"
 "url": "/zh-hant/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 Java 中渲染帶有自訂日期時間的電子郵件
 
 ## 介紹

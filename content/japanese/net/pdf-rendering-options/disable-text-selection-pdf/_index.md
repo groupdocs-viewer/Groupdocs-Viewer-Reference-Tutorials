@@ -5,8 +5,8 @@
 "title": "PDF でテキスト選択を無効にする"
 "url": "/ja/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # PDF でテキスト選択を無効にする
 
 ## 導入

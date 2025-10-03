@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET ฝังฟอนต์และแปลงเอกสารเป็น HTML อย่างมีประสิทธิภาพ"
 "url": "/th/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # เรียนรู้การเรนเดอร์เอกสารด้วย GroupDocs.Viewer .NET: ฝังฟอนต์และแปลงเป็น HTML
 
 ## การแนะนำ

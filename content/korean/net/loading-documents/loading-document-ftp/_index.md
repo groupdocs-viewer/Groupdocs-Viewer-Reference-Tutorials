@@ -5,8 +5,8 @@
 "title": "FTP에서 문서 로드(고급)"
 "url": "/ko/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # FTP에서 문서 로드(고급)
 
 ## 소개

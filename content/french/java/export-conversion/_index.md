@@ -3,8 +3,8 @@
 "title": "Tutoriels d'exportation et de conversion de documents pour GroupDocs.Viewer Java"
 "url": "/fr/java/export-conversion/"
 "weight": 15
+type: docs
 ---
-
 # Tutoriels d'exportation et de conversion de documents pour GroupDocs.Viewer Java
 
 Maîtrisez les techniques d'exportation et de conversion de documents grâce à nos tutoriels Java GroupDocs.Viewer. Ces guides pas à pas expliquent comment convertir des documents entre plusieurs formats, mettre en œuvre des stratégies d'exportation, conserver la mise en forme pendant la conversion et gérer le traitement complexe de documents multiformats. Chaque tutoriel inclut des exemples de code Java détaillés pour des scénarios d'exportation et de conversion courants, vous aidant à créer des solutions de transformation de documents flexibles.

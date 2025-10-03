@@ -4,8 +4,8 @@
 "title": "Guide des performances &#58; ignorer le rendu des lignes vides en Java à l'aide de GroupDocs.Viewer"
 "url": "/fr/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Ignorer le rendu des lignes vides en Java avec GroupDocs.Viewer
 ## Introduction
 L'affichage de lignes vides inutiles lors de la conversion de feuilles de calcul au format HTML peut encombrer votre sortie et consommer des ressources supplémentaires. C'est un problème majeur pour les développeurs soucieux de la performance. Grâce à la bibliothèque « GroupDocs.Viewer Java », vous pouvez efficacement ignorer l'affichage de ces lignes vides, améliorant ainsi la vitesse et la clarté de vos applications.

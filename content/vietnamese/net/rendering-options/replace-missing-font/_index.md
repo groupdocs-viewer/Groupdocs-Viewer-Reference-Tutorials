@@ -5,8 +5,8 @@
 "title": "Thay thế phông chữ bị thiếu"
 "url": "/vi/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Thay thế phông chữ bị thiếu
 
 ## Giới thiệu

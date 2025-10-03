@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - adjust text overflow Excel
 - rendering Excel to HTML
-
+type: docs
 ---
-
-
 # How to Adjust Text Overflow in Excel Spreadsheets with GroupDocs.Viewer for Java
 ## Introduction
 Dealing with overflowing text in spreadsheet cells when converting documents to HTML is a common challenge, especially for extensive Excel files. **GroupDocs.Viewer for Java** simplifies this process, allowing you to manage and hide overflowed text efficiently.

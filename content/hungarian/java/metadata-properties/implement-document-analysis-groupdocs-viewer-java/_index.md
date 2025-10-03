@@ -4,8 +4,8 @@
 "title": "Dokumentumelemzés megvalósítása a GroupDocs.Viewer for Java segítségével; Oldalmetaadatok és szövegsorok kinyerése"
 "url": "/hu/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumelemzés implementálása GroupDocs.Viewer segítségével Java-ban: Oldalmetaadatok és szövegsorok kinyerése
 
 ## Bevezetés

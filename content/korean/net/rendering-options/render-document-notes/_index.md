@@ -5,8 +5,8 @@
 "title": "메모가 포함된 문서 렌더링"
 "url": "/ko/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # 메모가 포함된 문서 렌더링
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "Renderização de imagem"
 "url": "/pt/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Renderização de imagem
 
 

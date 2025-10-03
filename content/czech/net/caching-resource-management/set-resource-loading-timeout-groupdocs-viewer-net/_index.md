@@ -4,8 +4,8 @@
 "title": "Implementace časového limitu pro načítání zdrojů v GroupDocs.Viewer pro .NET - Kompletní průvodce"
 "url": "/cs/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Implementace časového limitu pro načítání zdrojů v GroupDocs.Viewer pro .NET
 
 ## Zavedení

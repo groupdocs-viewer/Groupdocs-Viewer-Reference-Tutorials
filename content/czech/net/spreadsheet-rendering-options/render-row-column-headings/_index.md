@@ -5,8 +5,8 @@
 "title": "Vykreslení záhlaví řádků a sloupců"
 "url": "/cs/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Vykreslení záhlaví řádků a sloupců
 
 ## Zavedení

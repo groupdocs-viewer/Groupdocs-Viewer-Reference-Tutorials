@@ -4,8 +4,8 @@
 "title": "Aggiungere filigrane ai documenti utilizzando GroupDocs.Viewer Java - Una guida completa"
 "url": "/it/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Aggiungere filigrane ai documenti utilizzando GroupDocs.Viewer Java: una guida completa
 
 ## Introduzione

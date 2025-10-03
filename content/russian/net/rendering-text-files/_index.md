@@ -5,8 +5,8 @@
 "title": "Рендеринг текстовых файлов"
 "url": "/ru/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Рендеринг текстовых файлов
 
 ## Введение

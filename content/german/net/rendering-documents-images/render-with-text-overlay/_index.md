@@ -5,8 +5,8 @@
 "title": "Rendern mit überlagertem Text zur Anzeige"
 "url": "/de/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Rendern mit überlagertem Text zur Anzeige
 
 ## Einführung

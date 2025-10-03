@@ -5,8 +5,8 @@
 "title": "Définir le format de date et d'heure et le décalage horaire (e-mail)"
 "url": "/fr/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Définir le format de date et d'heure et le décalage horaire (e-mail)
 
 

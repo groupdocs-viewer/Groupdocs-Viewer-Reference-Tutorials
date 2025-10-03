@@ -4,8 +4,8 @@
 "title": "Panduan Lengkap untuk Merender File AI menggunakan GroupDocs.Viewer .NET untuk Pengembang"
 "url": "/id/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Panduan Lengkap untuk Merender File AI menggunakan GroupDocs.Viewer .NET untuk Pengembang
 
 ## Perkenalan

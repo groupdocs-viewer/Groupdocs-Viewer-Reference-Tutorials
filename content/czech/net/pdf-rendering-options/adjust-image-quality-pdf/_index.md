@@ -5,8 +5,8 @@
 "title": "Úprava kvality obrazu v PDF"
 "url": "/cs/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Úprava kvality obrazu v PDF
 
 ## Zavedení

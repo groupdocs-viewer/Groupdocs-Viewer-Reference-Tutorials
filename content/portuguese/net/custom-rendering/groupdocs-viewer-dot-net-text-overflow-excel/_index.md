@@ -4,8 +4,8 @@
 "title": "Ocultar estouro de texto no Excel usando GroupDocs.Viewer .NET - Um guia completo"
 "url": "/pt/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Ocultar estouro de texto no Excel com GroupDocs.Viewer .NET
 
 ## Introdução

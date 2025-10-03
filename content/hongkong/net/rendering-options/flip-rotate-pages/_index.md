@@ -5,8 +5,8 @@
 "title": "翻轉和旋轉頁面"
 "url": "/zh-hant/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # 翻轉和旋轉頁面
 
 ## 介紹

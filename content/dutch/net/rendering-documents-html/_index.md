@@ -5,8 +5,8 @@
 "title": "Documenten naar HTML renderen"
 "url": "/nl/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Documenten naar HTML renderen
 
 

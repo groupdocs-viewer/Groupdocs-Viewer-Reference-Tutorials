@@ -5,8 +5,8 @@
 "title": "Geselecteerde pagina's weergeven"
 "url": "/nl/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Geselecteerde pagina's weergeven
 
 ## Invoering

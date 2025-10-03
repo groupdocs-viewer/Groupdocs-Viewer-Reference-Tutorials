@@ -5,8 +5,8 @@
 "title": "Απενεργοποίηση επιλογής κειμένου σε PDF"
 "url": "/el/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Απενεργοποίηση επιλογής κειμένου σε PDF
 
 ## Εισαγωγή

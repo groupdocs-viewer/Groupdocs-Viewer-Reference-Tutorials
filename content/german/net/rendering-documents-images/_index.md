@@ -5,8 +5,8 @@
 "title": "Dokumente in Bilder umwandeln"
 "url": "/de/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Dokumente in Bilder umwandeln
 
 ## Einführung

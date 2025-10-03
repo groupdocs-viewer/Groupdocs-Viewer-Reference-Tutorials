@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["cmx-viewer", "net-image-processing", "document-conversion"]
+type: docs
 ---
-
 # CMX Image Viewer .NET - Complete Implementation Guide
 
 ## Introduction

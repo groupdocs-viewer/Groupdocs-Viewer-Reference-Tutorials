@@ -5,8 +5,8 @@
 "title": "取得影像渲染的文字座標"
 "url": "/zh-hant/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # 取得影像渲染的文字座標
 
 ## 介紹

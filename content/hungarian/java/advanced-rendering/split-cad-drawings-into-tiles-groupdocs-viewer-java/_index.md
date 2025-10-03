@@ -4,8 +4,8 @@
 "title": "CAD rajzok szeletelése csempékre a GroupDocs.Viewer Java használatával a hatékony renderelés érdekében"
 "url": "/hu/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD rajzok felosztása csempékre a GroupDocs.Viewer Java segítségével
 
 ## Bevezetés

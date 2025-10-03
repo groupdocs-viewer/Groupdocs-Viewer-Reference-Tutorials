@@ -5,8 +5,8 @@
 "title": "Nonaktifkan Verifikasi Lisensi Font dalam PDF"
 "url": "/id/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Nonaktifkan Verifikasi Lisensi Font dalam PDF
 
 ## Perkenalan

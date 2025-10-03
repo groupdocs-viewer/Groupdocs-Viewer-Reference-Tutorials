@@ -4,8 +4,8 @@
 "title": "Convierta archivos PDF a PNG con tamaño original usando GroupDocs.Viewer para .NET"
 "url": "/es/net/export-conversion/convert-pdfs-to-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Convierta archivos PDF a PNG con tamaño original usando GroupDocs.Viewer para .NET
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "Padroneggiare il riordino delle pagine PDF in .NET con GroupDocs.Viewer - Guida per sviluppatori"
 "url": "/it/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggiare la riorganizzazione delle pagine PDF con GroupDocs.Viewer .NET: una guida completa per sviluppatori
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "دليل Java - عرض صفحات محددة باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer لمعاينة المستندات وإدارتها"
 "url": "/ar/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # تنفيذ Java: عرض صفحات محددة باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer
 
 ## مقدمة

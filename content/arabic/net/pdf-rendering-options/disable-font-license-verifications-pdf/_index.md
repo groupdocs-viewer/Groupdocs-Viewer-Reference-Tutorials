@@ -5,8 +5,8 @@
 "title": "تعطيل التحقق من ترخيص الخط في PDF"
 "url": "/ar/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # تعطيل التحقق من ترخيص الخط في PDF
 
 ## مقدمة

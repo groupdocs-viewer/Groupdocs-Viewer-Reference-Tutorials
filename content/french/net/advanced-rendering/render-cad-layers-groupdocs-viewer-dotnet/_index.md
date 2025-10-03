@@ -4,8 +4,8 @@
 "title": "Comment rendre des calques CAO spécifiques à l'aide de GroupDocs.Viewer pour .NET ? Un guide complet"
 "url": "/fr/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des calques de dessin CAO spécifiques à l'aide de GroupDocs.Viewer pour .NET
 
 ## Introduction

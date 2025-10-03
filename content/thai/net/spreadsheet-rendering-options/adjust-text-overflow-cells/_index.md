@@ -5,8 +5,8 @@
 "title": "ปรับการล้นข้อความในเซลล์"
 "url": "/th/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # ปรับการล้นข้อความในเซลล์
 
 ## การแนะนำ

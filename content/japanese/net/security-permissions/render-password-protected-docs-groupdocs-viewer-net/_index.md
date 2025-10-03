@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET でパスワード保護されたドキュメントを表示する方法"
 "url": "/ja/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET でパスワード保護されたドキュメントをレンダリングする
 
 ## 導入

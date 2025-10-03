@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε έγγραφα CDR χρησιμοποιώντας το GroupDocs.Viewer για .NET™; Ένας πλήρης οδηγός"
 "url": "/el/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε έγγραφα CDR χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

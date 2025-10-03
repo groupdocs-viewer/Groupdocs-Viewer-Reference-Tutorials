@@ -4,8 +4,8 @@
 "title": "Cómo recuperar y guardar archivos adjuntos de documentos con GroupDocs.Viewer para Java&#58; una guía completa"
 "url": "/es/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cómo recuperar y guardar archivos adjuntos de documentos con GroupDocs.Viewer para Java: una guía completa
 
 ## Introducción

@@ -5,8 +5,8 @@
 "title": "Rendu des nombres"
 "url": "/fr/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Rendu des nombres
 
 ## Introduction

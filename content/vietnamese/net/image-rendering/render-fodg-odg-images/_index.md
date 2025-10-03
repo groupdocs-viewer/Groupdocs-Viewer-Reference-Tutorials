@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh FODG và ODG"
 "url": "/vi/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # Kết xuất hình ảnh FODG và ODG
 
 ## Giới thiệu

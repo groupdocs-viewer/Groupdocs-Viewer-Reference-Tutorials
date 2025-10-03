@@ -4,8 +4,8 @@
 "title": "Maîtriser le rendu SVGZ dans .NET avec GroupDocs.Viewer – Un guide complet pour les développeurs"
 "url": "/fr/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Maîtriser le rendu SVGZ dans .NET avec GroupDocs.Viewer : un guide complet pour les développeurs
 
 ## Introduction

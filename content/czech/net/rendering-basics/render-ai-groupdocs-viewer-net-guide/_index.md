@@ -4,8 +4,8 @@
 "title": "Komplexní průvodce vykreslováním souborů s umělou inteligencí pomocí GroupDocs.Viewer .NET pro vývojáře"
 "url": "/cs/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Komplexní průvodce vykreslováním souborů s umělou inteligencí pomocí GroupDocs.Viewer .NET pro vývojáře
 
 ## Zavedení

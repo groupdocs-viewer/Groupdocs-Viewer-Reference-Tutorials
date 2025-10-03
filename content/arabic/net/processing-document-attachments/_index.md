@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/ar/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # معالجة مرفقات المستندات
 
 ## مقدمة

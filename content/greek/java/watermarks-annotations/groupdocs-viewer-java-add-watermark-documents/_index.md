@@ -4,8 +4,8 @@
 "title": "Προσθήκη υδατογραφημάτων σε έγγραφα χρησιμοποιώντας το GroupDocs.Viewer Java&#58; Ένας ολοκληρωμένος οδηγός"
 "url": "/el/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Προσθήκη υδατογραφημάτων σε έγγραφα χρησιμοποιώντας το GroupDocs.Viewer Java: Ένας ολοκληρωμένος οδηγός
 
 ## Εισαγωγή

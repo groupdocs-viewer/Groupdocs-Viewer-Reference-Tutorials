@@ -5,8 +5,8 @@
 "title": "画像レンダリング"
 "url": "/ja/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # 画像レンダリング
 
 

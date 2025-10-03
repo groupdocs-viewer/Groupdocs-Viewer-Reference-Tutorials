@@ -5,8 +5,8 @@
 "title": "تحميل المستندات باستخدام ترميز محدد"
 "url": "/ar/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # تحميل المستندات باستخدام ترميز محدد
 
 ## مقدمة

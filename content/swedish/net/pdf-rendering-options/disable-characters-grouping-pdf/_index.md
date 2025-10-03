@@ -5,8 +5,8 @@
 "title": "Inaktivera teckengruppering i PDF"
 "url": "/sv/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Inaktivera teckengruppering i PDF
 
 ## Introduktion

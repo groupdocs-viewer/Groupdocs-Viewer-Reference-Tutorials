@@ -5,8 +5,8 @@
 "title": "使用密碼保護渲染的 PDF"
 "url": "/zh-hant/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # 使用密碼保護渲染的 PDF
 
 ## 介紹

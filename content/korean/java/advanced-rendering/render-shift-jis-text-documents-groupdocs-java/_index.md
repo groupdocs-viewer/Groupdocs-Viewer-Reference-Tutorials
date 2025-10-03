@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 Shift_JIS에서 텍스트 문서 렌더링"
 "url": "/ko/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 Shift_JIS에서 텍스트 문서 렌더링
 
 ## 소개

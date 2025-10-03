@@ -5,8 +5,8 @@
 "title": "셀의 텍스트 오버플로 조정"
 "url": "/ko/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # 셀의 텍스트 오버플로 조정
 
 ## 소개

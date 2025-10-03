@@ -5,8 +5,8 @@
 "title": "Bildqualität in PDF anpassen"
 "url": "/de/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Bildqualität in PDF anpassen
 
 ## Einführung

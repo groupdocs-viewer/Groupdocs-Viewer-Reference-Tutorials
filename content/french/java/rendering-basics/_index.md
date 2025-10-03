@@ -3,8 +3,8 @@
 "title": "Tutoriels sur les principes fondamentaux du rendu de documents pour GroupDocs.Viewer Java"
 "url": "/fr/java/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # Tutoriels sur les principes fondamentaux du rendu de documents pour GroupDocs.Viewer Java
 
 Maîtrisez les techniques de rendu de documents grâce à nos tutoriels Java détaillés sur GroupDocs.Viewer. Ces guides pas à pas expliquent comment convertir et afficher des documents dans différents formats de sortie, contrôler la qualité du rendu, gérer le rendu au niveau des pages et implémenter la visualisation de documents multi-formats. Chaque tutoriel inclut des exemples de code Java fonctionnels pour des scénarios de rendu courants, vous aidant à créer des applications capables de transformer des documents en plusieurs formats de présentation.

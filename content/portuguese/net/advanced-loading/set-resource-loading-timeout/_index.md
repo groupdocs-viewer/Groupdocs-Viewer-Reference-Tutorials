@@ -5,8 +5,8 @@
 "title": "Definir tempo limite de carregamento de recursos (avançado)"
 "url": "/pt/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Definir tempo limite de carregamento de recursos (avançado)
 
 ## Introdução

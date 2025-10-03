@@ -5,8 +5,8 @@
 "title": "Responsieve HTML weergeven"
 "url": "/nl/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Responsieve HTML weergeven
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Konversi PDF ke PNG dengan Ukuran Asli Menggunakan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/export-conversion/convert-pdfs-to-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Konversi PDF ke PNG dengan Ukuran Asli Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Jak převést archivy RAR do formátů HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer .NET"
 "url": "/cs/net/rendering-basics/rendering-rar-archives-using-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak převést archivy RAR do různých formátů pomocí GroupDocs.Viewer .NET
 
 dnešním světě založeném na datech je efektivní správa a sdílení komprimovaných souborů, jako jsou archivy RAR, klíčové. Ať už jste vývojář integrující funkce pro převod souborů do své aplikace, nebo někdo, kdo potřebuje extrahovat obsah ze souborů RAR pro různé účely, GroupDocs.Viewer pro .NET nabízí robustní řešení. V tomto tutoriálu se podíváme na to, jak pomocí GroupDocs.Viewer pro .NET vykreslit archivy RAR do formátů HTML, JPG, PNG a PDF.

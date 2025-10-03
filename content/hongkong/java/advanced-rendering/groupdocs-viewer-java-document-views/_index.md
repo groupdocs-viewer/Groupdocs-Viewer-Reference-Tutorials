@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer for Java™ 擷取文件檢視資訊與見解"
 "url": "/zh-hant/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 掌握文件視圖
 ## 進階渲染技術
 **SEO網址：** groupdocs-viewer-java-文件視圖

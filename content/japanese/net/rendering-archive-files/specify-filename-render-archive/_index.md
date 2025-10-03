@@ -5,8 +5,8 @@
 "title": "アーカイブファイルのレンダリング時にファイル名を指定する"
 "url": "/ja/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # アーカイブファイルのレンダリング時にファイル名を指定する
 
 ## 導入

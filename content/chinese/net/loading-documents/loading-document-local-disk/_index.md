@@ -5,8 +5,8 @@
 "title": "从本地磁盘加载文档"
 "url": "/zh/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # 从本地磁盘加载文档
 
 ## 介绍

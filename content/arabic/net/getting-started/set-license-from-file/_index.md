@@ -5,8 +5,8 @@
 "title": "تعيين الترخيص من الملف"
 "url": "/ar/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # تعيين الترخيص من الملف
 
 ## مقدمة

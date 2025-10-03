@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์หน้าที่เลือกโดยใช้ GroupDocs.Viewer .NET คู่มือฉบับสมบูรณ์สำหรับนักพัฒนา"
 "url": "/th/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์หน้าเฉพาะโดยใช้ GroupDocs.Viewer .NET
 
 ## การแนะนำ

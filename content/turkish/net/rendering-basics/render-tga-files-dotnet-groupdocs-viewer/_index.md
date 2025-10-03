@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak .NET'te TGA Dosyaları Nasıl Oluşturulur? Kapsamlı Bir Kılavuz"
 "url": "/tr/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak .NET'te TGA Dosyaları Nasıl Oluşturulur: Kapsamlı Bir Kılavuz
 
 ## giriiş

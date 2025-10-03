@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer를 사용한 효율적인 Excel 인쇄 영역 렌더링"
 "url": "/ko/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용한 효율적인 Excel 인쇄 영역 렌더링
 
 ## 소개

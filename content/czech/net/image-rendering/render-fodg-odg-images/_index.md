@@ -5,8 +5,8 @@
 "title": "Vykreslení obrázků FODG a ODG"
 "url": "/cs/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # Vykreslení obrázků FODG a ODG
 
 ## Zavedení

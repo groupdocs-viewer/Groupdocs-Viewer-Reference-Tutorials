@@ -4,8 +4,8 @@
 "title": "Rendera Excel-kalkylblad efter sidbrytningar med GroupDocs.Viewer för .NET"
 "url": "/sv/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendera Excel-kalkylblad efter sidbrytningar med GroupDocs.Viewer för .NET
 
 ## Introduktion

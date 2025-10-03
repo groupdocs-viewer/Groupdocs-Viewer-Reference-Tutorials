@@ -5,8 +5,8 @@
 "title": "ドキュメント内のページの順序を変更する"
 "url": "/ja/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # ドキュメント内のページの順序を変更する
 
 ## 導入

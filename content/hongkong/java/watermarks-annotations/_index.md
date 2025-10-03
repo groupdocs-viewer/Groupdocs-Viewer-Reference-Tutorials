@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文件浮水印與註解教學課程"
 "url": "/zh-hant/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文件浮水印與註解教學課程
 
 使用我們的 GroupDocs.Viewer Java 教學掌握文件註解和浮水印技術。這些逐步指南示範如何新增文字和影像浮水印、實作註解、控制浮水印位置和透明度，以及如何渲染嵌入註解的文件。每個教學課程都包含實用的 Java 程式碼範例，用於為文件添加視覺元資料和保護性標記，從而增強文件追蹤和品牌推廣功能。

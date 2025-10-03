@@ -5,8 +5,8 @@
 "title": "Kullanıcı Tarafından Tanımlanan Kenar Boşluklarıyla HTML Oluştur"
 "url": "/tr/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Kullanıcı Tarafından Tanımlanan Kenar Boşluklarıyla HTML Oluştur
 
 ## giriiş

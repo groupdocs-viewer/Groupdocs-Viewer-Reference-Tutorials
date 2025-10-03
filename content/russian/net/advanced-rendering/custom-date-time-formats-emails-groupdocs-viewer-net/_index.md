@@ -4,8 +4,8 @@
 "title": "Настройка форматов даты и времени и смещений часовых поясов в электронных письмах с помощью GroupDocs.Viewer .NET"
 "url": "/ru/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Настройка форматов даты и времени, а также часовых поясов в электронных письмах с помощью GroupDocs.Viewer .NET
 
 ## Введение

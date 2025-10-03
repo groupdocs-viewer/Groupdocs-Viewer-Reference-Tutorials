@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer for Java ドキュメントの添付ファイルの取得と印刷"
 "url": "/ja/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Java用マスターGroupDocs.Viewer：ドキュメントの添付ファイルの取得と印刷
 
 ## 導入

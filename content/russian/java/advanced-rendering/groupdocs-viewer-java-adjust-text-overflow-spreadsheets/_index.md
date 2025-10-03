@@ -4,8 +4,8 @@
 "title": "Как настроить переполнение текста в таблицах Excel с помощью GroupDocs.Viewer для Java"
 "url": "/ru/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Как настроить переполнение текста в таблицах Excel с помощью GroupDocs.Viewer для Java
 ## Введение
 Распространенной проблемой при конвертации документов в HTML является проблема переполнения ячеек электронной таблицы текстом, особенно это касается больших файлов Excel. **GroupDocs.Viewer для Java** упрощает этот процесс, позволяя эффективно управлять и скрывать выходящий за пределы текста текст.

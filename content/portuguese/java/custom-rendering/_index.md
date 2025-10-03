@@ -3,8 +3,8 @@
 "title": "Tutoriais de renderização de documentos personalizados para GroupDocs.Viewer Java"
 "url": "/pt/java/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # Tutoriais de renderização de documentos personalizados para GroupDocs.Viewer Java
 
 Domine técnicas avançadas de personalização com nossos tutoriais Java do GroupDocs.Viewer para renderização personalizada. Estes guias abrangentes demonstram como criar manipuladores de renderização personalizados, implementar lógica de renderização especializada, estender recursos de renderização integrados e desenvolver soluções sofisticadas de processamento de documentos. Cada tutorial fornece exemplos detalhados de código Java que mostram como implementar estratégias flexíveis e personalizadas de renderização de documentos que vão além das abordagens de renderização padrão.

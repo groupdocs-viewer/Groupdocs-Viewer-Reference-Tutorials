@@ -4,8 +4,8 @@
 "title": "Mengambil Informasi Tampilan MS Project Menggunakan GroupDocs.Viewer .NET | Metadata & Properti"
 "url": "/id/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Mengambil Informasi Tampilan MS Project Menggunakan GroupDocs.Viewer .NET
 
 ## Perkenalan

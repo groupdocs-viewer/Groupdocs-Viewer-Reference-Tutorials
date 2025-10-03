@@ -5,8 +5,8 @@
 "title": "PDF ドキュメントの表示情報を取得する"
 "url": "/ja/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # PDF ドキュメントの表示情報を取得する
 
 ## 導入

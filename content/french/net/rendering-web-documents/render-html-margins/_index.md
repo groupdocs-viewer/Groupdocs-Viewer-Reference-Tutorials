@@ -5,8 +5,8 @@
 "title": "Rendu HTML avec des marges définies par l'utilisateur"
 "url": "/fr/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Rendu HTML avec des marges définies par l'utilisateur
 
 ## Introduction

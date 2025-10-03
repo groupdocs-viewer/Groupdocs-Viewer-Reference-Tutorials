@@ -4,8 +4,8 @@
 "title": "Establecer el tiempo de espera de carga de recursos en GroupDocs.Viewer para Java&#58; Mejorar el rendimiento de los documentos"
 "url": "/es/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Configurar el tiempo de espera para la carga de recursos en GroupDocs.Viewer para Java: Mejorar la eficiencia de la representación de documentos
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "Bemästra filtypsdetektering i Java med GroupDocs.Viewer"
 "url": "/sv/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra filtypsdetektering i Java med GroupDocs.Viewer
 
 Upptäck kraften i **Gruppdokument.Visare** för att sömlöst identifiera filtyper från filändelser, medietyper och strömmar. Detta robusta bibliotek förenklar utvecklingsprocesser och förbättrar applikationsfunktioner.

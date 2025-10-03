@@ -5,8 +5,8 @@
 "title": "Bestimmte Ordner rendern und Nachrichten filtern (Outlook)"
 "url": "/de/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Bestimmte Ordner rendern und Nachrichten filtern (Outlook)
 
 ## Einführung

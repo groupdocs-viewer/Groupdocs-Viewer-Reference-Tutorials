@@ -4,8 +4,8 @@
 "title": "Реализация тайм-аута загрузки ресурсов в GroupDocs.Viewer для .NET — полное руководство"
 "url": "/ru/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Реализация тайм-аута загрузки ресурсов в GroupDocs.Viewer для .NET
 
 ## Введение

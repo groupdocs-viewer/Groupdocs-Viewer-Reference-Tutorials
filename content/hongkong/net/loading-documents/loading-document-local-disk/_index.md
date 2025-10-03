@@ -5,8 +5,8 @@
 "title": "從本機磁碟載入文檔"
 "url": "/zh-hant/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # 從本機磁碟載入文檔
 
 ## 介紹

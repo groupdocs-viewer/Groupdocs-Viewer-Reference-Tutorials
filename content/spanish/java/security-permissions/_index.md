@@ -3,8 +3,8 @@
 "title": "Tutoriales de seguridad de documentos y control de acceso para GroupDocs.Viewer Java"
 "url": "/es/java/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Tutoriales de seguridad de documentos y control de acceso para GroupDocs.Viewer Java
 
 Aprenda a proteger la visualización de documentos con nuestros completos tutoriales de seguridad de GroupDocs.Viewer para desarrolladores Java. Estas guías detalladas muestran cómo implementar la protección con contraseña, administrar los permisos de los documentos, gestionar archivos cifrados y controlar el acceso a documentos confidenciales mediante programación. Cada tutorial proporciona ejemplos de código Java funcionales para escenarios de seguridad comunes, lo que le ayuda a crear aplicaciones que mantienen la confidencialidad e integridad de los documentos, a la vez que ofrecen funciones de visualización controlada.

@@ -4,8 +4,8 @@
 "title": "Implementazione di una licenza a consumo per GroupDocs.Viewer in Java - Guida per sviluppatori"
 "url": "/it/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementazione di una licenza a consumo per GroupDocs.Viewer per Java: guida per sviluppatori
 
 ## Introduzione

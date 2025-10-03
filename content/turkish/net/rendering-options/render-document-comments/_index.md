@@ -5,8 +5,8 @@
 "title": "Yorumlarla Belgeyi Oluştur"
 "url": "/tr/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Yorumlarla Belgeyi Oluştur
 
 ## giriiş

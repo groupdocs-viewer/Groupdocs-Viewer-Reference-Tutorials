@@ -5,8 +5,8 @@
 "title": "Dostosuj rozmiar strony podczas renderowania wiadomości e-mail"
 "url": "/pl/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Dostosuj rozmiar strony podczas renderowania wiadomości e-mail
 
 ## Wstęp

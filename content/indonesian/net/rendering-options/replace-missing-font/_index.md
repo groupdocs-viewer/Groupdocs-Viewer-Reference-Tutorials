@@ -5,8 +5,8 @@
 "title": "Ganti Font yang Hilang"
 "url": "/id/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Ganti Font yang Hilang
 
 ## Perkenalan

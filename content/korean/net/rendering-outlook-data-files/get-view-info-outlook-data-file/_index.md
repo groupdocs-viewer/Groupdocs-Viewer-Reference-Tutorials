@@ -5,8 +5,8 @@
 "title": "Outlook 데이터 파일(PST, OST)에 대한 보기 정보 가져오기"
 "url": "/ko/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Outlook 데이터 파일(PST, OST)에 대한 보기 정보 가져오기
 
 ## 소개

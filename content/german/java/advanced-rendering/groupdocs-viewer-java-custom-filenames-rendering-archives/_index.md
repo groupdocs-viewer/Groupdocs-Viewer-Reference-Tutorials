@@ -4,8 +4,8 @@
 "title": "Beherrschung von GroupDocs.Viewer Java – Benutzerdefinierte Dateinamen für die PDF-Wiedergabe von Archiven"
 "url": "/de/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Mastering GroupDocs.Viewer Java: Geben Sie beim Rendern von Archiven in PDF benutzerdefinierte Dateinamen an
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java'yı Kullanarak Tüm CAD Düzenlerini Verimli Şekilde Oluşturun"
 "url": "/tr/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java'yı Kullanarak Tüm CAD Düzenlerini Verimli Şekilde Oluşturun
 
 ## giriiş

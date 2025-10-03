@@ -4,8 +4,8 @@
 "title": "Kết xuất tệp Outlook PST và OST thành HTML bằng Java và GroupDocs.Viewer"
 "url": "/vi/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp dữ liệu Outlook thành HTML bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

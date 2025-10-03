@@ -4,8 +4,8 @@
 "title": "วิธีการปรับขนาดภาพด้วย GroupDocs.Viewer .NET คำแนะนำทีละขั้นตอนสำหรับนักพัฒนา"
 "url": "/th/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการปรับขนาดภาพด้วย GroupDocs.Viewer .NET: คู่มือทีละขั้นตอนสำหรับนักพัฒนา
 
 ## การแนะนำ

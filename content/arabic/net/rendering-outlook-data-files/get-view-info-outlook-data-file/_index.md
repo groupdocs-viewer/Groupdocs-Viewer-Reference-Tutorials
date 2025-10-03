@@ -5,8 +5,8 @@
 "title": "الحصول على معلومات العرض لملفات بيانات Outlook (PST وOST)"
 "url": "/ar/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # الحصول على معلومات العرض لملفات بيانات Outlook (PST وOST)
 
 ## مقدمة

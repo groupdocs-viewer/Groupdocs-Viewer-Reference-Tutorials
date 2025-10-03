@@ -4,8 +4,8 @@
 "title": "Representación eficiente de PDF por capas en Java con GroupDocs.Viewer"
 "url": "/es/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Representación eficiente de PDF por capas en Java con GroupDocs.Viewer
 
 ## Introducción

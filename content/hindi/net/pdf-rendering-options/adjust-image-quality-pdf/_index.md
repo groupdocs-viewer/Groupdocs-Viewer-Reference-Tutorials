@@ -5,8 +5,8 @@
 "title": "पीडीएफ में छवि गुणवत्ता समायोजित करें"
 "url": "/hi/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # पीडीएफ में छवि गुणवत्ता समायोजित करें
 
 ## परिचय

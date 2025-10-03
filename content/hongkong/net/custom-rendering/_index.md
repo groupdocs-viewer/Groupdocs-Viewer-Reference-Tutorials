@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 自訂文件渲染教學"
 "url": "/zh-hant/net/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 自訂文件渲染教學
 
 透過我們的 GroupDocs.Viewer .NET 教學掌握進階自訂渲染技術。這些全面的指南示範如何建立自訂渲染處理程序、實現專用渲染邏輯、擴充內建渲染功能以及開發複雜的文件處理解決方案。每個教學都提供了詳細的 .NET 程式碼範例，展示如何實現靈活、客製化的文件渲染策略，超越標準的渲染方法。

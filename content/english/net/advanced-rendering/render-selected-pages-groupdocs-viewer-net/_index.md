@@ -8,10 +8,8 @@ keywords:
 - render selected pages GroupDocs.Viewer .NET
 - GroupDocs.Viewer .NET installation
 - specific page rendering with GroupDocs
-
+type: docs
 ---
-
-
 # How to Render Specific Pages Using GroupDocs.Viewer .NET
 
 ## Introduction

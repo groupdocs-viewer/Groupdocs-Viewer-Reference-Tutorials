@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ PPTX को HTML में कनवर्ट करें"
 "url": "/hi/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके PPTX प्रस्तुतियों को HTML में नोट्स के साथ परिवर्तित करें
 
 ## परिचय

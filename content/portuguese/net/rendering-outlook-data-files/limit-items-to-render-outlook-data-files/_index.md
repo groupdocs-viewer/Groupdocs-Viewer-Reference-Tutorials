@@ -5,8 +5,8 @@
 "title": "Limitar o número de itens a serem renderizados em arquivos de dados do Outlook"
 "url": "/pt/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Limitar o número de itens a serem renderizados em arquivos de dados do Outlook
 
 ## Introdução

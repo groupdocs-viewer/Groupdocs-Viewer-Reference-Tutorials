@@ -5,8 +5,8 @@
 "title": "Преобразование документов в HTML"
 "url": "/ru/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Преобразование документов в HTML
 
 

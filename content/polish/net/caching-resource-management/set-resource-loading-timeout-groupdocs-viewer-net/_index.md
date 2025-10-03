@@ -4,8 +4,8 @@
 "title": "Implementacja limitu czasu ładowania zasobów w GroupDocs.Viewer dla .NET — kompletny przewodnik"
 "url": "/pl/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Implementacja limitu czasu ładowania zasobów w GroupDocs.Viewer dla .NET
 
 ## Wstęp

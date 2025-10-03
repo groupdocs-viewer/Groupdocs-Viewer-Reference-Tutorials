@@ -5,8 +5,8 @@
 "title": "Angeben des Dateinamens beim Rendern von Archivdateien"
 "url": "/de/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Angeben des Dateinamens beim Rendern von Archivdateien
 
 ## Einführung

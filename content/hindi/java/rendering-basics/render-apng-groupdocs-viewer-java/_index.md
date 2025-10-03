@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके Java में एनिमेटेड PNG को कैसे रेंडर करें"
 "url": "/hi/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # जावा में GroupDocs.Viewer के साथ एनिमेटेड PNG को कैसे रेंडर करें
 
 शक्तिशाली GroupDocs.Viewer for Java लाइब्रेरी का उपयोग करके एनिमेटेड PNG (APNG) फ़ाइलों को HTML, JPG, PNG और PDF जैसे विभिन्न प्रारूपों में परिवर्तित करने की प्रक्रिया का पता लगाएं।

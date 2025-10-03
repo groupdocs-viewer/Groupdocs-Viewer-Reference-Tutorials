@@ -4,8 +4,8 @@
 "title": "Αποτελεσματική μετατροπή εγγράφων CMX χρησιμοποιώντας το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Αποτελεσματική μετατροπή εγγράφων CMX χρησιμοποιώντας το GroupDocs.Viewer για Java: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

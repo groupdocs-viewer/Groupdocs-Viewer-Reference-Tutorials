@@ -4,8 +4,8 @@
 "title": "Divisez les dessins CAO en mosaïques à l'aide de GroupDocs.Viewer Java pour un rendu efficace"
 "url": "/fr/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Diviser les dessins CAO en tuiles avec GroupDocs.Viewer Java
 
 ## Introduction

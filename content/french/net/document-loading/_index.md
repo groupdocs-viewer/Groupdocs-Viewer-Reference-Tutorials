@@ -3,8 +3,8 @@
 "title": "Tutoriels sur le chargement de documents et la gestion des sources pour GroupDocs.Viewer .NET"
 "url": "/fr/net/document-loading/"
 "weight": 2
+type: docs
 ---
-
 # Tutoriels sur le chargement de documents et la gestion des sources pour GroupDocs.Viewer .NET
 
 Nos tutoriels sur le chargement de documents fournissent des conseils complets pour gérer les sources de documents dans .NET. Suivez ces guides étape par étape pour apprendre à charger des documents depuis différents types de stockage, à gérer différents formats de fichiers, à gérer les flux d'entrée et à mettre en œuvre des stratégies de chargement de documents flexibles. Ces tutoriels pratiques incluent des exemples de code complets pour la gestion des sources de documents, vous aidant à créer des applications de visualisation de documents robustes avec des capacités de chargement polyvalentes.

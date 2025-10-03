@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java E-Tablolarında Izgara Çizgileri Nasıl Oluşturulur"
 "url": "/tr/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java E-Tablolarında Izgara Çizgileri Nasıl Oluşturulur
 
 ## giriiş

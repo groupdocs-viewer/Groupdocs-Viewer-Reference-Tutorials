@@ -5,8 +5,8 @@
 "title": "Capas de renderizado en dibujos CAD"
 "url": "/es/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Capas de renderizado en dibujos CAD
 
 ## Introducción

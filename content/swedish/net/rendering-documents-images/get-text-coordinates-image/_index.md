@@ -5,8 +5,8 @@
 "title": "Hämta textkoordinater för bildrendering"
 "url": "/sv/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Hämta textkoordinater för bildrendering
 
 ## Introduktion

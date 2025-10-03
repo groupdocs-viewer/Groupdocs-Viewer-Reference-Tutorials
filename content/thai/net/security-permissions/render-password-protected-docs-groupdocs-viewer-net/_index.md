@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์เอกสารที่ป้องกันด้วยรหัสผ่านด้วย GroupDocs.Viewer .NET"
 "url": "/th/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์เอกสารที่ป้องกันด้วยรหัสผ่านด้วย GroupDocs.Viewer .NET
 
 ## การแนะนำ

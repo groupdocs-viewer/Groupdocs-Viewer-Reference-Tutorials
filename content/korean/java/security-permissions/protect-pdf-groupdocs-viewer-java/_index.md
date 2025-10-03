@@ -4,8 +4,8 @@
 "title": "Java에서 GroupDocs.Viewer를 사용하여 PDF 보안하기&#58; 암호 보호 및 권한 가이드"
 "url": "/ko/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java에서 GroupDocs.Viewer를 사용하여 PDF 보안하기
 
 ## 소개

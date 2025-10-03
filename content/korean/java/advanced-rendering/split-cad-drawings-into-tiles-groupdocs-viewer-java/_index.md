@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java를 사용하여 CAD 도면을 타일로 분할하여 효율적인 렌더링"
 "url": "/ko/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java를 사용하여 CAD 도면을 타일로 분할
 
 ## 소개

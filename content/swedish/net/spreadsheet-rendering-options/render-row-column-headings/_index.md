@@ -5,8 +5,8 @@
 "title": "Rendera rad- och kolumnrubriker"
 "url": "/sv/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Rendera rad- och kolumnrubriker
 
 ## Introduktion

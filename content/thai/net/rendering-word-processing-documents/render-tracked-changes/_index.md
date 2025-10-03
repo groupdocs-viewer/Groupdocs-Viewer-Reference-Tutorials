@@ -5,8 +5,8 @@
 "title": "การแสดงผลการติดตามการเปลี่ยนแปลง"
 "url": "/th/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # การแสดงผลการติดตามการเปลี่ยนแปลง
 
 ## การแนะนำ

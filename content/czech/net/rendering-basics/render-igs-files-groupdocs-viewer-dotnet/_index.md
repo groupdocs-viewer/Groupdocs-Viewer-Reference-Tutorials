@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory IGS v .NET pomocí GroupDocs.Viewer – kompletní průvodce"
 "url": "/cs/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory IGS v .NET pomocí GroupDocs.Viewer: Kompletní průvodce
 
 ## Zavedení

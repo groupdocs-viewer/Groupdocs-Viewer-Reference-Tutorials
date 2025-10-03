@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 检索 CAD 布局和图层以实现高效的设计管理"
 "url": "/zh/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 检索 CAD 布局和图层
 ## 介绍
 在计算机辅助设计 (CAD) 领域，高效管理复杂图纸至关重要，尤其是在处理单个文件中的多个布局和图层时。对于建筑师、工程师和设计师来说，快速访问特定信息可以提高工作效率。 **GroupDocs.Viewer .NET** 通过允许开发人员以编程方式从 CAD 图纸中提取布局和图层，提供了强大的解决方案。

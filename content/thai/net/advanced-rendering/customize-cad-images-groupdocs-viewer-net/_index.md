@@ -4,8 +4,8 @@
 "title": "ปรับแต่งภาพ CAD ด้วย GroupDocs.Viewer เทคนิคการเรนเดอร์ขั้นสูงของ .NET"
 "url": "/th/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์และปรับแต่งภาพ CAD โดยใช้ GroupDocs.Viewer .NET
 
 ## การแนะนำ

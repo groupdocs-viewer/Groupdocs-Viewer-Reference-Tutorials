@@ -5,8 +5,8 @@
 "title": "문서를 HTML로 렌더링"
 "url": "/ko/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # 문서를 HTML로 렌더링
 
 

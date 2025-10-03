@@ -5,8 +5,8 @@
 "title": "FTP からドキュメントを読み込む (詳細)"
 "url": "/ja/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # FTP からドキュメントを読み込む (詳細)
 
 ## 導入

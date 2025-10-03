@@ -5,8 +5,8 @@
 "title": "Zaawansowane użycie (buforowanie)"
 "url": "/pl/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Zaawansowane użycie (buforowanie)
 
 

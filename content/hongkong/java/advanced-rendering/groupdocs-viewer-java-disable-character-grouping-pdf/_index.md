@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 及其精確渲染技術停用 PDF 中的字元分組"
 "url": "/zh-hant/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 停用 PDF 中的字元分組
 
 ## 介紹

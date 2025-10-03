@@ -5,8 +5,8 @@
 "title": "すべてのレイアウトをCAD図面にレンダリング"
 "url": "/ja/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # すべてのレイアウトをCAD図面にレンダリング
 
 ## 導入

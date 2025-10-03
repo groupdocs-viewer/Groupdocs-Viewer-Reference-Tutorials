@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके Word दस्तावेज़ों में ट्रैक किए गए परिवर्तनों को कैसे प्रस्तुत करें - एक व्यापक गाइड"
 "url": "/hi/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer के साथ Word दस्तावेज़ों में ट्रैक किए गए परिवर्तनों को प्रस्तुत करना
 
 ## परिचय

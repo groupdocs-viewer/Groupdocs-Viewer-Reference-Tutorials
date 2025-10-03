@@ -5,8 +5,8 @@
 "title": "File di testo di rendering (.txt)"
 "url": "/it/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # File di testo di rendering (.txt)
 
 ## Introduzione

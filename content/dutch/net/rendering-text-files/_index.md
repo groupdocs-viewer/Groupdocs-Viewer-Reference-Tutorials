@@ -5,8 +5,8 @@
 "title": "Tekstbestanden renderen"
 "url": "/nl/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Tekstbestanden renderen
 
 ## Invoering

@@ -5,8 +5,8 @@
 "title": "Document met opmerkingen weergeven"
 "url": "/nl/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Document met opmerkingen weergeven
 
 ## Invoering

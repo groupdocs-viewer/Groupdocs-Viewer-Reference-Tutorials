@@ -4,8 +4,8 @@
 "title": "Hur man hämtar och skriver ut namn på Excel-kalkylblad med GroupDocs.Viewer för .NET (guide 2023)"
 "url": "/sv/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar och skriver du ut namn på Excel-kalkylblad med GroupDocs.Viewer för .NET: En omfattande guide
 
 ## Introduktion

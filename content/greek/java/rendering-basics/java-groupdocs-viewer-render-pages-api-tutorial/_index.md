@@ -4,8 +4,8 @@
 "title": "Οδηγός Java για την απόδοση συγκεκριμένων σελίδων με το GroupDocs.Viewer API για προεπισκόπηση και διαχείριση εγγράφων"
 "url": "/el/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση Java: Απόδοση συγκεκριμένων σελίδων με το GroupDocs.Viewer API
 
 ## Εισαγωγή

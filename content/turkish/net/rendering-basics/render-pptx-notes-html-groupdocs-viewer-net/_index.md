@@ -4,8 +4,8 @@
 "title": "PPTX'i .NET için GroupDocs.Viewer'ı Kullanarak Notes ile HTML'ye Dönüştürme"
 "url": "/tr/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PPTX Sunumlarını .NET için GroupDocs.Viewer Kullanarak Notlarla HTML'ye Dönüştürme
 
 ## giriiş

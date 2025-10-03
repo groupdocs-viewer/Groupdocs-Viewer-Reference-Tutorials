@@ -5,8 +5,8 @@
 "title": "스트림에서 문서 로드"
 "url": "/ko/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # 스트림에서 문서 로드
 
 ## 소개

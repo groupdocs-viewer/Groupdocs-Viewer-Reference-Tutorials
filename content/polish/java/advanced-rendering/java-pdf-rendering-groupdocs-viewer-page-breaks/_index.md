@@ -4,8 +4,8 @@
 "title": "Renderowanie plików PDF w Javie za pomocą GroupDocs.Viewer&#58; Implementowanie podziałów stron w arkuszach kalkulacyjnych"
 "url": "/pl/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie renderowania plików PDF w Javie: GroupDocs.Viewer z podziałem stron
 
 Odblokuj moc renderowania arkuszy kalkulacyjnych w swoich aplikacjach Java za pomocą GroupDocs.Viewer. Ten kompleksowy przewodnik pokaże Ci, jak wdrożyć renderowanie Java PDF z podziałem stron w celu płynnej konwersji do PDF.

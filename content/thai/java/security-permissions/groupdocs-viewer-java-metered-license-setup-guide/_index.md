@@ -4,8 +4,8 @@
 "title": "การนำใบอนุญาตแบบมิเตอร์ไปใช้กับ GroupDocs.Viewer ใน Java&#58; คู่มือสำหรับนักพัฒนา"
 "url": "/th/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # การใช้งานใบอนุญาตแบบมิเตอร์สำหรับ GroupDocs.Viewer สำหรับ Java: คู่มือสำหรับนักพัฒนา
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "渲染 APNG 影像"
 "url": "/zh-hant/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # 渲染 APNG 影像
 
 ## 介紹

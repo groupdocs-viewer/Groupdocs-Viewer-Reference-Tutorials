@@ -5,8 +5,8 @@
 "title": "Hiển thị tiêu đề hàng và cột"
 "url": "/vi/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Hiển thị tiêu đề hàng và cột
 
 ## Giới thiệu

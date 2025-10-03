@@ -5,8 +5,8 @@
 "title": "Dokumentumok betöltése a Streamből"
 "url": "/hu/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Dokumentumok betöltése a Streamből
 
 ## Bevezetés

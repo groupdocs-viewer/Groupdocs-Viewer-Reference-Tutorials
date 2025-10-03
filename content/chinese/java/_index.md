@@ -5,8 +5,8 @@
 "title": "GroupDocs.Viewer for Java 的综合教程和示例"
 "url": "/zh/java/"
 "weight": 10
+type: docs
 ---
-
 # GroupDocs.Viewer for Java 的综合教程和示例
 
 ## 介绍

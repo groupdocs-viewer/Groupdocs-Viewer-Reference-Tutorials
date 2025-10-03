@@ -3,8 +3,8 @@
 "title": "Handledningar för dokumentvattenstämplar och annoteringar för GroupDocs.Viewer .NET"
 "url": "/sv/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Handledningar för dokumentvattenstämplar och annoteringar för GroupDocs.Viewer .NET
 
 Bemästra tekniker för dokumentannotering och vattenmärkning med våra GroupDocs.Viewer .NET-handledningar. Dessa steg-för-steg-guider visar hur du lägger till text- och bildvattenstämplar, implementerar annoteringar, kontrollerar vattenstämpels positionering och transparens och renderar dokument med inbäddade annoteringar. Varje handledning innehåller praktiska .NET-kodexempel för att lägga till visuella metadata och skyddande markeringar i dina dokument, vilket förbättrar dokumentspårning och varumärkesbyggande funktioner.

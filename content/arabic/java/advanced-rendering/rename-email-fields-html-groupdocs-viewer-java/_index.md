@@ -4,8 +4,8 @@
 "title": "كيفية إعادة تسمية حقول البريد الإلكتروني عند تحويل رسائل البريد الإلكتروني إلى HTML باستخدام GroupDocs.Viewer Java"
 "url": "/ar/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية إعادة تسمية حقول البريد الإلكتروني عند عرض رسائل البريد الإلكتروني بتنسيق HTML باستخدام GroupDocs.Viewer Java
 
 ## مقدمة

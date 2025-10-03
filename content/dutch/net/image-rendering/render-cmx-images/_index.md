@@ -5,8 +5,8 @@
 "title": "CMX-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # CMX-afbeeldingen renderen
 
 ## Invoering

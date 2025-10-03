@@ -4,8 +4,8 @@
 "title": "Implementatie van resource-laadtime-out in GroupDocs.Viewer voor .NET - Een complete handleiding"
 "url": "/nl/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Implementatie van resource-laadtime-out in GroupDocs.Viewer voor .NET
 
 ## Invoering

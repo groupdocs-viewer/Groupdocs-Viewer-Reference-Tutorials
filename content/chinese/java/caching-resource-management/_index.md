@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文档渲染缓存教程"
 "url": "/zh/java/caching-resource-management/"
 "weight": 10
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文档渲染缓存教程
 
 通过我们的 GroupDocs.Viewer Java 教程掌握高级缓存和资源管理。这些全面的指南演示了如何实施高效的缓存策略、管理渲染资源、优化内存使用以及提升文档查看性能。每个教程都提供了实用的 Java 代码示例，用于实现复杂的缓存机制，从而增强应用程序的响应能力并降低计算开销。

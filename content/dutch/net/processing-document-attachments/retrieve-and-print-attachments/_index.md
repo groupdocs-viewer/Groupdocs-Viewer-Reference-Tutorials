@@ -5,8 +5,8 @@
 "title": "Documentbijlagen ophalen en afdrukken"
 "url": "/nl/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Documentbijlagen ophalen en afdrukken
 
 ## Invoering

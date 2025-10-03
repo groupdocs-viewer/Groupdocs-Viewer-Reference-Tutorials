@@ -4,8 +4,8 @@
 "title": "كيفية عرض المستندات المحمية بكلمة مرور باستخدام GroupDocs.Viewer .NET"
 "url": "/ar/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # عرض المستندات المحمية بكلمة مرور باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

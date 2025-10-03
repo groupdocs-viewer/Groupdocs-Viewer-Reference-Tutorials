@@ -5,8 +5,8 @@
 "title": "Optionen zur Tabellenkalkulationsdarstellung"
 "url": "/de/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Optionen zur Tabellenkalkulationsdarstellung
 
 ## Einführung

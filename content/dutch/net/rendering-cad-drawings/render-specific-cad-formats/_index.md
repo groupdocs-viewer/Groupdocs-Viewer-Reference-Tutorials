@@ -5,8 +5,8 @@
 "title": "Renderspecifieke CAD-formaten (CF2)"
 "url": "/nl/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Renderspecifieke CAD-formaten (CF2)
 
 ## Invoering

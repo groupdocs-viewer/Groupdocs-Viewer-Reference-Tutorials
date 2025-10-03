@@ -4,8 +4,8 @@
 "title": "PDF oldalak elforgatása a GroupDocs.Viewer for .NET segítségével – Fejlesztői útmutató"
 "url": "/hu/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PDF oldalak elforgatása a GroupDocs.Viewer for .NET használatával: Fejlesztői útmutató
 
 ## Bevezetés

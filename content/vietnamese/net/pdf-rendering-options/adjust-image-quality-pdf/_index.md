@@ -5,8 +5,8 @@
 "title": "Điều chỉnh chất lượng hình ảnh trong PDF"
 "url": "/vi/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Điều chỉnh chất lượng hình ảnh trong PDF
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "تحويل الأرشيفات إلى صفحات HTML مفردة أو متعددة"
 "url": "/ar/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # تحويل الأرشيفات إلى صفحات HTML مفردة أو متعددة
 
 ## مقدمة

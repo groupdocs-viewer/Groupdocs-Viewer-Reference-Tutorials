@@ -5,8 +5,8 @@
 "title": "การใช้งานขั้นสูง (แคช)"
 "url": "/th/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # การใช้งานขั้นสูง (แคช)
 
 

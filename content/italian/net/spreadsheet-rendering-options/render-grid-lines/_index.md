@@ -5,8 +5,8 @@
 "title": "Linee di griglia di rendering"
 "url": "/it/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Linee di griglia di rendering
 
 ## Introduzione

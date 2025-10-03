@@ -4,8 +4,8 @@
 "title": "Java में GroupDocs.Viewer का उपयोग करके विशिष्ट PDF पृष्ठों को घुमाएँ' एक व्यापक गाइड"
 "url": "/hi/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java में GroupDocs.Viewer का उपयोग करके विशिष्ट PDF पृष्ठों को घुमाएँ
 
 ## परिचय

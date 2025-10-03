@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 HTML 파일을 최소화하여 성능 최적화하는 방법"
 "url": "/ko/java/performance-optimization/groupdocs-viewer-java-html-minification-guide/"
 "weight": 1
+type: docs
 ---
-
 # Java에서 GroupDocs.Viewer를 사용하여 HTML 문서를 최소화하는 방법
 
 ## 소개

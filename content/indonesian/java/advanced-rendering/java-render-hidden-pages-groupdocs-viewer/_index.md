@@ -4,8 +4,8 @@
 "title": "Java&#58; Cara Menampilkan Halaman Tersembunyi Menggunakan GroupDocs.Viewer"
 "url": "/id/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Cara Menampilkan Halaman Tersembunyi Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

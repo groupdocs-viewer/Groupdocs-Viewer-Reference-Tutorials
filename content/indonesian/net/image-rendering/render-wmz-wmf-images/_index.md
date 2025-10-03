@@ -5,8 +5,8 @@
 "title": "Render Gambar WMZ dan WMF"
 "url": "/id/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # Render Gambar WMZ dan WMF
 
 ## Perkenalan

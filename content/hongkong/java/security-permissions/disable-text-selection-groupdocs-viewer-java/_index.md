@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer Java 停用 PDF 中的文字選擇—綜合指南"
 "url": "/zh-hant/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer Java 實作 PDF 渲染中的停用文字選擇
 ## 介紹
 您是否需要一種安全的方式在 Web 上顯示 PDF，並且不允許文字選擇？本指南將示範如何使用 GroupDocs.Viewer for Java 程式庫停用文字選擇。透過將文字轉換為圖像，您的內容在線上顯示時將保持安全且不可編輯。

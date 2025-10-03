@@ -4,8 +4,8 @@
 "title": "เรียนรู้การเรนเดอร์ PDF แบบเลเยอร์ของ .NET ด้วย GroupDocs.Viewer พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # เรียนรู้การเรนเดอร์ PDF แบบเลเยอร์ของ .NET ด้วย GroupDocs.Viewer: คำแนะนำทีละขั้นตอน
 
 ## การแนะนำ

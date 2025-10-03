@@ -4,8 +4,8 @@
 "title": "Padroneggiare il rilevamento del tipo di file in Java utilizzando GroupDocs.Viewer"
 "url": "/it/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggiare il rilevamento del tipo di file in Java utilizzando GroupDocs.Viewer
 
 Scopri il potere di **GroupDocs.Viewer** per identificare in modo fluido i tipi di file in base a estensioni, tipi di media e flussi. Questa solida libreria semplifica i processi di sviluppo e migliora le funzionalità delle applicazioni.

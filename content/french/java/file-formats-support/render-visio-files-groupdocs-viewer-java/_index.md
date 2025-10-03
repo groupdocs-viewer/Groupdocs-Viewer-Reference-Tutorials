@@ -4,8 +4,8 @@
 "title": "Rendu de fichiers Visio avec GroupDocs.Viewer pour Java - Guide complet de conversion de fichiers"
 "url": "/fr/java/file-formats-support/render-visio-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendu de fichiers Visio avec GroupDocs.Viewer pour Java : guide complet
 ## Introduction
 À l'ère du numérique, partager et afficher efficacement des diagrammes complexes est crucial. Que vous soyez développeur de logiciels ou professionnel, la conversion de documents Microsoft Visio dans des formats universellement accessibles comme HTML, JPG, PNG ou PDF peut considérablement améliorer la collaboration et la présentation. Ce tutoriel vous guidera dans l'utilisation de GroupDocs.Viewer pour Java pour convertir vos documents Visio en ces formats de manière fluide.

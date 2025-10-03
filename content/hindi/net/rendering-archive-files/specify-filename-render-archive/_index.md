@@ -5,8 +5,8 @@
 "title": "पुरालेख फ़ाइलों को प्रस्तुत करते समय फ़ाइल नाम निर्दिष्ट करें"
 "url": "/hi/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # पुरालेख फ़ाइलों को प्रस्तुत करते समय फ़ाइल नाम निर्दिष्ट करें
 
 ## परिचय

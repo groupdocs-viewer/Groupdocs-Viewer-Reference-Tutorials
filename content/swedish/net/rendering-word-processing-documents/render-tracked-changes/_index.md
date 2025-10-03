@@ -5,8 +5,8 @@
 "title": "Rendera spårade ändringar"
 "url": "/sv/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Rendera spårade ändringar
 
 ## Introduktion

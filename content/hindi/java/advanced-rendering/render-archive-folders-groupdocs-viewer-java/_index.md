@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा में पुरालेख फ़ोल्डर्स को रेंडर करना एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer के साथ पुरालेख फ़ोल्डरों को रेंडर करना
 
 ## परिचय

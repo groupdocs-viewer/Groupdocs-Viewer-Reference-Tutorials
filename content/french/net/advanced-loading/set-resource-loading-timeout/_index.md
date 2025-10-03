@@ -5,8 +5,8 @@
 "title": "Définir le délai d'expiration du chargement des ressources (avancé)"
 "url": "/fr/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Définir le délai d'expiration du chargement des ressources (avancé)
 
 ## Introduction

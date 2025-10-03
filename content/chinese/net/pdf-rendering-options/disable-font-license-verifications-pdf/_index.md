@@ -5,8 +5,8 @@
 "title": "禁用 PDF 中的字体许可证验证"
 "url": "/zh/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # 禁用 PDF 中的字体许可证验证
 
 ## 介绍

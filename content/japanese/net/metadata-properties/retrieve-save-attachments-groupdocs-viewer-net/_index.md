@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用してドキュメントの添付ファイルを取得および保存し、効率的なメタデータ管理を行う方法"
 "url": "/ja/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用してドキュメントの添付ファイルを取得および保存する方法
 
 ## 導入

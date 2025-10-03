@@ -4,8 +4,8 @@
 "title": "Renderowanie określonych warstw CAD w Javie przy użyciu GroupDocs.Viewer&#58; Kompleksowy przewodnik"
 "url": "/pl/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie określonych warstw CAD w Javie przy użyciu GroupDocs.Viewer
 ## Wstęp
 Masz problemy z renderowaniem konkretnych warstw z rysunku CAD? Niezależnie od tego, czy jesteś inżynierem, architektem czy deweloperem pracującym nad złożonymi projektami, zarządzanie i wizualizacja konkretnych warstw CAD może być wyzwaniem. Ten przewodnik pokazuje, jak efektywnie renderować konkretne warstwy przy użyciu potężnego GroupDocs.Viewer dla Java.

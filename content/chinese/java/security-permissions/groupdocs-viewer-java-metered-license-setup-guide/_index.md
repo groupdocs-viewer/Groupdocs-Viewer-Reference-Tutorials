@@ -4,8 +4,8 @@
 "title": "使用 Java 实现 GroupDocs.Viewer 的计量许可证——开发人员指南"
 "url": "/zh/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # 为 GroupDocs.Viewer for Java 实施计量许可证：开发人员指南
 
 ## 介绍

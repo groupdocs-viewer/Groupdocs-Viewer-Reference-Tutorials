@@ -5,8 +5,8 @@
 "title": "Renderelés egyéni betűtípusokkal"
 "url": "/hu/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Renderelés egyéni betűtípusokkal
 
 ## Bevezetés

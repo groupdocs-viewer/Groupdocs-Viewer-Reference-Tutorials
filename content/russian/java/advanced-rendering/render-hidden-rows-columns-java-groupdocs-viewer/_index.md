@@ -4,8 +4,8 @@
 "title": "Отображение скрытых строк и столбцов в электронных таблицах Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Отображение скрытых строк и столбцов в электронных таблицах Java с помощью GroupDocs.Viewer
 
 ## Введение

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["html-rendering", "font-optimization", "performance", "groupdocs-viewer"]
+type: docs
 ---
-
 # How to Exclude Fonts from HTML Rendering in .NET
 
 ## Introduction

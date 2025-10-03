@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用して Excel スプレッドシートのテキストオーバーフローを調整する方法"
 "url": "/ja/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用して Excel スプレッドシートのテキストオーバーフローを調整する方法
 ## 導入
 ドキュメントを HTML に変換するときにスプレッドシートのセルに溢れたテキストを処理することは、特に大規模な Excel ファイルの場合にはよくある課題です。 **GroupDocs.Viewer（Java用）** このプロセスが簡素化され、オーバーフローしたテキストを効率的に管理および非表示にすることができます。

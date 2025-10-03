@@ -4,8 +4,8 @@
 "title": "Extrakce hlavního textu v .NET s GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí extrakce textu v .NET s GroupDocs.Viewer: Komplexní tutoriál
 
 ## Zavedení

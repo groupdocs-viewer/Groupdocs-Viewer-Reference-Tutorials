@@ -5,8 +5,8 @@
 "title": "APNG-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # APNG-afbeeldingen renderen
 
 ## Invoering

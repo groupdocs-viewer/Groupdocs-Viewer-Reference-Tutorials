@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanılarak Belge Ekleri Nasıl Alınır ve Yazdırılır | Gelişmiş İşleme Kılavuzu"
 "url": "/tr/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET Kullanılarak Belge Ekleri Nasıl Alınır ve Yazdırılır | Gelişmiş İşleme Kılavuzu
 
 ## giriiş

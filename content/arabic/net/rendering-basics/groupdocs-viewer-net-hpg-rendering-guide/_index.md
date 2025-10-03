@@ -4,8 +4,8 @@
 "title": "تحويل مستندات HPG بكفاءة إلى HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer .NET"
 "url": "/ar/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض مستندات HPG باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

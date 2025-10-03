@@ -5,8 +5,8 @@
 "title": "Ställ in licens från fil"
 "url": "/sv/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Ställ in licens från fil
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "دروس تعليمية شاملة وأمثلة حول GroupDocs.Viewer لـ .NET"
 "url": "/ar/net/"
 "weight": 10
+type: docs
 ---
-
 # دروس تعليمية شاملة وأمثلة حول GroupDocs.Viewer لـ .NET
 
 ## مقدمة

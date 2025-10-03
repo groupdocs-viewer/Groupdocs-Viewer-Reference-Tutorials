@@ -5,8 +5,8 @@
 "title": "CHMファイルのレンダリング"
 "url": "/ja/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # CHMファイルのレンダリング
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "Kijelölt oldalak renderelése a GroupDocs.Viewer .NET használatával – Átfogó útmutató fejlesztőknek"
 "url": "/hu/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan jelenítsünk meg bizonyos oldalakat a GroupDocs.Viewer .NET használatával?
 
 ## Bevezetés

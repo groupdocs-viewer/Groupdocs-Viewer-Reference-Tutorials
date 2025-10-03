@@ -4,8 +4,8 @@
 "title": "Περιορισμός της απόδοσης στοιχείων του Outlook σε Java χρησιμοποιώντας το GroupDocs.Viewer&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Περιορισμός της απόδοσης στοιχείων του Outlook σε Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Επισκόπηση

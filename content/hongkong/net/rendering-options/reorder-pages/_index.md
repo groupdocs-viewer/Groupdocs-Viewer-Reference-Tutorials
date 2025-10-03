@@ -5,8 +5,8 @@
 "title": "重新排序文檔中的頁面"
 "url": "/zh-hant/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # 重新排序文檔中的頁面
 
 ## 介紹

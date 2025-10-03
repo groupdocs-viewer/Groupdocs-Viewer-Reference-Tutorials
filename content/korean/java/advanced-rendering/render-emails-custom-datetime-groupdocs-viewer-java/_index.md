@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 DateTime으로 이메일 렌더링"
 "url": "/ko/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 DateTime으로 이메일 렌더링
 
 ## 소개

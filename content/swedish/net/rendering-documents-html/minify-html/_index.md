@@ -5,8 +5,8 @@
 "title": "Minifiera renderat HTML-dokument"
 "url": "/sv/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Minifiera renderat HTML-dokument
 
 ## Introduktion

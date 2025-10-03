@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["text-files", "groupdocs-viewer", "csharp", "document-conversion"]
+type: docs
 ---
-
 # How to Render Text Files (.txt) in .NET Applications
 
 ## Why You Need Text File Rendering in Your .NET App

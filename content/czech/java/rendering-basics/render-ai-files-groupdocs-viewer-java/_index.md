@@ -4,8 +4,8 @@
 "title": "Vykreslování souborů AI pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování souborů AI pomocí GroupDocs.Viewer pro Javu: Komplexní průvodce
 
 ## Zavedení

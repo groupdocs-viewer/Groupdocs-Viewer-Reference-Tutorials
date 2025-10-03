@@ -4,8 +4,8 @@
 "title": "Απόδοση Master HTML με Προσαρμοσμένα Περιθώρια σε .NET Χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Εξοικείωση με την απόδοση HTML με περιθώρια που ορίζονται από τον χρήστη σε .NET χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

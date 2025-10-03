@@ -5,8 +5,8 @@
 "title": "Điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD"
 "url": "/vi/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Điều chỉnh kích thước hình ảnh đầu ra cho bản vẽ CAD
 
 ## Giới thiệu

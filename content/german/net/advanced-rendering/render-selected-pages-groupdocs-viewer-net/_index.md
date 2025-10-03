@@ -4,8 +4,8 @@
 "title": "So rendern Sie ausgewählte Seiten mit GroupDocs.Viewer .NET – Ein umfassender Leitfaden für Entwickler"
 "url": "/de/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So rendern Sie bestimmte Seiten mit GroupDocs.Viewer .NET
 
 ## Einführung

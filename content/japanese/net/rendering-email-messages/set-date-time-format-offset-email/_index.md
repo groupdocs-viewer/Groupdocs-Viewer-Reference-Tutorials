@@ -5,8 +5,8 @@
 "title": "日時形式とタイムゾーンオフセットを設定する（メール）"
 "url": "/ja/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # 日時形式とタイムゾーンオフセットを設定する（メール）
 
 

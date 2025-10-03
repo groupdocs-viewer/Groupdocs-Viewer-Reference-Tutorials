@@ -4,8 +4,8 @@
 "title": "Naplózás konfigurálása a GroupDocs.Viewerben Java konzolhoz és fájlnaplózási útmutatóhoz"
 "url": "/hu/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Naplózás konfigurálása a GroupDocs.Viewerben Java-hoz
 
 ## Bevezetés

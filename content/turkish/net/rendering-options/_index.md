@@ -5,8 +5,8 @@
 "title": "İşleme Seçenekleri"
 "url": "/tr/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # İşleme Seçenekleri
 
 

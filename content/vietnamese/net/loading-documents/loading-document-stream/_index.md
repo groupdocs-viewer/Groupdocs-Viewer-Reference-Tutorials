@@ -5,8 +5,8 @@
 "title": "Tải tài liệu từ Stream"
 "url": "/vi/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Tải tài liệu từ Stream
 
 ## Giới thiệu

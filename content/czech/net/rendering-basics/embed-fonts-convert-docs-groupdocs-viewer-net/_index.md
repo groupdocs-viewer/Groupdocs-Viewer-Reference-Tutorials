@@ -4,8 +4,8 @@
 "title": "Ovládejte GroupDocs.Viewer .NET a efektivně vkládejte písma a převádějte dokumenty do HTML"
 "url": "/cs/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí vykreslování dokumentů pomocí GroupDocs.Viewer .NET: Vkládání písem a převod do HTML
 
 ## Zavedení

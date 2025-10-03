@@ -4,8 +4,8 @@
 "title": "Ορισμός χρονικού ορίου φόρτωσης πόρων στο GroupDocs.Viewer για Java&#58; Βελτίωση απόδοσης εγγράφων"
 "url": "/el/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Ορισμός χρονικού ορίου φόρτωσης πόρων στο GroupDocs.Viewer για Java: Βελτίωση της αποτελεσματικότητας της απόδοσης εγγράφων
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java - Αποτελεσματική φόρτωση και απόδοση εγγράφων από URL"
 "url": "/el/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer Java: Φόρτωση και απόδοση εγγράφων από URL με αποτελεσματικότητα
 
 ## Εισαγωγή

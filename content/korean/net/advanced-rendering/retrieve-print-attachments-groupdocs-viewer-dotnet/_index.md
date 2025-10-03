@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 문서 첨부 파일을 검색하고 인쇄하는 방법 | 고급 렌더링 가이드"
 "url": "/ko/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 문서 첨부 파일을 검색하고 인쇄하는 방법 | 고급 렌더링 가이드
 
 ## 소개

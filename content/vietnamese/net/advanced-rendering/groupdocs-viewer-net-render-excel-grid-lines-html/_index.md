@@ -4,8 +4,8 @@
 "title": "Cách hiển thị đường lưới trong bảng tính Excel bằng GroupDocs.Viewer .NET cho đầu ra HTML"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Cách hiển thị đường lưới trong bảng tính Excel bằng GroupDocs.Viewer .NET cho đầu ra HTML
 
 ## Giới thiệu

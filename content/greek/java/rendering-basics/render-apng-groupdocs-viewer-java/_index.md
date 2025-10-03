@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε κινούμενα PNG σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε κινούμενα PNG με το GroupDocs.Viewer σε Java
 
 Ανακαλύψτε τη διαδικασία μετατροπής κινούμενων αρχείων PNG (APNG) σε διάφορες μορφές όπως HTML, JPG, PNG και PDF χρησιμοποιώντας την ισχυρή βιβλιοθήκη GroupDocs.Viewer για Java.

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 调整图像大小——面向开发人员的分步指南"
 "url": "/zh/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 调整图像大小：开发人员分步指南
 
 ## 介绍

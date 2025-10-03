@@ -4,8 +4,8 @@
 "title": "Så här hämtar du Outlook-datainformation med GroupDocs.Viewer för .NET"
 "url": "/sv/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar du Outlook-datainformation med GroupDocs.Viewer för .NET
 
 ## Introduktion

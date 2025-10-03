@@ -5,8 +5,8 @@
 "title": "取得 CAD 圖紙的視圖信息"
 "url": "/zh-hant/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # 取得 CAD 圖紙的視圖信息
 
 ## 介紹

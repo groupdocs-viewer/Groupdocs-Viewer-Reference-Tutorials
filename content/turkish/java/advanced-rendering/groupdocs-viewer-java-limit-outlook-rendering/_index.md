@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58;ı Kullanarak Java'da Outlook Öğesi Oluşturmayı Sınırlandırma Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer kullanarak Java'da Outlook Öğesi Oluşturmayı Sınırlandırma
 
 ## Genel bakış

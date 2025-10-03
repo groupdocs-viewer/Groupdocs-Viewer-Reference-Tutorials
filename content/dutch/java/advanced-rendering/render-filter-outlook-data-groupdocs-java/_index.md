@@ -4,8 +4,8 @@
 "title": "Beheers Outlook-gegevensrendering en -filtering met GroupDocs.Viewer voor Java"
 "url": "/nl/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Beheers Outlook-gegevensrendering en -filtering met GroupDocs.Viewer voor Java
 
 ## Invoering

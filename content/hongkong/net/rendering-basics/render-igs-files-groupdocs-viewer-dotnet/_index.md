@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 .NET 中渲染 IGS 檔案—完整指南"
 "url": "/zh-hant/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 在 .NET 中渲染 IGS 檔案：完整指南
 
 ## 介紹

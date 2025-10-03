@@ -4,8 +4,8 @@
 "title": "Rendera dokumentbilagor till HTML med GroupDocs.Viewer Java - En steg-för-steg-guide"
 "url": "/sv/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendera dokumentbilagor till HTML med GroupDocs.Viewer Java
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "WMZ- en WMF-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # WMZ- en WMF-afbeeldingen renderen
 
 ## Invoering

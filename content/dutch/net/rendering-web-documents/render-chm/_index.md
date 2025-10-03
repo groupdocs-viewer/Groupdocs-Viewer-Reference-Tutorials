@@ -5,8 +5,8 @@
 "title": "CHM-bestanden renderen"
 "url": "/nl/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # CHM-bestanden renderen
 
 ## Invoering

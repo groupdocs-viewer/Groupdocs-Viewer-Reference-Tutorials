@@ -5,8 +5,8 @@
 "title": "Archiefbestanden renderen"
 "url": "/nl/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Archiefbestanden renderen
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Java에서 GroupDocs.Viewer에 대한 계량형 라이선스 구현&#58; 개발자 가이드"
 "url": "/ko/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer에 대한 계량형 라이선스 구현: 개발자 가이드
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Outlook-gegevens ophalen met GroupDocs.Viewer voor .NET"
 "url": "/nl/net/metadata-properties/retrieve-outlook-info-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Outlook-gegevens ophalen met GroupDocs.Viewer voor .NET
 
 ## Invoering

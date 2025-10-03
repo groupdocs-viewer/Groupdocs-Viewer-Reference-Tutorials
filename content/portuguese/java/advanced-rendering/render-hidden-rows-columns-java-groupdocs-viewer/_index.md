@@ -4,8 +4,8 @@
 "title": "Renderizar linhas e colunas ocultas em planilhas Java usando GroupDocs.Viewer"
 "url": "/pt/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar linhas e colunas ocultas em planilhas Java usando GroupDocs.Viewer
 
 ## Introdução

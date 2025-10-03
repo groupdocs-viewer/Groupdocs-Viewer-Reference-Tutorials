@@ -4,8 +4,8 @@
 "title": "Renderování dokumentů MS Project v .NET pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí vykreslování dokumentů MS Project v .NET pomocí GroupDocs.Viewer
 ## Zavedení
 V dnešním rychle se měnícím obchodním prostředí je efektivní správa časových harmonogramů a zdrojů projektů klíčová. Zainteresované strany často potřebují zobrazit konkrétní části projektu bez zbytečného ...

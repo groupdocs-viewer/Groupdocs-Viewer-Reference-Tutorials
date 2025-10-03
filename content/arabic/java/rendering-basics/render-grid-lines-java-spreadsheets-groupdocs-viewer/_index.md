@@ -4,8 +4,8 @@
 "title": "كيفية عرض خطوط الشبكة في جداول بيانات Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض خطوط الشبكة في جداول بيانات Java باستخدام GroupDocs.Viewer
 
 ## مقدمة

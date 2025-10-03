@@ -4,8 +4,8 @@
 "title": "Så här delar du upp CAD-ritningar i kakel med GroupDocs.Viewer .NET för effektiv rendering"
 "url": "/sv/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hur man delar upp CAD-ritningar i kakel med GroupDocs.Viewer .NET
 
 ## Introduktion

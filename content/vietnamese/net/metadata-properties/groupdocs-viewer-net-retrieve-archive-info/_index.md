@@ -4,8 +4,8 @@
 "title": "Cách lấy thông tin lưu trữ bằng GroupDocs.Viewer cho .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy thông tin lưu trữ bằng GroupDocs.Viewer cho .NET: Hướng dẫn toàn diện
 
 ## Giới thiệu

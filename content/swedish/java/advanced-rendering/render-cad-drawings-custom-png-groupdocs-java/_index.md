@@ -4,8 +4,8 @@
 "title": "Hur man renderar CAD-ritningar som PNG med anpassad storlek och bakgrundsfärg med GroupDocs.Viewer för Java"
 "url": "/sv/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar CAD-ritningar som PNG med anpassad storlek och bakgrundsfärg med GroupDocs.Viewer för Java
 
 ## Introduktion

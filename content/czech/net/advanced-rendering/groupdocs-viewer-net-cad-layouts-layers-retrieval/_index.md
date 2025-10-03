@@ -4,8 +4,8 @@
 "title": "Jak načíst rozvržení a vrstvy CAD pomocí GroupDocs.Viewer .NET pro efektivní správu návrhů"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst rozvržení a vrstvy CAD pomocí GroupDocs.Viewer .NET
 ## Zavedení
 V oblasti počítačově podporovaného navrhování (CAD) je efektivní správa složitých výkresů klíčová, zejména při práci s více rozvrženími a vrstvami v jednom souboru. Pro architekty, inženýry a designéry zvyšuje rychlý přístup ke konkrétním informacím produktivitu. **GroupDocs.Viewer .NET** nabízí výkonné řešení, které umožňuje vývojářům programově extrahovat rozvržení a vrstvy z CAD výkresů.

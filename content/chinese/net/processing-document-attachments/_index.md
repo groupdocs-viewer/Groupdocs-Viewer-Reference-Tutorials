@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/zh/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # 处理文档附件
 
 ## 介绍

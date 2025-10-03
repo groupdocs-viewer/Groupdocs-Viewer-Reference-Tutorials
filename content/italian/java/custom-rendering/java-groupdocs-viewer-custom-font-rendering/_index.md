@@ -4,8 +4,8 @@
 "title": "Come implementare il rendering di font personalizzati in Java con GroupDocs.Viewer&#58; una guida passo passo"
 "url": "/it/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Come implementare il rendering di font personalizzati in Java con GroupDocs.Viewer: una guida passo passo
 
 ## Introduzione

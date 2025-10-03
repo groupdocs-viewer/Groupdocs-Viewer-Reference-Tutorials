@@ -4,8 +4,8 @@
 "title": "Hoe u DOCX-bestanden als PDF's kunt beveiligen met GroupDocs.Viewer .NET&#58; een stapsgewijze handleiding"
 "url": "/nl/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # DOCX-bestanden beveiligen als PDF's met GroupDocs.Viewer .NET: een stapsgewijze handleiding
 
 In het digitale tijdperk van vandaag is het beschermen van gevoelige documenten cruciaal. Of u nu een bedrijf bent dat intellectueel eigendom beschermt of een particulier die persoonlijke informatie beveiligt, het converteren van Word-bestanden naar wachtwoordbeveiligde PDF's kan een enorme impact hebben. Deze tutorial begeleidt u bij het gebruik van GroupDocs.Viewer voor .NET om DOCX-documenten om te zetten in beveiligde PDF's met specifieke beperkingen, zoals het weigeren van afdrukken.

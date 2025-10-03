@@ -4,8 +4,8 @@
 "title": "Java&#58; GroupDocs.Viewer Kullanarak Gizli Sayfaları Nasıl Oluşturursunuz"
 "url": "/tr/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: GroupDocs.Viewer Kullanılarak Gizli Sayfalar Nasıl Oluşturulur
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用した .NET レスポンシブ HTML レンダリングの実装 - 開発者向け総合ガイド"
 "url": "/ja/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用した .NET レスポンシブ HTML レンダリングの実装: 開発者ガイド
 
 ## 導入

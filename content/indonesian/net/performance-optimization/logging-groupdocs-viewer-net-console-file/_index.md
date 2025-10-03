@@ -4,8 +4,8 @@
 "title": "Menerapkan Pencatatan Efektif di GroupDocs.Viewer .NET untuk Keluaran Konsol dan File"
 "url": "/id/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Pencatatan Efektif di GroupDocs.Viewer .NET
 
 ## Perkenalan

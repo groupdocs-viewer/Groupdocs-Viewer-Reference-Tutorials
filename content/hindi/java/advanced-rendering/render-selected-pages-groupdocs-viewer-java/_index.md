@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके किसी दस्तावेज़ के चयनित पृष्ठों को कैसे प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer के साथ विशिष्ट पृष्ठों को कैसे प्रस्तुत करें
 
 ## परिचय

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Performance Optimization"]
 tags: ["caching", "performance", "document-processing", "dotnet"]
+type: docs
 ---
-
 # Supercharge Your .NET Apps: GroupDocs.Viewer Caching Made Simple
 
 ## Why Your Document Processing Feels Sluggish (And How to Fix It)

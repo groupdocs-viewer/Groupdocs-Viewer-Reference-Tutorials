@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 .NET에서 사용자 정의 여백을 사용한 HTML 렌더링 마스터하기"
 "url": "/ko/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 .NET에서 사용자 정의 여백을 사용한 HTML 렌더링 마스터하기
 
 ## 소개

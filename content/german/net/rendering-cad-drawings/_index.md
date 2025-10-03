@@ -5,8 +5,8 @@
 "title": "Rendern von CAD-Zeichnungen"
 "url": "/de/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Rendern von CAD-Zeichnungen
 
 

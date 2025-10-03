@@ -5,8 +5,8 @@
 "title": "Passwortgeschützte Dokumente laden"
 "url": "/de/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Passwortgeschützte Dokumente laden
 
 ## Einführung

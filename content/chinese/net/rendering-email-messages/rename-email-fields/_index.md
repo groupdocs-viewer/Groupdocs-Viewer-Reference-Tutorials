@@ -5,8 +5,8 @@
 "title": "在渲染过程中重命名电子邮件字段"
 "url": "/zh/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # 在渲染过程中重命名电子邮件字段
 
 ## 介绍

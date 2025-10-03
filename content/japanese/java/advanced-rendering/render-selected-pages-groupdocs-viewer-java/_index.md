@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用してドキュメントの選択したページをレンダリングする方法"
 "url": "/ja/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java で特定のページをレンダリングする方法
 
 ## 導入

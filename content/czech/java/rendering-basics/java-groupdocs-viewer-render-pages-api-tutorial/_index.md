@@ -4,8 +4,8 @@
 "title": "Průvodce Javou&#58; Vykreslování specifických stránek pomocí rozhraní GroupDocs.Viewer API pro náhled a správu dokumentů"
 "url": "/cs/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Implementace Javy: Vykreslování specifických stránek pomocí GroupDocs.Viewer API
 
 ## Zavedení

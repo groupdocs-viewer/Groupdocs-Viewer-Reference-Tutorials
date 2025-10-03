@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/th/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # การประมวลผลเอกสารแนบ
 
 ## การแนะนำ

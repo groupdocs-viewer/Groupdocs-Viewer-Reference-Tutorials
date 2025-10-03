@@ -6,8 +6,8 @@ description: "Master document viewing with our in-depth GroupDocs.Viewer tutoria
 weight: 11
 url: /
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Viewer Tutorials
 
 Welcome to the GroupDocs.Viewer tutorials hub. Here you will find a comprehensive collection of tutorials and guides to help you master our powerful document viewer APIs for .NET and Java. Whether you're building a web application, a desktop app, or a mobile solution, GroupDocs.Viewer enables you to seamlessly render and display a wide variety of document formats, including PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, images, and more.

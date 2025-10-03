@@ -5,8 +5,8 @@
 "title": "Rendera dokument till JPG/PNG"
 "url": "/sv/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Rendera dokument till JPG/PNG
 
 ## Introduktion

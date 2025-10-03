@@ -4,8 +4,8 @@
 "title": "Hoe u bijgehouden wijzigingen in Word-documenten kunt weergeven met GroupDocs.Viewer voor Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Weergave van bijgehouden wijzigingen in Word-documenten met GroupDocs.Viewer voor Java
 
 ## Invoering

@@ -5,8 +5,8 @@
 "title": "渲染 CHM 文件"
 "url": "/zh-hant/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # 渲染 CHM 文件
 
 ## 介紹

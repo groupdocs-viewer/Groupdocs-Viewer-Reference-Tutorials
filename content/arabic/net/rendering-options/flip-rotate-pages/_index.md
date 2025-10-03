@@ -5,8 +5,8 @@
 "title": "قلب وتدوير الصفحات"
 "url": "/ar/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # قلب وتدوير الصفحات
 
 ## مقدمة

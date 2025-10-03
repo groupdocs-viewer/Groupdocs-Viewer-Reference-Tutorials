@@ -4,8 +4,8 @@
 "title": "Lewati Rendering Baris Kosong di Java Menggunakan GroupDocs.Viewer&#58; Panduan Kinerja"
 "url": "/id/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Lewati Rendering Baris Kosong di Java Menggunakan GroupDocs.Viewer
 ## Perkenalan
 Merender baris kosong yang tidak perlu saat mengonversi spreadsheet ke HTML dapat mengacaukan output Anda dan menghabiskan sumber daya tambahan. Ini merupakan masalah penting bagi pengembang yang berorientasi pada kinerja. Dengan pustaka "GroupDocs.Viewer Java", Anda dapat secara efisien melewati proses rendering baris kosong ini, sehingga meningkatkan kecepatan dan kejelasan dalam aplikasi Anda.

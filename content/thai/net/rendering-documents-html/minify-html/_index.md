@@ -5,8 +5,8 @@
 "title": "ย่อขนาดเอกสาร HTML ที่แสดงผล"
 "url": "/th/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # ย่อขนาดเอกสาร HTML ที่แสดงผล
 
 ## การแนะนำ

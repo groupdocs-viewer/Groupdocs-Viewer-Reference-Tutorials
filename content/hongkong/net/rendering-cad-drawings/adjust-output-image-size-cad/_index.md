@@ -5,8 +5,8 @@
 "title": "調整 CAD 繪圖的輸出影像大小"
 "url": "/zh-hant/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # 調整 CAD 繪圖的輸出影像大小
 
 ## 介紹

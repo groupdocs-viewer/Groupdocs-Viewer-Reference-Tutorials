@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία IGS σε .NET χρησιμοποιώντας το GroupDocs.Viewer® Ένας πλήρης οδηγός"
 "url": "/el/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία IGS σε .NET χρησιμοποιώντας το GroupDocs.Viewer: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

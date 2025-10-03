@@ -5,8 +5,8 @@
 "title": "Renderingsalternativ"
 "url": "/sv/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Renderingsalternativ
 
 

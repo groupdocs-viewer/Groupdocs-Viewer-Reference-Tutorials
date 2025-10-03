@@ -4,8 +4,8 @@
 "title": "Implementera dokumentanalys med GroupDocs.Viewer för Java - extrahera sidmetadata och textrader"
 "url": "/sv/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Implementera dokumentanalys med GroupDocs.Viewer för Java: Extrahera sidmetadata och textrader
 
 ## Introduktion

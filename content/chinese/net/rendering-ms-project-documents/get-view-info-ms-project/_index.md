@@ -5,8 +5,8 @@
 "title": "获取 Microsoft Project 文档的视图信息"
 "url": "/zh/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # 获取 Microsoft Project 文档的视图信息
 
 ## 介绍

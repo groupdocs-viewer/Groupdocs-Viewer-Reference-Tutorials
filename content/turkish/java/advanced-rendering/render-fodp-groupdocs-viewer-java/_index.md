@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer ile FODP Belgeleri Nasıl Oluşturulur? Eksiksiz Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/render-fodp-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile FODP Belgeleri Nasıl Oluşturulur: Eksiksiz Bir Kılavuz
 
 ## giriiş

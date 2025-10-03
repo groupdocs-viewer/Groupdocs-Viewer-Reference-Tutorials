@@ -5,8 +5,8 @@
 "title": "Ajouter un filigrane dans le document"
 "url": "/fr/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Ajouter un filigrane dans le document
 
 ## Introduction

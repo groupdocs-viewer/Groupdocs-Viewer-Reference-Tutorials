@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["WMZ", "WMF", "metafile", "image-rendering", "groupdocs-viewer"]
+type: docs
 ---
-
 # How to Render WMZ and WMF Images in .NET Applications
 
 ## Introduction

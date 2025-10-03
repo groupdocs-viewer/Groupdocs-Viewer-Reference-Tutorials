@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanılarak Seçili Sayfaların Nasıl Oluşturulacağı Geliştiriciler İçin Kapsamlı Bir Kılavuz"
 "url": "/tr/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanılarak Belirli Sayfaların Nasıl Oluşturulacağı
 
 ## giriiş

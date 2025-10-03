@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer ile Excel E-Tablolarında Metin Taşması Nasıl Ayarlanır"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Excel E-Tablolarında Metin Taşması Nasıl Ayarlanır
 ## giriiş
 Belgeleri HTML'e dönüştürürken elektronik tablo hücrelerinde taşan metinle uğraşmak, özellikle kapsamlı Excel dosyaları için yaygın bir sorundur. **Java için GroupDocs.Viewer** Bu süreci basitleştirerek taşan metni etkin bir şekilde yönetmenize ve gizlemenize olanak tanır.

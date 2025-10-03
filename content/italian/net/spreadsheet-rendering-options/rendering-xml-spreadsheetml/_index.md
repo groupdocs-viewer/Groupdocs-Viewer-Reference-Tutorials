@@ -5,8 +5,8 @@
 "title": "Rendering XML SpreadSheetML"
 "url": "/it/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # Rendering XML SpreadSheetML
 
 ## Introduzione

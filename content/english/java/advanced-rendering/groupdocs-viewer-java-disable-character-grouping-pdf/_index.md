@@ -8,10 +8,8 @@ keywords:
 - disable character grouping PDFs
 - GroupDocs Viewer Java configuration
 - precise text representation in PDFs
-
+type: docs
 ---
-
-
 # Disable Character Grouping in PDFs with GroupDocs.Viewer for Java
 
 ## Introduction

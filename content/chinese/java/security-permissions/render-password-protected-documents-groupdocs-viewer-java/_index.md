@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中呈现受密码保护的文档"
 "url": "/zh/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 Java 中呈现受密码保护的文档
 
 ## 介绍

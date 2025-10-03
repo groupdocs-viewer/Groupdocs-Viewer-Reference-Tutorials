@@ -5,8 +5,8 @@
 "title": "FODG और ODG छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # FODG और ODG छवियाँ प्रस्तुत करें
 
 ## परिचय

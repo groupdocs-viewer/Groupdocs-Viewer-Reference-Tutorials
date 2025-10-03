@@ -8,10 +8,8 @@ keywords:
 - render pages Java GroupDocs Viewer API
 - GroupDocs Viewer setup Java
 - Java document preview generation
-
+type: docs
 ---
-
-
 # Implementing Java: Render Specific Pages with GroupDocs.Viewer API
 
 ## Introduction

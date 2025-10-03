@@ -5,8 +5,8 @@
 "title": "Tải các tài liệu được bảo vệ bằng mật khẩu"
 "url": "/vi/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Tải các tài liệu được bảo vệ bằng mật khẩu
 
 ## Giới thiệu

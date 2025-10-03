@@ -4,8 +4,8 @@
 "title": "如何使用 Java 中的 GroupDocs.Viewer 将 PLT 文件渲染为 HTML——分步指南"
 "url": "/zh/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 Java 中的 GroupDocs.Viewer 将 PLT 文件渲染为 HTML：开发人员指南
 
 ## 介绍

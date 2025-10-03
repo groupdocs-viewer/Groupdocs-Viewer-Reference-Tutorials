@@ -5,8 +5,8 @@
 "title": "WMZ および WMF イメージのレンダリング"
 "url": "/ja/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # WMZ および WMF イメージのレンダリング
 
 ## 導入

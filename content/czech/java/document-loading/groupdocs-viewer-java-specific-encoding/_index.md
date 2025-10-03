@@ -4,8 +4,8 @@
 "title": "Jak načíst dokumenty se specifickým kódováním v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst dokumenty se specifickým kódováním v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

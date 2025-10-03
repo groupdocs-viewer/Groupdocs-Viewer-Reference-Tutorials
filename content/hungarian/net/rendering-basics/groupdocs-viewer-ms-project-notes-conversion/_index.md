@@ -4,8 +4,8 @@
 "title": "MS Project fájlok hatékony renderelése jegyzetekkel a GroupDocs.Viewer for .NET használatával"
 "url": "/hu/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # MS Project fájlok hatékony renderelése jegyzetekkel a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "การเริ่มต้น"
 "url": "/th/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # การเริ่มต้น
 
 

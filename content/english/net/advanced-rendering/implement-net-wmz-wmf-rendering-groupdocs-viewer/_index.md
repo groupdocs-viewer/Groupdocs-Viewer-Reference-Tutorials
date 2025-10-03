@@ -8,10 +8,8 @@ keywords:
 - Implement WMZ/WMF Rendering with GroupDocs.Viewer
 - rendering WMZ to HTML using .NET
 - convert WMZ files to JPG, PNG, or PDF
-
+type: docs
 ---
-
-
 # Implement .NET WMZ/WMF Rendering with GroupDocs.Viewer for Web and Cross-Platform Compatibility
 
 ## Introduction

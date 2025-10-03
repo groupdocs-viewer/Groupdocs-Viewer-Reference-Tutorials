@@ -4,8 +4,8 @@
 "title": "Bemästra SVGZ-rendering i .NET med GroupDocs.Viewer &#58; En komplett guide för utvecklare"
 "url": "/sv/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra SVGZ-rendering i .NET med GroupDocs.Viewer: En komplett guide för utvecklare
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "Render specifiek projecttijdsinterval (MS Project)"
 "url": "/nl/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Render specifiek projecttijdsinterval (MS Project)
 
 ## Invoering

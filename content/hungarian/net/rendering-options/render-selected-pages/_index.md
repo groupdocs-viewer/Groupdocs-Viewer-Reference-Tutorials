@@ -5,8 +5,8 @@
 "title": "Kijelölt oldalak renderelése"
 "url": "/hu/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Kijelölt oldalak renderelése
 
 ## Bevezetés

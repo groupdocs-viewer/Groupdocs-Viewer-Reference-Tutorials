@@ -5,8 +5,8 @@
 "title": "特定のプロジェクト時間間隔のレンダリング（MS Project）"
 "url": "/ja/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # 特定のプロジェクト時間間隔のレンダリング（MS Project）
 
 ## 導入

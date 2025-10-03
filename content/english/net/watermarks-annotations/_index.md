@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["watermarks", "annotations", "document-security", "pdf-watermark", "csharp-tutorials"]
+type: docs
 ---
-
 # How to Add Watermarks to Documents in .NET - Complete Guide
 
 Ever needed to protect your documents with watermarks or add annotations for better collaboration? You're in the right place. Whether you're building a document management system, need to brand PDF files, or want to add protective markings to sensitive documents, this guide shows you exactly how to do it with GroupDocs.Viewer for .NET.

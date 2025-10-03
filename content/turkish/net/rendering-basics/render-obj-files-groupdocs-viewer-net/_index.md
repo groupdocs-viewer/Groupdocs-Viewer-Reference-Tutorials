@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58;i Kullanarak OBJ Dosyalarını Oluşturun HTML, JPG, PNG ve PDF Dönüştürme İçin Kapsamlı Bir Kılavuz"
 "url": "/tr/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak OBJ Dosyalarını Oluşturma
 
 ## Rendering Temellerine Giriş

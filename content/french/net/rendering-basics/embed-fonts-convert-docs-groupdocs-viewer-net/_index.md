@@ -4,8 +4,8 @@
 "title": "Maîtrisez GroupDocs.Viewer .NET &#58; intégrez les polices et convertissez efficacement vos documents au format HTML"
 "url": "/fr/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Maîtriser le rendu de documents avec GroupDocs.Viewer .NET : intégration de polices et conversion en HTML
 
 ## Introduction

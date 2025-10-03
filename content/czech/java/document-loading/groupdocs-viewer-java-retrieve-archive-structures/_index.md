@@ -4,8 +4,8 @@
 "title": "Jak načíst archivní struktury pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
 "url": "/cs/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst archivní struktury pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

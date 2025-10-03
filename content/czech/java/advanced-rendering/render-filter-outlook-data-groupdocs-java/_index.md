@@ -4,8 +4,8 @@
 "title": "Zvládněte vykreslování a filtrování dat Outlooku pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Zvládněte vykreslování a filtrování dat Outlooku pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

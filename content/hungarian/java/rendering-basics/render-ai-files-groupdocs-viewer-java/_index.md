@@ -4,8 +4,8 @@
 "title": "AI-fájlok renderelése GroupDocs.Viewer használatával Java-hoz – Átfogó útmutató"
 "url": "/hu/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # AI-fájlok renderelése GroupDocs.Viewer használatával Java-ban: Átfogó útmutató
 
 ## Bevezetés

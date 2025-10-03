@@ -4,8 +4,8 @@
 "title": "Afficher des feuilles de calcul Excel par sauts de page à l'aide de GroupDocs.Viewer pour .NET"
 "url": "/fr/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Afficher des feuilles de calcul Excel par sauts de page à l'aide de GroupDocs.Viewer pour .NET
 
 ## Introduction

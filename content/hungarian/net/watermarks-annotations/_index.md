@@ -3,8 +3,8 @@
 "title": "Dokumentum vízjel és jegyzet oktatóanyagok a GroupDocs.Viewer .NET-hez"
 "url": "/hu/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Dokumentum vízjel és jegyzet oktatóanyagok a GroupDocs.Viewer .NET-hez
 
 Sajátítsa el a dokumentumokhoz való annotáció és vízjelezés technikáit GroupDocs.Viewer .NET oktatóanyagaink segítségével. Ezek a lépésről lépésre bemutatják, hogyan adhat hozzá szöveges és képes vízjeleket, hogyan valósíthat meg annotációkat, hogyan szabályozhatja a vízjelek elhelyezkedését és átlátszóságát, valamint hogyan jeleníthet meg dokumentumokat beágyazott annotációkkal. Minden oktatóanyag gyakorlati .NET kódpéldákat tartalmaz vizuális metaadatok és védőjelek hozzáadásához a dokumentumokhoz, a dokumentumok nyomon követésének és arculatának javításához.

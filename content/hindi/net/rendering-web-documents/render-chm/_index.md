@@ -5,8 +5,8 @@
 "title": "CHM फ़ाइलें रेंडर करें"
 "url": "/hi/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # CHM फ़ाइलें रेंडर करें
 
 ## परिचय

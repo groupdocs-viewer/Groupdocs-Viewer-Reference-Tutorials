@@ -8,10 +8,8 @@ keywords:
 - Set JPG Size Limits
 - GroupDocs.Viewer .NET
 - Image Width Constraints
-
+type: docs
 ---
-
-
 # How to Set Maximum JPG Image Size Limits Using GroupDocs.Viewer .NET
 
 ## Introduction

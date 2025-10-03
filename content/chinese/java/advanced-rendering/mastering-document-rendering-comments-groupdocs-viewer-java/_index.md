@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 Java 中呈现带有注释的文档"
 "url": "/zh/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 在 Java 中呈现带有注释的文档
 ## 介绍
 还在为将文档转换为 HTML 并保留注释而苦恼吗？本指南将指导您使用 Java 中强大的 GroupDocs.Viewer 库来渲染包含注释的文档。无论您是想无缝管理文档，还是想提升 Java 技能，本教程都非常适合您。

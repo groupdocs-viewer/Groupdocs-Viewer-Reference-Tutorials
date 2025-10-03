@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["GroupDocs.Viewer"]
 tags: ["advanced-loading", "document-rendering", "dotnet-api", "file-handling"]
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Advanced Loading Options - Complete Guide
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์ไฟล์ Outlook OST โดยใช้ GroupDocs.Viewer สำหรับ .NET | คำแนะนำทีละขั้นตอน"
 "url": "/th/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์ไฟล์ Outlook OST โดยใช้ GroupDocs.Viewer สำหรับ .NET: คู่มือทีละขั้นตอนโดยละเอียด
 
 ## การแนะนำ

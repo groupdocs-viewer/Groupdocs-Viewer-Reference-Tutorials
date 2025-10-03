@@ -4,8 +4,8 @@
 "title": "DOCX konvertálása HTML-lé a GroupDocs.Viewer for Java használatával – lépésről lépésre útmutató"
 "url": "/hu/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # DOCX konvertálása HTML-be a GroupDocs.Viewer for Java használatával: lépésről lépésre útmutató
 
 ## Bevezetés

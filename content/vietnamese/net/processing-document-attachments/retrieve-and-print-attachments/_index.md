@@ -5,8 +5,8 @@
 "title": "Lấy và in tài liệu đính kèm"
 "url": "/vi/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Lấy và in tài liệu đính kèm
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "Pobierz nazwy arkuszy roboczych"
 "url": "/pl/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Pobierz nazwy arkuszy roboczych
 
 ## Wstęp

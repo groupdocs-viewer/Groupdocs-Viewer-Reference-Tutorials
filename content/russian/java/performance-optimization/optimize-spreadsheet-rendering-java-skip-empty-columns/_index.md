@@ -4,8 +4,8 @@
 "title": "Оптимизируйте рендеринг электронных таблиц Java&#58; пропустите пустые столбцы с помощью GroupDocs.Viewer"
 "url": "/ru/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Как оптимизировать рендеринг электронных таблиц в Java: пропуск пустых столбцов с помощью GroupDocs.Viewer
 
 ## Введение

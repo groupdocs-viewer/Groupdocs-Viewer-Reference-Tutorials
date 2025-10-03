@@ -5,8 +5,8 @@
 "title": "Vykreslení HTML s uživatelem definovanými okraji"
 "url": "/cs/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Vykreslení HTML s uživatelem definovanými okraji
 
 ## Zavedení

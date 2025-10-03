@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "page-rendering", "dotnet", "document-processing"]
+type: docs
 ---
-
 # How to Render Selected Pages from Documents in .NET
 
 ## Introduction

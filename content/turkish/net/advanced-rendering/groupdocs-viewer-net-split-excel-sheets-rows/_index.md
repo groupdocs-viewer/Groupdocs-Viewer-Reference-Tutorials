@@ -4,8 +4,8 @@
 "title": "Verimli Veri Yönetimi için GroupDocs.Viewer .NET Kullanarak Excel Sayfalarını Satırlara Göre Sayfalara Bölme"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile Excel Sayfalarını Satırlara Göre Sayfalara Bölme
 
 ## giriiş

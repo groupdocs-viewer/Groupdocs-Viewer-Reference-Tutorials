@@ -5,8 +5,8 @@
 "title": "Merender Dokumen Pengolah Kata"
 "url": "/id/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Merender Dokumen Pengolah Kata
 
 

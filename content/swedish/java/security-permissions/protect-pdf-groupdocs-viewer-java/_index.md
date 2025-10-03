@@ -4,8 +4,8 @@
 "title": "Skydda dina PDF-filer med GroupDocs.Viewer i Javas guide till lösenordsskydd och behörigheter"
 "url": "/sv/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Säkra dina PDF-filer med GroupDocs.Viewer i Java
 
 ## Introduktion

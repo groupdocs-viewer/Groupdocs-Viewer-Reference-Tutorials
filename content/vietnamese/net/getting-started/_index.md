@@ -5,8 +5,8 @@
 "title": "Bắt đầu"
 "url": "/vi/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Bắt đầu
 
 

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 將 RAR 檔案渲染為 HTML、JPG、PNG 和 PDF"
 "url": "/zh-hant/java/rendering-basics/render-rar-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 將 RAR 檔案渲染為各種格式
 
 使用 GroupDocs.Viewer for Java 將 RAR 檔案轉換為 HTML、JPG、PNG 和 PDF 等易於存取的格式，釋放其潛力。本教學將引導您完成每個步驟，實現無縫的文件管理和簡報。

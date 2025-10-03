@@ -5,8 +5,8 @@
 "title": "Získat názvy pracovních listů"
 "url": "/cs/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Získat názvy pracovních listů
 
 ## Zavedení

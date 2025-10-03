@@ -4,8 +4,8 @@
 "title": "Daha Hızlı Web Sayfaları İçin GroupDocs.Viewer .NET ile HTML Minification Nasıl Uygulanır"
 "url": "/tr/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Daha Hızlı Web Sayfaları İçin GroupDocs.Viewer .NET ile HTML Minification Nasıl Uygulanır
 
 ## giriiş

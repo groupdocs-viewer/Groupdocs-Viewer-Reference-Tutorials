@@ -5,8 +5,8 @@
 "title": "Merender Dokumen Visio"
 "url": "/id/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Merender Dokumen Visio
 
 ## Perkenalan

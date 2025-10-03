@@ -4,8 +4,8 @@
 "title": "Πλήρης οδηγός για την απόδοση αρχείων AI χρησιμοποιώντας το GroupDocs.Viewer .NET για προγραμματιστές"
 "url": "/el/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Πλήρης οδηγός για την απόδοση αρχείων AI χρησιμοποιώντας το GroupDocs.Viewer .NET για προγραμματιστές
 
 ## Εισαγωγή

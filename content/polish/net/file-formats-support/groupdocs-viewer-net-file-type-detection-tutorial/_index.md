@@ -4,8 +4,8 @@
 "title": "Jak wykrywać typy plików za pomocą GroupDocs.Viewer dla .NET? Kompleksowy samouczek"
 "url": "/pl/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Jak wykrywać typy plików za pomocą GroupDocs.Viewer dla .NET: kompleksowy samouczek
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "渲染時疊加文字進行顯示"
 "url": "/zh-hant/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # 渲染時疊加文字進行顯示
 
 ## 介紹

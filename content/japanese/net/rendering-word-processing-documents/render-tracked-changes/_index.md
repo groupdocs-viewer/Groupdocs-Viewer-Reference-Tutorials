@@ -5,8 +5,8 @@
 "title": "追跡された変更をレンダリングする"
 "url": "/ja/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # 追跡された変更をレンダリングする
 
 ## 導入

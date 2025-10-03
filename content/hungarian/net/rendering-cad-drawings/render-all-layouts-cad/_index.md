@@ -5,8 +5,8 @@
 "title": "Az összes elrendezés renderelése CAD rajzokban"
 "url": "/hu/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Az összes elrendezés renderelése CAD rajzokban
 
 ## Bevezetés

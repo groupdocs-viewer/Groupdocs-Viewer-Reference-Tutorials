@@ -5,8 +5,8 @@
 "title": "設定資源載入超時（進階）"
 "url": "/zh-hant/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # 設定資源載入超時（進階）
 
 ## 介紹

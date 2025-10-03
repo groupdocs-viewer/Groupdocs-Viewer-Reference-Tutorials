@@ -5,8 +5,8 @@
 "title": "CAD図面のレンダリング"
 "url": "/ja/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # CAD図面のレンダリング
 
 

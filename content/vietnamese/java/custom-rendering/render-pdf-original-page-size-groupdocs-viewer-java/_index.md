@@ -4,8 +4,8 @@
 "title": "Hiển thị PDF ở kích thước gốc bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách hiển thị PDF với kích thước trang gốc của chúng bằng GroupDocs.Viewer cho Java
 
 Việc hiển thị PDF trong khi vẫn giữ nguyên kích thước trang gốc là điều cần thiết để hiển thị chính xác trên nhiều nền tảng và thiết bị khác nhau. Hướng dẫn toàn diện này sẽ hướng dẫn bạn cách triển khai tính năng này bằng GroupDocs.Viewer for Java API. Bằng cách làm theo các bước này, bạn sẽ đảm bảo PDF của mình giữ được độ trung thực trong quá trình hiển thị.

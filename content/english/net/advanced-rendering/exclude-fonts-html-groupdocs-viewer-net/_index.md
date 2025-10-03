@@ -8,10 +8,8 @@ keywords:
 - Exclude Fonts from HTML Output using GroupDocs.Viewer for .NET
 - Document-to-HTML Font Control with GroupDocs.Viewer
 - Optimize Branding in HTML Conversion
-
+type: docs
 ---
-
-
 # How to Exclude Fonts from HTML Output Using GroupDocs.Viewer for .NET
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Převod archivů do HTML pomocí GroupDocs.Viewer v Javě – Komplexní průvodce"
 "url": "/cs/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # Převod archivů do HTML pomocí GroupDocs.Viewer v Javě: Komplexní průvodce
 
 ## Zavedení

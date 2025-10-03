@@ -4,8 +4,8 @@
 "title": "CAD képek testreszabása a GroupDocs.Viewer .NET fejlett renderelési technikáival"
 "url": "/hu/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # CAD képek renderelése és testreszabása a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java でドキュメントタイプ仕様を実装する方法 - ステップバイステップガイド"
 "url": "/ja/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java でドキュメントタイプ仕様を実装する方法
 
 GroupDocs.Viewer for Java を使用して DOCX ファイルをレンダリングするためのファイル タイプを指定する手順ガイド。

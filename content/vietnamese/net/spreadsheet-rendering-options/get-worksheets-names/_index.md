@@ -5,8 +5,8 @@
 "title": "Nhận tên bảng tính"
 "url": "/vi/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Nhận tên bảng tính
 
 ## Giới thiệu

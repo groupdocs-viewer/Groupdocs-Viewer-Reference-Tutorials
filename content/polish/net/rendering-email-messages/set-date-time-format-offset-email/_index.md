@@ -5,8 +5,8 @@
 "title": "Ustaw format daty i godziny oraz przesunięcie strefy czasowej (e-mail)"
 "url": "/pl/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Ustaw format daty i godziny oraz przesunięcie strefy czasowej (e-mail)
 
 

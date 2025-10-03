@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["groupdocs-viewer", "java-tutorial", "document-rendering", "pdf-viewer"]
+type: docs
 ---
-
 # GroupDocs Viewer Java Tutorial - Complete Getting Started Guide
 
 Struggling with document rendering in your Java applications? You're not alone. Whether you need to display PDFs, Word documents, or spreadsheets in your web app, GroupDocs.Viewer for Java provides the most reliable solution for developers who want to get document viewing up and running quickly.

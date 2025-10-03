@@ -8,10 +8,8 @@ keywords:
 - metered license GroupDocs.Viewer Java
 - Java document viewing
 - GroupDocs.Viewer integration
-
+type: docs
 ---
-
-
 # Implementing a Metered License for GroupDocs.Viewer for Java: A Developer’s Guide
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Extrair e exibir nomes de planilhas em Java usando a API GroupDocs.Viewer"
 "url": "/pt/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Extrair e exibir nomes de planilhas em Java usando a API GroupDocs.Viewer
 
 ## Introdução

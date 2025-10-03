@@ -5,8 +5,8 @@
 "title": "ปรับคุณภาพรูปภาพ JPG ใน PDF ที่เรนเดอร์แล้ว"
 "url": "/th/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # ปรับคุณภาพรูปภาพ JPG ใน PDF ที่เรนเดอร์แล้ว
 
 ## การแนะนำ

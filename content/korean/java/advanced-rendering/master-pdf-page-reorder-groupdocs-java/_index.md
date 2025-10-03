@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용한 효율적인 PDF 페이지 재정렬&#58; 종합 가이드"
 "url": "/ko/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용한 효율적인 PDF 페이지 재정렬
 
 ## 소개

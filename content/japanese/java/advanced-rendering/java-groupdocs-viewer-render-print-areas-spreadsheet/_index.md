@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用した Java スプレッドシートの印刷領域のレンダリング - 総合ガイド"
 "url": "/ja/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用した Java スプレッドシートの印刷領域のレンダリング
 
 ## 導入

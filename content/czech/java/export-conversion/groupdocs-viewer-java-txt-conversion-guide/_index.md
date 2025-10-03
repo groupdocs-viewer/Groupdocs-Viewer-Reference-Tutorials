@@ -4,8 +4,8 @@
 "title": "Převod souborů TXT do HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # Převod souborů TXT pomocí GroupDocs.Viewer pro Javu: Komplexní průvodce
 
 ## Zavedení

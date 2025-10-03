@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके Java में PDF छवि गुणवत्ता अनुकूलित करें"
 "url": "/hi/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ जावा में पीडीएफ छवि गुणवत्ता को अनुकूलित कैसे करें
 
 ## परिचय

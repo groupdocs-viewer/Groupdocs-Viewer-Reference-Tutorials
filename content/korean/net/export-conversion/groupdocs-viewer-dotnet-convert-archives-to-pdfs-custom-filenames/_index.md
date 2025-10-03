@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer를 사용하여 사용자 지정 파일 이름을 사용하여 아카이브를 PDF로 변환"
 "url": "/ko/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용하여 사용자 지정 파일 이름을 사용하여 아카이브를 PDF로 변환
 
 ## 소개

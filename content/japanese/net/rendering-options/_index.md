@@ -5,8 +5,8 @@
 "title": "レンダリングオプション"
 "url": "/ja/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # レンダリングオプション
 
 

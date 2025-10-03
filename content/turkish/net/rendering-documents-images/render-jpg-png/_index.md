@@ -5,8 +5,8 @@
 "title": "Belgeyi JPGPNG'ye Dönüştür"
 "url": "/tr/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Belgeyi JPGPNG'ye Dönüştür
 
 ## giriiş

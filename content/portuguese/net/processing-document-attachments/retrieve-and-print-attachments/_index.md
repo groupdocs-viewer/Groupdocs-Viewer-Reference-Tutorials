@@ -5,8 +5,8 @@
 "title": "Recuperar e imprimir anexos de documentos"
 "url": "/pt/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Recuperar e imprimir anexos de documentos
 
 ## Introdução

@@ -5,8 +5,8 @@
 "title": "Archieven weergeven op één of meerdere HTML-pagina's"
 "url": "/nl/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Archieven weergeven op één of meerdere HTML-pagina's
 
 ## Invoering

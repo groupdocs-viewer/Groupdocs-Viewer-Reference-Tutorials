@@ -4,8 +4,8 @@
 "title": "Implementujte vykreslování .NET WMZ/WMF pomocí GroupDocs.Viewer pro webovou a multiplatformní kompatibilitu"
 "url": "/cs/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Implementujte vykreslování .NET WMZ/WMF pomocí GroupDocs.Viewer pro webovou a multiplatformní kompatibilitu
 
 ## Zavedení

@@ -8,10 +8,8 @@ keywords:
 - implement document type specification
 - groupdocs viewer java
 - render docx files
-
+type: docs
 ---
-
-
 # How to Implement Document Type Specification in GroupDocs.Viewer for Java
 
 A step-by-step guide on specifying the file type for rendering DOCX files using GroupDocs.Viewer for Java.

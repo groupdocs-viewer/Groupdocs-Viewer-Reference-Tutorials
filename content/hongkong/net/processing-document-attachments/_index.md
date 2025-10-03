@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/zh-hant/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # 處理文件附件
 
 ## 介紹

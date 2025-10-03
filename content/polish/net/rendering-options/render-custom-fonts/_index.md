@@ -5,8 +5,8 @@
 "title": "Renderuj za pomocą niestandardowych czcionek"
 "url": "/pl/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Renderuj za pomocą niestandardowych czcionek
 
 ## Wstęp

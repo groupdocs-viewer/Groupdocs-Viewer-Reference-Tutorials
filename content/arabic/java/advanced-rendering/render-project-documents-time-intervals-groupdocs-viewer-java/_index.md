@@ -4,8 +4,8 @@
 "title": "عرض مستندات المشروع حسب الفواصل الزمنية باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تنفيذ عرض مستندات المشروع مع فترات زمنية باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "Rendi i disegni CAD come JPG usando GroupDocs.Viewer Java - Una guida completa"
 "url": "/it/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Come rendere i disegni CAD in formato JPG utilizzando GroupDocs.Viewer Java: una guida passo passo
 
 ## Introduzione

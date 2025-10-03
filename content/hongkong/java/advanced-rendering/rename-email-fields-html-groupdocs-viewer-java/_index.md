@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 將電子郵件轉換為 HTML 時如何重新命名電子郵件字段"
 "url": "/zh-hant/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer Java 將電子郵件呈現為 HTML 時如何重新命名電子郵件字段
 
 ## 介紹

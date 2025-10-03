@@ -8,10 +8,8 @@ keywords:
 - disable text selection PDF
 - GroupDocs.Viewer .NET security
 - render PDF as HTML without text selection
-
+type: docs
 ---
-
-
 # How to Use GroupDocs.Viewer .NET to Disable Text Selection When Rendering PDFs as HTML
 
 ## Introduction

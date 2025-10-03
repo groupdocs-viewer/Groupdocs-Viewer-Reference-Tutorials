@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer'ı Kullanarak Excel Dosyalarındaki Gizli Satırları ve Sütunları Oluşturma - Gelişmiş Kılavuz"
 "url": "/tr/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer'ı Kullanarak Excel Dosyalarındaki Gizli Satırları ve Sütunları Oluşturun
 
 ## giriiş

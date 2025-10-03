@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java'da Belirli Kodlamalı Belgeler Nasıl Yüklenir"
 "url": "/tr/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java'da Belirli Kodlamalı Belgeler Nasıl Yüklenir
 
 ## giriiş

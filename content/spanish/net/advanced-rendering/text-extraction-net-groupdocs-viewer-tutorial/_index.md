@@ -4,8 +4,8 @@
 "title": "Domine la extracción de texto en .NET con GroupDocs.Viewer&#58; una guía completa"
 "url": "/es/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Dominando la extracción de texto en .NET con GroupDocs.Viewer: un tutorial completo
 
 ## Introducción

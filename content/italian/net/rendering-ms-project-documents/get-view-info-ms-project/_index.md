@@ -5,8 +5,8 @@
 "title": "Ottieni informazioni sulla visualizzazione per i documenti di Microsoft Project"
 "url": "/it/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Ottieni informazioni sulla visualizzazione per i documenti di Microsoft Project
 
 ## Introduzione

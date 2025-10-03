@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET için Belge Güvenliği ve Erişim Kontrolü Eğitimleri"
 "url": "/tr/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # GroupDocs.Viewer .NET için Belge Güvenliği ve Erişim Kontrolü Eğitimleri
 
 .NET geliştiricileri için kapsamlı GroupDocs.Viewer güvenlik eğitimlerimizle belge görüntülemeyi güvenli hale getirmeyi öğrenin. Bu ayrıntılı kılavuzlar, parola korumasının nasıl uygulanacağını, belge izinlerinin nasıl yönetileceğini, şifrelenmiş dosyaların nasıl işleneceğini ve hassas belgelere erişimin programatik olarak nasıl kontrol edileceğini gösterir. Her eğitim, yaygın güvenlik senaryoları için çalışan .NET kod örnekleri sunarak, kontrollü görüntüleme yetenekleri sağlarken belge gizliliğini ve bütünlüğünü koruyan uygulamalar oluşturmanıza yardımcı olur.

@@ -4,8 +4,8 @@
 "title": "Hoe u rasterlijnen in Excel-spreadsheets kunt weergeven met GroupDocs.Viewer .NET voor HTML-uitvoer"
 "url": "/nl/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u rasterlijnen in Excel-spreadsheets kunt weergeven met GroupDocs.Viewer .NET voor HTML-uitvoer
 
 ## Invoering

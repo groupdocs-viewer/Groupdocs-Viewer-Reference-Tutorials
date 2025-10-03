@@ -5,8 +5,8 @@
 "title": "Belgeler yükleniyor"
 "url": "/tr/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Belgeler yükleniyor
 
 ## giriiş

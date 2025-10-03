@@ -4,8 +4,8 @@
 "title": "Efektywne ponowne porządkowanie stron PDF za pomocą GroupDocs.Viewer dla Java&#58; Kompleksowy przewodnik"
 "url": "/pl/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Efektywne ponowne porządkowanie stron PDF za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

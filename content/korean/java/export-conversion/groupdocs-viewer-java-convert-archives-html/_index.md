@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java를 사용하여 아카이브를 HTML로 변환하는 포괄적인 가이드"
 "url": "/ko/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java를 사용하여 아카이브를 HTML로 변환: 포괄적인 가이드
 
 ## 소개

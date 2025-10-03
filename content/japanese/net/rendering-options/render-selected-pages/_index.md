@@ -5,8 +5,8 @@
 "title": "選択したページをレンダリング"
 "url": "/ja/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # 選択したページをレンダリング
 
 ## 導入

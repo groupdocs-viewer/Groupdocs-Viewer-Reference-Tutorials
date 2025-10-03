@@ -4,8 +4,8 @@
 "title": "إتقان عرض HTML مع الهوامش المخصصة في .NET باستخدام GroupDocs.Viewer"
 "url": "/ar/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض HTML مع الهوامش المحددة من قبل المستخدم في .NET باستخدام GroupDocs.Viewer
 
 ## مقدمة

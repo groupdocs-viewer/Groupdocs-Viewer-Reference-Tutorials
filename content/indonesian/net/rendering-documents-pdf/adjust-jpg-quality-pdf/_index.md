@@ -5,8 +5,8 @@
 "title": "Sesuaikan Kualitas Gambar JPG dalam PDF yang Dirender"
 "url": "/id/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Sesuaikan Kualitas Gambar JPG dalam PDF yang Dirender
 
 ## Perkenalan

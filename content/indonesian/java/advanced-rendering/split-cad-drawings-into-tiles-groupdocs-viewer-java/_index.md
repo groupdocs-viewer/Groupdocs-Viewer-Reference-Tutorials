@@ -4,8 +4,8 @@
 "title": "Membagi Gambar CAD menjadi Petak Menggunakan GroupDocs.Viewer Java untuk Rendering yang Efisien"
 "url": "/id/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Membagi Gambar CAD menjadi Ubin dengan GroupDocs.Viewer Java
 
 ## Perkenalan

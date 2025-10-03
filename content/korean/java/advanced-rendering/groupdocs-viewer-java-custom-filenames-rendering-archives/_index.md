@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java를 활용한 아카이브 PDF 렌더링을 위한 사용자 정의 파일 이름 마스터하기"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java 마스터링: 아카이브를 PDF로 렌더링할 때 사용자 지정 파일 이름 지정
 
 ## 소개

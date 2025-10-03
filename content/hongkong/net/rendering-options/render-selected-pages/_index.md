@@ -5,8 +5,8 @@
 "title": "渲染選定的頁面"
 "url": "/zh-hant/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # 渲染選定的頁面
 
 ## 介紹

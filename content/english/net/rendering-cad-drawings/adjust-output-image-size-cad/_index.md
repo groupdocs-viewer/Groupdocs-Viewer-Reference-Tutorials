@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["CAD Rendering"]
 tags: ["cad-drawings", "image-scaling", "groupdocs-viewer", "dotnet"]
+type: docs
 ---
-
 # CAD Drawing Image Size .NET - Complete Resizing Guide
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Exkludera teckensnitt från renderad HTML"
 "url": "/sv/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Exkludera teckensnitt från renderad HTML
 
 ## Introduktion

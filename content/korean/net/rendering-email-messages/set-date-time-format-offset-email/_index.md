@@ -5,8 +5,8 @@
 "title": "DateTime 형식 및 시간대 오프셋 설정(이메일)"
 "url": "/ko/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # DateTime 형식 및 시간대 오프셋 설정(이메일)
 
 

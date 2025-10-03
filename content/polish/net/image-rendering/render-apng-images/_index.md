@@ -5,8 +5,8 @@
 "title": "Renderuj obrazy APNG"
 "url": "/pl/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Renderuj obrazy APNG
 
 ## Wstęp

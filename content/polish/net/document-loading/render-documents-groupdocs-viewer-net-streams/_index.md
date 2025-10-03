@@ -4,8 +4,8 @@
 "title": "Renderowanie dokumentów za pomocą GroupDocs.Viewer .NET ze strumieni&#58; Kompleksowy przewodnik dla programistów"
 "url": "/pl/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie dokumentów za pomocą GroupDocs.Viewer .NET ze strumieni: kompleksowy przewodnik dla programistów
 
 ## Wstęp

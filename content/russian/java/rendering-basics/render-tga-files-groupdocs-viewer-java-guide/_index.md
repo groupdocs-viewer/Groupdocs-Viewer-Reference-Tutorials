@@ -4,8 +4,8 @@
 "title": "Как визуализировать файлы Truevision TGA с помощью GroupDocs.Viewer Java&#58; Пошаговое руководство"
 "url": "/ru/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать файлы Truevision TGA с помощью GroupDocs.Viewer Java
 
 ## Введение

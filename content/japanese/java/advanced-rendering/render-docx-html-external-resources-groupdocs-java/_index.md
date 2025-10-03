@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用して、外部リソースを含む DOCX を HTML に変換する"
 "url": "/ja/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用して、外部リソースを含む DOCX を HTML に変換する
 
 ## 導入

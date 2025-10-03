@@ -5,8 +5,8 @@
 "title": "행 및 열 머리글 렌더링"
 "url": "/ko/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # 행 및 열 머리글 렌더링
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "İşlenmiş HTML Belgesini Küçült"
 "url": "/tr/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # İşlenmiş HTML Belgesini Küçült
 
 ## giriiş

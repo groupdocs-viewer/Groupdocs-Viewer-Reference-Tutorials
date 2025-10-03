@@ -8,10 +8,8 @@ keywords:
 - Render MS Project Documents
 - GroupDocs.Viewer .NET
 - Project Management with GroupDocs
-
+type: docs
 ---
-
-
 # Master Rendering MS Project Documents Using GroupDocs.Viewer .NET
 
 ## Introduction

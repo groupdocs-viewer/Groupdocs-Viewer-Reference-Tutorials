@@ -4,8 +4,8 @@
 "title": "Merender Lampiran Dokumen ke HTML Menggunakan GroupDocs.Viewer Java; Panduan Langkah demi Langkah"
 "url": "/id/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Mengubah Lampiran Dokumen menjadi HTML dengan GroupDocs.Viewer Java
 
 ## Perkenalan

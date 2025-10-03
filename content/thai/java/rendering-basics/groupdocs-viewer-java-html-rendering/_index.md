@@ -4,8 +4,8 @@
 "title": "วิธีการโหลดและเรนเดอร์เอกสารเป็น HTML โดยใช้ GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการโหลดและเรนเดอร์เอกสารเป็น HTML โดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

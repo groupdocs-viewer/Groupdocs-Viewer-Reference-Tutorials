@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["CAD Rendering"]
 tags: ["cad-drawings", "net-development", "file-viewer", "groupdocs"]
+type: docs
 ---
-
 # Render CAD Drawings in .NET Applications
 
 ## Why CAD Rendering Matters for Your .NET Projects

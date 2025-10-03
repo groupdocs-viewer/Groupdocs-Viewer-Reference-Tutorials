@@ -8,10 +8,8 @@ keywords:
 - minify HTML Java
 - GroupDocs.Viewer Java
 - HTML minification in Java
-
+type: docs
 ---
-
-
 # How to Minify HTML Documents Using GroupDocs.Viewer in Java
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "الاستخدام المتقدم (التخزين المؤقت)"
 "url": "/ar/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # الاستخدام المتقدم (التخزين المؤقت)
 
 

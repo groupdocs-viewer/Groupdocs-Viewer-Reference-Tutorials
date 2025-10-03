@@ -4,8 +4,8 @@
 "title": "PDF oldalak elforgatása GroupDocs.Viewer használatával Java nyelven – Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # PDF-oldalak elforgatása GroupDocs.Viewer használatával Java-ban
 
 ## Bevezetés

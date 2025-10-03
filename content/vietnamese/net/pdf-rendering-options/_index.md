@@ -5,8 +5,8 @@
 "title": "Tùy chọn kết xuất PDF"
 "url": "/vi/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # Tùy chọn kết xuất PDF
 
 

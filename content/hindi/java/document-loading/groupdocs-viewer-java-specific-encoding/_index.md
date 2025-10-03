@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा में विशिष्ट एनकोडिंग के साथ दस्तावेज़ कैसे लोड करें"
 "url": "/hi/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा में विशिष्ट एनकोडिंग के साथ दस्तावेज़ कैसे लोड करें
 
 ## परिचय

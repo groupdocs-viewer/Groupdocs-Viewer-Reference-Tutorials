@@ -3,8 +3,8 @@
 "title": "Výukové programy pro vodoznaky a anotace dokumentů v GroupDocs.Viewer v Javě"
 "url": "/cs/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Výukové programy pro vodoznaky a anotace dokumentů v GroupDocs.Viewer v Javě
 
 Zvládněte techniky anotací a vodoznaků v dokumentech s našimi tutoriály pro GroupDocs.Viewer v Javě. Tyto podrobné návody ukazují, jak přidávat textové a obrazové vodoznaky, implementovat anotace, ovládat umístění a průhlednost vodoznaků a vykreslovat dokumenty s vloženými anotacemi. Každý tutoriál obsahuje praktické příklady kódu Java pro přidání vizuálních metadat a ochranných značek do dokumentů, čímž se vylepší možnosti sledování dokumentů a budování značky.

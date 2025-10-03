@@ -4,8 +4,8 @@
 "title": "Mengambil Metadata dan Properti PDF Menggunakan GroupDocs.Viewer di Java&#58; Panduan Langkah demi Langkah"
 "url": "/id/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Mengambil Metadata dan Properti PDF Menggunakan GroupDocs.Viewer di Java
 
 Selamat datang di panduan lengkap tentang cara mengambil informasi tampilan dari dokumen PDF dengan pustaka GroupDocs.Viewer di Java. Jika Anda ingin mengekstrak detail seperti jumlah halaman, jenis dokumen, dan izin dari file PDF secara terprogram, Anda telah datang ke tempat yang tepat.

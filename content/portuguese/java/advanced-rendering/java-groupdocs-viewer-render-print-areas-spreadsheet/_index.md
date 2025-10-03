@@ -4,8 +4,8 @@
 "title": "Renderização de áreas de impressão em planilhas Java com GroupDocs.Viewer para Java - Um guia completo"
 "url": "/pt/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Renderização de áreas de impressão de planilhas Java com GroupDocs.Viewer para Java
 
 ## Introdução

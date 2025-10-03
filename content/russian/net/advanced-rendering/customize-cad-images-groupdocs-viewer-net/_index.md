@@ -4,8 +4,8 @@
 "title": "Настройка изображений САПР с помощью GroupDocs.Viewer .NET&#58; Продвинутые методы рендеринга"
 "url": "/ru/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать и настраивать изображения САПР с помощью GroupDocs.Viewer .NET
 
 ## Введение

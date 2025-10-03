@@ -5,8 +5,8 @@
 "title": "Establecer el tiempo de espera de carga de recursos (avanzado)"
 "url": "/es/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Establecer el tiempo de espera de carga de recursos (avanzado)
 
 ## Introducción

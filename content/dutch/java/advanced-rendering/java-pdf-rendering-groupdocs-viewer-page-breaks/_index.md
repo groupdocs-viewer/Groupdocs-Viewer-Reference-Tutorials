@@ -4,8 +4,8 @@
 "title": "Java PDF-rendering met GroupDocs.Viewer&#58; pagina-einden implementeren in spreadsheets"
 "url": "/nl/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Java PDF-rendering onder de knie krijgen: GroupDocs.Viewer met pagina-einden
 
 Ontgrendel de kracht van spreadsheetrendering in uw Java-applicaties met GroupDocs.Viewer. Deze uitgebreide handleiding laat u zien hoe u Java PDF-rendering met pagina-einden implementeert voor een naadloze conversie naar PDF.

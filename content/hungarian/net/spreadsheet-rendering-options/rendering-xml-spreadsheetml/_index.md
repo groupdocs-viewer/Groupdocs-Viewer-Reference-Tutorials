@@ -5,8 +5,8 @@
 "title": "XML SpreadSheetML renderelése"
 "url": "/hu/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # XML SpreadSheetML renderelése
 
 ## Bevezetés

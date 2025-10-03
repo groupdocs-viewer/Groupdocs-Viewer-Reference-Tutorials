@@ -5,8 +5,8 @@
 "title": "ปิดใช้งานการตรวจสอบใบอนุญาตแบบอักษรใน PDF"
 "url": "/th/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # ปิดใช้งานการตรวจสอบใบอนุญาตแบบอักษรใน PDF
 
 ## การแนะนำ

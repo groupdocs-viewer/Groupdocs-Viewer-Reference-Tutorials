@@ -5,8 +5,8 @@
 "title": "Защитите созданный PDF-файл паролем"
 "url": "/ru/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Защитите созданный PDF-файл паролем
 
 ## Введение

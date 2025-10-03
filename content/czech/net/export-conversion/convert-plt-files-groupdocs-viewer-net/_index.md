@@ -4,8 +4,8 @@
 "title": "Převod souborů PLT do HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer .NET"
 "url": "/cs/net/export-conversion/convert-plt-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Převod souborů PLT pomocí GroupDocs.Viewer .NET
 ## Zavedení
 Máte potíže s převodem technických výkresů ze souborů PLT? Zjistěte, jak je bez problémů převést do formátu HTML, JPG, PNG nebo PDF pomocí výkonné knihovny GroupDocs.Viewer .NET. Ať už tyto formáty potřebujete pro webové zobrazení nebo prezentace, tato příručka vám pomůže optimalizovat vaši implementaci.

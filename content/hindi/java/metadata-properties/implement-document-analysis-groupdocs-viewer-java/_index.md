@@ -4,8 +4,8 @@
 "title": "जावा के लिए GroupDocs.Viewer के साथ दस्तावेज़ विश्लेषण लागू करना; पृष्ठ मेटाडेटा और टेक्स्ट लाइनें निकालना"
 "url": "/hi/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer के साथ दस्तावेज़ विश्लेषण लागू करना: पृष्ठ मेटाडेटा और टेक्स्ट पंक्तियाँ निकालना
 
 ## परिचय

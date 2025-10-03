@@ -4,8 +4,8 @@
 "title": "CAD-tekeningen renderen als JPG's met GroupDocs.Viewer Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD-tekeningen als JPG's renderen met GroupDocs.Viewer Java: een stapsgewijze handleiding
 
 ## Invoering

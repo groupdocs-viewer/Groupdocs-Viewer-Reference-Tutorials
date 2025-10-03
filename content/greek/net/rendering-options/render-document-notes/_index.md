@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφου με σημειώσεις"
 "url": "/el/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Απόδοση εγγράφου με σημειώσεις
 
 ## Εισαγωγή

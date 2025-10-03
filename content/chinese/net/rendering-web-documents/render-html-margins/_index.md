@@ -5,8 +5,8 @@
 "title": "使用用户定义的边距渲染 HTML"
 "url": "/zh/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # 使用用户定义的边距渲染 HTML
 
 ## 介绍

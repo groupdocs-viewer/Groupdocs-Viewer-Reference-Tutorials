@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - retrieve document attachments .NET
 - print document details GroupDocs
-
+type: docs
 ---
-
-
 # How to Retrieve and Print Document Attachments Using GroupDocs.Viewer for .NET | Advanced Rendering Guide
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "बेहतर छवि रेंडरिंग के लिए GroupDocs.Viewer .NET में JPG गुणवत्ता का अनुकूलन"
 "url": "/hi/net/advanced-rendering/adjust-jpg-quality-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET में JPG गुणवत्ता का अनुकूलन
 
 ## परिचय

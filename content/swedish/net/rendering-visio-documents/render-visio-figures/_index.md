@@ -5,8 +5,8 @@
 "title": "Rendera Visio-figurer"
 "url": "/sv/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Rendera Visio-figurer
 
 ## Introduktion

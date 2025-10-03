@@ -5,8 +5,8 @@
 "title": "Ersätt saknat teckensnitt"
 "url": "/sv/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Ersätt saknat teckensnitt
 
 ## Introduktion

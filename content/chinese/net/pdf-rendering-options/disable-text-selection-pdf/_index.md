@@ -5,8 +5,8 @@
 "title": "禁用 PDF 中的文本选择"
 "url": "/zh/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # 禁用 PDF 中的文本选择
 
 ## 介绍

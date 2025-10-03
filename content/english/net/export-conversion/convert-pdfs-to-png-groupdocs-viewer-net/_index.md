@@ -8,10 +8,8 @@ keywords:
 - convert PDF to PNG
 - GroupDocs.Viewer for .NET
 - render PDF pages as PNG
-
+type: docs
 ---
-
-
 # Convert PDFs to PNG with Original Size Using GroupDocs.Viewer for .NET
 
 ## Introduction

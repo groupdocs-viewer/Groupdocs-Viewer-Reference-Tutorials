@@ -8,10 +8,8 @@ keywords:
 - render Outlook OST files with GroupDocs.Viewer for .NET
 - GroupDocs Viewer .NET setup
 - rendering emails with GroupDocs
-
+type: docs
 ---
-
-
 # How to Render Outlook OST Files Using GroupDocs.Viewer for .NET: A Comprehensive Step-by-Step Guide
 
 ## Introduction

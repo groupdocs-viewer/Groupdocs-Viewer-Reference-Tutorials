@@ -5,8 +5,8 @@
 "title": "عرض صور WMZ وWMF"
 "url": "/ar/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # عرض صور WMZ وWMF
 
 ## مقدمة

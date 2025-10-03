@@ -4,8 +4,8 @@
 "title": "Vykreslování hlavních dokumentů v .NET pomocí konverze HTML a integrace vodoznaků v GroupDocs.Viewer"
 "url": "/cs/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslování hlavního dokumentu v .NET pomocí GroupDocs.Viewer: Konverze HTML a integrace vodoznaků
 
 ## Zavedení

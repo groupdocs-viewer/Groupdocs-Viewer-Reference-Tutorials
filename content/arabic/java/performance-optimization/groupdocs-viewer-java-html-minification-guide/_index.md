@@ -4,8 +4,8 @@
 "title": "كيفية تصغير ملفات HTML في Java باستخدام GroupDocs.Viewer لتحسين الأداء"
 "url": "/ar/java/performance-optimization/groupdocs-viewer-java-html-minification-guide/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تصغير حجم مستندات HTML باستخدام GroupDocs.Viewer في Java
 
 ## مقدمة

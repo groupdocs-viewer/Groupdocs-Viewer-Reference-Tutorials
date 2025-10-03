@@ -5,8 +5,8 @@
 "title": "Отключить проверку лицензии шрифта в PDF"
 "url": "/ru/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Отключить проверку лицензии шрифта в PDF
 
 ## Введение

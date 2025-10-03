@@ -4,8 +4,8 @@
 "title": "Renderização eficiente em camadas de PDF em Java usando GroupDocs.Viewer"
 "url": "/pt/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Renderização eficiente em camadas de PDF em Java usando GroupDocs.Viewer
 
 ## Introdução

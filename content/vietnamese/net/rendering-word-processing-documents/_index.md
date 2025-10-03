@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu xử lý văn bản"
 "url": "/vi/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Kết xuất tài liệu xử lý văn bản
 
 

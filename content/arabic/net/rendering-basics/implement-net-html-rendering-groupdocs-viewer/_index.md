@@ -4,8 +4,8 @@
 "title": "كيفية تنفيذ عرض HTML .NET باستخدام GroupDocs.Viewer - دليل خطوة بخطوة"
 "url": "/ar/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تنفيذ عرض HTML .NET باستخدام GroupDocs.Viewer: دليل خطوة بخطوة
 
 ## مقدمة

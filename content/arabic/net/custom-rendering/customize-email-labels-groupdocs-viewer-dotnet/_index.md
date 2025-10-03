@@ -4,8 +4,8 @@
 "title": "تخصيص تسميات البريد الإلكتروني في GroupDocs.Viewer لـ .NET - دليل كامل لإعادة تسمية الحقول"
 "url": "/ar/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # تخصيص تسميات البريد الإلكتروني في GroupDocs.Viewer لـ .NET: دليل كامل لإعادة تسمية الحقول
 
 ## مقدمة

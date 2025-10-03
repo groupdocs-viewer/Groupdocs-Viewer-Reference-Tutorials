@@ -5,8 +5,8 @@
 "title": "Rendering di immagini WMZ e WMF"
 "url": "/it/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # Rendering di immagini WMZ e WMF
 
 ## Introduzione

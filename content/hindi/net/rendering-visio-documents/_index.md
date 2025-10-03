@@ -5,8 +5,8 @@
 "title": "विज़ियो दस्तावेज़ प्रस्तुत करना"
 "url": "/hi/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # विज़ियो दस्तावेज़ प्रस्तुत करना
 
 ## परिचय

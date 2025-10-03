@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for .NET
 - Outlook data files
 - view information retrieval
-
+type: docs
 ---
-
-
 # How to Retrieve Outlook Data Information Using GroupDocs.Viewer for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Rendu d'une disposition unique dans les dessins CAO"
 "url": "/fr/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Rendu d'une disposition unique dans les dessins CAO
 
 ## Introduction

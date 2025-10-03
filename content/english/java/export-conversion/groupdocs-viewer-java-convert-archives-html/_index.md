@@ -8,10 +8,8 @@ keywords:
 - convert archives to HTML Java
 - GroupDocs.Viewer Java tutorial
 - render ZIP RAR to HTML
-
+type: docs
 ---
-
-
 # Convert Archives to HTML with GroupDocs.Viewer Java: A Comprehensive Guide
 
 ## Introduction

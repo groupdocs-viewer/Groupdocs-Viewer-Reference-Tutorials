@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java를 사용하여 문서 첨부 파일을 HTML로 렌더링하는 단계별 가이드"
 "url": "/ko/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java를 사용하여 문서 첨부 파일을 HTML로 렌더링
 
 ## 소개

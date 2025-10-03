@@ -5,8 +5,8 @@
 "title": "Rendering di immagini TGA"
 "url": "/it/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # Rendering di immagini TGA
 
 ## Introduzione

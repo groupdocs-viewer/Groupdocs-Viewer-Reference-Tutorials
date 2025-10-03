@@ -4,8 +4,8 @@
 "title": "Jak načíst a vykreslit dokumenty jako HTML pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst a vykreslit dokumenty jako HTML pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

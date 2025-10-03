@@ -4,8 +4,8 @@
 "title": "Java Kılavuzu&#58; Belge Önizleme ve Yönetimi için GroupDocs.Viewer API'siyle Belirli Sayfaları Oluşturun"
 "url": "/tr/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Java'yı Uygulama: GroupDocs.Viewer API ile Belirli Sayfaları Oluşturma
 
 ## giriiş

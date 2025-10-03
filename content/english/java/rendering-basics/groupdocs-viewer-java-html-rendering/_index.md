@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for Java
 - render documents as HTML
 - convert documents using GroupDocs
-
+type: docs
 ---
-
-
 # How to Load and Render Documents as HTML Using GroupDocs.Viewer for Java
 
 ## Introduction

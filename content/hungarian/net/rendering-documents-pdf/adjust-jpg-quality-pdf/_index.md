@@ -5,8 +5,8 @@
 "title": "JPG képminőség beállítása renderelt PDF-ben"
 "url": "/hu/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # JPG képminőség beállítása renderelt PDF-ben
 
 ## Bevezetés

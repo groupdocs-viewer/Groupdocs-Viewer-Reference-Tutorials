@@ -8,10 +8,8 @@ keywords:
 - Convert DOCX to HTML
 - GroupDocs.Viewer for .NET
 - render DOCX as HTML
-
+type: docs
 ---
-
-
 # Convert DOCX to Interactive HTML with GroupDocs.Viewer for .NET
 
 ## Introduction

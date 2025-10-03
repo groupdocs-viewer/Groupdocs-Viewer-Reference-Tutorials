@@ -5,8 +5,8 @@
 "title": "Ändra ordning på sidor i dokumentet"
 "url": "/sv/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Ändra ordning på sidor i dokumentet
 
 ## Introduktion

@@ -4,8 +4,8 @@
 "title": "Adott oldalak renderelése .NET-ben a GroupDocs.Viewer segítségével – Átfogó útmutató"
 "url": "/hu/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Adott oldalak renderelése .NET-ben a GroupDocs.Viewer segítségével: Átfogó útmutató
 
 ## Bevezetés

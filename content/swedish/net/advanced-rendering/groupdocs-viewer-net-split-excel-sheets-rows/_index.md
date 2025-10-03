@@ -4,8 +4,8 @@
 "title": "Dela upp Excel-ark i sidor efter rader med GroupDocs.Viewer .NET för effektiv datahantering"
 "url": "/sv/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Dela upp Excel-ark i sidor efter rader med GroupDocs.Viewer .NET
 
 ## Introduktion

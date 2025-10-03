@@ -4,8 +4,8 @@
 "title": "Hogyan jelenítsünk meg rácsvonalakat Java táblázatokban a GroupDocs.Viewer használatával?"
 "url": "/hu/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan jelenítsünk meg rácsvonalakat Java táblázatokban a GroupDocs.Viewer használatával?
 
 ## Bevezetés

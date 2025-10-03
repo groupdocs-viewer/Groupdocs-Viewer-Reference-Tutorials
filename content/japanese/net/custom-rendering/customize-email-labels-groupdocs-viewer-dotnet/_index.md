@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET でメールラベルをカスタマイズする&#58; フィールド名変更の完全ガイド"
 "url": "/ja/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET でメールラベルをカスタマイズする: フィールド名の変更に関する完全ガイド
 
 ## 導入

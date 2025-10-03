@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 的文件載入與來源處理教學課程"
 "url": "/zh-hant/java/document-loading/"
 "weight": 2
+type: docs
 ---
-
 # GroupDocs.Viewer Java 的文件載入與來源處理教學課程
 
 我們的文件載入教學提供了全面的 Java 文件來源處理指南。遵循這些逐步指南，您將學習如何從不同的儲存類型載入文件、處理各種文件格式、管理輸入流以及實現靈活的文件載入策略。這些實用教學包含完整的文件來源處理程式碼範例，可協助您建立具有多種載入功能的強大文件檢視應用程式。

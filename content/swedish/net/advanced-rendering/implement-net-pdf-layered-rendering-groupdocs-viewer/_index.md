@@ -4,8 +4,8 @@
 "title": "Bemästra .NET PDF-skiktad rendering med GroupDocs.Viewer – en steg-för-steg-guide"
 "url": "/sv/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra .NET PDF-skiktad rendering med GroupDocs.Viewer: En steg-för-steg-guide
 
 ## Introduktion

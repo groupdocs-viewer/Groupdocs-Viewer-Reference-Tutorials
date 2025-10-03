@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu Visio"
 "url": "/vi/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Kết xuất tài liệu Visio
 
 ## Giới thiệu

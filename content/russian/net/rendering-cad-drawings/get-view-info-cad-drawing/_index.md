@@ -5,8 +5,8 @@
 "title": "Получить информацию о чертежах САПР"
 "url": "/ru/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Получить информацию о чертежах САПР
 
 ## Введение

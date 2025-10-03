@@ -5,8 +5,8 @@
 "title": "Rendera dokument till HTML"
 "url": "/sv/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Rendera dokument till HTML
 
 

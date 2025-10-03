@@ -4,8 +4,8 @@
 "title": "如何在 GroupDocs.Viewer Java&#58; 檔案和 URL 設定指南中設定許可證"
 "url": "/zh-hant/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # 如何在 GroupDocs.Viewer Java 中設定許可證：文件和 URL 設定指南
 
 ## 介紹

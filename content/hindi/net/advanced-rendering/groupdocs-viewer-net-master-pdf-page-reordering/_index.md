@@ -4,8 +4,8 @@
 "title": ".NET में GroupDocs.Viewer के साथ PDF पृष्ठ पुनर्व्यवस्था में महारत हासिल करें एक डेवलपर गाइड"
 "url": "/hi/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ PDF पृष्ठ पुनर्व्यवस्था में महारत हासिल करना .NET: एक व्यापक डेवलपर गाइड
 
 ## परिचय

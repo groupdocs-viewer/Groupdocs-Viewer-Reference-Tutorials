@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा में टेक्स्ट लेयर के साथ छवियों के रूप में दस्तावेज़ प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा में टेक्स्ट लेयर के साथ छवियों के रूप में दस्तावेज़ प्रस्तुत करें
 ## उन्नत रेंडरिंग ट्यूटोरियल
 **वर्तमान SEO URL**: /render-documents-to-images-with-text-layer-java

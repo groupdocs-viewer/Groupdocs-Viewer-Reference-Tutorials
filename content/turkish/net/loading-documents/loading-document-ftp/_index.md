@@ -5,8 +5,8 @@
 "title": "FTP'den Belgeleri Yükle (Gelişmiş)"
 "url": "/tr/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # FTP'den Belgeleri Yükle (Gelişmiş)
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Izgara Çizgilerini Oluştur"
 "url": "/tr/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Izgara Çizgilerini Oluştur
 
 ## giriiş

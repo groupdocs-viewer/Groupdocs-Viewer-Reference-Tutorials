@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java による効率的な PDF ページの並べ替え - 総合ガイド"
 "url": "/ja/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java による効率的な PDF ページの並べ替え
 
 ## 導入

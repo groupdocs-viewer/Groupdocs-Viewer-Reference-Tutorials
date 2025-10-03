@@ -5,8 +5,8 @@
 "title": "渲染 FODG 和 ODG 图像"
 "url": "/zh/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # 渲染 FODG 和 ODG 图像
 
 ## 介绍

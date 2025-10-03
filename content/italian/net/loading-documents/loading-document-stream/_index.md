@@ -5,8 +5,8 @@
 "title": "Carica documenti dal flusso"
 "url": "/it/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Carica documenti dal flusso
 
 ## Introduzione

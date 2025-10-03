@@ -4,8 +4,8 @@
 "title": "Renderizar archivos AI con GroupDocs.Viewer para Java&#58; una guía completa"
 "url": "/es/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar archivos AI con GroupDocs.Viewer para Java: una guía completa
 
 ## Introducción

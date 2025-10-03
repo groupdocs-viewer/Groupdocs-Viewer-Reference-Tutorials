@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer के साथ PDF पृष्ठों को कैसे घुमाएं एक डेवलपर गाइड"
 "url": "/hi/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके PDF पृष्ठों को कैसे घुमाएँ: एक डेवलपर गाइड
 
 ## परिचय

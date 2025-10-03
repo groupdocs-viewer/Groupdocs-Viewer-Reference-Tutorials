@@ -4,8 +4,8 @@
 "title": "แปลงหมายเลข Apple เป็น HTML, JPG, PNG, PDF โดยใช้ GroupDocs.Viewer .NET"
 "url": "/th/net/export-conversion/convert-apple-numbers-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # แปลงหมายเลข Apple เป็น HTML, JPG, PNG, PDF โดยใช้ GroupDocs.Viewer .NET
 
 ## การแนะนำ

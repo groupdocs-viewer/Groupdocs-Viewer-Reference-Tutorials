@@ -5,8 +5,8 @@
 "title": "Gelaagde rendering in PDF inschakelen"
 "url": "/nl/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Gelaagde rendering in PDF inschakelen
 
 ## Invoering

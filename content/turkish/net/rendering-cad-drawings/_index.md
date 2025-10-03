@@ -5,8 +5,8 @@
 "title": "CAD Çizimlerinin Render Edilmesi"
 "url": "/tr/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # CAD Çizimlerinin Render Edilmesi
 
 

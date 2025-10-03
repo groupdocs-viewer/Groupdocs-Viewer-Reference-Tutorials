@@ -4,8 +4,8 @@
 "title": "ตั้งค่าการหมดเวลาการโหลดทรัพยากรใน GroupDocs.Viewer สำหรับ Java เพื่อปรับปรุงประสิทธิภาพเอกสาร"
 "url": "/th/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # ตั้งค่าการหมดเวลาการโหลดทรัพยากรใน GroupDocs.Viewer สำหรับ Java: ปรับปรุงประสิทธิภาพการแสดงผลเอกสาร
 
 ## การแนะนำ

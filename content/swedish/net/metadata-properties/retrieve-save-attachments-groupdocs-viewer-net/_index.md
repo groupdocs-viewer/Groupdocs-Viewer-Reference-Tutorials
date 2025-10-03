@@ -4,8 +4,8 @@
 "title": "Så här hämtar och sparar du dokumentbilagor med GroupDocs.Viewer .NET för effektiv metadatahantering"
 "url": "/sv/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar och sparar du dokumentbilagor med GroupDocs.Viewer .NET
 
 ## Introduktion

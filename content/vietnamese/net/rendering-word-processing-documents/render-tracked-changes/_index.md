@@ -5,8 +5,8 @@
 "title": "Hiển thị những thay đổi được theo dõi"
 "url": "/vi/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Hiển thị những thay đổi được theo dõi
 
 ## Giới thiệu

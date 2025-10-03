@@ -4,8 +4,8 @@
 "title": "Render Semua Tata Letak CAD Secara Efisien Menggunakan GroupDocs.Viewer untuk Java"
 "url": "/id/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Render Semua Tata Letak CAD Secara Efisien Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

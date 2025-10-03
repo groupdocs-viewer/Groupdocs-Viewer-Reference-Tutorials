@@ -4,8 +4,8 @@
 "title": "開發人員使用 GroupDocs.Viewer .NET 渲染 AI 檔案的綜合指南"
 "url": "/zh-hant/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # 開發人員使用 GroupDocs.Viewer .NET 渲染 AI 檔案的綜合指南
 
 ## 介紹

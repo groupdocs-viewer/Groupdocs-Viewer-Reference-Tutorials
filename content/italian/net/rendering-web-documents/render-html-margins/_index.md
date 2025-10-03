@@ -5,8 +5,8 @@
 "title": "Rendering HTML con margini definiti dall'utente"
 "url": "/it/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Rendering HTML con margini definiti dall'utente
 
 ## Introduzione

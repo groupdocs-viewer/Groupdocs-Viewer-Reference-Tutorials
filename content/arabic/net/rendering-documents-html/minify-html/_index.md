@@ -5,8 +5,8 @@
 "title": "تصغير مستند HTML المُقدم"
 "url": "/ar/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # تصغير مستند HTML المُقدم
 
 ## مقدمة

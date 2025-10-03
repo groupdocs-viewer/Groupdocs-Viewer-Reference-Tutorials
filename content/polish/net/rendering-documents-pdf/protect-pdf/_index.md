@@ -5,8 +5,8 @@
 "title": "Zabezpiecz wyrenderowany plik PDF hasłem"
 "url": "/pl/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Zabezpiecz wyrenderowany plik PDF hasłem
 
 ## Wstęp

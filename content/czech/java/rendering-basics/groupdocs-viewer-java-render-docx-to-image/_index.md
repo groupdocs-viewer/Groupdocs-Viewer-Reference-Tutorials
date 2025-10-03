@@ -4,8 +4,8 @@
 "title": "Vykreslení DOCX do obrázku pomocí prohlížeče GroupDocs pro Javu – komplexní průvodce"
 "url": "/cs/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení DOCX do obrázku pomocí prohlížeče GroupDocs pro Javu
 
 ## Zavedení

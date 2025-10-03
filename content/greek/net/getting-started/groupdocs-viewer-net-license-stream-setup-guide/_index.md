@@ -4,8 +4,8 @@
 "title": "Ρύθμιση της άδειας χρήσης GroupDocs.Viewer .NET μέσω του Stream&#58; Ένας πλήρης οδηγός"
 "url": "/el/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Ρύθμιση της άδειας χρήσης GroupDocs.Viewer .NET μέσω Stream: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

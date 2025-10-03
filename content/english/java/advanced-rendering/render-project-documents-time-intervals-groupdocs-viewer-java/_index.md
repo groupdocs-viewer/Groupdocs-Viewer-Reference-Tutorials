@@ -8,10 +8,8 @@ keywords:
 - render project documents
 - time intervals Java
 - GroupDocs Viewer API
-
+type: docs
 ---
-
-
 # How to Implement Render Project Documents with Time Intervals using GroupDocs.Viewer for Java
 
 ## Introduction

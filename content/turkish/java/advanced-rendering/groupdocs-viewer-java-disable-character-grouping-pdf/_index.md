@@ -4,8 +4,8 @@
 "title": "Java&#58;da GroupDocs.Viewer ile PDF'lerde Karakter Gruplandırmayı Devre Dışı Bırakın; Hassas İşleme Teknikleri"
 "url": "/tr/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile PDF'lerde Karakter Gruplandırmayı Devre Dışı Bırakma
 
 ## giriiş

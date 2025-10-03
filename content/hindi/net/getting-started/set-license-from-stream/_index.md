@@ -5,8 +5,8 @@
 "title": "स्ट्रीम से लाइसेंस सेट करें"
 "url": "/hi/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # स्ट्रीम से लाइसेंस सेट करें
 
 ## परिचय

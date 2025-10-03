@@ -4,8 +4,8 @@
 "title": "Hiển thị Email với DateTime tùy chỉnh trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị Email với DateTime tùy chỉnh trong Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

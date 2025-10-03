@@ -5,8 +5,8 @@
 "title": "โหลดเอกสารจากสตรีม"
 "url": "/th/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # โหลดเอกสารจากสตรีม
 
 ## การแนะนำ

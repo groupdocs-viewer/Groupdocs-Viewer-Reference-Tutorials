@@ -5,8 +5,8 @@
 "title": "Отобразить N последовательных страниц"
 "url": "/ru/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Отобразить N последовательных страниц
 
 ## Введение

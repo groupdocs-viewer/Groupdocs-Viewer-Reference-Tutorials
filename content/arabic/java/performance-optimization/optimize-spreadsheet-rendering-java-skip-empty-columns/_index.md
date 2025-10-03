@@ -4,8 +4,8 @@
 "title": "تحسين عرض جداول بيانات Java - تخطي الأعمدة الفارغة باستخدام GroupDocs.Viewer"
 "url": "/ar/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تحسين عرض جداول البيانات في Java: تخطي الأعمدة الفارغة باستخدام GroupDocs.Viewer
 
 ## مقدمة

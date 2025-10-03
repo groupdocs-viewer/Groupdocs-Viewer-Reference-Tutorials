@@ -5,8 +5,8 @@
 "title": "Penggunaan Lanjutan (Caching)"
 "url": "/id/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Penggunaan Lanjutan (Caching)
 
 

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer Java 禁用 PDF 中的文本选择——综合指南"
 "url": "/zh/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer Java 实现 PDF 渲染中的禁用文本选择
 ## 介绍
 您是否需要一种安全的方式在 Web 上显示 PDF，并且不允许文本选择？本指南将演示如何使用 GroupDocs.Viewer for Java 库禁用文本选择。通过将文本转换为图像，您的内容在线显示时将保持安全且不可编辑。

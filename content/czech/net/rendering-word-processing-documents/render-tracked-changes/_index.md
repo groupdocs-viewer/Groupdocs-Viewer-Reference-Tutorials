@@ -5,8 +5,8 @@
 "title": "Vykreslení sledovaných změn"
 "url": "/cs/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Vykreslení sledovaných změn
 
 ## Zavedení

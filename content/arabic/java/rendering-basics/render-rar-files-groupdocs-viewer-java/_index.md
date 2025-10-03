@@ -4,8 +4,8 @@
 "title": "تحويل ملفات RAR إلى HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/rendering-basics/render-rar-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض ملفات RAR بتنسيقات مختلفة باستخدام GroupDocs.Viewer لـ Java
 
 أطلق العنان لإمكانيات أرشيفات RAR لديك بتحويلها إلى صيغ سهلة الاستخدام مثل HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لجافا. سيرشدك هذا البرنامج التعليمي خلال كل خطوة، مما يتيح لك إدارة وعرض مستنداتك بسلاسة.

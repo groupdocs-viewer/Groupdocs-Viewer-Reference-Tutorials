@@ -4,8 +4,8 @@
 "title": "Outlook OST fájlok renderelése a GroupDocs.Viewer for .NET használatával | Lépésről lépésre útmutató"
 "url": "/hu/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Outlook OST fájlok renderelése a GroupDocs.Viewer for .NET használatával: Átfogó, lépésről lépésre útmutató
 
 ## Bevezetés

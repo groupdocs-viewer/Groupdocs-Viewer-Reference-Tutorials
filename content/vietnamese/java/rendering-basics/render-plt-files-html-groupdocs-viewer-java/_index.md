@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp PLT thành HTML bằng GroupDocs.Viewer trong Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/rendering-basics/render-plt-files-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp PLT thành HTML bằng GroupDocs.Viewer trong Java: Hướng dẫn dành cho nhà phát triển
 
 ## Giới thiệu

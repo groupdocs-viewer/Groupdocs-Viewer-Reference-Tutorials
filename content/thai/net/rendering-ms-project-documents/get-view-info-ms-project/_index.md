@@ -5,8 +5,8 @@
 "title": "รับข้อมูลมุมมองสำหรับเอกสารโครงการ Microsoft"
 "url": "/th/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # รับข้อมูลมุมมองสำหรับเอกสารโครงการ Microsoft
 
 ## การแนะนำ

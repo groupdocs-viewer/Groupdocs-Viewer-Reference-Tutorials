@@ -5,8 +5,8 @@
 "title": "Načítání dokumentů se specifickým kódováním"
 "url": "/cs/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Načítání dokumentů se specifickým kódováním
 
 ## Zavedení

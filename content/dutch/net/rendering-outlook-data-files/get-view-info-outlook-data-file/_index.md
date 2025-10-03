@@ -5,8 +5,8 @@
 "title": "Informatie over Outlook-gegevensbestanden (PST, OST) weergeven"
 "url": "/nl/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Informatie over Outlook-gegevensbestanden (PST, OST) weergeven
 
 ## Invoering

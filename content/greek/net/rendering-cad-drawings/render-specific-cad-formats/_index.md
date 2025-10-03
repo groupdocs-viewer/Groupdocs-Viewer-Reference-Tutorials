@@ -5,8 +5,8 @@
 "title": "Μορφές CAD ειδικά για απόδοση (CF2)"
 "url": "/el/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Μορφές CAD ειδικά για απόδοση (CF2)
 
 ## Εισαγωγή

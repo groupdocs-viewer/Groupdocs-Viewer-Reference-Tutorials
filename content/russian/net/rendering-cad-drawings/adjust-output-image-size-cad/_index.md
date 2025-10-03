@@ -5,8 +5,8 @@
 "title": "Настройка размера выходного изображения для чертежей САПР"
 "url": "/ru/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Настройка размера выходного изображения для чертежей САПР
 
 ## Введение

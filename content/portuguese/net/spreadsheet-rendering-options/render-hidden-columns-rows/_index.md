@@ -5,8 +5,8 @@
 "title": "Renderizar colunas e linhas ocultas"
 "url": "/pt/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Renderizar colunas e linhas ocultas
 
 ## Introdução

@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/tr/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # Belge Eklerinin İşlenmesi
 
 ## giriiş

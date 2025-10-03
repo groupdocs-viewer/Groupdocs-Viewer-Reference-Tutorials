@@ -4,8 +4,8 @@
 "title": "Renderowanie PDF/OXPS z ograniczeniami czcionek przy użyciu GroupDocs.Viewer .NET&#58; Kompleksowy przewodnik"
 "url": "/pl/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie PDF/OXPS z ograniczeniami czcionek przy użyciu GroupDocs.Viewer .NET: kompleksowy przewodnik
 
 ## Wstęp

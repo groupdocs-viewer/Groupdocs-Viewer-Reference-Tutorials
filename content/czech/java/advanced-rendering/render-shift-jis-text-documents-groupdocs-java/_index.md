@@ -4,8 +4,8 @@
 "title": "Vykreslení textových dokumentů v Shift_JIS pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení textových dokumentů v Shift_JIS pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

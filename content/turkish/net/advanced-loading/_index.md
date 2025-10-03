@@ -5,8 +5,8 @@
 "title": "Gelişmiş Yükleme Seçenekleri"
 "url": "/tr/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Gelişmiş Yükleme Seçenekleri
 
 ## giriiş

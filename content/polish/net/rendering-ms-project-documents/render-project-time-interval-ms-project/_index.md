@@ -5,8 +5,8 @@
 "title": "Renderuj określony interwał czasu projektu (MS Project)"
 "url": "/pl/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Renderuj określony interwał czasu projektu (MS Project)
 
 ## Wstęp

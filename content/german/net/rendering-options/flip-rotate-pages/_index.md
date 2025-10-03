@@ -5,8 +5,8 @@
 "title": "Seiten umdrehen und drehen"
 "url": "/de/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Seiten umdrehen und drehen
 
 ## Einführung

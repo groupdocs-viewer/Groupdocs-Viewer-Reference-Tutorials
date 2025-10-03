@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanılarak CDR Belgeleri Nasıl Oluşturulur? Kapsamlı Bir Kılavuz"
 "url": "/tr/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET Kullanılarak CDR Belgeleri Nasıl Oluşturulur
 
 ## giriiş

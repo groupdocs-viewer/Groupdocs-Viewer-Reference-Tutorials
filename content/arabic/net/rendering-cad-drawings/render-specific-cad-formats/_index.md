@@ -5,8 +5,8 @@
 "title": "تنسيقات CAD الخاصة بالعرض (CF2)"
 "url": "/ar/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # تنسيقات CAD الخاصة بالعرض (CF2)
 
 ## مقدمة

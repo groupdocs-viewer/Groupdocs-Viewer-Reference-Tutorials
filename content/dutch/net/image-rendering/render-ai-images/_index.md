@@ -5,8 +5,8 @@
 "title": "AI-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # AI-afbeeldingen renderen
 
 ## Invoering

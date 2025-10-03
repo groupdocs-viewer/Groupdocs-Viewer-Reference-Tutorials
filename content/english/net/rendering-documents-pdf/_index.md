@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["pdf-conversion", "groupdocs-viewer", "dotnet-api", "document-rendering"]
+type: docs
 ---
-
 # How to Convert Documents to PDF in .NET: Complete Developer Guide
 
 Converting documents to PDF programmatically doesn't have to be complicated. Whether you're building a document management system, creating automated reports, or simply need to ensure consistent document formatting across platforms, GroupDocs.Viewer for .NET provides the tools you need to get the job done efficiently.

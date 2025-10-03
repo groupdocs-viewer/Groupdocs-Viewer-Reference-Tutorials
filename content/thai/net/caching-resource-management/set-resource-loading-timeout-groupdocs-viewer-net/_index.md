@@ -4,8 +4,8 @@
 "title": "การนำ Resource Loading Timeout ไปใช้งานใน GroupDocs.Viewer สำหรับ .NET - คู่มือฉบับสมบูรณ์"
 "url": "/th/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # การนำ Resource Loading Timeout ไปใช้งานใน GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

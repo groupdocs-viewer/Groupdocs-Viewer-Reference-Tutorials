@@ -5,8 +5,8 @@
 "title": "รับพิกัดข้อความสำหรับการเรนเดอร์ภาพ"
 "url": "/th/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # รับพิกัดข้อความสำหรับการเรนเดอร์ภาพ
 
 ## การแนะนำ

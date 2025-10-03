@@ -4,8 +4,8 @@
 "title": "Úprava štítků e-mailů v GroupDocs.Viewer pro .NET – Kompletní průvodce přejmenováním polí"
 "url": "/cs/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Úprava štítků e-mailů v GroupDocs.Viewer pro .NET: Kompletní průvodce přejmenováním polí
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "छिपे हुए पृष्ठ प्रस्तुत करें"
 "url": "/hi/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # छिपे हुए पृष्ठ प्रस्तुत करें
 
 ## परिचय

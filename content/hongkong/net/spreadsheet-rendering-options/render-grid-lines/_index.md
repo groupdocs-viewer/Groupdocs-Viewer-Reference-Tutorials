@@ -5,8 +5,8 @@
 "title": "渲染網格線"
 "url": "/zh-hant/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # 渲染網格線
 
 ## 介紹

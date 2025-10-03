@@ -4,8 +4,8 @@
 "title": "كيفية تحويل المستندات إلى PDF باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تحويل المستندات إلى PDF باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

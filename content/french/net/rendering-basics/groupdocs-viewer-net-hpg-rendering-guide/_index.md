@@ -4,8 +4,8 @@
 "title": "Restituez efficacement des documents HPG au format HTML, JPG, PNG et PDF à l'aide de GroupDocs.Viewer .NET"
 "url": "/fr/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des documents HPG avec GroupDocs.Viewer .NET
 
 ## Introduction

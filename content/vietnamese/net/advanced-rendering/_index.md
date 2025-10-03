@@ -3,8 +3,8 @@
 "title": "Hướng dẫn kết xuất tài liệu nâng cao cho GroupDocs.Viewer .NET"
 "url": "/vi/net/advanced-rendering/"
 "weight": 4
+type: docs
 ---
-
 # Hướng dẫn kết xuất tài liệu nâng cao cho GroupDocs.Viewer .NET
 
 Khám phá khả năng kết xuất tài liệu nâng cao với hướng dẫn toàn diện GroupDocs.Viewer dành cho nhà phát triển .NET của chúng tôi. Các hướng dẫn chi tiết này bao gồm các tình huống kết xuất phức tạp, cấu hình kết xuất tùy chỉnh, tối ưu hóa hiệu suất và triển khai các kỹ thuật kết xuất chuyên biệt. Mỗi hướng dẫn cung cấp các ví dụ mã .NET thực tế minh họa cách tạo các giải pháp xem tài liệu tinh vi với khả năng kiểm soát chính xác các quy trình kết xuất.

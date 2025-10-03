@@ -4,8 +4,8 @@
 "title": "Optimalizálja a JPG minőségét PDF-ekben a GroupDocs.Viewer .NET segítségével – Átfogó útmutató"
 "url": "/hu/net/performance-optimization/optimize-jpg-quality-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizálja a JPG minőségét PDF-ekben a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

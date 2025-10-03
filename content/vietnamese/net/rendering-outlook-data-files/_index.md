@@ -5,8 +5,8 @@
 "title": "Hiển thị tệp dữ liệu Outlook (PST, OST)"
 "url": "/vi/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Hiển thị tệp dữ liệu Outlook (PST, OST)
 
 ## Giới thiệu

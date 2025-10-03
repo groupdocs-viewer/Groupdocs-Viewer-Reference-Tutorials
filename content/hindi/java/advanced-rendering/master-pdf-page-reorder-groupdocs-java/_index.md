@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer के साथ कुशल PDF पृष्ठ पुनर्व्यवस्था एक व्यापक गाइड"
 "url": "/hi/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer के साथ कुशल PDF पृष्ठ पुनर्व्यवस्था
 
 ## परिचय

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Processing"]
 tags: ["jpeg-optimization", "image-resizing", "dotnet-tutorial", "groupdocs-viewer"]
+type: docs
 ---
-
 # How to Adjust JPEG Image Size and Quality in .NET Applications
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Рендеринг изображений ИИ"
 "url": "/ru/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Рендеринг изображений ИИ
 
 ## Введение

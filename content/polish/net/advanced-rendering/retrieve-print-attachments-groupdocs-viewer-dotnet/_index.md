@@ -4,8 +4,8 @@
 "title": "Jak pobierać i drukować załączniki dokumentów za pomocą GroupDocs.Viewer dla .NET | Zaawansowany przewodnik po renderowaniu"
 "url": "/pl/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak pobierać i drukować załączniki dokumentów za pomocą GroupDocs.Viewer dla .NET | Zaawansowany przewodnik po renderowaniu
 
 ## Wstęp

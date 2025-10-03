@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して PLT ファイルを HTML、JPG、PNG、PDF に変換します"
 "url": "/ja/net/export-conversion/convert-plt-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して PLT ファイルを変換する
 ## 導入
 PLTファイルからエンジニアリング図面への変換にお困りですか？強力なGroupDocs.Viewer .NETライブラリを使って、図面をHTML、JPG、PNG、PDFにシームレスに変換する方法をご紹介します。これらの形式をWeb表示やプレゼンテーションに使用する場合でも、このガイドは実装を最適化するのに役立ちます。

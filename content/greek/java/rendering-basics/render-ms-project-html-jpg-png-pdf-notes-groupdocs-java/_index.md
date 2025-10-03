@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία MS Project ως HTML, JPG, PNG και PDF με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για Java"
 "url": "/el/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία MS Project ως HTML, JPG, PNG και PDF με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

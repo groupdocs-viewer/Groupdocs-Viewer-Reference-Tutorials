@@ -4,8 +4,8 @@
 "title": "Lizenzverwaltung in GroupDocs.Viewer für .NET meistern – Ein umfassender Leitfaden"
 "url": "/de/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Lizenzverwaltung in GroupDocs.Viewer für .NET meistern
 ## Ein umfassender Leitfaden
 

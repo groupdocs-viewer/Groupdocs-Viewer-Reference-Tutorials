@@ -4,8 +4,8 @@
 "title": "Effizientes Rendern des Excel-Druckbereichs mit GroupDocs.Viewer für .NET"
 "url": "/de/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Effizientes Rendern des Excel-Druckbereichs mit GroupDocs.Viewer für .NET
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "Konvertieren Sie PLT-Dateien mit GroupDocs.Viewer .NET in HTML, JPG, PNG und PDF"
 "url": "/de/net/export-conversion/convert-plt-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Konvertieren Sie PLT-Dateien mit GroupDocs.Viewer .NET
 ## Einführung
 Haben Sie Schwierigkeiten, technische Zeichnungen aus PLT-Dateien zu konvertieren? Entdecken Sie, wie Sie sie mithilfe der leistungsstarken GroupDocs.Viewer .NET-Bibliothek nahtlos in HTML, JPG, PNG oder PDF konvertieren. Ob Sie diese Formate für die Webanzeige oder Präsentationszwecke benötigen – dieser Leitfaden hilft Ihnen bei der Optimierung Ihrer Implementierung.

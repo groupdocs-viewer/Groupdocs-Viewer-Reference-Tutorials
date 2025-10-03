@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer에서 문서 유형 사양을 구현하는 방법&#58; 단계별 가이드"
 "url": "/ko/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer에서 문서 유형 사양을 구현하는 방법
 
 Java용 GroupDocs.Viewer를 사용하여 DOCX 파일을 렌더링하기 위한 파일 유형을 지정하는 방법에 대한 단계별 가이드입니다.

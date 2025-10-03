@@ -4,8 +4,8 @@
 "title": "Comment récupérer des mises en page et des calques CAO à l'aide de GroupDocs.Viewer .NET pour une gestion de conception efficace"
 "url": "/fr/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Comment récupérer des mises en page et des calques CAO à l'aide de GroupDocs.Viewer .NET
 ## Introduction
 Dans le domaine de la Conception Assistée par Ordinateur (CAO), la gestion efficace de dessins complexes est cruciale, notamment lorsqu'il s'agit de gérer plusieurs mises en page et calques au sein d'un même fichier. Pour les architectes, les ingénieurs et les concepteurs, accéder rapidement à des informations spécifiques améliore la productivité. **GroupDocs.Viewer .NET** offre une solution puissante en permettant aux développeurs d'extraire par programmation des mises en page et des calques à partir de dessins CAO.

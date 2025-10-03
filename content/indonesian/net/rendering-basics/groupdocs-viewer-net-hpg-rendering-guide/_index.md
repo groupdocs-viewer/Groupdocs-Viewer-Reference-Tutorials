@@ -4,8 +4,8 @@
 "title": "Render Dokumen HPG secara Efisien ke HTML, JPG, PNG, PDF Menggunakan GroupDocs.Viewer .NET"
 "url": "/id/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender Dokumen HPG Menggunakan GroupDocs.Viewer .NET
 
 ## Perkenalan

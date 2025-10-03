@@ -5,8 +5,8 @@
 "title": "Rendera CAD-ritningar"
 "url": "/sv/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Rendera CAD-ritningar
 
 

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용한 Java에서의 효율적인 PDF 계층 렌더링"
 "url": "/ko/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용한 Java에서의 효율적인 PDF 계층 렌더링
 
 ## 소개

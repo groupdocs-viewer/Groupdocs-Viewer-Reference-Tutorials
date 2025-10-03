@@ -4,8 +4,8 @@
 "title": "Μετατροπή εγγράφων σε JPG με το GroupDocs.Viewer για .NET™ Ένας πλήρης οδηγός"
 "url": "/el/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Μετατροπή εγγράφων σε JPG με το GroupDocs.Viewer για .NET: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

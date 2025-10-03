@@ -5,8 +5,8 @@
 "title": "Điều chỉnh tràn văn bản trong ô"
 "url": "/vi/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Điều chỉnh tràn văn bản trong ô
 
 ## Giới thiệu

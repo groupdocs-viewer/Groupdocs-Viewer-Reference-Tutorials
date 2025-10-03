@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 限製文件渲染中的 JPG 大小"
 "url": "/zh-hant/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 限製文件渲染中的 JPG 大小
 
 ## 介紹

@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory CF2 do HTML, JPG, PNG, PDF v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/rendering-basics/render-cf2-files-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Komplexní průvodce: Vykreslování souborů CF2 do různých formátů pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

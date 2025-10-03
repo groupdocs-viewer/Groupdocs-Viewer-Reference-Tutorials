@@ -4,8 +4,8 @@
 "title": "Erőforrás-betöltési időkorlát beállítása a GroupDocs.Viewer programban Java-hoz – Dokumentumteljesítmény javítása"
 "url": "/hu/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Erőforrás-betöltési időkorlát beállítása a GroupDocs.Viewerben Java-ban: A dokumentummegjelenítés hatékonyságának javítása
 
 ## Bevezetés

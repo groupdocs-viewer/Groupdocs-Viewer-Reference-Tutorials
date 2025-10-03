@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 .NET 반응형 HTML 렌더링 구현&#58; 개발자를 위한 포괄적인 가이드"
 "url": "/ko/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 .NET 반응형 HTML 렌더링 구현: 개발자 가이드
 
 ## 소개

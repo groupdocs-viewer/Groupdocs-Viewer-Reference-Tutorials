@@ -4,8 +4,8 @@
 "title": "แบ่งภาพวาด CAD ออกเป็นไทล์โดยใช้ GroupDocs.Viewer Java เพื่อการเรนเดอร์ที่มีประสิทธิภาพ"
 "url": "/th/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # แยกแบบ CAD ออกเป็นไทล์ด้วย GroupDocs.Viewer Java
 
 ## การแนะนำ

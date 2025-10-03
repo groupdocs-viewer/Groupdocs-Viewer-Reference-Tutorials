@@ -5,8 +5,8 @@
 "title": "Povolit vrstvené vykreslování v PDF"
 "url": "/cs/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Povolit vrstvené vykreslování v PDF
 
 ## Zavedení

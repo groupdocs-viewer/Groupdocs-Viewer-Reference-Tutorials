@@ -4,8 +4,8 @@
 "title": "Cách xoay trang PDF bằng GroupDocs.Viewer cho .NET&#58; Hướng dẫn dành cho nhà phát triển"
 "url": "/vi/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách xoay trang PDF bằng GroupDocs.Viewer cho .NET: Hướng dẫn dành cho nhà phát triển
 
 ## Giới thiệu

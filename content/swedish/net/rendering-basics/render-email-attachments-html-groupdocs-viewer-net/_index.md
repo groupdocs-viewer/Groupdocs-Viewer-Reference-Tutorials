@@ -4,8 +4,8 @@
 "title": "Rendera e-postbilagor till HTML med GroupDocs.Viewer för .NET"
 "url": "/sv/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här renderar du e-postbilagor till HTML med GroupDocs.Viewer för .NET
 ## Introduktion
 Behöver du ett effektivt sätt att konvertera e-postbilagor till lättläst HTML? Oavsett om det gäller att förbättra dokumenttillgängligheten eller förenkla innehållsdelning, är rendering av bilagor avgörande för effektiv digital korrespondenshantering. Den här guiden guidar dig genom hur du använder **GroupDocs.Viewer för .NET** att uppnå detta med lätthet.

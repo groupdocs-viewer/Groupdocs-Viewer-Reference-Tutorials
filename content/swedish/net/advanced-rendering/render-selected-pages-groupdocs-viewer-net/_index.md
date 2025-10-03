@@ -4,8 +4,8 @@
 "title": "Så här renderar du valda sidor med GroupDocs.Viewer .NET &#58; En omfattande guide för utvecklare"
 "url": "/sv/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar specifika sidor med GroupDocs.Viewer .NET
 
 ## Introduktion

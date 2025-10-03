@@ -5,8 +5,8 @@
 "title": "Microsoft Project दस्तावेज़ों का प्रतिपादन"
 "url": "/hi/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Microsoft Project दस्तावेज़ों का प्रतिपादन
 
 ## परिचय

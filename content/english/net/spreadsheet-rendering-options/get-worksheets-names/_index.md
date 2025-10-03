@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Excel Processing"]
 tags: ["csharp", "excel", "spreadsheet", "worksheet-names", "groupdocs"]
+type: docs
 ---
-
 # Get Excel Worksheet Names in C# - The Complete Developer Guide
 
 ## Introduction

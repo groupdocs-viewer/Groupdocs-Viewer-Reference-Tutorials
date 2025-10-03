@@ -4,8 +4,8 @@
 "title": "Cách tải tài liệu có mã hóa cụ thể trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # Cách tải tài liệu có mã hóa cụ thể trong Java bằng GroupDocs.Viewer
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Как исключить определенные шрифты из вывода HTML с помощью GroupDocs.Viewer для .NET"
 "url": "/ru/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как исключить шрифты из HTML-вывода с помощью GroupDocs.Viewer для .NET
 
 ## Введение

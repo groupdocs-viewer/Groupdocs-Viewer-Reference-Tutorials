@@ -4,8 +4,8 @@
 "title": "Jak zakázat výběr textu v PDF pomocí GroupDocs.Viewer .NET pro zvýšení zabezpečení"
 "url": "/cs/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak pomocí GroupDocs.Viewer .NET zakázat výběr textu při vykreslování PDF souborů jako HTML
 
 ## Zavedení

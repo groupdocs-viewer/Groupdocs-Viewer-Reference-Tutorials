@@ -5,8 +5,8 @@
 "title": "File di archivio di rendering"
 "url": "/it/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # File di archivio di rendering
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "Kết xuất bản vẽ CAD dưới dạng JPG bằng GroupDocs.Viewer Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất bản vẽ CAD dưới dạng JPG bằng GroupDocs.Viewer Java: Hướng dẫn từng bước
 
 ## Giới thiệu

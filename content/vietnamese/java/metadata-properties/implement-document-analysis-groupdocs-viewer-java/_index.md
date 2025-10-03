@@ -4,8 +4,8 @@
 "title": "Triển khai Phân tích Tài liệu với GroupDocs.Viewer cho Java&#58; Trích xuất Siêu dữ liệu Trang và Dòng Văn bản"
 "url": "/vi/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai Phân tích Tài liệu với GroupDocs.Viewer cho Java: Trích xuất Siêu dữ liệu Trang và Dòng Văn bản
 
 ## Giới thiệu

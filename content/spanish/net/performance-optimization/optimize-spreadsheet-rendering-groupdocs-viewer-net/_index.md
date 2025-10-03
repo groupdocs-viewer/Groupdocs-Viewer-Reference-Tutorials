@@ -4,8 +4,8 @@
 "title": "Optimice la representación de hojas de cálculo con GroupDocs.Viewer para .NET y omita columnas vacías"
 "url": "/es/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimice la representación de hojas de cálculo con GroupDocs.Viewer para .NET
 ## Cómo omitir la representación de columnas vacías en hojas de cálculo usando GroupDocs.Viewer .NET
 ### Introducción

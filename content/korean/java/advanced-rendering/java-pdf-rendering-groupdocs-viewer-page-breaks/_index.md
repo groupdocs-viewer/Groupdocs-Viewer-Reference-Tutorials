@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용한 Java PDF 렌더링, 스프레드시트에서 페이지 나누기 구현"
 "url": "/ko/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Java PDF 렌더링 마스터하기: 페이지 나누기가 있는 GroupDocs.Viewer
 
 GroupDocs.Viewer를 사용하여 Java 애플리케이션에서 스프레드시트 렌더링의 강력한 기능을 활용하세요. 이 종합 가이드에서는 페이지 나누기를 포함한 Java PDF 렌더링을 구현하여 PDF로 원활하게 변환하는 방법을 보여줍니다.

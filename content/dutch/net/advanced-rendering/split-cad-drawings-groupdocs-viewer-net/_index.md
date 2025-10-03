@@ -4,8 +4,8 @@
 "title": "CAD-tekeningen opsplitsen in tegels met behulp van GroupDocs.Viewer .NET voor efficiënte rendering"
 "url": "/nl/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # CAD-tekeningen opsplitsen in tegels met GroupDocs.Viewer .NET
 
 ## Invoering

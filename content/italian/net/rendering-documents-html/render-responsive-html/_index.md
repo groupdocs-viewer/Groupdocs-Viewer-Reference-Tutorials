@@ -5,8 +5,8 @@
 "title": "Rendi HTML reattivo"
 "url": "/it/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Rendi HTML reattivo
 
 ## Introduzione

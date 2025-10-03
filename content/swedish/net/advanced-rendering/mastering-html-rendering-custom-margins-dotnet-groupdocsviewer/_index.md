@@ -4,8 +4,8 @@
 "title": "Bemästra HTML-rendering med anpassade marginaler i .NET med GroupDocs.Viewer"
 "url": "/sv/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra HTML-rendering med användardefinierade marginaler i .NET med GroupDocs.Viewer
 
 ## Introduktion

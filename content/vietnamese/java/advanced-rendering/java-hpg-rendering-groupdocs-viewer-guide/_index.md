@@ -4,8 +4,8 @@
 "title": "Kết xuất Java HPG bằng GroupDocs.Viewer&#58; Hướng dẫn đầy đủ"
 "url": "/vi/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Hướng dẫn toàn diện về việc triển khai Java HPG Rendering với GroupDocs.Viewer
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "Tentukan Nama File Saat Merender File Arsip"
 "url": "/id/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Tentukan Nama File Saat Merender File Arsip
 
 ## Perkenalan

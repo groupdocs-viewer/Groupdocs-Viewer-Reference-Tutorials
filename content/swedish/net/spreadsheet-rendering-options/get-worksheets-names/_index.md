@@ -5,8 +5,8 @@
 "title": "Hämta namn på arbetsblad"
 "url": "/sv/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Hämta namn på arbetsblad
 
 ## Introduktion

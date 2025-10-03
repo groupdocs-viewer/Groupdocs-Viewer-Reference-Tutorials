@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java'da Yorumlarla Belgeler Nasıl Oluşturulur"
 "url": "/tr/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java'da Yorumlarla Belgeler Nasıl Oluşturulur
 ## giriiş
 Yorumları koruyarak belgeleri HTML'ye dönüştürmekte zorluk mu çekiyorsunuz? Bu kılavuz, Java'daki güçlü GroupDocs.Viewer kütüphanesini kullanarak bir belgeyi yorumlarıyla birlikte işlemenizi sağlar. Belgeleri sorunsuz bir şekilde yönetiyor veya Java becerilerinizi geliştiriyor olun, bu eğitim tam size göre.

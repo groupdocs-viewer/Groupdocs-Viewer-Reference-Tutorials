@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58;ı Kullanarak Java'da Arşiv Klasörlerinin Oluşturulması Adım Adım Kılavuz"
 "url": "/tr/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer ile Arşiv Klasörlerinin Oluşturulması
 
 ## giriiş

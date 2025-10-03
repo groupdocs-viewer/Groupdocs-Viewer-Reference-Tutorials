@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak Akışlardan Belgeleri Oluşturun&#58; Geliştiriciler İçin Kapsamlı Bir Kılavuz"
 "url": "/tr/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak Akışlardan Belgeleri Oluşturma: Geliştiriciler İçin Kapsamlı Bir Kılavuz
 
 ## giriiş

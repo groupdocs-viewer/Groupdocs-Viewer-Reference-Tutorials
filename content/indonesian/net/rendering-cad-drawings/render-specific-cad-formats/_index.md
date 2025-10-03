@@ -5,8 +5,8 @@
 "title": "Format CAD Spesifik Render (CF2)"
 "url": "/id/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Format CAD Spesifik Render (CF2)
 
 ## Perkenalan

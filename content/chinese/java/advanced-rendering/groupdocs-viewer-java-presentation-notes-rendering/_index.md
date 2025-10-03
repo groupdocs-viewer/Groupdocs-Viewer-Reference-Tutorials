@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 渲染带注释的演示文稿——综合指南"
 "url": "/zh/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 渲染带注释的演示文稿
 
 ## 介绍

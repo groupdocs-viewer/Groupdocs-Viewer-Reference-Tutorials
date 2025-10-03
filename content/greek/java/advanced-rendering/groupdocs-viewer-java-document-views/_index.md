@@ -4,8 +4,8 @@
 "title": "Κύριο GroupDocs.Viewer για Java Ανάκτηση πληροφοριών και πληροφοριών σχετικά με την προβολή εγγράφων"
 "url": "/el/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Εξοικείωση με τις προβολές εγγράφων με το GroupDocs.Viewer για Java
 ## Προηγμένες Τεχνικές Απόδοσης
 **URL SEO:** Προβολές-εγγράφων-java-του-groupdocs-viewer

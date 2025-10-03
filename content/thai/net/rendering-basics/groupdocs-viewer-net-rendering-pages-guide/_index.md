@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์หน้าเฉพาะใน .NET ด้วย GroupDocs.Viewer คำแนะนำที่ครอบคลุม"
 "url": "/th/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์หน้าเฉพาะใน .NET ด้วย GroupDocs.Viewer: คู่มือที่ครอบคลุม
 
 ## การแนะนำ

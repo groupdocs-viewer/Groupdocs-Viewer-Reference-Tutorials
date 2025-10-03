@@ -5,8 +5,8 @@
 "title": "Aktifkan Caching untuk Pemrosesan Dokumen yang Lebih Cepat"
 "url": "/id/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Aktifkan Caching untuk Pemrosesan Dokumen yang Lebih Cepat
 
 ## Perkenalan

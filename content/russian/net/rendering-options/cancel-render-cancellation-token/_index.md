@@ -5,8 +5,8 @@
 "title": "Отменить рендеринг с помощью токена отмены"
 "url": "/ru/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Отменить рендеринг с помощью токена отмены
 
 ## Введение

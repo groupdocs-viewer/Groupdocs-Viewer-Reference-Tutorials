@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 Excel 시트를 행별로 페이지로 분할하여 효율적인 데이터 관리"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 Excel 시트를 행별로 페이지로 분할
 
 ## 소개

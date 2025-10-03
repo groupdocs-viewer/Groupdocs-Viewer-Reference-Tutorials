@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 將 DOCX 轉換為包含外部資源的 HTML"
 "url": "/zh-hant/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 將 DOCX 轉換為包含外部資源的 HTML
 
 ## 介紹

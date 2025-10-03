@@ -5,8 +5,8 @@
 "title": "CDR Görüntülerini Oluştur"
 "url": "/tr/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # CDR Görüntülerini Oluştur
 
 ## giriiş

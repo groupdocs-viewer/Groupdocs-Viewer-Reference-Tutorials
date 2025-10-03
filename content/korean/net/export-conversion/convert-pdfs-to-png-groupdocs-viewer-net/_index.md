@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 PDF를 원본 크기의 PNG로 변환"
 "url": "/ko/net/export-conversion/convert-pdfs-to-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 PDF를 원본 크기의 PNG로 변환
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "Απόδοση επιλεγμένων σελίδων"
 "url": "/el/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Απόδοση επιλεγμένων σελίδων
 
 ## Εισαγωγή

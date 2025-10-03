@@ -5,8 +5,8 @@
 "title": "Vykreslování webových dokumentů"
 "url": "/cs/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Vykreslování webových dokumentů
 
 ## Zavedení

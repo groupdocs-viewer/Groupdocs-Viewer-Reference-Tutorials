@@ -4,8 +4,8 @@
 "title": "Kết xuất tất cả các bố cục CAD một cách hiệu quả bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tất cả các bố cục CAD một cách hiệu quả bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

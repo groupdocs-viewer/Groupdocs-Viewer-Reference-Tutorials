@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["rotation", "flip-pages", "document-viewer", "rendering"]
+type: docs
 ---
-
 # How to Flip and Rotate Pages in .NET with GroupDocs.Viewer
 
 ## Introduction

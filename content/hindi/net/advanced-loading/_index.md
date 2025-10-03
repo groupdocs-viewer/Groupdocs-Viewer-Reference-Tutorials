@@ -5,8 +5,8 @@
 "title": "उन्नत लोडिंग विकल्प"
 "url": "/hi/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # उन्नत लोडिंग विकल्प
 
 ## परिचय

@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/ko/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # 문서 첨부 파일 처리
 
 ## 소개

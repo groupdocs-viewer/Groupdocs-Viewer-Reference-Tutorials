@@ -4,8 +4,8 @@
 "title": "การตั้งค่าใบอนุญาต GroupDocs.Viewer .NET ผ่าน Stream&#58; คู่มือฉบับสมบูรณ์"
 "url": "/th/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # การตั้งค่าใบอนุญาต GroupDocs.Viewer .NET ผ่าน Stream: คู่มือฉบับสมบูรณ์
 
 ## การแนะนำ

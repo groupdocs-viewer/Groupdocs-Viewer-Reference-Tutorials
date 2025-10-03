@@ -4,8 +4,8 @@
 "title": "Padroneggiare i nomi di file personalizzati Java di GroupDocs.Viewer per il rendering PDF degli archivi"
 "url": "/it/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggiare GroupDocs.Viewer Java: specificare nomi di file personalizzati durante il rendering degli archivi in PDF
 
 ## Introduzione

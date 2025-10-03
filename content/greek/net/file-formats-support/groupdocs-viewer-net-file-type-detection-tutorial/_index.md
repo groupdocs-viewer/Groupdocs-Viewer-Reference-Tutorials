@@ -4,8 +4,8 @@
 "title": "Πώς να εντοπίσετε τύπους αρχείων χρησιμοποιώντας το GroupDocs.Viewer για .NET™; Ένα ολοκληρωμένο σεμινάριο"
 "url": "/el/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να εντοπίσετε τύπους αρχείων χρησιμοποιώντας το GroupDocs.Viewer για .NET: Ένα ολοκληρωμένο σεμινάριο
 
 ## Εισαγωγή

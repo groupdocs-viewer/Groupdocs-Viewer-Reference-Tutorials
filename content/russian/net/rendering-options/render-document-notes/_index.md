@@ -5,8 +5,8 @@
 "title": "Визуализация документа с примечаниями"
 "url": "/ru/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Визуализация документа с примечаниями
 
 ## Введение

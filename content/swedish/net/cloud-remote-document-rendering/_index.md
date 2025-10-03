@@ -3,8 +3,8 @@
 "title": "Handledningar för moln- och fjärrrendering av dokument för GroupDocs.Viewer .NET"
 "url": "/sv/net/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Handledningar för moln- och fjärrrendering av dokument för GroupDocs.Viewer .NET
 
 Lär dig implementera moln- och fjärrrendering av dokument med våra GroupDocs.Viewer .NET-handledningar. Dessa praktiska guider demonstrerar tekniker för att ladda och rendera dokument från molnlagringsleverantörer, hantera fjärr-URL:er, hantera nätverksfilkällor och implementera distribuerade dokumentvisningslösningar. Varje handledning innehåller detaljerade .NET-kodexempel för vanliga moln- och fjärrrenderingsscenarier, vilket hjälper dig att bygga applikationer med flexibla dokumentåtkomstfunktioner.

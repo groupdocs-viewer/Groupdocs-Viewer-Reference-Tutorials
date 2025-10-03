@@ -4,8 +4,8 @@
 "title": "Licencek beállítása a GroupDocs.Viewerben Java fájl- és URL-beállítási útmutató"
 "url": "/hu/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Licencek beállítása a GroupDocs.Viewer Java-ban: Fájl- és URL-beállítási útmutató
 
 ## Bevezetés

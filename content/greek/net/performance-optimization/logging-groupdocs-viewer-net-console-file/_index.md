@@ -4,8 +4,8 @@
 "title": "Υλοποίηση Αποτελεσματικής Καταγραφής στο GroupDocs.Viewer .NET για Έξοδους Κονσόλας και Αρχείων"
 "url": "/el/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση Αποτελεσματικής Καταγραφής στο GroupDocs.Viewer .NET
 
 ## Εισαγωγή

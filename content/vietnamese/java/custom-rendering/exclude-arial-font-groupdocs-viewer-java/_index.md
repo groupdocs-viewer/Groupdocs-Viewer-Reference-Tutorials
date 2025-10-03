@@ -4,8 +4,8 @@
 "title": "Cách loại trừ phông chữ Arial trong kết xuất HTML bằng GroupDocs.Viewer Java&#58; Hướng dẫn từng bước"
 "url": "/vi/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách loại trừ phông chữ Arial khi kết xuất tài liệu sang HTML bằng GroupDocs.Viewer Java
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Fájltípusok észlelése a GroupDocs.Viewer for .NET használatával – Átfogó útmutató"
 "url": "/hu/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Fájltípusok észlelése a GroupDocs.Viewer for .NET használatával: Átfogó oktatóanyag
 
 ## Bevezetés

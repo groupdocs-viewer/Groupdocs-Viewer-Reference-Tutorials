@@ -4,8 +4,8 @@
 "title": "Rendera MS Project-dokument med GroupDocs.Viewer .NET för förbättrad projektledning"
 "url": "/sv/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Behärska rendering av MS Project-dokument med GroupDocs.Viewer .NET
 
 ## Introduktion

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - retrieve document attachments Java
 - save document attachments GroupDocs
-
+type: docs
 ---
-
-
 # How to Retrieve and Save Document Attachments Using GroupDocs.Viewer for Java: A Comprehensive Guide
 
 ## Introduction

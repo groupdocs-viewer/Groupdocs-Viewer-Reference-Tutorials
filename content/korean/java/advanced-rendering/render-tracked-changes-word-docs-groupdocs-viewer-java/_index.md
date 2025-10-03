@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java를 사용하여 Word 문서의 추적된 변경 내용을 렌더링하는 방법&#58; 종합 가이드"
 "url": "/ko/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 Word 문서의 추적된 변경 내용 렌더링
 
 ## 소개

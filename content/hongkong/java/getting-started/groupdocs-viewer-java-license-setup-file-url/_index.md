@@ -4,8 +4,8 @@
 "title": "如何設定 GroupDocs.Viewer Java 許可證&#58;本機檔案或 URL 指南"
 "url": "/zh-hant/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # 如何設定 GroupDocs.Viewer Java 許可證：本機檔案或 URL
 
 透過從本機檔案或線上資源設定許可證，充分釋放 GroupDocs.Viewer 在您的 Java 應用程式上的潛力。本指南將幫助您有效率地實現這兩種方法，確保您能夠存取這款強大的文件檢視工具所提供的所有功能。

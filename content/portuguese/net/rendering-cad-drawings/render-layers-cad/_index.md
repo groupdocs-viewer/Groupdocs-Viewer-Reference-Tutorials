@@ -5,8 +5,8 @@
 "title": "Camadas de renderização em desenhos CAD"
 "url": "/pt/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Camadas de renderização em desenhos CAD
 
 ## Introdução

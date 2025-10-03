@@ -5,8 +5,8 @@
 "title": "呈現特定資料夾和過濾訊息（Outlook）"
 "url": "/zh-hant/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # 呈現特定資料夾和過濾訊息（Outlook）
 
 ## 介紹

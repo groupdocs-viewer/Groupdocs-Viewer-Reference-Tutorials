@@ -5,8 +5,8 @@
 "title": "Tekstbestanden (.txt) weergeven"
 "url": "/nl/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Tekstbestanden (.txt) weergeven
 
 ## Invoering

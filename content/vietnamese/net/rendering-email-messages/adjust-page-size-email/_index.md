@@ -5,8 +5,8 @@
 "title": "Điều chỉnh kích thước trang khi hiển thị tin nhắn email"
 "url": "/vi/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # Điều chỉnh kích thước trang khi hiển thị tin nhắn email
 
 ## Giới thiệu

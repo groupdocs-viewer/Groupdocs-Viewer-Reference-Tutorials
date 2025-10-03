@@ -5,8 +5,8 @@
 "title": "누락된 글꼴 바꾸기"
 "url": "/ko/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # 누락된 글꼴 바꾸기
 
 ## 소개

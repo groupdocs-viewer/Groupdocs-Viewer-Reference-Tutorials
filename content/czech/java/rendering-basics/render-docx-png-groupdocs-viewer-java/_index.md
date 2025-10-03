@@ -4,8 +4,8 @@
 "title": "Jak převést soubory DOCX do PNG pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/rendering-basics/render-docx-png-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak převést soubory DOCX do PNG pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

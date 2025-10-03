@@ -5,8 +5,8 @@
 "title": "Rendering di layout singoli in disegni CAD"
 "url": "/it/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Rendering di layout singoli in disegni CAD
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "Cách kết xuất bài thuyết trình có ghi chú bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất bài thuyết trình có ghi chú bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Afficher les lignes et colonnes masquées dans les fichiers Excel avec GroupDocs.Viewer pour .NET - Guide avancé"
 "url": "/fr/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Afficher les lignes et colonnes masquées dans les fichiers Excel à l'aide de GroupDocs.Viewer pour .NET
 
 ## Introduction

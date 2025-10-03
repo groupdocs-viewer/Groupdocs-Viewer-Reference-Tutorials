@@ -4,8 +4,8 @@
 "title": "Vykreslení souborů PST a OST aplikace Outlook do HTML pomocí Javy a GroupDocs.Viewer"
 "url": "/cs/java/rendering-basics/render-outlook-data-html-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit datové soubory Outlooku do HTML pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

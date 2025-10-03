@@ -5,8 +5,8 @@
 "title": "Vykreslení dokumentu do formátu JPGPNG"
 "url": "/cs/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Vykreslení dokumentu do formátu JPGPNG
 
 ## Zavedení

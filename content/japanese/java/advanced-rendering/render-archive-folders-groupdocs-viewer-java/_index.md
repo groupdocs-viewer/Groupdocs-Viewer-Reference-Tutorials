@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でアーカイブ フォルダをレンダリングする手順ガイド"
 "url": "/ja/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java でアーカイブ フォルダをレンダリングする
 
 ## 導入

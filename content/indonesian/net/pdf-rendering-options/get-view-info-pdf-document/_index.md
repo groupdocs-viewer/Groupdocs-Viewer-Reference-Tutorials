@@ -5,8 +5,8 @@
 "title": "Dapatkan Info Tampilan untuk Dokumen PDF"
 "url": "/id/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Dapatkan Info Tampilan untuk Dokumen PDF
 
 ## Perkenalan

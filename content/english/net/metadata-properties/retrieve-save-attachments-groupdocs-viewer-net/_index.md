@@ -8,10 +8,8 @@ keywords:
 - retrieve document attachments with GroupDocs.Viewer .NET
 - save document attachments using GroupDocs.Viewer .NET
 - GroupDocs Viewer metadata management
-
+type: docs
 ---
-
-
 # How to Retrieve and Save Document Attachments Using GroupDocs.Viewer .NET
 
 ## Introduction

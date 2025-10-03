@@ -5,8 +5,8 @@
 "title": "PDF İşleme Seçenekleri"
 "url": "/tr/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF İşleme Seçenekleri
 
 

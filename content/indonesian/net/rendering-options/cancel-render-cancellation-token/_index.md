@@ -5,8 +5,8 @@
 "title": "Batalkan Render dengan Token Pembatalan"
 "url": "/id/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Batalkan Render dengan Token Pembatalan
 
 ## Perkenalan

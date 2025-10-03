@@ -5,8 +5,8 @@
 "title": "특정 프로젝트 시간 간격 렌더링(MS Project)"
 "url": "/ko/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # 특정 프로젝트 시간 간격 렌더링(MS Project)
 
 ## 소개

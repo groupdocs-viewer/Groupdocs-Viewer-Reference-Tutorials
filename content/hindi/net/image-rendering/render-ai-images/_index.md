@@ -5,8 +5,8 @@
 "title": "AI छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # AI छवियाँ प्रस्तुत करें
 
 ## परिचय

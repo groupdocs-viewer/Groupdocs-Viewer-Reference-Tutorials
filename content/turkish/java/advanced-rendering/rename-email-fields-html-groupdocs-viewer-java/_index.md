@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java Kullanılarak E-postalar HTML'ye Dönüştürülürken E-posta Alanları Nasıl Yeniden Adlandırılır"
 "url": "/tr/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java ile E-postaları HTML'ye Dönüştürürken E-posta Alanlarının Adını Nasıl Değiştirirsiniz
 
 ## giriiş

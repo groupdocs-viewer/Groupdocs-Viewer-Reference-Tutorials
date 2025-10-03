@@ -5,8 +5,8 @@
 "title": "Rendera anteckningar och justera tidsenheter (MS Project)"
 "url": "/sv/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Rendera anteckningar och justera tidsenheter (MS Project)
 
 ## Introduktion

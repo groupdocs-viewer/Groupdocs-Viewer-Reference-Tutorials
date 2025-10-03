@@ -5,8 +5,8 @@
 "title": "Archívumok renderelése egy vagy több HTML oldalra"
 "url": "/hu/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Archívumok renderelése egy vagy több HTML oldalra
 
 ## Bevezetés

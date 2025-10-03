@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ด้วยทรัพยากรแบบฝังตัวหรือภายนอก"
 "url": "/th/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # เรนเดอร์ด้วยทรัพยากรแบบฝังตัวหรือภายนอก
 
 ## การแนะนำ

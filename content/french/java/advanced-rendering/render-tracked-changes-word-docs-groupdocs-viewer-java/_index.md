@@ -4,8 +4,8 @@
 "title": "Comment afficher les modifications suivies dans les documents Word à l'aide de GroupDocs.Viewer pour Java – Guide complet"
 "url": "/fr/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Affichage des modifications suivies dans les documents Word avec GroupDocs.Viewer pour Java
 
 ## Introduction

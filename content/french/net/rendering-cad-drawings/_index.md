@@ -5,8 +5,8 @@
 "title": "Rendu de dessins CAO"
 "url": "/fr/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Rendu de dessins CAO
 
 

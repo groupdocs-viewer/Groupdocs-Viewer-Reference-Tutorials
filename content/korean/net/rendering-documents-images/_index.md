@@ -5,8 +5,8 @@
 "title": "문서를 이미지로 렌더링"
 "url": "/ko/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # 문서를 이미지로 렌더링
 
 ## 소개

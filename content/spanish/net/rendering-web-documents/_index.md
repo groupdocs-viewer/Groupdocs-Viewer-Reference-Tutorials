@@ -5,8 +5,8 @@
 "title": "Representación de documentos web"
 "url": "/es/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Representación de documentos web
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "Configuration de la licence GroupDocs.Viewer .NET via Stream - Guide complet"
 "url": "/fr/net/getting-started/groupdocs-viewer-net-license-stream-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Configuration de la licence GroupDocs.Viewer .NET via Stream : guide complet
 
 ## Introduction

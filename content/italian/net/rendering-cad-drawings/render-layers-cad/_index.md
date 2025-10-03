@@ -5,8 +5,8 @@
 "title": "Livelli di rendering nei disegni CAD"
 "url": "/it/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Livelli di rendering nei disegni CAD
 
 ## Introduzione

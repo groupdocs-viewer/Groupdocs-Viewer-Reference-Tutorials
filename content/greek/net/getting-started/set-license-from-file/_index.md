@@ -5,8 +5,8 @@
 "title": "Ορισμός άδειας χρήσης από αρχείο"
 "url": "/el/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Ορισμός άδειας χρήσης από αρχείο
 
 ## Εισαγωγή

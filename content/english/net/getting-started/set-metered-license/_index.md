@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Getting Started"]
 tags: ["metered-license", "licensing", "setup", "configuration"]
+type: docs
 ---
-
 # GroupDocs.Viewer Metered License Setup - Complete Implementation Guide
 
 ## Introduction

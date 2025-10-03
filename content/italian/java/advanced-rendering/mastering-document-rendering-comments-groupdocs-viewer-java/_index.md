@@ -4,8 +4,8 @@
 "title": "Come visualizzare documenti con commenti in Java utilizzando GroupDocs.Viewer"
 "url": "/it/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Come visualizzare documenti con commenti in Java utilizzando GroupDocs.Viewer
 ## Introduzione
 Hai difficoltà a convertire i documenti in HTML mantenendo i commenti? Questa guida ti guiderà nella creazione di un documento con i relativi commenti utilizzando la potente libreria GroupDocs.Viewer in Java. Che tu voglia gestire i documenti in modo semplice o migliorare le tue competenze Java, questo tutorial è per te.

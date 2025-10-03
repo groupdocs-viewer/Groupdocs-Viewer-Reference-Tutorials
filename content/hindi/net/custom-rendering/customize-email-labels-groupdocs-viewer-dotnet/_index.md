@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer में ईमेल लेबल कस्टमाइज़ करें फ़ील्ड का नाम बदलने के लिए एक संपूर्ण गाइड"
 "url": "/hi/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer में ईमेल लेबल कस्टमाइज़ करें: फ़ील्ड का नाम बदलने के लिए एक संपूर्ण गाइड
 
 ## परिचय

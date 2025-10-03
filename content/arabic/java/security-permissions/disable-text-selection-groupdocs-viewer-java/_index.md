@@ -4,8 +4,8 @@
 "title": "كيفية تعطيل تحديد النص في ملفات PDF باستخدام GroupDocs.Viewer Java - دليل شامل"
 "url": "/ar/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تنفيذ تعطيل تحديد النص في عرض PDF باستخدام GroupDocs.Viewer Java
 ## مقدمة
 هل تحتاج إلى طريقة آمنة لعرض ملفات PDF على الويب دون السماح بتحديد النص؟ يوضح هذا الدليل الشامل كيفية تعطيل تحديد النص باستخدام مكتبة GroupDocs.Viewer لجافا. بتحويل النص إلى صور، يبقى محتواك آمنًا وغير قابل للتعديل عند عرضه على الإنترنت.

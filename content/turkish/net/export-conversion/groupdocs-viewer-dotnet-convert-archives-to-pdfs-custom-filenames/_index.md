@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer'ı Kullanarak Arşivleri Özel Dosya Adlarıyla PDF'lere Dönüştürün"
 "url": "/tr/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer'ı Kullanarak Arşivleri Özel Dosya Adlarıyla PDF'lere Dönüştürün
 
 ## giriiş

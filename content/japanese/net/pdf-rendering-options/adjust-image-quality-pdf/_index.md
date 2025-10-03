@@ -5,8 +5,8 @@
 "title": "PDFの画像品質を調整する"
 "url": "/ja/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # PDFの画像品質を調整する
 
 ## 導入

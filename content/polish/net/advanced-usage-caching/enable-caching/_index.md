@@ -5,8 +5,8 @@
 "title": "Włącz buforowanie, aby przyspieszyć przetwarzanie dokumentów"
 "url": "/pl/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Włącz buforowanie, aby przyspieszyć przetwarzanie dokumentów
 
 ## Wstęp

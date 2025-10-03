@@ -4,8 +4,8 @@
 "title": "Excel munkalapnevek lekérése és nyomtatása a GroupDocs.Viewer for .NET használatával (2023-as útmutató)"
 "url": "/hu/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Excel munkalapnevek lekérése és nyomtatása a GroupDocs.Viewer for .NET használatával: Átfogó útmutató
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "मीटर्ड लाइसेंस सेट करें"
 "url": "/hi/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # मीटर्ड लाइसेंस सेट करें
 
 ## परिचय

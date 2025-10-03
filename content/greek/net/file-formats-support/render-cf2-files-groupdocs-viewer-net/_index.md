@@ -4,8 +4,8 @@
 "title": "Απόδοση αρχείων CF2 σε HTML, JPG, PNG και PDF με το GroupDocs.Viewer για .NET"
 "url": "/el/net/file-formats-support/render-cf2-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση αρχείων CF2 με το GroupDocs.Viewer για .NET
 
 ## Πώς να μετατρέψετε αρχεία CF2 χρησιμοποιώντας το GroupDocs.Viewer για .NET

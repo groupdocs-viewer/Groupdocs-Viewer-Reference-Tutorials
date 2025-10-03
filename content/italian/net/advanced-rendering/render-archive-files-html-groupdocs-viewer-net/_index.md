@@ -4,8 +4,8 @@
 "title": "Come eseguire il rendering di file di archivio in HTML utilizzando GroupDocs.Viewer .NET&#58; una guida passo passo"
 "url": "/it/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Come convertire i file di archivio in HTML utilizzando GroupDocs.Viewer .NET: una guida passo passo
 ## Introduzione
 Hai difficoltà a presentare file di archivio come RAR o ZIP su una pagina web? Convertire questi formati di file complessi in documenti HTML di facile utilizzo è fondamentale per una distribuzione fluida dei contenuti. Con GroupDocs.Viewer per .NET, questo compito diventa semplice ed efficiente.

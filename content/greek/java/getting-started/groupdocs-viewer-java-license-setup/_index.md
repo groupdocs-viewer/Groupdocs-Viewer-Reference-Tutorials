@@ -4,8 +4,8 @@
 "title": "Πώς να ορίσετε άδειες χρήσης στο GroupDocs.Viewer - Οδηγός ρύθμισης αρχείων και URL Java"
 "url": "/el/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να ορίσετε άδειες χρήσης στο GroupDocs.Viewer Java: Οδηγός ρύθμισης αρχείων και URL
 
 ## Εισαγωγή

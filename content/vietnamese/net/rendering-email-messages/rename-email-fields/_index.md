@@ -5,8 +5,8 @@
 "title": "Đổi tên các trường Email trong quá trình kết xuất"
 "url": "/vi/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Đổi tên các trường Email trong quá trình kết xuất
 
 ## Giới thiệu

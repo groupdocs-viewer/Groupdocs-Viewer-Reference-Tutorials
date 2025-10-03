@@ -4,8 +4,8 @@
 "title": "เรียนรู้การจัดการใบอนุญาตใน GroupDocs.Viewer สำหรับ .NET คำแนะนำที่ครอบคลุม"
 "url": "/th/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # การเรียนรู้การจัดการใบอนุญาตใน GroupDocs.Viewer สำหรับ .NET
 ## คู่มือที่ครอบคลุม
 

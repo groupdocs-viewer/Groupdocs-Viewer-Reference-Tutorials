@@ -4,8 +4,8 @@
 "title": "Zakázání seskupování znaků v PDF pomocí GroupDocs.Viewer pro techniky přesného vykreslování v Javě"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Zakázání seskupování znaků v PDF pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

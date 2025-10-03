@@ -5,8 +5,8 @@
 "title": "Kết xuất với tài nguyên nhúng hoặc bên ngoài"
 "url": "/vi/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Kết xuất với tài nguyên nhúng hoặc bên ngoài
 
 ## Giới thiệu

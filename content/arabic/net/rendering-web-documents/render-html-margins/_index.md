@@ -5,8 +5,8 @@
 "title": "عرض HTML باستخدام الهوامش المحددة من قبل المستخدم"
 "url": "/ar/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # عرض HTML باستخدام الهوامش المحددة من قبل المستخدم
 
 ## مقدمة

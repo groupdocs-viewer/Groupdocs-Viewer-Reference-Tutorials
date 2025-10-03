@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java &#58; chargez et affichez efficacement des documents à partir d'URL"
 "url": "/fr/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer Java : chargement et rendu efficaces de documents à partir d'URL
 
 ## Introduction

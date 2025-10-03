@@ -5,8 +5,8 @@
 "title": "استرداد وطباعة مرفقات المستندات"
 "url": "/ar/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # استرداد وطباعة مرفقات المستندات
 
 ## مقدمة

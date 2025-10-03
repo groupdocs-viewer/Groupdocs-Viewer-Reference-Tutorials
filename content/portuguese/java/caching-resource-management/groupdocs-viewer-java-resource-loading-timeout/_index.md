@@ -4,8 +4,8 @@
 "title": "Definir tempo limite de carregamento de recursos no GroupDocs.Viewer para Java e melhorar o desempenho do documento"
 "url": "/pt/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Definir tempo limite de carregamento de recursos no GroupDocs.Viewer para Java: Melhorar a eficiência de renderização de documentos
 
 ## Introdução

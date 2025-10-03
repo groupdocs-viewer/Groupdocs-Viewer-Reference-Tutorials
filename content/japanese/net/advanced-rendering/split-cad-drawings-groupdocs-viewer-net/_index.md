@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して CAD 図面をタイルに分割し、効率的にレンダリングする方法"
 "url": "/ja/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET で CAD 図面をタイルに分割する方法
 
 ## 導入

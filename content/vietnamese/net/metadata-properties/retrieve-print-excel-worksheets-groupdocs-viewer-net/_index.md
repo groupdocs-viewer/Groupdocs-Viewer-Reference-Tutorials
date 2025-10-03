@@ -4,8 +4,8 @@
 "title": "Cách lấy và in tên bảng tính Excel bằng GroupDocs.Viewer cho .NET (Hướng dẫn năm 2023)"
 "url": "/vi/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy và in tên bảng tính Excel bằng GroupDocs.Viewer cho .NET: Hướng dẫn toàn diện
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Como ajustar o estouro de texto em planilhas do Excel com o GroupDocs.Viewer para Java"
 "url": "/pt/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Como ajustar o estouro de texto em planilhas do Excel com o GroupDocs.Viewer para Java
 ## Introdução
 Lidar com excesso de texto em células de planilhas ao converter documentos para HTML é um desafio comum, especialmente para arquivos extensos do Excel. **GroupDocs.Viewer para Java** simplifica esse processo, permitindo que você gerencie e oculte texto excedente de forma eficiente.

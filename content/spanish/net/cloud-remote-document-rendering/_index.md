@@ -3,8 +3,8 @@
 "title": "Tutoriales de renderizado de documentos remotos y en la nube para GroupDocs.Viewer .NET"
 "url": "/es/net/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Tutoriales de renderizado de documentos remotos y en la nube para GroupDocs.Viewer .NET
 
 Aprenda a implementar la renderización de documentos en la nube y remota con nuestros tutoriales .NET de GroupDocs.Viewer. Estas guías prácticas muestran técnicas para cargar y renderizar documentos desde proveedores de almacenamiento en la nube, gestionar URL remotas, administrar orígenes de archivos de red e implementar soluciones de visualización distribuida de documentos. Cada tutorial incluye ejemplos detallados de código .NET para escenarios comunes de renderización en la nube y remota, lo que le ayudará a crear aplicaciones con funciones flexibles de acceso a documentos.

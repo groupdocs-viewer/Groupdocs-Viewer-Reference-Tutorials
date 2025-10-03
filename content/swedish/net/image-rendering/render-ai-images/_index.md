@@ -5,8 +5,8 @@
 "title": "Rendera AI-bilder"
 "url": "/sv/net/image-rendering/render-ai-images/"
 "weight": 10
+type: docs
 ---
-
 # Rendera AI-bilder
 
 ## Introduktion

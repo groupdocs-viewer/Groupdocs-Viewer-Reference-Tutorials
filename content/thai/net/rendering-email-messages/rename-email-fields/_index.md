@@ -5,8 +5,8 @@
 "title": "เปลี่ยนชื่อฟิลด์อีเมลระหว่างการเรนเดอร์"
 "url": "/th/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # เปลี่ยนชื่อฟิลด์อีเมลระหว่างการเรนเดอร์
 
 ## การแนะนำ

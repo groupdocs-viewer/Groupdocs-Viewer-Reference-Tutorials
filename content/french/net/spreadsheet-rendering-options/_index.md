@@ -5,8 +5,8 @@
 "title": "Options de rendu de feuille de calcul"
 "url": "/fr/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Options de rendu de feuille de calcul
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Jak vykreslit archivní soubory do HTML pomocí GroupDocs.Viewer .NET – Podrobný návod"
 "url": "/cs/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit archivní soubory do HTML pomocí GroupDocs.Viewer .NET: Podrobný návod
 ## Zavedení
 Máte potíže s prezentací archivních souborů, jako je RAR nebo ZIP, na webové stránce? Převod těchto složitých formátů souborů do uživatelsky přívětivých dokumentů HTML je klíčový pro bezproblémové prezentování obsahu. S GroupDocs.Viewer pro .NET se tento úkol stává jednoduchým a efektivním.

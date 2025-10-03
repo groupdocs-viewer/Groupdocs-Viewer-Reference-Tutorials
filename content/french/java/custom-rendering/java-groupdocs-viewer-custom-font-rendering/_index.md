@@ -4,8 +4,8 @@
 "title": "Comment implémenter le rendu de polices personnalisées en Java avec GroupDocs.Viewer ? Guide étape par étape"
 "url": "/fr/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Comment implémenter le rendu de polices personnalisées en Java avec GroupDocs.Viewer : guide étape par étape
 
 ## Introduction

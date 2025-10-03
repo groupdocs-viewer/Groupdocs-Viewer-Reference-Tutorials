@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - file type detection by extension
 - C# file handling
-
+type: docs
 ---
-
-
 # How to Detect File Types Using GroupDocs.Viewer for .NET: A Comprehensive Tutorial
 
 ## Introduction

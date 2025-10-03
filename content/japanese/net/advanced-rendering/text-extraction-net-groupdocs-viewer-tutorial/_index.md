@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用した .NET でのテキスト抽出のマスター 包括的なガイド"
 "url": "/ja/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用した .NET でのテキスト抽出の習得: 包括的なチュートリアル
 
 ## 導入

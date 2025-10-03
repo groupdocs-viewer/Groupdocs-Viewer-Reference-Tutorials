@@ -5,8 +5,8 @@
 "title": "Λάβετε πληροφορίες προβολής για σχέδια CAD"
 "url": "/el/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Λάβετε πληροφορίες προβολής για σχέδια CAD
 
 ## Εισαγωγή

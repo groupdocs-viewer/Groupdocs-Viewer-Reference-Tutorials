@@ -5,8 +5,8 @@
 "title": "Ausgewählte Seiten rendern"
 "url": "/de/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Ausgewählte Seiten rendern
 
 ## Einführung

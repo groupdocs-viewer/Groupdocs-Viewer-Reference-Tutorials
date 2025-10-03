@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 擷取 MS Project View 資訊 | 元資料與屬性"
 "url": "/zh-hant/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 擷取 MS Project View 訊息
 
 ## 介紹

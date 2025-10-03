@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 将 DOCX 转换为包含嵌入式资源的 HTML"
 "url": "/zh/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 将 DOCX 转换为包含嵌入式资源的 HTML
 
 ## 介绍

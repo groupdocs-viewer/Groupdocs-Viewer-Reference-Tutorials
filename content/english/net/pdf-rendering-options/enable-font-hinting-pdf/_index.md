@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Processing"]
 tags: ["GroupDocs.Viewer", "font-hinting", "pdf-rendering", "text-quality"]
+type: docs
 ---
-
 # PDF Font Rendering .NET - Fix Blurry Text with Font Hinting
 
 ## Introduction

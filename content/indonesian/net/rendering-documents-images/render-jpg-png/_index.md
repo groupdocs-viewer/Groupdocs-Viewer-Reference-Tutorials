@@ -5,8 +5,8 @@
 "title": "Render Dokumen ke JPGPNG"
 "url": "/id/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Render Dokumen ke JPGPNG
 
 ## Perkenalan

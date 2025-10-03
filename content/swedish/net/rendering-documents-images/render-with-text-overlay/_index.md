@@ -5,8 +5,8 @@
 "title": "Rendera med text överlagrad för visning"
 "url": "/sv/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Rendera med text överlagrad för visning
 
 ## Introduktion

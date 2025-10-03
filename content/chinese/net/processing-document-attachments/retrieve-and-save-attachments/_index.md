@@ -5,8 +5,8 @@
 "title": "检索并保存文档附件"
 "url": "/zh/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # 检索并保存文档附件
 
 ## 介绍

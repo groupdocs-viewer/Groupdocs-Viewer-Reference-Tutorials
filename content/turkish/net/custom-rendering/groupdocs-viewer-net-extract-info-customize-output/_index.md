@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET ile Belge Bilgilerini Çıkarın ve Çıktıyı Özelleştirin Kapsamlı Bir Kılavuz"
 "url": "/tr/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile Belge Bilgilerini Çıkarın ve Çıktıyı Özelleştirin
 ## Özel Render Eğitimi
 ### Ne Öğreneceksiniz:

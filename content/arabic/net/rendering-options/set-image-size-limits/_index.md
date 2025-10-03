@@ -5,8 +5,8 @@
 "title": "تعيين حدود حجم الصورة"
 "url": "/ar/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # تعيين حدود حجم الصورة
 
 ## مقدمة

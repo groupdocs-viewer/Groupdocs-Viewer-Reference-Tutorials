@@ -4,8 +4,8 @@
 "title": "Podziel arkusze Excela według wierszy i kolumn za pomocą GroupDocs.Viewer w Javie – kompleksowy przewodnik"
 "url": "/pl/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Dzielenie arkuszy Excela według wierszy i kolumn za pomocą GroupDocs.Viewer w Javie
 
 ## Wstęp

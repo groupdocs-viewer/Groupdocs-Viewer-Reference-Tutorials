@@ -4,8 +4,8 @@
 "title": "Renderowanie folderów archiwum w Javie przy użyciu GroupDocs.Viewer&#58; Przewodnik krok po kroku"
 "url": "/pl/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie folderów archiwum za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

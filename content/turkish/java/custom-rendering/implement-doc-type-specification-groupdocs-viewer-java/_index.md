@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java'da Belge Türü Belirtiminin Nasıl Uygulanacağı - Adım Adım Kılavuz"
 "url": "/tr/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'da Belge Türü Belirtiminin Nasıl Uygulanacağı
 
 Java için GroupDocs.Viewer'ı kullanarak DOCX dosyalarının oluşturulması için dosya türünün belirlenmesine ilişkin adım adım kılavuz.

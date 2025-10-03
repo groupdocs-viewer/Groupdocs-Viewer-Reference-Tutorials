@@ -5,8 +5,8 @@
 "title": "페이지 뒤집기 및 회전"
 "url": "/ko/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # 페이지 뒤집기 및 회전
 
 ## 소개

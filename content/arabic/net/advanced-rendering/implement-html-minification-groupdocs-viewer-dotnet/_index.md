@@ -4,8 +4,8 @@
 "title": "كيفية تنفيذ تصغير HTML باستخدام GroupDocs.Viewer .NET لصفحات الويب الأسرع"
 "url": "/ar/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تنفيذ تصغير HTML باستخدام GroupDocs.Viewer .NET لصفحات الويب الأسرع
 
 ## مقدمة

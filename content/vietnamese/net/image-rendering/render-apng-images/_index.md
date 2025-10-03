@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh APNG"
 "url": "/vi/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Kết xuất hình ảnh APNG
 
 ## Giới thiệu

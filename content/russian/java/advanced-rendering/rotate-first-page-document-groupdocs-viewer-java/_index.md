@@ -4,8 +4,8 @@
 "title": "Поворот первой страницы документа с помощью GroupDocs.Viewer для Java (расширенное руководство)"
 "url": "/ru/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Поворот первой страницы документа с помощью GroupDocs.Viewer для Java
 
 ## Введение

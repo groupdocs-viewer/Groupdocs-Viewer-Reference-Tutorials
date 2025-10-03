@@ -4,8 +4,8 @@
 "title": "Rendera PDF/OXPS med teckensnittsbegränsningar med GroupDocs.Viewer .NET &#58; En omfattande guide"
 "url": "/sv/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Rendera PDF/OXPS med teckensnittsbegränsningar med GroupDocs.Viewer .NET: En omfattande guide
 
 ## Introduktion

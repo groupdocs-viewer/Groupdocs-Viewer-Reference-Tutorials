@@ -4,8 +4,8 @@
 "title": "Kết xuất tệp DOCX từ InputStream trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách tải và hiển thị tệp DOCX từ InputStream bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

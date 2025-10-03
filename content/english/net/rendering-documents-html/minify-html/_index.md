@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["HTML-minification", "performance-optimization", "GroupDocs-Viewer", "NET-development"]
+type: docs
 ---
-
 # Minify HTML Documents .NET - Complete Developer Guide
 
 ## Introduction

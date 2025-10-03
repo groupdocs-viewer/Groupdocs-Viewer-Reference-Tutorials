@@ -4,8 +4,8 @@
 "title": "Konfigurace protokolování v GroupDocs.Viewer pro Javu&#58; Průvodce protokolováním konzole a souborů"
 "url": "/cs/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Konfigurace protokolování v GroupDocs.Viewer pro Javu
 
 ## Zavedení

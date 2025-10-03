@@ -3,8 +3,8 @@
 "title": "Tutorial sulla filigrana e l'annotazione dei documenti per GroupDocs.Viewer Java"
 "url": "/it/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Tutorial sulla filigrana e l'annotazione dei documenti per GroupDocs.Viewer Java
 
 Padroneggia le tecniche di annotazione e filigrana dei documenti con i nostri tutorial Java per GroupDocs.Viewer. Queste guide passo passo illustrano come aggiungere filigrane di testo e immagini, implementare annotazioni, controllare il posizionamento e la trasparenza delle filigrane e visualizzare i documenti con annotazioni incorporate. Ogni tutorial include esempi pratici di codice Java per aggiungere metadati visivi e marcature protettive ai documenti, migliorando le funzionalità di tracciamento e branding dei documenti.

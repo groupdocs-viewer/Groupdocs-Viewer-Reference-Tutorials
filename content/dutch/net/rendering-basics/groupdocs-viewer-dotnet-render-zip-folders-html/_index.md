@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Render specifieke mappen uit ZIP-archieven naar HTML"
 "url": "/nl/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Tutorial: GroupDocs.Viewer .NET implementeren om specifieke mappen uit ZIP-archieven naar HTML te renderen
 
 ## Invoering

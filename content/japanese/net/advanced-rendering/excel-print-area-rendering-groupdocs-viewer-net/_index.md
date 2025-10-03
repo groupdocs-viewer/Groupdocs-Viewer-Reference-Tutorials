@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用した効率的な Excel 印刷領域レンダリング"
 "url": "/ja/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用した効率的な Excel 印刷領域レンダリング
 
 ## 導入

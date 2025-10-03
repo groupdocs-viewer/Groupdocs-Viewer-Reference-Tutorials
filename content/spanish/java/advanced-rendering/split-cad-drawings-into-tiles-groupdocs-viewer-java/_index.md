@@ -4,8 +4,8 @@
 "title": "Divida dibujos CAD en mosaicos con GroupDocs.Viewer Java para una representación eficiente"
 "url": "/es/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dividir dibujos CAD en mosaicos con GroupDocs.Viewer Java
 
 ## Introducción

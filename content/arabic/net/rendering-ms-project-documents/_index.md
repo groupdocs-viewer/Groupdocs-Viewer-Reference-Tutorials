@@ -5,8 +5,8 @@
 "title": "عرض مستندات Microsoft Project"
 "url": "/ar/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # عرض مستندات Microsoft Project
 
 ## مقدمة

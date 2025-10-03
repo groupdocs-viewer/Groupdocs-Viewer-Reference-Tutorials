@@ -4,8 +4,8 @@
 "title": "تحديد عرض عناصر Outlook في Java باستخدام GroupDocs.Viewer - دليل شامل"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # تقييد عرض عناصر Outlook في Java باستخدام GroupDocs.Viewer
 
 ## ملخص

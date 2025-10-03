@@ -5,8 +5,8 @@
 "title": "渲染註解並調整時間單位（MS Project）"
 "url": "/zh-hant/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # 渲染註解並調整時間單位（MS Project）
 
 ## 介紹

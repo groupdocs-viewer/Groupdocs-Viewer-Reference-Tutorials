@@ -5,8 +5,8 @@
 "title": "Representación de mensajes de correo electrónico"
 "url": "/es/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Representación de mensajes de correo electrónico
 
 ## Introducción

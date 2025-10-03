@@ -5,8 +5,8 @@
 "title": "โหลดเอกสารที่ป้องกันด้วยรหัสผ่าน"
 "url": "/th/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # โหลดเอกสารที่ป้องกันด้วยรหัสผ่าน
 
 ## การแนะนำ

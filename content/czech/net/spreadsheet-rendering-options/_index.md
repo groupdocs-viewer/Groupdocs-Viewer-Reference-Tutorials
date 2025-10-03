@@ -5,8 +5,8 @@
 "title": "Možnosti vykreslování v tabulkách"
 "url": "/cs/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Možnosti vykreslování v tabulkách
 
 ## Zavedení

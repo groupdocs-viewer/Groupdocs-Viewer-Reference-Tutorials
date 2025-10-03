@@ -5,8 +5,8 @@
 "title": "Excluir fontes do HTML renderizado"
 "url": "/pt/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Excluir fontes do HTML renderizado
 
 ## Introdução

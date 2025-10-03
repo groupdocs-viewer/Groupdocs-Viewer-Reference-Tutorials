@@ -4,8 +4,8 @@
 "title": "PDF-pagina's roteren met GroupDocs.Viewer voor .NET&#58; een handleiding voor ontwikkelaars"
 "url": "/nl/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PDF-pagina's roteren met GroupDocs.Viewer voor .NET: een handleiding voor ontwikkelaars
 
 ## Invoering

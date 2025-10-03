@@ -4,8 +4,8 @@
 "title": "Logging configureren in GroupDocs.Viewer voor Java&#58; handleiding voor console- en bestandsregistratie"
 "url": "/nl/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Logging configureren in GroupDocs.Viewer voor Java
 
 ## Invoering

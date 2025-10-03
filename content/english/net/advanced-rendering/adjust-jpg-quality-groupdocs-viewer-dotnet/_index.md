@@ -8,10 +8,8 @@ keywords:
 - optimize JPG quality GroupDocs.Viewer .NET
 - adjust image rendering settings
 - enhance document viewing capabilities
-
+type: docs
 ---
-
-
 # Optimizing JPG Quality in GroupDocs.Viewer .NET
 
 ## Introduction

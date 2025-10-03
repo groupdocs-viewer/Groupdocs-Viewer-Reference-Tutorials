@@ -4,8 +4,8 @@
 "title": "Cómo recuperar e imprimir nombres de hojas de cálculo de Excel con GroupDocs.Viewer para .NET (Guía 2023)"
 "url": "/es/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cómo recuperar e imprimir nombres de hojas de cálculo de Excel con GroupDocs.Viewer para .NET: una guía completa
 
 ## Introducción

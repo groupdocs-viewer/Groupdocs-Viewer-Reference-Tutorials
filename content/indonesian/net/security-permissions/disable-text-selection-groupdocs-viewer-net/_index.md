@@ -4,8 +4,8 @@
 "title": "Cara Menonaktifkan Pemilihan Teks dalam PDF Menggunakan GroupDocs.Viewer .NET untuk Keamanan yang Lebih Baik"
 "url": "/id/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menggunakan GroupDocs.Viewer .NET untuk Menonaktifkan Pemilihan Teks Saat Merender PDF sebagai HTML
 
 ## Perkenalan

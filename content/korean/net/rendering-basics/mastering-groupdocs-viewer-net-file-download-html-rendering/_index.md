@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 마스터하여 파일을 다운로드하고 HTML 문서를 손쉽게 렌더링하세요."
 "url": "/ko/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 마스터하기: 간편한 파일 다운로드 및 문서 렌더링
 
 ## 소개

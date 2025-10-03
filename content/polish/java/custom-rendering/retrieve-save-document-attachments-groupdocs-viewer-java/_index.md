@@ -4,8 +4,8 @@
 "title": "Jak pobierać i zapisywać załączniki dokumentów za pomocą GroupDocs.Viewer dla Java? Kompleksowy przewodnik"
 "url": "/pl/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak pobierać i zapisywać załączniki dokumentów za pomocą GroupDocs.Viewer dla Java: kompleksowy przewodnik
 
 ## Wstęp

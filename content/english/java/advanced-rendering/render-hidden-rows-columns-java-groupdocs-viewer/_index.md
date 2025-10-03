@@ -8,10 +8,8 @@ keywords:
 - render hidden rows columns java
 - GroupDocs Viewer Java
 - Java spreadsheet rendering
-
+type: docs
 ---
-
-
 # Render Hidden Rows & Columns in Java Spreadsheets Using GroupDocs.Viewer
 
 ## Introduction

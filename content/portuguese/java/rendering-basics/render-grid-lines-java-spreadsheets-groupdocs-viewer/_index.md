@@ -4,8 +4,8 @@
 "title": "Como renderizar linhas de grade em planilhas Java usando GroupDocs.Viewer"
 "url": "/pt/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar linhas de grade em planilhas Java usando GroupDocs.Viewer
 
 ## Introdução

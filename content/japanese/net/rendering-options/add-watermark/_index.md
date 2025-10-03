@@ -5,8 +5,8 @@
 "title": "文書に透かしを追加する"
 "url": "/ja/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # 文書に透かしを追加する
 
 ## 導入

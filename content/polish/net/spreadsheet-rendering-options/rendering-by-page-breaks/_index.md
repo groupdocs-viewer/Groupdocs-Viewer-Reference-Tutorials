@@ -5,8 +5,8 @@
 "title": "Renderowanie według podziałów stron"
 "url": "/pl/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Renderowanie według podziałów stron
 
 ## Wstęp

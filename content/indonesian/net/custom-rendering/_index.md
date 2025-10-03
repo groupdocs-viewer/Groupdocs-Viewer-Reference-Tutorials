@@ -3,8 +3,8 @@
 "title": "Tutorial Pembuatan Dokumen Kustom untuk GroupDocs.Viewer .NET"
 "url": "/id/net/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # Tutorial Pembuatan Dokumen Kustom untuk GroupDocs.Viewer .NET
 
 Kuasai teknik kustomisasi tingkat lanjut dengan tutorial .NET GroupDocs.Viewer kami untuk rendering kustom. Panduan komprehensif ini menunjukkan cara membuat pengendali rendering kustom, menerapkan logika rendering khusus, memperluas kemampuan rendering bawaan, dan mengembangkan solusi pemrosesan dokumen yang canggih. Setiap tutorial menyediakan contoh kode .NET terperinci yang menunjukkan cara menerapkan strategi rendering dokumen yang fleksibel dan disesuaikan yang melampaui pendekatan rendering standar.

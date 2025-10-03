@@ -4,8 +4,8 @@
 "title": "Come recuperare e stampare gli allegati dei documenti utilizzando GroupDocs.Viewer per .NET | Guida al rendering avanzato"
 "url": "/it/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Come recuperare e stampare gli allegati dei documenti utilizzando GroupDocs.Viewer per .NET | Guida al rendering avanzato
 
 ## Introduzione

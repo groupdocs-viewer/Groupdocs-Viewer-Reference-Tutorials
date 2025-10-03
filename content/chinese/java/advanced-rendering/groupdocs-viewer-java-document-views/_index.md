@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer for Java™ 检索文档视图信息和见解"
 "url": "/zh/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 掌握文档视图
 ## 高级渲染技术
 **SEO网址：** groupdocs-viewer-java-文档视图

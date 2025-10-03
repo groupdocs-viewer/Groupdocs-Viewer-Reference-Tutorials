@@ -5,8 +5,8 @@
 "title": "N egymást követő oldal megjelenítése"
 "url": "/hu/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # N egymást követő oldal megjelenítése
 
 ## Bevezetés

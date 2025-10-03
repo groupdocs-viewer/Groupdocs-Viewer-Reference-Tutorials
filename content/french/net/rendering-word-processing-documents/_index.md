@@ -5,8 +5,8 @@
 "title": "Rendu de documents de traitement de texte"
 "url": "/fr/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Rendu de documents de traitement de texte
 
 

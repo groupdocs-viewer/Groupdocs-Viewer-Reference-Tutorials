@@ -5,8 +5,8 @@
 "title": "Hämta vyinformation för CAD-ritningar"
 "url": "/sv/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Hämta vyinformation för CAD-ritningar
 
 ## Introduktion

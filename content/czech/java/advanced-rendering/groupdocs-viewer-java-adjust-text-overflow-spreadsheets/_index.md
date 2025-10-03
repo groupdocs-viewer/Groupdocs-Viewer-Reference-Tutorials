@@ -4,8 +4,8 @@
 "title": "Jak upravit přetečení textu v tabulkách Excelu pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Jak upravit přetečení textu v tabulkách Excelu pomocí GroupDocs.Viewer pro Javu
 ## Zavedení
 Řešení přetékajícího textu v buňkách tabulky při převodu dokumentů do HTML je běžným problémem, zejména u rozsáhlých souborů aplikace Excel. **GroupDocs.Viewer pro Javu** zjednodušuje tento proces a umožňuje vám efektivně spravovat a skrývat přetečený text.

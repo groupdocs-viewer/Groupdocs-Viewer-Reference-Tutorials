@@ -4,8 +4,8 @@
 "title": "Bemästra licenshantering i GroupDocs.Viewer för .NET – en omfattande guide"
 "url": "/sv/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra licenshantering i GroupDocs.Viewer för .NET
 ## En omfattande guide
 

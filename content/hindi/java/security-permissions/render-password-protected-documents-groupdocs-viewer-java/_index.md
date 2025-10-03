@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा में पासवर्ड-संरक्षित दस्तावेज़ प्रस्तुत करें"
 "url": "/hi/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा में पासवर्ड-संरक्षित दस्तावेज़ प्रस्तुत करें
 
 ## परिचय

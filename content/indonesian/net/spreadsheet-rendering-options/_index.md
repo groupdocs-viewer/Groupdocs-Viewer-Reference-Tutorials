@@ -5,8 +5,8 @@
 "title": "Opsi Rendering Spreadsheet"
 "url": "/id/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Opsi Rendering Spreadsheet
 
 ## Perkenalan

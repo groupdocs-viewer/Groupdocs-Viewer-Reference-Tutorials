@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET stahuje soubory a vykresluje HTML dokumenty bez námahy"
 "url": "/cs/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí GroupDocs.Viewer .NET: Snadné stahování souborů a vykreslování dokumentů
 
 ## Zavedení

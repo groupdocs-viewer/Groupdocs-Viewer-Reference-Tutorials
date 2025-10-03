@@ -4,8 +4,8 @@
 "title": "Kết xuất hiệu quả các tài liệu HPG sang HTML, JPG, PNG, PDF bằng GroupDocs.Viewer .NET"
 "url": "/vi/net/rendering-basics/groupdocs-viewer-net-hpg-rendering-guide/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tài liệu HPG bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

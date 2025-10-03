@@ -5,8 +5,8 @@
 "title": "使用嵌入式或外部資源進行渲染"
 "url": "/zh-hant/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # 使用嵌入式或外部資源進行渲染
 
 ## 介紹

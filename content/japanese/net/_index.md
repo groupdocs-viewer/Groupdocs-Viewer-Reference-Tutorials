@@ -5,8 +5,8 @@
 "title": "GroupDocs.Viewer for .NET の包括的なチュートリアルと例"
 "url": "/ja/net/"
 "weight": 10
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET の包括的なチュートリアルと例
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "アーカイブを単一または複数の HTML ページにレンダリングする"
 "url": "/ja/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # アーカイブを単一または複数の HTML ページにレンダリングする
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "كيفية استرجاع هياكل الأرشيف باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استرداد هياكل الأرشيف باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

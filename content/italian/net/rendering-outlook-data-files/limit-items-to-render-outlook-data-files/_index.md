@@ -5,8 +5,8 @@
 "title": "Limita il numero di elementi da visualizzare nei file di dati di Outlook"
 "url": "/it/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Limita il numero di elementi da visualizzare nei file di dati di Outlook
 
 ## Introduzione

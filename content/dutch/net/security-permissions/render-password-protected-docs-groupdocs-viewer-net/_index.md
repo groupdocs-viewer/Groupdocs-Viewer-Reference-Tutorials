@@ -4,8 +4,8 @@
 "title": "Hoe u wachtwoordbeveiligde documenten kunt weergeven met GroupDocs.Viewer .NET"
 "url": "/nl/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Wachtwoordbeveiligde documenten weergeven met GroupDocs.Viewer .NET
 
 ## Invoering

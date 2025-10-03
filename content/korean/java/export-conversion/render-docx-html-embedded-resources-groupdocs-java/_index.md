@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 내장 리소스가 있는 DOCX를 HTML로 변환"
 "url": "/ko/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 내장 리소스가 있는 DOCX를 HTML로 변환
 
 ## 소개

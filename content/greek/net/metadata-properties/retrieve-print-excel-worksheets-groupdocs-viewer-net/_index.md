@@ -4,8 +4,8 @@
 "title": "Πώς να ανακτήσετε και να εκτυπώσετε ονόματα φύλλων εργασίας Excel χρησιμοποιώντας το GroupDocs.Viewer για .NET (Οδηγός 2023)"
 "url": "/el/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να ανακτήσετε και να εκτυπώσετε ονόματα φύλλων εργασίας Excel χρησιμοποιώντας το GroupDocs.Viewer για .NET: Ένας πλήρης οδηγός
 
 ## Εισαγωγή

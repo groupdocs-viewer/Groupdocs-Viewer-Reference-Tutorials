@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu thành hình ảnh"
 "url": "/vi/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Kết xuất tài liệu thành hình ảnh
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Så här ställer du in maximala JPG-bildstorleksgränser med GroupDocs.Viewer .NET"
 "url": "/sv/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Så här ställer du in maximala JPG-bildstorleksgränser med GroupDocs.Viewer .NET
 
 ## Introduktion

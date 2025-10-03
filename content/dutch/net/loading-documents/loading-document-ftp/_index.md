@@ -5,8 +5,8 @@
 "title": "Documenten laden van FTP (geavanceerd)"
 "url": "/nl/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Documenten laden van FTP (geavanceerd)
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "จัดระเบียบหน้า PDF ใหม่โดยใช้ GroupDocs.Viewer ใน .NET คู่มือสำหรับนักพัฒนา"
 "url": "/th/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # เรียนรู้การจัดเรียงหน้า PDF ใหม่ด้วย GroupDocs.Viewer .NET: คู่มือสำหรับนักพัฒนาที่ครอบคลุม
 
 ## การแนะนำ

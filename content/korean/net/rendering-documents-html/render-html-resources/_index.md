@@ -5,8 +5,8 @@
 "title": "내장 또는 외부 리소스로 렌더링"
 "url": "/ko/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # 내장 또는 외부 리소스로 렌더링
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Jak renderować pliki MS Project jako HTML, JPG, PNG i PDF z notatkami przy użyciu GroupDocs.Viewer dla Java"
 "url": "/pl/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować pliki MS Project jako HTML, JPG, PNG i PDF z notatkami przy użyciu GroupDocs.Viewer dla Java
 
 ## Wstęp

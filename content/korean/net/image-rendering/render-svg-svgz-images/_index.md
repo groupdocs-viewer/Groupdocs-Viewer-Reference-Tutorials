@@ -5,8 +5,8 @@
 "title": "SVG 및 SVGZ 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # SVG 및 SVGZ 이미지 렌더링
 
 ## 소개

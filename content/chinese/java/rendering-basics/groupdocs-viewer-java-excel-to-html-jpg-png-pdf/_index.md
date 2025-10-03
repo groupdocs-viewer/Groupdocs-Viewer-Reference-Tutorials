@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer Java 将 Excel 转换为 HTML/JPG/PNG/PDF — 分步指南"
 "url": "/zh/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer Java 将 Excel 转换为 HTML/JPG/PNG/PDF：分步指南
 
 ## 介绍

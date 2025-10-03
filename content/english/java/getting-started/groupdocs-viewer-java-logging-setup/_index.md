@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java logging
 - console logging in GroupDocs Viewer
 - file-based logging with GroupDocs
-
+type: docs
 ---
-
-
 # Configuring Logging in GroupDocs.Viewer for Java
 
 ## Introduction

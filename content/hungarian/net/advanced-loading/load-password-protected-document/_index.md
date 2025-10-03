@@ -5,8 +5,8 @@
 "title": "Jelszóval védett dokumentumok betöltése"
 "url": "/hu/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Jelszóval védett dokumentumok betöltése
 
 ## Bevezetés

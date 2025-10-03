@@ -4,8 +4,8 @@
 "title": "Beperk Outlook-itemweergave in Java met behulp van GroupDocs.Viewer&#58; een uitgebreide handleiding"
 "url": "/nl/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Beperking van Outlook-itemweergave in Java met behulp van GroupDocs.Viewer
 
 ## Overzicht

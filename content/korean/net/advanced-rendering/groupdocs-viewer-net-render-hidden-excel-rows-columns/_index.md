@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 Excel 파일의 숨겨진 행 및 열 렌더링 - 고급 가이드"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET을 사용하여 Excel 파일의 숨겨진 행과 열 렌더링
 
 ## 소개

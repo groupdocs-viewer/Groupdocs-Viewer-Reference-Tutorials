@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer для Java&#58; Извлечение информации о просмотре документов и аналитических сведений"
 "url": "/ru/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Освоение представлений документов с помощью GroupDocs.Viewer для Java
 ## Продвинутые методы рендеринга
 **SEO-адрес:** groupdocs-viewer-java-document-views

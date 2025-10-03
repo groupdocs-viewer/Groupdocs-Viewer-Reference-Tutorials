@@ -4,8 +4,8 @@
 "title": "Hatékony PDF oldalátrendezés a GroupDocs.Viewer segítségével Java-hoz – Átfogó útmutató"
 "url": "/hu/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Hatékony PDF oldalátrendezés a GroupDocs.Viewer segítségével Java-ban
 
 ## Bevezetés

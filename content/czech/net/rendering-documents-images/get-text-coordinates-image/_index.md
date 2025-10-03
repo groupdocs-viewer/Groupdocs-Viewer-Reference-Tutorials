@@ -5,8 +5,8 @@
 "title": "Získání textových souřadnic pro vykreslování obrázků"
 "url": "/cs/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Získání textových souřadnic pro vykreslování obrázků
 
 ## Zavedení

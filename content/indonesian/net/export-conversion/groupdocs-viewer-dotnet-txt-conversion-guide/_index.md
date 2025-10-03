@@ -4,8 +4,8 @@
 "title": "Konversi TXT ke HTML, JPG, PNG, PDF Menggunakan GroupDocs.Viewer .NET&#58; Panduan Lengkap"
 "url": "/id/net/export-conversion/groupdocs-viewer-dotnet-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # Konversi TXT ke Beberapa Format dengan GroupDocs.Viewer .NET
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Jak vykreslit mřížku v tabulkách Excelu pomocí GroupDocs.Viewer .NET pro výstup HTML"
 "url": "/cs/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit mřížku v tabulkách Excelu pomocí GroupDocs.Viewer .NET pro výstup HTML
 
 ## Zavedení

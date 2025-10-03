@@ -5,8 +5,8 @@
 "title": "Pobierz informacje o plikach danych programu Outlook (PST, OST)"
 "url": "/pl/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Pobierz informacje o plikach danych programu Outlook (PST, OST)
 
 ## Wstęp

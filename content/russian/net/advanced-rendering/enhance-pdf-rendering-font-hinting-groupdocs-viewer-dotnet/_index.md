@@ -4,8 +4,8 @@
 "title": "Улучшение рендеринга PDF в .NET&#58; Включение подсказок шрифтов с помощью GroupDocs.Viewer"
 "url": "/ru/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Как улучшить рендеринг PDF в .NET с помощью GroupDocs.Viewer: включить подсказки шрифтов
 
 ## Введение

@@ -5,8 +5,8 @@
 "title": "Απόδοση επικεφαλίδων γραμμών και στηλών"
 "url": "/el/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Απόδοση επικεφαλίδων γραμμών και στηλών
 
 ## Εισαγωγή

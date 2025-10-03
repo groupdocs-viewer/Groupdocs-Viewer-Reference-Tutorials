@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer kullanarak Java'da InputStream'den DOCX Dosyalarını Oluşturun"
 "url": "/tr/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanarak Bir InputStream'den DOCX Dosyası Nasıl Yüklenir ve İşlenir
 
 ## giriiş

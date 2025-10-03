@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์งานนำเสนอด้วยบันทึกย่อโดยใช้ GroupDocs.Viewer สำหรับ Java - คู่มือฉบับสมบูรณ์"
 "url": "/th/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์การนำเสนอด้วยบันทึกย่อโดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

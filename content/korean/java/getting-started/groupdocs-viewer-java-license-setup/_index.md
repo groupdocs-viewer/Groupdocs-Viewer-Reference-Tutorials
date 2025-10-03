@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java 파일 및 URL 설정 가이드에서 라이선스를 설정하는 방법"
 "url": "/ko/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java에서 라이선스를 설정하는 방법: 파일 및 URL 설정 가이드
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "Belirli Proje Zaman Aralığı Oluşturma (MS Project)"
 "url": "/tr/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Belirli Proje Zaman Aralığı Oluşturma (MS Project)
 
 ## giriiş

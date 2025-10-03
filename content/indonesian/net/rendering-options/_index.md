@@ -5,8 +5,8 @@
 "title": "Opsi Rendering"
 "url": "/id/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Opsi Rendering
 
 

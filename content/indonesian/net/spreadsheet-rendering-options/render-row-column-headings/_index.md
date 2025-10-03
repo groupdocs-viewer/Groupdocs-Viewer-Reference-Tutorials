@@ -5,8 +5,8 @@
 "title": "Render Judul Baris dan Kolom"
 "url": "/id/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Render Judul Baris dan Kolom
 
 ## Perkenalan

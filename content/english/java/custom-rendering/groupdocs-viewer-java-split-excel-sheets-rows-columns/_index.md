@@ -8,10 +8,8 @@ keywords:
 - split Excel sheets Java
 - GroupDocs Viewer Java tutorial
 - manageable data segments
-
+type: docs
 ---
-
-
 # Splitting Excel Sheets by Rows and Columns Using GroupDocs.Viewer in Java
 
 ## Introduction

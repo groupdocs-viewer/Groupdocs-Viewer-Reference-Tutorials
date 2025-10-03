@@ -5,8 +5,8 @@
 "title": "Jegyzetek renderelése és időegységek beállítása (MS Project)"
 "url": "/hu/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Jegyzetek renderelése és időegységek beállítása (MS Project)
 
 ## Bevezetés

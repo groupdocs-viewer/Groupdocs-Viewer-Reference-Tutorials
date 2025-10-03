@@ -5,8 +5,8 @@
 "title": "Wyklucz czcionki z renderowanego HTML"
 "url": "/pl/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Wyklucz czcionki z renderowanego HTML
 
 ## Wstęp

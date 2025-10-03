@@ -5,8 +5,8 @@
 "title": "Meghatározott mappák renderelése és üzenetek szűrése (Outlook)"
 "url": "/hu/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Meghatározott mappák renderelése és üzenetek szűrése (Outlook)
 
 ## Bevezetés

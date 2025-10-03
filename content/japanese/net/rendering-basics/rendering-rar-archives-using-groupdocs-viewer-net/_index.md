@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して RAR アーカイブを HTML、JPG、PNG、PDF 形式に変換する方法"
 "url": "/ja/net/rendering-basics/rendering-rar-archives-using-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して RAR アーカイブをさまざまな形式に変換する方法
 
 今日のデータ駆動型の世界では、RARアーカイブのような圧縮ファイルを効率的に管理・共有することが不可欠です。アプリケーションにファイル変換機能を統合する開発者の方にも、様々な目的でRARファイルからコンテンツを抽出する必要がある方にも、GroupDocs.Viewer for .NETは堅牢なソリューションを提供します。このチュートリアルでは、GroupDocs.Viewer for .NETを使用してRARアーカイブをHTML、JPG、PNG、PDF形式に変換する方法を説明します。

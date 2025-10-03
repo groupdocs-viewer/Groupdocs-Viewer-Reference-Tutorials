@@ -4,8 +4,8 @@
 "title": "Renderowanie obszarów wydruku arkusza kalkulacyjnego Java za pomocą GroupDocs.Viewer dla Java&#58; Kompleksowy przewodnik"
 "url": "/pl/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie obszarów wydruku arkusza kalkulacyjnego Java za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

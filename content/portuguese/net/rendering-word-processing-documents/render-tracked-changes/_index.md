@@ -5,8 +5,8 @@
 "title": "Renderizar alterações rastreadas"
 "url": "/pt/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar alterações rastreadas
 
 ## Introdução

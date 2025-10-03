@@ -4,8 +4,8 @@
 "title": "Documenten renderen als afbeeldingen met een tekstlaag in Java met behulp van GroupDocs.Viewer"
 "url": "/nl/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Documenten renderen als afbeeldingen met een tekstlaag in Java met behulp van GroupDocs.Viewer
 ## Geavanceerde rendering-tutorial
 **Huidige SEO-URL**: /render-documenten-naar-afbeeldingen-met-tekstlaag-java

@@ -4,8 +4,8 @@
 "title": "Tekstselectie in PDF's uitschakelen met GroupDocs.Viewer Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u tekstselectie kunt uitschakelen bij het renderen van PDF's met GroupDocs.Viewer Java
 ## Invoering
 Heb je een veilige manier nodig om PDF's online weer te geven zonder tekstselectie toe te staan? Deze uitgebreide handleiding laat zien hoe je tekstselectie kunt uitschakelen met behulp van de GroupDocs.Viewer voor Java-bibliotheek. Door tekst naar afbeeldingen te converteren, blijft je content veilig en onbewerkbaar wanneer deze online wordt weergegeven.

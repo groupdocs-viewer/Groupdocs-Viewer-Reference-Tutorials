@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์เส้นตารางในสเปรดชีต Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์เส้นตารางในสเปรดชีต Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "Render Arsip RAR"
 "url": "/id/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Render Arsip RAR
 
 ## Perkenalan

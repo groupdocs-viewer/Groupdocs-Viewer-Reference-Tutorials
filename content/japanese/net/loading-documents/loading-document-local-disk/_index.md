@@ -5,8 +5,8 @@
 "title": "ローカルディスクからドキュメントを読み込む"
 "url": "/ja/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # ローカルディスクからドキュメントを読み込む
 
 ## 導入

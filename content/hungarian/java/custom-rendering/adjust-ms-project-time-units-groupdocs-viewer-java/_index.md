@@ -4,8 +4,8 @@
 "title": "Az MS Project időegységeinek beállítása a GroupDocs.Viewer Java használatával – lépésről lépésre útmutató"
 "url": "/hu/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Az MS Project időegységeinek beállítása GroupDocs.Viewer Java használatával: lépésről lépésre útmutató
 ## Bevezetés
 Elege van abból, hogy manuálisan kell módosítania az időegységeket az MS Project dokumentumaiban, mielőtt HTML formátumba renderelné azokat? Ez a folyamat fárasztó és hibákra hajlamos lehet, különösen nagy projektek esetén. **GroupDocs.Viewer Java-hoz**, az időegység beállításait programozottan könnyedén módosíthatja, biztosítva a pontosságot és a hatékonyságot.

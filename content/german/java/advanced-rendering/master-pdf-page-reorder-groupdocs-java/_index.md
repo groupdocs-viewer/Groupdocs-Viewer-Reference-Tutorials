@@ -4,8 +4,8 @@
 "title": "Effiziente Neuanordnung von PDF-Seiten mit GroupDocs.Viewer für Java – Ein umfassender Leitfaden"
 "url": "/de/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Effiziente Neuanordnung von PDF-Seiten mit GroupDocs.Viewer für Java
 
 ## Einführung

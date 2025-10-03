@@ -4,8 +4,8 @@
 "title": "Optimalizace vykreslování dat Outlooku v .NET pomocí tipů a technik pro zvýšení výkonu v GroupDocs.Viewer"
 "url": "/cs/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizace vykreslování dat Outlooku pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

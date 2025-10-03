@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - Outlook item rendering
 - PST file rendering
-
+type: docs
 ---
-
-
 # Limiting Outlook Item Rendering in Java using GroupDocs.Viewer
 
 ## Overview

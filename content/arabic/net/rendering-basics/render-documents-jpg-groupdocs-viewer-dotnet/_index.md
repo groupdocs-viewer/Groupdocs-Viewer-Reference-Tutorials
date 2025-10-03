@@ -4,8 +4,8 @@
 "title": "تحويل المستندات إلى صيغة JPG باستخدام GroupDocs.Viewer لـ .NET - دليل شامل"
 "url": "/ar/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # تحويل المستندات إلى JPG باستخدام GroupDocs.Viewer لـ .NET: دليل شامل
 
 ## مقدمة

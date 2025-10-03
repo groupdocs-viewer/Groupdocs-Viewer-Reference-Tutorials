@@ -4,8 +4,8 @@
 "title": "जावा स्प्रेडशीट रेंडरिंग को अनुकूलित करें&#58; GroupDocs.Viewer के साथ खाली कॉलम छोड़ें"
 "url": "/hi/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # जावा में स्प्रेडशीट रेंडरिंग को अनुकूलित कैसे करें: GroupDocs.Viewer के साथ खाली कॉलम को छोड़ना
 
 ## परिचय

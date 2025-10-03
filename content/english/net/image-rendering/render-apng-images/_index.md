@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["APNG", "animated-images", "dotnet", "groupdocs-viewer", "image-conversion"]
+type: docs
 ---
-
 # How to Render APNG Images in .NET Applications
 
 Struggling with displaying animated PNG files in your .NET application? You're not alone. APNG (Animated Portable Network Graphics) files aren't as straightforward to handle as regular images, especially when you need to convert them to different formats for web display or document generation.

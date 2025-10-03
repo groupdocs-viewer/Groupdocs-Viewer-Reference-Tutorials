@@ -5,8 +5,8 @@
 "title": "Rendera med anpassade teckensnitt"
 "url": "/sv/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Rendera med anpassade teckensnitt
 
 ## Introduktion

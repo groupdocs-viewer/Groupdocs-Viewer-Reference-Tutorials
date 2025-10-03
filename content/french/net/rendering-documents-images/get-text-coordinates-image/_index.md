@@ -5,8 +5,8 @@
 "title": "Obtenir les coordonnées du texte pour le rendu de l'image"
 "url": "/fr/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Obtenir les coordonnées du texte pour le rendu de l'image
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Отображение защищенных паролем документов в Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Отображение защищенных паролем документов в Java с помощью GroupDocs.Viewer
 
 ## Введение

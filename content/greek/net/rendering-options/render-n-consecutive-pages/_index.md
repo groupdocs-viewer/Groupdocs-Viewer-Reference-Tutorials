@@ -5,8 +5,8 @@
 "title": "Απόδοση N συνεχόμενων σελίδων"
 "url": "/el/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Απόδοση N συνεχόμενων σελίδων
 
 ## Εισαγωγή

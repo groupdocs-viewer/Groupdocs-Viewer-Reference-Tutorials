@@ -4,8 +4,8 @@
 "title": "ซ่อนข้อความที่ล้นใน Excel โดยใช้ GroupDocs.Viewer .NET คำแนะนำที่ครอบคลุม"
 "url": "/th/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # ซ่อนข้อความที่ล้นใน Excel ด้วย GroupDocs.Viewer .NET
 
 ## การแนะนำ

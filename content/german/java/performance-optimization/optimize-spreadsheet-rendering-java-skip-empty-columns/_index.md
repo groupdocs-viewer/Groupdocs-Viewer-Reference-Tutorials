@@ -4,8 +4,8 @@
 "title": "Optimieren Sie das Rendern von Java-Tabellen&#58; Überspringen Sie leere Spalten mit GroupDocs.Viewer"
 "url": "/de/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # So optimieren Sie die Tabellenkalkulationsdarstellung in Java: Überspringen leerer Spalten mit GroupDocs.Viewer
 
 ## Einführung

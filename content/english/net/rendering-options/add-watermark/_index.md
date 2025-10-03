@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["watermark", "document-security", "groupdocs-viewer", "dotnet", "csharp"]
+type: docs
 ---
-
 # Document Watermark .NET Library: Your Complete Implementation Guide
 
 ## Introduction

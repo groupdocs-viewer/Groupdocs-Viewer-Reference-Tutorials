@@ -4,8 +4,8 @@
 "title": "Ασφαλίστε τα PDF σας με το GroupDocs.Viewer σε Java - Οδηγός προστασίας με κωδικό πρόσβασης και δικαιωμάτων"
 "url": "/el/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Ασφαλίστε τα PDF σας με το GroupDocs.Viewer σε Java
 
 ## Εισαγωγή

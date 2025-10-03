@@ -4,8 +4,8 @@
 "title": "Как извлечь архивную информацию с помощью GroupDocs.Viewer для .NET? Подробное руководство"
 "url": "/ru/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Как извлечь архивную информацию с помощью GroupDocs.Viewer для .NET: подробное руководство
 
 ## Введение

@@ -5,8 +5,8 @@
 "title": "Kết xuất các định dạng CAD cụ thể (CF2)"
 "url": "/vi/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Kết xuất các định dạng CAD cụ thể (CF2)
 
 ## Giới thiệu

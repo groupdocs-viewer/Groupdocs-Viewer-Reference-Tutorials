@@ -3,8 +3,8 @@
 "title": "Hướng dẫn kết xuất tài liệu đám mây và từ xa cho GroupDocs.Viewer .NET"
 "url": "/vi/net/cloud-remote-document-rendering/"
 "weight": 9
+type: docs
 ---
-
 # Hướng dẫn kết xuất tài liệu đám mây và từ xa cho GroupDocs.Viewer .NET
 
 Học cách triển khai kết xuất tài liệu đám mây và từ xa với hướng dẫn GroupDocs.Viewer .NET của chúng tôi. Các hướng dẫn thực tế này trình bày các kỹ thuật để tải và kết xuất tài liệu từ các nhà cung cấp lưu trữ đám mây, xử lý URL từ xa, quản lý nguồn tệp mạng và triển khai các giải pháp xem tài liệu phân tán. Mỗi hướng dẫn bao gồm các ví dụ mã .NET chi tiết cho các tình huống kết xuất đám mây và từ xa phổ biến, giúp bạn xây dựng các ứng dụng có khả năng truy cập tài liệu linh hoạt.

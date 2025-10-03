@@ -5,8 +5,8 @@
 "title": "Merender Dokumen ke Gambar"
 "url": "/id/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Merender Dokumen ke Gambar
 
 ## Perkenalan

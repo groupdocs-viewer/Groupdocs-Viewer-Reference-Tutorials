@@ -4,8 +4,8 @@
 "title": "Efektivní vykreslení souborů MS Project s poznámkami pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Efektivní vykreslení souborů MS Project s poznámkami pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

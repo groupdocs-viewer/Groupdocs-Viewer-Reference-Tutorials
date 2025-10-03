@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 渲染 EMZ/EMF 文件——分步指南"
 "url": "/zh/java/rendering-basics/render-emz-emf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 综合指南：使用 GroupDocs.Viewer for Java 渲染 EMZ/EMF 文件
 
 ## 介绍

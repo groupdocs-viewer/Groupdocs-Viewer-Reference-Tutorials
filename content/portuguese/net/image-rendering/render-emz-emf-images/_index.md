@@ -5,8 +5,8 @@
 "title": "Renderizar imagens EMZ e EMF"
 "url": "/pt/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Renderizar imagens EMZ e EMF
 
 ## Introdução

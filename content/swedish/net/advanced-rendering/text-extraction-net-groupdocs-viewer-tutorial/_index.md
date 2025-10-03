@@ -4,8 +4,8 @@
 "title": "Behärska textutvinning i .NET med GroupDocs.Viewer &#50; En omfattande guide"
 "url": "/sv/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra textutvinning i .NET med GroupDocs.Viewer: En omfattande handledning
 
 ## Introduktion

@@ -4,8 +4,8 @@
 "title": "Affichage des dossiers d'archives en Java à l'aide de GroupDocs.Viewer &#58; guide étape par étape"
 "url": "/fr/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Affichage des dossiers d'archives avec GroupDocs.Viewer pour Java
 
 ## Introduction

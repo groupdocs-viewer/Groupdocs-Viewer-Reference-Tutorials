@@ -5,8 +5,8 @@
 "title": "Καθορισμός ονόματος αρχείου κατά την απόδοση αρχείων αρχειοθέτησης"
 "url": "/el/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Καθορισμός ονόματος αρχείου κατά την απόδοση αρχείων αρχειοθέτησης
 
 ## Εισαγωγή

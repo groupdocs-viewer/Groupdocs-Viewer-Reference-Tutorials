@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java'da Verimli PDF Katmanlı İşleme"
 "url": "/tr/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java'da Verimli PDF Katmanlı İşleme
 
 ## giriiş

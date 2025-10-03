@@ -4,8 +4,8 @@
 "title": "دليل شامل - تحويل ملفات XML من Excel 2003 إلى HTML/JPG/PNG/PDF باستخدام GroupDocs.Viewer Java"
 "url": "/ar/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/"
 "weight": 1
+type: docs
 ---
-
 # دليل شامل: تحويل Excel 2003 XML إلى HTML/JPG/PNG/PDF باستخدام GroupDocs.Viewer Java
 
 ## مقدمة

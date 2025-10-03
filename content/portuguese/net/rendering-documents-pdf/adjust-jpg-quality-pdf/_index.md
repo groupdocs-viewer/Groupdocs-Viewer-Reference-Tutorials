@@ -5,8 +5,8 @@
 "title": "Ajustar a qualidade da imagem JPG no PDF renderizado"
 "url": "/pt/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Ajustar a qualidade da imagem JPG no PDF renderizado
 
 ## Introdução

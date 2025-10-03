@@ -5,8 +5,8 @@
 "title": "عرض ملفات الأرشيف"
 "url": "/ar/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # عرض ملفات الأرشيف
 
 ## مقدمة

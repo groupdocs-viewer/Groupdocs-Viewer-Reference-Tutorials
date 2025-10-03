@@ -5,8 +5,8 @@
 "title": "Ottieni i nomi dei fogli di lavoro"
 "url": "/it/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Ottieni i nomi dei fogli di lavoro
 
 ## Introduzione

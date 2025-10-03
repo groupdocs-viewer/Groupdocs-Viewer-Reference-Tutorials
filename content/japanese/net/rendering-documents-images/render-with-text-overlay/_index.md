@@ -5,8 +5,8 @@
 "title": "テキストを重ねて表示"
 "url": "/ja/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # テキストを重ねて表示
 
 ## 導入

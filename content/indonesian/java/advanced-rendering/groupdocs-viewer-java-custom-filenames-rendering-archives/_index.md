@@ -4,8 +4,8 @@
 "title": "Menguasai Nama File Kustom Java GroupDocs.Viewer untuk Rendering Arsip dalam Format PDF"
 "url": "/id/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai GroupDocs.Viewer Java: Menentukan Nama File Kustom Saat Merender Arsip ke PDF
 
 ## Perkenalan

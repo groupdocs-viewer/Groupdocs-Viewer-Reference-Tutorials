@@ -4,8 +4,8 @@
 "title": "คู่มือครอบคลุมในการเรนเดอร์ไฟล์ AI โดยใช้ GroupDocs.Viewer .NET สำหรับนักพัฒนา"
 "url": "/th/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # คู่มือครอบคลุมในการเรนเดอร์ไฟล์ AI โดยใช้ GroupDocs.Viewer .NET สำหรับนักพัฒนา
 
 ## การแนะนำ

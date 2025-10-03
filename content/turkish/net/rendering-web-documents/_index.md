@@ -5,8 +5,8 @@
 "title": "Web Belgelerinin Oluşturulması"
 "url": "/tr/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Web Belgelerinin Oluşturulması
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Reszponzív HTML renderelés"
 "url": "/hu/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Reszponzív HTML renderelés
 
 ## Bevezetés

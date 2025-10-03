@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java Geliştiricileri için Başlarken Eğitimleri"
 "url": "/tr/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java Geliştiricileri için Başlarken Eğitimleri
 
 Yolculuğunuza, kurulum, lisans yapılandırması ve Java'da ilk belge görüntüleyicinizi oluşturma konusunda size yol gösterecek bu temel GroupDocs.Viewer eğitimleriyle başlayın. Başlangıç seviyesindekilere uygun kılavuzlarımız, geliştirme ortamınızı nasıl kuracağınızı, GroupDocs.Viewer kitaplığını nasıl başlatacağınızı ve temel belge işleme işlemlerini nasıl gerçekleştireceğinizi gösterir. Temel bilgileri hızla öğrenmek ve Java uygulamalarınızda daha gelişmiş belge görüntüleme görevlerine hazırlanmak için bu eğitimleri izleyin.

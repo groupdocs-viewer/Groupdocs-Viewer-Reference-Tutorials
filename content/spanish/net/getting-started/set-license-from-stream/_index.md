@@ -5,8 +5,8 @@
 "title": "Establecer licencia desde Stream"
 "url": "/es/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Establecer licencia desde Stream
 
 ## Introducción

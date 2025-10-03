@@ -5,8 +5,8 @@
 "title": "Betűtípusok kizárása a renderelt HTML-ből"
 "url": "/hu/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Betűtípusok kizárása a renderelt HTML-ből
 
 ## Bevezetés

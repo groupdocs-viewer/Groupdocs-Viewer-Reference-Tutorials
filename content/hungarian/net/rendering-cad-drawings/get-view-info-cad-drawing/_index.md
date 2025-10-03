@@ -5,8 +5,8 @@
 "title": "CAD rajzok megtekintési információinak lekérése"
 "url": "/hu/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # CAD rajzok megtekintési információinak lekérése
 
 ## Bevezetés

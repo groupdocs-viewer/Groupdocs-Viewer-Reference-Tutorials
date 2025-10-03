@@ -5,8 +5,8 @@
 "title": "Φόρτωση εγγράφων που προστατεύονται με κωδικό πρόσβασης"
 "url": "/el/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Φόρτωση εγγράφων που προστατεύονται με κωδικό πρόσβασης
 
 ## Εισαγωγή

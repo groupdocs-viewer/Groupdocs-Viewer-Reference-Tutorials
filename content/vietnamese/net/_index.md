@@ -5,8 +5,8 @@
 "title": "Hướng dẫn toàn diện và ví dụ về GroupDocs.Viewer cho .NET"
 "url": "/vi/net/"
 "weight": 10
+type: docs
 ---
-
 # Hướng dẫn toàn diện và ví dụ về GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

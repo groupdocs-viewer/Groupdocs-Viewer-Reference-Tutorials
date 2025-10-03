@@ -4,8 +4,8 @@
 "title": "Cara Memutar Halaman PDF dengan GroupDocs.Viewer untuk .NET&#58; Panduan Pengembang"
 "url": "/id/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Memutar Halaman PDF Menggunakan GroupDocs.Viewer untuk .NET: Panduan Pengembang
 
 ## Perkenalan

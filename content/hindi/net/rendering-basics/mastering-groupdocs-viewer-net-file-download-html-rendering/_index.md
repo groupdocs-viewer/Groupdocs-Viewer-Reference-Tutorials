@@ -4,8 +4,8 @@
 "title": "मास्टर ग्रुपडॉक्स.व्यूअर .NET' फ़ाइलें डाउनलोड करें और HTML दस्तावेज़ों को आसानी से प्रस्तुत करें"
 "url": "/hi/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET में महारत हासिल करना: सरल फ़ाइल डाउनलोड और दस्तावेज़ रेंडरिंग
 
 ## परिचय

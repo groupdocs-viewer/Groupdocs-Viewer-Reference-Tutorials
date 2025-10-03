@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh TGA"
 "url": "/vi/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # Kết xuất hình ảnh TGA
 
 ## Giới thiệu

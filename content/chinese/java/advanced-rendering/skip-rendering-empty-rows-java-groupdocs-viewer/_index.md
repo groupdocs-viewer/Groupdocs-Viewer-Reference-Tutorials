@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 跳过 Java 中的空行渲染——性能指南"
 "url": "/zh/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 跳过 Java 中的空行渲染
 ## 介绍
 将电子表格转换为 HTML 时渲染不必要的空行会使输出变得混乱，并消耗额外的资源。这对于注重性能的开发者来说是一个很大的问题。使用“GroupDocs.Viewer Java”库，您可以有效地跳过渲染这些空行，从而提高应用程序的速度和清晰度。

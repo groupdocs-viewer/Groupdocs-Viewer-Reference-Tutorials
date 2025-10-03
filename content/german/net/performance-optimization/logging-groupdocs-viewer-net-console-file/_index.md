@@ -4,8 +4,8 @@
 "title": "Implementieren einer effektiven Protokollierung in GroupDocs.Viewer .NET für Konsolen- und Dateiausgaben"
 "url": "/de/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Implementieren einer effektiven Protokollierung in GroupDocs.Viewer .NET
 
 ## Einführung

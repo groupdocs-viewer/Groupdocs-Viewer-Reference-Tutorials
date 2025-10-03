@@ -4,8 +4,8 @@
 "title": "Comment récupérer et enregistrer des pièces jointes à des documents à l'aide de GroupDocs.Viewer pour Java – Un guide complet"
 "url": "/fr/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment récupérer et enregistrer des pièces jointes à un document à l'aide de GroupDocs.Viewer pour Java : guide complet
 
 ## Introduction

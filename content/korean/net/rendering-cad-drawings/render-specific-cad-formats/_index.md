@@ -5,8 +5,8 @@
 "title": "렌더링 특정 CAD 형식(CF2)"
 "url": "/ko/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # 렌더링 특정 CAD 형식(CF2)
 
 ## 소개

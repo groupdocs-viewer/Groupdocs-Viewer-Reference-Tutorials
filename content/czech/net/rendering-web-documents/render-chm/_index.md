@@ -5,8 +5,8 @@
 "title": "Renderování souborů CHM"
 "url": "/cs/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Renderování souborů CHM
 
 ## Zavedení

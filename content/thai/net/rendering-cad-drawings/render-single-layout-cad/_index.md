@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เค้าโครงเดี่ยวในภาพวาด CAD"
 "url": "/th/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # การเรนเดอร์เค้าโครงเดี่ยวในภาพวาด CAD
 
 ## การแนะนำ

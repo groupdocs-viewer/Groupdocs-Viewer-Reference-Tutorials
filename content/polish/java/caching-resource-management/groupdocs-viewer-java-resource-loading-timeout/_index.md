@@ -4,8 +4,8 @@
 "title": "Ustaw limit czasu ładowania zasobów w GroupDocs.Viewer dla Java i popraw wydajność dokumentu"
 "url": "/pl/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Ustaw limit czasu ładowania zasobów w GroupDocs.Viewer dla Java: popraw wydajność renderowania dokumentów
 
 ## Wstęp

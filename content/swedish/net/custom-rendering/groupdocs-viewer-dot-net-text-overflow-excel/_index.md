@@ -4,8 +4,8 @@
 "title": "Dölj textöverflöde i Excel med GroupDocs.Viewer .NET &#5; En omfattande guide"
 "url": "/sv/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # Dölj textöverflöde i Excel med GroupDocs.Viewer .NET
 
 ## Introduktion

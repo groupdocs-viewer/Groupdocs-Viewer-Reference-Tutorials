@@ -8,10 +8,8 @@ keywords:
 - HTML Minification
 - GroupDocs.Viewer .NET
 - Web Document Optimization
-
+type: docs
 ---
-
-
 # How to Implement HTML Minification with GroupDocs.Viewer .NET for Faster Web Pages
 
 ## Introduction

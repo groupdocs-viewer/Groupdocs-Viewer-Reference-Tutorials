@@ -4,8 +4,8 @@
 "title": "Jak renderować śledzone zmiany w dokumentach Word za pomocą GroupDocs.Viewer dla Java? Kompleksowy przewodnik"
 "url": "/pl/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie śledzonych zmian w dokumentach Word za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

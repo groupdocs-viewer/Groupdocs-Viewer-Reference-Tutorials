@@ -4,8 +4,8 @@
 "title": "كيفية استرداد مرفقات المستندات وحفظها باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استرداد مرفقات المستندات وحفظها باستخدام GroupDocs.Viewer لـ Java: دليل شامل
 
 ## مقدمة

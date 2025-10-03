@@ -4,8 +4,8 @@
 "title": "Como renderizar páginas selecionadas de um documento usando GroupDocs.Viewer para Java"
 "url": "/pt/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar páginas específicas com GroupDocs.Viewer para Java
 
 ## Introdução

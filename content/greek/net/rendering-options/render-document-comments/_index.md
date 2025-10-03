@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφου με σχόλια"
 "url": "/el/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Απόδοση εγγράφου με σχόλια
 
 ## Εισαγωγή

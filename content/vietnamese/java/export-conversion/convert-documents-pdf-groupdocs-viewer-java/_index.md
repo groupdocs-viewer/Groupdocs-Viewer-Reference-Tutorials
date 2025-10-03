@@ -4,8 +4,8 @@
 "title": "Cách chuyển đổi tài liệu sang PDF bằng GroupDocs.Viewer cho Java&#58; Hướng dẫn đầy đủ"
 "url": "/vi/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách chuyển đổi tài liệu sang PDF bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

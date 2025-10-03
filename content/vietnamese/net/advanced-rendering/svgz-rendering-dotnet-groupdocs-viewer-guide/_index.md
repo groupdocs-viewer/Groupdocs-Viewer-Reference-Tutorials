@@ -4,8 +4,8 @@
 "title": "Làm chủ SVGZ Rendering trong .NET bằng GroupDocs.Viewer&#58; Hướng dẫn đầy đủ cho nhà phát triển"
 "url": "/vi/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ SVGZ Rendering trong .NET với GroupDocs.Viewer: Hướng dẫn đầy đủ cho nhà phát triển
 
 ## Giới thiệu

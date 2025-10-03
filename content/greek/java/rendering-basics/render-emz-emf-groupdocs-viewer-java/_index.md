@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία EMZ/EMF χρησιμοποιώντας το GroupDocs.Viewer για Java - Οδηγός βήμα προς βήμα"
 "url": "/el/java/rendering-basics/render-emz-emf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πλήρης οδηγός: Απόδοση αρχείων EMZ/EMF με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@
 "title": "स्थानीय डिस्क से दस्तावेज़ लोड करें"
 "url": "/hi/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # स्थानीय डिस्क से दस्तावेज़ लोड करें
 
 ## परिचय

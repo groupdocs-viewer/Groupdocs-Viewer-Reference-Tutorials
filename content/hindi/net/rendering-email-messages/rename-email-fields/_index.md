@@ -5,8 +5,8 @@
 "title": "रेंडरिंग के दौरान ईमेल फ़ील्ड का नाम बदलें"
 "url": "/hi/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # रेंडरिंग के दौरान ईमेल फ़ील्ड का नाम बदलें
 
 ## परिचय

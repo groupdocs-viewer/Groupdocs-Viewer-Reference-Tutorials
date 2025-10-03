@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 MS Project 파일을 HTML, JPG, PNG 및 PDF로 렌더링하고 메모를 추가하는 방법"
 "url": "/ko/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 MS Project 파일을 HTML, JPG, PNG 및 PDF로 렌더링하고 메모를 추가하는 방법
 
 ## 소개

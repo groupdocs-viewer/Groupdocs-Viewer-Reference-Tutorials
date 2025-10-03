@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 检索和打印 Excel 工作表名称（2023 指南）"
 "url": "/zh/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 检索和打印 Excel 工作表名称：综合指南
 
 ## 介绍

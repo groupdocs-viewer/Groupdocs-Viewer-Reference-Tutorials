@@ -5,8 +5,8 @@
 "title": "Vykreslení skrytých stránek"
 "url": "/cs/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Vykreslení skrytých stránek
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Convertir archivos adjuntos de correo electrónico en HTML con GroupDocs.Viewer para .NET"
 "url": "/es/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cómo convertir archivos adjuntos de correo electrónico a HTML con GroupDocs.Viewer para .NET
 ## Introducción
 ¿Necesita una forma eficiente de convertir archivos adjuntos de correo electrónico a HTML fácilmente visible? Ya sea para mejorar la accesibilidad de los documentos o para simplificar el intercambio de contenido, la representación de archivos adjuntos es esencial para una gestión eficaz de la correspondencia digital. Esta guía le guiará en el uso de... **GroupDocs.Viewer para .NET** para lograr esto con facilidad.

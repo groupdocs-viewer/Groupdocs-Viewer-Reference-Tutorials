@@ -5,8 +5,8 @@
 "title": "Habilitar el almacenamiento en caché para un procesamiento más rápido de documentos"
 "url": "/es/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Habilitar el almacenamiento en caché para un procesamiento más rápido de documentos
 
 ## Introducción

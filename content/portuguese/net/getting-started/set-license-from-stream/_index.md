@@ -5,8 +5,8 @@
 "title": "Definir licença do fluxo"
 "url": "/pt/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # Definir licença do fluxo
 
 ## Introdução

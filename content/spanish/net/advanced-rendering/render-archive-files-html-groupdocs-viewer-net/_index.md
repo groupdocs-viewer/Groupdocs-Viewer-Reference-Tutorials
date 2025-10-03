@@ -4,8 +4,8 @@
 "title": "Cómo convertir archivos comprimidos en HTML con GroupDocs.Viewer .NET&#58; guía paso a paso"
 "url": "/es/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cómo convertir archivos comprimidos en HTML con GroupDocs.Viewer .NET: guía paso a paso
 ## Introducción
 ¿Tiene dificultades para presentar archivos como RAR o ZIP en una página web? Convertir estos formatos complejos en documentos HTML intuitivos es crucial para una distribución fluida de contenido. Con GroupDocs.Viewer para .NET, esta tarea se vuelve sencilla y eficiente.

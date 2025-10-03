@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 掌握 Outlook 数据渲染和过滤"
 "url": "/zh/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 掌握 Outlook 数据渲染和过滤
 
 ## 介绍

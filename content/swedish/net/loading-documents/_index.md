@@ -5,8 +5,8 @@
 "title": "Läser in dokument"
 "url": "/sv/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Läser in dokument
 
 ## Introduktion

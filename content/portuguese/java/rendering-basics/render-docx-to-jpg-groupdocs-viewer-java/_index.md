@@ -4,8 +4,8 @@
 "title": "Renderizar DOCX para JPG usando GroupDocs.Viewer para Java - Guia passo a passo"
 "url": "/pt/java/rendering-basics/render-docx-to-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar um documento DOCX em imagens JPG usando o GroupDocs.Viewer para Java
 
 ## Introdução

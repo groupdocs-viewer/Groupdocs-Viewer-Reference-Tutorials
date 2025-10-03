@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Viewer .NET
 - render specific pages .NET
 - selective page rendering
-
+type: docs
 ---
-
-
 # Rendering Specific Pages in .NET with GroupDocs.Viewer: A Comprehensive Guide
 
 ## Introduction

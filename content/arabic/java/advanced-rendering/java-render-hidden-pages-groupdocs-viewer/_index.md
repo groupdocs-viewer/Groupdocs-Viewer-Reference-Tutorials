@@ -4,8 +4,8 @@
 "title": "جافا - كيفية عرض الصفحات المخفية باستخدام GroupDocs.Viewer"
 "url": "/ar/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # جافا: كيفية عرض الصفحات المخفية باستخدام GroupDocs.Viewer
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "عرض مجلدات الأرشيف في جافا باستخدام GroupDocs.Viewer - دليل خطوة بخطوة"
 "url": "/ar/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض مجلدات الأرشيف باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

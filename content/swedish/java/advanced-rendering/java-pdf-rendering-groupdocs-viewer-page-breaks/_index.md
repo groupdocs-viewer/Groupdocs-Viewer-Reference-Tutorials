@@ -4,8 +4,8 @@
 "title": "Java PDF-rendering med GroupDocs.Viewer Implementera sidbrytningar i kalkylblad"
 "url": "/sv/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra Java PDF-rendering: GroupDocs.Viewer med sidbrytningar
 
 Lås upp kraften i kalkylbladsrendering i dina Java-applikationer med GroupDocs.Viewer. Den här omfattande guiden visar hur du implementerar Java PDF-rendering med sidbrytningar för sömlös konvertering till PDF.

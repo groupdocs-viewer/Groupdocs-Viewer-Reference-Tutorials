@@ -4,8 +4,8 @@
 "title": "Cải thiện kết xuất PDF trong .NET&#58; Kích hoạt gợi ý phông chữ với GroupDocs.Viewer"
 "url": "/vi/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cách cải thiện kết xuất PDF trong .NET bằng GroupDocs.Viewer: Bật gợi ý phông chữ
 
 ## Giới thiệu

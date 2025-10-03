@@ -5,8 +5,8 @@
 "title": "Visualizza cartelle specifiche e filtra i messaggi (Outlook)"
 "url": "/it/net/rendering-outlook-data-files/render-specific-folders-and-filter-messages-outlook/"
 "weight": 11
+type: docs
 ---
-
 # Visualizza cartelle specifiche e filtra i messaggi (Outlook)
 
 ## Introduzione

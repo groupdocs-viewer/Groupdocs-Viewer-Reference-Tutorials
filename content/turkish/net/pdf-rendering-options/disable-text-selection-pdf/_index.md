@@ -5,8 +5,8 @@
 "title": "PDF'de Metin Seçimini Devre Dışı Bırak"
 "url": "/tr/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # PDF'de Metin Seçimini Devre Dışı Bırak
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "Meistern Sie das HTML-Rendering mit benutzerdefinierten Rändern in .NET mithilfe von GroupDocs.Viewer"
 "url": "/de/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # HTML-Rendering mit benutzerdefinierten Rändern in .NET mithilfe von GroupDocs.Viewer meistern
 
 ## Einführung

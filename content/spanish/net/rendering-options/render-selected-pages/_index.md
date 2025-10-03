@@ -5,8 +5,8 @@
 "title": "Renderizar páginas seleccionadas"
 "url": "/es/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Renderizar páginas seleccionadas
 
 ## Introducción

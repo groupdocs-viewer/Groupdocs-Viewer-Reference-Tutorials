@@ -8,8 +8,8 @@ keywords:
   - groupdocs.viewer for .net
   - .net pdf rendering
   - image quality pdf .net
+type: docs
 ---
-
 ## Introduction
 
 In this tutorial, we will learn how to adjust the quality of JPG images when rendering a document to PDF using **GroupDocs.Viewer for .NET**. This powerful library allows you to view and manipulate various document formats in your .NET applications seamlessly.

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET - Renderiza pastas específicas de arquivos ZIP para HTML"
 "url": "/pt/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Tutorial: Implementando GroupDocs.Viewer .NET para renderizar pastas específicas de arquivos ZIP para HTML
 
 ## Introdução

@@ -4,8 +4,8 @@
 "title": "Verimli Meta Veri Yönetimi için GroupDocs.Viewer .NET Kullanılarak Belge Ekleri Nasıl Alınır ve Kaydedilir"
 "url": "/tr/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak Belge Eklerini Alma ve Kaydetme
 
 ## giriiş

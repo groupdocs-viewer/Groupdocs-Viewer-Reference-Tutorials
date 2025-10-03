@@ -4,8 +4,8 @@
 "title": "Java에서 GroupDocs.Viewer를 사용하여 특정 PDF 페이지 회전하기 - 포괄적인 가이드"
 "url": "/ko/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java에서 GroupDocs.Viewer를 사용하여 특정 PDF 페이지 회전
 
 ## 소개

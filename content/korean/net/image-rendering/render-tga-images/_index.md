@@ -5,8 +5,8 @@
 "title": "TGA 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # TGA 이미지 렌더링
 
 ## 소개

@@ -4,8 +4,8 @@
 "title": "Απόδοση εγγράφων έργου MS χρησιμοποιώντας το GroupDocs.Viewer .NET για βελτιωμένη διαχείριση έργου"
 "url": "/el/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Κύρια απόδοση εγγράφων MS Project χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

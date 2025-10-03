@@ -5,8 +5,8 @@
 "title": "Render hình ảnh Visio"
 "url": "/vi/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Render hình ảnh Visio
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "PDF/OXPS renderelése betűtípus-korlátozásokkal a GroupDocs.Viewer .NET használatával – Átfogó útmutató"
 "url": "/hu/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # PDF/OXPS renderelése betűtípus-korlátozásokkal a GroupDocs.Viewer .NET használatával: Átfogó útmutató
 
 ## Bevezetés

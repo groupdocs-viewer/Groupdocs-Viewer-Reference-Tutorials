@@ -4,8 +4,8 @@
 "title": "Implementace responzivního vykreslování HTML v .NET pomocí GroupDocs.Viewer – Komplexní průvodce pro vývojáře"
 "url": "/cs/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementace responzivního vykreslování HTML v .NET pomocí GroupDocs.Viewer: Průvodce pro vývojáře
 
 ## Zavedení

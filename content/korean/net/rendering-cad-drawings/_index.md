@@ -5,8 +5,8 @@
 "title": "CAD 도면 렌더링"
 "url": "/ko/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # CAD 도면 렌더링
 
 

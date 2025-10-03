@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp CF2 sang HTML, JPG, PNG, PDF trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/rendering-basics/render-cf2-files-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Hướng dẫn toàn diện: Kết xuất tệp CF2 sang nhiều định dạng khác nhau bằng GroupDocs.Viewer trong Java
 
 ## Giới thiệu

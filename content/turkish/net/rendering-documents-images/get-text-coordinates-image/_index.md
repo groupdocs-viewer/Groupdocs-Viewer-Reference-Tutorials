@@ -5,8 +5,8 @@
 "title": "Görüntü İşleme için Metin Koordinatlarını Alın"
 "url": "/tr/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Görüntü İşleme için Metin Koordinatlarını Alın
 
 ## giriiş

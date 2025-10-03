@@ -5,8 +5,8 @@
 "title": "문서 로딩"
 "url": "/ko/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # 문서 로딩
 
 ## 소개

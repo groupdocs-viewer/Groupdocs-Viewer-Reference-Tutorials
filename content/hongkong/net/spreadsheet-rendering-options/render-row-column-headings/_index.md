@@ -5,8 +5,8 @@
 "title": "呈現行和列標題"
 "url": "/zh-hant/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # 呈現行和列標題
 
 ## 介紹

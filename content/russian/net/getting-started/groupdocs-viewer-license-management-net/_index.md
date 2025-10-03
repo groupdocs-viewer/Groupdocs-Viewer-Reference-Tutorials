@@ -4,8 +4,8 @@
 "title": "Освоение управления лицензиями в GroupDocs.Viewer для .NET&#58; Подробное руководство"
 "url": "/ru/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Освоение управления лицензиями в GroupDocs.Viewer для .NET
 ## Подробное руководство
 

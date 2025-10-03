@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文件元資料擷取教學課程"
 "url": "/zh-hant/java/metadata-properties/"
 "weight": 14
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文件元資料擷取教學課程
 
 透過我們的 GroupDocs.Viewer Java 教學課程學習如何使用文件元資料和屬性。這些實用指南示範如何擷取文件資訊、讀取元資料欄位、管理文件屬性以及實作基於元資料的文件處理。每個教學課程都包含針對常見元資料場景的 Java 程式碼範例，可協助您建立能夠有效分析和管理文件資訊的應用程式。

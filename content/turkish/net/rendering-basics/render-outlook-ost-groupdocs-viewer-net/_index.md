@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanılarak Outlook OST Dosyaları Nasıl Oluşturulur | Adım Adım Kılavuz"
 "url": "/tr/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET Kullanılarak Outlook OST Dosyaları Nasıl Oluşturulur: Kapsamlı Adım Adım Kılavuz
 
 ## giriiş

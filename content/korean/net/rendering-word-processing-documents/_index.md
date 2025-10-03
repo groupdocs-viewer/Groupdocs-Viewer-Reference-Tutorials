@@ -5,8 +5,8 @@
 "title": "워드 프로세싱 문서 렌더링"
 "url": "/ko/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # 워드 프로세싱 문서 렌더링
 
 

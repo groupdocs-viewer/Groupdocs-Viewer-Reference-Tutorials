@@ -4,8 +4,8 @@
 "title": "Melhore a renderização de PDF no .NET e habilite dicas de fonte com GroupDocs.Viewer"
 "url": "/pt/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Como aprimorar a renderização de PDF no .NET usando GroupDocs.Viewer: Habilitar dicas de fonte
 
 ## Introdução

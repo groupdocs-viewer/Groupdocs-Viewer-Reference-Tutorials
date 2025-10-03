@@ -5,8 +5,8 @@
 "title": "Metered-licentie instellen"
 "url": "/nl/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Metered-licentie instellen
 
 ## Invoering

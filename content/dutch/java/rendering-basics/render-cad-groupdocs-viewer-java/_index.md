@@ -4,8 +4,8 @@
 "title": "Hoe u specifieke CAD-tekeningen in Java kunt renderen met GroupDocs.Viewer"
 "url": "/nl/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hoe u specifieke CAD-tekeningen in Java kunt renderen met GroupDocs.Viewer
 
 ## Invoering

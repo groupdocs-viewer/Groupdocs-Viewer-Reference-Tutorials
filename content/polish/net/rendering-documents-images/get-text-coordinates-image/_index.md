@@ -5,8 +5,8 @@
 "title": "Uzyskaj współrzędne tekstu do renderowania obrazu"
 "url": "/pl/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Uzyskaj współrzędne tekstu do renderowania obrazu
 
 ## Wstęp

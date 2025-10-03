@@ -5,8 +5,8 @@
 "title": "Rendre les colonnes et les lignes cachées"
 "url": "/fr/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Rendre les colonnes et les lignes cachées
 
 ## Introduction

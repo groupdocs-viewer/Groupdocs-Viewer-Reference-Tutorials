@@ -8,10 +8,8 @@ keywords:
 - CAD layout rendering
 - GroupDocs.Viewer for .NET tutorial
 - render CAD layouts with C#
-
+type: docs
 ---
-
-
 # Efficient CAD Layout Rendering with GroupDocs.Viewer for .NET
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "So rufen Sie Dokumentanhänge mit GroupDocs.Viewer .NET ab und speichern sie für eine effiziente Metadatenverwaltung"
 "url": "/de/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie Dokumentanhänge mit GroupDocs.Viewer .NET ab und speichern sie
 
 ## Einführung

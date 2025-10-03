@@ -5,8 +5,8 @@
 "title": "Désactiver les vérifications de licence de police dans PDF"
 "url": "/fr/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Désactiver les vérifications de licence de police dans PDF
 
 ## Introduction

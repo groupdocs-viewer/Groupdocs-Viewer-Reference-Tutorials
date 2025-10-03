@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer voor Java&#58; informatie en inzichten uit documentweergave ophalen"
 "url": "/nl/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Documentweergaven onder de knie krijgen met GroupDocs.Viewer voor Java
 ## Geavanceerde renderingtechnieken
 **SEO-URL:** groupdocs-viewer-java-document-views

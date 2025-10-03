@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Kullanarak Java E-Tablolarında Gizli Satırları ve Sütunları Oluşturma"
 "url": "/tr/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java E-Tablolarında Gizli Satırları ve Sütunları Oluşturma
 
 ## giriiş

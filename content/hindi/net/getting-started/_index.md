@@ -5,8 +5,8 @@
 "title": "शुरू करना"
 "url": "/hi/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # शुरू करना
 
 

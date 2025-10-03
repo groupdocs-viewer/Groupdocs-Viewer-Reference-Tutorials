@@ -5,8 +5,8 @@
 "title": "Renderspezifisches Projektzeitintervall (MS Project)"
 "url": "/de/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # Renderspezifisches Projektzeitintervall (MS Project)
 
 ## Einführung

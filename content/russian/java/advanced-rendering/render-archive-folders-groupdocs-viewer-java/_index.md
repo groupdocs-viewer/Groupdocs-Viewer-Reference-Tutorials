@@ -4,8 +4,8 @@
 "title": "Рендеринг архивных папок в Java с помощью GroupDocs.Viewer&#58; Пошаговое руководство"
 "url": "/ru/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Рендеринг архивных папок с помощью GroupDocs.Viewer для Java
 
 ## Введение

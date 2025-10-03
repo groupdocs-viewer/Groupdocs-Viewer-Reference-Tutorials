@@ -4,8 +4,8 @@
 "title": "Μετατροπή DOCX σε HTML χρησιμοποιώντας το GroupDocs.Viewer για .NET™ Ένας πλήρης οδηγός"
 "url": "/el/net/export-conversion/groupdocs-viewer-dotnet-docx-to-html/"
 "weight": 1
+type: docs
 ---
-
 # Μετατροπή DOCX σε διαδραστική HTML με το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

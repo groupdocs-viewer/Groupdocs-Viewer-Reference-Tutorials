@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer .NET&#58; 嵌入字体并高效地将文档转换为 HTML"
 "url": "/zh/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 掌握文档渲染：嵌入字体并转换为 HTML
 
 ## 介绍

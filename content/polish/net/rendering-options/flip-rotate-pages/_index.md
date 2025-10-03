@@ -5,8 +5,8 @@
 "title": "Przerzucanie i obracanie stron"
 "url": "/pl/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Przerzucanie i obracanie stron
 
 ## Wstęp

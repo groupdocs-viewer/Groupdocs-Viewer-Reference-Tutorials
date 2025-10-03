@@ -4,8 +4,8 @@
 "title": "Representar filas y columnas ocultas en archivos de Excel con GroupDocs.Viewer para .NET&#58; Guía avanzada"
 "url": "/es/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Representar filas y columnas ocultas en archivos de Excel con GroupDocs.Viewer para .NET
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "วิธีการใช้การเรนเดอร์แบบอักษรที่กำหนดเองใน Java ด้วย GroupDocs.Viewer พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการใช้การเรนเดอร์แบบอักษรที่กำหนดเองใน Java ด้วย GroupDocs.Viewer: คำแนะนำทีละขั้นตอน
 
 ## การแนะนำ

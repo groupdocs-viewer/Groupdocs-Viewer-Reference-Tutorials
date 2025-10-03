@@ -5,8 +5,8 @@
 "title": "عرض الفاصل الزمني للمشروع المحدد (MS Project)"
 "url": "/ar/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # عرض الفاصل الزمني للمشروع المحدد (MS Project)
 
 ## مقدمة

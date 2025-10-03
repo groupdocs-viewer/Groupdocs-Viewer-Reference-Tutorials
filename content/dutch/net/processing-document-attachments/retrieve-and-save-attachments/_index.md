@@ -5,8 +5,8 @@
 "title": "Documentbijlagen ophalen en opslaan"
 "url": "/nl/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Documentbijlagen ophalen en opslaan
 
 ## Invoering

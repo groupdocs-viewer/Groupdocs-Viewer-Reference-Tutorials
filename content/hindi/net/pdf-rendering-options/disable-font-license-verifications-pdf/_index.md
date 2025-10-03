@@ -5,8 +5,8 @@
 "title": "पीडीएफ में फ़ॉन्ट लाइसेंस सत्यापन अक्षम करें"
 "url": "/hi/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # पीडीएफ में फ़ॉन्ट लाइसेंस सत्यापन अक्षम करें
 
 ## परिचय

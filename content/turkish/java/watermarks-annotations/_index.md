@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java için Belge Filigranı ve Açıklama Eğitimleri"
 "url": "/tr/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # GroupDocs.Viewer Java için Belge Filigranı ve Açıklama Eğitimleri
 
 GroupDocs.Viewer Java eğitimlerimizle belge açıklama ve filigranlama tekniklerinde ustalaşın. Bu adım adım kılavuzlar, metin ve resim filigranlarının nasıl ekleneceğini, açıklamaların nasıl uygulanacağını, filigran konumlandırma ve şeffaflığın nasıl kontrol edileceğini ve gömülü açıklamalarla belgelerin nasıl işleneceğini gösterir. Her eğitim, belgelerinize görsel meta veriler ve koruyucu işaretler eklemek, belge izleme ve markalama yeteneklerini geliştirmek için pratik Java kod örnekleri içerir.

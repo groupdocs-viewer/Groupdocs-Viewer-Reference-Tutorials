@@ -5,8 +5,8 @@
 "title": "Λήψη πληροφοριών προβολής για έγγραφο PDF"
 "url": "/el/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Λήψη πληροφοριών προβολής για έγγραφο PDF
 
 ## Εισαγωγή

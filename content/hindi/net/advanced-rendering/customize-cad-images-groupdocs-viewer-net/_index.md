@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET की उन्नत रेंडरिंग तकनीकों के साथ CAD छवियों को अनुकूलित करें"
 "url": "/hi/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET का उपयोग करके CAD छवियों को कैसे प्रस्तुत और अनुकूलित करें
 
 ## परिचय

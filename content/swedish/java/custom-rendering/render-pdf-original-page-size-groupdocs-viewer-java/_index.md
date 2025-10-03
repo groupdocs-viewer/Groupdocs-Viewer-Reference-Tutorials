@@ -4,8 +4,8 @@
 "title": "Rendera PDF-filer i originalstorlek med GroupDocs.Viewer för Java – en omfattande guide"
 "url": "/sv/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Så här renderar du PDF-filer med deras ursprungliga sidstorlek med GroupDocs.Viewer för Java
 
 Att rendera en PDF samtidigt som den ursprungliga sidstorleken bibehålls är avgörande för korrekt visning på olika plattformar och enheter. Den här omfattande guiden guidar dig genom implementeringen av den här funktionen med GroupDocs.Viewer för Java API. Genom att följa dessa steg säkerställer du att dina PDF-filer behåller sin återgivningskvalitet under renderingen.

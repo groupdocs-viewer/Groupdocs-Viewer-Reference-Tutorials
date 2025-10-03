@@ -4,8 +4,8 @@
 "title": "Render PDF/OXPS dengan Pembatasan Font Menggunakan GroupDocs.Viewer .NET&#58; Panduan Lengkap"
 "url": "/id/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Render PDF/OXPS dengan Pembatasan Font Menggunakan GroupDocs.Viewer .NET: Panduan Lengkap
 
 ## Perkenalan

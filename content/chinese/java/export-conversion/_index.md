@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文档导出和转换教程"
 "url": "/zh/java/export-conversion/"
 "weight": 15
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文档导出和转换教程
 
 使用我们的 GroupDocs.Viewer Java 教程掌握文档导出和转换技巧。这些分步指南演示了如何在多种格式之间转换文档、实施导出策略、在转换过程中维护格式以及处理复杂的多格式文档。每个教程都包含常见导出和转换场景的详细 Java 代码示例，帮助您构建灵活的文档转换解决方案。

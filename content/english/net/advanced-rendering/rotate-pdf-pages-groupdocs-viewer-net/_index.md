@@ -8,10 +8,8 @@ keywords:
 - rotate PDF pages
 - GroupDocs.Viewer .NET
 - PDF manipulation with .NET
-
+type: docs
 ---
-
-
 # How to Rotate PDF Pages Using GroupDocs.Viewer for .NET: A Developer's Guide
 
 ## Introduction

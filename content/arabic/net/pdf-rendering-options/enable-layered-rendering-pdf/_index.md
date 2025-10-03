@@ -5,8 +5,8 @@
 "title": "تمكين العرض الطبقي في PDF"
 "url": "/ar/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # تمكين العرض الطبقي في PDF
 
 ## مقدمة

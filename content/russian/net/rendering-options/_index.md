@@ -5,8 +5,8 @@
 "title": "Параметры рендеринга"
 "url": "/ru/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Параметры рендеринга
 
 

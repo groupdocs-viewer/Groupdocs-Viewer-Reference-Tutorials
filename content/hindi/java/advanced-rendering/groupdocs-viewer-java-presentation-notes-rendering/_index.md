@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ प्रस्तुतियाँ कैसे प्रस्तुत करें - एक व्यापक गाइड"
 "url": "/hi/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ प्रस्तुतियाँ कैसे प्रस्तुत करें
 
 ## परिचय

@@ -8,10 +8,8 @@ keywords:
 - render PLT files to HTML
 - GroupDocs.Viewer Java
 - Java document conversion
-
+type: docs
 ---
-
-
 # How to Render PLT Files to HTML Using GroupDocs.Viewer in Java: A Developer’s Guide
 
 ## Introduction

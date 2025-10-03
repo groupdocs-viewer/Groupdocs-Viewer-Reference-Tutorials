@@ -5,8 +5,8 @@
 "title": "渲染数字"
 "url": "/zh/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # 渲染数字
 
 ## 介绍

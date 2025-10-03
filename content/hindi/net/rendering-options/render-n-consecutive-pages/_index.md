@@ -5,8 +5,8 @@
 "title": "N लगातार पृष्ठ प्रस्तुत करें"
 "url": "/hi/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # N लगातार पृष्ठ प्रस्तुत करें
 
 ## परिचय

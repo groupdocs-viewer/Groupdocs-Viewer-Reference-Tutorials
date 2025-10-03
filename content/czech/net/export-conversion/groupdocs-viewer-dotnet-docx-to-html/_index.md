@@ -4,8 +4,8 @@
 "title": "Převod DOCX do HTML pomocí GroupDocs.Viewer pro .NET – Komplexní průvodce"
 "url": "/cs/net/export-conversion/groupdocs-viewer-dotnet-docx-to-html/"
 "weight": 1
+type: docs
 ---
-
 # Převod DOCX do interaktivního HTML pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Làm chủ phát hiện loại tệp trong Java bằng GroupDocs.Viewer"
 "url": "/vi/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ phát hiện loại tệp trong Java bằng GroupDocs.Viewer
 
 Khám phá sức mạnh của **GroupDocs.Viewer** để nhận dạng liền mạch các loại tệp từ phần mở rộng, loại phương tiện và luồng. Thư viện mạnh mẽ này đơn giản hóa các quy trình phát triển và tăng cường khả năng ứng dụng.

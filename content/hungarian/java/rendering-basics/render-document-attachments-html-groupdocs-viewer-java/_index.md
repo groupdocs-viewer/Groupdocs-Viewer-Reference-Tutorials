@@ -4,8 +4,8 @@
 "title": "Dokumentummellékletek HTML formátumba renderelése GroupDocs.Viewer használatával Java&#58; Lépésről lépésre útmutató"
 "url": "/hu/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentummellékletek renderelése HTML formátumban a GroupDocs.Viewer Java segítségével
 
 ## Bevezetés

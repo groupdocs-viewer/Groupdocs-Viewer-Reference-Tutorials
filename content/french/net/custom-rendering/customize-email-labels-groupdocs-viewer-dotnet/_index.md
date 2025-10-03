@@ -4,8 +4,8 @@
 "title": "Personnaliser les étiquettes d'e-mail dans GroupDocs.Viewer pour .NET &#58; Guide complet pour renommer les champs"
 "url": "/fr/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Personnaliser les étiquettes d'e-mail dans GroupDocs.Viewer pour .NET : Guide complet pour renommer les champs
 
 ## Introduction

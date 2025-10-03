@@ -4,8 +4,8 @@
 "title": "Разделение листов Excel по строкам и столбцам с помощью GroupDocs.Viewer в Java&#58; Подробное руководство"
 "url": "/ru/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Разделение листов Excel по строкам и столбцам с помощью GroupDocs.Viewer в Java
 
 ## Введение

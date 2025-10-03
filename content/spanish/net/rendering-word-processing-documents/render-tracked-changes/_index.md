@@ -5,8 +5,8 @@
 "title": "Seguimiento de cambios en el renderizado"
 "url": "/es/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Seguimiento de cambios en el renderizado
 
 ## Introducción

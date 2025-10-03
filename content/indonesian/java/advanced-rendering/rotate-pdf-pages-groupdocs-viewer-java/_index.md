@@ -4,8 +4,8 @@
 "title": "Memutar Halaman PDF Tertentu Menggunakan GroupDocs.Viewer di Java&#58; Panduan Lengkap"
 "url": "/id/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Memutar Halaman PDF Tertentu Menggunakan GroupDocs.Viewer di Java
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET を使用してアーカイブをカスタムファイル名の PDF に変換する"
 "url": "/ja/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET を使用してアーカイブをカスタムファイル名の PDF に変換する
 
 ## 導入

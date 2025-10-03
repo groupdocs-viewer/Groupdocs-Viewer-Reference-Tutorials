@@ -4,8 +4,8 @@
 "title": "Kuasai Pemrosesan dan Penyaringan Data Outlook dengan GroupDocs.Viewer untuk Java"
 "url": "/id/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Kuasai Pemrosesan dan Penyaringan Data Outlook dengan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

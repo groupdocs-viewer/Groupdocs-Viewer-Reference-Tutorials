@@ -4,8 +4,8 @@
 "title": "Jak načíst a vytisknout názvy listů aplikace Excel pomocí nástroje GroupDocs.Viewer pro .NET (Průvodce 2023)"
 "url": "/cs/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst a vytisknout názvy listů aplikace Excel pomocí nástroje GroupDocs.Viewer pro .NET: Komplexní průvodce
 
 ## Zavedení

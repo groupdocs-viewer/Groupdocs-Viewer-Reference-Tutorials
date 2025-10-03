@@ -4,8 +4,8 @@
 "title": "IGS fájlok renderelése .NET-ben a GroupDocs.Viewer használatával – Teljes körű útmutató"
 "url": "/hu/net/rendering-basics/render-igs-files-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # IGS fájlok renderelése .NET-ben a GroupDocs.Viewer használatával: Teljes útmutató
 
 ## Bevezetés

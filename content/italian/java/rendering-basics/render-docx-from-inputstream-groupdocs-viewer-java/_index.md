@@ -4,8 +4,8 @@
 "title": "Rendering di file DOCX da InputStream in Java utilizzando GroupDocs.Viewer"
 "url": "/it/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Come caricare e visualizzare un file DOCX da un flusso di input utilizzando GroupDocs.Viewer per Java
 
 ## Introduzione

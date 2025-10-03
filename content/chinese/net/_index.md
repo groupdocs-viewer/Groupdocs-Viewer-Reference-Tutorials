@@ -5,8 +5,8 @@
 "title": "GroupDocs.Viewer for .NET 的综合教程和示例"
 "url": "/zh/net/"
 "weight": 10
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET 的综合教程和示例
 
 ## 介绍

@@ -4,8 +4,8 @@
 "title": "كيفية عرض رسومات CAD بتنسيق PNG بحجم ولون خلفية مخصصين باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض رسومات CAD بتنسيق PNG بحجم ولون خلفية مخصصين باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

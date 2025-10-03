@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์ PDF/OXPS พร้อมข้อจำกัดแบบอักษรโดยใช้ GroupDocs.Viewer .NET คำแนะนำที่ครอบคลุม"
 "url": "/th/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์ PDF/OXPS พร้อมข้อจำกัดแบบอักษรโดยใช้ GroupDocs.Viewer .NET: คู่มือฉบับสมบูรณ์
 
 ## การแนะนำ

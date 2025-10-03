@@ -5,8 +5,8 @@
 "title": "Rendera valda sidor"
 "url": "/sv/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Rendera valda sidor
 
 ## Introduktion

@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp OST của Outlook bằng GroupDocs.Viewer cho .NET | Hướng dẫn từng bước"
 "url": "/vi/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp OST của Outlook bằng GroupDocs.Viewer cho .NET: Hướng dẫn từng bước toàn diện
 
 ## Giới thiệu

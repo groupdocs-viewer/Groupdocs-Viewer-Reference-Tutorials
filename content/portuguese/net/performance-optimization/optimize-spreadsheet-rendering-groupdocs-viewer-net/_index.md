@@ -4,8 +4,8 @@
 "title": "Otimize a renderização de planilhas com GroupDocs.Viewer para .NET - Ignore colunas vazias"
 "url": "/pt/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Otimize a renderização de planilhas com GroupDocs.Viewer para .NET
 ## Como pular a renderização de colunas vazias em planilhas usando GroupDocs.Viewer .NET
 ### Introdução

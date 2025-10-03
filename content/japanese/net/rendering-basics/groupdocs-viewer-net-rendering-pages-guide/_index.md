@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して .NET で特定のページをレンダリングする包括的なガイド"
 "url": "/ja/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して .NET で特定のページをレンダリングする: 包括的なガイド
 
 ## 導入

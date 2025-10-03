@@ -4,8 +4,8 @@
 "title": "Cách hiển thị các trang đã chọn của tài liệu bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách hiển thị các trang cụ thể bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

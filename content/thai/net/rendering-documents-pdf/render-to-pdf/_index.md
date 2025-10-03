@@ -5,8 +5,8 @@
 "title": "เรนเดอร์เอกสารเป็น PDF"
 "url": "/th/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # เรนเดอร์เอกสารเป็น PDF
 
 ## การแนะนำ

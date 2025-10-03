@@ -3,8 +3,8 @@
 "title": "Tutoriales de renderizado de documentos multiformato para GroupDocs.Viewer Java"
 "url": "/es/java/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # Tutoriales de renderizado de documentos multiformato para GroupDocs.Viewer Java
 
 Explore la compatibilidad completa con formatos de documentos con nuestros tutoriales de GroupDocs.Viewer para Java. Estas guías detalladas muestran cómo renderizar y gestionar diversos formatos de archivo, como PDF, documentos de Microsoft Office, imágenes, archivos CAD y formatos especializados. Cada tutorial proporciona ejemplos de código Java funcionales que muestran cómo implementar soluciones flexibles de visualización de documentos multiformato que admiten diversos tipos de documentos con una calidad de renderizado uniforme.

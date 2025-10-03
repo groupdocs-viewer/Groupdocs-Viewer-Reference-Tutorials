@@ -5,8 +5,8 @@
 "title": "Tắt tính năng chọn văn bản trong PDF"
 "url": "/vi/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Tắt tính năng chọn văn bản trong PDF
 
 ## Giới thiệu

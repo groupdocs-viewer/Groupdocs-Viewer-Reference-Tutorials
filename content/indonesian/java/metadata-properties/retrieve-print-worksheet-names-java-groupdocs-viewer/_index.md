@@ -4,8 +4,8 @@
 "title": "Ekstrak dan Tampilkan Nama Lembar Kerja di Java Menggunakan API GroupDocs.Viewer"
 "url": "/id/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Ekstrak dan Tampilkan Nama Lembar Kerja di Java Menggunakan API GroupDocs.Viewer
 
 ## Perkenalan

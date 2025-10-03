@@ -5,8 +5,8 @@
 "title": "設定計量許可證"
 "url": "/zh-hant/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # 設定計量許可證
 
 ## 介紹

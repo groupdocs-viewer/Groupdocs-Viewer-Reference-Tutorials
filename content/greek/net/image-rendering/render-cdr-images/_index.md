@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων CDR"
 "url": "/el/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # Απόδοση εικόνων CDR
 
 ## Εισαγωγή

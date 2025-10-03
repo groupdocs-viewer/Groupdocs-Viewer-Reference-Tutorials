@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中擷取 CAD 佈局和圖層"
 "url": "/zh-hant/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 擷取 CAD 佈局和圖層
 
 在工程和設計領域，電腦輔助設計 (CAD) 檔案是不可或缺的工具，用於儲存大量與設計相關的詳細資訊。這些文件可能非常複雜，包含多個佈局和圖層，需要精確的管理和檢索才能有效地執行專案。如果您希望使用 Java 以程式設計方式從 CAD 圖紙中提取特定細節，那麼 GroupDocs.Viewer for Java 是您的首選解決方案。本教學將指導您使用 GroupDocs.Viewer 從 CAD 圖紙中檢索所有佈局和圖層。

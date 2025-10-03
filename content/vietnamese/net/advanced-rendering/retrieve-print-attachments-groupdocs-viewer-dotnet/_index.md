@@ -4,8 +4,8 @@
 "title": "Cách lấy và in tệp đính kèm tài liệu bằng GroupDocs.Viewer cho .NET | Hướng dẫn kết xuất nâng cao"
 "url": "/vi/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy và in tệp đính kèm tài liệu bằng GroupDocs.Viewer cho .NET | Hướng dẫn kết xuất nâng cao
 
 ## Giới thiệu

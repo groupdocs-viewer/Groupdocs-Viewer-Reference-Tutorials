@@ -5,8 +5,8 @@
 "title": "Követett változások renderelése"
 "url": "/hu/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Követett változások renderelése
 
 ## Bevezetés

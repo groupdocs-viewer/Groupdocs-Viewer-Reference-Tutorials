@@ -4,8 +4,8 @@
 "title": "Cara Merender File MS Project sebagai HTML, JPG, PNG, dan PDF dengan Catatan Menggunakan GroupDocs.Viewer untuk Java"
 "url": "/id/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File MS Project sebagai HTML, JPG, PNG, dan PDF dengan Catatan Menggunakan GroupDocs.Viewer untuk Java
 
 ## Perkenalan

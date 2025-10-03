@@ -4,8 +4,8 @@
 "title": "إتقان أسماء الملفات المخصصة في GroupDocs.Viewer Java لعرض الأرشيفات بتنسيق PDF"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # إتقان GroupDocs.Viewer Java: تحديد أسماء ملفات مخصصة عند تحويل الأرشيفات إلى PDF
 
 ## مقدمة

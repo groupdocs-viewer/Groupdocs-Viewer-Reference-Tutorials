@@ -5,8 +5,8 @@
 "title": "テキストファイルのレンダリング"
 "url": "/ja/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # テキストファイルのレンダリング
 
 ## 導入

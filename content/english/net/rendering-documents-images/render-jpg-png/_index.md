@@ -8,8 +8,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["groupdocs-viewer", "document-conversion", "image-rendering", "dotnet"]
+type: docs
 ---
-
 ## Convert Any Document to High-Quality Images in Your .NET Apps
 
 Ever needed to display documents as images in your web application? Or maybe you're building a document preview system that needs to work across different devices? Converting documents to JPG or PNG images is one of the most practical solutions for these scenarios.

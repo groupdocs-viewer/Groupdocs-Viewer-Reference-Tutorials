@@ -8,10 +8,8 @@ keywords:
 - rename email fields Java
 - render emails HTML GroupDocs Viewer
 - customize email metadata Java
-
+type: docs
 ---
-
-
 # How to Rename Email Fields When Rendering Emails to HTML with GroupDocs.Viewer Java
 
 ## Introduction

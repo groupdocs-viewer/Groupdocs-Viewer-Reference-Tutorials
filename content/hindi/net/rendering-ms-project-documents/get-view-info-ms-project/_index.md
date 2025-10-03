@@ -5,8 +5,8 @@
 "title": "Microsoft Project दस्तावेज़ों के लिए जानकारी देखें"
 "url": "/hi/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Microsoft Project दस्तावेज़ों के लिए जानकारी देखें
 
 ## परिचय

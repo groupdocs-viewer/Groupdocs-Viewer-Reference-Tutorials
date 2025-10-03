@@ -5,8 +5,8 @@
 "title": "Укажите имя файла при рендеринге архивных файлов"
 "url": "/ru/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Укажите имя файла при рендеринге архивных файлов
 
 ## Введение

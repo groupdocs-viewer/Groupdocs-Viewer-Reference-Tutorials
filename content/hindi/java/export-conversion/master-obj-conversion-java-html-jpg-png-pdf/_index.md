@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके Java में OBJ को HTML/JPG/PNG/PDF में रूपान्तरित करना"
 "url": "/hi/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # फ़ाइल रूपांतरण में महारत हासिल करना: GroupDocs.Viewer का उपयोग करके Java में OBJ को HTML/JPG/PNG/PDF में परिवर्तित करें
 
 ## परिचय

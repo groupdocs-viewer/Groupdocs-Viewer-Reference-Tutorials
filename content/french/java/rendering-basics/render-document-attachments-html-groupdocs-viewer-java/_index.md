@@ -4,8 +4,8 @@
 "title": "Convertir des pièces jointes en HTML à l'aide de GroupDocs.Viewer Java - Guide étape par étape"
 "url": "/fr/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Convertir les pièces jointes en HTML avec GroupDocs.Viewer Java
 
 ## Introduction

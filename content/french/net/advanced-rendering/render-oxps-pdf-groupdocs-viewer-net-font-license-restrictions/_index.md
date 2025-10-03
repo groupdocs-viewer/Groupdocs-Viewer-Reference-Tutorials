@@ -4,8 +4,8 @@
 "title": "Rendu PDF/OXPS avec restrictions de polices à l'aide de GroupDocs.Viewer .NET - Un guide complet"
 "url": "/fr/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Rendu PDF/OXPS avec restrictions de polices à l'aide de GroupDocs.Viewer .NET : guide complet
 
 ## Introduction

@@ -3,8 +3,8 @@
 "title": "Samouczki dotyczące znaków wodnych i adnotacji w dokumentach dla GroupDocs.Viewer .NET"
 "url": "/pl/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Samouczki dotyczące znaków wodnych i adnotacji w dokumentach dla GroupDocs.Viewer .NET
 
 Opanuj techniki adnotacji i znakowania wodnego dokumentów dzięki naszym samouczkom GroupDocs.Viewer .NET. Te przewodniki krok po kroku pokazują, jak dodawać znaki wodne tekstowe i graficzne, wdrażać adnotacje, kontrolować pozycjonowanie i przezroczystość znaku wodnego oraz renderować dokumenty z osadzonymi adnotacjami. Każdy samouczek zawiera praktyczne przykłady kodu .NET do dodawania wizualnych metadanych i oznaczeń ochronnych do dokumentów, co zwiększa możliwości śledzenia i brandingu dokumentów.

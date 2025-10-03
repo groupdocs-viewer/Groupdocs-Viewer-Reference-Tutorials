@@ -5,8 +5,8 @@
 "title": "Рендеринг с наложенным текстом для отображения"
 "url": "/ru/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Рендеринг с наложенным текстом для отображения
 
 ## Введение

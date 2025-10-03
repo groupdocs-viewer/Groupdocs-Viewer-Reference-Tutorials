@@ -4,8 +4,8 @@
 "title": "Grupa główna GroupDocs.Viewer dla Java – pobieranie informacji i spostrzeżeń dotyczących widoku dokumentu"
 "url": "/pl/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie widoków dokumentów za pomocą GroupDocs.Viewer dla języka Java
 ## Zaawansowane techniki renderowania
 **Adres URL SEO:** groupdocs-viewer-java-widoki-dokumentów

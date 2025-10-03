@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["GroupDocs.Viewer", "FTP", "Document Loading", ".NET", "C#"]
+type: docs
 ---
-
 # GroupDocs.Viewer FTP Document Loading - Complete .NET Integration Guide
 
 ## Introduction

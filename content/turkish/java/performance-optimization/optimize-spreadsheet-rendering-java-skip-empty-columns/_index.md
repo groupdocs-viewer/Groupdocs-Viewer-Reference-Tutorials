@@ -4,8 +4,8 @@
 "title": "Java E-Tablo Oluşturmayı Optimize Etme - GroupDocs.Viewer ile Boş Sütunları Atlama"
 "url": "/tr/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Java'da E-Tablo Oluşturma Nasıl Optimize Edilir: GroupDocs.Viewer ile Boş Sütunları Atlama
 
 ## giriiş

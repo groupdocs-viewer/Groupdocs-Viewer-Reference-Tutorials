@@ -4,8 +4,8 @@
 "title": "Cách lấy và lưu tệp đính kèm tài liệu bằng GroupDocs.Viewer .NET để quản lý siêu dữ liệu hiệu quả"
 "url": "/vi/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy và lưu tệp đính kèm tài liệu bằng GroupDocs.Viewer .NET
 
 ## Giới thiệu

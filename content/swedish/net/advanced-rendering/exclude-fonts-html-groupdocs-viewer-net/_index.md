@@ -4,8 +4,8 @@
 "title": "Hur man utesluter specifika teckensnitt från HTML-utdata med GroupDocs.Viewer för .NET"
 "url": "/sv/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hur man utesluter teckensnitt från HTML-utdata med GroupDocs.Viewer för .NET
 
 ## Introduktion

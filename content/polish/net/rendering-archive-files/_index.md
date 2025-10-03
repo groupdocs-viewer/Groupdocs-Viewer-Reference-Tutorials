@@ -5,8 +5,8 @@
 "title": "Renderowanie plików archiwalnych"
 "url": "/pl/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Renderowanie plików archiwalnych
 
 ## Wstęp

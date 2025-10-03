@@ -4,8 +4,8 @@
 "title": "Come visualizzare gli allegati dei documenti in HTML utilizzando GroupDocs.Viewer Java&#58; una guida passo passo"
 "url": "/it/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendi gli allegati dei documenti in HTML con GroupDocs.Viewer Java
 
 ## Introduzione

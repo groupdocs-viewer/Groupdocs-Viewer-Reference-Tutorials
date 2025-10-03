@@ -5,8 +5,8 @@
 "title": "渲染數位"
 "url": "/zh-hant/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # 渲染數位
 
 ## 介紹

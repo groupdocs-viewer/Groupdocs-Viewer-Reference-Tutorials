@@ -4,8 +4,8 @@
 "title": "Отображение скрытых строк и столбцов в файлах Excel с помощью GroupDocs.Viewer для .NET — расширенное руководство"
 "url": "/ru/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Отображение скрытых строк и столбцов в файлах Excel с помощью GroupDocs.Viewer для .NET
 
 ## Введение

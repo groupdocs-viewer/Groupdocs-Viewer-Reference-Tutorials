@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer のパフォーマンスに関するヒントとテクニックを使用して、.NET での Outlook データ レンダリングを最適化する"
 "url": "/ja/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET で Outlook データ レンダリングを最適化する
 
 ## 導入

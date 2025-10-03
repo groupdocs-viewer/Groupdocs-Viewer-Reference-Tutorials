@@ -5,8 +5,8 @@
 "title": "Rendu des zones d'impression avec GroupDocs.Viewer pour .NET"
 "url": "/fr/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Rendu des zones d'impression avec GroupDocs.Viewer pour .NET
 
 ## Introduction

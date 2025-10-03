@@ -4,8 +4,8 @@
 "title": "Amankan PDF Anda dengan GroupDocs.Viewer di Panduan Perlindungan Kata Sandi & Izin Java"
 "url": "/id/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Amankan PDF Anda dengan GroupDocs.Viewer di Java
 
 ## Perkenalan

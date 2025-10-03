@@ -5,8 +5,8 @@
 "title": "Regola le dimensioni e la qualità dell'immagine (JPG)"
 "url": "/it/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Regola le dimensioni e la qualità dell'immagine (JPG)
 
 ## Introduzione

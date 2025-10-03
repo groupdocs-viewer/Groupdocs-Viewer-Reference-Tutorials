@@ -4,8 +4,8 @@
 "title": "Java용 Master GroupDocs.Viewer를 사용하여 문서 첨부 파일 검색 및 인쇄"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Java용 Master GroupDocs.Viewer: 문서 첨부 파일 검색 및 인쇄
 
 ## 소개

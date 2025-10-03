@@ -4,8 +4,8 @@
 "title": "Responsiv HTML-rendering med GroupDocs.Viewer för Java – en omfattande guide"
 "url": "/sv/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Responsiv HTML-rendering med GroupDocs.Viewer för Java
 
 ## Introduktion

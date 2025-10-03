@@ -4,8 +4,8 @@
 "title": "Rendern versteckter Seiten in Dokumenten mit GroupDocs.Viewer für .NET – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Versteckte Seiten in Dokumenten mit GroupDocs.Viewer für .NET rendern: Eine Schritt-für-Schritt-Anleitung
 
 ## Einführung

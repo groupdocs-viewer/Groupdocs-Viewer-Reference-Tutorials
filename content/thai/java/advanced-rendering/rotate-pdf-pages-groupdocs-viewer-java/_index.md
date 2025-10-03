@@ -4,8 +4,8 @@
 "title": "หมุนหน้า PDF เฉพาะโดยใช้ GroupDocs.Viewer ใน Java - คู่มือฉบับสมบูรณ์"
 "url": "/th/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # หมุนหน้า PDF เฉพาะโดยใช้ GroupDocs.Viewer ใน Java
 
 ## การแนะนำ

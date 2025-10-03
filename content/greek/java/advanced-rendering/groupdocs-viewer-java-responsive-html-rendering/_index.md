@@ -4,8 +4,8 @@
 "title": "Απόδοση HTML με δυνατότητα απόκρισης με το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση HTML με δυνατότητα απόκρισης με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

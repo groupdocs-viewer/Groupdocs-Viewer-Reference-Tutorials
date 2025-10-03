@@ -5,8 +5,8 @@
 "title": "Microsoft Project ドキュメントのビュー情報を取得する"
 "url": "/ja/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Microsoft Project ドキュメントのビュー情報を取得する
 
 ## 導入

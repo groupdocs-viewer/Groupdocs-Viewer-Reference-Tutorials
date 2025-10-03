@@ -5,8 +5,8 @@
 "title": "Bildrendering"
 "url": "/sv/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Bildrendering
 
 

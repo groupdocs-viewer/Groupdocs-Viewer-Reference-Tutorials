@@ -5,8 +5,8 @@
 "title": "Gemessene Lizenz festlegen"
 "url": "/de/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Gemessene Lizenz festlegen
 
 ## Einführung

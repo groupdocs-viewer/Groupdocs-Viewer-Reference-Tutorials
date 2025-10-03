@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でパスワード保護されたドキュメントをレンダリングする"
 "url": "/ja/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java でパスワード保護されたドキュメントをレンダリングする
 
 ## 導入

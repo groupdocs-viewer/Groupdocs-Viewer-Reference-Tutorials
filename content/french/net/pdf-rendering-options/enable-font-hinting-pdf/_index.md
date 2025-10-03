@@ -5,8 +5,8 @@
 "title": "Activer l'indication de police dans le PDF"
 "url": "/fr/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Activer l'indication de police dans le PDF
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Gelişmiş Kullanım (Önbellekleme)"
 "url": "/tr/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Gelişmiş Kullanım (Önbellekleme)
 
 

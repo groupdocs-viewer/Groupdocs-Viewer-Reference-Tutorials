@@ -4,8 +4,8 @@
 "title": "Как визуализировать документы Visio как HTML, JPG, PNG и PDF в .NET с помощью GroupDocs.Viewer"
 "url": "/ru/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать документы Visio в форматах HTML, JPG, PNG и PDF с помощью GroupDocs.Viewer в .NET
 
 ## Введение

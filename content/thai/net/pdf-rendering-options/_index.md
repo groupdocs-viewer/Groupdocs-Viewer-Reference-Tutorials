@@ -5,8 +5,8 @@
 "title": "ตัวเลือกการแสดงผล PDF"
 "url": "/th/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # ตัวเลือกการแสดงผล PDF
 
 

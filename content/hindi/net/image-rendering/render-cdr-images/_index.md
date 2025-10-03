@@ -5,8 +5,8 @@
 "title": "सीडीआर छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # सीडीआर छवियाँ प्रस्तुत करें
 
 ## परिचय

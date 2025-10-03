@@ -4,8 +4,8 @@
 "title": "Cách thiết lập giấy phép Java GroupDocs.Viewer bằng URL HTTP&#58; Hướng dẫn đầy đủ"
 "url": "/vi/java/getting-started/groupdocs-viewer-java-license-http-url/"
 "weight": 1
+type: docs
 ---
-
 # Cách thiết lập giấy phép Java GroupDocs.Viewer bằng URL HTTP
 
 Trong môi trường kỹ thuật số phát triển nhanh như hiện nay, việc cấp phép hợp lý cho các công cụ quản lý tài liệu là điều cần thiết để vận hành liền mạch. Hướng dẫn toàn diện này sẽ chỉ cho bạn cách thiết lập giấy phép cho GroupDocs.Viewer trong Java bằng URL HTTP—hợp lý hóa quy trình làm việc của bạn mà không cần tải xuống cục bộ. Việc thành thạo quy trình này giúp tăng cường cả tính tuân thủ và hiệu quả của ứng dụng.

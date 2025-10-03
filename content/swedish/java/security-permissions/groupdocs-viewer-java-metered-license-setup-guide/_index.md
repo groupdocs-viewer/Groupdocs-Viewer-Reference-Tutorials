@@ -4,8 +4,8 @@
 "title": "Implementera en mätlicens för GroupDocs.Viewer i Java – en utvecklarguide"
 "url": "/sv/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementera en mätad licens för GroupDocs.Viewer för Java: En utvecklarguide
 
 ## Introduktion

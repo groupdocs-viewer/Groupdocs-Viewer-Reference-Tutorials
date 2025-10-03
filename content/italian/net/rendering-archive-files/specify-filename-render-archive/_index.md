@@ -5,8 +5,8 @@
 "title": "Specificare il nome del file durante il rendering dei file di archivio"
 "url": "/it/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Specificare il nome del file durante il rendering dei file di archivio
 
 ## Introduzione

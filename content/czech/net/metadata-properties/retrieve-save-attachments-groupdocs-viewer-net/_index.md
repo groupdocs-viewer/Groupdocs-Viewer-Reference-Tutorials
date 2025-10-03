@@ -4,8 +4,8 @@
 "title": "Jak načíst a uložit přílohy dokumentů pomocí GroupDocs.Viewer .NET pro efektivní správu metadat"
 "url": "/cs/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst a uložit přílohy dokumentů pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Rendu efficace de la zone d'impression Excel avec GroupDocs.Viewer pour .NET"
 "url": "/fr/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendu efficace de la zone d'impression Excel avec GroupDocs.Viewer pour .NET
 
 ## Introduction

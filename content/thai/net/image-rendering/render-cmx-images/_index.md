@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ภาพ CMX"
 "url": "/th/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # การเรนเดอร์ภาพ CMX
 
 ## การแนะนำ

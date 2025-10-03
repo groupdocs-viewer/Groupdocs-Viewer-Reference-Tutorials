@@ -5,8 +5,8 @@
 "title": "Sayfa Sonlarına Göre İşleme"
 "url": "/tr/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Sayfa Sonlarına Göre İşleme
 
 ## giriiş

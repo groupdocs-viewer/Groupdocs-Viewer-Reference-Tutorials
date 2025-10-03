@@ -4,8 +4,8 @@
 "title": "Convertir archivos a HTML con GroupDocs.Viewer Java&#58; una guía completa"
 "url": "/es/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # Convertir archivos a HTML con GroupDocs.Viewer Java: una guía completa
 
 ## Introducción

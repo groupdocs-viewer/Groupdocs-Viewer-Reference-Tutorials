@@ -5,8 +5,8 @@
 "title": "Dokumentum renderelése PDF-be"
 "url": "/hu/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Dokumentum renderelése PDF-be
 
 ## Bevezetés

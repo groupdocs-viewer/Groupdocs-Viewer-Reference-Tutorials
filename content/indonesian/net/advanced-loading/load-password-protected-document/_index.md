@@ -5,8 +5,8 @@
 "title": "Muat Dokumen yang Dilindungi Kata Sandi"
 "url": "/id/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Muat Dokumen yang Dilindungi Kata Sandi
 
 ## Perkenalan

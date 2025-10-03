@@ -4,8 +4,8 @@
 "title": "Cara Memuat Dokumen dengan Pengodean Tertentu di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # Cara Memuat Dokumen dengan Pengodean Tertentu di Java Menggunakan GroupDocs.Viewer
 
 ## Perkenalan

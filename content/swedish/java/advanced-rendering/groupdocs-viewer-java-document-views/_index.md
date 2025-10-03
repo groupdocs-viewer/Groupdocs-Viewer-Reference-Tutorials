@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer för Java Hämta dokumentvisningsinformation och insikter"
 "url": "/sv/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Bemästra dokumentvyer med GroupDocs.Viewer för Java
 ## Avancerade renderingstekniker
 **SEO-URL:** groupdocs-viewer-java-dokumentvyer

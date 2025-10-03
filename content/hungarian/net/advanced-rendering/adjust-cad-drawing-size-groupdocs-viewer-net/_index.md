@@ -4,8 +4,8 @@
 "title": "CAD rajzméret optimalizálása a GroupDocs.Viewer .NET használatával a webes teljesítmény javítása érdekében"
 "url": "/hu/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # CAD rajzméret optimalizálása a GroupDocs.Viewer .NET használatával a webes teljesítmény javítása érdekében
 
 ## Bevezetés

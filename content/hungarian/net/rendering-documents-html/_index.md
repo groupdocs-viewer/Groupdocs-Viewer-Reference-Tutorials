@@ -5,8 +5,8 @@
 "title": "Dokumentumok HTML-re renderelése"
 "url": "/hu/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Dokumentumok HTML-re renderelése
 
 

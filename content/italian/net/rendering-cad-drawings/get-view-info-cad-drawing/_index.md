@@ -5,8 +5,8 @@
 "title": "Ottieni informazioni di visualizzazione per disegni CAD"
 "url": "/it/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Ottieni informazioni di visualizzazione per disegni CAD
 
 ## Introduzione

@@ -5,8 +5,8 @@ weight: 10
 url: /java/
 description: Master document rendering and processing with step-by-step GroupDocs.Viewer Java tutorials. Learn techniques for efficient document viewing across multiple formats.
 is_root: true
+type: docs
 ---
-
 # Comprehensive Tutorials and Examples of GroupDocs.Viewer for Java
 
 ## Introduction

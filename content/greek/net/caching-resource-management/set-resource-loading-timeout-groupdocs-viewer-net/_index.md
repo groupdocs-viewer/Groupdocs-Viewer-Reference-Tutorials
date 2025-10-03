@@ -4,8 +4,8 @@
 "title": "Υλοποίηση χρονικού ορίου φόρτωσης πόρων στο GroupDocs.Viewer για .NET - Ένας πλήρης οδηγός"
 "url": "/el/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση χρονικού ορίου φόρτωσης πόρων στο GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

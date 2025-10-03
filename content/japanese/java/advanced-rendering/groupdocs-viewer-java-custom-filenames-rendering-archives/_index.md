@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Javaのカスタムファイル名をマスターしてアーカイブのPDFレンダリングを行う"
 "url": "/ja/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java をマスターする: アーカイブを PDF にレンダリングするときにカスタムファイル名を指定する
 
 ## 導入

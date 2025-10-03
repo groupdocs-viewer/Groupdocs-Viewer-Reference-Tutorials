@@ -5,8 +5,8 @@
 "title": "Susun Ulang Halaman dalam Dokumen"
 "url": "/id/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Susun Ulang Halaman dalam Dokumen
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "Cara Menerapkan Spesifikasi Jenis Dokumen di GroupDocs.Viewer untuk Java&#58; Panduan Langkah demi Langkah"
 "url": "/id/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menerapkan Spesifikasi Jenis Dokumen di GroupDocs.Viewer untuk Java
 
 Panduan langkah demi langkah tentang menentukan jenis file untuk merender file DOCX menggunakan GroupDocs.Viewer untuk Java.

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET による効率的な CAD レイアウト レンダリング - ステップバイステップ ガイド"
 "url": "/ja/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET による効率的な CAD レイアウト レンダリング
 
 ## 導入

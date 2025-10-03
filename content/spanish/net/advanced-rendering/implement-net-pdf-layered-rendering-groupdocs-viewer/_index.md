@@ -4,8 +4,8 @@
 "title": "Domine la representación por capas de PDF .NET con GroupDocs.Viewer&#58; una guía paso a paso"
 "url": "/es/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Domine la representación por capas de PDF .NET con GroupDocs.Viewer: una guía paso a paso
 
 ## Introducción

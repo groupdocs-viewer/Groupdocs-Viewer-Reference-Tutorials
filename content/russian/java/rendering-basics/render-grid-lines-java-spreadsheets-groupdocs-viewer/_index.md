@@ -4,8 +4,8 @@
 "title": "Как визуализировать линии сетки в электронных таблицах Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать линии сетки в электронных таблицах Java с помощью GroupDocs.Viewer
 
 ## Введение

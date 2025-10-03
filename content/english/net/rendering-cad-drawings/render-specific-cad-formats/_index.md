@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["CAD Rendering"]
 tags: ["cad-files", "dotnet-api", "cf2-conversion", "document-viewer"]
+type: docs
 ---
-
 # How to Render CAD Files in .NET Applications (Complete CF2 Guide)
 
 ## The CAD File Display Challenge Every .NET Developer Faces

@@ -5,8 +5,8 @@
 "title": "Render Catatan dan Sesuaikan Satuan Waktu (MS Project)"
 "url": "/id/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Render Catatan dan Sesuaikan Satuan Waktu (MS Project)
 
 ## Perkenalan

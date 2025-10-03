@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 實作 .NET 響應式 HTML 渲染－面向開發人員的綜合指南"
 "url": "/zh-hant/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 實作 .NET 響應式 HTML 渲染：開發人員指南
 
 ## 介紹

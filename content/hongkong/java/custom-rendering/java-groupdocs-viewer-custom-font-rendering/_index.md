@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 Java 中實現自訂字體渲染——逐步指南"
 "url": "/zh-hant/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 在 Java 中實現自訂字體渲染：逐步指南
 
 ## 介紹

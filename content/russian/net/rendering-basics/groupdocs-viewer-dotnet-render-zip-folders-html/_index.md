@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; Отображение определенных папок из ZIP-архивов в HTML"
 "url": "/ru/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Учебное пособие: Реализация GroupDocs.Viewer .NET для отображения определенных папок из ZIP-архивов в HTML
 
 ## Введение

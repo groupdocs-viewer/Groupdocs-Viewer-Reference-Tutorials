@@ -5,8 +5,8 @@
 "title": "使用密码保护渲染的 PDF"
 "url": "/zh/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # 使用密码保护渲染的 PDF
 
 ## 介绍

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile .NET Duyarlı HTML Oluşturmayı Uygulayın&#58; Geliştiriciler İçin Kapsamlı Bir Kılavuz"
 "url": "/tr/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile .NET Duyarlı HTML Oluşturmayı Uygulayın: Bir Geliştiricinin Kılavuzu
 
 ## giriiş

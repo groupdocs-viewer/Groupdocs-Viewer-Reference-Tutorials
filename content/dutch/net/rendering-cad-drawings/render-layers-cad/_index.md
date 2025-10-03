@@ -5,8 +5,8 @@
 "title": "Renderlagen in CAD-tekeningen"
 "url": "/nl/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # Renderlagen in CAD-tekeningen
 
 ## Invoering

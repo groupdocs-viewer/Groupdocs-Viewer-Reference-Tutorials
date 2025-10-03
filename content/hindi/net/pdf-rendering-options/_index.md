@@ -5,8 +5,8 @@
 "title": "पीडीएफ रेंडरिंग विकल्प"
 "url": "/hi/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # पीडीएफ रेंडरिंग विकल्प
 
 

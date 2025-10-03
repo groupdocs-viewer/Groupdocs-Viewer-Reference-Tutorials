@@ -8,10 +8,8 @@ keywords:
 - Convert ODF to HTML
 - GroupDocs.Viewer for Java
 - render ODF documents
-
+type: docs
 ---
-
-
 # Convert ODF Documents to Various Formats Using GroupDocs.Viewer for Java
 
 ## Introduction

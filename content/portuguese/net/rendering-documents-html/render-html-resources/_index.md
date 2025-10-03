@@ -5,8 +5,8 @@
 "title": "Renderizar com recursos incorporados ou externos"
 "url": "/pt/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Renderizar com recursos incorporados ou externos
 
 ## Introdução

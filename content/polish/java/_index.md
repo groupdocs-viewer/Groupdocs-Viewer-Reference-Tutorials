@@ -5,8 +5,8 @@
 "title": "Kompleksowe samouczki i przykłady GroupDocs.Viewer dla Java"
 "url": "/pl/java/"
 "weight": 10
+type: docs
 ---
-
 # Kompleksowe samouczki i przykłady GroupDocs.Viewer dla Java
 
 ## Wstęp

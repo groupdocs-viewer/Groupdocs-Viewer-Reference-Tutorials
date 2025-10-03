@@ -4,8 +4,8 @@
 "title": "增強 .NET 中的 PDF 渲染 - 使用 GroupDocs.Viewer 啟用字體提示"
 "url": "/zh-hant/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 增強 .NET 中的 PDF 渲染：啟用字體提示
 
 ## 介紹

@@ -5,8 +5,8 @@
 "title": "Извлечение и сохранение вложений документов"
 "url": "/ru/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Извлечение и сохранение вложений документов
 
 ## Введение

@@ -5,8 +5,8 @@
 "title": "Ξεκινώντας"
 "url": "/el/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Ξεκινώντας
 
 

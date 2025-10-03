@@ -5,8 +5,8 @@
 "title": "تقديم الصورة"
 "url": "/ar/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # تقديم الصورة
 
 

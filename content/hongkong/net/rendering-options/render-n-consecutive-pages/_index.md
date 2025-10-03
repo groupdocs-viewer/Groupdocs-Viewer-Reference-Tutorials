@@ -5,8 +5,8 @@
 "title": "渲染 N 個連續頁面"
 "url": "/zh-hant/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # 渲染 N 個連續頁面
 
 ## 介紹

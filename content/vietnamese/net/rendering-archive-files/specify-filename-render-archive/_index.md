@@ -5,8 +5,8 @@
 "title": "Chỉ định tên tệp khi hiển thị tệp lưu trữ"
 "url": "/vi/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Chỉ định tên tệp khi hiển thị tệp lưu trữ
 
 ## Giới thiệu

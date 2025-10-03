@@ -5,8 +5,8 @@
 "title": "Dokumentumok betöltése helyi lemezről"
 "url": "/hu/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Dokumentumok betöltése helyi lemezről
 
 ## Bevezetés

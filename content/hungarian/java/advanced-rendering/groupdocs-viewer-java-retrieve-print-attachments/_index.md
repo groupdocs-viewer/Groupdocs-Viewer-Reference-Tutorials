@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java-hoz&#58; Dokumentummellékletek lekérése és nyomtatása"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer Java-hoz: Dokumentummellékletek lekérése és nyomtatása
 
 ## Bevezetés

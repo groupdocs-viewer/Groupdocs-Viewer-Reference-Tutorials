@@ -4,8 +4,8 @@
 "title": "Az Outlook adatmegjelenítésének optimalizálása .NET-ben a GroupDocs.Viewer segítségével – Teljesítménytippek és technikák"
 "url": "/hu/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Az Outlook adatmegjelenítésének optimalizálása a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

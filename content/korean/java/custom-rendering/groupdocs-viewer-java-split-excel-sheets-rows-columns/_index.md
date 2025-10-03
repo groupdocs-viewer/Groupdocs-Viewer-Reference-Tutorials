@@ -4,8 +4,8 @@
 "title": "Java에서 GroupDocs.Viewer를 사용하여 Excel 시트를 행과 열로 분할하는 포괄적인 가이드"
 "url": "/ko/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Java에서 GroupDocs.Viewer를 사용하여 Excel 시트를 행과 열로 분할하기
 
 ## 소개

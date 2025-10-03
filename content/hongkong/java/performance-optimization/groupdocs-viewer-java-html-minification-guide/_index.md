@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 縮小 Java 中的 HTML 檔案以優化效能"
 "url": "/zh-hant/java/performance-optimization/groupdocs-viewer-java-html-minification-guide/"
 "weight": 1
+type: docs
 ---
-
 # 如何在 Java 中使用 GroupDocs.Viewer 壓縮 HTML 文檔
 
 ## 介紹

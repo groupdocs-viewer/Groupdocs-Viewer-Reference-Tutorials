@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["attachments", "document-extraction", "email-processing", "file-handling"]
+type: docs
 ---
-
 # Extract Document Attachments .NET - Complete Developer Guide
 
 ## Introduction

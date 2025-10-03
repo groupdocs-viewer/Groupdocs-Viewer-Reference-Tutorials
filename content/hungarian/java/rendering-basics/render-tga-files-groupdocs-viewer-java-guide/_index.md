@@ -4,8 +4,8 @@
 "title": "Truevision TGA fájlok renderelése GroupDocs.Viewer Java használatával – lépésről lépésre útmutató"
 "url": "/hu/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Truevision TGA fájlok renderelése GroupDocs.Viewer Java használatával
 
 ## Bevezetés

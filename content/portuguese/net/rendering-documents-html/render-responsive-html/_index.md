@@ -5,8 +5,8 @@
 "title": "Renderizar HTML responsivo"
 "url": "/pt/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # Renderizar HTML responsivo
 
 ## Introdução

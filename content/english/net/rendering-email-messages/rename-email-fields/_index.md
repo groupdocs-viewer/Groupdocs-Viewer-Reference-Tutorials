@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["email-rendering", "field-customization", "groupdocs-viewer", "dotnet"]
+type: docs
 ---
-
 # How to Rename Email Fields During Rendering with GroupDocs.Viewer
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "주석이 있는 문서 렌더링"
 "url": "/ko/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # 주석이 있는 문서 렌더링
 
 ## 소개

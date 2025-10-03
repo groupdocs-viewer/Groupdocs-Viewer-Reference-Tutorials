@@ -5,8 +5,8 @@
 "title": "Rendre les archives RAR"
 "url": "/fr/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Rendre les archives RAR
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でテキスト レイヤー付きの画像としてドキュメントをレンダリングする"
 "url": "/ja/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java でテキスト レイヤー付きの画像としてドキュメントをレンダリングする
 ## 高度なレンダリングチュートリアル
 **現在のSEO URL**: /render-documents-to-images-with-text-layer-java

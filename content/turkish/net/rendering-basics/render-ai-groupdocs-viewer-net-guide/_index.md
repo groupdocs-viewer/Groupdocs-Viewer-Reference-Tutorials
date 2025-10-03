@@ -4,8 +4,8 @@
 "title": "Geliştiriciler için GroupDocs.Viewer .NET kullanarak AI Dosyalarını İşlemeye Yönelik Kapsamlı Kılavuz"
 "url": "/tr/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Geliştiriciler için GroupDocs.Viewer .NET kullanarak AI Dosyalarını İşlemeye Yönelik Kapsamlı Kılavuz
 
 ## giriiş

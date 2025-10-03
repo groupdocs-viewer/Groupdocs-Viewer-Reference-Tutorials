@@ -8,10 +8,8 @@ keywords:
 - convert PST/OST
 - GroupDocs.Viewer for Java
 - render documents
-
+type: docs
 ---
-
-
 # Convert PST/OST to HTML, JPG, PNG, PDF Using GroupDocs.Viewer for Java
 
 ## Introduction

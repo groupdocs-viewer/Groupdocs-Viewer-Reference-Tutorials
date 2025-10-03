@@ -4,8 +4,8 @@
 "title": "Dokumentum első oldalának elforgatása a GroupDocs.Viewer for Java használatával (Speciális útmutató)"
 "url": "/hu/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentum első oldalának elforgatása a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

@@ -5,8 +5,8 @@
 "title": "Загрузить документы с определенной кодировкой"
 "url": "/ru/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # Загрузить документы с определенной кодировкой
 
 ## Введение

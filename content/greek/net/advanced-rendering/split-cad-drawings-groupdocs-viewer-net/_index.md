@@ -4,8 +4,8 @@
 "title": "Πώς να χωρίσετε σχέδια CAD σε πλακίδια χρησιμοποιώντας το GroupDocs.Viewer .NET για αποτελεσματική απόδοση"
 "url": "/el/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να χωρίσετε σχέδια CAD σε πλακίδια με το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

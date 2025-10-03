@@ -4,8 +4,8 @@
 "title": "Rendu PDF efficace en couches en Java avec GroupDocs.Viewer"
 "url": "/fr/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Rendu PDF efficace en couches en Java avec GroupDocs.Viewer
 
 ## Introduction

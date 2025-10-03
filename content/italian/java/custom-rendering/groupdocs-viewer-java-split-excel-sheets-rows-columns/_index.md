@@ -4,8 +4,8 @@
 "title": "Dividi i fogli Excel per righe e colonne con GroupDocs.Viewer in Java&#58; una guida completa"
 "url": "/it/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Divisione di fogli Excel per righe e colonne utilizzando GroupDocs.Viewer in Java
 
 ## Introduzione

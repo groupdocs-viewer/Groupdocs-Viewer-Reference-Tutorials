@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中實作檔案偵測和加密檢查"
 "url": "/zh-hant/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 實作檔案偵測和加密檢查
 
 ## 介紹

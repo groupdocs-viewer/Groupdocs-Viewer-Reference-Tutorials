@@ -5,8 +5,8 @@
 "title": "Vykreslení obrázků APNG"
 "url": "/cs/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Vykreslení obrázků APNG
 
 ## Zavedení

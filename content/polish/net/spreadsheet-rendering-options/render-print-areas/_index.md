@@ -5,8 +5,8 @@
 "title": "Renderowanie obszarów wydruku za pomocą GroupDocs.Viewer dla .NET"
 "url": "/pl/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Renderowanie obszarów wydruku za pomocą GroupDocs.Viewer dla .NET
 
 ## Wstęp

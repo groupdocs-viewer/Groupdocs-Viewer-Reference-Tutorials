@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#58; ile Resimleri Yeniden Boyutlandırma Geliştiriciler İçin Adım Adım Kılavuz"
 "url": "/tr/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile Resimleri Yeniden Boyutlandırma: Geliştiriciler İçin Adım Adım Kılavuz
 
 ## giriiş

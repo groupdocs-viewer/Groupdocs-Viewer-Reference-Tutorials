@@ -4,8 +4,8 @@
 "title": "Java&#58; GroupDocs.Viewer का उपयोग करके छिपे हुए पृष्ठों को कैसे प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # जावा: GroupDocs.Viewer का उपयोग करके छिपे हुए पृष्ठों को कैसे प्रस्तुत करें
 
 ## परिचय

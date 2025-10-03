@@ -4,8 +4,8 @@
 "title": "Implementacja analizy dokumentów za pomocą GroupDocs.Viewer dla Java&#58; Wyodrębnianie metadanych strony i wierszy tekstu"
 "url": "/pl/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Implementacja analizy dokumentów za pomocą GroupDocs.Viewer dla Java: wyodrębnianie metadanych strony i wierszy tekstu
 
 ## Wstęp

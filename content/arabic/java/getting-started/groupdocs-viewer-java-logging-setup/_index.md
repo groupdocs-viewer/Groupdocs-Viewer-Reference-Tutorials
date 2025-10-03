@@ -4,8 +4,8 @@
 "title": "تكوين تسجيل الدخول في GroupDocs.Viewer لدليل تسجيل وحدة التحكم والملفات في Java"
 "url": "/ar/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # تكوين تسجيل الدخول في GroupDocs.Viewer لـ Java
 
 ## مقدمة

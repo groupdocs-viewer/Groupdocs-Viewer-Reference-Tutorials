@@ -5,8 +5,8 @@
 "title": "Bật Gợi ý phông chữ trong PDF"
 "url": "/vi/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Bật Gợi ý phông chữ trong PDF
 
 ## Giới thiệu

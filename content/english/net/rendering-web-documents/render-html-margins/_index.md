@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["html-margins", "net-development", "document-conversion"]
+type: docs
 ---
-
 # HTML Margins .NET - Custom Document Rendering Guide
 
 ## Introduction

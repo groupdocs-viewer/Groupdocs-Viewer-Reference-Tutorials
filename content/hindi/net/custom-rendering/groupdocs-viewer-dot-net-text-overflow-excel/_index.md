@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET का उपयोग करके Excel में टेक्स्ट ओवरफ़्लो छिपाएँ एक व्यापक गाइड"
 "url": "/hi/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ Excel में टेक्स्ट ओवरफ़्लो छिपाएँ
 
 ## परिचय

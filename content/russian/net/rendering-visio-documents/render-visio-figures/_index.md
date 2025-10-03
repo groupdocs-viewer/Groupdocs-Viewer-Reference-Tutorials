@@ -5,8 +5,8 @@
 "title": "Визуализация фигур Visio"
 "url": "/ru/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Визуализация фигур Visio
 
 ## Введение

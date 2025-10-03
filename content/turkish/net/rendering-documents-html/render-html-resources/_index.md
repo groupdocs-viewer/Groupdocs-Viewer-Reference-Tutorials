@@ -5,8 +5,8 @@
 "title": "Gömülü veya Harici Kaynaklarla Oluşturun"
 "url": "/tr/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Gömülü veya Harici Kaynaklarla Oluşturun
 
 ## giriiş

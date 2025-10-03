@@ -5,8 +5,8 @@
 "title": "पीडीएफ में स्तरित रेंडरिंग सक्षम करें"
 "url": "/hi/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # पीडीएफ में स्तरित रेंडरिंग सक्षम करें
 
 ## परिचय

@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์บันทึกและปรับหน่วยเวลา (MS Project)"
 "url": "/th/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # การเรนเดอร์บันทึกและปรับหน่วยเวลา (MS Project)
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "خطوط الشبكة التقديمية"
 "url": "/ar/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # خطوط الشبكة التقديمية
 
 ## مقدمة

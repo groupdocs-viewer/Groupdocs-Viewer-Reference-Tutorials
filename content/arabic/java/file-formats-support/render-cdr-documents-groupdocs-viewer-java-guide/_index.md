@@ -4,8 +4,8 @@
 "title": "عرض ملفات CDR باستخدام GroupDocs.Viewer دليل Java الكامل لتحويل HTML وJPG وPNG وPDF"
 "url": "/ar/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # عرض ملفات CDR باستخدام GroupDocs.Viewer Java: دليل كامل لتحويل HTML وJPG وPNG وPDF
 
 مرحبًا بكم في هذا الدليل المفصل حول تحويل مستندات CorelDRAW (CDR) إلى صيغ مختلفة مثل HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لجافا. إذا كنت تتعامل مع ملفات رسومية وتحتاج إلى طريقة سلسة لتحويلها عبر منصات متعددة، فهذا الدليل هو مرجعك الأمثل.

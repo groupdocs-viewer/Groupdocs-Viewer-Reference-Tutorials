@@ -4,8 +4,8 @@
 "title": "تدوير صفحات PDF محددة باستخدام GroupDocs.Viewer في Java - دليل شامل"
 "url": "/ar/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # تدوير صفحات PDF محددة باستخدام GroupDocs.Viewer في Java
 
 ## مقدمة

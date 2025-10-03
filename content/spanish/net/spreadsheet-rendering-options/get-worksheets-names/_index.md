@@ -5,8 +5,8 @@
 "title": "Obtener nombres de hojas de trabajo"
 "url": "/es/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # Obtener nombres de hojas de trabajo
 
 ## Introducción

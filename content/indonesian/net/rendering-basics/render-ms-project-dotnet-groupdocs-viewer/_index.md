@@ -4,8 +4,8 @@
 "title": "Render Dokumen MS Project dalam .NET dengan GroupDocs.Viewer&#58; Panduan Lengkap"
 "url": "/id/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Rendering Dokumen MS Project di .NET dengan GroupDocs.Viewer
 ## Perkenalan
 Dalam lingkungan bisnis yang serba cepat saat ini, mengelola jadwal dan sumber daya proyek secara efisien sangatlah penting. Para pemangku kepentingan sering kali perlu melihat bagian-bagian tertentu dari sebuah proyek tanpa harus melihat keseluruhan berkas MS Project yang berantakan. Tutorial ini membahas cara merender bagian-bagian dokumen MS Project Anda dalam interval waktu tertentu menggunakan GroupDocs.Viewer for .NET—solusi utama Anda untuk masalah umum ini.

@@ -4,8 +4,8 @@
 "title": "Licenckezelés elsajátítása a GroupDocs.Viewer for .NET alkalmazásban – Átfogó útmutató"
 "url": "/hu/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Licenckezelés elsajátítása a GroupDocs.Viewer for .NET alkalmazásban
 ## Átfogó útmutató
 

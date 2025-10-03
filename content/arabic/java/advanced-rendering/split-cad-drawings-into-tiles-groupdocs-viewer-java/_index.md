@@ -4,8 +4,8 @@
 "title": "تقسيم رسومات CAD إلى مربعات باستخدام GroupDocs.Viewer Java لتقديم فعال"
 "url": "/ar/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # تقسيم رسومات CAD إلى مربعات باستخدام GroupDocs.Viewer Java
 
 ## مقدمة

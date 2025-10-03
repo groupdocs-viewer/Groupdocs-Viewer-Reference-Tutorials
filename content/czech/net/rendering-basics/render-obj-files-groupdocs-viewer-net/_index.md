@@ -4,8 +4,8 @@
 "title": "Vykreslení souborů OBJ pomocí GroupDocs.Viewer .NET – Komplexní průvodce konverzí HTML, JPG, PNG a PDF"
 "url": "/cs/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení souborů OBJ pomocí GroupDocs.Viewer .NET
 
 ## Úvod do základů renderování

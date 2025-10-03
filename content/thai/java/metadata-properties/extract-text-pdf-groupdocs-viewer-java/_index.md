@@ -4,8 +4,8 @@
 "title": "ดึงข้อความจาก PDF โดยใช้ GroupDocs.Viewer Java คู่มือที่ครอบคลุมสำหรับนักพัฒนา"
 "url": "/th/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # แยกข้อความจาก PDF โดยใช้ GroupDocs.Viewer Java
 
 ## การแนะนำ

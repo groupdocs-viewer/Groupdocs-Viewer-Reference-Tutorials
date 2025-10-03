@@ -5,8 +5,8 @@
 "title": "Tambahkan Tanda Air di Dokumen"
 "url": "/id/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Tambahkan Tanda Air di Dokumen
 
 ## Perkenalan

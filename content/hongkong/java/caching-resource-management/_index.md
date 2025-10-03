@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文件渲染快取教學"
 "url": "/zh-hant/java/caching-resource-management/"
 "weight": 10
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文件渲染快取教學
 
 透過我們的 GroupDocs.Viewer Java 教學掌握進階快取和資源管理。這些全面的指南示範如何實施高效的快取策略、管理渲染資源、優化記憶體使用以及提昇文件檢視效能。每個教程都提供了實用的 Java 程式碼範例，用於實現複雜的快取機制，從而增強應用程式的回應能力並降低計算開銷。

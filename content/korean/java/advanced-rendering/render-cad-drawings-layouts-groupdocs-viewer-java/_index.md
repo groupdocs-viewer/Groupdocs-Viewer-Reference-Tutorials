@@ -4,8 +4,8 @@
 "title": "Java용 GroupDocs.Viewer를 사용하여 모든 CAD 레이아웃을 효율적으로 렌더링합니다."
 "url": "/ko/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 모든 CAD 레이아웃을 효율적으로 렌더링합니다.
 
 ## 소개

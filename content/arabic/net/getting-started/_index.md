@@ -5,8 +5,8 @@
 "title": "ابدء"
 "url": "/ar/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # ابدء
 
 

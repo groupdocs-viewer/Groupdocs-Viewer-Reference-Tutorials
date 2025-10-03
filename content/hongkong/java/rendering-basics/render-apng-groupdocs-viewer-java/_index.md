@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 Java 中渲染動畫 PNG"
 "url": "/zh-hant/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 Java 中的 GroupDocs.Viewer 渲染動畫 PNG
 
 了解使用強大的 GroupDocs.Viewer for Java 程式庫將動畫 PNG (APNG) 檔案轉換為各種格式（如 HTML、JPG、PNG 和 PDF）的過程。

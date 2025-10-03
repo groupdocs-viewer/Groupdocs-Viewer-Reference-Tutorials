@@ -4,8 +4,8 @@
 "title": "Jak renderować linie siatki w arkuszach kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer .NET do wyjścia HTML"
 "url": "/pl/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować linie siatki w arkuszach kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer .NET do wyjścia HTML
 
 ## Wstęp

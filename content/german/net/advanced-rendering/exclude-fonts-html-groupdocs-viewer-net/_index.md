@@ -4,8 +4,8 @@
 "title": "So schließen Sie mit GroupDocs.Viewer für .NET bestimmte Schriftarten aus der HTML-Ausgabe aus"
 "url": "/de/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So schließen Sie Schriftarten mit GroupDocs.Viewer für .NET aus der HTML-Ausgabe aus
 
 ## Einführung

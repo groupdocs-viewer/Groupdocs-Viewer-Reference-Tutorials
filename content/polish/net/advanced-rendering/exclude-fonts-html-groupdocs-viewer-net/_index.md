@@ -4,8 +4,8 @@
 "title": "Jak wykluczyć określone czcionki z wyjścia HTML za pomocą GroupDocs.Viewer dla .NET"
 "url": "/pl/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak wykluczyć czcionki z wyjścia HTML za pomocą GroupDocs.Viewer dla .NET
 
 ## Wstęp

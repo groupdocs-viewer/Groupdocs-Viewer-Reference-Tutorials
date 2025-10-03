@@ -5,8 +5,8 @@
 "title": "Добавить водяной знак в документ"
 "url": "/ru/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Добавить водяной знак в документ
 
 ## Введение

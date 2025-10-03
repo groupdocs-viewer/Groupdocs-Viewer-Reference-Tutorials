@@ -5,8 +5,8 @@
 "title": "الحصول على معلومات العرض لمستندات Microsoft Project"
 "url": "/ar/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # الحصول على معلومات العرض لمستندات Microsoft Project
 
 ## مقدمة

@@ -8,10 +8,8 @@ keywords:
 - render CAD drawings
 - GroupDocs.Viewer for Java
 - specific layout extraction
-
+type: docs
 ---
-
-
 # How to Render Specific CAD Drawings in Java Using GroupDocs.Viewer
 
 ## Introduction

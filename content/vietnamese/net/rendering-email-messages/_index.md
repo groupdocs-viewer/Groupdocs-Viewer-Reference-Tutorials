@@ -5,8 +5,8 @@
 "title": "Hiển thị tin nhắn email"
 "url": "/vi/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Hiển thị tin nhắn email
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Dokumentumok renderelése FTP-ről a GroupDocs.Viewer for Java használatával – Átfogó útmutató"
 "url": "/hu/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumok renderelése FTP-ről a GroupDocs.Viewer for Java használatával: Átfogó útmutató
 
 ## Bevezetés

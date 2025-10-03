@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET을 위한 다중 형식 문서 렌더링 튜토리얼"
 "url": "/ko/net/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 위한 다중 형식 문서 렌더링 튜토리얼
 
 .NET용 GroupDocs.Viewer 튜토리얼을 통해 포괄적인 문서 형식 지원을 살펴보세요. 이 상세한 가이드는 PDF, Microsoft Office 문서, 이미지, CAD 파일 및 특수 형식을 포함한 다양한 파일 형식을 렌더링하고 처리하는 방법을 보여줍니다. 각 튜토리얼은 다양한 문서 유형을 일관된 렌더링 품질로 처리할 수 있는 유연한 다중 형식 문서 보기 솔루션을 구현하는 방법을 보여주는 .NET 코드 예제를 제공합니다.

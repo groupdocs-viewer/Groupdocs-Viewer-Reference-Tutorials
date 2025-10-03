@@ -4,8 +4,8 @@
 "title": "Minden CAD-elrendezés hatékony renderelése a GroupDocs.Viewer for Java használatával"
 "url": "/hu/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Minden CAD-elrendezés hatékony renderelése a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

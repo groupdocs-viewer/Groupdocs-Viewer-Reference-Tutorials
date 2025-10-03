@@ -5,8 +5,8 @@
 "title": "Ενεργοποίηση απόδοσης σε επίπεδα σε PDF"
 "url": "/el/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Ενεργοποίηση απόδοσης σε επίπεδα σε PDF
 
 ## Εισαγωγή

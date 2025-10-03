@@ -4,8 +4,8 @@
 "title": "使用 Java 中的 GroupDocs.Viewer 檢索 PDF 元資料和屬性－逐步指南"
 "url": "/zh-hant/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 Java 中的 GroupDocs.Viewer 擷取 PDF 元資料和屬性
 
 歡迎閱讀這份全面的指南，了解如何使用 Java 中的 GroupDocs.Viewer 函式庫從 PDF 文件中擷取視圖資訊。如果您希望以程式設計方式從 PDF 文件中提取頁數、文件類型和權限等詳細信息，那麼您來對地方了。

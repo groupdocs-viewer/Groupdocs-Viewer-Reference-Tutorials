@@ -4,8 +4,8 @@
 "title": "Trích xuất văn bản chuyên nghiệp trong .NET với GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ trích xuất văn bản trong .NET với GroupDocs.Viewer: Hướng dẫn toàn diện
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "Rendu avec texte superposé pour l'affichage"
 "url": "/fr/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Rendu avec texte superposé pour l'affichage
 
 ## Introduction

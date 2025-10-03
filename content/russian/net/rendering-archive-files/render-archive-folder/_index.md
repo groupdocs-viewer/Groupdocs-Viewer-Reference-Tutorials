@@ -5,8 +5,8 @@
 "title": "Папка архива рендеринга"
 "url": "/ru/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Папка архива рендеринга
 
 ## Введение

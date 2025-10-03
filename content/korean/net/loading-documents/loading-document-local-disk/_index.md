@@ -5,8 +5,8 @@
 "title": "로컬 디스크에서 문서 로드"
 "url": "/ko/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # 로컬 디스크에서 문서 로드
 
 ## 소개

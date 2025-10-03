@@ -5,8 +5,8 @@
 "title": "Özel Yazı Tipleriyle Oluştur"
 "url": "/tr/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Özel Yazı Tipleriyle Oluştur
 
 ## giriiş

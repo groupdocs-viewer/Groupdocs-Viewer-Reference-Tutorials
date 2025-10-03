@@ -4,8 +4,8 @@
 "title": "Освоение определения типа файла в Java с помощью GroupDocs.Viewer"
 "url": "/ru/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Освоение определения типа файла в Java с помощью GroupDocs.Viewer
 
 Откройте для себя силу **GroupDocs.Просмотрщик** для бесшовной идентификации типов файлов по расширениям, типам носителей и потокам. Эта надежная библиотека упрощает процессы разработки и расширяет возможности приложений.

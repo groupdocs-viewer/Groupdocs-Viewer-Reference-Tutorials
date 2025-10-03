@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 Outlook 항목 렌더링 제한하기 - 포괄적인 가이드"
 "url": "/ko/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 Outlook 항목 렌더링 제한
 
 ## 개요

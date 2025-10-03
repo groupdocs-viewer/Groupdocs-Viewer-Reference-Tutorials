@@ -4,8 +4,8 @@
 "title": "InputStream DOCX fájlok renderelése Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan tölthetünk be és renderelhetünk egy DOCX fájlt egy InputStreamből a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

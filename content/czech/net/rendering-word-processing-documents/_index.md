@@ -5,8 +5,8 @@
 "title": "Vykreslování dokumentů pro zpracování textu"
 "url": "/cs/net/rendering-word-processing-documents/"
 "weight": 36
+type: docs
 ---
-
 # Vykreslování dokumentů pro zpracování textu
 
 

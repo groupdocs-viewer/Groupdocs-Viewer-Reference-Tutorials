@@ -4,8 +4,8 @@
 "title": "Cara Merender File Data Outlook Menggunakan GroupDocs.Viewer di Java&#58; Panduan Langkah demi Langkah"
 "url": "/id/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File Data Outlook Menggunakan GroupDocs.Viewer di Java: Panduan Langkah demi Langkah
 
 ## Perkenalan

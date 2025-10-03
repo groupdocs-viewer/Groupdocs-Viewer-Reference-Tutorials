@@ -4,8 +4,8 @@
 "title": "Hinzufügen von Wasserzeichen zu Dokumenten mit GroupDocs.Viewer Java – Ein umfassender Leitfaden"
 "url": "/de/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Hinzufügen von Wasserzeichen zu Dokumenten mit GroupDocs.Viewer Java: Ein umfassender Leitfaden
 
 ## Einführung

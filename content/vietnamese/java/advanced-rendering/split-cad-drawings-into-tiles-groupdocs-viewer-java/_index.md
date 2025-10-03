@@ -4,8 +4,8 @@
 "title": "Chia bản vẽ CAD thành các ô bằng GroupDocs.Viewer Java để kết xuất hiệu quả"
 "url": "/vi/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Chia bản vẽ CAD thành các ô với GroupDocs.Viewer Java
 
 ## Giới thiệu

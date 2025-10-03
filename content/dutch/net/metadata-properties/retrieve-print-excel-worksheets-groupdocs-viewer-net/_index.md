@@ -4,8 +4,8 @@
 "title": "Namen van Excel-werkbladen ophalen en afdrukken met GroupDocs.Viewer voor .NET (handleiding 2023)"
 "url": "/nl/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Namen van Excel-werkbladen ophalen en afdrukken met GroupDocs.Viewer voor .NET: een uitgebreide handleiding
 
 ## Invoering

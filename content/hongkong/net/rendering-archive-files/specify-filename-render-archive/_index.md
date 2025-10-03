@@ -5,8 +5,8 @@
 "title": "渲染存檔檔案時指定檔案名"
 "url": "/zh-hant/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # 渲染存檔檔案時指定檔案名
 
 ## 介紹

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 擷取檔案結構－綜合指南"
 "url": "/zh-hant/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 擷取檔案結構
 
 ## 介紹

@@ -5,8 +5,8 @@
 "title": "N ページの連続レンダリング"
 "url": "/ja/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # N ページの連続レンダリング
 
 ## 導入

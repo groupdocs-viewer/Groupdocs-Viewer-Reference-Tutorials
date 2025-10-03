@@ -4,8 +4,8 @@
 "title": "Rendu de documents maîtres dans .NET à l'aide de la conversion HTML et de l'intégration de filigranes de GroupDocs.Viewer"
 "url": "/fr/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Rendu de documents maîtres dans .NET avec GroupDocs.Viewer : conversion HTML et intégration de filigranes
 
 ## Introduction

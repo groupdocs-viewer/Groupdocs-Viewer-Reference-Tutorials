@@ -5,8 +5,8 @@
 "title": "檢索並儲存文件附件"
 "url": "/zh-hant/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # 檢索並儲存文件附件
 
 ## 介紹

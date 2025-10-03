@@ -5,8 +5,8 @@
 "title": "渲染隐藏的列和行"
 "url": "/zh/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # 渲染隐藏的列和行
 
 ## 介绍

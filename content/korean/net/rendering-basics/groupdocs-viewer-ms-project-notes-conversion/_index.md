@@ -4,8 +4,8 @@
 "title": ".NET용 GroupDocs.Viewer를 사용하여 노트가 포함된 MS Project 파일을 효율적으로 렌더링합니다."
 "url": "/ko/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용하여 노트가 포함된 MS Project 파일을 효율적으로 렌더링합니다.
 
 ## 소개

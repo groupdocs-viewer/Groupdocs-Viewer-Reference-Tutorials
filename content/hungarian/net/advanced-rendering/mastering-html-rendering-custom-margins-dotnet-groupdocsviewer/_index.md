@@ -4,8 +4,8 @@
 "title": "HTML-renderelés elsajátítása egyéni margókkal .NET-ben a GroupDocs.Viewer használatával"
 "url": "/hu/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # HTML-renderelés elsajátítása felhasználó által definiált margókkal .NET-ben a GroupDocs.Viewer használatával
 
 ## Bevezetés

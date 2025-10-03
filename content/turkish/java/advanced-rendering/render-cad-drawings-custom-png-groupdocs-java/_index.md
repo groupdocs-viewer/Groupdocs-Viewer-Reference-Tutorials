@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer Kullanarak CAD Çizimlerini Özel Boyut ve Arkaplan Rengiyle PNG Olarak Nasıl Oluşturursunuz"
 "url": "/tr/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanarak CAD Çizimlerini Özel Boyut ve Arkaplan Rengiyle PNG Olarak Nasıl Oluşturursunuz
 
 ## giriiş

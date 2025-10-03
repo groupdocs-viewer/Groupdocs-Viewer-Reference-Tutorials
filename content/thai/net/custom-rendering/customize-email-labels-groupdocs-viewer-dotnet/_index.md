@@ -4,8 +4,8 @@
 "title": "ปรับแต่งฉลากอีเมลใน GroupDocs.Viewer สำหรับ .NET&#58; คู่มือฉบับสมบูรณ์ในการเปลี่ยนชื่อฟิลด์"
 "url": "/th/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # ปรับแต่งฉลากอีเมลใน GroupDocs.Viewer สำหรับ .NET: คู่มือฉบับสมบูรณ์ในการเปลี่ยนชื่อฟิลด์
 
 ## การแนะนำ

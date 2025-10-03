@@ -5,8 +5,8 @@
 "title": "Přejmenování polí e-mailu během vykreslování"
 "url": "/cs/net/rendering-email-messages/rename-email-fields/"
 "weight": 12
+type: docs
 ---
-
 # Přejmenování polí e-mailu během vykreslování
 
 ## Zavedení

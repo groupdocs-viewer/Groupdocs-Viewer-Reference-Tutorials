@@ -5,8 +5,8 @@
 "title": "Deaktivieren der Zeichengruppierung in PDF"
 "url": "/de/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Deaktivieren der Zeichengruppierung in PDF
 
 ## Einführung

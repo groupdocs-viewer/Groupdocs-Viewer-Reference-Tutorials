@@ -3,8 +3,8 @@
 "title": "Tutoriais de renderização de documentos personalizados para GroupDocs.Viewer .NET"
 "url": "/pt/net/custom-rendering/"
 "weight": 13
+type: docs
 ---
-
 # Tutoriais de renderização de documentos personalizados para GroupDocs.Viewer .NET
 
 Domine técnicas avançadas de personalização com nossos tutoriais do GroupDocs.Viewer .NET para renderização personalizada. Estes guias abrangentes demonstram como criar manipuladores de renderização personalizados, implementar lógica de renderização especializada, estender recursos de renderização integrados e desenvolver soluções sofisticadas de processamento de documentos. Cada tutorial fornece exemplos detalhados de código .NET que mostram como implementar estratégias flexíveis e personalizadas de renderização de documentos que vão além das abordagens de renderização padrão.

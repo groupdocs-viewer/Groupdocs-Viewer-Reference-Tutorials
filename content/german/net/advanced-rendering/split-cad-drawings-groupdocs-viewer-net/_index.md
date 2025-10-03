@@ -4,8 +4,8 @@
 "title": "So teilen Sie CAD-Zeichnungen mit GroupDocs.Viewer .NET in Kacheln auf, um ein effizientes Rendering zu ermöglichen"
 "url": "/de/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # So teilen Sie CAD-Zeichnungen mit GroupDocs.Viewer .NET in Kacheln auf
 
 ## Einführung

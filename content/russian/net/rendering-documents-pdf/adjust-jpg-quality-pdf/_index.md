@@ -5,8 +5,8 @@
 "title": "Настройте качество изображения JPG в отрендеренном PDF-файле"
 "url": "/ru/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Настройте качество изображения JPG в отрендеренном PDF-файле
 
 ## Введение

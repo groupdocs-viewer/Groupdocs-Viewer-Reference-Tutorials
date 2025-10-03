@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 .NET 中渲染 MS Project 文档 — 综合指南"
 "url": "/zh/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET 中的 MS Project 文档渲染
 ## 介绍
 在当今快节奏的商业环境中，高效管理项目时间表和资源至关重要。利益相关者通常需要查看项目的特定部分，而无需面对整个 MS Project 文件的杂乱。本教程将深入讲解如何使用 GroupDocs.Viewer for .NET 在指定的时间间隔内渲染 MS Project 文档的各个部分——这是解决这一常见问题的关键解决方案。

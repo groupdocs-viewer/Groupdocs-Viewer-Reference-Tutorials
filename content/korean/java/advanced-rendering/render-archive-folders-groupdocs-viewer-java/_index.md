@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 보관 폴더 렌더링하기&#58; 단계별 가이드"
 "url": "/ko/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java용 GroupDocs.Viewer를 사용하여 보관 폴더 렌더링
 
 ## 소개

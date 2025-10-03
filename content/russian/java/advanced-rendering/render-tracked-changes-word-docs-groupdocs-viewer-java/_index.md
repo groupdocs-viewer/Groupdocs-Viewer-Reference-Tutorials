@@ -4,8 +4,8 @@
 "title": "Как отобразить отслеженные изменения в документах Word с помощью GroupDocs.Viewer для Java&#58; Подробное руководство"
 "url": "/ru/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Отображение отслеживаемых изменений в документах Word с помощью GroupDocs.Viewer для Java
 
 ## Введение

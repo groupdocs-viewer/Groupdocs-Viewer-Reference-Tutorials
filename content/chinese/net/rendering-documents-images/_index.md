@@ -5,8 +5,8 @@
 "title": "将文档渲染为图像"
 "url": "/zh/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # 将文档渲染为图像
 
 ## 介绍

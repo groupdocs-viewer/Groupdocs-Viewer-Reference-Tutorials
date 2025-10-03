@@ -4,8 +4,8 @@
 "title": "تعطيل تجميع الأحرف في ملفات PDF باستخدام GroupDocs.Viewer لتقنيات العرض الدقيقة في Java"
 "url": "/ar/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # تعطيل تجميع الأحرف في ملفات PDF باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

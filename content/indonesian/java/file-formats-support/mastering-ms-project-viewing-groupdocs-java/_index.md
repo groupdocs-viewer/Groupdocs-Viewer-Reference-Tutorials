@@ -4,8 +4,8 @@
 "title": "Kuasai Tampilan MS Project di Java dengan GroupDocs.Viewer&#58; Panduan Lengkap"
 "url": "/id/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Tampilan Dokumen MS Project dengan GroupDocs.Viewer di Java
 
 ## Perkenalan

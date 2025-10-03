@@ -5,8 +5,8 @@
 "title": "Renderizar páginas ocultas"
 "url": "/pt/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Renderizar páginas ocultas
 
 ## Introdução

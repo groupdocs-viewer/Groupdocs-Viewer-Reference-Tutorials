@@ -4,8 +4,8 @@
 "title": "Cách hiển thị tài liệu được bảo vệ bằng mật khẩu với GroupDocs.Viewer .NET"
 "url": "/vi/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị các tài liệu được bảo vệ bằng mật khẩu với GroupDocs.Viewer .NET
 
 ## Giới thiệu

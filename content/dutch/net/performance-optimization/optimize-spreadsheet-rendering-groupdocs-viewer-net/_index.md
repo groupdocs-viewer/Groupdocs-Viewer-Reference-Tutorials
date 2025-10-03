@@ -4,8 +4,8 @@
 "title": "Optimaliseer spreadsheetweergave met GroupDocs.Viewer voor .NET&#58; lege kolommen overslaan"
 "url": "/nl/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimaliseer spreadsheetweergave met GroupDocs.Viewer voor .NET
 ## Het renderen van lege kolommen in spreadsheets overslaan met GroupDocs.Viewer .NET
 ### Invoering

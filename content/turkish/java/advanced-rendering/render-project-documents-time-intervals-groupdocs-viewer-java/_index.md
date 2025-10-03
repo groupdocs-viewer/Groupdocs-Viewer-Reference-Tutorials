@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer'ı Kullanarak Zaman Aralıklarına Göre Proje Belgelerini Oluşturma"
 "url": "/tr/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'ı kullanarak Zaman Aralıklarıyla Render Proje Belgeleri Nasıl Uygulanır
 
 ## giriiş

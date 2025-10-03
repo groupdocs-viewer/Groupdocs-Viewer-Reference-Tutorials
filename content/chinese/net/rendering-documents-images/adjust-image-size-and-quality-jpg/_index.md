@@ -5,8 +5,8 @@
 "title": "调整图像大小和质量 (JPG)"
 "url": "/zh/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # 调整图像大小和质量 (JPG)
 
 ## 介绍

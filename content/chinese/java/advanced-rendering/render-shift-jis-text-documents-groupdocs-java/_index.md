@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 以 Shift_JIS 格式呈现文本文档"
 "url": "/zh/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 以 Shift_JIS 格式呈现文本文档
 
 ## 介绍

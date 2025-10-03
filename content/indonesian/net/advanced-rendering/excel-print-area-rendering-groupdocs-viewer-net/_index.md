@@ -4,8 +4,8 @@
 "title": "Rendering Area Cetak Excel yang Efisien Menggunakan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendering Area Cetak Excel yang Efisien Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

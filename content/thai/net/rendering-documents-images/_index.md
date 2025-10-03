@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์เอกสารเป็นรูปภาพ"
 "url": "/th/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # การเรนเดอร์เอกสารเป็นรูปภาพ
 
 ## การแนะนำ

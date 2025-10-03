@@ -5,8 +5,8 @@
 "title": "Geef bestandsnaam op bij het renderen van archiefbestanden"
 "url": "/nl/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Geef bestandsnaam op bij het renderen van archiefbestanden
 
 ## Invoering

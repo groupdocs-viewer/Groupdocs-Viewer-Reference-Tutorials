@@ -5,8 +5,8 @@
 "title": "Belgeleri Yüklerken Dosya Türünü Belirleyin"
 "url": "/tr/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Belgeleri Yüklerken Dosya Türünü Belirleyin
 
 ## giriiş

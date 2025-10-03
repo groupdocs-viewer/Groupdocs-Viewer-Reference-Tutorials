@@ -5,8 +5,8 @@
 "title": "Skydda renderad PDF med lösenord"
 "url": "/sv/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Skydda renderad PDF med lösenord
 
 ## Introduktion

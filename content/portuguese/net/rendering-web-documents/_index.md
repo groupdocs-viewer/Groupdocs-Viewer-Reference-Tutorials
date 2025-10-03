@@ -5,8 +5,8 @@
 "title": "Renderização de documentos da Web"
 "url": "/pt/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Renderização de documentos da Web
 
 ## Introdução

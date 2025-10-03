@@ -5,8 +5,8 @@
 "title": "Získejte informace o zobrazení pro výkresy CAD"
 "url": "/cs/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # Získejte informace o zobrazení pro výkresy CAD
 
 ## Zavedení

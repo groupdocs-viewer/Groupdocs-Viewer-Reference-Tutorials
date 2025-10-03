@@ -4,8 +4,8 @@
 "title": "عرض المستندات كصور مع طبقة نصية في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض المستندات كصور مع طبقة نصية في Java باستخدام GroupDocs.Viewer
 ## برنامج تعليمي متقدم للرسم
 **عنوان URL الحالي لمحرك البحث**: /render-documents-to-images-with-text-layer-java

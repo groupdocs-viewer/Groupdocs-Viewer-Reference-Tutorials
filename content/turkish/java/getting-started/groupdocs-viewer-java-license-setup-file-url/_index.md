@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java Lisansı Nasıl Ayarlanır&#58; Yerel Dosya veya URL Kılavuzu"
 "url": "/tr/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java Lisansı Nasıl Ayarlanır: Yerel Dosya veya URL
 
 Lisansınızı yerel bir dosyadan veya çevrimiçi bir kaynaktan ayarlayarak Java uygulamalarınız için GroupDocs.Viewer'ın tüm potansiyelini açığa çıkarın. Bu kapsamlı kılavuz, her iki yöntemi de verimli bir şekilde uygulamanıza yardımcı olacak ve bu güçlü belge görüntüleme aracının sunduğu tüm özelliklere erişiminizi sağlayacaktır.

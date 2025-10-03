@@ -5,8 +5,8 @@
 "title": "عرض جميع التخطيطات في رسومات CAD"
 "url": "/ar/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # عرض جميع التخطيطات في رسومات CAD
 
 ## مقدمة

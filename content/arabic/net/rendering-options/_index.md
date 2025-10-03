@@ -5,8 +5,8 @@
 "title": "خيارات العرض"
 "url": "/ar/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # خيارات العرض
 
 

@@ -4,8 +4,8 @@
 "title": "Java&#58; Как визуализировать скрытые страницы с помощью GroupDocs.Viewer"
 "url": "/ru/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Как визуализировать скрытые страницы с помощью GroupDocs.Viewer
 
 ## Введение

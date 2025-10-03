@@ -4,8 +4,8 @@
 "title": "Visualizza righe e colonne nascoste nei fogli di calcolo Java utilizzando GroupDocs.Viewer"
 "url": "/it/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Visualizza righe e colonne nascoste nei fogli di calcolo Java utilizzando GroupDocs.Viewer
 
 ## Introduzione

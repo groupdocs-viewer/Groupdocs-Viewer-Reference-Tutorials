@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58;yı kullanarak PDF'den Metin Çıkarın Geliştiriciler için Kapsamlı Bir Kılavuz"
 "url": "/tr/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java kullanarak PDF'den Metin Çıkarma
 
 ## giriiş

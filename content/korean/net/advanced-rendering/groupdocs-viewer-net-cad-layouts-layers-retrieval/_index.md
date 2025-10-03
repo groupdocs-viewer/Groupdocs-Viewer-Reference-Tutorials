@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 CAD 레이아웃 및 레이어를 검색하여 효율적인 설계 관리를 수행하는 방법"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 CAD 레이아웃 및 레이어를 검색하는 방법
 ## 소개
 컴퓨터 지원 설계(CAD) 분야에서는 복잡한 도면을 효율적으로 관리하는 것이 매우 중요합니다. 특히 단일 파일 내에 여러 레이아웃과 레이어가 있는 경우 더욱 그렇습니다. 건축가, 엔지니어, 설계자에게는 특정 정보에 빠르게 접근할 수 있어 생산성이 향상됩니다. **GroupDocs.Viewer .NET** 개발자가 CAD 도면에서 레이아웃과 레이어를 프로그래밍 방식으로 추출할 수 있도록 하여 강력한 솔루션을 제공합니다.

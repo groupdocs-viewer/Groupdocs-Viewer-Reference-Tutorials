@@ -4,8 +4,8 @@
 "title": "Opanowanie zarządzania licencjami w GroupDocs.Viewer dla .NET&#58; Kompleksowy przewodnik"
 "url": "/pl/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie zarządzania licencjami w GroupDocs.Viewer dla .NET
 ## Kompleksowy przewodnik
 

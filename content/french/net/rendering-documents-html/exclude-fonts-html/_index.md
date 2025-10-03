@@ -5,8 +5,8 @@
 "title": "Exclure les polices du HTML rendu"
 "url": "/fr/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Exclure les polices du HTML rendu
 
 ## Introduction

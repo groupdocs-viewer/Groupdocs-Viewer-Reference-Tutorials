@@ -5,8 +5,8 @@
 "title": "Abrufen von Anzeigeinformationen für Outlook-Datendateien (PST, OST)"
 "url": "/de/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # Abrufen von Anzeigeinformationen für Outlook-Datendateien (PST, OST)
 
 ## Einführung

@@ -5,8 +5,8 @@
 "title": "Načítání dokumentů z FTP (pokročilé)"
 "url": "/cs/net/loading-documents/loading-document-ftp/"
 "weight": 13
+type: docs
 ---
-
 # Načítání dokumentů z FTP (pokročilé)
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "Jak obracać strony PDF za pomocą GroupDocs.Viewer dla .NET&#58; Podręcznik programisty"
 "url": "/pl/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak obracać strony PDF za pomocą GroupDocs.Viewer dla .NET: Podręcznik programisty
 
 ## Wstęp

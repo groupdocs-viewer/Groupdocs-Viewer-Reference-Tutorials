@@ -5,8 +5,8 @@
 "title": "在 CAD 圖紙中渲染所有佈局"
 "url": "/zh-hant/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # 在 CAD 圖紙中渲染所有佈局
 
 ## 介紹

@@ -4,8 +4,8 @@
 "title": "HTML-bestanden in Java verkleinen met GroupDocs.Viewer voor prestatieoptimalisatie"
 "url": "/nl/java/performance-optimization/groupdocs-viewer-java-html-minification-guide/"
 "weight": 1
+type: docs
 ---
-
 # HTML-documenten verkleinen met GroupDocs.Viewer in Java
 
 ## Invoering

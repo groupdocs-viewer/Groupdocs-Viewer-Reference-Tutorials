@@ -4,8 +4,8 @@
 "title": "การปรับแต่งรูปแบบวันที่และเวลาและการชดเชยโซนเวลาในอีเมลด้วย GroupDocs.Viewer .NET"
 "url": "/th/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # การปรับแต่งรูปแบบวันที่และเวลาและโซนเวลาในอีเมลด้วย GroupDocs.Viewer .NET
 
 ## การแนะนำ

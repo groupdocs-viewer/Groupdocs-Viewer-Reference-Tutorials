@@ -4,8 +4,8 @@
 "title": "Comment convertir des archives RAR aux formats HTML, JPG, PNG et PDF à l'aide de GroupDocs.Viewer .NET"
 "url": "/fr/net/rendering-basics/rendering-rar-archives-using-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Comment convertir des archives RAR en différents formats à l'aide de GroupDocs.Viewer .NET
 
 Dans un monde où les données sont omniprésentes, gérer et partager efficacement des fichiers compressés comme les archives RAR est crucial. Que vous soyez un développeur intégrant des fonctionnalités de conversion de fichiers à votre application ou que vous ayez besoin d'extraire du contenu de fichiers RAR à diverses fins, GroupDocs.Viewer pour .NET offre des solutions robustes. Dans ce tutoriel, nous découvrirons comment convertir des archives RAR aux formats HTML, JPG, PNG et PDF avec GroupDocs.Viewer pour .NET.

@@ -5,8 +5,8 @@
 "title": "Visualizza pagine nascoste"
 "url": "/it/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Visualizza pagine nascoste
 
 ## Introduzione

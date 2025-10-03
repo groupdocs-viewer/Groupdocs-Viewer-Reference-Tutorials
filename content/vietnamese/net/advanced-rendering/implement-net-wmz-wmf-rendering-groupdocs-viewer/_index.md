@@ -4,8 +4,8 @@
 "title": "Triển khai .NET WMZ/WMF Rendering với GroupDocs.Viewer để tương thích với Web và đa nền tảng"
 "url": "/vi/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Triển khai .NET WMZ/WMF Rendering với GroupDocs.Viewer để tương thích với Web và đa nền tảng
 
 ## Giới thiệu

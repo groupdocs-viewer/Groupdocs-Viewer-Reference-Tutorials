@@ -5,8 +5,8 @@
 "title": "Rendre les pages cachées"
 "url": "/fr/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Rendre les pages cachées
 
 ## Introduction

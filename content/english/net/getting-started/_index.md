@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Getting Started"]
 tags: ["groupdocs-viewer", "dotnet", "licensing", "integration", "document-viewer"]
+type: docs
 ---
-
 # Getting Started with GroupDocs.Viewer for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "Tentukan Jenis File Saat Memuat Dokumen"
 "url": "/id/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Tentukan Jenis File Saat Memuat Dokumen
 
 ## Perkenalan

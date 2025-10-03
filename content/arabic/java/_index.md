@@ -5,8 +5,8 @@
 "title": "دروس تعليمية شاملة وأمثلة على GroupDocs.Viewer لـ Java"
 "url": "/ar/java/"
 "weight": 10
+type: docs
 ---
-
 # دروس تعليمية شاملة وأمثلة على GroupDocs.Viewer لـ Java
 
 ## مقدمة

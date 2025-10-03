@@ -3,8 +3,8 @@
 "title": "Výukové programy pro vodoznaky a anotace dokumentů v GroupDocs.Viewer .NET"
 "url": "/cs/net/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Výukové programy pro vodoznaky a anotace dokumentů v GroupDocs.Viewer .NET
 
 Zvládněte techniky anotací a vodoznaků v dokumentech s našimi tutoriály pro GroupDocs.Viewer v .NET. Tyto podrobné návody ukazují, jak přidávat textové a obrazové vodoznaky, implementovat anotace, ovládat umístění a průhlednost vodoznaků a vykreslovat dokumenty s vloženými anotacemi. Každý tutoriál obsahuje praktické příklady kódu v .NET pro přidání vizuálních metadat a ochranných značek do dokumentů, což vylepšuje možnosti sledování dokumentů a budování značky.

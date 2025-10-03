@@ -3,8 +3,8 @@
 "title": "Handledningar för extraktion av dokumentmetadata för GroupDocs.Viewer .NET"
 "url": "/sv/net/metadata-properties/"
 "weight": 11
+type: docs
 ---
-
 # Handledningar för extraktion av dokumentmetadata för GroupDocs.Viewer .NET
 
 Lär dig arbeta med dokumentmetadata och egenskaper med våra GroupDocs.Viewer .NET-handledningar. Dessa praktiska guider visar hur du extraherar dokumentinformation, läser metadatafält, hanterar dokumentegenskaper och implementerar metadatabaserad dokumentbehandling. Varje handledning innehåller exempel på fungerande .NET-kod för vanliga metadatascenarier, vilket hjälper dig att bygga applikationer som effektivt kan analysera och hantera dokumentinformation.

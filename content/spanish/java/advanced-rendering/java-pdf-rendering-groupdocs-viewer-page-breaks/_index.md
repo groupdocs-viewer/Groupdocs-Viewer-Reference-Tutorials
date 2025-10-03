@@ -4,8 +4,8 @@
 "title": "Representación de PDF en Java con GroupDocs.Viewer e implementación de saltos de página en hojas de cálculo"
 "url": "/es/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Dominando la representación de PDF en Java: GroupDocs.Viewer con saltos de página
 
 Descubra el potencial del renderizado de hojas de cálculo en sus aplicaciones Java con GroupDocs.Viewer. Esta guía completa le mostrará cómo implementar el renderizado de PDF en Java con saltos de página para una conversión fluida a PDF.

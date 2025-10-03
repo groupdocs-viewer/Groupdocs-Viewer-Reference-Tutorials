@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์โดยการแบ่งหน้า"
 "url": "/th/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # การเรนเดอร์โดยการแบ่งหน้า
 
 ## การแนะนำ

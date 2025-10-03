@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Osadzaj czcionki i konwertuj dokumenty do HTML w sposób wydajny"
 "url": "/pl/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie renderowania dokumentów za pomocą GroupDocs.Viewer .NET: osadzanie czcionek i konwersja do HTML
 
 ## Wstęp

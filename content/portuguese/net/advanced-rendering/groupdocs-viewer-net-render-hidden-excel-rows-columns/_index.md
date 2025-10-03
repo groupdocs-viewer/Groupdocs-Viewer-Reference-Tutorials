@@ -4,8 +4,8 @@
 "title": "Renderizar linhas e colunas ocultas em arquivos do Excel usando o GroupDocs.Viewer para .NET - Guia avançado"
 "url": "/pt/net/advanced-rendering/groupdocs-viewer-net-render-hidden-excel-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar linhas e colunas ocultas em arquivos do Excel usando GroupDocs.Viewer para .NET
 
 ## Introdução

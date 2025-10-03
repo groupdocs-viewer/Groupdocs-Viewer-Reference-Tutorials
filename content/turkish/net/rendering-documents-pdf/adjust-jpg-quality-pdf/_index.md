@@ -5,8 +5,8 @@
 "title": "İşlenmiş PDF'de JPG Görüntü Kalitesini Ayarla"
 "url": "/tr/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # İşlenmiş PDF'de JPG Görüntü Kalitesini Ayarla
 
 ## giriiş

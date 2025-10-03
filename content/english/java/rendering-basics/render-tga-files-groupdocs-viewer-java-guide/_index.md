@@ -8,10 +8,8 @@ keywords:
 - render Truevision TGA files
 - GroupDocs.Viewer Java setup
 - convert TGA to HTML/JPG/PNG/PDF
-
+type: docs
 ---
-
-
 # How to Render Truevision TGA Files Using GroupDocs.Viewer Java
 
 ## Introduction

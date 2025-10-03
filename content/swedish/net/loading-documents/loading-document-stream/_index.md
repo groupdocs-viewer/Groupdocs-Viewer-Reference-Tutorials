@@ -5,8 +5,8 @@
 "title": "Läs in dokument från strömmen"
 "url": "/sv/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Läs in dokument från strömmen
 
 ## Introduktion

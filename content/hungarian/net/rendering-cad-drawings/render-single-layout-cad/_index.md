@@ -5,8 +5,8 @@
 "title": "Egyetlen elrendezés renderelése CAD rajzokban"
 "url": "/hu/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Egyetlen elrendezés renderelése CAD rajzokban
 
 ## Bevezetés

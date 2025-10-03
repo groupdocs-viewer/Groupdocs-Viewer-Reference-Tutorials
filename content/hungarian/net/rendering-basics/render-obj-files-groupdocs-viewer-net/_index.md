@@ -4,8 +4,8 @@
 "title": "OBJ fájlok renderelése a GroupDocs.Viewer .NET használatával; Átfogó útmutató HTML, JPG, PNG és PDF konvertáláshoz"
 "url": "/hu/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # OBJ fájlok renderelése a GroupDocs.Viewer .NET használatával
 
 ## Bevezetés a renderelés alapjaiba

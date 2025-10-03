@@ -5,8 +5,8 @@
 "title": "Vykreslování dokumentů do obrázků"
 "url": "/cs/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Vykreslování dokumentů do obrázků
 
 ## Zavedení

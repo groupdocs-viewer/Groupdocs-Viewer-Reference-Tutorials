@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφου σε JPGPNG"
 "url": "/el/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Απόδοση εγγράφου σε JPGPNG
 
 ## Εισαγωγή

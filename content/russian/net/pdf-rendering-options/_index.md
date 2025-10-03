@@ -5,8 +5,8 @@
 "title": "Параметры рендеринга PDF"
 "url": "/ru/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # Параметры рендеринга PDF
 
 

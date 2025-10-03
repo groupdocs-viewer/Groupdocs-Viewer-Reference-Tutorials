@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tài liệu CDR bằng GroupDocs.Viewer cho .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tài liệu CDR bằng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

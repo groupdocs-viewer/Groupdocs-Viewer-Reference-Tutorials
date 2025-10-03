@@ -5,8 +5,8 @@
 "title": "Rendre les pages sélectionnées"
 "url": "/fr/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Rendre les pages sélectionnées
 
 ## Introduction

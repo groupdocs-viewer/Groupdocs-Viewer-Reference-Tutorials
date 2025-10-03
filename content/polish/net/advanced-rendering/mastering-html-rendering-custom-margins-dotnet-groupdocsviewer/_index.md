@@ -4,8 +4,8 @@
 "title": "Opanuj renderowanie HTML z niestandardowymi marginesami w .NET przy użyciu GroupDocs.Viewer"
 "url": "/pl/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie renderowania HTML z marginesami zdefiniowanymi przez użytkownika w .NET przy użyciu GroupDocs.Viewer
 
 ## Wstęp

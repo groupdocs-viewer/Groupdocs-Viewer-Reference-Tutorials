@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνας"
 "url": "/el/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Απόδοση εικόνας
 
 

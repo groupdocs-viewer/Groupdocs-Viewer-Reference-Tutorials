@@ -5,8 +5,8 @@
 "title": "Disabilitare le verifiche delle licenze dei font in PDF"
 "url": "/it/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Disabilitare le verifiche delle licenze dei font in PDF
 
 ## Introduzione

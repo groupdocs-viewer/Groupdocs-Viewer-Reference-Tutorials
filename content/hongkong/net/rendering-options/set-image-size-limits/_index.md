@@ -5,8 +5,8 @@
 "title": "設定圖像大小限制"
 "url": "/zh-hant/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # 設定圖像大小限制
 
 ## 介紹

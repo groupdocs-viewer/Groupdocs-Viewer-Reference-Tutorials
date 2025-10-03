@@ -5,8 +5,8 @@
 "title": "Επιλογές απόδοσης"
 "url": "/el/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Επιλογές απόδοσης
 
 

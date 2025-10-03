@@ -5,8 +5,8 @@
 "title": "เรนเดอร์พื้นที่พิมพ์ด้วย GroupDocs.Viewer สำหรับ .NET"
 "url": "/th/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # เรนเดอร์พื้นที่พิมพ์ด้วย GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

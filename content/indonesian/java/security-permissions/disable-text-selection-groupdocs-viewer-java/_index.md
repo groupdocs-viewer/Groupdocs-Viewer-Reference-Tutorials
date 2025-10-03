@@ -4,8 +4,8 @@
 "title": "Cara Menonaktifkan Pemilihan Teks dalam PDF Menggunakan GroupDocs.Viewer Java; Panduan Lengkap"
 "url": "/id/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Menerapkan Nonaktifkan Pemilihan Teks dalam Rendering PDF dengan GroupDocs.Viewer Java
 ## Perkenalan
 Apakah Anda memerlukan cara aman untuk menampilkan PDF di web tanpa mengizinkan pemilihan teks? Panduan lengkap ini menunjukkan cara menonaktifkan pemilihan teks menggunakan pustaka GroupDocs.Viewer untuk Java. Dengan mengubah teks menjadi gambar, konten Anda tetap aman dan tidak dapat diedit saat ditampilkan secara online.

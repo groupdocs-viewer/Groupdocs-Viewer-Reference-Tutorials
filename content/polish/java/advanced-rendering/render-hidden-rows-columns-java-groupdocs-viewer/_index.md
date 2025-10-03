@@ -4,8 +4,8 @@
 "title": "Renderowanie ukrytych wierszy i kolumn w arkuszach kalkulacyjnych Java przy użyciu GroupDocs.Viewer"
 "url": "/pl/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie ukrytych wierszy i kolumn w arkuszach kalkulacyjnych Java przy użyciu GroupDocs.Viewer
 
 ## Wstęp

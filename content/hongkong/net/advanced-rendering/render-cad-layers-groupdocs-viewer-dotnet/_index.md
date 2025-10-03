@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 渲染特定 CAD 圖層－綜合指南"
 "url": "/zh-hant/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 渲染特定的 CAD 繪圖圖層
 
 ## 介紹

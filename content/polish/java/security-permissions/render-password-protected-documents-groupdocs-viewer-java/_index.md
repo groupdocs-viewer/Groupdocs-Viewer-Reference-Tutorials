@@ -4,8 +4,8 @@
 "title": "Renderowanie dokumentów chronionych hasłem w Javie przy użyciu GroupDocs.Viewer"
 "url": "/pl/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie dokumentów chronionych hasłem w Javie przy użyciu GroupDocs.Viewer
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Chia các trang tính Excel thành các trang theo hàng bằng GroupDocs.Viewer .NET để quản lý dữ liệu hiệu quả"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Chia các trang tính Excel thành các trang theo hàng với GroupDocs.Viewer .NET
 
 ## Giới thiệu

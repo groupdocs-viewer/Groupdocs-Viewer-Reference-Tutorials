@@ -4,8 +4,8 @@
 "title": "Cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java&#58; Console và Hướng dẫn ghi nhật ký tệp"
 "url": "/vi/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java
 
 ## Giới thiệu

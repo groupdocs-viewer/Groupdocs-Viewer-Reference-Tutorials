@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 將 DOCX 轉換為 HTML 綜合指南"
 "url": "/zh-hant/net/export-conversion/groupdocs-viewer-dotnet-docx-to-html/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 將 DOCX 轉換為互動式 HTML
 
 ## 介紹

@@ -5,8 +5,8 @@
 "title": "在文件中新增浮水印"
 "url": "/zh-hant/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # 在文件中新增浮水印
 
 ## 介紹

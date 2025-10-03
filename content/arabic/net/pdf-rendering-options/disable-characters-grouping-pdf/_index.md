@@ -5,8 +5,8 @@
 "title": "تعطيل تجميع الأحرف في PDF"
 "url": "/ar/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # تعطيل تجميع الأحرف في PDF
 
 ## مقدمة

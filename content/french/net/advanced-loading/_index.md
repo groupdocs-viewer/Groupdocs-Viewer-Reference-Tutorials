@@ -5,8 +5,8 @@
 "title": "Options de chargement avancées"
 "url": "/fr/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Options de chargement avancées
 
 ## Introduction

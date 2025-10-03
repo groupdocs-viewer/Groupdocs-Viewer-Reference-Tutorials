@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Spreadsheet Rendering"]
 tags: ["numbers-files", "document-conversion", "dotnet-api", "spreadsheet-viewer"]
+type: docs
 ---
-
 # How to Render Numbers Files in .NET Applications
 
 ## Introduction

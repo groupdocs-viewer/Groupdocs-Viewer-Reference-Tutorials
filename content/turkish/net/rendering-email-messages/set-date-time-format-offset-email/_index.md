@@ -5,8 +5,8 @@
 "title": "DateTime Formatını ve Saat Dilimi Ofsetini Ayarla (E-posta)"
 "url": "/tr/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # DateTime Formatını ve Saat Dilimi Ofsetini Ayarla (E-posta)
 
 

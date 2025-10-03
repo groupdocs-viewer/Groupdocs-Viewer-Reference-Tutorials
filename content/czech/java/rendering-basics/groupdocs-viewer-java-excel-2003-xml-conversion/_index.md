@@ -4,8 +4,8 @@
 "title": "Komplexní průvodce&#58; Převod XML z Excelu 2003 do HTML/JPG/PNG/PDF pomocí GroupDocs.Viewer v Javě"
 "url": "/cs/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Komplexní průvodce: Převod XML z Excelu 2003 do HTML/JPG/PNG/PDF pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

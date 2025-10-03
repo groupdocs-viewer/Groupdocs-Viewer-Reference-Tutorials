@@ -4,8 +4,8 @@
 "title": "Effectieve logging implementeren in GroupDocs.Viewer .NET voor console- en bestandsuitvoer"
 "url": "/nl/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Effectieve logging implementeren in GroupDocs.Viewer .NET
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58;ı Kullanarak Java'da Belirli CAD Katmanlarını Oluşturun Kapsamlı Bir Kılavuz"
 "url": "/tr/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak Java'da Belirli CAD Katmanlarını Oluşturma
 ## giriiş
 CAD çiziminden belirli katmanları işlemekte zorluk mu çekiyorsunuz? İster karmaşık tasarımlarla uğraşan bir mühendis, mimar veya geliştirici olun, belirli CAD katmanlarını yönetmek ve görselleştirmek zor olabilir. Bu kılavuz, Java için güçlü GroupDocs.Viewer'ı kullanarak belirli katmanların nasıl verimli bir şekilde işleneceğini gösterir.

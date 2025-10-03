@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58;ı Kullanarak .NET'te SVGZ Oluşturmada Ustalaşın Geliştiriciler İçin Eksiksiz Bir Kılavuz"
 "url": "/tr/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile .NET'te SVGZ Oluşturmada Ustalaşma: Geliştiriciler İçin Eksiksiz Bir Kılavuz
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for Java 調整 Excel 電子表格中的文字溢出"
 "url": "/zh-hant/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for Java 調整 Excel 電子表格中的文字溢出
 ## 介紹
 將文件轉換為 HTML 時處理電子表格單元格中溢出的文字是一個常見的挑戰，尤其是對於大型 Excel 文件。 **GroupDocs.Viewer for Java** 簡化了這個過程，使您能夠有效地管理和隱藏溢出的文字。

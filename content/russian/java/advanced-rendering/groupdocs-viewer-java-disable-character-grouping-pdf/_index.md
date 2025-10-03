@@ -4,8 +4,8 @@
 "title": "Отключите группировку символов в PDF-файлах с помощью GroupDocs.Viewer для Java’s Precise Rendering Techniques"
 "url": "/ru/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Отключение группировки символов в PDF-файлах с помощью GroupDocs.Viewer для Java
 
 ## Введение

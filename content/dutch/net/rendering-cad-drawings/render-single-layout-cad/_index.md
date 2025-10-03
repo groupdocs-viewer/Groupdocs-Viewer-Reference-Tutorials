@@ -5,8 +5,8 @@
 "title": "Enkele lay-out weergeven in CAD-tekeningen"
 "url": "/nl/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Enkele lay-out weergeven in CAD-tekeningen
 
 ## Invoering

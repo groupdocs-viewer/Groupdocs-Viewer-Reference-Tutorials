@@ -5,8 +5,8 @@
 "title": "Nastavení limitů velikosti obrázku"
 "url": "/cs/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Nastavení limitů velikosti obrázku
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Kết xuất tài liệu sang JPGPNG"
 "url": "/vi/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Kết xuất tài liệu sang JPGPNG
 
 ## Giới thiệu

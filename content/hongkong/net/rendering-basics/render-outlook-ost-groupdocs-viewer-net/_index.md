@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 呈現 Outlook OST 檔案 | 逐步指南"
 "url": "/zh-hant/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 呈現 Outlook OST 檔案：全面的逐步指南
 
 ## 介紹

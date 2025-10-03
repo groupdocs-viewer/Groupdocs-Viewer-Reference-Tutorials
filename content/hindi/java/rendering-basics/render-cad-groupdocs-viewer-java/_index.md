@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके Java में विशिष्ट CAD रेखाचित्र कैसे प्रस्तुत करें"
 "url": "/hi/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके Java में विशिष्ट CAD रेखाचित्र कैसे प्रस्तुत करें
 
 ## परिचय

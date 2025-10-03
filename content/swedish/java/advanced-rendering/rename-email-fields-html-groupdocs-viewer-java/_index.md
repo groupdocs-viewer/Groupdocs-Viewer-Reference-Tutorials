@@ -4,8 +4,8 @@
 "title": "Så här byter du namn på e-postfält när du konverterar e-postmeddelanden till HTML med GroupDocs.Viewer Java"
 "url": "/sv/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Så här byter du namn på e-postfält när du renderar e-postmeddelanden till HTML med GroupDocs.Viewer Java
 
 ## Introduktion

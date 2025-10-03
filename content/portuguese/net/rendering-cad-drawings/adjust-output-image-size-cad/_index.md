@@ -5,8 +5,8 @@
 "title": "Ajustar o tamanho da imagem de saída para desenhos CAD"
 "url": "/pt/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Ajustar o tamanho da imagem de saída para desenhos CAD
 
 ## Introdução

@@ -4,8 +4,8 @@
 "title": "Rozdělení excelových listů podle řádků a sloupců pomocí GroupDocs.Viewer v Javě – Komplexní průvodce"
 "url": "/cs/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Rozdělení excelových listů podle řádků a sloupců pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

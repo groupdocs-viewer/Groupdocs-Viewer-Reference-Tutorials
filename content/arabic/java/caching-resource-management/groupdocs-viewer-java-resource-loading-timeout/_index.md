@@ -4,8 +4,8 @@
 "title": "ضبط مهلة تحميل الموارد في GroupDocs.Viewer لـ Java - تحسين أداء المستندات"
 "url": "/ar/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # ضبط مهلة تحميل الموارد في GroupDocs.Viewer لـ Java: تحسين كفاءة عرض المستندات
 
 ## مقدمة

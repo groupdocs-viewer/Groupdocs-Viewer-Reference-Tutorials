@@ -5,8 +5,8 @@
 "title": "获取 PDF 文档的查看信息"
 "url": "/zh/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # 获取 PDF 文档的查看信息
 
 ## 介绍

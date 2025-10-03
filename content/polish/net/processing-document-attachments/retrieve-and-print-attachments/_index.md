@@ -5,8 +5,8 @@
 "title": "Pobieranie i drukowanie załączników dokumentów"
 "url": "/pl/net/processing-document-attachments/retrieve-and-print-attachments/"
 "weight": 11
+type: docs
 ---
-
 # Pobieranie i drukowanie załączników dokumentów
 
 ## Wstęp

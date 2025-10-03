@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58;yı Kullanarak CAD Çizimlerini JPG Olarak Oluşturun Kapsamlı Bir Kılavuz"
 "url": "/tr/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java Kullanarak CAD Çizimlerini JPG Olarak Nasıl Oluşturursunuz: Adım Adım Eğitim
 
 ## giriiş

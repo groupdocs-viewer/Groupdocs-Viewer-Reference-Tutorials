@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Email Processing"]
 tags: ["email-conversion", "pdf-generation", "groupdocs-viewer", "dotnet"]
+type: docs
 ---
-
 # Email to PDF Converter .NET: How to Adjust Page Size When Rendering Email Messages
 
 ## Introduction

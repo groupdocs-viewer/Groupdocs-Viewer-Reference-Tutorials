@@ -5,8 +5,8 @@
 "title": "تمكين تلميح الخط في PDF"
 "url": "/ar/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # تمكين تلميح الخط في PDF
 
 ## مقدمة

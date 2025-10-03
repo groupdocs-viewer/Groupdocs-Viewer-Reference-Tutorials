@@ -5,8 +5,8 @@
 "title": "Απόδοση αρχείων κειμένου (.txt)"
 "url": "/el/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # Απόδοση αρχείων κειμένου (.txt)
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して MS Project のビュー情報を取得する | メタデータとプロパティ"
 "url": "/ja/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して MS Project のビュー情報を取得する
 
 ## 導入

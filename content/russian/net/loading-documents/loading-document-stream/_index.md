@@ -5,8 +5,8 @@
 "title": "Загрузить документы из Stream"
 "url": "/ru/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Загрузить документы из Stream
 
 ## Введение

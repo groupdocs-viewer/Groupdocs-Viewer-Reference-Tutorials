@@ -5,8 +5,8 @@
 "title": "Memuat Dokumen"
 "url": "/id/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # Memuat Dokumen
 
 ## Perkenalan

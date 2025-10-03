@@ -5,8 +5,8 @@
 "title": "渲染隐藏页面"
 "url": "/zh/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # 渲染隐藏页面
 
 ## 介绍

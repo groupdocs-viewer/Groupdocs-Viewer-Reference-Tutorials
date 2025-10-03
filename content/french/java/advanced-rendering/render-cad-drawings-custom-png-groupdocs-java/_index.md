@@ -4,8 +4,8 @@
 "title": "Comment afficher des dessins CAO au format PNG avec une taille et une couleur d'arrière-plan personnalisées à l'aide de GroupDocs.Viewer pour Java"
 "url": "/fr/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher des dessins CAO au format PNG avec une taille et une couleur d'arrière-plan personnalisées à l'aide de GroupDocs.Viewer pour Java
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Specifieke CAD-lagen in Java renderen met GroupDocs.Viewer&#58; een uitgebreide handleiding"
 "url": "/nl/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Specifieke CAD-lagen in Java renderen met GroupDocs.Viewer
 ## Invoering
 Heb je moeite met het renderen van specifieke lagen in een CAD-tekening? Of je nu een ingenieur, architect of ontwikkelaar bent die met complexe ontwerpen werkt, het beheren en visualiseren van specifieke CAD-lagen kan een uitdaging zijn. Deze handleiding laat zien hoe je specifieke lagen efficiënt kunt renderen met de krachtige GroupDocs.Viewer voor Java.

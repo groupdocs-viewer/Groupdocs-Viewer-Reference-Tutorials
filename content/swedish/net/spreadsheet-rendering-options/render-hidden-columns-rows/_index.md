@@ -5,8 +5,8 @@
 "title": "Rendera dolda kolumner och rader"
 "url": "/sv/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Rendera dolda kolumner och rader
 
 ## Introduktion

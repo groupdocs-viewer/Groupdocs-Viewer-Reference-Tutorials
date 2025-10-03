@@ -4,8 +4,8 @@
 "title": "Menampilkan Halaman Tersembunyi dalam Dokumen Menggunakan GroupDocs.Viewer untuk .NET&#58; Panduan Langkah demi Langkah"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Menampilkan Halaman Tersembunyi dalam Dokumen Menggunakan GroupDocs.Viewer untuk .NET: Panduan Langkah demi Langkah
 
 ## Perkenalan

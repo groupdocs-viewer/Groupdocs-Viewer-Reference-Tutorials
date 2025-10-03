@@ -5,8 +5,8 @@
 "title": ".NET için GroupDocs.Viewer'ın Kapsamlı Eğitimleri ve Örnekleri"
 "url": "/tr/net/"
 "weight": 10
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer'ın Kapsamlı Eğitimleri ve Örnekleri
 
 ## giriiş

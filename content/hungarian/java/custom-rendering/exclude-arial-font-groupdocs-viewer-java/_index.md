@@ -4,8 +4,8 @@
 "title": "Arial betűtípus kizárása HTML-renderelésben a GroupDocs.Viewer Java segítségével – lépésről lépésre útmutató"
 "url": "/hu/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan lehet kizárni az Arial betűtípust dokumentumok HTML-re renderelésekor a GroupDocs.Viewer Java használatával
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "إتقان إدارة التراخيص في GroupDocs.Viewer لـ .NET - دليل شامل"
 "url": "/ar/net/getting-started/groupdocs-viewer-license-management-net/"
 "weight": 1
+type: docs
 ---
-
 # إتقان إدارة التراخيص في GroupDocs.Viewer لـ .NET
 ## دليل شامل
 

@@ -4,8 +4,8 @@
 "title": "วิธีการดึงข้อมูลและบันทึกเอกสารแนบโดยใช้ GroupDocs.Viewer .NET เพื่อการจัดการข้อมูลเมตาที่มีประสิทธิภาพ"
 "url": "/th/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการดึงข้อมูลและบันทึกเอกสารแนบโดยใช้ GroupDocs.Viewer .NET
 
 ## การแนะนำ

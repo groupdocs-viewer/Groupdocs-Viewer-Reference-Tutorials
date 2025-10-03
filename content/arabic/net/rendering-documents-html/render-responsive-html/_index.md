@@ -5,8 +5,8 @@
 "title": "تقديم HTML مستجيب"
 "url": "/ar/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # تقديم HTML مستجيب
 
 ## مقدمة

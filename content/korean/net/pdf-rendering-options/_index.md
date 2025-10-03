@@ -5,8 +5,8 @@
 "title": "PDF 렌더링 옵션"
 "url": "/ko/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # PDF 렌더링 옵션
 
 

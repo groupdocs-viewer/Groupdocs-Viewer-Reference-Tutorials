@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 애니메이션 PNG를 렌더링하는 방법"
 "url": "/ko/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java에서 GroupDocs.Viewer를 사용하여 애니메이션 PNG를 렌더링하는 방법
 
 강력한 GroupDocs.Viewer for Java 라이브러리를 사용하여 애니메이션 PNG(APNG) 파일을 HTML, JPG, PNG, PDF와 같은 다양한 형식으로 변환하는 프로세스를 알아보세요.

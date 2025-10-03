@@ -5,8 +5,8 @@
 "title": "Render N Halaman Berturut-turut"
 "url": "/id/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Render N Halaman Berturut-turut
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "Merender File Teks"
 "url": "/id/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Merender File Teks
 
 ## Perkenalan

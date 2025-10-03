@@ -8,10 +8,8 @@ keywords:
 - render documents as images
 - text layer Java
 - GroupDocs.Viewer for Java
-
+type: docs
 ---
-
-
 # Render Documents as Images with Text Layer in Java Using GroupDocs.Viewer
 ## Advanced Rendering Tutorial
 **Current SEO URL**: /render-documents-to-images-with-text-layer-java

@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 将档案转换为 HTML 综合指南"
 "url": "/zh/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer Java 将档案转换为 HTML：综合指南
 
 ## 介绍

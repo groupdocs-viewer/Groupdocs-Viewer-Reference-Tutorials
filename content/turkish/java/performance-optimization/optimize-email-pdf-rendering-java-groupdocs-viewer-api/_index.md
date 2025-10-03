@@ -4,8 +4,8 @@
 "title": "Daha İyi Performans için GroupDocs.Viewer API'sini Kullanarak Java'da E-postadan PDF'e İşlemeyi Optimize Edin"
 "url": "/tr/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer API ile Java'da E-postadan PDF'e İşlemeyi Optimize Edin
 
 ## giriiş

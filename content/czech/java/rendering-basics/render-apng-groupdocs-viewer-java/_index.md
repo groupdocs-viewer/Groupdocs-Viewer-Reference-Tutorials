@@ -4,8 +4,8 @@
 "title": "Jak vykreslit animované PNG obrázky v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit animované PNG soubory pomocí GroupDocs.Viewer v Javě
 
 Objevte proces transformace animovaných souborů PNG (APNG) do různých formátů, jako jsou HTML, JPG, PNG a PDF, pomocí výkonné knihovny GroupDocs.Viewer pro Javu.

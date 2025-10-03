@@ -4,8 +4,8 @@
 "title": "Java&#58; Cách hiển thị các trang ẩn bằng GroupDocs.Viewer"
 "url": "/vi/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Cách hiển thị các trang ẩn bằng GroupDocs.Viewer
 
 ## Giới thiệu

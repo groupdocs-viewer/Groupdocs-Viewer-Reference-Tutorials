@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer 在 Java 電子表格中呈現網格線"
 "url": "/zh-hant/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer 在 Java 電子表格中呈現網格線
 
 ## 介紹

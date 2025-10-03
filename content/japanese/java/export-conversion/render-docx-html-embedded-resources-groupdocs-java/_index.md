@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java を使用して、埋め込みリソースを含む DOCX を HTML に変換する"
 "url": "/ja/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用して、埋め込みリソースを含む DOCX を HTML に変換する
 
 ## 導入

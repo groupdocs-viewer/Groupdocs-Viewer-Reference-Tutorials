@@ -5,8 +5,8 @@
 "title": "Batasi Jumlah Item yang Akan Dirender dalam File Data Outlook"
 "url": "/id/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Batasi Jumlah Item yang Akan Dirender dalam File Data Outlook
 
 ## Perkenalan

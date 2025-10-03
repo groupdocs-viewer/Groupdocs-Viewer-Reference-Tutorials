@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 呈现选定页面——面向开发人员的综合指南"
 "url": "/zh/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 呈现特定页面
 
 ## 介绍

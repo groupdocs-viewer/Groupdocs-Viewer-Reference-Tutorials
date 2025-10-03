@@ -4,8 +4,8 @@
 "title": "Renderize camadas CAD específicas em Java usando GroupDocs.Viewer - Um guia completo"
 "url": "/pt/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Renderizar camadas CAD específicas em Java usando GroupDocs.Viewer
 ## Introdução
 Com dificuldades para renderizar camadas específicas de um desenho CAD? Seja você engenheiro, arquiteto ou desenvolvedor que lida com projetos complexos, gerenciar e visualizar camadas CAD específicas pode ser desafiador. Este guia demonstra como renderizar camadas específicas com eficiência usando o poderoso GroupDocs.Viewer para Java.

@@ -4,8 +4,8 @@
 "title": "Afficher des documents sous forme d'images avec une couche de texte en Java à l'aide de GroupDocs.Viewer"
 "url": "/fr/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Afficher des documents sous forme d'images avec une couche de texte en Java à l'aide de GroupDocs.Viewer
 ## Tutoriel de rendu avancé
 **URL SEO actuelle**: /render-documents-to-images-with-text-layer-java

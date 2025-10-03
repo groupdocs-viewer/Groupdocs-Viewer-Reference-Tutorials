@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["visio", "net-development", "document-viewer", "groupdocs"]
+type: docs
 ---
-
 # How to Render Visio Documents in .NET Applications
 
 ## Introduction

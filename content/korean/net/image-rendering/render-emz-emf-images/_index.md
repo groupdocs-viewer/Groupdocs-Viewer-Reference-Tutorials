@@ -5,8 +5,8 @@
 "title": "EMZ 및 EMF 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # EMZ 및 EMF 이미지 렌더링
 
 ## 소개

@@ -5,8 +5,8 @@
 "title": "Renderowanie dokumentów internetowych"
 "url": "/pl/net/rendering-web-documents/"
 "weight": 35
+type: docs
 ---
-
 # Renderowanie dokumentów internetowych
 
 ## Wstęp

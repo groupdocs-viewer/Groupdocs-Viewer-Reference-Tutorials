@@ -5,8 +5,8 @@
 "title": "Rendre le PDF avec la taille de page d'origine"
 "url": "/fr/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # Rendre le PDF avec la taille de page d'origine
 
 ## Introduction

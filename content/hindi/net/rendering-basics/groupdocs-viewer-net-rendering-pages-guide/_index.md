@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ .NET में विशिष्ट पृष्ठों को रेंडर करना एक व्यापक गाइड"
 "url": "/hi/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ .NET में विशिष्ट पृष्ठों को रेंडर करना: एक व्यापक मार्गदर्शिका
 
 ## परिचय

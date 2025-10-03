@@ -5,8 +5,8 @@
 "title": "Отобразить выбранные страницы"
 "url": "/ru/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # Отобразить выбранные страницы
 
 ## Введение

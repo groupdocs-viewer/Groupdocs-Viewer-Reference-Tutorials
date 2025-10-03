@@ -4,8 +4,8 @@
 "title": "Limitar la representación de elementos de Outlook en Java mediante GroupDocs.Viewer&#58; una guía completa"
 "url": "/es/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Limitar la representación de elementos de Outlook en Java mediante GroupDocs.Viewer
 
 ## Descripción general

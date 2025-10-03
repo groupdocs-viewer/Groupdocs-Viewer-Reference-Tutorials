@@ -5,8 +5,8 @@
 "title": "Ограничить количество элементов для отображения в файлах данных Outlook"
 "url": "/ru/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Ограничить количество элементов для отображения в файлах данных Outlook
 
 ## Введение

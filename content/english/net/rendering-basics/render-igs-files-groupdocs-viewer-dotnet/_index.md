@@ -8,10 +8,8 @@ keywords:
 - render IGS files .NET
 - GroupDocs.Viewer for .NET
 - convert IGS to HTML, JPG, PNG, PDF
-
+type: docs
 ---
-
-
 # How to Render IGS Files in .NET Using GroupDocs.Viewer: A Complete Guide
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanılarak Arşiv Bilgileri Nasıl Alınır? Kapsamlı Bir Kılavuz"
 "url": "/tr/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer Kullanılarak Arşiv Bilgileri Nasıl Alınır: Kapsamlı Bir Kılavuz
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Ustaw limit czasu ładowania zasobów (zaawansowane)"
 "url": "/pl/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Ustaw limit czasu ładowania zasobów (zaawansowane)
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Licenties instellen in GroupDocs.Viewer Java-bestand en URL-installatiehandleiding"
 "url": "/nl/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Licenties instellen in GroupDocs.Viewer Java: handleiding voor het instellen van bestanden en URL's
 
 ## Invoering

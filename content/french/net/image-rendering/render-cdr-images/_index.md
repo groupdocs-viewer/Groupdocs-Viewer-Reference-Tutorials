@@ -5,8 +5,8 @@
 "title": "Rendu des images CDR"
 "url": "/fr/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # Rendu des images CDR
 
 ## Introduction

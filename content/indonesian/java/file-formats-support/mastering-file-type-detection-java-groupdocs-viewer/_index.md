@@ -4,8 +4,8 @@
 "title": "Menguasai Deteksi Jenis File di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Deteksi Jenis File di Java Menggunakan GroupDocs.Viewer
 
 Temukan kekuatan **Penampil GroupDocs** untuk mengidentifikasi jenis file dari ekstensi, jenis media, dan aliran dengan mudah. Pustaka yang tangguh ini menyederhanakan proses pengembangan dan meningkatkan kemampuan aplikasi.

@@ -4,8 +4,8 @@
 "title": "使用 Streams 的 GroupDocs.Viewer .NET 渲染文档——面向开发人员的综合指南"
 "url": "/zh/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 从 Streams 渲染文档：开发人员综合指南
 
 ## 介绍

@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh WMZ và WMF"
 "url": "/vi/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # Kết xuất hình ảnh WMZ và WMF
 
 ## Giới thiệu

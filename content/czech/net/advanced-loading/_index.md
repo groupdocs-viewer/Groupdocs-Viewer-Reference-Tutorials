@@ -5,8 +5,8 @@
 "title": "Pokročilé možnosti načítání"
 "url": "/cs/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Pokročilé možnosti načítání
 
 ## Zavedení

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java&#58;yı Kullanarak Belgelere Filigran Ekleme Kapsamlı Bir Kılavuz"
 "url": "/tr/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java Kullanarak Belgelere Filigran Ekleme: Kapsamlı Bir Kılavuz
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "تخطي عرض الصفوف الفارغة في Java باستخدام GroupDocs.Viewer - دليل الأداء"
 "url": "/ar/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # تخطي عرض الصفوف الفارغة في Java باستخدام GroupDocs.Viewer
 ## مقدمة
 قد يؤدي عرض الصفوف الفارغة غير الضرورية عند تحويل جداول البيانات إلى HTML إلى إرباك مخرجاتك واستهلاك موارد إضافية. يُعد هذا مصدر قلق كبير للمطورين المهتمين بالأداء. باستخدام مكتبة "GroupDocs.Viewer Java"، يمكنك تخطي عرض هذه الصفوف الفارغة بكفاءة، مما يُحسّن سرعة ووضوح تطبيقاتك.

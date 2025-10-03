@@ -5,8 +5,8 @@
 "title": "Απόδοση φιγούρων Visio"
 "url": "/el/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Απόδοση φιγούρων Visio
 
 ## Εισαγωγή

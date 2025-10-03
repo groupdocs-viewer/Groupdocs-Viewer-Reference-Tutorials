@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer pour Java &#58; Récupérer et imprimer les pièces jointes des documents"
 "url": "/fr/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer pour Java : Récupérer et imprimer les pièces jointes des documents
 
 ## Introduction

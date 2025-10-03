@@ -4,8 +4,8 @@
 "title": "Απόδοση PDF σε Java με το GroupDocs.Viewer &#58; Υλοποίηση αλλαγών σελίδας σε υπολογιστικά φύλλα"
 "url": "/el/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Εξοικείωση με την απόδοση PDF σε Java: GroupDocs.Viewer με αλλαγές σελίδας
 
 Ξεκλειδώστε τη δύναμη της απόδοσης υπολογιστικών φύλλων στις εφαρμογές Java χρησιμοποιώντας το GroupDocs.Viewer. Αυτός ο ολοκληρωμένος οδηγός θα σας δείξει πώς να εφαρμόσετε την απόδοση PDF σε Java με αλλαγές σελίδας για απρόσκοπτη μετατροπή σε PDF.

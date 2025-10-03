@@ -4,8 +4,8 @@
 "title": "วิธีการปรับ Text Overflow ในสเปรดชีต Excel ด้วย GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการปรับ Text Overflow ในสเปรดชีต Excel ด้วย GroupDocs.Viewer สำหรับ Java
 ## การแนะนำ
 การจัดการกับข้อความที่ล้นอยู่ในเซลล์สเปรดชีตเมื่อแปลงเอกสารเป็น HTML ถือเป็นความท้าทายทั่วไป โดยเฉพาะอย่างยิ่งสำหรับไฟล์ Excel จำนวนมาก **GroupDocs.Viewer สำหรับ Java** ทำให้กระบวนการนี้ง่ายขึ้น ช่วยให้คุณจัดการและซ่อนข้อความที่ล้นออกมาได้อย่างมีประสิทธิภาพ

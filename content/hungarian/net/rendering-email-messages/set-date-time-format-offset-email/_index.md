@@ -5,8 +5,8 @@
 "title": "Dátum/idő formátum és időzóna eltolás beállítása (e-mail)"
 "url": "/hu/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Dátum/idő formátum és időzóna eltolás beállítása (e-mail)
 
 

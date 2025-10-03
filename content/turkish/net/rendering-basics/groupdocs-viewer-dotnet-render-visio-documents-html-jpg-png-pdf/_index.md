@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer kullanarak .NET'te Visio Belgelerini HTML, JPG, PNG ve PDF Olarak Nasıl Oluşturursunuz"
 "url": "/tr/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # .NET'te GroupDocs.Viewer Kullanarak Visio Belgelerini HTML, JPG, PNG ve PDF Olarak Nasıl Oluşturursunuz
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/sv/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # Bearbeta dokumentbilagor
 
 ## Introduktion

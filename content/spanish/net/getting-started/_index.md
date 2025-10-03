@@ -5,8 +5,8 @@
 "title": "Empezando"
 "url": "/es/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Empezando
 
 

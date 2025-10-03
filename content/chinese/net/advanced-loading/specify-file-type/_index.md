@@ -5,8 +5,8 @@
 "title": "加载文档时指定文件类型"
 "url": "/zh/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # 加载文档时指定文件类型
 
 ## 介绍

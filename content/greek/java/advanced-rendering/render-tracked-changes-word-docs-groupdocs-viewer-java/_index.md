@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε τις εντοπισμένες αλλαγές σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση Παρακολουθούμενων Αλλαγών σε Έγγραφα Word με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

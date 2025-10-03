@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Viewer .NET
 - render PDF OXPS
 - disable font license restrictions
-
+type: docs
 ---
-
-
 # Render PDF/OXPS with Font Restrictions Using GroupDocs.Viewer .NET: A Comprehensive Guide
 
 ## Introduction

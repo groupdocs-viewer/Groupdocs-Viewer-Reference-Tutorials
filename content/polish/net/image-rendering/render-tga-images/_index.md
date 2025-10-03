@@ -5,8 +5,8 @@
 "title": "Renderuj obrazy TGA"
 "url": "/pl/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # Renderuj obrazy TGA
 
 ## Wstęp

@@ -5,8 +5,8 @@
 "title": "표시를 위해 텍스트를 오버레이하여 렌더링"
 "url": "/ko/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # 표시를 위해 텍스트를 오버레이하여 렌더링
 
 ## 소개

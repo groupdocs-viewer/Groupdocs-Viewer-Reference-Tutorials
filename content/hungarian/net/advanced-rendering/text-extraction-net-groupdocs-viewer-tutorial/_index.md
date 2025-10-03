@@ -4,8 +4,8 @@
 "title": "Szövegkinyerés mesteri szintje .NET-ben a GroupDocs.Viewer segítségével – Átfogó útmutató"
 "url": "/hu/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Szövegkinyerés elsajátítása .NET-ben a GroupDocs.Viewer segítségével: Átfogó oktatóanyag
 
 ## Bevezetés

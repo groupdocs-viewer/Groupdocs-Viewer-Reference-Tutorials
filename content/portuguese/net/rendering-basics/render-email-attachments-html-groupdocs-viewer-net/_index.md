@@ -4,8 +4,8 @@
 "title": "Renderizar anexos de e-mail em HTML com GroupDocs.Viewer para .NET"
 "url": "/pt/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar anexos de e-mail em HTML usando o GroupDocs.Viewer para .NET
 ## Introdução
 Precisa de uma maneira eficiente de converter anexos de e-mail em HTML facilmente visualizável? Seja para melhorar a acessibilidade de documentos ou simplificar o compartilhamento de conteúdo, a renderização de anexos é essencial para o gerenciamento eficaz da correspondência digital. Este guia o orientará no uso **GroupDocs.Viewer para .NET** para conseguir isso com facilidade.

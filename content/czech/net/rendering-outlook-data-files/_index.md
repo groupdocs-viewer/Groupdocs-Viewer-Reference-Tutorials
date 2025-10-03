@@ -5,8 +5,8 @@
 "title": "Vykreslování datových souborů Outlooku (PST, OST)"
 "url": "/cs/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Vykreslování datových souborů Outlooku (PST, OST)
 
 ## Zavedení

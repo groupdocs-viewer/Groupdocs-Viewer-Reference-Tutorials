@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Pobieraj pliki i renderuj dokumenty HTML bez wysiłku"
 "url": "/pl/net/rendering-basics/mastering-groupdocs-viewer-net-file-download-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie GroupDocs.Viewer .NET: bezproblemowe pobieranie plików i renderowanie dokumentów
 
 ## Wstęp

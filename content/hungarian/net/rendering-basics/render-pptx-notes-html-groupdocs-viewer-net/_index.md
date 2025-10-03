@@ -4,8 +4,8 @@
 "title": "PPTX konvertálása HTML-be a Notes segítségével a GroupDocs.Viewer for .NET használatával"
 "url": "/hu/net/rendering-basics/render-pptx-notes-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PPTX prezentációk konvertálása HTML-be jegyzetekkel a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

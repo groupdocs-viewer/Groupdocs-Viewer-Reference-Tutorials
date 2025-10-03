@@ -5,8 +5,8 @@
 "title": "ضبط جودة صورة JPG في ملف PDF المُقدم"
 "url": "/ar/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # ضبط جودة صورة JPG في ملف PDF المُقدم
 
 ## مقدمة

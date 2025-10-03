@@ -4,8 +4,8 @@
 "title": "Beheers HTML-rendering met aangepaste marges in .NET met behulp van GroupDocs.Viewer"
 "url": "/nl/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # HTML-rendering met door de gebruiker gedefinieerde marges in .NET onder de knie krijgen met behulp van GroupDocs.Viewer
 
 ## Invoering

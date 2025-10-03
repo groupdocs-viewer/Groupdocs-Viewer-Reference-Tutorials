@@ -8,10 +8,8 @@ keywords:
 - text overflow in Excel
 - GroupDocs.Viewer .NET
 - HTML rendering of spreadsheets
-
+type: docs
 ---
-
-
 # Hide Text Overflow in Excel with GroupDocs.Viewer .NET
 
 ## Introduction

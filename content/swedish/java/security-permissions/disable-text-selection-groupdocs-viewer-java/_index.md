@@ -4,8 +4,8 @@
 "title": "Så här inaktiverar du textmarkering i PDF-filer med GroupDocs.Viewer Java - En omfattande guide"
 "url": "/sv/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hur man implementerar inaktivering av textmarkering i PDF-rendering med GroupDocs.Viewer Java
 ## Introduktion
 Behöver du ett säkert sätt att visa PDF-filer på webben utan att tillåta textmarkering? Den här omfattande guiden visar hur du inaktiverar textmarkering med hjälp av GroupDocs.Viewer för Java-biblioteket. Genom att konvertera text till bilder förblir ditt innehåll säkert och oredigerbart när det visas online.

@@ -4,8 +4,8 @@
 "title": "Освоение GroupDocs.Viewer Java&#58; Пользовательские имена файлов для PDF-рендеринга архивов"
 "url": "/ru/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # Освоение GroupDocs.Viewer Java: указание пользовательских имен файлов при преобразовании архивов в PDF
 
 ## Введение

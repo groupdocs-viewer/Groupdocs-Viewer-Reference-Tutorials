@@ -4,8 +4,8 @@
 "title": "Hur man justerar textöverflöde i Excel-kalkylblad med GroupDocs.Viewer för Java"
 "url": "/sv/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Hur man justerar textöverflöde i Excel-kalkylblad med GroupDocs.Viewer för Java
 ## Introduktion
 Att hantera överflödig text i kalkylbladsceller när man konverterar dokument till HTML är en vanlig utmaning, särskilt för omfattande Excel-filer. **GroupDocs.Viewer för Java** förenklar den här processen, så att du effektivt kan hantera och dölja överflödig text.

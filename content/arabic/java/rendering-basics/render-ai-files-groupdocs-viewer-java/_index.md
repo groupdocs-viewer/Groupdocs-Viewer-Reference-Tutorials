@@ -4,8 +4,8 @@
 "title": "عرض ملفات الذكاء الاصطناعي باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/rendering-basics/render-ai-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض ملفات AI باستخدام GroupDocs.Viewer لـ Java: دليل شامل
 
 ## مقدمة

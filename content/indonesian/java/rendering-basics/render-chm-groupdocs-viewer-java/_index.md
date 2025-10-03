@@ -4,8 +4,8 @@
 "title": "Cara Merender File CHM Menggunakan GroupDocs.Viewer Java&#58; Panduan Lengkap"
 "url": "/id/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File CHM Menggunakan GroupDocs.Viewer Java: Panduan Lengkap
 ## Perkenalan
 Apakah Anda ingin merender file Compiled HTML Help (CHM) ke dalam format yang lebih banyak didukung seperti HTML, JPG, PNG, dan PDF? Baik untuk keperluan pengarsipan atau meningkatkan aksesibilitas di berbagai platform, mengonversi dokumen-dokumen ini dapat menjadi pengubah permainan. Tutorial ini membahas cara melakukannya dengan lancar menggunakan GroupDocs.Viewer Java. Anda akan mempelajari seluk-beluk merender file CHM secara efisien dengan pustaka yang hebat ini.

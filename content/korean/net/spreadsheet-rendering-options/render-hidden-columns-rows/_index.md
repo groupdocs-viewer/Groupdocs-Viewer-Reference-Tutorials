@@ -5,8 +5,8 @@
 "title": "숨겨진 열과 행 렌더링"
 "url": "/ko/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # 숨겨진 열과 행 렌더링
 
 ## 소개

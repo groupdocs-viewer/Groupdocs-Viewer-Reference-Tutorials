@@ -4,8 +4,8 @@
 "title": "Hoe u TrueVision TGA-bestanden kunt renderen met GroupDocs.Viewer Java&#58; een stapsgewijze handleiding"
 "url": "/nl/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Truevision TGA-bestanden renderen met GroupDocs.Viewer Java
 
 ## Invoering

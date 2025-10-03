@@ -5,8 +5,8 @@
 "title": "Définir la licence à partir du fichier"
 "url": "/fr/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Définir la licence à partir du fichier
 
 ## Introduction

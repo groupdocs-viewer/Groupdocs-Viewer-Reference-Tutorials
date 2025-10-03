@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer Java 调整 MS Project 时间单位——分步指南"
 "url": "/zh/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer Java 调整 MS Project 时间单位：分步指南
 ## 介绍
 您是否厌倦了在将 MS Project 文档渲染成 HTML 格式之前手动调整时间单位？这个过程繁琐且容易出错，尤其是在处理大型项目时。有了 **GroupDocs.Viewer for Java**，您可以轻松地以编程方式调整时间单位设置，确保准确性和效率。

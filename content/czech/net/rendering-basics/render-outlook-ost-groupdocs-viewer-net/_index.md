@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory OST aplikace Outlook pomocí nástroje GroupDocs.Viewer pro .NET | Podrobný návod"
 "url": "/cs/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory OST aplikace Outlook pomocí nástroje GroupDocs.Viewer pro .NET: Komplexní podrobný návod
 
 ## Zavedení

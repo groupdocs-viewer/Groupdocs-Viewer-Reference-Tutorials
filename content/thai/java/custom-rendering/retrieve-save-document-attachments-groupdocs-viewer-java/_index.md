@@ -4,8 +4,8 @@
 "title": "วิธีดึงและบันทึกเอกสารแนบโดยใช้ GroupDocs.Viewer สำหรับ Java - คำแนะนำที่ครอบคลุม"
 "url": "/th/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีดึงและบันทึกเอกสารแนบโดยใช้ GroupDocs.Viewer สำหรับ Java: คู่มือฉบับสมบูรณ์
 
 ## การแนะนำ

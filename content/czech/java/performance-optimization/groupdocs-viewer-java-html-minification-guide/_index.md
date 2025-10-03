@@ -4,8 +4,8 @@
 "title": "Jak minimalizovat HTML soubory v Javě pomocí GroupDocs.Viewer pro optimalizaci výkonu"
 "url": "/cs/java/performance-optimization/groupdocs-viewer-java-html-minification-guide/"
 "weight": 1
+type: docs
 ---
-
 # Jak minifikovat HTML dokumenty pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

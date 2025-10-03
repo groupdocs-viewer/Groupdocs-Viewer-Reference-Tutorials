@@ -4,8 +4,8 @@
 "title": "แยกข้อมูลเอกสารและปรับแต่งผลลัพธ์ด้วย GroupDocs.Viewer .NET คู่มือฉบับสมบูรณ์"
 "url": "/th/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # แยกข้อมูลเอกสารและปรับแต่งผลลัพธ์ด้วย GroupDocs.Viewer .NET
 ## บทช่วยสอนการเรนเดอร์แบบกำหนดเอง
 ### สิ่งที่คุณจะได้เรียนรู้:

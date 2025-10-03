@@ -5,8 +5,8 @@
 "title": "WMZ és WMF képek renderelése"
 "url": "/hu/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # WMZ és WMF képek renderelése
 
 ## Bevezetés

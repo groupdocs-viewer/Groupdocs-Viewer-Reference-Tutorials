@@ -5,8 +5,8 @@
 "title": "عرض مناطق الطباعة باستخدام GroupDocs.Viewer لـ .NET"
 "url": "/ar/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # عرض مناطق الطباعة باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

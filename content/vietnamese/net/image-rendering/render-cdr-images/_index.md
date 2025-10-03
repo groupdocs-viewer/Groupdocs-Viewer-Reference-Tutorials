@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh CDR"
 "url": "/vi/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # Kết xuất hình ảnh CDR
 
 ## Giới thiệu

@@ -4,8 +4,8 @@
 "title": "Implementera .NET responsiv HTML-rendering med GroupDocs.Viewer &#58; En omfattande guide för utvecklare"
 "url": "/sv/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementera .NET responsiv HTML-rendering med GroupDocs.Viewer: En utvecklarguide
 
 ## Introduktion

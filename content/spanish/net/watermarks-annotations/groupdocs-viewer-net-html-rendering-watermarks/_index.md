@@ -4,8 +4,8 @@
 "title": "Representación de documentos maestros en .NET mediante GroupDocs.Viewer&#58; conversión HTML e integración de marcas de agua"
 "url": "/es/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Representación de documentos maestros en .NET con GroupDocs.Viewer: conversión HTML e integración de marcas de agua
 
 ## Introducción

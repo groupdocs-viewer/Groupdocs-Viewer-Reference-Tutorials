@@ -5,8 +5,8 @@
 "title": "將文件渲染為 HTML"
 "url": "/zh-hant/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # 將文件渲染為 HTML
 
 

@@ -5,8 +5,8 @@
 "title": "Textüberlauf in Zellen anpassen"
 "url": "/de/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # Textüberlauf in Zellen anpassen
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "WMZ/WMF dokumentumok konvertálása GroupDocs Viewer for Java használatával – Átfogó útmutató"
 "url": "/hu/java/export-conversion/convert-wmz-wmf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # WMZ/WMF dokumentumok konvertálása GroupDocs Viewer for Java használatával: Átfogó útmutató
 
 ## Bevezetés

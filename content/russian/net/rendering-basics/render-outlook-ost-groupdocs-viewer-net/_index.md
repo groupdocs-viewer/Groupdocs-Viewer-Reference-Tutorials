@@ -4,8 +4,8 @@
 "title": "Как визуализировать файлы Outlook OST с помощью GroupDocs.Viewer для .NET | Пошаговое руководство"
 "url": "/ru/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать файлы Outlook OST с помощью GroupDocs.Viewer для .NET: подробное пошаговое руководство
 
 ## Введение

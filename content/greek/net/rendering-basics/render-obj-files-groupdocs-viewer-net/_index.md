@@ -4,8 +4,8 @@
 "title": "Απόδοση αρχείων OBJ χρησιμοποιώντας το GroupDocs.Viewer .NET™ Ένας πλήρης οδηγός για μετατροπή HTML, JPG, PNG και PDF"
 "url": "/el/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση αρχείων OBJ χρησιμοποιώντας το GroupDocs.Viewer .NET
 
 ## Εισαγωγή στα βασικά της απόδοσης

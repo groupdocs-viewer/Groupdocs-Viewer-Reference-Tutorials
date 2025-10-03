@@ -5,8 +5,8 @@
 "title": "图像渲染"
 "url": "/zh/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # 图像渲染
 
 

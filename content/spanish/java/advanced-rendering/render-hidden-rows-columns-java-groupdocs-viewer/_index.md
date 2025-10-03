@@ -4,8 +4,8 @@
 "title": "Representar filas y columnas ocultas en hojas de cálculo de Java con GroupDocs.Viewer"
 "url": "/es/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Representar filas y columnas ocultas en hojas de cálculo de Java con GroupDocs.Viewer
 
 ## Introducción

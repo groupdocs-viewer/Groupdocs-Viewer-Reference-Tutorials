@@ -4,8 +4,8 @@
 "title": "स्ट्रीम्स से GroupDocs.Viewer .NET का उपयोग करके दस्तावेज़ प्रस्तुत करें' डेवलपर्स के लिए एक व्यापक गाइड"
 "url": "/hi/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # स्ट्रीम्स से GroupDocs.Viewer .NET का उपयोग करके दस्तावेज़ प्रस्तुत करें: डेवलपर्स के लिए एक व्यापक गाइड
 
 ## परिचय

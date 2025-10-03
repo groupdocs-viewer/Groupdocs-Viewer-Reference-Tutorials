@@ -5,8 +5,8 @@
 "title": "Ενεργοποίηση υποδείξεων γραμματοσειράς σε PDF"
 "url": "/el/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Ενεργοποίηση υποδείξεων γραμματοσειράς σε PDF
 
 ## Εισαγωγή

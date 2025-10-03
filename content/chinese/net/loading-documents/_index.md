@@ -5,8 +5,8 @@
 "title": "加载文档"
 "url": "/zh/net/loading-documents/"
 "weight": 20
+type: docs
 ---
-
 # 加载文档
 
 ## 介绍

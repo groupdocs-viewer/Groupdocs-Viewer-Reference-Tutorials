@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中渲染特定的 CAD 图层——综合指南"
 "url": "/zh/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 Java 中渲染特定的 CAD 图层
 ## 介绍
 还在为渲染 CAD 图纸中的特定图层而苦恼吗？无论您是工程师、建筑师还是处理复杂设计的开发人员，管理和可视化特定的 CAD 图层都可能充满挑战。本指南演示如何使用强大的 GroupDocs.Viewer for Java 高效地渲染特定图层。

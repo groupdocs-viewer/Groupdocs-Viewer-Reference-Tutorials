@@ -4,8 +4,8 @@
 "title": "Konvertieren Sie DOCX mit eingebetteten Ressourcen in HTML mithilfe von GroupDocs.Viewer für Java"
 "url": "/de/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Konvertieren Sie DOCX mit eingebetteten Ressourcen in HTML mithilfe von GroupDocs.Viewer für Java
 
 ## Einführung

@@ -5,8 +5,8 @@
 "title": "रेंडर किए गए PDF में JPG छवि गुणवत्ता समायोजित करें"
 "url": "/hi/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # रेंडर किए गए PDF में JPG छवि गुणवत्ता समायोजित करें
 
 ## परिचय

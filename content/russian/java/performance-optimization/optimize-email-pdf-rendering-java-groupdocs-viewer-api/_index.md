@@ -4,8 +4,8 @@
 "title": "Оптимизируйте преобразование электронной почты в PDF в Java с помощью API GroupDocs.Viewer для повышения производительности"
 "url": "/ru/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # Оптимизируйте преобразование электронной почты в PDF в Java с помощью API GroupDocs.Viewer
 
 ## Введение

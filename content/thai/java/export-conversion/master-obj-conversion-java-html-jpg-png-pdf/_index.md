@@ -4,8 +4,8 @@
 "title": "เรียนรู้การแปลง OBJ เป็น HTML/JPG/PNG/PDF ใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # การเรียนรู้การแปลงไฟล์: แปลง OBJ เป็น HTML/JPG/PNG/PDF ใน Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

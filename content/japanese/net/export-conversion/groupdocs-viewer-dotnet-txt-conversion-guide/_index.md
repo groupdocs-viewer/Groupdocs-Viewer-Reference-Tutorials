@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して TXT を HTML、JPG、PNG、PDF に変換する完全ガイド"
 "url": "/ja/net/export-conversion/groupdocs-viewer-dotnet-txt-conversion-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET で TXT を複数の形式に変換する
 
 ## 導入

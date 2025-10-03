@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer for .NET
 - render Visio documents
 - convert Visio to HTML/PNG/JPG/PDF
-
+type: docs
 ---
-
-
 # How to Render Visio Documents as HTML, JPG, PNG, and PDF Using GroupDocs.Viewer in .NET
 
 ## Introduction

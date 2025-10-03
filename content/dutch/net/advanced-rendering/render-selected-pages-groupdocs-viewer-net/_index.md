@@ -4,8 +4,8 @@
 "title": "Geselecteerde pagina's renderen met GroupDocs.Viewer .NET&#58; een uitgebreide handleiding voor ontwikkelaars"
 "url": "/nl/net/advanced-rendering/render-selected-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Specifieke pagina's weergeven met GroupDocs.Viewer .NET
 
 ## Invoering

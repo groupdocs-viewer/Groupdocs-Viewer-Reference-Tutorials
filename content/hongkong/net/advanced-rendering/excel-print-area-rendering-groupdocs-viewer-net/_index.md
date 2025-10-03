@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 實作高效率的 Excel 列印區域渲染"
 "url": "/zh-hant/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 實作高效率的 Excel 列印區域渲染
 
 ## 介紹

@@ -5,8 +5,8 @@
 "title": "Notities weergeven en tijdseenheden aanpassen (MS Project)"
 "url": "/nl/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Notities weergeven en tijdseenheden aanpassen (MS Project)
 
 ## Invoering

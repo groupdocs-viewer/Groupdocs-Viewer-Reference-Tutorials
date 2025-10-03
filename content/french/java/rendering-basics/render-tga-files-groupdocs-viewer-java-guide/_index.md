@@ -4,8 +4,8 @@
 "title": "Comment restituer des fichiers TrueVision TGA à l'aide de GroupDocs.Viewer Java ? Guide étape par étape"
 "url": "/fr/java/rendering-basics/render-tga-files-groupdocs-viewer-java-guide/"
 "weight": 1
+type: docs
 ---
-
 # Comment restituer des fichiers TrueVision TGA à l'aide de GroupDocs.Viewer Java
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer में संसाधन लोडिंग टाइमआउट सेट करें&#58; दस्तावेज़ प्रदर्शन को बढ़ाएं"
 "url": "/hi/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer में संसाधन लोडिंग टाइमआउट सेट करें: दस्तावेज़ रेंडरिंग दक्षता में सुधार करें
 
 ## परिचय

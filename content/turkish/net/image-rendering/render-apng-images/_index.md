@@ -5,8 +5,8 @@
 "title": "APNG Görüntülerini Oluştur"
 "url": "/tr/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # APNG Görüntülerini Oluştur
 
 ## giriiş

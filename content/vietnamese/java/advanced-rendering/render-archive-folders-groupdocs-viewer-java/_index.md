@@ -4,8 +4,8 @@
 "title": "Hiển thị thư mục lưu trữ trong Java bằng GroupDocs.Viewer&#58; Hướng dẫn từng bước"
 "url": "/vi/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị thư mục lưu trữ với GroupDocs.Viewer cho Java
 
 ## Giới thiệu

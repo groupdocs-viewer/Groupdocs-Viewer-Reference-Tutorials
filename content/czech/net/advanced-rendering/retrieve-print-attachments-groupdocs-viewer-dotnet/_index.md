@@ -4,8 +4,8 @@
 "title": "Jak načíst a vytisknout přílohy dokumentů pomocí GroupDocs.Viewer pro .NET | Průvodce pokročilým vykreslováním"
 "url": "/cs/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak načíst a vytisknout přílohy dokumentů pomocí GroupDocs.Viewer pro .NET | Průvodce pokročilým vykreslováním
 
 ## Zavedení

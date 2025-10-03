@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ภาพ TGA"
 "url": "/th/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # การเรนเดอร์ภาพ TGA
 
 ## การแนะนำ

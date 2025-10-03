@@ -4,8 +4,8 @@
 "title": "MS-projectbestanden weergeven als HTML, JPG, PNG en PDF met notities met GroupDocs.Viewer voor Java"
 "url": "/nl/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # MS-projectbestanden weergeven als HTML, JPG, PNG en PDF met notities met GroupDocs.Viewer voor Java
 
 ## Invoering

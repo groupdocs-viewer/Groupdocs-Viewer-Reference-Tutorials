@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して .NET で MS Project ドキュメントをレンダリングする包括的なガイド"
 "url": "/ja/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用した .NET での MS Project ドキュメント レンダリングの習得
 ## 導入
 今日のめまぐるしく変化するビジネス環境では、プロジェクトのタイムラインとリソースを効率的に管理することが不可欠です。関係者は、MS Projectファイル全体を煩雑に見ることなく、プロジェクトの特定の部分だけを確認したいと考えることがよくあります。このチュートリアルでは、GroupDocs.Viewer for .NETを使用して、指定した時間間隔でMS Projectドキュメントのセクションをレンダリングする方法を詳しく説明します。GroupDocs.Viewerは、この一般的な問題に対する重要なソリューションです。

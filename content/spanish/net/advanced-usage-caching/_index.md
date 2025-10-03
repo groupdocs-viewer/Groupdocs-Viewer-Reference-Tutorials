@@ -5,8 +5,8 @@
 "title": "Uso avanzado (almacenamiento en caché)"
 "url": "/es/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Uso avanzado (almacenamiento en caché)
 
 

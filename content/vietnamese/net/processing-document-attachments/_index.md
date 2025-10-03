@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/vi/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # Xử lý tài liệu đính kèm
 
 ## Giới thiệu

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["FODG", "ODG", "GroupDocs.Viewer", ".NET", "OpenDocument"]
+type: docs
 ---
-
 # How to Render FODG and ODG Images in .NET Applications
 
 ## Introduction

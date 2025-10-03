@@ -5,8 +5,8 @@
 "title": "Рендеринг по разрывам страниц"
 "url": "/ru/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Рендеринг по разрывам страниц
 
 ## Введение

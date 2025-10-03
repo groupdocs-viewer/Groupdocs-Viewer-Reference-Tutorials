@@ -5,8 +5,8 @@
 "title": "Védje a renderelt PDF-et jelszóval"
 "url": "/hu/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Védje a renderelt PDF-et jelszóval
 
 ## Bevezetés

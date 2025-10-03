@@ -4,8 +4,8 @@
 "title": "Απόδοση εγγράφων που προστατεύονται με κωδικό πρόσβασης σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση εγγράφων που προστατεύονται με κωδικό πρόσβασης σε Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

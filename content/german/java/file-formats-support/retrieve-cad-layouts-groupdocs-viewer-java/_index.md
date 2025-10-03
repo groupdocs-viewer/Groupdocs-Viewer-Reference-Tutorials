@@ -4,8 +4,8 @@
 "title": "Abrufen von CAD-Layouts und -Ebenen in Java mit GroupDocs.Viewer"
 "url": "/de/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie CAD-Layouts und -Ebenen mit GroupDocs.Viewer für Java ab
 
 In der Welt des Ingenieurwesens und Designs sind CAD-Dateien (Computer-Aided Design) unverzichtbare Werkzeuge, die große Mengen detaillierter Informationen zu Designs speichern. Diese Dateien können komplex sein und mehrere Layouts und Ebenen enthalten, die für eine effektive Projektabwicklung präzise verwaltet und abgerufen werden müssen. Wenn Sie bestimmte Details aus CAD-Zeichnungen programmatisch in Java extrahieren möchten, ist GroupDocs.Viewer für Java die ideale Lösung. Dieses Tutorial führt Sie durch den Prozess des Abrufens aller Layouts und Ebenen aus einer CAD-Zeichnung mit GroupDocs.Viewer.

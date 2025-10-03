@@ -5,8 +5,8 @@
 "title": "Rendu des images EMZ et EMF"
 "url": "/fr/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Rendu des images EMZ et EMF
 
 ## Introduction

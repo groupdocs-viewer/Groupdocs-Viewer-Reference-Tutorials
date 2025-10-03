@@ -5,8 +5,8 @@
 "title": "Outlook データ ファイル (PST、OST) のレンダリング"
 "url": "/ja/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Outlook データ ファイル (PST、OST) のレンダリング
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "ページをめくる、回転する"
 "url": "/ja/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # ページをめくる、回転する
 
 ## 導入

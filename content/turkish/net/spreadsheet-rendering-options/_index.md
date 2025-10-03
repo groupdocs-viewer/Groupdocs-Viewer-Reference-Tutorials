@@ -5,8 +5,8 @@
 "title": "E-Tablo Oluşturma Seçenekleri"
 "url": "/tr/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # E-Tablo Oluşturma Seçenekleri
 
 ## giriiş

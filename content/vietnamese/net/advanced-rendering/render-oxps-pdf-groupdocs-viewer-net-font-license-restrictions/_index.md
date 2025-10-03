@@ -4,8 +4,8 @@
 "title": "Kết xuất PDF/OXPS với các hạn chế phông chữ bằng GroupDocs.Viewer .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất PDF/OXPS với các hạn chế phông chữ bằng GroupDocs.Viewer .NET: Hướng dẫn toàn diện
 
 ## Giới thiệu

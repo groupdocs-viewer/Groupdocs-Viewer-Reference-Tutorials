@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Rendering Options"]
 tags: ["groupdocs-viewer", "image-optimization", "performance", "dotnet"]
+type: docs
 ---
-
 # How to Set Image Size Limits in GroupDocs Viewer for .NET
 
 ## Introduction

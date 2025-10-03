@@ -4,8 +4,8 @@
 "title": "عرض جميع تخطيطات CAD بكفاءة باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض جميع تخطيطات CAD بكفاءة باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

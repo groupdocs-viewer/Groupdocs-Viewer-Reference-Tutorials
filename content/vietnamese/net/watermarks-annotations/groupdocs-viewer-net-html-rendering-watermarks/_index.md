@@ -4,8 +4,8 @@
 "title": "Kết xuất tài liệu chính trong .NET bằng cách sử dụng GroupDocs.Viewer&#58; Chuyển đổi HTML & Tích hợp hình mờ"
 "url": "/vi/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất tài liệu chính trong .NET bằng GroupDocs.Viewer: Chuyển đổi HTML & Tích hợp hình mờ
 
 ## Giới thiệu

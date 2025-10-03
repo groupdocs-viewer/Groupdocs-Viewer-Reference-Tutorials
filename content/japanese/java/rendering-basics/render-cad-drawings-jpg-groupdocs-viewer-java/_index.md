@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java を使用して CAD 図面を JPG としてレンダリングする包括的なガイド"
 "url": "/ja/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java を使用して CAD 図面を JPG としてレンダリングする方法: ステップバイステップのチュートリアル
 
 ## 導入

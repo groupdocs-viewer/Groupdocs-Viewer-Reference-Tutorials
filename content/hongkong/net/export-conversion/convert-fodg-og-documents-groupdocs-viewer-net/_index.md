@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 將 FODG/ODG 轉換為 HTML、JPG、PNG 和 PDF"
 "url": "/zh-hant/net/export-conversion/convert-fodg-og-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 轉換 FODG/ODG 文檔
 
 ## 介紹

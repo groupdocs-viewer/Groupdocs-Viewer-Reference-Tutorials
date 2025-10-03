@@ -5,8 +5,8 @@
 "title": "Vykreslování obrazu"
 "url": "/cs/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Vykreslování obrazu
 
 

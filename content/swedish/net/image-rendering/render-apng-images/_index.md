@@ -5,8 +5,8 @@
 "title": "Rendera APNG-bilder"
 "url": "/sv/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # Rendera APNG-bilder
 
 ## Introduktion

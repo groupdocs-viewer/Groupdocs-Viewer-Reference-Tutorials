@@ -4,8 +4,8 @@
 "title": "Оптимизируйте размер чертежа САПР с помощью GroupDocs.Viewer .NET для повышения производительности веб-приложений"
 "url": "/ru/net/advanced-rendering/adjust-cad-drawing-size-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Оптимизируйте размер чертежа САПР с помощью GroupDocs.Viewer .NET для повышения производительности веб-приложений
 
 ## Введение

@@ -5,8 +5,8 @@
 "title": "Kết xuất thư mục lưu trữ"
 "url": "/vi/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Kết xuất thư mục lưu trữ
 
 ## Giới thiệu

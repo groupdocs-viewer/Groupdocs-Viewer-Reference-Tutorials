@@ -3,8 +3,8 @@
 "title": "Handledningar för dokumentvattenstämplar och annoteringar för GroupDocs.Viewer Java"
 "url": "/sv/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Handledningar för dokumentvattenstämplar och annoteringar för GroupDocs.Viewer Java
 
 Bemästra tekniker för dokumentannotering och vattenmärkning med våra GroupDocs.Viewer Java-handledningar. Dessa steg-för-steg-guider visar hur du lägger till text- och bildvattenstämplar, implementerar annoteringar, styr vattenstämpels positionering och transparens och renderar dokument med inbäddade annoteringar. Varje handledning innehåller praktiska Java-kodexempel för att lägga till visuella metadata och skyddande markeringar i dina dokument, vilket förbättrar dokumentspårning och varumärkesbyggande funktioner.

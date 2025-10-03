@@ -4,8 +4,8 @@
 "title": "जावा में GroupDocs.Viewer के लिए मीटर्ड लाइसेंस लागू करना&#58; एक डेवलपर गाइड"
 "url": "/hi/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # जावा के लिए GroupDocs.Viewer हेतु मीटर्ड लाइसेंस का क्रियान्वयन: एक डेवलपर गाइड
 
 ## परिचय

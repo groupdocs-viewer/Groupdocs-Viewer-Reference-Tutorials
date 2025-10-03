@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["cloud-integration", "remote-rendering", "ftp-documents", "java-api"]
+type: docs
 ---
-
 # Java Document Viewer Cloud Integration - Complete Implementation Guide
 
 Building modern applications often means working with documents stored across different locations - from FTP servers to cloud storage platforms. If you're struggling with displaying documents that aren't stored locally, you've come to the right place. This comprehensive guide walks you through implementing cloud and remote document rendering using GroupDocs.Viewer for Java, turning complex integration challenges into straightforward solutions.

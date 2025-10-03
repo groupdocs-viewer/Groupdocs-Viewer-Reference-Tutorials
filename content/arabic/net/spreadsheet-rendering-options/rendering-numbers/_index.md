@@ -5,8 +5,8 @@
 "title": "أرقام العرض"
 "url": "/ar/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # أرقام العرض
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 渲染 CDR 文档——综合指南"
 "url": "/zh/net/file-formats-support/render-cdr-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 呈现 CDR 文档
 
 ## 介绍

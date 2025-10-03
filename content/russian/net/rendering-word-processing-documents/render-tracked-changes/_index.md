@@ -5,8 +5,8 @@
 "title": "Отображение отслеживаемых изменений"
 "url": "/ru/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Отображение отслеживаемых изменений
 
 ## Введение

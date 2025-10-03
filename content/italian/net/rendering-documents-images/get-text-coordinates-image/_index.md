@@ -5,8 +5,8 @@
 "title": "Ottieni le coordinate del testo per il rendering dell'immagine"
 "url": "/it/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # Ottieni le coordinate del testo per il rendering dell'immagine
 
 ## Introduzione

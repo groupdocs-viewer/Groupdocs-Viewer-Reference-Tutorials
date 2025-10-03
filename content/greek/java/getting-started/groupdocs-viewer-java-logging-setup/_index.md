@@ -4,8 +4,8 @@
 "title": "Ρύθμιση παραμέτρων καταγραφής στην κονσόλα GroupDocs.Viewer για Java και οδηγός καταγραφής αρχείων"
 "url": "/el/java/getting-started/groupdocs-viewer-java-logging-setup/"
 "weight": 1
+type: docs
 ---
-
 # Ρύθμιση παραμέτρων καταγραφής στο GroupDocs.Viewer για Java
 
 ## Εισαγωγή

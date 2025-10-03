@@ -4,8 +4,8 @@
 "title": "Cara Merender File Arsip ke HTML Menggunakan GroupDocs.Viewer .NET&#58; Panduan Langkah demi Langkah"
 "url": "/id/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File Arsip ke HTML Menggunakan GroupDocs.Viewer .NET: Panduan Langkah demi Langkah
 ## Perkenalan
 Kesulitan menampilkan file arsip seperti RAR atau ZIP di halaman web? Mengonversi format file yang rumit ini menjadi dokumen HTML yang mudah digunakan sangat penting untuk pengiriman konten yang lancar. Dengan GroupDocs.Viewer untuk .NET, tugas ini menjadi mudah dan efisien.

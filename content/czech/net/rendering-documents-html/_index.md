@@ -5,8 +5,8 @@
 "title": "Vykreslování dokumentů do HTML"
 "url": "/cs/net/rendering-documents-html/"
 "weight": 31
+type: docs
 ---
-
 # Vykreslování dokumentů do HTML
 
 

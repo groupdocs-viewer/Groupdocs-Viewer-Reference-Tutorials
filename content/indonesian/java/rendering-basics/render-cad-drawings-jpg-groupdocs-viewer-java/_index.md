@@ -4,8 +4,8 @@
 "title": "Render Gambar CAD sebagai JPG Menggunakan GroupDocs.Viewer Java&#58; Panduan Lengkap"
 "url": "/id/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cara Membuat Gambar CAD sebagai JPG Menggunakan GroupDocs.Viewer Java: Tutorial Langkah demi Langkah
 
 ## Perkenalan

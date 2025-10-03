@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET을 사용하여 암호로 보호된 문서를 렌더링하는 방법"
 "url": "/ko/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 암호로 보호된 문서 렌더링
 
 ## 소개

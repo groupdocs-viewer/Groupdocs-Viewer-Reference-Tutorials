@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET™ Vykreslování specifických složek z archivů ZIP do HTML"
 "url": "/cs/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Výukový program: Implementace GroupDocs.Viewer .NET pro vykreslení konkrétních složek ze ZIP archivů do HTML
 
 ## Zavedení

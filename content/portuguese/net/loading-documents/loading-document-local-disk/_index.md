@@ -5,8 +5,8 @@
 "title": "Carregar documentos do disco local"
 "url": "/pt/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Carregar documentos do disco local
 
 ## Introdução

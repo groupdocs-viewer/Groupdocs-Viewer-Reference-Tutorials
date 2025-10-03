@@ -5,8 +5,8 @@
 "title": "渲染时叠加文本进行显示"
 "url": "/zh/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # 渲染时叠加文本进行显示
 
 ## 介绍

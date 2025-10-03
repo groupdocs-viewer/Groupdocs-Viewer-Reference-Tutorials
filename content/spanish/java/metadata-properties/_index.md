@@ -3,8 +3,8 @@
 "title": "Tutoriales de extracción de metadatos de documentos para GroupDocs.Viewer Java"
 "url": "/es/java/metadata-properties/"
 "weight": 14
+type: docs
 ---
-
 # Tutoriales de extracción de metadatos de documentos para GroupDocs.Viewer Java
 
 Aprenda a trabajar con metadatos y propiedades de documentos con nuestros tutoriales de Java de GroupDocs.Viewer. Estas guías prácticas muestran cómo extraer información de documentos, leer campos de metadatos, administrar propiedades de documentos e implementar el procesamiento de documentos basado en metadatos. Cada tutorial incluye ejemplos de código Java prácticos para escenarios comunes de metadatos, lo que le ayudará a crear aplicaciones que puedan analizar y administrar eficazmente la información de los documentos.

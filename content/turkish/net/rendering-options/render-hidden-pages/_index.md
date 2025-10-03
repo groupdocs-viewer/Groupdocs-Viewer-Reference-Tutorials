@@ -5,8 +5,8 @@
 "title": "Gizli Sayfaları Oluştur"
 "url": "/tr/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Gizli Sayfaları Oluştur
 
 ## giriiş

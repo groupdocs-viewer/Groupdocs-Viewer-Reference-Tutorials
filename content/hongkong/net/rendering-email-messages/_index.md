@@ -5,8 +5,8 @@
 "title": "渲染電子郵件訊息"
 "url": "/zh-hant/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # 渲染電子郵件訊息
 
 ## 介紹

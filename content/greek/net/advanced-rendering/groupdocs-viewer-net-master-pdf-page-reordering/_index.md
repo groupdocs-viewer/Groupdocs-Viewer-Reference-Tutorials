@@ -4,8 +4,8 @@
 "title": "Αναδιάταξη κύριας σελίδας PDF σε .NET με το GroupDocs.Viewer - Οδηγός για προγραμματιστές"
 "url": "/el/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Κατανόηση της αναδιάταξης σελίδων PDF με το GroupDocs.Viewer .NET: Ένας ολοκληρωμένος οδηγός για προγραμματιστές
 
 ## Εισαγωγή

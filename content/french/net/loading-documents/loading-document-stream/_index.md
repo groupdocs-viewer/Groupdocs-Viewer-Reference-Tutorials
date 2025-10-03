@@ -5,8 +5,8 @@
 "title": "Charger des documents à partir du flux"
 "url": "/fr/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # Charger des documents à partir du flux
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "PDF renderelése az eredeti oldalmérettel"
 "url": "/hu/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # PDF renderelése az eredeti oldalmérettel
 
 ## Bevezetés

@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Image Rendering"]
 tags: ["TGA", "image-viewer", "dotnet", "csharp", "groupdocs"]
+type: docs
 ---
-
 # TGA Image Viewer .NET - Complete Guide to Rendering TGA Files
 
 ## Introduction

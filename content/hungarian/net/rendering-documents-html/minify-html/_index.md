@@ -5,8 +5,8 @@
 "title": "Minify renderelt HTML dokumentum"
 "url": "/hu/net/rendering-documents-html/minify-html/"
 "weight": 11
+type: docs
 ---
-
 # Minify renderelt HTML dokumentum
 
 ## Bevezetés

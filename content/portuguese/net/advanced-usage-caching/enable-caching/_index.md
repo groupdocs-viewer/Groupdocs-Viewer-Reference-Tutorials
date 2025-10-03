@@ -5,8 +5,8 @@
 "title": "Habilitar cache para processamento mais rápido de documentos"
 "url": "/pt/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Habilitar cache para processamento mais rápido de documentos
 
 ## Introdução

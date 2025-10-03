@@ -5,8 +5,8 @@
 "title": "नोट्स के साथ दस्तावेज़ प्रस्तुत करें"
 "url": "/hi/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # नोट्स के साथ दस्तावेज़ प्रस्तुत करें
 
 ## परिचय

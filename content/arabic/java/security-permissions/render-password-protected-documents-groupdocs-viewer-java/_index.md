@@ -4,8 +4,8 @@
 "title": "عرض المستندات المحمية بكلمة مرور في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض المستندات المحمية بكلمة مرور في Java باستخدام GroupDocs.Viewer
 
 ## مقدمة

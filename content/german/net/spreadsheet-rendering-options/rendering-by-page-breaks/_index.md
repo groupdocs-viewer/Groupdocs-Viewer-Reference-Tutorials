@@ -5,8 +5,8 @@
 "title": "Rendern durch Seitenumbrüche"
 "url": "/de/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Rendern durch Seitenumbrüche
 
 ## Einführung

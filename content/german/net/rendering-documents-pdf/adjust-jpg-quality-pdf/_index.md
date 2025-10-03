@@ -5,8 +5,8 @@
 "title": "Passen Sie die JPG-Bildqualität im gerenderten PDF an"
 "url": "/de/net/rendering-documents-pdf/adjust-jpg-quality-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Passen Sie die JPG-Bildqualität im gerenderten PDF an
 
 ## Einführung

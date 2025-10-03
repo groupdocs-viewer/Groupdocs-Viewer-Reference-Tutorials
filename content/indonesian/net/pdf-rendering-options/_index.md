@@ -5,8 +5,8 @@
 "title": "Opsi Rendering PDF"
 "url": "/id/net/pdf-rendering-options/"
 "weight": 38
+type: docs
 ---
-
 # Opsi Rendering PDF
 
 

@@ -5,8 +5,8 @@
 "title": "워크시트 이름 가져오기"
 "url": "/ko/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # 워크시트 이름 가져오기
 
 ## 소개

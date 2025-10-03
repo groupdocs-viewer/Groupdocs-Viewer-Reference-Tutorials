@@ -5,8 +5,8 @@
 "title": "Merender Pesan Email"
 "url": "/id/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Merender Pesan Email
 
 ## Perkenalan

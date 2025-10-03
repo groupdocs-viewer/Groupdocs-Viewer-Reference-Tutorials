@@ -5,8 +5,8 @@
 "title": "Agregar marca de agua al documento"
 "url": "/es/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Agregar marca de agua al documento
 
 ## Introducción

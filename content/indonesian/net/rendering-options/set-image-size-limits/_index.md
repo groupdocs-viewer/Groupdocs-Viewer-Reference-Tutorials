@@ -5,8 +5,8 @@
 "title": "Tetapkan Batas Ukuran Gambar"
 "url": "/id/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Tetapkan Batas Ukuran Gambar
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "कुशल रेंडरिंग के लिए GroupDocs.Viewer Java का उपयोग करके CAD ड्रॉइंग को टाइल्स में विभाजित करें"
 "url": "/hi/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java के साथ CAD ड्रॉइंग को टाइल्स में विभाजित करें
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "Optimiser le rendu des feuilles de calcul avec GroupDocs.Viewer pour .NET &#58; ignorer les colonnes vides"
 "url": "/fr/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimiser le rendu des feuilles de calcul avec GroupDocs.Viewer pour .NET
 ## Comment ignorer le rendu des colonnes vides dans les feuilles de calcul à l'aide de GroupDocs.Viewer .NET
 ### Introduction

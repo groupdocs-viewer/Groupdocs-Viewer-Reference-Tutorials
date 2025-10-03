@@ -4,8 +4,8 @@
 "title": "Padroneggia la visualizzazione di MS Project in Java con GroupDocs.Viewer&#58; una guida completa"
 "url": "/it/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggiare la visualizzazione dei documenti di MS Project con GroupDocs.Viewer in Java
 
 ## Introduzione

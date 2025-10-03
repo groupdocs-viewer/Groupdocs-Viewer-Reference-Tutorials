@@ -4,8 +4,8 @@
 "title": "Opanuj przeglądanie projektów MS w Javie za pomocą GroupDocs.Viewer&#58; Kompleksowy przewodnik"
 "url": "/pl/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie przeglądania dokumentów MS Project za pomocą GroupDocs.Viewer w Javie
 
 ## Wstęp

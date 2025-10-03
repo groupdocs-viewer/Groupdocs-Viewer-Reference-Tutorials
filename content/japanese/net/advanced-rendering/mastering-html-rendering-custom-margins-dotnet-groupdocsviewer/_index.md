@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して .NET でカスタム マージンを使用した HTML レンダリングをマスターする"
 "url": "/ja/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して .NET でユーザー定義のマージンを使用した HTML レンダリングをマスターする
 
 ## 導入

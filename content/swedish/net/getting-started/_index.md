@@ -5,8 +5,8 @@
 "title": "Komma igång"
 "url": "/sv/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Komma igång
 
 

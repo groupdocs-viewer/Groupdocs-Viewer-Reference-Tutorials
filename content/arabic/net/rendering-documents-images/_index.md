@@ -5,8 +5,8 @@
 "title": "تحويل المستندات إلى صور"
 "url": "/ar/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # تحويل المستندات إلى صور
 
 ## مقدمة

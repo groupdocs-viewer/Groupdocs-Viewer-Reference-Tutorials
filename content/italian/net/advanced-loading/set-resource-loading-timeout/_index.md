@@ -5,8 +5,8 @@
 "title": "Imposta timeout caricamento risorse (avanzato)"
 "url": "/it/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Imposta timeout caricamento risorse (avanzato)
 
 ## Introduzione

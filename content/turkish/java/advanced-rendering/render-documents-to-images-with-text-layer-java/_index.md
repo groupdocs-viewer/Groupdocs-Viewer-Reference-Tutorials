@@ -4,8 +4,8 @@
 "title": "Java'da GroupDocs.Viewer Kullanarak Belgeleri Metin Katmanıyla Görüntü Olarak Oluşturma"
 "url": "/tr/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java'da GroupDocs.Viewer Kullanarak Belgeleri Metin Katmanıyla Görüntü Olarak Oluşturma
 ## Gelişmiş Render Eğitimi
 **Mevcut SEO URL'si**: /metin-katmanlı-belgeleri-görüntülere-dönüştür-java

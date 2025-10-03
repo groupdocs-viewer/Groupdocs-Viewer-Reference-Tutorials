@@ -4,8 +4,8 @@
 "title": "Реализация анализа документов с помощью GroupDocs.Viewer для Java&#58; Извлечение метаданных страницы и текстовых строк"
 "url": "/ru/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Реализация анализа документов с помощью GroupDocs.Viewer для Java: извлечение метаданных страницы и текстовых строк
 
 ## Введение

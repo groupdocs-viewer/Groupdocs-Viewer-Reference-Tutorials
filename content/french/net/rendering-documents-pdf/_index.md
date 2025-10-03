@@ -5,8 +5,8 @@
 "title": "Rendu de documents au format PDF"
 "url": "/fr/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Rendu de documents au format PDF
 
 

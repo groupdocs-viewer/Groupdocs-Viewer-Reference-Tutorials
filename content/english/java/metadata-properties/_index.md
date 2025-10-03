@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["metadata-extraction", "document-processing", "groupdocs", "java-tutorial"]
+type: docs
 ---
-
 # Java Document Metadata Extraction
 
 Working with document metadata in Java doesn't have to be complicated. Whether you're building a document management system, creating automated workflows, or just need to extract basic information from files, this comprehensive guide will walk you through everything you need to know about **Java document metadata extraction** using GroupDocs.Viewer.

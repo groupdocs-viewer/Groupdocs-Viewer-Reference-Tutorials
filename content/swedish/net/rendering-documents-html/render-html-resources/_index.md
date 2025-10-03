@@ -5,8 +5,8 @@
 "title": "Rendera med inbäddade eller externa resurser"
 "url": "/sv/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Rendera med inbäddade eller externa resurser
 
 ## Introduktion

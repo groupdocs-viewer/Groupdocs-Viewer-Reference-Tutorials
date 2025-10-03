@@ -5,8 +5,8 @@
 "title": "Convertir documentos a PDF"
 "url": "/es/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Convertir documentos a PDF
 
 

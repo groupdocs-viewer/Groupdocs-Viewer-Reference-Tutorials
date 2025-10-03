@@ -4,8 +4,8 @@
 "title": "Vykreslení dokumentů Apple Numbers v Javě pomocí GroupDocs.Viewer – Komplexní průvodce"
 "url": "/cs/java/file-formats-support/render-numbers-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokumenty Apple Numbers pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

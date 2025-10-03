@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile .NET'te Belirli Sayfaların Oluşturulması Kapsamlı Bir Kılavuz"
 "url": "/tr/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile .NET'te Belirli Sayfaların Oluşturulması: Kapsamlı Bir Kılavuz
 
 ## giriiş

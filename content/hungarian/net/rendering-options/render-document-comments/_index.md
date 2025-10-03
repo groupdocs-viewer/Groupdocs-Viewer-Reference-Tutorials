@@ -5,8 +5,8 @@
 "title": "Dokumentum renderelése megjegyzésekkel"
 "url": "/hu/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # Dokumentum renderelése megjegyzésekkel
 
 ## Bevezetés

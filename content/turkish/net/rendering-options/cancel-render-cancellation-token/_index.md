@@ -5,8 +5,8 @@
 "title": "İptal Token'ı ile Render'ı İptal Et"
 "url": "/tr/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # İptal Token'ı ile Render'ı İptal Et
 
 ## giriiş

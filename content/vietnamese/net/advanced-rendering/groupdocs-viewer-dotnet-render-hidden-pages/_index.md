@@ -4,8 +4,8 @@
 "title": "Hiển thị các trang ẩn trong tài liệu bằng GroupDocs.Viewer cho .NET&#58; Hướng dẫn từng bước"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-dotnet-render-hidden-pages/"
 "weight": 1
+type: docs
 ---
-
 # Hiển thị các trang ẩn trong tài liệu bằng GroupDocs.Viewer cho .NET: Hướng dẫn từng bước
 
 ## Giới thiệu

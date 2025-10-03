@@ -4,8 +4,8 @@
 "title": "Karaktercsoportosítás letiltása PDF-ekben a GroupDocs.Viewer segítségével a Java precíz renderelési technikáihoz"
 "url": "/hu/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Karaktercsoportosítás letiltása PDF-ekben a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

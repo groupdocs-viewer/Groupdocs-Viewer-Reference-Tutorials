@@ -5,8 +5,8 @@
 "title": "Vykreslení obrázků z aplikace Visio"
 "url": "/cs/net/rendering-visio-documents/render-visio-figures/"
 "weight": 10
+type: docs
 ---
-
 # Vykreslení obrázků z aplikace Visio
 
 ## Zavedení

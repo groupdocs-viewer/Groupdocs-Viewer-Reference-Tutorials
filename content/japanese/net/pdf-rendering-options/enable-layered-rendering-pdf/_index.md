@@ -5,8 +5,8 @@
 "title": "PDFでレイヤーレンダリングを有効にする"
 "url": "/ja/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # PDFでレイヤーレンダリングを有効にする
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer ile PDF Sayfalarını Döndürme&#58; Geliştiricinin Kılavuzu"
 "url": "/tr/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer Kullanarak PDF Sayfalarını Döndürme: Geliştiricinin Kılavuzu
 
 ## giriiş

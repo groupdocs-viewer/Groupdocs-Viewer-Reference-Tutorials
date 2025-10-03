@@ -5,8 +5,8 @@
 "title": "Kimeneti képméret beállítása CAD rajzokhoz"
 "url": "/hu/net/rendering-cad-drawings/adjust-output-image-size-cad/"
 "weight": 15
+type: docs
 ---
-
 # Kimeneti képméret beállítása CAD rajzokhoz
 
 ## Bevezetés

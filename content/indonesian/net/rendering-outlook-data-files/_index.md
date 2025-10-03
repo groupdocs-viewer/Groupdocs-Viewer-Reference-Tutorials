@@ -5,8 +5,8 @@
 "title": "Merender File Data Outlook (PST, OST)"
 "url": "/id/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Merender File Data Outlook (PST, OST)
 
 ## Perkenalan

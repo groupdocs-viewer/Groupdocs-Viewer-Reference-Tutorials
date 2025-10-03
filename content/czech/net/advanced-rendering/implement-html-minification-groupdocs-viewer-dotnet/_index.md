@@ -4,8 +4,8 @@
 "title": "Jak implementovat minifikaci HTML pomocí GroupDocs.Viewer .NET pro rychlejší webové stránky"
 "url": "/cs/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak implementovat minifikaci HTML pomocí GroupDocs.Viewer .NET pro rychlejší webové stránky
 
 ## Zavedení

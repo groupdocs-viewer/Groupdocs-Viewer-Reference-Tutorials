@@ -4,8 +4,8 @@
 "title": "Faire pivoter des pages PDF spécifiques à l'aide de GroupDocs.Viewer en Java - Un guide complet"
 "url": "/fr/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Faire pivoter des pages PDF spécifiques à l'aide de GroupDocs.Viewer en Java
 
 ## Introduction

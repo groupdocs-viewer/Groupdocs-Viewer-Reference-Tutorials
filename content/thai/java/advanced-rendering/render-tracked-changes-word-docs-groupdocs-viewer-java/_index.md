@@ -4,8 +4,8 @@
 "title": "วิธีการแสดงการเปลี่ยนแปลงที่ติดตามในเอกสาร Word โดยใช้ GroupDocs.Viewer สำหรับ Java - คู่มือฉบับสมบูรณ์"
 "url": "/th/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # การแสดงผลการติดตามการเปลี่ยนแปลงในเอกสาร Word ด้วย GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

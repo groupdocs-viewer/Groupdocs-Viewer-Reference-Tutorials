@@ -4,8 +4,8 @@
 "title": "मास्टर ग्रुपडॉक्स.व्यूअर .NET फ़ॉन्ट्स एम्बेड करें और दस्तावेज़ों को कुशलतापूर्वक HTML में कनवर्ट करें"
 "url": "/hi/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ दस्तावेज़ रेंडरिंग में महारत हासिल करना: फ़ॉन्ट्स एम्बेड करें और HTML में कनवर्ट करें
 
 ## परिचय

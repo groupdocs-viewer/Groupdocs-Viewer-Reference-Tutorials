@@ -5,8 +5,8 @@
 "title": "Recupera e salva gli allegati del documento"
 "url": "/it/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Recupera e salva gli allegati del documento
 
 ## Introduzione

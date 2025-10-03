@@ -4,8 +4,8 @@
 "title": "Υλοποίηση απόδοσης .NET WMZ/WMF με το GroupDocs.Viewer για συμβατότητα ιστού και μεταξύ πλατφορμών"
 "url": "/el/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Υλοποίηση απόδοσης .NET WMZ/WMF με το GroupDocs.Viewer για συμβατότητα ιστού και μεταξύ πλατφορμών
 
 ## Εισαγωγή

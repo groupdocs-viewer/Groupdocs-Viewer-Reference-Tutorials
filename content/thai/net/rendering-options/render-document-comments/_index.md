@@ -5,8 +5,8 @@
 "title": "เรนเดอร์เอกสารพร้อมคำอธิบายประกอบ"
 "url": "/th/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # เรนเดอร์เอกสารพร้อมคำอธิบายประกอบ
 
 ## การแนะนำ

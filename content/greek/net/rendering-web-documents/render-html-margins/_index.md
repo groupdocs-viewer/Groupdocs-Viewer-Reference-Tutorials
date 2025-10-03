@@ -5,8 +5,8 @@
 "title": "Απόδοση HTML με περιθώρια που ορίζονται από τον χρήστη"
 "url": "/el/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Απόδοση HTML με περιθώρια που ορίζονται από τον χρήστη
 
 ## Εισαγωγή

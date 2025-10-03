@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development", "Document Security"]
 tags: ["security", "password-protection", "encryption", "access-control", "java"]
+type: docs
 ---
-
 # Java Document Security: Complete Guide to GroupDocs.Viewer Protection
 
 Ever worried about sensitive documents being accessed by the wrong people in your Java application? You're not alone. With data breaches making headlines regularly, implementing robust **java document security** has become a critical requirement for modern applications.

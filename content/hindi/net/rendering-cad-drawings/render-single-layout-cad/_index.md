@@ -5,8 +5,8 @@
 "title": "CAD चित्रों में एकल लेआउट प्रस्तुत करें"
 "url": "/hi/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # CAD चित्रों में एकल लेआउट प्रस्तुत करें
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "Restituer des fichiers DOCX depuis InputStream en Java avec GroupDocs.Viewer"
 "url": "/fr/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment charger et afficher un fichier DOCX à partir d'un flux d'entrée (InputStream) à l'aide de GroupDocs.Viewer pour Java
 
 ## Introduction

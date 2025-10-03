@@ -4,8 +4,8 @@
 "title": "Excel-spreadsheets weergeven op basis van pagina-einden met GroupDocs.Viewer voor .NET"
 "url": "/nl/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Excel-spreadsheets weergeven op basis van pagina-einden met GroupDocs.Viewer voor .NET
 
 ## Invoering

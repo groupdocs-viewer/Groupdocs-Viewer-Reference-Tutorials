@@ -4,8 +4,8 @@
 "title": "Эффективная визуализация макета САПР с помощью GroupDocs.Viewer для .NET&#58; Пошаговое руководство"
 "url": "/ru/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Эффективная визуализация макетов САПР с помощью GroupDocs.Viewer для .NET
 
 ## Введение

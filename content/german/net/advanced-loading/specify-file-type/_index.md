@@ -5,8 +5,8 @@
 "title": "Geben Sie beim Laden von Dokumenten den Dateityp an"
 "url": "/de/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # Geben Sie beim Laden von Dokumenten den Dateityp an
 
 ## Einführung

@@ -4,8 +4,8 @@
 "title": "Zvládnutí vykreslování SVGZ v .NET pomocí GroupDocs.Viewer – Kompletní průvodce pro vývojáře"
 "url": "/cs/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí vykreslování SVGZ v .NET s GroupDocs.Viewer: Kompletní průvodce pro vývojáře
 
 ## Zavedení

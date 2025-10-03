@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 将 PDF 转换为原始大小的 PNG"
 "url": "/zh/net/export-conversion/convert-pdfs-to-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 将 PDF 转换为原始大小的 PNG
 
 ## 介绍

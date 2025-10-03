@@ -5,8 +5,8 @@
 "title": "APNG 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # APNG 이미지 렌더링
 
 ## 소개

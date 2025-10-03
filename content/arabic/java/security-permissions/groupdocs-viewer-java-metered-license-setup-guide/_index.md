@@ -4,8 +4,8 @@
 "title": "تنفيذ ترخيص مُقاس لـ GroupDocs.Viewer في Java - دليل المطور"
 "url": "/ar/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # تنفيذ ترخيص مُقاس لـ GroupDocs.Viewer لـ Java: دليل المطور
 
 ## مقدمة

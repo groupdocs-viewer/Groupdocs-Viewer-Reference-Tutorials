@@ -3,8 +3,8 @@
 "title": "Samouczki dotyczące znaków wodnych i adnotacji w dokumencie dla GroupDocs.Viewer Java"
 "url": "/pl/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Samouczki dotyczące znaków wodnych i adnotacji w dokumencie dla GroupDocs.Viewer Java
 
 Opanuj techniki adnotacji i znakowania wodnego dokumentów dzięki naszym samouczkom GroupDocs.Viewer Java. Te przewodniki krok po kroku pokazują, jak dodawać znaki wodne tekstowe i graficzne, wdrażać adnotacje, kontrolować pozycjonowanie i przezroczystość znaku wodnego oraz renderować dokumenty z osadzonymi adnotacjami. Każdy samouczek zawiera praktyczne przykłady kodu Java do dodawania wizualnych metadanych i oznaczeń ochronnych do dokumentów, zwiększając możliwości śledzenia dokumentów i brandingu.

@@ -8,10 +8,8 @@ keywords:
 - Render CAD Layers in Java
 - GroupDocs.Viewer for Java
 - CAD Layer Rendering
-
+type: docs
 ---
-
-
 # Render Specific CAD Layers in Java Using GroupDocs.Viewer
 ## Introduction
 Struggling with rendering specific layers from a CAD drawing? Whether you're an engineer, architect, or developer dealing with complex designs, managing and visualizing specific CAD layers can be challenging. This guide demonstrates how to render particular layers efficiently using the powerful GroupDocs.Viewer for Java.

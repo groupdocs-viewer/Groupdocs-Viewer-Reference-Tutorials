@@ -5,8 +5,8 @@
 "title": "Rendering con testo sovrapposto per la visualizzazione"
 "url": "/it/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # Rendering con testo sovrapposto per la visualizzazione
 
 ## Introduzione

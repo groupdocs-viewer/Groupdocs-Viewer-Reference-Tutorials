@@ -5,8 +5,8 @@
 "title": "Povolte ukládání do mezipaměti pro rychlejší zpracování dokumentů"
 "url": "/cs/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Povolte ukládání do mezipaměti pro rychlejší zpracování dokumentů
 
 ## Zavedení

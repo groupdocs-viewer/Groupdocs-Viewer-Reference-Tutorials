@@ -4,8 +4,8 @@
 "title": "HTTP URL을 사용하여 GroupDocs.Viewer Java 라이선스를 설정하는 방법&#58; 완전한 가이드"
 "url": "/ko/java/getting-started/groupdocs-viewer-java-license-http-url/"
 "weight": 1
+type: docs
 ---
-
 # HTTP URL을 사용하여 GroupDocs.Viewer Java 라이선스를 설정하는 방법
 
 오늘날처럼 빠르게 변화하는 디지털 환경에서 문서 관리 도구의 적절한 라이선스 설정은 원활한 운영에 필수적입니다. 이 종합 가이드에서는 HTTP URL을 사용하여 Java에서 GroupDocs.Viewer 라이선스를 설정하는 방법을 보여줍니다. 로컬 다운로드 없이도 워크플로우를 간소화할 수 있습니다. 이 프로세스를 숙달하면 애플리케이션 규정 준수와 효율성이 모두 향상됩니다.

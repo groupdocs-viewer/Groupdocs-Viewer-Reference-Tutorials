@@ -4,8 +4,8 @@
 "title": "Hiển thị tài liệu Apple Numbers trong Java bằng GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/file-formats-support/render-numbers-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Cách hiển thị tài liệu Apple Numbers bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

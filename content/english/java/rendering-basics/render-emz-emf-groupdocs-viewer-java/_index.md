@@ -8,10 +8,8 @@ keywords:
 - render EMZ files with GroupDocs.Viewer for Java
 - convert EMF to HTML using GroupDocs
 - GroupDocs Viewer Java setup
-
+type: docs
 ---
-
-
 # Comprehensive Guide: Rendering EMZ/EMF Files with GroupDocs.Viewer for Java
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - SVGZ rendering in .NET
 - GroupDocs.Viewer for .NET
 - render SVGZ to HTML/JPG/PNG/PDF
-
+type: docs
 ---
-
-
 # Mastering SVGZ Rendering in .NET with GroupDocs.Viewer: A Complete Guide for Developers
 
 ## Introduction

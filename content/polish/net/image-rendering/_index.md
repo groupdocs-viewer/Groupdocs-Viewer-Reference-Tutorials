@@ -5,8 +5,8 @@
 "title": "Renderowanie obrazu"
 "url": "/pl/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Renderowanie obrazu
 
 

@@ -4,8 +4,8 @@
 "title": "Konvertieren Sie DOCX mit externen Ressourcen in HTML mithilfe von GroupDocs.Viewer für Java"
 "url": "/de/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Konvertieren Sie DOCX mit externen Ressourcen in HTML mithilfe von GroupDocs.Viewer für Java
 
 ## Einführung

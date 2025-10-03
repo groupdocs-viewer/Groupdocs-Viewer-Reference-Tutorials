@@ -5,8 +5,8 @@
 "title": "कक्षों में टेक्स्ट ओवरफ़्लो समायोजित करें"
 "url": "/hi/net/spreadsheet-rendering-options/adjust-text-overflow-cells/"
 "weight": 10
+type: docs
 ---
-
 # कक्षों में टेक्स्ट ओवरफ़्लो समायोजित करें
 
 ## परिचय

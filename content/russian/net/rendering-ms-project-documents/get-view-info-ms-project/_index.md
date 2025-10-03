@@ -5,8 +5,8 @@
 "title": "Получить информацию о просмотре документов Microsoft Project"
 "url": "/ru/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Получить информацию о просмотре документов Microsoft Project
 
 ## Введение

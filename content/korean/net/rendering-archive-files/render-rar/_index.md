@@ -5,8 +5,8 @@
 "title": "RAR 아카이브 렌더링"
 "url": "/ko/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # RAR 아카이브 렌더링
 
 ## 소개

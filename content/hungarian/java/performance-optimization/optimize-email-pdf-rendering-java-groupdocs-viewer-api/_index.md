@@ -4,8 +4,8 @@
 "title": "E-mailből PDF-be konvertálás optimalizálása Java nyelven a GroupDocs.Viewer API használatával a jobb teljesítmény érdekében"
 "url": "/hu/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # E-mailből PDF-be konvertálás optimalizálása Java nyelven a GroupDocs.Viewer API segítségével
 
 ## Bevezetés

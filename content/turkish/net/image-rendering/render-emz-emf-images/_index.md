@@ -5,8 +5,8 @@
 "title": "EMZ ve EMF Görüntülerini Oluşturun"
 "url": "/tr/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # EMZ ve EMF Görüntülerini Oluşturun
 
 ## giriiş

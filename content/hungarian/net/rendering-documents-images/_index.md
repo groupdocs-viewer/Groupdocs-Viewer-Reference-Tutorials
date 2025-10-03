@@ -5,8 +5,8 @@
 "title": "Dokumentumok képpé renderelése"
 "url": "/hu/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Dokumentumok képpé renderelése
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "วิธีปิดใช้งานการเลือกข้อความใน PDF โดยใช้ GroupDocs.Viewer Java&#58; คู่มือฉบับสมบูรณ์"
 "url": "/th/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการใช้ตัวเลือก Disable Text Selection ใน PDF Rendering โดยใช้ GroupDocs.Viewer ใน Java
 ## การแนะนำ
 คุณต้องการวิธีที่ปลอดภัยในการแสดง PDF บนเว็บโดยไม่อนุญาตให้เลือกข้อความหรือไม่ คู่มือฉบับสมบูรณ์นี้สาธิตวิธีปิดใช้งานการเลือกข้อความโดยใช้ไลบรารี GroupDocs.Viewer สำหรับ Java การแปลงข้อความเป็นรูปภาพทำให้เนื้อหาของคุณปลอดภัยและไม่สามารถแก้ไขได้เมื่อแสดงออนไลน์

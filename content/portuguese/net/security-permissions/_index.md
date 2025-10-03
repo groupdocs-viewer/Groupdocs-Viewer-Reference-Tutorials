@@ -3,8 +3,8 @@
 "title": "Tutoriais de segurança de documentos e controle de acesso para GroupDocs.Viewer .NET"
 "url": "/pt/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Tutoriais de segurança de documentos e controle de acesso para GroupDocs.Viewer .NET
 
 Aprenda a proteger a visualização de documentos com nossos tutoriais abrangentes de segurança do GroupDocs.Viewer para desenvolvedores .NET. Estes guias detalhados demonstram como implementar proteção por senha, gerenciar permissões de documentos, manipular arquivos criptografados e controlar o acesso a documentos confidenciais programaticamente. Cada tutorial fornece exemplos práticos de código .NET para cenários comuns de segurança, ajudando você a criar aplicativos que mantêm a confidencialidade e a integridade dos documentos, ao mesmo tempo em que oferecem recursos de visualização controlada.

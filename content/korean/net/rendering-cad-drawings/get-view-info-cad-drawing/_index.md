@@ -5,8 +5,8 @@
 "title": "CAD 도면에 대한 보기 정보 가져오기"
 "url": "/ko/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # CAD 도면에 대한 보기 정보 가져오기
 
 ## 소개

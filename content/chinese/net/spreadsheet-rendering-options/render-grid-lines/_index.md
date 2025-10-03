@@ -5,8 +5,8 @@
 "title": "渲染网格线"
 "url": "/zh/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # 渲染网格线
 
 ## 介绍

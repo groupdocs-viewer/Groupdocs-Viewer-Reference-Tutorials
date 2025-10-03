@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ MS प्रोजेक्ट फ़ाइलों को कुशलतापूर्वक प्रस्तुत करें"
 "url": "/hi/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer का उपयोग करके नोट्स के साथ MS प्रोजेक्ट फ़ाइलों को कुशलतापूर्वक प्रस्तुत करें
 
 ## परिचय

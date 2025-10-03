@@ -3,8 +3,8 @@
 "title": "Dokumentumbiztonsági és hozzáférés-vezérlési oktatóanyagok a GroupDocs.Viewer .NET-hez"
 "url": "/hu/net/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # Dokumentumbiztonsági és hozzáférés-vezérlési oktatóanyagok a GroupDocs.Viewer .NET-hez
 
 Tanulja meg a dokumentumok biztonságos megtekintését átfogó GroupDocs.Viewer biztonsági oktatóanyagaink segítségével .NET fejlesztőknek. Ezek a részletes útmutatók bemutatják, hogyan valósíthat meg jelszóvédelmet, kezelheti a dokumentumengedélyeket, kezelheti a titkosított fájlokat és szabályozhatja a bizalmas dokumentumokhoz való hozzáférést programozottan. Minden oktatóanyag működő .NET kódpéldákat tartalmaz a gyakori biztonsági forgatókönyvekhez, segítve olyan alkalmazások létrehozásában, amelyek megőrzik a dokumentumok titkosságát és integritását, miközben szabályozott megtekintési lehetőségeket biztosítanak.

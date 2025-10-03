@@ -4,8 +4,8 @@
 "title": "كيفية عرض التغييرات المتعقبة في مستندات Word باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
 "url": "/ar/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # عرض التغييرات المتعقبة في مستندات Word باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

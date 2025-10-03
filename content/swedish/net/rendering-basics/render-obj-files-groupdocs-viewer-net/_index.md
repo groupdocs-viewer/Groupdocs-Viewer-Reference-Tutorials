@@ -4,8 +4,8 @@
 "title": "Rendera OBJ-filer med GroupDocs.Viewer .NET &#58; En omfattande guide för HTML-, JPG-, PNG- och PDF-konvertering"
 "url": "/sv/net/rendering-basics/render-obj-files-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendera OBJ-filer med GroupDocs.Viewer .NET
 
 ## Introduktion till renderingsgrunderna

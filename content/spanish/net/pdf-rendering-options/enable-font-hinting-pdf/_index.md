@@ -5,8 +5,8 @@
 "title": "Habilitar sugerencias de fuentes en PDF"
 "url": "/es/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Habilitar sugerencias de fuentes en PDF
 
 ## Introducción

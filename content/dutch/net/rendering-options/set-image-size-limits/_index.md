@@ -5,8 +5,8 @@
 "title": "Stel limieten voor de afbeeldingsgrootte in"
 "url": "/nl/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Stel limieten voor de afbeeldingsgrootte in
 
 ## Invoering

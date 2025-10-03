@@ -4,8 +4,8 @@
 "title": "Renderowanie dokumentów jako obrazów z warstwą tekstową w Javie przy użyciu GroupDocs.Viewer"
 "url": "/pl/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie dokumentów jako obrazów z warstwą tekstową w Javie przy użyciu GroupDocs.Viewer
 ## Samouczek zaawansowanego renderowania
 **Aktualny adres URL SEO**: /renderuj-dokumenty-do-obrazów-z-warstwą-tekstową-java

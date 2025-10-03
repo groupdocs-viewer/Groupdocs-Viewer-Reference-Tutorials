@@ -5,8 +5,8 @@
 "title": "Hủy kết xuất bằng mã thông báo hủy"
 "url": "/vi/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Hủy kết xuất bằng mã thông báo hủy
 
 ## Giới thiệu

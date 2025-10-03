@@ -4,8 +4,8 @@
 "title": "Cách tải và hiển thị tài liệu dưới dạng HTML bằng GroupDocs.Viewer cho Java"
 "url": "/vi/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Cách tải và hiển thị tài liệu dưới dạng HTML bằng GroupDocs.Viewer cho Java
 
 ## Giới thiệu

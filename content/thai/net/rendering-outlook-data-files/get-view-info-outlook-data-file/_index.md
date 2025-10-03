@@ -5,8 +5,8 @@
 "title": "รับข้อมูลมุมมองสำหรับไฟล์ข้อมูล Outlook (PST, OST)"
 "url": "/th/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # รับข้อมูลมุมมองสำหรับไฟล์ข้อมูล Outlook (PST, OST)
 
 ## การแนะนำ

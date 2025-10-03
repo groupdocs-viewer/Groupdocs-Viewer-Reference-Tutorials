@@ -4,8 +4,8 @@
 "title": "عرض بيانات Outlook المفلترة باستخدام GroupDocs.Viewer لـ .NET - دليل شامل"
 "url": "/ar/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # عرض بيانات Outlook المفلترة باستخدام GroupDocs.Viewer لـ .NET: دليل شامل
 ## مقدمة
 هل تواجه صعوبة في عرض ملفات بيانات Outlook (.ost) بكفاءة مع تطبيق فلاتر محددة، مثل محتوى الرسالة والمُرسِل؟ يحتاج العديد من المطورين إلى حل مُبسّط لعرض رسائل Outlook بمعايير دقيقة. في هذا الدليل الشامل، سنستكشف كيفية تحقيق عرض مُفلتر لبيانات Outlook باستخدام GroupDocs.Viewer لـ .NET، وهي مكتبة فعّالة تُبسّط معالجة المستندات.

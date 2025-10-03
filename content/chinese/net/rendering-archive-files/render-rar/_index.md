@@ -5,8 +5,8 @@
 "title": "渲染 RAR 档案"
 "url": "/zh/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # 渲染 RAR 档案
 
 ## 介绍

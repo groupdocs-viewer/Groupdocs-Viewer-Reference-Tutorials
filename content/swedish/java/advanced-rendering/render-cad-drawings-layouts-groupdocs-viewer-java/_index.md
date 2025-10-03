@@ -4,8 +4,8 @@
 "title": "Rendera alla CAD-layouter effektivt med GroupDocs.Viewer för Java"
 "url": "/sv/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendera alla CAD-layouter effektivt med GroupDocs.Viewer för Java
 
 ## Introduktion

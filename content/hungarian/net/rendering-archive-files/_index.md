@@ -5,8 +5,8 @@
 "title": "Archívumfájlok renderelése"
 "url": "/hu/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Archívumfájlok renderelése
 
 ## Bevezetés

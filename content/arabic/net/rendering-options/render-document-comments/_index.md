@@ -5,8 +5,8 @@
 "title": "عرض المستند مع التعليقات"
 "url": "/ar/net/rendering-options/render-document-comments/"
 "weight": 13
+type: docs
 ---
-
 # عرض المستند مع التعليقات
 
 ## مقدمة

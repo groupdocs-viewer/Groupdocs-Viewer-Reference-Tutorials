@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์ภาพวาด CAD เฉพาะใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์ภาพวาด CAD เฉพาะใน Java โดยใช้ GroupDocs.Viewer
 
 ## การแนะนำ

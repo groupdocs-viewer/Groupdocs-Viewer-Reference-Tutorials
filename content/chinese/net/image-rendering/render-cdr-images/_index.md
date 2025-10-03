@@ -5,8 +5,8 @@
 "title": "渲染 CDR 图像"
 "url": "/zh/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # 渲染 CDR 图像
 
 ## 介绍

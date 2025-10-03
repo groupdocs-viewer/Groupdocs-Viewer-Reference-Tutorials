@@ -5,8 +5,8 @@
 "title": "Ladda lösenordsskyddade dokument"
 "url": "/sv/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # Ladda lösenordsskyddade dokument
 
 ## Introduktion

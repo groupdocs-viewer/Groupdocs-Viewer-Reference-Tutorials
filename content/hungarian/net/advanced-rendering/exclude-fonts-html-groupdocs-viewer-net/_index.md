@@ -4,8 +4,8 @@
 "title": "Hogyan zárhatunk ki bizonyos betűtípusokat a HTML-kimenetből a GroupDocs.Viewer for .NET használatával?"
 "url": "/hu/net/advanced-rendering/exclude-fonts-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Betűtípusok kizárása a HTML-kimenetből a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

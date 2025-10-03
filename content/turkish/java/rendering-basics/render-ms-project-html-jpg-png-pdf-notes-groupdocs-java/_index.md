@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer Kullanarak MS Project Dosyalarını Notlarla HTML, JPG, PNG ve PDF Olarak Nasıl Oluşturursunuz"
 "url": "/tr/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanarak MS Project Dosyalarını Notlarla HTML, JPG, PNG ve PDF Olarak Nasıl Oluşturursunuz
 
 ## giriiş

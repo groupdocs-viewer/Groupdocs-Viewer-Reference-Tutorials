@@ -5,8 +5,8 @@
 "title": "Verificatie van lettertypelicenties in PDF uitschakelen"
 "url": "/nl/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Verificatie van lettertypelicenties in PDF uitschakelen
 
 ## Invoering

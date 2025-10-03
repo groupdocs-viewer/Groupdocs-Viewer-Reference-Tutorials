@@ -4,8 +4,8 @@
 "title": "كيفية عرض المستندات مع التعليقات في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض المستندات مع التعليقات في Java باستخدام GroupDocs.Viewer
 ## مقدمة
 هل تواجه صعوبة في تحويل المستندات إلى HTML مع الحفاظ على التعليقات؟ يرشدك هذا الدليل إلى كيفية عرض مستند مع تعليقاته باستخدام مكتبة GroupDocs.Viewer القوية في جافا. سواء كنت تدير مستنداتك بسلاسة أو تُحسّن مهاراتك في جافا، فهذا الدليل مُناسب لك.

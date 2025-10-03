@@ -4,8 +4,8 @@
 "title": "تخصيص صور CAD باستخدام GroupDocs.Viewer .NET وتقنيات العرض المتقدمة"
 "url": "/ar/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض صور CAD وتخصيصها باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

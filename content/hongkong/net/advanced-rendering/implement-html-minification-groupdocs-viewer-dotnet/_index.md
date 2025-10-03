@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 實作 HTML 壓縮以實現更快的網頁速度"
 "url": "/zh-hant/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 實作 HTML 壓縮以實現更快的網頁速度
 
 ## 介紹

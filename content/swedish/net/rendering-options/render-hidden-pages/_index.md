@@ -5,8 +5,8 @@
 "title": "Rendera dolda sidor"
 "url": "/sv/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Rendera dolda sidor
 
 ## Introduktion

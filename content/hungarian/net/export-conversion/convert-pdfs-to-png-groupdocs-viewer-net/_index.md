@@ -4,8 +4,8 @@
 "title": "PDF fájlok konvertálása PNG formátumba eredeti méretben a GroupDocs.Viewer for .NET használatával"
 "url": "/hu/net/export-conversion/convert-pdfs-to-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # PDF fájlok konvertálása PNG formátumba eredeti méretben a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

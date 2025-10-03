@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/ru/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # Обработка вложений документов
 
 ## Введение

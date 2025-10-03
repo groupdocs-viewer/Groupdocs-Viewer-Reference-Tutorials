@@ -4,8 +4,8 @@
 "title": "HTML आउटपुट के लिए GroupDocs.Viewer .NET का उपयोग करके Excel स्प्रेडशीट में ग्रिड लाइनें कैसे प्रस्तुत करें"
 "url": "/hi/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # HTML आउटपुट के लिए GroupDocs.Viewer .NET का उपयोग करके Excel स्प्रेडशीट में ग्रिड लाइनें कैसे प्रस्तुत करें
 
 ## परिचय

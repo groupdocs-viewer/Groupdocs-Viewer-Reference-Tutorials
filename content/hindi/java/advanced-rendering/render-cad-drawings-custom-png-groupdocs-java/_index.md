@@ -4,8 +4,8 @@
 "title": "Java के लिए GroupDocs.Viewer का उपयोग करके CAD ड्रॉइंग को कस्टम आकार और पृष्ठभूमि रंग के साथ PNG के रूप में कैसे प्रस्तुत करें"
 "url": "/hi/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Java के लिए GroupDocs.Viewer का उपयोग करके CAD ड्रॉइंग को कस्टम आकार और पृष्ठभूमि रंग के साथ PNG के रूप में कैसे प्रस्तुत करें
 
 ## परिचय

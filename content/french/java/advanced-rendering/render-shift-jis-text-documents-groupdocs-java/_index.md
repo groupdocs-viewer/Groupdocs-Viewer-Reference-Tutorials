@@ -4,8 +4,8 @@
 "title": "Afficher des documents texte dans Shift_JIS à l'aide de GroupDocs.Viewer pour Java"
 "url": "/fr/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Afficher des documents texte dans Shift_JIS à l'aide de GroupDocs.Viewer pour Java
 
 ## Introduction

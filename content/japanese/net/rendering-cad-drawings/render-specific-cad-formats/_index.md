@@ -5,8 +5,8 @@
 "title": "特定のCAD形式（CF2）のレンダリング"
 "url": "/ja/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # 特定のCAD形式（CF2）のレンダリング
 
 ## 導入

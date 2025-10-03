@@ -5,8 +5,8 @@
 "title": "Especificar el nombre del archivo al renderizar archivos comprimidos"
 "url": "/es/net/rendering-archive-files/specify-filename-render-archive/"
 "weight": 14
+type: docs
 ---
-
 # Especificar el nombre del archivo al renderizar archivos comprimidos
 
 ## Introducción

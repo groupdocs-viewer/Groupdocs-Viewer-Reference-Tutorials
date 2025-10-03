@@ -5,8 +5,8 @@
 "title": "E-posta Mesajlarını İşlerken Sayfa Boyutunu Ayarla"
 "url": "/tr/net/rendering-email-messages/adjust-page-size-email/"
 "weight": 10
+type: docs
 ---
-
 # E-posta Mesajlarını İşlerken Sayfa Boyutunu Ayarla
 
 ## giriiş

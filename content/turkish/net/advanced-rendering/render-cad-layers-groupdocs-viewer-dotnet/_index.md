@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanılarak Belirli CAD Katmanlarının Nasıl Oluşturulacağı Kapsamlı Bir Kılavuz"
 "url": "/tr/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET Kullanılarak Belirli CAD Çizim Katmanlarının Nasıl Oluşturulacağı
 
 ## giriiş

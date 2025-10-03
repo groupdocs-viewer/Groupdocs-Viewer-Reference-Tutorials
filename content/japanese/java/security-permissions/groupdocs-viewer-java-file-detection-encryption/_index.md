@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java でファイル検出と暗号化チェックを実装する"
 "url": "/ja/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for Java を使用したファイル検出と暗号化チェックの実装
 
 ## 導入

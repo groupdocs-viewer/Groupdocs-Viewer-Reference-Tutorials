@@ -4,8 +4,8 @@
 "title": "Hatékony PDF réteges renderelés Java nyelven a GroupDocs.Viewer használatával"
 "url": "/hu/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Hatékony PDF réteges renderelés Java nyelven a GroupDocs.Viewer használatával
 
 ## Bevezetés

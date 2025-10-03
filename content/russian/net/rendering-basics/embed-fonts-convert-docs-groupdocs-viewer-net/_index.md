@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Эффективное встраивание шрифтов и конвертация документов в HTML"
 "url": "/ru/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Мастерство рендеринга документов с помощью GroupDocs.Viewer .NET: внедрение шрифтов и преобразование в HTML
 
 ## Введение

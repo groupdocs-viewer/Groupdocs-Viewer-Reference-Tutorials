@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET' Αποδίδει συγκεκριμένους φακέλους από αρχεία ZIP σε HTML"
 "url": "/el/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Εκμάθηση: Υλοποίηση του GroupDocs.Viewer .NET για την απόδοση συγκεκριμένων φακέλων από αρχεία ZIP σε HTML
 
 ## Εισαγωγή

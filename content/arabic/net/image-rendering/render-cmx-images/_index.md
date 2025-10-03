@@ -5,8 +5,8 @@
 "title": "تقديم صور CMX"
 "url": "/ar/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # تقديم صور CMX
 
 ## مقدمة

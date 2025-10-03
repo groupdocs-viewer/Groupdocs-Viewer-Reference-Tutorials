@@ -4,8 +4,8 @@
 "title": "Renderuj rysunki CAD jako pliki JPG za pomocą GroupDocs.Viewer Java&#58; Kompleksowy przewodnik"
 "url": "/pl/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować rysunki CAD jako pliki JPG za pomocą GroupDocs.Viewer Java: samouczek krok po kroku
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Efektivní stahování a vykreslování dokumentů z FTP pomocí GroupDocs.Viewer .NET"
 "url": "/cs/net/cloud-remote-document-rendering/download-render-ftp-documents-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak efektivně stahovat a vykreslovat dokumenty z FTP pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

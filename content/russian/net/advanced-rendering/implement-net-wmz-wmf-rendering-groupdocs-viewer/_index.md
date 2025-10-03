@@ -4,8 +4,8 @@
 "title": "Реализуйте рендеринг .NET WMZ/WMF с помощью GroupDocs.Viewer для веб-совместимости и кроссплатформенной совместимости"
 "url": "/ru/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Реализуйте рендеринг .NET WMZ/WMF с помощью GroupDocs.Viewer для веб-совместимости и кроссплатформенной совместимости
 
 ## Введение

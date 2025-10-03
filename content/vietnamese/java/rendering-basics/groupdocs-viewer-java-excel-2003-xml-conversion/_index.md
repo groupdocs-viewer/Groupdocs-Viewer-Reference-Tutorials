@@ -4,8 +4,8 @@
 "title": "Hướng dẫn toàn diện&#58; Chuyển đổi Excel 2003 XML sang HTML/JPG/PNG/PDF bằng GroupDocs.Viewer Java"
 "url": "/vi/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Hướng dẫn toàn diện: Chuyển đổi Excel 2003 XML sang HTML/JPG/PNG/PDF bằng GroupDocs.Viewer Java
 
 ## Giới thiệu

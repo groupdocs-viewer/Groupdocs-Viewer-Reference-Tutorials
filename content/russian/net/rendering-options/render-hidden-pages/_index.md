@@ -5,8 +5,8 @@
 "title": "Отображать скрытые страницы"
 "url": "/ru/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Отображать скрытые страницы
 
 ## Введение

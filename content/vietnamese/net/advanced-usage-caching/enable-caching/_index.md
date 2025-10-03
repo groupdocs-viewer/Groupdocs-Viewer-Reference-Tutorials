@@ -5,8 +5,8 @@
 "title": "Bật bộ nhớ đệm để xử lý tài liệu nhanh hơn"
 "url": "/vi/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Bật bộ nhớ đệm để xử lý tài liệu nhanh hơn
 
 ## Giới thiệu

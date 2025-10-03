@@ -5,8 +5,8 @@
 "title": "Προσθήκη υδατογραφήματος σε έγγραφο"
 "url": "/el/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Προσθήκη υδατογραφήματος σε έγγραφο
 
 ## Εισαγωγή

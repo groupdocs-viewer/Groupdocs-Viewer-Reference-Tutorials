@@ -4,8 +4,8 @@
 "title": "PDF/OXPS renderen met lettertypebeperkingen met behulp van GroupDocs.Viewer .NET&#58; een uitgebreide handleiding"
 "url": "/nl/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # PDF/OXPS renderen met lettertypebeperkingen met GroupDocs.Viewer .NET: een uitgebreide handleiding
 
 ## Invoering

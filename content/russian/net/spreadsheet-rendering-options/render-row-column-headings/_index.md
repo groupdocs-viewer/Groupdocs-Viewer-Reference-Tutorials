@@ -5,8 +5,8 @@
 "title": "Отображать заголовки строк и столбцов"
 "url": "/ru/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Отображать заголовки строк и столбцов
 
 ## Введение

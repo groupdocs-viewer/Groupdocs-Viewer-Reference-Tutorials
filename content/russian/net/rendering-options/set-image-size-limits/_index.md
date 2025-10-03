@@ -5,8 +5,8 @@
 "title": "Установить ограничения размера изображения"
 "url": "/ru/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Установить ограничения размера изображения
 
 ## Введение

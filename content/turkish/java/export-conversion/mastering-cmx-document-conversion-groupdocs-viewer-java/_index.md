@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer Kullanarak Verimli CMX Belge Dönüştürme&#58; Kapsamlı Bir Kılavuz"
 "url": "/tr/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanarak Verimli CMX Belge Dönüştürme: Kapsamlı Bir Kılavuz
 
 ## giriiş

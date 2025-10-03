@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer के साथ .NET रिस्पॉन्सिव HTML रेंडरिंग को लागू करें' डेवलपर्स के लिए एक व्यापक गाइड"
 "url": "/hi/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer के साथ .NET रिस्पॉन्सिव HTML रेंडरिंग लागू करें: एक डेवलपर गाइड
 
 ## परिचय

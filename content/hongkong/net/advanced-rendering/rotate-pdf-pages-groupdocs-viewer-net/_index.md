@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer for .NET 旋轉 PDF 頁面－開發人員指南"
 "url": "/zh-hant/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer for .NET 旋轉 PDF 頁面：開發人員指南
 
 ## 介紹

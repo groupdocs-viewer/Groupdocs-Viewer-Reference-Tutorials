@@ -4,8 +4,8 @@
 "title": "كيفية ضبط وحدات الوقت في MS Project باستخدام GroupDocs.Viewer Java - دليل خطوة بخطوة"
 "url": "/ar/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية ضبط وحدات الوقت في MS Project باستخدام GroupDocs.Viewer Java: دليل خطوة بخطوة
 ## مقدمة
 هل سئمت من تعديل وحدات الوقت يدويًا في مستندات MS Project قبل تحويلها إلى تنسيق HTML؟ قد تكون هذه العملية مُرهقة وعرضة للأخطاء، خاصةً عند التعامل مع المشاريع الكبيرة. **GroupDocs.Viewer لـ Java**يمكنك بسهولة ضبط إعدادات وحدة الوقت برمجيًا، مما يضمن الدقة والكفاءة.

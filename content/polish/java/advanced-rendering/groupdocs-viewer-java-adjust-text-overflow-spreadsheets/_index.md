@@ -4,8 +4,8 @@
 "title": "Jak dostosować przepełnienie tekstu w arkuszach kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer dla języka Java"
 "url": "/pl/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
 "weight": 1
+type: docs
 ---
-
 # Jak dostosować przepełnienie tekstu w arkuszach kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer dla języka Java
 ## Wstęp
 Radzenie sobie z nadmiarem tekstu w komórkach arkusza kalkulacyjnego podczas konwersji dokumentów do formatu HTML to powszechny problem, zwłaszcza w przypadku obszernych plików programu Excel. **GroupDocs.Viewer dla Java** upraszcza ten proces, umożliwiając skuteczne zarządzanie przepełnionym tekstem i jego ukrywanie.

@@ -4,8 +4,8 @@
 "title": "Lọc dữ liệu Outlook với GroupDocs.Viewer cho .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Lọc dữ liệu Outlook với GroupDocs.Viewer cho .NET: Hướng dẫn toàn diện
 ## Giới thiệu
 Bạn có đang gặp khó khăn trong việc hiển thị hiệu quả các tệp dữ liệu Outlook (.ost) trong khi áp dụng các bộ lọc cụ thể như nội dung tin nhắn và người gửi không? Nhiều nhà phát triển cần một giải pháp hợp lý để xem tin nhắn Outlook với các tiêu chí chính xác. Trong hướng dẫn toàn diện này, chúng tôi sẽ khám phá cách đạt được kết xuất được lọc của dữ liệu Outlook bằng GroupDocs.Viewer cho .NET—một thư viện mạnh mẽ giúp đơn giản hóa quá trình xử lý tài liệu.

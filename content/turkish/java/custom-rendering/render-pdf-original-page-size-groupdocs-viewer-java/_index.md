@@ -4,8 +4,8 @@
 "title": "Java için GroupDocs.Viewer'ı Kullanarak PDF'leri Orijinal Boyutta Oluşturun - Kapsamlı Bir Kılavuz"
 "url": "/tr/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanılarak PDF'ler Orijinal Sayfa Boyutlarıyla Nasıl Oluşturulur
 
 Orijinal sayfa boyutunu koruyarak bir PDF'yi işlemek, çeşitli platformlar ve aygıtlar arasında doğru görüntüleme için önemlidir. Bu kapsamlı kılavuz, bu özelliği GroupDocs.Viewer for Java API'sini kullanarak uygulama konusunda size yol gösterecektir. Bu adımları izleyerek, PDF'lerinizin işleme sırasında sadakatini koruduğundan emin olacaksınız.

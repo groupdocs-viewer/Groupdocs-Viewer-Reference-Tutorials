@@ -3,8 +3,8 @@
 "title": "Hướng dẫn kết xuất tài liệu đa định dạng cho GroupDocs.Viewer Java"
 "url": "/vi/java/file-formats-support/"
 "weight": 8
+type: docs
 ---
-
 # Hướng dẫn kết xuất tài liệu đa định dạng cho GroupDocs.Viewer Java
 
 Khám phá hỗ trợ định dạng tài liệu toàn diện với hướng dẫn GroupDocs.Viewer của chúng tôi dành cho Java. Những hướng dẫn chi tiết này trình bày cách kết xuất và xử lý nhiều định dạng tệp khác nhau bao gồm PDF, tài liệu Microsoft Office, hình ảnh, tệp CAD và các định dạng chuyên biệt. Mỗi hướng dẫn cung cấp các ví dụ mã Java đang hoạt động cho thấy cách triển khai các giải pháp xem tài liệu linh hoạt, đa định dạng có thể xử lý nhiều loại tài liệu khác nhau với chất lượng kết xuất nhất quán.

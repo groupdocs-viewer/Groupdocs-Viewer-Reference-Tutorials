@@ -5,8 +5,8 @@
 "title": "PDF'de Yazı Tipi İpucunu Etkinleştir"
 "url": "/tr/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # PDF'de Yazı Tipi İpucunu Etkinleştir
 
 ## giriiş

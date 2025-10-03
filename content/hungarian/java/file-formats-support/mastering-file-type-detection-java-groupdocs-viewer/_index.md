@@ -4,8 +4,8 @@
 "title": "Fájltípus-érzékelés elsajátítása Java nyelven GroupDocs.Viewer használatával"
 "url": "/hu/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Fájltípus-érzékelés elsajátítása Java nyelven GroupDocs.Viewer használatával
 
 Fedezze fel az erejét **GroupDocs.Viewer** a fájltípusok zökkenőmentes azonosítására kiterjesztésekből, médiatípusokból és adatfolyamokból. Ez a robusztus könyvtár leegyszerűsíti a fejlesztési folyamatokat és bővíti az alkalmazások képességeit.

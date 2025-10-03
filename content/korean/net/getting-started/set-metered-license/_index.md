@@ -5,8 +5,8 @@
 "title": "미터링 라이센스 설정"
 "url": "/ko/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # 미터링 라이센스 설정
 
 ## 소개

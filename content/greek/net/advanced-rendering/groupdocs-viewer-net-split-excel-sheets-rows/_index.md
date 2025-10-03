@@ -4,8 +4,8 @@
 "title": "Διαχωρίστε τα φύλλα Excel σε σελίδες ανά γραμμές χρησιμοποιώντας το GroupDocs.Viewer .NET για αποτελεσματική διαχείριση δεδομένων"
 "url": "/el/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Διαχωρισμός φύλλων Excel σε σελίδες ανά γραμμές με το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

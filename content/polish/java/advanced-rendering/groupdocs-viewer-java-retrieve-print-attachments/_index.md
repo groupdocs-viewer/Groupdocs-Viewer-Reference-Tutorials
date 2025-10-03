@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer dla Java – pobieranie i drukowanie załączników do dokumentów"
 "url": "/pl/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer dla Java: pobieranie i drukowanie załączników dokumentów
 
 ## Wstęp

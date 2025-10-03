@@ -5,8 +5,8 @@
 "title": "العرض باستخدام الموارد المضمنة أو الخارجية"
 "url": "/ar/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # العرض باستخدام الموارد المضمنة أو الخارجية
 
 ## مقدمة

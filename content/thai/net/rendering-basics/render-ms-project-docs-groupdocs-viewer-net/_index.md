@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เอกสาร MS Project โดยใช้ GroupDocs.Viewer .NET เพื่อการจัดการโครงการที่ได้รับการปรับปรุง"
 "url": "/th/net/rendering-basics/render-ms-project-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์เอกสาร MS Project โดยใช้ GroupDocs.Viewer .NET
 
 ## การแนะนำ

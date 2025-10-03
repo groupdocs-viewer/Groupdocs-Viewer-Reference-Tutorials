@@ -4,8 +4,8 @@
 "title": "Εξαγωγή πληροφοριών εγγράφου και προσαρμογή εξόδου με το GroupDocs.Viewer .NET™ Ένας ολοκληρωμένος οδηγός"
 "url": "/el/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # Εξαγωγή πληροφοριών εγγράφου και προσαρμογή εξόδου με το GroupDocs.Viewer .NET
 ## Εκμάθηση προσαρμοσμένης απόδοσης
 ### Τι θα μάθετε:

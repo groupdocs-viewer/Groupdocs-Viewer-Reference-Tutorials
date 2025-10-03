@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์ PNG แบบเคลื่อนไหวใน Java โดยใช้ GroupDocs.Viewer"
 "url": "/th/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์ PNG แบบเคลื่อนไหวด้วย GroupDocs.Viewer ใน Java
 
 ค้นพบกระบวนการแปลงไฟล์ Animated PNG (APNG) เป็นรูปแบบต่างๆ เช่น HTML, JPG, PNG และ PDF โดยใช้ไลบรารี GroupDocs.Viewer สำหรับ Java อันทรงพลัง

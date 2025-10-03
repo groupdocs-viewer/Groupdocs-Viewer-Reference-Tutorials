@@ -5,8 +5,8 @@
 "title": "Aan de slag"
 "url": "/nl/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # Aan de slag
 
 

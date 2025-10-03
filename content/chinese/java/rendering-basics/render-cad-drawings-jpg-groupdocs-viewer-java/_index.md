@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 将 CAD 图纸渲染为 JPG 格式——综合指南"
 "url": "/zh/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer Java 将 CAD 图纸渲染为 JPG：分步教程
 
 ## 介绍

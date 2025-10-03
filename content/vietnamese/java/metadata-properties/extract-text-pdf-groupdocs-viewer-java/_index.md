@@ -4,8 +4,8 @@
 "title": "Trích xuất văn bản từ PDF bằng GroupDocs.Viewer Java&#58; Hướng dẫn toàn diện cho nhà phát triển"
 "url": "/vi/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Trích xuất văn bản từ PDF bằng GroupDocs.Viewer Java
 
 ## Giới thiệu

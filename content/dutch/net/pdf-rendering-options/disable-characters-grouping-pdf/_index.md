@@ -5,8 +5,8 @@
 "title": "Tekengroepering in PDF uitschakelen"
 "url": "/nl/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # Tekengroepering in PDF uitschakelen
 
 ## Invoering

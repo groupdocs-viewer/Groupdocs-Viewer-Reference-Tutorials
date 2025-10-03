@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 將文件附件渲染為 HTML 格式－逐步指南"
 "url": "/zh-hant/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer Java 將文件附件渲染為 HTML
 
 ## 介紹

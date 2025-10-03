@@ -5,8 +5,8 @@
 "title": "GroupDocs.Viewer for Java 的綜合教學與範例"
 "url": "/zh-hant/java/"
 "weight": 10
+type: docs
 ---
-
 # GroupDocs.Viewer for Java 的綜合教學與範例
 
 ## 介紹

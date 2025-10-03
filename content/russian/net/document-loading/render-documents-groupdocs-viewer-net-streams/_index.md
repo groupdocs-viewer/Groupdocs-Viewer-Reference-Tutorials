@@ -4,8 +4,8 @@
 "title": "Визуализация документов с помощью GroupDocs.Viewer .NET из Streams&#58; Полное руководство для разработчиков"
 "url": "/ru/net/document-loading/render-documents-groupdocs-viewer-net-streams/"
 "weight": 1
+type: docs
 ---
-
 # Визуализация документов с помощью GroupDocs.Viewer .NET из потоков: подробное руководство для разработчиков
 
 ## Введение

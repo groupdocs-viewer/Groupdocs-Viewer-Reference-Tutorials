@@ -8,10 +8,8 @@ keywords:
 - Render DOCX to PNG
 - GroupDocs.Viewer .NET
 - Document Conversion
-
+type: docs
 ---
-
-
 # How to Render DOCX to PNG Using GroupDocs.Viewer .NET: A Step-by-Step Guide
 ## Rendering Basics
 ### Introduction

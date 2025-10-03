@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer API 在 Java 中提取并显示工作表名称"
 "url": "/zh/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer API 在 Java 中提取并显示工作表名称
 
 ## 介绍

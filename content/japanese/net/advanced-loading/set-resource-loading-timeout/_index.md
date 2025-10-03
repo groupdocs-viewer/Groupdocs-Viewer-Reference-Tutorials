@@ -5,8 +5,8 @@
 "title": "リソース読み込みタイムアウトの設定（詳細）"
 "url": "/ja/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # リソース読み込みタイムアウトの設定（詳細）
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "Archív információk lekérése a GroupDocs.Viewer for .NET használatával – Átfogó útmutató"
 "url": "/hu/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Archív információk lekérése a GroupDocs.Viewer for .NET használatával: Átfogó útmutató
 
 ## Bevezetés

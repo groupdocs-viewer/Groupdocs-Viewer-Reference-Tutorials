@@ -5,8 +5,8 @@
 "title": "Pembuatan Gambar"
 "url": "/id/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Pembuatan Gambar
 
 

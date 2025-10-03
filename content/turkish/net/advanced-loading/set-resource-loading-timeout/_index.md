@@ -5,8 +5,8 @@
 "title": "Kaynak Yükleme Zaman Aşımını Ayarla (Gelişmiş)"
 "url": "/tr/net/advanced-loading/set-resource-loading-timeout/"
 "weight": 13
+type: docs
 ---
-
 # Kaynak Yükleme Zaman Aşımını Ayarla (Gelişmiş)
 
 ## giriiş

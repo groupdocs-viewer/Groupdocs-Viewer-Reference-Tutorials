@@ -4,8 +4,8 @@
 "title": "Jak zabezpečit soubory DOCX jako PDF pomocí GroupDocs.Viewer .NET – Podrobný návod"
 "url": "/cs/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak zabezpečit soubory DOCX jako PDF pomocí GroupDocs.Viewer .NET: Podrobný návod
 
 dnešní digitální době je ochrana citlivých dokumentů klíčová. Ať už jste firma chránící duševní vlastnictví, nebo jednotlivec zabezpečující osobní údaje, převod souborů Word do PDF chráněných heslem může být zásadní. Tento tutoriál vás provede používáním GroupDocs.Viewer pro .NET k vykreslení dokumentů DOCX do chráněných PDF se specifickými omezeními, jako je například odmítnutí tisku.

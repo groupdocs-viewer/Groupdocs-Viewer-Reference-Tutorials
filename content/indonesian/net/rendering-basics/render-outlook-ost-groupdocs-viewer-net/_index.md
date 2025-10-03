@@ -4,8 +4,8 @@
 "title": "Cara Merender File OST Outlook Menggunakan GroupDocs.Viewer untuk .NET | Panduan Langkah demi Langkah"
 "url": "/id/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Merender File OST Outlook Menggunakan GroupDocs.Viewer untuk .NET: Panduan Langkah demi Langkah yang Komprehensif
 
 ## Perkenalan

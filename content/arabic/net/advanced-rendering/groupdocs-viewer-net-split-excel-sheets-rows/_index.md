@@ -4,8 +4,8 @@
 "title": "تقسيم جداول بيانات Excel إلى صفحات حسب الصفوف باستخدام GroupDocs.Viewer .NET لإدارة البيانات بكفاءة"
 "url": "/ar/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # تقسيم جداول بيانات Excel إلى صفحات حسب الصفوف باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

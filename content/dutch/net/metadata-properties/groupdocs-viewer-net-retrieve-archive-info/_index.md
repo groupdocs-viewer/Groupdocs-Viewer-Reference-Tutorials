@@ -4,8 +4,8 @@
 "title": "Archiefinformatie ophalen met GroupDocs.Viewer voor .NET&#58; een uitgebreide handleiding"
 "url": "/nl/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Archiefinformatie ophalen met GroupDocs.Viewer voor .NET: een uitgebreide handleiding
 
 ## Invoering

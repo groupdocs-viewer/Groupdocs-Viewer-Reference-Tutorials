@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 文件渲染基礎教學"
 "url": "/zh-hant/net/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 文件渲染基礎教學
 
 透過我們詳細的 GroupDocs.Viewer .NET 教學掌握文件渲染技術。這些逐步指南示範如何將文件轉換並渲染為各種輸出格式、控制渲染品質、管理頁面層級渲染，以及如何精準且有效率地實現跨格式文件視覺化。

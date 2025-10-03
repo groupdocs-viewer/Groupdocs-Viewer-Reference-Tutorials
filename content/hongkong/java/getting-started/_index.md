@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 開發人員入門教學"
 "url": "/zh-hant/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java 開發人員入門教學
 
 從這些 GroupDocs.Viewer 的入門教學開始您的旅程，這些教學將引導您完成安裝、許可配置以及如何使用 Java 建立您的第一個文件檢視器。我們面向初學者的指南示範如何設定開發環境、初始化 GroupDocs.Viewer 函式庫以及執行基本的文件渲染操作。遵循這些教程，您可以快速掌握基礎知識，並為在 Java 應用程式中執行更高級的文件檢視任務做好準備。

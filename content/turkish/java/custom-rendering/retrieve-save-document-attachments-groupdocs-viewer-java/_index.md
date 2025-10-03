@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for Java Kullanılarak Belge Ekleri Nasıl Alınır ve Kaydedilir? Kapsamlı Bir Kılavuz"
 "url": "/tr/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer Kullanılarak Belge Ekleri Nasıl Alınır ve Kaydedilir: Kapsamlı Bir Kılavuz
 
 ## giriiş

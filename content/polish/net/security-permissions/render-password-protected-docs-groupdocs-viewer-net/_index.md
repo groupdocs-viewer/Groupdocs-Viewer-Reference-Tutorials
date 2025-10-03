@@ -4,8 +4,8 @@
 "title": "Jak renderować dokumenty chronione hasłem za pomocą GroupDocs.Viewer .NET"
 "url": "/pl/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Renderowanie dokumentów chronionych hasłem za pomocą GroupDocs.Viewer .NET
 
 ## Wstęp

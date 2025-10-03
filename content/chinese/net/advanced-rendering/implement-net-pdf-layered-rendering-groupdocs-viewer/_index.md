@@ -4,8 +4,8 @@
 "title": "掌握 GroupDocs.Viewer 的 .NET PDF 分层渲染——分步指南"
 "url": "/zh/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET PDF 分层渲染：分步指南
 
 ## 介绍

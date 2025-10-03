@@ -4,8 +4,8 @@
 "title": "Hogyan lehet letiltani a szövegkijelölést PDF-ekben a GroupDocs.Viewer .NET használatával a fokozott biztonság érdekében?"
 "url": "/hu/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # A GroupDocs.Viewer .NET használata a szövegkijelölés letiltására PDF-ek HTML-ként való renderelésekor
 
 ## Bevezetés

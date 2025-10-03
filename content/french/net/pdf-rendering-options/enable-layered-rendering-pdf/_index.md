@@ -5,8 +5,8 @@
 "title": "Activer le rendu en couches dans PDF"
 "url": "/fr/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Activer le rendu en couches dans PDF
 
 ## Introduction

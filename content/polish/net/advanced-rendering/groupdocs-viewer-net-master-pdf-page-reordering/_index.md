@@ -4,8 +4,8 @@
 "title": "Zmiana kolejności stron głównego pliku PDF w .NET za pomocą GroupDocs.Viewer&#58; Podręcznik programisty"
 "url": "/pl/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Opanowanie funkcji zmiany kolejności stron w plikach PDF za pomocą GroupDocs.Viewer .NET: kompleksowy przewodnik dla programistów
 
 ## Wstęp

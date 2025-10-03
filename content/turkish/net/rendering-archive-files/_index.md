@@ -5,8 +5,8 @@
 "title": "Arşiv Dosyalarının İşlenmesi"
 "url": "/tr/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Arşiv Dosyalarının İşlenmesi
 
 ## giriiş

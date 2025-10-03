@@ -4,8 +4,8 @@
 "title": "วิธีการเรนเดอร์ไฟล์ข้อมูล Outlook โดยใช้ GroupDocs.Viewer ใน Java พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการเรนเดอร์ไฟล์ข้อมูล Outlook โดยใช้ GroupDocs.Viewer ใน Java: คำแนะนำทีละขั้นตอน
 
 ## การแนะนำ

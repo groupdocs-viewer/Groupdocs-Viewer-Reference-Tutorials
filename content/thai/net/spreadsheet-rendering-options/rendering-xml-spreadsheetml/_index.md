@@ -5,8 +5,8 @@
 "title": "การเรนเดอร์ XML SpreadSheetML"
 "url": "/th/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # การเรนเดอร์ XML SpreadSheetML
 
 ## การแนะนำ

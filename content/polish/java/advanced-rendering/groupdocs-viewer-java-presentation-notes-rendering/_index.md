@@ -4,8 +4,8 @@
 "title": "Jak renderować prezentacje z notatkami za pomocą GroupDocs.Viewer dla Java? Kompleksowy przewodnik"
 "url": "/pl/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować prezentacje z notatkami za pomocą GroupDocs.Viewer dla Java
 
 ## Wstęp

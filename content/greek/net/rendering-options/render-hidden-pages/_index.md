@@ -5,8 +5,8 @@
 "title": "Απόδοση κρυφών σελίδων"
 "url": "/el/net/rendering-options/render-hidden-pages/"
 "weight": 15
+type: docs
 ---
-
 # Απόδοση κρυφών σελίδων
 
 ## Εισαγωγή

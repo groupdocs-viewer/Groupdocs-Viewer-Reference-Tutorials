@@ -3,8 +3,8 @@
 "title": "Documentwatermerk- en annotatiehandleidingen voor GroupDocs.Viewer Java"
 "url": "/nl/java/watermarks-annotations/"
 "weight": 7
+type: docs
 ---
-
 # Documentwatermerk- en annotatiehandleidingen voor GroupDocs.Viewer Java
 
 Leer de technieken voor documentannotatie en watermerken met onze GroupDocs.Viewer Java-tutorials. Deze stapsgewijze handleidingen laten zien hoe u tekst- en afbeeldingswatermerken toevoegt, annotaties implementeert, de positie en transparantie van watermerken bepaalt en documenten met ingesloten annotaties rendert. Elke tutorial bevat praktische Java-codevoorbeelden voor het toevoegen van visuele metadata en beschermende markeringen aan uw documenten, waardoor de documenttracking en brandingmogelijkheden worden verbeterd.

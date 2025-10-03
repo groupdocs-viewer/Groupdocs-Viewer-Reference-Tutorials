@@ -4,8 +4,8 @@
 "title": "Извлечение и отображение имен рабочих листов в Java с помощью API GroupDocs.Viewer"
 "url": "/ru/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Извлечение и отображение имен рабочих листов в Java с помощью API GroupDocs.Viewer
 
 ## Введение

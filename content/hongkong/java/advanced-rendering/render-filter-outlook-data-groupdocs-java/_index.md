@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 掌握 Outlook 資料渲染與篩選"
 "url": "/zh-hant/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 掌握 Outlook 資料渲染與篩選
 
 ## 介紹

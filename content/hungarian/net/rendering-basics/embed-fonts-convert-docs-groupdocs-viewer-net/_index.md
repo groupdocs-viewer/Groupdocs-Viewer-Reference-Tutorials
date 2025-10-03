@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET mesterképzés&#58; Betűtípusok beágyazása és dokumentumok hatékony HTML-be konvertálása"
 "url": "/hu/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentumrenderelés elsajátítása a GroupDocs.Viewer .NET segítségével: Betűtípusok beágyazása és HTML-lé konvertálása
 
 ## Bevezetés

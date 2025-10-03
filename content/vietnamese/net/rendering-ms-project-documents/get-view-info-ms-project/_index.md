@@ -5,8 +5,8 @@
 "title": "Xem thông tin cho tài liệu Microsoft Project"
 "url": "/vi/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Xem thông tin cho tài liệu Microsoft Project
 
 ## Giới thiệu

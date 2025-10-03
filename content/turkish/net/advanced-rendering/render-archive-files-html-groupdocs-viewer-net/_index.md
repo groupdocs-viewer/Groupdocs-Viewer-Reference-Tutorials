@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak Arşiv Dosyalarını HTML'ye Nasıl Dönüştürebilirsiniz? Adım Adım Kılavuz"
 "url": "/tr/net/advanced-rendering/render-archive-files-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanarak Arşiv Dosyalarını HTML'ye Nasıl Dönüştürebilirsiniz: Adım Adım Kılavuz
 ## giriiş
 RAR veya ZIP gibi arşiv dosyalarını bir web sayfasında sunma konusunda zorluk mu çekiyorsunuz? Bu karmaşık dosya biçimlerini kullanıcı dostu HTML belgelerine dönüştürmek, sorunsuz içerik dağıtımı için çok önemlidir. GroupDocs.Viewer for .NET ile bu görev basit ve verimli hale gelir.

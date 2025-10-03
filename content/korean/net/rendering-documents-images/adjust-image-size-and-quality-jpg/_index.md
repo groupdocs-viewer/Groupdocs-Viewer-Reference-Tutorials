@@ -5,8 +5,8 @@
 "title": "이미지 크기 및 품질 조정(JPG)"
 "url": "/ko/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # 이미지 크기 및 품질 조정(JPG)
 
 ## 소개

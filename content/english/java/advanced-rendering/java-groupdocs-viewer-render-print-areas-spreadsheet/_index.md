@@ -8,10 +8,8 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-
+type: docs
 ---
-
-
 # Java Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java
 
 ## Introduction

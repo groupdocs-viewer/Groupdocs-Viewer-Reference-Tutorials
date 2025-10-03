@@ -5,8 +5,8 @@
 "title": "Remplacer la police manquante"
 "url": "/fr/net/rendering-options/replace-missing-font/"
 "weight": 20
+type: docs
 ---
-
 # Remplacer la police manquante
 
 ## Introduction

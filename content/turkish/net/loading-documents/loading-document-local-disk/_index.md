@@ -5,8 +5,8 @@
 "title": "Yerel Diskten Belgeleri Yükle"
 "url": "/tr/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Yerel Diskten Belgeleri Yükle
 
 ## giriiş

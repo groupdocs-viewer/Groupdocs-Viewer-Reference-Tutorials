@@ -5,8 +5,8 @@
 "title": "Rendera RAR-arkiv"
 "url": "/sv/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Rendera RAR-arkiv
 
 ## Introduktion

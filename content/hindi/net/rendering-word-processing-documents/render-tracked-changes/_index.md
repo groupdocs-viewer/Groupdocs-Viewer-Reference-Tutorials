@@ -5,8 +5,8 @@
 "title": "ट्रैक किए गए परिवर्तन प्रस्तुत करें"
 "url": "/hi/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # ट्रैक किए गए परिवर्तन प्रस्तुत करें
 
 ## परिचय

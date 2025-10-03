@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for Java 渲染 Visio 檔案 — 檔案轉換綜合指南"
 "url": "/zh-hant/java/file-formats-support/render-visio-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for Java 渲染 Visio 檔案：綜合指南
 ## 介紹
 在當今的數位時代，高效地共享和顯示複雜的圖表至關重要。無論您是軟體開發人員還是商務專業人士，將 Microsoft Visio 文件轉換為 HTML、JPG、PNG 或 PDF 等通用格式，都能顯著增強協作和簡報體驗。本教學將指導您使用 GroupDocs.Viewer for Java 將 Visio 文件無縫渲染為這些格式。

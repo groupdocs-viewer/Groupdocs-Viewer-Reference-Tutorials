@@ -5,8 +5,8 @@
 "title": "WMZ ve WMF Görüntülerini Oluşturun"
 "url": "/tr/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # WMZ ve WMF Görüntülerini Oluşturun
 
 ## giriiş

@@ -5,8 +5,8 @@
 "title": "प्रदर्शन के लिए ओवरलेड टेक्स्ट के साथ रेंडर करें"
 "url": "/hi/net/rendering-documents-images/render-with-text-overlay/"
 "weight": 13
+type: docs
 ---
-
 # प्रदर्शन के लिए ओवरलेड टेक्स्ट के साथ रेंडर करें
 
 ## परिचय

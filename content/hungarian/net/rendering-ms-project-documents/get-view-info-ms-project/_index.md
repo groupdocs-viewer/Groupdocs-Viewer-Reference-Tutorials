@@ -5,8 +5,8 @@
 "title": "Microsoft Project dokumentumok megtekintési információinak lekérése"
 "url": "/hu/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Microsoft Project dokumentumok megtekintési információinak lekérése
 
 ## Bevezetés

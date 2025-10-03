@@ -5,8 +5,8 @@
 "title": "Sử dụng nâng cao (Bộ nhớ đệm)"
 "url": "/vi/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # Sử dụng nâng cao (Bộ nhớ đệm)
 
 

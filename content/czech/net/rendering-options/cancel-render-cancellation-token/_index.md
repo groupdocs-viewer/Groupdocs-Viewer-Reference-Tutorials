@@ -5,8 +5,8 @@
 "title": "Zrušit vykreslení pomocí tokenu zrušení"
 "url": "/cs/net/rendering-options/cancel-render-cancellation-token/"
 "weight": 11
+type: docs
 ---
-
 # Zrušit vykreslení pomocí tokenu zrušení
 
 ## Zavedení

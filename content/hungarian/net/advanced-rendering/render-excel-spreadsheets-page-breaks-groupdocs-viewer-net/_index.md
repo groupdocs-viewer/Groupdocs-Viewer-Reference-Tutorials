@@ -4,8 +4,8 @@
 "title": "Excel-táblázatok renderelése oldaltörésekkel a GroupDocs.Viewer for .NET használatával"
 "url": "/hu/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Excel-táblázatok renderelése oldaltörésekkel a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "Hämta PDF-metadata och egenskaper med GroupDocs.Viewer i Java - en steg-för-steg-guide"
 "url": "/sv/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Hämta PDF-metadata och egenskaper med GroupDocs.Viewer i Java
 
 Välkommen till den här omfattande guiden om hur du hämtar visningsinformation från ett PDF-dokument med GroupDocs.Viewer-biblioteket i Java. Om du vill extrahera information som sidantal, dokumenttyp och behörigheter från PDF-filer programmatiskt har du kommit till rätt ställe.

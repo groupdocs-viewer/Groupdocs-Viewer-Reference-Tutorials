@@ -4,8 +4,8 @@
 "title": "Rendering di documenti come immagini con livello di testo in Java utilizzando GroupDocs.Viewer"
 "url": "/it/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rendering di documenti come immagini con livello di testo in Java utilizzando GroupDocs.Viewer
 ## Tutorial di rendering avanzato
 **URL SEO attuale**: /render-documenti-in-immagini-con-livello-di-testo-java

@@ -5,8 +5,8 @@
 "title": "Document met notities weergeven"
 "url": "/nl/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Document met notities weergeven
 
 ## Invoering

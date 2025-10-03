@@ -5,8 +5,8 @@
 "title": "アーカイブファイルのレンダリング"
 "url": "/ja/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # アーカイブファイルのレンダリング
 
 ## 導入

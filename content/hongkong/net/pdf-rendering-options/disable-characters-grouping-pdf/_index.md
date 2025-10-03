@@ -5,8 +5,8 @@
 "title": "禁用 PDF 中的字元分組"
 "url": "/zh-hant/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # 禁用 PDF 中的字元分組
 
 ## 介紹

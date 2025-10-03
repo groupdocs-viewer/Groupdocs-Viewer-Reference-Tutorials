@@ -4,8 +4,8 @@
 "title": "CAD-layouts en lagen ophalen in Java met GroupDocs.Viewer"
 "url": "/nl/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CAD-layouts en lagen ophalen met GroupDocs.Viewer voor Java
 
 In de wereld van engineering en design zijn Computer-Aided Design (CAD)-bestanden onmisbare tools die enorme hoeveelheden gedetailleerde informatie over ontwerpen opslaan. Deze bestanden kunnen complex zijn en meerdere lay-outs en lagen bevatten die nauwkeurig beheer en ophalen vereisen voor een effectieve projectuitvoering. Als u specifieke details uit CAD-tekeningen wilt halen via een programma in Java, is GroupDocs.Viewer voor Java dé oplossing. Deze tutorial begeleidt u bij het ophalen van alle lay-outs en lagen uit een CAD-tekening met behulp van GroupDocs.Viewer.

@@ -4,8 +4,8 @@
 "title": "Verimli İşleme için GroupDocs.Viewer .NET Kullanarak CAD Çizimlerini Döşemelere Nasıl Bölebilirsiniz"
 "url": "/tr/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile CAD Çizimlerini Döşemelere Nasıl Bölebilirsiniz
 
 ## giriiş

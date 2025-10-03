@@ -5,8 +5,8 @@
 "title": "Render HTML dengan Margin yang Ditentukan Pengguna"
 "url": "/id/net/rendering-web-documents/render-html-margins/"
 "weight": 11
+type: docs
 ---
-
 # Render HTML dengan Margin yang Ditentukan Pengguna
 
 ## Perkenalan

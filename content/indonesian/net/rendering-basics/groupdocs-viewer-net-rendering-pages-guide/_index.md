@@ -4,8 +4,8 @@
 "title": "Merender Halaman Tertentu di .NET dengan GroupDocs.Viewer&#58; Panduan Lengkap"
 "url": "/id/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # Merender Halaman Tertentu di .NET dengan GroupDocs.Viewer: Panduan Lengkap
 
 ## Perkenalan

@@ -4,8 +4,8 @@
 "title": "कुशल डेटा प्रबंधन के लिए GroupDocs.Viewer .NET का उपयोग करके Excel शीट को पंक्तियों के आधार पर पृष्ठों में विभाजित करें"
 "url": "/hi/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ पंक्तियों द्वारा पृष्ठों में एक्सेल शीट को विभाजित करना
 
 ## परिचय

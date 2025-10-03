@@ -9,8 +9,8 @@ keywords:
   - groupdocs.viewer for .net
   - .net html rendering
   - add watermark to document .net
+type: docs
 ---
-
 ## Introduction
 
 Efficiently converting documents to HTML while preserving their integrity and adding security features like watermarks is a common requirement in modern applications. This tutorial will guide you through using **GroupDocs.Viewer for .NET** to render documents into HTML with embedded resources and seamlessly add watermarks.

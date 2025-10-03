@@ -5,8 +5,8 @@
 "title": "Tùy chọn kết xuất bảng tính"
 "url": "/vi/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Tùy chọn kết xuất bảng tính
 
 ## Giới thiệu

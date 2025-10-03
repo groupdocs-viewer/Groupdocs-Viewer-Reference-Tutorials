@@ -5,8 +5,8 @@
 "title": "संख्याएँ प्रस्तुत करना"
 "url": "/hi/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # संख्याएँ प्रस्तुत करना
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "Come dividere i disegni CAD in riquadri utilizzando GroupDocs.Viewer .NET per un rendering efficiente"
 "url": "/it/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Come dividere i disegni CAD in riquadri con GroupDocs.Viewer .NET
 
 ## Introduzione

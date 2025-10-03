@@ -4,8 +4,8 @@
 "title": "RAR archívumok HTML, JPG, PNG és PDF formátumba renderelése a GroupDocs.Viewer .NET használatával"
 "url": "/hu/net/rendering-basics/rendering-rar-archives-using-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hogyan lehet RAR archívumokat különböző formátumokba renderelni a GroupDocs.Viewer .NET használatával?
 
 mai adatvezérelt világban kulcsfontosságú a tömörített fájlok, például a RAR archívumok hatékony kezelése és megosztása. Akár fejlesztő vagy, aki fájlkonverziós képességeket integrál az alkalmazásába, akár valaki, akinek különféle célokra kell tartalmat kinyernie RAR fájlokból, a GroupDocs.Viewer for .NET robusztus megoldásokat kínál. Ebben az oktatóanyagban azt vizsgáljuk meg, hogyan lehet RAR archívumokat HTML, JPG, PNG és PDF formátumba renderelni a GroupDocs.Viewer for .NET segítségével.

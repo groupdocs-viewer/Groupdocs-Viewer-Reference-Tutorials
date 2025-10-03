@@ -5,8 +5,8 @@
 "title": "Λήψη πληροφοριών προβολής για έγγραφα του Microsoft Project"
 "url": "/el/net/rendering-ms-project-documents/get-view-info-ms-project/"
 "weight": 10
+type: docs
 ---
-
 # Λήψη πληροφοριών προβολής για έγγραφα του Microsoft Project
 
 ## Εισαγωγή

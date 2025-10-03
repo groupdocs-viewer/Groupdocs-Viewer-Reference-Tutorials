@@ -5,8 +5,8 @@
 "title": "เรนเดอร์หัวแถวและคอลัมน์"
 "url": "/th/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # เรนเดอร์หัวแถวและคอลัมน์
 
 ## การแนะนำ

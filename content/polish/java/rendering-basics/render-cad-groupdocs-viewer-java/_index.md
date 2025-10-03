@@ -4,8 +4,8 @@
 "title": "Jak renderować określone rysunki CAD w Javie za pomocą GroupDocs.Viewer"
 "url": "/pl/java/rendering-basics/render-cad-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować określone rysunki CAD w Javie za pomocą GroupDocs.Viewer
 
 ## Wstęp

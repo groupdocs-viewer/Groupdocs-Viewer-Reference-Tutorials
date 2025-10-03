@@ -4,8 +4,8 @@
 "title": "Мастер рендеринга HTML с пользовательскими полями в .NET с использованием GroupDocs.Viewer"
 "url": "/ru/net/advanced-rendering/mastering-html-rendering-custom-margins-dotnet-groupdocsviewer/"
 "weight": 1
+type: docs
 ---
-
 # Освоение HTML-рендеринга с пользовательскими полями в .NET с использованием GroupDocs.Viewer
 
 ## Введение

@@ -5,8 +5,8 @@
 "title": "Abilita la memorizzazione nella cache per un'elaborazione più rapida dei documenti"
 "url": "/it/net/advanced-usage-caching/enable-caching/"
 "weight": 10
+type: docs
 ---
-
 # Abilita la memorizzazione nella cache per un'elaborazione più rapida dei documenti
 
 ## Introduzione

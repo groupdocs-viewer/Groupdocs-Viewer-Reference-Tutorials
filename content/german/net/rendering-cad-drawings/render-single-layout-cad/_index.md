@@ -5,8 +5,8 @@
 "title": "Rendern einzelner Layouts in CAD-Zeichnungen"
 "url": "/de/net/rendering-cad-drawings/render-single-layout-cad/"
 "weight": 14
+type: docs
 ---
-
 # Rendern einzelner Layouts in CAD-Zeichnungen
 
 ## Einführung

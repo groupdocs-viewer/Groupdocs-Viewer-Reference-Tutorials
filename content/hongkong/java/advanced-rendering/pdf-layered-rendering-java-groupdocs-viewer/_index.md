@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 Java 中實現高效的 PDF 分層渲染"
 "url": "/zh-hant/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 Java 中實現高效的 PDF 分層渲染
 
 ## 介紹

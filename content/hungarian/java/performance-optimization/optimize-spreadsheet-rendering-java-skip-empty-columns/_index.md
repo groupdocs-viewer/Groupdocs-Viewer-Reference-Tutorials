@@ -4,8 +4,8 @@
 "title": "Java táblázatkezelő renderelés optimalizálása&#58; Üres oszlopok kihagyása a GroupDocs.Viewer segítségével"
 "url": "/hu/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Táblázatkezelő renderelés optimalizálása Java-ban: Üres oszlopok kihagyása a GroupDocs.Viewer segítségével
 
 ## Bevezetés

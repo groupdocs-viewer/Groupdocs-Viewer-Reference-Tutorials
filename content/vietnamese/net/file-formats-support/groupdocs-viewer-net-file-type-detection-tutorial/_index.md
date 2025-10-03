@@ -4,8 +4,8 @@
 "title": "Cách phát hiện các loại tệp bằng GroupDocs.Viewer cho .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/file-formats-support/groupdocs-viewer-net-file-type-detection-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Cách phát hiện các loại tệp bằng GroupDocs.Viewer cho .NET: Hướng dẫn toàn diện
 
 ## Giới thiệu

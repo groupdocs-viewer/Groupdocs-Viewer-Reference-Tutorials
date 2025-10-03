@@ -5,8 +5,8 @@
 "title": "Render Garis Grid"
 "url": "/id/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Render Garis Grid
 
 ## Perkenalan

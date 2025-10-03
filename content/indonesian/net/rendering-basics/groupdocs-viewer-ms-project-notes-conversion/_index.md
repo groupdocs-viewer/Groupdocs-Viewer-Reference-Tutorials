@@ -4,8 +4,8 @@
 "title": "Render File MS Project dengan Catatan Secara Efisien Menggunakan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Render File MS Project dengan Catatan Secara Efisien Menggunakan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

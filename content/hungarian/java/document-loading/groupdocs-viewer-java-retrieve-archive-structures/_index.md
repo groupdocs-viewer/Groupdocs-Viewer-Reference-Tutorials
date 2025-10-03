@@ -4,8 +4,8 @@
 "title": "Archív struktúrák lekérése a GroupDocs.Viewer for Java használatával – Átfogó útmutató"
 "url": "/hu/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
 "weight": 1
+type: docs
 ---
-
 # Archív struktúrák lekérése a GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET でコンソールとファイル出力に効果的なログ記録を実装する"
 "url": "/ja/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET で効果的なログ記録を実装する
 
 ## 導入

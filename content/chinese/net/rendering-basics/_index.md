@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer .NET 文档渲染基础教程"
 "url": "/zh/net/rendering-basics/"
 "weight": 3
+type: docs
 ---
-
 # GroupDocs.Viewer .NET 文档渲染基础教程
 
 通过我们详细的 GroupDocs.Viewer .NET 教程掌握文档渲染技术。这些分步指南演示了如何将文档转换并渲染为各种输出格式、控制渲染质量、管理页面级渲染，以及如何精准高效地实现跨格式文档可视化。

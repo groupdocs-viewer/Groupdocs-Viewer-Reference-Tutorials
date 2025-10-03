@@ -4,8 +4,8 @@
 "title": "วิธีการแยกแบบอักษร Arial ออกจากการแสดงผล HTML ด้วย GroupDocs.Viewer Java คำแนะนำทีละขั้นตอน"
 "url": "/th/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # วิธีการแยกแบบอักษร Arial ออกเมื่อเรนเดอร์เอกสารเป็น HTML โดยใช้ GroupDocs.Viewer Java
 
 ## การแนะนำ

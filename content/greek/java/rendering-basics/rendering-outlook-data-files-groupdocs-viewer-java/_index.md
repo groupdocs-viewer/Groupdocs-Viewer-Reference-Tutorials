@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία δεδομένων του Outlook χρησιμοποιώντας το GroupDocs.Viewer σε Java - Οδηγός βήμα προς βήμα"
 "url": "/el/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία δεδομένων του Outlook χρησιμοποιώντας το GroupDocs.Viewer σε Java: Οδηγός βήμα προς βήμα
 
 ## Εισαγωγή

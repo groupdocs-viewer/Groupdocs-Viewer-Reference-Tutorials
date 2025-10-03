@@ -4,8 +4,8 @@
 "title": "Szűrt Outlook adatmegjelenítés a GroupDocs.Viewer for .NET segítségével – Átfogó útmutató"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # Szűrt Outlook-adatok renderelése a GroupDocs.Viewer for .NET segítségével: Átfogó útmutató
 ## Bevezetés
 Nehezen tudja hatékonyan megjeleníteni az Outlook adatfájlokat (.ost) olyan szűrők alkalmazása közben, mint az üzenet tartalma és a feladó? Sok fejlesztőnek szüksége van egy leegyszerűsített megoldásra az Outlook üzenetek pontos kritériumok szerinti megtekintéséhez. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan érhető el az Outlook adatok szűrt megjelenítése a GroupDocs.Viewer for .NET segítségével – ez egy hatékony könyvtár, amely leegyszerűsíti a dokumentumfeldolgozást.

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET के साथ पासवर्ड-संरक्षित दस्तावेज़ कैसे प्रस्तुत करें"
 "url": "/hi/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ पासवर्ड-संरक्षित दस्तावेज़ प्रस्तुत करना
 
 ## परिचय

@@ -4,8 +4,8 @@
 "title": "Fájlfelismerés és titkosítási ellenőrzések megvalósítása Java nyelven a GroupDocs.Viewer segítségével"
 "url": "/hu/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # Fájlészlelési és titkosítási ellenőrzések megvalósítása GroupDocs.Viewer for Java használatával
 
 ## Bevezetés

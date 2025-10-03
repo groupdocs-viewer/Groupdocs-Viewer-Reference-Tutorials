@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["hidden-pages", "document-viewer", "dotnet-api", "powerpoint", "excel"]
+type: docs
 ---
-
 # How to Render Hidden Pages in .NET Applications
 
 ## Introduction

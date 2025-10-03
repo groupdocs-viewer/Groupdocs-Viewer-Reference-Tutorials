@@ -4,8 +4,8 @@
 "title": "เรนเดอร์ไฟล์ MS Project อย่างมีประสิทธิภาพด้วย Notes โดยใช้ GroupDocs.Viewer สำหรับ .NET"
 "url": "/th/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์ไฟล์ MS Project อย่างมีประสิทธิภาพด้วย Notes โดยใช้ GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

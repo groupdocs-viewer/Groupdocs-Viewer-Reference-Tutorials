@@ -5,8 +5,8 @@
 "title": "Documenten naar afbeeldingen renderen"
 "url": "/nl/net/rendering-documents-images/"
 "weight": 30
+type: docs
 ---
-
 # Documenten naar afbeeldingen renderen
 
 ## Invoering

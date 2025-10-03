@@ -4,8 +4,8 @@
 "title": "Java&#58; GroupDocs.Viewer를 사용하여 숨겨진 페이지를 렌더링하는 방법"
 "url": "/ko/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: GroupDocs.Viewer를 사용하여 숨겨진 페이지를 렌더링하는 방법
 
 ## 소개

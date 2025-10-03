@@ -5,8 +5,8 @@
 "title": "CDR-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # CDR-afbeeldingen renderen
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": ".NET için GroupDocs.Viewer Kullanarak Verimli Excel Yazdırma Alanı Oluşturma"
 "url": "/tr/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET için GroupDocs.Viewer Kullanarak Verimli Excel Yazdırma Alanı Oluşturma
 
 ## giriiş

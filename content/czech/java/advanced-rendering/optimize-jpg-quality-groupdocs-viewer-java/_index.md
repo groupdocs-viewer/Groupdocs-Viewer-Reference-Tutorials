@@ -4,8 +4,8 @@
 "title": "Optimalizace kvality JPG v PDF pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Optimalizace kvality JPG v PDF pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

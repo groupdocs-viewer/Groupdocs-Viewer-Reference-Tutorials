@@ -5,8 +5,8 @@
 "title": "Povolit nápovědy k písmům v PDF"
 "url": "/cs/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Povolit nápovědy k písmům v PDF
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Hiển thị các tập tin lưu trữ"
 "url": "/vi/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Hiển thị các tập tin lưu trữ
 
 ## Giới thiệu

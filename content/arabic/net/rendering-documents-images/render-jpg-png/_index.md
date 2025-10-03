@@ -5,8 +5,8 @@
 "title": "تحويل المستند إلى JPGPNG"
 "url": "/ar/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # تحويل المستند إلى JPGPNG
 
 ## مقدمة

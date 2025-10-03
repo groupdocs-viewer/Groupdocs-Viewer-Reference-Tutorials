@@ -4,8 +4,8 @@
 "title": "Trích xuất và hiển thị tên trang tính trong Java bằng API GroupDocs.Viewer"
 "url": "/vi/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Trích xuất và hiển thị tên trang tính trong Java bằng API GroupDocs.Viewer
 
 ## Giới thiệu

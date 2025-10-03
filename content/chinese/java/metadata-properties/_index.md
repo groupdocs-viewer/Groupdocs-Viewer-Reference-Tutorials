@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 文档元数据提取教程"
 "url": "/zh/java/metadata-properties/"
 "weight": 14
+type: docs
 ---
-
 # GroupDocs.Viewer Java 文档元数据提取教程
 
 通过我们的 GroupDocs.Viewer Java 教程学习如何使用文档元数据和属性。这些实用指南演示了如何提取文档信息、读取元数据字段、管理文档属性以及实现基于元数据的文档处理。每个教程都包含针对常见元数据场景的 Java 代码示例，帮助您构建能够有效分析和管理文档信息的应用程序。

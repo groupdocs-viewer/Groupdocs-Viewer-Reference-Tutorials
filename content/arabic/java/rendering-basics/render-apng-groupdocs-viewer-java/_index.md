@@ -4,8 +4,8 @@
 "title": "كيفية عرض صور PNG المتحركة في Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/rendering-basics/render-apng-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # كيفية عرض صور PNG المتحركة باستخدام GroupDocs.Viewer في Java
 
 اكتشف عملية تحويل ملفات PNG المتحركة (APNG) إلى تنسيقات مختلفة مثل HTML وJPG وPNG وPDF باستخدام مكتبة GroupDocs.Viewer القوية لـ Java.

@@ -5,8 +5,8 @@
 "title": "渲染 RAR 檔案"
 "url": "/zh-hant/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # 渲染 RAR 檔案
 
 ## 介紹

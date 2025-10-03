@@ -5,8 +5,8 @@
 "title": "Renderuj określone formaty CAD (CF2)"
 "url": "/pl/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Renderuj określone formaty CAD (CF2)
 
 ## Wstęp

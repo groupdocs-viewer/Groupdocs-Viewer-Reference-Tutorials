@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके जावा में कुशल पीडीएफ स्तरित रेंडरिंग"
 "url": "/hi/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer का उपयोग करके जावा में कुशल पीडीएफ स्तरित रेंडरिंग
 
 ## परिचय

@@ -5,8 +5,8 @@
 "title": "Získat informace o zobrazení pro dokument PDF"
 "url": "/cs/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # Získat informace o zobrazení pro dokument PDF
 
 ## Zavedení

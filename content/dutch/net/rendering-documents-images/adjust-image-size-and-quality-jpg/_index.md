@@ -5,8 +5,8 @@
 "title": "Pas de afbeeldingsgrootte en -kwaliteit aan (JPG)"
 "url": "/nl/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Pas de afbeeldingsgrootte en -kwaliteit aan (JPG)
 
 ## Invoering

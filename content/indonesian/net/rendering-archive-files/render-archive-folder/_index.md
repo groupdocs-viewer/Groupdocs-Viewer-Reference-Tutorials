@@ -5,8 +5,8 @@
 "title": "Render Arsip Folder"
 "url": "/id/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # Render Arsip Folder
 
 ## Perkenalan

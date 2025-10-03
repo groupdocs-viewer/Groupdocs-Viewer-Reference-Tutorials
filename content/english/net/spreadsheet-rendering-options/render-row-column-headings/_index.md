@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["spreadsheet-rendering", "groupdocs-viewer", "dotnet", "excel-headers"]
+type: docs
 ---
-
 # How to Render Spreadsheet Headings in .NET Applications
 
 ## Introduction

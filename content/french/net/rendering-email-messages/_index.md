@@ -5,8 +5,8 @@
 "title": "Rendu des messages électroniques"
 "url": "/fr/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Rendu des messages électroniques
 
 ## Introduction

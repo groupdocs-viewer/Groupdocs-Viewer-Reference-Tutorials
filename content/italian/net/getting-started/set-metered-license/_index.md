@@ -5,8 +5,8 @@
 "title": "Imposta licenza a consumo"
 "url": "/it/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Imposta licenza a consumo
 
 ## Introduzione

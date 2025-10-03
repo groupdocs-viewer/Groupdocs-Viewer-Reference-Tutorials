@@ -5,8 +5,8 @@
 "title": "عرض صور SVG وSVGZ"
 "url": "/ar/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # عرض صور SVG وSVGZ
 
 ## مقدمة

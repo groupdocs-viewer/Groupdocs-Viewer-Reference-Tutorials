@@ -4,8 +4,8 @@
 "title": "Optimalkan Java Spreadsheet Rendering&#58; Lewati Kolom Kosong dengan GroupDocs.Viewer"
 "url": "/id/java/performance-optimization/optimize-spreadsheet-rendering-java-skip-empty-columns/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengoptimalkan Rendering Spreadsheet di Java: Melewati Kolom Kosong dengan GroupDocs.Viewer
 
 ## Perkenalan

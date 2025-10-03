@@ -4,8 +4,8 @@
 "title": "عرض الصفوف والأعمدة المخفية في جداول بيانات Java باستخدام GroupDocs.Viewer"
 "url": "/ar/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # عرض الصفوف والأعمدة المخفية في جداول بيانات Java باستخدام GroupDocs.Viewer
 
 ## مقدمة

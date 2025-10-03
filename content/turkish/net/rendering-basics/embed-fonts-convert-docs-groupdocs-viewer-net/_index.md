@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer .NET&#58; Yazı Tiplerini Gömün ve Belgeleri Verimli Şekilde HTML'ye Dönüştürün"
 "url": "/tr/net/rendering-basics/embed-fonts-convert-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile Belge İşlemede Ustalaşma: Yazı Tiplerini Gömün ve HTML'ye Dönüştürün
 
 ## giriiş

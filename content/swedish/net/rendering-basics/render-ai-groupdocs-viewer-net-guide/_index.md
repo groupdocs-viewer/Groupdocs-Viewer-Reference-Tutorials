@@ -4,8 +4,8 @@
 "title": "Omfattande guide till rendering av AI-filer med GroupDocs.Viewer .NET för utvecklare"
 "url": "/sv/net/rendering-basics/render-ai-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Omfattande guide till rendering av AI-filer med GroupDocs.Viewer .NET för utvecklare
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "渲染存档文件夹"
 "url": "/zh/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # 渲染存档文件夹
 
 ## 介绍

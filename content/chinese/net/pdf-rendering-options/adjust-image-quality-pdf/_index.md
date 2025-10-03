@@ -5,8 +5,8 @@
 "title": "调整 PDF 中的图像质量"
 "url": "/zh/net/pdf-rendering-options/adjust-image-quality-pdf/"
 "weight": 10
+type: docs
 ---
-
 # 调整 PDF 中的图像质量
 
 ## 介绍

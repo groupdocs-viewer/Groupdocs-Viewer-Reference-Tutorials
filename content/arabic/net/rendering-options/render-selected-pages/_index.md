@@ -5,8 +5,8 @@
 "title": "عرض الصفحات المحددة"
 "url": "/ar/net/rendering-options/render-selected-pages/"
 "weight": 17
+type: docs
 ---
-
 # عرض الصفحات المحددة
 
 ## مقدمة

@@ -5,8 +5,8 @@
 "title": "Gerenderte PDF-Dateien mit einem Kennwort schützen"
 "url": "/de/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Gerenderte PDF-Dateien mit einem Kennwort schützen
 
 ## Einführung

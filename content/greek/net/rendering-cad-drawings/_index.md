@@ -5,8 +5,8 @@
 "title": "Απόδοση σχεδίων CAD"
 "url": "/el/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # Απόδοση σχεδίων CAD
 
 

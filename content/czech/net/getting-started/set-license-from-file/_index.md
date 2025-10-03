@@ -5,8 +5,8 @@
 "title": "Nastavení licence ze souboru"
 "url": "/cs/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Nastavení licence ze souboru
 
 ## Zavedení

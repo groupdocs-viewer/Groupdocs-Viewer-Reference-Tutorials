@@ -5,8 +5,8 @@
 "title": "Sesuaikan Ukuran dan Kualitas Gambar (JPG)"
 "url": "/id/net/rendering-documents-images/adjust-image-size-and-quality-jpg/"
 "weight": 11
+type: docs
 ---
-
 # Sesuaikan Ukuran dan Kualitas Gambar (JPG)
 
 ## Perkenalan

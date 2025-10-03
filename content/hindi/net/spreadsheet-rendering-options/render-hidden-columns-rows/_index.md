@@ -5,8 +5,8 @@
 "title": "छिपे हुए कॉलम और पंक्तियों को प्रस्तुत करें"
 "url": "/hi/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # छिपे हुए कॉलम और पंक्तियों को प्रस्तुत करें
 
 ## परिचय

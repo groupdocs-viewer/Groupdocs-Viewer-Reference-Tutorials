@@ -4,8 +4,8 @@
 "title": "E-maillabels aanpassen in GroupDocs.Viewer voor .NET&#58; een complete handleiding voor het hernoemen van velden"
 "url": "/nl/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # E-maillabels aanpassen in GroupDocs.Viewer voor .NET: een complete handleiding voor het hernoemen van velden
 
 ## Invoering

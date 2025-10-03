@@ -5,8 +5,8 @@
 "title": "Установить измеренную лицензию"
 "url": "/ru/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # Установить измеренную лицензию
 
 ## Введение

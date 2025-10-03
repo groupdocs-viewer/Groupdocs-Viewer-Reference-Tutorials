@@ -4,8 +4,8 @@
 "title": "Optimiser le rendu des e-mails au format PDF en Java à l'aide de l'API GroupDocs.Viewer pour de meilleures performances"
 "url": "/fr/java/performance-optimization/optimize-email-pdf-rendering-java-groupdocs-viewer-api/"
 "weight": 1
+type: docs
 ---
-
 # Optimiser le rendu des e-mails au format PDF en Java avec l'API GroupDocs.Viewer
 
 ## Introduction

@@ -5,8 +5,8 @@
 "title": "FODG 및 ODG 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-fodg-odg-images/"
 "weight": 15
+type: docs
 ---
-
 # FODG 및 ODG 이미지 렌더링
 
 ## 소개

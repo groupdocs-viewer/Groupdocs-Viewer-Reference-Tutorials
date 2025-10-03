@@ -4,8 +4,8 @@
 "title": "E-mail címkék testreszabása a GroupDocs.Viewer for .NET programban – Teljes körű útmutató a mezők átnevezéséhez"
 "url": "/hu/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # E-mail címkék testreszabása a GroupDocs.Viewer for .NET alkalmazásban: Teljes körű útmutató a mezők átnevezéséhez
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - Email-to-PDF Rendering
 - GroupDocs.Viewer API
 - Java PDF Conversion
-
+type: docs
 ---
-
-
 # Optimize Email-to-PDF Rendering in Java with GroupDocs.Viewer API
 
 ## Introduction

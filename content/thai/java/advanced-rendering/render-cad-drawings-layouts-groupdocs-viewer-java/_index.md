@@ -4,8 +4,8 @@
 "title": "เรนเดอร์เค้าโครง CAD ทั้งหมดอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ Java"
 "url": "/th/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # เรนเดอร์เค้าโครง CAD ทั้งหมดอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

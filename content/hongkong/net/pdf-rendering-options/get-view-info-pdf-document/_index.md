@@ -5,8 +5,8 @@
 "title": "取得 PDF 文件的檢視信息"
 "url": "/zh-hant/net/pdf-rendering-options/get-view-info-pdf-document/"
 "weight": 16
+type: docs
 ---
-
 # 取得 PDF 文件的檢視信息
 
 ## 介紹

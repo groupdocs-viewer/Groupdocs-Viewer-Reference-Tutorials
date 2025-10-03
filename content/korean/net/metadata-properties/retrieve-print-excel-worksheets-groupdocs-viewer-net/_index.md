@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용하여 Excel 워크시트 이름을 검색하고 인쇄하는 방법(2023 가이드)"
 "url": "/ko/net/metadata-properties/retrieve-print-excel-worksheets-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용하여 Excel 워크시트 이름을 검색하고 인쇄하는 방법: 포괄적인 가이드
 
 ## 소개

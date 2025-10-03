@@ -8,8 +8,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["document-conversion", "java-api", "pdf-conversion", "file-processing"]
+type: docs
 ---
-
 # Java Document Conversion Library: Complete GroupDocs.Viewer Tutorial Collection
 
 Struggling with document conversion in your Java applications? You're not alone. Whether you need to convert Word documents to HTML for web display, transform PDFs to images for thumbnails, or handle batch processing of mixed file formats, document conversion can quickly become a development bottleneck.

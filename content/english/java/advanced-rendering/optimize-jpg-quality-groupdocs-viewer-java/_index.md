@@ -8,10 +8,8 @@ keywords:
 - optimize JPG quality PDF
 - GroupDocs.Viewer Java setup
 - adjust JPG image quality in PDF
-
+type: docs
 ---
-
-
 # Optimize JPG Quality in PDFs Using GroupDocs.Viewer for Java
 
 ## Introduction

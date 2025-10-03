@@ -4,8 +4,8 @@
 "title": "Vízjelek hozzáadása dokumentumokhoz a GroupDocs.Viewer Java használatával – Átfogó útmutató"
 "url": "/hu/java/watermarks-annotations/groupdocs-viewer-java-add-watermark-documents/"
 "weight": 1
+type: docs
 ---
-
 # Vízjelek hozzáadása dokumentumokhoz a GroupDocs.Viewer Java használatával: Átfogó útmutató
 
 ## Bevezetés

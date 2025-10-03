@@ -5,8 +5,8 @@
 "title": "रेंडर विशिष्ट परियोजना समय अंतराल (एमएस प्रोजेक्ट)"
 "url": "/hi/net/rendering-ms-project-documents/render-project-time-interval-ms-project/"
 "weight": 12
+type: docs
 ---
-
 # रेंडर विशिष्ट परियोजना समय अंतराल (एमएस प्रोजेक्ट)
 
 ## परिचय

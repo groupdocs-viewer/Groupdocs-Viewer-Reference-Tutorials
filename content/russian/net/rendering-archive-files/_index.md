@@ -5,8 +5,8 @@
 "title": "Архив файлов рендеринга"
 "url": "/ru/net/rendering-archive-files/"
 "weight": 24
+type: docs
 ---
-
 # Архив файлов рендеринга
 
 ## Введение

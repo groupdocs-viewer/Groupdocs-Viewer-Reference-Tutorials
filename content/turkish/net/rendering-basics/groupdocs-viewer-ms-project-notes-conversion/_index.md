@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET Kullanarak Notlarla MS Project Dosyalarını Verimli Şekilde Oluşturun"
 "url": "/tr/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer for .NET Kullanarak Notlarla MS Project Dosyalarını Verimli Şekilde Oluşturun
 
 ## giriiş

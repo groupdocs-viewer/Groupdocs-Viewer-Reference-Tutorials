@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET&#50; Rendera specifika mappar från ZIP-arkiv till HTML"
 "url": "/sv/net/rendering-basics/groupdocs-viewer-dotnet-render-zip-folders-html/"
 "weight": 1
+type: docs
 ---
-
 # Handledning: Implementera GroupDocs.Viewer .NET för att rendera specifika mappar från ZIP-arkiv till HTML
 
 ## Introduktion

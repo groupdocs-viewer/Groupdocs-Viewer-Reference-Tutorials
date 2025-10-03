@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer Java
 - NSF Document Conversion
 - Convert NSF Files
-
+type: docs
 ---
-
-
 # Convert NSF Files to Multiple Formats Using GroupDocs.Viewer for Java
 
 ## Introduction

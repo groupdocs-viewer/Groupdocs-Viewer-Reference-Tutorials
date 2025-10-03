@@ -5,8 +5,8 @@
 "title": "Begrenzen Sie die Anzahl der Elemente, die in Outlook-Datendateien gerendert werden sollen"
 "url": "/de/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Begrenzen Sie die Anzahl der Elemente, die in Outlook-Datendateien gerendert werden sollen
 
 ## Einführung

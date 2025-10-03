@@ -3,8 +3,8 @@
 "title": "Hướng dẫn lưu trữ kết xuất tài liệu cho GroupDocs.Viewer Java"
 "url": "/vi/java/caching-resource-management/"
 "weight": 10
+type: docs
 ---
-
 # Hướng dẫn lưu trữ kết xuất tài liệu cho GroupDocs.Viewer Java
 
 Làm chủ bộ nhớ đệm nâng cao và quản lý tài nguyên với hướng dẫn Java GroupDocs.Viewer của chúng tôi. Những hướng dẫn toàn diện này trình bày cách triển khai các chiến lược bộ nhớ đệm hiệu quả, quản lý tài nguyên kết xuất, tối ưu hóa việc sử dụng bộ nhớ và cải thiện hiệu suất xem tài liệu. Mỗi hướng dẫn cung cấp các ví dụ mã Java thực tế để triển khai các cơ chế bộ nhớ đệm tinh vi giúp tăng cường khả năng phản hồi của ứng dụng và giảm chi phí tính toán.

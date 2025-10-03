@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58; ile .NET'te Outlook Veri İşlemeyi Optimize Edin Performans İpuçları ve Teknikleri"
 "url": "/tr/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile Outlook Veri İşlemeyi Optimize Edin
 
 ## giriiş

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用して Java で特定のエンコーディングのドキュメントを読み込む方法"
 "url": "/ja/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer を使用して Java で特定のエンコーディングのドキュメントを読み込む方法
 
 ## 導入

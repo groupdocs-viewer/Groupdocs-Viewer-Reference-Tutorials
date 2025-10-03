@@ -4,8 +4,8 @@
 "title": "Visio dokumentumok HTML, JPG, PNG és PDF formátumban történő renderelése .NET-ben a GroupDocs.Viewer használatával"
 "url": "/hu/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Visio dokumentumok HTML, JPG, PNG és PDF formátumban történő renderelése a GroupDocs.Viewer használatával .NET-ben
 
 ## Bevezetés

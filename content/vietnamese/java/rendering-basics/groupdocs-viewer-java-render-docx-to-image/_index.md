@@ -4,8 +4,8 @@
 "title": "Kết xuất DOCX thành hình ảnh bằng cách sử dụng GroupDocs Viewer cho Java&#58; Hướng dẫn toàn diện"
 "url": "/vi/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
 "weight": 1
+type: docs
 ---
-
 # Kết xuất DOCX thành hình ảnh với GroupDocs Viewer cho Java
 
 ## Giới thiệu

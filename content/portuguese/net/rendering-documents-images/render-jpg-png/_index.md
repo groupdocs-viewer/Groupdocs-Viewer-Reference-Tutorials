@@ -5,8 +5,8 @@
 "title": "Renderizar documento para JPGPNG"
 "url": "/pt/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar documento para JPGPNG
 
 ## Introdução

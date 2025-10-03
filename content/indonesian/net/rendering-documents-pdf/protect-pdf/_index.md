@@ -5,8 +5,8 @@
 "title": "Lindungi PDF yang Dirender dengan Kata Sandi"
 "url": "/id/net/rendering-documents-pdf/protect-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Lindungi PDF yang Dirender dengan Kata Sandi
 
 ## Perkenalan

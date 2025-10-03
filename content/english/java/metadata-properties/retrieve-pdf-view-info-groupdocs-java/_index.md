@@ -8,10 +8,8 @@ keywords:
 - retrieve PDF metadata
 - GroupDocs.Viewer Java
 - extract PDF properties
-
+type: docs
 ---
-
-
 # Retrieve PDF Metadata and Properties Using GroupDocs.Viewer in Java
 
 Welcome to this comprehensive guide on retrieving view information from a PDF document with the GroupDocs.Viewer library in Java. If you're looking to programmatically extract details like page count, document type, and permissions from PDF files, you've come to the right place.

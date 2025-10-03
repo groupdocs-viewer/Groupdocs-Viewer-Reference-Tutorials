@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer สำหรับ Java ดึงข้อมูลและพิมพ์เอกสารแนบ"
 "url": "/th/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer สำหรับ Java: ดึงข้อมูลและพิมพ์เอกสารแนบ
 
 ## การแนะนำ

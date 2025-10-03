@@ -5,8 +5,8 @@
 "title": "Inaktivera verifiering av teckensnittslicenser i PDF"
 "url": "/sv/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Inaktivera verifiering av teckensnittslicenser i PDF
 
 ## Introduktion

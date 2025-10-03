@@ -5,8 +5,8 @@
 "title": "渲染 SVG 和 SVGZ 影像"
 "url": "/zh-hant/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # 渲染 SVG 和 SVGZ 影像
 
 ## 介紹

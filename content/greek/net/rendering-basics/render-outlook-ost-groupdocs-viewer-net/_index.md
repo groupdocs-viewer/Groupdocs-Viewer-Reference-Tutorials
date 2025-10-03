@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε αρχεία OST του Outlook χρησιμοποιώντας το GroupDocs.Viewer για .NET | Οδηγός βήμα προς βήμα"
 "url": "/el/net/rendering-basics/render-outlook-ost-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε αρχεία OST του Outlook χρησιμοποιώντας το GroupDocs.Viewer για .NET: Ένας πλήρης οδηγός βήμα προς βήμα
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "Como recuperar e salvar anexos de documentos usando o GroupDocs.Viewer .NET para gerenciamento eficiente de metadados"
 "url": "/pt/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como recuperar e salvar anexos de documentos usando o GroupDocs.Viewer .NET
 
 ## Introdução

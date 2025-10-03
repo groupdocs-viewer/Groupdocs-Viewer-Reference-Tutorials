@@ -5,8 +5,8 @@
 "title": "高度な使用法（キャッシュ）"
 "url": "/ja/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # 高度な使用法（キャッシュ）
 
 

@@ -4,8 +4,8 @@
 "title": "Převod DOCX do HTML s vloženými zdroji pomocí GroupDocs.Viewer pro Javu"
 "url": "/cs/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Převod DOCX do HTML s vloženými zdroji pomocí GroupDocs.Viewer pro Javu
 
 ## Zavedení

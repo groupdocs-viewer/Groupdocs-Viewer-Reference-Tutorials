@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile .NET'te Metin Çıkarmada Ustalaşın Kapsamlı Bir Kılavuz"
 "url": "/tr/net/advanced-rendering/text-extraction-net-groupdocs-viewer-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer ile .NET'te Metin Çıkarmada Ustalaşma: Kapsamlı Bir Eğitim
 
 ## giriiş

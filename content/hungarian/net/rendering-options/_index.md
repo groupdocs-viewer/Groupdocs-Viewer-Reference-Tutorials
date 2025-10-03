@@ -5,8 +5,8 @@
 "title": "Renderelési beállítások"
 "url": "/hu/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # Renderelési beállítások
 
 

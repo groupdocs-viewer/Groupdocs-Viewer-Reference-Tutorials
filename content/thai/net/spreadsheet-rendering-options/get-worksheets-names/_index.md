@@ -5,8 +5,8 @@
 "title": "รับชื่อแผ่นงาน"
 "url": "/th/net/spreadsheet-rendering-options/get-worksheets-names/"
 "weight": 11
+type: docs
 ---
-
 # รับชื่อแผ่นงาน
 
 ## การแนะนำ

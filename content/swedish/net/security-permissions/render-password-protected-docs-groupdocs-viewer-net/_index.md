@@ -4,8 +4,8 @@
 "title": "Hur man renderar lösenordsskyddade dokument med GroupDocs.Viewer .NET"
 "url": "/sv/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Rendera lösenordsskyddade dokument med GroupDocs.Viewer .NET
 
 ## Introduktion

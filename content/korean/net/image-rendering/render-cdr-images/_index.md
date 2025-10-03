@@ -5,8 +5,8 @@
 "title": "CDR 이미지 렌더링"
 "url": "/ko/net/image-rendering/render-cdr-images/"
 "weight": 12
+type: docs
 ---
-
 # CDR 이미지 렌더링
 
 ## 소개

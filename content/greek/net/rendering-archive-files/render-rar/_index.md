@@ -5,8 +5,8 @@
 "title": "Αρχεία απόδοσης RAR"
 "url": "/el/net/rendering-archive-files/render-rar/"
 "weight": 13
+type: docs
 ---
-
 # Αρχεία απόδοσης RAR
 
 ## Εισαγωγή

@@ -4,8 +4,8 @@
 "title": "عرض جداول بيانات Excel بواسطة فواصل الصفحات باستخدام GroupDocs.Viewer لـ .NET"
 "url": "/ar/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # عرض جداول بيانات Excel بواسطة فواصل الصفحات باستخدام GroupDocs.Viewer لـ .NET
 
 ## مقدمة

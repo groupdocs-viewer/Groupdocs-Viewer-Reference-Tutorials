@@ -5,8 +5,8 @@
 "title": "Renderspezifische CAD-Formate (CF2)"
 "url": "/de/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Renderspezifische CAD-Formate (CF2)
 
 ## Einführung

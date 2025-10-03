@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 隐藏 Excel 中的文本溢出——综合指南"
 "url": "/zh/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 隐藏 Excel 中的文本溢出
 
 ## 介绍

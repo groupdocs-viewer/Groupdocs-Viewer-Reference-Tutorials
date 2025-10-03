@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak Excel'de Metin Taşmasını Gizleme Kapsamlı Bir Kılavuz"
 "url": "/tr/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET ile Excel'de Metin Taşmasını Gizle
 
 ## giriiş

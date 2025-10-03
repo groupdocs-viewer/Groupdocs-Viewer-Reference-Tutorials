@@ -4,8 +4,8 @@
 "title": "Renderização de documentos mestre em .NET usando GroupDocs.Viewer, conversão de HTML e integração de marca d'água"
 "url": "/pt/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Renderização de documentos mestre em .NET usando GroupDocs.Viewer: conversão de HTML e integração de marca d'água
 
 ## Introdução

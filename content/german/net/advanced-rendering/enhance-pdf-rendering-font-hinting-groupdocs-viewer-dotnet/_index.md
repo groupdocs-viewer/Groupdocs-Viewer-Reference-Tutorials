@@ -4,8 +4,8 @@
 "title": "Verbessern Sie die PDF-Wiedergabe in .NET&#58; Aktivieren Sie Font Hinting mit GroupDocs.Viewer"
 "url": "/de/net/advanced-rendering/enhance-pdf-rendering-font-hinting-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # So verbessern Sie die PDF-Wiedergabe in .NET mit GroupDocs.Viewer: Aktivieren Sie Font Hinting
 
 ## Einführung

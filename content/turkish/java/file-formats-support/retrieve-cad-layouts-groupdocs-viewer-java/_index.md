@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer ile Java'da CAD Düzenlerini ve Katmanlarını Alın"
 "url": "/tr/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Java için GroupDocs.Viewer'ı kullanarak CAD Düzenleri ve Katmanları Nasıl Alınır
 
 Mühendislik ve tasarım dünyasında, Bilgisayar Destekli Tasarım (CAD) dosyaları, tasarımlar hakkında büyük miktarda ayrıntılı bilgi depolayan vazgeçilmez araçlardır. Bu dosyalar karmaşık olabilir, etkili proje yürütme için hassas yönetim ve geri alma gerektiren birden fazla düzen ve katman içerebilir. CAD çizimlerinden belirli ayrıntıları Java'da programatik olarak çıkarmak istiyorsanız, Java için GroupDocs.Viewer sizin için ideal çözümdür. Bu eğitim, GroupDocs.Viewer kullanarak bir CAD çiziminden tüm düzenleri ve katmanları alma sürecinde size rehberlik edecektir.

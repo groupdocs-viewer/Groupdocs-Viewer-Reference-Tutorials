@@ -4,8 +4,8 @@
 "title": "Outlook adatfájlok renderelése a GroupDocs.Viewer használatával Java-ban – lépésről lépésre útmutató"
 "url": "/hu/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Outlook adatfájlok renderelése a GroupDocs.Viewer használatával Java-ban: lépésről lépésre útmutató
 
 ## Bevezetés

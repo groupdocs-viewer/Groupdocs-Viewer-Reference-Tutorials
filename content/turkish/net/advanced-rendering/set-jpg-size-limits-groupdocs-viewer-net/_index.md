@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanılarak Maksimum JPG Resim Boyutu Sınırları Nasıl Ayarlanır"
 "url": "/tr/net/advanced-rendering/set-jpg-size-limits-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanılarak Maksimum JPG Resim Boyutu Sınırları Nasıl Ayarlanır
 
 ## giriiş

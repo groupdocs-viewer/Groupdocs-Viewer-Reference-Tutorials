@@ -4,8 +4,8 @@
 "title": "Como renderizar documentos protegidos por senha com GroupDocs.Viewer .NET"
 "url": "/pt/net/security-permissions/render-password-protected-docs-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Renderizando documentos protegidos por senha com GroupDocs.Viewer .NET
 
 ## Introdução

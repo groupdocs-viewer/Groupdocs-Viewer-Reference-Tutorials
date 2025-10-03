@@ -4,8 +4,8 @@
 "title": "Jak pobierać układy i warstwy CAD za pomocą GroupDocs.Viewer .NET w celu wydajnego zarządzania projektami"
 "url": "/pl/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Jak pobierać układy i warstwy CAD za pomocą GroupDocs.Viewer .NET
 ## Wstęp
 W dziedzinie projektowania wspomaganego komputerowo (CAD) zarządzanie złożonymi rysunkami w sposób efektywny jest kluczowe, szczególnie w przypadku wielu układów i warstw w jednym pliku. Dla architektów, inżynierów i projektantów szybki dostęp do określonych informacji zwiększa produktywność. **GroupDocs.Viewer .NET** oferuje zaawansowane rozwiązanie pozwalające programistom programowo wyodrębniać układy i warstwy z rysunków CAD.

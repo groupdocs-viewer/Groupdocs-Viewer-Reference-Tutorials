@@ -5,8 +5,8 @@
 "title": "सभी लेआउट को CAD ड्रॉइंग में प्रस्तुत करें"
 "url": "/hi/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # सभी लेआउट को CAD ड्रॉइंग में प्रस्तुत करें
 
 ## परिचय

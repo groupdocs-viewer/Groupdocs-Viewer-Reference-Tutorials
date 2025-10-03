@@ -5,8 +5,8 @@
 "title": "Απόδοση σημειώσεων και προσαρμογή μονάδων χρόνου (MS Project)"
 "url": "/el/net/rendering-ms-project-documents/render-notes-and-adjust-time-ms-project/"
 "weight": 11
+type: docs
 ---
-
 # Απόδοση σημειώσεων και προσαρμογή μονάδων χρόνου (MS Project)
 
 ## Εισαγωγή

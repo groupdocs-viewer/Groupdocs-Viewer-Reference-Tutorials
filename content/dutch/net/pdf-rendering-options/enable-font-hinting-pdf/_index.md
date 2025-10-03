@@ -5,8 +5,8 @@
 "title": "Lettertypehinting inschakelen in PDF"
 "url": "/nl/net/pdf-rendering-options/enable-font-hinting-pdf/"
 "weight": 14
+type: docs
 ---
-
 # Lettertypehinting inschakelen in PDF
 
 ## Invoering

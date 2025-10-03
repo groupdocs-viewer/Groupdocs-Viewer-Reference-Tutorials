@@ -5,8 +5,8 @@
 "title": "Renderuj za pomocą zasobów osadzonych lub zewnętrznych"
 "url": "/pl/net/rendering-documents-html/render-html-resources/"
 "weight": 12
+type: docs
 ---
-
 # Renderuj za pomocą zasobów osadzonych lub zewnętrznych
 
 ## Wstęp

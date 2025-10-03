@@ -4,8 +4,8 @@
 "title": "HTTP URL'si Kullanarak GroupDocs.Viewer Java Lisansı Nasıl Ayarlanır? Tam Kılavuz"
 "url": "/tr/java/getting-started/groupdocs-viewer-java-license-http-url/"
 "weight": 1
+type: docs
 ---
-
 # HTTP URL'si Kullanarak GroupDocs.Viewer Java Lisansı Nasıl Ayarlanır
 
 Günümüzün hızlı dijital ortamında, belge yönetim araçlarının düzgün bir şekilde lisanslanması, sorunsuz işlemler için olmazsa olmazdır. Bu kapsamlı kılavuz, HTTP URL'si kullanarak Java'da GroupDocs.Viewer için bir lisans ayarlamayı gösterecektir; yerel indirmelere gerek kalmadan iş akışınızı düzene sokar. Bu süreçte ustalaşmak hem uygulama uyumluluğunu hem de verimliliği artırır.

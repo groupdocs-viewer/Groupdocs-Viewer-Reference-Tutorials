@@ -5,8 +5,8 @@
 "title": "Vykreslení tiskových oblastí pomocí GroupDocs.Viewer pro .NET"
 "url": "/cs/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Vykreslení tiskových oblastí pomocí GroupDocs.Viewer pro .NET
 
 ## Zavedení

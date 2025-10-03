@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer का उपयोग करके Java में CF2 फ़ाइलों को HTML, JPG, PNG, PDF में कैसे प्रस्तुत करें"
 "url": "/hi/java/rendering-basics/render-cf2-files-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # व्यापक गाइड: Java में GroupDocs.Viewer का उपयोग करके CF2 फ़ाइलों को विभिन्न प्रारूपों में प्रस्तुत करना
 
 ## परिचय

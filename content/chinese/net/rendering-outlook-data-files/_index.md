@@ -5,8 +5,8 @@
 "title": "渲染 Outlook 数据文件（PST、OST）"
 "url": "/zh/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # 渲染 Outlook 数据文件（PST、OST）
 
 ## 介绍

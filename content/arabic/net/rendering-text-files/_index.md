@@ -5,8 +5,8 @@
 "title": "عرض ملفات النصوص"
 "url": "/ar/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # عرض ملفات النصوص
 
 ## مقدمة

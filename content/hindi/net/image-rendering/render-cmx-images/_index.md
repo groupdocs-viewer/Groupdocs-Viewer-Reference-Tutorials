@@ -5,8 +5,8 @@
 "title": "CMX छवियाँ प्रस्तुत करें"
 "url": "/hi/net/image-rendering/render-cmx-images/"
 "weight": 13
+type: docs
 ---
-
 # CMX छवियाँ प्रस्तुत करें
 
 ## परिचय

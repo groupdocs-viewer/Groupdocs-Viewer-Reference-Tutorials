@@ -4,8 +4,8 @@
 "title": "Cara Mengamankan File DOCX sebagai PDF Menggunakan GroupDocs.Viewer .NET&#58; Panduan Langkah demi Langkah"
 "url": "/id/net/security-permissions/secure-docx-pdf-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengamankan File DOCX sebagai PDF Menggunakan GroupDocs.Viewer .NET: Panduan Langkah demi Langkah
 
 Di era digital saat ini, menjaga dokumen sensitif sangatlah penting. Baik Anda seorang pebisnis yang melindungi kekayaan intelektual atau seorang individu yang mengamankan informasi pribadi, mengonversi file Word menjadi PDF yang dilindungi kata sandi dapat menjadi hal yang transformatif. Tutorial ini memandu Anda menggunakan GroupDocs.Viewer for .NET untuk mengubah dokumen DOCX menjadi PDF yang dilindungi dengan batasan tertentu seperti menolak pencetakan.

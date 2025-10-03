@@ -4,8 +4,8 @@
 "title": "Jak vykreslit dokumenty Visio jako HTML, JPG, PNG a PDF v .NET pomocí GroupDocs.Viewer"
 "url": "/cs/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokumenty Visio jako HTML, JPG, PNG a PDF pomocí GroupDocs.Viewer v .NET
 
 ## Zavedení

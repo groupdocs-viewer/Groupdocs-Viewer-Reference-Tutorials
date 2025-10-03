@@ -4,8 +4,8 @@
 "title": "Jak ładować dokumenty ze specyficznym kodowaniem w Javie za pomocą GroupDocs.Viewer"
 "url": "/pl/java/document-loading/groupdocs-viewer-java-specific-encoding/"
 "weight": 1
+type: docs
 ---
-
 # Jak ładować dokumenty ze specyficznym kodowaniem w Javie za pomocą GroupDocs.Viewer
 
 ## Wstęp

@@ -4,8 +4,8 @@
 "title": "Jak otáčet stránky PDF pomocí GroupDocs.Viewer pro .NET – Průvodce pro vývojáře"
 "url": "/cs/net/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak otáčet stránky PDF pomocí GroupDocs.Viewer pro .NET: Průvodce pro vývojáře
 
 ## Zavedení

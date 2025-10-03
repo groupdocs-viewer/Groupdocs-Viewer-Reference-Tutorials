@@ -4,8 +4,8 @@
 "title": "Реализация измеренной лицензии для GroupDocs.Viewer в Java&#58; Руководство разработчика"
 "url": "/ru/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Реализация измеренной лицензии для GroupDocs.Viewer для Java: руководство разработчика
 
 ## Введение

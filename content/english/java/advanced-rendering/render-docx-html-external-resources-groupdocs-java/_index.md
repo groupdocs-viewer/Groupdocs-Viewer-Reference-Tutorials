@@ -8,10 +8,8 @@ keywords:
 - Convert DOCX to HTML
 - GroupDocs Viewer Java
 - rendering DOCX files
-
+type: docs
 ---
-
-
 # Convert DOCX to HTML with External Resources Using GroupDocs.Viewer for Java
 
 ## Introduction

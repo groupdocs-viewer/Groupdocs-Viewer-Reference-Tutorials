@@ -5,8 +5,8 @@
 "title": "GroupDocs.Viewer for Java の包括的なチュートリアルと例"
 "url": "/ja/java/"
 "weight": 10
+type: docs
 ---
-
 # GroupDocs.Viewer for Java の包括的なチュートリアルと例
 
 ## 導入

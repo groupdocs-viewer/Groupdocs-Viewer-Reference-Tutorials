@@ -4,8 +4,8 @@
 "title": "Implementera effektiv loggning i GroupDocs.Viewer .NET för konsol- och filutdata"
 "url": "/sv/net/performance-optimization/logging-groupdocs-viewer-net-console-file/"
 "weight": 1
+type: docs
 ---
-
 # Implementera effektiv loggning i GroupDocs.Viewer .NET
 
 ## Introduktion

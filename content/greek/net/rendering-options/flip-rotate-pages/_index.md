@@ -5,8 +5,8 @@
 "title": "Αναστροφή και περιστροφή σελίδων"
 "url": "/el/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Αναστροφή και περιστροφή σελίδων
 
 ## Εισαγωγή

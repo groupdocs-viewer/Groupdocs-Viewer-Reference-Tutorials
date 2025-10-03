@@ -5,8 +5,8 @@
 "title": "Opções de renderização de planilha"
 "url": "/pt/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # Opções de renderização de planilha
 
 ## Introdução

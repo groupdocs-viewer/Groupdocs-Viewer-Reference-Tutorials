@@ -4,8 +4,8 @@
 "title": "Comment afficher les lignes de grille dans les feuilles de calcul Java à l'aide de GroupDocs.Viewer"
 "url": "/fr/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Comment afficher les lignes de grille dans les feuilles de calcul Java à l'aide de GroupDocs.Viewer
 
 ## Introduction

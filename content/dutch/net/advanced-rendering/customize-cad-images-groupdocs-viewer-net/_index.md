@@ -4,8 +4,8 @@
 "title": "Pas CAD-afbeeldingen aan met de geavanceerde renderingtechnieken van GroupDocs.Viewer .NET"
 "url": "/nl/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # CAD-afbeeldingen renderen en aanpassen met GroupDocs.Viewer .NET
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Zabezpečení PDF souborů pomocí GroupDocs.Viewer v Javě – Průvodce ochranou heslem a oprávněními"
 "url": "/cs/java/security-permissions/protect-pdf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Zabezpečte své PDF soubory pomocí GroupDocs.Viewer v Javě
 
 ## Zavedení

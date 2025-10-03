@@ -4,8 +4,8 @@
 "title": "Настройка меток электронной почты в GroupDocs.Viewer для .NET&#58; Полное руководство по переименованию полей"
 "url": "/ru/net/custom-rendering/customize-email-labels-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Настройка меток электронной почты в GroupDocs.Viewer для .NET: полное руководство по переименованию полей
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java を使用してメールを HTML に変換するときにメールフィールドの名前を変更する方法"
 "url": "/ja/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java でメールを HTML にレンダリングする際にメールフィールドの名前を変更する方法
 
 ## 導入

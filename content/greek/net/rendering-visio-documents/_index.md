@@ -5,8 +5,8 @@
 "title": "Απόδοση εγγράφων του Visio"
 "url": "/el/net/rendering-visio-documents/"
 "weight": 34
+type: docs
 ---
-
 # Απόδοση εγγράφων του Visio
 
 ## Εισαγωγή

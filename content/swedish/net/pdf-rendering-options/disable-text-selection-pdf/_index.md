@@ -5,8 +5,8 @@
 "title": "Inaktivera textmarkering i PDF"
 "url": "/sv/net/pdf-rendering-options/disable-text-selection-pdf/"
 "weight": 13
+type: docs
 ---
-
 # Inaktivera textmarkering i PDF
 
 ## Introduktion

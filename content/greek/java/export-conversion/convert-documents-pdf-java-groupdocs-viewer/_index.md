@@ -4,8 +4,8 @@
 "title": "Μετατροπή εγγράφων σε PDF σε Java χρησιμοποιώντας το GroupDocs.Viewer® Ένας πλήρης οδηγός"
 "url": "/el/java/export-conversion/convert-documents-pdf-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Μετατροπή εγγράφων σε PDF σε Java με το GroupDocs.Viewer
 
 ## Εισαγωγή

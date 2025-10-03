@@ -4,8 +4,8 @@
 "title": "Récupérer les informations d'affichage d'un projet MS avec GroupDocs.Viewer .NET | Métadonnées et propriétés"
 "url": "/fr/net/metadata-properties/retrieve-ms-project-view-info-groupdocs-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Récupérer les informations de vue du projet MS à l'aide de GroupDocs.Viewer .NET
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Merender Dokumen sebagai Gambar dengan Lapisan Teks di Java Menggunakan GroupDocs.Viewer"
 "url": "/id/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Merender Dokumen sebagai Gambar dengan Lapisan Teks di Java Menggunakan GroupDocs.Viewer
 ## Tutorial Rendering Lanjutan
 **URL SEO saat ini**: /render-dokumen-menjadi-gambar-dengan-lapisan-teks-java

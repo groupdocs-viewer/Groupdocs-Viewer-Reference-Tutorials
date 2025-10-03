@@ -4,8 +4,8 @@
 "title": "Apple Numbers dokumentumok renderelése Java-ban a GroupDocs.Viewer használatával – Átfogó útmutató"
 "url": "/hu/java/file-formats-support/render-numbers-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Apple Numbers dokumentumok renderelése a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés

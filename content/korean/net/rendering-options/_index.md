@@ -5,8 +5,8 @@
 "title": "렌더링 옵션"
 "url": "/ko/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # 렌더링 옵션
 
 

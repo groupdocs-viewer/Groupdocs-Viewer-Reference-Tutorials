@@ -5,8 +5,8 @@
 "title": "Omfattande handledningar och exempel på GroupDocs.Viewer för .NET"
 "url": "/sv/net/"
 "weight": 10
+type: docs
 ---
-
 # Omfattande handledningar och exempel på GroupDocs.Viewer för .NET
 
 ## Introduktion

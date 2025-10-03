@@ -4,8 +4,8 @@
 "title": "Cách lấy bố cục và lớp CAD bằng GroupDocs.Viewer .NET để quản lý thiết kế hiệu quả"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Cách lấy lại bố cục và lớp CAD bằng GroupDocs.Viewer .NET
 ## Giới thiệu
 Trong lĩnh vực Thiết kế hỗ trợ máy tính (CAD), việc quản lý các bản vẽ phức tạp một cách hiệu quả là rất quan trọng, đặc biệt là khi xử lý nhiều bố cục và lớp trong một tệp duy nhất. Đối với các kiến trúc sư, kỹ sư và nhà thiết kế, việc truy cập thông tin cụ thể một cách nhanh chóng giúp nâng cao năng suất. **GroupDocs.Viewer .NET** cung cấp giải pháp mạnh mẽ bằng cách cho phép các nhà phát triển trích xuất bố cục và lớp từ bản vẽ CAD theo chương trình.

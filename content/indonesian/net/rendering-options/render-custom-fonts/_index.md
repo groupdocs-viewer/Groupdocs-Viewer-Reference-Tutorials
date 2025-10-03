@@ -5,8 +5,8 @@
 "title": "Render dengan Font Kustom"
 "url": "/id/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Render dengan Font Kustom
 
 ## Perkenalan

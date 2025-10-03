@@ -4,8 +4,8 @@
 "title": "Java&#58; So rendern Sie versteckte Seiten mit GroupDocs.Viewer"
 "url": "/de/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: So rendern Sie versteckte Seiten mit GroupDocs.Viewer
 
 ## Einführung

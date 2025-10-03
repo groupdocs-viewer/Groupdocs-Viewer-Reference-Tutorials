@@ -4,8 +4,8 @@
 "title": "การนำการตรวจจับไฟล์และการตรวจสอบการเข้ารหัสไปใช้ใน Java ด้วย GroupDocs.Viewer"
 "url": "/th/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/"
 "weight": 1
+type: docs
 ---
-
 # การนำการตรวจจับไฟล์และการตรวจสอบการเข้ารหัสไปใช้โดยใช้ GroupDocs.Viewer สำหรับ Java
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - rendering AI files
 - GroupDocs.Viewer .NET
 - AI to HTML conversion
-
+type: docs
 ---
-
-
 # Comprehensive Guide to Rendering AI Files using GroupDocs.Viewer .NET for Developers
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java&#58; URL에서 문서를 효율적으로 로드하고 렌더링합니다."
 "url": "/ko/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java 마스터하기: URL에서 문서를 효율적으로 로드하고 렌더링하기
 
 ## 소개

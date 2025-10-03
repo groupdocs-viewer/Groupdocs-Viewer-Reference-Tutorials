@@ -4,8 +4,8 @@
 "title": "Comment récupérer des informations d'archive à l'aide de GroupDocs.Viewer pour .NET ? Un guide complet"
 "url": "/fr/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Comment récupérer des informations d'archives à l'aide de GroupDocs.Viewer pour .NET : guide complet
 
 ## Introduction

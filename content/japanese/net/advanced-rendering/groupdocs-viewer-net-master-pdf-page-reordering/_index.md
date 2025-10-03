@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer を使用した .NET での PDF ページの並べ替えのマスター 開発者ガイド"
 "url": "/ja/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET で PDF ページの並べ替えをマスターする: 包括的な開発者ガイド
 
 ## 導入

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET Kullanarak EMZ/EMF Dosyaları Nasıl Oluşturulur? Kapsamlı Bir Kılavuz"
 "url": "/tr/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET Kullanılarak EMZ/EMF Dosyaları Nasıl Oluşturulur: Kapsamlı Bir Kılavuz
 ## Rendering Temelleri
 Bu eğitim, GroupDocs.Viewer for .NET kullanarak Gelişmiş Meta Dosyası (EMF) veya Gömülü Meta Dosyası (EMZ) dosyalarının nasıl işleneceğini gösterir. Çok yönlü dosya dönüştürme yeteneklerini uygulamanıza entegre ediyor veya belgeleri yönetiyor olun, bu kılavuz bu biçimleri HTML, JPG, PNG ve PDF'ye dönüştürmeyi kapsar.

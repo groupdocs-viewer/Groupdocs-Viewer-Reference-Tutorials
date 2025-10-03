@@ -4,8 +4,8 @@
 "title": "Jak ustawić licencję GroupDocs.Viewer Java przy użyciu adresu URL HTTP? Kompletny przewodnik"
 "url": "/pl/java/getting-started/groupdocs-viewer-java-license-http-url/"
 "weight": 1
+type: docs
 ---
-
 # Jak ustawić licencję GroupDocs.Viewer Java przy użyciu adresu URL HTTP
 
 dzisiejszym szybko zmieniającym się cyfrowym środowisku, właściwe licencjonowanie narzędzi do zarządzania dokumentami jest niezbędne dla płynnej pracy. Ten kompleksowy przewodnik pokaże Ci, jak ustawić licencję dla GroupDocs.Viewer w Javie przy użyciu adresu URL HTTP — usprawniając Twój przepływ pracy bez potrzeby lokalnego pobierania. Opanowanie tego procesu zwiększa zarówno zgodność aplikacji, jak i wydajność.

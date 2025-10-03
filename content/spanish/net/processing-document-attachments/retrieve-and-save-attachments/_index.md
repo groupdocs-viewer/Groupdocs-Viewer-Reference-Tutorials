@@ -5,8 +5,8 @@
 "title": "Recuperar y guardar archivos adjuntos de documentos"
 "url": "/es/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # Recuperar y guardar archivos adjuntos de documentos
 
 ## Introducción

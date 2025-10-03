@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer cho Java&#58; Truy xuất thông tin và thông tin chi tiết về chế độ xem tài liệu"
 "url": "/vi/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ chế độ xem tài liệu với GroupDocs.Viewer cho Java
 ## Kỹ thuật dựng hình nâng cao
 **URL SEO:** groupdocs-viewer-java-document-views

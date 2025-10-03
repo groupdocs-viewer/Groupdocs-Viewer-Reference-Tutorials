@@ -4,8 +4,8 @@
 "title": "การเรนเดอร์เค้าโครง CAD ที่มีประสิทธิภาพด้วย GroupDocs.Viewer สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอน"
 "url": "/th/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # การเรนเดอร์เค้าโครง CAD ที่มีประสิทธิภาพด้วย GroupDocs.Viewer สำหรับ .NET
 
 ## การแนะนำ

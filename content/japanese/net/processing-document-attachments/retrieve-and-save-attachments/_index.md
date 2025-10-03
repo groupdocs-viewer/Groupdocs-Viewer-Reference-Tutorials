@@ -5,8 +5,8 @@
 "title": "ドキュメントの添付ファイルを取得して保存する"
 "url": "/ja/net/processing-document-attachments/retrieve-and-save-attachments/"
 "weight": 12
+type: docs
 ---
-
 # ドキュメントの添付ファイルを取得して保存する
 
 ## 導入

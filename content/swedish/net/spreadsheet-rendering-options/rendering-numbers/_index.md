@@ -5,8 +5,8 @@
 "title": "Rendering av siffror"
 "url": "/sv/net/spreadsheet-rendering-options/rendering-numbers/"
 "weight": 15
+type: docs
 ---
-
 # Rendering av siffror
 
 ## Introduktion

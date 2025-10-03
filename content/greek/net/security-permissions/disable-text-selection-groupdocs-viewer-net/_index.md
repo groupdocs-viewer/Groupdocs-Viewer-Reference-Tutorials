@@ -4,8 +4,8 @@
 "title": "Πώς να απενεργοποιήσετε την επιλογή κειμένου σε PDF χρησιμοποιώντας το GroupDocs.Viewer .NET για βελτιωμένη ασφάλεια"
 "url": "/el/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να χρησιμοποιήσετε το GroupDocs.Viewer .NET για να απενεργοποιήσετε την επιλογή κειμένου κατά την απόδοση PDF ως HTML
 
 ## Εισαγωγή

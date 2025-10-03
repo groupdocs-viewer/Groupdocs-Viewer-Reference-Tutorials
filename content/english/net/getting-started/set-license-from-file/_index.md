@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Getting Started"]
 tags: ["license", "setup", "configuration", "dotnet"]
+type: docs
 ---
-
 # GroupDocs Viewer .NET License Setup - Complete Implementation Guide
 
 ## Introduction

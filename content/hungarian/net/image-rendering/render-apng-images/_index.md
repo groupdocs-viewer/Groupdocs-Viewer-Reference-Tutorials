@@ -5,8 +5,8 @@
 "title": "APNG képek renderelése"
 "url": "/hu/net/image-rendering/render-apng-images/"
 "weight": 11
+type: docs
 ---
-
 # APNG képek renderelése
 
 ## Bevezetés

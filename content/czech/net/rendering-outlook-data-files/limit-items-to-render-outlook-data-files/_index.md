@@ -5,8 +5,8 @@
 "title": "Omezení počtu položek k vykreslení v datových souborech Outlooku"
 "url": "/cs/net/rendering-outlook-data-files/limit-items-to-render-outlook-data-files/"
 "weight": 12
+type: docs
 ---
-
 # Omezení počtu položek k vykreslení v datových souborech Outlooku
 
 ## Zavedení

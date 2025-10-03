@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Viewer .NET
 - resize images in .NET
 - image resizing for documents
-
+type: docs
 ---
-
-
 # How to Resize Images with GroupDocs.Viewer .NET: A Step-by-Step Guide for Developers
 
 ## Introduction

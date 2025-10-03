@@ -5,8 +5,8 @@
 "title": "Renderizar documento a JPG/PNG"
 "url": "/es/net/rendering-documents-images/render-jpg-png/"
 "weight": 10
+type: docs
 ---
-
 # Renderizar documento a JPG/PNG
 
 ## Introducción

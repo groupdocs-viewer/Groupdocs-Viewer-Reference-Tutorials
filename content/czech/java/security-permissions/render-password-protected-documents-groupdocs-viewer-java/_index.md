@@ -4,8 +4,8 @@
 "title": "Vykreslení dokumentů chráněných heslem v Javě pomocí GroupDocs.Viewer"
 "url": "/cs/java/security-permissions/render-password-protected-documents-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Vykreslení dokumentů chráněných heslem v Javě pomocí GroupDocs.Viewer
 
 ## Zavedení

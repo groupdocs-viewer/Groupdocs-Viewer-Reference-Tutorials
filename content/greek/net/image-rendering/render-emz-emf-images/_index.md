@@ -5,8 +5,8 @@
 "title": "Απόδοση εικόνων EMZ και EMF"
 "url": "/el/net/image-rendering/render-emz-emf-images/"
 "weight": 14
+type: docs
 ---
-
 # Απόδοση εικόνων EMZ και EMF
 
 ## Εισαγωγή

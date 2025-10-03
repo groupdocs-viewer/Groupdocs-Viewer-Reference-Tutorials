@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ไฟล์ข้อความ (.txt)"
 "url": "/th/net/rendering-text-files/render-txt/"
 "weight": 10
+type: docs
 ---
-
 # เรนเดอร์ไฟล์ข้อความ (.txt)
 
 ## การแนะนำ

@@ -4,8 +4,8 @@
 "title": "जावा में GroupDocs.Viewer के साथ पंक्तियों और स्तंभों द्वारा एक्सेल शीट को विभाजित करें&#58; एक व्यापक गाइड"
 "url": "/hi/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # जावा में GroupDocs.Viewer का उपयोग करके पंक्तियों और स्तंभों द्वारा एक्सेल शीट को विभाजित करना
 
 ## परिचय

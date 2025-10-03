@@ -9,8 +9,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Java Development"]
 tags: ["GroupDocs-Viewer", "custom-rendering", "java-tutorials", "document-processing"]
+type: docs
 ---
-
 # GroupDocs Viewer Java Custom Rendering - Complete Tutorial Guide (2025)
 
 Are you struggling with standard document rendering that doesn't quite fit your application's needs? You're not alone. Many Java developers find themselves needing more control over how documents appear in their applications - whether it's custom fonts, specific layouts, or specialized processing for different file types.

@@ -4,8 +4,8 @@
 "title": "Personalize imagens CAD com GroupDocs.Viewer .NET - Técnicas avançadas de renderização"
 "url": "/pt/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como renderizar e personalizar imagens CAD usando GroupDocs.Viewer .NET
 
 ## Introdução

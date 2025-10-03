@@ -5,8 +5,8 @@
 "title": "載入文檔時指定文件類型"
 "url": "/zh-hant/net/advanced-loading/specify-file-type/"
 "weight": 10
+type: docs
 ---
-
 # 載入文檔時指定文件類型
 
 ## 介紹

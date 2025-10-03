@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET के साथ दस्तावेज़ जानकारी निकालें और आउटपुट अनुकूलित करें एक व्यापक गाइड"
 "url": "/hi/net/custom-rendering/groupdocs-viewer-net-extract-info-customize-output/"
 "weight": 1
+type: docs
 ---
-
 # दस्तावेज़ जानकारी निकालें और GroupDocs.Viewer .NET के साथ आउटपुट अनुकूलित करें
 ## कस्टम रेंडरिंग ट्यूटोरियल
 ### आप क्या सीखेंगे:

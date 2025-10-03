@@ -4,8 +4,8 @@
 "title": "Διαχωρισμός σχεδίων CAD σε πλακίδια χρησιμοποιώντας το GroupDocs.Viewer Java για αποτελεσματική απόδοση"
 "url": "/el/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Διαχωρίστε τα σχέδια CAD σε πλακίδια με το GroupDocs.Viewer Java
 
 ## Εισαγωγή

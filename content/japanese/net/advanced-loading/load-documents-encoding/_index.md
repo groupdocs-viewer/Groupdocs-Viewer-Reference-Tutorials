@@ -5,8 +5,8 @@
 "title": "特定のエンコードでドキュメントを読み込む"
 "url": "/ja/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # 特定のエンコードでドキュメントを読み込む
 
 ## 導入

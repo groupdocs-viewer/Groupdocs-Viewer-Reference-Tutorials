@@ -5,8 +5,8 @@
 "title": "Wyświetl śledzone zmiany"
 "url": "/pl/net/rendering-word-processing-documents/render-tracked-changes/"
 "weight": 10
+type: docs
 ---
-
 # Wyświetl śledzone zmiany
 
 ## Wstęp

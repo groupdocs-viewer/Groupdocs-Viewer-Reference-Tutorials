@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET의 고급 렌더링 기술을 사용하여 CAD 이미지 사용자 지정"
 "url": "/ko/net/advanced-rendering/customize-cad-images-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET을 사용하여 CAD 이미지를 렌더링하고 사용자 지정하는 방법
 
 ## 소개

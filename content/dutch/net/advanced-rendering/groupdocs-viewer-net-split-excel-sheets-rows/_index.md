@@ -4,8 +4,8 @@
 "title": "Splits Excel-bladen op in pagina's per rij met GroupDocs.Viewer .NET voor efficiënt gegevensbeheer"
 "url": "/nl/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Excel-bladen opsplitsen in pagina's per rij met GroupDocs.Viewer .NET
 
 ## Invoering

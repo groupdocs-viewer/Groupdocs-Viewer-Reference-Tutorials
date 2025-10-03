@@ -4,8 +4,8 @@
 "title": "Java&#58;如何使用 GroupDocs.Viewer 呈現隱藏頁面"
 "url": "/zh-hant/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java：如何使用 GroupDocs.Viewer 呈現隱藏頁面
 
 ## 介紹

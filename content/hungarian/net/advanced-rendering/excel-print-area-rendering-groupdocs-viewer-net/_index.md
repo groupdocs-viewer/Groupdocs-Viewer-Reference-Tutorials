@@ -4,8 +4,8 @@
 "title": "Hatékony Excel nyomtatási terület renderelése a GroupDocs.Viewer for .NET használatával"
 "url": "/hu/net/advanced-rendering/excel-print-area-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Hatékony Excel nyomtatási terület renderelése a GroupDocs.Viewer for .NET használatával
 
 ## Bevezetés

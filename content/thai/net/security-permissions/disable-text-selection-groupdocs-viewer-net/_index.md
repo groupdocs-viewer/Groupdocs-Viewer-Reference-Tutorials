@@ -4,8 +4,8 @@
 "title": "วิธีปิดใช้งานการเลือกข้อความใน PDF โดยใช้ GroupDocs.Viewer .NET เพื่อความปลอดภัยขั้นสูง"
 "url": "/th/net/security-permissions/disable-text-selection-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # วิธีใช้ GroupDocs.Viewer .NET เพื่อปิดการใช้งานการเลือกข้อความเมื่อแสดง PDF เป็น HTML
 
 ## การแนะนำ

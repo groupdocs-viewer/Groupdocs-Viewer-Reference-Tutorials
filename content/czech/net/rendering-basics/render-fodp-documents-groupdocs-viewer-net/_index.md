@@ -4,8 +4,8 @@
 "title": "Jak vykreslit dokumenty FODP pomocí GroupDocs.Viewer .NET – Komplexní průvodce"
 "url": "/cs/net/rendering-basics/render-fodp-documents-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit dokumenty FODP pomocí GroupDocs.Viewer .NET: Komplexní průvodce
 
 ## Zavedení

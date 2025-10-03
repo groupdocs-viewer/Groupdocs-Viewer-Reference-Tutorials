@@ -4,8 +4,8 @@
 "title": "Как визуализировать файлы данных Outlook с помощью GroupDocs.Viewer в Java? Пошаговое руководство"
 "url": "/ru/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать файлы данных Outlook с помощью GroupDocs.Viewer в Java: пошаговое руководство
 
 ## Введение

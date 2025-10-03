@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer Java&#58; Эффективная загрузка и отображение документов с URL-адресов"
 "url": "/ru/java/document-loading/groupdocs-viewer-java-load-render-url-documents/"
 "weight": 1
+type: docs
 ---
-
 # Master GroupDocs.Viewer Java: эффективная загрузка и отображение документов с URL-адресов
 
 ## Введение

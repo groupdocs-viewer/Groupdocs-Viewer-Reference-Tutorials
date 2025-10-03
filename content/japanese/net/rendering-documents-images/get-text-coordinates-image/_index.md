@@ -5,8 +5,8 @@
 "title": "画像レンダリングのためのテキスト座標を取得する"
 "url": "/ja/net/rendering-documents-images/get-text-coordinates-image/"
 "weight": 12
+type: docs
 ---
-
 # 画像レンダリングのためのテキスト座標を取得する
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "उन्नत उपयोग (कैशिंग)"
 "url": "/hi/net/advanced-usage-caching/"
 "weight": 22
+type: docs
 ---
-
 # उन्नत उपयोग (कैशिंग)
 
 

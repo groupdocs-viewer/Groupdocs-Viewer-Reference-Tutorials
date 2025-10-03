@@ -4,8 +4,8 @@
 "title": "Jak nastavit licence v GroupDocs.Viewer – Průvodce nastavením souborů a URL v Javě"
 "url": "/cs/java/getting-started/groupdocs-viewer-java-license-setup/"
 "weight": 1
+type: docs
 ---
-
 # Jak nastavit licence v GroupDocs.Viewer v Javě: Průvodce nastavením souborů a URL
 
 ## Zavedení

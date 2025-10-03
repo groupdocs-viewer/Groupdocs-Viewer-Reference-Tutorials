@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 将文档转换为 JPG 格式——综合指南"
 "url": "/zh/net/rendering-basics/render-documents-jpg-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 将文档转换为 JPG：综合指南
 
 ## 介绍

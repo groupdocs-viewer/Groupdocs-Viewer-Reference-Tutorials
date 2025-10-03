@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer Java 将 CAD 图纸拆分为图块以实现高效渲染"
 "url": "/zh/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer Java 将 CAD 图纸拆分成图块
 
 ## 介绍

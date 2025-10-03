@@ -4,8 +4,8 @@
 "title": "Java HPG renderelés GroupDocs.Viewer használatával – Teljes körű útmutató"
 "url": "/hu/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Átfogó útmutató a Java HPG renderelés megvalósításához a GroupDocs.Viewer segítségével
 
 ## Bevezetés

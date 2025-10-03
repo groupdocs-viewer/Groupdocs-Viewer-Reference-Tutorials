@@ -5,8 +5,8 @@
 "title": "Vykreslení všech rozvržení ve výkresech CAD"
 "url": "/cs/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Vykreslení všech rozvržení ve výkresech CAD
 
 ## Zavedení

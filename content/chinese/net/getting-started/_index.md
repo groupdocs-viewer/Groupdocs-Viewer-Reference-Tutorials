@@ -5,8 +5,8 @@
 "title": "入门"
 "url": "/zh/net/getting-started/"
 "weight": 26
+type: docs
 ---
-
 # 入门
 
 

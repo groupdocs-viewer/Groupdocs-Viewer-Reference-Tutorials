@@ -4,8 +4,8 @@
 "title": "Απόδοση εγγράφων ως εικόνες με επίπεδο κειμένου σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση εγγράφων ως εικόνες με επίπεδο κειμένου σε Java χρησιμοποιώντας το GroupDocs.Viewer
 ## Προχωρημένο σεμινάριο απόδοσης
 **Τρέχουσα διεύθυνση URL SEO**: /render-documents-to-images-with-text-layer-java

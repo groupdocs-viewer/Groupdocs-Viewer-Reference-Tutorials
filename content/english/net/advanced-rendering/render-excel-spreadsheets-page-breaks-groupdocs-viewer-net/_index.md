@@ -8,10 +8,8 @@ keywords:
 - render excel spreadsheets
 - groupdocs viewer net
 - excel file rendering
-
+type: docs
 ---
-
-
 # Render Excel Spreadsheets by Page Breaks Using GroupDocs.Viewer for .NET
 
 ## Introduction

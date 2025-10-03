@@ -4,8 +4,8 @@
 "title": "Så här hämtar du arkivinformation med GroupDocs.Viewer för .NET - En omfattande guide"
 "url": "/sv/net/metadata-properties/groupdocs-viewer-net-retrieve-archive-info/"
 "weight": 1
+type: docs
 ---
-
 # Så här hämtar du arkivinformation med GroupDocs.Viewer för .NET: En omfattande guide
 
 ## Introduktion

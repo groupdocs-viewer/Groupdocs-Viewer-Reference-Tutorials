@@ -4,8 +4,8 @@
 "title": "Como dividir desenhos CAD em blocos usando o GroupDocs.Viewer .NET para renderização eficiente"
 "url": "/pt/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Como dividir desenhos CAD em blocos com o GroupDocs.Viewer .NET
 
 ## Introdução

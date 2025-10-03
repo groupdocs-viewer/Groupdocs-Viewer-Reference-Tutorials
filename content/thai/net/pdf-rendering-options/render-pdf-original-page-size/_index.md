@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ PDF ด้วยขนาดหน้าต้นฉบับ"
 "url": "/th/net/pdf-rendering-options/render-pdf-original-page-size/"
 "weight": 17
+type: docs
 ---
-
 # เรนเดอร์ PDF ด้วยขนาดหน้าต้นฉบับ
 
 ## การแนะนำ

@@ -5,8 +5,8 @@
 "title": "渲染選項"
 "url": "/zh-hant/net/rendering-options/"
 "weight": 23
+type: docs
 ---
-
 # 渲染選項
 
 

@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET के साथ छवियों का आकार कैसे बदलें डेवलपर्स के लिए एक चरण-दर-चरण मार्गदर्शिका"
 "url": "/hi/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET के साथ छवियों का आकार कैसे बदलें: डेवलपर्स के लिए चरण-दर-चरण मार्गदर्शिका
 
 ## परिचय

@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Processing"]
 tags: ["cancellation-token", "document-rendering", "performance"]
+type: docs
 ---
-
 # Cancel Document Rendering .NET - Complete Cancellation Token Guide
 
 ## Introduction

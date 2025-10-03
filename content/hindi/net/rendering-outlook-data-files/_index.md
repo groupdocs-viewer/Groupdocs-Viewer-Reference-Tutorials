@@ -5,8 +5,8 @@
 "title": "आउटलुक डेटा फ़ाइलें (PST, OST) रेंडर करना"
 "url": "/hi/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # आउटलुक डेटा फ़ाइलें (PST, OST) रेंडर करना
 
 ## परिचय

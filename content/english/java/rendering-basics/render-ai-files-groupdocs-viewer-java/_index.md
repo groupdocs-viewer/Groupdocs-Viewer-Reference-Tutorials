@@ -8,10 +8,8 @@ keywords:
 - render AI files
 - GroupDocs Viewer Java
 - Adobe Illustrator conversion
-
+type: docs
 ---
-
-
 # Render AI Files Using GroupDocs.Viewer for Java: A Comprehensive Guide
 
 ## Introduction

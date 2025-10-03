@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/ja/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # ドキュメント添付ファイルの処理
 
 ## 導入

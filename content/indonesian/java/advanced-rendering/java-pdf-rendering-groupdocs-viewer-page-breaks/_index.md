@@ -4,8 +4,8 @@
 "title": "Java PDF Rendering dengan GroupDocs.Viewer; Implementasi Page Breaks dalam Spreadsheet"
 "url": "/id/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Java PDF Rendering: GroupDocs.Viewer dengan Page Breaks
 
 Manfaatkan kekuatan rendering spreadsheet di aplikasi Java Anda menggunakan GroupDocs.Viewer. Panduan lengkap ini akan menunjukkan kepada Anda cara menerapkan rendering PDF Java dengan pemisah halaman untuk konversi yang lancar ke PDF.

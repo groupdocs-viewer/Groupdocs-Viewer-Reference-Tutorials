@@ -4,8 +4,8 @@
 "title": "OBJ HTML/JPG/PNG/PDF konvertálás elsajátítása Java nyelven a GroupDocs.Viewer használatával"
 "url": "/hu/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Fájlkonvertálás elsajátítása: OBJ konvertálása HTML/JPG/PNG/PDF formátumba Java-ban a GroupDocs.Viewer használatával
 
 ## Bevezetés

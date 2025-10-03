@@ -4,8 +4,8 @@
 "title": "CHM-bestanden renderen met GroupDocs.Viewer Java&#58; een uitgebreide handleiding"
 "url": "/nl/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # CHM-bestanden renderen met GroupDocs.Viewer Java: een uitgebreide handleiding
 ## Invoering
 Wilt u gecompileerde HTML Help (CHM)-bestanden renderen naar breder ondersteunde formaten zoals HTML, JPG, PNG en PDF? Of het nu voor archiveringsdoeleinden is of om de toegankelijkheid op verschillende platforms te verbeteren, het converteren van deze documenten kan een revolutie teweegbrengen. Deze tutorial laat zien hoe u dit naadloos kunt doen met GroupDocs.Viewer Java. U leert de ins en outs van het efficiënt renderen van CHM-bestanden met deze krachtige bibliotheek.

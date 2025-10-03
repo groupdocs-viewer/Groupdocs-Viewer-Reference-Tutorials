@@ -4,8 +4,8 @@
 "title": "Képek átméretezése a GroupDocs.Viewer .NET segítségével – Lépésről lépésre útmutató fejlesztőknek"
 "url": "/hu/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Képek átméretezése a GroupDocs.Viewer .NET segítségével: lépésről lépésre útmutató fejlesztőknek
 
 ## Bevezetés

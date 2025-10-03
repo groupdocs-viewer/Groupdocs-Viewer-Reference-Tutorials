@@ -4,8 +4,8 @@
 "title": "Táblázatkezelő renderelés optimalizálása a GroupDocs.Viewer for .NET segítségével – Üres oszlopok kihagyása"
 "url": "/hu/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Táblázatkezelő renderelés optimalizálása a GroupDocs.Viewer for .NET segítségével
 ## Hogyan lehet kihagyni az üres oszlopok megjelenítését a táblázatokban a GroupDocs.Viewer .NET használatával?
 ### Bevezetés

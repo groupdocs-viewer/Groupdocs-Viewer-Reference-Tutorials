@@ -4,8 +4,8 @@
 "title": "如何使用 GroupDocs.Viewer .NET 将 CAD 图纸拆分为图块以实现高效渲染"
 "url": "/zh/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 如何使用 GroupDocs.Viewer .NET 将 CAD 图纸拆分成图块
 
 ## 介绍

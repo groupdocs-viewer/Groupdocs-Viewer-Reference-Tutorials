@@ -5,8 +5,8 @@
 "title": "Tải tài liệu từ đĩa cục bộ"
 "url": "/vi/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Tải tài liệu từ đĩa cục bộ
 
 ## Giới thiệu

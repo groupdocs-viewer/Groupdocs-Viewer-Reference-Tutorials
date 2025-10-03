@@ -4,8 +4,8 @@
 "title": "E-mailek renderelése egyéni dátum/idő adatokkal Java-ban a GroupDocs.Viewer használatával"
 "url": "/hu/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # E-mailek renderelése egyéni dátum/idő adatokkal Java-ban a GroupDocs.Viewer használatával
 
 ## Bevezetés

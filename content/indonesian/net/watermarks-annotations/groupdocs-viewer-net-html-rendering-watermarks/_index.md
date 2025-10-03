@@ -4,8 +4,8 @@
 "title": "Master Document Rendering di .NET Menggunakan Konversi HTML & Integrasi Watermark GroupDocs.Viewer"
 "url": "/id/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # Master Document Rendering di .NET Menggunakan GroupDocs.Viewer: Konversi HTML & Integrasi Watermark
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "加载具有特定编码的文档"
 "url": "/zh/net/advanced-loading/load-documents-encoding/"
 "weight": 11
+type: docs
 ---
-
 # 加载具有特定编码的文档
 
 ## 介绍

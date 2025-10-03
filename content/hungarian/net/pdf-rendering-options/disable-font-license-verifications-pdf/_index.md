@@ -5,8 +5,8 @@
 "title": "Betűtípus-licenc-ellenőrzések letiltása PDF-ben"
 "url": "/hu/net/pdf-rendering-options/disable-font-license-verifications-pdf/"
 "weight": 12
+type: docs
 ---
-
 # Betűtípus-licenc-ellenőrzések letiltása PDF-ben
 
 ## Bevezetés

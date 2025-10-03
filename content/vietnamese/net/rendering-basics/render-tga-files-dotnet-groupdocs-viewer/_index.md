@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tệp TGA trong .NET bằng GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/rendering-basics/render-tga-files-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tệp TGA trong .NET bằng GroupDocs.Viewer: Hướng dẫn toàn diện
 
 ## Giới thiệu

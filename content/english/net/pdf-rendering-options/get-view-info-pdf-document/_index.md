@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Processing"]
 tags: ["GroupDocs.Viewer", "PDF", "Document-Metadata", "NET-Development"]
+type: docs
 ---
-
 # Extract PDF View Information .NET - Complete Developer Guide
 
 ## Introduction

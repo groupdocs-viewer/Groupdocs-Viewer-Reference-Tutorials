@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer Java elsajátítása&#58; IGS fájlok konvertálása HTML, JPG, PNG és PDF formátumba"
 "url": "/hu/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Java elsajátítása: IGS fájlok konvertálása több formátumba
 
 ## Bevezetés

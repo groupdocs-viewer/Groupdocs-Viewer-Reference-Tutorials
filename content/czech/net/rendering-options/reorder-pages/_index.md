@@ -5,8 +5,8 @@
 "title": "Změna pořadí stránek v dokumentu"
 "url": "/cs/net/rendering-options/reorder-pages/"
 "weight": 19
+type: docs
 ---
-
 # Změna pořadí stránek v dokumentu
 
 ## Zavedení

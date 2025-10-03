@@ -4,8 +4,8 @@
 "title": "Konvertera arkiv till PDF-filer med anpassade filnamn med GroupDocs.Viewer för .NET"
 "url": "/sv/net/export-conversion/groupdocs-viewer-dotnet-convert-archives-to-pdfs-custom-filenames/"
 "weight": 1
+type: docs
 ---
-
 # Konvertera arkiv till PDF-filer med anpassade filnamn med GroupDocs.Viewer för .NET
 
 ## Introduktion

@@ -5,8 +5,8 @@
 "title": "Kecualikan Font dari HTML yang Dirender"
 "url": "/id/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # Kecualikan Font dari HTML yang Dirender
 
 ## Perkenalan

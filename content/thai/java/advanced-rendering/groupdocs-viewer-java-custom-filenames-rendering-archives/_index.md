@@ -4,8 +4,8 @@
 "title": "การเรียนรู้ชื่อไฟล์แบบกำหนดเองของ GroupDocs.Viewer Java สำหรับการเรนเดอร์ PDF ของไฟล์เก็บถาวร"
 "url": "/th/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
 "weight": 1
+type: docs
 ---
-
 # การเรียนรู้ GroupDocs.Viewer Java: ระบุชื่อไฟล์ที่กำหนดเองเมื่อเรนเดอร์ไฟล์เก็บถาวรเป็น PDF
 
 ## การแนะนำ

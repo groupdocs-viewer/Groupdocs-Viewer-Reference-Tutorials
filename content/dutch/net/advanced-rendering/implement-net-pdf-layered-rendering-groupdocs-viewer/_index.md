@@ -4,8 +4,8 @@
 "title": "Leer .NET PDF-lagen renderen met GroupDocs.Viewer&#58; een stapsgewijze handleiding"
 "url": "/nl/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Leer .NET PDF-lagen renderen met GroupDocs.Viewer: een stapsgewijze handleiding
 
 ## Invoering

@@ -8,10 +8,8 @@ keywords:
 - convert documents to pdf using java
 - groupdocs viewer for java
 - java pdf conversion
-
+type: docs
 ---
-
-
 # How to Convert Documents to PDF Using GroupDocs.Viewer for Java
 
 ## Introduction

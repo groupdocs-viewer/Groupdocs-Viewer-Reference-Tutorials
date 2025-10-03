@@ -4,8 +4,8 @@
 "title": "Render Lampiran Email ke HTML dengan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/rendering-basics/render-email-attachments-html-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengubah Lampiran Email ke HTML Menggunakan GroupDocs.Viewer untuk .NET
 ## Perkenalan
 Apakah Anda memerlukan cara yang efisien untuk mengubah lampiran email menjadi HTML yang mudah dilihat? Baik untuk meningkatkan aksesibilitas dokumen atau menyederhanakan berbagi konten, membuat lampiran sangat penting untuk manajemen korespondensi digital yang efektif. Panduan ini akan memandu Anda dalam menggunakan **GroupDocs.Viewer untuk .NET** untuk mencapainya dengan mudah.

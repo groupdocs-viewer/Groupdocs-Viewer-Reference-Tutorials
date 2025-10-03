@@ -5,8 +5,8 @@
 "title": "Απόδοση όλων των διατάξεων σε σχέδια CAD"
 "url": "/el/net/rendering-cad-drawings/render-all-layouts-cad/"
 "weight": 11
+type: docs
 ---
-
 # Απόδοση όλων των διατάξεων σε σχέδια CAD
 
 ## Εισαγωγή

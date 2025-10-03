@@ -4,8 +4,8 @@
 "title": "Master GroupDocs.Viewer pro Javu – načtení informací a statistik o zobrazení dokumentů"
 "url": "/cs/java/advanced-rendering/groupdocs-viewer-java-document-views/"
 "weight": 1
+type: docs
 ---
-
 # Zvládnutí zobrazení dokumentů pomocí GroupDocs.Viewer pro Javu
 ## Pokročilé techniky renderování
 **URL adresa pro SEO:** zobrazení-dokumentů-v-Javě-groupdocs

@@ -5,8 +5,8 @@
 "title": "Trasforma il documento in PDF"
 "url": "/it/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Trasforma il documento in PDF
 
 ## Introduzione

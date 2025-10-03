@@ -5,8 +5,8 @@
 "title": "CAD図面のビュー情報を取得する"
 "url": "/ja/net/rendering-cad-drawings/get-view-info-cad-drawing/"
 "weight": 10
+type: docs
 ---
-
 # CAD図面のビュー情報を取得する
 
 ## 導入

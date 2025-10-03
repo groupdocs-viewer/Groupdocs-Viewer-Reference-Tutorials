@@ -5,8 +5,8 @@
 "title": "TGA-afbeeldingen renderen"
 "url": "/nl/net/image-rendering/render-tga-images/"
 "weight": 17
+type: docs
 ---
-
 # TGA-afbeeldingen renderen
 
 ## Invoering

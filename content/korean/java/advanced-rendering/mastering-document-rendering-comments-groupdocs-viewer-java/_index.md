@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer를 사용하여 Java에서 주석이 있는 문서를 렌더링하는 방법"
 "url": "/ko/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer를 사용하여 Java에서 주석이 있는 문서를 렌더링하는 방법
 ## 소개
 주석을 유지하면서 문서를 HTML로 변환하는 데 어려움을 겪고 계신가요? 이 가이드는 Java의 강력한 GroupDocs.Viewer 라이브러리를 사용하여 주석이 포함된 문서를 렌더링하는 방법을 안내합니다. 문서를 원활하게 관리하거나 Java 기술을 향상시키고 싶은 분이라면 이 튜토리얼이 도움이 될 것입니다.

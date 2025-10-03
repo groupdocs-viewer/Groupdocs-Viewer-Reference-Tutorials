@@ -5,8 +5,8 @@
 "title": "CAD 繪圖中的渲染圖層"
 "url": "/zh-hant/net/rendering-cad-drawings/render-layers-cad/"
 "weight": 13
+type: docs
 ---
-
 # CAD 繪圖中的渲染圖層
 
 ## 介紹

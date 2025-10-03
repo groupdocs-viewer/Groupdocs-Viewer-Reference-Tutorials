@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET で HTML の縮小を実装して Web ページを高速化する方法"
 "url": "/ja/net/advanced-rendering/implement-html-minification-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET で HTML の縮小を実装して Web ページを高速化する方法
 
 ## 導入

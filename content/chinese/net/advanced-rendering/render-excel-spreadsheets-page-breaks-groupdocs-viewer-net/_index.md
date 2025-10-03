@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer for .NET 按分页符呈现 Excel 电子表格"
 "url": "/zh/net/advanced-rendering/render-excel-spreadsheets-page-breaks-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer for .NET 按分页符呈现 Excel 电子表格
 
 ## 介绍

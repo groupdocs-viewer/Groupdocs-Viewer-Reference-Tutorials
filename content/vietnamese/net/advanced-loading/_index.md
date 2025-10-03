@@ -5,8 +5,8 @@
 "title": "Tùy chọn tải nâng cao"
 "url": "/vi/net/advanced-loading/"
 "weight": 21
+type: docs
 ---
-
 # Tùy chọn tải nâng cao
 
 ## Giới thiệu

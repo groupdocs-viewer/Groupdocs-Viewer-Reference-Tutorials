@@ -5,8 +5,8 @@
 "title": "Renderizar documento com notas"
 "url": "/pt/net/rendering-options/render-document-notes/"
 "weight": 14
+type: docs
 ---
-
 # Renderizar documento com notas
 
 ## Introdução

@@ -5,8 +5,8 @@
 "title": "Thêm hình mờ vào tài liệu"
 "url": "/vi/net/rendering-options/add-watermark/"
 "weight": 10
+type: docs
 ---
-
 # Thêm hình mờ vào tài liệu
 
 ## Giới thiệu

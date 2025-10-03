@@ -4,8 +4,8 @@
 "title": "Как визуализировать линии сетки в таблицах Excel с помощью GroupDocs.Viewer .NET для вывода HTML"
 "url": "/ru/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # Как визуализировать линии сетки в таблицах Excel с помощью GroupDocs.Viewer .NET для вывода HTML
 
 ## Введение

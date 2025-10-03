@@ -4,8 +4,8 @@
 "title": "Comment convertir des documents WMZ/WMF à l'aide de GroupDocs Viewer pour Java ? Un guide complet"
 "url": "/fr/java/export-conversion/convert-wmz-wmf-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Comment convertir des documents WMZ/WMF avec GroupDocs Viewer pour Java : guide complet
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Cách kết xuất các lớp CAD cụ thể bằng GroupDocs.Viewer cho .NET&#58; Hướng dẫn toàn diện"
 "url": "/vi/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất các lớp bản vẽ CAD cụ thể bằng GroupDocs.Viewer cho .NET
 
 ## Giới thiệu

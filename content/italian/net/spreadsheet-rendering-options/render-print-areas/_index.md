@@ -5,8 +5,8 @@
 "title": "Rendering delle aree di stampa con GroupDocs.Viewer per .NET"
 "url": "/it/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Rendering delle aree di stampa con GroupDocs.Viewer per .NET
 
 ## Introduzione

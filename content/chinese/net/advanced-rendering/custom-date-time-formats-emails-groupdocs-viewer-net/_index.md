@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 自定义电子邮件中的日期时间格式和时区偏移"
 "url": "/zh/net/advanced-rendering/custom-date-time-formats-emails-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 自定义电子邮件中的日期时间格式和时区
 
 ## 介绍

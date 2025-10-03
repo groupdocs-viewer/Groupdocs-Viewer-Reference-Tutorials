@@ -5,8 +5,8 @@
 "title": "उत्तरदायी HTML प्रस्तुत करें"
 "url": "/hi/net/rendering-documents-html/render-responsive-html/"
 "weight": 13
+type: docs
 ---
-
 # उत्तरदायी HTML प्रस्तुत करें
 
 ## परिचय

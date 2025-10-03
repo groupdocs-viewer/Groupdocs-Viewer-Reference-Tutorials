@@ -5,8 +5,8 @@
 "title": "Capovolgi e ruota le pagine"
 "url": "/it/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Capovolgi e ruota le pagine
 
 ## Introduzione

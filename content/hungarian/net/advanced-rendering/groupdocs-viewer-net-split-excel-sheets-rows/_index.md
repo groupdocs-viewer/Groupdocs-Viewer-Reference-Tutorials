@@ -4,8 +4,8 @@
 "title": "Excel-táblázatok oldalakra osztása sorok szerint a GroupDocs.Viewer .NET használatával a hatékony adatkezelés érdekében"
 "url": "/hu/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # Excel-táblázatok oldalakra bontása sorok szerint a GroupDocs.Viewer .NET segítségével
 
 ## Bevezetés

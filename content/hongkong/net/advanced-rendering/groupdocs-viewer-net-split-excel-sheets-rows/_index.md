@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer .NET 將 Excel 工作表按行拆分為頁面，實現高效的資料管理"
 "url": "/zh-hant/net/advanced-rendering/groupdocs-viewer-net-split-excel-sheets-rows/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer .NET 將 Excel 工作表依行拆分為頁面
 
 ## 介紹

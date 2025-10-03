@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["PDF Processing"]
 tags: ["GroupDocs.Viewer", "PDF Security", "Text Selection", "Document Protection"]
+type: docs
 ---
-
 # How to Disable Text Selection in PDF with .NET
 
 ## Introduction

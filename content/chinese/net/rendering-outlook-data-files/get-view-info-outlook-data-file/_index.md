@@ -5,8 +5,8 @@
 "title": "获取 Outlook 数据文件（PST、OST）的视图信息"
 "url": "/zh/net/rendering-outlook-data-files/get-view-info-outlook-data-file/"
 "weight": 10
+type: docs
 ---
-
 # 获取 Outlook 数据文件（PST、OST）的视图信息
 
 ## 介绍

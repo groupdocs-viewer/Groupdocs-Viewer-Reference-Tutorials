@@ -4,8 +4,8 @@
 "title": "Dokumentummellékletek lekérése és nyomtatása a GroupDocs.Viewer for .NET használatával | Speciális renderelési útmutató"
 "url": "/hu/net/advanced-rendering/retrieve-print-attachments-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Dokumentummellékletek lekérése és nyomtatása a GroupDocs.Viewer for .NET használatával | Speciális renderelési útmutató
 
 ## Bevezetés

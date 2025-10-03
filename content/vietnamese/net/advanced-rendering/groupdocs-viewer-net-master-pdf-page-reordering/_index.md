@@ -4,8 +4,8 @@
 "title": "Sắp xếp lại trang PDF chính trong .NET với GroupDocs.Viewer&#58; Hướng dẫn dành cho nhà phát triển"
 "url": "/vi/net/advanced-rendering/groupdocs-viewer-net-master-pdf-page-reordering/"
 "weight": 1
+type: docs
 ---
-
 # Làm chủ việc sắp xếp lại trang PDF với GroupDocs.Viewer .NET: Hướng dẫn toàn diện cho nhà phát triển
 
 ## Giới thiệu

@@ -5,8 +5,8 @@
 "title": "Rendu avec des polices personnalisées"
 "url": "/fr/net/rendering-options/render-custom-fonts/"
 "weight": 18
+type: docs
 ---
-
 # Rendu avec des polices personnalisées
 
 ## Introduction

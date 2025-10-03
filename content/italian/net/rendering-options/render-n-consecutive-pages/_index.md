@@ -5,8 +5,8 @@
 "title": "Visualizza N pagine consecutive"
 "url": "/it/net/rendering-options/render-n-consecutive-pages/"
 "weight": 16
+type: docs
 ---
-
 # Visualizza N pagine consecutive
 
 ## Introduzione

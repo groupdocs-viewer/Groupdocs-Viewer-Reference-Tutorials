@@ -4,8 +4,8 @@
 "title": "Så här ändrar du storlek på bilder med GroupDocs.Viewer .NET &#58; En steg-för-steg-guide för utvecklare"
 "url": "/sv/net/advanced-rendering/resize-images-groupdocs-viewer-net-guide/"
 "weight": 1
+type: docs
 ---
-
 # Så här ändrar du storlek på bilder med GroupDocs.Viewer .NET: En steg-för-steg-guide för utvecklare
 
 ## Introduktion

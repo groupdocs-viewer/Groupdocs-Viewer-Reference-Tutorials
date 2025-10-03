@@ -5,8 +5,8 @@
 "title": "Hiển thị các cột và hàng ẩn"
 "url": "/vi/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Hiển thị các cột và hàng ẩn
 
 ## Giới thiệu

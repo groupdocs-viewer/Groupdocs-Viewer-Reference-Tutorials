@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer&#58; HTML Dönüştürme ve Filigran Entegrasyonu Kullanarak .NET'te Ana Belge Oluşturma"
 "url": "/tr/net/watermarks-annotations/groupdocs-viewer-net-html-rendering-watermarks/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Kullanarak .NET'te Ana Belge Oluşturma: HTML Dönüştürme ve Filigran Entegrasyonu
 
 ## giriiş

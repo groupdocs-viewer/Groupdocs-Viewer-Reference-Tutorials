@@ -4,8 +4,8 @@
 "title": "Menguasai Rendering SVGZ di .NET menggunakan GroupDocs.Viewer&#58; Panduan Lengkap untuk Pengembang"
 "url": "/id/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Menguasai Rendering SVGZ di .NET dengan GroupDocs.Viewer: Panduan Lengkap untuk Pengembang
 
 ## Perkenalan

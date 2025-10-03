@@ -5,8 +5,8 @@
 "title": "ストリームからライセンスを設定する"
 "url": "/ja/net/getting-started/set-license-from-stream/"
 "weight": 11
+type: docs
 ---
-
 # ストリームからライセンスを設定する
 
 ## 導入

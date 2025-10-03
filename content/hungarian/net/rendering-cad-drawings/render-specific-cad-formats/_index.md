@@ -5,8 +5,8 @@
 "title": "Renderelés-specifikus CAD formátumok (CF2)"
 "url": "/hu/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # Renderelés-specifikus CAD formátumok (CF2)
 
 ## Bevezetés

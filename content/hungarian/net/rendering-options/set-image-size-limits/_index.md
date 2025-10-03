@@ -5,8 +5,8 @@
 "title": "Képméret-korlátok beállítása"
 "url": "/hu/net/rendering-options/set-image-size-limits/"
 "weight": 21
+type: docs
 ---
-
 # Képméret-korlátok beállítása
 
 ## Bevezetés

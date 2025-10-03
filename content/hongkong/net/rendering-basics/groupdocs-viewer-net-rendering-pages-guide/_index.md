@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 在 .NET 中渲染特定頁面－綜合指南"
 "url": "/zh-hant/net/rendering-basics/groupdocs-viewer-net-rendering-pages-guide/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 在 .NET 中渲染特定頁面：綜合指南
 
 ## 介紹

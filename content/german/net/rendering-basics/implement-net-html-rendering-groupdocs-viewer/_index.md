@@ -4,8 +4,8 @@
 "title": "So implementieren Sie .NET HTML-Rendering mit GroupDocs.Viewer – Eine Schritt-für-Schritt-Anleitung"
 "url": "/de/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # So implementieren Sie .NET HTML-Rendering mit GroupDocs.Viewer: Eine Schritt-für-Schritt-Anleitung
 
 ## Einführung

@@ -5,8 +5,8 @@
 "title": "Render Area Cetak dengan GroupDocs.Viewer untuk .NET"
 "url": "/id/net/spreadsheet-rendering-options/render-print-areas/"
 "weight": 17
+type: docs
 ---
-
 # Render Area Cetak dengan GroupDocs.Viewer untuk .NET
 
 ## Perkenalan

@@ -5,8 +5,8 @@
 "title": "Rendera rutnätslinjer"
 "url": "/sv/net/spreadsheet-rendering-options/render-grid-lines/"
 "weight": 12
+type: docs
 ---
-
 # Rendera rutnätslinjer
 
 ## Introduktion

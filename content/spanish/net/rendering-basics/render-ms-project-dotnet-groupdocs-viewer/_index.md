@@ -4,8 +4,8 @@
 "title": "Renderizar documentos de MS Project en .NET con GroupDocs.Viewer&#58; una guía completa"
 "url": "/es/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Domine la representación de documentos de MS Project en .NET con GroupDocs.Viewer
 ## Introducción
 En los dinámicos entornos empresariales actuales, gestionar eficazmente los plazos y los recursos de los proyectos es crucial. Las partes interesadas suelen necesitar ver partes específicas de un proyecto sin la necesidad de un archivo completo de MS Project. Este tutorial explica cómo renderizar secciones de sus documentos de MS Project dentro de intervalos de tiempo específicos con GroupDocs.Viewer para .NET, la solución clave para este problema común.

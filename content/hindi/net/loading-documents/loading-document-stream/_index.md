@@ -5,8 +5,8 @@
 "title": "स्ट्रीम से दस्तावेज़ लोड करें"
 "url": "/hi/net/loading-documents/loading-document-stream/"
 "weight": 12
+type: docs
 ---
-
 # स्ट्रीम से दस्तावेज़ लोड करें
 
 ## परिचय

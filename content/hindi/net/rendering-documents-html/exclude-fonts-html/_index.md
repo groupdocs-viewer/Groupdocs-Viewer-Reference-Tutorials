@@ -5,8 +5,8 @@
 "title": "रेंडर किए गए HTML से फ़ॉन्ट्स को बाहर निकालें"
 "url": "/hi/net/rendering-documents-html/exclude-fonts-html/"
 "weight": 10
+type: docs
 ---
-
 # रेंडर किए गए HTML से फ़ॉन्ट्स को बाहर निकालें
 
 ## परिचय

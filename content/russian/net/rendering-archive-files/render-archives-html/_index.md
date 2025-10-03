@@ -5,8 +5,8 @@
 "title": "Отображение архивов на одной или нескольких HTML-страницах"
 "url": "/ru/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Отображение архивов на одной или нескольких HTML-страницах
 
 ## Введение

@@ -4,8 +4,8 @@
 "title": "Αποτελεσματική αναδιάταξη σελίδων PDF με το GroupDocs.Viewer για Java&#58; Ένας πλήρης οδηγός"
 "url": "/el/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # Αποτελεσματική αναδιάταξη σελίδων PDF με το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

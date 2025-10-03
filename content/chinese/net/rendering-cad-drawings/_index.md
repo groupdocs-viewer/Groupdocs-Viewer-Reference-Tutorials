@@ -5,8 +5,8 @@
 "title": "渲染 CAD 图纸"
 "url": "/zh/net/rendering-cad-drawings/"
 "weight": 25
+type: docs
 ---
-
 # 渲染 CAD 图纸
 
 

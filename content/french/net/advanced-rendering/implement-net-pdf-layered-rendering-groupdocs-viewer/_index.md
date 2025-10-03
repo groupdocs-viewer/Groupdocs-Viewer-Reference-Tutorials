@@ -4,8 +4,8 @@
 "title": "Maîtrisez le rendu PDF en couches .NET avec GroupDocs.Viewer &#58; un guide étape par étape"
 "url": "/fr/net/advanced-rendering/implement-net-pdf-layered-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Maîtriser le rendu PDF en couches .NET avec GroupDocs.Viewer : guide étape par étape
 
 ## Introduction

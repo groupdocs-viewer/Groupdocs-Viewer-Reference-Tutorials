@@ -4,8 +4,8 @@
 "title": "MS Project dokumentumok renderelése .NET-ben a GroupDocs.Viewer segítségével – Átfogó útmutató"
 "url": "/hu/net/rendering-basics/render-ms-project-dotnet-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # MS Project dokumentumrenderelés elsajátítása .NET-ben a GroupDocs.Viewer segítségével
 ## Bevezetés
 A mai gyors tempójú üzleti környezetben kulcsfontosságú a projektek ütemtervének és erőforrásainak hatékony kezelése. Az érdekelt feleknek gyakran szükségük van egy projekt bizonyos részeinek megtekintésére anélkül, hogy egy teljes MS Project fájl zsúfoltsága jelenne meg. Ez az oktatóanyag bemutatja, hogyan jelenítheti meg MS Project dokumentumainak részeit megadott időintervallumokon belül a GroupDocs.Viewer for .NET segítségével – ez a gyakori probléma kulcsfontosságú megoldása.

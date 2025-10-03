@@ -4,8 +4,8 @@
 "title": "Cómo representar cambios controlados en documentos de Word con GroupDocs.Viewer para Java&#58; una guía completa"
 "url": "/es/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Representación de cambios controlados en documentos de Word con GroupDocs.Viewer para Java
 
 ## Introducción

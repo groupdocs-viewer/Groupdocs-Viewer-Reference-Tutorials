@@ -5,8 +5,8 @@
 "title": "Görüntü İşleme"
 "url": "/tr/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # Görüntü İşleme
 
 

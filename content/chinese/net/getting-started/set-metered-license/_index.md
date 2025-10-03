@@ -5,8 +5,8 @@
 "title": "设置计量许可证"
 "url": "/zh/net/getting-started/set-metered-license/"
 "weight": 12
+type: docs
 ---
-
 # 设置计量许可证
 
 ## 介绍

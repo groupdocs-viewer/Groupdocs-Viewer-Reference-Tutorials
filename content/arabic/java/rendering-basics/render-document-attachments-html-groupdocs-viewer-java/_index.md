@@ -4,8 +4,8 @@
 "title": "تحويل مرفقات المستندات إلى HTML باستخدام GroupDocs.Viewer Java - دليل خطوة بخطوة"
 "url": "/ar/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # تحويل مرفقات المستندات إلى HTML باستخدام GroupDocs.Viewer Java
 
 ## مقدمة

@@ -4,8 +4,8 @@
 "title": "Rotera den första sidan i ett dokument med GroupDocs.Viewer för Java (avancerad guide)"
 "url": "/sv/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Rotera den första sidan i ett dokument med GroupDocs.Viewer för Java
 
 ## Introduktion

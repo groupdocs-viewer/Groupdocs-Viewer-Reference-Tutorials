@@ -4,8 +4,8 @@
 "title": "Hur man justerar tidsenheter i MS Project med GroupDocs.Viewer Java – en steg-för-steg-guide"
 "url": "/sv/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Hur man justerar tidsenheter i MS Project med GroupDocs.Viewer Java: En steg-för-steg-guide
 ## Introduktion
 Är du trött på att manuellt justera tidsenheter i dina MS Project-dokument innan du konverterar dem till HTML-format? Processen kan vara mödosam och felbenägen, särskilt när det gäller stora projekt. **GroupDocs.Viewer för Java**, kan du enkelt justera tidsenhetsinställningarna programmatiskt, vilket säkerställer noggrannhet och effektivitet.

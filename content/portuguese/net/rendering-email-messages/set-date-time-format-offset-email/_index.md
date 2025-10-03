@@ -5,8 +5,8 @@
 "title": "Definir formato de data e hora e deslocamento de fuso horário (e-mail)"
 "url": "/pt/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Definir formato de data e hora e deslocamento de fuso horário (e-mail)
 
 

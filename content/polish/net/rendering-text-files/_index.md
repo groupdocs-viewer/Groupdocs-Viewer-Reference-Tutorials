@@ -5,8 +5,8 @@
 "title": "Renderowanie plików tekstowych"
 "url": "/pl/net/rendering-text-files/"
 "weight": 33
+type: docs
 ---
-
 # Renderowanie plików tekstowych
 
 ## Wstęp

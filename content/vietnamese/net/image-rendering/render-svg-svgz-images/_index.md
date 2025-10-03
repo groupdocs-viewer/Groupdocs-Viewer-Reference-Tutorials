@@ -5,8 +5,8 @@
 "title": "Kết xuất hình ảnh SVG và SVGZ"
 "url": "/vi/net/image-rendering/render-svg-svgz-images/"
 "weight": 16
+type: docs
 ---
-
 # Kết xuất hình ảnh SVG và SVGZ
 
 ## Giới thiệu

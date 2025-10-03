@@ -5,8 +5,8 @@
 "title": "เรนเดอร์ภาพ WMZ และ WMF"
 "url": "/th/net/image-rendering/render-wmz-wmf-images/"
 "weight": 18
+type: docs
 ---
-
 # เรนเดอร์ภาพ WMZ และ WMF
 
 ## การแนะนำ

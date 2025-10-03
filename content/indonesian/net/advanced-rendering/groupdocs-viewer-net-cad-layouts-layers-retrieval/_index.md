@@ -4,8 +4,8 @@
 "title": "Cara Mengambil Tata Letak dan Lapisan CAD Menggunakan GroupDocs.Viewer .NET untuk Manajemen Desain yang Efisien"
 "url": "/id/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-layers-retrieval/"
 "weight": 1
+type: docs
 ---
-
 # Cara Mengambil Tata Letak dan Lapisan CAD Menggunakan GroupDocs.Viewer .NET
 ## Perkenalan
 Dalam bidang Computer-Aided Design (CAD), mengelola gambar kompleks secara efisien sangatlah penting, terutama saat menangani beberapa tata letak dan lapisan dalam satu berkas. Bagi arsitek, insinyur, dan desainer, mengakses informasi tertentu dengan cepat dapat meningkatkan produktivitas. **Penampil GroupDocs.NET** menawarkan solusi hebat dengan memungkinkan pengembang mengekstrak tata letak dan lapisan secara terprogram dari gambar CAD.

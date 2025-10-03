@@ -5,8 +5,8 @@
 "title": "PDF'de Karakter Gruplandırmasını Devre Dışı Bırak"
 "url": "/tr/net/pdf-rendering-options/disable-characters-grouping-pdf/"
 "weight": 11
+type: docs
 ---
-
 # PDF'de Karakter Gruplandırmasını Devre Dışı Bırak
 
 ## giriiş

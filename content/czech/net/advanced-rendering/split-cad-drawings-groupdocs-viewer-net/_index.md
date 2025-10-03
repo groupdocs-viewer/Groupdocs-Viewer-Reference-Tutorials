@@ -4,8 +4,8 @@
 "title": "Jak rozdělit CAD výkresy na dlaždice pomocí GroupDocs.Viewer .NET pro efektivní vykreslování"
 "url": "/cs/net/advanced-rendering/split-cad-drawings-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Jak rozdělit CAD výkresy na dlaždice pomocí GroupDocs.Viewer .NET
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Renderuj pliki CHM"
 "url": "/pl/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Renderuj pliki CHM
 
 ## Wstęp

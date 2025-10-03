@@ -5,8 +5,8 @@
 "title": "Memuat Dokumen dari Disk Lokal"
 "url": "/id/net/loading-documents/loading-document-local-disk/"
 "weight": 10
+type: docs
 ---
-
 # Memuat Dokumen dari Disk Lokal
 
 ## Perkenalan

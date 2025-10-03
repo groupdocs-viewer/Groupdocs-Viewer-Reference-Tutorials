@@ -5,8 +5,8 @@
 "title": "Render File CHM"
 "url": "/id/net/rendering-web-documents/render-chm/"
 "weight": 10
+type: docs
 ---
-
 # Render File CHM
 
 ## Perkenalan

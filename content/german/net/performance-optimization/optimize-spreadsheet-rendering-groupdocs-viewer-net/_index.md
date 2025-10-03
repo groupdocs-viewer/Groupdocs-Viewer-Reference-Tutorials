@@ -4,8 +4,8 @@
 "title": "Optimieren Sie die Tabellenkalkulationsdarstellung mit GroupDocs.Viewer für .NET – Überspringen leerer Spalten"
 "url": "/de/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Optimieren Sie die Tabellenkalkulationsdarstellung mit GroupDocs.Viewer für .NET
 ## So überspringen Sie das Rendern leerer Spalten in Tabellenkalkulationen mit GroupDocs.Viewer .NET
 ### Einführung

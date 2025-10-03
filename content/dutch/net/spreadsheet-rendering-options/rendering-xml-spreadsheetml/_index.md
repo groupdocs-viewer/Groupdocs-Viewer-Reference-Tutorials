@@ -5,8 +5,8 @@
 "title": "XML SpreadSheetML weergeven"
 "url": "/nl/net/spreadsheet-rendering-options/rendering-xml-spreadsheetml/"
 "weight": 16
+type: docs
 ---
-
 # XML SpreadSheetML weergeven
 
 ## Invoering

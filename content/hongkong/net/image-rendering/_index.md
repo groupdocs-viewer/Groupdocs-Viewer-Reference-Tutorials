@@ -5,8 +5,8 @@
 "title": "影像渲染"
 "url": "/zh-hant/net/image-rendering/"
 "weight": 28
+type: docs
 ---
-
 # 影像渲染
 
 

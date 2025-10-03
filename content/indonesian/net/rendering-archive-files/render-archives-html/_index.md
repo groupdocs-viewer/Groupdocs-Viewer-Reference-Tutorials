@@ -5,8 +5,8 @@
 "title": "Render Arsip ke Satu atau Beberapa Halaman HTML"
 "url": "/id/net/rendering-archive-files/render-archives-html/"
 "weight": 12
+type: docs
 ---
-
 # Render Arsip ke Satu atau Beberapa Halaman HTML
 
 ## Perkenalan

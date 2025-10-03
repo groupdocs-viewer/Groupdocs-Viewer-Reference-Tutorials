@@ -5,8 +5,8 @@
 "title": "Representar columnas y filas ocultas"
 "url": "/es/net/spreadsheet-rendering-options/render-hidden-columns-rows/"
 "weight": 13
+type: docs
 ---
-
 # Representar columnas y filas ocultas
 
 ## Introducción

@@ -4,8 +4,8 @@
 "title": "Rendern Sie PDF/OXPS mit Schriftartbeschränkungen mithilfe von GroupDocs.Viewer .NET – Ein umfassender Leitfaden"
 "url": "/de/net/advanced-rendering/render-oxps-pdf-groupdocs-viewer-net-font-license-restrictions/"
 "weight": 1
+type: docs
 ---
-
 # Rendern von PDF/OXPS mit Schriftartbeschränkungen mithilfe von GroupDocs.Viewer .NET: Ein umfassender Leitfaden
 
 ## Einführung

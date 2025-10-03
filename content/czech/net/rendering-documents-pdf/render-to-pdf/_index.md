@@ -5,8 +5,8 @@
 "title": "Vykreslení dokumentu do PDF"
 "url": "/cs/net/rendering-documents-pdf/render-to-pdf/"
 "weight": 10
+type: docs
 ---
-
 # Vykreslení dokumentu do PDF
 
 ## Zavedení

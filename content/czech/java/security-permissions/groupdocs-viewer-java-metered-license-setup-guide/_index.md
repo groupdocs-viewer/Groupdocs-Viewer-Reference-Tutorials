@@ -4,8 +4,8 @@
 "title": "Implementace měřené licence pro GroupDocs.Viewer v Javě – Průvodce pro vývojáře"
 "url": "/cs/java/security-permissions/groupdocs-viewer-java-metered-license-setup-guide/"
 "weight": 1
+type: docs
 ---
-
 # Implementace měřené licence pro GroupDocs.Viewer pro Javu: Průvodce pro vývojáře
 
 ## Zavedení

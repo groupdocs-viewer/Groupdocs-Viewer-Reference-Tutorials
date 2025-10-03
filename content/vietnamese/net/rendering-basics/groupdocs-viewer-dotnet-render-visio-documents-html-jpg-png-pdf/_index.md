@@ -4,8 +4,8 @@
 "title": "Cách kết xuất tài liệu Visio dưới dạng HTML, JPG, PNG và PDF trong .NET bằng GroupDocs.Viewer"
 "url": "/vi/net/rendering-basics/groupdocs-viewer-dotnet-render-visio-documents-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Cách kết xuất tài liệu Visio dưới dạng HTML, JPG, PNG và PDF bằng GroupDocs.Viewer trong .NET
 
 ## Giới thiệu

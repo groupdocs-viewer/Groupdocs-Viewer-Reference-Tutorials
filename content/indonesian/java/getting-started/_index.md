@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Tutorial Memulai untuk Pengembang Java"
 "url": "/id/java/getting-started/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer Tutorial Memulai untuk Pengembang Java
 
 Mulailah perjalanan Anda dengan tutorial GroupDocs.Viewer penting ini yang memandu Anda melalui penginstalan, konfigurasi lisensi, dan pembuatan penampil dokumen pertama Anda di Java. Panduan yang mudah dipahami bagi pemula kami menunjukkan cara menyiapkan lingkungan pengembangan Anda, menginisialisasi pustaka GroupDocs.Viewer, dan melakukan operasi rendering dokumen mendasar. Ikuti tutorial ini untuk menguasai dasar-dasar dengan cepat dan mempersiapkan diri untuk tugas-tugas tampilan dokumen yang lebih canggih di aplikasi Java Anda.

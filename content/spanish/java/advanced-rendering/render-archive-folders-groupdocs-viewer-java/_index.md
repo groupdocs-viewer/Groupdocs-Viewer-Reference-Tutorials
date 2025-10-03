@@ -4,8 +4,8 @@
 "title": "Representación de carpetas de archivo en Java con GroupDocs.Viewer&#58; guía paso a paso"
 "url": "/es/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Representación de carpetas de archivo con GroupDocs.Viewer para Java
 
 ## Introducción

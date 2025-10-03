@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer for .NET을 사용한 필터링된 Outlook 데이터 렌더링&#58; 종합 가이드"
 "url": "/ko/net/advanced-rendering/groupdocs-viewer-net-filtered-outlook-rendering-tutorial/"
 "weight": 1
+type: docs
 ---
-
 # .NET용 GroupDocs.Viewer를 사용한 필터링된 Outlook 데이터 렌더링: 포괄적인 가이드
 ## 소개
 메시지 내용이나 보낸 사람 등 특정 필터를 적용하면서 Outlook 데이터 파일(.ost)을 효율적으로 렌더링하는 데 어려움을 겪고 계신가요? 많은 개발자들이 정확한 기준으로 Outlook 메시지를 볼 수 있는 간소화된 솔루션을 필요로 합니다. 이 포괄적인 가이드에서는 문서 처리를 간소화하는 강력한 라이브러리인 GroupDocs.Viewer for .NET을 사용하여 Outlook 데이터를 필터링하여 렌더링하는 방법을 살펴보겠습니다.

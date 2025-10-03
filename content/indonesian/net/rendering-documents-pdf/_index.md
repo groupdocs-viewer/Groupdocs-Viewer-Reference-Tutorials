@@ -5,8 +5,8 @@
 "title": "Merender Dokumen ke PDF"
 "url": "/id/net/rendering-documents-pdf/"
 "weight": 29
+type: docs
 ---
-
 # Merender Dokumen ke PDF
 
 

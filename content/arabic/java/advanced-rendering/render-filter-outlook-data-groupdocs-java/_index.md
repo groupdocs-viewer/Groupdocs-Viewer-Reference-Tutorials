@@ -4,8 +4,8 @@
 "title": "إتقان عرض بيانات Outlook وتصفيتها باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض بيانات Outlook وتصفيتها باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

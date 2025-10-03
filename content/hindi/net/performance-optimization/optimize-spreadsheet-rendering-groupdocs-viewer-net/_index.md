@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer के साथ स्प्रेडशीट रेंडरिंग को अनुकूलित करें और खाली कॉलम छोड़ें"
 "url": "/hi/net/performance-optimization/optimize-spreadsheet-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer के साथ स्प्रेडशीट रेंडरिंग को अनुकूलित करें
 ## GroupDocs.Viewer .NET का उपयोग करके स्प्रेडशीट में खाली कॉलम का प्रतिपादन कैसे छोड़ें
 ### परिचय

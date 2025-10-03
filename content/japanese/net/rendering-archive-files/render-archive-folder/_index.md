@@ -5,8 +5,8 @@
 "title": "レンダリングアーカイブフォルダ"
 "url": "/ja/net/rendering-archive-files/render-archive-folder/"
 "weight": 11
+type: docs
 ---
-
 # レンダリングアーカイブフォルダ
 
 ## 導入

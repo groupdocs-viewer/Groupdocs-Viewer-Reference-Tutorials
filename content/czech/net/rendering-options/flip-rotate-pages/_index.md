@@ -5,8 +5,8 @@
 "title": "Otočení a převrácení stránek"
 "url": "/cs/net/rendering-options/flip-rotate-pages/"
 "weight": 12
+type: docs
 ---
-
 # Otočení a převrácení stránek
 
 ## Zavedení

@@ -5,8 +5,8 @@
 "title": "Mengatur Format Tanggal dan Waktu dan Offset Zona Waktu (Email)"
 "url": "/id/net/rendering-email-messages/set-date-time-format-offset-email/"
 "weight": 11
+type: docs
 ---
-
 # Mengatur Format Tanggal dan Waktu dan Offset Zona Waktu (Email)
 
 

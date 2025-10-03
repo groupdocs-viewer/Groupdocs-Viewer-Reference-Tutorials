@@ -4,8 +4,8 @@
 "title": "Jak renderować pliki CHM za pomocą GroupDocs.Viewer Java&#58; Kompleksowy przewodnik"
 "url": "/pl/java/rendering-basics/render-chm-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować pliki CHM za pomocą GroupDocs.Viewer Java: kompleksowy przewodnik
 ## Wstęp
 Czy chcesz renderować pliki Compiled HTML Help (CHM) do powszechniej obsługiwanych formatów, takich jak HTML, JPG, PNG i PDF? Niezależnie od tego, czy chodzi o cele archiwalne, czy o poprawę dostępności na różnych platformach, konwersja tych dokumentów może być przełomem. Ten samouczek pokazuje, jak bezproblemowo to osiągnąć za pomocą GroupDocs.Viewer Java. Poznasz tajniki wydajnego renderowania plików CHM za pomocą tej potężnej biblioteki.

@@ -4,8 +4,8 @@
 "title": "जावा स्प्रेडशीट प्रिंट क्षेत्र रेंडरिंग के लिए GroupDocs.Viewer के साथ जावा&#58; एक व्यापक गाइड"
 "url": "/hi/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # जावा के लिए GroupDocs.Viewer के साथ जावा स्प्रेडशीट प्रिंट क्षेत्र रेंडरिंग
 
 ## परिचय

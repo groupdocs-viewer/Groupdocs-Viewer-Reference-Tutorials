@@ -4,8 +4,8 @@
 "title": "Αποδοτική απόδοση διάταξης CAD με το GroupDocs.Viewer για .NET™ - Οδηγός βήμα προς βήμα"
 "url": "/el/net/advanced-rendering/groupdocs-viewer-net-cad-layouts-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Αποδοτική απόδοση διάταξης CAD με το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή

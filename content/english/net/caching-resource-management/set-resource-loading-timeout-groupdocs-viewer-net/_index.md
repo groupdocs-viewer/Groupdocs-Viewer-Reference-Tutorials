@@ -8,10 +8,8 @@ keywords:
 - resource loading timeout
 - GroupDocs.Viewer for .NET
 - load options in GroupDocs
-
+type: docs
 ---
-
-
 # Implementing Resource Loading Timeout in GroupDocs.Viewer for .NET
 
 ## Introduction

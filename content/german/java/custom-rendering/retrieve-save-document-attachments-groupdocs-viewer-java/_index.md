@@ -4,8 +4,8 @@
 "title": "So rufen Sie Dokumentanhänge mit GroupDocs.Viewer für Java ab und speichern sie – eine umfassende Anleitung"
 "url": "/de/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # So rufen Sie Dokumentanhänge mit GroupDocs.Viewer für Java ab und speichern sie: Eine umfassende Anleitung
 
 ## Einführung

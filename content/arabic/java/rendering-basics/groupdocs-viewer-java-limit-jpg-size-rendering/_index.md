@@ -4,8 +4,8 @@
 "title": "كيفية تحديد حجم JPG في عرض المستندات باستخدام GroupDocs.Viewer لـ Java"
 "url": "/ar/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
 "weight": 1
+type: docs
 ---
-
 # كيفية تحديد حجم JPG في عرض المستندات باستخدام GroupDocs.Viewer لـ Java
 
 ## مقدمة

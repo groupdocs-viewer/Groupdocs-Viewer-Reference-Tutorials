@@ -6,8 +6,8 @@
 "title": "GroupDocs.Viewer 教程 - 掌握文档查看技巧"
 "url": "/zh/"
 "weight": 11
+type: docs
 ---
-
 # GroupDocs.Viewer 教程 - 掌握文档查看技巧
 欢迎来到 GroupDocs.Viewer 教程，这是我们帮助您掌握 GroupDocs.Viewer 功能和特性的全面指南。无论您是想探索基础知识的新手，还是寻求高级技巧和窍门的资深用户，我们的教程都能满足您的所有需求。深入研究我们简单易懂的指南，其中包含分步说明、实用示例和宝贵的见解，以提升您的文档查看体验。让我们一起踏上旅程，释放 GroupDocs.Viewer 的全部潜力。
 

@@ -4,8 +4,8 @@
 "title": "Πώς να αποδώσετε DOCX σε PNG χρησιμοποιώντας το GroupDocs.Viewer .NET® - Οδηγός βήμα προς βήμα"
 "url": "/el/net/rendering-basics/render-docx-png-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να αποδώσετε DOCX σε PNG χρησιμοποιώντας το GroupDocs.Viewer .NET: Οδηγός βήμα προς βήμα
 ## Βασικά στοιχεία απόδοσης
 ### Εισαγωγή

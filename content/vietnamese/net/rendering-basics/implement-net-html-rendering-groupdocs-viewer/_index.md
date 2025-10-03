@@ -4,8 +4,8 @@
 "title": "Cách triển khai .NET HTML Rendering với GroupDocs.Viewer&#58; Hướng dẫn từng bước"
 "url": "/vi/net/rendering-basics/implement-net-html-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Cách triển khai .NET HTML Rendering với GroupDocs.Viewer: Hướng dẫn từng bước
 
 ## Giới thiệu

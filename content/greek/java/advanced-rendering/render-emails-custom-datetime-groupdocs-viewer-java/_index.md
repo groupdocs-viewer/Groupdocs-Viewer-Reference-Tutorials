@@ -4,8 +4,8 @@
 "title": "Απόδοση email με προσαρμοσμένη ημερομηνία/ώρα σε Java χρησιμοποιώντας το GroupDocs.Viewer"
 "url": "/el/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Απόδοση email με προσαρμοσμένη ημερομηνία/ώρα σε Java χρησιμοποιώντας το GroupDocs.Viewer
 
 ## Εισαγωγή

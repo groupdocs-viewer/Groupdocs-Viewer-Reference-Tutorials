@@ -3,8 +3,8 @@
 "title": "GroupDocs.Viewer Java 的文件安全與存取控制教學課程"
 "url": "/zh-hant/java/security-permissions/"
 "weight": 6
+type: docs
 ---
-
 # GroupDocs.Viewer Java 的文件安全與存取控制教學課程
 
 透過我們針對 Java 開發者的 GroupDocs.Viewer 安全教程，學習如何確保文件查看的安全性。這些詳細的指南示範如何實現密碼保護、管理文件權限、處理加密文件以及如何以程式設計方式控制敏感文件的存取權限。每個教學課程都提供了一個針對常見安全性場景的 Java 程式碼範例，幫助您建立既能維護文件機密性和完整性，又能提供受控檢視功能的應用程式。

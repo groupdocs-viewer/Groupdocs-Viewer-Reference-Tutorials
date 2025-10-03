@@ -4,8 +4,8 @@
 "title": "تنفيذ عرض .NET WMZ/WMF باستخدام GroupDocs.Viewer للتوافق مع الويب والأنظمة الأساسية المتعددة"
 "url": "/ar/net/advanced-rendering/implement-net-wmz-wmf-rendering-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # تنفيذ عرض .NET WMZ/WMF باستخدام GroupDocs.Viewer للتوافق مع الويب والأنظمة الأساسية المتعددة
 
 ## مقدمة

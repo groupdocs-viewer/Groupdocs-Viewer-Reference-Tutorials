@@ -10,8 +10,8 @@ date: "2025-01-02"
 lastmod: "2025-01-02"
 categories: ["Document Rendering"]
 tags: ["GroupDocs.Viewer", "page-breaks", "spreadsheet-rendering", "dotnet"]
+type: docs
 ---
-
 # GroupDocs.Viewer Page Breaks Rendering: Your Complete .NET Guide
 
 ## Introduction

@@ -4,8 +4,8 @@
 "title": "Så här renderar du specifika CAD-lager med GroupDocs.Viewer för .NET - En omfattande guide"
 "url": "/sv/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Hur man renderar specifika CAD-ritningslager med GroupDocs.Viewer för .NET
 
 ## Introduktion

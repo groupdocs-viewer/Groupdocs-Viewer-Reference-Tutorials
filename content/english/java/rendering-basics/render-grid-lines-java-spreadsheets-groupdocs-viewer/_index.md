@@ -8,10 +8,8 @@ keywords:
 - render grid lines Java spreadsheets
 - GroupDocs.Viewer Java setup
 - Java spreadsheet rendering
-
+type: docs
 ---
-
-
 # How to Render Grid Lines in Java Spreadsheets Using GroupDocs.Viewer
 
 ## Introduction

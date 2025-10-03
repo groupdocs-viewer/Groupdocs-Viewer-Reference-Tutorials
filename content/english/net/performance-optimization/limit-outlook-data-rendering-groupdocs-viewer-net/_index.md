@@ -8,10 +8,8 @@ keywords:
 - Outlook data rendering .NET
 - performance optimization GroupDocs.Viewer
 - limit Outlook items rendering
-
+type: docs
 ---
-
-
 # Optimize Outlook Data Rendering with GroupDocs.Viewer .NET
 
 ## Introduction

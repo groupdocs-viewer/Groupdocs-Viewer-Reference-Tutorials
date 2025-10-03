@@ -4,8 +4,8 @@
 "title": "إتقان عرض مشروع MS في Java باستخدام GroupDocs.Viewer - دليل شامل"
 "url": "/ar/java/file-formats-support/mastering-ms-project-viewing-groupdocs-java/"
 "weight": 1
+type: docs
 ---
-
 # إتقان عرض مستندات MS Project باستخدام GroupDocs.Viewer في Java
 
 ## مقدمة

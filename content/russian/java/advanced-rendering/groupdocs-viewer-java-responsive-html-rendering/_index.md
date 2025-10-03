@@ -4,8 +4,8 @@
 "title": "Адаптивная HTML-рендеринг с GroupDocs.Viewer для Java&#58; Подробное руководство"
 "url": "/ru/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Адаптивный рендеринг HTML с помощью GroupDocs.Viewer для Java
 
 ## Введение

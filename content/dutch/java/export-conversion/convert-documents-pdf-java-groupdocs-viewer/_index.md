@@ -4,8 +4,8 @@
 "title": "Documenten naar PDF converteren in Java met GroupDocs.Viewer&#58; een uitgebreide handleiding"
 "url": "/nl/java/export-conversion/convert-documents-pdf-java-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Converteer documenten naar PDF in Java met GroupDocs.Viewer
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Padroneggiare GroupDocs.Viewer Java - Convertire i file IGS in HTML, JPG, PNG e PDF"
 "url": "/it/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
 "weight": 1
+type: docs
 ---
-
 # Padroneggiare GroupDocs.Viewer Java: convertire i file IGS in più formati
 
 ## Introduzione

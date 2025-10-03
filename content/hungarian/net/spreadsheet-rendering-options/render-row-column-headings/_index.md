@@ -5,8 +5,8 @@
 "title": "Sor- és oszlopfejlécek megjelenítése"
 "url": "/hu/net/spreadsheet-rendering-options/render-row-column-headings/"
 "weight": 18
+type: docs
 ---
-
 # Sor- és oszlopfejlécek megjelenítése
 
 ## Bevezetés

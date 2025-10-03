@@ -4,8 +4,8 @@
 "title": "GroupDocs.Viewer .NET を使用して Excel のテキストオーバーフローを非表示にする包括的なガイド"
 "url": "/ja/net/custom-rendering/groupdocs-viewer-dot-net-text-overflow-excel/"
 "weight": 1
+type: docs
 ---
-
 # GroupDocs.Viewer .NET を使用して Excel のテキストオーバーフローを非表示にする
 
 ## 導入

@@ -5,8 +5,8 @@
 "title": "Απόδοση με αλλαγές σελίδας"
 "url": "/el/net/spreadsheet-rendering-options/rendering-by-page-breaks/"
 "weight": 14
+type: docs
 ---
-
 # Απόδοση με αλλαγές σελίδας
 
 ## Εισαγωγή

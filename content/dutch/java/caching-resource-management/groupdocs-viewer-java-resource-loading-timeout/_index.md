@@ -4,8 +4,8 @@
 "title": "Time-out voor het laden van bronnen instellen in GroupDocs.Viewer voor Java&#58; de documentprestaties verbeteren"
 "url": "/nl/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
 "weight": 1
+type: docs
 ---
-
 # Time-out voor het laden van resources instellen in GroupDocs.Viewer voor Java: de efficiëntie van het weergeven van documenten verbeteren
 
 ## Invoering

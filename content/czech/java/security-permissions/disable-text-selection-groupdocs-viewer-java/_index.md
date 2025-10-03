@@ -4,8 +4,8 @@
 "title": "Jak zakázat výběr textu v PDF pomocí GroupDocs.Viewer v Javě – komplexní průvodce"
 "url": "/cs/java/security-permissions/disable-text-selection-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Jak implementovat zakázání výběru textu při vykreslování PDF pomocí GroupDocs.Viewer v Javě
 ## Zavedení
 Potřebujete bezpečný způsob, jak zobrazit PDF soubory na webu bez povolení výběru textu? Tato komplexní příručka ukazuje, jak zakázat výběr textu pomocí knihovny GroupDocs.Viewer pro Javu. Převedením textu na obrázky zůstane váš obsah při zobrazení online bezpečný a neupravitelný.

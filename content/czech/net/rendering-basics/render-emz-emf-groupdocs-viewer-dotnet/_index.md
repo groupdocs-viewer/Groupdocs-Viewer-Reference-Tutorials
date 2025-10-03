@@ -4,8 +4,8 @@
 "title": "Jak vykreslit soubory EMZ/EMF pomocí GroupDocs.Viewer .NET – Komplexní průvodce"
 "url": "/cs/net/rendering-basics/render-emz-emf-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Jak vykreslit soubory EMZ/EMF pomocí GroupDocs.Viewer .NET: Komplexní průvodce
 ## Základy renderování
 Tento tutoriál ukazuje, jak vykreslovat soubory Enhanced Metafile (EMF) nebo Embedded Metafile (EMZ) pomocí nástroje GroupDocs.Viewer pro .NET. Ať už integrujete do své aplikace všestranné funkce pro převod souborů nebo spravujete dokumenty, tato příručka se zabývá vykreslováním těchto formátů do formátů HTML, JPG, PNG a PDF.

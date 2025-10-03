@@ -5,8 +5,8 @@
 "title": "Renderowanie wiadomości e-mail"
 "url": "/pl/net/rendering-email-messages/"
 "weight": 27
+type: docs
 ---
-
 # Renderowanie wiadomości e-mail
 
 ## Wstęp

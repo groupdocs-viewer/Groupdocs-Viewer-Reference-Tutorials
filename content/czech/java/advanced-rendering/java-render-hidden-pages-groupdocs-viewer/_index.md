@@ -4,8 +4,8 @@
 "title": "Jak v Javě vykreslit skryté stránky pomocí GroupDocs.Viewer"
 "url": "/cs/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Java: Jak vykreslit skryté stránky pomocí GroupDocs.Viewer
 
 ## Zavedení

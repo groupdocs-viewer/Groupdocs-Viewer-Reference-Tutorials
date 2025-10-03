@@ -4,8 +4,8 @@
 "title": "Rendering av utskriftsområden i Java-kalkylblad med GroupDocs.Viewer för Java – en omfattande guide"
 "url": "/sv/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/"
 "weight": 1
+type: docs
 ---
-
 # Rendering av utskriftsområden i Java-kalkylblad med GroupDocs.Viewer för Java
 
 ## Introduktion

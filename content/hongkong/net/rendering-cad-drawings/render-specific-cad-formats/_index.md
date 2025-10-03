@@ -5,8 +5,8 @@
 "title": "渲染特定 CAD 格式 (CF2)"
 "url": "/zh-hant/net/rendering-cad-drawings/render-specific-cad-formats/"
 "weight": 12
+type: docs
 ---
-
 # 渲染特定 CAD 格式 (CF2)
 
 ## 介紹

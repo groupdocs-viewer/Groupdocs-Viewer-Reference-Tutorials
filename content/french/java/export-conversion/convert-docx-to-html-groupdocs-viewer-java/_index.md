@@ -4,8 +4,8 @@
 "title": "Convertir un fichier DOCX en HTML à l'aide de GroupDocs.Viewer pour Java &#58; guide étape par étape"
 "url": "/fr/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Convertir DOCX en HTML avec GroupDocs.Viewer pour Java : guide étape par étape
 
 ## Introduction

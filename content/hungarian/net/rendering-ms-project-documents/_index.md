@@ -5,8 +5,8 @@
 "title": "Microsoft Project dokumentumok renderelése"
 "url": "/hu/net/rendering-ms-project-documents/"
 "weight": 40
+type: docs
 ---
-
 # Microsoft Project dokumentumok renderelése
 
 ## Bevezetés

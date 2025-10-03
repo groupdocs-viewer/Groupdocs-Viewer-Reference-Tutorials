@@ -4,8 +4,8 @@
 "title": "Jak renderować linie siatki w arkuszach kalkulacyjnych Java za pomocą GroupDocs.Viewer"
 "url": "/pl/java/rendering-basics/render-grid-lines-java-spreadsheets-groupdocs-viewer/"
 "weight": 1
+type: docs
 ---
-
 # Jak renderować linie siatki w arkuszach kalkulacyjnych Java za pomocą GroupDocs.Viewer
 
 ## Wstęp

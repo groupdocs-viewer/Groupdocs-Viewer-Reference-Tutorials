@@ -5,8 +5,8 @@
 "title": "पासवर्ड-संरक्षित दस्तावेज़ लोड करें"
 "url": "/hi/net/advanced-loading/load-password-protected-document/"
 "weight": 12
+type: docs
 ---
-
 # पासवर्ड-संरक्षित दस्तावेज़ लोड करें
 
 ## परिचय

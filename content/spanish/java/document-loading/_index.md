@@ -3,8 +3,8 @@
 "title": "Tutoriales de carga de documentos y manejo de fuentes para GroupDocs.Viewer Java"
 "url": "/es/java/document-loading/"
 "weight": 2
+type: docs
 ---
-
 # Tutoriales de carga de documentos y manejo de fuentes para GroupDocs.Viewer Java
 
 Nuestros tutoriales de carga de documentos ofrecen una guía completa para gestionar fuentes de documentos en Java. Siga estas guías paso a paso para aprender a cargar documentos desde diferentes tipos de almacenamiento, gestionar diversos formatos de archivo, gestionar flujos de entrada e implementar estrategias flexibles de carga de documentos. Estos tutoriales prácticos incluyen ejemplos de código completos para la gestión de fuentes de documentos, lo que le ayudará a crear aplicaciones robustas de visualización de documentos con capacidades de carga versátiles.

@@ -5,8 +5,8 @@
 "title": "Licenc beállítása fájlból"
 "url": "/hu/net/getting-started/set-license-from-file/"
 "weight": 10
+type: docs
 ---
-
 # Licenc beállítása fájlból
 
 ## Bevezetés

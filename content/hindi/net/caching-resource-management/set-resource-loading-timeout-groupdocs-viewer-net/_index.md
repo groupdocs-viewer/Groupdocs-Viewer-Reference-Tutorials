@@ -4,8 +4,8 @@
 "title": ".NET के लिए GroupDocs.Viewer में संसाधन लोडिंग टाइमआउट को लागू करना - एक संपूर्ण गाइड"
 "url": "/hi/net/caching-resource-management/set-resource-loading-timeout-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # .NET के लिए GroupDocs.Viewer में संसाधन लोडिंग टाइमआउट लागू करना
 
 ## परिचय

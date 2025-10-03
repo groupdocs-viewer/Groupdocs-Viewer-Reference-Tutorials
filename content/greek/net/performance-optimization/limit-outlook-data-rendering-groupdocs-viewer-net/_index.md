@@ -4,8 +4,8 @@
 "title": "Βελτιστοποιήστε την απόδοση δεδομένων του Outlook σε .NET με συμβουλές και τεχνικές απόδοσης του GroupDocs.Viewer"
 "url": "/el/net/performance-optimization/limit-outlook-data-rendering-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # Βελτιστοποιήστε την απόδοση δεδομένων του Outlook με το GroupDocs.Viewer .NET
 
 ## Εισαγωγή

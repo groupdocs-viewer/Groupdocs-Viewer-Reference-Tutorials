@@ -4,8 +4,8 @@
 "title": "使用 GroupDocs.Viewer 掌握 .NET 中的 SVGZ 渲染－開發人員的完整指南"
 "url": "/zh-hant/net/advanced-rendering/svgz-rendering-dotnet-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # 使用 GroupDocs.Viewer 掌握 .NET 中的 SVGZ 渲染：開發人員完整指南
 
 ## 介紹

@@ -4,8 +4,8 @@
 "title": "Membagi Lembar Excel Berdasarkan Baris dan Kolom dengan GroupDocs.Viewer di Java&#58; Panduan Lengkap"
 "url": "/id/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
 "weight": 1
+type: docs
 ---
-
 # Memisahkan Lembar Excel Berdasarkan Baris dan Kolom Menggunakan GroupDocs.Viewer di Java
 
 ## Perkenalan

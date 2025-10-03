@@ -4,8 +4,8 @@
 "title": "Come eseguire il rendering di livelli CAD specifici utilizzando GroupDocs.Viewer per .NET&#58; una guida completa"
 "url": "/it/net/advanced-rendering/render-cad-layers-groupdocs-viewer-dotnet/"
 "weight": 1
+type: docs
 ---
-
 # Come eseguire il rendering di livelli specifici di disegno CAD utilizzando GroupDocs.Viewer per .NET
 
 ## Introduzione

@@ -4,8 +4,8 @@
 "title": "So rendern Sie Gitternetzlinien in Excel-Tabellen mit GroupDocs.Viewer .NET für die HTML-Ausgabe"
 "url": "/de/net/advanced-rendering/groupdocs-viewer-net-render-excel-grid-lines-html/"
 "weight": 1
+type: docs
 ---
-
 # So rendern Sie Gitternetzlinien in Excel-Tabellen mit GroupDocs.Viewer .NET für die HTML-Ausgabe
 
 ## Einführung

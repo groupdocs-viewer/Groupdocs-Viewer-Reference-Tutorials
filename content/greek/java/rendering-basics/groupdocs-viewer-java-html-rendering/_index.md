@@ -4,8 +4,8 @@
 "title": "Πώς να φορτώσετε και να αποδώσετε έγγραφα ως HTML χρησιμοποιώντας το GroupDocs.Viewer για Java"
 "url": "/el/java/rendering-basics/groupdocs-viewer-java-html-rendering/"
 "weight": 1
+type: docs
 ---
-
 # Πώς να φορτώσετε και να αποδώσετε έγγραφα ως HTML χρησιμοποιώντας το GroupDocs.Viewer για Java
 
 ## Εισαγωγή

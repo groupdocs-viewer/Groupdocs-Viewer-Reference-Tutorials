@@ -5,8 +5,8 @@
 "title": "Processing Document Attachments"
 "url": "/es/net/processing-document-attachments/"
 "weight": 32
+type: docs
 ---
-
 # Procesamiento de documentos adjuntos
 
 ## Introducción

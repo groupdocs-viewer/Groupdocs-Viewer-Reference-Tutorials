@@ -4,8 +4,8 @@
 "title": "Menerapkan Rendering HTML Responsif .NET dengan GroupDocs.Viewer; Panduan Lengkap untuk Pengembang"
 "url": "/id/net/advanced-rendering/net-responsive-html-rendering-groupdocs-viewer-guide/"
 "weight": 1
+type: docs
 ---
-
 # Menerapkan Rendering HTML Responsif .NET dengan GroupDocs.Viewer: Panduan Pengembang
 
 ## Perkenalan

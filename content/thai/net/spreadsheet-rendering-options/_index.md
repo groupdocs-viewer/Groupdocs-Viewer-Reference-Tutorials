@@ -5,8 +5,8 @@
 "title": "ตัวเลือกการแสดงผลสเปรดชีต"
 "url": "/th/net/spreadsheet-rendering-options/"
 "weight": 37
+type: docs
 ---
-
 # ตัวเลือกการแสดงผลสเปรดชีต
 
 ## การแนะนำ

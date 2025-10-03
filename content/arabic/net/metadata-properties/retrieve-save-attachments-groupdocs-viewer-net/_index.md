@@ -4,8 +4,8 @@
 "title": "كيفية استرداد مرفقات المستندات وحفظها باستخدام GroupDocs.Viewer .NET لإدارة البيانات الوصفية بكفاءة"
 "url": "/ar/net/metadata-properties/retrieve-save-attachments-groupdocs-viewer-net/"
 "weight": 1
+type: docs
 ---
-
 # كيفية استرداد مرفقات المستندات وحفظها باستخدام GroupDocs.Viewer .NET
 
 ## مقدمة

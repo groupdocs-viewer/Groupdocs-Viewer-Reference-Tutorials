@@ -4,8 +4,8 @@
 "title": "Faire pivoter la première page d'un document à l'aide de GroupDocs.Viewer pour Java (Guide avancé)"
 "url": "/fr/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
 "weight": 1
+type: docs
 ---
-
 # Faire pivoter la première page d'un document à l'aide de GroupDocs.Viewer pour Java
 
 ## Introduction

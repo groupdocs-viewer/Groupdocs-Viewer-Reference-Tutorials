@@ -5,8 +5,8 @@
 "title": "Habilitar renderização em camadas em PDF"
 "url": "/pt/net/pdf-rendering-options/enable-layered-rendering-pdf/"
 "weight": 15
+type: docs
 ---
-
 # Habilitar renderização em camadas em PDF
 
 ## Introdução

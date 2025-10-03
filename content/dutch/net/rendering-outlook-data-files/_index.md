@@ -5,8 +5,8 @@
 "title": "Outlook-gegevensbestanden (PST, OST) weergeven"
 "url": "/nl/net/rendering-outlook-data-files/"
 "weight": 39
+type: docs
 ---
-
 # Outlook-gegevensbestanden (PST, OST) weergeven
 
 ## Invoering

@@ -4,8 +4,8 @@
 "title": "Αποτελεσματική απόδοση αρχείων MS Project με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για .NET"
 "url": "/el/net/rendering-basics/groupdocs-viewer-ms-project-notes-conversion/"
 "weight": 1
+type: docs
 ---
-
 # Αποτελεσματική απόδοση αρχείων MS Project με σημειώσεις χρησιμοποιώντας το GroupDocs.Viewer για .NET
 
 ## Εισαγωγή
