@@ -38,7 +38,10 @@ jobs:
           repository: groupdocs/tutorials-theme
           token: ${{ secrets.REPO_TOKEN }}
           fetch-depth: 0
-          path: themes/tutorials-theme      
+          path: themes/tutorials-theme
+      - name: Install Theme Dependencies
+        run: npm install
+        working-directory: ./themes/tutorials-theme      
       # Step 2 - Sets up the latest version of Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
