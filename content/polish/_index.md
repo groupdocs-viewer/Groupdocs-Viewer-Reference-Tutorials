@@ -1,76 +1,92 @@
 ---
-"additionalTitle": "GroupDocs API References"
-"description": "Przeglądaj samouczki GroupDocs.Viewer, aby uzyskać kompleksowe wskazówki dotyczące maksymalizacji możliwości przeglądania dokumentów. Odkryj jego pełny potencjał już dziś!"
-"is_root": true
-"linktitle": "Samouczki GroupDocs.Viewer"
-"title": "Samouczki GroupDocs.Viewer - Mistrzowskie umiejętności przeglądania dokumentów"
-"url": "/pl/"
-"weight": 11
+additionalTitle: GroupDocs API References
+date: 2025-12-15
+description: Dowiedz się, jak dodać znak wodny do dokumentu przy użyciu GroupDocs.Viewer
+  oraz odkryj, jak konwertować Worda na PDF, renderować dokument do HTML i renderować
+  arkusz kalkulacyjny do HTML.
+is_root: true
+linktitle: GroupDocs.Viewer Tutorials
+title: Dodaj znak wodny do dokumentu – Poradniki GroupDocs.Viewer
 type: docs
+url: /pl/
+weight: 11
 ---
-# Samouczki GroupDocs.Viewer - Mistrzowskie umiejętności przeglądania dokumentów
-Witamy w samouczkach GroupDocs.Viewer, kompleksowym przewodniku po opanowywaniu funkcjonalności i cech GroupDocs.Viewer. Niezależnie od tego, czy jesteś nowicjuszem, który chce poznać podstawy, czy doświadczonym użytkownikiem poszukującym zaawansowanych wskazówek i trików, nasze samouczki obejmują wszystko, co musisz wiedzieć. Zanurz się w naszych łatwych do naśladowania przewodnikach, wypełnionych instrukcjami krok po kroku, praktycznymi przykładami i cennymi spostrzeżeniami, które ulepszą Twoje wrażenia z przeglądania dokumentów. Wyruszmy razem w podróż, aby odblokować pełny potencjał GroupDocs.Viewer.
 
-## GroupDocs.Viewer dla samouczków .NET
+# Dodaj znak wodny do dokumentu za pomocą GroupDocs.Viewer
 
-{{% alert color="primary" %}}
-Odkryj bogactwo samouczków dla GroupDocs.Viewer dla .NET, zaprojektowanych, aby wyposażyć programistów w wiedzę i umiejętności potrzebne do efektywnej integracji możliwości przeglądania dokumentów w ich aplikacjach .NET. Od ładowania dokumentów po zaawansowane opcje renderowania, każdy samouczek zapewnia wskazówki krok po kroku, umożliwiając użytkownikom bezproblemowe usprawnienie zarządzania dokumentami. Zapoznaj się z naszymi samouczkami już teraz i uwolnij pełny potencjał GroupDocs.Viewer dla .NET
+Witamy w centrum samouczków GroupDocs.Viewer. Tutaj znajdziesz kompleksową kolekcję tutoriali i przewodników, które pomogą Ci opanować nasze potężne API przeglądarki dokumentów dla .NET i Java. Niezależnie od tego, czy tworzysz aplikację internetową, aplikację desktopową, czy rozwiązanie mobilne, GroupDocs.Viewer umożliwia płynne renderowanie i wyświetlanie szerokiej gamy formatów dokumentów, w tym PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, obrazy i wiele innych. **Możesz również łatwo dodać znak wodny do dokumentu**, aby chronić swoją treść i wzmocnić markę.
 
-{{% /alert %}}
-Poniżej znajdują się linki do przydatnych zasobów .NET:
- 
-- [Ładowanie dokumentów](./net/loading-documents/)
-- [Zaawansowane opcje ładowania](./net/advanced-loading/)
-- [Zaawansowane użycie (buforowanie)](./net/advanced-usage-caching/)
-- [Opcje renderowania](./net/rendering-options/)
-- [Renderowanie plików archiwalnych](./net/rendering-archive-files/)
-- [Renderowanie rysunków CAD](./net/rendering-cad-drawings/)
-- [Pierwsze kroki](./net/getting-started/)
-- [Renderowanie wiadomości e-mail](./net/rendering-email-messages/)
-- [Renderowanie obrazu](./net/image-rendering/)
-- [Renderowanie dokumentów do formatu PDF](./net/rendering-documents-pdf/)
-- [Renderowanie dokumentów do obrazów](./net/rendering-documents-images/)
-- [Renderowanie dokumentów do HTML](./net/rendering-documents-html/)
-- [Przetwarzanie załączników dokumentów](./net/processing-document-attachments/)
-- [Renderowanie plików tekstowych](./net/rendering-text-files/)
-- [Renderowanie dokumentów Visio](./net/rendering-visio-documents/)
-- [Renderowanie dokumentów internetowych](./net/rendering-web-documents/)
-- [Renderowanie dokumentów przetwarzania tekstu](./net/rendering-word-processing-documents/)
-- [Opcje renderowania arkusza kalkulacyjnego](./net/spreadsheet-rendering-options/)
-- [Opcje renderowania PDF](./net/pdf-rendering-options/)
-- [Renderowanie plików danych programu Outlook (PST, OST)](./net/rendering-outlook-data-files/)
-- [Renderowanie dokumentów Microsoft Project](./net/rendering-ms-project-documents/)
-- [Ładowanie dokumentu](./net/document-loading/)
-- [Podstawy renderowania](./net/rendering-basics/)
-- [Zaawansowane renderowanie](./net/advanced-rendering/)
-- [Optymalizacja wydajności](./net/performance-optimization/)
-- [Bezpieczeństwo i uprawnienia](./net/security-permissions/)
-- [Znaki wodne i adnotacje](./net/watermarks-annotations/)
-- [Obsługiwane formaty plików](./net/file-formats-support/)
-- [Chmura i zdalne renderowanie dokumentów](./net/cloud-remote-document-rendering/)
-- [Buforowanie i zarządzanie zasobami](./net/caching-resource-management/)
-- [Metadane i właściwości](./net/metadata-properties/)
-- [Eksport i konwersja](./net/export-conversion/)
-- [Niestandardowe renderowanie](./net/custom-rendering/)
+## Jak dodać znak wodny do dokumentu przy użyciu GroupDocs.Viewer
 
-## GroupDocs.Viewer dla samouczków Java
+Dodanie znaku wodnego jest powszechnym wymogiem dla przedsiębiorstw, które muszą chronić własnościowe informacje lub oznaczyć każdą wyeksportowaną stronę. Dzięki GroupDocs.Viewer możesz zastosować znaki wodne w postaci tekstu lub obrazu podczas procesu renderowania, nie modyfikując oryginalnego pliku. Takie podejście działa dla plików PDF, dokumentów Word, arkuszy kalkulacyjnych oraz nawet rysunków CAD, zapewniając spójną warstwę ochronną we wszystkich obsługiwanych formatach.
+
+Poniżej przeprowadzimy Cię przez główne sekcje naszej biblioteki tutoriali. Każda sekcja zawiera przewodniki krok po kroku, fragmenty kodu oraz wskazówki najlepszych praktyk, dzięki czemu szybko rozpoczniesz renderowanie, konwertowanie i dodawanie znaków wodnych do dokumentów w swoich aplikacjach.
+
+## Samouczki GroupDocs.Viewer dla .NET
 
 {{% alert color="primary" %}}
-Przeglądaj kompleksowe samouczki dla GroupDocs.Viewer dla Java, zaprojektowane, aby pomóc deweloperom bezproblemowo zintegrować potężne możliwości przeglądania dokumentów z ich aplikacjami Java. Nasze przewodniki krok po kroku obejmują wszystko, od podstawowej konfiguracji po zaawansowane techniki renderowania, umożliwiając tworzenie solidnych rozwiązań do zarządzania dokumentami.
-
+Umożliw swoim aplikacjom .NET wyświetlanie dokumentów w wysokiej jakości. Nasze samouczki GroupDocs.Viewer dla .NET dostarczają wszystkiego, co musisz wiedzieć, aby zintegrować potężną przeglądarkę dokumentów. Dowiedz się, jak renderować ponad 170 formatów dokumentów do HTML, JPEG, PNG i PDF. Poznaj zaawansowane tematy, takie jak renderowanie konkretnych układów w rysunkach CAD, obsługa załączników dokumentów oraz optymalizacja wydajności. Zacznij budować solidne i profesjonalne doświadczenia przeglądania dokumentów w C#, ASP.NET i innych frameworkach .NET.
 {{% /alert %}}
-Poniżej znajdują się linki do przydatnych zasobów dotyczących języka Java:
 
-- [Pierwsze kroki](./java/getting-started/)
-- [Ładowanie dokumentu](./java/document-loading/)
-- [Podstawy renderowania](./java/rendering-basics/)
-- [Zaawansowane renderowanie](./java/advanced-rendering/)
-- [Optymalizacja wydajności](./java/performance-optimization/)
-- [Bezpieczeństwo i uprawnienia](./java/security-permissions/)
-- [Znaki wodne i adnotacje](./java/watermarks-annotations/)
-- [Obsługiwane formaty plików](./java/file-formats-support/)
-- [Chmura i zdalne renderowanie dokumentów](./java/cloud-remote-document-rendering/)
-- [Buforowanie i zarządzanie zasobami](./java/caching-resource-management/)
-- [Metadane i właściwości](./java/metadata-properties/)
-- [Eksport i konwersja](./java/export-conversion/)
-- [Niestandardowe renderowanie](./java/custom-rendering/)
+Oto linki do przydatnych zasobów .NET:
+
+- [Loading Documents](./net/loading-documents/)
+- [Advanced Loading Options](./net/advanced-loading/)
+- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
+- [Rendering Options](./net/rendering-options/)
+- [Rendering Archive Files](./net/rendering-archive-files/)
+- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
+- [Getting Started](./net/getting-started/)
+- [Rendering Email Messages](./net/rendering-email-messages/)
+- [Image Rendering](./net/image-rendering/)
+- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
+- [Rendering Documents to Images](./net/rendering-documents-images/)
+- [Rendering Documents to HTML](./net/rendering-documents-html/)
+- [Processing Document Attachments](./net/processing-document-attachments/)
+- [Rendering Text Files](./net/rendering-text-files/)
+- [Rendering Visio Documents](./net/rendering-visio-documents/)
+- [Rendering Web Documents](./net/rendering-web-documents/)
+- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
+- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
+- [PDF Rendering Options](./net/pdf-rendering-options/)
+- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
+- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
+- [Document Loading](./net/document-loading/)
+- [Rendering Basics](./net/rendering-basics/)
+- [Advanced Rendering](./net/advanced-rendering/)
+- [Performance Optimization](./net/performance-optimization/)
+- [Security & Permissions](./net/security-permissions/)
+- [Watermarks & Annotations](./net/watermarks-annotations/)
+- [File Formats Support](./net/file-formats-support/)
+- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./net/caching-resource-management/)
+- [Metadata & Properties](./net/metadata-properties/)
+- [Export & Conversion](./net/export-conversion/)
+- [Custom Rendering](./net/custom-rendering/)
+
+## Samouczki GroupDocs.Viewer dla Java
+
+{{% alert color="primary" %}}
+Zintegruj wszechstronną i wydajną przeglądarkę dokumentów w swoich aplikacjach Java za pomocą GroupDocs.Viewer dla Java. Nasze samouczki poprowadzą Cię przez każdy krok, od konfiguracji środowiska po implementację zaawansowanych funkcji renderowania. Naucz się wyświetlać liczne formaty plików, w tym złożone dokumenty, takie jak wieloułożeniowe pliki CAD oraz archiwa zabezpieczone hasłem. Korzystaj z naszych przykładów, aby renderować dokumenty do HTML5, obrazów i PDF, umożliwiając łatwe przeglądanie dokumentów na różnych platformach.
+{{% /alert %}}
+
+Oto linki do przydatnych zasobów Java:
+
+- [Getting Started](./java/getting-started/)
+- [Document Loading](./java/document-loading/)
+- [Rendering Basics](./java/rendering-basics/)
+- [Advanced Rendering](./java/advanced-rendering/)
+- [Performance Optimization](./java/performance-optimization/)
+- [Security & Permissions](./java/security-permissions/)
+- [Watermarks & Annotations](./java/watermarks-annotations/)
+- [File Formats Support](./java/file-formats-support/)
+- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./java/caching-resource-management/)
+- [Metadata & Properties](./java/metadata-properties/)
+- [Export & Conversion](./java/export-conversion/)
+- [Custom Rendering](./java/custom-rendering/)
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-15  
+**Autor:** GroupDocs
