@@ -1,24 +1,28 @@
 ---
-title: "Comprehensive GroupDocs.Viewer Tutorials | View, Render & Display Documents"
+title: "Add Watermark to Document with GroupDocs.Viewer | Tutorials"
 linktitle: "GroupDocs.Viewer Tutorials"
 additionalTitle: "GroupDocs API References"
-description: "Master document viewing with our in-depth GroupDocs.Viewer tutorials. Learn to render and display over 170 file formats in your .NET and Java applications."
+description: "Master add watermark to document and document viewing with GroupDocs.Viewer tutorials. Learn to render, convert, and display over 170 formats in .NET and Java."
 weight: 11
 url: /
 is_root: true
 type: docs
+date: 2025-12-15
 ---
-# GroupDocs.Viewer Tutorials
 
-Welcome to the GroupDocs.Viewer tutorials hub. Here you will find a comprehensive collection of tutorials and guides to help you master our powerful document viewer APIs for .NET and Java. Whether you're building a web application, a desktop app, or a mobile solution, GroupDocs.Viewer enables you to seamlessly render and display a wide variety of document formats, including PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, images, and more.
+# Add Watermark to Document with GroupDocs.Viewer
 
-Our tutorials are designed for developers of all skill levels. From getting started with basic document rendering to exploring advanced features like caching, watermarking, and customizing the output, we have you covered. Dive into our step-by-step guides and unlock the full potential of document viewing in your applications.
+Welcome to the GroupDocs.Viewer tutorials hub. Whether you’re building a web, desktop, or mobile application, you’ll soon discover how easy it is to **add watermark to document** files and render them flawlessly across platforms. With support for PDF, Microsoft Office, CAD drawings, email messages, and more, GroupDocs.Viewer lets you convert Word to PDF, render PDF in Java, and display CAD drawings—all while keeping your documents secure and brand‑consistent.
 
-## GroupDocs.Viewer for .NET Tutorials
+## Why add watermark to document using GroupDocs.Viewer?
+
+Adding a watermark protects intellectual property, reinforces branding, and meets compliance requirements. GroupDocs.Viewer provides a simple API that lets you overlay text or image watermarks during the rendering process, so the original file remains untouched while every rendered page carries your custom mark.
 
 {{% alert color="primary" %}}
-Empower your .NET applications with high-fidelity document viewing capabilities. Our GroupDocs.Viewer for .NET tutorials provide everything you need to know to integrate a powerful document viewer. Learn how to render over 170 document formats to HTML, JPEG, PNG, and PDF. Explore advanced topics like rendering specific layouts in CAD drawings, handling document attachments, and optimizing performance. Start building robust and professional document viewing experiences in C#, ASP.NET, and other .NET frameworks.
+Empower your .NET applications with high‑fidelity document viewing capabilities. Our GroupDocs.Viewer for .NET tutorials provide everything you need to know to integrate a powerful document viewer. Learn how to render over 170 document formats to HTML, JPEG, PNG, and PDF. Explore advanced topics like rendering specific layouts in CAD drawings, handling document attachments, and optimizing performance. Start building robust and professional document viewing experiences in C#, ASP.NET, and other .NET frameworks.
 {{% /alert %}}
+
+### GroupDocs.Viewer for .NET Tutorials – How to add watermark to document
 
 These are links to some useful .NET resources:
  
@@ -56,11 +60,11 @@ These are links to some useful .NET resources:
 - [Export & Conversion](./net/export-conversion/)
 - [Custom Rendering](./net/custom-rendering/)
 
-## GroupDocs.Viewer for Java Tutorials
-
 {{% alert color="primary" %}}
-Integrate a versatile and efficient document viewer into your Java applications with GroupDocs.Viewer for Java. Our tutorials will guide you through every step, from setting up your environment to implementing advanced rendering features. Learn to display numerous file formats, including complex documents like multi-layout CAD files and password-protected archives. Follow our examples to render documents to HTML5, images, and PDF, enabling cross-platform document viewing with ease.
+Integrate a versatile and efficient document viewer into your Java applications with GroupDocs.Viewer for Java. Our tutorials will guide you through every step, from setting up your environment to implementing advanced rendering features. Learn to display numerous file formats, including complex documents like multi‑layout CAD files and password‑protected archives. Follow our examples to render documents to HTML5, images, and PDF, enabling cross‑platform document viewing with ease.
 {{% /alert %}}
+
+### GroupDocs.Viewer for Java Tutorials
 
 These are links to some useful Java resources:
 
@@ -77,3 +81,7 @@ These are links to some useful Java resources:
 - [Metadata & Properties](./java/metadata-properties/)
 - [Export & Conversion](./java/export-conversion/)
 - [Custom Rendering](./java/custom-rendering/)
+
+---
+
+Adding watermarks, converting Word to PDF, rendering PDF in Java, and displaying CAD drawings are just a few of the powerful capabilities you’ll master through these guides. Dive in, follow the step‑by‑step examples, and start delivering secure, high‑quality document experiences today.

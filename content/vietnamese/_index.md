@@ -1,76 +1,89 @@
 ---
-"additionalTitle": "GroupDocs API References"
-"description": "Khám phá hướng dẫn GroupDocs.Viewer để được hướng dẫn toàn diện về cách tối đa hóa khả năng xem tài liệu. Mở khóa toàn bộ tiềm năng của nó ngay hôm nay!"
-"is_root": true
-"linktitle": "Hướng dẫn sử dụng GroupDocs.Viewer"
-"title": "Hướng dẫn sử dụng GroupDocs.Viewer - Làm chủ kỹ năng xem tài liệu"
-"url": "/vi/"
-"weight": 11
+additionalTitle: GroupDocs API References
+date: 2025-12-15
+description: Thành thạo việc thêm watermark vào tài liệu và xem tài liệu với các hướng
+  dẫn GroupDocs.Viewer. Học cách render, chuyển đổi và hiển thị hơn 170 định dạng
+  trong .NET và Java.
+is_root: true
+linktitle: GroupDocs.Viewer Tutorials
+title: Thêm Đánh Dấu Nước vào Tài liệu với GroupDocs.Viewer | Hướng Dẫn
 type: docs
+url: /vi/
+weight: 11
 ---
-# Hướng dẫn sử dụng GroupDocs.Viewer - Làm chủ kỹ năng xem tài liệu
-Chào mừng bạn đến với hướng dẫn GroupDocs.Viewer, hướng dẫn toàn diện của bạn để nắm vững các chức năng và tính năng của GroupDocs.Viewer. Cho dù bạn là người mới bắt đầu muốn khám phá những điều cơ bản hay là người dùng có kinh nghiệm đang tìm kiếm các mẹo và thủ thuật nâng cao, hướng dẫn của chúng tôi sẽ bao gồm mọi thứ bạn cần biết. Hãy khám phá các hướng dẫn dễ làm theo của chúng tôi, chứa đầy các hướng dẫn từng bước, ví dụ thực tế và những hiểu biết có giá trị để nâng cao trải nghiệm xem tài liệu của bạn. Hãy cùng nhau bắt đầu hành trình khám phá toàn bộ tiềm năng của GroupDocs.Viewer.
 
-## GroupDocs.Viewer cho hướng dẫn .NET
+# Thêm watermark vào tài liệu với GroupDocs.Viewer
+
+Chào mừng đến với trung tâm hướng dẫn GroupDocs.Viewer. Dù bạn đang xây dựng ứng dụng web, desktop hay di động, bạn sẽ sớm khám phá cách dễ dàng để **thêm watermark vào tài liệu** và hiển thị chúng một cách hoàn hảo trên mọi nền tảng. Với hỗ trợ PDF, Microsoft Office, bản vẽ CAD, tin nhắn email và hơn thế nữa, GroupDocs.Viewer cho phép bạn chuyển đổi Word sang PDF, render PDF trong Java và hiển thị bản vẽ CAD — tất cả trong khi giữ tài liệu của bạn an toàn và đồng nhất với thương hiệu.
+
+## Tại sao nên thêm watermark vào tài liệu bằng GroupDocs.Viewer?
+
+Thêm watermark giúp bảo vệ tài sản trí tuệ, củng cố thương hiệu và đáp ứng các yêu cầu tuân thủ. GroupDocs.Viewer cung cấp một API đơn giản cho phép bạn chồng lên watermark dạng văn bản hoặc hình ảnh trong quá trình render, vì vậy tệp gốc vẫn không bị thay đổi trong khi mỗi trang đã render mang dấu hiệu tùy chỉnh của bạn.
 
 {{% alert color="primary" %}}
-Khám phá nhiều hướng dẫn về GroupDocs.Viewer cho .NET, được thiết kế để trao quyền cho các nhà phát triển với kiến thức và kỹ năng cần thiết để tích hợp hiệu quả các khả năng xem tài liệu vào các ứng dụng .NET của họ. Từ việc tải tài liệu đến các tùy chọn kết xuất nâng cao, mỗi hướng dẫn đều cung cấp hướng dẫn từng bước, cho phép người dùng nâng cao khả năng quản lý tài liệu một cách liền mạch. Khám phá các hướng dẫn của chúng tôi ngay bây giờ và mở khóa toàn bộ tiềm năng của GroupDocs.Viewer cho .NET
-
+Tăng cường khả năng xem tài liệu chất lượng cao cho các ứng dụng .NET của bạn. Các hướng dẫn GroupDocs.Viewer cho .NET của chúng tôi cung cấp mọi thông tin bạn cần để tích hợp một trình xem tài liệu mạnh mẽ. Tìm hiểu cách render hơn 170 định dạng tài liệu sang HTML, JPEG, PNG và PDF. Khám phá các chủ đề nâng cao như render các bố cục cụ thể trong bản vẽ CAD, xử lý tệp đính kèm tài liệu và tối ưu hiệu suất. Bắt đầu xây dựng các trải nghiệm xem tài liệu vững chắc và chuyên nghiệp trong C#, ASP.NET và các framework .NET khác.
 {{% /alert %}}
-Đây là những liên kết tới một số tài nguyên .NET hữu ích:
- 
-- [Đang tải tài liệu](./net/loading-documents/)
+
+### Hướng dẫn GroupDocs.Viewer cho .NET – Cách thêm watermark vào tài liệu
+
+Đây là một số liên kết tới các tài nguyên .NET hữu ích:
+
+- [Tải tài liệu](./net/loading-documents/)
 - [Tùy chọn tải nâng cao](./net/advanced-loading/)
-- [Sử dụng nâng cao (Bộ nhớ đệm)](./net/advanced-usage-caching/)
-- [Tùy chọn kết xuất](./net/rendering-options/)
-- [Hiển thị các tập tin lưu trữ](./net/rendering-archive-files/)
-- [Kết xuất bản vẽ CAD](./net/rendering-cad-drawings/)
+- [Sử dụng nâng cao (Caching)](./net/advanced-usage-caching/)
+- [Tùy chọn render](./net/rendering-options/)
+- [Render tệp lưu trữ](./net/rendering-archive-files/)
+- [Render bản vẽ CAD](./net/rendering-cad-drawings/)
 - [Bắt đầu](./net/getting-started/)
-- [Hiển thị tin nhắn email](./net/rendering-email-messages/)
-- [Kết xuất hình ảnh](./net/image-rendering/)
-- [Kết xuất tài liệu sang PDF](./net/rendering-documents-pdf/)
-- [Kết xuất tài liệu thành hình ảnh](./net/rendering-documents-images/)
-- [Kết xuất tài liệu sang HTML](./net/rendering-documents-html/)
-- [Xử lý tài liệu đính kèm](./net/processing-document-attachments/)
-- [Hiển thị tệp văn bản](./net/rendering-text-files/)
-- [Kết xuất tài liệu Visio](./net/rendering-visio-documents/)
-- [Kết xuất tài liệu Web](./net/rendering-web-documents/)
-- [Kết xuất tài liệu xử lý văn bản](./net/rendering-word-processing-documents/)
-- [Tùy chọn kết xuất bảng tính](./net/spreadsheet-rendering-options/)
-- [Tùy chọn kết xuất PDF](./net/pdf-rendering-options/)
-- [Hiển thị tệp dữ liệu Outlook (PST, OST)](./net/rendering-outlook-data-files/)
-- [Hiển thị Tài liệu Microsoft Project](./net/rendering-ms-project-documents/)
-- [Đang tải tài liệu](./net/document-loading/)
-- [Cơ bản về Render](./net/rendering-basics/)
-- [Kết xuất nâng cao](./net/advanced-rendering/)
-- [Tối ưu hóa hiệu suất](./net/performance-optimization/)
+- [Render tin nhắn email](./net/rendering-email-messages/)
+- [Render hình ảnh](./net/image-rendering/)
+- [Render tài liệu sang PDF](./net/rendering-documents-pdf/)
+- [Render tài liệu sang hình ảnh](./net/rendering-documents-images/)
+- [Render tài liệu sang HTML](./net/rendering-documents-html/)
+- [Xử lý tệp đính kèm tài liệu](./net/processing-document-attachments/)
+- [Render tệp văn bản](./net/rendering-text-files/)
+- [Render tài liệu Visio](./net/rendering-visio-documents/)
+- [Render tài liệu web](./net/rendering-web-documents/)
+- [Render tài liệu xử lý văn bản](./net/rendering-word-processing-documents/)
+- [Tùy chọn render bảng tính](./net/spreadsheet-rendering-options/)
+- [Tùy chọn render PDF](./net/pdf-rendering-options/)
+- [Render tệp dữ liệu Outlook (PST, OST)](./net/rendering-outlook-data-files/)
+- [Render tài liệu Microsoft Project](./net/rendering-ms-project-documents/)
+- [Tải tài liệu](./net/document-loading/)
+- [Cơ bản về render](./net/rendering-basics/)
+- [Render nâng cao](./net/advanced-rendering/)
+- [Tối ưu hiệu năng](./net/performance-optimization/)
 - [Bảo mật & Quyền](./net/security-permissions/)
-- [Hình mờ & Chú thích](./net/watermarks-annotations/)
-- [Hỗ trợ định dạng tập tin](./net/file-formats-support/)
-- [Kết xuất tài liệu từ xa và đám mây](./net/cloud-remote-document-rendering/)
-- [Quản lý bộ nhớ đệm và tài nguyên](./net/caching-resource-management/)
-- [Siêu dữ liệu & Thuộc tính](./net/metadata-properties/)
-- [Xuất khẩu & Chuyển đổi](./net/export-conversion/)
-- [Kết xuất tùy chỉnh](./net/custom-rendering/)
-
-## GroupDocs.Viewer cho hướng dẫn Java
+- [Watermark & Ghi chú](./net/watermarks-annotations/)
+- [Hỗ trợ định dạng tệp](./net/file-formats-support/)
+- [Render tài liệu trên đám mây & từ xa](./net/cloud-remote-document-rendering/)
+- [Caching & Quản lý tài nguyên](./net/caching-resource-management/)
+- [Metadata & Thuộc tính](./net/metadata-properties/)
+- [Xuất & Chuyển đổi](./net/export-conversion/)
+- [Render tùy chỉnh](./net/custom-rendering/)
 
 {{% alert color="primary" %}}
-Khám phá hướng dẫn toàn diện cho GroupDocs.Viewer for Java, được thiết kế để giúp các nhà phát triển tích hợp liền mạch các khả năng xem tài liệu mạnh mẽ vào các ứng dụng Java của họ. Hướng dẫn từng bước của chúng tôi bao gồm mọi thứ từ thiết lập cơ bản đến các kỹ thuật dựng hình nâng cao, giúp bạn xây dựng các giải pháp quản lý tài liệu mạnh mẽ.
-
+Tích hợp một trình xem tài liệu đa năng và hiệu quả vào các ứng dụng Java của bạn với GroupDocs.Viewer cho Java. Các hướng dẫn của chúng tôi sẽ hướng dẫn bạn qua từng bước, từ việc thiết lập môi trường đến triển khai các tính năng render nâng cao. Tìm hiểu cách hiển thị nhiều định dạng tệp, bao gồm các tài liệu phức tạp như tệp CAD đa bố cục và các kho lưu trữ được bảo vệ bằng mật khẩu. Theo dõi các ví dụ của chúng tôi để render tài liệu sang HTML5, hình ảnh và PDF, cho phép xem tài liệu đa nền tảng một cách dễ dàng.
 {{% /alert %}}
-Sau đây là các liên kết tới một số tài nguyên Java hữu ích:
+
+### Hướng dẫn GroupDocs.Viewer cho Java
+
+Đây là một số liên kết tới các tài nguyên Java hữu ích:
 
 - [Bắt đầu](./java/getting-started/)
-- [Đang tải tài liệu](./java/document-loading/)
-- [Cơ bản về Render](./java/rendering-basics/)
-- [Kết xuất nâng cao](./java/advanced-rendering/)
-- [Tối ưu hóa hiệu suất](./java/performance-optimization/)
+- [Tải tài liệu](./java/document-loading/)
+- [Cơ bản về render](./java/rendering-basics/)
+- [Render nâng cao](./java/advanced-rendering/)
+- [Tối ưu hiệu năng](./java/performance-optimization/)
 - [Bảo mật & Quyền](./java/security-permissions/)
-- [Hình mờ & Chú thích](./java/watermarks-annotations/)
-- [Hỗ trợ định dạng tập tin](./java/file-formats-support/)
-- [Kết xuất tài liệu từ xa và đám mây](./java/cloud-remote-document-rendering/)
-- [Quản lý bộ nhớ đệm và tài nguyên](./java/caching-resource-management/)
-- [Siêu dữ liệu & Thuộc tính](./java/metadata-properties/)
-- [Xuất khẩu & Chuyển đổi](./java/export-conversion/)
-- [Kết xuất tùy chỉnh](./java/custom-rendering/)
+- [Watermark & Ghi chú](./java/watermarks-annotations/)
+- [Hỗ trợ định dạng tệp](./java/file-formats-support/)
+- [Render tài liệu trên đám mây & từ xa](./java/cloud-remote-document-rendering/)
+- [Caching & Quản lý tài nguyên](./java/caching-resource-management/)
+- [Metadata & Thuộc tính](./java/metadata-properties/)
+- [Xuất & Chuyển đổi](./java/export-conversion/)
+- [Render tùy chỉnh](./java/custom-rendering/)
+
+---
+
+Thêm watermark, chuyển đổi Word sang PDF, render PDF trong Java và hiển thị bản vẽ CAD chỉ là một vài trong số các khả năng mạnh mẽ mà bạn sẽ làm chủ qua các hướng dẫn này. Hãy khám phá, theo dõi các ví dụ từng bước, và bắt đầu cung cấp trải nghiệm tài liệu an toàn, chất lượng cao ngay hôm nay.
