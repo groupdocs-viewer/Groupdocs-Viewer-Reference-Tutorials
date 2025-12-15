@@ -1,76 +1,98 @@
 ---
-"additionalTitle": "GroupDocs API References"
-"description": "Изучите руководства GroupDocs.Viewer для комплексного руководства по максимизации возможностей просмотра документов. Раскройте весь его потенциал сегодня!"
-"is_root": true
-"linktitle": "Учебные пособия по GroupDocs.Viewer"
-"title": "Учебные пособия GroupDocs.Viewer — освойте навыки просмотра документов"
-"url": "/ru/"
-"weight": 11
+additionalTitle: GroupDocs API References
+date: 2025-12-15
+description: Исследуйте лучший центр учебных материалов GroupDocs Viewer. Овладейте
+  рендерингом и отображением более 170 форматов файлов в приложениях .NET и Java.
+is_root: true
+linktitle: GroupDocs.Viewer Tutorials
+title: Центр учебных материалов GroupDocs Viewer – Полные руководства по просмотру,
+  рендерингу и отображению документов
 type: docs
+url: /ru/
+weight: 11
 ---
-# Учебные пособия GroupDocs.Viewer — освойте навыки просмотра документов
-Добро пожаловать в руководства GroupDocs.Viewer, ваше полное руководство по освоению функций и возможностей GroupDocs.Viewer. Независимо от того, новичок ли вы, желающий изучить основы, или опытный пользователь, ищущий продвинутые советы и приемы, наши руководства охватывают все, что вам нужно знать. Погрузитесь в наши простые руководства, наполненные пошаговыми инструкциями, практическими примерами и ценными идеями для улучшения вашего опыта просмотра документов. Давайте отправимся в путешествие, чтобы вместе раскрыть весь потенциал GroupDocs.Viewer.
 
-## GroupDocs.Viewer для .NET Учебники
+# Руководство по GroupDocs Viewer
 
-{{% alert color="primary" %}}
-Откройте для себя множество учебных пособий для GroupDocs.Viewer для .NET, разработанных для того, чтобы предоставить разработчикам знания и навыки, необходимые для эффективной интеграции возможностей просмотра документов в их приложения .NET. От загрузки документов до расширенных параметров рендеринга, каждое учебное пособие предоставляет пошаговые инструкции, позволяя пользователям легко улучшить управление документами. Изучите наши учебные пособия сейчас и раскройте весь потенциал GroupDocs.Viewer для .NET
+Добро пожаловать в центр **руководства по GroupDocs Viewer**. Независимо от того, создаёте ли вы веб‑портал, настольный клиент или мобильное приложение, эта коллекция предоставляет всё необходимое для интеграции высококачественного просмотра документов в ваши решения на .NET и Java. Вы узнаете пошаговые руководства, охватывающие всё — от загрузки простого PDF до рендеринга сложных CAD‑чертежей, работы с вложениями, применения водяных знаков и оптимизации производительности для масштабных развертываний.
 
-{{% /alert %}}
-Вот ссылки на некоторые полезные ресурсы .NET:
- 
-- [Загрузка документов](./net/loading-documents/)
-- [Расширенные параметры загрузки](./net/advanced-loading/)
-- [Расширенное использование (кэширование)](./net/advanced-usage-caching/)
-- [Параметры рендеринга](./net/rendering-options/)
-- [Архив файлов рендеринга](./net/rendering-archive-files/)
-- [Визуализация чертежей САПР](./net/rendering-cad-drawings/)
-- [Начиная](./net/getting-started/)
-- [Обработка сообщений электронной почты](./net/rendering-email-messages/)
-- [Рендеринг изображения](./net/image-rendering/)
-- [Преобразование документов в PDF](./net/rendering-documents-pdf/)
-- [Преобразование документов в изображения](./net/rendering-documents-images/)
-- [Преобразование документов в HTML](./net/rendering-documents-html/)
-- [Обработка вложений документов](./net/processing-document-attachments/)
-- [Рендеринг текстовых файлов](./net/rendering-text-files/)
-- [Рендеринг документов Visio](./net/rendering-visio-documents/)
-- [Рендеринг веб-документов](./net/rendering-web-documents/)
-- [Обработка текстовых документов](./net/rendering-word-processing-documents/)
-- [Параметры визуализации электронных таблиц](./net/spreadsheet-rendering-options/)
-- [Параметры рендеринга PDF](./net/pdf-rendering-options/)
-- [Рендеринг файлов данных Outlook (PST, OST)](./net/rendering-outlook-data-files/)
-- [Рендеринг документов Microsoft Project](./net/rendering-ms-project-documents/)
-- [Загрузка документа](./net/document-loading/)
-- [Основы рендеринга](./net/rendering-basics/)
-- [Расширенный рендеринг](./net/advanced-rendering/)
-- [Оптимизация производительности](./net/performance-optimization/)
-- [Безопасность и разрешения](./net/security-permissions/)
-- [Водяные знаки и аннотации](./net/watermarks-annotations/)
-- [Поддержка форматов файлов](./net/file-formats-support/)
-- [Облачный и удаленный рендеринг документов](./net/cloud-remote-document-rendering/)
-- [Кэширование и управление ресурсами](./net/caching-resource-management/)
-- [Метаданные и свойства](./net/metadata-properties/)
-- [Экспорт и конвертация](./net/export-conversion/)
-- [Индивидуальный рендеринг](./net/custom-rendering/)
+В этом руководстве вы поймёте, **почему руководство по GroupDocs Viewer** необходимо разработчикам, которым требуется поддержка более 170 форматов файлов, как выбрать правильные параметры рендеринга и где найти самые актуальные примеры для обеих платформ.
 
-## GroupDocs.Viewer для учебных пособий Java
+## Что такое руководство по GroupDocs Viewer?
+
+Руководство по GroupDocs Viewer — это отобранный набор практических статей, которые проводят вас через типовые и продвинутые сценарии рендеринга документов. Оно помогает быстро начать работу, решить типичные проблемы и раскрыть расширенные возможности, такие как кэширование, удалённый рендеринг и пользовательские форматы вывода.
+
+## Почему стоит использовать руководство по GroupDocs Viewer?
+
+- **Широкая поддержка форматов** – Рендеринг PDF, файлов Office, CAD‑чертежей, электронных писем, архивов и многого другого без сторонних конвертеров.  
+- **Согласованность кросс‑платформенности** – Один и тот же API работает в .NET и Java, обеспечивая единый опыт разработки.  
+- **Руководство, ориентированное на производительность** – Лучшие практики кэширования, управления ресурсами и эффективного рендеринга больших документов.  
+- **Расширяемая архитектура** – Добавление водяных знаков, аннотаций или пользовательских конвейеров рендеринга с понятными примерами.
+
+---
 
 {{% alert color="primary" %}}
-Изучите комплексные руководства по GroupDocs.Viewer для Java, призванные помочь разработчикам легко интегрировать мощные возможности просмотра документов в свои приложения Java. Наши пошаговые руководства охватывают все: от базовой настройки до расширенных методов рендеринга, позволяя вам создавать надежные решения для управления документами.
-
+Раскройте возможности ваших .NET‑приложений с высококачественным просмотром документов. Наши руководства по GroupDocs Viewer для .NET предоставляют всё, что нужно знать для интеграции мощного просмотрщика документов. Узнайте, как рендерить более 170 форматов документов в HTML, JPEG, PNG и PDF. Исследуйте продвинутые темы, такие как рендеринг конкретных макетов в CAD‑чертежах, работа с вложениями документов и оптимизация производительности. Начните создавать надёжные и профессиональные решения для просмотра документов на C#, ASP.NET и других платформах .NET.
 {{% /alert %}}
-Вот ссылки на некоторые полезные ресурсы по Java:
 
-- [Начиная](./java/getting-started/)
-- [Загрузка документа](./java/document-loading/)
-- [Основы рендеринга](./java/rendering-basics/)
-- [Расширенный рендеринг](./java/advanced-rendering/)
-- [Оптимизация производительности](./java/performance-optimization/)
-- [Безопасность и разрешения](./java/security-permissions/)
-- [Водяные знаки и аннотации](./java/watermarks-annotations/)
-- [Поддержка форматов файлов](./java/file-formats-support/)
-- [Облачный и удаленный рендеринг документов](./java/cloud-remote-document-rendering/)
-- [Кэширование и управление ресурсами](./java/caching-resource-management/)
-- [Метаданные и свойства](./java/metadata-properties/)
-- [Экспорт и конвертация](./java/export-conversion/)
-- [Индивидуальный рендеринг](./java/custom-rendering/)
+Это ссылки на некоторые полезные ресурсы .NET:
+
+- [Loading Documents](./net/loading-documents/)
+- [Advanced Loading Options](./net/advanced-loading/)
+- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
+- [Rendering Options](./net/rendering-options/)
+- [Rendering Archive Files](./net/rendering-archive-files/)
+- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
+- [Getting Started](./net/getting-started/)
+- [Rendering Email Messages](./net/rendering-email-messages/)
+- [Image Rendering](./net/image-rendering/)
+- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
+- [Rendering Documents to Images](./net/rendering-documents-images/)
+- [Rendering Documents to HTML](./net/rendering-documents-html/)
+- [Processing Document Attachments](./net/processing-document-attachments/)
+- [Rendering Text Files](./net/rendering-text-files/)
+- [Rendering Visio Documents](./net/rendering-visio-documents/)
+- [Rendering Web Documents](./net/rendering-web-documents/)
+- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
+- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
+- [PDF Rendering Options](./net/pdf-rendering-options/)
+- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
+- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
+- [Document Loading](./net/document-loading/)
+- [Rendering Basics](./net/rendering-basics/)
+- [Advanced Rendering](./net/advanced-rendering/)
+- [Performance Optimization](./net/performance-optimization/)
+- [Security & Permissions](./net/security-permissions/)
+- [Watermarks & Annotations](./net/watermarks-annotations/)
+- [File Formats Support](./net/file-formats-support/)
+- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./net/caching-resource-management/)
+- [Metadata & Properties](./net/metadata-properties/)
+- [Export & Conversion](./net/export-conversion/)
+- [Custom Rendering](./net/custom-rendering/)
+
+## Руководства по GroupDocs Viewer для Java
+
+{{% alert color="primary" %}}
+Интегрируйте универсальный и эффективный просмотрщик документов в ваши Java‑приложения с помощью GroupDocs Viewer для Java. Наши руководства проведут вас через каждый шаг, от настройки окружения до реализации продвинутых функций рендеринга. Научитесь отображать множество форматов файлов, включая сложные документы, такие как многомакетные CAD‑файлы и архивы, защищённые паролем. Следуйте нашим примерам, чтобы рендерить документы в HTML5, изображения и PDF, обеспечивая кросс‑платформенный просмотр документов без усилий.
+{{% /alert %}}
+
+Это ссылки на некоторые полезные ресурсы Java:
+
+- [Getting Started](./java/getting-started/)
+- [Document Loading](./java/document-loading/)
+- [Rendering Basics](./java/rendering-basics/)
+- [Advanced Rendering](./java/advanced-rendering/)
+- [Performance Optimization](./java/performance-optimization/)
+- [Security & Permissions](./java/security-permissions/)
+- [Watermarks & Annotations](./java/watermarks-annotations/)
+- [File Formats Support](./java/file-formats-support/)
+- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./java/caching-resource-management/)
+- [Metadata & Properties](./java/metadata-properties/)
+- [Export & Conversion](./java/export-conversion/)
+- [Custom Rendering](./java/custom-rendering/)
+
+--- 
+
+**Исследуйте полную коллекцию руководств по GroupDocs Viewer**, чтобы ускорить разработку, сократить время интеграции и предоставить пользователям бесшовный опыт просмотра документов.
