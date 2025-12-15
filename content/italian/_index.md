@@ -1,76 +1,121 @@
 ---
-"additionalTitle": "GroupDocs API References"
-"description": "Esplora i tutorial di GroupDocs.Viewer per una guida completa su come massimizzare le capacità di visualizzazione dei documenti. Sfrutta tutto il suo potenziale oggi stesso!"
-"is_root": true
-"linktitle": "Esercitazioni su GroupDocs.Viewer"
-"title": "Tutorial di GroupDocs.Viewer - Padroneggiare le competenze di visualizzazione dei documenti"
-"url": "/it/"
-"weight": 11
+additionalTitle: GroupDocs API References
+date: 2025-12-15
+description: Impara come aggiungere una filigrana ai documenti usando GroupDocs.Viewer
+  e rendere i file PDF .NET. Padroneggia la visualizzazione di oltre 170 formati in
+  .NET e Java.
+is_root: true
+linktitle: GroupDocs.Viewer Tutorials
+title: Aggiungi filigrana al documento con i tutorial di GroupDocs.Viewer
 type: docs
+url: /it/
+weight: 11
 ---
-# Tutorial di GroupDocs.Viewer - Padroneggiare le competenze di visualizzazione dei documenti
-Benvenuti ai tutorial di GroupDocs.Viewer, la vostra guida completa per padroneggiare le funzionalità e le caratteristiche di GroupDocs.Viewer. Che siate principianti che desiderano esplorare le basi o utenti esperti in cerca di suggerimenti e trucchi avanzati, i nostri tutorial coprono tutto ciò che dovete sapere. Immergetevi nelle nostre guide facili da seguire, ricche di istruzioni dettagliate, esempi pratici e preziosi spunti per migliorare la vostra esperienza di visualizzazione dei documenti. Intraprendiamo insieme un viaggio per sfruttare appieno il potenziale di GroupDocs.Viewer.
 
-## Esercitazioni su GroupDocs.Viewer per .NET
+# Tutorial di GroupDocs.Viewer
+
+Benvenuti nel hub dei tutorial di GroupDocs.Viewer. Qui troverete una raccolta completa di tutorial e guide per aiutarvi a **aggiungere watermark al documento** e a padroneggiare le nostre potenti API di visualizzazione documenti per .NET e Java. Che stiate creando un'applicazione web, un'app desktop o una soluzione mobile, GroupDocs.Viewer vi consente di rendere e visualizzare senza problemi una vasta gamma di formati di documento, tra cui PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, immagini e molto altro.
+
+## Risposte rapide
+- **Cosa significa “add watermark document”?** Si riferisce all’inserimento di una sovrapposizione di testo o immagine semi‑trasparente su ogni pagina di un documento renderizzato.  
+- **Quali formati supportano i watermark?** Tutti i formati renderizzati da GroupDocs.Viewer, inclusi PDF, DOCX, XLSX, CAD e messaggi email.  
+- **È necessaria una licenza?** È richiesta una licenza valida di GroupDocs.Viewer per l’uso in produzione; è disponibile una versione di prova gratuita.  
+- **Posso combinare i watermark con altre funzionalità?** Sì—i watermark possono essere applicati insieme a caching, rendering personalizzato e impostazioni di sicurezza.  
+- **È compatibile con .NET Core?** Assolutamente—GroupDocs.Viewer funziona con .NET Framework, .NET Core e .NET 5/6+.
+
+## Tutorial di GroupDocs.Viewer per .NET
 
 {{% alert color="primary" %}}
-Scopri una vasta gamma di tutorial per GroupDocs.Viewer per .NET, progettati per fornire agli sviluppatori le conoscenze e le competenze necessarie per integrare in modo efficiente le funzionalità di visualizzazione dei documenti nelle loro applicazioni .NET. Dal caricamento dei documenti alle opzioni di rendering avanzate, ogni tutorial fornisce una guida passo passo, consentendo agli utenti di migliorare la gestione dei documenti in modo fluido. Esplora subito i nostri tutorial e scopri tutto il potenziale di GroupDocs.Viewer per .NET.
-
+Potenzia le tue applicazioni .NET con capacità di visualizzazione documenti ad alta fedeltà. I nostri tutorial di GroupDocs.Viewer per .NET forniscono tutto ciò che devi sapere per integrare un potente visualizzatore di documenti. Scopri come renderizzare oltre 170 formati di documento in HTML, JPEG, PNG e PDF. Esplora argomenti avanzati come il rendering di layout specifici nei disegni CAD, la gestione degli allegati dei documenti e l’ottimizzazione delle prestazioni. Inizia a costruire esperienze di visualizzazione documenti robuste e professionali in C#, ASP.NET e altri framework .NET.
 {{% /alert %}}
-Ecco alcuni link ad alcune utili risorse .NET:
+
+Questi sono collegamenti a risorse .NET utili:
  
-- [Caricamento documenti](./net/loading-documents/)
-- [Opzioni di caricamento avanzate](./net/advanced-loading/)
-- [Utilizzo avanzato (memorizzazione nella cache)](./net/advanced-usage-caching/)
-- [Opzioni di rendering](./net/rendering-options/)
-- [File di archivio di rendering](./net/rendering-archive-files/)
-- [Rendering di disegni CAD](./net/rendering-cad-drawings/)
-- [Iniziare](./net/getting-started/)
-- [Rendering dei messaggi di posta elettronica](./net/rendering-email-messages/)
-- [Rendering dell'immagine](./net/image-rendering/)
-- [Rendering di documenti in PDF](./net/rendering-documents-pdf/)
-- [Rendering di documenti in immagini](./net/rendering-documents-images/)
-- [Rendering di documenti in HTML](./net/rendering-documents-html/)
-- [Elaborazione degli allegati dei documenti](./net/processing-document-attachments/)
-- [Rendering di file di testo](./net/rendering-text-files/)
-- [Rendering di documenti Visio](./net/rendering-visio-documents/)
-- [Rendering di documenti Web](./net/rendering-web-documents/)
-- [Rendering di documenti di elaborazione testi](./net/rendering-word-processing-documents/)
-- [Opzioni di rendering del foglio di calcolo](./net/spreadsheet-rendering-options/)
-- [Opzioni di rendering PDF](./net/pdf-rendering-options/)
-- [Rendering dei file di dati di Outlook (PST, OST)](./net/rendering-outlook-data-files/)
-- [Rendering di documenti di Microsoft Project](./net/rendering-ms-project-documents/)
-- [Caricamento del documento](./net/document-loading/)
-- [Nozioni di base sul rendering](./net/rendering-basics/)
-- [Rendering avanzato](./net/advanced-rendering/)
-- [Ottimizzazione delle prestazioni](./net/performance-optimization/)
-- [Sicurezza e permessi](./net/security-permissions/)
-- [Filigrane e annotazioni](./net/watermarks-annotations/)
-- [Supporto formati file](./net/file-formats-support/)
-- [Rendering di documenti su cloud e in remoto](./net/cloud-remote-document-rendering/)
-- [Caching e gestione delle risorse](./net/caching-resource-management/)
-- [Metadati e proprietà](./net/metadata-properties/)
-- [Esportazione e conversione](./net/export-conversion/)
-- [Rendering personalizzato](./net/custom-rendering/)
+- [Loading Documents](./net/loading-documents/)
+- [Advanced Loading Options](./net/advanced-loading/)
+- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
+- [Rendering Options](./net/rendering-options/)
+- [Rendering Archive Files](./net/rendering-archive-files/)
+- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
+- [Getting Started](./net/getting-started/)
+- [Rendering Email Messages](./net/rendering-email-messages/)
+- [Image Rendering](./net/image-rendering/)
+- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
+- [Rendering Documents to Images](./net/rendering-documents-images/)
+- [Rendering Documents to HTML](./net/rendering-documents-html/)
+- [Processing Document Attachments](./net/processing-document-attachments/)
+- [Rendering Text Files](./net/rendering-text-files/)
+- [Rendering Visio Documents](./net/rendering-visio-documents/)
+- [Rendering Web Documents](./net/rendering-web-documents/)
+- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
+- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
+- [PDF Rendering Options](./net/pdf-rendering-options/)
+- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
+- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
+- [Document Loading](./net/document-loading/)
+- [Rendering Basics](./net/rendering-basics/)
+- [Advanced Rendering](./net/advanced-rendering/)
+- [Performance Optimization](./net/performance-optimization/)
+- [Security & Permissions](./net/security-permissions/)
+- [Watermarks & Annotations](./net/watermarks-annotations/)
+- [File Formats Support](./net/file-formats-support/)
+- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./net/caching-resource-management/)
+- [Metadata & Properties](./net/metadata-properties/)
+- [Export & Conversion](./net/export-conversion/)
+- [Custom Rendering](./net/custom-rendering/)
 
-## GroupDocs.Viewer per tutorial Java
+## Come aggiungere un watermark al documento con GroupDocs.Viewer
+
+Aggiungere un watermark è spesso necessario per branding, riservatezza o conformità normativa. Con GroupDocs.Viewer è possibile applicare un watermark durante il rendering di un documento in HTML, PDF o formati immagine. Il processo è semplice:
+
+1. **Crea un oggetto `WatermarkOptions`** e imposta testo, colore, opacità e rotazione.  
+2. **Passa le opzioni** al metodo di rendering appropriato (ad es., `RenderToPdf`, `RenderToHtml` o `RenderToImage`).  
+3. **Esegui il rendering del documento**—l’output conterrà il watermark su ogni pagina.
+
+Questo approccio funziona su tutti i tipi di file supportati, inclusi scenari **render pdf .net**, disegni CAD e messaggi email.
+
+## Tutorial di GroupDocs.Viewer per Java
 
 {{% alert color="primary" %}}
-Esplora tutorial completi per GroupDocs.Viewer per Java, progettati per aiutare gli sviluppatori a integrare perfettamente potenti funzionalità di visualizzazione dei documenti nelle loro applicazioni Java. Le nostre guide passo passo coprono tutto, dalla configurazione di base alle tecniche di rendering avanzate, consentendoti di creare soluzioni affidabili per la gestione dei documenti.
-
+Integra un visualizzatore di documenti versatile ed efficiente nelle tue applicazioni Java con GroupDocs.Viewer for Java. I nostri tutorial ti guideranno passo passo, dalla configurazione dell’ambiente all’implementazione di funzionalità di rendering avanzate. Impara a visualizzare numerosi formati di file, inclusi documenti complessi come file CAD a layout multiplo e archivi protetti da password. Segui i nostri esempi per renderizzare documenti in HTML5, immagini e PDF, abilitando una visualizzazione cross‑platform senza sforzo.
 {{% /alert %}}
-Ecco alcuni link ad alcune utili risorse Java:
 
-- [Iniziare](./java/getting-started/)
-- [Caricamento del documento](./java/document-loading/)
-- [Nozioni di base sul rendering](./java/rendering-basics/)
-- [Rendering avanzato](./java/advanced-rendering/)
-- [Ottimizzazione delle prestazioni](./java/performance-optimization/)
-- [Sicurezza e permessi](./java/security-permissions/)
-- [Filigrane e annotazioni](./java/watermarks-annotations/)
-- [Supporto formati file](./java/file-formats-support/)
-- [Rendering di documenti su cloud e in remoto](./java/cloud-remote-document-rendering/)
-- [Caching e gestione delle risorse](./java/caching-resource-management/)
-- [Metadati e proprietà](./java/metadata-properties/)
-- [Esportazione e conversione](./java/export-conversion/)
-- [Rendering personalizzato](./java/custom-rendering/)
+Questi sono collegamenti a risorse Java utili:
+
+- [Getting Started](./java/getting-started/)
+- [Document Loading](./java/document-loading/)
+- [Rendering Basics](./java/rendering-basics/)
+- [Advanced Rendering](./java/advanced-rendering/)
+- [Performance Optimization](./java/performance-optimization/)
+- [Security & Permissions](./java/security-permissions/)
+- [Watermarks & Annotations](./java/watermarks-annotations/)
+- [File Formats Support](./java/file-formats-support/)
+- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./java/caching-resource-management/)
+- [Metadata & Properties](./java/metadata-properties/)
+- [Export & Conversion](./java/export-conversion/)
+- [Custom Rendering](./java/custom-rendering/)
+
+## Domande frequenti
+
+**D: Posso aggiungere un watermark a documenti renderizzati come immagini?**  
+R: Sì—usa `WatermarkOptions` insieme a `RenderToImage` per inserire watermark su ogni immagine pagina generata.
+
+**D: L’aggiunta di un watermark influisce sulle prestazioni di rendering?**  
+R: L’impatto è minimo; GroupDocs.Viewer ottimizza il processo di sovrapposizione, soprattutto quando è combinato con il caching.
+
+**D: I watermark sono supportati durante il rendering di messaggi email?**  
+R: Assolutamente—i watermark possono essere applicati all’output HTML o PDF dei messaggi email renderizzati.
+
+**D: Come personalizzo l’aspetto del watermark?**  
+R: Puoi impostare famiglia di caratteri, dimensione, colore, opacità, angolo di rotazione e persino utilizzare un’immagine come watermark.
+
+**D: È possibile applicare watermark diversi a pagine diverse?**  
+R: L’API standard applica un watermark uniforme, ma è possibile implementare una logica di rendering personalizzata per variare i watermark per pagina.
+
+---
+
+**Ultimo aggiornamento:** 2025-12-15  
+**Testato con:** GroupDocs.Viewer 23.11 per .NET & Java  
+**Autore:** GroupDocs

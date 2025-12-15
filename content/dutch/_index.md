@@ -1,76 +1,121 @@
 ---
-"additionalTitle": "GroupDocs API References"
-"description": "Ontdek de GroupDocs.Viewer-tutorials voor uitgebreide begeleiding bij het maximaliseren van de mogelijkheden voor het bekijken van documenten. Benut vandaag nog het volledige potentieel!"
-"is_root": true
-"linktitle": "GroupDocs.Viewer-zelfstudies"
-"title": "GroupDocs.Viewer Tutorials - Leer de vaardigheden voor het bekijken van documenten"
-"url": "/nl/"
-"weight": 11
+additionalTitle: GroupDocs API References
+date: 2025-12-15
+description: Leer hoe u een watermerk aan een document kunt toevoegen met GroupDocs.Viewer
+  en PDF‑.NET‑bestanden kunt renderen. Beheers het bekijken van meer dan 170 formaten
+  in .NET en Java.
+is_root: true
+linktitle: GroupDocs.Viewer Tutorials
+title: Watermerk toevoegen aan document met GroupDocs.Viewer‑tutorials
 type: docs
+url: /nl/
+weight: 11
 ---
-# GroupDocs.Viewer Tutorials - Leer de vaardigheden voor het bekijken van documenten
-Welkom bij de GroupDocs.Viewer tutorials, uw uitgebreide gids om de functionaliteiten en mogelijkheden van GroupDocs.Viewer onder de knie te krijgen. Of u nu een beginner bent die de basis wil verkennen of een ervaren gebruiker die op zoek is naar geavanceerde tips en trucs, onze tutorials behandelen alles wat u moet weten. Duik in onze gebruiksvriendelijke handleidingen, boordevol stapsgewijze instructies, praktische voorbeelden en waardevolle inzichten om uw documentweergave te verbeteren. Laten we samen op reis gaan om het volledige potentieel van GroupDocs.Viewer te benutten.
 
-## GroupDocs.Viewer voor .NET-zelfstudies
+# GroupDocs.Viewer Handleidingen
+
+Welkom bij het GroupDocs.Viewer handleidingen‑hub. Hier vindt u een uitgebreide verzameling handleidingen en gidsen om u te helpen **watermark document toevoegen** en onze krachtige document‑viewer‑API’s voor .NET en Java onder de knie te krijgen. Of u nu een webapplicatie, een desktop‑app of een mobiele oplossing bouwt, GroupDocs.Viewer stelt u in staat om naadloos een breed scala aan documentformaten weer te geven, waaronder PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, afbeeldingen en meer.
+
+## Snelle Antwoorden
+- **Wat betekent “add watermark document”?** Het verwijst naar het inbedden van een semi‑transparante tekst‑ of afbeeldingsoverlay op elke pagina van een gerenderd document.  
+- **Welke formaten ondersteunen watermarks?** Alle formaten die door GroupDocs.Viewer worden gerenderd, inclusief PDF, DOCX, XLSX, CAD en e‑mailberichten.  
+- **Heb ik een licentie nodig?** Een geldige GroupDocs.Viewer‑licentie is vereist voor productiegebruik; een gratis proefversie is beschikbaar.  
+- **Kan ik watermarks combineren met andere functies?** Ja—watermarks kunnen worden toegepast samen met caching, aangepaste rendering en beveiligingsinstellingen.  
+- **Is het compatibel met .NET Core?** Absoluut—GroupDocs.Viewer werkt met .NET Framework, .NET Core en .NET 5/6+.
+
+## GroupDocs.Viewer voor .NET Handleidingen
 
 {{% alert color="primary" %}}
-Ontdek een schat aan tutorials voor GroupDocs.Viewer voor .NET, ontworpen om ontwikkelaars de kennis en vaardigheden te geven die nodig zijn om documentweergavemogelijkheden efficiënt te integreren in hun .NET-applicaties. Van het laden van documenten tot geavanceerde renderingopties, elke tutorial biedt stapsgewijze begeleiding, waardoor gebruikers hun documentbeheer naadloos kunnen verbeteren. Bekijk nu onze tutorials en ontgrendel het volledige potentieel van GroupDocs.Viewer voor .NET.
-
+Geef uw .NET‑applicaties krachtige document‑viewing‑mogelijkheden met hoge nauwkeurigheid. Onze GroupDocs.Viewer voor .NET handleidingen bieden alles wat u moet weten om een robuuste document‑viewer te integreren. Leer hoe u meer dan 170 documentformaten rendert naar HTML, JPEG, PNG en PDF. Verken geavanceerde onderwerpen zoals het renderen van specifieke lay‑outs in CAD‑tekeningen, het verwerken van documentbijlagen en het optimaliseren van prestaties. Begin met het bouwen van stevige en professionele document‑viewing‑ervaringen in C#, ASP.NET en andere .NET‑frameworks.
 {{% /alert %}}
-Hieronder vindt u links naar nuttige .NET-bronnen:
+
+Dit zijn links naar enkele handige .NET‑bronnen:
  
-- [Documenten laden](./net/loading-documents/)
-- [Geavanceerde laadopties](./net/advanced-loading/)
-- [Geavanceerd gebruik (caching)](./net/advanced-usage-caching/)
+- [Documenten Laden](./net/loading-documents/)
+- [Geavanceerde Laadopties](./net/advanced-loading/)
+- [Geavanceerd Gebruik (Caching)](./net/advanced-usage-caching/)
 - [Renderopties](./net/rendering-options/)
-- [Archiefbestanden renderen](./net/rendering-archive-files/)
-- [CAD-tekeningen renderen](./net/rendering-cad-drawings/)
-- [Aan de slag](./net/getting-started/)
-- [E-mailberichten weergeven](./net/rendering-email-messages/)
-- [Beeldweergave](./net/image-rendering/)
-- [Documenten naar PDF renderen](./net/rendering-documents-pdf/)
-- [Documenten naar afbeeldingen renderen](./net/rendering-documents-images/)
-- [Documenten naar HTML renderen](./net/rendering-documents-html/)
-- [Verwerking van documentbijlagen](./net/processing-document-attachments/)
-- [Tekstbestanden renderen](./net/rendering-text-files/)
-- [Visio-documenten weergeven](./net/rendering-visio-documents/)
-- [Webdocumenten renderen](./net/rendering-web-documents/)
-- [Tekstverwerkingsdocumenten weergeven](./net/rendering-word-processing-documents/)
-- [Opties voor spreadsheetweergave](./net/spreadsheet-rendering-options/)
-- [PDF-renderingopties](./net/pdf-rendering-options/)
-- [Outlook-gegevensbestanden (PST, OST) weergeven](./net/rendering-outlook-data-files/)
-- [Microsoft Project-documenten renderen](./net/rendering-ms-project-documents/)
-- [Document laden](./net/document-loading/)
-- [Basisprincipes van renderen](./net/rendering-basics/)
-- [Geavanceerde rendering](./net/advanced-rendering/)
-- [Prestatieoptimalisatie](./net/performance-optimization/)
-- [Beveiliging en machtigingen](./net/security-permissions/)
-- [Watermerken en annotaties](./net/watermarks-annotations/)
-- [Ondersteuning voor bestandsindelingen](./net/file-formats-support/)
-- [Cloud- en externe documentweergave](./net/cloud-remote-document-rendering/)
-- [Caching en resourcebeheer](./net/caching-resource-management/)
-- [Metagegevens en eigenschappen](./net/metadata-properties/)
-- [Exporteren en converteren](./net/export-conversion/)
-- [Aangepaste rendering](./net/custom-rendering/)
+- [Renderen van Archiefbestanden](./net/rendering-archive-files/)
+- [Renderen van CAD‑tekeningen](./net/rendering-cad-drawings/)
+- [Aan de Slag](./net/getting-started/)
+- [Renderen van E‑mailberichten](./net/rendering-email-messages/)
+- [Afbeeldingsrendering](./net/image-rendering/)
+- [Documenten Renderen naar PDF](./net/rendering-documents-pdf/)
+- [Documenten Renderen naar Afbeeldingen](./net/rendering-documents-images/)
+- [Documenten Renderen naar HTML](./net/rendering-documents-html/)
+- [Verwerken van Documentbijlagen](./net/processing-document-attachments/)
+- [Renderen van Tekstbestanden](./net/rendering-text-files/)
+- [Renderen van Visio‑documenten](./net/rendering-visio-documents/)
+- [Renderen van Webdocumenten](./net/rendering-web-documents/)
+- [Renderen van Tekstverwerkingsdocumenten](./net/rendering-word-processing-documents/)
+- [Spreadsheet‑renderopties](./net/spreadsheet-rendering-options/)
+- [PDF‑renderopties](./net/pdf-rendering-options/)
+- [Renderen van Outlook‑databestanden (PST, OST)](./net/rendering-outlook-data-files/)
+- [Renderen van Microsoft Project‑documenten](./net/rendering-ms-project-documents/)
+- [Document Laden](./net/document-loading/)
+- [Renderbasis](./net/rendering-basics/)
+- [Geavanceerde Rendering](./net/advanced-rendering/)
+- [Prestatie‑optimalisatie](./net/performance-optimization/)
+- [Beveiliging & Machtigingen](./net/security-permissions/)
+- [Watermarks & Annotaties](./net/watermarks-annotations/)
+- [Ondersteuning van Bestandsformaten](./net/file-formats-support/)
+- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./net/caching-resource-management/)
+- [Metadata & Eigenschappen](./net/metadata-properties/)
+- [Export & Conversie](./net/export-conversion/)
+- [Aangepaste Rendering](./net/custom-rendering/)
 
-## GroupDocs.Viewer voor Java-zelfstudies
+## Hoe Watermark Document Toevoegen met GroupDocs.Viewer
+
+Het toevoegen van een watermark is vaak vereist voor branding, vertrouwelijkheid of naleving van regelgeving. Met GroupDocs.Viewer kunt u een watermark toepassen tijdens het renderen van een document naar HTML, PDF of afbeeldingsformaten. Het proces is eenvoudig:
+
+1. **Maak een `WatermarkOptions`‑object** aan en stel de tekst, kleur, doorzichtigheid en rotatie in.  
+2. **Geef de opties door** aan de juiste rendermethode (bijv. `RenderToPdf`, `RenderToHtml` of `RenderToImage`).  
+3. **Render het document**—de output bevat het watermark op elke pagina.
+
+Deze aanpak werkt voor alle ondersteunde bestandstypen, inclusief **render pdf .net**‑scenario’s, CAD‑tekeningen en e‑mailberichten.
+
+## GroupDocs.Viewer voor Java Handleidingen
 
 {{% alert color="primary" %}}
-Ontdek uitgebreide tutorials voor GroupDocs.Viewer voor Java, ontworpen om ontwikkelaars te helpen krachtige documentweergavemogelijkheden naadloos te integreren in hun Java-applicaties. Onze stapsgewijze handleidingen behandelen alles, van basisinstallatie tot geavanceerde renderingtechnieken, zodat u robuuste oplossingen voor documentbeheer kunt bouwen.
-
+Integreer een veelzijdige en efficiënte document‑viewer in uw Java‑applicaties met GroupDocs.Viewer voor Java. Onze handleidingen begeleiden u stap voor stap, van het opzetten van uw omgeving tot het implementeren van geavanceerde renderfuncties. Leer tal van bestandsformaten weer te geven, inclusief complexe documenten zoals multi‑layout CAD‑bestanden en met wachtwoord beveiligde archieven. Volg onze voorbeelden om documenten te renderen naar HTML5, afbeeldingen en PDF, zodat u moeiteloos cross‑platform document‑viewing kunt realiseren.
 {{% /alert %}}
-Hieronder vindt u links naar nuttige Java-bronnen:
 
-- [Aan de slag](./java/getting-started/)
-- [Document laden](./java/document-loading/)
-- [Basisprincipes van renderen](./java/rendering-basics/)
-- [Geavanceerde rendering](./java/advanced-rendering/)
-- [Prestatieoptimalisatie](./java/performance-optimization/)
-- [Beveiliging en machtigingen](./java/security-permissions/)
-- [Watermerken en annotaties](./java/watermarks-annotations/)
-- [Ondersteuning voor bestandsindelingen](./java/file-formats-support/)
-- [Cloud- en externe documentweergave](./java/cloud-remote-document-rendering/)
-- [Caching en resourcebeheer](./java/caching-resource-management/)
-- [Metagegevens en eigenschappen](./java/metadata-properties/)
-- [Exporteren en converteren](./java/export-conversion/)
-- [Aangepaste rendering](./java/custom-rendering/)
+Dit zijn links naar enkele handige Java‑bronnen:
+
+- [Aan de Slag](./java/getting-started/)
+- [Document Laden](./java/document-loading/)
+- [Renderbasis](./java/rendering-basics/)
+- [Geavanceerde Rendering](./java/advanced-rendering/)
+- [Prestatie‑optimalisatie](./java/performance-optimization/)
+- [Beveiliging & Machtigingen](./java/security-permissions/)
+- [Watermarks & Annotaties](./java/watermarks-annotations/)
+- [Ondersteuning van Bestandsformaten](./java/file-formats-support/)
+- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./java/caching-resource-management/)
+- [Metadata & Eigenschappen](./java/metadata-properties/)
+- [Export & Conversie](./java/export-conversion/)
+- [Aangepaste Rendering](./java/custom-rendering/)
+
+## Veelgestelde Vragen
+
+**Q: Kan ik een watermark toevoegen aan documenten die als afbeeldingen worden gerenderd?**  
+A: Ja—gebruik de `WatermarkOptions` samen met `RenderToImage` om watermarks in te voegen op elke gegenereerde afbeeldingspagina.
+
+**Q: Heeft het toevoegen van een watermark invloed op de renderprestaties?**  
+A: De impact is minimaal; GroupDocs.Viewer optimaliseert het overlay‑proces, vooral wanneer het wordt gecombineerd met caching.
+
+**Q: Worden watermarks ondersteund bij het renderen van e‑mailberichten?**  
+A: Absoluut—watermarks kunnen worden toegepast op de HTML‑ of PDF‑output van gerenderde e‑mailberichten.
+
+**Q: Hoe kan ik het uiterlijk van een watermark aanpassen?**  
+A: U kunt lettertype, grootte, kleur, doorzichtigheid, rotatiehoek instellen en zelfs een afbeelding als watermark gebruiken.
+
+**Q: Is het mogelijk verschillende watermarks op verschillende pagina's toe te passen?**  
+A: De standaard‑API past een uniform watermark toe, maar u kunt aangepaste renderlogica implementeren om per‑pagina watermarks te variëren.
+
+---
+
+**Last Updated:** 2025-12-15  
+**Tested With:** GroupDocs.Viewer 23.11 for .NET & Java  
+**Author:** GroupDocs

@@ -1,76 +1,121 @@
 ---
-"additionalTitle": "GroupDocs API References"
-"description": "Εξερευνήστε τα εκπαιδευτικά βίντεο του GroupDocs.Viewer για ολοκληρωμένες οδηγίες σχετικά με τη μεγιστοποίηση των δυνατοτήτων προβολής εγγράφων. Ξεκλειδώστε όλες τις δυνατότητές του σήμερα!"
-"is_root": true
-"linktitle": "Εκπαιδευτικά βίντεο για το GroupDocs.Viewer"
-"title": "Εκπαιδευτικά σεμινάρια GroupDocs.Viewer - Δεξιότητες προβολής εγγράφων master"
-"url": "/el/"
-"weight": 11
+additionalTitle: GroupDocs API References
+date: 2025-12-15
+description: Μάθετε πώς να προσθέτετε υδατογράφημα σε έγγραφα χρησιμοποιώντας το GroupDocs.Viewer
+  και να αποδίδετε αρχεία PDF .NET. Κατακτήστε την προβολή περισσότερων από 170 μορφών
+  σε .NET και Java.
+is_root: true
+linktitle: GroupDocs.Viewer Tutorials
+title: Προσθήκη Υδατογραφήματος σε Έγγραφο με Οδηγίες GroupDocs.Viewer
 type: docs
+url: /el/
+weight: 11
 ---
-# Εκπαιδευτικά σεμινάρια GroupDocs.Viewer - Δεξιότητες προβολής εγγράφων master
-Καλώς ορίσατε στα εκπαιδευτικά βίντεο του GroupDocs.Viewer, τον ολοκληρωμένο οδηγό σας για την εξοικείωση με τις λειτουργίες και τα χαρακτηριστικά του GroupDocs.Viewer. Είτε είστε αρχάριος που θέλει να εξερευνήσει τα βασικά είτε έμπειρος χρήστης που αναζητά προηγμένες συμβουλές και κόλπα, τα εκπαιδευτικά μας βίντεο καλύπτουν όλα όσα πρέπει να γνωρίζετε. Βυθιστείτε στους εύχρηστους οδηγούς μας, γεμάτους με οδηγίες βήμα προς βήμα, πρακτικά παραδείγματα και πολύτιμες πληροφορίες για να βελτιώσετε την εμπειρία προβολής εγγράφων σας. Ας ξεκινήσουμε ένα ταξίδι για να ξεκλειδώσουμε μαζί όλες τις δυνατότητες του GroupDocs.Viewer.
 
-## GroupDocs.Viewer για .NET Tutorials
+# GroupDocs.Viewer Οδηγοί
+
+Καλώς ήρθατε στο κέντρο των οδηγών του GroupDocs.Viewer. Εδώ θα βρείτε μια ολοκληρωμένη συλλογή από οδηγούς και εγχειρίδια για να σας βοηθήσουν να **add watermark document** και να κατακτήσετε τα ισχυρά APIs προβολής εγγράφων μας για .NET και Java. Είτε δημιουργείτε μια web εφαρμογή, μια εφαρμογή για υπολογιστή, είτε μια κινητή λύση, το GroupDocs.Viewer σας επιτρέπει να αποδίδετε και να εμφανίζετε αβίαστα μια μεγάλη ποικιλία μορφών εγγράφων, συμπεριλαμβανομένων PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, εικόνες και άλλα.
+
+## Γρήγορες Απαντήσεις
+- **What does “add watermark document” mean?** Αναφέρεται στην ενσωμάτωση ενός ημιδιαφανή κειμένου ή εικόνας πάνω από κάθε σελίδα του αποδοθέντος εγγράφου.  
+- **Which formats support watermarks?** Όλες οι μορφές που αποδίδονται από το GroupDocs.Viewer, συμπεριλαμβανομένων PDF, DOCX, XLSX, CAD και μηνυμάτων email.  
+- **Do I need a license?** Απαιτείται έγκυρη άδεια GroupDocs.Viewer για παραγωγική χρήση· διατίθεται δωρεάν δοκιμή.  
+- **Can I combine watermarks with other features?** Ναι—τα υδατογραφήματα μπορούν να εφαρμοστούν μαζί με caching, προσαρμοσμένη απόδοση και ρυθμίσεις ασφαλείας.  
+- **Is it compatible with .NET Core?** Απολύτως—το GroupDocs.Viewer λειτουργεί με .NET Framework, .NET Core και .NET 5/6+.
+
+## GroupDocs.Viewer για .NET Οδηγούς
 
 {{% alert color="primary" %}}
-Ανακαλύψτε μια πληθώρα εκπαιδευτικών βοηθημάτων για το GroupDocs.Viewer για .NET, σχεδιασμένα για να ενδυναμώσουν τους προγραμματιστές με τις γνώσεις και τις δεξιότητες που απαιτούνται για την αποτελεσματική ενσωμάτωση δυνατοτήτων προβολής εγγράφων στις εφαρμογές .NET τους. Από τη φόρτωση εγγράφων έως τις προηγμένες επιλογές απόδοσης, κάθε εκπαιδευτικό βοηθημα παρέχει αναλυτική καθοδήγηση, επιτρέποντας στους χρήστες να βελτιώσουν απρόσκοπτα τη διαχείριση εγγράφων. Εξερευνήστε τα εκπαιδευτικά μας βοηθήματα τώρα και ξεκλειδώστε όλες τις δυνατότητες του GroupDocs.Viewer για .NET.
-
+Ενδυναμώστε τις .NET εφαρμογές σας με δυνατότητες προβολής εγγράφων υψηλής πιστότητας. Οι οδηγίες μας για GroupDocs.Viewer για .NET παρέχουν όλα όσα χρειάζεστε για να ενσωματώσετε έναν ισχυρό προβολέα εγγράφων. Μάθετε πώς να αποδίδετε πάνω από 170 μορφές εγγράφων σε HTML, JPEG, PNG και PDF. Εξερευνήστε προχωρημένα θέματα όπως η απόδοση συγκεκριμένων διατάξεων σε CAD σχέδια, η διαχείριση συνημμένων εγγράφων και η βελτιστοποίηση της απόδοσης. Ξεκινήστε να δημιουργείτε στιβαρές και επαγγελματικές εμπειρίες προβολής εγγράφων σε C#, ASP.NET και άλλα .NET πλαίσια.
 {{% /alert %}}
-Αυτοί είναι σύνδεσμοι προς μερικούς χρήσιμους πόρους .NET:
+
+These are links to some useful .NET resources:
  
-- [Φόρτωση εγγράφων](./net/loading-documents/)
-- [Προηγμένες επιλογές φόρτωσης](./net/advanced-loading/)
-- [Προηγμένη χρήση (Αποθήκευση στην προσωρινή μνήμη)](./net/advanced-usage-caching/)
-- [Επιλογές απόδοσης](./net/rendering-options/)
-- [Απόδοση Αρχείων Αρχειοθέτησης](./net/rendering-archive-files/)
-- [Απόδοση σχεδίων CAD](./net/rendering-cad-drawings/)
-- [Ξεκινώντας](./net/getting-started/)
-- [Απόδοση μηνυμάτων ηλεκτρονικού ταχυδρομείου](./net/rendering-email-messages/)
-- [Απόδοση εικόνας](./net/image-rendering/)
-- [Απόδοση εγγράφων σε PDF](./net/rendering-documents-pdf/)
-- [Απόδοση εγγράφων σε εικόνες](./net/rendering-documents-images/)
-- [Απόδοση εγγράφων σε HTML](./net/rendering-documents-html/)
-- [Επεξεργασία Συνημμένων Εγγράφων](./net/processing-document-attachments/)
-- [Απόδοση αρχείων κειμένου](./net/rendering-text-files/)
-- [Απόδοση εγγράφων του Visio](./net/rendering-visio-documents/)
-- [Απόδοση εγγράφων ιστού](./net/rendering-web-documents/)
-- [Απόδοση εγγράφων επεξεργασίας κειμένου](./net/rendering-word-processing-documents/)
-- [Επιλογές απόδοσης υπολογιστικών φύλλων](./net/spreadsheet-rendering-options/)
-- [Επιλογές απόδοσης PDF](./net/pdf-rendering-options/)
-- [Απόδοση αρχείων δεδομένων του Outlook (PST, OST)](./net/rendering-outlook-data-files/)
-- [Απόδοση εγγράφων του Microsoft Project](./net/rendering-ms-project-documents/)
-- [Φόρτωση εγγράφου](./net/document-loading/)
-- [Βασικά στοιχεία απόδοσης](./net/rendering-basics/)
-- [Προηγμένη απόδοση](./net/advanced-rendering/)
-- [Βελτιστοποίηση απόδοσης](./net/performance-optimization/)
-- [Ασφάλεια και Δικαιώματα](./net/security-permissions/)
-- [Υδατογραφήματα & Σχολιασμοί](./net/watermarks-annotations/)
-- [Υποστήριξη μορφών αρχείων](./net/file-formats-support/)
-- [Απόδοση εγγράφων στο cloud και εξ αποστάσεως](./net/cloud-remote-document-rendering/)
-- [Αποθήκευση προσωρινά και διαχείριση πόρων](./net/caching-resource-management/)
-- [Μεταδεδομένα και Ιδιότητες](./net/metadata-properties/)
-- [Εξαγωγή & Μετατροπή](./net/export-conversion/)
-- [Προσαρμοσμένη απόδοση](./net/custom-rendering/)
+- [Loading Documents](./net/loading-documents/)
+- [Advanced Loading Options](./net/advanced-loading/)
+- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
+- [Rendering Options](./net/rendering-options/)
+- [Rendering Archive Files](./net/rendering-archive-files/)
+- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
+- [Getting Started](./net/getting-started/)
+- [Rendering Email Messages](./net/rendering-email-messages/)
+- [Image Rendering](./net/image-rendering/)
+- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
+- [Rendering Documents to Images](./net/rendering-documents-images/)
+- [Rendering Documents to HTML](./net/rendering-documents-html/)
+- [Processing Document Attachments](./net/processing-document-attachments/)
+- [Rendering Text Files](./net/rendering-text-files/)
+- [Rendering Visio Documents](./net/rendering-visio-documents/)
+- [Rendering Web Documents](./net/rendering-web-documents/)
+- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
+- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
+- [PDF Rendering Options](./net/pdf-rendering-options/)
+- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
+- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
+- [Document Loading](./net/document-loading/)
+- [Rendering Basics](./net/rendering-basics/)
+- [Advanced Rendering](./net/advanced-rendering/)
+- [Performance Optimization](./net/performance-optimization/)
+- [Security & Permissions](./net/security-permissions/)
+- [Watermarks & Annotations](./net/watermarks-annotations/)
+- [File Formats Support](./net/file-formats-support/)
+- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./net/caching-resource-management/)
+- [Metadata & Properties](./net/metadata-properties/)
+- [Export & Conversion](./net/export-conversion/)
+- [Custom Rendering](./net/custom-rendering/)
 
-## GroupDocs.Viewer για εκπαιδευτικά σεμινάρια Java
+## Πώς να Προσθέσετε Watermark Document με το GroupDocs.Viewer
+
+Η προσθήκη υδατογραφήματος είναι συχνά απαραίτητη για branding, εμπιστευτικότητα ή κανονιστική συμμόρφωση. Με το GroupDocs.Viewer μπορείτε να εφαρμόσετε ένα υδατογράφημα κατά την απόδοση ενός εγγράφου σε HTML, PDF ή μορφές εικόνας. Η διαδικασία είναι απλή:
+
+1. **Create a `WatermarkOptions` object** και ορίστε το κείμενο, το χρώμα, τη διαφάνεια και την περιστροφή.  
+2. **Pass the options** στη σχετική μέθοδο απόδοσης (π.χ., `RenderToPdf`, `RenderToHtml` ή `RenderToImage`).  
+3. **Render the document**—η έξοδος θα περιέχει το υδατογράφημα σε κάθε σελίδα.
+
+Αυτή η προσέγγιση λειτουργεί σε όλους τους υποστηριζόμενους τύπους αρχείων, συμπεριλαμβανομένων σεναρίων **render pdf .net**, CAD σχεδίων και μηνυμάτων email.
+
+## GroupDocs.Viewer για Java Οδηγούς
 
 {{% alert color="primary" %}}
-Εξερευνήστε ολοκληρωμένα εκπαιδευτικά βίντεο για το GroupDocs.Viewer για Java, τα οποία έχουν σχεδιαστεί για να βοηθούν τους προγραμματιστές να ενσωματώνουν απρόσκοπτα ισχυρές δυνατότητες προβολής εγγράφων στις εφαρμογές Java που χρησιμοποιούν. Οι αναλυτικοί οδηγοί μας καλύπτουν τα πάντα, από τη βασική εγκατάσταση έως τις προηγμένες τεχνικές απόδοσης, δίνοντάς σας τη δυνατότητα να δημιουργήσετε ισχυρές λύσεις διαχείρισης εγγράφων.
-
+Ενσωματώστε έναν ευέλικτο και αποδοτικό προβολέα εγγράφων στις Java εφαρμογές σας με το GroupDocs.Viewer για Java. Οι οδηγίες μας θα σας καθοδηγήσουν σε κάθε βήμα, από τη ρύθμιση του περιβάλλοντος μέχρι την υλοποίηση προχωρημένων λειτουργιών απόδοσης. Μάθετε να εμφανίζετε πολυάριθμες μορφές αρχείων, συμπεριλαμβανομένων σύνθετων εγγράφων όπως αρχεία CAD πολλαπλών διατάξεων και αρχεία αρχειοθηκών προστατευμένα με κωδικό. Ακολουθήστε τα παραδείγματα μας για να αποδίδετε έγγραφα σε HTML5, εικόνες και PDF, επιτρέποντας εύκολη προβολή εγγράφων δια-πλατφόρμας.
 {{% /alert %}}
-Αυτοί είναι σύνδεσμοι προς μερικούς χρήσιμους πόρους Java:
 
-- [Ξεκινώντας](./java/getting-started/)
-- [Φόρτωση εγγράφου](./java/document-loading/)
-- [Βασικά στοιχεία απόδοσης](./java/rendering-basics/)
-- [Προηγμένη απόδοση](./java/advanced-rendering/)
-- [Βελτιστοποίηση απόδοσης](./java/performance-optimization/)
-- [Ασφάλεια και Δικαιώματα](./java/security-permissions/)
-- [Υδατογραφήματα & Σχολιασμοί](./java/watermarks-annotations/)
-- [Υποστήριξη μορφών αρχείων](./java/file-formats-support/)
-- [Απόδοση εγγράφων στο cloud και εξ αποστάσεως](./java/cloud-remote-document-rendering/)
-- [Αποθήκευση προσωρινά και διαχείριση πόρων](./java/caching-resource-management/)
-- [Μεταδεδομένα και Ιδιότητες](./java/metadata-properties/)
-- [Εξαγωγή & Μετατροπή](./java/export-conversion/)
-- [Προσαρμοσμένη απόδοση](./java/custom-rendering/)
+These are links to some useful Java resources:
+
+- [Getting Started](./java/getting-started/)
+- [Document Loading](./java/document-loading/)
+- [Rendering Basics](./java/rendering-basics/)
+- [Advanced Rendering](./java/advanced-rendering/)
+- [Performance Optimization](./java/performance-optimization/)
+- [Security & Permissions](./java/security-permissions/)
+- [Watermarks & Annotations](./java/watermarks-annotations/)
+- [File Formats Support](./java/file-formats-support/)
+- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
+- [Caching & Resource Management](./java/caching-resource-management/)
+- [Metadata & Properties](./java/metadata-properties/)
+- [Export & Conversion](./java/export-conversion/)
+- [Custom Rendering](./java/custom-rendering/)
+
+## Συχνές Ερωτήσεις
+
+**Q: Μπορώ να προσθέσω υδατογράφημα σε έγγραφα που αποδίδονται ως εικόνες;**  
+A: Ναι—χρησιμοποιήστε το `WatermarkOptions` μαζί με το `RenderToImage` για να ενσωματώσετε υδατογραφήματα σε κάθε παραγόμενη σελίδα εικόνας.
+
+**Q: Η προσθήκη υδατογραφήματος επηρεάζει την απόδοση της απόδοσης;**  
+A: Η επίπτωση είναι ελάχιστη· το GroupDocs.Viewer βελτιστοποιεί τη διαδικασία επικάλυψης, ειδικά όταν συνδυάζεται με caching.
+
+**Q: Υποστηρίζονται υδατογραφήματα κατά την απόδοση μηνυμάτων email;**  
+A: Απόλυτα—τα υδατογραφήματα μπορούν να εφαρμοστούν στην έξοδο HTML ή PDF των αποδοθέντων μηνυμάτων email.
+
+**Q: Πώς μπορώ να προσαρμόσω την εμφάνιση του υδατογραφήματος;**  
+A: Μπορείτε να ορίσετε την οικογένεια γραμματοσειράς, το μέγεθος, το χρώμα, τη διαφάνεια, τη γωνία περιστροφής και ακόμη και να χρησιμοποιήσετε μια εικόνα ως υδατογράφημα.
+
+**Q: Είναι δυνατόν να εφαρμόσετε διαφορετικά υδατογραφήματα σε διαφορετικές σελίδες;**  
+A: Το τυπικό API εφαρμόζει ένα ενιαίο υδατογράφημα, αλλά μπορείτε να υλοποιήσετε προσαρμοσμένη λογική απόδοσης για να διαφοροποιήσετε τα υδατογραφήματα ανά σελίδα.
+
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-15  
+**Δοκιμάστηκε Με:** GroupDocs.Viewer 23.11 for .NET & Java  
+**Συγγραφέας:** GroupDocs
