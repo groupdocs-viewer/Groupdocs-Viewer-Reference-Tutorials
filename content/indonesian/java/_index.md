@@ -1,65 +1,80 @@
 ---
-"description": "Kuasai pemrosesan dan rendering dokumen dengan tutorial Java GroupDocs.Viewer langkah demi langkah. Pelajari teknik untuk melihat dokumen secara efisien dalam berbagai format."
-"is_root": true
-"linktitle": "GroupDocs.Viewer untuk Tutorial Java"
-"title": "Tutorial dan Contoh Lengkap GroupDocs.Viewer untuk Java"
-"url": "/id/java/"
-"weight": 10
+date: 2025-12-16
+description: Pelajari cara menambahkan watermark dengan GroupDocs.Viewer untuk Java
+  dan kuasai rendering dokumen. Termasuk tips tentang rendering Java, mengonversi
+  Word ke PDF, dan memuat dokumen dari URL.
+is_root: true
+linktitle: GroupDocs.Viewer for Java Tutorials
+title: Cara Menambahkan Watermark dengan GroupDocs.Viewer untuk Tutorial Java
 type: docs
+url: /id/java/
+weight: 10
 ---
-# Tutorial dan Contoh Lengkap GroupDocs.Viewer untuk Java
 
-## Perkenalan
-Selamat datang di sumber definitif untuk tutorial Java GroupDocs.Viewer! Baik Anda seorang pemula yang ingin memulai atau pengembang berpengalaman yang mencari teknik tingkat lanjut, koleksi tutorial lengkap kami akan memandu Anda melalui setiap aspek pemrosesan dan rendering dokumen.
+# Cara Menambahkan Watermark dengan GroupDocs.Viewer untuk Java
+
+## Pendahuluan
+Selamat datang di sumber definitif untuk mempelajari **how to add watermark** dengan GroupDocs.Viewer untuk Java! Apakah Anda pemula yang ingin memulai atau pengembang berpengalaman yang mencari teknik lanjutan, koleksi tutorial lengkap kami akan memandu Anda melalui setiap aspek rendering dokumen, watermarking, dan pemrosesan.
+
+Menambahkan watermark adalah kebutuhan umum untuk branding, keamanan, dan kepatuhan. Di pusat ini Anda akan menemukan panduan langkah‑demi‑langkah yang tidak hanya menunjukkan cara menyisipkan watermark tetapi juga cara **render Java** dokumen, **convert Word to PDF**, dan **load document from URL**—semua dalam satu pustaka yang kuat.
+
+## Cara Menambahkan Watermark dengan GroupDocs.Viewer untuk Java
+Watermark dapat diterapkan pada format yang didukung apa pun—PDF, Word, Excel, PowerPoint, gambar, dan lainnya. Dengan menggunakan API fleksibel GroupDocs.Viewer Anda dapat menyesuaikan teks, gambar, opasitas, rotasi, dan penempatan. Bagian ini secara singkat menjelaskan mengapa watermarking penting dan mengarahkan Anda ke tutorial terperinci yang mencakup setiap skenario.
 
 ## Mengapa Memilih GroupDocs.Viewer untuk Java?
-GroupDocs.Viewer menyediakan solusi yang kuat dan fleksibel untuk menampilkan dokumen dalam berbagai format. Tutorial kami mencakup semuanya, mulai dari pengaturan dasar hingga teknik tampilan tingkat lanjut, yang membantu Anda membangun aplikasi tampilan dokumen yang tangguh dengan mudah.
+GroupDocs.Viewer menyediakan solusi yang kuat dan fleksibel untuk rendering dokumen lintas berbagai format. Tutorial kami mencakup segala hal mulai dari pengaturan dasar hingga teknik rendering lanjutan, membantu Anda membangun aplikasi penampilan dokumen yang kuat dengan mudah. Apakah Anda perlu **extract PDF metadata**, **secure PDF with password**, atau sekadar menampilkan dokumen dalam web viewer, GroupDocs.Viewer siap membantu.
 
 ## Kategori Tutorial
 
 ### [Memulai](./getting-started/)
-Pelajari dasar-dasar GroupDocs.Viewer untuk Java. Tutorial yang mudah dipahami bagi pemula akan memandu Anda melalui proses instalasi, pemberian lisensi, dan pengaturan awal, memastikan Anda memiliki dasar yang kuat untuk merender dokumen dalam aplikasi Java Anda.
+Pelajari dasar-dasar GroupDocs.Viewer untuk Java. Tutorial ramah pemula kami membimbing Anda melalui instalasi, lisensi, dan pengaturan awal, memastikan Anda memiliki fondasi yang kuat untuk rendering dokumen dalam aplikasi Java Anda.
 
-### [Pemuatan Dokumen](./document-loading/)
-Kuasai seni memuat dokumen dari berbagai sumber. Tutorial ini menunjukkan cara menangani dokumen dari file lokal, aliran, URL, dan penyimpanan cloud secara efisien, memberi Anda strategi pemuatan dokumen yang fleksibel.
+### [Memuat Dokumen](./document-loading/)
+Kuasai seni memuat dokumen dari berbagai sumber. Tutorial ini menunjukkan cara menangani dokumen secara efisien dari file lokal, stream, **URLs**, dan penyimpanan cloud, memberikan Anda strategi memuat dokumen yang fleksibel.
 
-### [Dasar-dasar Rendering](./rendering-basics/)
-Pelajari inti dari pemrosesan dokumen. Pelajari cara mengonversi dan merender dokumen ke berbagai format output termasuk HTML, PDF, dan gambar, dengan kontrol penuh atas kualitas rendering dan manajemen tingkat halaman.
+### [Dasar Rendering](./rendering-basics/)
+Menyelami inti rendering dokumen. Pelajari cara mengonversi dan merender dokumen ke berbagai format output termasuk HTML, PDF, dan gambar, dengan kontrol penuh atas kualitas rendering dan manajemen tingkat halaman.
 
 ### [Rendering Lanjutan](./advanced-rendering/)
-Tingkatkan keterampilan Anda dalam menyajikan dokumen ke tingkat berikutnya. Tutorial tingkat lanjut ini mencakup skenario penyajian yang rumit, konfigurasi khusus, dan teknik penyajian khusus untuk solusi tampilan dokumen yang canggih.
+Bawa keterampilan rendering dokumen Anda ke tingkat berikutnya. Tutorial lanjutan ini mencakup skenario rendering kompleks, konfigurasi khusus, dan teknik rendering khusus untuk solusi penampilan dokumen yang canggih.
 
 ### [Optimasi Kinerja](./performance-optimization/)
-Optimalkan kinerja pemrosesan dokumen Anda dengan tutorial khusus kami. Pelajari teknik untuk manajemen memori yang efisien, peningkatan kecepatan pemrosesan, dan penanganan dokumen besar dengan mudah.
+Optimalkan kinerja rendering dokumen Anda dengan tutorial khusus kami. Pelajari teknik untuk manajemen memori yang efisien, peningkatan kecepatan rendering, dan penanganan dokumen besar dengan mudah.
 
 ### [Keamanan & Izin](./security-permissions/)
-Terapkan keamanan dokumen yang kuat dengan tutorial tentang perlindungan kata sandi, kontrol akses, dan manajemen izin. Pastikan aplikasi penampil dokumen Anda menjaga kerahasiaan dan integritas.
+Terapkan keamanan dokumen yang kuat dengan tutorial tentang perlindungan kata sandi, kontrol akses, dan manajemen izin. Pastikan aplikasi penampilan dokumen Anda menjaga kerahasiaan dan integritas.
 
-### [Tanda Air & Anotasi](./watermarks-annotations/)
-Pelajari cara menyempurnakan dokumen Anda dengan tanda air dan anotasi. Tutorial ini menunjukkan cara menambahkan, mengelola, dan menyajikan metadata visual serta tanda pelindung.
+### [Watermark & Anotasi](./watermarks-annotations/)
+Pelajari cara meningkatkan dokumen Anda dengan watermark dan anotasi. Tutorial ini menunjukkan cara menambahkan, mengelola, dan merender metadata visual serta tanda pelindung—sempurna untuk branding dan kepatuhan.
 
 ### [Dukungan Format File](./file-formats-support/)
-Temukan dukungan komprehensif untuk berbagai format dokumen. Tutorial kami mencakup rendering dan penanganan PDF, dokumen Microsoft Office, gambar, dan jenis file khusus dengan kualitas yang konsisten.
+Temukan dukungan komprehensif untuk berbagai format dokumen. Tutorial kami mencakup rendering dan penanganan PDF, dokumen Microsoft Office, gambar, dan tipe file khusus dengan kualitas konsisten.
 
-### [Rendering Dokumen Cloud & Jarak Jauh](./cloud-remote-document-rendering/)
-Kuasai teknik untuk merender dokumen dari penyimpanan cloud, URL jarak jauh, dan sumber eksternal. Bangun solusi tampilan dokumen yang fleksibel dan terdistribusi.
+### [Rendering Dokumen Cloud & Remote](./cloud-remote-document-rendering/)
+Kuasai teknik rendering dokumen dari penyimpanan cloud, URL remote, dan sumber eksternal. Bangun solusi penampilan dokumen yang fleksibel dan terdistribusi.
 
 ### [Caching & Manajemen Sumber Daya](./caching-resource-management/)
-Terapkan strategi caching yang efisien dan optimalkan manajemen sumber daya. Pelajari cara meningkatkan kinerja tampilan dokumen dan mengurangi beban komputasi.
+Terapkan strategi caching yang efisien dan optimalkan manajemen sumber daya. Pelajari cara meningkatkan kinerja penampilan dokumen dan mengurangi beban komputasi.
 
 ### [Metadata & Properti](./metadata-properties/)
-Pelajari cara mengekstrak, mengelola, dan mengolah metadata dokumen. Tutorial ini menunjukkan cara menganalisis dan memproses informasi dokumen secara terprogram.
+Pelajari cara mengekstrak, mengelola, dan bekerja dengan metadata dokumen. Tutorial ini menunjukkan cara menganalisis dan memproses informasi dokumen secara programatik, termasuk **extract PDF metadata**.
 
 ### [Ekspor & Konversi](./export-conversion/)
-Kuasai teknik ekspor dan konversi dokumen. Pelajari cara mengubah dokumen ke berbagai format dengan tetap menjaga format dan kualitas.
+Kuasai teknik ekspor dan konversi dokumen. Pelajari cara mengubah dokumen antara berbagai format sambil mempertahankan format dan kualitas, seperti **convert Word to PDF**.
 
 ### [Rendering Kustom](./custom-rendering/)
-Pelajari kustomisasi tingkat lanjut dengan tutorial tentang cara membuat pengendali rendering kustom dan memperluas kemampuan GroupDocs.Viewer melampaui pendekatan rendering standar.
+Menyelami kustomisasi lanjutan dengan tutorial tentang membuat handler rendering kustom dan memperluas kemampuan GroupDocs.Viewer di luar pendekatan rendering standar.
 
-## Mulailah Hari Ini
-Siap menjadi pakar Java GroupDocs.Viewer? Jelajahi tutorial kami, bereksperimen dengan contoh kode, dan manfaatkan potensi penuh rendering dokumen dalam aplikasi Java Anda.
+## Mulai Sekarang
+Siap menjadi ahli GroupDocs.Viewer Java? Telusuri tutorial kami, bereksperimen dengan contoh kode, dan buka potensi penuh rendering dokumen dalam aplikasi Java Anda.
 
 ## Sumber Daya Tambahan
 - [Dokumentasi GroupDocs.Viewer](https://reference.groupdocs.com/viewer/java/)
 - [Unduhan GroupDocs.Viewer](https://downloads.groupdocs.com/viewer/java)
 - [Forum Dukungan GroupDocs](https://forum.groupdocs.com/c/viewer/)
+
+---
+
+**Terakhir Diperbarui:** 2025-12-16  
+**Diuji Dengan:** GroupDocs.Viewer 23.12 for Java  
+**Penulis:** GroupDocs
