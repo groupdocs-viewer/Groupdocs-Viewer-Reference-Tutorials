@@ -1,47 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come specificare nomi di file personalizzati durante la conversione di file di archivio in PDF utilizzando GroupDocs.Viewer per Java. Semplifica la gestione dei documenti con questo tutorial avanzato."
-"title": "Padroneggiare i nomi di file personalizzati Java di GroupDocs.Viewer per il rendering PDF degli archivi"
-"url": "/it/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
-"weight": 1
+date: '2025-12-17'
+description: Scopri come convertire gli archivi in PDF con nomi file personalizzati
+  usando GroupDocs.Viewer per Java. Ottimizza il flusso di lavoro dei documenti con
+  questa guida dettagliata.
+keywords:
+- GroupDocs.Viewer Java
+- custom filenames PDF rendering
+- archive files to PDF
+title: Converti archivio in PDF con GroupDocs.Viewer Java – Nomi file personalizzati
 type: docs
+url: /it/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
+weight: 1
 ---
-# Padroneggiare GroupDocs.Viewer Java: specificare nomi di file personalizzati durante il rendering degli archivi in PDF
 
-## Introduzione
+# Converti archivio in PDF con GroupDocs.Viewer Java – Nomi file personalizzati
 
-Hai problemi con nomi di file errati durante la conversione di file di archivio in formato PDF? Che sia per esigenze di branding o organizzative, specificare nomi di file personalizzati durante la conversione degli archivi garantisce coerenza e migliora l'efficienza del flusso di lavoro. Questo tutorial ti guida all'utilizzo di GroupDocs.Viewer per Java per personalizzare i nomi dei file di output durante il rendering.
+Quando hai bisogno di **convertire un archivio in PDF** mantenendo una convenzione di denominazione pulita, GroupDocs.Viewer per Java lo rende senza sforzo. In questo tutorial imparerai come renderizzare file di archivio (ZIP, RAR, ecc.) in documenti PDF e assegnare i tuoi nomi file, assicurando che l'output si integri perfettamente con il tuo branding o sistema di archiviazione.
 
-**Cosa imparerai:**
-- Impostazione di GroupDocs.Viewer per Java
-- Rendering di file di archivio in PDF con nomi di file specificati
-- Applicazioni pratiche delle funzionalità dei nomi di file personalizzati
-- Le migliori pratiche per l'ottimizzazione delle prestazioni
+![Nomi file personalizzati per il rendering PDF di archivi con GroupDocs.Viewer per Java](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
 
-Cominciamo subito a configurare l'ambiente ed esplorare le funzionalità principali che rendono GroupDocs.Viewer uno strumento potente per il rendering dei documenti.
+**Cosa imparerai**
+- Come configurare GroupDocs.Viewer per Java
+- Processo passo‑a‑passo per **convertire un archivio in PDF** con un nome file personalizzato
+- Scenari reali in cui i nomi file personalizzati migliorano il flusso di lavoro
+- Suggerimenti per prestazioni ottimali e risoluzione dei problemi
+
+## Risposte rapide
+- **Posso cambiare il nome del PDF durante la conversione di un archivio?** Sì, usa `ArchiveOptions.setFileName(...)`.
+- **Quale versione di Maven è richiesta?** GroupDocs.Viewer Java 25.2 o successive.
+- **È necessaria una licenza per questa funzionalità?** Una versione di prova funziona per la valutazione; è necessaria una licenza permanente per la produzione.
+- **Questo approccio è thread‑safe?** Il rendering è sicuro finché ogni thread utilizza la propria istanza di `Viewer`.
+- **Quali tipi di file possono essere archiviati?** ZIP, RAR, 7z, TAR e altri formati supportati da GroupDocs.Viewer.
+
+## Cos'è “convertire archivio in PDF”?
+Convertire un archivio in PDF significa estrarre ogni documento all'interno dell'archivio e renderizzarlo sequenzialmente in un unico file PDF. Questo è utile per l'archiviazione, la condivisione o la stampa di documenti raggruppati come un unico PDF coerente.
+
+## Perché usare GroupDocs.Viewer per nomi file personalizzati?
+- **Coerenza del brand** – I PDF di output hanno un nome che corrisponde ai tuoi standard aziendali.  
+- **Gestione semplificata dei file** – Nomi file prevedibili rendono più semplice l'elaborazione automatizzata e l'indicizzazione.  
+- **Nessun post‑processing aggiuntivo** – Il nome file viene impostato durante il rendering, eliminando la necessità di una fase di rinomina.
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere quanto segue:
+- **GroupDocs.Viewer for Java** ≥ 25.2  
+- Java Development Kit (JDK) installato  
+- IDE come IntelliJ IDEA o Eclipse  
+- Conoscenze di base su Java e Maven  
 
-### Librerie e dipendenze richieste
-- **GroupDocs.Viewer per Java**: Versione 25.2 o successiva.
+## Configurazione di GroupDocs.Viewer per Java
 
-### Requisiti di configurazione dell'ambiente
-- JDK (Java Development Kit) installato sul computer.
-- Un IDE come IntelliJ IDEA o Eclipse per lo sviluppo di applicazioni Java.
-
-### Prerequisiti di conoscenza
-- Conoscenza di base della programmazione Java.
-- Familiarità con Maven come strumento di automazione della build.
-
-Una volta soddisfatti questi prerequisiti, procediamo alla configurazione di GroupDocs.Viewer per Java.
-
-## Impostazione di GroupDocs.Viewer per Java
-
-### Installazione tramite Maven
-
-Per integrare GroupDocs.Viewer nel tuo progetto utilizzando Maven, aggiungi il seguente repository e la dipendenza al tuo `pom.xml` file:
+### Installazione via Maven
+Aggiungi il repository e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,137 +70,129 @@ Per integrare GroupDocs.Viewer nel tuo progetto utilizzando Maven, aggiungi il s
 </dependencies>
 ```
 
-### Fasi di acquisizione della licenza
-- **Prova gratuita**: Accedi a una versione di prova completamente funzionale per valutare le funzionalità.
-- **Licenza temporanea**: Ottieni per una valutazione estesa senza limitazioni.
-- **Acquistare**: Acquisire una licenza per uso commerciale.
+### Passaggi per l'acquisizione della licenza
+- **Prova gratuita** – Completamente funzionale per la valutazione.  
+- **Licenza temporanea** – Estende la prova senza limiti di funzionalità.  
+- **Acquisto** – Richiesto per le distribuzioni commerciali.
 
-#### Inizializzazione e configurazione di base
-
-Dopo aver configurato Maven, inizializza GroupDocs.Viewer con il seguente frammento di codice:
+### Inizializzazione di base
+Crea un'istanza di `Viewer` per lavorare con il tuo archivio:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Inizializza l'oggetto visualizzatore
+// Initialize viewer object
 try (Viewer viewer = new Viewer("YOUR_ARCHIVE_FILE_PATH")) {
-    // Configura le opzioni qui
+    // Configure options here
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-## Guida all'implementazione
+## Come convertire un archivio in PDF con nomi file personalizzati
 
-Concentriamoci ora sulla specificazione dei nomi dei file durante il rendering degli archivi in formato PDF.
-
-### Specifica del nome file durante il rendering dei file di archivio
-
-Questa funzione consente di personalizzare il nome del file di output del documento PDF renderizzato. Ecco come fare:
-
-#### Passaggio 1: definire la directory di output e il percorso del file
-
-Inizia impostando la directory di output e il percorso del file utilizzando segnaposto per una facile personalizzazione:
+### Passo 1: Definisci la directory di output e il percorso del file
+Imposta la cartella dove verrà salvato il PDF. L'uso di `Path` rende il codice indipendente dal sistema operativo.
 
 ```java
 import java.nio.file.Path;
-// Definisci la directory di output e il percorso del file
+// Define output directory and file path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
 ```
 
-#### Passaggio 2: inizializzare l'oggetto Viewer
-
-Crea un `Viewer` oggetto con il file di archivio che desideri rendere:
+### Passo 2: Inizializza il Viewer con il tuo archivio
+Indica al `Viewer` l'archivio da renderizzare (ad esempio, un file ZIP).
 
 ```java
 import com.groupdocs.viewer.Viewer;
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP")) {
-    // Continua con i passaggi successivi
+    // Continue to next steps
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-#### Passaggio 3: creare PdfViewOptions
-
-Impostare `PdfViewOptions` per specificare le configurazioni di rendering:
+### Passo 3: Crea `PdfViewOptions`
+Indica a GroupDocs.Viewer dove scrivere il PDF.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
-// Configura le opzioni di visualizzazione PDF
+// Configure PDF view options
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### Passaggio 4: imposta il nome file personalizzato
-
-Utilizzo `ArchiveOptions` per impostare un nome file personalizzato per il documento PDF renderizzato:
+### Passo 4: Imposta un nome file personalizzato
+Usa `ArchiveOptions` per sovrascrivere il nome generato di default.
 
 ```java
 import com.groupdocs.viewer.options.FileName;
 import com.groupdocs.viewer.options.ArchiveOptions;
-// Specificare il nome del file PDF di output
+// Specify the output PDF filename
 viewOptions.getArchiveOptions().setFileName(new FileName("my_custom_filename.pdf"));
 ```
 
-#### Passaggio 5: convertire il file di archivio in PDF
-
-Infine, esegui il rendering del file di archivio utilizzando le opzioni specificate:
+### Passo 5: Renderizza l'archivio in PDF
+Esegui il processo di rendering con le opzioni configurate.
 
 ```java
-// Eseguire il processo di rendering
+// Execute rendering process
 viewer.view(viewOptions);
 ```
 
 ### Suggerimenti per la risoluzione dei problemi
-- Assicurarsi che tutti i percorsi siano impostati correttamente e che le directory esistano.
-- Verificare di aver installato la versione corretta di GroupDocs.Viewer.
+- Verifica che `YOUR_OUTPUT_DIRECTORY` esista e che l'applicazione abbia i permessi di scrittura.  
+- Assicurati di utilizzare GroupDocs.Viewer Java 25.2 o versioni più recenti; le versioni più vecchie potrebbero non includere `ArchiveOptions`.  
+- Se il nome del PDF non viene applicato, verifica che `setFileName` sia chiamato **prima** di `viewer.view(viewOptions)`.
 
 ## Applicazioni pratiche
 
-Sapere come specificare i nomi dei file durante il rendering degli archivi può essere utile in diversi scenari:
-1. **Coerenza del marchio**: Personalizza i nomi dei file di output per scopi di branding su più documenti.
-2. **Efficienza organizzativa**: Mantenere una convenzione di denominazione coerente per semplificare la gestione e il recupero dei documenti.
-3. **Reporting automatico**: Genera automaticamente report con nomi di file specifici tramite attività pianificate.
+1. **Coerenza del branding** – Nomina automaticamente i PDF in base a un codice progetto o a un identificatore cliente.  
+2. **Gestione documenti** – Allinea i nomi dei PDF alla tua politica di denominazione DMS per una ricerca più semplice.  
+3. **Report programmati** – Genera report giornalieri dai log archiviati e assegna a ciascun PDF un nome con timestamp significativo.
 
 ## Considerazioni sulle prestazioni
 
-Quando si utilizza GroupDocs.Viewer, tenere presente quanto segue per ottimizzare le prestazioni:
-- Utilizzare pratiche efficienti di gestione della memoria in Java.
-- Monitorare l'utilizzo delle risorse durante le operazioni di rendering.
-- Applicare le best practice per gestire archivi di documenti di grandi dimensioni senza compromettere le prestazioni del sistema.
+- **Gestione della memoria** – Chiudi il `Viewer` con un blocco try‑with‑resources (come mostrato) per liberare rapidamente le risorse native.  
+- **Archivi di grandi dimensioni** – Processa archivi grandi in batch o aumenta l'heap JVM (`-Xmx`) se incontri `OutOfMemoryError`.  
+- **Efficienza I/O** – Usa storage SSD per la directory di output per ridurre la latenza di scrittura.
 
 ## Conclusione
-
-In questo tutorial, hai imparato come specificare nomi di file personalizzati durante il rendering di file di archivio in PDF utilizzando GroupDocs.Viewer per Java. Seguendo questi passaggi, puoi migliorare i tuoi processi di gestione dei documenti e garantire la coerenza tra i documenti generati.
+Ora disponi di un metodo completo, pronto per la produzione, per **convertire un archivio in PDF** assegnando un nome file personalizzato usando GroupDocs.Viewer per Java. Questo approccio elimina passaggi aggiuntivi di rinomina dei file, supporta iniziative di branding e si integra senza problemi nei pipeline automatizzati.
 
 ### Prossimi passi
-- Esplora le funzionalità aggiuntive di GroupDocs.Viewer.
-- Sperimenta diversi tipi di file oltre agli archivi.
+- Esplora altri formati di output come HTML o PNG sostituendo `PdfViewOptions` con la classe di opzione appropriata.  
+- Combina questa tecnica con GroupDocs.Conversion per l'elaborazione batch multi‑formato.  
 
-Pronti a implementare questa soluzione nei vostri progetti? Provatela oggi stesso!
+Pronto a metterlo in pratica? Provalo nel tuo prossimo progetto Java!
 
-## Sezione FAQ
+## Domande frequenti
 
-**D: Come faccio a installare GroupDocs.Viewer per Java?**
-A: Utilizza Maven e aggiungi il repository e la dipendenza specificati al tuo `pom.xml`.
+**D: Come installo GroupDocs.Viewer per Java?**  
+R: Usa Maven e aggiungi il repository e la dipendenza mostrati nella sezione di installazione.
 
-**D: Posso specificare nomi di file per formati di file diversi dal PDF?**
-R: Sì, esistono opzioni simili per diversi formati di output supportati da GroupDocs.Viewer.
+**D: Posso specificare nomi file per altri formati oltre al PDF?**  
+R: Sì, esistono opzioni simili per HTML, PNG e altri tipi di output supportati da GroupDocs.Viewer.
 
-**D: Cosa succede se il nome file del documento renderizzato non è quello previsto?**
-A: Ricontrolla le definizioni del percorso e assicurati che tutte le configurazioni siano impostate correttamente.
+**D: Cosa succede se il nome file del documento renderizzato non è quello previsto?**  
+R: Verifica le definizioni dei percorsi e assicurati che `setFileName` sia invocato prima del rendering.
 
-**D: Come posso gestire file di archivio di grandi dimensioni con GroupDocs.Viewer?**
-A: Ottimizza l'utilizzo della memoria e prendi in considerazione la possibilità di suddividere i file di grandi dimensioni in parti più piccole per l'elaborazione.
+**D: Come gestisco file di archivio di grandi dimensioni con GroupDocs.Viewer?**  
+R: Ottimizza l'uso della memoria, considera l'elaborazione in blocchi più piccoli e monitora la dimensione dell'heap JVM.
 
-**D: Dove posso trovare ulteriori risorse sull'utilizzo di GroupDocs.Viewer?**
-A: Visita il [Documentazione di GroupDocs](https://docs.groupdocs.com/viewer/java/) per guide complete e riferimenti API.
+**D: Dove posso trovare più risorse sull'uso di GroupDocs.Viewer?**  
+R: Visita la [documentazione GroupDocs](https://docs.groupdocs.com/viewer/java/) per guide complete e riferimenti API.
 
 ## Risorse
-- **Documentazione**: [Visualizzatore GroupDocs Documenti Java](https://docs.groupdocs.com/viewer/java/)
-- **Riferimento API**: [Riferimento Java per GroupDocs Viewer](https://reference.groupdocs.com/viewer/java/)
-- **Scaricamento**: [Versioni di GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Acquistare**: [Acquista la licenza GroupDocs](https://purchase.groupdocs.com/buy)
+- **Documentazione**: [Documentazione GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)
+- **Riferimento API**: [Riferimento GroupDocs Viewer Java](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [Rilasci GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Acquisto**: [Acquista licenza GroupDocs](https://purchase.groupdocs.com/buy)
 - **Prova gratuita**: [Prova GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Licenza temporanea**: [Ottieni la licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- **Supporto**: [Forum di GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Licenza temporanea**: [Ottieni licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
+- **Supporto**: [Forum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2025-12-17  
+**Tested With:** GroupDocs.Viewer Java 25.2  
+**Author:** GroupDocs
