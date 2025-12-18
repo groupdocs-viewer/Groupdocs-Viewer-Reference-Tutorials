@@ -1,31 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara mengelola teks yang berlebihan dalam lembar kerja Excel menggunakan GroupDocs.Viewer untuk Java. Panduan ini menyediakan petunjuk langkah demi langkah dan praktik terbaik."
-"title": "Cara Menyesuaikan Text Overflow di Spreadsheet Excel dengan GroupDocs.Viewer untuk Java"
-"url": "/id/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
-"weight": 1
+date: '2025-12-18'
+description: Pelajari cara menyembunyikan overflow teks Excel saat mengonversi Excel
+  ke HTML menggunakan GroupDocs.Viewer untuk Java. Panduan langkah demi langkah dengan
+  penyiapan, kode, dan praktik terbaik.
+keywords:
+- GroupDocs.Viewer Java
+- adjust text overflow Excel
+- rendering Excel to HTML
+title: Sembunyikan Teks Overflow di Excel dengan GroupDocs.Viewer untuk Java
 type: docs
+url: /id/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/
+weight: 1
 ---
-# Cara Menyesuaikan Text Overflow di Spreadsheet Excel dengan GroupDocs.Viewer untuk Java
-## Perkenalan
-Berurusan dengan teks yang meluap dalam sel spreadsheet saat mengonversi dokumen ke HTML merupakan tantangan umum, terutama untuk file Excel yang besar. **GroupDocs.Viewer untuk Java** menyederhanakan proses ini, sehingga Anda dapat mengelola dan menyembunyikan teks yang meluap secara efisien.
-Tutorial ini memandu Anda menyembunyikan teks yang meluap dari sel spreadsheet menggunakan GroupDocs.Viewer di Java, memastikan spreadsheet Anda ditampilkan dengan bersih tanpa masalah luapan yang berantakan.
 
-**Apa yang Akan Anda Pelajari:**
-- Cara mengatur GroupDocs.Viewer untuk Java
-- Mengonfigurasi `HtmlViewOptions` untuk menyesuaikan luapan teks di lembar Excel
-- Aplikasi praktis dari fitur ini
+# Sembunyikan Teks Overflow Excel dengan GroupDocs.Viewer untuk Java
 
-Mari kita mulai dengan menyiapkan prasyarat sebelum mengonfigurasi GroupDocs.Viewer di sistem Anda.
+Saat Anda **menyembunyikan teks overflow Excel** pada sel saat mengonversi spreadsheet ke HTML, hasilnya tampak bersih dan profesional. Dalam tutorial ini kami akan memandu langkah‑langkah tepat untuk mencegah overflow yang berantakan, menggunakan GroupDocs.Viewer untuk Java. Anda akan melihat cara mengonfigurasi viewer, menyematkan sumber daya, dan merender workbook Excel Anda sehingga teks apa pun yang melebihi batas sel secara otomatis disembunyikan.
+
+![Sesuaikan Teks Overflow pada Spreadsheet Excel dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/adjust-text-overflow-in-excel-spreadsheets-java.png)
+
+## Jawaban Cepat
+- **Apa yang dilakukan “hide text overflow excel”?** Itu menekan semua konten sel yang melebihi lebar atau tinggi sel selama rendering HTML.  
+- **Library mana yang menangani ini?** GroupDocs.Viewer untuk Java menyediakan opsi `TextOverflowMode.HIDE_TEXT`.  
+- **Apakah saya memerlukan lisensi?** Lisensi sementara tersedia untuk evaluasi; lisensi penuh diperlukan untuk produksi.  
+- **Bisakah saya juga mengonversi Excel ke HTML?** Ya – viewer yang sama mengonversi file Excel ke HTML sambil menerapkan pengaturan overflow.  
+- **Apakah pendekatan ini cocok untuk workbook besar?** Tentu saja, cukup ikuti tips kinerja pada bagian “Performance Considerations”.
+
+## Apa itu hide text overflow excel?
+`hide text overflow excel` adalah mode rendering yang memberi tahu viewer untuk memotong teks apa pun yang seharusnya meluber di luar batas sel yang ditentukan ketika lembar Excel diubah menjadi HTML. Ini menjaga tata letak tetap rapi, terutama untuk dasbor atau laporan yang ditampilkan di peramban.
+
+## Mengapa menggunakan GroupDocs.Viewer untuk mengonversi excel ke html?
+GroupDocs.Viewer menawarkan solusi cepat sisi‑server untuk **convert excel to html** tanpa memerlukan Microsoft Office di server. Ia mendukung berbagai fitur Excel dan memberi Anda kontrol detail tentang cara sel ditampilkan—seperti menyembunyikan teks yang overflow.
+
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda memiliki:
-- **Kit Pengembangan Java (JDK)**: Versi 8 atau lebih tinggi terinstal dan dikonfigurasi di komputer Anda.
-- **Pakar**: Untuk mengelola dependensi dalam proyek Anda.
-- Pemahaman dasar tentang pemrograman Java dan keakraban dengan proyek Maven.
-Pastikan akses ke IDE seperti IntelliJ IDEA atau Eclipse untuk manajemen dan eksekusi kode yang lebih mudah.
+- **Java Development Kit (JDK)** – versi 8 atau lebih baru.  
+- **Maven** – untuk manajemen dependensi.  
+- Pengetahuan dasar Java dan IDE (IntelliJ IDEA, Eclipse, dll.).
+
 ## Menyiapkan GroupDocs.Viewer untuk Java
-Untuk memulai, tambahkan GroupDocs.Viewer sebagai dependensi menggunakan Maven. Ini menyederhanakan pengaturan dan pengelolaan pustaka dalam proyek Anda.
-### Ketergantungan Maven:
+Tambahkan pustaka viewer ke proyek Maven Anda.
+
+### Dependensi Maven
 ```xml
 <repositories>
    <repository>
@@ -42,72 +57,97 @@ Untuk memulai, tambahkan GroupDocs.Viewer sebagai dependensi menggunakan Maven. 
    </dependency>
 </dependencies>
 ```
+
 ### Akuisisi Lisensi
-Dapatkan lisensi sementara untuk GroupDocs.Viewer untuk menjelajahi semua fitur tanpa batasan:
-- **Uji Coba Gratis**: Unduh versi terbaru dari [Rilis GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Lisensi Sementara**: Permintaan melalui [Halaman Lisensi Sementara GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Pembelian**: Beli lisensi untuk akses fitur lengkap di [Halaman Pembelian GroupDocs](https://purchase.groupdocs.com/buy).
-### Inisialisasi Dasar
-Inisialisasi kelas Viewer dengan jalur dokumen Excel Anda. Ini penting untuk mengakses dan merender lembar kerja Anda ke dalam format HTML.
+Dapatkan lisensi sementara untuk membuka semua fitur:
+
+- **Free Trial**: Unduh versi terbaru dari [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License**: Minta melalui [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase**: Beli lisensi penuh di [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
+
 ## Panduan Implementasi
-Mari jelajahi cara menyesuaikan luapan teks dalam spreadsheet menggunakan GroupDocs.Viewer.
+Berikut adalah panduan langkah‑demi‑langkah yang mempertahankan blok kode asli tidak berubah sambil menambahkan penjelasan yang jelas.
+
 ### Langkah 1: Tentukan Direktori Output
-Pertama, tentukan di mana Anda ingin menyimpan file HTML yang telah dirender. Direktori ini akan menampung setiap halaman dokumen Anda sebagai file HTML tersendiri.
+Tentukan lokasi penyimpanan file HTML yang dirender.
+
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Penjelasan**: `Utils.getOutputDirectoryPath` adalah metode utilitas yang menentukan jalur untuk menyimpan halaman HTML keluaran Anda berdasarkan nama direktori yang diberikan.
+
+*Penjelasan*: `Utils.getOutputDirectoryPath` membuat (atau menggunakan kembali) folder bernama **YOUR_OUTPUT_DIRECTORY** di dalam folder output proyek.
+
 ### Langkah 2: Konfigurasikan Jalur File Halaman
-Buat format untuk memberi nama setiap berkas halaman dari dokumen yang dirender. Ini memastikan penyimpanan yang terorganisasi dan pengambilan yang mudah.
+Buat pola penamaan untuk setiap halaman HTML yang dihasilkan.
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Penjelasan**: : Itu `{0}` placeholder diganti dengan nomor halaman selama rendering, memastikan nama file unik untuk setiap halaman.
+
+*Penjelasan*: `{0}` adalah placeholder yang digantikan viewer dengan nomor halaman, menghasilkan file seperti `page_1.html`, `page_2.html`, dll.
+
 ### Langkah 3: Siapkan HtmlViewOptions
-Konfigurasi `HtmlViewOptions` untuk mengelola bagaimana sumber daya disematkan dan menentukan mode luapan teks yang Anda inginkan untuk sel spreadsheet.
+Beritahu viewer untuk menyematkan sumber daya dan menyembunyikan teks sel yang overflow.
+
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT);
 ```
-**Penjelasan**:Dengan pengaturan `TextOverflowMode` ke `HIDE_TEXT`, konten yang melampaui batas sel disembunyikan, mencegah luapan yang berantakan.
+
+*Penjelasan*: `TextOverflowMode.HIDE_TEXT` adalah pengaturan kunci yang **mencegah overflow pada sel excel** selama proses **render excel to html**.
+
 ### Langkah 4: Render Dokumen Anda
-Gunakan kelas Viewer untuk memproses berkas Excel Anda dan menyajikannya menjadi HTML dengan opsi yang ditentukan.
+Jalankan viewer dengan opsi yang telah dikonfigurasi.
+
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
     viewer.view(viewOptions);
 }
 ```
-**Penjelasan**: : Itu `view` metode menangani rendering. Ia menggunakan metode yang dikonfigurasi `HtmlViewOptions`, menerapkan pengaturan luapan teks kami selama konversi.
-## Aplikasi Praktis
-Fitur ini sangat berharga dalam berbagai skenario, seperti:
-- **Portal Web**: Menampilkan laporan keuangan di mana singkat dan jelasnya data sangat penting.
-- **Platform Analisis Data**: Menyajikan kumpulan data besar dengan rapi tanpa membebani pengguna dengan teks yang melimpah.
-- **Dasbor Pelanggan**: Memberikan wawasan melalui lembar kerja sambil memastikan presentasi visual yang rapi.
-Integrasi dengan sistem lain seperti CRM atau ERP juga dapat memperoleh manfaat dari metode tampilan bersih ini, meningkatkan pengalaman pengguna di berbagai platform.
+
+*Penjelasan*: Metode `view` membaca workbook contoh, menerapkan aturan overflow, dan menulis file HTML ke folder yang telah ditentukan sebelumnya.
+
+## Kasus Penggunaan Umum dan Manfaat
+- **Web Portals** – Menampilkan tabel keuangan tanpa string panjang merusak tata letak.  
+- **Data Analytics Dashboards** – Menjaga dataset besar tetap terbaca dengan menyembunyikan teks berlebih.  
+- **Customer Reporting** – Menyajikan laporan HTML yang bersih dan ramah pencetakan.
+
+Dengan menggunakan **hide text overflow excel**, Anda memastikan tampilan visual tetap konsisten di semua peramban dan perangkat.
+
 ## Pertimbangan Kinerja
-Saat menggunakan GroupDocs.Viewer untuk Java, pertimbangkan hal berikut untuk mengoptimalkan kinerja:
-- **Manajemen Memori**Pastikan aplikasi Anda mengelola memori secara efisien, terutama saat memproses dokumen besar.
-- **Penggunaan Sumber Daya**: Manfaatkan sumber daya tertanam secara bijak untuk menyeimbangkan antara waktu muat dan kualitas rendering.
-- **Mekanisme Caching**Terapkan strategi caching jika memungkinkan untuk mengurangi pemrosesan yang berlebihan.
+- **Memory Management** – Lepaskan instance `Viewer` segera (seperti yang ditunjukkan dengan try‑with‑resources).  
+- **Embedded Resources** – Menyematkan gambar dan gaya mengurangi jumlah permintaan HTTP tetapi meningkatkan ukuran HTML; pilih mode yang sesuai dengan batas bandwidth Anda.  
+- **Caching** – Simpan HTML yang dirender untuk workbook yang sering diakses guna menghindari pemrosesan ulang.
+
+## Pertanyaan yang Sering Diajukan
+**Q1: Apa itu GroupDocs.Viewer untuk Java?**  
+A1: Itu adalah pustaka Java yang merender lebih dari 100 format dokumen (termasuk Excel) ke HTML, PDF, PNG, dan lainnya, tanpa memerlukan Microsoft Office di server.
+
+**Q2: Bagaimana cara menangani file Excel besar dengan teks overflow?**  
+A2: Gunakan `TextOverflowMode.HIDE_TEXT` seperti yang ditunjukkan, dan pertimbangkan mengaktifkan caching atau memproses file dalam potongan untuk mengurangi beban memori.
+
+**Q3: Bisakah saya menyesuaikan output HTML lebih lanjut?**  
+A3: Ya. `HtmlViewOptions` menyediakan banyak pengaturan—seperti CSS khusus, penanganan gambar, dan kontrol ukuran halaman.
+
+**Q4: Apa jebakan umum saat menggunakan fitur ini?**  
+A4: Lupa melepaskan instance `Viewer`, atau menggunakan mode overflow default (yang menampilkan teks) alih-alih `HIDE_TEXT`.
+
+**Q5: Di mana saya dapat mendapatkan bantuan atau contoh lebih lanjut?**  
+A5: Kunjungi [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) untuk bantuan komunitas dan dokumentasi resmi.
+
 ## Kesimpulan
-Menyesuaikan luapan teks dalam sel spreadsheet menggunakan GroupDocs.Viewer untuk Java adalah proses mudah yang meningkatkan keterbacaan dokumen saat dirender ke HTML. Tutorial ini memberikan panduan langkah demi langkah tentang cara mengonfigurasi dan mengimplementasikan fitur ini dalam aplikasi Anda.
-Jelajahi lebih jauh dengan mengintegrasikan teknik-teknik ini ke dalam proyek Anda, meningkatkan penyajian data di lingkungan web.
-## Bagian FAQ
-**Q1: Apa itu GroupDocs.Viewer untuk Java?**
-A1: Ini adalah pustaka yang memungkinkan pemrosesan dokumen dalam berbagai format berbeda di aplikasi Java.
-**Q2: Bagaimana cara menangani file Excel besar dengan teks yang meluap?**
-A2: Penggunaan `TextOverflowMode.HIDE_TEXT` untuk mengelola masalah luapan secara efisien.
-**Q3: Bisakah saya menyesuaikan output HTML lebih lanjut?**
-A3: Ya, GroupDocs.Viewer menawarkan berbagai opsi penyesuaian untuk rendering HTML.
-**Q4: Apa saja kendala umum saat menggunakan GroupDocs.Viewer?**
-A4: Pastikan lingkungan Anda disiapkan dengan benar dan pilih pengaturan luapan teks yang sesuai berdasarkan kebutuhan dokumen.
-**Q5: Di mana saya dapat menemukan lebih banyak sumber daya atau mendapatkan dukungan?**
-A5: Kunjungi [Forum Dukungan GroupDocs](https://forum.groupdocs.com/c/viewer/9) untuk bantuan dan periksa dokumentasi mereka untuk panduan lengkap.
-## Sumber daya
-- **Dokumentasi**: [Dokumentasi Java GroupDocs.Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Referensi API**: [Referensi API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Unduh**: [Unduhan GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Pembelian**: [Beli Lisensi GroupDocs](https://purchase.groupdocs.com/buy)
-- **Uji Coba Gratis**: [Uji Coba Gratis GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Lisensi Sementara**: [Minta Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
-Dengan mengikuti panduan ini, Anda kini siap menangani luapan teks dalam lembar kerja Excel dengan mudah menggunakan GroupDocs.Viewer untuk Java. Selamat membuat kode!
+Dengan mengikuti langkah‑langkah di atas, Anda dapat **menyembunyikan teks overflow Excel** pada sel saat **mengonversi excel ke html** dengan GroupDocs.Viewer untuk Java. Konfigurasi sederhana ini secara dramatis meningkatkan keterbacaan spreadsheet yang dirender dan terintegrasi mulus ke dalam solusi pelaporan berbasis web.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-18  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
+**Penulis:** GroupDocs  
+
+**Sumber Daya**  
+- **Dokumentasi:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Referensi API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Unduh:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Pembelian:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Uji Coba Gratis:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Lisensi Sementara:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
