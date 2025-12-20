@@ -1,38 +1,64 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java를 사용하여 PDF의 이미지 품질을 조정하고 선명도와 파일 크기의 균형을 효율적으로 맞추는 방법을 알아보세요."
-"title": "GroupDocs.Viewer를 사용하여 Java에서 PDF 이미지 품질 최적화"
-"url": "/ko/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/"
-"weight": 1
+date: '2025-12-20'
+description: GroupDocs.Viewer for Java를 사용하여 PDF를 HTML로 변환하고 PDF 내 이미지 품질을 조정하는 방법을
+  배우고, 선명도와 파일 크기의 균형을 효율적으로 맞추세요.
+keywords:
+- optimize PDF image quality Java
+- adjust image quality GroupDocs.Viewer
+- Java PDF rendering
+title: Java와 GroupDocs.Viewer를 사용하여 PDF를 HTML로 렌더링하고 이미지 품질을 최적화하는 방법
 type: docs
+url: /ko/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer를 사용하여 Java에서 PDF 이미지 품질을 최적화하는 방법
 
-## 소개
+# Java와 GroupDocs.Viewer를 사용하여 PDF를 HTML로 렌더링하고 이미지 품질 최적화하기
 
-PDF 문서를 변환할 때 파일 크기를 조절하면서 고품질 이미지를 유지하고 싶으신가요? 특히 대용량 문서나 온라인 공유의 경우, 이미지 품질과 파일 크기의 균형을 맞추는 것이 매우 중요합니다. **Java용 GroupDocs.Viewer** PDF를 HTML 형식으로 렌더링할 때 이미지 품질을 효율적으로 조정할 수 있습니다. 이 튜토리얼에서는 GroupDocs.Viewer를 사용하여 PDF 파일의 이미지 품질을 최적화하는 방법을 안내합니다.
+## Introduction
 
-**배울 내용:**
-- Java용 GroupDocs.Viewer 설정 및 구성.
-- 원본 PDF 문서에서 이미지 품질을 조정하는 방법에 대한 단계별 지침입니다.
-- 문서 렌더링 시 성능을 최적화하기 위한 모범 사례입니다.
-- 실제 상황에서 이 기능을 실용적으로 적용하는 방법.
+If you need to **render pdf to html** while keeping the visual fidelity of embedded images, you’ve come to the right place. Large PDFs often contain high‑resolution pictures that bloat file size, making sharing or web‑viewing cumbersome. With **GroupDocs.Viewer for Java**, you can fine‑tune the image quality during the conversion process, striking the perfect balance between clarity and a reduced PDF file size. In this tutorial we’ll walk through the entire setup, explain why adjusting image quality matters, and show you step‑by‑step how to render pdf to html with optimal results.
 
-구현에 들어가기 전에 전제 조건부터 살펴보겠습니다.
+![GroupDocs.Viewer for Java를 사용한 PDF 이미지 품질 최적화](/viewer/advanced-rendering/optimize-pdf-image-quality-java.png)
 
-## 필수 조건
+**What You’ll Learn**
 
-이 튜토리얼을 따르려면 다음 사항이 필요합니다.
-- Java 및 Maven 기반 프로젝트에 대한 기본적인 이해가 필요합니다.
-- Java Development Kit(JDK) 버전 8 이상이 설치되어 있어야 합니다.
-- Java 애플리케이션을 실행하기 위한 개발 환경에 대한 액세스.
-- Java 라이브러리용 GroupDocs.Viewer가 프로젝트에 통합되었습니다.
+- GroupDocs.Viewer for Java를 설치하고 구성하는 방법.
+- **convert pdf to html**에 필요한 정확한 코드와 이미지 압축을 제어하는 방법.
+- **reduce pdf file size**를 손상 없이 줄이는 팁.
+- **optimize pdf image quality**가 필수적인 실제 시나리오.
 
-## Java용 GroupDocs.Viewer 설정
+Let’s make sure you have everything you need before we dive into the code.
 
-### Maven으로 설치
+## Quick Answers
+- **What does “render pdf to html” mean?** It converts each PDF page into an HTML page, preserving layout and text.  
+  **“render pdf to html”는 무엇을 의미합니까?** PDF의 각 페이지를 HTML 페이지로 변환하여 레이아웃과 텍스트를 유지합니다.
+- **Why adjust image quality?** To lower file size and improve loading speed while keeping images clear.  
+  **이미지 품질을 조정하는 이유는 무엇입니까?** 파일 크기를 줄이고 로딩 속도를 개선하면서 이미지 선명도를 유지하기 위해서입니다.
+- **Which image quality setting is best?** Start with `MEDIUM`; switch to `HIGH` for print‑ready PDFs.  
+  **어떤 이미지 품질 설정이 가장 좋습니까?** `MEDIUM`부터 시작하고 인쇄용 PDF는 `HIGH`로 전환하십시오.
+- **Do I need a license?** A free trial works for development; a full license is required for production.  
+  **라이선스가 필요합니까?** 개발에는 무료 체험판으로 충분하지만, 프로덕션에서는 정식 라이선스가 필요합니다.
+- **Can I batch‑process many PDFs?** Yes—wrap the rendering logic in a loop over your document list.  
+  **여러 PDF를 배치 처리할 수 있습니까?** 예—문서 목록을 순회하는 루프 안에 렌더링 로직을 넣으면 됩니다.
 
-다음 구성을 프로젝트에 추가하여 GroupDocs.Viewer를 포함하세요. `pom.xml` 파일:
+## What is “render pdf to html”?
+Rendering PDF to HTML means transforming each page of a PDF document into an HTML representation that can be displayed directly in browsers. GroupDocs.Viewer handles fonts, layout, and images, producing web‑ready output without needing a PDF plugin.
+
+## Why adjust PDF image quality?
+Images often dominate a PDF’s size. By lowering the image quality (e.g., from 100 % to 70 %), you can **reduce pdf file size** dramatically, which speeds up download times and saves bandwidth—especially important for online document portals, e‑learning platforms, and mobile apps.
+
+## Prerequisites
+
+- Java 8 + (JDK 8 이상)
+- Maven‑based project
+- Basic Java knowledge
+- GroupDocs.Viewer for Java library added to your project (we’ll show how)
+
+## Setting Up GroupDocs.Viewer for Java
+
+### Installation with Maven
+
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -51,33 +77,31 @@ PDF 문서를 변환할 때 파일 크기를 조절하면서 고품질 이미지
 </dependencies>
 ```
 
-### 라이센스 취득
+### License Acquisition
 
-무료 체험판을 시작하거나 임시 라이선스를 요청하여 제한 없이 기능을 사용해 보세요. 장기 사용 시 라이선스 구매를 고려해 보세요. [GroupDocs 구매 페이지](https://purchase.groupdocs.com/buy).
+Start with a free trial or request a temporary license to explore features without limitations. For long‑term use, consider purchasing a license from the [GroupDocs purchase page](https://purchase.groupdocs.com/buy).
 
-### 기본 초기화 및 설정
+### Basic Initialization and Setup
 
-GroupDocs.Viewer가 프로젝트에 추가되면 Java 애플리케이션에서 초기화합니다.
+Once the library is on your classpath, you can create a `Viewer` instance. The following snippet shows how to open a PDF file—keep it exactly as shown:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// PDF 문서 경로로 Viewer 객체를 초기화합니다.
+// Initialize Viewer object with the path to your PDF document
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-    // 렌더링을 위한 보기 옵션 구성
+    // Configure view options for rendering
 }
 ```
 
-## 구현 가이드
+## Implementation Guide
 
-### GroupDocs.Viewer에서 이미지 품질 최적화
+### Optimize image quality while you **render pdf to html**
 
-PDF를 변환할 때는 이미지 품질을 최적화하는 것이 매우 중요합니다. 선명도와 파일 크기 간의 균형을 맞추기 위해서입니다. 다음 단계를 따르세요.
+Balancing image clarity and file size is a two‑step process: define where the HTML files will go, then tell the viewer how much compression to apply.
 
-#### 1단계: 출력 디렉토리 경로 정의
-
-변환된 HTML 페이지가 저장될 위치를 지정합니다.
+#### Step 1: Define Output Directory Path
 
 ```java
 import java.nio.file.Path;
@@ -86,17 +110,13 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### 2단계: 페이지 파일 형식 지정
-
-생성된 페이지 파일에 동적 명명 패턴을 사용합니다.
+#### Step 2: Specify Page File Format
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### 3단계: HtmlViewOptions 개체 만들기
-
-구성 `HtmlViewOptions` 내장된 리소스를 사용하고 파일 경로 형식을 설정합니다.
+#### Step 3: Create `HtmlViewOptions` Object
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -105,18 +125,17 @@ import com.groupdocs.viewer.options.ImageQuality;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 4단계: 이미지 품질 수준 설정
-
-이미지 품질 설정을 선택하세요. 여기서는 중간 품질을 사용하겠습니다.
+#### Step 4: Set Image Quality Level
 
 ```java
 ImageQuality quality = ImageQuality.MEDIUM;
 viewOptions.getPdfOptions().setImageQuality(quality);
 ```
 
-#### 5단계: PDF 문서 렌더링
+> **Pro tip:** Use `ImageQuality.HIGH` for printed PDFs or `ImageQuality.LOW` when you need the smallest possible files.  
+> **전문가 팁:** 인쇄용 PDF는 `ImageQuality.HIGH`를, 가능한 가장 작은 파일이 필요할 때는 `ImageQuality.LOW`를 사용하세요.
 
-소스 문서로 뷰어를 초기화하고 구성된 옵션을 사용하여 렌더링합니다.
+#### Step 5: Render the PDF Document
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
@@ -124,50 +143,91 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-### 문제 해결 팁
-- **파일 경로 문제:** 프로젝트 루트를 기준으로 경로가 올바르게 설정되었는지 확인하세요.
-- **라이브러리 호환성:** GroupDocs.Viewer와 다른 라이브러리 간의 호환성 문제를 확인하세요.
+### Troubleshooting Tips
+- **File Path Issues:** Double‑check that the paths are absolute or correctly relative to your project root.  
+  **파일 경로 문제:** 경로가 절대 경로이거나 프로젝트 루트에 대해 올바르게 상대 경로인지 다시 확인하십시오.
+- **Library Compatibility:** Ensure the GroupDocs.Viewer version matches your Java runtime (Java 8 +).  
+  **라이브러리 호환성:** GroupDocs.Viewer 버전이 사용 중인 Java 런타임(Java 8 +)과 일치하는지 확인하십시오.
 
-## 실제 응용 프로그램
+## Practical Applications
 
-1. **문서 공유 플랫폼**: 품질 저하 없이 온라인 보기에 적합하도록 PDF를 최적화합니다.
-2. **보관 시스템**: 문서를 장기간 보관할 때 파일 크기와 이미지 선명도의 균형을 맞추세요.
-3. **e러닝 자료**: 교육 콘텐츠에 고품질 시각 자료를 사용하여 참여도를 높입니다.
+1. **Document Sharing Platforms** – Serve lightweight, web‑friendly HTML versions of PDFs without sacrificing image detail.  
+   **문서 공유 플랫폼** – 이미지 디테일을 유지하면서 가볍고 웹 친화적인 HTML 버전의 PDF를 제공합니다.
+2. **Archiving Systems** – Store PDFs with reduced size while preserving enough visual quality for future reference.  
+   **아카이빙 시스템** – 향후 참조를 위해 충분한 시각적 품질을 유지하면서 파일 크기를 줄인 PDF를 저장합니다.
+3. **E‑Learning Materials** – Deliver course PDFs that load quickly on student devices, even on slower connections.  
+   **e‑러닝 자료** – 느린 네트워크에서도 학생 기기에서 빠르게 로드되는 강의 PDF를 제공합니다.
 
-GroupDocs.Viewer를 클라우드 스토리지 솔루션이나 문서 관리 시스템과 결합하여 작업 흐름을 간소화하는 것이 통합 가능성입니다.
+You can combine this rendering flow with cloud storage APIs (AWS S3, Azure Blob) to automate end‑to‑end document pipelines.
 
-## 성능 고려 사항
-- 렌더링 프로세스 동안 리소스를 효과적으로 관리하여 메모리 사용을 최적화합니다.
-- 특정 사용 사례에 따라 적절한 이미지 품질 설정을 사용하여 처리 시간과 리소스 소비를 최소화하세요.
+## Performance Considerations
+- Release the `Viewer` object in a **try‑with‑resources** block (as shown) to free native memory promptly.  
+  **`Viewer` 객체를 **try‑with‑resources** 블록에서 해제**(위 예시처럼)하여 네이티브 메모리를 즉시 반환합니다.
+- Choose the lowest acceptable `ImageQuality` to keep CPU usage low, especially when processing large batches.  
+  **CPU 사용량을 낮게 유지하려면 허용 가능한 가장 낮은 `ImageQuality`를 선택**하십시오. 특히 대량 배치를 처리할 때 유용합니다.
 
-## 결론
+## Conclusion
 
-GroupDocs.Viewer for Java를 사용하여 PDF 이미지 품질을 최적화하는 방법을 알아보았습니다. 이를 통해 필요에 따라 문서 표현을 맞춤 설정할 수 있습니다. 다음 단계로, 라이브러리의 고급 기능을 살펴보거나 더 큰 프로젝트에 통합해 보세요.
+You now have a complete, production‑ready recipe to **render pdf to html** while **optimize pdf image quality** using GroupDocs.Viewer for Java. Adjust the `ImageQuality` enum to meet your specific needs, and you’ll see noticeable reductions in file size without compromising the visual experience.
 
-**행동 촉구:** 이 솔루션을 구현하여 문서 관리 프로세스가 개선되는 것을 확인해 보세요!
+**Next steps:** Explore other output formats (e.g., `ImageViewOptions` for PNG/JPEG), integrate with a document management system, or experiment with custom CSS to style the generated HTML pages.
 
-## FAQ 섹션
+## FAQ Section
 
-1. **Java용 GroupDocs.Viewer란 무엇입니까?**
-   - 다양한 문서 형식을 HTML, 이미지 및 기타 인기 있는 형식으로 렌더링할 수 있는 다용도 라이브러리입니다.
-   
-2. **출력 형식을 HTML에서 이미지로 변경하려면 어떻게 해야 하나요?**
-   - 사용 `ImageViewOptions` 대신에 `HtmlViewOptions` 보기 옵션을 구성할 때.
+1. **What is GroupDocs.Viewer for Java?**  
+   - A versatile library that allows rendering of various document formats into HTML, image, and other popular formats.  
+   - 다양한 문서 형식을 HTML, 이미지 등으로 렌더링할 수 있는 다목적 라이브러리입니다.
+2. **How do I change the output format from HTML to images?**  
+   - Use `ImageViewOptions` instead of `HtmlViewOptions` when configuring your view options.  
+   - `HtmlViewOptions` 대신 `ImageViewOptions`를 사용하십시오.
+3. **Can GroupDocs.Viewer handle large PDF files efficiently?**  
+   - Yes, with proper memory management and performance optimization techniques in place.  
+   - 적절한 메모리 관리와 성능 최적화 기법을 적용하면 대용량 PDF도 효율적으로 처리할 수 있습니다.
+4. **Is there a way to batch process multiple documents at once?**  
+   - Implement loops within your Java application to iterate through multiple document paths.  
+   - Java 애플리케이션 내에서 루프를 구현해 여러 문서 경로를 순회하면 됩니다.
+5. **How can I ensure optimal image quality for printed documents?**  
+   - Adjust the `ImageQuality` setting to `HIGH` or define a custom compression level based on your printing requirements.  
+   - 인쇄용 문서는 `ImageQuality`를 `HIGH`로 설정하거나 요구 사항에 맞는 맞춤 압축 수준을 정의하십시오.
 
-3. **GroupDocs.Viewer는 대용량 PDF 파일을 효율적으로 처리할 수 있나요?**
-   - 네, 적절한 메모리 관리와 성능 최적화 기술이 적용되면 가능합니다.
-   
-4. **여러 문서를 한 번에 일괄 처리할 수 있는 방법이 있나요?**
-   - 여러 문서 경로를 반복하기 위해 Java 애플리케이션 내에서 루프를 구현합니다.
+## Frequently Asked Questions
 
-5. **인쇄된 문서의 이미지 품질을 어떻게 최적화할 수 있나요?**
-   - 조정하다 `ImageQuality` 인쇄 요구 사항에 따라 높은 수준이나 사용자 지정 수준으로 설정할 수 있습니다.
+**Q: Does adjusting image quality affect text rendering?**  
+A: No. The `ImageQuality` setting only influences raster images; text remains crisp because it is rendered as HTML/CSS.  
+**Q: 이미지 품질을 조정하면 텍스트 렌더링에 영향을 줍니까?**  
+A: 아닙니다. `ImageQuality` 설정은 래스터 이미지에만 적용되며, 텍스트는 HTML/CSS로 렌더링되어 선명하게 유지됩니다.
 
-## 자원
-- [선적 서류 비치](https://docs.groupdocs.com/viewer/java/)
-- [API 참조](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer 다운로드](https://releases.groupdocs.com/viewer/java/)
-- [라이센스 구매](https://purchase.groupdocs.com/buy)
-- [무료 체험](https://releases.groupdocs.com/viewer/java/)
-- [임시 면허](https://purchase.groupdocs.com/temporary-license/)
-- [지원 포럼](https://forum.groupdocs.com/c/viewer/9)
+**Q: Can I use this approach with password‑protected PDFs?**  
+A: Yes. Pass the password to the `Viewer` constructor overload that accepts a `LoadOptions` object.  
+**Q: 비밀번호로 보호된 PDF에도 이 방식을 사용할 수 있나요?**  
+A: 가능합니다. 비밀번호를 `LoadOptions` 객체를 받는 `Viewer` 생성자 오버로드에 전달하면 됩니다.
+
+**Q: What if I need to convert the PDF to a single HTML file instead of multiple pages?**  
+A: Use `HtmlViewOptions.forSinglePage(pageFilePathFormat)` and set the appropriate pagination option.  
+**Q: PDF를 여러 페이지가 아닌 단일 HTML 파일로 변환하려면 어떻게 해야 하나요?**  
+A: `HtmlViewOptions.forSinglePage(pageFilePathFormat)`를 사용하고 적절한 페이지네이션 옵션을 설정하십시오.
+
+**Q: Are there any limits on the number of pages I can render in one go?**  
+A: The library streams pages, so you’re limited only by available memory and processing time.  
+**Q: 한 번에 렌더링할 수 있는 페이지 수에 제한이 있나요?**  
+A: 라이브러리가 페이지를 스트리밍하므로 사용 가능한 메모리와 처리 시간만이 제한 요소입니다.
+
+**Q: How do I verify the resulting HTML looks identical to the source PDF?**  
+A: Open the generated HTML in a browser and compare visual layout; you can also use visual regression testing tools for automated checks.  
+**Q: 생성된 HTML이 원본 PDF와 동일하게 보이는지 어떻게 확인하나요?**  
+A: 브라우저에서 HTML을 열어 레이아웃을 비교하고, 자동화된 검증을 위해 시각적 회귀 테스트 도구를 활용할 수 있습니다.
+
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+**Resources**  
+- [Documentation](https://docs.groupdocs.com/viewer/java/)  
+- [API Reference](https://reference.groupdocs.com/viewer/java/)  
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- [Purchase License](https://purchase.groupdocs.com/buy)  
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
