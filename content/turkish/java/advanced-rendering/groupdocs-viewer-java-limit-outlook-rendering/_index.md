@@ -1,42 +1,69 @@
 ---
-"date": "2025-04-24"
-"description": "Java için GroupDocs.Viewer ile büyük PST/OST dosyalarının işlenmesini, öğe sayısını sınırlayarak, performansı ve verimliliği artırarak nasıl optimize edeceğinizi öğrenin."
-"title": "GroupDocs.Viewer&#58;ı Kullanarak Java'da Outlook Öğesi Oluşturmayı Sınırlandırma Kapsamlı Bir Kılavuz"
-"url": "/tr/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
-"weight": 1
+date: '2025-12-20'
+description: GroupDocs.Viewer for Java'da klasör başına maksimum öğe sayısını yapılandırarak
+  Outlook klasöründeki öğeleri sınırlamayı öğrenin, büyük PST/OST dosyalarını işlerken
+  performansı artırın.
+keywords:
+- GroupDocs.Viewer Java
+- Outlook item rendering
+- PST file rendering
+title: GroupDocs.Viewer for Java ile Outlook Görüntülemede Klasör Başına Maksimum
+  Öğe Sayısını Nasıl Ayarlarsınız
 type: docs
+url: /tr/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/
+weight: 1
 ---
-# GroupDocs.Viewer kullanarak Java'da Outlook Öğesi Oluşturmayı Sınırlandırma
 
-## Genel bakış
-PST veya OST gibi büyük Outlook veri dosyalarını yönetmekte zorluk mu çekiyorsunuz? Bu kılavuz, GroupDocs.Viewer for Java kullanarak bu dosyaları işlerken işlenen öğelerin sayısını nasıl sınırlayacağınızı göstererek uygulamanızın verimliliğini ve yanıt verme hızını artırır.
+# Java'da GroupDocs.Viewer Kullanarak Outlook Öğesi İşlemeyi Sınırlama
 
-### Ne Öğreneceksiniz:
-- Java için GroupDocs.Viewer'ı kurma
-- Outlook dosyalarındaki öğe sayısını sınırlamak için kitaplığı yapılandırma
-- Pratik uygulamalar ve performans değerlendirmeleri
+Devasa Outlook veri dosyalarını (PST veya OST) yönetmek hızla bir performans darboğazına dönüşebilir. Bu rehberde, GroupDocs.Viewer for Java ile render ederken **max items per folder** nasıl ayarlanacağını keşfedecek, böylece yalnızca gerçekten ihtiyacınız olan verileri işleyebileceksiniz. **limit items outlook folder** tekniğini uygulayarak, uygulamanız gigabaytlarca e-posta verisiyle bile yanıt verir durumda kalır.
 
-Öncelikle ortamınızı kurmak ve bu özelliği etkin bir şekilde uygulamakla başlayalım.
+![GroupDocs.Viewer for Java ile Outlook Öğesi İşlemeyi Sınırlama](/viewer/advanced-rendering/limit-outlook-item-rendering-java.png)
 
-## Ön koşullar
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+### Öğrenecekleriniz
+- GroupDocs.Viewer for Java'ı kurma
+- Kütüphaneyi Outlook dosyalarında **max items per folder** olarak yapılandırma
+- Öğeleri klasöre sınırlamanın hızı artırdığı ve bellek kullanımını azalttığı gerçek dünya senaryoları
+
+Kurulum ve uygulamayı adım adım inceleyelim.
+
+## Hızlı Yanıtlar
+- **“max items per folder” ne yapar?** Her Outlook klasöründeki belirli bir sayıda e-posta öğesinin render edilmesini sınırlar.  
+- **Neden items outlook folder sınırlanmalı?** Büyük posta kutularında işleme süresini ve bellek tüketimini azaltmak için.  
+- **Hangi sürüm bu özelliği destekliyor?** GroupDocs.Viewer 25.2 ve sonrası.  
+- **Lisans gerekiyor mu?** Evet, üretim kullanım için bir deneme veya satın alınmış lisans gereklidir.  
+- **Sınırı çalışma zamanında değiştirebilir miyim?** Kesinlikle – render etmeden önce `setMaxItemsInFolder` değerini değiştirmeniz yeterlidir.
+
+## Genel Bakış
+PST veya OST gibi büyük Outlook veri dosyalarını yönetmekte zorlanıyor musunuz? Bu rehber, bu dosyaları GroupDocs.Viewer for Java ile render ederken işlenen öğe sayısını nasıl sınırlayacağınızı gösterir, uygulamanızın verimliliğini ve yanıt verebilirliğini artırır.
+
+### “max items per folder” nedir?
+**max items per folder** ayarı, görüntüleyicinin her klasörde belirli bir öğe sayısını render ettikten sonra durmasını söyler. Bu, yalnızca son e-postaların önizlemesine ihtiyaç duyduğunuzda veya tüm posta kutusunu gerektirmeyen raporlar oluştururken özellikle faydalıdır.
+
+### Neden limit items outlook folder yaklaşımını kullanmalı?
+- **Performans:** Daha hızlı render süreleri ve daha düşük CPU kullanımı.  
+- **Ölçeklenebilirlik:** JVM belleğini tüketmeden daha büyük posta kutularını yönetme.  
+- **Esneklik:** Kullanıcı tercihleri veya cihaz yeteneklerine göre sınırı ayarlama.
+
+## Önkoşullar
+Başlamadan önce aşağıdakilerin olduğundan emin olun:
 
 ### Gerekli Kütüphaneler ve Bağımlılıklar:
-1. **Java Geliştirme Kiti (JDK)**: JDK 8 veya üzerini yükleyin.
-2. **Java için GroupDocs.Viewer**: Projenize bağımlılık olarak ekleyin.
+1. **Java Development Kit (JDK)**: JDK 8 veya daha yeni bir sürüm kurun.  
+2. **GroupDocs.Viewer for Java**: Projenize bağımlılık olarak ekleyin.
 
-### Çevre Kurulum Gereksinimleri:
-- IntelliJ IDEA, Eclipse veya NetBeans gibi uygun bir IDE.
-- Eğer bağımlılıkları Maven üzerinden yönetiyorsanız Maven kurulu olmalıdır.
+### Ortam Kurulum Gereksinimleri:
+- IntelliJ IDEA, Eclipse veya NetBeans gibi uygun bir IDE.  
+- Bağımlılıkları Maven ile yönetiyorsanız Maven kurulu olmalı.
 
-### Bilgi Ön Koşulları:
-- Java programlama ve dosya yönetimi konusunda temel bilgi.
-- Maven projelerinde çalışma konusunda bilgi sahibi olmak faydalıdır ancak zorunlu değildir.
+### Bilgi Önkoşulları:
+- Java programlama ve dosya işlemleri hakkında temel bilgi.  
+- Maven projelerine aşina olmak faydalı ancak zorunlu değil.
 
-## Java için GroupDocs.Viewer Kurulumu
-Maven kullanarak projenizde GroupDocs.Viewer'ı ayarlayın:
+## GroupDocs.Viewer for Java'ı Kurma
+Maven kullanarak projenizde GroupDocs.Viewer'ı kurun:
 
-**Maven Yapılandırması:**
+**Maven Yapılandırması:**  
 ```xml
 <repositories>
    <repository>
@@ -54,102 +81,112 @@ Maven kullanarak projenizde GroupDocs.Viewer'ı ayarlayın:
 </dependencies>
 ```
 
-### Lisans Alma Adımları:
-- **Ücretsiz Deneme**: Ücretsiz deneme sürümünü indirin [GrupDokümanları](https://releases.groupdocs.com/viewer/java/) Kütüphanenin özelliklerini keşfetmek için.
-- **Geçici Lisans**: Değerlendirme sınırlamaları olmaksızın tam erişim için geçici bir lisans edinin [GroupDocs Geçici Lisansı](https://purchase.groupdocs.com/temporary-license/).
-- **Satın almak**: Uzun vadeli kullanım için, şu adresten bir lisans satın almayı düşünün: [GroupDocs Satın Alma Sayfası](https://purchase.groupdocs.com/buy).
+### Lisans Edinme Adımları
+- **Ücretsiz Deneme**: Kütüphanenin özelliklerini keşfetmek için [GroupDocs](https://releases.groupdocs.com/viewer/java/) adresinden ücretsiz deneme indirin.  
+- **Geçici Lisans**: Değerlendirme sınırlamaları olmadan tam erişim için [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) adresinden geçici lisans alın.  
+- **Satın Alma**: Uzun vadeli kullanım için [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) adresinden lisans satın almayı düşünün.
 
-### Temel Başlatma ve Kurulum:
-Maven yapılandırıldıktan sonra, görüntüleyici nesnesini ayarlayarak Java uygulamanızda GroupDocs.Viewer'ı başlatın. Bu, belgeleri yüklemenizi ve işlemenizi sağlar.
+### Temel Başlatma ve Kurulum
+Maven yapılandırıldıktan sonra, Java uygulamanızda viewer nesnesini ayarlayarak GroupDocs.Viewer'ı başlatın. Bu, belgeleri yüklemenizi ve render etmenizi sağlar.
 
 ## Uygulama Kılavuzu
 
-### Outlook Dosyalarından İşlenen Öğeleri Sınırlama
-Bu bölümde GroupDocs.Viewer for Java kullanılarak Outlook veri dosyalarından işlenen öğelerin nasıl sınırlandırılacağı ayrıntılı olarak açıklanmaktadır.
+### Outlook Dosyalarından Render Edilen Öğeleri Sınırlama
+Bu bölüm, GroupDocs.Viewer for Java kullanarak Outlook veri dosyalarından render edilen öğeleri nasıl sınırlayacağınızı ayrıntılı olarak açıklar.
 
-#### Genel bakış
-Belirli seçenekleri yapılandırarak, klasör başına belirli sayıda öğenin işlenmesini sınırlayabilirsiniz. Bu özellik, büyük e-posta veri kümeleriyle uğraşırken performansı ve verimliliği artırır.
+#### Genel Bakış
+Belirli seçenekleri yapılandırarak, render işlemini klasör başına belirli bir öğe sayısıyla sınırlayabilirsiniz. Bu özellik, büyük e-posta veri setleriyle çalışırken performans ve verimliliği artırır.
 
-**Adım 1: Çıktı Dizin Yolunu Ayarlayın**
+**Adım 1: Çıktı Dizin Yolu Ayarlama**  
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("LimitCountOfItemsToRender");
 ```
-Bu kod, işlenen HTML dosyalarının depolanacağı dizini ayarlar. Değiştir `"LimitCountOfItemsToRender"` İstediğiniz yol adıyla.
 
-**Adım 2: HTML Sayfaları için Dosya Yolu Biçimini Tanımlayın**
+**Adım 2: HTML Sayfaları için Dosya Yolu Formatı Tanımlama**  
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-Oluşturma sırasında oluşturulan HTML sayfaları için tutarlı bir adlandırma biçimi oluşturarak kolay erişim ve yönetim sağlayın.
 
-**Adım 3: Gömülü Kaynaklarla HtmlViewOptions'ı Yapılandırın**
+**Adım 3: Gömülü Kaynaklarla HtmlViewOptions'ı Yapılandırma**  
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-Bu seçenek, belgelerin gömülü kaynaklarla nasıl işleneceğini belirleyerek, görüntülerin ve stillerin daha iyi bütünleştirilmesine olanak tanır.
 
-**Adım 4: Outlook Seçeneklerini Klasör Başına Öğeleri Sınırlayacak Şekilde Ayarlayın**
+**Adım 4: Outlook Seçeneklerini Klasör Başına Öğeleri Sınırlayacak Şekilde Ayarlama**  
 ```java
-viewOptions.getOutlookOptions().setMaxItemsInFolder(3); // Her klasördeki yalnızca ilk 3 öğeyi işle
+viewOptions.getOutlookOptions().setMaxItemsInFolder(3); // Render only the first 3 items in each folder
 ```
-Burada, oluşturma sürecini klasör başına ilk üç öğeyle sınırlıyoruz. Sayıyı gereksinimlerinize göre ayarlayın.
 
-**Adım 5: Belgeyi Yükleyin ve İşleyin**
+Burada, **max items per folder** değerini üç olarak ayarlıyoruz. **limit items outlook folder** senaryonuza göre sayıyı ayarlayın.
+
+**Adım 5: Belgeyi Yükleyin ve Render Edin**  
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_OST)) {
-    viewer.view(viewOptions); // Belirtilen seçeneklerle işlemeyi yürüt
+    viewer.view(viewOptions); // Execute rendering with specified options
 }
 ```
-Kullanın `Viewer` OST dosyasını yüklemek ve tanımlanmış görünüm seçeneklerine göre işlemek için sınıf. try-with-resources ifadesi kaynakların kullanımdan sonra düzgün bir şekilde kapatılmasını sağlar.
 
-### Sorun Giderme İpuçları:
-- Kodunuzu çalıştırmadan önce tüm yolların ve dizinlerin mevcut olduğundan emin olun.
-- GroupDocs.Viewer bağımlılıklarının Maven tarafından doğru şekilde çözüldüğünü doğrulayın.
-- İşleme sırasında dosya biçimleri veya izinlerle ilgili sorunlara işaret edebilecek herhangi bir istisna olup olmadığını kontrol edin.
+`Viewer` sınıfını kullanarak bir OST dosyasını yükleyin ve tanımlı görüntü seçeneklerine göre render edin. try‑with‑resources ifadesi, kaynakların kullanım sonrası düzgün bir şekilde kapatılmasını sağlar.
+
+### Sorun Giderme İpuçları
+- Kodunuzu çalıştırmadan önce tüm yol ve dizinlerin mevcut olduğundan emin olun.  
+- GroupDocs.Viewer bağımlılıklarının Maven tarafından doğru şekilde çözüldüğünü doğrulayın.  
+- Render sırasında oluşabilecek istisnaları kontrol edin; bu, dosya formatları veya izinlerle ilgili sorunları gösterebilir.
 
 ## Pratik Uygulamalar
-1. **E-posta Arşivleme**: Öğe oluşturmayı sınırlamak, tüm veri kümeleri yerine belirli e-postaları arşivlemeye odaklanan uygulamalar için idealdir.
-2. **Veri Göçü**: Sistemler arasında veri aktarımı yaparken, performansı optimize etmek ve işlem süresini azaltmak için yalnızca gerekli öğeleri işleyin.
-3. **Özel Raporlama**:Tüm klasörleri yüklemeden, gerekli e-posta içeriğini seçici olarak işleyerek raporlar oluşturun.
+1. **E-posta Arşivleme** – Öğeleri sınırlamak, tüm veri seti yerine belirli e-postaların arşivlenmesine odaklanan uygulamalar için idealdir.  
+2. **Veri Göçü** – Sistemler arasında veri aktarırken, performansı optimize etmek ve işlem süresini azaltmak için yalnızca gerekli öğeleri render edin.  
+3. **Özel Raporlama** – Tüm klasörleri yüklemeden, gereken e-posta içeriğini seçerek raporlar oluşturun.
 
-## Performans Hususları
-### Performansı Optimize Etmeye Yönelik İpuçları:
-- Bellek kullanımını azaltmak için klasör başına öğe sayısını sınırlayın.
-- İşleme sırasında ek ağ çağrılarından kaçınmak için gömülü kaynakları verimli bir şekilde kullanın.
+## Performans Düşünceleri
+### Performansı Optimize Etmek İçin İpuçları
+- Bellek kullanımını azaltmak için klasör başına öğe sayısını sınırlayın.  
+- Render sırasında ek ağ çağrılarını önlemek için gömülü kaynakları verimli kullanın.
 
-### Kaynak Kullanım Kuralları:
-- JVM belleğini izleyin ve işlenen Outlook dosyalarının boyutuna göre ayarları düzenleyin.
+### Kaynak Kullanım Kılavuzları
+- İşlenen Outlook dosyalarının boyutuna göre JVM belleğini izleyin ve ayarları buna göre düzenleyin.
 
-### Java Bellek Yönetimi için En İyi Uygulamalar:
-- Otomatik kaynak yönetimi için try-with-resources'ı kullanın.
-- Büyük dosya işlemeyle ilgili darboğazları belirlemek için uygulamanızın profilini çıkarın.
+### Java Bellek Yönetimi için En İyi Uygulamalar
+- Otomatik kaynak yönetimi için try‑with‑resources kullanın.  
+- Büyük dosya işlemleriyle ilgili darboğazları belirlemek için uygulamanızı profilleyin.
 
-## Çözüm
-Bu eğitimde, GroupDocs.Viewer for Java kullanarak Outlook veri dosyalarında öğe oluşturmayı etkili bir şekilde nasıl sınırlayacağınızı öğrendiniz. Bu adımları izleyerek ve performans ipuçlarını göz önünde bulundurarak, belirli ihtiyaçlara göre uyarlanmış verimli uygulamalar oluşturabilirsiniz.
+## Sonuç
+Bu öğreticide, GroupDocs.Viewer for Java kullanarak Outlook veri dosyalarında **max items per folder** özelliğini etkili bir şekilde nasıl uygulayacağınızı öğrendiniz. Bu adımları izleyerek ve performans ipuçlarını göz önünde bulundurarak, belirli ihtiyaçlara uygun verimli uygulamalar oluşturabilirsiniz.
 
-### Sonraki Adımlar:
-- GroupDocs.Viewer'ın ek özelliklerini keşfetmek için şuraya bakın: [resmi belgeler](https://docs.groupdocs.com/viewer/java/).
-- Uygulamanızın gereksinimlerine en uygun kurulumu bulmak için farklı oluşturma seçeneklerini deneyin.
-  
-Denemeye hazır mısınız? Bu çözümü bugün projelerinizde uygulamaya başlayın ve verimliliğin ilk elden artışına tanık olun.
+### Sonraki Adımlar
+- [Resmi dokümantasyona](https://docs.groupdocs.com/viewer/java/) bakarak GroupDocs.Viewer'ın ek özelliklerini keşfedin.  
+- Uygulamanızın gereksinimlerine en uygun ayarı bulmak için farklı render seçenekleriyle deneyler yapın.
 
-## SSS Bölümü
-1. **GroupDocs.Viewer Java ne için kullanılır?**
-   - Outlook veri dosyaları da dahil olmak üzere çeşitli belge biçimlerini HTML veya resim biçimlerine dönüştürmek için tasarlanmış çok yönlü bir kütüphanedir.
-2. **GroupDocs.Viewer'ın ücretsiz deneme sürümünü nasıl edinebilirim?**
-   - Ziyaret etmek [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/) erişim ve indirme seçenekleri için.
-3. **PST dosyalarında da öğe görüntülemeyi sınırlayabilir miyim?**
-   - Evet, aynı yapılandırma hem OST hem de PST dosya biçimleri için geçerlidir.
-4. **Uygulamam render sırasında yavaş çalışıyorsa ne yapmalıyım?**
-   - Öğe sınırlarınızı ve kaynak ayarlarınızı gözden geçirin; bellek yönetimi uygulamalarınızı iyileştirmeyi düşünün.
-5. **GroupDocs.Viewer sorunlarıyla ilgili desteği nerede bulabilirim?**
-   - Yardım için, şunu kontrol edin: [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/9).
+Denemeye hazır mısınız? Bu çözümü bugün projelerinizde uygulamaya başlayın ve geliştirilmiş verimliliği ilk elden görün.
 
-## Kaynaklar
-- [Belgeleme](https://docs.groupdocs.com/viewer/java/)
+## Sıkça Sorulan Sorular
+
+**S: GroupDocs.Viewer Java ne için kullanılır?**  
+C: Outlook veri dosyaları da dahil olmak üzere çeşitli belge formatlarını HTML veya görüntü formatlarına render etmek için tasarlanmış çok yönlü bir kütüphanedir.
+
+**S: GroupDocs.Viewer'ın ücretsiz denemesini nasıl alabilirim?**  
+C: Erişim ve indirme seçenekleri için [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) adresini ziyaret edin.
+
+**S: PST dosyalarında da öğe render'ını sınırlayabilir miyim?**  
+C: Evet, aynı yapılandırma OST ve PST dosya formatları için geçerlidir.
+
+**S: Render sırasında uygulamam yavaş çalışıyorsa ne yapmalıyım?**  
+C: Öğe sınırlarını ve kaynak ayarlarını gözden geçirin; bellek yönetimi uygulamalarını optimize etmeyi düşünün.
+
+**S: GroupDocs.Viewer sorunları için desteği nereden bulabilirim?**  
+C: Yardım için [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) adresine bakabilirsiniz.
+
+## Ek Kaynaklar
+- [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [Java için GroupDocs.Viewer'ı indirin](https://releases.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer for Java'ı İndir](https://releases.groupdocs.com/viewer/java/)
 - [Lisans Satın Al](https://purchase.groupdocs.com/buy)
 - [Ücretsiz Deneme Sürümü](https://releases.groupdocs.com/viewer/java/)
 - [Geçici Lisans Başvurusu](https://purchase.groupdocs.com/temporary-license/)
-- [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+- [Destek Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2025-12-20  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs
