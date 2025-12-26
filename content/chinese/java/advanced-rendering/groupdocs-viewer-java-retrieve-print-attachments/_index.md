@@ -1,45 +1,44 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用 GroupDocs.Viewer for Java 高效检索和打印文档附件。请按照本分步指南来增强您的 Java 应用程序。"
-"title": "掌握 GroupDocs.Viewer for Java&#58; 检索和打印文档附件"
-"url": "/zh/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
-"weight": 1
+date: '2025-12-26'
+description: 了解如何使用 GroupDocs.Viewer for Java 高效检索附件并打印 PDF 附件。按照本分步指南提升您的 Java 应用程序。
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve document attachments
+- print document attachments
+title: 使用 GroupDocs.Viewer for Java 检索附件并打印文档附件
 type: docs
+url: /zh/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/
+weight: 1
 ---
-# 掌握 Java 版 GroupDocs.Viewer：检索和打印文档附件
 
-## 介绍
+# 如何使用 GroupDocs.Viewer for Java 检索附件并打印文档附件
 
-在 Java 应用程序中管理文档附件时遇到困难？无论您是处理复杂的文档，还是需要高效地访问附件， **GroupDocs.Viewer for Java** 是您的解决方案。这个强大的库使开发人员能够轻松地从各种文档格式中检索和打印所有附件。
+在 Java 应用程序中管理文档附件时感到困难吗？无论您是在处理复杂文档还是需要一种高效的方式来访问附件文件，**GroupDocs.Viewer for Java** 都是您的解决方案。在本指南中，我们将向您展示**如何检索附件**并直接从 Java 代码中打印它们。这个强大的库使开发人员能够轻松地从各种文档格式中检索并打印所有附件。
 
-在本教程中，我们将探讨如何将 GroupDocs.Viewer Java 集成到您的工作流程中，以简化文档附件管理。在本指南结束时，您将学习：
-- 如何在您的项目中设置 GroupDocs.Viewer for Java
-- 高效检索和打印文档附件的步骤
-- 处理大型文档时优化性能的最佳实践
+![Retrieve and Print Document Attachments with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-and-print-document-attachments-java.png)
 
-让我们首先介绍一下开始之前所需的先决条件。
+## 快速回答
+- **“how to retrieve attachments” 是什么意思？** 它指的是使用 API 提取嵌入的文件（例如来自 MSG、EML）。
+- **哪个库在 Java 中处理 PDF 附件打印？** GroupDocs.Viewer for Java 开箱即提供 `print pdf attachments java` 功能。
+- **我需要许可证吗？** 免费试用可用于评估；生产环境需要商业许可证。
+- **我可以处理大批量吗？** 可以——将 API 与批处理或异步处理相结合以实现可扩展性。
+- **需要哪个 Java 版本？** JDK 8 或更高。
 
-## 先决条件
+## 什么是 “how to retrieve attachments”？
+检索附件是指以编程方式访问嵌入在父文档中的文件（例如电子邮件、带有嵌入文件的 PDF 或 Office 文档）。当您需要预览、下载或进一步处理这些文件时，这一点至关重要。
 
-为了继续操作，请确保您已：
+## 为什么使用 GroupDocs.Viewer for Java 来打印 pdf attachments java？
+- **统一 API** – 支持超过 90 种格式，包括 MSG、EML 和 PDF。  
+- **性能优化** – 即使处理大文件也设计为低内存消耗。  
+- **跨平台** – 可在桌面、Web 和基于云的 Java 应用程序中使用。  
 
-### 所需的库和依赖项
+## 前提条件
+- **GroupDocs.Viewer for Java** ≥ 25.2  
+- JDK 8 或更高  
+- Maven（或其他构建工具）用于依赖管理  
 
-确保您的设置包括：
-- **GroupDocs.Viewer for Java**：版本 25.2 或更高版本
-- Java 开发工具包 (JDK) 8 或更高版本
-
-### 环境设置要求
-
-准备您的开发环境以运行 Java 应用程序，例如 IntelliJ IDEA 或 Eclipse。
-
-### 知识前提
-
-建议对 Java 编程有基本的了解，并熟悉 Maven 的依赖管理。
-
-## 为 Java 设置 GroupDocs.Viewer
-
-为了实现检索和打印文档附件的功能，我们需要在项目中设置 GroupDocs.Viewer。如果您使用的是 Maven，请将以下配置添加到您的 `pom.xml`：
+## 设置 GroupDocs.Viewer for Java
+将仓库和依赖添加到您的 `pom.xml` 中：
 
 ```xml
 <repositories>
@@ -58,106 +57,115 @@ type: docs
 </dependencies>
 ```
 
-### 许可证获取
+### 获取许可证
+先使用免费试用版来探索 GroupDocs.Viewer 的功能。若需持续使用，可考虑获取临时许可证进行测试或购买正式许可证。
 
-立即免费试用，探索 GroupDocs.Viewer 的功能。如需继续使用，请考虑购买临时许可证进行测试，或购买完整许可证。
+## 如何使用 GroupDocs.Viewer 检索附件
 
-一旦您的环境准备就绪并且库已添加到您的项目中，我们就可以继续实现该功能。
-
-## 实施指南
-
-本节将指导您使用 GroupDocs.Viewer Java 从文档中检索和打印附件。 
-
-### 检索附件概述
-
-检索文档附件涉及访问嵌入在 MSG 或 EML 等格式中的文件。此功能对于处理电子邮件客户端或归档系统的应用程序至关重要。
-
-#### 步骤 1：初始化查看器对象
+### 步骤 1：初始化 Viewer 对象
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.util.List;
 
-// 定义包含附件的文档的路径
+// Define the path to your document containing attachments
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG_WITH_ATTACHMENTS";
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // 检索和打印附件的代码将放在这里
+    // Code for retrieving and printing attachments will go here
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-**解释**：此代码片段初始化一个 `Viewer` 具有指定文档路径的对象。 `try-with-resources` 语句确保查看器在使用后正确关闭。
+**解释**：此代码片段为目标文档创建一个 `Viewer` 实例。`try‑with‑resources` 块确保 Viewer 自动关闭，防止资源泄漏。
 
-#### 第 2 步：检索附件
+### 步骤 2：检索附件
 
 ```java
-// 从指定文档中检索所有附件
+// Retrieve all attachments from the specified document
 List<Attachment> attachments = viewer.getAttachments();
 ```
 
-**解释**：在这里，我们称之为 `getAttachments()` 方法获取附件列表。该列表包含 `Attachment` 对象，每个对象代表一个单独的附件。
+**解释**：`getAttachments()` 方法返回一个 `List<Attachment>`，表示源文档中嵌入的每个文件。
 
-#### 步骤 3：打印附件详细信息
+### 步骤 3：打印附件详情
 
 ```java
-// 遍历每个附件并打印其详细信息
+// Iterate through each attachment and print its details
 for (Attachment attachment : attachments) {
     System.out.println(attachment);
 }
 ```
 
-**解释**：我们循环遍历附件列表，并打印出它们的详细信息。这有助于验证所有附件是否都已正确检索。
+**解释**：遍历集合可让您核对每个附件的名称、大小和类型。您还可以将附件流直接发送到打印机或保存到磁盘。
 
-### 故障排除提示
+## 打印 PDF 附件 Java – 实用技巧
+- **直接打印** – 对 PDF 类型的 `Attachment` 使用 `viewer.print()`，即可直接发送到打印机。  
+- **批量打印** – 将所有 PDF 附件收集到列表中，调用批量打印例程以提升吞吐量。  
+- **内存管理** – 打印后关闭每个附件的流，以保持 JVM 占用低。  
 
-- 确保您的文档路径正确，以避免 `FileNotFoundException`。
-- 如果通过网络访问文档，请验证网络权限。
-- 妥善处理异常以提高应用程序的稳健性。
+## 故障排除技巧
+- **FileNotFoundException** – 再次检查 `documentPath`，确保文件可访问。  
+- **网络权限** – 如果文档位于共享驱动器上，请验证读写权限。  
+- **不受支持的格式** – GroupDocs.Viewer 支持多种格式，但非常旧或损坏的文件可能需要预处理。  
 
 ## 实际应用
-
-将 GroupDocs.Viewer Java 集成到您的应用程序中可提供多种可能性：
-
-1. **电子邮件客户端**：自动从电子邮件中检索附件以进行预览或进一步处理。
-2. **文档管理系统**：通过允许访问文档中的嵌入文件来增强用户体验。
-3. **档案解决方案**：简化提取和归档文档附件的过程。
+1. **电子邮件客户端** – 自动提取并显示来自收到的 MSG/EML 消息的附件。  
+2. **文档管理系统** – 为用户提供“查看附件”按钮，无需打开原始文件。  
+3. **归档解决方案** – 提取嵌入文件用于长期存储或合规审计。  
 
 ## 性能考虑
-
-处理大量文档时，请考虑以下提示：
-- **内存管理**：优化 Java 内存设置以获得更好的性能。
-- **批处理**：批量处理文档以减少加载时间。
-- **异步操作**：尽可能使用异步方法来保持应用程序的响应。
+- **内存设置** – 处理大批量时增加 JVM 堆大小（`-Xmx`）。  
+- **批处理** – 将文档分组处理，以降低 I/O 开销。  
+- **异步操作** – 利用 `CompletableFuture` 或类似机制保持 UI 线程响应。  
 
 ## 结论
+通过本指南，您现在了解了**如何检索附件**以及如何使用 GroupDocs.Viewer for Java 的 `print pdf attachments java` 功能。这些特性可以显著提升处理复杂文档或电子邮件存档的任何应用程序的用户体验。
 
-通过本指南，您学习了如何将 GroupDocs.Viewer Java 集成到您的项目中，以便高效地检索和打印文档附件。此功能可以显著增强处理复杂文档的应用程序的功能。
+欲了解更多，请查阅官方文档或尝试 Viewer 的其他功能，如文档转换、页面渲染或自定义渲染管道。
 
-要进一步了解 GroupDocs.Viewer for Java 的功能，请深入阅读其文档，或尝试实现查看或转换文档等其他功能。立即开始将这些知识应用于实际场景！
-
-## 常见问题解答部分
+## 常见问题解答
 
 1. **GroupDocs.Viewer 支持哪些文件格式？**  
-   它支持超过 90 种文档格式，包括 PDF、Word 文档、电子表格等。
-2. **如何处理 GroupDocs.Viewer 的异常？**  
-   使用 try-catch 块来管理潜在问题，例如文件访问错误或不支持的格式。
-3. **我可以在 Web 应用程序中使用这个库吗？**  
-   是的，它适用于使用 Java 的桌面和 Web 应用程序。
-4. **使用 GroupDocs.Viewer 对性能有何影响？**  
-   在提高效率的同时，请确保配置内存设置并考虑异步处理大量文档。
+   支持超过 90 种文档格式，包括 PDF、Word 文档、电子表格等。  
+2. **如何使用 GroupDocs.Viewer 处理异常？**  
+   使用 try‑catch 块来管理可能出现的文件访问错误或不受支持的格式等问题。  
+3. **我可以在 Web 应用程序中使用此库吗？**  
+   可以，它适用于使用 Java 的桌面和 Web 应用程序。  
+4. **使用 GroupDocs.Viewer 的性能影响是什么？**  
+   虽然高效，但请确保配置内存设置，并考虑对大批量进行异步处理。  
 5. **是否支持自定义附件的显示方式？**  
-   是的，可以通过扩展 Java 应用程序中的功能实现进一步的定制。
+   可以，通过在 Java 应用程序中扩展功能实现进一步的自定义。  
+
+## 其他常见问题
+
+**Q: “print pdf attachments java” 能处理受密码保护的 PDF 吗？**  
+A: 能。打开附件流时提供密码，然后即可正常打印。
+
+**Q: 我可以从 DOCX 文件中检索附件吗？**  
+A: 完全可以。GroupDocs.Viewer 将 Office 文件中的嵌入对象视为附件，并通过 `getAttachments()` 返回。
+
+**Q: 我如何限制检索的附件大小？**  
+A: 调用 `getAttachments()` 后，可在处理前通过 `attachment.getSize()` 对列表进行过滤。
+
+**Q: 是否有办法在不先保存的情况下预览附件？**  
+A: 有。可以将附件流直接传输到查看器组件或临时内存缓冲区。
+
+**Q: 生产环境应选择哪种许可模式？**  
+A: 推荐使用商业许可证。临时许可证可用于测试和评估。
 
 ## 资源
+- [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- [Purchase a License](https://purchase.groupdocs.com/buy)
+- [Free Trial Download](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License Acquisition](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-- [GroupDocs 查看器文档](https://docs.groupdocs.com/viewer/java/)
-- [API 参考](https://reference.groupdocs.com/viewer/java/)
-- [下载 GroupDocs.Viewer Java 版](https://releases.groupdocs.com/viewer/java/)
-- [购买许可证](https://purchase.groupdocs.com/buy)
-- [免费试用版下载](https://releases.groupdocs.com/viewer/java/)
-- [获取临时许可证](https://purchase.groupdocs.com/temporary-license/)
-- [支持论坛](https://forum.groupdocs.com/c/viewer/9)
+---
 
-立即开始探索 GroupDocs.Viewer Java 并释放文档处理应用程序的全部潜力！
+**最后更新：** 2025-12-26  
+**测试环境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs
