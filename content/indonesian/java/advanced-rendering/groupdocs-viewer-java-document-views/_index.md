@@ -1,42 +1,68 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara menggunakan GroupDocs.Viewer untuk Java guna mengekstrak informasi tampilan dokumen yang terperinci. Sempurna untuk meningkatkan kemampuan manajemen dokumen aplikasi Anda."
-"title": "Master GroupDocs.Viewer untuk Java&#58; Ambil Informasi dan Wawasan Tampilan Dokumen"
-"url": "/id/java/advanced-rendering/groupdocs-viewer-java-document-views/"
-"weight": 1
+date: '2025-12-26'
+description: Pelajari cara mengekstrak metadata dokumen menggunakan GroupDocs.Viewer
+  untuk Java, sempurna untuk manajemen dokumen Java, pratinjau dokumen besar, dan
+  mendapatkan jumlah halaman Java.
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve document view information
+- Java document management
+title: 'Ekstrak Metadata Dokumen dengan GroupDocs.Viewer untuk Java: Dapatkan Informasi
+  Tampilan Dokumen dan Wawasan'
 type: docs
+url: /id/java/advanced-rendering/groupdocs-viewer-java-document-views/
+weight: 1
 ---
-# Menguasai Tampilan Dokumen dengan GroupDocs.Viewer untuk Java
+
+# Ekstrak Metadata Dokumen dengan GroupDocs.Viewer untuk Java
 ## Teknik Rendering Lanjutan
-**URL SEO:** groupdocs-viewer-java-tampilan-dokumen
+**URL SEO:** groupdocs-viewer-java-document-views
 
-# Master GroupDocs.Viewer untuk Java: Ambil Informasi dan Wawasan Tampilan Dokumen
+# Kuasai GroupDocs.Viewer untuk Java: Dapatkan Informasi Tampilan Dokumen dan Insight
 
-## Perkenalan
+## Pendahuluan
 
-Manfaatkan fitur-fitur canggih GroupDocs.Viewer untuk Java untuk mengekstrak informasi terperinci tentang tampilan dokumen dalam aplikasi Anda. Tutorial ini memandu Anda dalam menyiapkan dan memanfaatkan pustaka ini secara efektif.
+Manfaatkan fitur kuat GroupDocs.Viewer untuk Java untuk **mengekstrak metadata dokumen** dan memperoleh insight terperinci tentang setiap tampilan dalam aplikasi Anda. Tutorial ini memandu Anda melalui penyiapan pustaka, pengambilan informasi tampilan, dan penerapan data ke skenario dunia nyata seperti preview dokumen Java, mengelola dokumen besar, dan membangun solusi manajemen dokumen Java yang kuat.
+
+![Dapatkan Informasi Tampilan Dokumen dan Insight dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
 **Apa yang Akan Anda Pelajari:**
 - Menyiapkan GroupDocs.Viewer untuk Java.
-- Mengambil dan menggunakan informasi tampilan dokumen.
-- Praktik terbaik untuk integrasi ke dalam aplikasi Anda.
+- Mengambil dan menggunakan informasi tampilan dokumen untuk **mengekstrak metadata dokumen**.
+- Praktik terbaik untuk integrasi ke dalam aplikasi Anda, termasuk cara **mendapatkan jumlah halaman Java** dan membuat preview ringan.
 
 Sebelum memulai, pastikan Anda memenuhi prasyarat.
+
+## Jawaban Cepat
+- **Apa arti “mengekstrak metadata dokumen”?** Mengambil detail struktural (jumlah halaman, opsi tampilan, data spesifik format) tanpa merender konten penuh.  
+- **Metode mana yang menyediakan info tampilan?** `viewer.getViewInfo(viewInfoOptions)`.  
+- **Bisakah saya meninjau dokumen tanpa rendering penuh?** Ya, dengan menggunakan metadata tampilan Anda dapat membangun fitur **preview dokumen Java** yang cepat.  
+- **Apakah cocok untuk file besar?** Tentu—ekstraksi metadata menggunakan memori minimal, membantu Anda **mengelola dokumen besar** secara efisien.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi komersial diperlukan untuk produksi.
+
+## Apa itu “mengekstrak metadata dokumen”?
+Mengekstrak metadata dokumen berarti mengambil informasi deskriptif—seperti jumlah halaman, tipe tampilan yang tersedia, dan pengaturan spesifik format—langsung dari header file. Operasi ringan ini ideal untuk membangun preview cepat, pengindeksan, atau analitik tanpa beban rendering penuh.
+
+## Mengapa mengekstrak metadata dokumen dengan GroupDocs.Viewer untuk Java?
+- **Kinerja:** Pengambilan metadata cepat dan hemat memori, sempurna untuk skenario **mengelola dokumen besar**.  
+- **Fleksibilitas:** Mendukung berbagai format (PDF, DOCX, XLSX, dll.), cocok untuk stack **manajemen dokumen java** apa pun.  
+- **Skalabilitas:** Memungkinkan Anda **mendapatkan jumlah halaman java** secara instan, berguna untuk kontrol paginasi dan indikator progres.  
+- **Keamanan:** Tidak perlu merender konten sensitif di server kecuali pengguna secara eksplisit memintanya.
 
 ## Prasyarat
 Untuk mengikuti tutorial ini, pastikan Anda memiliki:
 
-### Pustaka, Versi, dan Ketergantungan yang Diperlukan
-- **GroupDocs.Viewer untuk Java:** Diperlukan versi 25.2 atau yang lebih baru.
-- **Kit Pengembangan Java (JDK):** Diperlukan Java 8 atau yang lebih tinggi.
+### Pustaka, Versi, dan Dependensi yang Diperlukan
+- **GroupDocs.Viewer untuk Java:** Versi 25.2 atau lebih baru diperlukan.  
+- **Java Development Kit (JDK):** Java 8 atau lebih tinggi diperlukan.
 
-### Persyaratan Pengaturan Lingkungan
-- IDE seperti IntelliJ IDEA, Eclipse, atau NetBeans.
-- Maven terinstal di komputer Anda untuk manajemen ketergantungan.
+### Persyaratan Penyiapan Lingkungan
+- IDE seperti IntelliJ IDEA, Eclipse, atau NetBeans.  
+- Maven terpasang di mesin Anda untuk manajemen dependensi.
 
-### Prasyarat Pengetahuan
-- Pemahaman dasar tentang pemrograman Java.
-- Kemampuan menggunakan Maven untuk mengelola dependensi.
+### Pengetahuan Dasar yang Diperlukan
+- Pemahaman dasar pemrograman Java.  
+- Familiaritas dengan penggunaan Maven untuk mengelola dependensi.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
 Untuk memulai, sertakan pustaka GroupDocs.Viewer dalam proyek Anda menggunakan Maven:
@@ -60,23 +86,23 @@ Untuk memulai, sertakan pustaka GroupDocs.Viewer dalam proyek Anda menggunakan M
 </dependencies>
 ```
 
-### Langkah-langkah Memperoleh Lisensi
-- **Uji Coba Gratis:** Unduh uji coba gratis dari situs web GroupDocs untuk menjelajahi fitur-fiturnya.
-- **Lisensi Sementara:** Dapatkan lisensi sementara untuk akses pengujian yang diperpanjang.
-- **Pembelian:** Beli lisensi komersial untuk penggunaan penuh dan tanpa batas.
+### Langkah-Langkah Akuisisi Lisensi
+- **Percobaan Gratis:** Unduh percobaan gratis dari situs GroupDocs untuk menjelajahi fitur.  
+- **Lisensi Sementara:** Dapatkan lisensi sementara untuk akses pengujian yang diperpanjang.  
+- **Pembelian:** Beli lisensi komersial untuk penggunaan penuh tanpa batas.
 
-Setelah menyiapkan proyek Maven Anda dengan dependensi yang diperlukan, lanjutkan untuk mengimplementasikan fitur tersebut.
+Setelah menyiapkan proyek Maven dengan dependensi yang diperlukan, lanjutkan ke implementasi fitur.
 
 ## Panduan Implementasi
 ### Dapatkan Informasi Tampilan Dokumen
 Ambil detail spesifik tampilan yang komprehensif seperti jumlah halaman dan opsi tampilan yang tersedia dari dokumen Anda menggunakan GroupDocs.Viewer untuk Java.
 
-#### Ringkasan
-Tujuannya adalah untuk memperoleh informasi terperinci tentang pandangan suatu dokumen.
+#### Gambaran Umum
+Tujuannya adalah **mengekstrak metadata dokumen**—khususnya informasi tampilan yang memberi tahu Anda berapa banyak halaman yang ada dan format rendering apa yang didukung.
 
-#### Implementasi Langkah demi Langkah
-**1. Inisialisasi Penampil**
-Menyiapkan `Viewer` kelas dengan jalur ke dokumen Anda:
+#### Implementasi Langkah‑demi‑Langkah
+**1. Inisialisasi Viewer**  
+Siapkan kelas `Viewer` dengan path ke dokumen Anda:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -85,71 +111,85 @@ import com.groupdocs.viewer.results.ViewInfo;
 
 public class FeatureGetViewInfo {
     public static void main(String[] args) {
-        // Tentukan jalur ke dokumen masukan Anda.
+        // Specify the path to your input document.
         String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF";
         
-        // Inisialisasi ViewInfoOptions untuk tampilan HTML.
+        // Initialize ViewInfoOptions for HTML view.
         ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 
         try (Viewer viewer = new Viewer(filePath)) {
-            // Ambil informasi tampilan tentang dokumen menggunakan opsi yang ditentukan.
+            // Retrieve view information about the document using the specified options.
             ViewInfo info = viewer.getViewInfo(viewInfoOptions);
             
-            // Objek info sekarang berisi rincian seperti jumlah halaman dan tampilan yang tersedia.
+            // The info object now contains details like page count and available views.
         }
     }
 }
 ```
 
-**2. Memahami Parameter dan Metode**
-- **`ViewInfoOptions.forHtmlView()`:** Mengonfigurasi tampilan untuk mengambil informasi spesifik HTML.
-- **`viewer.getViewInfo(viewInfoOptions)`:** Mengambil informasi tampilan terperinci berdasarkan opsi yang disediakan.
+**2. Memahami Parameter dan Metode**  
+- **`ViewInfoOptions.forHtmlView()`** – Mengonfigurasi permintaan untuk mengambil metadata khusus HTML.  
+- **`viewer.getViewInfo(viewInfoOptions)`** – Mengembalikan objek `ViewInfo` yang mencakup **jumlah halaman**, tipe tampilan yang didukung, dan metadata lain yang berguna untuk implementasi **preview dokumen java**.
 
 #### Opsi Konfigurasi Utama
-- Memodifikasi `ViewInfoOptions` untuk format yang berbeda seperti PDF atau tampilan gambar menggunakan metode yang sesuai seperti `.forPdfView()`.
+- Beralih ke metadata PDF dengan `ViewInfoOptions.forPdfView()`.  
+- Gunakan `ViewInfoOptions.forImageView()` ketika Anda memerlukan thumbnail berbasis gambar.
+
+### Cara mendapatkan info tampilan (kata kunci sekunder)
+Jika Anda perlu **cara mendapatkan info tampilan** untuk format lain, cukup ganti pemanggilan `forHtmlView()` dengan metode pabrik yang sesuai (`forPdfView()`, `forImageView()`, dll.).
 
 ### Tips Pemecahan Masalah
-- Pastikan jalur dokumen benar untuk menghindari kesalahan berkas tidak ditemukan.
-- Verifikasi dependensi Maven telah disiapkan dengan benar untuk mencegah masalah classpath.
+- Verifikasi path dokumen untuk menghindari kesalahan *file not found*.  
+- Pastikan dependensi Maven terresolusi dengan benar; jika tidak, Anda mungkin mengalami pengecualian *class not found*.
 
 ## Aplikasi Praktis
 Menerapkan fitur ini dapat bermanfaat dalam berbagai skenario:
-1. **Sistem Manajemen Dokumen:** Secara otomatis menghasilkan metadata untuk dokumen yang tersimpan.
-2. **Fitur Pratinjau:** Menawarkan pratinjau dokumen tanpa menampilkan keseluruhan konten.
-3. **Analisis dan Pelaporan:** Kumpulkan wawasan tentang struktur dokumen dan pola penggunaan.
+
+1. **Sistem Manajemen Dokumen:** Secara otomatis menghasilkan metadata untuk dokumen yang disimpan, memungkinkan alur kerja **manajemen dokumen java** yang efisien.  
+2. **Fitur Preview:** Tawarkan **preview dokumen java** ringan tanpa merender seluruh file, menghemat bandwidth dan waktu pemrosesan.  
+3. **Analitik dan Pelaporan:** Kumpulkan insight seperti **mendapatkan jumlah halaman java** untuk menggerakkan statistik penggunaan dan perencanaan penyimpanan.  
 
 ## Pertimbangan Kinerja
 Untuk memastikan kinerja optimal dengan GroupDocs.Viewer:
-- Minimalkan penggunaan memori dengan mengelola dengan benar `Viewer` contoh.
-- Mengoptimalkan penanganan sumber daya, terutama untuk dokumen besar atau tugas pemrosesan batch.
+
+- **Segera tutup instance Viewer** (gunakan try‑with‑resources) untuk membebaskan sumber daya native.  
+- **Proses batch file besar** dengan mengekstrak metadata hanya saat diperlukan, yang membantu Anda **mengelola dokumen besar** secara lebih efektif.  
 
 ## Kesimpulan
-Anda telah menguasai pengambilan informasi tampilan dari dokumen menggunakan GroupDocs.Viewer untuk Java. Fitur ini sangat berharga untuk aplikasi yang memerlukan wawasan terperinci tentang struktur dokumen dan kemampuan tampilan.
+Anda telah menguasai cara **mengekstrak metadata dokumen** dan mengambil informasi tampilan dari dokumen menggunakan GroupDocs.Viewer untuk Java. Kemampuan ini sangat berharga bagi aplikasi yang memerlukan insight dokumen terperinci, preview cepat, atau alur kerja berbasis metadata yang efisien.
 
-### Langkah Berikutnya
-Jelajahi fitur tambahan GroupDocs.Viewer, seperti opsi rendering dan pengaturan keamanan, untuk menyempurnakan aplikasi Anda lebih jauh.
+### Langkah Selanjutnya
+- Jelajahi opsi rendering tambahan (PDF, gambar, teks).  
+- Integrasikan pengaturan keamanan untuk mengontrol siapa yang dapat melihat metadata tertentu.  
+- Gabungkan ekstraksi metadata dengan layanan pengindeksan untuk kemampuan pencarian yang kuat.
 
 ## Bagian FAQ
-**Q1: Apa tujuan dari `ViewInfoOptions` di GroupDocs.Viewer untuk Java?**
-A1: Ini menentukan bagaimana Anda ingin mengambil informasi tampilan, seperti tampilan HTML atau PDF.
+**T1: Apa tujuan `ViewInfoOptions` di GroupDocs.Viewer untuk Java?**  
+J1: Ini menentukan cara Anda ingin mengambil informasi tampilan, seperti tampilan HTML atau PDF, memungkinkan Anda **mengekstrak metadata dokumen** secara efisien.
 
-**Q2: Dapatkah saya menggunakan GroupDocs.Viewer untuk Java dengan format file lain selain PDF?**
-A2: Ya, ini mendukung berbagai format dokumen termasuk Word dan Excel.
+**T2: Bisakah saya menggunakan GroupDocs.Viewer untuk Java dengan format file selain PDF?**  
+J2: Ya, ia mendukung beragam format termasuk Word, Excel, PowerPoint, dan file gambar, menjadikannya ideal untuk proyek **manajemen dokumen java**.
 
-**Q3: Bagaimana cara menangani dokumen besar di GroupDocs.Viewer?**
-A3: Kelola sumber daya secara efisien dengan menutup `Viewer` contoh segera setelah digunakan.
+**T3: Bagaimana cara menangani dokumen besar di GroupDocs.Viewer?**  
+J3: Kelola sumber daya secara efisien dengan menutup instance `Viewer` segera dan mengekstrak hanya metadata bila memungkinkan, yang membantu Anda **mengelola dokumen besar**.
 
-**Q4: Apakah ada biaya yang terkait dengan penggunaan GroupDocs.Viewer untuk Java?**
-A4: Tersedia uji coba gratis. Untuk penggunaan lebih lama, diperlukan pembelian lisensi.
+**T4: Apakah ada biaya terkait penggunaan GroupDocs.Viewer untuk Java?**  
+J4: Versi percobaan gratis tersedia. Untuk penggunaan produksi, lisensi komersial diperlukan.
 
-**Q5: Apa saja masalah umum saat mengimplementasikan fitur ini?**
-A5: Jalur berkas yang salah dan kesalahan pengaturan ketergantungan merupakan tantangan yang sering terjadi.
+**T5: Apa saja jebakan umum saat mengimplementasikan fitur ini?**  
+J5: Path file yang salah dan dependensi Maven yang hilang adalah masalah yang sering muncul. Selalu verifikasi lokasi dokumen dan pastikan artefak `groupdocs-viewer` telah ditambahkan dengan benar.
 
-## Sumber daya
-- **Dokumentasi:** [Dokumentasi Penampil GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Referensi API:** [Referensi API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Unduh:** [Rilis GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Pembelian:** [Beli Lisensi GroupDocs](https://purchase.groupdocs.com/buy)
-- **Uji Coba Gratis:** [Coba Uji Coba Gratis GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Lisensi Sementara:** [Dapatkan Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
-- **Mendukung:** [Forum Dukungan GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+## Sumber Daya
+- **Dokumentasi:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Referensi API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Unduhan:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)  
+- **Pembelian:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Percobaan Gratis:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Lisensi Sementara:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Dukungan:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Terakhir Diperbarui:** 2025-12-26  
+**Diuji Dengan:** GroupDocs.Viewer untuk Java 25.2  
+**Penulis:** GroupDocs
