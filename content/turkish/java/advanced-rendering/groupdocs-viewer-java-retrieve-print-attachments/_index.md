@@ -1,45 +1,48 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak belge eklerini nasıl etkili bir şekilde alacağınızı ve yazdıracağınızı öğrenin. Java uygulamalarınızı geliştirmek için bu adım adım kılavuzu izleyin."
-"title": "Java için Master GroupDocs.Viewer&#58; Belge Eklerini Al ve Yazdır"
-"url": "/tr/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/"
-"weight": 1
+date: '2025-12-26'
+description: GroupDocs.Viewer for Java kullanarak ekleri nasıl alacağınızı ve PDF
+  eklerini verimli bir şekilde nasıl yazdıracağınızı öğrenin. Java uygulamalarınızı
+  geliştirmek için bu adım adım rehberi izleyin.
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve document attachments
+- print document attachments
+title: GroupDocs.Viewer for Java ile Ekleri Alma ve Belge Eklerini Yazdırma
 type: docs
+url: /tr/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/
+weight: 1
 ---
-# Java için Master GroupDocs.Viewer: Belge Eklerini Alma ve Yazdırma
 
-## giriiş
+# GroupDocs.Viewer for Java ile Ekleri Alma ve Belge Eklerini Yazdırma
 
-Java uygulamalarında belge eklerini yönetmekte zorluk mu çekiyorsunuz? Karmaşık belgelerle mi uğraşıyorsunuz yoksa ekli dosyalara erişmek için etkili bir yola mı ihtiyacınız var? **Java için GroupDocs.Viewer** çözümünüzdür. Bu güçlü kütüphane, geliştiricilerin çeşitli belge formatlarından tüm ekleri zahmetsizce almasını ve yazdırmasını sağlar.
+Java uygulamalarında belge eklerini yönetmekte zorlanıyor musunuz? Karmaşık belgelerle çalışıyor ya da ekli dosyalara verimli bir şekilde erişmeniz gerekiyorsa, **GroupDocs.Viewer for Java** çözümünüzdür. Bu rehberde, **ekleri nasıl alacağınızı** gösterecek ve bunları doğrudan Java kodunuzdan yazdıracağız. Bu güçlü kütüphane, geliştiricilerin çeşitli belge formatlarından tüm ekleri zahmetsizce almasını ve yazdırmasını sağlar.
 
-Bu eğitimde, GroupDocs.Viewer Java'yı iş akışınıza entegre ederek belge eki yönetimini nasıl kolaylaştırabileceğinizi inceleyeceğiz. Bu kılavuzun sonunda şunları öğreneceksiniz:
-- Projenizde Java için GroupDocs.Viewer nasıl kurulur
-- Belge eklerini etkili bir şekilde alma ve yazdırma adımları
-- Büyük belgelerle çalışırken performansı optimize etmeye yönelik en iyi uygulamalar
+![GroupDocs.Viewer for Java ile Belge Eklerini Alma ve Yazdırma](/viewer/advanced-rendering/retrieve-and-print-document-attachments-java.png)
 
-Başlamadan önce gerekli ön koşulları ele alarak başlayalım.
+## Hızlı Yanıtlar
+- **“Ekleri nasıl alacağım” ne anlama geliyor?** Bu, bir API kullanarak gömülü dosyaları (ör. MSG, EML) çıkarmak anlamına gelir.  
+- **Java'da PDF eklerini yazdırmayı hangi kütüphane yönetir?** GroupDocs.Viewer for Java, kutudan çıkar çıkmaz `print pdf attachments java` yeteneğini sağlar.  
+- **Bir lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari bir lisans gereklidir.  
+- **Büyük toplu işlemler yapabilir miyim?** Evet – ölçeklenebilirlik için API'yi toplu veya eşzamansız işleme birleştirebilirsiniz.  
+- **Hangi Java sürümü gerekiyor?** JDK 8 ve üzeri.
 
-## Ön koşullar
+## “Ekleri nasıl alacağım” nedir?
+Ekleri almak, üst belgeye (örneğin e-posta mesajları, gömülü dosyalar içeren PDF'ler veya Office belgeleri) gömülmüş dosyalara programlı olarak erişmek anlamına gelir. Bu dosyaları önizleme, indirme veya daha ileri işleme sunmanız gerektiğinde çok önemlidir.
 
-Takip edebilmek için şunlara sahip olduğunuzdan emin olun:
+## Neden GroupDocs.Viewer for Java'yi PDF eklerini Java'da yazdırmak için kullanmalısınız?
+- **Birleştirilmiş API** – MSG, EML ve PDF dahil olmak üzere 90'dan fazla formatı işler.  
+- **Performans‑optimizeli** – Büyük dosyalarda bile düşük bellek tüketimi için tasarlanmıştır.  
+- **Çapraz‑platform** – Masaüstü, web ve bulut tabanlı Java uygulamalarında çalışır.  
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
+## Önkoşullar
 
-Kurulumunuzun şunları içerdiğinden emin olun:
-- **Java için GroupDocs.Viewer**: Sürüm 25.2 veya üzeri
-- Java Geliştirme Kiti (JDK) sürüm 8 veya üzeri
+- **GroupDocs.Viewer for Java** ≥ 25.2  
+- JDK 8 or newer  
+- Maven (veya başka bir yapı aracı) bağımlılık yönetimi için  
 
-### Çevre Kurulum Gereksinimleri
+## GroupDocs.Viewer for Java'yi Kurma
 
-IntelliJ IDEA veya Eclipse gibi Java uygulamalarını çalıştıracak şekilde geliştirme ortamınızı hazırlayın.
-
-### Bilgi Önkoşulları
-
-Temel Java programlama bilgisine ve bağımlılık yönetimi için Maven'a aşinalığa sahip olmanız önerilir.
-
-## Java için GroupDocs.Viewer Kurulumu
-
-Belge eklerini alma ve yazdırma işlevini uygulamak için projenizde GroupDocs.Viewer'ı ayarlayalım. Maven kullanıyorsanız, aşağıdaki yapılandırmayı projenize ekleyin `pom.xml`:
+Depoyu ve bağımlılığı `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <repositories>
@@ -59,105 +62,120 @@ Belge eklerini alma ve yazdırma işlevini uygulamak için projenizde GroupDocs.
 ```
 
 ### Lisans Edinimi
+GroupDocs.Viewer'ın yeteneklerini keşfetmek için ücretsiz bir deneme ile başlayın. Sürekli kullanım için, test amaçlı geçici bir lisans edinmeyi veya tam bir lisans satın almayı düşünün.
 
-GroupDocs.Viewer'ın yeteneklerini keşfetmek için ücretsiz denemeyle başlayın. Sürekli kullanım için, test için geçici bir lisans edinmeyi veya tam bir lisans satın almayı düşünün.
+## GroupDocs.Viewer Kullanarak Ekleri Alma
 
-Ortamınız hazır olduğunda ve kütüphane projenize eklendiğinde, özelliğin uygulanmasına geçebiliriz.
-
-## Uygulama Kılavuzu
-
-Bu bölüm, GroupDocs.Viewer Java'yı kullanarak belgelerden ekleri alma ve yazdırma konusunda size rehberlik edecektir. 
-
-### Ekleri Geri Alma Genel Bakışı
-
-Belge eklerini almak, MSG veya EML gibi formatlara gömülü dosyalara erişmeyi içerir. Bu işlevsellik, e-posta istemcileri veya arşiv sistemleriyle ilgilenen uygulamalar için çok önemlidir.
-
-#### Adım 1: Görüntüleyici Nesnesini Başlatın
+### Adım 1: Viewer Nesnesini Başlatma
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.util.List;
 
-// Ekleri içeren belgenizin yolunu tanımlayın
+// Define the path to your document containing attachments
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG_WITH_ATTACHMENTS";
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // Ekleri alma ve yazdırma kodu buraya gelecek
+    // Code for retrieving and printing attachments will go here
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-**Açıklama**: Bu kod parçacığı bir `Viewer` belirtilen belge yoluna sahip nesne. `try-with-resources` ifadesi, görüntüleyicinin kullanımdan sonra düzgün bir şekilde kapatılmasını sağlar.
+**Açıklama**: Bu kod parçası hedef belge için bir `Viewer` örneği oluşturur. `try‑with‑resources` bloğu, görüntüleyicinin otomatik olarak kapatılmasını sağlar ve kaynak sızıntılarını önler.
 
-#### Adım 2: Ekleri Alın
+### Adım 2: Ekleri Alma
 
 ```java
-// Belirtilen belgeden tüm ekleri al
+// Retrieve all attachments from the specified document
 List<Attachment> attachments = viewer.getAttachments();
 ```
 
-**Açıklama**: Burada şunu çağırıyoruz: `getAttachments()` eklerin bir listesini almak için yöntem. Bu liste şunları içerir `Attachment` her biri ayrı bir bağı temsil eden nesneler.
+**Açıklama**: `getAttachments()` yöntemi, kaynak belgede gömülü olan her dosyayı temsil eden bir `List<Attachment>` döndürür.
 
-#### Adım 3: Ek Ayrıntılarını Yazdır
+### Adım 3: Ek Detaylarını Yazdırma
 
 ```java
-// Her bir eki inceleyin ve ayrıntılarını yazdırın
+// Iterate through each attachment and print its details
 for (Attachment attachment : attachments) {
     System.out.println(attachment);
 }
 ```
 
-**Açıklama**: Eklerin listesini dolaşıp ayrıntılarını yazdırıyoruz. Bu, tüm eklerin doğru şekilde alındığını doğrulamak için yararlıdır.
+**Açıklama**: Koleksiyon üzerinde döngü kurarak her ekin adını, boyutunu ve türünü doğrulayabilirsiniz. Ayrıca ek akışını bir yazıcıya yönlendirebilir veya diske kaydedebilirsiniz.
 
-### Sorun Giderme İpuçları
+## PDF Eklerini Java’da Yazdırma – Pratik İpuçları
 
-- Belge yolunuzun doğru olduğundan emin olun ve bu hataları önleyin `FileNotFoundException`.
-- Belgelere ağ üzerinden erişiyorsanız ağ izinlerini doğrulayın.
-- Uygulamanın sağlamlığını artırmak için istisnaları zarif bir şekilde işleyin.
+- **Doğrudan Yazdırma** – PDF olan bir `Attachment` üzerinde `viewer.print()` kullanarak doğrudan bir yazıcıya gönderin.  
+- **Toplu Yazdırma** – Tüm PDF eklerini bir listeye toplayın ve verimliliği artırmak için toplu bir yazdırma rutinini çağırın.  
+- **Bellek Yönetimi** – Yazdırma sonrası her ekin akışını kapatarak JVM ayak izini düşük tutun.
+
+## Sorun Giderme İpuçları
+
+- **FileNotFoundException** – `documentPath` değerini iki kez kontrol edin ve dosyanın erişilebilir olduğundan emin olun.  
+- **Ağ İzinleri** – Belge paylaşılan bir sürücüde bulunuyorsa, okuma/yazma izinlerini doğrulayın.  
+- **Desteklenmeyen Format** – GroupDocs.Viewer birçok formatı destekler, ancak çok eski veya bozuk dosyalar ön işleme ihtiyaç duyabilir.
 
 ## Pratik Uygulamalar
 
-GroupDocs.Viewer Java'yı uygulamalarınıza entegre etmek çok sayıda olasılık sunar:
+1. **E-posta İstemcileri** – Gelen MSG/EML mesajlarından ekleri otomatik olarak çıkarıp görüntüleyin.  
+2. **Belge Yönetim Sistemleri** – Kullanıcılara orijinal dosyayı açmadan “ekleri görüntüle” düğmesi sunun.  
+3. **Arşiv Çözümleri** – Uzun vadeli depolama veya uyumluluk denetimleri için gömülü dosyaları çıkarın.
 
-1. **E-posta İstemcileri**Önizleme veya daha ileri işleme için e-postalardaki ekleri otomatik olarak alın.
-2. **Belge Yönetim Sistemleri**: Belgelerdeki gömülü dosyalara erişime izin vererek kullanıcı deneyimini geliştirin.
-3. **Arşiv Çözümleri**: Belge eklerini çıkarma ve arşivleme sürecini basitleştirin.
+## Performans Düşünceleri
 
-## Performans Hususları
+- **Bellek Ayarları** – Büyük toplu işlemler yaparken JVM yığın boyutunu (`-Xmx`) artırın.  
+- **Toplu İşleme** – G/Ç yükünü azaltmak için belgeleri gruplar halinde işleyin.  
+- **Eşzamansız İşlemler** – UI iş parçacıklarının yanıt vermesini sağlamak için `CompletableFuture` veya benzeri yapıları kullanın.
 
-Büyük belge kümeleriyle çalışırken şu ipuçlarını göz önünde bulundurun:
-- **Bellek Yönetimi**: Daha iyi performans için Java bellek ayarlarını optimize edin.
-- **Toplu İşleme**: Yükleme sürelerini azaltmak için belgeleri toplu olarak işleyin.
-- **Asenkron İşlemler**Uygulamanızın yanıt vermesini sağlamak için mümkün olduğunca asenkron yöntemleri kullanın.
+## Sonuç
 
-## Çözüm
+Bu rehberi izleyerek artık **ekleri nasıl alacağınızı** ve GroupDocs.Viewer for Java'nın `print pdf attachments java` yeteneğini nasıl kullanacağınızı biliyorsunuz. Bu özellikler, karmaşık belgeler veya e-posta arşivleriyle çalışan herhangi bir uygulamanın kullanıcı deneyimini büyük ölçüde iyileştirebilir.
 
-Bu kılavuzu izleyerek, GroupDocs.Viewer Java'yı projenize entegre ederek belge eklerini verimli bir şekilde almayı ve yazdırmayı öğrendiniz. Bu yetenek, karmaşık belgelerle ilgilenen uygulamaların işlevselliğini önemli ölçüde artırabilir.
-
-GroupDocs.Viewer for Java'nın sunduklarını daha fazla keşfetmek için, belgelerine dalın veya belgeleri görüntüleme veya dönüştürme gibi ek özellikler uygulamayı deneyin. Bu bilgiyi bugün pratik bir senaryoda uygulamaya başlayın!
+Daha fazlasını keşfetmek için resmi dokümantasyona göz atın veya belge dönüştürme, sayfa renderleme veya özel renderleme hatları gibi ek Viewer özellikleriyle deneyler yapın.
 
 ## SSS Bölümü
 
-1. **GroupDocs.Viewer hangi dosya formatlarını destekler?**  
-   PDF'ler, Word belgeleri, elektronik tablolar ve daha fazlası dahil olmak üzere 90'dan fazla belge biçimini destekler.
-2. **GroupDocs.Viewer ile istisnaları nasıl ele alırım?**  
-   Dosya erişim hataları veya desteklenmeyen formatlar gibi olası sorunları yönetmek için try-catch bloklarını kullanın.
+1. **GroupDocs.Viewer hangi dosya formatlarını destekliyor?**  
+   PDF'ler, Word belgeleri, elektronik tablolar ve daha fazlası dahil olmak üzere 90'dan fazla belge formatını destekler.  
+2. **GroupDocs.Viewer ile istisnaları nasıl yönetirim?**  
+   Dosya erişim hataları veya desteklenmeyen formatlar gibi olası sorunları yönetmek için try‑catch blokları kullanın.  
 3. **Bu kütüphaneyi bir web uygulamasında kullanabilir miyim?**  
-   Evet, Java kullanan hem masaüstü hem de web uygulamaları için uygundur.
-4. **GroupDocs.Viewer'ı kullanmanın performans üzerindeki etkileri nelerdir?**  
-   Verimli olmakla birlikte, bellek ayarlarını yapılandırdığınızdan ve büyük hacimli belgeler için belgeleri eşzamansız olarak işlemeyi düşündüğünüzden emin olun.
+   Evet, Java kullanan hem masaüstü hem de web uygulamaları için uygundur.  
+4. **GroupDocs.Viewer kullanmanın performans etkileri nelerdir?**  
+   Verimli olmasına rağmen, bellek ayarlarını yapılandırdığınızdan ve büyük hacimler için eşzamansız işlemeyi düşündüğünüzden emin olun.  
 5. **Eklerin nasıl görüntüleneceğini özelleştirme desteği var mı?**  
-   Evet, Java uygulamanızın işlevselliğini genişleterek daha fazla özelleştirme elde edebilirsiniz.
+   Evet, Java uygulamanız içinde işlevselliği genişleterek daha fazla özelleştirme yapabilirsiniz.
+
+## Ek Sıkça Sorulan Sorular
+
+**S: “print pdf attachments java” parola korumalı PDF'lerde çalışıyor mu?**  
+C: Evet. Ek akışını açarken parolayı sağlayabilir ve ardından normal şekilde yazdırabilirsiniz.
+
+**S: DOCX dosyasından ekleri alabilir miyim?**  
+C: Kesinlikle. GroupDocs.Viewer, Office dosyalarındaki gömülü nesneleri ek olarak değerlendirir ve `getAttachments()` ile döndürür.
+
+**S: Aldığım eklerin boyutunu nasıl sınırlayabilirim?**  
+C: `getAttachments()` çağrısından sonra, işleme başlamadan önce listeyi `attachment.getSize()` ile filtreleyin.
+
+**S: Ekleri önce kaydetmeden önizleme yapmanın bir yolu var mı?**  
+C: Evet. Ek akışını doğrudan bir görüntüleyici bileşenine veya geçici bir bellek tamponuna aktarabilirsiniz.
+
+**S: Üretim için hangi lisans modelini seçmeliyim?**  
+C: Üretim için ticari bir lisans önerilir. Test ve değerlendirme için geçici bir lisans mevcuttur.
 
 ## Kaynaklar
 
-- [GroupDocs Görüntüleyici Belgeleri](https://docs.groupdocs.com/viewer/java/)
+- [GroupDocs Viewer Dokümantasyonu](https://docs.groupdocs.com/viewer/java/)
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [Java için GroupDocs.Viewer'ı indirin](https://releases.groupdocs.com/viewer/java/)
-- [Lisans Satın Alın](https://purchase.groupdocs.com/buy)
+- [GroupDocs.Viewer for Java'ı İndir](https://releases.groupdocs.com/viewer/java/)
+- [Lisans Satın Al](https://purchase.groupdocs.com/buy)
 - [Ücretsiz Deneme İndir](https://releases.groupdocs.com/viewer/java/)
-- [Geçici Lisans Edinimi](https://purchase.groupdocs.com/temporary-license/)
+- [Geçici Lisans Edinme](https://purchase.groupdocs.com/temporary-license/)
 - [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
 
-GroupDocs.Viewer Java'yı bugün keşfetmeye başlayın ve belge işleme uygulamalarınızın tüm potansiyelini ortaya çıkarın!
+---
+
+**Son Güncelleme:** 2025-12-26  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs

@@ -1,47 +1,73 @@
 ---
-"date": "2025-04-24"
-"description": "Ayrıntılı belge görünümü bilgilerini çıkarmak için GroupDocs.Viewer for Java'yı nasıl kullanacağınızı öğrenin. Uygulamanızın belge yönetimi yeteneklerini geliştirmek için mükemmeldir."
-"title": "Master GroupDocs.Viewer for Java&#58; Belge Görünümü Bilgilerini ve İçgörülerini Al"
-"url": "/tr/java/advanced-rendering/groupdocs-viewer-java-document-views/"
-"weight": 1
+date: '2025-12-26'
+description: GroupDocs.Viewer for Java kullanarak belge meta verilerini nasıl çıkaracağınızı
+  öğrenin; belge yönetimi, büyük belgeleri önizleme ve sayfa sayısını elde etme konularında
+  Java için mükemmeldir.
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve document view information
+- Java document management
+title: 'GroupDocs.Viewer for Java ile Belge Metaverisini Çıkarın: Belge Görünüm Bilgilerini
+  ve İçgörülerini Alın'
 type: docs
+url: /tr/java/advanced-rendering/groupdocs-viewer-java-document-views/
+weight: 1
 ---
-# Java için GroupDocs.Viewer ile Belge Görünümlerinde Ustalaşma
-## Gelişmiş Render Teknikleri
-**SEO URL'si:** groupdocs-görüntüleyici-java-belge-görünümleri
 
-# Java için Master GroupDocs.Viewer: Belge Görünümü Bilgilerini ve İçgörülerini Alın
+# Extract Document Metadata with GroupDocs.Viewer for Java
+## Advanced Rendering Techniques
+**SEO URL:** groupdocs-viewer-java-document-views
 
-## giriiş
+# Master GroupDocs.Viewer for Java: Retrieve Document View Information and Insights
 
-Uygulamalarınızdaki belge görünümleri hakkında ayrıntılı bilgi çıkarmak için GroupDocs.Viewer for Java'nın güçlü özelliklerinden yararlanın. Bu eğitim, bu kütüphaneyi etkili bir şekilde kurmanız ve kullanmanız konusunda size rehberlik eder.
+## Introduction
 
-**Ne Öğreneceksiniz:**
-- Java için GroupDocs.Viewer'ı kurma.
-- Belge görünümü bilgilerinin alınması ve kullanılması.
-- Uygulamalarınıza entegrasyon için en iyi uygulamalar.
+GroupDocs.Viewer for Java'ın güçlü özelliklerini kullanarak **belge metaverisini çıkarın** ve uygulamalarınızdaki her görünüm hakkında ayrıntılı içgörüler elde edin. Bu öğretici, kütüphaneyi kurma, görünüm bilgilerini alma ve verileri gerçek dünya senaryolarına, örneğin Java belge önizlemesi, büyük belgeleri yönetme ve sağlam belge yönetimi Java çözümleri oluşturma gibi durumlara uygulama adımlarını gösterir.
 
-Başlamadan önce ön koşulları karşıladığınızdan emin olun.
+![Retrieve Document View Information and Insights with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
-## Ön koşullar
-Bu eğitimi takip edebilmek için şunlara sahip olduğunuzdan emin olun:
+**Neler Öğreneceksiniz:**
+- GroupDocs.Viewer for Java'ı kurma.
+- Belge görünüm bilgilerini alıp **belge metaverisini çıkarmak** için kullanma.
+- Uygulamalarınıza entegrasyon için en iyi uygulamalar, **get page count Java** nasıl yapılır ve hafif önizlemeler oluşturma dahil.
 
-### Gerekli Kitaplıklar, Sürümler ve Bağımlılıklar
-- **Java için GroupDocs.Viewer:** Sürüm 25.2 veya üzeri gereklidir.
-- **Java Geliştirme Kiti (JDK):** Java 8 veya üzeri gereklidir.
+Başlamadan önce, ön koşulları karşıladığınızdan emin olun.
 
-### Çevre Kurulum Gereksinimleri
+## Quick Answers
+- **“belge metaverisini çıkarmak” ne anlama geliyor?** Yapı detaylarını (sayfa sayısı, görünüm seçenekleri, format‑özel veriler) tam içeriği render etmeden alır.  
+- **Hangi yöntem görünüm bilgilerini sağlar?** `viewer.getViewInfo(viewInfoOptions)`.  
+- **Bir belgeyi tam render olmadan önizleyebilir miyim?** Evet, görünüm metaverisini kullanarak hızlı bir **document preview Java** özelliği oluşturabilirsiniz.  
+- **Büyük dosyalar için uygun mu?** Kesinlikle—metaveri çıkarma çok az bellek kullanır, **manage large documents** işlemlerini verimli bir şekilde yapmanıza yardımcı olur.  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.
+
+## “belge metaverisini çıkarmak” nedir?
+Belge metaverisini çıkarmak, dosya başlığından doğrudan sayfa sayısı, mevcut görünüm türleri ve format‑özel ayarlar gibi tanımlayıcı bilgileri çekmek anlamına gelir. Bu hafif işlem, tam render yükü olmadan hızlı önizlemeler, indeksleme veya analizler oluşturmak için idealdir.
+
+## Neden GroupDocs.Viewer for Java ile belge metaverisini çıkarmalısınız?
+- **Performans:** Metaveri alımı hızlı ve bellek‑verimli olup, **manage large documents** senaryoları için mükemmeldir.  
+- **Esneklik:** PDF, DOCX, XLSX vb. çok çeşitli formatları destekler, herhangi bir **document management java** yığınına uyum sağlar.  
+- **Ölçeklenebilirlik:** **get page count java**'yı anında almanızı sağlar; bu, sayfalama kontrolleri ve ilerleme göstergeleri için faydalıdır.  
+- **Güvenlik:** Kullanıcı açıkça talep etmedikçe sunucuda hassas içeriği render etmenize gerek yoktur.
+
+## Ön Koşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olduğunuzdan emin olun:
+
+### Required Libraries, Versions, and Dependencies
+- **GroupDocs.Viewer for Java:** Versiyon 25.2 veya üzeri gereklidir.
+- **Java Development Kit (JDK):** Java 8 veya üzeri gereklidir.
+
+### Environment Setup Requirements
 - IntelliJ IDEA, Eclipse veya NetBeans gibi bir IDE.
-- Bağımlılık yönetimi için makinenize Maven yüklendi.
+- Bağımlılık yönetimi için makinenizde Maven kurulu.
 
-### Bilgi Önkoşulları
-- Java programlamanın temel bilgisi.
+### Knowledge Prerequisites
+- Java programlamaya temel bir anlayış.
 - Bağımlılıkları yönetmek için Maven kullanımına aşinalık.
 
-## Java için GroupDocs.Viewer Kurulumu
-Başlamak için, Maven'ı kullanarak projenize GroupDocs.Viewer kütüphanesini ekleyin:
+## GroupDocs.Viewer for Java'ı Kurma
+Başlamak için, Maven kullanarak projenize GroupDocs.Viewer kütüphanesini ekleyin:
 
-**Maven Yapılandırması**
+**Maven Configuration**
 
 ```xml
 <repositories>
@@ -60,23 +86,23 @@ Başlamak için, Maven'ı kullanarak projenize GroupDocs.Viewer kütüphanesini 
 </dependencies>
 ```
 
-### Lisans Edinme Adımları
-- **Ücretsiz Deneme:** Özellikleri keşfetmek için GroupDocs web sitesinden ücretsiz deneme sürümünü indirin.
-- **Geçici Lisans:** Genişletilmiş test erişimi için geçici bir lisans edinin.
-- **Satın almak:** Tam ve sınırsız kullanım için ticari lisans satın alın.
+### License Acquisition Steps
+- **Ücretsiz Deneme:** Özellikleri keşfetmek için GroupDocs web sitesinden ücretsiz deneme indirin.  
+- **Geçici Lisans:** Uzatılmış test erişimi için geçici bir lisans alın.  
+- **Satın Alma:** Tam ve sınırsız kullanım için ticari lisans satın alın.
 
-Maven projenizi gerekli bağımlılıklarla kurduktan sonra özelliği uygulamaya geçin.
+Gerekli bağımlılıklarla Maven projenizi kurduktan sonra, özelliği uygulamaya geçin.
 
-## Uygulama Kılavuzu
-### Belge Görünümü Bilgilerini Alın
-GroupDocs.Viewer for Java'yı kullanarak belgenizden sayfa sayısı ve kullanılabilir görünüm seçenekleri gibi kapsamlı görünüme özgü ayrıntıları alın.
+## Implementation Guide
+### Get Document View Information
+GroupDocs.Viewer for Java kullanarak belgenizden sayfa sayısı ve mevcut görünüm seçenekleri gibi kapsamlı görünüm‑özel detayları alın.
 
-#### Genel bakış
-Amaç, bir belgenin görünümleri hakkında detaylı bilgi elde etmektir.
+#### Overview
+Amaç, **belge metaverisini çıkarmak**—özellikle kaç sayfa olduğunu ve hangi render formatlarının desteklendiğini gösteren görünüm bilgilerini elde etmektir.
 
-#### Adım Adım Uygulama
-**1. Görüntüleyiciyi Başlatın**
-Kurulumu yapın `Viewer` Belgenizin yolunu içeren sınıf:
+#### Step‑by‑Step Implementation
+**1. Viewer'ı Başlatın**  
+`Viewer` sınıfını belgenizin yolu ile ayarlayın:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -85,71 +111,85 @@ import com.groupdocs.viewer.results.ViewInfo;
 
 public class FeatureGetViewInfo {
     public static void main(String[] args) {
-        // Giriş belgenizin yolunu belirtin.
+        // Specify the path to your input document.
         String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF";
         
-        // HTML görünümü için ViewInfoOptions'ı başlatın.
+        // Initialize ViewInfoOptions for HTML view.
         ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 
         try (Viewer viewer = new Viewer(filePath)) {
-            // Belirtilen seçenekleri kullanarak belge hakkında görünüm bilgilerini alın.
+            // Retrieve view information about the document using the specified options.
             ViewInfo info = viewer.getViewInfo(viewInfoOptions);
             
-            // Bilgi nesnesi artık sayfa sayısı ve kullanılabilir görünümler gibi ayrıntıları içeriyor.
+            // The info object now contains details like page count and available views.
         }
     }
 }
 ```
 
-**2. Parametreleri ve Yöntemleri Anlamak**
-- **`ViewInfoOptions.forHtmlView()`:** Görünümü HTML'ye özgü bilgileri alacak şekilde yapılandırır.
-- **`viewer.getViewInfo(viewInfoOptions)`:** Sağlanan seçeneklere göre ayrıntılı görünüm bilgilerini getirir.
+**2. Understanding Parameters and Methods**  
+- **`ViewInfoOptions.forHtmlView()`** – HTML‑özel metaveriyi almak için isteği yapılandırır.  
+- **`viewer.getViewInfo(viewInfoOptions)`** – **page count**, desteklenen görünüm tipleri ve **document preview java** uygulamaları için faydalı diğer metaverileri içeren bir `ViewInfo` nesnesi döndürür.
 
-#### Anahtar Yapılandırma Seçenekleri
-- Değiştir `ViewInfoOptions` PDF veya resim görünümleri gibi farklı formatlar için karşılık gelen yöntemleri kullanarak `.forPdfView()`.
+#### Key Configuration Options
+- `ViewInfoOptions.forPdfView()` ile PDF metaverisine geçiş yapın.  
+- Görsel‑tabanlı küçük resimler gerektiğinde `ViewInfoOptions.forImageView()` kullanın.
 
-### Sorun Giderme İpuçları
-- Dosya bulunamadı hatalarını önlemek için belge yolunun doğru olduğundan emin olun.
-- Sınıf yolu sorunlarını önlemek için Maven bağımlılıklarının doğru şekilde ayarlandığını doğrulayın.
+### Görünüm Bilgilerini Nasıl Alırsınız (ikincil anahtar kelime)
+Diğer formatlar için **how to get view info**'a ihtiyacınız varsa, `forHtmlView()` çağrısını uygun fabrika yöntemi (`forPdfView()`, `forImageView()`, vb.) ile değiştirmeniz yeterlidir.
 
-## Pratik Uygulamalar
-Bu özelliğin uygulanması çeşitli senaryolarda faydalı olabilir:
-1. **Belge Yönetim Sistemleri:** Saklanan belgeler için meta verileri otomatik olarak oluşturun.
-2. **Önizleme Özellikleri:** Tüm içeriği oluşturmadan belge önizlemeleri sunun.
-3. **Analitik ve Raporlama:** Belge yapısı ve kullanım kalıpları hakkında bilgi edinin.
+### Troubleshooting Tips
+- Belge yolunu doğrulayarak *file not found* hatalarını önleyin.  
+- Maven bağımlılıklarının doğru çözüldüğünden emin olun; aksi takdirde *class not found* istisnalarıyla karşılaşabilirsiniz.
 
-## Performans Hususları
-GroupDocs.Viewer ile en iyi performansı sağlamak için:
-- Bellek kullanımını düzgün bir şekilde yöneterek en aza indirin `Viewer` Örnekler.
-- Özellikle büyük belgeler veya toplu işlem görevleri için kaynak kullanımını optimize edin.
+## Practical Applications
+Bu özelliği uygulamak çeşitli senaryolarda faydalı olabilir:
 
-## Çözüm
-GroupDocs.Viewer for Java kullanarak belgelerden görünüm bilgilerini alma konusunda ustalaştınız. Bu özellik, belge yapıları ve görünüm yetenekleri hakkında ayrıntılı içgörüler gerektiren uygulamalar için paha biçilmezdir.
+1. **Belge Yönetim Sistemleri:** Depolanan belgeler için otomatik olarak metaveri oluşturur, verimli **document management java** iş akışlarını sağlar.  
+2. **Önizleme Özellikleri:** Tüm dosyayı render etmeden hafif **document preview java** sunar, bant genişliği ve işlem süresinden tasarruf sağlar.  
+3. **Analitik ve Raporlama:** **get page count java** gibi içgörüler toplayarak kullanım istatistiklerini ve depolama planlamasını yönlendirir.
 
-### Sonraki Adımlar
-Uygulamanızı daha da geliştirmek için GroupDocs.Viewer'ın işleme seçenekleri ve güvenlik ayarları gibi ek özelliklerini keşfedin.
+## Performance Considerations
+GroupDocs.Viewer ile optimum performansı sağlamak için:
 
-## SSS Bölümü
-**S1: Amacı nedir? `ViewInfoOptions` GroupDocs.Viewer for Java'da mı?**
-A1: Görünüm bilgilerinin nasıl alınacağını belirtir, örneğin HTML veya PDF görünümleri.
+- **Viewer örneklerini hızlıca serbest bırakın** (try‑with‑resources kullanarak) yerel kaynakları serbest bırakmak için.  
+- **Büyük dosyaları toplu işleyin** yalnızca gerektiğinde metaveri çıkararak, **manage large documents** daha etkili bir şekilde yönetmenize yardımcı olur.
 
-**S2: GroupDocs.Viewer for Java'yı PDF dışındaki diğer dosya formatlarıyla da kullanabilir miyim?**
-C2: Evet, Word ve Excel dahil olmak üzere çeşitli belge formatlarını destekler.
+## Conclusion
+GroupDocs.Viewer for Java kullanarak **belge metaverisini çıkarmayı** ve belgelerden görünüm bilgilerini almayı öğrendiniz. Bu yetenek, detaylı belge içgörüleri, hızlı önizlemeler veya verimli metaveri‑odaklı iş akışları gerektiren uygulamalar için çok değerlidir.
 
-**S3: GroupDocs.Viewer'da büyük belgeleri nasıl işlerim?**
-A3: Kaynakları verimli bir şekilde yönetin ve kapatın `Viewer` kullanımdan hemen sonra örnekler.
+### Next Steps
+- Ek render seçeneklerini keşfedin (PDF, görseller, metin).  
+- Hangi metaverinin kimler tarafından görüleceğini kontrol etmek için güvenlik ayarlarını entegre edin.  
+- Güçlü arama yetenekleri için metaveri çıkarımını indeksleme hizmetleriyle birleştirin.
 
-**S4: GroupDocs.Viewer for Java'yı kullanmanın herhangi bir maliyeti var mı?**
-A4: Ücretsiz deneme mevcuttur. Uzun süreli kullanım için lisans satın alınması gerekmektedir.
+## FAQ Section
+**S1: GroupDocs.Viewer for Java'da `ViewInfoOptions`'ın amacı nedir?**  
+A1: HTML veya PDF görünümleri gibi nasıl görünüm bilgisi alacağınızı belirler ve **belge metaverisini** verimli bir şekilde çıkarmanızı sağlar.
 
-**S5: Bu özelliği uygularken karşılaşılan yaygın sorunlar nelerdir?**
-C5: Hatalı dosya yolları ve bağımlılık kurulum hataları sıklıkla karşılaşılan sorunlardır.
+**S2: GroupDocs.Viewer for Java'yı PDF dışındaki dosya formatlarıyla kullanabilir miyim?**  
+A2: Evet, Word, Excel, PowerPoint ve görüntü dosyaları dahil geniş bir format yelpazesini destekler, bu da **document management java** projeleri için idealdir.
 
-## Kaynaklar
-- **Belgeler:** [GroupDocs Görüntüleyici Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı:** [GroupDocs API Başvurusu](https://reference.groupdocs.com/viewer/java/)
-- **İndirmek:** [GroupDocs Sürümleri](https://releases.groupdocs.com/viewer/java/)
-- **Satın almak:** [GroupDocs Lisansı Satın Al](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme:** [GroupDocs Ücretsiz Denemesini Deneyin](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans:** [Geçici Lisans Alın](https://purchase.groupdocs.com/temporary-license/)
-- **Destek:** [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+**S3: GroupDocs.Viewer'da büyük belgelerle nasıl başa çıkılır?**  
+A3: `Viewer` örneklerini hızlıca kapatarak ve mümkün olduğunda yalnızca metaveri çıkararak kaynakları verimli yönetin; bu, **manage large documents** işlemlerine yardımcı olur.
+
+**S4: GroupDocs.Viewer for Java kullanmanın bir maliyeti var mı?**  
+A4: Ücretsiz bir deneme mevcuttur. Üretim kullanımı için ticari lisans gereklidir.
+
+**S5: Bu özelliği uygularken yaygın hatalar nelerdir?**  
+A5: Yanlış dosya yolları ve eksik Maven bağımlılıkları sık karşılaşılan sorunlardır. Her zaman belge konumunu doğrulayın ve `groupdocs-viewer` artefaktının doğru eklendiğinden emin olun.
+
+## Resources
+- **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
+- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Free Trial:** [Try GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2025-12-26  
+**Test Edilen Versiyon:** GroupDocs.Viewer for Java 25.2  
+**Yazar:** GroupDocs
