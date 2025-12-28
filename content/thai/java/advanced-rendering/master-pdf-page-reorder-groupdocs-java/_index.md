@@ -1,47 +1,54 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการจัดเรียงหน้า PDF ใหม่ได้อย่างราบรื่นโดยใช้ GroupDocs.Viewer สำหรับ Java คู่มือนี้ครอบคลุมถึงการตั้งค่า การใช้งาน และการเพิ่มประสิทธิภาพการทำงาน"
-"title": "การจัดเรียงหน้า PDF อย่างมีประสิทธิภาพด้วย GroupDocs.Viewer สำหรับ Java และคู่มือฉบับสมบูรณ์"
-"url": "/th/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
-"weight": 1
+date: '2025-12-28'
+description: เรียนรู้วิธีจัดเรียงหน้าของ PDF ใหม่ด้วย GroupDocs.Viewer สำหรับ Java
+  – การตั้งค่าแบบขั้นตอนต่อขั้นตอน การนำไปใช้ และเคล็ดลับประสิทธิภาพ
+keywords:
+- PDF page reordering
+- GroupDocs.Viewer Java
+- Java PDF rendering
+title: วิธีจัดเรียงหน้าของ PDF ใหม่ด้วย GroupDocs.Viewer สำหรับ Java
 type: docs
+url: /th/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/
+weight: 1
 ---
-# การเรียงลำดับหน้า PDF อย่างมีประสิทธิภาพด้วย GroupDocs.Viewer สำหรับ Java
 
-## การแนะนำ
+# วิธีจัดลำดับหน้า PDF ใหม่ด้วย GroupDocs.Viewer สำหรับ Java
 
-การจัดการลำดับหน้าเมื่อแปลงเอกสารเป็น PDF อาจเป็นเรื่องท้าทาย ไม่ว่าคุณจะกำลังจัดระเบียบสไลด์การนำเสนอใหม่หรือจัดตำแหน่งส่วนต่างๆ ในรายงาน การรักษาลำดับหน้าให้ถูกต้องถือเป็นสิ่งสำคัญ **GroupDocs.Viewer สำหรับ Java**คุณสามารถเรียงลำดับหน้าใหม่ได้อย่างง่ายดายระหว่างการเรนเดอร์ PDF เพื่อให้แน่ใจว่าเอกสารของคุณจะถูกนำเสนอตามที่ต้องการเสมอ
+การจัดลำดับหน้าใน PDF เป็นความต้องการทั่วไปเมื่อคุณกำลังเตรียมการนำเสนอ รายงาน หรือเอกสารทางกฎหมาย ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีจัดลำดับหน้า PDF** ด้วย GroupDocs.Viewer สำหรับ Java พร้อมตัวอย่างโค้ดที่ชัดเจน เคล็ดลับประสิทธิภาพ และกรณีการใช้งานจริง
 
-บทช่วยสอนที่ครอบคลุมนี้จะแนะนำคุณเกี่ยวกับการใช้ GroupDocs.Viewer เพื่อเรียงลำดับหน้าในเอกสาร PDF คุณจะได้เรียนรู้วิธีการดังต่อไปนี้:
-- ตั้งค่าและกำหนดค่า GroupDocs.Viewer สำหรับ Java
-- นำการเรียงลำดับหน้าใหม่มาใช้เมื่อแปลงเอกสารเป็น PDF
-- เพิ่มประสิทธิภาพการใช้งานสำหรับแอพพลิเคชั่นขนาดใหญ่
+![PDF Page Reordering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-page-reordering-java.png)
 
-เมื่ออ่านคู่มือนี้จบ คุณจะเข้าใจการจัดการเนื้อหา PDF ได้อย่างมั่นใจ มาเจาะลึกข้อกำหนดเบื้องต้นกันก่อน
+## คำตอบสั้น
+- **What does “how to reorder pdf” mean?** หมายถึงการเปลี่ยนลำดับของหน้าต่าง PDF ระหว่างหรือหลังการสร้าง  
+- **Which library handles this in Java?** GroupDocs.Viewer for Java มีความสามารถในการจัดลำดับหน้าในตัว  
+- **Do I need a license?** การทดลองใช้ฟรีทำงานสำหรับการประเมิน; ใบอนุญาตถาวรหรือชั่วคราวจะลบข้อจำกัดทั้งหมด  
+- **Can I change PDF page sequence without conversion?** ใช่ – Viewer API สามารถจัดการ PDF ที่มีอยู่โดยตรง  
+- **Is it possible while converting DOCX to PDF in Java?** แน่นอน; คุณสามารถควบคุมลำดับหน้าในระหว่างกระบวนการแปลง DOCX‑to‑PDF  
+
+## การจัดลำดับหน้า PDF คืออะไร?
+การจัดลำดับหน้า PDF หมายถึงการจัดเรียงหน้าของเอกสาร PDF ในลำดับใหม่ ซึ่งมีประโยชน์เมื่อรูปแบบของเอกสารต้นฉบับไม่ตรงกับการไหลที่ต้องการ เช่น การสลับสไลด์ การย้ายภาคผนวก หรือการรวมส่วนต่าง ๆ จากหลายแหล่ง
+
+## ทำไมต้องใช้ GroupDocs.Viewer สำหรับ Java?
+GroupDocs.Viewer มี API ระดับสูงที่ซ่อนการจัดการ PDF ระดับล่างไว้ ทำให้คุณสามารถ **เปลี่ยนลำดับหน้าของ PDF** ด้วยการเรียกเมธอดเดียว รองรับรูปแบบแหล่งข้อมูลหลากหลาย และสามารถขยายได้ดีสำหรับสภาพแวดล้อมเซิร์ฟเวอร์ที่มีปริมาณงานสูง
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่เราจะเริ่ม ให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+### ไลบรารีและการพึ่งพาที่จำเป็น
+- **GroupDocs.Viewer for Java** (version 25.2 or newer)  
+- **Java Development Kit (JDK)** 8 or higher  
 
-### ไลบรารีและการอ้างอิงที่จำเป็น
-- **GroupDocs.Viewer สำหรับ Java**:อย่าลืมรวมเวอร์ชัน 25.2 หรือใหม่กว่าไว้ในโปรเจ็กต์ของคุณ
-- **ชุดพัฒนา Java (JDK)**:แนะนำเวอร์ชัน 8 ขึ้นไป
+### ความต้องการการตั้งค่าสภาพแวดล้อม
+- IDE เช่น IntelliJ IDEA, Eclipse หรือ NetBeans  
+- ความคุ้นเคยกับ Maven สำหรับการจัดการการพึ่งพา  
 
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-- สภาพแวดล้อมการพัฒนาแบบบูรณาการที่ทันสมัย (IDE) เช่น IntelliJ IDEA, Eclipse หรือ NetBeans
-- ความเข้าใจพื้นฐานเกี่ยวกับแนวคิดการเขียนโปรแกรม Java และเครื่องมือสร้าง Maven
-
-### ข้อกำหนดเบื้องต้นของความรู้
-- ความคุ้นเคยกับการจัดการไฟล์ Java และการดำเนินการ I/O
-- ความเข้าใจเกี่ยวกับโครงสร้างโครงการ Maven สำหรับการจัดการการอ้างอิง
+### ความรู้เบื้องต้นที่ต้องมี
+- พื้นฐานการทำ I/O ของ Java และการจัดการไฟล์  
+- ความเข้าใจโครงสร้างโครงการ Maven  
 
 ## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 
-หากต้องการเริ่มใช้ GroupDocs.Viewer ในโปรเจ็กต์ Java ของคุณ คุณจะต้องกำหนดค่าสภาพแวดล้อมของคุณอย่างถูกต้อง วิธีเริ่มต้นมีดังนี้:
-
 ### การตั้งค่า Maven
-
-เพิ่มการกำหนดค่าต่อไปนี้ลงในของคุณ `pom.xml` ไฟล์:
+Add the repository and dependency to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -60,24 +67,19 @@ type: docs
 </dependencies>
 ```
 
-### การขอใบอนุญาต
+### การรับใบอนุญาต
+- **Free Trial** – explore all features without cost.  
+- **Temporary License** – extended evaluation without restrictions.  
+- **Purchase** – choose a subscription that fits your production needs.  
 
-วิธีใช้ GroupDocs.Viewer:
-- **ทดลองใช้งานฟรี**ดาวน์โหลดเวอร์ชันทดลองเพื่อสำรวจคุณสมบัติ
-- **ใบอนุญาตชั่วคราว**:รับไปประเมินขยายได้ไม่จำกัดจำนวน
-- **ซื้อ**:เลือกแผนการสมัครสมาชิกตามความต้องการของคุณ
-
-เมื่อคุณตั้งค่าสภาพแวดล้อมของคุณเรียบร้อยแล้ว เรามาดำเนินการนำฟีเจอร์ที่เกี่ยวข้องไปใช้กัน
+เมื่อไลบรารีอยู่ใน classpath ของคุณ คุณพร้อมที่จะเริ่มจัดลำดับหน้าแล้ว
 
 ## คู่มือการใช้งาน
 
-### การเรียงลำดับหน้าใหม่ใน PDF
+### การจัดลำดับหน้าใน PDF
 
-การเรียงลำดับหน้าใหม่ระหว่างการเรนเดอร์ PDF เป็นความสามารถอันทรงพลังของ GroupDocs.Viewer คุณสามารถนำไปใช้งานดังนี้:
-
-#### ขั้นตอนที่ 1: เริ่มต้นตัวแสดงและตัวเลือก
-
-เริ่มต้นด้วยการสร้าง `Viewer` วัตถุ โดยระบุเส้นทางเอกสาร กำหนดตัวเลือกเอาต์พุตโดยใช้ `PdfViewOptions`-
+#### ขั้นตอน 1: เริ่มต้น Viewer และ Options
+Create a `Viewer` instance and configure `PdfViewOptions` with the desired output path.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -94,81 +96,74 @@ public class ReorderPagesFeature {
         PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### ขั้นตอนที่ 2: กำหนดลำดับหน้า
-
-ใช้ `view` วิธีการระบุลำดับของหน้า ในตัวอย่างนี้ เราจะแสดงหน้า 2 ตามด้วยหน้า 1
+#### ขั้นตอน 2: กำหนดลำดับหน้าที่ใหม่
+Pass the page numbers to the `view` method in the order you want them rendered. In this example page 2 is rendered before page 1.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    // เรียงลำดับหน้าใหม่: เรนเดอร์หน้า 2 ก่อน จากนั้นจึงเรนเดอร์หน้า 1
+    // Reorder pages: render page 2 first, then page 1
     viewer.view(viewOptions, 2, 1);
 }
 ```
 
-#### คำอธิบาย
+**คำอธิบาย**
 
-- **`PdfViewOptions`**กำหนดค่าการตั้งค่าเอาท์พุตสำหรับกระบวนการเรนเดอร์ PDF
-- **`viewer.view(viewOptions, 2, 1)`**:ระบุว่าควรแสดงหน้าตามลำดับหน้า 2 ตามด้วยหน้า 1
+- **`PdfViewOptions`** – controls PDF output settings such as file path and rendering options.  
+- **`viewer.view(viewOptions, 2, 1)`** – tells the Viewer to output page 2 first, then page 1, effectively changing the PDF page sequence.  
+
+#### ขั้นตอน 3: รันและตรวจสอบ
+Execute the program, then open `output.pdf`. You’ll see the pages appear in the new order you specified.
 
 ### เคล็ดลับการแก้ไขปัญหา
-
-- ตรวจสอบให้แน่ใจว่าเส้นทางเอกสารของคุณถูกต้องและสามารถเข้าถึงได้
-- ตรวจสอบว่าคุณมีสิทธิ์ที่จำเป็นในการเขียนไฟล์เอาต์พุตไปยังไดเร็กทอรีที่ระบุหรือไม่
-- ตรวจสอบว่าเวอร์ชันไลบรารี GroupDocs.Viewer เข้ากันได้กับการตั้งค่าโครงการของคุณ
+- Verify that the source document path is correct and the file is accessible.  
+- Ensure the output directory exists and your application has write permissions.  
+- Use a compatible GroupDocs.Viewer version (25.2 or newer) to avoid API mismatches.  
 
 ## การประยุกต์ใช้งานจริง
 
-คุณสมบัติการเรียงลำดับหน้าของ GroupDocs.Viewer สามารถใช้ได้ในสถานการณ์ต่างๆ ดังนี้:
+1. **Educational Materials** – rearrange lecture slides for a smoother teaching flow.  
+2. **Business Reports** – move executive summaries to the front without recreating the whole document.  
+3. **Legal Documents** – reorder clauses to meet jurisdiction‑specific ordering rules.  
 
-1. **สื่อการเรียนรู้**:จัดระเบียบบันทึกบทเรียนหรือสไลด์ใหม่เพื่อให้มีการไหลลื่นทางตรรกะมากขึ้น
-2. **รายงานทางธุรกิจ**:ปรับแต่งส่วนต่างๆ เพื่อเน้นย้ำผลลัพธ์ที่สำคัญได้อย่างมีประสิทธิภาพ
-3. **เอกสารทางกฎหมาย**:จัดเรียงข้อความหรือบทความให้สอดคล้องกับข้อกำหนดทางกฎหมาย
+สถานการณ์เหล่านี้แสดงให้เห็นว่าทำไม **วิธีจัดลำดับหน้า pdf** จึงเป็นทักษะที่มีคุณค่าสำหรับนักพัฒนาที่สร้างโซลูชันที่เน้นเอกสาร
 
-แอปพลิเคชันเหล่านี้แสดงให้เห็นความหลากหลายและศักยภาพในการบูรณาการของ GroupDocs.Viewer กับระบบการจัดการเอกสาร
+## พิจารณาด้านประสิทธิภาพ
+- Close `Viewer` instances promptly (try‑with‑resources) to free native resources.  
+- Limit I/O by writing directly to a pre‑created output stream when processing many files.  
+- Profile memory usage for large DOCX‑to‑PDF conversions; the Viewer API is designed to handle high‑volume workloads efficiently.  
 
-## การพิจารณาประสิทธิภาพ
+## สรุป
+You now know **how to reorder PDF** pages with GroupDocs.Viewer for Java, from setting up Maven to executing a single‑line page‑reordering call. Experiment with different source formats—such as converting DOCX to PDF in Java—and adapt the page order to meet your project's needs.
 
-การเพิ่มประสิทธิภาพเป็นสิ่งสำคัญเมื่อทำงานกับเอกสารขนาดใหญ่:
-- ใช้แนวทางการจัดการหน่วยความจำที่มีประสิทธิภาพใน Java เช่น การปิดทรัพยากรอย่างเหมาะสม
-- เพิ่มประสิทธิภาพการจัดการไฟล์เพื่อลดการดำเนินการ I/O
-- สร้างโปรไฟล์แอปพลิเคชันของคุณเพื่อระบุคอขวดและปรับปรุงความเร็วในการประมวลผล
+## คำถามที่พบบ่อย
 
-หากปฏิบัติตามแนวทางปฏิบัติที่ดีที่สุด คุณสามารถมั่นใจได้ว่าการดำเนินการจะราบรื่นแม้จะมีเอกสารจำนวนมาก
+**1. How do I add a temporary license for GroupDocs.Viewer?**  
+You can obtain a temporary license from the [GroupDocs website](https://purchase.groupdocs.com/temporary-license/) to remove evaluation limitations.
 
-## บทสรุป
+**2. What file formats does GroupDocs.Viewer support for reordering pages?**  
+It supports numerous formats, including DOCX, XLSX, PPTX, and more. Check the full list in the [API reference](https://reference.groupdocs.com/viewer/java/).
 
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีการเรียงลำดับหน้าใหม่ใน PDF โดยใช้ GroupDocs.Viewer สำหรับ Java คุณได้เรียนรู้วิธีตั้งค่าไลบรารี นำการเรียงลำดับหน้ามาใช้ และนำไปใช้ในสถานการณ์จริง หากต้องการศึกษาเพิ่มเติม โปรดพิจารณาผสานรวม GroupDocs.Viewer เข้ากับไลบรารีหรือแอปพลิเคชัน Java อื่นๆ เพื่อปรับปรุงความสามารถในการประมวลผลเอกสาร
+**3. Can I reorder PDF pages without converting from other document types?**  
+Yes, GroupDocs.Viewer allows direct manipulation of existing PDFs.
 
-พร้อมที่จะนำทักษะใหม่ของคุณไปใช้จริงหรือยัง เริ่มทดลองใช้เอกสารและการกำหนดค่าต่างๆ เพื่อดูว่าคุณสามารถทำอะไรได้บ้าง!
+**4. What are common errors when setting up GroupDocs.Viewer with Maven?**  
+Ensure your `pom.xml` includes the correct repository and dependency configurations as shown earlier.
 
-## ส่วนคำถามที่พบบ่อย
+**5. How can I improve performance while reordering large PDF files?**  
+Optimize Java memory management, minimize file operations, and follow the best‑practice tips outlined in the Performance Considerations section.
 
-**1. ฉันจะเพิ่มใบอนุญาตชั่วคราวสำหรับ GroupDocs.Viewer ได้อย่างไร**
+## แหล่งข้อมูล
 
-คุณสามารถขอใบอนุญาตชั่วคราวได้จาก [เว็บไซต์ GroupDocs](https://purchase.groupdocs.com/temporary-license/) เพื่อลบข้อจำกัดในการประเมิน
+- **เอกสาร**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **อ้างอิง API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **หน้าการปล่อย**: [Releases Page](https://releases.groupdocs.com/viewer/java/)  
+- **ซื้อใบอนุญาต GroupDocs Viewer**: [Buy GroupDocs Viewer](https://purchase.groupdocs.com/buy)  
+- **ทดลองใช้ฟรี**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **ขอใบอนุญาตชั่วคราว**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **ฟอรั่มสนับสนุน**: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
 
-**2. GroupDocs.Viewer รองรับรูปแบบไฟล์ใดบ้างสำหรับการเรียงลำดับหน้าใหม่**
+---
 
-รองรับรูปแบบต่างๆ มากมาย เช่น DOCX, XLSX, PPTX และอื่นๆ ตรวจสอบรายการทั้งหมดได้ใน [เอกสารอ้างอิง API](https://reference-groupdocs.com/viewer/java/).
-
-**3. ฉันสามารถเรียงลำดับหน้า PDF ใหม่โดยไม่ต้องแปลงจากประเภทเอกสารอื่นได้หรือไม่**
-
-ใช่ GroupDocs.Viewer ช่วยให้สามารถจัดการ PDF ที่มีอยู่ได้โดยตรง
-
-**4. ข้อผิดพลาดทั่วไปเมื่อตั้งค่า GroupDocs.Viewer ด้วย Maven คืออะไร**
-
-ให้แน่ใจว่าคุณ `pom.xml` รวมถึงการกำหนดค่าที่เก็บข้อมูลและการอ้างอิงที่ถูกต้อง
-
-**5. ฉันจะปรับปรุงประสิทธิภาพการทำงานขณะเรียงลำดับไฟล์ PDF ขนาดใหญ่ใหม่ได้อย่างไร**
-
-เพิ่มประสิทธิภาพการจัดการหน่วยความจำ Java ลดการดำเนินการกับไฟล์ และใช้แนวทางการเขียนโค้ดที่มีประสิทธิภาพ
-
-## ทรัพยากร
-
-- **เอกสารประกอบ**- [เอกสารประกอบการดู GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **เอกสารอ้างอิง API**- [เอกสารอ้างอิง API ของ GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **ดาวน์โหลด GroupDocs.Viewer**- [หน้าเผยแพร่](https://releases.groupdocs.com/viewer/java/)
-- **ซื้อใบอนุญาต**- [ซื้อ GroupDocs Viewer](https://purchase.groupdocs.com/buy)
-- **ทดลองใช้งานฟรี**- [ทดลองใช้ GroupDocs ฟรี](https://releases.groupdocs.com/viewer/java/)
-- **ใบอนุญาตชั่วคราว**- [ขอใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
-- **ฟอรั่มสนับสนุน**- [การสนับสนุน GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+**อัปเดตล่าสุด:** 2025-12-28  
+**ทดสอบด้วย:** GroupDocs.Viewer 25.2  
+**ผู้เขียน:** GroupDocs
