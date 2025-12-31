@@ -1,35 +1,63 @@
 ---
-"date": "2025-04-24"
-"description": "Làm chủ kết xuất PDF theo lớp với GroupDocs.Viewer cho Java để duy trì thứ bậc trực quan và Z-Index. Tìm hiểu thiết lập, triển khai và các phương pháp hay nhất."
-"title": "Kết xuất PDF nhiều lớp hiệu quả trong Java bằng GroupDocs.Viewer"
-"url": "/vi/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/"
-"weight": 1
+date: '2025-12-31'
+description: Tìm hiểu cách sử dụng trình xem tài liệu Java để chuyển đổi PDF sang
+  HTML với việc render theo lớp bằng GroupDocs.Viewer cho Java, bảo tồn cấu trúc hiển
+  thị và Z‑Index.
+keywords:
+- PDF layered rendering Java
+- GroupDocs.Viewer setup
+- Java PDF rendering
+title: 'Trình xem tài liệu Java: Kết xuất PDF theo lớp với GroupDocs'
 type: docs
+url: /vi/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
+weight: 1
 ---
-# Kết xuất PDF nhiều lớp hiệu quả trong Java bằng GroupDocs.Viewer
+
+# Hiệu quả Rendering PDF theo lớp trong Java bằng GroupDocs.Viewer
 
 ## Giới thiệu
 
-Việc kết xuất các tệp PDF phức tạp trong khi vẫn giữ nguyên thứ bậc trực quan của chúng là một thách thức mà kết xuất theo lớp giải quyết hiệu quả bằng cách tôn trọng Chỉ số Z của nội dung trong các tài liệu nguồn. Hướng dẫn này khám phá cách tận dụng **GroupDocs.Viewer cho Java** để thực hiện kết xuất PDF theo lớp hiệu quả.
+Việc render các PDF phức tạp trong khi giữ nguyên cấu trúc hình ảnh là một thách thức mà rendering theo lớp giải quyết hiệu quả bằng cách tôn trọng Z‑Index của nội dung trong tài liệu nguồn. Bài hướng dẫn này khám phá cách tận dụng **GroupDocs.Viewer for Java** để triển khai rendering PDF theo lớp hiệu quả với một **java document viewer**.
 
-### Những gì bạn sẽ học được
+![Rendering PDF theo lớp với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/pdf-layered-rendering-java.png)
 
-- Thiết lập GroupDocs.Viewer trong dự án Java của bạn
-- Triển khai kết xuất nhiều lớp cho PDF bằng Java
-- Tối ưu hóa hiệu suất với các biện pháp thực hành tốt nhất trong GroupDocs.Viewer
-- Xử lý sự cố triển khai phổ biến
+### Bạn sẽ học gì
 
-Bạn đã sẵn sàng để tìm hiểu về kết xuất PDF nâng cao chưa? Hãy bắt đầu bằng cách thiết lập các điều kiện tiên quyết cần thiết.
+- Cài đặt GroupDocs.Viewer trong dự án Java của bạn  
+- Triển khai rendering theo lớp cho PDF bằng Java  
+- Tối ưu hiệu năng với các thực tiễn tốt nhất trong GroupDocs.Viewer  
+- Xử lý các vấn đề thường gặp trong triển khai  
 
-## Điều kiện tiên quyết
+Sẵn sàng khám phá rendering PDF nâng cao? Hãy bắt đầu bằng cách thiết lập các yêu cầu cần thiết.
 
-Trước khi bắt đầu, hãy đảm bảo bạn có:
+## Câu trả lời nhanh
+- **Một java document viewer làm gì?** Nó render các trang PDF thành HTML hoặc hình ảnh trong khi giữ nguyên bố cục, bao gồm các lớp Z‑Index.  
+- **Thư viện nào hỗ trợ rendering theo lớp?** GroupDocs.Viewer for Java cung cấp `setEnableLayeredRendering(true)`.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép trả phí cần thiết cho môi trường sản xuất.  
+- **Tôi có thể chuyển pdf sang html bằng viewer này không?** Có – viewer xuất các tệp HTML giữ thông tin lớp.  
+- **Phiên bản Java yêu cầu là gì?** JDK 8 hoặc cao hơn.
 
-### Thư viện và phụ thuộc bắt buộc
+## Java Document Viewer là gì?
+Một **java document viewer** là một thư viện đọc nhiều định dạng tài liệu (PDF, DOCX, PPTX, v.v.) và render chúng thành các dạng biểu diễn thân thiện với web như HTML, hình ảnh hoặc SVG. Nó xử lý các tính năng phức tạp như phông chữ, chú thích và nội dung theo lớp, cho phép bạn hiển thị tài liệu trực tiếp trong trình duyệt hoặc ứng dụng mà không cần plugin của bên thứ ba.
 
-Để triển khai tính năng này, hãy đưa thư viện GroupDocs.Viewer vào dự án của bạn bằng Maven:
+## Tại sao nên sử dụng Rendering theo lớp?
+Rendering theo lớp tôn trọng thứ tự xếp chồng gốc của các phần tử (Z‑Index) trong PDF. Điều này rất quan trọng khi:
 
-**Maven**
+- Các tài liệu pháp lý có chữ ký và con dấu chồng lên nhau.  
+- Bản vẽ kiến trúc sử dụng nhiều lớp cho các thành phần hệ thống khác nhau.  
+- Tài liệu e‑learning nhúng chú thích lên hình nền.  
+
+Bằng cách sử dụng một **java document viewer** hỗ trợ rendering theo lớp, bạn đảm bảo đầu ra hình ảnh khớp với ý định của người tạo.
+
+## Yêu cầu trước
+
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
+
+### Thư viện và phụ thuộc cần thiết
+
+Để triển khai tính năng này, bao gồm thư viện GroupDocs.Viewer trong dự án của bạn bằng Maven:
+
+**Maven**  
 ```xml
 <repositories>
    <repository>
@@ -49,46 +77,41 @@ Trước khi bắt đầu, hãy đảm bảo bạn có:
 
 ### Yêu cầu thiết lập môi trường
 
-Đảm bảo bạn có:
-- Đã cài đặt Java Development Kit (JDK) phiên bản 8 trở lên.
-- Môi trường phát triển tích hợp (IDE) như IntelliJ IDEA, Eclipse hoặc VSCode.
+- Bộ công cụ phát triển Java (JDK) phiên bản 8 hoặc cao hơn.  
+- Một IDE như IntelliJ IDEA, Eclipse hoặc VS Code.  
 
-### Điều kiện tiên quyết về kiến thức
+### Kiến thức yêu cầu
 
-Sự quen thuộc với lập trình Java cơ bản và thiết lập dự án Maven sẽ có lợi cho việc thực hiện hướng dẫn này một cách hiệu quả.
+Quen thuộc với lập trình Java cơ bản và thiết lập dự án Maven sẽ có lợi cho việc theo dõi bài hướng dẫn này một cách hiệu quả.
 
-## Thiết lập GroupDocs.Viewer cho Java
-
-Để bắt đầu với GroupDocs.Viewer, hãy tích hợp nó vào dự án Java của bạn. Sau đây là cách cài đặt bằng Maven:
+## Cài đặt GroupDocs.Viewer cho Java
 
 ### Các bước cài đặt
 
-1. **Thêm kho lưu trữ và phụ thuộc**: Như được hiển thị trong cấu hình Maven ở trên, hãy thêm URL kho lưu trữ GroupDocs và chỉ định sự phụ thuộc cho `groupdocs-viewer`.
-2. **Mua lại giấy phép**:
-   - Bắt đầu bằng bản dùng thử miễn phí để khám phá các tính năng.
-   - Để sử dụng lâu dài, hãy cân nhắc việc mua giấy phép hoặc xin giấy phép tạm thời.
-3. **Khởi tạo cơ bản**Sau khi cài đặt, hãy khởi tạo đối tượng trình xem của bạn như hiển thị bên dưới:
+1. **Thêm Repository và Dependency** – như trong cấu hình Maven ở trên.  
+2. **Mua giấy phép** – bắt đầu với bản dùng thử miễn phí; lấy giấy phép vĩnh viễn hoặc tạm thời cho môi trường sản xuất.  
+3. **Khởi tạo cơ bản** – tạo một instance của viewer trỏ tới tệp PDF của bạn.  
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-    // Mã kết xuất của bạn sẽ nằm ở đây.
+    // Your rendering code will go here.
 }
 ```
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
-Sau khi thiết lập GroupDocs.Viewer, chúng ta hãy tập trung vào việc triển khai kết xuất theo lớp cho tệp PDF.
+Với GroupDocs.Viewer đã được cài đặt, chúng ta sẽ tập trung vào việc triển khai rendering theo lớp cho PDF.
 
-### Kết xuất theo lớp cho tài liệu PDF
+### Rendering theo lớp cho tài liệu PDF
 
-Kết xuất theo lớp cho phép nội dung trong PDF được kết xuất dựa trên Z-Index của nó, duy trì thứ bậc trực quan theo ý định của người tạo tài liệu. Sau đây là cách bạn có thể triển khai:
+Rendering theo lớp cho phép nội dung trong PDF được render dựa trên Z‑Index, duy trì cấu trúc hình ảnh như mong muốn của người tạo tài liệu. Dưới đây là cách bạn có thể thực hiện:
 
 #### Bước 1: Cấu hình thư mục đầu ra và định dạng đường dẫn tệp
 
-Thiết lập thư mục đầu ra nơi các tệp HTML đã kết xuất sẽ được lưu trữ.
+Thiết lập thư mục đầu ra nơi các tệp HTML đã render sẽ được lưu.
 
 ```java
 import java.nio.file.Path;
@@ -97,28 +120,28 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### Bước 2: Thiết lập HtmlViewOptions với Layered Rendering
+#### Bước 2: Thiết lập HtmlViewOptions với Rendering theo lớp
 
-Cấu hình `HtmlViewOptions` để kích hoạt tài nguyên nhúng và kết xuất theo lớp.
+Cấu hình `HtmlViewOptions` để bật tài nguyên nhúng và rendering theo lớp.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Tạo HtmlViewOptions với các tài nguyên nhúng để hiển thị PDF
+// Create HtmlViewOptions with embedded resources for PDF rendering
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 
-// Bật kết xuất theo lớp để tôn trọng Z-Index của nội dung trong PDF nguồn
+// Enable layered rendering to respect the Z‑Index of content in the source PDF
 viewOptions.getPdfOptions().setEnableLayeredRendering(true);
 ```
 
-#### Bước 3: Kết xuất tài liệu
+#### Bước 3: Render tài liệu
 
-Sử dụng một `try-with-resources` câu lệnh chỉ hiển thị trang đầu tiên của tài liệu của bạn.
+Sử dụng câu lệnh `try‑with‑resources` để render chỉ trang đầu tiên của tài liệu.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
-// Chỉ hiển thị trang đầu tiên với các tùy chọn được chỉ định
+// Render only the first page with the specified options
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
     viewer.view(viewOptions, 1);
 }
@@ -126,58 +149,70 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 
 ### Mẹo khắc phục sự cố
 
-- Đảm bảo thư mục đầu ra có thể ghi được.
-- Xác thực đường dẫn tệp PDF của bạn là chính xác để tránh `FileNotFoundException`.
+- Đảm bảo thư mục đầu ra có quyền ghi.  
+- Xác nhận đường dẫn tệp PDF của bạn đúng để tránh `FileNotFoundException`.  
 
 ## Ứng dụng thực tế
 
-Việc triển khai kết xuất theo lớp trong Java có thể mang lại lợi ích cho:
+Triển khai rendering theo lớp trong Java có thể hữu ích cho:
 
-1. **Văn bản pháp lý**: Đảm bảo chú thích và chữ ký được phân lớp chính xác cho quá trình rà soát pháp lý.
-2. **Bản vẽ kiến trúc**: Duy trì tính toàn vẹn về mặt hình ảnh của các bản vẽ nhiều lớp khi chia sẻ dưới dạng kỹ thuật số.
-3. **Tài liệu giáo dục**: Bảo toàn cấu trúc của các tệp PDF giáo dục phức tạp được sử dụng trong các nền tảng học tập điện tử.
+1. **Tài liệu pháp lý** – giữ nguyên chú thích và chữ ký theo đúng thứ tự.  
+2. **Bản vẽ kiến trúc** – giữ các lớp vẽ đa dạng nguyên vẹn khi chia sẻ kỹ thuật số.  
+3. **Tài liệu giáo dục** – duy trì cấu trúc của các PDF phức tạp được sử dụng trong nền tảng e‑learning.  
 
 ### Khả năng tích hợp
 
-Kết xuất theo lớp có thể được tích hợp với các hệ thống yêu cầu bản trình bày PDF chính xác, chẳng hạn như hệ thống quản lý tài liệu và thư viện kỹ thuật số.
+Rendering theo lớp có thể kết hợp với hệ thống quản lý tài liệu, thư viện số, hoặc bất kỳ giải pháp nào yêu cầu trình bày PDF chính xác.
 
-## Cân nhắc về hiệu suất
+## Xem xét hiệu năng
 
-Để đảm bảo hiệu suất tối ưu khi sử dụng GroupDocs.Viewer:
-- Tối ưu hóa việc sử dụng tài nguyên bằng cách kích hoạt tài nguyên nhúng.
-- Quản lý bộ nhớ Java hiệu quả bằng cách đóng các phiên bản trình xem ngay sau khi sử dụng.
-- Thực hiện các biện pháp tốt nhất để quản lý bộ nhớ Java để tránh rò rỉ.
+Để đảm bảo hiệu năng tối ưu khi sử dụng GroupDocs.Viewer:
 
-## Phần kết luận
+- Bật tài nguyên nhúng để giảm các cuộc gọi HTTP bên ngoài.  
+- Đóng các instance của viewer ngay sau khi render để giải phóng tài nguyên gốc.  
+- Giám sát việc sử dụng heap Java cho các PDF lớn và cân nhắc xử lý các trang theo lô.  
 
-Hướng dẫn này đề cập đến những điều cần thiết để triển khai kết xuất PDF theo lớp hiệu quả trong Java với GroupDocs.Viewer. Bằng cách làm theo các bước này, bạn có thể nâng cao khả năng xử lý chính xác các tài liệu PDF phức tạp của ứng dụng.
+## Kết luận
 
-### Các bước tiếp theo
+Bài hướng dẫn này đã đề cập các yếu tố cần thiết để triển khai rendering PDF theo lớp hiệu quả trong Java với GroupDocs.Viewer. Bằng cách thực hiện các bước này, bạn có thể nâng cao khả năng ứng dụng của mình trong việc xử lý các tài liệu PDF phức tạp một cách chính xác.
 
-Hãy cân nhắc khám phá các tính năng bổ sung do GroupDocs.Viewer cung cấp hoặc tích hợp nó vào các dự án lớn hơn để có giải pháp quản lý tài liệu.
+### Bước tiếp theo
+
+- Khám phá các tính năng bổ sung của GroupDocs.Viewer như trích xuất văn bản hoặc chuyển đổi sang các định dạng khác.  
+- Tích hợp quy trình render vào một pipeline quản lý tài liệu lớn hơn.  
 
 Sẵn sàng triển khai những gì bạn đã học? Hãy thử giải pháp và khám phá các chức năng nâng cao hơn!
 
-## Phần Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-1. **Kết xuất theo lớp trong PDF là gì?**
-   - Kết xuất theo lớp duy trì thứ bậc trực quan của nội dung dựa trên Z-Index, rất quan trọng đối với các tài liệu phức tạp.
-2. **Làm thế nào để thiết lập GroupDocs.Viewer với Maven?**
-   - Thêm kho lưu trữ và sự phụ thuộc vào `pom.xml` tập tin như được hiển thị trong hướng dẫn này.
-3. **Liệu kết xuất theo lớp có thể xử lý chú thích hiệu quả không?**
-   - Có, nó đảm bảo rằng các chú thích được hiển thị theo đúng thứ tự mong muốn.
-4. **Phiên bản Java nào là cần thiết cho GroupDocs.Viewer?**
-   - Nên sử dụng JDK 8 trở lên để có khả năng tương thích và hiệu suất cao.
-5. **Tôi có thể nhận được hỗ trợ ở đâu nếu gặp vấn đề?**
-   - Ghé thăm [Diễn đàn hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9) để được cộng đồng hỗ trợ.
+**Q: Rendering theo lớp trong PDF là gì?**  
+A: Rendering theo lớp giữ nguyên cấu trúc hình ảnh của nội dung dựa trên Z‑Index, đảm bảo các phần tử chồng lên nhau hiển thị theo đúng thứ tự.
+
+**Q: Làm sao để cài đặt GroupDocs.Viewer với Maven?**  
+A: Thêm repository và dependency như trong đoạn mã Maven ở trên, sau đó làm mới dự án để tải thư viện.
+
+**Q: Viewer java có thể chuyển pdf sang html trong khi giữ các lớp không?**  
+A: Có – bằng cách bật `setEnableLayeredRendering(true)` viewer sẽ xuất HTML phản ánh các lớp gốc của PDF.
+
+**Q: Phiên bản Java nào cần cho GroupDocs.Viewer?**  
+A: JDK 8 hoặc cao hơn được khuyến nghị để đạt tính tương thích và hiệu năng tối đa.
+
+**Q: Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?**  
+A: Truy cập [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) để nhận trợ giúp từ cộng đồng và hỗ trợ chính thức.
 
 ## Tài nguyên
 
-- [Tài liệu](https://docs.groupdocs.com/viewer/java/)
-- [Tài liệu tham khảo API](https://reference.groupdocs.com/viewer/java/)
-- [Tải xuống GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Mua giấy phép](https://purchase.groupdocs.com/buy)
-- [Dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)
-- [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
+- [Tài liệu](https://docs.groupdocs.com/viewer/java/)  
+- [Tham khảo API](https://reference.groupdocs.com/viewer/java/)  
+- [Tải xuống GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- [Mua giấy phép](https://purchase.groupdocs.com/buy)  
+- [Bản dùng thử](https://releases.groupdocs.com/viewer/java/)  
+- [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)  
 
-Khám phá các tài nguyên này để hiểu sâu hơn và mở rộng khả năng triển khai của bạn. Chúc bạn viết mã vui vẻ!
+Khám phá các tài nguyên này để hiểu sâu hơn và mở rộng khả năng triển khai của bạn. Chúc lập trình vui vẻ!
+
+---
+
+**Cập nhật lần cuối:** 2025-12-31  
+**Kiểm tra với:** GroupDocs.Viewer 25.2 for Java  
+**Tác giả:** GroupDocs
