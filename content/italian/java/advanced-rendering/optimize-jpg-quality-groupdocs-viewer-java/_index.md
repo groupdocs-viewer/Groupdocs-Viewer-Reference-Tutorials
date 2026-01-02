@@ -1,39 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come regolare la qualità delle immagini JPG nei documenti PDF utilizzando GroupDocs.Viewer per Java. Bilancia facilmente dimensioni del file e fedeltà visiva."
-"title": "Ottimizza la qualità JPG nei PDF utilizzando GroupDocs.Viewer per Java"
-"url": "/it/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-02'
+description: Scopri come ridurre le dimensioni dei PDF in Java regolando la qualità
+  JPG con GroupDocs.Viewer, un modo semplice per comprimere le immagini PDF e bilanciare
+  la dimensione del file con la fedeltà visiva.
+keywords:
+- reduce pdf size java
+- convert pptx to pdf
+- compress pdf images
+title: Riduci le dimensioni del PDF Java – Ottimizza la qualità JPG con GroupDocs
 type: docs
+url: /it/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/
+weight: 1
 ---
-# Ottimizza la qualità JPG nei PDF utilizzando GroupDocs.Viewer per Java
 
-## Introduzione
+# Ridurre le dimensioni PDF Java – Ottimizzare la qualità JPG con GroupDocs Viewer
 
-Desideri ottimizzare la qualità delle immagini JPG nei tuoi documenti PDF? Con GroupDocs.Viewer per Java, regolare la qualità delle immagini diventa un'operazione semplice e intuitiva, consentendo di trovare il giusto equilibrio tra dimensioni del file e fedeltà visiva. Questo tutorial illustra come sfruttare al meglio questa funzionalità.
+Bilanciare la dimensione del file e la fedeltà visiva è una sfida comune quando si lavora con i PDF. In questo tutorial scoprirai come **ridurre le dimensioni PDF Java** regolando la qualità delle immagini JPG all'interno dei documenti PDF usando GroupDocs.Viewer per Java. Ti guideremo attraverso la configurazione, l'implementazione del codice e consigli pratici, così potrai comprimere le immagini PDF con sicurezza senza sacrificare la leggibilità.
 
-**Cosa imparerai:**
-- Come regolare la qualità delle immagini JPG nei PDF utilizzando GroupDocs.Viewer per Java
-- Impostazione dell'ambiente con Maven e configurazione delle dipendenze
-- Esempi pratici che mostrano applicazioni nel mondo reale
+![Ottimizzare la qualità JPG nei PDF con GroupDocs.Viewer per Java](/viewer/advanced-rendering/optimize-jpg-quality-in-pdfs.png)
 
-Analizziamo ora i prerequisiti necessari prima di iniziare a migliorare la qualità delle immagini nei tuoi documenti.
+## Risposte rapide
+- **Cosa significa “reduce PDF size Java”?** Regolare la qualità delle immagini, la compressione e la gestione delle risorse per creare file PDF più piccoli nelle applicazioni Java.  
+- **Quale impostazione controlla la qualità JPG?** `PdfViewOptions.setJpgQuality(byte quality)` dove il valore varia da 0 (minimo) a 100 (massimo).  
+- **Posso anche convertire PPTX in PDF nello stesso flusso?** Sì—basta puntare il `Viewer` a una sorgente `.pptx` e le stesse opzioni si applicano.  
+- **Qual è il livello di qualità tipico per la pubblicazione web?** Un valore intorno a **50‑70** offre un buon equilibrio per la maggior parte degli scenari web.  
+- **È necessaria una licenza per questa funzionalità?** Una versione di prova gratuita è sufficiente per la valutazione; è richiesta una licenza permanente per l'uso in produzione.
+
+## Cos'è “reduce PDF size Java”?
+Ridurre le dimensioni di un PDF in Java comporta l'ottimizzazione delle risorse all'interno del PDF—soprattutto le immagini—così il file finale occupa meno spazio e si carica più velocemente. Abbassando la qualità JPG, **comprimerai le immagini PDF**, che spesso costituiscono la parte più ingombrante di un documento.
+
+## Perché regolare la qualità JPG con GroupDocs Viewer?
+- **Riduzione significativa delle dimensioni**: Abbassare la qualità dell'immagine può ridurre i PDF del 30‑70 % a seconda della risoluzione originale.  
+- **Conversione a passaggio unico**: Non è necessario un passaggio separato di elaborazione delle immagini; GroupDocs lo gestisce durante la generazione del PDF.  
+- **Flessibilità**: Puoi affinare il valore di qualità `byte` in base ai requisiti del progetto (ad esempio, stampa ad alta qualità vs. anteprima web leggera).  
 
 ## Prerequisiti
+- **GroupDocs.Viewer per Java** versione 25.2 o successiva.  
+- Progetto Java basato su Maven con JDK 8 o superiore.  
+- Familiarità di base con Java e la gestione dei PDF.  
 
-Prima di iniziare, assicurati di avere quanto segue:
-- **Librerie richieste:** Sarà necessario GroupDocs.Viewer per Java versione 25.2 o successiva.
-- **Configurazione dell'ambiente:** Un ambiente di sviluppo Java funzionante con Maven installato.
-- **Prerequisiti di conoscenza:** Conoscenza di base della programmazione Java e familiarità con la gestione dei file PDF.
-
-Adesso configuriamo GroupDocs.Viewer per Java nel tuo progetto!
-
-## Impostazione di GroupDocs.Viewer per Java
-
-Per integrare GroupDocs.Viewer nella tua applicazione Java, utilizzerai Maven. Questa configurazione garantisce che tutte le dipendenze siano gestite in modo efficiente.
-
-**Configurazione Maven:**
-Aggiungi quanto segue al tuo `pom.xml` file:
+## Configurare GroupDocs.Viewer per Java
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -53,22 +60,12 @@ Aggiungi quanto segue al tuo `pom.xml` file:
 </dependencies>
 ```
 
-**Acquisizione della licenza:**
-- **Prova gratuita:** Inizia con una prova gratuita per esplorare le funzionalità.
-- **Licenza temporanea:** Ottieni una licenza temporanea per test più lunghi.
-- **Acquistare:** Prendi in considerazione l'acquisto se hai bisogno di accedere a tutte le funzionalità.
-
-Una volta configurato l'ambiente, passiamo all'implementazione della funzionalità che consente di regolare la qualità delle immagini JPG nei PDF.
+> **Suggerimento professionale:** Mantieni la versione aggiornata per beneficiare di miglioramenti delle prestazioni e di nuove opzioni di compressione.
 
 ## Guida all'implementazione
 
-### Funzionalità: regola la qualità delle immagini JPG in PDF
-
-Questa funzionalità si concentra sulla modifica della risoluzione e della qualità delle immagini JPG durante la conversione di documenti, come presentazioni, in formato PDF utilizzando GroupDocs.Viewer.
-
-#### Passaggio 1: definire il percorso della directory di output
-
-Per prima cosa, individua la directory di output in cui verrà salvato il PDF convertito:
+### Passo 1: Risolvere il percorso della cartella di output
+Crea una classe di supporto che costruisce la cartella di output dove verrà salvato il PDF.
 
 ```java
 import java.nio.file.Path;
@@ -87,9 +84,8 @@ public class FeatureResolveOutputDirectoryPath {
 }
 ```
 
-#### Passaggio 2: configurare PdfViewOptions
-
-Crea un'istanza di `PdfViewOptions` e specificare la qualità desiderata per le immagini JPG:
+### Passo 2: Configurare `PdfViewOptions` con la qualità JPG desiderata
+Imposta il livello di qualità JPG (0‑100) prima di renderizzare il documento.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -102,7 +98,7 @@ public class FeatureAdjustQualityOfJpgImages {
 
         PdfViewOptions viewOptions = new PdfViewOptions(filePath);
         
-        // Imposta la qualità JPG desiderata (scala 0-100)
+        // Set desired JPG quality (0-100 scale)
         byte quality = 10;
         viewOptions.setJpgQuality(quality);
 
@@ -113,63 +109,79 @@ public class FeatureAdjustQualityOfJpgImages {
 }
 ```
 
-**Spiegazione:**
-- `setJpgQuality(byte quality)`: Regola la qualità delle immagini JPG nel PDF di output. Valori più bassi riducono le dimensioni del file, ma riducono anche la nitidezza dell'immagine.
+**Spiegazione:**  
+- `setJpgQuality(byte quality)` indica a GroupDocs quanta compressione applicare alle immagini JPG. Valori più bassi producono file più piccoli ma possono ridurre la nitidezza visiva.  
+- L'esempio utilizza `source.pptx` per dimostrare **convert pptx to pdf** comprimendo simultaneamente le immagini.
 
-### Suggerimenti per la risoluzione dei problemi
+### Passo 3: Eseguire il codice e verificare il risultato
+Esegui `FeatureAdjustQualityOfJpgImages.run()`. Il `output.pdf` generato conterrà le immagini JPG al livello di qualità specificato, **comprimendo le immagini PDF** e riducendo la dimensione complessiva del file.
 
-- Assicurati che il percorso del documento di input sia corretto.
-- Verificare che la directory di output esista o gestire le eccezioni in caso contrario.
-- Controllare eventuali conflitti di versione con le dipendenze.
+## Problemi comuni e risoluzione
+- **Percorso file errato:** Verifica che il documento sorgente (`source.pptx`) esista rispetto alla directory di lavoro.  
+- **Permessi insufficienti:** La cartella di output deve essere scrivibile; altrimenti verrà generata una `RuntimeException`.  
+- **PDF più grandi del previsto:** Controlla che il valore `quality` sia sufficientemente basso per gli obiettivi di dimensione.  
 
 ## Applicazioni pratiche
-
-1. **Archiviazione dei documenti:** La regolazione della qualità dell'immagine aiuta a ridurre lo spazio di archiviazione mantenendo la leggibilità.
-2. **Pubblicazione Web:** Ottimizza le immagini per ottenere tempi di caricamento più rapidi senza compromettere la qualità visiva.
-3. **Allegati e-mail:** Comprimi i PDF per rispettare i limiti di dimensione delle email riducendo la qualità JPG.
-
-Le possibilità di integrazione includono sistemi di conversione automatizzata dei documenti e soluzioni di gestione dei documenti basate sul cloud.
+1. **Archiviazione documenti:** PDF più piccoli riducono i costi di storage e migliorano i tempi di recupero.  
+2. **Pubblicazione web:** Caricamenti più rapidi quando i PDF sono incorporati o collegati sui siti web.  
+3. **Allegati email:** Rispettare i limiti di dimensione abbassando la qualità delle immagini prima dell'invio.  
 
 ## Considerazioni sulle prestazioni
-
-- **Suggerimenti per l'ottimizzazione:** Regola la qualità dell'immagine in base all'uso previsto, ad esempio alta qualità per la stampa ma inferiore per il Web.
-- **Utilizzo delle risorse:** Prestare attenzione all'utilizzo della memoria durante l'elaborazione di documenti di grandi dimensioni; se necessario, valutare l'elaborazione in batch.
-- **Buone pratiche:** Aggiornare regolarmente GroupDocs.Viewer per sfruttare i miglioramenti delle prestazioni e le nuove funzionalità.
+- **Elaborazione batch:** Per grandi volumi di documenti, elabora in thread paralleli monitorando l'uso della memoria.  
+- **Impostazioni di qualità ottimali:** Usa qualità più alta (80‑100) per PDF pronti alla stampa; per anteprime web, 30‑50 è spesso sufficiente.  
 
 ## Conclusione
-
-Hai imparato come regolare la qualità delle immagini JPG nei PDF utilizzando GroupDocs.Viewer per Java, dalla configurazione dell'ambiente all'implementazione della funzionalità. Approfondisci l'argomento integrando questa funzionalità nei tuoi progetti o sperimentando diverse impostazioni di qualità.
+Ora sai come **ridurre le dimensioni PDF Java** regolando la qualità delle immagini JPG con GroupDocs.Viewer. Sperimenta diversi livelli di qualità, integra il codice nei tuoi flussi di lavoro esistenti e goditi PDF più leggeri e veloci.
 
 ### Prossimi passi
-
-- Sperimenta diversi livelli di qualità per trovare l'equilibrio perfetto per le tue esigenze.
-- Esplora le funzionalità aggiuntive di GroupDocs.Viewer per migliorare le capacità di elaborazione dei documenti.
-
-**Invito all'azione:** Prova a implementare questa soluzione nel tuo prossimo progetto e scopri la differenza!
+- Prova varie impostazioni di qualità per trovare il punto ottimale per il tuo caso d'uso.  
+- Esplora altre funzionalità GroupDocs come l'aggiunta di filigrane o la protezione con password.  
 
 ## Sezione FAQ
 
-1. **In che modo la regolazione della qualità JPG influisce sulle dimensioni del file?**
-   - Abbassando la qualità si riducono le dimensioni del file, rendendo più semplice la condivisione o l'archiviazione dei documenti.
+1. **Come influisce la regolazione della qualità JPG sulla dimensione del file?**  
+   Abbassare la qualità riduce la dimensione del file, facilitando la condivisione o l'archiviazione dei documenti.
 
-2. **Posso regolare la qualità dell'immagine per formati diversi da JPG?**
-   - Questa funzionalità è specificatamente rivolta alle immagini JPG nei PDF; tuttavia, GroupDocs.Viewer offre diverse opzioni per formati diversi.
+2. **Posso regolare la qualità dell'immagine per formati diversi da JPG?**  
+   Questa funzionalità è specifica per le immagini JPG nei PDF; tuttavia, GroupDocs.Viewer offre altre opzioni per formati diversi.
 
-3. **Qual è l'impostazione di qualità JPG ideale per l'uso sul Web?**
-   - Un equilibrio tra 50 e 70 spesso garantisce una buona chiarezza con dimensioni di file ridotte, adatte alle applicazioni web.
+3. **Qual è l'impostazione ideale di qualità JPG per l'uso web?**  
+   Un equilibrio intorno a 50‑70 fornisce buona chiarezza con una dimensione ridotta, adatta alle applicazioni web.
 
-4. **È possibile automatizzare questo processo in un flusso di lavoro batch?**
-   - Sì, è possibile integrare questa funzionalità nei sistemi automatizzati per gestire in modo efficiente più documenti.
+4. **È possibile automatizzare questo processo in un flusso batch?**  
+   Sì, puoi integrare questa funzionalità in sistemi automatizzati per gestire più documenti in modo efficiente.
 
-5. **Cosa devo fare se il PDF di output non viene generato come previsto?**
-   - Controlla il percorso del documento di input e assicurati che tutte le dipendenze siano configurate correttamente.
+5. **Cosa fare se il PDF di output non viene generato come previsto?**  
+   Controlla il percorso del documento di input e assicurati che tutte le dipendenze siano configurate correttamente.
 
-## Risorse
+## Domande frequenti
 
-- [Documentazione](https://docs.groupdocs.com/viewer/java/)
-- [Riferimento API](https://reference.groupdocs.com/viewer/java/)
-- [Scarica GroupDocs.Viewer per Java](https://releases.groupdocs.com/viewer/java/)
-- [Acquista una licenza](https://purchase.groupdocs.com/buy)
-- [Versione di prova gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Informazioni sulla licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
+**D:** *Posso usare questo approccio per convertire altri formati come DOCX in PDF riducendo le dimensioni?*  
+**R:** Assolutamente. La stessa impostazione `PdfViewOptions.setJpgQuality` funziona per qualsiasi formato sorgente che genera immagini JPG nel PDF.
+
+**D:** *La riduzione della qualità JPG influisce sul rendering del testo?*  
+**R:** No. Il testo è basato su vettori e rimane nitido; solo le immagini raster sono interessate.
+
+**D:** *È possibile impostare livelli di qualità diversi per pagine diverse?*  
+**R:** GroupDocs applica attualmente un'impostazione di qualità uniforme per conversione. Per un controllo per pagina, sarebbe necessario post‑processare il PDF con una libreria dedicata alla gestione delle immagini.
+
+**D:** *È necessaria una licenza per le distribuzioni in produzione?*  
+**R:** Sì, è richiesta una licenza valida di GroupDocs.Viewer per l'uso in produzione. È disponibile una versione di prova gratuita per la valutazione.
+
+**D:** *Come posso verificare la reale riduzione della qualità?*  
+**R:** Confronta le dimensioni dei file prima e dopo la conversione e apri il PDF per ispezionare visivamente la nitidezza delle immagini.
+
+---
+
+**Ultimo aggiornamento:** 2026-01-02  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs  
+
+**Risorse**  
+- [Documentazione](https://docs.groupdocs.com/viewer/java/)  
+- [Riferimento API](https://reference.groupdocs.com/viewer/java/)  
+- [Download GroupDocs.Viewer per Java](https://releases.groupdocs.com/viewer/java/)  
+- [Acquista una licenza](https://purchase.groupdocs.com/buy)  
+- [Versione di prova gratuita](https://releases.groupdocs.com/viewer/java/)  
+- [Informazioni sulla licenza temporanea](https://purchase.groupdocs.com/temporary-license/)  
 - [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
