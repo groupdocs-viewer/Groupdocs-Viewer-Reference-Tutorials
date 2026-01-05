@@ -1,45 +1,59 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何在使用 GroupDocs.Viewer for Java 将电子邮件呈现为 HTML 时通过重命名“发件人”、“收件人”和“主题”等字段来自定义电子邮件元数据。"
-"title": "使用 GroupDocs.Viewer Java 将电子邮件转换为 HTML 时如何重命名电子邮件字段"
-"url": "/zh/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: 了解如何使用 GroupDocs.Viewer for Java 重命名电子邮件字段、将电子邮件转换为 HTML，并自定义电子邮件头部。
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: 使用 GroupDocs.Viewer Java 将电子邮件渲染为 HTML 时如何重命名电子邮件字段
 type: docs
+url: /zh/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
-# 使用 GroupDocs.Viewer Java 将电子邮件呈现为 HTML 时如何重命名电子邮件字段
 
-## 介绍
+# 如何在使用 GroupDocs.Viewer Java 将电子邮件渲染为 HTML 时重命名电子邮件字段
 
-您是否希望在将电子邮件转换为 HTML 时自定义电子邮件元数据？本指南将指导您使用 GroupDocs.Viewer for Java 重命名电子邮件字段。借助这款强大的工具，开发人员可以无缝呈现文档，并定制电子邮件标题在 HTML 输出中的显示方式，从而提高可读性和可用性。
+您是否想了解在将电子邮件转换为 HTML 时**如何重命名电子邮件**字段？在本指南中，我们将逐步演示如何重命名电子邮件字段、**将电子邮件转换为 HTML**以及使用 GroupDocs.Viewer for Java **自定义电子邮件标题**。完成后，您将获得带有首选标题名称的干净 HTML 表示，使输出更易于阅读并集成到您的应用程序中。
 
-### 您将学到什么：
-- 如何使用 GroupDocs.Viewer for Java 将电子邮件转换为 HTML 格式。
-- 重命名电子邮件字段（例如“发件人”、“收件人”、“已发送”和“主题”）的技术。
-- 使用 Maven 设置环境的最佳实践。
-- 自定义电子邮件元数据在现实场景中的实际应用。
+![Rename Email Fields When Converting Emails to HTML with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-在深入实施之前，让我们确保您已做好一切准备。
+### 您将学习的内容
+- 如何使用 GroupDocs.Viewer for Java **将电子邮件转换为 HTML**。  
+- 如何 **重命名电子邮件字段**，例如 “From”、 “To”、 “Sent” 和 “Subject”。  
+- 设置 Maven 和许可证的最佳实践。  
+- 在 **自定义电子邮件标题** 能增值的真实场景。
 
-## 先决条件
+## 快速答案
+- **“如何重命名电子邮件”是什么意思？** 它指在渲染过程中将默认的电子邮件标题名称映射为自定义标签。  
+- **哪个库负责转换？** GroupDocs.Viewer for Java（v25.2+）。  
+- **我需要许可证吗？** 试用版可用于评估；生产环境需要完整许可证。  
+- **我可以更改任何标题名称吗？** 可以，任何标准电子邮件标题都可以通过 `fieldTextMap` 重新映射。  
+- **输出是 HTML 还是嵌入资源？** 您可以选择嵌入资源，以获得单个自包含文件。
 
-### 所需的库、版本和依赖项
-要遵循本教程，您需要：
-- **GroupDocs.Viewer for Java**：确保您拥有 25.2 或更高版本。
-- **Java 开发工具包 (JDK)**：建议使用 8 或更高版本。
+## 在 GroupDocs.Viewer 上下文中，“如何重命名电子邮件” 是什么？
+重命名电子邮件字段是指在将电子邮件渲染为 HTML 时，将默认标签（例如 “From”）替换为自定义文本（例如 “Sender”）。这有助于使输出与企业术语保持一致或提升终端用户的可读性。
 
-### 环境设置要求
-使用以下工具设置您的开发环境：
-- **Maven** 用于依赖管理和项目构建自动化。
-- 文本编辑器或 IDE，如 IntelliJ IDEA、Eclipse 或 Visual Studio Code。
+## 为什么将电子邮件转换为 HTML 并自定义电子邮件标题？
+- **一致的品牌形象：** 在所有通信中匹配组织的语言。  
+- **提升可搜索性：** 自定义标题可以在归档系统中更有效地建立索引。  
+- **更好的 UI 集成：** 定制 HTML 片段，使其无缝嵌入网页门户或支持仪表板。
+
+## 前置条件
+
+### 必需的库、版本和依赖项
+- **GroupDocs.Viewer for Java** – 版本 25.2 或更高。  
+- **Java Development Kit (JDK)** – 版本 8+。
+
+### 环境搭建要求
+- **Maven** 用于依赖管理。  
+- IDE，例如 IntelliJ IDEA、Eclipse 或 VS Code。
 
 ### 知识前提
-具备 Java 编程基础知识并熟悉 Maven 将会很有帮助。如果您是这些领域的新手，在继续学习之前，先了解一些入门资源可能会有所帮助。
+具备基本的 Java 和 Maven 知识将帮助您快速跟进。
 
-## 为 Java 设置 GroupDocs.Viewer
+## 设置 GroupDocs.Viewer for Java
 
-首先，使用 Maven 将 GroupDocs.Viewer 集成到您的 Java 项目中。请按照以下步骤操作：
-
-**Maven配置**
+### Maven 配置
 ```xml
 <repositories>
    <repository>
@@ -57,51 +71,44 @@ type: docs
 </dependencies>
 ```
 
-### 许可证获取步骤
-- **免费试用**：从下载免费试用版 [GroupDocs 发布](https://releases。groupdocs.com/viewer/java/).
-- **临时执照**：获取临时许可证，以无限制地探索全部功能 [GroupDocs 临时许可证](https://purchase。groupdocs.com/temporary-license/).
-- **购买**：如需继续使用，请考虑通过以下方式购买许可证 [GroupDocs 购买](https://purchase。groupdocs.com/buy).
+### 获取许可证的步骤
+- **免费试用：** 从 [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) 下载免费试用版。  
+- **临时许可证：** 在 [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) 获取临时许可证，以无限制地探索全部功能。  
+- **购买：** 如需持续使用，请通过 [GroupDocs Purchase](https://purchase.groupdocs.com/buy) 购买许可证。
 
 ### 基本初始化和设置
-要在 Java 项目中初始化 GroupDocs.Viewer：
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // 在此执行操作
+            // Perform operations here
         }
     }
 }
 ```
-此代码片段演示了使用 GroupDocs.Viewer 的基本设置。请调整文件路径以指向您的文档。
+将文件路径调整为指向您的 `.msg` 文件。
 
-## 实施指南
+## 实现指南
 
-### 重命名电子邮件字段
-在本节中，您将学习如何在将电子邮件消息呈现为 HTML 格式时自定义电子邮件字段名称。
+### 重命名电子邮件字段 – 步骤详解
 
-#### 概述
-主要目标是将默认电子邮件字段（如“发件人”、“收件人”和“主题”）映射到自定义名称（如“发件人”、“收件人”和“主题”）。
-
-#### 逐步实施
-
-##### 1.设置输出目录路径
+#### 1. 设置输出目录路径
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**解释**： 代替 `"YOUR_OUTPUT_DIRECTORY"` 使用您想要保存 HTML 文件的路径。
+*将 `"YOUR_OUTPUT_DIRECTORY"` 替换为您希望保存 HTML 文件的文件夹。*
 
-##### 2.定义页面文件路径格式
+#### 2. 定义页面文件路径格式
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**解释**：此格式决定了每个渲染页面的文件名的结构， `{0}` 被页码取代。
+*渲染时，`{0}` 将被页面编号替换。*
 
-##### 3. 创建电子邮件字段到新名称的映射
+#### 3. 创建电子邮件字段到新名称的映射
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +120,83 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**解释**：通过将现有字段映射到您喜欢的名称来定制电子邮件元数据。
+*此处将默认标签更改为自定义标签。*
 
-##### 4.配置 HTML 视图选项
+#### 4. 配置 HTML 视图选项
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**解释**： 这 `forEmbeddedResources` 方法确保所有必要的资源都嵌入在 HTML 文件中，同时 `setFieldTextMap` 应用您的自定义字段映射。
+*`forEmbeddedResources` 将 CSS/JS 打包到 HTML 中，而 `setFieldTextMap` 应用自定义标题名称。*
 
-##### 5. 将电子邮件渲染为 HTML
+#### 5. 将电子邮件渲染为 HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**解释**： 调整 `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` 以及 MSG 文件的路径。此步骤使用指定的选项来渲染电子邮件。
+*将 `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` 替换为实际的 MSG 文件路径。*
 
 #### 故障排除提示
-- 确保输出目录是可写的。
-- 验证输入 MSG 文件是否存在且可访问。
-- 如果您使用的是不同版本的 GroupDocs.Viewer，请检查兼容性问题。
+- 确认输出目录可写。  
+- 确保输入的 MSG 文件存在且路径正确。  
+- 使用与 Maven 中声明的相同 GroupDocs.Viewer 版本（25.2）。
 
 ## 实际应用
-此功能在以下情况下特别有用：
-1. **自定义电子邮件报告**：定制电子邮件标题以符合公司术语可提高可读性。
-2. **电子邮件归档系统**：自定义元数据可提高搜索和检索效率。
-3. **客户支持平台**：个性化的电子邮件标题有助于更好地与客户沟通。
+1. **自定义电子邮件报告：** 将电子邮件标题与企业术语对齐，以获得更清晰的报告。  
+2. **电子邮件归档系统：** 使用标准化的标题名称提升可搜索性。  
+3. **客户支持平台：** 使用个性化的标题标签呈现工单，以提升客服体验。
 
-## 性能考虑
-为了优化使用 GroupDocs.Viewer for Java 时的性能：
-- 使用高效的内存管理技术，例如使用 try-with-resources 进行适当的对象处理。
-- 分析您的应用程序以识别与文档渲染相关的瓶颈并进行适当的处理。
+## 性能考虑因素
+- 使用 try‑with‑resources 释放 `Viewer` 对象，以及时释放内存。  
+- 对大批量进行性能分析，并在需要时考虑使用并行流处理电子邮件。
 
 ## 结论
-通过本指南，您学习了如何使用 GroupDocs.Viewer for Java 在将电子邮件转换为 HTML 的过程中有效地重命名电子邮件字段。此自定义功能增强了各种应用程序中呈现文档的功能和可用性。
+您现在已经了解如何在使用 GroupDocs.Viewer for Java **将电子邮件转换为 HTML** 的同时 **重命名电子邮件** 字段以及 **自定义电子邮件标题**。此技术让您能够全面控制 HTML 输出中电子邮件元数据的呈现方式。
 
 ### 后续步骤
-- 尝试不同的字段映射。
-- 探索 GroupDocs.Viewer 的附加功能以增强您的文档处理能力。
-- 访问 [GroupDocs 文档](https://docs.groupdocs.com/viewer/java/) 以获得更先进的技术和示例。
+- 尝试其他字段映射（例如 CC、BCC）。  
+- 探索其他渲染格式，如 PDF 或 PNG。  
+- 访问 [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) 获取更深入的 API 见解。
 
-## 常见问题解答部分
-1. **我可以使用此方法重命名所有电子邮件标题吗？**
-   - 是的，您可以根据您的要求将任何标准电子邮件标题映射到新名称。
-2. **是否可以在没有许可证的情况下使用 GroupDocs.Viewer？**
-   - 试用版可用于测试目的，但完整功能版本需要有效的许可证。
-3. **如何使用 GroupDocs.Viewer 高效处理大量电子邮件？**
-   - 考虑批处理和优化系统资源以有效地管理更大的数据集。
-4. **我可以将此解决方案集成到现有的 Java 应用程序中吗？**
-   - 当然，在任何基于 Java 的项目中，使用 Maven 依赖项集成 GroupDocs.Viewer 都很简单。
-5. **如果遇到问题，我可以在哪里找到支持？**
-   - 访问 [GroupDocs 论坛](https://forum.groupdocs.com/c/viewer/9) 获得社区和官方支持。
+## 常见问题解答
+1. **我可以使用此方法重命名所有电子邮件标题吗？**  
+   - 可以，您可以根据需求将任何标准电子邮件标题映射为新名称。  
+2. **可以在没有许可证的情况下使用 GroupDocs.Viewer 吗？**  
+   - 提供试用版用于测试，但完整功能版需要有效许可证。  
+3. **如何使用 GroupDocs.Viewer 高效处理大量电子邮件？**  
+   - 考虑批处理并优化系统资源，以有效管理更大的数据集。  
+4. **我可以将此解决方案集成到现有的 Java 应用程序中吗？**  
+   - 当然，使用 Maven 依赖即可轻松集成。  
+5. **如果遇到问题，我可以在哪里获得支持？**  
+   - 访问 [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) 获取社区和官方帮助。
+
+## 常见问答
+
+**问：此方法是否适用于其他电子邮件格式，如 EML？**  
+答：是的，GroupDocs.Viewer 支持 MSG 和 EML 文件；相同的字段映射逻辑适用。
+
+**问：我可以输出不带嵌入资源的 HTML 吗？**  
+答：如果您更喜欢分离的 CSS/JS 文件，可以使用 `HtmlViewOptions.forExternalResources(...)`。
+
+**问：测试使用的 GroupDocs.Viewer 版本是什么？**  
+答：代码在 GroupDocs.Viewer **25.2** 上进行测试。
+
+**问：是否可以更改自定义标题的字体或样式？**  
+答：可以在渲染后通过 CSS 应用样式，或使用 `HtmlViewOptions.getResourcesPath()` 注入自定义 CSS。
+
+**问：如何以编程方式获取生成的 HTML 文件路径？**  
+答：文件路径遵循 `pageFilePathFormat` 中定义的模式；您可以使用 `String.format` 并传入页面编号来构建路径。
 
 ## 资源
-- **文档**：综合指南可访问 [GroupDocs 文档](https://docs。groupdocs.com/viewer/java/).
-- **API 参考**：详细的 API 信息可以在 [GroupDocs API 参考](https://reference。groupdocs.com/viewer/java/).
-- **下载 GroupDocs.Viewer**：通过 [下载页面](https://releases.groupdocs.com/viewer/java/)
+- **文档：** 完整指南可在 [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) 查看。  
+- **API 参考：** 详细的 API 信息可在 [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) 找到。  
+- **下载 GroupDocs.Viewer：** 通过 [Downloads Page](https://releases.groupdocs.com/viewer/java/) 获取最新版本。
+
+---
+
+**最后更新：** 2026-01-05  
+**测试版本：** GroupDocs.Viewer 25.2  
+**作者：** GroupDocs

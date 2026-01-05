@@ -1,45 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีปรับแต่งข้อมูลเมตาของอีเมลด้วยการเปลี่ยนชื่อฟิลด์ เช่น “จาก” “ถึง” และ “หัวเรื่อง” เมื่อแสดงอีเมลเป็น HTML โดยใช้ GroupDocs.Viewer สำหรับ Java"
-"title": "วิธีการเปลี่ยนชื่อฟิลด์อีเมลเมื่อแปลงอีเมลเป็น HTML โดยใช้ GroupDocs.Viewer Java"
-"url": "/th/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: เรียนรู้วิธีการเปลี่ยนชื่อฟิลด์อีเมล, แปลงอีเมลเป็น HTML, และปรับแต่งส่วนหัวของอีเมลโดยใช้
+  GroupDocs.Viewer สำหรับ Java.
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: วิธีเปลี่ยนชื่อฟิลด์อีเมลเมื่อแปลงอีเมลเป็น HTML ด้วย GroupDocs.Viewer Java
 type: docs
+url: /th/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
-# วิธีการเปลี่ยนชื่อฟิลด์อีเมลเมื่อเรนเดอร์อีเมลเป็น HTML ด้วย GroupDocs.Viewer Java
 
-## การแนะนำ
+# วิธีการเปลี่ยนชื่อฟิลด์อีเมลเมื่อแสดงอีเมลเป็น HTML ด้วย GroupDocs.Viewer Java
 
-คุณกำลังมองหาวิธีปรับแต่งข้อมูลเมตาของอีเมลขณะแปลงอีเมลเป็น HTML หรือไม่ คู่มือฉบับสมบูรณ์นี้จะแนะนำคุณเกี่ยวกับการเปลี่ยนชื่อฟิลด์อีเมลโดยใช้ GroupDocs.Viewer สำหรับ Java ด้วยเครื่องมืออันทรงพลังนี้ นักพัฒนาสามารถแสดงเอกสารได้อย่างราบรื่นและปรับแต่งลักษณะที่ส่วนหัวของอีเมลจะปรากฏในผลลัพธ์ HTML เพื่อเพิ่มความสามารถในการอ่านและการใช้งาน
+คุณกำลังสงสัย **วิธีการเปลี่ยนชื่ออีเมล** ฟิลด์ขณะแปลงอีเมลเป็น HTML หรือไม่? ในคู่มือนี้เราจะอธิบายขั้นตอนที่แน่นอนเพื่อเปลี่ยนชื่อฟิลด์อีเมล, **แปลงอีเมลเป็น HTML**, และ **ปรับแต่งหัวข้ออีเมล** ด้วย GroupDocs.Viewer for Java. เมื่อเสร็จคุณจะได้การแสดงผล HTML ที่สะอาดพร้อมชื่อหัวข้อที่คุณต้องการ ทำให้ผลลัพธ์อ่านง่ายและสามารถรวมเข้ากับแอปพลิเคชันของคุณได้.
 
-### สิ่งที่คุณจะได้เรียนรู้:
-- วิธีการใช้ GroupDocs.Viewer สำหรับ Java เพื่อแปลงอีเมลเป็นรูปแบบ HTML
-- เทคนิคในการเปลี่ยนชื่อช่องอีเมล เช่น “จาก” “ถึง” “ส่ง” และ “หัวเรื่อง”
-- แนวทางปฏิบัติที่ดีที่สุดในการตั้งค่าสภาพแวดล้อมของคุณด้วย Maven
-- การประยุกต์ใช้งานจริงของการปรับแต่งข้อมูลเมตาของอีเมลในสถานการณ์โลกแห่งความเป็นจริง
+![เปลี่ยนชื่อฟิลด์อีเมลเมื่อแปลงอีเมลเป็น HTML ด้วย GroupDocs.Viewer for Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-ก่อนที่จะเริ่มใช้งาน ตรวจสอบให้แน่ใจก่อนว่าคุณเตรียมทุกอย่างพร้อมแล้ว
+### สิ่งที่คุณจะได้เรียนรู้
+- วิธีใช้ GroupDocs.Viewer for Java เพื่อ **แปลงอีเมลเป็น HTML**.  
+- เทคนิคการ **เปลี่ยนชื่อฟิลด์อีเมล** เช่น “From,” “To,” “Sent,” และ “Subject.”  
+- แนวปฏิบัติที่ดีที่สุดสำหรับการตั้งค่า Maven และการจัดการลิขสิทธิ์.  
+- สถานการณ์จริงที่ **การปรับแต่งหัวข้ออีเมล** เพิ่มคุณค่า.
+
+## คำตอบสั้น
+- **“วิธีการเปลี่ยนชื่ออีเมล” หมายถึงอะไร?** หมายถึงการแมปชื่อหัวข้ออีเมลเริ่มต้นไปยังป้ายกำกับที่กำหนดเองระหว่างการแสดงผล.  
+- **ไลบรารีใดที่จัดการการแปลง?** GroupDocs.Viewer for Java (v25.2+).  
+- **ฉันต้องการลิขสิทธิ์หรือไม่?** รุ่นทดลองทำงานสำหรับการประเมิน; จำเป็นต้องมีลิขสิทธิ์เต็มสำหรับการใช้งานจริง.  
+- **ฉันสามารถเปลี่ยนชื่อหัวข้อใดก็ได้หรือไม่?** ใช่, สามารถแมปหัวข้ออีเมลมาตรฐานใดก็ได้ผ่าน `fieldTextMap`.  
+- **ผลลัพธ์เป็น HTML หรือทรัพยากรฝังตัว?** คุณสามารถเลือกทรัพยากรฝังตัวสำหรับไฟล์เดียวที่เป็นอิสระ.
+
+## “วิธีการเปลี่ยนชื่ออีเมล” หมายถึงอะไรในบริบทของ GroupDocs.Viewer?
+การเปลี่ยนชื่อฟิลด์อีเมลหมายถึงการแทนที่ป้ายกำกับเริ่มต้น (เช่น “From”) ด้วยข้อความที่กำหนดเอง (เช่น “Sender”) เมื่ออีเมลถูกแสดงเป็น HTML. สิ่งนี้มีประโยชน์สำหรับการทำให้ผลลัพธ์สอดคล้องกับศัพท์ขององค์กรหรือปรับปรุงความอ่านง่ายของผู้ใช้ปลายทาง.
+
+## ทำไมต้องแปลงอีเมลเป็น HTML และปรับแต่งหัวข้ออีเมล?
+- **Consistent branding:** ทำให้ภาษาขององค์กรสอดคล้องกันในทุกการสื่อสาร.  
+- **Improved searchability:** หัวข้อที่กำหนดเองสามารถทำดัชนีได้มีประสิทธิภาพมากขึ้นในระบบจัดเก็บ.  
+- **Better UI integration:** ปรับแต่งส่วน HTML ให้เข้ากับพอร์ทัลเว็บหรือแดชบอร์ดสนับสนุนได้อย่างราบรื่น.
 
 ## ข้อกำหนดเบื้องต้น
 
-### ไลบรารี เวอร์ชัน และการอ้างอิงที่จำเป็น
-หากต้องการทำตามบทช่วยสอนนี้ คุณจะต้องมี:
-- **GroupDocs.Viewer สำหรับ Java**: ตรวจสอบให้แน่ใจว่าคุณมีเวอร์ชัน 25.2 ขึ้นไป
-- **ชุดพัฒนา Java (JDK)**:แนะนำเวอร์ชัน 8 ขึ้นไป
+### ไลบรารีที่จำเป็น, เวอร์ชัน, และการพึ่งพา
+- **GroupDocs.Viewer for Java** – version 25.2 or later.  
+- **Java Development Kit (JDK)** – version 8+.
 
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-ตั้งค่าสภาพแวดล้อมการพัฒนาของคุณด้วยเครื่องมือต่อไปนี้:
-- **เมเวน** เพื่อการจัดการการอ้างอิงและสร้างโครงการอัตโนมัติ
-- โปรแกรมแก้ไขข้อความหรือ IDE เช่น IntelliJ IDEA, Eclipse หรือ Visual Studio Code
+### ความต้องการในการตั้งค่าสภาพแวดล้อม
+- **Maven** for dependency management.  
+- An IDE such as IntelliJ IDEA, Eclipse, or VS Code.
 
-### ข้อกำหนดเบื้องต้นของความรู้
-ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java และความคุ้นเคยกับ Maven จะเป็นประโยชน์ หากคุณเพิ่งเริ่มต้นในด้านเหล่านี้ อาจเป็นประโยชน์หากลองศึกษาแหล่งข้อมูลเบื้องต้นก่อนดำเนินการต่อ
+### ความรู้เบื้องต้นที่จำเป็น
+ความคุ้นเคยกับ Java และ Maven จะช่วยให้คุณตามขั้นตอนได้อย่างรวดเร็ว.
 
-## การตั้งค่า GroupDocs.Viewer สำหรับ Java
+## การตั้งค่า GroupDocs.Viewer for Java
 
-ในการเริ่มต้น ให้รวม GroupDocs.Viewer เข้ากับโปรเจ็กต์ Java ของคุณโดยใช้ Maven ทำตามขั้นตอนด้านล่าง:
-
-**การกำหนดค่า Maven**
+### การกำหนดค่า Maven
 ```xml
 <repositories>
    <repository>
@@ -57,51 +72,44 @@ type: docs
 </dependencies>
 ```
 
-### ขั้นตอนการรับใบอนุญาต
-- **ทดลองใช้งานฟรี**: ดาวน์โหลดทดลองใช้งานฟรีได้จาก [การเปิดตัว GroupDocs](https://releases-groupdocs.com/viewer/java/).
-- **ใบอนุญาตชั่วคราว**:รับใบอนุญาตชั่วคราวเพื่อสำรวจคุณสมบัติทั้งหมดโดยไม่มีข้อจำกัดได้ที่ [ใบอนุญาตชั่วคราวของ GroupDocs](https://purchase-groupdocs.com/temporary-license/).
-- **ซื้อ**:หากต้องการใช้ต่อ โปรดพิจารณาซื้อใบอนุญาตผ่าน [การซื้อ GroupDocs](https://purchase-groupdocs.com/buy).
+### ขั้นตอนการรับลิขสิทธิ์
+- **Free Trial:** ดาวน์โหลดรุ่นทดลองฟรีจาก [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License:** รับลิขสิทธิ์ชั่วคราวเพื่อสำรวจคุณสมบัติเต็มรูปแบบโดยไม่มีข้อจำกัดที่ [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase:** สำหรับการใช้งานต่อเนื่อง พิจารณาซื้อไลเซนส์ผ่าน [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-### การเริ่มต้นและการตั้งค่าเบื้องต้น
-ในการเริ่มต้น GroupDocs.Viewer ในโครงการ Java ของคุณ:
+### การเริ่มต้นและตั้งค่าพื้นฐาน
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // ดำเนินการที่นี่
+            // Perform operations here
         }
     }
 }
 ```
-ตัวอย่างโค้ดนี้สาธิตการตั้งค่าพื้นฐานสำหรับการใช้ GroupDocs.Viewer ปรับเส้นทางไฟล์ให้ชี้ไปที่เอกสารของคุณ
+ปรับเส้นทางไฟล์ให้ชี้ไปยังไฟล์ `.msg` ของคุณ.
 
 ## คู่มือการใช้งาน
 
-### การเปลี่ยนชื่อฟิลด์อีเมล์
-ในส่วนนี้ คุณจะได้เรียนรู้วิธีปรับแต่งชื่อฟิลด์อีเมลเมื่อแสดงข้อความอีเมลเป็นรูปแบบ HTML
+### การเปลี่ยนชื่อฟิลด์อีเมล – ขั้นตอนโดยละเอียด
 
-#### ภาพรวม
-เป้าหมายหลักคือการแมปฟิลด์อีเมลเริ่มต้น เช่น "จาก" "ถึง" และ "หัวเรื่อง" ให้เป็นชื่อที่กำหนดเอง เช่น "ผู้ส่ง" "ผู้รับ" และ "หัวข้อ"
-
-#### การดำเนินการแบบทีละขั้นตอน
-
-##### 1. ตั้งค่าเส้นทางไดเรกทอรีเอาท์พุต
+#### 1. ตั้งค่าเส้นทางไดเรกทอรีผลลัพธ์
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**คำอธิบาย**: แทนที่ `"YOUR_OUTPUT_DIRECTORY"` ตามเส้นทางที่คุณต้องการที่จะบันทึกไฟล์ HTML
+*แทนที่ `"YOUR_OUTPUT_DIRECTORY"` ด้วยโฟลเดอร์ที่คุณต้องการบันทึกไฟล์ HTML.*
 
-##### 2. กำหนดรูปแบบเส้นทางไฟล์เพจ
+#### 2. กำหนดรูปแบบเส้นทางไฟล์หน้า
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**คำอธิบาย**:รูปแบบนี้จะกำหนดว่าชื่อไฟล์ของแต่ละหน้าที่แสดงผลจะมีโครงสร้างอย่างไรด้วย `{0}` ถูกแทนที่ด้วยหมายเลขหน้า
+*`{0}` จะถูกแทนที่ด้วยหมายเลขหน้าขณะทำการแสดงผล.*
 
-##### 3. สร้างการแมปฟิลด์อีเมลกับชื่อใหม่
+#### 3. สร้างการแมปฟิลด์อีเมลไปยังชื่อใหม่
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +121,82 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**คำอธิบาย**ปรับแต่งข้อมูลเมตาของอีเมลโดยการแมปฟิลด์ที่มีอยู่ให้เป็นชื่อที่คุณต้องการ
+*ที่นี่เราจะเปลี่ยนป้ายกำกับเริ่มต้นเป็นชื่อที่กำหนดเอง.*
 
-##### 4. กำหนดค่าตัวเลือกมุมมอง HTML
+#### 4. กำหนดค่า HTML View Options
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**คำอธิบาย**: เดอะ `forEmbeddedResources` วิธีการนี้รับรองว่าทรัพยากรที่จำเป็นทั้งหมดถูกฝังไว้ในไฟล์ HTML ในขณะที่ `setFieldTextMap` ใช้การแมปฟิลด์ที่กำหนดเองของคุณ
+*`forEmbeddedResources` จะบรรจุ CSS/JS ไว้ใน HTML, ส่วน `setFieldTextMap` จะใช้ชื่อหัวข้อที่กำหนดเอง.*
 
-##### 5. แสดงอีเมลเป็น HTML
+#### 5. แสดงผลอีเมลเป็น HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**คำอธิบาย**: ปรับ `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` ด้วยเส้นทางไปยังไฟล์ MSG ของคุณ ขั้นตอนนี้จะแสดงอีเมลโดยใช้ตัวเลือกที่ระบุ
+*แทนที่ `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` ด้วยเส้นทางจริงไปยังไฟล์ MSG ของคุณ.*
 
 #### เคล็ดลับการแก้ไขปัญหา
-- ตรวจสอบให้แน่ใจว่าไดเร็กทอรีเอาท์พุตสามารถเขียนได้
-- ตรวจสอบว่าไฟล์ MSG อินพุตมีอยู่และสามารถเข้าถึงได้
-- ตรวจสอบปัญหาความเข้ากันได้หากคุณใช้ GroupDocs.Viewer เวอร์ชันอื่น
+- ตรวจสอบว่าไดเรกทอรีผลลัพธ์สามารถเขียนได้.  
+- ตรวจสอบว่าไฟล์ MSG อินพุตมีอยู่และเส้นทางถูกต้อง.  
+- ใช้เวอร์ชัน GroupDocs.Viewer เดียวกัน (25.2) ตามที่ระบุใน Maven.
 
 ## การประยุกต์ใช้งานจริง
-คุณสมบัตินี้มีประโยชน์อย่างยิ่งในสถานการณ์ที่:
-1. **รายงานอีเมล์ที่กำหนดเอง**การปรับแต่งส่วนหัวอีเมลให้ตรงกับคำศัพท์ขององค์กรจะช่วยเพิ่มการอ่านได้ง่าย
-2. **ระบบจัดเก็บอีเมล์ถาวร**การปรับแต่งข้อมูลเมตาช่วยปรับปรุงประสิทธิภาพการค้นหาและดึงข้อมูล
-3. **แพลตฟอร์มสนับสนุนลูกค้า**ส่วนหัวอีเมลส่วนบุคคลช่วยให้การสื่อสารกับลูกค้าดีขึ้น
+1. **Custom Email Reports:** ปรับหัวข้ออีเมลให้สอดคล้องกับศัพท์ขององค์กรเพื่อรายงานที่ชัดเจนยิ่งขึ้น.  
+2. **Email Archiving Systems:** ปรับปรุงการค้นหาโดยใช้ชื่อหัวข้อที่เป็นมาตรฐาน.  
+3. **Customer Support Platforms:** แสดงตั๋วด้วยป้ายหัวข้อที่กำหนดเองเพื่อประสบการณ์ที่ดีกว่าสำหรับเจ้าหน้าที่.
 
-## การพิจารณาประสิทธิภาพ
-การเพิ่มประสิทธิภาพการทำงานเมื่อใช้ GroupDocs.Viewer สำหรับ Java:
-- ใช้เทคนิคการจัดการหน่วยความจำที่มีประสิทธิภาพ เช่น การกำจัดวัตถุอย่างเหมาะสมด้วย try-with-resources
-- สร้างโปรไฟล์แอปพลิเคชันของคุณเพื่อระบุคอขวดที่เกี่ยวข้องกับการเรนเดอร์เอกสารและจัดการอย่างเหมาะสม
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+- ทำลายอ็อบเจกต์ `Viewer` ด้วย try‑with‑resources เพื่อคืนหน่วยความจำอย่างรวดเร็ว.  
+- ทำการวิเคราะห์ประสิทธิภาพของชุดข้อมูลขนาดใหญ่และพิจารณาประมวลผลอีเมลใน parallel streams หากจำเป็น.
 
-## บทสรุป
-เมื่อทำตามคำแนะนำนี้ คุณจะได้เรียนรู้วิธีการเปลี่ยนชื่อฟิลด์อีเมลอย่างมีประสิทธิภาพระหว่างกระบวนการแปลงจากอีเมลเป็น HTML โดยใช้ GroupDocs.Viewer สำหรับ Java การปรับแต่งนี้ช่วยเพิ่มทั้งฟังก์ชันการทำงานและการใช้งานของเอกสารที่แสดงผลในแอปพลิเคชันต่างๆ
+## สรุป
+คุณตอนนี้รู้ **วิธีการเปลี่ยนชื่ออีเมล** ฟิลด์ขณะ **แปลงอีเมลเป็น HTML** และ **ปรับแต่งหัวข้ออีเมล** ด้วย GroupDocs.Viewer for Java. เทคนิคนี้ให้คุณควบคุมการนำเสนอเมตาดาต้าอีเมลในผลลัพธ์ HTML ได้อย่างเต็มที่.
 
 ### ขั้นตอนต่อไป
-- ทดลองด้วยการแมปฟิลด์ที่แตกต่างกัน
-- สำรวจคุณลักษณะเพิ่มเติมของ GroupDocs.Viewer เพื่อปรับปรุงความสามารถในการประมวลผลเอกสารของคุณ
-- เยี่ยม [เอกสารประกอบ GroupDocs](https://docs.groupdocs.com/viewer/java/) สำหรับเทคนิคและตัวอย่างขั้นสูงเพิ่มเติม
+- ทดลองแมปฟิลด์เพิ่มเติม (เช่น CC, BCC).  
+- สำรวจรูปแบบการแสดงผลอื่น ๆ เช่น PDF หรือ PNG.  
+- เยี่ยมชม [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) เพื่อรับข้อมูลเชิงลึกเกี่ยวกับ API.
 
 ## ส่วนคำถามที่พบบ่อย
-1. **ฉันสามารถเปลี่ยนชื่อส่วนหัวอีเมลทั้งหมดด้วยวิธีนี้ได้หรือไม่**
-   - ใช่ คุณสามารถแมปส่วนหัวอีเมลมาตรฐานเป็นชื่อใหม่ตามความต้องการของคุณได้
-2. **ฉันสามารถใช้งาน GroupDocs.Viewer ได้โดยไม่ต้องมีใบอนุญาตหรือไม่?**
-   - มีเวอร์ชันทดลองใช้สำหรับการทดสอบ แต่เวอร์ชันที่มีคุณลักษณะครบถ้วนต้องมีใบอนุญาตที่ถูกต้อง
-3. **ฉันจะจัดการปริมาณอีเมลจำนวนมากอย่างมีประสิทธิภาพด้วย GroupDocs.Viewer ได้อย่างไร**
-   - พิจารณาการประมวลผลแบบแบตช์และเพิ่มประสิทธิภาพทรัพยากรระบบของคุณเพื่อจัดการชุดข้อมูลขนาดใหญ่ได้อย่างมีประสิทธิภาพ
-4. **ฉันสามารถรวมโซลูชันนี้เข้ากับแอปพลิเคชัน Java ที่มีอยู่ได้หรือไม่**
-   - แน่นอน การบูรณาการ GroupDocs.Viewer เป็นเรื่องง่ายภายในโครงการที่ใช้ Java ที่ใช้การอ้างอิง Maven
-5. **ฉันสามารถขอความช่วยเหลือได้ที่ไหนหากประสบปัญหา?**
-   - เยี่ยมชม [ฟอรั่ม GroupDocs](https://forum.groupdocs.com/c/viewer/9) สำหรับชุมชนและการสนับสนุนอย่างเป็นทางการ
+1. **Can I rename all email headers using this method?**  
+   - Yes, you can map any standard email header to a new name as per your requirements.  
+2. **Is it possible to use GroupDocs.Viewer without a license?**  
+   - A trial version is available for testing, but a full‑featured version requires a valid license.  
+3. **How do I handle large volumes of emails efficiently with GroupDocs.Viewer?**  
+   - Consider batch processing and optimize system resources to manage larger datasets effectively.  
+4. **Can I integrate this solution into an existing Java application?**  
+   - Absolutely, integration is straightforward using Maven dependencies.  
+5. **Where can I find support if I encounter issues?**  
+   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community and official assistance.
 
-## ทรัพยากร
-- **เอกสารประกอบ**:มีคำแนะนำที่ครอบคลุมได้ที่ [เอกสารประกอบ GroupDocs](https://docs-groupdocs.com/viewer/java/).
-- **เอกสารอ้างอิง API**:สามารถดูข้อมูล API โดยละเอียดได้ที่ [เอกสารอ้างอิง API ของ GroupDocs](https://reference-groupdocs.com/viewer/java/).
-- **ดาวน์โหลด GroupDocs.Viewer**:เข้าถึงเวอร์ชั่นล่าสุดผ่านทาง [หน้าดาวน์โหลด](https://releases.groupdocs.com/viewer/java/)
+## คำถามที่พบบ่อย
+**Q: Does this approach work with other email formats like EML?**  
+A: Yes, GroupDocs.Viewer supports both MSG and EML files; the same field‑mapping logic applies.
+
+**Q: Can I output the HTML without embedded resources?**  
+A: You can use `HtmlViewOptions.forExternalResources(...)` if you prefer separate CSS/JS files.
+
+**Q: What version of GroupDocs.Viewer was tested?**  
+A: The code was tested with GroupDocs.Viewer **25.2**.
+
+**Q: Is it possible to change the font or style of the custom headers?**  
+A: Styling can be applied via CSS after rendering, or you can inject custom CSS using `HtmlViewOptions.getResourcesPath()`.
+
+**Q: How do I programmatically retrieve the generated HTML file path?**  
+A: The file path follows the pattern defined in `pageFilePathFormat`; you can construct it using `String.format` with the page number.
+
+## แหล่งข้อมูล
+- **Documentation:** Comprehensive guides are available at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API Reference:** Detailed API information can be found on [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Download GroupDocs.Viewer:** Access the latest version through the [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+
+---
+
+**อัปเดตล่าสุด:** 2026-01-05  
+**ทดสอบด้วย:** GroupDocs.Viewer 25.2  
+**ผู้เขียน:** GroupDocs

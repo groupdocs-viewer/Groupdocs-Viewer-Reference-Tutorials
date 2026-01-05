@@ -1,45 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Découvrez comment personnaliser les métadonnées des e-mails en renommant des champs tels que « De », « À » et « Objet » lors du rendu des e-mails au format HTML à l'aide de GroupDocs.Viewer pour Java."
-"title": "Comment renommer les champs d'e-mail lors de la conversion d'e-mails au format HTML à l'aide de GroupDocs.Viewer Java"
-"url": "/fr/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: Apprenez à renommer les champs d'e‑mail, à convertir les e‑mails en HTML
+  et à personnaliser les en‑têtes d'e‑mail à l'aide de GroupDocs.Viewer pour Java.
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: Comment renommer les champs d’e‑mail lors du rendu des e‑mails en HTML avec
+  GroupDocs.Viewer Java
 type: docs
+url: /fr/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
-# Comment renommer les champs de courrier électronique lors du rendu des courriers électroniques au format HTML avec GroupDocs.Viewer Java
 
-## Introduction
+# Comment renommer les champs d'e-mail lors du rendu des e-mails en HTML avec GroupDocs.Viewer Java
 
-Vous souhaitez personnaliser les métadonnées de vos e-mails lors de leur conversion au format HTML ? Ce guide complet vous explique comment renommer les champs d'e-mail avec GroupDocs.Viewer pour Java. Grâce à cet outil performant, les développeurs peuvent afficher les documents de manière fluide et personnaliser l'affichage des en-têtes d'e-mail dans la sortie HTML, améliorant ainsi la lisibilité et la convivialité.
+Vous vous demandez **comment renommer les champs d'e-mail** lors de la conversion d'un e-mail en HTML ? Dans ce guide, nous parcourrons les étapes exactes pour renommer les champs d'e-mail, **convertir l'e-mail en HTML**, et **personnaliser les en-têtes d'e-mail** en utilisant GroupDocs.Viewer pour Java. À la fin, vous disposerez d'une représentation HTML propre avec les noms d'en-tête que vous préférez, rendant la sortie plus facile à lire et à intégrer dans vos applications.
 
-### Ce que vous apprendrez :
-- Comment utiliser GroupDocs.Viewer pour Java pour convertir des e-mails au format HTML.
-- Techniques pour renommer les champs de courrier électronique tels que « De », « À », « Envoyé » et « Objet ».
-- Bonnes pratiques pour configurer votre environnement avec Maven.
-- Applications pratiques de la personnalisation des métadonnées de courrier électronique dans des scénarios réels.
+![Renommer les champs d'e-mail lors de la conversion des e-mails en HTML avec GroupDocs.Viewer pour Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-Avant de plonger dans la mise en œuvre, assurons-nous que tout est prêt.
+### Ce que vous apprendrez
+- Comment utiliser GroupDocs.Viewer pour Java afin de **convertir l'e-mail en HTML**.  
+- Techniques pour **renommer les champs d'e-mail** tels que « From », « To », « Sent » et « Subject ».  
+- Bonnes pratiques pour configurer Maven et la licence.  
+- Scénarios réels où **personnaliser les en-têtes d'e-mail** ajoute de la valeur.
+
+## Réponses rapides
+- **Que signifie « how to rename email » ?** Il s'agit de mapper les noms d'en-tête d'e-mail par défaut à des libellés personnalisés lors du rendu.  
+- **Quelle bibliothèque gère la conversion ?** GroupDocs.Viewer pour Java (v25.2+).  
+- **Ai-je besoin d'une licence ?** Un essai fonctionne pour l'évaluation ; une licence complète est requise pour la production.  
+- **Puis-je changer n'importe quel nom d'en-tête ?** Oui, tout en-tête d'e-mail standard peut être remappé via `fieldTextMap`.  
+- **Le résultat est-il du HTML ou des ressources intégrées ?** Vous pouvez choisir des ressources intégrées pour un fichier autonome unique.
+
+## Qu'est‑ce que « How to Rename Email » dans le contexte de GroupDocs.Viewer ?
+Renommer les champs d'e-mail signifie remplacer les libellés par défaut (par ex., « From ») par du texte personnalisé (par ex., « Sender ») lorsque l'e-mail est rendu en HTML. Cela est utile pour aligner la sortie avec la terminologie de l'entreprise ou améliorer la lisibilité pour l'utilisateur final.
+
+## Pourquoi convertir les e-mails en HTML et personnaliser les en-têtes d'e-mail ?
+- **Cohérence de la marque :** Adaptez le langage de votre organisation à toutes les communications.  
+- **Meilleure recherchabilité :** Les en-têtes personnalisés peuvent être indexés plus efficacement dans les systèmes d'archivage.  
+- **Intégration UI améliorée :** Adaptez le fragment HTML pour qu'il s'intègre parfaitement aux portails web ou aux tableaux de bord de support.
 
 ## Prérequis
 
-### Bibliothèques, versions et dépendances requises
-Pour suivre ce tutoriel, vous aurez besoin de :
-- **GroupDocs.Viewer pour Java**: Assurez-vous d'avoir la version 25.2 ou ultérieure.
-- **Kit de développement Java (JDK)**:La version 8 ou supérieure est recommandée.
+### Bibliothèques requises, versions et dépendances
+- **GroupDocs.Viewer pour Java** – version 25.2 ou ultérieure.  
+- **Java Development Kit (JDK)** – version 8+.
 
-### Configuration requise pour l'environnement
-Configurez votre environnement de développement avec les outils suivants :
-- **Maven** pour la gestion des dépendances et l'automatisation de la création de projets.
-- Un éditeur de texte ou un IDE comme IntelliJ IDEA, Eclipse ou Visual Studio Code.
+### Exigences de configuration de l'environnement
+- **Maven** pour la gestion des dépendances.  
+- Un IDE tel qu'IntelliJ IDEA, Eclipse ou VS Code.
 
-### Prérequis en matière de connaissances
-Une compréhension de base de la programmation Java et une familiarité avec Maven seront bénéfiques. Si vous débutez dans ces domaines, il peut être utile d'explorer les ressources d'introduction avant de poursuivre.
+### Prérequis de connaissances
+Une connaissance de base de Java et de Maven vous aidera à suivre rapidement.
 
 ## Configuration de GroupDocs.Viewer pour Java
 
-Pour commencer, intégrez GroupDocs.Viewer à votre projet Java avec Maven. Suivez les étapes ci-dessous :
-
-**Configuration Maven**
+### Configuration Maven
 ```xml
 <repositories>
    <repository>
@@ -57,51 +73,44 @@ Pour commencer, intégrez GroupDocs.Viewer à votre projet Java avec Maven. Suiv
 </dependencies>
 ```
 
-### Étapes d'acquisition de licence
-- **Essai gratuit**: Téléchargez un essai gratuit à partir de [Versions de GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Permis temporaire**Obtenez une licence temporaire pour explorer toutes les fonctionnalités sans limitations sur [Licence temporaire GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Achat**: Pour une utilisation continue, pensez à acheter une licence via [Achat GroupDocs](https://purchase.groupdocs.com/buy).
+### Étapes d'obtention de licence
+- **Essai gratuit :** Téléchargez un essai gratuit depuis [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Licence temporaire :** Obtenez une licence temporaire pour explorer toutes les fonctionnalités sans limitations sur [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Achat :** Pour une utilisation continue, envisagez d'acheter une licence via [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
 ### Initialisation et configuration de base
-Pour initialiser GroupDocs.Viewer dans votre projet Java :
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // Effectuer des opérations ici
+            // Perform operations here
         }
     }
 }
 ```
-Cet extrait de code illustre la configuration de base pour utiliser GroupDocs.Viewer. Ajustez le chemin d'accès au fichier pour qu'il pointe vers votre document.
+Ajustez le chemin du fichier pour qu'il pointe vers votre fichier `.msg`.
 
-## Guide de mise en œuvre
+## Guide d'implémentation
 
-### Renommer les champs de courrier électronique
-Dans cette section, vous apprendrez à personnaliser les noms des champs de courrier électronique lors du rendu d'un message électronique au format HTML.
+### Renommer les champs d'e-mail – Étape par étape
 
-#### Aperçu
-L'objectif principal est de mapper les champs de courrier électronique par défaut tels que « De », « À » et « Objet » à des noms personnalisés tels que « Expéditeur », « Destinataire » et « Sujet ».
-
-#### Mise en œuvre étape par étape
-
-##### 1. Configurer le chemin du répertoire de sortie
+#### 1. Configurer le chemin du répertoire de sortie
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Explication**: Remplacer `"YOUR_OUTPUT_DIRECTORY"` avec le chemin souhaité où les fichiers HTML seront enregistrés.
+*Remplacez `"YOUR_OUTPUT_DIRECTORY"` par le dossier où vous souhaitez enregistrer les fichiers HTML.*
 
-##### 2. Définir le format du chemin d'accès au fichier d'échange
+#### 2. Définir le format du chemin du fichier de page
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Explication**: Ce format détermine la manière dont le nom de fichier de chaque page rendue est structuré, avec `{0}` étant remplacé par le numéro de page.
+*`{0}` sera remplacé par le numéro de page lors du rendu.*
 
-##### 3. Créer un mappage des champs de courrier électronique vers de nouveaux noms
+#### 3. Créer un mappage des champs d'e-mail vers de nouveaux noms
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +122,83 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**Explication**:Personnalisez les métadonnées de l'e-mail en mappant les champs existants à vos noms préférés.
+*Ici nous changeons les libellés par défaut en libellés personnalisés.*
 
-##### 4. Configurer les options d'affichage HTML
+#### 4. Configurer les options de vue HTML
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**Explication**: Le `forEmbeddedResources` La méthode garantit que toutes les ressources nécessaires sont intégrées dans le fichier HTML, tandis que `setFieldTextMap` applique vos mappages de champs personnalisés.
+*`forEmbeddedResources` regroupe le CSS/JS à l'intérieur du HTML, tandis que `setFieldTextMap` applique les noms d'en-tête personnalisés.*
 
-##### 5. Rendre l'e-mail au format HTML
+#### 5. Rendre l'e-mail en HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**Explication**: Ajuster `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` avec le chemin d'accès à votre fichier MSG. Cette étape génère l'e-mail selon les options spécifiées.
+*Remplacez `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` par le chemin réel de votre fichier MSG.*
 
 #### Conseils de dépannage
-- Assurez-vous que le répertoire de sortie est accessible en écriture.
-- Vérifiez que le fichier MSG d’entrée existe et est accessible.
-- Vérifiez les problèmes de compatibilité si vous utilisez une version différente de GroupDocs.Viewer.
+- Vérifiez que le répertoire de sortie est accessible en écriture.  
+- Assurez‑vous que le fichier MSG d'entrée existe et que le chemin est correct.  
+- Utilisez la même version de GroupDocs.Viewer (25.2) que celle déclarée dans Maven.
 
 ## Applications pratiques
-Cette fonctionnalité est particulièrement utile dans les scénarios où :
-1. **Rapports par e-mail personnalisés**: L’adaptation des en-têtes des e-mails à la terminologie de l’entreprise améliore la lisibilité.
-2. **Systèmes d'archivage des e-mails**:La personnalisation des métadonnées améliore l'efficacité de la recherche et de la récupération.
-3. **Plateformes de support client**:Les en-têtes d’e-mail personnalisés contribuent à une meilleure communication avec les clients.
+1. **Rapports d'e-mail personnalisés :** Alignez les en-têtes d'e-mail avec la terminologie de l'entreprise pour des rapports plus clairs.  
+2. **Systèmes d'archivage d'e-mails :** Améliorez la recherchabilité en utilisant des noms d'en-tête standardisés.  
+3. **Plateformes de support client :** Présentez les tickets avec des libellés d'en-tête personnalisés pour une meilleure expérience des agents.
 
-## Considérations relatives aux performances
-Pour optimiser les performances lors de l'utilisation de GroupDocs.Viewer pour Java :
-- Utilisez des techniques efficaces de gestion de la mémoire, telles que l'élimination appropriée des objets avec try-with-resources.
-- Profilez votre application pour identifier les goulots d’étranglement liés au rendu des documents et les gérer de manière appropriée.
+## Considérations de performance
+- Libérez les objets `Viewer` avec try‑with‑resources pour libérer rapidement la mémoire.  
+- Profilez les gros lots et envisagez de traiter les e-mails en flux parallèles si nécessaire.
 
 ## Conclusion
-En suivant ce guide, vous avez appris à renommer efficacement les champs d'e-mail lors de la conversion d'e-mails en HTML à l'aide de GroupDocs.Viewer pour Java. Cette personnalisation améliore la fonctionnalité et l'ergonomie des documents rendus dans diverses applications.
+Vous savez maintenant **comment renommer les champs d'e-mail** tout en **convertissant l'e-mail en HTML** et **personnalisant les en-têtes d'e-mail** avec GroupDocs.Viewer pour Java. Cette technique vous donne un contrôle complet sur la présentation des métadonnées d'e-mail dans les sorties HTML.
 
 ### Prochaines étapes
-- Expérimentez avec différents mappages de champs.
-- Explorez les fonctionnalités supplémentaires de GroupDocs.Viewer pour améliorer vos capacités de traitement de documents.
-- Visite [Documentation GroupDocs](https://docs.groupdocs.com/viewer/java/) pour des techniques et des exemples plus avancés.
+- Expérimentez avec des mappages de champs supplémentaires (par ex., CC, BCC).  
+- Explorez d'autres formats de rendu tels que PDF ou PNG.  
+- Consultez [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) pour des informations plus approfondies sur l'API.
 
 ## Section FAQ
-1. **Puis-je renommer tous les en-têtes d’e-mails en utilisant cette méthode ?**
-   - Oui, vous pouvez mapper n’importe quel en-tête d’e-mail standard à un nouveau nom selon vos besoins.
-2. **Est-il possible d'utiliser GroupDocs.Viewer sans licence ?**
-   - Une version d'essai est disponible à des fins de test, mais une version complète nécessite une licence valide.
-3. **Comment gérer efficacement de gros volumes d'e-mails avec GroupDocs.Viewer ?**
-   - Envisagez le traitement par lots et l’optimisation des ressources de votre système pour gérer efficacement des ensembles de données plus volumineux.
-4. **Puis-je intégrer cette solution dans une application Java existante ?**
-   - Absolument, l’intégration de GroupDocs.Viewer est simple dans n’importe quel projet basé sur Java utilisant les dépendances Maven.
-5. **Où puis-je trouver de l’aide si je rencontre des problèmes ?**
-   - Visitez le [Forum GroupDocs](https://forum.groupdocs.com/c/viewer/9) pour le soutien communautaire et officiel.
+1. **Puis-je renommer tous les en-têtes d'e-mail avec cette méthode ?**  
+   - Oui, vous pouvez mapper n'importe quel en-tête d'e-mail standard à un nouveau nom selon vos besoins.  
+2. **Est-il possible d'utiliser GroupDocs.Viewer sans licence ?**  
+   - Une version d'essai est disponible pour les tests, mais une version complète nécessite une licence valide.  
+3. **Comment gérer efficacement de gros volumes d'e-mails avec GroupDocs.Viewer ?**  
+   - Envisagez le traitement par lots et optimisez les ressources système pour gérer efficacement de plus grands ensembles de données.  
+4. **Puis-je intégrer cette solution dans une application Java existante ?**  
+   - Absolument, l'intégration est simple grâce aux dépendances Maven.  
+5. **Où puis-je trouver du support en cas de problème ?**  
+   - Consultez le [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) pour l'aide communautaire et officielle.
+
+## Questions fréquemment posées
+
+**Q : Cette approche fonctionne-t-elle avec d'autres formats d'e-mail comme EML ?**  
+R : Oui, GroupDocs.Viewer prend en charge les fichiers MSG et EML ; la même logique de mappage des champs s'applique.
+
+**Q : Puis-je générer le HTML sans ressources intégrées ?**  
+R : Vous pouvez utiliser `HtmlViewOptions.forExternalResources(...)` si vous préférez des fichiers CSS/JS séparés.
+
+**Q : Quelle version de GroupDocs.Viewer a été testée ?**  
+R : Le code a été testé avec GroupDocs.Viewer **25.2**.
+
+**Q : Est-il possible de changer la police ou le style des en-têtes personnalisés ?**  
+R : Le style peut être appliqué via CSS après le rendu, ou vous pouvez injecter du CSS personnalisé en utilisant `HtmlViewOptions.getResourcesPath()`.
+
+**Q : Comment récupérer programmétiquement le chemin du fichier HTML généré ?**  
+R : Le chemin du fichier suit le modèle défini dans `pageFilePathFormat` ; vous pouvez le construire en utilisant `String.format` avec le numéro de page.
 
 ## Ressources
-- **Documentation**:Des guides complets sont disponibles à [Documentation GroupDocs](https://docs.groupdocs.com/viewer/java/).
-- **Référence de l'API**: Des informations détaillées sur l'API sont disponibles sur [Référence de l'API GroupDocs](https://reference.groupdocs.com/viewer/java/).
-- **Télécharger GroupDocs.Viewer**:Accédez à la dernière version via le [Page de téléchargements](https://releases.groupdocs.com/viewer/java/)
+- **Documentation :** Des guides complets sont disponibles sur [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **Référence API :** Des informations détaillées sur l'API sont disponibles sur [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Télécharger GroupDocs.Viewer :** Accédez à la dernière version via la [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+
+---
+
+**Dernière mise à jour :** 2026-01-05  
+**Testé avec :** GroupDocs.Viewer 25.2  
+**Auteur :** GroupDocs

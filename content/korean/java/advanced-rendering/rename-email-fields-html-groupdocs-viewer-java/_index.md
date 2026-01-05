@@ -1,45 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java를 사용하여 이메일을 HTML로 렌더링할 때 '보낸 사람', '받는 사람', '제목'과 같은 필드의 이름을 바꾸어 이메일 메타데이터를 사용자 지정하는 방법을 알아보세요."
-"title": "GroupDocs.Viewer Java를 사용하여 이메일을 HTML로 변환할 때 이메일 필드 이름을 바꾸는 방법"
-"url": "/ko/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: GroupDocs.Viewer for Java를 사용하여 이메일 필드 이름을 바꾸고, 이메일을 HTML로 변환하며, 이메일
+  헤더를 사용자 정의하는 방법을 배웁니다.
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: GroupDocs.Viewer Java를 사용하여 이메일을 HTML로 렌더링할 때 이메일 필드 이름 바꾸는 방법
 type: docs
+url: /ko/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer Java를 사용하여 이메일을 HTML로 렌더링할 때 이메일 필드 이름을 바꾸는 방법
 
-## 소개
+# GroupDocs.Viewer Java를 사용하여 이메일을 HTML로 렌더링할 때 이메일 필드 이름 바꾸는 방법
 
-이메일을 HTML로 변환하는 동안 이메일 메타데이터를 사용자 지정하고 싶으신가요? 이 종합 가이드에서는 GroupDocs.Viewer for Java를 사용하여 이메일 필드 이름을 변경하는 방법을 안내합니다. 이 강력한 도구를 사용하면 개발자는 문서를 매끄럽게 렌더링하고 HTML 출력에서 이메일 헤더가 표시되는 방식을 조정하여 가독성과 사용성을 향상시킬 수 있습니다.
+이메일을 HTML로 변환하면서 **이메일 필드 이름 바꾸기**가 궁금하신가요? 이 가이드에서는 이메일 필드 이름을 바꾸고, **이메일을 HTML로 변환**하며, GroupDocs.Viewer for Java를 사용하여 **이메일 헤더를 사용자 정의**하는 정확한 단계들을 안내합니다. 끝까지 진행하면 원하는 헤더 이름이 적용된 깔끔한 HTML 표현을 얻을 수 있어 출력물을 더 쉽게 읽고 애플리케이션에 통합할 수 있습니다.
 
-### 배울 내용:
-- GroupDocs.Viewer for Java를 사용하여 이메일을 HTML 형식으로 변환하는 방법.
-- "보낸 사람", "받는 사람", "보낸 편지함", "제목"과 같은 이메일 필드의 이름을 바꾸는 기술입니다.
-- Maven을 사용하여 환경을 설정하는 모범 사례입니다.
-- 실제 상황에서 이메일 메타데이터를 사용자 정의하는 실용적인 응용 프로그램입니다.
+![GroupDocs.Viewer for Java를 사용하여 이메일을 HTML로 변환할 때 이메일 필드 이름 바꾸기](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-구현에 들어가기 전에 모든 것이 준비되었는지 확인하세요.
+### 배울 내용
+- GroupDocs.Viewer for Java를 사용하여 **이메일을 HTML로 변환**하는 방법.  
+- “From”, “To”, “Sent”, “Subject”와 같은 **이메일 필드 이름 바꾸기** 기술.  
+- Maven 및 라이선스 설정을 위한 모범 사례.  
+- **이메일 헤더 사용자 정의**가 가치를 더하는 실제 시나리오.
 
-## 필수 조건
+## 빠른 답변
+- **“how to rename email”가 무엇을 의미하나요?** 렌더링 중 기본 이메일 헤더 이름을 사용자 정의 라벨에 매핑하는 것을 의미합니다.  
+- **어떤 라이브러리가 변환을 처리하나요?** GroupDocs.Viewer for Java (v25.2+).  
+- **라이선스가 필요합니까?** 평가용으로는 트라이얼이 작동하지만, 프로덕션에서는 정식 라이선스가 필요합니다.  
+- **헤더 이름을 모두 변경할 수 있나요?** 예, `fieldTextMap`을 통해 모든 표준 이메일 헤더를 재매핑할 수 있습니다.  
+- **출력은 HTML인가요, 임베디드 리소스인가요?** 단일 자체 포함 파일을 위해 임베디드 리소스를 선택할 수 있습니다.
 
-### 필수 라이브러리, 버전 및 종속성
-이 튜토리얼을 따르려면 다음이 필요합니다.
-- **Java용 GroupDocs.Viewer**: 버전 25.2 이상인지 확인하세요.
-- **자바 개발 키트(JDK)**: 버전 8 이상을 권장합니다.
+## GroupDocs.Viewer 컨텍스트에서 “How to Rename Email”이란?
+이메일 필드 이름 바꾸기는 이메일을 HTML로 렌더링할 때 기본 라벨(예: “From”)을 사용자 정의 텍스트(예: “Sender”)로 교체하는 것을 의미합니다. 이는 출력물을 기업 용어에 맞추거나 최종 사용자 가독성을 향상시키는 데 유용합니다.
+
+## 왜 이메일을 HTML로 변환하고 이메일 헤더를 사용자 정의해야 할까요?
+- **일관된 브랜딩:** 모든 커뮤니케이션에서 조직의 언어와 일치시킵니다.  
+- **검색성 향상:** 사용자 정의 헤더는 아카이브 시스템에서 보다 효율적으로 인덱싱될 수 있습니다.  
+- **UI 통합 개선:** HTML 스니펫을 웹 포털이나 지원 대시보드에 원활히 맞출 수 있습니다.
+
+## 사전 요구 사항
+
+### 필요 라이브러리, 버전 및 종속성
+- **GroupDocs.Viewer for Java** – 버전 25.2 이상.  
+- **Java Development Kit (JDK)** – 버전 8 이상.
 
 ### 환경 설정 요구 사항
-다음 도구를 사용하여 개발 환경을 설정하세요.
-- **메이븐** 종속성 관리 및 프로젝트 빌드 자동화를 위해.
-- IntelliJ IDEA, Eclipse 또는 Visual Studio Code와 같은 텍스트 편집기나 IDE.
+- **Maven** – 종속성 관리를 위해.  
+- IntelliJ IDEA, Eclipse, VS Code와 같은 IDE.
 
-### 지식 전제 조건
-Java 프로그래밍에 대한 기본적인 이해와 Maven에 대한 지식이 있으면 도움이 될 것입니다. 이러한 분야를 처음 접하는 경우, 진행하기 전에 입문 자료를 살펴보는 것이 도움이 될 수 있습니다.
+### 지식 사전 요구 사항
+기본적인 Java와 Maven에 대한 이해가 있으면 빠르게 따라올 수 있습니다.
 
-## Java용 GroupDocs.Viewer 설정
+## GroupDocs.Viewer for Java 설정
 
-시작하려면 Maven을 사용하여 GroupDocs.Viewer를 Java 프로젝트에 통합하세요. 아래 단계를 따르세요.
-
-**Maven 구성**
+### Maven 구성
 ```xml
 <repositories>
    <repository>
@@ -57,51 +72,44 @@ Java 프로그래밍에 대한 기본적인 이해와 Maven에 대한 지식이 
 </dependencies>
 ```
 
-### 라이센스 취득 단계
-- **무료 체험**: 무료 평가판을 다운로드하세요 [GroupDocs 릴리스](https://releases.groupdocs.com/viewer/java/).
-- **임시 면허**제한 없이 모든 기능을 탐색할 수 있는 임시 라이센스를 얻으세요. [GroupDocs 임시 라이센스](https://purchase.groupdocs.com/temporary-license/).
-- **구입**: 계속 사용하려면 라이센스 구매를 고려하세요. [GroupDocs 구매](https://purchase.groupdocs.com/buy).
+### 라이선스 획득 단계
+- **무료 체험:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)에서 무료 체험판을 다운로드하십시오.  
+- **임시 라이선스:** 제한 없이 전체 기능을 탐색하려면 [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)에서 임시 라이선스를 받으세요.  
+- **구매:** 지속적인 사용을 위해 [GroupDocs Purchase](https://purchase.groupdocs.com/buy)를 통해 라이선스 구매를 고려하십시오.
 
 ### 기본 초기화 및 설정
-Java 프로젝트에서 GroupDocs.Viewer를 초기화하려면:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // 여기서 작업을 수행하세요
+            // Perform operations here
         }
     }
 }
 ```
-이 코드 조각은 GroupDocs.Viewer를 사용하기 위한 기본 설정을 보여줍니다. 문서를 가리키도록 파일 경로를 조정하세요.
+파일 경로를 `.msg` 파일을 가리키도록 조정하십시오.
 
 ## 구현 가이드
 
-### 이메일 필드 이름 바꾸기
-이 섹션에서는 이메일 메시지를 HTML 형식으로 렌더링할 때 이메일 필드 이름을 사용자 지정하는 방법을 알아봅니다.
+### 이메일 필드 이름 바꾸기 – 단계별
 
-#### 개요
-주요 목표는 "보낸 사람", "받는 사람", "제목"과 같은 기본 이메일 필드를 "보낸 사람", "받는 사람", "주제"와 같은 사용자 정의 이름에 매핑하는 것입니다.
-
-#### 단계별 구현
-
-##### 1. 출력 디렉토리 경로 설정
+#### 1. 출력 디렉터리 경로 설정
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**설명**: 바꾸다 `"YOUR_OUTPUT_DIRECTORY"` HTML 파일을 저장할 원하는 경로를 입력하세요.
+*`"YOUR_OUTPUT_DIRECTORY"`를 HTML 파일을 저장하려는 폴더로 교체하십시오.*
 
-##### 2. 페이지 파일 경로 형식 정의
+#### 2. 페이지 파일 경로 형식 정의
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**설명**: 이 형식은 각 렌더링된 페이지의 파일 이름이 어떻게 구성되는지 결정합니다. `{0}` 페이지 번호로 대체됨.
+*렌더링 중에 `{0}`이 페이지 번호로 교체됩니다.*
 
-##### 3. 이메일 필드를 새 이름으로 매핑하기
+#### 3. 이메일 필드와 새 이름 매핑 만들기
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +121,83 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**설명**: 기존 필드를 원하는 이름에 매핑하여 이메일 메타데이터를 사용자 정의합니다.
+*여기서 기본 라벨을 사용자 정의 라벨로 변경합니다.*
 
-##### 4. HTML 보기 옵션 구성
+#### 4. HTML 보기 옵션 구성
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**설명**: 그 `forEmbeddedResources` 이 방법은 모든 필수 리소스가 HTML 파일에 포함되어 있는지 확인하는 동시에 `setFieldTextMap` 사용자 정의 필드 매핑을 적용합니다.
+*`forEmbeddedResources`는 CSS/JS를 HTML 내부에 번들링하고, `setFieldTextMap`은 사용자 정의 헤더 이름을 적용합니다.*
 
-##### 5. 이메일을 HTML로 렌더링
+#### 5. 이메일을 HTML로 렌더링
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**설명**: 조정하다 `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` MSG 파일 경로를 입력합니다. 이 단계에서는 지정된 옵션을 사용하여 이메일을 렌더링합니다.
+*`"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"`을 실제 MSG 파일 경로로 교체하십시오.*
 
 #### 문제 해결 팁
-- 출력 디렉토리가 쓰기 가능한지 확인하세요.
-- 입력 MSG 파일이 존재하고 접근 가능한지 확인합니다.
-- 다른 버전의 GroupDocs.Viewer를 사용하는 경우 호환성 문제가 있는지 확인하세요.
+- 출력 디렉터리에 쓰기 권한이 있는지 확인하십시오.  
+- 입력 MSG 파일이 존재하고 경로가 올바른지 확인하십시오.  
+- Maven에 선언된 것과 동일한 GroupDocs.Viewer 버전(25.2)을 사용하십시오.
 
-## 실제 응용 프로그램
-이 기능은 다음과 같은 시나리오에서 특히 유용합니다.
-1. **사용자 정의 이메일 보고서**: 기업 용어에 맞게 이메일 헤더를 맞춤화하면 가독성이 향상됩니다.
-2. **이메일 보관 시스템**: 메타데이터를 사용자 정의하면 검색 및 조회 효율성이 향상됩니다.
-3. **고객 지원 플랫폼**: 개인화된 이메일 헤더는 고객과의 소통을 개선하는 데 도움이 됩니다.
+## 실용적인 적용 사례
+1. **맞춤형 이메일 보고서:** 이메일 헤더를 기업 용어에 맞추어 보다 명확한 보고서를 제공합니다.  
+2. **이메일 아카이빙 시스템:** 표준화된 헤더 이름을 사용하여 검색성을 향상시킵니다.  
+3. **고객 지원 플랫폼:** 티켓을 개인화된 헤더 라벨로 표시하여 에이전트 경험을 개선합니다.
 
 ## 성능 고려 사항
-Java용 GroupDocs.Viewer를 사용할 때 성능을 최적화하려면:
-- try-with-resources를 사용하여 객체를 적절히 폐기하는 등 효율적인 메모리 관리 기술을 사용합니다.
-- 문서 렌더링과 관련된 병목 현상을 파악하고 적절히 처리하기 위해 애플리케이션 프로파일을 작성하세요.
+- `Viewer` 객체를 try‑with‑resources로 해제하여 메모리를 즉시 해제하십시오.  
+- 대용량 배치를 프로파일링하고 필요에 따라 병렬 스트림으로 이메일을 처리하는 것을 고려하십시오.
 
 ## 결론
-이 가이드를 따라 GroupDocs.Viewer for Java를 사용하여 이메일을 HTML로 변환하는 과정에서 이메일 필드의 이름을 효과적으로 바꾸는 방법을 알아보았습니다. 이러한 사용자 지정 기능은 다양한 애플리케이션에서 렌더링된 문서의 기능과 사용성을 모두 향상시킵니다.
+이제 GroupDocs.Viewer for Java를 사용하여 **이메일을 HTML로 변환**하고 **이메일 헤더를 사용자 정의**하면서 **이메일 필드 이름을 바꾸는** 방법을 알게 되었습니다. 이 기술을 통해 HTML 출력에서 이메일 메타데이터의 표시를 완전히 제어할 수 있습니다.
 
 ### 다음 단계
-- 다양한 필드 매핑을 실험해 보세요.
-- GroupDocs.Viewer의 추가 기능을 살펴보고 문서 처리 역량을 강화해 보세요.
-- 방문하다 [GroupDocs 문서](https://docs.groupdocs.com/viewer/java/) 더욱 진보된 기술과 예를 보려면.
+- 추가 필드 매핑(예: CC, BCC)을 실험해 보세요.  
+- PDF 또는 PNG와 같은 다른 렌더링 형식을 탐색하십시오.  
+- [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)을 방문하여 더 깊은 API 인사이트를 얻으세요.
 
 ## FAQ 섹션
-1. **이 방법을 사용하여 모든 이메일 헤더의 이름을 바꿀 수 있나요?**
-   - 네, 귀하의 요구 사항에 맞게 표준 이메일 헤더를 새 이름으로 매핑할 수 있습니다.
-2. **라이선스 없이 GroupDocs.Viewer를 사용할 수 있나요?**
-   - 테스트 목적으로는 체험판을 사용할 수 있지만, 모든 기능을 갖춘 버전을 사용하려면 유효한 라이선스가 필요합니다.
-3. **GroupDocs.Viewer를 사용하여 대량의 이메일을 효율적으로 처리하려면 어떻게 해야 합니까?**
-   - 대규모 데이터 세트를 효과적으로 관리하려면 일괄 처리와 시스템 리소스 최적화를 고려하세요.
-4. **이 솔루션을 기존 Java 애플리케이션에 통합할 수 있나요?**
-   - 물론입니다. GroupDocs.Viewer를 Maven 종속성을 사용하는 모든 Java 기반 프로젝트에 통합하는 것은 간단합니다.
-5. **문제가 발생하면 어디에서 지원을 받을 수 있나요?**
-   - 방문하세요 [GroupDocs 포럼](https://forum.groupdocs.com/c/viewer/9) 커뮤니티와 공식적인 지원을 위해.
+1. **Can I rename all email headers using this method?**  
+   - Yes, you can map any standard email header to a new name as per your requirements.  
+2. **Is it possible to use GroupDocs.Viewer without a license?**  
+   - A trial version is available for testing, but a full‑featured version requires a valid license.  
+3. **How do I handle large volumes of emails efficiently with GroupDocs.Viewer?**  
+   - Consider batch processing and optimize system resources to manage larger datasets effectively.  
+4. **Can I integrate this solution into an existing Java application?**  
+   - Absolutely, integration is straightforward using Maven dependencies.  
+5. **Where can I find support if I encounter issues?**  
+   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community and official assistance.
 
-## 자원
-- **선적 서류 비치**: 포괄적인 가이드는 다음에서 제공됩니다. [GroupDocs 문서](https://docs.groupdocs.com/viewer/java/).
-- **API 참조**: 자세한 API 정보는 다음에서 확인할 수 있습니다. [GroupDocs API 참조](https://reference.groupdocs.com/viewer/java/).
-- **GroupDocs.Viewer 다운로드**: 최신 버전에 접속하려면 다음을 수행하십시오. [다운로드 페이지](https://releases.groupdocs.com/viewer/java/)
+## 자주 묻는 질문
+
+**Q: 이 방법이 EML과 같은 다른 이메일 형식에도 작동하나요?**  
+A: 예, GroupDocs.Viewer는 MSG와 EML 파일을 모두 지원하며 동일한 필드 매핑 로직이 적용됩니다.
+
+**Q: 임베디드 리소스 없이 HTML을 출력할 수 있나요?**  
+A: 별도의 CSS/JS 파일을 원한다면 `HtmlViewOptions.forExternalResources(...)`를 사용할 수 있습니다.
+
+**Q: 어떤 버전의 GroupDocs.Viewer가 테스트되었나요?**  
+A: 코드는 GroupDocs.Viewer **25.2** 버전으로 테스트되었습니다.
+
+**Q: 사용자 정의 헤더의 글꼴이나 스타일을 변경할 수 있나요?**  
+A: 렌더링 후 CSS로 스타일을 적용하거나 `HtmlViewOptions.getResourcesPath()`를 사용해 사용자 정의 CSS를 삽입할 수 있습니다.
+
+**Q: 생성된 HTML 파일 경로를 프로그래밍 방식으로 어떻게 얻나요?**  
+A: 파일 경로는 `pageFilePathFormat`에 정의된 패턴을 따르며, 페이지 번호와 함께 `String.format`을 사용해 구성할 수 있습니다.
+
+## 리소스
+- **Documentation:** 자세한 가이드는 [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)에서 확인할 수 있습니다.  
+- **API Reference:** 상세 API 정보는 [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)에서 찾을 수 있습니다.  
+- **Download GroupDocs.Viewer:** 최신 버전은 [Downloads Page](https://releases.groupdocs.com/viewer/java/)에서 다운로드하십시오.
+
+---
+
+**마지막 업데이트:** 2026-01-05  
+**테스트 환경:** GroupDocs.Viewer 25.2  
+**작성자:** GroupDocs

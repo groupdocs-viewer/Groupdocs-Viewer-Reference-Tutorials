@@ -1,45 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a personalizar metadados de e-mail renomeando campos como \"De\", \"Para\" e \"Assunto\" ao renderizar e-mails em HTML usando o GroupDocs.Viewer para Java."
-"title": "Como renomear campos de e-mail ao converter e-mails para HTML usando GroupDocs.Viewer Java"
-"url": "/pt/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: Aprenda a renomear campos de e‑mail, converter e‑mail para HTML e personalizar
+  cabeçalhos de e‑mail usando o GroupDocs.Viewer para Java.
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: Como Renomear Campos de Email ao Renderizar Emails em HTML com GroupDocs.Viewer
+  Java
 type: docs
+url: /pt/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
-# Como renomear campos de e-mail ao renderizar e-mails em HTML com GroupDocs.Viewer Java
 
-## Introdução
+# Como Renomear Campos de Email ao Renderizar Emails para HTML com GroupDocs.Viewer Java
 
-Deseja personalizar metadados de e-mail ao converter e-mails para HTML? Este guia completo o orientará na renomeação de campos de e-mail usando o GroupDocs.Viewer para Java. Com esta ferramenta poderosa, os desenvolvedores podem renderizar documentos perfeitamente e personalizar a aparência dos cabeçalhos de e-mail na saída HTML, melhorando a legibilidade e a usabilidade.
+Você está se perguntando **como renomear email** campos ao converter um email para HTML? Neste guia, percorreremos os passos exatos para renomear campos de email, **converter email para HTML**, e **personalizar cabeçalhos de email** usando GroupDocs.Viewer para Java. Ao final, você terá uma representação HTML limpa com os nomes de cabeçalho preferidos, facilitando a leitura e a integração da saída em suas aplicações.
 
-### O que você aprenderá:
-- Como usar o GroupDocs.Viewer para Java para converter e-mails para o formato HTML.
-- Técnicas para renomear campos de e-mail como "De", "Para", "Enviado" e "Assunto".
-- Melhores práticas para configurar seu ambiente com Maven.
-- Aplicações práticas da personalização de metadados de e-mail em cenários do mundo real.
+![Renomear Campos de Email ao Converter Emails para HTML com GroupDocs.Viewer para Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-Antes de começar a implementação, vamos garantir que você tenha tudo pronto.
+### O que você aprenderá
+- Como usar o GroupDocs.Viewer para Java para **converter email para HTML**.  
+- Técnicas para **renomear campos de email** como “From”, “To”, “Sent” e “Subject”.  
+- Melhores práticas para configurar Maven e licenciamento.  
+- Cenários do mundo real onde **personalizar cabeçalhos de email** agrega valor.
 
-## Pré-requisitos
+## Respostas Rápidas
+- **O que significa “how to rename email”?** Refere‑se ao mapeamento dos nomes padrão dos cabeçalhos de email para rótulos personalizados durante a renderização.  
+- **Qual biblioteca lida com a conversão?** GroupDocs.Viewer para Java (v25.2+).  
+- **Preciso de uma licença?** Uma versão de avaliação funciona para testes; uma licença completa é necessária para produção.  
+- **Posso mudar qualquer nome de cabeçalho?** Sim, qualquer cabeçalho padrão de email pode ser remapeado via `fieldTextMap`.  
+- **A saída é HTML ou recursos incorporados?** Você pode escolher recursos incorporados para um único arquivo autônomo.
+
+## O que é “How to Rename Email” no contexto do GroupDocs.Viewer?
+Renomear campos de email significa substituir os rótulos padrão (por exemplo, “From”) por texto personalizado (por exemplo, “Sender”) quando o email é renderizado para HTML. Isso é útil para alinhar a saída com a terminologia corporativa ou melhorar a legibilidade para o usuário final.
+
+## Por que converter email para HTML e personalizar cabeçalhos de email?
+- **Branding consistente:** Alinhe a linguagem da sua organização em todas as comunicações.  
+- **Melhor capacidade de busca:** Cabeçalhos personalizados podem ser indexados de forma mais eficaz em sistemas de arquivamento.  
+- **Integração de UI aprimorada:** Ajuste o trecho HTML para se encaixar perfeitamente em portais web ou painéis de suporte.
+
+## Pré‑requisitos
 
 ### Bibliotecas, versões e dependências necessárias
-Para seguir este tutorial, você precisará:
-- **GroupDocs.Viewer para Java**: Certifique-se de ter a versão 25.2 ou posterior.
-- **Kit de Desenvolvimento Java (JDK)**: Recomenda-se a versão 8 ou superior.
+- **GroupDocs.Viewer for Java** – versão 25.2 ou posterior.  
+- **Java Development Kit (JDK)** – versão 8+.
 
 ### Requisitos de configuração do ambiente
-Configure seu ambiente de desenvolvimento com as seguintes ferramentas:
-- **Especialista** para gerenciamento de dependências e automação de construção de projetos.
-- Um editor de texto ou IDE como IntelliJ IDEA, Eclipse ou Visual Studio Code.
+- **Maven** para gerenciamento de dependências.  
+- Uma IDE como IntelliJ IDEA, Eclipse ou VS Code.
 
-### Pré-requisitos de conhecimento
-Um conhecimento básico de programação Java e familiaridade com Maven serão benéficos. Se você é novo nessas áreas, pode ser útil explorar recursos introdutórios antes de prosseguir.
+### Pré‑requisitos de conhecimento
+Familiaridade básica com Java e Maven ajudará a acompanhar rapidamente.
 
 ## Configurando o GroupDocs.Viewer para Java
 
-Para começar, integre o GroupDocs.Viewer ao seu projeto Java usando o Maven. Siga os passos abaixo:
-
-**Configuração do Maven**
+### Configuração do Maven
 ```xml
 <repositories>
    <repository>
@@ -58,50 +74,43 @@ Para começar, integre o GroupDocs.Viewer ao seu projeto Java usando o Maven. Si
 ```
 
 ### Etapas de aquisição de licença
-- **Teste grátis**: Baixe uma versão de teste gratuita em [Lançamentos do GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Licença Temporária**Obtenha uma licença temporária para explorar todos os recursos sem limitações em [Licença temporária do GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Comprar**:Para uso contínuo, considere adquirir uma licença através [Compra do GroupDocs](https://purchase.groupdocs.com/buy).
+- **Teste gratuito:** Baixe uma versão de teste em [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Licença temporária:** Obtenha uma licença temporária para explorar todos os recursos sem limitações em [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Compra:** Para uso contínuo, considere adquirir uma licença através de [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
 ### Inicialização e configuração básicas
-Para inicializar o GroupDocs.Viewer no seu projeto Java:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // Realizar operações aqui
+            // Perform operations here
         }
     }
 }
 ```
-Este trecho de código demonstra a configuração básica para usar o GroupDocs.Viewer. Ajuste o caminho do arquivo para apontar para o seu documento.
+Ajuste o caminho do arquivo para apontar para o seu arquivo `.msg`.
 
 ## Guia de Implementação
 
-### Renomeando campos de e-mail
-Nesta seção, você aprenderá como personalizar nomes de campos de e-mail ao renderizar uma mensagem de e-mail para o formato HTML.
+### Renomeando Campos de Email – Passo a Passo
 
-#### Visão geral
-O objetivo principal é mapear campos de e-mail padrão como "De", "Para" e "Assunto" para nomes personalizados como "Remetente", "Destinatário" e "Tópico".
-
-#### Implementação passo a passo
-
-##### 1. Configurar o caminho do diretório de saída
+#### 1. Configurar o caminho do diretório de saída
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Explicação**: Substituir `"YOUR_OUTPUT_DIRECTORY"` com o caminho desejado onde os arquivos HTML serão salvos.
+*Substitua `"YOUR_OUTPUT_DIRECTORY"` pela pasta onde deseja salvar os arquivos HTML.*
 
-##### 2. Definir formato do caminho do arquivo de paginação
+#### 2. Definir o formato do caminho do arquivo de página
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Explicação**: Este formato determina como o nome do arquivo de cada página renderizada é estruturado, com `{0}` sendo substituído pelo número da página.
+*`{0}` será substituído pelo número da página durante a renderização.*
 
-##### 3. Crie um mapeamento de campos de e-mail para novos nomes
+#### 3. Criar um mapeamento dos campos de email para novos nomes
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +122,85 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**Explicação**: Personalize os metadados do e-mail mapeando os campos existentes para seus nomes preferidos.
+*Aqui alteramos os rótulos padrão para personalizados.*
 
-##### 4. Configurar opções de visualização HTML
+#### 4. Configurar opções de visualização HTML
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**Explicação**: O `forEmbeddedResources` O método garante que todos os recursos necessários sejam incorporados ao arquivo HTML, enquanto `setFieldTextMap` aplica seus mapeamentos de campos personalizados.
+*`forEmbeddedResources` agrupa CSS/JS dentro do HTML, enquanto `setFieldTextMap` aplica os nomes de cabeçalho personalizados.*
 
-##### 5. Renderize o e-mail para HTML
+#### 5. Renderizar o email para HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**Explicação**: Ajustar `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` com o caminho para o seu arquivo MSG. Esta etapa renderiza o e-mail usando as opções especificadas.
+*Substitua `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` pelo caminho real do seu arquivo MSG.*
 
-#### Dicas para solução de problemas
-- Certifique-se de que o diretório de saída seja gravável.
-- Verifique se o arquivo MSG de entrada existe e está acessível.
-- Verifique se há problemas de compatibilidade se estiver usando uma versão diferente do GroupDocs.Viewer.
+#### Dicas de solução de problemas
+- Verifique se o diretório de saída tem permissão de gravação.  
+- Certifique‑se de que o arquivo MSG de entrada existe e o caminho está correto.  
+- Use a mesma versão do GroupDocs.Viewer (25.2) declarada no Maven.
 
-## Aplicações práticas
-Esse recurso é particularmente útil em cenários onde:
-1. **Relatórios de e-mail personalizados**: Adaptar os cabeçalhos de e-mail para corresponder à terminologia corporativa melhora a legibilidade.
-2. **Sistemas de arquivamento de e-mail**: A personalização de metadados melhora a eficiência da pesquisa e recuperação.
-3. **Plataformas de Suporte ao Cliente**: Cabeçalhos de e-mail personalizados auxiliam na melhor comunicação com o cliente.
+## Aplicações Práticas
+1. **Relatórios de Email Personalizados:** Alinhe os cabeçalhos de email com a terminologia corporativa para relatórios mais claros.  
+2. **Sistemas de Arquivamento de Email:** Melhore a capacidade de busca usando nomes de cabeçalho padronizados.  
+3. **Plataformas de Suporte ao Cliente:** Apresente tickets com rótulos de cabeçalho personalizados para melhorar a experiência dos agentes.
 
-## Considerações de desempenho
-Para otimizar o desempenho ao usar o GroupDocs.Viewer para Java:
-- Utilize técnicas eficientes de gerenciamento de memória, como descarte adequado de objetos com tentativa com recursos.
-- Crie um perfil do seu aplicativo para identificar gargalos relacionados à renderização de documentos e lidar com eles adequadamente.
+## Considerações de Performance
+- Libere objetos `Viewer` usando try‑with‑resources para liberar memória rapidamente.  
+- Faça profiling de lotes grandes e considere processar emails em streams paralelos, se necessário.
 
 ## Conclusão
-Seguindo este guia, você aprendeu a renomear campos de e-mail com eficiência durante o processo de conversão de e-mails para HTML usando o GroupDocs.Viewer para Java. Essa personalização aprimora a funcionalidade e a usabilidade de documentos renderizados em diversos aplicativos.
+Agora você sabe **como renomear campos de email** ao **converter email para HTML** e **personalizar cabeçalhos de email** com o GroupDocs.Viewer para Java. Essa técnica oferece controle total sobre a apresentação dos metadados de email nas saídas HTML.
 
 ### Próximos passos
-- Experimente diferentes mapeamentos de campo.
-- Explore recursos adicionais do GroupDocs.Viewer para aprimorar seus recursos de processamento de documentos.
-- Visita [Documentação do GroupDocs](https://docs.groupdocs.com/viewer/java/) para técnicas e exemplos mais avançados.
+- Experimente mapeamentos adicionais de campos (por exemplo, CC, BCC).  
+- Explore outros formatos de renderização como PDF ou PNG.  
+- Visite [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) para obter insights mais profundos da API.
 
-## Seção de perguntas frequentes
-1. **Posso renomear todos os cabeçalhos de e-mail usando este método?**
-   - Sim, você pode mapear qualquer cabeçalho de e-mail padrão para um novo nome, conforme suas necessidades.
-2. **É possível usar o GroupDocs.Viewer sem uma licença?**
-   - Uma versão de teste está disponível para fins de teste, mas uma versão completa requer uma licença válida.
-3. **Como lidar com grandes volumes de e-mails de forma eficiente com o GroupDocs.Viewer?**
-   - Considere o processamento em lote e a otimização dos recursos do sistema para gerenciar conjuntos de dados maiores de forma eficaz.
-4. **Posso integrar esta solução a um aplicativo Java existente?**
-   - Com certeza, integrar o GroupDocs.Viewer é simples em qualquer projeto baseado em Java usando dependências Maven.
-5. **Onde posso encontrar suporte se tiver problemas?**
-   - Visite o [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9) para apoio comunitário e oficial.
+## Seção de Perguntas Frequentes
+1. **Posso renomear todos os cabeçalhos de email usando este método?**  
+   - Sim, você pode mapear qualquer cabeçalho padrão de email para um novo nome conforme suas necessidades.  
+2. **É possível usar o GroupDocs.Viewer sem licença?**  
+   - Uma versão de teste está disponível para avaliação, mas a versão completa requer uma licença válida.  
+3. **Como lidar com grandes volumes de emails de forma eficiente com o GroupDocs.Viewer?**  
+   - Considere o processamento em lote e otimize os recursos do sistema para gerenciar conjuntos de dados maiores de forma eficaz.  
+4. **Posso integrar esta solução em uma aplicação Java existente?**  
+   - Absolutamente, a integração é simples usando dependências Maven.  
+5. **Onde posso encontrar suporte se encontrar problemas?**  
+   - Visite o [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) para assistência da comunidade e oficial.
+
+## Perguntas Frequentes
+
+**Q: Essa abordagem funciona com outros formatos de email como EML?**  
+A: Sim, o GroupDocs.Viewer suporta arquivos MSG e EML; a mesma lógica de mapeamento de campos se aplica.
+
+**Q: Posso gerar o HTML sem recursos incorporados?**  
+A: Você pode usar `HtmlViewOptions.forExternalResources(...)` se preferir arquivos CSS/JS separados.
+
+**Q: Qual versão do GroupDocs.Viewer foi testada?**  
+A: O código foi testado com o GroupDocs.Viewer **25.2**.
+
+**Q: É possível alterar a fonte ou o estilo dos cabeçalhos personalizados?**  
+A: A estilização pode ser aplicada via CSS após a renderização, ou você pode injetar CSS personalizado usando `HtmlViewOptions.getResourcesPath()`.
+
+**Q: Como recuperar programaticamente o caminho do arquivo HTML gerado?**  
+A: O caminho do arquivo segue o padrão definido em `pageFilePathFormat`; você pode construí‑lo usando `String.format` com o número da página.
 
 ## Recursos
-- **Documentação**: Guias completos estão disponíveis em [Documentação do GroupDocs](https://docs.groupdocs.com/viewer/java/).
-- **Referência de API**: Informações detalhadas da API podem ser encontradas em [Referência da API do GroupDocs](https://reference.groupdocs.com/viewer/java/).
-- **Baixar GroupDocs.Viewer**: Acesse a versão mais recente através do [Página de downloads](https://releases.groupdocs.com/viewer/java/)
+- **Documentação:** Guias abrangentes estão disponíveis em [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **Referência da API:** Informações detalhadas da API podem ser encontradas em [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Download do GroupDocs.Viewer:** Acesse a versão mais recente através da [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+
+---
+
+**Última atualização:** 2026-01-05  
+**Testado com:** GroupDocs.Viewer 25.2  
+**Autor:** GroupDocs  
+
+---

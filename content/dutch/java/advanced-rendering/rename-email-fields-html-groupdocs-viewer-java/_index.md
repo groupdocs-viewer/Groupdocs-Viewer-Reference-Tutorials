@@ -1,45 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Leer hoe u e-mailmetagegevens kunt aanpassen door velden zoals 'Van', 'Aan' en 'Onderwerp' te hernoemen wanneer u e-mails naar HTML weergeeft met behulp van GroupDocs.Viewer voor Java."
-"title": "Hoe u e-mailvelden hernoemt bij het converteren van e-mails naar HTML met behulp van GroupDocs.Viewer Java"
-"url": "/nl/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: Leer hoe u e‑mailvelden kunt hernoemen, e‑mail kunt converteren naar
+  HTML en e‑mailheaders kunt aanpassen met GroupDocs.Viewer voor Java.
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: Hoe e‑mailvelden te hernoemen bij het renderen van e‑mails naar HTML met GroupDocs.Viewer
+  Java
 type: docs
+url: /nl/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
-# Hoe u e-mailvelden kunt hernoemen bij het renderen van e-mails naar HTML met GroupDocs.Viewer Java
 
-## Invoering
+# Hoe e‑mailvelden hernoemen bij het renderen van e‑mails naar HTML met GroupDocs.Viewer Java
 
-Wilt u e-mailmetadata aanpassen tijdens het converteren van e-mails naar HTML? Deze uitgebreide handleiding begeleidt u bij het hernoemen van e-mailvelden met GroupDocs.Viewer voor Java. Met deze krachtige tool kunnen ontwikkelaars documenten naadloos weergeven en aanpassen hoe e-mailheaders in de HTML-uitvoer worden weergegeven, wat de leesbaarheid en bruikbaarheid verbetert.
+Vraag je je af **hoe je e‑mail**‑velden kunt hernoemen tijdens het converteren van een e‑mail naar HTML? In deze gids lopen we stap voor stap door hoe je e‑mailvelden hernoemt, **e‑mail naar HTML converteert** en **e‑mail‑headers aanpast** met GroupDocs.Viewer voor Java. Aan het einde heb je een nette HTML‑weergave met jouw gewenste header‑namen, waardoor de output makkelijker leesbaar en te integreren is in je applicaties.
 
-### Wat je leert:
-- Hoe u GroupDocs.Viewer voor Java gebruikt om e-mails naar HTML-formaat te converteren.
-- Technieken om e-mailvelden zoals 'Van', 'Aan', 'Verzonden' en 'Onderwerp' te hernoemen.
-- Aanbevolen procedures voor het instellen van uw omgeving met Maven.
-- Praktische toepassingen van het aanpassen van e-mailmetagegevens in praktijksituaties.
+![E‑mailvelden hernoemen bij het converteren van e‑mails naar HTML met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-Voordat u met de implementatie begint, moet u ervoor zorgen dat alles gereed is.
+### Wat je zult leren
+- Hoe je GroupDocs.Viewer voor Java gebruikt om **e‑mail naar HTML** te **converteren**.  
+- Technieken om **e‑mailvelden** zoals “From”, “To”, “Sent” en “Subject” te **hernoemen**.  
+- Best practices voor het instellen van Maven en licenties.  
+- Praktijkvoorbeelden waarbij **het aanpassen van e‑mail‑headers** waarde toevoegt.
+
+## Snelle antwoorden
+- **Wat betekent “hoe je e‑mail hernoemt”?** Het verwijst naar het toewijzen van aangepaste labels aan de standaard e‑mail‑headernamen tijdens het renderen.  
+- **Welke bibliotheek verzorgt de conversie?** GroupDocs.Viewer voor Java (v25.2+).  
+- **Heb ik een licentie nodig?** Een proefversie werkt voor evaluatie; een volledige licentie is vereist voor productie.  
+- **Kan ik elke headernaam wijzigen?** Ja, elke standaard e‑mail‑header kan worden gemapt via `fieldTextMap`.  
+- **Is de output HTML of ingesloten resources?** Je kunt kiezen voor ingesloten resources voor één enkel zelf‑containend bestand.
+
+## Wat betekent “hoe je e‑mail hernoemt” in de context van GroupDocs.Viewer?
+E‑mailvelden hernoemen betekent dat de standaardlabels (bijv. “From”) worden vervangen door aangepaste tekst (bijv. “Afzender”) wanneer de e‑mail wordt gerenderd naar HTML. Dit is handig om de output af te stemmen op de terminologie van je organisatie of de leesbaarheid voor eindgebruikers te verbeteren.
+
+## Waarom e‑mail naar HTML converteren en e‑mail‑headers aanpassen?
+- **Consistente branding:** Stem de taal van je organisatie af op alle communicatie.  
+- **Verbeterde doorzoekbaarheid:** Aangepaste headers kunnen effectiever worden geïndexeerd in archiveringssystemen.  
+- **Betere UI‑integratie:** Pas het HTML‑fragment aan zodat het naadloos past in webportalen of support‑dashboards.
 
 ## Vereisten
 
 ### Vereiste bibliotheken, versies en afhankelijkheden
-Om deze tutorial te volgen, heb je het volgende nodig:
-- **GroupDocs.Viewer voor Java**: Zorg ervoor dat u versie 25.2 of hoger hebt.
-- **Java-ontwikkelingskit (JDK)**: Versie 8 of hoger wordt aanbevolen.
+- **GroupDocs.Viewer voor Java** – versie 25.2 of hoger.  
+- **Java Development Kit (JDK)** – versie 8+.
 
-### Vereisten voor omgevingsinstellingen
-Stel uw ontwikkelomgeving in met de volgende hulpmiddelen:
-- **Maven** voor afhankelijkheidsbeheer en automatisering van projectbouw.
-- Een teksteditor of IDE zoals IntelliJ IDEA, Eclipse of Visual Studio Code.
+### Omgevingsinstellingen
+- **Maven** voor afhankelijkheidsbeheer.  
+- Een IDE zoals IntelliJ IDEA, Eclipse of VS Code.
 
 ### Kennisvereisten
-Een basiskennis van Java-programmering en kennis van Maven zijn een pré. Als je nieuw bent in deze gebieden, kan het nuttig zijn om eerst de inleidende bronnen te raadplegen voordat je verdergaat.
+Basiskennis van Java en Maven helpt je om snel mee te volgen.
 
-## GroupDocs.Viewer instellen voor Java
+## GroupDocs.Viewer voor Java instellen
 
-Om te beginnen, integreert u GroupDocs.Viewer in uw Java-project met behulp van Maven. Volg de onderstaande stappen:
-
-**Maven-configuratie**
+### Maven‑configuratie
 ```xml
 <repositories>
    <repository>
@@ -57,51 +73,44 @@ Om te beginnen, integreert u GroupDocs.Viewer in uw Java-project met behulp van 
 </dependencies>
 ```
 
-### Stappen voor het verkrijgen van een licentie
-- **Gratis proefperiode**: Download een gratis proefversie van [GroupDocs-releases](https://releases.groupdocs.com/viewer/java/).
-- **Tijdelijke licentie**:Krijg een tijdelijke licentie om de volledige functies zonder beperkingen te verkennen op [Tijdelijke licentie voor GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Aankoop**: Voor voortgezet gebruik kunt u overwegen een licentie aan te schaffen via [GroupDocs-aankoop](https://purchase.groupdocs.com/buy).
+### Stappen voor licentie‑acquisitie
+- **Gratis proefversie:** Download een gratis proefversie van [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Tijdelijke licentie:** Verkrijg een tijdelijke licentie om de volledige functionaliteit zonder beperkingen te verkennen via [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Aankoop:** Voor doorlopend gebruik kun je een licentie aanschaffen via [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-### Basisinitialisatie en -installatie
-Om GroupDocs.Viewer in uw Java-project te initialiseren:
+### Basisinitialisatie en -instelling
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // Voer hier bewerkingen uit
+            // Perform operations here
         }
     }
 }
 ```
-Dit codefragment demonstreert de basisconfiguratie voor het gebruik van GroupDocs.Viewer. Pas het bestandspad aan zodat het naar uw document verwijst.
+Pas het bestandspad aan zodat het naar je `.msg`‑bestand wijst.
 
-## Implementatiegids
+## Implementatie‑gids
 
-### E-mailvelden hernoemen
-In dit gedeelte leert u hoe u e-mailveldnamen kunt aanpassen bij het weergeven van een e-mailbericht in HTML-indeling.
+### E‑mailvelden hernoemen – stap‑voor‑stap
 
-#### Overzicht
-Het primaire doel is om standaard e-mailvelden zoals 'Van', 'Aan' en 'Onderwerp' toe te wijzen aan aangepaste namen, zoals 'Afzender', 'Ontvanger' en 'Onderwerp'.
-
-#### Stapsgewijze implementatie
-
-##### 1. Stel het pad naar de uitvoermap in
+#### 1. Output‑directory‑pad instellen
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Uitleg**: Vervangen `"YOUR_OUTPUT_DIRECTORY"` met het gewenste pad waar de HTML-bestanden moeten worden opgeslagen.
+*Vervang `"YOUR_OUTPUT_DIRECTORY"` door de map waarin je de HTML‑bestanden wilt opslaan.*
 
-##### 2. Definieer het padformaat van het paginabestand
+#### 2. Formaat voor paginabestandspad definiëren
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Uitleg**:Deze indeling bepaalt hoe de bestandsnaam van elke weergegeven pagina is gestructureerd, met `{0}` vervangen door het paginanummer.
+*`{0}` wordt tijdens het renderen vervangen door het paginanummer.*
 
-##### 3. Maak een toewijzing van e-mailvelden aan nieuwe namen
+#### 3. Een mapping van e‑mailvelden naar nieuwe namen maken
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +122,85 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**Uitleg**: Pas de e-mailmetagegevens aan door bestaande velden toe te wijzen aan uw gewenste namen.
+*Hier wijzigen we de standaardlabels naar aangepaste namen.*
 
-##### 4. HTML-weergaveopties configureren
+#### 4. HTML‑view‑opties configureren
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**Uitleg**: De `forEmbeddedResources` methode zorgt ervoor dat alle benodigde bronnen in het HTML-bestand zijn ingesloten, terwijl `setFieldTextMap` past uw aangepaste veldtoewijzingen toe.
+*`forEmbeddedResources` bundelt CSS/JS in de HTML, terwijl `setFieldTextMap` de aangepaste header‑namen toepast.*
 
-##### 5. De e-mail naar HTML weergeven
+#### 5. De e‑mail naar HTML renderen
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**Uitleg**: Aanpassen `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` met het pad naar uw MSG-bestand. Deze stap genereert de e-mail met behulp van de opgegeven opties.
+*Vervang `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` door het daadwerkelijke pad naar je MSG‑bestand.*
 
 #### Tips voor probleemoplossing
-- Zorg ervoor dat de uitvoermap schrijfbaar is.
-- Controleer of het invoer-MSG-bestand bestaat en toegankelijk is.
-- Controleer op compatibiliteitsproblemen als u een andere versie van GroupDocs.Viewer gebruikt.
+- Controleer of de output‑directory beschrijfbaar is.  
+- Zorg ervoor dat het invoer‑MSG‑bestand bestaat en het pad correct is.  
+- Gebruik dezelfde GroupDocs.Viewer‑versie (25.2) als gedeclareerd in Maven.
 
 ## Praktische toepassingen
-Deze functie is vooral handig in scenario's waarin:
-1. **Aangepaste e-mailrapporten**Door e-mailheaders af te stemmen op de terminologie van het bedrijf, verbetert u de leesbaarheid.
-2. **E-mailarchiveringssystemen**Door metagegevens aan te passen, verbetert u de efficiëntie van zoeken en ophalen.
-3. **Klantenondersteuningsplatforms**:Gepersonaliseerde e-mailheaders zorgen voor betere communicatie met de klant.
+1. **Aangepaste e‑mailrapporten:** Stem e‑mail‑headers af op de terminologie van de organisatie voor duidelijkere rapporten.  
+2. **E‑mail‑archiveringssystemen:** Verbeter de doorzoekbaarheid door gestandaardiseerde header‑namen te gebruiken.  
+3. **Klantenondersteuningsplatforms:** Presenteer tickets met gepersonaliseerde header‑labels voor een betere agent‑ervaring.
 
-## Prestatieoverwegingen
-Om de prestaties te optimaliseren bij het gebruik van GroupDocs.Viewer voor Java:
-- Gebruik efficiënte geheugenbeheertechnieken, zoals het op de juiste manier verwijderen van objecten met try-with-resources.
-- Maak een profiel van uw applicatie om knelpunten met betrekking tot documentweergave te identificeren en deze op de juiste manier aan te pakken.
+## Prestatie‑overwegingen
+- Maak `Viewer`‑objecten vrij met try‑with‑resources om het geheugen snel vrij te geven.  
+- Profileer grote batches en overweeg het verwerken van e‑mails in parallelle streams indien nodig.
 
 ## Conclusie
-Door deze handleiding te volgen, hebt u geleerd hoe u e-mailvelden effectief kunt hernoemen tijdens het conversieproces van e-mails naar HTML met behulp van GroupDocs.Viewer voor Java. Deze aanpassing verbetert zowel de functionaliteit als de bruikbaarheid van weergegeven documenten in verschillende applicaties.
+Je weet nu **hoe je e‑mail**‑velden kunt hernoemen terwijl je **e‑mail naar HTML** **converteert** en **e‑mail‑headers aanpast** met GroupDocs.Viewer voor Java. Deze techniek geeft je volledige controle over de weergave van e‑mail‑metadata in HTML‑outputs.
 
 ### Volgende stappen
-- Experimenteer met verschillende veldtoewijzingen.
-- Ontdek de extra functies van GroupDocs.Viewer om uw documentverwerkingsmogelijkheden te verbeteren.
-- Bezoek [GroupDocs-documentatie](https://docs.groupdocs.com/viewer/java/) voor meer geavanceerde technieken en voorbeelden.
+- Experimenteer met extra veld‑mappings (bijv. CC, BCC).  
+- Verken andere render‑formaten zoals PDF of PNG.  
+- Bezoek de [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) voor diepere API‑inzichten.
 
-## FAQ-sectie
-1. **Kan ik alle e-mailheaders op deze manier hernoemen?**
-   - Ja, u kunt elke standaard e-mailheader koppelen aan een nieuwe naam, afhankelijk van uw wensen.
-2. **Is het mogelijk om GroupDocs.Viewer te gebruiken zonder licentie?**
-   - Er is een proefversie beschikbaar voor testdoeleinden, maar voor een versie met alle functies is een geldige licentie vereist.
-3. **Hoe verwerk ik grote hoeveelheden e-mails efficiënt met GroupDocs.Viewer?**
-   - Overweeg batchverwerking en optimaliseer uw systeembronnen om grotere datasets effectief te beheren.
-4. **Kan ik deze oplossing integreren in een bestaande Java-applicatie?**
-   - Jazeker, GroupDocs.Viewer kan eenvoudig worden geïntegreerd in elk Java-project met behulp van Maven-afhankelijkheden.
-5. **Waar kan ik ondersteuning vinden als ik problemen ondervind?**
-   - Bezoek de [GroupDocs-forum](https://forum.groupdocs.com/c/viewer/9) voor steun van de gemeenschap en de overheid.
+## FAQ‑sectie
+1. **Kan ik alle e‑mail‑headers hernoemen met deze methode?**  
+   - Ja, je kunt elke standaard e‑mail‑header naar een nieuwe naam mappen volgens jouw eisen.  
+2. **Is het mogelijk GroupDocs.Viewer te gebruiken zonder licentie?**  
+   - Een proefversie is beschikbaar voor testen, maar een volledige versie vereist een geldige licentie.  
+3. **Hoe verwerk ik grote hoeveelheden e‑mails efficiënt met GroupDocs.Viewer?**  
+   - Overweeg batch‑verwerking en optimaliseer systeembronnen om grotere datasets effectief te beheren.  
+4. **Kan ik deze oplossing integreren in een bestaande Java‑applicatie?**  
+   - Absoluut, integratie is eenvoudig via Maven‑afhankelijkheden.  
+5. **Waar vind ik ondersteuning als ik problemen tegenkom?**  
+   - Bezoek het [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) voor community‑ en officiële hulp.
 
-## Bronnen
-- **Documentatie**: Uitgebreide gidsen zijn beschikbaar op [GroupDocs-documentatie](https://docs.groupdocs.com/viewer/java/).
-- **API-referentie**Gedetailleerde API-informatie is te vinden op [GroupDocs API-referentie](https://reference.groupdocs.com/viewer/java/).
-- **GroupDocs.Viewer downloaden**: Krijg toegang tot de nieuwste versie via de [Downloadpagina](https://releases.groupdocs.com/viewer/java/)
+## Veelgestelde vragen
+
+**V: Werkt deze aanpak met andere e‑mailformaten zoals EML?**  
+A: Ja, GroupDocs.Viewer ondersteunt zowel MSG‑ als EML‑bestanden; dezelfde veld‑mappinglogica is van toepassing.
+
+**V: Kan ik de HTML zonder ingesloten resources outputten?**  
+A: Je kunt `HtmlViewOptions.forExternalResources(...)` gebruiken als je losse CSS/JS‑bestanden verkiest.
+
+**V: Welke versie van GroupDocs.Viewer is getest?**  
+A: De code is getest met GroupDocs.Viewer **25.2**.
+
+**V: Is het mogelijk het lettertype of de stijl van de aangepaste headers te wijzigen?**  
+A: Styling kan na het renderen via CSS worden toegepast, of je kunt aangepaste CSS injecteren met `HtmlViewOptions.getResourcesPath()`.
+
+**V: Hoe haal ik programmatically het gegenereerde HTML‑bestandspad op?**  
+A: Het bestandspad volgt het patroon dat is gedefinieerd in `pageFilePathFormat`; je kunt het construeren met `String.format` en het paginanummer.
+
+## Resources
+- **Documentatie:** Uitgebreide gidsen zijn beschikbaar op [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API‑referentie:** Gedetailleerde API‑informatie vind je op [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **GroupDocs.Viewer downloaden:** Toegang tot de nieuwste versie via de [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+
+---
+
+**Laatst bijgewerkt:** 2026-01-05  
+**Getest met:** GroupDocs.Viewer 25.2  
+**Auteur:** GroupDocs  
+
+---
