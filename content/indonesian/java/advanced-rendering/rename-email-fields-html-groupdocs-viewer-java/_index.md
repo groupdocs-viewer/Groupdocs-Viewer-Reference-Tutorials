@@ -1,45 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara menyesuaikan metadata email dengan mengganti nama bidang seperti 'Dari', 'Kepada', dan 'Subjek' saat menyajikan email ke HTML menggunakan GroupDocs.Viewer untuk Java."
-"title": "Cara Mengganti Nama Kolom Email Saat Mengonversi Email ke HTML Menggunakan GroupDocs.Viewer Java"
-"url": "/id/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: Pelajari cara mengganti nama bidang email, mengonversi email ke HTML,
+  dan menyesuaikan header email menggunakan GroupDocs.Viewer untuk Java.
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: Cara Mengubah Nama Kolom Email Saat Merender Email ke HTML dengan GroupDocs.Viewer
+  Java
 type: docs
+url: /id/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
+
 # Cara Mengganti Nama Kolom Email Saat Merender Email ke HTML dengan GroupDocs.Viewer Java
 
-## Perkenalan
+Apakah Anda bertanya-tanya **bagaimana cara mengganti nama email** saat mengonversi email ke HTML? Dalam panduan ini kami akan menjelaskan langkah‑langkah tepat untuk mengganti nama kolom email, **mengonversi email ke HTML**, dan **menyesuaikan header email** menggunakan GroupDocs.Viewer untuk Java. Pada akhir panduan Anda akan memiliki representasi HTML yang bersih dengan nama header pilihan Anda, sehingga output lebih mudah dibaca dan diintegrasikan ke dalam aplikasi Anda.
 
-Apakah Anda ingin menyesuaikan metadata email saat mengonversi email ke HTML? Panduan lengkap ini akan memandu Anda mengganti nama kolom email menggunakan GroupDocs.Viewer untuk Java. Dengan alat canggih ini, pengembang dapat merender dokumen dengan lancar dan menyesuaikan tampilan tajuk email dalam keluaran HTML, sehingga meningkatkan keterbacaan dan kegunaan.
+![Ganti Nama Kolom Email Saat Mengonversi Email ke HTML dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-### Apa yang Akan Anda Pelajari:
-- Cara menggunakan GroupDocs.Viewer untuk Java untuk mengonversi email ke format HTML.
-- Teknik untuk mengganti nama kolom email seperti "Dari", "Kepada", "Terkirim", dan "Subjek".
-- Praktik terbaik untuk menyiapkan lingkungan Anda dengan Maven.
-- Aplikasi praktis untuk menyesuaikan metadata email dalam skenario dunia nyata.
+### Apa yang Akan Anda Pelajari
+- Cara menggunakan GroupDocs.Viewer untuk Java untuk **mengonversi email ke HTML**.  
+- Teknik untuk **mengganti nama kolom email** seperti “From,” “To,” “Sent,” dan “Subject.”  
+- Praktik terbaik untuk menyiapkan Maven dan lisensi.  
+- Skenario dunia nyata di mana **menyesuaikan header email** menambah nilai.
 
-Sebelum memulai implementasi, mari pastikan Anda telah menyiapkan semuanya.
+## Jawaban Cepat
+- **Apa arti “bagaimana cara mengganti nama email”?** Ini merujuk pada pemetaan nama header email default ke label khusus selama proses rendering.  
+- **Perpustakaan mana yang menangani konversi?** GroupDocs.Viewer untuk Java (v25.2+).  
+- **Apakah saya memerlukan lisensi?** Versi percobaan dapat digunakan untuk evaluasi; lisensi penuh diperlukan untuk produksi.  
+- **Bisakah saya mengubah nama header apa pun?** Ya, setiap header email standar dapat dipetakan ulang melalui `fieldTextMap`.  
+- **Apakah output berupa HTML atau sumber daya tersemat?** Anda dapat memilih sumber daya tersemat untuk satu file mandiri.
+
+## Apa Itu “Bagaimana Cara Mengganti Nama Email” dalam Konteks GroupDocs.Viewer?
+Mengganti nama kolom email berarti mengganti label default (misalnya “From”) dengan teks khusus (misalnya “Sender”) saat email dirender ke HTML. Ini berguna untuk menyelaraskan output dengan terminologi perusahaan atau meningkatkan keterbacaan bagi pengguna akhir.
+
+## Mengapa Mengonversi Email ke HTML dan Menyesuaikan Header Email?
+- **Branding konsisten:** Sesuaikan bahasa organisasi Anda di semua komunikasi.  
+- **Pencarian yang lebih baik:** Header khusus dapat diindeks lebih efektif dalam sistem arsip.  
+- **Integrasi UI yang lebih baik:** Sesuaikan potongan HTML agar cocok secara mulus ke portal web atau dasbor dukungan.
 
 ## Prasyarat
 
-### Pustaka, Versi, dan Ketergantungan yang Diperlukan
-Untuk mengikuti tutorial ini, Anda memerlukan:
-- **GroupDocs.Viewer untuk Java**Pastikan Anda memiliki versi 25.2 atau yang lebih baru.
-- **Kit Pengembangan Java (JDK)**: Versi 8 atau lebih tinggi direkomendasikan.
+### Perpustakaan, Versi, dan Dependensi yang Diperlukan
+- **GroupDocs.Viewer untuk Java** – versi 25.2 atau lebih baru.  
+- **Java Development Kit (JDK)** – versi 8+.
 
-### Persyaratan Pengaturan Lingkungan
-Siapkan lingkungan pengembangan Anda dengan alat berikut:
-- **Pakar** untuk manajemen ketergantungan dan otomatisasi pembangunan proyek.
-- Editor teks atau IDE seperti IntelliJ IDEA, Eclipse, atau Visual Studio Code.
+### Persyaratan Penyiapan Lingkungan
+- **Maven** untuk manajemen dependensi.  
+- IDE seperti IntelliJ IDEA, Eclipse, atau VS Code.
 
 ### Prasyarat Pengetahuan
-Pemahaman dasar tentang pemrograman Java dan keakraban dengan Maven akan bermanfaat. Jika Anda baru mengenal bidang ini, mungkin ada baiknya untuk mempelajari sumber daya pengantar sebelum melanjutkan.
+Pemahaman dasar tentang Java dan Maven akan membantu Anda mengikuti dengan cepat.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
 
-Untuk memulai, integrasikan GroupDocs.Viewer ke dalam proyek Java Anda menggunakan Maven. Ikuti langkah-langkah berikut:
-
-**Konfigurasi Maven**
+### Konfigurasi Maven
 ```xml
 <repositories>
    <repository>
@@ -57,51 +73,44 @@ Untuk memulai, integrasikan GroupDocs.Viewer ke dalam proyek Java Anda menggunak
 </dependencies>
 ```
 
-### Langkah-langkah Memperoleh Lisensi
-- **Uji Coba Gratis**: Unduh uji coba gratis dari [Rilis GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Lisensi Sementara**Dapatkan lisensi sementara untuk menjelajahi fitur lengkap tanpa batasan di [Lisensi Sementara GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Pembelian**:Untuk penggunaan berkelanjutan, pertimbangkan untuk membeli lisensi melalui [Pembelian GroupDocs](https://purchase.groupdocs.com/buy).
+### Langkah-langkah Akuisisi Lisensi
+- **Versi Percobaan Gratis:** Unduh versi percobaan gratis dari [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Lisensi Sementara:** Dapatkan lisensi sementara untuk menjelajahi semua fitur tanpa batasan di [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Pembelian:** Untuk penggunaan berkelanjutan, pertimbangkan membeli lisensi melalui [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-### Inisialisasi dan Pengaturan Dasar
-Untuk menginisialisasi GroupDocs.Viewer di proyek Java Anda:
+### Inisialisasi dan Penyiapan Dasar
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // Lakukan operasi di sini
+            // Perform operations here
         }
     }
 }
 ```
-Potongan kode ini menunjukkan pengaturan dasar untuk menggunakan GroupDocs.Viewer. Sesuaikan jalur file untuk menunjuk ke dokumen Anda.
+Sesuaikan jalur file untuk mengarah ke file `.msg` Anda.
 
 ## Panduan Implementasi
 
-### Mengganti Nama Kolom Email
-Di bagian ini, Anda akan mempelajari cara menyesuaikan nama bidang email saat menyajikan pesan email ke format HTML.
+### Mengganti Nama Kolom Email – Langkah‑per‑Langkah
 
-#### Ringkasan
-Sasaran utamanya adalah memetakan kolom email default seperti "Dari", "Kepada", dan "Subjek" ke nama khusus seperti "Pengirim", "Penerima", dan "Topik".
-
-#### Implementasi Langkah demi Langkah
-
-##### 1. Mengatur Jalur Direktori Output
+#### 1. Siapkan Jalur Direktori Output
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Penjelasan**: Mengganti `"YOUR_OUTPUT_DIRECTORY"` dengan jalur yang Anda inginkan di mana file HTML akan disimpan.
+*Ganti `"YOUR_OUTPUT_DIRECTORY"` dengan folder tempat Anda ingin menyimpan file HTML.*
 
-##### 2. Tentukan Format Jalur File Halaman
+#### 2. Tentukan Format Jalur File Halaman
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Penjelasan**:Format ini menentukan bagaimana nama file setiap halaman yang ditampilkan disusun, dengan `{0}` diganti dengan nomor halaman.
+*`{0}` akan diganti dengan nomor halaman selama proses rendering.*
 
-##### 3. Buat Pemetaan Bidang Email ke Nama Baru
+#### 3. Buat Pemetaan Kolom Email ke Nama Baru
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +122,83 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**Penjelasan**: Sesuaikan metadata email dengan memetakan bidang yang ada ke nama pilihan Anda.
+*Di sini kami mengubah label default menjadi label khusus.*
 
-##### 4. Konfigurasikan Opsi Tampilan HTML
+#### 4. Konfigurasikan Opsi Tampilan HTML
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**Penjelasan**: : Itu `forEmbeddedResources` metode memastikan semua sumber daya yang diperlukan tertanam dalam file HTML, sementara `setFieldTextMap` menerapkan pemetaan bidang kustom Anda.
+*`forEmbeddedResources` menggabungkan CSS/JS di dalam HTML, sementara `setFieldTextMap` menerapkan nama header khusus.*
 
-##### 5. Render Email ke HTML
+#### 5. Render Email ke HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**Penjelasan**: Menyesuaikan `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` dengan jalur ke berkas MSG Anda. Langkah ini akan menampilkan email menggunakan opsi yang ditentukan.
+*Ganti `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` dengan jalur sebenarnya ke file MSG Anda.*
 
 #### Tips Pemecahan Masalah
-- Pastikan direktori keluaran dapat ditulis.
-- Verifikasi bahwa berkas MSG masukan ada dan dapat diakses.
-- Periksa masalah kompatibilitas jika Anda menggunakan versi GroupDocs.Viewer yang berbeda.
+- Pastikan direktori output dapat ditulisi.  
+- Pastikan file MSG input ada dan jalurnya benar.  
+- Gunakan versi GroupDocs.Viewer yang sama (25.2) seperti yang dideklarasikan di Maven.
 
 ## Aplikasi Praktis
-Fitur ini sangat berguna dalam skenario berikut:
-1. **Laporan Email Kustom**: Menyesuaikan tajuk email agar sesuai dengan terminologi perusahaan meningkatkan keterbacaan.
-2. **Sistem Pengarsipan Email**: Menyesuaikan metadata meningkatkan efisiensi pencarian dan pengambilan.
-3. **Platform Dukungan Pelanggan**: Header email yang dipersonalisasi membantu komunikasi klien yang lebih baik.
+1. **Laporan Email Kustom:** Sesuaikan header email dengan terminologi perusahaan untuk laporan yang lebih jelas.  
+2. **Sistem Arsip Email:** Tingkatkan kemampuan pencarian dengan menggunakan nama header yang terstandarisasi.  
+3. **Platform Dukungan Pelanggan:** Tampilkan tiket dengan label header yang dipersonalisasi untuk pengalaman agen yang lebih baik.
 
 ## Pertimbangan Kinerja
-Untuk mengoptimalkan kinerja saat menggunakan GroupDocs.Viewer untuk Java:
-- Gunakan teknik manajemen memori yang efisien, seperti pembuangan objek yang tepat dengan mencoba-dengan-sumber-daya.
-- Profilkan aplikasi Anda untuk mengidentifikasi hambatan yang terkait dengan penyajian dokumen dan menanganinya dengan tepat.
+- Buang objek `Viewer` dengan try‑with‑resources untuk membebaskan memori secara cepat.  
+- Profilkan batch besar dan pertimbangkan memproses email dalam aliran paralel jika diperlukan.
 
 ## Kesimpulan
-Dengan mengikuti panduan ini, Anda telah mempelajari cara mengganti nama kolom email secara efektif selama proses konversi dari email ke HTML menggunakan GroupDocs.Viewer untuk Java. Kustomisasi ini meningkatkan fungsionalitas dan kegunaan dokumen yang ditampilkan dalam berbagai aplikasi.
+Anda sekarang tahu **cara mengganti nama email** saat **mengonversi email ke HTML** dan **menyesuaikan header email** dengan GroupDocs.Viewer untuk Java. Teknik ini memberi Anda kontrol penuh atas penyajian metadata email dalam output HTML.
 
-### Langkah Berikutnya
-- Bereksperimenlah dengan pemetaan medan yang berbeda.
-- Jelajahi fitur tambahan GroupDocs.Viewer untuk meningkatkan kemampuan pemrosesan dokumen Anda.
-- Mengunjungi [Dokumentasi GroupDocs](https://docs.groupdocs.com/viewer/java/) untuk teknik dan contoh yang lebih maju.
+### Langkah Selanjutnya
+- Bereksperimen dengan pemetaan kolom tambahan (mis., CC, BCC).  
+- Jelajahi format rendering lain seperti PDF atau PNG.  
+- Kunjungi [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) untuk wawasan API yang lebih mendalam.
 
 ## Bagian FAQ
-1. **Bisakah saya mengganti nama semua header email menggunakan metode ini?**
-   - Ya, Anda dapat memetakan header email standar apa pun ke nama baru sesuai kebutuhan Anda.
-2. **Apakah mungkin menggunakan GroupDocs.Viewer tanpa lisensi?**
-   - Versi uji coba tersedia untuk tujuan pengujian, tetapi versi berfitur lengkap memerlukan lisensi yang valid.
-3. **Bagaimana cara menangani email bervolume besar secara efisien dengan GroupDocs.Viewer?**
-   - Pertimbangkan pemrosesan batch dan optimalkan sumber daya sistem Anda untuk mengelola kumpulan data yang lebih besar secara efektif.
-4. **Dapatkah saya mengintegrasikan solusi ini ke dalam aplikasi Java yang ada?**
-   - Tentu saja, mengintegrasikan GroupDocs.Viewer mudah dilakukan dalam proyek berbasis Java apa pun yang menggunakan dependensi Maven.
-5. **Di mana saya dapat menemukan dukungan jika saya mengalami masalah?**
-   - Kunjungi [Forum GrupDocs](https://forum.groupdocs.com/c/viewer/9) untuk dukungan masyarakat dan resmi.
+1. **Bisakah saya mengganti semua header email menggunakan metode ini?**  
+   - Ya, Anda dapat memetakan header email standar apa pun ke nama baru sesuai kebutuhan Anda.  
+2. **Apakah memungkinkan menggunakan GroupDocs.Viewer tanpa lisensi?**  
+   - Versi percobaan tersedia untuk pengujian, tetapi versi lengkap memerlukan lisensi yang valid.  
+3. **Bagaimana cara menangani volume email yang besar secara efisien dengan GroupDocs.Viewer?**  
+   - Pertimbangkan pemrosesan batch dan optimalkan sumber daya sistem untuk mengelola dataset yang lebih besar secara efektif.  
+4. **Bisakah saya mengintegrasikan solusi ini ke dalam aplikasi Java yang ada?**  
+   - Tentu saja, integrasi mudah dilakukan menggunakan dependensi Maven.  
+5. **Di mana saya dapat menemukan dukungan jika mengalami masalah?**  
+   - Kunjungi [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) untuk bantuan komunitas dan resmi.
 
-## Sumber daya
-- **Dokumentasi**:Panduan lengkap tersedia di [Dokumentasi GroupDocs](https://docs.groupdocs.com/viewer/java/).
-- **Referensi API**Informasi API terperinci dapat ditemukan di [Referensi API GroupDocs](https://reference.groupdocs.com/viewer/java/).
-- **Unduh GroupDocs.Viewer**:Akses versi terbaru melalui [Halaman Unduhan](https://releases.groupdocs.com/viewer/java/)
+## Pertanyaan yang Sering Diajukan
+
+**T: Apakah pendekatan ini bekerja dengan format email lain seperti EML?**  
+J: Ya, GroupDocs.Viewer mendukung file MSG dan EML; logika pemetaan kolom yang sama berlaku.
+
+**T: Bisakah saya menghasilkan HTML tanpa sumber daya tersemat?**  
+J: Anda dapat menggunakan `HtmlViewOptions.forExternalResources(...)` jika lebih suka file CSS/JS terpisah.
+
+**T: Versi GroupDocs.Viewer apa yang diuji?**  
+J: Kode tersebut diuji dengan GroupDocs.Viewer **25.2**.
+
+**T: Apakah memungkinkan mengubah font atau gaya header khusus?**  
+J: Styling dapat diterapkan melalui CSS setelah rendering, atau Anda dapat menyuntikkan CSS khusus menggunakan `HtmlViewOptions.getResourcesPath()`.
+
+**T: Bagaimana cara mendapatkan jalur file HTML yang dihasilkan secara programatik?**  
+J: Jalur file mengikuti pola yang didefinisikan dalam `pageFilePathFormat`; Anda dapat membangunnya menggunakan `String.format` dengan nomor halaman.
+
+## Sumber Daya
+- **Dokumentasi:** Panduan lengkap tersedia di [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **Referensi API:** Informasi API detail dapat ditemukan di [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Unduh GroupDocs.Viewer:** Akses versi terbaru melalui [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+
+---
+
+**Terakhir Diperbarui:** 2026-01-05  
+**Diuji Dengan:** GroupDocs.Viewer 25.2  
+**Penulis:** GroupDocs
