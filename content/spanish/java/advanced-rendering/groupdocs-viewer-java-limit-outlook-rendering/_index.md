@@ -1,37 +1,64 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a optimizar la representación de archivos PST/OST grandes con GroupDocs.Viewer para Java limitando el número de elementos y mejorando el rendimiento y la eficiencia."
-"title": "Limitar la representación de elementos de Outlook en Java mediante GroupDocs.Viewer&#58; una guía completa"
-"url": "/es/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/"
-"weight": 1
+date: '2025-12-20'
+description: Aprende cómo limitar los elementos de la carpeta de Outlook configurando
+  el número máximo de elementos por carpeta en GroupDocs.Viewer para Java, mejorando
+  el rendimiento al renderizar archivos PST/OST grandes.
+keywords:
+- GroupDocs.Viewer Java
+- Outlook item rendering
+- PST file rendering
+title: Cómo establecer el número máximo de elementos por carpeta en la renderización
+  de Outlook con GroupDocs.Viewer para Java
 type: docs
+url: /es/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/
+weight: 1
 ---
-# Limitar la representación de elementos de Outlook en Java mediante GroupDocs.Viewer
 
-## Descripción general
-¿Tiene dificultades para administrar archivos grandes de datos de Outlook, como PST u OST? Esta guía muestra cómo limitar el número de elementos procesados al renderizar estos archivos con GroupDocs.Viewer para Java, lo que mejora la eficiencia y la capacidad de respuesta de su aplicación.
+# Limitar la representación de elementos de Outlook en Java usando GroupDocs.Viewer
 
-### Lo que aprenderás:
-- Configuración de GroupDocs.Viewer para Java
-- Configuración de la biblioteca para limitar la cantidad de elementos en los archivos de Outlook
-- Aplicaciones prácticas y consideraciones de rendimiento
+Gestionar archivos de datos de Outlook masivos (PST u OST) puede convertirse rápidamente en un cuello de botella de rendimiento. En esta guía descubrirá cómo **max items per folder** al renderizar con GroupDocs.Viewer para Java, de modo que solo procese los datos que realmente necesita. Al aplicar la técnica **limit items outlook folder**, su aplicación se mantiene receptiva incluso con gigabytes de datos de correo electrónico.
 
-Comencemos configurando su entorno e implementando esta función de manera efectiva.
+![Limit Outlook Item Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/limit-outlook-item-rendering-java.png)
 
-## Prerrequisitos
+### Lo que aprenderá
+- Configurar GroupDocs.Viewer para Java
+- Configurar la biblioteca para **max items per folder** en archivos de Outlook
+- Escenarios del mundo real donde limitar los elementos por carpeta mejora la velocidad y reduce el uso de memoria
+
+Recorramos la configuración e implementación paso a paso.
+
+## Respuestas rápidas
+- **¿Qué hace “max items per folder”?** Restringe la representación a un número definido de elementos de correo electrónico dentro de cada carpeta de Outlook.  
+- **¿Por qué limitar items outlook folder?** Para reducir el tiempo de procesamiento y el consumo de memoria en buzones grandes.  
+- **¿Qué versión admite esta función?** GroupDocs.Viewer 25.2 y posteriores.  
+- **¿Necesito una licencia?** Sí, se requiere una licencia de prueba o comprada para uso en producción.  
+- **¿Puedo cambiar el límite en tiempo de ejecución?** Absolutamente: simplemente modifique el valor `setMaxItemsInFolder` antes de renderizar.
+
+## Visión general
+¿Tiene dificultades para gestionar archivos de datos de Outlook grandes, como PST u OST? Esta guía muestra cómo limitar la cantidad de elementos procesados al renderizar estos archivos usando GroupDocs.Viewer para Java, mejorando la eficiencia y capacidad de respuesta de su aplicación.
+
+### ¿Qué es “max items per folder”?
+La configuración **max items per folder** indica al visor que se detenga después de haber renderizado una cantidad específica de elementos en cada carpeta. Esto es especialmente útil cuando solo necesita una vista previa de los correos recientes o cuando está generando informes que no requieren todo el buzón.
+
+### ¿Por qué usar el enfoque limit items outlook folder?
+- **Rendimiento:** Tiempos de renderizado más rápidos y menor uso de CPU.  
+- **Escalabilidad:** Manejar buzones más grandes sin agotar la memoria de la JVM.  
+- **Flexibilidad:** Ajustar el límite según las preferencias del usuario o las capacidades del dispositivo.
+
+## Requisitos previos
 Asegúrese de tener lo siguiente antes de comenzar:
 
 ### Bibliotecas y dependencias requeridas:
-1. **Kit de desarrollo de Java (JDK)**:Instalar JDK 8 o posterior.
-2. **GroupDocs.Viewer para Java**:Agregar como una dependencia en su proyecto.
+1. **Java Development Kit (JDK)**: Instale JDK 8 o posterior.  
+2. **GroupDocs.Viewer for Java**: Añádalo como dependencia en su proyecto.
 
 ### Requisitos de configuración del entorno:
-- Un IDE adecuado como IntelliJ IDEA, Eclipse o NetBeans.
-- Maven está instalado si estás administrando dependencias a través de él.
+- Un IDE adecuado como IntelliJ IDEA, Eclipse o NetBeans.  
+- Maven instalado si gestiona dependencias a través de él.
 
-### Requisitos de conocimiento:
-- Comprensión básica de programación Java y manejo de archivos.
-- La familiaridad con el trabajo en proyectos Maven es beneficiosa, pero no obligatoria.
+### Conocimientos previos:
+- Comprensión básica de la programación Java y manejo de archivos.  
+- Familiaridad con proyectos Maven es beneficiosa pero no obligatoria.
 
 ## Configuración de GroupDocs.Viewer para Java
 Configure GroupDocs.Viewer en su proyecto usando Maven:
@@ -54,102 +81,113 @@ Configure GroupDocs.Viewer en su proyecto usando Maven:
 </dependencies>
 ```
 
-### Pasos para la adquisición de la licencia:
-- **Prueba gratuita**:Descargue una prueba gratuita desde [Documentos de grupo](https://releases.groupdocs.com/viewer/java/) para explorar las características de la biblioteca.
-- **Licencia temporal**: Obtenga una licencia temporal para acceso completo sin limitaciones de evaluación en [Licencia temporal de GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Compra**:Para uso a largo plazo, considere comprar una licencia de [Página de compra de GroupDocs](https://purchase.groupdocs.com/buy).
+### Pasos para adquirir la licencia
+- **Prueba gratuita**: Descargue una prueba gratuita de [GroupDocs](https://releases.groupdocs.com/viewer/java/) para explorar las funciones de la biblioteca.  
+- **Licencia temporal**: Obtenga una licencia temporal para acceso completo sin limitaciones de evaluación en [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Compra**: Para uso a largo plazo, considere comprar una licencia en [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
-### Inicialización y configuración básica:
-Una vez configurado Maven, inicialice GroupDocs.Viewer en su aplicación Java configurando el objeto visor. Esto le permitirá cargar y renderizar documentos.
+### Inicialización y configuración básica
+Una vez configurado Maven, inicialice GroupDocs.Viewer en su aplicación Java configurando el objeto visor. Esto le permite cargar y renderizar documentos.
 
 ## Guía de implementación
 
-### Limitar los elementos procesados desde los archivos de Outlook
-Esta sección detalla cómo limitar los elementos representados desde los archivos de datos de Outlook mediante GroupDocs.Viewer para Java.
+### Limitar los elementos renderizados de archivos Outlook
+Esta sección detalla cómo limitar los elementos renderizados de archivos de datos Outlook usando GroupDocs.Viewer para Java.
 
-#### Descripción general
-Al configurar opciones específicas, puede restringir la representación a un número determinado de elementos por carpeta. Esta función mejora el rendimiento y la eficiencia al gestionar grandes conjuntos de datos de correo electrónico.
+#### Visión general
+Al configurar opciones específicas, puede restringir la representación a una cierta cantidad de elementos por carpeta. Esta función mejora el rendimiento y la eficiencia al manejar grandes conjuntos de datos de correo electrónico.
 
 **Paso 1: Configurar la ruta del directorio de salida**
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("LimitCountOfItemsToRender");
 ```
-Este código configura el directorio donde se almacenarán los archivos HTML renderizados. Reemplazar `"LimitCountOfItemsToRender"` con el nombre de ruta deseado.
+Este código configura el directorio donde se almacenarán los archivos HTML renderizados. Reemplace `"LimitCountOfItemsToRender"` con el nombre de ruta que desee.
 
-**Paso 2: Definir el formato de la ruta de archivo para las páginas HTML**
+**Paso 2: Definir el formato de ruta de archivo para páginas HTML**
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-Cree un formato de nombres consistente para las páginas HTML generadas durante la renderización, garantizando así un fácil acceso y gestión.
+Cree un formato de nomenclatura consistente para las páginas HTML generadas durante la renderización, garantizando un fácil acceso y gestión.
 
-**Paso 3: Configurar HtmlViewOptions con recursos integrados**
+**Paso 3: Configurar HtmlViewOptions con recursos incrustados**
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-Esta opción especifica cómo se representan los documentos con recursos integrados, lo que permite una mejor integración de imágenes y estilos.
+Esta opción especifica cómo se renderizan los documentos con recursos incrustados, permitiendo una mejor integración de imágenes y estilos.
 
-**Paso 4: Configure las opciones de Outlook para limitar los elementos por carpeta**
+**Paso 4: Configurar las opciones de Outlook para limitar los elementos por carpeta**
 ```java
-viewOptions.getOutlookOptions().setMaxItemsInFolder(3); // Representar solo los primeros 3 elementos en cada carpeta
+viewOptions.getOutlookOptions().setMaxItemsInFolder(3); // Render only the first 3 items in each folder
 ```
-Aquí, limitamos el proceso de renderizado a los tres primeros elementos por carpeta. Ajuste la cantidad según sus necesidades.
+Aquí, establecemos **max items per folder** a tres. Ajuste el número según sus requisitos para el escenario **limit items outlook folder**.
 
 **Paso 5: Cargar y renderizar el documento**
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_OST)) {
-    viewer.view(viewOptions); // Ejecutar renderizado con opciones especificadas
+    viewer.view(viewOptions); // Execute rendering with specified options
 }
 ```
-Utilice el `Viewer` Clase para cargar un archivo OST y renderizarlo según las opciones de vista definidas. La instrucción try-with-resources garantiza que los recursos se cierren correctamente después de su uso.
+Utilice la clase `Viewer` para cargar un archivo OST y renderizarlo según las opciones de vista definidas. La instrucción try‑with‑resources garantiza que los recursos se cierren correctamente después de su uso.
 
-### Consejos para la solución de problemas:
-- Asegúrese de que todas las rutas y directorios existan antes de ejecutar su código.
-- Validar que las dependencias de GroupDocs.Viewer se resuelvan correctamente mediante Maven.
-- Verifique si hay excepciones durante la renderización, que puedan indicar problemas con los formatos de archivo o permisos.
+### Consejos de solución de problemas
+- Asegúrese de que todas las rutas y directorios existan antes de ejecutar su código.  
+- Verifique que las dependencias de GroupDocs.Viewer se resuelvan correctamente mediante Maven.  
+- Revise si hay excepciones durante la renderización, lo que podría indicar problemas con formatos de archivo o permisos.
 
 ## Aplicaciones prácticas
-1. **Archivado de correo electrónico**:Limitar la representación de elementos es ideal para aplicaciones que se centran en archivar correos electrónicos específicos en lugar de conjuntos de datos completos.
-2. **Migración de datos**:Al migrar datos entre sistemas, procese solo los elementos necesarios para optimizar el rendimiento y reducir el tiempo de procesamiento.
-3. **Informes personalizados**:Genere informes procesando de forma selectiva el contenido de correo electrónico requerido sin cargar carpetas enteras.
+1. **Archivado de correo electrónico** – Limitar la representación de elementos es ideal para aplicaciones que se centran en archivar correos específicos en lugar de conjuntos de datos completos.  
+2. **Migración de datos** – Al migrar datos entre sistemas, renderice solo los elementos necesarios para optimizar el rendimiento y reducir el tiempo de procesamiento.  
+3. **Informes personalizados** – Genere informes renderizando selectivamente el contenido de correo necesario sin cargar carpetas completas.
 
 ## Consideraciones de rendimiento
-### Consejos para optimizar el rendimiento:
-- Limite la cantidad de elementos por carpeta para reducir el uso de memoria.
-- Utilice los recursos integrados de manera eficiente para evitar llamadas de red adicionales durante la renderización.
+### Consejos para optimizar el rendimiento
+- Limite la cantidad de elementos por carpeta para reducir el uso de memoria.  
+- Utilice los recursos incrustados de manera eficiente para evitar llamadas de red adicionales durante la renderización.
 
-### Pautas de uso de recursos:
-- Supervise la memoria JVM y ajuste la configuración según el tamaño de los archivos de Outlook que se procesan.
+### Directrices de uso de recursos
+- Monitoree la memoria de la JVM y ajuste la configuración según el tamaño de los archivos Outlook que se procesan.
 
-### Mejores prácticas para la gestión de memoria en Java:
-- Utilice try-with-resources para la gestión automática de recursos.
-- Cree un perfil de su aplicación para identificar cuellos de botella relacionados con el manejo de archivos grandes.
+### Mejores prácticas para la gestión de memoria en Java
+- Utilice try‑with‑resources para la gestión automática de recursos.  
+- Perfilar su aplicación para identificar cuellos de botella relacionados con el manejo de archivos grandes.
 
 ## Conclusión
-En este tutorial, aprendió a limitar eficazmente la representación de elementos en archivos de datos de Outlook con GroupDocs.Viewer para Java. Siguiendo estos pasos y teniendo en cuenta las sugerencias de rendimiento, podrá crear aplicaciones eficientes adaptadas a sus necesidades específicas.
+En este tutorial, ha aprendido cómo aplicar eficazmente **max items per folder** en archivos de datos Outlook usando GroupDocs.Viewer para Java. Siguiendo estos pasos y considerando los consejos de rendimiento, puede crear aplicaciones eficientes adaptadas a necesidades específicas.
 
-### Próximos pasos:
-- Explore las características adicionales de GroupDocs.Viewer consultando la [documentación oficial](https://docs.groupdocs.com/viewer/java/).
+### Próximos pasos
+- Explore características adicionales de GroupDocs.Viewer consultando la [documentación oficial](https://docs.groupdocs.com/viewer/java/).  
 - Experimente con diferentes opciones de renderizado para encontrar la mejor configuración para los requisitos de su aplicación.
-  
-¿Listo para probarlo? Empieza a implementar esta solución en tus proyectos hoy mismo y comprueba de primera mano cómo mejora la eficiencia.
 
-## Sección de preguntas frecuentes
-1. **¿Para qué se utiliza GroupDocs.Viewer Java?**
-   - Es una biblioteca versátil diseñada para convertir varios formatos de documentos, incluidos archivos de datos de Outlook, en formatos HTML o de imagen.
-2. **¿Cómo puedo obtener una prueba gratuita de GroupDocs.Viewer?**
-   - Visita [Prueba gratuita de GroupDocs](https://releases.groupdocs.com/viewer/java/) para opciones de acceso y descarga.
-3. **¿Puedo limitar la representación de elementos también en archivos PST?**
-   - Sí, la misma configuración se aplica a los formatos de archivos OST y PST.
-4. **¿Qué debo hacer si mi aplicación se ejecuta lentamente durante la renderización?**
-   - Revise los límites de elementos y la configuración de recursos; considere optimizar las prácticas de administración de memoria.
-5. **¿Dónde puedo encontrar ayuda para problemas con GroupDocs.Viewer?**
-   - Para obtener ayuda, consulte la [Foro de soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9).
+¿Listo para probarlo? Comience a implementar esta solución en sus proyectos hoy y experimente una mayor eficiencia de primera mano.
 
-## Recursos
-- [Documentación](https://docs.groupdocs.com/viewer/java/)
-- [Referencia de API](https://reference.groupdocs.com/viewer/java/)
-- [Descargar GroupDocs.Viewer para Java](https://releases.groupdocs.com/viewer/java/)
-- [Licencia de compra](https://purchase.groupdocs.com/buy)
-- [Versión de prueba gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Solicitud de licencia temporal](https://purchase.groupdocs.com/temporary-license/)
-- [Foro de soporte](https://forum.groupdocs.com/c/viewer/9)
+## Preguntas frecuentes
+
+**Q: ¿Para qué se utiliza GroupDocs.Viewer Java?**  
+A: Es una biblioteca versátil diseñada para renderizar varios formatos de documentos, incluidos los archivos de datos de Outlook, en formatos HTML o de imagen.
+
+**Q: ¿Cómo obtengo una prueba gratuita de GroupDocs.Viewer?**  
+A: Visite [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) para acceder y descargar opciones.
+
+**Q: ¿Puedo limitar la representación de elementos en archivos PST también?**  
+A: Sí, la misma configuración se aplica tanto a formatos de archivo OST como PST.
+
+**Q: ¿Qué debo hacer si mi aplicación se vuelve lenta durante la renderización?**  
+A: Revise sus límites de elementos y configuraciones de recursos; considere optimizar las prácticas de gestión de memoria.
+
+**Q: ¿Dónde puedo encontrar soporte para problemas de GroupDocs.Viewer?**  
+A: Para asistencia, consulte el [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).
+
+## Recursos adicionales
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- [Purchase License](https://purchase.groupdocs.com/buy)
+- [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
