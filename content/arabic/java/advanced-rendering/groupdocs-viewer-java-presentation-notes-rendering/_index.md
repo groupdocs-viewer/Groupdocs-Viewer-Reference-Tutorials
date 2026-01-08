@@ -1,41 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "تعرّف على كيفية عرض العروض التقديمية بسلاسة مع الملاحظات بلغة جافا باستخدام GroupDocs.Viewer. يتناول هذا الدليل نصائح حول الإعداد والتنفيذ وتحسين الأداء."
-"title": "كيفية عرض العروض التقديمية مع الملاحظات باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
-"url": "/ar/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/"
-"weight": 1
+date: '2025-12-21'
+description: تعلم كيفية تحويل ملفات pptx إلى html باستخدام Java مع GroupDocs.Viewer،
+  وعرض العروض التقديمية مع الملاحظات ومعالجة ترخيص GroupDocs Viewer. يغطي هذا الدليل
+  الإعداد والتنفيذ ونصائح الأداء.
+keywords:
+- render presentations with notes Java
+- GroupDocs.Viewer for Java setup
+- presentation rendering with notes
+title: pptx إلى html java – عرض العروض التقديمية مع الملاحظات
 type: docs
+url: /ar/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/
+weight: 1
 ---
-# كيفية عرض العروض التقديمية مع الملاحظات باستخدام GroupDocs.Viewer لـ Java
 
-## مقدمة
+# pptx to html java – عرض العروض التقديمية مع الملاحظات
 
-هل ترغب في دمج عرض العروض التقديمية مع الملاحظات في تطبيق جافا بسلاسة؟ سيرشدك هذا الدليل الشامل خلال عملية الاستخدام. **GroupDocs.Viewer لـ Java**من خلال الاستفادة من هذه الأداة القوية، يمكنك عرض العروض التقديمية والملاحظات المقابلة لها بكل سهولة، مما يجعلها مثالية للتطبيقات التي تتطلب إمكانيات عرض مستندات مفصلة.
+Integrating **pptx to html java** conversion into your application has never been easier. In this guide, you’ll learn how to use **GroupDocs.Viewer for Java** to render PowerPoint presentations together with their speaker notes, while also covering essential licensing considerations.
 
-في هذا البرنامج التعليمي، سنغطي:
-- كيفية إعداد GroupDocs.Viewer لـ Java في مشروعك.
-- تنفيذ خطوة بخطوة لتقديم العرض التقديمي مع الملاحظات.
-- حالات الاستخدام العملية وإمكانيات التكامل.
-- نصائح لتحسين الأداء.
+![Render Presentations with Notes with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
-أولاً، دعنا نلقي نظرة على المتطلبات الأساسية المطلوبة قبل البدء!
+## إجابات سريعة
+- **هل يمكن لـ GroupDocs.Viewer تحويل PPTX إلى HTML؟** نعم، يدعم التحويل المباشر من PPTX إلى HTML مع إمكانية عرض الملاحظات اختياريًا.  
+- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** يلزم مفتاح ترخيص صالح لـ GroupDocs Viewer للنشر التجاري.  
+- **ما نسخة Java المطلوبة؟** يوصى باستخدام JDK 8 أو أعلى.  
+- **ما صيغ الإخراج المتاحة؟** يتم دعم HTML و PDF وصيغ الصور.  
+- **هل Maven هو الطريقة الوحيدة لإضافة المكتبة؟** Maven هو الأكثر شيوعًا، لكن يمكنك أيضًا استخدام Gradle أو تضمين JAR يدويًا.
 
-### المتطلبات الأساسية
+## ما هو pptx إلى html java؟
+Converting a PowerPoint **pptx** file to **HTML** in Java allows you to display slides inside web browsers without needing Microsoft Office. GroupDocs.Viewer handles the heavy lifting, preserving layout, images, and speaker notes.
 
-تأكد من أن لديك ما يلي:
-1. **مجموعة تطوير جافا (JDK)**:يوصى باستخدام الإصدار 8 أو الإصدار الأعلى للتوافق.
-2. **بيئة التطوير المتكاملة (IDE)**:مثل IntelliJ IDEA أو Eclipse.
-3. **مافن**:لإدارة التبعيات وأتمتة بناء المشروع.
+## لماذا عرض العروض التقديمية مع الملاحظات؟
+Embedding speaker notes alongside slides gives end‑users full context—ideal for e‑learning platforms, corporate training portals, or any document‑management system where the presenter’s commentary is valuable.
 
-إن الفهم الجيد لبرمجة Java والتعرف على Maven أمر ضروري للمتابعة بفعالية.
+## المتطلبات المسبقة
+1. **Java Development Kit (JDK)** – الإصدار 8 أو أحدث.  
+2. **IDE** – IntelliJ IDEA أو Eclipse أو أي محرر متوافق مع Java.  
+3. **Maven** – لإدارة التبعيات.  
+4. إلمام أساسي بـ Java وبنية مشروع Maven.
 
-## إعداد GroupDocs.Viewer لـ Java
-
-لبدء استخدام GroupDocs.Viewer، قم بدمجه في مشروع Java الخاص بك باتباع الخطوات التالية:
+## إعداد GroupDocs.Viewer for Java
 
 ### تكوين Maven
-
-أضف تكوينات المستودع والتبعيات التالية إلى `pom.xml` ملف:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -56,31 +62,24 @@ type: docs
 ```
 
 ### الحصول على الترخيص
-
-للبدء، يمكنك التقدم بطلب للحصول على نسخة تجريبية مجانية أو طلب ترخيص مؤقت لاستكشاف الإمكانيات الكاملة لـ GroupDocs.Viewer Java. تفضل بزيارة [شراء GroupDocs](https://purchase.groupdocs.com/buy) للحصول على تفاصيل حول الحصول على ترخيص دائم.
-
-بمجرد التكوين، قم بتهيئة مثيل العارض الخاص بك على النحو التالي:
+To explore full capabilities, apply for a free trial or request a temporary license. Visit [GroupDocs Purchase](https://purchase.groupdocs.com/buy) for permanent licensing options.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
-// تهيئة كائن العارض باستخدام مسار المستند المدخل
+// Initialize Viewer object with input document path
 try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
-    // معالجة إضافية...
+    // Further processing...
 }
 ```
 
 ## دليل التنفيذ
 
-في هذا القسم، سنرشدك خلال عملية تقديم العروض التقديمية التي تتضمن ملاحظات.
+### الميزة: عرض عرض تقديمي مع الملاحظات
+This section walks you through rendering a PPTX file to HTML while including speaker notes.
 
-### الميزة: تقديم عرض تقديمي مع ملاحظات
-
-تُركز هذه الميزة على عرض ملفات العرض التقديمي مع ملاحظاتها المُضمَّنة باستخدام GroupDocs.Viewer لجافا. وتُعدّ هذه الميزة مفيدةً بشكل خاص عند الحاجة إلى مراجعة الملاحظات مع محتوى الشريحة.
-
-#### الخطوة 1: تحديد دليل الإخراج وتنسيق الملف
-
-ابدأ بإعداد دليل الإخراج الذي سيتم حفظ ملفات HTML المقدمة فيه:
+#### الخطوة 1: تحديد دليل الإخراج وصيغة الملف
+Set up the folder where HTML pages will be saved:
 
 ```java
 import java.nio.file.Path;
@@ -91,67 +90,70 @@ Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
 #### الخطوة 2: تكوين خيارات العرض
-
-بعد ذلك، قم بإنشاء خيارات العرض لتقديم العرض التقديمي باستخدام الموارد المضمنة:
+Create view options that embed resources and turn on note rendering:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-viewOptions.setRenderNotes(true); // تمكين عرض الملاحظات
+viewOptions.setRenderNotes(true); // Enable note rendering
 ```
 
-**توضيح**: `forEmbeddedResources` يسمح لك بتحويل المستندات إلى تنسيق HTML مع تضمين جميع الموارد اللازمة. الإعداد `setRenderNotes(true)` يضمن تضمين الملاحظات في الناتج المقدم.
+> **نصيحة احترافية:** `forEmbeddedResources` ينتج HTML مستقل ذاتيًا، مما يبسط النشر على خوادم الويب.
 
-#### الخطوة 3: تحميل المستند وعرضه
-
-أخيرًا، قم بتحميل مستند العرض التقديمي الخاص بك وعرضه باستخدام خيارات العرض المحددة:
+#### الخطوة 3: تحميل وعرض المستند
+Finally, render the PPTX file using the options defined above:
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_WITH_NOTES"))) {
-    // تحويل المستند إلى HTML مع الملاحظات المضمنة
+    // Render document to HTML with notes included
     viewer.view(viewOptions);
 }
 ```
 
-**نصائح لاستكشاف الأخطاء وإصلاحها**:تأكد من تعيين مسارات الملفات بشكل صحيح وإمكانية الوصول إليها، حيث قد تؤدي المسارات غير الصحيحة إلى `FileNotFoundException`.
+**نصيحة استكشاف الأخطاء:** تحقق من أن مسارات الملفات موجودة ويمكن قراءتها. ملف مفقود سيتسبب في حدوث `FileNotFoundException`.
 
-## التطبيقات العملية
-
-يمكن استخدام GroupDocs.Viewer Java في سيناريوهات مختلفة:
-1. **منصات التعلم عبر الإنترنت**:عرض عروض الدورة التدريبية مع الملاحظات للتعلم الشامل.
-2. **وحدات التدريب للشركات**:التكامل مع أنظمة إدارة التعلم لعرض المواد التدريبية بشكل سلس.
-3. **أنظمة إدارة المستندات**:تحسين قدرات عرض المستندات من خلال تضمين الملاحظات.
+## تطبيقات عملية
+- **منصات التعلم عبر الإنترنت** – عرض شرائح المحاضرات مع ملاحظات المدرب.  
+- **وحدات التدريب المؤسسية** – تضمين تعليقات المدرب للدورات ذات الوتيرة الذاتية.  
+- **أنظمة إدارة الوثائق** – توفير معاينة جاهزة للويب للعروض التقديمية مع الحفاظ على جميع التعليقات التوضيحية.
 
 ## اعتبارات الأداء
+- استخدم **try‑with‑resources** لإغلاق `Viewer` تلقائيًا وتحرير الذاكرة.  
+- قم بتخزين HTML المُعرض مؤقتًا للعروض التي يتم الوصول إليها بشكل متكرر لتقليل حمل المعالج.  
+- راقب استخدام ذاكرة JVM heap عند معالجة ملفات PPTX الكبيرة؛ فكر في زيادة حجم الheap إذا واجهت `OutOfMemoryError`.
 
-عند استخدام GroupDocs.Viewer Java، ضع في اعتبارك نصائح الأداء التالية:
-- تحسين استخدام الذاكرة من خلال إدارة الموارد بشكل صحيح داخل `try-with-resources` كتل.
-- استخدم آليات التخزين المؤقت لتحسين سرعة عرض المستندات التي يتم الوصول إليها بشكل متكرر.
-- اتبع أفضل الممارسات لإدارة ذاكرة Java لمنع التسريبات وضمان التشغيل السلس.
+## المشكلات الشائعة & الحلول
+| المشكلة | الحل |
+|-------|----------|
+| **الملاحظات لا تظهر** | تأكد من استدعاء `viewOptions.setRenderNotes(true)` قبل عملية العرض. |
+| **بطء العرض على الملفات الكبيرة** | فعّل التخزين المؤقت وفكّر في عرض الصفحات عند الطلب بدلاً من عرضها جميعًا مرة واحدة. |
+| **أخطاء مسار الملف** | استخدم `Paths.get(...)` وتحقق مرتين من المسارات النسبية مقابل المطلقة. |
 
-## خاتمة
+## الأسئلة المتكررة
 
-باتباع هذا الدليل، ستتعلم كيفية عرض العروض التقديمية مع الملاحظات باستخدام GroupDocs.Viewer لجافا. تُحسّن هذه الميزة الفعّالة إمكانيات عرض المستندات في تطبيقاتك بشكل ملحوظ. لمزيد من الاستكشاف، فكّر في التعمق في الوظائف الأخرى التي يُقدّمها GroupDocs.Viewer أو استكشاف إمكانيات دمجه ضمن أنظمة أكبر.
+**س: هل يمكنني عرض مستندات PDF مع الملاحظات باستخدام GroupDocs.Viewer Java؟**  
+ج: نعم، يمكنك عرض ملفات PDF مع التعليقات المضمنة بطريقة مشابهة لملاحظات PPTX.
 
-هل أنت مستعد للتجربة؟ طبّق هذه الخطوات واستمتع بعرض تقديمي سلس في مشاريعك!
+**س: هل GroupDocs.Viewer متوافق مع إصدارات Java القديمة؟**  
+ج: المكتبة مدعومة رسميًا على JDK 8 وما فوق؛ قد تفتقر الإصدارات الأقدم إلى بعض الميزات.
 
-## قسم الأسئلة الشائعة
+**س: كيف يجب أن أتعامل مع ملفات العروض التقديمية الكبيرة جدًا؟**  
+ج: اعرض الصفحات بشكل فردي، أعد استخدام `HtmlViewOptions`، واستخدم التخزين المؤقت للحفاظ على انخفاض استهلاك الذاكرة.
 
-1. **هل يمكنني عرض مستندات PDF مع الملاحظات باستخدام GroupDocs.Viewer Java؟**
-   - نعم، يمكنك عرض ملفات PDF مع التعليقات التوضيحية المضمنة بطريقة مشابهة لكيفية تعاملك مع العروض التقديمية.
-2. **هل GroupDocs.Viewer متوافق مع الإصدارات القديمة من Java؟**
-   - على الرغم من أنه من الأفضل دعمه على JDK 8 والإصدارات الأحدث، إلا أن التوافق قد يختلف استنادًا إلى ميزات الإصدار المحددة.
-3. **كيف أتعامل مع ملفات العرض التقديمي الكبيرة بكفاءة؟**
-   - قم بتحسين العرض باستخدام هياكل البيانات الفعالة وإدارة الموارد بشكل فعال داخل تطبيقك.
-4. **ما هي خيارات الترخيص لـ GroupDocs.Viewer Java؟**
-   - تتضمن خيارات الترخيص التجارب المجانية، والتراخيص المؤقتة للتقييم، وتراخيص الشراء الكاملة للاستخدام في الإنتاج.
-5. **أين يمكنني العثور على أمثلة استخدام أكثر تقدمًا لـ GroupDocs.Viewer Java؟**
-   - قم بزيارة [مرجع API لـ GroupDocs](https://reference.groupdocs.com/viewer/java/) للحصول على توثيقات وأمثلة مفصلة.
+**س: ما خيارات الترخيص المتاحة لـ GroupDocs Viewer؟**  
+ج: تشمل الخيارات التجارب المجانية، تراخيص التقييم المؤقتة، وتراخيص الشراء الكاملة للإنتاج. راجع صفحة الترخيص للحصول على التفاصيل.
 
-## موارد
-- **التوثيق**:استكشف الأدلة الشاملة في [توثيق GroupDocs](https://docs.groupdocs.com/viewer/java/).
-- **مرجع واجهة برمجة التطبيقات**:يمكنك الوصول إلى معلومات API التفصيلية على [مرجع API لـ GroupDocs](https://reference.groupdocs.com/viewer/java/).
-- **تحميل**:احصل على أحدث الإصدارات من [تنزيلات GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **الشراء والتجربة**:تعرف على المزيد حول خيارات الترخيص على [صفحة شراء GroupDocs](https://purchase.groupdocs.com/buy) أو احصل على نسخة تجريبية مجانية على [النسخة التجريبية المجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **يدعم**:لأي استفسارات، قم بزيارة [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9).
+**س: أين يمكنني العثور على أمثلة استخدام متقدمة؟**  
+ج: زر [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) للحصول على وثائق متعمقة وعينات كود.
+
+## الموارد
+- **Documentation**: Explore comprehensive guides at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API Reference**: Access detailed API information at [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Download**: Obtain the latest releases from [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
+- **Purchase and Trial**: Learn more about licensing options on the [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) or get a free trial at [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+- **Support**: For any queries, visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9).
+
+**آخر تحديث:** 2025-12-21  
+**تم الاختبار مع:** GroupDocs.Viewer 25.2  
+**المؤلف:** GroupDocs
