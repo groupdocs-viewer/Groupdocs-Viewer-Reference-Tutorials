@@ -1,32 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Java के लिए GroupDocs.Viewer का उपयोग करके CAD ड्रॉइंग से सभी लेआउट रेंडर करना सीखें। यह गाइड सेटअप, कॉन्फ़िगरेशन और व्यावहारिक कार्यान्वयन को कवर करता है।"
-"title": "Java के लिए GroupDocs.Viewer का उपयोग करके सभी CAD लेआउट को कुशलतापूर्वक प्रस्तुत करें"
-"url": "/hi/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-08'
+description: GroupDocs.Viewer for Java का उपयोग करके CAD लेआउट को Java में रेंडर करना
+  और CAD को HTML में परिवर्तित करना सीखें। कोड उदाहरणों के साथ चरण‑दर‑चरण गाइड।
+keywords:
+- render CAD layouts
+- GroupDocs.Viewer for Java
+- Java rendering options
+title: CAD लेआउट्स को जावा में रेंडर करें – GroupDocs के साथ कुशल रेंडरिंग
 type: docs
+url: /hi/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# Java के लिए GroupDocs.Viewer का उपयोग करके सभी CAD लेआउट को कुशलतापूर्वक प्रस्तुत करें
 
-## परिचय
+# Render CAD Layouts Java – Efficient Rendering with GroupDocs.Viewer
 
-सीएडी फाइलों के साथ काम करते समय, एक ही फाइल में सभी लेआउट को कुशलतापूर्वक देखना अक्सर महत्वपूर्ण होता है। **जावा के लिए GroupDocs.Viewer** यह CAD ड्राइंग से सभी लेआउट को HTML प्रारूप में प्रस्तुत करना सरल बनाता है, जिससे पहुंच और साझा करने की क्षमता बढ़ जाती है।
+जब CAD फ़ाइलों के साथ काम किया जाता है, **render CAD layouts Java** को कुशलतापूर्वक करना तेज़ सहयोग और आसान साझा करने के लिए अक्सर महत्वपूर्ण होता है। GroupDocs.Viewer for Java आपको CAD ड्रॉइंग्स को HTML में परिवर्तित करने देता है, जिससे प्रत्येक लेआउट किसी भी ब्राउज़र में देखा जा सकता है। इस गाइड में हम सेटअप, कॉन्फ़िगरेशन और कोड के माध्यम से बताएँगे कि CAD ड्रॉइंग से सभी लेआउट्स को कैसे रेंडर किया जाए।
 
-यह ट्यूटोरियल आपको CAD चित्रों को प्रभावी ढंग से प्रस्तुत करने के लिए Java के लिए GroupDocs.Viewer का उपयोग करने में मार्गदर्शन करेगा:
-- आवश्यक वातावरण और लाइब्रेरी की स्थापना
-- CAD फ़ाइलों के लिए रेंडरिंग विकल्प कॉन्फ़िगर करना
-- एक CAD फ़ाइल के भीतर सभी लेआउट के रेंडरिंग को कार्यान्वित करना
+![Render All CAD Layouts with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-all-cad-layouts.png)
 
-आइये शुरू करने से पहले आवश्यक पूर्वापेक्षाओं से शुरुआत करें।
+## Quick Answers
+- **What does “render CAD layouts Java” mean?** CAD फ़ाइल में प्रत्येक लेआउट को Java कोड का उपयोग करके HTML में परिवर्तित करना।  
+- **Which library handles the conversion?** GroupDocs.Viewer for Java।  
+- **Do I need a license for production use?** हाँ, एक वैध GroupDocs लाइसेंस आवश्यक है।  
+- **Can I render only specific layouts?** हाँ, आप CAD विकल्पों के माध्यम से व्यक्तिगत लेआउट्स को लक्षित कर सकते हैं।  
+- **Is the output HTML or images?** यह ट्यूटोरियल एम्बेडेड रिसोर्सेज़ के साथ HTML दिखाता है।
 
-## आवश्यक शर्तें
+## What is “render CAD layouts Java”?
+Rendering CAD layouts Java का अर्थ है CAD ड्रॉइंग फ़ाइल (जैसे DWG, DXF) के भीतर प्रत्येक लेआउट (या शीट) को लेकर उसे Java कोड की मदद से HTML पेज में परिवर्तित करना। परिणामी HTML पेज वेब पोर्टलों में एम्बेड किए जा सकते हैं, ईमेल के माध्यम से साझा किए जा सकते हैं, या किसी भी डिवाइस पर CAD सॉफ़्टवेयर स्थापित किए बिना प्रदर्शित किए जा सकते हैं।
 
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित चीज़ें मौजूद हैं:
+## Why use GroupDocs.Viewer for Java to convert CAD to HTML?
+- **Cross‑platform accessibility** – HTML किसी भी ब्राउज़र पर काम करता है, विशेष प्लगइन्स की आवश्यकता नहीं।  
+- **Single‑file deployment** – एम्बेडेड रिसोर्सेज़ सब कुछ एक फ़ोल्डर में व्यवस्थित रखते हैं।  
+- **Performance‑optimized** – केवल आवश्यक डेटा रेंडर किया जाता है, जिससे मेमोरी उपयोग कम होता है।  
+- **Full layout support** – सभी ड्रॉइंग लेआउट्स स्वचालित रूप से प्रोसेस होते हैं, जिससे मैन्युअल प्रयास बचता है।
 
-### आवश्यक लाइब्रेरी और निर्भरताएँ
-आपको Java के लिए GroupDocs.Viewer की आवश्यकता होगी। सुनिश्चित करें कि आपके प्रोजेक्ट में 25.2 या बाद का संस्करण शामिल है।
-- **मावेन निर्भरता सेटअप**:
-  अपने में निम्नलिखित जोड़ें `pom.xml` फ़ाइल:
+## Prerequisites
+- **Java Development Kit (JDK) 8+** स्थापित होना चाहिए।  
+- **Maven** डिपेंडेंसी मैनेजमेंट के लिए।  
+- Java और Maven का बुनियादी ज्ञान।
+
+### Required Libraries and Dependencies
+आपको **GroupDocs.Viewer for Java** संस्करण 25.2 या बाद का चाहिए।
 
 ```xml
 <repositories>
@@ -45,30 +59,17 @@ type: docs
 </dependencies>
 ```
 
-### पर्यावरण सेटअप आवश्यकताएँ
-- आपके सिस्टम पर जावा डेवलपमेंट किट (JDK) 8 या बाद का संस्करण स्थापित होना चाहिए।
-- कोड लिखने और चलाने के लिए IntelliJ IDEA या Eclipse जैसा IDE.
+### License Acquisition Steps
+GroupDocs लाइसेंस प्राप्त करने के कई तरीके प्रदान करता है:
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) से डाउनलोड करें।  
+- **Temporary License**: परीक्षण के लिए [Temporary License Page](https://purchase.groupdocs.com/temporary-license/) से प्राप्त करें।  
+- **Purchase**: निरंतर उपयोग के लिए, [Buy GroupDocs page](https://purchase.groupdocs.com/buy) पर लाइसेंस खरीदें।
 
-### ज्ञान पूर्वापेक्षाएँ
-- जावा प्रोग्रामिंग अवधारणाओं की बुनियादी समझ
-- निर्भरता प्रबंधन के लिए मावेन से परिचित होना
+## How to render CAD layouts Java with GroupDocs.Viewer
+नीचे चरण‑दर‑चरण मार्गदर्शिका दी गई है जो मूल कोड ब्लॉक्स को अपरिवर्तित रखती है और संदर्भ जोड़ती है।
 
-इन पूर्व-आवश्यकताओं के साथ, हम Java के लिए GroupDocs.Viewer सेट अप करने के लिए आगे बढ़ सकते हैं।
-
-## Java के लिए GroupDocs.Viewer सेट अप करना
-Java के लिए GroupDocs.Viewer का उपयोग शुरू करने के लिए, नीचे दिए गए स्थापना चरणों का पालन करें:
-
-### मावेन के माध्यम से इंस्टॉल करना
-अपने में रिपोजिटरी और निर्भरता विवरण जोड़ें `pom.xml` जैसा कि पहले दिखाया गया है। यह मावेन को आवश्यक लाइब्रेरीज़ को डाउनलोड करने और सेट अप करने की अनुमति देता है।
-
-### लाइसेंस प्राप्ति चरण
-ग्रुपडॉक्स लाइसेंस प्राप्त करने के कई तरीके प्रदान करता है:
-- **मुफ्त परीक्षण**: यहां से डाउनलोड करें [ग्रुपडॉक्स निःशुल्क परीक्षण](https://releases.groupdocs.com/viewer/java/).
-- **अस्थायी लाइसेंस**: परीक्षण प्रयोजनों के लिए प्राप्त करें [अस्थायी लाइसेंस पृष्ठ](https://purchase.groupdocs.com/temporary-license/).
-- **खरीदना**: निरंतर उपयोग के लिए, लाइसेंस खरीदें [ग्रुपडॉक्स पेज खरीदें](https://purchase.groupdocs.com/buy).
-
-### बुनियादी आरंभीकरण और सेटअप
-अपनी Maven निर्भरताएँ सेट करने के बाद, CAD फ़ाइलों को रेंडर करना शुरू करने के लिए Viewer क्लास को इनिशियलाइज़ करें। यहाँ बताया गया है कि कैसे:
+### Step 1: Basic Viewer Initialization
+पहले, एक साधारण व्यूअर बनाएं जो CAD फ़ाइल को HTML में रेंडर करता है। यह स्निपेट न्यूनतम सेटअप दिखाता है।
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,10 +77,10 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 
 public class CadRendering {
     public static void main(String[] args) {
-        // इनपुट CAD फ़ाइल पथ निर्दिष्ट करें
+        // Specify input CAD file path
         String filePath = "path/to/your/sample.dwg";
 
-        // इनपुट फ़ाइल के साथ व्यूअर को आरंभ करें
+        // Initialize viewer with the input file
         try (Viewer viewer = new Viewer(filePath)) {
             HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources("output/page_{0}.html");
             viewer.view(viewOptions);
@@ -88,95 +89,93 @@ public class CadRendering {
 }
 ```
 
-यह कोड GroupDocs.Viewer का उपयोग करके CAD फ़ाइलों का मूल रेंडरिंग सेट करता है।
-
-## कार्यान्वयन मार्गदर्शिका
-अब, आइए CAD फ़ाइल से सभी लेआउट्स को रेंडर करने की सुविधा को क्रियान्वित करें।
-
-### सभी लेआउट को CAD फ़ाइलों में प्रस्तुत करना
-सभी लेआउट देखने के लिए रेंडरिंग विकल्पों को कॉन्फ़िगर करने के लिए, इन चरणों का पालन करें:
-
-#### चरण 1: आउटपुट निर्देशिका और फ़ाइल पथ प्रारूप परिभाषित करें
-सबसे पहले उन पथों को सेट अप करें जहाँ आपकी रेंडर की गई HTML फ़ाइलें सहेजी जाएँगी। इससे आउटपुट को कुशलतापूर्वक व्यवस्थित करने में मदद मिलती है।
+### Step 2: Define Output Directory and File Path Format
+निर्मित HTML फ़ाइलों को एक समर्पित आउटपुट फ़ोल्डर और नामकरण पैटर्न सेट करके व्यवस्थित करें।
 
 ```java
 import java.nio.file.Path;
 
-// आउटपुट निर्देशिका पथ परिभाषित करें
+// Define the output directory path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
-// CAD ड्राइंग के प्रत्येक पृष्ठ के लिए फ़ाइल पथ प्रारूप बनाएँ
+// Create a file path format for each page of the CAD drawing
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### चरण 2: HTML दृश्य विकल्प कॉन्फ़िगर करें
-विशिष्ट GroupDocs.Viewer विकल्पों का उपयोग करके CAD फ़ाइल में एम्बेडेड संसाधन सक्षम करें और सभी लेआउट रेंडर करें।
+### Step 3: Configure HTML View Options
+एम्बेडेड रिसोर्सेज़ को सक्षम करें ताकि CSS, इमेजेज़ और स्क्रिप्ट्स प्रत्येक HTML पेज के साथ संग्रहीत हों।
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// एम्बेडेड संसाधनों का उपयोग करने के लिए HTML दृश्य विकल्पों को कॉन्फ़िगर करें
+// Configure HTML view options to use embedded resources
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### चरण 3: लेआउट रेंडरिंग सक्षम करें
-सेट करें `RenderLayouts` विकल्प को सत्य पर सेट करें, जिससे यह सुनिश्चित हो सके कि सभी लेआउट रेंडर हो गए हैं।
+### Step 4: Enable Layout Rendering (Primary Feature)
+व्यूअर को ड्रॉइंग में **सभी** लेआउट्स को प्रोसेस करने के लिए कहें।
 
 ```java
 viewOptions.getCadOptions().setRenderLayouts(true);
 ```
 
-#### चरण 4: व्यूअर का उपयोग करके दस्तावेज़ प्रस्तुत करें
-अंत में, कॉन्फ़िगर किए गए विकल्पों के साथ अपनी CAD फ़ाइल को रेंडर करने के लिए व्यूअर क्लास का उपयोग करें।
+### Step 5: Render the Document Using the Configured Options
+अंत में, सेट किए गए विकल्पों के साथ CAD फ़ाइल को रेंडर करें।
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/sample.dwg")) {
-    // कॉन्फ़िगर किए गए दृश्य विकल्पों का उपयोग करके दस्तावेज़ को रेंडर करें
+    // Render the document using configured view options
     viewer.view(viewOptions);
 }
 ```
 
-### समस्या निवारण युक्तियों
-- **अनुपलब्ध निर्भरताएँ**: सुनिश्चित करें कि आपका `pom.xml` सही ढंग से कॉन्फ़िगर किया गया है और मावेन निर्भरताएं अद्यतित हैं।
-- **फ़ाइल पथ त्रुटियाँ**: सत्यापित करें कि इनपुट CAD फ़ाइल पथ और आउटपुट निर्देशिका पथ सही ढंग से निर्दिष्ट हैं।
+## How to convert CAD to HTML using GroupDocs.Viewer
+ऊपर दिए गए चरण पहले ही HTML आउटपुट उत्पन्न करते हैं, जो **CAD को HTML में बदलने** का सबसे सामान्य तरीका है। `setRenderLayouts(true)` को सक्षम करके, प्रत्येक लेआउट अपना स्वयं का HTML पेज बन जाता है, जो वेब प्रकाशन के लिए तैयार है।
 
-## व्यावहारिक अनुप्रयोगों
-CAD ड्राइंग से सभी लेआउट को रेंडर करने के कई वास्तविक अनुप्रयोग हैं:
-1. **वास्तुकला प्रस्तुतियाँ**: आर्किटेक्ट्स को एक ही दस्तावेज़ में विभिन्न डिज़ाइन दृष्टिकोणों को प्रदर्शित करने में सक्षम बनाना।
-2. **इंजीनियरिंग दस्तावेज़ीकरण**: यह जटिल इंजीनियरिंग डिजाइनों को विभिन्न हितधारकों के साथ आसानी से साझा करने की सुविधा प्रदान करता है।
-3. **शैक्षिक संसाधन**: शिक्षकों को डिजिटल कक्षाओं में विस्तृत आरेख और योजनाएं प्रस्तुत करने की अनुमति देता है।
+## Common Issues and Solutions
+- **Missing Dependencies** – `pom.xml` में `<repositories>` और `<dependencies>` सेक्शन को दोबारा जांचें। नवीनतम आर्टिफैक्ट्स डाउनलोड करने के लिए `mvn clean install` चलाएँ।  
+- **File Path Errors** – सुनिश्चित करें कि इनपुट CAD फ़ाइल पाथ और आउटपुट डायरेक्टरी दोनों मौजूद हैं और Java प्रोसेस द्वारा एक्सेस योग्य हैं।  
+- **Memory Exhaustion on Large Files** – JVM हीप साइज (`-Xmx2g` या अधिक) बढ़ाएँ या यदि `OutOfMemoryError` मिलता है तो फ़ाइल को छोटे बैचों में प्रोसेस करें।
 
-GroupDocs.Viewer को एकीकृत करने से वेब अनुप्रयोगों या दस्तावेज़ प्रबंधन प्रणालियों सहित विभिन्न प्लेटफार्मों पर सहयोग बढ़ा सकते हैं।
+## Practical Applications
+1. **Architectural Presentations** – प्रत्येक फ़्लोर प्लान या एलिवेशन को ब्राउज़र‑फ्रेंडली फ़ॉर्मेट में दिखाएँ।  
+2. **Engineering Documentation** – जटिल स्कीमैटिक्स को ठेकेदारों के साथ CAD सॉफ़्टवेयर की आवश्यकता के बिना साझा करें।  
+3. **E‑Learning Materials** – इंटरैक्टिव CAD लेआउट्स को ऑनलाइन कोर्स या ट्यूटोरियल में एम्बेड करें।
 
-## प्रदर्शन संबंधी विचार
-CAD फ़ाइलों को रेंडर करते समय प्रदर्शन को अनुकूलित करना महत्वपूर्ण है:
-- **स्मृति प्रबंधन**: JVM विकल्पों को ट्यून करके कुशल डेटा संरचनाओं का उपयोग करें और जावा मेमोरी का प्रबंधन करें।
-- **स्रोत का उपयोग**: सुनिश्चित करें कि आपके सर्वर में बड़ी फ़ाइल आकारों और एकाधिक समवर्ती उपयोगकर्ताओं को संभालने के लिए पर्याप्त संसाधन हैं।
-- **सर्वोत्तम प्रथाएं**सुधार और बग फिक्सेस के लिए नियमित रूप से GroupDocs.Viewer लाइब्रेरीज़ को अपडेट करें।
+## Performance Considerations
+- **Memory Management** – बड़े ड्रॉइंग्स के लिए नवीनतम GroupDocs संस्करण का उपयोग करें और JVM विकल्पों को ट्यून करें।  
+- **Resource Usage** – अव्यवस्था से बचने और सफ़ाई आसान बनाने के लिए समर्पित आउटपुट फ़ोल्डर में रेंडर करें।  
+- **Keep Libraries Updated** – नए रिलीज़ अक्सर प्रदर्शन सुधार और बग फिक्सेस शामिल करते हैं।
 
-## निष्कर्ष
-इस ट्यूटोरियल में, आपने Java के लिए GroupDocs.Viewer का उपयोग करके CAD ड्रॉइंग से सभी लेआउट को रेंडर करना सीखा है। बताए गए चरणों का पालन करके, आप अपने अनुप्रयोगों में शक्तिशाली रेंडरिंग सुविधाओं को एकीकृत कर सकते हैं।
+## Conclusion
+अब आपके पास GroupDocs.Viewer का उपयोग करके **render CAD layouts Java** और **CAD को HTML में बदलने** के लिए एक पूर्ण, प्रोडक्शन‑रेडी विधि है। इन स्निपेट्स को अपने वेब पोर्टल, दस्तावेज़ प्रबंधन प्रणाली, या किसी भी Java‑आधारित बैकएंड में एकीकृत करें ताकि उपयोगकर्ताओं को उनके CAD फ़ाइलों के प्रत्येक लेआउट तक तुरंत, ब्राउज़र‑आधारित पहुंच मिल सके।
 
-अगले चरण के रूप में, आगे के अनुकूलन विकल्पों का पता लगाएं [ग्रुपडॉक्स व्यूअर दस्तावेज़ीकरण](https://docs.groupdocs.com/viewer/java/) और GroupDocs.Viewer द्वारा समर्थित अन्य दस्तावेज़ प्रकारों को एकीकृत करने पर विचार करें।
+आधिकारिक दस्तावेज़ और API रेफ़रेंस में अतिरिक्त कस्टमाइज़ेशन विकल्पों का अन्वेषण करें ताकि आउटपुट को अपनी विशिष्ट आवश्यकताओं के अनुसार अनुकूलित किया जा सके।
 
-## अक्सर पूछे जाने वाले प्रश्न अनुभाग
-1. **Java के लिए GroupDocs.Viewer क्या है?**
-   - यह एक बहुमुखी लाइब्रेरी है जो CAD फाइलों सहित विभिन्न दस्तावेज़ प्रारूपों को HTML या छवियों में प्रस्तुत करने की अनुमति देती है।
-2. **मैं GroupDocs.Viewer के साथ बड़ी CAD फ़ाइलों को कैसे संभालूँ?**
-   - मेमोरी सेटिंग्स को अनुकूलित करें और यदि संभव हो तो जटिल चित्रों को तोड़ने पर विचार करें।
-3. **क्या मैं केवल विशिष्ट लेआउट ही प्रस्तुत कर सकता हूँ?**
-   - हां, विशिष्ट लेआउट को लक्षित करने के लिए अपने दृश्य विकल्पों में लेआउट नामों का उपयोग करें।
-4. **क्या अन्य दस्तावेज़ प्रारूपों के लिए समर्थन उपलब्ध है?**
-   - बिल्कुल! GroupDocs.Viewer CAD फ़ाइलों से परे प्रारूपों की एक विस्तृत श्रृंखला का समर्थन करता है।
-5. **मैं GroupDocs.Viewer Java का उपयोग करने के बारे में अधिक संसाधन कहां पा सकता हूं?**
-   - दौरा करना [ग्रुपडॉक्स व्यूअर API संदर्भ](https://reference.groupdocs.com/viewer/java/) और अतिरिक्त दस्तावेज़ीकरण का पता लगाएं.
+## FAQ Section
+1. **What is GroupDocs.Viewer for Java?**  
+   - यह एक बहुमुखी लाइब्रेरी है जो विभिन्न दस्तावेज़ फ़ॉर्मेट्स, जिसमें CAD फ़ाइलें भी शामिल हैं, को HTML या इमेजेज़ में रेंडर करने की अनुमति देती है।  
+2. **How do I handle large CAD files with GroupDocs.Viewer?**  
+   - मेमोरी सेटिंग्स को ऑप्टिमाइज़ करें और यदि संभव हो तो जटिल ड्रॉइंग्स को छोटे हिस्सों में विभाजित करने पर विचार करें।  
+3. **Can I render specific layouts only?**  
+   - हाँ, अपने व्यू विकल्पों में लेआउट नामों का उपयोग करके विशिष्ट लेआउट्स को लक्ष्य बना सकते हैं।  
+4. **Is there support for other document formats?**  
+   - बिल्कुल! GroupDocs.Viewer CAD के अलावा विभिन्न फ़ॉर्मेट्स को सपोर्ट करता है।  
+5. **Where can I find more resources on using GroupDocs.Viewer Java?**  
+   - देखें [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/) और [GroupDocs Viewer API Reference](https://reference.groupdocs.com/viewer/java/)।
 
-## संसाधन
-- दस्तावेज़ीकरण: [ग्रुपडॉक्स व्यूअर दस्तावेज़](https://docs.groupdocs.com/viewer/java/)
-- एपीआई संदर्भ: [ग्रुपडॉक्स व्यूअर एपीआई](https://reference.groupdocs.com/viewer/java/)
-- Java के लिए GroupDocs.Viewer डाउनलोड करें: [लिंक को डाउनलोड करें](https://releases.groupdocs.com/viewer/java/)
-- खरीद और लाइसेंसिंग: [खरीदें समूहदस्तावेज़](https://purchase.groupdocs.com/buy)
-- मुफ्त परीक्षण: [निःशुल्क परीक्षण संस्करण](https://releases.groupdocs.com/viewer/java/)
-- अस्थायी लाइसेंस: [अस्थायी लाइसेंस पृष्ठ](https://purchase.groupdocs.com/temporary-license/)
-- सहयता मंच: [ग्रुपडॉक्स सहायता](https://forum.groupdocs.com/c/viewer/9)
+## Resources
+- दस्तावेज़ीकरण: [GroupDocs Viewer Docs](https://docs.groupdocs.com/viewer/java/)  
+- API रेफ़रेंस: [GroupDocs Viewer API](https://reference.groupdocs.com/viewer/java/)  
+- GroupDocs.Viewer for Java डाउनलोड करें: [Download Link](https://releases.groupdocs.com/viewer/java/)  
+- खरीद और लाइसेंसिंग: [Purchase GroupDocs](https://purchase.groupdocs.com/buy)  
+- फ़्री ट्रायल: [Free Trial Version](https://releases.groupdocs.com/viewer/java/)  
+- टेम्पररी लाइसेंस: [Temporary License Page](https://purchase.groupdocs.com/temporary-license/)  
+- सपोर्ट फ़ोरम: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**अंतिम अपडेट:** 2026-01-08  
+**परीक्षित संस्करण:** GroupDocs.Viewer 25.2 for Java  
+**लेखक:** GroupDocs

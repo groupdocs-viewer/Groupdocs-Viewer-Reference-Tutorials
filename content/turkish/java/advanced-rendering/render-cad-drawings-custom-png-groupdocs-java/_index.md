@@ -1,43 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java ile özel boyutlar ve arka plan renkleri kullanarak CAD çizimlerini yüksek kaliteli PNG görüntülerine nasıl dönüştüreceğinizi öğrenin."
-"title": "Java için GroupDocs.Viewer Kullanarak CAD Çizimlerini Özel Boyut ve Arkaplan Rengiyle PNG Olarak Nasıl Oluşturursunuz"
-"url": "/tr/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
-"weight": 1
+date: '2026-01-08'
+description: GroupDocs.Viewer for Java ile özel boyutlar ve arka plan renkleri kullanarak
+  CAD çizimlerini yüksek kaliteli PNG görüntülerine nasıl dönüştüreceğinizi öğrenin.
+keywords:
+- render CAD drawings PNG
+- GroupDocs.Viewer for Java setup
+- custom image size and background color
+title: GroupDocs.Viewer for Java Kullanarak CAD Çizimlerini Özel Boyut ve Arka Plan
+  Rengi ile PNG Olarak Render Etme
 type: docs
+url: /tr/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/
+weight: 1
 ---
-# Java için GroupDocs.Viewer Kullanarak CAD Çizimlerini Özel Boyut ve Arkaplan Rengiyle PNG Olarak Nasıl Oluşturursunuz
 
-## giriiş
+# CAD Çizimlerini PNG Olarak Özelleştirilmiş Boyut ve Arka Plan Rengiyle Render Etme – GroupDocs.Viewer for Java Kullanarak
 
-CAD çizimlerinizi belirli boyutları ve estetiği koruyarak yüksek kaliteli görüntülere dönüştürmekte zorluk mu çekiyorsunuz? Java için GroupDocs.Viewer ile bu görev sorunsuz hale gelir. Bu eğitim, GroupDocs.Viewer kullanarak CAD çizimlerini özel boyutlar ve arka plan renkleriyle PNG dosyaları olarak işlemenize rehberlik edecektir. Bu özellikleri entegre ederek, teknik belgelerinizin görsel olarak çekici olmasını ve ihtiyaçlarınızı karşılamak için hassas bir şekilde boyutlandırılmasını sağlayın.
+CAD çizimlerinizi belirli boyut ve estetikleri koruyarak yüksek kaliteli görüntülere dönüştürmekte zorlanıyor musunuz? Bu öğreticide **CAD render etme** yöntemini, özelleştirilmiş boyut ve arka plan rengiyle PNG olarak nasıl yapacağınızı göstereceğiz, böylece raporlar, sunumlar veya web ön izlemeleri için tam istediğiniz görünümü elde edebilirsiniz.
 
-**Ne Öğreneceksiniz:**
-- Projenizde Java için GroupDocs.Viewer'ı kurma
-- CAD çizimlerini özel boyutlarla PNG formatına dönüştürme
-- Görsel çekiciliği artırmak için işleme sırasında arka plan renginin uygulanması
-- Bu özelliklerin endüstriler genelindeki pratik uygulamaları
+## Hızlı Yanıtlar
+- **“how to render CAD” ne anlama geliyor?** CAD dosyalarını (ör. DWG) kod kullanarak PNG gibi görüntü formatlarına dönüştürmeyi ifade eder.  
+- **Özel bir genişlik ayarlayabilir miyim?** Evet – `CadOptions.forRenderingByWidth(int width)` kullanın.  
+- **Arka planı nasıl değiştiririm?** `cadOptions.setBackgroundColor(Color.YOUR_COLOR)` çağırın.  
+- **Hangi kütüphane gerekiyor?** GroupDocs.Viewer for Java (sürüm 25.2 veya sonrası).  
+- **Lisans gerekli mi?** Geçici veya satın alınmış bir lisans, değerlendirme sınırlamalarını kaldırır.
 
-Başlamadan önce ön koşulları ele alalım.
+![GroupDocs.Viewer for Java ile Özelleştirilmiş Boyut ve Arka Plan Rengiyle CAD Çizimlerini PNG Olarak Render Etme](/viewer/advanced-rendering/render-cad-drawings-as-png-with-custom-size-background-color-java.png)
 
-## Ön koşullar
+## CAD Çizimlerini Render Etme – Genel Bakış
+Bu bölüm, temel hedefi genişletir: **CAD render etme** çizimlerini boyut ve arka planı kontrol ederek PNG dosyalarına dönüştürmek. Tam kurulum, kod parçacıkları ve pratik ipuçları üzerinden ilerleyeceğiz.
+
+## Öğrenecekleriniz
+- Projenizde GroupDocs.Viewer for Java kurulumunu yapmak  
+- **DWG'yi PNG'ye dönüştürme** özelleştirilmiş boyutlarla  
+- **Arka plan rengini PNG olarak ayarlama** render sırasında şık bir görünüm için  
+- Özelleştirilmiş render'ın değer kattığı gerçek dünya senaryoları  
+
+## Ön Koşullar
 
 ### Gerekli Kütüphaneler ve Bağımlılıklar
-Bu eğitimi takip etmek için şunlara ihtiyacınız olacak:
-- Java Development Kit (JDK) sürüm 8 veya üzeri.
-- Bağımlılık yönetimi için Maven.
+- Java Development Kit (JDK) 8+  
+- Maven bağımlılık yönetimi için  
 
-### Çevre Kurulum Gereksinimleri
-Geliştirme ortamınızın IntelliJ IDEA veya Eclipse gibi uygun bir IDE ile kurulduğundan emin olun. Java programlama kavramlarına ilişkin temel bir aşinalık da gereklidir.
+### Ortam Kurulum Gereksinimleri
+- IntelliJ IDEA veya Eclipse gibi bir IDE  
+- Temel Java bilgisi  
 
-### Bilgi Önkoşulları
-Java'da temel bir anlayışa ve dosyaları programlama yoluyla kullanma deneyimine sahip olmak faydalı olacaktır.
+### Bilgi Ön Koşulları
+- Java'da dosya işlemleri konusunda aşinalık  
 
-## Java için GroupDocs.Viewer Kurulumu
-Başlamak için Maven projenize gerekli bağımlılıkları ekleyin.
+## GroupDocs.Viewer for Java Kurulumu
+GroupDocs deposunu ve bağımlılığını Maven `pom.xml` dosyanıza ekleyin:
 
-**Maven Kurulumu:**
-Aşağıdaki yapılandırmayı ekleyin `pom.xml` dosya:
 ```xml
 <repositories>
    <repository>
@@ -55,31 +68,32 @@ Aşağıdaki yapılandırmayı ekleyin `pom.xml` dosya:
 </dependencies>
 ```
 
-### Lisans Edinimi
-GroupDocs.Viewer'ın tüm yeteneklerini sınırlama olmaksızın keşfetmek için geçici bir lisans edinebilir veya gerekirse satın alabilirsiniz.
+### Lisans Edinme
+Değerlendirme kısıtlamalarını kaldırmak için geçici veya tam bir lisans edinin.
 
 ### Temel Başlatma ve Kurulum
-GroupDocs.Viewer'ı kullanmaya başlamak için onu Java uygulamanızda başlatmanız gerekir:
+CAD dosyanıza işaret eden bir `Viewer` örneği oluşturun:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.nio.file.Path;
 
 Path documentPath = Path.of("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS");
 try (Viewer viewer = new Viewer(documentPath.toString())) {
-    // İşleme işlemleri buraya gider
+    // Rendering operations go here
 }
 ```
 
 ## Uygulama Kılavuzu
 
-### Özellik 1: Özel Görüntü Boyutu ve Arka Plan Rengiyle CAD Çizimlerinin İşlenmesi
+### Özellik 1: Özelleştirilmiş Görüntü Boyutu ve Arka Plan Rengiyle CAD Çizimlerini Render Etme
 
-#### Genel bakış
-Bu özellik, hem görüntü boyutlarını hem de arka plan rengini belirterek CAD dosyalarınızı PNG görüntülerine dönüştürmenize olanak tanır.
+#### Genel Bakış
+Bu özellik, **DWG'yi PNG'ye dönüştürmenizi** sağlar ve görüntü genişliği ile arka plan tonunu belirlemenize imkan tanır.
 
-#### Adım Adım Uygulama
-##### Gerekli Paketleri İçe Aktar
-Gerekli tüm paketleri içe aktardığınızdan emin olun:
+#### Adım‑Adım Uygulama
+
+##### Gerekli Paketleri İçe Aktarın
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.CadOptions;
@@ -87,19 +101,19 @@ import com.groupdocs.viewer.options.PngViewOptions;
 import java.nio.file.Path;
 import java.awt.Color;
 ```
-##### Çıktı Dizini ve Dosya Yolu Biçimini Ayarlayın
-Oluşturduğunuz görsellerin nereye kaydedileceğini tanımlayın:
+
+##### Çıktı Dizini ve Dosya Yolu Formatını Ayarlayın
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SetImageBackgroundColor");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-##### Görüntüleyiciyi Özel İşleme Seçenekleriyle Başlat
-Bir tane oluştur `Viewer` CAD dosyanız için bir örnek oluşturun ve belirtilen boyutlar ve arka plan rengiyle PNG'ler olarak işlenecek şekilde yapılandırın:
+
+##### Özelleştirilmiş Render Seçenekleriyle Viewer'ı Başlatın
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS")) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     
-    // İşleme için genişliği belirtin
+    // Specify the width for rendering
     CadOptions cadOptions = CadOptions.forRenderingByWidth(800);
     cadOptions.setBackgroundColor(Color.GREEN);
     
@@ -108,24 +122,24 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
     viewer.view(options);
 }
 ```
-##### Parametrelerin Açıklaması
-- `PngViewOptions` dosyanın nasıl kaydedileceğini, biçimini ve düzenini belirler.
-- `forRenderingByWidth(int width)` CAD çizimlerinin işlenmesi için özel bir görüntü genişliği ayarlar.
-- `setBackgroundColor(Color color)` İşlenmiş görüntülerde kullanılacak arka plan rengini belirtir.
+
+**Parametre Açıklamaları**  
+- `PngViewOptions` – çıktı formatını ve adlandırmayı tanımlar.  
+- `forRenderingByWidth(int width)` – özelleştirilmiş görüntü genişliğini ayarlar.  
+- `setBackgroundColor(Color color)` – PNG'ye **arka plan rengi render'ı uygular**.
 
 #### Sorun Giderme İpuçları
-- Kodu çalıştırmadan önce çıktı dizininizin mevcut olduğundan emin olun. Eğer yoksa manuel veya programlı olarak oluşturun.
-- Giriş dosyası yolunun doğru olduğunu ve uygulamanızın çalışma dizininden erişilebilir olduğunu doğrulayın.
+- Çıktı klasörünün var olduğunu doğrulayın; gerekirse oluşturun.  
+- Girdi dosya yolunu ve izinleri iki kez kontrol edin.  
 
-### Özellik 2: İşleme Seçeneklerinde Arka Plan Rengini Ayarlama
-Bu özellik, görsel sunumu geliştirmek için özel bir arka plan rengi içerecek şekilde oluşturma seçeneklerini yapılandırmaya odaklanır.
+### Özellik 2: Render Seçeneklerinde Arka Plan Rengini Ayarlama
 
-#### Genel bakış
-Oluşturma işlemi sırasında belirli bir arka plan rengi ayarlayarak oluşturulan görsellerinizin görünümünü özelleştirin.
+#### Genel Bakış
+Burada, görsel tutarlılığı artırmak için **arka plan rengini PNG olarak ayarlamaya** odaklanıyoruz.
 
-#### Adım Adım Uygulama
-##### Gerekli Paketleri İçe Aktar
-Daha önce olduğu gibi, gerekli tüm ithalatlara sahip olduğunuzdan emin olun:
+#### Adım‑Adım Uygulama
+
+##### Gerekli Paketleri İçe Aktarın
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.CadOptions;
@@ -133,8 +147,8 @@ import com.groupdocs.viewer.options.PngViewOptions;
 import java.nio.file.Path;
 import java.awt.Color;
 ```
-##### Arka Plan Rengiyle İşleme Seçeneklerini Yapılandırma
-Özel arka plan renklerini ayarlamak ve uygulamak için aşağıdaki kodu kullanın:
+
+##### Arka Plan Rengiyle Render Seçeneklerini Yapılandırın
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SetImageBackgroundColor");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -150,41 +164,73 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
     viewer.view(options);
 }
 ```
-#### Anahtar Yapılandırma Seçenekleri
-- Ayarlamak `forRenderingByWidth(int width)` farklı görüntü boyutları için.
-- Çeşitli kullanın `Color` Arka plan rengini ayarlamak için sabitler veya özel RGB değerleri.
+
+**Ana Yapılandırma Seçenekleri**  
+- Farklı boyutlar için `forRenderingByWidth(int width)` ayarlayın.  
+- Özel arka planlar için herhangi bir `Color` sabiti veya `new Color(r,g,b)` kullanın.  
 
 ## Pratik Uygulamalar
 
 ### 1. Mühendislik Dokümantasyonu
-CAD çizimleri mühendislik projelerinde çok önemlidir. Özel render, mühendislerin belirli görsel yönergelerle sunuma hazır belgeler üretmesini sağlar.
+Özelleştirilmiş render, mühendislik çizimlerinin kurumsal stil kılavuzlarına uygun olmasını sağlar.
 
 ### 2. Mimari Görselleştirme
-Mimarlar bu özellikleri kullanarak proje planlarını müşteri sunumları için görsel olarak çekici formatlara dönüştürebilir, böylece netlik ve estetik görünüm sağlayabilirler.
+Sunum slaytlarıyla uyumlu temiz bir arka planla planları sergileyin.
 
 ### 3. Üretim Prototipleme
-Üreticiler prototipler oluşturmak için genellikle tasarımlarının kesin görüntülerine ihtiyaç duyarlar. Özel görüntü oluşturma, boyutların doğru bir şekilde temsil edilmesini sağlar.
+Hızlı prototipleme iş akışları için hassas PNG'ler oluşturun.
 
 ### Entegrasyon Olanakları
-Bu yetenekler, görsel dokümantasyon oluşturma sürecini otomatikleştirmek için doküman yönetim sistemleri veya CAD yazılımlarıyla entegre edilebilir.
+Bu render hattını belge yönetim sistemleriyle birleştirerek görsel varlık üretimini otomatikleştirin.
 
 ## Performans Hususları
 
 ### Performansı Optimize Etme
-- **Toplu İşleme:** Mümkünse birden fazla belgeyi aynı anda işleyin.
-- **Kaynak Yönetimi:** Büyük ölçekli işleme görevleri için bellek kullanımını izleyin ve JVM ayarlarını gerektiği gibi ayarlayın.
+- **Toplu İşleme:** Döngü içinde birden fazla CAD dosyasını render edin.  
+- **Kaynak Yönetimi:** Büyük çizimler için JVM yığın boyutunu ayarlayın.
 
-### Kaynak Kullanım Yönergeleri
-Sisteminizin, diğer uygulamaları etkilemeden işleme süreçlerini gerçekleştirebilecek yeterli kaynaklara (CPU, RAM) sahip olduğundan emin olun.
+### Kaynak Kullanım Kılavuzları
+CPU ve belleği izleyin; `Viewer` örneklerini hızlıca serbest bırakın.
 
 ### Java Bellek Yönetimi için En İyi Uygulamalar
-- İşleme için try-with-resources kullanın `Viewer` Örnekler.
-- Bellek sızıntılarını önlemek için kaynakları kullandıktan hemen sonra serbest bırakın.
+- Gösterildiği gibi `Viewer`'ı otomatik kapatmak için try‑with‑resources kullanın.  
+- Gerekenden uzun süre büyük `Path` nesnelerini tutmaktan kaçının.
 
-## Çözüm
-Bu öğreticiyi takip ederek, GroupDocs.Viewer for Java kullanarak CAD çizimlerini özel boyutlar ve arka plan renkleriyle PNG formatına etkili bir şekilde nasıl dönüştüreceğinizi öğrendiniz. Bu yetenek, belge görselleştirmenin önemli bir rol oynadığı çeşitli sektörlerde paha biçilmezdir.
+## Yaygın Sorunlar ve Çözümler
+
+| Sorun | Çözüm |
+|-------|----------|
+| **Çıktı klasörü bulunamadı** | Klasörü önceden oluşturun veya `Files.createDirectories(outputDirectory);` ekleyin. |
+| **Boş görüntü** | `cadOptions.setBackgroundColor`'ın `forRenderingByWidth`'den sonra ayarlandığından emin olun. |
+| **Bellek yetersizliği hataları** | `-Xmx` JVM seçeneğini artırın veya dosyaları daha küçük partilerde işleyin. |
+
+## Sıkça Sorulan Sorular
+
+**S:** DWG dışındaki diğer CAD formatlarını render edebilir miyim?  
+**C:** Evet, GroupDocs.Viewer DXF, DWF ve birkaç diğer CAD dosya tipini destekler.
+
+**S:** Önceden tanımlı bir sabit yerine özel bir RGB rengi nasıl kullanırım?  
+**C:** `new Color(123, 45, 67)` gibi yeni bir `Color` örneği oluşturun ve `setBackgroundColor`'a geçirin.
+
+**S:** Yalnızca belirli bir düzeni veya katmanı render etmek mümkün mü?  
+**C:** `viewer.view` çağrısından önce `CadOptions` aracılığıyla düzen veya katman seçeneklerini belirtebilirsiniz.
+
+**S:** Kütüphane şeffaf arka planları destekliyor mu?  
+**C:** Hedef format şeffaflığı destekliyorsa, tam şeffaflık için arka plan rengini `new Color(0,0,0,0)` olarak ayarlayın.
+
+**S:** Hangi GroupDocs.Viewer sürümü gerekiyor?  
+**C:** Öğreticide sürüm 25.2 kullanılmıştır, ancak daha yeni sürümler aynı API'yi korur.
+
+## Sonuç
+Artık **CAD render etme** yöntemini kullanarak GroupDocs.Viewer for Java ile özelleştirilmiş boyut ve arka plan renklerine sahip PNG dosyaları oluşturabilirsiniz. Bu teknikleri mühendislik, mimari veya üretim iş akışları için profesyonel görünümlü görsel varlıklar yaratmak amacıyla uygulayın.
 
 ### Sonraki Adımlar
-GroupDocs.Viewer'ın ek özelliklerini keşfedin veya uygulamanızın performansını artırmak için Java bellek yönetimi tekniklerini daha derinlemesine inceleyin.
+- Farklı görüntü genişlikleri ve renklerle denemeler yapın.  
+- Render kodunu bir toplu işleme servisine entegre edin.  
+- PDF dönüşümü veya çok sayfalı render gibi ek Viewer seçeneklerini keşfedin.
 
-**Harekete Geçme Çağrısı:** Bu özellikleri bir sonraki projenizde uygulamaya çalışın ve bunların belge oluşturma iş akışınızı nasıl dönüştürebileceğini görün.
+---
+
+**Son Güncelleme:** 2026-01-08  
+**Test Edilen:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs

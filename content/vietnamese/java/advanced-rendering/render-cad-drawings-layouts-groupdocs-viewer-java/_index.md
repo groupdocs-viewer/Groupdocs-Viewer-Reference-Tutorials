@@ -1,32 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách kết xuất tất cả các bố cục từ bản vẽ CAD bằng GroupDocs.Viewer cho Java. Hướng dẫn này bao gồm thiết lập, cấu hình và triển khai thực tế."
-"title": "Kết xuất tất cả các bố cục CAD một cách hiệu quả bằng GroupDocs.Viewer cho Java"
-"url": "/vi/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-08'
+description: Tìm hiểu cách hiển thị bố cục CAD bằng Java và chuyển đổi CAD sang HTML
+  bằng GroupDocs.Viewer cho Java. Hướng dẫn từng bước kèm ví dụ mã.
+keywords:
+- render CAD layouts
+- GroupDocs.Viewer for Java
+- Java rendering options
+title: Kết xuất Bố cục CAD Java – Kết xuất Hiệu quả với GroupDocs
 type: docs
+url: /vi/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# Kết xuất tất cả các bố cục CAD một cách hiệu quả bằng GroupDocs.Viewer cho Java
 
-## Giới thiệu
+# Kết xuất Bố cục CAD Java – Kết xuất Hiệu quả với GroupDocs.Viewer
 
-Khi làm việc với các tệp CAD, việc xem tất cả các bố cục trong một tệp duy nhất một cách hiệu quả thường rất quan trọng. **GroupDocs.Viewer cho Java** giúp dễ dàng chuyển đổi mọi bố cục từ bản vẽ CAD sang định dạng HTML, tăng cường khả năng truy cập và chia sẻ.
+Khi làm việc với các tệp CAD, **render CAD layouts Java** hiệu quả thường rất quan trọng để hợp tác nhanh chóng và chia sẻ dễ dàng. GroupDocs.Viewer for Java cho phép bạn chuyển đổi bản vẽ CAD sang HTML, giúp mọi bố cục có thể xem được trên bất kỳ trình duyệt nào. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách thiết lập, cấu hình và mã cần thiết để kết xuất tất cả các bố cục từ một bản vẽ CAD.
 
-Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng GroupDocs.Viewer cho Java để hiển thị bản vẽ CAD hiệu quả:
-- Thiết lập môi trường và thư viện cần thiết
-- Cấu hình tùy chọn kết xuất cho các tệp CAD
-- Triển khai việc kết xuất tất cả các bố cục trong một tệp CAD
+![Kết xuất Tất cả Bố cục CAD với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/render-all-cad-layouts.png)
 
-Chúng ta hãy bắt đầu với những điều kiện tiên quyết cần thiết trước khi bắt đầu.
+## Câu trả lời nhanh
+- **“render CAD layouts Java” có nghĩa là gì?** Chuyển đổi mỗi bố cục trong tệp CAD sang HTML bằng mã Java.  
+- **Thư viện nào xử lý việc chuyển đổi?** GroupDocs.Viewer for Java.  
+- **Tôi có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?** Có, cần một giấy phép GroupDocs hợp lệ.  
+- **Tôi có thể chỉ kết xuất các bố cục cụ thể không?** Có, bạn có thể chỉ định các bố cục riêng lẻ thông qua tùy chọn CAD.  
+- **Đầu ra là HTML hay hình ảnh?** Hướng dẫn này hiển thị HTML với các tài nguyên được nhúng.
 
-## Điều kiện tiên quyết
+## “render CAD layouts Java” là gì?
+Rendering CAD layouts Java đề cập đến quá trình lấy mọi bố cục (hoặc tờ) trong một tệp bản vẽ CAD (ví dụ: DWG, DXF) và chuyển đổi mỗi bố cục thành một trang HTML bằng mã Java. Các trang HTML kết quả có thể được nhúng vào các cổng thông tin web, chia sẻ qua email, hoặc hiển thị trên bất kỳ thiết bị nào mà không cần cài đặt phần mềm CAD.
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã chuẩn bị những điều sau:
+## Tại sao nên sử dụng GroupDocs.Viewer cho Java để chuyển đổi CAD sang HTML?
+- **Khả năng truy cập đa nền tảng** – HTML hoạt động trên mọi trình duyệt, không cần plugin đặc biệt.  
+- **Triển khai một tệp duy nhất** – Các tài nguyên được nhúng giữ mọi thứ gọn gàng trong một thư mục.  
+- **Tối ưu hiệu năng** – Chỉ dữ liệu cần thiết được kết xuất, giảm việc sử dụng bộ nhớ.  
+- **Hỗ trợ đầy đủ các bố cục** – Tất cả các bố cục bản vẽ được xử lý tự động, tiết kiệm công sức thủ công.
 
-### Thư viện và phụ thuộc bắt buộc
-Bạn sẽ cần GroupDocs.Viewer cho Java. Đảm bảo dự án của bạn bao gồm phiên bản 25.2 trở lên.
-- **Thiết lập phụ thuộc Maven**:
-  Thêm nội dung sau vào `pom.xml` tài liệu:
+## Yêu cầu trước
+- **Java Development Kit (JDK) 8+** đã được cài đặt.  
+- **Maven** để quản lý phụ thuộc.  
+- Kiến thức cơ bản về Java và Maven.  
+
+### Thư viện và Phụ thuộc cần thiết
+Bạn sẽ cần **GroupDocs.Viewer for Java** phiên bản 25.2 trở lên.
 
 ```xml
 <repositories>
@@ -45,30 +59,18 @@ Bạn sẽ cần GroupDocs.Viewer cho Java. Đảm bảo dự án của bạn ba
 </dependencies>
 ```
 
-### Yêu cầu thiết lập môi trường
-- Java Development Kit (JDK) 8 trở lên được cài đặt trên hệ thống của bạn.
-- Một IDE như IntelliJ IDEA hoặc Eclipse để viết và chạy mã.
+### Các bước lấy giấy phép
+GroupDocs cung cấp một số cách để lấy giấy phép:
 
-### Điều kiện tiên quyết về kiến thức
-- Hiểu biết cơ bản về các khái niệm lập trình Java
-- Làm quen với Maven để quản lý sự phụ thuộc
+- **Dùng thử miễn phí**: Tải xuống từ [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+- **Giấy phép tạm thời**: Nhận để thử nghiệm tại [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Mua**: Đối với việc sử dụng lâu dài, mua giấy phép trên [Buy GroupDocs page](https://purchase.groupdocs.com/buy).
 
-Với những điều kiện tiên quyết này, chúng ta có thể tiến hành thiết lập GroupDocs.Viewer cho Java.
+## Cách kết xuất CAD layouts Java với GroupDocs.Viewer
+Dưới đây là hướng dẫn từng bước giữ nguyên các khối mã gốc trong khi bổ sung ngữ cảnh.
 
-## Thiết lập GroupDocs.Viewer cho Java
-Để bắt đầu sử dụng GroupDocs.Viewer cho Java, hãy làm theo các bước cài đặt dưới đây:
-
-### Cài đặt qua Maven
-Thêm kho lưu trữ và thông tin chi tiết về sự phụ thuộc vào `pom.xml` như đã trình bày trước đó. Điều này cho phép Maven xử lý việc tải xuống và thiết lập các thư viện cần thiết.
-
-### Các bước xin cấp giấy phép
-GroupDocs cung cấp một số cách để có được giấy phép:
-- **Dùng thử miễn phí**: Tải xuống từ [Dùng thử miễn phí GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Giấy phép tạm thời**: Có được cho mục đích thử nghiệm tại [Trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
-- **Mua**: Để sử dụng liên tục, hãy mua giấy phép trên [Mua trang GroupDocs](https://purchase.groupdocs.com/buy).
-
-### Khởi tạo và thiết lập cơ bản
-Sau khi thiết lập các phụ thuộc Maven, hãy khởi tạo lớp Viewer để bắt đầu hiển thị các tệp CAD. Sau đây là cách thực hiện:
+### Bước 1: Khởi tạo Viewer Cơ bản
+Đầu tiên, tạo một viewer đơn giản để kết xuất tệp CAD sang HTML. Đoạn mã này hiển thị cấu hình tối thiểu.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,10 +78,10 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 
 public class CadRendering {
     public static void main(String[] args) {
-        // Chỉ định đường dẫn tệp CAD đầu vào
+        // Specify input CAD file path
         String filePath = "path/to/your/sample.dwg";
 
-        // Khởi tạo trình xem bằng tệp đầu vào
+        // Initialize viewer with the input file
         try (Viewer viewer = new Viewer(filePath)) {
             HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources("output/page_{0}.html");
             viewer.view(viewOptions);
@@ -88,95 +90,93 @@ public class CadRendering {
 }
 ```
 
-Mã này thiết lập cách hiển thị cơ bản các tệp CAD bằng GroupDocs.Viewer.
-
-## Hướng dẫn thực hiện
-Bây giờ, chúng ta hãy triển khai tính năng để hiển thị tất cả các bố cục từ tệp CAD.
-
-### Hiển thị tất cả các bố cục trong tệp CAD
-Để cấu hình các tùy chọn hiển thị để xem tất cả các bố cục, hãy làm theo các bước sau:
-
-#### Bước 1: Xác định định dạng thư mục đầu ra và đường dẫn tệp
-Bắt đầu bằng cách thiết lập đường dẫn nơi các tệp HTML đã kết xuất của bạn sẽ được lưu. Điều này giúp tổ chức đầu ra hiệu quả.
+### Bước 2: Xác định Thư mục Đầu ra và Định dạng Đường dẫn Tệp
+Sắp xếp các tệp HTML được tạo bằng cách đặt một thư mục đầu ra riêng và mẫu đặt tên.
 
 ```java
 import java.nio.file.Path;
 
-// Xác định đường dẫn thư mục đầu ra
+// Define the output directory path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
-// Tạo định dạng đường dẫn tệp cho mỗi trang bản vẽ CAD
+// Create a file path format for each page of the CAD drawing
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### Bước 2: Cấu hình Tùy chọn chế độ xem HTML
-Bật tài nguyên nhúng và hiển thị tất cả bố cục trong tệp CAD bằng các tùy chọn GroupDocs.Viewer cụ thể.
+### Bước 3: Cấu hình Tùy chọn Xem HTML
+Bật tài nguyên nhúng để CSS, hình ảnh và script được lưu cùng với mỗi trang HTML.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Cấu hình tùy chọn chế độ xem HTML để sử dụng tài nguyên nhúng
+// Configure HTML view options to use embedded resources
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Bước 3: Bật Hiển thị Bố cục
-Đặt `RenderLayouts` tùy chọn thành đúng, đảm bảo tất cả các bố cục đều được hiển thị.
+### Bước 4: Bật Kết xuất Bố cục (Tính năng Chính)
+Yêu cầu viewer xử lý **tất cả** các bố cục trong bản vẽ.
 
 ```java
 viewOptions.getCadOptions().setRenderLayouts(true);
 ```
 
-#### Bước 4: Kết xuất tài liệu bằng Viewer
-Cuối cùng, sử dụng lớp Viewer để hiển thị tệp CAD của bạn với các tùy chọn đã cấu hình.
+### Bước 5: Kết xuất Tài liệu bằng Các tùy chọn Đã cấu hình
+Cuối cùng, kết xuất tệp CAD bằng các tùy chọn vừa thiết lập.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/sample.dwg")) {
-    // Hiển thị tài liệu bằng cách sử dụng các tùy chọn chế độ xem được cấu hình
+    // Render the document using configured view options
     viewer.view(viewOptions);
 }
 ```
 
-### Mẹo khắc phục sự cố
-- **Thiếu sự phụ thuộc**: Đảm bảo của bạn `pom.xml` được cấu hình đúng và các phụ thuộc của Maven được cập nhật.
-- **Lỗi đường dẫn tệp**: Xác minh rằng đường dẫn tệp CAD đầu vào và đường dẫn thư mục đầu ra được chỉ định chính xác.
+## Cách chuyển đổi CAD sang HTML bằng GroupDocs.Viewer
+Các bước trên đã tạo ra đầu ra HTML, đây là cách phổ biến nhất để **convert CAD to HTML**. Bằng cách bật `setRenderLayouts(true)`, mỗi bố cục sẽ trở thành một trang HTML riêng, sẵn sàng cho việc xuất bản trên web.
 
-## Ứng dụng thực tế
-Việc kết xuất tất cả các bố cục từ bản vẽ CAD có một số ứng dụng thực tế:
-1. **Bài thuyết trình về kiến trúc**: Cho phép các kiến trúc sư thể hiện nhiều góc nhìn thiết kế khác nhau trong cùng một tài liệu.
-2. **Tài liệu kỹ thuật**: Giúp chia sẻ dễ dàng hơn các thiết kế kỹ thuật phức tạp với nhiều bên liên quan.
-3. **Tài nguyên giáo dục**: Cho phép các nhà giáo dục trình bày sơ đồ và kế hoạch chi tiết trong lớp học kỹ thuật số.
+## Các vấn đề thường gặp và giải pháp
+- **Thiếu phụ thuộc** – Kiểm tra lại các phần `<repositories>` và `<dependencies>` trong `pom.xml`. Chạy `mvn clean install` để buộc Maven tải xuống các artifact mới nhất.  
+- **Lỗi Đường dẫn Tệp** – Đảm bảo cả đường dẫn tệp CAD đầu vào và thư mục đầu ra tồn tại và có thể truy cập bởi tiến trình Java.  
+- **Hết bộ nhớ khi xử lý tệp lớn** – Tăng kích thước heap JVM (`-Xmx2g` hoặc cao hơn) hoặc xử lý tệp thành các lô nhỏ hơn nếu gặp `OutOfMemoryError`.
 
-Việc tích hợp GroupDocs.Viewer có thể tăng cường khả năng cộng tác trên nhiều nền tảng khác nhau, bao gồm các ứng dụng web hoặc hệ thống quản lý tài liệu.
+## Ứng dụng thực tiễn
+1. **Bài thuyết trình Kiến trúc** – Hiển thị mọi bản đồ tầng hoặc mặt đứng ở định dạng thân thiện với trình duyệt.  
+2. **Tài liệu Kỹ thuật** – Chia sẻ các sơ đồ phức tạp với nhà thầu mà không cần phần mềm CAD.  
+3. **Tài liệu E‑Learning** – Nhúng các bố cục CAD tương tác vào các khóa học hoặc hướng dẫn trực tuyến.
 
-## Cân nhắc về hiệu suất
-Việc tối ưu hóa hiệu suất khi kết xuất tệp CAD là rất quan trọng:
-- **Quản lý bộ nhớ**: Sử dụng cấu trúc dữ liệu hiệu quả và quản lý bộ nhớ Java bằng cách điều chỉnh các tùy chọn JVM.
-- **Sử dụng tài nguyên**: Đảm bảo máy chủ của bạn có đủ tài nguyên để xử lý các tệp có kích thước lớn và nhiều người dùng cùng lúc.
-- **Thực hành tốt nhất**Cập nhật thường xuyên thư viện GroupDocs.Viewer để cải tiến và sửa lỗi.
+## Các cân nhắc về hiệu năng
+- **Quản lý bộ nhớ** – Sử dụng phiên bản GroupDocs mới nhất và điều chỉnh các tùy chọn JVM cho bản vẽ lớn.  
+- **Sử dụng tài nguyên** – Kết xuất vào một thư mục đầu ra riêng để tránh lộn xộn và dễ dàng dọn dẹp.  
+- **Giữ thư viện luôn cập nhật** – Các bản phát hành mới thường bao gồm cải thiện hiệu năng và sửa lỗi.
 
-## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách kết xuất tất cả các bố cục từ bản vẽ CAD bằng GroupDocs.Viewer cho Java. Bằng cách làm theo các bước được nêu, bạn có thể tích hợp các tính năng kết xuất mạnh mẽ vào ứng dụng của mình.
+## Kết luận
+Bạn hiện đã có một phương pháp hoàn chỉnh, sẵn sàng cho môi trường sản xuất để **render CAD layouts Java** và **convert CAD to HTML** bằng cách sử dụng GroupDocs.Viewer. Hãy tích hợp các đoạn mã này vào cổng thông tin web, hệ thống quản lý tài liệu, hoặc bất kỳ backend nào dựa trên Java để cung cấp cho người dùng khả năng truy cập ngay lập tức, dựa trên trình duyệt, tới mọi bố cục trong tệp CAD của họ.
 
-Bước tiếp theo, hãy khám phá thêm các tùy chọn tùy chỉnh trong [Tài liệu về Trình xem GroupDocs](https://docs.groupdocs.com/viewer/java/) và cân nhắc tích hợp các loại tài liệu khác được GroupDocs.Viewer hỗ trợ.
+Khám phá các tùy chọn tùy chỉnh bổ sung trong tài liệu chính thức và tham chiếu API để điều chỉnh đầu ra phù hợp với nhu cầu cụ thể của bạn.
 
 ## Phần Câu hỏi thường gặp
-1. **GroupDocs.Viewer cho Java là gì?**
-   - Đây là một thư viện đa năng cho phép kết xuất nhiều định dạng tài liệu khác nhau, bao gồm cả tệp CAD, thành HTML hoặc hình ảnh.
-2. **Làm thế nào để xử lý các tệp CAD lớn bằng GroupDocs.Viewer?**
-   - Tối ưu hóa cài đặt bộ nhớ và cân nhắc việc chia nhỏ các bản vẽ phức tạp nếu có thể.
-3. **Tôi chỉ có thể hiển thị những bố cục cụ thể được không?**
-   - Có, hãy sử dụng tên bố cục trong tùy chọn chế độ xem để nhắm mục tiêu vào các bố cục cụ thể.
-4. **Có hỗ trợ các định dạng tài liệu khác không?**
-   - Chắc chắn rồi! GroupDocs.Viewer hỗ trợ nhiều định dạng khác nhau ngoài các tệp CAD.
-5. **Tôi có thể tìm thêm tài nguyên về cách sử dụng GroupDocs.Viewer Java ở đâu?**
-   - Ghé thăm [Tham chiếu API của GroupDocs Viewer](https://reference.groupdocs.com/viewer/java/) và khám phá thêm tài liệu.
+1. **GroupDocs.Viewer cho Java là gì?**  
+   - Đây là một thư viện đa năng cho phép kết xuất nhiều định dạng tài liệu, bao gồm tệp CAD, sang HTML hoặc hình ảnh.  
+2. **Làm thế nào để xử lý các tệp CAD lớn với GroupDocs.Viewer?**  
+   - Tối ưu cài đặt bộ nhớ và cân nhắc chia nhỏ các bản vẽ phức tạp nếu có thể.  
+3. **Tôi có thể chỉ kết xuất các bố cục cụ thể không?**  
+   - Có, sử dụng tên bố cục trong tùy chọn xem của bạn để chỉ định các bố cục cụ thể.  
+4. **Có hỗ trợ các định dạng tài liệu khác không?**  
+   - Chắc chắn! GroupDocs.Viewer hỗ trợ nhiều định dạng ngoài CAD.  
+5. **Tôi có thể tìm thêm tài nguyên về việc sử dụng GroupDocs.Viewer Java ở đâu?**  
+   - Truy cập [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/) và [GroupDocs Viewer API Reference](https://reference.groupdocs.com/viewer/java/).
 
 ## Tài nguyên
-- Tài liệu: [Trình xem tài liệu GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- Tài liệu tham khảo API: [API Trình xem GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- Tải xuống GroupDocs.Viewer cho Java: [Liên kết tải xuống](https://releases.groupdocs.com/viewer/java/)
-- Mua và cấp phép: [Mua GroupDocs](https://purchase.groupdocs.com/buy)
-- Dùng thử miễn phí: [Phiên bản dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)
-- Giấy phép tạm thời: [Trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
-- Diễn đàn hỗ trợ: [Hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- Tài liệu: [GroupDocs Viewer Docs](https://docs.groupdocs.com/viewer/java/)  
+- Tham chiếu API: [GroupDocs Viewer API](https://reference.groupdocs.com/viewer/java/)  
+- Tải xuống GroupDocs.Viewer cho Java: [Download Link](https://releases.groupdocs.com/viewer/java/)  
+- Mua và Giấy phép: [Purchase GroupDocs](https://purchase.groupdocs.com/buy)  
+- Dùng thử miễn phí: [Free Trial Version](https://releases.groupdocs.com/viewer/java/)  
+- Giấy phép tạm thời: [Temporary License Page](https://purchase.groupdocs.com/temporary-license/)  
+- Diễn đàn hỗ trợ: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Cập nhật lần cuối:** 2026-01-08  
+**Kiểm tra với:** GroupDocs.Viewer 25.2 for Java  
+**Tác giả:** GroupDocs

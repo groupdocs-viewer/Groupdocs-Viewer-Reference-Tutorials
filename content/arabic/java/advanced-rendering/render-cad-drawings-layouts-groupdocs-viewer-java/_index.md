@@ -1,32 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "تعرّف على كيفية عرض جميع المخططات من رسومات CAD باستخدام GroupDocs.Viewer لجافا. يغطي هذا الدليل الإعداد والتكوين والتطبيق العملي."
-"title": "عرض جميع تخطيطات CAD بكفاءة باستخدام GroupDocs.Viewer لـ Java"
-"url": "/ar/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-08'
+description: تعلم كيفية عرض تخطيطات CAD باستخدام Java وتحويل CAD إلى HTML باستخدام
+  GroupDocs.Viewer for Java. دليل خطوة بخطوة مع أمثلة على الكود.
+keywords:
+- render CAD layouts
+- GroupDocs.Viewer for Java
+- Java rendering options
+title: عرض تخطيطات CAD باستخدام Java – عرض فعال مع GroupDocs
 type: docs
+url: /ar/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# عرض جميع تخطيطات CAD بكفاءة باستخدام GroupDocs.Viewer لـ Java
 
-## مقدمة
+# عرض تخطيطات CAD باستخدام Java – عرض فعال مع GroupDocs.Viewer
 
-عند العمل مع ملفات CAD، غالبًا ما يكون عرض جميع التخطيطات داخل ملف واحد بكفاءة أمرًا بالغ الأهمية. **GroupDocs.Viewer لـ Java** يجعل من السهل تقديم كافة التخطيطات من رسم CAD إلى تنسيق HTML، مما يعزز إمكانية الوصول والمشاركة.
+عند العمل مع ملفات CAD، **render CAD layouts Java** بشكل فعال غالبًا ما يكون أمرًا حاسمًا للتعاون السريع والمشاركة السهلة. يتيح لك GroupDocs.Viewer for Java تحويل رسومات CAD إلى HTML، مما يجعل كل تخطيط قابلًا للعرض في أي متصفح. في هذا الدليل سنستعرض الإعداد، التكوين، والكود اللازم لعرض جميع التخطيطات من رسم CAD.
 
-سوف يرشدك هذا البرنامج التعليمي إلى كيفية استخدام GroupDocs.Viewer لـ Java لعرض رسومات CAD بشكل فعال:
-- إعداد البيئة والمكتبات اللازمة
-- تكوين خيارات العرض لملفات CAD
-- تنفيذ عرض جميع التخطيطات داخل ملف CAD
+![عرض جميع تخطيطات CAD باستخدام GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-all-cad-layouts.png)
 
-دعونا نبدأ بالمتطلبات الأساسية اللازمة قبل البدء.
+## إجابات سريعة
+- **ماذا يعني “render CAD layouts Java”؟** تحويل كل تخطيط في ملف CAD إلى HTML باستخدام كود Java.  
+- **أي مكتبة تتولى التحويل؟** GroupDocs.Viewer for Java.  
+- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** نعم، يلزم وجود ترخيص GroupDocs صالح.  
+- **هل يمكنني عرض تخطيطات محددة فقط؟** نعم، يمكنك استهداف تخطيطات فردية عبر خيارات CAD.  
+- **هل الناتج HTML أم صور؟** يوضح هذا البرنامج التعليمي HTML مع موارد مدمجة.
 
-## المتطلبات الأساسية
+## ما هو “render CAD layouts Java”؟
+يشير Rendering CAD layouts Java إلى عملية أخذ كل تخطيط (أو ورقة) داخل ملف رسم CAD (مثل DWG، DXF) وتحويل كل واحد منها إلى صفحة HTML باستخدام كود Java. يمكن تضمين صفحات HTML الناتجة في بوابات الويب، مشاركتها عبر البريد الإلكتروني، أو عرضها على أي جهاز دون الحاجة لتثبيت برنامج CAD.
 
-قبل أن نبدأ، تأكد من أن لديك ما يلي:
+## لماذا نستخدم GroupDocs.Viewer for Java لتحويل CAD إلى HTML؟
+- **إمكانية الوصول عبر الأنظمة المتعددة** – يعمل HTML على أي متصفح، دون الحاجة لإضافات خاصة.  
+- **نشر ملف واحد** – الموارد المدمجة تحافظ على كل شيء منظمًا في مجلد واحد.  
+- **تحسين الأداء** – يتم عرض البيانات الضرورية فقط، مما يقلل استهلاك الذاكرة.  
+- **دعم كامل للتخطيطات** – يتم معالجة جميع تخطيطات الرسم تلقائيًا، مما يوفر الجهد اليدوي.
 
-### المكتبات والتبعيات المطلوبة
-ستحتاج إلى GroupDocs.Viewer لجافا. تأكد من أن مشروعك يتضمن الإصدار 25.2 أو أحدث.
-- **إعداد تبعية Maven**:
-  أضف ما يلي إلى `pom.xml` ملف:
+## المتطلبات المسبقة
+- **Java Development Kit (JDK) 8+** مثبت.  
+- **Maven** لإدارة الاعتمادات.  
+- معرفة أساسية بـ Java و Maven.  
+
+### المكتبات والاعتمادات المطلوبة
+ستحتاج إلى **GroupDocs.Viewer for Java** الإصدار 25.2 أو أحدث.
 
 ```xml
 <repositories>
@@ -45,30 +59,17 @@ type: docs
 </dependencies>
 ```
 
-### متطلبات إعداد البيئة
-- تم تثبيت Java Development Kit (JDK) 8 أو إصدار أحدث على نظامك.
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse لكتابة وتشغيل التعليمات البرمجية.
-
-### متطلبات المعرفة
-- فهم أساسي لمفاهيم برمجة جافا
-- المعرفة بـ Maven لإدارة التبعيات
-
-بعد توفر هذه المتطلبات الأساسية، يمكننا المضي قدمًا في إعداد GroupDocs.Viewer لـ Java.
-
-## إعداد GroupDocs.Viewer لـ Java
-لبدء استخدام GroupDocs.Viewer لـ Java، اتبع خطوات التثبيت أدناه:
-
-### التثبيت عبر Maven
-أضف تفاصيل المستودع والتبعية في `pom.xml` كما هو موضح سابقًا. هذا يسمح لـ Maven بتنزيل المكتبات اللازمة وإعدادها.
-
 ### خطوات الحصول على الترخيص
-توفر GroupDocs عدة طرق للحصول على ترخيص:
-- **نسخة تجريبية مجانية**:تحميل من [النسخة التجريبية المجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **رخصة مؤقتة**:الحصول عليها لأغراض الاختبار في [صفحة الترخيص المؤقت](https://purchase.groupdocs.com/temporary-license/).
-- **شراء**:للاستخدام المستمر، قم بشراء ترخيص على [صفحة شراء GroupDocs](https://purchase.groupdocs.com/buy).
+يقدم GroupDocs عدة طرق للحصول على ترخيص:
+- **تجربة مجانية**: تحميل من [تجربة مجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+- **ترخيص مؤقت**: الحصول عليه لأغراض الاختبار عبر [صفحة الترخيص المؤقت](https://purchase.groupdocs.com/temporary-license/).  
+- **شراء**: للاستخدام المستمر، اشترِ ترخيصًا من خلال [صفحة شراء GroupDocs](https://purchase.groupdocs.com/buy).
 
-### التهيئة والإعداد الأساسي
-بعد إعداد تبعيات Maven، شغّل فئة Viewer لبدء عرض ملفات CAD. إليك الطريقة:
+## كيفية render CAD layouts Java باستخدام GroupDocs.Viewer
+فيما يلي دليل خطوة بخطوة يحافظ على كتل الكود الأصلية دون تعديل مع إضافة السياق.
+
+### الخطوة 1: تهيئة Viewer أساسية
+أولاً، أنشئ Viewer بسيطًا يقوم بتحويل ملف CAD إلى HTML. يوضح هذا المقتطف الإعداد الأدنى.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,10 +77,10 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 
 public class CadRendering {
     public static void main(String[] args) {
-        // تحديد مسار ملف CAD المدخل
+        // Specify input CAD file path
         String filePath = "path/to/your/sample.dwg";
 
-        // تهيئة العارض باستخدام ملف الإدخال
+        // Initialize viewer with the input file
         try (Viewer viewer = new Viewer(filePath)) {
             HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources("output/page_{0}.html");
             viewer.view(viewOptions);
@@ -88,95 +89,93 @@ public class CadRendering {
 }
 ```
 
-يقوم هذا الكود بإعداد عرض أساسي لملفات CAD باستخدام GroupDocs.Viewer.
-
-## دليل التنفيذ
-الآن، دعنا ننفذ الميزة لعرض كافة التخطيطات من ملف CAD.
-
-### عرض جميع التخطيطات في ملفات CAD
-لتكوين خيارات العرض لعرض كافة التخطيطات، اتبع الخطوات التالية:
-
-#### الخطوة 1: تحديد تنسيق دليل الإخراج ومسار الملف
-ابدأ بإعداد مسارات لحفظ ملفات HTML المُقدمة. هذا يُساعد على تنظيم المخرجات بكفاءة.
+### الخطوة 2: تعريف دليل الإخراج وتنسيق مسار الملف
+نظم ملفات HTML المولدة بتحديد مجلد إخراج مخصص ونمط تسمية.
 
 ```java
 import java.nio.file.Path;
 
-// تحديد مسار دليل الإخراج
+// Define the output directory path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
-// إنشاء تنسيق مسار الملف لكل صفحة من رسم CAD
+// Create a file path format for each page of the CAD drawing
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### الخطوة 2: تكوين خيارات عرض HTML
-قم بتمكين الموارد المضمنة وعرض جميع التخطيطات في ملف CAD باستخدام خيارات GroupDocs.Viewer المحددة.
+### الخطوة 3: تكوين خيارات عرض HTML
+فعّل الموارد المدمجة بحيث يتم تخزين CSS، الصور، والسكربتات بجانب كل صفحة HTML.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// تكوين خيارات عرض HTML لاستخدام الموارد المضمنة
+// Configure HTML view options to use embedded resources
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### الخطوة 3: تمكين عرض التخطيط
-اضبط `RenderLayouts` خيار صحيح، مما يضمن عرض كافة التخطيطات.
+### الخطوة 4: تمكين عرض التخطيطات (الميزة الأساسية)
+أخبر Viewer بمعالجة **جميع** التخطيطات في الرسم.
 
 ```java
 viewOptions.getCadOptions().setRenderLayouts(true);
 ```
 
-#### الخطوة 4: عرض المستند باستخدام العارض
-أخيرًا، استخدم فئة Viewer لعرض ملف CAD الخاص بك باستخدام الخيارات التي تم تكوينها.
+### الخطوة 5: عرض المستند باستخدام الخيارات المكوَّنة
+أخيرًا، قم بعرض ملف CAD باستخدام الخيارات التي ضبطتها للتو.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/sample.dwg")) {
-    // عرض المستند باستخدام خيارات العرض المُهيأة
+    // Render the document using configured view options
     viewer.view(viewOptions);
 }
 ```
 
-### نصائح استكشاف الأخطاء وإصلاحها
-- **التبعيات المفقودة**:تأكد من `pom.xml` تم تكوينه بشكل صحيح وتم تحديث تبعيات Maven.
-- **أخطاء مسار الملف**:تأكد من تحديد مسارات ملفات CAD المدخلة ومسارات دليل الإخراج بشكل صحيح.
+## كيفية تحويل CAD إلى HTML باستخدام GroupDocs.Viewer
+الخطوات أعلاه تنتج بالفعل مخرجات HTML، وهو الشكل الأكثر شيوعًا لـ **convert CAD to HTML**. من خلال تمكين `setRenderLayouts(true)`، يصبح كل تخطيط صفحة HTML خاصة به، جاهزة للنشر على الويب.
 
-## التطبيقات العملية
-إن تقديم كافة التخطيطات من رسم CAD له العديد من التطبيقات في العالم الحقيقي:
-1. **العروض المعمارية**:تمكين المهندسين المعماريين من عرض وجهات نظر تصميمية مختلفة ضمن وثيقة واحدة.
-2. **وثائق الهندسة**:يسهل مشاركة التصميمات الهندسية المعقدة مع أصحاب المصلحة المتعددين.
-3. **الموارد التعليمية**:يسمح للمعلمين بتقديم مخططات وخطط مفصلة في الفصول الدراسية الرقمية.
+## المشكلات الشائعة والحلول
+- **الاعتمادات المفقودة** – تحقق مرة أخرى من أقسام `<repositories>` و `<dependencies>` في `pom.xml`. نفّذ `mvn clean install` لإجبار Maven على تنزيل أحدث الحزم.  
+- **أخطاء مسار الملف** – تأكد من وجود مسار ملف CAD المدخل ودليل الإخراج وأنهما قابلان للوصول من عملية Java.  
+- **نفاد الذاكرة في الملفات الكبيرة** – زد حجم Heap الخاص بـ JVM (`-Xmx2g` أو أعلى) أو عالج الملف على دفعات أصغر إذا صادفت `OutOfMemoryError`.
 
-يمكن أن يؤدي دمج GroupDocs.Viewer إلى تعزيز التعاون عبر منصات مختلفة، بما في ذلك تطبيقات الويب أو أنظمة إدارة المستندات.
+## تطبيقات عملية
+1. **العروض المعمارية** – عرض كل مخطط طابق أو ارتفاع بصيغة صديقة للمتصفح.  
+2. **توثيق الهندسة** – مشاركة المخططات المعقدة مع المقاولين دون الحاجة لبرنامج CAD.  
+3. **مواد التعلم الإلكتروني** – تضمين تخطيطات CAD التفاعلية في الدورات أو الدروس عبر الإنترنت.
 
 ## اعتبارات الأداء
-يعد تحسين الأداء عند عرض ملفات CAD أمرًا بالغ الأهمية:
-- **إدارة الذاكرة**:استخدم هياكل البيانات الفعالة وقم بإدارة ذاكرة Java عن طريق ضبط خيارات JVM.
-- **استخدام الموارد**:تأكد من أن الخادم لديك لديه الموارد الكافية للتعامل مع أحجام الملفات الكبيرة والمستخدمين المتزامنين المتعددين.
-- **أفضل الممارسات**:تحديث مكتبات GroupDocs.Viewer بشكل منتظم للحصول على التحسينات وإصلاح الأخطاء.
+- **إدارة الذاكرة** – استخدم أحدث نسخة من GroupDocs واضبط خيارات JVM للرسومات الكبيرة.  
+- **استخدام الموارد** – احفظ المخرجات في مجلد إخراج مخصص لتجنب الفوضى وتسهيل عملية التنظيف.  
+- **تحديث المكتبات** – الإصدارات الجديدة غالبًا ما تتضمن تحسينات أداء وإصلاحات أخطاء.
 
-## خاتمة
-في هذا البرنامج التعليمي، تعلمت كيفية عرض جميع المخططات من رسومات CAD باستخدام GroupDocs.Viewer لجافا. باتباع الخطوات الموضحة، يمكنك دمج ميزات عرض فعّالة في تطبيقاتك.
+## الخلاصة
+أصبح لديك الآن طريقة كاملة وجاهزة للإنتاج **render CAD layouts Java** و **convert CAD to HTML** باستخدام GroupDocs.Viewer. دمج هذه المقتطفات في بوابة الويب الخاصة بك، نظام إدارة المستندات، أو أي خلفية مبنية على Java لتوفير وصول فوري للمستخدمين إلى كل تخطيط في ملفات CAD عبر المتصفح.
 
-كخطوات تالية، استكشف خيارات التخصيص الإضافية في [توثيق عارض GroupDocs](https://docs.groupdocs.com/viewer/java/) والنظر في دمج أنواع المستندات الأخرى التي يدعمها GroupDocs.Viewer.
+استكشف خيارات التخصيص الإضافية في الوثائق الرسمية ومرجع API لتكييف المخرجات وفقًا لاحتياجاتك الدقيقة.
 
-## قسم الأسئلة الشائعة
-1. **ما هو GroupDocs.Viewer لـ Java؟**
-   - إنها مكتبة متعددة الاستخدامات تسمح بتحويل تنسيقات المستندات المختلفة، بما في ذلك ملفات CAD، إلى HTML أو صور.
-2. **كيف يمكنني التعامل مع ملفات CAD الكبيرة باستخدام GroupDocs.Viewer؟**
-   - قم بتحسين إعدادات الذاكرة وفكر في تقسيم الرسومات المعقدة إذا كان ذلك ممكنًا.
-3. **هل يمكنني تقديم تخطيطات محددة فقط؟**
-   - نعم، استخدم أسماء التخطيطات في خيارات العرض الخاصة بك لاستهداف تخطيطات محددة.
-4. **هل هناك دعم لتنسيقات المستندات الأخرى؟**
-   - بالتأكيد! يدعم GroupDocs.Viewer مجموعة واسعة من التنسيقات، بما في ذلك ملفات CAD.
-5. **أين يمكنني العثور على المزيد من الموارد حول استخدام GroupDocs.Viewer Java؟**
-   - قم بزيارة [مرجع واجهة برمجة تطبيقات GroupDocs Viewer](https://reference.groupdocs.com/viewer/java/) واستكشاف الوثائق الإضافية.
+## قسم الأسئلة المتكررة
+1. **ما هو GroupDocs.Viewer for Java؟**  
+   - إنه مكتبة متعددة الاستخدامات تسمح بعرض صيغ مستندات مختلفة، بما في ذلك ملفات CAD، إلى HTML أو صور.  
+2. **كيف يمكنني التعامل مع ملفات CAD الكبيرة باستخدام GroupDocs.Viewer؟**  
+   - حسّن إعدادات الذاكرة وفكّر في تقسيم الرسومات المعقدة إذا أمكن.  
+3. **هل يمكنني عرض تخطيطات محددة فقط؟**  
+   - نعم، استخدم أسماء التخطيطات في خيارات العرض لاستهداف تخطيطات معينة.  
+4. **هل هناك دعم لصيغ مستندات أخرى؟**  
+   - بالتأكيد! يدعم GroupDocs.Viewer مجموعة واسعة من الصيغ بخلاف CAD.  
+5. **أين يمكنني العثور على موارد إضافية حول استخدام GroupDocs.Viewer Java؟**  
+   - زر [توثيق GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/) و[مرجع API لـ GroupDocs Viewer](https://reference.groupdocs.com/viewer/java/).
 
-## موارد
-- التوثيق: [عارض مستندات GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- مرجع واجهة برمجة التطبيقات: [واجهة برمجة تطبيقات عارض GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- تنزيل GroupDocs.Viewer لـ Java: [رابط التحميل](https://releases.groupdocs.com/viewer/java/)
-- الشراء والترخيص: [شراء GroupDocs](https://purchase.groupdocs.com/buy)
-- نسخة تجريبية مجانية: [نسخة تجريبية مجانية](https://releases.groupdocs.com/viewer/java/)
-- رخصة مؤقتة: [صفحة الترخيص المؤقت](https://purchase.groupdocs.com/temporary-license/)
+## الموارد
+- الوثائق: [GroupDocs Viewer Docs](https://docs.groupdocs.com/viewer/java/)  
+- مرجع API: [GroupDocs Viewer API](https://reference.groupdocs.com/viewer/java/)  
+- تحميل GroupDocs.Viewer for Java: [رابط التحميل](https://releases.groupdocs.com/viewer/java/)  
+- الشراء والترخيص: [شراء GroupDocs](https://purchase.groupdocs.com/buy)  
+- تجربة مجانية: [نسخة تجريبية مجانية](https://releases.groupdocs.com/viewer/java/)  
+- ترخيص مؤقت: [صفحة الترخيص المؤقت](https://purchase.groupdocs.com/temporary-license/)  
 - منتدى الدعم: [دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**آخر تحديث:** 2026-01-08  
+**تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
+**المؤلف:** GroupDocs
