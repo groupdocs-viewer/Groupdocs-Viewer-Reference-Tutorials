@@ -1,47 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak zadat vlastní názvy souborů při převodu archivních souborů do PDF pomocí GroupDocs.Viewer pro Javu. Zjednodušte si správu dokumentů pomocí tohoto pokročilého tutoriálu."
-"title": "Zvládnutí vlastních názvů souborů v Javě v GroupDocs.Viewer pro vykreslování archivů ve formátu PDF"
-"url": "/cs/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
-"weight": 1
+date: '2025-12-17'
+description: Naučte se, jak převést archiv na PDF s vlastními názvy souborů pomocí
+  GroupDocs.Viewer pro Javu. Zefektivněte svůj pracovní postup s dokumenty tímto podrobným
+  průvodcem.
+keywords:
+- GroupDocs.Viewer Java
+- custom filenames PDF rendering
+- archive files to PDF
+title: Převod archivu do PDF pomocí GroupDocs.Viewer Java – Vlastní názvy souborů
 type: docs
+url: /cs/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
+weight: 1
 ---
-# Zvládnutí GroupDocs.Viewer v Javě: Zadání vlastních názvů souborů při vykreslování archivů do PDF
 
-## Zavedení
+# Převést archiv na PDF pomocí GroupDocs.Viewer Java – Vlastní názvy souborů
 
-Máte potíže s nesprávnými názvy souborů během převodu archivních souborů do formátu PDF? Ať už jde o branding nebo organizační potřeby, zadání vlastních názvů souborů při převodu archivů zajišťuje konzistenci a zvyšuje efektivitu pracovního postupu. Tento tutoriál vás provede používáním GroupDocs.Viewer pro Javu k přizpůsobení názvů výstupních souborů během vykreslování.
+Když potřebujete **převést archiv na pdf** a zároveň zachovat čistou konvenci pojmenování, GroupDocs.Viewer pro Java to usnadňuje. V tomto tutoriálu se naučíte, jak vykreslit soubory archivů (ZIP, RAR, atd.) do PDF dokumentů a přiřadit vlastní názvy souborů, aby výstup perfektně zapadal do vaší značky nebo systému archivace.
 
-**Co se naučíte:**
-- Nastavení GroupDocs.Vieweru pro Javu
-- Vykreslení archivních souborů do PDF se zadanými názvy souborů
-- Praktické aplikace funkcí pro vlastní názvy souborů
-- Nejlepší postupy pro optimalizaci výkonu
+![Vlastní názvy souborů pro vykreslování PDF archivů pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
 
-Pojďme se do toho pustit nastavením prostředí a prozkoumáním klíčových funkcí, díky nimž je GroupDocs.Viewer výkonným nástrojem pro vykreslování dokumentů.
+**Co se naučíte**
+- Jak nastavit GroupDocs.Viewer pro Java
+- Postup krok za krokem k **převodu archivu na pdf** s vlastním názvem souboru
+- Reálné scénáře, kde vlastní názvy souborů zlepšují pracovní postup
+- Tipy pro optimální výkon a řešení problémů
+
+## Rychlé odpovědi
+- **Mohu změnit název PDF při převodu archivu?** Ano, použijte `ArchiveOptions.setFileName(...)`.
+- **Jaká verze Maven je vyžadována?** GroupDocs.Viewer Java 25.2 nebo novější.
+- **Potřebuji licenci pro tuto funkci?** Zkušební verze funguje pro hodnocení; pro produkci je vyžadována trvalá licence.
+- **Je tento přístup thread‑safe?** Vykreslování je bezpečné, pokud každý vlákno používá vlastní instanci `Viewer`.
+- **Jaké typy souborů lze archivovat?** ZIP, RAR, 7z, TAR a další formáty podporované GroupDocs.Viewer.
+
+## Co je „převod archivu na pdf“?
+Převod archivu na PDF znamená extrahování každého dokumentu uvnitř archivu a jejich sekvenční vykreslení do jediného PDF souboru. To je užitečné pro archivaci, sdílení nebo tisk seskupených dokumentů jako jednoho koherentního PDF.
+
+## Proč použít GroupDocs.Viewer pro vlastní názvy souborů?
+- **Konzistence značky** – Výstupní PDF mají název, který odpovídá vašim firemním standardům.  
+- **Zjednodušená správa souborů** – Předvídatelné názvy usnadňují automatické zpracování a indexování.  
+- **Žádné další post‑processing** – Název souboru je nastaven během vykreslování, čímž se eliminuje potřeba kroku přejmenování.
 
 ## Předpoklady
 
-Než začneme, ujistěte se, že máte následující:
+- **GroupDocs.Viewer pro Java** ≥ 25.2  
+- Nainstalovaný Java Development Kit (JDK)  
+- IDE jako IntelliJ IDEA nebo Eclipse  
+- Základní znalosti Java a Maven  
 
-### Požadované knihovny a závislosti
-- **GroupDocs.Viewer pro Javu**Verze 25.2 nebo novější.
+## Nastavení GroupDocs.Viewer pro Java
 
-### Požadavky na nastavení prostředí
-- JDK (Java Development Kit) nainstalovaný na vašem počítači.
-- IDE jako IntelliJ IDEA nebo Eclipse pro vývoj Java aplikací.
-
-### Předpoklady znalostí
-- Základní znalost programování v Javě.
-- Znalost Mavenu jako nástroje pro automatizaci sestavení.
-
-Po splnění těchto předpokladů můžeme pokračovat v nastavení GroupDocs.Viewer pro Javu.
-
-## Nastavení GroupDocs.Viewer pro Javu
-
-### Instalace přes Maven
-
-Chcete-li integrovat GroupDocs.Viewer do svého projektu pomocí Mavenu, přidejte do svého repozitáře následující repozitář a závislost. `pom.xml` soubor:
+### Instalace pomocí Maven
+Přidejte úložiště a závislost do svého `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,136 +71,126 @@ Chcete-li integrovat GroupDocs.Viewer do svého projektu pomocí Mavenu, přidej
 ```
 
 ### Kroky získání licence
-- **Bezplatná zkušební verze**: Získejte přístup k plně funkční zkušební verzi pro otestování funkcí.
-- **Dočasná licence**Získejte pro rozšířené vyhodnocení bez omezení.
-- **Nákup**Získejte licenci pro komerční použití.
+- **Free Trial** – Plně funkční pro hodnocení.  
+- **Temporary License** – Prodlouží zkušební verzi bez omezení funkcí.  
+- **Purchase** – Vyžadováno pro komerční nasazení.
 
-#### Základní inicializace a nastavení
-
-Po nastavení Mavenu inicializujte GroupDocs.Viewer pomocí následujícího úryvku kódu:
+### Základní inicializace
+Vytvořte instanci `Viewer`, se kterou budete pracovat s vaším archivem:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Inicializovat objekt prohlížeče
+// Initialize viewer object
 try (Viewer viewer = new Viewer("YOUR_ARCHIVE_FILE_PATH")) {
-    // Nakonfigurujte možnosti zde
+    // Configure options here
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-## Průvodce implementací
+## Jak převést archiv na PDF s vlastními názvy souborů
 
-Nyní se zaměřme na zadávání názvů souborů při vykreslování archivů do PDF.
-
-### Zadávání názvu souboru při vykreslování archivních souborů
-
-Tato funkce vám umožňuje přizpůsobit název výstupního souboru vašeho vykresleného PDF dokumentu. Postupujte takto:
-
-#### Krok 1: Definování výstupního adresáře a cesty k souboru
-
-Začněte nastavením výstupního adresáře a cesty k souboru pomocí zástupných symbolů pro snadné přizpůsobení:
+### Krok 1: Definujte výstupní adresář a cestu k souboru
+Nastavte složku, kam bude PDF uložen. Použití `Path` činí kód nezávislým na OS.
 
 ```java
 import java.nio.file.Path;
-// Definujte výstupní adresář a cestu k souboru
+// Define output directory and file path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
 ```
 
-#### Krok 2: Inicializace objektu prohlížeče
-
-Vytvořte `Viewer` objekt s archivním souborem, který chcete vykreslit:
+### Krok 2: Inicializujte Viewer s vaším archivem
+Ukazujte `Viewer` na archiv, který chcete vykreslit (např. ZIP soubor).
 
 ```java
 import com.groupdocs.viewer.Viewer;
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP")) {
-    // Pokračujte k dalším krokům
+    // Continue to next steps
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-#### Krok 3: Vytvořte PDFViewOptions
-
-Nastavení `PdfViewOptions` pro určení konfigurace vykreslování:
+### Krok 3: Vytvořte `PdfViewOptions`
+Dejte GroupDocs.Viewer vědět, kam má PDF zapisovat.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
-// Konfigurace možností zobrazení PDF
+// Configure PDF view options
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### Krok 4: Nastavení vlastního názvu souboru
-
-Použití `ArchiveOptions` Chcete-li nastavit vlastní název souboru pro vykreslený dokument PDF:
+### Krok 4: Nastavte vlastní název souboru
+Použijte `ArchiveOptions` k přepsání výchozího generovaného názvu.
 
 ```java
 import com.groupdocs.viewer.options.FileName;
 import com.groupdocs.viewer.options.ArchiveOptions;
-// Zadejte název výstupního PDF souboru
+// Specify the output PDF filename
 viewOptions.getArchiveOptions().setFileName(new FileName("my_custom_filename.pdf"));
 ```
 
-#### Krok 5: Vykreslení archivního souboru do PDF
-
-Nakonec vykreslete archivní soubor pomocí zadaných možností:
+### Krok 5: Vykreslete archiv do PDF
+Spusťte proces vykreslování s nastavenými možnostmi.
 
 ```java
-// Spusťte proces vykreslování
+// Execute rendering process
 viewer.view(viewOptions);
 ```
 
 ### Tipy pro řešení problémů
-- Ujistěte se, že všechny cesty jsou správně nastaveny a že adresáře existují.
-- Ověřte, zda máte nainstalovanou správnou verzi nástroje GroupDocs.Viewer.
+- Ověřte, že `YOUR_OUTPUT_DIRECTORY` existuje a aplikace má oprávnění k zápisu.  
+- Ujistěte se, že používáte GroupDocs.Viewer Java 25.2 nebo novější; starší verze mohou postrádat `ArchiveOptions`.  
+- Pokud se název PDF nepoužije, zkontrolujte, že `setFileName` je voláno **před** `viewer.view(viewOptions)`.
 
 ## Praktické aplikace
 
-Pochopení toho, jak zadávat názvy souborů při vykreslování archivů, může být užitečné v různých scénářích:
-1. **Konzistence brandingu**: Přizpůsobte názvy výstupních souborů pro účely brandingu ve více dokumentech.
-2. **Organizační efektivita**Pro snazší správu a vyhledávání dokumentů zachovávejte konzistentní konvenci pojmenování.
-3. **Automatizované reportování**: Automaticky generovat sestavy s konkrétními názvy souborů pomocí naplánovaných úloh.
+1. **Konzistence značky** – Automaticky pojmenovávat PDF podle kódu projektu nebo identifikátoru klienta.  
+2. **Správa dokumentů** – Slaďte názvy PDF s politikou pojmenování vašeho DMS pro snadnější vyhledávání.  
+3. **Plánované reportování** – Generujte denní zprávy z archivovaných logů a každému PDF přiřaďte časově označený, smysluplný název.
 
 ## Úvahy o výkonu
 
-Při práci s GroupDocs.Viewer zvažte pro optimalizaci výkonu následující:
-- Využívejte efektivní postupy správy paměti v Javě.
-- Sledujte využití zdrojů během operací vykreslování.
-- Používejte osvědčené postupy pro práci s velkými archivy dokumentů bez ovlivnění výkonu systému.
+- **Správa paměti** – Uzavřete `Viewer` pomocí bloku try‑with‑resources (jak je ukázáno), aby se rychle uvolnily nativní zdroje.  
+- **Velké archivy** – Zpracovávejte velké archivy po dávkách nebo zvýšte haldu JVM (`-Xmx`), pokud narazíte na `OutOfMemoryError`.  
+- **Efektivita I/O** – Použijte SSD úložiště pro výstupní adresář, aby se snížila latence zápisu.
 
 ## Závěr
-
-V tomto tutoriálu jste se naučili, jak zadat vlastní názvy souborů při vykreslování archivních souborů do PDF pomocí GroupDocs.Viewer pro Javu. Dodržením těchto kroků můžete vylepšit procesy správy dokumentů a zajistit konzistenci napříč generovanými dokumenty.
+Nyní máte kompletní, připravenou metodu pro **převod archivu na pdf** s přiřazením vlastního názvu souboru pomocí GroupDocs.Viewer pro Java. Tento přístup eliminuje další kroky přejmenování souborů, podporuje iniciativy značky a hladce se integruje do automatizovaných pipeline.
 
 ### Další kroky
-- Prozkoumejte další funkce nástroje GroupDocs.Viewer.
-- Experimentujte s různými typy souborů nad rámec archivů.
+- Prozkoumejte další výstupní formáty jako HTML nebo PNG výměnou `PdfViewOptions` za odpovídající třídu možností.  
+- Kombinujte tuto techniku s GroupDocs.Conversion pro zpracování více formátů po dávkách.  
 
-Jste připraveni implementovat toto řešení do svých projektů? Vyzkoušejte si ho ještě dnes!
+Připraveno k nasazení? Vyzkoušejte to ve vašem dalším Java projektu!
 
-## Sekce Často kladených otázek
+## Často kladené otázky
 
-**Otázka: Jak nainstaluji GroupDocs.Viewer pro Javu?**
-A: Použijte Maven a přidejte zadaný repozitář a závislost do svého `pom.xml`.
+**Q: Jak nainstaluji GroupDocs.Viewer pro Java?**  
+A: Použijte Maven a přidejte úložiště a závislost uvedené v sekci instalace.
 
-**Otázka: Mohu zadat názvy souborů i pro jiné formáty souborů než PDF?**
-A: Ano, podobné možnosti existují pro různé výstupní formáty podporované programem GroupDocs.Viewer.
+**Q: Mohu specifikovat názvy souborů pro jiné formáty kromě PDF?**  
+A: Ano, podobné možnosti existují pro HTML, PNG a další výstupní typy podporované GroupDocs.Viewer.
 
-**Otázka: Co když název souboru mého vykresleného dokumentu neodpovídá očekávání?**
-A: Znovu zkontrolujte definice cest a ujistěte se, že jsou všechny konfigurace správně nastaveny.
+**Q: Co když název vykresleného dokumentu není podle očekávání?**  
+A: Zkontrolujte definice cest a ujistěte se, že `setFileName` je voláno před vykreslením.
 
-**Otázka: Jak mohu pomocí GroupDocs.Viewer zpracovat velké archivní soubory?**
-A: Optimalizujte využití paměti a zvažte rozdělení velkých souborů na menší části pro účely zpracování.
+**Q: Jak zacházet s velkými archivními soubory pomocí GroupDocs.Viewer?**  
+A: Optimalizujte využití paměti, zvažte zpracování v menších částech a monitorujte velikost haldy JVM.
 
-**Otázka: Kde najdu další zdroje informací o používání GroupDocs.Viewer?**
-A: Navštivte [Dokumentace GroupDocs](https://docs.groupdocs.com/viewer/java/) pro komplexní průvodce a reference API.
+**Q: Kde najdu více zdrojů o používání GroupDocs.Viewer?**  
+A: Navštivte [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) pro komplexní průvodce a reference API.
 
 ## Zdroje
-- **Dokumentace**: [Prohlížeč GroupDocs v Javě](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API**: [Referenční příručka prohlížeče GroupDocs v Javě](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout**: [Verze prohlížeče GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Nákup**: [Koupit licenci GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Vyzkoušejte prohlížeč GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Získat dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **API reference**: [GroupDocs Viewer Java Reference](https://reference.groupdocs.com/viewer/java/)
+- **Stáhnout**: [GroupDocs Viewer Releases](https://releases.groupdocs.com/viewer/java/)
+- **Koupit**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Zkušební verze**: [Try GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Dočasná licence**: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Podpora**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+**Poslední aktualizace:** 2025-12-17  
+**Testováno s:** GroupDocs.Viewer Java 25.2  
+**Autor:** GroupDocs
