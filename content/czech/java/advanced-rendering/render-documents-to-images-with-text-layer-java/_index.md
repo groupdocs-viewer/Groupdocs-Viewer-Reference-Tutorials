@@ -1,35 +1,51 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak v Javě vykreslovat dokumenty jako obrázky s textovou vrstvou pomocí GroupDocs.Viewer pro lepší přehlednost textu a vyhledávání."
-"title": "Vykreslení dokumentů jako obrázků s textovou vrstvou v Javě pomocí GroupDocs.Viewer"
-"url": "/cs/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
-"weight": 1
+date: '2026-01-10'
+description: Naučte se, jak v Javě pomocí GroupDocs.Viewer převést Word na obrázek
+  s textovou vrstvou a extrahovat textový překryv pro prohledávatelné, vysoce kvalitní
+  obrázky dokumentů.
+keywords:
+- convert word to image
+- extract text overlay
+- render pdf with text
+- improve document image clarity
+- configure view options
+- generate searchable images
+title: Převod Wordu na obrázek s textovou vrstvou v Javě
 type: docs
+url: /cs/java/advanced-rendering/render-documents-to-images-with-text-layer-java/
+weight: 1
 ---
-# Vykreslení dokumentů jako obrázků s textovou vrstvou v Javě pomocí GroupDocs.Viewer
-## Pokročilý tutoriál renderování
-**Aktuální SEO URL**/render-documents-to-images-with-text-layer-java
 
-## Zavedení
-Chcete ve své webové aplikaci zobrazovat dokumenty a zároveň zachovat čistotu textu? Vykreslování dokumentů jako obrázků může být náročné, zejména pokud jde o překrývání textu, který zůstává volitelný a prohledávatelný. Tento tutoriál vás provede vykreslením dokumentu DOCX do obrázku s překrytou textovou vrstvou pomocí GroupDocs.Viewer pro Javu.
+# Převod Wordu na obrázek s textovou vrstvou v Javě pomocí GroupDocs.Viewer
 
-**Co se naučíte:**
-- Nastavení prostředí pro GroupDocs.Viewer.
-- Implementace GroupDocs.Viewer pro vykreslování dokumentů s textovými vrstvami v Javě.
-- Nejlepší postupy pro optimalizaci výkonu a využití zdrojů.
+Potřebujete **převést Word na obrázek** a zároveň zachovat text vybratelný a prohledávatelný? Vykreslení DOCX jako obrázku často ztrácí podkladový text, což znemožňuje vyhledávání a kopírování‑vkládání. V tomto tutoriálu vám ukážeme, jak vykreslit Word dokument do PNG obrázků **s překrytou textovou vrstvou** pomocí GroupDocs.Viewer pro Javu. Tento přístup nejen **zlepšuje čitelnost obrázku dokumentu**, ale také **generuje prohledávatelné obrázky**, které fungují perfektně ve webových portálech a CMS řešeních.
 
-Změňte způsob, jakým zpracováváte vykreslování dokumentů, pomocí těchto kroků.
+![Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
+
+## Rychlé odpovědi
+- **Co znamená „převést Word na obrázek“?** Vytvoří rastrový obrázek (PNG) každé stránky při zachování původního textu v skryté vrstvě.  
+- **Proč přidávat textovou vrstvu?** Překrytí činí obrázek prohledávatelným a vybratelným, což zvyšuje přístupnost a SEO.  
+- **Která knihovna to řeší?** GroupDocs.Viewer pro Javu poskytuje vestavěnou podporu pro extrakci textu a vykreslování obrázků.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro vývoj; pro produkci je vyžadována placená licence.  
+- **Mohu použít stejný kód pro PDF?** Ano – stejné možnosti zobrazení platí pro PDF, DOCX a mnoho dalších formátů.
+
+## Co je „převod Wordu na obrázek“ s textovou vrstvou?
+Převod souboru Word na obrázek normálně vytvoří bitmapu, která obsahuje jen pixely. Povolením **extrakce textového překrytí** GroupDocs.Viewer přidá neviditelnou textovou vrstvu nad každý obrázek, což umožní prohlížečům a vyhledávačům číst obsah.
+
+## Proč použít GroupDocs.Viewer pro tento úkol?
+- **Vysoce kvalitní výstup PNG**, který zachovává původní rozvržení.  
+- **Automaticky extrahuje textové překrytí**, takže získáte prohledávatelné obrázky bez dalšího zpracování.  
+- **Jednoduché API** – několik řádků Java kódu zvládne celý proces.  
+- **Široká podpora formátů** – stejný přístup funguje pro PDF, PPTX a další.
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující:
-
-- **Knihovny a závislosti**Přidejte GroupDocs.Viewer pro Javu jako závislost pomocí Mavenu. Podrobnosti o instalaci naleznete níže.
-- **Nastavení prostředí**Ujistěte se, že ve vašem prostředí je správně nainstalována a nakonfigurována sada Java Development Kit (JDK).
-- **Předpoklady znalostí**Znalost programování v Javě, zejména práce s cestami k souborům v Javě a práce s projekty Maven.
+- Nainstalovaný a nakonfigurovaný Java Development Kit (JDK).  
+- Maven pro správu závislostí.  
+- Základní znalost práce se soubory v Javě a projektů Maven.
 
 ## Nastavení GroupDocs.Viewer pro Javu
 ### Informace o instalaci
-Chcete-li používat GroupDocs.Viewer pro Javu, přidejte jej jako závislost přes Maven. Do souboru uveďte následující kód. `pom.xml`:
+Přidejte GroupDocs.Viewer do svého Maven projektu vložením repozitáře a závislosti do souboru `pom.xml`:
 
 ```xml
 <repositories>
@@ -49,91 +65,85 @@ Chcete-li používat GroupDocs.Viewer pro Javu, přidejte jej jako závislost p�
 ```
 
 ### Získání licence
-Začněte s bezplatnou zkušební verzí stažením GroupDocs.Viewer z jejich [stránka ke stažení](https://releases.groupdocs.com/viewer/java/)Pro delší používání zvažte zakoupení licence nebo pořízení dočasné licence prostřednictvím [stránka s dočasnou licencí](https://purchase.groupdocs.com/temporary-license/).
+Začněte s bezplatnou zkušební verzí stažením GroupDocs.Viewer z jejich [stránky ke stažení](https://releases.groupdocs.com/viewer/java/). Pro produkční použití zakupte licenci nebo získejte dočasný klíč na [stránce dočasné licence](https://purchase.groupdocs.com/temporary-license/).
 
 ### Základní inicializace a nastavení
-Po instalaci inicializujte GroupDocs.Viewer vytvořením instance třídy `Viewer` třída. Toto bude váš výchozí bod pro vykreslování dokumentů.
+Po synchronizaci Maven můžete vytvořit instanci `Viewer` – tento objekt bude řídit proces vykreslování.
 
-## Průvodce implementací
-Tato část vás provede implementací funkcí pro vykreslení dokumentu s textovou vrstvou pomocí GroupDocs.Viewer.
+## Průvodce krok za krokem pro převod Wordu na obrázek
 
-### Vykreslení dokumentu s textovou vrstvou
-Tato funkce umožňuje extrahovat text a překrýt ho s obrázkem dokumentu, čímž se obsah stane vizuálně atraktivním a zároveň prohledávatelným. Postupujte takto:
-
-#### Krok 1: Definování výstupního adresáře
-Nejprve určete, kam budou výstupní obrázky uloženy, definováním cesty k výstupnímu adresáři.
+### Krok 1: Definujte výstupní adresář
+Nejprve řekněte prohlížeči, kam uložit vygenerované PNG soubory. Níže uvedený kód vytvoří (nebo znovu použije) složku s názvem `YOUR_OUTPUT_DIRECTORY`.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Abyste předešli chybám, ujistěte se, že adresář existuje nebo je vytvořen za běhu.
+> **Tip:** Použijte `Files.createDirectories(outputDirectory);`, pokud chcete, aby byla složka vytvořena automaticky.
 
-#### Krok 2: Konfigurace možností zobrazení
-Dále nakonfigurujte možnosti zobrazení tak, aby se dokumenty vykreslovaly jako obrázky PNG s povolenou extrakcí textu:
+### Krok 2: Nastavte možnosti zobrazení (Configure View Options)
+Dále nastavte možnosti vykreslování. Použitím `PngViewOptions` a povolením `setExtractText(true)` instruujete GroupDocs.Viewer, aby **extrahoval textové překrytí** a vložil jej do každého obrázku.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
-viewOptions.setExtractText(true);  // Povolit extrahování textu přes obrázek
+viewOptions.setExtractText(true);  // Enable extracting text over the image
 ```
 
-Zde, `PngViewOptions` určuje, že chceme vykreslit obrázky ve formátu PNG. Metoda `setExtractText(true)` říká GroupDocs.Viewer, aby na tyto obrázky nanesl extrahovaný text.
-
-#### Krok 3: Vykreslení dokumentu
-Nakonec použijte instanci prohlížeče k provedení operace vykreslování:
+### Krok 3: Vykreslete dokument (Convert Word to Image)
+Nakonec otevřete zdrojový DOCX a zavolejte `viewer.view(viewOptions)`. Blok `try‑with‑resources` zajišťuje, že instance `Viewer` je řádně uzavřena.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    viewer.view(viewOptions);  // Provést operaci vykreslování
+    viewer.view(viewOptions);  // Perform rendering operation
 }
 ```
 
-Tento blok kódu otevře váš dokument a použije dříve nakonfigurované možnosti zobrazení. `try-with-resources` prohlášení zajišťuje řádné hospodaření se zdroji.
+Po dokončení kódu se každá stránka Word dokumentu zobrazí jako vysoké rozlišení PNG s neviditelnou textovou vrstvou, připravenou pro indexování a vyhledávání.
 
-### Tipy pro řešení problémů
-- **Soubor nenalezen**Zkontrolujte, zda je cesta k dokumentu správná.
-- **Problémy s oprávněními**Ověřte oprávnění k zápisu pro výstupní adresář.
-- **Konflikty verzí**Zajistěte verzi GroupDocs.Viewer ve vašem Mavenu. `pom.xml` odpovídá tomu, co hodláte použít.
+## Tipy pro řešení problémů
+- **Soubor nenalezen:** Zkontrolujte cestu k `SAMPLE_DOCX`. Pro jistotu použijte absolutní cesty.  
+- **Problémy s oprávněním:** Ujistěte se, že Java proces může zapisovat do `YOUR_OUTPUT_DIRECTORY`.  
+- **Neshoda verzí:** Ověřte, že verze v `pom.xml` odpovídá stažené knihovně.
 
 ## Praktické aplikace
-GroupDocs.Viewer lze integrovat do různých aplikací, jako například:
-1. **Webové portály**Zobrazování dokumentů na webových stránkách se zachováním možnosti vyhledávání textu.
-2. **Systémy pro správu obsahu (CMS)**Vylepšete správu dokumentů pomocí prohledávatelných obrázků dokumentů.
-3. **Řešení pro archivaci dokumentů**Ukládejte dokumenty ve formátu obrázku, ale umožněte uživatelům interagovat s textem.
+1. **Webové portály:** Zobrazte náhledy dokumentů, které uživatelé mohou prohledávat bez stažení původního souboru.  
+2. **Systémy pro správu obsahu:** Ukládejte prohledávatelné snímky obrázků pro archivaci.  
+3. **Archivace dokumentů:** Uchovávejte lehkou verzi obrázku a zároveň umožněte full‑textové vyhledávání.
 
 ## Úvahy o výkonu
-Optimalizace výkonu při používání GroupDocs.Viewer:
-- Efektivně spravujte paměť rychlým odstraněním instancí prohlížeče.
-- Používejte vhodné formáty souborů podle potřeb vaší aplikace (např. PNG pro vysoce kvalitní obrázky).
-- Pokud je to možné, implementujte mechanismy ukládání do mezipaměti, abyste zkrátili dobu vykreslování.
+- Okamžitě uvolňujte objekty `Viewer` (jak je ukázáno pomocí `try‑with‑resources`).  
+- Zvolte PNG pro kvalitu; přepněte na JPEG, pokud je šířka pásma problém.  
+- Kešujte vykreslené stránky, když je stejný dokument požadován opakovaně.
 
-## Závěr
-Naučili jste se, jak vykreslovat dokumenty s textovou vrstvou pomocí nástroje GroupDocs.Viewer v Javě. Tato funkce umožňuje kombinovat vizuální atraktivitu obrázků dokumentů s prohledávatelným textem a vylepšovat tak možnosti vašich aplikací.
+## Často kladené otázky
 
-Chcete-li dále prozkoumat možnosti GroupDocs.Viewer, zvažte experimentování s dalšími možnostmi a konfiguracemi. Zkuste toto řešení implementovat ve svých projektech!
+**Q: Jak zacházet s velkými dokumenty?**  
+A: Vykreslujte stránky postupně a po zpracování dávky uvolněte každou instanci `Viewer`, aby se udržovala nízká spotřeba paměti.
 
-## Sekce Často kladených otázek
-**Q1: Jak mám zpracovat velké dokumenty?**
-A1: U velkých dokumentů optimalizujte výkon inkrementálním vykreslováním stránek a efektivní správou využití paměti.
+**Q: Mohu vykreslovat PDF stejným způsobem?**  
+A: Ano, GroupDocs.Viewer podporuje PDF a stejný příznak `setExtractText(true)` vygeneruje prohledávatelné PDF obrázky.
 
-**Q2: Mohu podobným způsobem vykreslit PDF soubory?**
-A2: Ano, GroupDocs.Viewer podporuje různé formáty dokumentů včetně PDF. Použijte stejný přístup s příslušnými možnostmi specifickými pro daný formát.
+**Q: Co když textová vrstva není ve výstupu viditelná?**  
+A: Ověřte, že je nastaveno `viewOptions.setExtractText(true)` a že výstupní složka má oprávnění k zápisu.
 
-**Q3: Co když se textová vrstva nezobrazuje správně?**
-A3: Zajistěte `setExtractText(true)` je nastaveno v možnostech zobrazení a ověřte, zda má výstupní adresář správná oprávnění.
+**Q: Jsou podporovány i jiné formáty obrázků?**  
+A: Kromě PNG můžete použít `JpgViewOptions` nebo `BmpViewOptions` výměnou třídy možností zobrazení.
 
-**Q4: Existuje podpora pro různé formáty obrázků?**
-A4: Ano, kromě PNG můžete použít i JPEG nebo BMP úpravou možností zobrazení.
-
-**Q5: Jak mohu řešit problémy s vykreslováním?**
-A5: Zkontrolujte cesty k souborům, ujistěte se, že je správná verze GroupDocs.Viewer a zkontrolujte protokoly Java, zda neobsahují chybové zprávy související s vykreslováním dokumentů.
+**Q: Kde najdu podrobnější dokumentaci API?**  
+A: Oficiální dokumentace poskytuje vyčerpávající příklady a podrobnosti o konfiguraci.
 
 ## Zdroje
-- **Dokumentace**: [Dokumentace prohlížeče GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API**: [Referenční příručka API](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout**: [Získejte GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Nákup**: [Koupit licenci](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Stáhnout bezplatnou zkušební verzi](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Získejte dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentace:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Reference API:** [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **Stažení:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **Nákup:** [Buy License](https://purchase.groupdocs.com/buy)  
+- **Bezplatná zkušební verze:** [Download Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Dočasná licence:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Podpora:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Poslední aktualizace:** 2026-01-10  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
