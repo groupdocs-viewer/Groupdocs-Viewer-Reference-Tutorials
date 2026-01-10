@@ -1,37 +1,57 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak e-postaları özel tarih-saat biçimleri ve saat dilimi ayarlarıyla nasıl oluşturacağınızı öğrenin. E-posta arşivleme, destek sistemleri ve daha fazlası için mükemmeldir."
-"title": "GroupDocs.Viewer kullanarak Java'da E-postaları Özel Tarih ve Saatle Oluşturun"
-"url": "/tr/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-10'
+description: GroupDocs.Viewer kullanarak Java'da özel tarih‑saat formatı ile EML'yi
+  HTML'ye dönüştürmeyi ve zaman dilimi offset'ini ayarlamayı öğrenin. E-posta arşivleme
+  ve destek sistemleri için idealdir.
+keywords:
+- render emails with custom datetime
+- GroupDocs Viewer for Java
+- email rendering HTML
+title: Java'da GroupDocs.Viewer Kullanarak Özel Tarih/Saat ile EML'yi HTML'ye Dönüştür
 type: docs
+url: /tr/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer Kullanarak Java'da E-postaları Özel Tarih ve Saatle Oluşturma
 
-## giriiş
+# Java'da GroupDocs.Viewer Kullanarak Özel TarihSaat ile EML'yi HTML'ye Dönüştürme
 
-Günümüzün hızlı dijital dünyasında, etkili e-posta yönetimi hem işletmeler hem de bireyler için hayati önem taşır. E-postaları arşivliyor veya kullanıcı dostu bir HTML biçimine dönüştürüyor olun, özelleştirme anahtardır. Bu eğitim, belge görüntüleme ve dönüştürmeyi basitleştiren güçlü bir kitaplık olan GroupDocs.Viewer for Java kullanarak özel tarih-saat biçimleriyle e-posta mesajları oluşturma konusunda size rehberlik edecektir.
+## Giriş
 
-**Ne Öğreneceksiniz:**
-- Bir Java projesinde GroupDocs.Viewer'ı kurma
-- E-postaları gömülü kaynaklarla HTML formatına dönüştürme
-- E-posta mesajlarınızın tarih-saat biçimini özelleştirme
-- Doğru zaman damgalarını sağlamak için saat dilimi ofsetlerini ayarlama
+Günümüzün hızlı dijital dünyasında, **EML'yi HTML'ye dönüştürmek** ve doğru tarih‑saat sunumunu sağlamak, arşivleme, destek portalları ve yasal uyumluluk için hayati öneme sahiptir. Bu öğretici, GroupDocs.Viewer for Java kullanarak e‑posta mesajlarını HTML'ye render ederken **özel bir tarih‑saat formatı** ve **zaman dilimi kayması** uygulamanızı adım adım gösterir. Sonunda, zaman damgalarını doğru ve okunabilir tutan yeniden kullanılabilir bir çözüm elde edeceksiniz.
 
-Bu eğitim için gerekli ön koşulları gözden geçirerek başlayalım.
+![GroupDocs.Viewer for Java ile Özel TarihSaat Kullanarak E-postaları Görüntüleme](/viewer/advanced-rendering/render-emails-with-custom-datetime-java.png)
 
-## Ön koşullar
+**Öğrenecekleriniz**
+- Java projesinde GroupDocs.Viewer'ı nasıl kuracağınız  
+- E‑postaları gömülü kaynaklarla HTML'ye nasıl render edeceğiniz  
+- E‑posta mesajlarınızın **tarih‑saat formatını** nasıl özelleştireceğiniz (custom datetime format java)  
+- Doğru zaman damgaları için **zaman dilimi kaymasını** nasıl ayarlayacağınız (set timezone offset java)  
 
-Başlamadan önce şunlara sahip olduğunuzdan emin olun:
-- **Gerekli Kütüphaneler ve Sürümler**: Java için GroupDocs.Viewer sürüm 25.2 veya üzeri.
-- **Çevre Kurulumu**:Sisteminizde yüklü bir Java Geliştirme Kiti (JDK) ve IntelliJ IDEA veya Eclipse gibi bir IDE.
-- **Bilgi Önkoşulları**: Java programlama konusunda temel bilgi ve derleme aracı olarak Maven'a aşinalık.
+## Hızlı Yanıtlar
+- **GroupDocs.Viewer EML'yi HTML'ye dönüştürebilir mi?** Evet, EML dosyalarını doğrudan HTML'ye render eder.  
+- **Lisans gerekir mi?** Ücretsiz deneme sürümü test için yeterlidir; üretim için ücretli lisans gereklidir.  
+- **Hangi Java sürümü gerekiyor?** Java 8 veya daha yenisi.  
+- **Görüntülenen tarih formatını nasıl değiştiririm?** `options.getEmailOptions().setDateTimeFormat(...)` kullanın.  
+- **Zaman dilimini ayarlayabilir miyim?** Evet, `options.getEmailOptions().setTimeZoneOffset(TimeZone.getTimeZone(...))` ile.  
+
+## “EML'yi HTML'ye dönüştürmek” nedir?
+EML dosyasını HTML'ye dönüştürmek, ham e‑postayı (başlıklar, gövde ve ekler dahil) tarayıcıların ek eklentilere ihtiyaç duymadan görüntüleyebileceği web‑dostu bir formata çevirir. Bu sayede e‑postaları web uygulamalarına, arşivlere veya destek panellerine kolayca yerleştirebilirsiniz.
+
+## Bu Görev İçin Neden GroupDocs.Viewer Kullanılmalı?
+- **Sıfır bağımlılık render** – Outlook veya harici mail ayrıştırıcılarına gerek yok.  
+- **Gömülü kaynaklar için yerleşik destek** (görseller, ekler).  
+- **Tarih‑saat formatı ve zaman dilimi yönetimi üzerinde ince ayar** imkanı.  
+
+## Önkoşullar
+
+- **GroupDocs.Viewer for Java** sürüm 25.2 veya üzeri.  
+- **Java Development Kit (JDK)** 8+ ve bir IDE (IntelliJ IDEA, Eclipse vb.).  
+- Temel Java bilgisi ve Maven deneyimi.  
 
 ## Java için GroupDocs.Viewer Kurulumu
 
-GroupDocs.Viewer'ı projenize entegre etmek için şunları yapılandırın: `pom.xml` Maven kullanıyorsanız. İşte nasıl:
-
-**Maven Yapılandırması**
+### Maven Yapılandırması
+`pom.xml` dosyanıza GroupDocs deposunu ve bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -51,145 +71,119 @@ GroupDocs.Viewer'ı projenize entegre etmek için şunları yapılandırın: `po
 </dependencies>
 ```
 
-### Lisans Edinimi
+### Lisans Edinme
+Ücretsiz deneme ile başlayın veya genişletilmiş test için geçici bir lisans isteyin. Üretim kullanımı için tam lisans satın alın.
 
-GroupDocs.Viewer'ın ücretsiz deneme sürümüyle başlayın veya genişletilmiş test için geçici bir lisans talep edin. Uzun süreli kullanım için bir lisans satın almak gereklidir.
-
-**Temel Başlatma ve Kurulum**
-
+### Temel Başlatma
 ```java
 import com.groupdocs.viewer.Viewer;
 
-// Görüntüleyiciyi belgenizin yoluyla başlatın
+// Initialize Viewer with the path to your document
 try (Viewer viewer = new Viewer("path/to/your/document.eml")) {
-    // İşlemleri burada gerçekleştirin
+    // Perform operations here
 }
 ```
 
-GroupDocs.Viewer kurulumu tamamlandıktan sonra, e-posta mesajlarını özel ayarlarla görüntülemeye geçelim.
+## Java'da Özel TarihSaat ile EML'yi HTML'ye Dönüştürme
 
-## Uygulama Kılavuzu
+Aşağıdaki adım‑adım kılavuz, **EML'yi HTML'ye dönüştürürken** özel bir tarih‑saat formatı ve zaman dilimi kayması uygulamanızı gösterir.
 
-### Özellik: E-posta Mesajlarını Özel Tarih/Saat Biçimi ve Zaman Dilimi Ofseti ile Oluşturma
-
-Bu özellik, belirli tarih-saat biçimleri ve saat dilimi ayarlamaları uygularken e-postaları HTML'ye dönüştürmenize olanak tanır. Bu özelliği Java uygulamanızda uygulamak için şu adımları izleyin.
-
-#### Adım 1: Çıktı Dizini ve Dosya Yolunu Ayarlayın
-
-İşlenen dosyaların nerede saklanacağını belirleyin:
-
+### Adım 1: Çıktı Dizini ve Dosya Yolunu Ayarlama
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path filePath = outputDirectory.resolve("output.html");
 ```
+*Açıklama:* `Path.of()` HTML'nin kaydedileceği klasöre referans oluşturur. `resolve()` dosya adını ekler.
 
-**Açıklama**: `Path.of()` çıktı dizininiz için bir yol nesnesi oluşturur. `resolve()` metodu dosya adını bu dizine ekler.
-
-#### Adım 2: Görüntüleyiciyi E-posta Dosyasıyla Başlatın
-
+### Adım 2: E‑posta Dosyasıyla Viewer'ı Başlatma
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_EML")) {
-    // Daha fazla yapılandırma buraya gelir
+    // Further configuration goes here
 }
 ```
+*Açıklama:* `Viewer` örneği dönüştürmek istediğiniz EML dosyasına işaret eder.
 
-**Açıklama**: : `Viewer` nesne e-posta dosyanızın yoluyla başlatılır. Bu nesne işleme sürecini yönetir.
-
-#### Adım 3: HtmlViewOptions'ı yapılandırın
-
-Gömülü kaynaklarla HTML çıktısı için seçenekleri ayarlayın:
-
+### Adım 3: HtmlViewOptions'ı Yapılandırma
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(filePath);
 ```
+*Açıklama:* `forEmbeddedResources()` görselleri ve diğer kaynakları doğrudan HTML çıktısına gömer.
 
-**Açıklama**: `forEmbeddedResources()` Tüm gerekli dosyaların (resimler gibi) HTML'e dahil edilmesini sağlar.
-
-#### Adım 4: Özel Tarih/Saat Biçimini Ayarlayın
-
-E-postalarınız için özel bir tarih-saat biçimi uygulayın:
-
+### Adım 4: Özel TarihSaat Formatını Ayarlama *(custom datetime format java)*
 ```java
 options.getEmailOptions().setDateTimeFormat("MM d yyyy HH:mm tt zzz");
 ```
+*Açıklama:* Bu desen ay, gün, yıl, saat, dakika, AM/PM işareti ve zaman dilimi kaymasını (`zzz`) gösterir.
 
-**Açıklama**: Bu, e-postada görüntülenen tarih ve saat biçimini ayarlar. `zzz` zaman dilimi farkını temsil eder.
-
-#### Adım 5: Zaman Dilimi Ofsetini Ayarlayın
-
-Zaman damgalarının doğru olduğundan emin olmak için saat dilimini ayarlayın:
-
+### Adım 5: Zaman Dilimi Kaymasını Ayarlama *(set timezone offset java)*
 ```java
 import java.util.TimeZone;
 
 options.getEmailOptions().setTimeZoneOffset(TimeZone.getTimeZone("GMT+1"));
 ```
+*Açıklama:* Render edilen zaman damgalarını istenen saat dilimine ayarlar. `"GMT+1"` ifadesini geçerli bir bölge tanımlayıcısı ile değiştirin.
 
-**Açıklama**: Bu, işlenen e-postaların saat dilimini ayarlar. Ayarla `"GMT+1"` Bölgenizin ihtiyacına göre.
-
-#### Adım 6: Belgeyi Oluşturun
-
-Son olarak, belgeyi yapılandırdığınız seçeneklerle oluşturun:
-
+### Adım 6: Belgeyi Render Etme
 ```java
 viewer.view(options);
 ```
+*Açıklama:* Dönüştürmeyi yürütür ve özel tarih‑saat ayarlarınızla bir HTML dosyası üretir.
 
-Bu satır e-posta dosyasını işler ve belirttiğiniz ayarları kullanarak HTML'ye dönüştürür.
-
-### Sorun Giderme İpuçları
-
-- Tüm yolların doğru şekilde ayarlandığından emin olun; yanlış yollar aşağıdakilere yol açacaktır: `FileNotFoundException`.
-- Proje bağımlılıklarınızda GroupDocs.Viewer'ın doğru sürümünün bulunduğunu doğrulayın.
-- Kalıcı sorunlar için ek destek almak üzere GroupDocs belgelerine veya topluluk forumlarına başvurun.
+## Sorun Giderme İpuçları
+- **FileNotFoundException:** `Viewer` ve `Path.of()` içinde kullanılan yolları iki kez kontrol edin.  
+- **Yanlış zaman damgaları:** `TimeZone` kimliğinin hedef bölgenizle eşleştiğinden emin olun.  
+- **Görseller eksik:** `HtmlViewOptions.forEmbeddedResources()` kullandığınızdan emin olun; aksi takdirde dış kaynaklar dahil edilmeyebilir.  
 
 ## Pratik Uygulamalar
+1. **E‑posta Arşivleme:** Uyumluluk için aranabilir HTML anlık görüntülerini saklayın.  
+2. **Müşteri Destek Portalları:** Gelen biletleri doğru yerel saatlerle gösterin.  
+3. **Yasal Dokümantasyon:** Standartlaştırılmış zaman damgalarıyla mahkeme‑hazır e‑posta kayıtları üretin.  
 
-İşte e-postaları özel ayarlarla oluşturmanın özellikle yararlı olabileceği birkaç kullanım örneği:
-1. **E-posta Arşivleme**: Kolay erişim ve referans için e-postaları HTML formatına dönüştürün ve saklayın.
-2. **Müşteri Destek Sistemleri**: Müşteri e-postalarını doğru zaman damgalarıyla web arayüzlerinde görüntüleyin.
-3. **Yasal Belgeler**: Hukuki incelemeler veya denetimler için e-posta kayıtlarını kesin tarih formatlarıyla hazırlayın.
+## Performans Düşünceleri
+- Toplu dönüşümler için ayrı bir sunucuya dağıtın.  
+- Java yığın kullanımını izleyin; `OutOfMemoryError` alırsanız `-Xmx` değerini artırın.  
+- Aynı e‑posta tekrar tekrar isteniyorsa render edilmiş HTML'yi önbelleğe alın.  
 
-## Performans Hususları
+## Sonuç
+Artık GroupDocs.Viewer for Java kullanarak **özel bir tarih‑saat formatı ve zaman dilimi kayması** ile **EML'yi HTML'ye dönüştürmek** için tam üretim‑hazır bir yönteme sahipsiniz. Bu, okunabilirliği artırır, zaman damgalarının doğruluğunu sağlar ve arşivleme ya da destek iş akışlarına sorunsuz bir şekilde entegre olur.
 
-GroupDocs.Viewer ile çalışırken şu performans ipuçlarını göz önünde bulundurun:
-- Ağır işleme görevlerini etkili bir şekilde halletmek için özel bir sunucu ortamı kullanın.
-- Bellek kullanımını izleyin ve gerekirse Java yığın ayarlarını optimize edin.
-- Tekrarlanan isteklerde işlem süresini azaltmak için mümkün olduğunca işlenmiş belgeleri önbelleğe alın.
+**Sonraki Adımlar:** CSS stillendirme, sayfalama veya PDF dönüşümü gibi ek Viewer seçeneklerini keşfederek çıktıyı ihtiyaçlarınıza göre daha da özelleştirin.
 
-## Çözüm
+## Sık Sorulan Sorular
 
-Artık GroupDocs.Viewer for Java ile e-posta mesajlarını HTML formatına nasıl dönüştüreceğinizi öğrendiniz, özel tarih-saat formatlarını ve saat dilimi ofsetlerini uyguladınız. Bu yetenek, e-postalarınızın okunabilirliğini ve kullanılabilirliğini artırarak bunları çeşitli uygulamalara entegre etmeyi kolaylaştırır.
+**S: EML dosyaları eklerle birlikte nasıl işlenir?**  
+C: `HtmlViewOptions.forEmbeddedResources()` kullandığınızda ekler otomatik olarak gömülür. İsterseniz Viewer API'si aracılığıyla da çıkarabilirsiniz.
 
-**Sonraki Adımlar**: Belge görüntüleme yeteneklerinizi daha da geliştirmek için GroupDocs.Viewer tarafından sağlanan ek özellikleri deneyin.
+**S: HTML şablonunu değiştirebilir veya özel CSS ekleyebilir miyim?**  
+C: Evet, render işleminden sonra oluşturulan HTML dosyasını düzenleyebilir veya kaydetmeden önce programatik olarak CSS enjekte edebilirsiniz.
 
-## SSS Bölümü
+**S: Birden fazla EML dosyasını toplu olarak render etmek mümkün mü?**  
+C: Render mantığını bir döngü içinde sarın ve her dosya için aynı `HtmlViewOptions` örneğini yeniden kullanın.
 
-1. **Birden fazla e-posta formatını nasıl yönetebilirim?**
-   - Kullanmak `GroupDocs.Viewer` farklı dosya türlerini ve işleme ayarlarını destekleme seçenekleri.
-2. **HTML çıktı stilini özelleştirebilir miyim?**
-   - Evet, daha iyi bir sunum için CSS stillerini doğrudan oluşturulan HTML dosyalarına uygulayabilirsiniz.
-3. **Ya zaman dilimimin sık sık değişmesi gerekiyorsa?**
-   - Dinamik saat dilimi ayarlamalarına izin veren bir yapılandırma dosyası veya kullanıcı arayüzü ayarı uygulamayı düşünün.
-4. **E-postaları işlerken güvenlik nasıl sağlanır?**
-   - Uygulamalarınızda hassas verileri işlerken her zaman girdileri temizleyin ve güvenli yöntemler kullanın.
-5. **Java dışında başka programlama dillerine destek var mı?**
-   - GroupDocs.Viewer .NET, C++ ve daha fazlası için mevcuttur; ayrıntılar için belgelerine bakın.
+**S: MSG gibi diğer e‑posta formatlarını da desteklemek istersem?**  
+C: GroupDocs.Viewer ayrıca MSG, PST ve diğer e‑posta konteynerlerini destekler—sadece `Viewer` yapıcısındaki dosya uzantısını değiştirmeniz yeterlidir.
+
+**S: Her sunucu için ayrı bir lisans almam gerekiyor mu?**  
+C: Lisans dağıtım başına yapılır; çok‑sunucu senaryoları için GroupDocs lisans rehberine bakın.
 
 ## Kaynaklar
 
-- [Belgeleme](https://docs.groupdocs.com/viewer/java/)
-- [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [İndirmek](https://releases.groupdocs.com/viewer/java/)
-- [Satın almak](https://purchase.groupdocs.com/buy)
-- [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
-- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
-- [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+- [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)  
+- [API Referansı](https://reference.groupdocs.com/viewer/java/)  
+- [İndirme](https://releases.groupdocs.com/viewer/java/)  
+- [Satın Al](https://purchase.groupdocs.com/buy)  
+- [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)  
+- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)  
+- [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)  
 
-Bu teknikleri projenizde uygulamaya çalışın ve GroupDocs.Viewer for Java'nın tüm potansiyelini keşfedin!
+---
+
+**Son Güncelleme:** 2026-01-10  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 (Java)  
+**Yazar:** GroupDocs

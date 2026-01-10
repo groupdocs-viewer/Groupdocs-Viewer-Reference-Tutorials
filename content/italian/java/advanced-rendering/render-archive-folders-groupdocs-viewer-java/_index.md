@@ -1,38 +1,48 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come eseguire il rendering di cartelle specifiche all'interno di file di archivio utilizzando GroupDocs.Viewer per Java con questa guida completa."
-"title": "Rendering di cartelle di archivio in Java utilizzando GroupDocs.Viewer&#58; una guida passo passo"
-"url": "/it/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-10'
+description: Scopri come visualizzare cartelle zip in Java usando GroupDocs.Viewer
+  con questa guida completa passo passo.
+keywords:
+- render archive folders
+- GroupDocs.Viewer for Java
+- rendering specific folders in archives
+title: Come visualizzare cartelle zip in Java con GroupDocs.Viewer
 type: docs
+url: /it/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/
+weight: 1
 ---
-# Rendering delle cartelle di archivio con GroupDocs.Viewer per Java
 
-## Introduzione
+# Come rendere le cartelle zip in Java con GroupDocs.Viewer
 
-Desideri visualizzare in modo efficiente cartelle specifiche all'interno di file di archivio come gli ZIP nelle tue applicazioni Java? Questo tutorial dettagliato ti guiderà attraverso l'utilizzo di GroupDocs.Viewer per Java. Al termine, saprai come sfruttare questo potente strumento per semplificare le attività di gestione dei documenti.
+Stai cercando di rendere in modo efficiente cartelle specifiche all'interno di file di archivio come i ZIP nelle tue applicazioni Java? In questo tutorial vedremo **come rendere le cartelle zip** utilizzando GroupDocs.Viewer per Java, coprendo tutto, dalla configurazione del progetto a scenari d'uso reali.
 
-### Cosa imparerai
-- Comprensione e utilizzo di GroupDocs.Viewer per Java.
-- Impostazione di GroupDocs.Viewer nell'ambiente del progetto.
-- Istruzioni dettagliate sul rendering di cartelle specifiche all'interno di un file di archivio.
-- Applicazioni pratiche e suggerimenti per ottimizzare le prestazioni.
+![Rendering Archive Folders with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rendering-archive-folders-java.png)
 
-Cominciamo col definire i prerequisiti necessari.
+## Risposte rapide
+- **Cosa significa “render zip”?** Indica la conversione del contenuto di un archivio ZIP (o di una cartella specifica al suo interno) in formati visualizzabili come HTML o immagini.  
+- **Quale libreria gestisce questo?** GroupDocs.Viewer per Java offre funzionalità di rendering di archivi integrate.  
+- **È necessaria una licenza?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza completa per la produzione.  
+- **Posso rendere solo una cartella?** Sì – usa `ArchiveOptions.setFolder("YourFolder")` per puntare a una singola directory.  
+- **Quale versione di Java è richiesta?** Java 8 o superiore.
+
+## Cos'è “come rendere zip” con GroupDocs.Viewer?
+GroupDocs.Viewer è una libreria Java che trasforma un'ampia gamma di tipi di documento — inclusi gli archivi compressi — in formati adatti al web. Quando è necessario visualizzare solo una parte di un file ZIP (ad esempio, una cartella contenente immagini o PDF), il visualizzatore consente di isolare e rendere quella cartella senza estrarre l'intero archivio.
+
+## Perché usare GroupDocs.Viewer per il rendering di cartelle zip?
+- **Velocità:** Renderizza direttamente dall'archivio, evitando costosi passaggi di estrazione completa.  
+- **Sicurezza:** Non è necessario scrivere file intermedi su disco, a meno che non lo si desideri.  
+- **Flessibilità:** L'output può essere HTML, PNG o PDF, adatto alla maggior parte degli scenari web o desktop.  
+- **Scalabilità:** Gestisce archivi di grandi dimensioni con un'impronta di memoria minima quando configurato correttamente.
 
 ## Prerequisiti
+- **Java Development Kit (JDK)** 8 o più recente.  
+- **Maven** per la gestione delle dipendenze.  
+- Familiarità di base con i concetti di programmazione Java.
 
-Prima di passare all'implementazione, assicurati di avere:
-
-- **Kit di sviluppo Java (JDK)**: Versione 8 o superiore installata sul sistema.
-- **Esperto**: Installato per gestire in modo efficiente le dipendenze.
-- **Conoscenza di base della programmazione Java**: Familiarità con la sintassi Java e con i concetti di programmazione orientata agli oggetti.
-
-## Impostazione di GroupDocs.Viewer per Java
+## Configurazione di GroupDocs.Viewer per Java
 
 ### Configurazione Maven
-
-Per integrare GroupDocs.Viewer nel tuo progetto, aggiungi le seguenti configurazioni al tuo `pom.xml` file:
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -53,32 +63,25 @@ Per integrare GroupDocs.Viewer nel tuo progetto, aggiungi le seguenti configuraz
 ```
 
 ### Acquisizione della licenza
-
-Per sfruttare appieno il potenziale di GroupDocs.Viewer, puoi ottenere un [prova gratuita](https://releases.groupdocs.com/viewer/java/) acquisire una licenza temporanea tramite la loro [pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/)Per un utilizzo a lungo termine, si consiglia di acquistare una licenza completa.
+Per sbloccare tutto il potenziale di GroupDocs.Viewer, puoi ottenere una [prova gratuita](https://releases.groupdocs.com/viewer/java/) o acquisire una licenza temporanea tramite la loro [pagina di licenza temporanea](https://purchase.groupdocs.com/temporary-license/). Per progetti a lungo termine, considera l'acquisto di una licenza completa.
 
 ### Inizializzazione di base
-
-Una volta impostate le dipendenze, inizializza GroupDocs.Viewer in questo modo:
+Una volta completata la configurazione di Maven, inizializza il visualizzatore con il percorso del tuo file ZIP:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/archive.zip")) {
-    // La logica di rendering va qui
+    // Rendering logic goes here
 }
 ```
 
 ## Guida all'implementazione
 
-In questa sezione esploreremo come eseguire il rendering di cartelle specifiche all'interno di un archivio utilizzando GroupDocs.Viewer per Java.
+### Come rendere le cartelle zip – Passo‑per‑passo
 
-### Funzionalità: rendering di una cartella di archivio
-
-Questa funzionalità consente di eseguire il rendering selettivo di una cartella all'interno di un file di archivio. Ecco come:
-
-#### Definisci percorso di output
-
-Imposta il percorso della directory di output con il seguente metodo:
+#### Definisci il percorso di output
+Crea un metodo di supporto che punta alla directory in cui verranno salvati i file HTML renderizzati:
 
 ```java
 import java.nio.file.Path;
@@ -88,11 +91,9 @@ public static Path definePath() {
     return Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderArchiveFolder");
 }
 ```
-Questo approccio specifica dove verranno archiviati i file HTML renderizzati.
 
-#### Cartella specifica del rendering
-
-Quindi, configura le opzioni di rendering ed esegui:
+#### Renderizza una cartella specifica
+Configura il visualizzatore per puntare a una cartella particolare all'interno dell'archivio e genera l'output HTML:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -111,13 +112,12 @@ public static void renderArchiveFolder() {
 }
 ```
 
-**Spiegazione dei parametri:**
-- `pageFilePathFormat`: Definisce il modello di denominazione per ogni output di pagina.
-- `viewOptions.getArchiveOptions().setFolder(...)`: Specifica la cartella all'interno dell'archivio da visualizzare.
+**Parametri chiave spiegati**
+- `pageFilePathFormat`: Controlla il modello di denominazione per ogni pagina HTML renderizzata.  
+- `viewOptions.getArchiveOptions().setFolder(...)`: Indirizza il visualizzatore a renderizzare solo la cartella specificata all'interno dell'archivio ZIP.
 
-### Funzionalità: definizione del percorso personalizzato per la directory di output
-
-Per una maggiore flessibilità, utilizza una funzione di utilità per personalizzare il percorso di output:
+#### Definizione personalizzata del percorso per la directory di output
+Se hai bisogno di una posizione di output diversa, basta modificare il metodo `definePath`:
 
 ```java
 public static Path definePath() {
@@ -126,49 +126,49 @@ public static Path definePath() {
 ```
 
 ## Applicazioni pratiche
-
-Ecco alcuni scenari in cui il rendering delle cartelle di archivio risulta utile:
-
-1. **Sistemi di gestione dei documenti**: Visualizza sezioni specifiche dei documenti archiviati per un accesso più semplice.
-2. **Biblioteche digitali**: Visualizza contenuti selezionati da archivi di grandi dimensioni senza download completi.
-3. **Revisione dei documenti legali**: Concentrarsi sulle cartelle pertinenti all'interno di un'ampia documentazione legale.
+1. **Sistemi di gestione documentale** – Mostra solo la parte rilevante di un grande archivio senza esporre tutto.  
+2. **Biblioteche digitali** – Trasmetti sezioni selezionate di e‑book o collezioni di ricerca direttamente nel browser.  
+3. **Piattaforme di revisione legale** – Concentrati su cartelle di casi specifici all'interno di enormi pacchetti zip, risparmiando tempo e spazio.
 
 ## Considerazioni sulle prestazioni
-
-Per garantire prestazioni ottimali con GroupDocs.Viewer:
-- Ottimizza il percorso della directory di output e le routine di gestione dei file.
-- Prestare attenzione alla gestione della memoria Java, soprattutto per gli archivi di grandi dimensioni.
-- Regola le opzioni di rendering per bilanciare qualità e velocità in base alle esigenze dell'applicazione.
+- **Gestione della memoria:** Per file ZIP molto grandi, considera di aumentare la dimensione dell'heap JVM o di elaborare le cartelle in batch più piccoli.  
+- **Efficienza I/O:** Scrivi i file renderizzati su un SSD veloce o su un'unità montata in rete per ridurre la latenza.  
+- **Opzioni di rendering:** Regola la qualità delle immagini o le impostazioni di minificazione HTML in `HtmlViewOptions` per bilanciare velocità e fedeltà visiva.
 
 ## Conclusione
-
-In questo tutorial, hai imparato come visualizzare cartelle specifiche all'interno di un archivio utilizzando GroupDocs.Viewer per Java. Dalla configurazione dell'ambiente alle applicazioni pratiche e ai suggerimenti sulle prestazioni, ora sei pronto per implementare queste soluzioni in modo efficace nei tuoi progetti.
+Ora sai **come rendere le cartelle zip** in Java usando GroupDocs.Viewer — dalla configurazione di Maven al targeting di una singola cartella all'interno di un archivio e alla gestione delle problematiche di prestazioni. Integra questi passaggi nelle tue applicazioni per fornire un accesso rapido, sicuro e user‑friendly ai contenuti archiviati.
 
 ### Prossimi passi
-Esplora le funzionalità avanzate di GroupDocs.Viewer e valuta la possibilità di integrarlo con altri sistemi per migliorare ulteriormente le capacità di gestione dei documenti.
+Esplora funzionalità aggiuntive di GroupDocs.Viewer come la conversione PDF, il watermarking o il rendering multi‑pagina per arricchire ulteriormente la tua pipeline di elaborazione documenti.
 
 ## Sezione FAQ
 
-1. **Che cos'è GroupDocs.Viewer per Java?**
-   - Una libreria che consente agli sviluppatori di eseguire il rendering dei documenti all'interno delle applicazioni.
+1. **Cos'è GroupDocs.Viewer per Java?**  
+   Una libreria che consente agli sviluppatori di renderizzare documenti — inclusi gli archivi — direttamente nelle applicazioni Java.  
 
-2. **Come faccio a installare GroupDocs.Viewer utilizzando Maven?**
-   - Aggiungi le configurazioni del repository e delle dipendenze al tuo `pom.xml` file.
+2. **Come installo GroupDocs.Viewer usando Maven?**  
+   Aggiungi il repository e le configurazioni delle dipendenze al tuo file `pom.xml` come mostrato nella sezione Configurazione Maven.  
 
-3. **Posso utilizzare GroupDocs.Viewer gratuitamente?**
-   - È disponibile una versione di prova gratuita, che tuttavia potrebbe presentare delle limitazioni rispetto alle versioni con licenza.
+3. **Posso usare GroupDocs.Viewer gratuitamente?**  
+   È disponibile una prova gratuita, ma le distribuzioni in produzione richiedono una versione con licenza.  
 
-4. **Quali sono i problemi più comuni con il rendering degli archivi?**
-   - Garantire la compatibilità dei percorsi e della struttura dell'archivio con le opzioni di rendering.
+4. **Quali sono i problemi comuni nel renderizzare gli archivi?**  
+   Assicurati che il nome della cartella corrisponda esattamente (case‑sensitive) e che l'archivio non sia protetto da password, a meno che non fornisca le credenziali.  
 
-5. **Dove posso trovare supporto se necessario?**
-   - Visita il [Forum di GroupDocs](https://forum.groupdocs.com/c/viewer/9) per il supporto della comunità o consulta la loro documentazione.
+5. **Dove posso ottenere supporto se necessario?**  
+   Visita il [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) per assistenza dalla community o consulta la documentazione ufficiale.  
 
 ## Risorse
-- [Documentazione](https://docs.groupdocs.com/viewer/java/)
-- [Riferimento API](https://reference.groupdocs.com/viewer/java/)
-- [Scarica GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Acquista licenza](https://purchase.groupdocs.com/buy)
-- [Prova gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
+- [Documentazione](https://docs.groupdocs.com/viewer/java/)  
+- [Riferimento API](https://reference.groupdocs.com/viewer/java/)  
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- [Acquista licenza](https://purchase.groupdocs.com/buy)  
+- [Prova gratuita](https://releases.groupdocs.com/viewer/java/)  
+- [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)  
+- [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)  
+
+---
+
+**Ultimo aggiornamento:** 2026-01-10  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs

@@ -1,37 +1,57 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come visualizzare le email con formati data-ora e impostazioni di fuso orario personalizzati utilizzando GroupDocs.Viewer per Java. Perfetto per l'archiviazione delle email, i sistemi di supporto e altro ancora."
-"title": "Visualizza email con data e ora personalizzate in Java utilizzando GroupDocs.Viewer"
-"url": "/it/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-10'
+description: Scopri come convertire EML in HTML con formato data/ora personalizzato
+  e impostare il fuso orario in Java usando GroupDocs.Viewer. Ideale per l'archiviazione
+  di email e i sistemi di supporto.
+keywords:
+- render emails with custom datetime
+- GroupDocs Viewer for Java
+- email rendering HTML
+title: Converti EML in HTML con Data/Ora personalizzata in Java usando GroupDocs.Viewer
 type: docs
+url: /it/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/
+weight: 1
 ---
-# Visualizza email con data e ora personalizzate in Java utilizzando GroupDocs.Viewer
+
+# Converti EML in HTML con Data/Ora personalizzata in Java usando GroupDocs.Viewer
 
 ## Introduzione
 
-Nel frenetico mondo digitale di oggi, una gestione efficace della posta elettronica è fondamentale sia per le aziende che per i privati. Che si tratti di archiviare le email o di convertirle in un formato HTML intuitivo, la personalizzazione è fondamentale. Questo tutorial vi guiderà nella creazione di messaggi email con formati data-ora personalizzati utilizzando GroupDocs.Viewer per Java, una potente libreria che semplifica la visualizzazione e la conversione dei documenti.
+Nel mondo digitale odierno, veloce, la capacità di **convertire EML in HTML** rapidamente e con la corretta presentazione della data‑ora è essenziale per l'archiviazione, i portali di supporto e la conformità legale. Questo tutorial ti guida nella resa dei messaggi email in HTML applicando un **formato data/ora personalizzato** e un **offset del fuso orario** usando GroupDocs.Viewer per Java. Alla fine, avrai una soluzione riutilizzabile che mantiene i timestamp accurati e leggibili.
 
-**Cosa imparerai:**
-- Impostazione di GroupDocs.Viewer in un progetto Java
-- Rendering di e-mail in formato HTML con risorse incorporate
-- Personalizzazione del formato data-ora dei messaggi di posta elettronica
-- Regolazione degli offset del fuso orario per garantire timestamp accurati
+![Render Emails with Custom DateTime with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-emails-with-custom-datetime-java.png)
 
-Cominciamo esaminando i prerequisiti necessari per questo tutorial.
+**Cosa imparerai**
+- Come configurare GroupDocs.Viewer in un progetto Java  
+- Come rendere le email in HTML con risorse incorporate  
+- Come **personalizzare il formato data‑ora** dei tuoi messaggi email (custom datetime format java)  
+- Come **impostare l'offset del fuso orario** per timestamp corretti (set timezone offset java)  
+
+## Risposte rapide
+- **GroupDocs.Viewer può convertire EML in HTML?** Sì, rende i file EML direttamente in HTML.  
+- **È necessaria una licenza?** Una prova gratuita è sufficiente per i test; è necessaria una licenza a pagamento per la produzione.  
+- **Quale versione di Java è richiesta?** Java 8 o successiva.  
+- **Come modifico il formato della data visualizzata?** Usa `options.getEmailOptions().setDateTimeFormat(...)`.  
+- **Posso regolare il fuso orario?** Sì, con `options.getEmailOptions().setTimeZoneOffset(TimeZone.getTimeZone(...))`.
+
+## Cos'è “convertire EML in HTML”?
+Convertire un file EML in HTML trasforma l'email grezza (inclusi header, corpo e allegati) in un formato web‑friendly che i browser possono visualizzare senza plugin aggiuntivi. Questo rende facile incorporare le email in applicazioni web, archivi o dashboard di supporto.
+
+## Perché usare GroupDocs.Viewer per questo compito?
+- **Rendering senza dipendenze** – non è necessario Outlook o parser di posta esterni.  
+- **Supporto integrato per risorse incorporate** (immagini, allegati).  
+- **Controllo granulare** sul formato data‑ora e sulla gestione del fuso orario.  
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere:
-- **Librerie e versioni richieste**: GroupDocs.Viewer per Java versione 25.2 o successiva.
-- **Configurazione dell'ambiente**: Un Java Development Kit (JDK) installato sul sistema e un IDE come IntelliJ IDEA o Eclipse.
-- **Prerequisiti di conoscenza**: Conoscenza di base della programmazione Java e familiarità con Maven come strumento di compilazione.
+- **GroupDocs.Viewer for Java** versione 25.2 o successiva.  
+- **Java Development Kit (JDK)** 8+ e un IDE (IntelliJ IDEA, Eclipse, ecc.).  
+- Conoscenze di base di Java e familiarità con Maven.
 
-## Impostazione di GroupDocs.Viewer per Java
+## Configurazione di GroupDocs.Viewer per Java
 
-Per integrare GroupDocs.Viewer nel tuo progetto, configura il tuo `pom.xml` Se usi Maven, ecco come fare:
-
-**Configurazione Maven**
+### Configurazione Maven
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -52,144 +72,118 @@ Per integrare GroupDocs.Viewer nel tuo progetto, configura il tuo `pom.xml` Se u
 ```
 
 ### Acquisizione della licenza
+Inizia con una prova gratuita o richiedi una licenza temporanea per test più estesi. Acquista una licenza completa per l'uso in produzione.
 
-Inizia con una prova gratuita di GroupDocs.Viewer o richiedi una licenza temporanea per un test più esteso. Per un utilizzo a lungo termine, è necessario acquistare una licenza.
-
-**Inizializzazione e configurazione di base**
-
+### Inizializzazione di base
 ```java
 import com.groupdocs.viewer.Viewer;
 
-// Inizializza Viewer con il percorso del tuo documento
+// Initialize Viewer with the path to your document
 try (Viewer viewer = new Viewer("path/to/your/document.eml")) {
-    // Eseguire le operazioni qui
+    // Perform operations here
 }
 ```
 
-Dopo aver configurato GroupDocs.Viewer, passiamo al rendering dei messaggi di posta elettronica con impostazioni personalizzate.
+## Converti EML in HTML con Data/Ora personalizzata in Java
 
-## Guida all'implementazione
+La guida passo‑a‑passo seguente mostra come **convertire EML in HTML** applicando un formato data/ora personalizzato e un offset del fuso orario.
 
-### Funzionalità: rendering di messaggi di posta elettronica con formato data/ora personalizzato e offset del fuso orario
-
-Questa funzionalità consente di visualizzare le email in HTML applicando specifici formati di data e ora e regolazioni del fuso orario. Segui questi passaggi per implementare questa funzionalità nella tua applicazione Java.
-
-#### Passaggio 1: impostare la directory di output e il percorso del file
-
-Determina dove verranno archiviati i file renderizzati:
-
+### Passo 1: Configura la directory di output e il percorso del file
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path filePath = outputDirectory.resolve("output.html");
 ```
+*Spiegazione:* `Path.of()` crea un riferimento alla cartella in cui verrà salvato l'HTML. `resolve()` aggiunge il nome del file.
 
-**Spiegazione**: `Path.of()` crea un oggetto percorso per la directory di output. Il `resolve()` Il metodo aggiunge il nome del file a questa directory.
-
-#### Passaggio 2: inizializzare il visualizzatore con il file di posta elettronica
-
+### Passo 2: Inizializza Viewer con il file email
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_EML")) {
-    // Ulteriori configurazioni vanno qui
+    // Further configuration goes here
 }
 ```
+*Spiegazione:* L'istanza `Viewer` punta al file EML che desideri convertire.
 
-**Spiegazione**: IL `Viewer` L'oggetto viene inizializzato con il percorso del file email. Questo oggetto gestisce il processo di rendering.
-
-#### Passaggio 3: configurare HtmlViewOptions
-
-Imposta le opzioni per l'output HTML con risorse incorporate:
-
+### Passo 3: Configura HtmlViewOptions
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(filePath);
 ```
+*Spiegazione:* `forEmbeddedResources()` raggruppa immagini e altre risorse direttamente nell'output HTML.
 
-**Spiegazione**: `forEmbeddedResources()` assicura che tutti i file necessari (come le immagini) siano inclusi nell'HTML.
-
-#### Passaggio 4: imposta il formato data/ora personalizzato
-
-Applica un formato data-ora personalizzato per le tue email:
-
+### Passo 4: Imposta il formato Data/Ora personalizzato *(custom datetime format java)*
 ```java
 options.getEmailOptions().setDateTimeFormat("MM d yyyy HH:mm tt zzz");
 ```
+*Spiegazione:* Questo pattern visualizza mese, giorno, anno, ora, minuti, indicatore AM/PM e l'offset del fuso orario (`zzz`).
 
-**Spiegazione**: Imposta il formato della data e dell'ora visualizzate nell'e-mail. `zzz` rappresenta la differenza di fuso orario.
-
-#### Passaggio 5: imposta lo scostamento del fuso orario
-
-Regola il fuso orario per garantire che i timestamp siano accurati:
-
+### Passo 5: Imposta l'offset del fuso orario *(set timezone offset java)*
 ```java
 import java.util.TimeZone;
 
 options.getEmailOptions().setTimeZoneOffset(TimeZone.getTimeZone("GMT+1"));
 ```
+*Spiegazione:* Regola i timestamp renderizzati al fuso orario desiderato. Sostituisci `"GMT+1"` con qualsiasi identificatore di zona valido.
 
-**Spiegazione**: Imposta il fuso orario delle email visualizzate. Regola `"GMT+1"` in base alle esigenze della tua regione.
-
-#### Passaggio 6: rendering del documento
-
-Infine, esegui il rendering del documento con le opzioni configurate:
-
+### Passo 6: Renderizza il documento
 ```java
 viewer.view(options);
 ```
+*Spiegazione:* Esegue la conversione, producendo un file HTML con le impostazioni di data‑ora personalizzate.
 
-Questa riga elabora il file di posta elettronica e lo converte in HTML utilizzando le impostazioni specificate.
-
-### Suggerimenti per la risoluzione dei problemi
-
-- Assicurarsi che tutti i percorsi siano impostati correttamente; percorsi errati comporteranno `FileNotFoundException`.
-- Verifica che la versione corretta di GroupDocs.Viewer sia inclusa nelle dipendenze del progetto.
-- Per problemi persistenti, consultare la documentazione di GroupDocs o i forum della community per ulteriore supporto.
+## Suggerimenti per la risoluzione dei problemi
+- **FileNotFoundException:** Controlla nuovamente i percorsi usati in `Viewer` e `Path.of()`.  
+- **Timestamp errati:** Verifica che l'ID `TimeZone` corrisponda alla tua regione di destinazione.  
+- **Immagini mancanti:** Assicurati di aver usato `HtmlViewOptions.forEmbeddedResources()`; altrimenti le risorse esterne potrebbero non essere incluse.  
 
 ## Applicazioni pratiche
-
-Ecco alcuni casi d'uso in cui il rendering delle email con impostazioni personalizzate può essere particolarmente utile:
-1. **Archiviazione e-mail**: Converti e archivia le email in formato HTML per facilitarne l'accesso e la consultazione.
-2. **Sistemi di supporto clienti**: Visualizza le e-mail dei clienti su interfacce web con timestamp precisi.
-3. **Documentazione legale**: Preparare registrazioni di posta elettronica con formati di data precisi per revisioni o audit legali.
+1. **Archiviazione email:** Conserva snapshot HTML ricercabili delle email per la conformità.  
+2. **Portali di supporto clienti:** Mostra i ticket in arrivo con orari locali accurati.  
+3. **Documentazione legale:** Produci registrazioni email pronte per il tribunale con timestamp standardizzati.  
 
 ## Considerazioni sulle prestazioni
-
-Quando si lavora con GroupDocs.Viewer, tenere presente questi suggerimenti sulle prestazioni:
-- Utilizzare un ambiente server dedicato per gestire in modo efficiente le attività di rendering più gravose.
-- Monitorare l'utilizzo della memoria e ottimizzare le impostazioni heap Java, se necessario.
-- Memorizzare nella cache, ove possibile, i documenti renderizzati per ridurre i tempi di elaborazione delle richieste ripetute.
+- Distribuisci su un server dedicato per conversioni in blocco.  
+- Monitora l'utilizzo dell'heap Java; aumenta `-Xmx` se incontri `OutOfMemoryError`.  
+- Cache l'HTML renderizzato quando la stessa email viene richiesta più volte.  
 
 ## Conclusione
+Ora disponi di un metodo completo, pronto per la produzione, per **convertire EML in HTML** con un formato data/ora personalizzato e un offset del fuso orario usando GroupDocs.Viewer per Java. Questo migliora la leggibilità, garantisce l'accuratezza dei timestamp e si integra perfettamente nei flussi di lavoro di archiviazione o supporto.
 
-Ora hai imparato come visualizzare i messaggi email in formato HTML con GroupDocs.Viewer per Java, applicando formati di data e ora personalizzati e differenze di fuso orario. Questa funzionalità migliora la leggibilità e l'usabilità delle tue email, semplificandone l'integrazione in diverse applicazioni.
+**Passi successivi:** Esplora ulteriori opzioni di Viewer come lo styling CSS, la paginazione o la conversione PDF per personalizzare ulteriormente l'output secondo le tue esigenze.
 
-**Prossimi passi**: sperimenta le funzionalità aggiuntive fornite da GroupDocs.Viewer per migliorare ulteriormente le tue capacità di visualizzazione dei documenti.
+## Domande frequenti
 
-## Sezione FAQ
+**D: Come gestisco i file EML con allegati?**  
+R: Gli allegati vengono incorporati automaticamente quando usi `HtmlViewOptions.forEmbeddedResources()`. Puoi anche estrarli tramite l'API Viewer, se necessario.
 
-1. **Come posso gestire più formati di posta elettronica?**
-   - Utilizzo `GroupDocs.Viewer` opzioni per supportare diversi tipi di file e impostazioni di rendering.
-2. **Posso personalizzare lo stile di output HTML?**
-   - Sì, puoi applicare gli stili CSS direttamente nei file HTML generati per una migliore presentazione.
-3. **Cosa succede se il mio fuso orario necessita di frequenti cambiamenti?**
-   - Si consiglia di implementare un file di configurazione o un'impostazione dell'interfaccia utente che consenta regolazioni dinamiche del fuso orario.
-4. **Come garantire la sicurezza durante il rendering delle e-mail?**
-   - Sanifica sempre gli input e utilizza metodi sicuri per gestire i dati sensibili nelle tue applicazioni.
-5. **Oltre a Java, sono supportati anche altri linguaggi di programmazione?**
-   - GroupDocs.Viewer è disponibile per .NET, C++ e altri formati: per i dettagli, consultare la documentazione.
+**D: Posso modificare il modello HTML o aggiungere CSS personalizzato?**  
+R: Sì, dopo il rendering puoi modificare il file HTML generato o iniettare CSS programmaticamente prima del salvataggio.
+
+**D: È possibile renderizzare più file EML in batch?**  
+R: Avvolgi la logica di rendering in un ciclo e riutilizza la stessa istanza `HtmlViewOptions` per ogni file.
+
+**D: Cosa fare se devo supportare altri formati email come MSG?**  
+R: GroupDocs.Viewer supporta anche MSG, PST e altri contenitori email—basta cambiare l'estensione del file nel costruttore `Viewer`.
+
+**D: È necessaria una licenza separata per ogni server?**  
+R: La licenza è per distribuzione; consulta la guida di licenza GroupDocs per scenari multi‑server.
 
 ## Risorse
 
-- [Documentazione](https://docs.groupdocs.com/viewer/java/)
-- [Riferimento API](https://reference.groupdocs.com/viewer/java/)
-- [Scaricamento](https://releases.groupdocs.com/viewer/java/)
-- [Acquistare](https://purchase.groupdocs.com/buy)
-- [Prova gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Purchase](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Prova a implementare queste tecniche nel tuo progetto ed esplora tutte le potenzialità di GroupDocs.Viewer per Java!
+---
+
+**Ultimo aggiornamento:** 2026-01-10  
+**Testato con:** GroupDocs.Viewer 25.2 (Java)  
+**Autore:** GroupDocs
