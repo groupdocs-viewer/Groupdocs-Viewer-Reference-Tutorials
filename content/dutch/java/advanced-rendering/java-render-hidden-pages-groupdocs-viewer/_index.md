@@ -1,48 +1,65 @@
 ---
-"date": "2025-04-24"
-"description": "Beheers het renderen van verborgen dia's in Java-applicaties met GroupDocs.Viewer. Leer hoe u uw documenten kunt instellen, configureren en integreren voor uitgebreide zichtbaarheid."
-"title": "Java&#58; Verborgen pagina's weergeven met GroupDocs.Viewer"
-"url": "/nl/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
-"weight": 1
+date: '2025-12-28'
+description: Leer hoe je verborgen pagina's in Java rendert met GroupDocs.Viewer en
+  HTML genereert vanuit PPTX‑bestanden. Stapsgewijze installatie‑, configuratie‑ en
+  integratiehandleiding.
+keywords:
+- render hidden pages java
+- GroupDocs Viewer setup
+- Java document rendering
+title: Render verborgen pagina’s in Java met GroupDocs.Viewer
 type: docs
+url: /nl/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
+weight: 1
 ---
-# Java: Verborgen pagina's weergeven met GroupDocs.Viewer
 
-## Invoering
+# Render Verborgen Pagina's Java met GroupDocs.Viewer
 
-Wilt u verborgen dia's of secties in uw documenten weergeven? Deze tutorial begeleidt u bij het gebruik van GroupDocs.Viewer voor Java om die verborgen pagina's te onthullen. Of het nu gaat om PowerPoint-presentaties, Word-documenten of andere bestandsformaten die door GroupDocs worden ondersteund, deze functie zorgt ervoor dat alle content zichtbaar is.
+Zoek je een manier om verborgen dia's of secties in je documenten weer te geven? In deze tutorial leer je hoe je **render hidden pages java** gebruikt met GroupDocs.Viewer voor Java om die verborgen pagina's te onthullen. Of het nu PowerPoint‑presentaties, Word‑documenten of andere door GroupDocs ondersteunde formaten zijn, deze functie zorgt ervoor dat elke inhoud zichtbaar wordt.
 
-**Wat je leert:**
-- GroupDocs.Viewer installeren en gebruiken in Java-projecten.
-- Weergave van verborgen pagina's in documenten mogelijk maken.
-- Belangrijkste configuratieopties voor optimale weergave van documenten.
-- Praktische toepassingen en integratiemogelijkheden met andere systemen.
+![Render Verborgen Pagina's met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
-Laten we beginnen met het doornemen van de vereisten voordat u deze functie onder de knie krijgt!
+**Wat je zult leren**
+- GroupDocs.Viewer opzetten en gebruiken in Java‑projecten.  
+- Het mogelijk maken van het renderen van verborgen pagina's binnen documenten.  
+- Belangrijke configuratie‑opties voor optimale documentweergave.  
+- Praktische toepassingen en integratiemogelijkheden met andere systemen.  
+
+Laten we beginnen met het behandelen van de vereisten, en vervolgens de implementatie stap voor stap doorlopen.
+
+## Snelle antwoorden
+- **Kan GroupDocs.Viewer verborgen PowerPoint‑dia's renderen?** Ja, schakel `setRenderHiddenPages(true)` in.  
+- **Welk uitvoerformaat wordt in deze gids gebruikt?** HTML met ingebedde resources.  
+- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefperiode werkt voor testen; een commerciële licentie is vereist voor productie.  
+- **Is de oplossing compatibel met Java 8+?** Absoluut – elke JDK‑versie die door GroupDocs.Viewer wordt ondersteund.  
+- **Kan ik HTML genereren vanuit PPTX‑bestanden?** Ja, gebruik `HtmlViewOptions` zoals hieronder getoond.
+
+## Wat is “render hidden pages java”?
+Rendering hidden pages Java verwijst naar de mogelijkheid van de GroupDocs.Viewer‑bibliotheek om elke dia of pagina in een document te verwerken en uit te voeren, zelfs diegene die in het bronbestand als verborgen zijn gemarkeerd. Dit zorgt voor volledige zichtbaarheid voor archivering, audit of presentatiedoeleinden.
+
+## Waarom HTML genereren vanuit PPTX?
+HTML genereren vanuit PPTX (`generate html from pptx`) stelt je in staat om presentaties direct in webapplicaties in te sluiten zonder dat Office‑installaties nodig zijn. De resulterende HTML is lichtgewicht, doorzoekbaar en gemakkelijk te stylen met CSS.
 
 ## Vereisten
 
-Voordat u begint, zorg ervoor dat u het volgende heeft:
+Zorg ervoor dat je het volgende hebt voordat je begint:
 
 ### Vereiste bibliotheken, versies en afhankelijkheden
-- GroupDocs.Viewer voor Java versie 25.2 of later.
-- Java Development Kit (JDK) op uw computer geïnstalleerd.
+- GroupDocs.Viewer voor Java versie **25.2** of later.  
+- Java Development Kit (JDK) geïnstalleerd op je machine.
 
-### Vereisten voor omgevingsinstellingen
-- Integrated Development Environment (IDE) zoals IntelliJ IDEA of Eclipse.
-- Maven-buildtool voor het beheren van afhankelijkheden.
+### Vereisten voor omgeving configuratie
+- Integrated Development Environment (IDE) zoals IntelliJ IDEA of Eclipse.  
+- Maven build tool om afhankelijkheden te beheren.
 
 ### Kennisvereisten
-- Basiskennis van Java-programmering.
-- Kennis van het gebruik van Maven voor afhankelijkheidsbeheer.
+- Basiskennis van Java‑programmeren.  
+- Bekendheid met het gebruik van Maven voor afhankelijkheidsbeheer.
 
-## GroupDocs.Viewer instellen voor Java
+## GroupDocs.Viewer voor Java instellen
 
-Om te beginnen, installeert u GroupDocs.Viewer in uw project. Zo doet u dat:
-
-### Maven-installatie
-
-Voeg de volgende configuratie toe aan uw `pom.xml` bestand om GroupDocs.Viewer als afhankelijkheid op te nemen:
+### Maven‑configuratie
+Voeg de volgende configuratie toe aan je `pom.xml`‑bestand om GroupDocs.Viewer als afhankelijkheid op te nemen:
 
 ```xml
 <repositories>
@@ -62,14 +79,13 @@ Voeg de volgende configuratie toe aan uw `pom.xml` bestand om GroupDocs.Viewer a
 </dependencies>
 ```
 
-### Stappen voor het verkrijgen van een licentie
-- **Gratis proefperiode**Begin met een gratis proefperiode om de mogelijkheden van GroupDocs.Viewer te ontdekken.
-- **Tijdelijke licentie**:Verkrijg een tijdelijke licentie voor uitgebreide tests zonder beperkingen.
-- **Aankoop**: Koop een commerciële licentie voor langdurig gebruik.
+### Stappen voor licentie‑acquisitie
+- **Free Trial** – Begin met een gratis proefperiode om de mogelijkheden van GroupDocs.Viewer te verkennen.  
+- **Temporary License** – Verkrijg een tijdelijke licentie voor uitgebreid testen zonder beperkingen.  
+- **Purchase** – Schaf een commerciële licentie aan voor langdurig productiegebruik.
 
-### Basisinitialisatie en -installatie
-
-Zorg ervoor dat u de nodige imports in uw Java-klasse hebt:
+### Basisinitialisatie en configuratie
+Zorg ervoor dat je de benodigde imports in je Java‑klasse hebt:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -78,41 +94,36 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-Initialiseer het Viewer-object om de GroupDocs.Viewer-functionaliteiten te gaan gebruiken.
+Je initialiseert later het `Viewer`‑object om de functionaliteiten van GroupDocs.Viewer te gebruiken.
 
-## Implementatiegids
+## Hoe verborgen pagina's Java renderen
 
-### Verborgen pagina's weergeven
+Deze sectie leidt je door de exacte stappen die nodig zijn om **render hidden pages java** uit te voeren en HTML‑uitvoer te produceren.
 
-Met deze functie kunt u verborgen pagina's in uw documenten weergeven, zodat alle inhoud volledig zichtbaar is. Laten we de stappen eens bekijken:
-
-#### Stap 1: Definieer de uitvoermap en het bestandspadformaat
-
-Stel in waar uw gerenderde HTML-bestanden worden opgeslagen:
+### Stap 1: Definieer uitvoermap en bestandspadformaat
+Stel in waar je gerenderde HTML‑bestanden worden opgeslagen:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **`outputDirectory`**: Het pad naar de map waarin de uitvoerbestanden worden opgeslagen.
-- **`pageFilePathFormat`**: Formaat voor het benoemen van elk paginabestand, met behulp van tijdelijke aanduidingen zoals `{0}`.
+- `outputDirectory` – Map die de gegenereerde HTML‑pagina's zal bevatten.  
+- `pageFilePathFormat` – Naamgevingspatroon voor elk paginabestand; `{0}` wordt vervangen door het paginanummer.
 
-#### Stap 2: HtmlViewOptions configureren
-
-Maak een exemplaar van `HtmlViewOptions`, waarin wordt aangegeven dat bronnen moeten worden ingesloten:
+### Stap 2: HtmlViewOptions configureren
+Maak een instantie van `HtmlViewOptions`, waarbij je opgeeft dat resources moeten worden ingebed en dat verborgen pagina's moeten worden gerenderd:
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-viewOptions.setRenderHiddenPages(true); // Weergave van verborgen pagina's inschakelen
+viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`**: Zorgt ervoor dat alle benodigde bronnen in de HTML-bestanden zijn opgenomen.
-- **`setRenderHiddenPages(true)`**: Activeert het weergeven van verborgen dia's of secties.
+- `forEmbeddedResources` – Pakt CSS, JavaScript en afbeeldingen in de HTML‑bestanden.  
+- `setRenderHiddenPages(true)` – Activeert de verborgen‑pagina renderfunctie.
 
-#### Stap 3: Document renderen
-
-Gebruik het Viewer-object om uw document te renderen met de opgegeven opties:
+### Stap 3: Render het document
+Gebruik het `Viewer`‑object om je PPTX (of een ander ondersteund formaat) te renderen met de opties die je hebt geconfigureerd:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE")) {
@@ -120,57 +131,76 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 }
 ```
 
-- **`Viewer`**: Beheert het laden en renderen van documenten.
-- **`view(viewOptions)`**: Voert het renderingproces uit op basis van de opgegeven opties.
+- `Viewer` – Laadt het brondocument.  
+- `view(viewOptions)` – Voert het renderproces uit en produceert een reeks HTML‑bestanden.
 
-**Probleemoplossingstip:** Zorg ervoor dat het documentpad correct is en dat u schrijfrechten hebt voor de uitvoermap om veelvoorkomende problemen te voorkomen.
+**Probleemtips:** Controleer of het documentpad correct is en of de applicatie schrijfrechten heeft voor de uitvoermap. Ontbrekende rechten veroorzaken vaak `AccessDeniedException`‑fouten.
+
+## HTML genereren vanuit PPTX met HtmlViewOptions
+De bovenstaande code laat al zien hoe je **generate HTML from PPTX** bestanden kunt maken. Door `HtmlViewOptions` aan te passen, kun je bepalen of bronnen worden ingebed, of CSS extern is, en andere renderdetails.
 
 ## Praktische toepassingen
 
-1. **Bedrijfspresentaties**: Automatisch alle dia's weergeven, inclusief de dia's die als verborgen zijn gemarkeerd. Zo wordt de volledige inhoud van de presentatie weergegeven.
-2. **Documentarchivering**: Archiveer alle informatie in juridische documenten door alle secties weer te geven.
-3. **Educatief materiaal**Geef studenten volledige toegang tot lesmateriaal, inclusief oefenvragen of extra aantekeningen die normaal gesproken verborgen zijn.
-4. **Interactieve rapporten**: Zorg dat gebruikers alle aspecten van rapporten kunnen verkennen zonder dat ze aanvullende gegevens missen.
-5. **Softwaredocumentatie**: Zorg voor uitgebreide documentatie door optionele configuratie-instellingen beschikbaar te stellen.
+1. **Bedrijfspresentaties** – Zorg ervoor dat elke dia, zelfs verborgen, verschijnt tijdens bestuursvergaderingen.  
+2. **Documentarchivering** – Leg alle verborgen secties van juridische contracten vast voor compliance‑audits.  
+3. **Educatief materiaal** – Bied studenten volledige toegang tot oefenvragen of aanvullende notities die in de originele PPTX verborgen waren.  
+4. **Interactieve rapporten** – Laat eindgebruikers elke dataset verkennen zonder verborgen grafieken of tabellen te missen.  
+5. **Softwaredocumentatie** – Maak optionele configuratiesecties zichtbaar die eerder verborgen waren voor gevorderde gebruikers.
 
 ## Prestatieoverwegingen
 
-Om de prestaties bij het gebruik van GroupDocs.Viewer te optimaliseren:
-- **Resourcebeheer**: Controleer het geheugengebruik en pas de JVM-instellingen indien nodig aan.
-- **Load Balancing**: Verdeel renderingtaken over meerdere instanties als u grote hoeveelheden documenten verwerkt.
-- **Efficiënte bestandsverwerking**: Gebruik efficiënte bestands-I/O-bewerkingen om latentie te minimaliseren.
+- **Resource Management** – Houd het JVM‑heapgebruik in de gaten; verhoog `-Xmx` als je grote bestanden verwerkt.  
+- **Load Balancing** – Verspreid rendertaken over meerdere serverinstanties bij hoge volumes.  
+- **Efficient File Handling** – Gebruik streaming‑API's voor grote documenten om I/O‑latentie te verminderen.
+
+## Veelvoorkomende problemen en oplossingen
+
+| Probleem | Oplossing |
+|----------|-----------|
+| **Uitvoermap niet aangemaakt** | Zorg ervoor dat het pad `outputDirectory` bestaat of laat de code het aanmaken met `Files.createDirectories(outputDirectory)`. |
+| **Verborgen pagina's verschijnen niet** | Controleer of `viewOptions.setRenderHiddenPages(true)` **vóór** `viewer.view(viewOptions)` wordt aangeroepen. |
+| **Memory OutOfMemoryError** | Verhoog de JVM‑heapgrootte of verwerk het document in kleinere batches (bijv. render specifieke paginabereiken). |
+| **Onjuiste bestandsrechten** | Voer de applicatie uit met voldoende OS‑rechten of pas de map‑ACL's aan. |
+
+## Veelgestelde vragen
+
+**Q1: Welke formaten ondersteunt GroupDocs.Viewer?**  
+A1: Het ondersteunt PDF, DOC/DOCX, XLS/XLSX, PPT/PPTX en vele andere gangbare kantoor‑ en afbeeldingsformaten.
+
+**Q2: Kan ik GroupDocs.Viewer gebruiken in een commerciële applicatie?**  
+A2: Ja, een commerciële licentie is vereist voor productiegebruik. Een gratis proefperiode is beschikbaar voor evaluatie.
+
+**Q3: Hoe moet ik omgaan met zeer grote presentaties?**  
+A3: Optimaliseer JVM‑geheugeninstellingen, overweeg het renderen van specifieke paginabereiken, en gebruik load‑balancing over meerdere instanties.
+
+**Q4: Is het mogelijk om de HTML‑uitvoerstijl aan te passen?**  
+A4: Absoluut. Je kunt de gegenereerde CSS aanpassen of je eigen stylesheet leveren via `HtmlViewOptions.setExternalResourcesPath(...)`.
+
+**Q5: Welke stappen moet ik nemen als ik fouten tegenkom tijdens de installatie?**  
+A5: Controleer dubbel dat alle Maven‑afhankelijkheden zijn opgelost, verifieer het documentpad, en zorg dat het licentiebestand correct geplaatst is.
+
+**Q6: Kan ik verborgen pagina's renderen uit een met wachtwoord beveiligde PPTX?**  
+A6: Ja, geef het wachtwoord op bij het construeren van de `Viewer`‑instantie met de juiste overload.
+
+**Q7: Biedt GroupDocs.Viewer ook rendering naar afbeeldingsformaten?**  
+A7: Ja. Je kunt `ImageViewOptions` gebruiken om PNG-, JPEG- of BMP‑bestanden te genereren in plaats van HTML.
 
 ## Conclusie
 
-Door deze tutorial te volgen, hebt u geleerd hoe u verborgen paginarendering in uw Java-applicaties kunt inschakelen met GroupDocs.Viewer. Deze functie opent nieuwe mogelijkheden voor documentbeheer en -presentatie, zodat geen enkele inhoud ongezien blijft.
+Je hebt nu onder de knie hoe je **render hidden pages java** en **generate HTML from PPTX** kunt uitvoeren met GroupDocs.Viewer. Deze mogelijkheid maakt volledige documentzichtbaarheid mogelijk voor archivering, presentaties en webintegratie. Verken andere Viewer‑functies – zoals PDF‑conversie of afbeeldingsrendering – om de documentverwerkingsmogelijkheden van je applicatie verder uit te breiden.
 
-De volgende stappen omvatten het verkennen van andere functies van GroupDocs.Viewer of het integreren ervan met uw bestaande systemen om de functionaliteit verder te verbeteren. Probeer deze oplossing vandaag nog uit en zie het verschil!
+---
 
-## FAQ-sectie
+**Last Updated:** 2025-12-28  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
 
-**V1: Welke formaten ondersteunt GroupDocs.Viewer?**
-A1: Het ondersteunt een breed scala aan documentformaten, waaronder PDF, Word, Excel, PowerPoint en meer.
+## Resources
 
-**V2: Kan ik GroupDocs.Viewer gebruiken in een commerciële applicatie?**
-A2: Ja, u kunt een commerciële licentie aanschaffen voor langdurig gebruik.
-
-**V3: Hoe werk ik met grote documenten met GroupDocs.Viewer?**
-A3: Optimaliseer het geheugenbeheer en overweeg het gebruik van load balancing-technieken om het resourcegebruik effectief te beheren.
-
-**V4: Is het mogelijk om het uitvoerformaat aan te passen?**
-A4: Ja, u kunt verschillende formaten opgeven voor rendering, zoals HTML of afbeeldingsformaten.
-
-**V5: Wat moet ik doen als er fouten optreden tijdens de installatie?**
-A5: Zorg ervoor dat alle afhankelijkheden correct zijn geconfigureerd in uw `pom.xml` en controleer of de bestandspaden nauwkeurig zijn.
-
-## Bronnen
-
-- **Documentatie**: [GroupDocs.Viewer Java-documentatie](https://docs.groupdocs.com/viewer/java/)
-- **API-referentie**: [GroupDocs API-referentie](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [GroupDocs Viewer downloaden](https://releases.groupdocs.com/viewer/java/)
-- **Aankoop**: [Koop GroupDocs-licentie](https://purchase.groupdocs.com/buy)
-- **Gratis proefperiode**: [Start een gratis proefperiode](https://releases.groupdocs.com/viewer/java/)
-- **Tijdelijke licentie**: [Vraag een tijdelijke licentie aan](https://purchase.groupdocs.com/temporary-license/)
-- **Steun**: [GroupDocs-forum](https://forum.groupdocs.com/c/viewer/9)
-
-Begin vandaag nog met GroupDocs.Viewer voor Java en ontgrendel het volledige potentieel van documentweergave!
+- **Documentatie:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API‑referentie:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)  
+- **Aankoop:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Gratis proefversie starten:** [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Tijdelijke licentie verkrijgen:** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Ondersteuning:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)

@@ -1,48 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "掌握如何使用 GroupDocs.Viewer 在 Java 應用程式中渲染隱藏投影片。學習設定、配置和集成，以實現全面的文件可見性。"
-"title": "Java&#58;如何使用 GroupDocs.Viewer 呈現隱藏頁面"
-"url": "/zh-hant/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
-"weight": 1
+date: '2025-12-28'
+description: 學習如何使用 GroupDocs.Viewer 於 Java 渲染隱藏頁面，並從 PPTX 檔案產生 HTML。逐步設定、配置與整合指南。
+keywords:
+- render hidden pages java
+- GroupDocs Viewer setup
+- Java document rendering
+title: 使用 GroupDocs.Viewer 在 Java 中渲染隱藏頁面
 type: docs
+url: /zh-hant/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
+weight: 1
 ---
-# Java：如何使用 GroupDocs.Viewer 呈現隱藏頁面
 
-## 介紹
+# 使用 GroupDocs.Viewer 渲染隱藏頁面（Java）
 
-您是否想顯示文件中隱藏的投影片或章節？本教學將指導您使用 GroupDocs.Viewer for Java 來顯示這些隱藏的頁面。無論是 PowerPoint 簡報、Word 文件或 GroupDocs 支援的其他文件格式，此功能都能確保所有內容均可見。
+您是否想在文件中顯示隱藏的投影片或區段？在本教學中，您將學習如何使用 GroupDocs.Viewer for Java **render hidden pages java** 來顯示這些隱藏頁面。無論是 PowerPoint 簡報、Word 文件，或是 GroupDocs 支援的其他格式，此功能都能確保所有內容皆可見。
 
-**您將學到什麼：**
-- 在 Java 專案中設定和使用 GroupDocs.Viewer。
-- 啟用文件內隱藏頁面的渲染。
-- 實現最佳文件檢視的關鍵配置選項。
-- 實際應用和與其他系統的整合可能性。
+![Render Hidden Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
-讓我們先了解一下掌握此功能之前的先決條件！
+**您將學習**
+- 在 Java 專案中設定並使用 GroupDocs.Viewer。  
+- 啟用文件中隱藏頁面的渲染。  
+- 為獲得最佳文件檢視效果的關鍵設定選項。  
+- 與其他系統整合的實務應用與可能性。  
 
-## 先決條件
+讓我們先說明前置條件，然後一步步走過實作流程。
 
-在開始之前，請確保您已：
+## 快速解答
+- **GroupDocs.Viewer 能渲染隱藏的 PowerPoint 投影片嗎？** 可以，啟用 `setRenderHiddenPages(true)`。  
+- **本指南使用哪種輸出格式？** HTML（內嵌資源）。  
+- **開發時需要授權嗎？** 免費試用可用於測試；正式上線需購買商業授權。  
+- **此解決方案相容於 Java 8 以上嗎？** 完全相容——任何 GroupDocs.Viewer 支援的 JDK 版本皆可。  
+- **我可以從 PPTX 檔產生 HTML 嗎？** 可以，使用下方示範的 `HtmlViewOptions`。
 
-### 所需的函式庫、版本和相依性
-- GroupDocs.Viewer for Java 版本 25.2 或更高版本。
-- 您的機器上安裝了 Java 開發工具包 (JDK)。
+## 什麼是「render hidden pages java」？
+**render hidden pages java** 指的是 GroupDocs.Viewer 函式庫能處理並輸出文件中所有投影片或頁面，即使它們在原始檔案中被標記為隱藏。此功能可確保在歸檔、稽核或簡報時，所有內容皆完整可見。
 
-### 環境設定要求
-- 整合開發環境 (IDE)，例如 IntelliJ IDEA 或 Eclipse。
-- Maven 建置工具來管理相依性。
+## 為什麼要從 PPTX 產生 HTML？
+從 PPTX（`generate html from pptx`）產生 HTML 可讓您直接在 Web 應用程式中嵌入簡報，無需安裝 Office。產出的 HTML 輕量、可搜尋，且可輕鬆使用 CSS 進行樣式調整。
+
+## 前置條件
+
+### 必要的函式庫、版本與相依性
+- GroupDocs.Viewer for Java 版本 **25.2** 或更新版本。  
+- 已在機器上安裝 Java Development Kit（JDK）。
+
+### 環境設定需求
+- IntelliJ IDEA、Eclipse 等整合開發環境（IDE）。  
+- 用於管理相依性的 Maven 建置工具。
 
 ### 知識前提
-- 對 Java 程式設計有基本的了解。
-- 熟悉使用 Maven 進行依賴管理。
+- 具備基本的 Java 程式設計概念。  
+- 熟悉使用 Maven 進行相依性管理。
 
-## 為 Java 設定 GroupDocs.Viewer
-
-首先，在您的專案中設定 GroupDocs.Viewer。操作步驟如下：
+## 設定 GroupDocs.Viewer for Java
 
 ### Maven 設定
-
-將以下配置新增至您的 `pom.xml` 文件以包含 GroupDocs.Viewer 作為相依性：
+在 `pom.xml` 中加入以下設定，即可將 GroupDocs.Viewer 加入相依性：
 
 ```xml
 <repositories>
@@ -62,14 +75,13 @@ type: docs
 </dependencies>
 ```
 
-### 許可證取得步驟
-- **免費試用**：從免費試用開始探索 GroupDocs.Viewer 的功能。
-- **臨時執照**：獲得臨時許可證，以進行不受限制的延長測試。
-- **購買**：購買商業許可證以供長期使用。
+### 取得授權的步驟
+- **Free Trial** – 先使用免費試用版探索 GroupDocs.Viewer 的功能。  
+- **Temporary License** – 取得臨時授權，以進行較長時間的測試且無功能限制。  
+- **Purchase** – 購買商業授權以供長期正式環境使用。
 
-### 基本初始化和設定
-
-確保你的 Java 類別中有必要的導入：
+### 基本初始化與設定
+確保在 Java 類別中匯入必要的套件：
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -78,41 +90,36 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-初始化 Viewer 物件以開始使用 GroupDocs.Viewer 功能。
+稍後您會在程式中初始化 `Viewer` 物件，開始使用 GroupDocs.Viewer 的功能。
 
-## 實施指南
+## 如何渲染隱藏頁面（Java）
 
-### 渲染隱藏頁面
+本節將逐步說明如何 **render hidden pages java** 並產生 HTML 輸出。
 
-此功能可讓您渲染文件中隱藏的頁面，確保所有內容完全可見。讓我們分解一下步驟：
-
-#### 步驟1：定義輸出目錄和檔案路徑格式
-
-設定渲染的 HTML 檔案的儲存位置：
+### 步驟 1：定義輸出目錄與檔案路徑格式
+設定渲染後的 HTML 檔案要儲存的位置：
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **`outputDirectory`**：儲存輸出檔案的目錄路徑。
-- **`pageFilePathFormat`**：用於命名每個頁面文件的格式，使用佔位符，例如 `{0}`。
+- **`outputDirectory`** – 用來存放產生的 HTML 頁面的資料夾。  
+- **`pageFilePathFormat`** – 每一頁檔案的命名模式，`{0}` 會被頁碼取代。
 
-#### 第 2 步：設定 HtmlViewOptions
-
-建立一個實例 `HtmlViewOptions`，指定應嵌入資源：
+### 步驟 2：設定 HtmlViewOptions
+建立 `HtmlViewOptions` 實例，指定資源內嵌且必須渲染隱藏頁面：
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-viewOptions.setRenderHiddenPages(true); // 啟用隱藏頁面的渲染
+viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`**：確保所有必要的資源都包含在 HTML 檔案中。
-- **`setRenderHiddenPages(true)`**：啟動隱藏幻燈片或部分的渲染。
+- **`forEmbeddedResources`** – 將 CSS、JavaScript 與圖片打包至 HTML 檔案內。  
+- **`setRenderHiddenPages(true)`** – 開啟隱藏頁面渲染功能。
 
-#### 步驟3：渲染文檔
-
-使用檢視器物件透過指定的選項呈現您的文件：
+### 步驟 3：渲染文件
+使用 `Viewer` 物件，依先前設定的選項渲染 PPTX（或其他支援格式）：
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE")) {
@@ -120,57 +127,76 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 }
 ```
 
-- **`Viewer`**：管理文件的載入和渲染。
-- **`view(viewOptions)`**：根據提供的選項執行渲染過程。
+- **`Viewer`** – 載入來源文件。  
+- **`view(viewOptions)`** – 執行渲染程序，產生一組 HTML 檔案。
 
-**故障排除提示：** 確保您的文件路徑正確並且您對輸出目錄具有寫入權限，以避免常見問題。
+**故障排除提示**：確認文件路徑正確，且應用程式對輸出目錄具有寫入權限。缺少權限常會導致 `AccessDeniedException` 錯誤。
 
-## 實際應用
+## 使用 HtmlViewOptions 從 PPTX 產生 HTML
+上方程式碼已示範如何 **generate HTML from PPTX**。透過自訂 `HtmlViewOptions`，您可以控制資源是否內嵌、CSS 是否外部化，以及其他渲染細節。
 
-1. **企業展示**：自動包含所有投影片，包括標記為隱藏的投影片，確保簡報期間的完整內容傳遞。
-2. **文件歸檔**：透過呈現所有部分來存檔法律文件中的每個資訊。
-3. **教育材料**：為學生提供對教育材料的全面訪問，包括通常隱藏的練習題或附加筆記。
-4. **互動式報告**：使用戶能夠探索報告的各個方面，而不會錯過補充數據。
-5. **軟體文件**：透過公開可選配置設定來確保全面的文件。
+## 實務應用
 
-## 性能考慮
+1. **企業簡報** – 確保在董事會會議中，所有投影片（包括隱藏的）皆能顯示。  
+2. **文件歸檔** – 捕捉法律合約中隱藏的條款，以供合規稽核使用。  
+3. **教育教材** – 為學生提供完整的練習題或補充說明，這些內容原本可能被隱藏在 PPTX 中。  
+4. **互動報告** – 讓最終使用者能探索每筆資料，避免遺漏隱藏的圖表或表格。  
+5. **軟體文件** – 曝露先前僅供進階使用者的可選設定說明。
 
-為了優化使用 GroupDocs.Viewer 時的效能：
-- **資源管理**：監視記憶體使用情況並根據需要調整 JVM 設定。
-- **負載平衡**：如果處理大量文檔，則將渲染任務分散在多個實例中。
-- **高效率的文件處理**：使用高效率的檔案 I/O 操作來最大限度地減少延遲。
+## 效能考量
+
+- **資源管理** – 監控 JVM 堆積使用量；若處理大型檔案，請提升 `-Xmx` 設定。  
+- **負載平衡** – 在高流量情況下，將渲染工作分散至多台伺服器實例。  
+- **高效檔案處理** – 針對大型文件使用串流 API，以降低 I/O 延遲。
+
+## 常見問題與解決方案
+
+| Issue | Solution |
+|-------|----------|
+| **Output folder not created** | 確認 `outputDirectory` 路徑已存在，或讓程式使用 `Files.createDirectories(outputDirectory)` 自行建立。 |
+| **Hidden pages not appearing** | 確認在呼叫 `viewer.view(viewOptions)` 之前已執行 `viewOptions.setRenderHiddenPages(true)`。 |
+| **Memory OutOfMemoryError** | 增加 JVM 堆積大小，或將文件分批處理（例如只渲染特定頁範圍）。 |
+| **Incorrect file permissions** | 以具備足夠 OS 權限的身分執行應用程式，或調整資料夾的 ACL 設定。 |
+
+## 常見問答
+
+**Q1: GroupDocs.Viewer 支援哪些檔案格式？**  
+A1: 支援 PDF、DOC/DOCX、XLS/XLSX、PPT/PPTX 以及其他常見的辦公與影像格式。
+
+**Q2: 我可以在商業應用中使用 GroupDocs.Viewer 嗎？**  
+A2: 可以，正式環境必須購買商業授權。免費試用版可用於評估測試。
+
+**Q3: 面對非常大的簡報，我該如何處理？**  
+A3: 調整 JVM 記憶體設定，考慮只渲染特定頁範圍，並在多個實例間使用負載平衡。
+
+**Q4: 能否自訂 HTML 輸出的樣式？**  
+A4: 完全可以。您可修改產生的 CSS，或透過 `HtmlViewOptions.setExternalResourcesPath(...)` 提供自訂樣式表。
+
+**Q5: 設定過程中若發生錯誤，我應該怎麼做？**  
+A5: 再次確認所有 Maven 相依性已正確解析，檢查文件路徑是否正確，並確保授權檔案放置於正確位置。
+
+**Q6: 能否渲染受密碼保護的 PPTX 中的隱藏頁面？**  
+A6: 可以，建立 `Viewer` 實例時使用相應的建構子傳入密碼即可。
+
+**Q7: GroupDocs.Viewer 也能渲染成影像格式嗎？**  
+A7: 能。您可以使用 `ImageViewOptions` 產生 PNG、JPEG 或 BMP 檔案，取代 HTML 輸出。
 
 ## 結論
 
-透過本教學課程，您學習如何使用 GroupDocs.Viewer 在 Java 應用程式中啟用隱藏頁面渲染。此功能為文件管理和呈現開啟了新的可能性，確保所有內容均清晰可見。
+您現在已掌握如何 **render hidden pages java** 以及 **generate HTML from PPTX**，藉由 GroupDocs.Viewer 讓文件完整可見，無論是歸檔、簡報或 Web 整合皆得心應手。進一步探索 Viewer 的其他功能，例如 PDF 轉換或影像渲染，將讓您的應用程式在文件處理上更上一層樓。
 
-下一步包括探索 GroupDocs.Viewer 的其他功能，或將其與您現有的系統集成，以進一步增強功能。立即嘗試實施此解決方案，見證它帶來的改變！
+---
 
-## 常見問題部分
-
-**Q1：GroupDocs.Viewer 支援哪些格式？**
-A1：它支援多種文件格式，包括 PDF、Word、Excel、PowerPoint 等。
-
-**問題 2：我可以在商業應用程式中使用 GroupDocs.Viewer 嗎？**
-A2：是的，您可以購買商業許可證以供長期使用。
-
-**Q3：如何使用 GroupDocs.Viewer 處理大型文件？**
-A3：最佳化記憶體管理，並考慮使用負載平衡技術來有效管理資源使用率。
-
-**Q4：可以自訂輸出格式嗎？**
-A4：是的，您可以指定不同的格式（如 HTML 或影像格式）進行渲染。
-
-**Q5：設定過程中遇到錯誤怎麼辦？**
-A5：確保所有依賴項在您的 `pom.xml` 並檢查檔案路徑的準確性。
+**最後更新：** 2025-12-28  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs  
 
 ## 資源
 
-- **文件**： [GroupDocs.Viewer Java 文檔](https://docs.groupdocs.com/viewer/java/)
-- **API 參考**： [GroupDocs API 參考](https://reference.groupdocs.com/viewer/java/)
-- **下載**： [GroupDocs 檢視器下載](https://releases.groupdocs.com/viewer/java/)
-- **購買**： [購買 GroupDocs 許可證](https://purchase.groupdocs.com/buy)
-- **免費試用**： [開始免費試用](https://releases.groupdocs.com/viewer/java/)
-- **臨時執照**： [獲得臨時許可證](https://purchase.groupdocs.com/temporary-license/)
-- **支援**： [GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9)
-
-立即踏上 GroupDocs.Viewer for Java 之旅，釋放文件渲染的全部潛力！
+- **文件說明：** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API 參考：** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **下載：** [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)  
+- **購買授權：** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **免費試用：** [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **臨時授權：** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **支援論壇：** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
