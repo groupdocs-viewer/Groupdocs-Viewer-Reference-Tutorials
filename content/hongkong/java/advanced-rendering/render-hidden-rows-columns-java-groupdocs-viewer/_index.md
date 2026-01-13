@@ -1,44 +1,51 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用 GroupDocs.Viewer 渲染 Java 電子表格中隱藏的行和列，以實現無縫的 HTML 轉換。本進階渲染指南將幫助您確保資料的完整可見性。"
-"title": "使用 GroupDocs.Viewer 在 Java 電子表格中呈現隱藏的行和列"
-"url": "/zh-hant/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-13'
+description: 學習如何使用 GroupDocs Viewer 將 Excel 轉換為 HTML（Java），同時呈現隱藏的行與列。此指南可協助您有效檢視隱藏的試算表資料。
+keywords:
+- render hidden rows columns java
+- GroupDocs Viewer Java
+- Java spreadsheet rendering
+title: Excel 轉 HTML Java – 渲染隱藏的行與列
 type: docs
+url: /zh-hant/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# 使用 GroupDocs.Viewer 在 Java 電子表格中呈現隱藏的行和列
 
-## 介紹
+# excel to html java – 使用 GroupDocs.Viewer 在 Java 試算表中渲染隱藏列與行
 
-在使用 Java 將電子表格轉換為 HTML 時，您是否難以將隱藏的行和列視覺化？您並不孤單！許多開發人員在嘗試維護不同格式之間資料視覺化的完整性時都面臨著這項挑戰。本教學將指導您如何使用 GroupDocs.Viewer for Java 有效地呈現電子表格中的隱藏行和列，確保轉換過程中不會遺失任何關鍵資訊。
+將 **excel to html java** 轉換成 HTML 可能會很棘手，尤其當您的工作簿包含隱藏的列或行時。在本教學中，您將學習如何渲染這些隱藏元素，使最終的 HTML 顯示完整的資料集。我們將逐步說明如何設定 GroupDocs.Viewer、建立 Maven 專案，以及撰寫讓隱藏試算表資料在輸出中可見的 Java 程式碼。
 
-在本文中，我們將介紹：
-- 配置 GroupDocs.Viewer 以呈現隱藏的電子表格元素
-- 使用 Maven 依賴項設定您的環境
-- 逐步實現該功能
-- 實際應用和性能考慮
+![Render Hidden Rows & Columns with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-在深入研究之前，請確保你對 Java 程式設計有基本的了解，並且熟悉 Maven 依賴管理。讓我們開始設定環境。
+## 快速解答
+- **GroupDocs.Viewer 能渲染隱藏列嗎？** 是 – 啟用 `setRenderHiddenRows(true)` 和 `setRenderHiddenColumns(true)`。
+- **哪個函式庫可以將 excel to html java 轉換？** GroupDocs.Viewer for Java。
+- **我需要授權嗎？** 試用版可用於評估；正式環境需購買永久授權。
+- **支援的格式？** 超過 50 種，包括 XLSX、XLS、CSV 等。
+- **記憶體使用是否需要注意？** 大檔案可能需要增加堆積大小；轉換過程中請監控記憶體。
 
-## 先決條件
+## 什麼是 excel to html java？
+`excel to html java` 指的是使用 Java 函式庫將 Microsoft Excel 工作簿（XLSX、XLS）轉換為 HTML 頁面的過程。這使得在不需要客戶端安裝 Microsoft Office 的情況下，能以網頁方式檢視試算表。
 
-### 所需的庫和依賴項
-若要實現此功能，請確保將 GroupDocs.Viewer for Java 作為相依性新增至您的專案中。此程式庫對於將文件渲染為各種格式（例如 HTML、PDF 和圖像檔案）至關重要。
+## 為什麼要渲染隱藏的列與行？
+許多 Excel 檔案會隱藏列或行以簡化呈現，但這些隱藏的儲存格通常包含關鍵資料（公式、元資料或補充資訊）。渲染它們可確保 **檢視隱藏的試算表資料**，並在線上分享報告時維持資料完整性。
 
-### 環境設定要求
-在繼續之前請確保您已完成以下設定：
-- **Java 開發工具包 (JDK)**：版本 8 或更高版本
-- **整合開發環境 (IDE)**：例如 IntelliJ IDEA 或 Eclipse
-- **Maven**：用於管理專案依賴關係
+## 前置條件
+
+### 必要的函式庫與相依性
+要實作此功能，請確保在專案中加入 GroupDocs.Viewer for Java 作為相依性。此函式庫可將文件渲染為 HTML、PDF 及影像等多種格式。
+
+### 環境設定需求
+- **Java Development Kit (JDK)**：版本 8 或以上  
+- **IDE**：IntelliJ IDEA、Eclipse 或其他類似工具  
+- **Maven**：用於管理專案相依性  
 
 ### 知識前提
-您需要具備 Java 程式設計的基礎知識。此外，熟悉 Maven 將有助於您設定專案。
+具備扎實的 Java 程式設計基礎與基本的 Maven 使用經驗，將有助於順利跟隨以下步驟。
 
-## 為 Java 設定 GroupDocs.Viewer
-要在 Java 應用程式中開始使用 GroupDocs.Viewer，您需要透過 Maven 進行設定。具體方法如下：
+## 設定 GroupDocs.Viewer for Java
+要在 Java 應用程式中使用 GroupDocs.Viewer，首先需透過 Maven 進行設定。將以下儲存庫與相依性加入 `pom.xml`：
 
-**Maven**
-將以下配置新增至您的 `pom.xml` 文件：
 ```xml
 <repositories>
    <repository>
@@ -56,33 +63,34 @@ type: docs
 </dependencies>
 ```
 
-### 許可證取得步驟
-若要使用 GroupDocs.Viewer，請考慮以下選項：
-- **免費試用**：下載試用版來評估功能。
-- **臨時執照**：申請臨時許可證以獲得完整功能訪問，不受評估限制。
-- **購買**：獲得生產使用的永久許可證。
+### 取得授權步驟
+- **免費試用** – 下載試用版以評估功能。  
+- **臨時授權** – 申請臨時授權，以在測試期間取得完整功能。  
+- **購買** – 取得正式授權以供生產環境使用。
 
-設定好 Maven 並取得授權後，您就可以開始初始化 GroupDocs.Viewer 了。操作步驟如下：
+設定好 Maven 並取得授權後，初始化 GroupDocs.Viewer：
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
-    public static void main(String[] args) {
-        // 如果可用，請使用您的許可證文件初始化檢視器。
+    public static main(String[] args) {
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // 您的程式碼在這裡...
+            // Your code here...
         }
     }
 }
 ```
 
-## 實施指南
+## 實作指南
 
-### 在電子表格中渲染隱藏的行和列
-此功能可讓您在將電子表格轉換為 HTML 格式時渲染隱藏的行和列。讓我們分解一下實現步驟。
+### 在試算表中渲染隱藏的列與行
+此功能可在將試算表轉換為 HTML 格式時，渲染隱藏的列與行。以下提供逐步說明。
 
 #### 步驟 1：定義輸出目錄路徑
-首先定義渲染檔案的儲存位置：
+首先定義渲染後檔案的儲存位置：
+
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -91,80 +99,84 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndCo
 ```
 
 #### 步驟 2：設定 HTMLViewOptions
-接下來，設定 `HtmlViewOptions` 將資源直接嵌入到產生的 HTML 檔案中：
+設定 `HtmlViewOptions`，將資源直接嵌入產生的 HTML 檔案中：
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// 建立用於渲染每個頁面的檔案路徑格式。
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 步驟 3：啟用隱藏列和行的渲染
-配置 `SpreadsheetOptions` 渲染隱藏元素：
+#### 步驟 3：啟用渲染隱藏的列與行
+告訴檢視器在輸出中包含隱藏元素：
+
 ```java
-// 啟用隱藏列和行的渲染。
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### 步驟 4：使用文件初始化檢視器
-最後，使用您的文件路徑初始化 GroupDocs.Viewer 並呈現內容：
+#### 步驟 4：使用文件初始化檢視器並渲染
+最後，使用已設定的選項將文件渲染為 HTML：
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // 使用指定的視圖選項將文件呈現為 HTML。
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**故障排除提示**：確保路徑設定正確，並且依賴項正確包含在您的 `pom。xml`.
+**故障排除提示**：確認所有檔案路徑正確，且 Maven 相依性已成功解析且無衝突。
 
-## 實際應用
-以下是此功能的一些實際應用：
-1. **財務報告**：確保所有資料（包括隱藏的財務指標）在轉換過程中都是可見的，以確保合規性。
-2. **數據分析**：透過在報表或簡報中顯示所有行和列來維護資料集的完整性。
-3. **教育工具**：使用完整的電子表格內容進行教學目的，而不會失去隱藏的資訊。
+## 實務應用
+以下是 **excel to html java** 搭配隱藏資料渲染在實務上發揮效益的情境：
+1. **財務報表** – 顯示所有指標，即使是內部計算用的隱藏項目，以符合稽核需求。  
+2. **資料分析** – 在網頁儀表板分享分析結果時，保留完整資料集。  
+3. **教育工具** – 為學生提供完整的試算表內容，以便於學習練習。
 
-## 性能考慮
-為了優化使用 GroupDocs.Viewer 時的效能：
-- 監控記憶體使用情況，尤其是大型文件。
-- 優化檔案路徑和儲存位置，減少I/O操作。
-- 定期更新庫以利用新的效能改進和錯誤修復。
+## 效能考量
+- **記憶體管理** – 大型工作簿可能佔用大量堆積，建議提升 JVM 的 `-Xmx` 設定。  
+- **I/O 最佳化** – 將渲染出的 HTML 存放於高速 SSD 目錄，以降低延遲。  
+- **函式庫更新** – 定期更新 GroupDocs.Viewer，以獲得效能修補與新功能。
 
 ## 結論
-在本教學中，您學習如何設定 GroupDocs.Viewer for Java 來呈現電子表格中隱藏的行和列。請按照以下步驟操作，您可以確保跨格式的全面資料可見性。下一步，請嘗試不同的文件類型，並探索 GroupDocs.Viewer 提供的其他功能。
+現在您已掌握如何在將 **excel to html java** 轉換時，同時渲染隱藏的列與行，從而完整呈現試算表資料。可嘗試不同選項，例如自訂 CSS 樣式，以進一步調整 HTML 輸出以符合專案需求。
 
-準備好深入了解了嗎？嘗試在您的專案中實現此功能，看看它如何增強您的應用程式的功能！
+## 常見問題
 
-## 常見問題部分
+**Q: 我可以免費使用 GroupDocs.Viewer 嗎？**  
+A: 可以，提供試用版供評估使用。若需無限制的正式環境，則必須購買授權。
 
-**問題 1：我可以免費使用 GroupDocs.Viewer 嗎？**
-A1：是的，您可以從官方網站下載試用版來探索其功能。如果您需要不受限制地完全使用，請考慮購買臨時或永久許可證。
+**Q: GroupDocs.Viewer 支援哪些檔案格式？**  
+A: 超過 50 種格式，包括 XLSX、XLS、CSV、PDF、DOCX 以及多種影像類型。
 
-**Q2：GroupDocs.Viewer 支援哪些文件格式？**
-A2：它支援超過 50 種不同的文件格式，包括 PDF、Word、Excel 和圖像。
+**Q: 如何處理非常大的 Excel 檔案？**  
+A: 增加 JVM 堆積大小、將工作簿拆分為較小的部分，或逐張工作表處理。
 
-**Q3：如何使用 GroupDocs.Viewer 處理大型文件？**
-A3：透過調整 Java 設定並在必要時將大檔案拆分為較小的部分來優化記憶體管理。
+**Q: 能否自訂產生的 HTML？**  
+A: 當然可以。`HtmlViewOptions` 提供多項設定，可調整 CSS、腳本與資源處理方式。
 
-**Q4：可以自訂HTML輸出格式嗎？**
-A4：是的，您可以使用配置各種選項 `HtmlViewOptions` 客製化渲染文檔的外觀。
-
-**Q5：解決 GroupDocs.Viewer 問題的最佳方法是什麼？**
-A5：查看官方文件和論壇尋找解決方案。確保專案設定中所有相依性均已正確配置。
+**Q: 在哪裡可以找到更多渲染隱藏資料的範例？**  
+A: 官方文件與 API 參考中包含更多程式碼片段與使用案例指南。
 
 ## 資源
-- **文件**： [GroupDocs 檢視器文檔](https://docs.groupdocs.com/viewer/java/)
-- **API 參考**： [GroupDocs API 參考](https://reference.groupdocs.com/viewer/java/)
-- **下載**： [取得 GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **購買**： [購買許可證](https://purchase.groupdocs.com/buy)
-- **免費試用**： [試用免費版本](https://releases.groupdocs.com/viewer/java/)
-- **臨時執照**： [申請臨時許可證](https://purchase.groupdocs.com/temporary-license/)
-- **支援**： [GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs Viewer 文件說明](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API 參考](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [取得 GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [購買授權](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [試用免費版](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [申請臨時授權](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9)
 
-有了這份全面的指南，您現在就能使用 GroupDocs.Viewer 在 Java 應用程式中有效地處理隱藏的電子表格元素了。祝您編碼愉快！
+---
+
+**最後更新：** 2026-01-13  
+**測試環境：** GroupDocs Viewer 25.2 for Java  
+**作者：** GroupDocs

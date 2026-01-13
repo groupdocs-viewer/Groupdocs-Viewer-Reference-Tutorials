@@ -1,39 +1,52 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak Outlook veri dosyalarını verimli bir şekilde işlemeyi ve filtrelemeyi öğrenin. E-posta yönetimi görevlerinizi kolaylıkla kolaylaştırın."
-"title": "GroupDocs.Viewer for Java ile Outlook Veri İşleme ve Filtrelemede Ustalaşın"
-"url": "/tr/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/"
-"weight": 1
+date: '2026-01-13'
+description: GroupDocs.Viewer for Java kullanarak pst dosyalarından e-postaları nasıl
+  çıkaracağınızı ve Outlook verilerini verimli bir şekilde nasıl görüntüleyeceğinizi
+  öğrenin.
+keywords:
+- Outlook data rendering
+- filtering Outlook files with Java
+- using GroupDocs.Viewer for Java
+title: GroupDocs.Viewer for Java ile pst dosyasından e-postaları çıkarın
 type: docs
+url: /tr/java/advanced-rendering/render-filter-outlook-data-groupdocs-java/
+weight: 1
 ---
-# GroupDocs.Viewer for Java ile Outlook Veri İşleme ve Filtrelemede Ustalaşın
 
-## giriiş
+# PST dosyalarından e-postaları çıkartma GroupDocs.Viewer for Java ile
 
-Outlook'ta sayısız e-postayı yönetmek göz korkutucu olabilir. **Java için GroupDocs.Viewer**bu dosyaları işlerken mesajları metin veya gönderici/alıcıya göre sorunsuz bir şekilde filtreleyebilir, zamandan ve emekten tasarruf edebilirsiniz. Bu eğitim, kurulum ve kullanım konusunda size rehberlik edecektir **Java için GroupDocs.Viewer** E-posta yönetimi görevlerinizi geliştirmek için.
+Outlook'ta sayısız e-postayı yönetmek zor olabilir, özellikle **pst dosyalarından e-posta çıkartma** gerektiğinde. **GroupDocs.Viewer for Java** ile bu dosyaları işlerken mesajları metin veya gönderici/alıcıya göre sorunsuzca filtreleyebilir, zaman ve çaba tasarrufu sağlayabilirsiniz.
 
-**Ne Öğreneceksiniz:**
-- GroupDocs.Viewer'ı Java ortamında kurma
-- Outlook veri dosyalarını adım adım filtreleme ve işleme
-- Optimize edilmiş performans için temel yapılandırma seçenekleri
+![Outlook Data Rendering and Filtering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/outlook-data-rendering-and-filtering-java.png)
 
-Başlamadan önce gerekli araç ve bilgiye sahip olduğunuzdan emin olun.
+## Hızlı Yanıtlar
+- **“pst dosyalarından e-posta çıkartma” ne anlama geliyor?** Bir PST (Personal Storage Table) dosyasından tek tek e-posta mesajlarını görüntüleme veya işleme amacıyla çıkarmak anlamına gelir.  
+- **Bu görevde hangi kütüphane yardımcı olur?** GroupDocs.Viewer for Java, Outlook verileri için render ve filtreleme yetenekleri sağlar.  
+- **Lisans gereklimi?** Değerlendirme için ücretsiz deneme çalışır, ancak üretim kullanımı için bir **GroupDocs Viewer lisansı** gerekir.  
+- **Outlook'u HTML olarak render edebilir miyim?** Evet – kütüphane **render outlook to html** veya **render outlook messages html** yapabilir, webde kolay görüntülenmesini sağlar.  
+- **En basit filtre nedir?** Lambda ifadesi kullanarak konuya göre e-postaları filtrelemek hızlı ve etkilidir.
 
-## Ön koşullar
+## “pst dosyalarından e-posta çıkartma” nedir?
 
-Bu eğitimi etkili bir şekilde takip edebilmek için şunlara sahip olduğunuzdan emin olun:
+Bir PST dosyası, e-postalar, kişiler ve takvim etkinlikleri gibi Outlook öğelerini saklar. PST'den e-posta çıkartmak, bu öğelere programlı olarak erişmek, isteğe bağlı olarak filtreler uygulamak (ör. konu veya göndericiye göre) ve bunları HTML gibi okunabilir bir formata dönüştürmek anlamına gelir.
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
-- **Java için GroupDocs.Viewer** sürüm 25.2 veya üzeri
-- Bağımlılıkları yönetmek için sisteminize Maven yüklendi
+## Neden GroupDocs.Viewer for Java kullanmalısınız?
 
-### Çevre Kurulum Gereksinimleri
-- Java makinenize düzgün bir şekilde yüklendi
-- Java programlama kavramlarının temel anlaşılması
+- **Outlook kurulumu gerekmez** – kütüphane doğrudan PST dosyaları üzerinde çalışır.  
+- **İnce ayarlı filtreleme** – **filter emails by subject**, gönderici veya herhangi bir özel ölçütle filtreleme yapabilirsiniz.  
+- **Hızlı HTML render** – **render outlook to html** yetenekleriyle web‑hazır görünümler oluşturun.  
+- **Çapraz platform Java desteği** – JVM yüklü herhangi bir sistemde çalışır.
 
-## Java için GroupDocs.Viewer Kurulumu
+## Önkoşullar
 
-Kurulumla başlayın **GrupDokümanları.Görüntüleyici** Maven kullanarak projenizde:
+- **GroupDocs.Viewer for Java** sürüm 25.2 veya üzeri  
+- Bağımlılıkları yönetmek için Maven kurulu  
+- Java Development Kit (JDK) kurulu  
+- Java programlamaya temel aşinalık  
+
+## GroupDocs.Viewer for Java Kurulumu
+
+Maven `pom.xml` dosyanıza GroupDocs deposunu ve bağımlılığını ekleyerek başlayın:
 
 ```xml
 <repositories>
@@ -52,103 +65,104 @@ Kurulumla başlayın **GrupDokümanları.Görüntüleyici** Maven kullanarak pro
 </dependencies>
 ```
 
-### Lisans Edinimi
+### Lisans Alımı
 
-Ücretsiz denemeyle başlayın veya GroupDocs.Viewer'ın tüm yeteneklerini keşfetmek için geçici bir lisans talep edin. İhtiyaçlarınızı karşılıyorsa sürekli erişim için bir abonelik satın almayı düşünün.
+Tam özellikleri keşfetmek için ücretsiz deneme ile başlayabilir veya geçici bir lisans talep edebilirsiniz. Sürekli üretim kullanımı için bir **GroupDocs Viewer lisansı** satın almayı düşünün.
 
-### Temel Başlatma ve Kurulum
+### Temel Başlatma ve Ayarlar
 
-Bağımlılıklar kurulduktan sonra, görüntüleyiciyi Java uygulamanızda başlatın:
+Bağımlılıklar kurulduktan sonra, Java uygulamanızda görüntüleyiciyi başlatın:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Viewer nesnesini Outlook veri dosyanızın yoluyla başlatın.
+// Initialize the Viewer object with the path to your Outlook data file.
 Viewer viewer = new Viewer("path/to/your/outlook/file.pst");
 ```
 
-## Uygulama Kılavuzu
+## PST dosyalarından e-posta nasıl çıkartılır
 
-Her şey ayarlandıktan sonra, Outlook veri dosyalarını filtrelemeye ve işlemeye geçelim.
+Görüntüleyici hazır olduğunda, Outlook verilerini render edip filtreleyebilirsiniz. Aşağıdaki adımlar, PST içeriğini HTML olarak render ederken konu filtresi uygulamanızı sağlar.
 
-### Mesajları Metne veya Gönderen/Alıcıya Göre Görüntüleme ve Filtreleme
+### Metin veya Gönderici/Alıcıya Göre Mesajları Render Etme ve Filtreleme
 
-#### Genel bakış
-Bu özellik, Outlook veri dosyalarınızdaki metin içeriğine veya gönderici/alıcı ayrıntılarına dayalı olarak belirli mesajları işlemenize olanak tanır. **Java için GroupDocs.Viewer**.
+#### Genel Bakış
+Bu özellik, **GroupDocs.Viewer for Java** kullanarak Outlook veri dosyalarınızdan metin içeriği, gönderici veya alıcı detaylarına göre belirli mesajları render etmenizi sağlar.
 
 #### HTML Görünüm Seçeneklerini Ayarlama
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
-// Çıktı dizin yolunu ayarlayın
+// Set up the output directory path
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-// İşlenen içeriğin nereye kaydedileceğini belirtmek için HTML görünüm seçeneklerini yapılandırın.
+// Configure HTML view options to specify where rendered content should be saved.
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory.resolve("output.html").toString());
 ```
 
 #### Filtreleri Uygulama
 
-Yalnızca ilgili mesajları görüntülemek için filtreleri uygulayın:
-
 ```java
-// Görüntüleyici için bir filtre oluşturun
+// Create a filter for the viewer
 viewOptions.setFilter((item, options) -> {
-    // Örnek: Konusunda "Proje" geçen e-postaları filtrele
+    // Example: Filter emails containing "Project" in their subject
     return item.getDocumentInfo().getSubject().contains("Project");
 });
 ```
 
-#### Dosyanın İşlenmesi
+*İpucu:* Lambda ifadesini **filter emails by subject**, gönderici veya ihtiyacınız olan herhangi bir özel özellik için ayarlayın.
 
-Filtrelenmiş Outlook veri dosyanızı oluşturun:
+#### Dosyayı Render Etme
 
 ```java
-// PST dosyasını uygulanan filtrelerle HTML'e dönüştürün.
+// Render the PST file to HTML with applied filters.
 viewer.view(viewOptions);
 ```
 
 ### Sorun Giderme İpuçları
-- Outlook dosyaları için doğru okuma izinlerinin ve çıktı dizini için doğru yazma izinlerinin olduğundan emin olun.
-- Tüm bağımlılıkların doğru şekilde eklendiğini doğrulayın. `pom.xml` Maven kullanıyorsanız.
+- Outlook dosyaları için doğru okuma izinlerini ve çıktı dizini için yazma izinlerini sağlayın.  
+- Maven kullanıyorsanız `pom.xml` dosyanıza tüm bağımlılıkların doğru eklendiğini doğrulayın.  
 
 ## Pratik Uygulamalar
-1. **E-posta Arşivleme**: Belirli projeler veya müşterilerle ilgili e-postaları otomatik olarak filtreleyin ve işleyin.
-2. **Uygunluk Denetimi**: Mevzuata uygunluk kontrolleri için belirli anahtar kelimeleri içeren e-postaları ayıklayın.
-3. **Veri Göçü**: PST dosyalarından filtrelenmiş verileri CRM yazılımı gibi diğer sistemlere aktarmak için işleyin.
+1. **Email Arşivleme** – Belirli projeler veya müşterilerle ilgili e-postaları otomatik olarak filtreleyip render edin.  
+2. **Uyumluluk Denetimi** – Düzenleyici uyumluluk kontrolleri için belirli anahtar kelimeleri içeren e-postaları çıkartın.  
+3. **Veri Göçü** – PST dosyalarından filtrelenmiş verileri CRM gibi diğer sistemlere aktarım için render edin.  
 
 ### Entegrasyon Olanakları
-Spring Boot servisleri, JPA tabanlı kalıcılık katmanları gibi Java tabanlı uygulamalarla bütünleşin veya Swing veya JavaFX kullanarak bağımsız bir masaüstü uygulaması oluşturun.
+Spring Boot servisleri, JPA tabanlı kalıcı katmanlar gibi Java‑tabanlı uygulamalarla bütünleştirin veya Swing ya da JavaFX kullanarak bağımsız bir masaüstü uygulaması oluşturun.
 
-## Performans Hususları
-Sorunsuz bir performans sağlamak için:
-- **Kaynak Kullanımını Optimize Edin**: İşlenen veri miktarını sınırlamak için filtreleri akıllıca kullanın.
-- **Java Bellek Yönetimi**: Belleği kapatarak verimli bir şekilde yönetin `Viewer` ihtiyaç duyulmayan durumlarda ve mümkünse büyük dosyaları akışlarla işleme.
+## Performans Düşünceleri
+- **Kaynak Kullanımını Optimize Edin** – İşlenen veri miktarını sınırlamak için filtreleri akıllıca kullanın.  
+- **Java Bellek Yönetimi** – `Viewer` örneklerini ihtiyaç kalmadığında kapatın ve mümkünse büyük dosyaları akışlarla yönetin.  
 
-## Çözüm
-Bu eğitim size GroupDocs.Viewer for Java'yı Outlook veri dosyalarını etkili bir şekilde işlemek ve filtrelemek için nasıl kullanacağınızı gösterdi. E-posta yönetim süreçlerinizi geliştirmek için bu teknikleri uygulayın ve diğer belge türlerini işleme veya farklı platformlarla bütünleştirme gibi daha fazla özelliği keşfetmeyi düşünün.
+## Sonuç
+Bu öğreticide, **extract emails from pst** dosyalarını nasıl çıkartıp GroupDocs.Viewer for Java ile HTML olarak render edeceğinizi gösterdik. Bu teknikleri e-posta yönetim süreçlerinizi iyileştirmek için uygulayın ve diğer belge türlerini render etme veya farklı platformlarla entegrasyon gibi ek özellikleri keşfedin.
 
 ## SSS Bölümü
-**S1: GroupDocs.Viewer for Java'nın temel kullanım amacı nedir?**
-C1: Geliştiricilerin, Outlook veri dosyaları da dahil olmak üzere çeşitli dosya biçimlerini doğrudan Java uygulamaları içerisinde işlemesine ve filtrelemesine olanak tanır.
+**S1: GroupDocs.Viewer for Java'nun temel amacı nedir?**  
+C1: Geliştiricilerin Outlook veri dosyaları da dahil olmak üzere çeşitli dosya formatlarını doğrudan Java uygulamaları içinde render ve filtrelemesini sağlar.
 
-**S2: Lisans satın almadan bu kütüphaneyi kullanabilir miyim?**
-C2: Evet, ücretsiz denemeyle başlayabilir veya satın almadan önce özellikleri değerlendirmek için geçici bir lisans talep edebilirsiniz.
+**S2: Bu kütüphaneyi lisans satın almadan kullanabilir miyim?**  
+C2: Evet, özellikleri değerlendirmek için ücretsiz deneme ile başlayabilir veya geçici bir lisans talep edebilirsiniz.
 
-**S3: Büyük PST dosyalarını etkili bir şekilde nasıl yönetebilirim?**
-C3: Veri işlemeyi sınırlamak için filtreleri kullanın ve kullanılmadığında görüntüleyicileri kapatarak kaynakları dikkatli bir şekilde yönetin.
+**S3: Büyük PST dosyalarını verimli bir şekilde nasıl yönetirim?**  
+C3: Veri işleme miktarını sınırlamak için filtreler kullanın ve kullanılmadığında görüntüleyicileri kapatarak kaynakları dikkatli yönetin.
 
-**S4: GroupDocs.Viewer for Java tarafından desteklenen dosya biçimleriyle ilgili herhangi bir sınırlama var mı?**
-C4: Çok çeşitli formatları desteklemesine rağmen, güncellemeler veya belirli sürüm kısıtlamaları için her zaman en son belgeleri kontrol edin.
+**S4: GroupDocs.Viewer for Java tarafından desteklenen dosya formatlarıyla ilgili sınırlamalar var mı?**  
+C4: Geniş bir format yelpazesi desteklenirken, güncel belgelerdeki sürüm kısıtlamalarını ve güncellemeleri kontrol etmeyi unutmayın.
 
-**S5: Gerektiğinde ek desteği nereden bulabilirim?**
-A5: Ziyaret edin [GroupDocs forumu](https://forum.groupdocs.com/c/viewer/9) Toplum desteği ve daha fazla rehberlik için.
+**S5: Ek destek nereden bulunur?**  
+C5: Topluluk yardımı ve ek rehberlik için [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) adresini ziyaret edin.
 
 ## Kaynaklar
-- **Belgeleme**: [GroupDocs Görüntüleyici Java Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı**: [GroupDocs API Başvurusu](https://reference.groupdocs.com/viewer/java/)
-- **İndirmek**: [GroupDocs Sürümleri](https://releases.groupdocs.com/viewer/java/)
-- **Satın almak**: [GroupDocs Ürünlerini Satın Alın](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme**: [GroupDocs'u Ücretsiz Deneyin](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans**: [Geçici Lisans Talebinde Bulunun](https://purchase.groupdocs.com/temporary-license/)
-- **Destek**: [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+- **Dokümantasyon**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Referansı**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **İndirme**: [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
+- **Satın Alma**: [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)
+- **Ücretsiz Deneme**: [Try GroupDocs for Free](https://releases.groupdocs.com/viewer/java/)
+- **Geçici Lisans**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Destek**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Tüm kaynaklarınızı ve bilginizi kullanarak bu çözümü bugün projelerinize uygulayın!
+---
+
+**Son Güncelleme:** 2026-01-13  
+**Test Edilen Sürüm:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs

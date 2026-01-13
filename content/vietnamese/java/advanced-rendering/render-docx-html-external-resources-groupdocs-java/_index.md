@@ -1,43 +1,64 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách chuyển đổi tài liệu DOCX sang định dạng HTML bằng GroupDocs.Viewer cho Java, bao gồm xử lý các tài nguyên bên ngoài như hình ảnh và bảng định kiểu."
-"title": "Chuyển đổi DOCX sang HTML bằng Tài nguyên bên ngoài bằng cách sử dụng GroupDocs.Viewer cho Java"
-"url": "/vi/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/"
-"weight": 1
+date: '2026-01-13'
+description: Tìm hiểu cách chuyển đổi tài liệu DOCX sang định dạng HTML bằng GroupDocs.Viewer
+  cho Java, bao gồm việc xử lý các tài nguyên bên ngoài như hình ảnh và bảng kiểu.
+keywords:
+- Convert DOCX to HTML
+- GroupDocs Viewer Java
+- rendering DOCX files
+title: Chuyển đổi DOCX sang HTML với tài nguyên bên ngoài sử dụng GroupDocs.Viewer
+  cho Java
 type: docs
+url: /vi/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/
+weight: 1
 ---
-# Chuyển đổi DOCX sang HTML bằng Tài nguyên bên ngoài bằng cách sử dụng GroupDocs.Viewer cho Java
 
-## Giới thiệu
+# Chuyển DOCX sang HTML với Tài Nguyên Bên Ngoài Sử Dụng GroupDocs.Viewer cho Java
 
-Việc chuyển đổi tài liệu DOCX của bạn sang HTML trong khi vẫn giữ nguyên các tài nguyên bên ngoài như hình ảnh, bảng định kiểu và phông chữ có thể là một thách thức. Với **GroupDocs.Viewer cho Java**, việc hiển thị tài liệu sang định dạng HTML bao gồm tất cả các tài sản cần thiết trở nên liền mạch. Tính năng này đặc biệt có lợi khi đảm bảo trình bày nhất quán trên nhiều nền tảng khác nhau.
+Chuyển đổi tài liệu DOCX của bạn sang HTML đồng thời bảo tồn các tài nguyên bên ngoài như hình ảnh, stylesheet và phông chữ có thể là một thách thức. Với **GroupDocs.Viewer for Java**, việc render tài liệu thành định dạng HTML bao gồm tất cả các tài sản cần thiết trở nên liền mạch. Tính năng này đặc biệt hữu ích khi cần đảm bảo trình bày nhất quán trên nhiều nền tảng.
 
-Trong hướng dẫn này, bạn sẽ học cách sử dụng GroupDocs.Viewer for Java để hiển thị các tệp DOCX dưới dạng HTML với các tài nguyên bên ngoài một cách hiệu quả. Đến cuối hướng dẫn này, bạn sẽ hiểu:
+![Chuyển DOCX sang HTML với Tài Nguyên Bên Ngoài bằng GroupDocs.Viewer cho Java](/viewer/advanced-rendering/convert-docx-to-html-with-external-resources-java.png)
+
+Trong hướng dẫn này, bạn sẽ học cách sử dụng GroupDocs.Viewer for Java để render các tệp DOCX dưới dạng HTML với tài nguyên bên ngoài một cách hiệu quả. Khi hoàn thành, bạn sẽ hiểu:
 - Cách thiết lập và cấu hình GroupDocs.Viewer cho Java.
-- Các bước cần thiết để chuyển đổi tài liệu DOCX sang định dạng HTML bằng cách sử dụng các tài nguyên bên ngoài.
-- Các biện pháp tốt nhất để tối ưu hóa hiệu suất và quản lý bộ nhớ trong Java.
+- Các bước cần thiết để chuyển đổi tài liệu DOCX sang định dạng HTML sử dụng tài nguyên bên ngoài.
+- Các thực tiễn tốt nhất để tối ưu hiệu suất và quản lý bộ nhớ trong Java.
 
-Chúng ta hãy bắt đầu bằng cách xem lại các điều kiện tiên quyết cần thiết cho hướng dẫn này.
+## Câu trả lời nhanh
+- **“convert docx to html” có nghĩa là gì?** Nó chuyển đổi một tệp Microsoft Word sang trang HTML thân thiện với web đồng thời giữ nguyên hình ảnh, kiểu dáng và phông chữ.  
+- **Thư viện nào thực hiện việc chuyển đổi?** GroupDocs.Viewer for Java cung cấp API cấp cao trừu tượng hoá việc phân tích cấp thấp.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá, nhưng giấy phép vĩnh viễn là bắt buộc cho môi trường sản xuất.  
+- **Có thể trích xuất hình ảnh từ docx trong quá trình chuyển đổi không?** Có – chế độ external‑resources lưu mỗi hình ảnh dưới dạng tệp riêng.  
+- **Quá trình có tiết kiệm bộ nhớ không?** Sử dụng try‑with‑resources và streaming giúp giảm mức tiêu thụ bộ nhớ, ngay cả với tài liệu lớn.
 
-## Điều kiện tiên quyết
+## “convert docx to html” là gì?
+Cụm từ mô tả quá trình lấy một tệp DOCX (Word) và tạo ra một biểu diễn HTML tương đương. Điều này hữu ích khi bạn cần hiển thị nội dung Word trên trình duyệt, nhúng vào ứng dụng web, hoặc lưu trữ dưới dạng định dạng có thể đọc được trên mọi nền tảng.
 
-Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
+## Tại sao nên dùng GroupDocs Viewer cho Java để “convert docx to html”?
+- **Độ chính xác cao** – mọi định dạng, bảng và phương tiện nhúng đều được giữ nguyên.  
+- **Tài nguyên bên ngoài** – hình ảnh, CSS và phông chữ được lưu dưới dạng tệp riêng, cho phép bạn kiểm soát việc cache và phân phối.  
+- **Đa nền tảng** – HTML được tạo ra hoạt động trên bất kỳ trình duyệt hiện đại nào mà không cần plugin bổ sung.  
+- **Tối ưu hiệu suất** – API stream dữ liệu và tự động giải phóng tài nguyên.
 
-### Thư viện và phụ thuộc bắt buộc
-- **GroupDocs.Viewer** phiên bản thư viện 25.2 trở lên.
-- Maven được thiết lập để quản lý sự phụ thuộc.
+## Yêu cầu trước
 
-### Yêu cầu thiết lập môi trường
-- Bộ công cụ phát triển Java (JDK) được cài đặt trên hệ thống của bạn.
-- Một IDE như IntelliJ IDEA hoặc Eclipse để viết và thực thi mã của bạn.
+Trước khi bắt đầu, hãy chắc chắn bạn đã có:
 
-### Điều kiện tiên quyết về kiến thức
-- Hiểu biết cơ bản về lập trình Java.
+### Thư viện và phụ thuộc cần thiết
+- Thư viện **GroupDocs.Viewer** phiên bản 25.2 trở lên.  
+- Maven được cài đặt để quản lý phụ thuộc.
+
+### Yêu cầu môi trường
+- Java Development Kit (JDK) đã được cài đặt trên hệ thống.  
+- Một IDE như IntelliJ IDEA hoặc Eclipse để viết và chạy mã.
+
+### Kiến thức nền tảng
+- Hiểu biết cơ bản về lập trình Java.  
 - Quen thuộc với cấu trúc dự án Maven và các tệp cấu hình.
 
-## Thiết lập GroupDocs.Viewer cho Java
+## Cài đặt GroupDocs.Viewer cho Java
 
-Để sử dụng GroupDocs.Viewer cho Java, hãy đưa nó vào dự án Maven của bạn. Sau đây là cách thực hiện:
+Để sử dụng GroupDocs.Viewer cho Java, thêm nó vào dự án Maven của bạn. Cách thực hiện như sau:
 
 **Cấu hình Maven:**
 
@@ -58,100 +79,123 @@ Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
 </dependencies>
 ```
 
-### Các bước xin cấp giấy phép
+### Các bước lấy giấy phép
 
 GroupDocs cung cấp một số tùy chọn để mua giấy phép:
-- **Dùng thử miễn phí:** Kiểm tra các tính năng có khả năng hạn chế.
-- **Giấy phép tạm thời:** Xin giấy phép tạm thời miễn phí để đánh giá.
-- **Mua:** Mua giấy phép vĩnh viễn để có quyền truy cập đầy đủ.
+- **Dùng thử miễn phí:** Kiểm tra các tính năng với khả năng giới hạn.  
+- **Giấy phép tạm thời:** Nhận giấy phép không phí, tạm thời để đánh giá.  
+- **Mua bản quyền:** Mua giấy phép vĩnh viễn để truy cập đầy đủ.
 
-#### Khởi tạo và thiết lập cơ bản
-Bắt đầu bằng cách thêm GroupDocs.Viewer làm phần phụ thuộc trong `pom.xml`. Điều này sẽ cho phép Maven xử lý việc tải xuống và thiết lập các tệp JAR cần thiết cho bạn. Sau khi cấu hình, hãy khởi tạo lớp Viewer để bắt đầu xử lý tài liệu.
+#### Khởi tạo và cấu hình cơ bản
+Bắt đầu bằng cách thêm GroupDocs.Viewer vào `pom.xml`. Điều này cho phép Maven tự động tải và thiết lập các file JAR cần thiết. Sau khi cấu hình, khởi tạo lớp `Viewer` để bắt đầu xử lý tài liệu.
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
-Chúng ta hãy chia nhỏ quá trình thực hiện thành các phần rõ ràng:
+Hãy chia quá trình triển khai thành các phần rõ ràng:
 
-### Kết xuất tài liệu với các tài nguyên bên ngoài
-Tính năng này cho phép bạn chuyển đổi tệp DOCX sang định dạng HTML trong khi vẫn giữ tất cả các tài nguyên bên ngoài như hình ảnh riêng biệt nhưng vẫn có thể truy cập được.
+### Render tài liệu với tài nguyên bên ngoài
+Tính năng này cho phép bạn chuyển đổi tệp DOCX sang HTML trong khi giữ các tài nguyên bên ngoài như hình ảnh ở dạng riêng biệt nhưng vẫn có thể truy cập.
 
 #### Quy trình từng bước
-1. **Xác định thư mục đầu ra và định dạng tập tin**
-   Thiết lập đường dẫn để lưu trữ các tệp đầu ra, bao gồm quy ước đặt tên cho các trang và tài nguyên:
-   
-   ```java
-   String outputDirectory = "YOUR_OUTPUT_DIRECTORY/RenderToHtmlWithExternalResources";
-   String pageFilePathFormat = outputDirectory + "/page_{0}.html"; // Mẫu đặt tên cho các trang HTML
-   String resourceFilePathFormat = outputDirectory + "/page_{0}_{1}"; // Mẫu cho các nguồn lực (ví dụ: hình ảnh)
-   String resourceUrlFormat = outputDirectory + "/page_{0}_{1}"; // Định dạng URL trong HTML được tạo
-   ```
+1. **Xác định thư mục đầu ra và định dạng tệp**  
+   Thiết lập các đường dẫn để lưu các tệp đầu ra, bao gồm quy tắc đặt tên cho các trang và tài nguyên:
 
-2. **Cấu hình HtmlViewOptions**
-   Cài đặt `HtmlViewOptions` để chỉ rõ cách xử lý các nguồn lực bên ngoài:
-   
-   ```java
-   HtmlViewOptions viewOptions = HtmlViewOptions.forExternalResources(pageFilePathFormat, resourceFilePathFormat, resourceUrlFormat);
-   ```
+```java
+String outputDirectory = "YOUR_OUTPUT_DIRECTORY/RenderToHtmlWithExternalResources";
+String pageFilePathFormat = outputDirectory + "/page_{0}.html"; // Naming pattern for HTML pages
+String resourceFilePathFormat = outputDirectory + "/page_{0}_{1}"; // Pattern for resources (e.g., images)
+String resourceUrlFormat = outputDirectory + "/page_{0}_{1}"; // URL format in generated HTML
+```
 
-3. **Khởi tạo và hiển thị tài liệu**
-   Sử dụng lớp Viewer để xử lý tài liệu của bạn theo các tùy chọn đã chỉ định:
-   
-   ```java
-   try (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX)) {
-       viewer.view(viewOptions); // Hiển thị DOCX dưới dạng HTML với các tài nguyên bên ngoài
-   }
-   ```
+2. **Cấu hình HtmlViewOptions**  
+   Yêu cầu viewer tạo tài nguyên bên ngoài bằng các đường dẫn bạn đã định nghĩa:
 
-#### Tùy chọn cấu hình chính
-- **`HtmlViewOptions.forExternalResources()`** cho phép bạn xác định đường dẫn tệp và mẫu URL để hiển thị các trang HTML và nội dung liên quan.
-  
-- Đảm bảo rằng các chỗ giữ chỗ trong định dạng đường dẫn được chỉ định chính xác, cho phép tạo tên tệp động.
+```java
+HtmlViewOptions viewOptions = HtmlViewOptions.forExternalResources(pageFilePathFormat, resourceFilePathFormat, resourceUrlFormat);
+```
+
+3. **Khởi tạo và render tài liệu**  
+   Sử dụng lớp `Viewer` để xử lý DOCX theo các tùy chọn ở trên:
+
+```java
+try (Viewer viewer = new Viewer(TestFiles.SAMPLE_DOCX)) {
+    viewer.view(viewOptions); // Renders DOCX as HTML with external resources
+}
+```
+
+#### Các tùy chọn cấu hình quan trọng
+- **`HtmlViewOptions.forExternalResources()`** – cho phép bạn kiểm soát nơi các trang HTML và tài sản được ghi và cách chúng được tham chiếu trong markup được tạo.  
+- Các placeholder (`{0}`, `{1}`) sẽ được thay thế tại thời điểm chạy bằng số trang và định danh tài nguyên, đảm bảo mỗi tệp có tên duy nhất.
 
 ### Mẹo khắc phục sự cố
-- Xác minh tất cả đường dẫn thư mục đều tồn tại trước khi chạy chương trình.
-- Kiểm tra xem URL tài nguyên có khớp với tệp tương ứng hay không để tránh liên kết bị hỏng trong đầu ra HTML.
-- Xử lý ngoại lệ một cách khéo léo khi khởi tạo và sử dụng Viewer để theo dõi lỗi tốt hơn.
+- Kiểm tra thư mục đầu ra đã tồn tại và ứng dụng có quyền ghi.  
+- Đảm bảo định dạng URL đúng; URL không khớp sẽ gây ra liên kết hình ảnh bị hỏng trong HTML cuối cùng.  
+- Bắt và ghi log các ngoại lệ quanh việc tạo `Viewer` để chẩn đoán vấn đề giấy phép hoặc truy cập tệp.
 
-## Ứng dụng thực tế
-Hãy xem xét những trường hợp sử dụng thực tế sau:
-1. **Quản lý nội dung web:** Tự động chuyển đổi các bài viết DOCX sang định dạng HTML thân thiện với web, kèm theo hình ảnh và bảng định dạng.
-2. **Lưu trữ tài liệu:** Duy trì tính trung thực của tài liệu bằng cách hiển thị kho lưu trữ theo định dạng có thể truy cập phổ biến như HTML trong khi vẫn duy trì tất cả các tài nguyên được nhúng.
-3. **Khả năng tương thích đa nền tảng:** Đảm bảo hiển thị nhất quán trên nhiều thiết bị khác nhau bằng cách sử dụng các tài nguyên bên ngoài để cải thiện tài liệu HTML.
+## Ứng dụng thực tiễn
+Xem một số trường hợp sử dụng thực tế:
+1. **Quản lý nội dung web:** Tự động chuyển các bài viết dựa trên Word sang HTML sẵn sàng cho web, giữ nguyên hình ảnh và kiểu dáng.  
+2. **Lưu trữ tài liệu:** Lưu tài liệu dưới dạng HTML để truy cập lâu dài đồng thời duy trì độ trung thực hình ảnh.  
+3. **Tương thích đa nền tảng:** Cung cấp cùng một nội dung trên máy tính để bàn, máy tính bảng và điện thoại thông minh mà không cần cài đặt Office.
 
-Có thể tích hợp với các hệ thống như nền tảng CMS, cho phép quản lý và cập nhật nội dung liền mạch.
+Việc tích hợp có thể thực hiện với các hệ thống CMS, cho phép cập nhật nội dung một cách liền mạch.
 
 ## Cân nhắc về hiệu suất
-Khi tối ưu hóa hiệu suất:
-- **Tối ưu hóa việc sử dụng tài nguyên:** Quản lý hoạt động I/O tệp hiệu quả để giảm thời gian xử lý.
-  
-- **Quản lý bộ nhớ Java:** Áp dụng các biện pháp tốt nhất như sử dụng try-with-resources để quản lý tài nguyên tự động và điều chỉnh thu gom rác trong các ứng dụng Java chạy GroupDocs.Viewer.
+Khi tối ưu hiệu suất:
+- **Tối ưu sử dụng tài nguyên:** Stream các tệp thay vì tải toàn bộ tài liệu vào bộ nhớ.  
+- **Quản lý bộ nhớ Java:** Sử dụng try‑with‑resources (như trong ví dụ) để đảm bảo `Viewer` được đóng ngay, giảm áp lực lên heap.
 
-Việc tuân thủ các hướng dẫn này đảm bảo quá trình kết xuất tài liệu diễn ra nhanh hơn và mượt mà hơn.
+Áp dụng các thực tiễn này sẽ giúp chuyển đổi nhanh hơn và tiêu thụ ít bộ nhớ hơn, đặc biệt với các tệp DOCX lớn.
 
-## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách hiển thị tệp DOCX dưới dạng HTML với các tài nguyên bên ngoài bằng GroupDocs.Viewer for Java. Bằng cách làm theo các bước được nêu và các biện pháp thực hành tốt nhất, bạn có thể đạt được chuyển đổi tài liệu hiệu quả, duy trì tất cả các tài sản cần thiết.
+## Kết luận
+Trong hướng dẫn này, bạn đã học cách **convert docx to html** với tài nguyên bên ngoài bằng GroupDocs.Viewer cho Java. Khi tuân thủ các bước và thực tiễn tốt nhất, bạn có thể tạo ra đầu ra HTML chất lượng cao, giữ nguyên mọi hình ảnh, kiểu dáng và phông chữ từ tài liệu Word gốc.
 
-Để khám phá thêm, hãy cân nhắc tích hợp giải pháp này vào ứng dụng web hoặc nền tảng CMS của bạn. Hãy thử triển khai các khái niệm này trong một dự án của riêng bạn để xem chúng cải thiện quản lý và trình bày tài liệu như thế nào.
+Để khám phá sâu hơn, hãy cân nhắc tích hợp giải pháp này vào các ứng dụng web hoặc nền tảng CMS của bạn. Thử áp dụng các khái niệm này trong dự án thực tế để thấy cách chúng nâng cao quản lý và trình bày tài liệu.
 
-## Phần Câu hỏi thường gặp
-1. **Tôi phải xử lý các tệp DOCX lớn như thế nào?**
-   - Tối ưu hóa việc sử dụng bộ nhớ bằng cách xử lý tài liệu thành nhiều phần khi có thể.
-2. **GroupDocs.Viewer có thể xử lý các định dạng tệp khác không?**
-   - Có, nó hỗ trợ nhiều định dạng như PDF, XPS và hình ảnh.
-3. **Có những tùy chọn cấp phép nào cho GroupDocs.Viewer?**
-   - Các tùy chọn bao gồm dùng thử miễn phí, giấy phép tạm thời và giấy phép mua đầy đủ.
-4. **Làm thế nào để khắc phục sự cố liên kết tài nguyên bị hỏng trong đầu ra HTML?**
-   - Đảm bảo đường dẫn tệp và mẫu URL của bạn khớp chính xác với các tệp đã tạo.
-5. **Có thể tùy chỉnh cách hiển thị tài nguyên không?**
-   - Có, sử dụng các cấu hình khác nhau trong `HtmlViewOptions` để điều chỉnh quá trình kết xuất.
+## Phần FAQ
+1. **Làm sao xử lý các tệp DOCX lớn?**  
+   - Tối ưu việc sử dụng bộ nhớ bằng cách xử lý tài liệu theo từng phần khi có thể.  
+2. **GroupDocs.Viewer có hỗ trợ các định dạng tệp khác không?**  
+   - Có, nó hỗ trợ nhiều định dạng như PDF, XPS và các loại hình ảnh.  
+3. **Các tùy chọn giấy phép cho GroupDocs.Viewer là gì?**  
+   - Bao gồm dùng thử miễn phí, giấy phép tạm thời và mua giấy phép đầy đủ.  
+4. **Làm sao khắc phục các liên kết tài nguyên bị hỏng trong HTML đầu ra?**  
+   - Đảm bảo đường dẫn tệp và mẫu URL khớp chính xác với các tệp đã tạo.  
+5. **Có thể tùy chỉnh cách tài nguyên được render không?**  
+   - Có, sử dụng các cấu hình khác nhau trong `HtmlViewOptions` để điều chỉnh quá trình render.
+
+## Các câu hỏi thường gặp
+
+**H: Có thể trích xuất hình ảnh từ docx mà không chuyển đổi toàn bộ tài liệu không?**  
+Đ: Có. Chế độ external‑resources lưu mỗi hình ảnh dưới dạng tệp riêng, bạn có thể sử dụng chúng độc lập.
+
+**H: Quá trình chuyển đổi có giữ lại phông chữ tùy chỉnh không?**  
+Đ: GroupDocs.Viewer nhúng thông tin phông chữ khi có thể; nếu không, nó sẽ chuyển sang các phông chữ web‑safe.
+
+**H: HTML được tạo ra có đáp ứng (responsive) không?**  
+Đ: HTML phản ánh bố cục gốc; bạn có thể thêm CSS riêng để làm cho nó đáp ứng.
+
+**H: Yêu cầu phiên bản Java nào?**  
+Đ: Hỗ trợ Java 8 trở lên; khuyến nghị sử dụng phiên bản LTS mới nhất.
+
+**H: Làm sao tích hợp đầu ra với ứng dụng Spring Boot?**  
+Đ: Đặt thư mục HTML và tài nguyên đã tạo vào `resources/static` của Spring để phục vụ dưới dạng nội dung tĩnh.
 
 ## Tài nguyên
-- **Tài liệu:** [Tài liệu Java của GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Tài liệu tham khảo API:** [Tài liệu tham khảo API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Tải xuống:** [Tải xuống GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Giấy phép mua hàng:** [Mua giấy phép GroupDocs](https://purchase.groupdocs.com/buy)
-- **Dùng thử miễn phí:** [Dùng thử miễn phí GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Giấy phép tạm thời:** [Giấy phép tạm thời của GroupDocs](https://purchase.groupdocs.com/temporary-license/)
-- **Diễn đàn hỗ trợ:** [Hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Tài liệu:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Tham chiếu API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Tải xuống:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Mua giấy phép:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Dùng thử miễn phí:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Giấy phép tạm thời:** [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Diễn đàn hỗ trợ:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
 
-Bằng cách làm theo hướng dẫn này, giờ đây bạn đã có thể kết xuất tài liệu DOCX dưới dạng HTML với tất cả các tài nguyên bên ngoài bằng GroupDocs.Viewer for Java một cách hiệu quả. Chúc bạn viết mã vui vẻ!
+Bằng cách làm theo hướng dẫn này, bạn đã sẵn sàng **convert docx to html** với tất cả các tài nguyên bên ngoài bằng GroupDocs.Viewer cho Java. Chúc bạn lập trình vui vẻ!
+
+---
+
+**Cập nhật lần cuối:** 2026-01-13  
+**Đã kiểm tra với:** GroupDocs.Viewer 25.2  
+**Tác giả:** GroupDocs  
+
+---
