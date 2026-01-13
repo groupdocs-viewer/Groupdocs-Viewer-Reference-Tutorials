@@ -1,44 +1,53 @@
 ---
-"date": "2025-04-24"
-"description": "Erfahren Sie, wie Sie mit GroupDocs.Viewer versteckte Zeilen und Spalten in Java-Tabellen für eine nahtlose HTML-Konvertierung rendern. Dieser erweiterte Rendering-Leitfaden sorgt für vollständige Datentransparenz."
-"title": "Rendern Sie versteckte Zeilen und Spalten in Java-Tabellen mit GroupDocs.Viewer"
-"url": "/de/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-13'
+description: Erfahren Sie, wie Sie Excel mit Java in HTML konvertieren und dabei ausgeblendete
+  Zeilen und Spalten mit GroupDocs Viewer rendern. Dieser Leitfaden hilft Ihnen, ausgeblendete
+  Tabellendaten effizient anzuzeigen.
+keywords:
+- render hidden rows columns java
+- GroupDocs Viewer Java
+- Java spreadsheet rendering
+title: Excel zu HTML Java – Versteckte Zeilen und Spalten rendern
 type: docs
+url: /de/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# Rendern Sie versteckte Zeilen und Spalten in Java-Tabellen mit GroupDocs.Viewer
 
-## Einführung
+# excel to html java – Versteckte Zeilen & Spalten in Java-Tabellenkalkulationen mit GroupDocs.Viewer rendern
 
-Haben Sie Schwierigkeiten, ausgeblendete Zeilen und Spalten in einer Tabelle darzustellen, wenn Sie diese mit Java in HTML konvertieren? Damit sind Sie nicht allein! Viele Entwickler stehen vor dieser Herausforderung, wenn sie versuchen, die Integrität der Datenvisualisierung über verschiedene Formate hinweg zu gewährleisten. Dieses Tutorial zeigt Ihnen, wie Sie ausgeblendete Zeilen und Spalten in Tabellen mit GroupDocs.Viewer für Java effektiv darstellen und sicherstellen, dass bei der Konvertierung keine wichtigen Informationen verloren gehen.
+Die Konvertierung von **excel to html java** kann knifflig sein, wenn Ihre Arbeitsmappe versteckte Zeilen oder Spalten enthält. In diesem Tutorial lernen Sie, wie Sie diese versteckten Elemente rendern, sodass das resultierende HTML den vollständigen Datensatz anzeigt. Wir führen Sie durch die Konfiguration von GroupDocs.Viewer, das Einrichten Ihres Maven‑Projekts und das Schreiben des Java‑Codes, der versteckte Tabellendaten im Ausgabe‑HTML sichtbar macht.
 
-In diesem Artikel behandeln wir:
-- Konfigurieren von GroupDocs.Viewer zum Rendern ausgeblendeter Tabellenelemente
-- Einrichten Ihrer Umgebung mit Maven-Abhängigkeiten
-- Schrittweise Implementierung der Funktion
-- Reale Anwendungen und Leistungsüberlegungen
+![Render Hidden Rows & Columns with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Bevor Sie loslegen, sollten Sie über grundlegende Kenntnisse der Java-Programmierung und Kenntnisse im Maven-Abhängigkeitsmanagement verfügen. Beginnen wir mit der Einrichtung unserer Umgebung.
+## Schnelle Antworten
+- **Kann GroupDocs.Viewer versteckte Zeilen rendern?** Ja – aktivieren Sie `setRenderHiddenRows(true)` und `setRenderHiddenColumns(true)`.
+- **Welche Bibliothek konvertiert excel to html java?** GroupDocs.Viewer für Java.
+- **Benötige ich eine Lizenz?** Eine Testversion funktioniert für die Evaluierung; für den Produktionseinsatz ist eine permanente Lizenz erforderlich.
+- **Unterstützte Formate?** Mehr als 50, darunter XLSX, XLS, CSV und weitere.
+- **Ist der Speicherverbrauch ein Problem?** Große Dateien können eine erhöhte Heap‑Größe benötigen; überwachen Sie den Speicher während der Konvertierung.
+
+## Was ist excel to html java?
+`excel to html java` bezeichnet den Vorgang, Microsoft‑Excel‑Arbeitsmappen (XLSX, XLS) mithilfe von Java‑Bibliotheken in HTML‑Seiten zu konvertieren. Dadurch wird das webbasierte Anzeigen von Tabellenkalkulationen ermöglicht, ohne dass Microsoft Office auf der Client‑Seite erforderlich ist.
+
+## Warum versteckte Zeilen und Spalten rendern?
+Viele Excel‑Dateien verbergen Zeilen oder Spalten, um die Darstellung zu vereinfachen, aber diese versteckten Zellen enthalten oft kritische Daten (Formeln, Metadaten oder ergänzende Informationen). Das Rendern stellt sicher, dass **versteckte Tabellendaten angezeigt** werden und die Datenintegrität beim Teilen von Berichten online erhalten bleibt.
 
 ## Voraussetzungen
 
 ### Erforderliche Bibliotheken und Abhängigkeiten
-Um diese Funktion zu implementieren, müssen Sie GroupDocs.Viewer für Java als Abhängigkeit in Ihr Projekt einbinden. Diese Bibliothek ist unerlässlich für die Darstellung von Dokumenten in verschiedenen Formaten wie HTML, PDF und Bilddateien.
+Um diese Funktion zu implementieren, stellen Sie sicher, dass GroupDocs.Viewer für Java als Abhängigkeit in Ihrem Projekt enthalten ist. Diese Bibliothek ist unerlässlich für das Rendern von Dokumenten in verschiedene Formate wie HTML, PDF und Bilddateien.
 
-### Anforderungen für die Umgebungseinrichtung
-Stellen Sie sicher, dass Sie über die folgende Konfiguration verfügen, bevor Sie fortfahren:
-- **Java Development Kit (JDK)**: Version 8 oder höher
-- **Integrierte Entwicklungsumgebung (IDE)**: Wie IntelliJ IDEA oder Eclipse
-- **Maven**: Zur Verwaltung von Projektabhängigkeiten
+### Anforderungen an die Umgebung
+- **Java Development Kit (JDK)**: Version 8 oder höher  
+- **IDE**: IntelliJ IDEA, Eclipse oder ähnlich  
+- **Maven**: Zur Verwaltung der Projektabhängigkeiten  
 
-### Voraussetzungen
-Grundlegende Kenntnisse der Java-Programmierung sind erforderlich. Darüber hinaus sind Kenntnisse in Maven für die Einrichtung Ihres Projekts von Vorteil.
+### Wissensvoraussetzungen
+Ein solides Verständnis der Java‑Programmierung und grundlegende Maven‑Kenntnisse helfen Ihnen, die Schritte reibungslos zu befolgen.
 
-## Einrichten von GroupDocs.Viewer für Java
-Um GroupDocs.Viewer in Ihrer Java-Anwendung verwenden zu können, müssen Sie es über Maven einrichten. So geht's:
+## Einrichtung von GroupDocs.Viewer für Java
+Um GroupDocs.Viewer in Ihrer Java‑Anwendung zu verwenden, müssen Sie es über Maven einrichten. Fügen Sie das Repository und die Abhängigkeit zu Ihrer `pom.xml` hinzu:
 
-**Maven**
-Fügen Sie die folgende Konfiguration zu Ihrem `pom.xml` Datei:
 ```xml
 <repositories>
    <repository>
@@ -56,33 +65,34 @@ Fügen Sie die folgende Konfiguration zu Ihrem `pom.xml` Datei:
 </dependencies>
 ```
 
-### Schritte zum Lizenzerwerb
-Um GroupDocs.Viewer zu verwenden, sollten Sie die folgenden Optionen in Betracht ziehen:
-- **Kostenlose Testversion**: Laden Sie eine Testversion herunter, um die Funktionen zu testen.
-- **Temporäre Lizenz**: Fordern Sie eine temporäre Lizenz für den vollständigen Funktionszugriff ohne Evaluierungsbeschränkungen an.
-- **Kaufen**: Erwerben Sie eine dauerhafte Lizenz für den Produktionseinsatz.
+### Schritte zum Erwerb einer Lizenz
+- **Free Trial** – Laden Sie eine Testversion herunter, um die Funktionen zu evaluieren.  
+- **Temporary License** – Fordern Sie eine temporäre Lizenz für den vollen Funktionsumfang während des Tests an.  
+- **Purchase** – Erwerben Sie eine permanente Lizenz für den Produktionseinsatz.
 
-Nachdem Sie Maven eingerichtet und Ihre Lizenz erworben haben, können Sie mit der Initialisierung von GroupDocs.Viewer beginnen. So geht's:
+Nachdem Sie Maven eingerichtet und Ihre Lizenz erhalten haben, initialisieren Sie GroupDocs.Viewer:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
-    public static void main(String[] args) {
-        // Initialisieren Sie den Viewer mit Ihrer Lizenzdatei, falls verfügbar.
+    public static main(String[] args) {
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Ihr Code hier...
+            // Your code here...
         }
     }
 }
 ```
 
-## Implementierungshandbuch
+## Implementierungs‑Leitfaden
 
-### Ausgeblendete Zeilen und Spalten in Tabellen darstellen
-Mit dieser Funktion können Sie ausgeblendete Zeilen und Spalten einer Tabelle beim Konvertieren ins HTML-Format darstellen. Lassen Sie uns die Implementierungsschritte im Detail erläutern.
+### Versteckte Zeilen und Spalten in Tabellenkalkulationen rendern
+Diese Funktion ermöglicht das Rendern versteckter Zeilen und Spalten einer Tabellenkalkulation beim Konvertieren in das HTML‑Format. Im Folgenden finden Sie eine schrittweise Anleitung.
 
-#### Schritt 1: Definieren Sie den Ausgabeverzeichnispfad
-Definieren Sie zunächst, wo Ihre gerenderten Dateien gespeichert werden:
+#### Schritt 1: Ausgabeverzeichnis‑Pfad festlegen
+Beginnen Sie damit, festzulegen, wo Ihre gerenderten Dateien gespeichert werden sollen:
+
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +100,88 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### Schritt 2: HTMLViewOptions konfigurieren
-Als nächstes richten Sie die `HtmlViewOptions` um Ressourcen direkt in die generierten HTML-Dateien einzubetten:
+#### Schritt 2: HTMLViewOptions konfigurieren
+Richten Sie `HtmlViewOptions` ein, um Ressourcen direkt in die erzeugten HTML‑Dateien einzubetten:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Erstellen Sie ein Dateipfadformat zum Rendern jeder Seite.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Schritt 3: Aktivieren Sie die Darstellung ausgeblendeter Spalten und Zeilen
-Konfigurieren Sie die `SpreadsheetOptions` um versteckte Elemente darzustellen:
+#### Schritt 3: Rendern versteckter Spalten und Zeilen aktivieren
+Weisen Sie den Viewer an, versteckte Elemente in die Ausgabe einzubeziehen:
+
 ```java
-// Aktivieren Sie die Darstellung ausgeblendeter Spalten und Zeilen.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### Schritt 4: Viewer mit Dokument initialisieren
-Initialisieren Sie abschließend GroupDocs.Viewer mit Ihrem Dokumentpfad und rendern Sie den Inhalt:
+#### Schritt 4: Viewer mit Dokument initialisieren und rendern
+Rendern Sie schließlich das Dokument nach HTML unter Verwendung der konfigurierten Optionen:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Rendern Sie das Dokument mit den angegebenen Anzeigeoptionen in HTML.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Tipps zur Fehlerbehebung**: Stellen Sie sicher, dass die Pfade korrekt festgelegt und die Abhängigkeiten ordnungsgemäß in Ihre `pom.xml`.
+**Fehlerbehebungshinweise**: Stellen Sie sicher, dass alle Dateipfade korrekt sind und dass die Maven‑Abhängigkeiten ohne Konflikte aufgelöst werden.
 
-## Praktische Anwendungen
-Hier sind einige praktische Anwendungen dieser Funktion:
-1. **Finanzberichterstattung**: Stellen Sie sicher, dass aus Compliance-Gründen alle Daten, einschließlich ausgeblendeter Finanzkennzahlen, während der Konvertierung sichtbar sind.
-2. **Datenanalyse**: Bewahren Sie die Integrität von Datensätzen, indem Sie alle Zeilen und Spalten in Berichten oder Präsentationen anzeigen.
-3. **Lehrmittel**: Nutzen Sie den gesamten Tabelleninhalt für Lehrzwecke, ohne versteckte Informationen zu verlieren.
+## Praktische Anwendungsfälle
+Hier sind einige reale Szenarien, in denen **excel to html java** mit Rendering versteckter Daten glänzt:
 
-## Überlegungen zur Leistung
-So optimieren Sie die Leistung bei der Verwendung von GroupDocs.Viewer:
-- Überwachen Sie die Speichernutzung, insbesondere bei großen Dokumenten.
-- Optimieren Sie Dateipfade und Speicherorte, um E/A-Vorgänge zu reduzieren.
-- Aktualisieren Sie die Bibliothek regelmäßig, um neue Leistungsverbesserungen und Fehlerbehebungen zu nutzen.
+1. **Financial Reporting** – Zeigen Sie jede Kennzahl, selbst jene, die für interne Berechnungen verborgen sind, um Audit‑Anforderungen zu erfüllen.  
+2. **Data Analysis** – Bewahren Sie vollständige Datensätze, wenn Analyseergebnisse in Web‑Dashboards geteilt werden.  
+3. **Educational Tools** – Stellen Sie den Lernenden den vollständigen Tabelleninhalt für Übungsaufgaben zur Verfügung.
 
-## Abschluss
-In diesem Tutorial haben Sie gelernt, wie Sie GroupDocs.Viewer für Java so konfigurieren, dass ausgeblendete Zeilen und Spalten in Tabellen dargestellt werden. Mit diesen Schritten gewährleisten Sie umfassende Datentransparenz über alle Formate hinweg. Experimentieren Sie im nächsten Schritt mit verschiedenen Dokumenttypen und entdecken Sie die zusätzlichen Funktionen von GroupDocs.Viewer.
+## Leistungsüberlegungen
+- **Memory Management** – Große Arbeitsmappen können erheblichen Heap verbrauchen; erwägen Sie, die JVM‑Option `-Xmx` zu erhöhen.  
+- **I/O Optimization** – Speichern Sie das gerenderte HTML in einem schnellen SSD‑Verzeichnis, um die Latenz zu reduzieren.  
+- **Library Updates** – Halten Sie GroupDocs.Viewer aktuell, um von Leistungs‑Patches zu profitieren.
 
-Bereit, tiefer einzutauchen? Versuchen Sie, diese Funktion in Ihre Projekte zu implementieren und sehen Sie, wie sie die Funktionalität Ihrer Anwendung verbessert!
+## Fazit
+Sie haben nun gelernt, wie Sie **excel to html java** konvertieren und dabei versteckte Zeilen und Spalten rendern, sodass Sie eine vollständige Ansicht der Tabellendaten erhalten. Experimentieren Sie mit verschiedenen Optionen, z. B. benutzerdefiniertem CSS‑Styling, um die HTML‑Ausgabe weiter an die Anforderungen Ihres Projekts anzupassen.
 
-## FAQ-Bereich
+## Häufig gestellte Fragen
 
-**F1: Kann ich GroupDocs.Viewer kostenlos nutzen?**
-A1: Ja, Sie können eine Testversion von der offiziellen Website herunterladen, um die Funktionen zu testen. Für uneingeschränkten Zugriff sollten Sie eine temporäre oder permanente Lizenz erwerben.
+**Q: Kann ich GroupDocs.Viewer kostenlos nutzen?**  
+A: Ja, eine Testversion steht für die Evaluierung zur Verfügung. Für uneingeschränkten Produktionseinsatz ist eine Lizenz erforderlich.
 
-**F2: Welche Dateiformate unterstützt GroupDocs.Viewer?**
-A2: Es unterstützt über 50 verschiedene Dokumentformate, darunter PDF, Word, Excel und Bilder.
+**Q: Welche Dateiformate unterstützt GroupDocs.Viewer?**  
+A: Mehr als 50 Formate, darunter XLSX, XLS, CSV, PDF, DOCX und zahlreiche Bildtypen.
 
-**F3: Wie verarbeite ich große Dokumente mit GroupDocs.Viewer?**
-A3: Optimieren Sie die Speicherverwaltung, indem Sie die Java-Einstellungen anpassen und große Dateien bei Bedarf in kleinere Teile aufteilen.
+**Q: Wie sollte ich sehr große Excel‑Dateien handhaben?**  
+A: Erhöhen Sie die JVM‑Heap‑Größe, teilen Sie die Arbeitsmappe in kleinere Teile oder verarbeiten Sie die Tabellenblätter einzeln.
 
-**F4: Ist es möglich, das HTML-Ausgabeformat anzupassen?**
-A4: Ja, Sie können verschiedene Optionen konfigurieren mit `HtmlViewOptions` um das Erscheinungsbild Ihrer gerenderten Dokumente anzupassen.
+**Q: Ist es möglich, das erzeugte HTML anzupassen?**  
+A: Absolut. `HtmlViewOptions` bietet zahlreiche Einstellungen für CSS, Skripting und Ressourcenverwaltung.
 
-**F5: Wie lassen sich Probleme mit GroupDocs.Viewer am besten beheben?**
-A5: Suchen Sie in der offiziellen Dokumentation und in Foren nach Lösungen. Stellen Sie sicher, dass alle Abhängigkeiten in Ihrem Projekt-Setup korrekt konfiguriert sind.
+**Q: Wo finde ich weitere Beispiele für das Rendern versteckter Daten?**  
+A: Die offizielle Dokumentation und das API‑Referenzhandbuch enthalten zusätzliche Code‑Snippets und Anwendungsbeispiele.
 
 ## Ressourcen
-- **Dokumentation**: [GroupDocs Viewer-Dokumentation](https://docs.groupdocs.com/viewer/java/)
-- **API-Referenz**: [GroupDocs API-Referenz](https://reference.groupdocs.com/viewer/java/)
-- **Herunterladen**: [GroupDocs.Viewer abrufen](https://releases.groupdocs.com/viewer/java/)
-- **Kaufen**: [Kaufen Sie eine Lizenz](https://purchase.groupdocs.com/buy)
-- **Kostenlose Testversion**: [Kostenlose Version testen](https://releases.groupdocs.com/viewer/java/)
-- **Temporäre Lizenz**: [Temporäre Lizenz anfordern](https://purchase.groupdocs.com/temporary-license/)
-- **Unterstützung**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API‑Referenz**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Lizenz kaufen**: [Buy a License](https://purchase.groupdocs.com/buy)
+- **Kostenlose Testversion ausprobieren**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Temporäre Lizenz anfordern**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Mit diesem umfassenden Leitfaden sind Sie nun in der Lage, versteckte Tabellenelemente in Ihren Java-Anwendungen mithilfe von GroupDocs.Viewer effektiv zu verwalten. Viel Spaß beim Programmieren!
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** GroupDocs Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+---

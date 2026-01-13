@@ -1,44 +1,53 @@
 ---
-"date": "2025-04-24"
-"description": "Leer hoe u verborgen rijen en kolommen in Java-spreadsheets kunt renderen met GroupDocs.Viewer voor naadloze HTML-conversie. Zorg voor volledige zichtbaarheid van uw gegevens met deze geavanceerde renderinggids."
-"title": "Verborgen rijen en kolommen in Java-spreadsheets weergeven met GroupDocs.Viewer"
-"url": "/nl/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-13'
+description: Leer hoe je Excel naar HTML Java kunt converteren terwijl je verborgen
+  rijen en kolommen rendert met GroupDocs Viewer. Deze gids helpt je om verborgen
+  spreadsheetgegevens efficiënt te bekijken.
+keywords:
+- render hidden rows columns java
+- GroupDocs Viewer Java
+- Java spreadsheet rendering
+title: excel naar html java – Render verborgen rijen en kolommen
 type: docs
+url: /nl/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# Verborgen rijen en kolommen in Java-spreadsheets weergeven met GroupDocs.Viewer
 
-## Invoering
+# excel to html java – Render Verborgen Rijen & Kolommen in Java Spreadsheets met GroupDocs.Viewer
 
-Heb je moeite met het visualiseren van verborgen rijen en kolommen in een spreadsheet bij het converteren naar HTML met behulp van Java? Je bent niet de enige! Veel ontwikkelaars kampen met deze uitdaging terwijl ze de integriteit van datavisualisatie in verschillende formaten proberen te behouden. Deze tutorial laat je zien hoe je verborgen rijen en kolommen in spreadsheets effectief kunt weergeven met GroupDocs.Viewer voor Java, zodat er geen belangrijke informatie verloren gaat tijdens de conversie.
+Het converteren van **excel to html java** kan lastig zijn wanneer uw werkmap verborgen rijen of kolommen bevat. In deze tutorial leert u hoe u die verborgen elementen kunt renderen zodat de resulterende HTML de volledige dataset toont. We lopen door het configureren van GroupDocs.Viewer, het opzetten van uw Maven‑project en het schrijven van de Java‑code die verborgen spreadsheet‑gegevens zichtbaar maakt in de output.
 
-In dit artikel bespreken we:
-- GroupDocs.Viewer configureren voor het weergeven van verborgen spreadsheetelementen
-- Uw omgeving instellen met Maven-afhankelijkheden
-- Stapsgewijze implementatie van de functie
-- Toepassingen in de praktijk en prestatieoverwegingen
+![Render Verborgen Rijen & Kolommen met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Voordat je aan de slag gaat, zorg ervoor dat je een basiskennis van Java-programmering hebt en enige bekendheid met Maven-afhankelijkheidsbeheer. Laten we beginnen met het opzetten van onze omgeving.
+## Quick Answers
+- **Kan GroupDocs.Viewer verborgen rijen renderen?** Ja – schakel `setRenderHiddenRows(true)` en `setRenderHiddenColumns(true)` in.  
+- **Welke bibliotheek converteert excel to html java?** GroupDocs.Viewer for Java.  
+- **Heb ik een licentie nodig?** Een proefversie werkt voor evaluatie; een permanente licentie is vereist voor productie.  
+- **Ondersteunde formaten?** Meer dan 50, waaronder XLSX, XLS, CSV en meer.  
+- **Is geheugengebruik een zorg?** Grote bestanden kunnen een vergrote heap‑grootte nodig hebben; houd het geheugen tijdens conversie in de gaten.
 
-## Vereisten
+## Wat is excel to html java?
+`excel to html java` verwijst naar het proces van het converteren van Microsoft Excel‑werkboeken (XLSX, XLS) naar HTML‑pagina's met behulp van Java‑bibliotheken. Dit maakt webgebaseerd bekijken van spreadsheets mogelijk zonder dat Microsoft Office aan de clientzijde nodig is.
 
-### Vereiste bibliotheken en afhankelijkheden
-Om deze functie te implementeren, moet u GroupDocs.Viewer voor Java als afhankelijkheid in uw project opnemen. Deze bibliotheek is essentieel voor het renderen van documenten in verschillende formaten, zoals HTML, PDF en afbeeldingsbestanden.
+## Waarom renderen van verborgen rijen en kolommen?
+Veel Excel‑bestanden verbergen rijen of kolommen om de presentatie te vereenvoudigen, maar die verborgen cellen bevatten vaak kritieke gegevens (formules, metadata of aanvullende informatie). Het renderen ervan zorgt ervoor dat **verborgen spreadsheet‑gegevens worden bekeken** en behoudt de gegevensintegriteit bij het online delen van rapporten.
 
-### Vereisten voor omgevingsinstellingen
-Zorg ervoor dat u de volgende instellingen hebt voordat u verdergaat:
-- **Java-ontwikkelingskit (JDK)**: Versie 8 of later
-- **Geïntegreerde ontwikkelomgeving (IDE)**: Zoals IntelliJ IDEA of Eclipse
-- **Maven**: Voor het beheren van projectafhankelijkheden
+## Prerequisites
+
+### Vereiste Bibliotheken en Afhankelijkheden
+Om deze functie te implementeren, moet u GroupDocs.Viewer for Java opnemen als een afhankelijkheid in uw project. Deze bibliotheek is essentieel voor het renderen van documenten naar verschillende formaten zoals HTML, PDF en afbeeldingsbestanden.
+
+### Omgevingsinstellingen Vereisten
+- **Java Development Kit (JDK)**: Versie 8 of hoger  
+- **IDE**: IntelliJ IDEA, Eclipse of vergelijkbaar  
+- **Maven**: Voor het beheren van projectafhankelijkheden  
 
 ### Kennisvereisten
-Een basiskennis van Java-programmering is noodzakelijk. Daarnaast is kennis van Maven nuttig bij het opzetten van je project.
+Een stevige kennis van Java‑programmeren en basisgebruik van Maven helpt u de stappen soepel te volgen.
 
-## GroupDocs.Viewer instellen voor Java
-Om GroupDocs.Viewer in uw Java-applicatie te gebruiken, moet u het via Maven instellen. Zo werkt het:
+## Setting Up GroupDocs.Viewer for Java
+Om GroupDocs.Viewer in uw Java‑applicatie te gebruiken, moet u het via Maven instellen. Voeg de repository en afhankelijkheid toe aan uw `pom.xml`:
 
-**Maven**
-Voeg de volgende configuratie toe aan uw `pom.xml` bestand:
 ```xml
 <repositories>
    <repository>
@@ -56,33 +65,34 @@ Voeg de volgende configuratie toe aan uw `pom.xml` bestand:
 </dependencies>
 ```
 
-### Stappen voor het verkrijgen van een licentie
-Om GroupDocs.Viewer te gebruiken, kunt u de volgende opties overwegen:
-- **Gratis proefperiode**: Download een proefversie om de functies te evalueren.
-- **Tijdelijke licentie**: Vraag een tijdelijke licentie aan voor volledige toegang tot de functies zonder evaluatiebeperkingen.
-- **Aankoop**: Verkrijg een permanente licentie voor productiegebruik.
+### Stappen voor Licentie‑verwerving
+- **Gratis proefversie** – Download een proefversie om de functies te evalueren.  
+- **Tijdelijke licentie** – Vraag een tijdelijke licentie aan voor volledige functionaliteit tijdens testen.  
+- **Aankoop** – Verkrijg een permanente licentie voor productiegebruik.
 
-Nadat u Maven hebt geïnstalleerd en uw licentie hebt aangeschaft, kunt u GroupDocs.Viewer initialiseren. Zo doet u dat:
+Na het instellen van Maven en het verkrijgen van uw licentie, initialiseert u GroupDocs.Viewer:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
-    public static void main(String[] args) {
-        // Initialiseer de viewer met uw licentiebestand, indien beschikbaar.
+    public static main(String[] args) {
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Uw code hier...
+            // Your code here...
         }
     }
 }
 ```
 
-## Implementatiegids
+## Implementation Guide
 
-### Verborgen rijen en kolommen in spreadsheets weergeven
-Met deze functie kunt u verborgen rijen en kolommen van een spreadsheet weergeven wanneer u deze converteert naar HTML-formaat. Laten we de implementatiestappen eens bekijken.
+### Render Verborgen Rijen en Kolommen in Spreadsheets
+Deze functie maakt het mogelijk om verborgen rijen en kolommen van een spreadsheet te renderen bij het converteren naar HTML‑formaat. Hieronder vindt u een stap‑voor‑stap walkthrough.
 
-#### Stap 1: Definieer het pad van de uitvoerdirectory
-Begin met het definiëren waar uw gerenderde bestanden worden opgeslagen:
+#### Stap 1: Definieer Uitvoermappad
+Start door te definiëren waar uw gerenderde bestanden worden opgeslagen:
+
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +100,86 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### Stap 2: HTMLViewOptions configureren
-Stel vervolgens de `HtmlViewOptions` om bronnen rechtstreeks in de gegenereerde HTML-bestanden in te sluiten:
+#### Stap 2: Configureer HTMLViewOptions
+Stel `HtmlViewOptions` in om bronnen direct in de gegenereerde HTML‑bestanden te embedden:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Maak een bestandspadindeling voor het renderen van elke pagina.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Stap 3: Weergave van verborgen kolommen en rijen inschakelen
-Configureer de `SpreadsheetOptions` om verborgen elementen weer te geven:
+#### Stap 3: Schakel Rendering van Verborgen Kolommen en Rijen In
+Geef de viewer opdracht om verborgen elementen op te nemen in de output:
+
 ```java
-// Weergave van verborgen kolommen en rijen inschakelen.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### Stap 4: Viewer initialiseren met document
-Initialiseer ten slotte GroupDocs.Viewer met uw documentpad en render de inhoud:
+#### Stap 4: Initialiseert Viewer met Document en Render
+Render ten slotte het document naar HTML met behulp van de geconfigureerde opties:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Render het document naar HTML met behulp van de opgegeven weergaveopties.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Tips voor probleemoplossing**: Zorg ervoor dat paden correct zijn ingesteld en dat afhankelijkheden correct zijn opgenomen in uw `pom.xml`.
+**Troubleshooting Tips**: Controleer of alle bestandspaden correct zijn en of de Maven‑afhankelijkheden zonder conflicten zijn opgelost.
 
-## Praktische toepassingen
-Hier zijn enkele praktische toepassingen van deze functie:
-1. **Financiële verslaggeving**: Zorg ervoor dat alle gegevens, inclusief verborgen financiële statistieken, zichtbaar zijn tijdens de conversie ten behoeve van de naleving.
-2. **Gegevensanalyse**: Behoud de integriteit van datasets door alle rijen en kolommen in rapporten of presentaties weer te geven.
-3. **Educatieve hulpmiddelen**: Gebruik de volledige inhoud van een spreadsheet voor onderwijsdoeleinden zonder dat verborgen informatie verloren gaat.
+## Practical Applications
+Hier zijn enkele praktijkscenario's waarin **excel to html java** met het renderen van verborgen gegevens uitblinkt:
 
-## Prestatieoverwegingen
-Om de prestaties bij het gebruik van GroupDocs.Viewer te optimaliseren:
-- Houd het geheugengebruik in de gaten, vooral bij grote documenten.
-- Optimaliseer bestandspaden en opslaglocaties om I/O-bewerkingen te verminderen.
-- Werk de bibliotheek regelmatig bij om te profiteren van nieuwe prestatieverbeteringen en bugfixes.
+1. **Financiële Rapportage** – Toon elke metriek, zelfs diegene die verborgen zijn voor interne berekeningen, om te voldoen aan audit‑vereisten.  
+2. **Data‑analyse** – Behoud volledige datasets bij het delen van analyse‑resultaten in web‑dashboards.  
+3. **Educatieve Tools** – Bied studenten volledige spreadsheet‑inhoud voor leeroefeningen.
 
-## Conclusie
-In deze tutorial heb je geleerd hoe je GroupDocs.Viewer voor Java configureert om verborgen rijen en kolommen in spreadsheets weer te geven. Door deze stappen te volgen, zorg je voor volledige zichtbaarheid van gegevens in verschillende formaten. Experimenteer vervolgens met verschillende documenttypen en ontdek de extra functies van GroupDocs.Viewer.
+## Performance Considerations
+- **Geheugenbeheer** – Grote werkboeken kunnen aanzienlijke heap verbruiken; overweeg de JVM‑`-Xmx`‑instelling te verhogen.  
+- **I/O‑optimalisatie** – Sla gerenderde HTML op in een snelle SSD‑map om latentie te verminderen.  
+- **Bibliotheek‑updates** – Houd GroupDocs.Viewer up‑to‑date om te profiteren van prestatie‑patches.
 
-Klaar om er dieper in te duiken? Probeer deze functie in je projecten te implementeren en zie hoe het de functionaliteit van je applicatie verbetert!
+## Conclusion
+U heeft nu onder de knie hoe u **excel to html java** kunt converteren terwijl verborgen rijen en kolommen worden gerenderd, waardoor u een volledig overzicht van spreadsheet‑gegevens krijgt. Experimenteer met verschillende opties, zoals aangepaste CSS‑styling, om de HTML‑output verder af te stemmen op de behoeften van uw project.
 
-## FAQ-sectie
+## Frequently Asked Questions
 
-**V1: Kan ik GroupDocs.Viewer gratis gebruiken?**
-A1: Ja, je kunt een proefversie downloaden van de officiële website om de functies te verkennen. Voor volledige toegang zonder beperkingen kun je een tijdelijke of permanente licentie overwegen.
+**Q: Kan ik GroupDocs.Viewer gratis gebruiken?**  
+A: Ja, een proefversie is beschikbaar voor evaluatie. Voor onbeperkt productiegebruik is een licentie vereist.
 
-**V2: Welke bestandsindelingen ondersteunt GroupDocs.Viewer?**
-A2: Het ondersteunt meer dan 50 verschillende documentformaten, waaronder PDF, Word, Excel en afbeeldingen.
+**Q: Welke bestandsformaten ondersteunt GroupDocs.Viewer?**  
+A: Meer dan 50 formaten, waaronder XLSX, XLS, CSV, PDF, DOCX en vele afbeeldingsformaten.
 
-**V3: Hoe werk ik met grote documenten met GroupDocs.Viewer?**
-A3: Optimaliseer het geheugenbeheer door Java-instellingen aan te passen en indien nodig grote bestanden op te splitsen in kleinere delen.
+**Q: Hoe moet ik omgaan met zeer grote Excel‑bestanden?**  
+A: Verhoog de JVM‑heap‑grootte, splits het werkboek in kleinere delen, of verwerk bladen afzonderlijk.
 
-**V4: Is het mogelijk om het HTML-uitvoerformaat aan te passen?**
-A4: Ja, u kunt verschillende opties configureren met `HtmlViewOptions` om het uiterlijk van uw gerenderde documenten aan te passen.
+**Q: Is het mogelijk om de gegenereerde HTML aan te passen?**  
+A: Absoluut. `HtmlViewOptions` biedt veel instellingen voor CSS, scripting en resource‑beheer.
 
-**V5: Wat is de beste manier om problemen met GroupDocs.Viewer op te lossen?**
-A5: Raadpleeg de officiële documentatie en forums voor oplossingen. Zorg ervoor dat alle afhankelijkheden correct zijn geconfigureerd in uw projectconfiguratie.
+**Q: Waar vind ik meer voorbeelden van het renderen van verborgen gegevens?**  
+A: De officiële documentatie en API‑referentie bevatten extra code‑fragmenten en use‑case‑gidsen.
 
-## Bronnen
-- **Documentatie**: [GroupDocs Viewer-documentatie](https://docs.groupdocs.com/viewer/java/)
-- **API-referentie**: [GroupDocs API-referentie](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [GroupDocs.Viewer ophalen](https://releases.groupdocs.com/viewer/java/)
-- **Aankoop**: [Koop een licentie](https://purchase.groupdocs.com/buy)
-- **Gratis proefperiode**: [Probeer de gratis versie](https://releases.groupdocs.com/viewer/java/)
-- **Tijdelijke licentie**: [Tijdelijke licentie aanvragen](https://purchase.groupdocs.com/temporary-license/)
-- **Steun**: [GroupDocs-forum](https://forum.groupdocs.com/c/viewer/9)
+## Resources
+- **Documentatie**: [GroupDocs Viewer Documentatie](https://docs.groupdocs.com/viewer/java/)
+- **API‑referentie**: [GroupDocs API Referentie](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Aankoop**: [Koop een Licentie](https://purchase.groupdocs.com/buy)
+- **Gratis proefversie**: [Probeer Gratis Versie](https://releases.groupdocs.com/viewer/java/)
+- **Tijdelijke licentie**: [Vraag Tijdelijke Licentie Aan](https://purchase.groupdocs.com/temporary-license/)
+- **Ondersteuning**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Met deze uitgebreide handleiding bent u nu in staat om verborgen spreadsheetelementen effectief te verwerken in uw Java-applicaties met GroupDocs.Viewer. Veel plezier met coderen!
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** GroupDocs Viewer 25.2 for Java  
+**Auteur:** GroupDocs

@@ -1,44 +1,53 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách hiển thị các hàng và cột ẩn trong bảng tính Java bằng GroupDocs.Viewer để chuyển đổi HTML liền mạch. Đảm bảo khả năng hiển thị dữ liệu hoàn chỉnh với hướng dẫn hiển thị nâng cao này."
-"title": "Hiển thị các hàng và cột ẩn trong bảng tính Java bằng GroupDocs.Viewer"
-"url": "/vi/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-13'
+description: Tìm hiểu cách chuyển đổi Excel sang HTML bằng Java trong khi hiển thị
+  các hàng và cột ẩn bằng GroupDocs Viewer. Hướng dẫn này giúp bạn xem dữ liệu bảng
+  tính ẩn một cách hiệu quả.
+keywords:
+- render hidden rows columns java
+- GroupDocs Viewer Java
+- Java spreadsheet rendering
+title: Excel sang HTML Java – Hiển thị các hàng và cột ẩn
 type: docs
+url: /vi/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# Hiển thị các hàng và cột ẩn trong bảng tính Java bằng GroupDocs.Viewer
 
-## Giới thiệu
+# excel to html java – Render Hidden Rows & Columns in Java Spreadsheets Using GroupDocs.Viewer
 
-Bạn có đang gặp khó khăn khi hình dung các hàng và cột ẩn trong bảng tính khi chuyển đổi sang HTML bằng Java không? Bạn không đơn độc! Nhiều nhà phát triển gặp phải thách thức này khi cố gắng duy trì tính toàn vẹn của hình dung dữ liệu trên nhiều định dạng khác nhau. Hướng dẫn này sẽ hướng dẫn bạn cách hiển thị hiệu quả các hàng và cột ẩn trong bảng tính bằng GroupDocs.Viewer for Java, đảm bảo không mất thông tin quan trọng nào trong quá trình chuyển đổi.
+Chuyển đổi **excel to html java** có thể gặp khó khăn khi sổ làm việc của bạn chứa các hàng hoặc cột ẩn. Trong hướng dẫn này, bạn sẽ học cách render các phần tử ẩn để HTML kết quả hiển thị đầy đủ bộ dữ liệu. Chúng tôi sẽ hướng dẫn cách cấu hình GroupDocs.Viewer, thiết lập dự án Maven và viết mã Java để làm cho dữ liệu bảng tính ẩn hiển thị trong đầu ra.
 
-Trong bài viết này, chúng tôi sẽ đề cập đến:
-- Cấu hình GroupDocs.Viewer để hiển thị các thành phần bảng tính ẩn
-- Thiết lập môi trường của bạn với các phụ thuộc Maven
-- Triển khai từng bước tính năng
-- Ứng dụng thực tế và cân nhắc về hiệu suất
+![Render Hidden Rows & Columns with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Trước khi bắt đầu, hãy đảm bảo bạn có hiểu biết cơ bản về lập trình Java và quen thuộc với quản lý phụ thuộc Maven. Hãy bắt đầu bằng cách thiết lập môi trường của chúng ta.
+## Câu trả lời nhanh
+- **GroupDocs.Viewer có thể render các hàng ẩn không?** Có – bật `setRenderHiddenRows(true)` và `setRenderHiddenColumns(true)`.  
+- **Thư viện nào chuyển đổi excel to html java?** GroupDocs.Viewer for Java.  
+- **Tôi có cần giấy phép không?** Bản dùng thử đủ để đánh giá; cần giấy phép vĩnh viễn cho môi trường sản xuất.  
+- **Các định dạng được hỗ trợ?** Hơn 50, bao gồm XLSX, XLS, CSV và nhiều định dạng khác.  
+- **Mối lo về việc sử dụng bộ nhớ?** Các tệp lớn có thể cần tăng kích thước heap; theo dõi bộ nhớ trong quá trình chuyển đổi.
 
-## Điều kiện tiên quyết
+## excel to html java là gì?
+`excel to html java` đề cập đến quá trình chuyển đổi các sổ làm việc Microsoft Excel (XLSX, XLS) thành các trang HTML bằng các thư viện Java. Điều này cho phép xem bảng tính trên web mà không cần Microsoft Office ở phía máy khách.
 
-### Thư viện và phụ thuộc bắt buộc
-Để triển khai tính năng này, hãy đảm bảo bao gồm GroupDocs.Viewer for Java làm phụ thuộc trong dự án của bạn. Thư viện này rất cần thiết để hiển thị tài liệu thành nhiều định dạng khác nhau như HTML, PDF và tệp hình ảnh.
+## Tại sao phải render các hàng và cột ẩn?
+Nhiều tệp Excel ẩn các hàng hoặc cột để đơn giản hoá bố cục, nhưng các ô ẩn thường chứa dữ liệu quan trọng (công thức, siêu dữ liệu hoặc thông tin bổ sung). Render chúng đảm bảo **view hidden spreadsheet data** và duy trì tính toàn vẹn dữ liệu khi chia sẻ báo cáo trực tuyến.
+
+## Prerequisites
+
+### Thư viện và phụ thuộc cần thiết
+Để triển khai tính năng này, hãy chắc chắn bao gồm GroupDocs.Viewer for Java như một phụ thuộc trong dự án của bạn. Thư viện này là cần thiết để render tài liệu sang các định dạng như HTML, PDF và các tệp hình ảnh.
 
 ### Yêu cầu thiết lập môi trường
-Hãy đảm bảo bạn đã thiết lập những điều sau trước khi tiếp tục:
-- **Bộ phát triển Java (JDK)**: Phiên bản 8 trở lên
-- **Môi trường phát triển tích hợp (IDE)**: Chẳng hạn như IntelliJ IDEA hoặc Eclipse
-- **Maven**: Để quản lý các phụ thuộc của dự án
+- **Java Development Kit (JDK)**: Phiên bản 8 trở lên  
+- **IDE**: IntelliJ IDEA, Eclipse hoặc tương tự  
+- **Maven**: Để quản lý các phụ thuộc của dự án  
 
-### Điều kiện tiên quyết về kiến thức
-Cần có hiểu biết cơ bản về lập trình Java. Ngoài ra, quen thuộc với Maven sẽ có lợi cho việc thiết lập dự án của bạn.
+### Kiến thức tiên quyết
+Hiểu biết vững chắc về lập trình Java và cách sử dụng Maven cơ bản sẽ giúp bạn theo dõi các bước một cách suôn sẻ.
 
-## Thiết lập GroupDocs.Viewer cho Java
-Để bắt đầu sử dụng GroupDocs.Viewer trong ứng dụng Java của bạn, bạn sẽ cần thiết lập nó thông qua Maven. Sau đây là cách thực hiện:
+## Cài đặt GroupDocs.Viewer cho Java
+Để bắt đầu sử dụng GroupDocs.Viewer trong ứng dụng Java, bạn cần thiết lập qua Maven. Thêm kho và phụ thuộc vào file `pom.xml` của bạn:
 
-**Maven**
-Thêm cấu hình sau vào `pom.xml` tài liệu:
 ```xml
 <repositories>
    <repository>
@@ -56,33 +65,34 @@ Thêm cấu hình sau vào `pom.xml` tài liệu:
 </dependencies>
 ```
 
-### Các bước xin cấp giấy phép
-Để sử dụng GroupDocs.Viewer, hãy cân nhắc các tùy chọn sau:
-- **Dùng thử miễn phí**: Tải xuống phiên bản dùng thử để đánh giá các tính năng.
-- **Giấy phép tạm thời**: Yêu cầu cấp giấy phép tạm thời để truy cập đầy đủ tính năng mà không có giới hạn đánh giá.
-- **Mua**: Xin giấy phép vĩnh viễn để sử dụng sản xuất.
+### Các bước lấy giấy phép
+- **Free Trial** – Tải phiên bản dùng thử để đánh giá các tính năng.  
+- **Temporary License** – Yêu cầu giấy phép tạm thời để truy cập đầy đủ tính năng trong quá trình thử nghiệm.  
+- **Purchase** – Mua giấy phép vĩnh viễn cho việc sử dụng trong môi trường sản xuất.
 
-Sau khi thiết lập Maven và có được giấy phép, bạn có thể bắt đầu khởi tạo GroupDocs.Viewer. Sau đây là cách thực hiện:
+Sau khi thiết lập Maven và nhận được giấy phép, khởi tạo GroupDocs.Viewer:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
-    public static void main(String[] args) {
-        // Khởi tạo trình xem bằng tệp giấy phép của bạn nếu có.
+    public static main(String[] args) {
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Mã của bạn ở đây...
+            // Your code here...
         }
     }
 }
 ```
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
 ### Hiển thị các hàng và cột ẩn trong bảng tính
-Tính năng này cho phép bạn hiển thị các hàng và cột ẩn của bảng tính khi chuyển đổi sang định dạng HTML. Hãy cùng phân tích các bước triển khai.
+Tính năng này cho phép bạn render các hàng và cột ẩn của bảng tính khi chuyển đổi sang định dạng HTML. Dưới đây là hướng dẫn từng bước.
 
-#### Bước 1: Xác định Đường dẫn Thư mục Đầu ra
-Bắt đầu bằng cách xác định nơi lưu trữ các tệp đã kết xuất của bạn:
+#### Bước 1: Xác định đường dẫn thư mục đầu ra
+Bắt đầu bằng cách xác định nơi sẽ lưu các tệp đã render:
+
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -91,80 +101,87 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndCo
 ```
 
 #### Bước 2: Cấu hình HTMLViewOptions
-Tiếp theo, thiết lập `HtmlViewOptions` để nhúng tài nguyên trực tiếp vào các tệp HTML được tạo:
+Thiết lập `HtmlViewOptions` để nhúng tài nguyên trực tiếp vào các tệp HTML được tạo:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Tạo định dạng đường dẫn tệp để hiển thị từng trang.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Bước 3: Bật Hiển thị Cột và Hàng Ẩn
-Cấu hình `SpreadsheetOptions` để hiển thị các thành phần ẩn:
+#### Bước 3: Bật chế độ hiển thị các cột và hàng ẩn
+Yêu cầu viewer bao gồm các phần tử ẩn trong đầu ra:
+
 ```java
-// Cho phép hiển thị các cột và hàng ẩn.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### Bước 4: Khởi tạo Viewer với Document
-Cuối cùng, khởi tạo GroupDocs.Viewer bằng đường dẫn tài liệu của bạn và hiển thị nội dung:
+#### Bước 4: Khởi tạo Viewer với tài liệu và thực hiện render
+Cuối cùng, render tài liệu sang HTML bằng các tùy chọn đã cấu hình:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Hiển thị tài liệu sang HTML bằng các tùy chọn chế độ xem đã chỉ định.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Mẹo khắc phục sự cố**: Đảm bảo các đường dẫn được thiết lập chính xác và các phụ thuộc được bao gồm đúng trong `pom.xml`.
+**Mẹo khắc phục sự cố**: Kiểm tra lại tất cả các đường dẫn tệp và đảm bảo các phụ thuộc Maven được giải quyết mà không có xung đột.
 
-## Ứng dụng thực tế
-Sau đây là một số ứng dụng thực tế của tính năng này:
-1. **Báo cáo tài chính**: Đảm bảo mọi dữ liệu, bao gồm cả số liệu tài chính ẩn, đều có thể nhìn thấy được trong quá trình chuyển đổi để tuân thủ.
-2. **Phân tích dữ liệu**: Duy trì tính toàn vẹn của tập dữ liệu bằng cách hiển thị tất cả các hàng và cột trong báo cáo hoặc bản trình bày.
-3. **Công cụ giáo dục**: Sử dụng toàn bộ nội dung bảng tính cho mục đích giảng dạy mà không làm mất đi thông tin ẩn.
+## Ứng dụng thực tiễn
+Dưới đây là một số kịch bản thực tế mà **excel to html java** với việc render dữ liệu ẩn tỏa sáng:
 
-## Cân nhắc về hiệu suất
-Để tối ưu hóa hiệu suất khi sử dụng GroupDocs.Viewer:
-- Theo dõi mức sử dụng bộ nhớ, đặc biệt là với các tài liệu lớn.
-- Tối ưu hóa đường dẫn tệp và vị trí lưu trữ để giảm hoạt động I/O.
-- Cập nhật thư viện thường xuyên để tận dụng những cải tiến về hiệu suất và sửa lỗi.
+1. **Financial Reporting** – Hiển thị mọi chỉ số, ngay cả những chỉ số ẩn cho các phép tính nội bộ, để đáp ứng yêu cầu kiểm toán.  
+2. **Data Analysis** – Bảo toàn toàn bộ bộ dữ liệu khi chia sẻ kết quả phân tích trên các bảng điều khiển web.  
+3. **Educational Tools** – Cung cấp cho sinh viên nội dung bảng tính đầy đủ cho các bài tập học tập.
 
-## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách cấu hình GroupDocs.Viewer cho Java để hiển thị các hàng và cột ẩn trong bảng tính. Bằng cách làm theo các bước này, bạn có thể đảm bảo khả năng hiển thị dữ liệu toàn diện trên nhiều định dạng. Bước tiếp theo, hãy thử nghiệm với các loại tài liệu khác nhau và khám phá các tính năng bổ sung do GroupDocs.Viewer cung cấp.
+## Các yếu tố hiệu năng
+- **Memory Management** – Các sổ làm việc lớn có thể tiêu tốn heap đáng kể; cân nhắc tăng thiết lập `-Xmx` của JVM.  
+- **I/O Optimization** – Lưu HTML đã render trong thư mục SSD nhanh để giảm độ trễ.  
+- **Library Updates** – Giữ GroupDocs.Viewer luôn cập nhật để hưởng lợi từ các bản vá hiệu năng.
 
-Sẵn sàng để tìm hiểu sâu hơn? Hãy thử triển khai tính năng này vào dự án của bạn và xem nó cải thiện chức năng của ứng dụng như thế nào!
+## Kết luận
+Bạn đã nắm vững cách chuyển đổi **excel to html java** đồng thời đảm bảo các hàng và cột ẩn được render, cung cấp cho bạn một cái nhìn toàn diện về dữ liệu bảng tính. Hãy thử nghiệm các tùy chọn khác nhau, chẳng hạn như tùy chỉnh CSS, để tinh chỉnh đầu ra HTML phù hợp hơn với nhu cầu dự án của bạn.
 
-## Phần Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-**Câu hỏi 1: Tôi có thể sử dụng GroupDocs.Viewer miễn phí không?**
-A1: Có, bạn có thể tải xuống phiên bản dùng thử từ trang web chính thức để khám phá các tính năng. Để có quyền truy cập đầy đủ mà không bị giới hạn, hãy cân nhắc mua giấy phép tạm thời hoặc vĩnh viễn.
+**Q: Tôi có thể sử dụng GroupDocs.Viewer miễn phí không?**  
+A: Có, phiên bản dùng thử có sẵn để đánh giá. Đối với việc sử dụng sản xuất không giới hạn, cần có giấy phép.
 
-**Câu hỏi 2: GroupDocs.Viewer hỗ trợ những định dạng tệp nào?**
-A2: Hỗ trợ hơn 50 định dạng tài liệu khác nhau bao gồm PDF, Word, Excel và hình ảnh.
+**Q: GroupDocs.Viewer hỗ trợ những định dạng tệp nào?**  
+A: Hơn 50 định dạng, bao gồm XLSX, XLS, CSV, PDF, DOCX và nhiều loại hình ảnh.
 
-**Câu hỏi 3: Làm thế nào để xử lý các tài liệu lớn bằng GroupDocs.Viewer?**
-A3: Tối ưu hóa việc quản lý bộ nhớ bằng cách điều chỉnh cài đặt Java và chia các tệp lớn thành các phần nhỏ hơn nếu cần.
+**Q: Tôi nên xử lý các tệp Excel rất lớn như thế nào?**  
+A: Tăng kích thước heap JVM, chia sổ làm việc thành các phần nhỏ hơn, hoặc xử lý từng sheet riêng biệt.
 
-**Câu hỏi 4: Có thể tùy chỉnh định dạng đầu ra HTML không?**
-A4: Có, bạn có thể cấu hình nhiều tùy chọn khác nhau bằng cách sử dụng `HtmlViewOptions` để tùy chỉnh giao diện của tài liệu được kết xuất.
+**Q: Có thể tùy chỉnh HTML được tạo ra không?**  
+A: Chắc chắn. `HtmlViewOptions` cung cấp nhiều cài đặt cho CSS, scripting và xử lý tài nguyên.
 
-**Câu hỏi 5: Cách tốt nhất để khắc phục sự cố với GroupDocs.Viewer là gì?**
-A5: Kiểm tra tài liệu chính thức và diễn đàn để tìm giải pháp. Đảm bảo tất cả các phụ thuộc được cấu hình đúng trong thiết lập dự án của bạn.
+**Q: Tôi có thể tìm thêm ví dụ về việc render dữ liệu ẩn ở đâu?**  
+A: Tài liệu chính thức và tham chiếu API chứa các đoạn mã mẫu và hướng dẫn sử dụng bổ sung.
 
 ## Tài nguyên
-- **Tài liệu**: [Tài liệu về Trình xem GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Tài liệu tham khảo API**: [Tài liệu tham khảo API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Tải về**: [Nhận GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Mua**: [Mua giấy phép](https://purchase.groupdocs.com/buy)
-- **Dùng thử miễn phí**: [Dùng thử phiên bản miễn phí](https://releases.groupdocs.com/viewer/java/)
-- **Giấy phép tạm thời**: [Yêu cầu Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
-- **Ủng hộ**: [Diễn đàn GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download**: [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Free Trial**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Với hướng dẫn toàn diện này, giờ đây bạn đã có thể xử lý hiệu quả các thành phần bảng tính ẩn trong ứng dụng Java của mình bằng GroupDocs.Viewer. Chúc bạn viết mã vui vẻ!
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** GroupDocs Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+---

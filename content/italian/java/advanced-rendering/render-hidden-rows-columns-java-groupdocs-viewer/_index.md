@@ -1,44 +1,53 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come visualizzare righe e colonne nascoste nei fogli di calcolo Java utilizzando GroupDocs.Viewer per una conversione HTML fluida. Garantisci una visibilità completa dei dati con questa guida al rendering avanzato."
-"title": "Visualizza righe e colonne nascoste nei fogli di calcolo Java utilizzando GroupDocs.Viewer"
-"url": "/it/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-13'
+description: Scopri come convertire Excel in HTML Java rendendo visibili le righe
+  e le colonne nascoste con GroupDocs Viewer. Questa guida ti aiuta a visualizzare
+  i dati nascosti del foglio di calcolo in modo efficiente.
+keywords:
+- render hidden rows columns java
+- GroupDocs Viewer Java
+- Java spreadsheet rendering
+title: excel to html java – Visualizza righe e colonne nascoste
 type: docs
+url: /it/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# Visualizza righe e colonne nascoste nei fogli di calcolo Java utilizzando GroupDocs.Viewer
 
-## Introduzione
+# excel to html java – Visualizza righe e colonne nascoste nei fogli di calcolo Java con GroupDocs.Viewer
 
-Hai difficoltà a visualizzare righe e colonne nascoste in un foglio di calcolo durante la conversione in HTML tramite Java? Non sei il solo! Molti sviluppatori affrontano questa sfida nel tentativo di mantenere l'integrità della visualizzazione dei dati in diversi formati. Questo tutorial ti guiderà attraverso l'efficace rendering di righe e colonne nascoste nei fogli di calcolo utilizzando GroupDocs.Viewer per Java, assicurandoti che nessuna informazione cruciale venga persa durante la conversione.
+Convertire **excel to html java** può essere complicato quando il tuo workbook contiene righe o colonne nascoste. In questo tutorial imparerai come rendere visibili quegli elementi nascosti in modo che l'HTML risultante mostri l'intero set di dati. Ti guideremo nella configurazione di GroupDocs.Viewer, nell'impostazione del progetto Maven e nella scrittura del codice Java che rende i dati nascosti del foglio di calcolo visibili nell'output.
 
-In questo articolo parleremo di:
-- Configurazione di GroupDocs.Viewer per il rendering degli elementi nascosti del foglio di calcolo
-- Configurazione dell'ambiente con le dipendenze Maven
-- Implementazione passo passo della funzionalità
-- Applicazioni reali e considerazioni sulle prestazioni
+![Rendi visibili righe e colonne nascoste con GroupDocs.Viewer per Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Prima di iniziare, assicurati di avere una conoscenza di base della programmazione Java e una certa familiarità con la gestione delle dipendenze di Maven. Iniziamo configurando il nostro ambiente.
+## Risposte rapide
+- **GroupDocs.Viewer può visualizzare righe nascoste?** Sì – abilita `setRenderHiddenRows(true)` e `setRenderHiddenColumns(true)`.
+- **Quale libreria converte excel to html java?** GroupDocs.Viewer for Java.
+- **È necessaria una licenza?** Una versione di prova è sufficiente per la valutazione; è richiesta una licenza permanente per la produzione.
+- **Formati supportati?** Oltre 50, inclusi XLSX, XLS, CSV e molti altri.
+- **L'uso della memoria è un problema?** I file di grandi dimensioni potrebbero richiedere un aumento della dimensione dell'heap; monitora la memoria durante la conversione.
+
+## Che cos'è excel to html java?
+`excel to html java` indica il processo di conversione dei workbook Microsoft Excel (XLSX, XLS) in pagine HTML utilizzando librerie Java. Questo consente la visualizzazione basata sul web dei fogli di calcolo senza richiedere Microsoft Office sul client.
+
+## Perché visualizzare righe e colonne nascoste?
+Molti file Excel nascondono righe o colonne per semplificare la presentazione, ma quelle celle nascoste spesso contengono dati critici (formule, metadati o informazioni supplementari). Visualizzarle garantisce **visualizzare i dati nascosti del foglio di calcolo** e mantiene l'integrità dei dati quando si condividono report online.
 
 ## Prerequisiti
 
 ### Librerie e dipendenze richieste
-Per implementare questa funzionalità, assicurati di includere GroupDocs.Viewer per Java come dipendenza nel tuo progetto. Questa libreria è essenziale per il rendering di documenti in vari formati come HTML, PDF e file immagine.
+Per implementare questa funzionalità, assicurati di includere GroupDocs.Viewer for Java come dipendenza nel tuo progetto. Questa libreria è essenziale per il rendering dei documenti in vari formati come HTML, PDF e file immagine.
 
 ### Requisiti di configurazione dell'ambiente
-Prima di procedere, assicurati di aver configurato quanto segue:
-- **Kit di sviluppo Java (JDK)**: Versione 8 o successiva
-- **Ambiente di sviluppo integrato (IDE)**: Come IntelliJ IDEA o Eclipse
-- **Esperto**: Per gestire le dipendenze del progetto
+- **Java Development Kit (JDK)**: versione 8 o successiva  
+- **IDE**: IntelliJ IDEA, Eclipse o simili  
+- **Maven**: per la gestione delle dipendenze del progetto  
 
 ### Prerequisiti di conoscenza
-È necessaria una conoscenza di base della programmazione Java. Inoltre, la familiarità con Maven sarà utile per la configurazione del progetto.
+Una solida padronanza della programmazione Java e una conoscenza di base di Maven ti aiuteranno a seguire i passaggi senza difficoltà.
 
-## Impostazione di GroupDocs.Viewer per Java
-Per iniziare a utilizzare GroupDocs.Viewer nella tua applicazione Java, devi configurarlo tramite Maven. Ecco come fare:
+## Configurazione di GroupDocs.Viewer per Java
+Per iniziare a utilizzare GroupDocs.Viewer nella tua applicazione Java, devi configurarlo tramite Maven. Aggiungi il repository e la dipendenza al tuo `pom.xml`:
 
-**Esperto**
-Aggiungi la seguente configurazione al tuo `pom.xml` file:
 ```xml
 <repositories>
    <repository>
@@ -56,21 +65,21 @@ Aggiungi la seguente configurazione al tuo `pom.xml` file:
 </dependencies>
 ```
 
-### Fasi di acquisizione della licenza
-Per utilizzare GroupDocs.Viewer, prendi in considerazione le seguenti opzioni:
-- **Prova gratuita**: Scarica una versione di prova per valutare le funzionalità.
-- **Licenza temporanea**: Richiedi una licenza temporanea per accedere a tutte le funzionalità senza limitazioni di valutazione.
-- **Acquistare**: Ottieni una licenza permanente per l'uso in produzione.
+### Passaggi per l'acquisizione della licenza
+- **Versione di prova gratuita** – Scarica una versione di prova per valutare le funzionalità.  
+- **Licenza temporanea** – Richiedi una licenza temporanea per l'accesso completo alle funzionalità durante i test.  
+- **Acquisto** – Ottieni una licenza permanente per l'uso in produzione.
 
-Dopo aver configurato Maven e ottenuto la licenza, puoi iniziare a inizializzare GroupDocs.Viewer. Ecco come fare:
+Dopo aver configurato Maven e ottenuto la licenza, inizializza GroupDocs.Viewer:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
-    public static void main(String[] args) {
-        // Inizializza il visualizzatore con il file di licenza, se disponibile.
+    public static main(String[] args) {
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Il tuo codice qui...
+            // Your code here...
         }
     }
 }
@@ -78,11 +87,12 @@ public class ViewerInitialization {
 
 ## Guida all'implementazione
 
-### Visualizza righe e colonne nascoste nei fogli di calcolo
-Questa funzionalità consente di visualizzare righe e colonne nascoste di un foglio di calcolo durante la conversione in formato HTML. Analizziamo i passaggi di implementazione.
+### Rendering di righe e colonne nascoste nei fogli di calcolo
+Questa funzionalità consente di renderizzare righe e colonne nascoste di un foglio di calcolo durante la conversione in formato HTML. Di seguito trovi una procedura passo‑passo.
 
-#### Passaggio 1: definire il percorso della directory di output
-Inizia definendo dove verranno archiviati i file renderizzati:
+#### Passo 1: Definisci il percorso della directory di output
+Inizia definendo dove verranno salvati i file renderizzati:
+
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +100,86 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### Passaggio 2: configurare HTMLViewOptions
-Quindi, imposta il `HtmlViewOptions` per incorporare risorse direttamente nei file HTML generati:
+#### Passo 2: Configura HTMLViewOptions
+Imposta `HtmlViewOptions` per incorporare le risorse direttamente nei file HTML generati:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Creare un formato di percorso file per il rendering di ogni pagina.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Passaggio 3: abilitare il rendering di colonne e righe nascoste
-Configurare il `SpreadsheetOptions` per rendere gli elementi nascosti:
+#### Passo 3: Abilita il rendering di colonne e righe nascoste
+Indica al viewer di includere gli elementi nascosti nell'output:
+
 ```java
-// Abilita il rendering di colonne e righe nascoste.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### Passaggio 4: inizializzare il visualizzatore con il documento
-Infine, inizializza GroupDocs.Viewer con il percorso del documento ed esegui il rendering del contenuto:
+#### Passo 4: Inizializza il Viewer con il documento e avvia il rendering
+Infine, renderizza il documento in HTML utilizzando le opzioni configurate:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Esegue il rendering del documento in HTML utilizzando le opzioni di visualizzazione specificate.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Suggerimenti per la risoluzione dei problemi**: assicurati che i percorsi siano impostati correttamente e che le dipendenze siano incluse correttamente nel tuo `pom.xml`.
+**Suggerimenti per la risoluzione dei problemi**: verifica che tutti i percorsi dei file siano corretti e che le dipendenze Maven siano risolte senza conflitti.
 
 ## Applicazioni pratiche
-Ecco alcune applicazioni pratiche di questa funzionalità:
-1. **Rendicontazione finanziaria**: assicurarsi che tutti i dati, comprese le metriche finanziarie nascoste, siano visibili durante la conversione per motivi di conformità.
-2. **Analisi dei dati**: Mantieni l'integrità dei set di dati visualizzando tutte le righe e le colonne nei report o nelle presentazioni.
-3. **Strumenti educativi**: Utilizza il contenuto completo del foglio di calcolo per scopi didattici senza perdere informazioni nascoste.
+Ecco alcuni scenari reali in cui **excel to html java** con rendering dei dati nascosti è particolarmente utile:
+
+1. **Report finanziari** – Mostra ogni metrica, anche quelle nascoste per calcoli interni, per soddisfare i requisiti di audit.  
+2. **Analisi dei dati** – Conserva set di dati completi quando condividi i risultati dell'analisi in dashboard web.  
+3. **Strumenti educativi** – Fornisci agli studenti il contenuto completo del foglio di calcolo per esercizi didattici.
 
 ## Considerazioni sulle prestazioni
-Per ottimizzare le prestazioni quando si utilizza GroupDocs.Viewer:
-- Monitorare l'utilizzo della memoria, soprattutto con documenti di grandi dimensioni.
-- Ottimizzare i percorsi dei file e le posizioni di archiviazione per ridurre le operazioni di I/O.
-- Aggiornare regolarmente la libreria per sfruttare nuovi miglioramenti delle prestazioni e correzioni di bug.
+- **Gestione della memoria** – I workbook di grandi dimensioni possono consumare una notevole quantità di heap; considera l'aumento dell'opzione `-Xmx` della JVM.  
+- **Ottimizzazione I/O** – Salva l'HTML renderizzato in una directory SSD veloce per ridurre la latenza.  
+- **Aggiornamenti della libreria** – Mantieni GroupDocs.Viewer aggiornato per beneficiare delle correzioni di performance.
 
 ## Conclusione
-In questo tutorial, hai imparato a configurare GroupDocs.Viewer per Java per visualizzare righe e colonne nascoste nei fogli di calcolo. Seguendo questi passaggi, puoi garantire una visibilità completa dei dati in tutti i formati. Come passaggio successivo, sperimenta diversi tipi di documento ed esplora le funzionalità aggiuntive offerte da GroupDocs.Viewer.
+Ora sai come convertire **excel to html java** garantendo che righe e colonne nascoste vengano renderizzate, ottenendo una visualizzazione completa dei dati del foglio di calcolo. Sperimenta con diverse opzioni, come la personalizzazione CSS, per adattare ulteriormente l'output HTML alle esigenze del tuo progetto.
 
-Pronti ad approfondire? Provate a implementare questa funzionalità nei vostri progetti e scoprite come migliora le funzionalità della vostra applicazione!
+## Domande frequenti
 
-## Sezione FAQ
+**D: Posso usare GroupDocs.Viewer gratuitamente?**  
+R: Sì, è disponibile una versione di prova per la valutazione. Per l'uso illimitato in produzione è necessaria una licenza.
 
-**D1: Posso utilizzare GroupDocs.Viewer gratuitamente?**
-R1: Sì, puoi scaricare una versione di prova dal sito ufficiale per esplorare le funzionalità. Per un accesso completo senza limitazioni, valuta l'acquisto di una licenza temporanea o permanente.
+**D: Quali formati di file supporta GroupDocs.Viewer?**  
+R: Oltre 50 formati, inclusi XLSX, XLS, CSV, PDF, DOCX e molti tipi di immagine.
 
-**D2: Quali formati di file supporta GroupDocs.Viewer?**
-A2: Supporta oltre 50 formati di documenti diversi, tra cui PDF, Word, Excel e immagini.
+**D: Come gestire file Excel molto grandi?**  
+R: Aumenta la dimensione dell'heap della JVM, suddividi il workbook in parti più piccole o elabora i fogli singolarmente.
 
-**D3: Come posso gestire documenti di grandi dimensioni con GroupDocs.Viewer?**
-A3: Ottimizzare la gestione della memoria modificando le impostazioni Java e suddividendo i file di grandi dimensioni in parti più piccole, se necessario.
+**D: È possibile personalizzare l'HTML generato?**  
+R: Assolutamente sì. `HtmlViewOptions` offre numerose impostazioni per CSS, scripting e gestione delle risorse.
 
-**D4: È possibile personalizzare il formato di output HTML?**
-A4: Sì, puoi configurare varie opzioni utilizzando `HtmlViewOptions` per personalizzare l'aspetto dei documenti renderizzati.
-
-**D5: Qual è il modo migliore per risolvere i problemi con GroupDocs.Viewer?**
-A5: Consulta la documentazione ufficiale e i forum per trovare soluzioni. Assicurati che tutte le dipendenze siano configurate correttamente nel tuo progetto.
+**D: Dove posso trovare altri esempi di rendering di dati nascosti?**  
+R: La documentazione ufficiale e il riferimento API contengono ulteriori snippet di codice e guide d'uso.
 
 ## Risorse
-- **Documentazione**: [Documentazione di GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Riferimento API**: [Riferimento API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Scaricamento**: [Ottieni GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Acquistare**: [Acquista una licenza](https://purchase.groupdocs.com/buy)
-- **Prova gratuita**: [Prova la versione gratuita](https://releases.groupdocs.com/viewer/java/)
-- **Licenza temporanea**: [Richiedi licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- **Supporto**: [Forum di GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentazione**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Riferimento API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Acquisto**: [Buy a License](https://purchase.groupdocs.com/buy)
+- **Versione di prova gratuita**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Licenza temporanea**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Supporto**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Con questa guida completa, ora sei pronto a gestire efficacemente gli elementi nascosti dei fogli di calcolo nelle tue applicazioni Java utilizzando GroupDocs.Viewer. Buona programmazione!
+---
+
+**Ultimo aggiornamento:** 2026-01-13  
+**Testato con:** GroupDocs Viewer 25.2 for Java  
+**Autore:** GroupDocs

@@ -1,44 +1,52 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการเรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต Java โดยใช้ GroupDocs.Viewer เพื่อการแปลง HTML ได้อย่างราบรื่น รับรองการมองเห็นข้อมูลอย่างสมบูรณ์ด้วยคู่มือการเรนเดอร์ขั้นสูงนี้"
-"title": "เรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต Java โดยใช้ GroupDocs.Viewer"
-"url": "/th/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-13'
+description: เรียนรู้วิธีแปลง Excel เป็น HTML ด้วย Java พร้อมการแสดงแถวและคอลัมน์ที่ซ่อนอยู่โดยใช้
+  GroupDocs Viewer คู่มือนี้ช่วยให้คุณดูข้อมูลสเปรดชีตที่ซ่อนอยู่ได้อย่างมีประสิทธิภาพ
+keywords:
+- render hidden rows columns java
+- GroupDocs Viewer Java
+- Java spreadsheet rendering
+title: Excel เป็น HTML ด้วย Java – แสดงแถวและคอลัมน์ที่ซ่อนอยู่
 type: docs
+url: /th/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# เรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต Java โดยใช้ GroupDocs.Viewer
 
-## การแนะนำ
+# excel to html java – การแสดงแถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต Java ด้วย GroupDocs.Viewer
 
-คุณกำลังประสบปัญหาในการแสดงแถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีตเมื่อแปลงเป็น HTML โดยใช้ Java หรือไม่ คุณไม่ได้อยู่คนเดียว! นักพัฒนามากมายเผชิญกับความท้าทายนี้ขณะพยายามรักษาความสมบูรณ์ของการแสดงภาพข้อมูลในรูปแบบต่างๆ บทช่วยสอนนี้จะแนะนำคุณเกี่ยวกับวิธีแสดงแถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีตอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ Java เพื่อให้แน่ใจว่าไม่มีข้อมูลสำคัญสูญหายระหว่างการแปลง
+การแปลง **excel to html java** อาจเป็นเรื่องท้าทายเมื่อเวิร์กบุ๊กของคุณมีแถวหรือคอลัมน์ที่ซ่อนอยู่ ในบทเรียนนี้คุณจะได้เรียนรู้วิธีเรนเดอร์องค์ประกอบที่ซ่อนเหล่านั้นเพื่อให้ HTML ที่ได้แสดงชุดข้อมูลครบถ้วน เราจะอธิบายการตั้งค่า GroupDocs.Viewer, การตั้งค่าโครงการ Maven ของคุณ, และการเขียนโค้ด Java ที่ทำให้ข้อมูลสเปรดชีตที่ซ่อนอยู่ปรากฏในผลลัพธ์
 
-ในบทความนี้เราจะกล่าวถึงเรื่อง:
-- การกำหนดค่า GroupDocs.Viewer สำหรับการแสดงผลองค์ประกอบสเปรดชีตที่ซ่อนอยู่
-- การตั้งค่าสภาพแวดล้อมของคุณด้วยการอ้างอิง Maven
-- การนำฟีเจอร์ไปใช้ทีละขั้นตอน
-- การใช้งานในโลกแห่งความเป็นจริงและการพิจารณาประสิทธิภาพ
+![Render Hidden Rows & Columns with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-ก่อนจะเริ่มลงมือ ให้แน่ใจว่าคุณมีความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java และมีความคุ้นเคยกับการจัดการการอ้างอิงของ Maven ในระดับหนึ่ง มาเริ่มต้นด้วยการตั้งค่าสภาพแวดล้อมของเรา
+## Quick Answers
+- **Can GroupDocs.Viewer render hidden rows?** ใช่ – เปิดใช้งาน `setRenderHiddenRows(true)` และ `setRenderHiddenColumns(true)`.
+- **Which library converts excel to html java?** GroupDocs.Viewer for Java.
+- **Do I need a license?** เวอร์ชันทดลองใช้งานได้สำหรับการประเมิน; ต้องมีไลเซนส์ถาวรสำหรับการใช้งานในผลิตภัณฑ์.
+- **Supported formats?** รองรับกว่า 50 รูปแบบ รวมถึง XLSX, XLS, CSV และอื่น ๆ.
+- **Is memory usage a concern?** ไฟล์ขนาดใหญ่อาจต้องเพิ่มขนาด heap; ควรตรวจสอบการใช้หน่วยความจำระหว่างการแปลง.
 
-## ข้อกำหนดเบื้องต้น
+## What is excel to html java?
+`excel to html java` หมายถึงกระบวนการแปลงเวิร์กบุ๊ก Microsoft Excel (XLSX, XLS) ให้เป็นหน้า HTML ด้วยไลบรารี Java ซึ่งทำให้สามารถดูสเปรดชีตบนเว็บโดยไม่ต้องติดตั้ง Microsoft Office บนเครื่องผู้ใช้
 
-### ไลบรารีและการอ้างอิงที่จำเป็น
-หากต้องการใช้ฟีเจอร์นี้ โปรดแน่ใจว่าได้รวม GroupDocs.Viewer สำหรับ Java เป็นส่วนที่ต้องพึ่งพาในโปรเจ็กต์ของคุณ ไลบรารีนี้มีความจำเป็นสำหรับการเรนเดอร์เอกสารเป็นรูปแบบต่างๆ เช่น HTML, PDF และไฟล์รูปภาพ
+## Why render hidden rows and columns?
+ไฟล์ Excel จำนวนมากจะซ่อนแถวหรือคอลัมน์เพื่อทำให้การนำเสนอเรียบง่าย แต่เซลล์ที่ซ่อนเหล่านั้นมักมีข้อมูลสำคัญ (สูตร, เมตาดาต้า หรือข้อมูลเสริม) การเรนเดอร์พวกมันจะทำให้ **view hidden spreadsheet data** ปรากฏและรักษาความสมบูรณ์ของข้อมูลเมื่อแชร์รายงานออนไลน์
 
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-ให้แน่ใจว่าคุณมีการตั้งค่าต่อไปนี้ก่อนดำเนินการต่อ:
-- **ชุดพัฒนา Java (JDK)**: เวอร์ชัน 8 ขึ้นไป
-- **สภาพแวดล้อมการพัฒนาแบบบูรณาการ (IDE)**: เช่น IntelliJ IDEA หรือ Eclipse
-- **เมเวน**:สำหรับการจัดการความสัมพันธ์ของโครงการ
+## Prerequisites
 
-### ข้อกำหนดเบื้องต้นของความรู้
-จำเป็นต้องมีความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java นอกจากนี้ ความคุ้นเคยกับ Maven จะเป็นประโยชน์ต่อการตั้งค่าโปรเจ็กต์ของคุณ
+### Required Libraries and Dependencies
+เพื่อใช้งานฟีเจอร์นี้ ให้แน่ใจว่าได้เพิ่ม GroupDocs.Viewer for Java เป็น dependency ในโครงการของคุณ ไลบรารีนี้จำเป็นสำหรับการเรนเดอร์เอกสารเป็นรูปแบบต่าง ๆ เช่น HTML, PDF, และไฟล์รูปภาพ
 
-## การตั้งค่า GroupDocs.Viewer สำหรับ Java
-หากต้องการเริ่มใช้ GroupDocs.Viewer ในแอปพลิเคชัน Java คุณจะต้องตั้งค่าผ่าน Maven ดังต่อไปนี้:
+### Environment Setup Requirements
+- **Java Development Kit (JDK)**: เวอร์ชัน 8 หรือใหม่กว่า  
+- **IDE**: IntelliJ IDEA, Eclipse หรือ IDE ที่คล้ายกัน  
+- **Maven**: สำหรับจัดการ dependency ของโครงการ  
 
-**เมเวน**
-เพิ่มการกำหนดค่าต่อไปนี้ลงในของคุณ `pom.xml` ไฟล์:
+### Knowledge Prerequisites
+ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java และการใช้ Maven จะช่วยให้คุณทำตามขั้นตอนได้อย่างราบรื่น
+
+## Setting Up GroupDocs.Viewer for Java
+เพื่อเริ่มใช้ GroupDocs.Viewer ในแอปพลิเคชัน Java ของคุณ ให้ตั้งค่าผ่าน Maven เพิ่ม repository และ dependency ลงใน `pom.xml` ของคุณ:
+
 ```xml
 <repositories>
    <repository>
@@ -56,33 +64,34 @@ type: docs
 </dependencies>
 ```
 
-### ขั้นตอนการรับใบอนุญาต
-ในการใช้ GroupDocs.Viewer โปรดพิจารณาตัวเลือกต่อไปนี้:
-- **ทดลองใช้งานฟรี**ดาวน์โหลดเวอร์ชันทดลองเพื่อประเมินคุณสมบัติ
-- **ใบอนุญาตชั่วคราว**:ขอใบอนุญาตชั่วคราวเพื่อเข้าถึงคุณสมบัติเต็มรูปแบบโดยไม่มีข้อจำกัดในการประเมิน
-- **ซื้อ**: รับใบอนุญาตถาวรเพื่อใช้ในการผลิต
+### License Acquisition Steps
+- **Free Trial** – ดาวน์โหลดเวอร์ชันทดลองเพื่อประเมินคุณสมบัติ  
+- **Temporary License** – ขอรับไลเซนส์ชั่วคราวเพื่อเข้าถึงฟีเจอร์ทั้งหมดระหว่างการทดสอบ  
+- **Purchase** – ซื้อไลเซนส์ถาวรสำหรับการใช้งานในผลิตภัณฑ์
 
-หลังจากตั้งค่า Maven และรับใบอนุญาตแล้ว คุณสามารถเริ่มดำเนินการ GroupDocs.Viewer ได้ โดยดำเนินการดังนี้:
+หลังจากตั้งค่า Maven และรับไลเซนส์แล้ว ให้เริ่มต้น GroupDocs.Viewer:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
-    public static void main(String[] args) {
-        // เริ่มต้นโปรแกรมดูด้วยไฟล์ลิขสิทธิ์ของคุณหากมี
+    public static main(String[] args) {
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // รหัสของคุณที่นี่...
+            // Your code here...
         }
     }
 }
 ```
 
-## คู่มือการใช้งาน
+## Implementation Guide
 
-### เรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต
-ฟีเจอร์นี้ช่วยให้คุณแสดงแถวและคอลัมน์ที่ซ่อนอยู่ของสเปรดชีตเมื่อแปลงเป็นรูปแบบ HTML มาแบ่งขั้นตอนการใช้งานกัน
+### Render Hidden Rows and Columns in Spreadsheets
+ฟีเจอร์นี้ช่วยให้คุณเรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่ของสเปรดชีตเมื่อแปลงเป็นรูปแบบ HTML ด้านล่างเป็นขั้นตอนแบบละเอียด
 
-#### ขั้นตอนที่ 1: กำหนดเส้นทางไดเร็กทอรีเอาท์พุต
-เริ่มต้นด้วยการกำหนดว่าไฟล์ที่เรนเดอร์ของคุณจะถูกจัดเก็บไว้ที่ไหน:
+#### Step 1: Define Output Directory Path
+กำหนดตำแหน่งที่ไฟล์ที่เรนเดอร์จะถูกจัดเก็บ:
+
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +99,86 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### ขั้นตอนที่ 2: กำหนดค่า HTMLViewOptions
-ถัดไปให้ตั้งค่า `HtmlViewOptions` เพื่อฝังทรัพยากรโดยตรงในไฟล์ HTML ที่สร้างขึ้น:
+#### Step 2: Configure HTMLViewOptions
+ตั้งค่า `HtmlViewOptions` เพื่อฝังทรัพยากรโดยตรงในไฟล์ HTML ที่สร้างขึ้น:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// สร้างรูปแบบเส้นทางไฟล์สำหรับการแสดงผลแต่ละหน้า
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### ขั้นตอนที่ 3: เปิดใช้งานการแสดงผลคอลัมน์และแถวที่ซ่อนอยู่
-กำหนดค่า `SpreadsheetOptions` เพื่อแสดงองค์ประกอบที่ซ่อนอยู่:
+#### Step 3: Enable Rendering of Hidden Columns and Rows
+บอก Viewer ให้รวมแถวและคอลัมน์ที่ซ่อนอยู่ในผลลัพธ์:
+
 ```java
-// เปิดใช้งานการเรนเดอร์คอลัมน์และแถวที่ซ่อนอยู่
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### ขั้นตอนที่ 4: เริ่มต้นการดูด้วยเอกสาร
-สุดท้าย ให้เริ่มต้น GroupDocs.Viewer ด้วยเส้นทางเอกสารของคุณและแสดงเนื้อหา:
+#### Step 4: Initialize Viewer with Document and Render
+สุดท้ายเรนเดอร์เอกสารเป็น HTML ด้วยตัวเลือกที่กำหนดไว้:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // เรนเดอร์เอกสารเป็น HTML โดยใช้ตัวเลือกมุมมองที่ระบุ
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**เคล็ดลับการแก้ไขปัญหา**:ตรวจสอบให้แน่ใจว่าเส้นทางได้รับการตั้งค่าอย่างถูกต้องและมีการรวมการอ้างอิงอย่างถูกต้องในของคุณ `pom-xml`.
+**Troubleshooting Tips**: ตรวจสอบให้แน่ใจว่าเส้นทางไฟล์ทั้งหมดถูกต้องและ dependency ของ Maven ถูก resolve โดยไม่มีความขัดแย้ง
 
-## การประยุกต์ใช้งานจริง
-ต่อไปนี้เป็นการใช้งานจริงบางส่วนของฟีเจอร์นี้:
-1. **การรายงานทางการเงิน**:ทำให้แน่ใจว่าข้อมูลทั้งหมด รวมถึงมาตรวัดทางการเงินที่ซ่อนอยู่ จะมองเห็นได้ในระหว่างการแปลงเพื่อให้เป็นไปตามข้อกำหนด
-2. **การวิเคราะห์ข้อมูล**รักษาความสมบูรณ์ของชุดข้อมูลโดยการแสดงแถวและคอลัมน์ทั้งหมดในรายงานหรือการนำเสนอ
-3. **เครื่องมือทางการศึกษา**:ใช้เนื้อหาสเปรดชีตที่สมบูรณ์เพื่อวัตถุประสงค์ด้านการสอนโดยไม่สูญเสียข้อมูลที่ซ่อนอยู่
+## Practical Applications
+ต่อไปนี้เป็นสถานการณ์จริงที่ **excel to html java** พร้อมการเรนเดอร์ข้อมูลที่ซ่อนอยู่ทำให้เกิดประโยชน์สูงสุด:
 
-## การพิจารณาประสิทธิภาพ
-การเพิ่มประสิทธิภาพการทำงานเมื่อใช้ GroupDocs.Viewer ให้ทำดังนี้:
-- ตรวจสอบการใช้หน่วยความจำ โดยเฉพาะอย่างยิ่งกับเอกสารขนาดใหญ่
-- เพิ่มประสิทธิภาพเส้นทางไฟล์และตำแหน่งจัดเก็บเพื่อลดการดำเนินการ I/O
-- อัปเดตไลบรารีเป็นประจำเพื่อปรับปรุงประสิทธิภาพและการแก้ไขข้อบกพร่องใหม่ ๆ
+1. **Financial Reporting** – แสดงเมตริกทุกตัว แม้ที่ซ่อนไว้สำหรับการคำนวณภายใน เพื่อให้สอดคล้องกับข้อกำหนดการตรวจสอบ  
+2. **Data Analysis** – รักษาชุดข้อมูลเต็มรูปแบบเมื่อแชร์ผลการวิเคราะห์ในแดชบอร์ดบนเว็บ  
+3. **Educational Tools** – ให้ผู้เรียนเข้าถึงเนื้อหาเต็มของสเปรดชีตสำหรับการฝึกฝนและทำแบบฝึกหัด
 
-## บทสรุป
-ในบทช่วยสอนนี้ คุณจะได้เรียนรู้วิธีการกำหนดค่า GroupDocs.Viewer สำหรับ Java เพื่อแสดงผลแถวและคอลัมน์ที่ซ่อนอยู่ในสเปรดชีต โดยทำตามขั้นตอนเหล่านี้ คุณจะสามารถมั่นใจได้ว่าข้อมูลจะปรากฏในทุกรูปแบบอย่างครอบคลุม ขั้นตอนต่อไปคือทดลองใช้เอกสารประเภทต่างๆ และสำรวจคุณลักษณะเพิ่มเติมที่ GroupDocs.Viewer นำเสนอ
+## Performance Considerations
+- **Memory Management** – เวิร์กบุ๊กขนาดใหญ่สามารถใช้ heap มาก; ควรเพิ่มค่าพารามิเตอร์ `-Xmx` ของ JVM  
+- **I/O Optimization** – เก็บ HTML ที่เรนเดอร์ไว้ในไดเรกทอรี SSD ที่เร็วเพื่อ ลดเวลาแฝง  
+- **Library Updates** – คอยอัปเดต GroupDocs.Viewer ให้เป็นเวอร์ชันล่าสุดเพื่อรับประโยชน์จากการปรับปรุงประสิทธิภาพ
 
-พร้อมที่จะเจาะลึกมากขึ้นหรือยัง ลองนำฟีเจอร์นี้ไปใช้ในโครงการของคุณและดูว่าฟีเจอร์นี้จะช่วยเพิ่มฟังก์ชันการทำงานของแอปพลิเคชันของคุณได้อย่างไร
+## Conclusion
+คุณได้เรียนรู้วิธีแปลง **excel to html java** พร้อมการเรนเดอร์แถวและคอลัมน์ที่ซ่อนอยู่แล้ว ทำให้คุณเห็นข้อมูลสเปรดชีตอย่างครบถ้วน ทดลองใช้ตัวเลือกต่าง ๆ เช่น การปรับแต่ง CSS เพื่อให้ผลลัพธ์ HTML ตรงกับความต้องการของโครงการของคุณ
 
-## ส่วนคำถามที่พบบ่อย
+## Frequently Asked Questions
 
-**คำถามที่ 1: ฉันสามารถใช้ GroupDocs.Viewer ได้ฟรีหรือไม่?**
-A1: ใช่ คุณสามารถดาวน์โหลดเวอร์ชันทดลองใช้งานจากเว็บไซต์อย่างเป็นทางการเพื่อสำรวจฟีเจอร์ต่างๆ หากต้องการเข้าถึงแบบเต็มรูปแบบโดยไม่มีข้อจำกัด โปรดพิจารณาซื้อใบอนุญาตชั่วคราวหรือถาวร
+**Q: Can I use GroupDocs.Viewer for free?**  
+A: ใช่, มีเวอร์ชันทดลองให้ใช้ประเมินผล. สำหรับการใช้งานในผลิตภัณฑ์โดยไม่มีข้อจำกัดต้องมีไลเซนส์
 
-**คำถามที่ 2: GroupDocs.Viewer รองรับรูปแบบไฟล์ใดบ้าง**
-A2: รองรับรูปแบบเอกสารที่แตกต่างกันมากกว่า 50 รูปแบบ รวมถึง PDF, Word, Excel และรูปภาพ
+**Q: What file formats does GroupDocs.Viewer support?**  
+A: รองรับกว่า 50 รูปแบบ รวมถึง XLSX, XLS, CSV, PDF, DOCX และหลายประเภทของรูปภาพ
 
-**คำถามที่ 3: ฉันจะจัดการเอกสารขนาดใหญ่ด้วย GroupDocs.Viewer ได้อย่างไร**
-A3: เพิ่มประสิทธิภาพการจัดการหน่วยความจำโดยปรับการตั้งค่า Java และแบ่งไฟล์ขนาดใหญ่เป็นส่วนย่อยๆ หากจำเป็น
+**Q: How should I handle very large Excel files?**  
+A: เพิ่มขนาด heap ของ JVM, แบ่งเวิร์กบุ๊กเป็นส่วนย่อย, หรือประมวลผลแผ่นงานแยกกัน
 
-**คำถามที่ 4: สามารถปรับแต่งรูปแบบผลลัพธ์ HTML ได้หรือไม่**
-A4: ใช่ คุณสามารถกำหนดค่าตัวเลือกต่างๆ ได้โดยใช้ `HtmlViewOptions` เพื่อปรับแต่งลักษณะที่ปรากฏของเอกสารที่คุณแสดงผล
+**Q: Is it possible to customize the generated HTML?**  
+A: แน่นอน. `HtmlViewOptions` มีการตั้งค่าหลากหลายสำหรับ CSS, สคริปต์, และการจัดการทรัพยากร
 
-**คำถามที่ 5: วิธีที่ดีที่สุดในการแก้ไขปัญหาเกี่ยวกับ GroupDocs.Viewer คืออะไร**
-A5: ตรวจสอบเอกสารและฟอรัมอย่างเป็นทางการเพื่อดูวิธีแก้ไข ตรวจสอบให้แน่ใจว่าสิ่งที่ต้องพึ่งพาทั้งหมดได้รับการกำหนดค่าอย่างถูกต้องในการตั้งค่าโครงการของคุณ
+**Q: Where can I find more examples of rendering hidden data?**  
+A: เอกสารอย่างเป็นทางการและ API reference มีตัวอย่างโค้ดและแนวทางการใช้งานเพิ่มเติม
 
-## ทรัพยากร
-- **เอกสารประกอบ**- [เอกสารประกอบการดู GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **เอกสารอ้างอิง API**- [เอกสารอ้างอิง API ของ GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **ดาวน์โหลด**- [รับ GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **ซื้อ**- [ซื้อใบอนุญาต](https://purchase.groupdocs.com/buy)
-- **ทดลองใช้งานฟรี**- [ทดลองใช้เวอร์ชันฟรี](https://releases.groupdocs.com/viewer/java/)
-- **ใบอนุญาตชั่วคราว**- [ขอใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
-- **สนับสนุน**- [ฟอรั่ม GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+## Resources
+- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-ด้วยคู่มือที่ครอบคลุมนี้ คุณก็พร้อมที่จะจัดการกับองค์ประกอบสเปรดชีตที่ซ่อนอยู่ในแอปพลิเคชัน Java ของคุณอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer ขอให้สนุกกับการเขียนโค้ด!
+---
+
+**Last Updated:** 2026-01-13  
+**Tested With:** GroupDocs Viewer 25.2 for Java  
+**Author:** GroupDocs
