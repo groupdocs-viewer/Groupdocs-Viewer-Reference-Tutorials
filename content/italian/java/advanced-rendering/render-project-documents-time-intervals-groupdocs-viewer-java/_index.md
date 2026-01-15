@@ -1,47 +1,52 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come visualizzare i documenti di progetto entro intervalli di tempo specifici utilizzando l'API GroupDocs.Viewer in Java. Migliora la gestione dei documenti e la visualizzazione della cronologia."
-"title": "Rendering dei documenti di progetto per intervalli di tempo utilizzando GroupDocs.Viewer per Java"
-"url": "/it/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: Scopri come utilizzare GroupDocs Viewer per generare HTML dai documenti
+  di progetto entro intervalli di tempo specifici. Questa guida copre l'installazione,
+  il codice e casi d'uso reali.
+keywords:
+- render project documents
+- time intervals Java
+- GroupDocs Viewer API
+title: Come utilizzare GroupDocs Viewer per visualizzare i documenti di progetto per
+  intervalli di tempo in Java
 type: docs
+url: /it/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/
+weight: 1
 ---
-# Come implementare i documenti di progetto di rendering con intervalli di tempo utilizzando GroupDocs.Viewer per Java
 
-## Introduzione
+# Come utilizzare GroupDocs Viewer per renderizzare documenti di progetto per intervalli di tempo in Java
 
-Hai difficoltà a visualizzare i documenti di progetto entro intervalli di tempo specifici? Questo tutorial completo ti guiderà nella risoluzione di questo problema utilizzando la potente API GroupDocs.Viewer in Java. Che si tratti di gestire le timeline o di visualizzare le fasi di un progetto, padroneggiare questa funzionalità può migliorare significativamente le tue capacità di gestione dei documenti.
+Se stai cercando **come utilizzare GroupDocs** per renderizzare i piani di progetto in una finestra temporale specifica, sei nel posto giusto. In questo tutorial percorreremo l'intero processo—dalla configurazione di Maven alla generazione di HTML dai documenti di progetto—così potrai incorporare visualizzazioni precise della timeline direttamente nelle tue applicazioni.
 
-### Cosa imparerai:
-- Impostazione e configurazione di GroupDocs.Viewer per Java
-- Il processo passo dopo passo di rendering dei documenti di progetto entro un intervallo di tempo specificato
-- Opzioni di configurazione chiave e suggerimenti per la risoluzione dei problemi
-- Applicazioni pratiche di questa implementazione
+![Renderizza documenti di progetto per intervalli di tempo con GroupDocs.Viewer per Java](/viewer/advanced-rendering/render-project-documents-by-time-intervals-java.png)
 
-Cominciamo con i prerequisiti di cui hai bisogno prima di iniziare!
+## Risposte rapide
+- **Cosa fa la funzionalità?** Renderizza solo la parte di un file Microsoft Project compresa tra una data di inizio e una data di fine.  
+- **Quale formato di output viene utilizzato?** HTML con risorse incorporate, perfetto per l'integrazione web.  
+- **È necessaria una licenza?** Una versione di prova gratuita è sufficiente per la valutazione; è necessaria una licenza completa per la produzione.  
+- **Posso modificare l'intervallo di date a runtime?** Sì—regola i valori `setStartDate` e `setEndDate` nelle opzioni di rendering.  
+- **È supportato su tutte le versioni di Java?** Funziona con Java 8+ purché si utilizzi GroupDocs.Viewer 25.2 o versioni successive.
+
+## Cos'è “Come utilizzare GroupDocs” in questo contesto?
+GroupDocs Viewer è una libreria Java che converte oltre 100 formati di file in rappresentazioni adatte al web. Quando **come utilizzare GroupDocs** per i file di progetto, ottieni la possibilità di estrarre, visualizzare e condividere i dati di pianificazione senza richiedere Microsoft Project sul lato client.
+
+## Perché renderizzare documenti di progetto con intervalli di tempo?
+- **Analisi mirata:** Mostra solo la fase di tuo interesse (ad es., Q3 2024).  
+- **Prestazioni:** Un output HTML più piccolo significa caricamenti di pagina più rapidi.  
+- **Integrazione:** Incorpora visualizzazioni della timeline in dashboard, portali di reporting o strumenti PM personalizzati.  
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere quanto segue:
+- **GroupDocs.Viewer per Java** versione 25.2 o superiore.  
+- Java Development Kit (JDK) 8 o successivo.  
+- Un IDE come IntelliJ IDEA o Eclipse.  
+- Conoscenza di base di Maven.  
 
-### Librerie e versioni richieste:
-- GroupDocs.Viewer per Java versione 25.2 o successiva.
+## Configurazione di GroupDocs.Viewer per Java
 
-### Requisiti di configurazione dell'ambiente:
-- Java Development Kit (JDK) installato
-- Ambiente di sviluppo integrato (IDE) come IntelliJ IDEA o Eclipse
+### Dipendenza Maven
 
-### Prerequisiti di conoscenza:
-- Conoscenza di base della programmazione Java
-- Familiarità con la configurazione del progetto Maven
-
-## Impostazione di GroupDocs.Viewer per Java
-
-Per iniziare a visualizzare i documenti del progetto, è necessario configurare la libreria GroupDocs.Viewer. Ecco come fare:
-
-**Configurazione Maven**
-
-Includi quanto segue nel tuo `pom.xml` file per aggiungere GroupDocs.Viewer come dipendenza:
+Aggiungi il repository e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,15 +65,15 @@ Includi quanto segue nel tuo `pom.xml` file per aggiungere GroupDocs.Viewer come
 </dependencies>
 ```
 
-### Fasi di acquisizione della licenza
+### Passaggi per l'acquisizione della licenza
 
-1. **Prova gratuita**: Scarica una versione di prova da [Pagina di download di GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **Licenza temporanea**: Ottieni una licenza temporanea per test estesi tramite [questo collegamento](https://purchase.groupdocs.com/temporary-license/).
-3. **Acquistare**: Per l'accesso completo, acquista una licenza su [Pagina di acquisto di GroupDocs](https://purchase.groupdocs.com/buy).
+1. **Prova gratuita** – Scarica una versione di prova dalla [pagina di download di GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+2. **Licenza temporanea** – Ottieni una licenza temporanea per test estesi tramite [questo link](https://purchase.groupdocs.com/temporary-license/).  
+3. **Acquisto** – Per un utilizzo di produzione senza restrizioni, acquista una licenza su [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
-### Inizializzazione di base
+### Inizializzazione di base del Viewer
 
-Una volta configurato GroupDocs.Viewer, puoi inizializzarlo nella tua applicazione Java:
+Il seguente snippet mostra come creare un'istanza `Viewer` che punta a un file Microsoft Project (`.mpp`):
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,27 +81,17 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.mpp")) {
-            // Il tuo codice di rendering va qui
+            // Your rendering code goes here
         }
     }
 }
 ```
 
-## Guida all'implementazione
+## Guida all'implementazione passo‑passo
 
-Questa sezione spiega come eseguire il rendering dei documenti di progetto entro un intervallo di tempo specificato utilizzando GroupDocs.Viewer.
+### 1. Definisci la directory di output
 
-### Rendering dei documenti di progetto con intervalli di tempo
-
-#### Panoramica
-
-Questa funzionalità consente di visualizzare parti specifiche della pianificazione del progetto, agevolando l'analisi e la gestione efficace della sequenza temporale. 
-
-#### Guida passo passo
-
-##### 1. Definire la directory di output
-
-Imposta dove verranno archiviati i file HTML renderizzati:
+Crea una cartella dove verranno salvate le pagine HTML generate:
 
 ```java
 import java.nio.file.Path;
@@ -105,23 +100,19 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderProjectTimeInterv
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Perché questo passaggio?**:La creazione di una directory di output dedicata aiuta a organizzare e gestire in modo efficiente i documenti elaborati.
+*Perché?* Tenere i file renderizzati organizzati rende più semplice servirli da un server web o incorporarli in un'interfaccia utente.
 
-##### 2. Inizializza il visualizzatore
-
-Carica il documento sorgente utilizzando GroupDocs.Viewer:
+### 2. Inizializza il Viewer con il tuo file di progetto
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
-    // Continua con i passaggi di rendering
+    // Continue with rendering steps
 }
 ```
 
-**Perché questo passaggio?**: Il caricamento del documento inizializza il visualizzatore e lo prepara per il rendering.
+*Perché?* Il caricamento del documento prepara il parser interno e rende accessibili i metadati specifici del progetto.
 
-##### 3. Recupera le informazioni di visualizzazione
-
-Ottieni informazioni di visualizzazione specifiche, personalizzate per i documenti di gestione del progetto:
+### 3. Recupera le informazioni di visualizzazione per i file di progetto
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -131,11 +122,9 @@ ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ProjectManagementViewInfo viewInfo = (ProjectManagementViewInfo) viewer.getViewInfo(viewInfoOptions);
 ```
 
-**Perché questo passaggio?**:L'acquisizione di informazioni di visualizzazione specifiche del progetto è fondamentale per impostare gli intervalli di tempo corretti.
+*Perché?* `ProjectManagementViewInfo` fornisce le date di inizio e fine del programma, che utilizzerai in seguito per limitare l'ambito del rendering.
 
-##### 4. Imposta le opzioni di rendering HTML
-
-Configura le opzioni per visualizzare il tuo documento in formato HTML con risorse incorporate:
+### 4. Configura le opzioni di rendering HTML (Genera HTML dal progetto)
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -145,70 +134,71 @@ viewOptions.getProjectManagementOptions().setStartDate(viewInfo.getStartDate());
 viewOptions.getProjectManagementOptions().setEndDate(viewInfo.getEndDate());
 ```
 
-**Perché questo passaggio?**: Impostando le date di inizio e fine si garantisce che vengano visualizzate solo le sezioni rilevanti del documento del progetto.
+*Perché?* Impostare `StartDate` e `EndDate` indica a GroupDocs di **generare HTML dal progetto** solo per i dati compresi in quell'intervallo.
 
-##### 5. Renderizza il documento di progetto
-
-Infine, esegui il processo di rendering:
+### 5. Esegui il processo di rendering
 
 ```java
 viewer.view(viewOptions);
 ```
 
-**Perché questo passaggio?**Il rendering trasforma la configurazione in un output visivo in formato HTML.
+*Perché?* Questa chiamata produce una serie di pagine HTML autonome che rappresentano la porzione temporale selezionata del tuo programma di progetto.
 
-#### Suggerimenti per la risoluzione dei problemi:
-- Assicurarsi che tutti i percorsi dei file siano specificati correttamente.
-- Verificare che il tipo di documento sia supportato da GroupDocs.Viewer per le funzionalità di gestione dei progetti.
+## Problemi comuni e risoluzione
+
+- **Percorsi file errati** – Verifica che sia il file `.mpp` di origine sia la directory di output esistano.  
+- **Tipo di file non supportato** – Assicurati che il documento sia in un formato Project supportato (ad es., `.mpp`, `.mpt`).  
+- **Errori di licenza** – Una licenza di prova può imporre limiti di rendering; passa a una licenza completa per un uso senza restrizioni.  
 
 ## Applicazioni pratiche
 
-1. **Analisi della cronologia del progetto**: Visualizza fasi specifiche dei tuoi progetti per analizzare i progressi e l'allocazione delle risorse.
-2. **Segnalazione**: Genera report con scadenze precise per le parti interessate, evidenziando le milestone completate.
-3. **Integrazione con gli strumenti di gestione dei progetti**: Migliora gli strumenti esistenti con visualizzazioni di sequenza temporale personalizzate utilizzando documenti renderizzati.
-4. **Archiviazione dei dati**: Archivia la documentazione del progetto in un formato web-friendly per facilitarne l'accesso e la condivisione.
+1. **Analisi della timeline di progetto** – Mostra agli stakeholder solo la fase corrente.  
+2. **Reporting automatizzato** – Genera report HTML con limiti temporali per gli aggiornamenti settimanali di stato.  
+3. **Integrazione con dashboard** – Incorpora le pagine renderizzate in strumenti BI o portali personalizzati.  
+4. **Archiviazione** – Conserva uno snapshot web‑friendly del programma di un progetto per riferimento futuro.  
 
-## Considerazioni sulle prestazioni
+## Suggerimenti sulle prestazioni
 
-Per ottimizzare le prestazioni durante il rendering di documenti di grandi dimensioni:
-- Utilizzare risorse incorporate per mantenere i file HTML autonomi.
-- Monitorare l'utilizzo della memoria, soprattutto quando si hanno a che fare con lunghe tempistiche o set di dati.
-- Implementa pratiche efficienti di gestione dei file all'interno della tua applicazione Java.
+- Usa l'opzione *embedded resources* per mantenere ogni pagina HTML autonoma, riducendo le richieste HTTP.  
+- Per progetti molto grandi, considera di renderizzare in blocchi di date più piccoli per mantenere basso l'uso di memoria.  
+- Pulisci i file temporanei dopo averli serviti per evitare l'accumulo di spazio su disco.  
 
 ## Conclusione
 
-Seguendo questa guida, ora avrai le competenze per visualizzare i documenti di progetto entro intervalli di tempo specifici utilizzando GroupDocs.Viewer per Java. Questa funzionalità può migliorare significativamente i tuoi processi di gestione e reporting dei documenti.
+Ora sai **come utilizzare GroupDocs** Viewer per renderizzare documenti di progetto entro un intervallo di tempo specifico e **generare HTML dai dati del progetto** in Java. Questa funzionalità semplifica le visualizzazioni della timeline, migliora l'efficienza del reporting e si integra perfettamente con le moderne applicazioni web.
 
-### Prossimi passi:
-Esplora le funzionalità aggiuntive di GroupDocs.Viewer, come la filigrana o le impostazioni di sicurezza, per personalizzare ulteriormente le tue soluzioni di rendering dei documenti.
+### Prossimi passi
+- Esplora funzionalità aggiuntive del Viewer come watermark, protezione con password o styling CSS personalizzato.  
+- Combina questa pipeline di rendering con un'API REST per fornire visualizzazioni della timeline su richiesta.  
 
-### invito all'azione
-Prova a implementare questa soluzione nel tuo progetto oggi stesso e scopri come semplifica il processo di documentazione!
+## Domande frequenti
 
-## Sezione FAQ
+**D: Quali formati di file supporta GroupDocs.Viewer?**  
+R: GroupDocs.Viewer supporta un'ampia gamma di formati tra cui Microsoft Project (MPP), PDF, Word, Excel, PowerPoint e molti altri.
 
-**1. Quali formati di file supporta GroupDocs.Viewer?**
-GroupDocs.Viewer supporta un'ampia gamma di tipi di documenti, tra cui Microsoft Project (MPP), PDF, Word, Excel e altri.
+**D: Come posso iniziare con una prova gratuita di GroupDocs.Viewer?**  
+R: Puoi scaricare la versione di prova da [qui](https://releases.groupdocs.com/viewer/java/).
 
-**2. Come posso iniziare a utilizzare la prova gratuita di GroupDocs.Viewer?**
-Puoi scaricare la versione di prova da [Qui](https://releases.groupdocs.com/viewer/java/).
+**D: Posso renderizzare i documenti senza incorporare le risorse?**  
+R: Sì, puoi scegliere un'opzione di visualizzazione HTML diversa che fa riferimento a risorse esterne invece di incorporarle.
 
-**3. Posso eseguire il rendering di documenti senza incorporare risorse?**
-Sì, puoi scegliere di visualizzare i documenti senza risorse incorporate utilizzando diverse opzioni di visualizzazione HTML.
+**D: Cosa succede se il mio documento è troppo grande per il rendering?**  
+R: Considera di suddividere il documento in sezioni più piccole o di renderizzare solo l'intervallo di date richiesto, come mostrato sopra.
 
-**4. Cosa succede se il mio documento è troppo grande per essere visualizzato?**
-Si consiglia di ottimizzare il documento o di suddividerlo in parti più piccole prima del rendering.
-
-**5. Come gestisco gli errori di rendering?**
-Assicurarsi che tutte le configurazioni siano corrette e consultare la documentazione di GroupDocs per le tecniche di gestione degli errori.
+**D: Come gestisco gli errori di rendering?**  
+R: Verifica tutte le impostazioni di configurazione, assicurati di avere una licenza valida e consulta la documentazione di GroupDocs per i codici di errore dettagliati.
 
 ## Risorse
-- **Documentazione**: [Documentazione Java di GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Riferimento API**: [Riferimento API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Scaricamento**: [Download di GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Acquistare**: [Acquista la licenza GroupDocs](https://purchase.groupdocs.com/buy)
-- **Prova gratuita**: [Prova la versione gratuita](https://releases.groupdocs.com/viewer/java/)
-- **Licenza temporanea**: [Ottieni una licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- **Supporto**: [Forum di GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentazione**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Riferimento API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
+- **Acquisto**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Prova gratuita**: [Try the Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Licenza temporanea**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Supporto**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Grazie a questa guida sarai pronto a implementare il rendering a intervalli di tempo nei tuoi progetti utilizzando GroupDocs.Viewer per Java.
+---
+
+**Ultimo aggiornamento:** 2026-01-15  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs
