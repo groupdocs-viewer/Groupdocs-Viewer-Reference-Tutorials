@@ -1,37 +1,57 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java를 사용하여 문서의 특정 페이지를 효율적으로 렌더링하는 방법을 알아보세요. 이 가이드에서는 설정, 구성 및 실제 통합에 대해 다룹니다."
-"title": "Java용 GroupDocs.Viewer를 사용하여 문서의 선택된 페이지를 렌더링하는 방법"
-"url": "/ko/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: GroupDocs.Viewer for Java를 사용하여 문서에서 페이지를 렌더링하고 HTML을 생성하는 방법을 배웁니다.
+  이 가이드는 설정, 구성 및 실용적인 통합을 다룹니다.
+keywords:
+- render selected pages GroupDocs.Viewer Java
+- GroupDocs Viewer for Java setup
+- render HTML with embedded resources
+title: GroupDocs.Viewer for Java를 사용하여 페이지 렌더링하는 방법
 type: docs
+url: /ko/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/
+weight: 1
 ---
-# Java용 GroupDocs.Viewer를 사용하여 특정 페이지를 렌더링하는 방법
 
-## 소개
+# GroupDocs.Viewer for Java로 페이지 렌더링하기
 
-웹 애플리케이션에서 문서의 특정 부분만 표시하는 것은 어려울 수 있습니다. 효율적인 데이터 표현에 대한 요구가 커짐에 따라, 사용자에게 부담을 주지 않으면서 선택된 페이지를 렌더링하는 것이 필수적입니다. **Java용 GroupDocs.Viewer** 특정 섹션을 임베드된 리소스와 함께 HTML로 표시하여 이 작업을 간소화합니다. 이 튜토리얼에서는 GroupDocs.Viewer를 사용하여 선택한 페이지를 렌더링하는 방법을 안내합니다.
+웹 애플리케이션에서 문서의 특정 섹션만 표시하는 것은 어려울 수 있습니다. 이 튜토리얼에서는 **페이지를 렌더링하는 방법**을 효율적으로 알아보고, 이를 UI에 직접 삽입할 수 있는 자체 포함 HTML 파일로 변환하는 방법을 배웁니다. 계약서 발췌 부분이든 교과서의 한 챕터이든, 아래 단계에서는 GroupDocs.Viewer for Java를 사용한 전체 과정을 안내합니다.
 
-### 배울 내용:
-- Java 환경에서 GroupDocs.Viewer 설정
-- Viewer API를 사용하여 특정 문서 페이지 렌더링
-- 최적의 디스플레이를 위한 HTML 보기 옵션 구성
-- 실제 사용 사례 및 통합 시나리오
+애플리케이션을 개선할 준비가 되셨나요? 먼저 설정이 올바른지 확인해 보겠습니다.
 
-애플리케이션을 개선할 준비가 되셨나요? 먼저 설정이 올바른지 확인하세요.
+## Quick Answers
+- **“페이지 렌더링”이란 무엇인가요?** 선택한 문서 페이지를 HTML과 같은 보기 가능한 형식으로 변환하는 것입니다.  
+- **어떤 형식이 생성되나요?** 이미지, CSS, 폰트가 포함된 HTML입니다.  
+- **라이선스가 필요합니까?** 평가용으로는 체험판을 사용할 수 있지만, 실제 운영에는 정식 라이선스가 필요합니다.  
+- **연속되지 않은 페이지를 선택할 수 있나요?** 예, 필요한 페이지 번호를 자유롭게 지정할 수 있습니다.  
+- **캐싱을 권장하나요?** 네, 렌더링된 HTML을 캐시하면 자주 접근하는 페이지의 로드 시간이 감소합니다.
 
-## 필수 조건
+![GroupDocs.Viewer for Java를 사용한 문서의 선택된 페이지 렌더링](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
 
-개발 설정이 다음 요구 사항을 충족하는지 확인하세요.
-1. **필수 라이브러리**: 프로젝트에 GroupDocs.Viewer for Java(버전 25.2 이상)를 포함합니다.
-2. **환경 설정**: JDK 8 이상과 IntelliJ IDEA 또는 Eclipse와 같은 IDE를 사용하세요.
-3. **지식 전제 조건**: Java 프로그래밍과 Maven 종속성 관리에 대한 기본적인 지식이 있으면 좋습니다.
+### What You'll Learn
+- Java 환경에 GroupDocs.Viewer 설정하기  
+- Viewer API를 사용해 특정 문서 페이지 렌더링하기  
+- 최적의 표시를 위한 HTML 뷰 옵션 구성하기  
+- 실제 사용 사례 및 통합 시나리오  
 
-## Java용 GroupDocs.Viewer 설정
+## What is Rendering Selected Pages?
+선택된 페이지를 렌더링한다는 것은 DOCX, PDF, PPT 등 원본 문서에서 지정한 페이지만 추출하여 웹 브라우저에서 표시할 수 있는 형식으로 변환하는 것을 의미합니다. 이 방법은 대역폭을 절감하고 페이지 로드 속도를 높이며, 관련 내용만 보여줌으로써 최종 사용자 경험을 개선합니다.
 
-### Maven을 통한 설치
+## Why Generate HTML from a Document?
+문서에서 HTML을 생성하면 브라우저마다 외부 뷰어나 플러그인이 필요 없는 가볍고 플랫폼에 구애받지 않는 표현을 얻을 수 있습니다. 이미지, 폰트, CSS 등을 HTML 파일에 직접 포함하면 배포가 간단해지고 교차 출처 문제도 사라집니다.
 
-다음을 추가하여 GroupDocs.Viewer를 프로젝트에 통합하세요. `pom.xml`:
+## Prerequisites
+
+Ensure your development setup meets these requirements:
+
+1. **필수 라이브러리** – 프로젝트에 GroupDocs.Viewer for Java(버전 25.2 이상)를 포함합니다.  
+2. **환경** – JDK 8 이상; IntelliJ IDEA 또는 Eclipse와 같은 IDE.  
+3. **지식** – 기본 Java 프로그래밍 및 Maven 의존성 관리.  
+
+## Setting Up GroupDocs.Viewer for Java
+
+### Installation via Maven
+
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -50,15 +70,12 @@ type: docs
 </dependencies>
 ```
 
-### 라이센스 취득
+### License Acquisition
+- **무료 체험** – 비용 없이 모든 기능을 체험합니다.  
+- **임시 라이선스** – 체험 기간 이후에도 테스트를 연장합니다.  
+- **정식 구매** – 실제 배포에 필요합니다.
 
-- **무료 체험**: 무료 체험판을 통해 기능을 살펴보세요.
-- **임시 면허**: 장기 테스트를 위해 임시 라이센스를 얻으세요.
-- **구입**: 프로덕션 용도로 전체 라이선스를 구매하세요.
-
-#### 기본 초기화 및 설정
-
-설치 후 Viewer 인스턴스를 초기화합니다.
+#### Basic Initialization and Setup
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -66,25 +83,17 @@ import com.groupdocs.viewer.Viewer;
 public class DocumentViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
-            // 여기에 렌더링 논리가 있습니다
+            // Your rendering logic here
         }
     }
 }
 ```
 
-## 구현 가이드
+## Implementation Guide
 
-### 내장된 리소스를 사용하여 특정 페이지를 HTML로 렌더링
+### Render Specific Pages as HTML with Embedded Resources
 
-이 섹션에서는 Java용 GroupDocs.Viewer를 사용하여 선택한 페이지를 렌더링하는 과정을 안내합니다.
-
-#### 개요
-
-특정 페이지(예: 첫 번째 및 세 번째 페이지)를 HTML 형식으로 변환하고 이러한 파일 내에 리소스를 직접 임베드하여 배포를 간소화합니다.
-
-##### 1단계: 출력 경로 구성
-
-출력 디렉토리와 파일 경로 형식을 정의합니다.
+#### Step 1: Configure Output Path
 
 ```java
 import java.nio.file.Path;
@@ -94,11 +103,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **설명**: `outputDirectory` HTML 파일이 저장되는 위치입니다. `pageFilePathFormat` 렌더링된 페이지에 대한 명명 규칙을 지정합니다.
+- **설명**: `outputDirectory`는 생성된 HTML 파일이 저장되는 위치입니다.  
+- **이름 지정**: `page_{0}.html`은 각 렌더링된 페이지마다 별도의 파일을 생성합니다.
 
-##### 2단계: HTML 보기 옵션 설정
-
-리소스를 직접 내장하기 위한 옵션을 구성합니다.
+#### Step 2: Set Up HTML View Options
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -106,11 +114,9 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-- **설명**: `HtmlViewOptions.forEmbeddedResources()` 이미지와 스타일 등 모든 필수 자산이 HTML 파일에 내장되어 외부 종속성이 줄어들도록 보장합니다.
+- **설명**: `forEmbeddedResources()`는 이미지, CSS, 폰트를 각 HTML 파일에 직접 포함시켜 외부 의존성을 없앱니다.
 
-##### 3단계: 선택한 페이지 렌더링
-
-try-with-resources 문을 사용하여 Viewer 리소스를 효율적으로 관리하세요.
+#### Step 3: Render the Desired Pages
 
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
@@ -118,58 +124,65 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-- **설명**: 그 `view()` 메서드는 구성된 것을 사용합니다 `HtmlViewOptions` 렌더링할 페이지 범위를 지정합니다. 이 경우에는 첫 번째와 세 번째 페이지만 렌더링합니다.
+- **설명**: `view()` 메서드는 `HtmlViewOptions`와 페이지 번호 목록을 받습니다. 이 예시에서는 첫 번째와 세 번째 페이지만 렌더링됩니다.
 
-#### 문제 해결 팁
+### Troubleshooting Tips
+- 출력 디렉터리가 존재하고 애플리케이션에 쓰기 권한이 있는지 확인하세요.  
+- 문서 경로가 정확하고 파일이 손상되지 않았는지 확인하세요.  
+- 라이선스 오류가 발생하면 유효한 라이선스 파일이 애플리케이션과 함께 배치되어 있는지 확인하세요.
 
-- 모든 경로가 올바르게 설정되고 접근 가능한지 확인하세요.
-- 문서 경로가 올바르고 파일이 손상되지 않았는지 확인하세요.
-- 평가판이나 임시 라이센스를 사용하는 경우 라이센스와 관련된 예외 사항을 확인하세요.
+## Practical Applications
 
-## 실제 응용 프로그램
+Rendering selected pages is handy in many scenarios:
 
-특정 문서 페이지를 렌더링하는 것이 유익한 실제 사용 사례는 다음과 같습니다.
+1. **법률 문서** – 계약서의 관련 조항만 표시합니다.  
+2. **교육 플랫폼** – 전체 교과서를 다운로드하지 않고도 특정 챕터를 미리 볼 수 있게 합니다.  
+3. **비즈니스 보고서** – 주요 보고서 섹션을 표시해 이해관계자에게 간결한 요약을 제공합니다.
 
-1. **법률 문서**: 웹 애플리케이션에서 긴 계약서의 관련 섹션을 표시합니다.
-2. **교육 플랫폼**: 학생들이 전체 파일을 다운로드하지 않고도 교과서의 선택한 장을 볼 수 있도록 합니다.
-3. **사업 보고서**: 주요 보고서 세그먼트를 보여줌으로써 이해관계자에게 간결한 요약을 제공합니다.
+## Performance Considerations
 
-## 성능 고려 사항
+- **메모리 관리** – 예시와 같이 try‑with‑resources를 사용해 Viewer 리소스를 즉시 해제합니다.  
+- **캐싱** – 자주 접근하는 페이지에 대해 렌더링된 HTML을 캐시(Redis 또는 메모리) 에 저장합니다.  
+- **리소스 최소화** – 포함된 리소스로 파일 크기가 약간 증가하므로, 대역폭이 문제라면 HTML 출력을 압축하는 것을 고려하세요.
 
-최적의 성능을 보장하려면:
-- 특히 대용량 문서의 경우 리소스를 효율적으로 관리하여 메모리 사용을 최적화합니다.
-- 외부 리소스 종속성을 최소화하는 HTML 보기 옵션을 사용하세요.
-- 자주 액세스하는 문서 페이지에 캐싱 전략을 구현하여 로드 시간을 줄입니다.
+## Common Issues and Solutions
+| Issue | Solution |
+|-------|----------|
+| **파일을 찾을 수 없음** | 절대/상대 경로를 다시 확인하고 파일이 존재하는지 확인하세요. |
+| **대용량 문서에서 메모리 부족** | 필요한 페이지만 렌더링하거나 JVM 힙 크기(`-Xmx`)를 늘리세요. |
+| **HTML에 이미지 누락** | `forEmbeddedResources`가 사용되었는지 확인하세요; 사용하지 않으면 이미지가 별도로 저장됩니다. |
+| **라이선스 오류** | 유효한 `GroupDocs.Viewer.lic` 파일을 애플리케이션 루트에 두거나 프로그래밍 방식으로 경로를 지정하세요. |
 
-## 결론
+## Frequently Asked Questions
 
-Java용 GroupDocs.Viewer를 사용하여 문서의 특정 페이지를 렌더링하는 방법을 알아보았습니다. 이 강력한 도구는 애플리케이션에서 복잡한 데이터의 표시를 간소화하여 사용자 경험과 효율성을 향상시켜 줍니다.
+1. **GroupDocs.Viewer for Java란 무엇인가요?**  
+   PDF, DOCX, PPT 등 90개 이상의 문서 형식을 Java 애플리케이션 내에서 직접 렌더링할 수 있게 해 주는 라이브러리입니다.
 
-### 다음 단계:
-- 다양한 섹션이나 형식을 렌더링해 보세요.
-- 이 기능을 대규모 시스템에 통합하는 방법을 살펴보세요.
+2. **이 방법으로 PDF 페이지를 렌더링할 수 있나요?**  
+   예, Viewer API는 PDF를 포함한 다양한 형식을 지원합니다.
 
-시작할 준비가 되셨나요? 다음 프로젝트에 이 기술들을 적용해 보세요!
+3. **대용량 문서를 효율적으로 처리하려면 어떻게 해야 하나요?**  
+   필요한 페이지만 렌더링하고 캐싱을 활용해 반복 처리를 피하세요.
 
-## FAQ 섹션
+4. **HTML 파일에 리소스를 포함시키는 장점은 무엇인가요?**  
+   페이지당 하나의 자체 포함 파일이 생성되어 배포가 간단해지고 외부 자산 로딩이 사라집니다.
 
-1. **Java용 GroupDocs.Viewer란 무엇입니까?**
-   - 다양한 형식의 문서를 렌더링할 수 있는 라이브러리로, 특히 Java 애플리케이션 내에서의 보기 기능에 초점을 맞춥니다.
-2. **이 방법을 사용하여 PDF 페이지를 렌더링할 수 있나요?**
-   - 네, GroupDocs.Viewer는 PDF를 포함한 다양한 문서 유형을 지원합니다.
-3. **대용량 문서를 효율적으로 처리하려면 어떻게 해야 하나요?**
-   - 메모리 관리 관행을 구현하고 필요한 섹션만 렌더링하는 것을 고려하세요.
-4. **HTML 파일에 리소스를 내장하면 어떤 이점이 있나요?**
-   - 모든 자산이 단일 HTML 파일에 포함되도록 하여 배포를 간소화하고 외부 종속성을 줄입니다.
-5. **Java용 GroupDocs.Viewer에 대한 자세한 정보는 어디에서 찾을 수 있나요?**
-   - 방문하세요 [공식 문서](https://docs.groupdocs.com/viewer/java/) 그리고 탐험하다 [API 참조](https://reference.groupdocs.com/viewer/java/).
+5. **GroupDocs.Viewer for Java에 대한 추가 정보를 어디서 찾을 수 있나요?**  
+   - **Documentation**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+   - **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
 
-## 자원
+## Resources
 
-- **선적 서류 비치**: [GroupDocs.Viewer 문서](https://docs.groupdocs.com/viewer/java/)
-- **API 참조**: [API 참조 가이드](https://reference.groupdocs.com/viewer/java/)
-- **다운로드**: [GroupDocs.Viewer 다운로드 페이지](https://releases.groupdocs.com/viewer/java/)
-- **구입**: [GroupDocs.Viewer 구매](https://purchase.groupdocs.com/buy)
-- **무료 체험**: [GroupDocs 무료 평가판](https://releases.groupdocs.com/viewer/java/)
-- **임시 면허**: [임시 면허를 받으세요](https://purchase.groupdocs.com/temporary-license/)
-- **지원하다**: [GroupDocs 지원 포럼](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **Download**: [GroupDocs.Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)  
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-01-15  
+**Tested With:** GroupDocs.Viewer 25.2  
+**Author:** GroupDocs
