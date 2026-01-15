@@ -1,39 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Bu adım adım kılavuzla GroupDocs.Viewer for Java kullanarak Word belgelerinde izlenen değişiklikleri etkili bir şekilde nasıl oluşturacağınızı öğrenin. Belge yönetim sistemlerini entegre eden geliştiriciler için idealdir."
-"title": "GroupDocs.Viewer for Java Kullanılarak Word Belgelerinde İzlenen Değişiklikler Nasıl Oluşturulur? Kapsamlı Bir Kılavuz"
-"url": "/tr/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: GroupDocs.Viewer for Java kullanarak Word dosyalarında izlenen değişiklikleri
+  nasıl görüntüleyeceğinizi ve belge revizyonlarını nasıl render edeceğinizi öğrenin.
+  Geliştiriciler için bu adım adım kılavuzu izleyin.
+keywords:
+- render tracked changes Word docs GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- Java document rendering
+title: GroupDocs.Viewer for Java ile Word Belgelerindeki İzlenen Değişiklikleri Görüntüleyin
 type: docs
+url: /tr/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
+weight: 1
 ---
-# Java için GroupDocs.Viewer ile Word Belgelerinde İzlenen Değişiklikleri Oluşturma
 
-## giriiş
+# Word Belgelerinde İzlenen Değişiklikleri Render Etme - GroupDocs.Viewer for Java
 
-Java uygulamalarınızdaki Word belgelerinde izlenen değişiklikleri görüntülemekte zorluk mu çekiyorsunuz? İster bir belge yönetim sistemi geliştiriyor olun, ister düzenlemeleri görselleştirmeniz gereksin, bu değişiklikleri sorunsuz bir şekilde işlemek zor olabilir. **Java için GroupDocs.Viewer**, Word belgelerini doğrudan HTML'ye dönüştürmenize olanak sağlayarak bu süreci basitleştiren sağlam bir kütüphanedir.
+Java uygulamanız içinde **render word tracked changes** yapmanız gerekiyorsa, doğru yerdesiniz. Bu rehberde bir Word dosyasında görülen tüm revizyonları, eklemeleri ve silmeleri nasıl görüntüleyip temiz, gezilebilir bir HTML'e dönüştüreceğinizi göstereceğiz. İster bir belge‑inceleme portalı, ister bir hukuk‑dava yönetim sistemi, ya da **view word document revisions** gerektiren herhangi bir çözüm geliştiriyor olun, bu öğretici sizi ortam kurulumundan son render’a kadar tüm süreçte yönlendirecek.
 
-Bu eğitimde, ortamınızı kurma, seçenekleri yapılandırma ve belgeyi işleme gibi temel hususlara odaklanarak bu özelliği adım adım nasıl uygulayacağınızı göstereceğiz. Bu kılavuzun sonunda, etkili bir şekilde entegre edebileceksiniz **Java için GroupDocs.Viewer** Sorunsuz belge görüntüleme için projenize ekleyin.
+![Word Belgelerinde İzlenen Değişiklikleri Render Etme - GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-### Ne Öğreneceksiniz:
-- Java için GroupDocs.Viewer'ı kurma
-- İzlenen değişikliklerin oluşturulması ve uygulanması
-- Gerçek dünya senaryolarında pratik uygulamalar
-- En iyi uygulamalarla performansı optimize etme
+## Hızlı Yanıtlar
+- **“render word tracked changes” ne anlama geliyor?** Bir Word dosyasının revizyon işaretlemesini görsel bir HTML temsiline dönüştürür.  
+- **Bu işlemi hangi kütüphane gerçekleştirir?** GroupDocs.Viewer for Java.  
+- **Bir lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme sürümü yeterlidir; tam lisans tüm kısıtlamaları kaldırır.  
+- **Gerekli Java sürümü nedir?** Java 8 veya daha yenisi.  
+- **İzlenen değişikliklerin render edilmesini devre dışı bırakabilir miyim?** Evet—görünüm seçeneklerinde `setRenderTrackedChanges(false)` ayarlayın.
 
-Bu uygulamaya geçmeden önce ihtiyaç duyacağınız ön koşullara geçelim.
+## “render word tracked changes” nedir?
+Rendering word tracked changes, bir `.docx` dosyasında (eklemeler, silmeler, yorumlar vb.) saklanan revizyon verilerini alıp genellikle HTML olan, bu değişikliklerin görsel olarak vurgulandığı bir görüntülenebilir format üretmek anlamına gelir. Bu, son kullanıcıların Microsoft Word'ü açmadan tam olarak neyin değiştiğini görmesini sağlar.
 
-## Ön koşullar
+## Word belge revizyonlarını görüntülemek için neden GroupDocs.Viewer kullanılmalı?
+GroupDocs.Viewer for Java, düşük seviyeli OpenXML işlemlerini soyutlayarak HTML, PDF veya görüntüler oluşturmak için tek bir API çağrısı sağlar. Ayrıca **view word document revisions** özelliğini kutudan çıkar çıkmaz destekler; stil, gömülü kaynaklar ve değişiklik takibini korur.
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
-- **Gerekli Kütüphaneler**: GroupDocs.Viewer for Java kütüphanesi sürüm 25.2 veya üzeri.
-- **Çevre Kurulumu**: Java geliştirme konusunda temel anlayış ve bağımlılık yönetimi için Maven'a aşinalık.
-- **Bilgi Önkoşulları**Java'da dosya yollarını kullanma ve IO işlemleriyle çalışma konusunda temel bilgi.
+## Önkoşullar
+- **GroupDocs.Viewer for Java** kütüphane sürümü 25.2 ve üzeri.  
+- Bağımlılık yönetimi için Maven.  
+- Temel Java geliştirme ortamı (IDE, JDK 8+).  
 
-## Java için GroupDocs.Viewer Kurulumu
+## GroupDocs.Viewer for Java Kurulumu
 
-Başlamak için, projenizi gerekli bağımlılıkları içerecek şekilde ayarlamanız gerekir. Bunu Maven kullanarak nasıl yapabileceğiniz aşağıda açıklanmıştır:
-
-**Maven Yapılandırması**
+### Maven Yapılandırması
+`pom.xml` dosyanıza GroupDocs deposunu ve bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -52,56 +59,40 @@ Başlamak için, projenizi gerekli bağımlılıkları içerecek şekilde ayarla
 </dependencies>
 ```
 
-### Lisans Edinimi
+### Lisans Alımı
+Ücretsiz deneme ile başlayabilir veya geçici bir değerlendirme lisansı talep edebilirsiniz. Üretime geçmeye hazır olduğunuzda, tüm özelliklerin kilidini açmak için tam bir lisans satın alın.
 
-GroupDocs.Viewer'ı tam olarak kullanmak için ücretsiz denemeyle başlayabilir veya değerlendirme amaçlı geçici bir lisans edinebilirsiniz. Kütüphane ihtiyaçlarınızı karşılıyorsa, herhangi bir sınırlamayı kaldırmak için tam bir lisans satın almayı düşünün.
+### Temel Başlatma
+Java kodunuzda gerekli sınıfları içe aktarın ve giriş ile çıkış için dosya yollarını hazırlayın.
 
-### Temel Başlatma ve Kurulum
+## Word Belgelerinde İzlenen Değişiklikleri Nasıl Render Edilir
 
-Bağımlılığı ekledikten sonra, geliştirme ortamınızın doğru şekilde ayarlandığından emin olun. Gerekli paketleri içe aktarmanız ve Java kodunuzda dosya yollarını düzgün şekilde yapılandırmanız gerekecektir.
+Aşağıda ihtiyacınız olacak tam kodu yansıtan adım adım bir rehber bulunmaktadır. Kod blokları orijinal öğreticiden değiştirilmeden korunmuştur.
 
-## Uygulama Kılavuzu
-
-Java için GroupDocs.Viewer ile izlenen değişiklik oluşturmayı uygulamaya geçelim.
-
-### İzlenen Değişikliklerin İşlenmesine Genel Bakış
-
-Bu özellik, izlenen değişiklikleri içeren Word belgelerini doğrudan HTML olarak işlemenize ve görüntüleme amaçları için tüm değişiklikleri korumanıza olanak tanır. Bu işlevsellik, belge inceleme ve işbirliği özelliklerine ihtiyaç duyan uygulamalar için önemlidir.
-
-#### Adım 1: Çıktı Dizin Yolunu Tanımlayın
-
-Öncelikle işlenmiş dosyaların nereye kaydedilmesini istediğinizi belirterek başlayın:
+### Adım 1: Çıktı Dizini Yolunu Tanımlayın
+Render edilen HTML sayfalarının kaydedileceği bir klasör oluşturun.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-Bu adım, HTML çıktılarınızı depolamak için özel bir dizin oluşturur ve işlenmiş belgelerinizin düzenli bir şekilde depolanmasını sağlar.
-
-#### Adım 2: Her Sayfanın Kaydedilmesi İçin Formatı Belirleyin
-
-Belgenin her sayfasının nasıl kaydedileceğini belirleyin:
+### Adım 2: Her Sayfayı Kaydetme Biçimini Belirleyin
+Oluşturulan her HTML dosyası için bir adlandırma deseni ayarlayın.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-Bu şablon, belgenizin her sayfasının benzersiz bir tanımlayıcıyla kaydedilmesini sağlayarak kolay gezinme ve referans olanağı sağlar.
-
-#### Adım 3: Görünüm Seçeneklerini Yapılandırın
-
-HTML'e gömülü kaynakları dahil etmek ve izlenen değişikliklerin işlenmesini etkinleştirmek için seçenekleri ayarlayın:
+### Adım 3: Görünüm Seçeneklerini Yapılandırın
+Gömülü kaynakları etkinleştirin ve izlenen değişikliklerin render edilmesini açın.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-Burada, yapılandırıyoruz `HtmlViewOptions` resimler veya stil sayfaları gibi kaynakları doğrudan HTML dosyalarınıza yerleştirmek için. Etkinleştirme `setRenderTrackedChanges(true)` izlenen tüm değişikliklerin işlenmesini sağlar.
-
-#### Adım 4: Bir Görüntüleyici Örneği Oluşturun
-
-Son olarak, şunu örneklendirin: `Viewer` Belgenizi sınıflandırın ve işleyin:
+### Adım 4: Bir Viewer Örneği Oluşturun ve Render Edin
+İzlenen değişiklikleri içeren Word belgesini yükleyin ve HTML çıktısını oluşturun.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -109,57 +100,48 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-The `try-with-resources` ifadesi kaynakların verimli bir şekilde yönetilmesini sağlar. `Viewer` Örnek, Word dosyasını işler ve yapılandırılmış tüm görünüm seçeneklerini uygular.
-
-### Sorun Giderme İpuçları
-- Giriş ve çıkış dizinlerinize giden yolların doğru ayarlandığından emin olun.
-- Eğer işleme başarısız olursa, belgenin GroupDocs.Viewer for Java ile uyumluluğunu doğrulayın.
-- Projenizin bağımlılıklarında kütüphanenin doğru sürümünün yer alıp almadığını kontrol edin.
+## Yaygın Sorunlar ve Çözümler
+- **Incorrect file paths** – `YOUR_OUTPUT_DIRECTORY` ve `YOUR_DOCUMENT_DIRECTORY`'nin mevcut klasörlere işaret ettiğinden emin olmak için iki kez kontrol edin.  
+- **Unsupported document format** – Dosyanın GroupDocs.Viewer'ın desteklediği bir `.docx` veya `.doc` olduğundan emin olun.  
+- **Missing license** – Geçerli bir lisans olmadan, kütüphane render yeteneklerini sınırlayabilir.
 
 ## Pratik Uygulamalar
+1. **Document Review Systems** – Gözden geçirenlere tam olarak neyin eklendiğini veya kaldırıldığını gösterir.  
+2. **Legal Case Management** – Sözleşmelerde veya dilekçelerdeki değişiklikleri vurgular.  
+3. **Academic Collaboration** – Birden çok yazarın katkılarını görselleştirir.
 
-İzlenen değişikliklerin işlenmesinin gerçek dünyada çeşitli uygulamaları vardır:
-1. **Belge İnceleme Sistemleri**: Düzeltmeleri açık bir şekilde görüntüleyerek işbirlikçi düzenlemeyi geliştirin.
-2. **Yasal Belge Yönetimi**:Değişiklikleri vurgulayarak inceleme süreçlerini kolaylaştırın.
-3. **Akademik ve Araştırma Makaleleri**:Birden fazla yazarın katkılarını ve düzenlemelerini etkin bir şekilde takip edin.
+## Performans Düşünceleri
+- Bellek kullanımını düşük tutmak için aynı anda sınırlı sayıda belge işleyin.  
+- I/O yükünü azaltmak için verimli dizin yapıları kullanın.  
+- Kütüphaneyi güncel tutun; yeni sürümler performans iyileştirmeleri içerir.
 
-CMS veya belge depolama çözümleri gibi diğer sistemlerle entegrasyon, işlevselliği daha da artırabilir ve Word belgelerini yönetmek için kapsamlı bir çözüm sağlayabilir.
-
-## Performans Hususları
-
-En iyi performansı sağlamak için:
-- Bellek kullanımını etkili bir şekilde yönetmek için aynı anda işlenen belge sayısını sınırlayın.
-- G/Ç işlemlerini en aza indirmek için verimli dosya yolları ve dizin yapıları kullanın.
-- Optimizasyonlardan ve hata düzeltmelerinden faydalanmak için GroupDocs.Viewer for Java'nın en son sürümüne düzenli olarak güncelleme yapın.
-
-Bu en iyi uygulamalara uyulması, belge oluşturma süreçlerinin sorunsuz ve verimli bir şekilde sürdürülmesine yardımcı olacaktır.
-
-## Çözüm
-
-Artık Word belgelerinde izlenen değişikliklerin nasıl uygulanacağını öğrendiniz **Java için GroupDocs.Viewer**Ortamınızı ayarlayarak, görünüm seçeneklerini yapılandırarak ve pratik uygulamaları anlayarak, bu özelliği projelerinize entegre etmek için iyi bir donanıma sahip olursunuz.
-
-Sonraki adımlarda GroupDocs.Viewer'ın diğer özelliklerini keşfetmeyi veya gelişmiş belge yönetimi yetenekleri için ek araçlarla entegre etmeyi düşünün.
+## Sonuç
+Artık GroupDocs.Viewer for Java kullanarak **render word tracked changes** ve **view word document revisions** için eksiksiz, üretime hazır bir yönteme sahipsiniz. Bu adımları uygulamanıza entegre edin ve kullanıcılara güçlü, etkileşimli bir belge‑inceleme deneyimi sunacaksınız.
 
 ## SSS Bölümü
 
-1. **Minimum Java sürümü kaçtır?**  
-   GroupDocs.Viewer gibi modern kütüphanelerle uyumluluk için genellikle Java 8 veya üzeri önerilir.
-2. **Değişiklikleri izlemeden belgeleri işleyebilir miyim?**  
-   Evet, sadece devre dışı bırakın `setRenderTrackedChanges(true)` yapılandırma seçeneklerinizde.
-3. **Büyük belgeleri nasıl verimli bir şekilde yönetebilirim?**  
-   Kaynak kullanımını etkili bir şekilde yönetmek için büyük belgeleri daha küçük bölümlere ayırmayı veya sayfalandırma tekniklerini kullanmayı düşünün.
-4. **GroupDocs.Viewer için lisanslama seçenekleri nelerdir?**  
-   İhtiyaçlarınıza göre ücretsiz denemeyle başlayabilir, geçici lisans seçebilir veya tam lisans satın alabilirsiniz.
-5. **Sorunla karşılaşırsam destek alabileceğim bir yer var mı?**  
-   Evet, GroupDocs forumu ve sağlanan dokümantasyon kaynakları aracılığıyla desteğe erişebilirsiniz.
+1. **Gerekli minimum Java sürümü nedir?**  
+   Java 8 ve üzeri, GroupDocs.Viewer gibi modern kütüphanelerle uyumluluk açısından genellikle önerilir.  
+2. **İzlenen değişiklikler olmadan belgeleri render edebilir miyim?**  
+   Evet, yapılandırma seçeneklerinizde `setRenderTrackedChanges(true)` değerini devre dışı bırakmanız yeterlidir.  
+3. **Büyük belgeleri verimli bir şekilde nasıl yönetebilirim?**  
+   Büyük dosyaları daha küçük bölümlere ayırmayı veya kaynak kullanımını etkili bir şekilde yönetmek için sayfalama tekniklerini kullanmayı düşünün.  
+4. **GroupDocs.Viewer için lisans seçenekleri nelerdir?**  
+   Ücretsiz deneme ile başlayabilir, geçici bir değerlendirme lisansı seçebilir veya proje ihtiyaçlarınıza göre tam bir lisans satın alabilirsiniz.  
+5. **Sorun yaşarsam destek mevcut mu?**  
+   Evet, GroupDocs forumu ve resmi dokümantasyon kaynakları aracılığıyla destek alabilirsiniz.
 
 ## Kaynaklar
-- [Belgeleme](https://docs.groupdocs.com/viewer/java/)
+- [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [İndirmek](https://releases.groupdocs.com/viewer/java/)
-- [Satın almak](https://purchase.groupdocs.com/buy)
+- [İndirme](https://releases.groupdocs.com/viewer/java/)
+- [Satın Al](https://purchase.groupdocs.com/buy)
 - [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
 - [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
 - [Destek](https://forum.groupdocs.com/c/viewer/9)
 
-Bu eğitimin, Word belgelerini izlenen değişikliklerle etkili bir şekilde oluşturmanıza yardımcı olmasını umuyoruz **Java için GroupDocs.Viewer**. Keyifli kodlamalar!
+---
+
+**Son Güncelleme:** 2026-01-15  
+**Test Edilen Versiyon:** GroupDocs.Viewer for Java 25.2  
+**Yazar:** GroupDocs

@@ -1,37 +1,58 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Javaを使用して、ドキュメントから特定のページを効率的にレンダリングする方法を学びます。このガイドでは、セットアップ、構成、そして実践的な統合について説明します。"
-"title": "GroupDocs.Viewer for Java を使用してドキュメントの選択したページをレンダリングする方法"
-"url": "/ja/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: GroupDocs.Viewer for Java を使用して、ドキュメントからページをレンダリングし、HTML を生成する方法を学びます。このガイドでは、セットアップ、構成、実践的な統合について説明します。
+keywords:
+- render selected pages GroupDocs.Viewer Java
+- GroupDocs Viewer for Java setup
+- render HTML with embedded resources
+title: GroupDocs.Viewer for Java を使用したページのレンダリング方法
 type: docs
+url: /ja/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer for Java で特定のページをレンダリングする方法
 
-## 導入
+# GroupDocs.Viewer for Javaでページをレンダリングする方法
 
-ウェブアプリケーションでドキュメントの特定のセクションのみを表示するのは難しい場合があります。効率的なデータ表示のニーズが高まる中、ユーザーに負担をかけずに特定のページのみをレンダリングすることが不可欠です。 **GroupDocs.Viewer（Java用）** GroupDocs.Viewerは、特定のセクションを埋め込みリソースを含むHTMLとして表示できるようにすることで、この作業を簡素化します。このチュートリアルでは、GroupDocs.Viewerを使用して選択したページをレンダリングする方法を説明します。
+Webアプリケーションでドキュメントの特定のセクションだけを表示するのは難しい場合があります。このチュートリアルでは、**ページのレンダリング方法**を効率的に学び、自己完結型のHTMLファイルに変換してUIに直接埋め込む方法を紹介します。契約書の抜粋や教科書の単一章を表示したい場合でも、以下の手順でGroupDocs.Viewer for Javaを使用した完全なプロセスを案内します。
 
-### 学習内容:
-- Java環境でGroupDocs.Viewerを設定する
-- Viewer API を使用して特定のドキュメント ページをレンダリングする
-- 最適な表示のための HTML 表示オプションの設定
-- 実用的なユースケースと統合シナリオ
+アプリケーションを強化する準備はできましたか？まずはセットアップが正しいことを確認しましょう。
 
-アプリケーションを強化する準備はできましたか?まず、設定が正しいことを確認しましょう。
+## クイック回答
+- **render pagesとは何ですか？** 選択したドキュメントページをHTMLなどの表示可能な形式に変換することです。  
+- **どの形式が生成されますか？** 画像、CSS、フォントを埋め込んだHTMLです。  
+- **ライセンスは必要ですか？** 評価にはトライアルで十分ですが、本番環境ではフルライセンスが必要です。  
+- **連続しないページを選択できますか？** はい、必要なページ番号を任意に指定できます。  
+- **キャッシュは推奨されますか？** もちろんです。レンダリングされたHTMLをキャッシュすると、頻繁にアクセスされるページのロード時間が短縮されます。
+
+![Render Selected Pages of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
+
+### 学べること
+- Java環境でGroupDocs.Viewerを設定する方法  
+- Viewer APIを使用して特定のドキュメントページをレンダリングする方法  
+- 最適な表示のためのHTMLビューオプションの構成  
+- 実用的なユースケースと統合シナリオ  
+
+## 選択ページのレンダリングとは？
+
+選択ページのレンダリングとは、ソースドキュメント（DOCX、PDF、PPT など）から指定したページだけを抽出し、Webブラウザで表示できる形式に変換することを指します。このアプローチにより帯域幅が削減され、ページ読み込みが高速化し、関連するコンテンツだけを表示することでエンドユーザー体験が向上します。
+
+## なぜドキュメントからHTMLを生成するのか？
+
+ドキュメントからHTMLを生成すると、軽量でプラットフォームに依存しない表現が得られ、外部ビューアやプラグインを必要とせずにブラウザ間で動作します。画像、フォント、CSS などのリソースをHTMLファイルに直接埋め込むことで、デプロイが簡素化され、クロスオリジンの問題も解消されます。
 
 ## 前提条件
 
-開発セットアップが次の要件を満たしていることを確認してください。
-1. **必要なライブラリ**GroupDocs.Viewer for Java (バージョン 25.2 以降) をプロジェクトに含めます。
-2. **環境設定**JDK 8 以上と、IntelliJ IDEA や Eclipse などの IDE を使用します。
-3. **知識の前提条件**Java プログラミングと Maven 依存関係管理に関する基本的な知識があると役立ちます。
+開発環境が以下の要件を満たしていることを確認してください。
 
-## GroupDocs.Viewer を Java 用にセットアップする
+1. **Required Libraries** – プロジェクトに GroupDocs.Viewer for Java（バージョン 25.2 以降）を含めます。  
+2. **Environment** – JDK 8 以上；IntelliJ IDEA や Eclipse などの IDE。  
+3. **Knowledge** – 基本的な Java プログラミングと Maven 依存管理の知識。
 
-### Maven経由のインストール
+## GroupDocs.Viewer for Java のセットアップ
 
-GroupDocs.Viewerをプロジェクトに統合するには、次のコードをプロジェクトに追加します。 `pom.xml`：
+### Mavenによるインストール
+
+`pom.xml` にリポジトリと依存関係を追加します：
 
 ```xml
 <repositories>
@@ -51,14 +72,11 @@ GroupDocs.Viewerをプロジェクトに統合するには、次のコードを�
 ```
 
 ### ライセンス取得
-
-- **無料トライアル**無料トライアルで機能をご確認ください。
-- **一時ライセンス**延長テスト用の一時ライセンスを取得します。
-- **購入**実稼働環境で使用する場合はフルライセンスを購入してください。
+- **Free Trial** – コストなしで全機能を試せます。  
+- **Temporary License** – トライアル期間を超えてテストしたい場合に利用できます。  
+- **Full Purchase** – 本番環境での導入には必須です。
 
 #### 基本的な初期化とセットアップ
-
-インストール後、Viewer インスタンスを初期化します。
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -66,7 +84,7 @@ import com.groupdocs.viewer.Viewer;
 public class DocumentViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
-            // レンダリングロジックをここに記述します
+            // Your rendering logic here
         }
     }
 }
@@ -74,17 +92,9 @@ public class DocumentViewer {
 
 ## 実装ガイド
 
-### 特定のページを埋め込みリソースを含む HTML としてレンダリングする
+### 埋め込みリソース付きHTMLとして特定ページをレンダリング
 
-このセクションでは、GroupDocs.Viewer for Java を使用して選択したページをレンダリングするプロセスについて説明します。
-
-#### 概要
-
-特定のページ (例: 1 ページ目と 3 ページ目) を HTML 形式に変換し、これらのファイル内にリソースを直接埋め込むことで、展開を簡素化します。
-
-##### ステップ1: 出力パスを構成する
-
-出力ディレクトリとファイル パスの形式を定義します。
+#### 手順 1: 出力パスの設定
 
 ```java
 import java.nio.file.Path;
@@ -94,11 +104,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **説明**： `outputDirectory` HTMLファイルが保存される場所です。 `pageFilePathFormat` レンダリングされたページの命名規則を指定します。
+- **Explanation**: `outputDirectory` は生成されたHTMLファイルの保存先です。  
+- **Naming**: `page_{0}.html` は各レンダリングページごとに別々のファイルを作成します。
 
-##### ステップ2: HTML表示オプションを設定する
-
-リソースを直接埋め込むためのオプションを構成します。
+#### 手順 2: HTMLビューオプションの設定
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -106,11 +115,9 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-- **説明**： `HtmlViewOptions.forEmbeddedResources()` 画像やスタイルなどの必要なアセットがすべて HTML ファイル内に埋め込まれ、外部依存関係が削減されます。
+- **Explanation**: `forEmbeddedResources()` は画像、CSS、フォントを各HTMLファイルに直接埋め込み、外部依存を排除します。
 
-##### ステップ3: 選択したページをレンダリングする
-
-ビューアー リソースを効率的に管理するには、try-with-resources ステートメントを使用します。
+#### 手順 3: 必要なページをレンダリング
 
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
@@ -118,58 +125,68 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-- **説明**：その `view()` メソッドは設定された `HtmlViewOptions` レンダリングするページの範囲を指定します。この場合、1ページ目と3ページ目のみをレンダリングします。
+- **Explanation**: `view()` メソッドは `HtmlViewOptions` とページ番号のリストを受け取ります。この例では 1 ページ目と 3 ページ目だけがレンダリングされます。
 
-#### トラブルシューティングのヒント
+### トラブルシューティングのヒント
+- 出力ディレクトリが存在し、アプリケーションに書き込み権限があることを確認してください。  
+- ドキュメントパスが正しく、ファイルが破損していないことを確認してください。  
+- ライセンスエラーが発生した場合は、有効なライセンスファイルがアプリケーションと同じ場所に配置されているか確認してください。
 
-- すべてのパスが正しく設定され、アクセス可能であることを確認します。
-- ドキュメント パスが正しいこと、およびファイルが破損していないことを確認します。
-- 試用版または一時ライセンスを使用する場合は、ライセンスに関連する例外を確認してください。
+## 実用的な活用例
 
-## 実用的なアプリケーション
+選択ページのレンダリングはさまざまなシナリオで便利です：
 
-特定のドキュメント ページをレンダリングすると便利な実際の使用例をいくつか示します。
+1. **Legal Documents** – 契約書の該当条項だけを表示します。  
+2. **Educational Platforms** – 学生が教科書全体をダウンロードせずに特定章をプレビューできます。  
+3. **Business Reports** – ステークホルダーに重要なレポートセクションだけを表示して要点を簡潔に伝えます。
 
-1. **法的文書**Web アプリケーションで長い契約書の関連セクションを表示します。
-2. **教育プラットフォーム**学生がファイル全体をダウンロードせずに教科書の選択した章を閲覧できるようにします。
-3. **ビジネスレポート**主要なレポートセグメントを紹介することで、関係者に簡潔な概要を提供します。
+## パフォーマンス上の考慮点
 
-## パフォーマンスに関する考慮事項
+- **Memory Management** – 本稿の例のように try‑with‑resources を使用して Viewer リソースを速やかに解放します。  
+- **Caching** – Redis やインメモリなどのキャッシュにレンダリング済みHTMLを保存し、頻繁にアクセスされるページの再処理を防ぎます。  
+- **Resource Minimization** – 埋め込みリソースはファイルサイズを若干増加させます。帯域幅が懸念される場合は HTML 出力を圧縮することを検討してください。
 
-最適なパフォーマンスを確保するには:
-- 特に大きなドキュメントの場合、リソースを効率的に管理してメモリ使用量を最適化します。
-- 外部リソースへの依存を最小限に抑える HTML 表示オプションを使用します。
-- 頻繁にアクセスされるドキュメント ページにキャッシュ戦略を実装して、読み込み時間を短縮します。
+## よくある問題と解決策
 
-## 結論
+| 問題 | 解決策 |
+|------|--------|
+| **File not found** | 絶対パスまたは相対パスを再確認し、ファイルが存在することを確認してください。 |
+| **Out‑of‑memory for large docs** | 必要なページだけをレンダリングするか、JVM のヒープサイズ（`-Xmx`）を増やしてください。 |
+| **Missing images in HTML** | `forEmbeddedResources` が使用されているか確認してください。使用していない場合、画像は別ファイルとして保存されます。 |
+| **License error** | 有効な `GroupDocs.Viewer.lic` ファイルをアプリケーションのルートに配置するか、プログラムでパスを指定してください。 |
 
-GroupDocs.Viewer for Javaを使用して、ドキュメントの特定のページをレンダリングする方法を学びました。この強力なツールは、アプリケーションにおける複雑なデータの表示を簡素化し、ユーザーエクスペリエンスと効率性を向上させます。
+## よくある質問
 
-### 次のステップ:
-- さまざまなセクションや形式のレンダリングを試してください。
-- この機能を大規模なシステムに統合することを検討してください。
+1. **GroupDocs.Viewer for Javaとは何ですか？**  
+   90 以上のドキュメント形式（PDF、DOCX、PPT など）を Java アプリケーション内で直接レンダリングできるライブラリです。
 
-始める準備はできましたか？次のプロジェクトでこれらのテクニックを実装しましょう！
+2. **この方法でPDFページをレンダリングできますか？**  
+   はい。Viewer API は PDF を含む多数のフォーマットをサポートしています。
 
-## FAQセクション
+3. **大きなドキュメントを効率的に処理するにはどうすればよいですか？**  
+   必要なページだけをレンダリングし、キャッシュを活用して繰り返しの処理を回避してください。
 
-1. **GroupDocs.Viewer for Java とは何ですか?**
-   - さまざまな形式でドキュメントをレンダリングできるライブラリ。特に Java アプリケーション内の表示機能に重点を置いています。
-2. **この方法を使用して PDF ページをレンダリングできますか?**
-   - はい、GroupDocs.Viewer は PDF を含む幅広いドキュメント タイプをサポートしています。
-3. **大きな文書を効率的に処理するにはどうすればよいですか?**
-   - メモリ管理プラクティスを実装し、必要なセクションのみをレンダリングすることを検討します。
-4. **HTML ファイルにリソースを埋め込む利点は何ですか?**
-   - すべてのアセットが単一の HTML ファイル内に含まれるようにすることで、外部依存関係を減らし、展開を簡素化します。
-5. **GroupDocs.Viewer for Java の詳細情報はどこで入手できますか?**
-   - 訪問 [公式文書](https://docs.groupdocs.com/viewer/java/) そして探検する [APIリファレンス](https://reference。groupdocs.com/viewer/java/).
+4. **HTMLファイルにリソースを埋め込む利点は何ですか？**  
+   ページごとに単一の自己完結型ファイルが生成され、デプロイが簡素化され、外部アセットの読み込みが不要になります。
+
+5. **GroupDocs.Viewer for Javaに関する詳細情報はどこで見つけられますか？**  
+   - **Documentation**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+   - **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
 
 ## リソース
 
-- **ドキュメント**： [GroupDocs.Viewer ドキュメント](https://docs.groupdocs.com/viewer/java/)
-- **APIリファレンス**： [APIリファレンスガイド](https://reference.groupdocs.com/viewer/java/)
-- **ダウンロード**： [GroupDocs.Viewer ダウンロードページ](https://releases.groupdocs.com/viewer/java/)
-- **購入**： [GroupDocs.Viewerを購入する](https://purchase.groupdocs.com/buy)
-- **無料トライアル**： [GroupDocs無料トライアル](https://releases.groupdocs.com/viewer/java/)
-- **一時ライセンス**： [一時ライセンスを取得する](https://purchase.groupdocs.com/temporary-license/)
-- **サポート**： [GroupDocs サポートフォーラム](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **Download**: [GroupDocs.Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)  
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**最終更新:** 2026-01-15  
+**テスト環境:** GroupDocs.Viewer 25.2  
+**作者:** GroupDocs  
+
+---

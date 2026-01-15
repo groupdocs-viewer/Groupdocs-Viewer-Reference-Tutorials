@@ -1,39 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Узнайте, как эффективно отображать отслеживаемые изменения в документах Word с помощью GroupDocs.Viewer для Java с помощью этого пошагового руководства. Идеально подходит для разработчиков, интегрирующих системы управления документами."
-"title": "Как отобразить отслеженные изменения в документах Word с помощью GroupDocs.Viewer для Java&#58; Подробное руководство"
-"url": "/ru/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: Узнайте, как отображать отслеживаемые изменения в Word и просматривать
+  ревизии документов Word в файлах Word с помощью GroupDocs.Viewer для Java. Следуйте
+  этому пошаговому руководству для разработчиков.
+keywords:
+- render tracked changes Word docs GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- Java document rendering
+title: Отображение отслеживаемых изменений Word в документах Word с помощью GroupDocs.Viewer
+  для Java
 type: docs
+url: /ru/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
+weight: 1
 ---
-# Отображение отслеживаемых изменений в документах Word с помощью GroupDocs.Viewer для Java
 
-## Введение
+# Render word tracked changes in Word Documents with GroupDocs.Viewer for Java
 
-Не можете отобразить отслеживаемые изменения в документах Word в приложениях Java? Разрабатываете ли вы систему управления документами или вам нужно визуализировать правки, плавная визуализация этих изменений может быть сложной задачей. Войти **GroupDocs.Viewer для Java**— надежная библиотека, которая упрощает этот процесс, позволяя вам преобразовывать документы Word с отслеживаемыми изменениями непосредственно в HTML.
+Если вам нужно **render word tracked changes** в вашем Java‑приложении, вы попали по адресу. В этом руководстве мы покажем, как отобразить каждую правку, вставку и удаление, присутствующие в файле Word, превратив их в чистый, удобный для навигации HTML. Независимо от того, создаёте ли вы портал для рецензирования документов, систему управления юридическими делами или любое решение, которое должно **view word document revisions**, этот туториал проведёт вас через весь процесс — от настройки окружения до финального рендеринга.
 
-В этом руководстве мы пошагово расскажем вам, как реализовать эту функцию, уделяя особое внимание ключевым аспектам, таким как настройка среды, настройка параметров и рендеринг документа. К концу этого руководства вы сможете эффективно интегрировать **GroupDocs.Viewer для Java** в ваш проект для удобного просмотра документов.
+![Render Tracked Changes in Word Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-### Что вы узнаете:
-- Настройка GroupDocs.Viewer для Java
-- Настройка и реализация отслеживаемых изменений рендеринга
-- Практические применения в реальных сценариях
-- Оптимизация производительности с использованием лучших практик
+## Quick Answers
+- **What does “render word tracked changes” mean?** It converts a Word file’s revision markup into a visual HTML representation.  
+- **Which library handles this?** GroupDocs.Viewer for Java.  
+- **Do I need a license?** A free trial works for evaluation; a full license removes all limitations.  
+- **What Java version is required?** Java 8 or newer.  
+- **Can I disable tracked‑changes rendering?** Yes—set `setRenderTrackedChanges(false)` in the view options.
 
-Давайте теперь перейдем к предварительным условиям, которые вам потребуются, прежде чем приступить к реализации.
+## What is “render word tracked changes”?
+Rendering word tracked changes означает извлечение данных о правках, хранящихся внутри файла `.docx` (вставки, удаления, комментарии и т.д.) и создание просматриваемого формата — обычно HTML — где эти изменения визуально выделены. Это позволяет конечным пользователям увидеть, что именно было изменено, без открытия Microsoft Word.
 
-## Предпосылки
+## Why use GroupDocs.Viewer to view word document revisions?
+GroupDocs.Viewer for Java абстрагирует работу с низкоуровневым OpenXML и предоставляет один вызов API для генерации HTML, PDF или изображений. Кроме того, он поддерживает **view word document revisions** «из коробки», сохраняя стили, встроенные ресурсы и отслеживание изменений.
 
-Перед началом убедитесь, что у вас есть следующее:
-- **Необходимые библиотеки**: GroupDocs.Viewer для библиотеки Java версии 25.2 или более поздней.
-- **Настройка среды**: Базовые знания разработки на Java и знакомство с Maven для управления зависимостями.
-- **Необходимые знания**Базовые знания по обработке путей к файлам в Java и работе с операциями ввода-вывода.
+## Prerequisites
+- **GroupDocs.Viewer for Java** library version 25.2 or later.  
+- Maven для управления зависимостями.  
+- Базовая среда разработки Java (IDE, JDK 8+).  
 
-## Настройка GroupDocs.Viewer для Java
+## Setting Up GroupDocs.Viewer for Java
 
-Для начала вам нужно настроить свой проект, чтобы включить необходимые зависимости. Вот как это можно сделать с помощью Maven:
-
-**Конфигурация Maven**
+### Maven Configuration
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -52,56 +60,40 @@ type: docs
 </dependencies>
 ```
 
-### Приобретение лицензии
+### License Acquisition
+Start with a free trial or request a temporary evaluation license. When you’re ready for production, purchase a full license to unlock all features.
 
-Чтобы полностью использовать GroupDocs.Viewer, вы можете начать с бесплатной пробной версии или получить временную лицензию для оценки. Если библиотека соответствует вашим потребностям, рассмотрите возможность приобретения полной лицензии, чтобы снять любые ограничения.
+### Basic Initialization
+Import the required classes in your Java code and prepare file paths for input and output.
 
-### Базовая инициализация и настройка
+## How to render word tracked changes in Word Documents
 
-После добавления зависимости убедитесь, что ваша среда разработки настроена правильно. Вам нужно будет импортировать необходимые пакеты и правильно настроить пути к файлам в вашем коде Java.
+Ниже представлена пошаговая инструкция, полностью соответствующая коду, который вам понадобится. Блоки кода оставлены без изменений из оригинального руководства.
 
-## Руководство по внедрению
-
-Давайте углубимся в реализацию рендеринга отслеживаемых изменений с помощью GroupDocs.Viewer для Java.
-
-### Обзор отслеживаемых изменений в рендеринге
-
-Эта функция позволяет вам визуализировать документы Word, содержащие отслеживаемые изменения, непосредственно как HTML, сохраняя все изменения для целей просмотра. Эта функция необходима для приложений, которым требуются функции обзора документов и совместной работы.
-
-#### Шаг 1: Определите путь к выходному каталогу
-
-Начните с указания места сохранения отрендеренных файлов:
+### Step 1: Define the Output Directory Path
+Create a folder where the rendered HTML pages will be saved.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-На этом этапе создается специальный каталог для хранения ваших HTML-выводов, что обеспечивает организованное хранение обработанных документов.
-
-#### Шаг 2: Укажите формат сохранения каждой страницы
-
-Определите, как будет сохранена каждая страница документа:
+### Step 2: Specify the Format for Saving Each Page
+Set a naming pattern for each generated HTML file.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-Этот шаблон гарантирует, что каждая страница вашего документа будет сохранена с уникальным идентификатором, что упрощает навигацию и ссылки.
-
-#### Шаг 3: Настройте параметры просмотра
-
-Настройте параметры для включения встроенных ресурсов в HTML и включите отображение отслеживаемых изменений:
+### Step 3: Configure View Options
+Enable embedded resources and turn on tracked‑changes rendering.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-Здесь мы настраиваем `HtmlViewOptions` для встраивания ресурсов, таких как изображения или таблицы стилей, непосредственно в ваши HTML-файлы. Включение `setRenderTrackedChanges(true)` обеспечивает отображение всех отслеживаемых изменений.
-
-#### Шаг 4: Создание экземпляра Viewer
-
-Наконец, создайте экземпляр `Viewer` класс и визуализируйте ваш документ:
+### Step 4: Create a Viewer Instance and Render
+Load the Word document that contains tracked changes and generate the HTML output.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -109,57 +101,48 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-The `try-with-resources` заявление гарантирует, что ресурсы управляются эффективно. `Viewer` экземпляр обрабатывает файл Word, применяя все настроенные параметры просмотра.
+## Common Issues and Solutions
+- **Incorrect file paths** – Double‑check that `YOUR_OUTPUT_DIRECTORY` and `YOUR_DOCUMENT_DIRECTORY` point to existing folders.  
+- **Unsupported document format** – Ensure the file is a `.docx` or `.doc` that GroupDocs.Viewer supports.  
+- **Missing license** – Without a valid license, the library may limit rendering capabilities.
 
-### Советы по устранению неполадок
-- Убедитесь, что пути к входным и выходным каталогам заданы правильно.
-- Если рендеринг не удался, проверьте совместимость документа с GroupDocs.Viewer для Java.
-- Проверьте, включена ли правильная версия библиотеки в зависимости вашего проекта.
+## Practical Applications
+1. **Document Review Systems** – Show reviewers exactly what was added or removed.  
+2. **Legal Case Management** – Highlight amendments in contracts or pleadings.  
+3. **Academic Collaboration** – Visualize contributions from multiple authors.
 
-## Практические применения
+## Performance Considerations
+- Process a limited number of documents concurrently to keep memory usage low.  
+- Use efficient directory structures to reduce I/O overhead.  
+- Keep the library up‑to‑date; newer releases contain performance optimizations.
 
-Рендеринг отслеживаемых изменений имеет несколько реальных применений:
-1. **Системы проверки документов**: Улучшите совместное редактирование, наглядно отображая изменения.
-2. **Управление юридическими документами**: Упростите процесс рассмотрения, выделив поправки.
-3. **Академические и исследовательские работы**: эффективно отслеживайте вклады и правки нескольких авторов.
+## Conclusion
+You now have a complete, production‑ready method to **render word tracked changes** and **view word document revisions** using GroupDocs.Viewer for Java. Integrate these steps into your application, and you’ll provide users with a powerful, interactive document‑review experience.
 
-Интеграция с другими системами, такими как CMS или решениями для хранения документов, может дополнительно расширить функциональность, предоставляя комплексное решение для управления документами Word.
+## FAQ Section
 
-## Соображения производительности
+1. **What is the minimum Java version required?**  
+   Java 8 or later is generally recommended for compatibility with modern libraries like GroupDocs.Viewer.  
+2. **Can I render documents without tracked changes?**  
+   Yes, simply disable `setRenderTrackedChanges(true)` in your configuration options.  
+3. **How do I handle large documents efficiently?**  
+   Consider breaking large files into smaller sections or using pagination techniques to manage resource usage effectively.  
+4. **What are the licensing options for GroupDocs.Viewer?**  
+   You can start with a free trial, opt for a temporary evaluation license, or purchase a full license based on your project needs.  
+5. **Is there support available if I encounter issues?**  
+   Yes, you can access support through the GroupDocs forum and official documentation resources.
 
-Для обеспечения оптимальной производительности:
-- Ограничьте количество одновременно обрабатываемых документов, чтобы эффективно управлять использованием памяти.
-- Используйте эффективные пути к файлам и структуры каталогов для минимизации операций ввода-вывода.
-- Регулярно обновляйте GroupDocs.Viewer для Java до последней версии, чтобы воспользоваться преимуществами оптимизации и исправления ошибок.
+## Resources
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Purchase](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support](https://forum.groupdocs.com/c/viewer/9)
 
-Соблюдение этих передовых методов поможет поддерживать бесперебойные и эффективные процессы обработки документов.
+---
 
-## Заключение
-
-Теперь вы узнали, как реализовать отслеживание изменений в документах Word с помощью **GroupDocs.Viewer для Java**. Настроив свою среду, настроив параметры просмотра и поняв практические приложения, вы будете хорошо подготовлены к интеграции этой функции в свои проекты.
-
-В качестве следующих шагов рассмотрите возможность изучения других функций GroupDocs.Viewer или его интеграции с дополнительными инструментами для расширения возможностей управления документами.
-
-## Раздел часто задаваемых вопросов
-
-1. **Какая минимальная версия Java требуется?**  
-   Для совместимости с современными библиотеками, такими как GroupDocs.Viewer, обычно рекомендуется использовать Java 8 или более позднюю версию.
-2. **Могу ли я визуализировать документы без отслеживания изменений?**  
-   Да, просто отключите `setRenderTrackedChanges(true)` в параметрах конфигурации.
-3. **Как эффективно обрабатывать большие документы?**  
-   Рассмотрите возможность разбиения больших документов на более мелкие разделы или использования методов разбиения на страницы для эффективного управления использованием ресурсов.
-4. **Какие существуют варианты лицензирования GroupDocs.Viewer?**  
-   Вы можете начать с бесплатной пробной версии, выбрать временную лицензию или приобрести полную лицензию в зависимости от ваших потребностей.
-5. **Могу ли я получить поддержку, если у меня возникнут проблемы?**  
-   Да, вы можете получить поддержку через форум GroupDocs и предоставленные ресурсы документации.
-
-## Ресурсы
-- [Документация](https://docs.groupdocs.com/viewer/java/)
-- [Ссылка на API](https://reference.groupdocs.com/viewer/java/)
-- [Скачать](https://releases.groupdocs.com/viewer/java/)
-- [Покупка](https://purchase.groupdocs.com/buy)
-- [Бесплатная пробная версия](https://releases.groupdocs.com/viewer/java/)
-- [Временная лицензия](https://purchase.groupdocs.com/temporary-license/)
-- [Поддерживать](https://forum.groupdocs.com/c/viewer/9)
-
-Мы надеемся, что это руководство помогло вам эффективно обрабатывать документы Word с отслеживанием изменений с помощью **GroupDocs.Viewer для Java**. Удачного кодирования!
+**Last Updated:** 2026-01-15  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs

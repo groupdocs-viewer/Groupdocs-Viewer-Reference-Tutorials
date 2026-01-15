@@ -1,39 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come visualizzare in modo efficiente le revisioni nei documenti Word utilizzando GroupDocs.Viewer per Java con questa guida passo passo. Ideale per gli sviluppatori che integrano sistemi di gestione documentale."
-"title": "Come visualizzare le modifiche tracciate nei documenti Word utilizzando GroupDocs.Viewer per Java&#58; una guida completa"
-"url": "/it/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: Scopri come rendere le modifiche tracciate di Word e visualizzare le
+  revisioni dei documenti Word nei file Word utilizzando GroupDocs.Viewer per Java.
+  Segui questa guida passo passo per gli sviluppatori.
+keywords:
+- render tracked changes Word docs GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- Java document rendering
+title: Visualizza le modifiche tracciate di Word nei documenti Word con GroupDocs.Viewer
+  per Java
 type: docs
+url: /it/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
+weight: 1
 ---
-# Visualizzazione delle modifiche tracciate nei documenti Word con GroupDocs.Viewer per Java
 
-## Introduzione
+# Visualizzare le modifiche tracciate di Word nei documenti Word con GroupDocs.Viewer per Java
 
-Hai difficoltà a visualizzare le modifiche tracciate nei documenti Word all'interno delle tue applicazioni Java? Che tu stia sviluppando un sistema di gestione documentale o abbia bisogno di visualizzare le modifiche, renderle fluide può essere un'impresa. **GroupDocs.Viewer per Java**, la solida libreria che semplifica questo processo consentendo di elaborare documenti Word con modifiche tracciate direttamente in HTML.
+Se hai bisogno di **render word tracked changes** all'interno della tua applicazione Java, sei nel posto giusto. In questa guida ti mostreremo come visualizzare ogni revisione, inserimento e cancellazione presenti in un file Word, trasformandolo in un HTML pulito e navigabile. Che tu stia costruendo un portale di revisione documenti, un sistema di gestione di casi legali o qualsiasi soluzione che debba **view word document revisions**, questo tutorial ti accompagna attraverso l'intero processo—dalla configurazione dell'ambiente al rendering finale.
 
-In questo tutorial, ti guideremo passo dopo passo nell'implementazione di questa funzionalità, concentrandoci su aspetti chiave come la configurazione dell'ambiente, la configurazione delle opzioni e il rendering del documento. Al termine di questa guida, sarai in grado di integrare efficacemente **GroupDocs.Viewer per Java** nel tuo progetto per una visualizzazione fluida dei documenti.
+![Visualizzare le modifiche tracciate nei documenti Word con GroupDocs.Viewer per Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-### Cosa imparerai:
-- Impostazione di GroupDocs.Viewer per Java
-- Configurazione e implementazione del rendering delle modifiche tracciate
-- Applicazioni pratiche in scenari reali
-- Ottimizzazione delle prestazioni con le migliori pratiche
+## Risposte rapide
+- **Che cosa significa “render word tracked changes”?** Converte il markup delle revisioni di un file Word in una rappresentazione HTML visuale.  
+- **Quale libreria gestisce questo?** GroupDocs.Viewer for Java.  
+- **Ho bisogno di una licenza?** Una prova gratuita è sufficiente per la valutazione; una licenza completa rimuove tutte le limitazioni.  
+- **Quale versione di Java è richiesta?** Java 8 o successiva.  
+- **Posso disabilitare il rendering delle modifiche tracciate?** Sì—imposta `setRenderTrackedChanges(false)` nelle opzioni di visualizzazione.
 
-Passiamo ora ai prerequisiti necessari prima di immergerci in questa implementazione.
+## Cos'è “render word tracked changes”?
+Il rendering delle modifiche tracciate di Word consiste nel prendere i dati di revisione memorizzati all'interno di un file `.docx` (inserimenti, cancellazioni, commenti, ecc.) e produrre un formato visualizzabile—solitamente HTML—dove tali modifiche sono evidenziate visivamente. Questo consente agli utenti finali di vedere esattamente cosa è stato modificato senza aprire Microsoft Word.
+
+## Perché usare GroupDocs.Viewer per visualizzare le revisioni dei documenti Word?
+GroupDocs.Viewer for Java astrae la gestione a basso livello di OpenXML e ti offre una singola chiamata API per generare HTML, PDF o immagini. Supporta inoltre **view word document revisions** pronto all'uso, preservando lo stile, le risorse incorporate e il tracciamento delle modifiche.
 
 ## Prerequisiti
+- **GroupDocs.Viewer for Java** versione della libreria 25.2 o successiva.  
+- Maven per la gestione delle dipendenze.  
+- Ambiente di sviluppo Java di base (IDE, JDK 8+).  
 
-Prima di iniziare, assicurati di avere quanto segue:
-- **Librerie richieste**: GroupDocs.Viewer per la libreria Java versione 25.2 o successiva.
-- **Configurazione dell'ambiente**: Una conoscenza di base dello sviluppo Java e familiarità con Maven per la gestione delle dipendenze.
-- **Prerequisiti di conoscenza**Conoscenza di base della gestione dei percorsi dei file in Java e dell'utilizzo delle operazioni di I/O.
+## Configurazione di GroupDocs.Viewer per Java
 
-## Impostazione di GroupDocs.Viewer per Java
-
-Per iniziare, devi configurare il tuo progetto includendo le dipendenze necessarie. Ecco come puoi farlo usando Maven:
-
-**Configurazione Maven**
+### Configurazione Maven
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -53,55 +61,39 @@ Per iniziare, devi configurare il tuo progetto includendo le dipendenze necessar
 ```
 
 ### Acquisizione della licenza
+Inizia con una prova gratuita o richiedi una licenza di valutazione temporanea. Quando sei pronto per la produzione, acquista una licenza completa per sbloccare tutte le funzionalità.
 
-Per utilizzare appieno GroupDocs.Viewer, puoi iniziare con una prova gratuita o ottenere una licenza temporanea a scopo di valutazione. Se la libreria soddisfa le tue esigenze, valuta l'acquisto di una licenza completa per rimuovere eventuali limitazioni.
+### Inizializzazione di base
+Importa le classi necessarie nel tuo codice Java e prepara i percorsi dei file per l'input e l'output.
 
-### Inizializzazione e configurazione di base
+## Come render word tracked changes nei documenti Word
 
-Dopo aver aggiunto la dipendenza, assicurati che l'ambiente di sviluppo sia configurato correttamente. Dovrai importare i pacchetti necessari e configurare correttamente i percorsi dei file nel codice Java.
+Di seguito trovi una guida passo‑passo che rispecchia il codice esatto di cui avrai bisogno. I blocchi di codice sono mantenuti invariati rispetto al tutorial originale.
 
-## Guida all'implementazione
-
-Analizziamo ora l'implementazione del rendering delle modifiche tracciate con GroupDocs.Viewer per Java.
-
-### Panoramica delle modifiche tracciate del rendering
-
-Questa funzionalità consente di visualizzare i documenti Word che contengono revisioni direttamente in formato HTML, mantenendo tutte le modifiche per la visualizzazione. Questa funzionalità è essenziale per le applicazioni che necessitano di funzionalità di revisione e collaborazione dei documenti.
-
-#### Passaggio 1: definire il percorso della directory di output
-
-Inizia specificando dove vuoi che vengano salvati i file renderizzati:
+### Passo 1: Definisci il percorso della directory di output
+Crea una cartella dove verranno salvate le pagine HTML renderizzate.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-Questo passaggio consente di impostare una directory dedicata in cui archiviare gli output HTML, garantendo così l'archiviazione organizzata dei documenti renderizzati.
-
-#### Passaggio 2: specificare il formato per il salvataggio di ciascuna pagina
-
-Determina come verrà salvata ogni pagina del documento:
+### Passo 2: Specifica il formato per salvare ogni pagina
+Imposta un modello di denominazione per ogni file HTML generato.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-Questo modello garantisce che ogni pagina del documento venga salvata con un identificatore univoco, facilitando la navigazione e la consultazione.
-
-#### Passaggio 3: configurare le opzioni di visualizzazione
-
-Imposta le opzioni per includere risorse incorporate nell'HTML e abilitare il rendering delle modifiche tracciate:
+### Passo 3: Configura le opzioni di visualizzazione
+Abilita le risorse incorporate e attiva il rendering delle modifiche tracciate.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-Qui configuriamo `HtmlViewOptions` per incorporare risorse come immagini o fogli di stile direttamente nei file HTML. Abilitazione `setRenderTrackedChanges(true)` assicura che tutte le modifiche tracciate vengano visualizzate.
-
-#### Passaggio 4: creare un'istanza di Viewer
-
-Infine, istanziare il `Viewer` classifica e rendi il tuo documento:
+### Passo 4: Crea un'istanza Viewer e renderizza
+Carica il documento Word che contiene le modifiche tracciate e genera l'output HTML.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -109,57 +101,48 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-IL `try-with-resources` dichiarazione garantisce che le risorse siano gestite in modo efficiente. La `Viewer` l'istanza elabora il file Word, applicando tutte le opzioni di visualizzazione configurate.
-
-### Suggerimenti per la risoluzione dei problemi
-- Assicurati che i percorsi per le directory di input e output siano impostati correttamente.
-- Se il rendering fallisce, verificare la compatibilità del documento con GroupDocs.Viewer per Java.
-- Controlla se la versione corretta della libreria è inclusa nelle dipendenze del tuo progetto.
+## Problemi comuni e soluzioni
+- **Percorsi file errati** – Verifica che `YOUR_OUTPUT_DIRECTORY` e `YOUR_DOCUMENT_DIRECTORY` puntino a cartelle esistenti.  
+- **Formato documento non supportato** – Assicurati che il file sia un `.docx` o `.doc` supportato da GroupDocs.Viewer.  
+- **Licenza mancante** – Senza una licenza valida, la libreria potrebbe limitare le capacità di rendering.
 
 ## Applicazioni pratiche
-
-Il rendering delle modifiche tracciate ha diverse applicazioni pratiche:
-1. **Sistemi di revisione dei documenti**: Migliora la modifica collaborativa visualizzando chiaramente le revisioni.
-2. **Gestione dei documenti legali**: Facilitare i processi di revisione evidenziando gli emendamenti.
-3. **Articoli accademici e di ricerca**: Tieni traccia in modo efficiente dei contributi e delle modifiche di più autori.
-
-L'integrazione con altri sistemi, come CMS o soluzioni di archiviazione documenti, può migliorare ulteriormente la funzionalità, offrendo una soluzione completa per la gestione dei documenti Word.
+1. **Sistemi di revisione documenti** – Mostra ai revisori esattamente cosa è stato aggiunto o rimosso.  
+2. **Gestione dei casi legali** – Evidenzia le modifiche nei contratti o nei ricorsi.  
+3. **Collaborazione accademica** – Visualizza i contributi di più autori.
 
 ## Considerazioni sulle prestazioni
-
-Per garantire prestazioni ottimali:
-- Limitare il numero di documenti elaborati simultaneamente per gestire in modo efficace l'utilizzo della memoria.
-- Utilizzare percorsi di file e strutture di directory efficienti per ridurre al minimo le operazioni di I/O.
-- Aggiornare regolarmente GroupDocs.Viewer per Java all'ultima versione per beneficiare di ottimizzazioni e correzioni di bug.
-
-Il rispetto di queste buone pratiche contribuirà a mantenere processi di rendering dei documenti fluidi ed efficienti.
+- Elabora un numero limitato di documenti contemporaneamente per mantenere basso l'uso della memoria.  
+- Usa strutture di directory efficienti per ridurre il carico I/O.  
+- Mantieni la libreria aggiornata; le versioni più recenti contengono ottimizzazioni delle prestazioni.
 
 ## Conclusione
-
-Ora hai imparato come implementare il rendering delle modifiche tracciate nei documenti di Word utilizzando **GroupDocs.Viewer per Java**Impostando l'ambiente, configurando le opzioni di visualizzazione e comprendendo le applicazioni pratiche, sarai pronto a integrare questa funzionalità nei tuoi progetti.
-
-Come passaggi successivi, valuta la possibilità di esplorare altre funzionalità di GroupDocs.Viewer o di integrarlo con strumenti aggiuntivi per migliorare le capacità di gestione dei documenti.
+Ora disponi di un metodo completo e pronto per la produzione per **render word tracked changes** e **view word document revisions** utilizzando GroupDocs.Viewer per Java. Integra questi passaggi nella tua applicazione e offrirai agli utenti un'esperienza di revisione documenti potente e interattiva.
 
 ## Sezione FAQ
 
 1. **Qual è la versione minima di Java richiesta?**  
-   In genere, per la compatibilità con librerie moderne come GroupDocs.Viewer, si consiglia Java 8 o versione successiva.
-2. **Posso eseguire il rendering dei documenti senza tracciare le modifiche?**  
-   Sì, basta disabilitarlo `setRenderTrackedChanges(true)` nelle opzioni di configurazione.
-3. **Come posso gestire in modo efficiente documenti di grandi dimensioni?**  
-   Si consiglia di suddividere i documenti di grandi dimensioni in sezioni più piccole o di utilizzare tecniche di impaginazione per gestire in modo efficace l'utilizzo delle risorse.
+   Java 8 o successiva è generalmente consigliata per la compatibilità con librerie moderne come GroupDocs.Viewer.  
+2. **Posso renderizzare i documenti senza modifiche tracciate?**  
+   Sì, basta disabilitare `setRenderTrackedChanges(true)` nelle opzioni di configurazione.  
+3. **Come gestire documenti di grandi dimensioni in modo efficiente?**  
+   Considera di suddividere i file grandi in sezioni più piccole o di utilizzare tecniche di paginazione per gestire efficacemente l'uso delle risorse.  
 4. **Quali sono le opzioni di licenza per GroupDocs.Viewer?**  
-   Puoi iniziare con una prova gratuita, optare per una licenza temporanea o acquistare una licenza completa in base alle tue esigenze.
-5. **C'è supporto disponibile se riscontro problemi?**  
-   Sì, puoi accedere al supporto tramite il forum di GroupDocs e le risorse di documentazione fornite.
+   Puoi iniziare con una prova gratuita, optare per una licenza di valutazione temporanea o acquistare una licenza completa in base alle esigenze del tuo progetto.  
+5. **È disponibile supporto in caso di problemi?**  
+   Sì, puoi accedere al supporto tramite il forum di GroupDocs e le risorse di documentazione ufficiale.
 
 ## Risorse
 - [Documentazione](https://docs.groupdocs.com/viewer/java/)
 - [Riferimento API](https://reference.groupdocs.com/viewer/java/)
-- [Scaricamento](https://releases.groupdocs.com/viewer/java/)
-- [Acquistare](https://purchase.groupdocs.com/buy)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Acquisto](https://purchase.groupdocs.com/buy)
 - [Prova gratuita](https://releases.groupdocs.com/viewer/java/)
 - [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
 - [Supporto](https://forum.groupdocs.com/c/viewer/9)
 
-Ci auguriamo che questo tutorial ti abbia consentito di eseguire il rendering efficace dei documenti Word con le modifiche tracciate utilizzando **GroupDocs.Viewer per Java**Buona programmazione!
+---
+
+**Ultimo aggiornamento:** 2026-01-15  
+**Testato con:** GroupDocs.Viewer for Java 25.2  
+**Autore:** GroupDocs
