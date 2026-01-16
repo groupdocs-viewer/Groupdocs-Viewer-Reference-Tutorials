@@ -1,38 +1,58 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用 GroupDocs.Viewer for Java 調整 PDF 中的影像質量，有效平衡清晰度和檔案大小。"
-"title": "使用 GroupDocs.Viewer 在 Java 中優化 PDF 影像質量"
-"url": "/zh-hant/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/"
-"weight": 1
+date: '2025-12-20'
+description: 了解如何使用 GroupDocs.Viewer for Java 將 PDF 轉換為 HTML 並調整 PDF 中的圖像品質，平衡清晰度與檔案大小，達致高效。
+keywords:
+- optimize PDF image quality Java
+- adjust image quality GroupDocs.Viewer
+- Java PDF rendering
+title: 如何在 Java 中使用 GroupDocs.Viewer 將 PDF 渲染為 HTML 並優化圖像品質
 type: docs
+url: /zh-hant/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/
+weight: 1
 ---
-# 如何使用 GroupDocs.Viewer 在 Java 中優化 PDF 影像質量
+
+# 如何在 Java 中使用 GroupDocs.Viewer 將 PDF 轉換為 HTML 並優化圖像品質
 
 ## 介紹
 
-您是否希望在轉換 PDF 文件時保持高品質的圖像，同時控製文件大小？平衡影像品質和文件大小至關重要，尤其是在處理大型文件或線上分享時。 **GroupDocs.Viewer for Java** 允許您在將 PDF 渲染為 HTML 格式時有效率地調整影像品質。本教學將指導您使用 GroupDocs.Viewer 優化 PDF 文件中的影像品質。
+如果您需要 **將 PDF 轉換為 HTML** 同時保持內嵌圖像的視覺忠實度，您來對地方了。大型 PDF 常包含高解析度圖片，會使檔案體積膨脹，導致分享或網頁檢視變得笨重。透過 **GroupDocs.Viewer for Java**，您可以在轉換過程中微調圖像品質，取得清晰度與減少 PDF 檔案大小之間的最佳平衡。本教學將完整說明設定步驟、說明為何調整圖像品質很重要，並一步步示範如何以最佳結果 **將 PDF 轉換為 HTML**。
 
-**您將學到什麼：**
-- 為 Java 設定和配置 GroupDocs.Viewer。
-- 有關調整來源 PDF 文件中影像品質的逐步說明。
-- 渲染文件時優化效能的最佳實務。
-- 該功能在現實場景中的實際應用。
+![Optimize PDF Image Quality with GroupDocs.Viewer for Java](/viewer/advanced-rendering/optimize-pdf-image-quality-java.png)
 
-在深入實施之前，讓我們先了解先決條件。
+**您將學到的內容**
 
-## 先決條件
+- 如何安裝與設定 GroupDocs.Viewer for Java。  
+- 完整程式碼示例，說明如何 **將 PDF 轉換為 HTML** 並控制圖像壓縮。  
+- 在不犧牲可讀性的前提下 **減少 PDF 檔案大小** 的技巧。  
+- 圖像品質優化在實務情境中的重要性。
 
-要遵循本教程，請確保您已具備：
-- 對 Java 和基於 Maven 的專案有基本的了解。
-- 已安裝 Java 開發工具包 (JDK) 8 或更高版本。
-- 存取用於運行 Java 應用程式的開發環境。
-- GroupDocs.Viewer Java 函式庫整合到您的專案中。
+在深入程式碼之前，先確保您已備妥所有必要的工具與資源。
 
-## 為 Java 設定 GroupDocs.Viewer
+## 快速回答
+- **「將 PDF 轉換為 HTML」是什麼意思？** 它會把每一頁 PDF 轉換成對應的 HTML 頁面，保留版面與文字。  
+- **為什麼要調整圖像品質？** 以降低檔案大小並提升載入速度，同時保持圖像清晰。  
+- **哪種圖像品質設定最合適？** 先使用 `MEDIUM`；若需列印品質則切換至 `HIGH`。  
+- **需要授權嗎？** 開發階段可使用免費試用版；正式上線需購買正式授權。  
+- **可以批次處理多個 PDF 嗎？** 可以——將渲染邏輯包在文件清單的迴圈中即可。
+
+## 什麼是「將 PDF 轉換為 HTML」？
+將 PDF 轉換為 HTML 意指把 PDF 文件的每一頁轉換成可直接在瀏覽器中顯示的 HTML 表示。GroupDocs.Viewer 會處理字型、版面與圖像，產生即時可用的網頁輸出，無需 PDF 外掛。
+
+## 為什麼要調整 PDF 圖像品質？
+圖像往往是 PDF 體積的主要來源。將圖像品質從 100 % 降至 70 % 左右，即可 **大幅減少 PDF 檔案大小**，加快下載速度並節省頻寬——這對線上文件平台、遠距教學系統與行動應用尤為重要。
+
+## 前置條件
+
+- Java 8 +（JDK 8 或更新版本）  
+- Maven 專案  
+- 基本的 Java 程式知識  
+- 已將 GroupDocs.Viewer for Java 套件加入專案（以下會示範）
+
+## 設定 GroupDocs.Viewer for Java
 
 ### 使用 Maven 安裝
 
-將以下配置新增至您的專案中，以將 GroupDocs.Viewer 包含在您的專案中 `pom.xml` 文件：
+在 `pom.xml` 中加入 GroupDocs 的倉庫與相依性：
 
 ```xml
 <repositories>
@@ -51,33 +71,31 @@ type: docs
 </dependencies>
 ```
 
-### 許可證獲取
+### 取得授權
 
-先免費試用，或申請臨時許可證，即可不受限制地探索各項功能。如需長期使用，請考慮從 [GroupDocs 購買頁面](https://purchase。groupdocs.com/buy).
+先使用免費試用版或申請臨時授權，以免功能受限。長期使用時，請從 [GroupDocs 購買頁面](https://purchase.groupdocs.com/buy) 取得正式授權。
 
-### 基本初始化和設定
+### 基本初始化與設定
 
-將 GroupDocs.Viewer 新增到您的專案後，請在您的 Java 應用程式中初始化它：
+套件加入 classpath 後，即可建立 `Viewer` 實例。以下程式碼示範如何開啟 PDF 檔案——請完整保留原樣：
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// 使用 PDF 文件的路徑初始化 Viewer 對象
+// Initialize Viewer object with the path to your PDF document
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-    // 配置渲染的視圖選項
+    // Configure view options for rendering
 }
 ```
 
-## 實施指南
+## 實作指南
 
-### 優化 GroupDocs.Viewer 中的影像質量
+### 在 **將 PDF 轉換為 HTML** 時優化圖像品質
 
-轉換 PDF 時，優化影像品質至關重要，這樣才能在清晰度和檔案大小之間取得平衡。請依照以下步驟操作：
+平衡圖像清晰度與檔案大小分為兩個步驟：先定義 HTML 輸出位置，接著告訴 Viewer 要使用多少壓縮。
 
 #### 步驟 1：定義輸出目錄路徑
-
-指定轉換後的 HTML 頁面的儲存位置。
 
 ```java
 import java.nio.file.Path;
@@ -86,17 +104,13 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### 步驟2：指定頁面文件格式
-
-對產生的頁面檔案使用動態命名模式。
+#### 步驟 2：指定頁面檔案格式
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### 步驟3：建立HtmlViewOptions對象
-
-配置 `HtmlViewOptions` 嵌入資源並設定文件路徑格式。
+#### 步驟 3：建立 `HtmlViewOptions` 物件
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -105,18 +119,16 @@ import com.groupdocs.viewer.options.ImageQuality;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 步驟4：設定影像品質級別
-
-選擇影像品質設定。這裡我們使用中等品質。
+#### 步驟 4：設定圖像品質等級
 
 ```java
 ImageQuality quality = ImageQuality.MEDIUM;
 viewOptions.getPdfOptions().setImageQuality(quality);
 ```
 
-#### 步驟5：渲染PDF文檔
+> **專業提示：** 列印用 PDF 請使用 `ImageQuality.HIGH`，若需最小檔案則使用 `ImageQuality.LOW`。
 
-使用來源文檔初始化檢視器並使用配置的選項呈現它。
+#### 步驟 5：渲染 PDF 文件
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
@@ -124,50 +136,56 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 }
 ```
 
-### 故障排除提示
-- **文件路徑問題：** 確保相對於專案根目錄的路徑設定正確。
-- **庫兼容性：** 檢查 GroupDocs.Viewer 與其他函式庫之間的相容性問題。
+### 疑難排解小技巧
+- **檔案路徑問題：** 請確認路徑為絕對路徑或相對於專案根目錄的正確相對路徑。  
+- **套件相容性：** 確認 GroupDocs.Viewer 版本與您的 Java 執行環境（Java 8 +）相符。
 
-## 實際應用
+## 實務應用
 
-1. **文件共享平台**：優化 PDF 以供線上查看，且不影響品質。
-2. **歸檔系統**：長期儲存文件時，平衡文件大小和影像清晰度。
-3. **電子學習材料**：透過教育內容中的高品質視覺效果增強參與度。
+1. **文件分享平台** – 提供輕量、網頁友善的 HTML 版 PDF，且不犧牲圖像細節。  
+2. **歸檔系統** – 以較小的檔案大小保存 PDF，同時保留足夠的視覺品質供未來參考。  
+3. **遠距教學教材** – 讓課程 PDF 在學生裝置上快速載入，即使在較慢的網路環境下亦能順暢使用。
 
-整合可能性包括將 GroupDocs.Viewer 與雲端儲存解決方案或文件管理系統結合以簡化工作流程。
+您亦可結合雲端儲存 API（如 AWS S3、Azure Blob）自動化完整的文件處理流程。
 
-## 性能考慮
-- 透過在渲染過程中有效管理資源來優化記憶體使用情況。
-- 根據您的特定用例使用適當的影像品質設置，以最大限度地減少處理時間和資源消耗。
+## 效能考量
+- 在 **try‑with‑resources** 區塊中釋放 `Viewer` 物件（如範例所示），即時釋放原生記憶體。  
+- 盡量選擇最低可接受的 `ImageQuality`，以降低 CPU 使用率，特別是在大量批次處理時。
 
 ## 結論
 
-您已經學習如何使用 GroupDocs.Viewer for Java 優化 PDF 影像質量，從而根據自身需求自訂文件呈現方式。下一步，您可以探索該程式庫的更多高級功能，或將其整合到更大的專案中。
+現在您已掌握完整、可投入生產環境的 **將 PDF 轉換為 HTML** 並 **優化 PDF 圖像品質** 的作法，只要調整 `ImageQuality` 列舉即可符合不同需求，您將看到檔案大小明顯下降，同時不影響視覺體驗。
 
-**號召性用語：** 實施此解決方案並觀察文件管理流程的改進！
+**後續建議：** 探索其他輸出格式（例如 `ImageViewOptions` 產生 PNG/JPEG）、整合文件管理系統，或自行加入 CSS 以客製化產生的 HTML 版面。
 
-## 常見問題部分
+## 常見問題
 
-1. **什麼是 Java 版 GroupDocs.Viewer？**
-   - 一個多功能庫，允許將各種文件格式呈現為 HTML、圖像和其他流行格式。
-   
-2. **如何將輸出格式從 HTML 更改為圖像？**
-   - 使用 `ImageViewOptions` 而不是 `HtmlViewOptions` 配置視圖選項時。
+**Q: 調整圖像品質會影響文字渲染嗎？**  
+A: 不會。`ImageQuality` 只影響點陣圖，文字仍以 HTML/CSS 方式呈現，保持清晰。
 
-3. **GroupDocs.Viewer 能有效處理大型 PDF 檔案嗎？**
-   - 是的，只要有適當的記憶體管理和效能最佳化技術。
-   
-4. **有沒有辦法一次批次處理多個文件？**
-   - 在 Java 應用程式中實作循環來遍歷多個文件路徑。
+**Q: 這個方法能處理受密碼保護的 PDF 嗎？**  
+A: 能。只要在 `Viewer` 建構子中傳入包含密碼的 `LoadOptions` 物件即可。
 
-5. **如何確保列印文件具有最佳影像品質？**
-   - 調整 `ImageQuality` 根據您的列印要求設定為高或自訂等級。
+**Q: 若想將 PDF 轉成單一 HTML 檔而非多頁，該怎麼做？**  
+A: 使用 `HtmlViewOptions.forSinglePage(pageFilePathFormat)`，並設定適當的分頁選項。
 
-## 資源
-- [文件](https://docs.groupdocs.com/viewer/java/)
-- [API 參考](https://reference.groupdocs.com/viewer/java/)
-- [下載 GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [購買許可證](https://purchase.groupdocs.com/buy)
-- [免費試用](https://releases.groupdocs.com/viewer/java/)
-- [臨時執照](https://purchase.groupdocs.com/temporary-license/)
+**Q: 渲染一次能處理多少頁？有沒有上限？**  
+A: 函式庫會以串流方式處理頁面，唯一限制來自可用記憶體與處理時間。
+
+**Q: 如何驗證產生的 HTML 與原始 PDF 完全相同？**  
+A: 在瀏覽器開啟生成的 HTML 進行目視比對；亦可使用視覺回歸測試工具自動化檢查。
+
+**資源**  
+- [文件說明](https://docs.groupdocs.com/viewer/java/)  
+- [API 參考文件](https://reference.groupdocs.com/viewer/java/)  
+- [下載 GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- [購買授權](https://purchase.groupdocs.com/buy)  
+- [免費試用](https://releases.groupdocs.com/viewer/java/)  
+- [臨時授權](https://purchase.groupdocs.com/temporary-license/)  
 - [支援論壇](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**最後更新日期：** 2025-12-20  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs  
