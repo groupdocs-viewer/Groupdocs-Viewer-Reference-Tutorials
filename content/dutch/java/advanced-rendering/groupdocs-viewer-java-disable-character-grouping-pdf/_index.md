@@ -163,19 +163,6 @@ Je hebt nu **hoe je groepering uitschakelt** tijdens PDF‑rendering met GroupDo
 
 Volgende stappen omvatten het verkennen van meer geavanceerde functies van GroupDocs.Viewer en het fijn afstemmen van de prestaties voor grootschalige implementaties.
 
-## FAQ Sectie
-
-1. **Wat bereikt het uitschakelen van karaktergroepering?**  
-   - Het zorgt ervoor dat tekens individueel worden gerenderd, waardoor hun oorspronkelijke lay-out behouden blijft.  
-2. **Kan ik deze functie gebruiken met andere documenttypen?**  
-   - Ja, hoewel de focus hier op PDF's ligt, ondersteunt GroupDocs.Viewer veel formaten.  
-3. **Hoe verwerk ik grote documenten efficiënt?**  
-   - Gebruik batchverwerking en optimaliseer je serverbronnen.  
-4. **Wat moet ik doen als de outputmap niet beschrijfbaar is?**  
-   - Controleer de rechten of kies een andere map met de juiste toegangsrechten.  
-5. **Zijn er licentielimieten voor GroupDocs.Viewer?**  
-   - Een gratis proefversie is beschikbaar, maar langdurig gebruik vereist een aangeschafte licentie.
-
 ## Veelgestelde Vragen
 
 **Q:** *Waarom zou ik überhaupt karaktergroepering moeten uitschakelen?*  

@@ -164,19 +164,6 @@ Teraz opanowałeś **jak wyłączyć grupowanie** podczas renderowania PDF przy 
 
 Kolejne kroki to poznanie bardziej zaawansowanych funkcji GroupDocs.Viewer oraz dopracowanie wydajności przy wdrożeniach na dużą skalę.
 
-## Sekcja FAQ
-
-1. **Co osiąga wyłączenie grupowania znaków?**  
-   - Zapewnia to, że znaki są renderowane indywidualnie, zachowując ich pierwotny układ.  
-2. **Czy mogę używać tej funkcji z innymi typami dokumentów?**  
-   - Tak, choć skupiamy się na PDF, GroupDocs.Viewer obsługuje wiele formatów.  
-3. **Jak efektywnie obsługiwać duże dokumenty?**  
-   - Używaj przetwarzania wsadowego i optymalizuj zasoby serwera.  
-4. **Co zrobić, jeśli katalog wyjściowy nie jest zapisywalny?**  
-   - Sprawdź uprawnienia lub wybierz inny katalog z odpowiednimi prawami dostępu.  
-5. **Czy istnieją ograniczenia licencyjne dla GroupDocs.Viewer?**  
-   - Dostępna jest wersja próbna, ale długoterminowe użycie wymaga zakupionej licencji.
-
 ## Najczęściej zadawane pytania
 
 **Q:** *Dlaczego miałbym w ogóle wyłączyć grupowanie znaków?*  

@@ -20,28 +20,27 @@ weight: 1
 ![GroupDocs.Viewer for Java के साथ नोट्स के साथ प्रस्तुतियों को रेंडर करें](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
 ## Quick Answers
-- **क्या GroupDocs.Viewer PPTX को HTML में बदल सकता है?** हाँ, यह वैकल्पिक नोट रेंडरिंग के साथ सीधे PPTX से HTML रूपांतरण का समर्थन करता है।  
-- **क्या उत्पादन उपयोग के लिए लाइसेंस चाहिए?** व्यावसायिक डिप्लॉयमेंट के लिए एक वैध GroupDocs Viewer लाइसेंस कुंजी आवश्यक है।  
-- **कौन सा Java संस्करण आवश्यक है?** JDK 8 या उससे ऊपर की सिफारिश की जाती है।  
-- **कौन‑से आउटपुट फ़ॉर्मेट उपलब्ध हैं?** HTML, PDF, और इमेज फ़ॉर्मेट समर्थित हैं।  
-- **क्या लाइब्रेरी जोड़ने का एकमात्र तरीका Maven है?** Maven सबसे सामान्य है, लेकिन आप Gradle या मैन्युअल JAR इन्क्लूज़न भी उपयोग कर सकते हैं।
-
+- **क्या GroupDocs.Viewer PPTX को HTML में बदल सकता है?** हाँ, यह Alternative Note Rendering के साथ सीधे PPTX से HTML रूपांतरण का समर्थन करता है।
+- **क्या Product उपयोग के लिए License चाहिए?** Professional Deployment के लिए एक valid GroupDocs Viewer License Key आवश्यक है।
+- **कौन सा Java Version आवश्यक है?** JDK8 या उससे ऊपर की Recommended की जाती है।
+- **कौन से Output Formset Available हैं?** HTML, PDF, और Image Formset Supported हैं।
+- **क्या Library जोड़ने का एकमात्र तरीका Maven है?** Maven सबसे सामान्य है, लेकिन आप Gradle या JAR Inclusion भी उपयोग कर सकते हैं।
 ## pptx to html java क्या है?
-Java में PowerPoint **pptx** फ़ाइल को **HTML** में बदलने से आप स्लाइड्स को वेब ब्राउज़र में Microsoft Office की आवश्यकता के बिना प्रदर्शित कर सकते हैं। GroupDocs.Viewer भारी काम संभालता है, लेआउट, इमेज और स्पीकर नोट्स को संरक्षित करता है।
+Java में PowerPoint **pptx** File को **HTML** में बदलने से आप Slides को Web Browser में Microsoft Office की आवश्यकता के बिना प्रदर्शित कर सकते हैं। GroupDocs.Viewer भारी काम संभालता है, लेआउट, इमेज और स्पीकर नोट्स को सुरक्षित करता है।
 
 ## नोट्स के साथ प्रस्तुतियों को रेंडर क्यों करें?
-स्लाइड्स के साथ स्पीकर नोट्स एम्बेड करने से अंतिम उपयोगकर्ताओं को पूरी संदर्भ मिलता है—यह e‑learning प्लेटफ़ॉर्म, कॉरपोरेट ट्रेनिंग पोर्टल, या किसी भी दस्तावेज़‑प्रबंधन प्रणाली के लिए आदर्श है जहाँ प्रस्तुतकर्ता की टिप्पणी मूल्यवान होती है।
+स्लाइड्स के साथ स्पीकर नोट्स एम्बेड करने से अंतिम उपयोगकर्ताओं को पूरा संदर्भ मिलता है—यह ई-लर्निंग प्लेटफॉर्म, इंटर्नशिप ट्रेनिंग पोर्टल, या किसी भी डॉक्यूमेंट-प्रबंधन सिस्टम के लिए आदर्श है जहाँ प्रस्तुतकर्ता की टिप्पणी मूल्यवान होती है।
 
-## Prerequisites
-1. **Java Development Kit (JDK)** – संस्करण 8 या नया।  
-2. **IDE** – IntelliJ IDEA, Eclipse, या कोई भी Java‑संगत एडिटर।  
-3. **Maven** – डिपेंडेंसी मैनेजमेंट के लिए।  
-4. Java और Maven प्रोजेक्ट संरचना की बुनियादी परिचितता।
+## प्रीरिक्विजिट्स
+1. **Java Development Kit (JDK)** – वर्जन 8 या नया।
+2. **IDE** – IntelliJ IDEA, Eclipse, या कोई भी Java‑संगत एडिटर।
+3. **Maven** – डिपेंडेंसी मैनेजमेंट के लिए।
+4. Java और Maven प्रोजेक्ट स्ट्रक्चर की आधारभूत जानकारी।
 
-## Setting Up GroupDocs.Viewer for Java
+## Java के लिए GroupDocs.Viewer सेट अप करना
 
-### Maven Configuration
-Add the repository and dependency to your `pom.xml`:
+### Maven कॉन्फ़िगरेशन
+अपने `pom.xml` में रिपॉजिटरी और डिपेंडेंसी जोड़ें:
 
 ```xml
 <repositories>
@@ -61,7 +60,7 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### License Acquisition
+### लाइसेंस अधिग्रहण
 पूर्ण क्षमताओं का अन्वेषण करने के लिए, एक मुफ्त ट्रायल के लिए आवेदन करें या एक अस्थायी लाइसेंस का अनुरोध करें। स्थायी लाइसेंसिंग विकल्पों के लिए [GroupDocs Purchase](https://purchase.groupdocs.com/buy) पर जाएँ।
 
 ```java
@@ -73,12 +72,12 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 }
 ```
 
-## Implementation Guide
+## इम्प्लीमेंटेशन गाइड
 
-### Feature: Render a Presentation with Notes
-यह अनुभाग आपको PPTX फ़ाइल को HTML में रेंडर करने के साथ स्पीकर नोट्स शामिल करने की प्रक्रिया दिखाता है।
+### फ़ीचर: नोट्स के साथ प्रेजेंटेशन रेंडर करें
+यह सेक्शन आपको PPTX फ़ाइल को HTML में रेंडर करने के साथ स्पीकर नोट्स शामिल करने की प्रक्रिया दिखाता है।
 
-#### Step 1: Define Output Directory and File Format
+#### स्टेप 1: आउटपुट डायरेक्टरी और फ़ाइल फ़ॉर्मेट तय करें
 HTML पेज़ जहाँ सहेजे जाएंगे, उस फ़ोल्डर को सेट अप करें:
 
 ```java
@@ -89,7 +88,7 @@ Path YOUR_DOCUMENT_DIRECTORY = Paths.get("YOUR_DOCUMENT_DIRECTORY");
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
-#### Step 2: Configure View Options
+#### स्टेप 2: व्यू ऑप्शन कॉन्फ़िगर करें
 ऐसे व्यू विकल्प बनाएं जो रिसोर्सेज़ एम्बेड करें और नोट रेंडरिंग को चालू करें:
 
 ```java
@@ -101,7 +100,7 @@ viewOptions.setRenderNotes(true); // Enable note rendering
 
 > **प्रो टिप:** `forEmbeddedResources` स्व-निहित HTML बनाता है, जो वेब सर्वरों पर डिप्लॉयमेंट को सरल बनाता है।
 
-#### Step 3: Load and Render Document
+#### स्टेप 3: डॉक्यूमेंट लोड और रेंडर करें
 अंत में, ऊपर परिभाषित विकल्पों का उपयोग करके PPTX फ़ाइल को रेंडर करें:
 
 ```java
@@ -113,17 +112,17 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 
 **समस्या निवारण टिप:** सुनिश्चित करें कि फ़ाइल पाथ मौजूद हैं और पढ़ने योग्य हैं। कोई फ़ाइल न मिलने पर `FileNotFoundException` उत्पन्न होगा।
 
-## Practical Applications
+## प्रैक्टिकल एप्लीकेशन
 - **ऑनलाइन लर्निंग प्लेटफ़ॉर्म** – लेक्चर स्लाइड्स को प्रशिक्षक नोट्स के साथ दिखाएँ।  
 - **कॉरपोरेट ट्रेनिंग मॉड्यूल** – स्व‑गति पाठ्यक्रमों के लिए ट्रेनर की टिप्पणी एम्बेड करें।  
 - **डॉक्यूमेंट मैनेजमेंट सिस्टम** – प्रस्तुतियों का वेब‑तैयार प्रीव्यू प्रदान करें, सभी एनोटेशन को संरक्षित रखते हुए।
 
-## Performance Considerations
+## परफॉर्मेंस से जुड़ी बातें
 - **try‑with‑resources** का उपयोग करके `Viewer` को स्वचालित रूप से बंद करें और मेमोरी मुक्त करें।  
 - बार‑बार एक्सेस की जाने वाली प्रस्तुतियों के लिए रेंडर किया गया HTML कैश करें ताकि CPU लोड कम हो।  
 - बड़ी PPTX फ़ाइलों को प्रोसेस करते समय JVM हीप उपयोग की निगरानी करें; यदि `OutOfMemoryError` मिलता है तो हीप आकार बढ़ाने पर विचार करें।
 
-## Common Issues & Solutions
+## आम दिक्कतें और समाधान
 
 | समस्या | समाधान |
 |-------|----------|
@@ -131,7 +130,7 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 | **बड़ी फ़ाइलों पर रेंडरिंग धीमी** | कैशिंग सक्षम करें और सभी पेज़ एक साथ रेंडर करने के बजाय ऑन‑डिमांड रेंडरिंग पर विचार करें। |
 | **फ़ाइल पाथ त्रुटियाँ** | `Paths.get(...)` का उपयोग करें और रिलेटिव बनाम एब्सोल्यूट पाथ को दोबारा जांचें। |
 
-## Frequently Asked Questions
+## अक्सर पूछे जाने वाले सवाल
 
 **प्रश्न:** क्या मैं GroupDocs.Viewer Java का उपयोग करके नोट्स के साथ PDF दस्तावेज़ रेंडर कर सकता हूँ?  
 **उत्तर:** हाँ, आप PPTX नोट्स के समान तरीके से एम्बेडेड एनोटेशन के साथ PDFs रेंडर कर सकते हैं।
@@ -148,7 +147,7 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 **प्रश्न:** अधिक उन्नत उपयोग उदाहरण कहाँ मिलेंगे?  
 **उत्तर:** विस्तृत दस्तावेज़ीकरण और कोड नमूनों के लिए [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) पर जाएँ।
 
-## Resources
+## संसाधन
 - **डॉक्यूमेंटेशन**: व्यापक गाइड्स के लिए [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) देखें।  
 - **API रेफ़रेंस**: विस्तृत API जानकारी के लिए [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) देखें।  
 - **डाउनलोड**: नवीनतम रिलीज़ के लिए [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) प्राप्त करें।  

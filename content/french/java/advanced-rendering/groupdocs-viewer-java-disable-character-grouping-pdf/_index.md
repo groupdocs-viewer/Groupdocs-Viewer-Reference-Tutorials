@@ -164,19 +164,6 @@ Vous avez maintenant maîtrisé **comment désactiver le groupement** lors du re
 
 Les prochaines étapes incluent l’exploration de fonctionnalités plus avancées de GroupDocs.Viewer et l’optimisation des performances pour des déploiements à grande échelle.
 
-## Section FAQ
-
-1. **Quel est l’effet de la désactivation du groupement des caractères ?**  
-   - Elle garantit que les caractères sont rendus individuellement, préservant leur mise en page originale.  
-2. **Puis‑je utiliser cette fonctionnalité avec d’autres types de documents ?**  
-   - Oui, bien que l’accent soit mis ici sur les PDF, GroupDocs.Viewer prend en charge de nombreux formats.  
-3. **Comment gérer efficacement de gros documents ?**  
-   - Utilisez le traitement par lots et optimisez les ressources de votre serveur.  
-4. **Que faire si le répertoire de sortie n’est pas accessible en écriture ?**  
-   - Vérifiez les permissions ou choisissez un autre répertoire avec les droits d’accès appropriés.  
-5. **Existe‑t‑il des limites de licence pour GroupDocs.Viewer ?**  
-   - Un essai gratuit est disponible, mais une utilisation à long terme nécessite l’achat d’une licence.
-
 ## Questions fréquentes
 
 **Q :** *Pourquoi aurais‑je besoin de désactiver le groupement des caractères ?*  

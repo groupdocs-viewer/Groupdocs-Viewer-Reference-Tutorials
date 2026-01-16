@@ -18,7 +18,7 @@ weight: 1
 
 ![GroupDocs.Viewer for Java を使用したノート付きプレゼンテーションのレンダリング](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
-## Quick Answers
+## クイックアンサー
 - **GroupDocs.Viewer は PPTX を HTML に変換できますか？** はい、直接 PPTX から HTML への変換とオプションでノートのレンダリングをサポートしています。  
 - **本番環境でライセンスが必要ですか？** 商用デプロイには有効な GroupDocs Viewer ライセンスキーが必要です。  
 - **必要な Java バージョンは？** JDK 8 以上が推奨されます。  
@@ -33,15 +33,15 @@ Java で PowerPoint **pptx** ファイルを **HTML** に変換すると、Micro
 
 スライドにスピーカーノートを埋め込むことでエンドユーザーに完全なコンテキストを提供でき、e‑ラーニングプラットフォーム、企業研修ポータル、またはプレゼンターの解説が重要なドキュメント管理システムに最適です。
 
-## Prerequisites
+## 前提条件
 1. **Java Development Kit (JDK)** – バージョン 8 以上。  
 2. **IDE** – IntelliJ IDEA、Eclipse、または任意の Java 対応エディタ。  
 3. **Maven** – 依存関係管理用。  
 4. Java と Maven プロジェクト構造の基本的な知識。
 
-## Setting Up GroupDocs.Viewer for Java
+## GroupDocs.Viewer for Java のセットアップ
 
-### Maven Configuration
+### Maven の設定
 リポジトリと依存関係を `pom.xml` に追加します：
 
 ```xml
@@ -62,7 +62,7 @@ Java で PowerPoint **pptx** ファイルを **HTML** に変換すると、Micro
 </dependencies>
 ```
 
-### License Acquisition
+### ライセンスの取得
 フル機能を試すには、無料トライアルに申し込むか一時ライセンスをリクエストしてください。永続的なライセンスオプションについては [GroupDocs Purchase](https://purchase.groupdocs.com/buy) をご覧ください。
 
 ```java
@@ -74,12 +74,12 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 }
 ```
 
-## Implementation Guide
+## 実装ガイド
 
-### Feature: Render a Presentation with Notes
+### 機能: ノート付きプレゼンテーションのレンダリング
 このセクションでは、スピーカーノートを含めて PPTX ファイルを HTML にレンダリングする手順を説明します。
 
-#### Step 1: Define Output Directory and File Format
+#### ステップ1: 出力ディレクトリとファイル形式を定義する
 HTML ページを保存するフォルダーを設定します：
 
 ```java
@@ -90,7 +90,7 @@ Path YOUR_DOCUMENT_DIRECTORY = Paths.get("YOUR_DOCUMENT_DIRECTORY");
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
-#### Step 2: Configure View Options
+#### ステップ2: 表示オプションを構成する
 リソースを埋め込み、ノートレンダリングを有効にするビューオプションを作成します：
 
 ```java
@@ -102,7 +102,7 @@ viewOptions.setRenderNotes(true); // Enable note rendering
 
 > **プロのコツ:** `forEmbeddedResources` は自己完結型 HTML を生成し、Web サーバーへのデプロイが簡素化されます。
 
-#### Step 3: Load and Render Document
+#### ステップ3: ドキュメントの読み込みとレンダリング
 最後に、上記で定義したオプションを使用して PPTX ファイルをレンダリングします：
 
 ```java
@@ -114,17 +114,17 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 
 **トラブルシューティングのヒント:** ファイルパスが存在し、読み取り可能であることを確認してください。ファイルが見つからない場合は `FileNotFoundException` がスローされます。
 
-## Practical Applications
+## 実用的なアプリケーション
 - **オンライン学習プラットフォーム** – 講義スライドとインストラクターノートを同時に表示。  
 - **企業研修モジュール** – 受講者が自分のペースで学べるようにトレーナーの解説を埋め込む。  
 - **ドキュメント管理システム** – すべての注釈を保持したプレゼンテーションのウェブプレビューを提供。
 
-## Performance Considerations
+## パフォーマンスに関する考慮事項
 - **try‑with‑resources** を使用して `Viewer` を自動的に閉じ、メモリを解放します。  
 - 頻繁にアクセスされるプレゼンテーションのレンダリング済み HTML をキャッシュし、CPU 負荷を軽減します。  
 - 大きな PPTX ファイルを処理する際は JVM ヒープ使用量を監視し、`OutOfMemoryError` が発生した場合はヒープサイズの増加を検討してください。
 
-## Common Issues & Solutions
+## よくある問題と解決策
 
 | 問題 | 解決策 |
 |------|--------|
@@ -132,7 +132,7 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 | **大きなファイルでレンダリングが遅い** | キャッシュを有効にし、すべてのページを一度にレンダリングするのではなく、オンデマンドでページをレンダリングすることを検討してください。 |
 | **ファイルパスエラー** | `Paths.get(...)` を使用し、相対パスと絶対パスを再確認してください。 |
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: GroupDocs.Viewer Java を使用してノート付きの PDF ドキュメントをレンダリングできますか？**  
 A: はい、PPTX のノートと同様の方法で、埋め込み注釈付きの PDF をレンダリングできます。
@@ -149,7 +149,7 @@ A: 無料トライアル、一時評価ライセンス、そして本番環境�
 **Q: より高度な使用例はどこで見つけられますか？**  
 A: 詳細なドキュメントとコードサンプルについては [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) をご覧ください。
 
-## Resources
+## リソース
 - **ドキュメント**: 包括的なガイドは [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) でご覧ください。  
 - **API リファレンス**: 詳細な API 情報は [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) で取得できます。  
 - **ダウンロード**: 最新リリースは [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) から取得できます。  

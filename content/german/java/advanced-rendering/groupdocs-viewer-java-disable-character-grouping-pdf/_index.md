@@ -164,19 +164,6 @@ Sie haben nun gelernt, **wie man die Gruppierung** beim PDF‑Rendering mit Grou
 
 Nächste Schritte umfassen das Erkunden weiterer fortgeschrittener Funktionen von GroupDocs.Viewer und das Fein‑Tuning der Leistung für groß angelegte Deployments.
 
-## FAQ-Bereich
-
-1. **Was bewirkt das Deaktivieren der Zeichen­gruppierung?**  
-   - Es stellt sicher, dass Zeichen einzeln gerendert werden und ihr ursprüngliches Layout erhalten bleibt.  
-2. **Kann ich diese Funktion mit anderen Dokumenttypen verwenden?**  
-   - Ja, obwohl der Fokus hier auf PDFs liegt, unterstützt GroupDocs.Viewer viele Formate.  
-3. **Wie gehe ich effizient mit großen Dokumenten um?**  
-   - Nutzen Sie Batch‑Verarbeitung und optimieren Sie Ihre Serverressourcen.  
-4. **Was tun, wenn das Ausgabeverzeichnis nicht beschreibbar ist?**  
-   - Prüfen Sie die Berechtigungen oder wählen Sie ein anderes Verzeichnis mit entsprechenden Zugriffsrechten.  
-5. **Gibt es Lizenzbeschränkungen für GroupDocs.Viewer?**  
-   - Eine kostenlose Testversion ist verfügbar, für den langfristigen Einsatz ist jedoch eine gekaufte Lizenz erforderlich.
-
 ## Häufig gestellte Fragen
 
 **F:** *Warum sollte ich überhaupt die Zeichen­gruppierung deaktivieren?*  

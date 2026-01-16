@@ -159,18 +159,6 @@ Agora você dominou **como desativar o agrupamento** durante a renderização de
 
 Os próximos passos incluem explorar recursos mais avançados do GroupDocs.Viewer e ajustar o desempenho para implantações em grande escala.
 
-## Seção de Perguntas Frequentes
-1. **O que a desativação do agrupamento de caracteres realiza?**  
-   - Garante que os caracteres sejam renderizados individualmente, preservando seu layout original.  
-2. **Posso usar esse recurso com outros tipos de documentos?**  
-   - Sim, embora o foco aqui seja PDFs, o GroupDocs.Viewer suporta muitos formatos.  
-3. **Como lidar eficientemente com documentos grandes?**  
-   - Use processamento em lote e otimize os recursos do seu servidor.  
-4. **O que fazer se o diretório de saída não for gravável?**  
-   - Verifique as permissões ou escolha outro diretório com os direitos de acesso adequados.  
-5. **Existem limites de licenciamento para o GroupDocs.Viewer?**  
-   - Um teste gratuito está disponível, mas o uso a longo prazo requer uma licença adquirida.
-
 ## Perguntas Frequentes
 
 **Q:** *Por que eu precisaria desativar o agrupamento de caracteres?*  

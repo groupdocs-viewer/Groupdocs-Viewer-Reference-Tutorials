@@ -162,19 +162,6 @@ You've now mastered **how to disable grouping** during PDF rendering with GroupD
 
 Next steps include exploring more advanced features of GroupDocs.Viewer and fine‑tuning performance for large‑scale deployments.
 
-## FAQ Section
-
-1. **What does disabling character grouping achieve?**  
-   - It ensures characters are rendered individually, preserving their original layout.  
-2. **Can I use this feature with other document types?**  
-   - Yes, while the focus here is PDFs, GroupDocs.Viewer supports many formats.  
-3. **How do I handle large documents efficiently?**  
-   - Use batch processing and optimize your server resources.  
-4. **What should I do if the output directory is not writable?**  
-   - Check permissions or select a different directory with proper access rights.  
-5. **Are there licensing limits for GroupDocs.Viewer?**  
-   - A free trial is available, but long‑term use requires a purchased license.
-
 ## Frequently Asked Questions
 
 **Q:** *Why would I need to disable character grouping at all?*  

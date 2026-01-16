@@ -164,19 +164,6 @@ Ora hai padroneggiato **come disabilitare il raggruppamento** durante il renderi
 
 I prossimi passi includono l'esplorazione di funzionalità più avanzate di GroupDocs.Viewer e l'ottimizzazione delle prestazioni per distribuzioni su larga scala.
 
-## Sezione FAQ
-
-1. **Cosa ottieni disabilitando il raggruppamento dei caratteri?**  
-   - Garantisce che i caratteri siano renderizzati individualmente, preservando il loro layout originale.  
-2. **Posso usare questa funzionalità con altri tipi di documento?**  
-   - Sì, sebbene l'attenzione qui sia sui PDF, GroupDocs.Viewer supporta molti formati.  
-3. **Come gestire documenti di grandi dimensioni in modo efficiente?**  
-   - Usa l'elaborazione in batch e ottimizza le risorse del tuo server.  
-4. **Cosa fare se la directory di output non è scrivibile?**  
-   - Controlla i permessi o scegli un'altra directory con i diritti di accesso appropriati.  
-5. **Ci sono limiti di licenza per GroupDocs.Viewer?**  
-   - È disponibile una prova gratuita, ma per l'uso a lungo termine è necessaria una licenza acquistata.
-
 ## Domande Frequenti
 
 **Q:** *Perché dovrei disabilitare il raggruppamento dei caratteri?*  

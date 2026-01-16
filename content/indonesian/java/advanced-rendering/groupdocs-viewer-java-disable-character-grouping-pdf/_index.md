@@ -163,19 +163,6 @@ Anda kini telah menguasai **cara menonaktifkan pengelompokan** selama rendering 
 
 Langkah selanjutnya meliputi menjelajahi fitur lebih lanjut dari GroupDocs.Viewer dan menyempurnakan kinerja untuk penyebaran skala besar.
 
-## Bagian FAQ
-
-1. **Apa yang dicapai dengan menonaktifkan pengelompokan karakter?**  
-   - Itu memastikan karakter dirender secara individual, mempertahankan tata letak aslinya.  
-2. **Bisakah saya menggunakan fitur ini dengan tipe dokumen lain?**  
-   - Ya, meskipun fokus di sini adalah PDF, GroupDocs.Viewer mendukung banyak format.  
-3. **Bagaimana cara menangani dokumen besar secara efisien?**  
-   - Gunakan pemrosesan batch dan optimalkan sumber daya server Anda.  
-4. **Apa yang harus saya lakukan jika direktori output tidak dapat ditulis?**  
-   - Periksa izin atau pilih direktori lain dengan hak akses yang tepat.  
-5. **Apakah ada batasan lisensi untuk GroupDocs.Viewer?**  
-   - Versi percobaan tersedia, tetapi penggunaan jangka panjang memerlukan lisensi yang dibeli.
-
 ## Pertanyaan yang Sering Diajukan
 
 **Q:** *Mengapa saya perlu menonaktifkan pengelompokan karakter?*  

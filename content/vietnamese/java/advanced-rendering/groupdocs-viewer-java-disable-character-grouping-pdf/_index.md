@@ -163,19 +163,6 @@ Bạn đã nắm vững **cách vô hiệu hoá nhóm** trong quá trình render
 
 Các bước tiếp theo bao gồm khám phá các tính năng nâng cao hơn của GroupDocs.Viewer và tối ưu hiệu suất cho các triển khai quy mô lớn.
 
-## Phần Câu Hỏi Thường Gặp
-
-1. **Vô hiệu hoá nhóm ký tự mang lại gì?**  
-   - Nó đảm bảo các ký tự được render riêng lẻ, giữ nguyên bố cục gốc.  
-2. **Tôi có thể dùng tính năng này với các loại tài liệu khác không?**  
-   - Có, mặc dù trọng tâm ở đây là PDF, nhưng GroupDocs.Viewer hỗ trợ nhiều định dạng.  
-3. **Làm sao để xử lý tài liệu lớn một cách hiệu quả?**  
-   - Sử dụng xử lý hàng loạt và tối ưu tài nguyên máy chủ.  
-4. **Nếu thư mục đầu ra không ghi được thì phải làm gì?**  
-   - Kiểm tra quyền hoặc chọn thư mục khác có quyền truy cập phù hợp.  
-5. **Có giới hạn giấy phép nào cho GroupDocs.Viewer không?**  
-   - Có bản dùng thử miễn phí, nhưng sử dụng lâu dài yêu cầu mua giấy phép.
-
 ## Câu Hỏi Thường Gặp
 
 **Q:** *Tại sao tôi lại cần vô hiệu hoá nhóm ký tự?*  

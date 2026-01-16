@@ -161,19 +161,6 @@ Most már elsajátította, **hogyan tiltsa le a csoportosítást** PDF renderel�
 
 A következő lépések közé tartozik a GroupDocs.Viewer fejlettebb funkcióinak felfedezése és a teljesítmény finomhangolása nagy léptékű telepítésekhez.
 
-## GyIK szakasz
-
-1. **Mit ér el a karaktercsoportosítás letiltása?**  
-   - Ez biztosítja, hogy a karakterek egyenként legyenek renderelve, megőrizve az eredeti elrendezést.  
-2. **Használhatom ezt a funkciót más dokumentumtípusokkal?**  
-   - Igen, bár itt a PDF-ekre fókuszálunk, a GroupDocs.Viewer sok formátumot támogat.  
-3. **Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
-   - Használjon kötegelt feldolgozást és optimalizálja a szerver erőforrásait.  
-4. **Mit tegyek, ha a kimeneti könyvtár nem írható?**  
-   - Ellenőrizze a jogosultságokat, vagy válasszon egy másik könyvtárat megfelelő hozzáférési jogokkal.  
-5. **Vannak licenckorlátok a GroupDocs.Viewer számára?**  
-   - Elérhető ingyenes próba, de a hosszú távú használathoz vásárolt licenc szükséges.  
-
 ## Gyakran Ismételt Kérdések
 
 **Q:** *Miért lenne szükség a karaktercsoportosítás letiltására?*  
