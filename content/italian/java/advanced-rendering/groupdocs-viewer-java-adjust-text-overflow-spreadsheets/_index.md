@@ -138,12 +138,6 @@ R5: Visita il [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 
 ## Conclusione
 Seguendo i passaggi sopra, puoi **nascondere l'overflow del testo in Excel** quando **converti excel in html** con GroupDocs.Viewer per Java. Questa semplice configurazione migliora drasticamente la leggibilità dei fogli di calcolo renderizzati e si integra perfettamente in soluzioni di reporting basate sul web.
 
----
-
-**Ultimo aggiornamento:** 2025-12-18  
-**Testato con:** GroupDocs.Viewer 25.2 per Java  
-**Autore:** GroupDocs  
-
 **Risorse**  
 - **Documentazione:** [Documentazione GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)  
 - **Riferimento API:** [Riferimento API GroupDocs](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ Seguendo i passaggi sopra, puoi **nascondere l'overflow del testo in Excel** qua
 - **Acquisto:** [Acquista licenza GroupDocs](https://purchase.groupdocs.com/buy)  
 - **Prova gratuita:** [Prova gratuita GroupDocs](https://releases.groupdocs.com/viewer/java/)  
 - **Licenza temporanea:** [Richiedi licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Ultimo aggiornamento:** 2025-12-18  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs  

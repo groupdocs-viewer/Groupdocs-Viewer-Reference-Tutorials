@@ -138,12 +138,6 @@ A5: Visita el [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 
 ## Conclusión
 Siguiendo los pasos anteriores, puedes **ocultar desbordamiento de texto en Excel** de las celdas cuando **conviertes Excel a HTML** con GroupDocs.Viewer para Java. Esta configuración simple mejora drásticamente la legibilidad de las hojas de cálculo renderizadas y se integra sin problemas en soluciones de informes basadas en la web.
 
----
-
-**Última actualización:** 2025-12-18  
-**Probado con:** GroupDocs.Viewer 25.2 para Java  
-**Autor:** GroupDocs  
-
 **Recursos**  
 - **Documentación:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **Referencia API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ Siguiendo los pasos anteriores, puedes **ocultar desbordamiento de texto en Exce
 - **Compra:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Prueba gratuita:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Licencia temporal:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Última actualización:** 2025-12-18  
+**Probado con:** GroupDocs.Viewer 25.2 para Java  
+**Autor:** GroupDocs  

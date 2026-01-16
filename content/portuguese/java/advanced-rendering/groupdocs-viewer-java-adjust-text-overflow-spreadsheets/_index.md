@@ -138,12 +138,6 @@ A5: Visite o [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) p
 ## Conclusão
 Seguindo os passos acima, você pode **ocultar transbordamento de texto no Excel** nas células ao **converter Excel para HTML** com o GroupDocs.Viewer para Java. Esta configuração simples melhora drasticamente a legibilidade das planilhas renderizadas e se integra perfeitamente a soluções de relatórios baseadas na web.
 
----
-
-**Última Atualização:** 2025-12-18  
-**Testado com:** GroupDocs.Viewer 25.2 para Java  
-**Autor:** GroupDocs  
-
 **Recursos**  
 - **Documentação:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **Referência da API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ Seguindo os passos acima, você pode **ocultar transbordamento de texto no Excel
 - **Compra:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Teste Gratuito:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Licença Temporária:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Última Atualização:** 2025-12-18  
+**Testado com:** GroupDocs.Viewer 25.2 para Java  
+**Autor:** GroupDocs  

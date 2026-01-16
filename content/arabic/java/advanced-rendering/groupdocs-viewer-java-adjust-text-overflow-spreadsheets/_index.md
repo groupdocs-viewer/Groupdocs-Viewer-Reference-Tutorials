@@ -137,12 +137,6 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
 ## الخلاصة
 باتباع الخطوات السابقة، يمكنك **إخفاء تجاوز النص في خلايا Excel** عند **تحويل excel إلى html** باستخدام GroupDocs.Viewer للـ Java. هذه الإعدادات البسيطة تحسن بشكل كبير قابلية قراءة جداول البيانات المصدرة وتندمج بسلاسة في حلول التقارير القائمة على الويب.
 
----
-
-**آخر تحديث:** 2025-12-18  
-**تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
-**المؤلف:** GroupDocs  
-
 **الموارد**  
 - **Documentation:** [توثيق GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)  
 - **API Reference:** [مرجع API لـ GroupDocs](https://reference.groupdocs.com/viewer/java/)  
@@ -150,3 +144,9 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
 - **Purchase:** [شراء ترخيص GroupDocs](https://purchase.groupdocs.com/buy)  
 - **Free Trial:** [تجربة مجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/)  
 - **Temporary License:** [طلب ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**آخر تحديث:** 2025-12-18  
+**تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
+**المؤلف:** GroupDocs  

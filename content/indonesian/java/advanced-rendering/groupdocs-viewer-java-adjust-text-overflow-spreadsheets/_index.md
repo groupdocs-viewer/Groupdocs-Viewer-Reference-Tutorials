@@ -138,12 +138,6 @@ A5: Kunjungi [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) u
 ## Kesimpulan
 Dengan mengikuti langkah‑langkah di atas, Anda dapat **menyembunyikan teks overflow Excel** pada sel saat **mengonversi excel ke html** dengan GroupDocs.Viewer untuk Java. Konfigurasi sederhana ini secara dramatis meningkatkan keterbacaan spreadsheet yang dirender dan terintegrasi mulus ke dalam solusi pelaporan berbasis web.
 
----
-
-**Terakhir Diperbarui:** 2025-12-18  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
-**Penulis:** GroupDocs  
-
 **Sumber Daya**  
 - **Dokumentasi:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **Referensi API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ Dengan mengikuti langkah‑langkah di atas, Anda dapat **menyembunyikan teks ove
 - **Pembelian:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Uji Coba Gratis:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Lisensi Sementara:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Terakhir Diperbarui:** 2025-12-18  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
+**Penulis:** GroupDocs  

@@ -138,12 +138,6 @@ A5: Navštivte [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 ## Závěr
 Podle výše uvedených kroků můžete **hide text overflow Excel** buňky při **convert excel to html** pomocí GroupDocs.Viewer pro Java. Toto jednoduché nastavení výrazně zlepšuje čitelnost vykreslených tabulek a hladce se integruje do webových řešení pro reportování.
 
----
-
-**Poslední aktualizace:** 2025-12-18  
-**Testováno s:** GroupDocs.Viewer 25.2 for Java  
-**Autor:** GroupDocs  
-
 **Zdroje**  
 - **Dokumentace:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **Reference API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ Podle výše uvedených kroků můžete **hide text overflow Excel** buňky při
 - **Nákup:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Bezplatná zkušební verze:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Dočasná licence:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Poslední aktualizace:** 2025-12-18  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  

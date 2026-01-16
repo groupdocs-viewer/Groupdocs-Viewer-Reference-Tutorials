@@ -138,12 +138,6 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
 ## Заключение
 Следуя приведённым шагам, вы сможете **скрыть переполнение текста в Excel** ячеек при **конвертации excel в html** с помощью GroupDocs.Viewer для Java. Эта простая настройка значительно повышает читаемость отрендеренных таблиц и без проблем интегрируется в веб‑решения для отчётности.
 
----
-
-**Последнее обновление:** 2025-12-18  
-**Тестировано с:** GroupDocs.Viewer 25.2 for Java  
-**Автор:** GroupDocs  
-
 **Ресурсы**  
 - **Документация:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
 - **Купить:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Бесплатная пробная версия:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Временная лицензия:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Последнее обновление:** 2025-12-18  
+**Тестировано с:** GroupDocs.Viewer 25.2 for Java  
+**Автор:** GroupDocs  

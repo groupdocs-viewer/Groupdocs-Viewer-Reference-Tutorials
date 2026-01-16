@@ -138,12 +138,6 @@ R5 : Consultez le [GroupDocs Support Forum](https://forum.groupdocs.com/c/view
 ## Conclusion
 En suivant les étapes ci‑dessus, vous pouvez **hide text overflow Excel** les cellules lorsque vous **convert excel to html** avec GroupDocs.Viewer pour Java. Cette configuration simple améliore considérablement la lisibilité des feuilles de calcul rendues et s’intègre parfaitement aux solutions de reporting basées sur le web.
 
----
-
-**Last Updated:** 2025-12-18  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
-
 **Ressources**  
 - **Documentation:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **Référence API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ En suivant les étapes ci‑dessus, vous pouvez **hide text overflow Excel** les
 - **Achat:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Essai gratuit:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Licence temporaire:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-18  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  

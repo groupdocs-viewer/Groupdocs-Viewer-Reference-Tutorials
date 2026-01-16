@@ -138,12 +138,6 @@ A5: समुदाय सहायता और आधिकारिक दस
 ## निष्कर्ष
 ऊपर दिए गए चरणों का पालन करके, आप GroupDocs.Viewer for Java के साथ **hide text overflow Excel** सेल्स को **convert excel to html** करते समय छुपा सकते हैं। यह सरल कॉन्फ़िगरेशन रेंडर किए गए स्प्रेडशीट की पठनीयता को काफी बढ़ाता है और वेब‑आधारित रिपोर्टिंग समाधान में सहजता से फिट होता है।
 
----
-
-**अंतिम अपडेट:** 2025-12-18  
-**परीक्षण किया गया:** GroupDocs.Viewer 25.2 for Java  
-**लेखक:** GroupDocs  
-
 **संसाधन**  
 - **दस्तावेज़ीकरण:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **API रेफ़रेंस:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ A5: समुदाय सहायता और आधिकारिक दस
 - **खरीद:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **फ़्री ट्रायल:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **अस्थायी लाइसेंस:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**अंतिम अपडेट:** 2025-12-18  
+**परीक्षण किया गया:** GroupDocs.Viewer 25.2 for Java  
+**लेखक:** GroupDocs  

@@ -138,12 +138,6 @@ A5: Επισκεφθείτε το [GroupDocs Support Forum](https://forum.groupd
 ## Συμπέρασμα
 Ακολουθώντας τα παραπάνω βήματα, μπορείτε να **hide text overflow Excel** κελιά όταν **convert excel to html** με το GroupDocs.Viewer για Java. Αυτή η απλή ρύθμιση βελτιώνει δραματικά την αναγνωσιμότητα των παραγόμενων υπολογιστικών φύλλων και ενσωματώνεται άψογα σε λύσεις αναφοράς βασισμένες στο web.
 
----
-
-**Τελευταία Ενημέρωση:** 2025-12-18  
-**Δοκιμή Με:** GroupDocs.Viewer 25.2 for Java  
-**Συγγραφέας:** GroupDocs  
-
 **Πόροι**  
 - **Τεκμηρίωση:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **Αναφορά API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ A5: Επισκεφθείτε το [GroupDocs Support Forum](https://forum.groupd
 - **Αγορά:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Δωρεάν Δοκιμή:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Προσωρινή Άδεια:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-18  
+**Δοκιμή Με:** GroupDocs.Viewer 25.2 for Java  
+**Συγγραφέας:** GroupDocs  

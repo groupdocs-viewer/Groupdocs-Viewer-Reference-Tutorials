@@ -136,12 +136,6 @@ A5: 访问 [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 获
 ## 结论
 按照上述步骤，您可以在使用 GroupDocs.Viewer for Java **convert excel to html** 时 **hide text overflow Excel** 单元格。此简单配置显著提升渲染后电子表格的可读性，并能无缝集成到基于 Web 的报告解决方案中。
 
----
-
-**最后更新：** 2025-12-18  
-**测试环境：** GroupDocs.Viewer 25.2 for Java  
-**作者：** GroupDocs  
-
 **资源**  
 - **文档：** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **API 参考：** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -149,3 +143,9 @@ A5: 访问 [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 获
 - **购买：** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **免费试用：** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **临时许可证：** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**最后更新：** 2025-12-18  
+**测试环境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs  

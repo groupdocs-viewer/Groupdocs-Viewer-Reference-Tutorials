@@ -136,12 +136,6 @@ A5: 前往 [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 獲
 ## 結論
 依照上述步驟，您即可在使用 GroupDocs.Viewer for Java **將 excel 轉換為 html** 時 **隱藏 Excel 文字溢出** 單元格。此簡單設定大幅提升渲染試算表的可讀性，且能無縫整合至基於 Web 的報告解決方案中。
 
----
-
-**最後更新：** 2025-12-18  
-**測試環境：** GroupDocs.Viewer 25.2 for Java  
-**作者：** GroupDocs  
-
 **資源**  
 - **文件說明：** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **API 參考：** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -149,3 +143,9 @@ A5: 前往 [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) 獲
 - **購買：** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **免費試用：** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **臨時授權：** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**最後更新：** 2025-12-18  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs  

@@ -137,12 +137,6 @@ C5: Topluluk desteği ve resmi belgeler için [GroupDocs Support Forum](https://
 ## Sonuç
 Yukarıdaki adımları izleyerek, GroupDocs.Viewer for Java ile **convert excel to html** yaparken **hide text overflow Excel** hücrelerini gizleyebilirsiniz. Bu basit yapılandırma, render edilen elektronik tabloların okunabilirliğini büyük ölçüde artırır ve web‑tabanlı raporlama çözümlerine sorunsuz bir şekilde entegre olur.
 
----
-
-**Son Güncelleme:** 2025-12-18  
-**Test Edilen:** GroupDocs.Viewer 25.2 for Java  
-**Yazar:** GroupDocs  
-
 **Kaynaklar**  
 - **Dokümantasyon:** [GroupDocs.Viewer Java Dokümantasyonu](https://docs.groupdocs.com/viewer/java/)  
 - **API Referansı:** [GroupDocs API Referansı](https://reference.groupdocs.com/viewer/java/)  
@@ -150,3 +144,9 @@ Yukarıdaki adımları izleyerek, GroupDocs.Viewer for Java ile **convert excel 
 - **Satın Alma:** [GroupDocs Lisansı Satın Al](https://purchase.groupdocs.com/buy)  
 - **Ücretsiz Deneme:** [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)  
 - **Geçici Lisans:** [Geçici Lisans Talep Et](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Son Güncelleme:** 2025-12-18  
+**Test Edilen:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs  

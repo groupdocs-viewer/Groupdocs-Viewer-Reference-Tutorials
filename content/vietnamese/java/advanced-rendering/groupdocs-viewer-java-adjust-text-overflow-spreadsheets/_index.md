@@ -138,12 +138,6 @@ A5: Truy cập [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 ## Kết luận
 Bằng cách làm theo các bước trên, bạn có thể **ẩn tràn văn bản Excel** các ô khi **convert excel to html** với GroupDocs.Viewer cho Java. Cấu hình đơn giản này cải thiện đáng kể khả năng đọc của các bảng tính đã render và tích hợp mượt mà vào các giải pháp báo cáo dựa trên web.
 
----
-
-**Last Updated:** 2025-12-18  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
-
 **Resources**  
 - **Documentation:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ Bằng cách làm theo các bước trên, bạn có thể **ẩn tràn văn b�
 - **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-18  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  

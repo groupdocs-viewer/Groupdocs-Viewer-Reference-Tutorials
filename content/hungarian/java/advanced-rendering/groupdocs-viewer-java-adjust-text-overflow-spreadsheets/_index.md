@@ -138,12 +138,6 @@ A5: Látogassa meg a [GroupDocs Support Forum](https://forum.groupdocs.com/c/vie
 ## Következtetés
 A fenti lépések követésével **hide text overflow Excel** cellákat tud elrejteni, amikor a GroupDocs.Viewer for Java segítségével **convert excel to html**. Ez az egyszerű beállítás drámaian javítja a renderelt táblázatok olvashatóságát, és zökkenőmentesen illeszkedik a web‑alapú jelentési megoldásokba.
 
----
-
-**Utoljára frissítve:** 2025-12-18  
-**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
-**Szerző:** GroupDocs  
-
 **Erőforrások**  
 - **Dokumentáció:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **API referencia:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -151,3 +145,9 @@ A fenti lépések követésével **hide text overflow Excel** cellákat tud elre
 - **Vásárlás:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
 - **Ingyenes próba:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - **Ideiglenes licenc:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Utoljára frissítve:** 2025-12-18  
+**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs  
