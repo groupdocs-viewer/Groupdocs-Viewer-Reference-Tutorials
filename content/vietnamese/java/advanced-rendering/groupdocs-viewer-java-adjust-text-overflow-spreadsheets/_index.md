@@ -1,31 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách quản lý tràn văn bản trong bảng tính Excel bằng GroupDocs.Viewer cho Java. Hướng dẫn này cung cấp hướng dẫn từng bước và các biện pháp thực hành tốt nhất."
-"title": "Cách điều chỉnh tràn văn bản trong bảng tính Excel bằng GroupDocs.Viewer cho Java"
-"url": "/vi/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
-"weight": 1
+date: '2025-12-18'
+description: Tìm hiểu cách ẩn tràn văn bản trong Excel khi chuyển đổi Excel sang HTML
+  bằng GroupDocs.Viewer for Java. Hướng dẫn từng bước với cài đặt, mã nguồn và các
+  thực tiễn tốt nhất.
+keywords:
+- GroupDocs.Viewer Java
+- adjust text overflow Excel
+- rendering Excel to HTML
+title: Ẩn tràn văn bản Excel với GroupDocs.Viewer cho Java
 type: docs
+url: /vi/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/
+weight: 1
 ---
-# Cách điều chỉnh tràn văn bản trong bảng tính Excel bằng GroupDocs.Viewer cho Java
-## Giới thiệu
-Việc xử lý tình trạng tràn văn bản trong các ô bảng tính khi chuyển đổi tài liệu sang HTML là một thách thức thường gặp, đặc biệt là đối với các tệp Excel lớn. **GroupDocs.Viewer cho Java** đơn giản hóa quá trình này, cho phép bạn quản lý và ẩn văn bản tràn lề một cách hiệu quả.
-Hướng dẫn này sẽ hướng dẫn bạn cách ẩn văn bản tràn ra khỏi các ô bảng tính bằng GroupDocs.Viewer trong Java, đảm bảo bảng tính của bạn được hiển thị rõ ràng mà không gặp sự cố tràn văn bản.
 
-**Những gì bạn sẽ học được:**
-- Cách thiết lập GroupDocs.Viewer cho Java
-- Cấu hình `HtmlViewOptions` để điều chỉnh tràn văn bản trong bảng tính Excel
-- Ứng dụng thực tế của tính năng này
+# Ẩn Tràn Văn Bản Excel với GroupDocs.Viewer cho Java
 
-Hãy bắt đầu bằng cách thiết lập các điều kiện tiên quyết trước khi cấu hình GroupDocs.Viewer trên hệ thống của bạn.
-## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có:
-- **Bộ phát triển Java (JDK)**: Phiên bản 8 trở lên được cài đặt và cấu hình trên máy của bạn.
-- **Maven**: Để quản lý các phụ thuộc trong dự án của bạn.
-- Hiểu biết cơ bản về lập trình Java và quen thuộc với các dự án Maven.
-Đảm bảo quyền truy cập vào IDE như IntelliJ IDEA hoặc Eclipse để quản lý và thực thi mã dễ dàng hơn.
-## Thiết lập GroupDocs.Viewer cho Java
-Để bắt đầu, hãy thêm GroupDocs.Viewer làm dependency bằng Maven. Điều này giúp đơn giản hóa việc thiết lập và quản lý thư viện trong dự án của bạn.
-### Phụ thuộc Maven:
+Khi bạn **ẩn tràn văn bản Excel** các ô khi chuyển đổi bảng tính sang HTML, kết quả trông sạch sẽ và chuyên nghiệp. Trong hướng dẫn này, chúng tôi sẽ đi qua các bước chính xác để ngăn chặn việc tràn lộn xộn, sử dụng GroupDocs.Viewer cho Java. Bạn sẽ thấy cách cấu hình viewer, nhúng tài nguyên và render workbook Excel của mình sao cho bất kỳ văn bản nào vượt quá giới hạn của ô đều bị ẩn.
+
+![Điều chỉnh tràn văn bản trong bảng tính Excel với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/adjust-text-overflow-in-excel-spreadsheets-java.png)
+
+## Câu trả lời nhanh
+- **“hide text overflow excel” làm gì?** Nó ẩn bất kỳ nội dung ô nào vượt quá chiều rộng hoặc chiều cao của ô trong quá trình render HTML.  
+- **Thư viện nào xử lý tính năng này?** GroupDocs.Viewer cho Java cung cấp tùy chọn `TextOverflowMode.HIDE_TEXT`.  
+- **Tôi có cần giấy phép không?** Một giấy phép tạm thời có sẵn để đánh giá; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Tôi cũng có thể chuyển đổi Excel sang HTML không?** Có – cùng một viewer chuyển đổi tệp Excel sang HTML đồng thời áp dụng cài đặt tràn.  
+- **Cách này có phù hợp với workbook lớn không?** Chắc chắn, chỉ cần tuân theo các mẹo hiệu năng trong phần “Performance Considerations”.
+
+## hide text overflow excel là gì?
+`hide text overflow excel` là chế độ render yêu cầu viewer cắt bỏ bất kỳ văn bản nào sẽ tràn ra ngoài biên giới ô đã định khi một sheet Excel được chuyển đổi sang HTML. Điều này giúp bố cục gọn gàng, đặc biệt đối với các dashboard hoặc báo cáo hiển thị trên trình duyệt.
+
+## Tại sao lại sử dụng GroupDocs.Viewer để chuyển đổi excel sang html?
+GroupDocs.Viewer cung cấp giải pháp nhanh, chạy phía server cho **convert excel to html** mà không cần cài đặt Microsoft Office trên server. Nó hỗ trợ đa dạng các tính năng của Excel và cho phép bạn kiểm soát chi tiết cách hiển thị các ô — chẳng hạn như ẩn văn bản tràn ra.
+
+## Yêu cầu trước
+- **Java Development Kit (JDK)** – phiên bản 8 hoặc mới hơn.  
+- **Maven** – để quản lý phụ thuộc.  
+- Kiến thức cơ bản về Java và một IDE (IntelliJ IDEA, Eclipse, v.v.).  
+
+## Cài đặt GroupDocs.Viewer cho Java
+Thêm thư viện viewer vào dự án Maven của bạn.
+
+### Phụ thuộc Maven
 ```xml
 <repositories>
    <repository>
@@ -42,72 +57,97 @@ Trước khi bắt đầu, hãy đảm bảo bạn có:
    </dependency>
 </dependencies>
 ```
-### Mua lại giấy phép
-Nhận giấy phép tạm thời cho GroupDocs.Viewer để khám phá tất cả các tính năng mà không có giới hạn:
-- **Dùng thử miễn phí**: Tải xuống phiên bản mới nhất từ [Bản phát hành GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Giấy phép tạm thời**: Yêu cầu qua [Trang giấy phép tạm thời của GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Mua**: Mua giấy phép để truy cập đầy đủ tính năng tại [Trang mua hàng của GroupDocs](https://purchase.groupdocs.com/buy).
-### Khởi tạo cơ bản
-Khởi tạo lớp Viewer bằng đường dẫn tài liệu Excel của bạn. Điều này rất quan trọng để truy cập và hiển thị bảng tính của bạn ở định dạng HTML.
-## Hướng dẫn thực hiện
-Hãy cùng khám phá cách điều chỉnh tình trạng tràn văn bản trong bảng tính bằng GroupDocs.Viewer.
-### Bước 1: Xác định thư mục đầu ra
-Đầu tiên, hãy chỉ định nơi bạn muốn lưu trữ các tệp HTML đã kết xuất. Thư mục này sẽ lưu trữ từng trang trong tài liệu của bạn dưới dạng một tệp HTML riêng lẻ.
+
+### Cách nhận giấy phép
+Nhận giấy phép tạm thời để mở khóa tất cả các tính năng:
+
+- **Free Trial**: Tải phiên bản mới nhất từ [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License**: Yêu cầu qua [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase**: Mua giấy phép đầy đủ tại [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
+
+## Hướng dẫn triển khai
+Dưới đây là hướng dẫn từng bước giữ nguyên các khối code gốc đồng thời bổ sung các giải thích rõ ràng.
+
+### Bước 1: Xác định Thư mục Đầu ra
+Chỉ định nơi sẽ lưu các tệp HTML đã render.
+
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Giải thích**: `Utils.getOutputDirectoryPath` là một phương pháp tiện ích xác định đường dẫn lưu trữ các trang HTML đầu ra của bạn dựa trên tên thư mục đã cho.
+
+*Giải thích*: `Utils.getOutputDirectoryPath` tạo (hoặc tái sử dụng) một thư mục có tên **YOUR_OUTPUT_DIRECTORY** trong thư mục đầu ra của dự án.
+
 ### Bước 2: Cấu hình Đường dẫn Tệp Trang
-Tạo định dạng để đặt tên cho từng tệp trang của tài liệu được kết xuất. Điều này đảm bảo lưu trữ có tổ chức và dễ dàng truy xuất.
+Tạo mẫu đặt tên cho mỗi trang HTML được tạo.
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Giải thích**: Các `{0}` chỗ giữ chỗ được thay thế bằng số trang trong quá trình kết xuất, đảm bảo tên tệp duy nhất cho mỗi trang.
+
+*Giải thích*: `{0}` là placeholder mà viewer thay thế bằng số trang, cho bạn các tệp như `page_1.html`, `page_2.html`, v.v.
+
 ### Bước 3: Thiết lập HtmlViewOptions
-Cấu hình `HtmlViewOptions` để quản lý cách nhúng tài nguyên và chỉ định chế độ tràn văn bản mong muốn cho các ô bảng tính.
+Yêu cầu viewer nhúng tài nguyên và ẩn văn bản trong ô bị tràn.
+
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT);
 ```
-**Giải thích**: Bằng cách thiết lập `TextOverflowMode` ĐẾN `HIDE_TEXT`, nội dung vượt quá ranh giới ô sẽ bị ẩn, ngăn ngừa tình trạng tràn nội dung.
-### Bước 4: Kết xuất tài liệu của bạn
-Sử dụng lớp Viewer để xử lý tệp Excel của bạn và hiển thị thành HTML với các tùy chọn đã chỉ định.
+
+*Giải thích*: `TextOverflowMode.HIDE_TEXT` là cài đặt chính giúp **prevent overflow in excel** các ô trong quá trình **render excel to html**.
+
+### Bước 4: Render Tài liệu của bạn
+Chạy viewer với các tùy chọn đã cấu hình.
+
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
     viewer.view(viewOptions);
 }
 ```
-**Giải thích**: Các `view` phương pháp xử lý việc kết xuất. Nó sử dụng cấu hình `HtmlViewOptions`, áp dụng cài đặt tràn văn bản của chúng tôi trong quá trình chuyển đổi.
-## Ứng dụng thực tế
-Tính năng này vô cùng hữu ích trong nhiều tình huống như:
-- **Cổng thông tin web**: Hiển thị báo cáo tài chính trong đó tính ngắn gọn và rõ ràng của dữ liệu là rất quan trọng.
-- **Nền tảng phân tích dữ liệu**: Trình bày các tập dữ liệu lớn một cách rõ ràng mà không làm người dùng choáng ngợp vì quá nhiều văn bản.
-- **Bảng thông tin khách hàng**: Cung cấp thông tin chi tiết thông qua bảng tính trong khi vẫn đảm bảo trình bày trực quan gọn gàng.
-Việc tích hợp với các hệ thống khác như CRM hoặc ERP cũng có thể được hưởng lợi từ phương pháp hiển thị rõ ràng này, giúp nâng cao trải nghiệm của người dùng trên nhiều nền tảng.
-## Cân nhắc về hiệu suất
-Khi sử dụng GroupDocs.Viewer cho Java, hãy cân nhắc những điều sau để tối ưu hóa hiệu suất:
-- **Quản lý bộ nhớ**Đảm bảo ứng dụng của bạn quản lý bộ nhớ hiệu quả, đặc biệt là khi xử lý các tài liệu lớn.
-- **Sử dụng tài nguyên**:Sử dụng tài nguyên nhúng một cách khôn ngoan để cân bằng giữa thời gian tải và chất lượng hiển thị.
-- **Cơ chế lưu trữ đệm**: Triển khai các chiến lược lưu trữ đệm khi có thể để giảm xử lý dư thừa.
-## Phần kết luận
-Điều chỉnh tràn văn bản trong các ô bảng tính bằng GroupDocs.Viewer cho Java là một quy trình đơn giản giúp tăng khả năng đọc tài liệu khi được hiển thị thành HTML. Hướng dẫn này cung cấp hướng dẫn từng bước về cách cấu hình và triển khai tính năng này trong các ứng dụng của bạn.
-Khám phá sâu hơn bằng cách tích hợp các kỹ thuật này vào dự án của bạn, cải thiện cách trình bày dữ liệu trong môi trường web.
-## Phần Câu hỏi thường gặp
-**Câu hỏi 1: GroupDocs.Viewer cho Java là gì?**
-A1: Đây là thư viện cho phép hiển thị tài liệu ở nhiều định dạng khác nhau trong các ứng dụng Java.
-**Câu hỏi 2: Làm thế nào để xử lý các tệp Excel lớn bị tràn văn bản?**
-A2: Sử dụng `TextOverflowMode.HIDE_TEXT` để quản lý vấn đề tràn một cách hiệu quả.
-**Câu hỏi 3: Tôi có thể tùy chỉnh thêm đầu ra HTML không?**
-A3: Có, GroupDocs.Viewer cung cấp nhiều tùy chọn tùy chỉnh khác nhau để hiển thị HTML.
-**Câu hỏi 4: Những sai lầm thường gặp khi sử dụng GroupDocs.Viewer là gì?**
-A4: Đảm bảo môi trường của bạn được thiết lập chính xác và chọn cài đặt tràn văn bản phù hợp dựa trên nhu cầu của tài liệu.
-**Câu hỏi 5: Tôi có thể tìm thêm tài nguyên hoặc nhận hỗ trợ ở đâu?**
-A5: Ghé thăm [Diễn đàn hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9) để được hỗ trợ và tham khảo tài liệu của họ để có hướng dẫn toàn diện.
-## Tài nguyên
-- **Tài liệu**: [Tài liệu Java GroupDocs.Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Tài liệu tham khảo API**: [Tài liệu tham khảo API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Tải về**: [Tải xuống GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Mua**: [Mua giấy phép GroupDocs](https://purchase.groupdocs.com/buy)
-- **Dùng thử miễn phí**: [Dùng thử miễn phí GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Giấy phép tạm thời**: [Yêu cầu Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
-Bằng cách làm theo hướng dẫn này, giờ đây bạn đã có thể xử lý tình trạng tràn văn bản trong bảng tính Excel một cách liền mạch với GroupDocs.Viewer cho Java. Chúc bạn viết mã vui vẻ!
+
+*Giải thích*: Phương thức `view` đọc workbook mẫu, áp dụng quy tắc ẩn tràn và ghi các tệp HTML vào thư mục đã xác định ở trên.
+
+## Các trường hợp sử dụng phổ biến và lợi ích
+- **Web Portals** – Hiển thị bảng tài chính mà không có chuỗi dài làm phá vỡ bố cục.  
+- **Data Analytics Dashboards** – Giữ dữ liệu lớn dễ đọc bằng cách ẩn văn bản dư thừa.  
+- **Customer Reporting** – Cung cấp báo cáo HTML sạch sẽ, thân thiện với máy in.  
+
+Bằng cách sử dụng **hide text overflow excel**, bạn đảm bảo rằng cách trình bày trực quan luôn nhất quán trên mọi trình duyệt và thiết bị.
+
+## Những lưu ý về hiệu năng
+- **Memory Management** – Giải phóng nhanh instance `Viewer` (như trong ví dụ try‑with‑resources).  
+- **Embedded Resources** – Nhúng hình ảnh và style giảm số lần yêu cầu HTTP nhưng làm tăng kích thước HTML; chọn chế độ phù hợp với băng thông của bạn.  
+- **Caching** – Lưu HTML đã render cho các workbook thường truy cập để tránh xử lý lại.
+
+## Câu hỏi thường gặp
+**Q1: GroupDocs.Viewer cho Java là gì?**  
+A1: Đó là thư viện Java render hơn 100 định dạng tài liệu (bao gồm Excel) sang HTML, PDF, PNG và các định dạng khác, mà không cần Microsoft Office trên server.
+
+**Q2: Làm sao xử lý các file Excel lớn có văn bản tràn?**  
+A2: Sử dụng `TextOverflowMode.HIDE_TEXT` như đã minh họa, và cân nhắc bật caching hoặc xử lý file theo từng phần để giảm áp lực bộ nhớ.
+
+**Q3: Tôi có thể tùy chỉnh đầu ra HTML thêm không?**  
+A3: Có. `HtmlViewOptions` cung cấp nhiều cài đặt — như CSS tùy chỉnh, xử lý hình ảnh và kiểm soát kích thước trang.
+
+**Q4: Những lỗi thường gặp khi dùng tính năng này là gì?**  
+A4: Quên giải phóng instance `Viewer`, hoặc để mặc định chế độ tràn (hiển thị văn bản) thay vì `HIDE_TEXT`.
+
+**Q5: Tôi có thể tìm thêm trợ giúp hoặc ví dụ ở đâu?**  
+A5: Truy cập [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) để nhận hỗ trợ cộng đồng và tài liệu chính thức.
+
+## Kết luận
+Bằng cách làm theo các bước trên, bạn có thể **ẩn tràn văn bản Excel** các ô khi **convert excel to html** với GroupDocs.Viewer cho Java. Cấu hình đơn giản này cải thiện đáng kể khả năng đọc của các bảng tính đã render và tích hợp mượt mà vào các giải pháp báo cáo dựa trên web.
+
+**Resources**  
+- **Documentation:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-18  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  

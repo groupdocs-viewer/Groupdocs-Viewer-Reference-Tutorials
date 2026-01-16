@@ -1,31 +1,45 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Javaを使用して、Excelスプレッドシートのテキストオーバーフローを管理する方法を学びます。このガイドでは、ステップバイステップの手順とベストプラクティスを紹介します。"
-"title": "GroupDocs.Viewer for Java を使用して Excel スプレッドシートのテキストオーバーフローを調整する方法"
-"url": "/ja/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
-"weight": 1
+date: '2025-12-18'
+description: GroupDocs.Viewer for Java を使用して Excel を HTML に変換する際に、Excel のテキストオーバーフローを非表示にする方法を学びましょう。セットアップ、コード、ベストプラクティスを含むステップバイステップガイドです。
+keywords:
+- GroupDocs.Viewer Java
+- adjust text overflow Excel
+- rendering Excel to HTML
+title: GroupDocs.Viewer for JavaでExcelのテキストオーバーフローを非表示にする
 type: docs
+url: /ja/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/
+weight: 1
 ---
-# GroupDocs.Viewer for Java を使用して Excel スプレッドシートのテキストオーバーフローを調整する方法
-## 導入
-ドキュメントを HTML に変換するときにスプレッドシートのセルに溢れたテキストを処理することは、特に大規模な Excel ファイルの場合にはよくある課題です。 **GroupDocs.Viewer（Java用）** このプロセスが簡素化され、オーバーフローしたテキストを効率的に管理および非表示にすることができます。
-このチュートリアルでは、Java の GroupDocs.Viewer を使用してスプレッドシートのセルからあふれたテキストを非表示にし、あふれたテキストの問題がなくスプレッドシートがきれいに表示されるようにする方法について説明します。
 
-**学習内容:**
-- GroupDocs.ViewerをJavaでセットアップする方法
-- 設定 `HtmlViewOptions` Excelシートのテキストオーバーフローを調整する
-- この機能の実際的な応用
+# GroupDocs.Viewer for Java で Excel のテキストオーバーフローを非表示にする
 
-まず、システムで GroupDocs.Viewer を構成する前に前提条件を設定しましょう。
+スプレッドシートを HTML に変換する際に **hide text overflow Excel** のセルを非表示にすると、結果はすっきりとしたプロフェッショナルな見た目になります。このチュートリアルでは、GroupDocs.Viewer for Java を使用して乱雑なオーバーフローを防止する具体的な手順を解説します。ビューアの設定方法、リソースの埋め込み方法、Excel ワークブックのレンダリング方法を確認し、セルの境界を超えるテキストを単に非表示にする方法を学びます。
+
+![Excel スプレッドシートでテキストオーバーフローを調整する（GroupDocs.Viewer for Java）](/viewer/advanced-rendering/adjust-text-overflow-in-excel-spreadsheets-java.png)
+
+## クイックアンサー
+
+- **「hide text overflow excel」は何をするものですか？** HTML レンダリング時にセルの幅や高さを超えるコンテンツを抑制します。  
+- **どのライブラリがこれを処理しますか？** GroupDocs.Viewer for Java が `TextOverflowMode.HIDE_TEXT` オプションを提供します。  
+- **ライセンスは必要ですか？** 評価用の一時ライセンスは利用可能です。実運用には正式ライセンスが必要です。  
+- **Excel を HTML に変換することもできますか？** はい。同じビューアが Excel ファイルを HTML に変換し、オーバーフロー設定を適用します。  
+- **大規模なワークブックでもこのアプローチは適していますか？** はい。「Performance Considerations」セクションのパフォーマンスヒントに従ってください。
+
+## Excel のテキストオーバーフローを非表示にするとはどういうことですか？
+`hide text overflow excel` は、Excel シートを HTML に変換する際に、セルの境界外にテキストがはみ出すのをカットするレンダリングモードです。これにより、特にブラウザ上で表示するダッシュボードやレポートのレイアウトが整然と保たれます。
+
+## Excel を HTML に変換するのに GroupDocs.Viewer を使う理由
+GroupDocs.Viewer は、サーバー側で **convert excel to html** を高速に実行でき、サーバーに Microsoft Office をインストールする必要がありません。幅広い Excel 機能をサポートし、セルの表示方法（オーバーフローしたテキストの非表示など）を細かく制御できます。
+
 ## 前提条件
-始める前に、以下のものを用意してください。
-- **Java開発キット（JDK）**: バージョン 8 以上がマシンにインストールされ、構成されていること。
-- **メイヴン**プロジェクト内の依存関係を管理します。
-- Java プログラミングの基本的な理解と Maven プロジェクトに関する知識。
-コードの管理と実行を容易にするために、IntelliJ IDEA や Eclipse などの IDE へのアクセスを確保します。
-## GroupDocs.Viewer を Java 用にセットアップする
-まず、Mavenを使ってGroupDocs.Viewerを依存関係として追加します。これにより、プロジェクト内でのライブラリのセットアップと管理が簡素化されます。
-### Maven 依存関係:
+- **Java Development Kit (JDK)** – バージョン 8 以上。  
+- **Maven** – 依存関係管理用。  
+- 基本的な Java の知識と IDE（IntelliJ IDEA、Eclipse など）。
+
+## Java 用 GroupDocs.Viewer のセットアップ
+Maven プロジェクトにビューアライブラリを追加します。
+
+### Maven 依存関係
 ```xml
 <repositories>
    <repository>
@@ -42,72 +56,98 @@ type: docs
    </dependency>
 </dependencies>
 ```
-### ライセンス取得
-GroupDocs.Viewer の一時ライセンスを取得して、すべての機能を制限なく試してみましょう。
-- **無料トライアル**最新バージョンをダウンロード [GroupDocs リリース](https://releases。groupdocs.com/viewer/java/).
-- **一時ライセンス**リクエスト方法 [GroupDocs 一時ライセンスページ](https://purchase。groupdocs.com/temporary-license/).
-- **購入**フル機能アクセスのライセンスを購入する [GroupDocs 購入ページ](https://purchase。groupdocs.com/buy).
-### 基本的な初期化
-ViewerクラスをExcelドキュメントのパスで初期化します。これは、スプレッドシートにアクセスし、HTML形式でレンダリングするために不可欠です。
+
+### ライセンスの取得
+すべての機能を有効にする一時ライセンスを取得します。
+
+- **Free Trial**: 最新バージョンを [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) からダウンロード。  
+- **Temporary License**: [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/) でリクエスト。  
+- **Purchase**: 正式ライセンスは [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) で購入。
+
 ## 実装ガイド
-GroupDocs.Viewer を使用してスプレッドシートのテキスト オーバーフローを調整する方法を見てみましょう。
+
+以下は、元のコードブロックはそのままに、説明を加えたステップバイステップのガイドです。
+
 ### ステップ1: 出力ディレクトリを定義する
-まず、レンダリングされたHTMLファイルを保存する場所を指定します。このディレクトリには、ドキュメントの各ページが個別のHTMLファイルとして保存されます。
+レンダリングされた HTML ファイルの保存先を指定します。
+
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**説明**： `Utils.getOutputDirectoryPath` 指定されたディレクトリ名に基づいて、出力 HTML ページを保存するためのパスを決定するユーティリティ メソッドです。
-### ステップ2: ページファイルパスを構成する
-レンダリングされたドキュメントの各ページファイルに名前を付けるためのフォーマットを作成します。これにより、整理された保存と容易な検索が実現します。
+
+*説明*: `Utils.getOutputDirectoryPath` は、プロジェクトの出力フォルダー内に **YOUR_OUTPUT_DIRECTORY** という名前のフォルダーを作成（または再利用）します。
+
+### ステップ 2: ページファイルパスの設定
+生成される各 HTML ページの命名パターンを作成します。
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**説明**：その `{0}` レンダリング中にプレースホルダーはページ番号に置き換えられ、各ページのファイル名が一意になります。
-### ステップ3: HtmlViewOptionsを設定する
-設定 `HtmlViewOptions` リソースの埋め込み方法を管理し、スプレッドシートのセルの希望するテキスト オーバーフロー モードを指定します。
+
+*説明*: `{0}` はビューアがページ番号に置き換えるプレースホルダーで、`page_1.html`、`page_2.html` などのファイル名が生成されます。
+
+### ステップ 3: HtmlViewOptions の設定
+リソースを埋め込み、セルテキストのオーバーフローを非表示にするようビューアに指示します。
+
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT);
 ```
-**説明**設定により `TextOverflowMode` に `HIDE_TEXT`セルの境界を超えるコンテンツは非表示になり、乱雑なオーバーフローが防止されます。
-### ステップ4: ドキュメントをレンダリングする
-Viewer クラスを使用して Excel ファイルを処理し、指定されたオプションを使用して HTML に変換します。
+
+*説明*: `TextOverflowMode.HIDE_TEXT` が、**prevent overflow in excel** のセルを **render excel to html** プロセス中に非表示にする重要な設定です。
+
+### ステップ 4: ドキュメントのレンダリング
+設定したオプションでビューアを実行します。
+
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
     viewer.view(viewOptions);
 }
 ```
-**説明**：その `view` メソッドはレンダリングを処理します。設定された `HtmlViewOptions`変換中にテキスト オーバーフロー設定を適用します。
-## 実用的なアプリケーション
-この機能は、次のようなさまざまなシナリオで非常に役立ちます。
-- **ウェブポータル**データの簡潔さと明瞭さが重要な財務レポートを表示します。
-- **データ分析プラットフォーム**テキストが溢れてユーザーを圧倒することなく、大規模なデータセットをきれいに表示します。
-- **顧客ダッシュボード**スプレッドシートを通じて洞察を提供しながら、見やすい視覚的なプレゼンテーションを実現します。
-CRM や ERP などの他のシステムとの統合でも、このクリーンな表示方法のメリットが得られ、プラットフォーム間のユーザー エクスペリエンスが向上します。
+
+*説明*: `view` メソッドはサンプルワークブックを読み込み、オーバーフロールールを適用し、先に指定したフォルダーに HTML ファイルを書き出します。
+
+## 一般的なユースケースとメリット
+- **Webポータル** – 長い文字列がレイアウトを崩さないように、財務テーブルを表示。  
+- **データ分析ダッシュボード** – 大規模データセットでも余分なテキストを非表示にして可読性を確保。  
+- **顧客レポート** – **clean, printer‑friendly HTML reports** を提供。
+
+**Excelのテキストオーバーフローを非表示にする** を使用することで、ブラウザやデバイス間で視覚的な一貫性が保たれます。
+
 ## パフォーマンスに関する考慮事項
-GroupDocs.Viewer for Java を使用する場合は、パフォーマンスを最適化するために次の点を考慮してください。
-- **メモリ管理**特に大きなドキュメントを処理するときに、アプリケーションがメモリを効率的に管理することを確認します。
-- **リソースの使用状況**埋め込みリソースを賢く活用して、読み込み時間とレンダリング品質のバランスをとります。
-- **キャッシュメカニズム**必要に応じてキャッシュ戦略を実装し、冗長な処理を削減します。
+- **メモリ管理** – `Viewer` インスタンスは（try‑with‑resources で示したように）速やかに解放してください。  
+- **埋め込みリソース** – 画像やスタイルを埋め込むと HTTP リクエスト数は減りますが、HTML のサイズは増加します。帯域幅に合わせてモードを選択してください。  
+- **キャッシュ** – 頻繁にアクセスされるワークブックは、事前にレンダリングした HTML をキャッシュして再処理を回避します。
+
+## よくある質問
+**Q1: GroupDocs.Viewer for Java とは何ですか？**  
+A1: Microsoft Office をサーバーにインストールせずに、Excel を含む 100 以上のドキュメント形式を HTML、PDF、PNG などにレンダリングできる Java ライブラリです。
+
+**Q2: テキストオーバーフローがある大きな Excel ファイルはどう扱いますか？**  
+A2: `TextOverflowMode.HIDE_TEXT` を使用し、キャッシュを有効化するか、ファイルをチャンクに分割して処理し、メモリ負荷を軽減してください。
+
+**Q3: HTML 出力をさらにカスタマイズできますか？**  
+A3: はい。`HtmlViewOptions` ではカスタム CSS、画像処理、ページサイズ制御など多数の設定が可能です。
+
+**Q4: この機能を使用する際の一般的な落とし穴は何ですか？**  
+A4: `Viewer` インスタンスを解放し忘れること、またはデフォルトのオーバーフローモード（テキストが表示される）を使用したまま `HIDE_TEXT` に切り替えないことです。
+
+**Q5: さらにサポートやサンプルが欲しい場合は？**  
+A5: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) でコミュニティの支援や公式ドキュメントをご確認ください。
+
 ## 結論
-GroupDocs.Viewer for Javaを使用してスプレッドシートのセル内のテキストオーバーフローを調整するのは簡単で、HTMLに変換されたドキュメントの読みやすさを向上させることができます。このチュートリアルでは、この機能をアプリケーションに設定および実装するための手順を段階的に説明しました。
-これらのテクニックをプロジェクトに統合して、Web 環境でのデータの表示を改善することで、さらに詳しく調べることができます。
-## FAQセクション
-**Q1: GroupDocs.Viewer for Java とは何ですか?**
-A1: Java アプリケーションでさまざまな形式のドキュメント レンダリングを可能にするライブラリです。
-**Q2: テキストオーバーフローのある大きな Excel ファイルをどのように処理すればよいですか?**
-A2: 使用 `TextOverflowMode.HIDE_TEXT` オーバーフローの問題を効率的に管理します。
-**Q3: HTML 出力をさらにカスタマイズできますか?**
-A3: はい、GroupDocs.Viewer では HTML レンダリング用のさまざまなカスタマイズ オプションが用意されています。
-**Q4: GroupDocs.Viewer を使用する際によくある落とし穴は何ですか?**
-A4: 環境が正しく設定されていることを確認し、ドキュメントのニーズに基づいて適切なテキスト オーバーフロー設定を選択します。
-**Q5: さらにリソースを見つけたりサポートを受けたりできる場所はどこですか?**
-A5: 訪問 [GroupDocs サポートフォーラム](https://forum.groupdocs.com/c/viewer/9) サポートが必要な場合は、ドキュメントを参照して包括的なガイドを確認してください。
-## リソース
-- **ドキュメント**： [GroupDocs.Viewer Javaドキュメント](https://docs.groupdocs.com/viewer/java/)
-- **APIリファレンス**： [GroupDocs API リファレンス](https://reference.groupdocs.com/viewer/java/)
-- **ダウンロード**： [GroupDocs ダウンロード](https://releases.groupdocs.com/viewer/java/)
-- **購入**： [GroupDocsライセンスを購入](https://purchase.groupdocs.com/buy)
-- **無料トライアル**： [GroupDocs無料トライアル](https://releases.groupdocs.com/viewer/java/)
-- **一時ライセンス**： [一時ライセンスの申請](https://purchase.groupdocs.com/temporary-license/)
-このガイドに従うことで、GroupDocs.Viewer for Java を使って Excel スプレッドシートのテキストオーバーフローをシームレスに処理できるようになります。コーディングを楽しみましょう！
+上記の手順に従うことで、GroupDocs.Viewer for Java を使用して **hide text overflow Excel** のセルを **convert excel to html** 時に非表示にできます。このシンプルな設定により、レンダリングされたスプレッドシートの可読性が大幅に向上し、Web ベースのレポーティングソリューションにシームレスに組み込めます。
+
+**リソース**
+- **ドキュメント:** [GroupDocs.Viewer Javaドキュメント](https://docs.groupdocs.com/viewer/java/)
+- **APIリファレンス:** [GroupDocs APIリファレンス](https://reference.groupdocs.com/viewer/java/)
+- **ダウンロード:** [GroupDocsダウンロード](https://releases.groupdocs.com/viewer/java/)
+- **購入:** [GroupDocsライセンスを購入](https://purchase.groupdocs.com/buy)
+- **無料トライアル:** [GroupDocs無料トライアル](https://releases.groupdocs.com/viewer/java/)
+- **一時ライセンス:** [一時ライセンスをリクエスト](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**最終更新日:** 2025年12月18日
+**テスト環境:** GroupDocs.Viewer 25.2 for Java
+**作成者:** GroupDocs

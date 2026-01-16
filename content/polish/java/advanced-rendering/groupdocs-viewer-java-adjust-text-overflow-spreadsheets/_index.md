@@ -1,31 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak zarządzać przepełnieniem tekstu w arkuszach kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer dla języka Java. Ten przewodnik zawiera instrukcje krok po kroku i najlepsze praktyki."
-"title": "Jak dostosować przepełnienie tekstu w arkuszach kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer dla języka Java"
-"url": "/pl/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/"
-"weight": 1
+date: '2025-12-18'
+description: Dowiedz się, jak ukryć przepełnienie tekstu w Excelu podczas konwertowania
+  Excela na HTML przy użyciu GroupDocs.Viewer dla Javy. Przewodnik krok po kroku z
+  konfiguracją, kodem i najlepszymi praktykami.
+keywords:
+- GroupDocs.Viewer Java
+- adjust text overflow Excel
+- rendering Excel to HTML
+title: Ukryj przepełnienie tekstu w Excelu przy użyciu GroupDocs.Viewer dla Javy
 type: docs
+url: /pl/java/advanced-rendering/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/
+weight: 1
 ---
-# Jak dostosować przepełnienie tekstu w arkuszach kalkulacyjnych programu Excel za pomocą GroupDocs.Viewer dla języka Java
-## Wstęp
-Radzenie sobie z nadmiarem tekstu w komórkach arkusza kalkulacyjnego podczas konwersji dokumentów do formatu HTML to powszechny problem, zwłaszcza w przypadku obszernych plików programu Excel. **GroupDocs.Viewer dla Java** upraszcza ten proces, umożliwiając skuteczne zarządzanie przepełnionym tekstem i jego ukrywanie.
-W tym samouczku dowiesz się, jak ukryć tekst wylewający się z komórek arkusza kalkulacyjnego za pomocą narzędzia GroupDocs.Viewer w języku Java. Dzięki temu Twoje arkusze kalkulacyjne będą wyświetlane w przejrzysty sposób, bez problemów z przepełnieniem.
 
-**Czego się nauczysz:**
-- Jak skonfigurować GroupDocs.Viewer dla Java
-- Konfigurowanie `HtmlViewOptions` aby dostosować przepełnienie tekstu w arkuszach Excela
-- Praktyczne zastosowania tej funkcji
+# Ukryj przepełnienie tekstu w Excelu za pomocą GroupDocs.Viewer dla Javy
 
-Zacznijmy od skonfigurowania wymagań wstępnych przed skonfigurowaniem GroupDocs.Viewer w systemie.
+Kiedy **ukrywasz przepełnienie tekstu w Excelu** komórki podczas konwertowania arkusza kalkulacyjnego do HTML, wynik wygląda czysto i profesjonalnie. W tym samouczku przeprowadzimy Cię krok po kroku przez dokładne działania, aby zapobiec niechlujnemu przepełnieniu, używając GroupDocs.Viewer for Java. Zobaczysz, jak skonfigurować przeglądarkę, osadzić zasoby i wyrenderować skoroszyt Excel, tak aby wszelki tekst wykraczający poza granice komórki został po prostu ukryty.
+
+![Dostosuj przepełnienie tekstu w arkuszach Excel za pomocą GroupDocs.Viewer for Java](/viewer/advanced-rendering/adjust-text-overflow-in-excel-spreadsheets-java.png)
+
+## Szybkie odpowiedzi
+- **Co robi „hide text overflow excel”?** Usuwa wszelką zawartość komórki, która przekracza szerokość lub wysokość komórki podczas renderowania HTML.  
+- **Która biblioteka obsługuje to?** GroupDocs.Viewer for Java udostępnia opcję `TextOverflowMode.HIDE_TEXT`.  
+- **Czy potrzebna jest licencja?** Dostępna jest tymczasowa licencja do oceny; pełna licencja jest wymagana w środowisku produkcyjnym.  
+- **Czy mogę także konwertować Excel do HTML?** Tak – ta sama przeglądarka konwertuje pliki Excel do HTML, stosując ustawienie przepełnienia.  
+- **Czy to podejście jest odpowiednie dla dużych skoroszytów?** Zdecydowanie tak, wystarczy zastosować wskazówki dotyczące wydajności w sekcji „Rozważania dotyczące wydajności”.
+
+## Co to jest hide text overflow excel?
+`hide text overflow excel` jest trybem renderowania, który instruuje przeglądarkę, aby odcinała wszelki tekst, który w przeciwnym razie wyciekałby poza zdefiniowane granice komórki, gdy arkusz Excel jest przekształcany do HTML. Dzięki temu układ pozostaje schludny, szczególnie w dashboardach lub raportach wyświetlanych w przeglądarkach.
+
+## Dlaczego używać GroupDocs.Viewer do konwersji Excel do HTML?
+GroupDocs.Viewer oferuje szybkie rozwiązanie po stronie serwera do **convert excel to html** bez konieczności instalacji Microsoft Office na serwerze. Obsługuje szeroki zakres funkcji Excela i zapewnia precyzyjną kontrolę nad wyświetlaniem komórek — na przykład ukrywanie przepełnionego tekstu.
+
 ## Wymagania wstępne
-Zanim zaczniemy, upewnij się, że masz:
-- **Zestaw narzędzi programistycznych Java (JDK)**:Wersja 8 lub nowsza zainstalowana i skonfigurowana na Twoim komputerze.
-- **Maven**:Do zarządzania zależnościami w projekcie.
-- Podstawowa znajomość programowania w Javie i znajomość projektów Maven.
-Zapewnij dostęp do środowiska IDE, takiego jak IntelliJ IDEA lub Eclipse, aby ułatwić zarządzanie kodem i jego wykonywanie.
-## Konfigurowanie GroupDocs.Viewer dla Java
-Na początek dodaj GroupDocs.Viewer jako zależność za pomocą Maven. Uprości to konfigurację i zarządzanie biblioteką w projekcie.
-### Zależność Maven:
+- **Java Development Kit (JDK)** – wersja 8 lub nowsza.  
+- **Maven** – do zarządzania zależnościami.  
+- Podstawowa znajomość Javy oraz IDE (IntelliJ IDEA, Eclipse itp.).  
+
+## Konfiguracja GroupDocs.Viewer dla Javy
+Dodaj bibliotekę przeglądarki do swojego projektu Maven.
+
+### Zależność Maven
 ```xml
 <repositories>
    <repository>
@@ -42,72 +57,97 @@ Na początek dodaj GroupDocs.Viewer jako zależność za pomocą Maven. Uprości
    </dependency>
 </dependencies>
 ```
-### Nabycie licencji
-Uzyskaj tymczasową licencję na GroupDocs.Viewer, aby móc korzystać ze wszystkich funkcji bez ograniczeń:
-- **Bezpłatna wersja próbna**:Pobierz najnowszą wersję z [Wydania GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Licencja tymczasowa**: Żądanie poprzez [Strona tymczasowej licencji GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Zakup**:Kup licencję na pełny dostęp do funkcji na [Strona zakupu GroupDocs](https://purchase.groupdocs.com/buy).
-### Podstawowa inicjalizacja
-Zainicjuj klasę Viewer za pomocą ścieżki dokumentu Excel. Jest to kluczowe dla dostępu i renderowania arkusza kalkulacyjnego do formatu HTML.
-## Przewodnik wdrażania
-Sprawdźmy, jak dostosować nadmiar tekstu w arkuszach kalkulacyjnych za pomocą GroupDocs.Viewer.
+
+### Uzyskanie licencji
+Uzyskaj tymczasową licencję, aby odblokować wszystkie funkcje:
+
+- **Free Trial**: Pobierz najnowszą wersję z [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License**: Złóż wniosek przez [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase**: Kup pełną licencję na [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
+
+## Przewodnik implementacji
+Poniżej znajduje się krok po kroku przewodnik, który zachowuje oryginalne bloki kodu nienaruszone, jednocześnie dodając jasne wyjaśnienia.
+
 ### Krok 1: Zdefiniuj katalog wyjściowy
-Najpierw określ, gdzie chcesz przechowywać renderowane pliki HTML. Ten katalog będzie zawierał każdą stronę dokumentu jako indywidualny plik HTML.
+Określ, gdzie zostaną zapisane wyrenderowane pliki HTML.
+
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Wyjaśnienie**: `Utils.getOutputDirectoryPath` jest metodą narzędziową, która określa ścieżkę do przechowywania wyjściowych stron HTML na podstawie podanej nazwy katalogu.
-### Krok 2: Skonfiguruj ścieżkę pliku stronicowania
-Utwórz format nazywania każdego pliku strony renderowanego dokumentu. Zapewnia to uporządkowane przechowywanie i łatwe pobieranie.
+
+*Explanation*: `Utils.getOutputDirectoryPath` tworzy (lub ponownie używa) folder o nazwie **YOUR_OUTPUT_DIRECTORY** wewnątrz folderu wyjściowego projektu.
+
+### Krok 2: Skonfiguruj ścieżkę pliku strony
+Utwórz wzorzec nazewnictwa dla każdej wygenerowanej strony HTML.
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Wyjaśnienie**:Ten `{0}` Podczas renderowania symbol zastępczy jest zastępowany numerem strony, co zapewnia unikalną nazwę pliku dla każdej strony.
+
+*Explanation*: `{0}` jest symbolem zastępczym, który przeglądarka zamienia na numer strony, dając pliki takie jak `page_1.html`, `page_2.html` itp.
+
 ### Krok 3: Skonfiguruj HtmlViewOptions
-Konfiguruj `HtmlViewOptions` aby zarządzać sposobem osadzania zasobów i określić żądany tryb przepełnienia tekstem dla komórek arkusza kalkulacyjnego.
+Powiedz przeglądarce, aby osadziła zasoby i ukryła przepełniony tekst w komórkach.
+
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getSpreadsheetOptions().setTextOverflowMode(TextOverflowMode.HIDE_TEXT);
 ```
-**Wyjaśnienie**:Ustawiając `TextOverflowMode` Do `HIDE_TEXT`, zawartość wykraczająca poza granice komórek jest ukrywana, co zapobiega niechcianym przepełnieniom.
-### Krok 4: Wyrenderuj swój dokument
-Użyj klasy Viewer do przetworzenia pliku Excel i przekształcenia go do formatu HTML przy użyciu określonych opcji.
+
+*Explanation*: `TextOverflowMode.HIDE_TEXT` jest kluczowym ustawieniem, które **prevent overflow in excel** komórek podczas procesu **render excel to html**.
+
+### Krok 4: Renderuj dokument
+Uruchom przeglądarkę z skonfigurowanymi opcjami.
+
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_XLSX_WITH_TEXT_OVERFLOW)) {
     viewer.view(viewOptions);
 }
 ```
-**Wyjaśnienie**:Ten `view` Metoda obsługuje renderowanie. Używa skonfigurowanego `HtmlViewOptions`, stosując nasze ustawienia przepełnienia tekstu podczas konwersji.
-## Zastosowania praktyczne
-Funkcja ta jest nieoceniona w różnych scenariuszach, takich jak:
-- **Portale internetowe**:Wyświetlanie raportów finansowych, w których zwięzłość i przejrzystość danych mają kluczowe znaczenie.
-- **Platformy analityki danych**:Prezentowanie dużych zbiorów danych w przejrzysty sposób, bez przytłaczania użytkowników nadmiarem tekstu.
-- **Panele klienta**:Udostępnianie spostrzeżeń za pomocą arkuszy kalkulacyjnych przy jednoczesnym zapewnieniu przejrzystej prezentacji wizualnej.
-Integracja z innymi systemami, np. CRM i ERP, również może skorzystać z tej przejrzystej metody wyświetlania, zwiększając komfort użytkowania na różnych platformach.
+
+*Explanation*: Metoda `view` odczytuje przykładowy skoroszyt, stosuje regułę przepełnienia i zapisuje pliki HTML do wcześniej określonego folderu.
+
+## Typowe przypadki użycia i korzyści
+- **Web Portals** – Wyświetlaj tabele finansowe bez długich ciągów łamiących układ.  
+- **Data Analytics Dashboards** – Utrzymaj duże zestawy danych czytelne, ukrywając nadmiarowy tekst.  
+- **Customer Reporting** – Dostarczaj czyste, przyjazne dla drukarki raporty HTML.  
+
+Korzystając z **hide text overflow excel**, zapewniasz, że prezentacja wizualna pozostaje spójna we wszystkich przeglądarkach i urządzeniach.
+
 ## Rozważania dotyczące wydajności
-Podczas korzystania z GroupDocs.Viewer dla Java należy wziąć pod uwagę następujące kwestie, aby zoptymalizować wydajność:
-- **Zarządzanie pamięcią**:Upewnij się, że Twoja aplikacja efektywnie zarządza pamięcią, zwłaszcza podczas przetwarzania dużych dokumentów.
-- **Wykorzystanie zasobów**: Wykorzystuj zasoby osadzone rozważnie, aby zachować równowagę między czasem ładowania i jakością renderowania.
-- **Mechanizmy buforowania**: Wdrożenie strategii buforowania w miarę możliwości w celu ograniczenia zbędnego przetwarzania.
-## Wniosek
-Dostosowanie przepełnienia tekstu w komórkach arkusza kalkulacyjnego za pomocą GroupDocs.Viewer dla Java to prosty proces, który zwiększa czytelność dokumentu po wyrenderowaniu do HTML. Ten samouczek zawiera wskazówki krok po kroku dotyczące konfigurowania i wdrażania tej funkcji w aplikacjach.
-Zbadaj tę kwestię dokładniej, integrując te techniki ze swoimi projektami i udoskonalając prezentację danych w środowiskach internetowych.
-## Sekcja FAQ
-**P1: Czym jest GroupDocs.Viewer dla Java?**
-A1: Jest to biblioteka umożliwiająca renderowanie dokumentów w różnych formatach w aplikacjach Java.
-**P2: Jak radzić sobie z dużymi plikami programu Excel zawierającymi zbyt dużo tekstu?**
-A2: Użyj `TextOverflowMode.HIDE_TEXT` aby skutecznie zarządzać problemami związanymi z przepełnieniem.
-**P3: Czy mogę dodatkowo dostosować wynik HTML?**
-A3: Tak, GroupDocs.Viewer oferuje różne opcje dostosowywania renderowania HTML.
-**P4: Jakie są najczęstsze pułapki podczas korzystania z GroupDocs.Viewer?**
-A4: Upewnij się, że Twoje środowisko jest poprawnie skonfigurowane i wybierz odpowiednie ustawienia nadmiaru tekstu na podstawie potrzeb dokumentu.
-**P5: Gdzie mogę znaleźć więcej materiałów lub uzyskać pomoc?**
-A5: Odwiedź [Forum wsparcia GroupDocs](https://forum.groupdocs.com/c/viewer/9) Aby uzyskać pomoc, zapoznaj się z dokumentacją i zapoznaj się z kompleksowymi przewodnikami.
+- **Memory Management** – Zwolnij instancję `Viewer` niezwłocznie (jak pokazano przy użyciu try‑with‑resources).  
+- **Embedded Resources** – Osadzanie obrazów i stylów zmniejsza liczbę żądań HTTP, ale zwiększa rozmiar HTML; wybierz tryb odpowiadający Twoim ograniczeniom przepustowości.  
+- **Caching** – Przechowuj wyrenderowany HTML dla często używanych skoroszytów, aby uniknąć ponownego przetwarzania.
+
+## Najczęściej zadawane pytania
+**Q1: What is GroupDocs.Viewer for Java?**  
+A1: To biblioteka Java, która renderuje ponad 100 formatów dokumentów (w tym Excel) do HTML, PDF, PNG i innych, bez potrzeby Microsoft Office na serwerze.
+
+**Q2: How do I handle large Excel files with text overflow?**  
+A2: Użyj `TextOverflowMode.HIDE_TEXT` jak pokazano i rozważ włączenie buforowania lub przetwarzanie pliku w częściach, aby zmniejszyć obciążenie pamięci.
+
+**Q3: Can I customize the HTML output further?**  
+A3: Tak. `HtmlViewOptions` oferuje wiele ustawień — takich jak własny CSS, obsługa obrazów i kontrola rozmiaru strony.
+
+**Q4: What are common pitfalls when using this feature?**  
+A4: Zapomnienie o zwolnieniu instancji `Viewer` lub użycie domyślnego trybu przepełnienia (który wyświetla tekst) zamiast `HIDE_TEXT`.
+
+**Q5: Where can I get more help or examples?**  
+A5: Odwiedź [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) po pomoc społeczności i oficjalną dokumentację.
+
+## Podsumowanie
+Postępując zgodnie z powyższymi krokami, możesz **hide text overflow Excel** komórki podczas **convert excel to html** przy użyciu GroupDocs.Viewer for Java. Ta prosta konfiguracja znacząco poprawia czytelność wyrenderowanych arkuszy kalkulacyjnych i płynnie integruje się z rozwiązaniami raportowania opartymi na sieci.
+
 ## Zasoby
-- **Dokumentacja**: [Dokumentacja GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)
-- **Odniesienie do API**: [Odwołanie do API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Pobierać**: [Pliki do pobrania GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Zakup**: [Kup licencję GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezpłatna wersja próbna**: [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licencja tymczasowa**: [Poproś o licencję tymczasową](https://purchase.groupdocs.com/temporary-license/)
-Dzięki temu przewodnikowi jesteś teraz przygotowany do obsługi przepełnienia tekstu w arkuszach kalkulacyjnych programu Excel bezproblemowo dzięki GroupDocs.Viewer dla języka Java. Miłego kodowania!
+- **Documentation:** [Dokumentacja GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference:** [Referencja API GroupDocs](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase:** [Kup licencję GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-18  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  
