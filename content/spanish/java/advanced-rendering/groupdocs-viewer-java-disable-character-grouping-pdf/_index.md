@@ -1,36 +1,49 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a deshabilitar la agrupación de caracteres en la representación de PDF utilizando GroupDocs.Viewer para Java, garantizando una representación de texto precisa para scripts complejos."
-"title": "Deshabilitar la agrupación de caracteres en archivos PDF con GroupDocs.Viewer para Java&#58; técnicas de representación precisa"
-"url": "/es/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
-"weight": 1
+date: '2025-12-21'
+description: Aprende cómo desactivar la agrupación en PDFs con GroupDocs.Viewer para
+  Java, usando java html de las opciones de renderizado de PDF para garantizar una
+  representación precisa del texto.
+keywords:
+- disable character grouping PDFs
+- GroupDocs Viewer Java configuration
+- precise text representation in PDFs
+title: Cómo desactivar la agrupación en PDFs con GroupDocs.Viewer para Java
 type: docs
+url: /es/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/
+weight: 1
 ---
-# Deshabilitar la agrupación de caracteres en archivos PDF con GroupDocs.Viewer para Java
+
+# Cómo desactivar la agrupación en PDFs con GroupDocs.Viewer para Java
+
+Cuando necesitas **desactivar la agrupación** al renderizar PDFs, especialmente para scripts complejos o lenguas antiguas, la colocación precisa de los caracteres se vuelve esencial. La función predeterminada *Character Grouping* puede combinar caracteres incorrectamente, provocando una mala interpretación del contenido. En esta guía te mostraremos paso a paso cómo desactivar la agrupación usando GroupDocs.Viewer para Java, de modo que cada glifo permanezca exactamente donde corresponde.
+
+![Técnicas de renderizado preciso con GroupDocs.Viewer para Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
+
+## Respuestas rápidas
+- **¿Qué hace “desactivar la agrupación”?** Obliga al renderizador a tratar cada carácter como un elemento independiente, preservando el diseño exacto.  
+- **¿Qué opción de API controla esto?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
+- **¿Necesito una licencia?** Una prueba funciona para pruebas, pero se requiere una licencia completa para producción.  
+- **¿Puedo generar HTML Java desde PDF al mismo tiempo?** Sí—usa `HtmlViewOptions` para crear salida HTML mientras desactivas la agrupación.  
+- **¿Esta función está limitada a PDFs?** Principalmente es para PDFs, pero el visor soporta muchos otros formatos.
 
 ## Introducción
 
-Al trabajar con documentos PDF, la precisión en la representación es crucial, especialmente al trabajar con estructuras de texto complejas, como jeroglíficos o idiomas que requieren una representación precisa de caracteres. La función "Agrupación de Caracteres" suele causar problemas al agrupar caracteres incorrectamente, lo que provoca una interpretación errónea del contenido del documento. Esto puede ser especialmente problemático para usuarios que necesitan replicar con exactitud el diseño del texto de sus documentos.
+Al trabajar con documentos PDF, la precisión en el renderizado es crucial—especialmente al tratar con estructuras de texto complejas como jeroglíficos o lenguas que requieren una representación precisa de los caracteres. La función "Character Grouping" a menudo causa problemas al agrupar caracteres incorrectamente, lo que lleva a una mala interpretación del contenido del documento. Esto puede ser particularmente problemático para usuarios que necesitan una replicación exacta del diseño del texto de sus documentos.
 
-En este tutorial, aprenderá a usar GroupDocs.Viewer para Java para deshabilitar la agrupación de caracteres en la representación de PDF, garantizando así la máxima precisión. Al finalizar, dominará:
-- Configuración de GroupDocs.Viewer para Java
-- Configuración de las opciones de representación de PDF para deshabilitar la agrupación de caracteres
-- Representación de un documento PDF con representación de texto precisa
+### Requisitos previos
 
-Comencemos configurando su entorno y asegurándonos de que se cumplan todos los requisitos previos.
+Antes de sumergirte en la implementación del código, asegúrate de cumplir con los siguientes requisitos:
+- **Bibliotecas y dependencias**: Necesitarás GroupDocs.Viewer para Java versión 25.2 o posterior.
+- **Configuración del entorno**: Asegúrate de tener instalado un Java Development Kit (JDK) y que tu IDE esté configurado para trabajar con proyectos Maven.
+- **Conocimientos previos**: Comprensión básica de la programación en Java, especialmente el manejo de rutas de archivos y el uso de bibliotecas externas.
 
-### Prerrequisitos
+## Cómo desactivar la agrupación al renderizar PDF
 
-Antes de sumergirse en la implementación del código, asegúrese de cumplir con los siguientes requisitos:
-- **Bibliotecas y dependencias**Necesitará GroupDocs.Viewer para Java versión 25.2 o posterior.
-- **Configuración del entorno**Asegúrese de tener un Kit de desarrollo de Java (JDK) instalado y su IDE configurado para trabajar con proyectos Maven.
-- **Requisitos previos de conocimiento**:Comprensión básica de la programación Java, especialmente el manejo de rutas de archivos y el uso de bibliotecas externas.
+### Configuración de GroupDocs.Viewer para Java
 
-## Configuración de GroupDocs.Viewer para Java
+#### Instalación vía Maven
 
-### Instalación mediante Maven
-
-Primero, integre la biblioteca necesaria en su proyecto. Agregue la siguiente configuración en su `pom.xml`:
+Primero, integra la biblioteca necesaria en tu proyecto. Añade la siguiente configuración en tu `pom.xml`:
 
 ```xml
 <repositories>
@@ -49,23 +62,23 @@ Primero, integre la biblioteca necesaria en su proyecto. Agregue la siguiente co
 </dependencies>
 ```
 
-### Adquisición de licencias
+#### Obtención de licencia
 
-Para utilizar completamente GroupDocs.Viewer, considere adquirir una licencia:
-- **Prueba gratuita**Comience con la prueba gratuita para probar las funciones.
-- **Licencia temporal**:Solicite una licencia temporal si necesita más tiempo.
-- **Compra**:Para proyectos a largo plazo, es aconsejable adquirir una licencia.
+Para utilizar completamente GroupDocs.Viewer, considera adquirir una licencia:
+- **Prueba gratuita**: Comienza con la prueba gratuita para probar las funciones.  
+- **Licencia temporal**: Solicita una licencia temporal si necesitas más tiempo.  
+- **Compra**: Para proyectos a largo plazo, se recomienda comprar una licencia.
 
-### Inicialización y configuración básicas
+#### Inicialización y configuración básica
 
-Comience configurando el entorno de su proyecto:
+Comienza configurando el entorno de tu proyecto:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 import java.nio.file.Path;
 
-// Inicializar el visor de GroupDocs
+// Initialize the GroupDocs Viewer
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
@@ -77,57 +90,43 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-## Guía de implementación
+### Guía de implementación
 
-### Característica: Deshabilitar la agrupación de caracteres
-
-#### Descripción general
-
-La función "Agrupación de caracteres" en el renderizado de PDF puede provocar que los caracteres se agrupen incorrectamente. Este tutorial se centra en cómo deshabilitar esta función para garantizar la máxima precisión, especialmente en idiomas con conjuntos de caracteres complejos.
+#### Funcionalidad: Desactivar la agrupación de caracteres
 
 ##### Paso 1: Definir el directorio de salida
 
-Comience por definir dónde se guardarán los archivos HTML renderizados:
-
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 ```
 
-**¿Por qué?**:Esto garantiza que su salida esté organizada y sea fácilmente accesible.
+**¿Por qué?** Esto asegura que tu salida esté organizada y sea fácilmente accesible.
 
-##### Paso 2: Configurar el formato de la ruta del archivo
-
-Configurar un formato de nombre para cada página renderizada:
+##### Paso 2: Configurar el formato de la ruta de archivo
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**¿Por qué?**:Ayuda a organizar sistemáticamente las páginas del documento PDF.
+**¿Por qué?** Ayuda a organizar sistemáticamente las páginas del documento PDF.
 
-##### Paso 3: Inicializar las opciones de vista HTML
-
-Cree opciones de visualización con recursos integrados para una mejor integración y rendimiento:
+##### Paso 3: Inicializar opciones de vista HTML
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**¿Por qué?**:Los recursos integrados garantizan que todos los activos necesarios estén incluidos en el archivo HTML de cada página.
+**¿Por qué?** Los recursos incrustados garantizan que todos los activos necesarios se incluyan dentro del archivo HTML de cada página.
 
-##### Paso 4: Deshabilitar la agrupación de caracteres
-
-Configurar la representación de PDF para deshabilitar la agrupación de caracteres:
+##### Paso 4: Desactivar la agrupación de caracteres
 
 ```java
 viewOptions.getPdfOptions().setDisableCharsGrouping(true);
 ```
 
-**¿Por qué?**:Esto garantiza que los caracteres se representen individualmente, preservando su diseño y significado previstos.
+**¿Por qué?** Esto asegura que los caracteres se rendericen individualmente, preservando su diseño y significado previstos.
 
 ##### Paso 5: Renderizar el documento
-
-Utilice una declaración try-with-resources para garantizar que los recursos se administren correctamente:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
@@ -135,53 +134,63 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-**¿Por qué?**:Esto garantiza que todos los recursos se cierren adecuadamente, evitando fugas de memoria.
+**¿Por qué?** Esto garantiza que todos los recursos se cierren adecuadamente, evitando fugas de memoria.
 
-### Consejos para la solución de problemas
+### Generar HTML Java desde PDF sin agrupación
 
-- Asegúrese de que la ruta de su documento sea correcta para evitar `FileNotFoundException`.
-- Verifique que el directorio de salida tenga permisos de escritura.
-- Verifique nuevamente que esté utilizando una versión compatible de GroupDocs.Viewer para Java.
+La clase `HtmlViewOptions` te permite producir **java html from pdf** mientras mantienes cada carácter separado. Esto es especialmente útil cuando necesitas incrustar las páginas renderizadas en un portal web o una plataforma de e‑learning donde la colocación exacta de los glifos es importante.
+
+### Consejos de solución de problemas
+
+- Asegúrate de que la ruta de tu documento sea correcta para evitar `FileNotFoundException`.  
+- Verifica que el directorio de salida tenga permisos de escritura.  
+- Verifica doblemente que estés usando una versión compatible de GroupDocs.Viewer para Java.
 
 ## Aplicaciones prácticas
 
-1. **Preservación del lenguaje**:Ideal para representar documentos en idiomas como chino, japonés o escrituras antiguas donde la precisión de los caracteres es importante.
-2. **Documentos legales y financieros**:Garantiza la precisión en documentos que requieren una representación de texto precisa para el cumplimiento legal.
-3. **Recursos educativos**:Útil para libros de texto y artículos académicos que incluyen diagramas o anotaciones complejos.
+1. **Preservación de lenguas**: Ideal para renderizar documentos en lenguas como chino, japonés o escrituras antiguas donde la precisión de los caracteres es importante.  
+2. **Documentos legales y financieros**: Garantiza la precisión en documentos que requieren una representación textual exacta para cumplimiento.  
+3. **Recursos educativos**: Perfecto para libros de texto y trabajos académicos que incluyen diagramas complejos o anotaciones.
 
 ## Consideraciones de rendimiento
 
-- **Optimizar el uso de recursos**Asegúrese de que su servidor tenga recursos adecuados para manejar archivos PDF grandes.
-- **Gestión de memoria de Java**:Utilice estructuras de datos eficientes y prácticas de recolección de basura para administrar el uso de memoria de manera efectiva.
-- **Procesamiento por lotes**:Si procesa varios documentos, considere procesarlos en lotes para optimizar el rendimiento.
+- **Optimizar el uso de recursos**: Asegúrate de que tu servidor tenga recursos adecuados para manejar archivos PDF grandes.  
+- **Gestión de memoria en Java**: Usa estructuras de datos eficientes y prácticas de recolección de basura para gestionar la memoria de manera eficaz.  
+- **Procesamiento por lotes**: Al renderizar varios documentos, procésalos en lotes para mejorar el rendimiento.
 
 ## Conclusión
 
-Ya domina el uso de GroupDocs.Viewer para Java para desactivar la agrupación de caracteres durante la renderización de PDF. Esta función es crucial para aplicaciones que requieren una representación precisa del texto. Para explorar más a fondo, intente integrar esta función con otros sistemas de gestión de documentos o experimente con diferentes opciones de renderización.
+Ahora has dominado **cómo desactivar la agrupación** durante el renderizado de PDFs con GroupDocs.Viewer para Java. Esta capacidad es crucial para aplicaciones que requieren una representación textual precisa. Para seguir explorando, intenta integrar esta función con otros sistemas de gestión de documentos o experimentar con opciones de renderizado adicionales.
 
-Los próximos pasos incluyen explorar características adicionales de GroupDocs.Viewer y considerar optimizaciones de rendimiento para proyectos de mayor escala.
+Los siguientes pasos incluyen explorar funciones más avanzadas de GroupDocs.Viewer y afinar el rendimiento para implementaciones a gran escala.
 
-## Sección de preguntas frecuentes
+## Preguntas frecuentes
 
-1. **¿Qué se consigue deshabilitando la agrupación de caracteres?**
-   - Garantiza que los personajes se representen individualmente, conservando su diseño original.
-2. **¿Puedo utilizar esta función con otros tipos de documentos?**
-   - Sí, aunque aquí nos centramos en los archivos PDF, GroupDocs.Viewer admite varios formatos.
-3. **¿Cómo puedo manejar documentos grandes de manera eficiente?**
-   - Utilice el procesamiento por lotes y optimice los recursos de su servidor.
-4. **¿Qué debo hacer si el directorio de salida no se puede escribir?**
-   - Verifique los permisos o elija un directorio diferente con derechos de acceso adecuados.
-5. **¿Existen limitaciones de licencia para GroupDocs.Viewer?**
-   - Si bien hay una prueba gratuita disponible, para el uso a largo plazo es necesario comprar una licencia.
+**P:** *¿Por qué necesitaría desactivar la agrupación de caracteres?*  
+**R:** Desactivar la agrupación evita que el renderizador combine caracteres que pertenecen a glifos distintos, lo cual es esencial para scripts donde el espaciado y el orden transmiten significado.
+
+**P:** *¿La configuración `setDisableCharsGrouping` se aplica solo a la salida HTML?*  
+**R:** No, afecta al motor de renderizado PDF subyacente, por lo que cualquier formato de salida (HTML, PNG, etc.) reflejará el cambio.
+
+**P:** *¿Puedo combinar esta configuración con fuentes personalizadas?*  
+**R:** Sí—simplemente carga tus fuentes personalizadas antes de inicializar `Viewer`, y la regla de agrupación seguirá aplicándose.
+
+**P:** *¿Desactivar la agrupación afecta el rendimiento?*  
+**R:** Un poco, porque el motor procesa cada carácter individualmente, pero el impacto es mínimo para la mayoría de los documentos.
+
+**P:** *¿Hay una forma de alternar la agrupación por página?*  
+**R:** Actualmente la opción es global por instancia de `PdfOptions`; necesitarías crear instancias separadas de `Viewer` para diferentes páginas.
 
 ## Recursos
 
-- [Documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- [Referencia de API](https://reference.groupdocs.com/viewer/java/)
-- [Descargar el visor de GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- [Licencia de compra](https://purchase.groupdocs.com/buy)
-- [Versión de prueba gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Solicitud de licencia temporal](https://purchase.groupdocs.com/temporary-license/)
-- [Foro de soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
+- [Purchase License](https://purchase.groupdocs.com/buy)
+- [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-¡Embárquese hoy mismo en su viaje hacia la representación precisa de PDF con GroupDocs.Viewer para Java!
+**Última actualización:** 2025-12-21  
+**Probado con:** GroupDocs.Viewer 25.2 para Java  
+**Autor:** GroupDocs

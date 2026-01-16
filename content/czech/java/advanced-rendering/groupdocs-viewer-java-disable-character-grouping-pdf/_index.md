@@ -1,36 +1,49 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak zakázat seskupování znaků při vykreslování PDF pomocí nástroje GroupDocs.Viewer pro Javu a zajistit tak přesnou reprezentaci textu pro složité skripty."
-"title": "Zakázání seskupování znaků v PDF pomocí GroupDocs.Viewer pro techniky přesného vykreslování v Javě"
-"url": "/cs/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/"
-"weight": 1
+date: '2025-12-21'
+description: Naučte se, jak zakázat seskupování v PDF pomocí GroupDocs.Viewer pro
+  Java, využitím java html z možností vykreslování PDF, aby byla zajištěna přesná
+  reprezentace textu.
+keywords:
+- disable character grouping PDFs
+- GroupDocs Viewer Java configuration
+- precise text representation in PDFs
+title: Jak zakázat seskupování v PDF pomocí GroupDocs.Viewer pro Javu
 type: docs
+url: /cs/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/
+weight: 1
 ---
-# Zakázání seskupování znaků v PDF pomocí GroupDocs.Viewer pro Javu
 
-## Zavedení
+# Jak zakázat seskupování v PDF pomocí GroupDocs.Viewer pro Java
 
-Při práci s dokumenty PDF je přesnost vykreslování klíčová – zejména při práci se složitými textovými strukturami, jako jsou hieroglyfy nebo jazyky, které vyžadují přesnou reprezentaci znaků. Funkce „Seskupování znaků“ často způsobuje problémy nesprávným seskupováním znaků, což vede k chybné interpretaci obsahu dokumentu. To může být obzvláště problematické pro uživatele, kteří potřebují přesnou replikaci rozvržení textu svých dokumentů.
+Když potřebujete **jak zakázat seskupování** při vykreslování PDF, zejména pro složité skripty nebo starověké jazyky, je nezbytné přesné umístění znaků. Výchozí funkce *Character Grouping* může nesprávně sloučit znaky, což vede k nesprávnému výkladu obsahu. V tomto průvodci vám krok za krokem ukážeme, jak zakázat seskupování pomocí GroupDocs.Viewer pro Java, aby každý glyf zůstal přesně tam, kde má být.
 
-V tomto tutoriálu se naučíte, jak pomocí nástroje GroupDocs.Viewer pro Javu zakázat seskupování znaků při vykreslování PDF a zajistit tak maximální přesnost a preciznost. Na konci budete mít:
-- Nastavení GroupDocs.Vieweru pro Javu
-- Konfigurace možností vykreslování PDF pro zakázání seskupování znaků
-- Vykreslení PDF dokumentu s přesnou reprezentací textu
+![Techniky přesného vykreslování s GroupDocs.Viewer pro Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
 
-Začněme nastavením prostředí a zajištěním splnění všech předpokladů.
+## Rychlé odpovědi
+- **Co „zakázat seskupování“?** Vynutí, aby vykreslovací motor zacházel s každým znakem jako s nezávislým prvkem, čímž zachová přesně rozvržení.
+- **Která možnost API to řídí?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.
+- **Potřebuji licenci?** Zkušební verze pro testování, ale pro produkci je vyžadována plná licence.
+- **Mohu současně generovat Java HTML z PDF?** Ano – použijte `HtmlViewOptions` k vytvoření HTML výstupu při zakázání seskupování.
+- **Je tato funkce omezena na PDF?** Primárně se týká PDF, ale prohlížeč podporuje mnoho dalších formátů.
+
+## Úvod
+
+Při s PDF dokumenty je přesnost vykreslování zásadní – zejména při zpracování složitých textových struktur, jako jsou hieroglyfy nebo jazyky, které vyžadují přesné reprezentaci znaků. Funkce „Chracter Grouping“ často problémy tím, že nesprávně seskupuje znaky, což vede k nesprávnému výkladu obsahu dokumentu. To může být zvláště problematické pro uživatele, kteří potřebují přesnou replikaci rozvržení textu svých dokumentů.
 
 ### Předpoklady
 
-Než se pustíte do implementace kódu, ujistěte se, že splňujete následující požadavky:
-- **Knihovny a závislosti**Budete potřebovat GroupDocs.Viewer pro Javu verze 25.2 nebo novější.
-- **Nastavení prostředí**Ujistěte se, že máte nainstalovanou sadu Java Development Kit (JDK) a vaše IDE nastavené pro práci s projekty Maven.
-- **Předpoklady znalostí**Základní znalost programování v Javě, zejména práce s cestami k souborům a používání externích knihoven.
+Před tím, než se pustíte do implementace kódu, získáte následující, že splníte požadavky:
+- **Knihovny a závislosti**: Budete potřebovat GroupDocs.Viewer pro Java verze 25.2 nebo novější.
+- **Nastavení prostředí**: stačí se, že máte nainstalovaný Java Development Kit (JDK) a vaše IDE je použito pro práci s Maven projekty.
+- **Předpoklady znalostí**: Základní pochopení programování v Javě, zejména práce s cestami k souborům a používání externích knihoven.
 
-## Nastavení GroupDocs.Viewer pro Javu
+## Jak zakázat seskupování při vykreslování PDF
 
-### Instalace přes Maven
+### Nastavení GroupDocs.Viewer pro Java
 
-Nejprve integrujte potřebnou knihovnu do svého projektu. Přidejte následující konfiguraci do svého `pom.xml`:
+#### Instalace přes Maven
+
+Nejprve integrujte potřebnou knihovnu do svého projektu. Přidejte následující konfiguraci do souboru `pom.xml`:
 
 ```xml
 <repositories>
@@ -49,23 +62,23 @@ Nejprve integrujte potřebnou knihovnu do svého projektu. Přidejte následují
 </dependencies>
 ```
 
-### Získání licence
+#### Získání licence
 
-Chcete-li plně využít GroupDocs.Viewer, zvažte pořízení licence:
-- **Bezplatná zkušební verze**Začněte s bezplatnou zkušební verzí a otestujte si funkce.
-- **Dočasná licence**Pokud potřebujete více času, požádejte o dočasnou licenci.
-- **Nákup**Pro dlouhodobé projekty je vhodné zakoupit licenci.
+Pro plné GroupDocs.Viewer získané využití licence:
+- **Bezplatná zkušební verze**: Začněte s bezplatnou zkušební verzí pro testování funkcí.
+- **Dočasná licence**: Požádejte o dočasnou licenci, pokud potřebujete více času.
+- **Nákup**: Pro projekty dlouhodobé se doporučuje zakoupit licenci.
 
-### Základní inicializace a nastavení
+#### Základní inicializace a nastavení
 
-Začněte nastavením prostředí projektu:
+Začněte nastavením prostředí vašeho projektu:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 import java.nio.file.Path;
 
-// Inicializace prohlížeče GroupDocs
+// Initialize the GroupDocs Viewer
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
@@ -77,57 +90,43 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-## Průvodce implementací
+### Průvodce implementací
 
-### Funkce: Zakázat seskupování znaků
-
-#### Přehled
-
-Funkce „Seskupování znaků“ při vykreslování PDF může způsobit nesprávné seskupení znaků. Tento tutoriál se zaměřuje na vypnutí této funkce, aby byla zajištěna maximální přesnost, zejména u jazyků se složitými znakovými sadami.
+#### Funkce: Zakázat seskupování znaků
 
 ##### Krok 1: Definování výstupního adresáře
 
-Začněte definováním místa, kam budou uloženy vykreslené HTML soubory:
-
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 ```
 
-**Proč?**: Díky tomu bude váš výstup uspořádaný a snadno dostupný.
+**Proč?** Zajišťuje, že je výstup organizovaný a snadno přístupný.
 
-##### Krok 2: Konfigurace formátu cesty k souboru
-
-Nastavte formát pojmenování pro každou vykreslenou stránku:
+##### Krok 2: Nakonfigurujte formát cesty k souboru
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Proč?**Pomáhá systematicky uspořádat stránky dokumentu PDF.
+**Proč?** Pomáhá systematicky organizovat stránky PDF dokumentu.
 
-##### Krok 3: Inicializace možností zobrazení HTML
-
-Vytvořte možnosti zobrazení s vloženými zdroji pro lepší integraci a výkon:
+##### Krok 3: Inicializujte možnosti zobrazení HTML
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**Proč?**Vložené zdroje zajišťují, že všechny potřebné prvky jsou zahrnuty v HTML souboru každé stránky.
+**Proč?** Vložené zdroje zajišťují, že všechny potřebné soubory jsou zahrnuty v HTML souboru každé stránky.
 
-##### Krok 4: Zakázat seskupování znaků
-
-Konfigurace vykreslování PDF pro zakázání seskupování znaků:
+##### Krok 4: Zakažte seskupování znaků
 
 ```java
 viewOptions.getPdfOptions().setDisableCharsGrouping(true);
 ```
 
-**Proč?**: Díky tomu jsou znaky vykresleny jednotlivě a je zachováno jejich zamýšlené rozvržení a význam.
+**Proč?** Zajišťuje, že jsou znaky vykresleny jednotlivě, zachovávají své zamýšlené rozvržení a význam.
 
 ##### Krok 5: Vykreslení dokumentu
-
-Použijte příkaz try-with-resources k zajištění správné správy zdrojů:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
@@ -135,53 +134,65 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-**Proč?**: Tím se zajistí, že všechny zdroje budou správně uzavřeny, a zabrání se tak únikům paměti.
+**Proč?** Zajišťuje, že jsou všechny zdroje řádně uzavřeny, čímž se předchází únikům paměti.
 
-### Tipy pro řešení problémů
+### Generování Java HTML z PDF bez seskupování
 
-- Ujistěte se, že je cesta k dokumentu správná, abyste se vyhnuli `FileNotFoundException`.
-- Ověřte, zda má výstupní adresář oprávnění k zápisu.
-- Zkontrolujte, zda používáte kompatibilní verzi GroupDocs.Viewer pro Javu.
+Třída `HtmlViewOptions` vám umožní vytvořit **java html z pdf** a zároveň ponechat každý znak oddělený. To je zvláště užitečné, když potřebujete vložit vykreslené stránky do webového portálu nebo e‑learningové platformy, kde je důležité přesné umístění glyfů.
+
+### Tipy pro odstraňování problémů
+
+- zvlášť se, že cesta k dokumentu je správná, aby nedošlo k `FileNotFoundException`.
+- Ověřte, že adresář má oprávnění k zápisu.
+- Dvakrát nejlepší, že používáte kompatibilní verzi GroupDocs.Viewer pro Java.
 
 ## Praktické aplikace
 
-1. **Ochrana jazyka**Ideální pro vykreslování dokumentů v jazycích, jako je čínština, japonština nebo starověké písmo, kde je důležitá přesnost znaků.
-2. **Právní a finanční dokumenty**Zajišťuje přesnost dokumentů vyžadujících přesné znázornění textu pro shodu s právními předpisy.
-3. **Vzdělávací zdroje**Užitečné pro učebnice a akademické práce, které obsahují složité diagramy nebo anotace.
+1. **Zachování jazyků**: Ideální pro vykreslování dokumentů v jazycích jako čínština, japonština nebo starověké písmo, kde je přesnost znaků důležitá.
+2. **Právní a finanční dokumenty**: Zaručuje přesnost v dokumentech požadovaných přesných zobrazení textu pro soulad s předpisy.
+3. **Vzdělávací materiály**: Perfektní pro učebnice a akademické práce, které obsahují složité diagramy nebo anotace.
 
 ## Úvahy o výkonu
 
-- **Optimalizace využití zdrojů**Ujistěte se, že váš server má dostatečné zdroje pro zpracování velkých PDF souborů.
-- **Správa paměti v Javě**Používejte efektivní datové struktury a postupy sběru paměti pro efektivní správu využití paměti.
-- **Dávkové zpracování**Pokud vykreslujete více dokumentů, zvažte jejich dávkové zpracování pro optimalizaci výkonu.
+- **Optimalizace využití zdrojů**: Zajistěte, aby váš server měl dostatečné zdroje pro zpracování velkých souborů PDF.
+- **Správa paměti v Javě**: Používejte efektivní datové struktury a postupy odvozu odpadu pro efektivní správu paměti.
+- **Dávkové zpracování**: Při vykreslování více dokumentů je zpracovávejte po dávkách pro zvýšení propustnosti.
 
 ## Závěr
 
-Nyní jste zvládli, jak pomocí nástroje GroupDocs.Viewer pro Javu zakázat seskupování znaků během vykreslování PDF. Tato funkce je klíčová pro aplikace vyžadující přesnou reprezentaci textu. Chcete-li tuto funkci dále prozkoumat, zkuste ji integrovat s jinými systémy pro správu dokumentů nebo experimentovat s různými možnostmi vykreslování.
+Nyní jste zvládli **jak zakázat seskupování** během vykreslování PDF pomocí GroupDocs.Viewer pro Java. Tato schopnost je klíčová pro aplikaci, které vyžadují přesnou reprezentaci textu. Pro další zkoumání zkuste integrovat tuto funkci s jinými systémy správy dokumentů nebo experimentovat s dalšími možnostmi vykreslování.
 
-Další kroky zahrnují prozkoumání dalších funkcí GroupDocs.Viewer a zvážení optimalizace výkonu pro rozsáhlejší projekty.
+Další kroky zahrnují prozkoumání pokročilejších funkcí GroupDocs.Viewer a doladění výkonu pro nasazení ve velkém měřítku.
 
-## Sekce Často kladených otázek
+## Často kladené otázky
 
-1. **Čeho se dosáhne vypnutím seskupování postav?**
-   - Zajišťuje, aby se postavy vykreslovaly jednotlivě a zachovalo se jejich původní rozvržení.
-2. **Mohu tuto funkci použít s jinými typy dokumentů?**
-   - Ano, ačkoliv se zde zaměřujeme na PDF soubory, GroupDocs.Viewer podporuje více formátů.
-3. **Jak efektivně zpracovat velké dokumenty?**
-   - Používejte dávkové zpracování a optimalizujte serverové prostředky.
-4. **Co mám dělat, když výstupní adresář není zapisovatelný?**
-   - Zkontrolujte oprávnění nebo vyberte jiný adresář s odpovídajícími přístupovými právy.
-5. **Existují nějaká licenční omezení pro GroupDocs.Viewer?**
-   - I když je k dispozici bezplatná zkušební verze, dlouhodobé používání vyžaduje zakoupení licence.
+**O:** *Proč bych vůbec potřeboval zakázat seskupování znaků?*
+**A: Zakázání seskupování** znovu vykreslovacímu enginu sloučit znaky, které patří k odlišnému glyfům, což je nezbytné pro písmo, kde mezery a pořadí nesouvisí s významem.
+
+**O:** *Je nastavení `setDisableCharsGrouping` použitelný jen pro HTML výstup?*
+**A:** Ne, reflektovaný podkladový engine pro vykreslování PDF, takže jakýkoli výstupní formát (HTML, PNG atd.) bude změna ovat.
+
+**Q:** *Mohu toto nastavení kombinovat s vlastními fonty?*
+**A:** Ano – stačí načíst vlastní fonty před inicializací `Viewer` a pravidlo seskupování bude i nadále platit.
+
+**Q:** *Ovlivňuje zakázání seskupování výkonu?*
+**A:** Mírně, protože engine zpracovává každý znak zvlášť, ale je dopad u většiny minimálních dokumentů.
+
+**Q:** *Existuje způsob, jak přepínat seskupování na úrovni jednotlivých stránek?*
+**A:** V současnosti je volba globální pro každou instanci `PdfOptions`; pro různé stránky byste museli vytvořit samostatnou instanci `Viewer`.
 
 ## Zdroje
 
-- [Dokumentace GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- [Referenční informace k API](https://reference.groupdocs.com/viewer/java/)
-- [Stáhnout prohlížeč GroupDocs](https://releases.groupdocs.com/viewer/java/)
+- [GroupDocs Dokumentace](https://docs.groupdocs.com/viewer/java/)
+- [Reference API](https://reference.groupdocs.com/viewer/java/)
+- [Stáhnout GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Zakoupit licenci](https://purchase.groupdocs.com/buy)
 - [Bezplatná zkušební verze](https://releases.groupdocs.com/viewer/java/)
 - [Žádost o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
 - [Fórum podpory GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
-Vydejte se na cestu k přesnému vykreslování PDF s GroupDocs.Viewer pro Javu ještě dnes!
+---
+
+**Poslední aktualizace:** 21.12.2025
+**Testováno s:** GroupDocs.Viewer 25.2 pro Java
+**Autor:** GroupDocs
