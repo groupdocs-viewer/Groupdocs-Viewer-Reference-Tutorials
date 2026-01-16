@@ -1,5 +1,5 @@
 ---
-title: "Create Document Preview Java: Render Spreadsheet Print Areas with GroupDocs.Viewer"
+title: "Create Document Preview Java - Render Spreadsheet Print Areas with GroupDocs.Viewer"
 description: "Learn how to create document preview java by rendering excel print area using GroupDocs.Viewer. A step‑by‑step guide for efficient Java preview solutions."
 date: "2025-12-23"
 weight: 1

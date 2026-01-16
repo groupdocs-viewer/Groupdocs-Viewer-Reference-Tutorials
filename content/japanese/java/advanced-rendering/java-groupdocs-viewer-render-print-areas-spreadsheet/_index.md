@@ -6,7 +6,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Javaでドキュメントプレビューを作成: GroupDocs.Viewerでスプレッドシートの印刷領域をレンダリング'
+title: 'Javaでドキュメントプレビューを作成 - GroupDocs.Viewerでスプレッドシートの印刷領域をレンダリング'
 type: docs
 url: /ja/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
@@ -18,7 +18,7 @@ weight: 1
 
 ![GroupDocs.Viewer for Java を使用したスプレッドシートの印刷領域のレンダリング](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
-## Quick Answers
+## クイックアンサー
 - **“create document preview java” とは何ですか？**  
   Java のコードから直接ドキュメントのビジュアル表現（HTML、画像、PDF）を生成することを指します。  
 - **なぜ Excel の印刷領域だけをレンダリングするのですか？**  

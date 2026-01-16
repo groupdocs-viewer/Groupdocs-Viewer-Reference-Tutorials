@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Tạo Xem Trước Tài Liệu Java: Kết xuất Khu Vực In Bảng Tính với GroupDocs.Viewer'
+title: 'Tạo Xem Trước Tài Liệu Java - Kết xuất Khu Vực In Bảng Tính với GroupDocs.Viewer'
 type: docs
 url: /vi/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1

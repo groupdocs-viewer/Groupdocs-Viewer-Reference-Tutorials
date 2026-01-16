@@ -6,7 +6,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'إنشاء معاينة المستند في جافا: عرض مناطق طباعة جداول البيانات باستخدام GroupDocs.Viewer'
+title: 'إنشاء معاينة المستند في جافا - عرض مناطق طباعة جداول البيانات باستخدام GroupDocs.Viewer'
 type: docs
 url: /ar/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1

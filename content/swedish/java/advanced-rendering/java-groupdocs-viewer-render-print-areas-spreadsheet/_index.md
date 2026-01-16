@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Skapa dokumentförhandsgranskning Java: Rendera utskriftsområden i kalkylblad
+title: 'Skapa dokumentförhandsgranskning Java - Rendera utskriftsområden i kalkylblad
   med GroupDocs.Viewer'
 type: docs
 url: /sv/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/

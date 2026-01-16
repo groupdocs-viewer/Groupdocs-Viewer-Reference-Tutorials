@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Buat Pratinjau Dokumen Java: Render Area Cetak Spreadsheet dengan GroupDocs.Viewer'
+title: 'Buat Pratinjau Dokumen Java - Render Area Cetak Spreadsheet dengan GroupDocs.Viewer'
 type: docs
 url: /id/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
@@ -19,7 +19,7 @@ Merender hanya bagian area‑cetak dari sebuah spreadsheet dapat secara dramatis
 
 ![Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
-## Quick Answers
+## Jawaban Cepat
 - **Apa arti “create document preview java”?** Itu merujuk pada menghasilkan representasi visual (HTML, gambar, PDF) dari sebuah dokumen secara langsung dari kode Java.  
 - **Mengapa merender hanya area cetak Excel?** Ini mengisolasi data yang paling relevan, mengurangi waktu render dan bandwidth.  
 - **Apakah saya memerlukan lisensi untuk mencoba ini?** Lisensi percobaan gratis atau lisensi sementara tersedia; lisensi penuh diperlukan untuk produksi.  

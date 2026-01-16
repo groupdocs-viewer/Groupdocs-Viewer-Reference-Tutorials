@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Δημιουργία Προεπισκόπησης Εγγράφου Java: Απόδοση Περιοχών Εκτύπωσης Φύλλου
+title: 'Δημιουργία Προεπισκόπησης Εγγράφου Java - Απόδοση Περιοχών Εκτύπωσης Φύλλου
   Εργασίας με το GroupDocs.Viewer'
 type: docs
 url: /el/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/

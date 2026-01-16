@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Dokumentum előnézet létrehozása Java-ban: Táblázat nyomtatási területek megjelenítése
+title: 'Dokumentum előnézet létrehozása Java-ban - Táblázat nyomtatási területek megjelenítése
   a GroupDocs.Viewer segítségével'
 type: docs
 url: /hu/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/

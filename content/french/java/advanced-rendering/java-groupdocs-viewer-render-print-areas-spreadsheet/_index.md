@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Créer un aperçu de document Java : rendre les zones d’impression des feuilles
+title: 'Créer un aperçu de document Java - rendre les zones d’impression des feuilles
   de calcul avec GroupDocs.Viewer'
 type: docs
 url: /fr/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/

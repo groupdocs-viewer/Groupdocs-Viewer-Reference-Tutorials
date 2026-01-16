@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'जावा में दस्तावेज़ पूर्वावलोकन बनाएं: GroupDocs.Viewer के साथ स्प्रेडशीट प्रिंट
+title: 'जावा में दस्तावेज़ पूर्वावलोकन बनाएं - GroupDocs.Viewer के साथ स्प्रेडशीट प्रिंट
   क्षेत्रों को रेंडर करें'
 type: docs
 url: /hi/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/

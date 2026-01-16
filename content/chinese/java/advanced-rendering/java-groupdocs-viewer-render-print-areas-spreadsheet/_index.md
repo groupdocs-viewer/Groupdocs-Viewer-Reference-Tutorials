@@ -6,7 +6,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 创建文档预览 Java：使用 GroupDocs.Viewer 渲染电子表格打印区域
+title: 创建文档预览 Java - 使用 GroupDocs.Viewer 渲染电子表格打印区域
 type: docs
 url: /zh/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1

@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Criar visualização de documento em Java: renderizar áreas de impressão de
+title: 'Criar visualização de documento em Java - renderizar áreas de impressão de
   planilha com GroupDocs.Viewer'
 type: docs
 url: /pt/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/

@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Java''da Belge Önizlemesi Oluştur: GroupDocs.Viewer ile Elektronik Tablo Yazdırma
+title: 'Java''da Belge Önizlemesi Oluştur - GroupDocs.Viewer ile Elektronik Tablo Yazdırma
   Alanlarını İşleme'
 type: docs
 url: /tr/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/

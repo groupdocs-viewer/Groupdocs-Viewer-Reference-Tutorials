@@ -7,7 +7,7 @@ keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Vytvořte náhled dokumentu v Javě: Vykreslete tiskové oblasti tabulky pomocí
+title: 'Vytvořte náhled dokumentu v Javě - Vykreslete tiskové oblasti tabulky pomocí
   GroupDocs.Viewer'
 type: docs
 url: /cs/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
