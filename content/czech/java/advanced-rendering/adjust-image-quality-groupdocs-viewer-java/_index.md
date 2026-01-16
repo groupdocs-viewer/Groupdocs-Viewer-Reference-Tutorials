@@ -158,19 +158,6 @@ Nyní máte kompletní, produkčně připravený návod, jak **renderovat pdf do
 
 **Další kroky:** Prozkoumejte další výstupní formáty (např. `ImageViewOptions` pro PNG/JPEG), integrujte s dokumentovým management systémem nebo experimentujte s vlastním CSS pro stylování generovaných HTML stránek.
 
-## Sekce FAQ
-
-1. **Co je GroupDocs.Viewer pro Java?**
-   - Univerzální knihovna, která umožňuje renderování různých formátů dokumentů do HTML, obrázků a dalších populárních formátů.
-2. **Jak změním výstupní formát z HTML na obrázky?**
-   - Použijte `ImageViewOptions` místo `HtmlViewOptions` při konfiguraci vašich view options.
-3. **Dokáže GroupDocs.Viewer efektivně zpracovávat velké PDF soubory?**
-   - Ano, při správném řízení paměti a optimalizačních technikách výkonu.
-4. **Existuje způsob, jak hromadně zpracovat více dokumentů najednou?**
-   - Implementujte smyčky ve vaší Java aplikaci, které projdou více cest k dokumentům.
-5. **Jak zajistit optimální kvalitu obrázku pro tištěné dokumenty?**
-   - Nastavte `ImageQuality` na `HIGH` nebo definujte vlastní úroveň komprese podle požadavků tisku.
-
 ## Často kladené otázky
 
 **Q: Ovlivňuje úprava kvality obrázku renderování textu?**  
@@ -188,12 +175,6 @@ A: Knihovna streamuje stránky, takže jste omezeni jen dostupnou pamětí a ča
 **Q: Jak ověřím, že výsledné HTML vypadá identicky jako zdrojové PDF?**  
 A: Otevřete vygenerované HTML v prohlížeči a porovnejte vizuální rozvržení; můžete také použít nástroje pro vizuální regresní testování pro automatizované kontroly.
 
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
-
 **Zdroje**  
 - [Dokumentace](https://docs.groupdocs.com/viewer/java/)  
 - [Reference API](https://reference.groupdocs.com/viewer/java/)  
@@ -202,3 +183,9 @@ A: Otevřete vygenerované HTML v prohlížeči a porovnejte vizuální rozvrže
 - [Bezplatná zkušební verze](https://releases.groupdocs.com/viewer/java/)  
 - [Dočasná licence](https://purchase.groupdocs.com/temporary-license/)  
 - [Fórum podpory](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  

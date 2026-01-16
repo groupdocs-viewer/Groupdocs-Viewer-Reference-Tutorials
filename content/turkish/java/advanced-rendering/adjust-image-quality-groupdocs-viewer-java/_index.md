@@ -161,14 +161,6 @@ Artık GroupDocs.Viewer for Java kullanarak **render pdf to html** yaparken **op
 
 **Sonraki adımlar:** Diğer çıktı formatlarını keşfedin (ör. PNG/JPEG için `ImageViewOptions`), bir belge yönetim sistemiyle entegre edin veya oluşturulan HTML sayfalarını stilize etmek için özel CSS deneyin.
 
-## SSS Bölümü
-
-1. **GroupDocs.Viewer for Java nedir?** - Çeşitli belge formatlarını HTML, görüntü ve diğer popüler formatlara render etmeye olanak tanıyan çok yönlü bir kütüphane.
-2. **Çıktı formatını HTML'den görüntülere nasıl değiştiririm?** - Görünüm seçeneklerini yapılandırırken `HtmlViewOptions` yerine `ImageViewOptions` kullanın.
-3. **GroupDocs.Viewer büyük PDF dosyalarını verimli bir şekilde işleyebilir mi?** - Evet, uygun bellek yönetimi ve performans optimizasyon teknikleriyle.
-4. **Birden fazla belgeyi aynı anda toplu işlemek mümkün mü?** - Java uygulamanız içinde bir döngü oluşturarak birden fazla belge yolunu yineleyin.
-5. **Baskı belgeleri için optimal görüntü kalitesini nasıl sağlarız?** - `ImageQuality` ayarını `HIGH` olarak ayarlayın veya baskı gereksinimlerinize göre özel bir sıkıştırma seviyesi tanımlayın.
-
 ## Sıkça Sorulan Sorular
 
 **S: Görüntü kalitesini ayarlamak metin render'ını etkiler mi?**  
@@ -186,12 +178,6 @@ C: Kütüphane sayfaları akış olarak işler, bu yüzden yalnızca mevcut bell
 **S: Oluşturulan HTML'in kaynak PDF ile aynı göründüğünden nasıl emin olurum?**  
 C: Oluşturulan HTML'i bir tarayıcıda açın ve görsel düzeni karşılaştırın; otomatik kontroller için görsel regresyon test araçlarını da kullanabilirsiniz.
 
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -200,3 +186,9 @@ C: Oluşturulan HTML'i bir tarayıcıda açın ve görsel düzeni karşılaştı
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  

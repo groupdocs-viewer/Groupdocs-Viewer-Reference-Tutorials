@@ -161,23 +161,6 @@ Bạn đã có một công thức hoàn chỉnh, sẵn sàng cho môi trường 
 
 **Bước tiếp theo:** Khám phá các định dạng đầu ra khác (ví dụ, `ImageViewOptions` cho PNG/JPEG), tích hợp với hệ thống quản lý tài liệu, hoặc thử nghiệm CSS tùy chỉnh để tạo kiểu cho các trang HTML được tạo.
 
-## Phần FAQ
-
-1. **GroupDocs.Viewer cho Java là gì?**  
-   - Một thư viện đa năng cho phép render nhiều định dạng tài liệu thành HTML, hình ảnh và các định dạng phổ biến khác.  
-
-2. **Làm sao thay đổi định dạng đầu ra từ HTML sang hình ảnh?**  
-   - Sử dụng `ImageViewOptions` thay vì `HtmlViewOptions` khi cấu hình tùy chọn view.  
-
-3. **GroupDocs.Viewer có xử lý hiệu quả các tệp PDF lớn không?**  
-   - Có, với việc quản lý bộ nhớ hợp lý và các kỹ thuật tối ưu hiệu năng.  
-
-4. **Có cách nào để xử lý hàng loạt nhiều tài liệu cùng lúc không?**  
-   - Thực hiện vòng lặp trong ứng dụng Java của bạn để duyệt qua nhiều đường dẫn tài liệu.  
-
-5. **Làm sao đảm bảo chất lượng hình ảnh tối ưu cho tài liệu in?**  
-   - Điều chỉnh cài đặt `ImageQuality` thành `HIGH` hoặc định nghĩa mức nén tùy chỉnh dựa trên yêu cầu in ấn của bạn.  
-
 ## Câu hỏi thường gặp
 
 **H: Điều chỉnh chất lượng hình ảnh có ảnh hưởng đến việc render văn bản không?**  
@@ -195,12 +178,6 @@ A: Thư viện stream các trang, vì vậy bạn chỉ bị giới hạn bởi 
 **H: Làm sao kiểm chứng HTML tạo ra trông giống hệt PDF gốc?**  
 A: Mở HTML đã tạo trong trình duyệt và so sánh bố cục; bạn cũng có thể dùng công cụ kiểm thử hồi quy hình ảnh để tự động hoá việc so sánh.
 
----
-
-**Cập nhật lần cuối:** 2025-12-20  
-**Kiểm thử với:** GroupDocs.Viewer 25.2 cho Java  
-**Tác giả:** GroupDocs  
-
 **Tài nguyên**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -209,3 +186,9 @@ A: Mở HTML đã tạo trong trình duyệt và so sánh bố cục; bạn cũn
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Cập nhật lần cuối:** 2025-12-20  
+**Kiểm thử với:** GroupDocs.Viewer 25.2 cho Java  
+**Tác giả:** GroupDocs  

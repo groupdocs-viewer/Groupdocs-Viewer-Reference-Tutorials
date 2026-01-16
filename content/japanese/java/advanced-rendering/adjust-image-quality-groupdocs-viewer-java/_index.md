@@ -160,23 +160,6 @@ GroupDocs.Viewer for Java を使用して **render pdf to html** しながら **
 
 **次のステップ:** PNG/JPEG 用の `ImageViewOptions` など他の出力形式を調査し、文書管理システムと統合するか、生成されたHTMLページのスタイルをカスタムCSSで試してみてください。
 
-## FAQ セクション
-
-1. **GroupDocs.Viewer for Java とは何ですか？**  
-   - 各種ドキュメント形式をHTML、画像、その他の一般的な形式にレンダリングできる多用途ライブラリです。
-
-2. **出力形式をHTMLから画像に変更するには？**  
-   - ビューオプションを設定する際に `HtmlViewOptions` の代わりに `ImageViewOptions` を使用します。
-
-3. **GroupDocs.Viewer は大容量PDFを効率的に処理できますか？**  
-   - はい。適切なメモリ管理とパフォーマンス最適化手法を導入すれば問題なく処理できます。
-
-4. **複数のドキュメントを一括処理する方法はありますか？**  
-   - Java アプリケーション内でループを実装し、複数のドキュメントパスを順に処理します。
-
-5. **印刷用文書の最適な画像品質を確保するには？**  
-   - `ImageQuality` 設定を `HIGH` に調整するか、印刷要件に合わせたカスタム圧縮レベルを定義します。
-
 ## よくある質問
 
 **Q: 画像品質を調整するとテキストのレンダリングに影響しますか？**  
@@ -194,12 +177,6 @@ A: ライブラリはページをストリーミングするため、利用可�
 **Q: 生成されたHTMLが元のPDFと同一に見えるかどうかはどう確認しますか？**  
 A: ブラウザで生成されたHTMLを開き、ビジュアルレイアウトを比較します。自動チェックにはビジュアル回帰テストツールを利用できます。
 
----
-
-**Last Updated:** 2025-12-20  
-**テスト済み:** GroupDocs.Viewer 25.2 for Java  
-**作者:** GroupDocs  
-
 **リソース**  
 - [ドキュメント](https://docs.groupdocs.com/viewer/java/)  
 - [API リファレンス](https://reference.groupdocs.com/viewer/java/)  
@@ -208,3 +185,9 @@ A: ブラウザで生成されたHTMLを開き、ビジュアルレイアウト�
 - [無料トライアル](https://releases.groupdocs.com/viewer/java/)  
 - [一時ライセンス](https://purchase.groupdocs.com/temporary-license/)  
 - [サポートフォーラム](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2025-12-20  
+**テスト済み:** GroupDocs.Viewer 25.2 for Java  
+**作者:** GroupDocs  

@@ -161,23 +161,6 @@ Ora disponi di una ricetta completa, pronta per la produzione, per **render pdf 
 
 **Passi successivi:** Esplora altri formati di output (ad es., `ImageViewOptions` per PNG/JPEG), integra con un sistema di gestione documentale o sperimenta CSS personalizzato per stilizzare le pagine HTML generate.
 
-## Sezione FAQ
-
-1. **Che cos’è GroupDocs.Viewer for Java?**  
-   - Una libreria versatile che consente il rendering di vari formati di documento in HTML, immagine e altri formati popolari.  
-
-2. **Come cambio il formato di output da HTML a immagini?**  
-   - Usa `ImageViewOptions` al posto di `HtmlViewOptions` quando configuri le opzioni di visualizzazione.  
-
-3. **GroupDocs.Viewer gestisce file PDF di grandi dimensioni in modo efficiente?**  
-   - Sì, con una corretta gestione della memoria e tecniche di ottimizzazione delle prestazioni.  
-
-4. **È possibile elaborare in batch più documenti contemporaneamente?**  
-   - Implementa cicli nella tua applicazione Java per iterare su più percorsi di documento.  
-
-5. **Come garantisco la qualità ottimale dell’immagine per documenti stampati?**  
-   - Imposta `ImageQuality` su `HIGH` o definisci un livello di compressione personalizzato in base ai requisiti di stampa.
-
 ## Domande frequenti
 
 **D: La regolazione della qualità dell’immagine influisce sul rendering del testo?**  
@@ -195,12 +178,6 @@ R: La libreria trasmette le pagine in streaming, quindi sei limitato solo dalla 
 **D: Come verifico che l’HTML risultante sia identico al PDF di origine?**  
 R: Apri l’HTML generato in un browser e confronta il layout visivo; puoi anche utilizzare strumenti di testing di regressione visiva per controlli automatizzati.
 
----
-
-**Ultimo aggiornamento:** 2025-12-20  
-**Testato con:** GroupDocs.Viewer 25.2 per Java  
-**Autore:** GroupDocs  
-
 **Risorse**  
 - [Documentazione](https://docs.groupdocs.com/viewer/java/)  
 - [Riferimento API](https://reference.groupdocs.com/viewer/java/)  
@@ -209,3 +186,9 @@ R: Apri l’HTML generato in un browser e confronta il layout visivo; puoi anche
 - [Prova gratuita](https://releases.groupdocs.com/viewer/java/)  
 - [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)  
 - [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ultimo aggiornamento:** 2025-12-20  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs  

@@ -161,23 +161,6 @@ Ahora tienes una receta completa y lista para producción para **renderizar pdf 
 
 **Próximos pasos:** Explora otros formatos de salida (p. ej., `ImageViewOptions` para PNG/JPEG), intégralo con un sistema de gestión documental, o experimenta con CSS personalizado para estilizar las páginas HTML generadas.
 
-## Sección de preguntas frecuentes
-
-1. **¿Qué es GroupDocs.Viewer para Java?**  
-   - Una biblioteca versátil que permite renderizar varios formatos de documentos a HTML, imagen y otros formatos populares.
-
-2. **¿Cómo cambio el formato de salida de HTML a imágenes?**  
-   - Usa `ImageViewOptions` en lugar de `HtmlViewOptions` al configurar tus opciones de vista.
-
-3. **¿Puede GroupDocs.Viewer manejar archivos PDF grandes de manera eficiente?**  
-   - Sí, con una gestión adecuada de la memoria y técnicas de optimización de rendimiento.
-
-4. **¿Existe una forma de procesar en lote varios documentos a la vez?**  
-   - Implementa bucles dentro de tu aplicación Java para iterar a través de múltiples rutas de documentos.
-
-5. **¿Cómo puedo asegurar una calidad de imagen óptima para documentos impresos?**  
-   - Ajusta la configuración `ImageQuality` a `HIGH` o define un nivel de compresión personalizado según los requisitos de impresión.
-
 ## Preguntas frecuentes
 
 **P: ¿Ajustar la calidad de la imagen afecta la renderización del texto?**  
@@ -195,12 +178,6 @@ R: La biblioteca transmite las páginas en flujo, por lo que solo estás limitad
 **P: ¿Cómo verifico que el HTML resultante se vea idéntico al PDF original?**  
 R: Abre el HTML generado en un navegador y compara el diseño visual; también puedes usar herramientas de pruebas de regresión visual para verificaciones automatizadas.
 
----
-
-**Última actualización:** 2025-12-20  
-**Probado con:** GroupDocs.Viewer 25.2 para Java  
-**Autor:** GroupDocs  
-
 **Recursos**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -209,3 +186,9 @@ R: Abre el HTML generado en un navegador y compara el diseño visual; también p
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Última actualización:** 2025-12-20  
+**Probado con:** GroupDocs.Viewer 25.2 para Java  
+**Autor:** GroupDocs  

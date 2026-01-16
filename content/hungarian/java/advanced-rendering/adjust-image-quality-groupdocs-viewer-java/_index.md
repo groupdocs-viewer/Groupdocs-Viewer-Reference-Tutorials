@@ -164,23 +164,6 @@ Most már rendelkezik egy teljes, termelésre kész recepttel a **render pdf to 
 
 **Következő lépések:** Fedezzen fel más kimeneti formátumokat (pl. `ImageViewOptions` PNG/JPEG-hez), integráljon egy dokumentumkezelő rendszerrel, vagy kísérletezzen egyedi CSS-sel a generált HTML oldalak stílusozásához.
 
-## GyIK szakasz
-
-1. **Mi a GroupDocs.Viewer for Java?**  
-   - Egy sokoldalú könyvtár, amely lehetővé teszi különböző dokumentumformátumok renderelését HTML-re, képre és más népszerű formátumokra.  
-
-2. **Hogyan változtathatom meg a kimeneti formátumot HTML-ről képekre?**  
-   - Használja a `ImageViewOptions`-t a `HtmlViewOptions` helyett a nézetbeállítások konfigurálásakor.  
-
-3. **Képes a GroupDocs.Viewer hatékonyan kezelni nagy PDF fájlokat?**  
-   - Igen, megfelelő memória-kezeléssel és teljesítményoptimalizáló technikákkal.  
-
-4. **Van mód több dokumentum egyszerre kötegelt feldolgozására?**  
-   - Implementáljon ciklusokat a Java alkalmazásában, hogy több dokumentum útvonalon iteráljon.  
-
-5. **Hogyan biztosíthatom a nyomtatott dokumentumok optimális képminőségét?**  
-   - Állítsa a `ImageQuality` beállítást `HIGH`-ra, vagy definiáljon egy egyedi tömörítési szintet a nyomtatási igények alapján.  
-
 ## Gyakran Ismételt Kérdések
 
 **K: Befolyásolja a képminőség beállítása a szöveg renderelését?**  
@@ -198,12 +181,6 @@ V: A könyvtár oldalakat streameli, így csak a rendelkezésre álló memória 
 **K: Hogyan ellenőrizhetem, hogy a létrehozott HTML pontosan megegyezik a forrás PDF‑tel?**  
 V: Nyissa meg a generált HTML-t egy böngészőben, és hasonlítsa össze a vizuális elrendezést; használhat vizuális regressziós tesztelő eszközöket is az automatizált ellenőrzéshez.
 
----
-
-**Utolsó frissítés:** 2025-12-20  
-**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
-**Szerző:** GroupDocs  
-
 **Erőforrások**  
 - [Dokumentáció](https://docs.groupdocs.com/viewer/java/)  
 - [API Referencia](https://reference.groupdocs.com/viewer/java/)  
@@ -212,3 +189,9 @@ V: Nyissa meg a generált HTML-t egy böngészőben, és hasonlítsa össze a vi
 - [Ingyenes próba](https://releases.groupdocs.com/viewer/java/)  
 - [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)  
 - [Támogatási fórum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Utolsó frissítés:** 2025-12-20  
+**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs  

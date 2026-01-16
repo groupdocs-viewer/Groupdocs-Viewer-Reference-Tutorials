@@ -163,14 +163,6 @@ Masz teraz kompletny, gotowy do produkcji przepis na **renderowanie pdf do html*
 
 **Kolejne kroki:** Zbadaj inne formaty wyjściowe (np. `ImageViewOptions` dla PNG/JPEG), zintegrować z systemem zarządzania dokumentami lub eksperymentować z własnym CSS, aby stylizować wygenerowane strony HTML.
 
-## Sekcja FAQ
-
-1. **Co to jest GroupDocs.Viewer for Java?** - Wszechstronna biblioteka umożliwiająca renderowanie różnych formatów dokumentów do HTML, obrazu i innych popularnych formatów.  
-2. **Jak zmienić format wyjściowy z HTML na obrazy?** - Użyj `ImageViewOptions` zamiast `HtmlViewOptions` przy konfigurowaniu opcji widoku.  
-3. **Czy GroupDocs.Viewer radzi sobie efektywnie z dużymi plikami PDF?** - Tak, przy odpowiednim zarządzaniu pamięcią i technikach optymalizacji wydajności.  
-4. **Czy istnieje sposób na wsadowe przetwarzanie wielu dokumentów jednocześnie?** - Zaimplementuj pętle w aplikacji Java, aby iterować po wielu ścieżkach dokumentów.  
-5. **Jak zapewnić optymalną jakość obrazu dla dokumentów drukowanych?** - Dostosuj ustawienie `ImageQuality` do `HIGH` lub zdefiniuj własny poziom kompresji w zależności od wymagań drukowania.  
-
 ## Najczęściej zadawane pytania
 
 **Q: Czy regulacja jakości obrazu wpływa na renderowanie tekstu?**  
@@ -188,12 +180,6 @@ A: Biblioteka strumieniuje strony, więc ograniczenia wynikają jedynie z dostę
 **Q: Jak zweryfikować, że wygenerowany HTML wygląda identycznie jak źródłowy PDF?**  
 A: Otwórz wygenerowany HTML w przeglądarce i porównaj układ wizualny; możesz także użyć narzędzi do testów regresji wizualnej w celu automatycznej weryfikacji.
 
----
-
-**Ostatnia aktualizacja:** 2025-12-20  
-**Testowano z:** GroupDocs.Viewer 25.2 for Java  
-**Autor:** GroupDocs  
-
 **Zasoby**  
 - [Dokumentacja](https://docs.groupdocs.com/viewer/java/)  
 - [Referencja API](https://reference.groupdocs.com/viewer/java/)  
@@ -202,3 +188,9 @@ A: Otwórz wygenerowany HTML w przeglądarce i porównaj układ wizualny; możes
 - [Bezpłatna wersja próbna](https://releases.groupdocs.com/viewer/java/)  
 - [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/)  
 - [Forum wsparcia](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-20  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  

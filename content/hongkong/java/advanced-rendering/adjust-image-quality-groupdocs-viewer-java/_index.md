@@ -158,23 +158,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 
 **後續建議：** 探索其他輸出格式（例如 `ImageViewOptions` 產生 PNG/JPEG）、整合文件管理系統，或自行加入 CSS 以客製化產生的 HTML 版面。
 
-## FAQ 區段
-
-1. **什麼是 GroupDocs.Viewer for Java？**  
-   - 一套多功能函式庫，可將各種文件格式渲染成 HTML、圖像及其他常見格式。  
-
-2. **如何將輸出格式從 HTML 改為圖像？**  
-   - 在設定檢視選項時，使用 `ImageViewOptions` 取代 `HtmlViewOptions`。  
-
-3. **GroupDocs.Viewer 能有效處理大型 PDF 嗎？**  
-   - 能，前提是妥善管理記憶體與效能優化。  
-
-4. **是否能一次批次處理多個文件？**  
-   - 可以，在 Java 程式中加入迴圈遍歷多個文件路徑即可。  
-
-5. **如何確保列印文件的圖像品質最佳？**  
-   - 將 `ImageQuality` 設為 `HIGH`，或根據列印需求自行定義壓縮等級。  
-
 ## 常見問題
 
 **Q: 調整圖像品質會影響文字渲染嗎？**  
@@ -192,12 +175,6 @@ A: 函式庫會以串流方式處理頁面，唯一限制來自可用記憶體�
 **Q: 如何驗證產生的 HTML 與原始 PDF 完全相同？**  
 A: 在瀏覽器開啟生成的 HTML 進行目視比對；亦可使用視覺回歸測試工具自動化檢查。
 
----
-
-**最後更新日期：** 2025-12-20  
-**測試環境：** GroupDocs.Viewer 25.2 for Java  
-**作者：** GroupDocs  
-
 **資源**  
 - [文件說明](https://docs.groupdocs.com/viewer/java/)  
 - [API 參考文件](https://reference.groupdocs.com/viewer/java/)  
@@ -206,3 +183,9 @@ A: 在瀏覽器開啟生成的 HTML 進行目視比對；亦可使用視覺回�
 - [免費試用](https://releases.groupdocs.com/viewer/java/)  
 - [臨時授權](https://purchase.groupdocs.com/temporary-license/)  
 - [支援論壇](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**最後更新日期：** 2025-12-20  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs  

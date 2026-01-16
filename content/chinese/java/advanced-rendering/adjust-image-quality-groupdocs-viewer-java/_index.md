@@ -160,23 +160,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 
 **下一步：** 探索其他输出格式（例如用于 PNG/JPEG 的 `ImageViewOptions`），集成文档管理系统，或尝试自定义 CSS 来美化生成的 HTML 页面。
 
-## 常见问题章节
-
-1. **什么是 GroupDocs.Viewer for Java？**  
-   - 一个多功能库，可将各种文档格式渲染为 HTML、图像及其他流行格式。
-
-2. **如何将输出格式从 HTML 更改为图像？**  
-   - 在配置视图选项时使用 `ImageViewOptions` 替代 `HtmlViewOptions`。
-
-3. **GroupDocs.Viewer 能高效处理大型 PDF 文件吗？**  
-   - 可以，只要采用适当的内存管理和性能优化技术。
-
-4. **是否有办法一次批量处理多个文档？**  
-   - 在 Java 应用中实现循环，遍历多个文档路径即可。
-
-5. **如何确保打印文档的最佳图像质量？**  
-   - 将 `ImageQuality` 设置为 `HIGH`，或根据打印需求自定义压缩级别。
-
 ## 常见问答
 
 **问：调整图像质量会影响文本渲染吗？**  
@@ -194,12 +177,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 **问：如何验证生成的 HTML 与原始 PDF 完全一致？**  
 **答：** 在浏览器中打开生成的 HTML 并比较视觉布局；也可以使用视觉回归测试工具进行自动化检查。
 
----
-
-**最后更新：** 2025-12-20  
-**测试环境：** GroupDocs.Viewer 25.2 for Java  
-**作者：** GroupDocs  
-
 ## 资源
 - [文档](https://docs.groupdocs.com/viewer/java/)
 - [API 参考](https://reference.groupdocs.com/viewer/java/)
@@ -208,3 +185,9 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 - [免费试用](https://releases.groupdocs.com/viewer/java/)
 - [临时许可证](https://purchase.groupdocs.com/temporary-license/)
 - [支持论坛](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**最后更新：** 2025-12-20  
+**测试环境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs  

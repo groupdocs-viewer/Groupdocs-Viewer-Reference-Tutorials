@@ -163,23 +163,6 @@ Vous disposez maintenant d'une recette complète, prête pour la production, pou
 
 **Prochaines étapes :** Explorez d'autres formats de sortie (par ex., `ImageViewOptions` pour PNG/JPEG), intégrez avec un système de gestion de documents, ou expérimentez avec du CSS personnalisé pour styliser les pages HTML générées.
 
-## Section FAQ
-
-1. **Qu'est-ce que GroupDocs.Viewer for Java ?**  
-   - Une bibliothèque polyvalente qui permet le rendu de divers formats de documents en HTML, image et autres formats populaires.
-
-2. **Comment changer le format de sortie de HTML en images ?**  
-   - Utilisez `ImageViewOptions` au lieu de `HtmlViewOptions` lors de la configuration de vos options de vue.
-
-3. **GroupDocs.Viewer peut‑il gérer efficacement de gros fichiers PDF ?**  
-   - Oui, avec une gestion appropriée de la mémoire et des techniques d'optimisation des performances en place.
-
-4. **Existe‑t‑il un moyen de traiter par lots plusieurs documents à la fois ?**  
-   - Implémentez des boucles dans votre application Java pour parcourir plusieurs chemins de documents.
-
-5. **Comment garantir une qualité d'image optimale pour les documents imprimés ?**  
-   - Ajustez le paramètre `ImageQuality` à `HIGH` ou définissez un niveau de compression personnalisé en fonction de vos exigences d'impression.
-
 ## Questions fréquemment posées
 
 **Q : Le réglage de la qualité de l'image affecte‑t‑il le rendu du texte ?**  
@@ -197,12 +180,6 @@ R : La bibliothèque diffuse les pages en flux, vous êtes donc limité unique
 **Q : Comment vérifier que le HTML généré ressemble exactement au PDF source ?**  
 R : Ouvrez le HTML généré dans un navigateur et comparez la mise en page visuelle ; vous pouvez également utiliser des outils de test de régression visuelle pour des vérifications automatisées.
 
----
-
-**Dernière mise à jour :** 2025-12-20  
-**Testé avec :** GroupDocs.Viewer 25.2 for Java  
-**Auteur :** GroupDocs  
-
 **Ressources**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [Référence API](https://reference.groupdocs.com/viewer/java/)  
@@ -211,3 +188,9 @@ R : Ouvrez le HTML généré dans un navigateur et comparez la mise en page vi
 - [Essai gratuit](https://releases.groupdocs.com/viewer/java/)  
 - [Licence temporaire](https://purchase.groupdocs.com/temporary-license/)  
 - [Forum de support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Dernière mise à jour :** 2025-12-20  
+**Testé avec :** GroupDocs.Viewer 25.2 for Java  
+**Auteur :** GroupDocs  

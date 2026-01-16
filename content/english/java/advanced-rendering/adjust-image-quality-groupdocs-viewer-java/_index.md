@@ -158,23 +158,6 @@ You now have a complete, production‑ready recipe to **render pdf to html** whi
 
 **Next steps:** Explore other output formats (e.g., `ImageViewOptions` for PNG/JPEG), integrate with a document management system, or experiment with custom CSS to style the generated HTML pages.
 
-## FAQ Section
-
-1. **What is GroupDocs.Viewer for Java?**
-   - A versatile library that allows rendering of various document formats into HTML, image, and other popular formats.
-   
-2. **How do I change the output format from HTML to images?**
-   - Use `ImageViewOptions` instead of `HtmlViewOptions` when configuring your view options.
-
-3. **Can GroupDocs.Viewer handle large PDF files efficiently?**
-   - Yes, with proper memory management and performance optimization techniques in place.
-   
-4. **Is there a way to batch process multiple documents at once?**
-   - Implement loops within your Java application to iterate through multiple document paths.
-
-5. **How can I ensure optimal image quality for printed documents?**
-   - Adjust the `ImageQuality` setting to `HIGH` or define a custom compression level based on your printing requirements.
-
 ## Frequently Asked Questions
 
 **Q: Does adjusting image quality affect text rendering?**  
@@ -192,12 +175,6 @@ A: The library streams pages, so you’re limited only by available memory and p
 **Q: How do I verify the resulting HTML looks identical to the source PDF?**  
 A: Open the generated HTML in a browser and compare visual layout; you can also use visual regression testing tools for automated checks.
 
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -206,5 +183,11 @@ A: Open the generated HTML in a browser and compare visual layout; you can also 
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
 
 ---

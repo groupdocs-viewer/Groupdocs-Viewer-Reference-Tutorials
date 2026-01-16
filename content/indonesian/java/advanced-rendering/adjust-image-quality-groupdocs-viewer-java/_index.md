@@ -161,23 +161,6 @@ Anda kini memiliki resep lengkap siap produksi untuk **render pdf ke html** samb
 
 **Langkah selanjutnya:** Jelajahi format output lain (mis., `ImageViewOptions` untuk PNG/JPEG), integrasikan dengan sistem manajemen dokumen, atau bereksperimen dengan CSS khusus untuk menata halaman HTML yang dihasilkan.
 
-## Bagian FAQ
-
-1. **Apa itu GroupDocs.Viewer untuk Java?**  
-   - Sebuah pustaka serbaguna yang memungkinkan rendering berbagai format dokumen ke HTML, gambar, dan format populer lainnya.
-
-2. **Bagaimana cara mengubah format output dari HTML ke gambar?**  
-   - Gunakan `ImageViewOptions` alih-alih `HtmlViewOptions` saat mengonfigurasi opsi tampilan Anda.
-
-3. **Apakah GroupDocs.Viewer dapat menangani file PDF besar secara efisien?**  
-   - Ya, dengan manajemen memori yang tepat dan teknik optimasi kinerja yang diterapkan.
-
-4. **Apakah ada cara untuk memproses batch banyak dokumen sekaligus?**  
-   - Implementasikan loop dalam aplikasi Java Anda untuk mengiterasi beberapa jalur dokumen.
-
-5. **Bagaimana saya dapat memastikan kualitas gambar optimal untuk dokumen cetak?**  
-   - Sesuaikan pengaturan `ImageQuality` ke `HIGH` atau definisikan tingkat kompresi khusus berdasarkan kebutuhan pencetakan Anda.
-
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Apakah penyesuaian kualitas gambar memengaruhi rendering teks?**  
@@ -195,12 +178,6 @@ A: Pustaka melakukan streaming halaman, jadi Anda hanya dibatasi oleh memori yan
 **Q: Bagaimana cara memverifikasi bahwa HTML yang dihasilkan tampak identik dengan PDF sumber?**  
 A: Buka HTML yang dihasilkan di peramban dan bandingkan tata letak visual; Anda juga dapat menggunakan alat pengujian regresi visual untuk pemeriksaan otomatis.
 
----
-
-**Terakhir Diperbarui:** 2025-12-20  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
-**Penulis:** GroupDocs  
-
 **Sumber Daya**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -209,3 +186,9 @@ A: Buka HTML yang dihasilkan di peramban dan bandingkan tata letak visual; Anda 
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Terakhir Diperbarui:** 2025-12-20  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
+**Penulis:** GroupDocs  

@@ -161,19 +161,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 
 **Next steps:** استكشف صيغ إخراج أخرى (مثل `ImageViewOptions` للـ PNG/JPEG)، دمج مع نظام إدارة المستندات، أو جرب CSS مخصص لتنسيق صفحات HTML المولدة.
 
-## قسم الأسئلة المتكررة
-
-1. **What is GroupDocs.Viewer for Java?**
-   - مكتبة متعددة الاستخدامات تسمح بتحويل صيغ مستندات مختلفة إلى HTML، صورة، وصيغ شائعة أخرى.
-2. **How do I change the output format from HTML to images?**
-   - استخدم `ImageViewOptions` بدلاً من `HtmlViewOptions` عند تكوين خيارات العرض.
-3. **Can GroupDocs.Viewer handle large PDF files efficiently?**
-   - نعم، مع إدارة الذاكرة المناسبة وتقنيات تحسين الأداء.
-4. **Is there a way to batch process multiple documents at once?**
-   - نفّذ حلقات داخل تطبيق Java الخاص بك لتكرار مسارات مستندات متعددة.
-5. **How can I ensure optimal image quality for printed documents?**
-   - عدّل إعداد `ImageQuality` إلى `HIGH` أو عرّف مستوى ضغط مخصص بناءً على متطلبات الطباعة.
-
 ## الأسئلة المتكررة
 
 **س: هل يؤثر تعديل جودة الصورة على عرض النص؟**  
@@ -191,12 +178,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 **س: كيف أتحقق من أن HTML الناتج يبدو مطابقًا للـ PDF الأصلي؟**  
 **ج:** افتح HTML المولّد في المتصفح وقارن التخطيط البصري؛ يمكنك أيضًا استخدام أدوات اختبار الانحدار البصري للتحقق الآلي.
 
----
-
-**آخر تحديث:** 2025-12-20  
-**تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
-**المؤلف:** GroupDocs  
-
 **الموارد**  
 - [التوثيق](https://docs.groupdocs.com/viewer/java/)  
 - [مرجع API](https://reference.groupdocs.com/viewer/java/)  
@@ -205,3 +186,9 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
 - [نسخة تجريبية مجانية](https://releases.groupdocs.com/viewer/java/)  
 - [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)  
 - [منتدى الدعم](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**آخر تحديث:** 2025-12-20  
+**تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
+**المؤلف:** GroupDocs  
