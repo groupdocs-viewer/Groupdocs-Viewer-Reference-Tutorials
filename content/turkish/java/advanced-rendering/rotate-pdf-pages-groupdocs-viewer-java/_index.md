@@ -1,40 +1,55 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak bir PDF belgesindeki belirli sayfaların nasıl döndürüleceğini öğrenin. Bu kılavuz, kurulum, uygulama ve pratik uygulamaları kapsar."
-"title": "Java'da GroupDocs.Viewer Kullanarak Belirli PDF Sayfalarını Döndürme - Kapsamlı Bir Kılavuz"
-"url": "/tr/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-18'
+description: GroupDocs.Viewer for Java ile PDF sayfalarını nasıl döndüreceğinizi öğrenin.
+  Bu adım adım öğretici, Maven kurulumunu, sayfa döndürmeyi (90 derece PDF döndürme
+  dahil) ve sorun giderme konularını kapsar.
+keywords:
+- rotate PDF pages Java
+- GroupDocs.Viewer setup Java
+- programmatically rotate PDF Java
+title: Java'da GroupDocs.Viewer Kullanarak PDF Sayfalarını Döndürme – Kapsamlı Bir
+  Rehber
 type: docs
+url: /tr/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/
+weight: 1
 ---
-# Java'da GroupDocs.Viewer Kullanarak Belirli PDF Sayfalarını Döndürme
 
-## giriiş
+# GroupDocs.Viewer ile Java'da PDF Sayfalarını Döndürme
 
-PDF içindeki belirli sayfaları döndürmek, belgeleri hizalamak veya sunum slaytlarını ayarlamak için önemli olabilir. Bu eğitim, Java için GroupDocs.Viewer kullanarak PDF sayfalarının nasıl kolayca döndürüleceğini gösterir.
+Bir PDF içinde belirli sayfaları döndürmek, belgeleri hizalamak veya sunum slaytlarını ayarlamak için gerekli olabilir. **Bu rehberde GroupDocs.Viewer ile programlı olarak pdf** sayfalarını nasıl döndüreceğinizi öğreneceksiniz; pdf'yi 90 derece döndürmeniz, bir bölümü ters çevirmeniz veya tek bir çağrıda birden fazla sayfayı işlemeniz gerekebilir.
 
-**Ne Öğreneceksiniz:**
-- Java projenizde GroupDocs.Viewer'ı kurma
-- Belirli PDF sayfalarını programlı olarak döndürme
-- Optimum kullanım için temel yapılandırmalar
+![GroupDocs.Viewer for Java ile Belirli PDF Sayfalarını Döndürme](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
+
+**Öğrenecekleriniz:**
+- Java projenizde GroupDocs.Viewer'ı kurma (Maven GroupDocs Viewer yapılandırması dahil)
+- Belirli PDF sayfalarını programlı olarak döndürme (pdf'yi 90 derece, 180 derece vb. döndürme)
+- Optimum kullanım için ana yapılandırmalar
 - Uygulama sırasında yaygın sorunların giderilmesi
 
-## Ön koşullar
+## Hızlı Yanıtlar
+- **Java'da PDF sayfalarını döndürebilen kütüphane hangisidir?** GroupDocs.Viewer for Java.
+- **Tek bir sayfayı 90 derece döndürebilir miyim?** Evet, `rotatePage(pageNumber, Rotation.ON_90_DEGREE)` kullanın.
+- **Geliştirme için lisansa ihtiyacım var mı?** Ücretsiz deneme için geçici bir lisans mevcuttur.
+- **Maven gerekli mi?** Maven, GroupDocs bağımlılıklarını yönetmenin önerilen yoludur.
+- **Döndürülmüş sayfaları nasıl render ederim?** `HtmlViewOptions` kullanın ve `viewer.view(...)` çağırın.
+
+## Önkoşullar
 
 ### Gerekli Kütüphaneler ve Bağımlılıklar
 
-Başlamak için şunlara sahip olduğunuzdan emin olun:
-- Bilgisayarınızda Java Development Kit (JDK) sürüm 8 veya üzeri yüklü olmalıdır.
-- IntelliJ IDEA veya Eclipse gibi Entegre Geliştirme Ortamı (IDE).
+Başlamak için aşağıdakilere sahip olduğunuzdan emin olun:
+- Makinenizde yüklü Java Development Kit (JDK) sürüm 8 veya üzeri.
+- IntelliJ IDEA veya Eclipse gibi bir Entegre Geliştirme Ortamı (IDE).
 - Proje bağımlılıklarını yönetmek için Maven.
 
-### Çevre Kurulum Gereksinimleri
+### Ortam Kurulum Gereksinimleri
 
-1. **Maven Yapılandırması**:GroupDocs.Viewer'ı Maven projenize, gerekli depoları ve bağımlılıkları ekleyerek ekleyin. `pom.xml`.
-2. **Lisans Edinimi**: Geliştirme sırasında tüm özellikleri sınırlama olmaksızın keşfetmenize olanak tanıyan GroupDocs'tan geçici bir lisans edinin. Ziyaret edin [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/) veya geçici lisans için başvuruda bulunun [GroupDocs Geçici Lisans Sayfası](https://purchase.groupdocs.com/temporary-license/).
+1. **Maven Yapılandırması**: `pom.xml` dosyanıza gerekli depoları ve bağımlılıkları ekleyerek GroupDocs.Viewer'ı Maven projenize ekleyin.
+2. **Lisans Edinme**: Geliştirme sırasında sınırlama olmadan tüm özellikleri keşfetmenizi sağlayan geçici bir lisansı GroupDocs'tan alın. [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) adresini ziyaret edin veya [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/) üzerinden geçici lisans başvurusunda bulunun.
 
-## Java için GroupDocs.Viewer Kurulumu
+## GroupDocs.Viewer for Java Kurulumu
 
-GroupDocs.Viewer'ı Maven kullanarak Java projenize entegre etmek için, `pom.xml`:
+Maven kullanarak GroupDocs.Viewer'ı Java projenize entegre etmek için `pom.xml` dosyanızı güncelleyin:
 
 **Maven Yapılandırması**
 ```xml
@@ -62,7 +77,7 @@ Belge dizininizi ve çıktı yollarınızı belirterek GroupDocs.Viewer'ı başl
 Path YOUR_DOCUMENT_DIRECTORY = Path.of("YOUR_DOCUMENT_DIRECTORY");
 Path YOUR_OUTPUT_DIRECTORY = Path.of("YOUR_OUTPUT_DIRECTORY");
 
-// Sayfa dosya yolları için biçim
+// Format for page file paths
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
@@ -74,79 +89,104 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 
 **Genel Bakış:** Daha iyi belge sunumu için belirli PDF sayfalarını döndürün.
 
-#### Adım 1: Sayfa Döndürmeyi Yapılandırın
+#### Adım 1: Sayfa Döndürmeyi Yapılandırma
 
-İlk sayfayı 90 derece, ikinci sayfayı ise 180 derece döndürün. `HtmlViewOptions`:
+`HtmlViewOptions` kullanarak ilk sayfayı 90 derece, ikinci sayfayı 180 derece döndürün:
 
 ```java
-// İlk sayfayı saat yönünde 90 derece döndürün.
+// Rotate the first page by 90 degrees clockwise.
 viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 
-// İkinci sayfayı 180 derece döndürün.
+// Rotate the second page by 180 degrees.
 viewOptions.rotatePage(2, Rotation.ON_180_DEGREE);
 ```
 
-#### Adım 2: Görüntüleyiciyi Başlatın
+#### Adım 2: Viewer'ı Başlat ve Render Et
 
-Bir tane oluştur `Viewer` Belgenizle birlikte örneğinizi oluşturun ve belirtilen sayfaları işleyin:
+Belgenizle bir `Viewer` örneği oluşturun ve belirtilen sayfaları render edin:
 
 ```java
 Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SampleDocument.pdf"));
 
-// Belirtilen sayfaları (1 ve 2) yapılandırılmış seçenekleri kullanarak işleyin.
+// Render the specified pages (1 and 2) using the configured options.
 viewer.view(viewOptions, 1, 2);
 
-// Kaynakları serbest bırakmak için görüntüleyiciyi her zaman kapatın.
+// Always close the viewer to free resources.
 viewer.close();
 ```
 
 ### Parametreler ve Yapılandırma
 
-- **Rotasyon**: Kullanmak `rotatePage` sayfa numaraları ve dönüş açılarıyla. Mevcut dönüşler: `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.
-- **HtmlGörüntülemeSeçenekleri**: PDF sayfa dönüşümünü HTML'e yapılandırır ve gömülü kaynakların dahil edilmesini sağlar.
+- **Rotation**: Sayfa numaraları ve döndürme açılarıyla `rotatePage` kullanın. Mevcut döndürmeler: `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.
+- **HtmlViewOptions**: PDF sayfa dönüşümünü HTML'e yapılandırır, gömülü kaynakların dahil edilmesini sağlar.
+- **pdf to html java**: `HtmlViewOptions` sınıfı, düzeni koruyarak PDF‑to‑HTML dönüşümünü yönetir.
 
-#### Sorun Giderme İpuçları
+#### Sorun Giderme İpuçları (troubleshoot pdf rotation)
 
-- Belgenize ve çıktı dizinlerine giden yolları doğrulayın.
-- Eksik bağımlılıkları veya hatalı kütüphane sürümlerini kontrol edin.
-- Deneme sırasında özellik kısıtlamaları oluşursa lisansın düzgün bir şekilde uygulandığından emin olun.
+- Belge ve çıktı dizinlerinin yollarını doğrulayın.
+- Eksik bağımlılıkları veya yanlış kütüphane sürümlerini kontrol edin.
+- Deneme sırasında özellik kısıtlamaları oluşursa lisansın doğru uygulandığından emin olun.
+- Bellek dalgalanmaları yaşıyorsanız, sayfaları daha küçük partiler halinde render etmeyi düşünün (birden fazla pdf sayfasını kademeli olarak döndürün).
 
 ## Pratik Uygulamalar
 
-### Gerçek Dünya Kullanım Örnekleri
-1. **Belge Hizalaması**: Doğru dijital hizalama için taranan belgeleri döndürün.
-2. **Sunum Ayarlamaları**:Paylaşmadan önce PDF'lerdeki sunum slaytlarını değiştirin.
-3. **Arşiv İş Akışları**: Dijitalleştirme sırasında tarihi belgelerin yönünü otomatik olarak ayarlayın.
+### Gerçek Dünya Kullanım Senaryoları
+1. **Belge Hizalama** – Tarama belgelerini doğru dijital yönlendirme için döndürün.
+2. **Sunum Ayarlamaları** – Paylaşmadan önce PDF içindeki sunum slaytlarını değiştirin.
+3. **Arşiv İş Akışları** – Dijitalleştirme sırasında tarihi belgelerin yönünü otomatik olarak ayarlayın.
 
 ### Entegrasyon Olanakları
-GroupDocs.Viewer'ı Java tabanlı belge yönetim sistemleri, içerik platformları veya dinamik görüntüleme yetenekleri gerektiren özel kurumsal çözümlerle entegre edin.
+Dinamik görüntüleme yetenekleri gerektiren Java tabanlı belge yönetim sistemleri, içerik platformları veya özel kurumsal çözümlerle GroupDocs.Viewer'ı entegre edin.
 
-## Performans Hususları
+## Performans Düşünceleri
 
-- **Kaynak Yönetimi**: Kapat `Viewer` kaynakları serbest bırakma örneği.
-- **Java Bellek Yönetimi**: Büyük belgeleri işlerken bellek kullanımını izleyin ve verimli veri yapıları kullanın.
-- **En İyi Uygulamalar**: Sık erişilen belgeler veya sayfalar için önbelleğe almayı kullanın.
+- **Kaynak Yönetimi**: Kaynakları serbest bırakmak için `Viewer` örneğini kapatın.
+- **Java Bellek Yönetimi**: Büyük belgeleri render ederken bellek kullanımını izleyin ve verimli veri yapıları kullanın.
+- **En İyi Uygulamalar**: Sık erişilen belgeler veya sayfalar için önbellekleme kullanın.
 
-## Çözüm
+## Sonuç
 
-Bu eğitim, Java'da GroupDocs.Viewer kullanarak belirli PDF sayfalarını döndürmeyi, ortam kurulumundan pratik uygulamalara kadar kapsıyordu. Filigran ekleme veya belgeleri farklı biçimlere dönüştürme gibi ek işlevlerle denemeler yapın.
+Bu öğreticide Java'da GroupDocs.Viewer kullanarak **pdf sayfalarını nasıl döndüreceğinizi** ortam kurulumundan pratik uygulamalara kadar ele aldık. Filigran ekleme veya belgeleri farklı formatlara dönüştürme gibi ek işlevlerle deneyler yapın.
 
-**Sonraki Adımlar:** Belge işleme yeteneklerinizi geliştirmek için GroupDocs.Viewer'ın diğer özelliklerini keşfedin.
+**Sonraki Adımlar:** Belge işleme yeteneklerinizi geliştirmek için daha fazla GroupDocs.Viewer özelliğini keşfedin.
 
 ## SSS Bölümü
 
-### Sık Sorulan Sorular
-1. **Rotasyon Sorunlarını Giderme**: Sayfa numaralarının ve döndürme parametrelerinin doğru olduğunu doğrulayın.
-2. **Büyük PDF Dosyalarını İşleme**: Uygun kaynak yönetimiyle büyük belgeleri etkin bir şekilde işleyin.
-3. **Lisanslama Gereksinimleri**: Geliştirme için geçici bir lisans kullanın; üretim için tam lisans satın alın.
-4. **Birden Fazla Sayfayı Döndürme**Arama `rotatePage` farklı sayfa numaraları ve açılarla birden fazla kez.
+### Yaygın Sorular
+1. **Döndürme Sorunlarını Giderme**: Sayfa numaraları ve döndürme parametrelerinin doğru olduğunu doğrulayın.
+2. **Büyük PDF Dosyalarını İşleme**: Uygun kaynak yönetimiyle büyük belgeleri verimli bir şekilde işleyin.
+3. **Lisans Gereksinimleri**: Geliştirme için geçici lisans kullanın; üretim için tam lisans satın alın.
+4. **Birden Fazla Sayfayı Döndürme**: Farklı sayfa numaraları ve açılarla `rotatePage`'i birden çok kez çağırın.
 5. **Java Kütüphaneleriyle Entegrasyon**: GroupDocs.Viewer'ı daha büyük uygulamalara veya çerçevelere sorunsuz bir şekilde entegre edin.
 
+## Sık Sorulan Sorular
+
+**S: Bir PDF'nin tüm sayfalarını bir kerede döndürebilir miyim?**  
+C: Evet. Sayfa numaraları üzerinden döngü kurarak her sayfa için `rotatePage(page, Rotation.ON_90_DEGREE)` çağırın.
+
+**S: Döndürme orijinal PDF dosyasını etkiler mi?**  
+C: Hayır. Döndürme yalnızca render sürecinde uygulanır; kaynak PDF değişmeden kalır.
+
+**S: PDF şifre korumalıysa ne olur?**  
+C: `Viewer` örneğini oluştururken şifreyi sağlayın: `new Viewer(path, password)`.
+
+**S: HtmlViewOptions ayarlarken “null pointer” hatasını nasıl ayıklayabilirim?**  
+C: Çıktı dizininin mevcut olduğundan ve `pageFilePathFormat`'in doğru çözüldüğünden emin olun.
+
+**S: Sayfaları diğer formatlara (ör. PNG) dönüştürürken döndürmenin bir yolu var mı?**  
+C: Hedef format için uygun view seçenekleriyle aynı `rotatePage` yapılandırmasını kullanın.
+
 ## Kaynaklar
-- **Belgeleme**: [GroupDocs Görüntüleyici Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı**: [GroupDocs API Başvurusu](https://reference.groupdocs.com/viewer/java/)
-- **İndirmek**: [GroupDocs İndirme Sayfası](https://releases.groupdocs.com/viewer/java/)
-- **Satın almak**: [GroupDocs Satın Alma Seçenekleri](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme**: [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans**: [Geçici Lisans Talebi](https://purchase.groupdocs.com/temporary-license/)
-- **Destek**: [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2026-01-18  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs

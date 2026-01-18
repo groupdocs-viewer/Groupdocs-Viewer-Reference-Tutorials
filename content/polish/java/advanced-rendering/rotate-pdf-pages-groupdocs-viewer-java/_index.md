@@ -1,42 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak obracać określone strony w dokumencie PDF za pomocą GroupDocs.Viewer dla Java. Ten przewodnik obejmuje konfigurację, implementację i praktyczne zastosowania."
-"title": "Obróć określone strony PDF za pomocą GroupDocs.Viewer w Java&#58; Kompleksowy przewodnik"
-"url": "/pl/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-18'
+description: Dowiedz się, jak obracać strony PDF za pomocą GroupDocs.Viewer dla Javy.
+  Ten krok po kroku poradnik obejmuje konfigurację Maven, obracanie stron (w tym obrót
+  PDF o 90 stopni) oraz rozwiązywanie problemów.
+keywords:
+- rotate PDF pages Java
+- GroupDocs.Viewer setup Java
+- programmatically rotate PDF Java
+title: Jak obracać strony PDF przy użyciu GroupDocs.Viewer w Javie – kompleksowy przewodnik
 type: docs
+url: /pl/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/
+weight: 1
 ---
-# Obróć określone strony PDF za pomocą GroupDocs.Viewer w Javie
 
-## Wstęp
+# Jak obracać strony PDF przy użyciu GroupDocs.Viewer w Javie
 
-Obracanie określonych stron w pliku PDF może być niezbędne do wyrównywania dokumentów lub dostosowywania slajdów prezentacji. Ten samouczek pokazuje, jak łatwo obracać strony PDF za pomocą GroupDocs.Viewer dla Java.
+Obracanie konkretnych stron w pliku PDF może być niezbędne do wyrównywania dokumentów lub dostosowywania slajdów prezentacji. **W tym przewodniku dowiesz się, jak programowo obracać strony pdf** przy użyciu GroupDocs.Viewer, niezależnie od tego, czy potrzebujesz obrócić pdf o 90 stopni, odwrócić cały fragment, czy obsłużyć wiele stron w jednym wywołaniu.
+
+![Rotate Specific PDF Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
 
 **Czego się nauczysz:**
-- Konfigurowanie GroupDocs.Viewer w projekcie Java
-- Programowe obracanie określonych stron PDF
-- Kluczowe konfiguracje dla optymalnego wykorzystania
-- Rozwiązywanie typowych problemów występujących podczas wdrażania
+- Konfiguracja GroupDocs.Viewer w projekcie Java (w tym konfiguracja Maven GroupDocs Viewer)
+- Programowe obracanie konkretnych stron PDF (rotate pdf 90 degrees, 180 degrees, itp.)
+- Kluczowe ustawienia dla optymalnego użycia
+- Rozwiązywanie typowych problemów podczas implementacji
+
+## Szybkie odpowiedzi
+- **What library can rotate PDF pages in Java?** GroupDocs.Viewer for Java.  
+- **Can I rotate a single page by 90 degrees?** Yes, use `rotatePage(pageNumber, Rotation.ON_90_DEGREE)`.  
+- **Do I need a license for development?** A temporary license is available for free trial.  
+- **Is Maven required?** Maven is the recommended way to manage GroupDocs dependencies.  
+- **How do I render the rotated pages?** Use `HtmlViewOptions` and call `viewer.view(...)`.
 
 ## Wymagania wstępne
 
 ### Wymagane biblioteki i zależności
 
 Aby rozpocząć, upewnij się, że masz:
-- Na Twoim komputerze zainstalowany jest Java Development Kit (JDK) w wersji 8 lub nowszej.
+- Java Development Kit (JDK) w wersji 8 lub nowszej zainstalowany na komputerze.
 - Zintegrowane środowisko programistyczne (IDE), takie jak IntelliJ IDEA lub Eclipse.
 - Maven do zarządzania zależnościami projektu.
 
 ### Wymagania dotyczące konfiguracji środowiska
 
-1. **Konfiguracja Maven**: Dodaj GroupDocs.Viewer do swojego projektu Maven, dołączając niezbędne repozytoria i zależności w swoim `pom.xml`.
-2. **Nabycie licencji**: Uzyskaj tymczasową licencję od GroupDocs, która umożliwi Ci eksplorację wszystkich funkcji bez ograniczeń podczas rozwoju. Odwiedź [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/) lub złożyć wniosek o tymczasową licencję na [Strona tymczasowej licencji GroupDocs](https://purchase.groupdocs.com/temporary-license/).
+1. **Maven Configuration**: Dodaj GroupDocs.Viewer do projektu Maven, włączając niezbędne repozytoria i zależności w pliku `pom.xml`.  
+2. **License Acquisition**: Uzyskaj tymczasową licencję od GroupDocs, co pozwala na korzystanie ze wszystkich funkcji bez ograniczeń podczas rozwoju. Odwiedź [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) lub złóż wniosek o tymczasową licencję na [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).
 
-## Konfigurowanie GroupDocs.Viewer dla Java
+## Konfiguracja GroupDocs.Viewer dla Javy
 
-Aby zintegrować GroupDocs.Viewer z projektem Java za pomocą Maven, zaktualizuj `pom.xml`:
+Aby zintegrować GroupDocs.Viewer w projekcie Java przy użyciu Maven, zaktualizuj swój `pom.xml`:
 
-**Konfiguracja Maven**
+**Maven Configuration**  
 ```xml
 <repositories>
    <repository>
@@ -56,97 +70,122 @@ Aby zintegrować GroupDocs.Viewer z projektem Java za pomocą Maven, zaktualizuj
 
 ### Podstawowa inicjalizacja i konfiguracja
 
-Zainicjuj GroupDocs.Viewer, określając katalog dokumentów i ścieżki wyjściowe:
+Zainicjalizuj GroupDocs.Viewer, określając katalog dokumentów oraz ścieżki wyjściowe:
 
 ```java
 Path YOUR_DOCUMENT_DIRECTORY = Path.of("YOUR_DOCUMENT_DIRECTORY");
 Path YOUR_OUTPUT_DIRECTORY = Path.of("YOUR_OUTPUT_DIRECTORY");
 
-// Format ścieżek plików stronicowania
+// Format for page file paths
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-## Przewodnik wdrażania
+## Przewodnik implementacji
 
-### Obracanie określonych stron za pomocą GroupDocs.Viewer
+### Obracanie konkretnych stron przy użyciu GroupDocs.Viewer
 
-**Przegląd:** Obracaj określone strony dokumentu PDF, aby lepiej się prezentował.
+**Overview:** Obróć konkretne strony PDF, aby uzyskać lepszą prezentację dokumentu.
 
-#### Krok 1: Skonfiguruj obrót strony
+#### Krok 1: Konfiguracja obrotu stron
 
-Obróć pierwszą stronę o 90 stopni, a drugą o 180 stopni za pomocą `HtmlViewOptions`:
+Obróć pierwszą stronę o 90 stopni, a drugą o 180 stopni przy użyciu `HtmlViewOptions`:
 
 ```java
-// Obróć pierwszą stronę o 90 stopni zgodnie z ruchem wskazówek zegara.
+// Rotate the first page by 90 degrees clockwise.
 viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 
-// Obróć drugą stronę o 180 stopni.
+// Rotate the second page by 180 degrees.
 viewOptions.rotatePage(2, Rotation.ON_180_DEGREE);
 ```
 
-#### Krok 2: Zainicjuj przeglądarkę
+#### Krok 2: Inicjalizacja Viewer i renderowanie
 
-Utwórz `Viewer` wystąpienie z dokumentem i renderowanie określonych stron:
+Utwórz instancję `Viewer` z dokumentem i wyrenderuj wybrane strony:
 
 ```java
 Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SampleDocument.pdf"));
 
-// Wyrenderuj określone strony (1 i 2) przy użyciu skonfigurowanych opcji.
+// Render the specified pages (1 and 2) using the configured options.
 viewer.view(viewOptions, 1, 2);
 
-// Zawsze udostępniaj widzowi dostęp do wolnych zasobów.
+// Always close the viewer to free resources.
 viewer.close();
 ```
 
 ### Parametry i konfiguracja
 
-- **Obrót**: Używać `rotatePage` z numerami stron i kątami obrotu. Dostępne obroty: `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.
-- **Opcje widoku HTML**: Konfiguruje konwersję stron PDF do HTML, zapewniając uwzględnienie osadzonych zasobów.
+- **Rotation**: Użyj `rotatePage` z numerami stron i kątami obrotu. Dostępne obroty: `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.  
+- **HtmlViewOptions**: Konfiguruje konwersję stron PDF do HTML, zapewniając włączenie zasobów osadzonych.  
+- **pdf to html java**: Klasa `HtmlViewOptions` obsługuje konwersję PDF‑to‑HTML, zachowując układ.
 
-#### Porady dotyczące rozwiązywania problemów
+#### Wskazówki rozwiązywania problemów (troubleshoot pdf rotation)
 
-- Sprawdź ścieżki do dokumentów i katalogów wyjściowych.
-- Sprawdź, czy nie brakuje zależności lub czy nie ma nieprawidłowych wersji bibliotek.
-- Jeśli w trakcie okresu próbnego wystąpią ograniczenia funkcji, upewnij się, że licencja zostanie prawidłowo zastosowana.
+- Zweryfikuj ścieżki do dokumentu i katalogów wyjściowych.  
+- Sprawdź brakujące zależności lub nieprawidłowe wersje bibliotek.  
+- Upewnij się, że licencja jest poprawnie zastosowana, jeśli w wersji próbnej występują ograniczenia funkcji.  
+- Jeśli występują skoki zużycia pamięci, rozważ renderowanie stron w mniejszych partiach (rotate multiple pdf pages gradually).
 
-## Zastosowania praktyczne
+## Praktyczne zastosowania
 
-### Przykłady zastosowań w świecie rzeczywistym
-1. **Wyrównanie dokumentu**: Obróć zeskanowane dokumenty w celu uzyskania prawidłowego wyrównania cyfrowego.
-2. **Korekty prezentacji**:Modyfikuj slajdy prezentacji w plikach PDF przed ich udostępnieniem.
-3. **Przepływy pracy archiwizacyjne**:Automatycznie dostosuj orientację dokumentów historycznych podczas digitalizacji.
+### Przykłady zastosowań w rzeczywistym świecie
+1. **Document Alignment** – Obróć zeskanowane dokumenty, aby uzyskać prawidłową orientację cyfrową.  
+2. **Presentation Adjustments** – Modyfikuj slajdy prezentacji w PDF przed udostępnieniem.  
+3. **Archival Workflows** – Automatycznie dostosowuj orientację historycznych dokumentów podczas digitalizacji.
 
 ### Możliwości integracji
-Zintegruj GroupDocs.Viewer z systemami zarządzania dokumentami opartymi na Java, platformami treści lub niestandardowymi rozwiązaniami korporacyjnymi wymagającymi możliwości dynamicznego przeglądania.
+Zintegruj GroupDocs.Viewer z systemami zarządzania dokumentami opartymi na Javie, platformami treści lub niestandardowymi rozwiązaniami korporacyjnymi wymagającymi dynamicznych możliwości podglądu.
 
 ## Rozważania dotyczące wydajności
 
-- **Zarządzanie zasobami**:Zamknij `Viewer` instancja w celu zwolnienia zasobów.
-- **Zarządzanie pamięcią Java**: Monitoruj użycie pamięci podczas renderowania dużych dokumentów i korzystaj z wydajnych struktur danych.
-- **Najlepsze praktyki**:Wykorzystaj buforowanie w przypadku często używanych dokumentów lub stron.
+- **Resource Management**: Zamknij instancję `Viewer`, aby zwolnić zasoby.  
+- **Java Memory Management**: Monitoruj zużycie pamięci przy renderowaniu dużych dokumentów i używaj efektywnych struktur danych.  
+- **Best Practices**: Wykorzystuj buforowanie dla często używanych dokumentów lub stron.
 
-## Wniosek
+## Zakończenie
 
-Ten samouczek obejmował obracanie określonych stron PDF za pomocą GroupDocs.Viewer w Javie, od konfiguracji środowiska po praktyczne zastosowania. Eksperymentuj z dodatkowymi funkcjonalnościami, takimi jak znakowanie wodne lub konwertowanie dokumentów do różnych formatów.
+Ten tutorial omówił **jak obracać pdf** strony przy użyciu GroupDocs.Viewer w Javie, od konfiguracji środowiska po praktyczne zastosowania. Eksperymentuj z dodatkowymi funkcjami, takimi jak znakowanie wodne lub konwersja dokumentów do różnych formatów.
 
-**Następne kroki:** Poznaj więcej funkcji GroupDocs.Viewer, aby zwiększyć możliwości przetwarzania dokumentów.
+**Next Steps:** Explore more GroupDocs.Viewer features to enhance your document processing capabilities.
 
 ## Sekcja FAQ
 
-### Często zadawane pytania
-1. **Rozwiązywanie problemów z obrotem**: Sprawdź, czy numery stron i parametry obrotu są prawidłowe.
-2. **Obsługa dużych plików PDF**:Skuteczne przetwarzanie obszernych dokumentów dzięki odpowiedniemu zarządzaniu zasobami.
-3. **Wymagania licencyjne**:Do celów programistycznych korzystaj z licencji tymczasowej; do celów produkcyjnych kupuj licencję pełną.
-4. **Obracanie wielu stron**Dzwonić `rotatePage` wielokrotnie, z różnymi numerami stron i pod różnymi kątami.
-5. **Integracja z bibliotekami Java**:Bezproblemowa integracja GroupDocs.Viewer z większymi aplikacjami lub strukturami.
+### Częste pytania
+1. **Troubleshooting Rotation Issues**: Verify page numbers and rotation parameters are correct.  
+2. **Handling Large PDF Files**: Efficiently process large documents with proper resource management.  
+3. **Licensing Requirements**: Use a temporary license for development; purchase a full license for production.  
+4. **Rotating Multiple Pages**: Call `rotatePage` multiple times with different page numbers and angles.  
+5. **Integration with Java Libraries**: Seamlessly integrate GroupDocs.Viewer within larger applications or frameworks.
+
+## Najczęściej zadawane pytania
+
+**Q: Can I rotate all pages of a PDF at once?**  
+A: Yes. Loop through the page numbers and call `rotatePage(page, Rotation.ON_90_DEGREE)` for each page.
+
+**Q: Does the rotation affect the original PDF file?**  
+A: No. Rotation is applied only during the rendering process; the source PDF remains unchanged.
+
+**Q: What if a PDF is password‑protected?**  
+A: Provide the password when creating the `Viewer` instance: `new Viewer(path, password)`.
+
+**Q: How do I debug a “null pointer” error when setting up HtmlViewOptions?**  
+A: Ensure the output directory exists and that `pageFilePathFormat` resolves correctly.
+
+**Q: Is there a way to rotate pages when converting to other formats (e.g., PNG)?**  
+A: Use the same `rotatePage` configuration with the appropriate view options for the target format.
 
 ## Zasoby
-- **Dokumentacja**: [Dokumentacja przeglądarki GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Odniesienie do API**: [Odwołanie do API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Pobierać**: [Strona pobierania GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Zakup**: [Opcje zakupu GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezpłatna wersja próbna**: [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licencja tymczasowa**: [Poproś o licencję tymczasową](https://purchase.groupdocs.com/temporary-license/)
-- **Wsparcie**: [Forum wsparcia GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ostatnia aktualizacja:** 2026-01-18  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
