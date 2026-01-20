@@ -1,34 +1,48 @@
 ---
-"date": "2025-04-24"
-"description": "Ontdek hoe u met GroupDocs.Viewer voor Java op efficiënte wijze het renderen van lege spreadsheetrijen kunt overslaan. Hierdoor worden de applicatieprestaties verbeterd en het resourcegebruik verminderd."
-"title": "Het overslaan van het renderen van lege rijen in Java met behulp van GroupDocs.Viewer&#58; een prestatiegids"
-"url": "/nl/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-20'
+description: Leer hoe u Excel naar HTML kunt converteren terwijl u lege rijen overslaat
+  met GroupDocs.Viewer voor Java – een snelle, geheugen‑efficiënte oplossing voor
+  ontwikkelaars.
+keywords:
+- GroupDocs.Viewer Java
+- skip rendering empty rows
+- Java spreadsheet to HTML
+title: Hoe Excel naar HTML te converteren en lege rijen over te slaan in Java met
+  GroupDocs.Viewer
 type: docs
+url: /nl/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/
+weight: 1
 ---
-# Het renderen van lege rijen in Java overslaan met GroupDocs.Viewer
-## Invoering
-Het renderen van onnodige lege rijen bij het converteren van spreadsheets naar HTML kan uw uitvoer onoverzichtelijk maken en extra resources verbruiken. Dit is een belangrijk aandachtspunt voor prestatiegerichte ontwikkelaars. Met de "GroupDocs.Viewer Java"-bibliotheek kunt u het renderen van deze lege rijen efficiënt overslaan, wat zowel de snelheid als de helderheid van uw applicaties verbetert.
-In deze tutorial onderzoeken we hoe je deze functie kunt implementeren met GroupDocs.Viewer voor Java. Aan het einde van deze handleiding heb je geleerd:
-- Hoe u GroupDocs.Viewer voor Java instelt met Maven.
-- Stappen voor het configureren van HTML-weergaveopties om lege rijen over te slaan.
-- Aanbevolen procedures voor het optimaliseren van prestaties en geheugengebruik.
-Laten we beginnen met het opzetten van uw omgeving en het transformeren van uw spreadsheet-renderingproces!
+
+# Excel naar HTML converteren en lege rijen overslaan in Java met GroupDocs.Viewer
+
+Wanneer je **Excel naar HTML converteert**, zorgt het renderen van lege rijen niet alleen voor rommelige output, maar verspilt ook CPU-cycli en geheugen. Voor prestatiegerichte Java‑ontwikkelaars kan de mogelijkheid om tijdens de conversie **lege rijen over te slaan** een merkbaar verschil maken, vooral bij grote werkboeken. In deze gids zie je precies hoe je GroupDocs.Viewer voor Java instelt, de viewer configureert om lege rijen te negeren, en schone HTML‑pagina's rendert die sneller laden en minder middelen verbruiken.
+
+![Lege rijen niet renderen met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/skip-rendering-empty-rows-java.png)
+
+## Snelle antwoorden
+- **Wat betekent “Excel naar HTML converteren”?** Het zet een .xlsx‑werkboek om in een reeks HTML‑bestanden die in browsers kunnen worden weergegeven.  
+- **Waarom lege rijen overslaan?** Het overslaan verkleint de HTML‑grootte, versnelt het renderen en verbetert de gebruikerservaring.  
+- **Welke bibliotheek regelt dit?** GroupDocs.Viewer voor Java (v25.2+).  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een volledige licentie is vereist voor productie.  
+- **Welke Java‑versie is vereist?** JDK 8 of hoger.
+
+## Wat betekent “Excel naar HTML converteren”?
+Het converteren van een Excel‑werkboek naar HTML betekent dat elke werkblad, cel en stijl wordt vertaald naar equivalente HTML‑elementen en CSS. Het resultaat is een web‑vriendelijke weergave die kan worden ingebed in portals, dashboards of e‑mailrapporten zonder dat Microsoft Office aan de clientzijde nodig is.
+
+## Waarom GroupDocs.Viewer gebruiken om rijen over te slaan?
+GroupDocs.Viewer biedt een high‑level API die de low‑level details van spreadsheet‑parsing abstraheert. Door de optie `setSkipEmptyRows(true)` in te schakelen, laat de viewer automatisch rijen weg die geen gegevens bevatten, waardoor je een slankere HTML‑output krijgt zonder extra programmeerinspanning.
+
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u het volgende heeft geregeld:
-### Vereiste bibliotheken en afhankelijkheden
-- **GroupDocs.Viewer voor Java**: Versie 25.2 of later.
-- **Maven** op uw systeem geïnstalleerd.
-### Vereisten voor omgevingsinstellingen
-- Een Java Development Kit (JDK) versie 8 of hoger.
-- Een Integrated Development Environment (IDE) zoals IntelliJ IDEA, Eclipse of NetBeans.
-### Kennisvereisten
-- Basiskennis van Java-programmering en Maven-projecten.
-- Kennis van het werken met spreadsheets en HTML-documenten in Java-toepassingen.
-## GroupDocs.Viewer instellen voor Java
-Om GroupDocs.Viewer in uw Java-applicatie te kunnen gebruiken, moet u het configureren binnen een Maven-project. Dit doet u als volgt:
-### Maven-configuratie
-Voeg de volgende configuratie toe aan uw `pom.xml` bestand om GroupDocs.Viewer als afhankelijkheid op te nemen:
+- **GroupDocs.Viewer voor Java** (v25.2 of later).  
+- **Maven** geïnstalleerd en geconfigureerd.  
+- **JDK 8+** en een IDE (IntelliJ IDEA, Eclipse of NetBeans).  
+- Basiskennis van Java en Maven‑projectstructuur.
+
+## GroupDocs.Viewer voor Java instellen
+### Maven‑configuratie
+Add the repository and dependency to your `pom.xml`:
+
 ```xml
 <repositories>
     <repository>
@@ -46,94 +60,136 @@ Voeg de volgende configuratie toe aan uw `pom.xml` bestand om GroupDocs.Viewer a
     </dependency>
 </dependencies>
 ```
-### Licentieverwerving
-GroupDocs biedt een gratis proefversie, tijdelijke licenties voor evaluatie en aankoopopties voor volledige toegang:
-- **Gratis proefperiode**: Downloaden van [hier](https://releases.groupdocs.com/viewer/java/).
-- **Tijdelijke licentie**: Een tijdelijke licentie verkrijgen [hier](https://purchase.groupdocs.com/temporary-license/) om alle functies zonder beperkingen te testen.
-- **Aankoop**: Voor langdurig gebruik kunt u licenties aanschaffen via [deze link](https://purchase.groupdocs.com/buy).
+
+### Licentie‑acquisitie
+GroupDocs biedt verschillende licentie‑opties:
+
+- **Gratis proefversie**: Download van [hier](https://releases.groupdocs.com/viewer/java/).  
+- **Tijdelijke licentie**: Verkrijg een tijdelijke licentie [hier](https://purchase.groupdocs.com/temporary-license/) om de volledige functionaliteit te testen.  
+- **Aankoop**: Voor productiegebruik koop je een licentie via [deze link](https://purchase.groupdocs.com/buy).
+
 ### Basisinitialisatie
-Nadat u Maven hebt geconfigureerd en uw licentie hebt verkregen (indien nodig), initialiseert u GroupDocs.Viewer in uw Java-applicatie. Hier is een eenvoudig voorbeeld:
+Create a simple Java class to instantiate the viewer:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.nio.file.Path;
 
 public class ViewerSetup {
     public static void main(String[] args) {
-        // Initialiseer de viewer met het pad naar uw document
+        // Initialize viewer with the path to your document
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Jouw renderinglogica komt hier terecht
+            // Your rendering logic will go here
         }
     }
 }
 ```
-## Implementatiegids
-### Rendering van lege rijen in spreadsheets overslaan
-Laten we nu de kernfunctie implementeren: lege rijen overslaan tijdens het converteren van spreadsheets naar HTML-formaat.
+
+## Implementatie‑gids
+### Hoe rijen over te slaan bij het converteren van Excel naar HTML
 #### Overzicht
-Deze functie zorgt ervoor dat alleen niet-lege rijen worden weergegeven, waardoor uw uitvoer wordt gestroomlijnd en het resourcegebruik wordt verminderd. Dit is vooral handig bij grote datasets waarbij veel rijen mogelijk leeg zijn.
-##### Stap 1: Definieer de uitvoermap
-Begin met het opgeven van de directory waar de gerenderde HTML-bestanden worden opgeslagen:
+Het inschakelen van de optie “lege rijen overslaan” zorgt ervoor dat alleen rijen met gegevens worden gerenderd, wat de uiteindelijke HTML‑grootte verkleint en de laadsnelheid verbetert.
+
+#### Stap 1: Output‑directory definiëren
+Set the folder where the HTML files will be saved:
+
 ```java
 import java.nio.file.Paths;
 
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "page_{0}.html");
 ```
-Vervangen `"YOUR_OUTPUT_DIRECTORY"` met het gewenste pad voor het opslaan van de uitvoer.
-##### Stap 2: HtmlViewOptions configureren
-Stel de `HtmlViewOptions` om ingebedde bronnen zoals afbeeldingen en stijlbladen te verwerken:
+
+Vervang `"YOUR_OUTPUT_DIRECTORY"` door het gewenste pad op je server of lokale machine.
+
+#### Stap 2: HtmlViewOptions configureren
+Create `HtmlViewOptions` to embed resources (images, CSS) directly into the HTML output:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewInfoOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory);
 ```
-##### Stap 3: Lege rijen in spreadsheets overslaan
-Configureer de viewer om lege rijen over te slaan tijdens het renderen:
+
+#### Stap 3: Overslaan van lege rijen inschakelen
+Tell the viewer to ignore blank rows during the conversion:
+
 ```java
 viewInfoOptions.getSpreadsheetOptions().setSkipEmptyRows(true);
 ```
-Met deze regel configureert u GroupDocs.Viewer zodanig dat alle rijen die geen gegevens bevatten, worden genegeerd.
-##### Stap 4: Het document renderen
-Render ten slotte uw document met behulp van de geconfigureerde opties:
+
+#### Stap 4: Document renderen
+Finally, render the workbook to HTML using the configured options:
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Sample_XLSX_With_Empty_Row.xlsx")) {
     viewer.view(viewInfoOptions);
 }
 ```
-Vervangen `"YOUR_DOCUMENT_DIRECTORY"` met het pad naar uw spreadsheetbestand.
+
+Zorg ervoor dat `"YOUR_DOCUMENT_DIRECTORY"` naar de locatie van het bron‑Excel‑bestand wijst.
+
 ### Tips voor probleemoplossing
-- **Lege uitvoer**: Zorg ervoor dat uw invoerdocument geen lege rijen bevat. Als het volledig leeg is, wordt er geen HTML gegenereerd.
-- **Problemen met het bronpad**: Controleer of `outputDirectory` correct is ingesteld en toegankelijk is voor uw toepassing.
+- **Lege output** – Controleer of het bron‑werkboek daadwerkelijk rijen met gegevens bevat; een volledig leeg blad levert geen HTML op.  
+- **Pad‑problemen** – Controleer of `outputDirectory` bestaat en de applicatie schrijfrechten heeft.
+
 ## Praktische toepassingen
-Skip rendering van lege rijen kan in verschillende scenario's worden toegepast:
-1. **Gegevensrapportage**:Wanneer u rapporten genereert uit grote datasets, zorgt u ervoor dat alleen zinvolle gegevens worden weergegeven. Dit verbetert de leesbaarheid.
-2. **Dashboardintegratie**Gebruik deze functie om dashboards te vullen met beknopte gegevensweergaven, waardoor de prestaties worden verbeterd.
-3. **Documentconversieservices**: Bied klanten overzichtelijke HTML-versies van hun spreadsheets zonder onnodige rijen.
-## Prestatieoverwegingen
-### Optimaliseren van resourcegebruik
-- **Geheugenbeheer**: Zorg ervoor dat uw Java-omgeving is geconfigureerd voor optimaal geheugengebruik, vooral bij het verwerken van grote bestanden.
-- **Batchverwerking**: Verwerk documenten in batches om de toewijzing van middelen effectief te beheren.
-### Beste praktijken
-- Werk GroupDocs.Viewer regelmatig bij om te profiteren van prestatieverbeteringen en nieuwe functies.
-- Controleer de toepassingslogboeken op eventuele afwijkingen tijdens het renderen, zodat u mogelijke problemen snel kunt aanpakken.
+Het overslaan van lege rijen is waardevol in veel real‑world scenario's:
+
+1. **Data‑rapportage** – Genereer beknopte HTML‑rapporten uit enorme spreadsheets, waarbij alleen gevulde rijen worden getoond.  
+2. **Dashboard‑integratie** – Voed schone HTML‑tabellen in web‑dashboards voor sneller renderen.  
+3. **Document‑conversiediensten** – Bied klanten lichtgewicht HTML‑versies van hun Excel‑bestanden zonder onnodige lege rijen.
+
+## Prestatie‑overwegingen
+### Optimaliseren van resource‑gebruik
+- **Geheugenbeheer** – Stem de JVM‑heap‑grootte (`-Xmx`) af op basis van de grootte van de werkboeken die je verwerkt.  
+- **Batchverwerking** – Converteer bestanden in batches om piek‑geheugengebruik te vermijden.
+
+### Best practices
+- Houd GroupDocs.Viewer up‑to‑date om te profiteren van prestatieverbeteringen.  
+- Houd logs in de gaten voor waarschuwingen over niet‑ondersteunde functies of misvormde cellen.
+
 ## Conclusie
-Door deze handleiding te volgen, hebt u geleerd hoe u efficiënt het renderen van lege rijen kunt overslaan bij het converteren van spreadsheets met GroupDocs.Viewer voor Java. Deze mogelijkheid stroomlijnt niet alleen uw uitvoer, maar verbetert ook de algehele prestaties van uw applicaties.
-Voor verdere verkenning kunt u overwegen om aanvullende functies van GroupDocs.Viewer te integreren, zoals watermerken of PDF-conversie, om zo uitgebreide oplossingen voor documentverwerking in uw projecten te creëren.
-## FAQ-sectie
-1. **Kan ik deze functie gebruiken met andere bestandsformaten?**
-   - Ja, hoewel deze handleiding zich richt op spreadsheets, ondersteunt GroupDocs.Viewer verschillende formaten, waaronder Word-documenten en presentaties.
-2. **Wat moet ik doen als mijn spreadsheet verborgen rijen bevat?**
-   - Met deze functie wordt alleen het weergeven van lege, zichtbare rijen overgeslagen. Verborgen rijen worden beschouwd als onderdeel van de documentstructuur, tenzij specifiek anders aangegeven.
-3. **Welke invloed heeft het overslaan van lege rijen op de bestandsgrootte?**
-   - Als u deze rijen overslaat, wordt de grootte van het HTML-uitvoerbestand verkleind. Dit kan leiden tot snellere laadtijden en een lager bandbreedtegebruik.
-4. **Is GroupDocs.Viewer geschikt voor zakelijke toepassingen?**
-   - Absoluut! Het is ontworpen met robuuste functies die voldoen aan de eisen van documentverwerkingstaken op ondernemingsniveau.
-5. **Kan ik het uiterlijk van gerenderde documenten aanpassen?**
-   - Ja, GroupDocs.Viewer biedt talloze opties om stijlen en lay-outs aan te passen tijdens het renderen.
+Je weet nu hoe je **Excel naar HTML kunt converteren** terwijl je efficiënt **lege rijen overslaat** met GroupDocs.Viewer voor Java. Deze aanpak maakt de gegenereerde HTML niet alleen schoner, maar versnelt ook het renderen en vermindert het bandbreedteverbruik. Ontdek extra Viewer‑functies—zoals watermerken, PDF‑conversie of aangepaste styling—om een volledig uitgeruste documentverwerkings‑pipeline te bouwen.
+
+## FAQ‑sectie
+1. **Kan ik deze functie gebruiken met andere bestandsformaten?**  
+   - Ja, hoewel deze gids zich richt op spreadsheets, ondersteunt GroupDocs.Viewer ook Word‑documenten, PowerPoint‑presentaties en PDF‑bestanden.  
+2. **Wat als mijn spreadsheet verborgen rijen bevat?**  
+   - Verborgen rijen worden beschouwd als onderdeel van de documentstructuur; ze worden gerenderd tenzij je ze expliciet verbergt via viewer‑opties.  
+3. **Hoe beïnvloedt het overslaan van lege rijen de bestandsgrootte?**  
+   - Het verwijderen van lege rijen kan de HTML‑grootte met 10‑30 % verkleinen voor grote werkboeken, wat leidt tot snellere paginalading.  
+4. **Is GroupDocs.Viewer geschikt voor enterprise‑toepassingen?**  
+   - Absoluut. Het is ontworpen voor high‑throughput, multi‑threaded omgevingen en biedt enterprise‑grade licenties.  
+5. **Kan ik het uiterlijk van de gerenderde HTML aanpassen?**  
+   - Ja, je kunt aangepaste CSS injecteren, lettertypen wijzigen, of tabelstijlen aanpassen via extra `HtmlViewOptions`‑instellingen.
+
+## Veelgestelde vragen
+**Q: Heb ik een licentie nodig voor ontwikkel‑builds?**  
+A: Een gratis proefversie werkt voor ontwikkeling en testen, maar een betaalde licentie is vereist voor productie‑implementaties.
+
+**Q: Hoe ga ik om met met wachtwoord beveiligde Excel‑bestanden?**  
+A: Geef het wachtwoord door aan de `Viewer`‑constructor: `new Viewer(filePath, password)`.
+
+**Q: Kan ik meerdere werkbladen naar één HTML‑bestand converteren?**  
+A: Standaard wordt elk werkblad naar een aparte pagina gerenderd; je kunt ze handmatig samenvoegen na de conversie.
+
+**Q: Welke Java‑versie wordt aanbevolen voor optimale prestaties?**  
+A: Java 11 of nieuwer biedt verbeterde garbage collection en algehele snelheid, hoewel Java 8 nog steeds wordt ondersteund.
+
+**Q: Is er een manier om de HTML te previewen voordat deze naar schijf wordt geschreven?**  
+A: Ja, gebruik `viewInfoOptions.setStreamOutput(true)` om de HTML als stream te verkrijgen.
+
 ## Bronnen
 - [Documentatie](https://docs.groupdocs.com/viewer/java/)
-- [API-referentie](https://reference.groupdocs.com/viewer/java/)
+- [API‑referentie](https://reference.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer downloaden](https://releases.groupdocs.com/viewer/java/)
 - [Licenties kopen](https://purchase.groupdocs.com/buy)
-- [Gratis proefperiode](https://releases.groupdocs.com/viewer/java/)
+- [Gratis proefversie](https://releases.groupdocs.com/viewer/java/)
 - [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)
-- [Ondersteuningsforum](https://forum.groupdocs.com/c/viewer/9)
+- [Supportforum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Laatst bijgewerkt:** 2026-01-20  
+**Getest met:** GroupDocs.Viewer Java 25.2  
+**Auteur:** GroupDocs

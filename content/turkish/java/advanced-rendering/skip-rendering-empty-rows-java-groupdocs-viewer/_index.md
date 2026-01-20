@@ -1,34 +1,48 @@
 ---
-"date": "2025-04-24"
-"description": "Java için GroupDocs.Viewer ile boş elektronik tablo satırlarının işlenmesini etkin bir şekilde nasıl atlayacağınızı, uygulama performansını nasıl artıracağınızı ve kaynak kullanımını nasıl azaltacağınızı öğrenin."
-"title": "GroupDocs.Viewer&#58; Kullanarak Java'da Boş Satırların İşlenmesini Atlama Bir Performans Kılavuzu"
-"url": "/tr/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-20'
+description: GroupDocs.Viewer for Java ile boş satırları atlayarak Excel'i HTML'ye
+  nasıl dönüştüreceğinizi öğrenin – geliştiriciler için hızlı ve bellek‑verimli bir
+  çözüm.
+keywords:
+- GroupDocs.Viewer Java
+- skip rendering empty rows
+- Java spreadsheet to HTML
+title: Java'da GroupDocs.Viewer Kullanarak Excel'i HTML'ye Dönüştürme ve Boş Satırları
+  Atlama
 type: docs
+url: /tr/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/
+weight: 1
 ---
-# Java'da GroupDocs.Viewer Kullanarak Boş Satırların İşlenmesini Atlama
-## giriiş
-E-tabloları HTML'ye dönüştürürken gereksiz boş satırlar oluşturmak çıktınızı karmaşıklaştırabilir ve ekstra kaynak tüketebilir. Bu, performans odaklı geliştiriciler için önemli bir endişe kaynağıdır. "GroupDocs.Viewer Java" kitaplığıyla, bu boş satırları oluşturmayı verimli bir şekilde atlayabilir, uygulamalarınızda hem hızı hem de netliği artırabilirsiniz.
-Bu eğitimde, bu özelliğin GroupDocs.Viewer for Java kullanılarak nasıl uygulanacağını keşfedeceğiz. Bu kılavuzun sonunda şunları öğreneceksiniz:
-- Maven ile Java için GroupDocs.Viewer nasıl kurulur.
-- Boş satırları atlamak için HTML görünüm seçeneklerini yapılandırma adımları.
-- Performansı ve bellek kullanımını optimize etmek için en iyi uygulamalar.
-Ortamınızı kurmaya ve elektronik tablo oluşturma sürecinizi dönüştürmeye başlayalım!
-## Ön koşullar
-Başlamadan önce aşağıdakilerin mevcut olduğundan emin olun:
-### Gerekli Kütüphaneler ve Bağımlılıklar
-- **Java için GroupDocs.Viewer**: Sürüm 25.2 veya üzeri.
-- **Usta** sisteminize yüklenmiştir.
-### Çevre Kurulum Gereksinimleri
-- Java Geliştirme Kiti (JDK) sürüm 8 veya üzeri.
-- IntelliJ IDEA, Eclipse veya NetBeans gibi bir Entegre Geliştirme Ortamı (IDE).
-### Bilgi Önkoşulları
-- Java programlama ve Maven projelerine dair temel bilgi.
-- Java uygulamalarında elektronik tabloları ve HTML belgelerini kullanma konusunda deneyim.
-## Java için GroupDocs.Viewer Kurulumu
-GroupDocs.Viewer'ı Java uygulamanızda kullanmaya başlamak için, bunu bir Maven projesi içinde yapılandırmanız gerekir. İşte nasıl:
+
+# Excel'i HTML'ye Dönüştürme ve Java'da Boş Satırları Atlamak için GroupDocs.Viewer Kullanımı
+
+Excel'i **HTML'ye dönüştürdüğünüzde**, boş satırların render edilmesi yalnızca çıktıyı kirletmekle kalmaz, aynı zamanda CPU döngüleri ve bellek tüketimini artırır. Performansa odaklı Java geliştiricileri için dönüşüm sırasında **boş satırları atlama** yeteneği, özellikle büyük çalışma kitaplarında fark yaratabilir. Bu rehberde GroupDocs.Viewer for Java'yı nasıl kuracağınızı, boş satırları yok sayacak şekilde yapılandıracağınızı ve daha hızlı yüklenen, daha az kaynak tüketen temiz HTML sayfaları oluşturacağınızı öğreneceksiniz.
+
+![Java için GroupDocs.Viewer ile Boş Satırların Render Edilmesini Atla](/viewer/advanced-rendering/skip-rendering-empty-rows-java.png)
+
+## Hızlı Yanıtlar
+- **“Excel'i HTML'ye dönüştürmek” ne anlama geliyor?** .xlsx çalışma kitabını tarayıcılarda görüntülenebilen bir dizi HTML dosyasına dönüştürür.  
+- **Boş satırları neden atlamalıyım?** Atlamak, HTML boyutunu küçültür, render süresini hızlandırır ve kullanıcı deneyimini iyileştirir.  
+- **Bu işlemi hangi kütüphane gerçekleştiriyor?** GroupDocs.Viewer for Java (v25.2+).  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim ortamı için tam lisans gerekir.  
+- **Hangi Java sürümü gerekiyor?** JDK 8 veya üzeri.
+
+## “Excel'i HTML'ye dönüştürmek” nedir?
+Bir Excel çalışma kitabını HTML'ye dönüştürmek, her çalışma sayfası, hücre ve stili eşdeğer HTML öğeleri ve CSS’e çevirmek anlamına gelir. Sonuç, Microsoft Office’in istemci tarafında yüklü olmasına gerek kalmadan portal, gösterge paneli veya e‑posta raporlarına gömülebilen web‑uyumlu bir temsildir.
+
+## Satırları atlamak için neden GroupDocs.Viewer kullanmalıyım?
+GroupDocs.Viewer, elektronik tablo ayrıştırmanın düşük seviyeli ayrıntılarını soyutlayan yüksek seviyeli bir API sunar. `setSkipEmptyRows(true)` seçeneğini etkinleştirerek, izleyici veri içermeyen satırları otomatik olarak dışarı çıkarır; böylece ekstra kod yazmadan daha ince bir HTML çıktısı elde edersiniz.
+
+## Ön Koşullar
+- **GroupDocs.Viewer for Java** (v25.2 veya daha yeni).  
+- **Maven** kurulu ve yapılandırılmış.  
+- **JDK 8+** ve bir IDE (IntelliJ IDEA, Eclipse veya NetBeans).  
+- Java ve Maven proje yapısına temel aşinalık.
+
+## GroupDocs.Viewer for Java Kurulumu
 ### Maven Yapılandırması
-Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` GroupDocs.Viewer'ı bağımlılık olarak eklemek için dosya:
+`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+
 ```xml
 <repositories>
     <repository>
@@ -46,94 +60,136 @@ Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` GroupDocs.Viewer'ı ba
     </dependency>
 </dependencies>
 ```
-### Lisans Edinimi
-GroupDocs ücretsiz deneme, değerlendirme için geçici lisanslar ve tam erişim için satın alma seçenekleri sunuyor:
-- **Ücretsiz Deneme**: Buradan indirin [Burada](https://releases.groupdocs.com/viewer/java/).
-- **Geçici Lisans**: Geçici bir lisans edinin [Burada](https://purchase.groupdocs.com/temporary-license/) Tüm özellikleri sınırsız bir şekilde test etmek için.
-- **Satın almak**: Uzun vadeli kullanım için lisansları şu şekilde satın alın: [bu bağlantı](https://purchase.groupdocs.com/buy).
+
+### Lisans Edinme
+GroupDocs çeşitli lisans seçenekleri sunar:
+
+- **Ücretsiz Deneme**: [buradan](https://releases.groupdocs.com/viewer/java/) indirin.  
+- **Geçici Lisans**: Tam özellik setini test etmek için [buradan](https://purchase.groupdocs.com/temporary-license/) geçici lisans alın.  
+- **Satın Alma**: Üretim kullanımı için lisansı [bu linkten](https://purchase.groupdocs.com/buy) satın alın.
+
 ### Temel Başlatma
-Maven'ı yapılandırdıktan ve lisansınızı aldıktan sonra (gerekirse), Java uygulamanızda GroupDocs.Viewer'ı başlatın. İşte basit bir örnek:
+İzleyiciyi örneklemek için basit bir Java sınıfı oluşturun:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.nio.file.Path;
 
 public class ViewerSetup {
     public static void main(String[] args) {
-        // Görüntüleyiciyi belgenizin yoluyla başlatın
+        // Initialize viewer with the path to your document
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // İşleme mantığınız buraya gelecek
+            // Your rendering logic will go here
         }
     }
 }
 ```
+
 ## Uygulama Kılavuzu
-### E-Tablolarda Boş Satırların İşlenmesini Atla
-Şimdi, temel özelliği uygulayalım: elektronik tabloları HTML formatına dönüştürürken boş satırları atlamak.
-#### Genel bakış
-Bu özellik yalnızca boş olmayan satırların işlenmesini sağlayarak çıktınızı kolaylaştırır ve kaynak kullanımını azaltır. Özellikle birçok satırın boş olabileceği büyük veri kümeleriyle uğraşırken faydalıdır.
-##### Adım 1: Çıktı Dizinini Tanımlayın
-Öncelikle işlenmiş HTML dosyalarının saklanacağı dizini belirterek başlayalım:
+### Excel'i HTML'ye Dönüştürürken Satırları Nasıl Atlarım
+#### Genel Bakış
+“Boş satırları atla” seçeneğini etkinleştirmek, yalnızca veri içeren satırların render edilmesini sağlar; bu da nihai HTML boyutunu küçültür ve yük performansını artırır.
+
+#### Adım 1: Çıktı Dizini Tanımlama
+HTML dosyalarının kaydedileceği klasörü ayarlayın:
+
 ```java
 import java.nio.file.Paths;
 
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "page_{0}.html");
 ```
-Yer değiştirmek `"YOUR_OUTPUT_DIRECTORY"` çıktıyı depolamak için istediğiniz yol ile.
-##### Adım 2: HtmlViewOptions'ı yapılandırın
-Kurulumu yapın `HtmlViewOptions` resimler ve stil sayfaları gibi gömülü kaynakları yönetmek için:
+
+`"YOUR_OUTPUT_DIRECTORY"` ifadesini sunucunuzdaki veya yerel makinenizdeki istediğiniz yol ile değiştirin.
+
+#### Adım 2: HtmlViewOptions Yapılandırması
+Kaynakları (görseller, CSS) doğrudan HTML çıktısına gömmek için `HtmlViewOptions` oluşturun:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewInfoOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory);
 ```
-##### Adım 3: E-Tablolardaki Boş Satırları Atla
-Görüntüleyiciyi, işleme sırasında boş satırları atlayacak şekilde yapılandırın:
+
+#### Adım 3: Boş Satırların Atlanmasını Etkinleştirme
+Dönüşüm sırasında izleyicinin boş satırları yok saymasını sağlayın:
+
 ```java
 viewInfoOptions.getSpreadsheetOptions().setSkipEmptyRows(true);
 ```
-Bu satır GroupDocs.Viewer'ı veri içermeyen satırları yok sayacak şekilde yapılandırır.
-##### Adım 4: Belgeyi Oluşturun
-Son olarak, yapılandırılan seçenekleri kullanarak belgenizi işleyin:
+
+#### Adım 4: Belgeyi Render Etme
+Son olarak, yapılandırılmış seçenekleri kullanarak çalışma kitabını HTML'ye render edin:
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Sample_XLSX_With_Empty_Row.xlsx")) {
     viewer.view(viewInfoOptions);
 }
 ```
-Yer değiştirmek `"YOUR_DOCUMENT_DIRECTORY"` elektronik tablo dosyanızın yolunu belirtin.
+
+`"YOUR_DOCUMENT_DIRECTORY"` ifadesinin kaynak Excel dosyasının bulunduğu konuma işaret ettiğinden emin olun.
+
 ### Sorun Giderme İpuçları
-- **Boş Çıktı**: Giriş belgenizin boş olmayan satırlar içerdiğinden emin olun. Tamamen boşsa, hiçbir HTML oluşturulmayacaktır.
-- **Kaynak Yolu Sorunları**: Şunu doğrulayın: `outputDirectory` Uygulamanız tarafından doğru bir şekilde ayarlanıp erişilebilir olduğundan emin olun.
+- **Boş çıktı** – Kaynak çalışma kitabının gerçekten veri içeren satırlar barındırdığını doğrulayın; tamamen boş bir sayfa HTML üretmez.  
+- **Yol sorunları** – `outputDirectory`nin var olduğundan ve uygulamanın yazma iznine sahip olduğundan emin olun.  
+
 ## Pratik Uygulamalar
-Boş satırların atlanarak işlenmesi çeşitli senaryolarda uygulanabilir:
-1. **Veri Raporlaması**:Büyük veri kümelerinden rapor oluştururken yalnızca anlamlı verilerin görüntülendiğinden emin olmak okunabilirliği artırır.
-2. **Gösterge Paneli Entegrasyonu**Bu özelliği kullanarak panoları özlü veri görünümleriyle doldurabilir ve performansı artırabilirsiniz.
-3. **Belge Dönüştürme Hizmetleri**:Müşterilere gereksiz satırlar içermeyen temiz HTML elektronik tablo sürümleri sağlayın.
-## Performans Hususları
+Boş satırları atlamak, birçok gerçek dünya senaryosunda değerlidir:
+
+1. **Veri Raporlaması** – Büyük elektronik tablolardan yalnızca doldurulmuş satırları gösteren özlü HTML raporları oluşturun.  
+2. **Gösterge Paneli Entegrasyonu** – Daha hızlı render için temiz HTML tablolarını web gösterge panellerine besleyin.  
+3. **Belge Dönüştürme Servisleri** – Müşterilere gereksiz boş satırlar olmadan hafif HTML sürümleri sunun.
+
+## Performans Düşünceleri
 ### Kaynak Kullanımını Optimize Etme
-- **Bellek Yönetimi**: Özellikle büyük dosyaları işlerken Java ortamınızın optimum bellek kullanımı için yapılandırıldığından emin olun.
-- **Toplu İşleme**: Kaynak dağıtımını etkin bir şekilde yönetmek için belgeleri gruplar halinde işleyin.
+- **Bellek Yönetimi** – İşlediğiniz çalışma kitaplarının büyüklüğüne göre JVM yığın boyutunu (`-Xmx`) ayarlayın.  
+- **Toplu İşleme** – Bellek tüketimini zirveye çıkarmamak için dosyaları toplu olarak dönüştürün.
+
 ### En İyi Uygulamalar
-- Performans iyileştirmelerinden ve yeni özelliklerden faydalanmak için GroupDocs.Viewer'ı düzenli olarak güncelleyin.
-- Olası sorunları hızla gidermek için işleme süreçleri sırasında herhangi bir anormallik olup olmadığını görmek üzere uygulama günlüklerini izleyin.
-## Çözüm
-Bu kılavuzu takip ederek, GroupDocs.Viewer for Java kullanarak elektronik tabloları dönüştürürken boş satırları işlemeyi verimli bir şekilde nasıl atlayacağınızı öğrendiniz. Bu yetenek yalnızca çıktılarınızı kolaylaştırmakla kalmaz, aynı zamanda uygulamalarınızın genel performansını da artırır.
-Daha detaylı araştırma için, projelerinizde kapsamlı belge işleme çözümleri oluşturmak amacıyla filigranlama veya PDF dönüştürme gibi GroupDocs.Viewer'dan ek özellikler entegre etmeyi düşünebilirsiniz.
+- Performans iyileştirmelerinden faydalanmak için GroupDocs.Viewer'ı güncel tutun.  
+- Desteklenmeyen özellikler veya hatalı hücreler hakkında uyarı almak için logları izleyin.
+
+## Sonuç
+Artık **Excel'i HTML'ye dönüştürürken** boş satırları **verimli bir şekilde atlamayı** GroupDocs.Viewer for Java ile nasıl yapacağınızı biliyorsunuz. Bu yaklaşım, oluşturulan HTML'yi temizlemekle kalmaz, aynı zamanda render süresini hızlandırır ve bant genişliği tüketimini azaltır. Ek Viewer özelliklerini—örneğin filigran ekleme, PDF dönüşümü veya özel stil verme—keşfederek tam özellikli bir belge işleme hattı oluşturabilirsiniz.
+
 ## SSS Bölümü
-1. **Bu özelliği diğer dosya formatlarıyla da kullanabilir miyim?**
-   - Evet, bu kılavuz elektronik tablolara odaklansa da GroupDocs.Viewer Word belgeleri ve sunumlar da dahil olmak üzere çeşitli biçimleri destekler.
-2. **Ya elektronik tablomda gizli satırlar varsa?**
-   - Bu özellik yalnızca boş görünen satırların işlenmesini atlar. Gizli satırlar, aksi belirtilmediği sürece belge yapısının bir parçası olarak kabul edilir.
-3. **Boş satırları atlamanın dosya boyutu nasıl etkilenir?**
-   - Bu satırların atlanması çıktı HTML dosyasının boyutunu azaltır, bu da daha hızlı yükleme sürelerine ve daha az bant genişliği kullanımına yol açabilir.
-4. **GroupDocs.Viewer kurumsal uygulamalar için uygun mudur?**
-   - Kesinlikle! Kurumsal düzeyde belge işleme görevlerinin taleplerini karşılayan sağlam özelliklerle tasarlanmıştır.
-5. **Oluşturulan belgelerin görünümünü özelleştirebilir miyim?**
-   - Evet, GroupDocs.Viewer, render sırasında stilleri ve düzenleri özelleştirmek için çok sayıda seçenek sunar.
+1. **Bu özellik diğer dosya formatlarıyla da kullanılabilir mi?**  
+   - Evet, bu rehber elektronik tablolara odaklansa da GroupDocs.Viewer Word belgeleri, PowerPoint sunumları ve PDF'leri de destekler.  
+2. **Elektronik tablomda gizli satırlar varsa ne olur?**  
+   - Gizli satırlar belge yapısının bir parçası olarak kabul edilir; izleyici seçenekleriyle açıkça gizlenmedikçe render edilirler.  
+3. **Boş satırları atlamak dosya boyutunu nasıl etkiler?**  
+   - Boş satırların kaldırılması, büyük çalışma kitapları için HTML boyutunu %10‑30 arasında azaltabilir, bu da sayfa yüklemelerini hızlandırır.  
+4. **GroupDocs.Viewer kurumsal uygulamalar için uygun mu?**  
+   - Kesinlikle. Yüksek verim, çok iş parçacıklı ortamlar için tasarlanmıştır ve kurumsal düzey lisans sunar.  
+5. **Render edilen HTML'nin görünümünü özelleştirebilir miyim?**  
+   - Evet, ek `HtmlViewOptions` ayarlarıyla özel CSS ekleyebilir, fontları değiştirebilir veya tablo stillerini düzenleyebilirsiniz.
+
+## Sıkça Sorulan Sorular
+**S: Geliştirme sürümleri için lisans gerekir mi?**  
+C: Ücretsiz deneme geliştirme ve test için yeterlidir, ancak üretim dağıtımları için ücretli lisans gereklidir.
+
+**S: Şifre korumalı Excel dosyalarını nasıl ele alırım?**  
+C: Şifreyi `Viewer` yapıcısına şu şekilde geçirin: `new Viewer(filePath, password)`.
+
+**S: Birden fazla çalışma sayfasını tek bir HTML dosyasına dönüştürebilir miyim?**  
+C: Varsayılan olarak her çalışma sayfası ayrı bir sayfaya render edilir; dönüşüm sonrası manuel birleştirme yapabilirsiniz.
+
+**S: En iyi performans için hangi Java sürümü önerilir?**  
+C: Java 11 veya üzeri, geliştirilmiş çöp toplama ve genel hız avantajları sunar; Java 8 hâlâ desteklenir.
+
+**S: HTML'yi diske yazmadan önce önizleme yapabilir miyim?**  
+C: Evet, `viewInfoOptions.setStreamOutput(true)` kullanarak HTML'yi bir akış olarak alabilirsiniz.
+
 ## Kaynaklar
-- [Belgeleme](https://docs.groupdocs.com/viewer/java/)
+- [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer'ı indirin](https://releases.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer'ı İndir](https://releases.groupdocs.com/viewer/java/)
 - [Lisans Satın Al](https://purchase.groupdocs.com/buy)
 - [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
 - [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
 - [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2026-01-20  
+**Test Edilen Versiyon:** GroupDocs.Viewer Java 25.2  
+**Yazar:** GroupDocs

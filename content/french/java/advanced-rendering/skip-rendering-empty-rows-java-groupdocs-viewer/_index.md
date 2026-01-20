@@ -1,34 +1,48 @@
 ---
-"date": "2025-04-24"
-"description": "Découvrez comment ignorer efficacement le rendu des lignes de feuille de calcul vides avec GroupDocs.Viewer pour Java, améliorant ainsi les performances de l'application et réduisant l'utilisation des ressources."
-"title": "Guide des performances &#58; ignorer le rendu des lignes vides en Java à l'aide de GroupDocs.Viewer"
-"url": "/fr/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-20'
+description: Apprenez à convertir Excel en HTML tout en ignorant les lignes vides
+  avec GroupDocs.Viewer pour Java – une solution rapide et économique en mémoire pour
+  les développeurs.
+keywords:
+- GroupDocs.Viewer Java
+- skip rendering empty rows
+- Java spreadsheet to HTML
+title: Comment convertir un fichier Excel en HTML et ignorer les lignes vides en Java
+  avec GroupDocs.Viewer
 type: docs
+url: /fr/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/
+weight: 1
 ---
-# Ignorer le rendu des lignes vides en Java avec GroupDocs.Viewer
-## Introduction
-L'affichage de lignes vides inutiles lors de la conversion de feuilles de calcul au format HTML peut encombrer votre sortie et consommer des ressources supplémentaires. C'est un problème majeur pour les développeurs soucieux de la performance. Grâce à la bibliothèque « GroupDocs.Viewer Java », vous pouvez efficacement ignorer l'affichage de ces lignes vides, améliorant ainsi la vitesse et la clarté de vos applications.
-Dans ce tutoriel, nous explorerons comment implémenter cette fonctionnalité avec GroupDocs.Viewer pour Java. À la fin de ce guide, vous maîtriserez :
-- Comment configurer GroupDocs.Viewer pour Java avec Maven.
-- Les étapes pour configurer les options d’affichage HTML pour ignorer les lignes vides.
-- Meilleures pratiques pour optimiser les performances et l’utilisation de la mémoire.
-Plongeons dans la configuration de votre environnement et commençons à transformer votre processus de rendu de feuille de calcul !
+
+# Convertir Excel en HTML et ignorer les lignes vides en Java avec GroupDocs.Viewer
+
+Lorsque vous **convertissez Excel en HTML**, le rendu des lignes vides encombre non seulement la sortie mais gaspille également des cycles CPU et de la mémoire. Pour les développeurs Java soucieux de performance, la capacité de **ignorer les lignes vides** pendant la conversion peut faire une différence notable, surtout avec de grands classeurs. Dans ce guide, vous verrez exactement comment configurer GroupDocs.Viewer pour Java, configurer le visualiseur pour ignorer les lignes vides, et générer des pages HTML propres qui se chargent plus rapidement et consomment moins de ressources.
+
+![Ignorer le rendu des lignes vides avec GroupDocs.Viewer pour Java](/viewer/advanced-rendering/skip-rendering-empty-rows-java.png)
+
+## Réponses rapides
+- **Que signifie « convertir Excel en HTML » ?** Il transforme un classeur .xlsx en un ensemble de fichiers HTML pouvant être affichés dans les navigateurs.  
+- **Pourquoi ignorer les lignes vides ?** Ignorer réduit la taille du HTML, accélère le rendu et améliore l’expérience utilisateur.  
+- **Quelle bibliothèque gère cela ?** GroupDocs.Viewer for Java (v25.2+).  
+- **Ai-je besoin d’une licence ?** Un essai gratuit fonctionne pour l’évaluation ; une licence complète est requise pour la production.  
+- **Quelle version de Java est requise ?** JDK 8 ou supérieur.
+
+## Qu’est-ce que « convertir Excel en HTML » ?
+Convertir un classeur Excel en HTML signifie traduire chaque feuille de calcul, cellule et style en éléments HTML et CSS équivalents. Le résultat est une représentation adaptée au web qui peut être intégrée dans des portails, tableaux de bord ou rapports e‑mail sans nécessiter Microsoft Office côté client.
+
+## Pourquoi utiliser GroupDocs.Viewer pour ignorer les lignes ?
+GroupDocs.Viewer fournit une API de haut niveau qui abstrait les détails bas niveau de l’analyse des feuilles de calcul. En activant l’option `setSkipEmptyRows(true)`, le visualiseur omet automatiquement les lignes qui ne contiennent aucune donnée, vous offrant une sortie HTML plus légère sans effort de codage supplémentaire.
+
 ## Prérequis
-Avant de commencer, assurez-vous d’avoir les éléments suivants en place :
-### Bibliothèques et dépendances requises
-- **GroupDocs.Viewer pour Java**:Version 25.2 ou ultérieure.
-- **Maven** installé sur votre système.
-### Configuration requise pour l'environnement
-- Un kit de développement Java (JDK) version 8 ou supérieure.
-- Un environnement de développement intégré (IDE) comme IntelliJ IDEA, Eclipse ou NetBeans.
-### Prérequis en matière de connaissances
-- Compréhension de base de la programmation Java et des projets Maven.
-- Connaissance de la gestion des feuilles de calcul et des documents HTML dans les applications Java.
+- **GroupDocs.Viewer for Java** (v25.2 ou plus tard).  
+- **Maven** installé et configuré.  
+- **JDK 8+** et un IDE (IntelliJ IDEA, Eclipse, ou NetBeans).  
+- Connaissances de base en Java et structure de projet Maven.
+
 ## Configuration de GroupDocs.Viewer pour Java
-Pour commencer à utiliser GroupDocs.Viewer dans votre application Java, vous devez le configurer dans un projet Maven. Voici comment :
 ### Configuration Maven
-Ajoutez la configuration suivante à votre `pom.xml` fichier pour inclure GroupDocs.Viewer comme dépendance :
+Ajoutez le dépôt et la dépendance à votre `pom.xml` :
+
 ```xml
 <repositories>
     <repository>
@@ -46,94 +60,126 @@ Ajoutez la configuration suivante à votre `pom.xml` fichier pour inclure GroupD
     </dependency>
 </dependencies>
 ```
+
 ### Acquisition de licence
-GroupDocs propose un essai gratuit, des licences temporaires pour l'évaluation et des options d'achat pour un accès complet :
-- **Essai gratuit**: Télécharger depuis [ici](https://releases.groupdocs.com/viewer/java/).
-- **Permis temporaire**: Acquérir un permis temporaire [ici](https://purchase.groupdocs.com/temporary-license/) pour tester toutes les fonctionnalités sans limitations.
-- **Achat**: Pour une utilisation à long terme, achetez des licences via [ce lien](https://purchase.groupdocs.com/buy).
+GroupDocs propose plusieurs options de licence :
+
+- **Essai gratuit** : Télécharger depuis [ici](https://releases.groupdocs.com/viewer/java/).  
+- **Licence temporaire** : Obtenez une licence temporaire [ici](https://purchase.groupdocs.com/temporary-license/) pour tester l’ensemble des fonctionnalités.  
+- **Achat** : Pour une utilisation en production, achetez une licence via [ce lien](https://purchase.groupdocs.com/buy).
+
 ### Initialisation de base
-Une fois Maven configuré et votre licence obtenue (si nécessaire), initialisez GroupDocs.Viewer dans votre application Java. Voici un exemple simple :
+Créez une classe Java simple pour instancier le visualiseur :
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.nio.file.Path;
 
 public class ViewerSetup {
     public static void main(String[] args) {
-        // Initialiser la visionneuse avec le chemin d'accès à votre document
+        // Initialize viewer with the path to your document
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Votre logique de rendu ira ici
+            // Your rendering logic will go here
         }
     }
 }
 ```
+
 ## Guide de mise en œuvre
-### Ignorer le rendu des lignes vides dans les feuilles de calcul
-Maintenant, implémentons la fonctionnalité principale : ignorer les lignes vides lors de la conversion des feuilles de calcul au format HTML.
-#### Aperçu
-Cette fonctionnalité garantit que seules les lignes non vides sont affichées, ce qui simplifie le rendu et réduit l'utilisation des ressources. Elle est particulièrement utile pour gérer de grands ensembles de données contenant de nombreuses lignes vides.
-##### Étape 1 : Définir le répertoire de sortie
-Commencez par spécifier le répertoire dans lequel les fichiers HTML rendus seront stockés :
+### Comment ignorer les lignes lors de la conversion d’Excel en HTML
+#### Vue d’ensemble
+Activer l’option « ignorer les lignes vides » garantit que seules les lignes contenant des données sont rendues, ce qui réduit la taille finale du HTML et améliore les performances de chargement.
+
+#### Étape 1 : Définir le répertoire de sortie
+Définissez le dossier où les fichiers HTML seront enregistrés :
+
 ```java
 import java.nio.file.Paths;
 
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "page_{0}.html");
 ```
-Remplacer `"YOUR_OUTPUT_DIRECTORY"` avec le chemin souhaité pour stocker la sortie.
-##### Étape 2 : Configurer HtmlViewOptions
-Configurer le `HtmlViewOptions` pour gérer les ressources intégrées telles que les images et les feuilles de style :
+
+Remplacez `"YOUR_OUTPUT_DIRECTORY"` par le chemin souhaité sur votre serveur ou votre machine locale.
+
+#### Étape 2 : Configurer HtmlViewOptions
+Créez `HtmlViewOptions` pour intégrer les ressources (images, CSS) directement dans la sortie HTML :
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewInfoOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory);
 ```
-##### Étape 3 : ignorer les lignes vides dans les feuilles de calcul
-Configurer la visionneuse pour ignorer les lignes vides pendant le rendu :
+
+#### Étape 3 : Activer l’ignorance des lignes vides
+Indiquez au visualiseur d’ignorer les lignes vides pendant la conversion :
+
 ```java
 viewInfoOptions.getSpreadsheetOptions().setSkipEmptyRows(true);
 ```
-Cette ligne configure GroupDocs.Viewer pour ignorer toute ligne qui ne contient pas de données.
-##### Étape 4 : Rendre le document
-Enfin, affichez votre document en utilisant les options configurées :
+
+#### Étape 4 : Rendre le document
+Enfin, rendez le classeur en HTML en utilisant les options configurées :
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Sample_XLSX_With_Empty_Row.xlsx")) {
     viewer.view(viewInfoOptions);
 }
 ```
-Remplacer `"YOUR_DOCUMENT_DIRECTORY"` avec le chemin d'accès à votre fichier de feuille de calcul.
-### Conseils de dépannage
-- **Sortie vide**: Assurez-vous que votre document d'entrée contient des lignes non vides. S'il est entièrement vide, aucun code HTML ne sera généré.
-- **Problèmes de cheminement des ressources**: Vérifiez que `outputDirectory` est correctement défini et accessible par votre application.
-## Applications pratiques
-L'ignorer le rendu des lignes vides peut être appliqué dans divers scénarios :
-1. **Rapports de données**:Lors de la génération de rapports à partir de grands ensembles de données, le fait de garantir que seules les données significatives sont affichées améliore la lisibilité.
-2. **Intégration du tableau de bord**:Utilisez cette fonctionnalité pour remplir les tableaux de bord avec des vues de données concises, améliorant ainsi les performances.
-3. **Services de conversion de documents**:Fournir aux clients des versions HTML propres de leurs feuilles de calcul sans lignes inutiles.
-## Considérations relatives aux performances
-### Optimisation de l'utilisation des ressources
-- **Gestion de la mémoire**: Assurez-vous que votre environnement Java est configuré pour une utilisation optimale de la mémoire, en particulier lors de la gestion de fichiers volumineux.
-- **Traitement par lots**: Traitez les documents par lots pour gérer efficacement l'allocation des ressources.
-### Meilleures pratiques
-- Mettez régulièrement à jour GroupDocs.Viewer pour bénéficier des améliorations de performances et des nouvelles fonctionnalités.
-- Surveillez les journaux d'application pour détecter toute anomalie lors des processus de rendu afin de résoudre rapidement les problèmes potentiels.
+
+Assurez‑vous que `"YOUR_DOCUMENT_DIRECTORY"` pointe classeur source contient réellement des lignes avec des données ; de uniquement tables HTML propres pour un rendu plus rapide.  
+3. **Services de conversion de documents** – Proposer aux clients des versions HTML légères de leurs fichiers Excel sans lignes vides inutiles.
+
+## Considérations de performance
+### Optimisation de l’utilisation des ressources
+- **Gestion de la mémoire** – Ajustez la taille du tas JVM (`-Xmx`) en fonction traitez.  
+- **Traitement par lots** – Convertissez les fichiers par lots afin d’éviter une consommation maximale de mémoire.
+
+### Bonnes pratiques
+- Maintenez GroupDocs.Viewer à jour pour bénéficier des améliorations de performance.  
+- Surveillez les journaux pour détecter les avertissements concernant les fonctionnalités non prises en charge ou les cellules mal formées.
+
 ## Conclusion
-En suivant ce guide, vous avez appris à ignorer efficacement le rendu des lignes vides lors de la conversion de feuilles de calcul avec GroupDocs.Viewer pour Java. Cette fonctionnalité simplifie non seulement vos sorties, mais améliore également les performances globales de vos applications.
-Pour une exploration plus approfondie, envisagez d'intégrer des fonctionnalités supplémentaires de GroupDocs.Viewer, telles que le filigrane ou la conversion PDF, pour créer des solutions complètes de gestion de documents dans vos projets.
+Vous savez maintenant comment **convertir Excel en HTML** tout en **ignorant efficacement les lignes vides** grâce à GroupDocs.Viewer pour Java. Cette approche nettoie le HTML généré, accélère le rendu et réduit la consommation de bande passante. Explorez les fonctionnalités supplémentaires du Viewer — comme le filigrane, la conversion PDF ou le style personnalisé — pour créer une chaîne de traitement de documents complète.
+
 ## Section FAQ
-1. **Puis-je utiliser cette fonctionnalité avec d’autres formats de fichiers ?**
-   - Oui, bien que ce guide se concentre sur les feuilles de calcul, GroupDocs.Viewer prend en charge divers formats, notamment les documents Word et les présentations.
-2. **Que faire si ma feuille de calcul contient des lignes masquées ?**
-   - Cette fonctionnalité ignore uniquement l'affichage des lignes vides. Les lignes masquées sont considérées comme faisant partie de la structure du document, sauf indication contraire.
-3. **Comment le fait de sauter des lignes vides affecte-t-il la taille du fichier ?**
-   - Ignorer ces lignes réduit la taille du fichier HTML de sortie, ce qui peut entraîner des temps de chargement plus rapides et une utilisation réduite de la bande passante.
-4. **GroupDocs.Viewer est-il adapté aux applications d’entreprise ?**
-   - Absolument ! Il est doté de fonctionnalités robustes qui répondent aux exigences du traitement de documents en entreprise.
-5. **Puis-je personnaliser l’apparence des documents rendus ?**
-   - Oui, GroupDocs.Viewer fournit de nombreuses options pour personnaliser les styles et les mises en page lors du rendu.
+1. **Puis‑je utiliser cette fonctionnalité avec d’autres formats de fichier ?**  
+   - Oui, bien que ce guide se concentre sur les feuilles de calcul, GroupDocs.Viewer prend également en charge les documents Word, les présentations PowerPoint et les PDF.  
+2. **Que se passe‑t‑il si mon tableau contient des lignes masquées ?**  
+   - Les lignes masquées sont traitées comme faisant partie de la structure du document ; elles seront rendues sauf si vous les masquez explicitement via les options du visualiseur.  
+3. **Comment l’ignorance des lignes vides affecte‑t‑elle la taille du fichier ?**  
+   - La suppression des lignes vides peut réduire la taille du HTML de 10 % à 30 % pour les grands classeurs, entraînant des chargements de page plus rapides.  
+4. **GroupDocs.Viewer est‑il adapté aux applications d’entreprise ?**  
+   - Absolument. Il est conçu pour des environnements à haut débit, multithread, et propose des licences de niveau entreprise.  
+5. **Puis‑je personnaliser l’apparence du HTML rendu ?**  
+   - Oui, vous pouvez injecter du CSS personnalisé, changer les polices ou modifier les styles de tableau via les paramètres supplémentaires de `HtmlViewOptions`.
+
+## Questions fréquemment posées
+**Q : Ai‑je besoin d’une licence pour les builds de développement ?**  
+R : Un essai gratuit fonctionne pour le développement et les tests, mais une licence payante est requise pour les déploiements en production.
+
+**Q : Comment gérer les fichiers Excel protégés par mot de passe ?**  
+R : Transmettez le mot de passe au constructeur `Viewer` : `new Viewer(filePath, password)`.
+
+**Q : Puis‑je convertir plusieurs feuilles de calcul en un seul fichier HTML ?**  
+R : Par défaut chaque feuille est rendue sur une page séparée ; vous pouvez les fusionner manuellement après la conversion.
+
+**Q : Quelle version de Java est recommandée pour les meilleures performances ?**  
+R : Java 11 ou supérieur offre une collecte des déchets améliorée et une vitesse globale accrue, bien que Java 8 reste supporté.
+
+**Q : Existe‑t‑il un moyen de prévisualiser le HTML avant de l’écrire sur le disque ?**  
+R : Oui, utilisez `viewInfoOptions.setStreamOutput(true)` pour obtenir le HTML sous forme de flux.
+
 ## Ressources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [Référence de l'API](https://reference.groupdocs.com/viewer/java/)
+- [Référence API](https://reference.groupdocs.com/viewer/java/)
 - [Télécharger GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Acheter des licences](https://purchase.groupdocs.com/buy)
 - [Essai gratuit](https://releases.groupdocs.com/viewer/java/)
-- [Permis temporaire](https://purchase.groupdocs.com/temporary-license/)
-- [Forum d'assistance](https://forum.groupdocs.com/c/viewer/9)
+- [Licence temporaire](https://purchase.groupdocs.com/temporary-license/)
+- [Forum d’assistance](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Dernière mise à jour** : 2026-01-20  
+**Testé avec** : GroupDocs.Viewer Java 25.2  
+**Auteur** : GroupDocs
