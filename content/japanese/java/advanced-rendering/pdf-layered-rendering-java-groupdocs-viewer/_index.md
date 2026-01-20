@@ -6,7 +6,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: Javaドキュメントビューア：GroupDocsによるPDFレイヤー描画
+title: Javaドキュメントビューア - GroupDocsによるPDFレイヤー描画
 type: docs
 url: /ja/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

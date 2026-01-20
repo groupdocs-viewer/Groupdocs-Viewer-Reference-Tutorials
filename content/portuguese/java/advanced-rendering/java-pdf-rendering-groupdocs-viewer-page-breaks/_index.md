@@ -6,7 +6,7 @@ keywords:
 - Java PDF Rendering with GroupDocs.Viewer
 - rendering spreadsheets as PDFs
 - GroupDocs.Viewer for Java setup
-title: 'xlsx para pdf java: Quebras de página com GroupDocs.Viewer'
+title: 'xlsx para pdf java - Quebras de página com GroupDocs.Viewer'
 type: docs
 url: /pt/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1

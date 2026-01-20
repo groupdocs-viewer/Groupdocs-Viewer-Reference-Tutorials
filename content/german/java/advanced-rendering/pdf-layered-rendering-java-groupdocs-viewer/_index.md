@@ -7,7 +7,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: 'Java-Dokumentenbetrachter: Schichtweises PDF-Rendering mit GroupDocs'
+title: 'Java-Dokumentenbetrachter - Schichtweises PDF-Rendering mit GroupDocs'
 type: docs
 url: /de/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

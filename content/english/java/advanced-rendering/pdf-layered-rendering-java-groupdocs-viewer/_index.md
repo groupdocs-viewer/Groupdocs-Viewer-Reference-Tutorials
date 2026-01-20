@@ -1,5 +1,5 @@
 ---
-title: "Java Document Viewer: PDF Layered Rendering with GroupDocs"
+title: "Java Document Viewer - PDF Layered Rendering with GroupDocs"
 description: "Learn how to use the java document viewer to convert pdf to html with layered rendering using GroupDocs.Viewer for Java, preserving visual hierarchy and Z‑Index."
 date: "2025-12-31"
 weight: 1

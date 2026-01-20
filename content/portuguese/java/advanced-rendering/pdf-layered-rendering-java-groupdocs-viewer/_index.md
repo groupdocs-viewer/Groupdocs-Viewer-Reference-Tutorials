@@ -7,7 +7,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: 'Visualizador de Documentos Java: Renderização em Camadas de PDF com GroupDocs'
+title: 'Visualizador de Documentos Java - Renderização em Camadas de PDF com GroupDocs'
 type: docs
 url: /pt/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

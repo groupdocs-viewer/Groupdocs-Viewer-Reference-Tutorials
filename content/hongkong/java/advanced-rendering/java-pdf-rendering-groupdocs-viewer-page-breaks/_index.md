@@ -5,7 +5,7 @@ keywords:
 - Java PDF Rendering with GroupDocs.Viewer
 - rendering spreadsheets as PDFs
 - GroupDocs.Viewer for Java setup
-title: xlsx 轉 pdf java：使用 GroupDocs.Viewer 的分頁
+title: xlsx 轉 pdf java - 使用 GroupDocs.Viewer 的分頁
 type: docs
 url: /zh-hant/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1

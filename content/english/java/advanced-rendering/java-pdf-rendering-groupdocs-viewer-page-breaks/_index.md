@@ -1,5 +1,5 @@
 ---
-title: "xlsx to pdf java: Page Breaks with GroupDocs.Viewer"
+title: "xlsx to pdf java - Page Breaks with GroupDocs.Viewer"
 description: "Learn how to convert xlsx to pdf java with GroupDocs.Viewer, rendering spreadsheets with page breaks, grid lines, and headings."
 date: "2025-12-31"
 weight: 1

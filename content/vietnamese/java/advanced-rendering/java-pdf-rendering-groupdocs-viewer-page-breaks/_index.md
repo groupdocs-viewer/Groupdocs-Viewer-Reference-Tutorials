@@ -6,7 +6,7 @@ keywords:
 - Java PDF Rendering with GroupDocs.Viewer
 - rendering spreadsheets as PDFs
 - GroupDocs.Viewer for Java setup
-title: 'xlsx sang pdf java: Ngắt trang với GroupDocs.Viewer'
+title: 'xlsx sang pdf java - Ngắt trang với GroupDocs.Viewer'
 type: docs
 url: /vi/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1

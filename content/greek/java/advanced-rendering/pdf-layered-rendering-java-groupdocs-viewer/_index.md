@@ -7,7 +7,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: 'Java Document Viewer: Στρωματική Απόδοση PDF με GroupDocs'
+title: 'Java Document Viewer - Στρωματική Απόδοση PDF με GroupDocs'
 type: docs
 url: /el/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

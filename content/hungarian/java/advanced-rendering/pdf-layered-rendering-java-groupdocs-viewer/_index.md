@@ -7,7 +7,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: 'Java Dokumentumnéző: PDF réteges megjelenítés a GroupDocs-szal'
+title: 'Java Dokumentumnéző - PDF réteges megjelenítés a GroupDocs-szal'
 type: docs
 url: /hu/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

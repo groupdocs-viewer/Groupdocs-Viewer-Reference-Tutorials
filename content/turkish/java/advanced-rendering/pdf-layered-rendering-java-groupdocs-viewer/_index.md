@@ -7,7 +7,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: 'Java Belge Görüntüleyici: GroupDocs ile PDF Katmanlı Renderleme'
+title: 'Java Belge Görüntüleyici - GroupDocs ile PDF Katmanlı Renderleme'
 type: docs
 url: /tr/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

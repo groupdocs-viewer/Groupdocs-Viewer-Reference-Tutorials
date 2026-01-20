@@ -6,7 +6,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: Java 文件檢視器：使用 GroupDocs 的 PDF 分層渲染
+title: Java 文件檢視器 - 使用 GroupDocs 的 PDF 分層渲染
 type: docs
 url: /zh-hant/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

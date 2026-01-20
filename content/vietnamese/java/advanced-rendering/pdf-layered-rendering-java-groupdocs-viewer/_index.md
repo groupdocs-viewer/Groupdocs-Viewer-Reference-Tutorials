@@ -7,7 +7,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: 'Trình xem tài liệu Java: Kết xuất PDF theo lớp với GroupDocs'
+title: 'Trình xem tài liệu Java - Kết xuất PDF theo lớp với GroupDocs'
 type: docs
 url: /vi/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1

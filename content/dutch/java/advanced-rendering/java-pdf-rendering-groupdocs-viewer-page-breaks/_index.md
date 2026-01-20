@@ -6,7 +6,7 @@ keywords:
 - Java PDF Rendering with GroupDocs.Viewer
 - rendering spreadsheets as PDFs
 - GroupDocs.Viewer for Java setup
-title: 'xlsx naar pdf java: pagina‑einden met GroupDocs.Viewer'
+title: 'xlsx naar pdf java - pagina‑einden met GroupDocs.Viewer'
 type: docs
 url: /nl/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1

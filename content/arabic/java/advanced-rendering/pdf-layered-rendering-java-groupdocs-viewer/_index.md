@@ -6,7 +6,7 @@ keywords:
 - PDF layered rendering Java
 - GroupDocs.Viewer setup
 - Java PDF rendering
-title: 'عارض المستندات Java: عرض PDF متعدد الطبقات مع GroupDocs'
+title: 'عارض المستندات Java - عرض PDF متعدد الطبقات مع GroupDocs'
 type: docs
 url: /ar/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/
 weight: 1
