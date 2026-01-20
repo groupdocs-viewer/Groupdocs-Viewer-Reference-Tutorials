@@ -1,45 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Lär dig hur du anpassar e-postmetadata genom att byta namn på fält som \"Från\", \"Till\" och \"Ämne\" när du renderar e-postmeddelanden till HTML med GroupDocs.Viewer för Java."
-"title": "Så här byter du namn på e-postfält när du konverterar e-postmeddelanden till HTML med GroupDocs.Viewer Java"
-"url": "/sv/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-05'
+description: Lär dig hur du byter namn på e‑postfält, konverterar e‑post till HTML
+  och anpassar e‑postrubriker med GroupDocs.Viewer för Java.
+keywords:
+- rename email fields Java
+- render emails HTML GroupDocs Viewer
+- customize email metadata Java
+title: Hur man byter namn på e‑postfält när man renderar e‑post till HTML med GroupDocs.Viewer
+  Java
 type: docs
+url: /sv/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
+weight: 1
 ---
-# Så här byter du namn på e-postfält när du renderar e-postmeddelanden till HTML med GroupDocs.Viewer Java
 
-## Introduktion
+# Hur man byter namn på e‑postfält när man renderar e‑post till HTML med GroupDocs.Viewer Java
 
-Vill du anpassa e-postmetadata när du konverterar e-postmeddelanden till HTML? Den här omfattande guiden guidar dig genom att byta namn på e-postfält med GroupDocs.Viewer för Java. Med det här kraftfulla verktyget kan utvecklare rendera dokument sömlöst och skräddarsy hur e-postrubriker visas i HTML-utdata, vilket förbättrar läsbarheten och användbarheten.
+Undrar du **hur man byter namn på e‑post**‑fält när du konverterar ett e‑postmeddelande till HTML? I den här guiden går vi igenom de exakta stegen för att byta namn på e‑postfält, **konvertera e‑post till HTML** och **anpassa e‑posthuvuden** med GroupDocs.Viewer för Java. I slutet har du en ren HTML‑representation med dina föredragna rubriknamn, vilket gör utskriften lättare att läsa och integrera i dina applikationer.
 
-### Vad du kommer att lära dig:
-- Hur man använder GroupDocs.Viewer för Java för att konvertera e-postmeddelanden till HTML-format.
-- Tekniker för att byta namn på e-postfält som "Från", "Till", "Skickat" och "Ämne".
-- Bästa praxis för att konfigurera din miljö med Maven.
-- Praktiska tillämpningar av att anpassa e-postmetadata i verkliga scenarier.
+![Byt namn på e‑postfält när du konverterar e‑post till HTML med GroupDocs.Viewer för Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-Innan vi börjar implementationen, se till att du har allt klart.
+### Vad du kommer att lära dig
+- Hur man använder GroupDocs.Viewer för Java för att **konvertera e‑post till HTML**.  
+- Tekniker för att **byta namn på e‑postfält** såsom “From”, “To”, “Sent” och “Subject”.  
+- Bästa praxis för att konfigurera Maven och licensiering.  
+- Verkliga scenarier där **anpassning av e‑posthuvuden** ger mervärde.
 
-## Förkunskapskrav
+## Snabba svar
+- **Vad betyder “how to rename email”?** Det avser att mappa standarde‑posthuvudsnamn till anpassade etiketter under rendering.  
+- **Vilket bibliotek hanterar konverteringen?** GroupDocs.Viewer för Java (v25.2+).  
+- **Behöver jag en licens?** En provversion fungerar för utvärdering; en full licens krävs för produktion.  
+- **Kan jag ändra något huvudnamn?** Ja, alla standarde‑posthuvuden kan ommappas via `fieldTextMap`.  
+- **Är utdata HTML eller inbäddade resurser?** Du kan välja inbäddade resurser för en enda självständig fil.
 
-### Obligatoriska bibliotek, versioner och beroenden
-För att följa den här handledningen behöver du:
-- **GroupDocs.Viewer för Java**Se till att du har version 25.2 eller senare.
-- **Java-utvecklingspaket (JDK)**Version 8 eller senare rekommenderas.
+## Vad betyder “How to Rename Email” i sammanhanget med GroupDocs.Viewer?
+Att byta namn på e‑postfält innebär att ersätta standardetiketterna (t.ex. “From”) med anpassad text (t.ex. “Sender”) när e‑posten renderas till HTML. Detta är användbart för att anpassa utskriften till företagets terminologi eller förbättra slutanvändarens läsbarhet.
 
-### Krav för miljöinstallation
-Konfigurera din utvecklingsmiljö med följande verktyg:
-- **Maven** för beroendehantering och automatisering av projektbyggande.
-- En textredigerare eller IDE som IntelliJ IDEA, Eclipse eller Visual Studio Code.
+## Varför konvertera e‑post till HTML och anpassa e‑posthuvuden?
+- **Konsekvent varumärkesprofil:** Matcha din organisations språk i all kommunikation.  
+- **Förbättrad sökbarhet:** Anpassade huvuden kan indexeras mer effektivt i arkiveringssystem.  
+- **Bättre UI‑integration:** Anpassa HTML‑snutten så att den sömlöst passar in i webbportaler eller support‑instrumentpaneler.
 
-### Kunskapsförkunskaper
-Grundläggande förståelse för Java-programmering och kännedom om Maven är fördelaktigt. Om du är nybörjare inom dessa områden kan det vara bra att utforska introduktionsresurser innan du fortsätter.
+## Förutsättningar
+
+### Nödvändiga bibliotek, versioner och beroenden
+- **GroupDocs.Viewer för Java** – version 25.2 eller senare.  
+- **Java Development Kit (JDK)** – version 8+.
+
+### Krav för miljöinställning
+- **Maven** för beroendehantering.  
+- En IDE såsom IntelliJ IDEA, Eclipse eller VS Code.
+
+### Kunskapsförutsättningar
+Grundläggande kunskaper i Java och Maven hjälper dig att följa med snabbt.
 
 ## Konfigurera GroupDocs.Viewer för Java
 
-För att komma igång, integrera GroupDocs.Viewer i ditt Java-projekt med hjälp av Maven. Följ stegen nedan:
-
-**Maven-konfiguration**
+### Maven‑konfiguration
 ```xml
 <repositories>
    <repository>
@@ -57,51 +73,44 @@ För att komma igång, integrera GroupDocs.Viewer i ditt Java-projekt med hjälp
 </dependencies>
 ```
 
-### Steg för att förvärva licens
-- **Gratis provperiod**Ladda ner en gratis provperiod från [GroupDocs-utgåvor](https://releases.groupdocs.com/viewer/java/).
-- **Tillfällig licens**Skaffa en tillfällig licens för att utforska alla funktioner utan begränsningar på [Tillfällig GroupDocs-licens](https://purchase.groupdocs.com/temporary-license/).
-- **Köpa**För fortsatt användning, överväg att köpa en licens via [GroupDocs-köp](https://purchase.groupdocs.com/buy).
+### Steg för att skaffa licens
+- **Free Trial:** Ladda ner en gratis provversion från [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License:** Skaffa en tillfällig licens för att utforska alla funktioner utan begränsningar på [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase:** För fortsatt användning, överväg att köpa en licens via [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-### Grundläggande initialisering och installation
-Så här initierar du GroupDocs.Viewer i ditt Java-projekt:
+### Grundläggande initiering och konfiguration
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.msg")) {
-            // Utför operationer här
+            // Perform operations here
         }
     }
 }
 ```
-Det här kodavsnittet visar den grundläggande installationen för att använda GroupDocs.Viewer. Justera filsökvägen så att den pekar på ditt dokument.
+Justera filvägen så att den pekar på din `.msg`‑fil.
 
 ## Implementeringsguide
 
-### Byta namn på e-postfält
-I det här avsnittet lär du dig hur du anpassar namn på e-postfält när du renderar ett e-postmeddelande till HTML-format.
+### Byta namn på e‑postfält – Steg för steg
 
-#### Översikt
-Det primära målet är att mappa standardfält för e-post som "Från", "Till" och "Ämne" till anpassade namn som "Avsändare", "Mottagare" och "Ämne".
-
-#### Steg-för-steg-implementering
-
-##### 1. Ställ in sökvägen till utdatakatalogen
+#### 1. Ställ in sökvägen för utdata‑katalogen
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-**Förklaring**Ersätt `"YOUR_OUTPUT_DIRECTORY"` med önskad sökväg där HTML-filerna ska sparas.
+*Ersätt `"YOUR_OUTPUT_DIRECTORY"` med den mapp där du vill spara HTML‑filerna.*
 
-##### 2. Definiera format för sidfilsökväg
+#### 2. Definiera format för sidfilens sökväg
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Förklaring**Det här formatet avgör hur varje renderad sidas filnamn är strukturerat, med `{0}` ersätts av sidnumret.
+*`{0}` kommer att ersättas med sidnumret under rendering.*
 
-##### 3. Skapa en mappning av e-postfält till nya namn
+#### 3. Skapa en mappning av e‑postfält till nya namn
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -113,62 +122,71 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-**Förklaring**Anpassa e-postmetadata genom att mappa befintliga fält till dina föredragna namn.
+*Här ändrar vi standardetiketterna till anpassade.*
 
-##### 4. Konfigurera HTML-visningsalternativ
+#### 4. Konfigurera HTML‑visningsalternativ
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-**Förklaring**: Den `forEmbeddedResources` Metoden säkerställer att alla nödvändiga resurser är inbäddade i HTML-filen, medan `setFieldTextMap` tillämpar dina anpassade fältmappningar.
+*`forEmbeddedResources` paketerar CSS/JS i HTML‑filen, medan `setFieldTextMap` tillämpar de anpassade huvudnamnen.*
 
-##### 5. Rendera e-postmeddelandet till HTML
+#### 5. Rendera e‑posten till HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-**Förklaring**Justera `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` med sökvägen till din MSG-fil. Det här steget renderar e-postmeddelandet med angivna alternativ.
+*Ersätt `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` med den faktiska sökvägen till din MSG‑fil.*
 
 #### Felsökningstips
-- Se till att utdatakatalogen är skrivbar.
-- Kontrollera att MSG-filen finns och är tillgänglig.
-- Kontrollera om det finns kompatibilitetsproblem om du använder en annan version av GroupDocs.Viewer.
+- Verifiera att utdata‑katalogen är skrivbar.  
+- Säkerställ att indata‑MSG‑filen finns och att sökvägen är korrekt.  
+- Använd samma GroupDocs.Viewer‑version (25.2) som deklarerats i Maven.
 
 ## Praktiska tillämpningar
-Den här funktionen är särskilt användbar i scenarier där:
-1. **Anpassade e-postrapporter**Att anpassa e-postrubriker så att de matchar företagets terminologi förbättrar läsbarheten.
-2. **System för e-postarkivering**Anpassning av metadata förbättrar sök- och hämtningseffektiviteten.
-3. **Kundsupportplattformar**Anpassade e-postrubriker bidrar till bättre kundkommunikation.
+1. **Anpassade e‑postrapporter:** Anpassa e‑posthuvuden till företagets terminologi för tydligare rapporter.  
+2. **E‑postarkiveringssystem:** Förbättra sökbarheten genom att använda standardiserade huvudnamn.  
+3. **Kundsupportplattformar:** Presentera ärenden med personliga huvudetiketter för bättre agentupplevelse.
 
 ## Prestandaöverväganden
-Så här optimerar du prestandan när du använder GroupDocs.Viewer för Java:
-- Använd effektiva minneshanteringstekniker, till exempel korrekt objekthantering med try-with-resources.
-- Profilera din applikation för att identifiera flaskhalsar relaterade till dokumentrendering och hantera dem på lämpligt sätt.
+- Avsluta `Viewer`‑objekt med try‑with‑resources för att snabbt frigöra minne.  
+- Profilera stora batcher och överväg att bearbeta e‑post i parallella strömmar om så behövs.
 
 ## Slutsats
-Genom att följa den här guiden har du lärt dig hur du effektivt byter namn på e-postfält under konverteringsprocessen från e-postmeddelanden till HTML med GroupDocs.Viewer för Java. Denna anpassning förbättrar både funktionaliteten och användbarheten hos renderade dokument i olika applikationer.
+Du vet nu **hur man byter namn på e‑post**‑fält medan du **konverterar e‑post till HTML** och **anpassar e‑posthuvuden** med GroupDocs.Viewer för Java. Denna teknik ger dig full kontroll över presentationen av e‑postmetadata i HTML‑utdata.
 
 ### Nästa steg
-- Experimentera med olika fältmappningar.
-- Utforska ytterligare funktioner i GroupDocs.Viewer för att förbättra dina dokumentbehandlingsmöjligheter.
-- Besök [GroupDocs-dokumentation](https://docs.groupdocs.com/viewer/java/) för mer avancerade tekniker och exempel.
+- Experimentera med ytterligare fältmappningar (t.ex. CC, BCC).  
+- Utforska andra renderingsformat såsom PDF eller PNG.  
+- Besök [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) för djupare API‑insikter.
 
-## FAQ-sektion
-1. **Kan jag byta namn på alla e-postrubriker med den här metoden?**
-   - Ja, du kan mappa vilken standardrubrik som helst för e-post till ett nytt namn enligt dina behov.
-2. **Är det möjligt att använda GroupDocs.Viewer utan licens?**
-   - En testversion finns tillgänglig för teständamål, men en fullfunktionell version kräver en giltig licens.
-3. **Hur hanterar jag stora volymer e-postmeddelanden effektivt med GroupDocs.Viewer?**
-   - Överväg batchbearbetning och optimering av dina systemresurser för att hantera större datamängder effektivt.
-4. **Kan jag integrera den här lösningen i en befintlig Java-applikation?**
-   - Absolut, att integrera GroupDocs.Viewer är enkelt i alla Java-baserade projekt som använder Maven-beroenden.
-5. **Var kan jag hitta stöd om jag stöter på problem?**
-   - Besök [Gruppdokumentforum](https://forum.groupdocs.com/c/viewer/9) för stöd från samhället och myndigheterna.
+## Vanliga frågor
+
+**Q: Fungerar detta tillvägagångssätt med andra e‑postformat som EML?**  
+A: Ja, GroupDocs.Viewer stödjer både MSG‑ och EML‑filer; samma fält‑mappningslogik gäller.
+
+**Q: Kan jag generera HTML utan inbäddade resurser?**  
+A: Du kan använda `HtmlViewOptions.forExternalResources(...)` om du föredrar separata CSS/JS‑filer.
+
+**Q: Vilken version av GroupDocs.Viewer testades?**  
+A: Koden testades med GroupDocs.Viewer **25.2**.
+
+**Q: Är det möjligt att ändra teckensnitt eller stil för de anpassade huvudena?**  
+A: Stil kan appliceras via CSS efter rendering, eller så kan du injicera anpassad CSS med `HtmlViewOptions.getResourcesPath()`.
+
+**Q: Hur hämtar jag programatiskt den genererade HTML‑filens sökväg?**  
+A: Filvägen följer mönstret definierat i `pageFilePathFormat`; du kan konstruera den med `String.format` och sidnumret.
 
 ## Resurser
-- **Dokumentation**Omfattande guider finns tillgängliga på [GroupDocs-dokumentation](https://docs.groupdocs.com/viewer/java/).
-- **API-referens**Detaljerad API-information finns på [GroupDocs API-referens](https://reference.groupdocs.com/viewer/java/).
-- **Ladda ner GroupDocs.Viewer**Få åtkomst till den senaste versionen via [Nedladdningssida](https://releases.groupdocs.com/viewer/java/)
+- **Documentation:** Omfattande guider finns på [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API Reference:** Detaljerad API‑information finns på [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Download GroupDocs.Viewer:** Få den senaste versionen via [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+
+---
+
+**Senast uppdaterad:** 2026-01-05  
+**Testad med:** GroupDocs.Viewer 25.2  
+**Författare:** GroupDocs
