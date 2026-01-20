@@ -129,18 +129,6 @@ Seguendo questa guida, ora sai **come recuperare gli allegati** e utilizzare la 
 
 Per approfondire, consulta la documentazione ufficiale o sperimenta con funzionalità aggiuntive di Viewer come la conversione dei documenti, il rendering delle pagine o pipeline di rendering personalizzate.
 
-## Sezione FAQ
-1. **Quali formati di file supporta GroupDocs.Viewer?**  
-   Supporta oltre 90 formati di documento, inclusi PDF, documenti Word, fogli di calcolo e molto altro.  
-2. **Come gestisco le eccezioni con GroupDocs.Viewer?**  
-   Usa blocchi try‑catch per gestire potenziali problemi come errori di accesso ai file o formati non supportati.  
-3. **Posso usare questa libreria in un'applicazione web?**  
-   Sì, è adatta sia per applicazioni desktop che web basate su Java.  
-4. **Quali sono le implicazioni sulle prestazioni dell'uso di GroupDocs.Viewer?**  
-   Sebbene sia efficiente, assicurati di configurare le impostazioni di memoria e considera l'elaborazione asincrona per grandi volumi.  
-5. **È disponibile il supporto per personalizzare la visualizzazione degli allegati?**  
-   Sì, è possibile ottenere ulteriori personalizzazioni estendendo le funzionalità nella tua applicazione Java.
-
 ## Ulteriori Domande Frequenti
 **D: La funzionalità “print pdf attachments java” funziona con PDF protetti da password?**  
 R: Sì. È possibile fornire la password durante l'apertura dello stream dell'allegato, quindi stamparlo normalmente.

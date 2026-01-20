@@ -5,15 +5,11 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 使用 GroupDocs.Viewer for Java 提取文档元数据：获取文档视图信息和洞察
+title: 使用 GroupDocs.Viewer for Java 提取文档元数据 - 获取文档视图信息和洞察
 type: docs
 url: /zh/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# 使用 GroupDocs.Viewer for Java 提取文档元数据
-## 高级渲染技术
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # 精通 GroupDocs.Viewer for Java：检索文档视图信息与洞察
 

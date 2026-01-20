@@ -125,18 +125,6 @@ Siguiendo esta guía, ahora sabes **cómo recuperar adjuntos** y usar la capacid
 
 Para explorar más, consulta la documentación oficial o experimenta con funciones adicionales de Viewer como conversión de documentos, renderizado de páginas o pipelines de renderizado personalizados.
 
-## Sección de preguntas frecuentes
-1. **¿Qué formatos de archivo admite GroupDocs.Viewer?**  
-   Admite más de 90 formatos de documento, incluidos PDFs, documentos Word, hojas de cálculo y más.  
-2. **¿Cómo manejo excepciones con GroupDocs.Viewer?**  
-   Usa bloques try‑catch para gestionar posibles problemas como errores de acceso a archivos o formatos no soportados.  
-3. **¿Puedo usar esta biblioteca en una aplicación web?**  
-   Sí, es adecuada tanto para aplicaciones de escritorio como web que usen Java.  
-4. **¿Cuáles son las implicaciones de rendimiento al usar GroupDocs.Viewer?**  
-   Aunque es eficiente, asegúrate de configurar los ajustes de memoria y considera el procesamiento asíncrono para grandes volúmenes.  
-5. **¿Existe soporte para personalizar cómo se muestran los adjuntos?**  
-   Sí, se puede lograr una mayor personalización extendiendo la funcionalidad dentro de tu aplicación Java.  
-
 ## Preguntas frecuentes adicionales
 **P: ¿Funciona “print pdf attachments java” con PDFs protegidos con contraseña?**  
 **R:** Sí. Puedes proporcionar la contraseña al abrir el flujo del adjunto y luego imprimirlo normalmente.

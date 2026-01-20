@@ -7,16 +7,12 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'Wyodrębnij metadane dokumentu przy użyciu GroupDocs.Viewer dla Javy: Pobierz
+title: 'Wyodrębnij metadane dokumentu przy użyciu GroupDocs.Viewer dla Javy - Pobierz
   informacje i wnioski o widoku dokumentu'
 type: docs
 url: /pl/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# Wyodrębnianie metadanych dokumentu przy użyciu GroupDocs.Viewer dla Java
-## Zaawansowane techniki renderowania
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # Master GroupDocs.Viewer dla Java: Pobieranie informacji o widoku dokumentu i wglądów
 

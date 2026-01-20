@@ -129,18 +129,6 @@ En suivant ce guide, vous savez maintenant **comment récupérer les pièces joi
 
 Pour explorer davantage, consultez la documentation officielle ou expérimentez avec des fonctionnalités supplémentaires du Viewer telles que la conversion de documents, le rendu de pages ou les pipelines de rendu personnalisés.
 
-## Section FAQ
-1. **Quels formats de fichiers GroupDocs.Viewer prend-il en charge ?**  
-   Il prend en charge plus de 90 formats de documents, y compris les PDF, les documents Word, les feuilles de calcul, etc.  
-2. **Comment gérer les exceptions avec GroupDocs.Viewer ?**  
-   Utilisez des blocs try‑catch pour gérer les problèmes potentiels tels que les erreurs d'accès aux fichiers ou les formats non pris en charge.  
-3. **Puis‑je utiliser cette bibliothèque dans une application web ?**  
-   Oui, elle convient aussi bien aux applications de bureau qu'aux applications web utilisant Java.  
-4. **Quelles sont les implications de performance de l'utilisation de GroupDocs.Viewer ?**  
-   Bien qu'efficace, assurez‑vous de configurer les paramètres de mémoire et envisagez un traitement asynchrone pour de gros volumes.  
-5. **Existe‑t‑il un support pour personnaliser l'affichage des pièces jointes ?**  
-   Oui, une personnalisation supplémentaire peut être obtenue en étendant les fonctionnalités au sein de votre application Java.  
-
 ## Questions fréquentes supplémentaires
 **Q : “print pdf attachments java” fonctionne‑t‑il avec des PDF protégés par mot de passe ?**  
 R : Oui. Vous pouvez fournir le mot de passe lors de l'ouverture du flux de la pièce jointe, puis l'imprimer normalement.

@@ -128,18 +128,6 @@ for (Attachment attachment : attachments) {
 Podle tohoto průvodce nyní víte **jak získat přílohy** a použít funkci `print pdf attachments java` v GroupDocs.Viewer pro Java. Tyto funkce mohou výrazně zlepšit uživatelský zážitek jakékoli aplikace pracující se složitými dokumenty nebo e‑mailovými archivy.  
 Pro další informace si prohlédněte oficiální dokumentaci nebo experimentujte s dalšími funkcemi Vieweru, jako je konverze dokumentů, vykreslování stránek nebo vlastní renderovací pipeline.
 
-## Často kladené otázky
-1. **Jaké formáty souborů GroupDocs.Viewer podporuje?**  
-   Podporuje více než 90 formátů dokumentů, včetně PDF, Word dokumentů, tabulek a dalších.  
-2. **Jak zacházet s výjimkami v GroupDocs.Viewer?**  
-   Používejte bloky try‑catch k řízení možných problémů, jako jsou chyby přístupu k souborům nebo nepodporované formáty.  
-3. **Mohu tuto knihovnu použít ve webové aplikaci?**  
-   Ano, je vhodná jak pro desktopové, tak pro webové aplikace v Javě.  
-4. **Jaké jsou výkonnostní dopady používání GroupDocs.Viewer?**  
-   Přestože je efektivní, ujistěte se, že máte nastavená paměťová nastavení a zvažte asynchronní zpracování pro velké objemy.  
-5. **Existuje podpora pro přizpůsobení zobrazení příloh?**  
-   Ano, další přizpůsobení lze dosáhnout rozšířením funkcionality ve vaší Java aplikaci.
-
 ## Další často kladené otázky
 **Q: Funguje „print pdf attachments java“ s PDF chráněnými heslem?**  
 A: Ano. Heslo můžete zadat při otevírání streamu přílohy a poté jej normálně vytisknout.

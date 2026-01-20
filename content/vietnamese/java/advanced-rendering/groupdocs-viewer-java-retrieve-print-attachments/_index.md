@@ -129,18 +129,6 @@ Bằng cách làm theo hướng dẫn này, bạn đã biết **cách lấy các
 
 Để khám phá thêm, hãy xem tài liệu chính thức hoặc thử nghiệm các tính năng Viewer bổ sung như chuyển đổi tài liệu, render trang, hoặc pipeline render tùy chỉnh.
 
-## Phần Câu Hỏi Thường Gặp
-1. **GroupDocs.Viewer hỗ trợ những định dạng tệp nào?**  
-   Nó hỗ trợ hơn 90 định dạng tài liệu bao gồm PDF, tài liệu Word, bảng tính và nhiều hơn nữa.  
-2. **Làm thế nào để xử lý ngoại lệ với GroupDocs.Viewer?**  
-   Sử dụng khối try‑catch để quản lý các vấn đề tiềm năng như lỗi truy cập tệp hoặc định dạng không được hỗ trợ.  
-3. **Tôi có thể sử dụng thư viện này trong ứng dụng web không?**  
-   Có, nó phù hợp cho cả ứng dụng desktop và web sử dụng Java.  
-4. **Những ảnh hưởng về hiệu suất khi sử dụng GroupDocs.Viewer là gì?**  
-   Mặc dù hiệu quả, hãy đảm bảo cấu hình cài đặt bộ nhớ và cân nhắc xử lý bất đồng bộ cho khối lượng lớn.  
-5. **Có hỗ trợ tùy chỉnh cách hiển thị các tệp đính kèm không?**  
-   Có, bạn có thể tùy chỉnh thêm bằng cách mở rộng chức năng trong ứng dụng Java của mình.  
-
 ## Các Câu Hỏi Thường Gặp Bổ Sung
 **Q: “print pdf attachments java” có hoạt động với các PDF được bảo vệ bằng mật khẩu không?**  
 A: Có. Bạn có thể cung cấp mật khẩu khi mở luồng tệp đính kèm, sau đó in bình thường.

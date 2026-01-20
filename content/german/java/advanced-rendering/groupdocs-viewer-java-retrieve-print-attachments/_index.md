@@ -134,19 +134,6 @@ Indem Sie diesem Leitfaden folgen, wissen Sie jetzt **wie man Anhänge abruft** 
 
 Um mehr zu entdecken, sehen Sie sich die offizielle Dokumentation an oder experimentieren Sie mit zusätzlichen Viewer‑Funktionen wie Dokumentkonvertierung, Seitenrendering oder benutzerdefinierten Rendering‑Pipelines.
 
-## FAQ‑Abschnitt
-
-1. **Welche Dateiformate unterstützt GroupDocs.Viewer?**  
-   Es unterstützt über 90 Dokumentformate, einschließlich PDFs, Word‑Dokumenten, Tabellenkalkulationen und mehr.  
-2. **Wie gehe ich mit Ausnahmen bei GroupDocs.Viewer um?**  
-   Verwenden Sie try‑catch‑Blöcke, um potenzielle Probleme wie Dateizugriffsfehler oder nicht unterstützte Formate zu behandeln.  
-3. **Kann ich diese Bibliothek in einer Web‑Anwendung verwenden?**  
-   Ja, sie ist sowohl für Desktop‑ als auch für Web‑Anwendungen mit Java geeignet.  
-4. **Welche Auswirkungen hat die Nutzung von GroupDocs.Viewer auf die Leistung?**  
-   Obwohl effizient, sollten Sie Speicher‑Einstellungen konfigurieren und für große Mengen asynchrone Verarbeitung in Betracht ziehen.  
-5. **Gibt es Unterstützung für die Anpassung der Anzeige von Anhängen?**  
-   Ja, weitere Anpassungen können durch Erweiterung der Funktionalität in Ihrer Java‑Anwendung erreicht werden.
-
 ## Weitere häufig gestellte Fragen
 
 **Q: Funktioniert „print pdf attachments java“ mit passwortgeschützten PDFs?**  

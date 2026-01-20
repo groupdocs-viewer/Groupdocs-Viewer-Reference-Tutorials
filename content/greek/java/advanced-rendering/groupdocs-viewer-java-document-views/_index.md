@@ -7,16 +7,12 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'Εξαγωγή μεταδεδομένων εγγράφου με το GroupDocs.Viewer για Java: Ανάκτηση πληροφοριών
+title: 'Εξαγωγή μεταδεδομένων εγγράφου με το GroupDocs.Viewer για Java - Ανάκτηση πληροφοριών
   προβολής εγγράφου και επιγνώσεις'
 type: docs
 url: /el/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# Εξαγωγή Μεταδεδομένων Εγγράφου με GroupDocs.Viewer για Java
-## Προηγμένες Τεχνικές Απόδοσης
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # Master GroupDocs.Viewer για Java: Ανάκτηση Πληροφοριών Προβολής Εγγράφου και Εντυπώσεων
 

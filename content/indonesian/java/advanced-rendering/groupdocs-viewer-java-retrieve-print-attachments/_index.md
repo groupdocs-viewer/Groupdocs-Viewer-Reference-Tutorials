@@ -130,18 +130,6 @@ Dengan mengikuti panduan ini, Anda kini tahu **cara mengambil lampiran** dan men
 
 Untuk menjelajahi lebih lanjut, lihat dokumentasi resmi atau bereksperimen dengan fitur Viewer tambahan seperti konversi dokumen, rendering halaman, atau pipeline rendering khusus.
 
-## Bagian FAQ
-1. **Format file apa yang didukung oleh GroupDocs.Viewer?**  
-   Mendukung lebih dari 90 format dokumen termasuk PDF, dokumen Word, spreadsheet, dan lainnya.  
-2. **Bagaimana cara menangani pengecualian dengan GroupDocs.Viewer?**  
-   Gunakan blok try‑catch untuk mengelola potensi masalah seperti kesalahan akses file atau format yang tidak didukung.  
-3. **Bisakah saya menggunakan perpustakaan ini dalam aplikasi web?**  
-   Ya, cocok untuk aplikasi desktop maupun web yang menggunakan Java.  
-4. **Apa implikasi kinerja dari penggunaan GroupDocs.Viewer?**  
-   Meskipun efisien, pastikan Anda mengonfigurasi pengaturan memori dan pertimbangkan pemrosesan asinkron untuk volume besar.  
-5. **Apakah ada dukungan untuk menyesuaikan tampilan lampiran?**  
-   Ya, kustomisasi lebih lanjut dapat dicapai dengan memperluas fungsionalitas dalam aplikasi Java Anda.
-
 ## Pertanyaan Umum Tambahan
 
 **Q: Apakah “print pdf attachments java” berfungsi dengan PDF yang dilindungi kata sandi?**  

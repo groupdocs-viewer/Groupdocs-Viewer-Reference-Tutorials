@@ -6,15 +6,11 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'GroupDocs.Viewer for Java를 사용하여 문서 메타데이터 추출: 문서 보기 정보 및 인사이트 가져오기'
+title: 'GroupDocs.Viewer for Java를 사용하여 문서 메타데이터 추출 - 문서 보기 정보 및 인사이트 가져오기'
 type: docs
 url: /ko/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# GroupDocs.Viewer for Java로 문서 메타데이터 추출
-## 고급 렌더링 기술
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # GroupDocs.Viewer for Java 마스터: 문서 보기 정보 및 인사이트 가져오기
 

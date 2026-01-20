@@ -128,18 +128,6 @@ for (Attachment attachment : attachments) {
 Korzystając z tego przewodnika, teraz wiesz, **jak pobierać załączniki** i korzystać z funkcji `print pdf attachments java` w GroupDocs.Viewer for Java. Funkcje te mogą znacząco poprawić doświadczenia użytkowników każdej aplikacji pracującej z złożonymi dokumentami lub archiwami e‑mail.  
 Aby dowiedzieć się więcej, zapoznaj się z oficjalną dokumentacją lub eksperymentuj z dodatkowymi funkcjami Viewer, takimi jak konwersja dokumentów, renderowanie stron czy własne potoki renderowania.
 
-## Sekcja FAQ
-1. **Jakie formaty plików obsługuje GroupDocs.Viewer?**  
-   Obsługuje ponad 90 formatów dokumentów, w tym PDF‑y, dokumenty Word, arkusze kalkulacyjne i inne.  
-2. **Jak obsługiwać wyjątki w GroupDocs.Viewer?**  
-   Używaj bloków try‑catch, aby zarządzać potencjalnymi problemami, takimi jak błędy dostępu do plików lub nieobsługiwane formaty.  
-3. **Czy mogę używać tej biblioteki w aplikacji webowej?**  
-   Tak, jest odpowiednia zarówno dla aplikacji desktopowych, jak i webowych wykorzystujących Javę.  
-4. **Jakie są konsekwencje wydajnościowe używania GroupDocs.Viewer?**  
-   Choć jest wydajny, należy skonfigurować ustawienia pamięci i rozważyć przetwarzanie asynchroniczne przy dużych wolumenach.  
-5. **Czy istnieje możliwość dostosowania wyświetlania załączników?**  
-   Tak, dalsze dostosowania można osiągnąć, rozszerzając funkcjonalność w swojej aplikacji Java.
-
 ## Dodatkowe często zadawane pytania
 **Q: Czy “print pdf attachments java” działa z PDF‑ami zabezpieczonymi hasłem?**  
 A: Tak. Można podać hasło podczas otwierania strumienia załącznika, a następnie wydrukować go normalnie.

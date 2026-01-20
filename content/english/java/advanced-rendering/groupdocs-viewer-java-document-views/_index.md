@@ -1,5 +1,5 @@
 ---
-title: "Extract Document Metadata with GroupDocs.Viewer for Java: Retrieve Document View Information and Insights"
+title: "Extract Document Metadata with GroupDocs.Viewer for Java - Retrieve Document View Information and Insights"
 description: "Learn how to extract document metadata using GroupDocs.Viewer for Java, perfect for document management Java, previewing large documents, and getting page count Java."
 date: "2025-12-26"
 weight: 1
@@ -10,10 +10,6 @@ keywords:
   - Java document management
 type: docs
 ---
-
-# Extract Document Metadata with GroupDocs.Viewer for Java
-## Advanced Rendering Techniques
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # Master GroupDocs.Viewer for Java: Retrieve Document View Information and Insights
 

@@ -134,19 +134,6 @@ Bu rehberi izleyerek artık **ekleri nasıl alacağınızı** ve GroupDocs.Viewe
 
 Daha fazlasını keşfetmek için resmi dokümantasyona göz atın veya belge dönüştürme, sayfa renderleme veya özel renderleme hatları gibi ek Viewer özellikleriyle deneyler yapın.
 
-## SSS Bölümü
-
-1. **GroupDocs.Viewer hangi dosya formatlarını destekliyor?**  
-   PDF'ler, Word belgeleri, elektronik tablolar ve daha fazlası dahil olmak üzere 90'dan fazla belge formatını destekler.  
-2. **GroupDocs.Viewer ile istisnaları nasıl yönetirim?**  
-   Dosya erişim hataları veya desteklenmeyen formatlar gibi olası sorunları yönetmek için try‑catch blokları kullanın.  
-3. **Bu kütüphaneyi bir web uygulamasında kullanabilir miyim?**  
-   Evet, Java kullanan hem masaüstü hem de web uygulamaları için uygundur.  
-4. **GroupDocs.Viewer kullanmanın performans etkileri nelerdir?**  
-   Verimli olmasına rağmen, bellek ayarlarını yapılandırdığınızdan ve büyük hacimler için eşzamansız işlemeyi düşündüğünüzden emin olun.  
-5. **Eklerin nasıl görüntüleneceğini özelleştirme desteği var mı?**  
-   Evet, Java uygulamanız içinde işlevselliği genişleterek daha fazla özelleştirme yapabilirsiniz.
-
 ## Ek Sıkça Sorulan Sorular
 
 **S: “print pdf attachments java” parola korumalı PDF'lerde çalışıyor mu?**  

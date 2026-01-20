@@ -132,19 +132,6 @@ By following this guide, you now know **how to retrieve attachments** and use th
 
 To explore more, check out the official documentation or experiment with additional Viewer features such as document conversion, page rendering, or custom rendering pipelines.
 
-## FAQ Section
-
-1. **What file formats does GroupDocs.Viewer support?**  
-   It supports over 90 document formats including PDFs, Word documents, spreadsheets, and more.  
-2. **How do I handle exceptions with GroupDocs.Viewer?**  
-   Use try‑catch blocks to manage potential issues like file access errors or unsupported formats.  
-3. **Can I use this library in a web application?**  
-   Yes, it’s suitable for both desktop and web applications using Java.  
-4. **What are the performance implications of using GroupDocs.Viewer?**  
-   While efficient, ensure you configure memory settings and consider asynchronous processing for large volumes.  
-5. **Is there support for customizing how attachments are displayed?**  
-   Yes, further customization can be achieved by extending functionality within your Java application.
-
 ## Additional Frequently Asked Questions
 
 **Q: Does “print pdf attachments java” work with password‑protected PDFs?**  

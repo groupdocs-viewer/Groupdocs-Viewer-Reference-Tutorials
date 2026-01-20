@@ -135,19 +135,6 @@ Ezzel az útmutatóval most már tudja, **hogyan kell lekérni a csatolmányokat
 
 További információkért tekintse meg a hivatalos dokumentációt, vagy kísérletezzen a Viewer további funkcióival, például dokumentumkonverzióval, oldalrendereléssel vagy egyedi renderelési csővezetékekkel.
 
-## Gyakran ismételt kérdések (FAQ)
-
-1. **Milyen fájlformátumokat támogat a GroupDocs.Viewer?**  
-   Több mint 90 dokumentumformátumot támogat, beleértve a PDF‑eket, Word‑dokumentumokat, táblázatokat és még sok mást.  
-2. **Hogyan kezeljem a kivételeket a GroupDocs.Viewer‑rel?**  
-   Használjon try‑catch blokkokat a lehetséges problémák, például fájlhozzáférési hibák vagy nem támogatott formátumok kezelésére.  
-3. **Használhatom ezt a könyvtárat webalkalmazásban?**  
-   Igen, alkalmas mind asztali, mind webalkalmazásokra Java‑ban.  
-4. **Mik a teljesítménybeli hatásai a GroupDocs.Viewer használatának?**  
-   Bár hatékony, ügyeljen a memória beállításokra, és fontolja meg az aszinkron feldolgozást nagy mennyiségű adat esetén.  
-5. **Létezik lehetőség a csatolmányok megjelenésének testreszabására?**  
-   Igen, további testreszabás érhető el a Java‑alkalmazás funkcióinak kiterjesztésével.
-
 ## További gyakran ismételt kérdések
 
 **K: A `print pdf attachments java` működik jelszóval védett PDF‑ekkel?**  

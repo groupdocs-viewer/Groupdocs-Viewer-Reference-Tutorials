@@ -7,16 +7,12 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'Extrahujte metadata dokumentu pomocí GroupDocs.Viewer pro Javu: Získejte informace
+title: 'Extrahujte metadata dokumentu pomocí GroupDocs.Viewer pro Javu - Získejte informace
   a poznatky o zobrazení dokumentu'
 type: docs
 url: /cs/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# Extrahování metadat dokumentu pomocí GroupDocs.Viewer pro Java
-## Pokročilé techniky vykreslování
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # Ovládněte GroupDocs.Viewer pro Java: Získání informací o zobrazení dokumentu a poznatků
 
@@ -163,23 +159,23 @@ Ovládli jste, jak **extrahovat metadata dokumentu** a získat informace o zobra
 - Integrajte bezpečnostní nastavení pro kontrolu, kdo může zobrazit která metadata.  
 - Kombinujte extrahování metadat s indexovacími službami pro výkonné vyhledávací možnosti.
 
-## FAQ Section
-**Q1: What is the purpose of `ViewInfoOptions` in GroupDocs.Viewer for Java?**  
-A1: It specifies how you want to retrieve view information, like HTML or PDF views, enabling you to **extract document metadata** efficiently.
+## Sekce FAQ
+**Q1: ​​Jaký je účel funkce `ViewInfoOptions` v nástroji GroupDocs.Viewer pro Javu?**
+A1: Určuje, jak chcete načíst informace o zobrazení, například zobrazení HTML nebo PDF, což vám umožňuje efektivně **extrahovat metadata dokumentu**.
 
-**Q2: Can I use GroupDocs.Viewer for Java with other file formats besides PDF?**  
-A1: Yes, it supports a wide range of formats including Word, Excel, PowerPoint, and image files, making it ideal for **document management java** projects.
+**Q2: Mohu používat GroupDocs.Viewer pro Javu s jinými formáty souborů než PDF?**
+A1: Ano, podporuje širokou škálu formátů včetně Wordu, Excelu, PowerPointu a obrazových souborů, takže je ideální pro **projekty správy dokumentů v Javě**.
 
-**Q3: How do I handle large documents in GroupDocs.Viewer?**  
-A3: Manage resources efficiently by closing `Viewer` instances promptly and extracting only metadata when possible, which helps you **manage large documents**.
+**Q3: Jak mohu v GroupDocs.Viewer zpracovávat velké dokumenty?**
+A3: Efektivně spravujte zdroje okamžitým uzavřením instancí `Viewer` a extrahováním pouze metadat, pokud je to možné, což vám pomůže **spravovat velké dokumenty**.
 
-**Q4: Is there any cost associated with using GroupDocs.Viewer for Java?**  
-A4: A free trial is available. For production use, a commercial license is required.
+**Q4: Jsou s používáním GroupDocs.Viewer pro Javu spojeny nějaké náklady?**
+A4: K dispozici je bezplatná zkušební verze. Pro produkční použití je vyžadována komerční licence.
 
-**Q5: What are some common pitfalls when implementing this feature?**  
-A5: Incorrect file paths and missing Maven dependencies are frequent issues. Always verify the document location and ensure the `groupdocs-viewer` artifact is correctly added.
+**Otázka 5: Jaká jsou některá běžná úskalí při implementaci této funkce?**
+A5: Nesprávné cesty k souborům a chybějící závislosti Mavenu jsou častými problémy. Vždy ověřte umístění dokumentu a ujistěte se, že je artefakt `groupdocs-viewer` správně přidán.
 
-## Resources
+## Zdroje
 - **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
 - **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
 - **Download:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)

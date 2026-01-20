@@ -7,16 +7,11 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'Dokumentum metaadatok kinyerése a GroupDocs.Viewer for Java segítségével:
-  Dokumentumnézet információk és betekintések lekérése'
+title: 'Dokumentum metaadatok kinyerése a GroupDocs.Viewer for Java segítségével - Dokumentumnézet információk és betekintések lekérése'
 type: docs
 url: /hu/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# Dokumentum metaadatok kinyerése a GroupDocs.Viewer for Java segítségével
-## Haladó renderelési technikák
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # A GroupDocs.Viewer for Java mestere: Dokumentum nézetinformációk és betekintések lekérése
 

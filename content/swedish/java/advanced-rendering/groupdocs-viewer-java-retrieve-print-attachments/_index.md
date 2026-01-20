@@ -128,18 +128,6 @@ Genom att följa den här guiden vet du nu **hur du hämtar bilagor** och använ
 
 För att utforska mer, kolla in den officiella dokumentationen eller experimentera med ytterligare Viewer‑funktioner som dokumentkonvertering, sidrendering eller anpassade renderings‑pipelines.
 
-## FAQ‑sektion
-1. **Vilka filformat stödjer GroupDocs.Viewer?**  
-   Den stödjer över 90 dokumentformat inklusive PDF, Word‑dokument, kalkylblad och mer.  
-2. **Hur hanterar jag undantag med GroupDocs.Viewer?**  
-   Använd try‑catch‑block för att hantera potentiella problem som filåtkomstfel eller osupporterade format.  
-3. **Kan jag använda detta bibliotek i en webbapplikation?**  
-   Ja, det är lämpligt för både skrivbords‑ och webbapplikationer som använder Java.  
-4. **Vilka prestandakonsekvenser har användning av GroupDocs.Viewer?**  
-   Även om det är effektivt, se till att konfigurera minnesinställningar och överväg asynkron bearbetning för stora volymer.  
-5. **Finns det stöd för att anpassa hur bilagor visas?**  
-   Ja, ytterligare anpassning kan uppnås genom att utöka funktionaliteten i din Java‑applikation.
-
 ## Ytterligare vanliga frågor
 **Q: Fungerar “print pdf attachments java” med lösenordsskyddade PDF‑filer?**  
 A: Ja. Du kan ange lösenordet när du öppnar bilagestreamen och sedan skriva ut den som vanligt.

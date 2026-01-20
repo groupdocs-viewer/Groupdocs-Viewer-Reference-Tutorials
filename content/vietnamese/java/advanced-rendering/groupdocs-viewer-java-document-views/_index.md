@@ -7,16 +7,12 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'Trích xuất siêu dữ liệu tài liệu với GroupDocs.Viewer cho Java: Lấy thông
+title: 'Trích xuất siêu dữ liệu tài liệu với GroupDocs.Viewer cho Java - Lấy thông
   tin và hiểu biết về cách hiển thị tài liệu'
 type: docs
 url: /vi/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# Trích xuất siêu dữ liệu tài liệu với GroupDocs.Viewer cho Java
-## Kỹ thuật Render nâng cao
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # Thành thạo GroupDocs.Viewer cho Java: Lấy thông tin và hiểu biết về chế độ xem tài liệu
 

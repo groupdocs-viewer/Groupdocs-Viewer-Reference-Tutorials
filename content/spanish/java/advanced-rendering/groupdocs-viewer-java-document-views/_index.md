@@ -7,16 +7,12 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'Extraer metadatos de documentos con GroupDocs.Viewer para Java: Recuperar
+title: 'Extraer metadatos de documentos con GroupDocs.Viewer para Java - Recuperar
   información y análisis de la vista del documento'
 type: docs
 url: /es/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# Extraer metadatos de documentos con GroupDocs.Viewer para Java
-## Técnicas avanzadas de renderizado
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # Domina GroupDocs.Viewer para Java: Recupera información y análisis de vistas de documentos
 

@@ -7,16 +7,12 @@ keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'استخراج بيانات تعريف المستند باستخدام GroupDocs.Viewer للغة جافا: استرجاع
+title: 'استخراج بيانات تعريف المستند باستخدام GroupDocs.Viewer للغة جافا - استرجاع
   معلومات عرض المستند والرؤى'
 type: docs
 url: /ar/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
-
-# استخراج بيانات تعريف المستند باستخدام GroupDocs.Viewer للـ Java
-## تقنيات العرض المتقدمة
-**SEO URL:** groupdocs-viewer-java-document-views
 
 # إتقان GroupDocs.Viewer للـ Java: استرجاع معلومات عرض المستند والرؤى
 

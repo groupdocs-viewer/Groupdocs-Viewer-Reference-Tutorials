@@ -135,19 +135,6 @@ Door deze gids te volgen, weet u nu **hoe u bijlagen kunt ophalen** en de `print
 
 Om meer te ontdekken, bekijk de officiële documentatie of experimenteer met extra Viewer‑functies zoals documentconversie, paginavergelijking, of aangepaste render‑pijplijnen.
 
-## Veelgestelde vragen
-
-1. **Welke bestandsformaten ondersteunt GroupDocs.Viewer?**  
-   Het ondersteunt meer dan 90 documentformaten, waaronder PDF’s, Word‑documenten, spreadsheets en meer.  
-2. **Hoe ga ik om met uitzonderingen in GroupDocs.Viewer?**  
-   Gebruik try‑catch‑blokken om potentiële problemen zoals bestands‑toegangs‑fouten of niet‑ondersteunde formaten af te handelen.  
-3. **Kan ik deze bibliotheek in een webapplicatie gebruiken?**  
-   Ja, hij is geschikt voor zowel desktop‑ als webapplicaties die Java gebruiken.  
-4. **Wat zijn de prestatie‑implicaties van het gebruik van GroupDocs.Viewer?**  
-   Hoewel efficiënt, moet u de geheugeninstellingen configureren en asynchrone verwerking overwegen voor grote volumes.  
-5. **Is er ondersteuning voor het aanpassen van hoe bijlagen worden weergegeven?**  
-   Ja, verdere aanpassing kan worden bereikt door functionaliteit binnen uw Java‑applicatie uit te breiden.
-
 ## Extra veelgestelde vragen
 
 **Q: Werkt “print pdf attachments java” met met wachtwoord beveiligde PDF’s?**  
