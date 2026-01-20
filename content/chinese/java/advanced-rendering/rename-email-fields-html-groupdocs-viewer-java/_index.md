@@ -161,18 +161,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 - 探索其他渲染格式，如 PDF 或 PNG。  
 - 访问 [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) 获取更深入的 API 见解。
 
-## 常见问题解答
-1. **我可以使用此方法重命名所有电子邮件标题吗？**  
-   - 可以，您可以根据需求将任何标准电子邮件标题映射为新名称。  
-2. **可以在没有许可证的情况下使用 GroupDocs.Viewer 吗？**  
-   - 提供试用版用于测试，但完整功能版需要有效许可证。  
-3. **如何使用 GroupDocs.Viewer 高效处理大量电子邮件？**  
-   - 考虑批处理并优化系统资源，以有效管理更大的数据集。  
-4. **我可以将此解决方案集成到现有的 Java 应用程序中吗？**  
-   - 当然，使用 Maven 依赖即可轻松集成。  
-5. **如果遇到问题，我可以在哪里获得支持？**  
-   - 访问 [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) 获取社区和官方帮助。
-
 ## 常见问答
 
 **问：此方法是否适用于其他电子邮件格式，如 EML？**  

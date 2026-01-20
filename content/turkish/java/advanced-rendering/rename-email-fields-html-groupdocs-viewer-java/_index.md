@@ -163,18 +163,6 @@ Artık GroupDocs.Viewer for Java ile **e-posta alanlarını nasıl yeniden adlan
 - PDF veya PNG gibi diğer render formatlarını keşfedin.  
 - Daha derin API bilgileri için [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) adresini ziyaret edin.
 
-## SSS Bölümü
-1. **Bu yöntemle tüm e-posta başlıklarını yeniden adlandırabilir miyim?**  
-   - Evet, gereksinimlerinize göre herhangi bir standart e-posta başlığını yeni bir isimle eşleyebilirsiniz.  
-2. **GroupDocs.Viewer'ı lisans olmadan kullanmak mümkün mü?**  
-   - Test için bir deneme sürümü mevcuttur, ancak tam özellikli sürüm geçerli bir lisans gerektirir.  
-3. **GroupDocs.Viewer ile büyük miktarda e-postayı verimli bir şekilde nasıl yönetebilirim?**  
-   - Toplu işleme yapmayı ve sistem kaynaklarını optimize etmeyi düşünerek büyük veri setlerini etkili bir şekilde yönetin.  
-4. **Bu çözümü mevcut bir Java uygulamasına entegre edebilir miyim?**  
-   - Kesinlikle, Maven bağımlılıklarıyla entegrasyon oldukça basittir.  
-5. **Sorunlarla karşılaşırsam nereden destek alabilirim?**  
-   - Topluluk ve resmi yardım için [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) adresini ziyaret edin.
-
 ## Sıkça Sorulan Sorular
 
 **S: Bu yaklaşım EML gibi diğer e-posta formatlarıyla çalışır mı?**  

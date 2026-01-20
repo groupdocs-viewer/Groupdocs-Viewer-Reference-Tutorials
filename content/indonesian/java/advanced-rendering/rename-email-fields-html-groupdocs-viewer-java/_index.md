@@ -163,18 +163,6 @@ Anda sekarang tahu **cara mengganti nama email** saat **mengonversi email ke HTM
 - Jelajahi format rendering lain seperti PDF atau PNG.  
 - Kunjungi [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) untuk wawasan API yang lebih mendalam.
 
-## Bagian FAQ
-1. **Bisakah saya mengganti semua header email menggunakan metode ini?**  
-   - Ya, Anda dapat memetakan header email standar apa pun ke nama baru sesuai kebutuhan Anda.  
-2. **Apakah memungkinkan menggunakan GroupDocs.Viewer tanpa lisensi?**  
-   - Versi percobaan tersedia untuk pengujian, tetapi versi lengkap memerlukan lisensi yang valid.  
-3. **Bagaimana cara menangani volume email yang besar secara efisien dengan GroupDocs.Viewer?**  
-   - Pertimbangkan pemrosesan batch dan optimalkan sumber daya sistem untuk mengelola dataset yang lebih besar secara efektif.  
-4. **Bisakah saya mengintegrasikan solusi ini ke dalam aplikasi Java yang ada?**  
-   - Tentu saja, integrasi mudah dilakukan menggunakan dependensi Maven.  
-5. **Di mana saya dapat menemukan dukungan jika mengalami masalah?**  
-   - Kunjungi [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) untuk bantuan komunitas dan resmi.
-
 ## Pertanyaan yang Sering Diajukan
 
 **T: Apakah pendekatan ini bekerja dengan format email lain seperti EML?**  

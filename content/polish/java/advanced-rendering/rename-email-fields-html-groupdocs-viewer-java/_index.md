@@ -163,18 +163,6 @@ Teraz wiesz **jak zmienić nazwy pól e‑mail** podczas **konwersji e‑maila d
 - Poznaj inne formaty renderowania, takie jak PDF lub PNG.  
 - Odwiedź [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) po głębsze informacje o API.
 
-## Sekcja FAQ
-1. **Czy mogę zmienić wszystkie nagłówki e‑mail przy użyciu tej metody?**  
-   - Tak, możesz mapować dowolny standardowy nagłówek e‑mail na nową nazwę zgodnie z potrzebami.  
-2. **Czy można używać GroupDocs.Viewer bez licencji?**  
-   - Dostępna jest wersja próbna do testów, ale pełna wersja wymaga ważnej licencji.  
-3. **Jak efektywnie obsługiwać duże wolumeny e‑mail przy użyciu GroupDocs.Viewer?**  
-   - Rozważ przetwarzanie wsadowe i optymalizację zasobów systemowych, aby skutecznie zarządzać większymi zestawami danych.  
-4. **Czy mogę zintegrować to rozwiązanie z istniejącą aplikacją Java?**  
-   - Oczywiście, integracja jest prosta dzięki zależnościom Maven.  
-5. **Gdzie mogę uzyskać wsparcie w razie problemów?**  
-   - Odwiedź [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) po pomoc społeczności i oficjalną.
-
 ## Najczęściej zadawane pytania
 
 **P: Czy to podejście działa z innymi formatami e‑mail, takimi jak EML?**  

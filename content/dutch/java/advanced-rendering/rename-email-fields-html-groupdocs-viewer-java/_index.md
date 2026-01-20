@@ -163,18 +163,6 @@ Je weet nu **hoe je e‑mail**‑velden kunt hernoemen terwijl je **e‑mail naa
 - Verken andere render‑formaten zoals PDF of PNG.  
 - Bezoek de [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) voor diepere API‑inzichten.
 
-## FAQ‑sectie
-1. **Kan ik alle e‑mail‑headers hernoemen met deze methode?**  
-   - Ja, je kunt elke standaard e‑mail‑header naar een nieuwe naam mappen volgens jouw eisen.  
-2. **Is het mogelijk GroupDocs.Viewer te gebruiken zonder licentie?**  
-   - Een proefversie is beschikbaar voor testen, maar een volledige versie vereist een geldige licentie.  
-3. **Hoe verwerk ik grote hoeveelheden e‑mails efficiënt met GroupDocs.Viewer?**  
-   - Overweeg batch‑verwerking en optimaliseer systeembronnen om grotere datasets effectief te beheren.  
-4. **Kan ik deze oplossing integreren in een bestaande Java‑applicatie?**  
-   - Absoluut, integratie is eenvoudig via Maven‑afhankelijkheden.  
-5. **Waar vind ik ondersteuning als ik problemen tegenkom?**  
-   - Bezoek het [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) voor community‑ en officiële hulp.
-
 ## Veelgestelde vragen
 
 **V: Werkt deze aanpak met andere e‑mailformaten zoals EML?**  

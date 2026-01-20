@@ -164,18 +164,6 @@ Ahora sabes **cómo renombrar campos de correo** mientras **conviertes correo a 
 - Explora otros formatos de renderizado como PDF o PNG.  
 - Visita [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) para obtener información más profunda de la API.
 
-## Sección de preguntas frecuentes
-1. **¿Puedo renombrar todos los encabezados de correo usando este método?**  
-   - Sí, puedes mapear cualquier encabezado estándar de correo a un nuevo nombre según tus requisitos.  
-2. **¿Es posible usar GroupDocs.Viewer sin una licencia?**  
-   - Hay una versión de prueba disponible para pruebas, pero la versión completa requiere una licencia válida.  
-3. **¿Cómo manejo grandes volúmenes de correos de manera eficiente con GroupDocs.Viewer?**  
-   - Considera el procesamiento por lotes y optimiza los recursos del sistema para gestionar conjuntos de datos más grandes de forma eficaz.  
-4. **¿Puedo integrar esta solución en una aplicación Java existente?**  
-   - Absolutamente, la integración es sencilla usando dependencias de Maven.  
-5. **¿Dónde puedo encontrar soporte si encuentro problemas?**  
-   - Visita el [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) para asistencia de la comunidad y oficial.
-
 ## Preguntas frecuentes
 
 **Q: ¿Este enfoque funciona con otros formatos de correo como EML?**  

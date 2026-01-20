@@ -163,18 +163,6 @@ Vous savez maintenant **comment renommer les champs d'e-mail** tout en **convert
 - Explorez d'autres formats de rendu tels que PDF ou PNG.  
 - Consultez [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) pour des informations plus approfondies sur l'API.
 
-## Section FAQ
-1. **Puis-je renommer tous les en-têtes d'e-mail avec cette méthode ?**  
-   - Oui, vous pouvez mapper n'importe quel en-tête d'e-mail standard à un nouveau nom selon vos besoins.  
-2. **Est-il possible d'utiliser GroupDocs.Viewer sans licence ?**  
-   - Une version d'essai est disponible pour les tests, mais une version complète nécessite une licence valide.  
-3. **Comment gérer efficacement de gros volumes d'e-mails avec GroupDocs.Viewer ?**  
-   - Envisagez le traitement par lots et optimisez les ressources système pour gérer efficacement de plus grands ensembles de données.  
-4. **Puis-je intégrer cette solution dans une application Java existante ?**  
-   - Absolument, l'intégration est simple grâce aux dépendances Maven.  
-5. **Où puis-je trouver du support en cas de problème ?**  
-   - Consultez le [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) pour l'aide communautaire et officielle.
-
 ## Questions fréquemment posées
 
 **Q : Cette approche fonctionne-t-elle avec d'autres formats d'e-mail comme EML ?**  

@@ -163,18 +163,6 @@ Nyní víte **jak přejmenovat pole e‑mailu** při **převodu e‑mailu do HTM
 - Prozkoumejte další formáty vykreslování, jako PDF nebo PNG.  
 - Navštivte [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) pro podrobnější informace o API.
 
-## Sekce FAQ
-1. **Mohu přejmenovat všechny hlavičky e‑mailu pomocí této metody?**  
-   - Ano, můžete mapovat jakoukoli standardní hlavičku e‑mailu na nový název podle vašich požadavků.
-2. **Je možné použít GroupDocs.Viewer bez licence?**  
-   - Zkušební verze je k dispozici pro testování, ale plnohodnotná verze vyžaduje platnou licenci.
-3. **Jak efektivně zvládnout velké objemy e‑mailů pomocí GroupDocs.Viewer?**  
-   - Zvažte dávkové zpracování a optimalizujte systémové zdroje pro efektivní správu větších datových sad.
-4. **Mohu tuto řešení integrovat do existující Java aplikace?**  
-   - Rozhodně, integrace je jednoduchá pomocí Maven závislostí.
-5. **Kde mohu najít podporu, pokud narazím na problémy?**  
-   - Navštivte [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) pro komunitní a oficiální pomoc.
-
 ## Často kladené otázky
 
 **Q: Funguje tento přístup i s jinými formáty e‑mailu, jako je EML?**  

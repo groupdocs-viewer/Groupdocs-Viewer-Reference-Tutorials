@@ -163,18 +163,6 @@ Bây giờ bạn đã biết **cách đổi tên trường email** khi **chuyể
 - Khám phá các định dạng kết xuất khác như PDF hoặc PNG.  
 - Truy cập [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) để hiểu sâu hơn về API.
 
-## Phần Câu Hỏi Thường Gặp
-1. **Tôi có thể đổi tên tất cả tiêu đề email bằng phương pháp này không?**  
-   - Có, bạn có thể ánh xạ bất kỳ tiêu đề email tiêu chuẩn nào thành tên mới theo yêu cầu của mình.  
-2. **Có thể sử dụng GroupDocs.Viewer mà không có giấy phép không?**  
-   - Có phiên bản dùng thử để thử nghiệm, nhưng phiên bản đầy đủ yêu cầu giấy phép hợp lệ.  
-3. **Làm sao để xử lý khối lượng lớn email một cách hiệu quả với GroupDocs.Viewer?**  
-   - Xem xét xử lý batch và tối ưu tài nguyên hệ thống để quản lý tập dữ liệu lớn một cách hiệu quả.  
-4. **Tôi có thể tích hợp giải pháp này vào ứng dụng Java hiện có không?**  
-   - Chắc chắn, việc tích hợp rất đơn giản bằng cách sử dụng các phụ thuộc Maven.  
-5. **Tôi có thể tìm hỗ trợ ở đâu nếu gặp vấn đề?**  
-   - Truy cập [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) để nhận hỗ trợ từ cộng đồng và chính thức.
-
 ## Câu Hỏi Thường Gặp
 **Q: Phương pháp này có hoạt động với các định dạng email khác như EML không?**  
 A: Có, GroupDocs.Viewer hỗ trợ cả tệp MSG và EML; logic ánh xạ trường vẫn áp dụng.

@@ -162,18 +162,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 - สำรวจรูปแบบการแสดงผลอื่น ๆ เช่น PDF หรือ PNG.  
 - เยี่ยมชม [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) เพื่อรับข้อมูลเชิงลึกเกี่ยวกับ API.
 
-## ส่วนคำถามที่พบบ่อย
-1. **Can I rename all email headers using this method?**  
-   - Yes, you can map any standard email header to a new name as per your requirements.  
-2. **Is it possible to use GroupDocs.Viewer without a license?**  
-   - A trial version is available for testing, but a full‑featured version requires a valid license.  
-3. **How do I handle large volumes of emails efficiently with GroupDocs.Viewer?**  
-   - Consider batch processing and optimize system resources to manage larger datasets effectively.  
-4. **Can I integrate this solution into an existing Java application?**  
-   - Absolutely, integration is straightforward using Maven dependencies.  
-5. **Where can I find support if I encounter issues?**  
-   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community and official assistance.
-
 ## คำถามที่พบบ่อย
 **Q: Does this approach work with other email formats like EML?**  
 A: Yes, GroupDocs.Viewer supports both MSG and EML files; the same field‑mapping logic applies.

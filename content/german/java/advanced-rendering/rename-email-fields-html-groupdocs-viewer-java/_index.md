@@ -163,18 +163,6 @@ Sie wissen jetzt, **wie man E‑Mail‑Felder** beim **Konvertieren von E‑Mail
 - Erkunden Sie andere Render‑Formate wie PDF oder PNG.  
 - Besuchen Sie [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) für tiefere API‑Einblicke.
 
-## FAQ‑Abschnitt
-1. **Kann ich alle E‑Mail‑Header mit dieser Methode umbenennen?**  
-   - Ja, Sie können jeden Standard‑E‑Mail‑Header nach Ihren Anforderungen auf einen neuen Namen abbilden.  
-2. **Ist es möglich, GroupDocs.Viewer ohne Lizenz zu verwenden?**  
-   - Eine Testversion steht zum Testen zur Verfügung, aber eine voll funktionsfähige Version erfordert eine gültige Lizenz.  
-3. **Wie gehe ich effizient mit großen Mengen an E‑Mails mit GroupDocs.Viewer um?**  
-   - Erwägen Sie die Stapelverarbeitung und optimieren Sie Systemressourcen, um größere Datensätze effektiv zu verwalten.  
-4. **Kann ich diese Lösung in eine bestehende Java‑Anwendung integrieren?**  
-   - Absolut, die Integration ist dank Maven‑Abhängigkeiten unkompliziert.  
-5. **Wo finde ich Unterstützung, wenn ich auf Probleme stoße?**  
-   - Besuchen Sie das [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) für Community‑ und offizielle Unterstützung.
-
 ## Häufig gestellte Fragen
 
 **Q: Funktioniert dieser Ansatz mit anderen E‑Mail‑Formaten wie EML?**  

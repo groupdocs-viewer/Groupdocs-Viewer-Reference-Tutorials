@@ -162,18 +162,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 - PDF 또는 PNG와 같은 다른 렌더링 형식을 탐색하십시오.  
 - [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)을 방문하여 더 깊은 API 인사이트를 얻으세요.
 
-## FAQ 섹션
-1. **Can I rename all email headers using this method?**  
-   - Yes, you can map any standard email header to a new name as per your requirements.  
-2. **Is it possible to use GroupDocs.Viewer without a license?**  
-   - A trial version is available for testing, but a full‑featured version requires a valid license.  
-3. **How do I handle large volumes of emails efficiently with GroupDocs.Viewer?**  
-   - Consider batch processing and optimize system resources to manage larger datasets effectively.  
-4. **Can I integrate this solution into an existing Java application?**  
-   - Absolutely, integration is straightforward using Maven dependencies.  
-5. **Where can I find support if I encounter issues?**  
-   - Visit the [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) for community and official assistance.
-
 ## 자주 묻는 질문
 
 **Q: 이 방법이 EML과 같은 다른 이메일 형식에도 작동하나요?**  

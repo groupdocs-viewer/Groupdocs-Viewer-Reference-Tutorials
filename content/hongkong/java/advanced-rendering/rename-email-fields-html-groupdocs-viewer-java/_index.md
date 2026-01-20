@@ -161,18 +161,6 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 - 探索其他渲染格式，如 PDF 或 PNG。  
 - 前往 [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) 取得更深入的 API 資訊。
 
-## FAQ Section
-1. **我可以使用此方法重新命名所有電子郵件標頭嗎？**  
-   - 可以，您可以依需求將任何標準電子郵件標頭映射為新名稱。  
-2. **是否可以在沒有授權的情況下使用 GroupDocs.Viewer？**  
-   - 提供試用版供測試使用，但完整功能版需有效授權。  
-3. **如何使用 GroupDocs.Viewer 高效處理大量電子郵件？**  
-   - 考慮批次處理，並優化系統資源以有效管理大型資料集。  
-4. **我可以將此解決方案整合到現有的 Java 應用程式中嗎？**  
-   - 當然可以，使用 Maven 相依性即可輕鬆整合。  
-5. **如果遇到問題，我該去哪裡尋求支援？**  
-   - 前往 [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) 取得社群與官方協助。
-
 ## Frequently Asked Questions
 
 **Q: 此方法是否支援其他電子郵件格式，例如 EML？**  

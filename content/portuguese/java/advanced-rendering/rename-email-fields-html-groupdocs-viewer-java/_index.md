@@ -163,18 +163,6 @@ Agora você sabe **como renomear campos de email** ao **converter email para HTM
 - Explore outros formatos de renderização como PDF ou PNG.  
 - Visite [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) para obter insights mais profundos da API.
 
-## Seção de Perguntas Frequentes
-1. **Posso renomear todos os cabeçalhos de email usando este método?**  
-   - Sim, você pode mapear qualquer cabeçalho padrão de email para um novo nome conforme suas necessidades.  
-2. **É possível usar o GroupDocs.Viewer sem licença?**  
-   - Uma versão de teste está disponível para avaliação, mas a versão completa requer uma licença válida.  
-3. **Como lidar com grandes volumes de emails de forma eficiente com o GroupDocs.Viewer?**  
-   - Considere o processamento em lote e otimize os recursos do sistema para gerenciar conjuntos de dados maiores de forma eficaz.  
-4. **Posso integrar esta solução em uma aplicação Java existente?**  
-   - Absolutamente, a integração é simples usando dependências Maven.  
-5. **Onde posso encontrar suporte se encontrar problemas?**  
-   - Visite o [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) para assistência da comunidade e oficial.
-
 ## Perguntas Frequentes
 
 **Q: Essa abordagem funciona com outros formatos de email como EML?**  
