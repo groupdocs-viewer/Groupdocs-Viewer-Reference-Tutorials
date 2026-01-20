@@ -1,48 +1,66 @@
 ---
-"date": "2025-04-24"
-"description": "Padroneggia il rendering delle diapositive nascoste nelle applicazioni Java con GroupDocs.Viewer. Scopri come impostare, configurare e integrare i documenti per una visibilità completa."
-"title": "Java&#58; come visualizzare le pagine nascoste utilizzando GroupDocs.Viewer"
-"url": "/it/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-20'
+description: Scopri come visualizzare le pagine nascoste in Java usando GroupDocs.Viewer.
+  Questa guida copre l'installazione, la configurazione e il codice per mostrare le
+  diapositive nascoste nelle applicazioni Java.
+keywords:
+- render hidden pages java
+- GroupDocs Viewer setup
+- Java document rendering
+title: 'Java: Renderizzare pagine nascoste con GroupDocs.Viewer'
 type: docs
+url: /it/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
+weight: 1
 ---
-# Java: come visualizzare le pagine nascoste utilizzando GroupDocs.Viewer
 
-## Introduzione
+# Java: Rendering delle pagine nascoste Java con GroupDocs.Viewer
 
-Desideri visualizzare diapositive o sezioni nascoste nei tuoi documenti? Questo tutorial ti guiderà nell'utilizzo di GroupDocs.Viewer per Java per rivelare queste pagine nascoste. Che si tratti di presentazioni PowerPoint, documenti Word o altri formati di file supportati da GroupDocs, questa funzione garantisce la visibilità di tutti i contenuti.
+Hai bisogno di **render hidden pages Java** in modo che ogni diapositiva o sezione di una presentazione diventi visibile ai tuoi utenti? In questo tutorial ti guideremo nell'utilizzo di GroupDocs.Viewer per Java per esporre quelle pagine nascoste, sia che siano in PowerPoint, Word, PDF o in qualsiasi altro formato supportato. Alla fine, avrai un esempio di codice pronto all'uso e una solida comprensione di quando e perché abilitare questa funzionalità.
 
-**Cosa imparerai:**
-- Configurazione e utilizzo di GroupDocs.Viewer nei progetti Java.
-- Abilitazione del rendering delle pagine nascoste all'interno dei documenti.
-- Opzioni di configurazione chiave per una visualizzazione ottimale dei documenti.
-- Applicazioni pratiche e possibilità di integrazione con altri sistemi.
+![Render Hidden Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
-Cominciamo esaminando i prerequisiti necessari per padroneggiare questa funzionalità!
+**Cosa imparerai**
+- Come configurare GroupDocs.Viewer in un progetto Java.
+- I passaggi esatti per abilitare il rendering delle pagine nascoste.
+- Suggerimenti di configurazione per prestazioni ottimali.
+- Scenari reali in cui mostrare contenuti nascosti aggiunge valore.
+
+## Risposte rapide
+- **Cosa significa “render hidden pages Java”?** Indica a GroupDocs.Viewer di includere diapositive o sezioni contrassegnate come nascoste durante il rendering.  
+- **Quali formati sono supportati?** PowerPoint, Word, PDF, Excel e molti altri.  
+- **È necessaria una licenza?** Una prova gratuita funziona per i test; è necessaria una licenza commerciale per la produzione.  
+- **È richiesto del codice aggiuntivo?** Basta una singola opzione (`setRenderHiddenPages(true)`) nella configurazione del rendering.  
+- **Posso incorporare risorse?** Sì—usa `HtmlViewOptions.forEmbeddedResources` per includere CSS/JS all'interno dell'HTML.
+
+## Cos'è “render hidden pages Java”?
+Quando una presentazione contiene diapositive nascoste, queste vengono normalmente saltate durante la visualizzazione standard. Abilitare **render hidden pages Java** costringe il visualizzatore a trattare quelle diapositive come qualsiasi altra pagina, garantendo la completa fedeltà del documento.
+
+## Perché renderizzare pagine nascoste nelle applicazioni Java?
+- **Tracce di audit complete** – I team legali o di conformità possono verificare ogni diapositiva, anche quelle nascoste al presentatore.  
+- **Contenuti educativi** – Gli insegnanti possono fornire agli studenti domande di pratica nascoste nel file originale.  
+- **Archiviazione completa** – Conserva ogni informazione per riferimenti futuri.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere:
 
-### Librerie, versioni e dipendenze richieste
-- GroupDocs.Viewer per Java versione 25.2 o successiva.
-- Java Development Kit (JDK) installato sul computer.
+### Librerie richieste, versioni e dipendenze
+- GroupDocs.Viewer per Java versione 25.2 o successiva.  
+- Java Development Kit (JDK) installato sulla tua macchina.
 
 ### Requisiti di configurazione dell'ambiente
-- Ambiente di sviluppo integrato (IDE) come IntelliJ IDEA o Eclipse.
-- Strumento di compilazione Maven per gestire le dipendenze.
+- Un IDE come IntelliJ IDEA o Eclipse.  
+- Maven per la gestione delle dipendenze.
 
 ### Prerequisiti di conoscenza
-- Conoscenza di base della programmazione Java.
-- Familiarità con l'utilizzo di Maven per la gestione delle dipendenze.
+- Conoscenze di base di programmazione Java.  
+- Familiarità con il `pom.xml` di Maven.
 
-## Impostazione di GroupDocs.Viewer per Java
-
-Per iniziare, configura GroupDocs.Viewer nel tuo progetto. Ecco come fare:
+## Configurazione di GroupDocs.Viewer per Java
 
 ### Configurazione Maven
 
-Aggiungi la seguente configurazione al tuo `pom.xml` file per includere GroupDocs.Viewer come dipendenza:
+Aggiungi la seguente configurazione al tuo file `pom.xml` per includere GroupDocs.Viewer come dipendenza:
 
 ```xml
 <repositories>
@@ -62,10 +80,10 @@ Aggiungi la seguente configurazione al tuo `pom.xml` file per includere GroupDoc
 </dependencies>
 ```
 
-### Fasi di acquisizione della licenza
-- **Prova gratuita**Inizia con una prova gratuita per esplorare le funzionalità di GroupDocs.Viewer.
-- **Licenza temporanea**: Ottieni una licenza temporanea per test estesi senza limitazioni.
-- **Acquistare**: Acquista una licenza commerciale per un utilizzo a lungo termine.
+### Passaggi per l'acquisizione della licenza
+- **Prova gratuita** – Esplora tutte le funzionalità senza costi.  
+- **Licenza temporanea** – Estendi i test senza restrizioni.  
+- **Acquisto** – Ottieni una licenza commerciale per le distribuzioni in produzione.
 
 ### Inizializzazione e configurazione di base
 
@@ -78,41 +96,39 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-Inizializzare l'oggetto Viewer per iniziare a utilizzare le funzionalità di GroupDocs.Viewer.
+Ora sei pronto per creare un'istanza `Viewer` e avviare il rendering.
 
 ## Guida all'implementazione
 
 ### Rendering delle pagine nascoste
 
-Questa funzionalità consente di visualizzare le pagine nascoste nei documenti, garantendo la completa visibilità di tutti i contenuti. Analizziamo i passaggi:
+#### Passo 1: Definire la directory di output e il formato del percorso file
 
-#### Passaggio 1: definire la directory di output e il formato del percorso del file
-
-Imposta dove verranno salvati i file HTML renderizzati:
+Configura dove verranno salvati i file HTML renderizzati:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **`outputDirectory`**: Percorso della directory in cui archiviare i file di output.
-- **`pageFilePathFormat`**: Formato per denominare il file di ogni pagina, utilizzando segnaposto come `{0}`.
+- **`outputDirectory`** – Cartella di destinazione per i file generati.  
+- **`pageFilePathFormat`** – Modello di denominazione per ogni pagina (es., `page_1.html`).
 
-#### Passaggio 2: configurare HtmlViewOptions
+#### Passo 2: Configurare HtmlViewOptions
 
-Crea un'istanza di `HtmlViewOptions`, specificando che le risorse devono essere incorporate:
+Crea un'istanza `HtmlViewOptions` e abilita il rendering delle pagine nascoste:
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-viewOptions.setRenderHiddenPages(true); // Abilita il rendering delle pagine nascoste
+viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`**: Garantisce che tutte le risorse necessarie siano incluse nei file HTML.
-- **`setRenderHiddenPages(true)`**: Attiva il rendering delle diapositive o delle sezioni nascoste.
+- **`forEmbeddedResources`** – Inserisce CSS/JS direttamente nell'HTML, semplificando il deployment.  
+- **`setRenderHiddenPages(true)`** – La riga chiave che rende visibili le diapositive nascoste.
 
-#### Passaggio 3: rendering del documento
+#### Passo 3: Renderizzare il documento
 
-Utilizza l'oggetto Viewer per visualizzare il documento con le opzioni specificate:
+Infine, invoca il viewer con le tue opzioni:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE")) {
@@ -120,57 +136,74 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 }
 ```
 
-- **`Viewer`**: Gestisce il caricamento e il rendering dei documenti.
-- **`view(viewOptions)`**: Esegue il processo di rendering in base alle opzioni fornite.
+- **`Viewer`** – Carica il documento sorgente.  
+- **`view(viewOptions)`** – Esegue il processo di rendering utilizzando le opzioni definite.
 
-**Suggerimento per la risoluzione dei problemi:** Per evitare problemi comuni, assicurati che il percorso del documento sia corretto e di disporre delle autorizzazioni di scrittura per la directory di output.
+**Suggerimento per la risoluzione dei problemi:** Verifica che il percorso del documento sia corretto e che l'applicazione abbia i permessi di scrittura per la cartella di output. Permessi mancanti causano spesso `IOException` durante il rendering.
 
 ## Applicazioni pratiche
 
-1. **Presentazioni aziendali**:Includi automaticamente tutte le diapositive, comprese quelle contrassegnate come nascoste, assicurando la distribuzione completa dei contenuti durante le presentazioni.
-2. **Archiviazione dei documenti**: Archivia ogni informazione nei documenti legali rendendo visibili tutte le sezioni.
-3. **Materiali didattici**Offrire agli studenti l'accesso completo al materiale didattico, comprese domande di pratica o note aggiuntive solitamente nascoste.
-4. **Report interattivi**: consente agli utenti di esplorare ogni aspetto dei report senza perdere dati supplementari.
-5. **Documentazione del software**: Garantire una documentazione completa esponendo le impostazioni di configurazione opzionali.
+1. **Presentazioni aziendali** – Assicurati che nessuna diapositiva venga omessa durante le presentazioni automatizzate.  
+2. **Archiviazione di documenti legali** – Cattura ogni clausola, anche quelle nascoste per uso interno.  
+3. **Materiali educativi** – Fornisci agli studenti domande di pratica nascoste o note dell'istruttore.  
+4. **Report interattivi** – Consenti agli utenti finali di esplorare dati supplementari nascosti nel file originale.  
+5. **Documentazione software** – Rivela sezioni di configurazione opzionali che erano nascoste per brevità.
 
 ## Considerazioni sulle prestazioni
 
-Per ottimizzare le prestazioni quando si utilizza GroupDocs.Viewer:
-- **Gestione delle risorse**: Monitora l'utilizzo della memoria e regola le impostazioni JVM secondo necessità.
-- **Bilanciamento del carico**: distribuire le attività di rendering su più istanze se si gestiscono grandi volumi di documenti.
-- **Gestione efficiente dei file**: Utilizzare operazioni I/O sui file efficienti per ridurre al minimo la latenza.
+- **Gestione delle risorse** – Monitora la dimensione dell'heap JVM; aumenta `-Xmx` se elabori file molto grandi.  
+- **Bilanciamento del carico** – Distribuisci i job di rendering su più istanze di servizio per scenari ad alto throughput.  
+- **I/O efficiente** – Usa stream bufferizzati se devi pre‑processare i file prima del rendering.
 
-## Conclusione
+## Problemi comuni e soluzioni
 
-Seguendo questo tutorial, hai imparato come abilitare il rendering delle pagine nascoste nelle tue applicazioni Java utilizzando GroupDocs.Viewer. Questa funzionalità apre nuove possibilità per la gestione e la presentazione dei documenti, garantendo che nessun contenuto rimanga nascosto.
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| No output files generated | Incorrect `outputDirectory` path or missing write permission | Double‑check the path and grant write access to the folder |
+| Hidden pages still missing | `setRenderHiddenPages(true)` not called | Ensure the option is set before calling `viewer.view()` |
+| Out‑of‑memory errors on large PPTX | Default JVM heap too low | Increase heap size (`-Xmx2g` or higher) or render pages in batches |
+| Broken images in HTML | Resources not embedded correctly | Use `HtmlViewOptions.forEmbeddedResources` as shown above |
 
-I prossimi passi includono l'esplorazione di altre funzionalità di GroupDocs.Viewer o l'integrazione con i sistemi esistenti per migliorarne ulteriormente le funzionalità. Prova a implementare questa soluzione oggi stesso e scopri la differenza!
+| Problema | Causa | Soluzione |
+|----------|-------|-----------|
+| Nessun file di output generato | Percorso `outputDirectory` errato o permesso di scrittura mancante | Verifica nuovamente il percorso e concedi i permessi di scrittura alla cartella |
+| Le pagine nascoste sono ancora mancanti | `setRenderHiddenPages(true)` non chiamato | Assicurati che l'opzione sia impostata prima di chiamare `viewer.view()` |
+| Errori di out‑of‑memory su PPTX di grandi dimensioni | Heap JVM predefinito troppo piccolo | Aumenta la dimensione dell'heap (`-Xmx2g` o superiore) o renderizza le pagine in batch |
+| Immagini rotte in HTML | Risorse non incorporate correttamente | Usa `HtmlViewOptions.forEmbeddedResources` come mostrato sopra |
 
-## Sezione FAQ
+## Domande frequenti
 
-**D1: Quali formati supporta GroupDocs.Viewer?**
-A1: Supporta un'ampia gamma di formati di documenti, tra cui PDF, Word, Excel, PowerPoint e altri.
+**D1: Quali formati supporta GroupDocs.Viewer?**  
+R1: Supporta PDF, Word, Excel, PowerPoint e molti altri tipi di documenti popolari.
 
-**D2: Posso utilizzare GroupDocs.Viewer in un'applicazione commerciale?**
-A2: Sì, puoi acquistare una licenza commerciale per un utilizzo a lungo termine.
+**D2: Posso usare GroupDocs.Viewer in un'applicazione commerciale?**  
+R2: Sì, è necessaria una licenza commerciale per l'uso in produzione.
 
-**D3: Come posso gestire documenti di grandi dimensioni con GroupDocs.Viewer?**
-A3: Ottimizzare la gestione della memoria e prendere in considerazione l'utilizzo di tecniche di bilanciamento del carico per gestire efficacemente l'utilizzo delle risorse.
+**D3: Come gestisco documenti di grandi dimensioni con GroupDocs.Viewer?**  
+R3: Ottimizza le impostazioni di memoria, considera il rendering in parallelo e utilizza tecniche di bilanciamento del carico.
 
-**D4: È possibile personalizzare il formato di output?**
-A4: Sì, puoi specificare formati diversi per il rendering, come HTML o formati immagine.
+**D4: È possibile personalizzare il formato di output?**  
+R4: Assolutamente – puoi renderizzare in HTML, PNG, JPEG o PDF scegliendo il `*ViewOptions` appropriato.
 
-**D5: Cosa devo fare se riscontro errori durante la configurazione?**
-A5: Assicurati che tutte le dipendenze siano configurate correttamente nel tuo `pom.xml` e verificare l'accuratezza dei percorsi dei file.
+**D5: Cosa devo fare se incontro errori durante la configurazione?**  
+R5: Verifica che tutte le dipendenze Maven siano dichiarate correttamente, assicurati che il percorso del documento sia accurato e controlla i permessi dei file.
 
 ## Risorse
 
-- **Documentazione**: [Documentazione Java di GroupDocs.Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Riferimento API**: [Riferimento API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Scaricamento**: [Scarica GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Acquistare**: [Acquista la licenza GroupDocs](https://purchase.groupdocs.com/buy)
-- **Prova gratuita**: [Inizia una prova gratuita](https://releases.groupdocs.com/viewer/java/)
-- **Licenza temporanea**: [Ottieni una licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- **Supporto**: [Forum di GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentazione**: [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Riferimento API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)
+- **Acquisto**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Prova gratuita**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Licenza temporanea**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Supporto**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Intraprendi oggi stesso il tuo viaggio con GroupDocs.Viewer per Java e scopri tutte le potenzialità del rendering dei documenti!
+Inizia il tuo percorso con GroupDocs.Viewer per Java oggi e sblocca tutto il potenziale del rendering dei documenti!
+
+---
+
+**Ultimo aggiornamento:** 2026-01-20  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs  
+
+---
