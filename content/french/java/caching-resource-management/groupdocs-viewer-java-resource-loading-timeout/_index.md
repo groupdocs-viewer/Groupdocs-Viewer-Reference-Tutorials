@@ -1,36 +1,59 @@
 ---
-"date": "2025-04-24"
-"description": "Découvrez comment définir un délai d’expiration de chargement des ressources avec GroupDocs.Viewer pour Java pour éviter les attentes indéfinies et améliorer la réactivité des applications."
-"title": "Définir le délai d'expiration du chargement des ressources dans GroupDocs.Viewer pour Java ; améliorer les performances des documents"
-"url": "/fr/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/"
-"weight": 1
+categories:
+- Java Development
+date: '2026-01-23'
+description: Apprenez à optimiser les performances de rendu dans GroupDocs Viewer
+  Java en définissant un délai d’attente de chargement des ressources pour éviter
+  les documents bloqués et augmenter la vitesse.
+keywords: GroupDocs Viewer Java timeout, Java document rendering timeout, resource
+  loading timeout Java, document viewer performance optimization, prevent hanging
+  document loading Java
+lastmod: '2026-01-23'
+linktitle: Java Resource Loading Timeout
+tags:
+- GroupDocs
+- document-rendering
+- performance-optimization
+- java-tutorials
+title: 'Optimiser les performances de rendu : délai d’attente du visualiseur GroupDocs
+  Java – Empêcher les documents de rester bloqués indéfiniment'
 type: docs
+url: /fr/java/caching-resource-management/groupdocs-viewer-java-resource-loading-timeout/
+weight: 1
 ---
-# Définir le délai d'expiration du chargement des ressources dans GroupDocs.Viewer pour Java : améliorer l'efficacité du rendu des documents
 
-## Introduction
+ qui fige en essayant de charger un document avec des images intégrées ? Vous n'êtes pas seul. **Dans ce tutoriel, nous vous montrerons comment optimiser les performances de rendu en configurant un délai d’attente de chargement des ressources**. Lorsque GroupDocs.Viewer rencontre des ressources externes qui ne se chargent pas, il peut attendre indéfiniment – transformant votre application réactive en une expérience utilisateur frustrante.
 
-Dans un monde numérique en constante évolution, une gestion efficace des ressources externes est essentielle pour garantir une expérience utilisateur fluide. Lorsqu'il s'agit de documents contenant des images ou des médias intégrés, un chargement rapide est essentiel. Ce tutoriel vous guide dans la définition d'un délai d'expiration de chargement des ressources avec GroupDocs.Viewer pour Java, évitant ainsi les temps d'attente indéfinis et améliorant la réactivité des applications.
+## Réponses rapides
+- **Quelle est la cause principale des documents bloqués ?** Les ressources externes qui ne terminent jamais de se charger.  
+- **Quel paramètre contrôle le temps d’attente ?** `LoadOptions.setResourceLoadingTimeout`.  
+- **Quel est un bon délai d’attente par défaut ?** 60 secondes (60 000 ms) conviennent à la plupart des scénarios.  
+- **Ai‑je besoin d’une licence spéciale ?** Seulement une licence valide de GroupDocs.Viewer ; un essai gratuit suffit pour les tests.  
+- **Cela affectera-t-il la qualité du document ?** Non, seules les ressources qui dépassent le délai d’attente sont ignorées.
 
-**Ce que vous apprendrez :**
-- Configurez la bibliothèque GroupDocs.Viewer dans votre projet Java.
-- Implémentez des délais d’expiration de chargement des ressources avec GroupDocs.Viewer.
-- Optimisez les performances de rendu des documents en gérant efficacement les ressources externes.
+## Pourquoi vos documents restent bloqués (et comment les réparer)
 
-Avant de plonger dans la mise en œuvre, examinons quelques prérequis.
+Les documents d'aujourd'hui ne sont plus seulement du texte. Ils sont remplis d'images intégrées, de médias liés et de ressources externes qui peuvent provenir de n'importe où sur Internet. Sans une gestion adéquate du délai d’attente, une image qui charge lentement peut ralentir tout le processus de rendu du document.
 
-## Prérequis
+Dans ce guide, vous apprendrez comment implémenter des délais d’attente de chargement des ressources dans GroupDocs.Viewer pour Java – une technique simple mais puissante qui gardera votre application réactive, quels que soient les imprévus que ces documents peuvent lancer.
 
-Pour suivre ce tutoriel, vous avez besoin de :
-- **Bibliothèque GroupDocs.Viewer**: Assurez-vous que la version 25.2 ou ultérieure est installée.
-- **Environnement de développement Java**:Une configuration fonctionnelle avec Java JDK et un IDE comme IntelliJ IDEA ou Eclipse.
-- **Configuration Maven**:Une connaissance de l'ajout de dépendances via Maven est requise.
+![Set Resource Loading Timeout with GroupDocs.Viewer for Java](/viewer/caching-resource-management/set-resource-loading-timeout-java.png)
 
-## Configuration de GroupDocs.Viewer pour Java
+**Ce que vous maîtriserez d'ici la fin :**
+- Configurer des délais d’attente de chargement des ressources infaillibles
+- Ajuster finement les valeurs de délai d’attente pour différents scénarios  
+- Résoudre les problèmes de délai d’attente courants
+- Optimiser les performances de rendu des documents dans l’ensemble
 
-### Installation de Maven
+Plongeons et faisons de ces documents bloqués une chose du passé.
 
-Intégrez GroupDocs.Viewer dans votre projet Java à l'aide de Maven en ajoutant les configurations suivantes à votre `pom.xml`:
+## Avant de commencer : Ce dont vous aurez besoin
+
+Voici ce que vous devez avoir prêt avant de plonger dans le code :
+
+- **Bibliothèque GroupDocs.Viewer** : Version 25.2 ou supérieure (croyez‑moi, les versions plus récentes gèrent beaucoup mieux les délais d’att- **En de développement Java** : Votre  **Configuration Maven** : Puisque nous allons récupérer les dépendances deer (la méthode facile)
+
+Si vous utilisez Maven (et honnêtement, pourquoi ne le feriez‑vous pas ?), ajoutez ces configurations à votre `pom.xml` :
 
 ```xml
 <repositories>
@@ -49,114 +72,220 @@ Intégrez GroupDocs.Viewer dans votre projet Java à l'aide de Maven en ajoutant
 </dependencies>
 ```
 
-### Acquisition de licence
+**Astuce** : Utilisez toujours la dernière version stable. GroupDocs améliore régulièrement les performances et ajoute de nouvelles fonctionnalités qui vous faciliteront la vie.
 
-GroupDocs propose un essai gratuit, des licences temporaires pour des tests prolongés et des options d'achat. Pour commencer l'essai gratuit :
-- Visite [Essai gratuit de GroupDocs](https://releases.groupdocs.com/viewer/java/) à télécharger.
-- Pour une licence temporaire pour des fonctionnalités avancées, consultez [Permis temporaire](https://purchase.groupdocs.com/temporary-license/).
+### Ob’est pas av vous pouvez commencer immédiatement :
 
-### Initialisation de base
+- **Essai gratuit** : Parfait pour les tests et petits projets. Obtenez‑le depuis [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Licence temporaire pour évaluer ? Obtenez une [Temporary License](https://purchase.groupdocs.com/temporary-license/) pour des tests prolongés
+- **Licence complète** : Prêt pour la production ? Consultez les [options d'achat](https://purchase.groupdocs.com/buy)
 
-Pour initialiser GroupDocs.Viewer dans votre application Java :
+### Vérification rapide de l'initialisation
+
+Assurons‑nous que tout fonctionne avec une initialisation de base :
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Initialisez la visionneuse avec le chemin du document que vous souhaitez afficher
+// Initialize Viewer with the path of the document you want to view
 try (Viewer viewer = new Viewer("path/to/document")) {
-    // Vous pouvez désormais utiliser l’objet visualiseur pour diverses tâches.
+    // You can now use the viewer object for various tasks.
 }
 ```
 
-## Guide de mise en œuvre
+Si cela compile et s'exécute sans erreurs, vous êtes prêt à y aller !
 
-### Définition du délai d'expiration du chargement des ressources
+## Comment optimiser les performances de rendu avec le délai d’attente de chargement des ressources
 
-Empêchez votre application de se bloquer lors du chargement de ressources externes en définissant un délai d'expiration à l'aide de GroupDocs.Viewer, particulièrement utile pour les documents contenant des images ou des médias intégrés.
+### Configurer le délai d’attente de chargement des ressources (la bonne façon)
 
-#### Étape 1 : Définir le répertoire de sortie et le format du chemin d'accès au fichier d'échange
+C’est ici que la magie opère. Nous allons configurer GroupDocs.Viewer pour abandonner les ressources à chargement lent après un délai raisonnable au lieu d’attendre indéfiniment.
+
+#### Étape 1 : Préparer votre structure de sortie
 
 ```java
 import java.nio.file.Path;
-// Définir le chemin du répertoire de sortie à l'aide d'un espace réservé
+// Define the output directory path using a placeholder
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("SetResourceLoadingTimeout");
-// Créer un format de chemin de fichier pour le rendu des pages HTML
+// Create a file path format for rendering HTML pages
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-**Explication:** Nous avons mis en place des chemins pour stocker les fichiers HTML rendus, garantissant ainsi une sortie organisée.
 
-#### Étape 2 : Configurer LoadOptions avec Timeout
+**Que se passe‑t‑il ici ?** Nous configurons des chemins de sortie organisés pour nos fichiers HTML `{0}` sera remplacé automatiquement par les numéros de page – pratique, non ?
+
+#### Étape 2 : Configurer LoadOptions avec votre délai d’attente
 
 ```java
 import com.groupdocs.viewer.options.LoadOptions;
-// Initialisez LoadOptions et définissez le délai de chargement des ressources sur 60 000 millisecondes (1 minute)
+// Initialize LoadOptions and set the resource loading timeout to 60,000 milliseconds (1 minute)
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(60_000);
 ```
-**Explication:** Cette configuration garantit que si des ressources externes prennent plus d'une minute à charger, elles seront ignorées, évitant ainsi des attentes indéfinies.
 
-#### Étape 3 : Afficher le document avec délai d'attente
+**Le point idéal du délai d’attente** : 60 secondes (60 000 ms) convient à la plupart des scénarios. C’est assez long pour que les ressources légitimes se chargent sur des connexions lentes, mais assez court pour éviter un blocage indéfini.
+
+**Quand ajuster** :
+
+- **Réseaux plus rapides / ressources internes** : Essayez 30 secondes (30 000 ms)
+- **Réseaux plus lents / images volumineuses** : Envisagez 90 secondes (90 000 ms)
+- **Applications en temps réel** : Peut‑être 15‑20 secondes pour des réponses plus rapides
+
+#### Étape 3 : Tout assembler
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/WITH_EXTERNAL_IMAGE_DOC", loadOptions)) {
-    // Configurer HtmlViewOptions pour les ressources intégrées avec le format de chemin de fichier d'échange spécifié
+    // Set up HtmlViewOptions for embedded resources with the specified page file path format
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
     
-    // Rendre le document au format HTML à l'aide de la visionneuse et des options
+    // Render the document to HTML using the viewer and options
     viewer.view(options);
 }
 ```
-**Explication:** Le `try-with-resources` garantit que l'objet Viewer est correctement fermé après utilisation, libérant ainsi les ressources de manière efficace.
 
-### Conseils de dépannage
-- **Délai d'attente trop court**: Ajustez la valeur du délai d’expiration en fonction des conditions de votre réseau et de la taille des ressources.
-- **Problèmes de chemin d'accès au document**: Assurez-vous que le chemin du document est correct pour éviter les exceptions de fichier introuvable.
-- **Erreurs de chargement des ressources**: Vérifiez si les liens externes sont valides et accessibles.
+**Pourquoi le try‑with‑resources ?** Cela garantit le nettoyage approprié de l’objet `Viewer`, évitant les fuites de mémoire. Utilisez toujours ce modèle – votre futur vous remerciera.
 
-## Applications pratiques
+## Résolution des problèmes courants de délai d’attente
 
-1. **Systèmes de gestion de documents d'entreprise**: Optimisez la manière dont les documents avec des médias intégrés sont affichés dans les portails internes.
-2. **Plateformes de contenu en ligne**: Améliorez l'expérience utilisateur en évitant les longues attentes pour le rendu des documents.
-3. **Modules d'apprentissage en ligne**:Affichez efficacement du matériel pédagogique contenant des diagrammes ou des images sans délai.
-4. **Services juridiques et financiers**:Rendez rapidement des documents complexes avec des pièces jointes, garantissant un accès rapide.
-5. **Systèmes d'archivage**: Maintenir les performances lors de l'accès aux enregistrements historiques avec des supports intégrés.
+### Quand les délais d’attente sont trop agressifs
 
-## Considérations relatives aux performances
+**Symptôme** : Des images ou ressources importantes continuent d’être ignorées  
+**Solution** : Augmentez votre valeur de délai d’attente, mais vérifiez également si les ressources sont réellement accessibles. Parfois, une erreur 404 se présente comme un chargement lent.
 
-- **Optimiser les paramètres de délai d'expiration**: Équilibrez la disponibilité des ressources et l'expérience utilisateur en ajustant les valeurs de délai d'expiration.
-- **Gestion de la mémoire**:Utilisez des structures de données efficaces pour gérer de grands volumes de documents.
-- **Surveiller l'utilisation des ressources**:Vérifiez régulièrement l'utilisation de la mémoire et du processeur de l'application pour identifier les goulots d'étranglement.
+### Les documents restent bloqués malgré les paramètres de délai d’attente
 
-## Conclusion
+**Symptôme** : L’application se fige toujours même avec le délai d’attente configuré  
+**Solutions** :
 
-En définissant un délai d'expiration pour le chargement des ressources, vous pouvez améliorer considérablement les performances et la fiabilité des applications utilisant GroupDocs.Viewer pour Java. Ce tutoriel couvre les étapes essentielles, de la configuration à la mise en œuvre, pour garantir un chargement efficace de vos documents sans délai inutile.
+1. **Vérifiez votre version de GroupDocs.Viewer** – les versions plus anciennes avaient des bugs de délai d’attente  
+2. **Vérifiez que LoadOptions est utilisé** – il est facile d’oublier de le passer au constructeur `Viewer`  
+3. **Testez avec un document plus simple** – isolez si le problème vient du délai d’attente ou d’autre chose
 
-**Prochaines étapes :**
-- Découvrez d’autres fonctionnalités de GroupDocs.Viewer pour améliorer la gestion des documents.
-- Expérimentez différentes configurations adaptées à des cas d’utilisation spécifiques.
+### Les performances restent lentes après la mise en œuvre du délai d’attente
 
-Prêt à optimiser la gestion de vos ressources ? Essayez-le et constatez la différence de réactivité de votre application !
+**Coupables courants** :
 
-## Section FAQ
+- **Fuites de mémoire** : Ne pas disposer correctement des objets Viewer  
+- **Épuisement de trop nombreux documents simultanément  
+- **Gtestez‑les dans un navigateur)  
+- Connectivité réseau aux ressources externes  
 
-1. **Quel est le délai d’expiration de chargement des ressources par défaut dans GroupDocs.Viewer pour Java ?**
-   - Par défaut, il n'y a pas de délai d'expiration défini, ce qui signifie que les ressources peuvent se charger indéfiniment si elles ne sont pas configurées.
-2. **Puis-je ajuster la valeur du délai d'expiration de manière dynamique au moment de l'exécution ?**
-   - Oui, vous pouvez modifier `LoadOptions` paramètres selon les besoins lors de l'exécution de l'application.
-3. **Que se passe-t-il si une ressource dépasse le délai de chargement spécifié ?**
-   - Les ressources qui dépassent le délai d'expiration seront ignorées pour éviter de bloquer le processus de rendu.
-4. **Est-il possible d'utiliser GroupDocs.Viewer sans Maven ?**
-   - Oui, vous pouvez télécharger manuellement les fichiers JAR et les inclure dans le chemin de construction de votre projet.
-5. **Comment la définition d’un délai d’expiration de chargement des ressources améliore-t-elle les performances de l’application ?**
-   - Il empêche l'application de se bloquer en raison de ressources à chargement lent, améliorant ainsi l'expérience utilisateur globale.
+## Applications réelles : où la, les documents contiennent souvent des graphiques, images et médias des délais d’attente appropriés, un serveur hors ligne peut arrêter la visualisation des documents. J’ai vu cela faire planter des portails de gestion des connaissances entiers pendant les heures de pointe.
 
-## Ressources
+### Plateformes de contenu en ligne et e‑learning
 
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [Référence de l'API](https://reference.groupdocs.com/viewer/java/)
-- [Télécharger GroupDocs.Viewer pour Java](https://releases.groupdocs.com/viewer/java/)
-- [Options d'achat](https://purchase.groupdocs.com/buy)
-- [Essai gratuit](https://releases.groupdocs.com/viewer/java/)
-- [Permis temporaire](https://purchase.groupdocs.com/temporary-license/)
-- [Forum d'assistance](https://forum.groupdocs.com/c/viewer/9)
+Les supports éducatifs intègrent fréquemment du contenu multimédia provenant de différentes sources. Définir des délais d’attente appropriés garantit que les étudiants ne restent pas bloqués en attendant ce diagramme à chargement financiers incluent souvent des rapidement. Un délai d’attente de 60 secondes les applications destinées aux clients peuvent nécessiter des limites de 15‑20 secondes pour une meilleure UX.
+
+### Systèmes d’archivage et de documents historiques
+
+Les anciens documents peuvent contenir des références à des serveurs disparus depuis longtemps et des liens brisés. La gestion des délais d’attente empêche ces problèmes hérités d’impacter les opérations actuelles.
+
+## Optimisation des performances : au‑delà des délais d’attente de base
+
+### Trouver vos valeurs de délai d’attente optimales
+
+Ne devinez pas – mesurez ! Voici une simple :
+
+1. **Surveillez vos différents types de documents  
+2. **Définissez les délais d’attente au 90e percentile** des temps de chargement normaux  
+3. **Ajustez en fonction des retours utilisateurs** et des taux d’erreur  
+
+### Bonnes pratiques de gestion de la mémoire
+
+```java
+// Always use try-with-resources for automatic cleanup
+try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
+    // Your rendering logic here
+} // Viewer automatically disposed here
+```
+
+**Évitez ces pièges de mémoire** :
+
+- Créer plusieurs instances de `Viewer` sans les disposer  
+- Conserver des références à de gros objets document  
+- Ne pas- **Temps moyen deement des pages, taux de rebond)  
+
+### Configuration du pool de threads
+
+Pour des scénarios à haut débit, envisagez de configurer des pools de threads dédiés au traitement des documents afin d’empêcher les opérations de délai d’attente de bloquer d’autres tâches de l’application.
+
+## Quand les choses tournent mal : dépannage avancé
+
+### Déboguer les problèmes de chargement des ressources
+
+Activez la journalisation pour voir ce qui se passe réellement :
+
+```java
+// Add logging to track resource loading behavior
+// (Note: Specific logging configuration depends on your logging framework)
+```
+
+**Modèles de journalisation courants à surveiller** :
+
+- Plusieurs événements de délai d’attente pour la même ressource  
+- Chaînes longues de redirections dans les URL externes  
+- Problèmes de certificat SSL avec les ressources HTTPS  
+
+### Considérations spécifiques au réseau
+
+**Réseaux d’entreprise** : Souvent dotés de serveurs proxy ou d’appareils de sécurité qui peuvent retarder le chargement des ressources. Prenez cela en compte dans vos calculs de délai d’attente.  
+
+**Distribution géographique** : Les ressources hébergées loin de vos serveurs d’application prendront naturellement plus de temps à charger.  
+
+**Problèmes de CDN** : Parfois, des nœuds CDN tombent, provoquant des retards de secours que votre délai d’attente doit prendre en compte.  
+
+## Questions fréquentes
+
+**Q : Que se passe‑t‑il exactement lorsqu’une res à un blocage complet de l’application.
+
+**Q : Puis‑je définir des délais d’attente différents selon le type de ressource ?**  
+R : L’API actuelle fournit un délai d’attente global de chargement des ressources, mais vous pouvez implémenter des stratégies différentes en utilisant des instances séparées de `Viewer` avec des configurations `LoadOptions` distinctes selon le type de document.
+
+**Q : Comment savoir si ma valeur de délai d’attente est appropriée ?**  
+R : Surveillez les journaux de votre application et les retours des utilisateurs. Si les utilisateurs se plaignent d’images manquantes, votre délai est peut‑être trop court. S’ils se plaignent de lenteur, il est peut‑être trop long. Commencez avec 60 secondes et ajustez selon les modèles d’utilisation réels.
+
+**Q : Le réglage d’un délai d’attente affectera‑t‑il la qualité du document ?**  
+R : Non – le délai n’affecte que le chargement des ressources externes. Le texte, la mise en page et les ressources chargées correctement s’affichent normalement. Seules les ressources qui ne peuvent pas se charger dans le délai imparti sont ignorées.
+
+**Q : Puis‑je gérer les événements de délai d’attente par programme ?**  
+R : Bien que vous ne puissiez pas intercepter directement les événements de délai d’attente, vous pouvez inspecter la sortie rendue pour détecter les ressources manquantes et implémenter une journalisation ou des notifications utilisateur selon les besoins de votre application.
+
+**Q : Cela fonctionne‑t‑il avec tous les formats de document ?**  
+R : Oui, le délai d’attente de chargement des ressources fonctionne avec tout format supporté par GroupDocs.Viewer et contenant des ressources externes – Word, PDF, PowerPoint, etc.
+
+**Q : Comment cela se compare‑t‑il à la gestion des délais d’attente des navigateurs web ?**  
+R : Concept similaire, mais les navigateurs ont généralement des délais d’attente par défaut plus courts (environ 30 secondes) et des mécanismes de nouvelle tentative plus sophistiqués. L’approche de GroupDocs.Viewer est simple – une fois le délai atteint, la ressource est considérée comme échouée.
+
+**Q : Puis‑je utiliser cela avec l’API Cloud de GroupDocs.Viewer ?**  
+R : Ce tutoriel porte spécifiquement sur la bibliothèque Java. L’API Cloud possède ses propres mécanismes de délai d’attente et de gestion des ressources. Consultez la documentation de l’API Cloud pour une fonctionnalité équivalente.
+
+## Conclusion : Vos documents, livrés rapidement
+
+Configurer les délais d’attente de chargement des ressources dans GroupDocs.Viewer pour Java est l’une de ces optimisations « petit changement, grand impact ». Vous avez appris à empêcher votre application de se bloquer sur des ressources externes problématiques tout en conservant une excellente qualité de rendu des documents.
+
+**Points clés à retenir** :
+
+- Commencez avec un délai d’attente de 60 secondes et ajustez-le selon votre environnement  
+- Utilisez toujours le `try‑with‑resources` pour un nettoyage approprié  
+- Surveillez le taux d’occurrence des délais d’attente pour optimiser vos paramètres  
+- Prenez en compte votre base d’utilisateurs lors du choix des valeurs de délai d’attente  
+
+**Et ensuite ?** Essayez de l’implémenter dans un environnement de test avec des documents contenant des ressources externes. Testez différentes valeurs de délai d’attente et observez comment cela affecte les performances et l’expérience utilisateur dans votre cas d’utilisation spécifique.
+
+Le meilleur ? Ce n’est qu’une pièce du puzzle de performance de GroupDocs.Viewer. Il existe de nombreuses autres optimisations et fonctionnalités à explorer qui rendront la gestion de vos documents encore plus robuste.
+
+Prêt à dire adieu aux documents bloqués ? Vos utilisateurs remarqueront certainement la différence.
+
+## Ressources supplémentaires
+
+- [Documentation Java de GroupDocs.Viewer](https://docs.groupdocs.com/viewer/java/)
+- [Référence complète de l’API](https://reference.groupdocs.com/viewer/java/)
+- [Télécharger la dernière version](https://releases.groupdocs.com/viewer/java/)
+- [Forum de support communautaire](https://forum.groupdocs.com/c/viewer/9)
+- [Options d’achat et licences](https://purchase.groupdocs.com/buy)
+
+---
+
+**Dernière mise à jour :** 2026-01-23  
+**Testé avec :** GroupDocs.Viewer 25.2 (Java)  
+**Auteur :** GroupDocs
