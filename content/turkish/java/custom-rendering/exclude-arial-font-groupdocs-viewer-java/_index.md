@@ -1,34 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak belgeleri HTML'ye dönüştürürken Arial yazı tipini nasıl hariç tutacağınızı öğrenin. Tasarım tutarlılığını sağlayın ve belge sunumunu geliştirin."
-"title": "GroupDocs.Viewer Java ile HTML Oluşturmada Arial Fontunu Nasıl Hariç Tutarsınız? Adım Adım Kılavuz"
-"url": "/tr/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-28'
+description: GroupDocs.Viewer for Java kullanarak HTML render etmeyi, Arial yazı tipini
+  dışlamayı ve HTML renderlamayı nasıl optimize edeceğinizi öğrenin. DOCX'ten HTML'e
+  Java dönüşümleri için adım adım rehber.
+keywords:
+- exclude Arial font GroupDocs.Viewer Java
+- render documents to HTML with GroupDocs
+- customize document rendering in Java
+title: GroupDocs.Viewer Java ile HTML'yi Render Etme ve Arial Yazı Tipini Hariç Tutma
 type: docs
+url: /tr/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer Java Kullanarak Belgeleri HTML'ye Dönüştürürken Arial Yazı Tipini Nasıl Hariç Tutarsınız
 
-## giriiş
+# HTML'i Render Etme ve Arial Yazı Tipini Hariç Tutma GroupDocs.Viewer Java ile
 
-Belgelerinizdeki belirli yazı tiplerinin web sunumlarınızın tekdüzeliğini bozduğu bir zorlukla hiç karşılaştınız mı? Bu adım adım kılavuz, belgeleri HTML biçimine dönüştürürken Arial yazı tipini hariç tutmak için GroupDocs.Viewer for Java'yı nasıl kullanacağınızı gösterecektir. İster profesyonel raporlar hazırlayın ister tutarlı web içeriği oluşturun, bu işlevsellik çıktılarınızın tasarım standartlarıyla uyumlu olmasını sağlar.
+Belgeleri HTML'e dönüştürmek, web tabanlı uygulamalar için yaygın bir gereksinimdir, ancak istenmeyen yazı tipleri görsel tutarlılığı bozabilir. Bu öğreticide, **HTML'i nasıl render edeceğinizi** Arial yazı tipini hariç tutarak öğrenecek, çıktınızın tasarım yönergelerinizle eşleşmesini sağlayacaksınız. Kurulumu, tam kod değişikliklerini ve sorunsuz bir **docx to html java** dönüşümü için en iyi uygulamaları adım adım inceleyeceğiz.
 
-**Ne Öğreneceksiniz:**
-- GroupDocs.Viewer'ı Java'da HTML formatında belgeleri işleyecek şekilde nasıl yapılandırabilirim?
-- Belge dönüştürme sırasında Arial gibi belirli yazı tiplerini hariç tutma işlemi.
-- GroupDocs.Viewer Java'yı kullanırken en iyi uygulamalar ve performans değerlendirmeleri.
+![HTML Rendering'de Arial Yazı Tipini Hariç Tutma - GroupDocs.Viewer for Java](/viewer/custom-rendering/exclude-arial-font-in-html-rendering-java.png)
 
-Bu özelliği uygulamaya başlamadan önce ihtiyaç duyduğunuz ön koşullara bir göz atalım.
+**Öğrenecekleriniz:**
+- GroupDocs.Viewer for Java'ı HTML'de belge render'ı için nasıl yapılandıracağınızı.
+- Dönüşüm sırasında Arial gibi belirli yazı tiplerini hariç tutma sürecini.
+- GroupDocs.Viewer Java kullanırken en iyi uygulamaları ve performans hususlarını.
 
-## Ön koşullar
+## Hızlı Yanıtlar
+- **HTML'i nasıl render ederim?** GroupDocs.Viewer Java ile `HtmlViewOptions` kullanarak kendi içinde bütünleşik HTML sayfaları oluşturun.  
+- **Arial yazı tipini hariç tutabilir miyim?** Evet—`viewOptions.getFontsToExclude().add("Arial")` çağrısını yapın.  
+- **Hangi kütüphane sürümü?** Kılavuz, GroupDocs.Viewer for Java 25.2 (veya en son kararlı sürüm) kullanmaktadır.  
+- **Hangi giriş formatları destekleniyor?** DOCX, PDF, PPTX, XLSX ve daha fazlası.  
+- **Lisans gerekli mi?** Test için ücretsiz deneme yeterlidir; üretim için tam lisans gereklidir.
 
-Bu eğitimi takip edebilmek için şunlara sahip olduğunuzdan emin olun:
-- **Kütüphaneler ve Sürümler**: Java için GroupDocs.Viewer 25.2 sürümüne ihtiyacınız olacak.
-- **Çevre Kurulumu**Makinenizde yüklü bir Java geliştirme ortamı (IntelliJ IDEA veya Eclipse gibi IDE) ve Maven.
-- **Bilgi Önkoşulları**: Temel Java programlama bilgisi ve Maven proje kurulumuna aşinalık.
+## Önkoşullar
 
-## Java için GroupDocs.Viewer Kurulumu
+Bu öğreticiyi takip edebilmek için şunların olduğundan emin olun:
+- **Kütüphaneler ve Sürümler**: GroupDocs.Viewer for Java sürüm 25.2'ye ihtiyacınız olacak.
+- **Ortam Kurulumu**: Java geliştirme ortamı (IntelliJ IDEA veya Eclipse gibi bir IDE) ve makinenizde Maven kurulu.
+- **Bilgi Önkoşulları**: Java programlamaya temel bir anlayış ve Maven proje kurulumu hakkında aşinalık.
 
-Başlamak için GroupDocs.Viewer için gerekli bağımlılığı ekleyin `pom.xml` Maven kullanarak dosya:
+## GroupDocs.Viewer for Java Kurulumu
+
+Başlamak için, Maven kullanarak `pom.xml` dosyanıza GroupDocs.Viewer için gerekli bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -48,113 +60,124 @@ Başlamak için GroupDocs.Viewer için gerekli bağımlılığı ekleyin `pom.xm
 ```
 
 ### Lisans Edinme Adımları
-- **Ücretsiz Deneme**: Ücretsiz deneme sürümünü indirin [GroupDocs Ücretsiz Denemeler](https://releases.groupdocs.com/viewer/java/).
-- **Geçici Lisans**: Geçici lisans için başvuruda bulunun [GroupDocs Geçici Lisansı](https://purchase.groupdocs.com/temporary-license/) Genişletilmiş testler için.
-- **Satın almak**: Onların tam lisansını satın alın [Satın Alma Sayfası](https://purchase.groupdocs.com/buy) GroupDocs.Viewer'ın yeteneklerinden memnun kaldım.
+- **Ücretsiz Deneme**: [GroupDocs Free Trials](https://releases.groupdocs.com/viewer/java/) adresinden ücretsiz deneme indirin.
+- **Geçici Lisans**: Uzun süreli test için [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) üzerinden geçici lisans başvurusu yapın.
+- **Satın Alma**: GroupDocs.Viewer yeteneklerinden memnun kaldığınızda, [Purchase Page](https://purchase.groupdocs.com/buy) üzerinden tam lisans satın alın.
 
 ### Temel Başlatma ve Kurulum
 
-Maven projenizi kurduktan sonra yeni bir Java sınıfı oluşturun ve gerekli GroupDocs paketlerini içe aktarın. Bu kurulum, görüntüleyicinin belgeleri işlemesini başlatmak için gereklidir.
+Maven projenizi kurduktan sonra, yeni bir Java sınıfı oluşturun ve gerekli GroupDocs paketlerini içe aktarın. Bu kurulum, görüntüleyiciyi belgeleri render etmek için başlatmak açısından gereklidir.
 
-## Uygulama Kılavuzu
+## HTML Render Ederken Arial Yazı Tipini Nasıl Hariç Tutarsınız
 
-### Belirli Yazı Tiplerini HTML Çıktısından Hariç Tutma
+### Genel Bakış
+Belirli yazı tiplerini hariç tutmak, HTML dönüşümünüzün görsel çıktısı üzerinde daha sıkı kontrol sağlar ve **HTML render'ını optimize** ederek hız ve marka tutarlılığına yardımcı olur.
 
-#### Genel bakış
-Bu özellik, belgeleri HTML formatına dönüştürürken Arial gibi belirli yazı tiplerini hariç tutmanıza olanak tanır ve böylece belgenizin web bağlamlarındaki görünümü üzerinde daha fazla kontrol sahibi olursunuz.
+### Adım Adım Uygulama
 
-#### Adım Adım Uygulama
-##### 1. Çıktı Dizinini Tanımlayın
-Öncelikle HTML dosyalarının nerede saklanacağını belirterek başlayalım:
+#### 1. Çıktı Dizini Tanımlama
+HTML dosyalarının nerede saklanacağını belirterek başlayın:
 
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Bu yol, oluşturulan HTML belgelerinizin nerede bulunacağını belirlediği için önemlidir.
-
-##### 2. HTML Sayfa Dosya Yollarını Ayarlayın
+#### 2. HTML Sayfa Dosya Yollarını Ayarlama
 Her sayfanın dosya adının nasıl yapılandırılacağını tanımlayın:
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-Yer tutucu `{0}` Dosyaların sayfa numaralarına göre dinamik olarak adlandırılmasına olanak tanır ve düzenli bir depolama sağlar.
 
-##### 3. Gömülü Kaynaklarla Görünüm Seçeneklerini Yapılandırın
-Bir tane oluştur `HtmlViewOptions` HTML işlemenin nasıl işleneceğini belirten nesne:
+Yer tutucu `{0}`, dosyaların sayfa numarasına göre dinamik adlandırılmasını sağlar ve düzenli depolamayı güvence altına alır.
+
+#### 3. Gömülü Kaynaklarla Görünüm Seçeneklerini Yapılandırma
+`HtmlViewOptions` nesnesi oluşturarak HTML render'ının nasıl ele alınacağını belirleyin:
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-Bu kurulum, tüm kaynakların HTML dosyalarına gömülmesini sağlayarak bunların kendi kendine yetebilmesini sağlar.
 
-##### 4. Belirli Yazı Tiplerini Hariç Tut
-Çıktıda işlenmesini istemediğiniz yazı tipini (bu durumda Arial) ekleyin:
+Bu yapılandırma, tüm kaynakların HTML dosyalarına gömülmesini sağlar ve dosyaların kendi içinde bütünleşik olmasını temin eder.
+
+#### 4. Belirli Yazı Tiplerini Hariç Tutma
+Çıktıda render edilmesini istemediğiniz yazı tipini (bu örnekte Arial) ekleyin:
 
 ```java
 viewOptions.getFontsToExclude().add("Arial");
 ```
-Tasarım tutarlılığını korumak ve dosya boyutlarını azaltmak için yazı tiplerini hariç tutmak önemli olabilir.
 
-##### 5. Görüntüleyiciyi Kullanarak Belgeyi İşleyin
-Son olarak, şunu kullanın: `Viewer` Belgenizi HTML formatına dönüştürmek için sınıf:
+Yazı tiplerini hariç tutmak, tasarım tutarlılığını korumak ve dosya boyutlarını azaltmak açısından kritik olabilir.
+
+#### 5. Viewer Kullanarak Belgeyi Render Etme
+Son olarak, `Viewer` sınıfını kullanarak belgenizi HTML formatına render edin:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
     viewer.view(viewOptions);
 }
 ```
-try-with-resources ifadesi, `viewer` render edildikten sonra düzgün bir şekilde kapatılır.
 
-#### Sorun Giderme İpuçları
-- **Ortak Sorun**: Yolların doğru ve erişilebilir olduğundan emin olun; yanlış yollar dosya bulunamadı hatalarına yol açabilir.
-- **Performans İpucu**: Büyük belgeler işleniyorsa, gömülü kaynakların yükleme sürelerini artırabileceğinden bellek kullanımını izleyin.
+`try‑with‑resources` ifadesi, render işlemi sonrasında `viewer`'ın doğru şekilde kapatılmasını sağlar.
 
-## Pratik Uygulamalar
-1. **Kurumsal Raporlama**:Birleşik bir marka görünümü için kurumsal raporlardaki varsayılan yazı tiplerini hariç tutun.
-2. **Eğitim Materyalleri**: Okunabilirliği ve erişilebilirliği artırmak için eğitim içeriklerindeki yazı tipi gösterimini özelleştirin.
-3. **Yasal Belgeler**Yazı tipi kullanımını kontrol ederek yasal belge sunumlarında tutarlılığı koruyun.
-4. **E-ticaret Listeleri**: Ürün açıklamalarının kontrollü yazı tipi oluşturma yoluyla markalama yönergelerine uygun olmasını sağlayın.
-5. **CMS Entegrasyonu**: Özelleştirilmiş belge önizlemeleriyle içerik yönetim sistemlerini geliştirin ve kullanıcı deneyimini iyileştirin.
+### Sorun Giderme İpuçları
+- **Yaygın Sorun**: Yolların doğru ve erişilebilir olduğundan emin olun; hatalı yollar dosya bulunamadı hatalarına yol açabilir.
+- **Performans İpucu**: Büyük belgeleri render ederken, gömülü kaynakların yükleme sürelerini artırabileceği için bellek kullanımını izleyin.
 
-## Performans Hususları
-### Performansı Optimize Etme
-- **Verimli Dosya Yolları Kullanın**: Dosya yollarının hızlı erişim ve geri alma için optimize edildiğinden emin olun.
-- **Kaynakları Akıllıca Yönetin**: Kalite ve performans arasında denge sağlamak için gömülü kaynakların sayısını sınırlayın.
+## Neden Önemli: Gerçek Dünya Kullanım Senaryoları
 
-### Java Bellek Yönetimi için En İyi Uygulamalar
-- **Görüntüleyici Kullanımını Optimize Et**: Kapat `Viewer` Örneğin, artık ihtiyaç duyulmadığında hafızayı boşaltmak için.
-- **Uygulama Yükünü İzle**: Özellikle birden fazla veya büyük belgelerle çalışırken uygulamanızın kaynak tüketimini düzenli olarak kontrol edin.
+1. **Kurumsal Raporlama** – Raporların marka yönergeleriyle uyumlu kalması için varsayılan yazı tiplerini hariç tutun.  
+2. **Eğitim Materyalleri** – Farklı cihazlarda daha iyi okunabilirlik için yazı tipi render'ını özelleştirin.  
+3. **Hukuki Belgeler** – Mahkeme hazır HTML sunumları için tutarlı bir görünüm sağlayın.  
+4. **E‑ticaret Listeleri** – Ürün açıklamalarının marka standartlarına uygun olmasını sağlayın.  
+5. **CMS Entegrasyonu** – İçerik yönetim sistemlerinde temiz, yazı tipi kontrolü yapılan ön izlemeler sunun.
 
-## Çözüm
-Bu öğreticiyi takip ederek artık Arial gibi belirli yazı tiplerini GroupDocs.Viewer for Java kullanarak HTML çıktılarından hariç tutma becerisine sahipsiniz. Bu yetenek belge sunumunu geliştirir ve platformlar arasında tutarlılığı sağlar.
+## HTML Render Performansını Optimize Etme
 
-### Sonraki Adımlar
-Farklı işleme seçeneklerini deneyerek veya onu daha büyük projelere entegre ederek Java için GroupDocs.Viewer'ın diğer özelliklerini keşfedin.
+### Daha Hızlı Dönüşümler İçin İpuçları
+- **Verimli Dosya Yolları Kullanın**: I/O yükünü azaltmak için dizin yapılarını sığ tutun.  
+- **Gömülü Kaynakları Sınırlayın**: HTML'yi hafif tutmak için sadece gerekli CSS/JS'yi gömün.  
 
-Bu çözümü bir sonraki projenizde uygulamanızı öneririz; daha cilalı, markaya uygun belge sunumlarına doğru ilk adımı atın!
+### Java Bellek Yönetimi İçin En İyi Uygulamalar
+- **Viewer'ı Hemen Kapatın**: `try‑with‑resources` deseni, render tamamlandığında belleği serbest bırakır.  
+- **Uygulama Yükünü İzleyin**: Birden fazla veya büyük belgelerle çalışırken JVM profilini çıkararak bellek yetersizliği hatalarından kaçının.
 
-## SSS Bölümü
-**S1: GroupDocs.Viewer ne için kullanılır?**
-C1: Geliştiricilerin HTML, resim veya PDF gibi çeşitli formatlarda belgeleri oluşturmasına olanak tanıyan güçlü bir kütüphanedir.
+## Sıkça Sorulan Sorular
 
-**S2: Arial dışındaki yazı tiplerini nasıl hariç tutabilirim?**
-A2: Şunu kullanın: `getFontsToExclude().add("FONT_NAME")` İstediğiniz yazı tipi adıyla yöntemi kullanın.
+**S1: GroupDocs.Viewer ne için kullanılır?**  
+C1: Geliştiricilerin belgeleri HTML, görüntü veya PDF gibi çeşitli formatlarda render etmelerini sağlayan güçlü bir kütüphanedir.
 
-**S3: GroupDocs.Viewer büyük belge dönüşümlerini verimli bir şekilde yönetebilir mi?**
-C3: Evet, bu kılavuzda açıklandığı şekilde kaynak kullanımı ve bellek yönetimi uygulamalarını optimize ederek.
+**S2: Arial dışındaki diğer yazı tiplerini nasıl hariç tutarım?**  
+C2: İstediğiniz yazı tipinin adını `getFontsToExclude().add("FONT_NAME")` yöntemiyle ekleyin.
 
-**S4: GroupDocs.Viewer kurulumu sırasında karşılaşılan yaygın sorunlar nelerdir?**
-A4: Yaygın sorunlar arasında yanlış yol yapılandırmaları veya eksik bağımlılıklar bulunur. Tüm yolların doğru olduğundan ve Maven bağımlılıklarının düzgün şekilde ayarlandığından emin olun.
+**S3: GroupDocs.Viewer büyük belge dönüşümlerini verimli bir şekilde yönetebilir mi?**  
+C3: Evet, bu kılavuzda açıklanan kaynak yönetimi ve bellek yönetimi uygulamalarıyla optimize edilerek.
 
-**S5: GroupDocs.Viewer'ı Java ile kullanma hakkında daha fazla kaynağı nerede bulabilirim?**
-A5: Ziyaret edin [GroupDocs Belgeleri](https://docs.groupdocs.com/viewer/java/) Ayrıntılı kılavuzlar ve API referansları için.
+**S4: GroupDocs.Viewer kurulumunda yaygın sorunlar nelerdir?**  
+C4: Yaygın sorunlar arasında hatalı yol yapılandırmaları veya eksik Maven bağımlılıkları bulunur. Tüm yolları doğrulayın ve Maven koordinatlarının doğru olduğundan emin olun.
+
+**S5: Java ile GroupDocs.Viewer kullanımına dair daha fazla kaynağı nereden bulabilirim?**  
+C5: Ayrıntılı kılavuzlar ve API referansları için [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) adresini ziyaret edin.
+
+**S6: Bu yöntem Java'da DOCX'i HTML'e dönüştürmek için çalışır mı?**  
+C6: Kesinlikle—`Viewer` yapıcısını bir `.docx` dosyasına yönlendirmeniz yeterlidir ve aynı yazı tipi hariç tutma mantığı uygulanır.
+
+**S7: Mobil cihazlar için **HTML render'ını daha da nasıl optimize edebilirim?**  
+C7: Oluşturulan HTML'yi küçültmeyi ve gömülü kaynaklarla birlikte duyarlı CSS sunmayı düşünün.
+
+**S8: Geliştirme sürümleri için lisans zorunlu mu?**  
+C8: Geliştirme ve test için ücretsiz deneme yeterlidir; üretim dağıtımları için ticari lisans gereklidir.
 
 ## Kaynaklar
-- **Belgeleme**: [GroupDocs Görüntüleyici Java Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı**: [GroupDocs Görüntüleyici Java API'si](https://reference.groupdocs.com/viewer/java/)
-- **GroupDocs.Viewer'ı indirin**: [GroupDocs İndirme Sayfası](https://releases.groupdocs.com/viewer/java/)
-- **Lisans Satın Al**: [GroupDocs Lisansı Satın Al](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme ve Geçici Lisans**: [Ücretsiz Denemeye Başlayın](https://releases.groupdocs.com/viewer/java/) | [Geçici Lisans Talebinde Bulunun](https://purchase.groupdocs.com/temporary-license/)
-- **Destek**: Daha fazla yardıma ihtiyacınız varsa, şu adresi ziyaret edin: [GroupDocs Destek Sayfası](https://support.groupdocs.com/hc/en-us).
+- **Dokümantasyon**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Referansı**: [GroupDocs Viewer Java API](https://reference.groupdocs.com/viewer/java/)
+- **GroupDocs.Viewer İndirme**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Lisans Satın Al**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Ücretsiz Deneme ve Geçici Lisans**: [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/) | [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Destek**: Daha fazla yardıma ihtiyaç duyarsanız, [GroupDocs Support Page](https://support.groupdocs.com/hc/en-us/) adresini ziyaret edin.
+
+---
+
+**Son Güncelleme:** 2026-01-28  
+**Test Edilen Sürüm:** GroupDocs.Viewer for Java 25.2  
+**Yazar:** GroupDocs
