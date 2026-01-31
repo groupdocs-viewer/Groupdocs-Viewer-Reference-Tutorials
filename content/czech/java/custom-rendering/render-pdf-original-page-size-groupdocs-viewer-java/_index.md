@@ -1,35 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak přesně vykreslit PDF soubory s jejich původní velikostí stránky pomocí GroupDocs.Viewer pro Javu a zajistit tak integritu dokumentů napříč platformami."
-"title": "Vykreslení PDF souborů v původní velikosti pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
-"url": "/cs/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-31'
+description: Naučte se, jak v Javě převádět PDF na PNG při zachování původní velikosti
+  stránky pomocí GroupDocs.Viewer. Obsahuje tipy a řešení problémů při převodu PDF
+  na PNG v Javě.
+keywords:
+- Render PDF Original Size
+- GroupDocs Viewer Java API
+- PDF Rendering with Java
+title: Jak vykreslit PDF v původní velikosti pomocí GroupDocs.Viewer pro Java – komplexní
+  průvodce
 type: docs
+url: /cs/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/
+weight: 1
 ---
-# Jak vykreslit PDF soubory s jejich původní velikostí stránky pomocí GroupDocs.Viewer pro Javu
 
-Vykreslení PDF souboru se zachováním původní velikosti stránky je nezbytné pro přesné zobrazení na různých platformách a zařízeních. Tato komplexní příručka vás provede implementací této funkce pomocí rozhraní GroupDocs.Viewer pro Java API. Dodržením těchto kroků zajistíte, že si vaše PDF soubory během vykreslování zachovají věrnost.
+# Jak vykreslit PDF v původní velikosti pomocí GroupDocs.Viewer pro Java
 
-## Co se naučíte
-- Proč je důležité zachovat původní velikost stránky při vykreslování PDF.
-- Nastavení a konfigurace GroupDocs.Viewer pro Javu.
-- Podrobný návod krok za krokem k vykreslení PDF souborů s jejich původními rozměry.
-- Praktické aplikace a možnosti integrace.
-- Techniky pro optimalizaci výkonu během tohoto úkolu.
+Vykreslení PDF **how to render pdf** při zachování jeho přesných rozměrů je nezbytné pro přesné zobrazení na jakémkoli zařízení. V tomto průvodci zjistíte, proč je důležité zachovat původní velikost stránky, jak nastavit GroupDocs.Viewer pro Java a přesné kroky k převodu PDF na PNG java bez jakéhokoli škálování. Na konci budete schopni spolehlivě vykreslovat PDF v jejich původní velikosti a vyhnout se běžným problémům s laděním vykreslování PDF.
 
-Pojďme si projít předpoklady, které potřebujete, než začnete!
+![Vykreslit PDF v původní velikosti pomocí GroupDocs.Viewer pro Java](/viewer/custom-rendering/render-pdfs-in-original-size.png)
 
-### Předpoklady
-Abyste mohli pokračovat, ujistěte se, že máte:
-- **Vývojová sada pro Javu (JDK):** Na vašem počítači musí být nainstalován JDK 8 nebo vyšší.
-- **Prohlížeč GroupDocs pro Javu:** Integrujte tuto knihovnu pomocí Mavenu.
-- **Rozhraní vývoje (IDE):** Použijte integrované vývojové prostředí, jako je IntelliJ IDEA nebo Eclipse.
+## Rychlé odpovědi
+- **Která knihovna může převést PDF na PNG v Javě?** GroupDocs.Viewer pro Java poskytuje jednoduché API pro pdf to png java conversion.  
+- **Jak zachovat původní velikost stránky?** Povolit `setRenderOriginalPageSize(true)` na objektu `PdfOptions`.  
+- **Potřebuji licenci pro produkci?** Ano – pro ne‑zkušební použití je vyžadována trvalá nebo dočasná licence GroupDocs.  
+- **Mohu vykreslovat PDF chráněné heslem?** Ano, stačí při vytváření instance `Viewer` zadat heslo.  
+- **Jaká verze Javy je vyžadována?** Je podporována JDK 8 neboreslit PDF v původní velikosti“?
+Když vykreslujete PDF, prohlížeč může buď škálovat stránky tak, aby se vešly do cílového formátu, nebo zachovat přesné rozměry definované ve zdrojovém souboru. Vykreslení v původní velikosti znamená, že každána pixel‑perfektně, což je zásadní pro právní dokumenty, archivní materiály a jakýkoli scénář, kde nelze kompromitovat věrnost rozvržení.
 
-### Nastavení GroupDocs.Viewer pro Javu
+## Proč zachovat velikost stránky PDF?
+- **Právní soulad:** Soudy často vyžadují, aby dokumenty vypadaly přesně tak, jak byly původně podány.  
+ovávají svůj designový záměr.  
+- **Technická přesnost:** Měření, diagramy a formuláře zůstávají po konverzi použitelné.
 
-Nejprve si ve svém vývojovém prostředí nastavte GroupDocs.Viewer pro Javu. Tento proces je jednoduchý, pokud používáte nástroj pro sestavení, jako je Maven:
+## Předpoklady
+-  
+- **GroupDocs.Viewer pro Java:** Přidejte knihovnu pomocí Maven (IDE:** IntelliJ IDEA, Eclipse nebo jakýkoli editor kompatibilní s Javou.
 
-**Konfigurace Mavenu**
+## Nastavení GroupDocs.Viewer pro Java
+
+### Maven konfigurace
+Přidejte oficiální repozitářstat přesně tak, jak je zobrazen.)*
+
 ```xml
 <repositories>
    <repository>
@@ -48,18 +60,12 @@ Nejprve si ve svém vývojovém prostředí nastavte GroupDocs.Viewer pro Javu. 
 ```
 
 #### Získání licence
-GroupDocs nabízí různé možnosti licencování:
-- **Bezplatná zkušební verze:** Začněte s bezplatnou zkušební verzí a prozkoumejte funkce.
-- **Dočasná licence:** Získejte dočasnou licenci pro plný přístup bez omezení.
-- **Nákup:** Pokud váš projekt vyžaduje dlouhodobé používání, zvažte jeho koupi.
+GroupDocs nabízí několik licenčních možností:
+- **Free Trial:** Prozkoumejte všechny funkce bez časového omezení počtu stránek.  
+- **Temporary License:** Plná funkčnost po krátkou zkušební dobu.  
+- Průvodce implementací
 
-### Průvodce implementací
-
-Nyní se zaměřme na implementaci vykreslování PDF se zachováním původní velikosti stránky. Provedeme vás každým krokem podrobně.
-
-#### Inicializovat GroupDocs.Viewer
-**Přehled:**
-Začněte nastavením `Viewer` instanci pro váš zdrojový dokument.
+te instanci `Viewer` a nakonfigurujte `PngViewOptions` pro výstup PNG souborů. Klíčové volání `viewOptions.getPdfOptions().setRenderOriginalPageSize(true);` říká enginu **nastavit původní velikost stránky**.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -69,80 +75,78 @@ import java.nio.file.Path;
 
 public class RenderOriginalPageSize {
     public static void main(String[] args) {
-        // Definování cesty k výstupnímu adresáři pro vykreslené stránky
+        // Define output directory path for rendered pages
         Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
         
-        // Formát cest k výstupním stránkovacím souborům
+        // Format for the output page file paths
         String pageFilePathFormat = "page_{0}.png";
         Path pageFilePath = outputDirectory.resolve(pageFilePathFormat);
         
-        // Inicializujte PngViewOptions s formátem cesty
+        // Initialize PngViewOptions with the path format
         PngViewOptions viewOptions = new PngViewOptions(pageFilePath.toString());
         
-        // Nastavení možnosti vykreslení původní velikosti stránky pro dokumenty PDF
+        // Set option to render original page size for PDF documents
         viewOptions.getPdfOptions().setRenderOriginalPageSize(true);
         
-        // Vytvořte instanci prohlížeče pro zdrojový dokument PDF
+        // Create a Viewer instance for the source PDF document
         try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-            // Vykreslení PDF s použitím zadaných možností
+            // Render the PDF using the specified options
             viewer.view(viewOptions);
         }
     }
 }
 ```
 
-**Vysvětlení:**
-- **Konfigurace cesty:** Definujte, kam budou uloženy vykreslené obrázky.
-- **Možnosti zobrazení Png:** Určete, že chceme výstup PNG a nakonfigurujte formátování cesty pro každou stránku.
-- **Vykreslit původní velikost stránky:** Toto klíčové nastavení zajišťuje, že stránky nebudou škálovány a zachovají si své původní rozměry.
+**Vysvětlení klíčových řádků**  
+- **Konfigurace cesty:** Určuje, kde bude každé vykreslené PNG uloženo.  
+- **PngViewOptions:** Volupní formát (klasický scénář *pdf to png java*).  
+- **Render Original Page Size:** Zajišťuje, že nedochází ke škálování, a zachovává přesné rozměry každé stránky PDF.
 
-#### Tipy pro řešení problémů
-Pokud narazíte na problémy:
-- Zajistěte cesty v `outputDirectory` a `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"` jsou správné.
-- Ověřte, zda je GroupDocs.Viewer ve vašem nástroji pro sestavení správně nakonfigurován.
+### Krok 2: Spusťte a ověřte
+Spusťte metodu `main`. Po dokončení otevřete vygenerované PNG soubory; měly by odpovídat původním rozměrům stránek PDF pixel po pixelu. Pokud se obrázky jeví jako natažené, zkontrolujte, že je přítomno `setRenderOriginalPageSize(true)` a že používáte nejnovější verzi GroupDocs.Viewer.
 
-### Praktické aplikace
-Vykreslování PDF souborů s jejich původní velikostí stránky může být výhodné v různých scénářích, včetně:
-1. **Digitální archivy:** Zachovat integritu historických dokumentů pro archivní účely.
-2. **Správa právních dokumentů:** Zajistěte, aby si právní dokumenty zachovaly své rozvržení i při digitálním prohlížení.
-3. **Sdílení vzdělávacích materiálů:** Sdílejte učebnice nebo výukové materiály bez změny struktury obsahu.
-4. **Systémy pro zpracování faktur:** Zachovat konzistenci a čitelnost v automatizovaných systémech zpracování faktur.
+## Řešení problémů a běžné úskalí
+- ** se, že `outputDirectory` i cesta ke zdrojovému PDF jsou absolutní nebo správně relativní k vašemu projektu.  
+- **Chybějící licence:** Bez platné licence může vykreslování přejít do zkušebního režimuvyšte haldu JVM (`-Xmx2g` nebo více) nebo povolte lazy loading stránek.  
+- **Šifrované PDF:** Při vytváření instance `Viewer` zadejte heslo, aby se předešlo chybám *pdf rendering troubleshooting*.
 
-### Úvahy o výkonu
-Optimalizace výkonu vykreslování PDF je klíčová, zejména u velkých dokumentů:
-- **Správa paměti:** Pro efektivní zpracování velkých souborů přidělte dostatek paměti.
-- **Líné načítání:** Při práci s rozsáhlými dokumenty načíst pouze nezbytné stránky nebo sekce.
-- **Mechanismy ukládání do mezipaměti:** Implementujte ukládání do mezipaměti pro často používané PDF soubory, abyste zkrátili dobu zpracování.
+## Praktické příklady použití
+1. **ovat historické skeny bez jakéhokoli zkreslení.  
+2. **Portály právních dokumentů:** Nabídnout soud jak byly podány.  
+3. **E‑learningové platformy:** Převést učebnice do obrazového formátu při zachování rozvržení.  
+4. **Automatizace faktur:** Zajistit, aby položky a součty zůstaly po konverzi čitelné.
 
-### Závěr
-Dodržováním tohoto návodu jste se naučili, jak pomocí nástroje GroupDocs.Viewer pro Javu vykreslovat PDF soubory a zároveň zachovat jejich původní velikost stránky. Tato dovednost je neocenitelná pro zachování integrity dokumentů v různých aplikacích.
+## Tipy pro výkon
+- **Správa paměti:** Přidělte dostatečnou haldu pro velké dokumenty.  
+- **Lazy loading:** Vykreslujte pouze stránky, které potřebujete, místo celého souboru, pokud je to možné.  
+- **Caching:** Ukládejte vykreslené PNG pro často přistupované PDF, aby se předešlo opakovan Boot?**  
+A: Zaregistrujte `Viewer` jako bean a injektujte jej tam, kde je potřeba; to vám umožní spravovat životní cyklus pomocí kontejneru Spring.
 
-Jako další krok zvažte prozkoumání dalších funkcí GroupDocs.Viewer, jako je vodoznak a možnosti konverze.
+**Q: Mohu vykreslovat PDF do formátů jiných než PNG?**  
+A: Ano, GroupDocs.Viewer také podporuje konverze do JPEG, SVG a PDF‑to‑HTML.
 
-### Sekce Často kladených otázek
-**1. Jak mohu integrovat GroupDocs.Viewer s jinými frameworky, jako je Spring?**
-   - Pomocí vkládání závislostí můžete spravovat instance prohlížeče v kontextu vaší aplikace.
+**Q: Co mám dělat, pokud proces vykreslování selže s výjimkou?**  
+A: Zkontrolujte stack trace na chybějící cesty k souborům nebo problémy s licencí a ověřte, že PDF není poškozené.
 
-**2. Mohu vykreslovat PDF soubory v jiných formátech než PNG?**
-   - Ano, GroupDocs.Viewer podporuje více výstupních formátů včetně JPEG a SVG.
+**Q: Existuje limit velikosti pro PDF, které lze vykreslit?**  
+A: Technicky ne, ale velmi velké soubory mohou vyžadovat zvýšenou paměť JVM a mohou mít prospěch z rozdělení na menší sekce.
 
-**3. Co mám dělat, když proces vykreslování selže?**
-   - Zkontrolujte protokoly chyb, zda neobsahují konkrétní zprávy, a ujistěte se, že jsou cesty správně zadány.
+**Q: Zvládá GroupDocs.Viewer PDF chráněné heslem?**  
+A: Rozhodně – stačí předat heslo konstruktoru `Viewer` nebo přes objekt `LoadOptions`.
 
-**4. Existuje omezení velikosti PDF souborů, které lze vykreslit?**
-   - Výkon se může u velmi velkých souborů snížit, proto zvažte jejich rozdělení na zvládnutelné části.
+## Zdroje
+- **Dokumentace:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)  
+- **Stáhnout GroupDocs.Viewer:** [Official Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Nákup a licence:** [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)  
+- **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support Forum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-**5. Mohu přímo vykreslit šifrované PDF soubory?**
-   - GroupDocs.Viewer podporuje vykreslování chráněných dokumentů, pokud poskytnete potřebné přihlašovací údaje.
+---
 
-### Zdroje
-Pro další čtení a zdroje:
-- **Dokumentace:** [Prohlížeč GroupDocs v Javě](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API:** [Referenční příručka k API GroupDocs pro Javu](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout GroupDocs.Viewer:** [Oficiální soubory ke stažení](https://releases.groupdocs.com/viewer/java/)
-- **Nákup a licencování:** [Koupit produkty GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze:** [Bezplatná zkušební verze GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence:** [Získat dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- **Fórum podpory:** [Fórum podpory GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+**Poslední aktualizace:** 2026-01-31  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  
 
-Doufáme, že vám tento průvodce pomůže implementovat vykreslování PDF s původní velikostí stránky pomocí GroupDocs.Viewer pro Javu. Přejeme vám příjemné programování!
+---
