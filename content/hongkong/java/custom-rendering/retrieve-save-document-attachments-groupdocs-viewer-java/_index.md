@@ -1,34 +1,40 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用強大的 GroupDocs.Viewer API 在 Java 應用程式中有效地檢索和保存文件附件。本指南涵蓋設定、實施和實際應用。"
-"title": "如何使用 GroupDocs.Viewer for Java 擷取並儲存文件附件－綜合指南"
-"url": "/zh-hant/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-02'
+description: 學習如何在 Java 應用程式中使用 Java 檔案輸出串流及功能強大的 GroupDocs.Viewer API，高效檢索與儲存文件附件。
+keywords:
+- GroupDocs.Viewer Java
+- retrieve document attachments Java
+- save document attachments GroupDocs
+title: 如何使用 Java 檔案輸出串流與 GroupDocs.Viewer for Java 取得並儲存文件附件
 type: docs
+url: /zh-hant/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/
+weight: 1
 ---
-# 如何使用 GroupDocs.Viewer for Java 擷取和儲存文件附件：綜合指南
+
+# 如何使用 java file output stream 與 GroupDocs.Viewer for Java 取得並儲存文件附件
 
 ## 介紹
 
-您是否希望在 Java 應用程式中以程式設計方式提取和管理文件附件？隨著數位文件管理的興起，擁有能夠高效簡化這些流程的工具至關重要。 GroupDocs.Viewer for Java 是您的首選解決方案，可輕鬆無縫地擷取和儲存文件附件。
+您是否希望在 Java 應用程式中以 **java file output stream** 程式化地提取與管理文件附件？隨著數位文件管理的興起，擁有能有效簡化這些流程的工具變得至關重要。GroupDocs.Viewer for Java 正是您的首選解決方案，能輕鬆無縫地取得與儲存文件附件。
 
-在本教學中，我們將探索如何利用 GroupDocs.Viewer 的強大功能從文件中擷取附件並將其儲存到所需的目錄中。透過學習本教程，您將獲得在 Java 環境中有效管理文件資料的實用技能。
+![使用 GroupDocs.Viewer for Java 取得並儲存文件附件](/viewer/custom-rendering/retrieve-and-save-document-attachments-java.png)
 
-**您將學到什麼：**
-- 如何為 Java 設定 GroupDocs.Viewer
-- 使用 API 從文件中檢索附件
-- 將文件附件儲存到指定目錄
+在本教學中，我們將探討如何利用 GroupDocs.Viewer 從文件中取得附件並儲存至 Java stream 的作用是什麼？** 它直接將位元組流寫入檔案，使二進位資料（如附件）能儲。**費授權。  
+- **此方法是執行緒安全的嗎？** 請為每個執行緒建立獨立的 `Viewer` 實例，或使用同步機制。
 
-## 先決條件
-在開始之前，請確保您具備以下條件：
-- **所需的庫和依賴項**：您需要 GroupDocs.Viewer 函式庫。請確保將其新增為專案的依賴項。
-- **環境設定要求**：用於編寫和執行程式碼的 Java 開發環境（如 IntelliJ IDEA 或 Eclipse）。
-- **知識前提**：熟悉Java編程，尤其是處理文件和目錄。
+## 什麼是 java file output stream？
+`java.io.FileOutputStream` 是 Java 的核心類別，用於將原始位元組寫入檔案。當您需要持久化二進位內容（例如電子郵件附件、影像或任何 為什麼在 GroupDocs.Viewer 中使用 java file output stream？
+- **直接換；附件的位元組會完整寫入，與原始檔案完全一致。  
+- **效能** – 串流寫入可減少記憶體開銷，特別是處理大型附件時。  
+- **簡易性** – API 能與標準 Java I/O 無縫結合，使程式碼易於閱讀與維護。
 
-滿足這些先決條件後，我們就可以設定適用於 Java 的 GroupDocs.Viewer 了！
+## 前置條件
+- **必要的函式庫與相依性**：將 GroupDocs.Viewer 函式庫加入專案（請參考下方 Maven 片段）。  
+- **環境設定**：安裝 JDK 8 以上的 Java IDE（如 IntelliJ IDEA、Eclipse 等）。  
+- **知識前提**：熟悉 Java I/O，特別是 `FileOutputStream`，以及基本的 Maven 使用方式。
 
-## 為 Java 設定 GroupDocs.Viewer
-要開始在專案中使用 GroupDocs.Viewer API，您需要透過 Maven 安裝它。將以下配置新增至您的 `pom.xml` 文件：
+## 設定 GroupDocs.Viewer for Java
+要在專案中開始使用 GroupDocs.Viewer API，需透過 Maven 安裝。請在 `pom.xml` 檔案中加入以下設定：
 
 ```xml
 <repositories>
@@ -47,13 +53,13 @@ type: docs
 </dependencies>
 ```
 
-**許可證取得步驟：**
-- **免費試用**：從免費試用開始探索其功能。
-- **臨時執照**：取得臨時許可證以延長評估期。
-- **購買**：對於生產用途，您需要購買許可證。
+**取得授權步驟：**
+- **免費試用**：先使用免費試用版以探索功能。  
+- **臨時授權**：取得臨時授權以延長評估期間。  
+- **購買**：正式上線時需購買授權。
 
-### 基本初始化和設定
-將 GroupDocs.Viewer 新增為專案依賴項後，請在 Java 應用程式中對其進行初始化。操作方法如下：
+### 基本初始化與設定
+將 GroupDocs.Viewer 加入相依性後，即可在 Java 應用程式中初始化。以下為示範：
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -62,7 +68,7 @@ import java.nio.file.Path;
 public class InitializeViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document")) {
-            // 與文檔互動的程式碼放在這裡。
+            // Your code to interact with the document goes here.
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -70,19 +76,19 @@ public class InitializeViewer {
 }
 ```
 
-此基本設定初始化 GroupDocs.Viewer 並準備檢索附件。
+此基本設定會初始化 GroupDocs.Viewer，並為取得附件做好準備。
 
-## 實施指南
+## 實作指南
 
-### 從文件中檢索附件
-讓我們詳細了解如何使用 GroupDocs.Viewer 擷取附件。此功能可讓您提取文件中每個附件的元資料。
+### 使用 java file output stream 取得附件
+讓我們一步步說明如何使用 GroupDocs.Viewer 取得附件。此功能可提取文件中每個附件的中繼資料。
 
-#### 概述
-檢索附件涉及訪問 `getAttachments` 方法，傳回包含檔案名稱和大小等詳細資訊的附件物件清單。
+#### 概觀
+取得附件需要呼叫 `getAttachments` 方法，該方法會回傳 `Attachment` 物件清單，內含檔名、大小等資訊。
 
-#### 實施步驟
-1. **建立檢視器實例**
-   初始化 `Viewer` 類別與您的文件的路徑：
+#### 實作步驟
+1. **建立 Viewer 實例**  
+   使用文件路徑初始化 `Viewer` 類別：
 
    ```java
    import com.groupdocs.viewer.Viewer;
@@ -92,7 +98,7 @@ public class InitializeViewer {
    public class FeatureRetrieveAttachments {
        public static void main(String[] args) {
            try (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG_WITH_ATTACHMENTS)) {
-               // 繼續檢索附件
+               // Proceed to retrieve attachments
            } catch (Exception e) {
                throw new RuntimeException(e);
            }
@@ -100,8 +106,8 @@ public class InitializeViewer {
    }
    ```
 
-2. **檢索附件**
-   使用 `getAttachments` 方法：
+2. **取得附件**  
+   呼叫 `getAttachments` 方法：
 
    ```java
    List<Attachment> attachments = viewer.getAttachments();
@@ -110,19 +116,19 @@ public class InitializeViewer {
    }
    ```
 
-3. **了解參數和方法**
-   - `Viewer`：取得文件的文件路徑或流。
-   - `getAttachments()`：檢索附加文件的列表，提供名稱等詳細資訊。
+3. **了解參數與方法**  
+   - `Viewer`：接受文件路徑或串流作為文件來源。  
+   - `getAttachments()`：取得附件檔案清單，提供檔名等詳細資訊。
 
-### 將文件附件儲存到目錄
-現在您已經了解如何擷取附件，讓我們使用 GroupDocs.Viewer API 將它們儲存到您想要的目錄中。
+### 將文件附件儲存至目錄
+現在您已了解如何取得附件，接下來使用 GroupDocs.Viewer API 以及 **java file output stream** 將它們儲存至指定目錄。
 
-#### 概述
-此功能涉及將每個檢索到的附件檔案儲存到指定的輸出目錄。 
+#### 概觀
+此功能會將每個取得的附件檔案儲存至指定的輸出目錄。
 
-#### 實施步驟
-1. **定義輸出目錄**
-   設定 `outputDirectory` 文件保存路徑：
+#### 實作步驟
+1. **定義輸出目錄**  
+   設定 `outputDirectory` 路徑以儲存檔案：
 
    ```java
    import java.nio.file.Path;
@@ -131,8 +137,8 @@ public class InitializeViewer {
    Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
    ```
 
-2. **儲存附件**
-   使用循環保存每個附件 `saveAttachment` 方法：
+2. **儲存附件**  
+   使用迴圈搭配 `saveAttachment` 方法儲存每個附件：
 
    ```java
    try (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG_WITH_ATTACHMENTS)) {
@@ -149,40 +155,41 @@ public class InitializeViewer {
    }
    ```
 
-3. **解釋參數和方法**
-   - `saveAttachment`：採用附件物件和文件輸出流來保存附件。
-   - `FileOutputStream`：管理將資料寫入檔案。
+3. **說明參數與方法**  
+   - `saveAttachment`：接受 `Attachment` 物件與檔案輸出串流，以儲存附件。  
+   - `FileOutputStream`：使用 **java file output stream** 的語意管理資料寫入檔案。
 
-### 故障排除提示
-- **缺少依賴項**：確保所有 Maven 依賴項都已正確新增。
-- **文件路徑錯誤**：仔細檢查文件和輸出目錄的路徑。
-- **存取權限**：驗證您的應用程式是否具有讀取/寫入檔案的必要權限。
+### 疑難排解技巧
+- **缺少相依性**：確認已正確加入所有 Maven 相依性。  
+- **檔案路徑錯誤**：再次確認文件與輸出目錄的路徑是否正確。  
+- **存取權限**：確保應用程式具備必要的讀寫權限。
 
-## 實際應用
-在 Java 中使用 GroupDocs.Viewer 在各種場景中都非常有價值：
+## 實務應用
+使用 GroupDocs.Viewer 在 Java 中可在多種情境下發揮關鍵作用：
+1. **電子郵件客戶端** – 自動從郵件封存中提取附件，以進行處理或歸檔。  
+2. **文件管理系統** – 透過取得與整理附件檔案，提升 DMS 功能。  
+3. **法務部門** – 安全地從法律文件中提取與證據相關的附件。
 
-1. **電子郵件用戶端**：自動從電子郵件檔案中提取附件以進行處理或存檔。
-2. **文件管理系統**：透過檢索和組織附加文件來增強文件管理。
-3. **法律部門**：從法律文件安全地提取與證據相關的附件。
+與 CRM、ERP 或自訂工作流程引擎的整合，可進一步簡化業務流程，使附件處理在各部門之間無縫銜接。
 
-與 CRM 或 ERP 等其他系統的整合可能性可以進一步簡化業務流程，使各部門之間的附件處理變得無縫。
+## 效能考量
+使用 GroupDocs.Viewer 時，為提升效能可考慮以下做法：
+- **優化檔案處理** – 對大型檔案使用緩衝串流，並及時關閉資源。  
+- **記憶體管理** – 立即釋放 `Viewer` 實例（使用 try‑with‑resources），避免記憶體洩漏。
 
-## 性能考慮
-為了優化使用 GroupDocs.Viewer 時的效能：
-- **優化文件處理**：使用高效率的檔案 I/O 操作並考慮對大檔案進行緩衝。
-- **記憶體管理**注意記憶體使用情況，尤其是在處理大型文件時。確保正確清理資源，以防止洩漏。
+遵java file output提取迎透過官方資源聯繫我們。
 
-遵循 Java 記憶體管理的最佳實踐將顯著提高文件處理任務的效率。
+## 常見問題
 
-## 結論
-現在您已經了解如何使用 GroupDocs.Viewer for Java 擷取和儲存文件附件。這款強大的 API 簡化了文件資料的管理，使其成為處理數位文件的開發人員的必備工具。
+**Q: 如何在我的 Java 專案中安裝 GroupDocs.Viewer？**  
+A: 加入前述的 Maven 相依性；只需提供儲存庫 URL**  
+A: 它支援多種格式（PDF、DOCX、MSG 等），完整清單請參閱官方文件。
 
-如需進一步探索 GroupDocs.Viewer 的功能，您可以嘗試其他功能，或將其整合到您現有的專案中。如果您有任何疑問或需要支持，歡迎透過我們提供的資源與我們聯繫。
+**Q: 若在儲存附件時發生錯具備寫入權限。同時確保如範例所示正確使用 `FileOutputStream`。
 
-## 常見問題部分
-1. **如何在我的 Java 專案中安裝 GroupDocs.Viewer？**
-   - 使用如上所示的 Maven 依賴項實現無縫整合。
-2. **GroupDocs.Viewer 可以處理所有文件類型嗎？**
-   - 它支援多種格式；請查看其文件以了解具體資訊。
-3. **如果我在儲存附件時遇到錯誤怎麼辦？**
-   - 確保檔案路徑正確，並且您擁有必要的權限。
+**Q: 正式上線是否需要授權？**  
+A: 是的，正式部署必須擁有可先使用免費試用版進行評估。
+
+**Q: 此方法能處理大型附件檔案嗎？**  
+A: 結合 **java file output stream** 與緩衝 I/O 可有效處理大型二進位檔案。請監控記憶體使用情況，必要時可分測試環境：** GroupDocs.Viewer 25.2  
+**作者：** GroupDocs
