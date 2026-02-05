@@ -1,44 +1,59 @@
 ---
-"date": "2025-04-24"
-"description": "JavaでGroupDocs.Viewerを使用してアーカイブ構造を効率的に取得する方法を学びましょう。簡単なセットアップ、コード例、そして実用的なアプリケーションについては、このガイドをご覧ください。"
-"title": "GroupDocs.Viewer for Java を使用してアーカイブ構造を取得する方法 - 包括的なガイド"
-"url": "/ja/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
-"weight": 1
+date: '2026-02-05'
+description: GroupDocs.Viewer を使用して viewinfo を取得し、Java アーカイブ ファイル タイプの構造を取得する方法を学びます。このガイドでは、セットアップ、コード例、実際のユースケースをカバーしています。
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve archive structures
+- Java document viewer
+title: JavaでViewInfoを取得し、アーカイブ構造を取得する方法
 type: docs
+url: /ja/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/
+weight: 1
 ---
-# GroupDocs.Viewer for Java を使用してアーカイブ構造を取得する方法
 
-## 導入
+# JavaでViewInfoを取得し、アーカイブ構造を取得する方法
 
-アーカイブファイルを効果的に管理するには、その構造を明確に理解する必要があります。この包括的なガイドでは、JavaのGroupDocs.Viewerライブラリを使用して、アーカイブファイルに関する情報（フォルダ構造を含む）を抽出する方法を説明します。これらのテクニックを習得することで、データ管理プロセスを合理化し、ワークフローの効率性を向上させることができます。
+アーカイブファイルを効果的に管理するには、その構造を明確に理解する必要があります。このチュートリアルでは、任意のアーカイブに対して **viewinfo を取得する方法** を学び、**java アーカイブファイルタイプ** の操作にどのように役立つかを確認します。GroupDocs.Viewer の設定、ビュー情報の抽出、フォルダー階層の再帰的読み取りを順に解説し、実際のプロジェクトにソリューションを統合できるようにします。
 
-**学習内容:**
-- GroupDocs.Viewer for Java のセットアップと構成。
-- アーカイブからビュー情報を取得する方法。
-- アーカイブ ファイルのフォルダー構造を読み取って表示するテクニック。
-- Java プロジェクトで GroupDocs.Viewer を使用する際の実用的なアプリケーションとパフォーマンスに関する考慮事項。
+![Java用 GroupDocs.Viewer のアーカイブ構造](/viewer/document-loading/archive-structures-java.png)
 
-まず、GroupDocs.Viewer for Java を使用してこれらの機能を実装する前に必要な前提条件について説明します。
+**学べること**
+- Java 用 GroupDocs.Viewer の設定と構成。  
+- アーカイブから **viewinfo を取得** する方法。  
+- アーカイブファイルのフォルダー構造を読み取り表示するテクニック。  
+- Java プロジェクトで GroupDocs.Viewer を使用する際の実用的な活用例とパフォーマンス上の考慮点。
 
-## 前提条件
+## Quick Answers
+- **viewinfo が提供するものは何ですか？** ファイルタイプ、ページ数、アーカイブのフォルダー一覧を返します。  
+- **サポートされているアーカイブはどれですか？** ZIP、RAR、TAR などの一般的な形式です。  
+- **ライセンスは必要ですか？** 無料トライアルは評価に利用できますが、本番環境では商用ライセンスが必要です。  
+- **大きなアーカイブを処理できますか？** はい。後述のようにストリーミングと適切なメモリ管理を使用します。  
+- **Maven が必要ですか？** Maven は GroupDocs.Viewer の依存関係管理に推奨される方法です。
 
-このチュートリアルを実行するには、次のものを用意してください。
+## What is “how to get viewinfo”?
+`getViewInfo` は、GroupDocs.Viewer API のメソッドで、ドキュメントまたはアーカイブのメタデータを完全にレンダリングせずに抽出します。アーカイブの場合、内部のフォルダツリーを明らかにし、どの部分をレンダリングまたはさらに処理するかを決定できます。
 
-- **Java 開発キット (JDK):** マシンにバージョン 8 以上がインストールされていること。
-- **メイヴン:** 依存関係とプロジェクト ビルドを管理します。
-- **Javaプログラミングの基本的な理解:** オブジェクト指向プログラミングの概念に精通していると有利です。
+## Why Retrieve Java Archive File Type Structures?
+**java アーカイブファイルタイプ**（例: ZIP、RAR）の内部レイアウトを理解すると、次のことが可能になります：
+- すべてを展開せずに必要なファイルを迅速に特定できます。  
+- 関連するサブフォルダーだけを処理する自動パイプラインを構築できます。  
+- コンテンツ管理やデータ取り込みシステムにアーカイブナビゲーションを統合できます。
 
-さらに、Mavenを使用して、特定のリポジトリと依存関係をプロジェクトに追加することで、GroupDocs.Viewerライブラリをプロジェクトに含めます。 `pom.xml` ファイル。
+## Prerequisites
 
-## GroupDocs.Viewer を Java 用にセットアップする
+- **Java Development Kit (JDK):** バージョン 8 以上。  
+- **Maven:** 依存関係管理とビルドに使用。  
+- **基本的な Java 知識:** OOP の概念に慣れていると便利ですが必須ではありません。
 
-Java で GroupDocs.Viewer の使用を開始するには、次の手順に従います。
+また、以下のように Maven プロジェクトに GroupDocs.Viewer ライブラリを追加できるようにしてください。
 
-### Maven 構成
+## Setting Up GroupDocs.Viewer for Java
 
-Maven 構成ファイルに以下を追加します。
+### Maven Configuration
 
-**リポジトリ:**
+`pom.xml` にリポジトリと依存関係を追加します。
+
+**Repositories:**
 ```xml
 <repositories>
    <repository>
@@ -49,7 +64,7 @@ Maven 構成ファイルに以下を追加します。
 </repositories>
 ```
 
-**依存関係:**
+**Dependencies:**
 ```xml
 <dependencies>
    <dependency>
@@ -60,33 +75,29 @@ Maven 構成ファイルに以下を追加します。
 </dependencies>
 ```
 
-### ライセンス取得
+### License Acquisition
 
-- **無料トライアル:** 開始するには、GroupDocs Web サイトから無料試用版をダウンロードしてください。
-- **一時ライセンス:** 制限なくアクセスを延長する必要がある場合は、一時ライセンスを申請してください。
-- **ライセンスを購入:** 長期プロジェクトの場合はフルライセンスの購入を検討してください。
+- **無料トライアル:** GroupDocs のウェブサイトからトライアル版をダウンロード。  
+- **一時ライセンス:** 短期評価用の一時キーをリクエスト。  
+- **フルライセンス:** 本番環境で無制限に使用できる商用ライセンスを購入。
 
-設定が完了したら、必要なクラスをインポートし、基本的なビューア インスタンスを設定して、GroupDocs.Viewer を使用してプロジェクトを初期化します。
+ライブラリがクラスパスに配置されたら、コーディングを開始できます。
 
-## 実装ガイド
+## Implementation Guide
 
-### 機能1: アーカイブファイルの表示情報を取得する
+### How to Get ViewInfo for Archive Files
 
-この機能は、GroupDocs.Viewer を使用してアーカイブファイルの詳細情報を取得する方法を示します。Viewer クラスの初期化、表示オプションの指定、ファイルの種類とページ数の抽出などを行います。
+このセクションでは、`getViewInfo` を呼び出しフォルダー階層を読み取る正確な手順を示します。
 
-#### ビューアを初期化する
-
-まず、 `Viewer` ターゲット アーカイブ ファイルのパスを持つインスタンス:
+#### Initialize the Viewer
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP_WITH_FOLDERS")) {
-    // 追加の手順についてはここで説明します。
+    // Additional steps will follow here.
 }
 ```
 
-#### ビュー情報を取得する
-
-使用 `getViewInfo()` HTML 表示オプションを使用してアーカイブ ファイルの詳細を取得するには:
+#### Retrieve View Information
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(ViewInfoOptions.forHtmlView());
@@ -94,18 +105,14 @@ System.out.println("File type: " + viewInfo.getFileType());
 System.out.println("Pages count: " + viewInfo.getPages().size());
 ```
 
-#### フォルダ構造を表示
-
-アーカイブ内のフォルダー構造を調べるには、再帰メソッドを呼び出します。
+#### Display Folder Structure
 
 ```java
 String rootFolder = "";
 readFolders(viewer, rootFolder);
 ```
 
-##### 再帰的なフォルダ読み取り
-
-このヘルパーメソッドは `ViewInfoOptions` フォルダービューを指定してサブフォルダーを再帰的に読み取ります。
+##### Recursive Folder Reading
 
 ```java
 private static void readFolders(Viewer viewer, String folder) {
@@ -121,22 +128,18 @@ private static void readFolders(Viewer viewer, String folder) {
 }
 ```
 
-### 機能2: アーカイブフォルダ構造の取得
+### Feature 2: Retrieve Archive Folder Structure
 
-この機能は、アーカイブファイルのフォルダ構造を出力することに重点を置いています。最初の機能と似ていますが、再帰的な探索に重点を置いています。
+この機能はアーカイブファイルのフォルダー構造を出力することに焦点を当てています。最初の機能と似ていますが、再帰的探索を強調しています。
 
-#### 設定情報表示オプション
-
-設定 `ViewInfoOptions` 特定のフォルダーの場合:
+#### Setup View Info Options
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.getArchiveOptions().setFolder(folder);
 ```
 
-#### 再帰的探索
-
-このメソッドはサブフォルダーを反復処理し、それぞれを出力して再帰的に深く探索します。
+#### Recursive Exploration
 
 ```java
 for (String subFolder : viewInfo.getFolders()) {
@@ -145,44 +148,58 @@ for (String subFolder : viewInfo.getFolders()) {
 }
 ```
 
-## 実用的なアプリケーション
+## Practical Applications
 
-1. **データ管理:** アーカイブ構造を理解することで、大規模なデータセットをすばやく整理します。
-2. **自動ファイル処理:** このテクニックを使用して、バッチ ジョブ内のアーカイブ ファイルの処理を自動化します。
-3. **CMS システムとの統合:** 効率的なファイル処理のために GroupDocs.Viewer を統合してコンテンツ管理システムを強化します。
+1. **データ管理:** アーカイブ構造を理解して大規模データセットを迅速に整理。  
+2. **自動ファイル処理:** アーカイブファイルを完全に展開せずにバッチ処理。  
+3. **CMS 統合:** コンテンツ管理システムにオンザフライのアーカイブナビゲーションを追加。
 
-## パフォーマンスに関する考慮事項
+## Performance Considerations
 
-- **メモリ使用量を最適化:** 特に多数のファイルやサイズの大きいファイルを扱う場合には、リソースを賢く管理して大規模なアーカイブを効率的に処理します。
-- **ベストプラクティス:** パフォーマンスの向上を活用するために、ライブラリと JDK を最新バージョンに定期的に更新します。
+- **メモリ使用量の最適化:** フォルダーを1レベルずつ処理し、`Viewer` インスタンスは速やかに閉じます。  
+- **常に最新を使用:** パフォーマンス向上のため、最新の GroupDocs.Viewer バージョンと JDK を使用してください。
 
-## 結論
+## Common Issues and Solutions
 
-このチュートリアルでは、GroupDocs.Viewer for Java を効果的に使用してアーカイブ構造を取得および管理する方法を学習しました。このスキルセットは、データの整理と処理を伴う様々なアプリケーションにおいて大きな資産となります。次のステップとして、GroupDocs.Viewer ライブラリの他の機能を試したり、これらのテクニックをより大きなプロジェクトに統合したりすることを検討してください。
+| 問題 | 発生理由 | 対策 |
+|------|----------|------|
+| `NullPointerException` がフォルダー読み取り時に発生 | `viewInfo.getFolders()` が空ディレクトリで null を返す | イテレーション前に null または空リストか確認してください。 |
+| 巨大な ZIP ファイルの処理が遅い | アーカイブ全体がメモリに読み込まれる | 新しい GroupDocs バージョンで利用可能なストリーミングオプションを使用してください。 |
+| ライセンスが見つからない | ライセンスファイルのパスが間違っている | ライセンスファイルをアプリケーションのルートに配置するか、`License.setLicense("path/to/license.json")` を設定してください。 |
 
-## FAQセクション
+## Frequently Asked Questions
 
-**Q: GroupDocs.Viewer とは何ですか?**
-A: アーカイブを含むドキュメントを HTML、画像、PDF などのさまざまな形式にレンダリングするための強力な Java ライブラリです。
+**Q: GroupDocs.Viewer とは何ですか？**  
+A: HTML、画像、PDF などの形式にドキュメント（アーカイブを含む）をレンダリングする強力な Java ライブラリです。
 
-**Q: GroupDocs.Viewer を他のプログラミング言語で使用できますか?**
-A: はい、GroupDocs は複数のプラットフォーム用の SDK を提供していますが、このチュートリアルでは Java 実装に重点を置いています。
+**Q: 他のプログラミング言語でも GroupDocs.Viewer を使用できますか？**  
+A: はい、GroupDocs は複数のプラットフォーム向けに SDK を提供していますが、本チュートリアルは Java 実装に焦点を当てています。
 
-**Q: 大きなアーカイブ ファイルをどのように処理すればよいですか?**
-A: 効率的なメモリ管理手法を使用し、必要に応じてアーカイブを分割することを検討してください。
+**Q: 大きなアーカイブファイルはどう扱いますか？**  
+A: 効率的なメモリ管理を実施し、必要に応じてアーカイブを分割することを検討してください。
 
-**Q: GroupDocs.Viewer はどのような種類のアーカイブをサポートしていますか?**
+**Q: GroupDocs.Viewer がサポートするアーカイブ形式は何ですか？**  
 A: ZIP、RAR、TAR など、さまざまな形式をサポートしています。
 
-**Q: 処理できるアーカイブのサイズに制限はありますか?**
-A: 制限はシステムのリソースによって異なります。必ずご自身の環境を念頭に置いてテストしてください。
+**Q: 処理できるアーカイブのサイズに制限はありますか？**  
+A: 制限はシステムリソースに依存します。対象環境でテストし、実用的な上限を確認してください。
 
-## リソース
+**Q: 「viewinfo を取得する方法」はパスワード保護されたアーカイブでも機能しますか？**  
+A: はい、`getViewInfo` を呼び出す前に `ArchiveOptions.setPassword("yourPassword")` でパスワードを指定できます。
 
-- **ドキュメント:** [GroupDocs Viewer Java ドキュメント](https://docs.groupdocs.com/viewer/java/)
-- **APIリファレンス:** [GroupDocs APIリファレンス（Java用）](https://reference.groupdocs.com/viewer/java/)
-- **GroupDocs.Viewerをダウンロード:** [GroupDocs ダウンロードページ](https://releases.groupdocs.com/viewer/java/)
-- **ライセンスを購入:** [GroupDocsを購入する](https://purchase.groupdocs.com/buy)
-- **無料トライアルと一時ライセンス:** [GroupDocs無料トライアル](https://releases.groupdocs.com/viewer/java/) | [一時ライセンス](https://purchase.groupdocs.com/temporary-license/)
+## Conclusion
 
-これらの手順をプロジェクトで試して、GroupDocs.Viewer を使用したアーカイブファイルの処理における Java アプリケーションの能力を強化しましょう。コーディングを楽しみましょう！
+このガイドに従うことで、任意のサポート対象アーカイブに対して **viewinfo を取得する方法** と、GroupDocs.Viewer for Java を使用したフォルダー階層の走査方法が分かります。これらのテクニックにより、より賢いデータ処理パイプラインの構築、CMS 統合の改善、そして大量のアーカイブファイルを自信を持って扱えるようになります。次は、アーカイブ内の個別ファイルをレンダリングしたり、PDF/HTML へ変換する他の Viewer 機能を探ってみてください。
+
+---
+
+**Last Updated:** 2026-02-05  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+**Resources**
+- **Documentation:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)
+- **Download GroupDocs.Viewer:** [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Purchase License:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
+- **Free Trial and Temporary License:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/)

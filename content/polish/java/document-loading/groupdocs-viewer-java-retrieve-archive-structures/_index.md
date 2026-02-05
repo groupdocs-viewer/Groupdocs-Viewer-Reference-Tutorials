@@ -1,44 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak wydajnie pobierać struktury archiwum za pomocą GroupDocs.Viewer w Javie. Postępuj zgodnie z tym przewodnikiem, aby uzyskać łatwą konfigurację, przykłady kodu i praktyczne zastosowania."
-"title": "Jak pobrać struktury archiwum za pomocą GroupDocs.Viewer dla Java? Kompleksowy przewodnik"
-"url": "/pl/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
-"weight": 1
+date: '2026-02-05'
+description: Dowiedz się, jak uzyskać viewinfo i pobrać struktury plików typu Java
+  Archive przy użyciu GroupDocs.Viewer. Ten przewodnik obejmuje konfigurację, przykłady
+  kodu oraz rzeczywiste przypadki użycia.
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve archive structures
+- Java document viewer
+title: Jak uzyskać ViewInfo i pobrać struktury archiwum w Javie
 type: docs
+url: /pl/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/
+weight: 1
 ---
-# Jak pobrać struktury archiwum za pomocą GroupDocs.Viewer dla Java
 
-## Wstęp
+# Jak uzyskać ViewInfo i pobrać struktury archiwów w Javie
 
-Skuteczne zarządzanie plikami archiwalnymi wymaga jasnego zrozumienia ich struktury. Ten kompleksowy przewodnik pokazuje, jak używać biblioteki GroupDocs.Viewer w Javie do wyodrębniania informacji o plikach archiwalnych, w tym struktur folderów. Opanowując te techniki, usprawnisz procesy zarządzania danymi i zwiększysz wydajność przepływu pracy.
+Efektywne zarządzanie plikami archiwów wymaga jasnego zrozumienia ich struktury. W tym samouczku dowiesz się **jak uzyskać viewinfo** dla dowolnego archiwum i zobaczysz, jak pomaga to w pracy z **typem pliku archiwum Java**. Przejdziemy przez konfigurację GroupDocs.Viewer, wyodrębnianie informacji o widoku oraz rekurencyjne odczytywanie hierarchii folderów, abyś mógł zintegrować rozwiązanie w rzeczywistych projektach.
 
-**Czego się nauczysz:**
-- Konfigurowanie i konfigurowanie GroupDocs.Viewer dla Java.
-- Metody pobierania informacji o widokach z archiwów.
-- Techniki umożliwiające odczyt i wyświetlanie struktury folderów pliku archiwum.
-- Praktyczne zastosowania i rozważania dotyczące wydajności podczas korzystania z GroupDocs.Viewer w projektach Java.
+![Struktury archiwów z GroupDocs.Viewer dla Javy](/viewer/document-loading/archive-structures-java.png)
 
-Zacznijmy od omówienia warunków wstępnych, które trzeba spełnić, zanim zaimplementujemy te funkcje za pomocą GroupDocs.Viewer dla Java.
+**Co się nauczysz**
+- Konfiguracja i ustawienie GroupDocs.Viewer dla Javy.  
+- Metody **uzyskiwania viewinfo** z archiwów.  
+- Techniki odczytywania i wyświetlania struktury folderów pliku archiwum.  
+- Praktyczne zastosowania i kwestie wydajności przy użyciu GroupDocs.Viewer w projektach Java.
+
+## Szybkie odpowiedzi
+- **Co dostarcza „viewinfo”?** Zwraca typ pliku, liczbę stron oraz listę folderów w archiwum.  
+- **Jakie archiwa są obsługiwane?** ZIP, RAR, TAR i inne popularne formaty.  
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarcza do oceny; licencja komercyjna jest wymagana w produkcji.  
+- **Czy mogę przetwarzać duże archiwa?** Tak – użyj strumieniowania i odpowiedniego zarządzania pamięcią, jak pokazano później.  
+- **Czy Maven jest wymagany?** Maven jest zalecaną metodą zarządzania zależnością GroupDocs.Viewer.
+
+## Co to jest „how to get viewinfo”?
+`getViewInfo` to metoda w API GroupDocs.Viewer, która wyodrębnia metadane dokumentu lub archiwum bez renderowania pełnej zawartości. Dla archiwów ujawnia wewnętrzne drzewo folderów, umożliwiając decyzję, które części renderować lub przetwarzać dalej.
+
+## Dlaczego pobierać struktury typów plików archiwów Java?
+Zrozumienie wewnętrznego układu **java archive file type** (np. ZIP, RAR) pozwala Ci:
+- Szybko zlokalizować potrzebne pliki bez rozpakowywania wszystkiego.  
+- Budować zautomatyzowane pipeline’y przetwarzające tylko istotne podfoldery.  
+- Zintegrować nawigację po archiwum z systemami zarządzania treścią lub pobierania danych.
 
 ## Wymagania wstępne
 
-Aby skorzystać z tego samouczka, upewnij się, że posiadasz:
+- **Java Development Kit (JDK):** Wersja 8 lub nowsza.  
+- **Maven:** Do zarządzania zależnościami i budowania.  
+- **Podstawowa znajomość Javy:** Znajomość koncepcji OOP pomaga, ale nie jest wymagana.
 
-- **Zestaw narzędzi programistycznych Java (JDK):** Na Twoim komputerze zainstalowana jest wersja 8 lub nowsza.
-- **Maven:** Do zarządzania zależnościami i kompilacjami projektów.
-- **Podstawowa wiedza na temat programowania w języku Java:** Znajomość zagadnień programowania obiektowego będzie dodatkowym atutem.
+Musisz również mieć dostęp do biblioteki GroupDocs.Viewer, którą możesz dodać do swojego projektu Maven, jak pokazano poniżej.
 
-Dodatkowo uwzględnij bibliotekę GroupDocs.Viewer w swoim projekcie za pomocą Maven, dodając określone repozytoria i zależności do swojego projektu. `pom.xml` plik.
-
-## Konfigurowanie GroupDocs.Viewer dla Java
-
-Aby rozpocząć korzystanie z GroupDocs.Viewer z Java, wykonaj następujące kroki:
+## Konfiguracja GroupDocs.Viewer dla Javy
 
 ### Konfiguracja Maven
 
-Dodaj poniższe elementy do plików konfiguracyjnych Maven:
+Dodaj repozytorium i zależność do swojego `pom.xml`.
 
-**Repozytoria:**
+**Repositories:**
 ```xml
 <repositories>
    <repository>
@@ -49,7 +66,7 @@ Dodaj poniższe elementy do plików konfiguracyjnych Maven:
 </repositories>
 ```
 
-**Zależności:**
+**Dependencies:**
 ```xml
 <dependencies>
    <dependency>
@@ -60,33 +77,29 @@ Dodaj poniższe elementy do plików konfiguracyjnych Maven:
 </dependencies>
 ```
 
-### Nabycie licencji
+### Uzyskiwanie licencji
 
-- **Bezpłatna wersja próbna:** Aby rozpocząć, pobierz bezpłatną wersję próbną ze strony GroupDocs.
-- **Licencja tymczasowa:** Złóż wniosek o tymczasową licencję, jeśli potrzebujesz rozszerzonego dostępu bez ograniczeń.
-- **Kup licencję:** Rozważ zakup pełnej licencji na potrzeby projektów długoterminowych.
+- **Darmowa wersja próbna:** Pobierz wersję próbną ze strony GroupDocs.  
+- **Licencja tymczasowa:** Poproś o tymczasowy klucz do krótkoterminowej oceny.  
+- **Pełna licencja:** Kup licencję komercyjną do nieograniczonego użycia w produkcji.
 
-Po skonfigurowaniu zainicjuj swój projekt za pomocą GroupDocs.Viewer, importując niezbędne klasy i konfigurując podstawowe wystąpienia przeglądarki.
+Gdy biblioteka znajdzie się na Twojej ścieżce klas, możesz rozpocząć kodowanie.
 
-## Przewodnik wdrażania
+## Przewodnik implementacji
 
-### Funkcja 1: Uzyskaj informacje o plikach archiwalnych
+### Jak uzyskać ViewInfo dla plików archiwów
 
-Ta funkcja pokazuje, jak pobrać szczegółowe informacje o pliku archiwum za pomocą GroupDocs.Viewer. Obejmuje to zainicjowanie klasy Viewer, określenie opcji widoku oraz wyodrębnienie typu pliku i liczby stron.
+Ten rozdział pokazuje dokładne kroki wywołania `getViewInfo` i odczytania hierarchii folderów.
 
-#### Zainicjuj przeglądarkę
-
-Zacznij od utworzenia `Viewer` wystąpienie z docelową ścieżką pliku archiwum:
+#### Inicjalizacja Viewer
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP_WITH_FOLDERS")) {
-    // Dalsze kroki zostaną tutaj przedstawione.
+    // Additional steps will follow here.
 }
 ```
 
-#### Pobierz informacje o widoku
-
-Używać `getViewInfo()` aby uzyskać szczegółowe informacje o pliku archiwum za pomocą opcji widoku HTML:
+#### Pobranie informacji o widoku
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(ViewInfoOptions.forHtmlView());
@@ -94,9 +107,7 @@ System.out.println("File type: " + viewInfo.getFileType());
 System.out.println("Pages count: " + viewInfo.getPages().size());
 ```
 
-#### Wyświetl strukturę folderów
-
-Aby zbadać strukturę folderów w archiwum, wywołaj metodę rekurencyjną:
+#### Wyświetlenie struktury folderów
 
 ```java
 String rootFolder = "";
@@ -104,8 +115,6 @@ readFolders(viewer, rootFolder);
 ```
 
 ##### Rekurencyjne odczytywanie folderów
-
-Ta metoda pomocnicza wykorzystuje `ViewInfoOptions` aby określić widoki folderów i rekurencyjnie odczytać podfoldery:
 
 ```java
 private static void readFolders(Viewer viewer, String folder) {
@@ -121,22 +130,18 @@ private static void readFolders(Viewer viewer, String folder) {
 }
 ```
 
-### Funkcja 2: Pobierz strukturę folderów archiwum
+### Funkcja 2: Pobranie struktury folderów archiwum
 
-Ta funkcja koncentruje się na drukowaniu struktury folderów pliku archiwum. Jest podobna do pierwszej funkcji, ale kładzie nacisk na eksplorację rekurencyjną.
+Ta funkcja koncentruje się na wypisaniu struktury folderów pliku archiwum. Jest podobna do pierwszej funkcji, ale podkreśla rekurencyjną eksplorację.
 
-#### Opcje konfiguracji widoku informacji
-
-Konfiguruj `ViewInfoOptions` z określonymi folderami:
+#### Konfiguracja opcji ViewInfo
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.getArchiveOptions().setFolder(folder);
 ```
 
-#### Eksploracja rekurencyjna
-
-Metoda ta iteruje po podfolderach, wyświetlając każdy z nich i eksplorując je głębiej rekurencyjnie:
+#### Rekurencyjna eksploracja
 
 ```java
 for (String subFolder : viewInfo.getFolders()) {
@@ -145,44 +150,58 @@ for (String subFolder : viewInfo.getFolders()) {
 }
 ```
 
-## Zastosowania praktyczne
+## Praktyczne zastosowania
 
-1. **Zarządzanie danymi:** Szybkie porządkowanie dużych zbiorów danych dzięki zrozumieniu struktur archiwów.
-2. **Automatyczne przetwarzanie plików:** Zautomatyzuj przetwarzanie zarchiwizowanych plików w zadaniach wsadowych, korzystając z tej techniki.
-3. **Integracja z systemami CMS:** Ulepsz systemy zarządzania treścią, integrując GroupDocs.Viewer w celu zapewnienia wydajnej obsługi plików.
+1. **Zarządzanie danymi:** Szybko organizować duże zestawy danych, rozumiejąc struktury archiwów.  
+2. **Automatyczne przetwarzanie plików:** Przetwarzać wsadowo pliki archiwalne bez pełnego ich rozpakowywania.  
+3. **Integracja z CMS:** Ulepszyć systemy zarządzania treścią o nawigację po archiwach w locie.
 
 ## Rozważania dotyczące wydajności
 
-- **Optymalizacja wykorzystania pamięci:** Aby wydajnie obsługiwać duże archiwa, mądrze zarządzaj zasobami, zwłaszcza w przypadku plików o dużej liczbie lub dużych rozmiarach.
-- **Najlepsze praktyki:** Regularnie aktualizuj biblioteki i pakiety JDK do najnowszych wersji, aby w pełni wykorzystać udoskonalenia wydajności.
+- **Optymalizacja użycia pamięci:** Przetwarzaj foldery poziom po poziomie i szybko zamykaj instancję `Viewer`.  
+- **Bądź na bieżąco:** Używaj najnowszej wersji GroupDocs.Viewer oraz wydań JDK dla zwiększenia wydajności.
 
-## Wniosek
+## Częste problemy i rozwiązania
 
-Postępując zgodnie z tym samouczkiem, nauczyłeś się, jak skutecznie używać GroupDocs.Viewer dla Java do pobierania i zarządzania strukturami archiwów. Ten zestaw umiejętności może być znaczącym atutem w różnych aplikacjach obejmujących organizację i przetwarzanie danych. Jako kolejne kroki rozważ zbadanie innych funkcji biblioteki GroupDocs.Viewer lub zintegrowanie tych technik z większymi projektami.
+| Problem | Dlaczego się pojawia | Rozwiązanie |
+|-------|----------------|-----|
+| `NullPointerException` podczas odczytywania folderów | `viewInfo.getFolders()` zwraca null dla pustych katalogów | Sprawdź, czy lista nie jest null lub pusta przed iteracją. |
+| Wolne przetwarzanie dużych plików ZIP | Całe archiwum jest ładowane do pamięci | Użyj opcji strumieniowania dostępnych w nowszych wersjach GroupDocs. |
+| Nie znaleziono licencji | Ścieżka do pliku licencji jest nieprawidłowa | Umieść plik licencji w katalogu głównym aplikacji lub ustaw `License.setLicense("path/to/license.json")`. |
 
-## Sekcja FAQ
+## Najczęściej zadawane pytania
 
-**P: Czym jest GroupDocs.Viewer?**
-A: To potężna biblioteka Java umożliwiająca renderowanie dokumentów, w tym archiwów, do różnych formatów, takich jak HTML, obrazy i PDF.
+**Q: Czym jest GroupDocs.Viewer?**  
+A: To potężna biblioteka Java do renderowania dokumentów, w tym archiwów, do formatów takich jak HTML, obraz oraz PDF.
 
-**P: Czy mogę używać GroupDocs.Viewer z innymi językami programowania?**
-O: Tak, GroupDocs oferuje zestawy SDK dla wielu platform, ale ten samouczek skupia się na implementacji w Javie.
+**Q: Czy mogę używać GroupDocs.Viewer z innymi językami programowania?**  
+A: Tak, GroupDocs oferuje SDK dla wielu platform, ale ten samouczek koncentruje się na implementacji w Javie.
 
-**P: Jak postępować z dużymi plikami archiwalnymi?**
-A: Stosuj efektywne praktyki zarządzania pamięcią i rozważ podział archiwów, jeśli to konieczne.
+**Q: Jak obsługiwać duże pliki archiwów?**  
+A: Stosuj efektywne praktyki zarządzania pamięcią i rozważ podział archiwów w razie potrzeby.
 
-**P: Jakie typy archiwów obsługuje GroupDocs.Viewer?**
-A: Obsługuje wiele formatów, m.in. ZIP, RAR i TAR.
+**Q: Jakie typy archiwów obsługuje GroupDocs.Viewer?**  
+A: Obsługuje różnorodne formaty, w tym ZIP, RAR, TAR i inne.
 
-**P: Czy istnieje ograniczenie rozmiaru archiwów, które mogę przetwarzać?**
-A: Limity zależą od zasobów Twojego systemu. Zawsze testuj, mając na uwadze swoje konkretne środowisko.
+**Q: Czy istnieje limit rozmiaru archiwów, które mogę przetworzyć?**  
+A: Limity zależą od zasobów systemu. Przetestuj w docelowym środowisku, aby określić praktyczne granice.
 
-## Zasoby
+**Q: Czy „how to get viewinfo” działa z archiwami zabezpieczonymi hasłem?**  
+A: Tak, możesz podać hasło za pomocą `ArchiveOptions.setPassword("yourPassword")` przed wywołaniem `getViewInfo`.
 
-- **Dokumentacja:** [Dokumentacja programu GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)
-- **Dokumentacja API:** [GroupDocs API Reference dla Java](https://reference.groupdocs.com/viewer/java/)
-- **Pobierz GroupDocs.Viewer:** [Strona pobierania GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Kup licencję:** [Kup GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezpłatna wersja próbna i licencja tymczasowa:** [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/) | [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/)
+## Podsumowanie
 
-Wypróbuj te kroki w swoich projektach, aby zwiększyć możliwości aplikacji Java w zakresie obsługi plików archiwalnych za pomocą GroupDocs.Viewer. Miłego kodowania!
+Postępując zgodnie z tym przewodnikiem, teraz wiesz **jak uzyskać viewinfo** dla dowolnego obsługiwanego archiwum oraz jak przeglądać jego strukturę folderów przy użyciu GroupDocs.Viewer dla Javy. Te techniki umożliwiają budowanie inteligentniejszych pipeline’ów przetwarzania danych, ulepszanie integracji z CMS oraz pewne radzenie sobie z dużymi zbiorami plików archiwalnych. Następnie możesz zbadać renderowanie pojedynczych plików z archiwum lub konwersję ich do PDF/HTML przy użyciu innych funkcji Viewer.
+
+---
+
+**Last Updated:** 2026-02-05  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+**Zasoby**
+- **Dokumentacja:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referencja API:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)
+- **Pobierz GroupDocs.Viewer:** [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Kup licencję:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
+- **Darmowa wersja próbna i licencja tymczasowa:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/)

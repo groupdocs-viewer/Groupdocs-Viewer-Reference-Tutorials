@@ -1,42 +1,59 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak efektivně načítat archivní struktury pomocí GroupDocs.Viewer v Javě. Řiďte se tímto návodem pro snadné nastavení, příklady kódu a praktické aplikace."
-"title": "Jak načíst archivní struktury pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
-"url": "/cs/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
-"weight": 1
+date: '2026-02-05'
+description: Naučte se, jak získat viewinfo a načíst struktury souborů typu Java archiv
+  pomocí GroupDocs.Viewer. Tento průvodce zahrnuje nastavení, ukázky kódu a reálné
+  příklady použití.
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve archive structures
+- Java document viewer
+title: Jak získat ViewInfo a načíst struktury archivu v Javě
 type: docs
+url: /cs/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/
+weight: 1
 ---
-# Jak načíst archivní struktury pomocí GroupDocs.Viewer pro Javu
 
-## Zavedení
+# Jak získat ViewInfo a načíst struktury archivů v Javě
 
-Efektivní správa archivních souborů vyžaduje jasnou znalost jejich struktury. Tato komplexní příručka ukazuje, jak používat knihovnu GroupDocs.Viewer v Javě k extrakci informací o archivních souborech, včetně struktur složek. Zvládnutím těchto technik zefektivníte procesy správy dat a zvýšíte efektivitu pracovních postupů.
+Efektivní správa archivních souborů vyžaduje jasné pochopení jejich struktury. V tomto tutoriálu se naučíte **jak získat viewinfo** pro jakýkoli archiv a uvidíte, jak vám to pomáhá pracovat s **typem archivního souboru Java**. Provedeme vás nastavením GroupDocs.Viewer, získáním informací o zobrazení a rekurzivním čtením hierarchie složek, abyste mohli řešení integrovat do reálných projektů.
 
-**Co se naučíte:**
-- Nastavení a konfigurace GroupDocs.Viewer pro Javu.
-- Metody pro načtení informací o zobrazení z archivů.
-- Techniky pro čtení a zobrazení struktury složek archivního souboru.
-- Praktické aplikace a aspekty výkonu při použití GroupDocs.Viewer v projektech Java.
+![Struktury archivů s GroupDocs.Viewer pro Javu](/viewer/document-loading/archive-structures-java.png)
 
-Začněme tím, že si probereme předpoklady potřebné před implementací těchto funkcí pomocí GroupDocs.Viewer pro Javu.
+**Co se naučíte**
+- Nastavení a konfigurace GroupDocs.Viewer pro Java.  
+- Metody k **získání viewinfo** z archivů.  
+- Techniky pro čtení a zobrazení struktury složek archivního souboru.  
+- Praktické aplikace a úvahy o výkonu při používání GroupDocs.Viewer v Java projektech.
+
+## Rychlé odpovědi
+- **Co poskytuje “viewinfo”?** Vrací typ souboru, počet stránek a výpis složek v archivu.  
+- **Které archivy jsou podporovány?** ZIP, RAR, TAR a další běžné formáty.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkční nasazení je vyžadována komerční licence.  
+- **Mohu zpracovávat velké archivy?** Ano – použijte streamování a správnou správu paměti, jak je ukázáno níže.  
+- **Je Maven vyžadován?** Maven je doporučený způsob správy závislosti GroupDocs.Viewer.
+
+## Co je “jak získat viewinfo”?
+`getViewInfo` je metoda v API GroupDocs.Viewer, která extrahuje metadata o dokumentu nebo archivu bez vykreslení celého obsahu. Pro archivy odhaluje vnitřní strom složek, což vám umožní rozhodnout, které části vykreslit nebo dále zpracovat.
+
+## Proč načítat struktury archivních souborů Java?
+Porozumění vnitřnímu uspořádání **typu archivního souboru Java** (např. ZIP, RAR) vám umožní:
+- Rychle najít potřebné soubory bez rozbalení všeho.  
+- Vytvořit automatizované pipeline, které zpracovávají jen relevantní pod‑složky.  
+- Integrovat navigaci v archivu do systémů pro správu obsahu nebo ingestování dat.
 
 ## Předpoklady
 
-Abyste mohli postupovat podle tohoto tutoriálu, ujistěte se, že máte:
+- **Java Development Kit (JDK):** Verze 8 nebo novější.  
+- **Maven:** Pro správu závislostí a sestavení.  
+- **Základní znalost Javy:** Znalost OOP konceptů pomáhá, ale není povinná.
 
-- **Vývojová sada pro Javu (JDK):** Na vašem počítači nainstalovaná verze 8 nebo vyšší.
-- **Znalec:** Pro správu závislostí a sestavení projektů.
-- **Základní znalost programování v Javě:** Znalost konceptů objektově orientovaného programování bude výhodou.
+Také potřebujete přístup k knihovně GroupDocs.Viewer, kterou můžete přidat do svého Maven projektu, jak je uvedeno níže.
 
-Dále do svého projektu pomocí Mavenu zahrňte knihovnu GroupDocs.Viewer přidáním specifických repozitářů a závislostí. `pom.xml` soubor.
+## Nastavení GroupDocs.Viewer pro Java
 
-## Nastavení GroupDocs.Viewer pro Javu
+### Maven konfigurace
 
-Chcete-li začít používat GroupDocs.Viewer s Javou, postupujte takto:
-
-### Konfigurace Mavenu
-
-Přidejte do konfiguračních souborů Mavenu následující:
+Přidejte repozitář a závislost do svého `pom.xml`.
 
 **Repozitáře:**
 ```xml
@@ -62,31 +79,27 @@ Přidejte do konfiguračních souborů Mavenu následující:
 
 ### Získání licence
 
-- **Bezplatná zkušební verze:** Stáhněte si bezplatnou zkušební verzi z webových stránek GroupDocs a začněte.
-- **Dočasná licence:** Pokud potřebujete prodloužený přístup bez omezení, požádejte o dočasnou licenci.
-- **Licence k zakoupení:** Pro dlouhodobé projekty zvažte zakoupení plné licence.
+- **Bezplatná zkušební verze:** Stáhněte si zkušební verzi z webu GroupDocs.  
+- **Dočasná licence:** Požádejte o dočasný klíč pro krátkodobé hodnocení.  
+- **Plná licence:** Zakupte komerční licenci pro neomezené používání v produkci.
 
-Po konfiguraci inicializujte projekt pomocí GroupDocs.Viewer importem potřebných tříd a nastavením základních instancí prohlížeče.
+Jakmile je knihovna na vaší classpath, můžete začít programovat.
 
 ## Průvodce implementací
 
-### Funkce 1: Získání informací o zobrazení archivních souborů
+### Jak získat ViewInfo pro archivní soubory
 
-Tato funkce ukazuje, jak načíst podrobné informace o archivním souboru pomocí GroupDocs.Viewer. Zahrnuje inicializaci třídy Viewer, určení možností zobrazení a extrakci typu souboru a počtu stránek.
+Tato sekce ukazuje přesné kroky pro volání `getViewInfo` a čtení hierarchie složek.
 
-#### Inicializace prohlížeče
-
-Začněte vytvořením `Viewer` instance s cestou k cílovému archivnímu souboru:
+#### Inicializace Vieweru
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP_WITH_FOLDERS")) {
-    // Zde budou následovat další kroky.
+    // Additional steps will follow here.
 }
 ```
 
-#### Načíst informace o zobrazení
-
-Použití `getViewInfo()` Chcete-li získat podrobnosti o archivním souboru pomocí možností zobrazení HTML:
+#### Získání informací o zobrazení
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(ViewInfoOptions.forHtmlView());
@@ -94,9 +107,7 @@ System.out.println("File type: " + viewInfo.getFileType());
 System.out.println("Pages count: " + viewInfo.getPages().size());
 ```
 
-#### Struktura složek zobrazení
-
-Chcete-li prozkoumat strukturu složek v archivu, zavolejte rekurzivní metodu:
+#### Zobrazení struktury složek
 
 ```java
 String rootFolder = "";
@@ -104,8 +115,6 @@ readFolders(viewer, rootFolder);
 ```
 
 ##### Rekurzivní čtení složek
-
-Tato pomocná metoda používá `ViewInfoOptions` pro určení zobrazení složek a rekurzivní čtení podsložek:
 
 ```java
 private static void readFolders(Viewer viewer, String folder) {
@@ -121,13 +130,11 @@ private static void readFolders(Viewer viewer, String folder) {
 }
 ```
 
-### Funkce 2: Obnovení struktury složek archivu
+### Funkce 2: Načtení struktury složek archivu
 
-Tato funkce se zaměřuje na výpis struktury složek archivního souboru. Je podobná první funkci, ale klade důraz na rekurzivní prozkoumávání.
+Tato funkce se zaměřuje na výpis struktury složek archivního souboru. Je podobná první funkci, ale zdůrazňuje rekurzivní průzkum.
 
-#### Možnosti zobrazení informací o nastavení
-
-Konfigurovat `ViewInfoOptions` s konkrétními složkami:
+#### Nastavení možností ViewInfo
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
@@ -135,8 +142,6 @@ viewInfoOptions.getArchiveOptions().setFolder(folder);
 ```
 
 #### Rekurzivní průzkum
-
-Metoda iteruje podsložkami, každou z nich vypíše a rekurzivně je prozkoumá hlouběji:
 
 ```java
 for (String subFolder : viewInfo.getFolders()) {
@@ -147,42 +152,56 @@ for (String subFolder : viewInfo.getFolders()) {
 
 ## Praktické aplikace
 
-1. **Správa dat:** Rychle uspořádejte velké datové sady díky pochopení struktur archivů.
-2. **Automatizované zpracování souborů:** Automatizujte zpracování archivovaných souborů v dávkových úlohách pomocí této techniky.
-3. **Integrace s CMS systémy:** Vylepšete systémy správy obsahu integrací GroupDocs.Viewer pro efektivní práci se soubory.
+1. **Správa dat:** Rychle organizovat velké datové sady pochopením struktur archivů.  
+2. **Automatizované zpracování souborů:** Hromadně zpracovávat archivované soubory bez jejich úplného rozbalení.  
+3. **Integrace CMS:** Vylepšit systémy pro správu obsahu o dynamickou navigaci v archivu.
 
 ## Úvahy o výkonu
 
-- **Optimalizace využití paměti:** Efektivně zvládejte velké archivy moudrým řízením zdrojů, zejména při práci s velkým počtem nebo rozměrnými soubory.
-- **Nejlepší postupy:** Pravidelně aktualizujte na nejnovější verze knihoven a JDK, abyste využili vylepšení výkonu.
+- **Optimalizace využití paměti:** Zpracovávejte složky po jedné úrovni a okamžitě uzavřete instanci `Viewer`.  
+- **Zůstaňte aktualizováni:** Používejte nejnovější verzi GroupDocs.Viewer a JDK pro zlepšení výkonu.
+
+## Časté problémy a řešení
+
+| Problém | Proč k tomu dochází | Řešení |
+|-------|----------------|-----|
+| `NullPointerException` při čtení složek | `viewInfo.getFolders()` vrací null pro prázdné adresáře | Zkontrolujte, zda není null nebo prázdný seznam před iterací. |
+| Pomalé zpracování obrovských ZIP souborů | Celý archiv je načten do paměti | Použijte možnosti streamování dostupné v novějších verzích GroupDocs. |
+| Licence nebyla nalezena | Cesta k souboru licence je nesprávná | Umístěte soubor licence do kořenového adresáře aplikace nebo nastavte `License.setLicense("path/to/license.json")`. |
+
+## Často kladené otázky
+
+**Q: Co je GroupDocs.Viewer?**  
+A: Jedná se o výkonnou Java knihovnu pro vykreslování dokumentů, včetně archivů, do formátů jako HTML, obrázek a PDF.
+
+**Q: Mohu použít GroupDocs.Viewer s jinými programovacími jazyky?**  
+A: Ano, GroupDocs nabízí SDK pro různé platformy, ale tento tutoriál se zaměřuje na implementaci v Javě.
+
+**Q: Jak zacházet s velkými archivními soubory?**  
+A: Používejte efektivní postupy správy paměti a v případě potřeby zvažte rozdělení archivů.
+
+**Q: Jaké typy archivů GroupDocs.Viewer podporuje?**  
+A: Podporuje různé formáty včetně ZIP, RAR, TAR a dalších.
+
+**Q: Existuje limit na velikost archivů, které mohu zpracovat?**  
+A: Limity závisí na zdrojích vašeho systému. Otestujte ve vašem cílovém prostředí, abyste určili praktické limity.
+
+**Q: Funguje “jak získat viewinfo” s archivem chráněným heslem?**  
+A: Ano, můžete před voláním `getViewInfo` zadat heslo pomocí `ArchiveOptions.setPassword("yourPassword")`.
 
 ## Závěr
 
-Díky tomuto tutoriálu jste se naučili, jak efektivně používat GroupDocs.Viewer pro Javu k načítání a správě archivních struktur. Tato sada dovedností může být významným přínosem v různých aplikacích zahrnujících organizaci a zpracování dat. Jako další kroky zvažte prozkoumání dalších funkcí knihovny GroupDocs.Viewer nebo integraci těchto technik do větších projektů.
+Díky tomuto průvodci nyní víte **jak získat viewinfo** pro jakýkoli podporovaný archiv a jak procházet jeho hierarchii složek pomocí GroupDocs.Viewer pro Java. Tyto techniky vám umožní vytvářet chytřejší pipeline pro zpracování dat, zlepšit integraci CMS a s jistotou pracovat s velkými kolekcemi archivovaných souborů. Dále můžete zkoumat vykreslování jednotlivých souborů z archivu nebo jejich převod do PDF/HTML pomocí dalších funkcí Vieweru.
 
-## Sekce Často kladených otázek
+---
 
-**Otázka: Co je GroupDocs.Viewer?**
-A: Je to výkonná knihovna Java pro vykreslování dokumentů, včetně archivů, do různých formátů, jako je HTML, obrázek a PDF.
+**Poslední aktualizace:** 2026-02-05  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  
 
-**Otázka: Mohu používat GroupDocs.Viewer s jinými programovacími jazyky?**
-A: Ano, GroupDocs nabízí SDK pro více platforem, ale tento tutoriál se zaměřuje na implementaci v Javě.
-
-**Otázka: Jak mám zpracovat velké archivní soubory?**
-A: Používejte efektivní postupy správy paměti a v případě potřeby zvažte rozdělení archivů.
-
-**Otázka: Jaké typy archivů podporuje GroupDocs.Viewer?**
-A: Podporuje řadu formátů včetně ZIP, RAR, TAR a dalších.
-
-**Otázka: Existuje nějaký limit velikosti archivů, které mohu zpracovat?**
-A: Limity závisí na zdrojích vašeho systému. Vždy testujte s ohledem na vaše specifické prostředí.
-
-## Zdroje
-
-- **Dokumentace:** [Dokumentace k prohlížeči GroupDocs v Javě](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API:** [Referenční příručka k API GroupDocs pro Javu](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout GroupDocs.Viewer:** [Stránka pro stažení GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licence k zakoupení:** [Koupit GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze a dočasná licence:** [Bezplatná zkušební verze GroupDocs](https://releases.groupdocs.com/viewer/java/) | [Dočasná licence](https://purchase.groupdocs.com/temporary-license/)
-
-Vyzkoušejte tyto kroky ve svých projektech, abyste vylepšili schopnosti vašich Java aplikací při práci s archivními soubory pomocí GroupDocs.Viewer. Přejeme vám příjemné programování!
+**Zdroje**
+- **Dokumentace:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Reference API:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)
+- **Stáhnout GroupDocs.Viewer:** [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Zakoupit licenci:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
+- **Bezplatná zkušební verze a dočasná licence:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/)

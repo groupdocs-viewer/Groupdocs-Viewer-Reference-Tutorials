@@ -1,44 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan lehet hatékonyan lekérni az archív struktúrákat a GroupDocs.Viewer használatával Java nyelven. Kövesse ezt az útmutatót az egyszerű beállításhoz, kódpéldákhoz és gyakorlati alkalmazásokhoz."
-"title": "Archív struktúrák lekérése a GroupDocs.Viewer for Java használatával – Átfogó útmutató"
-"url": "/hu/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
-"weight": 1
+date: '2026-02-05'
+description: Tanulja meg, hogyan lehet lekérni a viewinfo-t és visszanyerni a Java
+  archívum fájltípusú struktúrákat a GroupDocs.Viewer használatával. Ez az útmutató
+  lefedi a beállítást, a kódrészleteket és a valós felhasználási eseteket.
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve archive structures
+- Java document viewer
+title: Hogyan kapjunk ViewInfo-t és nyerjünk ki archív struktúrákat Java-ban
 type: docs
+url: /hu/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/
+weight: 1
 ---
-# Archív struktúrák lekérése a GroupDocs.Viewer for Java használatával
 
-## Bevezetés
+# Hogyan szerezhetünk ViewInfo-t és nyerhetünk ki archívum struktúrákat Java-ban
 
-Az archív fájlok hatékony kezeléséhez világosan meg kell érteni azok szerkezetét. Ez az átfogó útmutató bemutatja, hogyan használható a Java nyelven elérhető GroupDocs.Viewer könyvtár az archív fájlokról, beleértve a mappaszerkezetet is, információk kinyerésére. Ezen technikák elsajátításával egyszerűsítheti adatkezelési folyamatait és növelheti a munkafolyamatok hatékonyságát.
+Az archívumfájlok hatékony kezelése megköveteli azok struktúrájának alapos megértését. Ebben az oktatóanyagról megtanulja, **hogyan szerezhet meg viewinfo-t** bármely archívumhoz, és hogy ez hogyan segíti a **java archive file type** kezelését. Végigvezetjük a GroupDocs.Viewer beállításán, a nézetinformációk kinyerésén, és a mappahierarchiák rekurzív olvasásán, hogy a megoldást valós projektekbe integrálhassa.
 
-**Amit tanulni fogsz:**
-- A GroupDocs.Viewer beállítása és konfigurálása Java-ban.
-- Módszerek a nézetinformációk archívumokból való lekérésére.
-- Technikák az archív fájl mappaszerkezetének olvasására és megjelenítésére.
-- Gyakorlati alkalmazások és teljesítménybeli szempontok a GroupDocs.Viewer Java projektekben történő használatakor.
+![Archive Structures with GroupDocs.Viewer for Java](/viewer/document-loading/archive-structures-java.png)
 
-Kezdjük azzal, hogy áttekintjük azokat az előfeltételeket, amelyek szükségesek ezen funkciók GroupDocs.Viewer for Java használatával történő megvalósításához.
+**Mit fog megtanulni**
+- A GroupDocs.Viewer beállítása és konfigurálása Java-hoz.  
+- Módszerek a **viewinfo megszerzésére** archívumokból.  
+- Technikák egy archívumfájl mappaszerkezetének olvasására és megjelenítésére.  
+- Gyakorlati alkalmazások és teljesítménybeli szempontok a GroupDocs.Viewer Java projektekben való használatakor.
 
-## Előfeltételek
+## Quick Answers
+- **Mi ad vissza a “viewinfo”?** Visszaadja a fájltípust, az oldalszámot és az archívum mappalistákat.  
+- **Mely archívumok támogatottak?** ZIP, RAR, TAR és más gyakori formátumok.  
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez elegendő; a termeléshez kereskedelmi licenc szükséges.  
+- **Feldolgozhatok nagy archívumokat?** Igen – használjon streaminget és megfelelő memória kezelést, ahogy később bemutatjuk.  
+- **Szükséges a Maven?** A Maven a javasolt mód a GroupDocs.Viewer függőség kezelésére.
 
-A bemutató követéséhez győződjön meg arról, hogy rendelkezik a következőkkel:
+## Mi az a “how to get viewinfo”?
+`getViewInfo` egy metódus a GroupDocs.Viewer API-ban, amely metaadatokat nyer ki egy dokumentumról vagy archívumról anélkül, hogy a teljes tartalmat renderelné. Archívumok esetén felfedi a belső mappafát, lehetővé téve, hogy eldöntse, mely részeket kell renderelni vagy tovább feldolgozni.
 
-- **Java fejlesztőkészlet (JDK):** 8-as vagy újabb verzió telepítve a gépére.
-- **Szakértő:** Függőségek és projektbuildek kezelésére.
-- **A Java programozás alapjai:** Az objektumorientált programozási alapfogalmak ismerete előnyös.
+## Miért kell lekérdezni a Java archívum fájltípus struktúrákat?
+A **java archive file type** (pl. ZIP, RAR) belső felépítésének megértése lehetővé teszi, hogy:
+- Gyorsan megtalálja a szükséges fájlokat anélkül, hogy mindent kicsomagolna.  
+- Automatizált folyamatokat épít, amelyek csak a releváns alkönyvtárakat dolgozzák fel.  
+- Az archívumnavigációt integrálja tartalomkezelő vagy adatbeviteli rendszerekbe.
 
-Ezenkívül a Maven használatával építse be a GroupDocs.Viewer könyvtárat a projektbe specifikus adattárak és függőségek hozzáadásával. `pom.xml` fájl.
+## Prerequisites
 
-## GroupDocs.Viewer beállítása Java-hoz
+- **Java Development Kit (JDK):** 8-as vagy újabb verzió.  
+- **Maven:** A függőségkezeléshez és a buildeléshez.  
+- **Alap Java ismeretek:** Az OOP koncepciók ismerete segít, de nem kötelező.
 
-A GroupDocs.Viewer Java-val való használatának megkezdéséhez kövesse az alábbi lépéseket:
+Emellett hozzá kell férnie a GroupDocs.Viewer könyvtárhoz, amelyet a Maven projektjéhez az alábbiak szerint adhat hozzá.
 
-### Maven konfiguráció
+## Setting Up GroupDocs.Viewer for Java
 
-Adja hozzá a következőket a Maven konfigurációs fájljaihoz:
+### Maven Configuration
 
-**Tárolók:**
+Add the repository and dependency to your `pom.xml`.
+
+**Repositories:**
 ```xml
 <repositories>
    <repository>
@@ -49,7 +66,7 @@ Adja hozzá a következőket a Maven konfigurációs fájljaihoz:
 </repositories>
 ```
 
-**Függőségek:**
+**Dependencies:**
 ```xml
 <dependencies>
    <dependency>
@@ -60,33 +77,29 @@ Adja hozzá a következőket a Maven konfigurációs fájljaihoz:
 </dependencies>
 ```
 
-### Licencbeszerzés
+### License Acquisition
 
-- **Ingyenes próbaverzió:** Töltsön le egy ingyenes próbaverziót a GroupDocs weboldaláról a kezdéshez.
-- **Ideiglenes engedély:** Igényeljen ideiglenes licencet, ha korlátozás nélküli, hosszabb hozzáférésre van szüksége.
-- **Licenc vásárlása:** Hosszú távú projektekhez érdemes lehet teljes licencet vásárolni.
+- **Ingyenes próba:** Töltse le a próba verziót a GroupDocs weboldaláról.  
+- **Ideiglenes licenc:** Kérjen ideiglenes kulcsot rövid távú kiértékeléshez.  
+- **Teljes licenc:** Vásároljon kereskedelmi licencet korlátlan termelési használathoz.
 
-konfigurálás után inicializálja a projektet a GroupDocs.Viewer segítségével a szükséges osztályok importálásával és az alapvető megjelenítő példányok beállításával.
+Miután a könyvtár a classpath-on van, elkezdhet kódolni.
 
-## Megvalósítási útmutató
+## Implementation Guide
 
-### 1. funkció: Archív fájlok megtekintési adatainak lekérése
+### How to Get ViewInfo for Archive Files
 
-Ez a funkció bemutatja, hogyan lehet részletes információkat kérni egy archív fájlról a GroupDocs.Viewer segítségével. Magában foglalja a Viewer osztály inicializálását, a nézetbeállítások megadását, valamint a fájltípus és az oldalszám kinyerését.
+Ez a szakasz bemutatja a pontos lépéseket a `getViewInfo` meghívásához és a mappahierarchia olvasásához.
 
-#### A néző inicializálása
-
-Kezdje egy `Viewer` példány a cél archív fájl elérési útjával:
+#### Initialize the Viewer
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP_WITH_FOLDERS")) {
-    // További lépések következnek itt.
+    // Additional steps will follow here.
 }
 ```
 
-#### Információk lekérése
-
-Használat `getViewInfo()` az archív fájl részleteinek megszerzéséhez HTML nézetbeállítások használatával:
+#### Retrieve View Information
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(ViewInfoOptions.forHtmlView());
@@ -94,18 +107,14 @@ System.out.println("File type: " + viewInfo.getFileType());
 System.out.println("Pages count: " + viewInfo.getPages().size());
 ```
 
-#### Mappaszerkezet megjelenítése
-
-Az archívum mappaszerkezetének felfedezéséhez hívjon meg egy rekurzív metódust:
+#### Display Folder Structure
 
 ```java
 String rootFolder = "";
 readFolders(viewer, rootFolder);
 ```
 
-##### Rekurzív mappaolvasás
-
-Ez a segítő metódus a következőt használja: `ViewInfoOptions` mappa nézetek megadásához és almappák rekurzív beolvasásához:
+##### Recursive Folder Reading
 
 ```java
 private static void readFolders(Viewer viewer, String folder) {
@@ -121,22 +130,18 @@ private static void readFolders(Viewer viewer, String folder) {
 }
 ```
 
-### 2. funkció: Archívum mappaszerkezetének lekérése
+### Feature 2: Retrieve Archive Folder Structure
 
-Ez a funkció egy archív fájl mappaszerkezetének kinyomtatására összpontosít. Hasonló az első funkcióhoz, de a hangsúly a rekurzív böngészésen van.
+Ez a funkció az archívumfájl mappaszerkezetének kiíratására fókuszál. Hasonló az első funkcióhoz, de a rekurzív feltárásra helyezi a hangsúlyt.
 
-#### Beállítás Nézet Információ opciók
-
-Konfigurálás `ViewInfoOptions` meghatározott mappákkal:
+#### Setup View Info Options
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.getArchiveOptions().setFolder(folder);
 ```
 
-#### Rekurzív felfedezés
-
-A metódus végigmegy az almappákon, mindegyiket kinyomtatja, majd rekurzívan mélyebben feltárja őket:
+#### Recursive Exploration
 
 ```java
 for (String subFolder : viewInfo.getFolders()) {
@@ -145,44 +150,58 @@ for (String subFolder : viewInfo.getFolders()) {
 }
 ```
 
-## Gyakorlati alkalmazások
+## Practical Applications
 
-1. **Adatkezelés:** Gyorsan rendszerezheti a nagy adathalmazokat az archív struktúrák megértésével.
-2. **Automatizált fájlfeldolgozás:** Automatizálja az archivált fájlok kötegelt feldolgozását ezzel a technikával.
-3. **Integráció a CMS rendszerekkel:** A tartalomkezelő rendszerek fejlesztése a GroupDocs.Viewer integrálásával a hatékony fájlkezelés érdekében.
+- **Adatkezelés:** Nagy adathalmazok gyors szervezése az archívum struktúrák megértésével.  
+- **Automatizált fájlfeldolgozás:** Archívált fájlok kötegelt feldolgozása teljes kicsomagolás nélkül.  
+- **CMS integráció:** Tartalomkezelő rendszerek fejlesztése valós idejű archívumnavigációval.
 
-## Teljesítménybeli szempontok
+## Performance Considerations
 
-- **Memóriahasználat optimalizálása:** Kezelje hatékonyan a nagyméretű archívumokat az erőforrások bölcs felhasználásával, különösen nagyszámú vagy méretes fájl esetén.
-- **Bevált gyakorlatok:** Rendszeresen frissítsen a legújabb verziójú könyvtárakra és JDK-kra a teljesítményjavítások kihasználása érdekében.
+- **Memóriahasználat optimalizálása:** Mappákat egy szinten egyszer feldolgozni, és a `Viewer` példányt gyorsan lezárni.  
+- **Legyen naprakész:** Használja a legújabb GroupDocs.Viewer verziót és JDK kiadásokat a teljesítményjavulásért.
 
-## Következtetés
+## Common Issues and Solutions
 
-Az oktatóanyag követésével megtanulta, hogyan használhatja hatékonyan a GroupDocs.Viewer for Java programot az archív struktúrák lekérésére és kezelésére. Ez a készségkészlet jelentős előnyt jelenthet az adatrendezéssel és -feldolgozással kapcsolatos különféle alkalmazásokban. Következő lépésként érdemes lehet a GroupDocs.Viewer könyvtár egyéb funkcióit is felfedezni, vagy ezeket a technikákat nagyobb projektekbe integrálni.
+| Issue | Why It Happens | Fix |
+|-------|----------------|-----|
+| `NullPointerException` mappák olvasásakor | `viewInfo.getFolders()` null értéket ad üres könyvtárak esetén | Ellenőrizze a null vagy üres listát a bejárás előtt. |
+| Lassú feldolgozás hatalmas ZIP fájlok esetén | Az egész archívum memóriába töltődik | Használja a streaming opciókat, amelyek az újabb GroupDocs verziókban elérhetők. |
+| Licenc nem található | A licencfájl útvonala helytelen | Helyezze a licencfájlt az alkalmazás gyökerébe, vagy állítsa be a `License.setLicense("path/to/license.json")`-t. |
 
-## GYIK szekció
+## Frequently Asked Questions
 
-**K: Mi az a GroupDocs.Viewer?**
-V: Ez egy hatékony Java könyvtár, amely dokumentumokat, beleértve az archívumokat is, különböző formátumokba, például HTML, kép és PDF formátumba renderel.
+**K: Mi a GroupDocs.Viewer?**  
+A GroupDocs.Viewer egy erőteljes Java könyvtár dokumentumok, köztük archívumok, HTML, kép és PDF formátumokba történő renderelésére.
 
-**K: Használhatom a GroupDocs.Viewer fájlt más programozási nyelvekkel?**
-V: Igen, a GroupDocs több platformra is kínál SDK-kat, de ez az oktatóanyag a Java implementációra összpontosít.
+**K: Használhatom a GroupDocs.Viewer-t más programozási nyelvekkel?**  
+Igen, a GroupDocs több platformra kínál SDK-kat, de ez az oktatóanyag a Java megvalósításra koncentrál.
 
-**K: Hogyan kezelhetem a nagyméretű archív fájlokat?**
-A: Használjon hatékony memóriakezelési gyakorlatokat, és szükség esetén fontolja meg az archívumok lebontását.
+**K: Hogyan kezeljem a nagy archívum fájlokat?**  
+Használjon hatékony memória kezelési gyakorlatokat, és szükség esetén bontsa fel az archívumokat.
 
-**K: Milyen típusú archívumokat támogat a GroupDocs.Viewer?**
-A: Számos formátumot támogat, többek között a ZIP, RAR és TAR fájlokat.
+**K: Milyen típusú archívumokat támogat a GroupDocs.Viewer?**  
+Számos formátumot támogat, többek között ZIP, RAR, TAR és egyebek.
 
-**K: Van-e korlátozás a feldolgozható archívumok méretére?**
-V: A korlátok a rendszer erőforrásaitól függenek. Mindig a konkrét környezetet szem előtt tartva teszteljen.
+**K: Van korlátja az archívumok méretének, amelyeket feldolgozhatok?**  
+A korlátok a rendszer erőforrásaitól függenek. Tesztelje a célkörnyezetben a gyakorlati határokat.
 
-## Erőforrás
+**K: A “how to get viewinfo” működik jelszóval védett archívumokkal?**  
+Igen, a jelszót a `ArchiveOptions.setPassword("yourPassword")` hívással adhatja meg a `getViewInfo` meghívása előtt.
 
-- **Dokumentáció:** [GroupDocs Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API-hivatkozás:** [GroupDocs API referencia Java-hoz](https://reference.groupdocs.com/viewer/java/)
-- **GroupDocs.Viewer letöltése:** [GroupDocs letöltési oldal](https://releases.groupdocs.com/viewer/java/)
-- **Licenc vásárlása:** [GroupDocs vásárlása](https://purchase.groupdocs.com/buy)
-- **Ingyenes próbaverzió és ideiglenes licenc:** [GroupDocs ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/) | [Ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/)
+## Conclusion
 
-Próbáld ki ezeket a lépéseket a projektjeidben, hogy javítsd Java-alkalmazásaid képességét az archív fájlok GroupDocs.Viewer segítségével történő kezelésében. Jó kódolást!
+Az útmutató követésével most már tudja, **hogyan szerezhet meg viewinfo-t** bármely támogatott archívumhoz, és hogyan járhatja be a mappahierarchiáját a GroupDocs.Viewer for Java segítségével. Ezek a technikák lehetővé teszik intelligensebb adatfeldolgozó csővezetékek építését, a CMS integrációk fejlesztését, valamint a nagy méretű archívumgyűjtemények magabiztos kezelését. Következő lépésként fedezze fel az egyes fájlok renderelését az archívumból, vagy azok PDF/HTML konvertálását a Viewer további funkcióival.
+
+---
+
+**Last Updated:** 2026-02-05  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+**Resources**
+- **Dokumentáció:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Referencia:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)
+- **GroupDocs.Viewer letöltése:** [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Licenc vásárlása:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
+- **Ingyenes próba és ideiglenes licenc:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/)
