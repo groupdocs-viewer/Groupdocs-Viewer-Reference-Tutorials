@@ -1,38 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何在 GroupDocs.Viewer for Java 中使用自訂字體來提昇文件美感並保持品牌一致性。請遵循這份全面的指南，以了解設定、配置和實際應用。"
-"title": "如何使用 GroupDocs.Viewer 在 Java 中實現自訂字體渲染——逐步指南"
-"url": "/zh-hant/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
-"weight": 1
+date: '2026-02-10'
+description: 學習如何使用 GroupDocs.Viewer for Java 在 HTML 中加入自訂字型、設定 Java 字型設定，並在 HTML
+  中嵌入自訂字型，以提升品牌形象與可讀性。
+keywords:
+- custom font rendering Java
+- GroupDocs Viewer setup
+- Java GroupDocs Viewer custom fonts
+title: 如何在 Java 中使用 GroupDocs.Viewer 添加自訂字型 HTML：一步一步指南
 type: docs
+url: /zh-hant/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/
+weight: 1
 ---
-# 如何使用 GroupDocs.Viewer 在 Java 中實現自訂字體渲染：逐步指南
+
+# 如何在 Java 中使用 GroupDocs.Viewer 添加自訂字型 HTML：逐步指南
 
 ## 介紹
 
-您是否面臨預設字體不符合品牌美學或可讀性要求的難題？無論是商業報告、法律文件或簡報，自訂字體都能顯著提昇文件的吸引力和專業性。在本逐步指南中，我們將探討如何使用 **GroupDocs.Viewer Java** 用於有效的自訂字體渲染。
+您是否為預設字型無法符合品牌視覺識別而感到困擾？在許多商業報告、法律文件和簡報中，**add custom font HTML** 是確保外觀一致並提升可讀性的關鍵。本指南將帶您使用 **GroupDocs.Viewer for Java** 來設定 font settings Java 並嵌入 custom fonts HTML，讓您渲染的文件呈現出完全符合需求的樣貌。
 
-### 您將學到什麼：
-- 為 Java 設定 GroupDocs.Viewer
-- 在文件渲染中整合自訂字體
-- 優化配置以提高效能
+![使用 GroupDocs.Viewer for Java 實作自訂字型渲染](/viewer/custom-rendering/implement-custom-font-rendering.png)
 
-完成本教學課程後，您將掌握使用自訂字體自訂文件簡報的方法。首先，請確保您的開發環境已準備好必要的工具。
+### 您將學習的內容
+- 如何設定 GroupDocs.Viewer for Java  
+- 如何在渲染輸出中 **add custom font HTML**  
+- 如何為獲得最佳效能 **configure font settings Java**  
 
-## 先決條件
+完成本教學後，您將能夠使用自訂字型調整文件呈現，確保品牌一致性並提升可及性。
 
-在開始之前，請確保您已：
-- **Java 開發工具包 (JDK)：** 版本 8 或更高版本
-- **整合開發環境（IDE）：** 例如 IntelliJ IDEA 或 Eclipse
-- **Maven：** 用於管理專案依賴關係
+## 快速答覆
+- **主要目的為何？** 使用 GroupDocs.Viewer Java 以自訂字型渲染文件。  
+- **需要哪個版本？** GroupDocs.Viewer 25.2（或更新版本）。  
+- **是否需要授權？** 提供免費試用；正式環境需購買授權。  
+- **能否嵌入 custom fonts HTML？** 可以，只需將檢視器指向包含字型的資料夾。  
+- **Maven 是唯一的加入函式庫方式嗎？** 建議使用 Maven，但亦可使用 Gradle 或手動加入 JAR。
 
-對 Java 程式設計有基本的了解並熟悉 Maven 將會很有幫助。
+## 什麼是 “add custom font HTML”？
+加入 custom font HTML 表示指示渲染引擎在產生 HTML 輸出時使用您提供的字型，而非預設系統字型。這可確保文件的視覺風格符合企業品牌或可及性指引。
 
-## 為 Java 設定 GroupDocs.Viewer
+## 為何要在 GroupDocs.Viewer 中設定 font settings Java？
+設定 font settings Java 可讓您完整掌控搜尋哪些字型檔案、快取方式以及備援字型的應用。此舉可減少渲染錯誤、提升效能，並確保在各瀏覽器間呈現一致的外觀。
 
-### 安裝訊息
+## 前置條件
+- **Java Development Kit (JDK)：** 8 或更新版本  
+- **IDE：** IntelliJ IDEA、Eclipse 或任何相容 Java 的編輯器  
+- **Maven：** 用於相依性管理  
+- **自訂字型檔案：** 放置於專屬資料夾的 `.ttf` 或 `.otf` 檔案  
 
-在你的 Maven 中包含以下內容 `pom.xml` 文件：
+## 設定 GroupDocs.Viewer for Java
+
+### 安裝資訊
+
+Add the GroupDocs repository and dependency to your Maven `pom.xml`:
 
 ```xml
 <repositories>
@@ -51,13 +69,13 @@ type: docs
 </dependencies>
 ```
 
-### 許可證獲取
+### 取得授權
 
-GroupDocs 提供免費試用，方便使用者探索其功能，並提供取得臨時授權或購買完整授權的選項。如需測試，請從其 [發布頁面](https://releases。groupdocs.com/viewer/java/).
+GroupDocs 提供免費試用以探索其功能，並可取得臨時授權或購買完整授權。測試時，請從他們的[發行頁面](https://releases.groupdocs.com/viewer/java/)下載最新版本。
 
-#### 基本初始化和設定
+#### 基本初始化與設定
 
-在添加 GroupDocs.Viewer 作為依賴項後，在 Java 專案中初始化它：
+After adding GroupDocs.Viewer as a dependency, initialize it in your Java project:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -65,23 +83,21 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("sample.pdf")) {
-            // 初始設定和查看代碼在這裡
+            // Initial setup and viewing code here
         }
     }
 }
 ```
 
-這個基本範例示範如何使用 GroupDocs.Viewer 開啟文件。
+此基本範例示範如何使用 GroupDocs.Viewer 開啟文件。
 
-## 實施指南
+## 實作指南
 
-### GroupDocs.Viewer Java 中的自訂字體渲染
+### 如何在 GroupDocs.Viewer Java 中 add custom font HTML
 
-在本節中，我們將探討如何在使用 GroupDocs.Viewer 渲染文件時整合自訂字體。此功能對於保持品牌一致性和增強可讀性至關重要。
+本節將逐步說明在渲染文件時 **add custom font HTML** 所需的精確步驟。
 
-#### 導入必要的套件
-
-首先導入所需的套件：
+#### Importing Necessary Packages
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,43 +107,35 @@ import com.groupdocs.viewer.fonts.FontSettings;
 import com.groupdocs.viewer.fonts.SearchOption;
 ```
 
-這些導入有助於處理自訂字體和文件檢視選項。
+這些匯入協助處理自訂字型與文件檢視選項。
 
-#### 設定自訂字體
+#### 設定自訂字型
 
-##### 定義自訂字體的路徑
-
-建立一個指向自訂字體目錄的字串變數：
+##### Define the Path to Your Font Folder
 
 ```java
 String fontPath = "/path/to/your/custom/fonts";
 ```
 
-代替 `"/path/to/your/custom/fonts"` 替換為自訂字體的實際儲存路徑。此設定可確保 GroupDocs.Viewer 在渲染過程中能夠找到並使用這些字體。
+將 `"/path/to/your/custom/fonts"` 替換為您 `.ttf` 或 `.otf` 檔案的實際位置。
 
-##### 建立 FontSource 對象
-
-接下來，實例化 `FolderFontSource` 物件指向該目錄：
+##### Create a FontSource Object
 
 ```java
 FolderFontSource fontSource = new FolderFontSource(fontPath, SearchOption.TOP_FOLDER_ONLY);
 ```
 
-這 `SearchOption.TOP_FOLDER_ONLY` 參數指示檢視器僅在指定的頂層資料夾中搜尋字型。
+`SearchOption.TOP_FOLDER_ONLY` 告訴檢視器僅在指定資料夾中搜尋，從而加快搜尋速度。
 
-##### 設定渲染的字體來源
-
-現在，配置 GroupDocs.Viewer 以使用您的自訂字體：
+##### Configure Font Settings Java
 
 ```java
 FontSettings.setFontSources(fontSource);
 ```
 
-此步驟確保所有後續文件渲染操作都將使用這些自訂字體。
+此行 **configures font settings Java**，使每次渲染操作皆使用您提供的字型。
 
-#### 定義輸出目錄和檢視選項
-
-設定渲染文檔的儲存位置：
+#### Define Output Directory and View Options
 
 ```java
 String outputPath = "/path/to/output/directory";
@@ -135,59 +143,61 @@ String pageFilePathFormat = String.format("%s/page_{0}.html", outputPath);
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-代替 `"/path/to/output/directory"` 替換為您想要的輸出路徑。 `HtmlViewOptions` 類別幫助配置如何將文件呈現為 HTML 格式。
+此處亦示範如何透過使用 `HtmlViewOptions.forEmbeddedResources` 來 **embed custom fonts HTML**，將字型檔直接嵌入產生的 HTML 中。
 
-### 故障排除提示
-- 確保字型檔案具有適當的讀取權限。
-- 仔細檢查路徑是否有拼字錯誤或目錄結構不正確。
-- 驗證自訂字體與正在處理的文件類型的相容性。
+### 疑難排解技巧
+- 確認執行 Java 程序的使用者對字型檔案具備讀取權限。  
+- 再次檢查資料夾路徑；缺少結尾斜線可能導致「找不到字型」錯誤。  
+- 確保字型與文件類型相容（例如 PDF 使用 TrueType）。
 
-## 實際應用
+## 實務應用
 
-自訂字體渲染可以應用於各種場景：
-1. **品牌一致性：** 在所有文件中使用品牌特定的字體來保持一致的標識。
-2. **輔助功能改進：** 選擇能夠提升視障使用者可讀性的字體。
-3. **法律與財務文件：** 使用強調重要部分的字體來提高清晰度。
+Custom font rendering can be applied in various scenarios:
+1. **品牌一致性：** 在所有產生的報告中使用品牌專屬字型。  
+2. **可及性提升：** 選擇易讀字型，協助視障使用者。  
+3. **法律與財務文件：** 使用提升掃描可讀性的字型突顯關鍵段落。  
 
-整合可能性包括將 GroupDocs.Viewer Java 與文件管理系統或自訂企業應用程式連接起來，從而實現跨平台的無縫字體自訂。
+您可以將此方法整合至文件管理系統、內容入口網站，或任何需要提供文件 HTML 預覽的企業應用程式。
 
-## 性能考慮
+## 效能考量
 
-處理大量文件時，請考慮以下技巧來優化效能：
-- 限制自訂字體的數量以減少資源開銷。
-- 對經常存取的文件實施快取策略。
-- 監視記憶體使用情況並根據需要調整 JVM 設定。
-
-遵循 Java 記憶體管理的最佳實踐，確保資源在使用後正確關閉。這種方法可以最大限度地減少記憶體洩漏並增強應用程式的穩定性。
+When processing large batches:
+- 限制自訂字型數量，以降低記憶體使用。  
+- 在大量使用相同設定渲染文件時，快取 `HtmlViewOptions` 物件。  
+- 監控 JVM 堆積，必要時調整 `-Xmx` 以避免記憶體不足錯誤。
 
 ## 結論
 
-現在，您已經掌握了使用 GroupDocs.Viewer for Java 實作自訂字體渲染的基礎知識。遵循本指南，您可以增強文件呈現效果，以滿足特定的品牌推廣或可讀性需求。
+您現在已學會如何使用 GroupDocs.Viewer for Java **add custom font HTML**、如何 **configure font settings Java**，以及如何 **embed custom fonts HTML**，以實現一致且具品牌特色的文件渲染。這些技巧讓您能在任何基於 Java 的解決方案中提供精緻且可及的 HTML 預覽。
 
-下一步，請考慮探索 GroupDocs.Viewer 提供的其他功能，例如浮水印和註釋支援。深入了解他們的 [文件](https://docs.groupdocs.com/viewer/java/) 以獲得更高級的功能。
+接下來，您可以探索 GroupDocs.Viewer 的其他功能，如浮水印、註解支援與多頁 PDF 渲染。欲取得更深入資訊，請參考官方[文件](https://docs.groupdocs.com/viewer/java/)。
 
-## 常見問題部分
+## 常見問題
 
-**Q：如何確保自訂字體與不同文件類型之間的相容性？**
-答：使用各種文件格式測試您的字體，以確認一致的渲染。
+**Q: 如何確保自訂字型與不同文件類型的相容性？**  
+A: 使用 PDF、DOCX 與 PPTX 檔測試字型，以確認在各格式間渲染一致。
 
-**Q：GroupDocs.Viewer 可以使用自訂字體處理非拉丁字母腳本嗎？**
-答：是的，正確配置後它支援多種字元集。
+**Q: GroupDocs.Viewer 能否使用自訂字型處理非拉丁文字？**  
+A: 能——只要將支援相應 Unicode 的字型放入字型資料夾，檢視器即可正確渲染字元。
 
-**Q：在生產中使用 GroupDocs.Viewer 有哪些授權選項？**
-答：選項包括免費試用、臨時授權和永久購買。詳情請瀏覽他們的 [購買頁面](https://purchase。groupdocs.com/buy).
+**Q: 生產環境可使用哪些授權選項？**  
+A: 您可先使用免費試用，之後透過[購買頁面](https://purchase.groupdocs.com/buy)升級為臨時或永久授權。
 
-**Q：如何解決 GroupDocs.Viewer 中的字體渲染問題？**
-答：請檢查權限、路徑和相容性設定。請參閱文件以了解特定的錯誤訊息。
+**Q: 如何排除字型遺失問題？**  
+A: 檢查檔案權限、確認路徑，並確保字型檔未損毀。檢視器日誌會顯示無法載入的字型。
 
-**Q：自訂字體可以與預設字體一起使用作為後備選項嗎？**
-答：是的，您可以配置多個字體來源，如果自訂字體不可用，則預設字體可作為備份。
+**Q: 若自訂字型不可用，是否可回退至預設字型？**  
+A: 能——透過加入多個 `FontSource` 物件，您可將自訂字型設為優先，同時保留系統預設字型作為備援。
 
 ## 資源
 
-進一步探索：
-- **文件:** [GroupDocs 檢視器 Java 文檔](https://docs.groupdocs.com/viewer/java/)
+For further exploration:
+- **文件說明：** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
 - **API 參考：** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)
-- **下載：** [最新發布](https://releases.groupdocs.com/viewer/java/)
-- **購買和試用選項：** [GroupDocs 購買頁面](https://purchase.groupdocs.com/buy) & [免費試用](https://releases.groupdocs.com/viewer/java/)
-- **支持：** 如需更多協助，請造訪 [GroupDocs 論壇](
+- **下載：** [Latest Releases](https://releases.groupdocs.com/viewer/java/)
+- **購買與試用選項：** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)
+- **支援：** 如需進一步協助，請造訪 [GroupDocs Forum](
+
+**最後更新：** 2026-02-10  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs

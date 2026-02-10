@@ -1,38 +1,62 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come utilizzare font personalizzati con GroupDocs.Viewer per Java per migliorare l'estetica dei documenti e mantenere la coerenza del brand. Segui questa guida completa per l'installazione, la configurazione e le applicazioni pratiche."
-"title": "Come implementare il rendering di font personalizzati in Java con GroupDocs.Viewer&#58; una guida passo passo"
-"url": "/it/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
-"weight": 1
+date: '2026-02-10'
+description: Scopri come aggiungere font personalizzati in HTML usando GroupDocs.Viewer
+  per Java, configurare le impostazioni dei font in Java e incorporare font personalizzati
+  in HTML per il branding e la leggibilità.
+keywords:
+- custom font rendering Java
+- GroupDocs Viewer setup
+- Java GroupDocs Viewer custom fonts
+title: 'Come aggiungere un font personalizzato HTML in Java con GroupDocs.Viewer:
+  Guida passo passo'
 type: docs
+url: /it/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/
+weight: 1
 ---
-# Come implementare il rendering di font personalizzati in Java con GroupDocs.Viewer: una guida passo passo
+
+ for any missed items: Ensure all headings, lists, etc.
+
+Make sure to keep placeholders unchanged.
+
+Now produce final output.# Come aggiungere font personalizzati HTML in Java con GroupDocs.Viewer: Guida passo passo
 
 ## Introduzione
 
-Stai riscontrando difficoltà con i font predefiniti che non soddisfano i requisiti estetici o di leggibilità del tuo brand? Che si tratti di report aziendali, documenti legali o presentazioni, i font personalizzati possono migliorare significativamente l'attrattiva e la professionalità dei documenti. In questa guida passo passo, esploreremo come utilizzarli. **GroupDocs.Viewer Java** per un rendering efficace dei font personalizzati.
+Stai avendo difficoltà con i font predefiniti che non corrispondono all'identità visiva del tuo brand? In molti report aziendali, documenti legali e presentazioni, **add custom font HTML** è essenziale per mantenere un aspetto coerente e migliorare la leggibilità. Questa guida ti accompagna nell'utilizzo di **GroupDocs.Viewer for Java** per configurare le impostazioni dei font Java e incorporare i font personalizzati HTML, così i documenti renderizzati avranno esattamente l'aspetto desiderato.
 
-### Cosa imparerai:
-- Impostazione di GroupDocs.Viewer per Java
-- Integrazione di font personalizzati nel rendering dei documenti
-- Ottimizzazione della configurazione per le prestazioni
+![Implementare il rendering di font personalizzati con GroupDocs.Viewer per Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
 
-Al termine di questo tutorial, avrai imparato a personalizzare la presentazione dei documenti utilizzando font personalizzati. Iniziamo assicurandoci che il tuo ambiente di sviluppo sia pronto con gli strumenti necessari.
+### Cosa imparerai
+- Come configurare GroupDocs.Viewer per Java  
+- Come **add custom font HTML** nel tuo output renderizzato  
+- Come **configure font settings Java** per prestazioni ottimali  
+
+Al termine di questo tutorial, sarai in grado di personalizzare la presentazione dei documenti con font personalizzati, garantendo coerenza del brand e accessibilità migliorata.
+
+## Risposte rapide
+- **Qual è lo scopo principale?** Renderizzare documenti con i propri font usando GroupDocs.Viewer Java.  
+- **Quale versione è richiesta?** GroupDocs.Viewer 25.2 (o successiva).  
+- **È necessaria una licenza?** È disponibile una prova gratuita; è richiesta una licenza a pagamento per la produzione.  
+- **Posso incorporare font personalizzati HTML?** Sì – basta puntare il viewer a una cartella contenente i tuoi font.  
+- **Maven è l'unico modo per aggiungere la libreria?** Maven è consigliato, ma è possibile utilizzare anche Gradle o includere manualmente il JAR.
+
+## Cos'è “add custom font HTML”
+Aggiungere font personalizzati HTML significa istruire il motore di rendering a utilizzare i font che fornisci, anziché i font di sistema predefiniti, durante la generazione dell'output HTML. Questo garantisce che lo stile visivo del documento corrisponda al branding aziendale o alle linee guida di accessibilità.
+
+## Perché configurare le impostazioni dei font Java con GroupDocs.Viewer?
+Configurare le impostazioni dei font Java ti offre il pieno controllo su quali file di font vengono cercati, come vengono memorizzati nella cache e come vengono applicati i font di fallback. Questo riduce gli errori di rendering, migliora le prestazioni e garantisce un aspetto coerente su tutti i browser.
 
 ## Prerequisiti
+- **Java Development Kit (JDK):** 8 o successivo  
+- **IDE:** IntelliJ IDEA, Eclipse o qualsiasi editor compatibile con Java  
+- **Maven:** Per la gestione delle dipendenze  
+- **File di font personalizzati:** file `.ttf` o `.otf` collocati in una cartella dedicata  
 
-Prima di iniziare, assicurati di avere:
-- **Kit di sviluppo Java (JDK):** Versione 8 o superiore
-- **Ambiente di sviluppo integrato (IDE):** Come IntelliJ IDEA o Eclipse
-- **Esperto:** Per gestire le dipendenze del progetto
-
-Sarà utile avere una conoscenza di base della programmazione Java e avere familiarità con Maven.
-
-## Impostazione di GroupDocs.Viewer per Java
+## Configurazione di GroupDocs.Viewer per Java
 
 ### Informazioni sull'installazione
 
-Includi quanto segue nel tuo Maven `pom.xml` file:
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml` Maven:
 
 ```xml
 <repositories>
@@ -53,7 +77,7 @@ Includi quanto segue nel tuo Maven `pom.xml` file:
 
 ### Acquisizione della licenza
 
-GroupDocs offre una prova gratuita per esplorare le sue funzionalità, con la possibilità di ottenere una licenza temporanea o di acquistare una licenza completa. Per testare, scarica l'ultima versione dal loro sito. [pagina di rilascio](https://releases.groupdocs.com/viewer/java/).
+GroupDocs offre una prova gratuita per esplorare le loro funzionalità, con opzioni per ottenere una licenza temporanea o acquistare una licenza completa. Per scopi di test, scarica l'ultima versione dalla loro [pagina di rilascio](https://releases.groupdocs.com/viewer/java/).
 
 #### Inizializzazione e configurazione di base
 
@@ -65,23 +89,21 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("sample.pdf")) {
-            // Configurazione iniziale e visualizzazione del codice qui
+            // Initial setup and viewing code here
         }
     }
 }
 ```
 
-Questo esempio di base mostra come aprire un documento utilizzando GroupDocs.Viewer.
+Questo esempio base dimostra come aprire un documento usando GroupDocs.Viewer.
 
 ## Guida all'implementazione
 
-### Rendering dei font personalizzati in GroupDocs.Viewer Java
+### Come aggiungere font personalizzati HTML in GroupDocs.Viewer Java
 
-In questa sezione, esploreremo l'integrazione di font personalizzati durante il rendering dei documenti con GroupDocs.Viewer. Questa funzionalità è preziosa per mantenere la coerenza del brand e migliorare la leggibilità.
+In questa sezione illustreremo i passaggi esatti necessari per **add custom font HTML** durante il rendering dei documenti.
 
 #### Importazione dei pacchetti necessari
-
-Iniziamo importando i pacchetti richiesti:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,43 +113,35 @@ import com.groupdocs.viewer.fonts.FontSettings;
 import com.groupdocs.viewer.fonts.SearchOption;
 ```
 
-Queste importazioni semplificano la gestione dei font personalizzati e delle opzioni di visualizzazione dei documenti.
+Queste importazioni facilitano la gestione dei font personalizzati e delle opzioni di visualizzazione dei documenti.
 
-#### Impostazione di font personalizzati
+#### Configurazione dei font personalizzati
 
-##### Definisci il percorso per i font personalizzati
-
-Crea una variabile stringa che punti alla directory dei tuoi font personalizzati:
+##### Definisci il percorso della tua cartella dei font
 
 ```java
 String fontPath = "/path/to/your/custom/fonts";
 ```
 
-Sostituire `"/path/to/your/custom/fonts"` Con il percorso effettivo in cui sono archiviati i font personalizzati. Questa configurazione garantisce che GroupDocs.Viewer possa individuare e utilizzare questi font durante il rendering.
+Sostituisci `"/path/to/your/custom/fonts"` con la posizione reale dei tuoi file `.ttf` o `.otf`.
 
-##### Creare un oggetto FontSource
-
-Quindi, crea un'istanza di `FolderFontSource` oggetto che punta a questa directory:
+##### Crea un oggetto FontSource
 
 ```java
 FolderFontSource fontSource = new FolderFontSource(fontPath, SearchOption.TOP_FOLDER_ONLY);
 ```
 
-IL `SearchOption.TOP_FOLDER_ONLY` Il parametro indica al visualizzatore di cercare i font solo nella cartella di livello superiore specificata.
+`SearchOption.TOP_FOLDER_ONLY` indica al viewer di cercare solo nella cartella specificata, velocizzando la ricerca.
 
-##### Imposta le origini dei font per il rendering
-
-Ora configura GroupDocs.Viewer per utilizzare i tuoi font personalizzati:
+##### Configura le impostazioni dei font Java
 
 ```java
 FontSettings.setFontSources(fontSource);
 ```
 
-Questo passaggio garantisce che tutte le successive operazioni di rendering dei documenti utilizzeranno questi font personalizzati.
+Questa riga **configures font settings Java** in modo che ogni operazione di rendering utilizzi i font forniti.
 
 #### Definisci la directory di output e le opzioni di visualizzazione
-
-Imposta dove salvare i documenti renderizzati:
 
 ```java
 String outputPath = "/path/to/output/directory";
@@ -135,59 +149,62 @@ String pageFilePathFormat = String.format("%s/page_{0}.html", outputPath);
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-Sostituire `"/path/to/output/directory"` con il percorso di output desiderato. Il `HtmlViewOptions` La classe aiuta a configurare il modo in cui i documenti vengono renderizzati nel formato HTML.
+Qui dimostriamo anche come **embed custom fonts HTML** utilizzando `HtmlViewOptions.forEmbeddedResources`, che incorpora i file dei font direttamente nell'HTML generato.
 
 ### Suggerimenti per la risoluzione dei problemi
-- Assicurarsi che i file dei font abbiano le autorizzazioni di lettura appropriate.
-- Controllare attentamente i percorsi per individuare eventuali errori di battitura o strutture di directory errate.
-- Verificare la compatibilità dei font personalizzati con i tipi di documento in fase di elaborazione.
+- Verifica che i file dei font abbiano i permessi di lettura per l'utente che esegue il processo Java.  
+- Controlla nuovamente il percorso della cartella; una barra finale mancante può causare errori “font not found”.  
+- Assicurati che i font siano compatibili con il tipo di documento (ad esempio, TrueType per PDF).  
 
 ## Applicazioni pratiche
 
-Il rendering personalizzato dei font può essere applicato in vari scenari:
-1. **Coerenza del marchio:** Utilizza font specifici del marchio in tutti i documenti per mantenere un'identità coerente.
-2. **Miglioramenti dell'accessibilità:** Scegli caratteri che migliorino la leggibilità per gli utenti con disabilità visive.
-3. **Documenti legali e finanziari:** Aumenta la chiarezza utilizzando caratteri che mettono in risalto le sezioni importanti.
+Il rendering di font personalizzati può essere applicato in vari scenari:
+1. **Coerenza del branding:** Utilizza font specifici del brand in tutti i report generati.  
+2. **Miglioramenti di accessibilità:** Scegli font leggibili che aiutano gli utenti con disabilità visive.  
+3. **Documenti legali e finanziari:** Evidenzia le sezioni chiave con font che migliorano la leggibilità.
 
-Le possibilità di integrazione includono la connessione di GroupDocs.Viewer Java con sistemi di gestione dei documenti o applicazioni aziendali personalizzate, consentendo una personalizzazione fluida dei font su tutte le piattaforme.
+Puoi integrare questo approccio con sistemi di gestione documentale, portali di contenuti o qualsiasi applicazione aziendale che necessita di fornire anteprime HTML dei documenti.
 
 ## Considerazioni sulle prestazioni
 
-Quando si gestiscono grandi volumi di documenti, è opportuno tenere presente questi suggerimenti per ottimizzare le prestazioni:
-- Limitare il numero di font personalizzati per ridurre il sovraccarico di risorse.
-- Implementare strategie di memorizzazione nella cache per i documenti a cui si accede di frequente.
-- Monitorare l'utilizzo della memoria e regolare le impostazioni JVM secondo necessità.
-
-Seguire le best practice nella gestione della memoria Java assicurandosi che le risorse vengano chiuse correttamente dopo l'uso. Questo approccio riduce al minimo le perdite di memoria e migliora la stabilità dell'applicazione.
+Durante l'elaborazione di grandi lotti:
+- Limita il numero di font personalizzati per mantenere basso l'uso della memoria.  
+- Metti nella cache gli oggetti `HtmlViewOptions` quando renderizzi molti documenti con le stesse impostazioni.  
+- Monitora l'heap della JVM e regola `-Xmx` secondo necessità per evitare errori OutOfMemory.
 
 ## Conclusione
 
-Ora hai acquisito le basi per implementare il rendering personalizzato dei font utilizzando GroupDocs.Viewer per Java. Seguendo questa guida, puoi migliorare la presentazione dei documenti per soddisfare specifiche esigenze di branding o di leggibilità.
+Ora hai imparato come **add custom font HTML** usando GroupDocs.Viewer per Java, come **configure font settings Java**, e come **embed custom fonts HTML** per un rendering di documenti coerente e brandizzato. Queste tecniche ti permettono di fornire anteprime HTML curate e accessibili in qualsiasi soluzione basata su Java.
 
-Come passo successivo, valuta l'opportunità di esplorare le funzionalità aggiuntive offerte da GroupDocs.Viewer, come il supporto per filigrane e annotazioni. Immergiti nel loro [documentazione](https://docs.groupdocs.com/viewer/java/) per funzionalità più avanzate.
+Come passo successivo, esplora ulteriori funzionalità di GroupDocs.Viewer come il watermarking, il supporto alle annotazioni e il rendering di PDF multi‑pagina. Per ulteriori dettagli, consulta la [documentazione](https://docs.groupdocs.com/viewer/java/) ufficiale.
 
-## Sezione FAQ
+## Domande frequenti
 
-**D: Come posso garantire la compatibilità tra font personalizzati e diversi tipi di documenti?**
-A: Prova i tuoi font con vari formati di documenti per confermare la coerenza del rendering.
+**Q: Come posso garantire la compatibilità tra i font personalizzati e i diversi tipi di documento?**  
+A: Testa i tuoi font con file PDF, DOCX e PPTX per confermare un rendering coerente su tutti i formati.
 
-**D: GroupDocs.Viewer può gestire alfabeti non latini con font personalizzati?**
-R: Sì, supporta un'ampia gamma di set di caratteri se configurato correttamente.
+**Q: GroupDocs.Viewer può gestire script non latini con font personalizzati?**  
+A: Sì—una volta posizionato nella cartella dei font il font Unicode appropriato, il viewer renderizzerà correttamente i caratteri.
 
-**D: Quali sono le opzioni di licenza per utilizzare GroupDocs.Viewer in produzione?**
-R: Le opzioni includono prove gratuite, licenze temporanee e acquisti permanenti. Per maggiori dettagli, visita il loro sito [pagina di acquisto](https://purchase.groupdocs.com/buy).
+**Q: Quali opzioni di licenza sono disponibili per l'uso in produzione?**  
+A: Puoi iniziare con una prova gratuita, poi passare a una licenza temporanea o permanente tramite la [pagina di acquisto](https://purchase.groupdocs.com/buy).
 
-**D: Come posso risolvere i problemi di rendering dei font in GroupDocs.Viewer?**
-A: Controlla permessi, percorsi e impostazioni di compatibilità. Consulta la documentazione per i messaggi di errore specifici.
+**Q: Come risolvere i problemi di font mancanti?**  
+A: Controlla i permessi dei file, verifica il percorso e assicurati che i file dei font non siano corrotti. I log del viewer indicheranno quale font non è stato caricato.
 
-**D: È possibile utilizzare font personalizzati insieme ai font predefiniti come opzione di fallback?**
-R: Sì, puoi configurare più origini font in cui i font predefiniti fungono da backup se quelli personalizzati non sono disponibili.
+**Q: Posso tornare ai font predefiniti se un font personalizzato non è disponibile?**  
+A: Sì—aggiungendo più oggetti `FontSource`, puoi dare priorità ai font personalizzati mantenendo i font di sistema come backup.
 
 ## Risorse
 
-Per ulteriori approfondimenti:
-- **Documentazione:** [Visualizzatore GroupDocs Documenti Java](https://docs.groupdocs.com/viewer/java/)
-- **Riferimento API:** [API di GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Scaricamento:** [Ultime uscite](https://releases.groupdocs.com/viewer/java/)
-- **Opzioni di acquisto e prova:** [Pagina di acquisto di GroupDocs](https://purchase.groupdocs.com/buy) e [Prove gratuite](https://releases.groupdocs.com/viewer/java/)
-- **Supporto:** Per ulteriore assistenza, visita il [Forum GroupDocs](
+- **Documentazione:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **Riferimento API:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)
+- **Opzioni di acquisto e prova:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)
+- **Supporto:** Per ulteriore assistenza, visita il [GroupDocs Forum](
+
+---
+
+**Ultimo aggiornamento:** 2026-02-10  
+**Testato con:** GroupDocs.Viewer 25.2 for Java  
+**Autore:** GroupDocs

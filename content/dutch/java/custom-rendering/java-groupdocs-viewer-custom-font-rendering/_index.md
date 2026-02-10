@@ -1,38 +1,58 @@
 ---
-"date": "2025-04-24"
-"description": "Leer hoe u aangepaste lettertypen kunt gebruiken met GroupDocs.Viewer voor Java om de esthetiek van uw document te verbeteren en de merkconsistentie te behouden. Volg deze uitgebreide handleiding voor installatie, configuratie en praktische toepassingen."
-"title": "Hoe u aangepaste lettertypeweergave in Java implementeert met GroupDocs.Viewer&#58; een stapsgewijze handleiding"
-"url": "/nl/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
-"weight": 1
+date: '2026-02-10'
+description: Leer hoe u aangepaste lettertype‑HTML kunt toevoegen met GroupDocs.Viewer
+  voor Java, lettertype‑instellingen in Java kunt configureren en aangepaste lettertypen
+  in HTML kunt insluiten voor branding en leesbaarheid.
+keywords:
+- custom font rendering Java
+- GroupDocs Viewer setup
+- Java GroupDocs Viewer custom fonts
+title: 'Hoe aangepaste lettertype-HTML toe te voegen in Java met GroupDocs.Viewer:
+  Een stap-voor-stap gids'
 type: docs
+url: /nl/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/
+weight: 1
 ---
-# Hoe u aangepaste lettertypeweergave in Java implementeert met GroupDocs.Viewer: een stapsgewijze handleiding
 
-## Invoering
+# Hoe aangepaste lettertype HTML toe te voegen in Java met GroupDocs.Viewer: Een stapsgewijze handleiding
 
-Hebt u problemen met standaardlettertypen die niet voldoen aan de esthetische of leesbaarheidseisen van uw merk? Of het nu gaat om zakelijke rapporten, juridische documenten of presentaties, aangepaste lettertypen kunnen de aantrekkingskracht en professionaliteit van uw documenten aanzienlijk verbeteren. In deze stapsgewijze handleiding leggen we uit hoe u... **GroupDocs.Viewer Java** voor effectieve weergave van aangepaste lettertypen.
+## Introductie
 
-### Wat je leert:
-- GroupDocs.Viewer instellen voor Java
-- Aangepaste lettertypen integreren in documentweergave
-- Configuratie optimaliseren voor prestaties
+Heb je moeite met standaardlettertypen die niet passen bij de visuele identiteit van je merk? In veel bedrijfsrapporten, juridische documenten en presentaties is **add custom font HTML** essentieel om de uitstraling consistent te houden en de leesbaarheid te verbeteren. Deze gids leidt je door het gebruik van **GroupDocs.Viewer for Java** om font settings Java te configureren en custom fonts HTML in te sluiten, zodat je gerenderde documenten er precies uitzien zoals je wilt.
 
-Aan het einde van deze tutorial beheerst u het aanpassen van documentpresentaties met aangepaste lettertypen. Laten we beginnen met ervoor te zorgen dat uw ontwikkelomgeving klaar is met de benodigde tools.
+![Implement Custom Font Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
+
+### Wat je zult leren
+- Hoe GroupDocs.Viewer voor Java in te stellen  
+- Hoe **add custom font HTML** toe te voegen aan je gerenderde output  
+- Hoe **configure font settings Java** te configureren voor optimale prestaties  
+
+Aan het einde van deze tutorial kun je de documentpresentatie aanpassen met aangepaste lettertypen, waardoor merkconsistentie en verbeterde toegankelijkheid worden gegarandeerd.
+
+## Snelle antwoorden
+- **Wat is het primaire doel?** Om documenten te renderen met je eigen lettertypen met behulp van GroupDocs.Viewer Java.  
+- **Welke versie is vereist?** GroupDocs.Viewer 25.2 (of later).  
+- **Heb ik een licentie nodig?** Er is een gratis proefversie beschikbaar; een betaalde licentie is vereist voor productie.  
+- **Kan ik custom fonts HTML insluiten?** Ja – wijs de viewer gewoon naar een map met je lettertypen.  
+- **Is Maven de enige manier om de bibliotheek toe te voegen?** Maven wordt aanbevolen, maar je kunt ook Gradle of handmatige JAR-inclusie gebruiken.
+
+## Wat is “add custom font HTML”?
+Het toevoegen van custom font HTML betekent dat je de renderingengine instrueert om lettertypen te gebruiken die jij levert, in plaats van de standaard systeemlettertypen, bij het genereren van HTML-output. Dit zorgt ervoor dat de visuele stijl van het document overeenkomt met je bedrijfsbranding of toegankelijkheidsrichtlijnen.
+
+## Waarom font settings Java configureren met GroupDocs.Viewer?
+Het configureren van font settings Java geeft je volledige controle over welke lettertypebestanden worden doorzocht, hoe ze worden gecached en hoe fallback-lettertypen worden toegepast. Dit vermindert renderfouten, verbetert de prestaties en garandeert een consistente weergave in verschillende browsers.
 
 ## Vereisten
+- **Java Development Kit (JDK):** 8 of nieuwer  
+- **IDE:** IntelliJ IDEA, Eclipse, of een Java‑compatibele editor  
+- **Maven:** Voor afhankelijkheidsbeheer  
+- **Custom font files:** `.ttf` of `.otf` bestanden geplaatst in een speciale map  
 
-Voordat u begint, moet u ervoor zorgen dat u het volgende heeft:
-- **Java-ontwikkelingskit (JDK):** Versie 8 of hoger
-- **Geïntegreerde ontwikkelomgeving (IDE):** Zoals IntelliJ IDEA of Eclipse
-- **Kenner:** Voor het beheren van projectafhankelijkheden
+## GroupDocs.Viewer voor Java instellen
 
-Een basiskennis van Java-programmering en bekendheid met Maven zijn nuttig.
+### Installatie‑informatie
 
-## GroupDocs.Viewer instellen voor Java
-
-### Installatie-informatie
-
-Neem het volgende op in uw Maven `pom.xml` bestand:
+Voeg de GroupDocs-repository en afhankelijkheid toe aan je Maven `pom.xml`:
 
 ```xml
 <repositories>
@@ -51,13 +71,13 @@ Neem het volgende op in uw Maven `pom.xml` bestand:
 </dependencies>
 ```
 
-### Licentieverwerving
+### Licentie‑acquisitie
 
-GroupDocs biedt een gratis proefperiode aan om hun functies te verkennen, met opties voor het verkrijgen van een tijdelijke licentie of de aanschaf van een volledige licentie. Voor testdoeleinden kunt u de nieuwste versie downloaden van hun website. [releasepagina](https://releases.groupdocs.com/viewer/java/).
+GroupDocs biedt een gratis proefversie om hun functies te verkennen, met opties voor het verkrijgen van een tijdelijke licentie of het aanschaffen van een volledige licentie. Voor testdoeleinden kun je de nieuwste versie downloaden van hun [release page](https://releases.groupdocs.com/viewer/java/).
 
-#### Basisinitialisatie en -installatie
+#### Basisinitialisatie en -instelling
 
-Nadat u GroupDocs.Viewer als afhankelijkheid hebt toegevoegd, initialiseert u deze in uw Java-project:
+Na het toevoegen van GroupDocs.Viewer als afhankelijkheid, initialiseert je het in je Java‑project:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -65,23 +85,21 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("sample.pdf")) {
-            // Eerste installatie en weergavecode hier
+            // Initial setup and viewing code here
         }
     }
 }
 ```
 
-Dit eenvoudige voorbeeld laat zien hoe u een document opent met GroupDocs.Viewer.
+Dit basisvoorbeeld laat zien hoe je een document opent met GroupDocs.Viewer.
 
-## Implementatiegids
+## Implementatie‑gids
 
-### Aangepaste lettertypeweergave in GroupDocs.Viewer Java
+### Hoe custom font HTML toe te voegen in GroupDocs.Viewer Java
 
-In deze sectie onderzoeken we de integratie van aangepaste lettertypen bij het renderen van documenten met GroupDocs.Viewer. Deze functie is van onschatbare waarde voor het behouden van merkconsistentie en het verbeteren van de leesbaarheid.
+In deze sectie lopen we de exacte stappen door die nodig zijn om **add custom font HTML** toe te voegen bij het renderen van documenten.
 
-#### Noodzakelijke pakketten importeren
-
-Begin met het importeren van de vereiste pakketten:
+#### Benodigde pakketten importeren
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,43 +109,35 @@ import com.groupdocs.viewer.fonts.FontSettings;
 import com.groupdocs.viewer.fonts.SearchOption;
 ```
 
-Met deze importfuncties kunt u eenvoudiger aangepaste lettertypen en opties voor het weergeven van documenten verwerken.
+Deze imports vergemakkelijken het omgaan met custom fonts en documentweergave‑opties.
 
-#### Aangepaste lettertypen instellen
+#### Custom fonts instellen
 
-##### Definieer het pad naar aangepaste lettertypen
-
-Maak een tekenreeksvariabele die verwijst naar uw aangepaste lettertypemap:
+##### Definieer het pad naar je lettertype‑map
 
 ```java
 String fontPath = "/path/to/your/custom/fonts";
 ```
 
-Vervangen `"/path/to/your/custom/fonts"` met het daadwerkelijke pad waar uw aangepaste lettertypen zijn opgeslagen. Deze configuratie zorgt ervoor dat GroupDocs.Viewer deze lettertypen kan vinden en gebruiken tijdens het renderen.
+Vervang `"/path/to/your/custom/fonts"` door de daadwerkelijke locatie van je `.ttf` of `.otf` bestanden.
 
-##### Een FontSource-object maken
-
-Instantieer vervolgens een `FolderFontSource` object om naar deze directory te verwijzen:
+##### Maak een FontSource‑object
 
 ```java
 FolderFontSource fontSource = new FolderFontSource(fontPath, SearchOption.TOP_FOLDER_ONLY);
 ```
 
-De `SearchOption.TOP_FOLDER_ONLY` parameter instrueert de viewer om alleen naar lettertypen te zoeken in de opgegeven hoofdmap.
+`SearchOption.TOP_FOLDER_ONLY` vertelt de viewer om alleen in de opgegeven map te zoeken, wat de zoekactie versnelt.
 
-##### Lettertypebronnen instellen voor rendering
-
-Configureer nu GroupDocs.Viewer om uw aangepaste lettertypen te gebruiken:
+##### Configureer font settings Java
 
 ```java
 FontSettings.setFontSources(fontSource);
 ```
 
-Met deze stap wordt ervoor gezorgd dat alle volgende documentrenderingbewerkingen gebruikmaken van deze aangepaste lettertypen.
+Deze regel **configures font settings Java** zodat elke render‑operatie de door jou geleverde lettertypen gebruikt.
 
-#### Definieer de uitvoermap en weergaveopties
-
-Instellen waar de weergegeven documenten moeten worden opgeslagen:
+#### Definieer uitvoermap en view‑opties
 
 ```java
 String outputPath = "/path/to/output/directory";
@@ -135,59 +145,60 @@ String pageFilePathFormat = String.format("%s/page_{0}.html", outputPath);
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-Vervangen `"/path/to/output/directory"` met het gewenste uitvoerpad. De `HtmlViewOptions` klasse helpt bij het configureren hoe documenten in HTML-formaat worden weergegeven.
+Hier laten we ook zien hoe je **embed custom fonts HTML** kunt gebruiken door `HtmlViewOptions.forEmbeddedResources` te gebruiken, waardoor lettertypebestanden direct in de gegenereerde HTML worden ingesloten.
 
 ### Tips voor probleemoplossing
-- Zorg ervoor dat de lettertypebestanden de juiste leesmachtigingen hebben.
-- Controleer de paden nogmaals op typefouten en onjuiste directorystructuren.
-- Controleer de compatibiliteit van aangepaste lettertypen met de documenttypen die worden verwerkt.
+- Controleer of de lettertypebestanden leesrechten hebben voor de gebruiker die het Java‑proces uitvoert.  
+- Controleer het mappad nogmaals; een ontbrekende slash aan het einde kan “font not found” fouten veroorzaken.  
+- Zorg ervoor dat de lettertypen compatibel zijn met het documenttype (bijv. TrueType voor PDF’s).  
 
 ## Praktische toepassingen
 
-Aangepaste lettertypeweergave kan in verschillende scenario's worden toegepast:
-1. **Merkconsistentie:** Gebruik merkspecifieke lettertypen in alle documenten om een samenhangende identiteit te behouden.
-2. **Verbeteringen in toegankelijkheid:** Kies lettertypen die de leesbaarheid voor gebruikers met een visuele beperking verbeteren.
-3. **Juridische en financiële documenten:** Vergroot de duidelijkheid door lettertypen te gebruiken die belangrijke secties benadrukken.
+Custom font rendering kan in verschillende scenario's worden toegepast:
+1. **Branding Consistency:** Gebruik merk‑specifieke lettertypen in alle gegenereerde rapporten.  
+2. **Accessibility Improvements:** Kies leesbare lettertypen die gebruikers met visuele beperkingen helpen.  
+3. **Legal & Financial Documents:** Markeer belangrijke secties met lettertypen die de scanbaarheid verbeteren.
 
-Integratiemogelijkheden bestaan onder meer uit het verbinden van GroupDocs.Viewer Java met documentbeheersystemen of aangepaste bedrijfsapplicaties, waardoor naadloze aanpassing van het lettertype op verschillende platforms mogelijk is.
+Je kunt deze aanpak integreren met documentbeheersystemen, contentportalen of elke enterprise‑applicatie die HTML‑previews van documenten moet leveren.
 
-## Prestatieoverwegingen
+## Prestatie‑overwegingen
 
-Wanneer u met grote hoeveelheden documenten werkt, kunt u de volgende tips gebruiken om de prestaties te optimaliseren:
-- Beperk het aantal aangepaste lettertypen om de resourceoverhead te beperken.
-- Implementeer cachestrategieën voor veelgebruikte documenten.
-- Houd het geheugengebruik in de gaten en pas de JVM-instellingen indien nodig aan.
-
-Volg de best practices voor Java-geheugenbeheer door ervoor te zorgen dat resources na gebruik correct worden afgesloten. Deze aanpak minimaliseert geheugenlekken en verbetert de stabiliteit van de applicatie.
+Bij het verwerken van grote batches:
+- Beperk het aantal custom fonts om het geheugenverbruik laag te houden.  
+- Cache `HtmlViewOptions`‑objecten bij het renderen van veel documenten met dezelfde instellingen.  
+- Houd de JVM‑heap in de gaten en pas `-Xmx` aan indien nodig om OutOfMemory‑fouten te voorkomen.
 
 ## Conclusie
 
-Je beheerst nu de basisprincipes van het implementeren van aangepaste lettertypeweergave met GroupDocs.Viewer voor Java. Door deze handleiding te volgen, kun je de presentatie van documenten verbeteren en voldoen aan specifieke branding- of leesbaarheidsbehoeften.
+Je hebt nu geleerd hoe je **add custom font HTML** gebruikt met GroupDocs.Viewer voor Java, hoe je **configure font settings Java** toepast, en hoe je **embed custom fonts HTML** kunt insluiten voor consistente, merkgebonden documentrendering. Deze technieken stellen je in staat om gepolijste, toegankelijke HTML‑previews te leveren in elke Java‑gebaseerde oplossing.
 
-Overweeg als volgende stap om de extra functies van GroupDocs.Viewer te verkennen, zoals ondersteuning voor watermerken en annotaties. [documentatie](https://docs.groupdocs.com/viewer/java/) voor meer geavanceerde mogelijkheden.
+Als volgende stap kun je extra GroupDocs.Viewer‑mogelijkheden verkennen, zoals watermerken, annotatie‑ondersteuning en multi‑page PDF‑rendering. Voor meer details, raadpleeg de officiële [documentation](https://docs.groupdocs.com/viewer/java/).
 
-## FAQ-sectie
+## Veelgestelde vragen
 
-**V: Hoe zorg ik voor compatibiliteit tussen aangepaste lettertypen en verschillende documenttypen?**
-A: Test uw lettertypen met verschillende documentformaten om een consistente weergave te garanderen.
+**Q: Hoe zorg ik voor compatibiliteit tussen custom fonts en verschillende documenttypen?**  
+A: Test je lettertypen met PDF‑, DOCX‑ en PPTX‑bestanden om consistente rendering over formaten heen te bevestigen.
 
-**V: Kan GroupDocs.Viewer niet-Latijnse scripts met aangepaste lettertypen verwerken?**
-A: Ja, als het correct is geconfigureerd, ondersteunt het een breed scala aan tekensets.
+**Q: Kan GroupDocs.Viewer niet‑Latijnse scripts aan met custom fonts?**  
+A: Ja—zodra het juiste Unicode‑ondersteunende lettertype in de font‑map is geplaatst, zal de viewer de tekens correct renderen.
 
-**V: Wat zijn de licentieopties voor het gebruik van GroupDocs.Viewer in productie?**
-A: Opties zijn onder andere gratis proefversies, tijdelijke licenties en permanente aankopen. Voor meer informatie kunt u terecht op hun website. [aankooppagina](https://purchase.groupdocs.com/buy).
+**Q: Welke licentie‑opties zijn beschikbaar voor productiegebruik?**  
+A: Je kunt beginnen met een gratis proefversie, en daarna upgraden naar een tijdelijke of permanente licentie via de [purchase page](https://purchase.groupdocs.com/buy).
 
-**V: Hoe los ik problemen met de weergave van lettertypen in GroupDocs.Viewer op?**
-A: Controleer de rechten, paden en compatibiliteitsinstellingen. Raadpleeg de documentatie voor specifieke foutmeldingen.
+**Q: Hoe los ik problemen met ontbrekende lettertypen op?**  
+A: Controleer bestandsrechten, verifieer het pad, en zorg dat de lettertypebestanden niet corrupt zijn. De viewer‑logboeken geven aan welk lettertype niet kon worden geladen.
 
-**V: Kunnen aangepaste lettertypen als terugvaloptie naast de standaardlettertypen worden gebruikt?**
-A: Ja, u kunt meerdere lettertypebronnen configureren, waarbij de standaardlettertypen als back-up dienen als aangepaste lettertypen niet beschikbaar zijn.
+**Q: Kan ik terugvallen op standaardlettertypen als een custom font niet beschikbaar is?**  
+A: Ja—door meerdere `FontSource`‑objecten toe te voegen, kun je custom fonts prioriteren terwijl je systeem‑standaardlettertypen als backup behoudt.
 
-## Bronnen
+## Resources
 
-Voor verdere verkenning:
-- **Documentatie:** [GroupDocs Viewer Java-documenten](https://docs.groupdocs.com/viewer/java/)
-- **API-referentie:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)
-- **Downloaden:** [Nieuwste releases](https://releases.groupdocs.com/viewer/java/)
-- **Aankoop- en proefopties:** [GroupDocs-aankooppagina](https://purchase.groupdocs.com/buy) & [Gratis proefperiodes](https://releases.groupdocs.com/viewer/java/)
-- **Steun:** Voor extra hulp kunt u terecht op het [GroupDocs Forum](
+- **Documentatie:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **API‑referentie:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)
+- **Aankoop‑ en proefopties:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)
+- **Ondersteuning:** Voor extra hulp, bezoek het [GroupDocs Forum](
+
+**Laatst bijgewerkt:** 2026-02-10  
+**Getest met:** GroupDocs.Viewer 25.2 for Java  
+**Auteur:** GroupDocs

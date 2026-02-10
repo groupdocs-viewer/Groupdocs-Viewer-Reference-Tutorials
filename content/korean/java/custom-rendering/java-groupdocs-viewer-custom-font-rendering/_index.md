@@ -1,38 +1,66 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java에서 사용자 지정 글꼴을 사용하여 문서의 미적 감각을 향상시키고 브랜드 일관성을 유지하는 방법을 알아보세요. 설정, 구성 및 실제 활용에 대한 포괄적인 가이드를 참조하세요."
-"title": "GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 글꼴 렌더링을 구현하는 방법 - 단계별 가이드"
-"url": "/ko/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
-"weight": 1
+date: '2026-02-10'
+description: GroupDocs.Viewer for Java를 사용하여 HTML에 사용자 정의 글꼴을 추가하고, Java에서 글꼴 설정을
+  구성하며, 브랜드와 가독성을 위해 HTML에 사용자 정의 글꼴을 삽입하는 방법을 배워보세요.
+keywords:
+- custom font rendering Java
+- GroupDocs Viewer setup
+- Java GroupDocs Viewer custom fonts
+title: 'Java에서 GroupDocs.Viewer를 사용해 사용자 정의 폰트 HTML 추가 방법: 단계별 가이드'
 type: docs
+url: /ko/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/
+weight: 1
 ---
-# GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 글꼴 렌더링을 구현하는 방법: 단계별 가이드
+
+2026-02-10" maybe keep as is.
+
+"**Tested With:** GroupDocs.Viewer 25.2 for Java" -> "**Tested With:** GroupDocs.Viewer 25.2 for Java"
+
+"**Author:** GroupDocs" -> same.
+
+Now produce final markdown with Korean translations.
+
+Make sure to keep placeholders unchanged.
+
+Let's construct final output.# Java와 GroupDocs.Viewer를 사용한 add custom font HTML 추가 방법: 단계별 가이드
 
 ## 소개
 
-기본 글꼴이 브랜드의 미적 또는 가독성 요구 사항과 맞지 않아 어려움을 겪고 계신가요? 비즈니스 보고서, 법률 문서, 프레젠테이션 등 어떤 문서든 맞춤 글꼴을 사용하면 문서의 매력도와 전문성을 크게 향상시킬 수 있습니다. 이 단계별 가이드에서는 맞춤 글꼴을 사용하는 방법을 살펴보겠습니다. **GroupDocs.Viewer Java** 효과적인 사용자 정의 글꼴 렌더링을 위해.
+기본 폰트가 브랜드 시각 아이덴티티와 맞지 않아 고민하고 계신가요? 많은 비즈니스 보고서, 법률 문서, 프레젠테이션에서 **add custom font HTML**은 일관된 외관을 유지하고 가독성을 향상시키는 데 필수적입니다. 이 가이드는 **GroupDocs.Viewer for Java**를 사용하여 font settings Java를 구성하고 custom fonts HTML을 삽입하는 방법을 단계별로 안내하여 렌더링된 문서가 원하는 대로 정확히 표시되도록 합니다.
 
-### 배울 내용:
-- Java용 GroupDocs.Viewer 설정
-- 문서 렌더링에 사용자 정의 글꼴 통합
-- 성능을 위한 구성 최적화
+![GroupDocs.Viewer for Java를 사용한 커스텀 폰트 렌더링 구현](/viewer/custom-rendering/implement-custom-font-rendering.png)
 
-이 튜토리얼을 마치면 사용자 지정 글꼴을 사용하여 문서 프레젠테이션을 맞춤 설정하는 방법을 익힐 수 있습니다. 먼저 필요한 도구를 갖춘 개발 환경을 준비합니다.
+### 배울 내용
+- GroupDocs.Viewer for Java 설정 방법  
+- 렌더링된 출력에 **add custom font HTML**을 추가하는 방법  
+- 최적 성능을 위한 **configure font settings Java** 방법  
 
-## 필수 조건
+이 튜토리얼을 마치면 커스텀 폰트를 사용해 문서 프레젠테이션을 맞춤화할 수 있게 되며, 브랜드 일관성과 향상된 접근성을 보장할 수 있습니다.
 
-시작하기 전에 다음 사항이 있는지 확인하세요.
-- **자바 개발 키트(JDK):** 버전 8 이상
-- **통합 개발 환경(IDE):** IntelliJ IDEA나 Eclipse와 같은
-- **메이븐:** 프로젝트 종속성 관리를 위해
+## 빠른 답변
+- **What is the primary purpose?** GroupDocs.Viewer Java를 사용해 자체 폰트로 문서를 렌더링하는 것입니다.  
+- **Which version is required?** GroupDocs.Viewer 25.2(이상).  
+- **Do I need a license?** 무료 체험을 이용할 수 있으며, 프로덕션에서는 유료 라이선스가 필요합니다.  
+- **Can I embed custom fonts HTML?** 예 – 뷰어가 폰트가 들어있는 폴더를 가리키게 하면 됩니다.  
+- **Is Maven the only way to add the library?** Maven이 권장되지만 Gradle이나 수동 JAR 포함도 가능합니다.
 
-Java 프로그래밍에 대한 기본적인 이해와 Maven에 대한 친숙함이 도움이 됩니다.
+## “add custom font HTML”이란?
+add custom font HTML을 추가한다는 것은 HTML 출력 생성 시 기본 시스템 폰트가 아니라 사용자가 제공한 폰트를 렌더링 엔진이 사용하도록 지시하는 것을 의미합니다. 이를 통해 문서의 시각적 스타일이 기업 브랜딩이나 접근성 가이드라인과 일치하도록 보장합니다.
 
-## Java용 GroupDocs.Viewer 설정
+## 왜 GroupDocs.Viewer와 함께 font settings Java를 구성해야 할까요?
+font settings Java를 구성하면 검색할 폰트 파일, 캐시 방식, 폴백 폰트 적용 방식을 완전히 제어할 수 있습니다. 이는 렌더링 오류를 줄이고 성능을 향상시키며 브라우저 전반에 걸쳐 일관된 모습을 보장합니다.
+
+## 사전 요구 사항
+- **Java Development Kit (JDK):** 8 이상  
+- **IDE:** IntelliJ IDEA, Eclipse 또는 Java 호환 편집기  
+- **Maven:** 의존성 관리용  
+- **Custom font files:** 전용 폴더에 배치된 `.ttf` 또는 `.otf` 파일  
+
+## GroupDocs.Viewer for Java 설정
 
 ### 설치 정보
 
-Maven에 다음을 포함하세요. `pom.xml` 파일:
+Maven `pom.xml`에 GroupDocs 저장소와 의존성을 추가합니다:
 
 ```xml
 <repositories>
@@ -51,13 +79,13 @@ Maven에 다음을 포함하세요. `pom.xml` 파일:
 </dependencies>
 ```
 
-### 라이센스 취득
+### 라이선스 획득
 
-GroupDocs는 기능을 체험해 볼 수 있는 무료 체험판을 제공하며, 임시 라이선스를 구매하거나 정식 라이선스를 구매할 수 있습니다. 테스트 목적으로는 해당 사이트에서 최신 버전을 다운로드하세요. [출시 페이지](https://releases.groupdocs.com/viewer/java/).
+GroupDocs는 기능을 체험할 수 있는 무료 체험을 제공하며, 임시 라이선스를 얻거나 정식 라이선스를 구매할 수 있는 옵션이 있습니다. 테스트용으로는 [release page](https://releases.groupdocs.com/viewer/java/)에서 최신 버전을 다운로드하십시오.
 
 #### 기본 초기화 및 설정
 
-GroupDocs.Viewer를 종속성으로 추가한 후 Java 프로젝트에서 초기화합니다.
+GroupDocs.Viewer를 의존성으로 추가한 후, Java 프로젝트에서 초기화합니다:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -65,23 +93,19 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("sample.pdf")) {
-            // 초기 설정 및 코드 보기
+            // Initial setup and viewing code here
         }
     }
 }
 ```
 
-이 기본 예제에서는 GroupDocs.Viewer를 사용하여 문서를 여는 방법을 보여줍니다.
-
 ## 구현 가이드
 
-### GroupDocs.Viewer Java에서 사용자 정의 글꼴 렌더링
+### GroupDocs.Viewer Java에서 add custom font HTML 추가 방법
 
-이 섹션에서는 GroupDocs.Viewer를 사용하여 문서를 렌더링할 때 사용자 지정 글꼴을 통합하는 방법을 살펴보겠습니다. 이 기능은 브랜드 일관성을 유지하고 가독성을 향상시키는 데 매우 중요합니다.
+이 섹션에서는 문서를 렌더링할 때 **add custom font HTML**을 추가하는 정확한 단계를 안내합니다.
 
 #### 필요한 패키지 가져오기
-
-먼저 필요한 패키지를 가져옵니다.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,43 +115,35 @@ import com.groupdocs.viewer.fonts.FontSettings;
 import com.groupdocs.viewer.fonts.SearchOption;
 ```
 
-이러한 가져오기 기능을 사용하면 사용자 정의 글꼴과 문서 보기 옵션을 처리하는 것이 용이해집니다.
+이러한 import는 커스텀 폰트와 문서 보기 옵션을 처리하는 데 도움이 됩니다.
 
-#### 사용자 정의 글꼴 설정
+#### 커스텀 폰트 설정
 
-##### 사용자 정의 글꼴 경로 정의
-
-사용자 정의 글꼴 디렉토리를 가리키는 문자열 변수를 만듭니다.
+##### 폰트 폴더 경로 정의
 
 ```java
 String fontPath = "/path/to/your/custom/fonts";
 ```
 
-바꾸다 `"/path/to/your/custom/fonts"` 사용자 지정 글꼴이 저장된 실제 경로를 사용합니다. 이렇게 설정하면 GroupDocs.Viewer가 렌더링 중에 해당 글꼴을 찾아 사용할 수 있습니다.
+`"/path/to/your/custom/fonts"`를 실제 `.ttf` 또는 `.otf` 파일이 있는 위치로 교체하십시오.
 
 ##### FontSource 객체 생성
-
-다음으로 인스턴스화합니다. `FolderFontSource` 이 디렉토리를 가리키는 객체:
 
 ```java
 FolderFontSource fontSource = new FolderFontSource(fontPath, SearchOption.TOP_FOLDER_ONLY);
 ```
 
-그만큼 `SearchOption.TOP_FOLDER_ONLY` 매개변수는 뷰어에게 지정된 최상위 폴더에서만 글꼴을 검색하도록 지시합니다.
+`SearchOption.TOP_FOLDER_ONLY`는 뷰어가 지정된 폴더만 검색하도록 하여 검색 속도를 높입니다.
 
-##### 렌더링을 위한 글꼴 소스 설정
-
-이제 GroupDocs.Viewer를 구성하여 사용자 정의 글꼴을 사용하세요.
+##### Font Settings Java 구성
 
 ```java
 FontSettings.setFontSources(fontSource);
 ```
 
-이 단계를 수행하면 이후의 모든 문서 렌더링 작업에서 이러한 사용자 정의 글꼴이 활용됩니다.
+이 라인은 **configures font settings Java**를 수행하여 모든 렌더링 작업이 제공한 폰트를 사용하도록 합니다.
 
-#### 출력 디렉토리 및 보기 옵션 정의
-
-렌더링된 문서를 저장할 위치를 설정합니다.
+#### 출력 디렉터리 및 보기 옵션 정의
 
 ```java
 String outputPath = "/path/to/output/directory";
@@ -135,59 +151,61 @@ String pageFilePathFormat = String.format("%s/page_{0}.html", outputPath);
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-바꾸다 `"/path/to/output/directory"` 원하는 출력 경로로. `HtmlViewOptions` 클래스는 문서가 HTML 형식으로 렌더링되는 방식을 구성하는 데 도움이 됩니다.
+여기서는 `HtmlViewOptions.forEmbeddedResources`를 사용하여 **embed custom fonts HTML**을 수행하는 방법을 보여줍니다. 이 옵션은 폰트 파일을 생성된 HTML에 직접 삽입합니다.
 
 ### 문제 해결 팁
-- 글꼴 파일에 적절한 읽기 권한이 있는지 확인하세요.
-- 경로를 다시 한 번 확인하여 오타나 잘못된 디렉토리 구조가 없는지 확인하세요.
-- 처리 중인 문서 유형과 사용자 정의 글꼴의 호환성을 확인합니다.
+- Java 프로세스를 실행하는 사용자가 폰트 파일에 대한 읽기 권한을 가지고 있는지 확인하십시오.  
+- 폴더 경로를 다시 확인하십시오; 끝에 슬래시가 없으면 “font not found” 오류가 발생할 수 있습니다.  
+- 폰트가 문서 유형과 호환되는지 확인하십시오(예: PDF의 경우 TrueType).
 
-## 실제 응용 프로그램
+## 실용적인 적용 사례
 
-사용자 정의 글꼴 렌더링은 다양한 시나리오에 적용될 수 있습니다.
-1. **브랜딩 일관성:** 일관된 정체성을 유지하려면 모든 문서에서 브랜드별 글꼴을 사용하세요.
-2. **접근성 개선:** 시각 장애가 있는 사용자의 가독성을 높여주는 글꼴을 선택하세요.
-3. **법률 및 재무 문서:** 중요한 섹션을 강조하는 글꼴을 사용하여 명확성을 높이세요.
+커스텀 폰트 렌더링은 다양한 시나리오에 적용될 수 있습니다:
+1. **Branding Consistency:** 모든 생성된 보고서에 브랜드 전용 폰트를 사용합니다.  
+2. **Accessibility Improvements:** 시각 장애 사용자를 돕는 가독성 높은 폰트를 선택합니다.  
+3. **Legal & Financial Documents:** 스캔 가능성을 높이는 폰트로 주요 섹션을 강조합니다.
 
-통합 가능성으로는 GroupDocs.Viewer Java를 문서 관리 시스템이나 맞춤형 엔터프라이즈 애플리케이션과 연결하여 플랫폼 전반에 걸쳐 원활한 글꼴 사용자 정의가 가능합니다.
+이 방식을 문서 관리 시스템, 콘텐츠 포털 또는 문서의 HTML 미리보기를 제공해야 하는 모든 엔터프라이즈 애플리케이션에 통합할 수 있습니다.
 
 ## 성능 고려 사항
 
-대량의 문서를 처리할 때 성능을 최적화하기 위해 다음 팁을 고려하세요.
-- 사용자 정의 글꼴의 수를 제한하여 리소스 오버헤드를 줄입니다.
-- 자주 액세스하는 문서에 대한 캐싱 전략을 구현합니다.
-- 메모리 사용량을 모니터링하고 필요에 따라 JVM 설정을 조정합니다.
-
-Java 메모리 관리 모범 사례를 따르면 리소스 사용 후 해당 리소스를 제대로 닫아둘 수 있습니다. 이러한 접근 방식은 메모리 누수를 최소화하고 애플리케이션 안정성을 향상시킵니다.
+대량 배치를 처리할 때:
+- 메모리 사용량을 낮게 유지하려면 커스텀 폰트 수를 제한하십시오.  
+- 동일한 설정으로 많은 문서를 렌더링할 때 `HtmlViewOptions` 객체를 캐시하십시오.  
+- JVM 힙을 모니터링하고 필요에 따라 `-Xmx`를 조정하여 OutOfMemory 오류를 방지하십시오.
 
 ## 결론
 
-이제 GroupDocs.Viewer for Java를 사용하여 사용자 지정 글꼴 렌더링을 구현하는 기본 사항을 익혔습니다. 이 가이드를 따라 하면 특정 브랜딩 또는 가독성 요구 사항에 맞게 문서 표현을 개선할 수 있습니다.
+이제 GroupDocs.Viewer for Java를 사용해 **add custom font HTML**을 추가하고, **configure font settings Java**를 구성하며, 일관되고 브랜드화된 문서 렌더링을 위해 **embed custom fonts HTML**을 수행하는 방법을 배웠습니다. 이러한 기술을 통해 Java 기반 솔루션에서 세련되고 접근성 높은 HTML 미리보기를 제공할 수 있습니다.
 
-다음 단계로, GroupDocs.Viewer가 제공하는 워터마킹 및 주석 지원과 같은 추가 기능을 살펴보는 것을 고려해 보세요. [선적 서류 비치](https://docs.groupdocs.com/viewer/java/) 더욱 진보된 기능을 위해.
+다음 단계로 워터마크, 주석 지원, 다중 페이지 PDF 렌더링 등 추가적인 GroupDocs.Viewer 기능을 탐색해 보십시오. 자세한 내용은 공식 [documentation](https://docs.groupdocs.com/viewer/java/)을 참조하십시오.
 
-## FAQ 섹션
+## 자주 묻는 질문
 
-**질문: 사용자 정의 글꼴과 다양한 문서 유형 간의 호환성을 어떻게 보장할 수 있나요?**
-답변: 다양한 문서 형식으로 글꼴을 테스트하여 일관된 렌더링이 이루어지는지 확인하세요.
+**Q: 커스텀 폰트와 다양한 문서 유형 간의 호환성을 어떻게 보장할 수 있나요?**  
+A: PDF, DOCX, PPTX 파일에 폰트를 테스트하여 형식 전반에 걸쳐 일관된 렌더링을 확인하십시오.
 
-**질문: GroupDocs.Viewer는 사용자 정의 글꼴을 사용한 비라틴 문자도 처리할 수 있나요?**
-A: 네, 올바르게 구성하면 다양한 문자 집합을 지원합니다.
+**Q: GroupDocs.Viewer가 커스텀 폰트를 사용해 비라틴 스크립트를 처리할 수 있나요?**  
+A: 예—적절한 유니코드 지원 폰트를 폰트 폴더에 배치하면 뷰어가 문자를 올바르게 렌더링합니다.
 
-**질문: GroupDocs.Viewer를 프로덕션 환경에서 사용하기 위한 라이선스 옵션은 무엇입니까?**
-A: 무료 체험판, 임시 라이선스, 영구 구매 등의 옵션이 있습니다. 자세한 내용은 해당 웹사이트를 방문하세요. [구매 페이지](https://purchase.groupdocs.com/buy).
+**Q: 프로덕션 사용을 위한 라이선스 옵션은 무엇인가요?**  
+A: 무료 체험으로 시작한 뒤 [purchase page](https://purchase.groupdocs.com/buy)에서 임시 또는 영구 라이선스로 업그레이드할 수 있습니다.
 
-**질문: GroupDocs.Viewer에서 글꼴 렌더링 문제를 해결하려면 어떻게 해야 하나요?**
-답변: 권한, 경로 및 호환성 설정을 확인하세요. 구체적인 오류 메시지는 설명서를 참조하세요.
+**Q: 폰트 누락 문제를 어떻게 해결하나요?**  
+A: 파일 권한을 확인하고, 경로를 검증하며, 폰트 파일이 손상되지 않았는지 확인하십시오. 뷰어 로그에 로드되지 않은 폰트가 표시됩니다.
 
-**질문: 기본 글꼴과 함께 대체 옵션으로 사용자 정의 글꼴을 사용할 수 있나요?**
-답변: 네, 사용자 정의 글꼴을 사용할 수 없는 경우 기본 글꼴을 백업으로 사용하도록 여러 글꼴 소스를 구성할 수 있습니다.
+**Q: 커스텀 폰트를 사용할 수 없을 때 기본 폰트로 대체할 수 있나요?**  
+A: 예—여러 `FontSource` 객체를 추가하면 커스텀 폰트를 우선 적용하면서 시스템 기본 폰트를 백업으로 유지할 수 있습니다.
 
-## 자원
+## 리소스
 
-더 자세히 알아보려면:
-- **선적 서류 비치:** [GroupDocs 뷰어 Java 문서](https://docs.groupdocs.com/viewer/java/)
-- **API 참조:** [그룹문서 API](https://reference.groupdocs.com/viewer/java/)
-- **다운로드:** [최신 릴리스](https://releases.groupdocs.com/viewer/java/)
-- **구매 및 체험 옵션:** [GroupDocs 구매 페이지](https://purchase.groupdocs.com/buy) & [무료 체험판](https://releases.groupdocs.com/viewer/java/)
-- **지원하다:** 추가 도움이 필요하면 [GroupDocs 포럼]을 방문하세요.
+추가 탐색을 위해:
+- **Documentation:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **API Reference:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)
+- **Purchase and Trial Options:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)
+- **Support:** For additional help, visit the [GroupDocs Forum](
+
+**Last Updated:** 2026-02-10  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
