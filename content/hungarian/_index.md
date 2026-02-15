@@ -1,114 +1,138 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2025-12-15
-description: Ismerje meg a GroupDocs Viewer oktatóját, amely lehetővé teszi több mint
-  170 dokumentumformátum renderelését és megjelenítését .NET és Java környezetben.
-  Fedezze fel a renderelést, a gyorsítótárazást, a vízjeleket és még sok mást.
+date: 2026-02-15
+description: Fedezze fel a GroupDocs Viewer oktatóját a renderelés, gyorsítótárazás,
+  vízjelek és a dokumentumok 170+ formátumban történő megjelenítése terén .NET és
+  Java környezetben.
 is_root: true
 linktitle: GroupDocs Viewer Tutorials
-title: GroupDocs Viewer útmutató – Dokumentumok renderelése és megjelenítése
+title: GroupDocs Viewer oktatóanyag – Dokumentumok renderelése és megjelenítése
 type: docs
 url: /hu/
 weight: 11
 ---
 
-# GroupDocs.Viewer oktatóanyagok
+ preserve code blocks - there are none.
 
-Welcome to the GroupDocs.Viewer tutorials hub. In this **GroupDocs Viewer tutorial** you’ll find a comprehensive collection of guides that help you master our powerful document viewer APIs for .NET and Java. Whether you’re building a web app, a desktop solution, or a mobile experience, GroupDocs.Viewer enables you to seamlessly render and display a wide variety of document formats, including PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, images, and more.
+Make sure to keep all shortcodes unchanged.
+
+Let's construct final output.# GroupDocs Viewer oktató – Dokumentumok renderelése és megjelenítése
+
+Welcome to the **GroupDocs Viewer tutorial** hub. In this tutorial you’ll find a comprehensive collection of guides that help you master our powerful document viewer APIs for .NET and Java. Whether you’re building a web app, a desktop solution, or a mobile experience, GroupDocs Viewer enables you to seamlessly render and display a wide variety of document formats, including PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, images, and more.
 
 ## Gyors válaszok
-- **Mi a GroupDocs Viewer tutorial?** Lépésről‑lépésre útmutató a rendereléshez, konvertáláshoz és több mint 170 fájlformátum megjelenítéséhez a GroupDocs.Viewer .NET és Java verziójával.  
+- **Mi a GroupDocs Viewer tutorial?** Lépésről‑lépésre útmutató a .NET és Java számára elérhető GroupDocs Viewer használatával több mint 170 fájlformátum rendereléséhez, konvertálásához és megjelenítéséhez.  
 - **Mely platformok támogatottak?** .NET (Framework, Core, .NET 5/6) és Java (8+).  
 - **Renderelhetek PDF‑eket és képeket?** Igen – kimenetként HTML, JPEG, PNG és PDF állítható elő.  
-- **Elérhető a gyorsítótárazás?** Természetesen; dedikált oktatóanyagok foglalkoznak a gyorsítótárazással és az erőforrás-kezeléssel.  
-- **Szükségem van licencre?** Elérhető egy ingyenes próba; a termelésben való használathoz kereskedelmi licenc szükséges.
+- **Elérhető a gyorsítótárazás?** Természetesen; dedikált oktatók foglalkoznak a gyorsítótárazással és az erőforrás‑kezeléssel.  
+- **Szükségem van licencre?** Elérhető egy ingyenes próba; a termelési használathoz kereskedelmi licenc szükséges.
 
 ## Mi a GroupDocs Viewer tutorial?
-A GroupDocs Viewer tutorial egy gondosan összeállított példakészlet, amely bemutatja, hogyan töltsünk be, rendereljünk és testre szabjunk dokumentumnézést az alkalmazásokban. Mindent lefed a egyszerű betöltéstől a fejlett forgatókönyvekig, mint például a vízjelek, CAD elrendezés renderelése és a teljesítményoptimalizálás.
+A GroupDocs Viewer tutorial egy válogatott példakészlet, amely bemutatja, hogyan töltsük be, rendereljük és testre szabjuk a dokumentumnézetet alkalmazásainkban. Mindent lefed az egyszerű betöltéstől a fejlett forgatókönyvekig, mint például a vízjelzés, CAD elrendezés renderelése és a teljesítményoptimalizálás.
 
-## Miért használjuk a GroupDocs Viewer‑t?
+## Miért használja a GroupDocs Viewer‑t a dokumentumok rendereléséhez?
 - **Széles körű formátumtámogatás:** Több mint 170 fájltípus, beleértve a komplex CAD és irodai dokumentumokat.  
 - **Magas hűségű renderelés:** Pontos vizuális ábrázolás HTML‑ben, képekben vagy PDF‑ben.  
 - **Keresztplatformos rugalmasság:** Zökkenőmentesen működik .NET és Java környezetekben.  
-- **Bővíthető architektúra:** Testreszabhatja a renderelési folyamatokat, hozzáadhat vízjeleket vagy integrálhat gyorsítótárazást minimális erőfeszítéssel.  
+- **Bővíthető architektúra:** Testreszabhatja a renderelési folyamatokat, hozzáadhat vízjeleket, vagy minimális erőfeszítéssel integrálhat gyorsítótárazást.  
 
 {{% alert color="primary" %}}
-Erősítse .NET alkalmazásait magas hűségű dokumentumnézési képességekkel. GroupDocs.Viewer for .NET oktatóanyagaink mindent tartalmaznak, amit a hatékony dokumentumnéző integrálásához tudni kell. Tanulja meg, hogyan renderelhet több mint 170 dokumentumformátumot HTML‑be, JPEG‑be, PNG‑be és PDF‑be. Fedezze fel a fejlett témákat, mint a CAD rajzok specifikus elrendezéseinek renderelése, dokumentumcsatolmányok kezelése és a teljesítmény optimalizálása. Kezdje el építeni a robusztus és professzionális dokumentumnézési élményeket C#‑ben, ASP.NET‑ben és más .NET keretrendszerekben.
+Erősítse .NET alkalmazásait magas hűségű dokumentumnézet képességekkel. GroupDocs.Viewer for .NET oktatóanyagaink mindent tartalmaznak, amit a hatékony dokumentumnézegető integrálásához tudni kell. Tanulja meg, hogyan renderelhet több mint 170 dokumentumformátumot HTML‑re, JPEG‑re, PNG‑re és PDF‑re. Fedezze fel a fejlett témákat, például a CAD rajzok specifikus elrendezéseinek renderelését, a dokumentumcsatolmányok kezelését és a teljesítmény optimalizálását. Kezdje el építeni a robusztus és professzionális dokumentumnézet élményeket C#, ASP.NET és más .NET keretrendszerekben.
 {{% /alert %}}
+
+### Hogyan kezdjünk hozzá a GroupDocs Viewer használatához .NET‑ben
+Mielőtt belemerülne a részletes útmutatókba, győződjön meg róla, hogy rendelkezik a következő előfeltételekkel:
+
+- .NET 5/6 vagy .NET Framework 4.6+ telepítve  
+- Érvényes GroupDocs Viewer licenc (vagy ingyenes próba)  
+- NuGet csomag `GroupDocs.Viewer` hozzáadva a projekthez  
+
+Miután beállította a környezetet, felfedezheti az alábbi oktatóanyagokat, hogy konkrét kódpéldákat és bevált gyakorlatokat lásson.
 
 Ezek néhány hasznos .NET forrásra mutató hivatkozások:
 
-- [Loading Documents](./net/loading-documents/)
-- [Advanced Loading Options](./net/advanced-loading/)
-- [Advanced Usage (Caching)](./net/advanced-usage-caching/)
-- [Rendering Options](./net/rendering-options/)
-- [Rendering Archive Files](./net/rendering-archive-files/)
-- [Rendering CAD Drawings](./net/rendering-cad-drawings/)
-- [Getting Started](./net/getting-started/)
-- [Rendering Email Messages](./net/rendering-email-messages/)
-- [Image Rendering](./net/image-rendering/)
-- [Rendering Documents to PDF](./net/rendering-documents-pdf/)
-- [Rendering Documents to Images](./net/rendering-documents-images/)
-- [Rendering Documents to HTML](./net/rendering-documents-html/)
-- [Processing Document Attachments](./net/processing-document-attachments/)
-- [Rendering Text Files](./net/rendering-text-files/)
-- [Rendering Visio Documents](./net/rendering-visio-documents/)
-- [Rendering Web Documents](./net/rendering-web-documents/)
-- [Rendering Word Processing Documents](./net/rendering-word-processing-documents/)
-- [Spreadsheet Rendering Options](./net/spreadsheet-rendering-options/)
-- [PDF Rendering Options](./net/pdf-rendering-options/)
-- [Rendering Outlook Data Files (PST, OST)](./net/rendering-outlook-data-files/)
-- [Rendering Microsoft Project Documents](./net/rendering-ms-project-documents/)
-- [Document Loading](./net/document-loading/)
-- [Rendering Basics](./net/rendering-basics/)
-- [Advanced Rendering](./net/advanced-rendering/)
-- [Performance Optimization](./net/performance-optimization/)
-- [Security & Permissions](./net/security-permissions/)
-- [Watermarks & Annotations](./net/watermarks-annotations/)
-- [File Formats Support](./net/file-formats-support/)
-- [Cloud & Remote Document Rendering](./net/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./net/caching-resource-management/)
-- [Metadata & Properties](./net/metadata-properties/)
-- [Export & Conversion](./net/export-conversion/)
-- [Custom Rendering](./net/custom-rendering/)
+- [Dokumentumok betöltése](./net/loading-documents/)
+- [Speciális betöltési beállítások](./net/advanced-loading/)
+- [Speciális használat (Gyorsítótárazás)](./net/advanced-usage-caching/)
+- [Renderelési beállítások](./net/rendering-options/)
+- [Archívumfájlok renderelése](./net/rendering-archive-files/)
+- [CAD rajzok renderelése](./net/rendering-cad-drawings/)
+- [Első lépések](./net/getting-started/)
+- [E‑mail üzenetek renderelése](./net/rendering-email-messages/)
+- [Kép renderelés](./net/image-rendering/)
+- [Dokumentumok renderelése PDF‑be](./net/rendering-documents-pdf/)
+- [Dokumentumok renderelése képekbe](./net/rendering-documents-images/)
+- [Dokumentumok renderelése HTML‑be](./net/rendering-documents-html/)
+- [Dokumentumcsatolmányok feldolgozása](./net/processing-document-attachments/)
+- [Szövegfájlok renderelése](./net/rendering-text-files/)
+- [Visio dokumentumok renderelése](./net/rendering-visio-documents/)
+- [Webdokumentumok renderelése](./net/rendering-web-documents/)
+- [Szövegszerkesztő dokumentumok renderelése](./net/rendering-word-processing-documents/)
+- [Táblázat renderelési beállítások](./net/spreadsheet-rendering-options/)
+- [PDF renderelési beállítások](./net/pdf-rendering-options/)
+- [Outlook adatfájlok renderelése (PST, OST)](./net/rendering-outlook-data-files/)
+- [Microsoft Project dokumentumok renderelése](./net/rendering-ms-project-documents/)
+- [Dokumentum betöltése](./net/document-loading/)
+- [Renderelés alapjai](./net/rendering-basics/)
+- [Speciális renderelés](./net/advanced-rendering/)
+- [Teljesítményoptimalizálás](./net/performance-optimization/)
+- [Biztonság és jogosultságok](./net/security-permissions/)
+- [Vízjelek és megjegyzések](./net/watermarks-annotations/)
+- [Fájlformátum támogatás](./net/file-formats-support/)
+- [Felhő és távoli dokumentum renderelés](./net/cloud-remote-document-rendering/)
+- [Gyorsítótárazás és erőforrás‑kezelés](./net/caching-resource-management/)
+- [Metaadatok és tulajdonságok](./net/metadata-properties/)
+- [Exportálás és konvertálás](./net/export-conversion/)
+- [Egyedi renderelés](./net/custom-rendering/)
 
 {{% alert color="primary" %}}
-Integráljon egy sokoldalú és hatékony dokumentumnézőt Java alkalmazásaiba a GroupDocs.Viewer for Java segítségével. Oktatóanyagaink minden lépésen végigvezetik, a környezet beállításától a fejlett renderelési funkciók megvalósításáig. Tanulja meg, hogyan jeleníthet meg számos fájlformátumot, beleértve a komplex dokumentumokat, mint a többelrendezéses CAD fájlok és jelszóval védett archívumok. Kövesse példáinkat a dokumentumok HTML5‑re, képekre és PDF‑re történő rendereléséhez, így könnyedén biztosíthatja a keresztplatformos dokumentumnézést.
+Integráljon egy sokoldalú és hatékony dokumentumnézegetőt Java alkalmazásaiba a GroupDocs.Viewer for Java segítségével. Oktatóanyagaink minden lépésen végigvezetik, a környezet beállításától a fejlett renderelési funkciók megvalósításáig. Tanulja meg, hogyan jeleníthet meg számos fájlformátumot, beleértve a komplex, több elrendezésű CAD fájlokat és jelszóval védett archívumokat. Kövesse példáinkat, hogy dokumentumokat rendereljünk HTML5‑re, képekre és PDF‑re, ezzel könnyedén biztosítva a keresztplatformos dokumentumnézetet.
 {{% /alert %}}
+
+### Hogyan kezdjünk hozzá a GroupDocs Viewer használatához Java‑ban
+Java fejlesztők számára a követelmények hasonlóak:
+
+- JDK 8 vagy újabb telepítve  
+- Maven vagy Gradle build rendszer konfigurálva  
+- GroupDocs Viewer for Java függőség hozzáadva a projekthez  
+
+A beállítás után fedezze fel az alább található Java‑specifikus oktatóanyagokat.
 
 Ezek néhány hasznos Java forrásra mutató hivatkozások:
 
-- [Getting Started](./java/getting-started/)
-- [Document Loading](./java/document-loading/)
-- [Rendering Basics](./java/rendering-basics/)
-- [Advanced Rendering](./java/advanced-rendering/)
-- [Performance Optimization](./java/performance-optimization/)
-- [Security & Permissions](./java/security-permissions/)
-- [Watermarks & Annotations](./java/watermarks-annotations/)
-- [File Formats Support](./java/file-formats-support/)
-- [Cloud & Remote Document Rendering](./java/cloud-remote-document-rendering/)
-- [Caching & Resource Management](./java/caching-resource-management/)
-- [Metadata & Properties](./java/metadata-properties/)
-- [Export & Conversion](./java/export-conversion/)
-- [Custom Rendering](./java/custom-rendering/)
+- [Első lépések](./java/getting-started/)
+- [Dokumentum betöltése](./java/document-loading/)
+- [Renderelés alapjai](./java/rendering-basics/)
+- [Speciális renderelés](./java/advanced-rendering/)
+- [Teljesítményoptimalizálás](./java/performance-optimization/)
+- [Biztonság és jogosultságok](./java/security-permissions/)
+- [Vízjelek és megjegyzések](./java/watermarks-annotations/)
+- [Fájlformátum támogatás](./java/file-formats-support/)
+- [Felhő és távoli dokumentum renderelés](./java/cloud-remote-document-rendering/)
+- [Gyorsítótárazás és erőforrás‑kezelés](./java/caching-resource-management/)
+- [Metaadatok és tulajdonságok](./java/metadata-properties/)
+- [Exportálás és konvertálás](./java/export-conversion/)
+- [Egyedi renderelés](./java/custom-rendering/)
 
 ## Gyakran Ismételt Kérdések
 
-**Q: Szükséges-e további szoftvert telepíteni a GroupDocs Viewer használatához?**  
+**Q: Szükségem van további szoftver telepítésére a GroupDocs Viewer használatához?**  
 A: Nem szükséges külső szoftver; az API belsőleg kezeli a renderelést.
 
 **Q: Renderelhetek jelszóval védett dokumentumokat?**  
 A: Igen, a jelszót átadhatja a dokumentum betöltésekor az API-n keresztül.
 
 **Q: Hogyan javítja a gyorsítótárazás a teljesítményt?**  
-A: A gyorsítótárazás a renderelt oldalakat vagy képeket tárolja, ezáltal csökkentve a feldolgozási időt a későbbi kérések esetén.
+A: A gyorsítótárazás elmenti a renderelt oldalakat vagy képeket, csökkentve a feldolgozási időt a későbbi kérések esetén.
 
-**Q: Lehet-e vízjeleket hozzáadni a renderelt oldalakhoz?**  
-A: Természetesen—dedikált oktatóanyagok mutatják, hogyan helyezhet fel szöveges vagy képes vízjeleket a renderelés során.
+**Q: Lehet vízjeleket hozzáadni a renderelt oldalakhoz?**  
+A: Természetesen—dedikált oktatók bemutatják, hogyan helyezhet fel szöveges vagy képes vízjeleket a renderelés során.
 
 **Q: Mely fájlformátumok támogatottak alapból?**  
 A: Több mint 170 formátum, beleértve a PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG és számos képformátumot.
 
-**Utoljára frissítve:** 2025-12-15  
-**Tesztelve:** GroupDocs.Viewer 23.11 for .NET & Java  
+---
+
+**Utolsó frissítés:** 2026-02-15  
+**Tesztelt verzió:** GroupDocs.Viewer 23.11 for .NET & Java  
 **Szerző:** GroupDocs
