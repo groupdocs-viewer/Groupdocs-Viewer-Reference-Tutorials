@@ -1,48 +1,59 @@
 ---
-date: '2025-12-21'
-description: GroupDocs.Viewer を使用して pptx を Java で HTML に変換し、ノート付きプレゼンテーションをレンダリングし、GroupDocs
-  Viewer のライセンス管理を行う方法を学びます。このガイドでは、セットアップ、実装、パフォーマンスのヒントをカバーしています。
+date: '2026-02-21'
+description: GroupDocs Viewer for Java を使用して pptx を html に変換する方法を学び、PowerPoint の html
+  変換、GroupDocs Viewer のライセンス、Java によるプレゼンテーション変換の Web 統合について解説します。
 keywords:
 - render presentations with notes Java
 - GroupDocs.Viewer for Java setup
 - presentation rendering with notes
-title: pptx を html に変換する Java – ノート付きプレゼンテーションのレンダリング
+title: GroupDocs Viewer for Javaを使用してpptxをHTMLに変換
 type: docs
 url: /ja/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/
 weight: 1
 ---
 
-# pptx to html java – プレゼンテーションをノート付きでレンダリング
+Then:
 
-アプリケーションへの **pptx to html java** 変換の統合はこれまでになく簡単です。このガイドでは、**GroupDocs.Viewer for Java** を使用して PowerPoint プレゼンテーションとスピーカーノートを同時にレンダリングする方法と、重要なライセンスに関する考慮事項について学びます。
+**Last Updated:** 2026-02-21  
+**Tested With:** GroupDocs.Viewer 25.2  
+**Author:** GroupDocs  
 
-![GroupDocs.Viewer for Java を使用したノート付きプレゼンテーションのレンダリング](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
+Translate labels.
 
-## クイックアンサー
-- **GroupDocs.Viewer は PPTX を HTML に変換できますか？** はい、直接 PPTX から HTML への変換とオプションでノートのレンダリングをサポートしています。  
-- **本番環境でライセンスが必要ですか？** 商用デプロイには有効な GroupDocs Viewer ライセンスキーが必要です。  
-- **必要な Java バージョンは？** JDK 8 以上が推奨されます。  
-- **利用可能な出力フォーマットは？** HTML、PDF、画像フォーマットがサポートされています。  
-- **ライブラリの追加は Maven のみですか？** Maven が最も一般的ですが、Gradle や手動で JAR を追加することも可能です。
+Now produce final markdown.
 
-## pptx to html java とは？
+Be careful to keep code block placeholders unchanged.
 
-Java で PowerPoint **pptx** ファイルを **HTML** に変換すると、Microsoft Office が不要でウェブブラウザ内にスライドを表示できます。GroupDocs.Viewer がレイアウト、画像、スピーカーノートを保持しながら、重い処理を担当します。
+Let's craft final output.# GroupDocs Viewer for Java を使用した pptx の html 変換
 
-## なぜノート付きでプレゼンテーションをレンダリングするのか？
+このチュートリアルでは、GroupDocs Viewer for Java を使用して **pptx を html に変換** する方法を学びます。PowerPoint プレゼンテーションとスピーカーノートを同時にレンダリングできます。このアプローチにより、スライドをブラウザで直接表示できるため、e‑ラーニングプラットフォーム、企業向けトレーニングポータル、またはあらゆる Web ベースのドキュメント管理システムに最適です。
 
-スライドにスピーカーノートを埋め込むことでエンドユーザーに完全なコンテキストを提供でき、e‑ラーニングプラットフォーム、企業研修ポータル、またはプレゼンターの解説が重要なドキュメント管理システムに最適です。
+![Render Presentations with Notes with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
-## 前提条件
+## クイック回答
+- **GroupDocs.Viewer は PPTX を HTML に変換できますか？** はい、直接 PPTX から HTML への変換と、オプションでノートのレンダリングをサポートしています。  
+- **本番環境で使用するにはライセンスが必要ですか？** 商用デプロイには有効な GroupDocs Viewer ライセンスキーが必要です。  
+- **必要な Java バージョンはどれですか？** JDK 8 以上が推奨されます。  
+- **利用可能な出力形式は何ですか？** HTML、PDF、画像形式がサポートされています。  
+- **ライブラリの追加は Maven だけですか？** Maven が最も一般的ですが、Gradle や手動で JAR を追加することも可能です。  
+- **生成された HTML を Web ページに埋め込むには？** `HtmlViewOptions.forEmbeddedResources` が生成する自己完結型 HTML ファイルを使用し、Web アプリケーションで直接参照してください。  
+
+## pptx を html に変換するとは？
+Java で PowerPoint **pptx** ファイルを **HTML** に変換すると、Microsoft Office が不要な状態で Web ブラウザ内にスライドを表示できます。GroupDocs.Viewer がレイアウト、画像、スピーカーノートを保持しながら変換処理を行います。
+
+## GroupDocs Viewer を使用して PowerPoint を HTML に変換する方法
+以下は、ライブラリのセットアップ、オプションの構成、ノート付きプレゼンテーションのレンダリング手順をステップバイステップで示したものです。
+
+### 前提条件
 1. **Java Development Kit (JDK)** – バージョン 8 以上。  
 2. **IDE** – IntelliJ IDEA、Eclipse、または任意の Java 対応エディタ。  
 3. **Maven** – 依存関係管理用。  
-4. Java と Maven プロジェクト構造の基本的な知識。
+4. Java と Maven プロジェクト構造に関する基本的な知識。  
 
-## GroupDocs.Viewer for Java のセットアップ
+### GroupDocs.Viewer for Java の設定
 
-### Maven の設定
-リポジトリと依存関係を `pom.xml` に追加します：
+#### Maven 設定
+`pom.xml` にリポジトリと依存関係を追加します:
 
 ```xml
 <repositories>
@@ -62,8 +73,8 @@ Java で PowerPoint **pptx** ファイルを **HTML** に変換すると、Micro
 </dependencies>
 ```
 
-### ライセンスの取得
-フル機能を試すには、無料トライアルに申し込むか一時ライセンスをリクエストしてください。永続的なライセンスオプションについては [GroupDocs Purchase](https://purchase.groupdocs.com/buy) をご覧ください。
+#### ライセンス取得
+フル機能を試すには、無料トライアルを申し込むか、一時ライセンスをリクエストしてください。永続的なライセンスオプションは [GroupDocs Purchase](https://purchase.groupdocs.com/buy) をご覧ください。
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -74,13 +85,16 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 }
 ```
 
+## GroupDocs Viewer の Java 用ライセンスについての理解
+GroupDocs Viewer のライセンスは、利用できる機能を決定します。有効なライセンスがない場合、出力に透かしが入ったり、ページ数が制限されたりします。大規模または商用ドキュメントをレンダリングする前に、必ずライセンスファイルをロードしてください。
+
 ## 実装ガイド
 
 ### 機能: ノート付きプレゼンテーションのレンダリング
 このセクションでは、スピーカーノートを含めて PPTX ファイルを HTML にレンダリングする手順を説明します。
 
-#### ステップ1: 出力ディレクトリとファイル形式を定義する
-HTML ページを保存するフォルダーを設定します：
+#### 手順 1: 出力ディレクトリとファイル形式の定義
+HTML ページを保存するフォルダーを設定します:
 
 ```java
 import java.nio.file.Path;
@@ -90,8 +104,8 @@ Path YOUR_DOCUMENT_DIRECTORY = Paths.get("YOUR_DOCUMENT_DIRECTORY");
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
-#### ステップ2: 表示オプションを構成する
-リソースを埋め込み、ノートレンダリングを有効にするビューオプションを作成します：
+#### 手順 2: ビューオプションの構成
+リソースを埋め込み、ノートレンダリングを有効にするビューオプションを作成します:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -100,10 +114,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setRenderNotes(true); // Enable note rendering
 ```
 
-> **プロのコツ:** `forEmbeddedResources` は自己完結型 HTML を生成し、Web サーバーへのデプロイが簡素化されます。
+> **Pro tip:** `forEmbeddedResources` は自己完結型 HTML を生成し、Web サーバーへのデプロイが簡素化されます。
 
-#### ステップ3: ドキュメントの読み込みとレンダリング
-最後に、上記で定義したオプションを使用して PPTX ファイルをレンダリングします：
+#### 手順 3: ドキュメントのロードとレンダリング
+上記で定義したオプションを使用して PPTX ファイルをレンダリングします:
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_WITH_NOTES"))) {
@@ -114,52 +128,52 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 
 **トラブルシューティングのヒント:** ファイルパスが存在し、読み取り可能であることを確認してください。ファイルが見つからない場合は `FileNotFoundException` がスローされます。
 
-## 実用的なアプリケーション
-- **オンライン学習プラットフォーム** – 講義スライドとインストラクターノートを同時に表示。  
-- **企業研修モジュール** – 受講者が自分のペースで学べるようにトレーナーの解説を埋め込む。  
-- **ドキュメント管理システム** – すべての注釈を保持したプレゼンテーションのウェブプレビューを提供。
+## Java でプレゼンテーションを Web に埋め込む方法
+上記コードで生成された HTML ファイルは、Web アプリケーションから直接配信できます。リソースが埋め込まれているため、出力フォルダーを静的コンテンツディレクトリにコピーし、最初の `page_0.html` を `<iframe>` または通常の `<div>` で参照するだけで完了です。
 
-## パフォーマンスに関する考慮事項
-- **try‑with‑resources** を使用して `Viewer` を自動的に閉じ、メモリを解放します。  
-- 頻繁にアクセスされるプレゼンテーションのレンダリング済み HTML をキャッシュし、CPU 負荷を軽減します。  
-- 大きな PPTX ファイルを処理する際は JVM ヒープ使用量を監視し、`OutOfMemoryError` が発生した場合はヒープサイズの増加を検討してください。
+## 実用例
+- **オンライン学習プラットフォーム** – 講師ノートとともに講義スライドを表示。  
+- **企業向けトレーニングモジュール** – 自己学習コース向けにトレーナーの解説を埋め込み。  
+- **ドキュメント管理システム** – すべての注釈を保持したプレゼンテーションの Web プレビューを提供。  
+
+## パフォーマンス上の考慮点
+- **try‑with‑resources** を使用して `Viewer` を自動的にクローズし、メモリを解放します。  
+- 頻繁にアクセスされるプレゼンテーションは HTML をキャッシュし、CPU 負荷を削減します。  
+- 大きな PPTX ファイルを処理する際は JVM ヒープ使用量を監視し、`OutOfMemoryError` が発生した場合はヒープサイズの増加を検討してください。  
 
 ## よくある問題と解決策
-
 | 問題 | 解決策 |
 |------|--------|
-| **ノートが表示されない** | レンダリング前に `viewOptions.setRenderNotes(true)` が呼び出されていることを確認してください。 |
-| **大きなファイルでレンダリングが遅い** | キャッシュを有効にし、すべてのページを一度にレンダリングするのではなく、オンデマンドでページをレンダリングすることを検討してください。 |
+| **ノートが表示されない** | `viewOptions.setRenderNotes(true)` がレンダリング前に呼び出されていることを確認してください。 |
+| **大きなファイルでのレンダリングが遅い** | キャッシュを有効にし、すべてを一度にレンダリングするのではなく、オンデマンドでページをレンダリングすることを検討してください。 |
 | **ファイルパスエラー** | `Paths.get(...)` を使用し、相対パスと絶対パスを再確認してください。 |
 
-## よくある質問
+## FAQ
 
-**Q: GroupDocs.Viewer Java を使用してノート付きの PDF ドキュメントをレンダリングできますか？**  
-A: はい、PPTX のノートと同様の方法で、埋め込み注釈付きの PDF をレンダリングできます。
+**Q: GroupDocs.Viewer Java でノート付きの PDF ドキュメントをレンダリングできますか？**  
+A: はい、PPTX のノートと同様に、埋め込みアノテーション付きの PDF をレンダリングできます。
 
 **Q: GroupDocs.Viewer は古い Java バージョンと互換性がありますか？**  
-A: ライブラリは公式に JDK 8 以降をサポートしており、古いバージョンでは一部機能が欠けている可能性があります。
+A: ライブラリは公式に JDK 8 以上をサポートしています。古いバージョンでは一部機能が利用できない可能性があります。
 
-**Q: 非常に大きなプレゼンテーションファイルはどのように扱うべきですか？**  
-A: ページを個別にレンダリングし、`HtmlViewOptions` を再利用し、キャッシュを活用してメモリ使用量を抑えます。
+**Q: 非常に大きなプレゼンテーションファイルはどう扱うべきですか？**  
+A: ページを個別にレンダリングし、`HtmlViewOptions` を再利用し、キャッシュを活用してメモリ使用量を抑えてください。
 
 **Q: GroupDocs Viewer のライセンスオプションは何がありますか？**  
 A: 無料トライアル、一時評価ライセンス、そして本番環境向けのフル購入ライセンスがあります。詳細はライセンスページをご覧ください。
 
-**Q: より高度な使用例はどこで見つけられますか？**  
-A: 詳細なドキュメントとコードサンプルについては [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) をご覧ください。
+**Q: もっと高度な使用例はどこで見つけられますか？**  
+A: 詳細なドキュメントとコードサンプルは [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) をご参照ください。
 
 ## リソース
-- **ドキュメント**: 包括的なガイドは [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) でご覧ください。  
-- **API リファレンス**: 詳細な API 情報は [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) で取得できます。  
+- **ドキュメント**: 詳細ガイドは [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) で確認できます。  
+- **API リファレンス**: 詳細な API 情報は [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) にあります。  
 - **ダウンロード**: 最新リリースは [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) から取得できます。  
-- **購入とトライアル**: ライセンスオプションの詳細は [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) を、無料トライアルは [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) でご確認ください。  
-- **サポート**: ご質問は [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) へ。
+- **購入とトライアル**: ライセンスオプションの詳細は [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) を、無料トライアルは [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) でご利用ください。  
+- **サポート**: 問い合わせは [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) へ。
 
 ---
 
-**最終更新日:** 2025-12-21  
+**最終更新日:** 2026-02-21  
 **テスト環境:** GroupDocs.Viewer 25.2  
-**作者:** GroupDocs  
-
----
+**作者:** GroupDocs
