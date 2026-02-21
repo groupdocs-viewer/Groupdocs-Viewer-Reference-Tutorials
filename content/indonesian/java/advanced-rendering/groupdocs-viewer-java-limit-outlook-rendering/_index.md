@@ -1,69 +1,84 @@
 ---
-date: '2025-12-20'
-description: Pelajari cara membatasi item folder Outlook dengan mengonfigurasi maksimal
-  item per folder di GroupDocs.Viewer untuk Java, meningkatkan kinerja saat merender
-  file PST/OST besar.
+date: '2026-02-21'
+description: Pelajari cara mengatur jumlah maksimum item per folder saat merender
+  file Outlook dengan GroupDocs.Viewer untuk Java, meningkatkan kinerja untuk file
+  PST/OST besar.
 keywords:
 - GroupDocs.Viewer Java
 - Outlook item rendering
 - PST file rendering
-title: Cara Mengatur Jumlah Item Maksimum per Folder dalam Rendering Outlook dengan
-  GroupDocs.Viewer untuk Java
+title: Cara Mengatur Item Maksimum per Folder dalam Rendering Outlook dengan GroupDocs.Viewer
+  untuk Java
 type: docs
 url: /id/java/advanced-rendering/groupdocs-viewer-java-limit-outlook-rendering/
 weight: 1
 ---
 
-# Membatasi Rendering Item Outlook di Java menggunakan GroupDocs.Viewer
+2 for Java  
+**Author:** GroupDocs
 
-Mengelola file data Outlook yang sangat besar (PST atau OST) dapat dengan cepat menjadi bottleneck kinerja. Dalam panduan ini Anda akan menemukan cara **max items per folder** saat merender dengan GroupDocs.Viewer untuk Java, sehingga Anda hanya memproses data yang benar‑benar Anda butuhkan. Dengan menerapkan teknik **limit items outlook folder**, aplikasi Anda tetap responsif bahkan dengan gigabyte data email.
+Translate labels:
 
-![Membatasi Rendering Item Outlook dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/limit-outlook-item-rendering-java.png)
+"**Last Updated:** 2026-02-21" -> "**Terakhir Diperbarui:** 2026-02-21"
+
+"**Tested With:** GroupDocs.Viewer 25.2 for Java" -> "**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java"
+
+"**Author:** GroupDocs" -> "**Penulis:** GroupDocs"
+
+Now produce final markdown with all translations.
+
+Check for any remaining shortcodes: none.
+
+Make sure code block placeholders remain unchanged.
+
+Now craft final answer.# Membatasi Rendering Item Outlook di Java menggunakan GroupDocs.Viewer
+
+Mengelola file data Outlook yang sangat besar (PST atau OST) dapat dengan cepat menjadi hambatan kinerja. Dalam panduan ini Anda akan menemukan cara **set max items** per folder saat merender dengan GroupDocs.Viewer untuk Java, sehingga Anda hanya memproses data yang memang Anda perlukan. Dengan menerapkan teknik **limit items per folder**, aplikasi Anda tetap responsif bahkan dengan gigabyte data email.
+
+![Limit Outlook Item Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/limit-outlook-item-rendering-java.png)
 
 ### Apa yang Akan Anda Pelajari
-- Menyiapkan GroupDocs.Viewer untuk Java
-- Mengonfigurasi pustaka untuk **max items per folder** dalam file Outlook
-- Skenario dunia nyata di mana membatasi item per folder meningkatkan kecepatan dan mengurangi penggunaan memori
-
-Mari kita jalani penyiapan dan implementasi langkah demi langkah.
+- Menyiapkan GroupDocs.Viewer untuk Java  
+- Mengonfigurasi pustaka untuk **set max items** per folder dalam file Outlook  
+- Skenario dunia nyata di mana membatasi item per folder meningkatkan kecepatan dan mengurangi penggunaan memori  
 
 ## Jawaban Cepat
-- **Apa yang dilakukan “max items per folder”?** Ini membatasi rendering ke jumlah item email tertentu di dalam setiap folder Outlook.  
-- **Mengapa membatasi items outlook folder?** Untuk mengurangi waktu pemrosesan dan konsumsi memori untuk mailbox yang besar.  
+- **Apa yang dilakukan “set max items per folder”?** Itu membatasi rendering ke sejumlah item email yang ditentukan di setiap folder Outlook.  
+- **Mengapa membatasi item Outlook?** Untuk mengurangi waktu pemrosesan dan konsumsi memori pada kotak surat yang besar.  
 - **Versi mana yang mendukung fitur ini?** GroupDocs.Viewer 25.2 dan yang lebih baru.  
-- **Apakah saya memerlukan lisensi?** Ya, lisensi percobaan atau yang dibeli diperlukan untuk penggunaan produksi.  
-- **Bisakah saya mengubah batas saat runtime?** Tentu – cukup ubah nilai `setMaxItemsInFolder` sebelum merender.
+- **Apakah saya memerlukan lisensi?** Ya, lisensi percobaan atau lisensi yang dibeli diperlukan untuk penggunaan produksi.  
+- **Bisakah saya mengubah batas saat runtime?** Tentu – cukup ubah nilai `setMaxItemsInFolder` sebelum merender.  
 
-## Gambaran Umum
-Kesulitan mengelola file data Outlook yang besar seperti PST atau OST? Panduan ini menunjukkan cara membatasi jumlah item yang diproses saat merender file tersebut menggunakan GroupDocs.Viewer untuk Java, meningkatkan efisiensi dan responsivitas aplikasi Anda.
+## Cara mengatur max items per folder dalam rendering Outlook
+Di bawah ini Anda akan menemukan panduan langkah demi langkah yang menjelaskan **mengapa** Anda mungkin ingin membatasi item Outlook, **apa** yang dilakukan pengaturan tersebut, dan **bagaimana** cara mengkonfigurasinya dalam proyek Java Anda.
 
-### Apa itu “max items per folder”?
-Pengaturan **max items per folder** memberi tahu viewer untuk berhenti setelah merender jumlah item tertentu di setiap folder. Ini sangat berguna ketika Anda hanya membutuhkan pratinjau email terbaru atau saat menghasilkan laporan yang tidak memerlukan seluruh mailbox.
+### Apa itu “set max items per folder”?
+Opsi **set max items** memberi tahu viewer untuk berhenti setelah merender sejumlah item tertentu di setiap folder. Ini sangat berguna ketika Anda hanya membutuhkan pratinjau email terbaru atau ketika Anda membuat laporan yang tidak memerlukan seluruh kotak surat.
 
-### Mengapa menggunakan pendekatan limit items outlook folder?
-- **Performance:** Waktu rendering lebih cepat dan penggunaan CPU lebih rendah.  
-- **Scalability:** Menangani mailbox yang lebih besar tanpa menghabiskan memori JVM.  
-- **Flexibility:** Menyesuaikan batas berdasarkan preferensi pengguna atau kemampuan perangkat.
+### Mengapa menggunakan pendekatan limit items per folder?
+- **Kinerja:** Waktu rendering lebih cepat dan penggunaan CPU lebih rendah.  
+- **Skalabilitas:** Menangani kotak surat yang lebih besar tanpa menghabiskan memori JVM.  
+- **Fleksibilitas:** Menyesuaikan batas berdasarkan preferensi pengguna atau kemampuan perangkat.  
 
 ## Prasyarat
 Pastikan Anda memiliki hal berikut sebelum memulai:
 
-### Perpustakaan dan Dependensi yang Diperlukan:
-1. **Java Development Kit (JDK)**: Instal JDK 8 atau yang lebih baru.  
-2. **GroupDocs.Viewer for Java**: Tambahkan sebagai dependensi dalam proyek Anda.
+### Perpustakaan dan Dependensi yang Diperlukan
+1. **Java Development Kit (JDK)** – Instal JDK 8 atau yang lebih baru.  
+2. **GroupDocs.Viewer for Java** – Tambahkan sebagai dependensi dalam proyek Anda.
 
-### Persyaratan Penyiapan Lingkungan:
+### Persyaratan Penyiapan Lingkungan
 - IDE yang cocok seperti IntelliJ IDEA, Eclipse, atau NetBeans.  
 - Maven terinstal jika Anda mengelola dependensi melalui Maven.
 
-### Prasyarat Pengetahuan:
+### Prasyarat Pengetahuan
 - Pemahaman dasar tentang pemrograman Java dan penanganan file.  
-- Familiaritas dengan proyek Maven bermanfaat tetapi tidak wajib.
+- Familiaritas dengan proyek Maven berguna tetapi tidak wajib.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
 Siapkan GroupDocs.Viewer dalam proyek Anda menggunakan Maven:
 
-**Konfigurasi Maven:**  
+**Maven Configuration:**
 ```xml
 <repositories>
    <repository>
@@ -81,10 +96,10 @@ Siapkan GroupDocs.Viewer dalam proyek Anda menggunakan Maven:
 </dependencies>
 ```
 
-### Langkah Akuisisi Lisensi
+### Langkah-langkah Akuisisi Lisensi
 - **Free Trial**: Unduh percobaan gratis dari [GroupDocs](https://releases.groupdocs.com/viewer/java/) untuk menjelajahi fitur pustaka.  
 - **Temporary License**: Dapatkan lisensi sementara untuk akses penuh tanpa batasan evaluasi di [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
-- **Purchase**: Untuk penggunaan jangka panjang, pertimbangkan membeli lisensi dari [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
+- **Purchase**: Untuk penggunaan jangka panjang, pertimbangkan membeli lisensi dari [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).  
 
 ### Inisialisasi dan Penyiapan Dasar
 Setelah Maven dikonfigurasi, inisialisasi GroupDocs.Viewer dalam aplikasi Java Anda dengan menyiapkan objek viewer. Ini memungkinkan Anda memuat dan merender dokumen.
@@ -94,71 +109,78 @@ Setelah Maven dikonfigurasi, inisialisasi GroupDocs.Viewer dalam aplikasi Java A
 ### Membatasi Item yang Dirender dari File Outlook
 Bagian ini menjelaskan cara membatasi item yang dirender dari file data Outlook menggunakan GroupDocs.Viewer untuk Java.
 
-#### Gambaran Umum
-Dengan mengonfigurasi opsi tertentu, Anda dapat membatasi rendering ke sejumlah item per folder. Fitur ini meningkatkan kinerja dan efisiensi saat menangani dataset email yang besar.
+#### Ikhtisar
+Dengan mengonfigurasi opsi tertentu, Anda dapat membatasi rendering ke sejumlah item per folder. Fitur ini meningkatkan kinerja dan efisiensi saat menangani kumpulan data email yang besar.
 
-**Langkah 1: Menyiapkan Jalur Direktori Output**  
+**Langkah 1: Menyiapkan Jalur Direktori Output**
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("LimitCountOfItemsToRender");
 ```
 Kode ini menyiapkan direktori tempat file HTML yang dirender akan disimpan. Ganti `"LimitCountOfItemsToRender"` dengan nama jalur yang Anda inginkan.
 
-**Langkah 2: Menentukan Format Jalur File untuk Halaman HTML**  
+**Langkah 2: Menentukan Format Jalur File untuk Halaman HTML**
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-Buat format penamaan yang konsisten untuk halaman HTML yang dihasilkan selama rendering, memastikan akses dan manajemen yang mudah.
+Buat format penamaan yang konsisten untuk halaman HTML yang dihasilkan selama rendering, memastikan akses dan pengelolaan yang mudah.
 
-**Langkah 3: Mengonfigurasi HtmlViewOptions dengan Sumber Daya Tersemat**  
+**Langkah 3: Mengonfigurasi HtmlViewOptions dengan Embedded Resources**
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 Opsi ini menentukan bagaimana dokumen dirender dengan sumber daya tersemat, memungkinkan integrasi gambar dan gaya yang lebih baik.
 
-**Langkah 4: Mengatur Opsi Outlook untuk Membatasi Item per Folder**  
+**Langkah 4: Mengatur Outlook Options untuk Membatasi Item per Folder**
 ```java
 viewOptions.getOutlookOptions().setMaxItemsInFolder(3); // Render only the first 3 items in each folder
 ```
-Di sini, kami **max items per folder** menjadi tiga. Sesuaikan angka tersebut berdasarkan kebutuhan Anda untuk skenario **limit items outlook folder**.
+Di sini, kami **set max items** menjadi tiga. Sesuaikan angka tersebut berdasarkan kebutuhan Anda untuk skenario **limit items per folder**.
 
-**Langkah 5: Memuat dan Merender Dokumen**  
+**Langkah 5: Memuat dan Merender Dokumen**
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_OST)) {
     viewer.view(viewOptions); // Execute rendering with specified options
 }
 ```
-Gunakan kelas `Viewer` untuk memuat file OST dan merendernya sesuai opsi tampilan yang ditentukan. Pernyataan try‑with‑resources memastikan sumber daya ditutup dengan benar setelah penggunaan.
+Gunakan kelas `Viewer` untuk memuat file OST dan merendernya sesuai opsi tampilan yang ditentukan. Pernyataan try‑with‑resources memastikan sumber daya ditutup dengan benar setelah digunakan.
 
 ### Tips Pemecahan Masalah
 - Pastikan semua jalur dan direktori ada sebelum menjalankan kode Anda.  
-- Validasi bahwa dependensi GroupDocs.Viewer terselesaikan dengan benar oleh Maven.  
-- Periksa adanya pengecualian selama rendering, yang mungkin menunjukkan masalah dengan format file atau izin.
+- Validasi bahwa dependensi GroupDocs.Viewer berhasil diselesaikan oleh Maven.  
+- Periksa adanya pengecualian selama rendering, yang mungkin menunjukkan masalah dengan format file atau izin.  
 
 ## Aplikasi Praktis
-1. **Email Archiving** – Membatasi rendering item ideal untuk aplikasi yang fokus pada pengarsipan email tertentu daripada seluruh dataset.  
+1. **Email Archiving** – Membatasi rendering item ideal untuk aplikasi yang fokus pada pengarsipan email tertentu daripada seluruh kumpulan data.  
 2. **Data Migration** – Saat memigrasi data antar sistem, render hanya item yang diperlukan untuk mengoptimalkan kinerja dan mengurangi waktu pemrosesan.  
-3. **Custom Reporting** – Hasilkan laporan dengan secara selektif merender konten email yang diperlukan tanpa memuat seluruh folder.
+3. **Custom Reporting** – Buat laporan dengan merender secara selektif konten email yang diperlukan tanpa memuat seluruh folder.  
 
 ## Pertimbangan Kinerja
 ### Tips untuk Mengoptimalkan Kinerja
 - Batasi jumlah item per folder untuk mengurangi penggunaan memori.  
-- Gunakan sumber daya tersemat secara efisien untuk menghindari panggilan jaringan tambahan selama rendering.
+- Gunakan embedded resources secara efisien untuk menghindari panggilan jaringan tambahan selama rendering.  
 
 ### Pedoman Penggunaan Sumber Daya
-- Pantau memori JVM dan sesuaikan pengaturan berdasarkan ukuran file Outlook yang diproses.
+- Pantau memori JVM dan sesuaikan pengaturan berdasarkan ukuran file Outlook yang diproses.  
 
 ### Praktik Terbaik untuk Manajemen Memori Java
 - Manfaatkan try‑with‑resources untuk manajemen sumber daya otomatis.  
-- Profil aplikasi Anda untuk mengidentifikasi bottleneck terkait penanganan file besar.
+- Profil aplikasi Anda untuk mengidentifikasi bottleneck yang terkait dengan penanganan file besar.  
+
+## Kesalahan Umum & Cara Menghindarinya
+| Gejala | Penyebab Kemungkinan | Perbaikan |
+|--------|----------------------|-----------|
+| Tidak ada file output yang dihasilkan | Jalur direktori output tidak benar atau tidak memiliki izin | Verifikasi `outputDirectory` ada dan dapat ditulisi |
+| Rendering berhenti setelah beberapa item | `setMaxItemsInFolder` diatur terlalu rendah | Tingkatkan batas atau buat dapat dikonfigurasi |
+| OutOfMemoryError pada PST besar | Pengaturan memori default tidak cukup | Tingkatkan heap JVM (`-Xmx`) dan pertahankan batas rendah |
 
 ## Kesimpulan
-Dalam tutorial ini, Anda telah mempelajari cara secara efektif **max items per folder** dalam file data Outlook menggunakan GroupDocs.Viewer untuk Java. Dengan mengikuti langkah‑langkah ini dan mempertimbangkan tips kinerja, Anda dapat membuat aplikasi yang efisien sesuai kebutuhan spesifik.
+Dalam tutorial ini, Anda telah mempelajari cara **set max items per folder** dalam file data Outlook menggunakan GroupDocs.Viewer untuk Java. Dengan mengikuti langkah-langkah dan menerapkan tips kinerja, Anda dapat membuat aplikasi yang efisien sesuai dengan kebutuhan spesifik Anda.
 
 ### Langkah Selanjutnya
 - Jelajahi fitur tambahan GroupDocs.Viewer dengan merujuk ke [official documentation](https://docs.groupdocs.com/viewer/java/).  
 - Bereksperimen dengan opsi rendering yang berbeda untuk menemukan pengaturan terbaik bagi kebutuhan aplikasi Anda.
 
-Siap mencobanya? Mulailah mengimplementasikan solusi ini dalam proyek Anda hari ini dan saksikan peningkatan efisiensi secara langsung.
+Siap mencobanya? Mulailah menerapkan solusi ini dalam proyek Anda hari ini dan saksikan peningkatan efisiensi secara langsung.
 
 ## Pertanyaan yang Sering Diajukan
 
@@ -188,6 +210,6 @@ A: Untuk bantuan, periksa [GroupDocs Support Forum](https://forum.groupdocs.com/
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-20  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
+**Terakhir Diperbarui:** 2026-02-21  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
 **Penulis:** GroupDocs
