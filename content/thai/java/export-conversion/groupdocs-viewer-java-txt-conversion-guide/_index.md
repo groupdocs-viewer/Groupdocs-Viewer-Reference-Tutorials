@@ -1,43 +1,49 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการแปลงไฟล์ TXT เป็นรูปแบบต่างๆ เช่น HTML, JPG, PNG และ PDF อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ Java ปฏิบัติตามคำแนะนำทีละขั้นตอนนี้"
-"title": "แปลงไฟล์ TXT เป็น HTML, JPG, PNG และ PDF โดยใช้ GroupDocs.Viewer สำหรับ Java"
-"url": "/th/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/"
-"weight": 1
+date: '2026-02-21'
+description: เรียนรู้วิธีใช้ GroupDocs Viewer Maven เพื่อแปลงไฟล์ txt เป็น html, jpg,
+  png และ pdf ใน Java รวมขั้นตอนการแปลง txt เป็น pdf ด้วย Java และการสร้าง html หลายหน้าใน
+  Java
+keywords:
+- GroupDocs.Viewer for Java
+- convert TXT to HTML
+- render TXT as JPG/PNG
+title: 'groupdocs viewer maven: แปลง TXT เป็น HTML, JPG, PNG, PDF'
 type: docs
+url: /th/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/
+weight: 1
 ---
-# แปลงไฟล์ TXT ด้วย GroupDocs.Viewer สำหรับ Java: คู่มือฉบับสมบูรณ์
 
-## การแนะนำ
+# groupdocs viewer maven: แปลงไฟล์ TXT เป็น HTML, JPG, PNG, และ PDF ด้วย GroupDocs.Viewer สำหรับ Java
 
-ในโลกดิจิทัลทุกวันนี้ การจัดการเอกสารอย่างมีประสิทธิภาพถือเป็นปัจจัยสำคัญสำหรับทั้งธุรกิจและบุคคล ไม่ว่าคุณจะต้องแสดงเอกสารข้อความบนเว็บหรือเก็บไฟล์ในรูปแบบต่างๆ การแปลงไฟล์ข้อความ (TXT) ถือเป็นข้อกำหนดที่พบบ่อย **GroupDocs.Viewer สำหรับ Java** มอบโซลูชันที่มีประสิทธิภาพสำหรับการเรนเดอร์ไฟล์ TXT เป็นรูปแบบต่างๆ เช่น HTML, JPG, PNG และ PDF ได้อย่างง่ายดาย คู่มือนี้จะแนะนำคุณเกี่ยวกับการใช้ไลบรารีอเนกประสงค์นี้เพื่อให้การแปลงไฟล์เป็นไปอย่างราบรื่น
+ในแอปพลิเคชัน Java สมัยใหม่, **groupdocs viewer maven** ทำให้การแปลงเอกสาร plain‑text (TXT) เป็น HTML ที่พร้อมใช้งานบนเว็บ, ภาพความละเอียดสูง, หรือไฟล์ PDF แบบพกพาเป็นเรื่องง่าย ไม่ว่าคุณจะสร้างพอร์ทัลเอกสาร, บริการจัดเก็บ, หรือฟีเจอร์พรีวิว, การแปลงไฟล์ TXT ด้วย GroupDocs.Viewer จะช่วยประหยัดเวลาและขจัดความจำเป็นในการเขียน parser เอง ในคู่มือนี้เราจะอธิบายการตั้งค่าอย่างครบถ้วนและแสดงวิธี **convert txt files java** เป็น HTML (หน้าเดียวและหลายหน้า), JPG, PNG, และ PDF.
 
-### สิ่งที่คุณจะได้เรียนรู้:
-- การตั้งค่า GroupDocs.Viewer ในสภาพแวดล้อม Java ของคุณ
-- การแปลงไฟล์ TXT เป็น HTML หลายหน้าและหน้าเดียว
-- การเรนเดอร์เอกสาร TXT เป็นรูปแบบภาพ (JPG, PNG)
-- การแปลงเนื้อหา TXT เป็นรูปแบบ PDF
+![Convert TXT Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-txt-files-to-html-jpg-png-and-pdf-java.png)
 
-มาสำรวจข้อกำหนดเบื้องต้นที่จำเป็นก่อนจะเริ่มใช้งานกัน
+## Quick Answers
+- **Maven artifact ที่ต้องการคืออะไร?** `com.groupdocs:groupdocs-viewer` (see Maven snippet below).  
+- **ฉันสามารถเรนเดอร์ HTML หลายหน้าได้หรือไม่?** Yes – use `HtmlViewOptions.forEmbeddedResources` without the single‑page flag.  
+- **ต้องใช้ลิขสิทธิ์สำหรับการใช้งานจริงหรือไม่?** A trial works for evaluation; a permanent license is needed for commercial use.  
+- **เวอร์ชัน Java ที่รองรับคืออะไร?** Java 8 or newer (Java 11+ recommended).  
+- **ต้องการไลบรารีเพิ่มเติมสำหรับการส่งออกภาพหรือไม่?** No, the Viewer library includes JPG and PNG support out‑of‑the‑box.
 
-## ข้อกำหนดเบื้องต้น
+## What is groupdocs viewer maven?
+**groupdocs viewer maven** คือการแจกจ่ายแบบ Maven ของไลบรารี GroupDocs.Viewer สำหรับ Java ให้ API ที่ง่ายต่อการเรนเดอร์เอกสารกว่า 100 รูปแบบ—รวมถึง plain‑text—เป็น HTML, ภาพ, หรือ PDF โดยไม่ต้องใช้ Microsoft Office หรือเครื่องมือของบุคคลที่สาม
 
-ก่อนที่จะดำดิ่งลงไปใน GroupDocs.Viewer สำหรับ Java ให้แน่ใจว่าคุณมี:
+## Why convert txt files java?
+- **Cross‑platform preview** – HTML และภาพสามารถแสดงในเบราว์เซอร์หรือแอปมือถือได้.  
+- **Standardized archiving** – PDF รักษาการจัดรูปแบบและสามารถอ่านได้ทั่วโลก.  
+- **Automation friendly** – ผสานการแปลงเข้าไปในงานแบช, บริการคลาวด์, หรือ pipeline ของ CI.  
 
-### ไลบรารีและการอ้างอิงที่จำเป็น:
-- **GroupDocs.Viewer สำหรับ Java** เวอร์ชัน 25.2 ขึ้นไป
-  
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม:
-- ติดตั้ง Java Development Kit (JDK) ที่เข้ากันได้บนระบบของคุณ (แนะนำ Java 8 ขึ้นไป)
-- สภาพแวดล้อมการพัฒนาแบบบูรณาการ (IDE) เช่น IntelliJ IDEA, Eclipse หรือ NetBeans
+## Prerequisites
 
-### ข้อกำหนดเบื้องต้นของความรู้:
-- ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java และการจัดการไฟล์
-- ความคุ้นเคยกับ Maven สำหรับการจัดการการอ้างอิงนั้นเป็นประโยชน์
+- **GroupDocs.Viewer for Java** เวอร์ชัน 25.2 หรือใหม่กว่า (จัดส่งผ่าน Maven).  
+- JDK 8 + (แนะนำ Java 11 +).  
+- IDE เช่น IntelliJ IDEA, Eclipse, หรือ NetBeans.  
+- ความรู้พื้นฐานเกี่ยวกับ Java และ Maven.  
 
-## การตั้งค่า GroupDocs.Viewer สำหรับ Java
+## Setting Up GroupDocs.Viewer for Java
 
-การเริ่มใช้งาน **โปรแกรมดูเอกสารกลุ่ม**รวมไว้ในโครงการของคุณผ่าน Maven ดังต่อไปนี้:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -56,176 +62,201 @@ type: docs
 </dependencies>
 ```
 
-### ขั้นตอนการรับใบอนุญาต:
-- เริ่มต้นด้วย **ทดลองใช้งานฟรี** หรือรับ **ใบอนุญาตชั่วคราว** เพื่อสำรวจความสามารถทั้งหมดของ GroupDocs.Viewer
-- พิจารณาซื้อใบอนุญาตผ่านทางเจ้าหน้าที่ของพวกเขา [หน้าการซื้อ](https://purchase.groupdocs.com/buy) สำหรับการใช้งานในระยะยาว
+### License Acquisition Steps
+- เริ่มต้นด้วย **free trial** หรือรับ **temporary license** เพื่อสำรวจความสามารถทั้งหมด.  
+- สำหรับการใช้งานจริง, ซื้อไลเซนส์ผ่าน [purchase page](https://purchase.groupdocs.com/buy) อย่างเป็นทางการ.  
 
-### การเริ่มต้นและการตั้งค่าเบื้องต้น:
-1. เพิ่มการอ้างอิง Maven ให้กับโครงการของคุณ
-2. ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมของคุณด้วย JDK และ IDE
+### Basic Initialization and Setup
+1. เพิ่ม dependency ของ Maven ที่แสดงด้านบน.  
+2. ตรวจสอบให้แน่ใจว่า JDK และ IDE ของคุณตั้งค่าอย่างถูกต้อง.  
 
-ตอนนี้เรามาดูวิธีการนำฟีเจอร์ต่างๆ ของ GroupDocs.Viewer มาใช้เพื่อแปลงไฟล์ TXT เป็นรูปแบบต่างๆ กัน
+Now let’s dive into the concrete conversion scenarios.
 
-## คู่มือการใช้งาน
+## Implementation Guide
 
-### คุณสมบัติ 1: เรนเดอร์ TXT เป็น HTML หลายหน้า
+### Feature 1: แปลง TXT เป็น Multi‑page HTML *(multi page html java)*
 
-#### ภาพรวม:
-คุณลักษณะนี้จะแปลงเอกสาร TXT เป็นรูปแบบ HTML หลายหน้า โดยรักษาโครงสร้างข้อความทั่วทั้งเว็บเพจหลายๆ หน้า
+#### Overview
+ตัวอย่างนี้จะแปลงเอกสาร TXT เป็นไฟล์ **multi‑page HTML** โดยรักษาการขึ้นบรรทัดใหม่ระหว่างหน้าเว็บแยกกัน.
 
-##### ขั้นตอน:
+**Import Required Libraries**
 
-**นำเข้าไลบรารีที่จำเป็น**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**ตั้งค่าเส้นทางและตัวแสดง**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // กำหนดค่าตัวเลือกสำหรับการเรนเดอร์ด้วยทรัพยากรที่ฝังไว้
+    // Configure options for rendering with embedded resources
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFileFullPath);
     
-    // เรนเดอร์เอกสารเป็น HTML โดยใช้ตัวเลือกเหล่านี้
+    // Render the document to HTML using these options
     viewer.view(options);
 }
 ```
 
-**คำอธิบาย:**
-- `HtmlViewOptions.forEmbeddedResources` ถูกใช้ที่นี่เพื่อให้แน่ใจว่าทรัพยากรทั้งหมดถูกฝังไว้ในไฟล์เอาต์พุต ทำให้มีความสมบูรณ์ในตัวเอง
+*Explanation:* `HtmlViewOptions.forEmbeddedResources` รวม CSS, ฟอนต์, และภาพไว้ในผลลัพธ์ HTML โดยตรง ทำให้พกพาได้ง่าย.
 
-### คุณสมบัติ 2: เรนเดอร์ TXT เป็น HTML หน้าเดียว
+### Feature 2: แปลง TXT เป็น Single‑page HTML *(convert txt to html java)*
 
-#### ภาพรวม:
-คุณลักษณะนี้จะช่วยรวมเอกสารข้อความทั้งหมดของคุณลงในหน้า HTML เดียว ซึ่งเหมาะสำหรับการดูตัวอย่างหรือสรุปอย่างรวดเร็ว
+#### Overview
+รวมไฟล์ข้อความทั้งหมดเป็นหน้า HTML หนึ่งหน้า—เหมาะสำหรับพรีวิวอย่างรวดเร็ว.
 
-##### ขั้นตอน:
+**Import Required Libraries**
 
-**นำเข้าไลบรารีที่จำเป็น**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**ตั้งค่าเส้นทางและตัวแสดง**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result_single_page.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_2_TXT")) {
-    // กำหนดค่าตัวเลือกสำหรับการเรนเดอร์ด้วยทรัพยากรที่ฝังไว้
+    // Configure options for rendering with embedded resources
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFileFullPath);
     
-    // ตั้งค่าตัวเลือกให้แสดงผลเป็น HTML หน้าเดียว
+    // Set the option to render as a single page HTML
     options.setRenderToSinglePage(true);
     
-    // แสดงผลเอกสารโดยใช้ตัวเลือกเหล่านี้
+    // Render the document using these options
     viewer.view(options);
 }
 ```
 
-**คำอธิบาย:**
-การ `setRenderToSinglePage(true)` วิธีการรวมข้อความทั้งหมดไว้ในเว็บเพจเดียว
+*Explanation:* `setRenderToSinglePage(true)` รวมทุกหน้าลงในไฟล์ HTML หนึ่งไฟล์.
 
-### คุณสมบัติที่ 3: เรนเดอร์ TXT เป็น JPG
+### Feature 3: แปลง TXT เป็น JPG
 
-#### ภาพรวม:
-แปลงไฟล์ TXT ของคุณเป็นภาพ JPEG คุณภาพสูง เหมาะสำหรับการแบ่งปันหรือการพิมพ์
+#### Overview
+แปลงไฟล์ TXT เป็นภาพ JPEG คุณภาพสูง, มีประโยชน์สำหรับแชร์บนแพลตฟอร์มที่รับเฉพาะภาพ.
 
-##### ขั้นตอน:
+**Import Required Libraries**
 
-**นำเข้าไลบรารีที่จำเป็น**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
 
-**ตั้งค่าเส้นทางและตัวแสดง**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.jpg");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // กำหนดค่าตัวเลือกสำหรับการเรนเดอร์เป็นภาพ JPEG
+    // Configure options for rendering to a JPEG image
     JpgViewOptions options = new JpgViewOptions(pageFileFullPath);
     
-    // เรนเดอร์เอกสารเป็น JPG โดยใช้ตัวเลือกเหล่านี้
+    // Render the document as a JPG using these options
     viewer.view(options);
 }
 ```
 
-**คำอธิบาย:**
-- `JpgViewOptions` ช่วยให้คุณระบุเส้นทางเอาต์พุตและการตั้งค่าการเรนเดอร์ที่เหมาะกับการแปลงภาพได้
+*Explanation:* `JpgViewOptions` ให้คุณควบคุมคุณภาพภาพ, DPI, และเส้นทางการส่งออก.
 
-### คุณสมบัติที่ 4: เรนเดอร์ TXT เป็น PNG
+### Feature 4: แปลง TXT เป็น PNG
 
-#### ภาพรวม:
-แปลงเอกสารข้อความเป็นรูปแบบ Portable Network Graphics (PNG) ให้ภาพคุณภาพสูงด้วยการบีบอัดแบบไม่สูญเสียข้อมูล
+#### Overview
+สร้างภาพ PNG แบบ lossless จากไฟล์ข้อความ—เหมาะเมื่อคุณต้องการกราฟิกคมชัดและขยายได้.
 
-##### ขั้นตอน:
+**Import Required Libraries**
 
-**นำเข้าไลบรารีที่จำเป็น**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
 
-**ตั้งค่าเส้นทางและตัวแสดง**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.png");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // กำหนดค่าตัวเลือกสำหรับการเรนเดอร์เป็นภาพ PNG
+    // Configure options for rendering to a PNG image
     PngViewOptions options = new PngViewOptions(pageFileFullPath);
     
-    // เรนเดอร์เอกสารเป็น PNG โดยใช้ตัวเลือกเหล่านี้
+    // Render the document as a PNG using these options
     viewer.view(options);
 }
 ```
 
-**คำอธิบาย:**
-- `PngViewOptions` ใช้ที่นี่ คล้ายกับ `JpgViewOptions`แต่มีข้อดีที่เฉพาะเจาะจงกับรูปแบบ PNG
+*Explanation:* PNG ให้การบีบอัดแบบ lossless, รักษาลักษณะเดิมของข้อความต้นฉบับอย่างแม่นยำ.
 
-### คุณสมบัติ 5: เรนเดอร์ TXT เป็น PDF
+### Feature 5: แปลง TXT เป็น PDF *(txt to pdf java / convert txt to pdf java)*
 
-#### ภาพรวม:
-สร้างไฟล์ PDF จากเอกสารข้อความ เหมาะสำหรับการเผยแพร่หรือเก็บถาวรในรูปแบบที่ได้รับการยอมรับทั่วโลก
+#### Overview
+สร้างไฟล์ PDF จากเอกสาร TXT—เหมาะสำหรับการจัดเก็บ, พิมพ์, หรือส่งให้ลูกค้า.
 
-##### ขั้นตอน:
+**Import Required Libraries**
 
-**นำเข้าไลบรารีที่จำเป็น**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PdfViewOptions;
 ```
 
-**ตั้งค่าเส้นทางและตัวแสดง**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.pdf");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // กำหนดค่าตัวเลือกสำหรับการเรนเดอร์เป็น PDF
+    // Configure options for rendering to a PDF
     PdfViewOptions options = new PdfViewOptions(pageFileFullPath);
     
-    // แสดงเอกสารเป็น PDF โดยใช้ตัวเลือกเหล่านี้
+    // Render the document as a PDF using these options
     viewer.view(options);
 }
 ```
 
-**คำอธิบาย:**
-- `PdfViewOptions` ให้การตั้งค่าที่เฉพาะเจาะจงสำหรับการแปลง PDF รวมถึงการตั้งค่าหน้าและการฝังทรัพยากร
+*Explanation:* `PdfViewOptions` จัดการเลย์เอาต์หน้า, ฟอนต์, และการฝังทรัพยากรโดยอัตโนมัติ.
 
-## การประยุกต์ใช้งานจริง
+## Practical Applications
 
-ความสามารถของ GroupDocs.Viewer สำหรับ Java ขยายไปสู่กรณีการใช้งานจริงหลายกรณี:
+1. **Document Management Systems:** ทำการแปลงไฟล์ TXT เก่าเป็น HTML อัตโนมัติสำหรับพอร์ทัลอินทราเน็ต.  
+2. **Publishing Platforms:** แปลงต้นฉบับ TXT ที่ผู้เขียนส่งมาเป็น HTML เพื่อการผสานรวมกับ CMS อย่างราบรื่น.  
+3. **Archiving Solutions:** เก็บไฟล์ข้อความเก่าเป็น PDF หรือ PNG เพื่อการจัดเก็บระยะยาว.  
+4. **Cloud Storage Integration:** แปลงแบบเรียลไทม์และเก็บไฟล์ที่เรนเดอร์ไว้ใน AWS S3, Azure Blob, หรือ Google Cloud.  
 
-1. **ระบบจัดการเอกสาร:** ทำให้การแปลงเอกสารแบบข้อความเป็นรูปแบบที่เป็นมิตรต่อเว็บสำหรับพอร์ทัลภายในเป็นแบบอัตโนมัติ
-2. **แพลตฟอร์มการเผยแพร่:** แปลงการส่งของผู้เขียนจาก TXT เป็น HTML เพื่อการรวมเข้ากับระบบการจัดการเนื้อหาอย่างราบรื่น
-3. **โซลูชันการเก็บถาวร:** เก็บรักษาไฟล์ข้อความดั้งเดิมในรูปแบบ PDF หรือรูปภาพที่ทันสมัยและเข้าถึงได้ง่าย
-4. **การบูรณาการกับที่เก็บข้อมูลบนคลาวด์:** แปลงและจัดเก็บเอกสารโดยอัตโนมัติบนแพลตฟอร์มคลาวด์เพื่อการเข้าถึงที่ดีขึ้น
+## Common Issues and Solutions
+
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|-------|-----|
+| **ผลลัพธ์เป็นค่าว่าง** | เส้นทางไฟล์ไม่ถูกต้องหรือไม่มีสิทธิ์อ่าน. | ตรวจสอบว่า `YOUR_DOCUMENT_DIRECTORY` ชี้ไปยังไฟล์ TXT จริงและกระบวนการมีสิทธิ์อ่าน. |
+| **ภาพมีคุณภาพต่ำ** | ค่า DPI เริ่มต้นต่ำ. | ใช้ `JpgViewOptions.setResolution(int dpi)` หรือ `PngViewOptions.setResolution(int dpi)` เพื่อเพิ่ม DPI (เช่น 300). |
+| **HTML มีลิงก์เสีย** | ทรัพยากรไม่ได้ฝัง. | ใช้ `HtmlViewOptions.forEmbeddedResources` หรือกำหนดโฟลเดอร์ทรัพยากรแบบกำหนดเอง. |
+| **ข้อยกเว้นไลเซนส์** | ไม่มีการตั้งค่าไลเซนส์ที่ถูกต้อง. | โหลดไฟล์ไลเซนส์ของคุณด้วย `License license = new License(); license.setLicense("path/to/license.file");` ก่อนสร้าง `Viewer`. |
+
+## Frequently Asked Questions
+
+**Q: ฉันสามารถแปลงไฟล์ TXT ขนาดใหญ่ (หลายร้อย MB) ด้วย GroupDocs.Viewer ได้หรือไม่?**  
+A: ได้. ไลบรารีจะสตรีมไฟล์ต้นฉบับ, แต่คุณอาจต้องเพิ่มขนาด heap ของ JVM สำหรับเอกสารที่ใหญ่มาก.
+
+**Q: ฉันต้องการ dependencies เพิ่มเติมเพื่อสร้าง JPG หรือ PNG หรือไม่?**  
+A: ไม่. แพคเกจ Viewer มีไลบรารีการประมวลผลภาพที่จำเป็นทั้งหมด.
+
+**Q: สามารถปรับขนาดหน้าของ PDF ได้หรือไม่?**  
+A: แน่นอน. ใช้ `PdfViewOptions.setPageSize(PageSize.A4)` หรือ `PageSize` ใด ๆ ก่อนการเรนเดอร์.
+
+**Q: จะจัดการไฟล์ TXT ที่มีการป้องกันด้วยรหัสผ่านอย่างไร?**  
+A: ไฟล์ TXT ไม่รองรับรหัสผ่าน. หากไฟล์ถูกเข้ารหัส, ให้ถอดรหัสก่อนส่งให้ Viewer.
+
+**Q: สามารถรันการแปลงนี้ใน Docker container ได้หรือไม่?**  
+A: ได้. เพียงใส่ JDK, คัดลอก `pom.xml` ของคุณพร้อม dependency ของ GroupDocs, แล้วรันแอปพลิเคชัน Java ภายในคอนเทนเนอร์.
+
+---
+
+**อัปเดตล่าสุด:** 2026-02-21  
+**ทดสอบกับ:** GroupDocs.Viewer 25.2 for Java  
+**ผู้เขียน:** GroupDocs

@@ -1,43 +1,51 @@
 ---
-"date": "2025-04-24"
-"description": "Μάθετε πώς να μετατρέπετε αποτελεσματικά αρχεία TXT σε πολλαπλές μορφές όπως HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer για Java. Ακολουθήστε αυτόν τον οδηγό βήμα προς βήμα."
-"title": "Μετατροπή αρχείων TXT σε HTML, JPG, PNG και PDF χρησιμοποιώντας το GroupDocs.Viewer για Java"
-"url": "/el/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/"
-"weight": 1
+date: '2026-02-21'
+description: Μάθετε πώς να χρησιμοποιείτε το GroupDocs Viewer Maven για να μετατρέψετε
+  αρχεία txt σε html, jpg, png και pdf σε Java. Περιλαμβάνει βήματα για μετατροπή
+  txt σε pdf σε Java και για πολυσελιδικό html σε Java.
+keywords:
+- GroupDocs.Viewer for Java
+- convert TXT to HTML
+- render TXT as JPG/PNG
+title: 'groupdocs viewer maven: Μετατροπή TXT σε HTML, JPG, PNG, PDF'
 type: docs
+url: /el/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/
+weight: 1
 ---
-# Μετατροπή αρχείων TXT με το GroupDocs.Viewer για Java: Ένας πλήρης οδηγός
 
-## Εισαγωγή
+ formatting preserved.
 
-Στον σημερινό ψηφιακό κόσμο, η αποτελεσματική διαχείριση εγγράφων είναι το κλειδί τόσο για τις επιχειρήσεις όσο και για τα άτομα. Είτε χρειάζεται να εμφανίσετε έγγραφα κειμένου στο διαδίκτυο είτε να αρχειοθετήσετε αρχεία σε διάφορες μορφές, η μετατροπή αρχείων κειμένου (TXT) είναι μια συχνή απαίτηση. **GroupDocs.Viewer για Java** παρέχει μια αποτελεσματική λύση για την εύκολη απόδοση αρχείων TXT σε πολλαπλές μορφές όπως HTML, JPG, PNG και PDF. Αυτός ο οδηγός θα σας καθοδηγήσει στη χρήση αυτής της ευέλικτης βιβλιοθήκης για την επίτευξη απρόσκοπτων μετατροπών.
+Now produce final content.# groupdocs viewer maven: Μετατροπή Αρχείων TXT σε HTML, JPG, PNG και PDF Χρησιμοποιώντας το GroupDocs.Viewer για Java
 
-### Τι θα μάθετε:
-- Ρύθμιση του GroupDocs.Viewer στο περιβάλλον Java σας
-- Μετατροπή αρχείων TXT σε HTML πολλαπλών σελίδων και μίας σελίδας
-- Απόδοση εγγράφων TXT σε μορφές εικόνας (JPG, PNG)
-- Μετατροπή περιεχομένου TXT σε μορφή PDF
+Σε σύγχρονες εφαρμογές Java, το **groupdocs viewer maven** καθιστά εύκολη τη μετατροπή εγγράφων plain‑text (TXT) σε έτοιμο για το web HTML, εικόνες υψηλής ανάλυσης ή φορητά αρχεία PDF. Είτε δημιουργείτε μια πύλη εγγράφων, μια υπηρεσία αρχειοθέτησης ή μια λειτουργία προεπισκόπησης, η μετατροπή αρχείων TXT με το GroupDocs.Viewer σας εξοικονομεί χρόνο και εξαλείφει την ανάγκη για προσαρμοσμένους αναλυτές. Σε αυτόν τον οδηγό θα περάσουμε από τη πλήρη ρύθμιση και θα σας δείξουμε πώς να **convert txt files java** σε HTML (μονή‑ και πολλαπλή‑σελίδα), JPG, PNG και PDF.
 
-Ας εξετάσουμε τις απαραίτητες προϋποθέσεις πριν ξεκινήσουμε την υλοποίηση.
+![Μετατροπή αρχείων TXT σε HTML, JPG, PNG και PDF με το GroupDocs.Viewer για Java](/viewer/export-conversion/convert-txt-files-to-html-jpg-png-and-pdf-java.png)
 
-## Προαπαιτούμενα
+## Quick Answers
+- **Ποιο Maven artifact χρειάζομαι;** `com.groupdocs:groupdocs-viewer` (δείτε το Maven snippet παρακάτω).  
+- **Μπορώ να αποδώσω HTML πολλαπλών σελίδων;** Ναι – χρησιμοποιήστε `HtmlViewOptions.forEmbeddedResources` χωρίς τη σημαία μονής σελίδας.  
+- **Απαιτείται άδεια για παραγωγή;** Μια δοκιμαστική άδεια λειτουργεί για αξιολόγηση· απαιτείται μόνιμη άδεια για εμπορική χρήση.  
+- **Ποια έκδοση Java υποστηρίζεται;** Java 8 ή νεότερη (συστήνεται Java 11+).  
+- **Χρειάζομαι επιπλέον βιβλιοθήκες για έξοδο εικόνας;** Όχι, η βιβλιοθήκη Viewer περιλαμβάνει υποστήριξη JPG και PNG από το κουτί.
 
-Πριν ξεκινήσετε να χρησιμοποιείτε το GroupDocs.Viewer για Java, βεβαιωθείτε ότι έχετε:
+## What is groupdocs viewer maven?
+**groupdocs viewer maven** είναι η διανομή βασισμένη σε Maven της βιβλιοθήκης GroupDocs.Viewer για Java. Παρέχει ένα απλό API για απόδοση πάνω από 100 μορφών εγγράφων—συμπεριλαμβανομένου του plain‑text—σε HTML, εικόνες ή PDF χωρίς την ανάγκη Microsoft Office ή άλλων εργαλείων τρίτων.
 
-### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις:
-- **GroupDocs.Viewer για Java** έκδοση 25.2 ή νεότερη.
-  
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος:
-- Ένα συμβατό Java Development Kit (JDK) εγκατεστημένο στο σύστημά σας (συνιστάται Java 8+).
-- Ένα Ολοκληρωμένο Περιβάλλον Ανάπτυξης (IDE) όπως το IntelliJ IDEA, το Eclipse ή το NetBeans.
+## Why convert txt files java?
+- **Προεπισκόπηση πολλαπλών πλατφορμών** – HTML και εικόνες μπορούν να εμφανιστούν σε προγράμματα περιήγησης ή κινητές εφαρμογές.  
+- **Τυποποιημένη αρχειοθέτηση** – PDF διατηρεί τη μορφοποίηση και είναι καθολικά αναγνώσιμο.  
+- **Φιλική προς την αυτοματοποίηση** – Ενσωματώστε τη μετατροπή σε εργασίες batch, υπηρεσίες cloud ή pipelines CI.  
 
-### Προαπαιτούμενα Γνώσεων:
-- Βασική κατανόηση προγραμματισμού Java και διαχείρισης αρχείων.
-- Η εξοικείωση με το Maven για τη διαχείριση εξαρτήσεων είναι χρήσιμη.
+## Prerequisites
 
-## Ρύθμιση του GroupDocs.Viewer για Java
+- **GroupDocs.Viewer for Java** έκδοση 25.2 ή νεότερη (παρέχεται μέσω Maven).  
+- JDK 8 + (Java 11 + συνιστάται).  
+- Ένα IDE όπως IntelliJ IDEA, Eclipse ή NetBeans.  
+- Βασικές γνώσεις Java και Maven.  
 
-Για να ξεκινήσετε τη χρήση **GroupDocs.Viewer**, συμπεριλάβετέ το στο έργο σας μέσω του Maven ως εξής:
+## Setting Up GroupDocs.Viewer for Java
+
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -56,176 +64,201 @@ type: docs
 </dependencies>
 ```
 
-### Βήματα Απόκτησης Άδειας Χρήσης:
-- Ξεκινήστε με ένα **δωρεάν δοκιμή** ή να αποκτήσετε ένα **προσωρινή άδεια** για να εξερευνήσετε όλες τις δυνατότητες του GroupDocs.Viewer.
-- Σκεφτείτε να αγοράσετε μια άδεια χρήσης μέσω της επίσημης [σελίδα αγοράς](https://purchase.groupdocs.com/buy) για μακροχρόνια χρήση.
+### License Acquisition Steps
+- Ξεκινήστε με μια **δωρεάν δοκιμή** ή αποκτήστε μια **προσωρινή άδεια** για να εξερευνήσετε όλες τις δυνατότητες.  
+- Για παραγωγή, αγοράστε άδεια μέσω της επίσημης [σελίδας αγοράς](https://purchase.groupdocs.com/buy).  
 
-### Βασική αρχικοποίηση και ρύθμιση:
-1. Προσθέστε την εξάρτηση Maven στο έργο σας.
-2. Βεβαιωθείτε ότι έχετε ρυθμίσει το περιβάλλον σας με JDK και ένα IDE.
+### Basic Initialization and Setup
+1. Προσθέστε την εξάρτηση Maven που φαίνεται παραπάνω.  
+2. Βεβαιωθείτε ότι το JDK και το IDE σας είναι σωστά ρυθμισμένα.  
 
-Τώρα, ας εξερευνήσουμε πώς να εφαρμόσουμε διαφορετικές λειτουργίες του GroupDocs.Viewer για τη μετατροπή αρχείων TXT σε διάφορες μορφές.
+Τώρα ας βουτήξουμε στις συγκεκριμένες περιπτώσεις μετατροπής.
 
-## Οδηγός Εφαρμογής
+## Implementation Guide
 
-### Χαρακτηριστικό 1: Απόδοση TXT σε HTML πολλαπλών σελίδων
+### Feature 1: Render TXT to Multi‑page HTML *(multi page html java)*
 
-#### Επισκόπηση:
-Αυτή η λειτουργία μετατρέπει ένα έγγραφο TXT σε μορφή HTML πολλαπλών σελίδων, διατηρώντας τη δομή κειμένου σε πολλές ιστοσελίδες.
+#### Overview
+Αυτό το παράδειγμα μετατρέπει ένα έγγραφο TXT σε αρχείο **HTML πολλαπλών σελίδων**, διατηρώντας τις αλλαγές γραμμής σε ξεχωριστές ιστοσελίδες.
 
-##### Βήματα:
+**Import Required Libraries**
 
-**Εισαγωγή απαιτούμενων βιβλιοθηκών**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**Ρύθμιση διαδρομών και προγράμματος προβολής**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Ρύθμιση παραμέτρων επιλογών για απόδοση με ενσωματωμένους πόρους
+    // Configure options for rendering with embedded resources
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFileFullPath);
     
-    // Απόδοση του εγγράφου σε HTML χρησιμοποιώντας αυτές τις επιλογές
+    // Render the document to HTML using these options
     viewer.view(options);
 }
 ```
 
-**Εξήγηση:**
-- `HtmlViewOptions.forEmbeddedResources` χρησιμοποιείται εδώ για να διασφαλιστεί ότι όλοι οι πόροι είναι ενσωματωμένοι στα αρχεία εξόδου, καθιστώντας τα αυτόνομα.
+*Explanation:* `HtmlViewOptions.forEmbeddedResources` ενσωματώνει CSS, γραμματοσειρές και εικόνες απευθείας στην έξοδο HTML, καθιστώντας την φορητή.
 
-### Λειτουργία 2: Απόδοση TXT σε HTML μίας σελίδας
+### Feature 2: Render TXT to Single‑page HTML *(convert txt to html java)*
 
-#### Επισκόπηση:
-Αυτή η λειτουργία συμπυκνώνει ολόκληρο το έγγραφο κειμένου σας σε μία μόνο σελίδα HTML, ιδανική για γρήγορες προεπισκοπήσεις ή συνοψίσεις.
+#### Overview
+Συμπιέστε ολόκληρο το αρχείο κειμένου σε μία μόνο σελίδα HTML — ιδανικό για γρήγορες προεπισκοπήσεις.
 
-##### Βήματα:
+**Import Required Libraries**
 
-**Εισαγωγή απαιτούμενων βιβλιοθηκών**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**Ρύθμιση διαδρομών και προγράμματος προβολής**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result_single_page.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_2_TXT")) {
-    // Ρύθμιση παραμέτρων επιλογών για απόδοση με ενσωματωμένους πόρους
+    // Configure options for rendering with embedded resources
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFileFullPath);
     
-    // Ορίστε την επιλογή απόδοσης ως HTML μίας σελίδας
+    // Set the option to render as a single page HTML
     options.setRenderToSinglePage(true);
     
-    // Απόδοση του εγγράφου χρησιμοποιώντας αυτές τις επιλογές
+    // Render the document using these options
     viewer.view(options);
 }
 ```
 
-**Εξήγηση:**
-Ο `setRenderToSinglePage(true)` Η μέθοδος συμπυκνώνει όλο το κείμενο σε μία ιστοσελίδα.
+*Explanation:* `setRenderToSinglePage(true)` συγχωνεύει όλες τις σελίδες σε ένα αρχείο HTML.
 
-### Χαρακτηριστικό 3: Απόδοση TXT σε JPG
+### Feature 3: Render TXT to JPG
 
-#### Επισκόπηση:
-Μετατρέψτε τα αρχεία TXT σας σε εικόνες JPEG υψηλής ποιότητας, κατάλληλες για κοινή χρήση ή εκτύπωση.
+#### Overview
+Μετατρέψτε ένα αρχείο TXT σε εικόνα JPEG υψηλής ποιότητας, χρήσιμη για κοινή χρήση σε πλατφόρμες που δέχονται μόνο εικόνες.
 
-##### Βήματα:
+**Import Required Libraries**
 
-**Εισαγωγή απαιτούμενων βιβλιοθηκών**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
 
-**Ρύθμιση διαδρομών και προγράμματος προβολής**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.jpg");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Ρύθμιση παραμέτρων επιλογών για απόδοση σε εικόνα JPEG
+    // Configure options for rendering to a JPEG image
     JpgViewOptions options = new JpgViewOptions(pageFileFullPath);
     
-    // Απόδοση του εγγράφου ως JPG χρησιμοποιώντας αυτές τις επιλογές
+    // Render the document as a JPG using these options
     viewer.view(options);
 }
 ```
 
-**Εξήγηση:**
-- `JpgViewOptions` σας επιτρέπει να καθορίσετε διαδρομές εξόδου και ρυθμίσεις απόδοσης προσαρμοσμένες για μετατροπή εικόνας.
+*Explanation:* `JpgViewOptions` σας επιτρέπει να ελέγχετε την ποιότητα της εικόνας, το DPI και τη διαδρομή εξόδου.
 
-### Χαρακτηριστικό 4: Απόδοση TXT σε PNG
+### Feature 4: Render TXT to PNG
 
-#### Επισκόπηση:
-Μετατρέψτε έγγραφα κειμένου σε μορφή Portable Network Graphics (PNG), προσφέροντας εικόνες υψηλής ποιότητας με συμπίεση χωρίς απώλειες.
+#### Overview
+Δημιουργήστε εικόνες PNG χωρίς απώλειες από αρχεία κειμένου — ιδανικό όταν χρειάζεστε καθαρά, κλιμακώσιμα γραφικά.
 
-##### Βήματα:
+**Import Required Libraries**
 
-**Εισαγωγή απαιτούμενων βιβλιοθηκών**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
 
-**Ρύθμιση διαδρομών και προγράμματος προβολής**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.png");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Ρύθμιση παραμέτρων επιλογών για απόδοση σε εικόνα PNG
+    // Configure options for rendering to a PNG image
     PngViewOptions options = new PngViewOptions(pageFileFullPath);
     
-    // Απόδοση του εγγράφου ως PNG χρησιμοποιώντας αυτές τις επιλογές
+    // Render the document as a PNG using these options
     viewer.view(options);
 }
 ```
 
-**Εξήγηση:**
-- `PngViewOptions` χρησιμοποιείται εδώ, παρόμοια με `JpgViewOptions`, αλλά με πλεονεκτήματα που αφορούν ειδικά τη μορφή PNG.
+*Explanation:* Το PNG παρέχει συμπίεση χωρίς απώλειες, διατηρώντας την ακριβή εμφάνιση του αρχικού κειμένου.
 
-### Χαρακτηριστικό 5: Απόδοση TXT σε PDF
+### Feature 5: Render TXT to PDF *(txt to pdf java / convert txt to pdf java)*
 
-#### Επισκόπηση:
-Δημιουργήστε αρχεία PDF από έγγραφα κειμένου, ιδανικά για διανομή ή αρχειοθέτηση σε μια παγκοσμίως αποδεκτή μορφή.
+#### Overview
+Δημιουργήστε ένα αρχείο PDF από ένα έγγραφο TXT — ιδανικό για αρχειοθέτηση, εκτύπωση ή αποστολή σε πελάτες.
 
-##### Βήματα:
+**Import Required Libraries**
 
-**Εισαγωγή απαιτούμενων βιβλιοθηκών**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PdfViewOptions;
 ```
 
-**Ρύθμιση διαδρομών και προγράμματος προβολής**
+**Set Up Paths and Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.pdf");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Ρύθμιση παραμέτρων επιλογών για απόδοση σε PDF
+    // Configure options for rendering to a PDF
     PdfViewOptions options = new PdfViewOptions(pageFileFullPath);
     
-    // Απόδοση του εγγράφου ως PDF χρησιμοποιώντας αυτές τις επιλογές
+    // Render the document as a PDF using these options
     viewer.view(options);
 }
 ```
 
-**Εξήγηση:**
-- `PdfViewOptions` Παρέχει ρυθμίσεις ειδικά για τη μετατροπή PDF, συμπεριλαμβανομένης της διαμόρφωσης σελίδας και της ενσωμάτωσης πόρων.
+*Explanation:* `PdfViewOptions` διαχειρίζεται αυτόματα τη διάταξη σελίδων, τις γραμματοσειρές και την ενσωμάτωση πόρων.
 
-## Πρακτικές Εφαρμογές
+## Practical Applications
 
-Οι δυνατότητες του GroupDocs.Viewer για την Java επεκτείνονται σε διάφορες πρακτικές περιπτώσεις χρήσης:
+1. **Συστήματα Διαχείρισης Εγγράφων:** Αυτοματοποιήστε τη μετατροπή παλαιών εγγράφων TXT σε HTML για εσωτερικές πύλες.  
+2. **Πλατφόρμες Δημοσίευσης:** Μετατρέψτε χειρόγραφα TXT που υποβάλλονται από συγγραφείς σε HTML για απρόσκοπτη ενσωμάτωση CMS.  
+3. **Λύσεις Αρχειοθέτησης:** Διατηρήστε παλιά αρχεία κειμένου ως PDF ή PNG για μακροπρόθεσμη αποθήκευση.  
+4. **Ενσωμάτωση με Cloud Storage:** Μετατρέψτε άμεσα και αποθηκεύστε τα παραγόμενα αρχεία σε AWS S3, Azure Blob ή Google Cloud.
 
-1. **Συστήματα Διαχείρισης Εγγράφων:** Αυτοματοποιήστε τη μετατροπή τεκμηρίωσης που βασίζεται σε κείμενο σε μορφές φιλικές προς το web για εσωτερικές πύλες.
-2. **Πλατφόρμες δημοσίευσης:** Μετατρέψτε τις υποβολές συγγραφέων από TXT σε HTML για απρόσκοπτη ενσωμάτωση σε συστήματα διαχείρισης περιεχομένου.
-3. **Λύσεις αρχειοθέτησης:** Διατηρήστε παλαιότερα αρχεία κειμένου σε σύγχρονες, εύκολα προσβάσιμες μορφές PDF ή εικόνας.
-4. **Ενσωμάτωση με το Cloud Storage:** Αυτόματη μετατροπή και αποθήκευση εγγράφων σε πλατφόρμες cloud για καλύτερη προσβασιμότητα.
+## Common Issues and Solutions
+
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| **Η έξοδος είναι κενή** | Λανθασμένη διαδρομή αρχείου ή έλλειψη δικαιωμάτων ανάγνωσης. | Επαληθεύστε ότι το `YOUR_DOCUMENT_DIRECTORY` δείχνει στο πραγματικό αρχείο TXT και ότι η διαδικασία έχει δικαιώματα ανάγνωσης. |
+| **Οι εικόνες έχουν χαμηλή ποιότητα** | Το προεπιλεγμένο DPI είναι χαμηλό. | Χρησιμοποιήστε `JpgViewOptions.setResolution(int dpi)` ή `PngViewOptions.setResolution(int dpi)` για να αυξήσετε το DPI (π.χ., 300). |
+| **Το HTML περιέχει σπασμένους συνδέσμους** | Οι πόροι δεν είναι ενσωματωμένοι. | Χρησιμοποιήστε `HtmlViewOptions.forEmbeddedResources` ή παρέχετε έναν προσαρμοσμένο φάκελο πόρων. |
+| **Εξαίρεση άδειας** | Δεν έχει οριστεί έγκυρη άδεια. | Φορτώστε το αρχείο άδειας με `License license = new License(); license.setLicense("path/to/license.file");` πριν δημιουργήσετε το `Viewer`. |
+
+## Frequently Asked Questions
+
+**Μ: Μπορώ να μετατρέψω μεγάλα αρχεία TXT (εκατοντάδες MB) με το GroupDocs.Viewer;**  
+Α: Ναι. Η βιβλιοθήκη κάνει streaming του αρχείου προέλευσης, αλλά ίσως χρειαστεί να αυξήσετε το μέγεθος heap της JVM για πολύ μεγάλα έγγραφα.
+
+**Μ: Χρειάζομαι επιπλέον εξαρτήσεις για τη δημιουργία JPG ή PNG;**  
+Α: Όχι. Το πακέτο Viewer περιλαμβάνει όλες τις απαιτούμενες βιβλιοθήκες επεξεργασίας εικόνας.
+
+**Μ: Είναι δυνατόν να προσαρμόσω το μέγεθος σελίδας PDF;**  
+Α: Απόλυτα. Χρησιμοποιήστε `PdfViewOptions.setPageSize(PageSize.A4)` ή οποιοδήποτε άλλο `PageSize` πριν από τη δημιουργία.
+
+**Μ: Πώς διαχειρίζομαι αρχεία TXT με κωδικό πρόσβασης;**  
+Α: Τα αρχεία TXT δεν υποστηρίζουν κωδικούς πρόσβασης. Εάν το αρχείο είναι κρυπτογραφημένο, αποκρυπτογραφήστε το πρώτα πριν το περάσετε στο Viewer.
+
+**Μ: Μπορώ να εκτελέσω αυτή τη μετατροπή σε κοντέινερ Docker;**  
+Α: Ναι. Απλώς συμπεριλάβετε το JDK, αντιγράψτε το `pom.xml` σας με την εξάρτηση GroupDocs, και εκτελέστε την εφαρμογή Java μέσα στο κοντέινερ.
+
+---
+
+**Last Updated:** 2026-02-21  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
