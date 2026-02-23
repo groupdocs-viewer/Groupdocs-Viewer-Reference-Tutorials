@@ -1,36 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Tanuld meg, hogyan konvertálhatsz ZIP és RAR archívumokat egy- és többoldalas HTML fájlokká a GroupDocs.Viewer Java használatával. Egyszerűsítsd a dokumentumkonvertálási folyamatot."
-"title": "Archívumok HTML-be konvertálása a GroupDocs.Viewer Java segítségével&#58; Átfogó útmutató"
-"url": "/hu/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
-"weight": 1
+date: '2026-02-23'
+description: Tanulja meg, hogyan állíthatja be az egy oldalra jutó elemek számát,
+  hogyan ágyazhat be HTML‑erőforrásokat, és hogyan konvertálhat kötegelt módon archívumokat
+  egyoldalas vagy többoldalas HTML‑re a GroupDocs.Viewer Java használatával.
+keywords:
+- convert archives to HTML Java
+- GroupDocs.Viewer Java tutorial
+- render ZIP RAR to HTML
+title: 'Állítsa be az oldalankénti elemek számát: Archivumok konvertálása HTML-be
+  a GroupDocs.Viewer Java-val'
 type: docs
+url: /hu/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
+weight: 1
 ---
-# Archívumok HTML-be konvertálása a GroupDocs.Viewer Java segítségével: Átfogó útmutató
 
-## Bevezetés
+# Elemek száma oldalanként beállítása: Archívumok konvertálása HTML-re a GroupDocs.Viewer Java-val
 
-Az archív fájlok, például a ZIP vagy a RAR fájlok webbarát formátumba konvertálása gyakori követelmény a dokumentumok rendszereken belüli megosztásához, áttekintéséhez és integrálásához. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Viewer Java használatán – egy hatékony könyvtáron, amelyet a zökkenőmentes dokumentumkonverzióhoz terveztek.
+Az olyan archívumfájlok, mint a ZIP vagy RAR, web‑barát HTML-re való konvertálása gyakori igény, ha közvetlenül a böngészőben szeretnénk megosztani vagy áttekinteni a dokumentumokat. Ebben az útmutatóban megtanulja, **hogyan állítsa be az oldalankénti elemek számát** az archívumok renderelésekor, hogyan ágyazza be a forrásokat HTML-be egy önálló kimenethez, és hogyan konvertáljon archívumokat kötegelt módon hatékonyan a GroupDocs.Viewer Java segítségével.
 
-**Amit tanulni fogsz:**
-- Archívumok renderelése egyoldalas és többoldalas HTML formátumba.
-- Beágyazott erőforrások beállításainak konfigurálása a HTML-kimenetben.
-- A renderelési folyamat optimalizálása a teljesítmény és az erőforrás-hatékonyság érdekében.
+![Archívumok konvertálása HTML-re a GroupDocs.Viewer for Java használatával](/viewer/export-conversion/convert-archives-to-html-java.png)
 
-Állítsuk be a GroupDocs.Viewer Java-t a megfelelő eszközökkel és ismeretekkel a kezdéshez.
+## Gyors válaszok
+- **Mit szabályoz a „set items per page” beállítás?** Meghatározza, hogy egy archívumból hány fájl vagy mappa jelenjen meg az egyes generált HTML‑oldalakon.  
+- **Be tudom-e ágyazni a képeket és a CSS‑t közvetlenül a HTML‑be?** Igen – használja a `forEmbeddedResources` opciót a források HTML‑be ágyazásához.  
+- **Lehetséges a kötegelt konvertálás?** Természetesen; egy archívumgyűjteményen iterálva ugyanazokkal a beállításokkal renderelheti őket.  
+- **Szükségem van Maven‑re a GroupDocs.Viewer használatához?** Igen, adja hozzá a `maven groupdocs viewer` függőséget az alább látható módon.  
+- **Mely kimeneti formátumok támogatottak?** Az egyoldalas HTML Java és a többoldalas HTML Java egyaránt elérhető.
+
+## Mi az a „set items per page” a GroupDocs.Viewer‑ben?
+A **set items per page** beállítás az archívum‑renderelési opciók része. Megmondja a megjelenítőnek, hány archívumbejegyzés (fájl vagy mappa) jelenjen meg minden HTML‑oldalon, amikor többoldalas HTML‑dokumentumot generál. Ennek az értéknek a módosítása segít egyensúlyt teremteni az oldalméret és a navigációs sebesség között, különösen nagy archívumok esetén.
+
+## Miért ágyazzuk be a források HTML‑jét?
+A források (képek, CSS, betűkészletek) közvetlen beágyazása a HTML‑fájlba egyetlen, hordozható dokumentumot hoz létre, amely külső fájlok nélkül is megnyitható. Ez ideális e‑mail mellékletekhez, offline megtekintéshez vagy a kimenet más weboldalakba történő beágyazásához.
 
 ## Előfeltételek
 
-Kezdés előtt győződjön meg arról, hogy a következőkkel rendelkezik:
-- **Szükséges könyvtárak:** A GroupDocs.Viewer 25.2-es vagy újabb verzióját is bele kell foglalni a projektbe.
-- **Környezet beállítása:** Egy konfigurált Java fejlesztői készlet (JDK) a rendszeren.
-- **Előfeltételek a tudáshoz:** Alapfokú ismeretek a Java programozásban és a Maven függőségkezelésben.
+- **Szükséges könyvtárak:** GroupDocs.Viewer 25.2 vagy újabb verzió.  
+- **Környezet:** Telepített és konfigurált Java Development Kit (JDK).  
+- **Ismeretek:** Alapvető Java és Maven függőségkezelés.
 
-## GroupDocs.Viewer beállítása Java-hoz
+## Maven GroupDocs Viewer beállítása
 
-A GroupDocs.Viewer használatához add hozzá függőségként a projektedhez Maven használatával:
-
-**Maven beállítás:**
+Adja hozzá a GroupDocs tárolót és a viewer függőséget a `pom.xml`‑hez:
 
 ```xml
 <repositories>
@@ -50,160 +61,122 @@ A GroupDocs.Viewer használatához add hozzá függőségként a projektedhez Ma
 </dependencies>
 ```
 
-### Licencbeszerzés
+### Licenc beszerzése
+A GroupDocs.Viewer **ingyenes próba linket**, ideiglenes licencet vagy teljes vásárlási lehetőséget kínál. Válassza ki a projekt idővonalához leginkább illőt.
 
-A GroupDocs.Viewer különféle licencelési lehetőségeket kínál:
-- **Ingyenes próbaverzió:** Kezdje egy ingyenes próbaverzióval, hogy felfedezhesse a képességeit.
-- **Ideiglenes engedély:** Szerezzen be ideiglenes licencet hosszabb használatra, értékelési korlátozások nélkül.
-- **Vásárlás:** Fontolja meg egy licenc megvásárlását a teljes hozzáférés és támogatás érdekében.
-
-**Alapvető inicializálás:**
-
-Miután hozzáadta a GroupDocs.Viewer függőségként, inicializálja azt a Java alkalmazásában:
+### Alapvető inicializálás
+A Maven beállítás után hozza be a viewert a kódjába:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Az inicializáló kódod itt van
+// Your initialization code here
 ```
 
-## Megvalósítási útmutató
+## Hogyan rendereljük az archívumokat egyoldalas HTML‑re
 
-Miután minden beállítottunk, lépésről lépésre implementáljuk a funkciókat.
-
-### Archívumok megjelenítése egyetlen oldalas HTML-ként
-
-**Áttekintés:**
-Alakítson át egy teljes archívumot egyetlen oldalas HTML-dokumentummá az egyszerű megosztás és megtekintés érdekében anélkül, hogy több oldalon kellene navigálnia.
-
-#### 1. lépés: Kimeneti könyvtár elérési útjának meghatározása
-
-Állítsd be a kimeneti könyvtáradat:
-
+### 1. lépés: Kimeneti könyvtár meghatározása
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Ez határozza meg, hogy hová kerüljön mentésre a renderelt HTML.
-
-#### 2. lépés: Fájlnév beállítása egyoldalas kimenethez
-
-Adja meg az egyoldalas HTML-fájl nevét:
-
+### 2. lépés: Fájlnév beállítása egyoldalas kimenethez
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-#### 3. lépés: Megjelenítőpéldány inicializálása
-
-Inicializáljon egy `Viewer` példány az archív fájllal:
-
+### 3. lépés: A Viewer inicializálása
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // További konfigurációs lépések következnek
+    // Further configuration steps follow
 }
 ```
 
-#### 4. lépés: Renderelési beállítások konfigurálása
-
-Állítsa be az archívum HTML formátumba történő renderelésének beállításait, az erőforrások közvetlen HTML-be ágyazásával:
-
+### 4. lépés: Renderelési opciók konfigurálása (források HTML‑be ágyazása)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 5. lépés: Renderelés egyetlen oldalként
-
-Konfiguráld a megjelenítődet úgy, hogy a teljes archívumot egy oldalon jelenítse meg:
-
+### 5. lépés: Renderelés egy oldalként
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-### Archívumok renderelése többoldalas HTML-lé
+## Hogyan rendereljük az archívumokat többoldalas HTML‑re és állítsuk be az oldalankénti elemek számát
 
-**Áttekintés:**
-Nagyobb archívumok esetén bontsa a tartalmat több oldalra. Ez a funkció megkönnyíti az archívum több HTML-fájlban történő megjelenítését.
-
-#### 1. lépés: Kimeneti könyvtár elérési útjának meghatározása
-
-Használja újra az egyoldalas implementáció kimeneti könyvtárának beállítását:
-
+### 1. lépés: A kimeneti könyvtár újrahasználata
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### 2. lépés: Fájlnévformátum beállítása többoldalas kimenethez
-
-Hozzon létre egy fájlnévformátumot, amely több oldalt is elbír, például `{0}` oldalszámok helykitöltőjeként:
-
+### 2. lépés: Fájlnév formátum meghatározása több oldalhoz
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-#### 3. lépés: Megjelenítőpéldány inicializálása
-
-Inicializálja a `Viewer` például az egyoldalas beállításhoz hasonlóan:
-
+### 3. lépés: A Viewer újra inicializálása
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // Folytassa a többoldalas konfigurációval
+    // Continue with multi‑page configuration
 }
 ```
 
-#### 4. lépés: Többoldalas renderelési beállítások konfigurálása
-
-Beágyazott erőforrásokkal rendelkező több oldalra történő megjelenítés beállításainak megadása:
-
+### 4. lépés: Többoldalas opciók konfigurálása (források HTML‑be ágyazása)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 5. lépés: Oldalankénti elemek megadása
-
-Határozza meg, hogy hány elem (fájl vagy mappa) jelenjen meg oldalonként. Módosítsa ezt a beállítást az igényei szerint:
-
+### 5. lépés: Elem számának beállítása oldalanként (fő kulcsszó a műveletben)
 ```java
-options.getArchiveOptions().setItemsPerPage(10); // Az alapértelmezett érték 16
+options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
 ## Gyakorlati alkalmazások
 
-- **Dokumentumkezelő rendszerek:** Zökkenőmentesen integrálható archívummegtekintési funkciók.
-- **Webportálok:** Biztosítson könnyű hozzáférést a felhasználók számára letölthető tartalmakhoz webbarát formátumban.
-- **Együttműködési eszközök:** Lehetővé teheti a csapattagok számára, hogy közvetlenül a böngészőjükben tekinthessék át a megosztott dokumentumokat.
+- **Dokumentumkezelő rendszerek:** Archívum‑előnézet funkció hozzáadása extra nézőprogramok telepítése nélkül.  
+- **Webportálok:** Felhasználók számára gyors, letöltés nélküli mód biztosítása a csomagolt dokumentumok felfedezésére.  
+- **Együttműködési eszközök:** Csapatok közvetlenül a böngészőben ellenőrizhetik a megosztott archívumokat.
 
-## Teljesítménybeli szempontok
+## Teljesítménybeli megfontolások
 
-A GroupDocs.Viewer megvalósításakor vegye figyelembe az alábbi teljesítménynövelő tippeket:
-- **Erőforrás-gazdálkodás:** Figyelje a memóriahasználatot, és szükség esetén optimalizálja a szemétgyűjtési beállításokat.
-- **Kötegelt feldolgozás:** Nagyszámú archívum konvertálása esetén kötegelt feldolgozással kezelje a rendszerterhelést.
-- **Gyorsítótárazási stratégia:** A sebesség növelése érdekében implementáljon gyorsítótárazási mechanizmusokat a gyakran használt dokumentumokhoz.
+- **Erőforrás‑kezelés:** Figyelje a memóriahasználatot; nagy kötegek esetén érdemes a JVM szemétgyűjtőjét finomhangolni.  
+- **Kötegelt archívumkonvertálás:** Iteráljon egy archívumfájl‑listán, és hívja meg ugyanazt a renderelési logikát a maximális áteresztőképesség érdekében.  
+- **Gyorsítótárazási stratégia:** Tárolja a renderelt HTML‑t gyorsítótárban, ha ugyanazt az archívumot gyakran kérik le.
 
-## Következtetés
+## Gyakran Ismételt Kérdések
 
-Most már elsajátítottad, hogyan konvertálhatsz archív fájlokat egyoldalas és többoldalas HTML formátumba a GroupDocs.Viewer Java használatával. Kísérletezz különböző beállításokkal, hogy megtaláld, mi működik a legjobban az adott felhasználási esetedben. További felfedezéshez érdemes lehet további funkciók integrálását vagy a GroupDocs.Viewer által támogatott más dokumentumtípusokkal való kísérletezést is fontolóra venni.
+**Q: Mi a GroupDocs.Viewer Java?**  
+A: Egy sokoldalú könyvtár dokumentumok – köztük archívumok – HTML‑re, PDF‑re és képekre történő rendereléséhez.
 
-Készen állsz a következő lépésre? Alkalmazd ezeket a technikákat a projektjeidben, és nézd meg, hogyan javítják a munkafolyamatodat!
+**Q: Hogyan szerezhetek ingyenes próbaverziót a GroupDocs.Viewer‑hez?**  
+A: Látogassa meg a [free trial link](https://releases.groupdocs.com/viewer/java/) oldalt a letöltéshez és teszteléshez.
 
-## GYIK szekció
+**Q: Konvertálhatok más dokumentumtípusokat is az archívumok mellett?**  
+A: Igen, a viewer támogatja a PDF‑eket, Word‑et, Excelt és még sok más formátumot.
 
-1. **Mi az a GroupDocs.Viewer Java-ban?**
-   - Sokoldalú könyvtár dokumentumok különféle formátumokba, beleértve a HTML-t is, történő rendereléséhez.
-2. **Hogyan szerezhetem meg a GroupDocs.Viewer ingyenes próbaverzióját?**
-   - Látogassa meg a [ingyenes próbaverzió linkje](https://releases.groupdocs.com/viewer/java/) letöltéshez és teszteléshez.
-3. **Konvertálhatok más dokumentumtípusokat a GroupDocs.Viewer Java segítségével?**
-   - Igen, az archívumokon túl más formátumokat is támogat, például PDF-eket és Word-dokumentumokat.
-4. **Mit tegyek, ha lassú a renderelés?**
-   - Optimalizálja az erőforrás-felhasználást, vagy állítsa be az oldalonkénti elemek számát többoldalas kimenetekhez.
-5. **Hogyan vehetem fel a kapcsolatot a GroupDocs.Viewer Java támogatásával?**
-   - Érd el őket [támogatási fórum](https://forum.groupdocs.com/c/viewer/9) segítségért.
+**Q: Mit tegyek, ha a renderelés lassú?**  
+A: Csökkentse az oldalankénti elemek számát, engedélyezze a streaminget, vagy dolgozzon kisebb kötegekkel.
 
-## Erőforrás
+**Q: Hol kaphatok segítséget vagy támogatást?**  
+A: Lépjen kapcsolatba a [support forum](https://forum.groupdocs.com/c/viewer/9) segítségével.
 
-- **Dokumentáció:** Merüljön el mélyebben a funkcionalitásban a [GroupDocs dokumentáció](https://docs.groupdocs.com/viewer/java/).
-- **API-hivatkozás:** Részletes API-referenciákat itt talál: [GroupDocs API](https://reference.groupdocs.com/viewer/java/).
-- **Letöltés:** A legújabb verzió elérése innen: [letöltési oldal](https://releases.groupdocs.com/viewer/java/).
-- **Vásárlás és licencelés:** Tudjon meg többet a vásárlási lehetőségekről a weboldalukon [vásárlási oldal](https://purchase.groupdocs.com/buy).
-- **Támogatás és közösség:** Lépjen kapcsolatba a közösséggel, vagy kérjen támogatást a következőn keresztül: [GroupDocs fórum](https://forum.groupdocs.com/c/viewer/9).
+**Q: Lehetséges a CSS és a képek közvetlen beágyazása a HTML‑be?**  
+A: Teljesen – használja a `HtmlViewOptions.forEmbeddedResources`‑t a példákban látható módon.
+
+**Q: Hogyan konvertálok kötegelt módon egy mappában lévő archívumokat?**  
+A: Iteráljon minden fájlon egy `for` ciklussal, és alkalmazza ugyanazt a `Viewer` és `HtmlViewOptions` konfigurációt minden iterációra.
+
+## Források
+
+- **Dokumentáció:** Mélyedjen el a funkcionalitásban a [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) segítségével.  
+- **API referencia:** Tekintse meg a teljes API‑t a [GroupDocs API](https://reference.groupdocs.com/viewer/java/) oldalon.  
+- **Letöltés:** Szerezze be a legújabb binárisokat a [download page](https://releases.groupdocs.com/viewer/java/) oldalról.  
+- **Vásárlás és licenc:** Tekintse át a lehetőségeket a [purchase page](https://purchase.groupdocs.com/buy) oldalon.  
+- **Támogatás és közösség:** Csatlakozzon a beszélgetésekhez a [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) oldalon.
+
+---
+
+**Utoljára frissítve:** 2026-02-23  
+**Tesztelve a következővel:** GroupDocs.Viewer 25.2  
+**Szerző:** GroupDocs
