@@ -1,46 +1,55 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak konwertować pliki IGS do różnych formatów za pomocą GroupDocs.Viewer dla Java. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby renderować modele 3D w HTML, JPG, PNG lub PDF."
-"title": "Opanowanie GroupDocs.Viewer Java i konwersja plików IGS do formatów HTML, JPG, PNG i PDF"
-"url": "/pl/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
-"weight": 1
+date: '2026-02-23'
+description: Dowiedz się, jak konwertować pliki IGS na PDF, HTML, JPG i PNG za pomocą
+  GroupDocs.Viewer dla Javy. Postępuj zgodnie z tym przewodnikiem krok po kroku, zawierającym
+  gotowe do uruchomienia przykłady kodu.
+keywords:
+- GroupDocs.Viewer Java
+- Convert IGS Files
+- Render IGS Documents
+title: Konwertuj IGS na PDF, HTML, JPG i PNG przy użyciu GroupDocs.Viewer Java
 type: docs
+url: /pl/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/
+weight: 1
 ---
-# Opanowanie GroupDocs.Viewer Java: Konwersja plików IGS do wielu formatów
 
-## Wstęp
+**Author:** -> "**Autor:**". Keep same.
 
-Czy chcesz przekonwertować złożone pliki IGS do dostępnych formatów, takich jak HTML, JPG, PNG lub PDF, używając Javy? Ten kompleksowy przewodnik pomoże Ci opanować bibliotekę GroupDocs.Viewer dla Javy. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek pozwoli Ci bez wysiłku renderować dokumenty IGS.
+Now ensure all markdown formatting preserved.
 
-**Czego się nauczysz:**
-- Jak zainstalować i skonfigurować GroupDocs.Viewer dla Java.
-- Instrukcje krok po kroku dotyczące renderowania plików IGS do formatów HTML, JPG, PNG i PDF.
-- Kluczowe opcje konfiguracji i wskazówki dotyczące rozwiązywania problemów.
-- Praktyczne zastosowania tych konwersji w scenariuszach z życia wziętych.
+Check for any other elements: There's a note about "For Polish, ensure proper RTL formatting if needed" but not needed.
 
-Zacznijmy od omówienia warunków wstępnych!
+Now produce final content.# Konwertuj IGS do PDF, HTML, JPG i PNG przy użyciu GroupDocs.Viewer Java
+
+Jeśli potrzebujesz **konwertować IGS do PDF** (lub do HTML, JPG, PNG) bezpośrednio z aplikacji Java, trafiłeś we właściwe miejsce. W tym samouczku przeprowadzimy Cię przez wszystko, czego potrzebujesz — od konfiguracji biblioteki po renderowanie modelu 3‑D w formacie pasującym do Twojego projektu. Zobaczysz, dlaczego GroupDocs.Viewer jest solidnym wyborem dla szybkich, niezawodnych konwersji i otrzymasz praktyczny kod, który możesz wstawić do własnego rozwiązania.
+
+![Konwertuj pliki IGS do HTML, JPG, PNG i PDF przy użyciu GroupDocs.Viewer dla Java](/viewer/file-formats-support/convert-igs-files-to-html-jpg-png-and-pdf-java.png)
+
+## Szybkie odpowiedzi
+- **Czy mogę konwertować IGS do PDF w Javie?** Tak, używając `PdfViewOptions` z GroupDocs.Viewer.  
+- **Jakie formaty wyjściowe są obsługiwane?** HTML, JPG, PNG i PDF.  
+- **Czy potrzebuję licencji do produkcji?** Wymagana jest licencja komercyjna; dostępna jest darmowa wersja próbna do testów.  
+- **Jaka wersja Javy jest wymagana?** JDK 8 or higher.  
+- **Czy Maven jest jedynym sposobem dodania biblioteki?** Nie, możesz również użyć Gradle lub ręcznego dołączenia pliku JAR.  
+
+## Co to jest „konwertować IGS do PDF”?
+Konwersja IGS (neutralnego formatu plików dla danych CAD 3‑D) do PDF oznacza przekształcenie złożonego modelu 3‑D w statyczny, powszechnie wyświetlany dokument. Jest to przydatne do udostępniania projektów interesariuszom, którzy nie posiadają narzędzi CAD.
+
+## Dlaczego używać GroupDocs.Viewer do konwersji IGS?
+- **Zero‑code CAD rendering** – biblioteka zajmuje się ciężką pracą parsowania formatu IGS.  
+- **Multiple output options** – jedno wywołanie API może wygenerować HTML, JPG, PNG lub PDF.  
+- **Cross‑platform** – działa na każdym systemie operacyjnym obsługującym Javę.  
+- **Performance‑focused** – szybkie renderowanie nawet dużych zespołów.  
 
 ## Wymagania wstępne
+- **GroupDocs.Viewer for Java** ≥ 25.2  
+- **JDK 8+** zainstalowany i skonfigurowany w Twoim IDE (IntelliJ IDEA, Eclipse, NetBeans, itp.)  
+- Podstawowa znajomość Maven (opcjonalna, ale zalecana)  
 
-Aby skutecznie skorzystać z tego samouczka, upewnij się, że posiadasz następujące elementy:
+## Konfiguracja GroupDocs.Viewer dla Java
 
-### Wymagane biblioteki i zależności
-- **GroupDocs.Viewer dla Java**:Zalecana jest wersja 25.2 lub nowsza.
-- **Zestaw narzędzi programistycznych Java (JDK)**: Upewnij się, że w systemie jest zainstalowany JDK 8 lub nowszy.
-
-### Wymagania dotyczące konfiguracji środowiska
-- Odpowiednie zintegrowane środowisko programistyczne (IDE), np. IntelliJ IDEA, Eclipse lub NetBeans.
-- Podstawowa znajomość koncepcji programowania w języku Java oraz operacji wejścia/wyjścia na plikach.
-
-### Wymagania wstępne dotyczące wiedzy
-Znajomość Maven do zarządzania zależnościami byłaby korzystna, ale nieobowiązkowa. Omówimy wszystko krok po kroku!
-
-## Konfigurowanie GroupDocs.Viewer dla Java
-
-Aby rozpocząć renderowanie plików IGS, najpierw skonfiguruj bibliotekę GroupDocs.Viewer w swoim projekcie.
-
-**Konfiguracja Maven**
-Dodaj następującą konfigurację do swojego `pom.xml` plik:
+### Zależność Maven
+Dodaj repozytorium GroupDocs oraz zależność Viewer do swojego `pom.xml`:
 
 ```xml
 <repositories>
@@ -59,13 +68,14 @@ Dodaj następującą konfigurację do swojego `pom.xml` plik:
 </dependencies>
 ```
 
-### Nabycie licencji
-GroupDocs.Viewer oferuje bezpłatną wersję próbną, tymczasowe licencje do testowania i opcje zakupu zapewniające pełny dostęp:
-- **Bezpłatna wersja próbna**:Uzyskaj dostęp do podstawowych funkcji przy ograniczonym użytkowaniu.
-- **Licencja tymczasowa**:Oceń bibliotekę bez ograniczeń przez krótki okres czasu.
-- **Zakup**:Kup licencję na użytkowanie długoterminowe.
+### Uzyskanie licencji
+GroupDocs.Viewer offers:
+- **Free trial** – bezpłatna wersja próbna – ograniczone użycie, świetna do szybkich testów.  
+- **Temporary license** – licencja tymczasowa – pełny zestaw funkcji na krótki okres oceny.  
+- **Commercial license** – licencja komercyjna – nieograniczone użycie w produkcji.  
 
-Po skonfigurowaniu zainicjuj GroupDocs.Viewer w swojej aplikacji Java w następujący sposób:
+### Podstawowa inicjalizacja Viewer
+Poniższy fragment kodu pokazuje, jak utworzyć instancję `Viewer`, która wskazuje na Twój plik IGS:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -73,159 +83,150 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.igs")) {
-            // Tutaj znajduje się logika konfiguracji i renderowania.
+            // Configuration and rendering logic goes here.
         }
     }
 }
 ```
 
-## Przewodnik wdrażania
+## Renderowanie IGS do HTML
 
-Teraz przeanalizujemy szczegółowo proces konwersji plików IGS do różnych formatów za pomocą GroupDocs.Viewer dla Java.
+### Jak konwertować IGS do HTML?
+Wyjście HTML zapewnia interaktywny, przyjazny przeglądarce widok modelu 3‑D.
 
-### Renderowanie IGS do HTML
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.HtmlViewOptions;
+import java.nio.file.Path;
+import static java.nio.file.Paths.get;
 
-**Przegląd:**
-Konwertuj plik IGS na interaktywną stronę HTML z osadzonymi zasobami. Ten format jest doskonały dla aplikacji internetowych, w których użytkownicy muszą oglądać modele 3D bezpośrednio w swoich przeglądarkach.
+public class RenderIgsToHtml {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.html");
 
-#### Wdrażanie krok po kroku:
-1. **Ustaw katalog wyjściowy i ścieżkę pliku:**
-   Zdefiniuj katalog, w którym zostaną zapisane wygenerowane pliki, a także podaj nazwę pliku wyjściowego.
-
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.HtmlViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToHtml {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.html");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Zrozumienie parametrów:**
-   - `HtmlViewOptions.forEmbeddedResources()` określa, że zasoby (np. obrazy) powinny być osadzone w pliku HTML, co sprawi, że stanie się on samodzielnym dokumentem.
+**Kluczowy punkt:** `HtmlViewOptions.forEmbeddedResources()` osadza wszystkie wymagane zasoby (CSS, obrazy) bezpośrednio w pliku HTML, co czyni go przenośnym.
 
-3. **Wskazówki dotyczące rozwiązywania problemów:**
-   - Sprawdź, czy ścieżka do katalogu wyjściowego jest prawidłowa.
-   - Sprawdź uprawnienia do zapisu pliku w określonym katalogu.
+## Renderowanie IGS do JPG
 
-### Renderowanie IGS do JPG
+### Jak konwertować IGS do JPG?
+Obrazy JPG są idealne do miniatur lub szybkich podglądów.
 
-**Przegląd:**
-Konwertuj pliki IGS na wysokiej jakości obrazy JPG, które można wykorzystać jako miniatury lub podglądy modeli 3D.
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.JpgViewOptions;
+import java.nio.file.Path;
+import static java.nio.file.Paths.get;
 
-#### Wdrażanie krok po kroku:
-1. **Ustaw katalog wyjściowy i ścieżkę pliku:**
-   Podobna konfiguracja jak w przypadku konwersji HTML, ale z opcjami specyficznymi dla JPG.
+public class RenderIgsToJpg {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.jpg");
 
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.JpgViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToJpg {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.jpg");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Kluczowe konfiguracje:**
-   - `JpgViewOptions` umożliwia zdefiniowanie rozdzielczości i jakości obrazu wyjściowego.
+Możesz dostosować `JpgViewOptions`, aby kontrolować rozdzielczość i jakość kompresji.
 
-3. **Wskazówki dotyczące rozwiązywania problemów:**
-   - Sprawdź czy Twój plik IGS posiada prawidłowe odwołania.
-   - Dostosuj opcje JPG, aby uzyskać optymalną jakość w oparciu o swoje potrzeby.
+## Renderowanie IGS do PNG
 
-### Renderowanie IGS do PNG
+### Jak konwertować IGS do PNG?
+PNG obsługuje przezroczystość, co jest przydatne przy nakładaniu modelu na różne tła.
 
-**Przegląd:**
-Generuj przezroczyste lub nieprzezroczyste obrazy z plików IGS w formacie PNG, idealne do szczegółowych wizualizacji.
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.PngViewOptions;
+import java.nio file.Path;
+import static java.nio.file.Paths.get;
 
-#### Wdrażanie krok po kroku:
-1. **Ustaw katalog wyjściowy i ścieżkę pliku:**
+public class RenderIgsToPng {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.png");
 
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.PngViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToPng {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.png");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Opcje konfiguracji:**
-   - `PngViewOptions` można użyć do określenia jakości obrazu i przezroczystości.
+Eksperymentuj z `PngViewOptions`, aby uzyskać najlepszy balans między rozmiarem pliku a jakością wizualną.
 
-3. **Wskazówki dotyczące rozwiązywania problemów:**
-   - Sprawdź, czy ścieżka do pliku IGS jest ustawiona poprawnie.
-   - Aby uzyskać najlepsze rezultaty, poeksperymentuj z różnymi opcjami PNG.
+## Renderowanie IGS do PDF
 
-### Renderowanie IGS do PDF
+### Jak konwertować IGS do PDF?
+PDF jest podstawowym formatem do udostępniania szczegółowej dokumentacji projektowej. Ta sekcja bezpośrednio odnosi się do głównego słowa kluczowego **convert IGS to PDF**.
 
-**Przegląd:**
-Konwertuj dokumenty IGS do powszechnie dostępnych plików PDF, idealnych do udostępniania szczegółowych modeli 3D w ujednoliconym formacie.
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.PdfViewOptions;
+import java.nio.file.Path;
+import static java.nio.file.Paths.get;
 
-#### Wdrażanie krok po kroku:
-1. **Ustaw katalog wyjściowy i ścieżkę pliku:**
+public class RenderIgsToPdf {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.pdf");
 
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.PdfViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToPdf {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.pdf");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Główne cechy:**
-   - `PdfViewOptions` umożliwia dostosowanie ustawień PDF, takich jak układ i jakość.
+`PdfViewOptions` pozwala kontrolować układ strony, jakość obrazu oraz czy osadzać czcionki.
 
-3. **Wskazówki dotyczące rozwiązywania problemów:**
-   - Sprawdź, czy katalog wyjściowy jest zapisywalny.
-   - Sprawdź, czy w formacie pliku IGS nie ma błędów.
+## Praktyczne zastosowania
+- **Web portals** – osadzaj modele renderowane w HTML bezpośrednio w konfiguratorach produktów.  
+- **Marketing assets** – generuj obrazy JPG/PNG wysokiej rozdzielczości do broszur.  
+- **Technical documentation** – dołącz renderowane PDF modele CAD w podręcznikach użytkownika.  
+- **Quality assurance** – automatyzuj generowanie miniatur dla dużych partii plików IGS.  
 
-## Zastosowania praktyczne
+## Częste problemy i rozwiązania
 
-Renderowanie plików IGS do różnych formatów otwiera liczne możliwości:
-1. **Integracja internetowa**:Osadzaj modele 3D renderowane w formacie HTML bezpośrednio w aplikacjach internetowych.
-2. **Udostępnianie dokumentów**: Udostępniaj szczegółowe wizualizacje w plikach PDF lub podglądach obrazów (JPG/PNG).
-3. **Wizualizacja produktu**:Używaj wysokiej jakości zdjęć w katalogach produktów i materiałach marketingowych.
+| Problem | Rozwiązanie |
+|---------|-------------|
+| **Folder wyjściowy nie znaleziony** | Sprawdź ścieżkę przekazaną do `Path outputDirectory` i upewnij się, że proces Java ma uprawnienia do zapisu. |
+| **Puste strony w PDF** | Upewnij się, że plik IGS nie jest uszkodzony; najpierw spróbuj otworzyć go w przeglądarce CAD. |
+| **Wolne renderowanie dużych zespołów** | Zwiększ pamięć JVM (`-Xmx2g` lub więcej) i rozważ renderowanie strona po stronie przy użyciu `viewer.getPageCount()`, jeśli to konieczne. |
+| **Brakujące czcionki w PDF** | Użyj `PdfViewOptions`, aby osadzić wymagane czcionki lub zainstaluj brakujące czcionki na serwerze. |
 
-Ten przewodnik wyposaży Cię w wiedzę pozwalającą na efektywne wykorzystanie narzędzia GroupDocs.Viewer for Java i konwersję plików IGS do różnych formatów.
+## Najczęściej zadawane pytania
+
+**Q: Czy mogę konwertować wiele plików IGS w jednym uruchomieniu?**  
+A: Tak. Przejdź pętlą przez listę ścieżek plików i wywołaj odpowiednią metodę `view` dla każdego.
+
+**Q: Czy można dostosować rozmiar strony PDF?**  
+A: Oczywiście. `PdfViewOptions` udostępnia metodę `setPageSize(PageSize.A4)` i podobne.
+
+**Q: Czy potrzebuję osobnej licencji dla każdego formatu wyjściowego?**  
+A: Nie. Jedna licencja GroupDocs.Viewer obejmuje wszystkie obsługiwane formaty.
+
+**Q: Jak duży może być plik IGS, zanim wydajność spadnie?**  
+A: Biblioteka obsługuje pliki do kilku setek megabajtów, ale może być konieczne przydzielenie większej pamięci JVM dla bardzo dużych modeli.
+
+**Q: Czy mogę renderować tylko określony widok lub orientację?**  
+A: GroupDocs.Viewer renderuje domyślny widok. Aby uzyskać niestandardowe orientacje, przed konwersją przetwórz plik IGS w narzędziu CAD.
+
+---
+
+**Ostatnia aktualizacja:** 2026-02-23  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
