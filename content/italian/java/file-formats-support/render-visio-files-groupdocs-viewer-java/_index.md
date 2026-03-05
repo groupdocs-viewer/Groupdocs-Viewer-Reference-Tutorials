@@ -1,32 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come convertire i documenti di Microsoft Visio in HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per Java. Migliora la collaborazione rendendo i diagrammi complessi universalmente accessibili."
-"title": "Rendering di file Visio con GroupDocs.Viewer per Java&#58; una guida completa alla conversione dei file"
-"url": "/it/java/file-formats-support/render-visio-files-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-03-05'
+description: Scopri come convertire Visio in HTML, PDF, JPG e PNG usando GroupDocs.Viewer
+  per Java. Questo tutorial copre l'installazione, le opzioni di rendering e casi
+  d'uso reali.
+keywords:
+- GroupDocs.Viewer Java
+- render Visio documents
+- convert Microsoft Visio
+- convert visio to html
+title: 'Converti Visio in HTML con GroupDocs.Viewer per Java: Guida completa'
 type: docs
+url: /it/java/file-formats-support/render-visio-files-groupdocs-viewer-java/
+weight: 1
 ---
-# Rendering di file Visio con GroupDocs.Viewer per Java: una guida completa
-## Introduzione
-Nell'era digitale odierna, condividere e visualizzare diagrammi complessi in modo efficiente è fondamentale. Che siate sviluppatori software o professionisti, convertire i documenti di Microsoft Visio in formati universalmente accessibili come HTML, JPG, PNG o PDF può migliorare significativamente la collaborazione e la presentazione. Questo tutorial vi guiderà nell'utilizzo di GroupDocs.Viewer per Java per visualizzare i documenti Visio in questi formati in modo fluido.
 
-**Cosa imparerai:**
-- Impostazione di GroupDocs.Viewer per Java
-- Rendering di file Visio in HTML, JPG, PNG e PDF
-- Configurazione delle opzioni di rendering per un output ottimale
+# Converti Visio in HTML con GroupDocs.Viewer per Java
 
-Analizziamo ora i prerequisiti prima di iniziare a implementare questa potente soluzione.
-### Prerequisiti
-Prima di iniziare, assicurati di avere:
-- **Kit di sviluppo Java (JDK)** installato sul tuo computer.
-- Comprensione di base dei concetti di programmazione Java.
-- Un IDE come IntelliJ IDEA o Eclipse configurato per lo sviluppo.
+Ngli ambienti collaborativi di oggi, la possibilità di **convertire Visio in HTML** (e anche in PDF, JPG, PNG) è essenziale per condividere diagrammi senza richiedere l’applicazione Visio originale. Che tu stia creando un portale di documentazione, un wiki interno o una dashboard di reporting, il rendering dei file Visio in formati web‑friendly aumenta l’accessibilità e accelera il processo decisionale. In questa guida percorreremo l’intero processo, dalla configurazione del progetto al rendering di ciascun formato di output con GroupDocs.Viewer per Java.
 
-Inoltre, dovrai aggiungere GroupDocs.Viewer come dipendenza nel tuo progetto. Questo tutorial presuppone l'utilizzo di Maven per la gestione delle dipendenze.
-### Impostazione di GroupDocs.Viewer per Java
-Per iniziare a utilizzare GroupDocs.Viewer per Java, seguire questi passaggi:
-**Configurazione Maven:**
-Aggiungi il seguente repository e la dipendenza al tuo `pom.xml` file:
+![Render Visio Files con GroupDocs.Viewer per Java](/viewer/file-formats-support/render-visio-files.png)
+
+## Risposte rapide
+- **Che cosa significa “convert visio to html”?** Trasforma un file .vsdx in una pagina HTML autonoma che può essere visualizzata in qualsiasi browser.  
+- **Posso ottenere anche PDF, JPG o PNG?** Sì – la stessa API Viewer supporta la conversione in PDF, JPG e PNG con poche modifiche al codice.  
+- **È necessaria una licenza?** Una prova gratuita o una licenza temporanea funziona per la valutazione; è richiesta una licenza completa per la produzione.  
+- **Quale versione di Java è necessaria?** È consigliato Java 8+; la libreria è compatibile anche con JDK più recenti.  
+- **È possibile il batch processing?** Assolutamente – avvolgi il codice di rendering in un ciclo e riutilizza l’istanza Viewer con il pattern try‑with‑resources.
+
+## Cos'è “convert visio to html”?
+Convertire Visio in HTML significa prendere un diagramma Visio (tipicamente un file .vsdx o .vsd) e generare un documento HTML che incorpora tutte le forme, il testo e lo stile. Il risultato è una pagina web portabile che preserva la fedeltà visiva del diagramma originale senza necessità di avere Visio installato sul client.
+
+## Perché convertire Visio in HTML, PDF, JPG o PNG?
+- **Accesso universale:** HTML e PDF si aprono in qualsiasi browser; JPG/PNG sono facili da inserire in presentazioni.  
+- **Collaborazione:** I membri del team possono commentare direttamente sulla vista HTML o allegare il PDF ai ticket.  
+- **Prestazioni:** Le immagini (JPG/PNG) sono leggere per anteprime rapide, mentre il PDF mantiene la qualità vettoriale per la stampa.  
+- **Automazione:** Gli script possono generare documentazione al volo, alimentando pipeline CI o strumenti di reporting.
+
+## Prerequisiti
+- Java Development Kit (JDK) 8 o successivo installato.  
+- Un IDE come IntelliJ IDEA o Eclipse (opzionale ma utile).  
+- Maven per la gestione delle dipendenze.  
+- Una licenza valida di GroupDocs.Viewer (trial o acquistata).
+
+### Configurazione Maven
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
+
 ```xml
 <repositories>
    <repository>
@@ -44,154 +62,159 @@ Aggiungi il seguente repository e la dipendenza al tuo `pom.xml` file:
    </dependency>
 </dependencies>
 ```
-**Acquisizione della licenza:**
-GroupDocs offre una prova gratuita, licenze temporanee per scopi di valutazione e opzioni di acquisto per l'accesso completo. Visita il loro sito [pagina di acquisto](https://purchase.groupdocs.com/buy) per esplorare le tue opzioni.
-### Guida all'implementazione
-#### Rendering di documenti Visio in HTML
-Il rendering di un documento Visio in HTML lo rende facilmente accessibile su diverse piattaforme senza richiedere software specializzati.
-**Passaggio 1: impostare la directory di output**
+
+### Acquisizione della licenza
+GroupDocs offre una prova gratuita, licenze temporanee per la valutazione e opzioni di acquisto completo. Visita la loro [pagina di acquisto](https://purchase.groupdocs.com/buy) per ottenere la licenza appropriata per il tuo progetto.
+
+## Rendering di file Visio in HTML (convert visio to html)
+Di seguito trovi il codice passo‑a‑passo necessario per trasformare un diagramma Visio in una pagina HTML autonoma.
+
+### Passo 1: Configura la directory di output
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/RenderingVisioToHTML");
 ```
-**Passaggio 2: inizializzare il visualizzatore e le opzioni**
-Crea un'istanza di `Viewer` classe con il percorso del file Visio. Quindi, configura `HtmlViewOptions` per incorporare risorse direttamente nell'HTML.
+
+### Passo 2: Inizializza Viewer e configura le opzioni HTML
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("result_page.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_VISIO")) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
     
-    // Configurare le impostazioni di rendering
+    // Configure rendering settings
     options.getVisioRenderingOptions().setRenderFiguresOnly(true);
     options.getVisioRenderingOptions().setFigureWidth(250);
     
-    // Renderizza il file Visio in HTML
+    // Render the Visio file to HTML
     viewer.view(options);
 }
 ```
-**Spiegazione:**
-- `HtmlViewOptions.forEmbeddedResources(pageFilePathFormat)` garantisce che tutte le risorse siano incorporate nell'HTML, rendendolo autonomo.
-- `setRenderFiguresOnly(true)` configura il motore di rendering per visualizzare solo le figure del documento Visio, riducendo l'ingombro.
-- `setFigureWidth(250)` imposta una larghezza coerente per le figure renderizzate.
-#### Rendering di documenti Visio in JPG
-La conversione dei documenti Visio in immagini JPEG è la soluzione ideale per condividere diagrammi come immagini autonome.
-**Passaggio 1: impostare la directory di output**
+
+**Spiegazione:**  
+- `HtmlViewOptions.forEmbeddedResources` crea un unico file HTML con tutte le immagini codificate in base64, semplificando la distribuzione.  
+- `setRenderFiguresOnly(true)` rimuove gli elementi non‑figurativi, mantenendo l’output pulito.  
+- `setFigureWidth(250)` standardizza la larghezza di ciascun elemento del diagramma.
+
+## Rendering di file Visio in JPG (convert visio to jpg)
+Se ti serve un’immagine raster per anteprime rapide, usa il renderer JPG.
+
+### Passo 1: Configura la directory di output
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/RenderingVisioToJPG");
 ```
-**Passaggio 2: inizializzare il visualizzatore e le opzioni**
-Utilizzo `JpgViewOptions` per configurare il processo di rendering per il formato JPEG.
+
+### Passo 2: Inizializza Viewer con le opzioni JPG
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("visio_result.jpg");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_VISIO")) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     
-    // Configurare le impostazioni di rendering
+    // Configure rendering settings
     options.getVisioRenderingOptions().setRenderFiguresOnly(true);
     options.getVisioRenderingOptions().setFigureWidth(250);
     
-    // Renderizza il file Visio in JPG
+    // Render the Visio file to JPG
     viewer.view(options);
 }
 ```
-**Spiegazione:**
-- `JpgViewOptions` viene utilizzato per impostare configurazioni di rendering specifiche per JPEG.
-- Per coerenza, qui valgono le stesse impostazioni di larghezza e sola figura.
-#### Rendering di documenti Visio in PNG
-Il formato PNG offre una compressione senza perdite, rendendolo adatto per diagrammi di alta qualità.
-**Passaggio 1: impostare la directory di output**
+
+## Rendering di file Visio in PNG (convert visio to png)
+PNG offre qualità lossless, perfetta per esigenze ad alta risoluzione.
+
+### Passo 1: Configura la directory di output
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/RenderingVisioToPNG");
 ```
-**Passaggio 2: inizializzare il visualizzatore e le opzioni**
-Configurare `PngViewOptions` per rendere il documento come immagine PNG.
+
+### Passo 2: Inizializza Viewer con le opzioni PNG
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("visio_result.png");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_VISIO")) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     
-    // Configurare le impostazioni di rendering
+    // Configure rendering settings
     options.getVisioRenderingOptions().setRenderFiguresOnly(true);
     options.getVisioRenderingOptions().setFigureWidth(250);
     
-    // Renderizza il file Visio in PNG
+    // Render the Visio file to PNG
     viewer.view(options);
 }
 ```
-**Spiegazione:**
-- `PngViewOptions` fornisce configurazioni specifiche per il rendering PNG.
-- Impostazioni di figura coerenti garantiscono l'uniformità in tutti i formati.
-#### Rendering di documenti Visio in PDF
-Il PDF è un formato versatile per la condivisione di documenti, preservandone layout e formattazione.
-**Passaggio 1: impostare la directory di output**
+
+## Rendering di file Visio in PDF (convert visio to pdf)
+Il PDF è ideale per la stampa e l’archiviazione mantenendo i dati vettoriali.
+
+### Passo 1: Configura la directory di output
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/RenderingVisioToPDF");
 ```
-**Passaggio 2: inizializzare il visualizzatore e le opzioni**
-Utilizzo `PdfViewOptions` per convertire il file Visio in un documento PDF.
+
+### Passo 2: Inizializza Viewer con le opzioni PDF
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("visio_result.pdf");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_VISIO")) {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
     
-    // Configurare le impostazioni di rendering
+    // Configure rendering settings
     options.getVisioRenderingOptions().setRenderFiguresOnly(true);
     options.getVisioRenderingOptions().setFigureWidth(250);
     
-    // Convertire il file Visio in PDF
+    // Render the Visio file to PDF
     viewer.view(options);
 }
 ```
-**Spiegazione:**
-- `PdfViewOptions` consente una configurazione dettagliata del rendering PDF.
-- Le impostazioni delle figure garantiscono chiarezza e leggibilità nell'output.
-### Applicazioni pratiche
-1. **Rapporti aziendali:** Condividi diagrammi complessi con le parti interessate in un formato universalmente accessibile.
-2. **Contenuti educativi:** Converti i disegni tecnici in materiali didattici facilmente accessibili agli studenti.
-3. **Documentazione tecnica:** Fornire immagini chiare e di alta qualità delle architetture di sistema o dei flussi di lavoro.
-4. **Materiali di marketing:** Arricchisci le tue presentazioni con diagrammi visivamente accattivanti incorporati in PDF o pagine web.
-5. **Strumenti di collaborazione:** Integra i documenti renderizzati nelle piattaforme di collaborazione per una condivisione fluida.
-### Considerazioni sulle prestazioni
-- **Ottimizza l'utilizzo della memoria:** Assicurati che il tuo ambiente Java sia configurato per gestire in modo efficiente documenti di grandi dimensioni.
-- **Gestione delle risorse:** Chiudere tempestivamente le risorse utilizzando istruzioni try-with-resources.
-- **Elaborazione batch:** Per grandi volumi di documenti, valutare l'elaborazione in batch per gestire in modo efficace il carico di memoria e CPU.
-### Conclusione
-Seguendo questa guida, hai imparato a utilizzare GroupDocs.Viewer per Java per visualizzare i documenti Visio nei formati HTML, JPG, PNG e PDF. Questa funzionalità può migliorare significativamente l'accessibilità e la condivisione di diagrammi complessi su diverse piattaforme.
-**Prossimi passi:**
-- Sperimenta diverse opzioni di rendering per adattare gli output alle tue esigenze.
-- Esplorare le possibilità di integrazione con altri sistemi o applicazioni.
-Pronti a provarlo? Iniziate a implementare queste soluzioni oggi stesso!
+
+## Applicazioni pratiche
+1. **Report aziendali:** Inserisci i diagrammi convertiti direttamente nelle presentazioni o nei PDF per le revisioni degli stakeholder.  
+2. **Contenuti educativi:** Trasforma mappe di processo complesse in tutorial HTML pronti per il web per gli studenti.  
+3. **Documentazione tecnica:** Fornisci screenshot PNG chiari di diagrammi di architettura nella documentazione API.  
+4. **Materiale di marketing:** Usa JPG ad alta risoluzione nei brochure senza preoccuparti della compatibilità dei file.  
+5. **Piattaforme collaborative:** Carica gli output HTML su Confluence o SharePoint per una visualizzazione immediata.
+
+## Considerazioni sulle prestazioni
+- **Gestione della memoria:** I file Visio di grandi dimensioni possono consumare molta RAM; utilizza il pattern try‑with‑resources (come mostrato) per rilasciare le risorse native tempestivamente.  
+- **Batch processing:** Per conversioni in blocco, itera su una lista di file e riutilizza una singola istanza `Viewer` quando possibile, ma chiudila sempre dopo ogni file.  
+- **Sicurezza dei thread:** La classe Viewer non è thread‑safe; elabora ogni file in un proprio thread o sincronizza l’accesso.
+
+## Problemi comuni e soluzioni
+| Sintomo | Probabile causa | Correzione |
+|---------|----------------|------------|
+| **OutOfMemoryError** durante il rendering | Diagramma molto grande o heap insufficiente | Aumenta il flag JVM `-Xmx` o suddividi il documento in pagine prima del rendering. |
+| **Missing shapes in HTML** | `setRenderFiguresOnly(false)` non impostato quando serve il diagramma completo | Rimuovi la chiamata `setRenderFiguresOnly(true)` o impostala a `false`. |
+| **Blank PNG/JPG output** | Percorso file errato o permessi di scrittura insufficienti | Verifica che `outputDirectory` esista e che l’applicazione abbia i permessi di scrittura. |
+| **License validation error** | Uso di una licenza trial in produzione | Applica una chiave di licenza permanente tramite `Viewer.setLicense("path/to/license.file")`. |
 
 ## Domande frequenti
 
-**Domanda 1:** Posso personalizzare le dimensioni o la risoluzione dell'immagine di output durante il rendering dei file Visio?  
+**D:** Posso personalizzare la dimensione o la risoluzione dell’immagine di output quando renderizzo file Visio?  
+**R:** Sì, puoi regolare larghezza, altezza e DPI della figura tramite `VisioRenderingOptions` prima di chiamare `viewer.view(options)`.
 
-**UN:** Sì, puoi impostare la larghezza, l'altezza e la risoluzione della figura tramite `VisioRenderingOptions` per personalizzare la qualità dell'output.
+**D:** È possibile renderizzare solo pagine o diagrammi specifici all’interno di un file Visio?  
+**R:** GroupDocs.Viewer supporta il rendering di pagine specifiche specificando gli indici di pagina nelle opzioni di visualizzazione.
 
-**D2:** È possibile eseguire il rendering solo di pagine o diagrammi specifici all'interno di un file Visio?  
+**D:** La libreria supporta il rendering di oggetti collegati o incorporati nei diagrammi Visio?  
+**R:** Renderizza le figure principali; gli oggetti collegati potrebbero richiedere pre‑processing o gestione separata.
 
-**UN:** GroupDocs.Viewer consente il rendering specifico della pagina specificando gli indici o gli intervalli di pagina prima del rendering.
+**D:** Come automatizzo il batch processing di più file Visio?  
+**R:** Itera sulla tua collezione di file, applica la stessa logica di rendering all’interno di un blocco try‑with‑resources e gestisci la memoria tra le iterazioni.
 
-**D3:** La libreria supporta il rendering di oggetti collegati o incorporati nei diagrammi di Visio?  
-**UN:** Supporta il rendering delle figure, ma gli oggetti collegati o incorporati potrebbero richiedere ulteriore gestione o pre-elaborazione.
+**D:** Posso incorporare l’HTML renderizzato direttamente in un’applicazione web?  
+**R:** Assolutamente—poiché abbiamo usato `forEmbeddedResources`, il file HTML contiene tutte le risorse inline, rendendo semplice il servizio tramite un servlet o un host di file statici.
 
-**D4:** Come posso automatizzare l'elaborazione in batch di più file Visio?  
-
-**UN:** Esegui un ciclo tra i tuoi file e applica le funzioni di rendering in sequenza, gestendo le risorse con try-with-resources per garantire la stabilità.
-
-**D5:** Posso incorporare l'HTML renderizzato direttamente in un'applicazione web?  
-
-**UN:** Sì, generando codice HTML autonomo con risorse incorporate, è possibile incorporare senza problemi l'output nelle app Web.
-
-	
 ## Risorse
 - [Documentazione](https://docs.groupdocs.com/viewer/java/)
 - [Riferimento API](https://reference.groupdocs.com/viewer/java/)
-- [Scaricamento](https://releases.groupdocs.com/viewer/java/)
-- [Acquistare](https://purchase.groupdocs.com/buy)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Acquista](https://purchase.groupdocs.com/buy)
 - [Prova gratuita](https://releases.groupdocs.com/viewer/java/)
 - [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
 - [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ultimo aggiornamento:** 2026-03-05  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs
