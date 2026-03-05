@@ -1,33 +1,36 @@
 ---
-date: '2026-01-02'
-description: GroupDocs.Viewer ile JPG kalitesini ayarlayarak Java’da PDF boyutunu
-  nasıl küçülteceğinizi öğrenin; PDF görüntülerini sıkıştırmanın ve dosya boyutunu
-  görsel kaliteyle dengelemenin basit bir yolu.
+date: '2026-03-05'
+description: GroupDocs.Viewer ile JPG kalitesini ayarlayarak Java’da PDF sıkıştırmayı
+  öğrenin – dosya boyutu ve görsel sadakati dengeleyen basit bir Java PDF sıkıştırma
+  yöntemi.
 keywords:
 - reduce pdf size java
 - convert pptx to pdf
 - compress pdf images
-title: PDF Boyutunu Java ile Küçült – GroupDocs ile JPG Kalitesini Optimize Et
+title: Java'da PDF nasıl sıkıştırılır – JPG kalitesini optimize et
 type: docs
 url: /tr/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/
 weight: 1
 ---
 
-# PDF Boyutunu Azaltma Java – GroupDocs ile JPG Kalitesini Optimize Et
+# Java'da pdf nasıl sıkıştırılır – JPG Kalitesini Optimize Et
 
-Dosya boyutu ile görsel sadakati dengelemek, PDF'lerle çalışırken yaygın bir zorluktur. Bu öğreticide, GroupDocs.Viewer for Java kullanarak PDF belgeleri içinde JPG görüntü kalitesini ayarlayarak **reduce PDF size Java** nasıl yapılacağını keşfedeceksiniz. Kurulum, kod uygulaması ve pratik ipuçlarını adım adım gösterecek, böylece okunabilirliği kaybetmeden PDF görüntülerini güvenle sıkıştırabilirsiniz.
+Dosya boyutu ile görsel doğruluk arasında denge kurmak, PDF'lerle çalışırken yaygın bir zorluktur. Bu öğreticide **pdf nasıl sıkıştırılır** sorusunun cevabını, PDF belgelerindeki JPG görüntü kalitesini GroupDocs.Viewer for Java kullanarak ayarlayarak keşfedeceksiniz. Kurulum, kod uygulaması ve pratik ipuçlarını adım adım inceleyecek, böylece okunabilirliği kaybetmeden PDF görüntülerini güvenle sıkıştırabileceksiniz.
 
 ![GroupDocs.Viewer for Java ile PDF'lerde JPG Kalitesini Optimize Et](/viewer/advanced-rendering/optimize-jpg-quality-in-pdfs.png)
 
 ## Hızlı Yanıtlar
-- **“reduce PDF size Java” ne anlama geliyor?** Görüntü kalitesini, sıkıştırmayı ve kaynak yönetimini ayarlayarak Java uygulamalarında daha küçük PDF dosyaları oluşturmak.  
+- **“reduce PDF size Java” ne anlama geliyor?** Java uygulamalarında daha küçük PDF dosyaları oluşturmak için görüntü kalitesini, sıkıştırmayı ve kaynak yönetimini ayarlamak.  
 - **JPG kalitesini kontrol eden ayar hangisidir?** `PdfViewOptions.setJpgQuality(byte quality)`; değer 0 (en düşük) ile 100 (en yüksek) arasında değişir.  
-- **Aynı akışta PPTX'i PDF'e dönüştürebilir miyim?** Evet—`Viewer`'ı bir `.pptx` kaynağına yönlendirmeniz yeterli, aynı seçenekler uygulanır.  
+- **Aynı akışta PPTX'i PDF'e dönüştürebilir miyim?** Evet—`Viewer`'ı bir `.pptx` kaynağına yönlendirmeniz yeterli; aynı seçenekler uygulanır.  
 - **Web yayıncılığı için tipik kalite seviyesi nedir?** **50‑70** civarında bir değer, çoğu web senaryosu için iyi bir denge sağlar.  
-- **Bu özellik için lisans gerekir mi?** Değerlendirme için ücretsiz deneme çalışır; üretim kullanımı için kalıcı bir lisans gereklidir.
+- **Bu özellik için lisans gerekir mi?** Değerlendirme için ücretsiz deneme sürümü yeterlidir; üretim kullanımı için kalıcı bir lisans gereklidir.
+
+## Java'da pdf nasıl sıkıştırılır – Genel Bakış
+Java'da PDF boyutunu küçültmek, PDF içindeki kaynakları—özellikle görüntüleri—optimize etmeyi içerir; böylece nihai dosya daha az depolama alanı kaplar ve daha hızlı yüklenir. JPG kalitesini düşürerek, belge boyutunun büyük bir kısmını oluşturan **PDF görüntülerini sıkıştırmış** olursunuz.
 
 ## “reduce PDF size Java” nedir?
-Java'da PDF boyutunu azaltmak, bir PDF içindeki kaynakları—özellikle görüntüleri—optimize etmeyi içerir, böylece son dosya daha az depolama alanı kaplar ve daha hızlı yüklenir. JPG kalitesini düşürerek, PDF görüntülerini etkili bir şekilde **compress PDF images**, ki bu genellikle bir belgenin boyutunun büyük bir kısmını oluşturur.
+Java'da PDF boyutunu küçültmek, PDF içindeki kaynakları—özellikle görüntüleri—optimize etmeyi içerir; böylece nihai dosya daha az depolama alanı kaplar ve daha hızlı yüklenir. JPG kalitesini düşürerek, belge boyutunun büyük bir kısmını oluşturan **PDF görüntülerini sıkıştırmış** olursunuz.
 
 ## Neden GroupDocs Viewer ile JPG kalitesini ayarlamalısınız?
 - **Önemli boyut azaltma**: Görüntü kalitesini düşürmek, orijinal çözünürlüğe bağlı olarak PDF'leri %30‑70 oranında küçültebilir.  
@@ -39,8 +42,8 @@ Java'da PDF boyutunu azaltmak, bir PDF içindeki kaynakları—özellikle görü
 - Maven tabanlı Java projesi, JDK 8 ve üzeri.  
 - Java ve PDF işleme konusunda temel bilgi.  
 
-## GroupDocs.Viewer for Java'ı Kurma
-Add the GroupDocs repository and dependency to your `pom.xml`:
+## GroupDocs.Viewer for Java Kurulumu
+`pom.xml` dosyanıza GroupDocs deposunu ve bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -62,7 +65,7 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 
 > **Pro ipucu:** Performans iyileştirmelerinden ve yeni sıkıştırma seçeneklerinden yararlanmak için sürümü güncel tutun.
 
-## Implementation Guide
+## Uygulama Kılavuzu
 
 ### Adım 1: Çıktı Dizini Yolunu Çözümle
 PDF'nin kaydedileceği çıktı klasörünü oluşturan bir yardımcı sınıf oluşturun.
@@ -84,7 +87,7 @@ public class FeatureResolveOutputDirectoryPath {
 }
 ```
 
-### Adım 2: `PdfViewOptions`'ı İstenen JPG Kalitesiyle Yapılandırın
+### Adım 2: `PdfViewOptions`'ı İstenen JPG Kalitesiyle Yapılandır
 Belgeyi render etmeden önce JPG kalite seviyesini (0‑100) ayarlayın.
 
 ```java
@@ -111,71 +114,75 @@ public class FeatureAdjustQualityOfJpgImages {
 
 **Açıklama:**  
 - `setJpgQuality(byte quality)`, GroupDocs'a JPG görüntülerine ne kadar sıkıştırma uygulanacağını söyler. Daha düşük değerler daha küçük dosyalar üretir ancak görsel keskinliği azaltabilir.  
-- Örnek, **convert pptx to pdf** işlemini gösterirken aynı anda görüntüleri sıkıştırmak için `source.pptx` dosyasını kullanır.
+- Örnek, **pptx'i pdf'e dönüştür** işlemini gösterirken aynı anda görüntüleri sıkıştırmak için `source.pptx` dosyasını kullanır.
 
 ### Adım 3: Kodu Çalıştırın ve Sonucu Doğrulayın
-`FeatureAdjustQualityOfJpgImages.run()` metodunu çalıştırın. Oluşturulan `output.pdf`, belirttiğiniz kalite seviyesindeki JPG görüntülerini içerecek, böylece **compressing PDF images** (PDF görüntülerini sıkıştırarak) toplam dosya boyutunu azaltacaktır.
+`FeatureAdjustQualityOfJpgImages.run()` metodunu çalıştırın. Oluşturulan `output.pdf`, belirttiğiniz kalite seviyesindeki JPG görüntülerini içerecek ve böylece **PDF görüntülerini sıkıştırarak** toplam dosya boyutunu azaltacaktır.
 
-## Yaygın Sorunlar ve Sorun Giderme
-- **Yanlış dosya yolu:** Kaynak belge (`source.pptx`) çalışma dizinine göre mevcut olduğundan emin olun.  
+## Yaygın Sorunlar & Sorun Giderme
+- **Yanlış dosya yolu:** Kaynak belgenin (`source.pptx`) çalışma dizinine göre mevcut olduğundan emin olun.  
 - **Yetersiz izinler:** Çıktı klasörü yazılabilir olmalıdır; aksi takdirde `RuntimeException` fırlatılır.  
-- **Beklenmedik büyük PDF'ler:** `quality` değerinin hedef boyutunuz için yeterince düşük olduğundan emin olun.  
+- **Beklenmedik büyük PDF'ler:** `quality` değerinin hedeflediğiniz boyut için yeterince düşük olduğundan emin olun.  
 
 ## Pratik Uygulamalar
-1. **Belge Arşivleme:** Daha küçük PDF'ler depolama maliyetlerini azaltır ve geri getirme hızını artırır.  
-2. **Web Yayıncılığı:** PDF'ler web sitelerinde gömülü veya bağlantılı olduğunda sayfa yüklemeleri daha hızlı olur.  
-3. **E-posta Ekleri:** Göndermeden önce görüntü kalitesini düşürerek boyut limitlerine uyun.  
+1. **Belge Arşivleme:** Daha küçük PDF'ler depolama maliyetlerini düşürür ve erişim hızını artırır.  
+2. **Web Yayıncılığı:** PDF'ler web sitelerine gömüldüğünde veya link verildiğinde sayfa yüklemeleri daha hızlı olur.  
+3. **E-posta Ekleri:** Göndermeden önce görüntü kalitesini düşürerek boyut sınırlamalarını karşılayın.  
 
 ## Performans Düşünceleri
 - **Toplu İşleme:** Çok sayıda belge için, bellek kullanımını izlerken paralel iş parçacıklarında işleyin.  
 - **Optimal Kalite Ayarları:** Baskıya hazır PDF'ler için daha yüksek kalite (80‑100) kullanın; web önizlemeleri için genellikle 30‑50 yeterlidir.  
 
 ## Sonuç
-Artık **reduce PDF size Java**'ı GroupDocs.Viewer ile JPG görüntü kalitesini ayarlayarak nasıl yapacağınızı biliyorsunuz. Farklı kalite seviyeleriyle deney yapın, kodu mevcut iş akışlarınıza entegre edin ve daha hızlı, daha hafif PDF'lerin keyfini çıkarın.
+Artık **pdf nasıl sıkıştırılır** sorusunun cevabını, JPG görüntü kalitesini GroupDocs.Viewer ile ayarlayarak biliyorsunuz. Farklı kalite seviyeleriyle deney yapın, kodu mevcut iş akışlarınıza entegre edin ve daha hızlı, daha hafif PDF'lerin tadını çıkarın.
 
 ### Sonraki Adımlar
-- Kullanım durumunuz için en uygun kaliteyi bulmak üzere çeşitli kalite ayarlarını test edin.  
-- Watermark (filigran) veya şifre koruması gibi ek GroupDocs özelliklerini keşfedin.  
+- Kullanım durumunuz için en uygun kalite ayarını bulmak amacıyla çeşitli kalite seviyelerini test edin.  
+- Su işareti ekleme veya parola koruması gibi ek GroupDocs özelliklerini keşfedin.  
 
 ## SSS Bölümü
 
 1. **JPG kalitesini ayarlamak dosya boyutunu nasıl etkiler?**  
-   Kaliteyi düşürmek dosya boyutunu azaltır, böylece belgeleri paylaşmak veya depolamak daha kolay olur.  
+   Kaliteyi düşürmek dosya boyutunu azaltır, böylece belgeleri paylaşmak veya depolamak daha kolay olur.
+
 2. **JPG dışındaki formatlar için görüntü kalitesini ayarlayabilir miyim?**  
-   Bu özellik özellikle PDF içindeki JPG görüntülerini hedef alır; ancak GroupDocs.Viewer farklı formatlar için diğer seçenekler sunar.  
+   Bu özellik özellikle PDF'lerdeki JPG görüntülerine yöneliktir; ancak GroupDocs.Viewer farklı formatlar için diğer seçenekleri sunar.
+
 3. **Web kullanımı için ideal JPG kalite ayarı nedir?**  
-   Yaklaşık 50‑70 aralığı, iyi netlik ve web uygulamaları için uygun azaltılmış dosya boyutu sağlar.  
+   Web uygulamaları için uygun dosya boyutu ve iyi netlik sağlayan bir denge genellikle 50‑70 civarındadır.
+
 4. **Bu süreci toplu bir iş akışında otomatikleştirmek mümkün mü?**  
-   Evet, bu özelliği otomatik sistemlere entegre ederek birden fazla belgeyi verimli bir şekilde işleyebilirsiniz.  
-5. **Çıktı PDF'i beklendiği gibi oluşturulmazsa ne yapmalıyım?**  
-   Giriş belge yolunu kontrol edin ve tüm bağımlılıkların doğru yapılandırıldığından emin olun.  
+   Evet, bu özelliği otomatik sistemlere entegre ederek birden fazla belgeyi verimli bir şekilde işleyebilirsiniz.
+
+5. **Beklenen şekilde çıktı PDF oluşturulmazsa ne yapmalıyım?**  
+   Girdi belge yolunu kontrol edin ve tüm bağımlılıkların doğru yapılandırıldığından emin olun.
 
 ## Sıkça Sorulan Sorular
 
 **S:** *Bu yaklaşımı DOCX gibi diğer formatları PDF'e dönüştürürken boyutu azaltmak için kullanabilir miyim?*  
-**C:** Kesinlikle. Aynı `PdfViewOptions.setJpgQuality` ayarı, PDF içinde JPG görüntüleri üreten herhangi bir kaynak formatı için çalışır.  
+**C:** Kesinlikle. Aynı `PdfViewOptions.setJpgQuality` ayarı, PDF içinde JPG görüntüleri üreten herhangi bir kaynak formatı için çalışır.
 
 **S:** *JPG kalitesini düşürmek metin render'ını etkiler mi?*  
-**C:** Hayır. Metin vektör tabanlıdır ve net kalır; sadece raster görüntüler etkilenir.  
+**C:** Hayır. Metin vektör tabanlıdır ve net kalır; yalnızca raster görüntüler etkilenir.
 
 **S:** *Farklı sayfalar için farklı kalite seviyeleri ayarlamanın bir yolu var mı?*  
-**C:** GroupDocs şu anda dönüşüm başına tek bir kalite ayarı uygular. Sayfa bazında kontrol için PDF'i ayrı bir görüntü işleme kütüphanesiyle sonradan işlemek gerekir.  
+**C:** GroupDocs şu anda dönüşüm başına tek bir kalite ayarı uygular. Sayfa bazında kontrol için, PDF'yi özel bir görüntü işleme kütüphanesiyle sonradan işlemek gerekir.
 
 **S:** *Üretim dağıtımları için lisans gerekir mi?*  
-**C:** Evet, üretim kullanımı için geçerli bir GroupDocs.Viewer lisansı gereklidir. Değerlendirme için ücretsiz deneme mevcuttur.  
+**C:** Evet, üretim kullanımı için geçerli bir GroupDocs.Viewer lisansı gereklidir. Değerlendirme için ücretsiz deneme sürümü mevcuttur.
 
 **S:** *Gerçek kalite düşüşünü nasıl doğrulayabilirim?*  
-**C:** Dönüştürmeden önce ve sonra dosya boyutlarını karşılaştırın ve PDF'i açarak görüntü netliğini görsel olarak inceleyin.  
+**C:** Dönüştürmeden önce ve sonra dosya boyutlarını karşılaştırın ve PDF'yi açarak görüntü netliğini görsel olarak inceleyin.
 
-**Son Güncelleme:** 2026-01-02  
-**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
-
-**Resources**  
+**Kaynaklar**  
 - [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)  
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)  
 - [GroupDocs.Viewer for Java'ı İndir](https://releases.groupdocs.com/viewer/java/)  
 - [Lisans Satın Al](https://purchase.groupdocs.com/buy)  
 - [Ücretsiz Deneme Sürümü](https://releases.groupdocs.com/viewer/java/)  
 - [Geçici Lisans Bilgileri](https://purchase.groupdocs.com/temporary-license/)  
-- [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+- [Destek Forum](https://forum.groupdocs.com/c/viewer/9)  
+
+**Son Güncelleme:** 2026-03-05  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs
