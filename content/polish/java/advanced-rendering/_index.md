@@ -1,286 +1,251 @@
 ---
 categories:
 - Java Development
-date: '2026-01-02'
-description: Dowiedz się, jak konwertować docx na html w Javie i opanuj zaawansowane
-  renderowanie z GroupDocs.Viewer Java. Zawiera wskazówki dotyczące renderowania PDF
-  oraz optymalizacji wydajności.
-keywords: GroupDocs Viewer Java advanced rendering, Java document rendering tutorials,
-  PDF rendering Java GroupDocs, Java document viewer implementation, GroupDocs Viewer
-  Java configuration
-lastmod: '2026-01-02'
+date: '2026-03-05'
+description: Naucz się obracać wybrane strony PDF i konwertować pliki DOCX na HTML
+  w Javie przy użyciu GroupDocs.Viewer Java. Zawiera wskazówki dotyczące renderowania
+  PDF, dostosowywanie jakości obrazu oraz optymalizację wydajności.
+keywords: rotate specific pdf pages, customize pdf image quality, convert docx html
+  java, render pdf images java, GroupDocs Viewer Java advanced rendering, Java document
+  rendering tutorials, PDF rendering Java GroupDocs, Java document viewer implementation,
+  GroupDocs Viewer Java configuration
+lastmod: '2026-03-05'
 linktitle: Advanced Rendering Tutorials
 tags:
 - groupdocs-viewer
 - document-rendering
 - java-tutorials
 - pdf-processing
-title: konwertuj docx na html java – Zaawansowane renderowanie z GroupDocs.Viewer
-  Java
+title: Obracanie konkretnych stron PDF przy użyciu GroupDocs.Viewer Java
 type: docs
 url: /pl/java/advanced-rendering/
 weight: 4
 ---
 
-# GroupDocs.Viewer Java Zaawansowane Renderowanie – Kompletny Przewodnik Dla Deweloperów
+# Obracanie określonych stron PDF przy użyciu GroupDocs.Viewer Java – Przewodnik zaawansowanego renderowania
 
-Szukasz sposobu na wdrożenie zaawansowanego renderowania dokumentów w aplikacjach Java? Trafiłeś we właściwe miejsce. Ten obszerny zestaw samouczków GroupDocs.Viewer Java przekształci Cię z podstawowego implementatora przeglądarki dokumentów w eksperta zaawansowanego renderowania.
+Looking to implement sophisticated document rendering in your Java applications? You've come to the right place. In this guide we’ll show you **how to rotate specific pdf pages** while also covering advanced topics like converting DOCX to HTML, customizing PDF image quality, and rendering PDF images in Java. By the end, you’ll have a clear roadmap for building fast, reliable, and feature‑rich document viewers that meet real‑world business needs.
 
-Niezależnie od tego, czy tworzysz korporacyjne systemy zarządzania dokumentami, własne procesory PDF, czy specjalistyczne przeglądarki CAD, te samouczki dostarczają praktycznej wiedzy, której potrzebujesz. Każdy przewodnik zawiera działające przykłady kodu Java, scenariusze z rzeczywistego świata i sprawdzone techniki, które możesz od razu zastosować w swoich projektach.
+![Advanced Document Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/img-java.png)
 
-![Zaawansowane Renderowanie Dokumentów z GroupDocs.Viewer dla Java](/viewer/advanced-rendering/img-java.png)
+## Szybkie odpowiedzi
+- **Jaki jest główny przypadek użycia?** Konwersja DOCX do HTML w Javie przy obsłudze zasobów zewnętrznych i obracaniu określonych stron PDF.  
+- **Która biblioteka obsługuje konwersję?** GroupDocs.Viewer for Java udostępnia prosty interfejs API do **convert docx to html java** efektywnie.  
+- **Czy potrzebuję licencji?** Tymczasowa licencja działa w trybie ewaluacyjnym; pełna licencja jest wymagana w środowisku produkcyjnym.  
+- **Czy mogę renderować pliki PDF przy użyciu tego samego API?** Tak – biblioteka obsługuje również scenariusze **render pdf images java**.  
+- **Czy istnieje wbudowane dostrajanie wydajności?** Samouczki zawierają buforowanie, renderowanie wybranych stron oraz regulację jakości obrazu.
 
-## Szybkie Odpowiedzi
-- **Jaki jest główny przypadek użycia?** Konwersja DOCX do HTML w Javie przy obsłudze zasobów zewnętrznych i optymalizacji renderowania PDF.  
-- **Która biblioteka obsługuje konwersję?** GroupDocs.Viewer for Java zapewnia prosty interfejs API do **convert docx to html java** w sposób wydajny.  
-- **Czy potrzebna jest licencja?** Tymczasowa licencja działa w trybie ewaluacyjnym; pełna licencja jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę renderować pliki PDF tym samym API?** Tak – biblioteka obsługuje również scenariusze **how to render pdf java**.  
-- **Czy istnieje wbudowane strojenie wydajności?** Samouczki zawierają techniki buforowania, selektywnego renderowania stron oraz regulacji jakości obrazu.
+## Dlaczego zaawansowane renderowanie GroupDocs.Viewer Java ma znaczenie
 
-## Dlaczego Zaawansowane Renderowanie GroupDocs.Viewer Java Ma Znaczenie
+Nowoczesne aplikacje wymagają więcej niż podstawowe przeglądanie dokumentów. Użytkownicy oczekują szybkiego, dokładnego i konfigurowalnego renderowania dokumentów, które obsługuje wszystko, od prostych PDF‑ów po złożone rysunki CAD. GroupDocs.Viewer for Java zapewnia tę możliwość, ale opanowanie jego zaawansowanych funkcji — takich jak **rotate specific pdf pages** — wymaga odpowiedniego przewodnika.
 
-Nowoczesne aplikacje wymagają więcej niż podstawowego podglądu dokumentów. Użytkownicy oczekują szybkiego, dokładnego i konfigurowalnego renderowania, które radzi sobie zarówno z prostymi PDF‑ami, jak i złożonymi rysunkami CAD. GroupDocs.Viewer for Java dostarcza tę funkcjonalność, ale opanowanie zaawansowanych możliwości wymaga właściwego przewodnika.
+Te samouczki rozwiązują typowe wyzwania programistów, takie jak efektywne obsługiwanie dużych zestawów dokumentów, dostosowywanie wyjścia renderowania do konkretnych przypadków użycia oraz optymalizacja wydajności w środowiskach produkcyjnych. Poznasz techniki, które wielu programistów odkrywa dopiero po miesiącach prób i błędów.
 
-Te samouczki rozwiązują typowe wyzwania programistów, takie jak efektywne obsługiwanie dużych zestawów dokumentów, dostosowywanie wyjścia renderowania do konkretnych scenariuszy oraz optymalizacja wydajności w środowiskach produkcyjnych. Poznasz techniki, które wielu deweloperów odkrywa dopiero po miesiącach prób i błędów.
+## Rozpoczęcie pracy z zaawansowanym renderowaniem
 
-## Rozpoczęcie Pracy z Zaawansowanym Renderowaniem
+Zanim zagłębisz się w konkretne samouczki, oto co powinieneś wiedzieć:
 
-Zanim przejdziesz do konkretnych samouczków, oto co warto wiedzieć:
+**Prerequisites**: Podstawowe doświadczenie w programowaniu w Javie oraz znajomość podstaw GroupDocs.Viewer. Jeśli jesteś nowy w GroupDocs.Viewer, rozpocznij od podstawowych samouczków przed przystąpieniem do tych zaawansowanych technik.
 
-**Wymagania wstępne**: Podstawowe doświadczenie w programowaniu w Javie oraz znajomość podstaw GroupDocs.Viewer. Jeśli dopiero zaczynasz przygodę z GroupDocs.Viewer, rozpocznij od podstawowych samouczków, zanim przejdziesz do zaawansowanych technik.
+**Common Use Cases**: Te samouczki są idealne dla programistów pracujących nad systemami zarządzania dokumentami, generatorami raportów, platformami współpracy lub dowolną aplikacją wymagającą zaawansowanych możliwości przetwarzania dokumentów.
 
-**Typowe przypadki użycia**: Samouczki są idealne dla programistów pracujących nad systemami zarządzania dokumentami, generatorami raportów, platformami współpracy lub dowolną aplikacją wymagającą zaawansowanego przetwarzania dokumentów.
-
-**Uwagi dotyczące wydajności**: Zaawansowane techniki renderowania mogą być zasobo‑intensywne. Każdy samouczek zawiera wskazówki dotyczące wydajności i najlepsze praktyki, które pomogą utrzymać optymalną prędkość aplikacji.
+**Performance Considerations**: Zaawansowane techniki renderowania mogą być zasobo‑intensywne. Każdy samouczek zawiera wskazówki dotyczące wydajności i najlepsze praktyki, które pomogą utrzymać optymalną prędkość aplikacji.
 
 ## Jak konwertować docx do html java przy użyciu GroupDocs.Viewer
 
-Konwersja plików DOCX do HTML jest częstym wymogiem, gdy potrzebujesz treści gotowej do wyświetlenia w przeglądarce, zachowując jednocześnie style, obrazy i zasoby zewnętrzne. GroupDocs.Viewer for Java upraszcza ten proces jednym wywołaniem API, pozwalając skupić się na integracji, a nie na niskopoziomowym parsowaniu.
+Konwersja plików DOCX do HTML jest częstym wymogiem, gdy potrzebujesz treści gotowej do wyświetlenia w sieci przy zachowaniu stylów, obrazów i zasobów zewnętrznych. GroupDocs.Viewer for Java upraszcza ten proces jednym wywołaniem API, pozwalając skupić się na integracji, a nie na niskopoziomowym parsowaniu.
 
 Typowe kroki obejmują:
 
-1. **Zainicjalizuj Viewer** – podaj licencję i utwórz instancję `Viewer`.  
-2. **Wczytaj plik DOCX** – przekaż obiekt `File` lub `InputStream`.  
-3. **Skonfiguruj opcje renderowania** – włącz obsługę zasobów zewnętrznych, ustaw jakość obrazu i wybierz format wyjściowy.  
-4. **Wykonaj konwersję** – wywołaj `viewer.render` z `HtmlOptions`.  
-5. **Przetwórz wynik** – zapisz pliki HTML oraz wyodrębnione zasoby w wybranej lokalizacji.
+1. **Initialize the Viewer** – podaj swoją licencję i skonfiguruj instancję `Viewer`.  
+2. **Load the DOCX file** – podaj `File` lub `InputStream`.  
+3. **Configure rendering options** – włącz obsługę zasobów zewnętrznych, ustaw jakość obrazu i wybierz format wyjściowy.  
+4. **Execute the conversion** – wywołaj `viewer.render` z `HtmlOptions`.  
+5. **Process the result** – zapisz pliki HTML oraz wyodrębnione zasoby w wybranej lokalizacji.
 
-Te kroki są przedstawione w pierwszym linku do samouczka poniżej, który dodatkowo pokazuje, jak zarządzać zewnętrznymi obrazami i plikami CSS.
+Te kroki są przedstawione w pierwszym linku do samouczka poniżej, który także pokazuje, jak zarządzać zewnętrznymi obrazami i plikami CSS.
 
 ## Jak renderować pdf java przy użyciu GroupDocs.Viewer
 
-Renderowanie PDF‑ów do obrazów, HTML‑a lub innych formatów to kolejna kluczowa funkcja. Biblioteka umożliwia kontrolowanie renderowania stron po jednej, obsługę warstw oraz jakość obrazu. Przypadki użycia obejmują generowanie miniatur, wyodrębnianie tekstu do indeksowania wyszukiwania czy tworzenie wersji do druku.
+Renderowanie PDF‑ów do obrazów, HTML lub innych formatów to kolejna kluczowa funkcja. Biblioteka pozwala kontrolować renderowanie strona po stronie, obsługę warstw oraz jakość obrazu. Przypadki użycia obejmują generowanie miniatur, wyodrębnianie tekstu do indeksowania wyszukiwania lub tworzenie wersji do druku.
 
-Kluczowe techniki omawiane w liście samouczków to wyłączanie grupowania znaków dla precyzyjnego wyodrębniania tekstu, renderowanie warstwowe w celu zachowania kolejności Z‑index oraz zmiana kolejności stron dla niestandardowych przepływów dokumentu.
+Kluczowe techniki omawiane w liście samouczków obejmują wyłączanie grupowania znaków dla precyzyjnego wyodrębniania tekstu, renderowanie warstwowe w celu zachowania indeksu Z oraz zmianę kolejności stron dla niestandardowych przepływów dokumentów.
 
-## Kategorie Samouczków
+## Jak obracać określone strony pdf przy użyciu GroupDocs.Viewer Java
 
-### Renderowanie i Optymalizacja PDF
-Opanuj wyzwania specyficzne dla PDF, od efektywnej obsługi dużych plików po dostosowywanie jakości wyjścia i zarządzanie złożonymi układami.
+Czasami trzeba obrócić tylko niektóre strony PDF — na przykład zeskanowaną fakturę odwróconą do góry nogami lub plan, który wymaga orientacji poziomej. GroupDocs.Viewer Java umożliwia to w prosty sposób:
 
-### [Konwertuj DOCX do HTML z Zasobami Zewnętrznymi przy użyciu GroupDocs.Viewer dla Java](/render-docx-html-external-resources-groupdocs-java/)
-Dowiedz się, jak konwertować dokumenty DOCX do formatu HTML przy użyciu GroupDocs.Viewer for Java, w tym obsługę zasobów zewnętrznych, takich jak obrazy i arkusze stylów.
+* Utwórz obiekt `PdfOptions`.  
+* Użyj `setPages`, aby określić numery stron, które chcesz obrócić.  
+* Zastosuj `setRotationAngle` (90°, 180° lub 270°) tylko dla tych stron.  
+* Wywołaj `viewer.render` z skonfigurowanymi opcjami.
 
-### [Wyłącz Grupowanie Znaków w PDF przy użyciu GroupDocs.Viewer dla Java: Precyzyjne Techniki Renderowania](/groupdocs-viewer-java-disable-character-grouping-pdf/)
-Poznaj metodę wyłączania grupowania znaków w renderowaniu PDF przy użyciu GroupDocs.Viewer for Java, zapewniającą dokładną reprezentację tekstu dla skomplikowanych skryptów.
+To podejście unika ponownego renderowania całego dokumentu i utrzymuje niski czas przetwarzania — idealne dla aplikacji krytycznych pod względem wydajności.
 
-### [Efektywne Renderowanie Warstwowe PDF w Javie przy użyciu GroupDocs.Viewer](/pdf-layered-rendering-java-groupdocs-viewer/)
-Opanuj renderowanie warstwowe PDF z GroupDocs.Viewer for Java, aby zachować hierarchię wizualną i Z‑Index. Dowiedz się, jak skonfigurować, zaimplementować i stosować najlepsze praktyki.
+## Kategorie samouczków
 
-### [Efektywne Zmiany Kolejności Stron PDF przy użyciu GroupDocs.Viewer dla Java: Kompletny Przewodnik](/master-pdf-page-reorder-groupdocs-java/)
-Naucz się płynnie zmieniać kolejność stron PDF przy użyciu GroupDocs.Viewer for Java. Przewodnik obejmuje konfigurację, implementację i optymalizację wydajności.
+### Renderowanie i optymalizacja PDF
 
-### [Renderowanie PDF w Javie przy użyciu GroupDocs.Viewer: Implementacja Przerw Stron w Arkuszach](/java-pdf-rendering-groupdocs-viewer-page-breaks/)
-Dowiedz się, jak renderować arkusze kalkulacyjne jako PDF‑y z przerwami stron przy użyciu GroupDocs.Viewer for Java. Samouczek obejmuje opcje konfiguracji i praktyczne zastosowania.
+Opanuj wyzwania związane z renderowaniem PDF‑ów, od efektywnego obsługiwania dużych plików po dostosowywanie jakości wyjścia i zarządzanie złożonymi układami.
 
-### [Optymalizacja Jakości JPG w PDF przy użyciu GroupDocs.Viewer dla Java](/optimize-jpg-quality-groupdocs-viewer-java/)
-Poznaj metodę regulacji jakości obrazów JPG w dokumentach PDF przy użyciu GroupDocs.Viewer for Java. Łatwo zbalansuj rozmiar pliku i jakość wizualną.
+### [Konwertuj DOCX do HTML z zasobami zewnętrznymi przy użyciu GroupDocs.Viewer for Java](./render-docx-html-external-resources-groupdocs-java/)
 
-### [Optymalizacja Jakości Obrazów PDF w Javie przy użyciu GroupDocs.Viewer](/adjust-image-quality-groupdocs-viewer-java/)
-Naucz się dostosowywać jakość obrazów w PDF przy użyciu GroupDocs.Viewer for Java, efektywnie równoważąc klarowność i rozmiar pliku.
+### [Wyłącz grupowanie znaków w PDF‑ach przy użyciu GroupDocs.Viewer for Java: Precyzyjne techniki renderowania](./groupdocs-viewer-java-disable-character-grouping-pdf/)
 
-### [Obracanie Konkretnej Strony PDF przy użyciu GroupDocs.Viewer w Javie: Kompletny Przewodnik](/rotate-pdf-pages-groupdocs-viewer-java/)
-Dowiedz się, jak obracać wybrane strony w dokumencie PDF przy użyciu GroupDocs.Viewer for Java. Przewodnik obejmuje konfigurację, implementację i praktyczne zastosowania.
+### [Efektywne renderowanie warstwowe PDF w Javie przy użyciu GroupDocs.Viewer](./pdf-layered-rendering-java-groupdocs-viewer/)
 
-### Dokumenty Office i Arkusze Kalkulacyjne
-Obsługa dokumentów Microsoft Office z zaawansowanym formatowaniem, niestandardowymi konfiguracjami i specjalistycznymi opcjami renderowania.
+### [Efektywne zmienianie kolejności stron PDF przy użyciu GroupDocs.Viewer for Java: Kompletny przewodnik](./master-pdf-page-reorder-groupdocs-java/)
 
-### [Jak Dostosować Przepełnienie Tekstu w Arkuszach Excel przy użyciu GroupDocs.Viewer dla Java](/groupdocs-viewer-java-adjust-text-overflow-spreadsheets/)
-Naucz się zarządzać przepełnieniem tekstu w arkuszach Excel przy użyciu GroupDocs.Viewer for Java. Przewodnik zawiera instrukcje krok po kroku i najlepsze praktyki.
+### [Renderowanie PDF w Javie przy użyciu GroupDocs.Viewer: Implementacja podziałów stron w arkuszach kalkulacyjnych](./java-pdf-rendering-groupdocs-viewer-page-breaks/)
 
-### [Renderowanie Obszarów Druku Arkuszy w Javie przy użyciu GroupDocs.Viewer: Kompletny Przewodnik](/java-groupdocs-viewer-render-print-areas-spreadsheet/)
-Dowiedz się, jak renderować wyłącznie obszary druku arkuszy w Javie przy użyciu GroupDocs.Viewer. Idealne rozwiązanie dla deweloperów poszukujących efektywnych podglądów dokumentów.
+### [Optymalizacja jakości JPG w PDF‑ach przy użyciu GroupDocs.Viewer for Java](./optimize-jpg-quality-groupdocs-viewer-java/)
 
-### [Renderowanie Ukrytych Wierszy i Kolumn w Arkuszach Java przy użyciu GroupDocs.Viewer](/render-hidden-rows-columns-java-groupdocs-viewer/)
-Poznaj metodę renderowania ukrytych wierszy i kolumn w arkuszach Java przy użyciu GroupDocs.Viewer, zapewniającą pełną widoczność danych podczas konwersji do HTML.
+### [Optymalizacja jakości obrazu PDF w Javie przy użyciu GroupDocs.Viewer](./adjust-image-quality-groupdocs-viewer-java/)
 
-### [Pomijanie Renderowania Pustych Wierszy w Java przy użyciu GroupDocs.Viewer: Przewodnik Wydajnościowy](/skip-rendering-empty-rows-java-groupdocs-viewer/)
-Naucz się efektywnie pomijać renderowanie pustych wierszy arkuszy przy użyciu GroupDocs.Viewer for Java, zwiększając wydajność aplikacji i redukując zużycie zasobów.
+### [Obracanie określonych stron PDF przy użyciu GroupDocs.Viewer w Javie: Kompletny przewodnik](./rotate-pdf-pages-groupdocs-viewer-java/)
 
-### [Jak Renderować Śledzone Zmiany w Dokumentach Word przy użyciu GroupDocs.Viewer dla Java: Kompletny Przewodnik](/render-tracked-changes-word-docs-groupdocs-viewer-java/)
-Dowiedz się, jak efektywnie renderować śledzone zmiany w dokumentach Word przy użyciu GroupDocs.Viewer for Java, krok po kroku. Idealne dla deweloperów integrujących systemy zarządzania dokumentami.
+### Dokumenty Office i arkusze kalkulacyjne
 
-### Przetwarzanie Rysunków CAD
-Praca z złożonymi plikami CAD, obsługa wielu układów i implementacja niestandardowych opcji renderowania dla rysunków technicznych.
+### [Jak dostosować przepełnienie tekstu w arkuszach Excel przy użyciu GroupDocs.Viewer for Java](./groupdocs-viewer-java-adjust-text-overflow-spreadsheets/)
 
-### [Jak Renderować Rysunki CAD jako PNG z Niestandardowym Rozmiarem i Kolorem Tła przy użyciu GroupDocs.Viewer dla Java](/render-cad-drawings-custom-png-groupdocs-java/)
-Naucz się renderować rysunki CAD do wysokiej jakości obrazów PNG, definiując własne wymiary i kolory tła przy użyciu GroupDocs.Viewer for Java.
+### [Renderowanie obszarów drukowania arkuszy kalkulacyjnych w Javie przy użyciu GroupDocs.Viewer for Java: Kompletny przewodnik](./java-groupdocs-viewer-render-print-areas-spreadsheet/)
 
-### [Renderowanie Wszystkich Układów CAD przy użyciu GroupDocs.Viewer dla Java](/render-cad-drawings-layouts-groupdocs-viewer-java/)
-Dowiedz się, jak renderować wszystkie układy z rysunków CAD przy użyciu GroupDocs.Viewer for Java. Przewodnik obejmuje konfigurację, ustawienia i praktyczną implementację.
+### [Renderowanie ukrytych wierszy i kolumn w arkuszach kalkulacyjnych Java przy użyciu GroupDocs.Viewer](./render-hidden-rows-columns-java-groupdocs-viewer/)
 
-### [Renderowanie Konkretnego Warstwy CAD w Javie przy użyciu GroupDocs.Viewer: Kompletny Przewodnik](/render-cad-layers-java-groupdocs-viewer/)
-Naucz się renderować wybrane warstwy CAD w Javie przy użyciu GroupDocs.Viewer. Przewodnik obejmuje konfigurację, ustawienia i praktyczne zastosowania, aby wzmocnić wizualizację projektów.
+### [Pomijanie renderowania pustych wierszy w Javie przy użyciu GroupDocs.Viewer: Przewodnik wydajnościowy](./skip-rendering-empty-rows-java-groupdocs-viewer/)
 
-### [Podział Rysunków CAD na Kafelki przy użyciu GroupDocs.Viewer Java dla Efektywnego Renderowania](/split-cad-drawings-into-tiles-groupdocs-viewer-java/)
-Poznaj metodę efektywnego podziału dużych rysunków CAD na kafelki przy użyciu GroupDocs.Viewer for Java, zwiększając wydajność i ułatwiając zarządzanie w aplikacjach.
+### [Jak renderować zmiany śledzone w dokumentach Word przy użyciu GroupDocs.Viewer for Java: Kompletny przewodnik](./render-tracked-changes-word-docs-groupdocs-viewer-java/)
 
-### Dokumenty E‑mail i Komunikacja
-Przetwarzanie plików e‑mail, obsługa załączników i dostosowywanie metadanych renderowania dla aplikacji skupionych na komunikacji.
+### Przetwarzanie rysunków CAD
 
-### [Jak Zmienić Nazwy Pól E‑mail przy Konwersji E‑maili do HTML przy użyciu GroupDocs.Viewer Java](/rename-email-fields-html-groupdocs-viewer-java/)
-Naucz się dostosowywać metadane e‑maili, zmieniając nazwy pól takich jak „From”, „To” i „Subject” podczas renderowania wiadomości do HTML przy użyciu GroupDocs.Viewer for Java.
+### [Jak renderować rysunki CAD jako PNG z niestandardowym rozmiarem i kolorem tła przy użyciu GroupDocs.Viewer for Java](./render-cad-drawings-custom-png-groupdocs-java/)
 
-### [Renderowanie E‑maili z Niestandardową Datą i Czasem w Javie przy użyciu GroupDocs.Viewer](/render-emails-custom-datetime-groupdocs-viewer-java/)
-Dowiedz się, jak renderować e‑maile z własnym formatem daty‑czasu i ustawieniami strefy czasowej przy użyciu GroupDocs.Viewer for Java. Idealne do archiwizacji e‑maili, systemów wsparcia i nie tylko.
+### [Efektywne renderowanie wszystkich układów CAD przy użyciu GroupDocs.Viewer for Java](./render-cad-drawings-layouts-groupdocs-viewer-java/)
 
-### [Ograniczenie Renderowania Elementów Outlook w Javie przy użyciu GroupDocs.Viewer: Kompletny Przewodnik](/groupdocs-viewer-java-limit-outlook-rendering/)
-Naucz się optymalizować renderowanie dużych plików PST/OST przy użyciu GroupDocs.Viewer for Java, ograniczając liczbę elementów i poprawiając wydajność.
+### [Renderowanie określonych warstw CAD w Javie przy użyciu GroupDocs.Viewer: Kompletny przewodnik](./render-cad-layers-java-groupdocs-viewer/)
 
-### [Mistrzowskie Renderowanie i Filtrowanie Danych Outlook przy użyciu GroupDocs.Viewer dla Java](/render-filter-outlook-data-groupdocs-java/)
-Dowiedz się, jak efektywnie renderować i filtrować pliki danych Outlook przy użyciu GroupDocs.Viewer for Java. Usprawnij zarządzanie e‑mailami w prosty sposób.
+### [Podział rysunków CAD na kafelki przy użyciu GroupDocs.Viewer Java dla efektywnego renderowania](./split-cad-drawings-into-tiles-groupdocs-viewer-java/)
 
-### Prezentacje i Media Wizualne
-Obsługa plików PowerPoint, zarządzanie notatkami slajdów i przetwarzanie prezentacji z zaawansowanymi opcjami renderowania.
+### Dokumenty e‑mail i komunikacyjne
 
-### [Jak Renderować Dokumenty FODP przy użyciu GroupDocs.Viewer dla Java: Kompletny Przewodnik](/render-fodp-groupdocs-viewer-java/)
-Naucz się renderować Formatted Open Document Pages (FODP) przy użyciu GroupDocs.Viewer for Java. Łatwo konwertuj dokumenty do HTML, JPG, PNG i PDF.
+### [Jak zmienić nazwy pól e‑mail przy konwersji e‑maili do HTML przy użyciu GroupDocs.Viewer Java](./rename-email-fields-html-groupdocs-viewer-java/)
 
-### [Jak Renderować Prezentacje z Notatkami przy użyciu GroupDocs.Viewer dla Java: Kompletny Przewodnik](/groupdocs-viewer-java-presentation-notes-rendering/)
-Dowiedz się, jak płynnie renderować prezentacje wraz z notatkami w Javie przy użyciu GroupDocs.Viewer. Przewodnik obejmuje konfigurację, implementację i wskazówki optymalizacji wydajności.
+### [Renderowanie e‑maili z niestandardową datą i godziną w Javie przy użyciu GroupDocs.Viewer](./render-emails-custom-datetime-groupdocs-viewer-java/)
 
-### [Java: Jak Renderować Ukryte Strony przy użyciu GroupDocs.Viewer](/java-render-hidden-pages-groupdocs-viewer/)
-Opanuj renderowanie ukrytych slajdów w aplikacjach Java przy użyciu GroupDocs.Viewer. Poznaj konfigurację, ustawienia i integrację, aby uzyskać pełną widoczność dokumentów.
+### [Ograniczanie renderowania elementów Outlook w Javie przy użyciu GroupDocs.Viewer: Kompletny przewodnik](./groupdocs-viewer-java-limit-outlook-rendering/)
 
-### Archiwa i Zarządzanie Plikami
-Przetwarzanie skompresowanych plików, obsługa specyficznych struktur folderów i efektywne zarządzanie dużymi kolekcjami archiwów.
+### [Opanowanie renderowania i filtrowania danych Outlook przy użyciu GroupDocs.Viewer for Java](./render-filter-outlook-data-groupdocs-java/)
 
-### [Renderowanie Folderów Archiwów w Javie przy użyciu GroupDocs.Viewer: Przewodnik Krok po Kroku](/render-archive-folders-groupdocs-viewer-java/)
-Naucz się renderować wybrane foldery w plikach archiwów przy użyciu GroupDocs.Viewer for Java, korzystając z tego kompleksowego przewodnika.
+### Prezentacje i media wizualne
 
-### [Mistrzostwo GroupDocs.Viewer Java: Niestandardowe Nazwy Plików przy Renderowaniu PDF z Archiwów](/groupdocs-viewer-java-custom-filenames-rendering-archives/)
-Dowiedz się, jak określać własne nazwy plików przy konwersji archiwów do PDF przy użyciu GroupDocs.Viewer for Java. Usprawnij zarządzanie dokumentami dzięki tej zaawansowanej instrukcji.
+### [Jak renderować dokumenty FODP przy użyciu GroupDocs.Viewer for Java: Pełny przewodnik](./render-fodp-groupdocs-viewer-java/)
 
-### Zarządzanie Dokumentami i Metadane
-Ekstrahowanie informacji o dokumencie, obsługa załączników i wdrażanie zaawansowanych przepływów przetwarzania dokumentów.
+### [Jak renderować prezentacje z notatkami przy użyciu GroupDocs.Viewer for Java: Kompletny przewodnik](./groupdocs-viewer-java-presentation-notes-rendering/)
 
-### [Jak Renderować Dokumenty z Komentarzami w Javie przy użyciu GroupDocs.Viewer](/mastering-document-rendering-comments-groupdocs-viewer-java/)
-Naucz się efektywnie renderować dokumenty, w tym komentarze, do HTML przy użyciu GroupDocs.Viewer for Java. Wzbogacaj swoje projekty zarządzania dokumentami i integracji.
+### [Java: Jak renderować ukryte strony przy użyciu GroupDocs.Viewer](./java-render-hidden-pages-groupdocs-viewer/)
 
-### [Jak Renderować Wybrane Strony Dokumentu przy użyciu GroupDocs.Viewer dla Java](/render-selected-pages-groupdocs-viewer-java/)
-Dowiedz się, jak efektywnie renderować konkretne strony dokumentów przy użyciu GroupDocs.Viewer for Java. Przewodnik obejmuje konfigurację, ustawienia i praktyczną integrację.
+### Archiwa i zarządzanie plikami
 
-### [Mistrzostwo GroupDocs.Viewer dla Java: Pobieranie Informacji o Widokach Dokumentu](/groupdocs-viewer-java-document-views/)
-Naucz się wykorzystywać GroupDocs.Viewer for Java do wyciągania szczegółowych informacji o widokach dokumentu. Idealne do wzbogacania możliwości zarządzania dokumentami w aplikacji.
+### [Renderowanie folderów archiwów w Javie przy użyciu GroupDocs.Viewer: Przewodnik krok po kroku](./render-archive-folders-groupdocs-viewer-java/)
 
-### [Mistrzostwo GroupDocs.Viewer dla Java: Pobieranie i Drukowanie Załączników Dokumentu](/groupdocs-viewer-java-retrieve-print-attachments/)
-Dowiedz się, jak efektywnie pobierać i drukować załączniki dokumentów przy użyciu GroupDocs.Viewer for Java. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby wzmocnić aplikacje Java.
+### [Opanowanie GroupDocs.Viewer Java: Niestandardowe nazwy plików przy renderowaniu PDF archiwów](./groupdocs-viewer-java-custom-filenames-rendering-archives/)
 
-### Specjalistyczne Techniki Renderowania
-Zaawansowane scenariusze, w tym niestandardowe formatowanie, specjalistyczne typy plików i strategie optymalizacji wydajności.
+### Zarządzanie dokumentami i metadanymi
 
-### [Renderowanie HPG w Javie przy użyciu GroupDocs.Viewer: Kompletny Przewodnik](/java-hpg-rendering-groupdocs-viewer-guide/)
-Opanuj renderowanie HPG w Javie przy użyciu GroupDocs.Viewer. Naucz się konwertować pliki HPG do HTML, JPG, PNG i PDF w sposób wydajny.
+### [Jak renderować dokumenty z komentarzami w Javie przy użyciu GroupDocs.Viewer](./mastering-document-rendering-comments-groupdocs-viewer-java/)
 
-### [Renderowanie Dokumentów Tekstowych w Shift_JIS przy użyciu GroupDocs.Viewer dla Java](/render-shift-jis-text-documents-groupdocs-java/)
-Dowiedz się, jak wczytywać i renderować dokumenty tekstowe zakodowane w Shift_JIS przy użyciu GroupDocs.Viewer for Java. Przewodnik obejmuje konfigurację, szczegóły kodowania i praktyczne zastosowania.
+### [Jak renderować wybrane strony dokumentu przy użyciu GroupDocs.Viewer for Java](./render-selected-pages-groupdocs-viewer-java/)
 
-### [Renderowanie Dokumentów jako Obrazy z Warstwą Tekstową w Javie przy użyciu GroupDocs.Viewer](/render-documents-to-images-with-text-layer-java/)
-Naucz się renderować dokumenty jako obrazy z warstwą tekstową w Javie przy użyciu GroupDocs.Viewer, aby poprawić czytelność tekstu i możliwość wyszukiwania.
+### [Opanowanie GroupDocs.Viewer for Java: Pobieranie informacji o widoku dokumentu i wglądów](./groupdocs-viewer-java-document-views/)
 
-### [Renderowanie Dokumentów Projektowych w Interwałach Czasowych przy użyciu GroupDocs.Viewer dla Java](/render-project-documents-time-intervals-groupdocs-viewer-java/)
-Dowiedz się, jak renderować dokumenty projektowe w określonych przedziałach czasowych przy użyciu API GroupDocs.Viewer w Javie. Wzbogacaj zarządzanie dokumentami i wizualizację harmonogramów.
+### [Opanowanie GroupDocs.Viewer for Java: Pobieranie i drukowanie załączników dokumentu](./groupdocs-viewer-java-retrieve-print-attachments/)
 
-### [Responsywne Renderowanie HTML przy użyciu GroupDocs.Viewer dla Java: Kompletny Przewodnik](/groupdocs-viewer-java-responsive-html-rendering/)
-Opanuj responsywne renderowanie HTML przy użyciu GroupDocs.Viewer w projektach Java. Naucz się konfiguracji, implementacji i wskazówek optymalizacji, aby zwiększyć dostępność dokumentów na różnych urządzeniach.
+### Specjalistyczne techniki renderowania
 
-### [Obrócenie Pierwszej Strony Dokumentu przy użyciu GroupDocs.Viewer dla Java (Zaawansowany Przewodnik)](/rotate-first-page-document-groupdocs-viewer-java/)
-Dowiedz się, jak przy użyciu GroupDocs.Viewer for Java obrócić pierwszą stronę dokumentu o 90 stopni. Popraw prezentację dokumentów bez wysiłku dzięki temu kompleksowemu przewodnikowi.
+### [Renderowanie HPG w Javie przy użyciu GroupDocs.Viewer: Pełny przewodnik](./java-hpg-rendering-groupdocs-viewer-guide/)
 
-## Typowe Wyzwania Implementacyjne
+### [Renderowanie dokumentów tekstowych w kodowaniu Shift_JIS przy użyciu GroupDocs.Viewer for Java](./render-shift-jis-text-documents-groupdocs-java/)
 
-### Optymalizacja Wydajności
-Duże dokumenty mogą znacząco spowolnić aplikację. Kluczem jest wdrożenie inteligentnych strategii buforowania oraz selektywnego renderowania. Wiele naszych samouczków zawiera konkretne wskazówki dotyczące wydajności – zwróć szczególną uwagę na renderowanie kafelkowe i selektywne renderowanie stron.
+### [Renderowanie dokumentów jako obrazy z warstwą tekstową w Javie przy użyciu GroupDocs.Viewer](./render-documents-to-images-with-text-layer-java/)
 
-### Zarządzanie Pamięcią
-Renderowanie dokumentów może być intensywne pod względem pamięci, zwłaszcza przy dużych plikach lub wielu jednoczesnych użytkownikach. Zawsze stosuj prawidłowe wzorce zwalniania zasobów i rozważ podejścia strumieniowe dla dużych zestawów dokumentów.
+### [Renderowanie dokumentów projektowych w przedziałach czasowych przy użyciu GroupDocs.Viewer for Java](./render-project-documents-time-intervals-groupdocs-viewer-java/)
 
-### Problemy Specyficzne dla Formatów
+### [Responsywne renderowanie HTML przy użyciu GroupDocs.Viewer for Java: Kompletny przewodnik](./groupdocs-viewer-java-responsive-html-rendering/)
+
+### [Obrócenie pierwszej strony dokumentu przy użyciu GroupDocs.Viewer for Java (Zaawansowany przewodnik)](./rotate-first-page-document-groupdocs-viewer-java/)
+
+## Typowe wyzwania implementacyjne
+
+### Optymalizacja wydajności
+
+Duże dokumenty mogą znacząco spowolnić Twoją aplikację. Kluczem jest wdrożenie inteligentnych strategii buforowania oraz użycie technik renderowania selektywnego. Wiele naszych samouczków zawiera konkretne wskazówki dotyczące wydajności — zwróć szczególną uwagę na przewodniki dotyczące renderowania opartego na kafelkach oraz renderowania wybranych stron.
+
+### Zarządzanie pamięcią
+
+Renderowanie dokumentów może być intensywne pod względem pamięci, szczególnie przy dużych plikach lub wielu jednoczesnych użytkownikach. Zawsze stosuj odpowiednie wzorce zwalniania zasobów i rozważ podejścia strumieniowe dla dużych zestawów dokumentów.
+
+### Problemy specyficzne dla formatu
+
 Różne typy dokumentów mają unikalne wyzwania. PDF‑y mogą mieć złożone warstwy, pliki CAD wymagają specyficznej obsługi warstw, a arkusze kalkulacyjne potrzebują starannego zarządzania przepełnieniem. Każdy samouczek omawia kwestie specyficzne dla danego formatu.
 
-### Aspekty Integracji
-Podczas integracji GroupDocs.Viewer z istniejącymi systemami, weź pod uwagę modele wątków, wzorce obsługi błędów i zarządzanie konfiguracją. Zaawansowane samouczki demonstrują gotowe do produkcji wzorce integracji.
+### Aspekty integracji
 
-## Najlepsze Praktyki dla Zaawansowanego Renderowania
+Podczas integracji GroupDocs.Viewer z istniejącymi systemami, rozważ modele wątków, wzorce obsługi błędów oraz zarządzanie konfiguracją. Zaawansowane samouczki demonstrują gotowe do produkcji wzorce integracji.
 
-**Zacznij od Podstaw**: Rozpocznij od prostych wymagań renderowania i stopniowo dodawaj zaawansowane funkcje. To podejście pomaga zrozumieć mechanikę przed podjęciem bardziej złożonych scenariuszy.
+## Najlepsze praktyki zaawansowanego renderowania
 
-**Testuj na Rzeczywistych Danych**: Zawsze testuj implementacje renderowania na rzeczywistych dokumentach z docelowego środowiska. Przykładowe pliki rzadko ujawniają problemy wydajnościowe czy przypadki brzegowe.
+**Start Simple**: Zacznij od podstawowych wymagań renderowania i stopniowo dodawaj zaawansowane funkcje. To podejście pomaga zrozumieć podstawowe mechanizmy przed podjęciem złożonych scenariuszy.
 
-**Monitoruj Zużycie Zasobów**: Zaawansowane techniki renderowania mogą pochłaniać znaczące zasoby systemowe. Wdroż monitorowanie, aby śledzić zużycie pamięci, czas przetwarzania i wpływ na system.
+**Test with Real Data**: Zawsze testuj swoje implementacje renderowania na rzeczywistych dokumentach z docelowego środowiska. Przykładowe pliki często nie ujawniają rzeczywistych problemów z wydajnością ani przypadków brzegowych.
 
-**Planuj Skalowalność**: Rozważ, jak rozwiązanie będzie zachowywać się pod obciążeniem. Wiele zaawansowanych technik działa dobrze przy pojedynczych dokumentach, ale może wymagać optymalizacji przy równoczesnym przetwarzaniu wielu dokumentów.
+**Monitor Resource Usage**: Zaawansowane techniki renderowania mogą zużywać znaczące zasoby systemowe. Wdroż monitorowanie, aby śledzić zużycie pamięci, czas przetwarzania i wpływ na system.
 
-**Obsługa Błędów**: Wdroż solidną obsługę błędów dla nieobsługiwanych formatów, uszkodzonych plików i ograniczeń zasobów. Samouczki zawierają wzorce obsługi błędów, które możesz dostosować do własnych potrzeb.
+**Plan for Scale**: Rozważ, jak Twoje rozwiązanie renderujące będzie działać pod obciążeniem. Wiele zaawansowanych technik sprawdza się przy pojedynczych dokumentach, ale może wymagać optymalizacji przy wielu jednoczesnych użytkownikach lub dużych wolumenach dokumentów.
 
-## Kiedy Stosować Zaawansowane Techniki Renderowania
+**Error Handling**: Wdroż solidną obsługę błędów dla nieobsługiwanych formatów, uszkodzonych plików i ograniczeń zasobów. Samouczki zawierają wzorce obsługi błędów, które możesz dostosować do swoich potrzeb.
 
-**Systemy Zarządzania Dokumentami** – Precyzyjna kontrola wyglądu dokumentu jest kluczowa dla współpracy i zgodności.
+## Kiedy stosować zaawansowane techniki renderowania
 
-**Automatyczne Przetwarzanie** – Scenariusze przetwarzania wsadowego wymagają spójnego, przewidywalnego wyniku dla wielu typów dokumentów.
+- **Document Management Systems** – Precyzyjna kontrola nad wyglądem dokumentu jest kluczowa dla współpracy i zgodności.  
+- **Automated Processing** – Scenariusze przetwarzania wsadowego wymagają spójnego, przewidywalnego wyniku dla wielu typów dokumentów.  
+- **Custom Viewers** – Specjalistyczne aplikacje często wymagają zachowań renderowania niedostępnych w standardowych przeglądarkach.  
+- **Performance‑Critical Applications** – Środowiska o dużym wolumenie, w których szybkość renderowania bezpośrednio wpływa na doświadczenie użytkownika.  
+- **Compliance Requirements** – Branże regulowane potrzebują dokładnego, pełnego renderowania, aby spełnić standardy audytowe.
 
-**Niestandardowe Przeglądarki** – Specjalistyczne aplikacje często potrzebują zachowań renderowania niedostępnych w standardowych przeglądarkach.
+## Kolejne kroki
 
-**Aplikacje Krytyczne pod Wydajnością** – Środowiska o wysokim wolumenie, gdzie szybkość renderowania bezpośrednio wpływa na doświadczenie użytkownika.
+Gotowy, aby wdrożyć zaawansowane renderowanie GroupDocs.Viewer Java w swoich aplikacjach? Rozpocznij od samouczka, który najlepiej odpowiada Twoim bieżącym potrzebom, a następnie poszerzaj wiedzę o powiązane techniki. Każdy samouczek opiera się na podstawowych koncepcjach, dzięki czemu zdobędziesz kompleksowe zrozumienie całego ekosystemu renderowania.
 
-**Wymagania Zgodności** – Branże regulowane potrzebują dokładnego, kompletnego renderowania, aby spełnić standardy audytowe.
+Pamiętaj, że zaawansowane renderowanie często polega na rozwiązywaniu konkretnych problemów biznesowych, a nie na używaniu złożonych funkcji dla samej ich istoty. Skup się na samouczkach, które bezpośrednio odpowiadają wymaganiom Twojej aplikacji i nie wahaj się łączyć technik z różnych przewodników, aby tworzyć własne rozwiązania.
 
-## Kolejne Kroki
+Aby uzyskać bieżące wsparcie i wgląd społeczności, odwiedź forum GroupDocs.Viewer, gdzie doświadczeni programiści dzielą się praktycznymi doświadczeniami z implementacji i wskazówkami rozwiązywania problemów.
 
-Gotowy, aby wdrożyć zaawansowane renderowanie GroupDocs.Viewer Java w swoich aplikacjach? Rozpocznij od samouczka, który najlepiej odpowiada Twoim bieżącym potrzebom, a następnie poszerzaj wiedzę o powiązane techniki. Każdy samouczek buduje na podstawowych koncepcjach, dzięki czemu zdobędziesz kompleksowe zrozumienie całego ekosystemu renderowania.
+## Dodatkowe zasoby
 
-Pamiętaj, że zaawansowane renderowanie to często rozwiązywanie konkretnych problemów biznesowych, a nie używanie skomplikowanych funkcji dla samej ich złożoności. Skup się na samouczkach, które bezpośrednio adresują wymagania Twojej aplikacji i nie wahaj się łączyć technik z różnych przewodników, aby stworzyć własne, spersonalizowane rozwiązania.
+- [Dokumentacja GroupDocs.Viewer for Java](https://docs.groupdocs.com/viewer/java/)
+- [Referencja API GroupDocs.Viewer for Java](https://reference.groupdocs.com/viewer/java/)
+- [Pobierz GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- [Forum GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9)
+- [Bezpłatne wsparcie](https://forum.groupdocs.com/)
+- [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/)
 
-Aby uzyskać bieżące wsparcie i wgląd społeczności, odwiedź forum GroupDocs.Viewer, gdzie doświadczeni deweloperzy dzielą się praktycznymi doświadczeniami i wskazówkami rozwiązywania problemów.
+## Najczęściej zadawane pytania
 
-## Dodatkowe Zasoby
+**Q: Czy mogę używać GroupDocs.Viewer do konwersji DOCX do HTML w aplikacji Spring Boot?**  
+A: Tak. Zainicjalizuj bean `Viewer` ze swoją licencją, a następnie wywołaj `viewer.render` z `HtmlOptions` w dowolnej usłudze lub kontrolerze.
 
-- [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)
-- [Free Support](https://forum.groupdocs.com/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+**Q: Jak biblioteka radzi sobie z dużymi PDF‑ami przy renderowaniu do obrazów?**  
+A: Użyj `PdfOptions`, aby włączyć renderowanie strona po stronie i skonfiguruj `setCacheFolder`, aby przechowywać wyniki pośrednie, zmniejszając obciążenie pamięci.
 
-## Najczęściej Zadawane Pytania
+**Q: Czy można renderować tylko wybrane strony dokumentu?**  
+A: Oczywiście. Ustaw kolekcję `pages` w `RenderOptions` na konkretne numery stron, które są potrzebne.
 
-**P: Czy mogę używać GroupDocs.Viewer do konwersji DOCX do HTML w aplikacji Spring Boot?**  
-O: Tak. Zainicjalizuj bean `Viewer` z licencją, a następnie wywołaj `viewer.render` z `HtmlOptions` w dowolnej usłudze lub kontrolerze.
+**Q: Jakie formaty mogą być renderowane do HTML z osadzonymi zasobami?**  
+A: Obsługiwane są DOCX, PPTX, XLSX, PDF i wiele innych. Użyj `HtmlOptions.setResourcesPath`, aby kontrolować, gdzie zapisywane są obrazy i CSS.
 
-**P: Jak biblioteka radzi sobie z dużymi PDF‑ami przy renderowaniu do obrazów?**  
-O: Użyj `PdfOptions`, aby włączyć renderowanie stron po jednej i skonfiguruj `setCacheFolder`, aby przechowywać wyniki pośrednie, zmniejszając obciążenie pamięci.
+**Q: Czy GroupDocs.Viewer obsługuje renderowanie wielowątkowe?**  
+A: Tak, ale każda instancja `Viewer` powinna być używana w jednym wątku lub należy wdrożyć odpowiednią synchronizację, aby uniknąć warunków wyścigu.
 
-**P: Czy można renderować tylko wybrane strony dokumentu?**  
-O: Oczywiście. Ustaw kolekcję `pages` w `RenderOptions` na konkretne numery stron, które chcesz uzyskać.
-
-**P: Jakie formaty można renderować do HTML z osadzonymi zasobami?**  
-O: Obsługiwane są DOCX, PPTX, XLSX, PDF i wiele innych. Użyj `HtmlOptions.setResourcesPath`, aby określić, gdzie zapisywane są obrazy i CSS.
-
-**P: Czy GroupDocs.Viewer obsługuje renderowanie wielowątkowe?**  
-O: Tak, ale każda instancja `Viewer` powinna być używana w jednym wątku lub należy zastosować odpowiednią synchronizację, aby uniknąć wyścigów.
-
----
-
-**Ostatnia aktualizacja:** 2026-01-02  
-**Testowane z:** GroupDocs.Viewer for Java 23.11  
+**Ostatnia aktualizacja:** 2026-03-05  
+**Testowano z:** GroupDocs.Viewer for Java 23.11  
 **Autor:** GroupDocs
