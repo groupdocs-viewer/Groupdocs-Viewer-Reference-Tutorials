@@ -1,36 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "Hem yerel dosyaları hem de URL'leri kullanarak Java'da GroupDocs.Viewer için lisansların nasıl ayarlanacağını öğrenin. Lisanslama gereksinimlerine uyumu kolayca sağlayın."
-"title": "GroupDocs.Viewer'da Lisanslar Nasıl Ayarlanır Java&#58; Dosyası ve URL Kurulum Kılavuzu"
-"url": "/tr/java/getting-started/groupdocs-viewer-java-license-setup/"
-"weight": 1
+date: '2026-03-08'
+description: Geçici bir lisans almayı, GroupDocs.Viewer for Java'ı yerel dosyalar
+  veya URL'ler kullanarak kurmayı ve lisans yolu kullanılabilirliğini doğrulamayı
+  öğrenin.
+keywords:
+- GroupDocs.Viewer Java license
+- setting license in Java
+- HTTP URL-based licenses
+title: GroupDocs.Viewer Java'da geçici lisans nasıl alınır ve lisanslar nasıl ayarlanır
 type: docs
+url: /tr/java/getting-started/groupdocs-viewer-java-license-setup/
+weight: 1
 ---
-# GroupDocs.Viewer Java'da Lisanslar Nasıl Ayarlanır: Dosya ve URL Kurulum Kılavuzu
 
-## giriiş
-Üçüncü taraf kütüphaneleri entegre ederken lisansları verimli bir şekilde yönetmek çok önemlidir. **Java için GroupDocs.Viewer** uygulamalarınıza. Bu kılavuz, geliştiricilerin karşılaştığı yaygın bir zorluğa değinir: yerel olarak depolanmış veya URL'ler üzerinden erişilmiş olsun, lisansları sorunsuz bir şekilde kurmak ve yönetmek. Bu senaryoları anlayarak, uygulamanızın performansını korurken lisanslama gereksinimlerine uyumlu kalmasını sağlayabilirsiniz.
+# Geçici lisans nasıl alınır ve GroupDocs.Viewer Java'da lisanslar nasıl ayarlanır
 
-### Ne Öğreneceksiniz
-- GroupDocs.Viewer için yerel bir dosyadan lisans nasıl ayarlanır.
-- HTTP URL tabanlı lisansların etkin bir şekilde yönetilmesi.
-- Lisans yollarının kullanılabilirliğini doğrulamak ve geri dönüş mekanizmalarını uygulamak.
-- GroupDocs.Viewer'ı Java uygulamalarınıza entegre etmek için en iyi uygulamalar.
+Lisansları verimli bir şekilde yönetmek, uygulamalarınıza **GroupDocs.Viewer for Java** gibi üçüncü‑taraf kütüphaneleri entegre ederken kritik öneme sahiptir. Bu kılavuz, **geçici bir lisans nasıl alınır**, yerel bir dosyadan veya bir HTTP URL'sinden nasıl ayarlanır ve lisans yolunun doğru olduğunun nasıl doğrulanacağını gösterir. Bu öğreticinin sonunda, uygulamanızın uyumlu ve yüksek performanslı kalmasını sağlayan güvenilir, üretim‑hazır bir lisanslama kurulumuna sahip olacaksınız.
 
-Uygulamaya başlamadan önce ihtiyaç duyulan ön koşullara bir göz atalım.
+![File and URL Setup with GroupDocs.Viewer for Java](/viewer/getting-started/file-and-url-setup-png.png)
 
-## Ön koşullar
-Başlamadan önce aşağıdakilerin mevcut olduğundan emin olun:
-1. **Java Geliştirme Kiti (JDK):** Sürüm 8 veya üzeri önerilir.
-2. **Entegre Geliştirme Ortamı (IDE):** IntelliJ IDEA veya Eclipse gibi Java'yı destekleyen herhangi bir IDE sorunsuz çalışacaktır.
-3. **Java Kütüphanesi için GroupDocs.Viewer:** Projenizde kütüphanenin indirildiğinden ve yapılandırıldığından emin olun.
-4. **Temel Java Bilgisi:** Takip edebilmek için Java söz dizimi ve kavramlarına aşinalık gereklidir.
+## Hızlı Yanıtlar
+- **Geçici bir lisans nasıl alınır?** GroupDocs geçici‑lisans sayfasından bir lisans isteyin ve *.lic* dosyasını indirin.  
+- **Lisansı bir URL'den yükleyebilir miyim?** Evet – sadece `License.setLicense` metodunu geçerli bir lisans dosyası döndüren bir HTTP adresine yönlendirin.  
+- **Lisans yolu eksik olduğunda ne olur?** Kullanıcıya rehberlik göstermek ve görüntüleyicinin başlamasını önlemek için bir kontrol uygulayın.  
+- **Lisansı değiştirdikten sonra uygulamayı yeniden başlatmam gerekir mi?** Hayır, `License.setLicense` çalışma zamanında çağrılabilir.  
+- **Hangi Java sürümü gereklidir?** JDK 8 ve üzeri önerilir.
 
-## Java için GroupDocs.Viewer Kurulumu
-GroupDocs.Viewer'ı kullanmaya başlamak için Maven kullanarak projenize ekleyin. İşte nasıl:
+## Geçici lisans nedir?
+Bir **geçici lisans**, GroupDocs tarafından verilen ve tam bir lisans satın almadan ürünü değerlendirmenizi sağlayan zaman sınırlı bir anahtardır. Geçerli olduğu sürece kalıcı bir lisans gibi davranır ve tüm özellikleri gerçek bir ortamda test etmenize olanak tanır.
+
+## Neden geçici bir lisans alınmalı?
+- **Hızlı değerlendirme:** Kanıt‑konsepti projeleri için tam işlevselliği anında elde edin.  
+- **Mali taahhüt yok:** Satın almadan önce test edin.  
+- **Kolay entegrasyon:** Kalıcı bir lisansla aynı API çağrılarını kullanır.
+
+## Önkoşullar
+1. **Java Development Kit (JDK):** Versiyon 8 veya üzeri.  
+2. **IDE:** IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu IDE.  
+3. **GroupDocs.Viewer for Java kütüphanesi:** Projenize eklenmiş (aşağıdaki Maven kurulumuna bakın).  
+4. **Temel Java bilgisi:** Sınıflar, import'lar ve istisna yönetimi konusunda aşina olmak.
+
+## GroupDocs.Viewer for Java Kurulumu
+Başlamak için, kütüphaneyi Maven projenize dahil edin.
 
 ### Maven Yapılandırması
-Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` dosya:
+Add the following configuration to your `pom.xml` file:
 ```xml
 <repositories>
    <repository>
@@ -50,157 +64,163 @@ Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` dosya:
 
 ### Lisans Edinme
 GroupDocs.Viewer'ı kullanmak için bir lisans edinin:
-- **Ücretsiz Deneme:** İndir [GroupDocs sitesi](https://releases.groupdocs.com/viewer/java/).
-- **Geçici Lisans:** Bir tane talep edin [geçici lisans sayfası](https://purchase.groupdocs.com/temporary-license/).
-- **Satın almak:** Kalıcı bir çözüm için, şu adresten bir lisans satın almayı düşünün: [GroupDocs satın alma sayfası](https://purchase.groupdocs.com/buy).
+- **Ücretsiz Deneme:** [GroupDocs sitesinden](https://releases.groupdocs.com/viewer/java/) indirin.  
+- **Geçici Lisans:** [geçici‑lisans sayfasından](https://purchase.groupdocs.com/temporary-license/) bir lisans isteyin.  
+- **Satın Alma:** Kalıcı bir çözüm için, lisansı [GroupDocs satın alma sayfasından](https://purchase.groupdocs.com/buy) satın almayı düşünün.
 
 ### Temel Başlatma
-Kurulum tamamlandıktan sonra, Java uygulamanızda GroupDocs.Viewer'ı başlatın:
+Once the library is added, you can initialize the viewer:
 ```java
 import com.groupdocs.viewer.License;
 
 public class InitializeViewer {
     public static void main(String[] args) {
         License license = new License();
-        // Lisans dosyanızın veya URL'nizin yolunu buraya ayarlayın
+        // Set the path to your license file or URL here
         license.setLicense("YOUR_LICENSE_PATH");
         System.out.println("GroupDocs.Viewer initialized successfully.");
     }
 }
 ```
 
-## Uygulama Kılavuzu
-Şimdi Java'da lisansları yönetmek için farklı özelliklerin nasıl uygulanacağını inceleyelim.
+## Geçici lisans nasıl alınır ve bir dosyadan ayarlanır
+### Genel Bakış
+Yerel bir dosyadan lisans ayarlamak, en basit yaklaşımdır ve uygulama çevrim dışı çalıştığında bile işe yarar.
 
-### Dosyadan Lisans Ayarlama
-Bu özellik, bir dosya yolu kullanarak bir lisans ayarlamayı gösterir. Bu, uygulamanızın lisans dosyasına yerel erişimi olduğunda yararlıdır.
+### Uygulama Adımları
+1. **Lisans Yolunu Tanımlayın** – geçici lisans talep ettikten sonra aldığınız *.lic* dosyasına işaret edin:
+```java
+final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
+```
+2. **Lisansı Uygulayın** – `License` sınıfını kullanarak yükleyin:
+```java
+import com.groupdocs.viewer.License;
 
-#### Genel bakış
-Bir dosyadan lisans ayarlamak, uygulamanızın ağ bağlantılarına güvenmeden lisans durumunu doğrulayabilmesini sağlar ve bağlantı sorunlarına karşı daha dayanıklı hale getirir.
+public class SetLicenseFromFile {
+    public static void run() {
+        if (licensePath != null && !licensePath.startsWith("http")) {
+            License license = new License();
+            license.setLicense(licensePath);
+            System.out.println("License set successfully.");
+        } else {
+            // Handle cases where the path is not valid
+            System.err.println(
+                "We do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**İpuçları:**  
+- Dosya yolunun çalışma dizinine göre mutlak ya da göreli olduğundan emin olun.  
+- Dosyanın, JVM'i çalıştıran kullanıcı için okuma iznine sahip olduğundan emin olun.
 
-#### Uygulama Adımları
-1. **Lisans Yolunu Tanımlayın:**
-   Lisans dosyanızın yolunu belirtin:
-   ```java
-   final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
-   ```
-2. **Lisansı Ayarla:**
-   Kullanın `License` Lisansı uygulamak için sınıf:
-   ```java
-   import com.groupdocs.viewer.License;
+## Lisans URL'si nasıl işlenir
+### Genel Bakış
+URL tabanlı bir lisans, lisans dosyasının güvenli bir depolama kovasında bulunduğu bulut dağıtımları için kullanışlıdır.
 
-   public class SetLicenseFromFile {
-       public static void run() {
-           if (licensePath != null && !licensePath.startsWith("http")) {
-               License license = new License();
-               license.setLicense(licensePath);
-               System.out.println("License set successfully.");
-           } else {
-               // Yolun geçerli olmadığı durumları ele alın
-               System.err.println(
-                   "We do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/geçici-lisans.");
-           }
-       }
-   }
-   ```
-3. **Sorun Giderme İpuçları:**
-   - Dosya yolunun doğru ve erişilebilir olduğundan emin olun.
-   - Lisans dosyasının bozuk olmadığını doğrulayın.
+### Uygulama Adımları
+1. **Lisans URL'sini Tanımlayın** – yer tutucuyu gerçek uç noktanızla değiştirin:
+```java
+final String licensePath = "http://example.com/license.lic";
+```
+2. **URL kullanımını algılayın ve kaydedin** – aşağıdaki örnek sadece bir URL sağlandığını bildirir:
+```java
+public class HandleLicenseURL {
+    public static void run() {
+        if (licensePath != null && licensePath.startsWith("http")) {
+            System.err.println("License path was not provided, license URL is found instead!");
+        }
+    }
+}
+```
+**İpuçları:**  
+- Üretimde dosyayı (örneğin `java.net.HttpURLConnection` ile) indirir ve ardından `license.setLicense(stream)` çağrısını yaparsınız.  
+- Geçici ağ sorunlarıyla başa çıkmak için yeniden deneme mantığı ve zaman aşımı yönetimi ekleyin.
 
-### Lisans URL'sini İşleme
-Bu özellik, yerel depolama alanının sınırlı olduğu ortamlarda veya dinamik lisans güncellemeleri için kullanışlı olan HTTP URL'leri aracılığıyla sağlanan lisansların nasıl işleneceğini gösterir.
+## Lisans kullanılabilirliğini nasıl kontrol ederiz (lisans yolunu doğrulama)
+### Genel Bakış
+Bir lisansı yüklemeye çalışmadan önce, **lisans kullanılabilirliğini kontrol etmek** iyi bir uygulamadır; böylece geliştiricileri veya kullanıcıları gerektiğinde geçici bir lisans almaları konusunda yönlendirebilirsiniz.
 
-#### Genel bakış
-Lisans URL'sini yönetmek, uygulamanızın kodu yeniden dağıtmadan lisansını dinamik olarak güncellemesini sağlar; bu, bulut tabanlı uygulamalar için idealdir.
-
-#### Uygulama Adımları
-1. **Lisans Yolunu Tanımlayın:**
-   Yolunuzun bir HTTP URL olup olmadığını belirtin:
-   ```java
-   final String licensePath = "http://ornek.com/lisans.lic";
-   ```
-2. **URL'yi Kontrol Edin ve İşleyin:**
-   URL'leri dosya yollarından farklı şekilde ele almak için mantığı uygulayın:
-   ```java
-   public class HandleLicenseURL {
-       public static void run() {
-           if (licensePath != null && licensePath.startsWith("http")) {
-               System.err.println("License path was not provided, license URL is found instead!");
-           }
-       }
-   }
-   ```
-3. **Sorun Giderme İpuçları:**
-   - URL'nin erişilebilir olduğundan ve geçerli bir lisans dosyası döndürdüğünden emin olun.
-   - Ağ hatalarını zarif bir şekilde yönetin.
-
-### Lisans Yolunun Kullanılabilirliğini Kontrol Edin
-Bu özellik, uygulamanızın lisans yolu sağlanmayan durumları da işleyebilmesini ve gerektiğinde kullanıcıların bir lisans yolu edinmesini sağlar.
-
-#### Genel bakış
-Bir lisans yolunun kullanılabilirliğini kontrol etmek, bir lisansın kurulması veya güncellenmesi gerektiğinde geliştiricileri uyararak uyumluluğun korunmasına yardımcı olur.
-
-#### Uygulama Adımları
-1. **Lisans Yolunu Tanımlayın:**
-   Eksik bir lisansı simüle etmek için boş bir değerle başlayın:
-   ```java
-   final String licensePath = null;
-   ```
-2. **Kullanılabilirlik Kontrolünü Uygula:**
-   Hiçbir yol mevcut değilse geri bildirim sağlayın:
-   ```java
-   public class CheckLicensePathAvailability {
-       public static void run() {
-           if (licensePath == null) {
-               System.out.println(
-                   "\nWe do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/geçici-lisans.");
-           }
-       }
-   }
-   ```
-3. **Sorun Giderme İpuçları:**
-   - Başvuruda lisans alma konusunda net talimatlar verildiğinden emin olun.
-   - URL'lerden lisans alınıyorsa ağ bağlantısını doğrulayın.
+### Uygulama Adımları
+1. **Eksik bir lisans yolunu taklit edin**:
+```java
+final String licensePath = null;
+```
+2. **Yol mevcut değilse net bir rehberlik sağlayın**:
+```java
+public class CheckLicensePathAvailability {
+    public static void run() {
+        if (licensePath == null) {
+            System.out.println(
+                "\nWe do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**İpuçları:**  
+- Bu mesajı başlangıçta kaydedin, böylece operasyon ekipleri bir lisansın eksik olduğunu bilir.  
+- Geçerli bir lisans sağlanana kadar uygulamadan çıkmayı veya görüntüleyici özelliklerini devre dışı bırakmayı düşünün.
 
 ## Pratik Uygulamalar
-GroupDocs.Viewer lisanslarının nasıl etkili bir şekilde yönetileceğini anlamak, çeşitli pratik uygulamaların önünü açar:
-1. **Belge Yönetim Sistemleri:** Belge görüntüleme yeteneklerini sağlam lisanslama kontrolleriyle sorunsuz bir şekilde bütünleştirin.
-2. **Bulut Tabanlı Çözümler:** URL tabanlı lisansları kullanarak bulut ortamında lisansları dinamik olarak güncelleyin ve doğrulayın.
-3. **Kurumsal Yazılım:** GroupDocs.Viewer'a bağlı özellikleri dağıtmadan önce lisans kullanılabilirliğini doğrulayarak uyumluluğu sağlayın.
+Bir **geçici lisans nasıl alınır**, bir dosyadan veya URL'den nasıl ayarlanır ve **lisans yolunun** doğrulanması gerektiğini anlamak, çeşitli gerçek‑dünya senaryolarının kilidini açar:
+1. **Belge Yönetim Sistemleri** – her başlatmada lisansını otomatik olarak doğrulayan bir görüntüleyici gömün.  
+2. **Bulut SaaS Platformları** – lisansı korumalı bir blob depolamada saklayın ve sıfır kesinti güncellemeleri için URL üzerinden yükleyin.  
+3. **Kurumsal Dağıtımlar** – tam ölçekli bir lisans satın almadan önce pilot aşamalarda geçici bir lisans kullanın.
 
-## Performans Hususları
-GroupDocs.Viewer kullanırken uygulamanızın performansını optimize etmek için:
-- **Kaynak Kullanımını Optimize Edin:** Özellikle büyük belgelerle çalışırken, sızıntıları önlemek için bellek kullanımını izleyin.
-- **Java Bellek Yönetimi:** Verimli kaynak yönetimi için Java'nın en iyi uygulamalarından yararlanın.
+## Performans Düşünceleri
+- **Kaynak kullanımı:** Lisansı uygulama başlangıcında bir kez yükleyin; tekrar eden çağrılar gereksiz I/O oluşturur.  
+- **Bellek yönetimi:** `License` nesnesi minimal durum tutar, ancak lisansı manuel olarak indiriyorsanız akışları her zaman kapatın.
 
-## Çözüm 
-Sonuç olarak, GroupDocs.Viewer for Java'da lisansları düzgün bir şekilde yönetmek, sorunsuz işlevsellik ve uyumluluk sağlar. Lisansları yerel dosyalar veya URL'ler aracılığıyla ayarlamak, kullanılabilirliklerini doğrulamak veya geri dönüş mekanizmaları uygulamak olsun, her adım uygulamanızın sağlamlığını artırır. Uygun lisanslama entegrasyonu yalnızca kesintileri önlemekle kalmaz, aynı zamanda çeşitli dağıtım ortamlarında performansı ve uyarlanabilirliği de optimize eder.
+## Sonuç
+Yukarıdaki adımları izleyerek **geçici bir lisans alabilir**, GroupDocs.Viewer for Java'ı yerel bir dosya veya bir HTTP URL'si kullanarak yapılandırabilir ve **lisans kullanılabilirliğini kontrol edebilir** ve uygulamanızın uyumlu kalmasını sağlayabilirsiniz. Bu sağlam lisanslama temeli, çalışma zamanı hatalarını önler ve geliştirme, test ve üretim ortamları arasında güvenle geçiş yapmanıza esneklik kazandırır.
 
+### SSS'ler
 
-### SSS
+1. **GroupDocs.Viewer Java'da yerel bir lisans dosyası nasıl ayarlanır?**  
 
-1. **GroupDocs.Viewer Java'da yerel lisans dosyası nasıl ayarlarım?**  
+   Yerel bir lisans uygulamak için doğru dosya yolu ile `license.setLicense("path/to/license.lic")` kullanın.
 
-Kullanmak `license.setLicense("path/to/license.lic")` yerel bir lisansı uygulamak için doğru dosya yolu ile.
+2. **Lisansı doğrudan bir URL'den yükleyebilir miyim?**  
 
-2. **Lisansı doğrudan URL'den yükleyebilir miyim?**  
-
-Evet, ancak kodunuzun URL erişimini, potansiyel olarak çalışma zamanında lisansı indirmeyi veya ağ sorunlarını yönetmeyi yönettiğinden emin olun.
+   Evet, ancak kodunuzun URL erişimini ele aldığından, lisansı çalışma zamanında indirip/veya ağ sorunlarını yönettiğinden emin olun.
 
 3. **Lisans yolu geçersiz veya eksikse ne yapmalıyım?**  
 
-Boş veya geçersiz yollar için denetimler uygulayın ve geçerli bir lisans elde etmek için rehberlik veya geri dönüş istemleri sağlayın.
+   Null veya geçersiz yollar için kontroller uygulayın ve geçerli bir lisans elde etmek için rehberlik veya geri dönüş istemleri sağlayın.
 
-4. **Lisans dosyası ile URL arasında dinamik olarak geçiş yapmak mümkün müdür?**  
+4. **Lisans dosyası ve URL arasında dinamik olarak geçiş yapmak mümkün mü?**  
 
-Kesinlikle, ortamınıza veya çalışma zamanı parametrelerinize bağlı olarak her iki senaryoyu da ele almak için koşullu mantık ekleyerek.
+   Kesinlikle, ortamınıza veya çalışma zamanı parametrelerinize göre her iki senaryoyu da ele alacak koşullu mantık ekleyerek.
 
 5. **Üretimde lisans yönetimi için en iyi uygulamalar nelerdir?**  
 
-Lisansları güvenli bir şekilde saklayın, geçerliliklerini düzenli olarak doğrulayın ve kesintisiz hizmet sağlamak için lisans sorunları için hata işleme uygulayın.
+   Lisansları güvenli bir şekilde saklayın, geçerliliklerini düzenli olarak doğrulayın ve kesintisiz hizmet sağlamak için lisans sorunları için hata yönetimi uygulayın.
+
+## Sıkça Sorulan Sorular
+
+**S: Geçici bir lisans ne kadar sürer?**  
+C: Genellikle 30 gün, ardından yenileme talep edebilir veya kalıcı bir lisansa yükseltebilirsiniz.
+
+**S: Dosya tabanlı bir lisans kullanmak için internet bağlantısına ihtiyacım var mı?**  
+C: Hayır. Yerel bir *.lic* dosyası yüklendikten sonra tamamen çevrim dışı çalışır.
+
+**S: Ek güvenlik için lisans dosyasını şifreleyebilir miyim?**  
+C: Lisans dosyası zaten GroupDocs tarafından imzalanmıştır; ek şifreleme isteğe bağlıdır ancak gerekli değildir.
+
+**S: Uygulama çalışırken lisans süresi dolarsa ne olur?**  
+C: Görüntüleyici işlemleri lisans istisnaları fırlatmaya başlayacaktır; başlangıçta sürenin kontrol edilmesi önerilir.
+
+**S: Lisans URL'sini kaynak kontrolünde saklamak güvenli mi?**  
+C: Hassas URL'leri commit etmekten kaçının; bunun yerine ortam değişkenleri veya güvenli yapılandırma depoları kullanın.
+
+---
+
+**Son Güncelleme:** 2026-03-08  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs
