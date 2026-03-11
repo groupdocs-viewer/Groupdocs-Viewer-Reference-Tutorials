@@ -154,12 +154,6 @@ A: Chắc chắn—các bộ mã như `EUC-JP`, `GB18030` và `Big5` đều đư
 
 Bạn giờ đã biết **cách render shift_jis** các tài liệu văn bản bằng GroupDocs.Viewer cho Java. Bằng cách thực hiện các bước trên, bạn có thể tích hợp việc render tiếng Nhật đáng tin cậy vào bất kỳ hệ thống dựa trên Java nào, dù là cổng thông tin web, dịch vụ báo cáo hay pipeline xử lý dữ liệu.
 
----
-
-**Last Updated:** 2026-01-15  
-**Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Tài liệu](https://docs.groupdocs.com/viewer/java/)  
 - [Tham chiếu API](https://reference.groupdocs.com/viewer/java/)  
@@ -168,3 +162,9 @@ Bạn giờ đã biết **cách render shift_jis** các tài liệu văn bản b
 - [Dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)  
 - [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)  
 - [Diễn đàn Hỗ trợ](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-01-15  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs  

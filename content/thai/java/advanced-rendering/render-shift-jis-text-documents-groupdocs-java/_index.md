@@ -154,12 +154,6 @@ A: แน่นอน—การเข้ารหัสเช่น `EUC-JP`, 
 
 ตอนนี้คุณรู้ **วิธีเรนเดอร์ shift_jis** เอกสารข้อความโดยใช้ GroupDocs.Viewer สำหรับ Java แล้ว ด้วยการทำตามขั้นตอนข้างต้น คุณสามารถรวมการเรนเดอร์ภาษาญี่ปุ่นที่เชื่อถือได้เข้าไปในระบบที่ใช้ Java ใด ๆ ไม่ว่าจะเป็นพอร์ทัลเว็บ, บริการรายงาน, หรือกระบวนการประมวลผลข้อมูล
 
----
-
-**อัปเดตล่าสุด:** 2026-01-15  
-**ทดสอบกับ:** GroupDocs.Viewer for Java 25.2  
-**ผู้เขียน:** GroupDocs  
-
 **แหล่งข้อมูล**  
 - [เอกสาร](https://docs.groupdocs.com/viewer/java/)  
 - [อ้างอิง API](https://reference.groupdocs.com/viewer/java/)  
@@ -168,3 +162,9 @@ A: แน่นอน—การเข้ารหัสเช่น `EUC-JP`, 
 - [ทดลองใช้ฟรี](https://releases.groupdocs.com/viewer/java/)  
 - [ลิขสิทธิ์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)  
 - [ฟอรั่มสนับสนุน](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**อัปเดตล่าสุด:** 2026-01-15  
+**ทดสอบกับ:** GroupDocs.Viewer for Java 25.2  
+**ผู้เขียน:** GroupDocs  

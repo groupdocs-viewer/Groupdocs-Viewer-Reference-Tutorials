@@ -30,23 +30,23 @@ Jeśli szukasz **jak używać GroupDocs**, aby renderować harmonogramy projekt�
 ## Co oznacza „jak używać GroupDocs” w tym kontekście?
 GroupDocs Viewer to biblioteka Java, która konwertuje ponad 100 formatów plików na reprezentacje przyjazne dla sieci. Kiedy **jak używać GroupDocs** dla plików projektowych, zyskujesz możliwość wyodrębniania, wizualizacji i udostępniania danych harmonogramu bez konieczności posiadania Microsoft Project po stronie klienta.
 
-## Dlaczego renderować dokumenty projektów w interwałach czasowych?
-- **Skoncentrowana analiza:** Pokaż tylko fazę, która Cię interesuje (np. Q3 2024).  
-- **Wydajność:** Mniejszy rozmiar HTML oznacza szybsze ładowanie stron.  
-- **Integracja:** Osadź widoki osi czasu w pulpitach, portalach raportowych lub własnych narzędziach PM.  
+## Dlaczego renderować dokumenty w interwałach czasowych?
+- **Skoncentrowana analiza:** Pokaż tylko fazę, która Cię testuje (np. III kwartał 2024).
+- **Wydajność:** Mniejszy rozmiar HTML oznacza pojęcie ładowanie stron.
+- **Integracja:** Osadź widoki osi czasu w ambonach, portalach raportowych lub narzędzi narzędziowych PM.
 
-## Wymagania wstępne
+##Wymagania wstępne
 
-- **GroupDocs.Viewer for Java** wersja 25.2 lub wyższa.  
-- Java Development Kit (JDK) 8 lub nowszy.  
-- IDE, takie jak IntelliJ IDEA lub Eclipse.  
-- Podstawowa znajomość Maven.  
+- **GroupDocs.Viewer dla Java** wersja 25.2lub wyższa.
+- Java Development Kit (JDK)8lub nowszy.
+- IDE, takie jak IntelliJ IDEA lub Eclipse.
+- Podstawowa przyjemność Maven.
 
 ## Konfiguracja GroupDocs.Viewer dla Javy
 
 ### Zależność Maven
 
-Add the repository and dependency to your `pom.xml`:
+Dodaj repozytorium i zależność do pliku `pom.xml`:
 
 ```xml
 <repositories>
@@ -65,15 +65,15 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Kroki uzyskania licencji
+### Kroki pochodzące z
 
-1. **Darmowa wersja próbna** – Pobierz wersję próbną ze [strony pobierania GroupDocs](https://releases.groupdocs.com/viewer/java/).  
-2. **Licencja tymczasowa** – Uzyskaj tymczasową licencję do rozszerzonego testowania poprzez [ten link](https://purchase.groupdocs.com/temporary-license/).  
-3. **Zakup** – Do nieograniczonego użycia produkcyjnego, kup licencję na [stronie zakupu GroupDocs](https://purchase.groupdocs.com/buy).
+1. **Darmowa wersja próbna** – Pobierz wersję próbną ze [strony pobierania GroupDocs](https://releases.groupdocs.com/viewer/java/).
+2. **Licencja tymczasowa** – uzyskaj tymczasową różnicę do rozszerzonego testowania poprzez [dziesięć linków](https://purchase.groupdocs.com/temporary-license/).
+3. **Zakup** – Do użycia produkcyjnego, kup na [stronie zakupu GroupDocs](https://purchase.groupdocs.com/buy).
 
-### Podstawowa inicjalizacja Viewer
+### Podstawowa przeglądarka inicjalizacji
 
-The following snippet shows how to create a `Viewer` instance that points to a Microsoft Project file (`.mpp`):
+Poniższy fragment pokazuje, jak utworzyć instancję `Viewer`, która wskazuje plik Microsoft Project (`.mpp`):
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,7 +91,7 @@ public class ViewerSetup {
 
 ### 1. Zdefiniuj katalog wyjściowy
 
-Create a folder where the generated HTML pages will be saved:
+Utwórz folder, w którym będą zapisywane wygenerowane strony HTML:
 
 ```java
 import java.nio.file.Path;

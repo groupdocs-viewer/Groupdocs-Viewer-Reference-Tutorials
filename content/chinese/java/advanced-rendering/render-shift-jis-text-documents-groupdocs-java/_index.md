@@ -153,12 +153,6 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 现在您已经掌握了 **如何使用 GroupDocs.Viewer for Java 渲染 shift_jis** 文本文档。按照上述步骤操作，即可在任何基于 Java 的系统中集成可靠的日文渲染功能，无论是 Web 门户、报表服务还是数据处理流水线。
 
----
-
-**最后更新：** 2026-01-15  
-**测试环境：** GroupDocs.Viewer for Java 25.2  
-**作者：** GroupDocs  
-
 **资源**  
 - [文档](https://docs.groupdocs.com/viewer/java/)  
 - [API 参考](https://reference.groupdocs.com/viewer/java/)  
@@ -167,3 +161,9 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 - [免费试用](https://releases.groupdocs.com/viewer/java/)  
 - [临时许可证](https://purchase.groupdocs.com/temporary-license/)  
 - [支持论坛](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**最后更新：** 2026-01-15  
+**测试环境：** GroupDocs.Viewer for Java 25.2  
+**作者：** GroupDocs  

@@ -155,12 +155,6 @@ C: Kesinlikle—`EUC-JP`, `GB18030` ve `Big5` gibi kodlamalar aynı `setCharset`
 
 Artık **shift_jis** metin belgelerini GroupDocs.Viewer for Java ile nasıl render edeceğinizi biliyorsunuz. Yukarıdaki adımları izleyerek, ister bir web portalı, ister raporlama servisi, ister veri işleme hattı olsun, herhangi bir Java‑tabanlı sisteme güvenilir Japonca render entegrasyonu sağlayabilirsiniz.
 
----
-
-**Son Güncelleme:** 2026-01-15  
-**Test Edilen Versiyon:** GroupDocs.Viewer for Java 25.2  
-**Yazar:** GroupDocs  
-
 **Kaynaklar**  
 - [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)  
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)  
@@ -169,3 +163,9 @@ Artık **shift_jis** metin belgelerini GroupDocs.Viewer for Java ile nasıl rend
 - [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)  
 - [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)  
 - [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2026-01-15  
+**Test Edilen Versiyon:** GroupDocs.Viewer for Java 25.2  
+**Yazar:** GroupDocs  

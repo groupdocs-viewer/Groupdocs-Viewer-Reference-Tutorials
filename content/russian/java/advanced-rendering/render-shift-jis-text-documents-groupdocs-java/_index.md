@@ -154,12 +154,6 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 Теперь вы знаете **как отобразить shift_jis** текстовые документы с помощью GroupDocs.Viewer для Java. Следуя приведённым выше шагам, вы сможете интегрировать надёжный рендеринг японского языка в любую систему на Java, будь то веб‑портал, сервис отчётности или конвейер обработки данных.
 
----
-
-**Последнее обновление:** 2026-01-15  
-**Тестировано с:** GroupDocs.Viewer for Java 25.2  
-**Автор:** GroupDocs  
-
 **Ресурсы**  
 - [Документация](https://docs.groupdocs.com/viewer/java/)  
 - [Справочник API](https://reference.groupdocs.com/viewer/java/)  
@@ -168,3 +162,9 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 - [Бесплатный пробный период](https://releases.groupdocs.com/viewer/java/)  
 - [Временная лицензия](https://purchase.groupdocs.com/temporary-license/)  
 - [Форум поддержки](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Последнее обновление:** 2026-01-15  
+**Тестировано с:** GroupDocs.Viewer for Java 25.2  
+**Автор:** GroupDocs  

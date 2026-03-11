@@ -151,12 +151,6 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 أنت الآن تعرف **كيفية عرض مستندات النص shift_jis** باستخدام GroupDocs.Viewer for Java. باتباع الخطوات السابقة، يمكنك دمج عرض موثوق للغة اليابانية في أي نظام مبني على Java، سواء كان بوابة ويب، خدمة تقارير، أو سلسلة معالجة بيانات.
 
----
-
-**آخر تحديث:** 2026-01-15  
-**تم الاختبار مع:** GroupDocs.Viewer for Java 25.2  
-**المؤلف:** GroupDocs  
-
 **الموارد**  
 - [التوثيق](https://docs.groupdocs.com/viewer/java/)  
 - [مرجع API](https://reference.groupdocs.com/viewer/java/)  
@@ -165,3 +159,9 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 - [تجربة مجانية](https://releases.groupdocs.com/viewer/java/)  
 - [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)  
 - [منتدى الدعم](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**آخر تحديث:** 2026-01-15  
+**تم الاختبار مع:** GroupDocs.Viewer for Java 25.2  
+**المؤلف:** GroupDocs  

@@ -155,12 +155,6 @@ A: Ja – Kodierungen wie `EUC-JP`, `GB18030` und `Big5` werden über dieselbe `
 
 Sie wissen jetzt, **wie man shift_jis**‑Textdokumente mit GroupDocs.Viewer für Java rendert. Wenn Sie die oben genannten Schritte befolgen, können Sie zuverlässiges Rendering japanischer Texte in jedes Java‑basierte System integrieren, sei es ein Web‑Portal, ein Reporting‑Dienst oder eine Datenverarbeitungspipeline.
 
----
-
-**Last Updated:** 2026-01-15  
-**Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs  
-
 ## Ressourcen
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -169,3 +163,9 @@ Sie wissen jetzt, **wie man shift_jis**‑Textdokumente mit GroupDocs.Viewer fü
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-01-15  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs  

@@ -155,12 +155,6 @@ A: Zeker—coderingen zoals `EUC-JP`, `GB18030` en `Big5` worden ondersteund via
 
 Je weet nu **hoe shift_jis** tekstdocumenten weer te geven met GroupDocs.Viewer voor Java. Door de bovenstaande stappen te volgen, kun je betrouwbare Japanse‑taalrendering integreren in elk Java‑gebaseerd systeem, of het nu een webportaal, een rapportageservice of een gegevensverwerkings‑pipeline is.
 
----
-
-**Last Updated:** 2026-01-15  
-**Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentatie](https://docs.groupdocs.com/viewer/java/)  
 - [API‑referentie](https://reference.groupdocs.com/viewer/java/)  
@@ -169,3 +163,9 @@ Je weet nu **hoe shift_jis** tekstdocumenten weer te geven met GroupDocs.Viewer 
 - [Gratis proefversie](https://releases.groupdocs.com/viewer/java/)  
 - [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)  
 - [Supportforum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-01-15  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs  

@@ -155,12 +155,6 @@ R : Absolument — des encodages tels que `EUC-JP`, `GB18030` et `Big5` sont sup
 
 Vous savez maintenant **how to render shift_jis** les documents texte en utilisant GroupDocs.Viewer pour Java. En suivant les étapes ci‑dessus, vous pouvez intégrer un rendu fiable du japonais dans tout système basé sur Java, qu’il s’agisse d’un portail web, d’un service de reporting ou d’un pipeline de traitement de données.
 
----
-
-**Last Updated:** 2026-01-15  
-**Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -169,3 +163,9 @@ Vous savez maintenant **how to render shift_jis** les documents texte en utilisa
 - [Free Trial](https://releases.groupdocs.com/viewer/java/)  
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-01-15  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs  

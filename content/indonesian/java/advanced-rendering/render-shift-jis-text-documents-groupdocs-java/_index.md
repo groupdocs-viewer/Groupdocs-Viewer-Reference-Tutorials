@@ -155,12 +155,6 @@ A: Tentu—encoding seperti `EUC-JP`, `GB18030`, dan `Big5` didukung melalui met
 
 Anda sekarang tahu **cara merender shift_jis** dokumen teks menggunakan GroupDocs.Viewer untuk Java. Dengan mengikuti langkah‑langkah di atas, Anda dapat mengintegrasikan rendering bahasa Jepang yang andal ke dalam sistem berbasis Java apa pun, baik itu portal web, layanan pelaporan, atau pipeline pemrosesan data.
 
----
-
-**Terakhir Diperbarui:** 2026-01-15  
-**Diuji Dengan:** GroupDocs.Viewer for Java 25.2  
-**Penulis:** GroupDocs  
-
 **Sumber Daya**  
 - [Dokumentasi](https://docs.groupdocs.com/viewer/java/)  
 - [Referensi API](https://reference.groupdocs.com/viewer/java/)  
@@ -169,3 +163,9 @@ Anda sekarang tahu **cara merender shift_jis** dokumen teks menggunakan GroupDoc
 - [Trial Gratis](https://releases.groupdocs.com/viewer/java/)  
 - [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)  
 - [Forum Dukungan](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Terakhir Diperbarui:** 2026-01-15  
+**Diuji Dengan:** GroupDocs.Viewer for Java 25.2  
+**Penulis:** GroupDocs  

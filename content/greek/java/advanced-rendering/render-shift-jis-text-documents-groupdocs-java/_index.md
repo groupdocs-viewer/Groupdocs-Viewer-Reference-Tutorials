@@ -155,12 +155,6 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 Τώρα γνωρίζετε **πώς να αποδώσετε shift_jis** έγγραφα κειμένου χρησιμοποιώντας το GroupDocs.Viewer για Java. Ακολουθώντας τα παραπάνω βήματα, μπορείτε να ενσωματώσετε αξιόπιστη απόδοση ιαπωνικής γλώσσας σε οποιοδήποτε σύστημα βασισμένο σε Java, είτε πρόκειται για διαδικτυακή πύλη, υπηρεσία αναφορών ή pipeline επεξεργασίας δεδομένων.
 
----
-
-**Τελευταία Ενημέρωση:** 2026-01-15  
-**Δοκιμάστηκε Με:** GroupDocs.Viewer for Java 25.2  
-**Συγγραφέας:** GroupDocs  
-
 **Πόροι**  
 - [Τεκμηρίωση](https://docs.groupdocs.com/viewer/java/)  
 - [Αναφορά API](https://reference.groupdocs.com/viewer/java/)  
@@ -169,3 +163,9 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 - [Δωρεάν Δοκιμή](https://releases.groupdocs.com/viewer/java/)  
 - [Προσωρινή Άδεια](https://purchase.groupdocs.com/temporary-license/)  
 - [Φόρουμ Υποστήριξης](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Τελευταία Ενημέρωση:** 2026-01-15  
+**Δοκιμάστηκε Με:** GroupDocs.Viewer for Java 25.2  
+**Συγγραφέας:** GroupDocs  

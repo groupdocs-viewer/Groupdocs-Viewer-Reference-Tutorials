@@ -13,37 +13,37 @@ url: /it/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/
 weight: 1
 ---
 
-# how to render shift_jis with GroupDocs.Viewer for Java
+# come eseguire il rendering di shift_jis con GroupDocs.Viewer per Java
 
-If you need to **how to render shift_jis** text files in a Java application, you’ve come to the right place. In this tutorial we’ll walk through everything you need—from Maven setup to rendering the document as HTML—so you can display Japanese‑encoded content correctly in your projects.
+Se hai bisogno di **come eseguire il rendering di file di testo shift_jis** in un'applicazione Java, sei nel posto giusto. In questo tutorial ti guideremo attraverso tutto ciò di cui hai bisogno, dalla configurazione di Maven al rendering del documento in HTML, in modo da poter visualizzare correttamente i contenuti codificati in giapponese nei tuoi progetti.
 
 ![Renderizzare documenti di testo in Shift_JIS con GroupDocs.Viewer per Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java.png)
 
 ## Risposte rapide
-- **What library is required?** GroupDocs.Viewer for Java (v25.2+).  
-- **Which charset must be specified?** `shift_jis`.  
-- **Can I render other formats?** Yes, the Viewer supports PDF, DOCX, HTML, and many more.  
-- **Do I need a license for production?** A valid GroupDocs license is required for non‑trial use.  
-- **What Java version is supported?** JDK 8 or newer.
+- **Quale libreria è richiesta?** GroupDocs.Viewer per Java (v25.2+).
+- **Quale set di caratteri deve essere specificato?** `shift_jis`.
+- **Posso eseguire il rendering di altri formati?** Sì, il Viewer supporta PDF, DOCX, HTML e molti altri.
+- **Ho bisogno di una licenza per la produzione?** Per l'utilizzo non di prova è necessaria una licenza GroupDocs valida.
+- **Quale versione Java è supportata?** JDK8 o successiva.
 
-## Cos'è Shift_JIS e perché renderizzarlo?
+## Cos'è Shift_JIS e perché renderlo?
 
-Shift_JIS è una codifica legacy ampiamente usata per il testo giapponese. Renderizzare documenti codificati con Shift_JIS assicura che i caratteri vengano visualizzati correttamente, evitando output illeggibili che possono compromettere l'esperienza utente in report aziendali, contenuti web localizzati e pipeline di analisi dei dati.
+Shift_JIS è una codifica legacy ampiamente utilizzata per il testo giapponese. Renderizzare documenti codificati con Shift_JIS assicura che i caratteri vengano visualizzati correttamente, evitando output illeggibili che possono compromettere l'esperienza utente in report aziendali, contenuti web localizzati e pipeline di analisi dei dati.
 
-## How to render shift_jis Text Documents
+## Come eseguire il rendering dei documenti di testo shift_jis
 
-Below you’ll find a complete, runnable example that shows **how to render shift_jis** files to HTML using GroupDocs.Viewer. Follow each step, and you’ll have a working solution in minutes.
+Di seguito troverai un esempio completo ed eseguibile che mostra **come eseguire il rendering dei file shift_jis** in HTML utilizzando GroupDocs.Viewer. Segui ogni passaggio e avrai una soluzione funzionante in pochi minuti.
 
 ### Prerequisiti
 
-- Java Development Kit 8 or newer  
-- Maven (or another build tool)  
-- GroupDocs.Viewer for Java library (v25.2+)  
-- A text file encoded in Shift_JIS (e.g., `sample_shift_jis.txt`)
+- Java Development Kit 8 o versione successiva
+- Maven (o un altro strumento di compilazione)
+- Libreria GroupDocs.Viewer per Java (v25.2+)
+- Un file di testo codificato in Shift_JIS (ad esempio, `sample_shift_jis.txt`)
 
-### Setting Up GroupDocs.Viewer for Java
+### Configurazione di GroupDocs.Viewer per Java
 
-Add the GroupDocs Maven repository and dependency to your `pom.xml`:
+Aggiungi il repository Maven di GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,30 +62,30 @@ Add the GroupDocs Maven repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-**License tip:** Start with a free trial to explore features, then apply for a temporary license or purchase a full license from the GroupDocs website.
+**Suggerimento sulla licenza:** Inizia con una prova gratuita per esplorare le funzionalità, quindi richiedi una licenza temporanea o acquista una licenza completa dal sito web di GroupDocs.
 
 ### Guida all'implementazione
 
-#### 1. Define the Input File Path
+#### 1. Definisci il percorso del file di input
 
-Specify the location of the Shift_JIS‑encoded text file you want to render:
+Specifica la posizione del file di testo codificato in Shift_JIS che desideri visualizzare:
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT_SHIFT_JS_ENCODED";
 ```
 
-#### 2. Set Up the Output Directory
+#### 2. Imposta la directory di output
 
-Create a folder where the generated HTML pages will be saved:
+Crea una cartella in cui verranno salvate le pagine HTML generate:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### 3. Configure LoadOptions with the Shift_JIS Charset
+#### 3. Configura LoadOptions con il set di caratteri Shift_JIS
 
-Tell the Viewer what charset to use when reading the file:
+Indica al Viewer quale set di caratteri utilizzare durante la lettura del file:
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -93,17 +93,17 @@ loadOptions.setFileType(FileType.TXT);
 loadOptions.setCharset(Charset.forName("shift_jis"));
 ```
 
-#### 4. Prepare HtmlViewOptions for Embedded Resources
+#### 4. Prepara HtmlViewOptions per le risorse incorporate
 
-Configure HTML rendering so that images, CSS, and scripts are embedded directly in the output files:
+Configura il rendering HTML in modo che immagini, CSS e script vengano incorporati direttamente nei file di output:
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 5. Load and Render the Document
+#### 5. Carica e visualizza il documento
 
-Finally, render the text file to HTML. The `try‑with‑resources` block guarantees that the `Viewer` instance is closed properly:
+Infine, visualizza il file di testo in HTML. Il blocco `try‑with‑resources` garantisce che l'istanza `Viewer` venga chiusa correttamente:
 
 ```java
 try (Viewer viewer = new Viewer(filePath, loadOptions)) {
@@ -111,11 +111,11 @@ try (Viewer viewer = new Viewer(filePath, loadOptions)) {
 }
 ```
 
-**Pro tip:** If you encounter `UnsupportedEncodingException`, double‑check that the file truly uses Shift_JIS and that the JVM supports the charset.
+**Suggerimento:** Se si verifica `UnsupportedEncodingException`, verificare attentamente che il file utilizzi effettivamente Shift_JIS e che la JVM supporti il ​​set di caratteri.
 
-### Configuring Output Directory for Rendering (Reusable Snippet)
+### Configurazione della directory di output per il rendering (frammento riutilizzabile)
 
-If you need to reuse the output‑directory configuration elsewhere, keep this snippet handy:
+Se hai bisogno di riutilizzare la configurazione della directory di output altrove, tieni a portata di mano questo frammento:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -124,48 +124,48 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 ### Applicazioni pratiche
 
-- **Business Reports:** Convert Japanese‑language reports into web‑ready HTML for intranets.  
-- **Localized Websites:** Serve accurate Japanese content without relying on client‑side conversion.  
-- **Data Mining:** Pre‑process Shift_JIS logs before feeding them into analytics pipelines.
+- **Report aziendali:** Converti report in lingua giapponese in HTML pronto per il web per le intranet.
+- **Siti web localizzati:** Offri contenuti giapponesi accurati senza dover ricorrere alla conversione lato client.
+- **Data mining:** Pre-elabora i log Shift_JIS prima di inserirli nelle pipeline di analisi.
 
 ### Considerazioni sulle prestazioni
 
-- Limit concurrent rendering threads to avoid excessive memory consumption.  
-- Dispose of `Viewer` objects promptly (as shown with `try‑with‑resources`).  
-- Use streaming APIs for very large files to keep the memory footprint low.
+- Limita i thread di rendering simultanei per evitare un consumo eccessivo di memoria.
+- Elimina tempestivamente gli oggetti `Viewer` (come mostrato con `try-with-resources`).
+- Utilizza API di streaming per file di grandi dimensioni per ridurre l'occupazione di memoria.
 
 ## Domande frequenti
 
-**Q: What if my document is not a `.txt` file but still uses Shift_JIS?**  
-A: Set the appropriate `FileType` in `LoadOptions` (e.g., `FileType.CSV`) while keeping the charset as `shift_jis`.
+**D: Cosa succede se il mio documento non è un file `.txt` ma utilizza comunque Shift_JIS?**
+R: Imposta il `FileType` appropriato in `LoadOptions` (ad esempio, `FileType.CSV`) mantenendo il charset `shift_jis`.
 
-**Q: Can I render multiple files in a batch?**  
-A: Yes, loop over file paths and create a new `Viewer` instance for each, reusing the same `HtmlViewOptions` if the output folder is shared.
+**D: Posso eseguire il rendering di più file in batch?**
+R: Sì, eseguo un ciclo sui percorsi dei file e creo una nuova istanza di `Viewer` per ciascuno, riutilizzando lo stesso `HtmlViewOptions` se la cartella di output è condivisa.
 
-**Q: Is there a limit to the size of a Shift_JIS document?**  
-A: No hard limit, but very large files may require more memory; consider processing page‑by‑page.
+**D: Esiste un limite alla dimensione di un documento Shift_JIS?**
+R: Nessun limite rigido, ma file molto grandi potrebbero richiedere più memoria; si consiglia di elaborarli pagina per pagina.
 
-**Q: How do I troubleshoot garbled characters?**  
-A: Verify the source file’s encoding with a tool like `iconv` and ensure `Charset.forName("shift_jis")` matches exactly.
+**D: Come posso risolvere i problemi relativi ai caratteri illeggibili?**
+R: Verifica la codifica del file sorgente con uno strumento come `iconv` e assicurati che `Charset.forName("shift_jis")` corrisponda esattamente.
 
-**Q: Does GroupDocs.Viewer support other Asian encodings?**  
-A: Absolutely—encodings such as `EUC-JP`, `GB18030`, and `Big5` are supported via the same `setCharset` method.
+**D: GroupDocs.Viewer supporta altre codifiche asiatiche?**
+R: Certamente: codifiche come `EUC-JP`, `GB18030` e `Big5` sono supportate tramite lo stesso metodo `setCharset`.
 
 ## Conclusione
 
-You now know **how to render shift_jis** text documents using GroupDocs.Viewer for Java. By following the steps above, you can integrate reliable Japanese‑language rendering into any Java‑based system, whether it’s a web portal, a reporting service, or a data‑processing pipeline.
+Ora sai **come eseguire il rendering di documenti di testo shift_jis** utilizzando GroupDocs.Viewer per Java. Seguendo i passaggi precedenti, puoi integrare un rendering affidabile in lingua giapponese in qualsiasi sistema basato su Java, che si tratti di un portale web, di un servizio di reporting o di una pipeline di elaborazione dati.
+
+**Alzarsi**
+- [Documentazione](https://docs.groupdocs.com/viewer/java/)
+- [Riferimento API](https://reference.groupdocs.com/viewer/java/)
+- [Scarica](https://releases.groupdocs.com/viewer/java/)
+- [Acquista](https://purchase.groupdocs.com/buy)
+- [Prova gratuita](https://releases.groupdocs.com/viewer/java/)
+- [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
+- [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2026-01-15  
-**Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs  
-
-**Risorse**  
-- [Documentazione](https://docs.groupdocs.com/viewer/java/)  
-- [Riferimento API](https://reference.groupdocs.com/viewer/java/)  
-- [Scarica](https://releases.groupdocs.com/viewer/java/)  
-- [Acquista](https://purchase.groupdocs.com/buy)  
-- [Prova gratuita](https://releases.groupdocs.com/viewer/java/)  
-- [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)  
-- [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
+**Ultimo aggiornamento:** 2026-01-15
+**Testato con:** GroupDocs.Viewer per Java 25.2
+**Autore:** GroupDocs  
