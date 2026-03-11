@@ -13,40 +13,43 @@ url: /tr/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/
 weight: 1
 ---
 
-# Render CAD Layers Java with GroupDocs.Viewer
+# GroupDocs.Viewer ile Java'da CAD Katmanlarını Oluşturma
 
-If you need to **render CAD layers Java** for a clearer view of complex drawings, you’ve come to the right place. In this tutorial we’ll walk through everything you need—from installing GroupDocs.Viewer to selecting exactly the layers you want to display. By the end, you’ll be able to integrate layer‑specific rendering into your Java applications with confidence.
+Karmaşık çizimlerin daha net bir görünümü için **Java'da CAD katmanlarını oluşturmanız** gerekiyorsa, doğru yerdesiniz. Bu eğitimde, GroupDocs.Viewer'ı kurmaktan, görüntülemek istediğiniz katmanları tam olarak seçmeye kadar ihtiyacınız olan her şeyi adım adım ele alacağız. Sonunda, katmana özgü oluşturmayı Java uygulamalarınıza güvenle entegre edebileceksiniz.
 
-![Render Specific CAD Layers with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-specific-cad-layers-java.png)
+![Java için GroupDocs.Viewer ile Belirli CAD Katmanlarını Oluşturma](/viewer/advanced-rendering/render-specific-cad-layers-java.png)
 
-**What You’ll Learn**
-- How to set up GroupDocs.Viewer in a Java project  
-- The exact steps to render specific CAD layers Java  
-- Configuration options that give you fine‑grained control  
-- Real‑world scenarios where layer rendering adds value  
+**Öğrenecekleriniz**
+- Java projesinde GroupDocs.Viewer'ı nasıl kuracağınız
+- Java'da belirli CAD katmanlarını oluşturmanın tam adımları
+- Size ince ayarlı kontrol sağlayan yapılandırma seçenekleri
+- Katman oluşturmanın değer kattığı gerçek dünya senaryoları
 
-## Quick Answers
-- **What library handles CAD rendering in Java?** GroupDocs.Viewer for Java.  
-- **Can I choose individual layers to render?** Yes—use `viewOptions.getCadOptions().setLayers(...)`.  
-- **Do I need a license for production?** A valid GroupDocs.Viewer license is required for production use.  
-- **Which Java version is supported?** JDK 8 or higher.  
-- **Is Maven the only way to add the dependency?** Maven is recommended, but you can also use Gradle or manual JAR inclusion.
+## Hızlı Cevaplar
+- **Java'da CAD oluşturmayı hangi kütüphane yönetir?** Java için GroupDocs.Viewer.
 
-## Prerequisites
-### Required Libraries and Dependencies
-Make sure you have the Java Development Kit (JDK) installed and Maven ready for dependency management.
+- **Oluşturmak için tek tek katmanları seçebilir miyim?** Evet—`viewOptions.getCadOptions().setLayers(...)` kullanın.
 
-### Environment Setup Requirements
-- JDK 8+  
-- IntelliJ IDEA, Eclipse, or another Java IDE  
-- Terminal or command prompt for Maven commands  
+- **Üretim için lisansa ihtiyacım var mı?** Üretim kullanımı için geçerli bir GroupDocs.Viewer lisansı gereklidir.
 
-### Knowledge Prerequisites
-Basic Java and Maven knowledge will help, but you’ll get all the CAD‑specific details you need right here.
+- **Hangi Java sürümü destekleniyor?** JDK8 veya üstü.
+- **Bağımlılığı eklemenin tek yolu Maven mı?** Maven önerilir, ancak Gradle veya manuel JAR ekleme yöntemini de kullanabilirsiniz.
 
-## Setting Up GroupDocs.Viewer for Java
-### Installing via Maven
-Add the GroupDocs repository and the Viewer dependency to your `pom.xml`:
+## Önkoşullar
+### Gerekli Kütüphaneler ve Bağımlılıklar
+Java Geliştirme Kitinin (JDK) kurulu olduğundan ve bağımlılık yönetimi için Maven'ın hazır olduğundan emin olun.
+
+### Ortam Kurulum Gereksinimleri
+- JDK8+
+- IntelliJ IDEA, Eclipse veya başka bir Java IDE
+- Maven komutları için terminal veya komut istemi
+
+### Bilgi Önkoşulları
+Temel Java ve Maven bilgisi yardımcı olacaktır, ancak CAD'e özgü tüm ayrıntıları burada bulacaksınız.
+
+## Java için GroupDocs.Viewer Kurulumu
+### Maven ile Kurulum
+`pom.xml` dosyanıza GroupDocs deposunu ve Viewer bağımlılığını ekleyin:
 
 ```xml
 <repositories>
@@ -65,11 +68,11 @@ Add the GroupDocs repository and the Viewer dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Acquiring a License
-GroupDocs.Viewer offers a free trial, temporary licenses for evaluation, and full‑purchase licenses for production.
+### Lisans Edinme
+GroupDocs.Viewer, ücretsiz deneme sürümü, değerlendirme için geçici lisanslar ve üretim için tam satın alma lisansları sunmaktadır.
 
-### Basic Initialization and Setup
-Here’s a minimal example that opens a DWG file and renders it to HTML:
+### Temel Başlatma ve Kurulum
+İşte bir DWG dosyasını açan ve HTML'ye dönüştüren minimal bir örnek:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -83,11 +86,11 @@ try (Viewer viewer = new Viewer("path/to/your/file.dwg")) {
 }
 ```
 
-## How to render CAD layers Java
-Below is the step‑by‑step guide that lets you pick exactly which layers appear in the output.
+## Java ile CAD Katmanlarını Oluşturma
+Aşağıda, çıktıda hangi katmanların görüneceğini tam olarak seçmenizi sağlayan adım adım kılavuz bulunmaktadır.
 
-### Step 1: Define Output Paths
-Create a folder where the rendered pages will be saved:
+### Adım 1: Çıktı Yollarını Tanımlama
+Oluşturulan sayfaların kaydedileceği bir klasör oluşturun:
 
 ```java
 import java.nio.file.Path;
@@ -99,8 +102,8 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY").resolve("RenderLayers");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-### Step 2: Configure HTML View Options
-Tell the viewer to use the custom file‑name pattern you just created:
+### Adım 2: HTML Görünüm Seçeneklerini Yapılandırın
+Görüntüleyiciye az önce oluşturduğunuz özel dosya adı kalıbını kullanmasını söyleyin:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -108,8 +111,8 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### Step 3: Specify Layers to Render
-Add the names of the layers you want to display. The `CacheableFactory` creates `Layer` objects that the viewer understands:
+### Adım 3: Oluşturulacak Katmanları Belirtin
+Görüntülemek istediğiniz katmanların adlarını ekleyin. `CacheableFactory`, görüntüleyicinin anladığı `Layer` nesneleri oluşturur:
 
 ```java
 import java.util.ArrayList;
@@ -122,8 +125,8 @@ layers.add(CacheableFactory.getInstance().newLayer("QUADRANT"));
 viewOptions.getCadOptions().setLayers(layers);
 ```
 
-### Step 4: Render the Document
-Finally, open the CAD file and render only the selected layers:
+### Adım 4: Belgeyi Oluşturun
+Son olarak, CAD dosyasını açın ve yalnızca seçili katmanları oluşturun:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -133,61 +136,68 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
 }
 ```
 
-## Troubleshooting Tips
-- **File Not Found** – Double‑check the absolute or relative path you passed to `Viewer`.  
-- **Layer Name Issues** – Layer names are case‑sensitive; verify them in your CAD software.  
-- **Memory Errors** – For very large drawings, consider enabling caching or increasing the JVM heap size.
+## Sorun Giderme İpuçları
+- **Dosya Bulunamadı** – `Viewer`'a ilettiğiniz mutlak veya göreceli yolu tekrar kontrol edin.
 
-## Practical Applications
-Rendering specific CAD layers Java is useful in many scenarios:
+- **Katman Adı Sorunları** – Katman adları büyük/küçük harf duyarlıdır; bunları CAD yazılımınızda doğrulayın.
 
-1. **Engineering Reviews** – Focus on a single subsystem without visual clutter.  
-2. **Architectural Presentations** – Highlight structural or mechanical components for clients.  
-3. **Quality Assurance** – Isolate critical features to verify compliance.  
-4. **BIM Integration** – Feed layer‑specific views into BIM tools for richer documentation.
+- **Bellek Hataları** – Çok büyük çizimler için önbelleğe almayı etkinleştirmeyi veya JVM yığın boyutunu artırmayı düşünün.
 
-## Performance Considerations
-### Optimizing Performance
-- Use GroupDocs caching to avoid re‑processing the same file repeatedly.  
-- Limit the number of layers rendered at once if you experience slowdown.
+## Pratik Uygulamalar
+Java ile belirli CAD katmanlarını işlemek birçok senaryoda faydalıdır:
 
-### Resource Usage Guidelines
-- Monitor heap usage for complex drawings; adjust `-Xmx` as needed.  
-- Keep your JVM up‑to‑date to benefit from the latest garbage‑collection improvements.
+1. **Mühendislik İncelemeleri** – Görsel karmaşa olmadan tek bir alt sisteme odaklanın.
 
-## Conclusion
-You now have a complete, production‑ready method to **render CAD layers Java** with GroupDocs.Viewer. This capability streamlines reviews, presentations, and integration workflows across engineering and architecture teams.
+2. **Mimari Sunumlar** – Müşteriler için yapısal veya mekanik bileşenleri vurgulayın.
 
-**Next Steps**  
-Explore additional Viewer features—such as rendering to PDF or PNG, handling DWG layouts, or applying custom styles—to further enhance your document pipeline.
+3. **Kalite Güvencesi** – Uyumluluğu doğrulamak için kritik özellikleri izole edin.
 
-## Frequently Asked Questions
-**Q: What is GroupDocs.Viewer?**  
-A: It’s a Java library that enables viewing, converting, and rendering of over 100 document formats, including CAD files.
+4. **BIM Entegrasyonu** – Daha zengin dokümantasyon için katmana özgü görünümleri BIM araçlarına besleyin.
 
-**Q: Can I render layers from other file types besides DWG?**  
-A: Yes, the Viewer supports DXF, DGN, and other CAD formats, though the layer‑selection API is specific to CAD documents.
+## Performans Hususları
+### Performansı Optimize Etme
+- Aynı dosyanın tekrar tekrar işlenmesini önlemek için GroupDocs önbelleklemesini kullanın.
 
-**Q: How should I handle errors during rendering?**  
-A: Wrap viewer calls in try‑catch blocks and log `ViewerException` details to diagnose issues.
+- Yavaşlama yaşıyorsanız, aynı anda işlenen katman sayısını sınırlayın.
 
-**Q: Is GroupDocs.Viewer suitable for large‑scale, enterprise deployments?**  
-A: Absolutely. It’s designed for high‑throughput environments and offers server‑side caching, multi‑threading, and licensing options for enterprises.
+### Kaynak Kullanım Yönergeleri
+- Karmaşık çizimler için yığın kullanımını izleyin; gerektiğinde `-Xmx` değerini ayarlayın.
 
-**Q: Where can I find more integration examples?**  
-A: The official documentation and API reference contain extensive samples for web, desktop, and cloud scenarios.
+- En son çöp toplama iyileştirmelerinden yararlanmak için JVM'nizi güncel tutun.
 
-## Resources
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download](https://releases.groupdocs.com/viewer/java/)
-- [Purchase](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/viewer/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+## Sonuç
+Artık GroupDocs.Viewer ile **CAD katmanlarını Java ile işlemek** için eksiksiz, üretime hazır bir yönteminiz var. Bu özellik, mühendislik ve mimari ekipleri arasında incelemeleri, sunumları ve entegrasyon iş akışlarını kolaylaştırır.
+
+**Sonraki Adımlar**
+Belge işlem hattınızı daha da geliştirmek için PDF veya PNG'ye işleme, DWG düzenlerini işleme veya özel stiller uygulama gibi ek Viewer özelliklerini keşfedin.
+
+## Sıkça Sorulan Sorular
+**S: GroupDocs.Viewer nedir?**
+C: CAD dosyaları da dahil olmak üzere 100'den fazla belge formatını görüntülemeyi, dönüştürmeyi ve işlemeyi sağlayan bir Java kütüphanesidir.
+
+**S: DWG dışında diğer dosya türlerinden katmanları işleyebilir miyim?**
+C: Evet, Viewer DXF, DGN ve diğer CAD formatlarını destekler, ancak katman seçme API'si CAD belgelerine özgüdür.
+
+**S: İşleme sırasında hataları nasıl ele almalıyım?**
+C: Sorunları teşhis etmek için görüntüleyici çağrılarını try-catch bloklarına sarın ve `ViewerException` ayrıntılarını kaydedin.
+
+**S: GroupDocs.Viewer büyük ölçekli, kurumsal dağıtımlar için uygun mudur?**
+C: Kesinlikle. Yüksek verimlilik gerektiren ortamlar için tasarlanmıştır ve kurumsal işletmeler için sunucu tarafı önbellekleme, çoklu iş parçacığı ve lisanslama seçenekleri sunar.
+
+**S: Daha fazla entegrasyon örneğini nerede bulabilirim?**
+C: Resmi dokümantasyon ve API referansı, web, masaüstü ve bulut senaryoları için kapsamlı örnekler içermektedir.
+
+## Kaynaklar
+- [Belgeler](https://docs.groupdocs.com/viewer/java/)
+- [API Referansı](https://reference.groupdocs.com/viewer/java/)
+- [İndir](https://releases.groupdocs.com/viewer/java/)
+- [Satın Al](https://purchase.groupdocs.com/buy)
+- [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
+- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
+- [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2026-01-08  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+**Son Güncelleme:** 2026-01-08
+**Test Edilen Sürüm:** GroupDocs.Viewer 25.2 for Java
+**Yazar:** GrupBelgeleri
