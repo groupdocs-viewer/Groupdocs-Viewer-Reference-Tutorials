@@ -1,43 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak renderować rysunki CAD do wysokiej jakości obrazów PNG, używając niestandardowych wymiarów i kolorów tła za pomocą GroupDocs.Viewer dla Java."
-"title": "Jak renderować rysunki CAD jako PNG z niestandardowym rozmiarem i kolorem tła za pomocą GroupDocs.Viewer dla Java"
-"url": "/pl/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/"
-"weight": 1
+date: '2026-01-08'
+description: Dowiedz się, jak renderować rysunki CAD do wysokiej jakości obrazów PNG,
+  używając niestandardowych wymiarów i kolorów tła w GroupDocs.Viewer dla Javy.
+keywords:
+- render CAD drawings PNG
+- GroupDocs.Viewer for Java setup
+- custom image size and background color
+title: Jak renderować rysunki CAD jako PNG o niestandardowym rozmiarze i kolorze tła
+  przy użyciu GroupDocs.Viewer dla Javy
 type: docs
+url: /pl/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/
+weight: 1
 ---
-# Jak renderować rysunki CAD jako PNG z niestandardowym rozmiarem i kolorem tła za pomocą GroupDocs.Viewer dla Java
 
-## Wstęp
+# Jak renderować rysunki CAD jako PNG z niestandardowym rozmiarem i kolorem tła przy użyciu GroupDocs.Viewer dla Javy
 
-Masz problemy z konwersją rysunków CAD na obrazy wysokiej jakości, zachowując jednocześnie określone wymiary i estetykę? Dzięki GroupDocs.Viewer dla Java zadanie to staje się bezproblemowe. Ten samouczek przeprowadzi Cię przez renderowanie rysunków CAD jako plików PNG o niestandardowych rozmiarach i kolorach tła za pomocą GroupDocs.Viewer. Integrując te funkcje, upewnij się, że Twoje dokumenty techniczne są atrakcyjne wizualnie i precyzyjnie wymiarowane, aby spełnić Twoje potrzeby.
+Masz problem z konwersją rysunków CAD na obrazy wysokiej jakości, zachowując określone wymiary i estetykę? W tym samouczku pokażemy **jak renderować CAD** pliki jako PNG z niestandardowym rozmiarem i kolorem tła, aby uzyskać dokładnie taki wygląd, jaki potrzebujesz do raportów, prezentacji lub podglądów internetowych.
 
-**Czego się nauczysz:**
-- Konfigurowanie GroupDocs.Viewer dla Java w projekcie
-- Renderowanie rysunków CAD do formatu PNG z niestandardowymi wymiarami
-- Stosowanie koloru tła podczas renderowania w celu zwiększenia atrakcyjności wizualnej
-- Praktyczne zastosowania tych funkcji w różnych branżach
+## Szybkie odpowiedzi
+- **Co oznacza „jak renderować CAD”?** Odnosi się to do konwersji plików CAD (np. DWG) na formaty obrazów, takie jak PNG, przy użyciu kodu.  
+- **Czy mogę ustawić niestandardową szerokość?** Tak – użyj `CadOptions.forRenderingByWidth(int width)`.  
+- **Jak zmienić tło?** Wywołaj `cadOptions.setBackgroundColor(Color.YOUR_COLOR)`.  
+- **Jakiej biblioteki wymaga?** GroupDocs.Viewer dla Javy (wersja 25.2 lub nowsza).  
+- **Czy potrzebna jest licencja?** Tymczasowa lub zakupiona licencja usuwa ograniczenia wersji próbnej.
 
-Zanim zaczniemy, omówmy wymagania wstępne.
+![Renderowanie rysunków CAD jako PNG z niestandardowym rozmiarem i kolorem tła przy użyciu GroupDocs.Viewer dla Javy](/viewer/advanced-rendering/render-cad-drawings-as-png-with-custom-size-background-color-java.png)
+
+## Jak renderować rysunki CAD – przegląd
+Ta sekcja rozwija główny cel: **jak renderować CAD** rysunki do plików PNG przy jednoczesnym kontrolowaniu rozmiaru i tła. Przejdziemy przez pełną konfigurację, fragmenty kodu i praktyczne wskazówki.
+
+## Czego się nauczysz
+- Konfigurowanie GroupDocs.Viewer dla Javy w Twoim projekcie  
+- **Konwertowanie DWG do PNG** z niestandardowymi wymiarami  
+- **Ustawienie koloru tła PNG** podczas renderowania dla wykończonego wyglądu  
+- Scenariusze rzeczywiste, w których niestandardowe renderowanie dodaje wartość  
 
 ## Wymagania wstępne
 
-### Wymagane biblioteki i zależności
-Aby skorzystać z tego samouczka, będziesz potrzebować:
-- Java Development Kit (JDK) w wersji 8 lub nowszej.
-- Maven do zarządzania zależnościami.
+### Required Libraries and Dependencies
+- Java Development Kit (JDK) 8+  
+- Maven do zarządzania zależnościami  
 
-### Wymagania dotyczące konfiguracji środowiska
-Upewnij się, że Twoje środowisko programistyczne jest skonfigurowane z odpowiednim IDE, takim jak IntelliJ IDEA lub Eclipse. Podstawowa znajomość koncepcji programowania Java jest również konieczna.
+### Environment Setup Requirements
+- IDE, takie jak IntelliJ IDEA lub Eclipse  
+- Podstawowa znajomość Javy  
 
-### Wymagania wstępne dotyczące wiedzy
-Przydatna będzie podstawowa znajomość języka Java i doświadczenie w programistycznym przetwarzaniu plików.
+### Knowledge Prerequisites
+- Znajomość obsługi plików w Javie  
 
-## Konfigurowanie GroupDocs.Viewer dla Java
-Na początek dodaj niezbędne zależności do swojego projektu Maven.
+## Konfigurowanie GroupDocs.Viewer dla Javy
+Dodaj repozytorium GroupDocs i zależność do swojego pliku Maven `pom.xml`:
 
-**Konfiguracja Maven:**
-Dodaj następującą konfigurację w swoim `pom.xml` plik:
 ```xml
 <repositories>
    <repository>
@@ -55,31 +68,32 @@ Dodaj następującą konfigurację w swoim `pom.xml` plik:
 </dependencies>
 ```
 
-### Nabycie licencji
-Możesz uzyskać tymczasową licencję lub ją zakupić, jeśli zajdzie taka potrzeba, aby móc w pełni korzystać z możliwości GroupDocs.Viewer bez ograniczeń.
+### License Acquisition
+Uzyskaj tymczasową lub pełną licencję, aby usunąć ograniczenia wersji próbnej.
 
-### Podstawowa inicjalizacja i konfiguracja
-Aby rozpocząć korzystanie z GroupDocs.Viewer, musisz go zainicjować w swojej aplikacji Java:
+### Basic Initialization and Setup
+Utwórz instancję `Viewer`, która wskazuje na Twój plik CAD:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.nio.file.Path;
 
 Path documentPath = Path.of("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS");
 try (Viewer viewer = new Viewer(documentPath.toString())) {
-    // Operacje renderowania znajdują się tutaj
+    // Rendering operations go here
 }
 ```
 
-## Przewodnik wdrażania
+## Przewodnik implementacji
 
-### Funkcja 1: Renderowanie rysunków CAD z niestandardowym rozmiarem obrazu i kolorem tła
+### Feature 1: Rendering CAD Drawings with Custom Image Size and Background Color
 
-#### Przegląd
-Funkcja ta umożliwia przekształcanie plików CAD w obrazy PNG, określając zarówno wymiary obrazu, jak i kolor tła.
+#### Overview
+Ta funkcja pozwala **konwertować DWG do PNG** przy określaniu szerokości obrazu i odcienia tła.
 
-#### Wdrażanie krok po kroku
-##### Wymagane pakiety importowe
-Upewnij się, że zaimportowałeś wszystkie niezbędne pakiety:
+#### Step‑by‑Step Implementation
+
+##### Import Required Packages
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.CadOptions;
@@ -87,19 +101,19 @@ import com.groupdocs.viewer.options.PngViewOptions;
 import java.nio.file.Path;
 import java.awt.Color;
 ```
-##### Skonfiguruj format katalogu wyjściowego i ścieżki pliku
-Zdefiniuj miejsce, w którym będą zapisywane renderowane obrazy:
+
+##### Set Up the Output Directory and File Path Format
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SetImageBackgroundColor");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-##### Zainicjuj przeglądarkę z niestandardowymi opcjami renderowania
-Utwórz `Viewer` wystąpienie dla pliku CAD i skonfiguruj go tak, aby renderował się jako pliki PNG o określonych wymiarach i kolorze tła:
+
+##### Initialize Viewer with Custom Rendering Options
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS")) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     
-    // Określ szerokość renderowania
+    // Specify the width for rendering
     CadOptions cadOptions = CadOptions.forRenderingByWidth(800);
     cadOptions.setBackgroundColor(Color.GREEN);
     
@@ -108,24 +122,24 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
     viewer.view(options);
 }
 ```
-##### Wyjaśnienie parametrów
-- `PngViewOptions` określa sposób zapisania pliku, w tym format i układ.
-- `forRenderingByWidth(int width)` ustawia niestandardową szerokość obrazu do renderowania rysunków CAD.
-- `setBackgroundColor(Color color)` określa kolor tła, który ma być używany w renderowanych obrazach.
 
-#### Porady dotyczące rozwiązywania problemów
-- Upewnij się, że katalog wyjściowy istnieje przed uruchomieniem kodu. Utwórz go ręcznie lub programowo, jeśli nie.
-- Sprawdź, czy ścieżka do pliku wejściowego jest prawidłowa i dostępna z poziomu katalogu roboczego Twojej aplikacji.
+**Wyjaśnienie parametrów**  
+- `PngViewOptions` – definiuje format wyjścia i nazewnictwo.  
+- `forRenderingByWidth(int width)` – ustawia niestandardową szerokość obrazu.  
+- `setBackgroundColor(Color color)` – **zastosowanie renderowania koloru tła** do PNG.
 
-### Funkcja 2: Ustawianie koloru tła w opcjach renderowania
-Funkcja ta koncentruje się na konfigurowaniu opcji renderowania, które obejmują niestandardowy kolor tła, co poprawia jakość prezentacji wizualnej.
+#### Troubleshooting Tips
+- Zweryfikuj, czy folder wyjściowy istnieje; w razie potrzeby go utwórz.  
+- Sprawdź dwukrotnie ścieżkę pliku wejściowego i uprawnienia.  
 
-#### Przegląd
-Dostosuj wygląd renderowanych obrazów, ustawiając określony kolor tła podczas procesu renderowania.
+### Feature 2: Setting Background Color in Rendering Options
 
-#### Wdrażanie krok po kroku
-##### Wymagane pakiety importowe
-Jak poprzednio, upewnij się, że masz wszystkie niezbędne importy:
+#### Overview
+Tutaj koncentrujemy się na **ustawieniu koloru tła PNG**, aby poprawić spójność wizualną.
+
+#### Step‑by‑Step Implementation
+
+##### Import Required Packages
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.CadOptions;
@@ -133,8 +147,8 @@ import com.groupdocs.viewer.options.PngViewOptions;
 import java.nio.file.Path;
 import java.awt.Color;
 ```
-##### Konfigurowanie opcji renderowania z kolorem tła
-Użyj poniższego kodu, aby skonfigurować i zastosować niestandardowe kolory tła:
+
+##### Configure Rendering Options with Background Color
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SetImageBackgroundColor");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -150,41 +164,73 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
     viewer.view(options);
 }
 ```
-#### Kluczowe opcje konfiguracji
-- Regulować `forRenderingByWidth(int width)` dla różnych wymiarów obrazu.
-- Użyj różnych `Color` stałe lub niestandardowe wartości RGB służące do ustawiania koloru tła.
 
-## Zastosowania praktyczne
+**Kluczowe opcje konfiguracji**  
+- Dostosuj `forRenderingByWidth(int width)` dla różnych wymiarów.  
+- Użyj dowolnej stałej `Color` lub własnego `new Color(r,g,b)` dla niestandardowych tł
 
-### 1. Dokumentacja inżynierska
-Rysunki CAD są kluczowe w projektach inżynieryjnych. Niestandardowe renderowanie pozwala inżynierom tworzyć dokumentację gotową do prezentacji ze szczegółowymi wytycznymi wizualnymi.
+## Praktyczne zastosowania
+
+### 1. Dokumentacja inżynieryjna
+Niestandardowe renderowanie zapewnia, że rysunki inżynieryjne spełniają wytyczne stylu korporacyjnego.
 
 ### 2. Wizualizacja architektoniczna
-Architekci mogą używać tych funkcji, aby przekształcać plany projektów w wizualnie atrakcyjne formaty na potrzeby prezentacji dla klientów, zapewniając przejrzystość i walory estetyczne.
+Prezentuj plany z czystym tłem, które pasuje do slajdów prezentacji.
 
-### 3. Produkcja prototypów
-Producenci często potrzebują precyzyjnych obrazów swoich projektów, aby tworzyć prototypy. Niestandardowe renderowanie obrazu zapewnia dokładne przedstawienie wymiarów.
+### 3. Prototypowanie w produkcji
+Generuj precyzyjne PNG do szybkich procesów prototypowania.
 
 ### Możliwości integracji
-Możliwości te można zintegrować z systemami zarządzania dokumentacją lub oprogramowaniem CAD w celu zautomatyzowania procesu generowania dokumentacji wizualnej.
+Połącz ten pipeline renderowania z systemami zarządzania dokumentami, aby zautomatyzować generowanie zasobów wizualnych.
 
 ## Rozważania dotyczące wydajności
 
-### Optymalizacja wydajności
-- **Przetwarzanie wsadowe:** Jeżeli to możliwe, renderuj wiele dokumentów jednocześnie.
-- **Zarządzanie zasobami:** Monitoruj wykorzystanie pamięci i dostosowuj ustawienia JVM w razie potrzeby w przypadku zadań renderowania na dużą skalę.
+### Optimizing Performance
+- **Przetwarzanie wsadowe:** Renderuj wiele plików CAD w pętli.  
+- **Zarządzanie zasobami:** Dostosuj rozmiar sterty JVM dla dużych rysunków.
 
-### Wytyczne dotyczące korzystania z zasobów
-Upewnij się, że Twój system dysponuje odpowiednimi zasobami (procesorem, pamięcią RAM) do obsługi procesów renderowania bez wpływu na inne aplikacje.
+### Resource Usage Guidelines
+Monitoruj CPU i pamięć; zwalniaj instancje `Viewer` niezwłocznie.
 
-### Najlepsze praktyki dotyczące zarządzania pamięcią Java
-- Użyj try-with-resources do obsługi `Viewer` instancje.
-- Zwalniaj zasoby natychmiast po ich wykorzystaniu, aby zapobiec wyciekom pamięci.
+### Best Practices for Java Memory Management
+- Używaj try‑with‑resources (jak pokazano), aby automatycznie zamykać `Viewer`.  
+- Unikaj przechowywania dużych obiektów `Path` dłużej niż to konieczne.
 
-## Wniosek
-Dzięki temu samouczkowi nauczyłeś się, jak skutecznie renderować rysunki CAD do formatu PNG z niestandardowymi wymiarami i kolorami tła przy użyciu GroupDocs.Viewer dla Java. Ta możliwość jest nieoceniona w różnych branżach, w których wizualizacja dokumentów odgrywa kluczową rolę.
+## Typowe problemy i rozwiązania
 
-### Następne kroki
-Poznaj dodatkowe funkcje GroupDocs.Viewer lub zapoznaj się ze szczegółowymi informacjami na temat technik zarządzania pamięcią Java, aby zwiększyć wydajność swojej aplikacji.
+| Problem | Rozwiązanie |
+|-------|----------|
+| **Folder wyjściowy nie znaleziony** | Utwórz katalog wcześniej lub dodaj `Files.createDirectories(outputDirectory);` |
+| **Pusty obraz** | Upewnij się, że `cadOptions.setBackgroundColor` jest ustawione po `forRenderingByWidth`. |
+| **Błędy braku pamięci** | Zwiększ opcję JVM `-Xmx` lub przetwarzaj pliki w mniejszych partiach. |
 
-**Wezwanie do działania:** Spróbuj wdrożyć te funkcje w swoim kolejnym projekcie i zobacz, jak mogą one zmienić Twój obieg pracy związany z renderowaniem dokumentów.
+## Najczęściej zadawane pytania
+
+**Q: Czy mogę renderować inne formaty CAD oprócz DWG?**  
+A: Tak, GroupDocs.Viewer obsługuje DXF, DWF i kilka innych typów plików CAD.
+
+**Q: Jak użyć niestandardowego koloru RGB zamiast predefiniowanej stałej?**  
+A: Utwórz nową instancję `Color`, np. `new Color(123, 45, 67)` i przekaż ją do `setBackgroundColor`.
+
+**Q: Czy można renderować tylko określony układ lub warstwę?**  
+A: Możesz określić opcje układu lub warstwy za pomocą `CadOptions` przed wywołaniem `viewer.view`.
+
+**Q: Czy biblioteka obsługuje przezroczyste tła?**  
+A: Ustaw kolor tła na `new Color(0,0,0,0)` dla pełnej przezroczystości, jeśli docelowy format to obsługuje.
+
+**Q: Jakiej wersji GroupDocs.Viewer wymaga?**  
+A: Samouczek używa wersji 25.2, ale nowsze wersje zachowują to samo API.
+
+## Podsumowanie
+Teraz wiesz **jak renderować CAD** rysunki do plików PNG z niestandardowymi wymiarami i kolorami tła przy użyciu GroupDocs.Viewer dla Javy. Zastosuj te techniki, aby tworzyć profesjonalnie wyglądające zasoby wizualne dla procesów inżynieryjnych, architektonicznych lub produkcyjnych.
+
+### Kolejne kroki
+- Eksperymentuj z różnymi szerokościami obrazu i kolorami.  
+- Zintegruj kod renderowania z usługą przetwarzania wsadowego.  
+- Odkryj dodatkowe opcje Viewer, takie jak konwersja do PDF lub renderowanie wielostronicowe.
+
+---
+
+**Ostatnia aktualizacja:** 2026-01-08  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs

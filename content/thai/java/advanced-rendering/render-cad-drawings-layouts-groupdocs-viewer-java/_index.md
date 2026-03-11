@@ -1,32 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการเรนเดอร์เค้าโครงทั้งหมดจากภาพวาด CAD โดยใช้ GroupDocs.Viewer สำหรับ Java คู่มือนี้ครอบคลุมถึงการตั้งค่า การกำหนดค่า และการนำไปใช้จริง"
-"title": "เรนเดอร์เค้าโครง CAD ทั้งหมดอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ Java"
-"url": "/th/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-08'
+description: เรียนรู้วิธีการแสดงผลเค้าโครง CAD ด้วย Java และแปลง CAD เป็น HTML ด้วย
+  GroupDocs.Viewer สำหรับ Java คู่มือแบบขั้นตอนพร้อมตัวอย่างโค้ด
+keywords:
+- render CAD layouts
+- GroupDocs.Viewer for Java
+- Java rendering options
+title: เรนเดอร์เค้าโครง CAD ด้วย Java – การเรนเดอร์ที่มีประสิทธิภาพด้วย GroupDocs
 type: docs
+url: /th/java/advanced-rendering/render-cad-drawings-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# เรนเดอร์เค้าโครง CAD ทั้งหมดอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Viewer สำหรับ Java
 
-## การแนะนำ
+# เรนเดอร์ CAD Layouts ด้วย Java – การเรนเดอร์ที่มีประสิทธิภาพด้วย GroupDocs.Viewer
 
-เมื่อทำงานกับไฟล์ CAD การดูเค้าโครงทั้งหมดภายในไฟล์เดียวอย่างมีประสิทธิภาพถือเป็นสิ่งสำคัญ **GroupDocs.Viewer สำหรับ Java** ทำให้การเรนเดอร์เค้าโครงทั้งหมดจากแบบวาด CAD เป็นรูปแบบ HTML เป็นเรื่องง่ายดาย เพิ่มการเข้าถึงและการแชร์
+เมื่อทำงานกับไฟล์ CAD, การ **render CAD layouts Java** อย่างมีประสิทธิภาพมักเป็นสิ่งสำคัญสำหรับการทำงานร่วมกันอย่างรวดเร็วและการแชร์ที่ง่ายดาย. GroupDocs.Viewer for Java ช่วยให้คุณแปลงภาพวาด CAD เป็น HTML ทำให้ทุก layout สามารถดูได้ในเบราว์เซอร์ใดก็ได้. ในคำแนะนำนี้เราจะพาคุณผ่านการตั้งค่า, การกำหนดค่า, และโค้ดที่คุณต้องการเพื่อเรนเดอร์ทุก layout จากไฟล์ CAD.
 
-บทช่วยสอนนี้จะแนะนำคุณเกี่ยวกับการใช้ GroupDocs.Viewer สำหรับ Java เพื่อเรนเดอร์แบบ CAD อย่างมีประสิทธิภาพ:
-- การจัดเตรียมสภาพแวดล้อมและห้องสมุดที่จำเป็น
-- การกำหนดค่าตัวเลือกการเรนเดอร์สำหรับไฟล์ CAD
-- การนำการแสดงผลของเค้าโครงทั้งหมดภายในไฟล์ CAD ไปใช้งาน
+![Render All CAD Layouts with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-all-cad-layouts.png)
 
-มาเริ่มด้วยข้อกำหนดเบื้องต้นก่อนเริ่มต้นกันเลย
+## คำตอบสั้น ๆ
+- **“render CAD layouts Java” หมายถึงอะไร?** การแปลงแต่ละ layout ในไฟล์ CAD เป็น HTML ด้วยโค้ด Java.  
+- **ไลบรารีใดรับผิดชอบการแปลง?** GroupDocs.Viewer for Java.  
+- **ต้องการใบอนุญาตสำหรับการใช้งานในโปรดักชันหรือไม่?** ใช่, จำเป็นต้องมีใบอนุญาต GroupDocs ที่ถูกต้อง.  
+- **สามารถเรนเดอร์เฉพาะ layout ที่ต้องการได้หรือไม่?** ใช่, คุณสามารถกำหนดเป้าหมายที่ layout เฉพาะได้ผ่านตัวเลือก CAD.  
+- **ผลลัพธ์เป็น HTML หรือภาพ?** บทแนะนำนี้แสดง HTML พร้อมทรัพยากรที่ฝังอยู่.
+
+## “render CAD layouts Java” คืออะไร?
+การเรนเดอร์ CAD layouts Java หมายถึงกระบวนการนำทุก layout (หรือ sheet) ภายในไฟล์ CAD (เช่น DWG, DXF) แล้วแปลงแต่ละอันเป็นหน้า HTML ด้วยโค้ด Java. หน้า HTML ที่ได้สามารถฝังในพอร์ทัลเว็บ, แชร์ผ่านอีเมล, หรือแสดงบนอุปกรณ์ใดก็ได้โดยไม่ต้องติดตั้งซอฟต์แวร์ CAD.
+
+## ทำไมต้องใช้ GroupDocs.Viewer for Java เพื่อแปลง CAD เป็น HTML?
+- **Cross‑platform accessibility** – HTML ทำงานบนเบราว์เซอร์ใดก็ได้, ไม่ต้องใช้ปลั๊กอินพิเศษ.  
+- **Single‑file deployment** – ทรัพยากรที่ฝังอยู่ทำให้ทุกอย่างเป็นระเบียบในโฟลเดอร์เดียว.  
+- **Performance‑optimized** – เรนเดอร์เฉพาะข้อมูลที่จำเป็นเท่านั้น, ลดการใช้หน่วยความจำ.  
+- **Full layout support** – ทุก layout ของภาพวาดจะถูกประมวลผลโดยอัตโนมัติ, ประหยัดความพยายามในการทำด้วยตนเอง.
 
 ## ข้อกำหนดเบื้องต้น
+- **Java Development Kit (JDK) 8+** ติดตั้งแล้ว.  
+- **Maven** สำหรับการจัดการ dependencies.  
+- ความรู้พื้นฐานเกี่ยวกับ Java และ Maven.  
 
-ก่อนที่เราจะเริ่ม ให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
-
-### ไลบรารีและการอ้างอิงที่จำเป็น
-คุณจะต้องมี GroupDocs.Viewer สำหรับ Java โปรดตรวจสอบว่าโปรเจ็กต์ของคุณมีเวอร์ชัน 25.2 ขึ้นไป
-- **การตั้งค่าการพึ่งพา Maven**-
-  เพิ่มสิ่งต่อไปนี้ลงในของคุณ `pom.xml` ไฟล์:
+### ไลบรารีและ Dependencies ที่ต้องใช้
+คุณจะต้องใช้ **GroupDocs.Viewer for Java** เวอร์ชัน 25.2 หรือใหม่กว่า.
 
 ```xml
 <repositories>
@@ -45,30 +59,17 @@ type: docs
 </dependencies>
 ```
 
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-- ติดตั้ง Java Development Kit (JDK) 8 หรือใหม่กว่าบนระบบของคุณ
-- IDE เช่น IntelliJ IDEA หรือ Eclipse สำหรับการเขียนและรันโค้ด
-
-### ข้อกำหนดเบื้องต้นของความรู้
-- ความเข้าใจพื้นฐานเกี่ยวกับแนวคิดการเขียนโปรแกรมภาษา Java
-- ความคุ้นเคยกับ Maven สำหรับการจัดการการอ้างอิง
-
-เมื่อมีข้อกำหนดเบื้องต้นเหล่านี้แล้ว เราสามารถดำเนินการตั้งค่า GroupDocs.Viewer สำหรับ Java ได้
-
-## การตั้งค่า GroupDocs.Viewer สำหรับ Java
-หากต้องการเริ่มใช้ GroupDocs.Viewer สำหรับ Java ให้ปฏิบัติตามขั้นตอนการติดตั้งด้านล่างนี้:
-
-### การติดตั้งผ่าน Maven
-เพิ่มรายละเอียดที่เก็บข้อมูลและการอ้างอิงในของคุณ `pom.xml` ตามที่แสดงไว้ก่อนหน้านี้ ซึ่งจะทำให้ Maven สามารถจัดการการดาวน์โหลดและตั้งค่าไลบรารีที่จำเป็นได้
-
-### ขั้นตอนการรับใบอนุญาต
+### ขั้นตอนการขอรับใบอนุญาต
 GroupDocs มีหลายวิธีในการรับใบอนุญาต:
-- **ทดลองใช้งานฟรี**: ดาวน์โหลดจาก [ทดลองใช้ GroupDocs ฟรี](https://releases-groupdocs.com/viewer/java/).
-- **ใบอนุญาตชั่วคราว**:ขอรับเพื่อการทดสอบได้ที่ [หน้าใบอนุญาตชั่วคราว](https://purchase-groupdocs.com/temporary-license/).
-- **ซื้อ**:เพื่อการใช้งานอย่างต่อเนื่อง ให้ซื้อใบอนุญาตบน [ซื้อหน้า GroupDocs](https://purchase-groupdocs.com/buy).
+- **Free Trial**: ดาวน์โหลดจาก [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License**: ขอใช้เพื่อการทดสอบที่ [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase**: สำหรับการใช้งานต่อเนื่อง, ซื้อใบอนุญาตได้ที่ [Buy GroupDocs page](https://purchase.groupdocs.com/buy).
 
-### การเริ่มต้นและการตั้งค่าเบื้องต้น
-หลังจากตั้งค่าการอ้างอิง Maven ของคุณแล้ว ให้เริ่มต้นคลาส Viewer เพื่อเริ่มเรนเดอร์ไฟล์ CAD ดังต่อไปนี้:
+## วิธีเรนเดอร์ CAD layouts Java ด้วย GroupDocs.Viewer
+ต่อไปนี้เป็นขั้นตอนแบบละเอียดที่รักษาโค้ดบล็อกเดิมไว้โดยไม่แก้ไขใด ๆ พร้อมกับคำอธิบายเพิ่มเติม.
+
+### ขั้นตอน 1: การเริ่มต้น Viewer เบื้องต้น
+ก่อนอื่น, สร้าง viewer ง่าย ๆ ที่เรนเดอร์ไฟล์ CAD เป็น HTML. ตัวอย่างนี้แสดงการตั้งค่าขั้นต่ำ.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,10 +77,10 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 
 public class CadRendering {
     public static void main(String[] args) {
-        // ระบุเส้นทางไฟล์ CAD อินพุต
+        // Specify input CAD file path
         String filePath = "path/to/your/sample.dwg";
 
-        // เริ่มต้นการดูด้วยไฟล์อินพุต
+        // Initialize viewer with the input file
         try (Viewer viewer = new Viewer(filePath)) {
             HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources("output/page_{0}.html");
             viewer.view(viewOptions);
@@ -88,95 +89,93 @@ public class CadRendering {
 }
 ```
 
-โค้ดนี้จะตั้งค่าการเรนเดอร์พื้นฐานของไฟล์ CAD โดยใช้ GroupDocs.Viewer
-
-## คู่มือการใช้งาน
-ตอนนี้ เรามาใช้ฟีเจอร์นี้ในการเรนเดอร์เค้าโครงทั้งหมดจากไฟล์ CAD กัน
-
-### การเรนเดอร์เค้าโครงทั้งหมดในไฟล์ CAD
-หากต้องการกำหนดค่าตัวเลือกการแสดงผลสำหรับการดูเค้าโครงทั้งหมด ให้ทำตามขั้นตอนเหล่านี้:
-
-#### ขั้นตอนที่ 1: กำหนดไดเรกทอรีเอาต์พุตและรูปแบบเส้นทางไฟล์
-เริ่มต้นด้วยการกำหนดเส้นทางที่จะบันทึกไฟล์ HTML ที่คุณเรนเดอร์ไว้ ซึ่งจะช่วยให้จัดระเบียบผลลัพธ์ได้อย่างมีประสิทธิภาพ
+### ขั้นตอน 2: กำหนดโฟลเดอร์ผลลัพธ์และรูปแบบเส้นทางไฟล์
+จัดระเบียบไฟล์ HTML ที่สร้างขึ้นโดยกำหนดโฟลเดอร์ผลลัพธ์เฉพาะและรูปแบบการตั้งชื่อไฟล์.
 
 ```java
 import java.nio.file.Path;
 
-// กำหนดเส้นทางไดเรกทอรีเอาท์พุต
+// Define the output directory path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
-// สร้างรูปแบบเส้นทางไฟล์สำหรับแต่ละหน้าของรูปวาด CAD
+// Create a file path format for each page of the CAD drawing
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### ขั้นตอนที่ 2: กำหนดค่าตัวเลือกมุมมอง HTML
-เปิดใช้งานทรัพยากรที่ฝังตัวและแสดงเค้าโครงทั้งหมดในไฟล์ CAD โดยใช้ตัวเลือก GroupDocs.Viewer เฉพาะ
+### ขั้นตอน 3: กำหนดค่า HTML View Options
+เปิดใช้งานทรัพยากรที่ฝังอยู่เพื่อให้ CSS, ภาพ, และสคริปต์ถูกเก็บไว้เคียงกับแต่ละหน้า HTML.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// กำหนดค่าตัวเลือกมุมมอง HTML เพื่อใช้ทรัพยากรที่ฝังไว้
+// Configure HTML view options to use embedded resources
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### ขั้นตอนที่ 3: เปิดใช้งานการแสดงผลเค้าโครง
-ตั้งค่า `RenderLayouts` ตัวเลือกที่เป็นจริง เพื่อให้แน่ใจว่าเค้าโครงทั้งหมดได้รับการแสดง
+### ขั้นตอน 4: เปิดใช้งานการเรนเดอร์ Layout (ฟีเจอร์หลัก)
+บอก viewer ให้ประมวลผล **ทั้งหมด** ของ layout ในภาพวาด.
 
 ```java
 viewOptions.getCadOptions().setRenderLayouts(true);
 ```
 
-#### ขั้นตอนที่ 4: เรนเดอร์เอกสารโดยใช้โปรแกรมดู
-สุดท้าย ให้ใช้คลาส Viewer เพื่อเรนเดอร์ไฟล์ CAD ของคุณโดยใช้ตัวเลือกที่กำหนดค่าไว้
+### ขั้นตอน 5: เรนเดอร์เอกสารด้วยตัวเลือกที่กำหนดไว้
+สุดท้าย, เรนเดอร์ไฟล์ CAD ด้วยตัวเลือกที่คุณตั้งค่าไว้.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/sample.dwg")) {
-    // แสดงผลเอกสารโดยใช้ตัวเลือกมุมมองที่กำหนดค่าไว้
+    // Render the document using configured view options
     viewer.view(viewOptions);
 }
 ```
 
-### เคล็ดลับการแก้ไขปัญหา
-- **การขาดสิ่งที่ต้องพึ่งพา**: ให้แน่ใจว่าคุณ `pom.xml` ได้รับการกำหนดค่าอย่างถูกต้องและการอ้างอิง Maven เป็นปัจจุบัน
-- **ข้อผิดพลาดเส้นทางไฟล์**: ตรวจสอบว่าเส้นทางไฟล์ CAD อินพุตและเส้นทางไดเรกทอรีเอาต์พุตได้รับการระบุอย่างถูกต้อง
+## วิธีแปลง CAD เป็น HTML ด้วย GroupDocs.Viewer
+ขั้นตอนข้างต้นจะสร้างผลลัพธ์เป็น HTML อยู่แล้ว, ซึ่งเป็นวิธีที่พบบ่อยที่สุดในการ **convert CAD to HTML**. โดยเปิดใช้งาน `setRenderLayouts(true)`, ทุก layout จะกลายเป็นหน้า HTML ของตนเอง, พร้อมสำหรับการเผยแพร่บนเว็บ.
 
-## การประยุกต์ใช้งานจริง
-การเรนเดอร์เค้าโครงทั้งหมดจากภาพวาด CAD มีการใช้งานจริงหลายประการ:
-1. **การนำเสนอผลงานทางสถาปัตยกรรม**:ช่วยให้สถาปนิกสามารถแสดงมุมมองการออกแบบที่แตกต่างกันภายในเอกสารเดียว
-2. **เอกสารทางวิศวกรรม**:อำนวยความสะดวกในการแชร์การออกแบบทางวิศวกรรมที่ซับซ้อนกับผู้มีส่วนได้ส่วนเสียหลายรายได้ง่ายยิ่งขึ้น
-3. **แหล่งข้อมูลด้านการศึกษา**:ช่วยให้ผู้สอนสามารถนำเสนอแผนภาพและแผนโดยละเอียดในห้องเรียนดิจิทัลได้
+## ปัญหาที่พบบ่อยและวิธีแก้
+- **Missing Dependencies** – ตรวจสอบ `<repositories>` และ `<dependencies>` ใน `pom.xml` อีกครั้ง. รัน `mvn clean install` เพื่อบังคับให้ Maven ดาวน์โหลด artifacts ล่าสุด.  
+- **File Path Errors** – ตรวจสอบให้แน่ใจว่าเส้นทางไฟล์ CAD เข้าและโฟลเดอร์ผลลัพธ์มีอยู่และสามารถเข้าถึงได้โดยกระบวนการ Java.  
+- **Memory Exhaustion on Large Files** – เพิ่มขนาด heap ของ JVM (`-Xmx2g` หรือมากกว่า) หรือประมวลผลไฟล์เป็นชุดย่อยหากพบ `OutOfMemoryError`.
 
-การบูรณาการ GroupDocs.Viewer สามารถปรับปรุงการทำงานร่วมกันระหว่างแพลตฟอร์มต่างๆ รวมถึงแอปพลิเคชันเว็บหรือระบบการจัดการเอกสาร
+## การใช้งานในเชิงปฏิบัติ
+1. **Architectural Presentations** – แสดงแผนผังชั้นหรือมุมมองยกสูงทุกแบบในรูปแบบที่เหมาะกับเบราว์เซอร์.  
+2. **Engineering Documentation** – แชร์แผนผังซับซ้อนกับผู้รับเหมาโดยไม่ต้องใช้ซอฟต์แวร์ CAD.  
+3. **E‑Learning Materials** – ฝัง CAD layout ที่โต้ตอบได้ในคอร์สออนไลน์หรือบทแนะนำ.
 
-## การพิจารณาประสิทธิภาพ
-การเพิ่มประสิทธิภาพการทำงานเมื่อเรนเดอร์ไฟล์ CAD ถือเป็นสิ่งสำคัญ:
-- **การจัดการหน่วยความจำ**:ใช้โครงสร้างข้อมูลที่มีประสิทธิภาพและจัดการหน่วยความจำ Java โดยปรับแต่งตัวเลือก JVM
-- **การใช้ทรัพยากร**: ตรวจสอบให้แน่ใจว่าเซิร์ฟเวอร์ของคุณมีทรัพยากรเพียงพอที่จะจัดการกับขนาดไฟล์ขนาดใหญ่และผู้ใช้พร้อมกันหลายคน
-- **แนวทางปฏิบัติที่ดีที่สุด**อัปเดตไลบรารี GroupDocs.Viewer เป็นประจำเพื่อการปรับปรุงและแก้ไขจุดบกพร่อง
+## พิจารณาด้านประสิทธิภาพ
+- **Memory Management** – ใช้เวอร์ชัน GroupDocs ล่าสุดและปรับแต่งตัวเลือก JVM สำหรับภาพวาดขนาดใหญ่.  
+- **Resource Usage** – เรนเดอร์ไปยังโฟลเดอร์ผลลัพธ์เฉพาะเพื่อหลีกเลี่ยงความยุ่งเหยิงและทำความสะอาดได้ง่าย.  
+- **Keep Libraries Updated** – เวอร์ชันใหม่มักมีการปรับปรุงประสิทธิภาพและแก้บั๊ก.
 
-## บทสรุป
-ในบทช่วยสอนนี้ คุณจะได้เรียนรู้วิธีการเรนเดอร์เค้าโครงทั้งหมดจากแบบวาด CAD โดยใช้ GroupDocs.Viewer สำหรับ Java เมื่อทำตามขั้นตอนที่ระบุไว้ คุณจะสามารถผสานรวมฟีเจอร์การเรนเดอร์อันทรงพลังลงในแอปพลิเคชันของคุณได้
+## สรุป
+คุณมีวิธีการที่ครบถ้วนและพร้อมใช้งานในโปรดักชันเพื่อ **render CAD layouts Java** และ **convert CAD to HTML** ด้วย GroupDocs.Viewer. นำโค้ดส่วนนั้นไปผสานในพอร์ทัลเว็บ, ระบบจัดการเอกสาร, หรือแบ็กเอนด์ Java ใด ๆ เพื่อให้ผู้ใช้เข้าถึง layout ทุกอันในไฟล์ CAD ของพวกเขาได้ทันทีผ่านเบราว์เซอร์.
 
-ในขั้นตอนถัดไป ให้สำรวจตัวเลือกการปรับแต่งเพิ่มเติม [เอกสารประกอบการดู GroupDocs](https://docs.groupdocs.com/viewer/java/) และพิจารณาการรวมประเภทเอกสารอื่น ๆ ที่ได้รับการรองรับโดย GroupDocs.Viewer
+สำรวจตัวเลือกการปรับแต่งเพิ่มเติมในเอกสารอย่างเป็นทางการและ API reference เพื่อให้ผลลัพธ์ตรงตามความต้องการของคุณ.
 
 ## ส่วนคำถามที่พบบ่อย
-1. **GroupDocs.Viewer สำหรับ Java คืออะไร?**
-   - เป็นไลบรารีอเนกประสงค์ที่ช่วยให้สามารถเรนเดอร์เอกสารในรูปแบบต่างๆ รวมถึงไฟล์ CAD เป็น HTML หรือรูปภาพได้
-2. **ฉันจะจัดการไฟล์ CAD ขนาดใหญ่ด้วย GroupDocs.Viewer ได้อย่างไร**
-   - เพิ่มประสิทธิภาพการตั้งค่าหน่วยความจำและพิจารณาการแยกรายละเอียดภาพวาดที่ซับซ้อนหากเป็นไปได้
-3. **ฉันสามารถเรนเดอร์เค้าโครงที่เจาะจงเท่านั้นได้หรือไม่**
-   - ใช่ ใช้ชื่อเค้าโครงในตัวเลือกมุมมองของคุณเพื่อกำหนดเป้าหมายเค้าโครงที่เจาะจง
-4. **มีการสนับสนุนสำหรับรูปแบบเอกสารอื่น ๆ หรือไม่?**
-   - แน่นอน! GroupDocs.Viewer รองรับรูปแบบต่างๆ มากมายนอกเหนือจากไฟล์ CAD
-5. **ฉันสามารถหาทรัพยากรเพิ่มเติมเกี่ยวกับการใช้ GroupDocs.Viewer Java ได้จากที่ใด**
-   - เยี่ยมชม [เอกสารอ้างอิง API สำหรับ GroupDocs Viewer](https://reference.groupdocs.com/viewer/java/) และสำรวจเอกสารเพิ่มเติม
+1. **GroupDocs.Viewer for Java คืออะไร?**  
+   - เป็นไลบรารีอเนกประสงค์ที่ช่วยเรนเดอร์รูปแบบเอกสารหลากหลาย, รวมถึงไฟล์ CAD, ไปเป็น HTML หรือภาพ.  
+2. **จะจัดการไฟล์ CAD ขนาดใหญ่กับ GroupDocs.Viewer อย่างไร?**  
+   - ปรับตั้งค่าหน่วยความจำและพิจารณาแบ่งภาพวาดที่ซับซ้อนออกเป็นส่วนย่อยหากเป็นไปได้.  
+3. **สามารถเรนเดอร์เฉพาะ layout ที่ต้องการได้หรือไม่?**  
+   - ใช่, ใช้ชื่อ layout ใน view options เพื่อกำหนดเป้าหมาย layout ที่ต้องการ.  
+4. **รองรับรูปแบบเอกสารอื่น ๆ หรือไม่?**  
+   - แน่นอน! GroupDocs.Viewer รองรับรูปแบบไฟล์หลากหลายนอกเหนือจาก CAD.  
+5. **จะหาแหล่งข้อมูลเพิ่มเติมเกี่ยวกับการใช้ GroupDocs.Viewer Java ได้จากที่ไหน?**  
+   - เยี่ยมชม [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/) และ [GroupDocs Viewer API Reference](https://reference.groupdocs.com/viewer/java/).
 
-## ทรัพยากร
-- เอกสารประกอบ: [เครื่องมือดูเอกสาร GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- เอกสารอ้างอิง API: [API ตัวดู GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- ดาวน์โหลด GroupDocs.Viewer สำหรับ Java: [ลิงค์ดาวน์โหลด](https://releases.groupdocs.com/viewer/java/)
-- การซื้อและการออกใบอนุญาต: [ซื้อ GroupDocs](https://purchase.groupdocs.com/buy)
-- ทดลองใช้งานฟรี: [เวอร์ชันทดลองใช้งานฟรี](https://releases.groupdocs.com/viewer/java/)
-- ใบอนุญาตชั่วคราว: [หน้าใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
-- ฟอรั่มการสนับสนุน: [การสนับสนุน GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+## แหล่งอ้างอิง
+- เอกสาร: [GroupDocs Viewer Docs](https://docs.groupdocs.com/viewer/java/)  
+- API Reference: [GroupDocs Viewer API](https://reference.groupdocs.com/viewer/java/)  
+- ดาวน์โหลด GroupDocs.Viewer for Java: [Download Link](https://releases.groupdocs.com/viewer/java/)  
+- ซื้อและใบอนุญาต: [Purchase GroupDocs](https://purchase.groupdocs.com/buy)  
+- ทดลองใช้งานฟรี: [Free Trial Version](https://releases.groupdocs.com/viewer/java/)  
+- ใบอนุญาตชั่วคราว: [Temporary License Page](https://purchase.groupdocs.com/temporary-license/)  
+- ฟอรั่มสนับสนุน: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-01-08  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs

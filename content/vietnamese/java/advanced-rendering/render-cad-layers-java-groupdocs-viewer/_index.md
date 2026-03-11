@@ -1,32 +1,53 @@
 ---
-"date": "2025-04-24"
-"description": "Học cách render các lớp CAD cụ thể trong Java bằng GroupDocs.Viewer. Hướng dẫn này bao gồm thiết lập, cấu hình và ứng dụng thực tế để nâng cao khả năng trực quan hóa thiết kế."
-"title": "Render các lớp CAD cụ thể trong Java bằng GroupDocs.Viewer&#58; Hướng dẫn toàn diện"
-"url": "/vi/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-01-08'
+description: Tìm hiểu cách hiển thị các lớp CAD trong Java bằng GroupDocs.Viewer.
+  Hướng dẫn này bao gồm cài đặt, cấu hình và các ứng dụng thực tiễn để nâng cao việc
+  trực quan hoá thiết kế.
+keywords:
+- Render CAD Layers in Java
+- GroupDocs.Viewer for Java
+- CAD Layer Rendering
+title: Kết xuất các lớp CAD trong Java với GroupDocs.Viewer – Hướng dẫn toàn diện
 type: docs
+url: /vi/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/
+weight: 1
 ---
-# Kết xuất các lớp CAD cụ thể trong Java bằng GroupDocs.Viewer
-## Giới thiệu
-Bạn đang gặp khó khăn khi kết xuất các lớp cụ thể từ bản vẽ CAD? Cho dù bạn là kỹ sư, kiến trúc sư hay nhà phát triển xử lý các thiết kế phức tạp, việc quản lý và trực quan hóa các lớp CAD cụ thể có thể là một thách thức. Hướng dẫn này trình bày cách kết xuất các lớp cụ thể một cách hiệu quả bằng cách sử dụng GroupDocs.Viewer mạnh mẽ cho Java.
-**Những gì bạn sẽ học được:**
-- Thiết lập GroupDocs.Viewer trong môi trường Java
-- Kết xuất các lớp CAD cụ thể bằng thư viện
-- Cấu hình tùy chọn kết xuất
-- Ứng dụng của kết xuất lớp cụ thể
-Trước khi đi sâu vào triển khai, chúng ta hãy cùng xem xét một số điều kiện tiên quyết mà bạn cần tuân thủ.
+
+# Kết xuất các lớp CAD Java với GroupDocs.Viewer
+
+Nếu bạn cần **kết xuất các lớp CAD Java** để có cái nhìn rõ ràng hơn về các bản vẽ phức tạp, bạn đã đến đúng nơi. Trong hướng dẫn này, chúng tôi sẽ đi qua mọi thứ bạn cần—từ cài đặt GroupDocs.Viewer để chọn chính xác các lớp mà bạn muốn hiển thị. Khi hoàn tất, bạn sẽ có thể tích hợp các công việc kết xuất lớp vào các ứng dụng Java của mình một cách tự động.
+
+![Kết xuất các lớp CAD cụ thể bằng GroupDocs.Viewer cho Java](/viewer/advanced-rendering/render-special-cad-layers-java.png)
+
+**Bạn sẽ học được gì**
+- Cách thiết lập GroupDocs.Viewer trong dự án Java
+- Các bước chính xác để hiển thị các lớp CAD cụ thể Java
+- Cho phép kiểm tra cấu hình tùy chọn Kiểm soát chi tiết
+- Các kịch bản thực tế nơi công việc render lớp mang lại giá trị
+
+## Trả lời nhanh
+- **Thư viện nào xử lý công việc kết xuất CAD trong Java?** GroupDocs.Viewer for Java.
+- **Tôi có thể chọn các lẻ riêng lẻ để hiển thị không?** Có—sử dụng `viewOptions.getCadOptions().setLayers(...)`.
+- **Có cần giấy phép cho môi trường production không?** Cần một giấy phép GroupDocs.Viewer hợp lệ để sử dụng trong production.
+- **Phiên bản Java nào được hỗ trợ?** JDK8 hoặc cao hơn.
+- **Maven có phải là cách duy nhất để thêm sự phụ thuộc không?** Maven được khuyến nghị, nhưng bạn cũng có thể sử dụng Gradle hoặc thêm JAR thủ công.
+
 ## Điều kiện tiên quyết
-### Thư viện và phụ thuộc bắt buộc
-Để bắt đầu hướng dẫn này, hãy đảm bảo rằng bạn đã cài đặt Java Development Kit (JDK) trên hệ thống của mình. Chúng tôi sẽ sử dụng Maven để quản lý sự phụ thuộc, vì vậy việc thiết lập Maven cũng rất quan trọng.
+### Thư viện và thư viện phụ thuộc bắt buộc
+Đảm bảo bạn đã cài đặt sẵn Bộ công cụ phát triển Java (JDK) và Maven để quản lý phần phụ thuộc.
+
 ### Yêu cầu thiết lập môi trường
-- JDK 8 trở lên.
-- Một IDE phù hợp như IntelliJ IDEA hoặc Eclipse.
-- Truy cập vào thiết bị đầu cuối hoặc dấu nhắc lệnh để chạy lệnh Maven.
-### Điều kiện tiên quyết về kiến thức
-Sự quen thuộc với lập trình Java và hiểu biết cơ bản về Maven sẽ có lợi. Kinh nghiệm trước đó với các tệp CAD sẽ hữu ích nhưng không bắt buộc, vì chúng tôi sẽ đề cập đến tất cả những điều cần thiết mà bạn cần.
+- JDK8+
+- IntelliJ IDEA, Eclipse, hoặc IDE Java khác
+- Terminal hoặc dấu nhắc lệnh để chạy Maven lệnh
+
+### Kiến thức tiên quyết
+Kiến thức cơ bản về Java và Maven sẽ hữu ích nhưng bạn sẽ nhận được tất cả các chi tiết liên quan đến CAD ngay tại đây.
+
 ## Thiết lập GroupDocs.Viewer cho Java
 ### Cài đặt qua Maven
-Để sử dụng GroupDocs.Viewer trong dự án Java của bạn, hãy bao gồm nó như một phần phụ thuộc trong `pom.xml` tài liệu:
+Thêm kho GroupDocs và dependency Viewer vào file `pom.xml` của bạn:
+
 ```xml
 <repositories>
    <repository>
@@ -43,47 +64,52 @@ Sự quen thuộc với lập trình Java và hiểu biết cơ bản về Maven
    </dependency>
 </dependencies>
 ```
+
 ### Xin giấy phép
-GroupDocs.Viewer cung cấp nhiều tùy chọn cấp phép khác nhau:
-- **Dùng thử miễn phí**: Kiểm tra toàn bộ khả năng.
-- **Giấy phép tạm thời**: Xin giấy phép tạm thời để đánh giá mà không có giới hạn.
-- **Mua**:Để sử dụng lâu dài, bạn có thể mua giấy phép.
+GroupDocs.Viewer cung cấp bản dùng thử miễn phí, giấy phép tạm thời để đánh giá và giấy phép mua đầy đủ cho môi trường production.
+
 ### Khởi tạo và thiết lập cơ bản
-Sau khi các phụ thuộc được thêm vào, hãy khởi tạo GroupDocs.Viewer như sau:
+Dưới đây là một ví dụ về việc tối thiểu mở tệp DWG và hiển thị ra HTML:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Khởi tạo trình xem bằng đường dẫn đến tệp CAD của bạn
+// Initialize viewer with the path to your CAD file
 try (Viewer viewer = new Viewer("path/to/your/file.dwg")) {
-    // Cấu hình tùy chọn chế độ xem để hiển thị
+    // Configure view options for rendering
     HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources();
     viewer.view(viewOptions);
 }
 ```
-## Hướng dẫn thực hiện
-### Kết xuất các lớp CAD cụ thể
-Tính năng này cho phép bạn dựng các lớp cụ thể từ bản vẽ CAD, giúp kiểm soát tốt hơn những nội dung được hiển thị.
-#### Bước 1: Xác định Đường dẫn đầu ra
-Thiết lập thư mục đầu ra và đường dẫn tệp để kết xuất:
+
+## Cách kết xuất các lớp CAD Java
+Dưới đây là hướng dẫn từng bước cho phép bạn chọn chính xác các lớp sẽ xuất hiện trong kết quả.
+
+### Bước 1: Xác định đường dẫn đầu ra
+
 ```java
 import java.nio.file.Path;
 
-// Xác định đường dẫn thư mục đầu ra của bạn
+// Define your output directory path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY").resolve("RenderLayers");
 
-// Đặt định dạng cho các trang được hiển thị
+// Set the format for rendered pages
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-#### Bước 2: Cấu hình Tùy chọn chế độ xem HTML
-Tạo một `HtmlViewOptions` đối tượng để quản lý cài đặt kết xuất:
+
+### Bước 2: Cấu hình các tùy chọn hiển thị HTML
+Yêu cầu viewer sử dụng mẫu tên file tùy chỉnh mà bạn vừa tạo:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-#### Bước 3: Chỉ định các lớp để kết xuất
-Khởi tạo danh sách các lớp bạn muốn hiển thị và thêm chúng bằng cách sử dụng `CacheableFactory`:
+
+### Bước 3: Chỉ định các lớp cần hiển thị
+Thêm tên các lớp bạn muốn hiển thị. `CacheableFactory` tạo các đối tượng `Layer` mà viewer hiểu:
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -94,8 +120,10 @@ List<Layer> layers = new ArrayList<>();
 layers.add(CacheableFactory.getInstance().newLayer("QUADRANT"));
 viewOptions.getCadOptions().setLayers(layers);
 ```
-#### Bước 4: Kết xuất tài liệu
-Mở và hiển thị tệp CAD của bạn với các tùy chọn chế độ xem được chỉ định:
+
+### Bước 4: Hiển thị tài liệu
+Cuối cùng, mở file CAD và render chỉ các lớp đã chọn:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -103,43 +131,63 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
     viewer.view(viewOptions);
 }
 ```
-### Mẹo khắc phục sự cố
-- **Không tìm thấy tập tin**: Đảm bảo đường dẫn tệp của bạn chính xác và có thể truy cập được.
-- **Các vấn đề về tên lớp**: Xác minh rằng tên lớp trùng khớp chính xác với tên trong tệp CAD của bạn.
+
+## Mẹo khắc phục sự cố
+- **Không tìm thấy tệp** – Kiểm tra lại đường dẫn tuyệt đối hoặc đối số mà bạn đã truyền cho `Viewer`.
+- **Vấn đề về tên lớp** – Tên lớp phân biệt chữ hoa/thường; Hãy xác nhận chúng trong phần mềm CAD của bạn.
+- **Lỗi bộ nhớ** – Đối với các bản vẽ rất lớn, cân nhắc bật bộ nhớ đệm hoặc tăng kích thước heap của JVM.
+
 ## Ứng dụng thực tế
-Việc kết xuất các lớp cụ thể từ các tệp CAD có thể cực kỳ hữu ích:
-1. **Đánh giá kỹ thuật**Tập trung vào các thành phần cụ thể mà không bị phân tâm.
-2. **Bài thuyết trình về kiến trúc**: Làm nổi bật các yếu tố thiết kế cụ thể trong các cuộc họp với khách hàng.
-3. **Đảm bảo chất lượng**: Kiểm tra tính tuân thủ và tiêu chuẩn của một số tính năng.
-4. **Tích hợp với phần mềm BIM**:Cải thiện quy trình làm việc bằng cách tích hợp chế độ xem đã kết xuất vào các công cụ Mô hình hóa thông tin xây dựng (BIM).
+Kết xuất các lớp CAD cụ thể Java hữu ích trong nhiều bản kịch bản:
+
+1. **Engineering Reviews** – Tập trung vào một hệ thống con duy nhất mà không bị rối mắt.
+2. **Trình bày kiến ​​trúc** – Làm bật các cấu trúc nổi hoặc cơ khí thành phần thành phần cho khách hàng.
+3. **Đảm bảo chất lượng** – Cô lập các tính năng quan trọng để kiểm tra dày thủ.
+4. **Tích hợp BIM** – Cung cấp các chế độ xem theo lớp vào công cụ BIM để cung cấp tài liệu phong phú hơn.
+
 ## Cân nhắc về hiệu suất
-### Tối ưu hóa hiệu suất
-- Sử dụng các chiến lược lưu trữ đệm phù hợp để xử lý các tệp lớn một cách hiệu quả.
-- Giới hạn số lớp được hiển thị cùng lúc nếu phát sinh vấn đề về hiệu suất.
-### Hướng dẫn sử dụng tài nguyên
-- Theo dõi mức sử dụng bộ nhớ, đặc biệt là khi xử lý các bản vẽ CAD phức tạp.
-- Điều chỉnh cài đặt JVM để có hiệu suất tối ưu với GroupDocs.Viewer.
+###Tối Ưu Hóa Hiệu Năng
+- Sử dụng bộ đệm của GroupDocs để tránh xử lý lại cùng một tệp nhiều lần.
+- Lớp có giới hạn được hiển thị đồng thời nếu bạn gặp hiện tượng chậm lại.
+
+### Nguyên tắc sử dụng tài nguyên
+- Giám sát công việc sử dụng đống cho các bản vẽ phức tạp; điều chỉnh `-Xmx` khi cần thiết.
+- JVM luôn cập nhật để tận dụng các tiến trình mới nhất của bộ sưu tập rác.
+
 ## Phần kết luận
-Bằng cách làm theo hướng dẫn này, bạn đã học cách tận dụng GroupDocs.Viewer for Java để kết xuất các lớp CAD cụ thể một cách hiệu quả. Khả năng này có thể cải thiện đáng kể quy trình làm việc và chất lượng trình bày của bạn trong nhiều ứng dụng kỹ thuật và kiến trúc.
-**Các bước tiếp theo:**
-Khám phá thêm nhiều tính năng của GroupDocs.Viewer bằng cách tìm hiểu tài liệu hướng dẫn mở rộng hoặc thử nghiệm nhiều loại tệp và tùy chọn hiển thị khác nhau.
-Chúng tôi khuyến khích bạn triển khai giải pháp này vào các dự án của mình và khám phá toàn bộ tiềm năng của GroupDocs.Viewer cho Java!
-## Phần Câu hỏi thường gặp
-1. **GroupDocs.Viewer là gì?** 
-   Một thư viện đa năng cho phép các nhà phát triển xem, chuyển đổi và thao tác nhiều định dạng tài liệu khác nhau trong ứng dụng của họ.
-2. **Tôi có thể dựng các lớp từ các loại tệp khác ngoài CAD không?**
-   Có, mặc dù hướng dẫn này tập trung vào CAD, GroupDocs.Viewer vẫn hỗ trợ nhiều định dạng tệp khác nhau.
-3. **Tôi phải xử lý lỗi trong quá trình kết xuất như thế nào?**
-   Triển khai các khối try-catch xung quanh mã trình xem của bạn để nắm bắt và quản lý các ngoại lệ một cách hiệu quả.
-4. **GroupDocs.Viewer Java có phù hợp cho các ứng dụng quy mô lớn không?**
-   Hoàn toàn đúng! Nó được thiết kế mạnh mẽ và hiệu quả, lý tưởng cho cả các dự án nhỏ và giải pháp cấp doanh nghiệp.
-5. **Một số điểm tích hợp chung với các hệ thống khác là gì?**
-   GroupDocs.Viewer có thể được tích hợp vào các ứng dụng web, ứng dụng máy tính để bàn hoặc dịch vụ đám mây, cung cấp khả năng xem tài liệu linh hoạt trên nhiều nền tảng.
-## Tài nguyên
+Bạn đã có một phương pháp hoàn chỉnh, sẵn sàng để sản xuất để **kết xuất các lớp CAD Java** với GroupDocs.Viewer. Khả năng này giúp đơn giản hóa việc đánh giá, trình bày và phân tích quy trình làm việc cho các đội ngũ kỹ thuật và kiến ​​trúc.
+
+**Các bước tiếp theo**
+Khám phá các tính năng bổ sung của Trình xem—như hiển thị ra PDF hoặc PNG, xử lý bố cục DWG hoặc áp dụng tùy chỉnh kiểu—để nâng cao hơn nữa tài liệu đường dẫn của bạn.
+
+## Câu hỏi thường gặp
+**Q: GroupDocs.Viewer là gì?**
+A: Đó là một thư viện Java cho phép xem, chuyển đổi và hiển thị hơn 100 tài liệu định dạng, bao gồm tất cả các tệp CAD.
+
+**Q: Tôi có thể hiển thị lớp từ các loại tệp khác ngoài DWG không?**
+A: Có, DXF, DGN hỗ trợ Viewer và các định dạng CAD khác, mặc dù lớp API chọn chỉ áp dụng cho CAD tài liệu.
+
+**Q: Tôi nên xử lý lỗi như thế nào khi kết xuất?**
+A: Bao bọc các lời gọi Viewer trong khối try‑catch và ghi nhật ký chi tiết `ViewerException` để dự đoán vấn đề.
+
+**Q: GroupDocs.Viewer có mô phù hợp cho phát triển khai quy lớn, doanh nghiệp không?**
+A: Hoàn toàn. Nó được thiết kế cho môi trường có lưu lượng cao và cung cấp bộ nhớ đệm phía máy chủ, đa luồng, cùng các tùy chọn giấy phép cho doanh nghiệp.
+
+**Q: Tôi có thể tìm thêm các ví dụ tích hợp ở đâu?**
+A: Tài liệu chính thức và API tham chiếu chứa rất nhiều mẫu cho web, máy tính để bàn và đám mây.
+
+## Tài liệu tham khảo
 - [Tài liệu](https://docs.groupdocs.com/viewer/java/)
-- [Tài liệu tham khảo API](https://reference.groupdocs.com/viewer/java/)
-- [Tải về](https://releases.groupdocs.com/viewer/java/)
+- [Tham khảo API](https://reference.groupdocs.com/viewer/java/)
+- [Tải xuống](https://releases.groupdocs.com/viewer/java/)
 - [Mua](https://purchase.groupdocs.com/buy)
+
 - [Dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)
 - [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
 - [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Cập nhật lần cuối:** 08/01/2026
+**Đã kiểm thử với:** GroupDocs.Viewer 25.2 cho Java
+**Tác giả:** GroupDocs
