@@ -1,47 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Java에서 GroupDocs.Viewer API를 사용하여 특정 시간 간격으로 프로젝트 문서를 렌더링하는 방법을 알아보세요. 문서 관리 및 타임라인 시각화 기능을 향상시켜 보세요."
-"title": "Java용 GroupDocs.Viewer를 사용하여 시간 간격으로 프로젝트 문서 렌더링"
-"url": "/ko/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: 특정 시간 간격 내에서 프로젝트 문서에서 HTML을 생성하기 위해 GroupDocs Viewer를 사용하는 방법을 배웁니다.
+  이 가이드는 설정, 코드 및 실제 사용 사례를 다룹니다.
+keywords:
+- render project documents
+- time intervals Java
+- GroupDocs Viewer API
+title: Java에서 GroupDocs Viewer를 사용하여 시간 간격별 프로젝트 문서 렌더링하는 방법
 type: docs
+url: /ko/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/
+weight: 1
 ---
-# Java용 GroupDocs.Viewer를 사용하여 시간 간격으로 프로젝트 문서 렌더링을 구현하는 방법
 
-## 소개
+# Java에서 시간 간격별 프로젝트 문서를 렌더링하기 위해 GroupDocs Viewer 사용 방법
 
-특정 시간 간격 내에 프로젝트 문서를 렌더링하는 데 어려움을 겪고 계신가요? 이 포괄적인 튜토리얼은 Java의 강력한 GroupDocs.Viewer API를 사용하여 이 문제를 해결하는 방법을 안내합니다. 타임라인을 관리하든 프로젝트 단계를 시각화하든, 이 기능을 숙달하면 문서 관리 역량을 크게 향상시킬 수 있습니다.
+프로젝트 일정을 특정 시간 창에서 렌더링하기 위한 **how to use GroupDocs**를 찾고 있다면, 여기가 바로 정답입니다. 이 튜토리얼에서는 Maven 설정부터 프로젝트 문서에서 HTML을 생성하는 전체 과정을 단계별로 안내하므로, 정확한 타임라인 뷰를 애플리케이션에 직접 삽입할 수 있습니다.
 
-### 배울 내용:
-- Java용 GroupDocs.Viewer 설정 및 구성
-- 지정된 시간 간격 내에 프로젝트 문서를 렌더링하는 단계별 프로세스
-- 주요 구성 옵션 및 문제 해결 팁
-- 이 구현의 실제 응용 프로그램
+![Render Project Documents by Time Intervals with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-project-documents-by-time-intervals-java.png)
 
-시작하기에 앞서 필요한 전제 조건부터 살펴보겠습니다!
+## 빠른 답변
+- **What does the feature do?** 시작 날짜와 종료 날짜 사이에 해당하는 Microsoft Project 파일의 일부만 렌더링합니다.  
+- **Which output format is used?** 웹 통합에 적합한 임베디드 리소스가 포함된 HTML.  
+- **Do I need a license?** 평가용으로는 무료 체험판으로 충분하지만, 프로덕션에서는 정식 라이선스가 필요합니다.  
+- **Can I change the date range at runtime?** 예—렌더링 옵션에서 `setStartDate`와 `setEndDate` 값을 조정하면 됩니다.  
+- **Is this supported on all Java versions?** GroupDocs.Viewer 25.2 이상을 사용한다면 Java 8+에서 작동합니다.
 
-## 필수 조건
+## 이 맥락에서 “How to Use GroupDocs”란 무엇인가요?
+GroupDocs Viewer는 100개 이상의 파일 형식을 웹 친화적인 형태로 변환하는 Java 라이브러리입니다. 프로젝트 파일에 대해 **how to use GroupDocs**를 수행하면, 클라이언트 측에 Microsoft Project가 없어도 일정 데이터를 추출·시각화·공유할 수 있는 기능을 얻게 됩니다.
 
-시작하기에 앞서 다음 사항이 있는지 확인하세요.
+## 왜 시간 간격으로 프로젝트 문서를 렌더링할까요?
+- **Focused analysis:** 관심 있는 단계만 표시합니다 (예: 2024년 3분기).  
+- **Performance:** HTML 출력이 작아져 페이지 로드가 빨라집니다.  
+- **Integration:** 대시보드, 보고 포털 또는 맞춤형 PM 도구에 타임라인 뷰를 삽입합니다.
 
-### 필수 라이브러리 및 버전:
-- Java 버전 25.2 이상용 GroupDocs.Viewer.
+## 사전 요구 사항
+- **GroupDocs.Viewer for Java** 버전 25.2 이상.  
+- Java Development Kit (JDK) 8 이상.  
+- IntelliJ IDEA 또는 Eclipse와 같은 IDE.  
+- 기본 Maven 지식.
 
-### 환경 설정 요구 사항:
-- Java Development Kit(JDK) 설치됨
-- IntelliJ IDEA 또는 Eclipse와 같은 통합 개발 환경(IDE)
-
-### 지식 전제 조건:
-- Java 프로그래밍에 대한 기본 이해
-- Maven 프로젝트 설정에 대한 익숙함
-
-## Java용 GroupDocs.Viewer 설정
-
-프로젝트 문서 렌더링을 시작하려면 GroupDocs.Viewer 라이브러리를 설정해야 합니다. 방법은 다음과 같습니다.
-
-**Maven 설정**
-
-다음을 포함하세요. `pom.xml` GroupDocs.Viewer를 종속성으로 추가하는 파일:
+## GroupDocs.Viewer for Java 설정
+### Maven 의존성
+`pom.xml`에 저장소와 의존성을 추가합니다:
 
 ```xml
 <repositories>
@@ -60,15 +60,13 @@ type: docs
 </dependencies>
 ```
 
-### 라이센스 취득 단계
+### 라이선스 획득 단계
+1. **Free Trial** – [GroupDocs 다운로드 페이지](https://releases.groupdocs.com/viewer/java/)에서 체험판을 다운로드합니다.  
+2. **Temporary License** – [이 링크](https://purchase.groupdocs.com/temporary-license/)를 통해 연장 테스트용 임시 라이선스를 획득합니다.  
+3. **Purchase** – 제한 없는 프로덕션 사용을 위해 [GroupDocs 구매 페이지](https://purchase.groupdocs.com/buy)에서 라이선스를 구매합니다.
 
-1. **무료 체험**: 평가판을 다운로드하세요 [GroupDocs 다운로드 페이지](https://releases.groupdocs.com/viewer/java/).
-2. **임시 면허**: 확장된 테스트를 위한 임시 라이센스를 얻으십시오. [이 링크](https://purchase.groupdocs.com/temporary-license/).
-3. **구입**: 전체 액세스를 위해서는 라이선스를 구매하세요. [GroupDocs 구매 페이지](https://purchase.groupdocs.com/buy).
-
-### 기본 초기화
-
-GroupDocs.Viewer를 설정하면 Java 애플리케이션에서 초기화할 수 있습니다.
+### 기본 Viewer 초기화
+다음 스니펫은 Microsoft Project 파일(`.mpp`)을 가리키는 `Viewer` 인스턴스를 생성하는 방법을 보여줍니다:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,27 +74,15 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.mpp")) {
-            // 렌더링 코드는 여기에 입력하세요
+            // Your rendering code goes here
         }
     }
 }
 ```
 
-## 구현 가이드
-
-이 섹션에서는 GroupDocs.Viewer를 사용하여 지정된 시간 간격 내에서 프로젝트 문서를 렌더링하는 방법에 대해 설명합니다.
-
-### 시간 간격으로 프로젝트 문서 렌더링
-
-#### 개요
-
-이 기능을 사용하면 프로젝트 일정의 특정 부분을 표시하여 효과적인 타임라인 관리 및 분석에 도움이 됩니다. 
-
-#### 단계별 가이드
-
-##### 1. 출력 디렉토리 정의
-
-렌더링된 HTML 파일이 저장될 위치를 설정합니다.
+## 단계별 구현 가이드
+### 1. 출력 디렉터리 정의
+생성된 HTML 페이지를 저장할 폴더를 만듭니다:
 
 ```java
 import java.nio.file.Path;
@@ -105,24 +91,18 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderProjectTimeInterv
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**왜 이 단계를 밟아야 할까요?**: 전용 출력 디렉토리를 설정하면 렌더링된 문서를 효율적으로 구성하고 관리하는 데 도움이 됩니다.
+*Why?* 렌더링된 파일을 정리하면 웹 서버에서 제공하거나 UI에 삽입하기가 더 쉬워집니다.
 
-##### 2. 뷰어 초기화
-
-GroupDocs.Viewer를 사용하여 소스 문서를 로드합니다.
-
+### 2. 프로젝트 파일로 Viewer 초기화
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
-    // 렌더링 단계를 계속합니다.
+    // Continue with rendering steps
 }
 ```
 
-**왜 이 단계를 밟아야 할까요?**: 문서를 로드하면 뷰어가 초기화되고 렌더링을 준비합니다.
+*Why?* 문서를 로드하면 내부 파서가 준비되고 프로젝트별 메타데이터에 접근할 수 있게 됩니다.
 
-##### 3. 뷰 정보 검색
-
-프로젝트 관리 문서에 맞춰 특정 뷰 정보를 얻으세요.
-
+### 3. 프로젝트 파일에 대한 뷰 정보 가져오기
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
 import com.groupdocs.viewer.results.ProjectManagementViewInfo;
@@ -131,12 +111,9 @@ ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ProjectManagementViewInfo viewInfo = (ProjectManagementViewInfo) viewer.getViewInfo(viewInfoOptions);
 ```
 
-**왜 이 단계를 밟아야 할까요?**: 프로젝트별 뷰 정보를 획득하는 것은 올바른 시간 간격을 설정하는 데 중요합니다.
+*Why?* `ProjectManagementViewInfo`는 일정의 시작 및 종료 날짜를 제공하며, 이후 렌더링 범위를 제한하는 데 사용됩니다.
 
-##### 4. HTML 렌더링 옵션 설정
-
-문서를 내장된 리소스와 함께 HTML로 렌더링하기 위한 옵션을 구성하세요.
-
+### 4. HTML 렌더링 옵션 구성 (프로젝트에서 HTML 생성)
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
@@ -145,70 +122,65 @@ viewOptions.getProjectManagementOptions().setStartDate(viewInfo.getStartDate());
 viewOptions.getProjectManagementOptions().setEndDate(viewInfo.getEndDate());
 ```
 
-**왜 이 단계를 밟아야 할까요?**: 시작 및 종료 날짜를 설정하면 프로젝트 문서의 관련 섹션만 렌더링됩니다.
+*Why?* `StartDate`와 `EndDate`를 설정하면 해당 기간 내의 프로젝트 데이터만을 대상으로 GroupDocs가 **HTML을 생성**하도록 지정합니다.
 
-##### 5. 프로젝트 문서 렌더링
-
-마지막으로 렌더링 프로세스를 실행합니다.
-
+### 5. 렌더링 프로세스 실행
 ```java
 viewer.view(viewOptions);
 ```
 
-**왜 이 단계를 밟아야 할까요?**렌더링은 구성을 HTML 형식의 시각적 출력으로 변환합니다.
+*Why?* 이 호출은 선택한 시간 구간의 프로젝트 일정을 나타내는 자체 포함형 HTML 페이지 시리즈를 생성합니다.
 
-#### 문제 해결 팁:
-- 모든 파일 경로가 올바르게 지정되었는지 확인하세요.
-- 프로젝트 관리 기능을 위해 GroupDocs.Viewer에서 해당 문서 유형이 지원되는지 다시 한번 확인하세요.
+## 일반적인 함정 및 문제 해결
+- **Incorrect file paths** – 소스 `.mpp` 파일과 출력 디렉터리가 모두 존재하는지 다시 확인하세요.  
+- **Unsupported file type** – 문서가 지원되는 Project 형식인지 확인하세요 (예: `.mpp`, `.mpt`).  
+- **License errors** – 체험판 라이선스는 렌더링 제한이 있을 수 있으니, 제한 없는 사용을 위해 정식 라이선스로 전환하세요.
 
-## 실제 응용 프로그램
+## 실용적인 적용 사례
+1. **Project Timeline Analysis** – 이해관계자에게 현재 단계만 보여줍니다.  
+2. **Automated Reporting** – 주간 상태 업데이트를 위한 시간 제한 HTML 보고서를 생성합니다.  
+3. **Integration with Dashboards** – 렌더링된 페이지를 BI 도구나 맞춤 포털에 삽입합니다.  
+4. **Archival** – 향후 참조를 위해 프로젝트 일정의 웹 친화적인 스냅샷을 저장합니다.
 
-1. **프로젝트 타임라인 분석**: 프로젝트의 특정 단계를 시각화하여 진행 상황과 리소스 배분을 분석합니다.
-2. **보고**: 완료된 이정표를 보여주는 기간 한정 보고서를 이해관계자에게 생성합니다.
-3. **프로젝트 관리 도구와의 통합**: 렌더링된 문서를 사용하여 사용자 정의 타임라인 보기로 기존 도구를 향상시킵니다.
-4. **데이터 보관**: 쉽게 접근하고 공유할 수 있도록 웹 친화적인 형식으로 프로젝트 문서를 보관합니다.
-
-## 성능 고려 사항
-
-대용량 문서를 렌더링할 때 성능을 최적화하려면:
-- HTML 파일을 독립적으로 유지하려면 내장된 리소스를 사용합니다.
-- 특히 광범위한 타임라인이나 데이터 세트를 다루는 경우 메모리 사용량을 모니터링합니다.
-- Java 애플리케이션 내에서 효율적인 파일 처리 방식을 구현합니다.
+## 성능 팁
+- *embedded resources* 옵션을 사용하여 각 HTML 페이지를 자체 포함형으로 유지하면 HTTP 요청 수를 줄일 수 있습니다.  
+- 매우 큰 프로젝트의 경우, 메모리 사용량을 낮게 유지하기 위해 작은 날짜 청크로 렌더링하는 것을 고려하세요.  
+- 파일을 제공한 후 임시 파일을 정리하여 디스크 용량이 늘어나는 것을 방지하세요.
 
 ## 결론
+이제 **how to use GroupDocs** Viewer를 사용해 특정 시간 간격 내에서 프로젝트 문서를 렌더링하고 Java에서 **project** 데이터를 HTML로 **generate**하는 방법을 알게 되었습니다. 이 기능은 타임라인 시각화를 간소화하고 보고 효율성을 향상시키며 최신 웹 애플리케이션과 원활하게 통합됩니다.
 
-이 가이드를 따라 하면 이제 GroupDocs.Viewer for Java를 사용하여 지정된 시간 간격 내에 프로젝트 문서를 렌더링하는 기술을 갖추게 됩니다. 이 기능을 사용하면 문서 관리 및 보고 프로세스를 크게 향상시킬 수 있습니다.
+### 다음 단계
+- 워터마크, 비밀번호 보호, 맞춤 CSS 스타일링 등 추가 Viewer 기능을 탐색하세요.  
+- 이 렌더링 파이프라인을 REST API와 결합하여 필요 시 타임라인 뷰를 제공하도록 합니다.
 
-### 다음 단계:
-워터마킹이나 보안 설정 등 GroupDocs.Viewer의 추가 기능을 살펴보고 문서 렌더링 솔루션을 더욱 사용자 지정해 보세요.
+## 자주 묻는 질문
+**Q: GroupDocs.Viewer가 지원하는 파일 형식은 무엇인가요?**  
+A: GroupDocs.Viewer는 Microsoft Project (MPP), PDF, Word, Excel, PowerPoint 등 다양한 형식을 지원합니다.
 
-### 행동 촉구
-오늘 귀하의 프로젝트에 이 솔루션을 구현해보고 문서화 프로세스가 얼마나 간소화되는지 확인해 보세요!
+**Q: GroupDocs.Viewer 무료 체험을 어떻게 시작하나요?**  
+A: You can download the trial version from [here](https://releases.groupdocs.com/viewer/java/).
 
-## FAQ 섹션
+**Q: 리소스를 임베드하지 않고 문서를 렌더링할 수 있나요?**  
+A: 예, 임베드 대신 외부 리소스를 참조하는 다른 HTML 뷰 옵션을 선택할 수 있습니다.
 
-**1. GroupDocs.Viewer는 어떤 파일 형식을 지원합니까?**
-GroupDocs.Viewer는 Microsoft Project(MPP), PDF, Word, Excel 등 다양한 문서 유형을 지원합니다.
+**Q: 문서가 너무 커서 렌더링이 어려운 경우는 어떻게 해야 하나요?**  
+A: 위에서 보여준 것처럼 문서를 작은 섹션으로 나누거나 필요한 날짜 범위만 렌더링하는 것을 고려하세요.
 
-**2. GroupDocs.Viewer 무료 평가판을 시작하려면 어떻게 해야 하나요?**
-체험판은 다음에서 다운로드할 수 있습니다. [여기](https://releases.groupdocs.com/viewer/java/).
+**Q: 렌더링 오류를 어떻게 처리하나요?**  
+A: 모든 구성 설정을 확인하고 유효한 라이선스가 있는지 확인한 뒤, 자세한 오류 코드는 GroupDocs 문서를 참고하세요.
 
-**3. 리소스를 포함하지 않고 문서를 렌더링할 수 있나요?**
-네, 다양한 HTML 보기 옵션을 사용하여 내장된 리소스 없이 문서를 렌더링하도록 선택할 수 있습니다.
+## 리소스
+- **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [Try the Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-**4. 문서가 너무 커서 렌더링할 수 없다면 어떻게 해야 하나요?**
-렌더링하기 전에 문서를 최적화하거나 작은 부분으로 나누는 것을 고려하세요.
+---
 
-**5. 렌더링 오류는 어떻게 처리하나요?**
-모든 구성이 올바른지 확인하고 오류 처리 기술에 대해서는 GroupDocs 문서를 확인하세요.
-
-## 자원
-- **선적 서류 비치**: [GroupDocs 뷰어 Java 문서](https://docs.groupdocs.com/viewer/java/)
-- **API 참조**: [GroupDocs API 참조](https://reference.groupdocs.com/viewer/java/)
-- **다운로드**: [GroupDocs 다운로드](https://releases.groupdocs.com/viewer/java/)
-- **구입**: [GroupDocs 라이선스 구매](https://purchase.groupdocs.com/buy)
-- **무료 체험**: [무료 버전을 사용해 보세요](https://releases.groupdocs.com/viewer/java/)
-- **임시 면허**: [임시 면허를 받으세요](https://purchase.groupdocs.com/temporary-license/)
-- **지원하다**: [GroupDocs 포럼](https://forum.groupdocs.com/c/viewer/9)
-
-이 가이드를 통해 GroupDocs.Viewer for Java를 사용하여 프로젝트에서 시간 간격 렌더링을 구현할 준비가 되었습니다.
+**마지막 업데이트:** 2026-01-15  
+**테스트 환경:** GroupDocs.Viewer 25.2 for Java  
+**작성자:** GroupDocs

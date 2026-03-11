@@ -1,39 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan jelenítheti meg hatékonyan a követett változtatásokat Word-dokumentumokban a GroupDocs.Viewer for Java használatával ebből a lépésről lépésre szóló útmutatóból. Ideális dokumentumkezelő rendszereket integráló fejlesztők számára."
-"title": "Hogyan jelenítsük meg a Word dokumentumokban a követett változásokat a GroupDocs.Viewer for Java használatával? Átfogó útmutató"
-"url": "/hu/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: Ismerje meg, hogyan jelenítheti meg a Word nyomkövetett változtatásait
+  és tekintheti meg a Word dokumentumok revízióit Word fájlokban a GroupDocs.Viewer
+  for Java segítségével. Kövesse ezt a fejlesztőknek szóló lépésről‑lépésre útmutatót.
+keywords:
+- render tracked changes Word docs GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- Java document rendering
+title: Nyomon követett módosítások megjelenítése Word dokumentumokban a GroupDocs.Viewer
+  for Java segítségével
 type: docs
+url: /hu/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
+weight: 1
 ---
-# Követett változások megjelenítése Word-dokumentumokban a GroupDocs.Viewer for Java segítségével
 
-## Bevezetés
+# Word dokumentumok változáskövetésének megjelenítése a GroupDocs.Viewer for Java-val
 
-Nehezen jelenítheti meg a Word-dokumentumokban a követett változtatásokat a Java-alkalmazásokban? Akár dokumentumkezelő rendszert fejleszt, akár vizualizálnia kell a szerkesztéseket, ezeknek a változtatásoknak a zökkenőmentes megjelenítése kihívást jelenthet. **GroupDocs.Viewer Java-hoz**, az a robusztus könyvtár, amely leegyszerűsíti ezt a folyamatot azáltal, hogy lehetővé teszi a Word-dokumentumok közvetlenül HTML-be renderelését a követett változtatásokkal.
+Ha a Java alkalmazásodban **Word dokumentumok változáskövetését** szeretnéd megjeleníteni, jó helyen jársz. Ebben az útmutatóban megmutatjuk, hogyan jelenítheted meg a Word fájlban megjelenő minden revíziót, beszúrást és törlést, tiszta, navigálható HTML‑re alakítva. Akár dokumentum‑áttekintő portált, jogi‑esetkezelő rendszert, vagy bármilyen megoldást építesz, amelynek **Word dokumentum revíziókat** kell megjelenítenie, ez a tutorial végigvezet a teljes folyamaton – a környezet beállításától a végső renderelésig.
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük Önt a funkció megvalósításán, olyan kulcsfontosságú szempontokra összpontosítva, mint a környezet beállítása, a beállítások konfigurálása és a dokumentum megjelenítése. Az útmutató végére hatékonyan integrálni fogja a **GroupDocs.Viewer Java-hoz** a projektedbe a zökkenőmentes dokumentummegtekintés érdekében.
+![Változáskövetés megjelenítése Word dokumentumokban a GroupDocs.Viewer for Java-val](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-### Amit tanulni fogsz:
-- GroupDocs.Viewer beállítása Java-hoz
-- Követett változások megjelenítésének konfigurálása és megvalósítása
-- Gyakorlati alkalmazások valós helyzetekben
-- A teljesítmény optimalizálása a legjobb gyakorlatokkal
+## Gyors válaszok
+- **Mi a “render word tracked changes” jelentése?** Egy Word fájl revíziójelölését vizuális HTML ábrázolássá konvertálja.  
+- **Melyik könyvtár kezeli ezt?** GroupDocs.Viewer for Java.  
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez elegendő; egy teljes licenc eltávolítja az összes korlátozást.  
+- **Milyen Java verzió szükséges?** Java 8 vagy újabb.  
+- **Letiltható a változáskövetés megjelenítése?** Igen – állítsd be a `setRenderTrackedChanges(false)` értéket a nézetbeállításokban.
 
-Térjünk át most az előfeltételekre, amelyekre szükséged van, mielőtt belevágnál a megvalósításba.
+## Mi a “render word tracked changes”?
+A Word változáskövetés renderelése azt jelenti, hogy a `.docx` fájlban tárolt revíziós adatokat (beszúrások, törlések, megjegyzések stb.) egy megtekinthető formátumba – általában HTML‑be – alakítjuk, ahol ezek a változások vizuálisan ki vannak emelve. Ez lehetővé teszi a végfelhasználók számára, hogy pontosan lássák, mi módosult a Microsoft Word megnyitása nélkül.
+
+## Miért használjuk a GroupDocs.Viewer-t a Word dokumentum revíziók megtekintéséhez?
+GroupDocs.Viewer for Java elrejti az alacsony szintű OpenXML kezelést, és egyetlen API hívással lehetővé teszi HTML, PDF vagy képek generálását. Emellett natívan támogatja a **view word document revisions** funkciót, megőrizve a stílusokat, beágyazott erőforrásokat és a változáskövetést.
 
 ## Előfeltételek
+- **GroupDocs.Viewer for Java** könyvtár 25.2 vagy újabb verziója.  
+- Maven a függőségkezeléshez.  
+- Alap Java fejlesztői környezet (IDE, JDK 8+).  
 
-Kezdés előtt győződjön meg arról, hogy a következőkkel rendelkezik:
-- **Kötelező könyvtárak**GroupDocs.Viewer Java könyvtár 25.2-es vagy újabb verziójához.
-- **Környezet beállítása**Alapvető ismeretek a Java fejlesztésről és jártasság a Maven használatában a függőségek kezelésében.
-- **Ismereti előfeltételek**Alapvető ismeretek a fájlelérési utak kezeléséről Java nyelven és az IO-műveletekkel való munkáról.
+## A GroupDocs.Viewer for Java beállítása
 
-## GroupDocs.Viewer beállítása Java-hoz
-
-Kezdésként be kell állítanod a projektedet, hogy tartalmazza a szükséges függőségeket. Így teheted meg ezt Maven használatával:
-
-**Maven konfiguráció**
+### Maven Configuration
+Add hozzá a GroupDocs tárolót és a függőséget a `pom.xml`-hez:
 
 ```xml
 <repositories>
@@ -52,56 +60,40 @@ Kezdésként be kell állítanod a projektedet, hogy tartalmazza a szükséges f
 </dependencies>
 ```
 
-### Licencbeszerzés
+### Licenc beszerzése
+Kezdj egy ingyenes próba verzióval, vagy kérj ideiglenes értékelő licencet. Amikor készen állsz a termelésre, vásárolj teljes licencet, hogy minden funkciót feloldhass.
 
-A GroupDocs.Viewer teljes kihasználásához ingyenes próbaverzióval kezdheti, vagy ideiglenes licencet vásárolhat kiértékelési célokra. Ha a könyvtár megfelel az igényeinek, érdemes lehet teljes licencet vásárolnia a korlátozások megszüntetése érdekében.
+### Alap inicializálás
+Importáld a szükséges osztályokat a Java kódban, és készítsd elő a bemeneti és kimeneti fájlútvonalakat.
 
-### Alapvető inicializálás és beállítás
+## Hogyan rendereljük a Word változáskövetést Word dokumentumokban
 
-A függőség hozzáadása után győződjön meg arról, hogy a fejlesztői környezet megfelelően van beállítva. Importálnia kell a szükséges csomagokat, és megfelelően kell konfigurálnia a fájlelérési utakat a Java-kódban.
+Az alábbi lépésről‑lépésre útmutató pontosan azt a kódot mutatja, amelyre szükséged lesz. A kódrészletek változatlanul maradnak az eredeti tutorialból.
 
-## Megvalósítási útmutató
-
-Merüljünk el a követett változások renderelésének megvalósításában a GroupDocs.Viewer for Java segítségével.
-
-### Követett változtatások renderelésének áttekintése
-
-Ez a funkció lehetővé teszi a követett változtatásokat tartalmazó Word-dokumentumok közvetlen HTML-ként való megjelenítését, megőrizve az összes módosítást megtekintési célokra. Ez a funkció elengedhetetlen azokhoz az alkalmazásokhoz, amelyekhez dokumentum-ellenőrzési és együttműködési funkciókra van szükség.
-
-#### 1. lépés: A kimeneti könyvtár elérési útjának meghatározása
-
-Kezd azzal, hogy megadod, hová szeretnéd menteni a renderelt fájlokat:
+### 1. lépés: A kimeneti könyvtár útvonalának meghatározása
+Hozz létre egy mappát, ahová a renderelt HTML oldalak mentésre kerülnek.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-Ez a lépés létrehoz egy dedikált könyvtárat a HTML-kimenetek tárolására, biztosítva a renderelt dokumentumok rendezett tárolását.
-
-#### 2. lépés: Adja meg az egyes oldalak mentési formátumát
-
-Határozza meg, hogyan kerüljenek mentésre a dokumentum egyes oldalai:
+### 2. lépés: A formátum megadása az egyes oldalak mentéséhez
+Állíts be egy elnevezési mintát minden generált HTML fájlhoz.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-Ez a sablon biztosítja, hogy a dokumentum minden oldala egyedi azonosítóval legyen mentve, ami megkönnyíti a navigációt és a hivatkozást.
-
-#### 3. lépés: Nézetbeállítások konfigurálása
-
-Beállíthatja a beágyazott erőforrások HTML-be való beillesztését és a követett változások megjelenítésének engedélyezését:
+### 3. lépés: Nézetbeállítások konfigurálása
+Engedélyezd a beágyazott erőforrásokat, és kapcsold be a változáskövetés renderelését.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-Itt konfiguráljuk `HtmlViewOptions` képek vagy stíluslapok közvetlen beágyazása a HTML-fájlokba. Engedélyezés `setRenderTrackedChanges(true)` biztosítja, hogy minden követett változás megjelenjen.
-
-#### 4. lépés: Megjelenítőpéldány létrehozása
-
-Végül, példányosítsa a `Viewer` osztályozd és rendereld a dokumentumodat:
+### 4. lépés: Viewer példány létrehozása és renderelés
+Töltsd be azt a Word dokumentumot, amely változáskövetést tartalmaz, és generáld le a HTML kimenetet.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -109,57 +101,48 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-A `try-with-resources` A nyilatkozat biztosítja az erőforrások hatékony kezelését. `Viewer` A példány feldolgozza a Word fájlt, és alkalmazza az összes konfigurált nézetbeállítást.
-
-### Hibaelhárítási tippek
-- Győződjön meg arról, hogy a bemeneti és kimeneti könyvtárak elérési útja helyesen van beállítva.
-- Ha a renderelés sikertelen, ellenőrizze a dokumentum kompatibilitását a GroupDocs.Viewer for Java programmal.
-- Ellenőrizd, hogy a függvénytár megfelelő verziója szerepel-e a projekt függőségei között.
+## Gyakori problémák és megoldások
+- **Helytelen fájlútvonalak** – Ellenőrizd, hogy a `YOUR_OUTPUT_DIRECTORY` és a `YOUR_DOCUMENT_DIRECTORY` létező mappákra mutatnak.  
+- **Nem támogatott dokumentumformátum** – Győződj meg róla, hogy a fájl `.docx` vagy `.doc`, amelyet a GroupDocs.Viewer támogat.  
+- **Hiányzó licenc** – Érvényes licenc nélkül a könyvtár korlátozhatja a renderelési képességeket.
 
 ## Gyakorlati alkalmazások
+1. **Dokumentum-áttekintő rendszerek** – Megmutatja az átnézőknek pontosan, mi lett hozzáadva vagy eltávolítva.  
+2. **Jogi esetkezelés** – Kiemeli a szerződések vagy beadványok módosításait.  
+3. **Akadémiai együttműködés** – Megjeleníti több szerző hozzájárulását.
 
-A követett változások megjelenítésének számos valós alkalmazása van:
-1. **Dokumentum-felülvizsgálati rendszerek**: A közös szerkesztés hatékonyságának növelése a javítások egyértelmű megjelenítésével.
-2. **Jogi dokumentumkezelés**A módosítások kiemelésével megkönnyítheti a felülvizsgálati folyamatokat.
-3. **Akadémiai és kutatási dolgozatok**: Több szerző közreműködéseinek és szerkesztéseinek hatékony nyomon követése.
-
-más rendszerekkel, például CMS-sel vagy dokumentumtárolási megoldásokkal való integráció tovább bővítheti a funkcionalitást, átfogó megoldást kínálva a Word-dokumentumok kezelésére.
-
-## Teljesítménybeli szempontok
-
-Az optimális teljesítmény biztosítása érdekében:
-- A memóriafelhasználás hatékony kezelése érdekében korlátozza az egyidejűleg feldolgozott dokumentumok számát.
-- Használjon hatékony fájlelérési utakat és könyvtárszerkezeteket az I/O műveletek minimalizálása érdekében.
-- Rendszeresen frissítsen a GroupDocs.Viewer for Java legújabb verziójára, hogy kihasználhassa az optimalizálások és hibajavítások előnyeit.
-
-Ezen bevált gyakorlatok betartása segít a zökkenőmentes és hatékony dokumentumfeldolgozási folyamatok fenntartásában.
+## Teljesítmény szempontok
+- Korlátozott számú dokumentumot dolgozzunk fel egyszerre a memóriahasználat alacsonyan tartása érdekében.  
+- Használj hatékony könyvtárstruktúrákat az I/O terhelés csökkentéséhez.  
+- Tartsd a könyvtárat naprakészen; az újabb kiadások tartalmaznak teljesítményoptimalizációkat.
 
 ## Következtetés
+Most már egy teljes, termelésre kész módszered van a **Word változáskövetés renderelésére** és a **Word dokumentum revíziók megtekintésére** a GroupDocs.Viewer for Java segítségével. Integráld ezeket a lépéseket az alkalmazásodba, és erőteljes, interaktív dokumentum‑áttekintési élményt nyújthatsz a felhasználóknak.
 
-Most már megtanulta, hogyan valósíthatja meg a követett változások megjelenítését Word-dokumentumokban a következő használatával: **GroupDocs.Viewer Java-hoz**A környezet beállításával, a nézetbeállítások konfigurálásával és a gyakorlati alkalmazások megértésével felkészült leszel arra, hogy ezt a funkciót integráld a projektjeidbe.
+## GyIK szekció
 
-Következő lépésként érdemes lehet a GroupDocs.Viewer egyéb funkcióit is megvizsgálni, vagy további eszközökkel integrálni a dokumentumkezelési képességek fejlesztése érdekében.
+1. **Mi a minimum Java verzió?**  
+   Általában a Java 8 vagy újabb ajánlott a modern könyvtárakkal, például a GroupDocs.Viewer-rel való kompatibilitáshoz.  
+2. **Renderelhetek dokumentumokat változáskövetés nélkül?**  
+   Igen, egyszerűen tiltsd le a `setRenderTrackedChanges(true)` beállítást a konfigurációs opciókban.  
+3. **Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
+   Fontold meg a nagy fájlok kisebb szakaszokra bontását vagy a lapozási technikák használatát az erőforrás‑használat hatékony kezelése érdekében.  
+4. **Mik a licencelési lehetőségek a GroupDocs.Viewer-hez?**  
+   Kezdhetsz egy ingyenes próba verzióval, választhatsz ideiglenes értékelő licencet, vagy vásárolhatsz teljes licencet a projekt igényei szerint.  
+5. **Van támogatás, ha problémáim vannak?**  
+   Igen, a támogatáshoz a GroupDocs fórumon és a hivatalos dokumentációs forrásokon keresztül férhetsz hozzá.
 
-## GYIK szekció
-
-1. **Mi a minimálisan szükséges Java verzió?**  
-   A modern könyvtárakkal, például a GroupDocs.Viewerrel való kompatibilitás érdekében általában a Java 8 vagy újabb verzió ajánlott.
-2. **Renderelhetek dokumentumokat követett változások nélkül?**  
-   Igen, egyszerűen tiltsa le `setRenderTrackedChanges(true)` a konfigurációs beállításaidban.
-3. **Hogyan kezeljem hatékonyan a nagyméretű dokumentumokat?**  
-   Fontolja meg a nagy dokumentumok kisebb részekre bontását, vagy lapozási technikák használatát az erőforrás-felhasználás hatékony kezelése érdekében.
-4. **Milyen licencelési lehetőségek vannak a GroupDocs.Viewerhez?**  
-   Ingyenes próbaverzióval kezdhetsz, választhatsz ideiglenes licencet, vagy vásárolhatsz teljes licencet az igényeidtől függően.
-5. **Van elérhető támogatás, ha problémákba ütközöm?**  
-   Igen, a GroupDocs fórumon és a rendelkezésre álló dokumentációs forrásokon keresztül is igénybe veheti a támogatást.
-
-## Erőforrás
+## Források
 - [Dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- [API-referencia](https://reference.groupdocs.com/viewer/java/)
+- [API referencia](https://reference.groupdocs.com/viewer/java/)
 - [Letöltés](https://releases.groupdocs.com/viewer/java/)
 - [Vásárlás](https://purchase.groupdocs.com/buy)
-- [Ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/)
-- [Ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/)
+- [Ingyenes próba](https://releases.groupdocs.com/viewer/java/)
+- [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)
 - [Támogatás](https://forum.groupdocs.com/c/viewer/9)
 
-Reméljük, hogy ez az oktatóanyag segített Önnek hatékonyan megjeleníteni a Word dokumentumokat a követett változtatások használatával. **GroupDocs.Viewer Java-hoz**Jó kódolást!
+---
+
+**Utolsó frissítés:** 2026-01-15  
+**Tesztelve a következővel:** GroupDocs.Viewer for Java 25.2  
+**Szerző:** GroupDocs

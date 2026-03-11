@@ -1,47 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak vykreslovat dokumenty projektu v určitých časových intervalech pomocí rozhraní GroupDocs.Viewer API v Javě. Vylepšete správu dokumentů a vizualizaci časové osy."
-"title": "Vykreslení dokumentů projektu podle časových intervalů pomocí GroupDocs.Viewer pro Javu"
-"url": "/cs/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: Naučte se, jak používat GroupDocs Viewer k generování HTML z projektových
+  dokumentů v konkrétních časových intervalech. Tento průvodce zahrnuje nastavení,
+  kód a reálné příklady použití.
+keywords:
+- render project documents
+- time intervals Java
+- GroupDocs Viewer API
+title: Jak použít GroupDocs Viewer k vykreslení projektových dokumentů podle časových
+  intervalů v Javě
 type: docs
+url: /cs/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/
+weight: 1
 ---
-# Jak implementovat vykreslování dokumentů projektu s časovými intervaly pomocí GroupDocs.Viewer pro Javu
 
-## Zavedení
+# Jak používat GroupDocs Viewer k vykreslení projektových dokumentů po časových intervalech v Javě
 
-Máte potíže s vykreslováním projektových dokumentů v určitých časových intervalech? Tento komplexní tutoriál vás provede řešením tohoto problému pomocí výkonného rozhraní GroupDocs.Viewer API v Javě. Ať už spravujete časové osy nebo vizualizujete fáze projektu, zvládnutí této funkce může výrazně vylepšit vaše možnosti správy dokumentů.
+Pokud hledáte **jak používat GroupDocs** pro vykreslení projektových plánů v konkrétním časovém okně, jste na správném místě. V tomto tutoriálu vás provedeme celým procesem – od nastavení Maven až po generování HTML z projektových dokumentů – abyste mohli vložit přesné časové osy přímo do svých aplikací.
 
-### Co se naučíte:
-- Nastavení a konfigurace GroupDocs.Viewer pro Javu
-- Postupný proces vykreslování projektových dokumentů v daném časovém intervalu
-- Klíčové možnosti konfigurace a tipy pro řešení problémů
-- Reálné aplikace této implementace
+![Vykreslit projektové dokumenty po časových intervalech pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/render-project-documents-by-time-intervals-java.png)
 
-Začněme s předpoklady, které potřebujete, než začnete!
+## Rychlé odpovědi
+- **Co tato funkce dělá?** Vykresluje pouze část souboru Microsoft Project, která spadá mezi počáteční a koncové datum.  
+- **Jaký výstupní formát se používá?** HTML s vloženými zdroji, ideální pro webovou integraci.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkční použití je vyžadována plná licence.  
+- **Mohu měnit časový rozsah za běhu?** Ano – upravte hodnoty `setStartDate` a `setEndDate` v možnostech vykreslování.  
+- **Je to podporováno ve všech verzích Javy?** Funguje s Javou 8+ za předpokladu, že používáte GroupDocs.Viewer 25.2 nebo novější.
 
-## Předpoklady
+## Co znamená „How to Use GroupDocs“ v tomto kontextu?
+GroupDocs Viewer je knihovna pro Javu, která převádí více než 100 formátů souborů na web‑přátelské reprezentace. Když **jak používat GroupDocs** pro projektové soubory, získáte možnost extrahovat, vizualizovat a sdílet data plánu bez nutnosti Microsoft Project na straně klienta.
 
-Než začneme, ujistěte se, že máte následující:
+## Proč vykreslovat projektové dokumenty s časovými intervaly?
+- **Zaměřená analýza:** Zobrazte pouze fázi, která vás zajímá (např. Q3 2024).  
+- **Výkon:** Menší HTML výstup znamená rychlejší načítání stránek.  
+- **Integrace:** Vložte zobrazení časové osy do dashboardů, portálů pro reportování nebo vlastních nástrojů pro řízení projektů.  
 
-### Požadované knihovny a verze:
-- GroupDocs.Viewer pro Javu verze 25.2 nebo vyšší.
+## Požadavky
+- **GroupDocs.Viewer for Java** verze 25.2 nebo vyšší.  
+- Java Development Kit (JDK) 8 nebo novější.  
+- IDE, např. IntelliJ IDEA nebo Eclipse.  
+- Základní znalost Maven.  
 
-### Požadavky na nastavení prostředí:
-- Nainstalovaná vývojářská sada Java (JDK)
-- Integrované vývojové prostředí (IDE), jako je IntelliJ IDEA nebo Eclipse
+## Nastavení GroupDocs.Viewer pro Java
 
-### Předpoklady znalostí:
-- Základní znalost programování v Javě
-- Znalost nastavení projektů v Mavenu
-
-## Nastavení GroupDocs.Viewer pro Javu
-
-Chcete-li začít vykreslovat dokumenty projektu, je třeba nastavit knihovnu GroupDocs.Viewer. Postupujte takto:
-
-**Nastavení Mavenu**
-
-Zahrňte do svého `pom.xml` soubor pro přidání GroupDocs.Viewer jako závislosti:
+### Maven závislost
+Přidejte repozitář a závislost do svého `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,14 +64,12 @@ Zahrňte do svého `pom.xml` soubor pro přidání GroupDocs.Viewer jako závisl
 ```
 
 ### Kroky získání licence
+1. **Free Trial** – Stáhněte si zkušební verzi z [GroupDocs' download page](https://releases.groupdocs.com/viewer/java/).  
+2. **Temporary License** – Získejte dočasnou licenci pro rozšířené testování prostřednictvím [this link](https://purchase.groupdocs.com/temporary-license/).  
+3. **Purchase** – Pro neomezené produkční použití zakupte licenci na [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
-1. **Bezplatná zkušební verze**Stáhněte si zkušební verzi z [Stránka ke stažení GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **Dočasná licence**Získejte dočasnou licenci pro prodloužené testování prostřednictvím [tento odkaz](https://purchase.groupdocs.com/temporary-license/).
-3. **Nákup**Pro plný přístup si zakupte licenci na [Stránka nákupu GroupDocs](https://purchase.groupdocs.com/buy).
-
-### Základní inicializace
-
-Po nastavení GroupDocs.Viewer jej můžete inicializovat ve vaší Java aplikaci:
+### Základní inicializace Vieweru
+Následující úryvek ukazuje, jak vytvořit instanci `Viewer`, která ukazuje na soubor Microsoft Project (`.mpp`):
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,27 +77,16 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.mpp")) {
-            // Sem vložíte svůj vykreslovací kód
+            // Your rendering code goes here
         }
     }
 }
 ```
 
-## Průvodce implementací
+## Průvodce implementací krok za krokem
 
-Tato část popisuje, jak vykreslit dokumenty projektu v zadaném časovém intervalu pomocí GroupDocs.Viewer.
-
-### Vykreslování projektových dokumentů s časovými intervaly
-
-#### Přehled
-
-Tato funkce umožňuje zobrazit konkrétní části harmonogramu projektu, což pomáhá s efektivní správou a analýzou časového harmonogramu. 
-
-#### Podrobný průvodce
-
-##### 1. Definujte výstupní adresář
-
-Nastavte, kam budou uloženy vykreslené soubory HTML:
+### 1. Definujte výstupní adresář
+Vytvořte složku, kam budou uloženy generované HTML stránky:
 
 ```java
 import java.nio.file.Path;
@@ -105,24 +95,18 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderProjectTimeInterv
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Proč tento krok?**Vytvoření vyhrazeného výstupního adresáře pomáhá efektivně organizovat a spravovat vykreslené dokumenty.
+*Proč?* Udržování vykreslených souborů organizovaných usnadňuje jejich poskytování z webového serveru nebo vložení do uživatelského rozhraní.
 
-##### 2. Inicializace prohlížeče
-
-Načtěte zdrojový dokument pomocí GroupDocs.Viewer:
-
+### 2. Inicializujte Viewer s vaším projektovým souborem
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
-    // Pokračujte v rendrování
+    // Continue with rendering steps
 }
 ```
 
-**Proč tento krok?**Načtení dokumentu inicializuje prohlížeč a připraví ho k vykreslení.
+*Proč?* Načtení dokumentu připraví interní parser a zpřístupní metadata specifická pro projekt.
 
-##### 3. Získání informací o zobrazení
-
-Získejte konkrétní informace o zobrazení přizpůsobené dokumentům projektového řízení:
-
+### 3. Získejte informace o zobrazení pro projektové soubory
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
 import com.groupdocs.viewer.results.ProjectManagementViewInfo;
@@ -131,12 +115,9 @@ ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ProjectManagementViewInfo viewInfo = (ProjectManagementViewInfo) viewer.getViewInfo(viewInfoOptions);
 ```
 
-**Proč tento krok?**Získání informací o pohledu specifickém pro projekt je klíčové pro nastavení správných časových intervalů.
+*Proč?* `ProjectManagementViewInfo` poskytuje počáteční a koncová data plánu, která později použijete k omezení rozsahu vykreslování.
 
-##### 4. Nastavení možností vykreslování HTML
-
-Nakonfigurujte možnosti pro vykreslení dokumentu ve formátu HTML s vloženými zdroji:
-
+### 4. Nakonfigurujte možnosti HTML vykreslování (Generovat HTML z projektu)
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
@@ -145,70 +126,66 @@ viewOptions.getProjectManagementOptions().setStartDate(viewInfo.getStartDate());
 viewOptions.getProjectManagementOptions().setEndDate(viewInfo.getEndDate());
 ```
 
-**Proč tento krok?**Nastavením data zahájení a ukončení se zajistí, že se zobrazí pouze relevantní části dokumentu projektu.
+*Proč?* Nastavení `StartDate` a `EndDate` říká GroupDocs, aby **generoval HTML z projektu** pouze v tomto časovém okně.
 
-##### 5. Vykreslení dokumentu projektu
-
-Nakonec spusťte proces vykreslování:
-
+### 5. Spusťte proces vykreslování
 ```java
 viewer.view(viewOptions);
 ```
 
-**Proč tento krok?**Renderování transformuje vaši konfiguraci do vizuálního výstupu ve formátu HTML.
+*Proč?* Toto volání vytvoří sérii samostatných HTML stránek, které představují vybraný časový úsek vašeho projektového plánu.
 
-#### Tipy pro řešení problémů:
-- Ujistěte se, že jsou všechny cesty k souborům správně zadány.
-- Zkontrolujte, zda je typ dokumentu podporován nástrojem GroupDocs.Viewer pro funkce správy projektů.
+## Časté problémy a řešení
+- **Nesprávné cesty k souborům** – Zkontrolujte, že existuje jak zdrojový soubor `.mpp`, tak výstupní adresář.  
+- **Nepodporovaný typ souboru** – Ujistěte se, že dokument je ve podporovaném formátu Project (např. `.mpp`, `.mpt`).  
+- **Chyby licence** – Zkušební licence může ukládat omezení vykreslování; přepněte na plnou licenci pro neomezené použití.  
 
 ## Praktické aplikace
+1. **Project Timeline Analysis** – Zobrazte stakeholderům pouze aktuální fázi.  
+2. **Automated Reporting** – Generujte časově omezené HTML zprávy pro týdenní aktualizace stavu.  
+3. **Integration with Dashboards** – Vložte vykreslené stránky do BI nástrojů nebo vlastních portálů.  
+4. **Archival** – Uložte web‑přátelskou snímkovou podobu projektového plánu pro budoucí referenci.  
 
-1. **Analýza časového harmonogramu projektu**Vizualizujte konkrétní fáze vašich projektů pro analýzu jejich průběhu a alokace zdrojů.
-2. **Hlášení**Generujte časově ohraničené zprávy pro zúčastněné strany s uvedením splněných milníků.
-3. **Integrace s nástroji pro řízení projektů**Vylepšete stávající nástroje o vlastní zobrazení časové osy pomocí vykreslených dokumentů.
-4. **Archivace dat**Archivujte projektovou dokumentaci ve webovém formátu pro snadný přístup a sdílení.
-
-## Úvahy o výkonu
-
-Optimalizace výkonu při vykreslování velkých dokumentů:
-- Používejte vložené zdroje k udržení HTML souborů v soběstačnosti.
-- Sledujte využití paměti, zejména při práci s rozsáhlými časovými osami nebo datovými sadami.
-- Implementujte efektivní postupy pro práci se soubory ve vaší aplikaci Java.
+## Tipy pro výkon
+- Použijte možnost *embedded resources* k tomu, aby každá HTML stránka byla samostatná, což snižuje počet HTTP požadavků.  
+- U velmi velkých projektů zvažte vykreslování v menších časových úsecích, aby se snížila spotřeba paměti.  
+- Po jejich poskytnutí odstraňte dočasné soubory, aby nedošlo k zaplnění disku.  
 
 ## Závěr
+Nyní víte **jak používat GroupDocs** Viewer k vykreslení projektových dokumentů v konkrétním časovém intervalu a **generovat HTML z projektových** dat v Javě. Tato funkce zjednodušuje vizualizaci časových os, zlepšuje efektivitu reportování a hladce se integruje s moderními webovými aplikacemi.
 
-Dodržováním tohoto průvodce nyní získáte dovednosti pro vykreslování projektových dokumentů v určených časových intervalech pomocí nástroje GroupDocs.Viewer pro Javu. Tato funkce může výrazně vylepšit vaše procesy správy dokumentů a reportingu.
+### Další kroky
+- Prozkoumejte další funkce Vieweru, jako je vodoznak, ochrana heslem nebo vlastní stylování CSS.  
+- Spojte tento vykreslovací pipeline s REST API pro poskytování požadovaných zobrazení časových os.  
 
-### Další kroky:
-Prozkoumejte další funkce GroupDocs.Viewer, jako je vodoznak nebo nastavení zabezpečení, a dále si přizpůsobte svá řešení pro vykreslování dokumentů.
+## Často kladené otázky
 
-### Výzva k akci
-Vyzkoušejte si toto řešení implementovat ve svém projektu ještě dnes a uvidíte, jak vám zefektivní proces dokumentace!
+**Q: Jaké formáty souborů GroupDocs.Viewer podporuje?**  
+A: GroupDocs.Viewer podporuje širokou škálu formátů včetně Microsoft Project (MPP), PDF, Word, Excel, PowerPoint a mnoho dalších.
 
-## Sekce Často kladených otázek
+**Q: Jak začít s bezplatnou zkušební verzí GroupDocs.Viewer?**  
+A: Zkušební verzi můžete stáhnout z [zde](https://releases.groupdocs.com/viewer/java/).
 
-**1. Jaké formáty souborů podporuje GroupDocs.Viewer?**
-GroupDocs.Viewer podporuje širokou škálu typů dokumentů, včetně Microsoft Project (MPP), PDF, Word, Excel a dalších.
+**Q: Mohu vykreslovat dokumenty bez vkládání zdrojů?**  
+A: Ano, můžete zvolit jinou možnost HTML zobrazení, která odkazuje na externí zdroje místo jejich vkládání.
 
-**2. Jak mohu začít s bezplatnou zkušební verzí GroupDocs.Viewer?**
-Zkušební verzi si můžete stáhnout z [zde](https://releases.groupdocs.com/viewer/java/).
+**Q: Co když je můj dokument příliš velký pro vykreslení?**  
+A: Zvažte rozdělení dokumentu na menší sekce nebo vykreslení pouze požadovaného časového rozsahu, jak je ukázáno výše.
 
-**3. Mohu vykreslit dokumenty bez vkládání zdrojů?**
-Ano, můžete si zvolit vykreslování dokumentů bez vložených zdrojů pomocí různých možností zobrazení HTML.
-
-**4. Co když je můj dokument pro vykreslení příliš velký?**
-Zvažte optimalizaci dokumentu nebo jeho rozdělení na menší části před vykreslením.
-
-**5. Jak mám řešit chyby při vykreslování?**
-Ujistěte se, že jsou všechny konfigurace správné, a zkontrolujte dokumentaci GroupDocs, kde najdete techniky ošetření chyb.
+**Q: Jak řešit chyby při vykreslování?**  
+A: Ověřte všechna nastavení konfigurace, ujistěte se, že máte platnou licenci, a konzultujte dokumentaci GroupDocs pro podrobné kódy chyb.
 
 ## Zdroje
-- **Dokumentace**: [Dokumentace k prohlížeči GroupDocs v Javě](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API**: [Referenční příručka k rozhraní GroupDocs API](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout**: [Soubory ke stažení GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Nákup**: [Koupit licenci GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Vyzkoušejte bezplatnou verzi](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Získejte dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentace**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Reference API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Stáhnout**: [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Nákup**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Bezplatná zkušební verze**: [Try the Free Version](https://releases.groupdocs.com/viewer/java/)  
+- **Dočasná licence**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Podpora**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-S touto příručkou jste připraveni implementovat vykreslování časových intervalů ve vašich projektech pomocí GroupDocs.Viewer pro Javu.
+---
+
+**Poslední aktualizace:** 2026-01-15  
+**Testováno s:** GroupDocs.Viewer 25.2 pro Java  
+**Autor:** GroupDocs

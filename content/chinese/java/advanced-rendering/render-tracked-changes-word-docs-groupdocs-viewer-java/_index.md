@@ -1,39 +1,44 @@
 ---
-"date": "2025-04-24"
-"description": "通过本分步指南，了解如何使用 GroupDocs.Viewer for Java 高效地呈现 Word 文档中的修订追踪。非常适合集成文档管理系统的开发人员。"
-"title": "如何使用 GroupDocs.Viewer for Java 在 Word 文档中呈现跟踪的修订——综合指南"
-"url": "/zh/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: 了解如何使用 GroupDocs.Viewer for Java 渲染 Word 的修订痕迹并查看 Word 文件中的文档修订。请遵循本面向开发者的逐步指南。
+keywords:
+- render tracked changes Word docs GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- Java document rendering
+title: 使用 GroupDocs.Viewer for Java 渲染 Word 文档中的修订更改
 type: docs
+url: /zh/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
+weight: 1
 ---
-# 使用 GroupDocs.Viewer for Java 在 Word 文档中呈现跟踪的更改
 
-## 介绍
+# 在 Java 中使用 GroupDocs.Viewer 渲染 Word 文档的修订更改
 
-还在为在 Java 应用程序中显示 Word 文档中的修订追踪而苦恼吗？无论您是在开发文档管理系统，还是需要可视化编辑，无缝呈现这些更改都可能颇具挑战性。输入 **GroupDocs.Viewer for Java**，这个强大的库允许您将带有跟踪更改的 Word 文档直接呈现为 HTML，从而简化了此过程。
+如果您需要在 Java 应用程序中**渲染 Word 修订更改**，那么您来对地方了。在本指南中，我们将展示如何显示 Word 文件中出现的每个修订、插入和删除，并将其转换为干净、可导航的 HTML。无论您是构建文档审阅门户、法律案件管理系统，还是任何必须**查看 Word 文档修订**的解决方案，本教程将带您完整了解整个过程——从环境设置到最终渲染。
 
-在本教程中，我们将逐步指导您如何实现此功能，重点介绍设置环境、配置选项以及渲染文档等关键方面。完成本指南后，您将能够有效地集成 **GroupDocs.Viewer for Java** 到您的项目中以实现无缝文档查看。
+![Render Tracked Changes in Word Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-### 您将学到什么：
-- 为 Java 设置 GroupDocs.Viewer
-- 配置和实施跟踪变更渲染
-- 现实场景中的实际应用
-- 利用最佳实践优化性能
+## 快速答案
+- **“渲染 Word 修订更改”是什么意思？** 它将 Word 文件的修订标记转换为可视化的 HTML 表示。  
+- **哪个库处理此功能？** GroupDocs.Viewer for Java。  
+- **我需要许可证吗？** 免费试用可用于评估；完整许可证可消除所有限制。  
+- **需要哪个 Java 版本？** Java 8 或更高版本。  
+- **我可以禁用修订更改的渲染吗？** 可以——在视图选项中设置 `setRenderTrackedChanges(false)`。
 
-现在让我们转到深入实施之前所需的先决条件。
+## 什么是“渲染 Word 修订更改”？
+渲染 Word 修订更改是指获取存储在 `.docx` 文件中的修订数据（插入、删除、批注等），并生成一种可视化的格式——通常为 HTML——在其中这些更改会被直观地高亮显示。这样最终用户无需打开 Microsoft Word 即可准确看到哪些内容被修改。
 
-## 先决条件
+## 为什么使用 GroupDocs.Viewer 来查看 Word 文档修订？
+GroupDocs.Viewer for Java 抽象了底层的 OpenXML 处理，并提供一次 API 调用即可生成 HTML、PDF 或图像。它还开箱即支持**查看 Word 文档修订**，保留样式、嵌入资源以及更改跟踪。
 
-开始之前，请确保您已准备好以下内容：
-- **所需库**：GroupDocs.Viewer for Java 库版本 25.2 或更高版本。
-- **环境设置**：对 Java 开发有基本的了解，并熟悉 Maven 的依赖管理。
-- **知识前提**：在 Java 中处理文件路径和进行 IO 操作的基本知识。
+## 前提条件
+- **GroupDocs.Viewer for Java** 库版本 25.2 或更高。  
+- 用于依赖管理的 Maven。  
+- 基本的 Java 开发环境（IDE、JDK 8+）。  
 
-## 为 Java 设置 GroupDocs.Viewer
+## 设置 GroupDocs.Viewer for Java
 
-首先，你需要设置你的项目，使其包含必要的依赖项。以下是使用 Maven 的操作方法：
-
-**Maven配置**
+### Maven 配置
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -52,56 +57,40 @@ type: docs
 </dependencies>
 ```
 
-### 许可证获取
+### 获取许可证
+先使用免费试用或申请临时评估许可证。当您准备好投入生产时，购买完整许可证以解锁所有功能。
 
-为了充分利用 GroupDocs.Viewer，您可以先免费试用，或获取临时许可证进行评估。如果该库满足您的需求，请考虑购买完整许可证以消除所有限制。
+### 基本初始化
+Import the required classes in your Java code and prepare file paths for input and output.
 
-### 基本初始化和设置
+## 如何在 Word 文档中渲染修订更改
 
-添加依赖项后，请确保正确设置开发环境。您需要在 Java 代码中导入必要的包并正确配置文件路径。
+下面是逐步演练，展示您需要的完整代码。代码块保持原样未修改。
 
-## 实施指南
-
-让我们深入研究如何使用 GroupDocs.Viewer for Java 实现跟踪更改渲染。
-
-### 渲染跟踪变更概述
-
-此功能允许您将包含修订的 Word 文档直接渲染为 HTML，并保留所有修改以供查看。此功能对于需要文档审阅和协作功能的应用程序至关重要。
-
-#### 步骤 1：定义输出目录路径
-
-首先指定渲染文件的保存位置：
+### 步骤 1：定义输出目录路径
+Create a folder where the rendered HTML pages will be saved.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-此步骤设置一个专用目录来存储您的 HTML 输出，确保有序存储您的渲染文档。
-
-#### 步骤2：指定保存每页的格式
-
-确定文档每一页的保存方式：
+### 步骤 2：指定每页保存的格式
+Set a naming pattern for each generated HTML file.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-此模板可确保文档的每一页都保存有唯一的标识符，方便导航和参考。
-
-#### 步骤 3：配置视图选项
-
-设置选项以在 HTML 中包含嵌入资源并启用跟踪更改的呈现：
+### 步骤 3：配置视图选项
+Enable embedded resources and turn on tracked‑changes rendering.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-在这里，我们配置 `HtmlViewOptions` 将图片或样式表等资源直接嵌入到 HTML 文件中。启用 `setRenderTrackedChanges(true)` 确保呈现所有跟踪的更改。
-
-#### 步骤 4：创建查看器实例
-
-最后，实例化 `Viewer` 分类并呈现您的文档：
+### 步骤 4：创建 Viewer 实例并渲染
+Load the Word document that contains tracked changes and generate the HTML output.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -109,57 +98,46 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-这 `try-with-resources` 语句确保资源得到有效管理。 `Viewer` 实例处理 Word 文件，应用所有配置的视图选项。
-
-### 故障排除提示
-- 确保输入和输出目录的路径设置正确。
-- 如果渲染失败，请验证文档与 GroupDocs.Viewer for Java 的兼容性。
-- 检查您的项目依赖项中是否包含正确版本的库。
+## 常见问题及解决方案
+- **文件路径不正确** – 仔细检查 `YOUR_OUTPUT_DIRECTORY` 和 `YOUR_DOCUMENT_DIRECTORY` 是否指向现有文件夹。  
+- **不支持的文档格式** – 确认文件为 GroupDocs.Viewer 支持的 `.docx` 或 `.doc`。  
+- **缺少许可证** – 没有有效许可证时，库可能会限制渲染功能。
 
 ## 实际应用
-
-渲染跟踪的变更有几种实际应用：
-1. **文档审查系统**：通过清晰地显示修订来增强协作编辑。
-2. **法律文件管理**：通过强调修订来促进审查过程。
-3. **学术与研究论文**：有效地跟踪多位作者的贡献和编辑。
-
-与 CMS 或文档存储解决方案等其他系统的集成可以进一步增强功能，为管理 Word 文档提供全面的解决方案。
+1. **文档审阅系统** – 向审阅者准确展示添加或删除的内容。  
+2. **法律案件管理** – 突出合同或诉状中的修改。  
+3. **学术协作** – 可视化多位作者的贡献。
 
 ## 性能考虑
-
-为确保最佳性能：
-- 限制同时处理的文档数量以有效管理内存使用情况。
-- 使用高效的文件路径和目录结构来最小化 I/O 操作。
-- 定期更新到 Java 版 GroupDocs.Viewer 的最新版本，以获得优化和错误修复。
-
-遵循这些最佳实践将有助于维持顺畅、高效的文档呈现流程。
+- 并发处理的文档数量应受限，以保持内存使用低。  
+- 使用高效的目录结构以降低 I/O 开销。  
+- 保持库的最新版本；新版包含性能优化。
 
 ## 结论
+现在，您已经拥有使用 GroupDocs.Viewer for Java **渲染 Word 修订更改** 和 **查看 Word 文档修订** 的完整、可投入生产的方法。将这些步骤集成到您的应用程序中，即可为用户提供强大且交互式的文档审阅体验。
 
-现在，您已经学习了如何使用 **GroupDocs.Viewer for Java**通过设置您的环境、配置视图选项以及了解实际应用，您就可以将此功能集成到您的项目中。
+## FAQ 部分
 
-接下来，考虑探索 GroupDocs.Viewer 的其他功能或将其与其他工具集成以增强文档管理功能。
-
-## 常见问题解答部分
-
-1. **所需的最低 Java 版本是多少？**  
-   通常建议使用 Java 8 或更高版本，以便与 GroupDocs.Viewer 等现代库兼容。
-2. **我可以呈现没有修订记录的文档吗？**  
-   是的，只需禁用 `setRenderTrackedChanges(true)` 在您的配置选项中。
-3. **如何有效地处理大型文档？**  
-   考虑将大型文档分解为较小的部分或使用分页技术来有效地管理资源使用情况。
-4. **GroupDocs.Viewer 的许可选项有哪些？**  
-   您可以根据需要开始免费试用、选择临时许可证或购买完整许可证。
-5. **如果我遇到问题，可以获得支持吗？**  
-   是的，您可以通过 GroupDocs 论坛和提供的文档资源获得支持。
+1. **需要的最低 Java 版本是什么？**  
+   通常建议使用 Java 8 或更高版本，以兼容像 GroupDocs.Viewer 这样的现代库。  
+2. **我可以在不渲染修订更改的情况下渲染文档吗？**  
+   可以，只需在配置选项中将 `setRenderTrackedChanges(true)` 关闭即可。  
+3. **如何高效处理大文档？**  
+   可以将大文件拆分为更小的部分，或使用分页技术来有效管理资源使用。  
+4. **GroupDocs.Viewer 的授权选项有哪些？**  
+   您可以先使用免费试用，选择临时评估许可证，或根据项目需求购买完整许可证。  
+5. **如果遇到问题，是否有支持？**  
+   有，您可以通过 GroupDocs 论坛和官方文档资源获取支持。
 
 ## 资源
-- [文档](https://docs.groupdocs.com/viewer/java/)
-- [API 参考](https://reference.groupdocs.com/viewer/java/)
-- [下载](https://releases.groupdocs.com/viewer/java/)
-- [购买](https://purchase.groupdocs.com/buy)
-- [免费试用](https://releases.groupdocs.com/viewer/java/)
-- [临时执照](https://purchase.groupdocs.com/temporary-license/)
-- [支持](https://forum.groupdocs.com/c/viewer/9)
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Purchase](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support](https://forum.groupdocs.com/c/viewer/9)
 
-我们希望本教程能够帮助您使用以下方法有效地呈现带有修订跟踪的 Word 文档 **GroupDocs.Viewer for Java**编码愉快！
+**最后更新：** 2026-01-15  
+**测试环境：** GroupDocs.Viewer for Java 25.2  
+**作者：** GroupDocs

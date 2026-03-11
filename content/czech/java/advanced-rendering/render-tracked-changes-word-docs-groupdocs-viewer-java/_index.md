@@ -1,39 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se v tomto podrobném návodu, jak efektivně vykreslovat sledované změny v dokumentech Wordu pomocí nástroje GroupDocs.Viewer pro Javu. Ideální pro vývojáře integrující systémy pro správu dokumentů."
-"title": "Jak vykreslit sledované změny v dokumentech Wordu pomocí GroupDocs.Viewer pro Javu – Komplexní průvodce"
-"url": "/cs/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: Naučte se, jak vykreslovat sledované změny ve Wordu a zobrazovat revize
+  dokumentů Word v souborech Word pomocí GroupDocs.Viewer pro Javu. Postupujte podle
+  tohoto krok‑za‑krokem průvodce pro vývojáře.
+keywords:
+- render tracked changes Word docs GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- Java document rendering
+title: Zobrazte sledované změny ve Wordu v dokumentech Word pomocí GroupDocs.Viewer
+  pro Javu
 type: docs
+url: /cs/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
+weight: 1
 ---
-# Vykreslování sledovaných změn v dokumentech Wordu pomocí GroupDocs.Viewer pro Javu
 
-## Zavedení
+# Vykreslení sledovaných změn ve Word dokumentech pomocí GroupDocs.Viewer pro Java
 
-Máte potíže se zobrazením sledovaných změn v dokumentech Wordu v aplikacích Java? Ať už vyvíjíte systém pro správu dokumentů nebo potřebujete vizualizovat úpravy, bezproblémové vykreslení těchto změn může být náročné. Zadejte **GroupDocs.Viewer pro Javu**, robustní knihovna, která tento proces zjednodušuje tím, že umožňuje vykreslovat dokumenty Wordu se sledovanými změnami přímo do HTML.
+Pokud potřebujete **render word tracked changes** ve své Java aplikaci, jste na správném místě. V tomto průvodci vám ukážeme, jak zobrazit každou revizi, vložení a smazání, které se vyskytují v souboru Word, a převést je na čisté, procházetelné HTML. Ať už vytváříte portál pro revizi dokumentů, systém pro správu právních případů nebo jakékoli řešení, které musí **view word document revisions**, tento tutoriál vás provede celým procesem – od nastavení prostředí až po finální vykreslení.
 
-tomto tutoriálu vás krok za krokem provedeme implementací této funkce, přičemž se zaměříme na klíčové aspekty, jako je nastavení prostředí, konfigurace možností a vykreslování dokumentu. Po prostudování této příručky budete schopni efektivně integrovat... **GroupDocs.Viewer pro Javu** do vašeho projektu pro bezproblémové prohlížení dokumentů.
+![Render Tracked Changes in Word Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-### Co se naučíte:
-- Nastavení GroupDocs.Vieweru pro Javu
-- Konfigurace a implementace vykreslování sledovaných změn
-- Praktické aplikace v reálných situacích
-- Optimalizace výkonu pomocí osvědčených postupů
+## Rychlé odpovědi
+- **Co znamená “render word tracked changes”?** Převádí značky revizí v souboru Word do vizuální HTML reprezentace.  
+- **Která knihovna to zpracovává?** GroupDocs.Viewer for Java.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; plná licence odstraňuje všechna omezení.  
+- **Jaká verze Javy je požadována?** Java 8 nebo novější.  
+- **Mohu zakázat vykreslování sledovaných změn?** Ano—nastavte `setRenderTrackedChanges(false)` v možnostech zobrazení.
 
-Pojďme se nyní podívat na předpoklady, které potřebujete, než se pustíme do této implementace.
+## Co je “render word tracked changes”?
+Vykreslení sledovaných změn ve Wordu znamená převzetí dat revizí uložených v souboru `.docx` (vložení, smazání, komentáře atd.) a vytvoření zobrazitelného formátu – obvykle HTML – kde jsou tyto změny vizuálně zvýrazněny. To umožňuje koncovým uživatelům přesně vidět, co bylo změněno, aniž by museli otevírat Microsoft Word.
+
+## Proč použít GroupDocs.Viewer k prohlížení revizí Word dokumentů?
+GroupDocs.Viewer pro Java abstrahuje nízkoúrovňové zpracování OpenXML a poskytuje jediný API volání pro generování HTML, PDF nebo obrázků. Také podporuje **view word document revisions** ihned po instalaci, zachovává stylování, vložené zdroje a sledování změn.
 
 ## Předpoklady
+- **GroupDocs.Viewer for Java** knihovna verze 25.2 nebo novější.  
+- Maven pro správu závislostí.  
+- Základní vývojové prostředí Java (IDE, JDK 8+).  
 
-Než začnete, ujistěte se, že máte následující:
-- **Požadované knihovny**GroupDocs.Viewer pro knihovnu Java verze 25.2 nebo novější.
-- **Nastavení prostředí**Základní znalost vývoje v Javě a znalost Mavenu pro správu závislostí.
-- **Předpoklady znalostí**Základní znalost práce s cestami k souborům v Javě a práce s IO operacemi.
+## NastaveníDocs.Viewer pro Java
 
-## Nastavení GroupDocs.Viewer pro Javu
-
-Pro začátek budete muset nastavit svůj projekt tak, aby zahrnoval potřebné závislosti. Zde je návod, jak to udělat pomocí Mavenu:
-
-**Konfigurace Mavenu**
+### Konfigurace Maven
+Přidejte repozitář GroupDocs a závislost do svého `pom.xml`:
 
 ```xml
 <repositories>
@@ -53,55 +61,39 @@ Pro začátek budete muset nastavit svůj projekt tak, aby zahrnoval potřebné 
 ```
 
 ### Získání licence
+Začněte s bezplatnou zkušební verzí nebo požádejte o dočasnou evaluační licenci. Až budete připraveni na produkci, zakupte plnou licenci pro odemknutí všech funkcí.
 
-Chcete-li plně využít GroupDocs.Viewer, můžete začít s bezplatnou zkušební verzí nebo si pořídit dočasnou licenci pro účely hodnocení. Pokud knihovna splňuje vaše potřeby, zvažte zakoupení plné licence, abyste odstranili veškerá omezení.
+### Základní inicializace
+Importujte požadované třídy ve svém Java kódu a připravte cesty k souborům pro vstup a výstup.
 
-### Základní inicializace a nastavení
+## Jak vykreslit sledované změny ve Word dokumentech
 
-Po přidání závislosti se ujistěte, že je vaše vývojové prostředí správně nastaveno. Budete muset importovat potřebné balíčky a správně nakonfigurovat cesty k souborům v kódu Java.
+Níže je krok‑za‑krokem průvodce, který odráží přesný kód, který budete potřebovat. Kódové bloky jsou zachovány beze změny z původního tutoriálu.
 
-## Průvodce implementací
-
-Pojďme se ponořit do implementace vykreslování sledovaných změn pomocí GroupDocs.Viewer pro Javu.
-
-### Přehled vykreslování sledovaných změn
-
-Tato funkce umožňuje vykreslovat dokumenty Wordu, které obsahují sledované změny, přímo jako HTML a zachovat všechny úpravy pro účely zobrazení. Tato funkce je nezbytná pro aplikace, které vyžadují funkce pro kontrolu dokumentů a spolupráci.
-
-#### Krok 1: Definování cesty k výstupnímu adresáři
-
-Začněte určením místa, kam chcete uložit vykreslené soubory:
+### Krok 1: Definujte cestu výstupního adresáře
+Vytvořte složku, kde budou uloženy vykreslené HTML stránky.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-Tento krok nastaví vyhrazený adresář pro ukládání vašich HTML výstupů, čímž zajistí organizované uložení vašich vykreslených dokumentů.
-
-#### Krok 2: Určete formát pro uložení každé stránky
-
-Určete, jak bude každá stránka dokumentu uložena:
+### Krok 2: Určete formát pro ukládání každé stránky
+Nastavte vzor pojmenování pro každý vygenerovaný HTML soubor.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-Tato šablona zajišťuje, že každá stránka vašeho dokumentu je uložena s jedinečným identifikátorem, což usnadňuje navigaci a vyhledávání.
-
-#### Krok 3: Konfigurace možností zobrazení
-
-Nastavte možnosti pro zahrnutí vložených zdrojů do HTML a povolení vykreslování sledovaných změn:
+### Krok 3: Nakonfigurujte možnosti zobrazení
+Povolte vložené zdroje a zapněte vykreslování sledovaných změn.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-Zde konfigurujeme `HtmlViewOptions` vkládat zdroje, jako jsou obrázky nebo stylové listy, přímo do souborů HTML. Povolení `setRenderTrackedChanges(true)` zajišťuje, že se všechny sledované změny vykreslí.
-
-#### Krok 4: Vytvoření instance prohlížeče
-
-Nakonec vytvořte instanci `Viewer` třída a vykreslení dokumentu:
+### Krok 4: Vytvořte instanci Viewer a vykreslete
+Načtěte Word dokument, který obsahuje sledované změny, a vygenerujte HTML výstup.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -109,57 +101,48 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-Ten/Ta/To `try-with-resources` Prohlášení zajišťuje efektivní správu zdrojů. `Viewer` Instance zpracuje soubor Word a použije všechny nakonfigurované možnosti zobrazení.
-
-### Tipy pro řešení problémů
-- Ujistěte se, že cesty ke vstupním a výstupním adresářům jsou správně nastaveny.
-- Pokud se vykreslování nezdaří, ověřte kompatibilitu dokumentu pomocí nástroje GroupDocs.Viewer pro Javu.
-- Zkontrolujte, zda je v závislostech projektu zahrnuta správná verze knihovny.
+## Časté problémy a řešení
+- **Nesprávné cesty k souborům** – Zkontrolujte, že `YOUR_OUTPUT_DIRECTORY` a `YOUR_DOCUMENT_DIRECTORY` ukazují na existující složky.  
+- **Nepodporovaný formát dokumentu** – Ujistěte se, že soubor je `.docx` nebo `.doc`, který GroupDocs.Viewer podporuje.  
+- **Chybějící licence** – Bez platné licence může knihovna omezovat možnosti vykreslování.
 
 ## Praktické aplikace
-
-Vykreslování sledovaných změn má několik reálných aplikací:
-1. **Systémy pro kontrolu dokumentů**: Vylepšete spolupráci při úpravách jasným zobrazením revizí.
-2. **Správa právních dokumentů**Usnadnit procesy přezkumu zdůrazněním pozměňovacích návrhů.
-3. **Akademické a výzkumné práce**Efektivně sledujte příspěvky a úpravy od více autorů.
-
-Integrace s jinými systémy, jako jsou CMS nebo řešení pro ukládání dokumentů, může dále vylepšit funkčnost a poskytnout komplexní řešení pro správu dokumentů Word.
+1. **Systémy pro revizi dokumentů** – Ukážete recenzentům přesně, co bylo přidáno nebo odebráno.  
+2. **Správa právních případů** – Zvýrazněte změny ve smlouvách nebo podáních.  
+3. **Akademická spolupráce** – Vizualizujte příspěvky od více autorů.
 
 ## Úvahy o výkonu
-
-Pro zajištění optimálního výkonu:
-- Omezte počet dokumentů zpracovávaných současně, abyste efektivně spravovali využití paměti.
-- Používejte efektivní cesty k souborům a adresářové struktury pro minimalizaci I/O operací.
-- Pravidelně aktualizujte na nejnovější verzi GroupDocs.Viewer pro Javu, abyste mohli využívat optimalizací a oprav chyb.
-
-Dodržování těchto osvědčených postupů pomůže udržet hladký a efektivní proces vykreslování dokumentů.
+- Zpracovávejte omezený počet dokumentů současně, aby byl nízký spotřeba paměti.  
+- Používejte efektivní strukturu adresářů ke snížení I/O zátěže.  
+- Udržujte knihovnu aktuální; novější verze obsahují optimalizace výkonu.
 
 ## Závěr
+Nyní máte kompletní, připravenou metodu pro **render word tracked changes** a **view word document revisions** pomocí GroupDocs.Viewer pro Java. Integrujte tyto kroky do své aplikace a poskytnete uživatelům výkonný, interaktivní zážitek z revize dokumentů.
 
-Nyní jste se naučili, jak implementovat vykreslování sledovaných změn v dokumentech Wordu pomocí **GroupDocs.Viewer pro Javu**Nastavením prostředí, konfigurací možností zobrazení a pochopením praktických aplikací budete dobře vybaveni k integraci této funkce do svých projektů.
+## Sekce FAQ
 
-Jako další kroky zvažte prozkoumání dalších funkcí GroupDocs.Viewer nebo jeho integraci s dalšími nástroji pro vylepšené možnosti správy dokumentů.
-
-## Sekce Často kladených otázek
-
-1. **Jaká je minimální požadovaná verze Javy?**  
-   Pro kompatibilitu s moderními knihovnami, jako je GroupDocs.Viewer, se obecně doporučuje Java 8 nebo novější.
-2. **Mohu vykreslit dokumenty bez sledovaných změn?**  
-   Ano, jednoduše deaktivovat `setRenderTrackedChanges(true)` ve vašich možnostech konfigurace.
+1. **Jaká je minimální verze Javy požadovaná?**  
+   Java 8 nebo novější je obecně doporučována pro kompatibilitu s moderními knihovnami jako GroupDocs.Viewer.  
+2. **Mohu vykreslovat dokumenty bez sledovaných změn?**  
+   Ano, jednoduše vypněte `setRenderTrackedChanges(true)` ve svých konfiguračních možnostech.  
 3. **Jak efektivně zpracovat velké dokumenty?**  
-   Zvažte rozdělení velkých dokumentů na menší části nebo použití technik stránkování pro efektivní správu využití zdrojů.
-4. **Jaké jsou možnosti licencování pro GroupDocs.Viewer?**  
-   Můžete začít s bezplatnou zkušební verzí, zvolit si dočasnou licenci nebo si zakoupit plnou licenci podle svých potřeb.
+   Zvažte rozdělení velkých souborů na menší sekce nebo použití technik stránkování pro efektivní správu využití zdrojů.  
+4. **Jaké jsou licenční možnosti pro GroupDocs.Viewer?**  
+   Můžete začít s bezplatnou zkušební verzí, zvolit dočasnou evaluační licenci nebo zakoupit plnou licenci podle potřeb vašeho projektu.  
 5. **Je k dispozici podpora, pokud narazím na problémy?**  
-   Ano, podporu můžete získat prostřednictvím fóra GroupDocs a poskytnutých dokumentačních zdrojů.
+   Ano, můžete získat podporu prostřednictvím fóra GroupDocs a oficiálních dokumentačních zdrojů.
 
 ## Zdroje
 - [Dokumentace](https://docs.groupdocs.com/viewer/java/)
-- [Referenční informace k API](https://reference.groupdocs.com/viewer/java/)
+- [Reference API](https://reference.groupdocs.com/viewer/java/)
 - [Stáhnout](https://releases.groupdocs.com/viewer/java/)
-- [Nákup](https://purchase.groupdocs.com/buy)
+- [Koupit](https://purchase.groupdocs.com/buy)
 - [Bezplatná zkušební verze](https://releases.groupdocs.com/viewer/java/)
 - [Dočasná licence](https://purchase.groupdocs.com/temporary-license/)
 - [Podpora](https://forum.groupdocs.com/c/viewer/9)
 
-Doufáme, že vám tento tutoriál pomohl efektivně vykreslovat dokumenty Word se sledovanými změnami pomocí **GroupDocs.Viewer pro Javu**Šťastné programování!
+---
+
+**Poslední aktualizace:** 2026-01-15  
+**Testováno s:** GroupDocs.Viewer for Java 25.2  
+**Autor:** GroupDocs

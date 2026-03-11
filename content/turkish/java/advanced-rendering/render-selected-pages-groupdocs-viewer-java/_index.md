@@ -1,37 +1,58 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak belgelerden belirli sayfaları verimli bir şekilde nasıl işleyeceğiniz hakkında bilgi edinin. Bu kılavuz, kurulum, yapılandırma ve pratik entegrasyonu kapsar."
-"title": "Java için GroupDocs.Viewer Kullanılarak Bir Belgenin Seçili Sayfaları Nasıl Oluşturulur"
-"url": "/tr/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: GroupDocs.Viewer for Java kullanarak bir belgeden sayfaları nasıl render
+  edeceğinizi ve HTML oluşturacağınızı öğrenin. Bu kılavuz, kurulum, yapılandırma
+  ve pratik entegrasyonu kapsar.
+keywords:
+- render selected pages GroupDocs.Viewer Java
+- GroupDocs Viewer for Java setup
+- render HTML with embedded resources
+title: GroupDocs.Viewer for Java ile Sayfaları Nasıl Render Edersiniz
 type: docs
+url: /tr/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/
+weight: 1
 ---
-# Java için GroupDocs.Viewer ile Belirli Sayfaların Nasıl Oluşturulacağı
 
-## giriiş
+# GroupDocs.Viewer for Java ile Sayfaları Render Etme
 
-Web uygulamanızda bir belgenin yalnızca belirli bölümlerini görüntülemek zor olabilir. Verimli veri sunumuna yönelik artan ihtiyaçla birlikte, kullanıcıları bunaltmadan seçili sayfaları işlemek esastır. **Java için GroupDocs.Viewer** belirli bölümlerin gömülü kaynaklarla HTML olarak görüntülenmesine izin vererek bu görevi basitleştirir. Bu eğitim, GroupDocs.Viewer kullanarak seçili sayfaları işlemenize rehberlik edecektir.
+Belgenin yalnızca belirli bölümlerini web uygulamanızda göstermek zorlayıcı olabilir. Bu öğreticide **sayfaları nasıl render edeceğinizi** verimli bir şekilde keşfedecek, bunları UI'nıza doğrudan gömebileceğiniz kendi içinde bütünleşik HTML dosyalarına dönüştüreceksiniz. Bir sözleşme alıntısını ya da bir ders kitabının tek bir bölümünü göstermeniz gerekse, aşağıdaki adımlar GroupDocs.Viewer for Java kullanarak tam süreci size anlatıyor.
 
-### Ne Öğreneceksiniz:
-- Java ortamınızda GroupDocs.Viewer'ı kurma
-- Viewer API'sini kullanarak belirli belge sayfalarını oluşturma
-- En iyi görüntüleme için HTML görünüm seçeneklerini yapılandırma
-- Pratik kullanım örnekleri ve entegrasyon senaryoları
+Uygulamanızı geliştirmeye hazır mısınız? Öncelikle kurulumunuzun doğru olduğundan emin olarak başlayalım.
 
-Uygulamanızı geliştirmeye hazır mısınız? Kurulumunuzun doğru olduğundan emin olarak başlayalım.
+## Hızlı Yanıtlar
+- **“render pages” ne anlama geliyor?** Seçili belge sayfalarını HTML gibi görüntülenebilir bir formata dönüştürmek.  
+- **Hangi format üretilir?** Görseller, CSS ve fontlar gömülü HTML.  
+- **Lisans gerekli mi?** Değerlendirme için deneme sürümü çalışır; üretim için tam lisans gerekir.  
+- **Ardışık olmayan sayfaları seçebilir miyim?** Evet – ihtiyacınız olan herhangi bir sayfa numarasını belirtebilirsiniz.  
+- **Önbellekleme önerilir mi?** Kesinlikle, render edilmiş HTML'nin önbelleğe alınması sık erişilen sayfaların yükleme süresini azaltır.
 
-## Ön koşullar
+![GroupDocs.Viewer for Java ile Bir Belgeden Seçili Sayfaları Render Etme](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
 
-Geliştirme kurulumunuzun şu gereksinimleri karşıladığından emin olun:
-1. **Gerekli Kütüphaneler**: Projenize Java için GroupDocs.Viewer'ı (sürüm 25.2 veya üzeri) ekleyin.
-2. **Çevre Kurulumu**: JDK 8 veya üzerini ve IntelliJ IDEA veya Eclipse gibi bir IDE kullanın.
-3. **Bilgi Önkoşulları**:Java programlama ve Maven bağımlılık yönetimi konusunda temel bilgiye sahip olmak faydalıdır.
+### Öğrenecekleriniz
+- Java ortamınızda GroupDocs.Viewer kurulumunu yapmak  
+- Viewer API kullanarak belirli belge sayfalarını render etmek  
+- Optimum görüntüleme için HTML görünüm seçeneklerini yapılandırma  
+- Pratik kullanım durumları ve entegrasyon senaryoları  
 
-## Java için GroupDocs.Viewer Kurulumu
+## Seçili Sayfaları Render Etmek Nedir?
+Seçili sayfaları render etmek, bir kaynak belgeden (DOCX, PDF, PPT vb.) yalnızca belirttiğiniz sayfaları ayıklayıp bunları web tarayıcısında görüntülenebilen bir formata dönüştürmek anlamına gelir. Bu yaklaşım bant genişliğini azaltır, sayfa yükleme süresini hızlandırır ve yalnızca ilgili içeriği göstererek son‑kullanıcı deneyimini iyileştirir.
 
-### Maven üzerinden kurulum
+## Neden Belgeden HTML Oluşturulur?
+Belgeden HTML oluşturmak, dış görüntüleyicilere veya eklentilere ihtiyaç duymadan tarayıcılar arasında çalışan hafif, platform‑bağımsız bir temsil sağlar. Görseller, fontlar ve CSS gibi kaynakları doğrudan HTML dosyasına gömmek, dağıtımı basitleştirir ve çapraz‑origin sorunlarını ortadan kaldırır.
 
-Aşağıdakileri ekleyerek GroupDocs.Viewer'ı projenize entegre edin: `pom.xml`:
+## Önkoşullar
+
+Geliştirme ortamınızın aşağıdaki gereksinimleri karşıladığından emin olun:
+
+1. **Gerekli Kütüphaneler** – Projenize GroupDocs.Viewer for Java (sürüm 25.2 ve üzeri) ekleyin.  
+2. **Ortam** – JDK 8 ve üzeri; IntelliJ IDEA veya Eclipse gibi bir IDE.  
+3. **Bilgi** – Temel Java programlama ve Maven bağımlılık yönetimi.
+
+## GroupDocs.Viewer for Java Kurulumu
+
+### Maven ile Kurulum
+
+`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -50,15 +71,12 @@ Aşağıdakileri ekleyerek GroupDocs.Viewer'ı projenize entegre edin: `pom.xml`
 </dependencies>
 ```
 
-### Lisans Edinimi
-
-- **Ücretsiz Deneme**: Özellikleri keşfetmek için ücretsiz denemeyle başlayın.
-- **Geçici Lisans**:Uzun süreli testler için geçici lisans alın.
-- **Satın almak**: Üretim amaçlı kullanım için tam lisans satın alın.
+### Lisans Edinme
+- **Ücretsiz Deneme** – Tüm özellikleri ücretsiz keşfedin.  
+- **Geçici Lisans** – Deneme süresinin ötesinde test etmeye devam edin.  
+- **Tam Satın Alma** – Üretim dağıtımları için gereklidir.
 
 #### Temel Başlatma ve Kurulum
-
-Kurulumdan sonra Viewer örneğinizi başlatın:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -66,7 +84,7 @@ import com.groupdocs.viewer.Viewer;
 public class DocumentViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
-            // Buradaki işleme mantığınız
+            // Your rendering logic here
         }
     }
 }
@@ -74,17 +92,9 @@ public class DocumentViewer {
 
 ## Uygulama Kılavuzu
 
-### Belirli Sayfaları Gömülü Kaynaklarla HTML Olarak Oluşturun
+### Belirli Sayfaları Gömülü Kaynaklarla HTML Olarak Render Etme
 
-Bu bölüm, GroupDocs.Viewer for Java'yı kullanarak seçili sayfaların işlenmesi sürecinde size rehberlik eder.
-
-#### Genel bakış
-
-Belirli sayfaları (örneğin birinci ve üçüncü sayfaları) HTML biçimine dönüştüreceğiz ve dağıtımı kolaylaştırmak için kaynakları doğrudan bu dosyaların içine yerleştireceğiz.
-
-##### Adım 1: Çıktı Yolunu Yapılandırın
-
-Çıktı dizini ve dosya yolu biçimini tanımlayın:
+#### Adım 1: Çıktı Yolunu Yapılandırma
 
 ```java
 import java.nio.file.Path;
@@ -94,11 +104,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **Açıklama**: `outputDirectory` HTML dosyalarının kaydedildiği yerdir. `pageFilePathFormat` İşlenen sayfalar için adlandırma kurallarını belirtir.
+- **Açıklama**: `outputDirectory`, oluşturulan HTML dosyalarının kaydedileceği yerdir.  
+- **İsimlendirme**: `page_{0}.html`, her render edilen sayfa için ayrı bir dosya oluşturur.
 
-##### Adım 2: HTML Görünüm Seçeneklerini Ayarlayın
-
-Kaynakları doğrudan yerleştirmek için seçenekleri yapılandırın:
+#### Adım 2: HTML Görünüm Seçeneklerini Ayarlama
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -106,11 +115,9 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-- **Açıklama**: `HtmlViewOptions.forEmbeddedResources()` resimler ve stiller gibi gerekli tüm varlıkların HTML dosyalarına gömülmesini sağlayarak dış bağımlılıkları azaltır.
+- **Açıklama**: `forEmbeddedResources()` görüntüler, CSS ve fontları doğrudan her HTML dosyasına gömer, dış bağımlılıkları ortadan kaldırır.
 
-##### Adım 3: Seçili Sayfaları Oluştur
-
-Viewer kaynaklarını etkin bir şekilde yönetmek için try-with-resources ifadesini kullanın:
+#### Adım 3: İstenen Sayfaları Render Etme
 
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
@@ -118,58 +125,65 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-- **Açıklama**: : `view()` yöntem yapılandırılmış olarak alınır `HtmlViewOptions` ve işlenecek sayfa aralığını belirtir. Bu durumda, yalnızca ilk ve üçüncü sayfaları işler.
+- **Açıklama**: `view()` metodu `HtmlViewOptions` ve bir sayfa numarası listesi alır. Bu örnekte sadece birinci ve üçüncü sayfalar render edilir.
 
-#### Sorun Giderme İpuçları
-
-- Tüm yolların doğru şekilde ayarlandığından ve erişilebilir olduğundan emin olun.
-- Belge yolunun doğru olduğunu ve dosyanın bozuk olmadığını doğrulayın.
-- Deneme veya geçici lisans kullanıyorsanız lisanslamayla ilgili istisnaları kontrol edin.
+### Sorun Giderme İpuçları
+- Çıktı dizininin mevcut olduğunu ve uygulamanın yazma izinlerine sahip olduğunu doğrulayın.  
+- Belge yolunun doğru olduğundan ve dosyanın bozuk olmadığından emin olun.  
+- Lisans hataları alırsanız, geçerli bir lisans dosyasının uygulamanızın yanına yerleştirildiğini doğrulayın.
 
 ## Pratik Uygulamalar
 
-Belirli belge sayfalarının işlenmesinin faydalı olabileceği bazı gerçek dünya kullanım örnekleri şunlardır:
+Seçili sayfaları render etmek birçok senaryoda kullanışlıdır:
 
-1. **Yasal Belgeler**: Web uygulamalarında uzun sözleşmelerin ilgili bölümlerini görüntüleyin.
-2. **Eğitim Platformları**: Öğrencilerin tüm dosyaları indirmeden ders kitaplarından seçili bölümleri görüntülemelerine izin verin.
-3. **İş Raporları**: Paydaşlara temel rapor segmentlerini göstererek özlü özetler sunun.
+1. **Hukuki Belgeler** – Sözleşmenin yalnızca ilgili maddelerini gösterin.  
+2. **Eğitim Platformları** – Öğrencilerin tüm ders kitabını indirmeden belirli bölümleri ön izlemelerine izin verin.  
+3. **İş Raporları** – Paydaşlara ana rapor bölümlerini göstererek özlü özetler sunun.
 
-## Performans Hususları
+## Performans Düşünceleri
 
-En iyi performansı sağlamak için:
-- Özellikle büyük belgeler için kaynakları verimli bir şekilde yöneterek bellek kullanımını optimize edin.
-- Dış kaynak bağımlılıklarını en aza indiren HTML görünüm seçeneklerini kullanın.
-- Yükleme sürelerini azaltmak için sık erişilen belge sayfaları için önbelleğe alma stratejileri uygulayın.
+- **Bellek Yönetimi** – Viewer kaynaklarını hızlıca serbest bırakmak için (gösterildiği gibi) try‑with‑resources kullanın.  
+- **Önbellekleme** – Sık erişilen sayfalar için render edilmiş HTML'yi bir önbellekte (ör. Redis veya bellek içi) saklayın.  
+- **Kaynak Azaltma** – Gömülü kaynaklar dosya boyutunu biraz artırır; bant genişliği bir sorun ise HTML çıktısını sıkıştırmayı düşünün.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözümler
+| Issue | Solution |
+|-------|----------|
+| **Dosya bulunamadı** | Mutlak/relative yolu tekrar kontrol edin ve dosyanın mevcut olduğundan emin olun. |
+| **Büyük belgeler için bellek yetersizliği** | Yalnızca gerekli sayfaları render edin veya JVM yığın boyutunu (`-Xmx`) artırın. |
+| **HTML'de eksik görseller** | `forEmbeddedResources` kullanıldığını doğrulayın; aksi takdirde görseller ayrı olarak kaydedilir. |
+| **Lisans hatası** | Geçerli bir `GroupDocs.Viewer.lic` dosyasını uygulama köküne yerleştirin veya yolunu programatik olarak belirtin. |
 
-GroupDocs.Viewer for Java kullanarak bir belgeden belirli sayfaların nasıl işleneceğini öğrendiniz. Bu güçlü araç, uygulamalarınızdaki karmaşık verilerin sunumunu basitleştirebilir, kullanıcı deneyimini ve verimliliği artırabilir.
+## Sıkça Sorulan Sorular
 
-### Sonraki Adımlar:
-- Farklı bölümleri veya formatları oluşturmayı deneyin.
-- Bu işlevselliği daha büyük sistemlere entegre etmeyi keşfedin.
+1. **GroupDocs.Viewer for Java nedir?**  
+   Java uygulamaları içinde doğrudan 90'dan fazla belge formatını (PDF, DOCX, PPT vb.) render etmeyi sağlayan bir kütüphane.
 
-Başlamaya hazır mısınız? Bu teknikleri bir sonraki projenizde uygulayın!
+2. **Bu yöntemle PDF sayfalarını render edebilir miyim?**  
+   Evet – Viewer API, PDF'leri diğer birçok formatla birlikte destekler.
 
-## SSS Bölümü
+3. **Büyük belgeleri verimli bir şekilde nasıl yönetirim?**  
+   İhtiyacınız olan sayfaları sadece render edin ve tekrar işleme önlemek için önbellekleme kullanın.
 
-1. **Java için GroupDocs.Viewer nedir?**
-   - Java uygulamalarında görüntüleme yeteneklerine odaklanarak, çeşitli formatlardaki belgelerin işlenmesine olanak sağlayan bir kütüphanedir.
-2. **Bu yöntemi kullanarak PDF sayfaları oluşturabilir miyim?**
-   - Evet, GroupDocs.Viewer PDF'ler de dahil olmak üzere çok çeşitli belge türlerini destekler.
-3. **Büyük belgeleri nasıl verimli bir şekilde yönetebilirim?**
-   - Bellek yönetimi uygulamalarını uygulayın ve yalnızca gerekli bölümleri oluşturmayı düşünün.
-4. **Kaynakları HTML dosyalarına yerleştirmenin faydası nedir?**
-   - Tüm varlıkların tek bir HTML dosyasında yer almasını sağlayarak dağıtımı basitleştirir ve harici bağımlılıkları azaltır.
-5. **GroupDocs.Viewer for Java hakkında daha fazla bilgiyi nerede bulabilirim?**
-   - Ziyaret edin [resmi belgeler](https://docs.groupdocs.com/viewer/java/) ve keşfedin [API referansı](https://reference.groupdocs.com/viewer/java/).
+4. **HTML dosyalarına kaynakları gömmenin faydası nedir?**  
+   Her sayfa için tek bir bağımsız dosya oluşturur, dağıtımı basitleştirir ve dış varlık yüklemelerini ortadan kaldırır.
+
+5. **GroupDocs.Viewer for Java hakkında daha fazla bilgi nereden bulunur?**  
+   - **Dokümantasyon**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+   - **API Referansı**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
 
 ## Kaynaklar
 
-- **Belgeleme**: [GroupDocs.Viewer Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı**: [API Referans Kılavuzu](https://reference.groupdocs.com/viewer/java/)
-- **İndirmek**: [GroupDocs.Viewer İndirme Sayfası](https://releases.groupdocs.com/viewer/java/)
-- **Satın almak**: [GroupDocs.Viewer'ı satın alın](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme**: [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans**: [Geçici Lisans Alın](https://purchase.groupdocs.com/temporary-license/)
-- **Destek**: [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
+- **Dokümantasyon**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API Referansı**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **İndirme**: [GroupDocs.Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Satın Alma**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)  
+- **Ücretsiz Deneme**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Geçici Lisans**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Destek**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2026-01-15  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2  
+**Yazar:** GroupDocs

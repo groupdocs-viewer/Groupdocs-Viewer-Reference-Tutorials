@@ -1,39 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Découvrez comment afficher efficacement le suivi des modifications dans vos documents Word avec GroupDocs.Viewer pour Java grâce à ce guide étape par étape. Idéal pour les développeurs intégrant des systèmes de gestion de documents."
-"title": "Comment afficher les modifications suivies dans les documents Word à l'aide de GroupDocs.Viewer pour Java – Guide complet"
-"url": "/fr/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-15'
+description: Apprenez à rendre les modifications suivies de Word et à afficher les
+  révisions de documents Word dans les fichiers Word en utilisant GroupDocs.Viewer
+  pour Java. Suivez ce guide étape par étape destiné aux développeurs.
+keywords:
+- render tracked changes Word docs GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- Java document rendering
+title: Rendre les modifications suivies de Word dans les documents Word avec GroupDocs.Viewer
+  pour Java
 type: docs
+url: /fr/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
+weight: 1
 ---
-# Affichage des modifications suivies dans les documents Word avec GroupDocs.Viewer pour Java
 
-## Introduction
+# Rendu des modifications suivies dans les documents Word avec GroupDocs.Viewer pour Java
 
-Vous avez du mal à afficher le suivi des modifications dans vos documents Word au sein de vos applications Java ? Que vous développiez un système de gestion de documents ou que vous ayez besoin de visualiser les modifications, le rendu fluide de ces modifications peut s'avérer complexe. **GroupDocs.Viewer pour Java**, la bibliothèque robuste qui simplifie ce processus en vous permettant de restituer des documents Word avec des modifications suivies directement en HTML.
+Si vous devez **rendre les modifications suivies dans Word** au sein de votre application Java, vous êtes au bon endroit. Dans ce guide, nous vous montrerons comment afficher chaque révision, insertion et suppression apparaissant dans un fichier Word, en le transformant en HTML propre et navigable. Que vous construisiez un portail de révision de documents, un système de gestion de dossiers juridiques, ou toute solution qui doit **visualiser les révisions de documents Word**, ce tutoriel vous accompagne à travers l’ensemble du processus — de la configuration de l’environnement au rendu final.
 
-Dans ce tutoriel, nous vous expliquerons étape par étape comment implémenter cette fonctionnalité, en nous concentrant sur les aspects clés tels que la configuration de votre environnement, la configuration des options et le rendu du document. À la fin de ce guide, vous serez capable d'intégrer efficacement cette fonctionnalité. **GroupDocs.Viewer pour Java** dans votre projet pour une visualisation transparente des documents.
+![Rendu des modifications suivies dans les documents Word avec GroupDocs.Viewer pour Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-### Ce que vous apprendrez :
-- Configuration de GroupDocs.Viewer pour Java
-- Configuration et mise en œuvre du rendu des modifications suivies
-- Applications pratiques dans des scénarios réels
-- Optimiser les performances avec les meilleures pratiques
+## Réponses rapides
+- **Que signifie « rendre les modifications suivies dans Word » ?** Il convertit le balisage de révision d’un fichier Word en une représentation HTML visuelle.  
+- **Quelle bibliothèque gère cela ?** GroupDocs.Viewer for Java.  
+- **Ai‑je besoin d’une licence ?** Un essai gratuit suffit pour l’évaluation ; une licence complète supprime toutes les limitations.  
+- **Quelle version de Java est requise ?** Java 8 ou plus récent.  
+- **Puis‑je désactiver le rendu des modifications suivies ?** Oui — définissez `setRenderTrackedChanges(false)` dans les options de visualisation.
 
-Passons maintenant aux prérequis dont vous avez besoin avant de vous lancer dans cette implémentation.
+## Qu’est‑ce que « rendre les modifications suivies dans Word » ?
+Rendre les modifications suivies dans Word consiste à prendre les données de révision stockées dans un fichier `.docx` (insertions, suppressions, commentaires, etc.) et à produire un format visualisable — généralement HTML — où ces changements sont mis en évidence visuellement. Cela permet aux utilisateurs finaux de voir exactement ce qui a été modifié sans ouvrir Microsoft Word.
+
+## Pourquoi utiliser GroupDocs.Viewer pour visualiser les révisions de documents Word ?
+GroupDocs.Viewer pour Java abstrait la gestion bas‑niveau d’OpenXML et vous offre un appel d’API unique pour générer du HTML, du PDF ou des images. Il prend également en charge **la visualisation des révisions de documents Word** dès le départ, en préservant le style, les ressources intégrées et le suivi des modifications.
 
 ## Prérequis
-
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
-- **Bibliothèques requises**: Bibliothèque GroupDocs.Viewer pour Java version 25.2 ou ultérieure.
-- **Configuration de l'environnement**:Une compréhension de base du développement Java et une familiarité avec Maven pour la gestion des dépendances.
-- **Prérequis en matière de connaissances**:Connaissances de base de la gestion des chemins de fichiers en Java et de l'utilisation des opérations d'E/S.
+- **GroupDocs.Viewer for Java** version 25.2 ou ultérieure.  
+- Maven pour la gestion des dépendances.  
+- Environnement de développement Java de base (IDE, JDK 8+).  
 
 ## Configuration de GroupDocs.Viewer pour Java
 
-Pour commencer, vous devez configurer votre projet afin d'inclure les dépendances nécessaires. Voici comment procéder avec Maven :
-
-**Configuration Maven**
+### Configuration Maven
+Ajoutez le dépôt GroupDocs et la dépendance à votre `pom.xml` :
 
 ```xml
 <repositories>
@@ -52,56 +60,40 @@ Pour commencer, vous devez configurer votre projet afin d'inclure les dépendanc
 </dependencies>
 ```
 
-### Acquisition de licence
+### Obtention de licence
+Commencez avec un essai gratuit ou demandez une licence d’évaluation temporaire. Lorsque vous êtes prêt pour la production, achetez une licence complète pour débloquer toutes les fonctionnalités.
 
-Pour utiliser pleinement GroupDocs.Viewer, vous pouvez commencer par un essai gratuit ou obtenir une licence temporaire à des fins d'évaluation. Si la bibliothèque répond à vos besoins, envisagez l'achat d'une licence complète pour supprimer toutes les limitations.
+### Initialisation de base
+Importez les classes requises dans votre code Java et préparez les chemins de fichiers pour l’entrée et la sortie.
 
-### Initialisation et configuration de base
+## Comment rendre les modifications suivies dans les documents Word
 
-Après avoir ajouté la dépendance, assurez-vous que votre environnement de développement est correctement configuré. Vous devrez importer les packages nécessaires et configurer correctement les chemins d'accès aux fichiers dans votre code Java.
+Voici un guide étape par étape qui reproduit le code exact dont vous aurez besoin. Les blocs de code sont conservés inchangés par rapport au tutoriel original.
 
-## Guide de mise en œuvre
-
-Plongeons dans la mise en œuvre du rendu des modifications suivies avec GroupDocs.Viewer pour Java.
-
-### Présentation du rendu des modifications suivies
-
-Cette fonctionnalité vous permet de convertir les documents Word contenant des modifications suivies directement au format HTML, en conservant toutes les modifications pour consultation. Cette fonctionnalité est essentielle pour les applications nécessitant des fonctionnalités de révision et de collaboration.
-
-#### Étape 1 : Définir le chemin du répertoire de sortie
-
-Commencez par spécifier où vous souhaitez enregistrer les fichiers rendus :
+### Étape 1 : Définir le chemin du répertoire de sortie
+Créez un dossier où les pages HTML rendues seront enregistrées.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-Cette étape configure un répertoire dédié pour stocker vos sorties HTML, garantissant un stockage organisé de vos documents rendus.
-
-#### Étape 2 : Spécifiez le format d’enregistrement de chaque page
-
-Déterminez comment chaque page du document sera enregistrée :
+### Étape 2 : Spécifier le format pour enregistrer chaque page
+Définissez un modèle de nommage pour chaque fichier HTML généré.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-Ce modèle garantit que chaque page de votre document est enregistrée avec un identifiant unique, facilitant ainsi la navigation et la référence.
-
-#### Étape 3 : Configurer les options d’affichage
-
-Configurez les options pour inclure les ressources intégrées dans le code HTML et activer le rendu des modifications suivies :
+### Étape 3 : Configurer les options de visualisation
+Activez les ressources intégrées et activez le rendu des modifications suivies.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-Ici, nous configurons `HtmlViewOptions` pour intégrer des ressources telles que des images ou des feuilles de style directement dans vos fichiers HTML. `setRenderTrackedChanges(true)` garantit que toutes les modifications suivies sont rendues.
-
-#### Étape 4 : Créer une instance de visionneuse
-
-Enfin, instanciez le `Viewer` classe et rends ton document :
+### Étape 4 : Créer une instance Viewer et rendre
+Chargez le document Word contenant les modifications suivies et générez la sortie HTML.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -109,57 +101,48 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-Le `try-with-resources` Cette déclaration garantit que les ressources sont gérées efficacement. `Viewer` l'instance traite le fichier Word, en appliquant toutes les options d'affichage configurées.
-
-### Conseils de dépannage
-- Assurez-vous que les chemins vers vos répertoires d’entrée et de sortie sont correctement définis.
-- Si le rendu échoue, vérifiez la compatibilité du document avec GroupDocs.Viewer pour Java.
-- Vérifiez si la version correcte de la bibliothèque est incluse dans les dépendances de votre projet.
+## Problèmes courants et solutions
+- **Chemins de fichiers incorrects** – Vérifiez que `YOUR_OUTPUT_DIRECTORY` et `YOUR_DOCUMENT_DIRECTORY` pointent vers des dossiers existants.  
+- **Format de document non pris en charge** – Assurez‑vous que le fichier est un `.docx` ou `.doc` supporté par GroupDocs.Viewer.  
+- **Licence manquante** – Sans licence valide, la bibliothèque peut limiter les capacités de rendu.
 
 ## Applications pratiques
+1. **Systèmes de révision de documents** – Montrer aux réviseurs exactement ce qui a été ajouté ou supprimé.  
+2. **Gestion de dossiers juridiques** – Mettre en évidence les modifications dans les contrats ou les plaidoiries.  
+3. **Collaboration académique** – Visualiser les contributions de plusieurs auteurs.
 
-Le rendu des modifications suivies a plusieurs applications concrètes :
-1. **Systèmes d'examen de documents**: Améliorez l’édition collaborative en affichant clairement les révisions.
-2. **Gestion des documents juridiques**:Faciliter les processus de révision en mettant en évidence les modifications.
-3. **Documents universitaires et de recherche**:Suivez efficacement les contributions et les modifications de plusieurs auteurs.
-
-L'intégration avec d'autres systèmes tels que des CMS ou des solutions de stockage de documents peut encore améliorer les fonctionnalités, en fournissant une solution complète pour la gestion des documents Word.
-
-## Considérations relatives aux performances
-
-Pour garantir des performances optimales :
-- Limitez le nombre de documents traités simultanément pour gérer efficacement l'utilisation de la mémoire.
-- Utilisez des chemins de fichiers et des structures de répertoires efficaces pour minimiser les opérations d’E/S.
-- Mettez régulièrement à jour vers la dernière version de GroupDocs.Viewer pour Java pour bénéficier des optimisations et des corrections de bugs.
-
-Le respect de ces bonnes pratiques contribuera à maintenir des processus de rendu de documents fluides et efficaces.
+## Considérations de performance
+- Traitez un nombre limité de documents simultanément pour maintenir une faible utilisation de la mémoire.  
+- Utilisez des structures de répertoires efficaces pour réduire la surcharge d’E/S.  
+- Maintenez la bibliothèque à jour ; les versions plus récentes contiennent des optimisations de performance.
 
 ## Conclusion
-
-Vous avez maintenant appris à implémenter le rendu des modifications suivies dans les documents Word à l'aide de **GroupDocs.Viewer pour Java**En configurant votre environnement, en configurant les options d'affichage et en comprenant les applications pratiques, vous êtes bien équipé pour intégrer cette fonctionnalité dans vos projets.
-
-Dans les prochaines étapes, envisagez d’explorer d’autres fonctionnalités de GroupDocs.Viewer ou de l’intégrer à des outils supplémentaires pour des capacités de gestion de documents améliorées.
+Vous disposez maintenant d’une méthode complète, prête pour la production, pour **rendre les modifications suivies dans Word** et **visualiser les révisions de documents Word** en utilisant GroupDocs.Viewer pour Java. Intégrez ces étapes dans votre application, et vous offrirez aux utilisateurs une expérience de révision de documents puissante et interactive.
 
 ## Section FAQ
 
-1. **Quelle est la version minimale de Java requise ?**  
-   Java 8 ou une version ultérieure est généralement recommandé pour la compatibilité avec les bibliothèques modernes comme GroupDocs.Viewer.
-2. **Puis-je restituer des documents sans suivre les modifications ?**  
-   Oui, désactivez simplement `setRenderTrackedChanges(true)` dans vos options de configuration.
-3. **Comment gérer efficacement des documents volumineux ?**  
-   Envisagez de diviser les documents volumineux en sections plus petites ou d’utiliser des techniques de pagination pour gérer efficacement l’utilisation des ressources.
-4. **Quelles sont les options de licence pour GroupDocs.Viewer ?**  
-   Vous pouvez commencer par un essai gratuit, opter pour une licence temporaire ou acheter une licence complète en fonction de vos besoins.
-5. **Existe-t-il une assistance disponible si je rencontre des problèmes ?**  
-   Oui, vous pouvez accéder à l'assistance via le forum GroupDocs et les ressources de documentation fournies.
+1. **Quelle est la version minimale de Java requise ?**  
+   Java 8 ou ultérieure est généralement recommandé pour la compatibilité avec les bibliothèques modernes comme GroupDocs.Viewer.  
+2. **Puis‑je rendre des documents sans les modifications suivies ?**  
+   Oui, désactivez simplement `setRenderTrackedChanges(true)` dans vos options de configuration.  
+3. **Comment gérer efficacement les gros documents ?**  
+   Envisagez de diviser les gros fichiers en sections plus petites ou d’utiliser des techniques de pagination pour gérer efficacement l’utilisation des ressources.  
+4. **Quelles sont les options de licence pour GroupDocs.Viewer ?**  
+   Vous pouvez commencer avec un essai gratuit, opter pour une licence d’évaluation temporaire, ou acheter une licence complète en fonction des besoins de votre projet.  
+5. **Existe‑t‑il un support disponible en cas de problème ?**  
+   Oui, vous pouvez accéder au support via le forum GroupDocs et les ressources de documentation officielle.
 
 ## Ressources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [Référence de l'API](https://reference.groupdocs.com/viewer/java/)
-- [Télécharger](https://releases.groupdocs.com/viewer/java/)
-- [Achat](https://purchase.groupdocs.com/buy)
+- [Référence API](https://reference.groupdocs.com/viewer/java/)
+- [Téléchargement](https://releases.groupdocs.com/viewer/java/)
+- [Acheter](https://purchase.groupdocs.com/buy)
 - [Essai gratuit](https://releases.groupdocs.com/viewer/java/)
-- [Permis temporaire](https://purchase.groupdocs.com/temporary-license/)
-- [Soutien](https://forum.groupdocs.com/c/viewer/9)
+- [Licence temporaire](https://purchase.groupdocs.com/temporary-license/)
+- [Support](https://forum.groupdocs.com/c/viewer/9)
 
-Nous espérons que ce tutoriel vous a permis de restituer efficacement des documents Word avec des modifications suivies à l'aide de **GroupDocs.Viewer pour Java**Bon codage !
+---
+
+**Dernière mise à jour :** 2026-01-15  
+**Testé avec :** GroupDocs.Viewer for Java 25.2  
+**Auteur :** GroupDocs
