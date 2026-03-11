@@ -1,35 +1,51 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come trasformare i documenti in immagini con un livello di testo in Java utilizzando GroupDocs.Viewer per migliorare la chiarezza del testo e la ricercabilità."
-"title": "Rendering di documenti come immagini con livello di testo in Java utilizzando GroupDocs.Viewer"
-"url": "/it/java/advanced-rendering/render-documents-to-images-with-text-layer-java/"
-"weight": 1
+date: '2026-01-10'
+description: Scopri come convertire Word in immagine con un livello di testo in Java
+  usando GroupDocs.Viewer, estraendo la sovrapposizione di testo per immagini di documenti
+  ricercabili e ad alta chiarezza.
+keywords:
+- convert word to image
+- extract text overlay
+- render pdf with text
+- improve document image clarity
+- configure view options
+- generate searchable images
+title: Converti Word in immagine con livello di testo in Java
 type: docs
+url: /it/java/advanced-rendering/render-documents-to-images-with-text-layer-java/
+weight: 1
 ---
-# Rendering di documenti come immagini con livello di testo in Java utilizzando GroupDocs.Viewer
-## Tutorial di rendering avanzato
-**URL SEO attuale**: /render-documenti-in-immagini-con-livello-di-testo-java
 
-## Introduzione
-Desideri visualizzare documenti sulla tua applicazione web mantenendo la chiarezza del testo? Il rendering dei documenti come immagini può essere complesso, soprattutto quando si tratta di sovrapporre testo che rimanga selezionabile e ricercabile. Questo tutorial ti guiderà nella conversione di un documento DOCX in un'immagine con un livello di testo sovrapposto utilizzando GroupDocs.Viewer per Java.
+# Converti Word in immagine con livello di testo in Java usando GroupDocs.Viewer
 
-**Cosa imparerai:**
-- Impostazione dell'ambiente per GroupDocs.Viewer.
-- Implementazione di GroupDocs.Viewer per il rendering di documenti con livelli di testo in Java.
-- Buone pratiche per ottimizzare le prestazioni e l'utilizzo delle risorse.
+Hai bisogno di **convertire Word in immagine** mantenendo il testo selezionabile e ricercabile? Il rendering di un DOCX come immagine spesso perde il testo sottostante, rendendo impossibili la ricerca e il copia‑incolla. In questo tutorial ti mostreremo come rendere un documento Word in immagini PNG **con un livello di testo sovrapposto** usando GroupDocs.Viewer per Java. Questo approccio non solo **migliora la chiarezza dell'immagine del documento**, ma genera anche **immagini ricercabili** che funzionano perfettamente nei portali web e nelle soluzioni CMS.
 
-Trasforma il modo in cui gestisci il rendering dei documenti seguendo questi passaggi.
+![Renderizza documenti come immagini con livello di testo con GroupDocs.Viewer per Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
+
+## Risposte rapide
+- **Cosa significa “convertire Word in immagine”?** Crea un'immagine raster (PNG) di ogni pagina mantenendo il testo originale in un livello nascosto.  
+- **Perché aggiungere un livello di testo?** La sovrapposizione rende l'immagine ricercabile e selezionabile, migliorando l'accessibilità e la SEO.  
+- **Quale libreria gestisce questo?** GroupDocs.Viewer per Java fornisce supporto integrato per l'estrazione del testo e il rendering delle immagini.  
+- **Ho bisogno di una licenza?** Una prova gratuita funziona per lo sviluppo; è necessaria una licenza a pagamento per la produzione.  
+- **Posso usare lo stesso codice per i PDF?** Sì – le stesse opzioni di visualizzazione si applicano a PDF, DOCX e molti altri formati.
+
+## Cos'è “convertire Word in immagine” con un livello di testo?
+Convertire un file Word in un'immagine normalmente produce un bitmap che contiene solo pixel. Abilitando **extract text overlay**, GroupDocs.Viewer aggiunge un livello di testo invisibile sopra ogni immagine, consentendo ai browser e ai motori di ricerca di leggere il contenuto.
+
+## Perché usare GroupDocs.Viewer per questo compito?
+- **Output PNG ad alta qualità** che conserva il layout originale.  
+- **Extract text overlay** automaticamente, così ottieni immagini ricercabili senza ulteriori elaborazioni.  
+- **Simple API** – poche righe di codice Java gestiscono l'intero flusso.  
+- **Broad format support** – lo stesso approccio funziona per PDF, PPTX e altri formati.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere quanto segue:
+- Java Development Kit (JDK) installato e configurato.  
+- Maven per la gestione delle dipendenze.  
+- Familiarità di base con la gestione dei file Java e i progetti Maven.
 
-- **Librerie e dipendenze**: Aggiungi GroupDocs.Viewer per Java come dipendenza tramite Maven. Vedi i dettagli di installazione di seguito.
-- **Configurazione dell'ambiente**assicurati che il tuo ambiente abbia Java Development Kit (JDK) installato e configurato correttamente.
-- **Prerequisiti di conoscenza**: Familiarità con la programmazione Java, in particolare con la gestione dei percorsi dei file in Java e con l'utilizzo di progetti Maven.
-
-## Impostazione di GroupDocs.Viewer per Java
+## Configurazione di GroupDocs.Viewer per Java
 ### Informazioni sull'installazione
-Per utilizzare GroupDocs.Viewer per Java, aggiungilo come dipendenza tramite Maven. Includi quanto segue nel tuo `pom.xml`:
+Aggiungi GroupDocs.Viewer al tuo progetto Maven inserendo il repository e la dipendenza nel tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -49,91 +65,85 @@ Per utilizzare GroupDocs.Viewer per Java, aggiungilo come dipendenza tramite Mav
 ```
 
 ### Acquisizione della licenza
-Inizia con una prova gratuita scaricando GroupDocs.Viewer dal loro [pagina di download](https://releases.groupdocs.com/viewer/java/)Per un uso prolungato, si consiglia di acquistare una licenza o di acquisirne una temporanea tramite [pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
+Inizia con una prova gratuita scaricando GroupDocs.Viewer dalla loro [pagina di download](https://releases.groupdocs.com/viewer/java/). Per l'uso in produzione, acquista una licenza o ottieni una chiave temporanea dalla [pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
 
 ### Inizializzazione e configurazione di base
-Dopo l'installazione, inizializzare GroupDocs.Viewer creando un'istanza di `Viewer` classe. Questo sarà il punto di partenza per il rendering dei documenti.
+Dopo la sincronizzazione di Maven, puoi creare un'istanza `Viewer` – questo oggetto gestirà il processo di rendering.
 
-## Guida all'implementazione
-Questa sezione illustra come implementare la funzionalità per visualizzare un documento con un livello di testo utilizzando GroupDocs.Viewer.
+## Guida passo‑passo per convertire Word in immagine
 
-### Rendering del documento con livello di testo
-Questa funzione consente di estrarre del testo e sovrapporlo a un'immagine del documento, rendendo il contenuto visivamente accattivante e ricercabile. Ecco come:
-
-#### Passaggio 1: definire la directory di output
-Per prima cosa, specifica dove verranno archiviate le immagini di output definendo un percorso di directory di output.
+### Passo 1: Definisci la directory di output
+Innanzitutto, indica al viewer dove salvare i file PNG generati. Il codice qui sotto crea (o riutilizza) una cartella chiamata `YOUR_OUTPUT_DIRECTORY`.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Per evitare errori, assicurarsi che la directory esista o venga creata durante l'esecuzione.
+> **Consiglio professionale:** Usa `Files.createDirectories(outputDirectory);` se desideri che la cartella venga creata automaticamente.
 
-#### Passaggio 2: configurare le opzioni di visualizzazione
-Successivamente, configura le opzioni di visualizzazione per visualizzare i documenti come immagini PNG con l'estrazione del testo abilitata:
+### Passo 2: Configura le opzioni di visualizzazione (Configure View Options)
+Successivamente, imposta le opzioni di rendering. Utilizzando `PngViewOptions` e abilitando `setExtractText(true)`, istruisci GroupDocs.Viewer a **extract text overlay** e a incorporarlo in ogni immagine.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
-viewOptions.setExtractText(true);  // Abilita l'estrazione del testo sull'immagine
+viewOptions.setExtractText(true);  // Enable extracting text over the image
 ```
 
-Qui, `PngViewOptions` specifica che vogliamo rendere le immagini in formato PNG. Il metodo `setExtractText(true)` indica a GroupDocs.Viewer di sovrapporre il testo estratto a queste immagini.
-
-#### Passaggio 3: rendering del documento
-Infine, utilizzare un'istanza di Viewer per eseguire l'operazione di rendering:
+### Passo 3: Renderizza il documento (Convert Word to Image)
+Infine, apri il DOCX di origine e chiama `viewer.view(viewOptions)`. Il blocco `try‑with‑resources` garantisce che l'istanza `Viewer` venga chiusa correttamente.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    viewer.view(viewOptions);  // Eseguire l'operazione di rendering
+    viewer.view(viewOptions);  // Perform rendering operation
 }
 ```
 
-Questo blocco di codice apre il documento e applica le opzioni di visualizzazione configurate in precedenza. `try-with-resources` dichiarazione garantisce una corretta gestione delle risorse.
+Quando il codice termina, ogni pagina del documento Word appare come un PNG ad alta risoluzione con un livello di testo invisibile, pronto per l'indicizzazione e la ricerca.
 
-### Suggerimenti per la risoluzione dei problemi
-- **File non trovato**: Verifica che il percorso del tuo documento sia corretto.
-- **Problemi di autorizzazione**: Verifica i permessi di scrittura per la directory di output.
-- **Conflitti di versione**: Assicurati che la versione di GroupDocs.Viewer sia presente nel tuo Maven `pom.xml` corrisponde a ciò che intendi utilizzare.
+## Suggerimenti per la risoluzione dei problemi
+- **File Not Found:** Controlla nuovamente il percorso di `SAMPLE_DOCX`. Usa percorsi assoluti per sicurezza.  
+- **Permission Issues:** Assicurati che il processo Java possa scrivere su `YOUR_OUTPUT_DIRECTORY`.  
+- **Version Mismatch:** Verifica che la versione in `pom.xml` corrisponda alla libreria scaricata.
 
 ## Applicazioni pratiche
-GroupDocs.Viewer può essere integrato in varie applicazioni, come:
-1. **Portali Web**: Visualizza i documenti sulle pagine web mantenendo la possibilità di ricercare il testo.
-2. **Sistemi di gestione dei contenuti (CMS)**: Migliora la gestione dei documenti con immagini ricercabili dei documenti.
-3. **Soluzioni di archiviazione dei documenti**: Memorizza i documenti in formato immagine ma consente agli utenti di interagire con il testo.
+1. **Portali web:** Mostra anteprime dei documenti che gli utenti possono cercare senza scaricare il file originale.  
+2. **Sistemi di gestione dei contenuti:** Conserva snapshot immagine ricercabili per scopi di archiviazione.  
+3. **Archiviazione dei documenti:** Mantieni una versione immagine leggera consentendo comunque la ricerca full‑text.
 
 ## Considerazioni sulle prestazioni
-Per ottimizzare le prestazioni quando si utilizza GroupDocs.Viewer:
-- Gestire la memoria in modo efficace eliminando tempestivamente le istanze di Viewer.
-- Utilizzare formati di file appropriati in base alle esigenze della propria applicazione (ad esempio PNG per immagini di alta qualità).
-- Ove possibile, implementare meccanismi di memorizzazione nella cache per ridurre i tempi di rendering.
+- Rilascia prontamente gli oggetti `Viewer` (come mostrato con `try‑with‑resources`).  
+- Scegli PNG per la qualità; passa a JPEG se la larghezza di banda è un problema.  
+- Metti in cache le pagine renderizzate quando lo stesso documento viene richiesto più volte.
 
-## Conclusione
-Hai imparato a visualizzare i documenti con un livello di testo utilizzando GroupDocs.Viewer Java. Questa funzionalità consente di combinare l'aspetto visivo delle immagini dei documenti con il testo ricercabile, migliorando le capacità delle tue applicazioni.
+## Domande frequenti
 
-Per esplorare ulteriormente le funzionalità di GroupDocs.Viewer, valuta la possibilità di sperimentare opzioni e configurazioni aggiuntive. Prova a implementare questa soluzione nei tuoi progetti!
+**Q: Come gestisco documenti di grandi dimensioni?**  
+A: Renderizza le pagine in modo incrementale e rilascia ogni istanza `Viewer` dopo aver elaborato un batch per mantenere basso l'uso della memoria.
 
-## Sezione FAQ
-**D1: Come posso gestire documenti di grandi dimensioni?**
-A1: Per i documenti di grandi dimensioni, ottimizza le prestazioni eseguendo il rendering delle pagine in modo incrementale e gestendo in modo efficiente l'utilizzo della memoria.
+**Q: Posso renderizzare PDF con lo stesso approccio?**  
+A: Sì, GroupDocs.Viewer supporta PDF e lo stesso flag `setExtractText(true)` genererà immagini PDF ricercabili.
 
-**D2: Posso eseguire il rendering dei PDF in modo simile?**
-R2: Sì, GroupDocs.Viewer supporta vari formati di documento, incluso il PDF. Utilizza lo stesso approccio con le opzioni specifiche per ogni formato.
+**Q: Cosa succede se il livello di testo non è visibile nell'output?**  
+A: Verifica che `viewOptions.setExtractText(true)` sia impostato e che la cartella di output abbia i permessi di scrittura.
 
-**D3: Cosa succede se il livello di testo non viene visualizzato correttamente?**
-A3: Garantire `setExtractText(true)` è impostato nelle opzioni di visualizzazione e verifica che la directory di output abbia le autorizzazioni appropriate.
+**Q: Sono supportati altri formati immagine?**  
+A: Oltre a PNG, puoi usare `JpgViewOptions` o `BmpViewOptions` sostituendo la classe dell'opzione di visualizzazione.
 
-**D4: Sono supportati diversi formati di immagine?**
-R4: Sì, oltre a PNG, puoi usare JPEG o BMP regolando di conseguenza le opzioni di visualizzazione.
-
-**D5: Come posso risolvere i problemi di rendering?**
-A5: Controllare i percorsi dei file, assicurarsi che la versione di GroupDocs.Viewer sia corretta ed esaminare i registri Java per individuare messaggi di errore relativi al rendering del documento.
+**Q: Dove posso trovare una documentazione API più dettagliata?**  
+A: La documentazione ufficiale fornisce esempi esaustivi e dettagli di configurazione.
 
 ## Risorse
-- **Documentazione**: [Documentazione di GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Riferimento API**: [Guida di riferimento API](https://reference.groupdocs.com/viewer/java/)
-- **Scaricamento**: [Ottieni GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Acquistare**: [Acquista licenza](https://purchase.groupdocs.com/buy)
-- **Prova gratuita**: [Scarica la versione di prova gratuita](https://releases.groupdocs.com/viewer/java/)
-- **Licenza temporanea**: [Acquisire la licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- **Supporto**: [Forum di GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentazione:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Riferimento API:** [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **Acquisto:** [Buy License](https://purchase.groupdocs.com/buy)  
+- **Prova gratuita:** [Download Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Licenza temporanea:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Supporto:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ultimo aggiornamento:** 2026-01-10  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs

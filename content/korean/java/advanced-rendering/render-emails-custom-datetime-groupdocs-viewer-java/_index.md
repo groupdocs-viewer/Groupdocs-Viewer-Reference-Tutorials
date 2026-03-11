@@ -1,37 +1,55 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java를 사용하여 사용자 지정 날짜/시간 형식 및 시간대 설정으로 이메일을 렌더링하는 방법을 알아보세요. 이메일 보관, 지원 시스템 등에 적합합니다."
-"title": "GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 DateTime으로 이메일 렌더링"
-"url": "/ko/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-10'
+description: GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 날짜/시간 형식으로 EML을 HTML로 변환하고 시간대 오프셋을
+  설정하는 방법을 배워보세요. 이메일 보관 및 지원 시스템에 이상적입니다.
+keywords:
+- render emails with custom datetime
+- GroupDocs Viewer for Java
+- email rendering HTML
+title: Java에서 GroupDocs.Viewer를 사용해 사용자 정의 날짜/시간으로 EML을 HTML로 변환
 type: docs
+url: /ko/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer를 사용하여 Java에서 사용자 정의 DateTime으로 이메일 렌더링
+
+# Java에서 GroupDocs.Viewer를 사용하여 사용자 정의 DateTime으로 EML을 HTML로 변환
 
 ## 소개
 
-오늘날처럼 빠르게 변화하는 디지털 세상에서 효과적인 이메일 관리는 기업과 개인 모두에게 매우 중요합니다. 이메일을 보관하든 사용자 친화적인 HTML 형식으로 변환하든, 사용자 정의는 매우 중요합니다. 이 튜토리얼에서는 문서 보기 및 변환을 간소화하는 강력한 라이브러리인 GroupDocs.Viewer for Java를 사용하여 사용자 정의 날짜/시간 형식으로 이메일 메시지를 렌더링하는 방법을 안내합니다.
+오늘날 빠르게 변화하는 디지털 환경에서 **EML을 HTML로 변환**을 신속하게 수행하고 올바른 날짜‑시간 표시를 제공하는 것은 아카이빙, 지원 포털 및 법적 준수를 위해 필수적입니다. 이 튜토리얼에서는 GroupDocs.Viewer for Java를 사용하여 이메일 메시지를 HTML로 렌더링하면서 **사용자 정의 datetime 형식**과 **시간대 오프셋**을 적용하는 방법을 단계별로 안내합니다. 마지막까지 읽으면 타임스탬프를 정확하고 읽기 쉽게 유지하는 재사용 가능한 솔루션을 얻을 수 있습니다.
 
-**배울 내용:**
-- Java 프로젝트에서 GroupDocs.Viewer 설정
-- 내장된 리소스를 사용하여 이메일을 HTML 형식으로 렌더링
-- 이메일 메시지의 날짜-시간 형식 사용자 지정
-- 정확한 타임스탬프를 보장하기 위해 시간대 오프셋 조정
+![GroupDocs.Viewer for Java를 사용한 사용자 정의 DateTime으로 이메일 렌더링](/viewer/advanced-rendering/render-emails-with-custom-datetime-java.png)
 
-이 튜토리얼을 시작하기 위해 필요한 전제 조건을 살펴보겠습니다.
+**배우게 될 내용**
+- Java 프로젝트에서 GroupDocs.Viewer를 설정하는 방법  
+- 임베디드 리소스를 포함하여 이메일을 HTML로 렌더링하는 방법  
+- 이메일 메시지의 **날짜‑시간 형식**을 사용자 정의하는 방법 (custom datetime format java)  
+- 정확한 타임스탬프를 위해 **시간대 오프셋**을 설정하는 방법 (set timezone offset java)  
 
-## 필수 조건
+## 빠른 답변
+- **GroupDocs.Viewer가 EML을 HTML로 변환할 수 있나요?** 예, EML 파일을 직접 HTML로 렌더링합니다.  
+- **라이선스가 필요합니까?** 테스트용으로는 무료 체험판으로 충분하지만, 프로덕션에서는 유료 라이선스가 필요합니다.  
+- **필요한 Java 버전은?** Java 8 이상.  
+- **표시되는 날짜 형식을 어떻게 변경하나요?** `options.getEmailOptions().setDateTimeFormat(...)`를 사용합니다.  
+- **시간대를 조정할 수 있나요?** 예, `options.getEmailOptions().setTimeZoneOffset(TimeZone.getTimeZone(...))`를 사용합니다.  
 
-시작하기 전에 다음 사항이 있는지 확인하세요.
-- **필수 라이브러리 및 버전**: Java 버전 25.2 이상용 GroupDocs.Viewer.
-- **환경 설정**: 시스템에 Java 개발 키트(JDK)가 설치되어 있고 IntelliJ IDEA나 Eclipse와 같은 IDE가 필요합니다.
-- **지식 전제 조건**: Java 프로그래밍에 대한 기본적인 이해와 빌드 도구로서 Maven에 대한 익숙함.
+## “EML을 HTML로 변환”이란?
+EML 파일을 HTML로 변환하면 원시 이메일(헤더, 본문 및 첨부 파일 포함)을 웹 친화적인 형식으로 바꾸어 브라우저가 추가 플러그인 없이도 표시할 수 있게 됩니다. 이를 통해 웹 애플리케이션, 아카이브 또는 지원 대시보드에 이메일을 손쉽게 삽입할 수 있습니다.
 
-## Java용 GroupDocs.Viewer 설정
+## 이 작업에 GroupDocs.Viewer를 사용하는 이유
+- **Zero‑dependency 렌더링** – Outlook이나 외부 메일 파서가 필요 없습니다.  
+- **임베디드 리소스**(이미지, 첨부 파일)에 대한 내장 지원.  
+- **세밀한 제어**를 통해 날짜‑시간 형식 및 시간대 처리를 관리할 수 있습니다.  
 
-GroupDocs.Viewer를 프로젝트에 통합하려면 다음을 구성하세요. `pom.xml` Maven을 사용하는 경우 방법은 다음과 같습니다.
+## 사전 요구 사항
+- **GroupDocs.Viewer for Java** 버전 25.2 이상.  
+- **Java Development Kit (JDK)** 8 이상 및 IDE(IntelliJ IDEA, Eclipse 등).  
+- 기본 Java 지식 및 Maven 사용 경험.  
 
-**Maven 구성**
+## GroupDocs.Viewer for Java 설정
+
+### Maven 구성
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -51,145 +69,119 @@ GroupDocs.Viewer를 프로젝트에 통합하려면 다음을 구성하세요. `
 </dependencies>
 ```
 
-### 라이센스 취득
+### 라이선스 획득
+무료 체험판으로 시작하거나 확장 테스트를 위해 임시 라이선스를 요청하세요. 프로덕션 사용을 위해서는 정식 라이선스를 구매해야 합니다.
 
-GroupDocs.Viewer 무료 체험판을 시작하거나, 장기 테스트를 위해 임시 라이선스를 요청하세요. 장기간 사용하려면 라이선스 구매가 필요합니다.
-
-**기본 초기화 및 설정**
-
+### 기본 초기화
 ```java
 import com.groupdocs.viewer.Viewer;
 
-// 문서 경로로 Viewer를 초기화합니다.
+// Initialize Viewer with the path to your document
 try (Viewer viewer = new Viewer("path/to/your/document.eml")) {
-    // 여기서 작업을 수행하세요
+    // Perform operations here
 }
 ```
 
-GroupDocs.Viewer를 설정했으니 이제 사용자 지정 설정으로 이메일 메시지를 렌더링해 보겠습니다.
+## Java에서 사용자 정의 DateTime으로 EML을 HTML로 변환
 
-## 구현 가이드
+다음 단계별 가이드는 **EML을 HTML로 변환**하면서 사용자 정의 datetime 형식과 시간대 오프셋을 적용하는 방법을 보여줍니다.
 
-### 기능: 사용자 지정 날짜/시간 형식 및 시간대 오프셋을 사용하여 이메일 메시지 렌더링
-
-이 기능을 사용하면 특정 날짜-시간 형식과 시간대를 적용하여 이메일을 HTML로 렌더링할 수 있습니다. Java 애플리케이션에서 이 기능을 구현하려면 다음 단계를 따르세요.
-
-#### 1단계: 출력 디렉터리 및 파일 경로 설정
-
-렌더링된 파일이 저장될 위치를 결정합니다.
-
+### 단계 1: 출력 디렉터리 및 파일 경로 설정
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path filePath = outputDirectory.resolve("output.html");
 ```
+*설명:* `Path.of()`는 HTML이 저장될 폴더에 대한 참조를 생성합니다. `resolve()`는 파일 이름을 추가합니다.
 
-**설명**: `Path.of()` 출력 디렉터리에 대한 경로 객체를 생성합니다. `resolve()` 이 방법은 파일 이름을 이 디렉토리에 추가합니다.
-
-#### 2단계: 이메일 파일로 뷰어 초기화
-
+### 단계 2: 이메일 파일로 Viewer 초기화
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_EML")) {
-    // 추가 구성은 여기에 있습니다.
+    // Further configuration goes here
 }
 ```
+*설명:* `Viewer` 인스턴스는 변환하려는 EML 파일을 가리킵니다.
 
-**설명**: 그 `Viewer` 객체는 이메일 파일 경로로 초기화됩니다. 이 객체는 렌더링 프로세스를 관리합니다.
-
-#### 3단계: HtmlViewOptions 구성
-
-내장된 리소스가 있는 HTML 출력에 대한 옵션을 설정합니다.
-
+### 단계 3: HtmlViewOptions 구성
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(filePath);
 ```
+*설명:* `forEmbeddedResources()`는 이미지 및 기타 리소스를 HTML 출력에 직접 포함합니다.
 
-**설명**: `forEmbeddedResources()` 모든 필수 파일(예: 이미지)이 HTML에 포함되어 있는지 확인합니다.
-
-#### 4단계: 사용자 지정 날짜/시간 형식 설정
-
-이메일에 사용자 정의 날짜-시간 형식을 적용하세요.
-
+### 단계 4: 사용자 정의 DateTime 형식 설정 *(custom datetime format java)*
 ```java
 options.getEmailOptions().setDateTimeFormat("MM d yyyy HH:mm tt zzz");
 ```
+*설명:* 이 패턴은 월, 일, 연도, 시, 분, AM/PM 표시자 및 시간대 오프셋(`zzz`)을 표시합니다.
 
-**설명**: 이메일에 표시되는 날짜 및 시간 형식을 설정합니다. `zzz` 시간대 오프셋을 나타냅니다.
-
-#### 5단계: 시간대 오프셋 설정
-
-정확한 타임스탬프를 얻으려면 표준 시간대를 조정하세요.
-
+### 단계 5: TimeZone 오프셋 설정 *(set timezone offset java)*
 ```java
 import java.util.TimeZone;
 
 options.getEmailOptions().setTimeZoneOffset(TimeZone.getTimeZone("GMT+1"));
 ```
+*설명:* 렌더링된 타임스탬프를 원하는 시간대로 조정합니다. `"GMT+1"`을 유효한 다른 구역 식별자로 교체하세요.
 
-**설명**: 렌더링된 이메일의 시간대를 설정합니다. 조정 `"GMT+1"` 귀하의 지역에 맞게 필요에 따라.
-
-#### 6단계: 문서 렌더링
-
-마지막으로, 구성된 옵션으로 문서를 렌더링합니다.
-
+### 단계 6: 문서 렌더링
 ```java
 viewer.view(options);
 ```
+*설명:* 변환을 실행하여 사용자 정의 날짜‑시간 설정이 적용된 HTML 파일을 생성합니다.
 
-이 줄은 이메일 파일을 처리하여 사용자가 지정한 설정을 사용하여 HTML로 출력합니다.
+## 문제 해결 팁
+- **FileNotFoundException:** `Viewer`와 `Path.of()`에 사용된 경로를 다시 확인하세요.  
+- **잘못된 타임스탬프:** `TimeZone` ID가 목표 지역과 일치하는지 확인하세요.  
+- **이미지 누락:** `HtmlViewOptions.forEmbeddedResources()`를 사용했는지 확인하세요; 그렇지 않으면 외부 리소스가 포함되지 않을 수 있습니다.  
 
-### 문제 해결 팁
-
-- 모든 경로가 올바르게 설정되었는지 확인하십시오. 잘못된 경로는 다음과 같은 결과를 초래합니다. `FileNotFoundException`.
-- 프로젝트 종속성에 올바른 버전의 GroupDocs.Viewer가 포함되어 있는지 확인하세요.
-- 문제가 지속되는 경우, 추가 지원을 받으려면 GroupDocs 설명서나 커뮤니티 포럼을 참조하세요.
-
-## 실제 응용 프로그램
-
-사용자 지정 설정으로 이메일을 렌더링하는 것이 특히 유용한 몇 가지 사용 사례는 다음과 같습니다.
-1. **이메일 보관**: 이메일을 HTML 형식으로 변환하여 저장하여 쉽게 접근하고 참조할 수 있습니다.
-2. **고객 지원 시스템**: 정확한 타임스탬프와 함께 웹 인터페이스에 고객 이메일을 표시합니다.
-3. **법률 문서**: 법률 검토나 감사를 위해 정확한 날짜 형식으로 이메일 기록을 준비합니다.
+## 실용적인 적용 사례
+1. **이메일 아카이빙:** 컴플라이언스를 위해 검색 가능한 이메일 HTML 스냅샷을 저장합니다.  
+2. **고객 지원 포털:** 정확한 현지 시간과 함께 들어오는 티켓을 표시합니다.  
+3. **법률 문서:** 표준화된 타임스탬프가 포함된 법원 제출용 이메일 기록을 생성합니다.  
 
 ## 성능 고려 사항
-
-GroupDocs.Viewer를 사용할 때 다음과 같은 성능 팁을 고려하세요.
-- 전용 서버 환경을 사용하여 무거운 렌더링 작업을 효율적으로 처리합니다.
-- 메모리 사용량을 모니터링하고 필요한 경우 Java 힙 설정을 최적화합니다.
-- 반복되는 요청의 처리 시간을 줄이기 위해 가능하면 렌더링된 문서를 캐시합니다.
+- 대량 변환을 위해 전용 서버에 배포합니다.  
+- Java 힙 사용량을 모니터링하고 `OutOfMemoryError`가 발생하면 `-Xmx`를 늘립니다.  
+- 같은 이메일이 반복 요청될 경우 렌더링된 HTML을 캐시합니다.  
 
 ## 결론
+이제 GroupDocs.Viewer for Java를 사용하여 사용자 정의 datetime 형식과 시간대 오프셋을 적용한 **EML을 HTML로 변환**하는 완전하고 프로덕션 준비된 방법을 갖추었습니다. 이는 가독성을 높이고 타임스탬프 정확성을 보장하며 아카이빙이나 지원 워크플로에 원활하게 통합됩니다.
 
-이제 Java용 GroupDocs.Viewer를 사용하여 사용자 지정 날짜-시간 형식과 시간대 오프셋을 적용하여 이메일 메시지를 HTML 형식으로 렌더링하는 방법을 알아보았습니다. 이 기능은 이메일의 가독성과 사용성을 향상시켜 다양한 애플리케이션에 쉽게 통합할 수 있도록 해줍니다.
+**다음 단계:** CSS 스타일링, 페이지 매김 또는 PDF 변환과 같은 추가 Viewer 옵션을 탐색하여 필요에 맞게 출력을 더욱 맞춤화하세요.
 
-**다음 단계**: GroupDocs.Viewer가 제공하는 추가 기능을 사용해 문서 보기 기능을 더욱 향상시켜 보세요.
+## 자주 묻는 질문
 
-## FAQ 섹션
+**Q: 첨부 파일이 있는 EML 파일을 어떻게 처리하나요?**  
+A: `HtmlViewOptions.forEmbeddedResources()`를 사용하면 첨부 파일이 자동으로 임베드됩니다. 필요하면 Viewer API를 통해 추출할 수도 있습니다.
 
-1. **여러 이메일 형식을 어떻게 처리하나요?**
-   - 사용 `GroupDocs.Viewer` 다양한 파일 유형과 렌더링 설정을 지원하는 옵션입니다.
-2. **HTML 출력 스타일을 사용자 정의할 수 있나요?**
-   - 네, 더 나은 표현을 위해 생성된 HTML 파일 내에 CSS 스타일을 직접 적용할 수 있습니다.
-3. **시간대를 자주 변경해야 한다면 어떻게 해야 하나요?**
-   - 동적 시간대 조정을 허용하는 구성 파일이나 UI 설정을 구현하는 것을 고려하세요.
-4. **이메일을 전송할 때 보안을 어떻게 보장할 수 있나요?**
-   - 항상 입력 내용을 정리하고 애플리케이션에서 민감한 데이터를 처리할 때는 안전한 방법을 사용하세요.
-5. **Java 외에 다른 프로그래밍 언어도 지원되나요?**
-   - GroupDocs.Viewer는 .NET, C++ 등에 사용할 수 있습니다. 자세한 내용은 해당 설명서를 확인하세요.
+**Q: HTML 템플릿을 변경하거나 사용자 정의 CSS를 추가할 수 있나요?**  
+A: 예, 렌더링 후 생성된 HTML 파일을 편집하거나 저장하기 전에 프로그래밍 방식으로 CSS를 삽입할 수 있습니다.
 
-## 자원
+**Q: 여러 EML 파일을 배치로 렌더링할 수 있나요?**  
+A: 렌더링 로직을 루프에 감싸고 각 파일에 동일한 `HtmlViewOptions` 인스턴스를 재사용하면 됩니다.
 
-- [선적 서류 비치](https://docs.groupdocs.com/viewer/java/)
-- [API 참조](https://reference.groupdocs.com/viewer/java/)
+**Q: MSG와 같은 다른 이메일 형식을 지원해야 한다면 어떻게 하나요?**  
+A: GroupDocs.Viewer는 MSG, PST 및 기타 이메일 컨테이너도 지원하므로 `Viewer` 생성자에서 파일 확장자를 변경하면 됩니다.
+
+**Q: 각 서버마다 별도의 라이선스가 필요합니까?**  
+A: 라이선스는 배포당 적용되며, 다중 서버 시나리오에 대해서는 GroupDocs 라이선스 가이드를 참고하세요.
+
+## 리소스
+
+- [문서](https://docs.groupdocs.com/viewer/java/)
+- [API 레퍼런스](https://reference.groupdocs.com/viewer/java/)
 - [다운로드](https://releases.groupdocs.com/viewer/java/)
-- [구입](https://purchase.groupdocs.com/buy)
+- [구매](https://purchase.groupdocs.com/buy)
 - [무료 체험](https://releases.groupdocs.com/viewer/java/)
-- [임시 면허](https://purchase.groupdocs.com/temporary-license/)
+- [임시 라이선스](https://purchase.groupdocs.com/temporary-license/)
 - [지원 포럼](https://forum.groupdocs.com/c/viewer/9)
 
-여러분의 프로젝트에 이러한 기술을 구현해보고 Java용 GroupDocs.Viewer의 모든 잠재력을 살펴보세요!
+---
+
+**마지막 업데이트:** 2026-01-10  
+**테스트 환경:** GroupDocs.Viewer 25.2 (Java)  
+**작성자:** GroupDocs

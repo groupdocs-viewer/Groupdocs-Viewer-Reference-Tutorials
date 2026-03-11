@@ -1,38 +1,48 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách hiển thị các thư mục cụ thể trong các tệp lưu trữ bằng GroupDocs.Viewer cho Java với hướng dẫn toàn diện này."
-"title": "Hiển thị thư mục lưu trữ trong Java bằng GroupDocs.Viewer&#58; Hướng dẫn từng bước"
-"url": "/vi/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-10'
+description: Tìm hiểu cách hiển thị các thư mục zip trong Java bằng GroupDocs.Viewer
+  với hướng dẫn chi tiết từng bước này.
+keywords:
+- render archive folders
+- GroupDocs.Viewer for Java
+- rendering specific folders in archives
+title: Cách hiển thị thư mục zip trong Java với GroupDocs.Viewer
 type: docs
+url: /vi/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/
+weight: 1
 ---
-# Hiển thị thư mục lưu trữ với GroupDocs.Viewer cho Java
 
-## Giới thiệu
+# Cách render thư mục zip trong Java với GroupDocs.Viewer
 
-Bạn có muốn hiển thị hiệu quả các thư mục cụ thể trong các tệp lưu trữ như ZIP trong các ứng dụng Java của mình không? Hướng dẫn chi tiết này sẽ hướng dẫn bạn quy trình sử dụng GroupDocs.Viewer cho Java. Cuối cùng, bạn sẽ biết cách tận dụng công cụ mạnh mẽ này để hợp lý hóa các tác vụ quản lý tài liệu.
+Bạn có muốn render hiệu quả các thư mục cụ thể trong các tệp lưu trữ như ZIP trong ứng dụng Java của mình không? Trong hướng dẫn này, chúng tôi sẽ trình bày **cách render zip** thư mục bằng GroupDocs.Viewer cho Java, bao gồm mọi thứ từ thiết lập dự án đến các kịch bản sử dụng thực tế.
 
-### Những gì bạn sẽ học được
-- Hiểu và sử dụng GroupDocs.Viewer cho Java.
-- Thiết lập GroupDocs.Viewer trong môi trường dự án của bạn.
-- Hướng dẫn từng bước về cách hiển thị các thư mục cụ thể trong tệp lưu trữ.
-- Ứng dụng thực tế và mẹo tối ưu hóa hiệu suất.
+![Rendering Archive Folders with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rendering-archive-folders-java.png)
 
-Chúng ta hãy bắt đầu bằng cách thiết lập các điều kiện tiên quyết cần thiết.
+## Câu trả lời nhanh
+- **“render zip” có nghĩa là gì?** Nó có nghĩa là chuyển đổi nội dung của một tệp ZIP (hoặc một thư mục cụ thể bên trong) sang các định dạng có thể xem được như HTML hoặc hình ảnh.  
+- **Thư viện nào xử lý việc này?** GroupDocs.Viewer cho Java cung cấp khả năng render lưu trữ tích hợp.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá; cần giấy phép đầy đủ cho môi trường sản xuất.  
+- **Tôi có thể render chỉ một thư mục không?** Có – sử dụng `ArchiveOptions.setFolder("YourFolder")` để chỉ định một thư mục duy nhất.  
+- **Yêu cầu phiên bản Java nào?** Java 8 hoặc cao hơn.
 
-## Điều kiện tiên quyết
+## “Cách render zip” là gì với GroupDocs.Viewer?
+GroupDocs.Viewer là một thư viện Java chuyển đổi nhiều loại tài liệu — bao gồm các lưu trữ nén — sang các định dạng thân thiện với web. Khi bạn cần hiển thị chỉ một phần của tệp ZIP (ví dụ, một thư mục chứa hình ảnh hoặc PDF), viewer cho phép bạn cô lập và render thư mục đó mà không cần giải nén toàn bộ lưu trữ.
 
-Trước khi bắt đầu triển khai, hãy đảm bảo bạn có:
+## Tại sao nên sử dụng GroupDocs.Viewer để render thư mục zip?
+- **Tốc độ:** Render trực tiếp từ lưu trữ, tránh các bước giải nén toàn bộ tốn kém.  
+- **Bảo mật:** Không cần ghi các tệp trung gian ra đĩa trừ khi bạn muốn.  
+- **Linh hoạt:** Đầu ra có thể là HTML, PNG hoặc PDF, phù hợp với hầu hết các kịch bản web hoặc desktop.  
+- **Khả năng mở rộng:** Xử lý các lưu trữ lớn với dung lượng bộ nhớ tối thiểu khi được cấu hình đúng.
 
-- **Bộ phát triển Java (JDK)**: Phiên bản 8 trở lên được cài đặt trên hệ thống của bạn.
-- **Maven**: Được cài đặt để quản lý các phụ thuộc một cách hiệu quả.
-- **Kiến thức lập trình Java cơ bản**: Quen thuộc với cú pháp Java và các khái niệm lập trình hướng đối tượng.
+## Yêu cầu trước
+- **Java Development Kit (JDK)** 8 hoặc mới hơn.  
+- **Maven** để quản lý phụ thuộc.  
+- Kiến thức cơ bản về các khái niệm lập trình Java.
 
-## Thiết lập GroupDocs.Viewer cho Java
+## Cài đặt GroupDocs.Viewer cho Java
 
 ### Cấu hình Maven
-
-Để tích hợp GroupDocs.Viewer vào dự án của bạn, hãy thêm các cấu hình sau vào `pom.xml` tài liệu:
+Thêm repository và dependency của GroupDocs vào file `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -52,33 +62,26 @@ Trước khi bắt đầu triển khai, hãy đảm bảo bạn có:
 </dependencies>
 ```
 
-### Mua lại giấy phép
-
-Để mở khóa toàn bộ tiềm năng của GroupDocs.Viewer, bạn có thể lấy [dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/) hoặc xin giấy phép tạm thời thông qua họ [trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/). Để sử dụng lâu dài, hãy cân nhắc mua giấy phép đầy đủ.
+### Cách lấy giấy phép
+Để mở khóa toàn bộ tính năng của GroupDocs.Viewer, bạn có thể nhận một [bản dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/) hoặc lấy giấy phép tạm thời qua [trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/). Đối với các dự án dài hạn, hãy cân nhắc mua giấy phép đầy đủ.
 
 ### Khởi tạo cơ bản
-
-Sau khi thiết lập xong các phụ thuộc, hãy khởi tạo GroupDocs.Viewer như thế này:
+Sau khi cấu hình Maven hoàn tất, khởi tạo viewer với đường dẫn tới tệp ZIP của bạn:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/archive.zip")) {
-    // Logic kết xuất ở đây
+    // Rendering logic goes here
 }
 ```
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
-Trong phần này, chúng ta sẽ khám phá cách hiển thị các thư mục cụ thể trong kho lưu trữ bằng GroupDocs.Viewer cho Java.
+### Cách render thư mục zip – Bước‑bước
 
-### Tính năng: Hiển thị thư mục lưu trữ
-
-Tính năng này cho phép bạn chọn lọc hiển thị một thư mục bên trong tệp lưu trữ. Cách thực hiện như sau:
-
-#### Xác định Đường dẫn đầu ra
-
-Thiết lập đường dẫn thư mục đầu ra của bạn theo phương pháp sau:
+#### Xác định đường dẫn đầu ra
+Tạo một phương thức trợ giúp để chỉ định thư mục nơi các tệp HTML đã render sẽ được lưu:
 
 ```java
 import java.nio.file.Path;
@@ -88,11 +91,9 @@ public static Path definePath() {
     return Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderArchiveFolder");
 }
 ```
-Cách tiếp cận này chỉ định nơi lưu trữ các tệp HTML đã kết xuất.
 
-#### Hiển thị thư mục cụ thể
-
-Tiếp theo, cấu hình tùy chọn kết xuất và thực hiện:
+#### Render thư mục cụ thể
+Cấu hình viewer để nhắm mục tiêu một thư mục cụ thể trong lưu trữ và tạo đầu ra HTML:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -111,13 +112,12 @@ public static void renderArchiveFolder() {
 }
 ```
 
-**Giải thích các thông số:**
-- `pageFilePathFormat`: Xác định mẫu đặt tên cho mỗi trang đầu ra.
-- `viewOptions.getArchiveOptions().setFolder(...)`: Chỉ định thư mục nào trong kho lưu trữ sẽ được hiển thị.
+**Giải thích các tham số chính**
+- `pageFilePathFormat`: Điều khiển mẫu đặt tên cho mỗi trang HTML đã render.  
+- `viewOptions.getArchiveOptions().setFolder(...)`: Chỉ đạo viewer render chỉ thư mục được chỉ định trong tệp ZIP.
 
-### Tính năng: Định nghĩa đường dẫn tùy chỉnh cho thư mục đầu ra
-
-Để linh hoạt hơn, hãy sử dụng hàm tiện ích để tùy chỉnh đường dẫn đầu ra của bạn:
+#### Định nghĩa đường dẫn tùy chỉnh cho thư mục đầu ra
+Nếu bạn cần một vị trí đầu ra khác, chỉ cần điều chỉnh phương thức `definePath`:
 
 ```java
 public static Path definePath() {
@@ -125,50 +125,50 @@ public static Path definePath() {
 }
 ```
 
-## Ứng dụng thực tế
+## Ứng dụng thực tiễn
+1. **Hệ thống quản lý tài liệu** – Hiển thị chỉ phần liên quan của một lưu trữ lớn mà không tiết lộ toàn bộ nội dung.  
+2. **Thư viện số** – Phát luồng các phần đã chọn của sách điện tử hoặc bộ sưu tập nghiên cứu trực tiếp trong trình duyệt.  
+3. **Nền tảng xem xét pháp lý** – Tập trung vào các thư mục vụ án cụ thể trong các gói zip khổng lồ, tiết kiệm thời gian và dung lượng lưu trữ.
 
-Sau đây là một số trường hợp mà việc hiển thị thư mục lưu trữ có lợi:
+## Các lưu ý về hiệu năng
+- **Quản lý bộ nhớ:** Đối với các tệp ZIP rất lớn, hãy cân nhắc tăng kích thước heap JVM hoặc xử lý các thư mục theo lô nhỏ hơn.  
+- **Hiệu suất I/O:** Ghi các tệp đã render vào SSD nhanh hoặc ổ đĩa gắn mạng để giảm độ trễ.  
+- **Tùy chọn render:** Điều chỉnh chất lượng hình ảnh hoặc cài đặt thu gọn HTML trong `HtmlViewOptions` để cân bằng tốc độ và độ chính xác hình ảnh.
 
-1. **Hệ thống quản lý tài liệu**: Hiển thị các phần cụ thể của tài liệu lưu trữ để truy cập dễ dàng hơn.
-2. **Thư viện số**: Hiển thị nội dung đã chọn từ kho lưu trữ lớn mà không cần tải xuống toàn bộ.
-3. **Đánh giá tài liệu pháp lý**: Tập trung vào các thư mục có liên quan trong tài liệu pháp lý mở rộng.
-
-## Cân nhắc về hiệu suất
-
-Để đảm bảo hiệu suất tối ưu với GroupDocs.Viewer:
-- Tối ưu hóa đường dẫn thư mục đầu ra và quy trình xử lý tệp.
-- Hãy chú ý đến việc quản lý bộ nhớ Java, đặc biệt là đối với các kho lưu trữ lớn.
-- Điều chỉnh tùy chọn kết xuất để cân bằng chất lượng và tốc độ dựa trên nhu cầu của ứng dụng.
-
-## Phần kết luận
-
-Trong suốt hướng dẫn này, bạn đã học cách hiển thị các thư mục cụ thể trong kho lưu trữ bằng GroupDocs.Viewer for Java. Từ việc thiết lập môi trường đến các ứng dụng thực tế và mẹo về hiệu suất, giờ đây bạn đã được trang bị để triển khai các giải pháp này một cách hiệu quả trong các dự án của mình.
+## Kết luận
+Bây giờ bạn đã biết **cách render zip** thư mục trong Java bằng GroupDocs.Viewer — từ việc thiết lập Maven đến việc nhắm mục tiêu một thư mục duy nhất trong lưu trữ và xử lý các vấn đề về hiệu năng. Hãy tích hợp các bước này vào ứng dụng của bạn để cung cấp truy cập nhanh, bảo mật và thân thiện với người dùng tới nội dung đã lưu trữ.
 
 ### Các bước tiếp theo
-Khám phá các tính năng nâng cao của GroupDocs.Viewer và cân nhắc tích hợp nó với các hệ thống khác để nâng cao hơn nữa khả năng quản lý tài liệu.
+Khám phá các tính năng bổ sung của GroupDocs.Viewer như chuyển đổi PDF, chèn watermark, hoặc render đa trang để làm phong phú hơn quy trình xử lý tài liệu của bạn.
 
 ## Phần Câu hỏi thường gặp
 
-1. **GroupDocs.Viewer cho Java là gì?**
-   - Một thư viện cho phép các nhà phát triển hiển thị tài liệu trong ứng dụng.
+1. **GroupDocs.Viewer cho Java là gì?**  
+   Một thư viện cho phép các nhà phát triển render tài liệu — bao gồm các lưu trữ — trực tiếp trong các ứng dụng Java.
 
-2. **Làm thế nào để cài đặt GroupDocs.Viewer bằng Maven?**
-   - Thêm kho lưu trữ và cấu hình phụ thuộc vào `pom.xml` tài liệu.
+2. **Làm thế nào để cài đặt GroupDocs.Viewer bằng Maven?**  
+   Thêm cấu hình repository và dependency vào file `pom.xml` của bạn như đã trình bày trong phần Cấu hình Maven.
 
-3. **Tôi có thể sử dụng GroupDocs.Viewer miễn phí không?**
-   - Có bản dùng thử miễn phí nhưng có thể có một số hạn chế so với phiên bản được cấp phép.
+3. **Tôi có thể sử dụng GroupDocs.Viewer miễn phí không?**  
+   Có bản dùng thử miễn phí nhưng triển khai trong môi trường sản xuất yêu cầu phiên bản có giấy phép.
 
-4. **Những vấn đề thường gặp khi kết xuất kho lưu trữ là gì?**
-   - Đảm bảo đường dẫn và cấu trúc lưu trữ tương thích với các tùy chọn kết xuất.
+4. **Những vấn đề thường gặp khi render lưu trữ là gì?**  
+   Đảm bảo tên thư mục khớp chính xác (phân biệt chữ hoa/thường) và lưu trữ không được bảo vệ bằng mật khẩu trừ khi bạn cung cấp thông tin xác thực.
 
-5. **Tôi có thể nhận hỗ trợ ở đâu nếu cần?**
-   - Ghé thăm [Diễn đàn GroupDocs](https://forum.groupdocs.com/c/viewer/9) để được cộng đồng hỗ trợ hoặc kiểm tra tài liệu của họ.
+5. **Tôi có thể nhận hỗ trợ ở đâu nếu cần?**  
+   Truy cập [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) để được cộng đồng hỗ trợ hoặc tham khảo tài liệu chính thức.
 
 ## Tài nguyên
 - [Tài liệu](https://docs.groupdocs.com/viewer/java/)
-- [Tài liệu tham khảo API](https://reference.groupdocs.com/viewer/java/)
+- [Tham chiếu API](https://reference.groupdocs.com/viewer/java/)
 - [Tải xuống GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Mua giấy phép](https://purchase.groupdocs.com/buy)
-- [Dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)
+- [Bản dùng thử](https://releases.groupdocs.com/viewer/java/)
 - [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
 - [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Cập nhật lần cuối:** 2026-01-10  
+**Đã kiểm tra với:** GroupDocs.Viewer 25.2 for Java  
+**Tác giả:** GroupDocs
