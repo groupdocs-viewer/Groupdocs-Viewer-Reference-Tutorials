@@ -87,7 +87,7 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 
 **Overview:** 文書の提示を改善するために、特定の PDF ページを回転させます。
 
-#### Step 1: Configure Page Rotation
+#### ステップ 1: ページの回転を設定する
 
 `HtmlViewOptions` を使用して、最初のページを 90 度、2 番目のページを 180 度回転させます。
 
@@ -99,7 +99,7 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 viewOptions.rotatePage(2, Rotation.ON_180_DEGREE);
 ```
 
-#### Step 2: Initialize Viewer and Render
+#### ステップ 2: ビューアを初期化してレンダリングする
 
 ドキュメントを指定して `Viewer` インスタンスを作成し、指定したページをレンダリングします。
 
@@ -113,13 +113,13 @@ viewer.view(viewOptions, 1, 2);
 viewer.close();
 ```
 
-### Parameters and Configuration
+### パラメータと設定
 
 - **Rotation**: ページ番号と回転角度を指定して `rotatePage` を使用します。利用可能な回転は `ON_90_DEGREE`、`ON_180_DEGREE`、`ON_270_DEGREE` です。
 - **HtmlViewOptions**: PDF ページの HTML 変換を構成し、埋め込みリソースが含まれるようにします。
 - **pdf to html java**: `HtmlViewOptions` クラスはレイアウトを保持しながら PDF‑to‑HTML 変換を処理します。
 
-#### Troubleshooting Tips (troubleshoot pdf rotation)
+#### トラブルシューティングのヒント (PDF の回転に関するトラブルシューティング)
 
 - ドキュメントおよび出力ディレクトリへのパスを確認してください。
 - 依存関係の欠如やライブラリバージョンの不一致がないかチェックしてください。
@@ -128,60 +128,60 @@ viewer.close();
 
 ## 実用的な応用
 
-### Real‑world Use Cases
+### 実際のユースケース
 1. **Document Alignment** – スキャンした文書を正しいデジタル向きに回転させます。
 2. **Presentation Adjustments** – 共有前に PDF 内のプレゼンテーションスライドを修正します。
 3. **Archival Workflows** – デジタル化中に歴史的文書の向きを自動的に調整します。
 
-### Integration Possibilities
+### 統合の可能性
 Java ベースのドキュメント管理システム、コンテンツプラットフォーム、または動的な閲覧機能を必要とするカスタムエンタープライズソリューションと GroupDocs.Viewer を統合します。
 
-## Performance Considerations
+## パフォーマンスに関する考慮事項
 
 - **Resource Management**: `Viewer` インスタンスを閉じてリソースを解放します。
 - **Java Memory Management**: 大容量ドキュメントをレンダリングする際はメモリ使用量を監視し、効率的なデータ構造を使用します。
 - **Best Practices**: 頻繁にアクセスされるドキュメントやページはキャッシュを活用します。
 
-## Conclusion
+## まとめ
 
 このチュートリアルでは **how to rotate pdf** ページを Java の GroupDocs.Viewer を使用して環境設定から実用的な応用までカバーしました。透かしの追加や別フォーマットへの変換など、追加機能も試してみてください。
 
-**Next Steps:** ドキュメント処理機能を強化するために、さらに多くの GroupDocs.Viewer 機能を探求してください。
+**次のステップ:** ドキュメント処理機能を強化するために、さらに多くの GroupDocs.Viewer 機能を探求してください。
 
-## FAQ Section
+## FAQ セクション
 
-### Common Questions
+### よくある質問
 1. **Troubleshooting Rotation Issues**: ページ番号と回転パラメータが正しいことを確認してください。
 2. **Handling Large PDF Files**: 適切なリソース管理で大容量文書を効率的に処理します。
 3. **Licensing Requirements**: 開発には一時ライセンスを使用し、本番環境では正式ライセンスを購入してください。
 4. **Rotating Multiple Pages**: 異なるページ番号と角度で `rotatePage` を複数回呼び出します。
 5. **Integration with Java Libraries**: GroupDocs.Viewer を大規模アプリケーションやフレームワークにシームレスに統合します。
 
-## Frequently Asked Questions
+## よくある質問
 
-**Q: Can I rotate all pages of a PDF at once?**  
-A: Yes. Loop through the page numbers and call `rotatePage(page, Rotation.ON_90_DEGREE)` for each page.
+**Q: PDF の全ページを一度に回転できますか？**
+A: はい。ページ番号をループし、各ページに対して `rotatePage(page, Rotation.ON_90_DEGREE)` を呼び出してください。
 
-**Q: Does the rotation affect the original PDF file?**  
-A: No. Rotation is applied only during the rendering process; the source PDF remains unchanged.
+**Q: 回転は元の PDF ファイルに影響しますか？**
+A: いいえ。回転はレンダリング処理中にのみ適用され、元の PDF は変更されません。
 
-**Q: What if a PDF is password‑protected?**  
-A: Provide the password when creating the `Viewer` instance: `new Viewer(path, password)`.
+**Q: PDF がパスワードで保護されている場合はどうなりますか？**
+A: `Viewer` インスタンスを作成する際にパスワードを指定してください：`new Viewer(path, password)`
 
-**Q: How do I debug a “null pointer” error when setting up HtmlViewOptions?**  
-A: Ensure the output directory exists and that `pageFilePathFormat` resolves correctly.
+**Q: HtmlViewOptions の設定時に発生する「null ポインタ」エラーをデバッグするにはどうすればよいですか？**
+A: 出力ディレクトリが存在し、`pageFilePathFormat` が正しく解決されることを確認してください。
 
-**Q: Is there a way to rotate pages when converting to other formats (e.g., PNG)?**  
-A: Use the same `rotatePage` configuration with the appropriate view options for the target format.
+**Q: 他の形式（例: PNG）に変換するときにページを回転させる方法はありますか？**
+A: 変換先の形式に適した表示オ​​プションを使用して、同じ `rotatePage` 設定を使用してください。
 
-## Resources
-- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
-- **Purchase**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)
-- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+## リソース
+- **ドキュメント**: [GroupDocs Viewer ドキュメント](https://docs.groupdocs.com/viewer/java/)
+- **API リファレンス**: [GroupDocs API リファレンス](https://reference.groupdocs.com/viewer/java/)
+- **ダウンロード**: [GroupDocs ダウンロードページ](https://releases.groupdocs.com/viewer/java/)
+- **購入**: [GroupDocs 購入オプション](https://purchase.groupdocs.com/buy)
+- **無料トライアル**: [GroupDocs 無料トライアル](https://releases.groupdocs.com/viewer/java/)
+- **一時ライセンス**: [一時ライセンスのリクエスト](https://purchase.groupdocs.com/temporary-license/)
+- **サポート**: [GroupDocs サポートフォーラム](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 

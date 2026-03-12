@@ -8,7 +8,7 @@ keywords:
 - GroupDocs.Viewer Java
 - custom filenames PDF rendering
 - archive files to PDF
-title: 'ZIP konvertálása PDF-re a GroupDocs.Viewer Java-val: Egyedi fájlnevek'
+title: 'ZIP konvertálása PDF-re a GroupDocs.Viewer Java-val - Egyedi fájlnevek'
 type: docs
 url: /hu/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1

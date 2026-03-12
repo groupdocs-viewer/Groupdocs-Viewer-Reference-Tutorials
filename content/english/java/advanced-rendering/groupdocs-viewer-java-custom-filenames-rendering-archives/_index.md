@@ -1,5 +1,5 @@
 ---
-title: "convert zip to pdf with GroupDocs.Viewer Java: Custom Filenames"
+title: "convert zip to pdf with GroupDocs.Viewer Java - Custom Filenames"
 description: "Learn how to convert zip to pdf using GroupDocs.Viewer for Java and set custom filenames for archive rendering. Step‑by‑step guide covers setup, Maven integration, and code to control PDF output names."
 date: "2026-01-18"
 weight: 1

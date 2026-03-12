@@ -7,7 +7,7 @@ keywords:
 - GroupDocs.Viewer Java
 - custom filenames PDF rendering
 - archive files to PDF
-title: 'Konversi ZIP ke PDF dengan GroupDocs.Viewer Java: Nama File Kustom'
+title: 'Konversi ZIP ke PDF dengan GroupDocs.Viewer Java - Nama File Kustom'
 type: docs
 url: /id/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
@@ -25,43 +25,43 @@ Mengonversi arsip zip ke file PDF adalah tugas umum ketika Anda perlu berbagi at
 - Aplikasi praktis fitur nama file kustom
 - Praktik terbaik untuk optimasi kinerja
 
-Mari kita mulai dengan menyiapkan lingkungan Anda dan menjelajahi fitur utama yang menjadikan GroupDocs.Viewer alat yang kuat untuk rendering dokumen.
+Mari kita mulai menyiapkan lingkungan Anda dan menjelajahi fitur utama yang menjadikan GroupDocs.Viewer alat yang kuat untuk rendering dokumen.
 
-## Quick Answers
-- **Apa kasus penggunaan utama?** Mengonversi arsip zip ke PDF dengan nama output kustom.  
-- **Perpustakaan mana yang diperlukan?** GroupDocs.Viewer untuk Java (v25.2 atau lebih baru).  
-- **Apakah saya memerlukan lisensi?** Lisensi percobaan atau sementara dapat digunakan untuk evaluasi; lisensi berbayar diperlukan untuk produksi.  
-- **Bisakah saya mengubah nama file untuk format lain?** Ya, opsi serupa tersedia untuk HTML, PNG, dll.  
+## Jawaban Cepat
+- **Apa kasus penggunaan utama?** Mengonversi arsip zip ke PDF dengan nama output kustom.
+- **Perpustakaan mana yang diperlukan?** GroupDocs.Viewer untuk Java (v25.2 atau lebih baru).
+- **Apakah saya memerlukan lisensi?** Lisensi percobaan atau sementara dapat digunakan untuk evaluasi; lisensi berbayar diperlukan untuk produksi.
+- ** mendorong saya mengubah nama file untuk format lain?** Ya, opsi serupa tersedia untuk HTML, PNG, dll.
 - **Apakah Maven satu-satunya cara untuk menginstal?** Maven disarankan, tetapi Anda juga dapat menggunakan JAR secara langsung.
 
-## Apa itu “convert zip to pdf”?
+## Apa itu “konversi zip ke pdf”?
 
 Mengonversi arsip ZIP menjadi satu dokumen PDF menggabungkan semua file yang didukung di dalam arsip (seperti DOCX, PPTX, gambar) menjadi satu file portabel. Hal ini mempermudah distribusi, memastikan rendering yang konsisten di semua platform, dan memungkinkan Anda menerapkan nama file kustom yang selaras dengan standar penamaan organisasi Anda.
 
 ## Mengapa menggunakan GroupDocs.Viewer untuk tugas ini?
 
-GroupDocs.Viewer menyediakan API tingkat tinggi yang menyederhanakan penanganan berbagai tipe file di dalam arsip. Ia juga menawarkan **ArchiveOptions** yang memungkinkan Anda menentukan nama file PDF secara tepat, sehingga pemrosesan batch dan alur kerja otomatis menjadi lebih bersih.
+GroupDocs.Viewer menyediakan API tingkat tinggi yang penyelesaian berbagai jenis file di dalam arsip. Ia juga menawarkan **ArchiveOptions** yang memungkinkan Anda menentukan nama file PDF secara tepat, sehingga pemrosesan batch dan alur kerja otomatis menjadi lebih bersih.
 
-## Prerequisites
+## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-### Required Libraries and Dependencies
-- **GroupDocs.Viewer for Java**: Version 25.2 or later.
+### Perpustakaan dan Dependensi yang Diperlukan
+- **GroupDocs.Viewer untuk Java**: Versi 25.2 atau lebih baru.
 
-### Environment Setup Requirements
+### Persyaratan Pengaturan Lingkungan
 - JDK (Java Development Kit) terpasang di mesin Anda.
 - IDE seperti IntelliJ IDEA atau Eclipse untuk mengembangkan aplikasi Java.
 
-### Knowledge Prerequisites
+### Prasyarat Pengetahuan
 - Pemahaman dasar pemrograman Java.
-- Familiaritas dengan Maven sebagai alat otomatisasi build.
+- Keakraban dengan Maven sebagai alat otomatisasi build.
 
-Dengan prasyarat ini terpenuhi, mari lanjutkan ke penyiapan GroupDocs.Viewer untuk Java.
+Dengan pertemuan ini terpenuhi, mari lanjutkan ke penyusunan GroupDocs.Viewer untuk Java.
 
-## Setting Up GroupDocs.Viewer for Java
+## Menyiapkan GroupDocs.Viewer untuk Java
 
-### Installation via Maven
+### Instalasi melalui Maven
 
 Untuk mengintegrasikan GroupDocs.Viewer ke dalam proyek Anda menggunakan Maven, tambahkan repositori dan dependensi berikut ke file `pom.xml` Anda:
 
@@ -83,12 +83,12 @@ Untuk mengintegrasikan GroupDocs.Viewer ke dalam proyek Anda menggunakan Maven, 
 </dependencies>
 ```
 
-### License Acquisition Steps
-- **Free Trial**: Akses versi percobaan yang berfungsi penuh untuk mengevaluasi fitur.
-- **Temporary License**: Dapatkan untuk evaluasi lanjutan tanpa batasan.
-- **Purchase**: Dapatkan lisensi untuk penggunaan komersial.
+### Langkah-Langkah Akuisisi Lisensi
+- **Free Trial**: Akses versi percobaan yang berfungsi penuh untuk mengaktifkan fitur.
+- **Lisensi Sementara**: Dapatkan untuk evaluasi lanjutan tanpa batasan.
+- **Pembelian**: Dapatkan lisensi untuk penggunaan komersial.
 
-#### Basic Initialization and Setup
+#### Inisialisasi dan Pengaturan Dasar
 
 Setelah menyiapkan Maven, inisialisasi GroupDocs.Viewer dengan cuplikan kode berikut:
 
@@ -102,15 +102,15 @@ try (Viewer viewer = new Viewer("YOUR_ARCHIVE_FILE_PATH")) {
 }
 ```
 
-## Implementation Guide
+## Panduan Penerapan
 
 Sekarang, mari fokus pada penentuan nama file saat **convert zip to pdf** dengan nama kustom.
 
-### How to convert zip to pdf with custom filenames
+### Cara mengonversi zip ke pdf dengan nama file khusus
 
 Fitur ini memungkinkan Anda menyesuaikan nama file output dari dokumen PDF yang dirender. Berikut caranya:
 
-#### Step 1: Define Output Directory and File Path
+#### Langkah 1: Tentukan Direktori Output dan Jalur File
 
 Mulailah dengan menyiapkan direktori output dan path file menggunakan placeholder untuk memudahkan kustomisasi:
 
@@ -121,7 +121,7 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
 ```
 
-#### Step 2: Initialize Viewer Object
+#### Langkah 2: Inisialisasi Objek Viewer
 
 Buat objek `Viewer` dengan file arsip yang ingin Anda render:
 
@@ -134,7 +134,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP")) {
 }
 ```
 
-#### Step 3: Create PdfViewOptions
+#### Langkah 3: Buat PdfViewOptions
 
 Siapkan `PdfViewOptions` untuk menentukan konfigurasi rendering:
 
@@ -144,7 +144,7 @@ import com.groupdocs.viewer.options.PdfViewOptions;
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### Step 4: Set Custom Filename
+#### Langkah 4: Atur Nama File Kustom
 
 Gunakan `ArchiveOptions` untuk menetapkan nama file kustom bagi dokumen PDF yang dirender:
 
@@ -155,7 +155,7 @@ import com.groupdocs.viewer.options.ArchiveOptions;
 viewOptions.getArchiveOptions().setFileName(new FileName("my_custom_filename.pdf"));
 ```
 
-#### Step 5: Render Archive File to PDF
+#### Langkah 5: Render File Arsip ke PDF
 
 Akhirnya, render file arsip Anda menggunakan opsi yang telah ditentukan:
 
@@ -164,62 +164,62 @@ Akhirnya, render file arsip Anda menggunakan opsi yang telah ditentukan:
 viewer.view(viewOptions);
 ```
 
-### Troubleshooting Tips
-- Pastikan semua path telah diatur dengan benar dan direktori ada.
+### Tip Mengatasi Masalah
+- Pastikan semua jalur telah diatur dengan benar dan direktori ada.
 - Verifikasi bahwa Anda memiliki versi GroupDocs.Viewer yang tepat terpasang.
 
-## Practical Applications
+## Aplikasi Praktis
 
-Memahami cara **convert zip to pdf** dan menetapkan nama file kustom dapat bermanfaat dalam berbagai skenario:
-1. **Konsistensi Merek** – Sesuaikan nama file output untuk tujuan branding di banyak dokumen.  
-2. **Efisiensi Organisasi** – Pertahankan konvensi penamaan yang konsisten untuk memudahkan manajemen dan pengambilan dokumen.  
+Memahami cara **convert zip to pdf** dan mengatur nama file kustom dapat bermanfaat dalam berbagai skenario:
+1. **Konsistensi Merek** – Sesuaikan nama file output untuk tujuan branding di banyak dokumen.
+2. **Efisiensi Organisasi** – Mempertahankan konvensi penamaan yang konsisten untuk memudahkan pengelolaan dan pengambilan dokumen.
 3. **Pelaporan Otomatis** – Hasilkan laporan dengan nama file spesifik secara otomatis melalui tugas terjadwal.
 
-## Performance Considerations
+## Pertimbangan Kinerja
 
-Saat bekerja dengan GroupDocs.Viewer, pertimbangkan hal berikut untuk mengoptimalkan kinerja:
+Saat bekerja dengan GroupDocs.Viewer, mengingat hal berikut untuk mengoptimalkan kinerja:
 - Manfaatkan praktik manajemen memori yang efisien dalam Java.
 - Pantau penggunaan sumber daya selama operasi rendering.
-- Terapkan praktik terbaik untuk menangani arsip dokumen besar tanpa memengaruhi kinerja sistem.
+- Terapkan praktik terbaik untuk menangani arsip dokumen besar tanpa mempengaruhi kinerja sistem.
 
-## Conclusion
+## Kesimpulan
 
-Dalam tutorial ini, Anda telah belajar **cara mengonversi zip ke pdf** sambil menentukan nama file kustom menggunakan GroupDocs.Viewer untuk Java. Dengan mengikuti langkah‑langkah ini, Anda dapat menyederhanakan proses manajemen dokumen dan memastikan konsistensi pada PDF yang dihasilkan.
+Dalam tutorial ini, Anda telah belajar **cara mengonversi zip ke pdf** sambil menentukan nama file kustom menggunakan GroupDocs.Viewer untuk Java. Dengan mengikuti langkah‑langkah ini, Anda dapat mengatur proses manajemen dokumen dan memastikan konsistensi pada PDF yang dihasilkan.
 
-### Next Steps
-- Jelajahi fitur tambahan GroupDocs.Viewer (misalnya, output HTML, PNG).  
-- Bereksperimen dengan merender tipe arsip lain seperti TAR atau 7z.  
+### Langkah Selanjutnya
+- Menjelajahi fitur tambahan GroupDocs.Viewer (misalnya, output HTML, PNG).
+- Bereksperimen dengan merender tipe arsip lain seperti TAR atau 7z.
 
-Siap menerapkan solusi ini dalam proyek Anda? Cobalah hari ini!
+Siap menerapkan solusi ini dalam proyek Anda? Suatu hari ini!
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
-**T: Bagaimana cara menginstal GroupDocs.Viewer untuk Java?**  
+**T: Bagaimana cara menginstal GroupDocs.Viewer untuk Java?**
 **J:** Gunakan Maven dan tambahkan repositori serta dependensi yang telah ditentukan ke file `pom.xml` Anda.
 
-**T: Bisakah saya menentukan nama file untuk format lain selain PDF?**  
+**T: Bisakah saya menentukan nama file untuk format lain selain PDF?**
 **J:** Ya, opsi serupa tersedia untuk format output berbeda yang didukung oleh GroupDocs.Viewer.
 
-**T: Bagaimana jika nama file dokumen yang dirender tidak sesuai harapan?**  
-**J:** Periksa kembali definisi path dan pastikan semua konfigurasi telah diatur dengan benar.
+**T: Bagaimana jika nama file dokumen yang dirender tidak sesuai harapan?**
+**J:** Periksa kembali resolusi path dan pastikan semua konfigurasi telah diatur dengan benar.
 
-**T: Bagaimana cara menangani file arsip besar dengan GroupDocs.Viewer?**  
-**J:** Optimalkan penggunaan memori dan pertimbangkan membagi file besar menjadi bagian‑bagian lebih kecil untuk diproses.
+**T: Bagaimana cara menangani file arsip besar dengan GroupDocs.Viewer?**
+**J:** Optimalkan penggunaan memori dan membagi file besar menjadi bagian‑bagian lebih kecil untuk diproses.
 
-**T: Di mana saya dapat menemukan lebih banyak sumber daya tentang penggunaan GroupDocs.Viewer?**  
-**J:** Kunjungi [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) untuk panduan lengkap dan referensi API.
+**T: Di mana saya dapat menemukan lebih banyak sumber daya tentang penggunaan GroupDocs.Viewer?**
+**J:** Kunjungi [dokumentasi GroupDocs](https://docs.groupdocs.com/viewer/java/) untuk panduan lengkap dan referensi API.
 
-## Resources
-- **Documentation**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
-- **API Reference**: [GroupDocs Viewer Java Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [GroupDocs Viewer Releases](https://releases.groupdocs.com/viewer/java/)
-- **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Free Trial**: [Try GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License**: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+## Sumber Daya
+- **Dokumentasi**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **Referensi API**: [GroupDocs Viewer Java Reference](https://reference.groupdocs.com/viewer/java/)
+- **Unduh**: [GroupDocs Viewer Releases](https://releases.groupdocs.com/viewer/java/)
+- **Pembelian**: [Beli Lisensi GroupDocs](https://purchase.groupdocs.com/buy)
+- **Uji Coba Gratis**: [Coba GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Lisensi Sementara**: [Dapatkan Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
+- **Dukungan**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2026-01-18  
-**Diuji dengan:** GroupDocs.Viewer 25.2 untuk Java  
+**Terakhir Diperbarui:** 18-01-2026
+**Diuji dengan:** GroupDocs.Viewer 25.2 untuk Java
 **Penulis:** GroupDocs

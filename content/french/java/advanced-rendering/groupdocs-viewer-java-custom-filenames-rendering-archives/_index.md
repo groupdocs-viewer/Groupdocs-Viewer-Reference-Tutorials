@@ -8,7 +8,7 @@ keywords:
 - GroupDocs.Viewer Java
 - custom filenames PDF rendering
 - archive files to PDF
-title: 'convertir zip en pdf avec GroupDocs.Viewer Java : noms de fichiers personnalisés'
+title: 'convertir zip en pdf avec GroupDocs.Viewer Java - noms de fichiers personnalisés'
 type: docs
 url: /fr/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1

@@ -12,47 +12,47 @@ url: /th/java/
 weight: 10
 ---
 
-# Render PDF Java – คำแนะนำและตัวอย่างเชิงลึกของ GroupDocs.Viewer สำหรับ Java
+# Render PDF Java – วิธีและตัวอย่างเชิงลึกของ GroupDocs.Viewer สำหรับ Java
 
-## Introduction
-ยินดีต้อนรับสู่แหล่งข้อมูลที่ครบถ้วนสำหรับ **render pdf java** ด้วย GroupDocs.Viewer ไม่ว่าคุณจะเพิ่งเริ่มต้นหรือกำลังมองหาการปรับแต่งตัวดูเอกสารที่มีการใช้งานสูง คู่มือนี้จะพาคุณผ่านทุกขั้นตอนของการแปลง PDF ใน Java ตั้งแต่การตั้งค่าเบื้องต้นจนถึงการปรับประสิทธิภาพขั้นสูง คุณจะได้พบกับเคล็ดลับที่ใช้งานได้จริง กรณีการใช้งานในโลกจริง และคำแนะนำแบบขั้นตอนที่ชัดเจนซึ่งคุณสามารถนำไปใช้ในโครงการของคุณได้ทันที
+## การแนะนำ
+สำรวจที่ครบถ้วนสำหรับ **render pdf java** ด้วย GroupDocs.Viewer ทางการแพทย์เพียงเริ่มต้นหรือเรียกดูข้อมูลตัวดูเอกสารที่มีการใช้งานสูงเพื่อให้พาคุณผ่านทุกขั้นตอนของการอภิปราย PDF ใน Java และแนะนำเบื้องต้นจนถึงประสิทธิภาพที่ประสบความสำเร็จ คุณค้นพบเคล็ดลับที่ใช้งานได้จริงในการใช้งานในโลกจริง และคำแนะนำแบบขั้นตอนที่คุณจะได้ทราบถึงแนวทางของคุณได้ทันที
 
-## Quick Answers
-- **What is the primary purpose of GroupDocs.Viewer for Java?** Rendering a wide range of document formats (including PDF) to HTML, images, or PDF without needing Microsoft Office.  
-- **Can I render PDFs on the server side?** Yes – the library works completely on the server, making it ideal for web‑based viewers.  
-- **Do I need a license for production?** A commercial license is required for production deployments; a free trial is available for evaluation.  
-- **Which Java versions are supported?** Java 8 and newer, including Java 11, Java 17, and later LTS releases.  
-- **Is performance tuning possible?** Absolutely – see the “Performance Tuning Java” section for memory‑ and speed‑optimizing techniques.
+## คำตอบด่วน
+- **วัตถุประสงค์หลักของ GroupDocs.Viewer สำหรับ Java คืออะไร** เรนเดอร์รูปแบบเอกสารที่หลากหลาย (รวมถึง PDF) เป็น HTML, รูปภาพ หรือ PDF โดยไม่จำเป็นต้องใช้ Microsoft Office
+- **ฉันสามารถเรนเดอร์ PDF บนฝั่งเซิร์ฟเวอร์ได้หรือไม่** ใช่ – ไลบรารีทำงานได้อย่างสมบูรณ์บนเซิร์ฟเวอร์ ทำให้เหมาะสำหรับผู้ดูบนเว็บ
+- **ฉันต้องมีใบอนุญาตสำหรับการผลิตหรือไม่** จำเป็นต้องมีใบอนุญาตเชิงพาณิชย์สำหรับการปรับใช้การผลิต มีการทดลองใช้ฟรีสำหรับการประเมินผล
+- **รองรับ Java เวอร์ชันใดบ้าง** Java8 และใหม่กว่า รวมถึง Java11, Java17 และ LTS ที่ใหม่กว่า
+- **สามารถปรับประสิทธิภาพได้หรือไม่** แน่นอน – โปรดดูส่วน “การปรับแต่งประสิทธิภาพ Java” สำหรับเทคนิคการปรับหน่วยความจำและความเร็วให้เหมาะสม
 
-## What is **render pdf java**?
-Rendering PDF Java หมายถึงการแปลงไฟล์ PDF ให้เป็นรูปแบบที่เหมาะกับเว็บ (HTML, รูปภาพ หรือ PDF อีกไฟล์หนึ่ง) โดยตรงจากแอปพลิเคชัน Java GroupDocs.Viewer จะรับหน้าที่หนัก ๆ นี้ไว้ โดยคงรักษาเลย์เอาต์ ฟอนต์ และกราฟิกเวกเตอร์ไว้ครบถ้วน พร้อมให้คุณเข้าถึงผ่าน API ที่เรียบง่าย
+## **render pdf java** คืออะไร?
+Rendering PDF Java เน้นไฟล์ PDF ไม่ให้เป็นเรื่องของเว็บ (HTML, รูปภาพหรือ PDF ไฟล์หนึ่ง) โปรแกรม Java GroupDocs.Viewer จะรับหน้าที่หนักๆ ไว้โดยเฉพาะโดยคงรักษาไลเอาต์ฟอนต์และกราฟิกที่ไว้ครบถ้วนผ่านให้คุณเข้าถึง API ของเว็บ
 
-## Why use GroupDocs.Viewer for Java?
-- **Cross‑format support** – beyond PDF, it renders Word, Excel, PowerPoint, images, and more.  
-- **No external dependencies** – no need for Office installations or native converters.  
-- **Scalable performance** – optimized for large documents and high‑concurrency scenarios.  
-- **Security‑first** – supports password‑protected files and can strip sensitive content.  
+## เหตุใดจึงต้องใช้ GroupDocs.Viewer สำหรับ Java
+- **รองรับข้ามรูปแบบ** – นอกเหนือจาก PDF แล้ว ยังแสดงผล Word, Excel, PowerPoint, รูปภาพ และอื่นๆ อีกมากมาย
+- **ไม่มีการพึ่งพาภายนอก** – ไม่จำเป็นต้องติดตั้ง Office หรือตัวแปลงเนทิฟ
+- **ประสิทธิภาพที่ปรับขนาดได้** – ปรับให้เหมาะสมสำหรับเอกสารขนาดใหญ่และสถานการณ์การทำงานพร้อมกันสูง
+- **การรักษาความปลอดภัยมาก่อน** – รองรับไฟล์ที่มีการป้องกันด้วยรหัสผ่านและสามารถตัดเนื้อหาที่ละเอียดอ่อนได้
 
-## Performance Tuning Java
-การเพิ่มประสิทธิภาพการแปลงและการใช้หน่วยความจำเป็นสิ่งสำคัญสำหรับงานในระดับผลิตภัณฑ์ เทคนิคที่ใช้ได้รวมถึง:
-- Reusing `Viewer` instances where possible.  
-- Limiting rendered pages to only those needed (`setPageNumber`).  
-- Enabling stream‑based rendering to avoid loading entire files into memory.  
-- Configuring `ViewerConfig` with appropriate cache settings.
+## การปรับแต่งประสิทธิภาพ Java
+การสอบสวนและการชี้แจงเป็นสิ่งสำคัญในระดับลึกของผลิตภัณฑ์เทคนิคที่ใช้ได้ ได้แก่:
+- นำอินสแตนซ์ `Viewer` กลับมาใช้ใหม่เมื่อเป็นไปได้
+- การจำกัดหน้าที่แสดงผลให้เหลือเพียงหน้าที่จำเป็นเท่านั้น (`setPageNumber`)
+- เปิดใช้งานการเรนเดอร์แบบสตรีมเพื่อหลีกเลี่ยงการโหลดไฟล์ทั้งหมดลงในหน่วยความจำ
+- การกำหนดค่า `ViewerConfig` ด้วยการตั้งค่าแคชที่เหมาะสม
 
-## Adding Watermarks in Java (**add watermark java**)
-GroupDocs.Viewer ให้คุณฝังลายน้ำระหว่างการแปลง คุณสามารถเพิ่มลายน้ำแบบข้อความหรือรูปภาพเพื่อปกป้องเอกสารหรือทำแบรนด์ให้กับเอกสารได้ API รับอ็อบเจกต์ `Watermark` ที่คุณกำหนดค่าเพียงครั้งเดียวแล้วนำไปใช้ซ้ำในแต่ละการแปลง
+## การเพิ่มลายน้ำใน Java (**เพิ่มลายน้ำ java**)
+GroupDocs.Viewer ให้คุณฝังลายน้ำระหว่างการควบคุมตรวจสอบลายน้ำแบบข้อความหรือรูปภาพของเอกสารหรือทำแบรนด์ให้กับเอกสารได้ API รับอ็อบเจกต์ `Watermark` ที่คุณรู้วิธีการแล้วนำไปใช้ซ้ำอีกครั้งในครัวเรือน
 
-## Converting Word to HTML in Java (**convert word html java**)
-หากคุณต้องการแสดงเอกสาร Word เป็น HTML ตัวดูเอกสารสามารถแปลงไฟล์ `.docx` ได้ทันที ซึ่งเป็นประโยชน์สำหรับพอร์ทัลเว็บที่ต้องการพรีวิวเนื้อหาโดยไม่ต้องดาวน์โหลดไฟล์ต้นฉบับ
+## การแปลง Word เป็น HTML ใน Java (**แปลงคำ html java**)
+แสดงเอกสาร Word เป็น HTML ดูพนักงานเอกสารสามารถแปลงไฟล์ `.docx` ได้ทันทีซึ่งเป็นประโยชน์สำหรับใช้กับเว็บที่ต้องการพรีวิวเนื้อหาร่วมกับเอกสารต้นฉบับ
 
-## Extracting Metadata in Java (**extract metadata java**)
-นอกจากการแปลงภาพแล้ว คุณยังสามารถดึงข้อมูลเมตาเช่นผู้เขียน วันที่สร้าง และคุณสมบัติต่าง ๆ ของเอกสารได้ ข้อมูลนี้มีประโยชน์สำหรับการทำดัชนี การค้นหา หรือการรายงานตามข้อกำหนด
+## แยกข้อมูลเมตาใน Java (** แยกข้อมูลเมตา java **)
+ตรวจสอบข้อมูลภาพแล้ว ดึงข้อมูลเมตาเช่นภายในวันที่สร้างและคุณสมบัติต่าง ๆ ของเอกสารได้ข้อมูลนี้มีประโยชน์สำหรับการทำดัชนีค้นหาหรือตามคำสั่งตามคำสั่ง
 
-## Loading Documents from URLs in Java (**load document url java**)
-GroupDocs.Viewer รองรับการโหลดเอกสารโดยตรงจาก URL ระยะไกลหรือสตรีมจากคลาวด์ ทำให้ไม่ต้องสร้างสำเนาไฟล์ชั่วคราวบนเครื่องและช่วยลดความซับซ้อนของสถาปัตยกรรมแบบกระจาย
+## กำลังโหลดเอกสารจาก URL ใน Java (**โหลดเอกสาร url java**)
+GroupDocs.Viewer รองรับเอกสารหลักฐานต่างๆ ของ URL ที่มีการเผยแพร่หรือสตรีมจากที่ไม่จำเป็นต้องสร้างไฟล์ชั่วคราวบนเครื่องและความถี่ของการตรวจสอบแบบกระจาย
 
-## Tutorial Categories
+## หมวดหมู่การสอน
 
 ### [Getting Started](./getting-started/)
 เรียนรู้พื้นฐานของ GroupDocs.Viewer สำหรับ Java คำแนะนำสำหรับผู้เริ่มต้นของเราจะพาคุณผ่านการติดตั้ง การขอใบอนุญาต และการตั้งค่าเริ่มต้น เพื่อให้คุณมีพื้นฐานที่มั่นคงสำหรับการแปลงเอกสารในแอปพลิเคชัน Java ของคุณ
@@ -93,32 +93,32 @@ GroupDocs.Viewer รองรับการโหลดเอกสารโด
 ### [Custom Rendering](./custom-rendering/)
 สำรวจการปรับแต่งขั้นสูงด้วยคำแนะนำการสร้างตัวจัดการการแปลงแบบกำหนดเองและขยายความสามารถของ GroupDocs.Viewer นอกเหนือจากการแปลงมาตรฐาน
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q: Can I render PDFs without installing any third‑party software?**  
-A: Yes. GroupDocs.Viewer for Java is a pure‑Java library and does not require Microsoft Office, Adobe Reader, or other external components.
+**ถาม: ฉันสามารถสร้างไฟล์ PDF โดยไม่ต้องติดตั้งซอฟต์แวร์ของบุคคลที่สามได้หรือไม่?**
+ตอบ: ได้ GroupDocs.Viewer สำหรับ Java เป็นไลบรารี Java บริสุทธิ์ และไม่ต้องการ Microsoft Office, Adobe Reader หรือส่วนประกอบภายนอกอื่นๆ
 
-**Q: How do I add a text watermark while rendering a PDF?**  
-A: Create a `Watermark` object with the desired text, assign it to `ViewerConfig`, and pass the config to the `Viewer` when rendering.
+**ถาม: ฉันจะเพิ่มลายน้ำข้อความขณะสร้างไฟล์ PDF ได้อย่างไร?**
+ตอบ: สร้างออบเจ็กต์ `Watermark` ด้วยข้อความที่ต้องการ กำหนดให้กับ `ViewerConfig` และส่งค่าคอนฟิกไปยัง `Viewer` เมื่อทำการสร้างไฟล์
 
-**Q: What is the best way to improve rendering speed for large PDFs?**  
-A: Render only the pages you need, reuse `Viewer` instances, and enable stream‑based rendering to keep memory usage low.
+**ถาม: วิธีที่ดีที่สุดในการเพิ่มความเร็วในการสร้างไฟล์ PDF ขนาดใหญ่คืออะไร?**
+ตอบ: สร้างเฉพาะหน้าที่คุณต้องการ ใช้ `Viewer` ซ้ำ และเปิดใช้งานการสร้างไฟล์แบบสตรีมเพื่อลดการใช้หน่วยความจำ
 
-**Q: Is it possible to extract the author and creation date from a PDF?**  
-A: Yes. Use the `DocumentInfo` class after loading the document to retrieve metadata such as author, creation date, and keywords.
+**ถาม: สามารถดึงข้อมูลผู้เขียนและวันที่สร้างจากไฟล์ PDF ได้หรือไม่?**
+ตอบ: ได้ ใช้คลาส `DocumentInfo` หลังจากโหลดเอกสารแล้ว เพื่อดึงข้อมูลเมตา เช่น ผู้เขียน วันที่สร้าง และคำสำคัญ
 
-**Q: Can I load a PDF directly from an AWS S3 URL?**  
-A: Absolutely. Fetch the file as an `InputStream` from S3 and pass the stream to the `Viewer` constructor.
+**ถาม: ฉันสามารถโหลดไฟล์ PDF จาก URL ของ AWS S3 ได้โดยตรงหรือไม่?**
+ตอบ: ได้อย่างแน่นอน ดึงไฟล์เป็น `InputStream` จาก S3 แล้วส่งสตรีมนั้นไปยังตัวสร้าง `Viewer`
 
-## Additional Resources
-- [GroupDocs.Viewer Documentation](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer Downloads](https://downloads.groupdocs.com/viewer/java)
-- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/)
+## แหล่งข้อมูลเพิ่มเติม
+- [เอกสารประกอบการใช้งาน GroupDocs.Viewer](https://reference.groupdocs.com/viewer/java/)
+- [ดาวน์โหลด GroupDocs.Viewer](https://downloads.groupdocs.com/viewer/java)
+- [ฟอรัมสนับสนุน GroupDocs](https://forum.groupdocs.com/c/viewer/)
 
 ---
 
-**Last Updated:** 2026-01-18  
-**Tested With:** GroupDocs.Viewer for Java 23.11 (latest at time of writing)  
-**Author:** GroupDocs  
+**อัปเดตล่าสุด:** 2026-01-18
+**ทดสอบกับ:** GroupDocs.Viewer สำหรับ Java 23.11 (เวอร์ชันล่าสุด ณ เวลาที่เขียน)
+**ผู้เขียน:** GroupDocs  
 
 ---
