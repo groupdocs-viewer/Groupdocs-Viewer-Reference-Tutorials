@@ -1,40 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a usar o GroupDocs.Viewer para Java para girar a primeira página dos seus documentos em 90 graus. Aprimore a apresentação de documentos sem esforço com este guia completo."
-"title": "Girar a primeira página de um documento usando o GroupDocs.Viewer para Java (guia avançado)"
-"url": "/pt/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-18'
+description: Aprenda a girar a página 90 graus em Java usando o GroupDocs Viewer,
+  incluindo configuração, código e dicas de desempenho.
+keywords:
+- rotate first page GroupDocs Viewer Java
+- GroupDocs Viewer Java setup
+- rotate pages in documents using Java
+title: Gire a página 90 graus com o GroupDocs Viewer para Java
 type: docs
+url: /pt/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/
+weight: 1
 ---
-# Girar a primeira página de um documento usando GroupDocs.Viewer para Java
 
-## Introdução
+# Rotacionar página 90 graus com GroupDocs Viewer para Java
 
-Você já precisou ajustar páginas específicas de um documento, especialmente ao preparar arquivos para apresentações ou impressão? Este guia avançado mostrará como usar o GroupDocs.Viewer para Java para girar a primeira página dos seus documentos em 90 graus no sentido horário. Com esse recurso, a transformação de PDFs e documentos do Word se torna simples, aprimorando a apresentação do documento com o mínimo de esforço.
+Quando você precisa **rotacionar página 90 graus** em um documento—seja ele um PDF, um arquivo Word ou uma planilha—fazer isso programaticamente economiza tempo e elimina erros manuais. Neste guia avançado, vamos percorrer os passos exatos para rotacionar a primeira página de qualquer documento suportado usando **GroupDocs Viewer para Java**. Ao final, você terá um trecho reutilizável que pode inserir em seus próprios projetos.
 
-**O que você aprenderá:**
-- Como configurar o GroupDocs.Viewer em um projeto Java
-- Etapas para girar páginas específicas em um documento
-- Melhores práticas para otimizar o desempenho
+![Rotacionar a Primeira Página de um Documento com GroupDocs.Viewer para Java](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
 
-Agora que você conhece os benefícios, vamos abordar alguns pré-requisitos antes de nos aprofundarmos no processo de configuração e implementação.
+## Quick Answers
+- **O que significa “rotacionar página 90 graus”?** Ele gira a página selecionada no sentido horário em um quarto de volta.  
+- **Qual biblioteca lida com a rotação?** O GroupDocs Viewer para Java fornece o método `rotatePage`.  
+- **Posso rotacionar páginas PDF com Java?** Sim—use a mesma chamada `rotatePage`; funciona para PDF, DOCX, XLSX e outros.  
+- **Preciso de uma licença?** Um teste gratuito funciona para desenvolvimento; uma licença paga é necessária para produção.  
+- **A operação consome muita memória?** Não quando você fecha a instância `Viewer` prontamente; veja as dicas de desempenho abaixo.
 
-## Pré-requisitos
+## O que é “rotacionar página 90 graus”?
+Rotacionar uma página 90 graus reorienta a página de retrato para paisagem (ou vice‑versa) sem alterar o conteúdo subjacente. Isso é especialmente útil para apresentações, impressão de gráficos apenas em paisagem ou correção de documentos escaneados que foram capturados de lado.
 
-Antes de implementar esse recurso, certifique-se de ter:
+## Por que rotacionar páginas com GroupDocs Viewer para Java?
+O GroupDocs Viewer abstrai as complexidades de lidar com dezenas de formatos de arquivo. Ele permite aplicar transformações ao nível da página—como rotação—mantendo o arquivo original intacto. A API é fluente, thread‑safe e funciona em qualquer runtime Java 8+.
 
-### Bibliotecas e dependências necessárias:
-- **GroupDocs.Viewer para Java**: A biblioteca primária necessária para manipular visualizações de documentos.
-- **Kit de Desenvolvimento Java (JDK)**: Certifique-se de ter o JDK instalado. Recomenda-se a versão 8 ou superior.
-- **Especialista** ou outra ferramenta de construção como Gradle, para gerenciar dependências.
+## Prerequisites
 
-### Requisitos de configuração do ambiente:
-- Um Ambiente de Desenvolvimento Integrado (IDE) compatível, como IntelliJ IDEA ou Eclipse.
-- Noções básicas de programação Java e trabalho com operações de E/S de arquivos.
+- **GroupDocs.Viewer for Java** (latest version)
+- **JDK 8** or newer
+- **Maven** (or Gradle) for dependency management
+- An IDE such as IntelliJ IDEA or Eclipse
+- Basic familiarity with Java I/O
 
-## Configurando o GroupDocs.Viewer para Java
+## Configurando GroupDocs.Viewer para Java
 
-Primeiramente, você precisa adicionar a biblioteca GroupDocs.Viewer ao seu projeto. Se estiver usando Maven, inclua a seguinte configuração no seu projeto. `pom.xml`:
+Adicione o repositório GroupDocs e a dependência ao seu `pom.xml`. Este trecho permanece inalterado em relação ao tutorial original:
 
 ```xml
 <repositories>
@@ -53,34 +60,27 @@ Primeiramente, você precisa adicionar a biblioteca GroupDocs.Viewer ao seu proj
 </dependencies>
 ```
 
-### Etapas de aquisição de licença:
-- **Teste grátis**: Baixe uma versão de avaliação gratuita do site GroupDocs para explorar os recursos.
-- **Licença Temporária**: Solicite uma licença temporária se precisar de mais tempo para testar antes de comprar.
-- **Comprar**: Considere comprar uma licença completa para uso em produção.
+### License acquisition
+- **Teste gratuito** – faça o download no site da GroupDocs.  
+- **Licença temporária** – solicite se precisar de um período de avaliação estendido.  
+- **Licença completa** – compre para implantações em produção.
 
-### Inicialização e configuração básicas:
+### Basic Viewer initialization
+O código a seguir mostra a forma mínima de criar uma instância `Viewer`. Mantenha exatamente como mostrado:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
-// Inicialize o Visualizador com o caminho do seu documento
+// Initialize Viewer with your document path
 try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
-    // Executar operações...
+    // Perform operations...
 }
 ```
 
-## Guia de Implementação
+## Implementação Passo a Passo: Rotacionar a Primeira Página 90 Graus
 
-Vamos nos concentrar na tarefa específica de girar uma página em um documento. Esse recurso é extremamente útil para corrigir problemas de orientação sem precisar editar manualmente cada documento.
-
-### Girando a primeira página 90 graus no sentido horário
-
-#### Visão geral:
-Esta seção mostra como girar apenas a primeira página de um documento usando os recursos do GroupDocs.Viewer.
-
-##### Implementação passo a passo:
-
-**1. Importar pacotes necessários:**
+### 1. Importe os pacotes necessários
+Essas importações dão acesso às opções de renderização PDF e ao enum de rotação.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -88,7 +88,8 @@ import com.groupdocs.viewer.options.PdfViewOptions;
 import com.groupdocs.viewer.options.Rotation;
 ```
 
-**2. Defina o diretório de saída e inicialize o visualizador:**
+### 2. Defina os locais de saída e crie o Viewer
+Substitua os caminhos de placeholder pelos seus diretórios reais.
 
 ```java
 import java.nio.file.Path;
@@ -99,78 +100,85 @@ public class RotateSpecificPage {
         Path outputFilePath = outputDirectory.resolve("output.pdf");
 
         try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("Sample.docx"))) {
-            // Prossiga com os passos de rotação abaixo...
+            // Proceed with the rotation steps below...
         }
     }
 }
 ```
 
-**3. Configure as opções de visualização de PDF e gire a página:**
+### 3. Configure as opções de visualização PDF e aplique a rotação
+O método `rotatePage` recebe o número da página (baseado em 1) e um valor do enum `Rotation`.
 
 ```java
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 
-// Especifique qual página girar (1 para a primeira página) e o ângulo de rotação
+// Specify which page to rotate (1 for first page) and the rotation angle
 viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 ```
 
-**4. Renderizar documento com opções especificadas:**
+### 4. Renderize o documento
+Finalmente, chame `view` para gerar o PDF rotacionado.
 
 ```java
 viewer.view(viewOptions);
 ```
 
-#### Explicação:
-- **Opções de visualização de PDF**: Configura como o documento é salvo no formato PDF.
-- **rotatePage(int pageNumber, Rotação rotação)**: Este método gira a página especificada para o ângulo desejado (90, 180 ou 270 graus).
+#### Como funciona
+- **PdfViewOptions** informa ao Viewer para gerar um arquivo PDF.  
+- **rotatePage(int, Rotation)** rotaciona apenas a página que você especificar, deixando as demais intactas.  
+- O método suporta `ON_90_DEGREE`, `ON_180_DEGREE` e `ON_270_DEGREE`.
 
-### Dicas para solução de problemas:
-- Certifique-se de que os caminhos dos arquivos estejam corretamente definidos e acessíveis.
-- Verifique a compatibilidade correta da versão da biblioteca.
+## Common Issues and Solutions
+| Sintoma | Causa Provável | Solução |
+|---------|----------------|---------|
+| **FileNotFoundException** | Caminho incorreto ou pasta ausente | Verifique se `YOUR_OUTPUT_DIRECTORY` e `YOUR_DOCUMENT_DIRECTORY` existem e são legíveis. |
+| **Unsupported file format** | Tentando rotacionar um formato não suportado pelo Viewer | Verifique a página [GroupDocs Viewer supported formats]. |
+| **No rotation visible** | Usando o número de página errado (baseado em 0) | Lembre-se de que `rotatePage` usa indexação **baseada em 1**. |
+| **Out‑of‑memory errors on large docs** | Renderizando muitos arquivos grandes em uma única thread | Processar documentos sequencialmente ou usar um pool de threads com concorrência limitada. |
 
-## Aplicações práticas
+## Aplicações Práticas
 
-1. **Ajustes de apresentação**: Gire as páginas para ajustá-las a orientações específicas dos slides durante reuniões ou apresentações.
-2. **Correção de Documentos**: Corrija rapidamente orientações de página incorretas em documentos em massa sem edição manual.
-3. **Melhorias na impressão**Garanta que os documentos sejam impressos com o layout desejado, especialmente ao lidar com conteúdo com orientação paisagem em papel retrato.
+1. **Ajustes de apresentação** – Converta um slide em retrato para paisagem em tempo real.  
+2. **Correção em massa de documentos** – Automatize a correção de PDFs escaneados que foram capturados de lado.  
+3. **Saída pronta para impressão** – Garanta que gráficos em paisagem imprimam corretamente em papel orientado em retrato.
 
-## Considerações de desempenho
+## Dicas de Desempenho
 
-- **Otimize o uso da memória**: Sempre feche os fluxos de arquivos e recursos imediatamente para evitar vazamentos de memória.
-- **Processamento em lote**: Se estiver processando vários documentos, considere usar operações multithread ou em lote para maior eficiência.
-- **Monitorar alocação de recursos**: Fique de olho no uso da CPU e da memória, especialmente com grandes conjuntos de documentos.
+- **Feche recursos prontamente** – O bloco `try‑with‑resources` descarta automaticamente o `Viewer`.  
+- **Processamento em lote** – Ao lidar com muitos arquivos, reutilize uma única instância `Viewer` por thread para reduzir a sobrecarga.  
+- **Monitore a memória** – Para documentos maiores que 100 MB, considere transmitir a saída para disco ao invés de mantê-la na memória.
 
-## Conclusão
+## Perguntas Frequentes
 
-Agora você aprendeu a girar a primeira página de um documento em 90 graus usando o GroupDocs.Viewer para Java. Este recurso é apenas um exemplo dos poderosos recursos que o GroupDocs oferece para manipulação e visualização de documentos.
+**P: Posso rotacionar várias páginas de uma vez?**  
+**R: Sim—chame `rotatePage()` para cada número de página que precisar rotacionar.**
 
-**Próximos passos:**
-- Explore outros recursos, como marca d'água ou renderização de documentos como imagens.
-- Integre esta funcionalidade aos seus aplicativos existentes para automatizar tarefas de processamento de documentos.
+**P: Existe uma maneira de desfazer a rotação após a renderização?**  
+**R: Não diretamente. Você precisaria renderizar o documento novamente sem as opções de rotação.**
 
-**Chamada para ação**Experimente implementar esta solução em seus projetos hoje mesmo e veja como ela melhora seu fluxo de trabalho de manuseio de documentos!
+**P: Quais formatos de arquivo suportam rotação de página no GroupDocs Viewer?**  
+**R: DOCX, PDF, PPTX, XLSX e muitos outros formatos listados na documentação oficial.**
 
-## Seção de perguntas frequentes
+**P: Como posso rotacionar páginas em um lote de documentos automaticamente?**  
+**R: Envolva o código em um loop que itere sobre uma coleção de caminhos de arquivos, aplicando a mesma lógica `rotatePage` a cada um.**
 
-1. **Posso girar várias páginas de uma vez?**
-   - Sim, ligando `rotatePage()` várias vezes com números de páginas diferentes.
-2. **Existe uma maneira de desfazer a rotação após a renderização?**
-   - Não diretamente via GroupDocs.Viewer; você precisará renderizar novamente sem as opções de rotação.
-3. **Quais formatos de arquivo o GroupDocs.Viewer suporta para rotação?**
-   - Suporta vários formatos, incluindo DOCX, PDF, XLSX e mais.
-4. **Posso girar páginas em um lote de documentos automaticamente?**
-   - Sim, implementando a lógica de processamento em lote no loop do seu aplicativo.
-5. **Como lidar com erros durante a visualização ou rotação de documentos?**
-   - Use blocos try-catch para gerenciar exceções e registrar mensagens de erro para solução de problemas.
+**P: Qual a melhor prática para lidar com erros durante a rotação?**  
+**R: Envolva o uso do Viewer em um bloco `try‑catch`, registre a exceção e, opcionalmente, continue processando o próximo arquivo.**
 
 ## Recursos
 
-- **Documentação**: [Documentação Java do Visualizador GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Referência de API**: [Referência da API do GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [Obtenha o GroupDocs Viewer para Java](https://releases.groupdocs.com/viewer/java/)
-- **Comprar**: [Compre uma licença](https://purchase.groupdocs.com/buy)
-- **Teste grátis**: [Experimente grátis](https://releases.groupdocs.com/viewer/java/)
-- **Licença Temporária**: [Solicitar Licença Temporária](https://purchase.groupdocs.com/temporary-license/)
-- **Apoiar**: [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentação**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Referência da API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Obter GroupDocs Viewer para Java**: [Get GroupDocs Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
+- **Comprar uma Licença**: [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Teste Gratuito**: [Try Free](https://releases.groupdocs.com/viewer/java/)  
+- **Solicitar Licença Temporária**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Fórum GroupDocs**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Explore estes recursos para se aprofundar nos recursos do GroupDocs.Viewer e aprimorar seus aplicativos Java com poderosos recursos de visualização de documentos.
+---
+
+**Última atualização:** 2026-01-18  
+**Testado com:** GroupDocs Viewer 25.2 para Java  
+**Autor:** GroupDocs  
+
+---

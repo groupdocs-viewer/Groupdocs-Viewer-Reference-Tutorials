@@ -1,47 +1,69 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak arşiv dosyalarını PDF'ye dönüştürürken özel dosya adlarının nasıl belirtileceğini öğrenin. Bu gelişmiş eğitimle belge yönetiminizi kolaylaştırın."
-"title": "GroupDocs.Viewer Java&#58; Özel Dosya Adlarının Arşivlerin PDF Olarak İşlenmesinde Ustalaşması"
-"url": "/tr/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/"
-"weight": 1
+date: '2026-01-18'
+description: GroupDocs.Viewer for Java kullanarak zip dosyasını pdf'ye dönüştürmeyi
+  ve arşiv render'ı için özel dosya adları ayarlamayı öğrenin. Adım adım kılavuz,
+  kurulum, Maven entegrasyonu ve PDF çıktı adlarını kontrol etmek için kodu kapsar.
+keywords:
+- GroupDocs.Viewer Java
+- custom filenames PDF rendering
+- archive files to PDF
+title: 'GroupDocs.Viewer Java ile zip''i pdf''ye dönüştür - Özel Dosya Adları'
 type: docs
+url: /tr/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
+weight: 1
 ---
-# GroupDocs.Viewer Java'da Ustalaşma: Arşivleri PDF'ye İşlerken Özel Dosya Adlarını Belirleme
 
-## giriiş
+# GroupDocs.Viewer Java'da Ustalık: Arşivleri PDF'ye Render yaparken Özel Dosya Reklamları Belirleme
 
-Arşiv dosyalarını PDF formatına dönüştürürken yanlış dosya adlarıyla mı mücadele ediyorsunuz? İster markalama ister organizasyonel ihtiyaçlar için olsun, arşivleri dönüştürürken özel dosya adları belirtmek tutarlılığı sağlar ve iş akışı verimliliğini artırır. Bu eğitim, işleme sırasında çıktı dosya adlarını özelleştirmek için GroupDocs.Viewer for Java'yı kullanmanızda size rehberlik eder.
+ZIP arşivlerini PDF dosyalarına dönüştürür, belgeler evrensel olarak okunabilir bir formatta paylaşmanız veya arşivlemeniz yaygın bir görevdir. Bu öğreticide, GroupDocs.Viewer for Java ile **zip'i pdf'e nasıl dönüştüreceğinizi** öğrenecek ve ortaya çıkan dosya adını adlandırma kurallarına uygun şekilde kontrol edilebilir.
 
-**Ne Öğreneceksiniz:**
-- Java için GroupDocs.Viewer'ı kurma
-- Arşiv dosyalarını belirtilen dosya adlarıyla PDF'ye dönüştürme
-- Özel dosya adı özelliklerinin pratik uygulamaları
-- Performans optimizasyonu için en iyi uygulamalar
+![GroupDocs.Viewer for Java ile Arşivlerin PDF Render'ı için Özel Dosya Reklamları](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
 
-Ortamınızı kurarak ve GroupDocs.Viewer'ı belge oluşturma için güçlü bir araç yapan temel özellikleri keşfederek başlayalım.
+**Öğrenecekleriniz:**
+- Java kurulumu için GroupDocs.Viewer
+- belirtilen dosya adlarıyla arşivin PDF'ye dönüştürülmesi
+- Özel dosya adı programları pratik uygulamalar
+- Performans değişimi için en iyi uygulamalar
 
-## Ön koşullar
+Ortamınızı kurarak ve GroupDocs.Viewer'ı belge render'ı için güçlü bir araç yapan temel özellikleri keşfederek başlatın.
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+## Hızlı Yanıtlar
+- **Birincil kullanım senaryosu nedir?** Özel bir adıyla ZIP arşivlerini PDF'ye dönüştürür.
+- **Hangi kütüphanesi gereklidir?** GroupDocs.Viewer for Java (v25.2 veya daha yeni).
+- **Lisans gerekir mi?** Değerlendirme için bir deneme veya geçici lisans yeterlidir; üretim için satın alma işleminin bir lisans gereklidir.
+- **Diğer formatlar için dosyanın ismini verebilir misiniz?** Evet, HTML, PNG vb. için benzer seçenekler mevcuttur.
+- **Maven tek kurulum yöntemi mi?** Maven önerilir, ancak JAR sözlerini doğrudan da kullanabilirsiniz.
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
-- **Java için GroupDocs.Viewer**: Sürüm 25.2 veya üzeri.
+## “zip'i pdf'e dönüştür” nedir?
 
-### Çevre Kurulum Gereksinimleri
-- Bilgisayarınızda JDK (Java Development Kit) kurulu olmalıdır.
-- Java uygulamaları geliştirmek için IntelliJ IDEA veya Eclipse gibi bir IDE.
+Bir ZIP arşivini tek bir PDF belgesine dönüştürür, arşivdeki tüm parçaların dosyalarını (DOCX, PPTX, görseller vb.) bir dosyayı taşınabilirda birleştirir. Bu, hizmetleri basitleştirir, platformlar arasında parçalar oluşturmayı sağlar ve kuruluşunuzun adlandırma standartlarıyla uyumlu özel bir dosya adı uygulamanıza olanak tanır.
+
+## Bu görev için neden GroupDocs.Viewer kullanılmıyor?
+
+GroupDocs.Viewer, bir arşivin anında çok dosya içeriğinin karmaşıklığını soyutlayan yüksek seviyeli bir API sunar. Ayrıca **ArchiveOptions** sayesinde tam PDF dosya adını belirterek, toplu işleme ve otomatik iş akışlarını çok daha temiz hale getirebilirsiniz.
+
+## Önkoşullar
+
+Başlamadan önce aşağıdakilerin mevcut olduğundan emin olun:
+
+### Gerekli Kitaplıklar ve Bağımlılıklar
+- **GroupDocs.Viewer for Java**: Sürüm 25.2 veya daha yeni.
+
+### Ortam Kurulum Gereksinimleri
+- Makinenizde yüklü bir JDK (Java Development Kit).
+- Java uygulamalarının yayılması için IntelliJ IDEA veya Eclipse gibi bir IDE.
 
 ### Bilgi Önkoşulları
-- Java programlamanın temel bilgisi.
-- Maven'ı bir yapı otomasyon aracı olarak kullanmak.
+- Java programlamaya temel bir anlayış.
+- Maven'i bir yapı otomasyon aracı olarak kullanma konusunda bilgili olmak.
 
-Bu ön koşullar sağlandıktan sonra, Java için GroupDocs.Viewer'ı kurmaya geçelim.
+Bu önkoşulları karşıladığınızda, GroupDocs.Viewer for Java kurulumuna geçelim.
 
-## Java için GroupDocs.Viewer Kurulumu
+## Java için GroupDocs.Viewer'ı Ayarlama
 
-### Maven üzerinden kurulum
+### Maven aracılığıyla kurulum
 
-GroupDocs.Viewer'ı Maven kullanarak projenize entegre etmek için aşağıdaki depoları ve bağımlılıkları projenize ekleyin: `pom.xml` dosya:
+GroupDocs.Viewer'ı projelendirmek için Maven ile entegre etmek için `pom.xml` dosyanıza aşağıdaki depoyu ve seçeneği ekleyin:
 
 ```xml
 <repositories>
@@ -61,20 +83,20 @@ GroupDocs.Viewer'ı Maven kullanarak projenize entegre etmek için aşağıdaki 
 </dependencies>
 ```
 
-### Lisans Edinme Adımları
-- **Ücretsiz Deneme**: Özellikleri değerlendirmek için tam fonksiyonlu deneme sürümüne erişin.
-- **Geçici Lisans**: Sınırlama olmaksızın genişletilmiş değerlendirme için edinin.
-- **Satın almak**:Ticari kullanım için lisans satın alın.
+### Lisans Alma Adımları
+- **Ücretsiz Deneme**: Özelliklerin değerlendirilmesi için tam işlevli bir deneme sürümüne erişin.
+- **Geçici Lisans**: Sınırlama olmadan uzun vadeli değerlendirme için temin edin.
+- **Satın Alma**: Ticari kullanım için bir lisans isteyin.
 
 #### Temel Başlatma ve Kurulum
 
-Maven'ı kurduktan sonra, GroupDocs.Viewer'ı aşağıdaki kod parçacığıyla başlatın:
+Maven kurulumu tamamlandıktan sonra, aşağıdaki kod parçacığıyla GroupDocs.Viewer'ı başlatın:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Görüntüleyici nesnesini başlat
+// Initialize viewer object
 try (Viewer viewer = new Viewer("YOUR_ARCHIVE_FILE_PATH")) {
-    // Seçenekleri burada yapılandırın
+    // Configure options here
 } catch (Exception e) {
     e.printStackTrace();
 }
@@ -82,116 +104,122 @@ try (Viewer viewer = new Viewer("YOUR_ARCHIVE_FILE_PATH")) {
 
 ## Uygulama Kılavuzu
 
-Şimdi arşivleri PDF'e dönüştürürken dosya adlarını belirtmeye odaklanalım.
+Artık **convert zip to pdf** işleminde özel reklamlarla nasıl gerçekleştirilıı odaklanalım.
 
-### Arşiv Dosyalarını İşlerken Dosya Adını Belirleme
+### Özel dosya adlarıyla zip'i pdf'ye dönüştürme
 
-Bu özellik, işlenmiş PDF belgenizin çıktı dosya adını özelleştirmenize olanak tanır. İşte nasıl:
+Bu özellik, render edilen PDF belgenizin çıkan dosya adınızı kişiselleştirmenizi sağlar. İşte adımlar:
 
-#### Adım 1: Çıktı Dizinini ve Dosya Yolunu Tanımlayın
+#### Adım 1: Çıkış Dizinini ve Dosya Yolunu Tanımlayın
 
-Kolay özelleştirme için yer tutucuları kullanarak çıktı dizinini ve dosya yolunu ayarlayarak başlayın:
+Kolay özelleştirme için yer tutucular kullanarak çıktı dizini ve dosya yolunu ayarlayın:
 
 ```java
 import java.nio.file.Path;
-// Çıktı dizinini ve dosya yolunu tanımlayın
+// Define output directory and file path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
 ```
 
-#### Adım 2: Görüntüleyici Nesnesini Başlat
+#### Adım 2: Görüntüleyici Nesnesini Başlatma
 
-Bir tane oluştur `Viewer` İşlemek istediğiniz arşiv dosyasına sahip nesne:
+Render etmek istediğiniz arşiv dosyasıyla bir `Viewer` nesnesi oluşturun:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP")) {
-    // Sonraki adımlara geçin
+    // Continue to next steps
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-#### Adım 3: PdfViewOptions'ı Oluşturun
+#### Adım 3: PdfViewOptions Oluşturma
 
-Kurmak `PdfViewOptions` işleme yapılandırmalarını belirtmek için:
+Render yapılandırmalarını belirlemek için `PdfViewOptions` ayarlayın:
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
-// PDF görüntüleme seçeneklerini yapılandırın
+// Configure PDF view options
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### Adım 4: Özel Dosya Adı Ayarlayın
+#### Adım 4: Özel Dosya Adı Belirleme
 
-Kullanmak `ArchiveOptions` Oluşturulan PDF belgeniz için özel bir dosya adı belirlemek için:
+Render edilen PDF belgeniz için özel bir dosya adı ayarlamak üzere `ArchiveOptions` kullanın:
 
 ```java
 import com.groupdocs.viewer.options.FileName;
 import com.groupdocs.viewer.options.ArchiveOptions;
-// Çıktı PDF dosya adını belirtin
+// Specify the output PDF filename
 viewOptions.getArchiveOptions().setFileName(new FileName("my_custom_filename.pdf"));
 ```
 
-#### Adım 5: Arşiv Dosyasını PDF'ye Dönüştürün
+#### Adım 5: Arşiv Dosyasını PDF'ye Dönüştürme
 
-Son olarak arşiv dosyanızı belirtilen seçenekleri kullanarak oluşturun:
+Son olarak, belirtilen seçeneklerle arşiv dosyanızı PDF'ye render edin:
 
 ```java
-// İşleme sürecini yürüt
+// Execute rendering process
 viewer.view(viewOptions);
 ```
 
 ### Sorun Giderme İpuçları
 - Tüm yolların doğru ayarlandığından ve dizinlerin mevcut olduğundan emin olun.
-- GroupDocs.Viewer'ın doğru sürümünün yüklü olduğunu doğrulayın.
+- GroupDocs.Viewer'ın doğru yüklemesinin yüklü olduğunu doğrulayın.
 
 ## Pratik Uygulamalar
 
-Arşivleri oluştururken dosya adlarının nasıl belirtileceğini anlamak çeşitli senaryolarda faydalı olabilir:
-1. **Marka Tutarlılığı**: Birden fazla belgede markalama amacıyla çıktı dosya adlarını özelleştirin.
-2. **Kurumsal Verimlilik**: Belge yönetimini ve erişimini kolaylaştırmak için tutarlı bir adlandırma kuralı kullanın.
-3. **Otomatik Raporlama**: Zamanlanmış görevler aracılığıyla otomatik olarak belirli dosya adlarıyla raporlar oluşturun.
+**zip'i pdf'e dönüştürün** ve özel bir dosya adı ayarlamanın çeşitli senaryolarda faydalı olabileceğini anlayın:
+1. **Marka Tutarlılığı** – Birden çok belge için marka amaçlı çıkarılan dosya adlarını özelleştirin.
+2. **Kurumsal Verimlilik** – Daha kolay belge yönetimi ve geri getirme için bir sınıflandırılma standardında sürdürülmüştür.
+3. **Otomatik Raporlama** – Zamanlanmış olaylar, belirli dosya adlarıyla raporlar aracılığıyla otomatik olarak birleştirilir.
 
-## Performans Hususları
+## Performansla İlgili Hususlar
 
-GroupDocs.Viewer ile çalışırken performansı iyileştirmek için aşağıdakileri göz önünde bulundurun:
-- Java'da verimli bellek yönetimi uygulamalarını kullanın.
-- İşleme işlemleri sırasında kaynak kullanımını izleyin.
-- Sistem performansını etkilemeden büyük belge arşivlerini yönetmek için en iyi uygulamaları kullanın.
+GroupDocs.Viewer ile çalışma performansını artırmak için aşağıdakileri göz önünde bulundurun:
+- Java'da etkili bellek yönetimi uygulamalarını kullanın.
+- İşleme işlemleri sırasında kaynak işlemi izleyin.
+- Sistem değişikliklerini etkilemeden büyük belge arşivlerini işlemek için en iyi uygulama uygulamaları.
 
 ## Çözüm
 
-Bu eğitimde, GroupDocs.Viewer for Java kullanarak arşiv dosyalarını PDF'ye işlerken özel dosya adlarının nasıl belirtileceğini öğrendiniz. Bu adımları izleyerek belge yönetimi süreçlerinizi geliştirebilir ve oluşturulan belgeler arasında tutarlılık sağlayabilirsiniz.
+Bu öğreticide, GroupDocs.Viewer for Java kullanarak **zip'i pdf'e nasıl dönüştüreceğinizi** ve özel dosya reklamlarını belirleyeceğinizi eşyalarınızı kullanarak. Bu parçaları izleyerek belge yönetiminizi hızlandırabilir ve parçaları PDF'lerde birleştirmenizi sağlayabilirsiniz.
 
 ### Sonraki Adımlar
-- GroupDocs.Viewer'ın ek özelliklerini keşfedin.
-- Arşivlerin ötesinde farklı dosya türlerini deneyin.
+- GroupDocs.Viewer'ın ek özellikleri (ör. HTML, PNG çıktısı).
+- TAR veya 7z gibi diğer arşiv türlerini işleme hatası.
 
-Bu çözümü projelerinize uygulamaya hazır mısınız? Bugün deneyin!
+Bu çözümü projelerinizde uygulamaya hazır mısınız? Bugün deneyiniz!
 
-## SSS Bölümü
+## Sıkça Sorulan Sorular
 
-**S: GroupDocs.Viewer for Java'yı nasıl yüklerim?**
-A: Maven'ı kullanın ve belirtilen deponun ve bağımlılığın kodunuza ekleyin. `pom.xml`.
+**S: GroupDocs.Viewer for Java nasıl kurulur?**
+C: Maven kullanın ve `pom.xml` dosyanıza belirtilen depoyu ekleyin ve depolayın.
 
-**S: PDF dışındaki diğer dosya formatları için de dosya adı belirleyebilir miyim?**
-C: Evet, GroupDocs.Viewer tarafından desteklenen farklı çıktı biçimleri için benzer seçenekler mevcuttur.
+**S: PDF dışındaki diğer dosya formatları için dosya adını belirtebilir miyim?**
+C: Evet, GroupDocs.Viewer tarafından farklı çıktı formatları için benzer seçenekler mevcuttur.
 
-**S: Oluşturulan belge dosya adımın beklendiği gibi olmaması durumunda ne olur?**
-A: Yol tanımlarını iki kez kontrol edin ve tüm yapılandırmaların doğru ayarlandığından emin olun.
+**S: Verilen belge dosya adı beklediğim gibi çıkmazsa ne yapmalıyım?**
+C: Yol tanımlamalarını tekrar kontrol edin ve tüm kontrollerin doğru ayarlandığından emin olun.
 
-**S: GroupDocs.Viewer ile büyük arşiv dosyalarını nasıl işlerim?**
-A: Bellek kullanımını optimize edin ve büyük dosyaları işleme için daha küçük parçalara ayırmayı düşünün.
+**S: Büyük arşiv GroupDocs.Viewer ile nasıl yönetebilirim?**
+C: Bellek ifadesini optimize edin ve büyük dosyaları işlemek için daha küçük bölmeyi düşünün.
 
-**S: GroupDocs.Viewer'ı kullanma hakkında daha fazla kaynağı nerede bulabilirim?**
-A: Ziyaret edin [GroupDocs belgeleri](https://docs.groupdocs.com/viewer/java/) kapsamlı kılavuzlar ve API referansları için.
+**S: GroupDocs.Viewer kullanımıyla ilgili daha fazla kaynağa nereden ulaşabilirim?**
+C: Kapsamlı kılavuzlar ve API referansları için [GroupDocs belgeleri](https://docs.groupdocs.com/viewer/java/) daha fazla ziyaret edin.
 
 ## Kaynaklar
-- **Belgeleme**: [GroupDocs Görüntüleyici Java Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı**: [GroupDocs Görüntüleyici Java Referansı](https://reference.groupdocs.com/viewer/java/)
-- **İndirmek**: [GroupDocs Görüntüleyici Sürümleri](https://releases.groupdocs.com/viewer/java/)
-- **Satın almak**: [GroupDocs Lisansı Satın Al](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme**: [GroupDocs Viewer'ı deneyin](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans**: [Geçici Lisans Alın](https://purchase.groupdocs.com/temporary-license/)
-- **Destek**: [GrupDocs Forumu](https://forum.groupdocs.com/c/viewer/9)
+- **Belgeler**: [GroupDocs Viewer Java Belgeleri](https://docs.groupdocs.com/viewer/java/)
+- **API Referansı**: [GroupDocs Viewer Java Referansı](https://reference.groupdocs.com/viewer/java/)
+- **İndir**: [GroupDocs Viewer Sürümleri](https://releases.groupdocs.com/viewer/java/)
+- **Satın Al**: [GroupDocs Lisansı Satın Al](https://purchase.groupdocs.com/buy)
+- **Ücretsiz Deneme**: [GroupDocs Viewer'ı Deneyin](https://releases.groupdocs.com/viewer/java/)
+- **Geçici Lisans**: [Geçici Lisans Al](https://purchase.groupdocs.com/temporary-license/)
+- **Destek**: [GroupDocs Forumu](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 18.01.2026
+**Test Edilen Sürüm:** Java için GroupDocs.Viewer 25.2
+**Yazar:** GroupDocs
