@@ -1,31 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come modificare le unità di tempo di MS Project con GroupDocs.Viewer per Java. Semplifica il processo di rendering dei documenti di progetto in modo efficiente e preciso."
-"title": "Come regolare le unità di tempo di MS Project utilizzando GroupDocs.Viewer Java&#58; una guida passo passo"
-"url": "/it/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-28'
+description: Scopri come regolare le unità di tempo di MS Project con GroupDocs Viewer
+  Java. Ottimizza il processo di rendering dei documenti del tuo progetto in modo
+  efficiente e preciso.
+keywords:
+- GroupDocs.Viewer Java
+- MS Project time units adjustment
+- render MS Project files
+title: 'Come regolare le unità di tempo di MS Project usando GroupDocs Viewer Java - una guida passo passo'
 type: docs
+url: /it/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/
+weight: 1
 ---
-# Come regolare le unità di tempo di MS Project utilizzando GroupDocs.Viewer Java: una guida passo passo
+
+# Come Regolare le Unità di Tempo di MS Project con groupdocs viewer java: Guida Passo‑Passo
+
 ## Introduzione
-Sei stanco di modificare manualmente le unità di tempo nei tuoi documenti MS Project prima di renderli in formato HTML? Il processo può essere noioso e soggetto a errori, soprattutto quando si tratta di progetti di grandi dimensioni. Con **GroupDocs.Viewer per Java**, è possibile regolare facilmente le impostazioni dell'unità di tempo in modo programmatico, garantendo precisione ed efficienza.
-In questa guida, mostreremo come convertire le unità di tempo dei documenti di MS Project in giorni utilizzando GroupDocs.Viewer Java. Al termine di questo tutorial, sarai in grado di:
-- Imposta l'ambiente per il rendering dei file MS Project con GroupDocs.Viewer.
-- Adatta le unità di tempo di gestione del progetto direttamente nel codice.
-- Integra queste modifiche senza soluzione di continuità nella tua applicazione.
-Prima di iniziare, assicuriamoci che tutto sia pronto per iniziare!
+Sei stanco di regolare manualmente le unità di tempo nei tuoi documenti MS Project prima di renderizzarli in formato HTML? Il processo può essere noioso e soggetto a errori, soprattutto quando si gestiscono progetti di grandi dimensioni. Con **groupdocs viewer java**, puoi facilmente regolare le impostazioni dell'unità di tempo in modo programmatico, garantendo precisione ed efficienza.
+
+![Regola le Unità di Tempo di MS Project con GroupDocs.Viewer per Java](/viewer/custom-rendering/adjust-ms-project-time-units-java.png)
+
+In questa guida, dimostreremo come cambiare le unità di tempo dei documenti MS Project in giorni usando groupdocs viewer java. Alla fine di questo tutorial, sarai in grado di:
+- Configurare l'ambiente per il rendering dei file MS Project con GroupDocs.Viewer.
+- Regolare le unità di tempo della gestione del progetto direttamente nel tuo codice.
+- Integrare queste regolazioni senza problemi nella tua applicazione.
+
+Prima di iniziare, assicuriamoci di avere tutto pronto per cominciare!
+
+## Risposte Rapide
+- **Quale libreria gestisce il rendering di MS Project?** groupdocs viewer java
+- **Quale unità di tempo può essere impostata?** Days (via `TimeUnit.DAYS`)
+- **Devo avere una licenza?** È disponibile una versione di prova o una licenza temporanea; è necessaria una licenza permanente per la produzione.
+- **Quale IDE è il migliore?** Qualsiasi IDE Java (IntelliJ IDEA, Eclipse) che supporti Maven.
+- **È necessario Maven?** Sì, Maven semplifica la gestione delle dipendenze per groupdocs viewer java.
+
+## Cos'è groupdocs viewer java?
+groupdocs viewer java è un SDK Java che consente agli sviluppatori di renderizzare una vasta gamma di formati di documento — inclusi i file MS Project — in formati web‑friendly come HTML o immagini. Astrae le complessità dell'analisi dei file, permettendoti di concentrarti sulla logica di business.
+
+## Perché regolare le unità di tempo con groupdocs viewer java?
+Cambiare l'unità di tempo dal valore predefinito (spesso minuti) a giorni rende l'output renderizzato più leggibile per gli stakeholder, allineato con la consueta cadenza di reporting e riduce il disordine visivo nei report HTML. Questo è particolarmente utile quando si integrano le linee temporali di progetto in dashboard o si generano riepiloghi di stato giornalieri.
+
 ## Prerequisiti
-### Librerie e dipendenze richieste
-Per seguire questo tutorial, avrai bisogno di quanto segue:
-- **GroupDocs.Viewer per Java** libreria (versione 25.2 o successiva).
-- Maven installato sul tuo computer per la gestione delle dipendenze.
+### Librerie e Dipendenze Richieste
+Per seguire questo tutorial, avrai bisogno di:
+- **groupdocs viewer java** library (versione 25.2 o successiva).
+- Maven installato sulla tua macchina per la gestione delle dipendenze.
 - Conoscenza di base della programmazione Java.
-### Requisiti di configurazione dell'ambiente
-Assicurati che il tuo ambiente di sviluppo sia configurato con JDK (Java Development Kit) e un IDE come IntelliJ IDEA o Eclipse che supporti i progetti Maven.
-### Prerequisiti di conoscenza
-Una conoscenza di base della sintassi Java, della gestione dei file in Java e dell'utilizzo delle dipendenze Maven sarà utile. Tuttavia, questa guida mira a semplificare il processo per tutti i livelli di competenza.
-## Impostazione di GroupDocs.Viewer per Java
-Per iniziare a utilizzare GroupDocs.Viewer per Java, è necessario aggiungerlo come dipendenza nel progetto `pom.xml` file:
+
+### Requisiti per la Configurazione dell'Ambiente
+Assicurati che il tuo ambiente di sviluppo sia configurato con JDK (Java Development Kit) e un IDE come IntelliJ IDEA o Eclipse che supporti progetti Maven.
+
+### Prerequisiti di Conoscenza
+Una familiarità di base con la sintassi Java, la gestione dei file in Java e il lavoro con le dipendenze Maven sarà utile. Tuttavia, questa guida è pensata per rendere il processo semplice per tutti i livelli di competenza.
+
+## Configurazione di groupdocs viewer java
+Per iniziare a usare groupdocs viewer java, aggiungilo come dipendenza nel file `pom.xml` del tuo progetto:
+
 ```xml
 <repositories>
    <repository>
@@ -43,83 +73,113 @@ Per iniziare a utilizzare GroupDocs.Viewer per Java, è necessario aggiungerlo c
    </dependency>
 </dependencies>
 ```
-### Fasi di acquisizione della licenza
-GroupDocs offre una prova gratuita delle proprie librerie, consentendoti di esplorare le funzionalità prima di acquistare o richiedere una licenza temporanea:
-- **Prova gratuita**: Visita [Prova gratuita di GroupDocs](https://releases.groupdocs.com/viewer/java/) per scaricare e iniziare a utilizzare la libreria.
-- **Licenza temporanea**: Per test estesi, richiedi un [licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
-- **Acquistare**: Se decidi che GroupDocs.Viewer è adatto al tuo progetto, acquistalo direttamente dal loro [pagina di acquisto](https://purchase.groupdocs.com/buy).
-### Inizializzazione e configurazione di base
-Una volta impostata la dipendenza nel tuo Maven `pom.xml`, sei pronto per iniziare a programmare. Inizializza un'istanza di Viewer con il percorso del tuo file MS Project e preparati per il rendering.
-## Guida all'implementazione
-Approfondiamo come modificare le unità di tempo per i documenti di MS Project utilizzando GroupDocs.Viewer Java. Lo spiegheremo passo dopo passo.
-### Panoramica delle funzionalità: regolazione delle unità di tempo nei documenti di MS Project
-Questa funzionalità consente di modificare l'impostazione dell'unità di tempo di gestione del progetto da quella predefinita (solitamente minuti) a giorni, rendendo il codice HTML renderizzato più intuitivo e in linea con gli standard di reporting tipici.
-#### Passaggio 1: definire la directory di output e il formato del percorso del file di paging
-Per prima cosa, specifica dove verranno archiviati i file HTML renderizzati:
+
+### Passaggi per Ottenere la Licenza
+groupdocs offre una versione di prova gratuita delle proprie librerie, consentendoti di esplorare le funzionalità prima di acquistare o richiedere una licenza temporanea:
+- **Versione di Prova**: Visita [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) per scaricare e iniziare a usare la libreria.
+- **Licenza Temporanea**: Per test prolungati, richiedi una [licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
+- **Acquisto**: Se decidi che groupdocs.viewer java è adatto al tuo progetto, acquistalo direttamente dalla loro [pagina di acquisto](https://purchase.groupdocs.com/buy).
+
+### Inizializzazione e Configurazione di Base
+Una volta aggiunta la dipendenza nel tuo `pom.xml` Maven, sei pronto per iniziare a scrivere codice. Inizializza un'istanza di Viewer con il percorso del tuo file MS Project e preparati al rendering.
+
+## Guida all'Implementazione
+Vediamo come puoi regolare le unità di tempo per i documenti MS Project usando groupdocs viewer java. Divideremo il processo passo‑per‑passo.
+
+### Panoramica della Funzionalità: Regolare le Unità di Tempo nei Documenti MS Project
+Questa funzionalità ti consente di cambiare l'impostazione dell'unità di tempo della gestione del progetto dal valore predefinito (di solito minuti) a giorni, rendendo l'HTML renderizzato più user‑friendly e allineato con gli standard di reporting tipici.
+
+#### Passo 1: Definire la Directory di Output e il Formato del Percorso del File di Pagina
+Per prima cosa, specifica dove verranno salvati i file HTML renderizzati:
+
 ```java
 import java.nio.file.Path;
-// Specificare la directory di output per i file HTML
+// Specify the output directory for HTML files
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-Utilizza questa directory per risolvere dinamicamente i percorsi dei file per ogni pagina del tuo documento MS Project:
+
+Usa questa directory per risolvere i percorsi dei file dinamicamente per ogni pagina del tuo documento MS Project:
+
 ```java
-// Definisci un formato per il percorso del file di ogni pagina renderizzata
+// Define a format for each rendered page's file path
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-#### Passaggio 2: inizializzare le opzioni di visualizzazione
-Crea opzioni di visualizzazione con risorse incorporate, che consentono di specificare come visualizzare e riprodurre il progetto:
+
+#### Passo 2: Inizializzare le Opzioni di Visualizzazione
+Crea le opzioni di visualizzazione con risorse incorporate, che ti permettono di specificare come il progetto deve essere visualizzato e renderizzato:
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
-// Imposta le opzioni di visualizzazione HTML per il rendering
+// Set up HTML view options for rendering
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-#### Passaggio 3: regolare l'impostazione dell'unità di tempo
-Specificare che l'unità di tempo per la gestione del progetto è impostata su giorni, opzione spesso più adatta per presentazioni e report:
+
+#### Passo 3: Regolare l'Impostazione dell'Unità di Tempo
+Specifica che l'unità di tempo per la gestione del progetto è impostata su giorni, spesso più adatta per presentazioni e report:
+
 ```java
 import com.groupdocs.viewer.options.TimeUnit;
-// Cambia l'unità di tempo di gestione del progetto in GIORNI
+// Change the project management time unit to DAYS
 viewOptions.getProjectManagementOptions().setTimeUnit(TimeUnit.DAYS);
 ```
-#### Passaggio 4: rendering del documento MS Project
-Infine, utilizza la classe Viewer per visualizzare il documento con le opzioni di visualizzazione specificate:
+
+#### Passo 4: Renderizzare il Documento MS Project
+Infine, utilizza la classe Viewer per renderizzare il tuo documento con le opzioni di visualizzazione specificate:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
-    // Rendi il documento del progetto come HTML utilizzando le opzioni di visualizzazione impostate
+    // Render the project document as HTML using set view options
     viewer.view(viewOptions);
 }
 ```
-### Suggerimenti per la risoluzione dei problemi
-- Assicurati che il percorso della directory di output sia specificato correttamente e scrivibile.
-- Verificare che il percorso del file MS Project sia corretto e accessibile.
-- Se si verificano problemi di rendering, verificare eventuali eccezioni generate dalla classe Viewer.
-## Applicazioni pratiche
-Ecco alcuni casi d'uso concreti in cui la modifica delle unità di tempo nei documenti di MS Project può risultare particolarmente utile:
-1. **Reporting di progetto**: Per le parti interessate che preferiscono riepiloghi giornalieri rispetto ai dettagli minuti.
-2. **Integrazione con le dashboard**: Quando si incorporano le cronologie dei progetti in dashboard aziendali che richiedono granularità a livello giornaliero.
-3. **Aggiornamenti automatici**: Per i sistemi che necessitano di aggiornare automaticamente gli stati dei progetti su base giornaliera.
-## Considerazioni sulle prestazioni
-Quando si lavora con file MS Project di grandi dimensioni, per ottenere prestazioni ottimali, tenere presente quanto segue:
-- Utilizzare le risorse incorporate con parsimonia se solo alcune parti del documento sono necessarie con frequenza.
-- Monitorare l'utilizzo della memoria quando si gestiscono contemporaneamente progetti multipli o molto grandi.
-- Utilizzare in modo efficace la garbage collection di Java per gestire l'allocazione e la deallocazione delle risorse.
+
+### Suggerimenti per la Risoluzione dei Problemi
+- Verifica che il percorso della directory di output sia corretto e scrivibile.
+- Controlla che il percorso del file MS Project sia corretto e accessibile.
+- Se si verificano problemi di rendering, controlla eventuali eccezioni generate dalla classe Viewer.
+
+## Applicazioni Pratiche
+Ecco alcuni casi d'uso reali in cui regolare le unità di tempo nei documenti MS Project può risultare particolarmente utile:
+1. **Reporting di Progetto** – Gli stakeholder spesso preferiscono riepiloghi giornalieri rispetto a dettagli al livello dei minuti.
+2. **Integrazione con Dashboard** – Incorporare le linee temporali in dashboard aziendali che richiedono granularità giornaliera.
+3. **Aggiornamenti Automatici** – Sistemi che devono aggiornare lo stato dei progetti su base giornaliera in modo automatico.
+
+## Considerazioni sulle Prestazioni
+Quando lavori con file MS Project di grandi dimensioni, considera quanto segue per ottimizzare le prestazioni:
+- Usa le risorse incorporate con parsimonia se solo alcune parti del documento sono necessarie frequentemente.
+- Monitora l'utilizzo della memoria quando gestisci più progetti molto grandi simultaneamente.
+- Sfrutta efficacemente il garbage collection di Java per gestire l'allocazione e la deallocazione delle risorse.
+
 ## Conclusione
-Ora hai imparato come modificare le unità di tempo di MS Project utilizzando GroupDocs.Viewer per Java. Questa funzionalità semplifica il processo di rendering dei documenti di progetto, rendendoli più accessibili e facili da integrare in sistemi più ampi. 
-Prendi in considerazione l'esplorazione di altre funzionalità di GroupDocs.Viewer per migliorare ulteriormente le tue soluzioni di gestione dei documenti.
-Pronti a fare un ulteriore passo avanti? Provate a implementare questa soluzione nel vostro prossimo progetto!
+Hai appena imparato come regolare le unità di tempo di MS Project usando groupdocs viewer java. Questa funzionalità semplifica il processo di rendering dei documenti di progetto, rendendoli più accessibili e più facili da integrare in sistemi più ampi.
+
+Considera di esplorare altre capacità di groupdocs viewer java per migliorare ulteriormente le tue soluzioni di gestione dei documenti. Pronto a fare un passo avanti? Prova a implementare questa soluzione nel tuo prossimo progetto!
+
 ## Sezione FAQ
-**1. A cosa serve GroupDocs.Viewer per Java?**
-GroupDocs.Viewer per Java consente agli sviluppatori di trasformare documenti in vari formati, inclusi i file MS Project, in formati HTML o immagine per la visualizzazione.
-**2. Posso utilizzare GroupDocs.Viewer per altri tipi di documenti?**
-Sì, GroupDocs.Viewer supporta un'ampia gamma di formati di documenti oltre a MS Project, come PDF, documenti Word e fogli di calcolo.
-**3. Come gestisco le licenze per GroupDocs.Viewer?**
-GroupDocs offre diverse opzioni di licenza, tra cui prove gratuite, licenze temporanee per test estesi e licenze permanenti previo acquisto.
-**4. Cosa succede se riscontro degli errori durante il rendering dei file del mio progetto?**
-Controllare i percorsi dei file, accertarsi di avere accesso in scrittura alla directory di output e rivedere eventuali eccezioni generate da GroupDocs.Viewer per suggerimenti sulla risoluzione dei problemi.
-**5. Posso personalizzare il modo in cui i documenti vengono visualizzati con GroupDocs.Viewer?**
-Assolutamente sì! GroupDocs.Viewer offre una gamma di opzioni per personalizzare il rendering, tra cui l'impostazione delle unità di tempo per i progetti, la selezione delle risorse da incorporare e altro ancora.
+**1. A cosa serve GroupDocs.Viewer per Java?**  
+GroupDocs.Viewer per Java consente agli sviluppatori di renderizzare documenti in vari formati, inclusi i file MS Project, in HTML o formati immagine per la visualizzazione.
+
+**2. Posso usare GroupDocs.Viewer per altri tipi di documento?**  
+Sì, GroupDocs.Viewer supporta un'ampia gamma di formati oltre a MS Project, come PDF, documenti Word e fogli di calcolo.
+
+**3. Come gestisco la licenza per GroupDocs.Viewer?**  
+GroupDocs offre diverse opzioni di licenza, incluse versioni di prova gratuite, licenze temporanee per test prolungati e licenze permanenti a pagamento.
+
+**4. Cosa devo fare se incontro errori durante il rendering dei miei file di progetto?**  
+Controlla i percorsi dei file, assicurati di avere i permessi di scrittura sulla directory di output e verifica eventuali eccezioni generate da GroupDocs.Viewer per suggerimenti di risoluzione.
+
+**5. Posso personalizzare il modo in cui i documenti vengono renderizzati con GroupDocs.Viewer?**  
+Assolutamente! GroupDocs.Viewer offre una serie di opzioni per personalizzare il rendering, inclusa la possibilità di impostare le unità di tempo per i progetti, selezionare quali risorse incorporare e molto altro.
+
 ## Risorse
 - [Documentazione](https://docs.groupdocs.com/viewer/java/)
 - [Riferimento API](https://reference.groupdocs.com/viewer/java/)
 - [Scarica GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Acquista una licenza](https://purchase.groupdocs.com/buy)
+- [Acquista una Licenza](https://purchase.groupdocs.com/buy)
+
+---
+
+**Last Updated:** 2026-01-28  
+**Tested With:** groupdocs viewer java 25.2  
+**Author:** GroupDocs

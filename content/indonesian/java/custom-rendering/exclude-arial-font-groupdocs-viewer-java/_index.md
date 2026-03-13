@@ -1,34 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara mengecualikan font Arial saat merender dokumen ke HTML menggunakan GroupDocs.Viewer untuk Java. Pastikan konsistensi desain dan tingkatkan presentasi dokumen."
-"title": "Cara Mengecualikan Font Arial dalam Rendering HTML dengan GroupDocs.Viewer Java&#58; Panduan Langkah demi Langkah"
-"url": "/id/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-01-28'
+description: Pelajari cara merender HTML, mengecualikan font Arial, dan mengoptimalkan
+  rendering HTML menggunakan GroupDocs.Viewer untuk Java. Panduan langkah demi langkah
+  untuk konversi DOCX ke HTML dengan Java.
+keywords:
+- exclude Arial font GroupDocs.Viewer Java
+- render documents to HTML with GroupDocs
+- customize document rendering in Java
+title: Cara Merender HTML dan Mengecualikan Font Arial dengan GroupDocs.Viewer Java
 type: docs
+url: /id/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/
+weight: 1
 ---
-# Cara Mengecualikan Font Arial Saat Merender Dokumen ke HTML Menggunakan GroupDocs.Viewer Java
 
-## Perkenalan
+# Cara Merender HTML dan Mengecualikan Font Arial dengan GroupDocs.Viewer Java
 
-Pernahkah Anda menghadapi tantangan di mana font tertentu dalam dokumen Anda mengganggu keseragaman presentasi web Anda? Panduan langkah demi langkah ini akan menunjukkan kepada Anda cara menggunakan GroupDocs.Viewer untuk Java untuk mengecualikan font Arial saat merender dokumen ke dalam format HTML. Baik saat menyiapkan laporan profesional atau membuat konten web yang konsisten, fungsionalitas ini memastikan output Anda sesuai dengan standar desain.
+Rendering dokumen ke HTML adalah kebutuhan umum untuk aplikasi berbasis web, tetapi font yang tidak diinginkan dapat merusak konsistensi visual. Dalam tutorial ini, Anda akan belajar **cara merender html** sambil mengecualikan font Arial, memastikan output Anda sesuai dengan pedoman desain. Kami akan membahas pengaturan, perubahan kode yang tepat, dan praktik terbaik untuk konversi **docx to html java** yang mulus.
+
+![Mengecualikan Font Arial dalam Rendering HTML dengan GroupDocs.Viewer untuk Java](/viewer/custom-rendering/exclude-arial-font-in-html-rendering-java.png)
 
 **Apa yang Akan Anda Pelajari:**
-- Cara mengonfigurasi GroupDocs.Viewer untuk Java untuk menyajikan dokumen dalam HTML.
+- Cara mengkonfigurasi GroupDocs.Viewer untuk Java agar merender dokumen dalam HTML.
 - Proses mengecualikan font tertentu seperti Arial selama konversi dokumen.
 - Praktik terbaik dan pertimbangan kinerja saat menggunakan GroupDocs.Viewer Java.
 
-Mari kita bahas prasyarat yang Anda perlukan sebelum kita mulai menerapkan fitur ini.
+## Jawaban Cepat
+- **Bagaimana cara merender html?** Gunakan `HtmlViewOptions` dengan GroupDocs.Viewer Java untuk menghasilkan halaman HTML yang berdiri sendiri.  
+- **Apakah saya dapat mengecualikan font Arial?** Ya—panggil `viewOptions.getFontsToExclude().add("Arial")`.  
+- **Versi perpustakaan mana?** Panduan ini menggunakan GroupDocs.Viewer untuk Java 25.2 (atau rilis stabil terbaru).  
+- **Format input apa yang didukung?** DOCX, PDF, PPTX, XLSX, dan banyak lagi.  
+- **Apakah lisensi diperlukan?** Versi percobaan gratis cukup untuk pengujian; lisensi penuh diperlukan untuk produksi.
 
 ## Prasyarat
 
 Untuk mengikuti tutorial ini, pastikan Anda memiliki:
-- **Perpustakaan & Versi**Anda memerlukan GroupDocs.Viewer untuk Java versi 25.2.
-- **Pengaturan Lingkungan**Lingkungan pengembangan Java (IDE seperti IntelliJ IDEA atau Eclipse) dan Maven terinstal di komputer Anda.
-- **Prasyarat Pengetahuan**: Pemahaman dasar tentang pemrograman Java dan keakraban dengan pengaturan proyek Maven.
+- **Perpustakaan & Versi**: Anda memerlukan GroupDocs.Viewer untuk Java versi 25.2.
+- **Pengaturan Lingkungan**: Lingkungan pengembangan Java (IDE seperti IntelliJ IDEA atau Eclipse) dan Maven terpasang di mesin Anda.
+- **Prasyarat Pengetahuan**: Pemahaman dasar pemrograman Java dan familiaritas dengan pengaturan proyek Maven.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
 
-Untuk memulai, tambahkan ketergantungan yang diperlukan untuk GroupDocs.Viewer di `pom.xml` berkas menggunakan Maven:
+Untuk memulai, tambahkan dependensi yang diperlukan untuk GroupDocs.Viewer di file `pom.xml` Anda menggunakan Maven:
 
 ```xml
 <repositories>
@@ -47,114 +59,127 @@ Untuk memulai, tambahkan ketergantungan yang diperlukan untuk GroupDocs.Viewer d
 </dependencies>
 ```
 
-### Langkah-langkah Memperoleh Lisensi
-- **Uji Coba Gratis**: Unduh uji coba gratis dari [Uji Coba Gratis GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Lisensi Sementara**: Ajukan permohonan lisensi sementara melalui [Lisensi Sementara GroupDocs](https://purchase.groupdocs.com/temporary-license/) untuk pengujian lanjutan.
-- **Pembelian**: Beli lisensi penuh di mereka [Halaman Pembelian](https://purchase.groupdocs.com/buy) setelah puas dengan kemampuan GroupDocs.Viewer.
+### Langkah-langkah Akuisisi Lisensi
+- **Trial Gratis**: Unduh trial gratis dari [GroupDocs Free Trials](https://releases.groupdocs.com/viewer/java/).
+- **Lisensi Sementara**: Ajukan lisensi sementara melalui [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) untuk pengujian lanjutan.
+- **Pembelian**: Beli lisensi penuh di [Purchase Page](https://purchase.groupdocs.com/buy) setelah puas dengan kemampuan GroupDocs.Viewer.
 
 ### Inisialisasi dan Pengaturan Dasar
 
-Setelah menyiapkan proyek Maven Anda, buat kelas Java baru dan impor paket GroupDocs yang diperlukan. Pengaturan ini penting untuk menginisialisasi penampil guna merender dokumen.
+Setelah menyiapkan proyek Maven Anda, buat kelas Java baru dan impor paket GroupDocs yang diperlukan. Pengaturan ini penting untuk menginisialisasi viewer agar merender dokumen.
 
-## Panduan Implementasi
+## Cara Mengecualikan Font Arial Saat Merender HTML
 
-### Mengecualikan Font Tertentu dari Output HTML
+### Gambaran Umum
+Mengecualikan font tertentu memberi Anda kontrol lebih ketat atas output visual konversi HTML Anda, membantu Anda **mengoptimalkan rendering html** untuk kecepatan dan konsistensi merek.
 
-#### Ringkasan
-Fitur ini memungkinkan Anda untuk mengecualikan font tertentu seperti Arial saat mengonversi dokumen ke dalam format HTML, memberikan kontrol lebih besar atas tampilan dokumen Anda dalam konteks web.
+### Implementasi Langkah‑per‑Langkah
 
-#### Implementasi Langkah demi Langkah
-##### 1. Tentukan Direktori Output
+#### 1. Tentukan Direktori Output
 Mulailah dengan menentukan di mana file HTML akan disimpan:
 
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Jalur ini penting karena menentukan di mana dokumen HTML yang Anda render akan berada.
+Jalur ini menentukan di mana dokumen HTML yang dirender akan berada.
 
-##### 2. Mengatur Jalur File Halaman HTML
-Tentukan bagaimana nama file setiap halaman harus disusun:
+#### 2. Atur Jalur File Halaman HTML
+Definisikan bagaimana nama file setiap halaman harus disusun:
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-Tempat penampung `{0}` memungkinkan penamaan file yang dinamis berdasarkan nomor halamannya, memastikan penyimpanan yang terorganisir.
 
-##### 3. Konfigurasikan Opsi Tampilan dengan Sumber Daya Tertanam
-Membuat sebuah `HtmlViewOptions` objek yang menentukan bagaimana rendering HTML harus ditangani:
+Placeholder `{0}` memungkinkan penamaan dinamis file berdasarkan nomor halaman, memastikan penyimpanan yang teratur.
+
+#### 3. Konfigurasikan Opsi Tampilan dengan Sumber Daya Tersemat
+Buat objek `HtmlViewOptions` yang menentukan cara rendering HTML harus ditangani:
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-Pengaturan ini memastikan semua sumber daya tertanam dalam berkas HTML, menjadikannya mandiri.
 
-##### 4. Kecualikan Font Tertentu
-Tambahkan font yang ingin Anda kecualikan (dalam kasus ini, Arial) dari rendering di output:
+Pengaturan ini memastikan semua sumber daya tersemat dalam file HTML, menjadikannya **self‑contained**.
+
+#### 4. Mengecualikan Font Tertentu
+Tambahkan font yang ingin Anda kecualikan (dalam hal ini, Arial) dari rendering output:
 
 ```java
 viewOptions.getFontsToExclude().add("Arial");
 ```
-Mengecualikan font dapat menjadi hal penting untuk menjaga konsistensi desain dan mengurangi ukuran file.
 
-##### 5. Render Dokumen Menggunakan Viewer
-Terakhir, gunakan `Viewer` kelas untuk merender dokumen Anda ke dalam format HTML:
+Mengecualikan font dapat menjadi kunci untuk mempertahankan konsistensi desain dan mengurangi ukuran file.
+
+#### 5. Render Dokumen Menggunakan Viewer
+Akhirnya, gunakan kelas `Viewer` untuk merender dokumen Anda ke format HTML:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
     viewer.view(viewOptions);
 }
 ```
-Pernyataan coba-dengan-sumber-daya memastikan bahwa `viewer` ditutup dengan benar setelah dirender.
 
-#### Tips Pemecahan Masalah
-- **Masalah Umum**: Pastikan jalurnya benar dan dapat diakses; jalur yang salah dapat menyebabkan kesalahan file tidak ditemukan.
-- **Kiat Kinerja**: Jika merender dokumen besar, pantau penggunaan memori karena sumber daya yang tertanam dapat meningkatkan waktu pemuatan.
+Pernyataan `try‑with‑resources` memastikan bahwa `viewer` ditutup dengan benar setelah rendering selesai.
 
-## Aplikasi Praktis
-1. **Pelaporan Perusahaan**: Kecualikan font default dalam laporan perusahaan untuk tampilan merek yang terpadu.
-2. **Materi Pendidikan**: Menyesuaikan rendering font dalam konten pendidikan untuk meningkatkan keterbacaan dan aksesibilitas.
-3. **Dokumen Hukum**Pertahankan konsistensi di seluruh presentasi dokumen hukum dengan mengontrol penggunaan font.
-4. **Daftar E-dagang**Pastikan deskripsi produk mematuhi pedoman merek melalui rendering font yang terkontrol.
-5. **Integrasi CMS**: Meningkatkan sistem manajemen konten dengan pratinjau dokumen yang disesuaikan, meningkatkan pengalaman pengguna.
+### Tips Pemecahan Masalah
+- **Masalah Umum**: Pastikan jalur benar dan dapat diakses; jalur yang salah dapat menyebabkan kesalahan file‑not‑found.
+- **Tips Kinerja**: Saat merender dokumen besar, pantau penggunaan memori karena sumber daya tersemat dapat meningkatkan waktu pemuatan.
 
-## Pertimbangan Kinerja
-### Mengoptimalkan Kinerja
-- **Gunakan Jalur File yang Efisien**Pastikan jalur berkas dioptimalkan untuk akses dan pengambilan cepat.
-- **Kelola Sumber Daya Secara Bijaksana**: Batasi jumlah sumber daya yang tertanam untuk menyeimbangkan antara kualitas dan kinerja.
+## Mengapa Ini Penting: Kasus Penggunaan Dunia Nyata
+
+1. **Pelaporan Korporat** – Mengecualikan font default untuk menjaga laporan tetap sesuai dengan pedoman merek.  
+2. **Materi Pendidikan** – Menyesuaikan rendering font untuk keterbacaan yang lebih baik di berbagai perangkat.  
+3. **Dokumen Hukum** – Mempertahankan tampilan seragam untuk presentasi HTML siap pengadilan.  
+4. **Daftar E‑commerce** – Memastikan deskripsi produk mengikuti standar merek.  
+5. **Integrasi CMS** – Menyediakan pratinjau bersih dengan kontrol font di dalam sistem manajemen konten.
+
+## Optimalkan Kinerja Rendering HTML
+
+### Tips untuk Konversi Lebih Cepat
+- **Gunakan Jalur File Efisien**: Pertahankan struktur direktori dangkal untuk mengurangi overhead I/O.  
+- **Batasi Sumber Daya Tersemat**: Hanya sematkan CSS/JS penting untuk menjaga HTML ringan.  
 
 ### Praktik Terbaik untuk Manajemen Memori Java
-- **Optimalkan Penggunaan Penampil**:Tutup `Viewer` misalnya segera setelah tidak lagi diperlukan untuk mengosongkan memori.
-- **Memantau Beban Aplikasi**: Periksa secara berkala konsumsi sumber daya aplikasi Anda, terutama saat menangani banyak dokumen atau dokumen besar.
+- **Tutup Viewer Segera**: Pola `try‑with‑resources` membebaskan memori segera setelah rendering selesai.  
+- **Pantau Beban Aplikasi**: Profil JVM Anda saat menangani banyak atau dokumen besar untuk menghindari kesalahan out‑of‑memory.
 
-## Kesimpulan
-Dengan mengikuti tutorial ini, Anda kini memiliki keterampilan untuk mengecualikan font tertentu seperti Arial dari output HTML menggunakan GroupDocs.Viewer untuk Java. Kemampuan ini meningkatkan presentasi dokumen dan memastikan konsistensi di seluruh platform.
+## Pertanyaan yang Sering Diajukan
 
-### Langkah Berikutnya
-Jelajahi lebih jauh fitur-fitur GroupDocs.Viewer untuk Java dengan bereksperimen menggunakan berbagai pilihan rendering atau mengintegrasikannya ke dalam proyek yang lebih besar.
+**Q1: Apa kegunaan GroupDocs.Viewer?**  
+A1: Ini adalah perpustakaan kuat yang memungkinkan pengembang merender dokumen dalam berbagai format seperti HTML, gambar, atau PDF.
 
-Kami menganjurkan Anda untuk menerapkan solusi ini dalam proyek Anda berikutnya—ambil langkah pertama menuju presentasi dokumen yang lebih baik dan selaras dengan merek!
+**Q2: Bagaimana cara mengecualikan font lain selain Arial?**  
+A2: Gunakan metode `getFontsToExclude().add("FONT_NAME")` dengan nama font yang diinginkan.
 
-## Bagian FAQ
-**Q1: Untuk apa GroupDocs.Viewer digunakan?**
-A1: Ini adalah pustaka hebat yang memungkinkan pengembang untuk menyajikan dokumen dalam berbagai format seperti HTML, gambar, atau PDF.
-
-**Q2: Bagaimana cara mengecualikan font lain selain Arial?**
-A2: Gunakan `getFontsToExclude().add("FONT_NAME")` metode dengan nama font yang Anda inginkan.
-
-**Q3: Dapatkah GroupDocs.Viewer menangani konversi dokumen besar secara efisien?**
+**Q3: Bisakah GroupDocs.Viewer menangani konversi dokumen besar secara efisien?**  
 A3: Ya, dengan mengoptimalkan penanganan sumber daya dan praktik manajemen memori seperti yang dijelaskan dalam panduan ini.
 
-**Q4: Apa saja masalah umum saat menyiapkan GroupDocs.Viewer?**
-A4: Masalah umum meliputi konfigurasi jalur yang salah atau dependensi yang hilang. Pastikan semua jalur sudah benar dan dependensi Maven telah ditetapkan dengan benar.
+**Q4: Apa saja masalah umum saat menyiapkan GroupDocs.Viewer?**  
+A4: Masalah umum meliputi konfigurasi jalur yang salah atau ketergantungan Maven yang hilang. Verifikasi semua jalur dan pastikan koordinat Maven benar.
 
-**Q5: Di mana saya dapat menemukan lebih banyak sumber daya tentang penggunaan GroupDocs.Viewer dengan Java?**
-A5: Kunjungi [Dokumentasi GroupDocs](https://docs.groupdocs.com/viewer/java/) untuk panduan terperinci dan referensi API.
+**Q5: Di mana saya dapat menemukan lebih banyak sumber tentang penggunaan GroupDocs.Viewer dengan Java?**  
+A5: Kunjungi [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) untuk panduan terperinci dan referensi API.
 
-## Sumber daya
-- **Dokumentasi**: [Dokumentasi Java Penampil GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Referensi API**: [API Java Penampil GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Unduh GroupDocs.Viewer**: [Halaman Unduhan GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Beli Lisensi**: [Beli Lisensi GroupDocs](https://purchase.groupdocs.com/buy)
-- **Uji Coba Gratis dan Lisensi Sementara**: [Mulai Uji Coba Gratis Anda](https://releases.groupdocs.com/viewer/java/) Bahasa Indonesia: [Minta Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
-- **Mendukung**:Jika Anda memerlukan bantuan lebih lanjut, kunjungi [Halaman Dukungan GroupDocs](https://support.groupdocs.com/hc/en-us).
+**Q6: Apakah pendekatan ini bekerja untuk mengonversi DOCX ke HTML di Java?**  
+A6: Tentu—cukup arahkan konstruktor `Viewer` ke file `.docx`, dan logika pengecualian font yang sama berlaku.
+
+**Q7: Bagaimana saya dapat lebih lanjut **mengoptimalkan rendering html** untuk perangkat seluler?**  
+A7: Pertimbangkan meminifikasi HTML yang dihasilkan dan menyajikan CSS responsif bersama sumber daya tersemat.
+
+**Q8: Apakah lisensi wajib untuk build pengembangan?**  
+A8: Trial gratis cukup untuk pengembangan dan pengujian; lisensi komersial diperlukan untuk penerapan produksi.
+
+## Sumber Daya
+- **Dokumentasi**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referensi API**: [GroupDocs Viewer Java API](https://reference.groupdocs.com/viewer/java/)
+- **Unduh GroupDocs.Viewer**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Beli Lisensi**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Trial Gratis dan Lisensi Sementara**: [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/) | [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Dukungan**: Jika Anda memerlukan bantuan lebih lanjut, kunjungi [GroupDocs Support Page](https://support.groupdocs.com/hc/en-us/).
+
+---
+
+**Terakhir Diperbarui:** 2026-01-28  
+**Diuji Dengan:** GroupDocs.Viewer for Java 25.2  
+**Penulis:** GroupDocs
