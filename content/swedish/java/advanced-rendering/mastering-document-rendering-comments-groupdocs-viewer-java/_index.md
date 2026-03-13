@@ -13,7 +13,7 @@ tags:
 - java-tutorial
 - document-rendering
 - html-conversion
-title: 'GroupDocs Viewer Java-handledning: Konvertera Word till HTML och rendera dokument
+title: 'GroupDocs Viewer Java-handledning - Konvertera Word till HTML och rendera dokument
   med kommentarer'
 type: docs
 url: /sv/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/

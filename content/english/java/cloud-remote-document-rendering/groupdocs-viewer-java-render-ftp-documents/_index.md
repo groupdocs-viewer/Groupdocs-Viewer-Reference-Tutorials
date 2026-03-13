@@ -1,5 +1,5 @@
 ---
-title: "Render Documents from FTP Using GroupDocs.Viewer for Java: A Comprehensive Guide"
+title: "Render Documents from FTP Using GroupDocs.Viewer for Java - A Comprehensive Guide"
 description: "Learn how to render documents from ftp into HTML with GroupDocs.Viewer for Java. Follow this step‑by‑step tutorial to integrate FTP document rendering into your Java apps."
 date: "2026-01-28"
 weight: 1

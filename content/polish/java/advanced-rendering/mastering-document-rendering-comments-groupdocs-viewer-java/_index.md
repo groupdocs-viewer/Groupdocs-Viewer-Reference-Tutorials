@@ -14,7 +14,7 @@ tags:
 - java-tutorial
 - document-rendering
 - html-conversion
-title: 'Samouczek GroupDocs Viewer Java: konwertuj Word na HTML i renderuj dokumenty
+title: 'Samouczek GroupDocs Viewer Java - konwertuj Word na HTML i renderuj dokumenty
   z komentarzami'
 type: docs
 url: /pl/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/

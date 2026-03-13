@@ -1,5 +1,5 @@
 ---
-title: "How to Adjust MS Project Time Units Using groupdocs viewer java: A Step-by-Step Guide"
+title: "How to Adjust MS Project Time Units Using groupdocs viewer java - A Step-by-Step Guide"
 description: "Learn how to adjust MS Project time units with groupdocs viewer java. Streamline your project document rendering process efficiently and accurately."
 date: "2026-01-28"
 weight: 1

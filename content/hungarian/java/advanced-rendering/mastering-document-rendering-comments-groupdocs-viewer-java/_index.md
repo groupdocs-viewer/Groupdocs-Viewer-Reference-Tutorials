@@ -14,7 +14,7 @@ tags:
 - java-tutorial
 - document-rendering
 - html-conversion
-title: 'GroupDocs Viewer Java útmutató: Word átalakítása HTML-re és dokumentumok megjelenítése
+title: 'GroupDocs Viewer Java útmutató - Word átalakítása HTML-re és dokumentumok megjelenítése
   megjegyzésekkel'
 type: docs
 url: /hu/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/

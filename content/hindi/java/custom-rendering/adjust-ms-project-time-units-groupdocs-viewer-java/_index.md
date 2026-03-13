@@ -8,7 +8,7 @@ keywords:
 - MS Project time units adjustment
 - render MS Project files
 title: 'GroupDocs Viewer Java का उपयोग करके MS Project टाइम यूनिट्स को कैसे समायोजित
-  करें: चरण-दर-चरण मार्गदर्शिका'
+  करें - चरण-दर-चरण मार्गदर्शिका'
 type: docs
 url: /hi/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/
 weight: 1

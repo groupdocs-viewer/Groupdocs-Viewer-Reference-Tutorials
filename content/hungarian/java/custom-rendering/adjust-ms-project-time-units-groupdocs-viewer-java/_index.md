@@ -7,7 +7,7 @@ keywords:
 - GroupDocs.Viewer Java
 - MS Project time units adjustment
 - render MS Project files
-title: 'MS Project időegységek módosítása a groupdocs viewer java használatával: Lépésről
+title: 'MS Project időegységek módosítása a groupdocs viewer java használatával - Lépésről
   lépésre útmutató'
 type: docs
 url: /hu/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/

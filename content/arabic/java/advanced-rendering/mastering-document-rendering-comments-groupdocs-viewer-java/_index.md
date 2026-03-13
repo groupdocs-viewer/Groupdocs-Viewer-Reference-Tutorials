@@ -13,7 +13,7 @@ tags:
 - java-tutorial
 - document-rendering
 - html-conversion
-title: 'دليل GroupDocs Viewer للغة Java: تحويل مستند Word إلى HTML وعرض المستندات
+title: 'دليل GroupDocs Viewer للغة Java - تحويل مستند Word إلى HTML وعرض المستندات
   مع التعليقات'
 type: docs
 url: /ar/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/

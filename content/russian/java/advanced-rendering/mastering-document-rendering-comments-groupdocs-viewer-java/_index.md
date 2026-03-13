@@ -14,7 +14,7 @@ tags:
 - java-tutorial
 - document-rendering
 - html-conversion
-title: 'Учебник по GroupDocs Viewer Java: преобразование Word в HTML и отображение
+title: 'Учебник по GroupDocs Viewer Java - преобразование Word в HTML и отображение
   документов с комментариями'
 type: docs
 url: /ru/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/

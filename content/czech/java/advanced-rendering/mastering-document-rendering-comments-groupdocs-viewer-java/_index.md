@@ -14,7 +14,7 @@ tags:
 - java-tutorial
 - document-rendering
 - html-conversion
-title: 'Návod GroupDocs Viewer Java: Převod Wordu do HTML a vykreslení dokumentů s
+title: 'Návod GroupDocs Viewer Java - Převod Wordu do HTML a vykreslení dokumentů s
   komentáři'
 type: docs
 url: /cs/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/
