@@ -1,48 +1,60 @@
 ---
-date: '2026-01-10'
-description: Apprenez à rendre les dossiers zip en Java avec GroupDocs.Viewer grâce
-  à ce guide complet étape par étape.
+date: '2026-03-14'
+description: Apprenez comment convertir un zip en HTML à l'aide de GroupDocs.Viewer
+  pour Java et afficher des dossiers zip spécifiques dans vos applications.
 keywords:
 - render archive folders
 - GroupDocs.Viewer for Java
 - rendering specific folders in archives
-title: Comment afficher les dossiers zip en Java avec GroupDocs.Viewer
+title: Comment convertir un zip en HTML et afficher les dossiers zip en Java avec
+  GroupDocs.Viewer
 type: docs
 url: /fr/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Comment rendre les dossiers zip en Java avec GroupDocs.Viewer
+ GroupDocs" translate "Auteur". Keep formatting.
 
-Cherchez-vous à rendre efficacement des dossiers spécifiques à l'intérieur de fichiers d'archive tels que les ZIP dans vos applications Java ? Dans ce tutoriel, nous parcourrons **how to render zip** dossiers en utilisant GroupDocs.Viewer pour Java, couvrant tout, de la configuration du projet aux scénarios d'utilisation réels.
+Now produce final markdown.
 
-![Rendu des dossiers d'archive avec GroupDocs.Viewer pour Java](/viewer/advanced-rendering/rendering-archive-folders-java.png)
+Make sure to keep all code block placeholders unchanged.
+
+Also ensure we keep any shortcodes (none present except maybe {{CODE_BLOCK_X}} which are placeholders not shortcodes but okay). There were no Hugo shortcodes.
+
+Now craft final answer.# Comment convertir un zip en HTML et rendre les dossiers zip en Java avec GroupDocs.Viewer
+
+Vous cherchez à **convertir un zip en HTML** de manière efficace et à rendre des dossiers spécifiques à l'intérieur d'archives telles que les ZIP dans vos applications Java ? Dans ce tutoriel, nous parcourrons la façon de rendre des dossiers zip à l'aide de GroupDocs.Viewer pour Java, en couvrant tout, de la configuration du projet aux scénarios d’utilisation réels. Vous verrez pourquoi cette approche fait gagner du temps, réduit la surcharge d’E/S et maintient votre application sécurisée.
+
+![Rendering Archive Folders with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rendering-archive-folders-java.png)
 
 ## Réponses rapides
-- **What does “render zip” mean?** Cela signifie convertir le contenu d'une archive ZIP (ou d'un dossier spécifique à l'intérieur) en formats affichables comme HTML ou images.  
-- **Which library handles this?** GroupDocs.Viewer for Java fournit des capacités de rendu d'archive intégrées.  
-- **Do I need a license?** Un essai gratuit suffit pour l'évaluation ; une licence complète est requise pour la production.  
-- **Can I render only one folder?** Oui – utilisez `ArchiveOptions.setFolder("YourFolder")` pour cibler un seul répertoire.  
-- **What Java version is required?** Java 8 ou supérieur.
+- **Que signifie « convert zip to HTML » ?** Cela consiste à transformer le contenu d’une archive ZIP (ou d’un dossier spécifique à l’intérieur) en pages HTML compatibles avec le web.  
+- **Quelle bibliothèque gère cela ?** GroupDocs.Viewer pour Java fournit des capacités de rendu d’archives intégrées.  
+- **Ai‑je besoin d’une licence ?** Un essai gratuit fonctionne pour l’évaluation ; une licence complète est requise pour la production.  
+- **Puis‑je rendre un seul dossier ?** Oui – utilisez `ArchiveOptions.setFolder("YourFolder")` pour cibler un répertoire unique.  
+- **Quelle version de Java est requise ?** Java 8 ou supérieure.
 
-## Qu’est‑ce que “how to render zip” avec GroupDocs.Viewer ?
-GroupDocs.Viewer est une bibliothèque Java qui transforme un large éventail de types de documents — y compris les archives compressées — en formats adaptés au web. Lorsque vous devez afficher uniquement une partie d'un fichier ZIP (par exemple, un dossier contenant des images ou des PDF), le visualiseur vous permet d'isoler et de rendre ce dossier sans extraire l'archive complète.
+## Comment convertir un zip en HTML avec GroupDocs.Viewer
+GroupDocs.Viewer abstrait la complexité d’extraction et de conversion du contenu des archives. Au lieu de décompresser manuellement les fichiers, vous pouvez directement demander au visualiseur de **convertir un zip en HTML** pour un dossier choisi, ce qui simplifie le flux de travail et minimise les fichiers temporaires.
 
-## Pourquoi utiliser GroupDocs.Viewer pour le rendu de dossiers zip ?
-- **Speed:** Rendre directement depuis l'archive, en évitant les étapes d'extraction complète coûteuses.  
-- **Security:** Aucun besoin d'écrire des fichiers intermédiaires sur le disque sauf si vous le choisissez.  
-- **Flexibility:** La sortie peut être HTML, PNG ou PDF, s'adaptant à la plupart des scénarios web ou desktop.  
-- **Scalability:** Gère les grandes archives avec une empreinte mémoire minimale lorsqu'elle est correctement configurée.
+## Qu’est‑ce que « how to render zip » avec GroupDocs.Viewer ?
+GroupDocs.Viewer est une bibliothèque Java qui transforme un large éventail de types de documents – y compris les archives compressées – en formats compatibles avec le web. Lorsque vous devez afficher uniquement une partie d’un fichier ZIP (par exemple, un dossier contenant des images ou des PDF), le visualiseur vous permet d’isoler et de rendre ce dossier sans extraire l’ensemble de l’archive.
+
+## Pourquoi utiliser GroupDocs.Viewer pour rendre des dossiers zip ?
+- **Vitesse :** Rendu directement depuis l’archive, évitant les étapes d’extraction complètes coûteuses.  
+- **Sécurité :** Aucun besoin d’écrire des fichiers intermédiaires sur le disque, sauf si vous le décidez.  
+- **Flexibilité :** La sortie peut être HTML, PNG ou PDF, s’adaptant à la plupart des scénarios web ou desktop.  
+- **Scalabilité :** Gère de grandes archives avec une empreinte mémoire minimale lorsqu’elle est correctement configurée.
 
 ## Prérequis
-- **Java Development Kit (JDK)** 8 ou plus récent.  
+- **Java Development Kit (JDK)** 8 ou plus récent.  
 - **Maven** pour la gestion des dépendances.  
 - Familiarité de base avec les concepts de programmation Java.
 
 ## Configuration de GroupDocs.Viewer pour Java
 
 ### Configuration Maven
-Ajoutez le dépôt GroupDocs et la dépendance à votre `pom.xml` :
+Ajoutez le dépôt GroupDocs et la dépendance à votre `pom.xml` :
 
 ```xml
 <repositories>
@@ -63,10 +75,10 @@ Ajoutez le dépôt GroupDocs et la dépendance à votre `pom.xml` :
 ```
 
 ### Acquisition de licence
-Pour débloquer le plein potentiel de GroupDocs.Viewer, vous pouvez obtenir un [essai gratuit](https://releases.groupdocs.com/viewer/java/) ou acquérir une licence temporaire via leur [page de licence temporaire](https://purchase.groupdocs.com/temporary-license/). Pour les projets à long terme, envisagez d'acheter une licence complète.
+Pour débloquer tout le potentiel de GroupDocs.Viewer, vous pouvez obtenir un [essai gratuit](https://releases.groupdocs.com/viewer/java/) ou acquérir une licence temporaire via leur [page de licence temporaire](https://purchase.groupdocs.com/temporary-license/). Pour les projets à long terme, envisagez d’acheter une licence complète.
 
 ### Initialisation de base
-Une fois la configuration Maven terminée, initialisez le visualiseur avec le chemin vers votre fichier ZIP :
+Une fois la configuration Maven terminée, initialisez le visualiseur avec le chemin vers votre fichier ZIP :
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,12 +88,11 @@ try (Viewer viewer = new Viewer("path/to/archive.zip")) {
 }
 ```
 
-## Guide d’implémentation
+## Comment extraire un dossier d’un zip avec GroupDocs.Viewer
+Lorsque vous avez besoin d’un répertoire spécifique à l’intérieur de l’archive, vous pouvez indiquer au visualiseur exactement quel dossier traiter. Cette opération **extract folder from zip** se déroule en mémoire, vous évitant ainsi la surcharge d’une extraction manuelle.
 
-### Comment rendre les dossiers zip – Étape par étape
-
-#### Définir le chemin de sortie
-Créez une méthode d’assistance qui pointe vers le répertoire où les fichiers HTML rendus seront enregistrés :
+### Définir le chemin de sortie
+Créez une méthode d’assistance qui pointe vers le répertoire où les fichiers HTML rendus seront enregistrés :
 
 ```java
 import java.nio.file.Path;
@@ -92,8 +103,8 @@ public static Path definePath() {
 }
 ```
 
-#### Rendre un dossier spécifique
-Configurez le visualiseur pour cibler un dossier particulier à l'intérieur de l'archive et générer une sortie HTML :
+### Rendre un dossier spécifique
+Configurez le visualiseur pour cibler un dossier particulier dans l’archive et générez la sortie HTML :
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -114,10 +125,10 @@ public static void renderArchiveFolder() {
 
 **Paramètres clés expliqués**
 - `pageFilePathFormat` : Contrôle le modèle de nommage pour chaque page HTML rendue.  
-- `viewOptions.getArchiveOptions().setFolder(...)` : Oriente le visualiseur pour ne rendre que le dossier spécifié à l'intérieur de l'archive ZIP.
+- `viewOptions.getArchiveOptions().setFolder(...)` : Dirige le visualiseur pour ne rendre que le dossier spécifié à l’intérieur de l’archive ZIP.
 
-#### Définition d’un chemin personnalisé pour le répertoire de sortie
-Si vous avez besoin d’un emplacement de sortie différent, ajustez simplement la méthode `definePath` :
+### Définition personnalisée du chemin du répertoire de sortie
+Si vous avez besoin d’un emplacement de sortie différent, ajustez simplement la méthode `definePath` :
 
 ```java
 public static Path definePath() {
@@ -126,37 +137,37 @@ public static Path definePath() {
 ```
 
 ## Applications pratiques
-1. **Document Management Systems** – Affichez uniquement la partie pertinente d'une grande archive sans tout exposer.  
-2. **Digital Libraries** – Diffusez des sections sélectionnées d'e‑books ou de collections de recherche directement dans le navigateur.  
-3. **Legal Review Platforms** – Concentrez-vous sur des dossiers de cas spécifiques à l'intérieur de vastes ensembles zip, économisant temps et stockage.
+1. **Systèmes de gestion de documents** – Affichez uniquement la partie pertinente d’une grande archive sans exposer tout le contenu.  
+2. **Bibliothèques numériques** – Diffusez des sections sélectionnées d’e‑books ou de collections de recherche directement dans le navigateur.  
+3. **Plateformes d’examen juridique** – Concentrez‑vous sur des dossiers de cas spécifiques à l’intérieur de volumineux paquets zip, économisant temps et stockage.
 
 ## Considérations de performance
-- **Memory Management** : Pour des fichiers ZIP très volumineux, envisagez d'augmenter la taille du tas JVM ou de traiter les dossiers par lots plus petits.  
-- **I/O Efficiency** : Écrivez les fichiers rendus sur un SSD rapide ou un lecteur monté en réseau pour réduire la latence.  
-- **Rendering Options** : Ajustez la qualité d'image ou les paramètres de minification HTML dans `HtmlViewOptions` pour équilibrer vitesse et fidélité visuelle.
+- **Gestion de la mémoire :** Pour des fichiers ZIP très volumineux, envisagez d’augmenter la taille du tas JVM ou de traiter les dossiers par lots plus petits.  
+- **Efficacité d’E/S :** Écrivez les fichiers rendus sur un SSD rapide ou un lecteur réseau monté pour réduire la latence.  
+- **Options de rendu :** Ajustez la qualité d’image ou les paramètres de minification HTML dans `HtmlViewOptions` afin d’équilibrer vitesse et fidélité visuelle.
 
 ## Conclusion
-Vous savez maintenant **how to render zip** dossiers en Java en utilisant GroupDocs.Viewer — de la configuration de Maven au ciblage d'un seul dossier à l'intérieur d'une archive et à la gestion des problèmes de performance. Intégrez ces étapes dans vos applications pour offrir un accès rapide, sécurisé et convivial au contenu archivé.
+Vous savez maintenant **comment convertir un zip en HTML** et rendre des dossiers zip en Java à l’aide de GroupDocs.Viewer — de la configuration Maven à la cible d’un seul dossier dans une archive, en passant par les préoccupations de performance. Intégrez ces étapes dans vos applications pour offrir un accès rapide, sécurisé et convivial au contenu archivé.
 
 ### Prochaines étapes
-Explorez des fonctionnalités supplémentaires de GroupDocs.Viewer telles que la conversion PDF, le filigrane ou le rendu multi‑pages pour enrichir davantage votre pipeline de traitement de documents.
+Explorez d’autres fonctionnalités de GroupDocs.Viewer telles que la conversion PDF, le filigrane ou le rendu multi‑pages pour enrichir davantage votre pipeline de traitement de documents.
 
-## Section FAQ
+## Foire aux questions
 
-1. **What is GroupDocs.Viewer for Java?**  
-   Une bibliothèque permettant aux développeurs de rendre des documents — y compris les archives — directement dans les applications Java.  
+**Q : Qu’est‑ce que GroupDocs.Viewer pour Java ?**  
+R : C’est une bibliothèque qui permet aux développeurs de rendre des documents — y compris les archives — directement au sein d’applications Java.
 
-2. **How do I install GroupDocs.Viewer using Maven?**  
-   Ajoutez les configurations du dépôt et de la dépendance à votre fichier `pom.xml` comme indiqué dans la section Configuration Maven.  
+**Q : Comment installer GroupDocs.Viewer avec Maven ?**  
+R : Ajoutez les configurations de dépôt et de dépendance à votre fichier `pom.xml` comme indiqué dans la section Configuration Maven.
 
-3. **Can I use GroupDocs.Viewer for free?**  
-   Un essai gratuit est disponible mais les déploiements en production nécessitent une version sous licence.  
+**Q : Puis‑je utiliser GroupDocs.Viewer gratuitement ?**  
+R : Un essai gratuit est disponible, mais les déploiements en production nécessitent une version sous licence.
 
-4. **What are common issues with rendering archives?**  
-   Assurez‑vous que le nom du dossier correspond exactement (sensible à la casse) et que l'archive n'est pas protégée par mot de passe à moins que vous ne fournissiez les informations d'identification.  
+**Q : Quels sont les problèmes courants lors du rendu d’archives ?**  
+R : Assurez‑vous que le nom du dossier correspond exactement (sensible à la casse) et que l’archive n’est pas protégée par mot de passe, sauf si vous fournissez les informations d’identification.
 
-5. **Where can I get support if needed?**  
-   Visitez le [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) pour obtenir de l'aide de la communauté ou consultez la documentation officielle.  
+**Q : Où puis‑je obtenir de l’aide si nécessaire ?**  
+R : Visitez le [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) pour obtenir de l’assistance communautaire ou consultez la documentation officielle.
 
 ## Ressources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
@@ -169,6 +180,6 @@ Explorez des fonctionnalités supplémentaires de GroupDocs.Viewer telles que la
 
 ---
 
-**Dernière mise à jour :** 2026-01-10  
-**Testé avec :** GroupDocs.Viewer 25.2 for Java  
-**Auteur :** GroupDocs
+**Dernière mise à jour :** 2026-03-14  
+**Testé avec :** GroupDocs.Viewer 25.2 for Java  
+**Auteur :** GroupDocs
