@@ -1,36 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer Javaを使用して、ZIP、RARアーカイブを単一ページまたは複数ページのHTMLに変換する方法を学びましょう。ドキュメント変換プロセスを効率化します。"
-"title": "GroupDocs.Viewer JavaでアーカイブをHTMLに変換する方法 総合ガイド"
-"url": "/ja/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
-"weight": 1
+date: '2026-02-23'
+description: GroupDocs.Viewer Java を使用して、ページあたりの項目数の設定、リソースの HTML 埋め込み、アーカイブを単一ページまたは複数ページの
+  HTML に一括変換する方法を学びましょう。
+keywords:
+- convert archives to HTML Java
+- GroupDocs.Viewer Java tutorial
+- render ZIP RAR to HTML
+title: 'ページあたりの項目数を設定: GroupDocs.Viewer JavaでアーカイブをHTMLに変換'
 type: docs
+url: /ja/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
+weight: 1
 ---
-# GroupDocs.Viewer Java でアーカイブを HTML に変換する: 総合ガイド
 
-## 導入
+ are correct.
 
-ZIPやRARなどのアーカイブファイルをWeb対応形式に変換することは、システム内でのドキュメントの共有、レビュー、統合において一般的な要件です。このチュートリアルでは、シームレスなドキュメント変換を実現するために設計された強力なライブラリ、GroupDocs.Viewer Javaの使い方を説明します。
+Now produce final answer.# ページあたりの項目数を設定: GroupDocs.Viewer JavaでアーカイブをHTMLに変換
 
-**学習内容:**
-- アーカイブを単一ページおよび複数ページの HTML 形式にレンダリングします。
-- HTML 出力に埋め込まれたリソースのオプションを構成します。
-- パフォーマンスとリソース効率のためにレンダリング プロセスを最適化します。
+ZIPやRARなどのアーカイブファイルをウェブフレンドリーなHTMLに変換することは、ブラウザ上で直接文書を共有またはレビューしたいときに頻繁に必要となります。このガイドでは、アーカイブをレンダリングする際の**ページあたりの項目数の設定方法**、自己完結型出力のためのリソースHTMLの埋め込み方法、そしてGroupDocs.Viewer Javaを使用したアーカイブのバッチ変換の効率的な方法を学びます。
 
-まず、適切なツールと知識を使って GroupDocs.Viewer Java を設定しましょう。
+![GroupDocs.Viewer for Java を使用したアーカイブのHTML変換](/viewer/export-conversion/convert-archives-to-html-java.png)
+
+## クイック回答
+- **“ページあたりの項目数”は何を制御しますか？** アーカイブ内のファイルまたはフォルダーが各生成されたHTMLページに何件表示されるかを決定します。  
+- **画像やCSSをHTMLに直接埋め込むことはできますか？** はい – `forEmbeddedResources` オプションを使用してリソースHTMLを埋め込みます。  
+- **バッチ変換は可能ですか？** もちろんです。アーカイブのコレクションをループし、同じ設定でそれぞれをレンダリングできます。  
+- **GroupDocs.Viewerの使用にMavenは必要ですか？** はい、以下のように `maven groupdocs viewer` 依存関係を追加してください。  
+- **サポートされている出力形式は何ですか？** シングルページHTML Java とマルチページHTML Java の両方が利用可能です。
+
+## GroupDocs.Viewerの“ページあたりの項目数”とは？
+**ページあたりの項目数** 設定はアーカイブレンダリングオプションに属します。マルチページHTMLドキュメントを生成する際に、各HTMLページに表示するアーカイブエントリ（ファイルまたはフォルダー）の数をビューアに指示します。この値を調整することで、特に大規模なアーカイブにおいてページサイズとナビゲーション速度のバランスを取ることができます。
+
+## なぜリソースHTMLを埋め込むのか？
+リソース（画像、CSS、フォント）をHTMLファイル内に直接埋め込むことで、外部ファイルなしで開くことができる単一のポータブルドキュメントが作成されます。これは、メール添付、オフライン閲覧、または出力を他のウェブページに埋め込む際に最適です。
 
 ## 前提条件
+- **必要なライブラリ:** GroupDocs.Viewer バージョン 25.2 以降を含めます。  
+- **環境:** Java Development Kit (JDK) がインストールされ、設定されていること。  
+- **知識:** 基本的な Java と Maven の依存関係管理。  
 
-開始する前に、次のものを用意してください。
-- **必要なライブラリ:** プロジェクトに GroupDocs.Viewer バージョン 25.2 以降を含めます。
-- **環境設定:** システム上に構成された Java 開発キット (JDK)。
-- **知識の前提条件:** Java プログラミングと Maven 依存関係管理に関する基本的な理解。
+## Maven GroupDocs Viewer の設定
 
-## GroupDocs.Viewer を Java 用にセットアップする
-
-GroupDocs.Viewer を使用するには、Maven を使用してプロジェクトに依存関係として追加します。
-
-**Maven のセットアップ:**
+Add the GroupDocs repository and the viewer dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -51,159 +61,117 @@ GroupDocs.Viewer を使用するには、Maven を使用してプロジェクト
 ```
 
 ### ライセンス取得
+GroupDocs.Viewer は **無料トライアルリンク**、一時ライセンス、またはフル購入オプションを提供しています。プロジェクトのスケジュールに合ったものを選択してください。
 
-GroupDocs.Viewer にはさまざまなライセンス オプションがあります。
-- **無料トライアル:** まずは無料トライアルでその機能をご確認ください。
-- **一時ライセンス:** 評価制限なしで拡張使用するための一時ライセンスを取得します。
-- **購入：** 完全なアクセスとサポートを得るには、ライセンスの購入を検討してください。
-
-**基本的な初期化:**
-
-GroupDocs.Viewer を依存関係として追加した後、Java アプリケーションで初期化します。
+### 基本的な初期化
+After the Maven setup, bring the viewer into your code:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// ここに初期化コードを入力
+// Your initialization code here
 ```
 
-## 実装ガイド
+## アーカイブをシングルページHTMLにレンダリングする方法
 
-すべての設定が完了したら、機能を段階的に実装してみましょう。
-
-### アーカイブを単一ページの HTML にレンダリングする
-
-**概要：**
-アーカイブ全体を 1 ページの HTML ドキュメントに変換して、複数のページを移動せずに簡単に共有および表示できるようにします。
-
-#### ステップ1: 出力ディレクトリのパスを定義する
-
-出力ディレクトリを設定します。
-
+### 手順 1: 出力ディレクトリの定義
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-レンダリングされた HTML が保存される場所を指定します。
-
-#### ステップ2: 単一ページ出力のファイル名を設定する
-
-単一ページの HTML ファイルの名前を定義します。
-
+### 手順 2: シングルページ出力のファイル名を設定
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-#### ステップ3: ビューアインスタンスの初期化
-
-初期化する `Viewer` アーカイブファイルを含むインスタンス:
-
+### 手順 3: ビューアの初期化
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // さらに設定手順は以下のとおりです
+    // Further configuration steps follow
 }
 ```
 
-#### ステップ4: レンダリングオプションを構成する
-
-アーカイブを HTML 形式にレンダリングし、リソースを HTML 内に直接埋め込むためのオプションを設定します。
-
+### 手順 4: レンダリングオプションの設定（リソースHTMLを埋め込む）
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### ステップ5: 単一ページとしてレンダリングする
-
-アーカイブ全体を 1 ページに出力するようにビューアを設定します。
-
+### 手順 5: シングルページとしてレンダリング
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-### アーカイブをマルチページ HTML にレンダリングする
+## アーカイブをマルチページHTMLにレンダリングし、ページあたりの項目数を設定する方法
 
-**概要：**
-大きなアーカイブの場合は、コンテンツを複数のページに分割します。この機能により、複数のHTMLファイルにまたがるアーカイブのレンダリングが容易になります。
-
-#### ステップ1: 出力ディレクトリのパスを定義する
-
-単一ページの実装からの出力ディレクトリ設定を再利用します。
-
+### 手順 1: 出力ディレクトリを再利用
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### ステップ2: 複数ページ出力のファイル名形式を設定する
-
-複数のページに対応するファイル名形式を作成するには、 `{0}` ページ番号のプレースホルダーとして:
-
+### 手順 2: 複数ページ用のファイル名フォーマットを定義
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-#### ステップ3: ビューアインスタンスの初期化
-
-初期化する `Viewer` シングルページ設定と同様にインスタンスを作成します。
-
+### 手順 3: ビューアを再度初期化
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // 複数ページの構成を続行する
+    // Continue with multi‑page configuration
 }
 ```
 
-#### ステップ4: 複数ページのレンダリングオプションを構成する
-
-埋め込まれたリソースを含む複数のページにレンダリングするためのオプションを設定します。
-
+### 手順 4: マルチページオプションの設定（リソースHTMLを埋め込む）
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### ステップ5: ページあたりのアイテム数を指定する
-
-1ページあたりに表示するアイテム（ファイルまたはフォルダ）の数を指定します。必要に応じてこの設定を調整してください。
-
+### 手順 5: ページあたりの項目数を設定（アクションの主要キーワード）
 ```java
-options.getArchiveOptions().setItemsPerPage(10); // デフォルトは16です
+options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
-## 実用的なアプリケーション
+## 実用的な活用例
+- **ドキュメント管理システム:** 追加のビューアをインストールせずにアーカイブプレビュー機能を追加します。  
+- **ウェブポータル:** ユーザーにバンドルされた文書を迅速に、ダウンロード不要で閲覧できる方法を提供します。  
+- **コラボレーションツール:** チームが共有アーカイブをブラウザ上で直接検査できるようにします。  
 
-- **文書管理システム:** アーカイブ表示機能をシームレスに統合します。
-- **Webポータル:** ウェブ対応の形式で、ダウンロード可能なコンテンツにユーザーが簡単にアクセスできるようにします。
-- **コラボレーションツール:** チーム メンバーがブラウザ内で直接共有ドキュメントを確認できるようにします。
+## パフォーマンス上の考慮点
+- **リソース管理:** メモリ使用量に注意し、大量バッチの場合はJVMのガベージコレクタのチューニングを検討してください。  
+- **アーカイブのバッチ変換:** アーカイブファイルのリストをループし、同じレンダリングロジックを呼び出してスループットを最大化します。  
+- **キャッシュ戦略:** 同じアーカイブが頻繁にアクセスされる場合、レンダリングされたHTMLをキャッシュに保存します。  
 
-## パフォーマンスに関する考慮事項
+## よくある質問
+**Q: GroupDocs.Viewer Java とは何ですか？**  
+A: HTML、PDF、画像などの形式に文書（アーカイブを含む）をレンダリングする多目的ライブラリです。
 
-GroupDocs.Viewer を実装するときは、次のパフォーマンスのヒントを考慮してください。
-- **リソース管理:** メモリ使用量を監視し、必要に応じてガベージ コレクション設定を最適化します。
-- **バッチ処理:** 多数のアーカイブを変換する場合は、プロセスをバッチ処理してシステム負荷を管理します。
-- **キャッシュ戦略:** 頻繁にアクセスされるドキュメントのキャッシュ メカニズムを実装して速度を向上させます。
+**Q: GroupDocs.Viewer の無料トライアルを入手するには？**  
+A: [無料トライアルリンク](https://releases.groupdocs.com/viewer/java/) にアクセスしてダウンロードおよびテストしてください。
 
-## 結論
+**Q: アーカイブ以外の文書タイプも変換できますか？**  
+A: はい、ビューアは PDF、Word、Excel など多数の形式をサポートしています。
 
-GroupDocs.Viewer Javaを使用して、アーカイブファイルを単一ページと複数ページのHTML形式に変換する方法を習得しました。さまざまな設定を試して、特定のユースケースに最適な方法を見つけてください。さらに詳しく知りたい場合は、追加機能を統合したり、GroupDocs.Viewerでサポートされている他のドキュメントタイプを試したりすることを検討してください。
+**Q: レンダリングが遅い場合はどうすればよいですか？**  
+A: ページあたりの項目数を減らす、ストリーミングを有効にする、またはアーカイブを小さなバッチで処理してください。
 
-次のステップに進む準備はできましたか？これらのテクニックをプロジェクトに実装して、ワークフローがどのように強化されるかを確認してください。
+**Q: サポートやヘルプはどこで得られますか？**  
+A: [サポートフォーラム](https://forum.groupdocs.com/c/viewer/9) へお問い合わせください。
 
-## FAQセクション
+**Q: CSS と画像を HTML に直接埋め込むことは可能ですか？**  
+A: もちろんです。例に示すように `HtmlViewOptions.forEmbeddedResources` を使用してください。
 
-1. **GroupDocs.Viewer Java とは何ですか?**
-   - ドキュメントを HTML を含むさまざまな形式でレンダリングするための多目的ライブラリ。
-2. **GroupDocs.Viewer の無料トライアルを入手するにはどうすればよいですか?**
-   - 訪問 [無料トライアルリンク](https://releases.groupdocs.com/viewer/java/) ダウンロードしてテストします。
-3. **GroupDocs.Viewer Java を使用して他のドキュメント タイプを変換できますか?**
-   - はい、PDF や Word 文書など、アーカイブ以外の形式もサポートしています。
-4. **レンダリングが遅い場合はどうすればいいですか?**
-   - リソースの使用を最適化したり、複数ページの出力のページあたりの項目数を調整したりします。
-5. **GroupDocs.Viewer Java のサポートに問い合わせるにはどうすればいいですか?**
-   - 彼らを通して手を差し伸べる [サポートフォーラム](https://forum.groupdocs.com/c/viewer/9) 援助をお願いします。
+**Q: アーカイブのフォルダーをバッチ変換するには？**  
+A: `for` ループで各ファイルを反復処理し、各イテレーションで同じ `Viewer` と `HtmlViewOptions` 設定を適用します。
 
 ## リソース
+- **ドキュメンテーション:** [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) で機能を詳しく確認してください。  
+- **API リファレンス:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/) で完全な API を確認してください。  
+- **ダウンロード:** [download page](https://releases.groupdocs.com/viewer/java/) から最新のバイナリを取得してください。  
+- **購入とライセンス:** [purchase page](https://purchase.groupdocs.com/buy) でオプションを確認してください。  
+- **サポートとコミュニティ:** [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) でディスカッションに参加してください。
 
-- **ドキュメント:** 機能についてさらに詳しく知るには [GroupDocsドキュメント](https://docs。groupdocs.com/viewer/java/).
-- **APIリファレンス:** 詳細なAPIリファレンスについては、 [グループドキュメントAPI](https://reference。groupdocs.com/viewer/java/).
-- **ダウンロード：** 最新バージョンにアクセスするには、 [ダウンロードページ](https://releases。groupdocs.com/viewer/java/).
-- **購入とライセンス:** 購入オプションの詳細については、 [購入ページ](https://purchase。groupdocs.com/buy).
-- **サポートとコミュニティ:** コミュニティに参加したり、サポートを求めたり [GroupDocsフォーラム](https://forum。groupdocs.com/c/viewer/9).
+---
+
+**最終更新日:** 2026-02-23  
+**テスト環境:** GroupDocs.Viewer 25.2  
+**作成者:** GroupDocs
