@@ -1,41 +1,44 @@
 ---
-date: '2026-01-10'
-description: Pelajari cara merender folder zip di Java menggunakan GroupDocs.Viewer
-  dengan panduan langkah demi langkah yang komprehensif ini.
+date: '2026-03-14'
+description: Pelajari cara mengonversi zip ke HTML menggunakan GroupDocs.Viewer untuk
+  Java dan menampilkan folder zip tertentu dalam aplikasi Anda.
 keywords:
 - render archive folders
 - GroupDocs.Viewer for Java
 - rendering specific folders in archives
-title: Cara merender folder zip di Java dengan GroupDocs.Viewer
+title: Cara mengonversi zip ke HTML dan menampilkan folder zip di Java dengan GroupDocs.Viewer
 type: docs
 url: /id/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Cara merender folder zip di Java dengan GroupDocs.Viewer
+# Cara mengonversi zip ke HTML dan merender folder zip di Java dengan GroupDocs.Viewer
 
-Apakah Anda ingin merender folder tertentu dalam file arsip seperti ZIP secara efisien di aplikasi Java Anda? Dalam tutorial ini kami akan membahas **cara merender zip** folder menggunakan GroupDocs.Viewer untuk Java, mencakup semua hal mulai dari penyiapan proyek hingga skenario penggunaan dunia nyata.
+Apakah Anda ingin secara efisien **mengonversi zip ke HTML** dan merender folder tertentu dalam file arsip seperti ZIP di aplikasi Java Anda? Dalam tutorial ini kami akan menjelaskan cara merender folder zip menggunakan GroupDocs.Viewer untuk Java, mencakup semua mulai dari penyiapan proyek hingga skenario penggunaan dunia nyata. Anda akan melihat mengapa pendekatan ini menghemat waktu, mengurangi beban I/O, dan menjaga keamanan aplikasi Anda.
 
 ![Rendering Archive Folders with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rendering-archive-folders-java.png)
 
 ## Jawaban Cepat
-- **Apa arti “render zip”?** Itu berarti mengonversi isi arsip ZIP (atau folder tertentu di dalamnya) menjadi format yang dapat dilihat seperti HTML atau gambar.  
-- **Perpustakaan mana yang menangani ini?** GroupDocs.Viewer untuk Java menyediakan kemampuan merender arsip bawaan.  
+- **Apa arti “convert zip to HTML”?** Itu berarti mengubah isi arsip ZIP (atau folder tertentu di dalamnya) menjadi halaman HTML yang ramah web.  
+- **Pustaka mana yang menangani ini?** GroupDocs.Viewer untuk Java menyediakan kemampuan rendering arsip bawaan.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi penuh diperlukan untuk produksi.  
 - **Bisakah saya merender hanya satu folder?** Ya – gunakan `ArchiveOptions.setFolder("YourFolder")` untuk menargetkan satu direktori.  
 - **Versi Java apa yang diperlukan?** Java 8 atau lebih tinggi.
 
+## Cara mengonversi zip ke HTML dengan GroupDocs.Viewer
+GroupDocs.Viewer menyederhanakan kompleksitas mengekstrak dan mengonversi isi arsip. Alih-alih mengekstrak file secara manual, Anda dapat langsung memberi instruksi kepada viewer untuk **mengonversi zip ke HTML** untuk folder yang dipilih, yang memperlancar alur kerja dan meminimalkan file sementara.
+
 ## Apa itu “cara merender zip” dengan GroupDocs.Viewer?
-GroupDocs.Viewer adalah perpustakaan Java yang mengubah berbagai jenis dokumen—termasuk arsip terkompresi—menjadi format yang ramah web. Ketika Anda perlu menampilkan hanya sebagian dari file ZIP (misalnya, folder yang berisi gambar atau PDF), viewer memungkinkan Anda mengisolasi dan merender folder tersebut tanpa mengekstrak seluruh arsip.
+GroupDocs.Viewer adalah pustaka Java yang mengubah berbagai jenis dokumen—termasuk arsip terkompresi—ke dalam format yang ramah web. Ketika Anda perlu menampilkan hanya sebagian dari file ZIP (misalnya, folder yang berisi gambar atau PDF), viewer memungkinkan Anda mengisolasi dan merender folder tersebut tanpa mengekstrak seluruh arsip.
 
 ## Mengapa menggunakan GroupDocs.Viewer untuk merender folder zip?
 - **Kecepatan:** Merender langsung dari arsip, menghindari langkah ekstraksi penuh yang mahal.  
 - **Keamanan:** Tidak perlu menulis file perantara ke disk kecuali Anda menginginkannya.  
-- **Fleksibilitas:** Output dapat berupa HTML, PNG, atau PDF, cocok untuk sebagian besar skenario web atau desktop.  
-- **Skalabilitas:** Menangani arsip besar dengan jejak memori minimal ketika dikonfigurasi dengan benar.
+- **Fleksibilitas:** Output dapat berupa HTML, PNG, atau PDF, cocok untuk kebanyakan skenario web atau desktop.  
+- **Skalabilitas:** Menangani arsip besar dengan jejak memori minimal bila dikonfigurasi dengan benar.
 
 ## Prasyarat
-- **Java Development Kit (JDK)** 8 atau yang lebih baru.  
+- **Java Development Kit (JDK)** 8 atau lebih baru.  
 - **Maven** untuk manajemen dependensi.  
 - Familiaritas dasar dengan konsep pemrograman Java.
 
@@ -63,10 +66,10 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 ```
 
 ### Akuisisi Lisensi
-Untuk membuka potensi penuh GroupDocs.Viewer, Anda dapat memperoleh [percobaan gratis](https://releases.groupdocs.com/viewer/java/) atau mendapatkan lisensi sementara melalui [halaman lisensi sementara](https://purchase.groupdocs.com/temporary-license/). Untuk proyek jangka panjang, pertimbangkan untuk membeli lisensi penuh.
+Untuk membuka potensi penuh GroupDocs.Viewer, Anda dapat memperoleh [versi percobaan gratis](https://releases.groupdocs.com/viewer/java/) atau mendapatkan lisensi sementara melalui [halaman lisensi sementara](https://purchase.groupdocs.com/temporary-license/). Untuk proyek jangka panjang, pertimbangkan membeli lisensi penuh.
 
 ### Inisialisasi Dasar
-Setelah konfigurasi Maven selesai, inisialisasi viewer dengan path ke file ZIP Anda:
+Once the Maven setup is complete, initialize the viewer with the path to your ZIP file:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,12 +79,11 @@ try (Viewer viewer = new Viewer("path/to/archive.zip")) {
 }
 ```
 
-## Panduan Implementasi
+## Cara mengekstrak folder dari zip menggunakan GroupDocs.Viewer
+Ketika Anda hanya membutuhkan direktori tertentu di dalam arsip, Anda dapat memberi tahu viewer folder mana yang harus diproses. Operasi **extract folder from zip** ini terjadi di memori, sehingga Anda menghindari beban ekstraksi manual.
 
-### Cara merender folder zip – Langkah‑per‑Langkah
-
-#### Tentukan Path Output
-Buat metode pembantu yang menunjuk ke direktori tempat file HTML yang dirender akan disimpan:
+### Tentukan Jalur Output
+Create a helper method that points to the directory where rendered HTML files will be saved:
 
 ```java
 import java.nio.file.Path;
@@ -92,8 +94,8 @@ public static Path definePath() {
 }
 ```
 
-#### Render Folder Tertentu
-Konfigurasikan viewer untuk menargetkan folder tertentu di dalam arsip dan menghasilkan output HTML:
+### Render Folder Tertentu
+Configure the viewer to target a particular folder inside the archive and generate HTML output:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -116,8 +118,8 @@ public static void renderArchiveFolder() {
 - `pageFilePathFormat`: Mengontrol pola penamaan untuk setiap halaman HTML yang dirender.  
 - `viewOptions.getArchiveOptions().setFolder(...)`: Mengarahkan viewer untuk merender hanya folder yang ditentukan di dalam arsip ZIP.
 
-#### Definisi Path Kustom untuk Direktori Output
-Jika Anda memerlukan lokasi output yang berbeda, cukup sesuaikan metode `definePath`:
+### Definisi Jalur Kustom untuk Direktori Output
+If you need a different output location, simply adjust the `definePath` method:
 
 ```java
 public static Path definePath() {
@@ -136,39 +138,39 @@ public static Path definePath() {
 - **Opsi Rendering:** Sesuaikan kualitas gambar atau pengaturan minifikasi HTML di `HtmlViewOptions` untuk menyeimbangkan kecepatan dan kesetiaan visual.
 
 ## Kesimpulan
-Anda kini mengetahui **cara merender zip** folder di Java menggunakan GroupDocs.Viewer—dari menyiapkan Maven hingga menargetkan satu folder di dalam arsip dan menangani masalah kinerja. Integrasikan langkah‑langkah ini ke dalam aplikasi Anda untuk menyediakan akses cepat, aman, dan ramah pengguna ke konten arsip.
+Anda kini mengetahui **cara mengonversi zip ke HTML** dan merender folder zip di Java menggunakan GroupDocs.Viewer—dari menyiapkan Maven hingga menargetkan satu folder di dalam arsip dan menangani masalah kinerja. Integrasikan langkah-langkah ini ke dalam aplikasi Anda untuk menyediakan akses cepat, aman, dan ramah pengguna ke konten arsip.
 
 ### Langkah Selanjutnya
 Jelajahi fitur tambahan GroupDocs.Viewer seperti konversi PDF, watermarking, atau rendering multi‑halaman untuk lebih memperkaya alur pemrosesan dokumen Anda.
 
-## Bagian FAQ
+## Pertanyaan yang Sering Diajukan
 
-1. **Apa itu GroupDocs.Viewer untuk Java?**  
-   Sebuah perpustakaan yang memungkinkan pengembang merender dokumen—termasuk arsip—langsung dalam aplikasi Java.  
+**Q: Apa itu GroupDocs.Viewer untuk Java?**  
+A: Itu adalah pustaka yang memungkinkan pengembang merender dokumen—termasuk arsip—langsung dalam aplikasi Java.
 
-2. **Bagaimana cara menginstal GroupDocs.Viewer menggunakan Maven?**  
-   Tambahkan konfigurasi repositori dan dependensi ke file `pom.xml` Anda seperti yang ditunjukkan pada bagian Konfigurasi Maven.  
+**Q: Bagaimana cara menginstal GroupDocs.Viewer menggunakan Maven?**  
+A: Tambahkan konfigurasi repositori dan dependensi ke file `pom.xml` Anda seperti yang ditunjukkan pada bagian Konfigurasi Maven.
 
-3. **Apakah saya dapat menggunakan GroupDocs.Viewer secara gratis?**  
-   Versi percobaan gratis tersedia tetapi penerapan produksi memerlukan versi berlisensi.  
+**Q: Bisakah saya menggunakan GroupDocs.Viewer secara gratis?**  
+A: Versi percobaan gratis tersedia tetapi penerapan produksi memerlukan versi berlisensi.
 
-4. **Apa masalah umum saat merender arsip?**  
-   Pastikan nama folder cocok persis (case‑sensitive) dan arsip tidak dilindungi kata sandi kecuali Anda menyediakan kredensial.  
+**Q: Apa masalah umum saat merender arsip?**  
+A: Pastikan nama folder cocok persis (case‑sensitive) dan arsip tidak dilindungi kata sandi kecuali Anda menyediakan kredensial.
 
-5. **Di mana saya dapat mendapatkan dukungan jika diperlukan?**  
-   Kunjungi [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) untuk bantuan komunitas atau konsultasikan dokumentasi resmi.  
+**Q: Di mana saya dapat mendapatkan dukungan jika diperlukan?**  
+A: Kunjungi [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) untuk bantuan komunitas atau konsultasikan dokumentasi resmi.
 
 ## Sumber Daya
 - [Dokumentasi](https://docs.groupdocs.com/viewer/java/)
 - [Referensi API](https://reference.groupdocs.com/viewer/java/)
 - [Unduh GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Beli Lisensi](https://purchase.groupdocs.com/buy)
-- [Percobaan Gratis](https://releases.groupdocs.com/viewer/java/)
+- [Versi Percobaan Gratis](https://releases.groupdocs.com/viewer/java/)
 - [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
 - [Forum Dukungan](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Terakhir Diperbarui:** 2026-01-10  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
+**Terakhir Diperbarui:** 2026-03-14  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
 **Penulis:** GroupDocs
