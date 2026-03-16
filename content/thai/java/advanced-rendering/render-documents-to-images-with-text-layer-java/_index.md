@@ -1,50 +1,53 @@
 ---
-date: '2026-01-10'
+date: '2026-03-16'
 description: เรียนรู้วิธีแปลงไฟล์ Word เป็นภาพพร้อมชั้นข้อความใน Java ด้วย GroupDocs.Viewer
   โดยดึงข้อความทับซ้อนเพื่อให้ได้ภาพเอกสารที่ค้นหาได้และมีความคมชัดสูง
 keywords:
 - convert word to image
 - extract text overlay
-- render pdf with text
-- improve document image clarity
-- configure view options
-- generate searchable images
-title: แปลง Word เป็นภาพพร้อมชั้นข้อความใน Java
+- improve document clarity
+- groupdocs viewer java
+- convert pdf to image
+- how to render word
+title: แปลง Word เป็นภาพพร้อมเลเยอร์ข้อความใน Java
 type: docs
 url: /th/java/advanced-rendering/render-documents-to-images-with-text-layer-java/
 weight: 1
 ---
 
+ content.
+
 # แปลง Word เป็นภาพพร้อมชั้นข้อความใน Java ด้วย GroupDocs.Viewer
 
-คุณต้องการ **แปลง Word เป็นภาพ** พร้อมให้ข้อความสามารถเลือกและค้นหาได้หรือไม่? การแสดงผล DOCX เป็นภาพมักทำให้ข้อความพื้นฐานหายไป ทำให้การค้นหาและคัดลอก‑วางเป็นไปไม่ได้ ในบทแนะนำนี้เราจะแสดงวิธีแสดงผลเอกสาร Word เป็นภาพ PNG **พร้อมชั้นข้อความที่ซ้อนทับ** ด้วย GroupDocs.Viewer สำหรับ Java วิธีนี้ไม่เพียงแต่ **ปรับปรุงความคมชัดของภาพเอกสาร** แต่ยัง **สร้างภาพที่สามารถค้นหาได้** ซึ่งทำงานอย่างสมบูรณ์ในพอร์ทัลเว็บและโซลูชัน CMS
+คุณต้องการ **แปลง Word เป็นภาพ** พร้อมให้ข้อความสามารถเลือกและค้นหาได้หรือไม่? การแสดงผล DOCX เป็นภาพมักทำให้ข้อความพื้นฐานหายไป ทำให้การค้นหาและคัดลอก‑วางเป็นไปไม่ได้ ในบทแนะนำนี้เราจะพาคุณผ่านขั้นตอนที่แม่นยำเพื่อแสดงผลเอกสาร Word เป็นภาพ PNG **พร้อมชั้นข้อความที่ซ้อนทับ** ด้วย GroupDocs.Viewer สำหรับ Java วิธีนี้ไม่เพียงแต่ **ปรับปรุงความคมชัดของภาพเอกสาร** แต่ยัง **สร้างภาพที่สามารถค้นหาได้** ซึ่งทำงานได้อย่างสมบูรณ์ในเว็บพอร์ทัล, โซลูชัน CMS, และระบบใด ๆ ที่พึ่งพาการสกัดข้อความโดยไม่ต้องใช้ OCR
 
-![Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
+![เรนเดอร์เอกสารเป็นภาพพร้อมชั้นข้อความด้วย GroupDocs.Viewer สำหรับ Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
 ## คำตอบอย่างรวดเร็ว
-- **“แปลง Word เป็นภาพ” หมายถึงอะไร?** จะสร้างภาพเรสเตอร์ (PNG) ของแต่ละหน้าในขณะที่ยังคงรักษาข้อความต้นฉบับไว้ในชั้นที่ซ่อนอยู่  
-- **ทำไมต้องเพิ่มชั้นข้อความ?** ชั้นซ้อนทำให้ภาพสามารถค้นหาและเลือกได้ เพิ่มการเข้าถึงและ SEO  
-- **ไลบรารีที่ทำหน้าที่นี้คืออะไร?** GroupDocs.Viewer สำหรับ Java มีการสนับสนุนการสกัดข้อความและการแสดงผลภาพในตัว  
-- **ต้องมีลิขสิทธิ์หรือไม่?** สามารถใช้เวอร์ชันทดลองฟรีสำหรับการพัฒนา; ต้องซื้อไลเซนส์สำหรับการใช้งานจริง  
-- **สามารถใช้โค้ดเดียวกันกับ PDF ได้หรือไม่?** ใช่ – ตัวเลือกการแสดงผลเดียวกันใช้ได้กับ PDF, DOCX และรูปแบบอื่น ๆ อีกหลายประเภท
+- **“convert Word to image” หมายถึงอะไร?** มันสร้างภาพแรสเตอร์ (PNG) ของแต่ละหน้าในขณะที่ยังคงรักษาข้อความต้นฉบับในชั้นที่ซ่อนอยู่  
+- **ทำไมต้องเพิ่มชั้นข้อความ?** การซ้อนทับทำให้ภาพสามารถค้นหาและเลือกได้, เพิ่มการเข้าถึงและ SEO  
+- **ไลบรารีใดจัดการเรื่องนี้?** GroupDocs.Viewer for Java มีการสนับสนุนในตัวสำหรับการสกัดข้อความและการแสดงผลภาพ  
+- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้ฟรีทำงานได้สำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์แบบชำระเงินสำหรับการใช้งานจริง  
+- **ฉันสามารถใช้โค้ดเดียวกันสำหรับ PDF ได้หรือไม่?** ใช่ – ตัวเลือกการแสดงผลเดียวกันใช้ได้กับ PDF, DOCX, และรูปแบบอื่น ๆ อีกหลายประเภท  
 
-## “แปลง Word เป็นภาพ” พร้อมชั้นข้อความคืออะไร?
-การแปลงไฟล์ Word เป็นภาพโดยปกติจะสร้างบิตแมพที่มีเพียงพิกเซลเท่านั้น โดยการเปิดใช้งาน **extract text overlay** GroupDocs.Viewer จะเพิ่มชั้นข้อความที่มองไม่เห็นบนแต่ละภาพ ทำให้เบราว์เซอร์และเครื่องมือค้นหาอ่านเนื้อหาได้
+## “convert Word to image” กับชั้นข้อความคืออะไร?
+การแปลงไฟล์ Word เป็นภาพโดยทั่วไปจะสร้างบิตแมพที่มีเพียงพิกเซลเท่านั้น โดยการเปิดใช้ **extract text overlay**, GroupDocs.Viewer จะเพิ่มชั้นข้อความที่มองไม่เห็นบนแต่ละภาพ ทำให้เบราว์เซอร์และเครื่องมือค้นหาอ่านเนื้อหาได้  
 
 ## ทำไมต้องใช้ GroupDocs.Viewer สำหรับงานนี้?
-- **ผลลัพธ์ PNG คุณภาพสูง** ที่รักษาเลย์เอาต์เดิมไว้  
-- **สกัดชั้นข้อความโดยอัตโนมัติ** ทำให้ได้ภาพที่ค้นหาได้โดยไม่ต้องประมวลผลเพิ่มเติม  
-- **API ที่เรียบง่าย** – เพียงไม่กี่บรรทัดของโค้ด Java ก็จัดการกระบวนการทั้งหมดได้  
-- **รองรับรูปแบบหลากหลาย** – วิธีเดียวกันใช้ได้กับ PDF, PPTX และอื่น ๆ อีกมาก
+- **ผลลัพธ์ PNG คุณภาพสูง** ที่รักษาเลย์เอาต์ต้นฉบับ  
+- **Extract text overlay** อัตโนมัติ, ทำให้คุณได้ภาพที่สามารถค้นหาได้โดยไม่ต้องประมวลผลเพิ่มเติม  
+- **Simple API** – เพียงไม่กี่บรรทัดของโค้ด Java จัดการกระบวนการทั้งหมด  
+- **Broad format support** – วิธีการเดียวกันทำงานได้กับ PDF, PPTX, และอื่น ๆ อีกมาก  
+- **Improved document clarity** ขอบคุณเอนจินการเรนเดอร์แบบ lossless  
 
 ## ข้อกำหนดเบื้องต้น
-- ติดตั้ง Java Development Kit (JDK) และกำหนดค่าให้พร้อมใช้งาน  
-- มี Maven สำหรับการจัดการ dependencies  
-- มีความคุ้นเคยพื้นฐานกับการจัดการไฟล์ใน Java และโครงการ Maven
+- Java Development Kit (JDK) ที่ติดตั้งและกำหนดค่าแล้ว  
+- Maven สำหรับการจัดการ dependencies  
+- ความคุ้นเคยพื้นฐานกับการจัดการไฟล์ Java และโครงการ Maven  
 
 ## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 ### ข้อมูลการติดตั้ง
-เพิ่ม GroupDocs.Viewer ลงในโครงการ Maven ของคุณโดยใส่ repository และ dependency ลงในไฟล์ `pom.xml` ของคุณ:
+เพิ่ม GroupDocs.Viewer ไปยังโครงการ Maven ของคุณโดยใส่ repository และ dependency ลงใน `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -63,25 +66,24 @@ weight: 1
 </dependencies>
 ```
 
-### การรับลิขสิทธิ์
-เริ่มต้นด้วยเวอร์ชันทดลองฟรีโดยดาวน์โหลด GroupDocs.Viewer จาก [download page](https://releases.groupdocs.com/viewer/java/) ของพวกเขา สำหรับการใช้งานจริง ให้ซื้อไลเซนส์หรือรับคีย์ชั่วคราวจาก [temporary license page](https://purchase.groupdocs.com/temporary-license/)
+### การรับไลเซนส์
+เริ่มต้นด้วยการทดลองใช้ฟรีโดยดาวน์โหลด GroupDocs.Viewer จาก [download page](https://releases.groupdocs.com/viewer/java/). สำหรับการใช้งานในผลิตภัณฑ์, ซื้อไลเซนส์หรือรับคีย์ชั่วคราวจาก [temporary license page](https://purchase.groupdocs.com/temporary-license/).
 
-### การเริ่มต้นและตั้งค่าเบื้องต้น
-หลังจากทำการ sync Maven แล้ว คุณสามารถสร้างอินสแตนซ์ `Viewer` – วัตถุนี้จะเป็นตัวขับกระบวนการแสดงผล
+### การเริ่มต้นและการตั้งค่าเบื้องต้น
+หลังจากการซิงค์ Maven, คุณสามารถสร้างอินสแตนซ์ `Viewer` – วัตถุนี้จะควบคุมกระบวนการเรนเดอร์  
 
-## คู่มือขั้นตอนต่อขั้นตอนเพื่อแปลง Word เป็นภาพ
-
+## คู่มือขั้นตอนการแปลง Word เป็นภาพ
 ### ขั้นตอนที่ 1: กำหนดไดเรกทอรีผลลัพธ์
-แรกสุด ให้บอก Viewer ว่าจะเก็บไฟล์ PNG ที่สร้างขึ้นที่ไหน โค้ดด้านล่างจะสร้าง (หรือใช้) โฟลเดอร์ชื่อ `YOUR_OUTPUT_DIRECTORY`
+แรกสุด, บอกให้ viewer รู้ว่าจะเก็บไฟล์ PNG ที่สร้างขึ้นที่ไหน โค้ดด้านล่างจะสร้าง (หรือใช้ซ้ำ) โฟลเดอร์ชื่อ `YOUR_OUTPUT_DIRECTORY`.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-> **เคล็ดลับ:** ใช้ `Files.createDirectories(outputDirectory);` หากต้องการให้โฟลเดอร์ถูกสร้างโดยอัตโนมัติ
+> **เคล็ดลับ:** ใช้ `Files.createDirectories(outputDirectory);` หากคุณต้องการให้โฟลเดอร์ถูกสร้างโดยอัตโนมัติ.
 
-### ขั้นตอนที่ 2: กำหนดตัวเลือกการแสดงผล (Configure View Options)
-ต่อไป ตั้งค่าตัวเลือกการแสดงผล โดยใช้ `PngViewOptions` และเปิดใช้งาน `setExtractText(true)` เพื่อบอก GroupDocs.Viewer ให้ **สกัดชั้นข้อความ** และฝังลงในแต่ละภาพ
+### ขั้นตอนที่ 2: ตั้งค่า View Options (Configure View Options)
+ต่อไป, ตั้งค่าตัวเลือกการเรนเดอร์ โดยใช้ `PngViewOptions` และเปิดใช้งาน `setExtractText(true)`, คุณสั่งให้ GroupDocs.Viewer **extract text overlay** และฝังลงในแต่ละภาพ.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -89,8 +91,8 @@ PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 viewOptions.setExtractText(true);  // Enable extracting text over the image
 ```
 
-### ขั้นตอนที่ 3: แสดงผลเอกสาร (Convert Word to Image)
-สุดท้าย เปิดไฟล์ DOCX ต้นฉบับและเรียก `viewer.view(viewOptions)` บล็อก `try‑with‑resources` จะรับประกันว่าการปิดอินสแตนซ์ `Viewer` ทำอย่างถูกต้อง
+### ขั้นตอนที่ 3: เรนเดอร์เอกสาร (Convert Word to Image)
+สุดท้าย, เปิดไฟล์ DOCX ต้นฉบับและเรียก `viewer.view(viewOptions)`. บล็อก `try‑with‑resources` จะรับประกันว่าอินสแตนซ์ `Viewer` จะถูกปิดอย่างถูกต้อง.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
@@ -98,51 +100,58 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
 }
 ```
 
-เมื่อโค้ดทำงานเสร็จแต่ละหน้าของเอกสาร Word จะปรากฏเป็น PNG ความละเอียดสูงพร้อมชั้นข้อความที่มองไม่เห็น พร้อมสำหรับการทำดัชนีและการค้นหา
+เมื่อโค้ดทำงานเสร็จ, แต่ละหน้าของเอกสาร Word จะปรากฏเป็น PNG ความละเอียดสูงพร้อมชั้นข้อความที่มองไม่เห็น, พร้อมสำหรับการทำดัชนีและการค้นหา.
 
-## เคล็ดลับการแก้ไขปัญหา
-- **ไฟล์ไม่พบ:** ตรวจสอบเส้นทางของ `SAMPLE_DOCX` อีกครั้ง ใช้เส้นทางแบบเต็มเพื่อความแน่นอน  
-- **ปัญหาการอนุญาต:** ตรวจสอบให้แน่ใจว่ากระบวนการ Java สามารถเขียนลงใน `YOUR_OUTPUT_DIRECTORY` ได้  
-- **เวอร์ชันไม่ตรงกัน:** ยืนยันว่าเวอร์ชันใน `pom.xml` ตรงกับไลบรารีที่คุณดาวน์โหลด
+## ทำไมเรื่องนี้ถึงสำคัญ
+การฝังชั้นข้อความที่สามารถค้นหาได้หมายความว่าคุณสามารถให้ภาพตัวอย่างที่มีน้ำหนักเบา **และ** รักษาความสามารถในการค้นหาข้อความเต็มรูปแบบ สิ่งนี้มีคุณค่าเป็นพิเศษสำหรับ:
+1. **Web portals** ที่ต้องการภาพย่อที่รวดเร็วโดยไม่เสีย SEO.  
+2. **Content Management Systems** ที่เก็บสแนปช็อตของเอกสารเพื่อการเก็บถาวรแต่ยังต้องการการทำดัชนีข้อความ.  
+3. **Document archiving** ที่ค่าใช้จ่ายในการจัดเก็บเป็นปัญหาแต่ต้องการการค้นพบสูง.  
+
+## ปัญหาที่พบบ่อยและวิธีแก้
+- **File Not Found:** ตรวจสอบเส้นทางไปยัง `SAMPLE_DOCX` อีกครั้ง. ใช้เส้นทางแบบ absolute เพื่อความแน่นอน.  
+- **Permission Issues:** ตรวจสอบให้แน่ใจว่าโปรเซส Java สามารถเขียนไปยัง `YOUR_OUTPUT_DIRECTORY`.  
+- **Version Mismatch:** ยืนยันว่าเวอร์ชันใน `pom.xml` ตรงกับไลบรารีที่คุณดาวน์โหลด.  
+- **Missing Text Layer:** ยืนยันว่า `viewOptions.setExtractText(true)` ถูกตั้งค่าและโฟลเดอร์ผลลัพธ์มีสิทธิ์การเขียน.  
 
 ## การประยุกต์ใช้งานจริง
-1. **พอร์ทัลเว็บ:** แสดงตัวอย่างเอกสารที่ผู้ใช้สามารถค้นหาได้โดยไม่ต้องดาวน์โหลดไฟล์ต้นฉบับ  
-2. **ระบบจัดการเนื้อหา (CMS):** เก็บภาพสแนปช็อตที่สามารถค้นหาได้สำหรับการเก็บถาวร  
-3. **การเก็บถาวรเอกสาร:** มีเวอร์ชันภาพที่เบาแต่ยังคงเปิดใช้งานการค้นหาข้อความเต็มรูปแบบ
+1. **Web Portals:** แสดงตัวอย่างเอกสารที่ผู้ใช้สามารถค้นหาได้โดยไม่ต้องดาวน์โหลดไฟล์ต้นฉบับ.  
+2. **Content Management Systems:** เก็บสแนปช็อตภาพที่สามารถค้นหาได้เพื่อการเก็บถาวร.  
+3. **Document Archiving:** รักษาเวอร์ชันภาพที่มีน้ำหนักเบาในขณะที่ยังคงเปิดใช้งานการค้นหาข้อความเต็มรูปแบบ.  
 
-## พิจารณาด้านประสิทธิภาพ
-- ปิดออบเจกต์ `Viewer` ทันที (ตามที่แสดงใน `try‑with‑resources`)  
-- เลือก PNG เพื่อคุณภาพ; หากต้องการประหยัดแบนด์วิธให้เปลี่ยนเป็น JPEG  
-- แคชหน้าที่แสดงผลเมื่อเอกสารเดียวกันถูกเรียกหลายครั้ง
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+- ทำลายออบเจกต์ `Viewer` อย่างทันท่วงที (เช่นที่แสดงด้วย `try‑with‑resources`).  
+- เลือก PNG เพื่อคุณภาพ; เปลี่ยนเป็น JPEG หากแบนด์วิดท์เป็นปัญหา.  
+- แคชหน้าที่เรนเดอร์เมื่อเอกสารเดียวกันถูกเรียกหลายครั้ง.  
 
 ## คำถามที่พบบ่อย
 
-**Q: จะจัดการกับเอกสารขนาดใหญ่อย่างไร?**  
-A: เรนเดอร์หน้าเป็นชุด ๆ และปล่อยอินสแตนซ์ `Viewer` หลังจากประมวลผลแต่ละชุด เพื่อรักษาการใช้หน่วยความจำให้ต่ำ
+**Q: ฉันจัดการกับเอกสารขนาดใหญ่อย่างไร?**  
+A: เรนเดอร์หน้าแบบเพิ่มขึ้นและปล่อยอินสแตนซ์ `Viewer` แต่ละตัวหลังจากประมวลผลชุดเพื่อรักษาการใช้หน่วยความจำให้ต่ำ  
 
-**Q: สามารถเรนเดอร์ PDF ด้วยวิธีเดียวกันได้หรือไม่?**  
-A: ใช่, GroupDocs.Viewer รองรับ PDF และการตั้งค่า `setExtractText(true)` จะสร้างภาพ PDF ที่สามารถค้นหาได้เช่นกัน
+**Q: ฉันสามารถเรนเดอร์ PDF ด้วยวิธีเดียวกันได้หรือไม่?**  
+A: ใช่, GroupDocs.Viewer รองรับ PDF และแฟล็ก `setExtractText(true)` เดียวกันจะสร้างภาพ PDF ที่สามารถค้นหาได้  
 
 **Q: ถ้าชั้นข้อความไม่ปรากฏในผลลัพธ์จะทำอย่างไร?**  
-A: ตรวจสอบว่ามีการตั้งค่า `viewOptions.setExtractText(true)` แล้วและโฟลเดอร์ผลลัพธ์มีสิทธิ์เขียน
+A: ตรวจสอบว่า `viewOptions.setExtractText(true)` ถูกตั้งค่าและโฟลเดอร์ผลลัพธ์มีสิทธิ์การเขียน  
 
 **Q: รองรับรูปแบบภาพอื่น ๆ หรือไม่?**  
-A: นอกจาก PNG คุณสามารถใช้ `JpgViewOptions` หรือ `BmpViewOptions` โดยเปลี่ยนคลาสตัวเลือกการแสดงผล
+A: นอกจาก PNG, คุณสามารถใช้ `JpgViewOptions` หรือ `BmpViewOptions` โดยเปลี่ยนคลาสตัวเลือกการมองเห็น  
 
-**Q: จะหาเอกสาร API รายละเอียดเพิ่มเติมได้จากที่ไหน?**  
-A: เอกสารอย่างเป็นทางการมีตัวอย่างและรายละเอียดการกำหนดค่าที่ครบถ้วน
+**Q: ฉันจะหาเอกสาร API รายละเอียดเพิ่มเติมได้จากที่ไหน?**  
+A: เอกสารอย่างเป็นทางการให้ตัวอย่างและรายละเอียดการกำหนดค่าที่ครบถ้วน  
 
 ## แหล่งข้อมูล
-- **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API Reference:** [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
-- **Download:** [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
-- **Purchase:** [Buy License](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [Download Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Temporary License:** [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation:** [เอกสาร GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference:** [คู่มืออ้างอิง API](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [ดาวน์โหลด GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase:** [ซื้อไลเซนส์](https://purchase.groupdocs.com/buy)  
+- **Free Trial:** [ดาวน์โหลดรุ่นทดลองฟรี](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License:** [รับไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)  
+- **Support:** [ฟอรั่ม GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2026-01-10  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+**อัปเดตล่าสุด:** 2026-03-16  
+**ทดสอบด้วย:** GroupDocs.Viewer 25.2 for Java  
+**ผู้เขียน:** GroupDocs
