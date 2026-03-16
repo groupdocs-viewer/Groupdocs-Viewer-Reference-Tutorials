@@ -1,39 +1,39 @@
 ---
-date: '2026-01-08'
-description: Aprende a renderizar dibujos CAD en imágenes PNG de alta calidad usando
-  dimensiones personalizadas y colores de fondo con GroupDocs.Viewer para Java.
+date: '2026-03-16'
+description: Aprende a convertir DWG a PNG con tamaño y color de fondo personalizados
+  usando GroupDocs.Viewer para Java.
 keywords:
 - render CAD drawings PNG
 - GroupDocs.Viewer for Java setup
 - custom image size and background color
-title: Cómo renderizar dibujos CAD como PNG con tamaño y color de fondo personalizados
-  usando GroupDocs.Viewer para Java
+title: Cómo convertir DWG a PNG con tamaño y color de fondo personalizados usando
+  GroupDocs.Viewer para Java
 type: docs
 url: /es/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/
 weight: 1
 ---
 
-# Cómo renderizar dibujos CAD como PNG con tamaño personalizado y color de fondo usando GroupDocs.Viewer para Java
+# Cómo convertir DWG a PNG con tamaño personalizado y color de fondo usando GroupDocs.Viewer para Java
 
-¿Tienes problemas para convertir tus dibujos CAD en imágenes de alta calidad manteniendo dimensiones y estética específicas? En este tutorial mostraremos **cómo renderizar CAD** archivos como PNG con tamaño y color de fondo personalizados, para que obtengas exactamente el aspecto que necesitas para informes, presentaciones o vistas previas web.
+Si buscas **convertir DWG a PNG** manteniendo un control total sobre las dimensiones de la imagen y el estilo del fondo, has llegado al lugar correcto. En este tutorial te guiaremos a través de la renderización de archivos CAD como PNG, personalizando el ancho y cambiando el color de fondo para que la salida coincida con los requisitos de tu informe, presentación o vista previa web.
 
 ## Respuestas rápidas
-- **¿Qué significa “how to render CAD”?** Se refiere a convertir archivos CAD (p. ej., DWG) a formatos de imagen como PNG mediante código.  
-- **¿Puedo establecer un ancho personalizado?** Sí – usa `CadOptions.forRenderingByWidth(int width)`.  
-- **¿Cómo cambio el fondo?** Llama a `cadOptions.setBackgroundColor(Color.YOUR_COLOR)`.  
+- **¿Qué significa “convertir DWG a PNG”?** Es el proceso de transformar un archivo CAD DWG en una imagen PNG mediante código.  
+- **¿Puedo establecer un ancho personalizado?** Sí – utiliza `CadOptions.forRenderingByWidth(int width)`.  
+- **¿Cómo cambio el color de fondo?** Llama a `cadOptions.setBackgroundColor(Color.YOUR_COLOR)`.  
 - **¿Qué biblioteca se requiere?** GroupDocs.Viewer para Java (versión 25.2 o posterior).  
 - **¿Necesito una licencia?** Una licencia temporal o comprada elimina los límites de evaluación.
 
 ![Renderizar dibujos CAD como PNG con tamaño personalizado y color de fondo con GroupDocs.Viewer para Java](/viewer/advanced-rendering/render-cad-drawings-as-png-with-custom-size-background-color-java.png)
 
-## Cómo renderizar dibujos CAD – Visión general
-Esta sección amplía el objetivo principal: **cómo renderizar CAD** dibujos en archivos PNG mientras controlas el tamaño y el fondo. Recorreremos la configuración completa, fragmentos de código y consejos prácticos.
+## Cómo convertir DWG a PNG – Visión general
+En esta sección ampliamos el objetivo principal: **cómo convertir DWG a PNG** mientras controlas el tamaño y el fondo. Verás la configuración completa, el código exacto que necesitas y consejos prácticos para evitar errores comunes.
 
 ## Lo que aprenderás
-- Configurar GroupDocs.Viewer para Java en tu proyecto  
+- Configurar GroupDocs.Viewer para Java en un proyecto Maven  
 - **Convertir DWG a PNG** con dimensiones personalizadas  
-- **Establecer color de fondo PNG** durante el renderizado para un aspecto pulido  
-- Escenarios del mundo real donde el renderizado personalizado agrega valor  
+- **Cambiar el color de fondo CAD** durante la renderización para un aspecto pulido  
+- Escenarios del mundo real donde la renderización personalizada agrega valor  
 
 ## Requisitos previos
 
@@ -71,7 +71,7 @@ Agrega el repositorio de GroupDocs y la dependencia a tu `pom.xml` de Maven:
 ### Obtención de licencia
 Obtén una licencia temporal o completa para eliminar las restricciones de evaluación.
 
-### Inicialización y configuración básica
+### Inicialización y configuración básicas
 Crea una instancia de `Viewer` que apunte a tu archivo CAD:
 
 ```java
@@ -84,12 +84,10 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-## Guía de implementación
+## Función 1: Renderizar dibujos CAD con tamaño de imagen personalizado y color de fondo
 
-### Función 1: Renderizar dibujos CAD con tamaño de imagen personalizado y color de fondo
-
-#### Visión general
-Esta función te permite **convertir DWG a PNG** especificando el ancho de la imagen y el tono del fondo.
+### Cómo cambiar el color de fondo CAD
+Esta función te permite **convertir DWG a PNG** mientras especificas un ancho personalizado y aplicas un nuevo tono de fondo.
 
 #### Implementación paso a paso
 
@@ -126,16 +124,16 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
 **Explicación de los parámetros**  
 - `PngViewOptions` – define el formato de salida y el nombre.  
 - `forRenderingByWidth(int width)` – establece el ancho de imagen personalizado.  
-- `setBackgroundColor(Color color)` – **aplica el renderizado con color de fondo** al PNG.
+- `setBackgroundColor(Color color)` – **establece el color de fondo PNG** para mejorar la consistencia visual.
 
 #### Consejos de solución de problemas
 - Verifica que la carpeta de salida exista; créala si es necesario.  
-- Vuelve a comprobar la ruta del archivo de entrada y los permisos.  
+- Verifica nuevamente la ruta del archivo de entrada y los permisos.  
 
-### Función 2: Configurar el color de fondo en las opciones de renderizado
+## Función 2: Configurar el color de fondo en las opciones de renderizado
 
-#### Visión general
-Aquí nos centramos en **establecer color de fondo PNG** para mejorar la consistencia visual.
+### Cómo establecer el color de fondo PNG
+Aquí nos enfocamos en la opción **set background color PNG** para asegurar que cada imagen renderizada coincida con la paleta de tu marca.
 
 #### Implementación paso a paso
 
@@ -167,12 +165,12 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
 
 **Opciones clave de configuración**  
 - Ajusta `forRenderingByWidth(int width)` para diferentes dimensiones.  
-- Usa cualquier constante `Color` o `new Color(r,g,b)` personalizado para fondos a medida.  
+- Usa cualquier constante `Color` o `new Color(r,g,b)` personalizada para fondos a medida.  
 
 ## Aplicaciones prácticas
 
 ### 1. Documentación de ingeniería
-El renderizado personalizado garantiza que los dibujos de ingeniería cumplan con las guías de estilo corporativas.
+La renderización personalizada garantiza que los dibujos de ingeniería cumplan con las guías de estilo corporativas.
 
 ### 2. Visualización arquitectónica
 Presenta planos con un fondo limpio que coincida con las presentaciones.
@@ -186,8 +184,8 @@ Combina este pipeline de renderizado con sistemas de gestión documental para au
 ## Consideraciones de rendimiento
 
 ### Optimización del rendimiento
-- **Procesamiento por lotes:** Renderiza múltiples archivos CAD en un bucle.  
-- **Gestión de recursos:** Ajusta el tamaño del heap de la JVM para dibujos grandes.
+- **Procesamiento por lotes:** Renderiza varios archivos CAD en un bucle.  
+- **Gestión de recursos:** Ajusta el tamaño del heap de JVM para dibujos grandes.
 
 ### Directrices de uso de recursos
 Monitorea CPU y memoria; libera las instancias de `Viewer` rápidamente.
@@ -200,37 +198,29 @@ Monitorea CPU y memoria; libera las instancias de `Viewer` rápidamente.
 
 | Problema | Solución |
 |----------|----------|
-| **Carpeta de salida no encontrada** | Crea el directorio previamente o agrega `Files.createDirectories(outputDirectory);` |
+| **Carpeta de salida no encontrada** | Crea el directorio de antemano o agrega `Files.createDirectories(outputDirectory);` |
 | **Imagen en blanco** | Asegúrate de que `cadOptions.setBackgroundColor` se establezca después de `forRenderingByWidth`. |
-| **Errores de falta de memoria** | Incrementa la opción `-Xmx` de la JVM o procesa los archivos en lotes más pequeños. |
+| **Errores de falta de memoria** | Incrementa la opción JVM `-Xmx` o procesa los archivos en lotes más pequeños. |
 
 ## Preguntas frecuentes
 
-**P: ¿Puedo renderizar otros formatos CAD además de DWG?**  
-R: Sí, GroupDocs.Viewer admite DXF, DWF y varios otros tipos de archivos CAD.
+**Q: ¿Puedo renderizar otros formatos CAD además de DWG?**  
+A: Sí, GroupDocs.Viewer soporta DXF, DWF y varios otros tipos de archivos CAD.
 
-**P: ¿Cómo utilizo un color RGB personalizado en lugar de una constante predefinida?**  
-R: Crea una nueva instancia de `Color`, por ejemplo, `new Color(123, 45, 67)` y pásala a `setBackgroundColor`.
+**Q: ¿Cómo utilizo un color RGB personalizado en lugar de una constante predefinida?**  
+A: Crea una nueva instancia de `Color`, por ejemplo, `new Color(123, 45, 67)` y pásala a `setBackgroundColor`.
 
-**P: ¿Es posible renderizar solo un diseño o capa específicos?**  
-R: Puedes especificar opciones de diseño o capa mediante `CadOptions` antes de llamar a `viewer.view`.
+**Q: ¿Es posible renderizar solo un diseño o capa específica?**  
+A: Puedes especificar opciones de diseño o capa mediante `CadOptions` antes de llamar a `viewer.view`.
 
-**P: ¿La biblioteca admite fondos transparentes?**  
-R: Establece el color de fondo a `new Color(0,0,0,0)` para una transparencia completa si el formato de destino lo admite.
+**Q: ¿La biblioteca soporta fondos transparentes?**  
+A: Establece el color de fondo a `new Color(0,0,0,0)` para transparencia total si el formato de destino lo soporta.
 
-**P: ¿Qué versión de GroupDocs.Viewer se requiere?**  
-R: El tutorial usa la versión 25.2, pero las versiones más recientes mantienen la misma API.
-
-## Conclusión
-Ahora sabes **cómo renderizar CAD** dibujos en archivos PNG con dimensiones y colores de fondo personalizados usando GroupDocs.Viewer para Java. Aplica estas técnicas para crear activos visuales de aspecto profesional para flujos de trabajo de ingeniería, arquitectura o fabricación.
-
-### Próximos pasos
-- Experimenta con diferentes anchos de imagen y colores.  
-- Integra el código de renderizado en un servicio de procesamiento por lotes.  
-- Explora opciones adicionales de Viewer como la conversión a PDF o el renderizado multipágina.
+**Q: ¿Qué versión de GroupDocs.Viewer se requiere?**  
+A: El tutorial usa la versión 25.2, pero versiones más recientes conservan la misma API.
 
 ---
 
-**Última actualización:** 2026-01-08  
+**Última actualización:** 2026-03-16  
 **Probado con:** GroupDocs.Viewer 25.2 para Java  
 **Autor:** GroupDocs
