@@ -1,48 +1,47 @@
 ---
-date: '2025-12-23'
-description: Dowiedz się, jak stworzyć podgląd dokumentu w Javie, renderując obszar
-  wydruku Excela przy użyciu GroupDocs.Viewer. Przewodnik krok po kroku dla efektywnych
-  rozwiązań podglądu w Javie.
+date: '2026-03-19'
+description: Dowiedz się, jak konwertować pliki XLSX na HTML w Javie, renderując obszary
+  wydruku arkusza kalkulacyjnego za pomocą GroupDocs.Viewer – szybkiego, skoncentrowanego
+  rozwiązania podglądu.
 keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Tworzenie podglądu dokumentu w Javie - renderowanie obszarów wydruku arkusza
-  kalkulacyjnego za pomocą GroupDocs.Viewer'
+title: Konwertuj XLSX do HTML przy użyciu GroupDocs.Viewer (obszary wydruku)
 type: docs
 url: /pl/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
 ---
 
-# Utwórz podgląd dokumentu Java: Renderowanie obszarów wydruku arkusza kalkulacyjnego za pomocą GroupDocs.Viewer
+# Konwertuj XLSX do HTML w Javie – Renderowanie obszarów wydruku arkusza kalkulacyjnego przy użyciu GroupDocs.Viewer
 
-Renderowanie tylko sekcji obszaru wydruku arkusza kalkulacyjnego może dramatycznie zmniejszyć ilość danych, które użytkownicy muszą przeglądać, co sprawia, że podgląd dokumentu jest szybszy i bardziej skoncentrowany. W tym przewodniku będziesz **create document preview java** projektami, które renderują wyłącznie zdefiniowane obszary wydruku, używając **GroupDocs.Viewer for Java**. Przeprowadzimy Cię przez konfigurację, ustawienia i praktyczne użycie, abyś mógł szybko dodać tę funkcję do swoich aplikacji.
+If you need to **convert XLSX to HTML** quickly while showing only the parts of a workbook that matter, rendering the defined print‑area sections is the way to go. This tutorial walks you through building a Java preview solution that extracts just the print areas from an Excel file and outputs clean, self‑contained HTML pages using **GroupDocs.Viewer for Java**. You’ll see why this approach speeds up loading, reduces bandwidth, and keeps your UI tidy—perfect for portals, dashboards, and any web‑based document viewer.
 
 ![Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
 ## Szybkie odpowiedzi
-- **What does “create document preview java” mean?** It refers to generating a visual representation (HTML, image, PDF) of a document directly from Java code.  
-- **Why render only the excel print area?** Izoluje najważniejsze dane, skracając czas renderowania i zużycie pasma.  
-- **Do I need a license to try this?** Dostępna jest darmowa wersja próbna lub tymczasowa licencja; pełna licencja jest wymagana w środowisku produkcyjnym.  
-- **Which Java version is supported?** Java 8 lub nowsza.  
-- **Can I embed the preview in a web page?** Tak — użyj opcji embedded‑resources, aby wygenerować samodzielne pliki HTML.  
+- **Co oznacza „convert XLSX to HTML”?** Oznacza to programowe przekształcenie skoroszytu Excel w gotowe do wyświetlenia w przeglądarce strony HTML.  
+- **Dlaczego renderować tylko obszar wydruku Excel?** Izoluje to najważniejsze dane, skracając czas renderowania i zużycie pasma.  
+- **Czy potrzebuję licencji, aby to wypróbować?** Dostępna jest bezpłatna wersja próbna lub tymczasowa licencja; pełna licencja jest wymagana w środowisku produkcyjnym.  
+- **Jaką wersję Javy obsługuje?** Java 8 lub nowsza (zalecana Java 11).  
+- **Czy mogę osadzić podgląd na stronie internetowej?** Tak — użyj opcji embedded‑resources, aby wygenerować samodzielne pliki HTML.  
 
-## Co to jest „create document preview java”?
-Tworzenie podglądu dokumentu w Javie oznacza programowe konwertowanie pliku źródłowego (np. skoroszytu XLSX) do formatu, który może być wyświetlany w przeglądarkach lub innych komponentach UI bez otwierania oryginalnej aplikacji. Takie podejście jest niezbędne dla portali, intranetów i platform SaaS, które muszą szybko i bezpiecznie prezentować zawartość dokumentów.
+## Co to jest „convert XLSX to HTML”?
+Konwersja pliku XLSX do HTML oznacza przejęcie wizualnego układu arkusza kalkulacyjnego i wyeksportowanie go jako znacznik HTML, który przeglądarki mogą wyświetlić bez potrzeby posiadania Excela. Jest to podstawowa technika **how to preview spreadsheet** w aplikacjach internetowych, umożliwiająca użytkownikom natychmiastowy i bezpieczny podgląd danych.
 
 ## Dlaczego renderować tylko obszar wydruku w Excelu?
 - **Performance:** Mniejsze ładunki HTML ładują się szybciej.  
-- **Clarity:** Użytkownicy widzą tylko sekcje oznaczone do druku, unikając bałaganu.  
+- **Clarity:** Użytkownicy widzą tylko sekcje oznaczone do drukowania, unikając bałaganu.  
 - **Security:** Niechciane arkusze pozostają ukryte w podglądzie.  
 
 ## Wymagania wstępne
 - **GroupDocs.Viewer for Java** v25.2 lub nowszy.  
-- Maven zainstalowany na maszynie deweloperskiej.  
-- JDK 8 lub nowszy (zalecany Java 11).  
+- Maven zainstalowany na Twoim komputerze deweloperskim.  
+- JDK 8 lub nowszy (zalecana Java 11).  
 - IDE (IntelliJ IDEA, Eclipse lub VS Code).  
 
 ## Konfiguracja GroupDocs.Viewer for Java
-Dodaj repozytorium GroupDocs i zależność do pliku `pom.xml`:
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,10 +61,10 @@ Dodaj repozytorium GroupDocs i zależność do pliku `pom.xml`:
 ```
 
 ### Uzyskanie licencji
-Rozpocznij od **darmowej wersji próbnej** lub poproś o **tymczasową licencję** w celu oceny. Gdy będziesz gotowy do produkcji, zakup pełną licencję, aby odblokować wszystkie funkcje i usunąć ograniczenia wersji próbnej.
+Start with a **free trial** or request a **temporary license** for evaluation. When you’re ready for production, purchase a full license to unlock all features and remove trial limitations.
 
 ### Podstawowa inicjalizacja
-Poniżej znajduje się minimalny kod potrzebny do otwarcia arkusza kalkulacyjnego za pomocą GroupDocs.Viewer:
+Below is the minimal code needed to open a spreadsheet with GroupDocs.Viewer:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,11 +75,11 @@ try (Viewer viewer = new Viewer("path/to/your/spreadsheet.xlsx")) {
 }
 ```
 
-## Jak stworzyć podgląd dokumentu java przy użyciu GroupDocs.Viewer
-Poniżej znajduje się krok po kroku przewodnik, który **render excel print area** tylko, generując samodzielne pliki HTML.
+## Jak konwertować XLSX do HTML przy użyciu GroupDocs.Viewer
+Below is a step‑by‑step walkthrough that **render excel print area** only, producing self‑contained HTML files.
 
 ### Krok 1: Zdefiniuj katalog wyjściowy i format ścieżki pliku
-Najpierw poinformuj viewer, gdzie zapisać wygenerowane strony HTML.
+First, tell the viewer where to write the generated HTML pages.
 
 ```java
 import java.nio.file.Path;
@@ -93,10 +92,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-*Explanation:* `outputDirectory` to folder, w którym będą przechowywane wszystkie pliki podglądu. `pageFilePathFormat` używa placeholdera (`{0}`), który viewer zastępuje numerem strony.
+*Explanation:* `outputDirectory` to folder, w którym będą przechowywane wszystkie pliki podglądu. `pageFilePathFormat` używa symbolu zastępczego (`{0}`), który przeglądarka zamienia na numer strony.
 
 ### Krok 2: Skonfiguruj opcje widoku HTML dla renderowania obszaru wydruku
-Skonfiguruj viewer, aby osadzać zasoby (CSS, obrazy) bezpośrednio oraz koncentrować się na zdefiniowanych obszarach wydruku.
+Configure the viewer to embed resources (CSS, images) directly and to focus on the defined print areas.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -107,10 +106,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingPrintArea());
 ```
 
-*Explanation:* `HtmlViewOptions.forEmbeddedResources` tworzy pojedynczy plik HTML na stronę, zawierający wszystkie CSS/JS w linii, upraszczając wdrożenie. `forRenderingPrintArea()` informuje silnik, aby **render excel print area** tylko.
+*Explanation:* `HtmlViewOptions.forEmbeddedResources` tworzy pojedynczy plik HTML na stronę, zawierający wszystkie CSS/JS wbudowane, co upraszcza wdrożenie. `forRenderingPrintArea()` instruuje silnik, aby **render excel print area** only.
 
-### Krok 3: Załaduj arkusz kalkulacyjny i wyrenderuj go
-Na koniec wskaż viewer na swój skoroszyt i wywołaj proces renderowania.
+### Krok 3: Załaduj arkusz kalkulacyjny i go wyrenderuj
+Finally, point the viewer at your workbook and invoke the rendering process.
 
 ```java
 // Replace with your actual document path
@@ -122,7 +121,7 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-*Explanation:* Metoda `view()` przetwarza skoroszyt zgodnie z ustawionymi opcjami, generując pliki HTML wyświetlające wyłącznie sekcje obszaru wydruku.
+*Explanation:* Metoda `view()` przetwarza skoroszyt zgodnie z ustawionymi opcjami, generując pliki HTML wyświetlające jedynie sekcje obszaru wydruku.
 
 ## Typowe problemy i rozwiązania
 - **File‑path errors:** Sprawdź, czy ścieżki są absolutne lub poprawnie względne względem katalogu roboczego projektu.  
@@ -137,45 +136,51 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 5. **Data‑Science Notebooks:** Osadź zwięzłe podglądy arkuszy kalkulacyjnych w dokumentacji.  
 
 ## Wskazówki dotyczące wydajności
-- **Memory tuning:** Dla bardzo dużych skoroszytów zwiększ przydział pamięci JVM (`-Xmx2g` lub wyższy).  
-- **Lazy loading:** Jeśli potrzebujesz tylko pierwszych kilku stron, zatrzymaj renderowanie po osiągnięciu wymaganej liczby stron.  
+- **Memory tuning:** Dla bardzo dużych skoroszytów zwiększ pamięć sterty JVM (`-Xmx2g` lub wyższą).  
+- **Lazy loading:** Jeśli potrzebujesz tylko kilku pierwszych stron, zatrzymaj renderowanie po osiągnięciu wymaganej liczby stron.  
 - **Parallel processing:** Renderuj wiele skoroszytów jednocześnie, używając oddzielnych instancji `Viewer` (każda w osobnym wątku).  
 
-## Podsumowanie
-Teraz wiesz, jak tworzyć rozwiązania **create document preview java**, które renderują wyłącznie zdefiniowane obszary wydruku arkusza kalkulacyjnego. Ta technika sprawia, że podglądy są szybsze, czystsze i bardziej bezpieczne — idealne dla nowoczesnych aplikacji internetowych i korporacyjnych.
+## Jak podglądać arkusz kalkulacyjny bez obszarów wydruku
+If you later decide to show the whole workbook, simply omit the `SpreadsheetOptions.forRenderingPrintArea()` call and use the default `SpreadsheetOptions`. This gives you a full **convert spreadsheet to html** experience.
+
+## Zakończenie
+Teraz wiesz, jak **convert XLSX to HTML** w Javie, renderując jedynie zdefiniowane obszary wydruku arkusza kalkulacyjnego. Ta technika sprawia, że podglądy są szybsze, czystsze i bardziej bezpieczne — idealne dla nowoczesnych aplikacji internetowych i korporacyjnych.
 
 ### Kolejne kroki
-- Eksperymentuj z innymi formatami widoku (PDF, PNG) używając `PdfViewOptions` lub `PngViewOptions`.  
+- Eksperymentuj z innymi formatami widoku (PDF, PNG) przy użyciu `PdfViewOptions` lub `PngViewOptions`.  
 - Połącz generowanie podglądu z uwierzytelnianiem, aby chronić wrażliwe dane.  
 - Zbadaj pełne API `SpreadsheetOptions` pod kątem niestandardowego rozmiaru stron, linii siatki i innych funkcji.  
 
-## Sekcja FAQ
-**Q: Jaka jest główna korzyść z renderowania tylko obszaru wydruku w Excelu?**  
-A: Zmniejsza bałagan i przyspiesza renderowanie, dostarczając skoncentrowany podgląd, który podkreśla najważniejsze dane.
+## Najczęściej zadawane pytania
 
-**Q: Czy mogę renderować również arkusze niewydrukowalne?**  
-A: Tak — pomiń `SpreadsheetOptions.forRenderingPrintArea()` i użyj domyślnych opcji, aby renderować cały skoroszyt.
+**Q: Jaka jest główna korzyść z renderowania tylko obszaru wydruku w Excelu?**  
+A: Redukuje to bałagan i przyspiesza renderowanie, dostarczając skoncentrowany podgląd podkreślający najważniejsze dane.
+
+**Q: Czy mogę renderować również arkusze nieprzeznaczone do druku?**  
+A: Tak — pomiń `SpreadsheetOptions.forRenderingPrintArea()` i użyj domyślnych opcji, aby wyrenderować cały skoroszyt.
 
 **Q: Czy GroupDocs.Viewer obsługuje inne formaty arkuszy kalkulacyjnych?**  
 A: Obsługuje XLS, XLSX, CSV, ODS i kilka innych formatów. Sprawdź oficjalną dokumentację, aby zobaczyć pełną listę.
 
-**Q: Jak mogę zwiększyć prędkość renderowania bardzo dużych plików?**  
-A: Zwiększ rozmiar stosu JVM, renderuj tylko potrzebne strony i rozważ przetwarzanie wielowątkowe.
+**Q: Jak mogę zwiększyć szybkość renderowania bardzo dużych plików?**  
+A: Zwiększ rozmiar sterty JVM, renderuj tylko potrzebne strony i rozważ przetwarzanie wielowątkowe.
 
-**Q: Moje obszary wydruku nie wyświetlają się — co powinienem sprawdzić?**  
+**Q: Moje obszary wydruku nie są wyświetlane — co powinienem sprawdzić?**  
 A: Upewnij się, że obszar wydruku jest zdefiniowany w pliku źródłowym (Excel → Układ strony → Obszar wydruku) oraz że używasz najnowszej wersji GroupDocs.Viewer.
 
 ## Zasoby
-- **Documentation:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- **Purchase:** [Buy a License](https://purchase.groupdocs.com/buy)
-- **Free Trial:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
-- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentacja:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referencja API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Pobierz:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- **Zakup:** [Buy a License](https://purchase.groupdocs.com/buy)
+- **Bezpłatna wersja próbna:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Tymczasowa licencja:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
+- **Wsparcie:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2025-12-23  
+**Last Updated:** 2026-03-19  
 **Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs
+**Author:** GroupDocs  
+
+---

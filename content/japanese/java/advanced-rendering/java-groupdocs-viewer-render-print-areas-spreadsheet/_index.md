@@ -1,51 +1,46 @@
 ---
-date: '2025-12-23'
-description: GroupDocs.Viewer を使用して Excel の印刷領域をレンダリングし、Java でドキュメントプレビューを作成する方法を学びましょう。効率的な
-  Java プレビューソリューションのためのステップバイステップガイドです。
+date: '2026-03-19'
+description: GroupDocs.Viewer を使用してスプレッドシートの印刷領域をレンダリングし、Java で XLSX を HTML に変換する方法を学びましょう
+  – 高速で特化したプレビューソリューションです。
 keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Javaでドキュメントプレビューを作成 - GroupDocs.Viewerでスプレッドシートの印刷領域をレンダリング'
+title: GroupDocs.ViewerでXLSXをHTMLに変換（印刷領域）
 type: docs
 url: /ja/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
 ---
 
-# ドキュメントプレビュー Java の作成: GroupDocs.Viewer でスプレッドシートの印刷領域をレンダリング
+# JavaでXLSXをHTMLに変換 – GroupDocs.Viewerでスプレッドシートの印刷領域をレンダリング
 
-スプレッドシートの印刷領域セクションだけをレンダリングすると、ユーザーがスキャンするデータ量を大幅に削減でき、ドキュメントプレビューがより高速かつ的確になります。このガイドでは、**ドキュメントプレビュー Java の作成**プロジェクトで、定義された印刷領域だけをレンダリングする方法を **GroupDocs.Viewer for Java** を使って解説します。セットアップ、構成、実際の使用例を順に説明するので、すぐにアプリケーションにこの機能を組み込めます。
+If you need to **convert XLSX to HTML** quickly while showing only the parts of a workbook that matter, rendering the defined print‑area sections is the way to go. This tutorial walks you through building a Java preview solution that extracts just the print areas from an Excel file and outputs clean, self‑contained HTML pages using **GroupDocs.Viewer for Java**. You’ll see why this approach speeds up loading, reduces bandwidth, and keeps your UI tidy—perfect for portals, dashboards, and any web‑based document viewer.
 
-![GroupDocs.Viewer for Java を使用したスプレッドシートの印刷領域のレンダリング](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
+![Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
-## クイックアンサー
-- **“create document preview java” とは何ですか？**  
-  Java のコードから直接ドキュメントのビジュアル表現（HTML、画像、PDF）を生成することを指します。  
-- **なぜ Excel の印刷領域だけをレンダリングするのですか？**  
-  最も関連性の高いデータだけを抽出し、レンダリング時間と帯域幅を削減します。  
-- **試すのにライセンスは必要ですか？**  
-  無料トライアルまたは一時ライセンスが利用可能です。製品版では正式なライセンスが必要です。  
-- **サポートされている Java バージョンは？**  
-  Java 8 以降。  
-- **プレビューをウェブページに埋め込めますか？**  
-  はい。`embedded‑resources` オプションを使用すれば、自己完結型の HTML ページを生成できます。
+## クイック回答
+- **“convert XLSX to HTML” とは何ですか？** プログラムで Excel ワークブックを Web 対応の HTML ページに変換することを意味します。  
+- **なぜ Excel の印刷領域だけをレンダリングするのですか？** 最も重要なデータだけを抽出し、レンダリング時間と帯域幅を削減します。  
+- **この機能を試すのにライセンスは必要ですか？** 無料トライアルまたは一時ライセンスが利用可能です。本番環境ではフルライセンスが必要です。  
+- **サポートされている Java バージョンはどれですか？** Java 8 以降（Java 11 推奨）。  
+- **プレビューをウェブページに埋め込めますか？** はい—`embedded‑resources` オプションを使用して自己完結型 HTML ページを生成できます。
 
-## “create document preview java” とは？
-Java でドキュメントプレビューを作成するとは、ソースファイル（例: XLSX ワークブック）をプログラム上でブラウザやその他の UI コンポーネントで表示可能な形式に変換することです。元のアプリケーションを開かずにコンテンツを素早く安全に表示できるため、ポータル、イントラネット、SaaS プラットフォームで重要な役割を果たします。
+## “convert XLSX to HTML” とは何ですか？
+Converting an XLSX file to HTML means taking the spreadsheet’s visual layout and exporting it as HTML markup that browsers can display without needing Excel. This is a core technique for **how to preview spreadsheet** content inside web applications, allowing users to view data instantly and securely.
 
 ## なぜ Excel の印刷領域だけをレンダリングするのか？
-- **パフォーマンス:** 小さな HTML ペイロードは高速にロードできます。  
-- **明瞭さ:** ユーザーは印刷対象としてマークされたセクションだけを見るため、画面がすっきりします。  
-- **セキュリティ:** 不要なワークシートはプレビューから隠れます。  
+- **Performance:** Smaller HTML payloads load faster.  
+- **Clarity:** Users see only the sections marked for printing, avoiding clutter.  
+- **Security:** Unwanted worksheets stay hidden from the preview.  
 
 ## 前提条件
 - **GroupDocs.Viewer for Java** v25.2 以降。  
-- 開発マシンに Maven がインストールされていること。  
-- JDK 8 以降（Java 11 推奨）。  
-- IDE（IntelliJ IDEA、Eclipse、または VS Code）。  
+- Maven が開発マシンにインストールされていること。  
+- JDK 8 以降（Java 11 推奨）。  
+- IDE（IntelliJ IDEA、Eclipse、または VS Code）。
 
-## GroupDocs.Viewer for Java の設定
-`pom.xml` に GroupDocs リポジトリと依存関係を追加します。
+## Setting Up GroupDocs.Viewer for Java
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -64,11 +59,11 @@ Java でドキュメントプレビューを作成するとは、ソースファ
 </dependencies>
 ```
 
-### ライセンス取得
-**無料トライアル** または **一時ライセンス** を取得して評価してください。製品環境で使用する際は、正式ライセンスを購入してすべての機能を有効化し、トライアル制限を解除します。
+### License Acquisition
+Start with a **free trial** or request a **temporary license** for evaluation. When you’re ready for production, purchase a full license to unlock all features and remove trial limitations.
 
-### 基本的な初期化
-以下は、GroupDocs.Viewer でスプレッドシートを開くために必要な最小コードです。
+### Basic Initialization
+Below is the minimal code needed to open a spreadsheet with GroupDocs.Viewer:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -79,11 +74,11 @@ try (Viewer viewer = new Viewer("path/to/your/spreadsheet.xlsx")) {
 }
 ```
 
-## GroupDocs.Viewer で **create document preview java** を実装する方法
-以下は、**excel の印刷領域だけをレンダリング**し、自己完結型 HTML ファイルを生成するステップバイステップの手順です。
+## How to convert XLSX to HTML with GroupDocs.Viewer
+Below is a step‑by‑step walkthrough that **render excel print area** only, producing self‑contained HTML files.
 
-### 手順 1: 出力ディレクトリとファイルパス形式を定義
-まず、ビューアに生成された HTML ページを書き込む場所を指示します。
+### Step 1: Define Output Directory and File Path Format
+First, tell the viewer where to write the generated HTML pages.
 
 ```java
 import java.nio.file.Path;
@@ -96,10 +91,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-*解説:* `outputDirectory` はプレビュー ファイルを格納するフォルダです。`pageFilePathFormat` はプレースホルダー（`{0}`）を使用し、ページ番号で置換されます。
+*Explanation:* `outputDirectory` is the folder that will hold all preview files. `pageFilePathFormat` uses a placeholder (`{0}`) that the viewer replaces with the page number.
 
-### 手順 2: 印刷領域レンダリング用の HTML 表示オプションを構成
-リソース（CSS、画像）を埋め込み、定義された印刷領域にフォーカスするようビューアを設定します。
+### Step 2: Configure HTML View Options for Print‑Area Rendering
+Configure the viewer to embed resources (CSS, images) directly and to focus on the defined print areas.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -110,10 +105,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingPrintArea());
 ```
 
-*解説:* `HtmlViewOptions.forEmbeddedResources` は、CSS/JS をインライン化した単一 HTML ファイルをページごとに生成し、デプロイを簡素化します。`forRenderingPrintArea()` が **excel の印刷領域だけをレンダリング**するよう指示します。
+*Explanation:* `HtmlViewOptions.forEmbeddedResources` creates a single HTML file per page that contains all CSS/JS inline, simplifying deployment. `forRenderingPrintArea()` tells the engine to **render excel print area** only.
 
-### 手順 3: スプレッドシートを読み込みレンダリング
-最後に、ワークブックをビューアに渡し、レンダリングプロセスを実行します。
+### Step 3: Load the Spreadsheet and Render It
+Finally, point the viewer at your workbook and invoke the rendering process.
 
 ```java
 // Replace with your actual document path
@@ -125,62 +120,66 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-*解説:* `view()` メソッドは、設定したオプションに従ってワークブックを処理し、印刷領域セクションのみを表示する HTML ファイルを出力します。
+*Explanation:* The `view()` method processes the workbook according to the options we set, outputting HTML files that display only the print‑area sections.
 
-## よくある問題と対策
-- **ファイルパスエラー:** パスが絶対パスか、プロジェクトの作業ディレクトリに対して正しく相対指定されているか確認してください。  
-- **権限の問題:** Java プロセスがソースファイルの読み取り権限と出力フォルダの書き込み権限を持っていることを確認します。  
-- **印刷領域が見つからない:** スプレッドシートで印刷領域が設定されているか（Excel の「ページレイアウト」→「印刷領域」）を確認してください。  
+## Common Issues and Solutions
+- **File‑path errors:** Double‑check that the paths are absolute or correctly relative to your project’s working directory.  
+- **Permission problems:** Ensure the Java process has read access to the source file and write access to the output folder.  
+- **Missing print areas:** Verify that the spreadsheet actually defines print areas (Page Layout → Print Area in Excel).  
 
-## 実用例
-1. **ドキュメント管理システム:** 完全なワークブックをロードせずに、レポートのクリーンなプレビューを提供。  
-2. **財務ダッシュボード:** 印刷領域としてマークされた主要な財務テーブルの HTML スナップショットを自動生成。  
-3. **学習プラットフォーム:** 学生に課題データの焦点を絞ったビューを提供。  
-4. **CRM ポータル:** 顧客指標を強調し、内部シートは非表示に。  
-5. **データサイエンスノートブック:** ドキュメントに簡潔なスプレッドシートプレビューを埋め込む。  
+## Practical Applications
+1. **Document Management Systems:** Show end‑users a clean preview of reports without loading the entire workbook.  
+2. **Financial Dashboards:** Auto‑generate HTML snapshots of key financial tables marked as print areas.  
+3. **Learning Platforms:** Provide students with focused views of assignment data.  
+4. **CRM Portals:** Highlight customer metrics while hiding internal worksheets.  
+5. **Data‑Science Notebooks:** Embed concise spreadsheet previews in documentation.  
 
-## パフォーマンス向上のヒント
-- **メモリ調整:** 非常に大きなワークブックの場合は、JVM ヒープを増やします（例: `-Xmx2g` 以上）。  
-- **遅延ロード:** 必要なページ数だけを取得し、残りはレンダリングしないようにします。  
-- **並列処理:** 複数の `Viewer` インスタンスを別スレッドで実行し、複数ワークブックを同時にレンダリングします。  
+## Performance Tips
+- **Memory tuning:** For very large workbooks, increase the JVM heap (`-Xmx2g` or higher).  
+- **Lazy loading:** If you only need the first few pages, stop rendering after the required number of pages.  
+- **Parallel processing:** Render multiple workbooks concurrently using separate `Viewer` instances (each in its own thread).  
 
-## 結論
-これで、スプレッドシートの定義された印刷領域だけをレンダリングする **create document preview java** ソリューションの作り方が分かりました。この手法により、プレビューは高速化・簡潔化・安全化され、最新の Web およびエンタープライズ アプリケーションに最適です。
+## How to preview spreadsheet without print areas
+If you later decide to show the whole workbook, simply omit the `SpreadsheetOptions.forRenderingPrintArea()` call and use the default `SpreadsheetOptions`. This gives you a full **convert spreadsheet to html** experience.
 
-### 次のステップ
-- `PdfViewOptions` や `PngViewOptions` を使って、他のビュー形式（PDF、PNG）にも挑戦。  
-- 認証と組み合わせて、機密データを保護しながらプレビューを生成。  
-- `SpreadsheetOptions` API を活用し、ページサイズやグリッドラインなどをカスタマイズ。  
+## Conclusion
+You’ve now learned how to **convert XLSX to HTML** in Java while rendering only the defined print areas of a spreadsheet. This technique makes previews faster, cleaner, and more secure—perfect for modern web and enterprise applications.
 
-## FAQ セクション
-**Q: Excel の印刷領域だけをレンダリングする主なメリットは何ですか？**  
-A: 余計な情報が排除され、レンダリングが高速化され、重要データに焦点を当てたプレビューが提供できます。
+### Next Steps
+- Experiment with other view formats (PDF, PNG) using `PdfViewOptions` or `PngViewOptions`.  
+- Combine preview generation with authentication to protect sensitive data.  
+- Explore the full `SpreadsheetOptions` API for custom page sizing, gridlines, and more.  
 
-**Q: 印刷不可のワークシートもレンダリングできますか？**  
-A: はい。`SpreadsheetOptions.forRenderingPrintArea()` を省略すれば、デフォルトでワークブック全体がレンダリングされます。
+## Frequently Asked Questions
 
-**Q: GroupDocs.Viewer は他のスプレッドシート形式もサポートしていますか？**  
-A: XLS、XLSX、CSV、ODS など多数の形式に対応しています。詳細は公式ドキュメントをご確認ください。
+**Q: What is the primary benefit of rendering only the excel print area?**  
+A: It reduces clutter and speeds up rendering, delivering a focused preview that highlights the most important data.
 
-**Q: 非常に大きなファイルのレンダリング速度を上げるには？**  
-A: JVM ヒープを増やす、必要なページだけをレンダリングする、マルチスレッド処理を検討する、などがあります。
+**Q: Can I render non‑printable worksheets as well?**  
+A: Yes—omit `SpreadsheetOptions.forRenderingPrintArea()` and use the default options to render the entire workbook.
 
-**Q: 印刷領域が表示されない場合は何を確認すべきですか？**  
-A: ソースファイルで印刷領域が正しく設定されているか（Excel → ページレイアウト → 印刷領域）と、使用している GroupDocs.Viewer のバージョンが最新かを確認してください。
+**Q: Does GroupDocs.Viewer support other spreadsheet formats?**  
+A: It handles XLS, XLSX, CSV, ODS, and several other formats. Check the official docs for the full list.
 
-## リソース
-- **ドキュメント:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API リファレンス:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
-- **ダウンロード:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
-- **購入:** [Buy a License](https://purchase.groupdocs.com/buy)  
-- **無料トライアル:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **一時ライセンス:** [Request Here](https://purchase.groupdocs.com/temporary-license/)  
+**Q: How can I improve rendering speed for very large files?**  
+A: Increase JVM heap size, render only needed pages, and consider multi‑threaded processing.
+
+**Q: My print areas are not showing up—what should I check?**  
+A: Ensure the print area is defined in the source file (Excel → Page Layout → Print Area) and that you are using the latest GroupDocs.Viewer version.
+
+## Resources
+- **ドキュメント:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API リファレンス:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **ダウンロード:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- **購入:** [Buy a License](https://purchase.groupdocs.com/buy)
+- **無料トライアル:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **一時ライセンス:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
 - **サポート:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**最終更新日:** 2025-12-23  
-**テスト環境:** GroupDocs.Viewer for Java 25.2  
-**作成者:** GroupDocs  
+**Last Updated:** 2026-03-19  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs  
 
 ---
