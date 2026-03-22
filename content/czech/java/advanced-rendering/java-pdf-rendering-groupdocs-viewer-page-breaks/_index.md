@@ -1,51 +1,52 @@
 ---
-date: '2025-12-31'
-description: Naučte se, jak převést xlsx na pdf v Javě pomocí GroupDocs.Viewer, vykreslovat
-  tabulky s konci stránek, mřížkami a záhlavími.
+date: '2026-03-22'
+description: Naučte se, jak v Javě generovat PDF z Excelu pomocí GroupDocs.Viewer,
+  vykreslovat tabulky s konci stránek, mřížkovými čarami a záhlavími.
 keywords:
 - Java PDF Rendering with GroupDocs.Viewer
 - rendering spreadsheets as PDFs
 - GroupDocs.Viewer for Java setup
-title: 'xlsx do pdf java - Zlomky stránek s GroupDocs.Viewer'
+title: generovat PDF z Excelu v Javě – Ovládání vykreslování tabulek se zalomením
+  stránek
 type: docs
 url: /cs/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1
 ---
 
-# xlsx to pdf java: Ovládání vykreslování tabulek s přerušením stránek
+# generovat pdf z excelu v Javě: Ovládání vykreslování tabulek s přerušením stránek
 
-Odemkněte sílu převodu **xlsx to pdf java** ve svých Java aplikacích pomocí GroupDocs.Viewer. Tento komplexní průvodce vás provede vykreslováním tabulek po přerušeních stránek, přidáváním mřížkových čar a zahrnutím záhlaví, aby výsledné PDF vypadaly profesionálně a byly připraveny k distribuci.
+V moderních datově řízených aplikacích je schopnost **generate pdf from excel** přímo v Javě obrovským zvýšením produktivity. S GroupDocs.Viewer můžete převést složité tabulky na elegantní PDF — zachovávající přerušení stránek, čáry mřížky a záhlaví sloupců — bez nutnosti instalovat Microsoft Office na server.
 
-## Úvod
+## Introduction
 
-V dnešním datově řízeném světě je efektivní správa dokumentů klíčová pro firmy, které chtějí zefektivnit své operace. Tabulky jsou často hlavním zdrojem dat, který je potřeba sdílet v jednotném formátu napříč platformami. Tento tutoriál řeší výzvu vykreslování tabulek s přerušením stránek do PDF pomocí **GroupDocs.Viewer for Java** — všestranného nástroje navrženého ke zjednodušení tohoto procesu.
+V dnešním datově řízeném světě je efektivní správa dokumentů klíčová pro firmy, které chtějí zefektivnit své operace. Často jsou tabulky hlavním zdrojem dat, který je potřeba sdílet v jednotném formátu napříč platformami. Tento tutoriál řeší výzvu vykreslování tabulek s přerušením stránek do PDF pomocí **GroupDocs.Viewer for Java** — univerzálního nástroje navrženého ke zjednodušení tohoto procesu.
 
 ![Page Breaks in Spreadsheets with GroupDocs.Viewer for Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
 
 **Co se naučíte:**
-- Jak vykreslovat tabulky po přerušeních stránek do PDF (xlsx to pdf java).
-- Konfigurace možností vykreslování tabulek, jako jsou mřížkové čáry a záhlaví.
+- Jak **generate pdf from excel** vykreslováním tabulek podle přerušení stránek.
+- Konfiguraci možností vykreslování tabulek, jako jsou čáry mřížky a záhlaví.
 - Nastavení vývojového prostředí pro GroupDocs.Viewer.
 - Praktické využití těchto funkcí v reálných scénářích.
 
-## Rychlé odpovědi
-- **Jaká je hlavní knihovna?** GroupDocs.Viewer for Java.
-- **Která metoda vykresluje po přerušeních stránek?** `SpreadsheetOptions.forRenderingByPageBreaks()`.
-- **Mohu přidat mřížkové čáry do PDF?** Ano, použijte `setRenderGridLines(true)`.
-- **Jak zahrnout záhlaví sloupců?** Zavolejte `setRenderHeadings(true)`.
-- **Potřebuji licenci pro produkci?** Ano, je vyžadována platná licence GroupDocs.
+## Quick Answers
+- **What is the primary library?** GroupDocs.Viewer for Java.  
+- **Which method renders by page breaks?** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
+- **Can I add grid lines to the PDF?** Yes, use `setRenderGridLines(true)`.  
+- **How do I include column headings?** Call `setRenderHeadings(true)`.  
+- **Do I need a license for production?** Yes, a valid GroupDocs license is required.
 
-## Co je xlsx to pdf java?
-Převod sešitu Excel (`.xlsx`) do PDF dokumentu přímo z Java kódu vám umožní bezpečně sdílet data, zachovat formátování a zajistit kompatibilitu napříč platformami bez nutnosti Microsoft Office na serveru.
+## What is **generate pdf from excel**?
+Převod sešitu Excel (`.xlsx`) do PDF dokumentu přímo z Java kódu vám umožní bezpečně sdílet data, zachovat formátování a zajistit kompatibilitu napříč platformami, aniž byste potřebovali Microsoft Office na serveru.
 
-## Proč použít GroupDocs.Viewer for Java?
-GroupDocs.Viewer nabízí okamžitou podporu široké škály formátů dokumentů, vysoce věrné vykreslování a flexibilní možnosti jako **excel page breaks pdf**, **add grid lines pdf** a **include headings pdf**. To eliminuje potřebu vlastní logiky vykreslování a urychluje vývoj.
+## Why use GroupDocs.Viewer for Java?
+GroupDocs.Viewer nabízí okamžitou podporu široké škály formátů dokumentů, vysoce věrné vykreslování a flexibilní možnosti, jako jsou **render excel page breaks**, **add grid lines pdf** a **include headings pdf**. To eliminuje potřebu vlastní logiky vykreslování a urychluje vývoj.
 
-## Předpoklady
+## Prerequisites
 
-Pro efektivní implementaci **xlsx to pdf java** pomocí GroupDocs.Viewer se ujistěte, že máte následující:
+Aby bylo možné efektivně implementovat **generate pdf from excel** pomocí GroupDocs.Viewer, ujistěte se, že máte následující:
 
-### Požadované knihovny a závislosti
+### Required Libraries and Dependencies
 Budete potřebovat knihovnu GroupDocs.Viewer for Java. Lze ji snadno přidat pomocí Maven zahrnutím do souboru `pom.xml`:
 ```xml
 <repositories>
@@ -64,16 +65,16 @@ Budete potřebovat knihovnu GroupDocs.Viewer for Java. Lze ji snadno přidat pom
 </dependencies>
 ```
 
-### Požadavky na nastavení prostředí
-- Java Development Kit (JDK) verze 8 nebo vyšší.
+### Environment Setup Requirements
+- Java Development Kit (JDK) verze 8 nebo vyšší.  
 - Integrované vývojové prostředí (IDE) jako IntelliJ IDEA, Eclipse nebo NetBeans.
 
-### Předchozí znalosti
-Základní pochopení programování v Javě a zkušenost s Maven projekty bude užitečná. Předchozí zkušenost s generováním PDF je výhodou, ale není nutná.
+### Knowledge Prerequisites
+Základní znalost programování v Javě a zkušenost s Maven projekty budou užitečné. Předchozí zkušenost s generováním PDF je výhodou, ale není podmínkou.
 
-## Nastavení GroupDocs.Viewer for Java
+## Setting Up GroupDocs.Viewer for Java
 
-### Základní inicializace a nastavení
+### Basic Initialization and Setup
 Jakmile je prostředí připravené, inicializujte GroupDocs.Viewer ve svém projektu:
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -83,53 +84,50 @@ try (Viewer viewer = new Viewer("path/to/your/file.xlsx")) {
 }
 ```
 
-### Získání licence
-Můžete získat bezplatnou zkušební nebo dočasnou licenci od GroupDocs pro testování jejich produktů bez omezení funkcí. Navštivte [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) pro více informací o získání licence.
+### License Acquisition
+Můžete získat bezplatnou zkušební nebo dočasnou licenci od GroupDocs k vyzkoušení jejich produktů bez jakýchkoli omezení funkcí. Navštivte [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) pro více informací o získání licence.
 
-## Vykreslování tabulek po přerušeních stránek
+## How to generate pdf from excel with GroupDocs.Viewer
 
-### Jak převést přerušení stránek v Excelu do PDF
-Tato funkce respektuje nastavení přerušení stránek uvnitř sešitu a vytváří PDF, kde každá stránka odpovídá definovanému přerušení.
+### Rendering Spreadsheets by Page Breaks
 
-#### Krok‑za‑krokem implementace
-1. **Inicializace Vieweru a možností**  
-   Nastavte viewer s vaším vstupním souborem a definujte výstupní cestu PDF:
-   ```java
-   Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
-   Path outputFilePath = outputDirectory.resolve("output.pdf");
+#### Step‑by‑Step Implementation
+1. **Initialize Viewer and Options** – nastavte viewer s vaším vstupním souborem a definujte výstupní cestu PDF:
+```java
+Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
+Path outputFilePath = outputDirectory.resolve("output.pdf");
 
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
-       PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
-   ```
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
+    PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
+```
 
-2. **Konfigurace možností tabulky**  
-   Povolit vykreslování po přerušeních stránek, mřížkové čáry a záhlaví:
-   ```java
-       // Set SpreadsheetOptions for rendering by page breaks.
-       viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
-       
-       // Enable additional configurations like grid lines and headings.
-       viewOptions.getSpreadsheetOptions().setRenderGridLines(true);
-       viewOptions.getSpreadsheetOptions().setRenderHeadings(true);
+2. **Configure Spreadsheet Options** – povolte vykreslování podle přerušení stránek, čáry mřížky a záhlaví:
+```java
+    // Set SpreadsheetOptions for rendering by page breaks.
+    viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
+    
+    // Enable additional configurations like grid lines and headings.
+    viewOptions.getSpreadsheetOptions().setRenderGridLines(true);
+    viewOptions.getSpreadsheetOptions().setRenderHeadings(true);
 
-       viewer.view(viewOptions);
-   } catch (Exception e) {
-       e.printStackTrace();
-   }
-   ```
+    viewer.view(viewOptions);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
 
-3. **Vysvětlení klíčových parametrů**
-   - `forRenderingByPageBreaks()`: Zajišťuje, že každá stránka PDF se zarovná s přerušením stránky v tabulce.
-   - `setRenderGridLines(true)`: **Add grid lines pdf** — zlepšuje čitelnost tabulkových dat.
-   - `setRenderHeadings(true)`: **Include headings pdf** — zobrazuje popisky sloupců.
+3. **Key Parameters Explained**
+   - `forRenderingByPageBreaks()`: Zajišťuje, že každá stránka PDF odpovídá přerušení stránky v tabulce.
+   - `setRenderGridLines(true)`: **add grid lines pdf** — zlepšuje čitelnost tabulkových dat.
+   - `setRenderHeadings(true)`: **include headings pdf** — zobrazuje popisky sloupců.
 
-#### Tipy pro řešení problémů
-- Ověřte, že vstupní a výstupní cesty jsou správné.
+#### Troubleshooting Tips
+- Ověřte, že cesty k vstupním a výstupním souborům jsou správné.  
 - Potvrďte, že sešit skutečně obsahuje přerušení stránek (Rozložení tisku → Náhled přerušení stránek).
 
-## Konfigurace možností vykreslování tabulky
+## Configuring Spreadsheet Rendering Options
 
-### Přizpůsobení mřížkových čar a záhlaví
+### Customizing Grid Lines and Headings
 Kromě přerušení stránek můžete jemně doladit vzhled PDF.
 
 ```java
@@ -142,50 +140,50 @@ spreadsheetOptions.setRenderGridLines(true);
 spreadsheetOptions.setRenderHeadings(true);
 ```
 
-- **Mřížkové čáry**: Užitečné pro zachování vizuální struktury datových tabulek.
-- **Záhlaví**: Usnadňuje čtenářům pochopit kontext sloupců.
+- **Grid Lines**: Užitečné pro zachování vizuální struktury datových tabulek.  
+- **Headings**: Usnadňuje čtenářům pochopit kontext sloupců.
 
-#### Časté problémy
-- Pokud se mřížkové čáry nebo záhlaví neobjeví, dvakrát zkontrolujte, že instance `SpreadsheetOptions` je připojena k `PdfViewOptions` před voláním `viewer.view()`.
+#### Common Issues
+- Pokud se čáry mřížky nebo záhlaví nezobrazí, zkontrolujte, že instance `SpreadsheetOptions` je připojena k `PdfViewOptions` před voláním `viewer.view()`.
 
-## Praktické aplikace
+## Practical Applications
 
-Zde jsou reálné scénáře, kde **xlsx to pdf java** vyniká:
+Zde jsou reálné scénáře, kde **generate pdf from excel** vyniká:
 
-1. **Finanční reportování** — Převod měsíčních Excel reportů do PDF, které respektují přerušení stránek, aby každé prohlášení začínalo na nové stránce.
-2. **Akademické publikování** — Vykreslení výzkumných datových tabulek s mřížkovými čarami a záhlavím pro zařazení do časopisů.
-3. **Správa inventáře** — Generování tisknutelných listů inventáře, které zachovávají původní rozložení.
+1. **Financial Reporting** – Převod měsíčních Excel reportů do PDF, které respektují přerušení stránek, aby každé prohlášení začínalo na nové stránce.  
+2. **Academic Publishing** – Vykreslení výzkumných datových tabulek s čárami mřížky a záhlavím pro zařazení do časopisů.  
+3. **Inventory Management** – Generování tisknutelných inventurních listů, které zachovávají původní rozložení.
 
-## Úvahy o výkonu
+## Performance Considerations
 
-- **Optimalizace využití zdrojů**: Udržujte vstupní soubory v rozumné velikosti, aby nedocházelo k vysoké spotřebě paměti.
-- **Ladění JVM**: Použijte příznaky `-Xms` a `-Xmx` pro přidělení dostatečného haldu pro velké sešity.
+- **Optimize Resource Usage**: Udržujte vstupní soubory v rozumné velikosti, aby nedocházelo k vysoké spotřebě paměti.  
+- **JVM Tuning**: Použijte příznaky `-Xms` a `-Xmx` k přidělení dostatečného haldu pro velké sešity.
 
-## Často kladené otázky
+## Frequently Asked Questions
 
-**Q: Jaký je nejjednodušší způsob, jak přidat mřížkové čáry do PDF?**  
-A: Zavolejte `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` před vykreslením.
+**Q: What is the easiest way to add grid lines to the PDF?**  
+A: Call `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` before rendering.
 
-**Q: Mohu vykreslit jen konkrétní list?**  
-A: Ano, použijte `SpreadsheetOptions.setWorksheetIndex(int index)` pro cílení na konkrétní list.
+**Q: Can I render only a specific worksheet?**  
+A: Yes, use `SpreadsheetOptions.setWorksheetIndex(int index)` to target a particular sheet.
 
-**Q: Podporuje GroupDocs.Viewer soubory Excel chráněné heslem?**  
-A: Rozhodně. Heslo předáte při konstrukci instance `Viewer`.
+**Q: Does GroupDocs.Viewer support password‑protected Excel files?**  
+A: Absolutely. Pass the password when constructing the `Viewer` instance.
 
-**Q: Jak zajistit, aby se záhlaví zobrazila v PDF?**  
-A: Aktivujte `setRenderHeadings(true)` v `SpreadsheetOptions`.
+**Q: How do I ensure headings appear in the PDF?**  
+A: Enable `setRenderHeadings(true)` in `SpreadsheetOptions`.
 
-**Q: Je licence vyžadována pro produkční použití?**  
-A: Ano, pro komerční nasazení je potřeba platná licence GroupDocs.
+**Q: Is a license required for production use?**  
+A: Yes, a valid GroupDocs license is needed for commercial deployments.
 
-## Závěr
+## Conclusion
 
-Nyní ovládáte **xlsx to pdf java** pomocí GroupDocs.Viewer, od nastavení prostředí až po vykreslování tabulek s přerušením stránek, mřížkovými čarami a záhlavím. Tato schopnost zjednodušuje pracovní postupy s dokumenty, zlepšuje prezentaci dat a snižuje závislost na externích nástrojích.
+Nyní jste zvládli **generate pdf from excel** pomocí GroupDocs.Viewer, od nastavení prostředí po vykreslování tabulek s přerušením stránek, čárami mřížky a záhlavím. Tato schopnost zjednodušuje pracovní procesy s dokumenty, zlepšuje prezentaci dat a snižuje závislost na externích nástrojích.
 
-**Další kroky:** Prozkoumejte další možnosti `PdfViewOptions`, jako je vodoznak, ochrana heslem nebo vlastní velikosti stránek, abyste své PDF ještě více přizpůsobili.
+**Next Steps:** Prozkoumejte další možnosti `PdfViewOptions`, jako je vodoznak, ochrana heslem nebo vlastní velikosti stránek, abyste ještě lépe přizpůsobili své PDF.
 
 ---
 
-**Poslední aktualizace:** 2025-12-31  
-**Testováno s:** GroupDocs.Viewer 25.2 for Java  
-**Autor:** GroupDocs
+**Last Updated:** 2026-03-22  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
