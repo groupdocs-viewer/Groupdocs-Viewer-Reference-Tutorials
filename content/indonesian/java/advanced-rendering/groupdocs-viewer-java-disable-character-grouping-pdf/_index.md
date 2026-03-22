@@ -1,48 +1,50 @@
 ---
-date: '2025-12-21'
-description: Pelajari cara menonaktifkan pengelompokan dalam PDF dengan GroupDocs.Viewer
-  untuk Java, menggunakan java html dari opsi rendering PDF untuk memastikan representasi
-  teks yang tepat.
+date: '2026-03-22'
+description: Pelajari cara menghasilkan HTML dari PDF dan menonaktifkan pengelompokan
+  karakter menggunakan GroupDocs Viewer untuk Java untuk representasi teks yang tepat.
 keywords:
 - disable character grouping PDFs
 - GroupDocs Viewer Java configuration
 - precise text representation in PDFs
-title: Cara Menonaktifkan Pengelompokan pada PDF dengan GroupDocs.Viewer untuk Java
+title: Buat HTML dari PDF & Nonaktifkan Pengelompokan – GroupDocs Java
 type: docs
 url: /id/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/
 weight: 1
 ---
 
-# Cara Menonaktifkan Pengelompokan dalam PDF dengan GroupDocs.Viewer untuk Java
+# Hasilkan HTML dari PDF dan Nonaktifkan Pengelompokan dengan GroupDocs Viewer untuk Java
 
-Ketika Anda membutuhkan **cara menonaktifkan pengelompokan** saat merender PDF, terutama untuk skrip kompleks atau bahasa kuno, penempatan karakter yang tepat menjadi penting. Fitur *Character Grouping* default dapat menggabungkan karakter secara tidak benar, menyebabkan salah tafsir konten. Dalam panduan ini kami akan menunjukkan langkah demi langkah cara menonaktifkan pengelompokan menggunakan GroupDocs.Viewer untuk Java, sehingga setiap glyph tetap tepat di tempatnya.
+Dalam banyak proyek Anda perlu **menghasilkan HTML dari PDF** sambil menjaga setiap glif tepat pada tempatnya. Hal ini terutama berlaku untuk skrip kompleks, bahasa kuno, atau dokumen hukum di mana satu karakter yang salah tempat dapat mengubah makna. Dalam tutorial ini kami akan memandu Anda melalui proses lengkap merender PDF ke HTML dengan GroupDocs Viewer untuk Java dan menunjukkan **cara menonaktifkan pengelompokan** sehingga setiap karakter diperlakukan sebagai elemen independen.
 
-![Precise Rendering Techniques with GroupDocs.Viewer for Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
+![Teknik Rendering Presisi dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
 
 ## Jawaban Cepat
-- **Apa yang dilakukan “disable grouping”?** Itu memaksa renderer memperlakukan setiap karakter sebagai elemen independen, mempertahankan tata letak yang tepat.  
+- **Apa yang dilakukan “menonaktifkan pengelompokan”?** Itu memaksa renderer memperlakukan setiap karakter sebagai elemen independen, mempertahankan tata letak yang tepat.  
 - **Opsi API mana yang mengontrol ini?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan dapat digunakan untuk pengujian, tetapi lisensi penuh diperlukan untuk produksi.  
-- **Bisakah saya menghasilkan Java HTML dari PDF secara bersamaan?** Ya—gunakan `HtmlViewOptions` untuk membuat output HTML sambil menonaktifkan pengelompokan.  
+- **Bisakah saya menghasilkan HTML dari PDF secara bersamaan?** Ya—gunakan `HtmlViewOptions` untuk membuat output HTML sambil menonaktifkan pengelompokan.  
 - **Apakah fitur ini terbatas pada PDF?** Ini terutama untuk PDF, tetapi viewer mendukung banyak format lain.
 
 ## Pendahuluan
 
-Saat bekerja dengan dokumen PDF, ketelitian dalam rendering sangat penting—terutama ketika menangani struktur teks kompleks seperti hieroglif atau bahasa yang memerlukan representasi karakter yang tepat. Fitur "Character Grouping" sering menyebabkan masalah dengan mengelompokkan karakter secara tidak benar, yang mengarah pada salah tafsir konten dokumen. Hal ini dapat menjadi sangat problematis bagi pengguna yang membutuhkan replikasi tepat tata letak teks dokumen mereka.
+Saat bekerja dengan dokumen PDF, ketelitian dalam rendering sangat penting—terutama ketika menangani struktur teks kompleks seperti hieroglif atau bahasa yang memerlukan representasi karakter yang tepat. Fitur “Character Grouping” sering menyebabkan masalah dengan mengelompokkan karakter secara tidak tepat, yang mengakibatkan salah tafsir isi dokumen. Hal ini dapat menjadi sangat problematis bagi pengguna yang membutuhkan replikasi tepat tata letak teks dokumen mereka.
 
 ### Prasyarat
 
-- **Libraries & Dependencies**: Anda memerlukan GroupDocs.Viewer untuk Java versi 25.2 atau lebih baru.  
-- **Environment Setup**: Pastikan Anda memiliki Java Development Kit (JDK) terinstal dan IDE Anda disiapkan untuk bekerja dengan proyek Maven.  
-- **Knowledge Prerequisites**: Pemahaman dasar tentang pemrograman Java, terutama penanganan jalur file dan penggunaan pustaka eksternal.
+Sebelum menyelam ke implementasi kode, pastikan Anda memenuhi persyaratan berikut:
+- **Libraries & Dependencies**: Anda memerlukan GroupDocs.Viewer untuk Java versi 25.2 atau lebih baru.  
+- **Environment Setup**: Pastikan Anda memiliki Java Development Kit (JDK) terpasang dan IDE Anda sudah disiapkan untuk bekerja dengan proyek Maven.  
+- **Knowledge Prerequisites**: Pemahaman dasar pemrograman Java, terutama dalam menangani jalur file dan menggunakan pustaka eksternal.
 
-## Cara Menonaktifkan Pengelompokan dalam Rendering PDF
+## Cara menghasilkan HTML dari PDF dengan GroupDocs Viewer
+
+Menghasilkan HTML dari PDF adalah proses dua langkah: mengkonfigurasi viewer, kemudian merender dokumen. Kuncinya adalah mematikan pengelompokan karakter sebelum rendering sehingga output HTML mencerminkan tata letak PDF asli karakter demi karakter.
 
 ### Menyiapkan GroupDocs.Viewer untuk Java
 
 #### Instalasi via Maven
 
-Pertama, integrasikan pustaka yang diperlukan ke dalam proyek Anda. Tambahkan konfigurasi berikut di `pom.xml` Anda:
+Pertama, integrasikan pustaka yang diperlukan ke dalam proyek Anda. Tambahkan konfigurasi berikut ke dalam `pom.xml` Anda:
 
 ```xml
 <repositories>
@@ -61,16 +63,16 @@ Pertama, integrasikan pustaka yang diperlukan ke dalam proyek Anda. Tambahkan ko
 </dependencies>
 ```
 
-#### Akuisisi Lisensi
+#### Perolehan Lisensi
 
 Untuk memanfaatkan GroupDocs.Viewer secara penuh, pertimbangkan untuk memperoleh lisensi:
-- **Free Trial**: Mulai dengan versi percobaan gratis untuk menguji fitur.  
+- **Free Trial**: Mulailah dengan versi percobaan gratis untuk menguji fitur.  
 - **Temporary License**: Ajukan lisensi sementara jika Anda membutuhkan lebih banyak waktu.  
 - **Purchase**: Untuk proyek jangka panjang, disarankan membeli lisensi.
 
-#### Inisialisasi dan Penyiapan Dasar
+#### Inisialisasi dan Pengaturan Dasar
 
-Mulailah dengan menyiapkan lingkungan proyek Anda:
+Berikut adalah cuplikan kode siap‑jalankan yang menunjukkan alur kerja lengkap—dari mengatur folder output hingga merender PDF sebagai HTML sambil menonaktifkan pengelompokan karakter:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,41 +93,43 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 
 ### Panduan Implementasi
 
-#### Fitur: Menonaktifkan Pengelompokan Karakter
+#### Fitur: Nonaktifkan Pengelompokan Karakter
 
-##### Langkah 1: Tentukan Direktori Output
+Di bawah ini kami menjabarkan setiap baris contoh sehingga Anda dapat memahami **mengapa** kami melakukannya dan **bagaimana** hal itu berkontribusi pada menghasilkan HTML dari PDF tanpa penggabungan karakter yang tidak diinginkan.
+
+##### Langkah 1: Tentukan Direktori Output  
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 ```
 
-**Mengapa?** Ini memastikan output Anda terorganisir dan mudah diakses.
+**Mengapa?** Ini memastikan file HTML yang dirender disimpan dalam folder khusus, memudahkan pencarian dan pengelolaan nanti.
 
-##### Langkah 2: Konfigurasikan Format Jalur File
+##### Langkah 2: Konfigurasikan Format Jalur File  
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Mengapa?** Ini membantu dalam mengorganisir halaman dokumen PDF secara sistematis.
+**Mengapa?** Menggunakan placeholder (`{0}`) memungkinkan viewer membuat file HTML terpisah untuk setiap halaman PDF, menjaga output tetap terorganisir.
 
-##### Langkah 3: Inisialisasi Opsi Tampilan HTML
+##### Langkah 3: Inisialisasi Opsi Tampilan HTML  
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**Mengapa?** Sumber daya tersemat memastikan semua aset yang diperlukan termasuk dalam file HTML setiap halaman.
+**Mengapa?** Sumber daya tersemat menggabungkan gambar, font, dan CSS langsung dengan setiap halaman HTML, yang ideal untuk viewer berbasis web atau platform e‑learning.
 
-##### Langkah 4: Nonaktifkan Pengelompokan Karakter
+##### Langkah 4: Nonaktifkan Pengelompokan Karakter  
 
 ```java
 viewOptions.getPdfOptions().setDisableCharsGrouping(true);
 ```
 
-**Mengapa?** Ini memastikan karakter dirender secara individual, mempertahankan tata letak dan makna yang dimaksud.
+**Mengapa?** Ini adalah baris penting yang memberi tahu mesin rendering **untuk tidak** menggabungkan karakter berdekatan, menjamin bahwa HTML yang dihasilkan mencerminkan penempatan glif yang tepat dari PDF sumber.
 
-##### Langkah 5: Render Dokumen
+##### Langkah 5: Render Dokumen  
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
@@ -133,52 +137,46 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-**Mengapa?** Ini memastikan semua sumber daya ditutup dengan tepat, mencegah kebocoran memori.
+**Mengapa?** Membungkus `Viewer` dalam blok try‑with‑resources memastikan semua sumber daya native dilepaskan secara otomatis, mencegah kebocoran memori pada aplikasi yang berjalan lama.
 
-### Menghasilkan Java HTML dari PDF tanpa Pengelompokan
+### Menghasilkan HTML Java dari PDF tanpa Pengelompokan
 
-Kelas `HtmlViewOptions` memungkinkan Anda menghasilkan **java html from pdf** sambil menjaga setiap karakter terpisah. Ini sangat berguna ketika Anda perlu menyematkan halaman yang dirender ke dalam portal web atau platform e‑learning di mana penempatan glyph yang tepat penting.
+Kelas `HtmlViewOptions` memungkinkan Anda menghasilkan **generate html from pdf** sambil menjaga setiap karakter terpisah. Ini sangat berguna ketika Anda perlu menyematkan halaman yang dirender ke dalam portal web atau platform e‑learning di mana penempatan glif yang tepat penting.
 
-### Tips Pemecahan Masalah
+### Masalah Umum dan Solusinya
 
-- Pastikan jalur dokumen Anda benar untuk menghindari `FileNotFoundException`.  
-- Verifikasi bahwa direktori output memiliki izin menulis.  
-- Periksa kembali bahwa Anda menggunakan versi GroupDocs.Viewer untuk Java yang kompatibel.
+- **FileNotFoundException** – Periksa kembali jalur yang Anda berikan ke `new Viewer(...)`. Gunakan jalur absolut atau `Path.of(...)` untuk kejelasan.  
+- **Write Permissions** – Pastikan direktori output dapat ditulisi oleh proses Java; di Linux Anda mungkin perlu menyesuaikan izin folder (`chmod 775`).  
+- **Version Mismatch** – Opsi `setDisableCharsGrouping` tersedia mulai versi 25.2. Pastikan `pom.xml` Anda mencerminkan versi yang tepat.  
 
-## Aplikasi Praktis
+### Aplikasi Praktis
 
-1. **Language Preservation**: Ideal untuk merender dokumen dalam bahasa seperti Mandarin, Jepang, atau skrip kuno di mana presisi karakter penting.  
-2. **Legal and Financial Documents**: Menjamin akurasi dalam dokumen yang memerlukan representasi teks yang tepat untuk kepatuhan.  
-3. **Educational Resources**: Sempurna untuk buku teks dan makalah akademik yang mencakup diagram atau anotasi kompleks.
+1. **Language Preservation** – Ideal untuk merender dokumen dalam bahasa Mandarin, Jepang, Arab, atau skrip kuno di mana spasi karakter membawa makna.  
+2. **Legal & Financial Documents** – Menjamin replikasi teks yang tepat untuk dokumen dengan kepatuhan tinggi.  
+3. **Educational Resources** – Sempurna untuk buku teks yang mencakup diagram kompleks, anotasi, atau konten multibahasa.  
 
-## Pertimbangan Kinerja
+### Pertimbangan Kinerja
 
-- **Optimize Resource Usage**: Pastikan server Anda memiliki sumber daya yang memadai untuk menangani file PDF besar.  
-- **Java Memory Management**: Gunakan struktur data yang efisien dan praktik garbage‑collection untuk mengelola memori secara efektif.  
-- **Batch Processing**: Saat merender banyak dokumen, proses secara batch untuk meningkatkan throughput.
-
-## Kesimpulan
-
-Anda kini telah menguasai **cara menonaktifkan pengelompokan** selama rendering PDF dengan GroupDocs.Viewer untuk Java. Kemampuan ini penting untuk aplikasi yang menuntut representasi teks yang tepat. Untuk eksplorasi lebih lanjut, coba integrasikan fitur ini dengan sistem manajemen dokumen lain atau bereksperimen dengan opsi rendering tambahan.
-
-Langkah selanjutnya meliputi menjelajahi fitur lebih lanjut dari GroupDocs.Viewer dan menyempurnakan kinerja untuk penyebaran skala besar.
+- **Optimize Resource Usage** – PDF besar dapat mengonsumsi memori signifikan. Pertimbangkan memproses halaman dalam batch dan membuang instance `Viewer` dengan cepat.  
+- **Java Memory Management** – Sesuaikan heap JVM (`-Xmx2g` atau lebih tinggi) jika Anda memperkirakan memproses PDF ratusan halaman.  
+- **Parallel Rendering** – Untuk konversi massal, buat thread terpisah masing‑masing dengan instance `Viewer` sendiri untuk memanfaatkan CPU multi‑core.  
 
 ## Pertanyaan yang Sering Diajukan
 
 **Q:** *Mengapa saya perlu menonaktifkan pengelompokan karakter?*  
-**A:** Menonaktifkan pengelompokan mencegah renderer menggabungkan karakter yang termasuk dalam glyph yang berbeda, yang penting untuk skrip di mana spasi dan urutan menyampaikan makna.
+**A:** Menonaktifkan pengelompokan mencegah renderer menggabungkan karakter yang merupakan glyph terpisah, yang penting untuk skrip di mana spasi dan urutan menyampaikan makna.
 
 **Q:** *Apakah pengaturan `setDisableCharsGrouping` hanya berlaku untuk output HTML?*  
-**A:** Tidak, ini memengaruhi mesin rendering PDF di bawahnya, sehingga semua format output (HTML, PNG, dll.) akan mencerminkan perubahan tersebut.
+**A:** Tidak, pengaturan ini memengaruhi mesin rendering PDF di bawahnya, sehingga semua format output (HTML, PNG, JPEG, dll.) akan mencerminkan perubahan tersebut.
 
 **Q:** *Bisakah saya menggabungkan pengaturan ini dengan font khusus?*  
-**A:** Ya—cukup muat font khusus Anda sebelum menginisialisasi `Viewer`, dan aturan pengelompokan tetap berlaku.
+**A:** Ya—muat font khusus Anda sebelum menginisialisasi `Viewer`, dan aturan pengelompokan tetap berlaku.
 
 **Q:** *Apakah menonaktifkan pengelompokan memengaruhi kinerja?*  
-**A:** Sedikit, karena mesin memproses setiap karakter secara individual, tetapi dampaknya minimal untuk kebanyakan dokumen.
+**A:** Sedikit, karena mesin memproses setiap karakter secara individual, namun dampaknya minimal untuk kebanyakan dokumen.
 
 **Q:** *Apakah ada cara untuk mengaktifkan/menonaktifkan pengelompokan per halaman?*  
-**A:** Saat ini opsi bersifat global per instance `PdfOptions`; Anda harus membuat instance `Viewer` terpisah untuk halaman yang berbeda.
+**A:** Saat ini opsi bersifat global per instance `PdfOptions`; Anda memerlukan instance `Viewer` terpisah untuk halaman yang berbeda jika memerlukan perilaku campuran.
 
 ## Sumber Daya
 
@@ -192,6 +190,6 @@ Langkah selanjutnya meliputi menjelajahi fitur lebih lanjut dari GroupDocs.Viewe
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-21  
+**Terakhir Diperbarui:** 2026-03-22  
 **Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
 **Penulis:** GroupDocs
