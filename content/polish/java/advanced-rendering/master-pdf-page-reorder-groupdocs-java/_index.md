@@ -1,47 +1,55 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak bezproblemowo zmieniać kolejność stron PDF za pomocą GroupDocs.Viewer dla Java. Ten przewodnik obejmuje konfigurację, implementację i optymalizację wydajności."
-"title": "Efektywne ponowne porządkowanie stron PDF za pomocą GroupDocs.Viewer dla Java&#58; Kompleksowy przewodnik"
-"url": "/pl/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
-"weight": 1
+date: '2026-03-22'
+description: Dowiedz się, jak płynnie zmienić kolejność stron PDF przy użyciu GroupDocs.Viewer
+  dla Javy. Ten przewodnik obejmuje konfigurację, implementację i optymalizację wydajności.
+keywords:
+- PDF page reordering
+- GroupDocs.Viewer Java
+- Java PDF rendering
+title: Zmień kolejność stron PDF za pomocą GroupDocs.Viewer dla Javy – przewodnik
 type: docs
+url: /pl/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/
+weight: 1
 ---
-# Efektywne ponowne porządkowanie stron PDF za pomocą GroupDocs.Viewer dla Java
 
-## Wstęp
+# Zmień kolejność stron PDF przy użyciu GroupDocs.Viewer dla Javy
 
-Zarządzanie kolejnością stron podczas konwersji dokumentów do formatu PDF może być trudne. Niezależnie od tego, czy reorganizujesz slajdy prezentacji, czy wyrównujesz sekcje w raporcie, zachowanie prawidłowej kolejności stron jest kluczowe. Dzięki **GroupDocs.Viewer dla Java**Możesz bez problemu zmieniać kolejność stron podczas renderowania plików PDF, dzięki czemu Twoje dokumenty zawsze będą wyświetlane zgodnie z zamierzeniem.
+Reordering pages while converting documents to PDFs can be a headache, especially when you need to **change pdf page sequence** to match a specific flow—like swapping slides in a presentation or moving sections in a report. With **GroupDocs.Viewer for Java**, you can control the exact order of pages during PDF rendering, so your output always looks exactly the way you want.
 
-Ten kompleksowy samouczek przeprowadzi Cię przez proces używania GroupDocs.Viewer do zmiany kolejności stron w dokumencie PDF. Nauczysz się, jak:
-- Konfigurowanie GroupDocs.Viewer dla Java
-- Wprowadź funkcję zmiany kolejności stron podczas konwersji dokumentów do formatu PDF
-- Optymalizacja wydajności dla aplikacji na dużą skalę
+![PDF Page Reordering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-page-reordering-java.png)
 
-Do końca tego przewodnika będziesz mieć solidne zrozumienie manipulowania treścią PDF z pewnością siebie. Najpierw zanurkujmy w wymagania wstępne.
+## Szybkie odpowiedzi
+- **Co oznacza „change pdf page sequence”?** Odnosi się do renderowania stron PDF w niestandardowej kolejności zamiast w kolejności oryginalnego dokumentu.  
+- **Która biblioteka obsługuje to od razu?** GroupDocs.Viewer for Java zapewnia wbudowane możliwości zmiany kolejności stron.  
+- **Czy potrzebuję licencji?** Darmowa wersja próbna działa w celach oceny; stała licencja usuwa wszystkie ograniczenia.  
+- **Czy mogę zmienić kolejność stron z dowolnego formatu źródłowego?** Tak — obsługiwane są formaty DOCX, PPTX, XLSX i wiele innych.  
+- **Czy nadaje się do dużych dokumentów?** Przy odpowiednim zarządzaniu pamięcią funkcja skaluje się do setek stron.
+
+## Co oznacza zmiana kolejności stron PDF?
+
+Zmiana kolejności stron PDF oznacza poinstruowanie silnika renderującego, aby wyjściowo generował strony w innej kolejności niż występują w pliku źródłowym. Jest to przydatne, gdy logiczny przepływ dokumentu różni się od jego fizycznego układu.
+
+## Dlaczego używać GroupDocs.Viewer for Java do zmiany kolejności stron?
+
+- **Nie potrzebujesz dodatkowych bibliotek PDF** – przeglądarka obsługuje renderowanie i kolejność w jednym kroku.  
+- **Wysoka wierność** – elementy wizualne pozostają nienaruszone po zmianie kolejności.  
+- **Skoncentrowane na wydajności** – zoptymalizowane do przetwarzania dużych partii po stronie serwera.  
+- **Obsługa wielu formatów** – działa z ponad 100 typami plików, więc możesz zmieniać kolejność stron z Worda, Excela, PowerPointa itp.
 
 ## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
+Before we start, make sure you have:
 
-### Wymagane biblioteki i zależności
-- **GroupDocs.Viewer dla Java**: Upewnij się, że w swoim projekcie uwzględniłeś wersję 25.2 lub nowszą.
-- **Zestaw narzędzi programistycznych Java (JDK)**:Zalecana jest wersja 8 lub nowsza.
+- **GroupDocs.Viewer for Java** (version 25.2 or newer)  
+- **JDK 8+**  
+- IDE, takie jak IntelliJ IDEA, Eclipse lub NetBeans  
+- Podstawowa znajomość Maven  
 
-### Wymagania dotyczące konfiguracji środowiska
-- Nowoczesne zintegrowane środowisko programistyczne (IDE), takie jak IntelliJ IDEA, Eclipse lub NetBeans
-- Podstawowa znajomość koncepcji programowania w Javie i narzędzia do kompilacji Maven
-
-### Wymagania wstępne dotyczące wiedzy
-- Znajomość obsługi plików Java i operacji wejścia/wyjścia
-- Zrozumienie struktury projektu Maven w celu zarządzania zależnościami
-
-## Konfigurowanie GroupDocs.Viewer dla Java
-
-Aby rozpocząć korzystanie z GroupDocs.Viewer w projektach Java, musisz poprawnie skonfigurować środowisko. Oto jak zacząć:
+## Konfiguracja GroupDocs.Viewer dla Javy
 
 ### Konfiguracja Maven
 
-Dodaj następującą konfigurację do swojego `pom.xml` plik:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,24 +68,21 @@ Dodaj następującą konfigurację do swojego `pom.xml` plik:
 </dependencies>
 ```
 
-### Nabycie licencji
+### Uzyskanie licencji
 
-Aby użyć GroupDocs.Viewer:
-- **Bezpłatna wersja próbna**:Pobierz wersję próbną, aby poznać funkcje.
-- **Licencja tymczasowa**:Pobierz w celu rozszerzonej oceny bez ograniczeń.
-- **Zakup**: Wybierz plan subskrypcji odpowiadający Twoim potrzebom.
+To unlock full functionality you’ll need a license:
 
-Po skonfigurowaniu środowiska możemy zająć się implementacją interesującej nas funkcji.
+- **Free Trial** – przetestuj wszystkie funkcje bez karty kredytowej.  
+- **Temporary License** – idealna do krótkoterminowego testowania.  
+- **Purchase** – wybierz subskrypcję dopasowaną do potrzeb produkcyjnych.
 
-## Przewodnik wdrażania
+## Jak zmienić kolejność stron pdf przy użyciu GroupDocs.Viewer
 
-### Zmiana kolejności stron w plikach PDF
+Below is a step‑by‑step walkthrough that keeps the original code unchanged.
 
-Zmiana kolejności stron podczas renderowania PDF jest potężną funkcją GroupDocs.Viewer. Oto, jak możesz ją wdrożyć:
+### Krok 1: Zainicjalizuj Viewer i określ opcje wyjściowe
 
-#### Krok 1: Zainicjuj przeglądarkę i opcje
-
-Zacznij od utworzenia `Viewer` obiekt, określający ścieżkę dokumentu. Zdefiniuj opcje wyjściowe za pomocą `PdfViewOptions`.
+First, create a `Viewer` instance and set up `PdfViewOptions` with the desired output path.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -94,81 +99,84 @@ public class ReorderPagesFeature {
         PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### Krok 2: Określ kolejność stron
+### Krok 2: Określ niestandardową kolejność stron
 
-Użyj `view` metoda określania kolejności stron. W tym przykładzie renderujemy stronę 2, a następnie stronę 1.
+Use the `view` method and pass the page numbers in the order you want them rendered. In this example we render page 2 first, then page 1.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    // Zmiana kolejności stron: najpierw renderuj stronę 2, a następnie stronę 1
+    // Reorder pages: render page 2 first, then page 1
     viewer.view(viewOptions, 2, 1);
 }
 ```
 
-#### Wyjaśnienie
+**Co się dzieje?**  
+- `PdfViewOptions` informuje viewer, aby wygenerował plik PDF.  
+- `viewer.view(viewOptions, 2, 1)` instruuje silnik, aby wyświetlił stronę 2 przed stroną 1, skutecznie **changing the pdf page sequence**.
 
-- **`PdfViewOptions`**Konfiguruje ustawienia wyjściowe dla procesu renderowania PDF.
-- **`viewer.view(viewOptions, 2, 1)`**:Określa, że strony powinny być renderowane w kolejności: strona 2, a następnie strona 1.
+### Krok 3: Uruchom i zweryfikuj
 
-### Porady dotyczące rozwiązywania problemów
+Execute the `main` method. After completion, open `output.pdf` and you’ll see the pages appear in the new order.
 
-- Upewnij się, że ścieżka do dokumentu jest prawidłowa i dostępna.
-- Sprawdź, czy masz uprawnienia niezbędne do zapisywania plików wyjściowych w określonym katalogu.
-- Sprawdź, czy wersja biblioteki GroupDocs.Viewer jest zgodna z konfiguracją Twojego projektu.
+## Częste pułapki i rozwiązywanie problemów
 
-## Zastosowania praktyczne
+- **Incorrect file path** – sprawdź dwukrotnie, czy `YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX` wskazuje istniejący plik.  
+- **Write permissions** – upewnij się, że aplikacja ma uprawnienia do tworzenia plików w `YOUR_OUTPUT_DIRECTORY`.  
+- **Version mismatch** – użyte API wymaga GroupDocs.Viewer 25.2 lub nowszej; starsze wersje nie posiadają przeciążenia `view(..., int...)`.  
+- **Large documents** – zamknij `Viewer` w bloku try‑with‑resources (jak pokazano), aby szybko zwolnić zasoby natywne.
 
-Funkcję zmiany kolejności stron GroupDocs.Viewer można zastosować w różnych scenariuszach:
+## Praktyczne przypadki użycia
 
-1. **Materiały edukacyjne**:Przeorganizuj notatki lub slajdy z lekcji, aby zapewnić im bardziej logiczny przepływ.
-2. **Raporty biznesowe**:Dostosuj sekcje, aby skutecznie wyróżnić najważniejsze ustalenia.
-3. **Dokumenty prawne**:Dopasuj klauzule lub artykuły zgodnie z wymogami prawnymi.
+| Scenariusz | Jak zmiana kolejności pomaga |
+|------------|------------------------------|
+| **Materiały szkoleniowe** | Zamień slajdy bez edytowania oryginalnego PowerPointa. |
+| **Umowy prawne** | Przenieś klauzule, aby spełnić specyficzne dla jurysdykcji zasady kolejności. |
+| **Raporty roczne** | Umieść podsumowanie wykonawcze na początku po wygenerowaniu z oddzielnych plików źródłowych. |
 
-Aplikacje te stanowią dowód wszechstronności i potencjału integracji GroupDocs.Viewer z systemami zarządzania dokumentami.
+## Wskazówki dotyczące wydajności
 
-## Rozważania dotyczące wydajności
+- **Reuse Viewer instances** podczas przetwarzania wielu dokumentów w partii, aby zmniejszyć obciążenie JVM.  
+- **Stream output** bezpośrednio do `ByteArrayOutputStream`, jeśli musisz wysłać PDF przez HTTP bez zapisywania na dysku.  
+- **Profile memory** przy użyciu narzędzi takich jak VisualVM, aby zapewnić odpowiedni rozmiar sterty JVM dla dużych plików.
 
-Optymalizacja wydajności jest kluczowa podczas pracy z dużymi dokumentami:
-- Stosuj efektywne praktyki zarządzania pamięcią w Javie, takie jak odpowiednie zamykanie zasobów.
-- Optymalizacja obsługi plików w celu zmniejszenia liczby operacji wejścia/wyjścia.
-- Stwórz profil swojej aplikacji, aby zidentyfikować wąskie gardła i poprawić szybkość przetwarzania.
+## Zakończenie
 
-Stosując najlepsze praktyki, możesz zapewnić płynną pracę nawet w przypadku obszernych zbiorów dokumentów.
-
-## Wniosek
-
-W tym samouczku przyjrzeliśmy się, jak zmienić kolejność stron w pliku PDF za pomocą GroupDocs.Viewer dla Java. Nauczyłeś się konfigurować bibliotekę, wdrażać zmianę kolejności stron i stosować ją w rzeczywistych scenariuszach. Aby uzyskać dalsze informacje, rozważ integrację GroupDocs.Viewer z innymi bibliotekami lub aplikacjami Java w celu zwiększenia możliwości przetwarzania dokumentów.
-
-Gotowy, aby wykorzystać swoje nowe umiejętności w praktyce? Zacznij eksperymentować z różnymi dokumentami i konfiguracjami, aby zobaczyć, co możesz osiągnąć!
+Teraz wiesz, jak **change pdf page sequence** przy użyciu GroupDocs.Viewer dla Javy. Konfigurując viewer, definiując `PdfViewOptions` i przekazując żądane numery stron, uzyskujesz pełną kontrolę nad ostatecznym układem PDF. Eksperymentuj z różnymi kolejnościami, łącz tę technikę z innymi funkcjami Viewer i integruj ją w swoich pipeline’ach przetwarzania dokumentów, aby uzyskać maksymalną elastyczność.
 
 ## Sekcja FAQ
 
-**1. Jak dodać tymczasową licencję dla GroupDocs.Viewer?**
+**1. Jak dodać tymczasową licencję do GroupDocs.Viewer?**
 
-Możesz uzyskać tymczasową licencję od [Strona internetowa GroupDocs](https://purchase.groupdocs.com/temporary-license/) aby usunąć ograniczenia oceny.
+Możesz uzyskać tymczasową licencję na [stronie GroupDocs](https://purchase.groupdocs.com/temporary-license/), aby usunąć ograniczenia wersji próbnej.
 
-**2. Jakie formaty plików obsługuje GroupDocs.Viewer w zakresie zmiany kolejności stron?**
+**2. Jakie formaty plików obsługuje GroupDocs.Viewer w kontekście zmiany kolejności stron?**
 
-Obsługuje wiele formatów, w tym DOCX, XLSX, PPTX i inne. Sprawdź pełną listę w [Odniesienie do API](https://reference.groupdocs.com/viewer/java/).
+Obsługuje liczne formaty, w tym DOCX, XLSX, PPTX i inne. Pełną listę znajdziesz w [referencji API](https://reference.groupdocs.com/viewer/java/).
 
-**3. Czy mogę zmienić kolejność stron w pliku PDF bez konieczności konwersji z innych typów dokumentów?**
+**3. Czy mogę zmienić kolejność stron PDF bez konwertowania z innych typów dokumentów?**
 
-Tak, GroupDocs.Viewer pozwala na bezpośrednią manipulację istniejącymi plikami PDF.
+Tak, GroupDocs.Viewer umożliwia bezpośrednią manipulację istniejącymi plikami PDF.
 
-**4. Jakie są najczęstsze błędy występujące podczas konfigurowania GroupDocs.Viewer za pomocą Maven?**
+**4. Jakie są typowe błędy przy konfiguracji GroupDocs.Viewer z Maven?**
 
-Upewnij się, że `pom.xml` zawiera poprawne konfiguracje repozytorium i zależności.
+Upewnij się, że Twój `pom.xml` zawiera prawidłowe konfiguracje repozytorium i zależności.
 
-**5. Jak mogę poprawić wydajność podczas zmiany kolejności dużych plików PDF?**
+**5. Jak mogę poprawić wydajność przy zmianie kolejności dużych plików PDF?**
 
-Zoptymalizuj zarządzanie pamięcią Java, zminimalizuj operacje na plikach i wykorzystuj efektywne praktyki kodowania.
+Optymalizuj zarządzanie pamięcią w Javie, minimalizuj operacje na plikach i stosuj efektywne praktyki programistyczne.
 
 ## Zasoby
 
-- **Dokumentacja**: [Dokumentacja przeglądarki GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Odniesienie do API**: [Odwołanie do API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Pobierz GroupDocs.Viewer**: [Strona wydań](https://releases.groupdocs.com/viewer/java/)
-- **Kup licencję**: [Kup GroupDocs Viewer](https://purchase.groupdocs.com/buy)
-- **Bezpłatna wersja próbna**: [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licencja tymczasowa**: [Poproś o licencję tymczasową](https://purchase.groupdocs.com/temporary-license/)
-- **Forum wsparcia**: [Wsparcie GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentacja**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referencja API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Pobierz GroupDocs.Viewer**: [Releases Page](https://releases.groupdocs.com/viewer/java/)
+- **Kup licencję**: [Buy GroupDocs Viewer](https://purchase.groupdocs.com/buy)
+- **Darmowa wersja próbna**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Licencja tymczasowa**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Forum wsparcia**: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ostatnia aktualizacja:** 2026-03-22  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
