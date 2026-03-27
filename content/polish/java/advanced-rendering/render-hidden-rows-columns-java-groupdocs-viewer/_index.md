@@ -1,44 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak renderować ukryte wiersze i kolumny w arkuszach kalkulacyjnych Java za pomocą GroupDocs.Viewer w celu bezproblemowej konwersji HTML. Zapewnij pełną widoczność danych dzięki temu zaawansowanemu przewodnikowi po renderowaniu."
-"title": "Renderowanie ukrytych wierszy i kolumn w arkuszach kalkulacyjnych Java przy użyciu GroupDocs.Viewer"
-"url": "/pl/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-03-27'
+description: Naucz się konwertować pliki Excel na HTML oraz renderować ukryte wiersze
+  i kolumny w arkuszach Java przy użyciu GroupDocs.Viewer, aby uzyskać płynną konwersję
+  do HTML. Zapewnij pełną widoczność danych dzięki temu zaawansowanemu przewodnikowi
+  renderowania.
+keywords:
+- convert excel to html
+- xlsx to html java
+- display hidden spreadsheet data
+- GroupDocs Viewer Java
+title: Jak przekonwertować Excel na HTML i renderować ukryte wiersze oraz kolumny
+  w Javie przy użyciu GroupDocs.Viewer
 type: docs
+url: /pl/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# Renderowanie ukrytych wierszy i kolumn w arkuszach kalkulacyjnych Java przy użyciu GroupDocs.Viewer
 
-## Wstęp
+# Konwertuj Excel do HTML i renderuj ukryte wiersze oraz kolumny w arkuszach Java przy użyciu GroupDocs.Viewer
 
-Czy masz problemy z wizualizacją ukrytych wierszy i kolumn w arkuszu kalkulacyjnym podczas konwersji do HTML za pomocą Java? Nie jesteś sam! Wielu programistów staje przed tym wyzwaniem, próbując zachować integralność wizualizacji danych w różnych formatach. Ten samouczek przeprowadzi Cię przez proces efektywnego renderowania ukrytych wierszy i kolumn w arkuszach kalkulacyjnych za pomocą GroupDocs.Viewer dla Java, zapewniając, że żadne kluczowe informacje nie zostaną utracone podczas konwersji.
+Czy masz problem z **konwersją Excel do HTML** i wizualizacją ukrytych wierszy i kolumn w arkuszu podczas konwersji do HTML przy użyciu Javy? Nie jesteś sam! Wielu programistów napotyka ten problem, starając się zachować integralność wizualizacji danych w różnych formatach. Ten samouczek poprowadzi Cię, jak skutecznie renderować ukryte wiersze i kolumny w arkuszach przy użyciu GroupDocs.Viewer dla Javy, zapewniając, że żadne istotne informacje nie zostaną utracone podczas konwersji.
 
-W tym artykule omówimy:
-- Konfigurowanie GroupDocs.Viewer do renderowania ukrytych elementów arkusza kalkulacyjnego
-- Konfigurowanie środowiska z zależnościami Maven
-- Implementacja funkcji krok po kroku
-- Zastosowania w świecie rzeczywistym i rozważania dotyczące wydajności
+![Render Hidden Rows & Columns with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Zanim zaczniesz, upewnij się, że masz podstawową wiedzę na temat programowania w Javie i pewną znajomość zarządzania zależnościami Maven. Zacznijmy od skonfigurowania naszego środowiska.
+## Szybkie odpowiedzi
+- **Czy GroupDocs.Viewer może konwertować Excel do HTML?** Tak, zapewnia natychmiastowe wsparcie dla konwersji plików XLSX do HTML.  
+- **Czy ukryte wiersze i kolumny będą widoczne w wyniku HTML?** Gdy włączysz odpowiednie opcje, ukryte dane są renderowane tak samo jak widoczne komórki.  
+- **Jaki artefakt Maven jest wymagany?** `com.groupdocs:groupdocs-viewer` (zalecana najnowsza wersja).  
+- **Czy potrzebna jest licencja do użytku produkcyjnego?** Wymagana jest stała licencja do produkcji; dostępna jest darmowa wersja próbna lub tymczasowa licencja do oceny.  
+- **Czy to podejście jest kompatybilne z Java 8 i nowszymi?** Absolutnie – działa z JDK 8+.
+
+## Co to jest „konwersja Excel do HTML”?
+Konwersja Excel do HTML oznacza przekształcenie skoroszytu `.xlsx` w zestaw gotowych do wyświetlenia w sieci stron HTML, zachowując pierwotny układ, style i dane. Umożliwia to wyświetlanie arkuszy bezpośrednio w przeglądarkach bez potrzeby posiadania Microsoft Office.
+
+## Dlaczego renderować ukryte dane arkusza kalkulacyjnego?
+Wyświetlanie ukrytych danych arkusza jest niezbędne, gdy:
+- **Raportowanie finansowe** wymaga pełnych ścieżek audytu, w tym wierszy/kolumn ukrytych w celach prezentacyjnych.  
+- **Narzędzia analizy danych** potrzebują pełnego zestawu danych do dokładnych obliczeń.  
+- **Zasoby edukacyjne** wymagają, aby każda komórka była widoczna w celu nauczania formuł i struktur danych.  
 
 ## Wymagania wstępne
 
 ### Wymagane biblioteki i zależności
-Aby wdrożyć tę funkcję, upewnij się, że w projekcie uwzględniono GroupDocs.Viewer for Java jako zależność. Ta biblioteka jest niezbędna do renderowania dokumentów w różnych formatach, takich jak HTML, PDF i pliki graficzne.
+Aby wdrożyć tę funkcję, upewnij się, że w projekcie znajduje się zależność GroupDocs.Viewer dla Javy. Biblioteka ta jest niezbędna do renderowania dokumentów w różnych formatach, takich jak HTML, PDF i pliki graficzne.
 
 ### Wymagania dotyczące konfiguracji środowiska
-Przed kontynuowaniem upewnij się, że masz następujące ustawienia:
-- **Zestaw narzędzi programistycznych Java (JDK)**:Wersja 8 lub nowsza
-- **Zintegrowane środowisko programistyczne (IDE)**:Takie jak IntelliJ IDEA lub Eclipse
-- **Maven**:Do zarządzania zależnościami projektu
+- **Java Development Kit (JDK)**: Wersja 8 lub nowsza  
+- **Integrated Development Environment (IDE)**: Na przykład IntelliJ IDEA lub Eclipse  
+- **Maven**: Do zarządzania zależnościami projektu  
 
-### Wymagania wstępne dotyczące wiedzy
-Niezbędne jest podstawowe zrozumienie programowania w Javie. Ponadto znajomość Maven będzie korzystna przy konfiguracji projektu.
+### Wymagania wiedzy
+Podstawowa znajomość programowania w Javie jest niezbędna. Dodatkowo, znajomość Mavena będzie pomocna przy konfigurowaniu projektu.
 
-## Konfigurowanie GroupDocs.Viewer dla Java
-Aby rozpocząć korzystanie z GroupDocs.Viewer w aplikacji Java, musisz skonfigurować ją za pomocą Maven. Oto jak to zrobić:
+## Konfiguracja GroupDocs.Viewer dla Javy
+Aby rozpocząć korzystanie z GroupDocs.Viewer w aplikacji Java, musisz skonfigurować go za pomocą Mavena. Oto jak:
 
-**Maven**
-Dodaj następującą konfigurację do swojego `pom.xml` plik:
+**Maven**  
+Dodaj następującą konfigurację do pliku `pom.xml`:
 ```xml
 <repositories>
    <repository>
@@ -56,33 +73,31 @@ Dodaj następującą konfigurację do swojego `pom.xml` plik:
 </dependencies>
 ```
 
-### Etapy uzyskania licencji
-Aby użyć GroupDocs.Viewer, rozważ następujące opcje:
-- **Bezpłatna wersja próbna**:Pobierz wersję próbną, aby zapoznać się z funkcjami.
-- **Licencja tymczasowa**: Poproś o tymczasową licencję zapewniającą dostęp do wszystkich funkcji bez ograniczeń dotyczących wersji próbnej.
-- **Zakup**:Uzyskaj stałą licencję na użytkowanie produkcyjne.
+### Kroki uzyskania licencji
+Aby używać GroupDocs.Viewer, rozważ następujące opcje:
+- **Free Trial**: Pobierz wersję próbną, aby ocenić funkcje.  
+- **Temporary License**: Poproś o tymczasową licencję, aby uzyskać pełny dostęp do funkcji bez ograniczeń oceny.  
+- **Purchase**: Uzyskaj stałą licencję do użytku produkcyjnego.  
 
-Po skonfigurowaniu Maven i nabyciu licencji możesz rozpocząć inicjalizację GroupDocs.Viewer. Oto jak to zrobić:
+Po skonfigurowaniu Mavena i uzyskaniu licencji możesz rozpocząć inicjalizację GroupDocs.Viewer. Oto jak to zrobić:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
     public static void main(String[] args) {
-        // Jeśli jest dostępny, zainicjuj przeglądarkę przy użyciu pliku licencji.
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Twój kod tutaj...
+            // Your code here...
         }
     }
 }
 ```
 
-## Przewodnik wdrażania
+## Jak konwertować Excel do HTML z ukrytymi danymi
+Ta sekcja przeprowadzi Cię przez dokładne kroki potrzebne do **konwersji Excel do HTML**, zapewniając wyświetlanie ukrytych wierszy i kolumn.
 
-### Renderuj ukryte wiersze i kolumny w arkuszach kalkulacyjnych
-Ta funkcja umożliwia renderowanie ukrytych wierszy i kolumn arkusza kalkulacyjnego podczas konwersji do formatu HTML. Omówmy kroki implementacji.
-
-#### Krok 1: Zdefiniuj ścieżkę do katalogu wyjściowego
-Zacznij od zdefiniowania miejsca przechowywania renderowanych plików:
+### Krok 1: Zdefiniuj ścieżkę katalogu wyjściowego
+Zacznij od określenia, gdzie będą przechowywane wygenerowane pliki:
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +105,102 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### Krok 2: Skonfiguruj HTMLViewOptions
-Następnie skonfiguruj `HtmlViewOptions` aby osadzać zasoby bezpośrednio w generowanych plikach HTML:
+### Krok 2: Skonfiguruj HTMLViewOptions
+Następnie skonfiguruj `HtmlViewOptions`, aby osadzić zasoby bezpośrednio w wygenerowanych plikach HTML:
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Utwórz format ścieżki pliku do renderowania każdej strony.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Krok 3: Włącz renderowanie ukrytych kolumn i wierszy
-Skonfiguruj `SpreadsheetOptions` aby renderować ukryte elementy:
+### Krok 3: Włącz renderowanie ukrytych kolumn i wierszy
+Skonfiguruj `SpreadsheetOptions`, aby renderować ukryte elementy:
 ```java
-// Włącz renderowanie ukrytych kolumn i wierszy.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### Krok 4: Zainicjuj przeglądarkę za pomocą dokumentu
-Na koniec zainicjuj GroupDocs.Viewer ścieżką do dokumentu i wyrenderuj zawartość:
+### Krok 4: Zainicjalizuj Viewer z dokumentem i renderuj
+Na koniec zainicjalizuj GroupDocs.Viewer ze ścieżką do dokumentu i renderuj zawartość:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Wyświetla dokument w formacie HTML przy użyciu określonych opcji widoku.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Porady dotyczące rozwiązywania problemów**: Upewnij się, że ścieżki są poprawnie ustawione i zależności są prawidłowo uwzględnione w Twoim `pom.xml`.
+**Wskazówki rozwiązywania problemów**: Upewnij się, że ścieżki są poprawnie ustawione, a zależności prawidłowo uwzględnione w `pom.xml`.
 
-## Zastosowania praktyczne
-Oto kilka praktycznych zastosowań tej funkcji:
-1. **Sprawozdawczość finansowa**: Upewnij się, że wszystkie dane, łącznie z ukrytymi wskaźnikami finansowymi, są widoczne podczas konwersji, aby zachować zgodność z przepisami.
-2. **Analiza danych**:Zachowaj integralność zestawów danych, wyświetlając wszystkie wiersze i kolumny w raportach lub prezentacjach.
-3. **Narzędzia edukacyjne**:Możesz korzystać z pełnej zawartości arkusza kalkulacyjnego do celów dydaktycznych, nie tracąc przy tym ukrytych informacji.
+## Praktyczne zastosowania
+Oto niektóre praktyczne zastosowania tej funkcji:
+1. **Raportowanie finansowe**: Zapewnij, że wszystkie dane, w tym ukryte wskaźniki finansowe, są widoczne podczas konwersji w celu zapewnienia zgodności.  
+2. **Analiza danych**: Zachowaj integralność zestawów danych, wyświetlając wszystkie wiersze i kolumny w raportach lub prezentacjach.  
+3. **Narzędzia edukacyjne**: Używaj pełnej zawartości arkusza w celach edukacyjnych, nie tracąc ukrytych informacji.  
 
 ## Rozważania dotyczące wydajności
-Aby zoptymalizować wydajność podczas korzystania z GroupDocs.Viewer:
-- Monitoruj wykorzystanie pamięci, szczególnie w przypadku dużych dokumentów.
-- Zoptymalizuj ścieżki plików i lokalizacje pamięci masowej, aby zredukować liczbę operacji wejścia/wyjścia.
-- Regularnie aktualizuj bibliotekę, aby korzystać z nowych udoskonaleń wydajności i poprawek błędów.
+Aby zoptymalizować wydajność przy użyciu GroupDocs.Viewer:
+- Monitoruj zużycie pamięci, szczególnie przy dużych dokumentach.  
+- Optymalizuj ścieżki plików i lokalizacje przechowywania, aby zmniejszyć operacje I/O.  
+- Regularnie aktualizuj bibliotekę, aby korzystać z nowych usprawnień wydajności i poprawek błędów.  
 
-## Wniosek
-W tym samouczku dowiedziałeś się, jak skonfigurować GroupDocs.Viewer dla Java, aby renderować ukryte wiersze i kolumny w arkuszach kalkulacyjnych. Wykonując te kroki, możesz zapewnić kompleksową widoczność danych w różnych formatach. Jako następny krok, poeksperymentuj z różnymi typami dokumentów i odkryj dodatkowe funkcje oferowane przez GroupDocs.Viewer.
+## Zakończenie
+W tym samouczku nauczyłeś się, jak **konwertować Excel do HTML** i konfigurować GroupDocs.Viewer dla Javy, aby renderować ukryte wiersze i kolumny w arkuszach. Postępując zgodnie z tymi krokami, możesz zapewnić kompleksową widoczność danych we wszystkich formatach. Następnym krokiem jest eksperymentowanie z różnymi typami dokumentów i odkrywanie dodatkowych funkcji oferowanych przez GroupDocs.Viewer.
 
-Gotowy na głębsze zanurzenie? Spróbuj wdrożyć tę funkcję w swoich projektach i zobacz, jak zwiększa ona funkcjonalność Twojej aplikacji!
+Gotowy, aby zagłębić się bardziej? Spróbuj wdrożyć tę funkcję w swoich projektach i zobacz, jak zwiększa ona funkcjonalność Twojej aplikacji!
 
 ## Sekcja FAQ
 
-**P1: Czy mogę używać GroupDocs.Viewer za darmo?**
-A1: Tak, możesz pobrać wersję próbną z oficjalnej strony, aby zapoznać się z funkcjami. Aby uzyskać pełny dostęp bez ograniczeń, rozważ nabycie licencji tymczasowej lub stałej.
+**Q1: Czy mogę używać GroupDocs.Viewer za darmo?**  
+A1: Tak, możesz pobrać wersję próbną ze strony oficjalnej, aby przetestować funkcje. Aby uzyskać pełny dostęp bez ograniczeń, rozważ uzyskanie tymczasowej lub stałej licencji.
 
-**P2: Jakie formaty plików obsługuje GroupDocs.Viewer?**
+**Q2: Jakie formaty plików obsługuje GroupDocs.Viewer?**  
 A2: Obsługuje ponad 50 różnych formatów dokumentów, w tym PDF, Word, Excel i obrazy.
 
-**P3: Jak obsługiwać duże dokumenty za pomocą GroupDocs.Viewer?**
-A3: Zoptymalizuj zarządzanie pamięcią, dostosowując ustawienia Java i dzieląc duże pliki na mniejsze części, jeśli zajdzie taka potrzeba.
+**Q3: Jak radzić sobie z dużymi dokumentami w GroupDocs.Viewer?**  
+A3: Optymalizuj zarządzanie pamięcią, dostosowując ustawienia Javy i dzieląc duże pliki na mniejsze części, jeśli to konieczne.
 
-**P4: Czy można dostosować format wyjściowy HTML?**
-A4: Tak, możesz skonfigurować różne opcje za pomocą `HtmlViewOptions` aby dostosować wygląd renderowanych dokumentów.
+**Q4: Czy można dostosować format wyjściowy HTML?**  
+A4: Tak, możesz konfigurować różne opcje przy użyciu `HtmlViewOptions`, aby dostosować wygląd renderowanych dokumentów.
 
-**P5: Jaki jest najlepszy sposób rozwiązywania problemów z GroupDocs.Viewer?**
-A5: Sprawdź oficjalną dokumentację i fora w poszukiwaniu rozwiązań. Upewnij się, że wszystkie zależności są poprawnie skonfigurowane w konfiguracji projektu.
+**Q5: Jaki jest najlepszy sposób rozwiązywania problemów z GroupDocs.Viewer?**  
+A5: Sprawdź oficjalną dokumentację i fora w poszukiwaniu rozwiązań. Upewnij się, że wszystkie zależności są poprawnie skonfigurowane w ustawieniach projektu.
+
+## Najczęściej zadawane pytania
+
+**Q: Czy włączenie `setRenderHiddenColumns(true)` wpływa na wydajność?**  
+A: Renderowanie ukrytych kolumn dodaje niewielki narzut, ale wpływ jest minimalny dla typowych skoroszytów. W przypadku bardzo dużych arkuszy monitoruj zużycie pamięci.
+
+**Q: Czy mogę konwertować plik XLSX do jednej strony HTML zamiast wielu stron?**  
+A: Tak, możesz ustawić niestandardową nazwę pliku w `HtmlViewOptions` bez placeholdera `{0}`, aby wygenerować pojedynczy plik HTML.
+
+**Q: Jak wyświetlić ukryte dane arkusza tylko dla wybranych arkuszy?**  
+A: Użyj `viewOptions.getSpreadsheetOptions().setWorksheetIndexes(...)`, aby wybrać konkretne arkusze przed włączeniem renderowania ukrytych elementów.
+
+**Q: Czy istnieje sposób, aby ukryć pasek narzędzi lub nawigację po konwersji?**  
+A: Wyjściowy HTML generowany przez GroupDocs.Viewer jest statyczny; możesz ręcznie usunąć elementy nawigacyjne, jeśli dostosujesz szablon.
+
+**Q: Która wersja GroupDocs.Viewer jest wymagana do renderowania ukrytych wierszy/kolumn?**  
+A: Funkcja jest dostępna od wersji 22.0; zalecamy użycie najnowszej stabilnej wersji.
 
 ## Zasoby
-- **Dokumentacja**: [Dokumentacja przeglądarki GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Odniesienie do API**: [Odwołanie do API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Pobierać**: [Pobierz GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Zakup**: [Kup licencję](https://purchase.groupdocs.com/buy)
-- **Bezpłatna wersja próbna**: [Wypróbuj darmową wersję](https://releases.groupdocs.com/viewer/java/)
-- **Licencja tymczasowa**: [Poproś o licencję tymczasową](https://purchase.groupdocs.com/temporary-license/)
-- **Wsparcie**: [Forum GrupyDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentacja**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referencja API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Pobierz**: [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Zakup**: [Buy a License](https://purchase.groupdocs.com/buy)
+- **Bezpłatna wersja próbna**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Licencja tymczasowa**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Wsparcie**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Dzięki temu kompleksowemu przewodnikowi jesteś teraz wyposażony, aby skutecznie obsługiwać ukryte elementy arkusza kalkulacyjnego w swoich aplikacjach Java, używając GroupDocs.Viewer. Miłego kodowania!
+---
+
+**Ostatnia aktualizacja:** 2026-03-27  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
