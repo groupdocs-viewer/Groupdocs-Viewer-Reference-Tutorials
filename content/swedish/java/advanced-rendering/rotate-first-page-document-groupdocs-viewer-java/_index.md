@@ -1,5 +1,5 @@
 ---
-date: '2026-01-18'
+date: '2026-03-29'
 description: Lär dig hur du roterar en sida 90 grader i Java med GroupDocs Viewer,
   inklusive installation, kod och prestandatips.
 keywords:
@@ -14,22 +14,23 @@ weight: 1
 
 # Rotera sida 90 grader med GroupDocs Viewer för Java
 
-När du behöver **rotera sida 90 grader** i ett dokument—oavsett om det är en PDF, Word‑fil eller kalkylblad—sparar det att göra det programmässigt tid och eliminerar manuella fel. I den här avancerade guiden går vi igenom de exakta stegen för att rotera den första sidan i vilket stödjat dokument som helst med **GroupDocs Viewer för Java**. I slutet har du ett återanvändbart kodsnutt som du kan lägga in i dina egna projekt.
+När du behöver **rotera sida 90 grader** i ett dokument—oavsett om det är en PDF, Word‑fil eller kalkylblad—sparar det att göra det programatiskt tid och eliminerar manuella fel. I den här avancerade guiden går vi igenom de exakta stegen för att rotera den första sidan i vilket stödformat som helst med **GroupDocs Viewer för Java**. I slutet har du ett återanvändbart kodsnutt som du kan lägga in i dina egna projekt.  
+Vi kommer också att diskutera varför rotering av sidor i Java är viktigt, vanliga scenarier där tekniken briljerar, och hur du håller operationen lättviktig.
 
 ![Rotera den första sidan i ett dokument med GroupDocs.Viewer för Java](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
 
 ## Snabba svar
-- **Vad betyder “rotate page 90 degrees”?** Det vrider den valda sidan medurs ett kvart varv.  
-- **Vilket bibliotek hanterar rotationen?** GroupDocs Viewer för Java tillhandahåller `rotatePage`‑metoden.  
+- **Vad betyder “rotate page 90 degrees”?** Det vrider den valda sidan medurs ett kvarts varv.  
+- **Vilket bibliotek hanterar rotationen?** GroupDocs Viewer för Java tillhandahåller metoden `rotatePage`.  
 - **Kan jag rotera PDF‑sidor med Java?** Ja—använd samma `rotatePage`‑anrop; det fungerar för PDF, DOCX, XLSX och mer.  
 - **Behöver jag en licens?** En gratis provversion fungerar för utveckling; en betald licens krävs för produktion.  
-- **Är operationen minnesintensiv?** Inte när du stänger `Viewer`‑instansen omedelbart; se prestandatipsen nedan.
+- **Är operationen minnesintensiv?** Nej, när du stänger `Viewer`‑instansen omedelbart; se prestandatipsen nedan.
 
 ## Vad är “rotate page 90 degrees”?
 Att rotera en sida 90 grader omorienterar sidan från stående till liggande (eller vice‑versa) utan att ändra det underliggande innehållet. Detta är särskilt praktiskt för presentationer, utskrift av enbart liggande grafik, eller korrigering av skannade dokument som fångades sidledes.
 
-## Varför rotera sidor med GroupDocs Viewer för Java?
-GroupDocs Viewer abstraherar komplexiteten i att hantera dussintals filformat. Det låter dig applicera sidnivå‑transformeringar—som rotation—utan att ändra den ursprungliga filen. API‑et är flytande, trådsäkert och fungerar på alla Java 8+‑miljöer.
+## Varför rotera sidor programatiskt med GroupDocs Viewer för Java?
+GroupDocs Viewer abstraherar komplexiteten i att hantera dussintals filformat. Det låter dig tillämpa sidnivå‑transformeringar—som rotation—utan att ändra den ursprungliga filen. API‑et är flytande, trådsäkert och fungerar på alla Java 8+‑runtime‑miljöer, vilket gör det till ett pålitligt val för företagsnivå‑automation.
 
 ## Förutsättningar
 
@@ -39,7 +40,7 @@ GroupDocs Viewer abstraherar komplexiteten i att hantera dussintals filformat. D
 - En IDE såsom IntelliJ IDEA eller Eclipse
 - Grundläggande kunskap om Java I/O
 
-## Installera GroupDocs.Viewer för Java
+## Konfigurera GroupDocs.Viewer för Java
 
 Lägg till GroupDocs‑arkivet och beroendet i din `pom.xml`. Detta kodsnutt är oförändrad från den ursprungliga handledningen:
 
@@ -60,7 +61,7 @@ Lägg till GroupDocs‑arkivet och beroendet i din `pom.xml`. Detta kodsnutt är
 </dependencies>
 ```
 
-### Licensanskaffning
+### Licensförvärv
 - **Free trial** – ladda ner från GroupDocs‑sajten.  
 - **Temporary license** – begär om du behöver en förlängd utvärderingsperiod.  
 - **Full license** – köp för produktionsdistributioner.
@@ -77,7 +78,10 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-## Steg‑för‑steg‑implementering: Rotera den första sidan 90 grader
+## Hur man roterar PDF‑sida i Java med GroupDocs Viewer
+Även om API‑et fungerar över många format är PDF det vanligaste användningsfallet för sidrotation. Samma `rotatePage`‑metod används, så du behöver bara peka Viewer på en PDF‑fil och ange sidnumret.
+
+## Steg‑för‑steg‑implementation: Rotera den första sidan 90 grader
 
 ### 1. Importera de nödvändiga paketen
 Dessa importeringar ger dig åtkomst till PDF‑renderingsalternativ och rotations‑enum.
@@ -88,8 +92,8 @@ import com.groupdocs.viewer.options.PdfViewOptions;
 import com.groupdocs.viewer.options.Rotation;
 ```
 
-### 2. Definiera utdata‑platser och skapa Viewer‑instansen
-Byt ut platshållar‑sökvägarna mot dina faktiska kataloger.
+### 2. Definiera utdata‑platser och skapa Viewer
+Ersätt platshållar‑sökvägarna med dina faktiska kataloger.
 
 ```java
 import java.nio.file.Path;
@@ -125,29 +129,29 @@ viewer.view(viewOptions);
 
 #### Så fungerar det
 - **PdfViewOptions** talar om för Viewer att skriva ut en PDF‑fil.  
-- **rotatePage(int, Rotation)** roterar endast den sida du anger, resten förblir orörd.  
+- **rotatePage(int, Rotation)** roterar endast den sida du anger, och lämnar resten orörd.  
 - Metoden stödjer `ON_90_DEGREE`, `ON_180_DEGREE` och `ON_270_DEGREE`.
 
 ## Vanliga problem och lösningar
 
-| Symptom | Trolig orsak | Lösning |
+| Symptom | Trolig orsak | Åtgärd |
 |---------|--------------|-----|
 | **FileNotFoundException** | Felaktig sökväg eller saknad mapp | Verifiera att `YOUR_OUTPUT_DIRECTORY` och `YOUR_DOCUMENT_DIRECTORY` finns och är läsbara. |
-| **Unsupported file format** | Försök att rotera ett format som inte stöds av Viewer | Kontrollera sidan [GroupDocs Viewer supported formats]. |
+| **Unsupported file format** | Försöker rotera ett format som inte stöds av Viewer | Kontrollera sidan [GroupDocs Viewer supported formats]. |
 | **No rotation visible** | Använder fel sidnummer (0‑baserat) | Kom ihåg att `rotatePage` använder **1‑baserad** indexering. |
 | **Out‑of‑memory errors on large docs** | Renderar många stora filer i en enda tråd | Processa dokument sekventiellt eller använd en trådpott med begränsad samtidighet. |
 
 ## Praktiska tillämpningar
 
-1. **Presentationjusteringar** – Konvertera en stående bild till liggande i farten.  
-2. **Masskorrigering av dokument** – Automatisera rättning av skannade PDF‑filer som fångades sidledes.  
-3. **Utskriftsklar output** – Säkerställ att liggande grafik skrivs ut korrekt på stående papper.
+1. **Presentation adjustments** – Konvertera en stående bild till liggande i realtid.  
+2. **Bulk document correction** – Automatisera korrigering av skannade PDF‑filer som fångades sidledes.  
+3. **Print‑ready output** – Säkerställ att liggande grafik skrivs ut korrekt på stående papper.
 
 ## Prestandatips
 
-- **Stäng resurser omedelbart** – `try‑with‑resources`‑blocket frigör automatiskt `Viewer`.  
-- **Batch‑behandling** – När du hanterar många filer, återanvänd en enda `Viewer`‑instans per tråd för att minska overhead.  
-- **Övervaka minne** – För dokument större än 100 MB, överväg att strömma utdata till disk istället för att hålla den i minnet.
+- **Close resources promptly** – `try‑with‑resources`‑blocket frigör automatiskt `Viewer`.  
+- **Batch processing** – När du hanterar många filer, återanvänd en enda `Viewer`‑instans per tråd för att minska overhead.  
+- **Monitor memory** – För dokument större än 100 MB, överväg att strömma utdata till disk istället för att hålla den i minnet.
 
 ## Vanliga frågor
 
@@ -155,16 +159,16 @@ viewer.view(viewOptions);
 A: Ja—anropa `rotatePage()` för varje sidnummer du behöver rotera.
 
 **Q: Finns det ett sätt att ångra rotationen efter rendering?**  
-A: Inte direkt. Du skulle behöva rendera dokumentet igen utan rotationsalternativen.
+A: Inte direkt. Du måste rendera dokumentet igen utan rotationsalternativen.
 
 **Q: Vilka filformat stödjer sidrotation i GroupDocs Viewer?**  
 A: DOCX, PDF, PPTX, XLSX och många andra format som listas i den officiella dokumentationen.
 
-**Q: Hur kan jag rotera sidor i en mängd dokument automatiskt?**  
-A: Omge koden med en loop som itererar över en samling av filsökvägar och tillämpar samma `rotatePage`‑logik på varje.
+**Q: Hur kan jag rotera sidor i en batch av dokument automatiskt?**  
+A: Omslut koden i en loop som itererar över en samling av filsökvägar och tillämpar samma `rotatePage`‑logik på varje.
 
 **Q: Vad är bästa praxis för att hantera fel under rotation?**  
-A: Omge användningen av Viewer i ett `try‑catch`‑block, logga undantaget och fortsätt eventuellt med nästa fil.
+A: Inneslut Viewer‑användningen i ett `try‑catch`‑block, logga undantaget och fortsätt eventuellt med nästa fil.
 
 ## Resurser
 
@@ -178,8 +182,6 @@ A: Omge användningen av Viewer i ett `try‑catch`‑block, logga undantaget oc
 
 ---
 
-**Senast uppdaterad:** 2026-01-18  
-**Testad med:** GroupDocs Viewer 25.2 för Java  
-**Författare:** GroupDocs  
-
----
+**Senast uppdaterad:** 2026-03-29  
+**Testat med:** GroupDocs Viewer 25.2 for Java  
+**Författare:** GroupDocs

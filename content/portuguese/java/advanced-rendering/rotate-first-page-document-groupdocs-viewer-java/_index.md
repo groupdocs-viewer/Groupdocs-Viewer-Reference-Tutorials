@@ -1,5 +1,5 @@
 ---
-date: '2026-01-18'
+date: '2026-03-29'
 description: Aprenda a girar a página 90 graus em Java usando o GroupDocs Viewer,
   incluindo configuração, código e dicas de desempenho.
 keywords:
@@ -14,30 +14,31 @@ weight: 1
 
 # Rotacionar página 90 graus com GroupDocs Viewer para Java
 
-Quando você precisa **rotacionar página 90 graus** em um documento—seja ele um PDF, um arquivo Word ou uma planilha—fazer isso programaticamente economiza tempo e elimina erros manuais. Neste guia avançado, vamos percorrer os passos exatos para rotacionar a primeira página de qualquer documento suportado usando **GroupDocs Viewer para Java**. Ao final, você terá um trecho reutilizável que pode inserir em seus próprios projetos.
+Quando você precisa **rotacionar página 90 graus** em um documento—seja ele um PDF, um arquivo Word ou uma planilha—fazer isso programaticamente economiza tempo e elimina erros manuais. Neste guia avançado, vamos percorrer os passos exatos para rotacionar a primeira página de qualquer documento suportado usando **GroupDocs Viewer for Java**. Ao final, você terá um trecho reutilizável que pode inserir em seus próprios projetos.  
+Também discutiremos por que rotacionar páginas em Java é importante, cenários comuns onde essa técnica se destaca e como manter a operação leve.
 
 ![Rotacionar a Primeira Página de um Documento com GroupDocs.Viewer para Java](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
 
-## Quick Answers
-- **O que significa “rotacionar página 90 graus”?** Ele gira a página selecionada no sentido horário em um quarto de volta.  
-- **Qual biblioteca lida com a rotação?** O GroupDocs Viewer para Java fornece o método `rotatePage`.  
+## Respostas Rápidas
+- **O que significa “rotate page 90 degrees”?** Ele gira a página selecionada no sentido horário em um quarto de volta.  
+- **Qual biblioteca lida com a rotação?** GroupDocs Viewer for Java fornece o método `rotatePage`.  
 - **Posso rotacionar páginas PDF com Java?** Sim—use a mesma chamada `rotatePage`; funciona para PDF, DOCX, XLSX e outros.  
 - **Preciso de uma licença?** Um teste gratuito funciona para desenvolvimento; uma licença paga é necessária para produção.  
-- **A operação consome muita memória?** Não quando você fecha a instância `Viewer` prontamente; veja as dicas de desempenho abaixo.
+- **A operação é intensiva em memória?** Não, quando você fecha a instância `Viewer` prontamente; veja as dicas de desempenho abaixo.
 
-## O que é “rotacionar página 90 graus”?
-Rotacionar uma página 90 graus reorienta a página de retrato para paisagem (ou vice‑versa) sem alterar o conteúdo subjacente. Isso é especialmente útil para apresentações, impressão de gráficos apenas em paisagem ou correção de documentos escaneados que foram capturados de lado.
+## O que é “rotate page 90 degrees”?
+Rotacionar uma página 90 graus reorienta a página de retrato para paisagem (ou vice‑versa) sem alterar o conteúdo subjacente. Isso é especialmente útil para apresentações, impressão de gráficos apenas em paisagem ou correção de documentos digitalizados que foram capturados de lado.
 
-## Por que rotacionar páginas com GroupDocs Viewer para Java?
-O GroupDocs Viewer abstrai as complexidades de lidar com dezenas de formatos de arquivo. Ele permite aplicar transformações ao nível da página—como rotação—mantendo o arquivo original intacto. A API é fluente, thread‑safe e funciona em qualquer runtime Java 8+.
+## Por que rotacionar páginas programaticamente com GroupDocs Viewer para Java?
+GroupDocs Viewer abstrai as complexidades de lidar com dezenas de formatos de arquivo. Ele permite aplicar transformações ao nível da página—como rotação—mantendo o arquivo original intacto. A API é fluente, thread‑safe e funciona em qualquer runtime Java 8+, tornando‑a uma escolha confiável para automação de nível empresarial.
 
-## Prerequisites
+## Pré‑requisitos
 
-- **GroupDocs.Viewer for Java** (latest version)
-- **JDK 8** or newer
-- **Maven** (or Gradle) for dependency management
-- An IDE such as IntelliJ IDEA or Eclipse
-- Basic familiarity with Java I/O
+- **GroupDocs.Viewer for Java** (versão mais recente)
+- **JDK 8** ou superior
+- **Maven** (ou Gradle) para gerenciamento de dependências
+- Uma IDE como IntelliJ IDEA ou Eclipse
+- Familiaridade básica com Java I/O
 
 ## Configurando GroupDocs.Viewer para Java
 
@@ -60,13 +61,13 @@ Adicione o repositório GroupDocs e a dependência ao seu `pom.xml`. Este trecho
 </dependencies>
 ```
 
-### License acquisition
-- **Teste gratuito** – faça o download no site da GroupDocs.  
+### Aquisição de Licença
+- **Teste gratuito** – download do site GroupDocs.  
 - **Licença temporária** – solicite se precisar de um período de avaliação estendido.  
-- **Licença completa** – compre para implantações em produção.
+- **Licença completa** – compre para implantações de produção.
 
-### Basic Viewer initialization
-O código a seguir mostra a forma mínima de criar uma instância `Viewer`. Mantenha exatamente como mostrado:
+### Inicialização Básica do Viewer
+O código a seguir mostra a maneira mínima de criar uma instância `Viewer`. Mantenha exatamente como mostrado:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -77,10 +78,13 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
+## Como rotacionar página PDF em Java com GroupDocs Viewer
+Embora a API funcione em vários formatos, PDF é o caso de uso mais comum para rotação de página. O mesmo método `rotatePage` é usado, portanto você só precisa apontar o viewer para um arquivo PDF e especificar o número da página.
+
 ## Implementação Passo a Passo: Rotacionar a Primeira Página 90 Graus
 
 ### 1. Importe os pacotes necessários
-Essas importações dão acesso às opções de renderização PDF e ao enum de rotação.
+Essas importações dão acesso às opções de renderização de PDF e ao enum de rotação.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -124,61 +128,59 @@ viewer.view(viewOptions);
 ```
 
 #### Como funciona
-- **PdfViewOptions** informa ao Viewer para gerar um arquivo PDF.  
-- **rotatePage(int, Rotation)** rotaciona apenas a página que você especificar, deixando as demais intactas.  
+- **PdfViewOptions** indica ao Viewer que a saída será um arquivo PDF.  
+- **rotatePage(int, Rotation)** rotaciona apenas a página especificada, deixando as demais intactas.  
 - O método suporta `ON_90_DEGREE`, `ON_180_DEGREE` e `ON_270_DEGREE`.
 
-## Common Issues and Solutions
-| Sintoma | Causa Provável | Solução |
-|---------|----------------|---------|
+## Problemas Comuns e Soluções
+| Symptom | Likely Cause | Fix |
+|---------|--------------|-----|
 | **FileNotFoundException** | Caminho incorreto ou pasta ausente | Verifique se `YOUR_OUTPUT_DIRECTORY` e `YOUR_DOCUMENT_DIRECTORY` existem e são legíveis. |
-| **Unsupported file format** | Tentando rotacionar um formato não suportado pelo Viewer | Verifique a página [GroupDocs Viewer supported formats]. |
-| **No rotation visible** | Usando o número de página errado (baseado em 0) | Lembre-se de que `rotatePage` usa indexação **baseada em 1**. |
+| **Unsupported file format** | Tentando rotacionar um formato não suportado pelo Viewer | Verifique a página [GroupDocs Viewer supported formats] page. |
+| **No rotation visible** | Usando o número de página errado (baseado em 0) | Lembre‑se que `rotatePage` usa indexação **baseada em 1**. |
 | **Out‑of‑memory errors on large docs** | Renderizando muitos arquivos grandes em uma única thread | Processar documentos sequencialmente ou usar um pool de threads com concorrência limitada. |
 
 ## Aplicações Práticas
 
-1. **Ajustes de apresentação** – Converta um slide em retrato para paisagem em tempo real.  
-2. **Correção em massa de documentos** – Automatize a correção de PDFs escaneados que foram capturados de lado.  
+1. **Ajustes de apresentação** – Converta um slide em retrato para paisagem instantaneamente.  
+2. **Correção em lote de documentos** – Automatize a correção de PDFs digitalizados que foram capturados de lado.  
 3. **Saída pronta para impressão** – Garanta que gráficos em paisagem imprimam corretamente em papel orientado em retrato.
 
 ## Dicas de Desempenho
 
 - **Feche recursos prontamente** – O bloco `try‑with‑resources` descarta automaticamente o `Viewer`.  
 - **Processamento em lote** – Ao lidar com muitos arquivos, reutilize uma única instância `Viewer` por thread para reduzir a sobrecarga.  
-- **Monitore a memória** – Para documentos maiores que 100 MB, considere transmitir a saída para disco ao invés de mantê-la na memória.
+- **Monitore a memória** – Para documentos maiores que 100 MB, considere transmitir a saída para disco em vez de mantê‑la na memória.
 
 ## Perguntas Frequentes
 
-**P: Posso rotacionar várias páginas de uma vez?**  
-**R: Sim—chame `rotatePage()` para cada número de página que precisar rotacionar.**
+**Q: Posso rotacionar várias páginas de uma vez?**  
+A: Sim—chame `rotatePage()` para cada número de página que precisar rotacionar.
 
-**P: Existe uma maneira de desfazer a rotação após a renderização?**  
-**R: Não diretamente. Você precisaria renderizar o documento novamente sem as opções de rotação.**
+**Q: Existe uma forma de desfazer a rotação após a renderização?**  
+A: Não diretamente. Você precisaria renderizar o documento novamente sem as opções de rotação.
 
-**P: Quais formatos de arquivo suportam rotação de página no GroupDocs Viewer?**  
-**R: DOCX, PDF, PPTX, XLSX e muitos outros formatos listados na documentação oficial.**
+**Q: Quais formatos de arquivo suportam rotação de página no GroupDocs Viewer?**  
+A: DOCX, PDF, PPTX, XLSX e muitos outros formatos listados na documentação oficial.
 
-**P: Como posso rotacionar páginas em um lote de documentos automaticamente?**  
-**R: Envolva o código em um loop que itere sobre uma coleção de caminhos de arquivos, aplicando a mesma lógica `rotatePage` a cada um.**
+**Q: Como posso rotacionar páginas em um lote de documentos automaticamente?**  
+A: Envolva o código em um loop que itere sobre uma coleção de caminhos de arquivos, aplicando a mesma lógica `rotatePage` a cada um.
 
-**P: Qual a melhor prática para lidar com erros durante a rotação?**  
-**R: Envolva o uso do Viewer em um bloco `try‑catch`, registre a exceção e, opcionalmente, continue processando o próximo arquivo.**
+**Q: Qual é a melhor prática para lidar com erros durante a rotação?**  
+A: Envolva o uso do Viewer em um bloco `try‑catch`, registre a exceção e, opcionalmente, continue processando o próximo arquivo.
 
 ## Recursos
 
 - **Documentação**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **Referência da API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
-- **Obter GroupDocs Viewer para Java**: [Get GroupDocs Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
-- **Comprar uma Licença**: [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Download**: [Get GroupDocs Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
+- **Compra**: [Buy a License](https://purchase.groupdocs.com/buy)  
 - **Teste Gratuito**: [Try Free](https://releases.groupdocs.com/viewer/java/)  
-- **Solicitar Licença Temporária**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Fórum GroupDocs**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Licença Temporária**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Suporte**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Última atualização:** 2026-01-18  
-**Testado com:** GroupDocs Viewer 25.2 para Java  
-**Autor:** GroupDocs  
-
----
+**Última Atualização:** 2026-03-29  
+**Testado com:** GroupDocs Viewer 25.2 for Java  
+**Autor:** GroupDocs

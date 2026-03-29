@@ -1,12 +1,13 @@
 ---
-date: '2026-01-18'
-description: Ismerje meg, hogyan lehet 90 fokkal elforgatni az oldalt Java-ban a GroupDocs
-  Viewer használatával, beleértve a beállítást, a kódot és a teljesítmény tippeket.
+date: '2026-03-29'
+description: Tanulja meg, hogyan lehet 90 fokkal elforgatni az oldalt Java-ban a GroupDocs
+  Viewer használatával, beleértve a beállítást, a kódot és a teljesítményre vonatkozó
+  tippeket.
 keywords:
 - rotate first page GroupDocs Viewer Java
 - GroupDocs Viewer Java setup
 - rotate pages in documents using Java
-title: Oldal 90 fokos elforgatása a GroupDocs Viewer for Java-val
+title: Oldal elforgatása 90 fokkal a GroupDocs Viewer for Java segítségével
 type: docs
 url: /hu/java/advanced-rendering/rotate-first-page-document-groupdocs-viewer-java/
 weight: 1
@@ -14,34 +15,35 @@ weight: 1
 
 # Oldal 90 fokos forgatása a GroupDocs Viewer for Java segítségével
 
-Amikor egy dokumentumban **oldal 90 fokos forgatása** szükséges — legyen az PDF, Word fájl vagy táblázat — a programozott megoldás időt takarít meg és kiküszöböli a kézi hibákat. Ebben a haladó útmutatóban lépésről lépésre bemutatjuk, hogyan forgathatja el egy támogatott dokumentum első oldalát a **GroupDocs Viewer for Java** használatával. A végére egy újrahasználható kódrészletet kap, amelyet beilleszthet saját projektjeibe.
+Amikor **oldal 90 fokos forgatása** szükséges egy dokumentumban – legyen az PDF, Word vagy táblázat – a programozott megoldás időt takarít meg és kiküszöböli a kézi hibákat. Ebben a haladó útmutatóban lépésről lépésre bemutatjuk, hogyan forgassuk meg az első oldalt bármely támogatott dokumentumban a **GroupDocs Viewer for Java** használatával. A végére egy újrahasználható kódrészletet kap, amelyet egyszerűen beilleszthet saját projektjeibe.  
+Megvitatjuk, miért fontos a Java-ban az oldalak forgatása, milyen gyakori helyzetekben jön jól ez a technika, és hogyan tartható a művelet könnyű súlyú.
 
-![Az első oldal forgatása egy dokumentumban a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
+![Az első oldal forgatása egy dokumentumban a GroupDocs.Viewer for Java-val](/viewer/advanced-rendering/rotate-the-first-page-of-a-document-java.png)
 
 ## Gyors válaszok
-- **Mi jelent a „rotate page 90 degrees”?** A kiválasztott oldalt az óramutató járásával megegyező irányban egy negyed fordulattal forgatja.  
+- **Mi jelent a “rotate page 90 degrees” kifejezés?** A kijelölt oldalt negyedfordulattal forgatja az óramutató járásával megegyező irányba.  
 - **Melyik könyvtár kezeli a forgatást?** A GroupDocs Viewer for Java biztosítja a `rotatePage` metódust.  
-- **Forgathatok PDF oldalakat Java-val?** Igen — használja ugyanazt a `rotatePage` hívást; működik PDF, DOCX, XLSX és más formátumok esetén is.  
+- **Forgathatok PDF oldalakat Java-val?** Igen—használja ugyanazt a `rotatePage` hívást; PDF, DOCX, XLSX és más formátumokra is működik.  
 - **Szükségem van licencre?** A ingyenes próba verzió fejlesztéshez megfelelő; a termeléshez fizetett licenc szükséges.  
-- **Az operáció memóriaigényes?** Nem, ha a `Viewer` példányt gyorsan bezárja; lásd az alábbi teljesítmény tippeket.
+- **Memóriaigényes a művelet?** Nem, ha a `Viewer` példányt gyorsan bezárja; lásd az alábbi teljesítmény tippeket.
 
-## Mi az a „rotate page 90 degrees”?
-Az oldal 90 fokos forgatása a lapot álló helyzetből fekvőbe (vagy fordítva) állítja át anélkül, hogy a benne lévő tartalmat módosítaná. Különösen hasznos prezentációkhoz, csak fekvő tájolású grafikák nyomtatásához, vagy a féloldalra rögzített beolvasott dokumentumok javításához.
+## Mi a “rotate page 90 degrees”?
+Az oldal 90 fokos forgatása a dokumentum tájolását állóból fekvőbe (vagy fordítva) változtatja meg, anélkül, hogy a mögöttes tartalmat módosítaná. Különösen hasznos prezentációkhoz, csak fekvő grafikák nyomtatásához vagy a oldalra álló módon beolvasott dokumentumok korrigálásához.
 
-## Miért forgassuk az oldalakat a GroupDocs Viewer for Java-val?
-A GroupDocs Viewer elrejti a több tucat fájlformátum kezelésének összetettségét. Lehetővé teszi az oldal‑szintű átalakítások — például a forgatás — alkalmazását, miközben az eredeti fájl érintetlen marad. Az API folyékony, szál‑biztos, és bármely Java 8+ környezetben működik.
+## Miért forgassuk programozottan az oldalakat a GroupDocs Viewer for Java-val?
+A GroupDocs Viewer elrejti a több tucat fájlformátum kezelésének összetettségét. Lehetővé teszi az oldal‑szintű transzformációk – például a forgatás – alkalmazását, miközben az eredeti fájl érintetlen marad. Az API folyékony, szál‑biztos, és bármely Java 8+ környezetben működik, így megbízható választás vállalati szintű automatizáláshoz.
 
-## Előkövetelmények
+## Előfeltételek
 
 - **GroupDocs.Viewer for Java** (legújabb verzió)
 - **JDK 8** vagy újabb
-- **Maven** (vagy Gradle) a függőségek kezeléséhez
-- IntelliJ IDEA vagy Eclipse típusú IDE
+- **Maven** (vagy Gradle) a függőségkezeléshez
+- Egy IDE, például IntelliJ IDEA vagy Eclipse
 - Alapvető ismeretek a Java I/O-val kapcsolatban
 
 ## A GroupDocs.Viewer for Java beállítása
 
-Adja hozzá a GroupDocs tárolót és függőséget a `pom.xml` fájlhoz. Ez a kódrészlet változatlan az eredeti útmutatóból:
+Adja hozzá a GroupDocs tárolót és a függőséget a `pom.xml` fájlhoz. Ez a kódrészlet változatlan az eredeti oktatóanyagtól:
 
 ```xml
 <repositories>
@@ -66,7 +68,7 @@ Adja hozzá a GroupDocs tárolót és függőséget a `pom.xml` fájlhoz. Ez a k
 - **Teljes licenc** – vásárlás termelési környezethez.
 
 ### Alapvető Viewer inicializálás
-Az alábbi kód mutatja a minimális módot egy `Viewer` példány létrehozására. Tartsa pontosan úgy, ahogy látható:
+Az alábbi kód mutatja a legkisebb módot egy `Viewer` példány létrehozására. Tartsa pontosan úgy, ahogy látható:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -77,10 +79,13 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
+## Hogyan forgassuk meg a PDF oldalt Java-val a GroupDocs Viewer segítségével
+Bár az API sok formátumot támogat, a PDF a leggyakoribb eset az oldal forgatásához. Ugyanazt a `rotatePage` metódust használjuk, így csak a Viewer‑t kell egy PDF fájlra mutatni, és megadni az oldalszámot.
+
 ## Lépésről‑lépésre megvalósítás: Az első oldal 90 fokos forgatása
 
 ### 1. A szükséges csomagok importálása
-Az alábbi importok hozzáférést biztosítanak a PDF renderelési beállításokhoz és a forgatás enum-hoz.
+Ezek az importok hozzáférést biztosítanak a PDF renderelési opciókhoz és a forgatás enumhoz.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -89,7 +94,7 @@ import com.groupdocs.viewer.options.Rotation;
 ```
 
 ### 2. Kimeneti helyek meghatározása és a Viewer létrehozása
-Az helyőrző útvonalakat cserélje le a saját könyvtáraira.
+Cserélje le a helyőrző útvonalakat a saját könyvtáraira.
 
 ```java
 import java.nio.file.Path;
@@ -107,7 +112,7 @@ public class RotateSpecificPage {
 ```
 
 ### 3. PDF nézet beállítások konfigurálása és a forgatás alkalmazása
-Az `rotatePage` metódus a lap számát (1‑alapú) és egy `Rotation` enum értéket vár.
+A `rotatePage` metódus az oldalszámot (1‑alapú) és egy `Rotation` enum értéket vár.
 
 ```java
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
@@ -117,69 +122,66 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 ```
 
 ### 4. Dokumentum renderelése
-Végül hívja meg a `view` metódust a forgatott PDF előállításához.
+Végül hívja meg a `view` metódust a forgatott PDF generálásához.
 
 ```java
 viewer.view(viewOptions);
 ```
 
 #### Hogyan működik
-- **PdfViewOptions** azt mondja a Viewernek, hogy PDF fájlt állítson elő.  
+- **PdfViewOptions** azt mondja a Viewernek, hogy PDF fájlt generáljon.  
 - **rotatePage(int, Rotation)** csak a megadott oldalt forgatja, a többit érintetlenül hagyja.  
 - A metódus támogatja az `ON_90_DEGREE`, `ON_180_DEGREE` és `ON_270_DEGREE` értékeket.
 
 ## Gyakori problémák és megoldások
-
-| Tünet | Valószínű ok | Javítás |
+| Tünet | Valószínű ok | Megoldás |
 |---------|--------------|-----|
 | **FileNotFoundException** | Helytelen útvonal vagy hiányzó mappa | Ellenőrizze, hogy a `YOUR_OUTPUT_DIRECTORY` és a `YOUR_DOCUMENT_DIRECTORY` létezik és olvasható. |
-| **Unsupported file format** | Olyan formátum forgatása, amelyet a Viewer nem támogat | Ellenőrizze a [GroupDocs Viewer supported formats] oldalt. |
-| **No rotation visible** | Hibás oldal szám használata (0‑alapú) | Ne feledje, hogy a `rotatePage` **1‑alapú** indexelést használ. |
-| **Out‑of‑memory errors on large docs** | Sok nagy fájl renderelése egyetlen szálban | A dokumentumokat sorban dolgozza fel, vagy használjon korlátozott párhuzamosságú szálkészletet. |
+| **Unsupported file format** | Megpróbál egy olyan formátumot forgatni, amelyet a Viewer nem támogat | Ellenőrizze a [GroupDocs Viewer által támogatott formátumok] oldalt. |
+| **No rotation visible** | Helytelen oldalszám használata (0‑alapú) | Ne feledje, hogy a `rotatePage` **1‑alapú** indexelést használ. |
+| **Memóriahiány hibák nagy dokumentumoknál** | Sok nagy fájl renderelése egyetlen szálban | Dolgozza fel a dokumentumokat sorban, vagy használjon korlátozott párhuzamosságú szálkészletet. |
 
 ## Gyakorlati alkalmazások
 
-1. **Prezentációs beállítások** – Átalakítja a portré diát valós időben fekvő formátumba.  
-2. **Tömeges dokumentumjavítás** – Automatizálja a féloldalra rögzített beolvasott PDF-ek javítását.  
-3. **Nyomtatásra kész kimenet** – Biztosítja, hogy a fekvő grafikák helyesen nyomtatódjanak portré tájolású papírra.
+1. **Prezentációs beállítások** – Átalakít egy álló diát futás közben fekvővé.  
+2. **Tömeges dokumentumkorrekció** – Automatizálja a félrehajtottan beolvasott PDF-ek javítását.  
+3. **Nyomtatásra kész kimenet** – Biztosítja, hogy a fekvő grafikák helyesen nyomtatódjanak álló papírra.
 
 ## Teljesítmény tippek
 
-- **Erőforrások gyors lezárása** – A `try‑with‑resources` blokk automatikusan felszabadítja a `Viewer`-t.  
+- **Zárja be az erőforrásokat gyorsan** – A `try‑with‑resources` blokk automatikusan felszabadítja a `Viewer`‑t.  
 - **Kötegelt feldolgozás** – Sok fájl kezelésekor használjon egyetlen `Viewer` példányt szálanként a terhelés csökkentése érdekében.  
-- **Memória figyelése** – 100 MB-nál nagyobb dokumentumok esetén fontolja meg a kimenet lemezre streamelését a memóriában tartás helyett.
+- **Memória figyelése** – 100 MB-nál nagyobb dokumentumok esetén fontolja meg a kimenet lemezre streamelését a memória helyett.
 
-## Gyakran feltett kérdések
+## Gyakran Ismételt Kérdések
 
-**K: Forgathatok több oldalt egyszerre?**  
-V: Igen — hívja meg a `rotatePage()`-t minden forgatni kívánt oldal számához.
+**Q: Forgathatok több oldalt egyszerre?**  
+**A: Igen—hívja a `rotatePage()`‑t minden forgatni kívánt oldalszámra.**
 
-**K: Van mód a forgatás visszavonására a renderelés után?**  
-V: Nem közvetlenül. Újra kell renderelni a dokumentumot a forgatási beállítások nélkül.
+**Q: Van mód a forgatás visszavonására a renderelés után?**  
+**A: Nem közvetlenül. Újra kell renderelni a dokumentumot a forgatási beállítások nélkül.**
 
-**K: Mely fájlformátumok támogatják az oldal forgatását a GroupDocs Viewer-ben?**  
-V: DOCX, PDF, PPTX, XLSX és számos más formátum, amely a hivatalos dokumentációban szerepel.
+**Q: Mely fájlformátumok támogatják az oldal forgatását a GroupDocs Viewer-ben?**  
+**A: DOCX, PDF, PPTX, XLSX és számos más formátum, amelyek az hivatalos dokumentációban szerepelnek.**
 
-**K: Hogyan forgathatok oldalakat automatikusan egy dokumentumcsoportban?**  
-V: Tegye a kódot egy ciklusba, amely egy fájlútvonalak gyűjteményén iterál, és minden egyes fájlra alkalmazza a `rotatePage` logikát.
+**Q: Hogyan forgathatok oldalakat automatikusan egy dokumentumcsoportban?**  
+**A: Tegye a kódot egy ciklusba, amely egy fájlútvonalak gyűjteményén iterál, és minden egyesre alkalmazza a `rotatePage` logikát.**
 
-**K: Mi a legjobb gyakorlat a forgatás közbeni hibakezeléshez?**  
-V: Zárja a Viewer használatát egy `try‑catch` blokkba, naplózza a kivételt, és opcionálisan folytassa a következő fájl feldolgozását.
+**Q: Mi a legjobb gyakorlat a forgatás közbeni hibák kezelésére?**  
+**A: Zárja a Viewer használatát egy `try‑catch` blokkba, naplózza a kivételt, és opcionálisan folytassa a következő fájl feldolgozását.**
 
 ## Erőforrások
 
-- **Dokumentáció**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **API referencia**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
-- **Letöltés**: [Get GroupDocs Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
-- **Vásárlás**: [Buy a License](https://purchase.groupdocs.com/buy)  
-- **Ingyenes próba**: [Try Free](https://releases.groupdocs.com/viewer/java/)  
-- **Ideiglenes licenc**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Támogatás**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentáció**: [GroupDocs Viewer Java Dokumentáció](https://docs.groupdocs.com/viewer/java/)  
+- **API Referencia**: [GroupDocs API Referencia](https://reference.groupdocs.com/viewer/java/)  
+- **Letöltés**: [GroupDocs Viewer for Java letöltése](https://releases.groupdocs.com/viewer/java/)  
+- **Vásárlás**: [Licenc vásárlása](https://purchase.groupdocs.com/buy)  
+- **Ingyenes próba**: [Próbálja ki ingyen](https://releases.groupdocs.com/viewer/java/)  
+- **Ideiglenes licenc**: [Ideiglenes licenc kérése](https://purchase.groupdocs.com/temporary-license/)  
+- **Támogatás**: [GroupDocs Fórum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Utoljára frissítve:** 2026-01-18  
-**Tesztelve a következővel:** GroupDocs Viewer 25.2 for Java  
-**Szerző:** GroupDocs  
-
----
+**Utoljára frissítve:** 2026-03-29  
+**Tesztelve:** GroupDocs Viewer 25.2 for Java  
+**Szerző:** GroupDocs
