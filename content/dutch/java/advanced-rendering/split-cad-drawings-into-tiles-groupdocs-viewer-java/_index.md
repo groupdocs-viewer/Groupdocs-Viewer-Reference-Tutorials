@@ -1,35 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Leer hoe u grote CAD-tekeningen efficiënt in tegels kunt opsplitsen met GroupDocs.Viewer voor Java. Hiermee verbetert u de prestaties en het beheer van uw toepassingen."
-"title": "Splits CAD-tekeningen in tegels met GroupDocs.Viewer Java voor efficiënte rendering"
-"url": "/nl/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Leer hoe u CAD-tekeningen in tegels kunt splitsen met GroupDocs Viewer
+  voor Java, waardoor de renderprestaties worden verbeterd en het verwerken van grote
+  bestanden wordt vereenvoudigd.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Hoe CAD-tekeningen in tegels te splitsen met GroupDocs Viewer
 type: docs
+url: /nl/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# CAD-tekeningen splitsen in tegels met GroupDocs.Viewer Java
 
-## Invoering
-Heb je moeite met het efficiënt beheren en renderen van grote CAD-tekeningen in je Java-applicatie? Deze handleiding laat zien hoe je GroupDocs.Viewer voor Java gebruikt om deze tekeningen op te splitsen in overzichtelijke tegels. Door de tekening in kleinere secties te verdelen, kun je de prestaties en het gebruiksgemak aanzienlijk verbeteren.
+# Hoe CAD‑tekeningen in tegels te splitsen met GroupDocs Viewer
 
-**Wat je leert:**
-- GroupDocs.Viewer voor Java installeren en configureren.
-- Een stapsgewijs proces om CAD-tekeningen in tegels te splitsen.
-- Belangrijkste configuraties en optimalisatietechnieken.
-- Praktische toepassingen en integratiemogelijkheden.
+Als je je afvraagt **hoe CAD**‑bestanden in kleinere, beter hanteerbare stukken te splitsen, ben je hier aan het juiste adres. In deze tutorial lopen we de exacte stappen door die nodig zijn om grote CAD‑tekeningen in tegels te splitsen met **GroupDocs Viewer for Java**. Aan het einde heb je een kant‑klaar oplossing die de renderingssnelheid verbetert, het geheugenverbruik vermindert en het makkelijker maakt om tekeningen weer te geven in web‑ of mobiele applicaties.
 
-Laten we beginnen met ervoor te zorgen dat uw omgeving klaar is en voldoet aan de benodigde vereisten.
+![Split CAD Drawings with GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
 
-## Vereisten
-Voordat we beginnen, zorg ervoor dat u het volgende heeft:
+## Snelle antwoorden
+- **Wat bereikt “splitsen van CAD”?** Het breekt een enorme tekening op in kleinere afbeeldingen (tegels) die sneller laden en minder geheugen verbruiken.  
+- **Welk formaat wordt gebruikt voor de tegels?** PNG‑bestanden worden standaard gegenereerd, maar andere formaten worden ondersteund via Viewer‑opties.  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een betaalde licentie is vereist voor productie.  
+- **Kan ik de tegelgrootte wijzigen?** Ja – pas de berekeningen van `tileWidth` en `tileHeight` aan naar jouw behoeften.  
+- **Is deze aanpak thread‑safe?** Het renderen van elke tegel in een eigen `Viewer`‑instantie met try‑with‑resources is veilig voor gelijktijdige uitvoering.
 
-- **Bibliotheken**: GroupDocs.Viewer voor Java (versie 25.2 of later).
-- **Omgevingsinstelling**: Een werkende Java Development Kit (JDK) en een geïntegreerde ontwikkelomgeving zoals IntelliJ IDEA of Eclipse.
-- **Kennisvereisten**Basiskennis van Java-programmering en vertrouwdheid met de Maven-buildtool.
+## Wat betekent “splitsen van CAD”?
+Splitsen van CAD verwijst naar het verdelen van één, vaak enorme, CAD‑tekening in meerdere rechthoekige secties (tegels). Elke tegel wordt onafhankelijk gerenderd, waardoor je alleen de delen kunt laden die een gebruiker daadwerkelijk nodig heeft — perfect voor webkaarten, documentportalen en mobiele viewers.
 
-## GroupDocs.Viewer instellen voor Java
-Om GroupDocs.Viewer te gebruiken, voegt u het toe als afhankelijkheid in uw project. Als u Maven gebruikt:
+## Waarom GroupDocs Viewer voor Java gebruiken?
+GroupDocs Viewer biedt kant‑en‑klaar ondersteuning voor meer dan 100 bestandsformaten, waaronder DWG, DXF en DWF. De tile‑API stelt je in staat exacte coördinaten op te geven, zodat je precies het gebied kunt renderen dat je nodig hebt zonder eerst het hele bestand te verwerken. Dit bespaart CPU‑cycli, vermindert bandbreedte en levert een soepelere gebruikerservaring.
 
-**Maven-configuratie:**
+## Voorvereisten
+- **Bibliotheken**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: Elke recente Java Development Kit (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse, of een andere Java‑compatibele IDE.  
+- **Build‑tool**: Maven (andere build‑tools werken zolang de afhankelijkheid is toegevoegd).  
+
+## GroupDocs.Viewer voor Java instellen
+Voeg de GroupDocs‑repository en afhankelijkheid toe aan je `pom.xml`:
+
 ```xml
 <repositories>
    <repository>
@@ -47,44 +58,43 @@ Om GroupDocs.Viewer te gebruiken, voegt u het toe als afhankelijkheid in uw proj
 </dependencies>
 ```
 
-### Licentieverwerving
-GroupDocs.Viewer biedt een gratis proeflicentie om alle mogelijkheden te verkennen:
-- **Gratis proefperiode**: Bezoek [Gratis proefversie van GroupDocs](https://releases.groupdocs.com/viewer/java/) om de bibliotheek te downloaden en te testen.
-- **Tijdelijke licentie**Vraag een tijdelijke vergunning aan bij [Tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).
-- **Aankoop**: Koop een volledige licentie op hun [Aankooppagina](https://purchase.groupdocs.com/buy).
+### Licentie‑acquisitie
+GroupDocs.Viewer biedt een gratis proeflicentie voor evaluatie:
 
-### Basisinitialisatie en -installatie
-Om GroupDocs.Viewer in uw Java-toepassing te initialiseren:
+- **Gratis proefversie**: Bezoek [GroupDocs Gratis Proefversie](https://releases.groupdocs.com/viewer/java/) om de bibliotheek te downloaden.  
+- **Tijdelijke licentie**: Vraag aan op de [Pagina Tijdelijke Licentie](https://purchase.groupdocs.com/temporary-license/).  
+- **Volledige licentie**: Koop een productie‑licentie op de [Aankooppagina](https://purchase.groupdocs.com/buy).
+
+### Basisinitialisatie
+Maak een eenvoudige `Viewer`‑instantie aan om te verifiëren dat de bibliotheek correct wordt geladen:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Plaats hier uw renderingcode.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Zodra de installatie is voltooid, kunnen we de functie implementeren.
 
-## Implementatiegids
+## Stapsgewijze handleiding om CAD‑tekeningen in tegels te splitsen
 
-### Tekening splitsen in tegels
-In deze sectie laten we zien hoe je een CAD-tekening opsplitst in kleinere tegels voor efficiëntere verwerking en rendering. Elke tegel is een kwart van de oorspronkelijke grootte.
+### Stap 1: Definieer de uitvoermap
+We slaan elke tegel op als een afzonderlijk PNG‑bestand. Het gebruik van een hulpfunctie houdt de padlogica overzichtelijk en herbruikbaar.
 
-#### Stap 1: Definieer het pad van de uitvoerdirectory
-Begin met het definiëren waar uw gerenderde afbeeldingen worden opgeslagen:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Deze opstelling gebruikt een hulpprogrammamethode om het pad te verkrijgen, wat zorgt voor herbruikbaarheid en duidelijkheid.
 
-#### Stap 2: Weergaveopties configureren
-Stel opties in om elke sectie afzonderlijk te renderen:
+### Stap 2: Configureer weergave‑opties
+Stel het renderformaat in op PNG en geef de viewer door om niet elke pagina vooraf te laden (wat geheugen bespaart).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +102,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Met dit codefragment wordt de weergave geconfigureerd naar PNG-indeling zonder alle pagina's in één keer te verwerken.
 
-#### Stap 3: Bereken de tegelafmetingen
-Bepaal de afmetingen voor elke tegel:
+### Stap 3: Bereken tegelafmetingen
+Eerst verkrijgen we de oorspronkelijke breedte en hoogte van de tekening, vervolgens splitsen we deze in vier gelijke kwadranten.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +114,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Elke tegel beslaat een kwart van de totale grootte.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +126,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Stap 4: Tegels renderen en opslaan
-Voeg elke berekende tegel toe aan de weergaveopties en geef het volgende weer:
+### Stap 4: Render en sla de tegels op
+Voeg de berekende tegels toe aan de renderopties en laat de `Viewer` de PNG‑bestanden genereren.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +136,52 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-In deze laatste stap wordt het document weergegeven op basis van de opgegeven tegels, waarbij elke tegel wordt opgeslagen als een afzonderlijk PNG-bestand.
 
 ### Tips voor probleemoplossing
-- Zorg ervoor dat het buildpad van uw project GroupDocs.Viewer JAR-bestanden bevat.
-- Controleer of de uitvoermap schrijfbaar is voor uw toepassing.
-- Controleer of er uitzonderingen zijn bij het renderen, zodat u problemen met specifieke tekenbestanden kunt diagnosticeren.
+- **Build‑pad** – Zorg ervoor dat de GroupDocs‑JAR‑bestanden op het classpath staan.  
+- **Machtigingen** – De uitvoermap moet beschrijfbaar zijn voor het Java‑proces.  
+- **Uitzonderingen** – Als je `ViewerException` ziet, controleer dan dubbel of het DWG‑bestand niet corrupt is en of de juiste licentie is toegepast.
 
-## Praktische toepassingen
-Het opsplitsen van CAD-tekeningen in tegels kan nuttig zijn in:
-1. **Webmapping**: Grote architectuurplannen efficiënt laden op webkaarten zonder de serverbronnen te overbelasten.
-2. **Documentbeheersystemen**: Eenvoudiger beheer en snellere toegang tot specifieke delen van grote tekeningen.
-3. **Mobiele apps**: Verbeter de prestaties door alleen de benodigde delen van een tekening te renderen op basis van gebruikersinteractie.
+## Veelvoorkomende gebruikssituaties voor het splitsen van CAD‑tegels
+1. **Web‑mapping** – Laad alleen het zichtbare gedeelte van een plattegrond terwijl een gebruiker pan/zoomt.  
+2. **Documentbeheer** – Sla elke tegel afzonderlijk op voor snellere preview‑generatie.  
+3. **Mobiel bekijken** – Verminder bandbreedte door alleen de tegels te downloaden die nodig zijn voor het huidige scherm.
 
-## Prestatieoverwegingen
-Om de prestaties van uw applicatie te optimaliseren:
-- Gebruik tegels strategisch om een balans te vinden tussen details en verwerkingstijd.
-- Houd het geheugengebruik in de gaten, vooral wanneer u met zeer grote tekeningen werkt.
-- Maak gebruik van de best practices in Java voor efficiënt geheugenbeheer, zoals het gebruik van try-with-resources voor het automatisch opschonen van bronnen.
+## Prestatie‑overwegingen
+- **Tegelgrootte** – Grotere tegels betekenen minder bestanden maar langzamere rendering; vind een balans op basis van je UI‑behoeften.  
+- **Geheugenmonitoring** – Gebruik Java‑profileringstools (bijv. VisualVM) om het heap‑gebruik te observeren bij het verwerken van zeer grote tekeningen.  
+- **Resource‑opschoning** – Het hierboven getoonde try‑with‑resources‑patroon maakt native resources automatisch vrij.
 
-## Conclusie
-Je hebt nu geleerd hoe je CAD-tekeningen in tegels kunt opsplitsen met GroupDocs.Viewer voor Java. Deze aanpak verbetert niet alleen de renderingprestaties, maar vergroot ook de bruikbaarheid van je applicatie bij het werken met grote documentbestanden.
+## Veelgestelde vragen
 
-**Volgende stappen:**
-- Experimenteer met verschillende tegelformaten op basis van specifieke gebruiksgevallen.
-- Ontdek andere functies van GroupDocs.Viewer om uw documentverwerkingsmogelijkheden verder te verbeteren.
+**V: Kan ik andere bestandstypen (PDF, afbeeldingen) in tegels splitsen met dezelfde aanpak?**  
+A: Ja. GroupDocs Viewer ondersteunt veel formaten; je hoeft alleen de bijbehorende options‑klasse te gebruiken (bijv. `PdfViewOptions`).
 
-Klaar om deze oplossing in uw project te implementeren? Probeer het zelf en zie de verbeteringen!
+**V: Hoe wijzig ik de kwaliteit van de uitvoerafbeelding?**  
+A: Pas `viewOptions.setResolution(int dpi)` aan of stel compressie‑instellingen in op het `PngOptions`‑object.
 
-## FAQ-sectie
-1. **Wat zijn enkele veelvoorkomende fouten bij het gebruik van GroupDocs.Viewer Java?**
-   - Veelvoorkomende problemen zijn onder meer onjuiste bestandspaden, onvoldoende machtigingen voor uitvoermappen of ontbrekende afhankelijkheden.
-2. **Kan ik andere documenttypen met deze methode in tegels splitsen?**
-   - Hoewel het voorbeeld zich richt op CAD-tekeningen, kunnen vergelijkbare principes worden toegepast op andere documentformaten die door GroupDocs.Viewer worden ondersteund.
-3. **Hoe kan ik grotere bestanden efficiënt verwerken?**
-   - Overweeg het gebruik van multithreading of asynchrone verwerking in Java om het renderen van grote bestanden te beheren.
-4. **Is er ondersteuning voor het aanpassen van de kwaliteit van de uitvoerafbeelding?**
-   - Ja, u kunt de PNGViewOptions-instellingen aanpassen om de resolutie en kwaliteit van de gerenderde afbeeldingen te wijzigen.
-5. **Wat moet ik doen als mijn applicatie tijdens het renderen geen geheugen meer heeft?**
-   - Optimaliseer uw tegelgroottes en overweeg de heapgrootte van Java te vergroten met VM-opties zoals `-Xmx` voor meer beschikbaar geheugen.
+**V: Mijn applicatie raakt zonder geheugen bij zeer grote DWG‑bestanden — wat kan ik doen?**  
+A: Verklein de tegelafmetingen, vergroot de JVM‑heap (`-Xmx`), of render tegels sequentieel in afzonderlijke `Viewer`‑instanties.
+
+**V: Is het mogelijk om tegels asynchroon te renderen?**  
+A: Absoluut. Wikkel elke tegel‑renderaanroep in een `CompletableFuture` of gebruik een executor‑service om de werklast te paralleliseren.
+
+**V: Heb ik een aparte licentie nodig voor elke tegel?**  
+A: Nee. Eén geldige GroupDocs Viewer‑licentie dekt alle renderbewerkingen binnen je applicatie.
 
 ## Bronnen
 - [Documentatie](https://docs.groupdocs.com/viewer/java/)
-- [API-referentie](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer downloaden](https://releases.groupdocs.com/viewer/java/)
+- [API‑referentie](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Koop een licentie](https://purchase.groupdocs.com/buy)
-- [Gratis proefperiode](https://releases.groupdocs.com/viewer/java/)
+- [Gratis proefversie](https://releases.groupdocs.com/viewer/java/)
 - [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)
-- [Ondersteuningsforum](https://forum.groupdocs.com/c/viewer/9)
+- [Supportforum](https://forum.groupdocs.com/c/viewer/9)
 
-Door deze handleiding te volgen, bent u goed toegerust om efficiënte documentrendering te implementeren in uw Java-applicaties met behulp van GroupDocs.Viewer. Veel plezier met coderen!
+---
+
+**Laatst bijgewerkt:** 2026-04-01  
+**Getest met:** GroupDocs.Viewer 25.2 for Java  
+**Auteur:** GroupDocs  
+
+---

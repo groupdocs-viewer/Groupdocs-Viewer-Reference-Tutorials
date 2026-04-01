@@ -1,35 +1,45 @@
 ---
-"date": "2025-04-24"
-"description": "Java용 GroupDocs.Viewer를 사용하여 대용량 CAD 도면을 효율적으로 타일로 분할하는 방법을 알아보고, 애플리케이션의 성능을 향상시키고 관리를 용이하게 하세요."
-"title": "GroupDocs.Viewer Java를 사용하여 CAD 도면을 타일로 분할하여 효율적인 렌더링"
-"url": "/ko/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: GroupDocs Viewer for Java를 사용하여 CAD 도면을 타일로 분할하는 방법을 배우고, 렌더링 성능을 향상시키며
+  대용량 파일 처리를 간소화하세요.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: GroupDocs Viewer를 사용하여 CAD 도면을 타일로 분할하는 방법
 type: docs
+url: /ko/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer Java를 사용하여 CAD 도면을 타일로 분할
 
-## 소개
-Java 애플리케이션에서 대용량 CAD 도면을 효율적으로 관리하고 렌더링하는 데 어려움을 겪고 계신가요? 이 가이드에서는 GroupDocs.Viewer for Java를 사용하여 이러한 도면을 관리 가능한 타일로 분할하는 방법을 보여줍니다. 도면을 작은 섹션으로 분할하면 성능과 처리 편의성을 크게 향상시킬 수 있습니다.
+# GroupDocs Viewer로 CAD 도면을 타일로 분할하는 방법
 
-**배울 내용:**
-- Java용 GroupDocs.Viewer 설정 및 구성.
-- CAD 도면을 타일로 분할하는 단계별 프로세스입니다.
-- 주요 구성 및 최적화 기술.
-- 실제적 응용 및 통합 가능성.
+CAD 파일을 더 작고 관리하기 쉬운 조각으로 **분할하는 방법**을 궁금해 하신다면, 바로 여기입니다. 이 튜토리얼에서는 **GroupDocs Viewer for Java**를 사용해 대형 CAD 도면을 타일로 분할하는 정확한 단계를 안내합니다. 끝까지 따라오시면 렌더링 속도가 향상되고 메모리 사용량이 감소하며 웹 또는 모바일 애플리케이션에서 도면을 보다 쉽게 표시할 수 있는 준비된 솔루션을 얻을 수 있습니다.
 
-먼저, 필요한 전제 조건을 갖춘 환경이 준비되었는지 확인해 보겠습니다.
+![Split CAD Drawings with GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
 
-## 필수 조건
-시작하기 전에 다음 사항을 확인하세요.
+## 빠른 답변
+- **“CAD 분할”은 어떤 효과가 있나요?** 대용량 도면을 더 작은 이미지(타일)로 나누어 로드 속도가 빨라지고 메모리 사용량이 감소합니다.  
+- **타일 형식은 무엇을 사용하나요?** 기본적으로 PNG 파일이 생성되며, Viewer 옵션을 통해 다른 형식도 지원됩니다.  
+- **라이선스가 필요합니까?** 개발 단계에서는 무료 체험판으로 충분하지만, 프로덕션에서는 유료 라이선스가 필요합니다.  
+- **타일 크기를 변경할 수 있나요?** 예 – `tileWidth`와 `tileHeight` 계산식을 조정하여 원하는 크기로 설정할 수 있습니다.  
+- **이 방법은 스레드‑안전한가요?** 각 타일을 별도의 `Viewer` 인스턴스로 `try‑with‑resources`와 함께 렌더링하면 동시 실행에 안전합니다.
 
-- **도서관**: Java용 GroupDocs.Viewer(버전 25.2 이상).
-- **환경 설정**: 작동하는 Java 개발 키트(JDK)와 IntelliJ IDEA나 Eclipse와 같은 통합 개발 환경.
-- **지식 전제 조건**Java 프로그래밍에 대한 기본적인 이해와 Maven 빌드 도구에 대한 익숙함.
+## “CAD 분할”이란 무엇인가?
+CAD 분할은 하나의 크고 복잡한 CAD 도면을 여러 개의 직사각형 구역(타일)으로 나누는 것을 의미합니다. 각 타일은 독립적으로 렌더링되므로 사용자가 실제로 필요로 하는 부분만 로드할 수 있어 웹 지도, 문서 포털, 모바일 뷰어 등에 최적화됩니다.
 
-## Java용 GroupDocs.Viewer 설정
-GroupDocs.Viewer를 사용하려면 프로젝트에 종속성으로 추가하세요. Maven을 사용하는 경우:
+## 왜 GroupDocs Viewer for Java를 사용하나요?
+GroupDocs Viewer는 DWG, DXF, DWF 등 100개 이상의 파일 형식을 즉시 지원합니다. 타일 API를 통해 정확한 좌표를 지정할 수 있어 전체 파일을 먼저 처리하지 않고도 필요한 영역만 렌더링할 수 있습니다. 이는 CPU 사용량을 절감하고 대역폭을 줄이며 보다 부드러운 사용자 경험을 제공합니다.
 
-**Maven 구성:**
+## 사전 요구 사항
+- **라이브러리**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: 최신 Java Development Kit (Java 8 이상).  
+- **IDE**: IntelliJ IDEA, Eclipse 또는 기타 Java‑호환 IDE.  
+- **빌드 도구**: Maven (다른 빌드 도구도 의존성을 추가하면 사용 가능).
+
+## GroupDocs.Viewer for Java 설정
+`pom.xml`에 GroupDocs 저장소와 의존성을 추가합니다:
+
 ```xml
 <repositories>
    <repository>
@@ -47,44 +57,43 @@ GroupDocs.Viewer를 사용하려면 프로젝트에 종속성으로 추가하세
 </dependencies>
 ```
 
-### 라이센스 취득
-GroupDocs.Viewer는 전체 기능을 체험해 볼 수 있는 무료 평가판 라이선스를 제공합니다.
-- **무료 체험**: 방문하다 [GroupDocs 무료 평가판](https://releases.groupdocs.com/viewer/java/) 라이브러리를 다운로드하고 테스트하세요.
-- **임시 면허**임시면허 신청 [임시 면허 페이지](https://purchase.groupdocs.com/temporary-license/).
-- **구입**: 전체 라이센스를 구매하세요 [구매 페이지](https://purchase.groupdocs.com/buy).
+### 라이선스 획득
+GroupDocs.Viewer는 평가용 무료 체험 라이선스를 제공합니다:
 
-### 기본 초기화 및 설정
-Java 애플리케이션에서 GroupDocs.Viewer를 초기화하려면:
+- **무료 체험**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)에서 라이브러리를 다운로드하세요.  
+- **임시 라이선스**: [Temporary License Page](https://purchase.groupdocs.com/temporary-license/)에서 신청하세요.  
+- **정식 라이선스**: [Purchase Page](https://purchase.groupdocs.com/buy)에서 프로덕션 라이선스를 구매하세요.
+
+### 기본 초기화
+라이브러리가 정상적으로 로드되는지 확인하기 위해 간단한 `Viewer` 인스턴스를 생성합니다:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // 렌더링 코드를 여기에 입력하세요.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-설정이 완료되었으니 기능을 구현해보겠습니다.
 
-## 구현 가이드
+## CAD 도면을 타일로 분할하는 단계별 가이드
 
-### 도면을 타일로 분할
-이 섹션에서는 CAD 도면을 더 효율적인 처리 및 렌더링을 위해 작은 타일로 분할하는 방법을 보여줍니다. 각 타일은 원래 크기의 4분의 1 크기로 분할됩니다.
+### 단계 1: 출력 디렉터리 정의
+각 타일을 별도의 PNG 파일로 저장합니다. 유틸리티 메서드를 사용하면 경로 로직을 깔끔하고 재사용 가능하게 유지할 수 있습니다.
 
-#### 1단계: 출력 디렉토리 경로 정의
-렌더링된 이미지가 저장될 위치를 정의하는 것부터 시작하세요.
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-이 설정은 경로를 가져오기 위해 유틸리티 메서드를 사용하여 재사용성과 명확성을 보장합니다.
 
-#### 2단계: 보기 옵션 구성
-각 섹션을 별도로 렌더링하기 위한 옵션을 설정합니다.
+### 단계 2: 뷰 옵션 구성
+렌더링 형식을 PNG로 설정하고, 모든 페이지를 미리 로드하지 않도록 지정하면 메모리를 절약할 수 있습니다.
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +101,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-이 코드 조각은 모든 페이지를 한 번에 처리하지 않고 PNG 형식으로 렌더링을 구성합니다.
 
-#### 3단계: 타일 치수 계산
-각 타일의 크기를 확인하세요.
+### 단계 3: 타일 크기 계산
+먼저 도면의 원본 너비와 높이를 가져온 뒤, 이를 네 개의 동일한 사분면으로 나눕니다.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +113,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// 각 타일은 전체 크기의 4분의 1입니다.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +125,9 @@ Tile[] tiles = {
 };
 ```
 
-#### 4단계: 타일 렌더링 및 저장
-계산된 각 타일을 렌더링 옵션에 추가하고 렌더링합니다.
+### 단계 4: 타일 렌더링 및 저장
+계산된 타일을 렌더링 옵션에 추가하고 `Viewer`가 PNG 파일을 생성하도록 합니다.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +135,50 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-마지막 단계에서는 지정된 타일을 기반으로 문서를 렌더링하고 각각을 별도의 PNG 파일로 저장합니다.
 
 ### 문제 해결 팁
-- 프로젝트의 빌드 경로에 GroupDocs.Viewer JAR 파일이 포함되어 있는지 확인하세요.
-- 귀하의 애플리케이션이 출력 디렉토리에 쓸 수 있는지 확인하세요.
-- 특정 도면 파일의 문제를 진단하려면 렌더링에서 예외가 있는지 확인하세요.
+- **빌드 경로** – GroupDocs JAR 파일이 클래스패스에 포함되어 있는지 확인하세요.  
+- **권한** – 출력 폴더가 Java 프로세스에 의해 쓰기 가능해야 합니다.  
+- **예외** – `ViewerException`이 발생하면 DWG 파일이 손상되지 않았는지, 올바른 라이선스가 적용되었는지 다시 확인하세요.
 
-## 실제 응용 프로그램
-CAD 도면을 타일로 분할하면 다음과 같은 경우에 유용할 수 있습니다.
-1. **웹 매핑**: 서버 리소스에 과부하를 주지 않고 대규모 건축 설계도를 웹 맵에 효율적으로 로딩합니다.
-2. **문서 관리 시스템**: 대규모 도면의 특정 섹션에 대한 관리가 더 쉬워지고 더 빠르게 접근할 수 있습니다.
-3. **모바일 앱**: 사용자 상호작용을 기반으로 도면의 필요한 부분만 렌더링하여 성능을 향상시킵니다.
+## CAD 타일 분할의 일반적인 사용 사례
+1. **웹 매핑** – 사용자가 팬/줌할 때 화면에 보이는 부분만 로드합니다.  
+2. **문서 관리** – 각 타일을 별도로 저장해 미리보기 생성 속도를 높입니다.  
+3. **모바일 뷰잉** – 현재 화면에 필요한 타일만 다운로드해 대역폭을 절감합니다.
 
 ## 성능 고려 사항
-애플리케이션의 성능을 최적화하려면:
-- 세부 사항과 처리 시간의 균형을 맞추기 위해 타일을 전략적으로 활용하세요.
-- 특히 매우 큰 그림을 다룰 때 메모리 사용량을 모니터링합니다.
-- try-with-resources를 사용하여 리소스를 자동으로 정리하는 등 Java의 모범 사례를 적용하여 메모리 관리를 효율적으로 관리합니다.
+- **타일 크기** – 큰 타일은 파일 수를 줄이지만 렌더링 속도가 느려집니다. UI 요구에 맞는 균형을 찾으세요.  
+- **메모리 모니터링** – VisualVM 같은 Java 프로파일링 도구를 사용해 대형 도면 처리 시 힙 사용량을 관찰하세요.  
+- **리소스 정리** – 위에서 보여준 `try‑with‑resources` 패턴이 네이티브 리소스를 자동으로 해제합니다.
 
-## 결론
-이제 Java용 GroupDocs.Viewer를 사용하여 CAD 도면을 타일로 분할하는 방법을 알아보았습니다. 이 방법은 렌더링 성능을 향상시킬 뿐만 아니라 대용량 문서 파일을 처리할 때 애플리케이션의 사용성도 향상시킵니다.
+## 자주 묻는 질문
 
-**다음 단계:**
-- 특정 사용 사례에 따라 다양한 타일 크기를 실험해 보세요.
-- GroupDocs.Viewer가 제공하는 다른 기능을 살펴보고 문서 처리 역량을 더욱 향상시켜 보세요.
+**Q: 같은 방법으로 다른 파일 형식(PDF, 이미지 등)을 타일로 분할할 수 있나요?**  
+A: 예. GroupDocs Viewer는 다양한 형식을 지원하므로 해당 옵션 클래스(예: `PdfViewOptions`)를 사용하면 됩니다.
 
-이 솔루션을 프로젝트에 구현할 준비가 되셨나요? 직접 사용해 보고 개선 효과를 확인해 보세요!
+**Q: 출력 이미지 품질을 어떻게 조정하나요?**  
+A: `viewOptions.setResolution(int dpi)`를 조정하거나 `PngOptions` 객체의 압축 설정을 변경하세요.
 
-## FAQ 섹션
-1. **GroupDocs.Viewer Java를 사용할 때 흔히 발생하는 오류는 무엇입니까?**
-   - 일반적인 문제로는 잘못된 파일 경로, 출력 디렉터리에 대한 권한 부족, 종속성 누락 등이 있습니다.
-2. **이 방법을 사용하면 다른 유형의 문서를 타일로 나눌 수 있나요?**
-   - 이 예제는 CAD 도면에 초점을 맞추고 있지만, GroupDocs.Viewer가 지원하는 다른 문서 형식에도 비슷한 원칙을 적용할 수 있습니다.
-3. **대용량 파일을 효율적으로 처리하려면 어떻게 해야 하나요?**
-   - 대용량 파일 렌더링을 관리하려면 Java에서 멀티스레딩이나 비동기 처리를 사용하는 것을 고려하세요.
-4. **출력 이미지 품질을 사용자 정의하는 기능이 지원되나요?**
-   - 네, PNGViewOptions 설정을 조정하여 렌더링된 이미지의 해상도와 품질을 변경할 수 있습니다.
-5. **렌더링 중에 애플리케이션의 메모리가 부족하면 어떻게 해야 하나요?**
-   - 타일 크기를 최적화하고 VM 옵션과 같은 Java 힙 크기를 늘리는 것을 고려하세요. `-Xmx` 사용 가능한 메모리를 늘리려면.
+**Q: 매우 큰 DWG 파일에서 메모리 부족 오류가 발생합니다—어떻게 해결할 수 있나요?**  
+A: 타일 크기를 줄이거나 JVM 힙(`-Xmx`)을 늘리거나, 별도의 `Viewer` 인스턴스로 순차적으로 타일을 렌더링하세요.
 
-## 자원
-- [선적 서류 비치](https://docs.groupdocs.com/viewer/java/)
-- [API 참조](https://reference.groupdocs.com/viewer/java/)
+**Q: 타일을 비동기적으로 렌더링할 수 있나요?**  
+A: 가능합니다. 각 타일 렌더링 호출을 `CompletableFuture`로 감싸거나 ExecutorService를 사용해 작업을 병렬화하세요.
+
+**Q: 타일마다 별도의 라이선스가 필요합니까?**  
+A: 아닙니다. 하나의 유효한 GroupDocs Viewer 라이선스로 애플리케이션 내 모든 렌더링 작업을 커버합니다.
+
+## 리소스
+- [문서](https://docs.groupdocs.com/viewer/java/)
+- [API 레퍼런스](https://reference.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer 다운로드](https://releases.groupdocs.com/viewer/java/)
-- [라이센스 구매](https://purchase.groupdocs.com/buy)
+- [라이선스 구매](https://purchase.groupdocs.com/buy)
 - [무료 체험](https://releases.groupdocs.com/viewer/java/)
-- [임시 면허](https://purchase.groupdocs.com/temporary-license/)
+- [임시 라이선스](https://purchase.groupdocs.com/temporary-license/)
 - [지원 포럼](https://forum.groupdocs.com/c/viewer/9)
 
-이 가이드를 따라 하면 GroupDocs.Viewer를 사용하여 Java 애플리케이션에서 효율적인 문서 렌더링을 구현할 수 있습니다. 즐거운 코딩 되세요!
+---
+
+**마지막 업데이트:** 2026-04-01  
+**테스트 환경:** GroupDocs.Viewer 25.2 for Java  
+**작성자:** GroupDocs

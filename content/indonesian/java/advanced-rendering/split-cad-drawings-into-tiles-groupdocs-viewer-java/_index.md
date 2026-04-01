@@ -1,35 +1,45 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara membagi gambar CAD besar menjadi petak secara efisien menggunakan GroupDocs.Viewer untuk Java, yang meningkatkan kinerja dan kemudahan pengelolaan dalam aplikasi Anda."
-"title": "Membagi Gambar CAD menjadi Petak Menggunakan GroupDocs.Viewer Java untuk Rendering yang Efisien"
-"url": "/id/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Pelajari cara memecah gambar CAD menjadi ubin menggunakan GroupDocs Viewer
+  untuk Java, meningkatkan kinerja rendering dan menyederhanakan penanganan file besar.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Cara Membagi Gambar CAD menjadi Ubin dengan GroupDocs Viewer
 type: docs
+url: /id/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# Membagi Gambar CAD menjadi Ubin dengan GroupDocs.Viewer Java
 
-## Perkenalan
-Kesulitan mengelola dan merender gambar CAD yang besar secara efisien di aplikasi Java Anda? Panduan ini akan menunjukkan cara menggunakan GroupDocs.Viewer untuk Java guna membagi gambar-gambar ini menjadi petak-petak yang mudah dikelola. Dengan membagi gambar menjadi beberapa bagian yang lebih kecil, Anda dapat meningkatkan kinerja dan kemudahan penanganan secara signifikan.
+# Cara Membagi Gambar CAD menjadi Tile dengan GroupDocs Viewer
 
-**Apa yang Akan Anda Pelajari:**
-- Menyiapkan dan mengonfigurasi GroupDocs.Viewer untuk Java.
-- Proses langkah demi langkah untuk membagi gambar CAD menjadi ubin.
-- Konfigurasi utama dan teknik pengoptimalan.
-- Aplikasi praktis dan kemungkinan integrasi.
+Jika Anda bertanya-tanya **how to split CAD** file menjadi bagian yang lebih kecil dan lebih mudah dikelola, Anda berada di tempat yang tepat. Dalam tutorial ini kami akan menjelaskan langkah‑langkah tepat untuk membagi gambar CAD besar menjadi tile menggunakan **GroupDocs Viewer for Java**. Pada akhir tutorial Anda akan memiliki solusi siap pakai yang meningkatkan kecepatan rendering, mengurangi konsumsi memori, dan memudahkan penampilan gambar dalam aplikasi web atau seluler.
 
-Mari kita mulai dengan memastikan lingkungan Anda siap dengan prasyarat yang diperlukan.
+![Split CAD Drawings with GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
+
+## Jawaban Cepat
+- **Apa yang dicapai dengan “splitting CAD”?** Itu memecah gambar besar menjadi gambar‑gambar kecil (tile) yang dimuat lebih cepat dan menggunakan memori lebih sedikit.  
+- **Format apa yang digunakan untuk tile?** File PNG dihasilkan secara default, namun format lain didukung melalui opsi Viewer.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi berbayar diperlukan untuk produksi.  
+- **Bisakah saya mengubah ukuran tile?** Ya – sesuaikan perhitungan `tileWidth` dan `tileHeight` sesuai kebutuhan Anda.  
+- **Apakah pendekatan ini thread‑safe?** Merender setiap tile dalam instance `Viewer` terpisah dengan try‑with‑resources aman untuk eksekusi bersamaan.
+
+## Apa itu “splitting CAD”?
+Splitting CAD mengacu pada pembagian satu gambar CAD yang sering kali sangat besar menjadi beberapa bagian persegi panjang (tile). Setiap tile dirender secara independen, memungkinkan Anda memuat hanya bagian yang benar‑benar dibutuhkan pengguna—sempurna untuk peta web, portal dokumen, dan penampil seluler.
+
+## Mengapa Menggunakan GroupDocs Viewer untuk Java?
+GroupDocs Viewer menyediakan dukungan out‑of‑the‑box untuk lebih dari 100 format file, termasuk DWG, DXF, dan DWF. API tile‑nya memungkinkan Anda menentukan koordinat tepat, sehingga Anda dapat merender area yang Anda inginkan tanpa harus memproses seluruh file terlebih dahulu. Ini menghemat siklus CPU, mengurangi bandwidth, dan memberikan pengalaman pengguna yang lebih mulus.
 
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda memiliki:
-
-- **Perpustakaan**: GroupDocs.Viewer untuk Java (versi 25.2 atau yang lebih baru).
-- **Pengaturan Lingkungan**: Java Development Kit (JDK) yang berfungsi dan lingkungan pengembangan terintegrasi seperti IntelliJ IDEA atau Eclipse.
-- **Prasyarat Pengetahuan**Pemahaman dasar tentang pemrograman Java dan keakraban dengan alat pembuat Maven.
+- **Perpustakaan**: GroupDocs.Viewer untuk Java ≥ 25.2.  
+- **JDK**: Java Development Kit terbaru apa pun (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse, atau IDE lain yang kompatibel dengan Java.  
+- **Alat Build**: Maven (alat build lain dapat digunakan selama dependensi ditambahkan).  
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
-Untuk menggunakan GroupDocs.Viewer, tambahkan sebagai dependensi dalam proyek Anda. Jika Anda menggunakan Maven:
+Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Anda:
 
-**Konfigurasi Maven:**
 ```xml
 <repositories>
    <repository>
@@ -48,43 +58,42 @@ Untuk menggunakan GroupDocs.Viewer, tambahkan sebagai dependensi dalam proyek An
 ```
 
 ### Akuisisi Lisensi
-GroupDocs.Viewer menawarkan lisensi uji coba gratis untuk mengeksplorasi kemampuannya secara penuh:
-- **Uji Coba Gratis**: Mengunjungi [Uji Coba Gratis GroupDocs](https://releases.groupdocs.com/viewer/java/) untuk mengunduh dan menguji perpustakaan.
-- **Lisensi Sementara**Ajukan permohonan lisensi sementara di [Halaman Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/).
-- **Pembelian**: Beli lisensi penuh di mereka [Halaman Pembelian](https://purchase.groupdocs.com/buy).
+GroupDocs.Viewer menawarkan lisensi percobaan gratis untuk evaluasi:
 
-### Inisialisasi dan Pengaturan Dasar
-Untuk menginisialisasi GroupDocs.Viewer di aplikasi Java Anda:
+- **Free Trial**: Kunjungi [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) untuk mengunduh perpustakaan.  
+- **Temporary License**: Ajukan di [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Full License**: Beli lisensi produksi pada [Purchase Page](https://purchase.groupdocs.com/buy).
+
+### Inisialisasi Dasar
+Buat instance `Viewer` sederhana untuk memverifikasi bahwa perpustakaan dimuat dengan benar:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Kode rendering Anda ada di sini.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Setelah pengaturan selesai, mari lanjutkan untuk mengimplementasikan fiturnya.
 
-## Panduan Implementasi
+## Panduan Langkah‑ demi‑ Langkah Membagi Gambar CAD menjadi Tile
 
-### Membagi Gambar Menjadi Ubin
-Bagian ini menunjukkan cara membagi gambar CAD menjadi petak-petak yang lebih kecil untuk penanganan dan rendering yang lebih efisien. Setiap petak akan berukuran seperempat dari ukuran aslinya.
+### Langkah 1: Tentukan Direktori Output
+Kami akan menyimpan setiap tile sebagai file PNG terpisah. Menggunakan metode utilitas menjaga logika path tetap bersih dan dapat digunakan kembali.
 
-#### Langkah 1: Tentukan Jalur Direktori Output
-Mulailah dengan menentukan di mana gambar yang Anda render akan disimpan:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Pengaturan ini menggunakan metode utilitas untuk mendapatkan jalur, memastikan penggunaan ulang dan kejelasan.
 
-#### Langkah 2: Konfigurasikan Opsi Tampilan
-Siapkan opsi untuk merender setiap bagian secara terpisah:
+### Langkah 2: Konfigurasikan Opsi Tampilan
+Setel format rendering ke PNG dan beri tahu viewer untuk tidak memuat pra‑semua halaman (yang menghemat memori).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +101,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Potongan kode ini mengonfigurasi rendering ke format PNG tanpa memproses semua halaman sekaligus.
 
-#### Langkah 3: Hitung Dimensi Ubin
-Tentukan dimensi untuk setiap ubin:
+### Langkah 3: Hitung Dimensi Tile
+Pertama kami memperoleh lebar dan tinggi asli gambar, kemudian membaginya menjadi empat kuadran yang sama besar.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +113,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Setiap ubin berukuran seperempat dari ukuran total.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +125,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Langkah 4: Render dan Simpan Ubin
-Tambahkan setiap petak terhitung ke opsi render dan render:
+### Langkah 4: Render dan Simpan Tile
+Tambahkan tile yang telah dihitung ke opsi rendering dan biarkan `Viewer` menghasilkan file PNG.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +135,50 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-Langkah terakhir ini menyajikan dokumen berdasarkan petak yang ditentukan, dan menyimpan setiap petak sebagai berkas PNG terpisah.
 
 ### Tips Pemecahan Masalah
-- Pastikan jalur pembuatan proyek Anda menyertakan file JAR GroupDocs.Viewer.
-- Verifikasi bahwa direktori keluaran dapat ditulis oleh aplikasi Anda.
-- Periksa adanya pengecualian pada rendering untuk mendiagnosis masalah pada berkas gambar tertentu.
+- **Build path** – Pastikan file JAR GroupDocs berada di classpath.  
+- **Permissions** – Folder output harus dapat ditulisi oleh proses Java.  
+- **Exceptions** – Jika Anda melihat `ViewerException`, periksa kembali bahwa file DWG tidak rusak dan lisensi yang benar telah diterapkan.
 
-## Aplikasi Praktis
-Membagi gambar CAD menjadi petak dapat bermanfaat dalam:
-1. **Pemetaan Web**: Memuat rencana arsitektur besar secara efisien pada peta web tanpa membebani sumber daya server.
-2. **Sistem Manajemen Dokumen**: Manajemen lebih mudah dan akses lebih cepat ke bagian tertentu dari gambar besar.
-3. **Aplikasi Seluler**: Meningkatkan kinerja dengan hanya merender bagian gambar yang diperlukan berdasarkan interaksi pengguna.
+## Kasus Penggunaan Umum untuk Membagi Tile CAD
+1. **Web Mapping** – Muat hanya bagian yang terlihat dari denah saat pengguna menggeser/men‑zoom.  
+2. **Document Management** – Simpan setiap tile secara terpisah untuk pembuatan pratinjau yang lebih cepat.  
+3. **Mobile Viewing** – Kurangi bandwidth dengan mengunduh hanya tile yang diperlukan untuk layar saat ini.
 
 ## Pertimbangan Kinerja
-Untuk mengoptimalkan kinerja aplikasi Anda:
-- Gunakan ubin secara strategis untuk menyeimbangkan antara detail dan waktu pemrosesan.
-- Pantau penggunaan memori, terutama saat menangani gambar yang sangat besar.
-- Terapkan praktik terbaik di Java untuk manajemen memori yang efisien, seperti menggunakan try-with-resources untuk pembersihan sumber daya otomatis.
+- **Tile Size** – Tile yang lebih besar berarti lebih sedikit file tetapi rendering lebih lambat; temukan keseimbangan berdasarkan kebutuhan UI Anda.  
+- **Memory Monitoring** – Gunakan alat profil Java (misalnya VisualVM) untuk memantau penggunaan heap saat memproses gambar sangat besar.  
+- **Resource Cleanup** – Pola try‑with‑resources yang ditunjukkan di atas secara otomatis melepaskan sumber daya native.
 
-## Kesimpulan
-Anda kini telah mempelajari cara membagi gambar CAD menjadi petak-petak menggunakan GroupDocs.Viewer untuk Java. Pendekatan ini tidak hanya meningkatkan kinerja rendering tetapi juga meningkatkan kegunaan aplikasi Anda saat menangani berkas dokumen berukuran besar.
+## Pertanyaan yang Sering Diajukan
 
-**Langkah Berikutnya:**
-- Bereksperimenlah dengan berbagai ukuran ubin berdasarkan kasus penggunaan tertentu.
-- Jelajahi fitur lain yang ditawarkan oleh GroupDocs.Viewer untuk lebih meningkatkan kemampuan pemrosesan dokumen Anda.
+**Q: Bisakah saya membagi tipe file lain (PDF, gambar) menjadi tile menggunakan pendekatan yang sama?**  
+A: Ya. GroupDocs Viewer mendukung banyak format; Anda hanya perlu menggunakan kelas opsi yang sesuai (misalnya `PdfViewOptions`).
 
-Siap menerapkan solusi ini dalam proyek Anda? Cobalah dan lihat sendiri peningkatannya!
+**Q: Bagaimana cara mengubah kualitas gambar output?**  
+A: Sesuaikan `viewOptions.setResolution(int dpi)` atau atur pengaturan kompresi pada objek `PngOptions`.
 
-## Bagian FAQ
-1. **Apa saja kesalahan umum saat menggunakan GroupDocs.Viewer Java?**
-   - Masalah umum meliputi jalur file yang salah, izin yang tidak memadai pada direktori keluaran, atau dependensi yang hilang.
-2. **Bisakah saya membagi jenis dokumen lain menjadi beberapa ubin dengan metode ini?**
-   - Sementara contoh tersebut berfokus pada gambar CAD, prinsip serupa dapat diterapkan pada format dokumen lain yang didukung oleh GroupDocs.Viewer.
-3. **Bagaimana cara menangani berkas yang lebih besar secara efisien?**
-   - Pertimbangkan untuk menggunakan multi-threading atau pemrosesan async di Java untuk mengelola rendering file besar.
-4. **Apakah ada dukungan untuk menyesuaikan kualitas gambar keluaran?**
-   - Ya, Anda dapat menyesuaikan pengaturan PNGViewOptions untuk mengubah resolusi dan kualitas gambar yang ditampilkan.
-5. **Apa yang harus saya lakukan jika aplikasi saya kehabisan memori selama rendering?**
-   - Optimalkan ukuran ubin Anda dan pertimbangkan untuk meningkatkan ukuran tumpukan Java dengan opsi VM seperti `-Xmx` untuk mendapatkan lebih banyak memori yang tersedia.
+**Q: Aplikasi saya kehabisan memori pada file DWG yang sangat besar—apa yang dapat saya lakukan?**  
+A: Kurangi dimensi tile, tingkatkan heap JVM (`-Xmx`), atau render tile secara berurutan dalam instance `Viewer` terpisah.
 
-## Sumber daya
+**Q: Apakah memungkinkan merender tile secara asynchronous?**  
+A: Tentu saja. Bungkus setiap pemanggilan rendering tile dalam `CompletableFuture` atau gunakan layanan executor untuk memparallelkan beban kerja.
+
+**Q: Apakah saya memerlukan lisensi terpisah untuk setiap tile?**  
+A: Tidak. Satu lisensi GroupDocs Viewer yang valid mencakup semua operasi rendering dalam aplikasi Anda.
+
+## Sumber Daya
 - [Dokumentasi](https://docs.groupdocs.com/viewer/java/)
 - [Referensi API](https://reference.groupdocs.com/viewer/java/)
 - [Unduh GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Beli Lisensi](https://purchase.groupdocs.com/buy)
-- [Uji Coba Gratis](https://releases.groupdocs.com/viewer/java/)
+- [Trial Gratis](https://releases.groupdocs.com/viewer/java/)
 - [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
 - [Forum Dukungan](https://forum.groupdocs.com/c/viewer/9)
 
-Dengan mengikuti panduan ini, Anda akan siap menerapkan pemrosesan dokumen yang efisien dalam aplikasi Java Anda menggunakan GroupDocs.Viewer. Selamat membuat kode!
+---
+
+**Terakhir Diperbarui:** 2026-04-01  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
+**Penulis:** GroupDocs
