@@ -1,35 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak efektywnie dzielić duże rysunki CAD na kafelki za pomocą GroupDocs.Viewer dla Java, zwiększając wydajność i ułatwiając zarządzanie aplikacjami."
-"title": "Podziel rysunki CAD na kafelki za pomocą GroupDocs.Viewer Java w celu wydajnego renderowania"
-"url": "/pl/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Dowiedz się, jak podzielić rysunki CAD na kafelki przy użyciu GroupDocs
+  Viewer for Java, zwiększając wydajność renderowania i upraszczając obsługę dużych
+  plików.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Jak podzielić rysunki CAD na kafelki przy użyciu GroupDocs Viewer
 type: docs
+url: /pl/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# Podziel rysunki CAD na kafelki za pomocą GroupDocs.Viewer Java
 
-## Wstęp
-Masz problemy z efektywnym zarządzaniem i renderowaniem dużych rysunków CAD w swojej aplikacji Java? Ten przewodnik pokaże, jak używać GroupDocs.Viewer dla Java, aby podzielić te rysunki na łatwe do zarządzania kafelki. Dzieląc rysunek na mniejsze sekcje, możesz znacznie zwiększyć wydajność i łatwość obsługi.
+# Jak podzielić rysunki CAD na kafelki przy użyciu GroupDocs Viewer
 
-**Czego się nauczysz:**
-- Konfigurowanie i konfigurowanie GroupDocs.Viewer dla Java.
-- Proces krok po kroku umożliwiający podział rysunków CAD na kafelki.
-- Kluczowe konfiguracje i techniki optymalizacji.
-- Praktyczne zastosowania i możliwości integracji.
+Jeśli zastanawiasz się **jak podzielić CAD** na mniejsze, łatwiejsze do zarządzania części, trafiłeś we właściwe miejsce. W tym samouczku przeprowadzimy Cię przez dokładne kroki potrzebne do podzielenia dużych rysunków CAD na kafelki przy użyciu **GroupDocs Viewer for Java**. Po zakończeniu będziesz mieć gotowe rozwiązanie, które przyspiesza renderowanie, zmniejsza zużycie pamięci i ułatwia wyświetlanie rysunków w aplikacjach internetowych lub mobilnych.
 
-Zacznijmy od upewnienia się, czy Twoje środowisko jest gotowe i spełnia wszelkie niezbędne wymagania.
+![Rysunki CAD podzielone przy użyciu GroupDocs.Viewer dla Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
+
+## Szybkie odpowiedzi
+- **Co osiąga „dzielenie CAD”?** Rozdziela ogromny rysunek na mniejsze obrazy (kafelki), które ładują się szybciej i zużywają mniej pamięci.  
+- **Jaki format jest używany dla kafelków?** Domyślnie generowane są pliki PNG, ale inne formaty są obsługiwane poprzez opcje Viewer.  
+- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna działa w środowisku deweloperskim; płatna licencja jest wymagana w produkcji.  
+- **Czy mogę zmienić rozmiar kafelka?** Tak – dostosuj obliczenia `tileWidth` i `tileHeight` do swoich potrzeb.  
+- **Czy to podejście jest wątkowo‑bezpieczne?** Renderowanie każdego kafelka w osobnej instancji `Viewer` przy użyciu try‑with‑resources jest bezpieczne przy równoczesnym wykonywaniu.
+
+## Co to jest „dzielenie CAD”?
+Dzielenie CAD odnosi się do podziału pojedynczego, często ogromnego rysunku CAD na wiele prostokątnych sekcji (kafelków). Każdy kafelek jest renderowany niezależnie, co pozwala ładować tylko te części, które faktycznie potrzebuje użytkownik — idealne rozwiązanie dla map internetowych, portali dokumentów i przeglądarek mobilnych.
+
+## Dlaczego używać GroupDocs Viewer dla Java?
+GroupDocs Viewer zapewnia natychmiastowe wsparcie dla ponad 100 formatów plików, w tym DWG, DXF i DWF. Jego API kafelków pozwala określić dokładne współrzędne, dzięki czemu możesz renderować dokładnie interesujący Cię obszar bez konieczności przetwarzania całego pliku najpierw. To oszczędza cykle CPU, zmniejsza zużycie pasma i zapewnia płynniejsze wrażenia użytkownika.
 
 ## Wymagania wstępne
-Zanim zaczniemy, upewnij się, że masz:
+- **Biblioteki**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: Dowolny nowoczesny Java Development Kit (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse lub inne IDE kompatybilne z Javą.  
+- **Narzędzie budowania**: Maven (inne narzędzia budowania działają, o ile dodano zależność).  
 
-- **Biblioteki**: GroupDocs.Viewer dla Java (wersja 25.2 lub nowsza).
-- **Konfiguracja środowiska**:Działający pakiet Java Development Kit (JDK) i zintegrowane środowisko programistyczne, takie jak IntelliJ IDEA lub Eclipse.
-- **Wymagania wstępne dotyczące wiedzy**:Podstawowa znajomość programowania w Javie i znajomość narzędzia do budowania Maven.
+## Konfiguracja GroupDocs.Viewer dla Java
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
-## Konfigurowanie GroupDocs.Viewer dla Java
-Aby użyć GroupDocs.Viewer, dodaj go jako zależność w swoim projekcie. Jeśli używasz Maven:
-
-**Konfiguracja Maven:**
 ```xml
 <repositories>
    <repository>
@@ -47,44 +58,43 @@ Aby użyć GroupDocs.Viewer, dodaj go jako zależność w swoim projekcie. Jeśl
 </dependencies>
 ```
 
-### Nabycie licencji
-GroupDocs.Viewer oferuje bezpłatną licencję próbną pozwalającą na poznanie pełni jego możliwości:
-- **Bezpłatna wersja próbna**: Odwiedzać [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/) aby pobrać i przetestować bibliotekę.
-- **Licencja tymczasowa**:Złóż wniosek o tymczasową licencję w [Strona licencji tymczasowej](https://purchase.groupdocs.com/temporary-license/).
-- **Zakup**:Kup pełną licencję na ich [Strona zakupu](https://purchase.groupdocs.com/buy).
+### Uzyskanie licencji
+GroupDocs.Viewer offers a free trial license for evaluation:
 
-### Podstawowa inicjalizacja i konfiguracja
-Aby zainicjować GroupDocs.Viewer w aplikacji Java:
+- **Bezpłatna wersja próbna**: Odwiedź [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/), aby pobrać bibliotekę.  
+- **Licencja tymczasowa**: Złóż wniosek na [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Pełna licencja**: Kup licencję produkcyjną na [Purchase Page](https://purchase.groupdocs.com/buy).
+
+### Podstawowa inicjalizacja
+Create a simple `Viewer` instance to verify that the library loads correctly:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Tutaj wpisz kod renderowania.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Po zakończeniu konfiguracji możemy przystąpić do implementacji funkcji.
 
-## Przewodnik wdrażania
+## Przewodnik krok po kroku: podział rysunków CAD na kafelki
 
-### Podziel rysunek na kafelki
-Ta sekcja pokazuje, jak podzielić rysunek CAD na mniejsze kafelki, aby zapewnić bardziej efektywną obsługę i renderowanie. Każdy kafelek będzie miał jedną czwartą oryginalnego rozmiaru.
+### Krok 1: Zdefiniuj katalog wyjściowy
+We’ll store each tile as a separate PNG file. Using a utility method keeps the path logic clean and reusable.
 
-#### Krok 1: Zdefiniuj ścieżkę do katalogu wyjściowego
-Zacznij od zdefiniowania miejsca, w którym będą zapisywane renderowane obrazy:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Ta konfiguracja wykorzystuje metodę narzędziową do uzyskania ścieżki, zapewniając możliwość ponownego wykorzystania i przejrzystość.
 
-#### Krok 2: Skonfiguruj opcje widoku
-Skonfiguruj opcje renderowania każdej sekcji osobno:
+### Krok 2: Skonfiguruj opcje widoku
+Set the rendering format to PNG and tell the viewer not to preload every page (which saves memory).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +102,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Ten fragment kodu konfiguruje renderowanie do formatu PNG bez przetwarzania wszystkich stron na raz.
 
-#### Krok 3: Oblicz wymiary płytek
-Określ wymiary każdej płytki:
+### Krok 3: Oblicz wymiary kafelków
+First we obtain the drawing’s original width and height, then split it into four equal quadrants.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +114,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Każdy kafelek stanowi jedną czwartą całkowitego rozmiaru.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +126,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Krok 4: Renderowanie i zapisywanie kafelków
-Dodaj każdy obliczony kafelek do opcji renderowania i renderuj:
+### Krok 4: Renderuj i zapisz kafelki
+Add the calculated tiles to the rendering options and let the `Viewer` generate the PNG files.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +136,50 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-Ten ostatni krok renderuje dokument na podstawie określonych kafelków i zapisuje każdy z nich jako oddzielny plik PNG.
 
-### Porady dotyczące rozwiązywania problemów
-- Upewnij się, że ścieżka kompilacji Twojego projektu zawiera pliki JAR GroupDocs.Viewer.
-- Sprawdź, czy katalog wyjściowy jest możliwy do zapisu przez Twoją aplikację.
-- Sprawdź, czy nie występują wyjątki w renderowaniu, aby zdiagnozować problemy z konkretnymi plikami rysunków.
+### Wskazówki rozwiązywania problemów
+- **Ścieżka kompilacji** – Upewnij się, że pliki JAR GroupDocs znajdują się na classpath.  
+- **Uprawnienia** – Folder wyjściowy musi być zapisywalny przez proces Java.  
+- **Wyjątki** – Jeśli pojawi się `ViewerException`, sprawdź ponownie, czy plik DWG nie jest uszkodzony i czy zastosowano prawidłową licencję.
 
-## Zastosowania praktyczne
-Podział rysunków CAD na kafelki może być korzystny w następujących przypadkach:
-1. **Mapowanie stron internetowych**:Efektywne ładowanie dużych planów architektonicznych na mapach internetowych bez przeciążania zasobów serwera.
-2. **Systemy zarządzania dokumentacją**:Łatwiejsze zarządzanie i szybszy dostęp do określonych sekcji dużych rysunków.
-3. **Aplikacje mobilne**:Poprawa wydajności poprzez renderowanie tylko niezbędnych części rysunku na podstawie interakcji użytkownika.
+## Typowe przypadki użycia podziału kafelków CAD
+1. **Mapowanie internetowe** – Ładuj tylko widoczną część planu piętra, gdy użytkownik przesuwa lub przybliża.  
+2. **Zarządzanie dokumentami** – Przechowuj każdy kafelek osobno, aby szybciej generować podglądy.  
+3. **Przeglądanie mobilne** – Zmniejsz zużycie pasma, pobierając jedynie kafelki potrzebne dla aktualnego ekranu.
 
-## Rozważania dotyczące wydajności
-Aby zoptymalizować wydajność aplikacji:
-- Stosuj kafelki strategicznie, aby zachować równowagę między szczegółowością a czasem przetwarzania.
-- Monitoruj wykorzystanie pamięci, zwłaszcza podczas pracy z bardzo dużymi rysunkami.
-- Stosuj najlepsze praktyki języka Java w celu efektywnego zarządzania pamięcią, np. używając polecenia try-with-resources do automatycznego czyszczenia zasobów.
+## Uwagi dotyczące wydajności
+- **Rozmiar kafelka** – Większe kafelki oznaczają mniej plików, ale wolniejsze renderowanie; znajdź kompromis w zależności od potrzeb interfejsu.  
+- **Monitorowanie pamięci** – Używaj narzędzi profilujących Javy (np. VisualVM), aby obserwować zużycie sterty przy przetwarzaniu bardzo dużych rysunków.  
+- **Czyszczenie zasobów** – Wzorzec try‑with‑resources przedstawiony powyżej automatycznie zwalnia zasoby natywne.
 
-## Wniosek
-Teraz wiesz, jak dzielić rysunki CAD na kafelki za pomocą GroupDocs.Viewer dla Java. To podejście nie tylko poprawia wydajność renderowania, ale także zwiększa użyteczność aplikacji podczas pracy z dużymi plikami dokumentów.
+## Najczęściej zadawane pytania
 
-**Następne kroki:**
-- Eksperymentuj z różnymi rozmiarami kafelków w zależności od konkretnych przypadków użycia.
-- Poznaj inne funkcje oferowane przez GroupDocs.Viewer, aby jeszcze bardziej udoskonalić możliwości przetwarzania dokumentów.
+**P: Czy mogę podzielić inne typy plików (PDF, obrazy) na kafelki przy użyciu tego samego podejścia?**  
+O: Tak. GroupDocs Viewer obsługuje wiele formatów; wystarczy użyć odpowiedniej klasy opcji (np. `PdfViewOptions`).
 
-Gotowy do wdrożenia tego rozwiązania w swoim projekcie? Wypróbuj je i zobacz ulepszenia na własne oczy!
+**P: Jak zmienić jakość wyjściowego obrazu?**  
+O: Dostosuj `viewOptions.setResolution(int dpi)` lub ustaw parametry kompresji w obiekcie `PngOptions`.
 
-## Sekcja FAQ
-1. **Jakie są najczęstsze błędy występujące przy korzystaniu z GroupDocs.Viewer Java?**
-   - Do typowych problemów należą nieprawidłowe ścieżki plików, niewystarczające uprawnienia do katalogów wyjściowych lub brakujące zależności.
-2. **Czy mogę za pomocą tej metody podzielić inne typy dokumentów na kafelki?**
-   - Choć przykład skupia się na rysunkach CAD, podobne zasady można zastosować do innych formatów dokumentów obsługiwanych przez GroupDocs.Viewer.
-3. **Jak wydajnie obsługiwać większe pliki?**
-   - Rozważ użycie przetwarzania wielowątkowego lub asynchronicznego w Javie, aby zarządzać renderowaniem dużych plików.
-4. **Czy istnieje możliwość dostosowywania jakości obrazu wyjściowego?**
-   - Tak, możesz dostosować ustawienia PNGViewOptions, aby zmienić rozdzielczość i jakość renderowanych obrazów.
-5. **Co powinienem zrobić, jeśli w trakcie renderowania mojej aplikacji zabraknie pamięci?**
-   - Zoptymalizuj rozmiary kafli i rozważ zwiększenie rozmiaru sterty Java za pomocą opcji maszyn wirtualnych, takich jak `-Xmx` aby uzyskać więcej dostępnej pamięci.
+**P: Moja aplikacja wyczerpuje pamięć przy bardzo dużych plikach DWG — co mogę zrobić?**  
+O: Zmniejsz wymiary kafelków, zwiększ przydział pamięci JVM (`-Xmx`) lub renderuj kafelki kolejno w osobnych instancjach `Viewer`.
+
+**P: Czy można renderować kafelki asynchronicznie?**  
+O: Oczywiście. Owiń każde wywołanie renderowania kafelka w `CompletableFuture` lub użyj usługi executor, aby równolegle przetwarzać zadania.
+
+**P: Czy potrzebuję osobnej licencji na każdy kafelek?**  
+O: Nie. Jedna ważna licencja GroupDocs Viewer obejmuje wszystkie operacje renderowania w Twojej aplikacji.
 
 ## Zasoby
 - [Dokumentacja](https://docs.groupdocs.com/viewer/java/)
-- [Odniesienie do API](https://reference.groupdocs.com/viewer/java/)
+- [Referencja API](https://reference.groupdocs.com/viewer/java/)
 - [Pobierz GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Kup licencję](https://purchase.groupdocs.com/buy)
 - [Bezpłatna wersja próbna](https://releases.groupdocs.com/viewer/java/)
 - [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/)
 - [Forum wsparcia](https://forum.groupdocs.com/c/viewer/9)
 
-Postępując zgodnie z tym przewodnikiem, będziesz dobrze wyposażony do implementacji wydajnego renderowania dokumentów w swoich aplikacjach Java przy użyciu GroupDocs.Viewer. Miłego kodowania!
+---
+
+**Ostatnia aktualizacja:** 2026-04-01  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs

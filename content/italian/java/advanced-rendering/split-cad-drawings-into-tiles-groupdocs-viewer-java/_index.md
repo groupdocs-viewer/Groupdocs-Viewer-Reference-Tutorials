@@ -1,35 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come suddividere in modo efficiente grandi disegni CAD in riquadri utilizzando GroupDocs.Viewer per Java, migliorando le prestazioni e semplificando la gestione delle tue applicazioni."
-"title": "Dividi i disegni CAD in riquadri utilizzando GroupDocs.Viewer Java per un rendering efficiente"
-"url": "/it/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Scopri come suddividere i disegni CAD in tasselli usando GroupDocs Viewer
+  per Java, migliorando le prestazioni di rendering e semplificando la gestione di
+  file di grandi dimensioni.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Come suddividere i disegni CAD in tasselli con GroupDocs Viewer
 type: docs
+url: /it/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# Dividi i disegni CAD in riquadri con GroupDocs.Viewer Java
 
-## Introduzione
-Hai difficoltà a gestire e visualizzare in modo efficiente disegni CAD di grandi dimensioni nella tua applicazione Java? Questa guida ti mostrerà come utilizzare GroupDocs.Viewer per Java per suddividere questi disegni in riquadri più gestibili. Dividendo il disegno in sezioni più piccole, puoi migliorare significativamente le prestazioni e la facilità di gestione.
+# Come dividere i disegni CAD in tile con GroupDocs Viewer
 
-**Cosa imparerai:**
-- Impostazione e configurazione di GroupDocs.Viewer per Java.
-- Procedura dettagliata per suddividere i disegni CAD in riquadri.
-- Configurazioni chiave e tecniche di ottimizzazione.
-- Applicazioni pratiche e possibilità di integrazione.
+Se ti stai chiedendo **come dividere i file CAD** in pezzi più piccoli e gestibili, sei nel posto giusto. In questo tutorial ti guideremo passo passo attraverso le operazioni necessarie per suddividere grandi disegni CAD in tile usando **GroupDocs Viewer for Java**. Alla fine avrai una soluzione pronta all'uso che migliora la velocità di rendering, riduce il consumo di memoria e facilita la visualizzazione dei disegni in applicazioni web o mobile.
 
-Iniziamo assicurandoci che l'ambiente sia pronto con i prerequisiti necessari.
+![Dividi i disegni CAD con GroupDocs.Viewer per Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
+
+## Risposte rapide
+- **Cosa ottiene la “divisione CAD”?** Divide un disegno massiccio in immagini più piccole (tile) che si caricano più velocemente e consumano meno memoria.  
+- **Quale formato viene usato per i tile?** I file PNG vengono generati di default, ma altri formati sono supportati tramite le opzioni di Viewer.  
+- **Ho bisogno di una licenza?** Una licenza di prova gratuita funziona per lo sviluppo; è necessaria una licenza a pagamento per la produzione.  
+- **Posso cambiare la dimensione del tile?** Sì – regola i calcoli `tileWidth` e `tileHeight` per adattarli alle tue esigenze.  
+- **Questo approccio è thread‑safe?** Il rendering di ogni tile in una propria istanza `Viewer` con try‑with‑resources è sicuro per l'esecuzione concorrente.
+
+## Che cosa significa “dividere CAD”?
+Dividere CAD indica la suddivisione di un singolo, spesso enorme, disegno CAD in più sezioni rettangolari (tile). Ogni tile viene renderizzato in modo indipendente, consentendo di caricare solo le parti di cui l'utente ha effettivamente bisogno—perfetto per mappe web, portali documentali e visualizzatori mobili.
+
+## Perché usare GroupDocs Viewer per Java?
+GroupDocs Viewer offre supporto pronto all'uso per oltre 100 formati di file, inclusi DWG, DXF e DWF. La sua API per i tile ti consente di specificare coordinate precise, così puoi renderizzare esattamente l'area di interesse senza dover elaborare l'intero file prima. Questo risparmia cicli CPU, riduce la larghezza di banda e offre un'esperienza utente più fluida.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere:
+- **Libraries**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: Qualsiasi recente Java Development Kit (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse o un altro IDE compatibile con Java.  
+- **Build Tool**: Maven (altri strumenti di build funzionano purché la dipendenza sia aggiunta).  
 
-- **Biblioteche**: GroupDocs.Viewer per Java (versione 25.2 o successiva).
-- **Configurazione dell'ambiente**: Un Java Development Kit (JDK) funzionante e un ambiente di sviluppo integrato come IntelliJ IDEA o Eclipse.
-- **Prerequisiti di conoscenza**Conoscenza di base della programmazione Java e familiarità con lo strumento di compilazione Maven.
+## Configurazione di GroupDocs.Viewer per Java
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
-## Impostazione di GroupDocs.Viewer per Java
-Per utilizzare GroupDocs.Viewer, aggiungilo come dipendenza nel tuo progetto. Se utilizzi Maven:
-
-**Configurazione Maven:**
 ```xml
 <repositories>
    <repository>
@@ -48,43 +59,42 @@ Per utilizzare GroupDocs.Viewer, aggiungilo come dipendenza nel tuo progetto. Se
 ```
 
 ### Acquisizione della licenza
-GroupDocs.Viewer offre una licenza di prova gratuita per esplorare tutte le sue funzionalità:
-- **Prova gratuita**: Visita [Prova gratuita di GroupDocs](https://releases.groupdocs.com/viewer/java/) per scaricare e provare la libreria.
-- **Licenza temporanea**Richiedi una licenza temporanea presso [Pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
-- **Acquistare**: Acquista una licenza completa sul loro [Pagina di acquisto](https://purchase.groupdocs.com/buy).
+GroupDocs.Viewer offre una licenza di prova gratuita per la valutazione:
 
-### Inizializzazione e configurazione di base
-Per inizializzare GroupDocs.Viewer nella tua applicazione Java:
+- **Free Trial**: Visita [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) per scaricare la libreria.  
+- **Temporary License**: Richiedi una licenza temporanea su [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Full License**: Acquista una licenza di produzione sulla [Purchase Page](https://purchase.groupdocs.com/buy).
+
+### Inizializzazione di base
+Crea un'istanza semplice di `Viewer` per verificare che la libreria venga caricata correttamente:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Qui va inserito il codice di rendering.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Una volta completata la configurazione, procediamo all'implementazione della funzionalità.
 
-## Guida all'implementazione
+## Guida passo‑passo per dividere i disegni CAD in tile
 
-### Dividi il disegno in riquadri
-Questa sezione illustra come suddividere un disegno CAD in riquadri più piccoli per una gestione e un rendering più efficienti. Ogni riquadro avrà una dimensione pari a un quarto di quella originale.
+### Passo 1: Definisci la directory di output
+Salveremo ogni tile come file PNG separato. L'uso di un metodo di utilità mantiene la logica del percorso pulita e riutilizzabile.
 
-#### Passaggio 1: definire il percorso della directory di output
-Inizia definendo dove verranno salvate le immagini renderizzate:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Questa configurazione utilizza un metodo di utilità per ottenere il percorso, garantendo riutilizzabilità e chiarezza.
 
-#### Passaggio 2: configurare le opzioni di visualizzazione
-Imposta le opzioni per il rendering di ogni sezione separatamente:
+### Passo 2: Configura le opzioni di visualizzazione
+Imposta il formato di rendering su PNG e indica al viewer di non pre‑caricare ogni pagina (ciò salva memoria).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +102,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Questo frammento di codice configura il rendering in formato PNG senza elaborare tutte le pagine contemporaneamente.
 
-#### Passaggio 3: calcolare le dimensioni delle piastrelle
-Determina le dimensioni di ogni piastrella:
+### Passo 3: Calcola le dimensioni del tile
+Innanzitutto otteniamo la larghezza e l'altezza originali del disegno, poi lo suddividiamo in quattro quadranti uguali.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +114,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Ogni piastrella è un quarto della dimensione totale.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +126,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Passaggio 4: rendering e salvataggio delle tessere
-Aggiungi ogni tile calcolato alle opzioni di rendering ed esegui il rendering:
+### Passo 4: Renderizza e salva i tile
+Aggiungi i tile calcolati alle opzioni di rendering e lascia che il `Viewer` generi i file PNG.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,45 +136,38 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-Questo passaggio finale esegue il rendering del documento in base ai riquadri specificati, salvando ciascuno di essi come file PNG separato.
 
 ### Suggerimenti per la risoluzione dei problemi
-- Assicurati che il percorso di build del tuo progetto includa i file JAR GroupDocs.Viewer.
-- Verificare che la directory di output sia scrivibile dall'applicazione.
-- Verificare eventuali eccezioni nel rendering per diagnosticare problemi con file di disegno specifici.
+- **Build path** – Assicurati che i file JAR di GroupDocs siano nel classpath.  
+- **Permissions** – La cartella di output deve essere scrivibile dal processo Java.  
+- **Exceptions** – Se visualizzi `ViewerException`, verifica che il file DWG non sia corrotto e che la licenza corretta sia applicata.
 
-## Applicazioni pratiche
-La suddivisione dei disegni CAD in riquadri può essere utile in:
-1. **Mappatura Web**: Caricamento efficiente di grandi planimetrie architettoniche su mappe web senza sovraccaricare le risorse del server.
-2. **Sistemi di gestione dei documenti**: Gestione più semplice e accesso più rapido a sezioni specifiche di disegni di grandi dimensioni.
-3. **Applicazioni mobili**: Miglioramento delle prestazioni mediante il rendering solo delle parti necessarie di un disegno in base all'interazione dell'utente.
+## Casi d'uso comuni per la divisione dei tile CAD
+1. **Web Mapping** – Carica solo la porzione visibile di una pianta quando l'utente esegue pan/zoom.  
+2. **Document Management** – Archivia ogni tile separatamente per una generazione di anteprime più rapida.  
+3. **Mobile Viewing** – Riduci la larghezza di banda scaricando solo i tile necessari per lo schermo corrente.
 
 ## Considerazioni sulle prestazioni
-Per ottimizzare le prestazioni della tua applicazione:
-- Utilizzare le tessere in modo strategico per bilanciare dettagli e tempi di elaborazione.
-- Monitorare l'utilizzo della memoria, soprattutto quando si gestiscono disegni molto grandi.
-- Utilizzare le best practice di Java per una gestione efficiente della memoria, ad esempio utilizzando try-with-resources per la pulizia automatica delle risorse.
+- **Tile Size** – Tile più grandi significano meno file ma rendering più lento; trova un equilibrio in base alle esigenze della tua UI.  
+- **Memory Monitoring** – Usa gli strumenti di profiling di Java (ad es., VisualVM) per monitorare l'uso dell'heap durante l'elaborazione di disegni molto grandi.  
+- **Resource Cleanup** – Il pattern try‑with‑resources mostrato sopra rilascia automaticamente le risorse native.
 
-## Conclusione
-Ora hai imparato come suddividere i disegni CAD in riquadri utilizzando GroupDocs.Viewer per Java. Questo approccio non solo migliora le prestazioni di rendering, ma migliora anche l'usabilità dell'applicazione quando si gestiscono file di documenti di grandi dimensioni.
+## Domande frequenti
 
-**Prossimi passi:**
-- Sperimenta diverse dimensioni di tile in base a casi d'uso specifici.
-- Esplora le altre funzionalità offerte da GroupDocs.Viewer per migliorare ulteriormente le tue capacità di elaborazione dei documenti.
+**Q: Posso dividere altri tipi di file (PDF, immagini) in tile usando lo stesso approccio?**  
+A: Sì. GroupDocs Viewer supporta molti formati; è sufficiente utilizzare la classe di opzioni corrispondente (ad es., `PdfViewOptions`).
 
-Pronto a implementare questa soluzione nel tuo progetto? Provala e scopri i miglioramenti di persona!
+**Q: Come modifico la qualità dell'immagine di output?**  
+A: Regola `viewOptions.setResolution(int dpi)` o imposta le impostazioni di compressione sull'oggetto `PngOptions`.
 
-## Sezione FAQ
-1. **Quali sono alcuni errori comuni quando si utilizza GroupDocs.Viewer Java?**
-   - Tra i problemi più comuni rientrano percorsi di file errati, autorizzazioni insufficienti sulle directory di output o dipendenze mancanti.
-2. **Posso suddividere altri tipi di documenti in riquadri con questo metodo?**
-   - Sebbene l'esempio si concentri sui disegni CAD, principi simili possono essere applicati ad altri formati di documenti supportati da GroupDocs.Viewer.
-3. **Come posso gestire in modo efficiente i file di grandi dimensioni?**
-   - Si consiglia di utilizzare l'elaborazione multi-threading o asincrona in Java per gestire il rendering di file di grandi dimensioni.
-4. **Esiste un supporto per la personalizzazione della qualità dell'immagine in output?**
-   - Sì, puoi modificare le impostazioni PNGViewOptions per cambiare la risoluzione e la qualità delle immagini renderizzate.
-5. **Cosa devo fare se la mia applicazione esaurisce la memoria durante il rendering?**
-   - Ottimizza le dimensioni delle tue tile e valuta l'aumento delle dimensioni dell'heap di Java con opzioni VM come `-Xmx` per avere più memoria disponibile.
+**Q: La mia applicazione esaurisce la memoria su file DWG molto grandi—cosa posso fare?**  
+A: Riduci le dimensioni dei tile, aumenta l'heap JVM (`-Xmx`) o renderizza i tile in sequenza in istanze `Viewer` separate.
+
+**Q: È possibile renderizzare i tile in modo asincrono?**  
+A: Assolutamente. Avvolgi ogni chiamata di rendering del tile in un `CompletableFuture` o usa un executor service per parallelizzare il carico di lavoro.
+
+**Q: Ho bisogno di una licenza separata per ogni tile?**  
+A: No. Una singola licenza valida di GroupDocs Viewer copre tutte le operazioni di rendering all'interno della tua applicazione.
 
 ## Risorse
 - [Documentazione](https://docs.groupdocs.com/viewer/java/)
@@ -174,4 +178,10 @@ Pronto a implementare questa soluzione nel tuo progetto? Provala e scopri i migl
 - [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
 - [Forum di supporto](https://forum.groupdocs.com/c/viewer/9)
 
-Seguendo questa guida, sarai pronto a implementare un rendering efficiente dei documenti nelle tue applicazioni Java utilizzando GroupDocs.Viewer. Buon lavoro!
+---
+
+**Last Updated:** 2026-04-01  
+**Testato con:** GroupDocs.Viewer 25.2 for Java  
+**Autore:** GroupDocs  
+
+---
