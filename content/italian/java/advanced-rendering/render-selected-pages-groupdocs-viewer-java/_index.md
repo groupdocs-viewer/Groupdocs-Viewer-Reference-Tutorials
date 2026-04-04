@@ -1,56 +1,56 @@
 ---
-date: '2026-01-15'
-description: Scopri come renderizzare le pagine e generare HTML da un documento usando
-  GroupDocs.Viewer per Java. Questa guida copre l'installazione, la configurazione
-  e l'integrazione pratica.
+date: '2026-04-04'
+description: Scopri come convertire DOCX in HTML Java usando GroupDocs.Viewer, renderizzare
+  pagine PDF Java e generare HTML dai documenti. Questa guida copre l'installazione,
+  la configurazione e l'integrazione pratica.
 keywords:
-- render selected pages GroupDocs.Viewer Java
-- GroupDocs Viewer for Java setup
-- render HTML with embedded resources
-title: Come renderizzare le pagine usando GroupDocs.Viewer per Java
+- convert docx to html java
+- render pdf pages java
+- generate html from document java
+title: Converti DOCX in HTML Java – Pagine con GroupDocs.Viewer
 type: docs
 url: /it/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Come rendere le pagine con GroupDocs.Viewer per Java
+# Converti DOCX in HTML Java – Pagine con GroupDocs.Viewer
 
-Visualizzare solo sezioni particolari di un documento nella tua applicazione web può essere impegnativo. In questo tutorial scoprirai **come rendere le pagine** in modo efficiente, trasformandole in file HTML autonomi che possono essere incorporati direttamente nella tua interfaccia. Che tu debba mostrare un estratto di un contratto o un singolo capitolo di un libro di testo, i passaggi seguenti ti guideranno attraverso l'intero processo usando GroupDocs.Viewer per Java.
+Se hai bisogno di **convertire DOCX in HTML Java** mostrando solo le parti di un documento che contano, questo tutorial è per te. Ti guideremo nella resa delle pagine selezionate, nell'incorporamento di tutte le risorse e nella consegna di HTML leggero che può essere inserito direttamente nella tua interfaccia web. Che tu stia costruendo un portale di revisione contratti, un modulo e‑learning o una dashboard di reporting, i passaggi seguenti ti offrono un modo rapido e affidabile per trasformare DOCX (o PDF, PPT, ecc.) in HTML pronto per la visualizzazione.
 
-Pronto a migliorare la tua applicazione? Iniziamo assicurandoci che la tua configurazione sia corretta.
-
-## Risposte rapide
+## Risposte Rapide
 - **Cosa significa “render pages”?** Conversione delle pagine selezionate del documento in un formato visualizzabile come HTML.  
 - **Quale formato viene generato?** HTML con risorse incorporate (immagini, CSS, font).  
-- **È necessaria una licenza?** Una versione di prova funziona per la valutazione; è necessaria una licenza completa per la produzione.  
-- **Posso scegliere pagine non consecutive?** Sì – specifica qualsiasi numero di pagina di cui hai bisogno.  
-- **È consigliata la cache?** Assolutamente, la cache dell'HTML renderizzato riduce i tempi di caricamento per le pagine frequentemente accessate.
+- **Ho bisogno di una licenza?** Una versione di prova funziona per la valutazione; è necessaria una licenza completa per la produzione.  
+- **Posso scegliere pagine non consecutive?** Sì – specifica i numeri di pagina di cui hai bisogno.  
+- **È consigliata la cache?** Assolutamente, la cache dell'HTML renderizzato riduce i tempi di caricamento per le pagine frequentemente accessate.  
 
-![Render Selected Pages of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
+![Rendi le pagine selezionate di un documento con GroupDocs.Viewer per Java](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
 
-### Cosa imparerai
-- Impostare GroupDocs.Viewer nel tuo ambiente Java  
+### Cosa Imparerai
+- Configurare GroupDocs.Viewer nel tuo ambiente Java  
 - Renderizzare pagine specifiche del documento usando l'API Viewer  
-- Configurare le opzioni di visualizzazione HTML per una visualizzazione ottimale  
+- Configurare le opzioni di visualizzazione HTML per una resa ottimale  
 - Casi d'uso pratici e scenari di integrazione  
 
-## Cos'è il rendering di pagine selezionate?
-Il rendering di pagine selezionate significa estrarre solo le pagine che specifichi da un documento sorgente (DOCX, PDF, PPT, ecc.) e convertirle in un formato che può essere visualizzato in un browser web. Questo approccio riduce la larghezza di banda, velocizza il caricamento delle pagine e migliora l'esperienza dell'utente finale mostrando solo il contenuto rilevante.
+## Cos'è il Rendering di Pagine Selezionate?
+Il rendering di pagine selezionate consiste nell'estrarre solo le pagine che specifichi da un documento sorgente (DOCX, PDF, PPT, ecc.) e convertirle in un formato che può essere visualizzato in un browser web. Questo approccio riduce la larghezza di banda, velocizza il caricamento delle pagine e migliora l'esperienza dell'utente finale mostrando solo il contenuto rilevante.
 
-## Perché generare HTML da un documento?
-Generare HTML da un documento ti fornisce una rappresentazione leggera e indipendente dalla piattaforma che funziona su tutti i browser senza la necessità di visualizzatori o plugin esterni. Incorporare le risorse direttamente nel file HTML (immagini, font, CSS) semplifica il deployment ed elimina i problemi di cross‑origin.
+## Perché Convertire DOCX in HTML Java?
+Generare HTML da un DOCX ti fornisce una rappresentazione leggera e indipendente dalla piattaforma che funziona su tutti i browser senza richiedere visualizzatori o plugin esterni. Incorporare le risorse direttamente nel file HTML (immagini, font, CSS) semplifica il deployment e elimina i problemi di cross‑origin, rendendolo perfetto per le moderne applicazioni web.
 
 ## Prerequisiti
-Assicurati che la tua configurazione di sviluppo soddisfi questi requisiti:
 
-1. **Librerie richieste** – Includi GroupDocs.Viewer per Java (versione 25.2 o successiva) nel tuo progetto.  
-2. **Ambiente** – JDK 8 o superiore; IDE come IntelliJ IDEA o Eclipse.  
-3. **Conoscenze** – Programmazione Java di base e gestione delle dipendenze Maven.  
+Assicurati che il tuo ambiente di sviluppo soddisfi questi requisiti:
+
+1. **Required Libraries** – Include GroupDocs.Viewer for Java (version 25.2 or later) in your project.  
+2. **Environment** – JDK 8 or higher; IDE such as IntelliJ IDEA or Eclipse.  
+3. **Knowledge** – Basic Java programming and Maven dependency management.
 
 ## Configurazione di GroupDocs.Viewer per Java
 
 ### Installazione tramite Maven
-Aggiungi il repository e la dipendenza al tuo `pom.xml`:
+
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -69,12 +69,12 @@ Aggiungi il repository e la dipendenza al tuo `pom.xml`:
 </dependencies>
 ```
 
-### Acquisizione della licenza
-- **Prova gratuita** – Esplora tutte le funzionalità senza costi.  
-- **Licenza temporanea** – Estendi il test oltre il periodo di prova.  
-- **Acquisto completo** – Necessario per le distribuzioni in produzione.  
+### Acquisizione della Licenza
+- **Free Trial** – Explore all features without cost.  
+- **Temporary License** – Extend testing beyond the trial period.  
+- **Full Purchase** – Required for production deployments.
 
-#### Inizializzazione e configurazione di base
+#### Inizializzazione e Configurazione di Base
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -88,11 +88,9 @@ public class DocumentViewer {
 }
 ```
 
-## Guida all'implementazione
+## Come Convertire DOCX in HTML Java con Pagine Selezionate
 
-### Renderizzare pagine specifiche come HTML con risorse incorporate
-
-#### Passo 1: Configurare il percorso di output
+### Passo 1: Configura il Percorso di Output
 
 ```java
 import java.nio.file.Path;
@@ -102,10 +100,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **Spiegazione**: `outputDirectory` è il percorso in cui verranno salvati i file HTML generati.  
-- **Denominazione**: `page_{0}.html` crea un file separato per ogni pagina renderizzata.
+- **Explanation**: `outputDirectory` is where the generated HTML files will be saved.  
+- **Naming**: `page_{0}.html` creates a separate file for each rendered page.
 
-#### Passo 2: Configurare le opzioni di visualizzazione HTML
+### Passo 2: Configura le Opzioni di Visualizzazione HTML
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -113,9 +111,9 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-- **Spiegazione**: `forEmbeddedResources()` raggruppa immagini, CSS e font direttamente all'interno di ciascun file HTML, rimuovendo le dipendenze esterne.
+- **Explanation**: `forEmbeddedResources()` bundles images, CSS, and fonts directly inside each HTML file, removing external dependencies.
 
-#### Passo 3: Renderizzare le pagine desiderate
+### Passo 3: Renderizza le Pagine Desiderate
 
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
@@ -123,66 +121,61 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-- **Spiegazione**: Il metodo `view()` riceve le `HtmlViewOptions` e un elenco di numeri di pagina. In questo esempio, vengono renderizzate solo la prima e la terza pagina.
+- **Explanation**: The `view()` method receives the `HtmlViewOptions` and a list of page numbers. In this example, only the first and third pages are rendered.
 
-### Suggerimenti per la risoluzione dei problemi
-- Verifica che la directory di output esista e che l'applicazione abbia i permessi di scrittura.  
-- Assicurati che il percorso del documento sia corretto e che il file non sia corrotto.  
-- Se incontri errori di licenza, conferma che un file di licenza valido sia posizionato accanto alla tua applicazione.  
+## Applicazioni Pratiche
 
-## Applicazioni pratiche
 Il rendering di pagine selezionate è utile in molti scenari:
 
-1. **Documenti legali** – Mostra solo le clausole rilevanti di un contratto.  
-2. **Piattaforme educative** – Consenti agli studenti di visualizzare in anteprima capitoli specifici senza scaricare l'intero libro di testo.  
-3. **Report aziendali** – Fornisci agli stakeholder riepiloghi concisi mostrando le sezioni chiave del report.  
+1. **Legal Documents** – Show only the relevant clauses of a contract.  
+2. **Educational Platforms** – Let students preview specific chapters without downloading the entire textbook.  
+3. **Business Reports** – Provide stakeholders with concise summaries by displaying key report sections.
 
-## Considerazioni sulle prestazioni
-- **Gestione della memoria** – Usa try‑with‑resources (come mostrato) per liberare rapidamente le risorse del Viewer.  
-- **Cache** – Memorizza l'HTML renderizzato in una cache (ad esempio Redis o in‑memory) per le pagine frequentemente accessate.  
-- **Minimizzazione delle risorse** – Le risorse incorporate aumentano leggermente la dimensione del file; considera la compressione dell'output HTML se la larghezza di banda è un problema.  
+## Considerazioni sulle Prestazioni
 
-## Problemi comuni e soluzioni
+- **Memory Management** – Use try‑with‑resources (as shown) to free Viewer resources promptly.  
+- **Caching** – Store rendered HTML in a cache (e.g., Redis or in‑memory) for frequently accessed pages.  
+- **Resource Minimization** – Embedded resources increase file size slightly; consider compressing the HTML output if bandwidth is a concern.
+
+## Problemi Comuni e Soluzioni
 
 | Problema | Soluzione |
 |----------|-----------|
-| **File non trovato** | Verifica nuovamente il percorso assoluto/relativo e assicurati che il file esista. |
-| **Memoria esaurita per documenti grandi** | Renderizza solo le pagine necessarie, oppure aumenta la dimensione dell'heap JVM (`-Xmx`). |
+| **File non trovato** | Verifica il percorso assoluto/relativo e assicurati che il file esista. |
+| **Out‑of‑memory per documenti grandi** | Renderizza solo le pagine necessarie, oppure aumenta la dimensione dell'heap JVM (`-Xmx`). |
 | **Immagini mancanti nell'HTML** | Verifica che `forEmbeddedResources` sia utilizzato; altrimenti, le immagini vengono salvate separatamente. |
 | **Errore di licenza** | Posiziona un file `GroupDocs.Viewer.lic` valido nella radice dell'applicazione o specifica il suo percorso programmaticamente. |
 
-## Domande frequenti
+## Domande Frequenti
 
-1. **Cos'è GroupDocs.Viewer per Java?**  
-   Una libreria che consente il rendering di oltre 90 formati di documento (PDF, DOCX, PPT, ecc.) direttamente all'interno delle applicazioni Java.  
+**Q: Cos'è GroupDocs.Viewer per Java?**  
+A: Una libreria che consente il rendering di oltre 90 formati di documento (PDF, DOCX, PPT, ecc.) direttamente all'interno di applicazioni Java.
 
-2. **Posso renderizzare pagine PDF usando questo metodo?**  
-   Sì – l'API Viewer supporta i PDF insieme a molti altri formati.  
+**Q: Posso renderizzare pagine PDF usando questo metodo?**  
+A: Sì – l'API Viewer supporta i PDF insieme a molti altri formati.
 
-3. **Come gestire documenti di grandi dimensioni in modo efficiente?**  
-   Renderizza solo le pagine di cui hai bisogno e utilizza la cache per evitare elaborazioni ripetute.  
+**Q: Come gestire documenti di grandi dimensioni in modo efficiente?**  
+A: Renderizza solo le pagine di cui hai bisogno e utilizza la cache per evitare elaborazioni ripetute.
 
-4. **Qual è il vantaggio di incorporare le risorse nei file HTML?**  
-   Crea un unico file autonomo per pagina, semplificando il deployment ed eliminando il caricamento di risorse esterne.  
+**Q: Qual è il vantaggio di incorporare le risorse nei file HTML?**  
+A: Crea un unico file autonomo per pagina, semplificando il deployment ed eliminando il caricamento di asset esterni.
 
-5. **Dove posso trovare ulteriori informazioni su GroupDocs.Viewer per Java?**  
-   - **Documentazione**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-   - **Riferimento API**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+**Q: Dove posso trovare maggiori informazioni su GroupDocs.Viewer per Java?**  
+A: - **Documentazione**: [Documentazione GroupDocs.Viewer](https://docs.groupdocs.com/viewer/java/)  
+   - **Riferimento API**: [Guida di Riferimento API](https://reference.groupdocs.com/viewer/java/)  
 
 ## Risorse
 
-- **Documentazione**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **Riferimento API**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
-- **Download**: [GroupDocs.Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
-- **Acquisto**: [Buy GroupDocs.Viewer](https://purchase.groupdocs.com/buy)  
-- **Prova gratuita**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Licenza temporanea**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Supporto**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Documentazione**: [Documentazione GroupDocs.Viewer](https://docs.groupdocs.com/viewer/java/)  
+- **Riferimento API**: [Guida di Riferimento API](https://reference.groupdocs.com/viewer/java/)  
+- **Download**: [Pagina di Download di GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **Acquista**: [Acquista GroupDocs.Viewer](https://purchase.groupdocs.com/buy)  
+- **Prova Gratuita**: [Prova Gratuita GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Licenza Temporanea**: [Ottieni una Licenza Temporanea](https://purchase.groupdocs.com/temporary-license/)  
+- **Supporto**: [Forum di Supporto GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Ultimo aggiornamento:** 2026-01-15  
-**Testato con:** GroupDocs.Viewer 25.2  
-**Autore:** GroupDocs  
-
----
+**Ultimo Aggiornamento:** 2026-04-04  
+**Testato Con:** GroupDocs.Viewer 25.2  
+**Autore:** GroupDocs
