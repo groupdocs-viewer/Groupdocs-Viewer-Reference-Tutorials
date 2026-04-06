@@ -1,42 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách trích xuất bố cục và lớp theo chương trình từ các tệp CAD bằng GroupDocs.Viewer cho Java. Lý tưởng cho các dự án kỹ thuật cần quản lý dữ liệu thiết kế chính xác."
-"title": "Truy xuất các bố cục và lớp CAD trong Java với GroupDocs.Viewer"
-"url": "/vi/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-06'
+description: Tìm hiểu cách truy xuất bố cục CAD trong Java bằng GroupDocs.Viewer for
+  Java, trích xuất bố cục và lớp từ các tệp CAD để quản lý dữ liệu thiết kế một cách
+  chính xác.
+keywords:
+- retrieve cad layouts java
+- groupdocs viewer java
+- cad layers extraction
+title: Lấy bố cục CAD trong Java bằng GroupDocs.Viewer
 type: docs
+url: /vi/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# Cách lấy bố cục và lớp CAD bằng GroupDocs.Viewer cho Java
 
-Trong thế giới kỹ thuật và thiết kế, các tệp Thiết kế hỗ trợ máy tính (CAD) là những công cụ không thể thiếu để lưu trữ lượng lớn thông tin chi tiết về thiết kế. Các tệp này có thể phức tạp, chứa nhiều bố cục và lớp cần được quản lý và truy xuất chính xác để thực hiện dự án hiệu quả. Nếu bạn đang muốn trích xuất các chi tiết cụ thể từ bản vẽ CAD theo chương trình trong Java, GroupDocs.Viewer for Java là giải pháp dành cho bạn. Hướng dẫn này sẽ hướng dẫn bạn quy trình truy xuất tất cả các bố cục và lớp từ bản vẽ CAD bằng GroupDocs.Viewer.
+# Truy xuất bố cục CAD Java với GroupDocs.Viewer
 
-**Những gì bạn sẽ học được:**
-- Cách thiết lập GroupDocs.Viewer cho Java.
-- Truy xuất thông tin bản vẽ CAD bao gồm bố cục và lớp.
-- Ứng dụng thực tế của tính năng này trong các tình huống thực tế.
-- Những cân nhắc về hiệu suất khi làm việc với các tệp CAD lớn.
+Trong các dự án kỹ thuật hiện đại, **retrieving CAD layouts Java** là điều cần thiết để tự động hoá phân tích thiết kế, kiểm soát phiên bản và quy trình làm việc dựa trên dữ liệu. Các tệp CAD thường chứa nhiều bố cục và lớp mô tả các góc nhìn khác nhau của sản phẩm. Khả năng lấy thông tin này một cách lập trình cho phép bạn xây dựng công cụ kiểm tra bản vẽ, tạo báo cáo, hoặc tích hợp thiết kế vào các hệ thống lớn hơn. Trong hướng dẫn này, bạn sẽ học cách sử dụng GroupDocs.Viewer cho Java để nhanh chóng và đáng tin cậy trích xuất mọi bố cục và lớp từ một bản vẽ CAD.
 
-Trước khi bắt đầu triển khai, chúng ta hãy cùng tìm hiểu một số điều kiện tiên quyết mà bạn cần có để bắt đầu.
+![Truy xuất bố cục và lớp CAD với GroupDocs.Viewer cho Java](/viewer/file-formats-support/retrieve-cad-layouts-and-layers-java.png)
 
-## Điều kiện tiên quyết
+## Câu trả lời nhanh
+- **“retrieve CAD layouts Java” có nghĩa là gì?** Nó có nghĩa là truy cập chương trình vào siêu dữ liệu bố cục và lớp của các tệp CAD từ một ứng dụng Java.  
+- **Thư viện nào xử lý việc này?** GroupDocs.Viewer cho Java cung cấp một API đơn giản để lấy thông tin bố cục và lớp.  
+- **Tôi có cần giấy phép không?** Có bản dùng thử miễn phí; giấy phép thương mại là bắt buộc cho môi trường sản xuất.  
+- **Có thể xử lý các tệp DWG lớn không?** Có — sử dụng try‑with‑resources và xử lý theo lô để giảm mức sử dụng bộ nhớ.  
+- **Maven có bắt buộc không?** Maven là cách được khuyến nghị để thêm GroupDocs.Viewer vào dự án, nhưng bạn cũng có thể dùng Gradle hoặc các JAR thủ công.
 
-Để thực hiện theo hướng dẫn này, hãy đảm bảo bạn có:
+## “retrieve CAD layouts Java” là gì?
+Retrieving CAD layouts Java đề cập đến việc trích xuất các thành phần cấu trúc — bố cục (paper spaces) và lớp (visibility groups) — từ các định dạng CAD như DWG hoặc DXF bằng mã Java. Thông tin này quan trọng cho các nhiệm vụ như kiểm tra bản vẽ tự động, quy trình render tùy chỉnh, hoặc di chuyển dữ liệu thiết kế sang các nền tảng khác.
 
-1. **Bộ phát triển Java (JDK):** Đảm bảo JDK 8 trở lên được cài đặt trên máy của bạn.
-2. **Môi trường phát triển tích hợp (IDE):** Bất kỳ IDE Java nào như IntelliJ IDEA, Eclipse hoặc NetBeans đều hoạt động tốt.
-3. **GroupDocs.Viewer cho Thư viện Java:** Chúng tôi sẽ sử dụng phiên bản mới nhất mà bạn có thể đưa vào thông qua Maven.
+## Tại sao nên sử dụng GroupDocs.Viewer cho Java?
+GroupDocs.Viewer trừu tượng hoá độ phức tạp của việc phân tích tệp CAD, cung cấp một API cấp cao hoạt động trên nhiều phiên bản CAD mà không cần thư viện AutoCAD gốc. Nó mang lại:
 
-### Thiết lập môi trường
+- **Hỗ trợ đa định dạng** (DWG, DXF, DGN, v.v.)  
+- **Xử lý nhanh, tiết kiệm bộ nhớ** – lý tưởng cho các ứng dụng phía máy chủ  
+- **Tích hợp Maven đơn giản** – giữ cho các phụ thuộc gọn gàng  
+- **Các tùy chọn cấp phép mạnh mẽ** – dùng thử, tạm thời, hoặc giấy phép đầy đủ cho sản xuất  
 
-Đảm bảo bạn có máy chủ cục bộ hoặc từ xa sẵn sàng chạy ứng dụng Java của mình. Bạn cũng nên quen thuộc với việc sử dụng Maven vì nó đơn giản hóa việc quản lý phụ thuộc trong các dự án Java.
+## Yêu cầu trước
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
 
-## Thiết lập GroupDocs.Viewer cho Java
+1. **Java Development Kit (JDK) 8+** đã được cài đặt.  
+2. **Một IDE** (IntelliJ IDEA, Eclipse, NetBeans, v.v.).  
+3. **GroupDocs.Viewer cho Java** – được thêm qua Maven (xem bên dưới).  
 
-Để tích hợp GroupDocs.Viewer vào dự án Java của bạn, hãy sử dụng Maven để cài đặt và cập nhật dễ dàng. Sau đây là cách bạn có thể thiết lập:
+### Cài đặt môi trường
+Bạn sẽ cần một máy (có thể là cục bộ hoặc từ xa) có khả năng chạy các ứng dụng Java và truy cập hệ thống tệp nơi lưu trữ các tệp CAD của bạn.
+
+## Cài đặt GroupDocs.Viewer cho Java
 
 ### Cấu hình Maven
-
-Thêm kho lưu trữ và phụ thuộc sau vào `pom.xml` tài liệu:
+Thêm kho và phụ thuộc vào `pom.xml` của bạn. Đây là thay đổi duy nhất bạn cần thực hiện trong tệp cấu hình dự án.
 
 ```xml
 <repositories>
@@ -55,27 +69,19 @@ Thêm kho lưu trữ và phụ thuộc sau vào `pom.xml` tài liệu:
 </dependencies>
 ```
 
-### Mua lại giấy phép
+### Nhận giấy phép
+GroupDocs.Viewer cung cấp bản dùng thử miễn phí, giấy phép tạm thời cho đánh giá ngắn hạn, và giấy phép đầy đủ cho môi trường sản xuất.
 
-GroupDocs.Viewer cung cấp bản dùng thử miễn phí, cho phép bạn kiểm tra khả năng của phần mềm trước khi mua hoặc có giấy phép tạm thời để đánh giá mở rộng.
+1. **Dùng thử miễn phí:** Tải xuống phiên bản mới nhất từ [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
+2. **Giấy phép tạm thời:** Đăng ký giấy phép tạm thời trên [GroupDocs Purchase Page](https://purchase.groupdocs.com/temporary-license/) để khám phá các tính năng nâng cao.  
+3. **Mua:** Đối với sử dụng lâu dài, mua giấy phép qua [GroupDocs Store](https://purchase.groupdocs.com/buy).
 
-1. **Dùng thử miễn phí:** Tải xuống phiên bản mới nhất từ [Tải xuống GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **Giấy phép tạm thời:** Nộp đơn xin cấp giấy phép tạm thời trên [Trang mua hàng của GroupDocs](https://purchase.groupdocs.com/temporary-license/) để khám phá các tính năng nâng cao.
-3. **Mua:** Để sử dụng cho mục đích sản xuất, hãy mua giấy phép thông qua [Cửa hàng GroupDocs](https://purchase.groupdocs.com/buy).
+## Hướng dẫn triển khai
 
-Sau khi thiết lập môi trường và các phụ thuộc, bạn có thể bắt đầu triển khai tính năng.
+Dưới đây là hướng dẫn từng bước cho thấy cách **retrieve CAD layouts Java** bằng GroupDocs.Viewer.
 
-## Hướng dẫn thực hiện
-
-Trong phần này, chúng tôi sẽ phân tích cách lấy bố cục và lớp CAD bằng GroupDocs.Viewer trong Java. Chúng tôi sẽ trình bày từng bước cần thiết để triển khai thành công.
-
-### Tổng quan về tính năng
-
-Chức năng này cho phép các nhà phát triển truy cập thông tin về bố cục và lớp từ các tệp CAD theo chương trình, điều này có thể rất quan trọng đối với các ứng dụng yêu cầu phân tích bản vẽ chi tiết hoặc sửa đổi dựa trên cấu trúc thiết kế.
-
-#### Bước 1: Khởi tạo GroupDocs.Viewer
-
-Tạo một trường hợp của `Viewer` bằng cách cung cấp đường dẫn đến tệp CAD của bạn. Đối tượng này sẽ đóng vai trò là cổng truy cập vào nhiều tính năng khác nhau do GroupDocs.Viewer cung cấp.
+### Bước 1: Khởi tạo Viewer
+Tạo một thể hiện `Viewer` bằng cách chỉ tới tệp CAD của bạn. Khối `try‑with‑resources` đảm bảo rằng Viewer được đóng đúng cách, giải phóng bộ nhớ.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,13 +90,12 @@ import java.io.File;
 String documentPath = new File("YOUR_DOCUMENT_DIRECTORY", "SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS").getAbsolutePath();
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // Các hoạt động tiếp theo sẽ được thực hiện ở đây.
+    // Further operations will be performed here.
 }
 ```
 
-#### Bước 2: Lấy thông tin chế độ xem CAD
-
-Sử dụng `getViewInfo` phương pháp để lấy thông tin chi tiết về bố cục và lớp. Thông tin này được đóng gói trong `CadViewInfo` sự vật.
+### Bước 2: Lấy thông tin hiển thị
+Sử dụng `getViewInfo` với `ViewInfoOptions.forHtmlView()` để nhận một đối tượng `CadViewInfo` chứa các bộ sưu tập bố cục và lớp.
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -99,65 +104,72 @@ import com.groupdocs.viewer.results.CadViewInfo;
 CadViewInfo info = (CadViewInfo) viewer.getViewInfo(ViewInfoOptions.forHtmlView());
 ```
 
-#### Bước 3: Trích xuất Bố cục và Lớp
-
-Lặp lại các bố cục và lớp được lấy từ tệp CAD. Các lần lặp này có thể giúp bạn hiểu cấu trúc thiết kế của mình hoặc thực hiện các thao tác tiếp theo như lọc hoặc sửa đổi.
+### Bước 3: Trích xuất bố cục và lớp
+Duyệt qua các bộ sưu tập `layouts` và `layers`. Bạn có thể ghi log chúng, lưu vào cơ sở dữ liệu, hoặc chuyển tới các quy trình tiếp theo.
 
 ```java
-// Lặp lại từng bố cục trong tệp CAD
+// Iterate over each layout in the CAD file
 for (Layout layout : info.getLayouts()) {
-    // Xử lý từng bố cục khi cần thiết
+    // Process each layout as needed
 }
 
-// Lặp lại qua từng lớp trong tệp CAD
+// Iterate over each layer in the CAD file
 for (Layer layer : info.getLayers()) {
-    // Xử lý từng lớp khi cần thiết
+    // Process each layer as needed
 }
 ```
 
-### Mẹo khắc phục sự cố
+### Các lỗi thường gặp & Cách tránh
+- **File Not Found:** Kiểm tra lại đường dẫn bạn truyền cho `Viewer`. Sử dụng đường dẫn tuyệt đối hoặc xác minh thư mục làm việc.  
+- **Version Mismatch:** Đảm bảo phiên bản GroupDocs.Viewer tương thích với JDK của bạn (dòng 25.x hoạt động với JDK 8‑17).  
+- **Memory Leaks:** Luôn sử dụng mẫu `try‑with‑resources` như trên; nó tự động giải phóng tài nguyên gốc.
 
-- **Ngoại lệ không tìm thấy tệp:** Đảm bảo đường dẫn tài liệu của bạn được thiết lập chính xác và có thể truy cập được.
-- **Các vấn đề về khả năng tương thích của phiên bản:** Xác minh rằng bạn đang sử dụng phiên bản GroupDocs.Viewer tương thích với thiết lập Java của mình.
+## Ứng dụng thực tiễn
+Retrieving CAD layouts Java mở ra nhiều kịch bản thực tế:
 
-## Ứng dụng thực tế
+| Trường hợp sử dụng | Lợi ích |
+|--------------------|---------|
+| **Kiểm tra thiết kế tự động** | Trích xuất tên bố cục để tạo danh sách kiểm tra cho việc tuân thủ. |
+| **Chuyển đổi hàng loạt** | Giữ nguyên khả năng hiển thị lớp khi chuyển đổi DWG sang PDF hoặc SVG. |
+| **Báo cáo tùy chỉnh** | Lấy siêu dữ liệu lớp vào Excel hoặc CSV để theo dõi kiểm toán. |
+| **Hợp tác dựa trên đám mây** | Đồng bộ thông tin bố cục và lớp với hệ thống quản lý tài liệu. |
 
-Hiểu cách lấy bố cục và lớp theo chương trình có thể mang lại lợi ích trong nhiều tình huống khác nhau:
+## Các lưu ý về hiệu năng
+Khi làm việc với các tệp CAD lớn, hãy ghi nhớ các mẹo sau:
 
-1. **Đánh giá thiết kế tự động:** Tự động trích xuất và phân tích dữ liệu bố cục để kiểm tra chất lượng.
-2. **Chuyển đổi thiết kế:** Chuyển đổi các tệp CAD sang các định dạng khác nhau trong khi vẫn giữ nguyên tính toàn vẹn về mặt cấu trúc của chúng.
-3. **Công cụ quản lý lớp:** Phát triển các công cụ giúp kỹ sư quản lý và sửa đổi thiết kế CAD hiệu quả hơn.
+- **Quản lý bộ nhớ:** Đối tượng `Viewer` giữ tài nguyên gốc; luôn đóng nó ngay khi xong.  
+- **Xử lý theo lô:** Nếu cần xử lý hàng ngàn bản vẽ, cân nhắc sử dụng hàng đợi producer‑consumer để giới hạn số lượng `Viewer` đồng thời.  
+- **Giám sát:** Dùng các công cụ profiling Java (ví dụ: VisualVM) để theo dõi mức sử dụng heap trong quá trình trích xuất.
 
-## Cân nhắc về hiệu suất
-
-Làm việc với các tệp CAD lớn có thể tốn nhiều tài nguyên, vì vậy hãy cân nhắc những mẹo sau để tối ưu hóa hiệu suất:
-
-- **Quản lý bộ nhớ:** Sử dụng thử-với-nguồn-lực cho `Viewer` các trường hợp để đảm bảo đóng và giải phóng bộ nhớ đúng cách.
-- **Lặp lại hiệu quả:** Nếu có thể, hãy xử lý các bố cục và lớp theo từng đợt để giảm chi phí.
-- **Sử dụng tài nguyên:** Theo dõi mức sử dụng CPU và bộ nhớ của ứng dụng, đặc biệt là khi xử lý các tệp CAD lớn hoặc phức tạp.
-
-## Phần kết luận
-
-Truy xuất bố cục và lớp từ bản vẽ CAD bằng GroupDocs.Viewer cho Java có thể cải thiện đáng kể cách bạn xử lý dữ liệu thiết kế theo chương trình. Hướng dẫn này đã trang bị cho bạn kiến thức để triển khai tính năng này hiệu quả trong các dự án của bạn. Để khám phá thêm, hãy cân nhắc tìm hiểu sâu hơn về các tính năng khác của GroupDocs.Viewer hoặc tích hợp nó với các công cụ bổ sung để tạo ra các giải pháp toàn diện.
+## Kết luận
+Bạn đã có một phương pháp hoàn chỉnh, sẵn sàng cho môi trường sản xuất để **retrieve CAD layouts Java** bằng GroupDocs.Viewer. Khả năng này có thể tối ưu hoá tự động hoá thiết kế, cải thiện tính nhất quán dữ liệu và giảm đáng kể công sức thủ công trong các quy trình kỹ thuật.
 
 ### Các bước tiếp theo
+- Thử trích xuất các siêu dữ liệu CAD bổ sung như kích thước hoặc định nghĩa block.  
+- Kết hợp việc trích xuất này với GroupDocs.Conversion để tạo hình ảnh preview cho mỗi bố cục.  
+- Khám phá tích hợp lưu trữ đám mây (AWS S3, Azure Blob) để lấy tệp CAD theo yêu cầu.
 
-- Thử nghiệm với các định dạng tệp CAD khác nhau được GroupDocs.Viewer hỗ trợ.
-- Khám phá cách chuyển đổi và hiển thị các tệp này bằng khả năng kết xuất của GroupDocs.Viewer.
+## Câu hỏi thường gặp
 
-## Phần Câu hỏi thường gặp
+**Q: Các thành phần chính của một bản vẽ CAD mà tôi có thể truy xuất là gì?**  
+A: Bạn có thể trích xuất bố cục, lớp, kích thước và các thông tin cấu trúc khác từ bản vẽ CAD.
 
-**Câu hỏi 1: Những thành phần chính của bản vẽ CAD mà tôi có thể lấy được là gì?**
-A1: Bạn có thể trích xuất bố cục, lớp, kích thước và thông tin cấu trúc khác từ bản vẽ CAD.
+**Q: GroupDocs.Viewer có thể xử lý mọi loại tệp CAD không?**  
+A: Có, nó hỗ trợ nhiều định dạng như DWG, DXF, DGN, v.v., nhưng luôn kiểm tra tính tương thích với loại tệp cụ thể bạn đang làm việc.
 
-**Câu hỏi 2: GroupDocs.Viewer có thể xử lý được tất cả các loại tệp CAD không?**
-A2: Có, nó hỗ trợ nhiều định dạng khác nhau như DWG, DXF, DGN, v.v., nhưng hãy luôn xác minh khả năng tương thích với loại tệp cụ thể mà bạn đang làm việc.
+**Q: Làm sao để đảm bảo ứng dụng của tôi xử lý các tệp CAD lớn một cách hiệu quả?**  
+A: Tối ưu hoá việc sử dụng bộ nhớ bằng cách đóng tài nguyên kịp thời và cân nhắc xử lý dữ liệu theo các khối nhỏ hơn nếu có thể.
 
-**Câu hỏi 3: Làm thế nào để đảm bảo ứng dụng của tôi xử lý các tệp CAD lớn một cách hiệu quả?**
-A3: Tối ưu hóa việc sử dụng bộ nhớ bằng cách đóng tài nguyên kịp thời và cân nhắc xử lý dữ liệu thành các phần nhỏ hơn nếu có thể.
+**Q: Có cách nào để lọc lớp khi trích xuất không?**  
+A: Mặc dù không có tính năng lọc trực tiếp, bạn có thể triển khai logic tùy chỉnh sau khi trích xuất để quản lý các lớp theo nhu cầu.
 
-**Câu hỏi 4: Có cách nào để lọc các lớp trong quá trình trích xuất không?**
-A4: Mặc dù không cung cấp tính năng lọc trực tiếp, bạn vẫn có thể triển khai logic tùy chỉnh sau khi trích xuất để quản lý các lớp khi cần.
+**Q: GroupDocs.Viewer có thể tích hợp với các giải pháp lưu trữ đám mây không?**  
+A: Có, nó có thể hoạt động liền mạch với nhiều dịch vụ đám mây để lưu trữ và truy cập các tệp CAD.
 
-**Câu hỏi 5: GroupDocs.Viewer có thể tích hợp với các giải pháp lưu trữ đám mây không?**
-A5: Có, nó có thể hoạt động liền mạch với nhiều dịch vụ đám mây khác nhau để lưu trữ và truy cập các tệp CAD.
+---
+
+**Cập nhật lần cuối:** 2026-04-06  
+**Đã kiểm tra với:** GroupDocs.Viewer 25.2 cho Java  
+**Tác giả:** GroupDocs  
+
+---
