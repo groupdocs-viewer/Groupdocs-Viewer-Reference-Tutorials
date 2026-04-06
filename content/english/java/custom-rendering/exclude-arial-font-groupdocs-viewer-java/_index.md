@@ -1,19 +1,21 @@
 ---
 title: "How to Render HTML and Exclude Arial Font with GroupDocs.Viewer Java"
-description: "Learn how to render html, exclude Arial font, and optimize HTML rendering using GroupDocs.Viewer for Java. Step‑by‑step guide for docx to html java conversions."
-date: "2026-01-28"
+description: "Learn how to render html, how to render html while excluding Arial font, and optimize HTML rendering using GroupDocs.Viewer for Java. Step‑by‑step guide for docx to html java conversions."
+date: "2026-04-06"
 weight: 1
 url: "/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/"
 keywords:
-- exclude Arial font GroupDocs.Viewer Java
-- render documents to HTML with GroupDocs
-- customize document rendering in Java
+  - how to render html
+  - convert docx to html
+  - embed resources html
+  - groupdocs viewer html
+  - optimize html rendering
 type: docs
 ---
 
 # How to Render HTML and Exclude Arial Font with GroupDocs.Viewer Java
 
-Rendering documents to HTML is a common requirement for web‑based applications, but unwanted fonts can break visual consistency. In this tutorial, you’ll learn **how to render html** while excluding the Arial font, ensuring your output matches your design guidelines. We’ll walk through the setup, the exact code changes, and best practices for a smooth **docx to html java** conversion.
+Rendering documents to HTML is a common requirement for web‑based applications, but unwanted fonts can break visual consistency. In this tutorial, you’ll learn **how to render html** while excluding the Arial font, ensuring your output matches your design guidelines. We'll also cover how to **convert docx to html**, embed resources in the generated pages, and **optimize html rendering** for better performance.
 
 ![Exclude Arial Font in HTML Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/exclude-arial-font-in-html-rendering-java.png)
 
@@ -28,6 +30,9 @@ Rendering documents to HTML is a common requirement for web‑based applications
 - **Which library version?** The guide uses GroupDocs.Viewer for Java 25.2 (or the latest stable release).  
 - **What input formats are supported?** DOCX, PDF, PPTX, XLSX, and many more.  
 - **Is a license required?** A free trial works for testing; a full license is needed for production.
+
+## How to Render HTML with GroupDocs.Viewer Java
+Before diving into the code, let’s understand why rendering HTML is valuable. HTML output lets you display documents directly in browsers without requiring external viewers, making it ideal for web portals, CMS integrations, and mobile-friendly previews.
 
 ## Prerequisites
 
@@ -98,7 +103,7 @@ Create an `HtmlViewOptions` object that specifies how HTML rendering should be h
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-This setup ensures all resources are embedded within the HTML files, making them self‑contained.
+This setup ensures all resources are embedded within the HTML files, making them **self‑contained** and ideal for **embed resources html** scenarios.
 
 #### 4. Exclude Specific Fonts
 Add the font you wish to exclude (in this case, Arial) from rendering in the output:
@@ -123,6 +128,9 @@ The try‑with‑resources statement ensures that the `viewer` is closed properl
 ### Troubleshooting Tips
 - **Common Issue**: Ensure paths are correct and accessible; incorrect paths can lead to file‑not‑found errors.
 - **Performance Tip**: When rendering large documents, monitor memory usage as embedded resources may increase load times.
+
+## How to Convert DOCX to HTML Using GroupDocs.Viewer
+The same `HtmlViewOptions` configuration works for any supported format, including DOCX. Simply point the `Viewer` constructor to a `.docx` file, and the library will handle the conversion while respecting the font‑exclusion settings.
 
 ## Why This Matters: Real‑World Use Cases
 
@@ -178,6 +186,6 @@ A8: A free trial suffices for development and testing; a commercial license is r
 
 ---
 
-**Last Updated:** 2026-01-28  
+**Last Updated:** 2026-04-06  
 **Tested With:** GroupDocs.Viewer for Java 25.2  
 **Author:** GroupDocs
