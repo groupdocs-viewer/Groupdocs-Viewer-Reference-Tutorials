@@ -1,43 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách thiết lập ghi nhật ký bằng GroupDocs.Viewer cho Java, bao gồm ghi nhật ký dựa trên bảng điều khiển và tệp, để cải thiện quy trình hiển thị tài liệu của bạn."
-"title": "Cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java&#58; Console và Hướng dẫn ghi nhật ký tệp"
-"url": "/vi/java/getting-started/groupdocs-viewer-java-logging-setup/"
-"weight": 1
+date: '2026-04-10'
+description: Tìm hiểu cách cấu hình ghi log trong GroupDocs.Viewer cho Java, bao gồm
+  cách thêm logger console và logger file để cải thiện việc hiển thị tài liệu.
+keywords:
+- how to configure logging
+- add console logger
+- add file logger
+- java logging best practices
+- html view options
+title: Cách cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java
 type: docs
+url: /vi/java/getting-started/groupdocs-viewer-java-logging-setup/
+weight: 1
 ---
-# Cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java
+
+# Cách cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java
+
+Trong hướng dẫn này, bạn sẽ học **cách cấu hình ghi nhật ký** trong GroupDocs.Viewer cho Java, giúp bạn có cái nhìn thời gian thực vào quy trình render tài liệu và hỗ trợ nhanh chóng trong việc khắc phục sự cố.
+
+## Câu trả lời nhanh
+- **Logging cung cấp gì?** Phản hồi thời gian thực về các hoạt động render và chi tiết lỗi.  
+- **Logger nào in ra console?** `ConsoleLogger` (thêm console logger).  
+- **Logger nào ghi vào file?** `FileLogger` (thêm file logger).  
+- **Có cần giấy phép để bật ghi nhật ký không?** Không, ghi nhật ký hoạt động cả với phiên bản dùng thử và bản có giấy phép.  
+- **Tôi có thể tùy chỉnh định dạng log không?** Có, bằng cách mở rộng các lớp logger.  
 
 ## Giới thiệu
-Cải thiện quá trình kết xuất tài liệu của bạn trong các ứng dụng Java bằng cách sử dụng **GroupDocs.Viewer cho Java**. Hướng dẫn này hướng dẫn bạn cách cấu hình ghi nhật ký vào bảng điều khiển hoặc tệp, cung cấp thông tin chi tiết quan trọng về cách hoạt động kết xuất tài liệu của bạn.
+Nâng cao quy trình render tài liệu trong các ứng dụng Java bằng **GroupDocs.Viewer cho Java**. Hướng dẫn này sẽ chỉ cho bạn cách cấu hình ghi nhật ký vào console hoặc file, cung cấp những hiểu biết quan trọng về cách hoạt động của quá trình render tài liệu.
 
-**Những điểm chính cần học:**
-- Cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java.
-- Triển khai cả hệ thống ghi nhật ký dựa trên bảng điều khiển và tệp.
-- Kết xuất tài liệu sang HTML với các tài nguyên được nhúng bằng GroupDocs.Viewer.
+![Ghi nhật ký Console và File với GroupDocs.Viewer cho Java](/viewer/getting-started/console-and-file-logging-java.png)
 
-Trước khi bắt đầu thiết lập môi trường, chúng ta hãy xem lại các điều kiện tiên quyết.
+**Các điểm học chính:**
+- Cấu hình ghi nhật ký trong GroupDocs.Viewer cho Java.  
+- Triển khai cả hệ thống ghi nhật ký dựa trên console và file.  
+- Render tài liệu thành HTML với tài nguyên nhúng bằng GroupDocs.Viewer.  
 
-## Điều kiện tiên quyết
+## Yêu cầu trước
 Đảm bảo bạn có:
-1. **Thư viện cần thiết:**
-   - Thư viện GroupDocs.Viewer cho Java (phiên bản 25.2 trở lên).
+1. **Thư viện cần thiết:**  
+   - Thư viện GroupDocs.Viewer cho Java (phiên bản 25.2 trở lên).  
 
-2. **Yêu cầu thiết lập môi trường:**
-   - Bộ công cụ phát triển Java (JDK) được cài đặt trên hệ thống của bạn.
-   - Môi trường phát triển tích hợp (IDE) như IntelliJ IDEA hoặc Eclipse.
+2. **Yêu cầu thiết lập môi trường:**  
+   - Java Development Kit (JDK) được cài đặt trên hệ thống của bạn.  
+   - Môi trường phát triển tích hợp (IDE) như IntelliJ IDEA hoặc Eclipse.  
 
-3. **Điều kiện tiên quyết về kiến thức:**
-   - Hiểu biết cơ bản về lập trình Java.
-   - Quen thuộc với Maven để quản lý sự phụ thuộc.
+3. **Kiến thức nền tảng:**  
+   - Hiểu biết cơ bản về lập trình Java.  
+   - Quen thuộc với Maven để quản lý phụ thuộc.  
 
-Với những điều kiện tiên quyết này, bạn đã sẵn sàng để thiết lập GroupDocs.Viewer cho Java!
+Với các yêu cầu này đã sẵn sàng, bạn đã chuẩn bị để thiết lập GroupDocs.Viewer cho Java!
 
-## Thiết lập GroupDocs.Viewer cho Java
-Để sử dụng GroupDocs.Viewer, hãy thêm nó dưới dạng dependency trong dự án của bạn bằng Maven. Sau đây là cách thực hiện:
+## Cài đặt GroupDocs.Viewer cho Java
+Để sử dụng GroupDocs.Viewer, thêm nó như một phụ thuộc trong dự án của bạn bằng Maven. Đây là cách thực hiện:
 
-### Thiết lập Maven
-Thêm cấu hình sau vào `pom.xml` tài liệu:
+### Cấu hình Maven
+Thêm cấu hình sau vào tệp `pom.xml` của bạn:
 ```xml
 <repositories>
     <repository>
@@ -55,43 +72,44 @@ Thêm cấu hình sau vào `pom.xml` tài liệu:
 </dependencies>
 ```
 
-### Mua lại giấy phép
-- **Dùng thử miễn phí:** Tải xuống bản dùng thử miễn phí từ [Bản phát hành GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Giấy phép tạm thời:** Xin giấy phép tạm thời để xóa bỏ các hạn chế đánh giá tại [Giấy phép tạm thời của GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Mua:** Để có quyền truy cập đầy đủ, hãy cân nhắc mua giấy phép tại [Mua GroupDocs](https://purchase.groupdocs.com/buy).
+### Nhận giấy phép
+- **Dùng thử miễn phí:** Tải bản dùng thử miễn phí từ [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Giấy phép tạm thời:** Nhận giấy phép tạm thời để loại bỏ các hạn chế đánh giá tại [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Mua bản quyền:** Để có quyền truy cập đầy đủ, hãy cân nhắc mua giấy phép tại [GroupDocs Purchase](https://purchase.groupdocs.com/buy).  
 
 ### Khởi tạo cơ bản
-Khởi tạo GroupDocs.Viewer theo mẫu sau:
+Khởi tạo GroupDocs.Viewer bằng mẫu sau:
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Khởi tạo với tệp PDF mẫu và các thiết lập
+// Initialize with sample PDF file and settings
 try (Viewer viewer = new Viewer("path/to/your/document.pdf")) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources("output_directory/page_{0}.html");
     viewer.view(options);
 }
 ```
 
-Thiết lập này tạo thành nền tảng cho các cấu hình ghi nhật ký phức tạp hơn.
+Cấu hình này tạo nền tảng cho các cấu hình ghi nhật ký phức tạp hơn.
 
-## Hướng dẫn thực hiện
-Khám phá cách triển khai ghi nhật ký dựa trên bảng điều khiển và tệp với GroupDocs.Viewer.
+## Cách cấu hình ghi nhật ký
+Khám phá cách **thêm console logger** và **thêm file logger** với GroupDocs.Viewer.
 
-### Tính năng 1: Ghi vào Console
+### Tính năng 1: Ghi nhật ký vào Console
 #### Tổng quan
-Việc ghi vào bảng điều khiển sẽ cung cấp phản hồi ngay lập tức trên thiết bị đầu cuối của bạn, hữu ích trong giai đoạn phát triển hoặc gỡ lỗi.
+Ghi nhật ký vào console cung cấp phản hồi ngay lập tức trong terminal của bạn, hữu ích trong giai đoạn phát triển hoặc gỡ lỗi.
 
-#### Các bước thực hiện:
-##### Bước 1: Nhập các lớp bắt buộc
+#### Các bước
+##### Bước 1: Nhập các lớp cần thiết
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.ViewerSettings;
 import com.groupdocs.viewer.logging.ConsoleLogger;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
+
 ##### Bước 2: Thiết lập cấu hình ghi nhật ký
-Sử dụng `ConsoleLogger` để chuyển hướng nhật ký tới bảng điều khiển.
+Sử dụng `ConsoleLogger` để chuyển log tới console.
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.pdf", 
     new ViewerSettings(new ConsoleLogger()))) {
@@ -99,27 +117,28 @@ try (Viewer viewer = new Viewer("path/to/your/document.pdf",
     viewer.view(options);
 }
 ```
-##### Giải thích
-- **Trình ghi giao diện điều khiển:** Lớp này chuyển hướng nhật ký đến bảng điều khiển, cung cấp chế độ xem hoạt động theo thời gian thực.
-- **HtmlViewOptions.choEmbeddedResources:** Tạo HTML có nhúng tài nguyên cho mỗi trang.
+**Giải thích**  
+- **ConsoleLogger:** Lớp này chuyển log tới console, cung cấp cái nhìn thời gian thực về các hoạt động.  
+- **HtmlViewOptions.forEmbeddedResources:** Tạo HTML với tài nguyên nhúng cho mỗi trang, là một ví dụ về việc sử dụng **html view options** một cách hiệu quả.
 
 #### Mẹo khắc phục sự cố
-Đảm bảo đường dẫn tài liệu của bạn chính xác và có thể truy cập được. Xác minh rằng các câu lệnh ghi nhật ký được cấu hình phù hợp trong cài đặt bảng điều khiển của bạn.
+Đảm bảo đường dẫn tài liệu của bạn đúng và có thể truy cập. Xác minh rằng các câu lệnh ghi nhật ký được cấu hình đúng trong cài đặt console của bạn.
 
-### Tính năng 2: Ghi vào tệp
+### Tính năng 2: Ghi nhật ký vào File
 #### Tổng quan
-Việc ghi vào tệp giúp duy trì hồ sơ hoạt động liên tục, hữu ích cho việc kiểm tra hoặc phân tích sau sự cố.
+Ghi nhật ký vào file giúp duy trì bản ghi lâu dài các hoạt động, hữu ích cho việc kiểm toán hoặc phân tích sau sự cố.
 
-#### Các bước thực hiện:
-##### Bước 1: Nhập các lớp bắt buộc
+#### Các bước
+##### Bước 1: Nhập các lớp cần thiết
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.ViewerSettings;
 import com.groupdocs.viewer.logging.FileLogger;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
-##### Bước 2: Thiết lập cấu hình ghi nhật ký dựa trên tệp
-Sử dụng `FileLogger` để ghi nhật ký vào một tập tin được chỉ định.
+
+##### Bước 2: Thiết lập cấu hình ghi nhật ký dựa trên file
+Sử dụng `FileLogger` để ghi log vào một file được chỉ định.
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.pdf", 
     new ViewerSettings(new FileLogger("output.log")))) {
@@ -127,43 +146,37 @@ try (Viewer viewer = new Viewer("path/to/your/document.pdf",
     viewer.view(options);
 }
 ```
-##### Giải thích
-- **Trình ghi tệp:** Lớp này hướng các bản ghi đến một tệp có tên `output.log`.
-- **ViewerSettings với FileLogger:** Cấu hình GroupDocs.Viewer để ghi lại các hoạt động trong tệp nhật ký được chỉ định.
+**Giải thích**  
+- **FileLogger:** Lớp này chuyển log tới một file có tên `output.log`.  
+- **ViewerSettings với FileLogger:** Cấu hình GroupDocs.Viewer để **bắt các log của viewer** trong file log đã chỉ định.
 
 #### Mẹo khắc phục sự cố
-Đảm bảo thư mục cho tệp đầu ra có thể ghi được. Kiểm tra quyền của tệp nếu ghi nhật ký không thành công.
+Đảm bảo thư mục cho file đầu ra có quyền ghi. Kiểm tra quyền file nếu ghi nhật ký thất bại.
 
-## Ứng dụng thực tế
-GroupDocs.Viewer có thể nâng cao khả năng quản lý và hiển thị tài liệu:
-1. **Cổng thông tin web:** Hiển thị tài liệu ngay lập tức cho người dùng web mà không cần tải xuống trực tiếp.
-2. **Hệ thống doanh nghiệp:** Tích hợp với các công cụ CRM để hiển thị hợp đồng hoặc thỏa thuận.
-3. **Bảng điều khiển nội bộ:** Cung cấp chế độ xem báo cáo và bài thuyết trình dễ tiếp cận trong mạng nội bộ.
+## Ứng dụng thực tiễn
+GroupDocs.Viewer có thể nâng cao khả năng quản lý và render tài liệu:
+1. **Cổng thông tin web:** Render tài liệu ngay lập tức cho người dùng web mà không cần tải xuống trực tiếp.  
+2. **Hệ thống doanh nghiệp:** Tích hợp với công cụ CRM để hiển thị hợp đồng hoặc thỏa thuận.  
+3. **Bảng điều khiển nội bộ:** Cung cấp các view dễ truy cập của báo cáo và bản trình bày trong mạng nội bộ.  
 
-## Cân nhắc về hiệu suất
-Khi sử dụng GroupDocs.Viewer trong Java, hãy cân nhắc:
-- **Tối ưu hóa việc sử dụng tài nguyên:** Theo dõi mức sử dụng bộ nhớ khi hiển thị các tài liệu lớn.
-- **Thực hành tốt nhất về quản lý bộ nhớ Java:** Sử dụng tính năng thử với tài nguyên để quản lý tài nguyên tự động.
-- **Điều chỉnh hiệu suất:** Điều chỉnh mức độ chi tiết của nhật ký để cân bằng giữa chi tiết và tác động đến hiệu suất.
+## Các cân nhắc về hiệu năng & Thực hành tốt cho Java Logging
+Khi sử dụng GroupDocs.Viewer trong Java, hãy lưu ý các điểm sau:
+- **Tối ưu hóa sử dụng tài nguyên:** Giám sát mức tiêu thụ bộ nhớ khi render tài liệu lớn.  
+- **Quản lý bộ nhớ Java:** Sử dụng try‑with‑resources để tự động dọn dẹp tài nguyên.  
+- **Mức độ chi tiết của log:** Điều chỉnh mức logger (ví dụ: INFO, DEBUG) để cân bằng chi tiết và ảnh hưởng tới hiệu năng—một phần quan trọng của **java logging best practices**.  
 
-## Phần kết luận
-Bạn đã học cách cấu hình GroupDocs.Viewer Java để ghi lại các hoạt động kết xuất tài liệu vào bảng điều khiển hoặc tệp. Khả năng này vô cùng hữu ích để gỡ lỗi, giám sát và kiểm tra các ứng dụng của bạn. Khám phá thêm các cấu hình và tích hợp GroupDocs.Viewer với các hệ thống khác để nâng cao tiện ích của nó trong các dự án của bạn.
+## Kết luận
+Bạn đã học **cách cấu hình ghi nhật ký** trong GroupDocs.Viewer cho Java, dù bạn cần một view console nhanh chóng hay một bản ghi file lâu dài. Khả năng này vô giá cho việc gỡ lỗi, giám sát và kiểm toán các ứng dụng của bạn. Khám phá các cấu hình khác, thử nghiệm các logger tùy chỉnh, và tích hợp GroupDocs.Viewer với các hệ thống khác để tăng cường độ bền vững.
 
-Sẵn sàng nâng cao kỹ năng triển khai của bạn lên một tầm cao mới? Hãy thử thiết lập ghi nhật ký trong các môi trường khác nhau và quan sát cách nó tăng cường tính mạnh mẽ của ứng dụng của bạn!
-
-## Phần Câu hỏi thường gặp
-1. **Cách tốt nhất để xử lý các tài liệu lớn bằng GroupDocs.Viewer Java là gì?**
-   - Sử dụng các biện pháp quản lý bộ nhớ hiệu quả và cân nhắc việc hiển thị các trang cụ thể thay vì toàn bộ tài liệu.
-2. **Tôi có thể ghi lại thông tin bổ sung ngoài thông tin đầu ra từ bảng điều khiển và tệp không?**
-   - Có, mở rộng chức năng ghi nhật ký bằng cách triển khai các lớp ghi nhật ký tùy chỉnh tích hợp với các hệ thống khác như cơ sở dữ liệu hoặc công cụ giám sát.
-3. **Làm sao để đảm bảo nhật ký của tôi được an toàn?**
-   - Lưu trữ tệp nhật ký trong các thư mục an toàn và triển khai các biện pháp kiểm soát truy cập phù hợp để ngăn chặn truy cập trái phép.
-4. **Có thể thay đổi định dạng nhật ký khi sử dụng FileLogger không?**
-   - Có, tùy chỉnh hành vi ghi nhật ký của bạn bằng cách mở rộng `FileLogger` lớp và ghi đè các phương thức của lớp đó khi cần.
-5. **GroupDocs.Viewer có thể hiển thị các tài liệu không phải PDF không?**
-   - Chắc chắn rồi! GroupDocs.Viewer hỗ trợ nhiều định dạng tài liệu bao gồm Word, Excel, PowerPoint, v.v.
+Sẵn sàng nâng cao kỹ năng triển khai của bạn lên mức tiếp theo? Hãy thử thiết lập ghi nhật ký trong các môi trường khác nhau và quan sát cách nó cải thiện độ tin cậy của ứng dụng!
 
 ## Tài nguyên
 - [Tài liệu](https://docs.groupdocs.com/viewer/java/)
-- [Tài liệu tham khảo API](https://reference.groupdocs.com/viewer/java/)
-- [Tải về](https://downloads.groupdocs.com/viewer/java/)
+- [Tham chiếu API](https://reference.groupdocs.com/viewer/java/)
+- [Tải xuống](https://downloads.groupdocs.com/viewer/java/)
+
+---
+
+**Cập nhật lần cuối:** 2026-04-10  
+**Kiểm tra với:** GroupDocs.Viewer 25.2 for Java  
+**Tác giả:** GroupDocs
