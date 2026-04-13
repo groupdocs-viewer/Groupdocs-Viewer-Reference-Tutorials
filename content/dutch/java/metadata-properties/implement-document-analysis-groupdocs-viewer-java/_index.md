@@ -1,47 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "Leer hoe u GroupDocs.Viewer voor Java kunt gebruiken om paginanummers en tekstregels uit documenten te extraheren. Deze handleiding behandelt de installatie, implementatie en praktische toepassingen."
-"title": "Documentanalyse implementeren met GroupDocs.Viewer voor Java&#58; paginametagegevens en tekstregels extraheren"
-"url": "/nl/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-13'
+description: Leer hoe je tekst uit docx kunt extraheren met GroupDocs.Viewer voor
+  Java, inclusief paginametagegevens en het extraheren van tekstregels. Installatie,
+  code en praktijkvoorbeelden worden behandeld.
+keywords:
+- extract text from docx
+- GroupDocs Viewer Java
+- document metadata extraction
+title: Tekst extraheren uit docx met GroupDocs.Viewer voor Java
 type: docs
+url: /nl/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/
+weight: 1
 ---
-# Documentanalyse implementeren met GroupDocs.Viewer voor Java: paginametagegevens en tekstregels extraheren
 
-## Invoering
+# Tekst extraheren uit docx met GroupDocs.Viewer voor Java
 
-Wilt u documenten programmatisch analyseren? Of het nu gaat om het extraheren van gegevens of het begrijpen van de lay-out van de inhoud, het kan een uitdaging zijn. **GroupDocs.Viewer voor Java** vereenvoudigt dit door krachtige functies te bieden om paginametadata en tekstregels efficiënt te extraheren. Deze tutorial begeleidt u bij het instellen en gebruiken van GroupDocs.Viewer in uw Java-applicaties.
+Zoek je naar een manier om **tekst uit docx** bestanden programmatisch te **extraheren**? Of je nu paginanummers wilt ophalen, elke regel tekst wilt vastleggen, of doorzoekbare indexen wilt bouwen, dit handmatig doen kan tijdrovend en foutgevoelig zijn. **GroupDocs.Viewer for Java** maakt het proces eenvoudig door high‑performance API's te bieden die de structuur van een document lezen en schone tekstgegevens retourneren.
 
-### Wat je zult leren
+In deze tutorial leer je hoe je GroupDocs.Viewer instelt, paginametagegevens extraheert en elke tekstregel uit een DOCX‑bestand haalt. Aan het einde heb je een kant‑klaar oplossing die je in elke Java‑gebaseerde backend kunt integreren.
 
-- GroupDocs.Viewer instellen voor Java
-- Paginanummers uit documenten extraheren
-- Tekstregels ophalen uit documentpagina's
-- Praktische use cases en integratietips
+![Documentanalyse met GroupDocs.Viewer voor Java](/viewer/metadata-properties/document-analysis.png)
 
-Aan het einde van de cursus bent u in staat robuuste oplossingen te bouwen waarmee u documentinhoud efficiënt kunt verwerken en analyseren.
+## Snelle antwoorden
+- **Wat betekent “tekst uit docx extraheren”?** Het betekent het programmatisch lezen van een DOCX‑bestand en het ophalen van de platte‑tekstinhoud regel voor regel.  
+- **Welke bibliotheek behandelt dit?** GroupDocs.Viewer for Java biedt de `Viewer`‑klasse en gerelateerde API's.  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een betaalde licentie is vereist voor productie.  
+- **Welke Java‑versie is vereist?** Elke JDK 8 + die compatibel is met Maven.  
+- **Kan ik grote batches verwerken?** Ja—door `Viewer`‑instanties te hergebruiken en pagina's in streams te verwerken.
 
-Laten we beginnen met de vereisten om te kunnen beginnen.
+## Wat betekent “tekst uit docx extraheren”?
+Tekst extraheren uit een DOCX‑bestand betekent het lezen van de interne XML‑structuur van het document en het retourneren van de mens‑leesbare tekst zonder opmaak. Dit is nuttig voor indexering, zoeken of het voeden van inhoud in downstream‑analyse‑pijplijnen.
+
+## Waarom GroupDocs.Viewer voor Java gebruiken?
+- **Nauwkeurigheid:** Handelt complexe lay-outs, tabellen en meer‑koloms documenten.  
+- **Snelheid:** Geoptimaliseerde renderengine die zelfs bij grote bestanden snel werkt.  
+- **Cross‑format ondersteuning:** Dezelfde API werkt voor PDF, PPTX, XLSX en meer, zodat je code kunt hergebruiken.  
+- **Geen externe afhankelijkheden:** Pure Java, geen native bibliotheken nodig.
 
 ## Vereisten
+- Java Development Kit (JDK) 8 of nieuwer.  
+- Maven geïnstalleerd voor afhankelijkheidsbeheer.  
+- Een DOCX‑bestand dat je wilt analyseren (plaats het in een bekende map).  
 
-Voordat u GroupDocs.Viewer-functies in Java implementeert, moet u ervoor zorgen dat u over het volgende beschikt:
+## GroupDocs.Viewer voor Java instellen
 
-### Vereiste bibliotheken en versies
-- **GroupDocs.Viewer voor Java** (versie 25.2 of later)
-- Maven-configuratie in uw ontwikkelomgeving voor het beheren van afhankelijkheden
-
-### Vereisten voor omgevingsinstellingen
-- Er is een compatibele Java Development Kit (JDK) geïnstalleerd.
-- Kennis van basisconcepten van Java-programmering.
-
-### Kennisvereisten
-- Basiskennis van Maven en afhankelijkheidsbeheer in Java-projecten.
-- Ervaring met bestands-I/O-bewerkingen in Java is een pré.
-
-## GroupDocs.Viewer instellen voor Java
-
-Om te beginnen, neem de benodigde afhankelijkheden op in je project. Als je Maven gebruikt, voeg dan de volgende configuratie toe aan je project. `pom.xml`:
+Voeg de GroupDocs‑repository en afhankelijkheid toe aan je `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,135 +64,118 @@ Om te beginnen, neem de benodigde afhankelijkheden op in je project. Als je Mave
 </dependencies>
 ```
 
-### Stappen voor het verkrijgen van een licentie
-
-- **Gratis proefperiode:** Download een gratis proefversie van de [GroupDocs-downloadpagina](https://releases.groupdocs.com/viewer/java/).
-- **Tijdelijke licentie:** Verkrijg een tijdelijke licentie voor uitgebreide tests via de [tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).
-- **Aankoop:** Voor volledige toegang en ondersteuning kunt u overwegen een licentie aan te schaffen via de [GroupDocs-aankoopportaal](https://purchase.groupdocs.com/buy).
+### Stappen voor licentie‑acquisitie
+- **Gratis proefversie:** Download een gratis proefversie van de [GroupDocs downloadpagina](https://releases.groupdocs.com/viewer/java/).  
+- **Tijdelijke licentie:** Verkrijg een tijdelijke licentie voor uitgebreid testen via de [tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).  
+- **Aankoop:** Voor volledige toegang en ondersteuning, overweeg een licentie aan te schaffen via het [GroupDocs aankoopportaal](https://purchase.groupdocs.com/buy).
 
 ### Basisinitialisatie
+1. Importeer de benodigde klassen.  
+2. Maak een `Viewer`‑instantie die naar je DOCX‑bestand wijst.  
+3. Gebruik `ViewInfoOptions.forPngView(true)` om paginaniveau‑informatie (metagegevens en tekstregels) op te vragen.
 
-Om GroupDocs.Viewer in uw Java-toepassing te initialiseren:
-1. Importeer de benodigde klassen.
-2. Maak een `Viewer` object met uw documentpad.
-3. Gebruik `ViewInfoOptions.forPngView(true)` om PNG-rendering te specificeren.
+## Hoe tekst uit docx te extraheren – Stapsgewijze gids
 
-## Implementatiegids
+### 1. Pagina‑metagegevens extraheren
+Paginametagegevens, zoals het paginanummer, zijn essentieel wanneer je navigatiestructuren wilt bouwen of specifieke secties wilt refereren.
 
-We splitsen de implementatie op in twee hoofdfuncties: het extraheren van paginametagegevens en tekstregels uit documenten.
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
+    ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
+    ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
+```
 
-### Paginametagegevens extraheren
+```java
+    for (Page page : viewInfo.getPages()) {
+        int pageNumber = page.getNumber();
+        System.out.println("Page: " + pageNumber); // Outputs the page number
+    }
+}
+```
 
-Met deze functie kunt u metagegevens ophalen, zoals paginanummers. Deze gegevens zijn van onschatbare waarde voor indexering of navigatie.
+- `ViewInfoOptions.forPngView(true)`: Instrueert de API om paginainformatie te verzamelen tijdens het voorbereiden van PNG‑rendering.  
+- `viewInfo.getPages()`: Retourneert een collectie waarbij elk `Page`‑object zijn nummer en andere metagegevens bevat.
 
-#### Overzicht
-- **Doel:** Om door elke pagina in een document te itereren en het paginanummer te extraheren.
-  
-#### Implementatiestappen
+**Pro tip:** Vernietig de `Viewer` binnen een try‑with‑resources‑blok om native resources automatisch vrij te geven.
 
-1. **Initialiseer Viewer:"
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-       ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
-       ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
-   ```
-2. **Herhaal over pagina's:**
-   ```java
-   for (Page page : viewInfo.getPages()) {
-       int pageNumber = page.getNumber();
-       System.out.println("Page: " + pageNumber); // Geeft het paginanummer weer
-   }
-   ```
-3. **Parameters en methoden uitleggen:**
-   - `ViewInfoOptions.forPngView(true)`: Hiermee wordt geconfigureerd dat de pagina-info als PNG wordt opgehaald voor rendering.
-   - `getPage()`: Haalt een lijst op met pagina's die metagegevens bevatten.
+### 2. Tekstregels uit pagina's extraheren
+Nu je elke pagina kunt identificeren, laten we de daadwerkelijke tekstregels ophalen.
 
-#### Tips voor probleemoplossing
-- Zorg ervoor dat het documentpad correct is.
-- Controleer of de afhankelijkheidsversie van GroupDocs.Viewer overeenkomt met uw instellingen.
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
+    ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
+    ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
+```
 
-### Tekstregels uit pagina's extraheren
+```java
+    for (Page page : viewInfo.getPages()) {
+        System.out.println("Page: " + page.getNumber());
+        System.out.println("Text lines:");
+        
+        for (Line line : page.getLines()) {
+            String lineText = line.getValue();
+            System.out.print(lineText + "\t");
+        }
+    }
+}
+```
 
-Extraheer tekstregels om de inhoudsstructuur te analyseren en specifieke informatie per pagina te verzamelen.
+- `page.getLines()`: Retourneert een lijst van `Line`‑objecten, elk een enkele tekstregel representerend zoals die op de pagina verschijnt.  
+- De interne lus print elke regel, gescheiden door tabs voor leesbaarheid.
 
-#### Overzicht
-- **Doel:** Om elke tekstregel op de pagina's van een document te extraheren en af te drukken.
-  
-#### Implementatiestappen
-
-1. **Viewer instellen:"
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-       ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
-       ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
-   ```
-2. **Regels ophalen en afdrukken:**
-   ```java
-   for (Page page : viewInfo.getPages()) {
-       System.out.println("Page: " + page.getNumber());
-       System.out.println("Text lines:");
-       
-       for (Line line : page.getLines()) {
-           String lineText = line.getValue();
-           System.out.print(lineText + "\t");
-       }
-   }
-   ```
-3. **Belangrijkste configuraties en methoden:**
-   - `getLines()`Haalt tekstregels op van een bepaalde pagina.
-   - De lus doorloopt elke regel en drukt de inhoud ervan af.
-
-#### Tips voor probleemoplossing
-- Controleer of het documentformaat wordt ondersteund door GroupDocs.Viewer.
-- Controleer of er uitzonderingen zijn met betrekking tot bestandstoegang of machtigingen.
+### Veelvoorkomende problemen & oplossingen
+| Symptoom | Waarschijnlijke oorzaak | Oplossing |
+|---------|--------------|-----|
+| `null` paginanummers | Document niet correct geladen | Controleer het bestandspad en zorg dat het bestand bestaat. |
+| Geen tekstregels geretourneerd | Niet‑ondersteund bestandsformaat | Controleer of de DOCX‑versie wordt ondersteund; upgrade GroupDocs indien nodig. |
+| `OutOfMemoryError` bij grote bestanden | Viewer houdt te veel pagina's in het geheugen | Verwerk pagina's in kleinere batches of hergebruik dezelfde `Viewer`‑instantie. |
 
 ## Praktische toepassingen
+1. **Zoekmachine‑indexering:** Sla paginanummers op naast de geëxtraheerde tekst om precieze fragment‑ophaling mogelijk te maken.  
+2. **Juridische documentreview:** Haal elke regel op voor geautomatiseerde clausule‑detectie of redactieworkflows.  
+3. **Contentmigratie:** Verplaats legacy DOCX‑inhoud naar een CMS terwijl de structuur behouden blijft.  
+4. **Rapportagedashboards:** Vat belangrijke secties samen door koppen en opsommingstekens te extraheren.  
 
-Hier zijn enkele toepassingen in de echte wereld waarbij deze functies nuttig kunnen zijn:
-1. **Documentindexering:** Automatiseer indexeringsprocessen door paginanummers en tekstregels op te halen, waardoor snelle zoekopdrachten mogelijk worden.
-2. **Hulpmiddelen voor inhoudsanalyse:** Ontwikkel hulpmiddelen waarmee u de structuur en opmaak van inhoud kunt analyseren.
-3. **Integratie met zoekmachines:** Verbeter de zoekmogelijkheden voor documenten binnen uw toepassingen.
-4. **Gegevensextractie voor rapporten:** Haal specifieke datapunten uit documenten om rapporten of samenvattingen te genereren.
-5. **Verwerking van juridische documenten:** Gebruik tekstextractie om de beoordeling van juridische documenten te automatiseren.
-
-## Prestatieoverwegingen
-
-Houd bij het werken met GroupDocs.Viewer rekening met de volgende tips voor optimale prestaties:
-- **Resourcebeheer:** Zorg voor efficiënt geheugengebruik door het weg te gooien `Viewer` objecten op de juiste manier.
-- **Batchverwerking:** Verwerk documenten in batches als u met grote volumes te maken hebt.
-- **Configuratie-afstemming:** Pas de renderingopties aan op basis van uw specifieke behoeften om de overhead te verminderen.
+## Prestatie‑overwegingen
+- **Correct vrijgeven:** Sluit altijd de `Viewer` (gebruik try‑with‑resources).  
+- **Batchverwerking:** Bij het verwerken van veel documenten, hergebruik één `Viewer`‑instantie per thread om overhead te verminderen.  
+- **Renderopties:** Als je alleen tekst nodig hebt, kun je PNG‑rendering overslaan door `ViewInfoOptions.forTextView()` te gebruiken (hier niet getoond) om de verwerkingstijd te verkorten.
 
 ## Conclusie
-
-In deze tutorial heb je geleerd hoe je GroupDocs.Viewer voor Java instelt en paginametadata en tekstregels uit documenten extraheert. Deze mogelijkheden kunnen de workflows voor documentverwerking aanzienlijk verbeteren door geautomatiseerde gegevensextractie en -analyse mogelijk te maken.
+Je weet nu hoe je **tekst uit docx** bestanden kunt **extraheren** met GroupDocs.Viewer voor Java, paginanummers kunt ophalen en door elke tekstregel kunt itereren. Deze bouwstenen stellen je in staat krachtige documentverwerkings‑pijplijnen te maken die snel, betrouwbaar en gemakkelijk te onderhouden zijn.
 
 ### Volgende stappen
+- Experimenteer met andere formaten (PDF, PPTX) met dezelfde API.  
+- Combineer geëxtraheerde tekst met een full‑text zoekmachine zoals Elasticsearch.  
+- Verken stijlopties voor gerenderde afbeeldingen als je ook visuele previews nodig hebt.
 
-Om uw begrip te verdiepen:
-- Ontdek andere functies van GroupDocs.Viewer.
-- Experimenteer met verschillende documentformaten.
-- Integreer deze functionaliteiten in grotere applicaties.
+## Veelgestelde vragen
 
-**Oproep tot actie:** Probeer deze oplossingen vandaag nog in uw projecten te implementeren!
+**Q: Welke bestandsformaten ondersteunt GroupDocs.Viewer?**  
+A: Het ondersteunt een breed scala, waaronder DOCX, PDF, XLSX, PPTX en nog veel meer.
 
-## FAQ-sectie
+**Q: Kan ik het uitvoerformaat aanpassen bij het extraheren van regels?**  
+A: Ja, door `ViewInfoOptions` te configureren (bijv. `forTextView()` voor pure tekst).
 
-1. **Welke bestandsformaten ondersteunt GroupDocs.Viewer?**
-   - Het ondersteunt een breed scala aan bestanden, waaronder DOCX, PDF, XLSX en meer.
-2. **Kan ik het uitvoerformaat aanpassen bij het extraheren van regels?**
-   - Ja, door te configureren `ViewInfoOptions`.
-3. **Is er een limiet aan het aantal pagina's dat verwerkt kan worden?**
-   - Hoewel er geen vaste limiet is, kunnen de prestaties bij grote documenten variëren.
-4. **Hoe ga ik om met uitzonderingen in GroupDocs.Viewer?**
-   - Gebruik try-catch-blokken in uw Viewer-code om fouten op een elegante manier te beheren.
-5. **Kan deze tool worden geïntegreerd met andere Java-frameworks?**
-   - Absoluut! Het kan worden geïntegreerd met Spring, Hibernate en meer.
+**Q: Is er een limiet aan het aantal pagina's dat kan worden verwerkt?**  
+A: Er is geen harde limiet, maar zeer grote documenten kunnen batchverwerking vereisen om geheugen‑efficiënt te blijven.
+
+**Q: Hoe ga ik om met uitzonderingen in GroupDocs.Viewer?**  
+A: Plaats je Viewer‑code in try‑catch‑blokken en verwerk `ViewerException` of een algemene `IOException` indien nodig.
+
+**Q: Kan dit hulpmiddel integreren met andere Java‑frameworks?**  
+A: Absoluut! Het werkt naadloos met Spring, Hibernate, Jakarta EE en meer.
 
 ## Bronnen
+- [GroupDocs Documentatie](https://docs.groupdocs.com/viewer/java/)  
+- [API‑referentie](https://reference.groupdocs.com/viewer/java/)  
+- [GroupDocs.Viewer downloaden](https://releases.groupdocs.com/viewer/java/)  
+- [Licentie aanschaffen](https://purchase.groupdocs.com/buy)  
+- [Gratis proefversie downloaden](https://releases.groupdocs.com/viewer/java/)  
+- [Tijdelijke licentie aanvragen](https://purchase.groupdocs.com/temporary-license)
 
-- [GroupDocs-documentatie](https://docs.groupdocs.com/viewer/java/)
-- [API-referentie](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer downloaden](https://releases.groupdocs.com/viewer/java/)
-- [Koop een licentie](https://purchase.groupdocs.com/buy)
-- [Gratis proefversie downloaden](https://releases.groupdocs.com/viewer/java/)
-- [Aanvraag tijdelijke licentie](https://purchase.groupdocs.com/temporary-license)
+---
+
+**Laatst bijgewerkt:** 2026-04-13  
+**Getest met:** GroupDocs.Viewer for Java 25.2  
+**Auteur:** GroupDocs
