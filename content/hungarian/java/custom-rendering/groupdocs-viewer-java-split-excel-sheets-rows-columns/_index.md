@@ -1,33 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Tanulja meg, hogyan oszthatja fel az Excel-táblázatokat kezelhető részekre a GroupDocs.Viewer for Java segítségével. Javítsa az adatkezelést és a megjelenítést lépésről lépésre bemutató útmutatónkkal."
-"title": "Excel-táblázatok sorok és oszlopok szerinti felosztása a GroupDocs.Viewer segítségével Java-ban – Átfogó útmutató"
-"url": "/hu/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
-"weight": 1
+date: '2026-01-31'
+description: Ismerje meg, hogyan lehet Java-ban a GroupDocs Viewer segítségével Excel-munkalapokat
+  sorok és oszlopok szerint felosztani. Ez a lépésről‑lépésre útmutató bemutatja a
+  beállítást, a kódot és a legjobb gyakorlatokat.
+keywords:
+- split Excel sheets Java
+- GroupDocs Viewer Java tutorial
+- manageable data segments
+title: Hogyan osztható fel az Excel munkalap sorok és oszlopok szerint (Java)
 type: docs
+url: /hu/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/
+weight: 1
 ---
-# Excel-táblázatok sorok és oszlopok szerinti felosztása a GroupDocs.Viewer használatával Java-ban
 
-## Bevezetés
+apokat sorok és oszlopok szerint (Java)
 
-A nagyméretű Excel-fájlok kezelése kihívást jelenthet, különösen akkor, ha bizonyos adatszegmenseket kell bemutatni anélkül, hogy túlterhelnénk a közönséget. A GroupDocs.Viewer for Java segítségével a munkalapokat sorok és oszlopok alapján kezelhető részekre oszthatja, ami javítja az olvashatóságot és egyszerűsíti az adatkezelést.
+A nagy Excel munkafüzetek gyakran több adatot tartalmaznak, mint ami kényelmesen megjeleníthető egyetlen kéott oldalon. Az **Excel felosztönnyíti a megosztást, beágyazást vagy csak a szükséges részek nyomtat és oszlopok szerint a **GroupDocs Viewer** Java verziójával, valamint érintjük aző megjelenítését.
 
-Ebben az átfogó útmutatóban megvizsgáljuk, hogyan használható a GroupDocs.Viewer az Excel-táblázatok hatékony sorok és oszlopok szerinti felosztására. Megtanulod:
-- A GroupDocs.Viewer beállítása Java-hoz
-- A munkalapok felosztásának lépésről lépésre történő megvalósítása
-- Ezen technikák valós alkalmazásai
+![Excel munkalapok felosztása sorok és oszlopok szerint a GroupDocs.Viewer for Java segítségével](/viewer/custom-rendering/split-excel-sheets-by-rows-and-columns.png)
 
-Kezdjük a folytatáshoz szükséges előfeltételekkel!
+## Gyors válaszok
+- **Melyik könyvtárat használják?** GroupDocs Viewer for Java.  
+- **Lehet-e sorok és oszlopok szerint is felosztani?** Igen – meghatározhatja a sorok‑oldalanként és oszlopok‑oldalanként értékeket együtt.  
+- **Szükség van licencre?** A próbaverzió vagy ideiglenes licenc fejlesztéshez elegendő; a teljes licenc a termeléshez kötelező.  
+- **Milyen kimeneti formátumok támogatottak?** A példában HTML (beágyazott erőforrások) látható; PDF is előállítható ugyanazzal a beállítással.  
+- **Kell-e Maven? felosztása”?
+Az Excel munkalap felosztása azt jelenti, hogy egyetlen munkalapot több oldalra vagy fájlra osztunk fel egy előre meghatározott sor-, oszlop- vagy mindkettő szám alapján. Ez a technika hasznos, ha oldalas jelentéseket kell készíteni, adatokat weboldalakba ágyazni, vagy nyomtatható szakaszokat generálni szeretnénk anélkül, hogy egyszerre betöltenénk az egész munkafüzetet.
 
-## Előfeltételek
+## Miért használjuk a GroupDocs Viewer for Java‑t?
+- **Gyors renderelés** – natív támogatás XLSX, XLS, CSV és egyebek számára.  
+- **Beépített oldalszámozás** – nincs szükség kézi számításokra.  
+- **HTML vagy PDF kimenet** – tökéletes webalkalmazásokhoz vagy offline jelentésekhez.  
+- **Keresztplatformos** – minden JVM‑kompatibilis környezetben működik.
 
-A megoldás sikeres megvalósításához győződjön meg arról, hogy megfelel a következő követelményeknek:
+## Előkövetelmények
+- Java 17 vagy újabb telepítve.  
+- IDE, például IntelliJ IDEA vagy Eclipse.  
+- Maven a függőségkezeléshez.  
+- Alapvető Java ismeretek és tapasztalat az Excel fájlok kezelésében.
 
 ### Szükséges könyvtárak, verziók és függőségek
+Adja hozzá a GroupDocs tárolót és a viewer függőséget a `pom.xml`‑hez:
 
-Állítsa be a projektet Maven használatával a következő konfiguráció hozzáadásával:
-
-**Maven konfiguráció:**
 ```xml
 <repositories>
    <repository>
@@ -45,73 +59,62 @@ A megoldás sikeres megvalósításához győződjön meg arról, hogy megfelel 
 </dependencies>
 ```
 
-### Környezeti beállítási követelmények
+### Licenc beszerzése
+Szerezzen be egy ingyenes próbaverziót, ideiglenes licencet, vagy vásároljon teljes licencet a [GroupDocs](https://purchase.groupdocs.com/buy) oldalról.
 
-Győződjön meg arról, hogy a Java telepítve van a gépén, és hogy kompatibilis IDE-vel rendelkezik, például IntelliJ IDEA vagy Eclipse.
+## Hogyan bontsuk szét az Excel munkalapokat sorok szerint
 
-### Ismereti előfeltételek
+### Áttekintés
+A sorok szerinti felosztás lehetővé teszi, hogy HTML oldalak sorozatát hozzuk létre, ahol minden oldal egy előre meghatározott sor számot tartalmaz (pl. 15). Ez ideális irányítópultok számára, amelyek korlátozott számú rekordot jelenítenek meg nézetenkéntlépésre megvalósítás
 
-Az útmutatóhoz elengedhetetlen a Java programozás, a Maven beállításának és az Excel fájlokkal való munka alapvető ismerete.
+#### 1. lépés: Útvonalak beállítása és a Viewer inicializálása
+Először határozza meg, hogy hová legyenek mentve a felosztott oldalak, és hozza létre a `Viewer` példányt a forrás munkafüzethez.
 
-## GroupDocs.Viewer beállítása Java-hoz
-
-A GroupDocs.Viewer beállítása egyszerű lépésekből áll:
-1. **Maven konfiguráció**: Adja hozzá a fenti Maven repositoryt és függőséget a `pom.xml` fájl.
-2. **Licencbeszerzés**: Ingyenes próbaverzió, ideiglenes licenc vagy teljes licenc megvásárlása innen: [Csoportdokumentumok](https://purchase.groupdocs.com/buy).
-3. **Alapvető inicializálás**:
-   - Hozz létre egy új Java projektet az IDE-ben.
-   - Adja hozzá a Maven függőséget a fent látható módon.
-
-Miután elvégezte ezeket a lépéseket, készen áll arra, hogy megvalósítsa az Excel-táblázatok sorok és oszlopok szerinti felosztásának alapvető funkcióját a GroupDocs.Viewer for Java használatával.
-
-## Megvalósítási útmutató
-
-### Munkalapok sorok szerinti felosztása
-
-#### Áttekintés
-Ez a funkció lehetővé teszi egy munkalap több oldalra osztását az oldalon lévő sorok száma alapján. Különösen hasznos nagy adathalmazok kezeléséhez, mivel kisebb részekre bontva jeleníthető meg.
-
-#### Megvalósítási lépések
-**1. lépés: Útvonalak és megjelenítő beállítása**
-Kezdje a kimeneti könyvtár beállításával és a `Viewer` objektum az Excel fájlodhoz:
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SplitByRows");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/TWO_PAGES_XLSX")) {
-    // Folytassa a további lépésekkel...
+    // Proceed with further configuration...
 }
 ```
-**2. lépés: A sorok oldalankénti számának konfigurálása**
-Oldalankénti sorok számának meghatározása és beállítása `HtmlViewOptions`:
+
+#### 2. lépés: Sorok oldalanként beállítása
+Adja meg a viewernek, hogy hány sort tartalmazzon egy oldal.
+
 ```java
 int countRowsPerPage = 15;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forSplitSheetIntoPages(countRowsPerPage));
 ```
-**3. lépés: A dokumentum renderelése**
-A dokumentum renderelése a megadott beállításokkal:
+
+#### 3. lépés: Dokumentum renderelése
+Végül renderelje a munkafüzetet a megadott beállításokkal.
+
 ```java
 viewer.view(viewOptions);
 ```
-### Munkalapok felosztása sorok és oszlopok szerint
 
-#### Áttekintés
-Ez a funkció fokozza a rugalmasságot azáltal, hogy lehetővé teszi a munkalapok felosztását az oldalakonkénti sorok és oszlopok alapján. Ideális egyéni elrendezések létrehozásához, amelyek az adott prezentációs igényekhez igazodnak.
+## Hogyan bontsuk szét az Excel munkalapokat sorok és oszlopok szerint
 
-#### Megvalósítási lépések
-**1. lépés: Útvonalak és megjelenítő beállítása**
-Az előző szakaszhoz hasonlóan állítsa be az elérési utakat és inicializálja a `Viewer` objektum:
+### Áttekintés
+Néha egyetlen oldalnak mátrixként kell megjelenítenie sorokat **és** oszlopokat (pl. 15 sor × 7 oszlop). Ez teljes kontrollt ad az egyes HTML oldalak elrendezése felett.
+
+### Lépésről‑lépésre megvalak beállítása és a Viewer inicializálása
+A beállítás megegyezik a csak soros példával, csak a fájlnév változik.
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SplitByRowsAndColumns");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/FOUR_PAGES_XLSX")) {
-    // Folytassa a további lépésekkel...
+    // Continue with configuration...
 }
 ```
-**2. lépés: Sorok és oszlopok oldalankénti konfigurálása**
-Adja meg a sorok és oszlopok számát oldalonként:
+
+#### 2. lépés: Sorok ésanként beállítása
+Adja meg mindkét dimenziót a rács‑stílusú felosztáshoz.
+
 ```java
 int countRowsPerPage = 15;
 int countColumnsPerPage = 7;
@@ -119,53 +122,55 @@ int countColumnsPerPage = 7;
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 options.setSpreadsheetOptions(SpreadsheetOptions.forSplitSheetIntoPages(countRowsPerPage, countColumnsPerPage));
 ```
-**3. lépés: A dokumentum renderelése**
-Rendereld a dokumentumot az egyéni beállításokkal:
+
+#### 3. lépés: Dokumentum renderelése
+Renderelje ugyanazzal a `view` hívással.
+
 ```java
 viewer.view(options);
 ```
+
 ## Gyakorlati alkalmazások
-Íme néhány valós használati eset az Excel-táblázatok sorok és oszlopok szerinti felosztására:
-1. **Adatmegjelenítés**: Tömör jelentéseket hozhat létre nagy adathalmazok kisebb részekre osztásával.
-2. **Oktatási anyagok**: Hozzon létre diákoknak szóló kiosztott anyagokat kiterjedt munkalapok alapján, fókuszált adatpontokkal.
-3. **Üzleti elemzés**Bontsa le az összetett pénzügyi táblázatokat a könnyebb elemzés és megbeszélés érdekében.
+- **Excel jelentés generálása Java‑ban**: Nagy pénzügyi modelleket alakítson át oldalas HTML jelentések sorozatává.  
+- **GroupDocs Viewer Excel**: A felosztott oldalakat közvetlenül egy webportálba ágyazza be az interaktív adatfeltárás érdekében.**: Szolgáltassa a generált HTML oldalensoldali rendereléshez.
 
-Az integrációs lehetőségek közé tartozik ezen különálló lapok beágyazása webes alkalmazásokba, vagy PDF-ek létrehozása offline használatra.
+## Teljesítménybeli megfontolások
+- **Memóriahasználat** – A nagy munkafüzetek jelentős heap memóriát fogyaszthatnak; fontolja meg a JVM `-Xmx` beállításának növelését.  
+- **Darabméret** – Válasszon sor-/oszlopszámot, amely egyenselési sebességet.  
+- **Verziófrissítések** – Tartsa naprakészen a GroupDocs Viewer‑t a teljesítményjavulások érdekében.
 
-## Teljesítménybeli szempontok
-A GroupDocs.Viewer használatakor az optimális teljesítmény biztosítása érdekében:
-- **Erőforrás-felhasználás optimalizálása**: Figyelje a memóriahasználatot, különösen nagyméretű Excel-fájlok esetén.
-- **Java memóriakezelés**: Hatékony adatszerkezeteket használjunk és hatékonyan kezeljük a szemétgyűjtést.
-- **Bevált gyakorlatok**: Rendszeresen frissítsen a GroupDocs.Viewer legújabb verziójára a továbbfejlesztett funkciókért és hibajavításokért.
+##ibaelhárítás
 
-## Következtetés
-Az útmutató követésével megtanultad, hogyan oszthatod fel az Excel-táblázatokat sorok és oszlopok szerint a GroupDocs.Viewer for Java segítségével. Ez a hatékony funkció javítja az adatkezelést és -megjelenítést, megkönnyítve a nagy adathalmazok kezelését.
+| Tünet | Valószínű ok | Megoldás |
+|-------|--------------|----------|
+| `OutOfMemoryError` | Nagyon nagy munkalap renderelése túl sok sorral oldalank` értéket vagy növelje a JVM heap‑et |
+| Üres kimeneti fájlok | Helytelen fájlútvonal erőforrások nem töltődnek be | `forEmbeddedResources` használata, de a fájlok más alap‑URL‑ről szolgáltatva | Szolgáltassa az egész kimeneti mappát, vagy váltson `forExternalResources`‑ra |
 
-következő lépések közé tartozik a GroupDocs.Viewer fejlettebb funkcióinak feltárása, vagy ezen funkciók integrálása a meglévő alkalmazásokba.
+## Gyakran feltett kérdések
 
-## GYIK szekció
-**1. kérdés: Maximum hány sorra oszthatok fel egy Excel-táblázatot?**
-V1: A maximum a rendszer memóriakapacitásától és az adatok összetettségétől függ.
+**K: Generálhatok PDF‑et HTML helyett?**  
+V: Igen. Cserélje le a `HtmlViewOptions`‑t `PdfViewOptions`‑ra, és tartsa meg ugyanazt a `SpreadsheetOptions` konfigurációt.
 
-**2. kérdés: Testreszabhatom a különálló lapok kimeneti formátumát?**
-A2: Igen, használhatja `HtmlViewOptions` különböző formátumok, például HTML vagy PDF megadásához.
+**K: Lehetséges‑e a felosztás cellatartalom alapján, nem fix sorok/oszlopok szerint?**  
+V: A közvetlen tartalom‑alapú felosztás nincs beépítve a GroupDocs Viewer‑be, de előfeldolgozhatja a munkafüzetet Apache POI‑val, hogy külön munkalapokat hozzon létre a renderelés előtt.
 
-**3. kérdés: Hogyan kezelhetem hatékonyan a nagyméretű Excel-fájlokat a GroupDocs.Viewer segítségével?**
-A3: Optimalizálja a memóriahasználatot, és fontolja meg a fájl kisebb darabokra bontását a feldolgozás előtt.
+**K: Támogatja‑e a GroupDocs Viewer a régebbi Excel formátumokat (XLS)?**  
+V: Teljesen. A viewer kezeli az XLS, XLSX, CSV és egyéb táblázatformátumokat.
 
-**4. kérdés: Lehetséges-e a munkalapok felosztása adott adatkritériumok alapján?**
-4. válasz: Bár az adatalapú felosztás közvetlen támogatása nem érhető el, a sor/oszlop felosztása előtt előfeldolgozhatja az adatokat Java használatával.
+**K: Hogyan ágyazhatom be a generált HTML‑t egy Spring MVC nézetbe?**  
+ mappát statikus erőforrásként, és hivatkozzon a generált `page_0.html`, `page_1.html` stb. fájlokra a Thymeleaf vagy JSP sablonjaiban.
 
-**5. kérdés: Milyen gyakori problémák merülnek fel a GroupDocs.Viewer használatakor a lapok felosztására?**
-5. válasz: Gyakori problémák közé tartoznak a nagy fájlokkal kapcsolatos memóriahibák és a helytelen elérési út konfigurációk. Győződjön meg arról, hogy az elérési utak megfelelően vannak beállítva, és a környezet rendelkezik elegendő erőforrással.
+**K: Milyen licencre van szükség a kereskedelmi üéges a GroupDocs‑t szolgálnak.
 
-## Erőforrás
-- **Dokumentáció**: [GroupDocs Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API-referencia**: [GroupDocs API-referencia](https://reference.groupdocs.com/viewer/java/)
-- **Letöltés**: [GroupDocs Viewer Java kiadások](https://releases.groupdocs.com/viewer/java/)
-- **Vásárlás**: [GroupDocs licenc vásárlása](https://purchase.groupdocs.com/buy)
-- **Ingyenes próbaverzió**: [GroupDocs ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes engedély**: [Ideiglenes engedély beszerzése](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatás**: [GroupDocs támogatási fórum](https://forum.groupdocs.com/c/viewer/9)
+## Források
+- **Dokumentáció**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API referencia**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Letöltés**: [GroupDocs Viewer Java Releases](https://releases.groupdocs.com/viewer/java/)
+- **Vásárlás**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Ingyenes próba**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Ideiglenes licenc**: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Támogatás**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Kezdje el a GroupDocs.Viewer for Java elsajátítását ezen források feltárásával és a megvitatott funkciók megvalósításával. Jó kódolást!
+**Utoljára frissítve:** 2026-01-31  
+**Tesztelve a következővel:** GroupDocs Viewer 25.2 for Java  
+**Szerző:** GroupDocs
