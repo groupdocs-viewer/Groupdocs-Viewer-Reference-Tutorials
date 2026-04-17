@@ -1,44 +1,62 @@
 ---
-"date": "2025-04-24"
-"description": "Sorunsuz HTML dönüşümü için GroupDocs.Viewer'ı kullanarak Java elektronik tablolarında gizli satır ve sütunların nasıl işleneceğini öğrenin. Bu gelişmiş işleme kılavuzuyla tam veri görünürlüğünü garantileyin."
-"title": "GroupDocs.Viewer Kullanarak Java E-Tablolarında Gizli Satırları ve Sütunları Oluşturma"
-"url": "/tr/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-03-27'
+description: Excel'i HTML'ye nasıl dönüştüreceğinizi ve GroupDocs.Viewer kullanarak
+  Java elektronik tablolarında gizli satır ve sütunları nasıl render edeceğinizi öğrenin;
+  sorunsuz HTML dönüşümü için bu gelişmiş render kılavuzu ile tam veri görünürlüğünü
+  sağlayın.
+keywords:
+- convert excel to html
+- xlsx to html java
+- display hidden spreadsheet data
+- GroupDocs Viewer Java
+title: Excel'i HTML'ye Dönüştürme ve Gizli Satır ve Sütunları Java'da GroupDocs.Viewer
+  ile Görüntüleme
 type: docs
+url: /tr/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# GroupDocs.Viewer Kullanarak Java E-Tablolarında Gizli Satırları ve Sütunları Oluşturma
 
-## giriiş
+# Excel'i HTML'ye Dönüştürme ve Java Elektronik Tablosunda Gizli Satır ve Sütunları Render Etme GroupDocs.Viewer Kullanarak
 
-Java kullanarak bir elektronik tabloyu HTML'ye dönüştürürken gizli satırları ve sütunları görselleştirmekte zorluk mu çekiyorsunuz? Yalnız değilsiniz! Birçok geliştirici, farklı formatlarda veri görselleştirmenin bütünlüğünü korumaya çalışırken bu zorlukla karşı karşıya kalıyor. Bu eğitim, GroupDocs.Viewer for Java kullanarak elektronik tablolardaki gizli satırları ve sütunları etkili bir şekilde nasıl oluşturacağınız konusunda size rehberlik edecek ve dönüştürme sırasında hiçbir önemli bilginin kaybolmamasını sağlayacaktır.
+Java kullanarak bir elektronik tabloyu HTML'ye dönüştürürken **Excel'i HTML'ye dönüştürme** ve gizli satır ve sütunları görselleştirmekte zorlanıyor musunuz? Yalnız değilsiniz! Birçok geliştirici, farklı formatlar arasında veri görselleştirme bütünlüğünü korumaya çalışırken bu zorlukla karşılaşıyor. Bu öğreticide, Java için GroupDocs.Viewer kullanarak elektronik tablolarda gizli satır ve sütunları etkili bir şekilde nasıl render edeceğinizi gösterecek ve dönüşüm sırasında kritik bilgilerin kaybolmadığından emin olacaksınız.
 
-Bu yazıda şunları ele alacağız:
-- Gizli elektronik tablo öğelerini işlemek için GroupDocs.Viewer'ı yapılandırma
-- Maven bağımlılıklarıyla ortamınızı kurma
-- Özelliğin adım adım uygulanması
-- Gerçek dünya uygulamaları ve performans değerlendirmeleri
+![GroupDocs.Viewer for Java ile Gizli Satır ve Sütunları Render Etme](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Başlamadan önce, Java programlama konusunda temel bir anlayışa ve Maven bağımlılık yönetimi konusunda biraz bilgi sahibi olduğunuzdan emin olun. Ortamımızı kurarak başlayalım.
+## Hızlı Yanıtlar
+- **GroupDocs.Viewer Excel'i HTML'ye dönüştürebilir mi?** Evet, XLSX dosyalarını HTML'ye dönüştürmek için kutudan çıkar çıkmaz destek sağlar.
+- **Gizli satır ve sütunlar HTML çıktısında görünür olacak mı?** Uygun seçenekleri etkinleştirdiğinizde, gizli veriler görünür hücreler gibi render edilir.
+- **Hangi Maven artefaktı gereklidir?** `com.groupdocs:groupdocs-viewer` (en son sürüm önerilir).
+- **Üretim kullanımında lisansa ihtiyacım var mı?** Üretim için kalıcı bir lisans gereklidir; değerlendirme amaçlı ücretsiz deneme veya geçici lisans mevcuttur.
+- **Bu yaklaşım Java 8 ve üzeriyle uyumlu mu?** Kesinlikle – JDK 8+ ile çalışır.
 
-## Ön koşullar
+## “Excel'i HTML'ye Dönüştürme” nedir?
+Excel'i HTML'ye dönüştürmek, bir `.xlsx` çalışma kitabını orijinal düzeni, stilleri ve verileri koruyarak web‑hazır HTML sayfalarına dönüştürmek anlamına gelir. Bu sayede elektronik tabloları Microsoft Office gerektirmeden doğrudan tarayıcılarda görüntüleyebilirsiniz.
+
+## Neden gizli elektronik tablo verilerini render etmek?
+Gizli elektronik tablo verilerini görüntülemek aşağıdaki durumlarda önemlidir:
+- **Finansal raporlama** tam denetim izleri gerektirir, sunum amaçlı gizlenen satır/sütunlar dahil.
+- **Veri analizi** araçları doğru hesaplamalar için tam veri setine ihtiyaç duyar.
+- **Eğitim materyalleri** formülleri ve veri yapılarını öğretmek için her hücrenin görünür olmasını ister.
+
+## Önkoşullar
 
 ### Gerekli Kütüphaneler ve Bağımlılıklar
-Bu özelliği uygulamak için projenize GroupDocs.Viewer for Java'yı bir bağımlılık olarak eklediğinizden emin olun. Bu kütüphane, belgeleri HTML, PDF ve resim dosyaları gibi çeşitli biçimlere dönüştürmek için gereklidir.
+Bu özelliği uygulamak için projenize GroupDocs.Viewer for Java'yı bir bağımlılık olarak eklediğinizden emin olun. Bu kütüphane, belgeleri HTML, PDF ve görüntü dosyaları gibi çeşitli formatlarda render etmek için gereklidir.
 
-### Çevre Kurulum Gereksinimleri
-Devam etmeden önce aşağıdaki kurulumların yapıldığından emin olun:
-- **Java Geliştirme Kiti (JDK)**: Sürüm 8 veya üzeri
-- **Entegre Geliştirme Ortamı (IDE)**: IntelliJ IDEA veya Eclipse gibi
-- **Usta**: Proje bağımlılıklarını yönetmek için
+### Ortam Kurulum Gereksinimleri
+Aşağıdaki kurulumları tamamladığınızdan emin olun:
+- **Java Development Kit (JDK)**: Versiyon 8 veya üzeri  
+- **Entegre Geliştirme Ortamı (IDE)**: IntelliJ IDEA veya Eclipse gibi  
+- **Maven**: Proje bağımlılıklarını yönetmek için  
 
 ### Bilgi Önkoşulları
-Java programlamanın temel bir anlayışı gereklidir. Ek olarak, Maven'a aşinalık projenizi kurmak için faydalı olacaktır.
+Java programlamasına temel bir anlayış gereklidir. Ayrıca, Maven'e aşina olmak projenizi kurarken faydalı olacaktır.
 
-## Java için GroupDocs.Viewer Kurulumu
-GroupDocs.Viewer'ı Java uygulamanızda kullanmaya başlamak için, Maven üzerinden ayarlamanız gerekir. İşte nasıl:
+## GroupDocs.Viewer for Java Kurulumu
+Java uygulamanızda GroupDocs.Viewer'ı kullanmaya başlamak için Maven üzerinden kurmanız gerekir. İşte nasıl yapılacağı:
 
-**Usta**
-Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` dosya:
+**Maven**  
+`pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 ```xml
 <repositories>
    <repository>
@@ -57,32 +75,30 @@ Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` dosya:
 ```
 
 ### Lisans Edinme Adımları
-GroupDocs.Viewer'ı kullanmak için aşağıdaki seçenekleri göz önünde bulundurun:
-- **Ücretsiz Deneme**: Özellikleri değerlendirmek için deneme sürümünü indirin.
-- **Geçici Lisans**: Değerlendirme sınırlamaları olmaksızın tüm özelliklere erişim için geçici bir lisans talep edin.
-- **Satın almak**:Üretim amaçlı kullanım için kalıcı lisans edinin.
+GroupDocs.Viewer'ı kullanmak için aşağıdaki seçenekleri değerlendirin:
+- **Ücretsiz Deneme**: Özellikleri keşfetmek için resmi siteden bir deneme sürümü indirin.  
+- **Geçici Lisans**: Değerlendirme sınırlamaları olmadan tam özellik erişimi için geçici bir lisans isteyin.  
+- **Satın Alma**: Üretim kullanımı için kalıcı bir lisans edinin.  
 
-Maven'ı kurduktan ve lisansınızı aldıktan sonra GroupDocs.Viewer'ı başlatmaya başlayabilirsiniz. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+Maven kurulumunu tamamlayıp lisansınızı edindikten sonra GroupDocs.Viewer'ı başlatmaya başlayabilirsiniz. İşte nasıl yapılacağı:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
     public static void main(String[] args) {
-        // Lisans dosyanız varsa görüntüleyiciyi onunla başlatın.
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Kodunuz burada...
+            // Your code here...
         }
     }
 }
 ```
 
-## Uygulama Kılavuzu
+## Gizli Veri ile Excel'i HTML'ye Dönüştürme
+Bu bölüm, **Excel'i HTML'ye dönüştürme** işlemini adım adım anlatır ve gizli satır ve sütunların görüntülenmesini sağlar.
 
-### E-Tablolarda Gizli Satırları ve Sütunları Oluştur
-Bu özellik, bir elektronik tabloyu HTML biçimine dönüştürürken gizli satır ve sütunları oluşturmanıza olanak tanır. Uygulama adımlarını parçalayalım.
-
-#### Adım 1: Çıktı Dizin Yolunu Tanımlayın
-Öncelikle işlenmiş dosyalarınızın nerede saklanacağını tanımlayarak başlayın:
+### Adım 1: Çıktı Dizini Yolunu Tanımlama
+Render edilen dosyalarınızın nerede saklanacağını tanımlayarak başlayın:
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +106,102 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### Adım 2: HTMLViewOptions'ı yapılandırın
-Sonra, şunu ayarlayın: `HtmlViewOptions` Kaynakları doğrudan oluşturulan HTML dosyalarına yerleştirmek için:
+### Adım 2: HTMLViewOptions'ı Yapılandırma
+Sonra, oluşturulan HTML dosyalarına kaynakları doğrudan gömmek için `HtmlViewOptions`'ı ayarlayın:
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Her sayfanın işlenmesi için bir dosya yolu biçimi oluşturun.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Adım 3: Gizli Sütun ve Satırların İşlenmesini Etkinleştir
-Yapılandırın `SpreadsheetOptions` gizli öğeleri işlemek için:
+### Adım 3: Gizli Sütun ve Satırların Render Edilmesini Etkinleştirme
+Gizli öğeleri render etmek için `SpreadsheetOptions`'ı yapılandırın:
 ```java
-// Gizli sütun ve satırların oluşturulmasını etkinleştir.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### Adım 4: Görüntüleyiciyi Belgeyle Başlatın
-Son olarak, GroupDocs.Viewer'ı belge yolunuzla başlatın ve içeriği işleyin:
+### Adım 4: Viewer'ı Belge ile Başlatma ve Render Etme
+Son olarak, belge yolunuzla GroupDocs.Viewer'ı başlatın ve içeriği render edin:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Belirtilen görünüm seçeneklerini kullanarak belgeyi HTML'ye dönüştürün.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Sorun Giderme İpuçları**: Yolların doğru şekilde ayarlandığından ve bağımlılıkların düzgün bir şekilde eklendiğinden emin olun `pom.xml`.
+**Sorun Giderme İpuçları**: Yolların doğru ayarlandığından ve bağımlılıkların `pom.xml` dosyanıza düzgün bir şekilde eklendiğinden emin olun.
 
 ## Pratik Uygulamalar
 Bu özelliğin bazı pratik uygulamaları şunlardır:
-1. **Finansal Raporlama**: Uyumluluk için dönüştürme sırasında gizli finansal ölçümler de dahil olmak üzere tüm verilerin görünür olduğundan emin olun.
-2. **Veri Analizi**: Raporlarda veya sunumlarda tüm satırları ve sütunları görüntüleyerek veri kümelerinin bütünlüğünü koruyun.
-3. **Eğitim Araçları**: Gizli bilgileri kaybetmeden, öğretim amaçlı eksiksiz elektronik tablo içeriğini kullanın.
+1. **Finansal Raporlama**: Uyumluluk için dönüşüm sırasında gizli finansal metrikler dahil tüm verilerin görünür olduğundan emin olun.  
+2. **Veri Analizi**: Raporlarda veya sunumlarda tüm satır ve sütunları göstererek veri setlerinin bütünlüğünü koruyun.  
+3. **Eğitim Araçları**: Gizli bilgileri kaybetmeden öğretim amaçlı tam elektronik tablo içeriğini kullanın.  
 
-## Performans Hususları
-GroupDocs.Viewer kullanırken performansı iyileştirmek için:
-- Özellikle büyük belgelerde bellek kullanımını izleyin.
-- G/Ç işlemlerini azaltmak için dosya yollarını ve depolama konumlarını optimize edin.
-- Yeni performans iyileştirmelerinden ve hata düzeltmelerinden yararlanmak için kütüphaneyi düzenli olarak güncelleyin.
+## Performans Düşünceleri
+GroupDocs.Viewer'ı kullanırken performansı optimize etmek için:
+- Bellek kullanımını izleyin, özellikle büyük belgelerde.  
+- Dosya yollarını ve depolama konumlarını optimize ederek I/O işlemlerini azaltın.  
+- Yeni performans iyileştirmeleri ve hata düzeltmelerinden yararlanmak için kütüphaneyi düzenli olarak güncelleyin.  
 
-## Çözüm
-Bu eğitimde, GroupDocs.Viewer for Java'yı elektronik tablolardaki gizli satırları ve sütunları işlemek üzere nasıl yapılandıracağınızı öğrendiniz. Bu adımları izleyerek, formatlar arasında kapsamlı veri görünürlüğü sağlayabilirsiniz. Bir sonraki adım olarak, farklı belge türlerini deneyin ve GroupDocs.Viewer tarafından sunulan ek özellikleri keşfedin.
+## Sonuç
+Bu öğreticide, **Excel'i HTML'ye dönüştürme** ve Java için GroupDocs.Viewer'ı elektronik tablolarda gizli satır ve sütunları render edecek şekilde yapılandırmayı öğrendiniz. Bu adımları izleyerek formatlar arasında kapsamlı veri görünürlüğünü sağlayabilirsiniz. Bir sonraki adım olarak, farklı belge türleriyle deney yapın ve GroupDocs.Viewer'ın sunduğu ek özellikleri keşfedin.
 
-Daha derine dalmaya hazır mısınız? Bu özelliği projelerinize uygulamaya çalışın ve uygulamanızın işlevselliğini nasıl geliştirdiğini görün!
+Daha derine inmeye hazır mısınız? Bu özelliği projelerinizde uygulamayı deneyin ve uygulamanızın işlevselliğini nasıl artırdığını görün!
 
 ## SSS Bölümü
 
-**S1: GroupDocs.Viewer'ı ücretsiz kullanabilir miyim?**
-A1: Evet, özellikleri keşfetmek için resmi siteden deneme sürümünü indirebilirsiniz. Sınırlamalar olmadan tam erişim için geçici veya kalıcı bir lisans edinmeyi düşünün.
+**S1: GroupDocs.Viewer'ı ücretsiz kullanabilir miyim?**  
+C1: Evet, özellikleri keşfetmek için resmi siteden bir deneme sürümü indirebilirsiniz. Sınırlama olmadan tam erişim için geçici veya kalıcı bir lisans almayı düşünün.
 
-**S2: GroupDocs.Viewer hangi dosya formatlarını destekler?**
-C2: PDF, Word, Excel ve resimler dahil olmak üzere 50'den fazla farklı belge formatını destekler.
+**S2: GroupDocs.Viewer hangi dosya formatlarını destekliyor?**  
+C2: PDF, Word, Excel ve görüntüler dahil olmak üzere 50'den fazla farklı belge formatını destekler.
 
-**S3: GroupDocs.Viewer ile büyük belgeleri nasıl işlerim?**
-C3: Java ayarlarını düzenleyerek ve gerekirse büyük dosyaları daha küçük parçalara bölerek bellek yönetimini optimize edin.
+**S3: GroupDocs.Viewer ile büyük belgeleri nasıl yönetebilirim?**  
+C3: Java ayarlarını düzenleyerek bellek yönetimini optimize edin ve gerekirse büyük dosyaları daha küçük parçalara bölün.
 
-**S4: HTML çıktı formatını özelleştirmek mümkün mü?**
-A4: Evet, çeşitli seçenekleri kullanarak yapılandırabilirsiniz. `HtmlViewOptions` İşlenmiş belgelerinizin görünümünü özelleştirmek için.
+**S4: HTML çıktı formatını özelleştirmek mümkün mü?**  
+C4: Evet, render edilen belgelerinizin görünümünü özelleştirmek için `HtmlViewOptions` kullanarak çeşitli seçenekleri yapılandırabilirsiniz.
 
-**S5: GroupDocs.Viewer ile ilgili sorunları gidermenin en iyi yolu nedir?**
-A5: Çözümler için resmi belgeleri ve forumları kontrol edin. Proje kurulumunuzda tüm bağımlılıkların doğru şekilde yapılandırıldığından emin olun.
+**S5: GroupDocs.Viewer ile ilgili sorunları gidermenin en iyi yolu nedir?**  
+C5: Çözümler için resmi dokümantasyon ve forumları kontrol edin. Proje ayarlarınızda tüm bağımlılıkların doğru yapılandırıldığından emin olun.
+
+## Sıkça Sorulan Sorular
+
+**S: `setRenderHiddenColumns(true)` etkinleştirmek performansı etkiler mi?**  
+C: Gizli sütunların render edilmesi küçük bir ek yük getirir, ancak tipik çalışma kitapları için etkisi minimaldir. Çok büyük sayfalar için bellek kullanımını izleyin.
+
+**S: Bir XLSX dosyasını birden çok sayfa yerine tek bir HTML sayfasına dönüştürebilir miyim?**  
+C: Evet, `{0}` yer tutucusu olmadan özel bir `HtmlViewOptions` dosya adı ayarlayarak tek bir HTML dosyası oluşturabilirsiniz.
+
+**S: Gizli elektronik tablo verilerini yalnızca belirli çalışma sayfaları için nasıl görüntülerim?**  
+C: Gizli render'ı etkinleştirmeden önce belirli sayfalara hedeflemek için `viewOptions.getSpreadsheetOptions().setWorksheetIndexes(...)` kullanın.
+
+**S: Dönüştürmeden sonra araç çubuğunu veya navigasyonu gizlemenin bir yolu var mı?**  
+C: GroupDocs.Viewer tarafından oluşturulan HTML çıktısı statiktir; şablonu özelleştirirseniz navigasyon öğelerini manuel olarak kaldırabilirsiniz.
+
+**S: Gizli satır/sütun render'ı için hangi GroupDocs.Viewer sürümü gereklidir?**  
+C: Bu özellik 22.0 sürümünden itibaren mevcuttur; en son kararlı sürümü kullanmanızı öneririz.
 
 ## Kaynaklar
-- **Belgeleme**: [GroupDocs Görüntüleyici Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı**: [GroupDocs API Başvurusu](https://reference.groupdocs.com/viewer/java/)
-- **İndirmek**: [GroupDocs.Viewer'ı edinin](https://releases.groupdocs.com/viewer/java/)
-- **Satın almak**: [Lisans satın al](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme**: [Ücretsiz Sürümü Deneyin](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans**: [Geçici Lisans Talebi](https://purchase.groupdocs.com/temporary-license/)
-- **Destek**: [GrupDocs Forumu](https://forum.groupdocs.com/c/viewer/9)
+- **Dokümantasyon**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Referansı**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **İndirme**: [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Satın Alma**: [Buy a License](https://purchase.groupdocs.com/buy)
+- **Ücretsiz Deneme**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Geçici Lisans**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Destek**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Bu kapsamlı kılavuzla artık GroupDocs.Viewer'ı kullanarak Java uygulamalarınızda gizli elektronik tablo öğelerini etkili bir şekilde işlemek için donanımlısınız. İyi kodlamalar!
+---
+
+**Son Güncelleme:** 2026-03-27  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs
