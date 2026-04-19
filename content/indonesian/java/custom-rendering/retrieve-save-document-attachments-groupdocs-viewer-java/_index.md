@@ -1,34 +1,51 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara mengambil dan menyimpan lampiran dokumen secara efisien dalam aplikasi Java menggunakan GroupDocs.Viewer API yang canggih. Panduan ini mencakup penyiapan, penerapan, dan aplikasi praktis."
-"title": "Cara Mengambil dan Menyimpan Lampiran Dokumen Menggunakan GroupDocs.Viewer untuk Java; Panduan Lengkap"
-"url": "/id/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-02'
+description: Pelajari cara mengambil dan menyimpan lampiran dokumen secara efisien
+  dalam aplikasi Java menggunakan Java file output stream dan API GroupDocs.Viewer
+  yang kuat.
+keywords:
+- GroupDocs.Viewer Java
+- retrieve document attachments Java
+- save document attachments GroupDocs
+title: Cara Mengambil dan Menyimpan Lampiran Dokumen Menggunakan Java File Output
+  Stream dengan GroupDocs.Viewer untuk Java
 type: docs
+url: /id/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/
+weight: 1
 ---
-# Cara Mengambil dan Menyimpan Lampiran Dokumen Menggunakan GroupDocs.Viewer untuk Java: Panduan Lengkap
 
-## Perkenalan
+# Cara Mengambil dan Menyimpan Lampiran Dokumen Menggunakan java file output stream dengan GroupDocs.Viewer untuk Java
 
-Apakah Anda ingin mengekstrak dan mengelola lampiran dokumen secara terprogram dalam aplikasi Java Anda? Dengan maraknya manajemen dokumen digital, penting untuk memiliki alat yang menyederhanakan proses ini secara efisien. Gunakan GroupDocs.Viewer untuk Java—solusi andalan Anda untuk mengambil dan menyimpan lampiran dokumen dengan mudah dan lancar.
+## Pendahuluan
 
-Dalam tutorial ini, kita akan membahas cara memanfaatkan kekuatan GroupDocs.Viewer untuk mengambil lampiran dari dokumen dan menyimpannya ke direktori yang Anda inginkan. Dengan mengikuti tutorial ini, Anda akan memperoleh keterampilan praktis dalam mengelola data dokumen secara efektif dalam lingkungan Java.
+Apakah Anda ingin mengekstrak dan mengelola lampiran dokumen secara programatis dalam aplikasi Java Anda menggunakan **java file output stream**? Dengan meningkatnya manajemen dokumen digital, penting memiliki alat yang dapat memperlancar proses ini secara efisien. Perkenalkan GroupDocs.Viewer untuk Java—solusi utama Anda untuk dengan mudah mengambil dan menyimpan lampiran dokumen.
 
-**Apa yang Akan Anda Pelajari:**
-- Cara mengatur GroupDocs.Viewer untuk Java
-- Ambil lampiran dari dokumen menggunakan API
-- Simpan lampiran dokumen ke direktori tertentu
+![Mengambil dan Menyimpan Lampiran Dokumen dengan GroupDocs.Viewer untuk Java](/viewer/custom-rendering/retrieve-and-save-document-attachments-java.png)
+
+Dalam tutorial ini, kami akan menjelaskan cara memanfaatkan kekuatan GroupDocs.Viewer untuk mengambil lampiran dari dokumen dan menyimpannya ke direktori yang Anda inginkan. Dengan mengikuti langkah‑langkah ini, Anda akan memperoleh keterampilan praktis dalam mengelola data dokumen secara efektif di lingkungan Java.
+
+## Jawaban Cepat
+- **Apa yang dilakukan java file output stream?** Ia menulis aliran byte langsung ke file, memungkinkan data biner (seperti lampiran) disimpan di disk.  
+- **API mana yang mengambil lampiran?** `Viewer.getAttachments()` mengembalikan daftar metadata lampiran.  
+- **Bisakah saya menentukan folder output?** Ya—gunakan `Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");`.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi berbayar diperlukan untuk produksi.  
+- **Apakah pendekatan ini thread‑safe?** Buat instance `Viewer` terpisah per thread atau sinkronkan aksesnya.
+
+## Apa itu java file output stream?
+`java.io.FileOutputStream` adalah kelas inti Java yang menulis byte mentah ke sebuah file. Ini merupakan pilihan ideal ketika Anda perlu menyimpan konten biner seperti lampiran email, gambar, atau data non‑teks lain yang diekstrak dari dokumen.
+
+## Mengapa menggunakan java file output stream dengan GroupDocs.Viewer?
+- **Penanganan biner langsung** – Tidak perlu konversi perantara; byte lampiran ditulis persis seperti yang ada di file sumber.  
+- **Kinerja** – Penulisan yang di‑stream mengurangi beban memori, terutama untuk lampiran berukuran besar.  
+- **Kesederhanaan** – API terintegrasi mulus dengan I/O standar Java, sehingga kode mudah dibaca dan dipelihara.
 
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda memiliki hal berikut:
-- **Pustaka dan Ketergantungan yang Diperlukan**: Anda memerlukan pustaka GroupDocs.Viewer. Pastikan pustaka tersebut ditambahkan sebagai dependensi dalam proyek Anda.
-- **Persyaratan Pengaturan Lingkungan**: Lingkungan pengembangan Java (seperti IntelliJ IDEA atau Eclipse) untuk menulis dan menjalankan kode Anda.
-- **Prasyarat Pengetahuan**: Keakraban dengan pemrograman Java, terutama penanganan file dan direktori.
-
-Dengan prasyarat yang terpenuhi, kita siap menyiapkan GroupDocs.Viewer untuk Java!
+- **Pustaka dan Dependensi yang Diperlukan**: Tambahkan pustaka GroupDocs.Viewer ke proyek Anda (lihat cuplikan Maven di bawah).  
+- **Pengaturan Lingkungan**: IDE Java (IntelliJ IDEA, Eclipse, dll.) dengan JDK 8+ terpasang.  
+- **Prasyarat Pengetahuan**: Familiaritas dengan Java I/O, khususnya `FileOutputStream`, serta penggunaan dasar Maven.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
-Untuk memulai penggunaan API GroupDocs.Viewer di proyek Anda, Anda perlu menginstalnya melalui Maven. Tambahkan konfigurasi berikut ke `pom.xml` mengajukan:
+Untuk memulai menggunakan API GroupDocs.Viewer dalam proyek Anda, Anda perlu menginstalnya melalui Maven. Tambahkan konfigurasi berikut ke file `pom.xml` Anda:
 
 ```xml
 <repositories>
@@ -47,13 +64,13 @@ Untuk memulai penggunaan API GroupDocs.Viewer di proyek Anda, Anda perlu mengins
 </dependencies>
 ```
 
-**Langkah-langkah Memperoleh Lisensi:**
-- **Uji Coba Gratis**: Mulailah dengan uji coba gratis untuk menjelajahi fitur-fiturnya.
-- **Lisensi Sementara**: Dapatkan lisensi sementara untuk periode evaluasi yang diperpanjang.
-- **Pembelian**: Untuk penggunaan produksi, Anda perlu membeli lisensi.
+**Langkah-langkah Akuisisi Lisensi:**
+- **Percobaan Gratis**: Mulai dengan percobaan gratis untuk menjelajahi fitur‑fiturnya.  
+- **Lisensi Sementara**: Dapatkan lisensi sementara untuk periode evaluasi yang lebih lama.  
+- **Pembelian**: Untuk penggunaan produksi, Anda memerlukan lisensi berbayar.
 
-### Inisialisasi dan Pengaturan Dasar
-Setelah GroupDocs.Viewer ditambahkan sebagai dependensi dalam proyek Anda, inisialisasikan dalam aplikasi Java Anda. Berikut caranya:
+### Inisialisasi dan Penyiapan Dasar
+Setelah GroupDocs.Viewer ditambahkan sebagai dependensi dalam proyek Anda, inisialisasikan di aplikasi Java Anda. Berikut caranya:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -62,7 +79,7 @@ import java.nio.file.Path;
 public class InitializeViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document")) {
-            // Kode Anda untuk berinteraksi dengan dokumen ada di sini.
+            // Your code to interact with the document goes here.
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -70,19 +87,19 @@ public class InitializeViewer {
 }
 ```
 
-Pengaturan dasar ini menginisialisasi GroupDocs.Viewer dan mempersiapkannya untuk mengambil lampiran.
+Penyiapan dasar ini menginisialisasi GroupDocs.Viewer dan mempersiapkannya untuk mengambil lampiran.
 
 ## Panduan Implementasi
 
-### Mengambil Lampiran dari Dokumen
-Mari kita bahas cara mengambil lampiran menggunakan GroupDocs.Viewer. Fitur ini memungkinkan Anda mengekstrak metadata tentang setiap lampiran yang ada dalam dokumen Anda.
+### Mengambil Lampiran Menggunakan java file output stream
+Mari kita uraikan cara mengambil lampiran menggunakan GroupDocs.Viewer. Fitur ini memungkinkan Anda mengekstrak metadata tentang setiap lampiran yang ada dalam dokumen Anda.
 
-#### Ringkasan
-Mengambil lampiran melibatkan akses ke `getAttachments` metode, yang mengembalikan daftar objek Lampiran yang berisi rincian seperti nama dan ukuran file.
+#### Ikhtisar
+Mengambil lampiran melibatkan pemanggilan metode `getAttachments`, yang mengembalikan daftar objek `Attachment` berisi detail seperti nama file dan ukuran.
 
 #### Langkah-langkah Implementasi
-1. **Buat Instansi Penampil**
-   Inisialisasi `Viewer` kelas dengan jalur ke dokumen Anda:
+1. **Buat Instance Viewer**  
+   Inisialisasikan kelas `Viewer` dengan path ke dokumen Anda:
 
    ```java
    import com.groupdocs.viewer.Viewer;
@@ -92,7 +109,7 @@ Mengambil lampiran melibatkan akses ke `getAttachments` metode, yang mengembalik
    public class FeatureRetrieveAttachments {
        public static void main(String[] args) {
            try (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG_WITH_ATTACHMENTS)) {
-               // Lanjutkan untuk mengambil lampiran
+               // Proceed to retrieve attachments
            } catch (Exception e) {
                throw new RuntimeException(e);
            }
@@ -100,8 +117,8 @@ Mengambil lampiran melibatkan akses ke `getAttachments` metode, yang mengembalik
    }
    ```
 
-2. **Ambil Lampiran**
-   Gunakan `getAttachments` metode:
+2. **Ambil Lampiran**  
+   Gunakan metode `getAttachments`:
 
    ```java
    List<Attachment> attachments = viewer.getAttachments();
@@ -110,19 +127,19 @@ Mengambil lampiran melibatkan akses ke `getAttachments` metode, yang mengembalik
    }
    ```
 
-3. **Memahami Parameter dan Metode**
-   - `Viewer`: Mengambil jalur berkas atau aliran ke dokumen.
-   - `getAttachments()`: Mengambil daftar file terlampir, memberikan rincian seperti nama.
+3. **Memahami Parameter dan Metode**  
+   - `Viewer`: Menerima path file atau stream ke dokumen.  
+   - `getAttachments()`: Mengambil daftar file yang dilampirkan, menyediakan detail seperti nama.
 
-### Simpan Lampiran Dokumen ke Direktori
-Sekarang setelah Anda mempelajari cara mengambil lampiran, mari simpan ke direktori yang Anda inginkan menggunakan GroupDocs.Viewer API.
+### Menyimpan Lampiran Dokumen ke Direktori
+Sekarang Anda telah mempelajari cara mengambil lampiran, mari simpan ke direktori yang Anda inginkan menggunakan API GroupDocs.Viewer dan **java file output stream**.
 
-#### Ringkasan
-Fitur ini melibatkan penyimpanan setiap file lampiran yang diambil ke direktori keluaran yang ditentukan. 
+#### Ikhtisar
+Fitur ini melibatkan penyimpanan setiap file lampiran yang diambil ke direktori output yang telah ditentukan.
 
 #### Langkah-langkah Implementasi
-1. **Tentukan Direktori Output**
-   Siapkan sebuah `outputDirectory` jalur tempat file akan disimpan:
+1. **Tentukan Direktori Output**  
+   Siapkan path `outputDirectory` tempat file akan disimpan:
 
    ```java
    import java.nio.file.Path;
@@ -131,8 +148,8 @@ Fitur ini melibatkan penyimpanan setiap file lampiran yang diambil ke direktori 
    Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
    ```
 
-2. **Simpan Lampiran**
-   Gunakan loop untuk menyimpan setiap lampiran menggunakan `saveAttachment` metode:
+2. **Simpan Lampiran**  
+   Gunakan loop untuk menyimpan setiap lampiran dengan metode `saveAttachment`:
 
    ```java
    try (Viewer viewer = new Viewer(TestFiles.SAMPLE_MSG_WITH_ATTACHMENTS)) {
@@ -149,40 +166,37 @@ Fitur ini melibatkan penyimpanan setiap file lampiran yang diambil ke direktori 
    }
    ```
 
-3. **Jelaskan Parameter dan Metode**
-   - `saveAttachment`: Mengambil objek Lampiran dan aliran keluaran file untuk menyimpan lampiran.
-   - `FileOutputStream`: Mengelola penulisan data ke berkas.
+3. **Jelaskan Parameter dan Metode**  
+   - `saveAttachment`: Menerima objek `Attachment` dan file output stream untuk menyimpan lampiran.  
+   - `FileOutputStream`: Mengelola penulisan data ke file menggunakan semantik **java file output stream**.
 
 ### Tips Pemecahan Masalah
-- **Ketergantungan yang Hilang**Pastikan semua dependensi Maven ditambahkan dengan benar.
-- **Kesalahan Jalur File**: Periksa ulang jalur untuk dokumen dan direktori keluaran.
-- **Izin Akses**: Verifikasi bahwa aplikasi Anda memiliki izin yang diperlukan untuk membaca/menulis berkas.
+- **Dependensi Maven telahumen dan direktori outputis
+Menggunakan GroupDocs.Viewer di Java dapat menjadi sangat berharga dalam berbagai skenario:
 
-## Aplikasi Praktis
-Menggunakan GroupDocs.Viewer di Java bisa sangat berguna dalam berbagai skenario:
-
-1. **Klien Email**: Secara otomatis mengekstrak lampiran dari arsip email untuk tujuan pemrosesan atau pengarsipan.
-2. **Sistem Manajemen Dokumen**: Tingkatkan manajemen dokumen dengan mengambil dan mengatur file terlampir.
-3. **Departemen Hukum**: Ekstrak lampiran terkait bukti dari dokumen hukum dengan aman.
-
-Kemungkinan integrasi dengan sistem lain seperti CRM atau ERP dapat lebih menyederhanakan proses bisnis, membuat penanganan lampiran menjadi mudah di semua departemen.
-
-## Pertimbangan Kinerja
+1. **Klien Email** – Secara otomatis mengekstrak lampiran dari arsip email untuk diproses atau diistem Manajemen Dokumen (DMS)** – Tingkatkan DMS dengan mengambil danungkinan integrasi dengan CRM, ERP, atau mesin alur kerja khusus dapat lebih mem## Pertimbangan Kinerja
 Untuk mengoptimalkan kinerja saat menggunakan GroupDocs.Viewer:
-- **Mengoptimalkan Penanganan File**Gunakan operasi I/O file yang efisien dan pertimbangkan buffering untuk file besar.
-- **Manajemen Memori**: Perhatikan penggunaan memori, terutama untuk dokumen berukuran besar. Pastikan pembersihan sumber daya dilakukan dengan benar untuk mencegah kebocoran.
 
-Mematuhi praktik terbaik dalam manajemen memori Java akan secara signifikan meningkatkan efisiensi tugas penanganan dokumen Anda.
+- **Optimalkan Penanganan File** – Gunakan buffered stream untuk file besar dan tut (ari kebocoran memori.  
+
+Menerapkan praktik terbaik Java akan secara signifikan meningkatkan efisiensi pipeline pemrosesan lampiran Anda.
 
 ## Kesimpulan
-Anda kini telah mempelajari cara mengambil dan menyimpan lampiran dokumen menggunakan GroupDocs.Viewer untuk Java. API canggih ini menyederhanakan pengelolaan data dokumen, menjadikannya alat penting bagi pengembang yang bekerja dengan dokumen digital.
+Anda kini telah mempelajari cara mengambil dan menyimpan lampiran dokumen menggunakan **java file output stream** dengan GroupDocs.Viewer untuk Java. API yang kuat ini menyederhanakan pengelolaan data dokumen, menjadikannya alat penting bagi pengembang yang bekerja dengan dokumen digital.
 
-Untuk lebih mengeksplorasi kemampuan GroupDocs.Viewer, pertimbangkan untuk bereksperimen dengan fitur-fitur lainnya atau mengintegrasikannya ke dalam proyek-proyek Anda yang sudah ada. Jika Anda memiliki pertanyaan atau memerlukan dukungan, jangan ragu untuk menghubungi kami melalui sumber daya yang disediakan.
+Untuk mengekspl merender mengekstrak teks. Jika Anda memiliki pertanyaan atau membutuhkan dukungan, silakan hubungi melalui sumber resmi.
 
-## Bagian FAQ
-1. **Bagaimana cara menginstal GroupDocs.Viewer di proyek Java saya?**
-   - Gunakan dependensi Maven seperti ditunjukkan di atas untuk integrasi yang lancar.
-2. **Bisakah GroupDocs.Viewer menangani semua jenis dokumen?**
-   - Mendukung berbagai macam format; periksa dokumentasinya untuk informasi spesifik.
-3. **Bagaimana jika saya menemukan kesalahan saat menyimpan lampiran?**
-   - Pastikan jalur berkas sudah benar dan Anda memiliki izin yang diperlukan.
+## Pertanyaan yang Sering Diajukan
+
+**T: Bagaimana cara menginstal GroupDocs.Viewer di proyek Java saya?**  
+J: Tambahkan dependensi Maven yang ditunjukkan sebelumnya; URL repositori dan versi sudah cukup untuk memulai dengan cepat.
+
+**T: Apakah GroupDocs.Viewer dapat menangani semua jenis dokumen?**  
+J: Ia mendukung beragam format (PDF, DOCX error saat Anda lisensi Ya, lisensi GroupDocs.Viewer yang dengan file lampiran berukuran besar?**  
+J: Menggunakan **java file output stream** dengan I/O ber‑buffer memastikan penanganan efisien untuk biner berukuran besar. Pantau penggunaan memori dan pertimbangkan streaming dalam potongan jika diperlukan.
+
+---
+
+**Terakhir Diperbarui:** 2026-02-02  
+**Diuji Dengan:** GroupDocs.Viewer 25.2  
+**Penulis:** GroupDocs
