@@ -1,7 +1,7 @@
 ---
-date: '2026-01-08'
+date: '2026-03-16'
 description: Aprende a renderizar capas CAD en Java usando GroupDocs.Viewer. Esta
-  guía cubre la instalación, la configuración y aplicaciones prácticas para una visualización
+  guía cubre la instalación, configuración y aplicaciones prácticas para una visualización
   de diseño mejorada.
 keywords:
 - Render CAD Layers in Java
@@ -15,38 +15,41 @@ weight: 1
 
 # Renderizar capas CAD Java con GroupDocs.Viewer
 
-Si necesita **renderizar capas CAD Java** para una vista más clara de dibujos complejos, ha llegado al lugar correcto. En este tutorial repasaremos todo lo que necesita—desde instalar GroupDocs.Viewer hasta seleccionar exactamente las capas que desea mostrar. Al final, podrá integrar la renderización específica de capas en sus aplicaciones Java con confianza.
+Si necesitas **render CAD layers Java** para una vista más clara de dibujos complejos, has llegado al lugar correcto. En este tutorial repasaremos todo lo que necesitas, desde instalar GroupDocs.Viewer hasta seleccionar exactamente las capas que deseas mostrar. Al final, podrás integrar la renderización específica de capas en tus aplicaciones Java con confianza.
 
-![Render Specific CAD Layers with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-specific-cad-layers-java.png)
+![Renderizar capas CAD específicas con GroupDocs.Viewer para Java](/viewer/advanced-rendering/render-specific-cad-layers-java.png)
 
-**Lo que aprenderá**
+**Qué aprenderás**
 - Cómo configurar GroupDocs.Viewer en un proyecto Java  
 - Los pasos exactos para renderizar capas CAD específicas Java  
-- Opciones de configuración que le brindan control granular  
+- Opciones de configuración que te brindan control granular  
 - Escenarios del mundo real donde la renderización de capas agrega valor  
 
 ## Respuestas rápidas
 - **¿Qué biblioteca maneja la renderización CAD en Java?** GroupDocs.Viewer for Java.  
-- **¿Puedo elegir capas individuales para renderizar?** Sí—use `viewOptions.getCadOptions().setLayers(...)`.  
+- **¿Puedo elegir capas individuales para renderizar?** Sí—usa `viewOptions.getCadOptions().setLayers(...)`.  
 - **¿Necesito una licencia para producción?** Se requiere una licencia válida de GroupDocs.Viewer para uso en producción.  
 - **¿Qué versión de Java es compatible?** JDK 8 o superior.  
-- **¿Es Maven la única forma de agregar la dependencia?** Maven es recomendado, pero también puede usar Gradle o inclusión manual de JAR.  
+- **¿Maven es la única forma de agregar la dependencia?** Maven es recomendado, pero también puedes usar Gradle o incluir el JAR manualmente.  
+
+## ¿Por qué renderizar capas CAD Java?
+Renderizar solo las capas que necesitas reduce el desorden visual, acelera la carga de páginas y permite a los interesados centrarse en las partes más relevantes de un diseño. Ya sea que estés preparando una presentación para el cliente o ejecutando una verificación de calidad automatizada, **render CAD layers Java** te brinda un control preciso sobre lo que se muestra.
 
 ## Requisitos previos
 ### Bibliotecas y dependencias requeridas
-Asegúrese de tener instalado el Java Development Kit (JDK) y Maven listo para la gestión de dependencias.
+Asegúrate de tener instalado el Java Development Kit (JDK) y Maven listo para la gestión de dependencias.
 
 ### Requisitos de configuración del entorno
 - JDK 8+  
-- IntelliJ IDEA, Eclipse, u otro IDE Java  
-- Terminal o símbolo del sistema para comandos Maven  
+- IntelliJ IDEA, Eclipse u otro IDE de Java  
+- Terminal o línea de comandos para los comandos de Maven  
 
-### Prerequisitos de conocimientos
-Conocimientos básicos de Java y Maven ayudarán, pero obtendrá todos los detalles específicos de CAD que necesita aquí.
+### Prerrequisitos de conocimientos
+Conocimientos básicos de Java y Maven serán útiles, pero aquí obtendrás todos los detalles específicos de CAD que necesitas.
 
 ## Configuración de GroupDocs.Viewer para Java
 ### Instalación mediante Maven
-Agregue el repositorio de GroupDocs y la dependencia Viewer a su `pom.xml`:
+Add the GroupDocs repository and the Viewer dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -69,7 +72,7 @@ Agregue el repositorio de GroupDocs y la dependencia Viewer a su `pom.xml`:
 GroupDocs.Viewer ofrece una prueba gratuita, licencias temporales para evaluación y licencias de compra completa para producción.
 
 ### Inicialización y configuración básica
-Aquí hay un ejemplo mínimo que abre un archivo DWG y lo renderiza a HTML:
+Here’s a minimal example that opens a DWG file and renders it to HTML:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,10 +87,10 @@ try (Viewer viewer = new Viewer("path/to/your/file.dwg")) {
 ```
 
 ## Cómo renderizar capas CAD Java
-A continuación se muestra la guía paso a paso que le permite elegir exactamente qué capas aparecen en la salida.
+A continuación se muestra la guía paso a paso que te permite elegir exactamente qué capas aparecen en la salida.
 
 ### Paso 1: Definir rutas de salida
-Cree una carpeta donde se guardarán las páginas renderizadas:
+Create a folder where the rendered pages will be saved:
 
 ```java
 import java.nio.file.Path;
@@ -100,7 +103,7 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
 ### Paso 2: Configurar opciones de vista HTML
-Indique al visor que use el patrón de nombre de archivo personalizado que acaba de crear:
+Tell the viewer to use the custom file‑name pattern you just created:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -109,7 +112,7 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 ```
 
 ### Paso 3: Especificar capas a renderizar
-Agregue los nombres de las capas que desea mostrar. El `CacheableFactory` crea objetos `Layer` que el visor entiende:
+Add the names of the layers you want to display. The `CacheableFactory` creates `Layer` objects that the viewer understands:
 
 ```java
 import java.util.ArrayList;
@@ -123,7 +126,7 @@ viewOptions.getCadOptions().setLayers(layers);
 ```
 
 ### Paso 4: Renderizar el documento
-Finalmente, abra el archivo CAD y renderice solo las capas seleccionadas:
+Finally, open the CAD file and render only the selected layers:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -133,49 +136,50 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
 }
 ```
 
-## Consejos de solución de problemas
-- **Archivo no encontrado** – Verifique la ruta absoluta o relativa que pasó a `Viewer`.  
-- **Problemas con el nombre de la capa** – Los nombres de capa distinguen mayúsculas y minúsculas; verifíquelos en su software CAD.  
-- **Errores de memoria** – Para dibujos muy grandes, considere habilitar el caché o aumentar el tamaño del heap de JVM.  
+## Problemas comunes y soluciones
+- **Archivo no encontrado** – Verifica la ruta absoluta o relativa que pasaste a `Viewer`.  
+- **Problemas con el nombre de la capa** – Los nombres de capa distinguen mayúsculas y minúsculas; verifícalos en tu software CAD.  
+- **Errores de memoria** – Para dibujos muy grandes, considera habilitar el caché o aumentar el tamaño del heap de la JVM.  
+- **Páginas en blanco inesperadas** – Asegúrate de que al menos un objeto visible exista en las capas seleccionadas; de lo contrario el renderizador puede omitir la página.  
 
 ## Aplicaciones prácticas
 Renderizar capas CAD específicas Java es útil en muchos escenarios:
 
-1. **Revisiones de ingeniería** – Enfóquese en un subsistema único sin desorden visual.  
-2. **Presentaciones arquitectónicas** – Resalte componentes estructurales o mecánicos para los clientes.  
-3. **Aseguramiento de calidad** – Aísle características críticas para verificar el cumplimiento.  
-4. **Integración BIM** – Alimente vistas específicas de capas en herramientas BIM para una documentación más rica.  
+1. **Revisiones de ingeniería** – Enfócate en un subsistema único sin desorden visual.  
+2. **Presentaciones arquitectónicas** – Resalta componentes estructurales o mecánicos para los clientes.  
+3. **Aseguramiento de calidad** – Aísla características críticas para verificar el cumplimiento.  
+4. **Integración BIM** – Alimenta vistas específicas de capas en herramientas BIM para una documentación más rica.  
 
 ## Consideraciones de rendimiento
 ### Optimización del rendimiento
-- Utilice el caché de GroupDocs para evitar volver a procesar el mismo archivo repetidamente.  
-- Limite la cantidad de capas renderizadas a la vez si experimenta ralentización.  
+- Utiliza el caché de GroupDocs para evitar volver a procesar el mismo archivo repetidamente.  
+- Limita la cantidad de capas renderizadas simultáneamente si experimentas ralentización.  
 
 ### Directrices de uso de recursos
-- Monitoree el uso del heap para dibujos complejos; ajuste `-Xmx` según sea necesario.  
-- Mantenga su JVM actualizada para beneficiarse de las últimas mejoras de recolección de basura.  
+- Monitorea el uso del heap para dibujos complejos; ajusta `-Xmx` según sea necesario.  
+- Mantén tu JVM actualizada para beneficiarte de las últimas mejoras en recolección de basura.  
 
 ## Conclusión
-Ahora dispone de un método completo y listo para producción para **renderizar capas CAD Java** con GroupDocs.Viewer. Esta capacidad agiliza revisiones, presentaciones y flujos de trabajo de integración en equipos de ingeniería y arquitectura.
+Ahora tienes un método completo y listo para producción para **render CAD layers Java** con GroupDocs.Viewer. Esta capacidad agiliza revisiones, presentaciones y flujos de integración en equipos de ingeniería y arquitectura.
 
 **Próximos pasos**  
-Explore características adicionales del Viewer—como renderizar a PDF o PNG, manejar diseños DWG o aplicar estilos personalizados—para mejorar aún más su canal de documentos.  
+Explora características adicionales de Viewer—como renderizar a PDF o PNG, manejar diseños DWG o aplicar estilos personalizados—para mejorar aún más tu canal de documentos.
 
 ## Preguntas frecuentes
 **P: ¿Qué es GroupDocs.Viewer?**  
-R: Es una biblioteca Java que permite visualizar, convertir y renderizar más de 100 formatos de documentos, incluidos archivos CAD.
+R: Es una biblioteca Java que permite ver, convertir y renderizar más de 100 formatos de documentos, incluidos archivos CAD.
 
 **P: ¿Puedo renderizar capas de otros tipos de archivo además de DWG?**  
-R: Sí, el Viewer soporta DXF, DGN y otros formatos CAD, aunque la API de selección de capas es específica para documentos CAD.
+R: Sí, el Viewer soporta DXF, DGN y otros formatos CAD, aunque la API de selección de capas es específica de documentos CAD.
 
 **P: ¿Cómo debo manejar errores durante la renderización?**  
-R: Envuelva las llamadas al visor en bloques try‑catch y registre los detalles de `ViewerException` para diagnosticar problemas.
+R: Envuelve las llamadas al viewer en bloques try‑catch y registra los detalles de `ViewerException` para diagnosticar problemas.
 
 **P: ¿Es GroupDocs.Viewer adecuado para implementaciones a gran escala y empresariales?**  
 R: Absolutamente. Está diseñado para entornos de alto rendimiento y ofrece caché del lado del servidor, multihilo y opciones de licencia para empresas.
 
 **P: ¿Dónde puedo encontrar más ejemplos de integración?**  
-R: La documentación oficial y la referencia de API contienen extensos ejemplos para escenarios web, de escritorio y en la nube.  
+R: La documentación oficial y la referencia de API contienen numerosos ejemplos para escenarios web, de escritorio y en la nube.  
 
 ## Recursos
 - [Documentación](https://docs.groupdocs.com/viewer/java/)
@@ -188,6 +192,6 @@ R: La documentación oficial y la referencia de API contienen extensos ejemplos 
 
 ---
 
-**Última actualización:** 2026-01-08  
-**Probado con:** GroupDocs.Viewer 25.2 para Java  
+**Última actualización:** 2026-03-16  
+**Probado con:** GroupDocs.Viewer 25.2 for Java  
 **Autor:** GroupDocs
