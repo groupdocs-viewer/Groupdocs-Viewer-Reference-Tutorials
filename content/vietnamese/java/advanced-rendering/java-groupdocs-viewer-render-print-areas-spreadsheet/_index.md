@@ -1,48 +1,43 @@
 ---
-date: '2025-12-23'
-description: Tìm hiểu cách tạo bản xem trước tài liệu Java bằng cách render khu vực
-  in của Excel sử dụng GroupDocs.Viewer. Hướng dẫn từng bước cho các giải pháp xem
-  trước Java hiệu quả.
+date: '2026-03-19'
+description: Tìm hiểu cách chuyển đổi XLSX sang HTML trong Java bằng cách hiển thị
+  các vùng in của bảng tính với GroupDocs.Viewer – một giải pháp xem trước nhanh chóng
+  và tập trung.
 keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Tạo Xem Trước Tài Liệu Java - Kết xuất Khu Vực In Bảng Tính với GroupDocs.Viewer'
+title: Chuyển đổi XLSX sang HTML với GroupDocs.Viewer (Vùng in)
 type: docs
 url: /vi/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
 ---
 
-# Tạo Xem Trước Tài Liệu Java: Kết Xuất Khu Vực In Bảng Tính với GroupDocs.Viewer
+# Chuyển đổi XLSX sang HTML trong Java – Kết xuất khu vực in của bảng tính với GroupDocs.Viewer
 
-Việc kết xuất chỉ các phần khu vực in của một bảng tính có thể giảm đáng kể lượng dữ liệu người dùng cần quét, làm cho việc xem trước tài liệu nhanh hơn và tập trung hơn. Trong hướng dẫn này, bạn sẽ **create document preview java** các dự án mà chỉ kết xuất các khu vực in đã định nghĩa, sử dụng **GroupDocs.Viewer for Java**. Chúng tôi sẽ hướng dẫn qua việc cài đặt, cấu hình và cách sử dụng thực tế để bạn có thể nhanh chóng thêm tính năng này vào ứng dụng của mình.
+Nếu bạn cần **chuyển đổi XLSX sang HTML** nhanh chóng đồng thời chỉ hiển thị những phần quan trọng của workbook, việc kết xuất các khu vực in đã được định nghĩa là cách tốt nhất. Hướng dẫn này sẽ chỉ cho bạn cách xây dựng giải pháp preview bằng Java, trích xuất chỉ các khu vực in từ tệp Excel và xuất ra các trang HTML sạch, tự chứa bằng **GroupDocs.Viewer for Java**. Bạn sẽ thấy tại sao cách tiếp cận này giúp tăng tốc độ tải, giảm băng thông và giữ giao diện UI gọn gàng—hoàn hảo cho các portal, dashboard và bất kỳ trình xem tài liệu web nào.
 
-![Kết Xuất Khu Vực In Bảng Tính với GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
+![Kết xuất khu vực in của bảng tính với GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
 ## Câu trả lời nhanh
-- **create document preview java** có nghĩa là gì?  
-  Nó đề cập đến việc tạo ra một biểu diễn trực quan (HTML, hình ảnh, PDF) của tài liệu trực tiếp từ mã Java.  
-- **Tại sao chỉ kết xuất khu vực in của Excel?**  
-  Nó cô lập dữ liệu quan trọng nhất, giảm thời gian kết xuất và băng thông.  
-- **Tôi có cần giấy phép để thử không?**  
-  Một bản dùng thử miễn phí hoặc giấy phép tạm thời có sẵn; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
-- **Phiên bản Java nào được hỗ trợ?**  
-  Java 8 hoặc mới hơn.  
-- **Tôi có thể nhúng xem trước vào một trang web không?**  
-  Có—sử dụng tùy chọn embedded‑resources để tạo các trang HTML tự chứa.
+- **“Chuyển đổi XLSX sang HTML” có nghĩa là gì?** Đó là việc chuyển đổi một workbook Excel thành các trang HTML sẵn sàng cho web một cách lập trình.  
+- **Tại sao chỉ kết xuất khu vực in của Excel?** Nó cô lập dữ liệu quan trọng nhất, giảm thời gian kết xuất và băng thông.  
+- **Có cần giấy phép để thử không?** Có bản dùng thử miễn phí hoặc giấy phép tạm thời; giấy phép đầy đủ cần thiết cho môi trường production.  
+- **Phiên bản Java nào được hỗ trợ?** Java 8 hoặc mới hơn (Java 11 được khuyến nghị).  
+- **Có thể nhúng preview vào trang web không?** Có—sử dụng tùy chọn embedded‑resources để tạo các trang HTML tự chứa.
 
-## “create document preview java” là gì?
-Tạo xem trước tài liệu trong Java có nghĩa là chuyển đổi một tệp nguồn (như sổ làm việc XLSX) thành định dạng có thể hiển thị trong trình duyệt hoặc các thành phần UI khác mà không cần mở ứng dụng gốc. Cách tiếp cận này rất quan trọng cho các cổng thông tin, intranet và nền tảng SaaS cần hiển thị nội dung tài liệu nhanh chóng và an toàn.
+## “Chuyển đổi XLSX sang HTML” là gì?
+Chuyển đổi tệp XLSX sang HTML có nghĩa là lấy bố cục trực quan của bảng tính và xuất nó dưới dạng markup HTML mà các trình duyệt có thể hiển thị mà không cần Excel. Đây là kỹ thuật cốt lõi để **preview bảng tính** trong các ứng dụng web, cho phép người dùng xem dữ liệu ngay lập tức và an toàn.
 
 ## Tại sao chỉ kết xuất khu vực in của Excel?
-- **Hiệu suất:** Các payload HTML nhỏ hơn tải nhanh hơn.  
+- **Hiệu năng:** Payload HTML nhỏ hơn tải nhanh hơn.  
 - **Rõ ràng:** Người dùng chỉ thấy các phần được đánh dấu để in, tránh lộn xộn.  
-- **Bảo mật:** Các worksheet không mong muốn sẽ bị ẩn khỏi xem trước.
+- **Bảo mật:** Các worksheet không mong muốn sẽ bị ẩn khỏi preview.  
 
 ## Yêu cầu trước
 - **GroupDocs.Viewer for Java** v25.2 hoặc mới hơn.  
-- Maven được cài đặt trên máy phát triển của bạn.  
-- JDK 8 hoặc mới hơn (đề nghị Java 11).  
+- Maven đã được cài đặt trên máy phát triển của bạn.  
+- JDK 8 hoặc mới hơn (Java 11 được khuyến nghị).  
 - Một IDE (IntelliJ IDEA, Eclipse, hoặc VS Code).  
 
 ## Cài đặt GroupDocs.Viewer for Java
@@ -66,9 +61,9 @@ Thêm repository và dependency của GroupDocs vào file `pom.xml` của bạn:
 ```
 
 ### Nhận giấy phép
-Bắt đầu với **bản dùng thử miễn phí** hoặc yêu cầu **giấy phép tạm thời** để đánh giá. Khi bạn đã sẵn sàng cho môi trường sản xuất, mua giấy phép đầy đủ để mở khóa tất cả tính năng và loại bỏ các hạn chế của bản dùng thử.
+Bắt đầu với **bản dùng thử miễn phí** hoặc yêu cầu **giấy phép tạm thời** để đánh giá. Khi đã sẵn sàng cho production, mua giấy phép đầy đủ để mở khóa tất cả tính năng và loại bỏ các hạn chế của bản dùng thử.
 
-### Khởi tạo Cơ bản
+### Khởi tạo cơ bản
 Dưới đây là đoạn mã tối thiểu cần thiết để mở một bảng tính bằng GroupDocs.Viewer:
 
 ```java
@@ -80,11 +75,11 @@ try (Viewer viewer = new Viewer("path/to/your/spreadsheet.xlsx")) {
 }
 ```
 
-## Cách tạo xem trước tài liệu Java với GroupDocs.Viewer
-Dưới đây là hướng dẫn từng bước chỉ **render excel print area**, tạo ra các tệp HTML tự chứa.
+## Cách chuyển đổi XLSX sang HTML với GroupDocs.Viewer
+Dưới đây là hướng dẫn từng bước để **kết xuất khu vực in của Excel** chỉ, tạo ra các tệp HTML tự chứa.
 
-### Bước 1: Xác định Thư mục Đầu ra và Định dạng Đường dẫn Tệp
-Đầu tiên, cho viewer biết nơi ghi các trang HTML đã tạo.
+### Bước 1: Định nghĩa thư mục đầu ra và định dạng đường dẫn tệp
+Đầu tiên, cho Viewer biết nơi ghi các trang HTML đã tạo.
 
 ```java
 import java.nio.file.Path;
@@ -97,10 +92,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-*Giải thích:* `outputDirectory` là thư mục sẽ chứa tất cả các tệp xem trước. `pageFilePathFormat` sử dụng một placeholder (`{0}`) mà viewer sẽ thay thế bằng số trang.
+*Giải thích:* `outputDirectory` là thư mục sẽ chứa tất cả các tệp preview. `pageFilePathFormat` sử dụng placeholder (`{0}`) mà Viewer sẽ thay thế bằng số trang.
 
-### Bước 2: Cấu hình HTML View Options cho Kết xuất Khu Vực In
-Cấu hình viewer để nhúng tài nguyên (CSS, hình ảnh) trực tiếp và tập trung vào các khu vực in đã định nghĩa.
+### Bước 2: Cấu hình HTML View Options cho việc kết xuất khu vực in
+Cấu hình Viewer để nhúng tài nguyên (CSS, hình ảnh) trực tiếp và tập trung vào các khu vực in đã định nghĩa.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -111,10 +106,10 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingPrintArea());
 ```
 
-*Giải thích:* `HtmlViewOptions.forEmbeddedResources` tạo một tệp HTML duy nhất cho mỗi trang chứa tất cả CSS/JS nội tuyến, đơn giản hoá việc triển khai. `forRenderingPrintArea()` chỉ cho engine **render excel print area**.
+*Giải thích:* `HtmlViewOptions.forEmbeddedResources` tạo một tệp HTML duy nhất cho mỗi trang, chứa toàn bộ CSS/JS nội tuyến, giúp triển khai đơn giản hơn. `forRenderingPrintArea()` chỉ báo cho engine **kết xuất khu vực in của Excel**.
 
-### Bước 3: Tải Bảng tính và Kết xuất
-Cuối cùng, chỉ định viewer tới sổ làm việc của bạn và gọi quá trình kết xuất.
+### Bước 3: Tải bảng tính và thực hiện kết xuất
+Cuối cùng, chỉ định Viewer tới workbook của bạn và gọi quá trình kết xuất.
 
 ```java
 // Replace with your actual document path
@@ -126,62 +121,66 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-*Giải thích:* Phương thức `view()` xử lý sổ làm việc theo các tùy chọn đã thiết lập, xuất ra các tệp HTML chỉ hiển thị các phần khu vực in.
+*Giải thích:* Phương thức `view()` xử lý workbook theo các tùy chọn đã thiết lập, xuất ra các tệp HTML chỉ hiển thị các phần khu vực in.
 
 ## Các vấn đề thường gặp và giải pháp
-- **Lỗi đường dẫn tệp:** Kiểm tra lại rằng các đường dẫn là tuyệt đối hoặc tương đối đúng so với thư mục làm việc của dự án.  
-- **Vấn đề quyền truy cập:** Đảm bảo quá trình Java có quyền đọc tệp nguồn và quyền ghi vào thư mục đầu ra.  
-- **Thiếu khu vực in:** Xác nhận rằng bảng tính thực sự đã định nghĩa khu vực in (Page Layout → Print Area trong Excel).  
+- **Lỗi đường dẫn tệp:** Kiểm tra lại các đường dẫn là tuyệt đối hoặc tương đối đúng so với thư mục làm việc của dự án.  
+- **Vấn đề quyền truy cập:** Đảm bảo tiến trình Java có quyền đọc tệp nguồn và ghi vào thư mục đầu ra.  
+- **Không có khu vực in:** Xác nhận rằng bảng tính thực sự đã định nghĩa khu vực in (Page Layout → Print Area trong Excel).  
 
 ## Ứng dụng thực tiễn
-1. **Hệ thống Quản lý Tài liệu:** Hiển thị cho người dùng cuối một bản xem trước sạch sẽ của báo cáo mà không cần tải toàn bộ sổ làm việc.  
-2. **Bảng điều khiển Tài chính:** Tự động tạo ảnh chụp HTML của các bảng tài chính quan trọng được đánh dấu là khu vực in.  
-3. **Nền tảng Học tập:** Cung cấp cho sinh viên các góc nhìn tập trung vào dữ liệu bài tập.  
-4. **Cổng CRM:** Nổi bật các chỉ số khách hàng trong khi ẩn các worksheet nội bộ.  
-5. **Sổ tay Data‑Science:** Nhúng các bản xem trước bảng tính ngắn gọn trong tài liệu.  
+1. **Hệ thống quản lý tài liệu:** Hiển thị preview sạch sẽ của báo cáo cho người dùng cuối mà không tải toàn bộ workbook.  
+2. **Dashboard tài chính:** Tự động tạo ảnh chụp HTML của các bảng tài chính quan trọng được đánh dấu làm khu vực in.  
+3. **Nền tảng học tập:** Cung cấp cho sinh viên các view tập trung vào dữ liệu bài tập.  
+4. **Cổng thông tin CRM:** Nổi bật các chỉ số khách hàng trong khi ẩn các worksheet nội bộ.  
+5. **Notebook khoa học dữ liệu:** Nhúng preview bảng tính ngắn gọn trong tài liệu.  
 
-## Mẹo hiệu năng
-- **Tinh chỉnh bộ nhớ:** Đối với sổ làm việc rất lớn, tăng heap JVM (`-Xmx2g` hoặc cao hơn).  
-- **Tải lười:** Nếu chỉ cần vài trang đầu, dừng kết xuất sau số trang cần thiết.  
-- **Xử lý song song:** Kết xuất nhiều sổ làm việc đồng thời bằng cách sử dụng các instance `Viewer` riêng biệt (mỗi instance trong một luồng).  
+## Mẹo tối ưu hiệu năng
+- **Tinh chỉnh bộ nhớ:** Đối với workbook rất lớn, tăng heap JVM (`-Xmx2g` hoặc cao hơn).  
+- **Lazy loading:** Nếu chỉ cần vài trang đầu, dừng kết xuất sau số trang cần thiết.  
+- **Xử lý song song:** Kết xuất nhiều workbook đồng thời bằng các instance `Viewer` riêng biệt (mỗi instance trong một thread).  
+
+## Cách preview bảng tính mà không dùng khu vực in
+Nếu sau này bạn muốn hiển thị toàn bộ workbook, chỉ cần bỏ qua lời gọi `SpreadsheetOptions.forRenderingPrintArea()` và sử dụng `SpreadsheetOptions` mặc định. Điều này sẽ cho bạn trải nghiệm **chuyển đổi bảng tính sang HTML** đầy đủ.
 
 ## Kết luận
-Bạn đã học cách tạo các giải pháp **create document preview java** để chỉ kết xuất các khu vực in đã định nghĩa của một bảng tính. Kỹ thuật này làm cho bản xem trước nhanh hơn, sạch hơn và an toàn hơn—hoàn hảo cho các ứng dụng web và doanh nghiệp hiện đại.
+Bạn đã học cách **chuyển đổi XLSX sang HTML** trong Java đồng thời chỉ kết xuất các khu vực in đã định nghĩa của bảng tính. Kỹ thuật này làm cho preview nhanh hơn, gọn gàng hơn và an toàn hơn—hoàn hảo cho các ứng dụng web và doanh nghiệp hiện đại.
 
 ### Các bước tiếp theo
-- Thử nghiệm các định dạng xem khác (PDF, PNG) bằng cách sử dụng `PdfViewOptions` hoặc `PngViewOptions`.  
-- Kết hợp việc tạo xem trước với xác thực để bảo vệ dữ liệu nhạy cảm.  
-- Khám phá toàn bộ API `SpreadsheetOptions` để tùy chỉnh kích thước trang, lưới và hơn nữa.  
+- Thử nghiệm các định dạng view khác (PDF, PNG) bằng `PdfViewOptions` hoặc `PngViewOptions`.  
+- Kết hợp việc tạo preview với xác thực để bảo vệ dữ liệu nhạy cảm.  
+- Khám phá toàn bộ API `SpreadsheetOptions` để tùy chỉnh kích thước trang, lưới và hơn thế nữa.  
 
-## Phần Hỏi Đáp
-**Q: Lợi ích chính của việc chỉ kết xuất khu vực in của Excel là gì?**  
-A: Nó giảm lộn xộn và tăng tốc độ kết xuất, cung cấp một bản xem trước tập trung làm nổi bật dữ liệu quan trọng nhất.
+## Câu hỏi thường gặp
 
-**Q: Tôi có thể kết xuất các worksheet không phải khu vực in không?**  
-A: Có—bỏ qua `SpreadsheetOptions.forRenderingPrintArea()` và sử dụng các tùy chọn mặc định để kết xuất toàn bộ sổ làm việc.
+**H: Lợi ích chính của việc kết xuất chỉ khu vực in của Excel là gì?**  
+Đ: Nó giảm bớt sự lộn xộn và tăng tốc độ kết xuất, cung cấp một preview tập trung vào dữ liệu quan trọng nhất.
 
-**Q: GroupDocs.Viewer có hỗ trợ các định dạng bảng tính khác không?**  
-A: Nó hỗ trợ XLS, XLSX, CSV, ODS và một số định dạng khác. Kiểm tra tài liệu chính thức để biết danh sách đầy đủ.
+**H: Tôi có thể kết xuất các worksheet không phải in được không?**  
+Đ: Có—bỏ qua `SpreadsheetOptions.forRenderingPrintArea()` và dùng các tùy chọn mặc định để kết xuất toàn bộ workbook.
 
-**Q: Làm thế nào để cải thiện tốc độ kết xuất cho các tệp rất lớn?**  
-A: Tăng kích thước heap JVM, chỉ kết xuất các trang cần thiết, và cân nhắc xử lý đa luồng.
+**H: GroupDocs.Viewer có hỗ trợ các định dạng bảng tính khác không?**  
+Đ: Nó hỗ trợ XLS, XLSX, CSV, ODS và một số định dạng khác. Xem tài liệu chính thức để biết danh sách đầy đủ.
 
-**Q: Các khu vực in của tôi không hiển thị—tôi nên kiểm tra gì?**  
-A: Đảm bảo khu vực in đã được định nghĩa trong tệp nguồn (Excel → Page Layout → Print Area) và bạn đang sử dụng phiên bản GroupDocs.Viewer mới nhất.
+**H: Làm sao cải thiện tốc độ kết xuất cho các tệp rất lớn?**  
+Đ: Tăng kích thước heap JVM, chỉ kết xuất các trang cần thiết và cân nhắc xử lý đa luồng.
+
+**H: Các khu vực in của tôi không hiển thị—cần kiểm tra gì?**  
+Đ: Đảm bảo khu vực in đã được định nghĩa trong tệp nguồn (Excel → Page Layout → Print Area) và bạn đang dùng phiên bản GroupDocs.Viewer mới nhất.
 
 ## Tài nguyên
-- **Tài liệu:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **Tham khảo API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Tải xuống:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- **Mua:** [Buy a License](https://purchase.groupdocs.com/buy)
-- **Dùng thử miễn phí:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Giấy phép tạm thời:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
+- **Tài liệu:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Tham chiếu API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Tải về:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
+- **Mua giấy phép:** [Buy a License](https://purchase.groupdocs.com/buy)  
+- **Bản dùng thử:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Giấy phép tạm thời:** [Request Here](https://purchase.groupdocs.com/temporary-license/)  
 - **Hỗ trợ:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2025-12-23  
-**Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs  
+**Cập nhật lần cuối:** 2026-03-19  
+**Kiểm thử với:** GroupDocs.Viewer for Java 25.2  
+**Tác giả:** GroupDocs  
 
 ---

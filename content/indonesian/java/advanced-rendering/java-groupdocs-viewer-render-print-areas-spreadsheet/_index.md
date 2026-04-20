@@ -1,46 +1,46 @@
 ---
-date: '2025-12-23'
-description: Pelajari cara membuat pratinjau dokumen Java dengan merender area cetak
-  Excel menggunakan GroupDocs.Viewer. Panduan langkah demi langkah untuk solusi pratinjau
-  Java yang efisien.
+date: '2026-03-19'
+description: Pelajari cara mengonversi XLSX ke HTML dalam Java dengan merender area
+  cetak spreadsheet menggunakan GroupDocs.Viewer – solusi pratinjau yang cepat dan
+  terfokus.
 keywords:
 - Java spreadsheet print areas rendering
 - rendering print areas with GroupDocs.Viewer for Java
 - efficient document preview solutions
-title: 'Buat Pratinjau Dokumen Java - Render Area Cetak Spreadsheet dengan GroupDocs.Viewer'
+title: Konversi XLSX ke HTML dengan GroupDocs.Viewer (Area Cetak)
 type: docs
 url: /id/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/
 weight: 1
 ---
 
-# Buat Pratinjau Dokumen Java: Render Area Cetak Spreadsheet dengan GroupDocs.Viewer
+# Convert XLSX to HTML in Java – Render Spreadsheet Print Areas with GroupDocs.Viewer
 
-Merender hanya bagian area‑cetak dari sebuah spreadsheet dapat secara dramatis mengurangi jumlah data yang harus dipindai pengguna, menjadikan pratinjau dokumen lebih cepat dan lebih terfokus. Dalam panduan ini Anda akan **create document preview java** proyek yang merender hanya area cetak yang telah ditentukan, menggunakan **GroupDocs.Viewer for Java**. Kami akan membahas langkah‑langkah penyiapan, konfigurasi, dan penggunaan dunia nyata sehingga Anda dapat dengan cepat menambahkan kemampuan ini ke aplikasi Anda.
+Jika Anda perlu **mengonversi XLSX ke HTML** dengan cepat sambil menampilkan hanya bagian‑bagian penting dari workbook, merender area cetak yang telah ditentukan adalah cara yang tepat. Tutorial ini memandu Anda membangun solusi preview Java yang mengekstrak hanya area cetak dari file Excel dan menghasilkan halaman HTML bersih serta mandiri menggunakan **GroupDocs.Viewer for Java**. Anda akan melihat mengapa pendekatan ini mempercepat pemuatan, mengurangi bandwidth, dan menjaga UI tetap rapi—sempurna untuk portal, dasbor, dan penampil dokumen berbasis web apa pun.
 
-![Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
+![Rendering Area Cetak Spreadsheet dengan GroupDocs.Viewer for Java](/viewer/advanced-rendering/spreadsheet-print-areas-rendering-java.png)
 
-## Jawaban Cepat
-- **Apa arti “create document preview java”?** Itu merujuk pada menghasilkan representasi visual (HTML, gambar, PDF) dari sebuah dokumen secara langsung dari kode Java.  
-- **Mengapa merender hanya area cetak Excel?** Ini mengisolasi data yang paling relevan, mengurangi waktu render dan bandwidth.  
+## Quick Answers
+- **Apa arti “convert XLSX to HTML”?** Itu berarti mengubah workbook Excel menjadi halaman HTML siap web secara programatis.  
+- **Mengapa hanya merender area cetak Excel?** Ini memisahkan data yang paling relevan, memotong waktu render dan bandwidth.  
 - **Apakah saya memerlukan lisensi untuk mencoba ini?** Lisensi percobaan gratis atau lisensi sementara tersedia; lisensi penuh diperlukan untuk produksi.  
-- **Versi Java mana yang didukung?** Java 8 atau yang lebih baru.  
-- **Bisakah saya menyematkan pratinjau di halaman web?** Ya—gunakan opsi embedded‑resources untuk menghasilkan halaman HTML yang berdiri sendiri.
+- **Versi Java mana yang didukung?** Java 8 atau lebih baru (Java 11 disarankan).  
+- **Bisakah saya menyematkan preview dalam halaman web?** Ya—gunakan opsi embedded‑resources untuk menghasilkan halaman HTML mandiri.
 
-## Apa itu “create document preview java”?
-Membuat pratinjau dokumen di Java berarti secara program mengonversi file sumber (seperti workbook XLSX) ke format yang dapat ditampilkan di peramban atau komponen UI lain tanpa membuka aplikasi aslinya. Pendekatan ini penting untuk portal, intranet, dan platform SaaS yang perlu menampilkan konten dokumen dengan cepat dan aman.
+## What is “convert XLSX to HTML”?
+Mengonversi file XLSX ke HTML berarti mengambil tata letak visual spreadsheet dan mengekspornya sebagai markup HTML yang dapat ditampilkan browser tanpa memerlukan Excel. Ini adalah teknik inti untuk **cara mempreview spreadsheet** di dalam aplikasi web, memungkinkan pengguna melihat data secara instan dan aman.
 
-## Mengapa merender hanya area cetak Excel?
-- **Kinerja:** Payload HTML yang lebih kecil memuat lebih cepat.  
-- **Kejelasan:** Pengguna hanya melihat bagian yang ditandai untuk dicetak, menghindari kekacauan.  
-- **Keamanan:** Worksheet yang tidak diinginkan tetap tersembunyi dari pratinjau.  
+## Why render only the Excel print area?
+- **Performance:** Payload HTML yang lebih kecil memuat lebih cepat.  
+- **Clarity:** Pengguna hanya melihat bagian yang ditandai untuk pencetakan, menghindari kekacauan.  
+- **Security:** Worksheet yang tidak diinginkan tetap tersembunyi dari preview.  
 
-## Prasyarat
+## Prerequisites
 - **GroupDocs.Viewer for Java** v25.2 atau lebih baru.  
-- Maven terpasang di mesin pengembangan Anda.  
-- JDK 8 atau yang lebih baru (Java 11 disarankan).  
+- Maven terpasang pada mesin pengembangan Anda.  
+- JDK 8 atau lebih baru (Java 11 disarankan).  
 - Sebuah IDE (IntelliJ IDEA, Eclipse, atau VS Code).  
 
-## Menyiapkan GroupDocs.Viewer for Java
+## Setting Up GroupDocs.Viewer for Java
 Tambahkan repositori GroupDocs dan dependensinya ke `pom.xml` Anda:
 
 ```xml
@@ -60,10 +60,10 @@ Tambahkan repositori GroupDocs dan dependensinya ke `pom.xml` Anda:
 </dependencies>
 ```
 
-### Akuisisi Lisensi
-Mulailah dengan **free trial** atau minta **temporary license** untuk evaluasi. Saat Anda siap untuk produksi, beli lisensi penuh untuk membuka semua fitur dan menghapus batasan percobaan.
+### License Acquisition
+Mulailah dengan **percobaan gratis** atau minta **lisensi sementara** untuk evaluasi. Saat Anda siap untuk produksi, beli lisensi penuh untuk membuka semua fitur dan menghapus batasan percobaan.
 
-### Inisialisasi Dasar
+### Basic Initialization
 Berikut adalah kode minimal yang diperlukan untuk membuka spreadsheet dengan GroupDocs.Viewer:
 
 ```java
@@ -75,10 +75,10 @@ try (Viewer viewer = new Viewer("path/to/your/spreadsheet.xlsx")) {
 }
 ```
 
-## Cara create document preview java dengan GroupDocs.Viewer
-Berikut adalah langkah‑demi‑langkah yang **render excel print area** saja, menghasilkan file HTML yang berdiri sendiri.
+## How to convert XLSX to HTML with GroupDocs.Viewer
+Berikut adalah langkah‑demi‑langkah yang **merender area cetak excel** saja, menghasilkan file HTML mandiri.
 
-### Langkah 1: Tentukan Direktori Output dan Format Jalur File
+### Step 1: Define Output Directory and File Path Format
 Pertama, beri tahu viewer di mana menulis halaman HTML yang dihasilkan.
 
 ```java
@@ -92,10 +92,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-*Penjelasan:* `outputDirectory` adalah folder yang akan menampung semua file pratinjau. `pageFilePathFormat` menggunakan placeholder (`{0}`) yang digantikan viewer dengan nomor halaman.
+*Penjelasan:* `outputDirectory` adalah folder yang akan menampung semua file preview. `pageFilePathFormat` menggunakan placeholder (`{0}`) yang akan diganti viewer dengan nomor halaman.
 
-### Langkah 2: Konfigurasikan HTML View Options untuk Render Area‑Cetak
-Konfigurasikan viewer untuk menyematkan sumber daya (CSS, gambar) secara langsung dan memfokuskan pada area cetak yang telah didefinisikan.
+### Step 2: Configure HTML View Options for Print‑Area Rendering
+Konfigurasikan viewer untuk menyematkan sumber daya (CSS, gambar) secara langsung dan memfokuskan pada area cetak yang telah ditentukan.
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -106,9 +106,9 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingPrintArea());
 ```
 
-*Penjelasan:* `HtmlViewOptions.forEmbeddedResources` membuat satu file HTML per halaman yang berisi semua CSS/JS secara inline, menyederhanakan penyebaran. `forRenderingPrintArea()` memberi tahu engine untuk **render excel print area** saja.
+*Penjelasan:* `HtmlViewOptions.forEmbeddedResources` membuat satu file HTML per halaman yang berisi semua CSS/JS secara inline, mempermudah deployment. `forRenderingPrintArea()` memberi tahu engine untuk **merender area cetak excel** saja.
 
-### Langkah 3: Muat Spreadsheet dan Render
+### Step 3: Load the Spreadsheet and Render It
 Akhirnya, arahkan viewer ke workbook Anda dan panggil proses rendering.
 
 ```java
@@ -121,62 +121,66 @@ try (Viewer viewer = new Viewer(documentPath.toString())) {
 }
 ```
 
-*Penjelasan:* Metode `view()` memproses workbook sesuai opsi yang telah kami set, menghasilkan file HTML yang menampilkan hanya bagian area‑cetak.
+*Penjelasan:* Metode `view()` memproses workbook sesuai opsi yang telah kami atur, menghasilkan file HTML yang menampilkan hanya bagian‑bagian area cetak.
 
-## Masalah Umum dan Solusinya
-- **Kesalahan jalur file:** Periksa kembali bahwa jalur bersifat absolut atau relatif dengan benar terhadap direktori kerja proyek Anda.  
-- **Masalah izin:** Pastikan proses Java memiliki akses baca ke file sumber dan akses tulis ke folder output.  
-- **Area cetak tidak ada:** Pastikan spreadsheet memang mendefinisikan area cetak (Page Layout → Print Area di Excel).  
+## Common Issues and Solutions
+- **File‑path errors:** Periksa kembali bahwa path bersifat absolut atau relatif dengan benar terhadap direktori kerja proyek Anda.  
+- **Permission problems:** Pastikan proses Java memiliki akses baca ke file sumber dan akses tulis ke folder output.  
+- **Missing print areas:** Pastikan spreadsheet memang mendefinisikan area cetak (Page Layout → Print Area di Excel).  
 
-## Aplikasi Praktis
-1. **Sistem Manajemen Dokumen:** Tampilkan pratinjau bersih laporan kepada pengguna akhir tanpa memuat seluruh workbook.  
-2. **Dashboard Keuangan:** Hasilkan snapshot HTML otomatis dari tabel keuangan utama yang ditandai sebagai area cetak.  
-3. **Platform Pembelajaran:** Berikan siswa tampilan terfokus data tugas.  
-4. **Portal CRM:** Sorot metrik pelanggan sambil menyembunyikan worksheet internal.  
-5. **Notebook Data‑Science:** Sematkan pratinjau spreadsheet ringkas dalam dokumentasi.  
+## Practical Applications
+1. **Document Management Systems:** Tampilkan preview bersih laporan kepada pengguna akhir tanpa memuat seluruh workbook.  
+2. **Financial Dashboards:** Hasilkan snapshot HTML otomatis dari tabel keuangan utama yang ditandai sebagai area cetak.  
+3. **Learning Platforms:** Berikan siswa tampilan terfokus pada data tugas.  
+4. **CRM Portals:** Sorot metrik pelanggan sambil menyembunyikan worksheet internal.  
+5. **Data‑Science Notebooks:** Sematkan preview spreadsheet ringkas dalam dokumentasi.  
 
-## Tips Kinerja
-- **Penyesuaian memori:** Untuk workbook yang sangat besar, tingkatkan heap JVM (`-Xmx2g` atau lebih).  
-- **Lazy loading:** Jika hanya membutuhkan beberapa halaman pertama, hentikan rendering setelah jumlah halaman yang diperlukan.  
-- **Pemrosesan paralel:** Render beberapa workbook secara bersamaan menggunakan instance `Viewer` terpisah (masing‑masing di threadnya).  
+## Performance Tips
+- **Memory tuning:** Untuk workbook yang sangat besar, tingkatkan heap JVM (`-Xmx2g` atau lebih tinggi).  
+- **Lazy loading:** Jika Anda hanya membutuhkan beberapa halaman pertama, hentikan rendering setelah jumlah halaman yang diperlukan.  
+- **Parallel processing:** Render beberapa workbook secara bersamaan menggunakan instance `Viewer` terpisah (masing‑masing di threadnya).  
 
-## Kesimpulan
-Anda kini telah mempelajari cara **create document preview java** yang merender hanya area cetak yang didefinisikan pada sebuah spreadsheet. Teknik ini membuat pratinjau lebih cepat, lebih bersih, dan lebih aman—sempurna untuk aplikasi web modern dan perusahaan.
+## How to preview spreadsheet without print areas
+Jika kemudian Anda memutuskan menampilkan seluruh workbook, cukup hapus pemanggilan `SpreadsheetOptions.forRenderingPrintArea()` dan gunakan `SpreadsheetOptions` default. Ini memberi Anda pengalaman **mengonversi spreadsheet ke html** secara penuh.
 
-### Langkah Selanjutnya
+## Conclusion
+Anda kini telah mempelajari cara **mengonversi XLSX ke HTML** di Java sambil merender hanya area cetak yang telah ditentukan pada spreadsheet. Teknik ini membuat preview lebih cepat, lebih bersih, dan lebih aman—sempurna untuk aplikasi web modern dan enterprise.
+
+### Next Steps
 - Bereksperimen dengan format tampilan lain (PDF, PNG) menggunakan `PdfViewOptions` atau `PngViewOptions`.  
-- Gabungkan pembuatan pratinjau dengan otentikasi untuk melindungi data sensitif.  
-- Jelajahi API lengkap `SpreadsheetOptions` untuk penyesuaian ukuran halaman, gridlines, dan lainnya.
+- Gabungkan pembuatan preview dengan otentikasi untuk melindungi data sensitif.  
+- Jelajahi API `SpreadsheetOptions` lengkap untuk pengaturan ukuran halaman, gridlines, dan lainnya.  
 
-## Bagian FAQ
-**T: Apa manfaat utama merender hanya area cetak Excel?**  
-J: Mengurangi kekacauan dan mempercepat rendering, memberikan pratinjau terfokus yang menyoroti data terpenting.
+## Frequently Asked Questions
 
-**T: Bisakah saya merender worksheet yang tidak dapat dicetak juga?**  
-J: Ya—hilangkan `SpreadsheetOptions.forRenderingPrintArea()` dan gunakan opsi default untuk merender seluruh workbook.
+**Q: Apa manfaat utama merender hanya area cetak excel?**  
+A: Ini mengurangi kekacauan dan mempercepat rendering, memberikan preview terfokus yang menonjolkan data terpenting.
 
-**T: Apakah GroupDocs.Viewer mendukung format spreadsheet lain?**  
-J: Ia menangani XLS, XLSX, CSV, ODS, dan beberapa format lainnya. Periksa dokumentasi resmi untuk daftar lengkap.
+**Q: Bisakah saya merender worksheet yang tidak dapat dicetak juga?**  
+A: Ya—hilangkan `SpreadsheetOptions.forRenderingPrintArea()` dan gunakan opsi default untuk merender seluruh workbook.
 
-**T: Bagaimana cara meningkatkan kecepatan rendering untuk file sangat besar?**  
-J: Tingkatkan ukuran heap JVM, render hanya halaman yang diperlukan, dan pertimbangkan pemrosesan multi‑thread.
+**Q: Apakah GroupDocs.Viewer mendukung format spreadsheet lain?**  
+A: Ia menangani XLS, XLSX, CSV, ODS, dan beberapa format lainnya. Periksa dokumentasi resmi untuk daftar lengkap.
 
-**T: Area cetak saya tidak muncul—apa yang harus saya periksa?**  
-J: Pastikan area cetak telah didefinisikan di file sumber (Excel → Page Layout → Print Area) dan Anda menggunakan versi GroupDocs.Viewer terbaru.
+**Q: Bagaimana cara meningkatkan kecepatan rendering untuk file yang sangat besar?**  
+A: Tingkatkan ukuran heap JVM, render hanya halaman yang diperlukan, dan pertimbangkan pemrosesan multi‑thread.
 
-## Sumber Daya
-- **Dokumentasi:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
-- **Referensi API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
-- **Unduh:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)  
-- **Pembelian:** [Buy a License](https://purchase.groupdocs.com/buy)  
-- **Free Trial:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Lisensi Sementara:** [Request Here](https://purchase.groupdocs.com/temporary-license/)  
-- **Dukungan:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)  
+**Q: Area cetak saya tidak muncul—apa yang harus saya periksa?**  
+A: Pastikan area cetak telah didefinisikan di file sumber (Excel → Page Layout → Print Area) dan Anda menggunakan versi GroupDocs.Viewer terbaru.
+
+## Resources
+- **Documentation:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [Get GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- **Purchase:** [Buy a License](https://purchase.groupdocs.com/buy)
+- **Free Trial:** [Start with a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License:** [Request Here](https://purchase.groupdocs.com/temporary-license/)
+- **Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-23  
-**Diuji Dengan:** GroupDocs.Viewer for Java 25.2  
-**Penulis:** GroupDocs  
+**Last Updated:** 2026-03-19  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs  
 
 ---
