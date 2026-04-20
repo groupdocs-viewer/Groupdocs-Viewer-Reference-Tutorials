@@ -1,49 +1,50 @@
 ---
-date: '2025-12-21'
-description: GroupDocs.Viewer for Java ile PDF'lerde gruplamayı nasıl devre dışı bırakacağınızı,
-  metin temsiliyetinin hassas olmasını sağlamak için PDF render seçeneklerinden Java
-  HTML kullanarak öğrenin.
+date: '2026-03-22'
+description: GroupDocs Viewer for Java kullanarak PDF'den HTML oluşturmayı ve doğru
+  metin temsili için karakter gruplandırmayı devre dışı bırakmayı öğrenin.
 keywords:
 - disable character grouping PDFs
 - GroupDocs Viewer Java configuration
 - precise text representation in PDFs
-title: Java için GroupDocs.Viewer ile PDF'lerde Gruplamayı Nasıl Devre Dışı Bırakılır?
+title: PDF'den HTML Oluştur ve Gruplamayı Devre Dışı Bırak – GroupDocs Java
 type: docs
 url: /tr/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/
 weight: 1
 ---
 
-# PDF'lerde Gruplamayı Devre Dışı Bırakma (GroupDocs.Viewer for Java)
+# PDF'den HTML Oluşturma ve GroupDocs Viewer for Java ile Gruplamayı Devre Dışı Bırakma
 
-PDF'leri işlerken **gruplamayı devre dışı bırakma** ihtiyacınız olduğunda, özellikle karmaşık betikler veya eski diller söz konusu olduğunda, karakterlerin kesin konumlandırılması hayati önem taşır. Varsayılan *Character Grouping* özelliği karakterleri yanlış bir şekilde birleştirerek içeriğin yanlış yorumlanmasına yol açabilir. Bu rehberde, GroupDocs.Viewer for Java kullanarak gruplamayı nasıl devre dışı bırakacağınızı adım adım göstereceğiz, böylece her glif tam olarak ait olduğu yerde kalır.
+Birçok projede **PDF'den HTML oluşturmanız** gerekir ve her glifi tam olarak bulunduğu yerde tutmanız gerekir. Bu, özellikle karmaşık yazı sistemleri, eski diller veya tek bir karakterin yanlış yerleştirilmesinin anlamı değiştirebileceği yasal belgeler için geçerlidir. Bu öğreticide, PDF'leri HTML'ye dönüştürme sürecini GroupDocs Viewer for Java ile adım adım gösterecek ve **gruplamayı nasıl devre dışı bırakacağınızı** anlatacağız, böylece her karakter bağımsız bir öğe olarak ele alınır.
 
-![Precise Rendering Techniques with GroupDocs.Viewer for Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
+![GroupDocs.Viewer for Java ile Hassas Renderleme Teknikleri](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
 
 ## Hızlı Yanıtlar
-- **“Gruplamayı devre dışı bırakma” ne yapar?** Renderleyiciyi her karakteri bağımsız bir öğe olarak işlemeye zorlar ve tam düzeni korur.
-- **Bu oranı kontrol eden API seçeneği nedir?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.
-- **Lisans almam gerekiyor mu?** Deneme sürümü testi için çalışır, ancak üretim ortamı için tam lisans gereklidir.
-- **PDF'den aynı anda Java HTML kullanabilir miyim?** Evet—gruplamayı devre dışı bırakırken HTML çıktısı oluşturmak için `HtmlViewOptions` kullanın.
-- **Bu özellik sadece PDF'lerle sınırlı mıdır?** Öncelikli olarak PDF'ler için tasarlanmıştır, ancak görüntüleyici birçok diğer formatı da kullanılabilir.
+- **“Gruplamayı devre dışı bırakma” ne yapar?** Renderlayıcıyı her karakteri bağımsız bir öğe olarak ele alması için zorlar, tam düzeni korur.  
+- **Hangi API seçeneği bunu kontrol eder?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
+- **Bir lisansa ihtiyacım var mı?** Deneme sürümü test için çalışır, ancak üretim için tam lisans gereklidir.  
+- **PDF'den aynı anda HTML oluşturabilir miyim?** Evet—gruplamayı devre dışı bırakırken HTML çıktısı oluşturmak için `HtmlViewOptions` kullanın.  
+- **Bu özellik sadece PDF'lerle mi sınırlı?** Öncelikle PDF'ler içindir, ancak görüntüleyici birçok başka formatı da destekler.
 
-## Giriiş
+## Giriş
 
-PDF belgeleriyle çalışırken, özellikle hiyeroglifler veya karakter temsili açısından hassas metin şekilleri içeren diller söz konusu olduğunda, renderlama hassasiyeti kritik öneme sahiptir. “Karakter Gruplaması” özelliği, karakterleri hatalı bir şekilde gruplayarak belge içeriğinin yanlış yorumlanmasına neden olabilir. Bu durum, belgelerin metin düzenini tam olarak yedeklemeleri gereken kullanıcılar için özellikle sorunludur.
+PDF belgeleriyle çalışırken renderleme hassasiyeti çok önemlidir—özellikle hiyeroglifler gibi karmaşık metin yapıları veya karakter temsili kesinlikle doğru olmalı olan dillerle uğraşırken. “Karakter Gruplama” özelliği, karakterleri yanlış bir şekilde birleştirerek belge içeriğinin yanlış yorumlanmasına yol açar. Bu, belgelerinin metin düzenini tam olarak yeniden üretmesi gereken kullanıcılar için özellikle sorunlu olabilir.
 
 ### Önkoşullar
 
-Kod uygulamasının ödemelerinden önce aşağıdaki koşulları sağladığınızdan emin olun:
-- **Kütüphaneler ve Bağımlılar**: GroupDocs.Viewer for Java sürüm 25.2 veya üzeri gerekir.
-- **Ortam Kurulumu**: Java Development Kit (JDK) yüklü olmalı ve IDE'niz Maven projeleriyle çalıştırılmalı şekilde ayarlanmış olmalıdır.
-- **Bilgi Gereksinimleri**: Dosya dosyalarını yönetme ve harici kütüphaneleri kullanma konusunda temel Java programlama bilgisi.
+Kod uygulamasına geçmeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
+- **Kütüphaneler ve Bağımlılıklar**: GroupDocs.Viewer for Java sürüm 25.2 veya üzeri gerekir.  
+- **Ortam Kurulumu**: Yüklü bir Java Development Kit (JDK) ve IDE'nizin Maven projeleriyle çalışacak şekilde ayarlandığından emin olun.  
+- **Bilgi Önkoşulları**: Java programlamaya temel bir anlayış, özellikle dosya yolları yönetimi ve harici kütüphanelerin kullanımı.
 
-## PDF Oluşturmada Gruplamayı Devre Dışı Bırakma
+## GroupDocs Viewer ile PDF'den HTML Oluşturma
 
-### Java için GroupDocs.Viewer'ı Kurma
+PDF'den HTML oluşturma iki adımlı bir süreçtir: görüntüleyiciyi yapılandırın, ardından belgeyi renderleyin. Anahtar, renderlemeden önce karakter gruplamasını kapatmaktır; böylece HTML çıktısı, orijinal PDF düzenini karakter karakter yansıtır.
 
-#### Maven aracılığıyla kurulum
+### GroupDocs.Viewer for Java Kurulumu
 
-Projeye gerekli kütüphaneyi ekleyin. `pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
+#### Maven ile Kurulum
+
+İlk olarak, gerekli kütüphaneyi projenize entegre edin. `pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 
 ```xml
 <repositories>
@@ -62,16 +63,16 @@ Projeye gerekli kütüphaneyi ekleyin. `pom.xml` dosyanıza aşağıdaki yapıla
 </dependencies>
 ```
 
-#### Lisans Alma
+#### Lisans Edinme
 
-GroupDocs.Viewer'ı tam olarak kullanabilmek için lisans edinmeyi düşünün:
-- **Ücretsiz Deneme**: Özellikleri test etmek için ücretsiz deneme sürümüyle başlayın.
-- **Geçici Lisans**: Daha fazla zamana ihtiyacınız varsa geçici lisans işlemi yapın.
-- **Satın Alma**: Uzun vadeli projeler için lisans satın almaları tavsiye edilir.
+GroupDocs.Viewer'ı tam olarak kullanabilmek için bir lisans edinmeyi düşünün:
+- **Ücretsiz Deneme**: Özellikleri test etmek için ücretsiz deneme ile başlayın.  
+- **Geçici Lisans**: Daha fazla zamana ihtiyacınız varsa geçici lisans başvurusu yapın.  
+- **Satın Alma**: Uzun vadeli projeler için lisans satın almanız önerilir.
 
 #### Temel Başlatma ve Kurulum
 
-Proje ortamınızı aşağıdaki şekilde başlatın:
+Aşağıda, çıktı klasörünü ayarlamaktan PDF'yi HTML olarak renderlemeye ve karakter gruplamasını devre dışı bırakmaya kadar tam iş akışını gösteren çalıştırılabilir bir kod parçacığı bulunmaktadır:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -92,41 +93,43 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 
 ### Uygulama Kılavuzu
 
-#### Özellik: Karakter Gruplandırmayı Devre Dışı Bırakma
+#### Özellik: Karakter Gruplamasını Devre Dışı Bırakma
 
-##### Adım 1: Çıktı Dizinini Tanımlama
+Aşağıda örnek kodun her satırını açıklıyoruz; böylece **neden** yaptığımızı ve **nasıl** istenmeyen karakter birleştirmesi olmadan PDF'den HTML üretimine katkıda bulunduğunu anlayabilirsiniz.
+
+##### Adım 1: Çıktı Dizinini Tanımlama  
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 ```
 
-**Neden?** Çıktınızın düzenli ve kolay erişilebilir olmasını sağlar.
+**Why?** Bu, renderlanan HTML dosyalarınızın ayrı bir klasörde saklanmasını sağlar ve daha sonra bunları bulup yönetmeyi kolaylaştırır.
 
-##### Adım 2: Dosya Yolu Biçimini Yapılandırın
+##### Adım 2: Dosya Yolu Biçimini Yapılandırma  
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Neden?** PDF belgesinin sayfalarını sistematik bir şekilde organize etmenize yardımcı olur.
+**Why?** `{0}` yer tutucusunu kullanmak, görüntüleyicinin her PDF sayfası için ayrı bir HTML dosyası oluşturmasını sağlar; çıktı düzenli kalır.
 
-##### Adım 3: HTML Görünüm Seçeneklerini Başlatın
+##### Adım 3: HTML Görünüm Seçeneklerini Başlatma  
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**Neden?** Gömülü kaynaklar, her sayfanın HTML dosyasına gerekli tüm varlıkların dahil edilmesini sağlar.
+**Why?** Gömülü kaynaklar (görseller, yazı tipleri ve CSS) doğrudan her HTML sayfasına eklenir; bu, web tabanlı görüntüleyiciler veya e‑öğrenme platformları için idealdir.
 
-##### Adım 4: Karakter Gruplandırmayı Devre Dışı Bırakın
+##### Adım 4: Karakter Gruplamasını Devre Dışı Bırakma  
 
 ```java
 viewOptions.getPdfOptions().setDisableCharsGrouping(true);
 ```
 
-**Neden?** Karakterlerin bireysel olarak renderlanmasını sağlayarak amaçlanan düzen ve anlam korunur.
+**Why?** Bu, render motoruna yan yana karakterleri birleştirmemesi talimatını veren kritik satırdır; böylece oluşturulan HTML, kaynak PDF'deki glif yerleşimini tam olarak yansıtır.
 
-##### Adım 5: Belgeyi Oluşturun
+##### Adım 5: Belgeyi Render Etme  
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
@@ -134,52 +137,46 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-**Neden?** Tüm kaynakların uygun şekilde kapatılmasını sağlayarak bellek sızıntılarını önler.
+**Why?** `Viewer` nesnesini bir try‑with‑resources bloğuna sararak, tüm yerel kaynakların otomatik olarak serbest bırakılmasını sağlarsınız; uzun süren uygulamalarda bellek sızıntılarını önler.
 
-### Gruplama olmadan PDF'den Java HTML oluşturma
+### Gruplama Olmadan Java HTML'yi PDF'den Oluşturma
 
-`HtmlViewOptions` sınıfı, **java html'yi pdf'den** üretirken, onun karakterini ayrı tutmanıza olanak tanır. Bu, renderlenmiş sayfaların bir web portalına veya tam glif yerleşiminin önemli olduğu bir e‑öğrenme platformuna saklanmak istediğinizde özellikle kullanışlıdır.
+`HtmlViewOptions` sınıfı, **generate html from pdf** işlemini gerçekleştirirken her karakteri ayrı tutmanıza olanak tanır. Bu, renderlanan sayfaları bir web portalına veya tam glif yerleşiminin önemli olduğu e‑öğrenme platformuna gömmek istediğinizde özellikle kullanışlıdır.
 
-### Sorun Giderme İpuçları
+### Yaygın Sorunlar ve Çözümler
 
-- `FileNotFoundException` almamak için belge yolunun doğru olduğundan emin olun.
-- Çıktı dizininin yazmaya izinlerine sahip olup olmadığını doğrulayın.
-- GroupDocs.Viewer için Java'nın uyumlu bir özetini kullandığınızı iki kez kontrol edin.
+- **FileNotFoundException** – `new Viewer(...)`'a gönderdiğiniz yolu iki kez kontrol edin. Açık olması için mutlak yollar veya `Path.of(...)` kullanın.  
+- **Yazma İzinleri** – Çıktı dizininin Java süreci tarafından yazılabilir olduğundan emin olun; Linux'ta klasör izinlerini (`chmod 775`) ayarlamanız gerekebilir.  
+- **Sürüm Uyumsuzluğu** – `setDisableCharsGrouping` seçeneği 25.2 sürümünden itibaren mevcuttur. `pom.xml` dosyanızın doğru sürümü gösterdiğini doğrulayın.  
 
-## Pratik Uygulamalar
+### Pratik Uygulamalar
 
-1. **Dil Koruma**: Geleneksel, Japonca veya karakter özelliklerinin kritik olduğu antik betikler gibi dillerde belge oluşturma için idealdir.
-2. **Hukuki ve Finansal Belgeler**: Uyum dolu belgelerde metin temsili kesinliği sağlar.
-3. **Eğitim Kaynakları**: Karmaşık diyagramlar veya ek açıklamalar içeren ders kitapları ve akademik makaleler için kullanılabilir.
+1. **Dil Koruma** – Karakter aralığının anlam taşıdığı Çince, Japonca, Arapça veya eski yazı sistemlerindeki belgeleri renderlemek için idealdir.  
+2. **Hukuki ve Finansal Belgeler** – Uyumluluk gerektiren belgeler için tam metin kopyasını garanti eder.  
+3. **Eğitim Kaynakları** – Karmaşık diyagramlar, açıklamalar veya çok dilli içerik içeren ders kitapları için mükemmeldir.
 
-## Performansla İlgili Hususlar
+### Performans Düşünceleri
 
-- **Kaynak Kullanımını Optimize Edin**: Sunucunuzun büyük PDF işlemlerinin işleyebileceği yeterli kaynağa sahip olduğundan emin olun.
-- **Java Bellek Yönetimi**: Belleği etkili bir şekilde oluşturmak için verimli veri yapıları ve çöp toplama uygulamalarını kullanın.
-- **Toplu İşleme**: Birden fazla belge render ederken verimliliği artırmak için belgeleri toplu olarak işleyin.
-
-## Çözüm
-
-Artık GroupDocs.Viewer for Java ile PDF renderlaması sırasında **gruplamayı devre dışı bırakma** konusunda uzmanlaştınız. Bu yetenek, kesin metin temsili uygulamalar için hayati öneme sahiptir. Daha fazla bağlantı için bu özellik diğer belge yönetim sistemleriyle entegre etme hataları veya büyük değişiklikler için ek render seçenekleriyle deneyler yapın.
-
-Sonraki adımlar, GroupDocs.Viewer'ın daha gelişmiş özelliklerin değerlendirilmesi ve büyük modüllerin performansı için performansı ince ayar yapmaktır.
+- **Kaynak Kullanımını Optimize Et** – Büyük PDF'ler önemli bellek tüketebilir. Sayfaları partiler halinde işlemeyi ve `Viewer` örneklerini hızlıca serbest bırakmayı düşünün.  
+- **Java Bellek Yönetimi** – Çok sayfalı PDF'leri işleyecekseniz JVM yığınını (`-Xmx2g` veya daha yüksek) ayarlayın.  
+- **Paralel Renderleme** – Toplu dönüşümler için, çok çekirdekli CPU'ları kullanmak amacıyla her biri kendi `Viewer` örneğine sahip ayrı iş parçacıkları oluşturun.  
 
 ## Sıkça Sorulan Sorular
 
-**S:** *Kısa devre dışı gruplamasını devre bırakmamın nedeni ne olabilir?*
-**C:** Gruplamayı devre dışı bırakma, renderleyicinin ayrı giflere ait karakterlerin bozulmasını engeller; bu, kalıcı ve sıralamanın anlamını taşıması betikler için kritiktir.
+**S:** *Karakter gruplamasını devre dışı bırakmamın gereği nedir?*  
+**C:** Gruplamayı devre dışı bırakmak, renderlayıcının farklı gliflere ait karakterleri birleştirmesini önler; bu, boşluk ve sıralamanın anlam taşıdığı yazı sistemleri için hayati öneme sahiptir.
 
-**S:** *`setDisableCharsGrouping` ayarı sadece HTML çıkışı için mi geçerlidir?*
-**C:** Hayır, temel PDF renderlama motorunu etkiler; Yani HTML, PNG vb. Çıkan tüm formatlar bu değişiklikleri yansıtır.
+**S:** *`setDisableCharsGrouping` ayarı sadece HTML çıktısı için mi geçerlidir?*  
+**C:** Hayır, bu ayar temel PDF renderleme motorunu etkiler; dolayısıyla HTML, PNG, JPEG vb. tüm çıktı formatları değişikliği yansıtır.
 
-**S:** *Bu ayarı özel yazı tipleriyle birleştirebilir miyim?*
-**C:** Evet—`Viewer`ı başlatmadan önce özel yazı tiplerinizi yüklemeden önce, gruplama biçimi uygulandı.
+**S:** *Bu ayarı özel yazı tipleriyle birleştirebilir miyim?*  
+**C:** Evet—`Viewer`'ı başlatmadan önce özel yazı tiplerinizi yükleyin; gruplama kuralı hâlâ uygulanır.
 
-**S:** *Gruplamayı devre dışı bırakma performansını etkiler mi?*
-**C:** biraz artar, çünkü motor her karakteri ayrı ayrı işler; Ancak çoğu belge için etki minimumdur.
+**S:** *Gruplamayı devre dışı bırakmak performansı etkiler mi?*  
+**C:** Biraz etkiler, çünkü motor her karakteri ayrı ayrı işler; ancak çoğu belge için etki minimaldir.
 
-**S:** *Gruplama sayfasının bazında saklanması mümkün mü?*
-**C:** Şu ​​anda seçenek `PdfOptions` örneği başına globaldır; Farklı sayfalar için ayrı `Görüntüleyici` örnekleri oluşturmanız gerekir.
+**S:** *Sayfa bazında gruplamayı açıp kapatmak mümkün mü?*  
+**C:** Şu anda seçenek, `PdfOptions` örneği başına globaldir; farklı davranışlar istiyorsanız farklı sayfalar için ayrı `Viewer` örnekleri oluşturmanız gerekir.
 
 ## Kaynaklar
 
@@ -193,6 +190,6 @@ Sonraki adımlar, GroupDocs.Viewer'ın daha gelişmiş özelliklerin değerlendi
 
 ---
 
-**Son Güncelleme:** 21.12.2025
-**Şununla Test Edildi:** GroupDocs.Viewer Java için 25.2
+**Son Güncelleme:** 2026-03-22  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
 **Yazar:** GroupDocs

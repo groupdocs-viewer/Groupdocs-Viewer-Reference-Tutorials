@@ -1,49 +1,50 @@
 ---
-date: '2025-12-21'
-description: Erfahren Sie, wie Sie die Gruppierung in PDFs mit GroupDocs.Viewer für
-  Java deaktivieren, indem Sie Java‑HTML aus den PDF‑Renderoptionen verwenden, um
-  eine präzise Textdarstellung zu gewährleisten.
+date: '2026-03-22'
+description: Erfahren Sie, wie Sie HTML aus PDF generieren und die Zeichen­gruppierung
+  mit GroupDocs Viewer für Java deaktivieren, um eine präzise Textdarstellung zu erhalten.
 keywords:
 - disable character grouping PDFs
 - GroupDocs Viewer Java configuration
 - precise text representation in PDFs
-title: Wie man die Gruppierung in PDFs mit GroupDocs.Viewer für Java deaktiviert
+title: HTML aus PDF generieren & Gruppierung deaktivieren – GroupDocs Java
 type: docs
 url: /de/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/
 weight: 1
 ---
 
-# So deaktivieren Sie die Gruppierung in PDFs mit GroupDocs.Viewer für Java
+# HTML aus PDF generieren und Gruppierung mit GroupDocs Viewer für Java deaktivieren
 
-Wenn Sie **wie man die Gruppierung deaktiviert** beim Rendern von PDFs benötigen, insbesondere für komplexe Schriften oder alte Sprachen, wird eine präzise Zeichenplatzierung unerlässlich. Die standardmäßige *Character Grouping*-Funktion kann Zeichen fälschlicherweise zusammenführen, was zu Fehlinterpretationen des Inhalts führt. In diesem Leitfaden zeigen wir Ihnen Schritt für Schritt, wie Sie die Gruppierung mit GroupDocs.Viewer für Java deaktivieren, sodass jedes Glyph exakt dort bleibt, wo es hingehört.
+In vielen Projekten muss man **HTML aus PDF generieren**, wobei jedes Glyph exakt an seiner Stelle bleibt. Das gilt besonders für komplexe Schriftsysteme, alte Sprachen oder juristische Dokumente, bei denen ein einzelnes falsch platziertes Zeichen die Bedeutung ändern kann. In diesem Tutorial führen wir Sie durch den gesamten Prozess der PDF‑zu‑HTML‑Renderung mit GroupDocs Viewer für Java und zeigen Ihnen **wie man die Gruppierung deaktiviert**, sodass jedes Zeichen als unabhängiges Element behandelt wird.
 
 ![Präzise Rendering-Techniken mit GroupDocs.Viewer für Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
 
 ## Schnelle Antworten
-- **Was bewirkt das „Deaktivieren der Gruppierung“?** Es zwingt den Renderer, jedes Zeichen als unabhängiges Element zu behandeln und bewahrt das genaue Layout.  
-- **Welche API‑Option steuert das?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
-- **Benötige ich eine Lizenz?** Eine Testversion funktioniert zum Testen, aber für den Produktionseinsatz ist eine Voll‑Lizenz erforderlich.  
-- **Kann ich gleichzeitig Java‑HTML aus PDF erzeugen?** Ja — verwenden Sie `HtmlViewOptions`, um HTML‑Ausgabe zu erstellen, während die Gruppierung deaktiviert ist.  
-- **Ist diese Funktion nur auf PDFs beschränkt?** Sie ist primär für PDFs gedacht, aber der Viewer unterstützt viele weitere Formate.
+- **Was bewirkt das „Deaktivieren der Gruppierung“?** Es zwingt den Renderer, jedes Zeichen als unabhängiges Element zu behandeln und das genaue Layout beizubehalten.  
+- **Welche API‑Option steuert dies?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
+- **Benötige ich eine Lizenz?** Eine Testversion funktioniert zum Testen, aber für die Produktion ist eine Voll‑Lizenz erforderlich.  
+- **Kann ich gleichzeitig HTML aus PDF generieren?** Ja – verwenden Sie `HtmlViewOptions`, um HTML‑Ausgabe zu erzeugen, während die Gruppierung deaktiviert ist.  
+- **Ist diese Funktion auf PDFs beschränkt?** Sie ist hauptsächlich für PDFs gedacht, aber der Viewer unterstützt viele andere Formate.
 
 ## Einführung
 
-Beim Arbeiten mit PDF‑Dokumenten ist Präzision beim Rendern entscheidend — insbesondere bei komplexen Textstrukturen wie Hieroglyphen oder Sprachen, die eine genaue Zeichenrepräsentation erfordern. Die „Character Grouping“-Funktion verursacht häufig Probleme, indem sie Zeichen fälschlicherweise gruppiert, was zu Fehlinterpretationen des Dokumenteninhalts führt. Dies kann besonders problematisch für Nutzer sein, die eine exakte Replikation des Textlayouts ihrer Dokumente benötigen.
+Beim Arbeiten mit PDF‑Dokumenten ist Präzision beim Rendern entscheidend – besonders bei komplexen Textstrukturen wie Hieroglyphen oder Sprachen, die eine genaue Zeichenrepräsentation erfordern. Die Funktion „Character Grouping“ verursacht häufig Probleme, indem sie Zeichen fälschlicherweise gruppiert, was zu Fehlinterpretationen des Dokumenteninhalts führt. Das kann insbesondere für Nutzer problematisch sein, die eine exakte Replikation des Textlayouts ihrer Dokumente benötigen.
 
 ### Voraussetzungen
 
 Bevor Sie mit der Code‑Implementierung beginnen, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen:
-- **Bibliotheken & Abhängigkeiten**: Sie benötigen GroupDocs.Viewer für Java Version 25.2 oder höher.  
-- **Umgebungseinrichtung**: Stellen Sie sicher, dass ein Java Development Kit (JDK) installiert ist und Ihre IDE für Maven‑Projekte konfiguriert ist.  
+- **Bibliotheken & Abhängigkeiten**: Sie benötigen GroupDocs.Viewer für Java Version 25.2 oder neuer.  
+- **Umgebungs‑Setup**: Stellen Sie sicher, dass ein Java Development Kit (JDK) installiert ist und Ihre IDE für Maven‑Projekte eingerichtet ist.  
 - **Vorkenntnisse**: Grundlegendes Verständnis von Java‑Programmierung, insbesondere im Umgang mit Dateipfaden und externen Bibliotheken.
 
-## So deaktivieren Sie die Gruppierung beim PDF-Rendering
+## Wie man HTML aus PDF mit GroupDocs Viewer generiert
+
+Die Generierung von HTML aus PDF ist ein zweistufiger Prozess: Konfigurieren Sie den Viewer und rendern Sie dann das Dokument. Der Schlüssel ist, die Zeichen‑Gruppierung vor dem Rendern auszuschalten, sodass die HTML‑Ausgabe das ursprüngliche PDF‑Layout Zeichen‑für‑Zeichen widerspiegelt.
 
 ### Einrichtung von GroupDocs.Viewer für Java
 
 #### Installation über Maven
 
-Zuerst integrieren Sie die benötigte Bibliothek in Ihr Projekt. Fügen Sie die folgende Konfiguration in Ihre `pom.xml` ein:
+Zuerst integrieren Sie die erforderliche Bibliothek in Ihr Projekt. Fügen Sie die folgende Konfiguration in Ihre `pom.xml` ein:
 
 ```xml
 <repositories>
@@ -64,14 +65,13 @@ Zuerst integrieren Sie die benötigte Bibliothek in Ihr Projekt. Fügen Sie die 
 
 #### Lizenzbeschaffung
 
-Um GroupDocs.Viewer vollständig nutzen zu können, sollten Sie eine Lizenz erwerben:
 - **Kostenlose Testversion**: Beginnen Sie mit der kostenlosen Testversion, um Funktionen zu testen.  
 - **Temporäre Lizenz**: Beantragen Sie eine temporäre Lizenz, wenn Sie mehr Zeit benötigen.  
 - **Kauf**: Für langfristige Projekte ist der Kauf einer Lizenz empfehlenswert.
 
 #### Grundlegende Initialisierung und Einrichtung
 
-Beginnen Sie mit der Einrichtung Ihrer Projektumgebung:
+Unten finden Sie ein sofort ausführbares Snippet, das den gesamten Workflow zeigt – vom Festlegen des Ausgabeverzeichnisses bis zum Rendern des PDFs als HTML bei deaktivierter Zeichen‑Gruppierung:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -90,43 +90,45 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-### Implementierungsleitfaden
+### Implementierungs‑Leitfaden
 
-#### Feature: Deaktivieren der Zeichen­gruppierung
+#### Feature: Deaktivierung der Zeichen‑Gruppierung
 
-##### Schritt 1: Ausgabeverzeichnis definieren
+Im Folgenden wird jede Zeile des Beispiels erklärt, damit Sie verstehen **warum** wir sie verwenden und **wie** sie zur Generierung von HTML aus PDF ohne unerwünschtes Zusammenführen von Zeichen beiträgt.
+
+##### Schritt 1: Ausgabeverzeichnis definieren  
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 ```
 
-**Warum?** Dies stellt sicher, dass Ihre Ausgaben organisiert und leicht zugänglich sind.
+**Warum?** Das stellt sicher, dass Ihre gerenderten HTML‑Dateien in einem eigenen Ordner gespeichert werden, was das spätere Auffinden und Verwalten erleichtert.
 
-##### Schritt 2: Dateipfadformat konfigurieren
+##### Schritt 2: Dateipfad‑Format konfigurieren  
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Warum?** Es hilft, die Seiten des PDF‑Dokuments systematisch zu organisieren.
+**Warum?** Durch die Verwendung eines Platzhalters (`{0}`) kann der Viewer für jede PDF‑Seite eine separate HTML‑Datei erzeugen, wodurch die Ausgabe organisiert bleibt.
 
-##### Schritt 3: HTML-View-Optionen initialisieren
+##### Schritt 3: HTML‑View‑Optionen initialisieren  
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**Warum?** Eingebettete Ressourcen stellen sicher, dass alle notwendigen Assets in jeder HTML‑Datei der Seite enthalten sind.
+**Warum?** Eingebettete Ressourcen bündeln Bilder, Schriftarten und CSS direkt mit jeder HTML‑Seite, was ideal für webbasierte Viewer oder E‑Learning‑Plattformen ist.
 
-##### Schritt 4: Zeichen­gruppierung deaktivieren
+##### Schritt 4: Zeichen‑Gruppierung deaktivieren  
 
 ```java
 viewOptions.getPdfOptions().setDisableCharsGrouping(true);
 ```
 
-**Warum?** Dadurch werden Zeichen einzeln gerendert, wodurch ihr beabsichtigtes Layout und ihre Bedeutung erhalten bleiben.
+**Warum?** Dies ist die entscheidende Zeile, die der Rendering‑Engine sagt, **keine** benachbarten Zeichen zusammenzuführen, wodurch garantiert wird, dass das erzeugte HTML die exakte Glyph‑Platzierung des Quell‑PDFs widerspiegelt.
 
-##### Schritt 5: Dokument rendern
+##### Schritt 5: Dokument rendern  
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
@@ -134,65 +136,59 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-**Warum?** So wird sichergestellt, dass alle Ressourcen ordnungsgemäß geschlossen werden und Speicherlecks vermieden werden.
+**Warum?** Das Einbetten des `Viewer` in einen try‑with‑resources‑Block stellt sicher, dass alle nativen Ressourcen automatisch freigegeben werden, wodurch Speicherlecks in langlaufenden Anwendungen vermieden werden.
 
-### Java-HTML aus PDF ohne Gruppierung erzeugen
+### Java‑HTML aus PDF ohne Gruppierung erzeugen
 
-Die Klasse `HtmlViewOptions` ermöglicht es Ihnen, **java html from pdf** zu erzeugen, während jedes Zeichen separat bleibt. Das ist besonders praktisch, wenn Sie die gerenderten Seiten in ein Web‑Portal oder eine E‑Learning‑Plattform einbetten müssen, wo die exakte Glyph‑Platzierung entscheidend ist.
+Die Klasse `HtmlViewOptions` ermöglicht es Ihnen, **HTML aus PDF zu generieren**, während jedes Zeichen separat bleibt. Das ist besonders praktisch, wenn Sie die gerenderten Seiten in ein Web‑Portal oder eine E‑Learning‑Plattform einbetten müssen, bei der die genaue Glyph‑Platzierung wichtig ist.
 
-### Tipps zur Fehlerbehebung
+### Häufige Probleme und Lösungen
 
-- Stellen Sie sicher, dass Ihr Dokumentpfad korrekt ist, um `FileNotFoundException` zu vermeiden.  
-- Prüfen Sie, ob das Ausgabeverzeichnis Schreibrechte besitzt.  
-- Vergewissern Sie sich, dass Sie eine kompatible Version von GroupDocs.Viewer für Java verwenden.
+- **FileNotFoundException** – Überprüfen Sie den Pfad, den Sie an `new Viewer(...)` übergeben, erneut. Verwenden Sie absolute Pfade oder `Path.of(...)` für Klarheit.  
+- **Schreibrechte** – Stellen Sie sicher, dass das Ausgabeverzeichnis vom Java‑Prozess beschreibbar ist; unter Linux müssen Sie ggf. die Ordnerrechte anpassen (`chmod 775`).  
+- **Versionskonflikt** – Die Option `setDisableCharsGrouping` ist ab Version 25.2 verfügbar. Vergewissern Sie sich, dass Ihre `pom.xml` die korrekte Version enthält.  
 
-## Praktische Anwendungen
+### Praktische Anwendungen
 
-1. **Sprachbewahrung**: Ideal für das Rendern von Dokumenten in Sprachen wie Chinesisch, Japanisch oder alten Schriften, bei denen Zeichenpräzision wichtig ist.  
-2. **Rechtliche und finanzielle Dokumente**: Gewährleistet Genauigkeit in Dokumenten, die eine präzise Textdarstellung für die Einhaltung von Vorschriften erfordern.  
-3. **Bildungsressourcen**: Perfekt für Lehrbücher und wissenschaftliche Arbeiten, die komplexe Diagramme oder Anmerkungen enthalten.
+1. **Sprachbewahrung** – Ideal für die Darstellung von Dokumenten in Chinesisch, Japanisch, Arabisch oder alten Schriften, bei denen der Zeichenabstand Bedeutung trägt.  
+2. **Rechtliche & Finanzielle Dokumente** – Garantiert die exakte Textreplikation für compliance‑intensive Unterlagen.  
+3. **Bildungsressourcen** – Perfekt für Lehrbücher, die komplexe Diagramme, Anmerkungen oder mehrsprachige Inhalte enthalten.
 
-## Leistungsüberlegungen
+### Leistungs‑Überlegungen
 
-- **Ressourcennutzung optimieren**: Stellen Sie sicher, dass Ihr Server über ausreichende Ressourcen verfügt, um große PDF‑Dateien zu verarbeiten.  
-- **Java‑Speichermanagement**: Verwenden Sie effiziente Datenstrukturen und Garbage‑Collection‑Praktiken, um den Speicher effektiv zu verwalten.  
-- **Batch‑Verarbeitung**: Beim Rendern mehrerer Dokumente sollten Sie diese in Stapeln verarbeiten, um den Durchsatz zu erhöhen.
-
-## Fazit
-
-Sie haben nun gelernt, **wie man die Gruppierung** beim PDF‑Rendering mit GroupDocs.Viewer für Java deaktiviert. Diese Fähigkeit ist entscheidend für Anwendungen, die eine präzise Textdarstellung erfordern. Um weiter zu experimentieren, versuchen Sie, diese Funktion in andere Dokumenten‑Management‑Systeme zu integrieren oder mit zusätzlichen Rendering‑Optionen zu spielen.
-
-Nächste Schritte umfassen das Erkunden weiterer fortgeschrittener Funktionen von GroupDocs.Viewer und das Fein‑Tuning der Leistung für groß angelegte Deployments.
+- **Ressourcennutzung optimieren** – Große PDFs können viel Speicher verbrauchen. Erwägen Sie die Verarbeitung von Seiten in Batches und das sofortige Freigeben von `Viewer`‑Instanzen.  
+- **Java‑Speicherverwaltung** – Passen Sie den JVM‑Heap (`-Xmx2g` oder höher) an, wenn Sie mit PDFs von mehreren hundert Seiten rechnen.  
+- **Paralleles Rendering** – Für Massenkonvertierungen starten Sie separate Threads, jeder mit einer eigenen `Viewer`‑Instanz, um Mehrkern‑CPUs zu nutzen.
 
 ## Häufig gestellte Fragen
 
-**F:** *Warum sollte ich überhaupt die Zeichen­gruppierung deaktivieren?*  
-**A:** Das Deaktivieren verhindert, dass der Renderer Zeichen zusammenführt, die zu unterschiedlichen Glyphen gehören, was für Schriften, bei denen Abstand und Reihenfolge Bedeutung tragen, unerlässlich ist.
+**F:** *Warum sollte ich überhaupt die Zeichen‑Gruppierung deaktivieren?*  
+**A:** Das Deaktivieren verhindert, dass der Renderer Zeichen zusammenführt, die zu unterschiedlichen Glyphen gehören. Das ist entscheidend für Skripte, bei denen Abstand und Reihenfolge Bedeutung tragen.
 
-**F:** *Ist die Einstellung `setDisableCharsGrouping` nur für HTML‑Ausgabe gültig?*  
-**A:** Nein, sie wirkt sich auf die zugrunde liegende PDF‑Render‑Engine aus, sodass jedes Ausgabeformat (HTML, PNG usw.) die Änderung widerspiegelt.
+**F:** *Gilt die Einstellung `setDisableCharsGrouping` nur für HTML‑Ausgabe?*  
+**A:** Nein, sie wirkt sich auf die zugrunde liegende PDF‑Render‑Engine aus, sodass jedes Ausgabeformat (HTML, PNG, JPEG usw.) die Änderung widerspiegelt.
 
-**F:** *Kann ich diese Einstellung mit benutzerdefinierten Schriften kombinieren?*  
-**A:** Ja — laden Sie einfach Ihre benutzerdefinierten Schriften, bevor Sie `Viewer` initialisieren, und die Gruppierungsregel bleibt aktiv.
+**F:** *Kann ich diese Einstellung mit benutzerdefinierten Schriftarten kombinieren?*  
+**A:** Ja – laden Sie Ihre benutzerdefinierten Schriftarten, bevor Sie `Viewer` initialisieren, und die Gruppierungsregel bleibt gültig.
 
 **F:** *Beeinflusst das Deaktivieren der Gruppierung die Leistung?*  
-**A:** Leicht, da der Engine jedes Zeichen einzeln verarbeitet, aber der Einfluss ist für die meisten Dokumente minimal.
+**A:** Leicht, da die Engine jedes Zeichen einzeln verarbeitet, aber die Auswirkung ist bei den meisten Dokumenten minimal.
 
-**F:** *Gibt es eine Möglichkeit, die Gruppierung pro Seite zu steuern?*  
-**A:** Derzeit ist die Option global pro `PdfOptions`‑Instanz; für unterschiedliche Seiten müssten Sie separate `Viewer`‑Instanzen erstellen.
+**F:** *Gibt es eine Möglichkeit, die Gruppierung pro Seite zu aktivieren/deaktivieren?*  
+**A:** Derzeit ist die Option global pro `PdfOptions`‑Instanz; für gemischtes Verhalten benötigen Sie separate `Viewer`‑Instanzen für unterschiedliche Seiten.
 
 ## Ressourcen
 
-- [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)  
-- [API Reference](https://reference.groupdocs.com/viewer/java/)  
-- [Download GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)  
-- [Purchase License](https://purchase.groupdocs.com/buy)  
-- [Free Trial Version](https://releases.groupdocs.com/viewer/java/)  
-- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)  
-- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- [GroupDocs Dokumentation](https://docs.groupdocs.com/viewer/java/)
+- [API‑Referenz](https://reference.groupdocs.com/viewer/java/)
+- [GroupDocs Viewer herunterladen](https://releases.groupdocs.com/viewer/java/)
+- [Lizenz kaufen](https://purchase.groupdocs.com/buy)
+- [Kostenlose Testversion](https://releases.groupdocs.com/viewer/java/)
+- [Antrag auf temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/)
+- [GroupDocs Support‑Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Zuletzt aktualisiert:** 2025-12-21  
+**Zuletzt aktualisiert:** 2026-03-22  
 **Getestet mit:** GroupDocs.Viewer 25.2 für Java  
 **Autor:** GroupDocs

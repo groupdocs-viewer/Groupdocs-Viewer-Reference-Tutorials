@@ -1,51 +1,54 @@
 ---
-date: '2025-12-31'
-description: Apprenez à convertir des fichiers xlsx en PDF Java avec GroupDocs.Viewer,
+date: '2026-03-22'
+description: Apprenez à générer un PDF à partir d'Excel en Java en utilisant GroupDocs.Viewer,
   en rendant les feuilles de calcul avec des sauts de page, des lignes de grille et
   des en-têtes.
 keywords:
 - Java PDF Rendering with GroupDocs.Viewer
 - rendering spreadsheets as PDFs
 - GroupDocs.Viewer for Java setup
-title: 'xlsx en pdf java - sauts de page avec GroupDocs.Viewer'
+title: Générer un PDF à partir d’Excel en Java – Maîtriser le rendu de feuilles de
+  calcul avec sauts de page
 type: docs
 url: /fr/java/advanced-rendering/java-pdf-rendering-groupdocs-viewer-page-breaks/
 weight: 1
 ---
 
-# xlsx to pdf java : Maîtriser le rendu des feuilles de calcul avec des sauts de page
+# générer pdf à partir d'excel en Java : Maîtriser le rendu des feuilles de calcul avec les sauts de page
 
-Débloquez la puissance de la conversion **xlsx to pdf java** dans vos applications Java en utilisant GroupDocs.Viewer. Ce guide complet vous accompagne dans le rendu des feuilles de calcul par sauts de page, l'ajout de lignes de grille et l'inclusion d'en-têtes afin que les PDF résultants soient soignés et prêts à être distribués.
+Dans les applications modernes axées sur les données, la capacité de **générer pdf à partir d'excel** directement en Java représente un gain de productivité considérable. Avec GroupDocs.Viewer, vous pouvez transformer des feuilles de calcul complexes en PDF soignés — en conservant les sauts de page, les lignes de grille et les en‑têtes de colonnes — sans avoir besoin d’installer Microsoft Office sur le serveur.
 
 ## Introduction
 
-Dans le monde actuel axé sur les données, une gestion efficace des documents est cruciale pour les entreprises qui souhaitent rationaliser leurs opérations. Souvent, les feuilles de calcul sont la source principale de données qui doit être partagée dans un format cohérent sur toutes les plateformes. Ce tutoriel répond au défi de rendre les feuilles de calcul avec des sauts de page en PDF en utilisant **GroupDocs.Viewer for Java**—un outil polyvalent conçu pour simplifier ce processus.
+Dans le monde actuel axé sur les données, une gestion efficace des documents est cruciale pour les entreprises souhaitant rationaliser leurs opérations. Souvent, les feuilles de calcul sont la source principale de données qui doivent être partagées dans un format cohérent sur toutes les plateformes. Ce tutoriel aborde le défi du rendu des feuilles de calcul avec des sauts de page en PDF en utilisant **GroupDocs.Viewer for Java** — un outil polyvalent conçu pour simplifier ce processus.
 
-![Sauts de page dans les feuilles de calcul avec GroupDocs.Viewer pour Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
+![Page Breaks in Spreadsheets with GroupDocs.Viewer for Java](/viewer/advanced-rendering/page-breaks-in-spreadsheets-java.png)
 
-**Ce que vous apprendrez :**
-- Comment rendre les feuilles de calcul par sauts de page en PDF (xlsx vers pdf java).
-- Configurer les options de rendu des feuilles de calcul telles que les lignes de grille et les en-têtes.
-- Mettre en place votre environnement de développement pour GroupDocs.Viewer.
+**Ce que vous apprendrez :**
+- Comment **générer pdf à partir d'excel** en rendant les feuilles de calcul par sauts de page.
+- Configurer les options de rendu des feuilles de calcul telles que les lignes de grille et les en‑têtes.
+- Configurer votre environnement de développement pour GroupDocs.Viewer.
 - Applications pratiques de ces fonctionnalités dans des scénarios réels.
 
 ## Réponses rapides
-- **Quelle est la bibliothèque principale ?** GroupDocs.Viewer pour Java.
-- **Quelle méthode rend par sauts de page ?** `SpreadsheetOptions.forRenderingByPageBreaks()`.
-- **Puis-je ajouter des lignes de grille au PDF ?** Oui, utilisez `setRenderGridLines(true)`.
-- **Comment inclure les en-têtes de colonne ?** Appelez `setRenderHeadings(true)`.
-- **Ai‑je besoin d’une licence pour la production ?** Oui, une licence GroupDocs valide est requise.
+- **Quelle est la bibliothèque principale ?** GroupDocs.Viewer for Java.  
+- **Quelle méthode rend par sauts de page ?** `SpreadsheetOptions.forRenderingByPageBreaks()`.  
+- **Puis‑je ajouter des lignes de grille au PDF ?** Oui, utilisez `setRenderGridLines(true)`.  
+- **Comment inclure les en‑têtes de colonnes ?** Appelez `setRenderHeadings(true)`.  
+- **Ai‑je besoin d’une licence pour la production ?** Oui, une licence GroupDocs valide est requise.
 
-## Qu'est‑ce que xlsx vers pdf java ?
-Convertir un classeur Excel (`.xlsx`) en document PDF directement depuis le code Java vous permet de partager des données en toute sécurité, de préserver la mise en forme et d'assurer la compatibilité multiplateforme sans nécessiter Microsoft Office sur le serveur.
+## Qu’est‑ce que **générer pdf à partir d'excel** ?
+Convertir un classeur Excel (`.xlsx`) en document PDF directement depuis du code Java vous permet de partager des données en toute sécurité, de préserver le formatage et d’assurer la compatibilité multiplateforme sans nécessiter Microsoft Office sur le serveur.
 
-## Pourquoi utiliser GroupDocs.Viewer pour Java ?
-GroupDocs.Viewer offre une prise en charge prête à l'emploi d'un large éventail de formats de documents, un rendu haute fidélité et des options flexibles telles que **sauts de page excel pdf**, **ajouter des lignes de grille pdf**, et **inclure des titres pdf**. Cela élimine le besoin de logique de rendu personnalisé et accélère le développement.
+## Pourquoi utiliser GroupDocs.Viewer for Java ?
+GroupDocs.Viewer offre un support prêt à l’emploi pour un large éventail de formats de documents, un rendu haute fidélité et des options flexibles telles que **render excel page breaks**, **add grid lines pdf**, et **include headings pdf**. Cela élimine le besoin d’une logique de rendu personnalisée et accélère le développement.
 
 ## Prérequis
 
+Pour mettre en œuvre efficacement **générer pdf à partir d'excel** avec GroupDocs.Viewer, assurez‑vous de disposer de ce qui suit :
+
 ### Bibliothèques et dépendances requises
-Vous aurez besoin de la bibliothèque GroupDocs.Viewer pour Java. Elle peut être ajoutée facilement via Maven en l’incluant dans votre fichier `pom.xml` :
+Vous aurez besoin de la bibliothèque GroupDocs.Viewer for Java. Elle peut être ajoutée facilement via Maven en l’incluant dans votre fichier `pom.xml` :
 ```xml
 <repositories>
     <repository>
@@ -63,17 +66,17 @@ Vous aurez besoin de la bibliothèque GroupDocs.Viewer pour Java. Elle peut êtr
 </dependencies>
 ```
 
-### Exigences de configuration de l'environnement
-- Kit de développement Java (JDK) version 8 ou supérieure.
-- Un environnement de développement intégré (IDE) tel qu'IntelliJ IDEA, Eclipse ou NetBeans.
+### Exigences de configuration de l’environnement
+- Java Development Kit (JDK) version 8 ou supérieure.
+- Un environnement de développement intégré (IDE) tel qu’IntelliJ IDEA, Eclipse ou NetBeans.
 
-### Connaissances préalables
-Une compréhension de base de la programmation Java et une familiarité avec les projets Maven seront utiles. Une expérience préalable de la génération de PDF est un atout mais n’est pas indispensable.
+### Prérequis de connaissances
+Une compréhension de base de la programmation Java et une familiarité avec les projets Maven seront utiles. Une expérience préalable de la génération de PDF est un atout mais n’est pas obligatoire.
 
-## Configuration de GroupDocs.Viewer pour Java
+## Configuration de GroupDocs.Viewer for Java
 
 ### Initialisation et configuration de base
-Une fois votre environnement prêt, initialisez GroupDocs.Viewer dans votre projet :
+Une fois votre environnement prêt, initialisez GroupDocs.Viewer dans votre projet :
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -83,54 +86,50 @@ try (Viewer viewer = new Viewer("path/to/your/file.xlsx")) {
 ```
 
 ### Acquisition de licence
-Vous pouvez obtenir un essai gratuit ou une licence temporaire auprès de GroupDocs pour tester leurs produits sans aucune limitation de fonctionnalités. Visitez [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) pour plus d'informations sur l'obtention d'une licence.
+Vous pouvez obtenir un essai gratuit ou une licence temporaire auprès de GroupDocs pour tester leurs produits sans aucune limitation de fonctionnalités. Visitez [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) pour plus d’informations sur l’obtention d’une licence.
 
-## Rendu des feuilles de calcul par sauts de page
+## Comment générer pdf à partir d'excel avec GroupDocs.Viewer
 
-### Comment convertir des sauts de page Excel en PDF
-Cette fonctionnalité respecte les paramètres de saut de page du classeur, produisant un PDF où chaque page correspond à un saut défini.
+### Rendu des feuilles de calcul par sauts de page
 
-#### Mise en œuvre étape par étape
-1. **Initialiser le Viewer et les Options** 
-Configurez le visualiseur avec votre fichier d’entrée et définissez le chemin de sortie du PDF : 
-   ```java
-   Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
-   Path outputFilePath = outputDirectory.resolve("output.pdf");
+#### Implémentation étape par étape
+1. **Initialiser le Viewer et les Options** – configurez le viewer avec votre fichier d’entrée et définissez le chemin de sortie du PDF :
+```java
+Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
+Path outputFilePath = outputDirectory.resolve("output.pdf");
 
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
-       PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
-   ```
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Page_Breaks.xlsx")) {
+    PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
+```
 
-2. **Configurer les options de la feuille de calcul**  
-   Activez le rendu par sauts de page, les lignes de grille et les en‑têtes :  
-   ```java
-       // Set SpreadsheetOptions for rendering by page breaks.
-       viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
-       
-       // Enable additional configurations like grid lines and headings.
-       viewOptions.getSpreadsheetOptions().setRenderGridLines(true);
-       viewOptions.getSpreadsheetOptions().setRenderHeadings(true);
+2. **Configurer les options de feuille de calcul** – activez le rendu par sauts de page, les lignes de grille et les en‑têtes :
+```java
+    // Set SpreadsheetOptions for rendering by page breaks.
+    viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forRenderingByPageBreaks());
+    
+    // Enable additional configurations like grid lines and headings.
+    viewOptions.getSpreadsheetOptions().setRenderGridLines(true);
+    viewOptions.getSpreadsheetOptions().setRenderHeadings(true);
 
-       viewer.view(viewOptions);
-   } catch (Exception e) {
-       e.printStackTrace();
-   }
-   ```
+    viewer.view(viewOptions);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
 
 3. **Paramètres clés expliqués**
-   - `forRenderingByPageBreaks()` : garantit que chaque page PDF s’aligne avec un saut de page de la feuille de calcul.
-   - `setRenderGridLines(true)` : **Add grid lines pdf** – améliore la lisibilité des données tabulaires.
-   - `setRenderHeadings(true)` : **Include headings pdf** – affiche les étiquettes de colonnes.
+   - `forRenderingByPageBreaks()`: Garantit que chaque page PDF correspond à un saut de page de la feuille de calcul.
+   - `setRenderGridLines(true)`: **add grid lines pdf** – améliore la lisibilité des données tabulaires.
+   - `setRenderHeadings(true)`: **include headings pdf** – affiche les libellés de colonnes.
 
 #### Conseils de dépannage
 - Vérifiez que les chemins d’entrée et de sortie sont corrects.
 - Confirmez que le classeur contient réellement des sauts de page (Mise en page → Aperçu des sauts de page).
 
-## Configuration des options de rendu de la feuille de calcul
+## Configuration des options de rendu des feuilles de calcul
 
-### Personnaliser les lignes de grille et les en-têtes
-Au-delà des sauts de page, vous pouvez affiner l’apparence du PDF.
-
+### Personnalisation des lignes de grille et des en‑têtes
+Au‑delà des sauts de page, vous pouvez affiner l’apparence du PDF.
 ```java
 import com.groupdocs.viewer.options.SpreadsheetOptions;
 
@@ -141,50 +140,50 @@ spreadsheetOptions.setRenderGridLines(true);
 spreadsheetOptions.setRenderHeadings(true);
 ```
 
-- **Lignes de grille** : utiles pour préserver la structure visuelle des tableaux de données.
-- **En‑têtes** : facilitent la compréhension du contexte des colonnes par les lecteurs.
+- **Lignes de grille** : utiles pour préserver la structure visuelle des tableaux de données.
+- **En‑têtes** : facilitent la compréhension du contexte des colonnes par les lecteurs.
 
 #### Problèmes courants
-- Si les lignes de grille ou les en-têtes n'apparaissent pas, vérifiez que l'instance `SpreadsheetOptions` est attachée à `PdfViewOptions` avant d'appeler `viewer.view()`.
+Si les lignes de grille ou les en‑têtes n’apparaissent pas, vérifiez que l’instance `SpreadsheetOptions` est attachée à `PdfViewOptions` avant d’appeler `viewer.view()`.
 
 ## Applications pratiques
 
-Voici des scénarios réels où **xlsx to pdf java** brille :
+Voici des scénarios réels où **générer pdf à partir d'excel** se démarque :
 
-1. **Rapports financiers** – Convertissez les rapports mensuels Excel en PDF qui respectent les sauts de page, garantissant que chaque état commence sur une nouvelle page.
-2. **Publication académique** – Rendre les tableaux de données de recherche avec des lignes de grille et des en-têtes pour les inclure dans des revues.
-3. **Gestion des stocks** – Générer des feuilles d’inventaire imprimables qui conservent la mise en page originale.
+1. **Reporting financier** – Convertir les rapports Excel mensuels en PDF qui respectent les sauts de page, garantissant que chaque état commence sur une nouvelle page.
+2. **Publication académique** – Rendre les tableaux de données de recherche avec des lignes de grille et des en‑têtes pour les inclure dans des revues.
+3. **Gestion des stocks** – Générer des fiches d’inventaire imprimables qui conservent la mise en page originale.
 
-## Considérations sur les performances
+## Considérations de performance
 
-- **Optimiser l’utilisation des ressources** : gardez les fichiers d’entrée de taille raisonnable pour éviter une consommation élevée de mémoire.
-- **Ajustement de la JVM** : utilisez les options `-Xms` et `-Xmx` pour allouer suffisamment d'espace de tas aux classeurs spacieux.
+- **Optimiser l’utilisation des ressources** : Gardez les fichiers d’entrée de taille raisonnable pour éviter une consommation élevée de mémoire.
+- **Ajustement de la JVM** : Utilisez les options `-Xms` et `-Xmx` pour allouer suffisamment d’espace de tas aux classeurs volumineux.
 
 ## Questions fréquemment posées
 
-**Q : Quelle est la façon la plus simple d’ajouter des lignes de grille au PDF ?**
-R : Appelez `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` avant le rendu.
+**Q : Quelle est la façon la plus simple d’ajouter des lignes de grille au PDF ?**  
+R : Appelez `viewOptions.getSpreadsheetOptions().setRenderGridLines(true)` avant le rendu.
 
-**Q : Puis‑je rendre uniquement une feuille de calcul spécifique?**
-R : Oui, utilisez `SpreadsheetOptions.setWorksheetIndex(int ​​index)` pour cibler une feuille particulière.
+**Q : Puis‑je rendre uniquement une feuille de calcul spécifique ?**  
+R : Oui, utilisez `SpreadsheetOptions.setWorksheetIndex(int index)` pour cibler une feuille particulière.
 
-**Q : GroupDocs.Viewer prend‑il en charge les fichiers Excel protégés par mot de passe ?**
-R : Absolument. Transmettez le mot de passe lors de la construction de l’instance `Viewer`.
+**Q : GroupDocs.Viewer prend‑il en charge les fichiers Excel protégés par mot de passe ?**  
+R : Absolument. Transmettez le mot de passe lors de la construction de l’instance `Viewer`.
 
-**Q : Comment garantir que les en-têtes apparaissent dans le PDF ?**
-R : Activez `setRenderHeadings(true)` dans `SpreadsheetOptions`.
+**Q : Comment garantir que les en‑têtes apparaissent dans le PDF ?**  
+R : Activez `setRenderHeadings(true)` dans `SpreadsheetOptions`.
 
-**Q : Une licence est‑elle requise pour une utilisation en production ?**
-R : Oui, une licence GroupDocs valide est nécessaire pour les déploiements commerciaux.
+**Q : Une licence est‑elle requise pour une utilisation en production ?**  
+R : Oui, une licence GroupDocs valide est nécessaire pour les déploiements commerciaux.
 
 ## Conclusion
 
-Vous avez maintenant maîtrisé **xlsx to pdf java** avec GroupDocs.Viewer, de la configuration de l’environnement au rendu des feuilles de calcul avec des sauts de page, des lignes de grille et des en-têtes. Cette capacité rationalise les flux de travail documentaires, améliore la présentation des données et réduit la dépendance aux outils externes.
+Vous avez maintenant maîtrisé **générer pdf à partir d'excel** avec GroupDocs.Viewer, depuis la configuration de l’environnement jusqu’au rendu des feuilles de calcul avec des sauts de page, des lignes de grille et des en‑têtes. Cette capacité simplifie les flux de travail documentaires, améliore la présentation des données et réduit la dépendance aux outils externes.
 
-**Prochaines étapes :** Explorez d'autres `PdfViewOptions` telles que le filigrane, la protection par mot de passe ou les tailles de page personnalisées pour affiner davantage votre PDF.
+**Prochaines étapes :** Explorez d’autres `PdfViewOptions` comme le filigrane, la protection par mot de passe ou les tailles de page personnalisées pour affiner davantage vos PDF.
 
 ---
 
-**Dernière mise à jour :** 2025-12-31
-**Testé avec :** GroupDocs.Viewer 25.2 pour Java
-**Auteur :** GroupDocs
+**Dernière mise à jour :** 2026-03-22  
+**Testé avec :** GroupDocs.Viewer 25.2 for Java  
+**Auteur :** GroupDocs
