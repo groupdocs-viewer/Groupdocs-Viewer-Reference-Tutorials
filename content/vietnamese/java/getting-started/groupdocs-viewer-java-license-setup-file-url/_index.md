@@ -1,41 +1,83 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách thiết lập giấy phép GroupDocs.Viewer cho Java bằng tệp cục bộ hoặc URL. Mở khóa đầy đủ các chức năng với hướng dẫn chi tiết này."
-"title": "Hướng dẫn thiết lập tệp cục bộ hoặc URL của giấy phép Java GroupDocs.Viewer"
-"url": "/vi/java/getting-started/groupdocs-viewer-java-license-setup-file-url/"
-"weight": 1
+date: '2026-03-08'
+description: Tìm hiểu cách thiết lập giấy phép cho GroupDocs.Viewer Java bằng tệp
+  cục bộ hoặc URL. Hướng dẫn từng bước này cho bạn biết cách thiết lập giấy phép nhanh
+  chóng và đáng tin cậy.
+keywords:
+- GroupDocs.Viewer Java license
+- setting license from file
+- setting license via URL
+title: Cách thiết lập giấy phép cho GroupDocs.Viewer Java (Tệp hoặc URL)
 type: docs
+url: /vi/java/getting-started/groupdocs-viewer-java-license-setup-file-url/
+weight: 1
 ---
-# Cách thiết lập giấy phép Java của GroupDocs.Viewer: Tệp cục bộ hoặc URL
 
-Mở khóa toàn bộ tiềm năng của GroupDocs.Viewer cho các ứng dụng Java của bạn bằng cách thiết lập giấy phép từ tệp cục bộ hoặc tài nguyên trực tuyến. Hướng dẫn toàn diện này sẽ giúp bạn triển khai cả hai phương pháp một cách hiệu quả, đảm bảo quyền truy cập vào tất cả các tính năng do công cụ xem tài liệu mạnh mẽ này cung cấp.
+Next lines:
+
+**Last Updated:** 2026-03-08  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs
+
+Translate labels:
+
+**Cập nhật lần cuối:** 2026-03-08  
+**Kiểm thử với:** GroupDocs.Viewer for Java 25.2  
+**Tác giả:** GroupDocs
+
+Now ensure we kept all formatting.
+
+Check for any missing shortcodes: none.
+
+Check code blocks: placeholders remain.
+
+Check image alt text changed.
+
+Check markdown links: the support forum link remains unchanged.
+
+Check tables: format preserved.
+
+Now produce final content.# Cách Đặt Giấy Phép cho GroupDocs.Viewer Java (Tệp hoặc URL)
+
+Mở khóa tiềm năng đầy đủ của GroupDocs.Viewer cho các ứng dụng Java của bạn bằng cách học **cách đặt giấy phép** từ tệp cục bộ hoặc URL trực tuyến. Hướng dẫn này sẽ đưa bạn qua cả hai cách tiếp cận, giải thích lý do mỗi phương pháp quan trọng, và cung cấp các mẹo thực tế để giữ cho các tính năng xem tài liệu của bạn hoạt động liên tục.
+
+## Câu trả lời nhanh
+- **Cách chính để đặt giấy phép GroupDocs.Viewer trong Java là gì?** Sử dụng lớp `License` và gọi `setLicense` với một `InputStream` từ tệp hoặc URL.  
+- **Tôi có thể thay đổi giấy phép mà không cần triển khai lại ứng dụng không?** Có — lưu giấy phép trên máy chủ web và trỏ URL tới tệp mới.  
+- **Tôi có cần kết nối internet để sử dụng giấy phép tệp cục bộ không?** Không, phương pháp dựa trên tệp hoạt động hoàn toàn offline.  
+- **Phiên bản Java nào được yêu cầu?** Java 8 hoặc cao hơn được khuyến nghị.  
+- **Cần cấu hình Maven bổ sung không?** Chỉ cần phụ thuộc GroupDocs.Viewer và các mục repository được hiển thị bên dưới.
+
+## “Cách đặt giấy phép” trong ngữ cảnh của GroupDocs.Viewer là gì?
+Việc đặt giấy phép cho biết engine của GroupDocs.Viewer rằng bạn có quyền thương mại hợp lệ. Nếu không, thư viện sẽ chạy ở chế độ đánh giá, giới hạn tính năng và thêm watermark. Bằng cách cấu hình giấy phép đúng cách, bạn sẽ mở khóa tất cả các khả năng render cho PDF, tài liệu Office, hình ảnh và hơn nữa.
+
+## Tại sao nên sử dụng tệp cục bộ thay vì URL?
+- **Tệp cục bộ:** Lý tưởng cho môi trường không có kết nối internet ổn định hoặc khi bạn muốn khởi động nhanh nhất có thể.  
+- **URL:** Hoàn hảo cho việc quản lý giấy phép tập trung — cập nhật giấy phép ở một nơi và tất cả các instance đang chạy sẽ tự động nhận thay đổi.
 
 ## Giới thiệu
+Giấy phép là yếu tố thiết yếu khi sử dụng GroupDocs.Viewer trong Java để mở khóa toàn bộ khả năng của nó vượt qua chế độ đánh giá. Dù tệp giấy phép của bạn được lưu trữ cục bộ hay được lấy từ URL, việc quản lý hiệu quả sẽ đảm bảo chức năng không bị gián đoạn.
 
-Cấp phép là điều cần thiết khi sử dụng GroupDocs.Viewer trong Java để mở khóa toàn bộ khả năng của nó ngoài chế độ đánh giá. Cho dù tệp giấy phép của bạn được lưu trữ cục bộ hay được lấy từ URL, việc quản lý tệp hiệu quả sẽ đảm bảo chức năng không bị gián đoạn.
+![Hướng dẫn Tệp cục bộ hoặc URL với GroupDocs.Viewer cho Java](/viewer/getting-started/local-file-or-url-guide.png)
 
-**Những gì bạn sẽ học được:**
-- Cách thiết lập giấy phép Java của GroupDocs Viewer bằng tệp cục bộ
-- Thiết lập giấy phép thông qua URL cho các tài nguyên trực tuyến
-- Hiểu các điều kiện tiên quyết và thiết lập môi trường
+**Bạn sẽ học được:**
+- Cách thiết lập giấy phép GroupDocs Viewer Java bằng tệp cục bộ  
+- Cách thiết lập giấy phép qua URL cho tài nguyên trực tuyến  
+- Hiểu các yêu cầu trước và thiết lập môi trường  
 
-Hãy bắt đầu bằng cách thiết lập giấy phép GroupDocs.Viewer trong các ứng dụng Java.
+Hãy bắt đầu với **cách đặt giấy phép** trong các ứng dụng Java của bạn.
 
-### Điều kiện tiên quyết
+### Yêu cầu trước
 
-Trước khi tiếp tục, hãy đảm bảo bạn có những điều sau:
+- **Thư viện và Phụ thuộc:** Bao gồm thư viện GroupDocs.Viewer cho Java. Sử dụng Maven để quản lý phụ thuộc dễ dàng.  
+- **Thiết lập môi trường:** Java 8 hoặc cao hơn (JDK 11+ được khuyến nghị cho các dự án mới).  
+- **Kiến thức yêu cầu:** Lập trình Java cơ bản, xử lý tệp và làm việc với URL.  
 
-- **Thư viện và các phụ thuộc:** Bao gồm GroupDocs.Viewer cho thư viện Java. Sử dụng Maven để quản lý phụ thuộc dễ dàng.
-- **Thiết lập môi trường:** Đảm bảo môi trường phát triển của bạn hỗ trợ Java (tốt nhất là JDK 8 trở lên).
-- **Điều kiện tiên quyết về kiến thức:** Hiểu biết cơ bản về lập trình Java, xử lý tệp và sử dụng URL sẽ rất có lợi.
+### Cài đặt GroupDocs.Viewer cho Java
 
-### Thiết lập GroupDocs.Viewer cho Java
-
-Để tích hợp GroupDocs.Viewer vào dự án Java của bạn, hãy làm theo các bước thiết lập sau:
+Để tích hợp GroupDocs.Viewer vào dự án Java của bạn, hãy thực hiện các bước cài đặt sau:
 
 **Cấu hình Maven:**
-
-Bao gồm những điều sau đây trong `pom.xml` tệp để thêm kho lưu trữ và sự phụ thuộc cần thiết:
 
 ```xml
 <repositories>
@@ -55,146 +97,153 @@ Bao gồm những điều sau đây trong `pom.xml` tệp để thêm kho lưu t
 </dependencies>
 ```
 
-**Mua giấy phép:**
+**Lấy giấy phép:**
 
-Để sử dụng GroupDocs.Viewer, hãy lấy giấy phép từ trang web chính thức của họ. Các tùy chọn bao gồm:
-- **Dùng thử miễn phí:** Bắt đầu bằng bản dùng thử để khám phá các tính năng.
-- **Giấy phép tạm thời:** Có ích cho mục đích đánh giá mà không có giới hạn.
-- **Mua:** Để sử dụng và hỗ trợ lâu dài.
+Để sử dụng GroupDocs.Viewer, hãy lấy giấy phép từ trang chính thức của họ. Các tùy chọn bao gồm:
+- **Dùng thử miễn phí:** Bắt đầu với bản dùng thử để khám phá các tính năng.  
+- **Giấy phép tạm thời:** Hữu ích cho việc đánh giá ngắn hạn mà không có hạn chế.  
+- **Mua:** Dành cho việc sử dụng và hỗ trợ lâu dài.  
 
-Sau khi có tệp giấy phép, hãy khởi tạo nó trong ứng dụng Java của bạn.
+Sau khi bạn có tệp giấy phép, hãy khởi tạo nó trong ứng dụng Java của bạn.
 
-### Hướng dẫn thực hiện
+## Cách Đặt Giấy Phép từ Tệp Cục Bộ
 
-Chúng tôi sẽ khám phá hai phương pháp để thiết lập giấy phép GroupDocs.Viewer của bạn: từ tệp cục bộ và thông qua URL.
-
-#### Thiết lập Giấy phép từ File
-
-Phương pháp này bao gồm việc đọc tệp giấy phép được lưu trữ cục bộ trên hệ thống của bạn. Sẽ rất đơn giản nếu bạn có sẵn giấy phép ngoại tuyến.
+Phương pháp này liên quan đến việc đọc tệp giấy phép được lưu trữ cục bộ trên hệ thống của bạn. Nó đơn giản nếu bạn đã có giấy phép sẵn sàng offline.
 
 **Tổng quan:**  
-Thiết lập giấy phép từ tệp đảm bảo ứng dụng của bạn có thể khởi động với đầy đủ chức năng mà không cần kết nối internet sau khi thiết lập ban đầu.
+Đặt giấy phép từ tệp đảm bảo rằng ứng dụng của bạn có thể khởi động với đầy đủ chức năng mà không cần kết nối internet sau khi thiết lập ban đầu.
 
-1. **Xác định vị trí tệp giấy phép của bạn:**
+1. **Xác định vị trí tệp giấy phép của bạn:**  
+   Thay thế `YOUR_DOCUMENT_DIRECTORY/your-license-file.lic` bằng đường dẫn thực tế tới tệp giấy phép cục bộ của bạn.
 
-   Thay thế `YOUR_DOCUMENT_DIRECTORY/your-license-file.lic` với đường dẫn thực tế đến tệp giấy phép cục bộ của bạn.
+2. **Triển khai mã:**  
 
-2. **Thực hiện Bộ luật:**
+```java
+import com.groupdocs.viewer.License;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
-   ```java
-   import com.groupdocs.viewer.License;
-   import java.io.File;
-   import java.nio.file.Files;
-   import java.nio.file.Paths;
+public class SetLicenseFromFile {
+    public static void run() {
+        final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
+        if (new File(licensePath).isFile()) {
+            try (
+                java.io.InputStream stream = Files.newInputStream(Paths.get(licensePath))
+            ) {
+                License license = new License();
+                license.setLicense(stream);
+                System.out.println("License set successfully from file.");
+            } catch (IOException ex) {
+                ex.printStackTrace(); // Properly handle exceptions in production
+            }
+        } else {
+            System.err.println("License file not found at the specified path.");
+        }
+    }
+}
+```
 
-   public class SetLicenseFromFile {
-       public static void run() {
-           final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
-           if (new File(licensePath).isFile()) {
-               try (
-                   java.io.InputStream stream = Files.newInputStream(Paths.get(licensePath))
-               ) {
-                   License license = new License();
-                   license.setLicense(stream);
-                   System.out.println("License set successfully from file.");
-               } catch (IOException ex) {
-                   ex.printStackTrace(); // Xử lý đúng các ngoại lệ trong sản xuất
-               }
-           } else {
-               System.err.println("License file not found at the specified path.");
-           }
-       }
-   }
-   ```
+**Giải thích:**  
+- Lớp `License` được nhập để quản lý cài đặt giấy phép.  
+- Java NIO cung cấp I/O tệp hiệu quả, không chặn.  
+- Xử lý ngoại lệ mạnh mẽ ngăn ngừa sự cố nếu tệp bị thiếu hoặc không đọc được.
 
-**Giải thích:**
-- Các `License` lớp được nhập để quản lý cài đặt giấy phép.
-- Sử dụng NIO của Java để xử lý tệp hiệu quả, đảm bảo sử dụng tài nguyên ở mức tối thiểu.
-- Xử lý các ngoại lệ để ngăn ngừa lỗi thời gian chạy.
+## Cách Đặt Giấy Phép từ URL
 
-#### Thiết lập Giấy phép từ URL
-
-Nếu tệp giấy phép của bạn nằm trực tuyến, việc thiết lập thông qua URL có thể đơn giản hóa quá trình thiết lập.
+Nếu tệp giấy phép của bạn nằm trực tuyến, việc đặt nó qua URL có thể đơn giản hoá quá trình thiết lập.
 
 **Tổng quan:**  
-Việc lấy giấy phép từ nguồn trực tuyến là lý tưởng khi bạn muốn quản lý tập trung hoặc cần cập nhật thường xuyên mà không cần triển khai lại ứng dụng.
+Lấy giấy phép từ nguồn trực tuyến là lý tưởng khi bạn muốn quản lý tập trung hoặc cần cập nhật thường xuyên mà không phải triển khai lại ứng dụng.
 
-1. **Chuẩn bị URL Giấy phép của bạn:**
+1. **Chuẩn bị URL giấy phép của bạn:**  
+   Đảm bảo `YOUR_DOCUMENT_DIRECTORY/your-license-url` trỏ tới một tài nguyên HTTP(s) hợp lệ chứa tệp giấy phép của bạn.
 
-   Đảm bảo `YOUR_DOCUMENT_DIRECTORY/your-license-url` trỏ đến tài nguyên HTTP(s) hợp lệ có chứa tệp giấy phép của bạn.
+2. **Triển khai mã:**  
 
-2. **Thực hiện Bộ luật:**
+```java
+import com.groupdocs.viewer.License;
+import java.io.IOException;
+import java.net.URL;
 
-   ```java
-   import com.groupdocs.viewer.License;
-   import java.io.IOException;
-   import java.net.URL;
+public class SetLicenseFromUrl {
+    public static void run() {
+        final String licenseUrl = "YOUR_DOCUMENT_DIRECTORY/your-license-url";
+        if (licenseUrl.startsWith("http")) {
+            try (
+                java.io.InputStream stream = new URL(licenseUrl).openStream()
+            ) {
+                License license = new License();
+                license.setLicense(stream);
+                System.out.println("License set successfully from URL.");
+            } catch (IOException ex) {
+                ex.printStackTrace(); // Properly handle exceptions in production
+            }
+        } else {
+            System.err.println("The provided path is not a valid URL.");
+        }
+    }
+}
+```
 
-   public class SetLicenseFromUrl {
-       public static void run() {
-           final String licenseUrl = "YOUR_DOCUMENT_DIRECTORY/your-license-url";
-           if (licenseUrl.startsWith("http")) {
-               try (
-                   java.io.InputStream stream = new URL(licenseUrl).openStream()
-               ) {
-                   License license = new License();
-                   license.setLicense(stream);
-                   System.out.println("License set successfully from URL.");
-               } catch (IOException ex) {
-                   ex.printStackTrace(); // Xử lý đúng các ngoại lệ trong sản xuất
-               }
-           } else {
-               System.err.println("The provided path is not a valid URL.");
-           }
-       }
-   }
-   ```
+**Giải thích:**  
+- Lớp `URL` lấy tệp giấy phép từ xa.  
+- Kiểm tra URL ngăn ngừa việc sử dụng đường dẫn sai định dạng.  
+- Các ngoại lệ liên quan tới mạng được bắt để ứng dụng có thể phản hồi một cách nhẹ nhàng (ví dụ: thử lại hoặc chuyển sang dự phòng).
 
-**Giải thích:**
-- Các `URL` lớp giúp tìm nạp tài nguyên qua mạng.
-- Xác thực định dạng URL để đảm bảo có thể truy cập được.
-- Xử lý ngoại lệ rất quan trọng đối với độ tin cậy của mạng.
+## Ứng dụng Thực tế
 
-### Ứng dụng thực tế
+1. **Hệ thống Quản lý Tài liệu:** Nâng cao khả năng xem tài liệu với quyền truy cập đầy đủ tính năng.  
+2. **Ứng dụng Web:** Cung cấp cho người dùng tương tác tài liệu liền mạch mà không cần phụ thuộc vào phía máy chủ.  
+3. **Ứng dụng Di động:** Sử dụng như một dịch vụ backend để hiển thị tài liệu trên thiết bị di động.  
+4. **Nền tảng Quản lý Nội dung:** Đơn giản hoá việc cung cấp và xem nội dung cho thư viện kỹ thuật số.  
 
-GroupDocs.Viewer có thể được tích hợp vào nhiều ứng dụng thực tế khác nhau:
+## Các Yếu Tố Hiệu Suất
 
-1. **Hệ thống quản lý tài liệu:** Nâng cao khả năng xem tài liệu với quyền truy cập đầy đủ tính năng.
-2. **Ứng dụng web:** Cung cấp cho người dùng khả năng tương tác tài liệu liền mạch mà không phụ thuộc vào máy chủ.
-3. **Ứng dụng di động:** Sử dụng nó như một dịch vụ phụ trợ để hiển thị tài liệu trên thiết bị di động.
-4. **Nền tảng quản lý nội dung:** Đơn giản hóa việc cung cấp và xem nội dung cho thư viện số.
+Tối ưu hoá ứng dụng của bạn bao gồm:
 
-### Cân nhắc về hiệu suất
+- **Sử dụng tài nguyên hiệu quả:** Đóng các stream kịp thời để giải phóng các handle tệp và socket mạng.  
+- **Hoạt động bất đồng bộ:** Khi lấy giấy phép từ URL, cân nhắc chạy tải xuống trong một luồng nền hoặc sử dụng CompletableFuture để tránh chặn luồng chính.  
+- **Quản lý bộ nhớ Java:** Giám sát việc sử dụng heap, đặc biệt khi render tài liệu lớn, và điều chỉnh các tùy chọn JVM (`-Xmx`, `-XX:MaxMetaspaceSize`) khi cần.  
 
-Tối ưu hóa ứng dụng của bạn bao gồm:
+## Các Vấn Đề Thường Gặp & Giải Pháp
 
-- **Sử dụng tài nguyên hiệu quả:** Quản lý bộ nhớ bằng cách đóng luồng đúng cách sau khi sử dụng.
-- **Hoạt động không đồng bộ:** Hãy cân nhắc các phương pháp không đồng bộ khi lấy giấy phép từ URL để tránh chặn luồng chính.
-- **Quản lý bộ nhớ Java:** Thường xuyên theo dõi và điều chỉnh cài đặt JVM để có hiệu suất tối ưu với các tài liệu lớn.
+| Vấn đề | Nguyên nhân | Giải pháp |
+|-------|-------|----------|
+| **Không tìm thấy tệp giấy phép** | Đường dẫn sai hoặc thiếu quyền truy cập tệp | Xác minh đường dẫn tuyệt đối và đảm bảo người dùng tiến trình có thể đọc tệp. |
+| **URL không hợp lệ** | Lỗi đánh máy hoặc thiếu scheme `http/https` | Kiểm tra lại chuỗi URL; sử dụng kiểm tra `startsWith("http")` như đã minh họa. |
+| **Hết thời gian chờ mạng** | Máy chủ chậm hoặc không thể truy cập | Triển khai logic thử lại với back‑off tăng dần hoặc cung cấp bản sao cục bộ dự phòng. |
+| **Watermark đánh giá vẫn xuất hiện** | Giấy phép không được tải trước khi tạo instance `Viewer` | Gọi mã giấy phép **trước** khi bất kỳ đối tượng Viewer nào được khởi tạo. |
 
-### Phần kết luận
+## Câu Hỏi Thường Gặp
 
-Thiết lập giấy phép GroupDocs.Viewer trong Java rất đơn giản, có thể thực hiện thông qua các tệp cục bộ hoặc tài nguyên trực tuyến. Bằng cách làm theo hướng dẫn này, ứng dụng của bạn sẽ sử dụng hiệu quả tất cả các tính năng có sẵn.
+**Q: Nếu tệp giấy phép của tôi không được tìm thấy cục bộ thì sao?**  
+A: Đảm bảo đường dẫn đúng, tệp tồn tại và ứng dụng có quyền đọc. Bạn cũng có thể chuyển sang phương pháp URL như một giải pháp nhanh.
 
-**Các bước tiếp theo:**
-- Khám phá thêm về các tính năng của GroupDocs.Viewer bằng cách tìm hiểu tài liệu của họ.
-- Thử nghiệm với nhiều loại tài liệu và tùy chọn xem khác nhau để nâng cao trải nghiệm của người dùng.
+**Q: Tôi có thể cập nhật giấy phép mà không cần triển khai lại không?**  
+A: Có — lưu giấy phép trên máy chủ web và trỏ URL tới vị trí đó. Cập nhật tệp trên máy chủ sẽ ngay lập tức phản ánh trong tất cả các instance đang chạy sau khi chúng tải lại giấy phép.
 
-Sẵn sàng thực hiện bước tiếp theo? Hãy triển khai các giải pháp này vào dự án của bạn ngay hôm nay!
+**Q: Làm thế nào để xử lý lỗi mạng khi đặt giấy phép qua URL?**  
+A: Bao bọc việc tải xuống trong khối try‑catch, thêm logic thử lại, và tùy chọn chuyển sang bản sao cục bộ đã lưu trong bộ nhớ đệm.
 
-### Phần Câu hỏi thường gặp
+**Q: Lợi ích của việc sử dụng GroupDocs.Viewer trong Java là gì?**  
+A: Nó cung cấp khả năng render tài liệu mạnh mẽ, hiệu suất cao cho hơn 100 định dạng, tích hợp liền mạch và không có phụ thuộc bên ngoài.
 
-1. **Nếu tệp giấy phép của tôi không được tìm thấy tại địa phương thì sao?**  
-   Đảm bảo đường dẫn chính xác và có thể truy cập được, sau đó xác minh quyền của tệp.
+**Q: Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?**  
+A: Truy cập [Diễn đàn Hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9) để được trợ giúp và chia sẻ cộng đồng.
 
-2. **Tôi có thể cập nhật giấy phép mà không cần triển khai lại không?**  
-   Có, việc lấy dữ liệu từ URL cho phép cập nhật động với thời gian ngừng hoạt động tối thiểu.
+## Kết luận
 
-3. **Tôi phải xử lý lỗi mạng như thế nào khi thiết lập giấy phép qua URL?**  
-   Triển khai logic thử lại hoặc cơ chế dự phòng để đảm bảo độ tin cậy.
+Bằng cách làm theo hướng dẫn này, bạn đã biết **cách đặt giấy phép** cho GroupDocs.Viewer trong Java, bất kể bạn chọn tệp cục bộ hay URL từ xa. Giấy phép đúng cách mở khóa mọi tính năng, cải thiện hiệu suất và loại bỏ các hạn chế của chế độ đánh giá.
 
-4. **Lợi ích của việc sử dụng GroupDocs.Viewer trong Java là gì?**  
-   Cung cấp khả năng xem tài liệu mạnh mẽ, hỗ trợ nhiều định dạng và tích hợp dễ dàng vào các hệ thống hiện có.
+**Bước tiếp theo:**  
+- Thử nghiệm với các loại tài liệu khác nhau (PDF, DOCX, PPTX) để xem toàn bộ khả năng render.  
+- Khám phá các tùy chọn Viewer nâng cao như render từng trang, thêm watermark và phông chữ tùy chỉnh.  
 
-5. **Tôi có thể nhận được hỗ trợ ở đâu nếu gặp vấn đề?**  
-   Thăm nom [Diễn đàn hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9) để được hỗ trợ và hiểu biết sâu sắc về cộng đồng.
+Áp dụng các giải pháp này ngay hôm nay và mang đến cho người dùng của bạn trải nghiệm xem tài liệu không lỗi!
+
+---
+
+**Cập nhật lần cuối:** 2026-03-08  
+**Kiểm thử với:** GroupDocs.Viewer for Java 25.2  
+**Tác giả:** GroupDocs

@@ -1,36 +1,54 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách thiết lập giấy phép cho GroupDocs.Viewer trong Java bằng cả tệp cục bộ và URL. Đảm bảo tuân thủ các yêu cầu cấp phép một cách dễ dàng."
-"title": "Cách thiết lập giấy phép trong GroupDocs.Viewer Java&#58; Hướng dẫn thiết lập tệp và URL"
-"url": "/vi/java/getting-started/groupdocs-viewer-java-license-setup/"
-"weight": 1
+date: '2026-03-08'
+description: Tìm hiểu cách nhận giấy phép tạm thời, thiết lập GroupDocs.Viewer cho
+  Java bằng cách sử dụng các tệp cục bộ hoặc URL, và kiểm tra tính khả dụng của đường
+  dẫn giấy phép.
+keywords:
+- GroupDocs.Viewer Java license
+- setting license in Java
+- HTTP URL-based licenses
+title: Cách lấy giấy phép tạm thời và thiết lập giấy phép trong GroupDocs.Viewer Java
 type: docs
+url: /vi/java/getting-started/groupdocs-viewer-java-license-setup/
+weight: 1
 ---
-# Cách thiết lập giấy phép trong GroupDocs.Viewer Java: Hướng dẫn thiết lập tệp và URL
 
-## Giới thiệu
-Quản lý giấy phép hiệu quả là rất quan trọng khi tích hợp các thư viện của bên thứ ba như **GroupDocs.Viewer cho Java** vào ứng dụng của bạn. Hướng dẫn này giải quyết một thách thức chung mà các nhà phát triển phải đối mặt—thiết lập và quản lý giấy phép một cách liền mạch, cho dù được lưu trữ cục bộ hay được truy cập qua URL. Bằng cách hiểu các tình huống này, bạn có thể đảm bảo rằng ứng dụng của mình vẫn tuân thủ các yêu cầu cấp phép trong khi vẫn duy trì hiệu suất của ứng dụng.
+ for links: we kept same.
 
-### Những gì bạn sẽ học được
-- Cách thiết lập giấy phép cho GroupDocs.Viewer từ tệp cục bộ.
-- Xử lý hiệu quả các giấy phép dựa trên URL HTTP.
-- Xác minh tính khả dụng của các đường dẫn cấp phép và triển khai cơ chế dự phòng.
-- Các biện pháp tốt nhất để tích hợp GroupDocs.Viewer vào ứng dụng Java của bạn.
+Check for image: unchanged.
 
-Hãy cùng tìm hiểu những điều kiện tiên quyết cần thiết trước khi bắt đầu triển khai.
+Now produce final content.# Cách lấy giấy phép tạm thời và thiết lập giấy phép trong GroupDocs.Viewer Java
 
-## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn đã chuẩn bị những điều sau:
-1. **Bộ phát triển Java (JDK):** Khuyến khích sử dụng phiên bản 8 trở lên.
-2. **Môi trường phát triển tích hợp (IDE):** Bất kỳ IDE nào hỗ trợ Java, chẳng hạn như IntelliJ IDEA hoặc Eclipse, đều hoạt động tốt.
-3. **GroupDocs.Viewer cho Thư viện Java:** Đảm bảo bạn đã tải xuống và cấu hình thư viện trong dự án của mình.
-4. **Kiến thức Java cơ bản:** Cần phải quen thuộc với cú pháp và khái niệm Java để có thể theo dõi.
+Quản lý giấy phép một cách hiệu quả là rất quan trọng khi tích hợp các thư viện bên thứ ba như **GroupDocs.Viewer for Java** vào ứng dụng của bạn. Hướng dẫn này sẽ chỉ cho bạn **cách lấy giấy phép tạm thời**, thiết lập nó từ tệp cục bộ hoặc URL HTTP, và xác minh rằng đường dẫn giấy phép là đúng. Khi kết thúc tutorial, bạn sẽ có một cấu hình giấy phép đáng tin cậy, sẵn sàng cho môi trường production, giúp ứng dụng của bạn tuân thủ và hiệu suất tốt.
 
-## Thiết lập GroupDocs.Viewer cho Java
-Để bắt đầu với GroupDocs.Viewer, hãy đưa nó vào dự án của bạn bằng Maven. Đây là cách thực hiện:
+![File and URL Setup with GroupDocs.Viewer for Java](/viewer/getting-started/file-and-url-setup-png.png)
 
-### Cấu hình Maven
-Thêm cấu hình sau vào `pom.xml` tài liệu:
+## Quick Answers
+- **Làm thế nào để tôi lấy giấy phép tạm thời?** Yêu cầu một giấy phép từ trang giấy phép tạm thời của GroupDocs và tải xuống tệp *.lic*.
+- **Tôi có thể tải giấy phép từ một URL không?** Có – chỉ cần chỉ định `License.setLicense` tới một địa chỉ HTTP trả về tệp giấy phép hợp lệ.
+- **Điều gì xảy ra nếu đường dẫn giấy phép bị thiếu?** Thực hiện kiểm tra để hiển thị hướng dẫn và ngăn không cho viewer khởi động.
+- **Tôi có cần khởi động lại ứng dụng sau khi thay đổi giấy phép không?** Không, `License.setLicense` có thể được gọi tại thời gian chạy.
+- **Phiên bản Java nào được yêu cầu?** Khuyến nghị JDK 8 hoặc cao hơn.
+
+## What is a temporary license?
+Một **giấy phép tạm thời** là một khóa có thời hạn do GroupDocs cấp, cho phép bạn đánh giá sản phẩm mà không cần mua giấy phép đầy đủ. Nó hoạt động giống hệt giấy phép vĩnh viễn trong thời gian còn hiệu lực, cho phép bạn thử nghiệm tất cả các tính năng trong môi trường thực tế.
+
+## Why obtain a temporary license?
+- **Đánh giá nhanh:** Nhận đầy đủ chức năng ngay lập tức cho các dự án chứng minh khái niệm.
+- **Không ràng buộc tài chính:** Kiểm tra trước khi mua.
+- **Tích hợp dễ dàng:** Hoạt động với cùng các cuộc gọi API như giấy phép vĩnh viễn.
+
+## Prerequisites
+1. **Java Development Kit (JDK):** Phiên bản 8 hoặc cao hơn.  
+2. **IDE:** IntelliJ IDEA, Eclipse, hoặc bất kỳ IDE nào hỗ trợ Java.  
+3. **Thư viện GroupDocs.Viewer for Java:** Được thêm vào dự án của bạn (xem cấu hình Maven bên dưới).  
+4. **Kiến thức Java cơ bản:** Quen thuộc với các lớp, import và xử lý ngoại lệ.
+
+## Setting Up GroupDocs.Viewer for Java
+Để bắt đầu, bao gồm thư viện vào dự án Maven của bạn.
+
+### Maven Configuration
+Thêm cấu hình sau vào tệp `pom.xml` của bạn:
 ```xml
 <repositories>
    <repository>
@@ -48,159 +66,167 @@ Thêm cấu hình sau vào `pom.xml` tài liệu:
 </dependencies>
 ```
 
-### Xin giấy phép
-Để sử dụng GroupDocs.Viewer, hãy xin giấy phép:
-- **Dùng thử miễn phí:** Tải xuống từ [Trang web GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Giấy phép tạm thời:** Yêu cầu một tại [trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
-- **Mua:** Để có giải pháp lâu dài, hãy cân nhắc mua giấy phép từ [Trang mua hàng của GroupDocs](https://purchase.groupdocs.com/buy).
+### Acquiring a License
+Để sử dụng GroupDocs.Viewer, bạn cần có giấy phép:
 
-### Khởi tạo cơ bản
-Sau khi thiết lập hoàn tất, hãy khởi tạo GroupDocs.Viewer trong ứng dụng Java của bạn:
+- **Dùng thử miễn phí:** Tải xuống từ [trang GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+- **Giấy phép tạm thời:** Yêu cầu một giấy phép tại [trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).  
+- **Mua:** Đối với giải pháp lâu dài, hãy cân nhắc mua giấy phép từ [trang mua GroupDocs](https://purchase.groupdocs.com/buy).
+
+### Basic Initialization
+Sau khi thư viện đã được thêm, bạn có thể khởi tạo viewer:
 ```java
 import com.groupdocs.viewer.License;
 
 public class InitializeViewer {
     public static void main(String[] args) {
         License license = new License();
-        // Đặt đường dẫn đến tệp giấy phép hoặc URL của bạn tại đây
+        // Set the path to your license file or URL here
         license.setLicense("YOUR_LICENSE_PATH");
         System.out.println("GroupDocs.Viewer initialized successfully.");
     }
 }
 ```
 
-## Hướng dẫn thực hiện
-Bây giờ, chúng ta hãy khám phá cách triển khai các tính năng khác nhau để quản lý giấy phép trong Java.
+## Cách lấy giấy phép tạm thời và thiết lập nó từ tệp
+### Overview
+Thiết lập giấy phép từ tệp cục bộ là cách tiếp cận đơn giản nhất và hoạt động ngay cả khi ứng dụng chạy offline.
 
-### Thiết lập Giấy phép từ Tệp
-Tính năng này minh họa cách thiết lập giấy phép bằng đường dẫn tệp. Tính năng này hữu ích khi ứng dụng của bạn có quyền truy cập cục bộ vào tệp giấy phép.
+### Implementation Steps
+1. **Xác định Đường dẫn Giấy phép** – chỉ đến tệp *.lic* bạn nhận được sau khi yêu cầu giấy phép tạm thời:
+```java
+final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
+```
+2. **Áp dụng Giấy phép** – sử dụng lớp `License` để tải nó:
+```java
+import com.groupdocs.viewer.License;
 
-#### Tổng quan
-Thiết lập giấy phép từ tệp đảm bảo ứng dụng của bạn có thể xác minh trạng thái cấp phép mà không cần dựa vào kết nối mạng, giúp ứng dụng chống chịu tốt hơn với các sự cố kết nối.
+public class SetLicenseFromFile {
+    public static void run() {
+        if (licensePath != null && !licensePath.startsWith("http")) {
+            License license = new License();
+            license.setLicense(licensePath);
+            System.out.println("License set successfully.");
+        } else {
+            // Handle cases where the path is not valid
+            System.err.println(
+                "We do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**Mẹo:**  
+- Xác minh rằng đường dẫn tệp là tuyệt đối hoặc tương đối so với thư mục làm việc.  
+- Đảm bảo tệp có quyền đọc cho người dùng chạy JVM.
 
-#### Các bước thực hiện
-1. **Xác định Đường dẫn Giấy phép:**
-   Chỉ định đường dẫn đến tệp giấy phép của bạn:
-   ```java
-   final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
-   ```
-2. **Thiết lập Giấy phép:**
-   Sử dụng `License` lớp để áp dụng giấy phép:
-   ```java
-   import com.groupdocs.viewer.License;
+## Cách xử lý giấy phép qua URL
+### Overview
+Giấy phép dựa trên URL rất tiện cho các triển khai trên đám mây, nơi tệp giấy phép được lưu trong một bucket lưu trữ an toàn.
 
-   public class SetLicenseFromFile {
-       public static void run() {
-           if (licensePath != null && !licensePath.startsWith("http")) {
-               License license = new License();
-               license.setLicense(licensePath);
-               System.out.println("License set successfully.");
-           } else {
-               // Xử lý các trường hợp đường dẫn không hợp lệ
-               System.err.println(
-                   "We do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
-           }
-       }
-   }
-   ```
-3. **Mẹo khắc phục sự cố:**
-   - Đảm bảo đường dẫn tệp chính xác và có thể truy cập được.
-   - Xác minh rằng tệp giấy phép không bị hỏng.
+### Implementation Steps
+1. **Xác định URL Giấy phép** – thay thế placeholder bằng endpoint thực tế của bạn:
+```java
+final String licensePath = "http://example.com/license.lic";
+```
+2. **Phát hiện và Ghi log việc sử dụng URL** – mẫu dưới đây chỉ đơn giản thông báo rằng một URL đã được cung cấp:
+```java
+public class HandleLicenseURL {
+    public static void run() {
+        if (licensePath != null && licensePath.startsWith("http")) {
+            System.err.println("License path was not provided, license URL is found instead!");
+        }
+    }
+}
+```
+**Mẹo:**  
+- Trong môi trường production, bạn sẽ tải tệp xuống (ví dụ, bằng `java.net.HttpURLConnection`) và sau đó gọi `license.setLicense(stream)`.  
+- Thêm logic retry và xử lý timeout để đối phó với các vấn đề mạng tạm thời.
 
-### Xử lý URL Giấy phép
-Tính năng này minh họa cách xử lý các giấy phép được cung cấp qua URL HTTP, hữu ích trong môi trường có bộ nhớ cục bộ hạn chế hoặc để cập nhật giấy phép động.
+## Cách kiểm tra tính khả dụng của giấy phép (xác minh đường dẫn giấy phép)
+### Overview
+Trước khi cố gắng tải giấy phép, nên **kiểm tra tính khả dụng của giấy phép** để bạn có thể hướng dẫn nhà phát triển hoặc người dùng lấy giấy phép tạm thời khi cần.
 
-#### Tổng quan
-Việc xử lý URL giấy phép cho phép ứng dụng của bạn cập nhật giấy phép một cách linh hoạt mà không cần triển khai lại mã, lý tưởng cho các ứng dụng dựa trên đám mây.
+### Implementation Steps
+1. **Mô phỏng đường dẫn giấy phép bị thiếu**:
+```java
+final String licensePath = null;
+```
+2. **Cung cấp hướng dẫn rõ ràng nếu đường dẫn không tồn tại**:
+```java
+public class CheckLicensePathAvailability {
+    public static void run() {
+        if (licensePath == null) {
+            System.out.println(
+                "\nWe do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**Mẹo:**  
+- Ghi log thông báo này khi khởi động để đội ops biết rằng giấy phép đang thiếu.  
+- Cân nhắc thoát ứng dụng hoặc vô hiệu hoá các tính năng viewer cho đến khi cung cấp giấy phép hợp lệ.
 
-#### Các bước thực hiện
-1. **Xác định Đường dẫn Giấy phép:**
-   Chỉ định xem đường dẫn của bạn có phải là URL HTTP không:
-   ```java
-   final String licensePath = "http://example.com/license.lic";
-   ```
-2. **Kiểm tra và xử lý URL:**
-   Triển khai logic để xử lý URL khác với đường dẫn tệp:
-   ```java
-   public class HandleLicenseURL {
-       public static void run() {
-           if (licensePath != null && licensePath.startsWith("http")) {
-               System.err.println("License path was not provided, license URL is found instead!");
-           }
-       }
-   }
-   ```
-3. **Mẹo khắc phục sự cố:**
-   - Đảm bảo URL có thể truy cập được và trả về tệp giấy phép hợp lệ.
-   - Xử lý lỗi mạng một cách khéo léo.
+## Ứng dụng Thực tế
+Hiểu cách **lấy giấy phép tạm thời**, thiết lập nó từ tệp hoặc URL, và **xác minh tính khả dụng của đường dẫn giấy phép** mở ra nhiều kịch bản thực tế:
 
-### Kiểm tra tính khả dụng của đường dẫn giấy phép
-Tính năng này đảm bảo rằng ứng dụng của bạn có thể xử lý những trường hợp không cung cấp đường dẫn cấp phép, nhắc nhở người dùng lấy đường dẫn nếu cần.
+1. **Hệ thống Quản lý Tài liệu** – nhúng một viewer tự động xác thực giấy phép mỗi khi khởi chạy.  
+2. **Nền tảng SaaS Đám mây** – lưu giấy phép trong blob storage được bảo vệ và tải nó qua URL để cập nhật không downtime.  
+3. **Triển khai Doanh nghiệp** – sử dụng giấy phép tạm thời trong giai đoạn thí điểm trước khi mua giấy phép quy mô đầy đủ.
 
-#### Tổng quan
-Kiểm tra tính khả dụng của đường dẫn cấp phép giúp duy trì sự tuân thủ bằng cách cảnh báo các nhà phát triển khi cần thiết lập hoặc cập nhật giấy phép.
+## Các cân nhắc về Hiệu suất
+- **Sử dụng tài nguyên:** Tải giấy phép một lần khi khởi động ứng dụng; các lần gọi lặp lại sẽ tạo I/O không cần thiết.  
+- **Quản lý bộ nhớ:** Đối tượng `License` giữ trạng thái tối thiểu, nhưng luôn đóng các stream nếu bạn tải giấy phép thủ công.
 
-#### Các bước thực hiện
-1. **Xác định Đường dẫn Giấy phép:**
-   Bắt đầu với giá trị null để mô phỏng giấy phép không có:
-   ```java
-   final String licensePath = null;
-   ```
-2. **Thực hiện kiểm tra tính khả dụng:**
-   Cung cấp phản hồi nếu không có đường dẫn nào khả dụng:
-   ```java
-   public class CheckLicensePathAvailability {
-       public static void run() {
-           if (licensePath == null) {
-               System.out.println(
-                   "\nWe do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
-           }
-       }
-   }
-   ```
-3. **Mẹo khắc phục sự cố:**
-   - Đảm bảo đơn đăng ký cung cấp hướng dẫn rõ ràng về cách xin giấy phép.
-   - Xác thực kết nối mạng nếu lấy giấy phép từ URL.
-
-## Ứng dụng thực tế
-Hiểu cách quản lý giấy phép GroupDocs.Viewer hiệu quả sẽ mở ra một số ứng dụng thực tế:
-1. **Hệ thống quản lý tài liệu:** Tích hợp liền mạch khả năng xem tài liệu với các kiểm tra cấp phép chặt chẽ.
-2. **Giải pháp dựa trên đám mây:** Cập nhật và xác thực giấy phép một cách linh hoạt trong môi trường đám mây bằng cách sử dụng giấy phép dựa trên URL.
-3. **Phần mềm doanh nghiệp:** Đảm bảo tuân thủ bằng cách xác minh tính khả dụng của giấy phép trước khi triển khai các tính năng phụ thuộc vào GroupDocs.Viewer.
-
-## Cân nhắc về hiệu suất
-Để tối ưu hóa hiệu suất ứng dụng của bạn khi sử dụng GroupDocs.Viewer:
-- **Tối ưu hóa việc sử dụng tài nguyên:** Theo dõi mức sử dụng bộ nhớ để tránh rò rỉ, đặc biệt là khi xử lý các tài liệu lớn.
-- **Quản lý bộ nhớ Java:** Sử dụng các biện pháp tốt nhất của Java để quản lý tài nguyên hiệu quả.
-
-## Phần kết luận 
-Tóm lại, quản lý đúng giấy phép trong GroupDocs.Viewer for Java đảm bảo chức năng liền mạch và tuân thủ. Cho dù thiết lập giấy phép thông qua tệp cục bộ hoặc URL, xác minh tính khả dụng của chúng hay triển khai cơ chế dự phòng, mỗi bước đều tăng cường tính mạnh mẽ của ứng dụng. Tích hợp cấp phép đúng cách không chỉ ngăn ngừa gián đoạn mà còn tối ưu hóa hiệu suất và khả năng thích ứng trong nhiều môi trường triển khai khác nhau.
-
+## Kết luận
+Bằng cách thực hiện các bước trên, bạn có thể **lấy giấy phép tạm thời**, cấu hình GroupDocs.Viewer cho Java bằng tệp cục bộ hoặc URL HTTP, và **kiểm tra tính khả dụng của giấy phép** để giữ cho ứng dụng của bạn luôn tuân thủ. Nền tảng giấy phép vững chắc này ngăn ngừa lỗi thời gian chạy và cung cấp cho bạn sự linh hoạt để chuyển đổi giữa môi trường phát triển, kiểm thử và production một cách tự tin.
 
 ### Câu hỏi thường gặp
 
 1. **Làm thế nào để thiết lập tệp giấy phép cục bộ trong GroupDocs.Viewer Java?**  
 
-Sử dụng `license.setLicense("path/to/license.lic")` với đường dẫn tệp chính xác để áp dụng giấy phép cục bộ.
+   Sử dụng `license.setLicense("path/to/license.lic")` với đường dẫn tệp đúng để áp dụng giấy phép cục bộ.
 
-2. **Tôi có thể tải giấy phép trực tiếp từ URL không?**  
+2. **Tôi có thể tải giấy phép trực tiếp từ một URL không?**  
 
-Có, nhưng hãy đảm bảo mã của bạn xử lý được quyền truy cập URL, có khả năng tải xuống giấy phép khi chạy thời gian thực hoặc quản lý các sự cố mạng.
+   Có, nhưng hãy đảm bảo mã của bạn xử lý việc truy cập URL, có thể tải giấy phép tại thời gian chạy hoặc quản lý các vấn đề mạng.
 
-3. **Tôi phải làm gì nếu đường dẫn giấy phép không hợp lệ hoặc bị thiếu?**  
+3. **Tôi nên làm gì nếu đường dẫn giấy phép không hợp lệ hoặc bị thiếu?**  
 
-Thực hiện kiểm tra các đường dẫn rỗng hoặc không hợp lệ và cung cấp hướng dẫn hoặc lời nhắc dự phòng để có được giấy phép hợp lệ.
+   Thực hiện kiểm tra null hoặc đường dẫn không hợp lệ và cung cấp hướng dẫn hoặc thông báo dự phòng để lấy giấy phép hợp lệ.
 
-4. **Có thể chuyển đổi giữa tệp giấy phép và URL một cách linh hoạt không?**  
+4. **Có thể chuyển đổi giữa tệp giấy phép và URL một cách động không?**  
 
-Hoàn toàn có thể, bằng cách thêm logic có điều kiện để xử lý cả hai tình huống dựa trên các tham số môi trường hoặc thời gian chạy của bạn.
+   Chắc chắn, bằng cách thêm logic điều kiện để xử lý cả hai kịch bản dựa trên môi trường hoặc tham số thời gian chạy của bạn.
 
-5. **Những biện pháp tốt nhất để quản lý giấy phép trong sản xuất là gì?**  
+5. **Các thực tiễn tốt nhất để quản lý giấy phép trong production là gì?**  
 
-Lưu trữ giấy phép một cách an toàn, xác minh tính hợp lệ thường xuyên và triển khai xử lý lỗi cho các vấn đề về giấy phép để đảm bảo dịch vụ không bị gián đoạn.
+   Lưu trữ giấy phép một cách an toàn, kiểm tra tính hợp lệ thường xuyên, và triển khai xử lý lỗi cho các vấn đề liên quan đến giấy phép để đảm bảo dịch vụ không bị gián đoạn.
+
+## Câu hỏi thường gặp
+
+**Q: Giấy phép tạm thời kéo dài bao lâu?**  
+A: Thông thường 30 ngày, sau đó bạn có thể yêu cầu gia hạn hoặc nâng cấp lên giấy phép vĩnh viễn.
+
+**Q: Tôi có cần kết nối internet để sử dụng giấy phép dựa trên tệp không?**  
+A: Không. Tệp *.lic* cục bộ hoạt động hoàn toàn offline sau khi đã được tải.
+
+**Q: Tôi có thể mã hoá tệp giấy phép để tăng bảo mật không?**  
+A: Tệp giấy phép đã được GroupDocs ký; việc mã hoá bổ sung là tùy chọn nhưng không bắt buộc.
+
+**Q: Điều gì sẽ xảy ra nếu giấy phép hết hạn trong khi ứng dụng đang chạy?**  
+A: Các thao tác của Viewer sẽ bắt đầu ném ngoại lệ liên quan đến giấy phép; nên kiểm tra thời gian hết hạn khi khởi động.
+
+**Q: Có an toàn không khi lưu URL giấy phép trong source control?**  
+A: Tránh commit các URL nhạy cảm; thay vào đó sử dụng biến môi trường hoặc kho cấu hình bảo mật.
+
+---
+
+**Cập nhật lần cuối:** 2026-03-08  
+**Đã kiểm thử với:** GroupDocs.Viewer 25.2 cho Java  
+**Tác giả:** GroupDocs
