@@ -1,47 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come sfruttare GroupDocs.Viewer per Java per estrarre numeri di pagina e righe di testo dai documenti. Questa guida illustra la configurazione, l'implementazione e le applicazioni pratiche."
-"title": "Implementazione dell'analisi dei documenti con GroupDocs.Viewer per Java - Estrazione di metadati di pagina e righe di testo"
-"url": "/it/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-13'
+description: Scopri come estrarre testo da file docx usando GroupDocs.Viewer per Java,
+  includendo i metadati della pagina e l'estrazione delle righe di testo. Configurazione,
+  codice ed esempi reali coperti.
+keywords:
+- extract text from docx
+- GroupDocs Viewer Java
+- document metadata extraction
+title: Estrai il testo da docx usando GroupDocs.Viewer per Java
 type: docs
+url: /it/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/
+weight: 1
 ---
-# Implementazione dell'analisi dei documenti con GroupDocs.Viewer per Java: estrazione di metadati di pagina e righe di testo
 
-## Introduzione
+# Estrai testo da docx usando GroupDocs.Viewer per Java
 
-Stai cercando di analizzare i documenti in modo programmatico? Che si tratti di estrarre dati o di comprendere il layout dei contenuti, può essere un'attività complessa. **GroupDocs.Viewer per Java** Semplifica il tutto offrendo potenti funzionalità per estrarre in modo efficiente metadati di pagina e righe di testo. Questo tutorial ti guida nella configurazione e nell'utilizzo di GroupDocs.Viewer nelle tue applicazioni Java.
+Stai cercando di **estrarre testo da docx** file in modo programmatico? Che tu abbia bisogno di recuperare i numeri di pagina, catturare ogni riga di testo o creare indici ricercabili, farlo manualmente può richiedere molto tempo e essere soggetto a errori. **GroupDocs.Viewer for Java** semplifica il processo fornendo API ad alte prestazioni che leggono la struttura del documento e restituiscono dati di testo puliti.
 
-### Cosa imparerai
+In questo tutorial imparerai come configurare GroupDocs.Viewer, estrarre i metadati delle pagine e recuperare ogni riga di testo da un file DOCX. Alla fine, avrai una soluzione pronta all'uso che potrai integrare in qualsiasi backend basato su Java.
 
-- Impostazione di GroupDocs.Viewer per Java
-- Estrazione dei numeri di pagina dai documenti
-- Recupero di righe di testo dalle pagine del documento
-- Casi d'uso pratici e suggerimenti per l'integrazione
+![Analisi del documento con GroupDocs.Viewer per Java](/viewer/metadata-properties/document-analysis.png)
 
-Alla fine sarai in grado di creare soluzioni solide in grado di elaborare e analizzare in modo efficiente il contenuto dei documenti.
+## Risposte rapide
+- **Cosa significa “estrarre testo da docx”?** Significa leggere programmaticamente un file DOCX e recuperare il suo contenuto in plain‑text riga per riga.  
+- **Quale libreria gestisce questo?** GroupDocs.Viewer for Java fornisce la classe `Viewer` e le relative API.  
+- **Ho bisogno di una licenza?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza a pagamento per la produzione.  
+- **Quale versione di Java è richiesta?** Qualsiasi JDK 8 + compatibile con Maven.  
+- **Posso elaborare grandi lotti?** Sì—riutilizzando le istanze `Viewer` e gestendo le pagine in stream.
 
-Cominciamo con i prerequisiti necessari per iniziare.
+## Cos'è “estrarre testo da docx”?
+Estrarre testo da un file DOCX significa leggere la struttura XML interna del documento e restituire il testo leggibile dall’uomo senza formattazione. Questo è utile per l’indicizzazione, la ricerca o per alimentare contenuti in pipeline di analisi successive.
+
+## Perché usare GroupDocs.Viewer per Java?
+- **Precisione:** Gestisce layout complessi, tabelle e documenti a più colonne.  
+- **Velocità:** Motore di rendering ottimizzato che funziona rapidamente anche su file di grandi dimensioni.  
+- **Supporto multi‑formato:** La stessa API funziona per PDF, PPTX, XLSX e altri, così puoi riutilizzare il codice.  
+- **Nessuna dipendenza esterna:** Pure Java, non richiede librerie native.
 
 ## Prerequisiti
+- Java Development Kit (JDK) 8 o versioni successive.  
+- Maven installato per la gestione delle dipendenze.  
+- Un file DOCX che desideri analizzare (posizionalo in una cartella nota).  
 
-Prima di implementare le funzionalità di GroupDocs.Viewer in Java, assicurati di disporre di quanto segue:
+## Configurazione di GroupDocs.Viewer per Java
 
-### Librerie e versioni richieste
-- **GroupDocs.Viewer per Java** (versione 25.2 o successiva)
-- Configurazione di Maven sul tuo ambiente di sviluppo per la gestione delle dipendenze
-
-### Requisiti di configurazione dell'ambiente
-- È installato un Java Development Kit (JDK) compatibile.
-- Familiarità con i concetti base della programmazione Java.
-
-### Prerequisiti di conoscenza
-- Conoscenza di base di Maven e della gestione delle dipendenze nei progetti Java.
-- È preferibile avere esperienza di lavoro con operazioni di I/O su file in Java.
-
-## Impostazione di GroupDocs.Viewer per Java
-
-Per iniziare, includi le dipendenze necessarie nel tuo progetto. Se utilizzi Maven, aggiungi la seguente configurazione al tuo `pom.xml`:
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,135 +64,119 @@ Per iniziare, includi le dipendenze necessarie nel tuo progetto. Se utilizzi Mav
 </dependencies>
 ```
 
-### Fasi di acquisizione della licenza
-
-- **Prova gratuita:** Scarica una prova gratuita da [Pagina di download di GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Licenza temporanea:** Ottenere una licenza temporanea per test estesi tramite il [pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
-- **Acquistare:** Per un accesso e un supporto completi, si consiglia di acquistare una licenza tramite [Portale di acquisto di GroupDocs](https://purchase.groupdocs.com/buy).
+### Passaggi per l'acquisizione della licenza
+- **Prova gratuita:** Scarica una prova gratuita dalla [pagina di download di GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+- **Licenza temporanea:** Ottieni una licenza temporanea per test estesi tramite la [pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).  
+- **Acquisto:** Per accesso completo e supporto, considera l’acquisto di una licenza tramite il [portale di acquisto di GroupDocs](https://purchase.groupdocs.com/buy).
 
 ### Inizializzazione di base
+1. Importa le classi necessarie.  
+2. Crea un'istanza `Viewer` che punti al tuo file DOCX.  
+3. Usa `ViewInfoOptions.forPngView(true)` per richiedere informazioni a livello di pagina (metadati e righe di testo).
 
-Per inizializzare GroupDocs.Viewer nella tua applicazione Java:
-1. Importare le classi necessarie.
-2. Crea un `Viewer` oggetto con il percorso del documento.
-3. Utilizzo `ViewInfoOptions.forPngView(true)` per specificare il rendering PNG.
+## Come estrarre testo da docx – Guida passo‑passo
 
-## Guida all'implementazione
+### 1. Estrarre i metadati della pagina
+I metadati della pagina, come il numero di pagina, sono essenziali quando è necessario costruire strutture di navigazione o fare riferimento a sezioni specifiche.
 
-Suddivideremo l'implementazione in due funzionalità principali: l'estrazione dei metadati di pagina e delle righe di testo dai documenti.
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
+    ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
+    ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
+```
 
-### Estrazione dei metadati della pagina
+```java
+    for (Page page : viewInfo.getPages()) {
+        int pageNumber = page.getNumber();
+        System.out.println("Page: " + pageNumber); // Outputs the page number
+    }
+}
+```
 
-Questa funzionalità consente di recuperare metadati come i numeri di pagina, che possono rivelarsi preziosi ai fini dell'indicizzazione o della navigazione.
+- `ViewInfoOptions.forPngView(true)`: Istruisce l'API a raccogliere le informazioni della pagina durante la preparazione del rendering PNG.  
+- `viewInfo.getPages()`: Restituisce una collezione in cui ogni oggetto `Page` contiene il suo numero e altri metadati.
 
-#### Panoramica
-- **Scopo:** Per scorrere ogni pagina di un documento ed estrarne il numero.
-  
-#### Fasi di implementazione
+**Suggerimento:** Disporre del `Viewer` all'interno di un blocco try‑with‑resources per liberare automaticamente le risorse native.
 
-1. **Inizializza Visualizzatore:"
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-       ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
-       ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
-   ```
-2. **Iterare sulle pagine:**
-   ```java
-   for (Page page : viewInfo.getPages()) {
-       int pageNumber = page.getNumber();
-       System.out.println("Page: " + pageNumber); // Restituisce il numero di pagina
-   }
-   ```
-3. **Spiegare parametri e metodi:**
-   - `ViewInfoOptions.forPngView(true)`: Configura per ottenere le informazioni della pagina come PNG per il rendering.
-   - `getPage()`: Recupera un elenco di pagine contenenti metadati.
+### 2. Estrarre le righe di testo dalle pagine
+Ora che puoi identificare ogni pagina, estraiamo le effettive righe di testo.
 
-#### Suggerimenti per la risoluzione dei problemi
-- Assicurarsi che il percorso del documento sia corretto.
-- Verifica che la versione della dipendenza GroupDocs.Viewer corrisponda alla tua configurazione.
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
+    ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
+    ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
+```
 
-### Estrazione di righe di testo dalle pagine
+```java
+    for (Page page : viewInfo.getPages()) {
+        System.out.println("Page: " + page.getNumber());
+        System.out.println("Text lines:");
+        
+        for (Line line : page.getLines()) {
+            String lineText = line.getValue();
+            System.out.print(lineText + "\t");
+        }
+    }
+}
+```
 
-Estrarre righe di testo per analizzare la struttura del contenuto e raccogliere informazioni specifiche per ogni pagina.
+- `page.getLines()`: Restituisce una lista di oggetti `Line`, ognuno dei quali rappresenta una singola riga di testo così come appare sulla pagina.  
+- Il ciclo interno stampa ogni riga, separata da tabulazioni per una migliore leggibilità.
 
-#### Panoramica
-- **Scopo:** Per estrarre e stampare ogni riga di testo sulle pagine di un documento.
-  
-#### Fasi di implementazione
-
-1. **Configura Visualizzatore:"
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-       ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
-       ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
-   ```
-2. **Recupera e stampa le righe:**
-   ```java
-   for (Page page : viewInfo.getPages()) {
-       System.out.println("Page: " + page.getNumber());
-       System.out.println("Text lines:");
-       
-       for (Line line : page.getLines()) {
-           String lineText = line.getValue();
-           System.out.print(lineText + "\t");
-       }
-   }
-   ```
-3. **Configurazioni e metodi chiave:**
-   - `getLines()`Recupera le righe di testo da una pagina specificata.
-   - Il ciclo scorre ogni riga, stampandone il contenuto.
-
-#### Suggerimenti per la risoluzione dei problemi
-- Verificare che il formato del documento sia supportato da GroupDocs.Viewer.
-- Controllare eventuali eccezioni relative all'accesso ai file o alle autorizzazioni.
+### Problemi comuni e soluzioni
+| Sintomo | Causa probabile | Soluzione |
+|---------|-----------------|-----------|
+| `null` page numbers | Documento non caricato correttamente | Verifica il percorso del file e assicurati che il file esista. |
+| No text lines returned | Formato file non supportato | Verifica che la versione DOCX sia supportata; aggiorna GroupDocs se necessario. |
+| `OutOfMemoryError` su file di grandi dimensioni | Viewer mantiene troppe pagine in memoria | Elabora le pagine in batch più piccoli o riutilizza la stessa istanza `Viewer`. |
 
 ## Applicazioni pratiche
-
-Ecco alcune applicazioni pratiche in cui queste funzionalità possono rivelarsi utili:
-1. **Indizzazione dei documenti:** Automatizza i processi di indicizzazione recuperando i numeri di pagina e le righe di testo, facilitando ricerche rapide.
-2. **Strumenti di analisi dei contenuti:** Sviluppare strumenti che analizzino la struttura e la formattazione dei contenuti.
-3. **Integrazione con i motori di ricerca:** Migliora le capacità di ricerca dei documenti all'interno delle tue applicazioni.
-4. **Estrazione dati per report:** Estrarre punti dati specifici dai documenti per generare report o riepiloghi.
-5. **Elaborazione dei documenti legali:** Utilizzare l'estrazione di testo per automatizzare la revisione dei documenti legali.
+1. **Indicizzazione per motori di ricerca:** Memorizza i numeri di pagina insieme al testo estratto per consentire il recupero preciso di snippet.  
+2. **Revisione di documenti legali:** Estrarre ogni riga per il rilevamento automatico di clausole o flussi di lavoro di redazione.  
+3. **Migrazione di contenuti:** Sposta contenuti DOCX legacy in un CMS mantenendo la struttura.  
+4. **Dashboard di reporting:** Riassumi le sezioni chiave estraendo intestazioni e punti elenco.  
 
 ## Considerazioni sulle prestazioni
-
-Quando si utilizza GroupDocs.Viewer, tenere presente questi suggerimenti per ottenere prestazioni ottimali:
-- **Gestione delle risorse:** Garantire un uso efficiente della memoria eliminando `Viewer` oggetti in modo corretto.
-- **Elaborazione batch:** Elaborare i documenti in batch se si gestiscono grandi volumi.
-- **Ottimizzazione della configurazione:** Adatta le opzioni di rendering in base alle tue esigenze specifiche per ridurre i costi generali.
+- **Disporre correttamente:** Chiudi sempre il `Viewer` (usa try‑with‑resources).  
+- **Elaborazione batch:** Quando gestisci molti documenti, riutilizza una singola istanza `Viewer` per thread per ridurre l'overhead.  
+- **Opzioni di rendering:** Se ti serve solo il testo, puoi saltare il rendering PNG usando `ViewInfoOptions.forTextView()` (non mostrato qui) per ridurre i tempi di elaborazione.
 
 ## Conclusione
-
-In questo tutorial, hai imparato come configurare GroupDocs.Viewer per Java ed estrarre metadati di pagina e righe di testo dai documenti. Queste funzionalità possono migliorare significativamente i flussi di lavoro di elaborazione dei documenti consentendo l'estrazione e l'analisi automatizzate dei dati.
+Ora sai come **estrarre testo da docx** file usando GroupDocs.Viewer per Java, recuperare i numeri di pagina e iterare su ogni riga di testo. Questi blocchi costitutivi ti permettono di creare pipeline di elaborazione documenti potenti, veloci, affidabili e facili da mantenere.
 
 ### Prossimi passi
+- Sperimenta con altri formati (PDF, PPTX) usando la stessa API.  
+- Combina il testo estratto con un motore di ricerca full‑text come Elasticsearch.  
+- Esplora le opzioni di stile per le immagini renderizzate se hai bisogno anche di anteprime visive.
 
-Per approfondire la tua comprensione:
-- Esplora altre funzionalità di GroupDocs.Viewer.
-- Sperimenta diversi formati di documenti.
-- Integrare queste funzionalità in applicazioni più grandi.
+## Domande frequenti
 
-**Chiamata all'azione:** Prova a implementare queste soluzioni nei tuoi progetti oggi stesso!
+**Q: Quali formati di file supporta GroupDocs.Viewer?**  
+A: Supporta un'ampia gamma, inclusi DOCX, PDF, XLSX, PPTX e molti altri.
 
-## Sezione FAQ
+**Q: Posso personalizzare il formato di output durante l'estrazione delle righe?**  
+A: Sì, configurando `ViewInfoOptions` (ad esempio `forTextView()` per testo puro).
 
-1. **Quali formati di file supporta GroupDocs.Viewer?**
-   - Supporta un'ampia gamma di formati, tra cui DOCX, PDF, XLSX e altri.
-2. **Posso personalizzare il formato di output durante l'estrazione delle linee?**
-   - Sì, configurando `ViewInfoOptions`.
-3. **Esiste un limite al numero di pagine che possono essere elaborate?**
-   - Sebbene non vi sia un limite massimo, le prestazioni possono variare con documenti di grandi dimensioni.
-4. **Come gestisco le eccezioni in GroupDocs.Viewer?**
-   - Utilizza blocchi try-catch nel codice Viewer per gestire gli errori in modo efficiente.
-5. **Questo strumento può essere integrato con altri framework Java?**
-   - Assolutamente! Può essere integrato in Spring, Hibernate e altro ancora.
+**Q: Esiste un limite al numero di pagine che possono essere elaborate?**  
+A: Non c'è un limite rigido, ma documenti molto grandi potrebbero richiedere l'elaborazione batch per mantenere l'efficienza della memoria.
+
+**Q: Come gestisco le eccezioni in GroupDocs.Viewer?**  
+A: Avvolgi il tuo codice Viewer in blocchi try‑catch e gestisci `ViewerException` o `IOException` generiche secondo necessità.
+
+**Q: Questo strumento può integrarsi con altri framework Java?**  
+A: Assolutamente! Funziona senza problemi con Spring, Hibernate, Jakarta EE e altri.
 
 ## Risorse
 
-- [Documentazione di GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- [Riferimento API](https://reference.groupdocs.com/viewer/java/)
-- [Scarica GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Acquista una licenza](https://purchase.groupdocs.com/buy)
-- [Download di prova gratuito](https://releases.groupdocs.com/viewer/java/)
-- [Richiesta di licenza temporanea](https://purchase.groupdocs.com/temporary-license)
+- [Documentazione GroupDocs](https://docs.groupdocs.com/viewer/java/)  
+- [Riferimento API](https://reference.groupdocs.com/viewer/java/)  
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)  
+- [Acquista una licenza](https://purchase.groupdocs.com/buy)  
+- [Download prova gratuita](https://releases.groupdocs.com/viewer/java/)  
+- [Richiesta licenza temporanea](https://purchase.groupdocs.com/temporary-license)
+
+---
+
+**Ultimo aggiornamento:** 2026-04-13  
+**Testato con:** GroupDocs.Viewer for Java 25.2  
+**Autore:** GroupDocs
