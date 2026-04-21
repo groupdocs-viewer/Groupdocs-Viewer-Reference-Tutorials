@@ -1,51 +1,52 @@
 ---
-date: '2026-01-05'
-description: GroupDocs.Viewer for Java を使用して、メールフィールドの名前変更、メールの HTML 変換、メールヘッダーのカスタマイズ方法を学びましょう。
+date: '2026-03-24'
+description: GroupDocs Viewer for Java を使用してメールを HTML に変換し、メールフィールドの名前を変更する方法を学びましょう。このガイドでは、カスタムヘッダーを使用してメールを
+  HTML としてレンダリングする方法を示します。
 keywords:
 - rename email fields Java
 - render emails HTML GroupDocs Viewer
 - customize email metadata Java
-title: GroupDocs.Viewer JavaでメールをHTMLにレンダリングする際のメールフィールドの名前変更方法
+title: メールをHTMLに変換し、フィールド名を変更 – GroupDocs Viewer Java
 type: docs
 url: /ja/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-# メールをHTMLにレンダリングする際のメールフィールドの名前変更方法（GroupDocs.Viewer Java）
+# メールをHTMLに変換し、フィールド名をリネーム – GroupDocs Viewer Java
 
-メールをHTMLに変換する際に **メールフィールドの名前を変更する方法** が気になりますか？このガイドでは、メールフィールドの名前変更、**メールをHTMLに変換**、および **メールヘッダーのカスタマイズ** を GroupDocs.Viewer for Java を使用して正確に手順を追って説明します。最後には、好みのヘッダー名が付いたクリーンなHTML表現が得られ、出力が読みやすくアプリケーションに統合しやすくなります。
+メールヘッダーにカスタム外観を付けながら **メールをHTMLに変換** したい場合は、ここが適切な場所です。このチュートリアルでは、メールフィールドのリネーム、**メールをHTMLに変換**、および GroupDocs.Viewer for Java を使用したメールヘッダーのカスタマイズ手順を正確に解説します。最後まで読むと、好みのヘッダー名が付いたクリーンなHTML表現が得られ、出力を読みやすくアプリケーションに統合しやすくなります。
 
-![GroupDocs.Viewer for JavaでメールをHTMLに変換する際のメールフィールドの名前変更](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+![GroupDocs.Viewer for Java を使用したメールをHTMLに変換する際のフィールド名リネーム](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
 ### 学べること
 - GroupDocs.Viewer for Java を使用して **メールをHTMLに変換** する方法。  
-- “From”、 “To”、 “Sent”、 “Subject” などの **メールフィールドの名前変更** のテクニック。  
+- “From”、 “To”、 “Sent”、 “Subject” などの **メールフィールドをリネーム** するテクニック。  
 - Maven とライセンス設定のベストプラクティス。  
-- **メールヘッダーのカスタマイズ** が価値を生む実践シナリオ。
+- **メールヘッダーをカスタマイズ** することで価値が向上する実践シナリオ。
 
 ## クイック回答
-- **“メールの名前変更” とは何ですか？** これは、レンダリング時にデフォルトのメールヘッダー名をカスタムラベルにマッピングすることを指します。  
-- **どのライブラリが変換を処理しますか？** GroupDocs.Viewer for Java (v25.2+)。  
-- **ライセンスは必要ですか？** 評価用にトライアルが利用でき、製品環境ではフルライセンスが必要です。  
-- **任意のヘッダー名を変更できますか？** はい、標準のメールヘッダーは `fieldTextMap` を使用して再マッピングできます。  
+- **「メールをHTMLに変換」とは何ですか？** それは、メールファイル（MSG/EML）をウェブ対応のHTMLドキュメントとしてレンダリングすることを意味します。  
+- **変換を担当するライブラリはどれですか？** GroupDocs.Viewer for Java (v25.2+)。  
+- **ライセンスは必要ですか？** 評価にはトライアルが利用可能です。実運用には正式ライセンスが必要です。  
+- **任意のヘッダー名を変更できますか？** はい、`fieldTextMap` を使用して標準のメールヘッダーをすべてリマップできます。  
 - **出力はHTMLですか、埋め込みリソースですか？** 単一の自己完結型ファイルとして埋め込みリソースを選択できます。
 
-## GroupDocs.Viewer のコンテキストで「メールの名前変更」とは何か
-メールフィールドの名前変更とは、メールがHTMLにレンダリングされる際にデフォルトのラベル（例: “From”）をカスタムテキスト（例: “Sender”）に置き換えることです。これにより、出力を社内用語に合わせたり、エンドユーザーの可読性を向上させたりできます。
+## GroupDocs.Viewer のコンテキストで「メールをHTMLに変換」とは何か
+メールをHTMLに変換するとは、生のメールファイルを取得し、メッセージ本文とメタデータの両方を表示するHTMLページを生成することです。さらに **メールフィールドをリネーム** すると、デフォルトのラベル（例: “From”）がカスタムテキスト（例: “Sender”）に置き換えられ、企業用語に合わせたり UI の一貫性を向上させたりできます。
 
-## なぜメールをHTMLに変換し、メールヘッダーをカスタマイズするのか
-- **一貫したブランディング:** すべてのコミュニケーションで組織の言語に合わせる。  
-- **検索性の向上:** カスタムヘッダーはアーカイブシステムでより効果的にインデックス付けできる。  
-- **UI統合の改善:** HTMLスニペットをウェブポータルやサポートダッシュボードにシームレスに合わせる。
+## なぜメールをHTMLに変換し、フィールド名をリネームするのか
+- **一貫したブランディング:** 出力を組織の言語に合わせることができます。  
+- **検索性の向上:** カスタムヘッダーはアーカイブシステムでより効果的にインデックス付けできます。  
+- **UI 統合の改善:** HTML スニペットをウェブポータルやサポートダッシュボードにシームレスに組み込めます。
 
 ## 前提条件
 
 ### 必要なライブラリ、バージョン、依存関係
-- **GroupDocs.Viewer for Java** – バージョン 25.2 以上。  
+- **GroupDocs.Viewer for Java** – バージョン 25.2 以降。  
 - **Java Development Kit (JDK)** – バージョン 8 以上。
 
 ### 環境設定要件
-- **Maven** – 依存関係管理に使用。  
+- 依存関係管理のための **Maven**。  
 - IntelliJ IDEA、Eclipse、または VS Code などの IDE。
 
 ### 知識の前提条件
@@ -72,9 +73,9 @@ weight: 1
 ```
 
 ### ライセンス取得手順
-- **無料トライアル:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) から無料トライアルをダウンロード。  
-- **一時ライセンス:** 制限なしでフル機能を試すための一時ライセンスを [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) で取得。  
-- **購入:** 継続利用のために、[GroupDocs Purchase](https://purchase.groupdocs.com/buy) からライセンス購入を検討してください。
+- **無料トライアル:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/) から無料トライアルをダウンロードしてください。  
+- **一時ライセンス:** 制限なしでフル機能を試すための一時ライセンスは、[GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) で取得できます。  
+- **購入:** 継続的に使用する場合は、[GroupDocs Purchase](https://purchase.groupdocs.com/buy) からライセンス購入をご検討ください。
 
 ### 基本的な初期化と設定
 ```java
@@ -88,27 +89,25 @@ public class ViewerSetup {
     }
 }
 ```
-ファイルパスを `.msg` ファイルに合わせて調整してください。
+ファイルパスを `.msg` ファイルがある場所に合わせて調整してください。
 
-## 実装ガイド
+## メールをHTMLに変換し、フィールドをリネームする手順 – ステップバイステップ
 
-### メールフィールドの名前変更 – 手順別
-
-#### 1. 出力ディレクトリパスの設定
+### 1. 出力ディレクトリパスの設定
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-*`"YOUR_OUTPUT_DIRECTORY"` を、HTML ファイルを保存したいフォルダーに置き換えてください。*
+*`"YOUR_OUTPUT_DIRECTORY"` を、HTMLファイルを保存したいフォルダーに置き換えてください。*
 
-#### 2. ページファイルパス形式の定義
+### 2. ページファイルパス形式の定義
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 *`{0}` はレンダリング時にページ番号に置き換えられます。*
 
-#### 3. メールフィールドと新しい名前のマッピング作成
+### 3. メールフィールドと新しい名前のマッピング作成
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -120,71 +119,71 @@ fieldTextMap.put(Field.TO, "Receiver");
 fieldTextMap.put(Field.SENT, "Date");
 fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
-*ここでデフォルトのラベルをカスタムラベルに変更します。*
+*ここではデフォルトのラベルをカスタムラベルに変更しています。*
 
-#### 4. HTML ビューオプションの設定
+### 4. HTML ビューオプションの設定
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-*`forEmbeddedResources` は CSS/JS を HTML 内にバンドルし、`setFieldTextMap` はカスタムヘッダー名を適用します。*
+*`forEmbeddedResources` はCSS/JSをHTML内部にバンドルし、`setFieldTextMap` はカスタムヘッダー名を適用します。*
 
-#### 5. メールをHTMLにレンダリング
+### 5. メールをHTMLにレンダリング
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-*`"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` を実際の MSG ファイルへのパスに置き換えてください。*
+*`"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` を実際のMSGファイルへのパスに置き換えてください。*
 
 #### トラブルシューティングのヒント
 - 出力ディレクトリが書き込み可能か確認してください。  
-- 入力 MSG ファイルが存在し、パスが正しいことを確認してください。  
-- Maven で宣言したのと同じ GroupDocs.Viewer バージョン（25.2）を使用してください。
+- 入力の MSG ファイルが存在し、パスが正しいことを確認してください。  
+- Maven に記載したのと同じ GroupDocs.Viewer バージョン（25.2）を使用してください。
 
 ## 実用的な応用例
-1. **カスタムメールレポート:** メールヘッダーを社内用語に合わせ、レポートをより明確にする。  
-2. **メールアーカイブシステム:** 標準化されたヘッダー名を使用して検索性を向上させる。  
-3. **カスタマーサポートプラットフォーム:** チケットを個別化されたヘッダーラベルで提示し、エージェントの体験を向上させる。
+1. **カスタムメールレポート:** 企業用語に合わせてメールヘッダーを統一し、レポートをより明確にします。  
+2. **メールアーカイブシステム:** 標準化されたヘッダー名を使用して検索性を向上させます。  
+3. **カスタマーサポートプラットフォーム:** エージェントの操作性向上のため、チケットにパーソナライズされたヘッダーラベルを表示します。
 
 ## パフォーマンス上の考慮点
 - `Viewer` オブジェクトは try‑with‑resources で破棄し、メモリを速やかに解放してください。  
 - 大量バッチをプロファイルし、必要に応じて並列ストリームでメールを処理することを検討してください。
 
 ## 結論
-これで、GroupDocs.Viewer for Java を使用して **メールの名前変更** を行いながら **メールをHTMLに変換** し、**メールヘッダーをカスタマイズ** する方法が分かりました。この手法により、HTML 出力におけるメールメタデータの表示を完全にコントロールできます。
+これで、GroupDocs.Viewer for Java を使用して **メールをHTMLに変換** しながら **メールフィールドをリネーム** し、**メールヘッダーをカスタマイズ** する方法が分かりました。この手法により、HTML 出力におけるメールメタデータの表示を完全にコントロールできます。
 
 ### 次のステップ
 - 追加のフィールドマッピング（例: CC、BCC）を試してみてください。  
-- PDF や PNG など、他のレンダリング形式も検討してください。  
-- 詳細な API の洞察については [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) をご覧ください。
+- PDF や PNG など、他のレンダリング形式も探索してください。  
+- より深い API の洞察は [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) をご覧ください。
 
 ## よくある質問
 
 **Q: このアプローチは EML など他のメール形式でも機能しますか？**  
-A: はい、GroupDocs.Viewer は MSG と EML の両方をサポートしており、同じフィールドマッピングロジックが適用されます。
+A: はい、GroupDocs.Viewer は MSG と EML の両方をサポートしており、同じフィールドマッピングロジックが適用できます。
 
 **Q: 埋め込みリソースなしで HTML を出力できますか？**  
-A: 別々の CSS/JS ファイルを希望する場合は `HtmlViewOptions.forExternalResources(...)` を使用できます。
+A: 別々の CSS/JS ファイルを希望する場合は、`HtmlViewOptions.forExternalResources(...)` を使用できます。
 
 **Q: テストに使用した GroupDocs.Viewer のバージョンは？**  
-A: コードは GroupDocs.Viewer **25.2** でテストされています。
+A: コードは GroupDocs.Viewer **25.2** でテストしています。
 
 **Q: カスタムヘッダーのフォントやスタイルを変更できますか？**  
-A: レンダリング後に CSS でスタイルを適用でき、または `HtmlViewOptions.getResourcesPath()` を使用してカスタム CSS を注入することも可能です。
+A: レンダリング後に CSS でスタイリングを適用するか、`HtmlViewOptions.getResourcesPath()` を使用してカスタム CSS を注入できます。
 
-**Q: 生成された HTML ファイルパスをプログラムで取得するには？**  
-A: ファイルパスは `pageFilePathFormat` で定義されたパターンに従い、ページ番号を使用して `String.format` で構築できます。
+**Q: 生成された HTML ファイルのパスをプログラムで取得するには？**  
+A: ファイルパスは `pageFilePathFormat` で定義されたパターンに従います。`String.format` にページ番号を渡して構築できます。
 
 ## リソース
-- **ドキュメンテーション:** 包括的なガイドは [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) で入手可能です。  
-- **API リファレンス:** 詳細な API 情報は [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) にあります。  
-- **GroupDocs.Viewer のダウンロード:** 最新バージョンは [Downloads Page](https://releases.groupdocs.com/viewer/java/) からアクセスできます。
+- **Documentation:** 詳細なガイドは [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) で入手可能です。  
+- **API Reference:** 詳細な API 情報は [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) にあります。  
+- **Download GroupDocs.Viewer:** 最新バージョンは [Downloads Page](https://releases.groupdocs.com/viewer/java/) からアクセスできます。
 
 ---
 
-**最終更新日:** 2026-01-05  
+**最終更新日:** 2026-03-24  
 **テスト環境:** GroupDocs.Viewer 25.2  
 **作者:** GroupDocs

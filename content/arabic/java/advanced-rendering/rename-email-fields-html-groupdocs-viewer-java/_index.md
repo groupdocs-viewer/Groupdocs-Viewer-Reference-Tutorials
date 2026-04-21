@@ -1,59 +1,59 @@
 ---
-date: '2026-01-05'
-description: تعلم كيفية إعادة تسمية حقول البريد الإلكتروني، وتحويل البريد الإلكتروني
-  إلى HTML، وتخصيص رؤوس البريد الإلكتروني باستخدام GroupDocs.Viewer للغة Java.
+date: '2026-03-24'
+description: تعلم كيفية تحويل البريد الإلكتروني إلى HTML وإعادة تسمية حقول البريد
+  الإلكتروني باستخدام GroupDocs Viewer for Java. يوضح هذا الدليل طريقة عرض البريد
+  الإلكتروني كـ HTML مع رؤوس مخصصة.
 keywords:
 - rename email fields Java
 - render emails HTML GroupDocs Viewer
 - customize email metadata Java
-title: كيفية إعادة تسمية حقول البريد الإلكتروني عند تحويل الرسائل إلى HTML باستخدام
-  GroupDocs.Viewer Java
+title: تحويل البريد الإلكتروني إلى HTML وإعادة تسمية الحقول – GroupDocs Viewer Java
 type: docs
 url: /ar/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-# كيفية إعادة تسمية حقول البريد الإلكتروني عند عرض رسائل البريد إلى HTML باستخدام GroupDocs.Viewer Java
+# تحويل البريد الإلكتروني إلى HTML وإعادة تسمية الحقول – GroupDocs Viewer Java
 
-هل تتساءل **كيف تعيد تسمية حقول البريد الإلكتروني** أثناء تحويل بريد إلكتروني إلى HTML؟ في هذا الدليل سنستعرض الخطوات الدقيقة لإعادة تسمية حقول البريد الإلكتروني، **تحويل البريد الإلكتروني إلى HTML**، و**تخصيص رؤوس البريد الإلكتروني** باستخدام GroupDocs.Viewer للغة Java. في النهاية ستحصل على تمثيل HTML نظيف بأسماء رؤوس مفضلة لديك، مما يجعل المخرجات أسهل في القراءة والتكامل مع تطبيقاتك.
+إذا كنت بحاجة إلى **convert email to HTML** مع إعطاء رؤوس البريد الإلكتروني مظهرًا مخصصًا، فأنت في المكان الصحيح. في هذا الدرس سنستعرض الخطوات الدقيقة لإعادة تسمية حقول البريد الإلكتروني، **convert email to HTML**، وتخصيص رؤوس البريد باستخدام GroupDocs.Viewer for Java. في النهاية ستحصل على تمثيل HTML نظيف بأسماء الرؤوس التي تفضلها، مما يجعل المخرجات أسهل للقراءة والتكامل مع تطبيقاتك.
 
-![إعادة تسمية حقول البريد الإلكتروني عند تحويل رسائل البريد إلى HTML باستخدام GroupDocs.Viewer للغة Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+![إعادة تسمية حقول البريد الإلكتروني عند تحويل الرسائل إلى HTML باستخدام GroupDocs.Viewer for Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
 ### ما ستتعلمه
-- كيفية استخدام GroupDocs.Viewer للغة Java **لتحويل البريد الإلكتروني إلى HTML**.  
-- تقنيات **إعادة تسمية حقول البريد الإلكتروني** مثل “From”، “To”، “Sent”، و “Subject”.  
+- كيفية استخدام GroupDocs.Viewer for Java لـ **convert email to HTML**.  
+- تقنيات **rename email fields** مثل “From”، “To”، “Sent”، و “Subject”.  
 - أفضل الممارسات لإعداد Maven والترخيص.  
-- سيناريوهات واقعية حيث **تخصيص رؤوس البريد الإلكتروني** يضيف قيمة.
+- سيناريوهات واقعية حيث **customizing email headers** تضيف قيمة.
 
 ## إجابات سريعة
-- **ماذا يعني “how to rename email”؟** يشير إلى ربط أسماء رؤوس البريد الإلكتروني الافتراضية بتسميات مخصصة أثناء العرض.  
-- **أي مكتبة تتعامل مع التحويل؟** GroupDocs.Viewer للغة Java (v25.2+).  
+- **ما معنى “convert email to HTML”؟** يعني ذلك تحويل ملف بريد إلكتروني (MSG/EML) إلى مستند HTML جاهز للويب.  
+- **ما المكتبة التي تتعامل مع التحويل؟** GroupDocs.Viewer for Java (v25.2+).  
 - **هل أحتاج إلى ترخيص؟** النسخة التجريبية تعمل للتقييم؛ الترخيص الكامل مطلوب للإنتاج.  
 - **هل يمكنني تغيير أي اسم رأس؟** نعم، يمكن إعادة تعيين أي رأس بريد إلكتروني قياسي عبر `fieldTextMap`.  
-- **هل المخرجات HTML أم موارد مدمجة؟** يمكنك اختيار الموارد المدمجة للحصول على ملف واحد مستقل.
+- **هل المخرجات HTML أم موارد مدمجة؟** يمكنك اختيار الموارد المدمجة للحصول على ملف واحد مكتمل.
 
-## ما هو “How to Rename Email” في سياق GroupDocs.Viewer؟
-إعادة تسمية حقول البريد الإلكتروني تعني استبدال التسميات الافتراضية (مثل “From”) بنص مخصص (مثل “Sender”) عند عرض البريد الإلكتروني إلى HTML. هذا مفيد لتوافق المخرجات مع المصطلحات المؤسسية أو تحسين قابلية القراءة للمستخدم النهائي.
+## ما هو “convert email to HTML” في سياق GroupDocs.Viewer؟
+يعني تحويل البريد الإلكتروني إلى HTML أخذ ملف بريد إلكتروني خام وإنتاج صفحة HTML تعرض نص الرسالة مع بيانات التعريف الخاصة به. عندما تقوم أيضًا **rename email fields**، يتم استبدال التسميات الافتراضية (مثل “From”) بنص مخصص (مثل “Sender”)، مما يساعدك على مطابقة المصطلحات المؤسسية أو تحسين اتساق واجهة المستخدم.
 
-## لماذا تحويل البريد الإلكتروني إلى HTML وتخصيص رؤوس البريد الإلكتروني؟
-- **العلامة التجارية المتسقة:** مطابقة لغة مؤسستك عبر جميع الاتصالات.  
-- **تحسين قابلية البحث:** يمكن فهرسة الرؤوس المخصصة بشكل أكثر فعالية في أنظمة الأرشفة.  
-- **تكامل واجهة المستخدم الأفضل:** تخصيص مقطع HTML ليتناسب بسلاسة مع البوابات الإلكترونية أو لوحات الدعم.
+## لماذا تحويل البريد الإلكتروني إلى HTML وإعادة تسمية حقول البريد؟
+- **Consistent branding:** مواءمة المخرجات مع لغة مؤسستك.  
+- **Improved searchability:** يمكن فهرسة الرؤوس المخصصة بفعالية أكبر في أنظمة الأرشفة.  
+- **Better UI integration:** تخصيص مقتطف HTML ليتناسب بسلاسة مع البوابات الإلكترونية أو لوحات الدعم.
 
 ## المتطلبات المسبقة
 
-### المكتبات المطلوبة والإصدارات والاعتمادات
-- **GroupDocs.Viewer للغة Java** – الإصدار 25.2 أو أحدث.  
-- **مجموعة تطوير جافا (JDK)** – الإصدار 8+.
+### المكتبات المطلوبة، الإصدارات، والاعتماديات
+- **GroupDocs.Viewer for Java** – الإصدار 25.2 أو أحدث.  
+- **Java Development Kit (JDK)** – الإصدار 8+.
 
 ### متطلبات إعداد البيئة
-- **Maven** لإدارة الاعتمادات.  
+- **Maven** لإدارة الاعتماديات.  
 - بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse أو VS Code.
 
-### المتطلبات المعرفية
+### متطلبات المعرفة
 سيساعدك الإلمام الأساسي بـ Java و Maven على المتابعة بسرعة.
 
-## إعداد GroupDocs.Viewer للغة Java
+## إعداد GroupDocs.Viewer for Java
 
 ### تكوين Maven
 ```xml
@@ -74,9 +74,9 @@ weight: 1
 ```
 
 ### خطوات الحصول على الترخيص
-- **نسخة تجريبية مجانية:** تحميل نسخة تجريبية مجانية من [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
-- **ترخيص مؤقت:** الحصول على ترخيص مؤقت لاستكشاف جميع الميزات دون قيود عبر [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
-- **شراء:** للاستخدام المستمر، فكر في شراء ترخيص عبر [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
+- **Free Trial:** تحميل نسخة تجريبية مجانية من [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License:** الحصول على ترخيص مؤقت لاستكشاف جميع الميزات دون قيود عبر [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase:** للاستخدام المستمر، فكر في شراء ترخيص عبر [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
 ### التهيئة الأساسية والإعداد
 ```java
@@ -92,11 +92,9 @@ public class ViewerSetup {
 ```
 قم بتعديل مسار الملف للإشارة إلى ملف `.msg` الخاص بك.
 
-## دليل التنفيذ
+## كيفية تحويل البريد الإلكتروني إلى HTML وإعادة تسمية الحقول – خطوة بخطوة
 
-### إعادة تسمية حقول البريد الإلكتروني – خطوة بخطوة
-
-#### 1. إعداد مسار دليل الإخراج
+### 1. إعداد مسار دليل الإخراج
 ```java
 import java.nio.file.Path;
 
@@ -104,13 +102,13 @@ Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 *استبدل `"YOUR_OUTPUT_DIRECTORY"` بالمجلد الذي تريد حفظ ملفات HTML فيه.*
 
-#### 2. تعريف تنسيق مسار ملف الصفحة
+### 2. تعريف تنسيق مسار ملف الصفحة
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-*سيتم استبدال `{0}` برقم الصفحة أثناء العرض.*
+*`{0}` سيُستبدل برقم الصفحة أثناء العرض.*
 
-#### 3. إنشاء خريطة لحقول البريد الإلكتروني إلى أسماء جديدة
+### 3. إنشاء خريطة لحقول البريد الإلكتروني إلى أسماء جديدة
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -124,16 +122,16 @@ fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
 *هنا نقوم بتغيير التسميات الافتراضية إلى تسميات مخصصة.*
 
-#### 4. تكوين خيارات عرض HTML
+### 4. تكوين خيارات عرض HTML
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-*`forEmbeddedResources` يجمع ملفات CSS/JS داخل HTML، بينما `setFieldTextMap` يطبق أسماء الرؤوس المخصصة.*
+*`forEmbeddedResources` يجمع CSS/JS داخل HTML، بينما `setFieldTextMap` يطبق أسماء الرؤوس المخصصة.*
 
-#### 5. عرض البريد الإلكتروني إلى HTML
+### 5. تحويل البريد الإلكتروني إلى HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
@@ -142,21 +140,21 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 *استبدل `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` بالمسار الفعلي لملف MSG الخاص بك.*
 
 #### نصائح استكشاف الأخطاء وإصلاحها
-- تحقق من أن دليل الإخراج قابل للكتابة.  
-- تأكد من وجود ملف MSG المدخل والمسار صحيح.  
+- تأكد من أن دليل الإخراج قابل للكتابة.  
+- تحقق من وجود ملف MSG المدخل وأن المسار صحيح.  
 - استخدم نفس إصدار GroupDocs.Viewer (25.2) كما هو مُعلن في Maven.
 
 ## التطبيقات العملية
-1. **تقارير بريد إلكتروني مخصصة:** مواءمة رؤوس البريد الإلكتروني مع المصطلحات المؤسسية لتقارير أوضح.  
-2. **أنظمة أرشفة البريد الإلكتروني:** تحسين قابلية البحث باستخدام أسماء رؤوس موحدة.  
-3. **منصات دعم العملاء:** عرض التذاكر بتسميات رؤوس مخصصة لتجربة أفضل للوكيل.
+1. **Custom Email Reports:** مواءمة رؤوس البريد مع المصطلحات المؤسسية لتقارير أوضح.  
+2. **Email Archiving Systems:** تحسين قابلية البحث باستخدام أسماء رؤوس موحدة.  
+3. **Customer Support Platforms:** عرض التذاكر برؤوس مخصصة لتجربة أفضل للوكيل.
 
 ## اعتبارات الأداء
 - تخلص من كائنات `Viewer` باستخدام try‑with‑resources لتحرير الذاكرة بسرعة.  
-- قم بملف تعريف الدفعات الكبيرة وفكر في معالجة الرسائل الإلكترونية عبر تدفقات متوازية إذا لزم الأمر.
+- قم بملف الأداء للدفعات الكبيرة وفكّر في معالجة الرسائل عبر تدفقات متوازية إذا لزم الأمر.
 
-## الخاتمة
-أنت الآن تعرف **كيفية إعادة تسمية حقول البريد الإلكتروني** أثناء **تحويل البريد الإلكتروني إلى HTML** و**تخصيص رؤوس البريد الإلكتروني** باستخدام GroupDocs.Viewer للغة Java. تمنحك هذه التقنية التحكم الكامل في عرض بيانات تعريف البريد الإلكتروني في مخرجات HTML.
+## الخلاصة
+أنت الآن تعرف **كيفية تحويل البريد الإلكتروني إلى HTML** مع **إعادة تسمية حقول البريد** و**تخصيص رؤوس البريد** باستخدام GroupDocs.Viewer for Java. تمنحك هذه التقنية تحكمًا كاملاً في عرض بيانات تعريف البريد في مخرجات HTML.
 
 ### الخطوات التالية
 - جرّب خريطة حقول إضافية (مثل CC، BCC).  
@@ -164,30 +162,29 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
 - زر [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) للحصول على رؤى أعمق حول API.
 
 ## الأسئلة المتكررة
+
 **س: هل يعمل هذا النهج مع صيغ بريد إلكتروني أخرى مثل EML؟**  
-ج: نعم، يدعم GroupDocs.Viewer كل من ملفات MSG و EML؛ نفس منطق ربط الحقول ينطبق.
+ج: نعم، يدعم GroupDocs.Viewer كلًا من ملفات MSG و EML؛ نفس منطق تعيين الحقول ينطبق.
 
-**س: هل يمكنني إخراج HTML بدون موارد مدمجة؟**  
-ج: يمكنك استخدام `HtmlViewOptions.forExternalResources(...)` إذا كنت تفضل ملفات CSS/JS منفصلة.
+**س: هل يمكنني إخراج HTML دون موارد مدمجة؟**  
+ج: يمكنك استخدام `HtmlViewOptions.forExternalResources(...)` إذا كنت تفضّل ملفات CSS/JS منفصلة.
 
-**س: ما هو إصدار GroupDocs.Viewer الذي تم اختباره؟**  
+**س: ما الإصدار الذي تم اختبار GroupDocs.Viewer عليه؟**  
 ج: تم اختبار الكود مع GroupDocs.Viewer **25.2**.
 
 **س: هل يمكن تغيير الخط أو نمط الرؤوس المخصصة؟**  
-ج: يمكن تطبيق التنسيق عبر CSS بعد العرض، أو يمكنك حقن CSS مخصص باستخدام `HtmlViewOptions.getResourcesPath()`.
+ج: يمكن تطبيق الأنماط عبر CSS بعد العرض، أو يمكنك حقن CSS مخصص باستخدام `HtmlViewOptions.getResourcesPath()`.
 
-**س: كيف يمكنني استرجاع مسار ملف HTML المُولد برمجيًا؟**  
+**س: كيف يمكنني برمجيًا استرجاع مسار ملف HTML المُولد؟**  
 ج: يتبع مسار الملف النمط المحدد في `pageFilePathFormat`؛ يمكنك بناؤه باستخدام `String.format` مع رقم الصفحة.
 
 ## الموارد
-- **التوثيق:** أدلة شاملة متاحة على [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
-- **مرجع API:** يمكن العثور على معلومات مفصلة حول API على [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
-- **تحميل GroupDocs.Viewer:** احصل على أحدث إصدار عبر [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+- **Documentation:** أدلة شاملة متوفرة على [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API Reference:** معلومات تفصيلية عن API يمكن العثور عليها في [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Download GroupDocs.Viewer:** احصل على أحدث إصدار عبر [Downloads Page](https://releases.groupdocs.com/viewer/java/).
 
 ---
 
-**آخر تحديث:** 2026-01-05  
+**آخر تحديث:** 2026-03-24  
 **تم الاختبار مع:** GroupDocs.Viewer 25.2  
-**المؤلف:** GroupDocs  
-
----
+**المؤلف:** GroupDocs

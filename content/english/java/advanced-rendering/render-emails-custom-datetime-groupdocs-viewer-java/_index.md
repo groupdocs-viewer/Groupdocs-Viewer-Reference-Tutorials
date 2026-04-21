@@ -1,7 +1,7 @@
 ---
 title: "Convert EML to HTML with Custom DateTime in Java Using GroupDocs.Viewer"
 description: "Learn how to convert EML to HTML with custom datetime format and set timezone offset in Java using GroupDocs.Viewer. Ideal for email archiving and support systems."
-date: "2026-01-10"
+date: "2026-03-24"
 weight: 1
 url: "/java/advanced-rendering/render-emails-custom-datetime-groupdocs-viewer-java/"
 keywords:
@@ -13,17 +13,15 @@ type: docs
 
 # Convert EML to HTML with Custom DateTime in Java Using GroupDocs.Viewer
 
-## Introduction
-
-In today's fast‑paced digital world, being able to **convert EML to HTML** quickly and with the right date‑time presentation is essential for archiving, support portals, and legal compliance. This tutorial walks you through rendering email messages into HTML while applying a **custom datetime format** and a **timezone offset** using GroupDocs.Viewer for Java. By the end, you’ll have a reusable solution that keeps timestamps accurate and readable.
+In today's fast‑paced digital world, being able to **convert EML to HTML** quickly and with the right date‑time presentation is essential for archiving, support portals, and legal compliance. This tutorial walks you through rendering email messages into HTML while applying a **custom datetime format** and a **timezone offset** using GroupDocs.Viewer for Java. By the end, you’ll have a reusable solution that keeps timestamps accurate and readable, perfect for any **email to HTML Java** workflow.
 
 ![Render Emails with Custom DateTime with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-emails-with-custom-datetime-java.png)
 
 **What You’ll Learn**
 - How to set up GroupDocs.Viewer in a Java project  
 - How to render emails into HTML with embedded resources  
-- How to **customize the date‑time format** of your email messages (custom datetime format java)  
-- How to **set the timezone offset** for correct timestamps (set timezone offset java)  
+- How to **customize the date‑time format** of your email messages (custom datetime java)  
+- How to **set the timezone offset** for correct timestamps (timezone offset java)  
 
 ## Quick Answers
 - **Can GroupDocs.Viewer convert EML to HTML?** Yes, it renders EML files directly to HTML.  
@@ -113,19 +111,22 @@ HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(filePath);
 ```
 *Explanation:* `forEmbeddedResources()` bundles images and other resources directly into the HTML output.
 
-### Step 4: Set Custom DateTime Format *(custom datetime format java)*
+### Step 4: Set Custom DateTime Format *(custom datetime java)*
 ```java
 options.getEmailOptions().setDateTimeFormat("MM d yyyy HH:mm tt zzz");
 ```
 *Explanation:* This pattern displays the month, day, year, hour, minute, AM/PM marker, and the timezone offset (`zzz`).
 
-### Step 5: Set TimeZone Offset *(set timezone offset java)*
+### Step 5: Set TimeZone Offset *(timezone offset java)*
 ```java
 import java.util.TimeZone;
 
 options.getEmailOptions().setTimeZoneOffset(TimeZone.getTimeZone("GMT+1"));
 ```
 *Explanation:* Adjusts the rendered timestamps to the desired time zone. Replace `"GMT+1"` with any valid zone identifier.
+
+### How to Adjust Email Timezone in Java
+If you need to **adjust email timezone** beyond simple offsets—such as handling daylight‑saving changes—you can retrieve the appropriate `TimeZone` object from the `java.util.TimeZone` API using region IDs like `"Europe/Paris"` or `"America/New_York"` and pass it to `setTimeZoneOffset`. This ensures the email timestamps always reflect the correct local time.
 
 ### Step 6: Render Document
 ```java
@@ -182,7 +183,7 @@ A: Licensing is per deployment; consult the GroupDocs licensing guide for multi�
 
 ---
 
-**Last Updated:** 2026-01-10  
+**Last Updated:** 2026-03-24  
 **Tested With:** GroupDocs.Viewer 25.2 (Java)  
 **Author:** GroupDocs  
 
