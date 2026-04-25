@@ -1,44 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara mengambil struktur arsip secara efisien menggunakan GroupDocs.Viewer di Java. Ikuti panduan ini untuk pengaturan mudah, contoh kode, dan aplikasi praktis."
-"title": "Cara Mengambil Struktur Arsip Menggunakan GroupDocs.Viewer untuk Java&#58; Panduan Lengkap"
-"url": "/id/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/"
-"weight": 1
+date: '2026-02-05'
+description: Pelajari cara mendapatkan viewinfo dan mengambil struktur tipe file arsip
+  Java menggunakan GroupDocs.Viewer. Panduan ini mencakup pengaturan, contoh kode,
+  dan kasus penggunaan dunia nyata.
+keywords:
+- GroupDocs.Viewer for Java
+- retrieve archive structures
+- Java document viewer
+title: Cara Mendapatkan ViewInfo dan Mengambil Struktur Arsip dalam Java
 type: docs
+url: /id/java/document-loading/groupdocs-viewer-java-retrieve-archive-structures/
+weight: 1
 ---
-# Cara Mengambil Struktur Arsip Menggunakan GroupDocs.Viewer untuk Java
 
-## Perkenalan
+# Cara Mendapatkan ViewInfo dan Mengambil Struktur Arsip di Java
 
-Mengelola arsip secara efektif memerlukan pemahaman yang jelas tentang strukturnya. Panduan lengkap ini menunjukkan cara menggunakan pustaka GroupDocs.Viewer di Java untuk mengekstrak informasi tentang arsip, termasuk struktur folder. Dengan menguasai teknik ini, Anda akan menyederhanakan proses manajemen data dan meningkatkan efisiensi alur kerja.
+Mengelola file arsip secara efektif memerlukan pemahaman yang jelas tentang strukturnya. Dalam tutorial ini Anda akan mempelajari **cara mendapatkan viewinfo** untuk arsip apa pun dan melihat bagaimana hal itu membantu Anda bekerja dengan **tipe file arsip java**. Kami akan memandu Anda menyiapkan GroupDocs.Viewer, mengekstrak informasi tampilan, dan membaca hierarki folder secara rekursif sehingga Anda dapat mengintegrasikan solusi ini ke dalam proyek nyata.
 
-**Apa yang Akan Anda Pelajari:**
-- Menyiapkan dan mengonfigurasi GroupDocs.Viewer untuk Java.
-- Metode untuk mengambil info tampilan dari arsip.
-- Teknik untuk membaca dan menampilkan struktur folder dari berkas arsip.
+![Archive Structures with GroupDocs.Viewer for Java](/viewer/document-loading/archive-structures-java.png)
+
+**Apa yang Akan Anda Pelajari**
+- Menyiapkan dan mengonfigurasi GroupDocs.Viewer untuk Java.  
+- Metode untuk **mendapatkan viewinfo** dari arsip.  
+- Teknik untuk membaca dan menampilkan struktur folder dari file arsip.  
 - Aplikasi praktis dan pertimbangan kinerja saat menggunakan GroupDocs.Viewer dalam proyek Java.
 
-Mari kita mulai dengan membahas prasyarat yang diperlukan sebelum mengimplementasikan fitur-fitur ini dengan GroupDocs.Viewer untuk Java.
+## Jawaban Cepat
+- **Apa yang disediakan “viewinfo”?** Itu mengembalikan tipe file, jumlah halaman, dan daftar folder arsip.  
+- **Arsip apa yang didukung?** ZIP, RAR, TAR, dan format umum lainnya.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi komersial diperlukan untuk produksi.  
+- **Bisakah saya memproses arsip besar?** Ya – gunakan streaming dan penanganan memori yang tepat seperti yang ditunjukkan nanti.  
+- **Apakah Maven diperlukan?** Maven adalah cara yang disarankan untuk mengelola dependensi GroupDocs.Viewer.
+
+## Apa itu “cara mendapatkan viewinfo”?
+`getViewInfo` adalah metode dalam API GroupDocs.Viewer yang mengekstrak metadata tentang dokumen atau arsip tanpa merender seluruh konten. Untuk arsip, metode ini mengungkapkan pohon folder internal, memungkinkan Anda memutuskan bagian mana yang akan dirender atau diproses lebih lanjut.
+
+## Mengapa Mengambil Struktur Tipe File Arsip Java?
+Memahami tata letak internal **tipe file arsip java** (misalnya, ZIP, RAR) memungkinkan Anda:
+- Dengan cepat menemukan file yang dibutuhkan tanpa mengekstrak semuanya.  
+- Membangun pipeline otomatis yang memproses hanya sub‑folder yang relevan.  
+- Mengintegrasikan navigasi arsip ke dalam sistem manajemen konten atau ingest data.
 
 ## Prasyarat
 
-Untuk mengikuti tutorial ini, pastikan Anda memiliki:
+- **Java Development Kit (JDK):** Versi 8 atau lebih baru.  
+- **Maven:** Untuk manajemen dependensi dan build.  
+- **Pengetahuan dasar Java:** Familiaritas dengan konsep OOP membantu tetapi tidak wajib.
 
-- **Kit Pengembangan Java (JDK):** Versi 8 atau lebih tinggi terinstal di komputer Anda.
-- **Pakar:** Untuk mengelola dependensi dan pembangunan proyek.
-- **Pemahaman Dasar Pemrograman Java:** Kemampuan memahami konsep pemrograman berorientasi objek akan sangat bermanfaat.
-
-Selain itu, sertakan pustaka GroupDocs.Viewer di proyek Anda menggunakan Maven dengan menambahkan repositori dan dependensi tertentu ke `pom.xml` mengajukan.
+Anda juga memerlukan akses ke pustaka GroupDocs.Viewer, yang dapat Anda tambahkan ke proyek Maven Anda seperti ditunjukkan di bawah.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
 
-Untuk mulai menggunakan GroupDocs.Viewer dengan Java, ikuti langkah-langkah berikut:
-
 ### Konfigurasi Maven
 
-Tambahkan yang berikut ini ke berkas konfigurasi Maven Anda:
+Tambahkan repositori dan dependensi ke `pom.xml` Anda.
 
-**Repositori:**
+**Repositories:**
 ```xml
 <repositories>
    <repository>
@@ -49,7 +66,7 @@ Tambahkan yang berikut ini ke berkas konfigurasi Maven Anda:
 </repositories>
 ```
 
-**Ketergantungan:**
+**Dependencies:**
 ```xml
 <dependencies>
    <dependency>
@@ -62,31 +79,27 @@ Tambahkan yang berikut ini ke berkas konfigurasi Maven Anda:
 
 ### Akuisisi Lisensi
 
-- **Uji Coba Gratis:** Unduh versi uji coba gratis dari situs web GroupDocs untuk memulai.
-- **Lisensi Sementara:** Ajukan permohonan lisensi sementara jika Anda memerlukan akses tambahan tanpa batasan.
-- **Beli Lisensi:** Pertimbangkan untuk membeli lisensi penuh untuk proyek jangka panjang.
+- **Free Trial:** Unduh versi percobaan dari situs web GroupDocs.  
+- **Temporary License:** Minta kunci sementara untuk evaluasi jangka pendek.  
+- **Full License:** Beli lisensi komersial untuk penggunaan produksi tanpa batas.
 
-Setelah dikonfigurasi, inisialisasi proyek Anda dengan GroupDocs.Viewer dengan mengimpor kelas yang diperlukan dan menyiapkan contoh penampil dasar.
+Setelah pustaka berada di classpath Anda, Anda dapat mulai menulis kode.
 
 ## Panduan Implementasi
 
-### Fitur 1: Dapatkan Info Tampilan untuk File Arsip
+### Cara Mendapatkan ViewInfo untuk File Arsip
 
-Fitur ini menunjukkan cara mengambil informasi terperinci tentang berkas arsip menggunakan GroupDocs.Viewer. Fitur ini melibatkan inisialisasi kelas Viewer, menentukan opsi tampilan, dan mengekstrak jenis berkas dan jumlah halaman.
+Bagian ini menunjukkan langkah-langkah tepat untuk memanggil `getViewInfo` dan membaca hierarki folder.
 
-#### Inisialisasi Penampil
-
-Mulailah dengan membuat `Viewer` contoh dengan jalur file arsip target Anda:
+#### Inisialisasi Viewer
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP_WITH_FOLDERS")) {
-    // Langkah tambahan akan menyusul di sini.
+    // Additional steps will follow here.
 }
 ```
 
-#### Ambil Informasi Tampilan
-
-Menggunakan `getViewInfo()` untuk mendapatkan detail tentang berkas arsip menggunakan opsi tampilan HTML:
+#### Mengambil Informasi Tampilan
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(ViewInfoOptions.forHtmlView());
@@ -96,16 +109,12 @@ System.out.println("Pages count: " + viewInfo.getPages().size());
 
 #### Menampilkan Struktur Folder
 
-Untuk menjelajahi struktur folder dalam arsip, panggil metode rekursif:
-
 ```java
 String rootFolder = "";
 readFolders(viewer, rootFolder);
 ```
 
-##### Pembacaan Folder Rekursif
-
-Metode pembantu ini menggunakan `ViewInfoOptions` untuk menentukan tampilan folder dan membaca subfolder secara rekursif:
+##### Membaca Folder Secara Rekursif
 
 ```java
 private static void readFolders(Viewer viewer, String folder) {
@@ -121,13 +130,11 @@ private static void readFolders(Viewer viewer, String folder) {
 }
 ```
 
-### Fitur 2: Ambil Struktur Folder Arsip
+### Fitur 2: Mengambil Struktur Folder Arsip
 
-Fitur ini berfokus pada pencetakan struktur folder dari berkas arsip. Mirip dengan fitur pertama tetapi menekankan eksplorasi rekursif.
+Fitur ini berfokus pada mencetak struktur folder dari file arsip. Ini mirip dengan fitur pertama tetapi menekankan eksplorasi rekursif.
 
-#### Pengaturan Lihat Opsi Info
-
-Konfigurasi `ViewInfoOptions` dengan folder tertentu:
+#### Menyiapkan Opsi View Info
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
@@ -135,8 +142,6 @@ viewInfoOptions.getArchiveOptions().setFolder(folder);
 ```
 
 #### Eksplorasi Rekursif
-
-Metode ini mengulangi subfolder, mencetak setiap subfolder dan menjelajah lebih dalam secara rekursif:
 
 ```java
 for (String subFolder : viewInfo.getFolders()) {
@@ -147,42 +152,56 @@ for (String subFolder : viewInfo.getFolders()) {
 
 ## Aplikasi Praktis
 
-1. **Manajemen Data:** Atur kumpulan data besar dengan cepat dengan memahami struktur arsip.
-2. **Pemrosesan Berkas Otomatis:** Otomatisasi pemrosesan file yang diarsipkan dalam pekerjaan batch menggunakan teknik ini.
-3. **Integrasi dengan Sistem CMS:** Tingkatkan sistem manajemen konten dengan mengintegrasikan GroupDocs.Viewer untuk penanganan file yang efisien.
+1. **Manajemen Data:** Dengan cepat mengatur dataset besar dengan memahami struktur arsip.  
+2. **Pemrosesan File Otomatis:** Memproses batch file arsip tanpa mengekstrak sepenuhnya.  
+3. **Integrasi CMS:** Meningkatkan sistem manajemen konten dengan navigasi arsip secara langsung.
 
 ## Pertimbangan Kinerja
 
-- **Optimalkan Penggunaan Memori:** Tangani arsip besar secara efisien dengan mengelola sumber daya secara bijak, terutama saat menangani file yang banyak atau berukuran besar.
-- **Praktik Terbaik:** Perbarui secara berkala ke versi pustaka dan JDK terbaru untuk memaksimalkan peningkatan kinerja.
+- **Optimalkan Penggunaan Memori:** Proses folder satu tingkat pada satu waktu dan tutup instance `Viewer` dengan cepat.  
+- **Tetap Terbaru:** Gunakan versi GroupDocs.Viewer terbaru dan rilis JDK untuk peningkatan kinerja.
+
+## Masalah Umum dan Solusinya
+
+| Masalah | Mengapa Terjadi | Solusi |
+|-------|----------------|-----|
+| `NullPointerException` saat membaca folder | `viewInfo.getFolders()` mengembalikan null untuk direktori kosong | Periksa null atau daftar kosong sebelum iterasi. |
+| Pemrosesan lambat pada file ZIP besar | Seluruh arsip dimuat ke dalam memori | Gunakan opsi streaming yang tersedia di versi GroupDocs yang lebih baru. |
+| Lisensi tidak ditemukan | Path file lisensi tidak benar | Tempatkan file lisensi di root aplikasi atau atur `License.setLicense("path/to/license.json")`. |
+
+## Pertanyaan yang Sering Diajukan
+
+**Q: Apa itu GroupDocs.Viewer?**  
+A: Itu adalah pustaka Java yang kuat untuk merender dokumen, termasuk arsip, ke dalam format seperti HTML, gambar, dan PDF.
+
+**Q: Bisakah saya menggunakan GroupDocs.Viewer dengan bahasa pemrograman lain?**  
+A: Ya, GroupDocs menawarkan SDK untuk berbagai platform, tetapi tutorial ini berfokus pada implementasi Java.
+
+**Q: Bagaimana cara menangani file arsip besar?**  
+A: Gunakan praktik manajemen memori yang efisien, dan pertimbangkan untuk memecah arsip jika diperlukan.
+
+**Q: Jenis arsip apa yang didukung oleh GroupDocs.Viewer?**  
+A: Itu mendukung berbagai format termasuk ZIP, RAR, TAR, dan lain-lain.
+
+**Q: Apakah ada batas ukuran arsip yang dapat saya proses?**  
+A: Batas tergantung pada sumber daya sistem Anda. Uji dengan lingkungan target Anda untuk menentukan batas praktis.
+
+**Q: Apakah “cara mendapatkan viewinfo” bekerja dengan arsip yang dilindungi kata sandi?**  
+A: Ya, Anda dapat menyediakan kata sandi melalui `ArchiveOptions.setPassword("yourPassword")` sebelum memanggil `getViewInfo`.
 
 ## Kesimpulan
 
-Dengan mengikuti tutorial ini, Anda telah mempelajari cara menggunakan GroupDocs.Viewer for Java secara efektif untuk mengambil dan mengelola struktur arsip. Keahlian ini dapat menjadi aset penting dalam berbagai aplikasi yang melibatkan pengorganisasian dan pemrosesan data. Sebagai langkah selanjutnya, pertimbangkan untuk menjelajahi fitur lain dari pustaka GroupDocs.Viewer atau mengintegrasikan teknik ini ke dalam proyek yang lebih besar.
+Dengan mengikuti panduan ini Anda kini mengetahui **cara mendapatkan viewinfo** untuk arsip yang didukung apa pun dan cara menelusuri hierarki foldernya menggunakan GroupDocs.Viewer untuk Java. Teknik ini memungkinkan Anda membangun pipeline pemrosesan data yang lebih cerdas, meningkatkan integrasi CMS, dan menangani koleksi besar file arsip dengan percaya diri. Selanjutnya, jelajahi merender file individual dari arsip atau mengonversinya ke PDF/HTML menggunakan fitur Viewer lainnya.
 
-## Bagian FAQ
+---
 
-**T: Apa itu GroupDocs.Viewer?**
-A: Ini adalah pustaka Java yang hebat untuk menerjemahkan dokumen, termasuk arsip, ke dalam berbagai format seperti HTML, gambar, dan PDF.
+**Terakhir Diperbarui:** 2026-02-05  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
+**Penulis:** GroupDocs  
 
-**T: Dapatkah saya menggunakan GroupDocs.Viewer dengan bahasa pemrograman lain?**
-A: Ya, GroupDocs menawarkan SDK untuk berbagai platform, tetapi tutorial ini berfokus pada implementasi Java.
-
-**T: Bagaimana cara menangani file arsip berukuran besar?**
-A: Gunakan praktik manajemen memori yang efisien, dan pertimbangkan untuk memecah arsip jika perlu.
-
-**T: Jenis arsip apa yang didukung GroupDocs.Viewer?**
-A: Mendukung berbagai format termasuk ZIP, RAR, TAR, dan lain-lain.
-
-**T: Apakah ada batasan ukuran arsip yang dapat saya proses?**
-J: Batasannya bergantung pada sumber daya sistem Anda. Selalu uji dengan mempertimbangkan lingkungan spesifik Anda.
-
-## Sumber daya
-
-- **Dokumentasi:** [Dokumentasi Java Penampil GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Referensi API:** [Referensi API GroupDocs untuk Java](https://reference.groupdocs.com/viewer/java/)
-- **Unduh GroupDocs.Viewer:** [Halaman Unduhan GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Beli Lisensi:** [Beli GroupDocs](https://purchase.groupdocs.com/buy)
-- **Uji Coba Gratis dan Lisensi Sementara:** [Uji Coba Gratis GroupDocs](https://releases.groupdocs.com/viewer/java/) Bahasa Indonesia: [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
-
-Cobalah langkah-langkah ini dalam proyek Anda untuk meningkatkan kemampuan aplikasi Java Anda dalam menangani berkas arsip dengan GroupDocs.Viewer. Selamat membuat kode!
+**Sumber Daya**
+- **Dokumentasi:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referensi API:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)
+- **Unduh GroupDocs.Viewer:** [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
+- **Beli Lisensi:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
+- **Free Trial dan Lisensi Sementara:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) | [Temporary License](https://purchase.groupdocs.com/temporary-license/)
