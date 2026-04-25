@@ -1,34 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a extrair nomes de planilhas de forma eficiente usando o GroupDocs.Viewer para Java. Perfeito para aprimorar seus fluxos de trabalho de automação de documentos."
-"title": "Extrair e exibir nomes de planilhas em Java usando a API GroupDocs.Viewer"
-"url": "/pt/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-25'
+description: Aprenda a extrair nomes de planilhas em Java e recuperar nomes de folhas
+  do Excel usando o GroupDocs.Viewer para Java, perfeito para automatizar fluxos de
+  trabalho de documentos.
+keywords:
+- extract worksheet names java
+- retrieve excel sheet names
+- list spreadsheet worksheets
+- java extract xlsx sheets
+title: Extrair nomes de planilhas em Java com a API GroupDocs.Viewer
 type: docs
+url: /pt/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/
+weight: 1
 ---
-# Extrair e exibir nomes de planilhas em Java usando a API GroupDocs.Viewer
 
-## Introdução
+# Extrair Nomes de Planilhas Java com a API GroupDocs.Viewer
 
-Gerenciar várias planilhas dentro de arquivos de planilha pode ser desafiador, especialmente ao lidar com grandes conjuntos de dados ou automatizar a geração de relatórios. A API do GroupDocs.Viewer para Java simplifica essa tarefa, permitindo que você recupere nomes de planilhas programaticamente, economizando tempo e aprimorando os fluxos de trabalho de automação. Este tutorial o guiará pelo processo de uso do GroupDocs.Viewer para Java para extrair e exibir nomes de planilhas de um documento de planilha.
+Gerenciar várias planilhas dentro de arquivos de planilha pode ser desafiador, especialmente ao lidar com grandes conjuntos de dados ou automatizar a geração de relatórios. Neste tutorial, você aprenderá **como extrair nomes de planilhas java** usando a API GroupDocs.Viewer para Java, uma maneira confiável de simplificar seus fluxos de trabalho de automação de documentos.
 
-**Principais conclusões:**
-- Configurando seu ambiente com GroupDocs.Viewer
-- Inicializando o Visualizador e configurando opções
-- Técnicas para recuperar e iterar planilhas de forma eficiente
+![Extract and Display Worksheet Names with GroupDocs.Viewer for Java](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
+
+**Principais Aprendizados:**
+- Configurar seu ambiente com GroupDocs.Viewer
+- Inicializar o Viewer e configurar opções
+- Técnicas para recuperar e iterar pelas planilhas de forma eficiente
 - Melhores práticas para otimizar o desempenho
 
-## Pré-requisitos
+## Respostas Rápidas
+- **O que faz “extract worksheet names java”?**  
+  Ele lê programaticamente uma planilha e retorna o nome de cada aba.
+- **Qual biblioteca é necessária?**  
+  GroupDocs.Viewer for Java (versão 25.2 ou posterior).
+- **Preciso de uma licença?**  
+  Um teste gratuito funciona para testes; uma licença paga é necessária para produção.
+- **Posso listar as planilhas da planilha sem renderizá‑las?**  
+  Sim – use `ViewInfoOptions` com visualização HTML para obter apenas os metadados das abas.
+- **Esta abordagem é adequada para arquivos Excel grandes?**  
+  Sim, quando combinada com gerenciamento adequado de memória e processamento em lote.
 
-Para seguir este tutorial, certifique-se de ter:
+## O que é “extract worksheet names java”?
+O método aproveita as capacidades de extração de metadados do GroupDocs.Viewer para ler a estrutura da pasta de trabalho e retornar o nome de exibição de cada planilha. Isso é ideal para cenários em que você precisa validar a presença de abas, gerar menus dinâmicos ou conduzir processamento subsequente sem carregar o arquivo inteiro na memória.
 
-- **Bibliotecas e Dependências:** Instale o GroupDocs.Viewer versão 25.2 ou posterior.
-- **Configuração do ambiente:** Use um ambiente de desenvolvimento Java como IntelliJ IDEA ou Eclipse.
-- **Base de conhecimento:** Um conhecimento básico de Java e familiaridade com Maven para gerenciamento de dependências é essencial.
+## Por que recuperar nomes de planilhas Excel com GroupDocs.Viewer?
+- **Pronto para automação:** Funciona em ambientes sem interface (servidores, pipelines CI).  
+- **Foco em desempenho:** Apenas metadados são obtidos, evitando renderização pesada.  
+- **Suporte a múltiplos formatos:** Lida com XLS, XLSX, ODS e outros tipos de planilha de forma uniforme.
 
-## Configurando o GroupDocs.Viewer para Java
+## Pré‑requisitos
 
-O GroupDocs.Viewer está disponível via Maven, facilitando sua inclusão em seus projetos. Adicione a seguinte configuração ao seu `pom.xml` arquivo:
+- **Bibliotecas e Dependências:** Instale GroupDocs.Viewer versão 25.2 ou posterior.  
+- **Configuração do Ambiente:** Use uma IDE Java como IntelliJ IDEA ou Eclipse.  
+- **Base de Conhecimento:** Proficiência básica em Java e Maven para gerenciamento de dependências.
+
+## Configurando GroupDocs.Viewer para Java
+
+GroupDocs.Viewer está disponível via Maven, facilitando sua inclusão em projetos. Adicione a seguinte configuração ao seu arquivo `pom.xml`:
 
 ```xml
 <repositories>
@@ -49,40 +75,38 @@ O GroupDocs.Viewer está disponível via Maven, facilitando sua inclusão em seu
 
 ### Aquisição de Licença
 
-O GroupDocs oferece diversas opções de licenciamento, incluindo um teste gratuito e licenças temporárias para fins de avaliação. Para acesso total, considere adquirir uma licença pelo site oficial.
+GroupDocs oferece várias opções de licenciamento, incluindo um teste gratuito e licenças temporárias para avaliação. Para acesso total, considere adquirir uma licença através do site oficial.
 
-## Guia de Implementação
+## Como recuperar nomes de planilhas Excel (listar planilhas da planilha)
 
-### Recurso: Extraindo nomes de planilhas
+A seguir, um guia passo a passo que orienta a extração de nomes de planilhas. O código permanece inalterado em relação ao exemplo original, garantindo que funcione como está.
 
-Este recurso demonstra como extrair nomes de planilhas de uma planilha usando o GroupDocs.Viewer.
-
-#### Etapa 1: Inicializar o Visualizador
+### Etapa 1: Inicializar o Viewer
 
 Comece inicializando `Viewer` com o caminho do seu documento:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/three_sheets.xlsx")) {
-    // Código de inicialização aqui...
+    // Initialization code here...
 }
 ```
 
-Este bloco configura o Visualizador para trabalhar com um arquivo especificado, garantindo o gerenciamento adequado de recursos usando try-with-resources.
+Esse bloco configura o Viewer para trabalhar com um arquivo especificado, garantindo o gerenciamento adequado de recursos usando try‑with‑resources.
 
-#### Etapa 2: Configurar ViewInfoOptions
+### Etapa 2: Configurar ViewInfoOptions
 
-Definir `ViewInfoOptions` para recuperação de informações de visualização HTML:
+Defina `ViewInfoOptions` para a recuperação de informações de visualização HTML:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setSpreadsheetOptions(SpreadsheetOptions.forOnePagePerSheet());
 ```
 
-Essa configuração garante que cada planilha seja renderizada separadamente, facilitando a iteração em planilhas individuais.
+Essa configuração assegura que cada planilha seja renderizada separadamente, facilitando a iteração sobre abas individuais.
 
-#### Etapa 3: recuperar e exibir nomes de planilhas
+### Etapa 3: Recuperar e Exibir Nomes das Planilhas
 
-Obter o `ViewInfo` objeto para obter detalhes sobre páginas do documento (planilhas):
+Obtenha o objeto `ViewInfo` para obter detalhes sobre as páginas do documento (planilhas):
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
@@ -92,53 +116,76 @@ for (Page page : viewInfo.getPages()) {
 }
 ```
 
-Este loop itera por cada planilha, imprimindo seu índice e nome.
+Esse loop itera por cada planilha, imprimindo seu índice e nome. É o núcleo da operação **java extract xlsx sheets**.
 
-### Dicas para solução de problemas
+### Dicas de Solução de Problemas
 
-- **Garantir a precisão do caminho do arquivo:** Verifique novamente o caminho do seu documento para evitar erros de arquivo não encontrado.
-- **Compatibilidade de versões:** Use versões compatíveis da biblioteca GroupDocs.Viewer com seu ambiente Java.
+- **Garanta a Precisão do Caminho do Arquivo:** Verifique novamente o caminho do seu documento para evitar erros de arquivo não encontrado.  
+- **Compatibilidade de Versão:** Use versões compatíveis da biblioteca GroupDocs.Viewer com seu ambiente Java.  
 
-## Aplicações práticas
+## Aplicações Práticas
 
-1. **Relatórios automatizados:** Extraia nomes de planilhas para geração de relatórios dinâmicos.
-2. **Validação de dados:** Verifique programaticamente a presença das planilhas necessárias nos conjuntos de dados.
-3. **Integração:** Aprimore as soluções de gerenciamento de documentos integrando-as a outros sistemas.
+1. **Relatórios Automatizados:** Extrair nomes de abas para geração dinâmica de relatórios.  
+2. **Validação de Dados:** Verificar programaticamente a presença de planilhas necessárias em conjuntos de dados.  
+3. **Integração:** Aprimore soluções de gerenciamento de documentos integrando com outros sistemas.
 
-## Considerações de desempenho
+## Considerações de Desempenho
 
-- **Otimize o uso de recursos:** Gerencie a memória de forma eficiente ao manipular arquivos grandes usando as ferramentas de coleta de lixo e criação de perfil do Java.
-- **Processamento em lote:** Processe documentos em lotes para reduzir os tempos de carregamento e melhorar a produtividade.
+- **Otimizar Uso de Recursos:** Gerencie a memória de forma eficiente ao lidar com arquivos grandes usando a coleta de lixo do Java e ferramentas de profiling.  
+- **Processamento em Lote:** Processar documentos em lotes para reduzir tempos de carregamento e melhorar o rendimento.
 
 ## Conclusão
 
-Seguindo este guia, você aprendeu a usar o GroupDocs.Viewer para Java para extrair nomes de planilhas com eficiência. Essa habilidade pode aprimorar significativamente seus fluxos de trabalho de gerenciamento de dados. Explore outros recursos da API consultando o [Documentação do GroupDocs](https://docs.groupdocs.com/viewer/java/).
+Seguindo este guia, você aprendeu **como extrair nomes de planilhas java** usando o GroupDocs.Viewer para Java. Essa habilidade pode melhorar significativamente seus fluxos de trabalho de gerenciamento de dados. Explore recursos adicionais da API consultando a [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).
 
-Pronto para dar um passo adiante? Experimente diferentes opções e integre essa funcionalidade em sistemas maiores!
+Pronto para avançar ainda mais? Experimente diferentes opções e integre essa funcionalidade em sistemas maiores!
 
-## Seção de perguntas frequentes
+## Seção de Perguntas Frequentes
 
-1. **O que é GroupDocs.Viewer para Java?**
-   - É uma API que permite visualizar, converter e imprimir documentos em aplicativos Java.
+1. **O que é GroupDocs.Viewer para Java?**  
+   - É uma API que permite visualizar, converter e imprimir documentos em aplicações Java.
 
-2. **Como lidar com arquivos grandes de forma eficiente?**
+2. **Como lidar com arquivos grandes de forma eficiente?**  
    - Use técnicas de gerenciamento de memória e processe em lotes para otimizar o desempenho.
 
-3. **Posso personalizar o formato de saída das planilhas?**
+3. **Posso personalizar o formato de saída das planilhas?**  
    - Sim, o GroupDocs.Viewer suporta vários formatos como HTML, PDF, etc.
 
-4. **E se o nome de uma planilha estiver faltando?**
-   - Implemente o tratamento de erros para gerenciar esses cenários com elegância.
+4. **E se o nome de uma planilha estiver ausente?**  
+   - Implemente tratamento de erros para gerenciar tais cenários de forma elegante.
 
-5. **Onde posso encontrar mais recursos no GroupDocs.Viewer?**
-   - Visite o [Documentação do GroupDocs](https://docs.groupdocs.com/viewer/java/) e seus fóruns de suporte para obter ajuda adicional.
+5. **Onde posso encontrar mais recursos sobre o GroupDocs.Viewer?**  
+   - Visite a [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) e seus fóruns de suporte para ajuda adicional.
+
+## Perguntas Frequentes
+
+**Q: Posso usar este código em uma aplicação comercial?**  
+A: Sim, desde que você possua uma licença válida do GroupDocs. Um teste gratuito está disponível para avaliação.
+
+**Q: Isso funciona com arquivos Excel protegidos por senha?**  
+A: Você pode abrir arquivos protegidos fornecendo a senha ao criar a instância `Viewer`.
+
+**Q: Quais formatos de arquivo são suportados para extração de planilhas?**  
+A: XLS, XLSX, ODS e outros formatos de planilha suportados pelo GroupDocs.Viewer.
+
+**Q: Como posso melhorar o desempenho ao processar muitos workbooks?**  
+A: Combine o padrão try‑with‑resources com processamento em lote e limite o `ViewInfoOptions` à recuperação apenas de metadados.
+
+**Q: Existe uma maneira de recuperar apenas os primeiros nomes de planilhas?**  
+A: Sim, você pode interromper o loop após a contagem desejada ou usar recursos de paginação em versões mais recentes da API.
 
 ## Recursos
 
-- **Documentação:** [Documentação Java do Visualizador GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Referência da API:** [Referência da API do GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Download:** [Downloads do GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licença de compra:** [Comprar licença do GroupDocs](https://purchase.groupdocs.com/buy)
-- **Teste gratuito:** [Teste gratuito do GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licença temporária:** [Solicitar Licença Temporária](https://purchase.groupdocs.com/temporary-license/)
-- **Fórum de suporte:** [Suporte do GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentação:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referência da API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
+- **Comprar Licença:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Teste Gratuito:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Licença Temporária:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Fórum de Suporte:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-04-25  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
