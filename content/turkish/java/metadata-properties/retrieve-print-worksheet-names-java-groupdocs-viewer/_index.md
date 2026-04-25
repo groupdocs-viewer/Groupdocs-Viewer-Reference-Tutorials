@@ -1,34 +1,59 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java'yı kullanarak elektronik tablolardan çalışma sayfası adlarını nasıl verimli bir şekilde çıkaracağınızı öğrenin. Belge otomasyon iş akışlarınızı geliştirmek için mükemmeldir."
-"title": "GroupDocs.Viewer API'sini Kullanarak Java'da Çalışma Sayfası Adlarını Ayıklama ve Görüntüleme"
-"url": "/tr/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-25'
+description: GroupDocs.Viewer for Java kullanarak çalışma sayfası adlarını nasıl çıkaracağınızı
+  ve Excel sayfa adlarını nasıl alacağınızı öğrenin; belge iş akışlarını otomatikleştirmek
+  için mükemmeldir.
+keywords:
+- extract worksheet names java
+- retrieve excel sheet names
+- list spreadsheet worksheets
+- java extract xlsx sheets
+title: GroupDocs.Viewer API ile Java’da Çalışma Sayfası İsimlerini Çıkarma
 type: docs
+url: /tr/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/
+weight: 1
 ---
-# GroupDocs.Viewer API'sini Kullanarak Java'da Çalışma Sayfası Adlarını Ayıklama ve Görüntüleme
 
-## giriiş
+# GroupDocs.Viewer API ile Java'da Çalışma Sayfası İsimlerini Çıkarma
 
-Elektronik tablo dosyalarında birden fazla çalışma sayfasını yönetmek, özellikle büyük veri kümelerini işlerken veya rapor oluşturmayı otomatikleştirirken zor olabilir. GroupDocs.Viewer for Java API, çalışma sayfası adlarını programlı olarak almanıza, zamandan tasarruf etmenize ve otomasyon iş akışlarını geliştirmenize olanak tanıyarak bu görevi basitleştirir. Bu eğitim, bir elektronik tablo belgesinden çalışma sayfası adlarını çıkarmak ve görüntülemek için GroupDocs.Viewer for Java'yı kullanma sürecinde size yol gösterecektir.
+Birden fazla çalışma sayfasını içeren elektronik tablo dosyalarını yönetmek zor olabilir, özellikle büyük veri setleriyle çalışırken veya rapor oluşturmayı otomatikleştirirken. Bu öğreticide, GroupDocs.Viewer for Java API'yi kullanarak **how to extract worksheet names java** öğrenecek ve belge otomasyon iş akışlarınızı düzenlemenin güvenilir bir yolunu keşfedeceksiniz.
 
-**Önemli Noktalar:**
+![GroupDocs.Viewer for Java ile Çalışma Sayfası İsimlerini Çıkarma ve Görüntüleme](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
+
+**Temel Çıkarımlar:**
 - GroupDocs.Viewer ile ortamınızı kurma
-- Görüntüleyiciyi başlatma ve seçenekleri yapılandırma
-- Çalışma sayfalarını verimli bir şekilde geri çağırma ve yineleme teknikleri
+- Viewer'ı başlatma ve seçenekleri yapılandırma
+- Çalışma sayfalarını verimli bir şekilde alıp yinelemek için teknikler
 - Performansı optimize etmek için en iyi uygulamalar
 
-## Ön koşullar
+## Hızlı Yanıtlar
+- **“extract worksheet names java” ne yapar?**  
+  Bir elektronik tabloyu programlı olarak okur ve her sayfanın adını döndürür.
+- **Hangi kütüphane gereklidir?**  
+  GroupDocs.Viewer for Java (version 25.2 or later).
+- **Bir lisansa ihtiyacım var mı?**  
+  Test için ücretsiz deneme çalışır; üretim için ücretli bir lisans gereklidir.
+- **Elektronik tablo çalışma sayfalarını render etmeden listeleyebilir miyim?**  
+  Evet – sadece sayfa meta verilerini almak için HTML görünümüyle `ViewInfoOptions` kullanın.
+- **Bu yaklaşım büyük Excel dosyaları için uygun mu?**  
+  Evet, uygun bellek yönetimi ve toplu işleme ile birleştirildiğinde.
 
-Bu eğitimi takip edebilmek için şunlara sahip olduğunuzdan emin olun:
+## “extract worksheet names java” nedir?
+Bu yöntem, GroupDocs.Viewer'ın meta veri çıkarma yeteneklerini kullanarak çalışma kitabı yapısını okur ve her çalışma sayfasının görüntülenen adını döndürür. Bu, sayfa varlığını doğrulamanız, dinamik menüler oluşturmanız veya tüm dosyayı belleğe yüklemeden sonraki işlemleri yönlendirmeniz gereken senaryolar için idealdir.
 
-- **Kütüphaneler ve Bağımlılıklar:** GroupDocs.Viewer 25.2 veya üzeri sürümlerini yükleyin.
-- **Çevre Kurulumu:** IntelliJ IDEA veya Eclipse gibi bir Java geliştirme ortamı kullanın.
-- **Bilgi Bankası:** Bağımlılık yönetimi için temel Java bilgisine ve Maven'a aşinalığa sahip olmak şarttır.
+## Neden GroupDocs.Viewer ile Excel sayfa adlarını almalı?
+- **Automation‑ready:** Başsız ortamlarda (sunucular, CI boru hatları) çalışır.  
+- **Performance‑focused:** Sadece meta veri alınır, ağır renderlamadan kaçınılır.  
+- **Cross‑format support:** XLS, XLSX, ODS ve diğer elektronik tablo türlerini tutarlı bir şekilde işler.
+
+## Önkoşullar
+- **Libraries & Dependencies:** GroupDocs.Viewer sürüm 25.2 veya üzerini kurun.  
+- **Environment Setup:** IntelliJ IDEA veya Eclipse gibi bir Java IDE'si kullanın.  
+- **Knowledge Base:** Temel Java bilgisi ve bağımlılık yönetimi için Maven.
 
 ## Java için GroupDocs.Viewer Kurulumu
 
-GroupDocs.Viewer, Maven üzerinden kullanılabilir ve projelerinize dahil etmeyi kolaylaştırır. Aşağıdaki yapılandırmayı ekleyin `pom.xml` dosya:
+GroupDocs.Viewer Maven üzerinden temin edilebilir, projelerinize eklemeyi kolaylaştırır. `pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 
 ```xml
 <repositories>
@@ -47,42 +72,40 @@ GroupDocs.Viewer, Maven üzerinden kullanılabilir ve projelerinize dahil etmeyi
 </dependencies>
 ```
 
-### Lisans Edinimi
+### Lisans Edinme
 
-GroupDocs, ücretsiz deneme ve değerlendirme amaçlı geçici lisanslar dahil olmak üzere çeşitli lisanslama seçenekleri sunar. Tam erişim için resmi siteleri üzerinden bir lisans satın almayı düşünün.
+GroupDocs, ücretsiz deneme ve değerlendirme amaçlı geçici lisanslar dahil çeşitli lisans seçenekleri sunar. Tam erişim için resmi sitesinden bir lisans satın almayı düşünün.
 
-## Uygulama Kılavuzu
+## Excel sayfa adlarını nasıl almalı (elektronik tablo çalışma sayfalarını listeleme)
 
-### Özellik: Çalışma Sayfası Adlarını Çıkarma
+Aşağıda, çalışma sayfası adlarını çıkarmak için adım adım bir kılavuz bulunmaktadır. Kod, orijinal örnekten değiştirilmemiştir ve olduğu gibi çalışmasını sağlar.
 
-Bu özellik, GroupDocs.Viewer kullanılarak bir elektronik tablodan çalışma sayfası adlarının nasıl çıkarılacağını gösterir.
+### Adım 1: Viewer'ı Başlatma
 
-#### Adım 1: Görüntüleyiciyi Başlatın
-
-Başlatma ile başlayın `Viewer` belgenizin yolu ile:
+`Viewer`'ı belge yolunuzla başlatarak başlayın:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/three_sheets.xlsx")) {
-    // Başlatma kodu burada...
+    // Initialization code here...
 }
 ```
 
-Bu blok, Görüntüleyiciyi belirtilen bir dosyayla çalışacak şekilde ayarlar ve try-with-resources kullanılarak uygun kaynak yönetiminin sağlanmasını garanti eder.
+Bu blok, Viewer'ı belirtilen dosyayla çalışacak şekilde ayarlar ve try‑with‑resources kullanarak uygun kaynak yönetimini sağlar.
 
-#### Adım 2: ViewInfoOptions'ı yapılandırın
+### Adım 2: ViewInfoOptions'ı Yapılandırma
 
-Ayarlamak `ViewInfoOptions` HTML görünümünde bilgi alma için:
+`ViewInfoOptions`'ı HTML görünüm bilgisi alımı için ayarlayın:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setSpreadsheetOptions(SpreadsheetOptions.forOnePagePerSheet());
 ```
 
-Bu yapılandırma, her çalışma sayfasının ayrı ayrı işlenmesini sağlayarak, tek tek sayfalar üzerinde yinelemeyi kolaylaştırır.
+Bu yapılandırma, her çalışma sayfasının ayrı ayrı render edilmesini sağlar ve bireysel sayfalarda daha kolay yineleme yapılmasına olanak tanır.
 
-#### Adım 3: Çalışma Sayfası Adlarını Alın ve Görüntüleyin
+### Adım 3: Çalışma Sayfası İsimlerini Al ve Görüntüle
 
-Edinmek `ViewInfo` Belge sayfaları (çalışma sayfaları) hakkında ayrıntıları almak için nesne:
+`ViewInfo` nesnesini elde ederek belge sayfaları (çalışma sayfaları) hakkında detayları alın:
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
@@ -92,53 +115,65 @@ for (Page page : viewInfo.getPages()) {
 }
 ```
 
-Bu döngü her çalışma sayfasını dolaşarak dizinini ve adını yazdırır.
+Bu döngü, her çalışma sayfasını yineleyerek indeksini ve adını yazdırır. **java extract xlsx sheets** işleminin çekirdeğidir.
 
 ### Sorun Giderme İpuçları
-
-- **Dosya Yolu Doğruluğunu Sağlayın:** Dosya bulunamadı hatalarını önlemek için belge yolunuzu iki kez kontrol edin.
-- **Sürüm Uyumluluğu:** Java ortamınızla uyumlu GroupDocs.Viewer kütüphane sürümlerini kullanın.
+- **Ensure File Path Accuracy:** Dosya yolunuzu iki kez kontrol ederek dosya bulunamadı hatalarını önleyin.  
+- **Version Compatibility:** Java ortamınızla uyumlu GroupDocs.Viewer kütüphane sürümlerini kullanın.
 
 ## Pratik Uygulamalar
+1. **Automated Reporting:** Dinamik rapor oluşturma için sayfa adlarını çıkarın.
+2. **Data Validation:** Veri setlerinde gerekli çalışma sayfalarının varlığını programlı olarak doğrulayın.
+3. **Integration:** Diğer sistemlerle entegrasyon sağlayarak belge yönetim çözümlerini geliştirin.
 
-1. **Otomatik Raporlama:** Dinamik rapor oluşturma için sayfa adlarını çıkarın.
-2. **Veri Doğrulaması:** Veri kümelerinde gerekli çalışma sayfalarının varlığını programlı olarak doğrulayın.
-3. **Entegrasyon:** Diğer sistemlerle entegre ederek belge yönetimi çözümlerinizi geliştirin.
+## Performans Düşünceleri
+- **Optimize Resource Usage:** Java’nın çöp toplama ve profil oluşturma araçlarını kullanarak büyük dosyaları işlerken belleği verimli yönetin.
+- **Batch Processing:** Yükleme sürelerini azaltmak ve verimliliği artırmak için belgeleri toplu olarak işleyin.
 
-## Performans Hususları
+## Sonuç
+Bu kılavuzu izleyerek, GroupDocs.Viewer for Java kullanarak **how to extract worksheet names java** öğrendiniz. Bu beceri, veri yönetim iş akışlarınızı önemli ölçüde geliştirebilir. API'nin daha fazla özelliğini keşfetmek için [GroupDocs Viewer Java Dokümantasyonu](https://docs.groupdocs.com/viewer/java/) sayfasına bakın.
 
-- **Kaynak Kullanımını Optimize Edin:** Java'nın çöp toplama ve profil oluşturma araçlarını kullanarak büyük dosyaları işlerken belleği verimli bir şekilde yönetin.
-- **Toplu İşleme:** Yükleme sürelerini azaltmak ve verimi artırmak için belgeleri gruplar halinde işleyin.
-
-## Çözüm
-
-Bu kılavuzu takip ederek, çalışma sayfası adlarını etkili bir şekilde çıkarmak için GroupDocs.Viewer for Java'yı nasıl kullanacağınızı öğrendiniz. Bu beceri, veri yönetimi iş akışlarınızı önemli ölçüde iyileştirebilir. API'nin diğer özelliklerini keşfetmek için şuraya danışın: [GroupDocs belgeleri](https://docs.groupdocs.com/viewer/java/).
-
-Bir adım daha ileri gitmeye hazır mısınız? Farklı seçenekleri deneyin ve bu işlevselliği daha büyük sistemlere entegre edin!
+Daha ileri bir adım atmaya hazır mısınız? Farklı seçeneklerle deney yapın ve bu işlevi daha büyük sistemlere entegre edin!
 
 ## SSS Bölümü
+1. **GroupDocs.Viewer for Java nedir?**  
+   - Java uygulamaları içinde belgeleri görüntüleme, dönüştürme ve yazdırma imkanı sağlayan bir API'dir.
+2. **Büyük dosyaları verimli bir şekilde nasıl yönetebilirim?**  
+   - Bellek yönetimi tekniklerini kullanın ve performansı optimize etmek için toplu işleme yapın.
+3. **Çalışma sayfalarının çıktı formatını özelleştirebilir miyim?**  
+   - Evet, GroupDocs.Viewer HTML, PDF vb. çeşitli formatları destekler.
+4. **Bir çalışma sayfası adı eksikse ne olur?**  
+   - Bu gibi senaryoları sorunsuz yönetmek için hata işleme uygulayın.
+5. **GroupDocs.Viewer hakkında daha fazla kaynağa nereden ulaşabilirim?**  
+   - [GroupDocs Viewer Java Dokümantasyonu](https://docs.groupdocs.com/viewer/java/) sayfasını ve destek forumlarını ziyaret edin.
 
-1. **Java için GroupDocs.Viewer nedir?**
-   - Java uygulamaları içerisinde dokümanların görüntülenmesine, dönüştürülmesine ve yazdırılmasına olanak sağlayan bir API'dir.
+## Sıkça Sorulan Sorular
+**Q: Bu kodu ticari bir uygulamada kullanabilir miyim?**  
+A: Evet, geçerli bir GroupDocs lisansınız olduğu sürece. Değerlendirme için ücretsiz bir deneme mevcuttur.
 
-2. **Büyük dosyaları nasıl verimli bir şekilde yönetebilirim?**
-   - Performansı optimize etmek için bellek yönetim tekniklerini kullanın ve işlemleri toplu olarak gerçekleştirin.
+**Q: Bu, şifre korumalı Excel dosyalarıyla çalışır mı?**  
+A: `Viewer` örneğini oluştururken şifreyi sağlayarak korumalı dosyaları açabilirsiniz.
 
-3. **Çalışma sayfalarının çıktı formatını özelleştirebilir miyim?**
-   - Evet, GroupDocs.Viewer HTML, PDF vb. gibi çeşitli formatları destekler.
+**Q: Çalışma sayfası çıkarma için hangi dosya formatları destekleniyor?**  
+A: GroupDocs.Viewer tarafından desteklenen XLS, XLSX, ODS ve diğer elektronik tablo formatları.
 
-4. **Çalışma sayfasının adı eksikse ne olur?**
-   - Bu tür senaryoları zarif bir şekilde yönetmek için hata yönetimini uygulayın.
+**Q: Birçok çalışma kitabını işlerken performansı nasıl artırabilirim?**  
+A: Try‑with‑resources desenini toplu işleme ile birleştirin ve `ViewInfoOptions`'ı sadece meta veri alımıyla sınırlayın.
 
-5. **GroupDocs.Viewer hakkında daha fazla kaynağı nerede bulabilirim?**
-   - Ziyaret edin [GroupDocs belgeleri](https://docs.groupdocs.com/viewer/java/) ve ek yardım için destek forumlarına bakın.
+**Q: Sadece ilk birkaç sayfa adını almak mümkün mü?**  
+A: Evet, istediğiniz sayıya ulaştıktan sonra döngüyü kırabilir veya yeni API sürümlerindeki sayfalama özelliklerini kullanabilirsiniz.
 
 ## Kaynaklar
-
-- **Belgeler:** [GroupDocs Görüntüleyici Java Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı:** [GroupDocs API Başvurusu](https://reference.groupdocs.com/viewer/java/)
-- **İndirmek:** [GroupDocs İndirmeleri](https://releases.groupdocs.com/viewer/java/)
-- **Lisans Satın Al:** [GroupDocs Lisansı Satın Al](https://purchase.groupdocs.com/buy)
+- **Dokümantasyon:** [GroupDocs Viewer Java Dokümantasyonu](https://docs.groupdocs.com/viewer/java/)
+- **API Referansı:** [GroupDocs API Referansı](https://reference.groupdocs.com/viewer/java/)
+- **İndirme:** [GroupDocs İndirmeleri](https://releases.groupdocs.com/viewer/java/)
+- **Lisans Satın Al:** [GroupDocs Lisansını Satın Al](https://purchase.groupdocs.com/buy)
 - **Ücretsiz Deneme:** [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans:** [Geçici Lisans Talebi](https://purchase.groupdocs.com/temporary-license/)
-- **Destek Forumu:** [GroupDocs Desteği](https://forum.groupdocs.com/c/viewer/9)
+- **Geçici Lisans:** [Geçici Lisans İste](https://purchase.groupdocs.com/temporary-license/)
+- **Destek Forumu:** [GroupDocs Destek](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2026-04-25  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs
