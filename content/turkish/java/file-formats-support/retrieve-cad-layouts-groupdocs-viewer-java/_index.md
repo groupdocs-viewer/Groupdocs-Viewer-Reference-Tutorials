@@ -1,42 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak CAD dosyalarından düzenleri ve katmanları programatik olarak nasıl çıkaracağınızı öğrenin. Hassas tasarım verisi yönetimi gerektiren mühendislik projeleri için idealdir."
-"title": "GroupDocs.Viewer ile Java'da CAD Düzenlerini ve Katmanlarını Alın"
-"url": "/tr/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-06'
+description: GroupDocs.Viewer for Java kullanarak CAD düzenlerini Java’da nasıl alacağınızı
+  öğrenin, CAD dosyalarından düzenleri ve katmanları çıkararak hassas tasarım veri
+  yönetimi sağlayın.
+keywords:
+- retrieve cad layouts java
+- groupdocs viewer java
+- cad layers extraction
+title: GroupDocs.Viewer ile Java’da CAD Düzenlerini Al
 type: docs
+url: /tr/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# Java için GroupDocs.Viewer'ı kullanarak CAD Düzenleri ve Katmanları Nasıl Alınır
 
-Mühendislik ve tasarım dünyasında, Bilgisayar Destekli Tasarım (CAD) dosyaları, tasarımlar hakkında büyük miktarda ayrıntılı bilgi depolayan vazgeçilmez araçlardır. Bu dosyalar karmaşık olabilir, etkili proje yürütme için hassas yönetim ve geri alma gerektiren birden fazla düzen ve katman içerebilir. CAD çizimlerinden belirli ayrıntıları Java'da programatik olarak çıkarmak istiyorsanız, Java için GroupDocs.Viewer sizin için ideal çözümdür. Bu eğitim, GroupDocs.Viewer kullanarak bir CAD çiziminden tüm düzenleri ve katmanları alma sürecinde size rehberlik edecektir.
+# GroupDocs.Viewer ile Java’da CAD Düzenlerini Almak
 
-**Ne Öğreneceksiniz:**
-- Java için GroupDocs.Viewer nasıl kurulur.
-- Düzenler ve katmanlar dahil CAD çizim bilgilerini alın.
-- Bu özelliğin gerçek dünya senaryolarında pratik uygulamaları.
-- Büyük CAD dosyalarıyla çalışırken performans hususları.
+Modern mühendislik projelerinde, **retrieving CAD layouts Java** tasarım analizini otomatikleştirmek, sürüm kontrolü ve veri odaklı iş akışları için önemlidir. CAD dosyaları genellikle bir ürünün farklı görünümlerini tanımlayan birden fazla düzen ve katman içerir. Bu bilgiyi programlı olarak çekebilmek, çizimleri denetleyen, raporlar oluşturan veya tasarımları daha büyük sistemlere entegre eden araçlar oluşturmanıza olanak tanır. Bu öğreticide, GroupDocs.Viewer for Java kullanarak bir CAD çiziminden her düzen ve katmanı hızlı ve güvenilir bir şekilde nasıl çıkaracağınızı öğreneceksiniz.
 
-Uygulamaya geçmeden önce, başlamak için ihtiyaç duyduğunuz bazı ön koşulları ele alalım.
+![Retrieve CAD Layouts and Layers with GroupDocs.Viewer for Java](/viewer/file-formats-support/retrieve-cad-layouts-and-layers-java.png)
 
-## Ön koşullar
+## Hızlı Yanıtlar
+- **“retrieve CAD layouts Java” ne anlama geliyor?** Bu, CAD dosyalarının düzen ve katman meta verilerine bir Java uygulamasından programlı olarak erişmek anlamına gelir.  
+- **Bu işlemi hangi kütüphane yönetir?** GroupDocs.Viewer for Java, düzen ve katman bilgilerini almak için basit bir API sağlar.  
+- **Bir lisansa ihtiyacım var mı?** Ücretsiz deneme mevcuttur; üretim kullanımı için ticari lisans gereklidir.  
+- **Büyük DWG dosyalarını işleyebilir miyim?** Evet—bellek kullanımını düşük tutmak için try‑with‑resources ve toplu işleme kullanın.  
+- **Maven gerekli mi?** Maven, projenize GroupDocs.Viewer eklemenin önerilen yoludur, ancak Gradle veya manuel JAR'ları da kullanabilirsiniz.
 
-Bu eğitimi takip edebilmek için şunlara sahip olduğunuzdan emin olun:
+## “retrieve CAD layouts Java” nedir?
+Retrieving CAD layouts Java, CAD formatları (DWG veya DXF gibi) üzerinden Java kodu kullanarak yapısal bileşenleri—düzenler (kağıt alanları) ve katmanlar (görünürlük grupları)—çıkarma anlamına gelir. Bu bilgi, otomatik çizim incelemeleri, özel renderleme boru hatları veya tasarım verilerinin diğer platformlara aktarımı gibi görevler için kritiktir.
 
-1. **Java Geliştirme Kiti (JDK):** Makinenizde JDK 8 veya üzeri sürümün yüklü olduğundan emin olun.
-2. **Entegre Geliştirme Ortamı (IDE):** IntelliJ IDEA, Eclipse veya NetBeans gibi herhangi bir Java IDE'si sorunsuz çalışacaktır.
-3. **Java Kütüphanesi için GroupDocs.Viewer:** Maven üzerinden ekleyebileceğiniz en son sürümü kullanacağız.
+## Neden GroupDocs.Viewer for Java Kullanmalı?
+GroupDocs.Viewer, CAD dosyası ayrıştırmanın karmaşıklığını soyutlayarak, yerel AutoCAD kütüphanelerine ihtiyaç duymadan birçok CAD sürümüyle çalışan yüksek seviyeli bir API sunar. Şu özellikleri sağlar:
 
-### Çevre Kurulumu
+- **Cross‑format support** (DWG, DXF, DGN, vb.)  
+- **Fast, memory‑efficient processing** – sunucu tarafı uygulamalar için ideal  
+- **Simple Maven integration** – bağımlılıkları düzenli tutar  
+- **Robust licensing options** – deneme, geçici veya tam üretim lisansları  
 
-Java uygulamalarınızı çalıştırmaya hazır yerel veya uzak bir sunucunuz olduğundan emin olun. Ayrıca Java projelerinde bağımlılık yönetimini basitleştirdiği için Maven'ı kullanmaya da aşina olmalısınız.
+## Önkoşullar
+Before you start, make sure you have:
 
-## Java için GroupDocs.Viewer Kurulumu
+1. **Java Development Kit (JDK) 8+** yüklü olduğundan emin olun.  
+2. **Bir IDE** (IntelliJ IDEA, Eclipse, NetBeans, vb.).  
+3. **GroupDocs.Viewer for Java** – Maven aracılığıyla eklenmiş (aşağıya bakın).  
 
-GroupDocs.Viewer'ı Java projenize entegre etmek için kolay kurulum ve güncellemeler için Maven'ı kullanın. İşte nasıl kurabileceğiniz:
+### Ortam Kurulumu
+Java uygulamalarını çalıştırabilen ve CAD dosyalarınızın bulunduğu dosya sistemine erişebilen bir makineye (yerel veya uzak) ihtiyacınız olacak.
+
+## GroupDocs.Viewer for Java Kurulumu
 
 ### Maven Yapılandırması
-
-Aşağıdaki depoları ve bağımlılıkları ekleyin: `pom.xml` dosya:
+`pom.xml` dosyanıza depo ve bağımlılığı ekleyin. Bu, projenizin derleme dosyasında yapmanız gereken tek değişikliktir.
 
 ```xml
 <repositories>
@@ -55,27 +69,19 @@ Aşağıdaki depoları ve bağımlılıkları ekleyin: `pom.xml` dosya:
 </dependencies>
 ```
 
-### Lisans Edinimi
+### Lisans Alımı
+GroupDocs.Viewer, ücretsiz deneme, kısa vadeli değerlendirme için geçici lisans ve üretim için tam lisans sunar.
 
-GroupDocs.Viewer, satın almadan veya uzun vadeli değerlendirme için geçici bir lisans edinmeden önce yeteneklerini test etmenize olanak tanıyan ücretsiz bir deneme sürümü sunar.
+1. **Free Trial:** En son sürümü [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) adresinden indirin.  
+2. **Temporary License:** Gelişmiş özellikleri keşfetmek için [GroupDocs Purchase Page](https://purchase.groupdocs.com/temporary-license/) adresinden geçici lisans başvurusu yapın.  
+3. **Purchase:** Uzun vadeli kullanım için [GroupDocs Store](https://purchase.groupdocs.com/buy) üzerinden lisans satın alın.
 
-1. **Ücretsiz Deneme:** En son sürümü şu adresten indirin: [GroupDocs İndirmeleri](https://releases.groupdocs.com/viewer/java/).
-2. **Geçici Lisans:** Geçici lisans için başvuruda bulunun [GroupDocs Satın Alma Sayfası](https://purchase.groupdocs.com/temporary-license/) Gelişmiş özellikleri keşfetmek için.
-3. **Satın almak:** Üretim amaçlı kullanım için, şu adresten bir lisans satın alın: [GroupDocs Mağazası](https://purchase.groupdocs.com/buy).
+## Uygulama Rehberi
 
-Ortamınızı ve bağımlılıklarınızı ayarladıktan sonra özelliği uygulamaya başlayabilirsiniz.
+Aşağıda, GroupDocs.Viewer kullanarak **retrieve CAD layouts Java** işlemini tam olarak nasıl yapacağınızı adım adım gösteren bir rehber bulunmaktadır.
 
-## Uygulama Kılavuzu
-
-Bu bölümde, Java'da GroupDocs.Viewer kullanarak CAD düzenlerinin ve katmanlarının nasıl alınacağını açıklayacağız. Başarılı bir uygulama için gereken her adımı ele alacağız.
-
-### Özelliğin Genel Görünümü
-
-Bu işlevsellik, geliştiricilerin CAD dosyalarındaki düzen ve katman bilgilerine programlı olarak erişebilmelerini sağlar; bu da tasarım yapısına dayalı ayrıntılı çizim analizi veya değişiklikler gerektiren uygulamalar için kritik öneme sahip olabilir.
-
-#### Adım 1: GroupDocs.Viewer'ı başlatın
-
-Bir örnek oluşturun `Viewer` CAD dosyanıza giden yolu sağlayarak. Bu nesne, GroupDocs.Viewer tarafından sağlanan çeşitli özelliklere erişim için bir ağ geçidi görevi görecektir.
+### Adım 1: Viewer’ı Başlatma
+`Viewer` örneğini CAD dosyanıza işaret ederek oluşturun. `try‑with‑resources` bloğu, viewer’ın düzgün bir şekilde kapatılmasını ve belleğin serbest bırakılmasını garanti eder.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,13 +90,12 @@ import java.io.File;
 String documentPath = new File("YOUR_DOCUMENT_DIRECTORY", "SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS").getAbsolutePath();
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // Bundan sonraki işlemler burada gerçekleştirilecektir.
+    // Further operations will be performed here.
 }
 ```
 
-#### Adım 2: CAD Görünüm Bilgilerini Alın
-
-Kullanın `getViewInfo` düzenler ve katmanlar hakkında ayrıntıları almak için bir yöntem. Bu bilgi bir kapsül içinde yer alır `CadViewInfo` nesne.
+### Adım 2: Görünüm Bilgilerini Alın
+`getViewInfo` metodunu `ViewInfoOptions.forHtmlView()` ile kullanarak, düzen ve katman koleksiyonlarını içeren bir `CadViewInfo` nesnesi elde edin.
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -99,65 +104,70 @@ import com.groupdocs.viewer.results.CadViewInfo;
 CadViewInfo info = (CadViewInfo) viewer.getViewInfo(ViewInfoOptions.forHtmlView());
 ```
 
-#### Adım 3: Düzenleri ve Katmanları Çıkarın
-
-CAD dosyasından alınan düzenler ve katmanlar üzerinde yineleme yapın. Bu yinelemeler, tasarımınızın yapısını anlamanıza veya filtreleme veya değişiklik gibi daha fazla işlem yapmanıza yardımcı olabilir.
+### Adım 3: Düzenleri ve Katmanları Çıkarma
+`layouts` ve `layers` koleksiyonları üzerinde döngü oluşturun. Bunları kaydedebilir, bir veritabanına depolayabilir veya sonraki süreçlere besleyebilirsiniz.
 
 ```java
-// CAD dosyasındaki her bir düzen üzerinde yineleme yapın
+// Iterate over each layout in the CAD file
 for (Layout layout : info.getLayouts()) {
-    // Her düzeni gerektiği gibi işleyin
+    // Process each layout as needed
 }
 
-// CAD dosyasındaki her katman üzerinde yineleme yapın
+// Iterate over each layer in the CAD file
 for (Layer layer : info.getLayers()) {
-    // Her katmanı gerektiği gibi işleyin
+    // Process each layer as needed
 }
 ```
 
-### Sorun Giderme İpuçları
-
-- **Dosya Bulunamadı İstisnası:** Belge yolunuzun doğru ayarlandığından ve erişilebilir olduğundan emin olun.
-- **Sürüm Uyumluluk Sorunları:** Java kurulumunuzla uyumlu bir GroupDocs.Viewer sürümü kullandığınızı doğrulayın.
+### Yaygın Tuzaklar ve Nasıl Kaçınılır
+- **File Not Found:** `Viewer`'a verdiğiniz yolu iki kez kontrol edin. Mutlak yollar kullanın veya çalışma dizinini doğrulayın.  
+- **Version Mismatch:** GroupDocs.Viewer sürümünün JDK'nızla (25.x serisi JDK 8‑17 ile çalışır) eşleştiğinden emin olun.  
+- **Memory Leaks:** Yukarıda gösterilen `try‑with‑resources` desenini her zaman kullanın; bu, yerel kaynakları otomatik olarak serbest bırakır.
 
 ## Pratik Uygulamalar
+Retrieving CAD layouts Java, birçok gerçek dünya senaryosunun kapısını açar:
 
-Düzenlerin ve katmanların programatik olarak nasıl alınacağını anlamak çeşitli senaryolarda faydalı olabilir:
+| Kullanım Durumu | Fayda |
+|-----------------|-------|
+| **Otomatik Tasarım İncelemesi** | Uyumluluk için kontrol listeleri oluşturmak amacıyla düzen adlarını çıkarın. |
+| **Toplu Dönüştürme** | DWG'yi PDF veya SVG'ye dönüştürürken katman görünürlüğünü koruyun. |
+| **Özel Raporlama** | Denetim izleri için katman meta verilerini Excel veya CSV'ye çekin. |
+| **Bulut Tabanlı İşbirliği** | Düzen ve katman bilgilerini bir belge yönetim sistemiyle senkronize edin. |
 
-1. **Otomatik Tasarım İncelemeleri:** Kalite kontrolleri için düzen verilerini otomatik olarak çıkarın ve analiz edin.
-2. **Tasarım Dönüşümü:** CAD dosyalarını yapısal bütünlüklerini koruyarak farklı formatlara dönüştürün.
-3. **Katman Yönetim Araçları:** Mühendislerin CAD tasarımlarını daha verimli bir şekilde yönetmelerine ve değiştirmelerine yardımcı olan araçlar geliştirin.
+## Performans Düşünceleri
+Büyük CAD dosyalarıyla çalışırken, aşağıdaki ipuçlarını aklınızda tutun:
 
-## Performans Hususları
+- **Memory Management:** `Viewer` nesnesi yerel kaynakları tutar; her zaman hızlı bir şekilde kapatın.  
+- **Batch Processing:** Binlerce çizimi işlemeniz gerekiyorsa, eşzamanlı `Viewer` örneklerini sınırlamak için bir üretici‑tüketici kuyruğu düşünün.  
+- **Monitoring:** Çıkarma sırasında yığın kullanımını izlemek için Java profil araçlarını (ör. VisualVM) kullanın.
 
-Büyük CAD dosyalarıyla çalışmak kaynak yoğun olabilir, bu nedenle performansı optimize etmek için şu ipuçlarını göz önünde bulundurun:
-
-- **Bellek Yönetimi:** try-with-resources'ı kullanın `Viewer` Uygun kapanışı ve hafızanın serbest bırakılmasını sağlamak için örnekler.
-- **Verimli Tekrarlama:** Mümkünse genel giderleri azaltmak için iş düzenlerini ve katmanları gruplar halinde işleyin.
-- **Kaynak Kullanımı:** Özellikle büyük veya karmaşık CAD dosyalarıyla çalışırken uygulamanızın CPU ve bellek kullanımını izleyin.
-
-## Çözüm
-
-GroupDocs.Viewer for Java kullanarak CAD çizimlerinden düzenleri ve katmanları almak, tasarım verilerini programatik olarak işleme şeklinizi önemli ölçüde iyileştirebilir. Bu eğitim, bu özelliği projelerinizde etkili bir şekilde uygulamak için gereken bilgiyle sizi donattı. Daha fazla araştırma için, GroupDocs.Viewer'ın diğer özelliklerine dalmayı veya kapsamlı çözümler oluşturmak için ek araçlarla entegre etmeyi düşünün.
+## Sonuç
+Artık GroupDocs.Viewer kullanarak **retrieving CAD layouts Java** için eksiksiz, üretime hazır bir yönteme sahipsiniz. Bu yetenek, tasarım otomasyonunu büyük ölçüde hızlandırabilir, veri tutarlılığını artırabilir ve mühendislik süreçlerinde manuel çabayı azaltabilir.
 
 ### Sonraki Adımlar
+- Boyutlar veya blok tanımları gibi ek CAD meta verilerini çıkarmayı deneyin.  
+- Bu çıkarımı GroupDocs.Conversion ile birleştirerek her düzenin önizleme görüntülerini oluşturun.  
+- İsteğe bağlı CAD dosyalarını almak için bulut depolama entegrasyonunu (AWS S3, Azure Blob) keşfedin.
 
-- GroupDocs.Viewer tarafından desteklenen farklı CAD dosya formatlarını deneyin.
-- GroupDocs.Viewer'ın işleme yeteneklerini kullanarak bu dosyaların nasıl dönüştürüleceğini ve görüntüleneceğini keşfedin.
+## Sıkça Sorulan Sorular
 
-## SSS Bölümü
+**Q: Bir CAD çiziminin alabileceğim ana bileşenleri nelerdir?**  
+A: CAD çizimlerinden düzenler, katmanlar, ölçüler ve diğer yapısal bilgileri çıkarabilirsiniz.
 
-**S1: Bir CAD çiziminin alabileceğim ana bileşenleri nelerdir?**
-C1: CAD çizimlerinden düzenleri, katmanları, boyutları ve diğer yapısal bilgileri çıkarabilirsiniz.
+**Q: GroupDocs.Viewer tüm CAD dosyası türlerini işleyebilir mi?**  
+A: Evet, DWG, DXF, DGN vb. gibi çeşitli formatları destekler, ancak çalıştığınız belirli dosya türüyle uyumluluğu her zaman doğrulayın.
 
-**S2: GroupDocs.Viewer her türlü CAD dosyasını işleyebilir mi?**
-C2: Evet, DWG, DXF, DGN gibi çeşitli formatları destekler, ancak her zaman çalıştığınız belirli dosya türüyle uyumluluğunu doğrulayın.
+**Q: Uygulamamın büyük CAD dosyalarını verimli bir şekilde işlemesini nasıl sağlayabilirim?**  
+A: Kaynakları hızlı bir şekilde kapatarak bellek kullanımını optimize edin ve mümkünse verileri daha küçük parçalar halinde işlemeyi düşünün.
 
-**S3: Uygulamamın büyük CAD dosyalarını verimli bir şekilde işleyebildiğinden nasıl emin olabilirim?**
-C3: Kaynakları derhal kapatarak bellek kullanımını optimize edin ve mümkünse verileri daha küçük parçalar halinde işlemeyi değerlendirin.
+**Q: Çıkarma sırasında katmanları filtrelemenin bir yolu var mı?**  
+A: Doğrudan filtreleme sağlanmasa da, çıkarımdan sonra ihtiyacınıza göre katmanları yönetmek için özel mantık uygulayabilirsiniz.
 
-**S4: Çıkarım sırasında katmanları filtrelemenin bir yolu var mı?**
-C4: Doğrudan filtreleme sağlanmasa da, katmanları gerektiği gibi yönetmek için çıkarma sonrası özel mantığı uygulayabilirsiniz.
+**Q: GroupDocs.Viewer bulut depolama çözümleriyle entegre edilebilir mi?**  
+A: Evet, CAD dosyalarını depolamak ve erişmek için çeşitli bulut hizmetleriyle sorunsuz çalışabilir.
 
-**S5: GroupDocs.Viewer bulut depolama çözümleriyle entegre edilebilir mi?**
-C5: Evet, CAD dosyalarını depolamak ve erişmek için çeşitli bulut hizmetleriyle sorunsuz bir şekilde çalışabilir.
+---
+
+**Son Güncelleme:** 2026-04-06  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs
