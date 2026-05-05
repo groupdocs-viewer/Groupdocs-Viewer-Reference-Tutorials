@@ -1,38 +1,58 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách sử dụng phông chữ tùy chỉnh với GroupDocs.Viewer for Java để nâng cao tính thẩm mỹ của tài liệu và duy trì tính nhất quán của thương hiệu. Thực hiện theo hướng dẫn toàn diện này để thiết lập, cấu hình và ứng dụng thực tế."
-"title": "Cách triển khai kết xuất phông chữ tùy chỉnh trong Java với GroupDocs.Viewer&#58; Hướng dẫn từng bước"
-"url": "/vi/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/"
-"weight": 1
+date: '2026-02-10'
+description: Tìm hiểu cách thêm phông chữ tùy chỉnh vào HTML bằng GroupDocs.Viewer
+  cho Java, cấu hình cài đặt phông chữ Java và nhúng phông chữ tùy chỉnh vào HTML
+  để tăng nhận diện thương hiệu và khả năng đọc.
+keywords:
+- custom font rendering Java
+- GroupDocs Viewer setup
+- Java GroupDocs Viewer custom fonts
+title: 'Cách thêm phông chữ tùy chỉnh HTML trong Java với GroupDocs.Viewer: Hướng
+  dẫn từng bước'
 type: docs
+url: /vi/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/
+weight: 1
 ---
-# Cách triển khai kết xuất phông chữ tùy chỉnh trong Java với GroupDocs.Viewer: Hướng dẫn từng bước
+
+# Cách thêm custom font HTML trong Java với GroupDocs.Viewer: Hướng dẫn từng bước
 
 ## Giới thiệu
 
-Bạn có đang gặp phải thách thức với các phông chữ mặc định không phù hợp với yêu cầu về tính thẩm mỹ hoặc khả năng đọc của thương hiệu không? Cho dù đó là báo cáo kinh doanh, tài liệu pháp lý hay bài thuyết trình, phông chữ tùy chỉnh có thể nâng cao đáng kể sức hấp dẫn và tính chuyên nghiệp của tài liệu. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng **GroupDocs.Viewer Java** để hiển thị phông chữ tùy chỉnh hiệu quả.
+Bạn có đang gặp khó khăn với các phông chữ mặc định không phù hợp với nhận diện hình ảnh thương hiệu của mình không? Trong nhiều báo cáo kinh doanh, tài liệu pháp lý và bản trình bày, **add custom font HTML** là cần thiết để duy trì sự nhất quán về giao diện và cải thiện khả năng đọc. Hướng dẫn này sẽ chỉ cho bạn cách sử dụng **GroupDocs.Viewer for Java** để cấu hình font settings Java và nhúng custom fonts HTML, để các tài liệu được hiển thị đúng như mong muốn.
 
-### Những gì bạn sẽ học được:
-- Thiết lập GroupDocs.Viewer cho Java
-- Tích hợp phông chữ tùy chỉnh vào kết xuất tài liệu
-- Tối ưu hóa cấu hình cho hiệu suất
+![Implement Custom Font Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
 
-Đến cuối hướng dẫn này, bạn sẽ thành thạo việc tùy chỉnh trình bày tài liệu bằng phông chữ tùy chỉnh. Hãy bắt đầu bằng cách đảm bảo môi trường phát triển của bạn đã sẵn sàng với các công cụ cần thiết.
+### Bạn sẽ học được gì
+- Cách thiết lập GroupDocs.Viewer cho Java  
+- Cách **add custom font HTML** vào đầu ra đã render  
+- Cách **configure font settings Java** để đạt hiệu suất tối ưu  
 
-## Điều kiện tiên quyết
+Khi kết thúc tutorial này, bạn sẽ có thể tùy chỉnh cách trình bày tài liệu với phông chữ tùy chỉnh, đảm bảo tính nhất quán thương hiệu và cải thiện khả năng truy cập.
 
-Trước khi bắt đầu, hãy đảm bảo bạn có:
-- **Bộ phát triển Java (JDK):** Phiên bản 8 trở lên
-- **Môi trường phát triển tích hợp (IDE):** Chẳng hạn như IntelliJ IDEA hoặc Eclipse
-- **Chuyên gia:** Để quản lý các phụ thuộc của dự án
+## Câu trả lời nhanh
+- **Mục đích chính là gì?** Để render tài liệu với phông chữ của bạn bằng GroupDocs.Viewer Java.  
+- **Phiên bản nào được yêu cầu?** GroupDocs.Viewer 25.2 (hoặc mới hơn).  
+- **Tôi có cần giấy phép không?** Có bản dùng thử miễn phí; giấy phép trả phí cần thiết cho môi trường sản xuất.  
+- **Tôi có thể nhúng custom fonts HTML không?** Có – chỉ cần chỉ định viewer tới thư mục chứa phông chữ của bạn.  
+- **Maven có phải là cách duy nhất để thêm thư viện không?** Maven được khuyến nghị, nhưng bạn cũng có thể dùng Gradle hoặc thêm JAR thủ công.
 
-Hiểu biết cơ bản về lập trình Java và quen thuộc với Maven sẽ rất có lợi.
+## “add custom font HTML” là gì?
+Thêm custom font HTML có nghĩa là chỉ dẫn cho engine render sử dụng các phông chữ mà bạn cung cấp, thay vì các phông chữ hệ thống mặc định, khi tạo ra đầu ra HTML. Điều này đảm bảo phong cách hình ảnh của tài liệu phù hợp với thương hiệu doanh nghiệp hoặc các hướng dẫn về khả năng truy cập.
 
-## Thiết lập GroupDocs.Viewer cho Java
+## Tại sao cấu hình font settings Java với GroupDocs.Viewer?
+Cấu hình font settings Java cho phép bạn kiểm soát hoàn toàn các tệp phông chữ được tìm kiếm, cách chúng được cache và cách các phông chữ dự phòng được áp dụng. Điều này giảm lỗi render, cải thiện hiệu năng và đảm bảo giao diện nhất quán trên các trình duyệt.
+
+## Yêu cầu trước
+- **Java Development Kit (JDK):** 8 hoặc mới hơn  
+- **IDE:** IntelliJ IDEA, Eclipse, hoặc bất kỳ trình soạn thảo nào tương thích với Java  
+- **Maven:** Để quản lý phụ thuộc  
+- **Custom font files:** Các tệp `.ttf` hoặc `.otf` được đặt trong một thư mục riêng  
+
+## Cài đặt GroupDocs.Viewer cho Java
 
 ### Thông tin cài đặt
 
-Bao gồm những nội dung sau vào Maven của bạn `pom.xml` tài liệu:
+Thêm repository và dependency của GroupDocs vào file `pom.xml` Maven của bạn:
 
 ```xml
 <repositories>
@@ -51,13 +71,13 @@ Bao gồm những nội dung sau vào Maven của bạn `pom.xml` tài liệu:
 </dependencies>
 ```
 
-### Mua lại giấy phép
+### Mua giấy phép
 
-GroupDocs cung cấp bản dùng thử miễn phí để khám phá các tính năng của họ, với các tùy chọn để có được giấy phép tạm thời hoặc mua giấy phép đầy đủ. Để thử nghiệm, hãy tải xuống phiên bản mới nhất từ [trang phát hành](https://releases.groupdocs.com/viewer/java/).
+GroupDocs cung cấp bản dùng thử miễn phí để khám phá các tính năng, với các tùy chọn để nhận giấy phép tạm thời hoặc mua giấy phép đầy đủ. Đối với mục đích thử nghiệm, tải phiên bản mới nhất từ [trang phát hành](https://releases.groupdocs.com/viewer/java/).
 
-#### Khởi tạo và thiết lập cơ bản
+#### Khởi tạo và Cài đặt Cơ bản
 
-Sau khi thêm GroupDocs.Viewer làm thành phần phụ thuộc, hãy khởi tạo nó trong dự án Java của bạn:
+Sau khi thêm GroupDocs.Viewer như một dependency, khởi tạo nó trong dự án Java của bạn:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -65,23 +85,21 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("sample.pdf")) {
-            // Thiết lập ban đầu và xem mã ở đây
+            // Initial setup and viewing code here
         }
     }
 }
 ```
 
-Ví dụ cơ bản này trình bày cách mở tài liệu bằng GroupDocs.Viewer.
+Ví dụ cơ bản này minh họa cách mở một tài liệu bằng GroupDocs.Viewer.
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
-### Hiển thị phông chữ tùy chỉnh trong GroupDocs.Viewer Java
+### Cách thêm custom font HTML trong GroupDocs.Viewer Java
 
-Trong phần này, chúng ta sẽ khám phá việc tích hợp phông chữ tùy chỉnh khi hiển thị tài liệu bằng GroupDocs.Viewer. Tính năng này vô cùng hữu ích để duy trì tính nhất quán của thương hiệu và tăng cường khả năng đọc.
+Trong phần này, chúng tôi sẽ hướng dẫn chi tiết các bước cần thiết để **add custom font HTML** khi render tài liệu.
 
 #### Nhập các gói cần thiết
-
-Bắt đầu bằng cách nhập các gói cần thiết:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,43 +109,35 @@ import com.groupdocs.viewer.fonts.FontSettings;
 import com.groupdocs.viewer.fonts.SearchOption;
 ```
 
-Những lần nhập này giúp xử lý phông chữ tùy chỉnh và tùy chọn xem tài liệu dễ dàng hơn.
+Các import này hỗ trợ việc xử lý phông chữ tùy chỉnh và các tùy chọn xem tài liệu.
 
-#### Thiết lập phông chữ tùy chỉnh
+#### Cài đặt phông chữ tùy chỉnh
 
-##### Xác định Đường dẫn đến Phông chữ Tùy chỉnh
-
-Tạo một biến chuỗi trỏ đến thư mục phông chữ tùy chỉnh của bạn:
+##### Xác định đường dẫn tới thư mục phông chữ của bạn
 
 ```java
 String fontPath = "/path/to/your/custom/fonts";
 ```
 
-Thay thế `"/path/to/your/custom/fonts"` với đường dẫn thực tế nơi phông chữ tùy chỉnh của bạn được lưu trữ. Thiết lập này đảm bảo GroupDocs.Viewer có thể định vị và sử dụng các phông chữ này trong quá trình kết xuất.
+Thay thế `"/path/to/your/custom/fonts"` bằng vị trí thực tế của các tệp `.ttf` hoặc `.otf` của bạn.
 
-##### Tạo một đối tượng FontSource
-
-Tiếp theo, khởi tạo một `FolderFontSource` đối tượng để trỏ đến thư mục này:
+##### Tạo đối tượng FontSource
 
 ```java
 FolderFontSource fontSource = new FolderFontSource(fontPath, SearchOption.TOP_FOLDER_ONLY);
 ```
 
-Các `SearchOption.TOP_FOLDER_ONLY` tham số hướng dẫn người xem chỉ tìm kiếm phông chữ trong thư mục cấp cao nhất được chỉ định.
+`SearchOption.TOP_FOLDER_ONLY` cho viewer biết chỉ tìm trong thư mục đã chỉ định, giúp tăng tốc quá trình tìm kiếm.
 
-##### Thiết lập nguồn phông chữ để hiển thị
-
-Bây giờ, hãy cấu hình GroupDocs.Viewer để sử dụng phông chữ tùy chỉnh của bạn:
+##### Cấu hình Font Settings Java
 
 ```java
 FontSettings.setFontSources(fontSource);
 ```
 
-Bước này đảm bảo rằng tất cả các thao tác kết xuất tài liệu tiếp theo sẽ sử dụng các phông chữ tùy chỉnh này.
+Dòng này **configures font settings Java** để mỗi lần render đều sử dụng các phông chữ bạn cung cấp.
 
 #### Xác định thư mục đầu ra và tùy chọn xem
-
-Thiết lập nơi lưu tài liệu đã kết xuất:
 
 ```java
 String outputPath = "/path/to/output/directory";
@@ -135,59 +145,62 @@ String pageFilePathFormat = String.format("%s/page_{0}.html", outputPath);
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-Thay thế `"/path/to/output/directory"` với đường dẫn đầu ra mong muốn của bạn. `HtmlViewOptions` lớp này giúp cấu hình cách hiển thị tài liệu sang định dạng HTML.
+Ở đây chúng tôi cũng minh họa cách **embed custom fonts HTML** bằng cách sử dụng `HtmlViewOptions.forEmbeddedResources`, cho phép nhúng các tệp phông chữ trực tiếp vào HTML được tạo.
 
 ### Mẹo khắc phục sự cố
-- Đảm bảo các tệp phông chữ có quyền đọc phù hợp.
-- Kiểm tra lại đường dẫn xem có lỗi đánh máy hoặc cấu trúc thư mục không đúng không.
-- Xác minh tính tương thích của phông chữ tùy chỉnh với loại tài liệu đang được xử lý.
+- Xác nhận rằng các tệp phông chữ có quyền đọc cho người dùng chạy tiến trình Java.  
+- Kiểm tra lại đường dẫn thư mục; thiếu dấu gạch chéo cuối cùng có thể gây lỗi “font not found”.  
+- Đảm bảo các phông chữ tương thích với loại tài liệu (ví dụ, TrueType cho PDF).  
 
-## Ứng dụng thực tế
+## Ứng dụng thực tiễn
 
-Có thể áp dụng việc hiển thị phông chữ tùy chỉnh trong nhiều trường hợp khác nhau:
-1. **Sự nhất quán của thương hiệu:** Sử dụng phông chữ đặc trưng của thương hiệu trên tất cả tài liệu để duy trì bản sắc thống nhất.
-2. **Cải thiện khả năng truy cập:** Chọn phông chữ giúp người dùng khiếm thị dễ đọc hơn.
-3. **Tài liệu pháp lý và tài chính:** Tăng cường độ rõ nét bằng cách sử dụng phông chữ nhấn mạnh các phần quan trọng.
+Render phông chữ tùy chỉnh có thể được áp dụng trong nhiều tình huống:
+1. **Nhất quán thương hiệu:** Sử dụng phông chữ riêng của thương hiệu trên tất cả các báo cáo được tạo.  
+2. **Cải thiện khả năng truy cập:** Chọn phông chữ dễ đọc giúp người dùng có khiếm thị.  
+3. **Tài liệu pháp lý & tài chính:** Làm nổi bật các phần quan trọng bằng phông chữ giúp tăng khả năng quét.
 
-Các khả năng tích hợp bao gồm kết nối GroupDocs.Viewer Java với các hệ thống quản lý tài liệu hoặc các ứng dụng doanh nghiệp tùy chỉnh, cho phép tùy chỉnh phông chữ liền mạch trên nhiều nền tảng.
+Bạn có thể tích hợp cách tiếp cận này với hệ thống quản lý tài liệu, cổng nội dung, hoặc bất kỳ ứng dụng doanh nghiệp nào cần cung cấp bản xem trước HTML của tài liệu.
 
-## Cân nhắc về hiệu suất
+## Xem xét về hiệu năng
 
-Khi xử lý khối lượng lớn tài liệu, hãy cân nhắc những mẹo sau để tối ưu hóa hiệu suất:
-- Giới hạn số lượng phông chữ tùy chỉnh để giảm chi phí tài nguyên.
-- Triển khai chiến lược lưu trữ đệm cho các tài liệu thường xuyên truy cập.
-- Theo dõi mức sử dụng bộ nhớ và điều chỉnh cài đặt JVM khi cần.
+Khi xử lý các lô lớn:
+- Giới hạn số lượng phông chữ tùy chỉnh để giảm sử dụng bộ nhớ.  
+- Cache các đối tượng `HtmlViewOptions` khi render nhiều tài liệu với cùng cài đặt.  
+- Giám sát heap JVM và điều chỉnh `-Xmx` khi cần để tránh lỗi OutOfMemory.
 
-Thực hiện các biện pháp tốt nhất trong quản lý bộ nhớ Java bằng cách đảm bảo rằng các tài nguyên được đóng đúng cách sau khi sử dụng. Cách tiếp cận này giảm thiểu rò rỉ bộ nhớ và tăng cường tính ổn định của ứng dụng.
+## Kết luận
 
-## Phần kết luận
+Bạn đã học cách **add custom font HTML** bằng GroupDocs.Viewer cho Java, cách **configure font settings Java**, và cách **embed custom fonts HTML** để render tài liệu nhất quán, có thương hiệu. Những kỹ thuật này cho phép bạn cung cấp các bản xem trước HTML được tinh chỉnh, dễ tiếp cận trong bất kỳ giải pháp nào dựa trên Java.
 
-Bây giờ bạn đã nắm vững các nguyên tắc cơ bản để triển khai kết xuất phông chữ tùy chỉnh bằng GroupDocs.Viewer cho Java. Bằng cách làm theo hướng dẫn này, bạn có thể cải thiện cách trình bày tài liệu để đáp ứng nhu cầu về thương hiệu hoặc khả năng đọc cụ thể.
+Tiếp theo, khám phá các khả năng bổ sung của GroupDocs.Viewer như đánh dấu bản quyền, hỗ trợ chú thích, và render PDF đa trang. Để biết chi tiết hơn, tham khảo [tài liệu chính thức](https://docs.groupdocs.com/viewer/java/).
 
-Bước tiếp theo, hãy cân nhắc khám phá các tính năng bổ sung do GroupDocs.Viewer cung cấp, chẳng hạn như hỗ trợ chú thích và hình mờ. Khám phá [tài liệu](https://docs.groupdocs.com/viewer/java/) để có những khả năng nâng cao hơn.
+## Câu hỏi thường gặp
 
-## Phần Câu hỏi thường gặp
+**H: Làm sao để tôi đảm bảo tính tương thích giữa phông chữ tùy chỉnh và các loại tài liệu khác nhau?**  
+Đ: Kiểm tra phông chữ của bạn với các tệp PDF, DOCX và PPTX để xác nhận việc render nhất quán trên các định dạng.
 
-**H: Làm thế nào để đảm bảo khả năng tương thích giữa phông chữ tùy chỉnh và các loại tài liệu khác nhau?**
-A: Kiểm tra phông chữ của bạn với nhiều định dạng tài liệu khác nhau để đảm bảo kết xuất nhất quán.
+**H: GroupDocs.Viewer có thể xử lý các script không phải Latin với phông chữ tùy chỉnh không?**  
+Đ: Có—khi phông chữ hỗ trợ Unicode phù hợp được đặt trong thư mục phông chữ, viewer sẽ render ký tự đúng.
 
-**H: GroupDocs.Viewer có thể xử lý các ký tự không phải chữ Latin bằng phông chữ tùy chỉnh không?**
-A: Có, nó hỗ trợ nhiều bộ ký tự khác nhau khi được cấu hình đúng.
+**H: Các tùy chọn giấy phép nào có sẵn cho việc sử dụng trong môi trường sản xuất?**  
+Đ: Bạn có thể bắt đầu với bản dùng thử miễn phí, sau đó nâng cấp lên giấy phép tạm thời hoặc vĩnh viễn qua [trang mua hàng](https://purchase.groupdocs.com/buy).
 
-**H: Có những tùy chọn cấp phép nào để sử dụng GroupDocs.Viewer trong sản xuất?**
-A: Các tùy chọn bao gồm dùng thử miễn phí, giấy phép tạm thời và mua vĩnh viễn. Để biết chi tiết, hãy truy cập [trang mua hàng](https://purchase.groupdocs.com/buy).
+**H: Làm sao để khắc phục vấn đề phông chữ bị thiếu?**  
+Đ: Kiểm tra quyền tệp, xác nhận đường dẫn, và đảm bảo các tệp phông chữ không bị hỏng. Log của viewer sẽ chỉ ra phông chữ nào không thể tải.
 
-**H: Làm thế nào để khắc phục sự cố hiển thị phông chữ trong GroupDocs.Viewer?**
-A: Kiểm tra quyền, đường dẫn và cài đặt tương thích. Tham khảo tài liệu để biết thông báo lỗi cụ thể.
-
-**H: Có thể sử dụng phông chữ tùy chỉnh cùng với phông chữ mặc định như một giải pháp dự phòng không?**
-A: Có, bạn có thể cấu hình nhiều nguồn phông chữ trong đó phông chữ mặc định đóng vai trò là bản sao lưu nếu phông chữ tùy chỉnh không khả dụng.
+**H: Tôi có thể quay lại phông chữ mặc định nếu phông chữ tùy chỉnh không khả dụng không?**  
+Đ: Có—bằng cách thêm nhiều đối tượng `FontSource`, bạn có thể ưu tiên phông chữ tùy chỉnh trong khi vẫn giữ các phông chữ hệ thống làm dự phòng.
 
 ## Tài nguyên
 
-Để khám phá thêm:
-- **Tài liệu:** [Trình xem GroupDocs Tài liệu Java](https://docs.groupdocs.com/viewer/java/)
-- **Tài liệu tham khảo API:** [API của GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Tải xuống:** [Bản phát hành mới nhất](https://releases.groupdocs.com/viewer/java/)
-- **Tùy chọn mua và dùng thử:** [Trang mua hàng của GroupDocs](https://purchase.groupdocs.com/buy) & [Dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)
-- **Ủng hộ:** Để được trợ giúp thêm, hãy truy cập [Diễn đàn GroupDocs](
+- **Documentation:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)  
+- **Download:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase and Trial Options:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)  
+- **Support:** For additional help, visit the [GroupDocs Forum](
+
+---
+
+**Cập nhật lần cuối:** 2026-02-10  
+**Kiểm tra với:** GroupDocs.Viewer 25.2 cho Java  
+**Tác giả:** GroupDocs
