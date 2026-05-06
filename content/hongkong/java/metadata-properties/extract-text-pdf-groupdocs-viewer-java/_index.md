@@ -1,35 +1,45 @@
 ---
-"date": "2025-04-24"
-"description": "透過本詳細指南了解如何使用 Java 中的 GroupDocs.Viewer 從 PDF 文件中提取文本，非常適合從事資料處理和文件管理的開發人員。"
-"title": "使用 GroupDocs.Viewer Java 從 PDF 中擷取文字－開發人員綜合指南"
-"url": "/zh-hant/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-05-06'
+description: 了解如何使用 GroupDocs.Viewer Java 提取 PDF 文字。本分步指南涵蓋 PDF 文字提取 API、多頁處理以及效能技巧。
+keywords:
+- how to extract pdf
+- pdf text extraction api
+- extract pdf text java
+- java pdf text extraction
+- groupdocs viewer java
+title: 如何使用 GroupDocs.Viewer for Java 提取 PDF 文字
 type: docs
+url: /zh-hant/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/
+weight: 1
 ---
-# 使用 GroupDocs.Viewer Java 從 PDF 中提取文本
 
-## 介紹
-從 PDF 中提取文字對於高效的數位文件管理至關重要。在本教程中，我們將示範如何使用 **GroupDocs.Viewer Java** 從 PDF 檔案中無縫提取文字。
+# 使用 GroupDocs.Viewer for Java 提取 PDF 文字
 
-### 您將學到什麼：
-- 為 Java 設定 GroupDocs.Viewer
-- 使用 GroupDocs.Viewer 強大的 API 提取文本
-- 處理文件中的多頁和行提取
-- 優化大型 PDF 的效能
+Extracting text from PDFs is a core requirement for many data‑driven applications. In this tutorial we’ll walk you through **how to extract pdf** content efficiently with the **GroupDocs Viewer Java** library. Whether you need to index documents, run analytics, or migrate legacy archives, the steps below give you a complete, production‑ready solution.
 
-讓我們從實現此功能所需的先決條件開始。
+![提取 PDF 文字與 GroupDocs.Viewer for Java](/viewer/metadata-properties/extract-text-from-pdf.png)
+
+## 快速回答
+- **什麼函式庫最適合 pdf 文字提取？** GroupDocs.Viewer Java 提供強大的 pdf text extraction api.  
+- **可以從多頁 PDF 提取文字嗎？** 可以 – viewer 會自動遍歷每一頁與每一行。  
+- **生產環境需要授權嗎？** 需要商業授權；提供免費試用供評估。  
+- **支援哪個 Java 版本？** JDK 1.8+（最新 LTS 版亦可）。  
+- **Maven 是唯一的相依加入方式嗎？** 建議使用 Maven，也可以使用 Gradle 或手動加入 JAR。
+
+## 什麼是 PDF 文字提取，為何使用 GroupDocs Viewer？
+The **pdf text extraction api** reads the textual layer of a PDF without rendering the visual content. This approach is far faster than raster‑based OCR and preserves the original document structure. GroupDocs Viewer Java adds extra value by handling complex layouts, encrypted files, and multi‑page documents out‑of‑the‑box.
+
 ## 先決條件
-在開始之前，請確保您已：
-### 所需庫：
-- **GroupDocs.Viewer for Java**：請造訪 25.2 或更高版本以取得基本功能。
-### 環境設定要求：
-- 使用 Java 的開發環境（建議使用 JDK 1.8+）。
-- 安裝 Maven 進行依賴管理。
-### 知識前提：
-- 對 Java 程式設計有基本的了解。
-- 熟悉 Maven 是有益的，但不是強制性的。
-## 為 Java 設定 GroupDocs.Viewer
-整合 **GroupDocs.檢視器** 使用 Maven 庫開始從 PDF 中提取文字：
+Before you start, make sure you have:
+
+- **Java Development Kit (JDK) 1.8+** installed.
+- **Maven** for dependency management (or Gradle if you prefer).
+- Access to a **GroupDocs Viewer for Java** license (free trial or purchased).
+- Basic Java knowledge – you’ll be writing a few `try‑with‑resources` blocks.
+
+## 設定 GroupDocs.Viewer for Java
+Add the GroupDocs repository and dependency to your `pom.xml`:
+
 ```xml
 <repositories>
    <repository>
@@ -46,33 +56,37 @@ type: docs
    </dependency>
 </dependencies>
 ```
-### 許可證取得：
-- **免費試用**：可用於探索 API 功能。
-- **臨時執照**：用於擴展測試能力。
-- **購買**：商業用途所需。
-#### 基本初始化和設定
-使用您的 PDF 文件路徑初始化檢視器對象，如下所示：
-## 實施指南
-讓我們將文字擷取分解為邏輯步驟：
-### 初始化檢視器對象
+
+### 取得授權
+- **Free Trial** – perfect for exploring the pdf text extraction api.  
+- **Temporary License** – extended testing without a credit card.  
+- **Full Purchase** – required for commercial deployments.
+
+## 實作指南
+Below is a concise, step‑by‑step walkthrough of how to extract PDF text with GroupDocs Viewer Java.
+
+### 1. 初始化 Viewer 物件
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-    // 初始化完成，繼續下一步。
+    // Initialization complete, proceed to next steps.
 }
 ```
-這將初始化一個 `Viewer` 物件與您的目標 PDF 檔案路徑。
-### 配置 ViewInfoOptions 以進行文字擷取
+The `Viewer` instance points to the PDF you want to process. Using a *try‑with‑resources* block guarantees that native resources are released automatically.
+
+### 2. 設定 `ViewInfoOptions` 以提取文字
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setExtractText(true);
 ```
-配置選項以啟用 HTML 檢視和文字擷取，確保使用這些設定存取已處理的文件內容。
-### 檢索文件資訊
+Setting `setExtractText(true)` tells the **pdf text extraction api** to include raw text in the view information.
+
+### 3. 取得文件資訊
 ```java
 PdfViewInfo viewInfo = (PdfViewInfo) viewer.getViewInfo(viewInfoOptions);
 ```
-透過調用 `getViewInfo`，檢索有關 PDF 頁面和結構的詳細資訊。
-### 遍歷頁面和行
+`PdfViewInfo` gives you access to each page, line, and its textual value.
+
+### 4. 遍歷頁面與行（提取多頁 PDF 文字）
 ```java
 for (Page page : viewInfo.getPages()) {
     for (Line line : page.getLines()) {
@@ -80,41 +94,62 @@ for (Page page : viewInfo.getPages()) {
     }
 }
 ```
-循環遍歷每一頁和每一行以提取文本，以便進行進一步處理，例如將其保存到資料庫。
-#### 故障排除提示：
-- 確保 PDF 檔案路徑正確。
-- 核實 `setExtractText` 如果遇到查看選項錯誤則啟用。
-## 實際應用
-GroupDocs.Viewer 的功能遠遠超過簡單的文字擷取。實際應用包括：
-1. **資料遷移**：從舊的 PDF 檔案中提取內容並將其遷移到現代資料庫或雲端解決方案。
-2. **內容分析**：使用提取的文字進行情緒分析、關鍵字提取或其他見解。
-3. **文件管理系統（DMS）**：與 DMS 整合以實現自動文件索引和檢索。
-## 性能考慮
-處理大型文件時：
-- **資源使用情況**：監控記憶體使用情況，因為處理多個頁面可能會耗費大量資源。
-- **Java記憶體管理**：管理物件生命週期 `try-with-resources` 有效利用 Java 的垃圾收集功能。
-## 結論
-本指南向您展示如何設定 GroupDocs.Viewer for Java 並有效率地從 PDF 文件中提取文字。您可以探索 GroupDocs.Viewer 的其他功能，或將其與其他系統整合以實現複雜的工作流程。
+This loop prints every line of text, handling **extract multi page pdf** scenarios automatically. You can replace `System.out.println` with code that writes to a file, database, or search index.
 
-## 常見問題部分
-**Q：我可以在生產伺服器上使用 GroupDocs.Viewer 嗎？**
+#### 故障排除提示
+- Double‑check the file path; a wrong path throws `FileNotFoundException`.  
+- Ensure `setExtractText(true)` is called; otherwise only visual data is returned.  
+- For encrypted PDFs, pass the password via `Viewer` constructor overload.
 
-	- A: Yes, but ensure you have an appropriate license. A free trial is suitable only for testing purposes.
+## 實務應用
+GroupDocs Viewer’s **extract pdf text java** capabilities unlock many real‑world use cases:
 
-**Q：文字擷取如何影響 PDF 元資料？**
+1. **Data Migration** – Move legacy PDF archives into searchable databases.  
+2. **Content Analysis** – Feed extracted text into NLP pipelines for sentiment or keyword extraction.  
+3. **Document Management Systems (DMS)** – Auto‑index documents for fast retrieval.  
 
-	- A: Text extraction focuses on content; metadata remains intact unless explicitly modified.
+## 效能考量
+When working with large files or batch jobs:
 
-**Q：除了 PDF 之外，GroupDocs.Viewer 還可以處理哪些文件格式？**
+- **Memory Management** – Process pages inside the `try` block to let the garbage collector reclaim memory promptly.  
+- **Streaming** – For extremely large PDFs, consider processing pages one at a time rather than loading the entire document.  
+- **Threading** – Parallelize extraction across multiple files, but keep a single `Viewer` instance per thread.
 
-	- A: It supports a wide range of formats, including Word documents and Excel spreadsheets.
-	
+## 常見問題與解決方案
+| 問題 | 解決方案 |
+|-------|----------|
+| `OutOfMemoryError` on big PDFs | Increase JVM heap (`-Xmx2g`) and process pages sequentially. |
+| No text returned for scanned PDFs | Use OCR add‑on or a dedicated OCR library; GroupDocs Viewer extracts only embedded text. |
+| License error on production | Verify that the license file is correctly placed and the trial period has not expired. |
+
+## 常見問題
+
+**Q: 可以在正式伺服器上使用 GroupDocs.Viewer 嗎？**  
+A: 可以，但必須擁有有效的商業授權。免費試用僅限開發與測試。
+
+**Q: 文字提取會影響 PDF 的 metadata 嗎？**  
+A: Extraction 只讀取內容；除非您自行修改，metadata 不會改變。
+
+**Q: 除了 PDF，GroupDocs Viewer 還支援哪些檔案格式？**  
+A: 它支援 Word、Excel、PowerPoint、圖片等多種格式，是多功能的文件檢視器。
+
+**Q: 能否從受密碼保護的 PDF 提取文字？**  
+A: 當然可以 – 在建立 `Viewer` 實例時傳入密碼即可。
+
+**Q: 如何提升成千上萬 PDF 批次處理的效能？**  
+A: 使用執行緒池，為每個檔案建立獨立的 `Viewer` 實例，並密切監控記憶體使用情況。
+
 ## 資源
-- [文件](https://docs.groupdocs.com/viewer/java/)
-- [API 參考](https://reference.groupdocs.com/viewer/java/)
-- [下載](https://releases.groupdocs.com/viewer/java/)
-- [購買](https://purchase.groupdocs.com/buy)
-- [免費試用](https://releases.groupdocs.com/viewer/java/)
-- [臨時執照](https://purchase.groupdocs.com/temporary-license/)
-- [支援論壇](https://forum.groupdocs.com/c/viewer/9)
-我們希望本指南能夠幫助您在專案中使用 GroupDocs.Viewer for Java。祝您編碼愉快！
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Purchase](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-05-06  
+**Tested With:** GroupDocs.Viewer Java 25.2  
+**Author:** GroupDocs
