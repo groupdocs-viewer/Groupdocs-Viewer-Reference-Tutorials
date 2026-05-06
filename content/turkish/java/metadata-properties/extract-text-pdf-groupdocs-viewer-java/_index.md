@@ -1,35 +1,45 @@
 ---
-"date": "2025-04-24"
-"description": "Veri işleme ve belge yönetimi üzerinde çalışan geliştiriciler için mükemmel olan bu ayrıntılı kılavuzla Java'da GroupDocs.Viewer kullanarak PDF dosyalarından metin çıkarmayı öğrenin."
-"title": "GroupDocs.Viewer Java&#58;yı kullanarak PDF'den Metin Çıkarın Geliştiriciler için Kapsamlı Bir Kılavuz"
-"url": "/tr/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-05-06'
+description: GroupDocs.Viewer Java ile PDF metnini nasıl çıkaracağınızı öğrenin. Bu
+  adım adım kılavuz, PDF metin çıkarma API'sini, çok sayfalı işleme ve performans
+  ipuçlarını kapsar.
+keywords:
+- how to extract pdf
+- pdf text extraction api
+- extract pdf text java
+- java pdf text extraction
+- groupdocs viewer java
+title: GroupDocs.Viewer for Java ile PDF Metni Nasıl Çıkarılır
 type: docs
+url: /tr/java/metadata-properties/extract-text-pdf-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer Java kullanarak PDF'den Metin Çıkarma
 
-## giriiş
-PDF'lerden metin çıkarmak, verimli dijital belge yönetimi için çok önemlidir. Bu kapsamlı eğitimde, nasıl kullanılacağını göstereceğiz **GrupDokümanları.Görüntüleyici Java** PDF dosyalarından metni sorunsuz bir şekilde çıkarmak için.
+# GroupDocs.Viewer for Java Kullanarak PDF Metnini Çıkarma
 
-### Ne Öğreneceksiniz:
-- Java için GroupDocs.Viewer Kurulumu
-- GroupDocs.Viewer'ın güçlü API'sini kullanarak metni ayıklayın
-- Belgeler içinde çok sayfalı ve satırlı çıkarma işlemlerini gerçekleştirin
-- Büyük PDF'ler için performansı optimize edin
+PDF'lerden metin çıkarmak, birçok veri odaklı uygulama için temel bir gereksinimdir. Bu öğreticide, **GroupDocs Viewer Java** kütüphanesiyle **pdf içeriğini nasıl etkili bir şekilde çıkaracağınızı** adım adım göstereceğiz. Belgeleri indekslemeniz, analiz çalıştırmanız veya eski arşivleri taşımanız gerekse, aşağıdaki adımlar size eksiksiz, üretim‑hazır bir çözüm sunar.
 
-Bu özelliğin uygulanabilmesi için gereken ön koşullarla başlayalım.
-## Ön koşullar
-Başlamadan önce şunlara sahip olduğunuzdan emin olun:
-### Gerekli Kütüphaneler:
-- **Java için GroupDocs.Viewer**: Temel işlevler için 25.2 veya sonraki sürüme erişin.
-### Çevre Kurulum Gereksinimleri:
-- Java ile geliştirme ortamı (JDK 1.8+ önerilir).
-- Bağımlılık yönetimi için Maven kuruldu.
-### Bilgi Ön Koşulları:
-- Java programlamanın temel bilgisi.
-- Maven'a aşina olmak faydalıdır ancak zorunlu değildir.
-## Java için GroupDocs.Viewer Kurulumu
-Entegre edin **GrupDokümanları.Görüntüleyici** PDF'lerden metin çıkarmaya başlamak için Maven kullanan kütüphane:
+![GroupDocs.Viewer for Java ile PDF'ten Metin Çıkarma](/viewer/metadata-properties/extract-text-from-pdf.png)
+
+## Hızlı Yanıtlar
+- **pdf metin çıkarma için en iyi kütüphane hangisidir?** GroupDocs.Viewer Java, sağlam bir pdf metin çıkarma api'si sağlar.  
+- **Çok sayfalı PDF'lerden metin çıkarabilir miyim?** Evet – görüntüleyici otomatik olarak her sayfa ve satırı yineleme yapar.  
+- **Üretim için lisansa ihtiyacım var mı?** Ticari bir lisans gereklidir; değerlendirme için ücretsiz deneme mevcuttur.  
+- **Hangi Java sürümü destekleniyor?** JDK 1.8+ (en son LTS sürümleri de çalışır).  
+- **Bağımlılığı eklemenin tek yolu Maven mi?** Maven önerilir, ancak Gradle veya manuel JAR eklemesi de kullanabilirsiniz.
+
+## PDF Metin Çıkarma Nedir ve Neden GroupDocs Viewer Kullanılır?
+**pdf text extraction api** bir PDF'in görsel içeriğini render etmeden metinsel katmanını okur. Bu yaklaşım raster‑tabanlı OCR'den çok daha hızlıdır ve orijinal belge yapısını korur. GroupDocs Viewer Java, karmaşık düzenleri, şifreli dosyaları ve çok sayfalı belgeleri kutudan çıkar çıkmaz işleyerek ekstra değer katar.
+
+## Önkoşullar
+- **Java Development Kit (JDK) 1.8+** yüklü olmalıdır.  
+- **Maven**, bağımlılık yönetimi için (isteğe bağlı olarak Gradle da kullanılabilir).  
+- **GroupDocs Viewer for Java** lisansına erişim (ücretsiz deneme veya satın alınmış).  
+- Temel Java bilgisi – birkaç `try‑with‑resources` bloğu yazacaksınız.
+
+## GroupDocs.Viewer for Java'ı Kurma
+Add the GroupDocs repository and dependency to your `pom.xml`:
+
 ```xml
 <repositories>
    <repository>
@@ -46,33 +56,37 @@ Entegre edin **GrupDokümanları.Görüntüleyici** PDF'lerden metin çıkarmaya
    </dependency>
 </dependencies>
 ```
-### Lisans Edinimi:
-- **Ücretsiz Deneme**: API özelliklerini keşfetmeye hazır.
-- **Geçici Lisans**: Genişletilmiş test olanakları için.
-- **Satın almak**: Ticari kullanım için gereklidir.
-#### Temel Başlatma ve Kurulum
-Viewer nesnesini PDF belgenizin yoluyla aşağıdaki şekilde başlatın:
+
+### Lisans Alımı
+- **Ücretsiz Deneme** – pdf text extraction api'yi keşfetmek için mükemmeldir.  
+- **Geçici Lisans** – kredi kartı olmadan genişletilmiş test imkanı.  
+- **Tam Satın Alma** – ticari dağıtımlar için gereklidir.
+
 ## Uygulama Kılavuzu
-Metin çıkarma işlemini mantıksal adımlara bölelim:
-### Görüntüleyici Nesnesini Başlatma
+Aşağıda, GroupDocs Viewer Java ile PDF metni nasıl çıkarılacağını adım adım gösteren özlü bir rehber bulacaksınız.
+
+### 1. Viewer Nesnesini Başlatma
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-    // Başlatma tamamlandı, sonraki adımlara geçin.
+    // Initialization complete, proceed to next steps.
 }
 ```
-Bu bir başlatır `Viewer` Hedef PDF dosya yolunuzla nesneyi seçin.
-### ViewInfoOptions'ı Metin Çıkarımı için Yapılandırma
+`Viewer` örneği işlemek istediğiniz PDF'ye işaret eder. *try‑with‑resources* bloğu kullanmak, yerel kaynakların otomatik olarak serbest bırakılmasını garanti eder.
+
+### 2. Metin Çıkarma için `ViewInfoOptions`'ı Yapılandırma
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setExtractText(true);
 ```
-İşlenen belge içeriğine bu ayarlarla erişildiğinden emin olarak HTML görüntüleme ve metin çıkarmayı etkinleştirmek için seçenekleri yapılandırın.
-### Belge Bilgilerinin Alınması
+`setExtractText(true)` ayarı, **pdf text extraction api**'ye görünüm bilgilerinde ham metni eklemesini söyler.
+
+### 3. Belge Bilgilerini Almak
 ```java
 PdfViewInfo viewInfo = (PdfViewInfo) viewer.getViewInfo(viewInfoOptions);
 ```
-Arayarak `getViewInfo`, PDF'in sayfaları ve yapısı hakkında detaylı bilgi alabilirsiniz.
-### Sayfalar ve Satırlar Arasında Yineleme
+`PdfViewInfo`, her sayfaya, satıra ve onun metinsel değerine erişim sağlar.
+
+### 4. Sayfalar ve Satırlar Üzerinde Döngü (Çok Sayfalı PDF Metni Çıkarma)
 ```java
 for (Page page : viewInfo.getPages()) {
     for (Line line : page.getLines()) {
@@ -80,41 +94,62 @@ for (Page page : viewInfo.getPages()) {
     }
 }
 ```
-Metni çıkarmak için her sayfa ve satırda dolaşın ve daha fazla işleme (örneğin, veritabanına kaydetme) izin verin.
-#### Sorun Giderme İpuçları:
-- PDF dosya yolunun doğru olduğundan emin olun.
-- Doğrulamak `setExtractText` Görüntüleme seçeneği hatalarıyla karşılaşıldığında etkinleştirilir.
+Bu döngü, her metin satırını yazdırır ve **extract multi page pdf** senaryolarını otomatik olarak işler. `System.out.println` ifadesini bir dosyaya, veritabanına veya arama indeksine yazan kodla değiştirebilirsiniz.
+
+#### Sorun Giderme İpuçları
+- Dosya yolunu iki kez kontrol edin; yanlış bir yol `FileNotFoundException` hatasına neden olur.  
+- `setExtractText(true)` çağrıldığından emin olun; aksi takdirde yalnızca görsel veri döndürülür.  
+- Şifreli PDF'ler için, şifreyi `Viewer` yapıcı aşırı yüklemesiyle geçirin.
+
 ## Pratik Uygulamalar
-GroupDocs.Viewer'ın yetenekleri basit metin çıkarmanın çok ötesine uzanır. Gerçek dünya uygulamaları şunları içerir:
-1. **Veri Göçü**: İçeriği eski PDF arşivlerinden çıkarın ve modern veritabanlarına veya bulut çözümlerine taşıyın.
-2. **İçerik Analizi**: Duygu analizi, anahtar kelime çıkarma veya diğer içgörüler için çıkarılan metni kullanın.
-3. **Belge Yönetim Sistemleri (DMS)**:Otomatik belge indeksleme ve alma için DMS ile entegre edin.
-## Performans Hususları
-Büyük belgelerle çalışırken:
-- **Kaynak Kullanımı**: Birden fazla sayfanın işlenmesi kaynak yoğun olabileceğinden bellek kullanımını izleyin.
-- **Java Bellek Yönetimi**: Nesne yaşam döngülerini şu şekilde yönetin: `try-with-resources` Java'nın çöp toplama özelliğini etkili bir şekilde kullanmak için bloklayın.
-## Çözüm
-Bu kılavuz size GroupDocs.Viewer for Java'yı nasıl kuracağınızı ve PDF dosyalarından metni nasıl verimli bir şekilde çıkaracağınızı gösterdi. GroupDocs.Viewer'ın diğer özelliklerini keşfedin veya karmaşık iş akışları için ek sistemlerle entegre edin.
+GroupDocs Viewer'ın **extract pdf text java** yetenekleri birçok gerçek dünya kullanım senaryosunun kilidini açar:
 
-## SSS Bölümü
-**S: GroupDocs.Viewer'ı üretim sunucusunda kullanabilir miyim?**
+1. **Veri Göçü** – Eski PDF arşivlerini aranabilir veritabanlarına taşıma.  
+2. **İçerik Analizi** – Çıkarılan metni duygu analizi veya anahtar kelime çıkarımı için NLP boru hatlarına besleme.  
+3. **Belge Yönetim Sistemleri (DMS)** – Hızlı erişim için belgeleri otomatik indeksleme.  
 
-	- A: Yes, but ensure you have an appropriate license. A free trial is suitable only for testing purposes.
+## Performans Düşünceleri
+Büyük dosyalar veya toplu işler ile çalışırken:
 
-**S: Metin çıkarma işlemi PDF meta verilerini nasıl etkiler?**
+- **Bellek Yönetimi** – Sayfaları `try` bloğu içinde işleyerek çöp toplayıcının belleği hızlıca geri kazanmasını sağlayın.  
+- **Akış** – Aşırı büyük PDF'ler için, tüm belgeyi yüklemek yerine sayfaları tek tek işlemeyi düşünün.  
+- **İş Parçacığı** – Çıkarma işlemini birden çok dosya arasında paralelleştirin, ancak her iş parçacığı için tek bir `Viewer` örneği tutun.
 
-	- A: Text extraction focuses on content; metadata remains intact unless explicitly modified.
+## Yaygın Sorunlar ve Çözümler
+| Sorun | Çözüm |
+|-------|----------|
+| `OutOfMemoryError` büyük PDF'lerde | JVM yığın boyutunu (`-Xmx2g`) artırın ve sayfaları sıralı işleyin. |
+| Tarama yapılan PDF'lerde metin döndürülmüyor | OCR eklentisi veya özel bir OCR kütüphanesi kullanın; GroupDocs Viewer yalnızca gömülü metni çıkarır. |
+| Üretimde lisans hatası | Lisans dosyasının doğru konumlandırıldığını ve deneme süresinin sona ermediğini doğrulayın. |
 
-**S: GroupDocs.Viewer PDF'lerin yanı sıra hangi dosya formatlarını işleyebilir?**
+## Sıkça Sorulan Sorular
 
-	- A: It supports a wide range of formats, including Word documents and Excel spreadsheets.
-	
+**Q: GroupDocs.Viewer'ı üretim sunucusunda kullanabilir miyim?**  
+A: Evet, ancak geçerli bir ticari lisansa sahip olmanız gerekir. Ücretsiz deneme geliştirme ve test ile sınırlıdır.
+
+**Q: Metin çıkarma PDF meta verilerini nasıl etkiler?**  
+A: Çıkarma sadece içeriği okur; meta veriler açıkça değiştirilmediği sürece değişmez.
+
+**Q: GroupDocs Viewer PDF dışındaki hangi dosya formatlarını destekler?**  
+A: Word, Excel, PowerPoint, görüntüler ve daha birçok formatı işleyerek çok yönlü bir belge görüntüleyicisi olur.
+
+**Q: Şifre korumalı PDF'lerden metin çıkarma yolu var mı?**  
+A: Kesinlikle – `Viewer` örneğini oluştururken şifreyi geçirin.
+
+**Q: Binlerce PDF'in toplu işleme performansını nasıl artırabilirim?**  
+A: Bir iş parçacığı havuzu kullanın, her dosyayı kendi `Viewer` örneğinde işleyin ve bellek kullanımını yakından izleyin.
+
 ## Kaynaklar
-- [Belgeleme](https://docs.groupdocs.com/viewer/java/)
+- [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [İndirmek](https://releases.groupdocs.com/viewer/java/)
-- [Satın almak](https://purchase.groupdocs.com/buy)
+- [İndirme](https://releases.groupdocs.com/viewer/java/)
+- [Satın Alma](https://purchase.groupdocs.com/buy)
 - [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
 - [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
 - [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
-Bu kılavuzun projelerinizde GroupDocs.Viewer for Java'yı kullanmanıza yardımcı olmasını umuyoruz. İyi kodlamalar!
+
+---
+
+**Son Güncelleme:** 2026-05-06  
+**Test Edilen:** GroupDocs.Viewer Java 25.2  
+**Yazar:** GroupDocs

@@ -1,35 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Dễ dàng chuyển đổi các tệp Excel 2003 XML thành nhiều định dạng bằng GroupDocs.Viewer for Java. Tìm hiểu cách tự động chuyển đổi sang HTML, JPG, PNG và PDF trong hướng dẫn chi tiết này."
-"title": "Hướng dẫn toàn diện&#58; Chuyển đổi Excel 2003 XML sang HTML/JPG/PNG/PDF bằng GroupDocs.Viewer Java"
-"url": "/vi/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/"
-"weight": 1
+date: '2026-05-06'
+description: Tìm hiểu cách chuyển đổi Excel 2003 XML sang PDF (excel xml to pdf) và
+  các định dạng khác bằng GroupDocs Viewer cho Java. Hướng dẫn từng bước để xuất ra
+  HTML, JPG, PNG và PDF.
+keywords:
+- excel xml to pdf
+- how to convert excel
+- groupdocs viewer java
+title: 'excel xml sang pdf: Chuyển đổi XML 2003 với GroupDocs Viewer'
 type: docs
+url: /vi/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/
+weight: 1
 ---
-# Hướng dẫn toàn diện: Chuyển đổi Excel 2003 XML sang HTML/JPG/PNG/PDF bằng GroupDocs.Viewer Java
 
-## Giới thiệu
-Bạn đang tìm kiếm một cách hiệu quả để chuyển đổi các tệp Excel 2003 XML của mình sang các định dạng khác nhau như HTML, JPG, PNG hoặc PDF? Hướng dẫn này sẽ trình bày cách kết xuất liền mạch các tệp này bằng GroupDocs.Viewer for Java. Tự động hóa quy trình chuyển đổi này để tiết kiệm thời gian và đảm bảo dữ liệu của bạn được trình bày theo định dạng yêu cầu.
+# excel xml sang pdf: Chuyển đổi XML 2003 với GroupDocs Viewer
 
-Trong hướng dẫn này, bạn sẽ học được:
-- Cách chuyển đổi các tệp XML của Excel 2003 thành HTML
-- Chuyển đổi chúng thành hình ảnh JPG
-- Chuyển đổi chúng sang định dạng PNG
-- Tạo tài liệu PDF từ Excel 2003 XML
+Chuyển đổi các tệp **Excel 2003 XML** sang PDF (excel xml to pdf) và các định dạng phổ biến khác là nhu cầu thường gặp khi bạn muốn chia sẻ bảng tính với người dùng không cài đặt Excel. Trong hướng dẫn này, bạn sẽ thấy cách GroupDocs.Viewer cho Java làm cho quá trình này trở nên dễ dàng, cho phép tự động chuyển đổi sang HTML, JPG, PNG và PDF chỉ với vài dòng mã.
 
-Đến cuối hướng dẫn này, bạn sẽ thành thạo sử dụng GroupDocs.Viewer Java cho các chuyển đổi này. Hãy bắt đầu thôi!
+![Chuyển đổi Excel 2003 XML sang HTML/JPG/PNG/PDF với GroupDocs.Viewer cho Java](/viewer/rendering-basics/convert-excel-2003-xml-to-html-jpg-png-pdf.png)
 
-### Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo rằng:
-- **Thư viện & Phụ thuộc**: Bạn đã cài đặt GroupDocs.Viewer cho Java. Chúng tôi sẽ hướng dẫn cài đặt bằng Maven.
-- **Thiết lập môi trường**: Hướng dẫn này giả định bạn có kiến thức cơ bản về các dự án Java và Maven.
-- **Yêu cầu về kiến thức**:Mặc dù có lợi, nhưng không nhất thiết phải có kinh nghiệm lập trình Java trước đó.
+## Câu trả lời nhanh
+- **Các định dạng nào tôi có thể xuất Excel 2003 XML sang?** HTML, JPG, PNG, và PDF.  
+- **Thư viện nào thực hiện việc chuyển đổi?** GroupDocs.Viewer for Java.  
+- **Tôi có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?** Có, cần một giấy phép GroupDocs hợp lệ.  
+- **Tôi có thể chạy chuyển đổi trong dự án Maven không?** Chắc chắn – chỉ cần thêm repository và dependency của GroupDocs.  
+- **Quá trình này có phù hợp cho tự động hoá không?** Có, API được thiết kế cho các kịch bản batch và server‑side.
 
-## Thiết lập GroupDocs.Viewer cho Java
-Để bắt đầu chuyển đổi tệp, hãy thiết lập GroupDocs.Viewer trong dự án Java của bạn bằng Maven:
+## “excel xml to pdf” là gì?
+Cụm từ *excel xml to pdf* đề cập đến việc chuyển đổi một bảng tính Excel 2003 XML thành tài liệu PDF. PDF là lý tưởng cho việc phân phối chỉ đọc, trong khi HTML, JPG và PNG cung cấp các lựa chọn thay thế dạng web hoặc hình ảnh.
 
-### Thiết lập Maven
-Thêm nội dung sau vào `pom.xml` tài liệu:
+## Tại sao nên sử dụng GroupDocs Viewer Java cho nhiệm vụ này?
+- **API duy nhất cho nhiều đầu ra** – một thư viện, nhiều định dạng.  
+- **Kết xuất độ trung thực cao** – giữ nguyên kiểu ô, công thức và bố cục.  
+- **Tích hợp dễ dàng** – hoạt động với Maven, Gradle hoặc JAR thuần.  
+- **Sẵn sàng cho tự động hoá** – hoàn hảo cho việc tạo báo cáo theo lịch hoặc chuyển đổi nhanh trong các dịch vụ web.
+
+## Yêu cầu trước
+- Java 8 hoặc cao hơn đã được cài đặt.  
+- Maven để quản lý phụ thuộc.  
+- Giấy phép GroupDocs.Viewer cho Java hợp lệ (bản dùng thử hoặc mua).  
+
+## Cài đặt GroupDocs.Viewer cho Java
+Đầu tiên, thêm repository và dependency của GroupDocs vào tệp `pom.xml` của bạn.
 
 ```xml
 <repositories>
@@ -49,15 +61,15 @@ Thêm nội dung sau vào `pom.xml` tài liệu:
 </dependencies>
 ```
 
-### Mua lại giấy phép
-Để sử dụng GroupDocs.Viewer mà không bị hạn chế, hãy xin giấy phép:
-- **Dùng thử miễn phí**Kiểm tra tính năng bằng phiên bản dùng thử.
-- **Giấy phép tạm thời**: Yêu cầu gia hạn thời gian đánh giá.
-- **Mua**: Mua giấy phép đầy đủ để sử dụng cho mục đích thương mại.
-
-Sau khi có được giấy phép, hãy làm theo các bước sau để khởi tạo và thiết lập thư viện trong dự án của bạn.
+### Nhận giấy phép
+Obtain a license to lift trial limitations:
+- **Bản dùng thử** – khởi động nhanh để đánh giá.  
+- **Giấy phép tạm thời** – đánh giá mở rộng cho các dự án lớn.  
+- **Giấy phép đầy đủ** – sẵn sàng cho sản xuất, không giới hạn chuyển đổi.
 
 ### Khởi tạo cơ bản
+Đoạn mã sau cho thấy cách tạo một thể hiện `Viewer` cho tệp Excel 2003 XML.
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.LoadOptions;
@@ -65,121 +77,121 @@ import com.groupdocs.viewer.options.LoadOptions;
 LoadOptions loadOptions = new LoadOptions(FileType.EXCEL_2003_XML);
 
 try (Viewer viewer = new Viewer("path/to/your/document.xml", loadOptions)) {
-    // Thực hiện các hoạt động kết xuất ở đây
+    // Perform rendering operations here
 }
 ```
-Thiết lập này cho phép bạn bắt đầu hiển thị các tệp Excel của mình.
 
-## Hướng dẫn thực hiện
+Bây giờ bạn đã sẵn sàng để render tài liệu sang bất kỳ định dạng nào được hỗ trợ.
 
-### Kết xuất Excel 2003 XML sang HTML
-#### Tổng quan
-Chuyển đổi tệp Excel 2003 XML thành HTML giúp dễ dàng xem trên trình duyệt web. Phần này hướng dẫn bạn thực hiện quy trình sử dụng GroupDocs.Viewer Java.
+## Cách chuyển đổi excel xml sang pdf bằng GroupDocs Viewer
+Dưới đây bạn sẽ tìm thấy các phần riêng cho mỗi định dạng đầu ra. Hướng dẫn **PDF** được nhấn mạnh vì nó trả lời trực tiếp từ khóa chính.
 
-##### Hướng dẫn từng bước
-1. **Thiết lập thư mục đầu ra**
+### Rendering Excel 2003 XML to HTML
+Chuyển đổi sang HTML cho phép bạn nhúng bảng tính vào các trang web.
+
+1. **Thiết lập thư mục đầu ra**  
    ```java
    Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
    Path pageFileFullPath = outputDirectory.resolve("Excel_2003_Xml_result.html");
    ```
-2. **Cấu hình tùy chọn tải và xem**
+2. **Cấu hình tùy chọn Load và View**  
    ```java
    LoadOptions loadOptions = new LoadOptions(FileType.EXCEL_2003_XML);
    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFileFullPath);
 
    try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XML_SPREADSHEETML", loadOptions)) {
-       viewer.view(options); // Hiển thị tài liệu dưới dạng HTML
+       viewer.view(options); // Render the document as HTML
    }
    ```
-Đoạn mã này khởi tạo `Viewer` và thiết lập các tùy chọn để hiển thị các tệp Excel thành HTML với các tài nguyên được nhúng.
 
-### Kết xuất Excel 2003 XML sang JPG
-#### Tổng quan
-Để biểu diễn trực quan dữ liệu của bạn, việc chuyển đổi tệp Excel sang hình ảnh JPG là hiệu quả. Phần này sẽ chỉ cho bạn cách thực hiện hiệu quả.
+### Rendering Excel 2003 XML to JPG
+Hình ảnh JPG tiện lợi cho việc xem trước nhanh.
 
-##### Hướng dẫn từng bước
-1. **Thiết lập thư mục đầu ra**
+1. **Thiết lập thư mục đầu ra**  
    ```java
    Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
    Path pageFileFullPath = outputDirectory.resolve("Excel_2003_Xml_result.jpg");
    ```
-2. **Cấu hình tùy chọn tải và xem**
+2. **Cấu hình tùy chọn Load và View**  
    ```java
    LoadOptions loadOptions = new LoadOptions(FileType.EXCEL_2003_XML);
    JpgViewOptions options = new JpgViewOptions(pageFileFullPath);
 
    try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XML_SPREADSHEETML", loadOptions)) {
-       viewer.view(options); // Hiển thị tài liệu dưới dạng JPG
+       viewer.view(options); // Render the document as JPG
    }
    ```
 
-### Kết xuất Excel 2003 XML sang PNG
-#### Tổng quan
-Để có hình ảnh đầu ra chất lượng cao, việc kết xuất tệp Excel sang định dạng PNG là lý tưởng. Phần này cung cấp hướng dẫn chi tiết về cách thực hiện.
+### Rendering Excel 2003 XML to PNG
+PNG cung cấp chất lượng hình ảnh không mất dữ liệu cho các bảng tính chi tiết.
 
-##### Hướng dẫn từng bước
-1. **Thiết lập thư mục đầu ra**
+1. **Thiết lập thư mục đầu ra**  
    ```java
    Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
    Path pageFileFullPath = outputDirectory.resolve("Excel_2003_Xml_result.png");
    ```
-2. **Cấu hình tùy chọn tải và xem**
+2. **Cấu hình tùy chọn Load và View**  
    ```java
    LoadOptions loadOptions = new LoadOptions(FileType.EXCEL_2003_XML);
    PngViewOptions options = new PngViewOptions(pageFileFullPath);
 
    try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XML_SPREADSHEETML", loadOptions)) {
-       viewer.view(options); // Hiển thị tài liệu dưới dạng PNG
+       viewer.view(options); // Render the document as PNG
    }
    ```
 
-### Kết xuất Excel 2003 XML sang PDF
-#### Tổng quan
-Chuyển đổi tệp Excel sang PDF có lợi cho việc lập tài liệu và chia sẻ. Phần này sẽ hướng dẫn bạn thực hiện quy trình.
+### Rendering Excel 2003 XML to PDF
+**Đây là chuyển đổi “excel xml to pdf” cốt lõi.** PDF là lựa chọn hoàn hảo cho lưu trữ và chia sẻ.
 
-##### Hướng dẫn từng bước
-1. **Thiết lập thư mục đầu ra**
+1. **Thiết lập thư mục đầu ra**  
    ```java
    Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
    Path pageFileFullPath = outputDirectory.resolve("Excel_2003_Xml_result.pdf");
    ```
-2. **Cấu hình tùy chọn tải và xem**
+2. **Cấu hình tùy chọn Load và View**  
    ```java
    LoadOptions loadOptions = new LoadOptions(FileType.EXCEL_2003_XML);
    PdfViewOptions options = new PdfViewOptions(pageFileFullPath);
 
    try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XML_SPREADSHEETML", loadOptions)) {
-       viewer.view(options); // Kết xuất tài liệu dưới dạng PDF
+       viewer.view(options); // Render the document as PDF
    }
    ```
 
 ## Ứng dụng thực tế
-GroupDocs.Viewer for Java có thể được sử dụng trong nhiều tình huống thực tế khác nhau:
-1. **Tự động tạo báo cáo**: Tự động chuyển đổi báo cáo Excel sang HTML hoặc PDF để phân phối dễ dàng.
-2. **Hình ảnh hóa dữ liệu**: Chuyển đổi bảng tính phức tạp thành hình ảnh JPG hoặc PNG để trình bày.
-3. **Tích hợp Web**: Nhúng dữ liệu Excel trực tiếp vào các trang web bằng cách sử dụng chuyển đổi HTML.
+- **Tự động chuyển đổi Excel** trong các công việc batch hàng đêm để tạo PDF cho báo cáo tuân thủ.  
+- **Render Excel dưới dạng hình ảnh** (JPG/PNG) để nhúng biểu đồ vào email marketing.  
+- **Xuất sang HTML** để tạo bảng điều khiển web tương tác mà không cần Excel ở phía client.  
 
-## Cân nhắc về hiệu suất
-Để đảm bảo hiệu suất tối ưu với GroupDocs.Viewer Java:
-- **Quản lý bộ nhớ**: Theo dõi mức sử dụng bộ nhớ và tối ưu hóa cài đặt JVM khi cần.
-- **Sử dụng tài nguyên**: Sử dụng các tùy chọn chế độ xem phù hợp để quản lý việc phân bổ tài nguyên một cách hiệu quả.
-- **Thực hành tốt nhất**: Thường xuyên cập nhật các phụ thuộc và tuân theo các biện pháp tốt nhất để thực thi mã hiệu quả.
+## Các cân nhắc về hiệu năng
+- **Quản lý bộ nhớ** – cấp phát đủ heap cho các workbook lớn (`-Xmx2g` là điểm khởi đầu tốt).  
+- **Sử dụng tài nguyên** – tái sử dụng một thể hiện `Viewer` duy nhất khi xử lý nhiều tệp để giảm chi phí.  
+- **Thực hành tốt** – giữ các phụ thuộc GroupDocs luôn cập nhật và bật logging để phát hiện các nút thắt sớm.
 
-## Phần kết luận
-Trong hướng dẫn này, chúng tôi đã khám phá cách sử dụng GroupDocs.Viewer Java để chuyển đổi các tệp XML Excel 2003 sang các định dạng HTML, JPG, PNG và PDF. Bằng cách làm theo các bước được nêu ở trên, bạn có thể tự động hóa các chuyển đổi này và hợp lý hóa quy trình xử lý dữ liệu của mình.
+## Các vấn đề thường gặp và giải pháp
+- **Các tệp lớn gây OutOfMemoryError** – tăng heap JVM hoặc xử lý tệp trang‑theo‑trang bằng `viewer.view(pageOptions)`.  
+- **Thiếu phông chữ trong PDF** – đảm bảo máy chủ đã cài đặt các phông chữ cần thiết hoặc nhúng chúng qua `PdfViewOptions`.  
+- **Kích thước hình ảnh không đúng** – điều chỉnh DPI trong `JpgViewOptions`/`PngViewOptions` nếu cần.
 
-### Các bước tiếp theo
-Để nâng cao hơn nữa kỹ năng của bạn, hãy khám phá các tính năng bổ sung của GroupDocs.Viewer Java hoặc tích hợp nó với các hệ thống khác để tạo ra các ứng dụng phức tạp hơn.
+## Câu hỏi thường gặp
 
-## Phần Câu hỏi thường gặp
-**Câu hỏi 1: Làm thế nào để xử lý các tệp Excel lớn khi chuyển đổi sang PDF?**
-A1: Đối với các tệp lớn, hãy đảm bảo phân bổ đủ bộ nhớ và sử dụng tùy chọn chế độ xem được tối ưu hóa để quản lý việc sử dụng tài nguyên hiệu quả.
+**Q: Làm thế nào để xử lý các tệp Excel XML được bảo vệ bằng mật khẩu?**  
+A: Truyền mật khẩu vào `LoadOptions` bằng cách sử dụng `setPassword("yourPassword")` trước khi tạo `Viewer`.
 
-**Câu hỏi 2: Tôi có thể tùy chỉnh định dạng đầu ra của chuyển đổi HTML không?**
-A2: Có, GroupDocs.Viewer Java cung cấp nhiều tùy chọn tùy chỉnh khác nhau để hiển thị HTML, cho phép bạn tùy chỉnh đầu ra theo nhu cầu của mình.
+**Q: Tôi có thể tùy chỉnh đầu ra HTML (style, script) không?**  
+A: Có, `HtmlViewOptions` cung cấp các phương thức như `setCustomStyleSheet` và `setEmbeddedResources` để điều chỉnh kết quả.
 
-**Câu hỏi 3: Yêu cầu hệ thống để sử dụng GroupDocs.Viewer Java là gì?**
-A3: Đảm bảo môi trường Java tương thích và đủ tài nguyên bộ nhớ để xử lý các tác vụ xử lý tài liệu.
+**Q: Có thể chuyển đổi nhiều worksheet thành các tệp PDF riêng biệt không?**  
+A: Sử dụng `PdfViewOptions` với `setPageNumbers` để render từng worksheet riêng lẻ.
 
-**Câu hỏi 4: Làm thế nào để khắc phục sự cố liên quan đến chuyển đổi tệp?**
-A4: Xác minh cài đặt đúng các phụ thuộc, đảm bảo mã của bạn khớp với các ví dụ được cung cấp và kiểm tra xem có lỗi nào trong quá trình cấu hình hoặc thực thi không.
+**Q: Cách đề xuất để xử lý hàng loạt một thư mục các tệp Excel XML là gì?**  
+A: Lặp qua các tệp bằng vòng `for`, tái sử dụng một thể hiện `Viewer` duy nhất, và gọi phương thức `view` phù hợp cho mỗi định dạng đầu ra.
+
+**Q: GroupDocs Viewer có hỗ trợ stream PDF trực tiếp tới phản hồi HTTP không?**  
+A: Chắc chắn – bạn có thể ghi luồng đầu ra của `PdfViewOptions` vào `HttpServletResponse.getOutputStream()` để tải xuống ngay lập tức.
+
+---
+
+**Cập nhật lần cuối:** 2026-05-06  
+**Kiểm thử với:** GroupDocs.Viewer 25.2 cho Java  
+**Tác giả:** GroupDocs
