@@ -1,31 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer ile Java'da belge kodlamasını etkili bir şekilde nasıl kullanacağınızı öğrenin. Bu kılavuz, doğru veri gösterimi için karakter kodlamalarını ayarlama konusunda adım adım bir eğitim sunar."
-"title": "GroupDocs.Viewer Kullanarak Java'da Belirli Kodlamalı Belgeler Nasıl Yüklenir"
-"url": "/tr/java/document-loading/groupdocs-viewer-java-specific-encoding/"
-"weight": 1
+date: '2026-02-13'
+description: GroupDocs.Viewer kullanarak Java'da kodlamalı belgeleri nasıl yükleyeceğinizi
+  öğrenin ve Java kodlama sorunlarını çözün.
+keywords:
+- load documents with encoding
+- groupdocs.viewer java setup
+- java character encoding
+title: Java'da GroupDocs.Viewer Kullanarak Kodlamalı Belgeleri Nasıl Yüklenir
 type: docs
+url: /tr/java/document-loading/groupdocs-viewer-java-specific-encoding/
+weight: 1
 ---
-# GroupDocs.Viewer Kullanarak Java'da Belirli Kodlamalı Belgeler Nasıl Yüklenir
 
-## giriiş
+# Java'da GroupDocs.Viewer Kullanarak Kodlamalı Belgeleri Yükleme
 
-Java'da çeşitli kodlamalara sahip belgeleri işlemekte zorluk mu çekiyorsunuz? Bu kapsamlı eğitim, dosyaları doğru bir şekilde yüklemek ve işlemek için GroupDocs.Viewer kitaplığını kullanma konusunda size rehberlik eder. İster metni doğru şekilde görüntülemek ister hassas veri temsilini sağlamak olsun, belge kodlamasında ustalaşmak esastır.
+Eğer bir Java uygulamasında **kodlamalı belgeleri yükleme** işlemini doğru bir şekilde yapmanız gerekiyorsa doğru yerdesiniz. Bu öğreticide, GroupDocs.Viewer'ı nasıl yapılandırarak UTF‑8, Shift_JIS veya ISO‑8859‑1 gibi herhangi bir karakter kümesinden gelen metnin doğru bir şekilde render edildiğini adım adım göstereceğiz. Ayrıca, *java encoding troubleshooting* için pratik ipuçlarını da göreceksiniz; bu ipuçları sorunlu durumlarda zaman kazandırır.
 
-**Ne Öğreneceksiniz:**
-- Java için GroupDocs.Viewer'ı kurun ve kullanın.
-- Belgeleri yüklerken karakter kodlamalarını belirtin.
-- Belirli kodlamalarla belgeleri işlemek için kodu adım adım uygulayın.
-- Belge kodlamasıyla ilgili yaygın sorunları giderin.
+![Load Documents with Specific Encoding with GroupDocs.Viewer for Java](/viewer/document-loading/load-documents-with-specific-encoding.png)
 
-Sorunsuz bir deneyim için başlamadan önce gerekli ön koşulları gözden geçirelim!
+**Öğrenecekleriniz**
+- GroupDocs.Viewer for Java nasıl kurulur.
+- Bir belgeyi yüklerken karakter seti nasıl belirtilir.
+- Farklı dillerde metin render etme örnekleri.
+- Kodlama sorunları için yaygın tuzaklar ve çözüm adımları.
 
-## Ön koşullar
+## Hızlı Yanıtlar
+- **Belge render işlemini hangi kütüphane yönetir?** GroupDocs.Viewer for Java.  
+- **Karakter setini hangi metod ayarlar?** `LoadOptions.setCharset(Charset)`.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü yeterlidir; üretim ortamı için ticari lisans gereklidir.  
+- **UTF‑8 dışı dosyaları render edebilir miyim?** Evet—doğru `Charset` (ör. `shift_jis`) sağladığınız sürece.  
+- **Tipik bir sorun giderme adımı nedir?** Dosyanın gerçek kodlamasını `Charset.availableCharsets()` ile doğrulayın.
 
-Kodlamaya başlamadan önce ortamınızın hazır olduğundan emin olalım:
+## “Kodlamalı Belgeleri Yükleme” Nedir?
+Kodlamalı belgeleri yüklemek, viewer’a bir dosyanın ham bayt akışını nasıl yorumlayacağını söylemek demektir; böylece karakterler tam olarak yazarının niyet ettiği gibi görünür. Bu adım olmadan, özellikle çok baytlı kodlamalar kullanan dillerde bozuk ya da eksik metinlerle karşılaşabilirsiniz.
+
+## Neden GroupDocs.Viewer for Java Kullanmalı?
+GroupDocs.Viewer, onlarca dosya formatını ayrıştırma karmaşıklığını soyutlar. PDF, Word, metin dosyaları ve daha fazlasını tutarlı bir API ile render etmenizi sağlar—aynı zamanda karakter setini kontrol etmenize izin verir; bu da uluslararasılaşma ve eski belge arşivleri için kritiktir.
+
+## Ön Koşullar
 
 ### Gerekli Kütüphaneler ve Bağımlılıklar
-GroupDocs.Viewer for Java'yı kullanmak için, kütüphanesini projenize ekleyin. Önerilen yol Maven'dır. Bu yapılandırmayı projenize ekleyin `pom.xml` dosya:
+GroupDocs.Viewer for Java’yı projenize eklemek için kütüphaneyi dahil etmeniz gerekir. En önerilen yol Maven kullanmaktır. `pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 
 ```xml
 <repositories>
@@ -45,57 +60,47 @@ GroupDocs.Viewer for Java'yı kullanmak için, kütüphanesini projenize ekleyin
 </dependencies>
 ```
 
-### Çevre Kurulumu
-Java Development Kit (JDK) yüklü olduğundan emin olun, tercihen sürüm 8 veya üzeri. IDE'niz ayrıca sorunsuz bağımlılık yönetimi için Maven'ı da desteklemelidir.
+### Ortam Kurulumu
+- Java Development Kit (JDK) 8 veya üzeri.  
+- Maven‑uyumlu IDE (IntelliJ IDEA, Eclipse, VS Code vb.).  
 
-### Bilgi Önkoşulları
-Java programlamaya aşinalık ve belge biçimlerine dair temel bir anlayış faydalı olacaktır. Ancak, öğrenme sürecini kolaylaştırmak için her adımda size rehberlik edeceğiz!
+### Bilgi Ön Koşulları
+Temel Java sözdizimi ve dosya I/O bilgisi faydalıdır, ancak her adımı sade bir dille açıklayacağız.
 
-## Java için GroupDocs.Viewer Kurulumu
-GroupDocs.Viewer'ı kullanmaya başlamak için şu adımları izleyin:
-
-1. **Maven Yapılandırması:** Maven'ınızı yapılandırın `pom.xml` Gerekli depo ve bağımlılıkları içerecek şekilde yukarıda gösterildiği gibi dosyayı ekleyin.
-2. **Lisans Edinimi:**
-   - Ücretsiz denemeyi tercih edin veya gerekirse geçici lisans talep edin.
-   - Devam eden kullanım için bir lisans satın alınması önerilir. Ziyaret edin [GroupDocs Satın Alma](https://purchase.groupdocs.com/buy) Lisans edinme hakkında daha fazla bilgi için.
-3. **Temel Başlatma ve Kurulum:** Kütüphane projenizde kurulduktan sonra, belgelerle çalışmaya başlamak için Viewer sınıfını başlatın:
+## GroupDocs.Viewer for Java Nasıl Kurulur
+1. **Maven’i Yapılandır** – yukarıda gösterilen depo ve bağımlılığı ekleyin.  
+2. **Lisans Al** – ücretsiz deneme ile başlayabilir veya geçici bir lisans talep edebilirsiniz. Üretim için lisansı burada satın alın: [GroupDocs Purchase](https://purchase.groupdocs.com/buy).  
+3. **Viewer’ı Başlat** – ilk kod parçacığı minimal bir kurulum örneği gösterir:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
-// Görüntüleyiciyi bir belge yoluyla başlatın
+// Initialize Viewer with a document path
 try (Viewer viewer = new Viewer("path/to/your/document")) {
-    // Belge işleme kodu buraya gelecek
+    // Document processing code will go here
 }
 ```
 
-## Uygulama Kılavuzu
+## Kodlamalı Belgeleri Nasıl Yüklenir
+Farklı kodlamaları yönetmek, verinin doğru görüntülenmesi için hayati öneme sahiptir. Uygulamayı adım adım inceleyelim.
 
-### Belirli Kodlamayla Belgeleri Yükleme
-Farklı kodlamaları yönetmek, doğru veri gösterimi için çok önemlidir. Adımları parçalayalım:
-
-#### Özelliğin Genel Görünümü
-Bu özellik, bir belge yüklenirken kodlamayı belirtmenize olanak tanır ve karakterlerin doğru şekilde işlenmesini sağlar.
-
-#### Kodun Uygulanması
-
-##### Adım 1: Yolları ve Karakter Setini Ayarlayın
-Öncelikle dosya yolunuzu ve çıktı dizininizi tanımlayın. Belgenizin kodlaması için karakter setini belirtin:
+### Adım 1: Yolları Tanımla ve Bir Charset Seç
+Öncelikle kaynak dosyanın nerede olduğunu, render edilen çıktının nereye kaydedileceğini ve kaynağın hangi karakter setini kullandığını belirtin.
 
 ```java
 import java.nio.charset.Charset;
 import java.nio.file.Path;
 
-String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.txt"; // Gerçek dosya yolunuzla değiştirin
+String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.txt"; // Replace with your actual file path
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "LoadDocumentsWithEncoding");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
-// Belge için karakter kodlamasını belirtin
+// Specify the character encoding for the document
 Charset charset = Charset.forName("shift_jis"); 
 ```
 
-##### Adım 2: LoadOptions'ı yapılandırın
-Oluştur ve yapılandır `LoadOptions` belirtilen karakter setini kullanmak için:
+### Adım 2: Seçilen Charset ile LoadOptions’u Yapılandır
+Bir `LoadOptions` örneği oluşturun ve tanımladığınız charset’i ekleyin.
 
 ```java
 import com.groupdocs.viewer.options.LoadOptions;
@@ -104,10 +109,8 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setCharset(charset);
 ```
 
-Bu, GroupDocs.Viewer'a belgenin metnini nasıl yorumlayacağını bildirir.
-
-##### Adım 3: Görüntüleyiciyi Yükleme Seçenekleriyle Başlatın
-Başlat `Viewer` dosya yolunuzu kullanarak ve `LoadOptions`Bu, kodlama sorunlarının baştan itibaren ele alınmasını sağlar:
+### Adım 3: LoadOptions Kullanarak Viewer’ı Başlat ve Render Et
+`LoadOptions` nesnesini `Viewer` yapıcısına geçirerek kütüphanenin dosyayı baştan nasıl çözeceğini belirtin.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -115,59 +118,66 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 
 try (Viewer viewer = new Viewer(filePath, loadOptions)) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-    viewer.view(options); // Belgeyi belirtilen görünüm seçenekleriyle işle
+    viewer.view(options); // Render the document with specified view options
 }
 ```
 
-### Parametrelerin Açıklaması
-- **LoadOptions.setCharset(Karakter kümesi karakter kümesi):** Bu yöntem belgenizin karakter kodlamasını belirtir.
-- **HtmlViewOptions.forEmbeddedResources(Yol sayfaDosyaYolBiçim):** Belgelerin gömülü kaynaklarla HTML olarak nasıl işleneceğini yapılandırır.
+#### Temel Parametrelerin Açıklaması
+- **`LoadOptions.setCharset(Charset charset)`** – GroupDocs.Viewer’a uygulanacak kodlamayı belirtir.  
+- **`HtmlViewOptions.forEmbeddedResources(Path pageFilePathFormat)`** – tüm kaynakları (görseller, CSS) gömülü olarak içeren HTML sayfaları oluşturur; belirtilen yol desenine göre kaydedilir.
 
-### Sorun Giderme İpuçları
-- Bozuk metinlerden kaçınmak için belirtilen kodlamanın belgenizin gerçek kodlamasıyla eşleştiğinden emin olun.
-- IO istisnalarıyla karşılaşırsanız dosya yollarını ve dizin izinlerini iki kez kontrol edin.
+## Java Kodlama Sorun Giderme İpuçları
+Render edilen metin karışık görünüyorsa:
 
-## Pratik Uygulamalar
-GroupDocs.Viewer'ı Java uygulamalarınıza entegre etmek çok sayıda olasılığın kapısını açar:
+1. **Dosyanın gerçek charset’ini doğrula** – kodlama bilgisini gösteren bir metin editörüyle açın veya `Charset.availableCharsets()` kullanan küçük bir Java kodu çalıştırın.  
+2. **Charset’i tam olarak eşle** – `Charset.forName("UTF-8")` ile `"utf-8"` büyük/küçük harfe duyarsızdır, ancak yazım önemlidir (`"shift_jis"` vs. `"Shift_JIS"`).  
+3. **Dosya izinlerini kontrol et** – IOExceptions çoğu zaman erişilemeyen yollar nedeniyle ortaya çıkar, kodlama uyuşmazlığı değil.  
+4. **Çıktı dizinini incele** – uygulamanın yazma izni olduğundan emin olun; aksi takdirde HTML sayfaları oluşturulmaz.
 
-1. **İçerik Yönetim Sistemleri (CMS):** Kullanıcıların farklı dillerdeki gönderileri için belgeleri otomatik olarak doğru kodlamalarla oluşturun.
-2. **E-ticaret Platformları:** Ürün kılavuzlarını veya teknik özelliklerini, orijinal kodlamalarından bağımsız olarak doğru bir şekilde görüntüleyin.
-3. **Belge Arşivleme Çözümleri:** Veri bütünlüğünü koruyarak tarihi belgelerin doğru şekilde saklanmasını ve görüntülenmesini sağlayın.
+## Pratik Kullanım Alanları
+- **İçerik Yönetim Sistemleri** – kullanıcıların yüklediği belgeleri orijinal dillerinde, manuel dönüşüm gerektirmeden render edin.  
+- **E‑ticaret Platformları** – bölgesel kodlamalarla hazırlanmış ürün kılavuzlarını gösterin.  
+- **Belge Arşivleme** – eski Japon PDF’leri gibi miras belgeleri doğru karakter temsiliyle koruyun.
 
-## Performans Hususları
-Sorunsuz bir çalışma sağlamak için:
-- Özellikle büyük belgeleri işlerken bellek kullanımını izleyin.
-- Uygulamanızın ihtiyaçlarına göre Java bellek ayarlarını optimize ederek bellek yetersizliği hatalarını önleyin.
-- Otomatik temizleme için try-with-resources gibi verimli kaynak yönetimi uygulamalarını kullanın.
+## Performans Düşünceleri
+- Büyük dosyaları UI’nın yanıt vermeye devam etmesi için ayrı bir iş parçacığında işleyin.  
+- Beklenen belge boyutuna göre JVM heap boyutunu (`-Xmx`) ayarlayın.  
+- Kaynakların hızlı bir şekilde serbest bırakılmasını sağlamak için (gösterildiği gibi) try‑with‑resources kullanın.
 
-## Çözüm
-Artık GroupDocs.Viewer for Java kullanarak belirli kodlamalara sahip belgeleri nasıl yükleyeceğinizi ve işleyeceğiniz öğrendiniz. Bu yetenek, uluslararasılaştırma veya çeşitli belge kaynaklarıyla ilgilenen uygulamalar için çok önemlidir.
+## Sonuç
+Artık GroupDocs.Viewer for Java kullanarak **kodlamalı belgeleri yükleme** için eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Bu yaklaşım yaygın *java encoding troubleshooting* sorunlarını ortadan kaldırır ve çok dilli içeriği zahmetsizce desteklemenizi sağlar.
 
-**Sonraki Adımlar:**
-- Farklı kodlamaları deneyin.
-- Daha fazla özelleştirme seçeneğini keşfedin [GroupDocs belgeleri](https://docs.groupdocs.com/viewer/java/).
+**Sonraki Adımlar**
+- `windows-1252` veya `utf-16` gibi diğer charset’lerle deneyler yapın.  
+- Görünüm özelleştirmesine daha derinlemesine dalmak için [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) sayfasını inceleyin.  
 
-Java uygulamanızı bir üst seviyeye taşımaya hazır mısınız? Bu çözümü uygulayın ve belge işleme yeteneklerinizi nasıl dönüştürdüğünü görün!
+## Sıkça Sorulan Sorular
 
-## SSS Bölümü
-1. **Java için GroupDocs.Viewer nedir?**
-   - Java kullanarak çeşitli formatlardaki belgeleri işleyen güçlü bir kütüphane.
-2. **Desteklenmeyen kodlamaları nasıl halledebilirim?**
-   - Kullanmak `Charset.availableCharsets()` desteklenen karakter kümelerini listelemek ve en yakın eşleşmeyi seçmek için.
-3. **GroupDocs.Viewer'ı bir web uygulamasında kullanabilir miyim?**
-   - Evet, belge oluşturma için web uygulamalarının sunucu tarafındaki bileşenlerine entegre edilebilir.
-4. **Kodlama ayarlarken sık karşılaşılan hatalar nelerdir?**
-   - Kaynak dosyalar ile belirtilen karakter seti ayarları arasındaki uyumsuz kodlamalar sıklıkla sorunlara yol açar.
-5. **Sorun yaşarsam nasıl destek alabilirim?**
-   - Ziyaret edin [GroupDocs Destek Forumu](https://forum.groupdocs.com/c/viewer/9) Topluluktan ve geliştiricilerden yardım için.
+**S: GroupDocs.Viewer for Java nedir?**  
+C: 100'den fazla belge formatını (PDF, DOCX, TXT vb.) doğrudan Java uygulamalarında render eden güçlü bir kütüphanedir.
+
+**S: Desteklenmeyen bir charset ile nasıl başa çıkılır?**  
+C: `Charset.availableCharsets()` kullanarak desteklenen charset’lerin listesini alın ve en yakın eşleşmeyi seçin; ya da kaynağı desteklenen bir kodlamaya dönüştürerek yükleyin.
+
+**S: Bunu bir Spring Boot web servisine entegre edebilir miyim?**  
+C: Kesinlikle—render mantığını bir controller’a enjekte edin ve oluşturulan HTML veya PDF akışını istemciye döndürün.
+
+**S: Charset ayarlarken yaygın tuzaklar nelerdir?**  
+C: Yanlış charset sağlamak, `LoadOptions`’ı atlamamak veya farklı bir dosya sürümüne işaret eden bir yol kullanmak.
+
+**S: Sorun yaşarsam nereden yardım alabilirim?**  
+C: Topluluk desteği ve resmi yardım için [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) adresini ziyaret edin.
+
+---
+
+**Son Güncelleme:** 2026-02-13  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs  
 
 ## Kaynaklar
-Daha detaylı bilgi için:
-- [Belgeleme](https://docs.groupdocs.com/viewer/java/)
-- [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer'ı indirin](https://releases.groupdocs.com/viewer/java/)
-- [Lisans Satın Alın](https://purchase.groupdocs.com/buy)
-- [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
-- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
-
-Bu kapsamlı kılavuzu takip ederek, artık GroupDocs.Viewer for Java kullanarak belge kodlamasını etkili bir şekilde yönetmeye hazırsınız. İyi kodlamalar!
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- [Purchase a License](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
