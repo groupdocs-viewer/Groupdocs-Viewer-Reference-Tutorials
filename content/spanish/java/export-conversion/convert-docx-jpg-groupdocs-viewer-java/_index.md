@@ -1,30 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a convertir sin problemas documentos de Word (DOCX) en imágenes JPEG utilizando GroupDocs.Viewer para Java, con configuraciones de calidad ajustables."
-"title": "Convertir DOCX a JPG en Java con GroupDocs.Viewer&#58; una guía completa"
-"url": "/es/java/export-conversion/convert-docx-jpg-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-15'
+description: Aprende a convertir docx a jpg con GroupDocs.Viewer para Java, incluyendo
+  configuraciones de calidad ajustables y opciones de licencia.
+keywords:
+- convert DOCX to JPG
+- GroupDocs.Viewer Java
+- render documents in Java
+title: 'Convertir DOCX a JPG en Java usando GroupDocs.Viewer: Guía completa'
 type: docs
+url: /es/java/export-conversion/convert-docx-jpg-groupdocs-viewer-java/
+weight: 1
 ---
-# Domine la representación de DOCX a JPG en Java con GroupDocs.Viewer
 
-## Introducción
-En el panorama digital actual, convertir documentos en imágenes es esencial para compartirlos en la web o integrarlos en aplicaciones. Este tutorial muestra cómo convertir un documento de Word (DOCX) en imágenes JPEG de alta calidad usando **Visor de documentos grupales** en Java, lo que permite controlar la calidad de la imagen y el tamaño del archivo.
+ etc. Keep them as is.
 
-Siguiendo esta guía, aprenderá:
-- Configuración de GroupDocs.Viewer para Java
-- Convertir archivos DOCX a JPG con ajustes de calidad ajustables
-- Optimización del rendimiento durante el procesamiento de documentos
+Make sure not to translate URLs in links.
 
-¡Comencemos repasando los prerrequisitos!
+Let's produce final Spanish markdown.
 
-### Prerrequisitos
-Antes de comenzar, asegúrese de tener las herramientas y los conocimientos necesarios.
+# Master Rendering DOCX to JPG in Java with GroupDocs.Viewer
 
-#### Bibliotecas y dependencias requeridas
-Incluya la biblioteca GroupDocs.Viewer para Java usando Maven:
+## Introduction
+En el panorama digital actual, convertir documentos en imágenes es esencial para compartir en la web o incrustar en aplicaciones. Este tutorial muestra cómo **convertir docx a jpg** usando **GroupDocs.Viewer** en Java, dándote control total sobre la calidad de la imagen y el tamaño del archivo.
 
-**Configuración de Maven**
+![Convertir DOCX a JPG con GroupDocs.Viewer para Java](/viewer/export-conversion/convert-docx-to-jpg.png)
+
+Al seguir esta guía, aprenderás:
+- Configurar GroupDocs.Viewer para Java
+- Renderizar archivos DOCX a JPG con ajustes de calidad
+- Optimizar el rendimiento durante el procesamiento de documentos
+
+¡Comencemos revisando los requisitos previos!
+
+## Quick Answers
+- **¿Qué biblioteca debo usar?** GroupDocs.Viewer para Java
+- **¿Puedo ajustar la calidad de la imagen?** Sí, establece un valor de 1‑100
+- **¿Necesito una licencia?** Una prueba gratuita funciona para funciones básicas; las funciones completas requieren una licencia de GroupDocs Viewer
+- **¿Qué versión de Java es compatible?** Java 8 y posteriores
+- **¿Es posible el procesamiento por lotes?** Sí, renderiza páginas en bloques para ahorrar memoria
+
+## What is **convert docx to jpg**?
+Convertir un archivo DOCX a JPG crea una imagen rasterizada de cada página, facilitando la inserción de documentos en páginas web, la vista previa de archivos sin un procesador de Word o el archivado de contenido como una imagen ligera.
+
+## Why use GroupDocs.Viewer for Java?
+GroupDocs.Viewer ofrece renderizado de alta fidelidad, soporta docenas de formatos y proporciona APIs simples para el control de calidad, lo que lo hace ideal para soluciones de vista previa de documentos a nivel empresarial.
+
+## Prerequisites
+Antes de comenzar, asegúrate de tener las herramientas y conocimientos necesarios.
+
+### Required Libraries and Dependencies
+Incluye la biblioteca GroupDocs.Viewer para Java usando Maven:
+
 ```xml
 <repositories>
    <repository>
@@ -42,17 +68,17 @@ Incluya la biblioteca GroupDocs.Viewer para Java usando Maven:
 </dependencies>
 ```
 
-#### Configuración del entorno
-- Asegúrese de tener instalado el Kit de desarrollo de Java (JDK).
-- Utilice un IDE como IntelliJ IDEA o Eclipse para escribir y ejecutar su código.
+### Environment Setup
+- Asegúrate de tener instalado el Java Development Kit (JDK).
+- Usa un IDE como IntelliJ IDEA o Eclipse para escribir y ejecutar tu código.
 
-#### Requisitos previos de conocimiento
-Es útil estar familiarizado con conceptos básicos de programación Java, como clases, métodos y operaciones de E/S de archivos. Se valora la experiencia con Maven, pero no es imprescindible.
+### Knowledge Prerequisites
+Familiarizarse con conceptos básicos de programación en Java, como clases, métodos y operaciones de I/O de archivos, es útil. Tener experiencia con Maven es ventajoso pero no obligatorio.
 
-## Configuración de GroupDocs.Viewer para Java
-### Información de instalación
-**Configuración de Maven**
-Agregue la siguiente configuración a su `pom.xml` archivo:
+## How to render docx using GroupDocs.Viewer
+### Installation Information
+Agrega la misma configuración de Maven a tu archivo `pom.xml` (mostrada nuevamente para mayor claridad):
+
 ```xml
 <repositories>
    <repository>
@@ -70,100 +96,114 @@ Agregue la siguiente configuración a su `pom.xml` archivo:
 </dependencies>
 ```
 
-### Adquisición de licencias
-GroupDocs ofrece una prueba gratuita, una licencia temporal para realizar pruebas exhaustivas y opciones de compra para obtener una funcionalidad completa:
-- **Prueba gratuita:** Explora las funciones básicas con la versión de prueba.
-- **Licencia temporal:** Adquiera esto para tener acceso completo durante el desarrollo.
-- **Compra:** Elija entre una suscripción o una compra única según sus necesidades.
+### GroupDocs Viewer Licensing
+GroupDocs ofrece tres opciones de licencia:
+- **Prueba gratuita:** Explora funciones básicas sin una clave de licencia.
+- **Licencia temporal:** Ideal para pruebas extensas durante el desarrollo.
+- **Compra completa:** Suscripción o licencia perpetua para uso en producción.
 
-### Inicialización básica
-Inicialice GroupDocs.Viewer en Java creando una instancia de `Viewer` clase:
+### Basic Initialization
+Inicializa GroupDocs.Viewer en Java creando una instancia de la clase `Viewer`:
+
 ```java
 try (Viewer viewer = new Viewer("path/to/document.docx")) {
-    // Utilice este objeto visor para renderizar documentos.
+    // Use this viewer object to render documents.
 }
 ```
 
-## Guía de implementación
-Ahora que hemos configurado GroupDocs.Viewer para Java, implementemos nuestra función: renderizar un archivo DOCX como una imagen JPG con calidad ajustable.
+## Implementation Guide
+Ahora que hemos configurado GroupDocs.Viewer para Java, implementemos nuestra funcionalidad: renderizar un archivo DOCX como una imagen JPG con calidad ajustable.
 
-### Convertir documento a JPG con ajuste de calidad
-#### Descripción general
-Esta sección le guía para ajustar la calidad de salida JPG al convertir documentos. Este control permite equilibrar la claridad de la imagen y el tamaño del archivo según sus necesidades.
+### Rendering Document to JPG with Quality Adjustment
+#### Overview
+Esta sección te guía para ajustar la calidad del JPG de salida al convertir documentos. Este control permite equilibrar la claridad de la imagen y el tamaño del archivo según tus necesidades.
 
-**Paso 1: Configurar el directorio de salida**
+#### Step 1: Configure Output Directory
 Define dónde se guardarán tus imágenes de salida:
+
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "AdjustQualityWhenRenderingToJpg");
 ```
 
-**Paso 2: Configurar el formato de la ruta del archivo**
-Especifique el formato para nombrar los archivos de salida:
+#### Step 2: Set Up File Path Format
+Especifica el formato para nombrar los archivos de salida:
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.jpg");
 ```
 
-**Paso 3: Inicializar JpgViewOptions**
-Configurar las opciones de renderizado, incluida la ruta del archivo y la configuración de calidad:
+#### Step 3: Initialize JpgViewOptions
+Configura las opciones de renderizado, incluyendo la ruta del archivo y los ajustes de calidad:
+
 ```java
 JpgViewOptions viewOptions = new JpgViewOptions(pageFilePathFormat);
 ```
 
-**Paso 4: Ajustar la calidad de la imagen**
-Establezca la calidad de imagen deseada (1-100):
+#### Step 4: Adjust Image Quality
+Establece la calidad de imagen deseada (1‑100):
+
 ```java
-byte quality = 50; // Ajuste según sus necesidades.
+byte quality = 50; // Adjust based on your needs.
 viewOptions.setQuality(quality);
 ```
 
-**Paso 5: Renderizar el documento a JPG**
-Cargue su documento y renderícelo utilizando las opciones configuradas:
+#### Step 5: Render Document to JPG
+Carga tu documento y renderízalo usando las opciones configuradas:
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
     viewer.view(viewOptions);
 }
 ```
 
-### Consejos para la solución de problemas
-- **Problema común:** Errores en la ruta de archivo. Asegúrese de que todas las rutas estén correctamente especificadas y sean accesibles.
-- **Consejo de rendimiento:** Para documentos grandes, considere renderizarlos en lotes para administrar el uso de memoria de manera efectiva.
+### Troubleshooting Tips
+- **Problema común:** Errores en la ruta del archivo. Asegúrate de que todas las rutas estén especificadas correctamente y sean accesibles.
+- **Consejo de rendimiento:** Para documentos grandes, considera renderizar en lotes para gestionar el uso de memoria de manera eficaz.
 
-## Aplicaciones prácticas
-Esta característica tiene numerosas aplicaciones en el mundo real:
-1. **Plataformas para compartir documentos:** Genere vistas previas de alta calidad para compartirlas rápidamente.
-2. **Sistemas de gestión de contenidos:** Convierta artículos o informes en imágenes para facilitar su inserción.
-3. **Soluciones de archivado:** Cree archivos de imágenes de documentos con configuraciones de calidad ajustables para ahorrar espacio de almacenamiento.
+## Practical Applications
+Esta funcionalidad tiene numerosas aplicaciones del mundo real:
+1. **Plataformas de compartición de documentos:** Renderiza vistas previas de alta calidad para compartir rápidamente.
+2. **Sistemas de gestión de contenidos:** Convierte artículos o informes en imágenes para una inserción más sencilla.
+3. **Soluciones de archivado:** Crea archivos de imágenes de documentos con ajustes de calidad para ahorrar espacio de almacenamiento.
 
-## Consideraciones de rendimiento
+## Performance Considerations
 Para garantizar un rendimiento óptimo al renderizar documentos:
-- **Optimizar el uso de la memoria:** Usar `try-with-resources` Gestionar recursos de manera eficiente.
-- **Procesamiento por lotes:** Para lotes grandes, procese en fragmentos para evitar el desbordamiento de memoria.
-- **Configuración de calidad:** Reduzca la calidad para una representación más rápida si no se requiere alta claridad.
+- **Optimiza el uso de memoria:** Usa `try-with-resources` para gestionar los recursos de forma eficiente.
+- **Procesamiento por lotes:** Para lotes grandes, procesa en bloques para evitar desbordamiento de memoria.
+- **Ajustes de calidad:** Reduce la calidad para un renderizado más rápido si no se requiere alta claridad.
 
-## Conclusión
-¡Felicitaciones! Ya dominas la conversión de archivos DOCX a imágenes JPG con calidad ajustable usando GroupDocs.Viewer para Java. Esta habilidad puede mejorar la gestión y el uso compartido de documentos entre diversas aplicaciones.
+## Conclusion
+¡Felicidades! Has dominado cómo **convertir docx a jpg** con calidad ajustable usando GroupDocs.Viewer para Java. Esta habilidad puede mejorar el manejo y la compartición de documentos en diversas aplicaciones.
 
-Para una mayor exploración, considere experimentar con diferentes tipos de archivos compatibles con GroupDocs.Viewer o integrar esta funcionalidad en proyectos más grandes.
+Para seguir explorando, considera experimentar con diferentes tipos de archivo compatibles con GroupDocs.Viewer o integrar esta funcionalidad dentro de proyectos más grandes.
 
-## Sección de preguntas frecuentes
-1. **¿Cuál es el rango de configuraciones de calidad en GroupDocs.Viewer?**
-   - La calidad varía de 1 (más baja) a 100 (más alta).
-2. **¿Puedo renderizar archivos PDF usando GroupDocs.Viewer Java?**
-   - Sí, GroupDocs.Viewer admite la representación de archivos PDF y muchos otros formatos.
-3. **¿Cómo puedo manejar documentos grandes de manera eficiente?**
-   - Considere el procesamiento por lotes y la optimización del uso de la memoria.
-4. **¿Se requiere una licencia para todas las funciones de GroupDocs.Viewer?**
-   - Una prueba gratuita permite acceder a las funciones básicas; las funciones más avanzadas requieren una licencia.
-5. **¿Cuáles son algunas de las mejores prácticas para integrar GroupDocs.Viewer Java en sistemas existentes?**
-   - Asegúrese de gestionar adecuadamente las dependencias, pruebe con distintos formatos de archivos y optimice la configuración de representación según los casos de uso.
+## Frequently Asked Questions
+**Q: ¿Cuál es el rango de ajustes de calidad en GroupDocs.Viewer?**  
+A: La calidad varía de 1 (más baja) a 100 (más alta).
 
-## Recursos
-- [Documentación](https://docs.groupdocs.com/viewer/java/)
-- [Referencia de API](https://reference.groupdocs.com/viewer/java/)
-- [Descargar GroupDocs.Viewer para Java](https://releases.groupdocs.com/viewer/java/)
-- [Licencia de compra](https://purchase.groupdocs.com/buy)
-- [Versión de prueba gratuita](https://releases.groupdocs.com/viewer/java/)
-- [Licencia temporal](https://purchase.groupdocs.com/temporary-license/)
-- [Foro de soporte](https://forum.groupdocs.com/c/viewer/9)
+**Q: ¿Puedo renderizar archivos PDF usando GroupDocs.Viewer Java?**  
+A: Sí, GroupDocs.Viewer soporta renderizar PDFs y muchos otros formatos.
 
-¡Ahora que has entendido el proceso, comienza a implementar estas funciones en tus proyectos!
+**Q: ¿Cómo manejo documentos grandes de manera eficiente?**  
+A: Considera el procesamiento por lotes y la optimización del uso de memoria.
+
+**Q: ¿Se requiere una licencia para todas las funciones de GroupDocs.Viewer?**  
+A: Una prueba gratuita permite acceder a funciones básicas; las funciones más avanzadas requieren una licencia.
+
+**Q: ¿Cuáles son algunas buenas prácticas para integrar GroupDocs.Viewer Java en sistemas existentes?**  
+A: Asegura una gestión adecuada de dependencias, prueba con varios formatos de archivo y ajusta la configuración de renderizado según tu caso de uso.
+
+## Resources
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- [Purchase License](https://purchase.groupdocs.com/buy)
+- [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-02-15  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs

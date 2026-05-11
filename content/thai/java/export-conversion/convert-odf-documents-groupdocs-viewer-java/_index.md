@@ -1,35 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการแปลงไฟล์ OpenDocument Format (ODF) เป็นรูปแบบต่างๆ เช่น HTML, JPG, PNG และ PDF ได้อย่างง่ายดายโดยใช้ GroupDocs.Viewer สำหรับ Java ค้นพบบทช่วยสอนแบบทีละขั้นตอนพร้อมตัวอย่างโค้ด"
-"title": "แปลง ODF เป็น HTML, JPG, PNG, PDF โดยใช้ GroupDocs.Viewer สำหรับ Java"
-"url": "/th/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-15'
+description: เรียนรู้วิธีแปลงไฟล์ ODF เป็น HTML ด้วย Java โดยใช้ GroupDocs.Viewer
+  for Java รวมถึงวิธีแปลงไฟล์ ODF เป็น PDF และสร้าง PDF จาก ODF ตัวอย่างโค้ดทีละขั้นตอนสำหรับการแสดงผลเป็น
+  HTML, JPG, PNG และ PDF.
+keywords:
+- Convert ODF to HTML
+- GroupDocs.Viewer for Java
+- render ODF documents
+title: แปลง odf html java – แปลง ODF เป็น HTML, JPG, PNG, PDF ด้วย GroupDocs.Viewer
+  สำหรับ Java
 type: docs
+url: /th/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/
+weight: 1
 ---
-# แปลงเอกสาร ODF เป็นรูปแบบต่างๆ โดยใช้ GroupDocs.Viewer สำหรับ Java
 
-## การแนะนำ
+# แปลงเอกสาร ODF เป็นหลายรูปแบบด้วย GroupDocs.Viewer สำหรับ Java
 
-กำลังประสบปัญหาในการแปลงไฟล์ OpenDocument Format (ODF) เป็นรูปแบบต่างๆ เช่น HTML, JPG, PNG หรือ PDF หรือไม่ บทช่วยสอนนี้จะแนะนำคุณเกี่ยวกับการเรนเดอร์เอกสาร FODG/ODG โดยใช้ GroupDocs.Viewer สำหรับ Java เมื่ออ่านจบ คุณจะทราบวิธีการแปลงเอกสาร ODF เป็นรูปแบบต่างๆ โดยใช้ Java
+การแปลงไฟล์ ODF ให้เป็นรูปแบบที่เหมาะกับเว็บหรือการพิมพ์เป็นงานทั่วไปในแอปพลิเคชัน Java สมัยใหม่ ในบทแนะนำนี้คุณจะได้เรียนรู้ **how to convert odf html java** ด้วย GroupDocs.Viewer ซึ่งครอบคลุมการส่งออกเป็น HTML, JPG, PNG, และ PDF เมื่อเสร็จแล้วคุณจะสามารถรวมการแปลง ODF เข้าไปในบริการของคุณ สร้าง PDF จาก ODF และแม้กระทั่งสร้างภาพตัวอย่างเพื่อการเรียกดูเอกสารอย่างรวดเร็วได้
+
+![Convert ODF to HTML, JPG, PNG, PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-odf-to-html-jpg-png-pdf.png)
+
+## คำตอบด่วน
+- **What library should I use?** GroupDocs.Viewer for Java ถูกสร้างขึ้นโดยเฉพาะสำหรับการเรนเดอร์ ODF.  
+- **Which formats can I export to?** รองรับ HTML, JPG, PNG, และ PDF อย่างเต็มที่.  
+- **Do I need a license?** มีใบอนุญาตทดลองใช้ชั่วคราว; ต้องมีใบอนุญาตแบบชำระเงินสำหรับการใช้งานจริง.  
+- **What Java version is required?** Java 8 หรือสูงกว่า.  
+- **Can I batch‑process many ODF files?** ได้ – เพียงวนลูปไฟล์ด้วยโค้ด Viewer เดียวกัน.
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่จะเริ่มต้น ให้แน่ใจว่าคุณมี:
+ก่อนเริ่มต้น ให้แน่ใจว่าคุณมี:
 
-### ไลบรารีและการอ้างอิงที่จำเป็น
-- GroupDocs.Viewer สำหรับ Java (สามารถบูรณาการได้ผ่าน Maven)
+### ไลบรารีและการพึ่งพาที่จำเป็น
+- GroupDocs.Viewer for Java (สามารถรวมผ่าน Maven ได้)
 
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-- ติดตั้ง JDK แล้ว (แนะนำ Java 8 ขึ้นไป)
-- IDE ที่เข้ากันได้ เช่น IntelliJ IDEA หรือ Eclipse
+### ความต้องการการตั้งค่าสภาพแวดล้อม
+- ติดตั้ง JDK (แนะนำ Java 8 หรือสูงกว่า)  
+- IDE ที่รองรับ เช่น IntelliJ IDEA หรือ Eclipse
 
-### ข้อกำหนดเบื้องต้นของความรู้
-- ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรมภาษา Java
-- ความคุ้นเคยกับ Maven สำหรับการจัดการการอ้างอิง
+### ความรู้เบื้องต้นที่จำเป็น
+- ความเข้าใจพื้นฐานของการเขียนโปรแกรม Java  
+- ความคุ้นเคยกับ Maven สำหรับการจัดการการพึ่งพา  
 
 ## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 
-เพิ่มสิ่งต่อไปนี้ลงในของคุณ `pom.xml`-
+เพิ่มโค้ดต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -48,124 +63,149 @@ type: docs
 </dependencies>
 ```
 
-### การขอใบอนุญาต
+### การรับใบอนุญาต
 
-GroupDocs เสนอตัวเลือกทดลองใช้งานฟรีหรือซื้อ รับใบอนุญาตชั่วคราว [ที่นี่](https://purchase.groupdocs.com/temporary-license/) เพื่อสำรวจศักยภาพอย่างเต็มรูปแบบโดยไม่มีข้อจำกัด
+GroupDocs มีตัวเลือกการทดลองใช้ฟรีหรือการซื้อใบอนุญาต. รับใบอนุญาตชั่วคราว [ที่นี่](https://purchase.groupdocs.com/temporary-license/) เพื่อสำรวจความสามารถทั้งหมดโดยไม่มีข้อจำกัด.
 
-## คู่มือการใช้งาน
+## คู่มือการดำเนินการ
 
-เราจะแบ่งคุณลักษณะแต่ละอย่างออกเป็นขั้นตอนเชิงตรรกะ:
+เราจะแบ่งคุณลักษณะแต่ละอย่างเป็นขั้นตอนเชิงตรรกะ โดยแสดงอย่างชัดเจน **how to convert odf html java** สำหรับแต่ละรูปแบบเป้าหมาย.
 
-### คุณสมบัติ 1: เรนเดอร์เอกสาร FODG/ODG เป็น HTML
+### ฟีเจอร์ 1: แสดงเอกสาร FODG/ODG เป็น HTML
 
-#### ภาพรวม
-การแปลงเอกสาร ODF เป็น HTML ช่วยให้สามารถแสดงในเว็บเบราว์เซอร์ เหมาะสำหรับการแบ่งปันออนไลน์หรือรวมเข้ากับแอพพลิเคชันเว็บ
+#### ทำไมต้องแปลงเป็น HTML?
+การแปลงเป็น HTML ช่วยให้คุณแสดงเนื้อหา ODF โดยตรงในเบราว์เซอร์ ฝังในพอร์ทัลเว็บ หรือส่งต่อให้กับเครื่องมือแก้ไขส่วนหน้า.
 
 #### ขั้นตอนการดำเนินการ
-**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีเอาต์พุต**
-กำหนดว่าจะจัดเก็บไฟล์ที่แปลงแล้วไว้ที่ไหน:
+**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีผลลัพธ์**  
+กำหนดตำแหน่งที่ไฟล์ HTML ที่แปลงแล้วจะถูกจัดเก็บ:
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("fodg_result.html");
 ```
-**ขั้นตอนที่ 2: เริ่มต้น Viewer และเรนเดอร์เป็น HTML**
-ใช้ `HtmlViewOptions` สำหรับการเรนเดอร์ด้วยรีซอร์สที่ฝังไว้:
+
+**ขั้นตอนที่ 2: เริ่มต้น Viewer และแปลงเป็น HTML**  
+ใช้ `HtmlViewOptions` พร้อมทรัพยากรฝังตัวเพื่อให้หน้าเป็นอิสระ:
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODG")) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
     viewer.view(options);
 }
 ```
-*คำอธิบาย: `HtmlViewOptions.forEmbeddedResources()` กำหนดค่าการเรนเดอร์เพื่อฝังทรัพยากรลงใน HTML โดยตรง*
+*คำอธิบาย: `HtmlViewOptions.forEmbeddedResources()` ฝังรูปภาพ, CSS, และฟอนต์โดยตรงลงใน HTML ทำให้ไฟล์พกพาได้*
 
-### คุณสมบัติ 2: เรนเดอร์เอกสาร FODG/ODG เป็น JPG
+### ฟีเจอร์ 2: แสดงเอกสาร FODG/ODG เป็น JPG
 
-#### ภาพรวม
-การเรนเดอร์เอกสารเป็น JPEG เหมาะอย่างยิ่งสำหรับการดูตัวอย่างเนื้อหาที่ไม่จำเป็นต้องใช้ภาพความละเอียดสูง
+#### ทำไมต้องแปลงเป็น JPG?
+ภาพ JPG มีขนาดไฟล์เบาและเหมาะสำหรับภาพตัวอย่างขนาดเล็กหรือแนบอีเมลที่ขนาดไฟล์สำคัญ.
 
 #### ขั้นตอนการดำเนินการ
-**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีเอาต์พุต**
-กำหนดเส้นทางไฟล์เอาท์พุตของคุณ:
+**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีผลลัพธ์**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("fodg_result.jpg");
 ```
-**ขั้นตอนที่ 2: เริ่มต้น Viewer และเรนเดอร์เป็น JPG**
-ตั้งค่า `JpgViewOptions` สำหรับการเรนเดอร์:
+
+**ขั้นตอนที่ 2: เริ่มต้น Viewer และแปลงเป็น JPG**
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODG")) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
-*คำอธิบาย: `JpgViewOptions` กำหนดค่าเอกสารให้แสดงเป็นภาพ JPEG*
+*คำอธิบาย: `JpgViewOptions` บอก Viewer ให้เรสเตอร์ไลซ์แต่ละหน้าเป็นภาพ JPEG*
 
-### คุณสมบัติที่ 3: เรนเดอร์เอกสาร FODG/ODG เป็น PNG
+### ฟีเจอร์ 3: แสดงเอกสาร FODG/ODG เป็น PNG
 
-#### ภาพรวม
-รูปแบบ PNG เหมาะสำหรับภาพคุณภาพสูงแบบไม่สูญเสียข้อมูล เหมาะสำหรับเมื่อความชัดเจนและรายละเอียดมีความสำคัญ
+#### ทำไมต้องแปลงเป็น PNG?
+PNG ให้การบีบอัดแบบไม่สูญเสียคุณภาพ รักษาข้อความและกราฟิกคมชัด—เหมาะสำหรับภาพตัวอย่างคุณภาพสูง.
 
 #### ขั้นตอนการดำเนินการ
-**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีเอาต์พุต**
-กำหนดเส้นทางไฟล์เอาท์พุตของคุณ:
+**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีผลลัพธ์**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("fodg_result.png");
 ```
-**ขั้นตอนที่ 2: เริ่มต้น Viewer และเรนเดอร์เป็น PNG**
-ตั้งค่า `PngViewOptions` สำหรับการเรนเดอร์:
+
+**ขั้นตอนที่ 2: เริ่มต้น Viewer และแปลงเป็น PNG**
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODG")) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
-*คำอธิบาย: `PngViewOptions` กำหนดค่าเอกสารให้แสดงเป็นภาพ PNG*
+*คำอธิบาย: `PngViewOptions` แสดงแต่ละหน้าเป็นภาพ PNG รักษารายละเอียดภาพทั้งหมด*
 
-### คุณสมบัติที่ 4: เรนเดอร์เอกสาร FODG/ODG เป็น PDF
+### ฟีเจอร์ 4: แสดงเอกสาร FODG/ODG เป็น PDF
 
-#### ภาพรวม
-การแปลงเอกสารเป็น PDF ช่วยรักษาการจัดรูปแบบข้ามแพลตฟอร์ม ทำให้เป็นที่นิยมในการสร้างไฟล์ที่สามารถแชร์และพิมพ์ได้
+#### ทำไมต้องแปลงเป็น PDF?
+PDF เป็นรูปแบบมาตรฐานสำหรับการแชร์และพิมพ์พร้อมคงรูปแบบข้ามแพลตฟอร์ม ซึ่งยังสอดคล้องกับคีย์เวิร์ดรอง **convert odf files pdf**.
 
 #### ขั้นตอนการดำเนินการ
-**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีเอาต์พุต**
-กำหนดเส้นทางไฟล์เอาท์พุตของคุณ:
+**ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีผลลัพธ์**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("fodg_result.pdf");
 ```
-**ขั้นตอนที่ 2: เริ่มต้นโปรแกรม Viewer และเรนเดอร์เป็น PDF**
-ตั้งค่า `PdfViewOptions` สำหรับการเรนเดอร์:
+
+**ขั้นตอนที่ 2: เริ่มต้น Viewer และแปลงเป็น PDF**
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_FODG")) {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
-*คำอธิบาย: `PdfViewOptions` กำหนดค่าเอกสารให้แสดงเป็นไฟล์ PDF*
+*คำอธิบาย: `PdfViewOptions` สร้าง PDF ที่สะท้อนเค้าโครงเดิมของ ODF อย่างมีประสิทธิภาพ **generate pdf from odf**.*
 
 ## การประยุกต์ใช้งานจริง
-1. **การบูรณาการเว็บไซต์**:ฝังเอกสารที่แสดงผล HTML ลงในแอปพลิเคชั่นเว็บเพื่อให้เข้าถึงได้ง่าย
-2. **การดูตัวอย่างเอกสาร**:ใช้รูปแบบ JPG หรือ PNG เพื่อดูตัวอย่างอย่างรวดเร็วในระบบการจัดการเนื้อหา
-3. **การสร้างรายงาน**:สร้างรายงานที่สามารถพิมพ์ได้จากไฟล์ ODF ในรูปแบบ PDF
-4. **การดูแบบออฟไลน์**:บันทึกเอกสารเป็นรูปภาพ (JPG/PNG) เพื่อดูแบบออฟไลน์บนอุปกรณ์ที่ไม่สามารถเข้าถึงอินเทอร์เน็ต
+1. **Web Integration** – ฝังเอกสารที่แปลงเป็น HTML โดยตรงในพอร์ทัลของคุณเพื่อการดูแบบทันที.  
+2. **Document Previewing** – ใช้ภาพย่อ JPG หรือ PNG ในระบบจัดการเนื้อหาเพื่อให้ผู้ใช้ได้ชมอย่างรวดเร็ว.  
+3. **Report Generation** – แปลงรายงาน ODF เป็น PDF เพื่อการแจกจ่ายอย่างเป็นทางการหรือการเก็บถาวร.  
+4. **Offline Viewing** – เก็บเวอร์ชันภาพบนอุปกรณ์ที่ไม่มีโปรแกรมอ่าน ODF.
 
-## การพิจารณาประสิทธิภาพ
-- **เพิ่มประสิทธิภาพการใช้ทรัพยากร**:ให้แน่ใจว่ามีพื้นที่เก็บข้อมูลเพียงพอและจัดการไฟล์ขนาดใหญ่ได้อย่างมีประสิทธิภาพ
-- **การจัดการหน่วยความจำ**:ใช้แนวทางการเขียนโค้ด Java ที่มีประสิทธิภาพในการจัดการหน่วยความจำ โดยเฉพาะอย่างยิ่งกับเอกสารขนาดใหญ่
-- **แนวทางปฏิบัติที่ดีที่สุด**อัปเดต GroupDocs.Viewer เป็นประจำเพื่อปรับปรุงประสิทธิภาพและแก้ไขข้อบกพร่อง
+## พิจารณาด้านประสิทธิภาพ
+- **Optimize Resource Usage** – เก็บไฟล์ผลลัพธ์บน SSD ที่เร็วและทำความสะอาดไฟล์ชั่วคราวหลังการประมวลผล.  
+- **Memory Management** – ห่อ `Viewer` ด้วยบล็อก try‑with‑resources (ตามที่แสดง) เพื่อรับประกันการทำลายที่เหมาะสม.  
+- **Best Practices** – รักษา GroupDocs.Viewer ให้เป็นเวอร์ชันล่าสุด; การปล่อยใหม่ที่ใหม่กว่าจะมีการปรับปรุงประสิทธิภาพและแก้บั๊ก.
 
-## บทสรุป
-บทช่วยสอนนี้จะอธิบายการแปลงเอกสาร ODF เป็นรูปแบบต่างๆ โดยใช้ GroupDocs.Viewer สำหรับ Java รวมฟีเจอร์เหล่านี้เข้ากับแอปพลิเคชันเว็บหรือสร้างรายงานที่พิมพ์ได้อย่างมีประสิทธิภาพ สำรวจฟีเจอร์ขั้นสูงของ GroupDocs.Viewer เพื่อเพิ่มประสิทธิภาพให้กับโครงการของคุณ
+## ปัญหาทั่วไปและวิธีแก้
 
-## ส่วนคำถามที่พบบ่อย
-1. **ฉันสามารถแปลงไฟล์ ODF ขนาดใหญ่ได้หรือไม่?**
-   - ใช่ แต่ต้องมีทรัพยากรระบบที่เพียงพอ
-2. **ฉันจะจัดการเรื่องใบอนุญาตสำหรับการใช้งานในการผลิตได้อย่างไร**
-   - ซื้อใบอนุญาตจาก [เว็บไซต์ GroupDocs](https://purchase-groupdocs.com/buy).
-3. **สามารถแปลงเอกสาร ODF เป็นจำนวนมากได้หรือไม่**
-   - ใช่ ทำการประมวลผลไฟล์หลายไฟล์แบบอัตโนมัติและเป็นชุดโดยใช้ความสามารถในการจัดการไฟล์ของ Java
-4. **จะเกิดอะไรขึ้นหากฉันพบข้อผิดพลาดในการเรนเดอร์?**
-   - ตรวจสอบความเข้ากันได้ของรูปแบบเอกสารและให้แน่ใจว่า GroupDocs.Viewer เป็นเวอร์ชันล่าสุด
-5. **คุณสมบัติเหล่านี้สามารถรวมเข้ากับระบบที่มีอยู่ได้หรือไม่**
-   - แน่นอน! GroupDocs.Viewer สำหรับ Java สามารถรวมเข้ากับระบบต่างๆ ได้อย่างง่ายดาย
+| อาการ | สาเหตุที่เป็นไปได้ | วิธีแก้ |
+|---------|--------------|-----|
+| **OutOfMemoryError** ขณะแปลงไฟล์ ODF ขนาดใหญ่ | ขนาด heap ไม่เพียงพอ | เพิ่มค่า JVM `-Xmx` หรือประมวลผลหน้าเป็นชุด |
+| **Missing images in HTML output** | Resources not embedded | Use `HtmlViewOptions.forEmbeddedResources` (already demonstrated) |
+| **Blank PDF pages** | Document path incorrect | Verify the absolute path to `SAMPLE_FODG` and ensure the file is readable |
+
+## คำถามที่พบบ่อย
+
+**Q: Can I convert large ODF files?**  
+A: ใช่ แต่ต้องแน่ใจว่าเซิร์ฟเวอร์ของคุณมีหน่วยความจำและพื้นที่ดิสก์เพียงพอ; ควรพิจารณาประมวลผลหน้าเป็นขั้นตอน.
+
+**Q: How do I handle licensing for production use?**  
+A: ซื้อใบอนุญาตจาก [GroupDocs website](https://purchase.groupdocs.com/buy). ใบอนุญาตทดลองใช้มีไว้สำหรับการประเมินเท่านั้น.
+
+**Q: Is it possible to convert ODF documents in bulk?**  
+A: แน่นอน. วนลูปผ่านคอลเลกชันของเส้นทางไฟล์และใช้โค้ด Viewer เดียวกันสำหรับแต่ละไฟล์.
+
+**Q: What if I encounter rendering errors?**  
+A: ตรวจสอบว่าไฟล์ ODF ปฏิบัติตามสเปค OpenDocument และคุณกำลังใช้ GroupDocs.Viewer เวอร์ชันล่าสุด.
+
+**Q: Can these features be integrated into existing systems?**  
+A: ได้, GroupDocs.Viewer for Java มี API ที่สะอาดสามารถเรียกใช้จากเว็บเซอร์วิส, งานแบตช์, หรือแอปพลิเคชันเดสก์ท็อป.
+
+## สรุป
+คู่มือนี้ได้สาธิต **how to convert odf html java** ด้วย GroupDocs.Viewer สำหรับ Java ครอบคลุมการส่งออกเป็น HTML, JPG, PNG, และ PDF คุณจึงมีพื้นฐานที่แข็งแกร่งเพื่อฝังการแปลง ODF เข้าในพอร์ทัลเว็บ, สร้าง PDF ที่พิมพ์ได้, หรือสร้างภาพตัวอย่างสำหรับโซลูชันที่ใช้ Java ใด ๆ. สำรวจคุณลักษณะเพิ่มเติมของ Viewer—เช่นการใส่น้ำลายน้ำหรือการเรนเดอร์ช่วงหน้า—to further tailor the output to your project's needs.
+
+---
+
+**Last Updated:** 2026-02-15  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs

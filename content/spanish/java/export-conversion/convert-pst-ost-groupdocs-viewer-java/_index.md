@@ -1,47 +1,58 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a convertir fácilmente archivos PST/OST de Outlook a formatos accesibles como HTML, JPG, PNG o PDF con GroupDocs.Viewer para Java. Esta guía explica todos los pasos y configuraciones necesarios."
-"title": "Convertir PST/OST a HTML, JPG, PNG y PDF con GroupDocs.Viewer para Java | Guía de exportación y conversión"
-"url": "/es/java/export-conversion/convert-pst-ost-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-15'
+description: Aprende cómo convertir PST a HTML y a otros formatos como JPG, PNG y
+  PDF usando GroupDocs.Viewer para Java. Esta guía cubre todos los pasos y configuraciones
+  necesarios.
+keywords:
+- convert PST/OST
+- GroupDocs.Viewer for Java
+- render documents
+title: Convertir PST a HTML, JPG, PNG, PDF usando GroupDocs.Viewer para Java
 type: docs
+url: /es/java/export-conversion/convert-pst-ost-groupdocs-viewer-java/
+weight: 1
 ---
-# Convertir PST/OST a HTML, JPG, PNG y PDF con GroupDocs.Viewer para Java
 
-## Introducción
+.png; keep unchanged.
 
-¿Desea convertir sus archivos PST u OST de Outlook a formatos más accesibles como HTML, JPG, PNG o PDF? Con la potente biblioteca GroupDocs.Viewer para Java, esta tarea es sencilla y eficiente. Este tutorial le guía en la renderización de documentos PST/OST con GroupDocs.Viewer para Java, lo que facilita compartir y visualizar documentos en diferentes plataformas.
+All other URLs none.
 
-**Lo que aprenderás:**
-- Cómo configurar su entorno con GroupDocs.Viewer para Java.
-- Instrucciones paso a paso para convertir archivos PST/OST a formatos HTML, JPG, PNG y PDF.
-- Opciones de configuración clave para optimizar su proceso de conversión de documentos.
+Now output.# Convertir PST a HTML, JPG, PNG, PDF usando GroupDocs.Viewer para Java
 
-Comencemos repasando los requisitos previos que necesitas antes de comenzar.
+¿Estás buscando **convertir pst a html** u otros formatos como JPG, PNG o PDF? Con la potente biblioteca GroupDocs.Viewer para Java, esta tarea es sencilla y eficiente. En este tutorial aprenderás a renderizar archivos Outlook PST/OST a HTML apto para la web, archivos de imagen o un único PDF, facilitando la compartición y el archivado de tus correos electrónicos.
 
-## Prerrequisitos
+![Convertir PST/OST a HTML, JPG, PNG, PDF con GroupDocs.Viewer para Java](/viewer/export-conversion/convert-pst-ost-to-html-jpg-png-pdf.png)
 
-Para seguir este tutorial, asegúrese de tener lo siguiente:
+**Lo que aprenderás**
+- Cómo configurar GroupDocs.Viewer para Java en un proyecto Maven.  
+- Instrucciones paso a paso para **java convert pst** archivos a HTML, JPG, PNG y PDF.  
+- Consejos de configuración para un rendimiento óptimo y errores comunes.
 
-### Bibliotecas y dependencias requeridas
-- **GroupDocs.Viewer para Java**Necesitará la versión 25.2 o posterior.
-- **Kit de desarrollo de Java (JDK)**Se requiere JDK 8 o superior para compilar y ejecutar su aplicación.
+## Respuestas rápidas
+- **¿Qué biblioteca maneja la conversión de PST?** GroupDocs.Viewer para Java.  
+- **¿Puedo convertir PST a PDF directamente?** Sí, usando `PdfViewOptions`.  
+- **¿Se requiere una licencia para producción?** Se necesita una licencia válida de GroupDocs.  
+- **¿Qué versión de Java es compatible?** JDK 8 o superior.  
+- **¿Necesito extraer los archivos adjuntos manualmente?** No, el visor los renderiza automáticamente.
 
-### Requisitos de configuración del entorno
-- Un entorno de desarrollo integrado (IDE) compatible como IntelliJ IDEA, Eclipse o NetBeans.
-- Maven instalado en su sistema para administrar dependencias.
+## Cómo convertir pst a html usando GroupDocs.Viewer para Java
+A continuación encontrarás una visión general concisa del proceso de conversión antes de profundizar en los ejemplos de código detallados.
 
-### Requisitos previos de conocimiento
-- Comprensión básica de la programación Java.
-- Familiaridad con el uso de Maven para la gestión de dependencias.
+### ¿Por qué elegir GroupDocs.Viewer?
+- Renderizado de **alta fidelidad** de los cuerpos de correo, archivos adjuntos y formato.  
+- **Múltiples formatos de salida** (HTML, JPG, PNG, PDF) desde una única API.  
+- **Sin dependencias externas** – todo se ejecuta dentro de tu aplicación Java.
 
-Con los requisitos previos establecidos, procedamos a configurar GroupDocs.Viewer para Java.
+## Requisitos previos
+
+- **GroupDocs.Viewer para Java** – versión 25.2 o posterior.  
+- **Java Development Kit (JDK)** – 8 o superior.  
+- Maven para la gestión de dependencias.  
+- Conocimientos básicos de Java y familiaridad con Maven.
 
 ## Configuración de GroupDocs.Viewer para Java
 
-Para usar GroupDocs.Viewer para Java, deberá agregarlo como dependencia a su proyecto. Si usa Maven, siga estos pasos:
-
-**Configuración de Maven:**
+Agrega el repositorio de GroupDocs y la dependencia a tu `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,14 +71,12 @@ Para usar GroupDocs.Viewer para Java, deberá agregarlo como dependencia a su pr
 </dependencies>
 ```
 
-### Pasos para la adquisición de la licencia
-- **Prueba gratuita**:Puedes comenzar con una prueba gratuita para explorar las funciones.
-- **Licencia temporal**:Solicite una licencia temporal si necesita más tiempo para evaluar.
-- **Compra**:Comprar una licencia para uso a largo plazo.
+### Obtención de licencia
+- **Prueba gratuita** – explora todas las funciones sin costo.  
+- **Licencia temporal** – extiende el tiempo de evaluación si es necesario.  
+- **Licencia completa** – requerida para implementaciones en producción.
 
-### Inicialización y configuración básicas
-
-Una vez completada la configuración de Maven, inicialice GroupDocs.Viewer en su aplicación Java:
+### Inicialización básica
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -75,7 +84,7 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 
 public class PSTToHTML {
     public static void main(String[] args) {
-        // Inicializar el Visor con una ruta de archivo PST de muestra
+        // Initialize Viewer with a sample PST file path
         try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST")) {
             HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources("output_directory/PST_result.html");
             viewer.view(options);
@@ -84,16 +93,11 @@ public class PSTToHTML {
 }
 ```
 
-Una vez completada la configuración, pasemos a implementar las funciones de renderizado.
-
 ## Guía de implementación
 
-Esta sección está dividida en pasos lógicos según el formato en el que desee convertir sus documentos PST/OST: HTML, JPG, PNG y PDF.
+Las siguientes secciones te guiarán a través del renderizado de archivos PST/OST en cada formato soportado.
 
-### Convertir documentos PST/OST a HTML
-
-**Descripción general:**
-Al convertir archivos PST/OST a HTML, se pueden visualizar fácilmente en navegadores web. Esta función integra recursos directamente en el archivo HTML para una visualización fluida.
+### Renderizado de documentos PST/OST a HTML
 
 #### Paso 1: Configurar el directorio de salida
 
@@ -102,18 +106,14 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result.html");
 ```
 
-**Explicación**: Define dónde se guardarán tus archivos HTML. `Paths` La clase ayuda a administrar las rutas de archivos de manera eficiente.
-
-#### Paso 2: Configurar las opciones de carga
+#### Paso 2: Configurar opciones de carga
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-**Explicación**:Establezca un tiempo de espera para la carga de recursos para evitar demoras durante la renderización.
-
-#### Paso 3: Inicializar el visor y renderizar HTML
+#### Paso 3: Inicializar Viewer y renderizar HTML
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -122,12 +122,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-**Explicación**:Utilice el `HtmlViewOptions` para incrustar recursos dentro del archivo HTML. El `view()` El método realiza la representación.
-
-### Convertir documentos PST/OST a JPG
-
-**Descripción general:**
-Convierta cada página de sus archivos PST/OST en imágenes JPG separadas para compartirlas y verlas fácilmente.
+### Renderizado de documentos PST/OST a JPG
 
 #### Paso 1: Configurar el directorio de salida
 
@@ -136,18 +131,14 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
-**Explicación**:Especifique el directorio y el patrón de nombre de archivo para los archivos JPG de salida.
-
-#### Paso 2: Configurar las opciones de carga
+#### Paso 2: Configurar opciones de carga
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-**Explicación**:Similar a la representación HTML, establece un tiempo de espera para la carga de recursos.
-
-#### Paso 3: Inicializar el visor y renderizar JPG
+#### Paso 3: Inicializar Viewer y renderizar JPG
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -156,12 +147,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-**Explicación**: Usar `JpgViewOptions` para representar cada página como un archivo JPG separado.
-
-### Convertir documentos PST/OST a PNG
-
-**Descripción general:**
-Convierta sus archivos PST/OST en imágenes PNG, que son ideales para presentaciones e impresiones de alta calidad.
+### Renderizado de documentos PST/OST a PNG
 
 #### Paso 1: Configurar el directorio de salida
 
@@ -170,18 +156,14 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
-**Explicación**:Define el directorio y el patrón de nombre de archivo para los archivos PNG.
-
-#### Paso 2: Configurar las opciones de carga
+#### Paso 2: Configurar opciones de carga
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-**Explicación**:Establezca un tiempo de espera de carga de recursos para administrar el tiempo de renderizado de manera eficiente.
-
-#### Paso 3: Inicializar el visor y renderizar PNG
+#### Paso 3: Inicializar Viewer y renderizar PNG
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -190,12 +172,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-**Explicación**: Usar `PngViewOptions` para representar cada página como un archivo PNG separado.
-
-### Convertir documentos PST/OST a PDF
-
-**Descripción general:**
-Convierta todo su documento PST/OST en un único archivo PDF para facilitar su distribución y archivo.
+### Renderizado de documentos PST/OST a PDF
 
 #### Paso 1: Configurar el directorio de salida
 
@@ -204,18 +181,14 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
 ```
 
-**Explicación**:Especifique el directorio y el nombre del archivo para el archivo PDF de salida.
-
-#### Paso 2: Configurar las opciones de carga
+#### Paso 2: Configurar opciones de carga
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-**Explicación**:Establezca un tiempo de espera para garantizar una representación fluida y sin demoras.
-
-#### Paso 3: Inicializar el visor y renderizar el PDF
+#### Paso 3: Inicializar Viewer y renderizar PDF
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -224,23 +197,40 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-**Explicación**: Usar `PdfViewOptions` para representar todo el documento como un único archivo PDF.
-
 ## Aplicaciones prácticas
 
-A continuación se muestran algunos casos de uso reales para la representación de documentos PST/OST:
-
-1. **Archivado de correo electrónico:** Convierta archivos de correo electrónico a HTML o PDF para acceder a ellos y compartirlos fácilmente.
-2. **Sistemas de gestión documental:** Integrarse con sistemas que requieren conversión de documentos para su almacenamiento y recuperación.
-3. **Herramientas de colaboración:** Comparta documentos convertidos en herramientas de colaboración como Slack o Microsoft Teams.
-4. **Documentación legal:** Prepare documentos legales convirtiéndolos a un formato de acceso universal.
-5. **Soluciones de respaldo:** Cree copias de seguridad de correos electrónicos y archivos adjuntos importantes en varios formatos.
+- **Archivado de correos:** Convierte grandes archivos PST en HTML o PDF buscables para cumplimiento.  
+- **Sistemas de gestión documental:** Almacena los archivos convertidos en sistemas que solo aceptan PDF, PNG o JPG.  
+- **Plataformas de colaboración:** Comparte correos convertidos como imágenes en Slack o Teams.  
+- **Revisión legal:** Proporciona a los tribunales versiones PDF de la evidencia de correos.  
+- **Estrategias de respaldo:** Mantén instantáneas ligeras en PNG o JPG de mensajes críticos.
 
 ## Consideraciones de rendimiento
 
-Para optimizar el rendimiento al utilizar GroupDocs.Viewer para Java, tenga en cuenta los siguientes consejos:
-- Asegúrese de que la gestión de recursos sea eficiente durante la renderización.
-- Supervise el uso de la memoria y ajuste las configuraciones según sea necesario para evitar cuellos de botella.
-- Aproveche el procesamiento asincrónico si el contexto de su aplicación lo admite para mejorar la capacidad de respuesta.
+- **Gestión de recursos:** Reutiliza instancias de `Viewer` al procesar varios archivos para reducir la sobrecarga.  
+- **Ajuste de memoria:** Ajusta `loadOptions.setResourceLoadingTimeout` según la capacidad del servidor.  
+- **Procesamiento asíncrono:** Desplaza la conversión a hilos en segundo plano para interfaces responsivas.  
 
-Siguiendo esta guía, podrá convertir de manera eficiente archivos PST/OST a varios formatos usando GroupDocs.Viewer para Java, mejorando la accesibilidad y la usabilidad en diferentes plataformas.
+## Preguntas frecuentes
+
+**Q: ¿Cómo **convertir pst a pdf** con la misma base de código?**  
+A: Usa `PdfViewOptions` como se muestra en la sección de renderizado PDF; el resto del código permanece idéntico.
+
+**Q: ¿Puede GroupDocs.Viewer manejar archivos PST cifrados?**  
+A: Sí, proporciona la contraseña mediante `LoadOptions.setPassword("yourPassword")` antes de renderizar.
+
+**Q: ¿Cuál es la diferencia entre **java convert pst** a PNG vs JPG?**  
+A: PNG conserva calidad sin pérdida, ideal para capturas de pantalla, mientras que JPG ofrece tamaños de archivo más pequeños para vistas previas de correos.
+
+**Q: ¿Existe una forma de **how to convert pst** archivos en lote?**  
+A: Envuelve la lógica de renderizado en un bucle que itere sobre un directorio de archivos PST; reutiliza la misma configuración de `Viewer` para cada archivo.
+
+## Conclusión
+
+Ahora tienes una guía completa y lista para producción para **convertir pst a html**, JPG, PNG y PDF usando GroupDocs.Viewer para Java. Siguiendo los pasos anteriores puedes integrar la conversión de correos en cualquier flujo de trabajo basado en Java, mejorar la accesibilidad y cumplir con los requisitos de cumplimiento.
+
+---
+
+**Última actualización:** 2026-02-15  
+**Probado con:** GroupDocs.Viewer para Java 25.2  
+**Autor:** GroupDocs

@@ -1,9 +1,8 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2025-12-15
-description: Lär dig GroupDocs Viewer-handledningen för att rendera och visa över
-  170 dokumentformat i .NET och Java. Upptäck rendering, cachning, vattenstämplar
-  och mer.
+date: 2026-02-15
+description: Utforska GroupDocs Viewer‑handledningen för rendering, cachning, vattenstämplar
+  och dokumentrendering i över 170 format i .NET och Java.
 is_root: true
 linktitle: GroupDocs Viewer Tutorials
 title: GroupDocs Viewer-handledning – Rendera och visa dokument
@@ -12,29 +11,38 @@ url: /sv/
 weight: 11
 ---
 
-# GroupDocs.Viewer-handledning
+# GroupDocs Viewer handledning – Rendera och visa dokument
 
-Välkommen till hubben för GroupDocs.Viewer-handledningar. I den här **GroupDocs Viewer tutorial** hittar du en omfattande samling guider som hjälper dig att bemästra våra kraftfulla dokumentvisnings‑API:er för .NET och Java. Oavsett om du bygger en webbapp, en skrivbordslösning eller en mobilupplevelse, gör GroupDocs.Viewer det möjligt att sömlöst rendera och visa en mängd olika dokumentformat, inklusive PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, bilder och mer.
+Välkommen till **GroupDocs Viewer handledning** hubben. I den här handledningen hittar du en omfattande samling guider som hjälper dig att bemästra våra kraftfulla dokumentvisnings‑API:er för .NET och Java. Oavsett om du bygger en webbapp, en skrivbordslösning eller en mobilupplevelse, gör GroupDocs Viewer det möjligt att sömlöst rendera och visa en mängd olika dokumentformat, inklusive PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, bilder och mer.
 
-## Quick Answers
-- **Vad är GroupDocs Viewer‑handledningen?** En steg‑för‑steg‑guide för att rendera, konvertera och visa över 170 filformat med hjälp av GroupDocs.Viewer för .NET och Java.  
+## Snabba svar
+- **Vad är GroupDocs Viewer handledning?** En steg‑för‑steg‑guide för att rendera, konvertera och visa över 170 filformat med GroupDocs Viewer för .NET och Java.  
 - **Vilka plattformar stöds?** .NET (Framework, Core, .NET 5/6) och Java (8+).  
 - **Kan jag rendera PDF‑filer och bilder?** Ja – du kan exportera till HTML, JPEG, PNG och PDF.  
 - **Finns caching tillgängligt?** Absolut; dedikerade handledningar täcker caching och resurshantering.  
 - **Behöver jag en licens?** En gratis provperiod finns tillgänglig; en kommersiell licens krävs för produktionsanvändning.
 
-## Vad är GroupDocs Viewer‑handledningen?
-GroupDocs Viewer‑handledningen är en noggrant sammansatt uppsättning exempel som visar hur man laddar, renderar och anpassar dokumentvisning i dina applikationer. Den täcker allt från grundläggande laddning till avancerade scenarier som vattenstämpling, CAD‑layout‑rendering och prestandaoptimering.
+## Vad är GroupDocs Viewer handledning?
+GroupDocs Viewer handledning är en noggrant utvald samling exempel som visar hur man laddar, renderar och anpassar dokumentvisning i dina applikationer. Den täcker allt från grundläggande laddning till avancerade scenarier som vattenstämpling, CAD‑layout‑rendering och prestandaoptimering.
 
-## Varför använda GroupDocs Viewer?
+## Varför använda GroupDocs Viewer för dokumentrendering?
 - **Brett formatstöd:** Över 170 filtyper, inklusive komplexa CAD‑ och kontorsdokument.  
 - **Högupplöst rendering:** Noggrann visuell återgivning i HTML, bilder eller PDF.  
 - **Plattformsoberoende flexibilitet:** Fungerar sömlöst i .NET‑ och Java‑miljöer.  
-- **Utbyggbar arkitektur:** Anpassa renderings‑pipeline, lägg till vattenstämplar eller integrera caching med minimal ansträngning.  
+- **Utbyggbar arkitektur:** Anpassa renderingspipeline, lägg till vattenstämplar eller integrera caching med minimal ansträngning.  
 
 {{% alert color="primary" %}}
-Ge dina .NET‑applikationer kraftfulla dokumentvisningsfunktioner med högupplöst kvalitet. Våra GroupDocs.Viewer‑handledningar för .NET ger dig allt du behöver veta för att integrera en kraftfull dokumentvisare. Lär dig att rendera över 170 dokumentformat till HTML, JPEG, PNG och PDF. Utforska avancerade ämnen som rendering av specifika layouter i CAD‑ritningar, hantering av dokumentbilagor och optimering av prestanda. Börja bygga robusta och professionella dokumentvisningsupplevelser i C#, ASP.NET och andra .NET‑ramverk.
+Ge dina .NET‑applikationer kraftfulla dokumentvisningsfunktioner med högupplöst kvalitet. Våra GroupDocs.Viewer för .NET‑handledningar ger dig allt du behöver veta för att integrera en kraftfull dokumentvisare. Lär dig rendera över 170 dokumentformat till HTML, JPEG, PNG och PDF. Utforska avancerade ämnen som att rendera specifika layouter i CAD‑ritningar, hantera dokumentbilagor och optimera prestanda. Börja bygga robusta och professionella dokumentvisningsupplevelser i C#, ASP.NET och andra .NET‑ramverk.
 {{% /alert %}}
+
+### Så kommer du igång med GroupDocs Viewer i .NET
+Innan du dyker ner i de detaljerade guiderna, se till att du har följande förutsättningar:
+
+- .NET 5/6 eller .NET Framework 4.6+ installerat  
+- En giltig GroupDocs Viewer‑licens (eller en gratis provperiod)  
+- NuGet‑paketet `GroupDocs.Viewer` tillagt i ditt projekt  
+
+När du har konfigurerat miljön kan du utforska handledningarna nedan för att se konkreta kodexempel och rekommendationer för bästa praxis.
 
 Här är länkar till några användbara .NET‑resurser:
 
@@ -44,7 +52,7 @@ Här är länkar till några användbara .NET‑resurser:
 - [Renderingsalternativ](./net/rendering-options/)
 - [Rendera arkivfiler](./net/rendering-archive-files/)
 - [Rendera CAD‑ritningar](./net/rendering-cad-drawings/)
-- [Komma igång](./net/getting-started/)
+- [Kom igång](./net/getting-started/)
 - [Rendera e‑postmeddelanden](./net/rendering-email-messages/)
 - [Bildrendering](./net/image-rendering/)
 - [Rendera dokument till PDF](./net/rendering-documents-pdf/)
@@ -73,12 +81,21 @@ Här är länkar till några användbara .NET‑resurser:
 - [Anpassad rendering](./net/custom-rendering/)
 
 {{% alert color="primary" %}}
-Integrera en mångsidig och effektiv dokumentvisare i dina Java‑applikationer med GroupDocs.Viewer för Java. Våra handledningar guidar dig genom varje steg, från att sätta upp din miljö till att implementera avancerade renderingsfunktioner. Lär dig att visa ett stort antal filformat, inklusive komplexa dokument som CAD‑filer med flera layouter och lösenordsskyddade arkiv. Följ våra exempel för att rendera dokument till HTML5, bilder och PDF, vilket möjliggör plattformsoberoende dokumentvisning med lätthet.
+Integrera en mångsidig och effektiv dokumentvisare i dina Java‑applikationer med GroupDocs.Viewer för Java. Våra handledningar guidar dig genom varje steg, från att sätta upp din miljö till att implementera avancerade renderingsfunktioner. Lär dig visa otaliga filformat, inklusive komplexa dokument som CAD‑filer med flera layouter och lösenordsskyddade arkiv. Följ våra exempel för att rendera dokument till HTML5, bilder och PDF, vilket möjliggör plattformsoberoende dokumentvisning med lätthet.
 {{% /alert %}}
+
+### Så kommer du igång med GroupDocs Viewer i Java
+För Java‑utvecklare är förutsättningarna liknande:
+
+- JDK 8 eller högre installerat  
+- Maven‑ eller Gradle‑byggsystem konfigurerat  
+- GroupDocs Viewer för Java‑beroende tillagt i ditt projekt  
+
+Efter konfigurationen, utforska de Java‑specifika handledningarna nedan.
 
 Här är länkar till några användbara Java‑resurser:
 
-- [Komma igång](./java/getting-started/)
+- [Kom igång](./java/getting-started/)
 - [Dokumentladdning](./java/document-loading/)
 - [Renderingsgrunder](./java/rendering-basics/)
 - [Avancerad rendering](./java/advanced-rendering/)
@@ -104,13 +121,13 @@ A: Ja, du kan skicka lösenordet när du laddar dokumentet via API:et.
 A: Caching lagrar renderade sidor eller bilder, vilket minskar bearbetningstiden för efterföljande förfrågningar.
 
 **Q: Är det möjligt att lägga till vattenstämplar på renderade sidor?**  
-A: Absolut—dedikerade handledningar visar hur man lägger över text‑ eller bildvattenstämplar under rendering.
+A: Absolut—dedikerade handledningar visar hur man överlagrar text‑ eller bildvattenstämplar under rendering.
 
 **Q: Vilka filformat stöds direkt ur lådan?**  
 A: Över 170 format, inklusive PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG och många bildtyper.
 
 ---
 
-**Senast uppdaterad:** 2025-12-15  
+**Senast uppdaterad:** 2026-02-15  
 **Testad med:** GroupDocs.Viewer 23.11 för .NET & Java  
 **Författare:** GroupDocs
