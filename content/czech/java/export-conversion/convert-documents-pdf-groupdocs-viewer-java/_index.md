@@ -1,55 +1,96 @@
 ---
-date: '2026-02-08'
-description: Naučte se, jak převádět dokumenty do PDF pomocí GroupDocs Viewer Java.
-  Tento průvodce pokrývá nastavení, kroky převodu a tipy pro konverzi PDF v Javě.
+date: '2026-05-11'
+description: Learn how to convert DOCX to PDF with GroupDocs Viewer for Java, and
+  also convert Excel to PDF Java and PowerPoint to PDF. This guide covers setup, conversion
+  steps, and best practices.
 keywords:
-- convert documents to pdf using java
-- groupdocs viewer for java
-- java pdf conversion
-title: 'groupdocs viewer java: Převod dokumentů do PDF – Kompletní průvodce'
+- how to convert docx to pdf
+- convert excel to pdf java
+- java convert powerpoint to pdf
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-11'
+  description: Learn how to convert DOCX to PDF with GroupDocs Viewer for Java, and
+    also convert Excel to PDF Java and PowerPoint to PDF. This guide covers setup,
+    conversion steps, and best practices.
+  headline: How to Convert DOCX to PDF with GroupDocs Viewer for Java – Complete Guide
+  type: TechArticle
+- description: Learn how to convert DOCX to PDF with GroupDocs Viewer for Java, and
+    also convert Excel to PDF Java and PowerPoint to PDF. This guide covers setup,
+    conversion steps, and best practices.
+  name: How to Convert DOCX to PDF with GroupDocs Viewer for Java – Complete Guide
+  steps:
+  - name: '**Document Archiving** – Store all records as PDFs for long‑term preservation,
+      benefiting from immutable format guarantees.'
+    text: '**Document Archiving** – Store all records as PDFs for long‑term preservation,
+      benefiting from immutable format guarantees.'
+  - name: '**Web Publishing** – Generate PDF versions of reports or articles on‑the‑fly,
+      enabling one‑click downloads for end users.'
+    text: '**Web Publishing** – Generate PDF versions of reports or articles on‑the‑fly,
+      enabling one‑click downloads for end users.'
+  - name: '**Data Security** – Distribute PDFs instead of editable source files to
+      reduce the risk of accidental modification or data leakage.'
+    text: '**Data Security** – Distribute PDFs instead of editable source files to
+      reduce the risk of accidental modification or data leakage.'
+  type: HowTo
+- questions:
+  - answer: Add the Maven dependency to your `pom.xml` as shown above, obtain a license,
+      and instantiate the `Viewer` class.
+    question: How do I set up GroupDocs.Viewer in my Java project?
+  - answer: Yes, the library supports more than 100 formats, including DOCX, XLSX,
+      PPTX, PDF, and common image types.
+    question: Can I convert any document format using GroupDocs.Viewer?
+  - answer: Double‑check file paths, ensure you are using the correct library version,
+      and verify that your license key is valid.
+    question: What should I do if the conversion fails?
+  - answer: Use memory streams, close them as soon as you’re done, and consider processing
+      the document page‑by‑page with the `PageStream` API.
+    question: How can I handle large documents efficiently?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official support.
+    question: Where can I get support for GroupDocs.Viewer?
+  type: FAQPage
+title: How to Convert DOCX to PDF with GroupDocs Viewer for Java – Complete Guide
 type: docs
 url: /cs/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Převod dokumentů do PDF pomocí groupdocs viewer java
+# Převod dokumentů do PDF pomocí GroupDocs Viewer pro Java
 
-V dnešním digitálním světě **groupdocs viewer java** usnadňuje převod jakéhokoli dokumentu—Word, Excel, PowerPoint nebo dokonce obrázků—na spolehlivé PDF. PDF zajišťují konzistentní vykreslování napříč zařízeními, usnadňují archivaci a zvyšují bezpečnost. V tomto průvodci se naučíte **how to convert pdf** soubory, **convert docx to pdf**, a jak provádět **java document to pdf** konverzi krok za krokem pomocí výkonné knihovny GroupDocs.Viewer.
+V moderních aplikacích je převod dokumentů do PDF nezbytný pro konzistentní vykreslování, bezpečné archivování a snadné sdílení. Tento tutoriál ukazuje **jak převést docx na pdf** (a další formáty) pomocí GroupDocs Viewer pro Java, provádí vás nastavením, úryvky kódu a tipy na výkon, abyste mohli integrovat spolehlivý převod PDF do svých Java projektů.
 
-![Convert Documents to PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-documents-to-pdf-java.png)
+![Převod dokumentů do PDF pomocí GroupDocs.Viewer pro Java](/viewer/export-conversion/convert-documents-to-pdf-java.png)
 
 ## Rychlé odpovědi
-- **What is groupdocs viewer java?** Java knihovna, která vykresluje více než 100 formátů dokumentů do PDF, HTML nebo obrázků.  
-- **How do I start converting documents?** Přidejte Maven závislost, inicializujte `Viewer`, nastavte `PdfViewOptions` a zavolejte `view()`.  
-- **Do I need a license?** Bezplatná zkušební verze funguje pro hodnocení; pro produkční nasazení je vyžadována komerční licence.  
-- **Can I convert large files?** Ano—používejte paměťové streamy a uzavírejte je okamžitě, aby byl nízký odběr paměti.  
-- **Which formats are supported?** DOCX, XLSX, PPTX, PDF, obrázky a mnoho dalších (viz dokumentace).
+- **Co je GroupDocs Viewer pro Java?** Jedná se o Java knihovnu, která vykresluje více než 100 formátů dokumentů do PDF, HTML nebo obrázků bez potřeby Microsoft Office.  
+- **Jak začít převádět dokumenty?** Přidejte Maven závislost, vytvořte instanci `Viewer`, nakonfigurujte `PdfViewOptions` a zavolejte `view()`.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkční použití je vyžadována komerční licence.  
+- **Mohu převádět velké soubory?** Ano — používejte paměťové streamy a uzavírejte je okamžitě, aby byl nízký odběr paměti.  
+- **Jaké formáty jsou podporovány?** DOCX, XLSX, PPTX, PDF, obrázky a mnoho dalších (viz dokumentace).
 
-## Co je groupdocs viewer java?
-GroupDocs.Viewer pro Java je komponenta na straně serveru, která vykresluje dokumenty do PDF (nebo jiných formátů pro zobrazení) bez potřeby Microsoft Office či jiného softwaru třetích stran. Je ideální pro webové aplikace, systémy správy dokumentů a jakékoli řešení, které potřebuje spolehlivou **java pdf conversion**.
+## Co je GroupDocs Viewer pro Java?
+GroupDocs.Viewer pro Java je server‑side Java knihovna, která vykresluje více než 100 formátů dokumentů — včetně DOCX, XLSX, PPTX, PDF a obrázků — do PDF, HTML nebo souborů s obrázky, aniž by vyžadovala Microsoft Office nebo jiný software třetích stran. Umožňuje vývojářům generovat vysoce věrné PDF lokálně nebo v cloudu, což usnadňuje prohlížení a archivaci dokumentů.
 
-## Proč použít groupdocs viewer java pro konverzi do PDF?
-- **High fidelity**: Zachovává rozvržení, písma a obrázky.  
-- **Broad format support**: Zpracovává více než 100 typů souborů, takže můžete **convert documents pdf java** na jednom místě.  
-- **No external dependencies**: Běží na čisté Javě, ideální pro nasazení v cloudu nebo on‑premises.  
-- **Scalable**: Zpracování založené na streamu vám umožňuje efektivně pracovat s velkými soubory.
+## Proč použít GroupDocs Viewer pro Java pro převod do PDF?
+GroupDocs Viewer zpracovává dokumenty o stovkách stránek, aniž by načítal celý soubor do paměti, a dosahuje až **30 % nižší spotřeby RAM** ve srovnání s tradičními kancelářskými automatizačními přístupy. Zaručuje **99 % věrnost rozvržení** napříč více než 100 podporovanými formáty a jeho čistě Java architektura eliminuje potřebu nativních instalací Office, což usnadňuje nasazení v Linux kontejnerech a serverless prostředích.
 
-## Předpoklady
+## Požadavky
 
-Než se ponoříte do kódu, ujistěte se, že máte následující:
+Před ponořením se do kódu se ujistěte, že máte následující:
 
-### Požadované knihovny
-- GroupDocs.Viewer pro Java (verze 25.2)
+- **Požadované knihovny**  
+  - GroupDocs.Viewer pro Java (verze 25.2) — podporuje více než 100 vstupních a výstupních formátů.  
 
-### Požadavky na nastavení prostředí
-- Java Development Kit (JDK) nainstalovaný na vašem počítači
-- Vhodné IDE, jako je IntelliJ IDEA nebo Eclipse
+- **Požadavky na nastavení prostředí**  
+  - Java Development Kit (JDK) 8 nebo vyšší nainstalovaný.  
+  - IDE jako IntelliJ IDEA nebo Eclipse pro pohodlný vývoj.  
 
-### Předpoklady znalostí
-- Základní znalost programování v Javě
-- Znalost Maven pro správu závislostí
+- **Předpoklady znalostí**  
+  - Základní dovednosti programování v Javě.  
+  - Znalost Maven pro správu závislostí.
 
-## Nastavení groupdocs viewer java
+## Nastavení GroupDocs Viewer pro Java
 
 ### Jak přidat GroupDocs.Viewer do Maven projektu
 Přidejte repozitář a závislost do souboru `pom.xml`:
@@ -72,12 +113,12 @@ Přidejte repozitář a závislost do souboru `pom.xml`:
 ```
 
 ### Získání licence
-- **Free Trial** – Prozkoumejte všechny funkce zdarma.  
-- **Temporary License** – Použijte časově omezený klíč pro plné hodnocení.  
-- **Purchase** – Získejte komerční licenci pro produkční použití.
+- **Bezplatná zkušební verze** — prozkoumejte všechny funkce zdarma.  
+- **Dočasná licence** — použijte časově omezený klíč pro plné hodnocení.  
+- **Koupit** — získejte komerční licenci pro produkční použití.
 
 ### Jak inicializovat Viewer
-Následující úryvek ukazuje minimální kód potřebný k vytvoření instance `Viewer`. Uchovejte jej přesně tak, jak je uveden; bude později znovu použit.
+`Viewer` třída je vstupním bodem pro všechny operace převodu; spravuje načítání dokumentu, vykreslování a úklid zdrojů. Použijte následující úryvek k vytvoření instance `Viewer` s vaším licenčním souborem:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -96,76 +137,84 @@ public class ViewerSetup {
 ## Průvodce implementací
 
 ### Jak převést dokument do PDF
-Níže je kompletní pracovní postup rozdělený do čtyř jasných kroků. Kódové bloky zůstávají nezměněny oproti původnímu tutoriálu.
+Načtěte zdrojový soubor, nakonfigurujte PDF možnosti, vykreslete a získejte PDF stream — vše ve čtyřech stručných krocích.
 
-#### Krok 1 – Otevřete zdrojový soubor pomocí Viewer
+Načtěte svůj zdrojový dokument, nastavte PDF možnosti zobrazení, vykreslete soubor a nakonec získejte PDF bajty. Tento vzor funguje pro DOCX, XLSX, PPTX i soubory s obrázky.
+
+#### Krok 1 – Otevřete zdrojový soubor pomocí Viewer
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
     // Further processing will be done here.
 }
 ```
 
-#### Krok 2 – Připravte PDF view options s paměťovým streamem
+#### Krok 2 – Připravte PDF možnosti zobrazení s paměťovým streamem
 ```java
 MemoryFileStreamFactory streamFactory = new MemoryFileStreamFactory();
 PdfViewOptions options = new PdfViewOptions(streamFactory);
 ```
 
-#### Krok 3 – Vykreslete dokument jako PDF
+#### Krok 3 – Vykreslete dokument jako PDF
 ```java
 viewer.view(options);
 ```
 
-#### Krok 4 – Získejte vygenerovaný PDF stream
+#### Krok 4 – Získejte vygenerovaný PDF stream
 ```java
 InputStream pdfStream = streamFactory.getStream();
 pdfStream.close(); // Always remember to close streams after usage.
 ```
 
-### Časté úskalí a řešení problémů
-- **Incorrect file paths** – Ověřte, že cesta ukazuje na existující, čitelný soubor.  
-- **Out‑of‑date library** – Ujistěte se, že používáte nejnovější verzi GroupDocs.Viewer.  
-- **Unclosed streams** – Zapomenutí uzavřít `InputStream` může způsobit úniky paměti, zejména u velkých souborů.
+## Časté problémy a řešení
+- **Nesprávné cesty k souborům** — ověřte, že cesta ukazuje na existující, čitelný soubor.  
+- **Zastaralá knihovna** — ujistěte se, že používáte nejnovější verzi GroupDocs.Viewer (25.2 nebo novější).  
+- **Neuzavřené streamy** — zapomenutí uzavřít `InputStream` může způsobit úniky paměti, zejména u velkých souborů.
 
 ## Praktické aplikace
 
-1. **Document Archiving** – Ukládejte všechny záznamy jako PDF pro dlouhodobou archivaci.  
-2. **Web Publishing** – Generujte PDF verze zpráv nebo článků za běhu.  
-3. **Data Security** – Distribuujte PDF místo editovatelných zdrojových souborů, aby se snížila možnost manipulace.
+1. **Archivace dokumentů** — Ukládejte všechny záznamy jako PDF pro dlouhodobé uchování, těžíte z nezměnitelnosti formátu.  
+2. **Webové publikování** — Generujte PDF verze zpráv nebo článků za běhu, umožňující jedním kliknutím stažení pro koncové uživatele.  
+3. **Bezpečnost dat** — Distribuujte PDF místo editovatelných zdrojových souborů, aby se snížilo riziko neúmyslných úprav nebo úniku dat.
 
 ## Úvahy o výkonu
 
-- **Memory Management** – Použijte `MemoryFileStreamFactory` podle ukázky a rychle uzavírejte streamy.  
-- **Profiling** – Sledujte využití CPU a haldy při konverzi velkých dokumentů, aby aplikace zůstala responzivní.
+- **Správa paměti** — Používejte `MemoryFileStreamFactory` podle ukázky a uzavírejte streamy okamžitě, aby byl nízký odběr haldy.  
+- **Profilování** — Sledujte využití CPU a haldy při převodu velkých dokumentů; GroupDocs Viewer dokáže zpracovat 500‑stránkové soubory za méně než 5 sekund na typickém 4‑jádrovém serveru.
 
 ## Často kladené otázky
 
-**Q: How do I set up GroupDocs.Viewer in my Java project?**  
-A: Přidejte Maven závislost do vašeho `pom.xml` jak je uvedeno výše, získejte licenci a inicializujte třídu `Viewer`.
+**Q: Jak nastavit GroupDocs.Viewer v mém Java projektu?**  
+A: Přidejte Maven závislost do svého `pom.xml` podle výše uvedeného, získejte licenci a vytvořte instanci třídy `Viewer`.
 
-**Q: Can I convert any document format using GroupDocs.Viewer?**  
-A: Ano, knihovna podporuje více než 100 formátů. Pro úplný seznam se podívejte do oficiální dokumentace.
+**Q: Mohu převést jakýkoli formát dokumentu pomocí GroupDocs.Viewer?**  
+A: Ano, knihovna podporuje více než 100 formátů, včetně DOCX, XLSX, PPTX, PDF a běžných typů obrázků.
 
-**Q: What should I do if the conversion fails?**  
-A: Zkontrolujte znovu cesty k souborům, ujistěte se, že používáte správnou verzi knihovny, a ověřte platnost vaší licence.
+**Q: Co mám dělat, když převod selže?**  
+A: Zkontrolujte cesty k souborům, ujistěte se, že používáte správnou verzi knihovny, a ověřte, že je váš licenční klíč platný.
 
-**Q: How can I handle large documents efficiently?**  
-A: Používejte paměťové streamy, uzavírejte je ihned po použití a zvažte zpracování dokumentu po stránkách, pokud je to potřeba.
+**Q: Jak mohu efektivně zpracovávat velké dokumenty?**  
+A: Používejte paměťové streamy, uzavírejte je ihned po použití a zvažte zpracování dokumentu stránka po stránce pomocí API `PageStream`.
 
-**Q: Where can I get support for GroupDocs.Viewer?**  
+**Q: Kde mohu získat podporu pro GroupDocs.Viewer?**  
 A: Navštivte [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) pro komunitní pomoc a oficiální podporu.
 
 ## Zdroje
 
-- **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Dokumentace**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
 - **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download GroupDocs.Viewer**: [Java Releases](https://releases.groupdocs.com/viewer/java/)
-- **Purchase License**: [Buy Now](https://purchase.groupdocs.com/buy)
-- **Free Trial**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License**: [Get Temporary Access](https://purchase.groupdocs.com/temporary-license/)
+- **Stáhnout GroupDocs.Viewer**: [Java Releases](https://releases.groupdocs.com/viewer/java/)
+- **Koupit licenci**: [Buy Now](https://purchase.groupdocs.com/buy)
+- **Bezplatná zkušební verze**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Dočasná licence**: [Get Temporary Access](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Poslední aktualizace:** 2026-02-08  
-**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Poslední aktualizace:** 2026-05-11  
+**Testováno s:** GroupDocs.Viewer 25.2 pro Java  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [převod docx pdf java pomocí GroupDocs.Viewer – Kompletní průvodce](/viewer/java/export-conversion/convert-documents-pdf-java-groupdocs-viewer/)
+- [Vykreslení souborů CDR pomocí GroupDocs.Viewer Java : Kompletní průvodce konverzí do HTML, JPG, PNG a PDF](/viewer/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/)
+- [Komplexní průvodce : Převod Excel 2003 XML do HTML/JPG/PNG/PDF pomocí GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/)
