@@ -1,47 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Leer hoe u WMZ- en WMF-bestanden kunt converteren naar HTML-, JPG-, PNG- en PDF-formaten met GroupDocs.Viewer voor Java. Deze uitgebreide handleiding vereenvoudigt het conversieproces."
-"title": "Hoe u WMZ/WMF-documenten kunt converteren met GroupDocs Viewer voor Java&#58; een uitgebreide handleiding"
-"url": "/nl/java/export-conversion/convert-wmz-wmf-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-18'
+description: Leer hoe u WMZ- en WMF-bestanden kunt converteren naar PDF, HTML, JPG
+  en PNG met GroupDocs Viewer voor Java. Deze gids behandelt GroupDocs Viewer Java
+  en Java-conversie van vectorafbeeldingen.
+keywords:
+- convert WMZ/WMF documents
+- GroupDocs Viewer for Java
+- rendering formats
+title: Hoe WMZ te converteren naar PDF en andere formaten met GroupDocs Viewer voor
+  Java
 type: docs
+url: /nl/java/export-conversion/convert-wmz-wmf-groupdocs-viewer-java/
+weight: 1
 ---
-# WMZ/WMF-documenten converteren met GroupDocs Viewer voor Java: een uitgebreide handleiding
 
-## Invoering
+# Hoe WMZ naar PDF en andere formaten converteren met GroupDocs Viewer voor Java
 
-Het converteren van Windows Metafile (WMF) en Web Metafile (WMZ)-formaten naar toegankelijkere formaten zoals HTML, JPG, PNG of PDF kan een uitdaging zijn vanwege hun unieke structuren. Met GroupDocs.Viewer voor Java kunt u WMZ/WMF-documenten eenvoudig renderen naar diverse veelgebruikte formaten.
+Het converteren van WMZ (Web Metafile) en WMF (Windows Metafile) bestanden naar meer toegankelijke formaten — vooral **convert WMZ to PDF** — kan lastig zijn omdat deze vectorgrafiekformaten tekengereedschappen opslaan in plaats van pixelgegevens. Met **GroupDocs Viewer for Java** kun je WMZ/WMF‑documenten renderen naar HTML, JPG, PNG, **PDF** en andere populaire formaten met slechts een paar regels code.
 
-In deze tutorial laten we je zien hoe je de krachtige GroupDocs.Viewer-bibliotheek in Java kunt gebruiken om WMZ- en WMF-bestanden om te zetten naar HTML, JPG, PNG en PDF. Door mee te doen, krijg je de vaardigheden die nodig zijn voor naadloze documentconversie.
+![WMZ/WMF-documenten converteren met GroupDocs.Viewer voor Java](/viewer/export-conversion/convert-wmz-wmf-documents.png)
 
-**Wat je leert:**
-- Uw omgeving instellen met GroupDocs.Viewer voor Java
-- WMZ/WMF-documenten renderen naar HTML-formaat met ingesloten bronnen
-- WMZ/WMF-bestanden converteren naar hoogwaardige JPG-afbeeldingen
-- Het genereren van scherpe PNG-afbeeldingen uit WMZ/WMF-documenten
-- PDF-versies van WMZ/WMF-bestanden maken
+In deze tutorial leer je hoe je de bibliotheek instelt, WMZ/WMF‑bestanden rendert naar de gewenste output en veelvoorkomende valkuilen afhandelt. Aan het einde kun je **groupdocs viewer java** integreren in je Java‑applicaties om **java convert vector graphics** snel en betrouwbaar uit te voeren.
 
-Laten we eens kijken naar de vereisten om te beginnen.
+## Quick Answers
+- **Welke formaten kunnen WMZ/WMF worden geconverteerd?** HTML, JPG, PNG en PDF worden volledig ondersteund.  
+- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een commerciële licentie verwijdert evaluatielimieten.  
+- **Welke Java‑versie is vereist?** Java 8 of later wordt aanbevolen.  
+- **Kan ik alleen specifieke pagina's renderen?** Ja, je kunt paginabereiken opgeven in de weergave‑opties.  
+- **Is geheugengebruik een zorg bij grote bestanden?** Gebruik try‑with‑resources en render alleen benodigde pagina's om het geheugen laag te houden.
 
-## Vereisten
+## Wat betekent “convert WMZ to PDF”?
 
-Voordat we beginnen, zorg ervoor dat u de volgende instellingen hebt:
+Het converteren van WMZ naar PDF betekent dat je het vector‑gebaseerde WMZ‑bestand neemt en het rastert (of de vectorgegevens behoudt) binnen een PDF‑container. PDF is universeel bekijkbaar, doorzoekbaar en afdrukbaar, waardoor het ideaal is voor het archiveren en delen van WMZ‑graphics.
+
+## Waarom GroupDocs Viewer voor Java gebruiken om vectorgrafieken te converteren?
+- **Hoge getrouwheid**: De bibliotheek behoudt de oorspronkelijke tekenkwaliteit, of je nu exporteert naar PDF of PNG.  
+- **Geen externe afhankelijkheden**: Geen native Windows‑bibliotheken nodig; alles draait op elk platform met een JDK.  
+- **Eenvoudige API**: Eén `Viewer`‑instantie en één `view`‑aanroep verwerken de volledige conversie.  
+- **Schaalbaar**: Werkt even goed voor één‑pagina‑iconen en meer‑pagina‑technische tekeningen.
+
+## Prerequisites
 
 ### Vereiste bibliotheken
-- **GroupDocs.Viewer voor Java**:Deze bibliotheek is essentieel voor onze taken op het gebied van documentweergave.
-- Java Development Kit (JDK): versie 8 of hoger wordt aanbevolen voor compatibiliteit met GroupDocs-bibliotheken.
+- **GroupDocs.Viewer for Java** – de kern‑renderengine.  
+- Java Development Kit (JDK) 8+.
 
-### Omgevingsinstelling
-- Een Integrated Development Environment (IDE) zoals IntelliJ IDEA of Eclipse.
-- Basiskennis van Java-programmering en vertrouwdheid met Maven voor afhankelijkheidsbeheer.
+### Omgevingsconfiguratie
+- IDE zoals IntelliJ IDEA of Eclipse.  
+- Maven voor afhankelijkheidsbeheer (of Gradle als je dat verkiest).
 
 ### Kennisvereisten
-- Bestandspaden in Java begrijpen met behulp van `java.nio.file.Path`.
-- Kennis van het concept van documentviewers en rendering in softwaretoepassingen.
+- Bekendheid met Java‑bestand‑I/O (`java.nio.file.Path`).  
+- Basisbegrip van hoe document‑viewers inhoud renderen.
 
-## GroupDocs.Viewer instellen voor Java
+## GroupDocs.Viewer voor Java instellen
 
-Om met GroupDocs.Viewer te kunnen werken, moet u uw projectomgeving instellen. Als u Maven gebruikt, neem dan de volgende configuratie op in uw `pom.xml` bestand:
+Voeg de repository en afhankelijkheid toe aan je `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,57 +74,43 @@ Om met GroupDocs.Viewer te kunnen werken, moet u uw projectomgeving instellen. A
 </dependencies>
 ```
 
-### Licentieverwerving
-- **Gratis proefperiode**: GroupDocs biedt een gratis proefperiode aan, zodat u alle mogelijkheden van hun bibliotheken kunt verkennen.
-- **Tijdelijke licentie**: Vraag een tijdelijke licentie aan om evaluatiebeperkingen tijdens de ontwikkeling op te heffen.
-- **Aankoop**:Overweeg de aanschaf van een licentie als u vindt dat de bibliotheek op de lange termijn aan uw behoeften voldoet.
+> **Licentietip:** Gebruik een gratis proefversie voor evaluatie, en pas daarna een tijdelijke of aangeschafte licentie toe om de volledige functionaliteit te ontgrendelen.
 
-Zodra u de GroupDocs.Viewer hebt geconfigureerd, initialiseert u deze door een exemplaar van de `Viewer` klasse. Deze wordt gebruikt in elke volgende functie-implementatie.
+Zodra de afhankelijkheid is opgelost, kun je een `Viewer`‑instantie maken die voor elke conversiestap wordt hergebruikt.
 
 ## Implementatiegids
 
-We splitsen het renderingproces op in vier hoofdfuncties: HTML-, JPG-, PNG- en PDF-conversie. Elk onderdeel bevat stapsgewijze instructies om u door de implementatie te begeleiden.
+We doorlopen vier conversiescenario's: HTML, JPG, PNG en PDF. Elk voorbeeld volgt hetzelfde patroon — een uitvoermap definiëren, `Viewer` instantiëren met het bron‑WMZ‑bestand, de juiste weergave‑opties configureren en `view` aanroepen.
 
-### WMZ/WMF naar HTML renderen
+### WMZ/WMF renderen naar HTML
 
 #### Overzicht
-Door WMZ/WMF-bestanden naar HTML te converteren, kunt u vectorafbeeldingen met ingesloten bronnen, zoals afbeeldingen en stijlen, rechtstreeks in een HTML-bestand op een webvriendelijke manier bekijken.
+HTML‑output stelt je in staat de afbeelding direct in webpagina's in te sluiten, waarbij alle bronnen (afbeeldingen, CSS) in één enkel bestand zijn opgenomen.
 
-**Stap 1: Definieer het pad van de uitvoerdirectory**
-
-Stel eerst de uitvoermap in waar uw HTML-bestand wordt opgeslagen:
+**Stap 1: Definieer het pad van de uitvoermap**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
 Path pageFilePathFormat = outputDirectory.resolve("wmz_result.html");
 ```
 
-**Stap 2: Viewer initialiseren met WMZ-voorbeelddocument**
-
-Gebruik een `try-with-resources` blok om ervoor te zorgen dat de viewer automatisch wordt gesloten:
+**Stap 2: Initialiseer Viewer en render naar HTML**
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
-    // Stap 3: HTML-weergaveopties maken voor ingesloten bronnen
+    // Create options that embed all resources inside the HTML file
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-    
-    // Stap 4: Het document renderen naar HTML-formaat
+    // Perform the rendering
     viewer.view(options);
 }
 ```
 
-**Uitleg**
-- `HtmlViewOptions.forEmbeddedResources` omvat alle bronnen in de resulterende HTML, waardoor deze op zichzelf staat.
-- De `viewer.view(options)` methode voert het renderingproces uit.
-
-### WMZ/WMF naar JPG renderen
+### WMZ/WMF renderen naar JPG
 
 #### Overzicht
-Door het converteren naar JPG ontstaat een draagbaar afbeeldingsformaat dat geschikt is voor distributie en weergave op verschillende platforms.
+JPG is een breed ondersteund rasterformaat, perfect voor snelle previews of e‑mailbijlagen.
 
-**Stap 1: Definieer het pad van de uitvoerdirectory**
-
-Stel het uitvoerpad voor uw JPG-bestand in:
+**Stap 1: Definieer het pad van de uitvoermap**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
@@ -119,8 +119,6 @@ Path pageFilePathFormat = outputDirectory.resolve("wmz_result.jpg");
 
 **Stap 2: Initialiseer Viewer en render naar JPG**
 
-Render uw WMZ/WMF-document naar een JPG-afbeelding:
-
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
@@ -128,18 +126,12 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
 }
 ```
 
-**Uitleg**
-- `JpgViewOptions` specificeert het uitvoerformaat voor het renderingproces.
-- Het resultaat van de conversie is een afbeeldingsbestand van hoge kwaliteit.
-
-### WMZ/WMF naar PNG renderen
+### WMZ/WMF renderen naar PNG
 
 #### Overzicht
-PNG is ideaal voor afbeeldingen die transparantie vereisen. Deze functie laat zien hoe u PNG-bestanden kunt maken van uw WMZ/WMF-documenten.
+PNG ondersteunt transparantie, waardoor het ideaal is voor afbeeldingen die moeten mengen met verschillende achtergronden.
 
-**Stap 1: Definieer het pad van de uitvoerdirectory**
-
-Bepaal waar het PNG-bestand wordt opgeslagen:
+**Stap 1: Definieer het pad van de uitvoermap**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
@@ -148,8 +140,6 @@ Path pageFilePathFormat = outputDirectory.resolve("wmz_result.png");
 
 **Stap 2: Initialiseer Viewer en render naar PNG**
 
-Converteer uw document naar een PNG-formaat:
-
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
@@ -157,18 +147,12 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
 }
 ```
 
-**Uitleg**
-- `PngViewOptions` configureert het renderingproces voor de uitvoer van PNG-bestanden.
-- Het resulterende beeld ondersteunt transparantie, waardoor het veelzijdig is en geschikt voor verschillende ontwerpbehoeften.
-
-### WMZ/WMF naar PDF renderen
+### WMZ/WMF renderen naar PDF
 
 #### Overzicht
-PDF is een universeel formaat dat u eenvoudig kunt delen en bekijken op elk apparaat waarop een PDF-lezer is geïnstalleerd.
+PDF biedt een platform‑onafhankelijk, doorzoekbaar document dat de oorspronkelijke lay-out behoudt.
 
-**Stap 1: Definieer het pad van de uitvoerdirectory**
-
-Stel het uitvoerpad voor uw PDF-bestand in:
+**Stap 1: Definieer het pad van de uitvoermap**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
@@ -177,8 +161,6 @@ Path pageFilePathFormat = outputDirectory.resolve("wmz_result.pdf");
 
 **Stap 2: Initialiseer Viewer en render naar PDF**
 
-Genereer een PDF van uw WMZ/WMF-document:
-
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
@@ -186,27 +168,38 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
 }
 ```
 
-**Uitleg**
-- `PdfViewOptions` specificeert het gewenste uitvoerformaat.
-- Het PDF-bestand behoudt een hoge mate van getrouwheid aan het originele document.
+## Veelvoorkomende problemen en oplossingen
 
-## Praktische toepassingen
+| Probleem | Oorzaak | Oplossing |
+|----------|---------|-----------|
+| **OutOfMemoryError** bij grote WMZ‑bestanden | Viewer laadt het volledige document in het geheugen | Render één pagina per keer met `PageStreamViewOptions` of vergroot de JVM‑heap (`-Xmx`). |
+| **Ontbrekende lettertypen** in PDF | Lettertype niet ingebed in bron‑WMZ | Installeer de vereiste lettertypen op de hostmachine of gebruik `FontSettings` om aangepaste lettertypen te leveren. |
+| **Lege PNG‑output** | Onjuist uitvoerpad of onvoldoende schrijfrechten | Controleer of `outputDirectory` bestaat en de applicatie schrijfrechten heeft. |
+| **HTML‑bronnen laden niet** | Gebruik van `forExternalResources` zonder bestanden te kopiëren | Gebruik `forEmbeddedResources` voor een zelf‑bevatend HTML‑bestand. |
 
-Hier zijn enkele praktijkvoorbeelden voor het renderen van WMZ/WMF-bestanden:
+## Veelgestelde vragen
 
-1. **Webontwikkeling**: Converteer vectorafbeeldingen naar HTML voor webapplicaties, waardoor de compatibiliteit en de gebruikerservaring worden verbeterd.
-2. **Digitaal publiceren**: Gebruik JPG of PNG voor afbeeldingen van hoge kwaliteit in online tijdschriften of e-books.
-3. **Documenten archiveren**: Maak PDF's om de documentgetrouwheid op verschillende platforms en apparaten te behouden.
-4. **Multimediaprojecten**: Integreer gerenderde formaten in multimediapresentaties of interactieve toepassingen.
+**V: Kan ik WMF naar PNG converteren met dezelfde code?**  
+A: Ja. Het PNG‑voorbeeld werkt voor zowel WMZ‑ als WMF‑bestanden; vervang gewoon `TestFiles.SAMPLE_WMZ` door je WMF‑bron.
 
-## Prestatieoverwegingen
+**V: Is het mogelijk om alleen een deel van de pagina's te converteren?**  
+A: Absoluut. Gebruik `PdfViewOptions` (of de overeenkomstige opties voor andere formaten) en roep `setPageNumbers(List<Integer>)` aan vóór het renderen.
 
-Om optimale prestaties te garanderen bij het gebruik van GroupDocs.Viewer:
+**V: Heb ik een aparte licentie nodig voor elk uitvoerformaat?**  
+A: Nee. Eén GroupDocs Viewer‑licentie dekt alle ondersteunde formaten, inclusief HTML, JPG, PNG en PDF.
 
-- **Geheugenbeheer**Houd rekening met het geheugengebruik, vooral bij grote documenten. Overweeg de JVM-instellingen te optimaliseren voor de behoeften van uw applicatie.
-- **Resourcegebruik**: Minimaliseer het verbruik van bronnen door alleen de pagina's weer te geven die nodig zijn bij documenten met meerdere pagina's.
-- **Beste praktijken**: Werk GroupDocs.Viewer regelmatig bij naar de nieuwste versie om te profiteren van prestatieverbeteringen en bugfixes.
+**V: Hoe beïnvloedt “java convert vector graphics” de prestaties?**  
+A: Vector‑naar‑raster conversie is CPU‑intensief. Voor grote batches, overweeg multi‑threading en het hergebruiken van één `Viewer`‑instantie over bestanden.
+
+**V: Behoudt de PDF vectorkwaliteit, of wordt deze gerasterd?**  
+A: Bij het converteren van WMZ/WMF naar PDF behoudt GroupDocs Viewer waar mogelijk de vectorinstructies, resulterend in een schaalbare PDF.
 
 ## Conclusie
 
-In deze tutorial hebben we onderzocht hoe je WMZ/WMF-documenten kunt renderen naar HTML-, JPG-, PNG- en PDF-formaten met GroupDocs.Viewer voor Java. Met deze vaardigheden kun je documentrendering efficiënt integreren in je applicaties. Voor meer informatie kun je je verdiepen in de geavanceerde functies van GroupDocs.Viewer.
+Je hebt nu een volledige, productie‑klare gids om **convert WMZ to PDF** en andere veelvoorkomende formaten te gebruiken met **GroupDocs Viewer for Java**. Of je nu een webservice bouwt die afbeeldingen on‑the‑fly levert of een archiveringshulpmiddel dat documenten opslaat als PDF’s, de bovenstaande stappen helpen je snel op weg.
+
+---
+
+**Laatst bijgewerkt:** 2026-02-18  
+**Getest met:** GroupDocs.Viewer 25.2 for Java  
+**Auteur:** GroupDocs

@@ -1,47 +1,67 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak převádět soubory WMZ a WMF do formátů HTML, JPG, PNG a PDF pomocí nástroje GroupDocs.Viewer pro Javu. Tato komplexní příručka zjednodušuje proces převodu."
-"title": "Jak převést dokumenty WMZ/WMF pomocí prohlížeče GroupDocs pro Javu – komplexní průvodce"
-"url": "/cs/java/export-conversion/convert-wmz-wmf-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-18'
+description: Naučte se, jak převádět soubory WMZ a WMF do formátů PDF, HTML, JPG a
+  PNG pomocí GroupDocs Viewer pro Javu. Tento průvodce pokrývá GroupDocs Viewer Java
+  a konverzi vektorové grafiky v Javě.
+keywords:
+- convert WMZ/WMF documents
+- GroupDocs Viewer for Java
+- rendering formats
+title: Jak převést WMZ na PDF a další formáty pomocí GroupDocs Viewer pro Javu
 type: docs
+url: /cs/java/export-conversion/convert-wmz-wmf-groupdocs-viewer-java/
+weight: 1
 ---
-# Jak převést dokumenty WMZ/WMF pomocí prohlížeče GroupDocs pro Javu: Komplexní průvodce
 
-## Zavedení
+ 2026-02-18  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  
 
-Převod formátů Windows Metafile (WMF) a Web Metafile (WMZ) do přístupnějších formátů, jako jsou HTML, JPG, PNG nebo PDF, může být kvůli jejich jedinečným strukturám náročný. S nástrojem GroupDocs.Viewer pro Javu můžete snadno vykreslit dokumenty WMZ/WMF do různých široce používaných formátů.
+Make sure formatting.
 
-V tomto tutoriálu vás provedeme používáním výkonné knihovny GroupDocs.Viewer v Javě k transformaci souborů WMZ a WMF do formátů HTML, JPG, PNG a PDF. Budete-li se řídit tímto návodem, získáte dovednosti potřebné pro bezproblémovou konverzi dokumentů.
+Now produce final content with all translations, preserving placeholders and code blocks.
 
-**Co se naučíte:**
-- Nastavení prostředí pomocí GroupDocs.Viewer pro Javu
-- Vykreslování dokumentů WMZ/WMF do formátu HTML s vloženými zdroji
-- Převod souborů WMZ/WMF do vysoce kvalitních obrázků JPG
-- Generování ostrých obrázků PNG z dokumentů WMZ/WMF
-- Vytváření PDF verzí souborů WMZ/WMF
+Let's assemble.# Jak převést WMZ na PDF a další formáty pomocí GroupDocs Viewer pro Java
 
-Pojďme se do toho ponořit a prozkoumat předpoklady potřebné k zahájení.
+Převod souborů WMZ (Web Metafile) a WMF (Windows Metafile) do přístupnějších formátů—zejména **convert WMZ to PDF**—může být obtížný, protože tyto vektorové grafické formáty ukládají instrukce pro kreslení místo pixelových dat. S **GroupDocs Viewer for Java** můžete renderovat dokumenty WMZ/WMF do HTML, JPG, PNG, **PDF** a dalších populárních formátů během několika řádků kódu.
 
-## Předpoklady
+![Convert WMZ/WMF Documents with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-wmz-wmf-documents.png)
 
-Než začneme, ujistěte se, že máte následující nastavení:
+V tomto tutoriálu se naučíte, jak nastavit knihovnu, renderovat soubory WMZ/WMF do požadovaného výstupu a řešit běžné úskalí. Na konci budete schopni integrovat **groupdocs viewer java** do svých Java aplikací a **java convert vector graphics** rychle a spolehlivě.
+
+## Rychlé odpovědi
+- **Do jakých formátů lze WMZ/WMF převést?** HTML, JPG, PNG a PDF jsou plně podporovány.  
+- **Potřebuji licenci pro vývoj?** Bezplatná zkušební verze funguje pro testování; komerční licence odstraňuje omezení hodnocení.  
+- **Jaká verze Javy je vyžadována?** Doporučuje se Java 8 nebo novější.  
+- **Mohu renderovat jen konkrétní stránky?** Ano, můžete specifikovat rozsahy stránek ve view options.  
+- **Je spotřeba paměti problémem u velkých souborů?** Používejte try‑with‑resources a renderujte jen potřebné stránky, aby byla paměť nízká.
+
+## Co je “convert WMZ to PDF”?
+Převod WMZ na PDF znamená převzít vektorový soubor WMZ a rasterizovat jej (nebo zachovat jeho vektorová data) uvnitř PDF kontejneru. PDF je univerzálně zobrazitelné, prohledávatelné a tisknutelné, což ho činí ideálním pro archivaci a sdílení WMZ grafiky.
+
+## Proč použít GroupDocs Viewer pro Java k převodu vektorové grafiky?
+- **Vysoká věrnost**: Knihovna zachovává původní kvalitu kresby, ať už výstupem je PDF nebo PNG.  
+- **Žádné externí závislosti**: Není potřeba nativních Windows knihoven; vše běží na jakékoli platformě s JDK.  
+- **Jednoduché API**: Jedna instance `Viewer` a jediný volání `view` zvládne celý převod.  
+- **Škálovatelné**: Funguje stejně dobře pro jednostránkové ikony i vícestránkové technické výkresy.
+
+## Prerequisites
 
 ### Požadované knihovny
-- **GroupDocs.Viewer pro Javu**Tato knihovna bude ústředním bodem našich úloh vykreslování dokumentů.
-- Java Development Kit (JDK): Pro kompatibilitu s knihovnami GroupDocs se doporučuje verze 8 nebo novější.
+- **GroupDocs.Viewer for Java** – jádro renderovacího enginu.  
+- Java Development Kit (JDK) 8+.
 
 ### Nastavení prostředí
-- Integrované vývojové prostředí (IDE), jako je IntelliJ IDEA nebo Eclipse.
-- Základní znalost programování v Javě a znalost Mavenu pro správu závislostí.
+- IDE jako IntelliJ IDEA nebo Eclipse.  
+- Maven pro správu závislostí (nebo Gradle, pokud dáváte přednost).
 
 ### Předpoklady znalostí
-- Pochopení cest k souborům v Javě pomocí `java.nio.file.Path`.
-- Znalost konceptu prohlížečů dokumentů a vykreslování v softwarových aplikacích.
+- Znalost Java file I/O (`java.nio.file.Path`).  
+- Základní pochopení, jak dokumentové prohlížeče renderují obsah.
 
-## Nastavení GroupDocs.Viewer pro Javu
+## Nastavení GroupDocs.Viewer pro Java
 
-Abyste mohli začít pracovat s GroupDocs.Viewer, je třeba nastavit prostředí projektu. Pokud používáte Maven, zahrňte do souboru následující konfiguraci. `pom.xml` soubor:
+Přidejte repozitář a závislost do svého `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,66 +80,50 @@ Abyste mohli začít pracovat s GroupDocs.Viewer, je třeba nastavit prostředí
 </dependencies>
 ```
 
-### Získání licence
-- **Bezplatná zkušební verze**GroupDocs nabízí bezplatnou zkušební verzi, která vám umožní prozkoumat všechny možnosti jejich knihoven.
-- **Dočasná licence**Požádejte o dočasnou licenci k odstranění omezení hodnocení během vývoje.
-- **Nákup**Pokud zjistíte, že knihovna vyhovuje vašim dlouhodobým potřebám, zvažte zakoupení licence.
+> **Tip k licenci:** Použijte bezplatnou zkušební verzi pro hodnocení, poté aplikujte dočasnou nebo zakoupenou licenci pro odemknutí plné funkčnosti.
 
-Po konfiguraci inicializujte GroupDocs.Viewer vytvořením instance třídy `Viewer` třída. Toto bude použito v každé následující implementaci funkce.
+Jakmile je závislost vyřešena, můžete vytvořit instanci `Viewer`, která bude znovu použita pro každý krok převodu.
 
 ## Průvodce implementací
 
-Proces vykreslování rozdělíme do čtyř hlavních funkcí: konverze HTML, JPG, PNG a PDF. Každá část obsahuje podrobné pokyny, které vás provedou implementací.
+Provedeme čtyři scénáře převodu: HTML, JPG, PNG a PDF. Každý příklad následuje stejný vzor—definujte výstupní cestu, vytvořte `Viewer` se zdrojovým WMZ souborem, nakonfigurujte příslušné view options a zavolejte `view`.
 
-### Vykreslování WMZ/WMF do HTML
+### Renderování WMZ/WMF do HTML
 
 #### Přehled
-Převod souborů WMZ/WMF do HTML umožňuje webové prohlížení vektorové grafiky s vloženými zdroji, jako jsou obrázky a styly, přímo v souboru HTML.
+HTML výstup vám umožní vložit grafiku přímo do webových stránek, přičemž všechny zdroje (obrázky, CSS) jsou obsaženy v jediném souboru.
 
-**Krok 1: Definování cesty k výstupnímu adresáři**
-
-Nejprve nastavte výstupní adresář, kam bude uložen váš HTML soubor:
+**Krok 1: Definujte cestu výstupního adresáře**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
 Path pageFilePathFormat = outputDirectory.resolve("wmz_result.html");
 ```
 
-**Krok 2: Inicializace prohlížeče s ukázkovým dokumentem WMZ**
-
-Použijte `try-with-resources` blok, aby se prohlížeč automaticky zavřel:
+**Krok 2: Inicializujte Viewer a renderujte do HTML**
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
-    // Krok 3: Vytvořte možnosti zobrazení HTML pro vložené zdroje
+    // Create options that embed all resources inside the HTML file
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-    
-    // Krok 4: Vykreslení dokumentu do formátu HTML
+    // Perform the rendering
     viewer.view(options);
 }
 ```
 
-**Vysvětlení**
-- `HtmlViewOptions.forEmbeddedResources` zahrnuje všechny zdroje ve výsledném HTML kódu, čímž se stává samostatným.
-- Ten/Ta/To `viewer.view(options)` Metoda provede proces vykreslování.
-
-### Vykreslování WMZ/WMF do JPG
+### Renderování WMZ/WMF do JPG
 
 #### Přehled
-Převod do formátu JPG vytváří přenositelný obrazový formát vhodný pro distribuci a zobrazení na různých platformách.
+JPG je široce podporovaný rastrový formát, ideální pro rychlé náhledy nebo e‑mailové přílohy.
 
-**Krok 1: Definování cesty k výstupnímu adresáři**
-
-Nastavte výstupní cestu pro váš JPG soubor:
+**Krok 1: Definujte cestu výstupního adresáře**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
 Path pageFilePathFormat = outputDirectory.resolve("wmz_result.jpg");
 ```
 
-**Krok 2: Inicializace prohlížeče a vykreslení do formátu JPG**
-
-Vykreslete dokument WMZ/WMF do obrázku JPG:
+**Krok 2: Inicializujte Viewer a renderujte do JPG**
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
@@ -128,27 +132,19 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
 }
 ```
 
-**Vysvětlení**
-- `JpgViewOptions` určuje výstupní formát pro proces vykreslování.
-- Výsledkem konverze je vysoce kvalitní obrazový soubor.
-
-### Vykreslování WMZ/WMF do PNG
+### Renderování WMZ/WMF do PNG
 
 #### Přehled
-PNG je ideální pro grafiku vyžadující průhlednost a tato funkce ukazuje, jak vytvářet soubory PNG z dokumentů WMZ/WMF.
+PNG podporuje průhlednost, což ho činí ideálním pro grafiku, která má být kombinována s různými pozadími.
 
-**Krok 1: Definování cesty k výstupnímu adresáři**
-
-Určete, kam bude soubor PNG uložen:
+**Krok 1: Definujte cestu výstupního adresáře**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
 Path pageFilePathFormat = outputDirectory.resolve("wmz_result.png");
 ```
 
-**Krok 2: Inicializace prohlížeče a vykreslení do PNG**
-
-Převeďte dokument do formátu PNG:
+**Krok 2: Inicializujte Viewer a renderujte do PNG**
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
@@ -157,27 +153,19 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
 }
 ```
 
-**Vysvětlení**
-- `PngViewOptions` konfiguruje proces vykreslování pro výstup souborů PNG.
-- Výsledný obrázek podporuje průhlednost, díky čemuž je všestranný pro různé designové potřeby.
-
-### Vykreslování WMZ/WMF do PDF
+### Renderování WMZ/WMF do PDF
 
 #### Přehled
-PDF je univerzální formát, který lze snadno sdílet a prohlížet na jakémkoli zařízení s nainstalovanou čtečkou PDF.
+PDF poskytuje platformově nezávislý, prohledávatelný dokument, který zachovává původní rozvržení.
 
-**Krok 1: Definování cesty k výstupnímu adresáři**
-
-Nastavte výstupní cestu pro váš PDF soubor:
+**Krok 1: Definujte cestu výstupního adresáře**
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("RenderingWmzAndWmf");
 Path pageFilePathFormat = outputDirectory.resolve("wmz_result.pdf");
 ```
 
-**Krok 2: Inicializace prohlížeče a vykreslení do PDF**
-
-Vygenerujte PDF z dokumentu WMZ/WMF:
+**Krok 2: Inicializujte Viewer a renderujte do PDF**
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
@@ -186,27 +174,38 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_WMZ)) {
 }
 ```
 
-**Vysvětlení**
-- `PdfViewOptions` určuje požadovaný výstupní formát.
-- Soubor PDF si zachovává vysokou věrnost originálního dokumentu.
+## Časté problémy a řešení
 
-## Praktické aplikace
+| Problém | Příčina | Řešení |
+|-------|-------|----------|
+| **OutOfMemoryError** při velkých WMZ souborech | Viewer načítá celý dokument do paměti | Renderujte jednu stránku najednou pomocí `PageStreamViewOptions` nebo zvětšete heap JVM (`-Xmx`). |
+| **Chybějící fonty** v PDF | Font není vložen ve zdrojovém WMZ | Nainstalujte požadované fonty na hostitelském stroji nebo použijte `FontSettings` k poskytnutí vlastních fontů. |
+| **Prázdný PNG výstup** | Nesprávná výstupní cesta nebo nedostatečná oprávnění k zápisu | Ověřte, že `outputDirectory` existuje a aplikace má právo zápisu. |
+| **HTML zdroje se nenačítají** | Použití `forExternalResources` bez kopírování souborů | Použijte `forEmbeddedResources` pro samostatný HTML soubor. |
 
-Zde je několik reálných případů použití pro vykreslování souborů WMZ/WMF:
+## Často kladené otázky
 
-1. **Vývoj webových stránek**Převod vektorové grafiky do HTML pro webové aplikace, což zlepšuje kompatibilitu a uživatelský komfort.
-2. **Digitální publikování**Pro vysoce kvalitní obrázky v online časopisech nebo elektronických knihách použijte formát JPG nebo PNG.
-3. **Archivace dokumentů**Vytvářejte PDF soubory pro zachování věrnosti dokumentů na různých platformách a zařízeních.
-4. **Multimediální projekty**Integrace renderovaných formátů do multimediálních prezentací nebo interaktivních aplikací.
+**Q: Mohu převést WMF na PNG pomocí stejného kódu?**  
+A: Ano. PNG příklad funguje pro soubory WMZ i WMF; stačí nahradit `TestFiles.SAMPLE_WMZ` vaším WMF zdrojem.
 
-## Úvahy o výkonu
+**Q: Je možné převést jen podmnožinu stránek?**  
+A: Rozhodně. Použijte `PdfViewOptions` (nebo odpovídající možnosti pro jiné formáty) a před renderováním zavolejte `setPageNumbers(List<Integer>)`.
 
-Pro zajištění optimálního výkonu při používání GroupDocs.Viewer:
+**Q: Potřebuji samostatnou licenci pro každý výstupní formát?**  
+A: Ne. Jedna licence GroupDocs Viewer pokrývá všechny podporované formáty, včetně HTML, JPG, PNG a PDF.
 
-- **Správa paměti**Dávejte pozor na využití paměti, zejména u velkých dokumentů. Zvažte optimalizaci nastavení JVM pro potřeby vaší aplikace.
-- **Využití zdrojů**Minimalizujte spotřebu zdrojů vykreslením pouze nezbytných stránek při práci s vícestránkovými dokumenty.
-- **Nejlepší postupy**Pravidelně aktualizujte na nejnovější verzi GroupDocs.Viewer, abyste mohli využívat vylepšení výkonu a opravy chyb.
+**Q: Jak „java convert vector graphics“ ovlivňuje výkon?**  
+A: Převod vektor‑na‑raster je náročný na CPU. Pro velké dávky zvažte vícevláknové zpracování a opětovné použití jedné instance `Viewer` napříč soubory.
+
+**Q: Zachová PDF vektorovou kvalitu, nebo je rasterizováno?**  
+A: Při převodu WMZ/WMF na PDF GroupDocs Viewer zachovává vektorové instrukce, kde je to možné, což vede ke škálovatelnému PDF.
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali, jak vykreslovat dokumenty WMZ/WMF do formátů HTML, JPG, PNG a PDF pomocí nástroje GroupDocs.Viewer pro Javu. S těmito dovednostmi můžete efektivně integrovat funkce vykreslování dokumentů do svých aplikací. Pro další zkoumání zvažte hlubší ponoření se do pokročilých funkcí nástroje GroupDocs.Viewer.
+Nyní máte kompletní, připravený průvodce pro **convert WMZ to PDF** a další běžné formáty pomocí **GroupDocs Viewer for Java**. Ať už vytváříte webovou službu, která poskytuje grafiku za běhu, nebo archivní nástroj, který ukládá dokumenty jako PDF, výše uvedené kroky vám pomohou dosáhnout cíle rychle.
+
+---
+
+**Poslední aktualizace:** 2026-02-18  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
