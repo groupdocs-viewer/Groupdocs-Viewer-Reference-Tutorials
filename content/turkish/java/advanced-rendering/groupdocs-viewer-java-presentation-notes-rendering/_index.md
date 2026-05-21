@@ -1,47 +1,48 @@
 ---
-date: '2025-12-21'
-description: PPTX dosyalarını Java ile HTML'ye dönüştürmeyi, notlu sunumları render
-  etmeyi ve GroupDocs Viewer lisanslamasını öğrenin. Bu rehber, kurulum, uygulama
-  ve performans ipuçlarını kapsar.
+date: '2026-02-21'
+description: GroupDocs Viewer for Java kullanarak pptx dosyasını html'ye nasıl dönüştüreceğinizi
+  öğrenin; powerpoint'ı html'ye dönüştürme, GroupDocs Viewer lisanslama ve java sunum
+  dönüştürme web entegrasyonu konularını kapsar.
 keywords:
 - render presentations with notes Java
 - GroupDocs.Viewer for Java setup
 - presentation rendering with notes
-title: pptx'ten html'e java – Notlarla Sunumları Renderla
+title: GroupDocs Viewer for Java ile pptx'i html'e dönüştür
 type: docs
 url: /tr/java/advanced-rendering/groupdocs-viewer-java-presentation-notes-rendering/
 weight: 1
 ---
 
-# pptx to html java – Sunumları Notlarla Render Et
+# pptx'yi html'ye dönüştürme - GroupDocs Viewer for Java ile
 
-Uygulamanıza **pptx to html java** dönüşümünü entegre etmek hiç bu kadar kolay olmamıştı. Bu rehberde, **GroupDocs.Viewer for Java**'ı kullanarak PowerPoint sunumlarını konuşmacı notlarıyla birlikte nasıl render edeceğinizi ve temel lisanslama hususlarını öğreneceksiniz.
+Bu öğreticide, GroupDocs Viewer for Java kullanarak **pptx'yi html'ye dönüştürmeyi** öğrenecek, PowerPoint sunumlarını konuşmacı notlarıyla birlikte render edeceksiniz. Bu yaklaşım, slaytları doğrudan tarayıcılarda görüntülemenizi sağlar ve e‑öğrenme platformları, kurumsal eğitim portalları veya herhangi bir web tabanlı belge yönetim sistemi için mükemmeldir.
 
-![Render Presentations with Notes with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
+![Notlarla Sunumları Render Etme - GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-presentations-with-notes-java.png)
 
 ## Hızlı Yanıtlar
-- **GroupDocs.Viewer PPTX'i HTML'e dönüştürebilir mi?** Evet, isteğe bağlı not render'ı ile doğrudan PPTX'ten HTML'e dönüşümü destekler.  
-- **Üretim kullanımında lisansa ihtiyacım var mı?** Ticari dağıtımlar için geçerli bir GroupDocs Viewer lisans anahtarı gereklidir.  
-- **Hangi Java sürümü gerekiyor?** JDK 8 veya üzeri önerilir.  
-- **Hangi çıktı formatları mevcut?** HTML, PDF ve görüntü formatları desteklenir.  
-- **Kütüphaneyi eklemenin tek yolu Maven mi?** Maven en yaygın yöntemdir, ancak Gradle veya manuel JAR eklemesi de kullanılabilir.
+- **GroupDocs.Viewer PPTX'yi HTML'ye dönüştürebilir mi?** Evet, isteğe bağlı not render'ı ile doğrudan PPTX'ten HTML'ye dönüşümü destekler.  
+- **Üretim kullanımında bir lisansa ihtiyacım var mı?** Ticari dağıtımlar için geçerli bir GroupDocs Viewer lisans anahtarı gereklidir.  
+- **Hangi Java sürümü gereklidir?** JDK 8 veya üzeri önerilir.  
+- **Hangi çıktı formatları mevcuttur?** HTML, PDF ve görüntü formatları desteklenir.  
+- **Kütüphaneyi eklemenin tek yolu Maven mi?** Maven en yaygın yöntemdir, ancak Gradle veya manuel JAR eklemesi de kullanılabilir.  
+- **Oluşturulan HTML'i bir web sayfasına nasıl gömebilirim?** `HtmlViewOptions.forEmbeddedResources` tarafından üretilen kendi içinde bütünleşik HTML dosyalarını kullanın ve web uygulamanıza doğrudan referans verin.  
 
-## pptx to html java nedir?
-Java'da bir PowerPoint **pptx** dosyasını **HTML**'e dönüştürmek, Microsoft Office'e ihtiyaç duymadan slaytları web tarayıcılarında görüntülemenizi sağlar. GroupDocs.Viewer, düzeni, görselleri ve konuşmacı notlarını koruyarak ağır işi üstlenir.
+## pptx'yi html'ye dönüştürme nedir?
+Java'da bir PowerPoint **pptx** dosyasını **HTML**'ye dönüştürmek, Microsoft Office'e ihtiyaç duymadan slaytları web tarayıcılarında görüntülemenizi sağlar. GroupDocs.Viewer, düzeni, görüntüleri ve konuşmacı notlarını koruyarak ağır işleri üstlenir.
 
-## Sunumları Notlarla Neden Render Etmeliyiz?
-Konuşmacı notlarını slaytların yanına yerleştirmek, son kullanıcıya tam bağlam sağlar—e‑öğrenme platformları, kurumsal eğitim portalları veya sunumcunun yorumlarının değerli olduğu herhangi bir belge‑yönetim sistemi için idealdir.
+## PowerPoint'i GroupDocs Viewer ile HTML'ye nasıl dönüştürülür?
+Aşağıda, kütüphaneyi nasıl kuracağınızı, seçenekleri nasıl yapılandıracağınızı ve notlarla bir sunumu nasıl render edeceğinizi adım adım gösteren bir rehber bulunmaktadır.
 
-## Önkoşullar
+### Önkoşullar
 1. **Java Development Kit (JDK)** – sürüm 8 veya daha yeni.  
-2. **IDE** – IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu editör.  
+2. **IDE** – IntelliJ IDEA, Eclipse veya herhangi bir Java uyumlu editör.  
 3. **Maven** – bağımlılık yönetimi için.  
 4. Java ve Maven proje yapısına temel aşinalık.
 
-## GroupDocs.Viewer for Java'ı Kurma
+### GroupDocs.Viewer for Java Kurulumu
 
-### Maven Yapılandırması
-`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+#### Maven Yapılandırması
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,7 +62,7 @@ Konuşmacı notlarını slaytların yanına yerleştirmek, son kullanıcıya tam
 </dependencies>
 ```
 
-### Lisans Alımı
+#### Lisans Alımı
 Tam özellikleri keşfetmek için ücretsiz deneme başvurusu yapın veya geçici bir lisans isteyin. Kalıcı lisans seçenekleri için [GroupDocs Purchase](https://purchase.groupdocs.com/buy) adresini ziyaret edin.
 
 ```java
@@ -73,12 +74,15 @@ try (Viewer viewer = new Viewer("path/to/your/document.pptx")) {
 }
 ```
 
+## Java için GroupDocs Viewer lisanslamasını anlama
+GroupDocs Viewer lisanslaması, hangi özelliklerin açılacağını belirler. Geçerli bir lisans olmadan, çıktı su işareti içerebilir veya belirli sayıda sayfa ile sınırlı olabilir. Büyük veya ticari belgeleri render etmeden önce lisans dosyanızı yüklediğinizden emin olun.
+
 ## Uygulama Kılavuzu
 
-### Özellik: Notlarla Bir Sunumu Render Et
-Bu bölüm, bir PPTX dosyasını konuşmacı notlarıyla birlikte HTML'e render etmenizi adım adım gösterir.
+### Özellik: Notlarla Bir Sunumu Render Etme
+Bu bölüm, konuşmacı notlarını da içerecek şekilde bir PPTX dosyasını HTML'ye render etmenizi adım adım gösterir.
 
-#### Adım 1: Çıktı Dizini ve Dosya Formatını Tanımla
+#### Adım 1: Çıktı Dizini ve Dosya Formatını Tanımlama
 HTML sayfalarının kaydedileceği klasörü ayarlayın:
 
 ```java
@@ -89,7 +93,7 @@ Path YOUR_DOCUMENT_DIRECTORY = Paths.get("YOUR_DOCUMENT_DIRECTORY");
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
-#### Adım 2: Görünüm Seçeneklerini Yapılandır
+#### Adım 2: Görünüm Seçeneklerini Yapılandırma
 Kaynakları gömüp not render'ını etkinleştiren görünüm seçeneklerini oluşturun:
 
 ```java
@@ -99,7 +103,7 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.setRenderNotes(true); // Enable note rendering
 ```
 
-> **Pro ipucu:** `forEmbeddedResources` kendine ait HTML üretir, bu da web sunucularına dağıtımı basitleştirir.
+> **Pro ipucu:** `forEmbeddedResources` kendi içinde bütünleşik HTML üretir, bu da web sunucularına dağıtımı basitleştirir.
 
 #### Adım 3: Belgeyi Yükle ve Render Et
 Son olarak, yukarıda tanımlanan seçenekleri kullanarak PPTX dosyasını render edin:
@@ -113,10 +117,13 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 
 **Sorun Giderme İpucu:** Dosya yollarının mevcut ve okunabilir olduğunu doğrulayın. Eksik bir dosya `FileNotFoundException` hatasına neden olur.
 
+## Java sunum web dönüştürmesi: Sonucu gömme
+Yukarıdaki kod tarafından oluşturulan HTML dosyaları, web uygulamanızdan doğrudan hizmet verilebilir. Kaynaklar gömülü olduğundan, çıktı klasörünü statik içerik dizininize kopyalamanız ve ilk `page_0.html` dosyasına bir `<iframe>` içinde ya da normal bir `<div>` içinde referans vermeniz yeterlidir.
+
 ## Pratik Uygulamalar
 - **Çevrimiçi Öğrenme Platformları** – Ders slaytlarını eğitmen notlarıyla birlikte gösterir.  
 - **Kurumsal Eğitim Modülleri** – Kendi hızında kurslar için eğitmen yorumlarını gömer.  
-- **Belge Yönetim Sistemleri** – Sunumların web‑hazır önizlemesini sağlar, tüm ek açıklamaları korur.
+- **Belge Yönetim Sistemleri** – Sunumların web için hazır önizlemesini sağlar, tüm ek açıklamaları korur.
 
 ## Performans Düşünceleri
 - **try‑with‑resources** kullanarak `Viewer`'ı otomatik olarak kapatın ve belleği serbest bırakın.  
@@ -124,40 +131,39 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("TestFiles.PPTX_
 - Büyük PPTX dosyalarını işlerken JVM yığın kullanımını izleyin; `OutOfMemoryError` alırsanız yığın boyutunu artırmayı düşünün.
 
 ## Yaygın Sorunlar ve Çözümler
+
 | Sorun | Çözüm |
 |-------|----------|
-| **Notlar görünmüyor** | Render etmeden önce `viewOptions.setRenderNotes(true)` çağrıldığından emin olun. |
-| **Büyük dosyalarda yavaş render** | Önbellekleme etkinleştirin ve sayfaları hepsini bir kerede değil, isteğe bağlı olarak render etmeyi düşünün. |
+| **Notlar görünmüyor** | `viewOptions.setRenderNotes(true)`'in render etmeden önce çağrıldığından emin olun. |
+| **Büyük dosyalarda yavaş render** | Önbellekleme etkinleştirin ve sayfaları hepsini bir anda render etmek yerine isteğe bağlı olarak render etmeyi düşünün. |
 | **Dosya yolu hataları** | `Paths.get(...)` kullanın ve göreli ile mutlak yolları iki kez kontrol edin. |
 
 ## Sık Sorulan Sorular
 
-**S: GroupDocs.Viewer Java ile PDF belgelerini notlarla render edebilir miyim?**  
+**S: GroupDocs.Viewer Java ile notlu PDF belgeleri render edebilir miyim?**  
 C: Evet, PPTX notlarına benzer şekilde gömülü açıklamalarla PDF'leri render edebilirsiniz.
 
 **S: GroupDocs.Viewer eski Java sürümleriyle uyumlu mu?**  
 C: Kütüphane resmi olarak JDK 8 ve üzeri sürümlerde desteklenir; eski sürümler bazı özelliklerden yoksun olabilir.
 
-**S: Çok büyük sunum dosyalarıyla nasıl başa çıkmalıyım?**  
+**S: Çok büyük sunum dosyalarını nasıl yönetmeliyim?**  
 C: Sayfaları tek tek render edin, `HtmlViewOptions`'ı yeniden kullanın ve bellek kullanımını düşük tutmak için önbellekleme uygulayın.
 
-**S: GroupDocs Viewer için hangi lisans seçenekleri mevcut?**  
-C: Ücretsiz denemeler, geçici değerlendirme lisansları ve üretim için tam satın alma lisansları gibi seçenekler vardır. Ayrıntılar için lisans sayfasına bakın.
+**S: GroupDocs Viewer için hangi lisans seçenekleri mevcuttur?**  
+C: Ücretsiz denemeler, geçici değerlendirme lisansları ve üretim için tam satın alma lisansları gibi seçenekler vardır. Detaylar için lisans sayfasına bakın.
 
 **S: Daha gelişmiş kullanım örneklerini nerede bulabilirim?**  
 C: Derinlemesine dokümantasyon ve kod örnekleri için [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) adresini ziyaret edin.
 
 ## Kaynaklar
-- **Documentation**: Kapsamlı kılavuzları [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) adresinde keşfedin.  
-- **API Reference**: Detaylı API bilgilerine [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) adresinden ulaşın.  
+- **Documentation**: [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) adresinde kapsamlı kılavuzları keşfedin.  
+- **API Reference**: Detaylı API bilgileri için [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/) adresine bakın.  
 - **Download**: En son sürümleri [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) adresinden edinin.  
 - **Purchase and Trial**: Lisans seçenekleri hakkında daha fazla bilgi için [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) sayfasını ziyaret edin veya ücretsiz deneme için [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) adresine bakın.  
 - **Support**: Herhangi bir sorunuz için [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) adresini ziyaret edin.
 
 ---
 
-**Son Güncelleme:** 2025-12-21  
+**Son Güncelleme:** 2026-02-21  
 **Test Edilen Versiyon:** GroupDocs.Viewer 25.2  
-**Yazar:** GroupDocs  
-
----
+**Yazar:** GroupDocs

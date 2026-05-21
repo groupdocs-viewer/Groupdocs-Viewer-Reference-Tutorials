@@ -1,43 +1,48 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak skutecznie konwertować pliki TXT do wielu formatów, takich jak HTML, JPG, PNG i PDF, używając GroupDocs.Viewer dla Java. Postępuj zgodnie z tym przewodnikiem krok po kroku."
-"title": "Konwertuj pliki TXT do formatów HTML, JPG, PNG i PDF za pomocą GroupDocs.Viewer dla języka Java"
-"url": "/pl/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/"
-"weight": 1
+date: '2026-02-21'
+description: Dowiedz się, jak używać GroupDocs Viewer Maven do konwertowania plików
+  txt na html, jpg, png i pdf w Javie. Zawiera kroki konwersji txt do pdf w Javie
+  oraz wielostronicowego html w Javie.
+keywords:
+- GroupDocs.Viewer for Java
+- convert TXT to HTML
+- render TXT as JPG/PNG
+title: 'groupdocs viewer maven: Konwertuj TXT na HTML, JPG, PNG, PDF'
 type: docs
+url: /pl/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/
+weight: 1
 ---
-# Konwertuj pliki TXT za pomocą GroupDocs.Viewer dla Java: kompleksowy przewodnik
 
-## Wstęp
+# groupdocs viewer maven: Konwertuj pliki TXT do HTML, JPG, PNG i PDF przy użyciu GroupDocs.Viewer dla Javy
 
-W dzisiejszym cyfrowym świecie efektywne zarządzanie dokumentami jest kluczowe zarówno dla firm, jak i osób prywatnych. Niezależnie od tego, czy chcesz wyświetlać dokumenty tekstowe w sieci, czy archiwizować pliki w różnych formatach, konwersja plików tekstowych (TXT) jest częstym wymogiem. **GroupDocs.Viewer dla Java** zapewnia skuteczne rozwiązanie do łatwego renderowania plików TXT do wielu formatów, takich jak HTML, JPG, PNG i PDF. Ten przewodnik przeprowadzi Cię przez korzystanie z tej wszechstronnej biblioteki, aby osiągnąć bezproblemowe konwersje.
+W nowoczesnych aplikacjach Java, **groupdocs viewer maven** umożliwia łatwe przekształcanie dokumentów tekstowych (TXT) w gotowe do wyświetlenia w przeglądarce HTML, obrazy wysokiej rozdzielczości lub przenośne pliki PDF. Niezależnie od tego, czy tworzysz portal dokumentów, usługę archiwizacji czy funkcję podglądu, konwersja plików TXT przy użyciu GroupDocs.Viewer oszczędza czas i eliminuje potrzebę tworzenia własnych parserów. W tym przewodniku przeprowadzimy Cię przez pełną konfigurację i pokażemy, jak **convert txt files java** do HTML (jednostronicowego i wielostronicowego), JPG, PNG i PDF.
 
-### Czego się nauczysz:
-- Konfigurowanie GroupDocs.Viewer w środowisku Java
-- Konwersja plików TXT do wielostronicowych i jednostronicowych plików HTML
-- Renderowanie dokumentów TXT do formatów obrazów (JPG, PNG)
-- Przekształcanie zawartości TXT do formatu PDF
+![Konwertuj pliki TXT do HTML, JPG, PNG i PDF przy użyciu GroupDocs.Viewer dla Javy](/viewer/export-conversion/convert-txt-files-to-html-jpg-png-and-pdf-java.png)
 
-Przyjrzyjmy się bliżej wymaganiom wstępnym, które należy spełnić zanim rozpoczniemy wdrażanie.
+## Szybkie odpowiedzi
+- **Jaki artefakt Maven jest potrzebny?** `com.groupdocs:groupdocs-viewer` (see Maven snippet below).  
+- **Czy mogę renderować wielostronicowy HTML?** Tak – use `HtmlViewOptions.forEmbeddedResources` without the single‑page flag.  
+- **Czy wymagana jest licencja do produkcji?** Wersja trial działa do oceny; stała licencja jest wymagana do użytku komercyjnego.  
+- **Jaką wersję Java obsługuje?** Java 8 lub nowsza (zalecane Java 11+).  
+- **Czy potrzebuję dodatkowych bibliotek do wyjścia obrazu?** Nie, biblioteka Viewer zawiera wsparcie dla JPG i PNG od razu.
+
+## Co to jest groupdocs viewer maven?
+**groupdocs viewer maven** to dystrybucja oparta na Maven biblioteki GroupDocs.Viewer dla Java. Zapewnia prosty interfejs API do renderowania ponad 100 formatów dokumentów — w tym tekstowych — do HTML, obrazów lub PDF bez konieczności posiadania Microsoft Office lub innych narzędzi firm trzecich.
+
+## Dlaczego konwertować pliki txt w Javie?
+- **Podgląd wieloplatformowy** – HTML i obrazy mogą być wyświetlane w przeglądarkach lub aplikacjach mobilnych.  
+- **Standaryzowane archiwizowanie** – PDF zachowuje formatowanie i jest uniwersalnie czytelny.  
+- **Przyjazny automatyzacji** – Integruj konwersję w zadaniach wsadowych, usługach chmurowych lub pipeline'ach CI.
 
 ## Wymagania wstępne
+- **GroupDocs.Viewer for Java** wersja 25.2 lub nowsza (dostarczana przez Maven).  
+- JDK 8 + (zalecane Java 11 +).  
+- IDE, takie jak IntelliJ IDEA, Eclipse lub NetBeans.  
+- Podstawowa znajomość Java i Maven.
 
-Zanim przejdziesz do GroupDocs.Viewer dla Java, upewnij się, że masz:
+## Konfiguracja GroupDocs.Viewer dla Java
 
-### Wymagane biblioteki i zależności:
-- **GroupDocs.Viewer dla Java** wersja 25.2 lub nowsza.
-  
-### Wymagania dotyczące konfiguracji środowiska:
-- Zgodny z Java Development Kit (JDK) zainstalowany w systemie (zalecana Java 8+).
-- Zintegrowane środowisko programistyczne (IDE), takie jak IntelliJ IDEA, Eclipse lub NetBeans.
-
-### Wymagania wstępne dotyczące wiedzy:
-- Podstawowa znajomość programowania w Javie i obsługi plików.
-- Przydatna będzie znajomość narzędzia Maven do zarządzania zależnościami.
-
-## Konfigurowanie GroupDocs.Viewer dla Java
-
-Aby rozpocząć korzystanie **GroupDocs.Viewer**, dołącz go do swojego projektu poprzez Maven w następujący sposób:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -56,176 +61,195 @@ Aby rozpocząć korzystanie **GroupDocs.Viewer**, dołącz go do swojego projekt
 </dependencies>
 ```
 
-### Etapy uzyskania licencji:
-- Zacznij od **bezpłatny okres próbny** lub uzyskać **licencja tymczasowa** aby poznać pełne możliwości GroupDocs.Viewer.
-- Rozważ zakup licencji za pośrednictwem ich oficjalnego dostawcy [strona zakupu](https://purchase.groupdocs.com/buy) do długotrwałego stosowania.
+### Kroki uzyskania licencji
+- Rozpocznij od **bezpłatnej wersji próbnej** lub uzyskaj **tymczasową licencję**, aby przetestować pełne możliwości.  
+- Do produkcji zakup licencję poprzez oficjalną [strona zakupu](https://purchase.groupdocs.com/buy).
 
-### Podstawowa inicjalizacja i konfiguracja:
-1. Dodaj zależność Maven do swojego projektu.
-2. Upewnij się, że skonfigurowałeś środowisko JDK i IDE.
+### Podstawowa inicjalizacja i konfiguracja
+1. Dodaj zależność Maven przedstawioną powyżej.  
+2. Upewnij się, że Twój JDK i IDE są poprawnie skonfigurowane.  
 
-Teraz przyjrzymy się, jak zaimplementować różne funkcje GroupDocs.Viewer w celu konwersji plików TXT do różnych formatów.
+Teraz przejdźmy do konkretnych scenariuszy konwersji.
 
-## Przewodnik wdrażania
+## Przewodnik implementacji
 
-### Funkcja 1: Renderowanie TXT do wielostronicowego HTML
+### Funkcja 1: Renderowanie TXT do wielostronicowego HTML *(multi page html java)*
+#### Przegląd
+Ten przykład konwertuje dokument TXT do **wielostronicowego HTML** zachowując podziały wierszy na oddzielnych stronach internetowych.
 
-#### Przegląd:
-Funkcja ta konwertuje dokument TXT do wielostronicowego formatu HTML, zachowując strukturę tekstu na wielu stronach internetowych.
+**Import wymaganych bibliotek**
 
-##### Kroki:
-
-**Importuj wymagane biblioteki**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**Skonfiguruj ścieżki i przeglądarkę**
+**Ustaw ścieżki i Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Konfigurowanie opcji renderowania z osadzonymi zasobami
+    // Configure options for rendering with embedded resources
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFileFullPath);
     
-    // Wyświetl dokument w formacie HTML za pomocą tych opcji
+    // Render the document to HTML using these options
     viewer.view(options);
 }
 ```
 
-**Wyjaśnienie:**
-- `HtmlViewOptions.forEmbeddedResources` jest tutaj używany w celu zapewnienia, że wszystkie zasoby są osadzone w plikach wyjściowych, czyniąc je niezależnymi.
+*Wyjaśnienie:* `HtmlViewOptions.forEmbeddedResources` łączy CSS, czcionki i obrazy bezpośrednio w wyjściowym HTML, co czyni go przenośnym.
 
-### Funkcja 2: Renderowanie TXT do jednostronicowego HTML
+### Funkcja 2: Renderowanie TXT do jednopostaciowego HTML *(convert txt to html java)*
+#### Przegląd
+Zbierz cały plik tekstowy w jedną stronę HTML — idealne do szybkich podglądów.
 
-#### Przegląd:
-Funkcja ta umożliwia umieszczenie całego dokumentu tekstowego na pojedynczej stronie HTML, co jest idealnym rozwiązaniem do szybkiego podglądu lub podsumowania.
+**Import wymaganych bibliotek**
 
-##### Kroki:
-
-**Importuj wymagane biblioteki**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**Skonfiguruj ścieżki i przeglądarkę**
+**Ustaw ścieżki i Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result_single_page.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_2_TXT")) {
-    // Konfigurowanie opcji renderowania z osadzonymi zasobami
+    // Configure options for rendering with embedded resources
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFileFullPath);
     
-    // Ustaw opcję renderowania jako pojedynczej strony HTML
+    // Set the option to render as a single page HTML
     options.setRenderToSinglePage(true);
     
-    // Wyrenderuj dokument, korzystając z tych opcji
+    // Render the document using these options
     viewer.view(options);
 }
 ```
 
-**Wyjaśnienie:**
-Ten `setRenderToSinglePage(true)` Metoda ta kompresuje cały tekst na jednej stronie internetowej.
+*Wyjaśnienie:* `setRenderToSinglePage(true)` łączy wszystkie strony w jeden plik HTML.
 
 ### Funkcja 3: Renderowanie TXT do JPG
+#### Przegląd
+Konwertuj plik TXT do wysokiej jakości obrazu JPEG, przydatny do udostępniania na platformach akceptujących jedynie obrazy.
 
-#### Przegląd:
-Konwertuj pliki TXT na wysokiej jakości obrazy JPEG, gotowe do udostępniania lub drukowania.
+**Import wymaganych bibliotek**
 
-##### Kroki:
-
-**Importuj wymagane biblioteki**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
 
-**Skonfiguruj ścieżki i przeglądarkę**
+**Ustaw ścieżki i Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.jpg");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Konfigurowanie opcji renderowania do obrazu JPEG
+    // Configure options for rendering to a JPEG image
     JpgViewOptions options = new JpgViewOptions(pageFileFullPath);
     
-    // Wyrenderuj dokument jako JPG, korzystając z tych opcji
+    // Render the document as a JPG using these options
     viewer.view(options);
 }
 ```
 
-**Wyjaśnienie:**
-- `JpgViewOptions` umożliwia określenie ścieżek wyjściowych i ustawień renderowania dostosowanych do konwersji obrazu.
+*Wyjaśnienie:* `JpgViewOptions` umożliwia kontrolowanie jakości obrazu, DPI oraz ścieżki wyjściowej.
 
 ### Funkcja 4: Renderowanie TXT do PNG
+#### Przegląd
+Generuj obrazy PNG bezstratne z plików tekstowych — idealne, gdy potrzebne są ostre, skalowalne grafiki.
 
-#### Przegląd:
-Konwertuj dokumenty tekstowe do formatu Portable Network Graphics (PNG), uzyskując wysokiej jakości obrazy z bezstratną kompresją.
+**Import wymaganych bibliotek**
 
-##### Kroki:
-
-**Importuj wymagane biblioteki**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
 
-**Skonfiguruj ścieżki i przeglądarkę**
+**Ustaw ścieżki i Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.png");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Konfigurowanie opcji renderowania do obrazu PNG
+    // Configure options for rendering to a PNG image
     PngViewOptions options = new PngViewOptions(pageFileFullPath);
     
-    // Wyrenderuj dokument jako PNG, korzystając z tych opcji
+    // Render the document as a PNG using these options
     viewer.view(options);
 }
 ```
 
-**Wyjaśnienie:**
-- `PngViewOptions` jest tutaj używany podobnie do `JpgViewOptions`, ale z korzyściami charakterystycznymi dla formatu PNG.
+*Wyjaśnienie:* PNG zapewnia kompresję bezstratną, zachowując dokładny wygląd oryginalnego tekstu.
 
-### Funkcja 5: Renderowanie TXT do PDF
+### Funkcja 5: Renderowanie TXT do PDF *(txt to pdf java / convert txt to pdf java)*
+#### Przegląd
+Utwórz plik PDF z dokumentu TXT — doskonały do archiwizacji, drukowania lub wysyłania do klientów.
 
-#### Przegląd:
-Generuj pliki PDF z dokumentów tekstowych, idealne do dystrybucji lub archiwizacji w powszechnie akceptowanym formacie.
+**Import wymaganych bibliotek**
 
-##### Kroki:
-
-**Importuj wymagane biblioteki**
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PdfViewOptions;
 ```
 
-**Skonfiguruj ścieżki i przeglądarkę**
+**Ustaw ścieżki i Viewer**
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path pageFileFullPath = outputDirectory.resolve("Txt_result.pdf");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
-    // Konfigurowanie opcji renderowania do pliku PDF
+    // Configure options for rendering to a PDF
     PdfViewOptions options = new PdfViewOptions(pageFileFullPath);
     
-    // Wyświetl dokument w formacie PDF, korzystając z tych opcji
+    // Render the document as a PDF using these options
     viewer.view(options);
 }
 ```
 
-**Wyjaśnienie:**
-- `PdfViewOptions` zawiera ustawienia specyficzne dla konwersji PDF, obejmujące m.in. ustawienia strony i osadzanie zasobów.
+*Wyjaśnienie:* `PdfViewOptions` automatycznie obsługuje układ stron, czcionki i osadzanie zasobów.
 
-## Zastosowania praktyczne
+## Praktyczne zastosowania
+1. **Systemy zarządzania dokumentami:** Automatyzuj konwersję starszych dokumentów TXT do HTML dla portali intranetowych.  
+2. **Platformy wydawnicze:** Przekształcaj rękopisy TXT dostarczane przez autorów w HTML dla płynnej integracji z CMS.  
+3. **Rozwiązania archiwizacyjne:** Zachowuj stare pliki tekstowe jako PDF lub PNG do długoterminowego przechowywania.  
+4. **Integracja z chmurą:** Konwertuj w locie i przechowuj wygenerowane pliki w AWS S3, Azure Blob lub Google Cloud.
 
-Możliwości GroupDocs.Viewer dla Java obejmują kilka praktycznych zastosowań:
+## Typowe problemy i rozwiązania
 
-1. **Systemy zarządzania dokumentacją:** Zautomatyzuj konwersję dokumentacji tekstowej do formatów przyjaznych dla sieci na potrzeby portali wewnętrznych.
-2. **Platformy wydawnicze:** Konwertuj materiały autorów z formatu TXT na HTML, aby zapewnić bezproblemową integrację z systemami zarządzania treścią.
-3. **Rozwiązania archiwizacyjne:** Zachowaj starsze pliki tekstowe w nowoczesnych, łatwo dostępnych formatach PDF lub obrazów.
-4. **Integracja z pamięcią masową w chmurze:** Automatycznie konwertuj i przechowuj dokumenty na platformach chmurowych, aby zapewnić lepszą dostępność.
+| Problem | Przyczyna | Rozwiązanie |
+|-------|-------|-----|
+| **Wyjście jest puste** | Nieprawidłowa ścieżka pliku lub brak uprawnień do odczytu. | Sprawdź, czy `YOUR_DOCUMENT_DIRECTORY` wskazuje na rzeczywisty plik TXT i czy proces ma prawa odczytu. |
+| **Obrazy mają niską jakość** | Domyślne DPI jest niskie. | Użyj `JpgViewOptions.setResolution(int dpi)` lub `PngViewOptions.setResolution(int dpi)`, aby zwiększyć DPI (np. 300). |
+| **HTML zawiera zepsute linki** | Zasoby nie są osadzone. | Użyj `HtmlViewOptions.forEmbeddedResources` lub podaj własny folder zasobów. |
+| **Wyjątek licencyjny** | Nie ustawiono ważnej licencji. | Załaduj plik licencji przy pomocy `License license = new License(); license.setLicense("path/to/license.file");` przed utworzeniem obiektu `Viewer`. |
+
+## Najczęściej zadawane pytania
+
+**Q: Czy mogę konwertować duże pliki TXT (setki MB) przy użyciu GroupDocs.Viewer?**  
+A: Tak. Biblioteka strumieniuje plik źródłowy, ale dla bardzo dużych dokumentów warto zwiększyć rozmiar sterty JVM.
+
+**Q: Czy potrzebuję dodatkowych zależności do generowania JPG lub PNG?**  
+A: Nie. Pakiet Viewer zawiera wszystkie niezbędne biblioteki przetwarzania obrazów.
+
+**Q: Czy można dostosować rozmiar strony PDF?**  
+A: Oczywiście. Użyj `PdfViewOptions.setPageSize(PageSize.A4)` lub dowolnego innego `PageSize` przed renderowaniem.
+
+**Q: Jak obsłużyć pliki TXT chronione hasłem?**  
+A: Pliki TXT nie obsługują haseł. Jeśli plik jest zaszyfrowany, najpierw go odszyfruj przed przekazaniem do Viewer.
+
+**Q: Czy mogę uruchomić tę konwersję w kontenerze Docker?**  
+A: Tak. Wystarczy dołączyć JDK, skopiować swój `pom.xml` z zależnością GroupDocs i uruchomić aplikację Java wewnątrz kontenera.
+
+---
+
+**Ostatnia aktualizacja:** 2026-02-21  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
