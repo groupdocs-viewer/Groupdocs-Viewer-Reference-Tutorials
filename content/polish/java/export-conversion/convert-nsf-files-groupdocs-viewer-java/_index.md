@@ -1,69 +1,94 @@
 ---
-date: '2026-02-13'
-description: Dowiedz się, jak konwertować pliki nsf na pdf oraz inne formaty (HTML,
-  JPG, PNG) przy użyciu GroupDocs.Viewer dla Javy. Ten przewodnik krok po kroku pokazuje,
-  jak efektywnie konwertować pliki nsf.
+date: '2026-05-26'
+description: Dowiedz się, jak konwertować nsf na pdf oraz inne formaty (HTML, JPG,
+  PNG) przy użyciu GroupDocs.Viewer for Java. Przewodnik krok po kroku z praktycznymi
+  wskazówkami.
 keywords:
-- GroupDocs.Viewer Java
-- NSF Document Conversion
-- Convert NSF Files
-title: Konwertuj NSF na PDF, HTML, JPG, PNG przy użyciu GroupDocs.Viewer dla Javy
+- convert nsf to pdf
+- how to convert nsf
+- java convert lotus notes
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-26'
+  description: Learn how to convert nsf to pdf and other formats (HTML, JPG, PNG)
+    using GroupDocs.Viewer for Java. Step‑by‑step guide with best‑practice tips.
+  headline: convert nsf to pdf with GroupDocs.Viewer for Java
+  type: TechArticle
+- description: Learn how to convert nsf to pdf and other formats (HTML, JPG, PNG)
+    using GroupDocs.Viewer for Java. Step‑by‑step guide with best‑practice tips.
+  name: convert nsf to pdf with GroupDocs.Viewer for Java
+  steps:
+  - name: '**Web‑Based Document Sharing:** Convert NSF to HTML for instant in‑browser
+      viewing without installing Notes.'
+    text: '**Web‑Based Document Sharing:** Convert NSF to HTML for instant in‑browser
+      viewing without installing Notes.'
+  - name: '**Image Archiving:** Store page‑by‑page JPG/PNG snapshots for thumbnail
+      galleries or OCR pipelines.'
+    text: '**Image Archiving:** Store page‑by‑page JPG/PNG snapshots for thumbnail
+      galleries or OCR pipelines.'
+  - name: '**Universal Access:** Use PDF conversion to provide a single, secure file
+      that can be opened on any device, meeting compliance requirements.'
+    text: '**Universal Access:** Use PDF conversion to provide a single, secure file
+      that can be opened on any device, meeting compliance requirements.'
+  type: HowTo
+- questions:
+  - answer: '`PdfViewOptions` preserves most annotations automatically; just render
+      the document with these options and the resulting PDF mirrors the original layout.'
+    question: How do I convert an NSF file to PDF without losing annotations?
+  - answer: Yes. Provide credentials through `LoadOptions` before creating the `Viewer`
+      instance.
+    question: Can I convert password‑protected NSF files?
+  - answer: JDK 11 or newer offers improved garbage collection and concurrency, which
+      speeds up batch conversions.
+    question: What Java version gives the best performance?
+  - answer: Configure `JpgViewOptions.setResolution(int dpi)` or `PngViewOptions.setResolution(int
+      dpi)` before calling `viewer.view(options)`.
+    question: Is it possible to set a custom DPI for JPG/PNG output?
+  - answer: Yes. Use the `Stream` overload of the view options to write the result
+      straight to `HttpServletResponse.getOutputStream()`.
+    question: Does GroupDocs.Viewer support streaming the output directly to an HTTP
+      response?
+  type: FAQPage
+title: Konwertuj nsf na pdf przy użyciu GroupDocs.Viewer for Java
 type: docs
 url: /pl/java/export-conversion/convert-nsf-files-groupdocs-viewer-java/
 weight: 1
 ---
 
-er 25.2 -> "**Testowano z:** GroupDocs.Viewer 25.2"
+# Konwertowanie plików NSF do wielu formatów przy użyciu GroupDocs.Viewer dla Javy
 
-**Author:** GroupDocs -> "**Autor:** GroupDocs"
+W tym obszernym przewodniku dowiesz się **jak konwertować nsf do pdf** oraz renderować pliki NSF do HTML, JPG i PNG przy użyciu GroupDocs.Viewer dla Javy. Niezależnie od tego, czy potrzebujesz archiwizować bazy danych Lotus Notes, wyświetlać je w przeglądarce, czy generować podglądy obrazów, ten tutorial przeprowadzi Cię przez wszystko — od konfiguracji środowiska po szczegóły na poziomie kodu — abyś mógł wdrożyć konwersję w kilka minut.
 
-Now ensure all markdown formatting preserved.
-
-Check for any missing placeholders. All code block placeholders remain.
-
-Now produce final content.# Konwertuj pliki NSF na wiele formatów przy użyciu GroupDocs.Viewer dla Javy
-
-Konwertowanie dokumentów NSF na różne formaty, takie jak HTML, JPG, PNG lub PDF przy użyciu Javy, jest proste dzięki GroupDocs.Viewer dla Javy. **Ten tutorial pokazuje, jak konwertować nsf do pdf** oraz inne przydatne formaty, prowadząc Cię przez konfigurację, implementację i wskazówki najlepszych praktyk.
-
-![Konwertuj pliki NSF na HTML, JPG, PNG i PDF przy użyciu GroupDocs.Viewer dla Javy](/viewer/export-conversion/convert-nsf-files-to-html-jpg-png-pdf-java.png)
+![Konwertowanie plików NSF do HTML, JPG, PNG i PDF przy użyciu GroupDocs.Viewer dla Javy](/viewer/export-conversion/convert-nsf-files-to-html-jpg-png-pdf-java.png)
+[Konwertowanie plików NSF do HTML, JPG, PNG i PDF przy użyciu GroupDocs.Viewer dla Javy](/viewer/export-conversion/convert-nsf-files-to-html-jpg-png-pdf-java.png)
 
 ## Szybkie odpowiedzi
 - **Jaki jest główny przypadek użycia?** Renderowanie plików NSF do PDF, HTML, JPG lub PNG dla sieci, archiwizacji lub udostępniania.  
-- **Która biblioteka obsługuje konwersję?** GroupDocs.Viewer dla Javy.  
+- **Która biblioteka obsługuje konwersję?** GroupDocs.Viewer for Java.  
 - **Czy potrzebna jest licencja?** Dostępna jest darmowa wersja próbna; pełna licencja jest wymagana w środowisku produkcyjnym.  
-- **Jakiej wersji Javy wymaga?** JDK 8 lub nowszy.  
-- **Czy mogę przetwarzać wsadowo wiele plików NSF?** Tak – opakuj logikę renderowania w pętli i zarządzaj zasobami przy użyciu try‑with‑resources.
+- **Jaka wersja Javy jest wymagana?** JDK 8 lub nowsza.  
+- **Czy mogę przetwarzać wiele plików NSF wsadowo?** Tak — otocz logikę renderowania pętlą i zarządzaj zasobami przy użyciu try‑with‑resources.
 
 ## Co to jest „convert nsf to pdf”?
 
-Konwersja pliku NSF (baza danych Lotus Notes) do PDF tworzy statyczny, szeroko obsługiwany dokument, który można otworzyć na dowolnym urządzeniu bez potrzeby posiadania oryginalnego klienta Notes. Ta konwersja jest przydatna do archiwizacji, zgodności prawnej i łatwej dystrybucji.
+Konwersja pliku NSF (baza danych Lotus Notes) do PDF tworzy statyczny, uniwersalnie czytelny dokument, który zachowuje oryginalny układ, czcionki i grafikę bez potrzeby używania klienta Notes. Ten format jest idealny do archiwizacji prawnej, bezpiecznej dystrybucji i długoterminowego przechowywania, ponieważ pliki PDF można otworzyć na każdym systemie operacyjnym lub urządzeniu.
 
-## Dlaczego konwertować NSF na PDF i inne formaty?
+## Dlaczego konwertować NSF do PDF i innych formatów?
 
-- **Uniwersalny dostęp:** PDF, HTML, JPG i PNG są czytelne praktycznie na każdej platformie.  
-- **Zachowanie układu:** PDF zachowuje oryginalny układ strony, czcionki i grafikę.  
-- **Integracja z webem:** HTML umożliwia szybkie przeglądanie w przeglądarce bez dodatkowych wtyczek.  
-- **Ekstrakcja obrazów:** JPG/PNG są idealne do miniatur, podglądów lub osadzania w innych aplikacjach.
+Przekształcanie plików NSF do PDF, HTML, JPG lub PNG zapewnia uniwersalną dostępność, zachowuje wierność wizualną i umożliwia płynną integrację z nowoczesnymi aplikacjami internetowymi i mobilnymi. PDF zachowuje dokładny układ stron, HTML zapewnia natychmiastowe wyświetlanie w przeglądarce, a JPG/PNG dostarczają obrazy wysokiej rozdzielczości jako miniatury lub do osadzania.
 
 ## Wymagania wstępne
 
-1. **Biblioteki i zależności:**  
-   - Maven (do zarządzania zależnościami)  
-   - JDK 8 lub nowszy zainstalowany w systemie.  
-
-2. **Konfiguracja środowiska:**  
-   - Podstawowa znajomość programowania w Javie  
-   - Znajomość Mavena przy tworzeniu projektu  
-
-3. **Wymagania wiedzy:**  
-   - Podstawy obsługi plików w Javie  
-   - Pojęcia konwersji dokumentów  
+- **Java Development Kit (JDK) 8+** – JDK 11 lub nowszy jest zalecany dla lepszej wydajności garbage‑collection.  
+- **Maven** – do zarządzania zależnościami.  
+- **GroupDocs.Viewer for Java** – wersja próbna lub licencjonowana.  
+- Podstawowa znajomość operacji I/O w Javie oraz struktury projektu Maven.
 
 ## Konfiguracja GroupDocs.Viewer dla Javy
 
 ### Konfiguracja Maven
 
-Dołącz GroupDocs.Viewer do swojego projektu Java, dodając następującą konfigurację do pliku `pom.xml`:
+Dodaj zależność GroupDocs.Viewer do swojego `pom.xml`. Spowoduje to pobranie wszystkich wymaganych binarek i bibliotek tranzytywnych.
 
 ```xml
 <repositories>
@@ -83,15 +108,17 @@ Dołącz GroupDocs.Viewer do swojego projektu Java, dodając następującą konf
 </dependencies>
 ```
 
-### Uzyskiwanie licencji
+### Uzyskanie licencji
 
-- **Darmowa wersja próbna:** Dostęp do podstawowych funkcji w celu oceny narzędzia.  
-- **Licencja tymczasowa:** Uzyskaj tymczasową licencję, aby uzyskać pełne funkcje.  
-- **Zakup:** Rozważ zakup licencji do środowisk produkcyjnych.
+Aby odblokować pełną funkcjonalność, możesz:
+
+- **Free Trial:** Oceń podstawowe funkcje bez klucza licencyjnego.  
+- **Temporary License:** Poproś o klucz tymczasowy na okres testowy.  
+- **Full Purchase:** Uzyskaj licencję produkcyjną do nieograniczonego użytku.
 
 ### Podstawowa inicjalizacja
 
-Zainicjalizuj GroupDocs.Viewer w następujący sposób:
+`Viewer` jest klasą podstawową, która renderuje dokumenty do żądanego formatu wyjściowego. Zainicjalizuj ją ze swoją licencją i ścieżką do pliku wewnątrz bloku try‑with‑resources, aby zapewnić prawidłowe zwolnienie zasobów.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -107,17 +134,33 @@ public class InitializeViewer {
 
 ## Jak konwertować NSF do PDF
 
-Poniższe sekcje pokazują, jak renderować pliki NSF do HTML, JPG, PNG oraz **PDF**. Przykład PDF bezpośrednio spełnia główne słowo kluczowe „convert nsf to pdf”.
+Aby przekonwertować dokument NSF do PDF, najpierw utwórz instancję `Viewer` wskazującą na plik źródłowy. Następnie skonfiguruj `PdfViewOptions`, aby określić cechy wyjścia, takie jak rozmiar strony, poziom kompresji i czy osadzać czcionki. Na koniec wywołaj `viewer.view(pdfOptions)`, co renderuje cały dokument do jednego pliku PDF gotowego do dystrybucji.
 
-### Renderowanie NSF do HTML
+`PdfViewOptions` określa ustawienia specyficzne dla PDF, takie jak rozmiar strony i kompresja.
 
-#### Przegląd
-Konwertuj dokumenty NSF do formatu HTML, osadzając zasoby w HTML w celu łatwego przeglądania w sieci.
+```java
+Path pageFilePathFormat = outputDirectory.resolve("NSF_result.pdf");
+```
+```java
+import com.groupdocs.viewer.options.PdfViewOptions;
 
-#### Przewodnik krok po kroku
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);  // Convert to PDF.
+}
+```
 
-**1. Skonfiguruj katalog wyjściowy i ścieżkę pliku**  
-Określ, gdzie będą przechowywane wygenerowane pliki HTML.
+## Renderowanie NSF do HTML
+
+### Przegląd
+
+Konwertuj dokumenty NSF na samodzielne strony HTML, osadzając obrazy i CSS w celu dokładnego odwzorowania na ekranie.
+
+### Przewodnik krok po kroku
+
+#### 1. Konfiguracja katalogu wyjściowego i ścieżki pliku
+
+Zdefiniuj folder, w którym będą zapisywane pliki HTML.
 
 ```java
 import java.nio.file.Path;
@@ -127,8 +170,9 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("NSF_result.html");
 ```
 
-**2. Skonfiguruj opcje ładowania**  
-Dostosuj proces ładowania przy użyciu konkretnych opcji, takich jak limit czasu ładowania zasobów.
+#### 2. Konfiguracja opcji ładowania
+
+`LoadOptions` pozwala precyzyjnie dostosować ładowanie zasobów, np. ustawiając limit czasu dla zewnętrznych zasobów.
 
 ```java
 import com.groupdocs.viewer.options.LoadOptions;
@@ -137,8 +181,9 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);  // Set timeout for loading resources.
 ```
 
-**3. Zainicjalizuj Viewer i renderuj**  
-Użyj klasy Viewer, aby wyrenderować dokument w formacie HTML.
+#### 3. Inicjalizacja Viewer i renderowanie
+
+`Viewer` przetwarza plik NSF i zapisuje pliki HTML w docelowym katalogu.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -150,20 +195,23 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOption
 }
 ```
 
-### Renderowanie NSF do JPG
+## Renderowanie NSF do JPG
 
-#### Przegląd
-Konwertuj dokumenty NSF do wysokiej jakości obrazów JPG w celu udostępniania lub integracji z systemami opartymi na obrazach.
+### Przegląd
 
-**1. Określ ścieżkę wyjściową**  
-Ustaw format ścieżki pliku do przechowywania wyrenderowanych JPG.
+Generuj wysokiej jakości obrazy JPG z każdej strony dokumentu NSF, przydatne do podglądów lub osadzania w przepływach pracy opartych na obrazach.
+
+#### 1. Definicja ścieżki wyjściowej
+
+Określ wzorzec nazewnictwa, np. `output_page_{0}.jpg`, gdzie `{0}` to numer strony.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("NSF_result_{0}.jpg");
 ```
 
-**2. Skonfiguruj i renderuj**  
-Skonfiguruj viewer i wyrenderuj dokument jako obrazy JPEG.
+#### 2. Konfiguracja i renderowanie
+
+`JpgViewOptions` definiuje ustawienia wyjścia obrazu JPEG, w tym rozdzielczość i jakość. Utwórz `JpgViewOptions`, ustaw żądane DPI i wywołaj `viewer.view(options)`.
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
@@ -174,18 +222,23 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOption
 }
 ```
 
-### Renderowanie NSF do PNG
+## Renderowanie NSF do PNG
 
-#### Przegląd
-Renderuj dokumenty do formatu PNG, znanego z bezstratnej kompresji i wysokiej rozdzielczości.
+### Przegląd
 
-**1. Ustaw ścieżkę wyjściową**
+Generuj obrazy PNG bezstratne, które zachowują każdy szczegół oryginalnych stron NSF.
+
+#### 1. Ustawienie ścieżki wyjściowej
+
+Użyj szablonu takiego jak `nsf_page_{0}.png` do automatycznej paginacji.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("NSF_result_{0}.png");
 ```
 
-**2. Renderuj dokument**
+#### 2. Renderowanie dokumentu
+
+`PngViewOptions` konfiguruje parametry wyjścia PNG, takie jak rozdzielczość i głębia kolorów. Skonfiguruj `PngViewOptions` (np. ustaw `setResolution(300)`) i renderuj.
 
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
@@ -196,80 +249,64 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOption
 }
 ```
 
-### Renderowanie NSF do PDF
-
-#### Przegląd
-Konwertuj dokumenty NSF do formatu PDF, uniwersalnego standardu dokumentów.
-
-**1. Określ ścieżkę wyjściową**
-
-```java
-Path pageFilePathFormat = outputDirectory.resolve("NSF_result.pdf");
-```
-
-**2. Renderuj jako PDF**
-
-```java
-import com.groupdocs.viewer.options.PdfViewOptions;
-
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-    viewer.view(options);  // Convert to PDF.
-}
-```
-
 ## Praktyczne zastosowania
 
-1. **Udostępnianie dokumentów w sieci:** Renderuj pliki NSF do HTML w celu łatwego udostępniania na platformach internetowych.  
-2. **Archiwizacja obrazów:** Przechowuj wysokiej jakości obrazy dokumentów w formatach JPG lub PNG.  
-3. **Uniwersalny dostęp do dokumentów:** Użyj konwersji do PDF, aby zapewnić kompatybilność dokumentów na wszystkich urządzeniach.  
+1. **Udostępnianie dokumentów w sieci:** Konwertuj NSF do HTML, aby uzyskać natychmiastowe wyświetlanie w przeglądarce bez instalacji Notes.  
+2. **Archiwizacja obrazów:** Przechowuj migawki JPG/PNG stron po stronie dla galerii miniatur lub potoków OCR.  
+3. **Uniwersalny dostęp:** Użyj konwersji do PDF, aby zapewnić pojedynczy, bezpieczny plik, który można otworzyć na dowolnym urządzeniu, spełniając wymogi zgodności.
 
 ## Uwagi dotyczące wydajności
 
-- **Optymalizuj ładowanie zasobów:** Dostosuj `setResourceLoadingTimeout` w zależności od możliwości systemu.  
-- **Zarządzanie pamięcią:** Zapewnij efektywne wykorzystanie pamięci, prawidłowo zarządzając instancjami Viewer przy użyciu try‑with‑resources.  
-- **Przetwarzanie wsadowe:** Przy konwersjach na dużą skalę rozważ przetwarzanie dokumentów w partiach, aby zarządzać wykorzystaniem zasobów.  
+- **Ładowanie zasobów:** Dostosuj `setResourceLoadingTimeout` w zależności od opóźnień sieciowych, aby uniknąć przestojów.  
+- **Zarządzanie pamięcią:** Używaj try‑with‑resources dla instancji `Viewer`; to automatycznie zwalnia zasoby natywne.  
+- **Przetwarzanie wsadowe:** W przypadku dużych partii przetwarzaj pliki kolejno lub w strumieniach równoległych, monitorując zużycie pamięci heap, aby nie przekroczyć limitów pamięci JVM.
 
 ## Sekcja FAQ
 
-1. **Jaki jest najlepszy format do konwersji dokumentów NSF?**  
-   - To zależy od potrzeb: HTML do przeglądania w sieci, PDF dla uniwersalnego dostępu, JPG/PNG dla obrazów.  
+**Jaki jest najlepszy format do konwertowania dokumentów NSF?**  
+- To zależy od dalszego zastosowania: HTML dla portali internetowych, PDF dla uniwersalnej dystrybucji, JPG/PNG dla przepływów pracy opartych na obrazach.
 
-2. **Jak efektywnie obsługiwać duże pliki NSF?**  
-   - Rozważ optymalizację opcji ładowania i przetwarzanie w partiach.  
+**Jak efektywnie obsługiwać duże pliki NSF?**  
+- Dostosuj `LoadOptions` (np. zwiększ `setResourceLoadingTimeout`), przetwarzaj pliki w mniejszych partiach i, gdy to możliwe, ponownie używaj jednej instancji `Viewer`.
 
-3. **Czy mogę dostosować jakość wyjścia w formatach obrazów?**  
-   - Tak, dostosuj parametry takie jak rozdzielczość przy konfigurowaniu `JpgViewOptions` lub `PngViewOptions`.  
+**Czy mogę dostosować jakość wyjścia w formatach obrazów?**  
+- Tak. Ustaw DPI, poziom kompresji i głębię kolorów za pomocą `JpgViewOptions` lub `PngViewOptions` przed renderowaniem.
 
-4. **Co zrobić, gdy konwersja się nie powiedzie?**  
-   - Sprawdź ścieżki plików, upewnij się, że instancje Viewer są poprawnie skonfigurowane oraz odwołaj się do dokumentacji GroupDocs w celu uzyskania wskazówek rozwiązywania problemów.  
+**Co zrobić, gdy konwersja się nie powiedzie?**  
+- Zweryfikuj ścieżki plików, upewnij się, że plik NSF nie jest uszkodzony i sprawdź logi GroupDocs.Viewer pod kątem szczegółowych kodów błędów. Aktualizacja do najnowszej wersji biblioteki często rozwiązuje problemy z kompatybilnością.
 
-5. **Czy istnieje sposób na automatyzację tych konwersji w procesach wsadowych?**  
-   - Oczywiście! Implementacja pętli przetwarzającej wiele dokumentów może efektywnie zautomatyzować ten proces.  
+**Czy konwersja wsadowa jest obsługiwana?**  
+- Zdecydowanie tak. Otocz logikę renderowania w pętli `for` lub strumieniu Java, aby automatycznie przetwarzać wiele plików NSF.
 
-## Najczęściej zadawane pytania
+## Często zadawane pytania
 
-**P: Jak przekonwertować plik NSF do PDF bez utraty adnotacji?**  
-O: GroupDocs.Viewer zachowuje większość adnotacji podczas kroku renderowania `PdfViewOptions`, zapewniając, że PDF odzwierciedla oryginalny układ.
+**Q: Jak przekonwertować plik NSF do PDF bez utraty adnotacji?**  
+A: `PdfViewOptions` automatycznie zachowuje większość adnotacji; wystarczy wyrenderować dokument z tymi opcjami, a otrzymany PDF odzwierciedla oryginalny układ.
 
-**P: Czy mogę konwertować pliki NSF zabezpieczone hasłem?**  
-O: Tak. Dostarcz odpowiednie dane uwierzytelniające za pomocą `LoadOptions` przed inicjalizacją Viewer.
+**Q: Czy mogę konwertować pliki NSF chronione hasłem?**  
+A: Tak. Dostarcz dane uwierzytelniające poprzez `LoadOptions` przed utworzeniem instancji `Viewer`.
 
-**P: Jaką wersję Javy zaleca się dla najlepszej wydajności?**  
-O: JDK 11 lub nowszy zapewnia lepsze zarządzanie pamięcią (garbage collection) i obsługę współbieżności, co korzystnie wpływa na konwersje wsadowe.
+**Q: Która wersja Javy zapewnia najlepszą wydajność?**  
+A: JDK 11 lub nowszy oferuje ulepszoną garbage collection i współbieżność, co przyspiesza konwersje wsadowe.
 
-**P: Czy można ustawić własne DPI dla wyjścia JPG/PNG?**  
-O: Możesz dostosować DPI, konfigurując `JpgViewOptions` lub `PngViewOptions` przed wywołaniem `viewer.view(options)`.
+**Q: Czy można ustawić własne DPI dla wyjścia JPG/PNG?**  
+A: Skonfiguruj `JpgViewOptions.setResolution(int dpi)` lub `PngViewOptions.setResolution(int dpi)` przed wywołaniem `viewer.view(options)`.
 
-**P: Czy GroupDocs.Viewer obsługuje strumieniowanie wyniku bezpośrednio do odpowiedzi sieciowej?**  
-O: Tak. Zamiast zapisywać do ścieżki pliku, możesz użyć przeciążeń `Stream` w opcjach widoku, aby wysłać wynik bezpośrednio w odpowiedzi HTTP.
+**Q: Czy GroupDocs.Viewer obsługuje strumieniowanie wyniku bezpośrednio do odpowiedzi HTTP?**  
+A: Tak. Użyj przeciążenia `Stream` w opcjach widoku, aby zapisać wynik bezpośrednio do `HttpServletResponse.getOutputStream()`.
 
 ## Zakończenie
 
-Ten przewodnik przedstawił, jak **convert nsf to pdf** i inne formaty przy użyciu GroupDocs.Viewer dla Javy. Postępując zgodnie z tymi krokami, możesz płynnie zintegrować możliwości konwersji dokumentów w swoich aplikacjach. Zapoznaj się z dodatkowymi funkcjami GroupDocs.Viewer i rozważ ich integrację w swoich projektach, aby uzyskać bogatsze zarządzanie dokumentami.
+Masz teraz kompletną mapę drogową do **convert nsf to pdf** oraz renderowania plików NSF do HTML, JPG i PNG przy użyciu GroupDocs.Viewer dla Javy. Postępując zgodnie z powyższymi krokami, możesz zintegrować solidną konwersję dokumentów w dowolnej aplikacji Java, zautomatyzować zadania wsadowe i dostarczać treści w formacie najlepiej odpowiadającym potrzebom użytkowników. Poznaj dodatkowe funkcje Viewer, takie jak znakowanie wodne, własne czcionki i obsługa wielu stron, aby jeszcze bardziej wzbogacić rozwiązanie.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-02-13  
+**Ostatnia aktualizacja:** 2026-05-26  
 **Testowano z:** GroupDocs.Viewer 25.2  
 **Autor:** GroupDocs
+
+## Powiązane tutoriale
+
+- [groupdocs viewer java: Konwertowanie dokumentów do PDF – Kompletny przewodnik](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
+- [convert odf html java – Konwertowanie ODF do HTML, JPG, PNG, PDF przy użyciu GroupDocs.Viewer dla Javy](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
+- [Konwertowanie PST do HTML, JPG, PNG, PDF przy użyciu GroupDocs.Viewer dla Javy](/viewer/java/export-conversion/convert-pst-ost-groupdocs-viewer-java/)
