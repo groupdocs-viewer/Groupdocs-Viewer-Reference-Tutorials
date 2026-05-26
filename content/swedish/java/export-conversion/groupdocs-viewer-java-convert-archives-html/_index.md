@@ -1,36 +1,47 @@
 ---
-"date": "2025-04-24"
-"description": "Lär dig hur du konverterar ZIP- och RAR-arkiv till enkel- och flersidig HTML med GroupDocs.Viewer Java. Effektivisera din dokumentkonverteringsprocess."
-"title": "Konvertera arkiv till HTML med GroupDocs.Viewer Java – en omfattande guide"
-"url": "/sv/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
-"weight": 1
+date: '2026-02-23'
+description: Lär dig hur du ställer in antal objekt per sida, bäddar in resurser i
+  HTML och batchkonverterar arkiv till enkel‑ eller flersidig HTML med GroupDocs.Viewer
+  Java.
+keywords:
+- convert archives to HTML Java
+- GroupDocs.Viewer Java tutorial
+- render ZIP RAR to HTML
+title: 'Ange antal objekt per sida: Konvertera arkiv till HTML med GroupDocs.Viewer
+  Java'
 type: docs
+url: /sv/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
+weight: 1
 ---
-# Konvertera arkiv till HTML med GroupDocs.Viewer Java: En omfattande guide
 
-## Introduktion
+# Ställ in objekt per sida: Konvertera arkiv till HTML med GroupDocs.Viewer Java
 
-Att konvertera arkivfiler som ZIP eller RAR till webbvänliga format är ett vanligt krav för att dela, granska och integrera dokument i system. Den här handledningen guidar dig genom att använda GroupDocs.Viewer Java – ett kraftfullt bibliotek utformat för sömlösa dokumentkonverteringar.
+Att konvertera arkivfiler som ZIP eller RAR till webbvänlig HTML är ett vanligt behov när du vill dela eller granska dokument direkt i en webbläsare. I den här guiden lär du dig **hur du ställer in objekt per sida** när du renderar arkiv, hur du bäddar in resurser i HTML för en självständig output, och hur du batch‑konverterar arkiv effektivt med GroupDocs.Viewer Java.
 
-**Vad du kommer att lära dig:**
-- Rendera arkiv till enkelsidiga och flersidiga HTML-format.
-- Konfigurera alternativ för inbäddade resurser i din HTML-utdata.
-- Optimera renderingsprocessen för prestanda och resurseffektivitet.
+![Konvertera arkiv till HTML med GroupDocs.Viewer för Java](/viewer/export-conversion/convert-archives-to-html-java.png)
 
-Låt oss konfigurera GroupDocs.Viewer Java med rätt verktyg och kunskap för att börja.
+## Snabba svar
+- **Vad styr “set items per page”?** Det bestämmer hur många filer eller mappar från ett arkiv som visas på varje genererad HTML‑sida.  
+- **Kan jag bädda in bilder och CSS direkt i HTML?** Ja – använd `forEmbeddedResources`‑alternativet för att bädda in resurser i HTML.  
+- **Är batch‑konvertering möjlig?** Absolut; du kan loopa över en samling arkiv och rendera var och en med samma inställningar.  
+- **Behöver jag Maven för att använda GroupDocs.Viewer?** Ja, lägg till `maven groupdocs viewer`‑beroendet som visas nedan.  
+- **Vilka utdataformat stöds?** Single‑page HTML Java och multi‑page HTML Java är båda tillgängliga.
 
-## Förkunskapskrav
+## Vad är “set items per page” i GroupDocs.Viewer?
+Inställningen **set items per page** tillhör alternativen för arkivrendering. Den talar om för visaren hur många arkivinlägg (filer eller mappar) som ska visas på varje HTML‑sida när du genererar ett flersidigt HTML‑dokument. Att justera detta värde hjälper dig att balansera sidstorlek och navigeringshastighet, särskilt för stora arkiv.
 
-Se till att du har följande innan du börjar:
-- **Obligatoriska bibliotek:** Inkludera GroupDocs.Viewer version 25.2 eller senare i ditt projekt.
-- **Miljöinställningar:** Ett konfigurerat Java Development Kit (JDK) på ditt system.
-- **Kunskapsförkunskapskrav:** Grundläggande förståelse för Java-programmering och Maven-beroendehantering.
+## Varför bädda in resurser i HTML?
+Att bädda in resurser (bilder, CSS, teckensnitt) direkt i HTML‑filen skapar ett enda, portabelt dokument som kan öppnas utan externa filer. Detta är idealiskt för e‑postbilagor, offline‑visning eller för att bädda in resultatet i andra webbsidor.
 
-## Konfigurera GroupDocs.Viewer för Java
+## Förutsättningar
 
-För att använda GroupDocs.Viewer, lägg till det som ett beroende i ditt projekt med hjälp av Maven:
+- **Krävda bibliotek:** Inkludera GroupDocs.Viewer version 25.2 eller senare.  
+- **Miljö:** Java Development Kit (JDK) installerat och konfigurerat.  
+- **Kunskap:** Grundläggande Java och Maven‑beroendehantering.  
 
-**Maven-inställningar:**
+## Maven GroupDocs Viewer‑inställning
+
+Lägg till GroupDocs‑arkivet och viewer‑beroendet i din `pom.xml`:
 
 ```xml
 <repositories>
@@ -50,160 +61,122 @@ För att använda GroupDocs.Viewer, lägg till det som ett beroende i ditt proje
 </dependencies>
 ```
 
-### Licensförvärv
+### Licensanskaffning
+GroupDocs.Viewer erbjuder en **gratis provlänk**, en tillfällig licens eller ett fullständigt köp. Välj den som passar ditt projekts tidsplan.
 
-GroupDocs.Viewer erbjuder olika licensalternativ:
-- **Gratis provperiod:** Börja med en gratis provperiod för att utforska dess möjligheter.
-- **Tillfällig licens:** Skaffa en tillfällig licens för utökad användning utan utvärderingsbegränsningar.
-- **Köpa:** Överväg att köpa en licens för fullständig åtkomst och support.
-
-**Grundläggande initialisering:**
-
-Efter att du har lagt till GroupDocs.Viewer som ett beroende, initiera det i din Java-applikation:
+### Grundläggande initiering
+Efter Maven‑inställningen, ta in visaren i din kod:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Din initialiseringskod här
+// Your initialization code here
 ```
 
-## Implementeringsguide
+## Så renderar du arkiv till enkel‑sidig HTML
 
-När allt är klart, låt oss implementera funktionerna steg för steg.
-
-### Rendera arkiv till HTML för en enda sida
-
-**Översikt:**
-Konvertera ett helt arkiv till ett enda HTML-dokument för enkel delning och visning utan att behöva navigera igenom flera sidor.
-
-#### Steg 1: Definiera sökvägen till utdatakatalogen
-
-Konfigurera din utdatakatalog:
-
+### Steg 1: Definiera utdatamapp
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Detta anger var den renderade HTML-koden ska sparas.
-
-#### Steg 2: Ange filnamn för enkelsidig utskrift
-
-Definiera namnet på din enkelsidiga HTML-fil:
-
+### Steg 2: Ange filnamn för enkel‑sidig output
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-#### Steg 3: Initiera Viewer-instansen
-
-Initiera en `Viewer` exempel med din arkivfil:
-
+### Steg 3: Initiera visaren
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // Ytterligare konfigurationssteg följer
+    // Further configuration steps follow
 }
 ```
 
-#### Steg 4: Konfigurera renderingsalternativ
-
-Ange alternativ för att rendera arkivet till HTML-format, bädda in resurser direkt i HTML-koden:
-
+### Steg 4: Konfigurera renderingsalternativ (bädda in resurser i HTML)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Steg 5: Rendera som en enda sida
-
-Konfigurera ditt visningsprogram för att visa hela arkivet på en sida:
-
+### Steg 5: Rendera som en enda sida
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-### Rendera arkiv till flersidig HTML
+## Så renderar du arkiv till flersidig HTML och ställer in objekt per sida
 
-**Översikt:**
-För större arkiv, dela upp innehållet på flera sidor. Den här funktionen underlättar rendering av ett arkiv över flera HTML-filer.
-
-#### Steg 1: Definiera sökvägen till utdatakatalogen
-
-Återanvänd utdatakatalogens inställningar från implementeringen av en enda sida:
-
+### Steg 1: Återanvänd utdatamappen
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### Steg 2: Ställ in filnamnsformat för flersidig utmatning
-
-Skapa ett filnamnsformat för att hantera flera sidor med hjälp av `{0}` som platsmarkör för sidnummer:
-
+### Steg 2: Definiera filnamnsformat för flera sidor
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-#### Steg 3: Initiera Viewer-instansen
-
-Initiera din `Viewer` exempel på liknande sätt som för ensidig uppsättning:
-
+### Steg 3: Initiera visaren igen
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // Fortsätt med flersidig konfiguration
+    // Continue with multi‑page configuration
 }
 ```
 
-#### Steg 4: Konfigurera alternativ för rendering av flera sidor
-
-Konfigurera alternativ för rendering på flera sidor med inbäddade resurser:
-
+### Steg 4: Konfigurera flersidiga alternativ (bädda in resurser i HTML)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Steg 5: Ange objekt per sida
-
-Bestäm hur många objekt (filer eller mappar) som ska visas per sida. Justera den här inställningen baserat på dina behov:
-
+### Steg 5: Ställ in objekt per sida (primärt nyckelord i handlingen)
 ```java
-options.getArchiveOptions().setItemsPerPage(10); // Standardinställningen är 16
+options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
 ## Praktiska tillämpningar
 
-- **Dokumenthanteringssystem:** Integrera sömlöst funktioner för arkivvisning.
-- **Webbportaler:** Ge användarna enkel åtkomst till nedladdningsbart innehåll i ett webbvänligt format.
-- **Samarbetsverktyg:** Gör det möjligt för teammedlemmar att granska delade dokument direkt i sina webbläsare.
+- **Dokumenthanteringssystem:** Lägg till förhandsgranskning av arkiv utan att installera extra visare.  
+- **Webbportaler:** Erbjud användare ett snabbt, nedladdningsfritt sätt att utforska samlade dokument.  
+- **Samarbetsverktyg:** Låt team inspektera delade arkiv direkt i webbläsaren.  
 
 ## Prestandaöverväganden
 
-När du implementerar GroupDocs.Viewer, tänk på dessa prestandatips:
-- **Resurshantering:** Övervaka minnesanvändningen och optimera inställningarna för skräpinsamling vid behov.
-- **Batchbearbetning:** Om du konverterar ett stort antal arkiv, batch-kör processen för att hantera systembelastningen.
-- **Cachningsstrategi:** Implementera cachningsmekanismer för ofta använda dokument för att förbättra hastigheten.
+- **Resurshantering:** Håll koll på minnesanvändning; överväg att finjustera JVM:s skräpsamlare för stora batcher.  
+- **Batch‑konvertera arkiv:** Loop igenom en lista med arkivfiler och anropa samma renderingslogik för att maximera genomströmning.  
+- **Cache‑strategi:** Spara renderad HTML i en cache om samma arkiv ofta nås.  
 
-## Slutsats
+## Vanliga frågor
 
-Du har nu bemästrat hur man konverterar arkivfiler till både enkelsidiga och flersidiga HTML-format med GroupDocs.Viewer Java. Experimentera med olika inställningar för att hitta vad som fungerar bäst för ditt specifika användningsfall. För vidare utforskning kan du överväga att integrera ytterligare funktioner eller experimentera med andra dokumenttyper som stöds av GroupDocs.Viewer.
+**Q: Vad är GroupDocs.Viewer Java?**  
+A: Ett mångsidigt bibliotek för att rendera dokument—inklusive arkiv—till format som HTML, PDF och bilder.
 
-Redo att ta nästa steg? Implementera dessa tekniker i dina projekt och se hur de förbättrar ditt arbetsflöde!
+**Q: Hur kan jag få en gratis provversion av GroupDocs.Viewer?**  
+A: Besök [free trial link](https://releases.groupdocs.com/viewer/java/) för att ladda ner och testa.
 
-## FAQ-sektion
+**Q: Kan jag konvertera andra dokumenttyper än arkiv?**  
+A: Ja, visaren stöder PDF, Word, Excel och många fler format.
 
-1. **Vad är GroupDocs.Viewer Java?**
-   - Ett mångsidigt bibliotek för att rendera dokument i olika format, inklusive HTML.
-2. **Hur kan jag få en gratis provversion av GroupDocs.Viewer?**
-   - Besök [länk till gratis provperiod](https://releases.groupdocs.com/viewer/java/) att ladda ner och testa.
-3. **Kan jag konvertera andra dokumenttyper med GroupDocs.Viewer Java?**
-   - Ja, den stöder format utöver arkiv, till exempel PDF-filer och Word-dokument.
-4. **Vad ska jag göra om min rendering är långsam?**
-   - Optimera resursanvändningen eller justera antalet objekt per sida för flersidiga utdata.
-5. **Hur kan jag kontakta supporten för GroupDocs.Viewer Java?**
-   - Nå ut genom deras [supportforum](https://forum.groupdocs.com/c/viewer/9) för hjälp.
+**Q: Vad ska jag göra om renderingen är långsam?**  
+A: Minska antalet objekt per sida, aktivera streaming eller bearbeta arkiv i mindre batcher.
+
+**Q: Var kan jag få hjälp eller support?**  
+A: Kontakta via [support forum](https://forum.groupdocs.com/c/viewer/9).
+
+**Q: Är det möjligt att bädda in CSS och bilder direkt i HTML?**  
+A: Absolut—använd `HtmlViewOptions.forEmbeddedResources` som visas i exemplen.
+
+**Q: Hur batch‑konverterar jag en mapp med arkiv?**  
+A: Iterera över varje fil med en `for`‑loop och applicera samma `Viewer`‑ och `HtmlViewOptions`‑konfiguration för varje iteration.
 
 ## Resurser
 
-- **Dokumentation:** Fördjupa dig i funktionalitet med [GroupDocs-dokumentation](https://docs.groupdocs.com/viewer/java/).
-- **API-referens:** Utforska detaljerade API-referenser på [GroupDocs API](https://reference.groupdocs.com/viewer/java/).
-- **Ladda ner:** Få tillgång till den senaste versionen från [nedladdningssida](https://releases.groupdocs.com/viewer/java/).
-- **Köp och licensiering:** Läs mer om köpalternativ på deras [köpsida](https://purchase.groupdocs.com/buy).
-- **Stöd och gemenskap:** Engagera dig i samhället eller sök stöd genom [GroupDocs-forum](https://forum.groupdocs.com/c/viewer/9).
+- **Dokumentation:** Fördjupa dig i funktionaliteten med [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API‑referens:** Utforska hela API:n på [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
+- **Nedladdning:** Hämta de senaste binärerna från [download page](https://releases.groupdocs.com/viewer/java/).  
+- **Köp och licensiering:** Granska alternativ på [purchase page](https://purchase.groupdocs.com/buy).  
+- **Support och community:** Delta i diskussioner på [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9).
+
+---
+
+**Senast uppdaterad:** 2026-02-23  
+**Testat med:** GroupDocs.Viewer 25.2  
+**Författare:** GroupDocs

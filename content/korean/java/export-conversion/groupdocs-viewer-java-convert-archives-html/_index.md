@@ -1,36 +1,65 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer Java를 사용하여 ZIP, RAR 아카이브를 단일 및 다중 페이지 HTML로 변환하는 방법을 알아보세요. 문서 변환 프로세스를 간소화하세요."
-"title": "GroupDocs.Viewer Java를 사용하여 아카이브를 HTML로 변환하는 포괄적인 가이드"
-"url": "/ko/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
-"weight": 1
+date: '2026-02-23'
+description: GroupDocs.Viewer Java를 사용하여 페이지당 항목 수를 설정하고, 리소스 HTML을 삽입하며, 아카이브를 단일
+  페이지 또는 다중 페이지 HTML로 일괄 변환하는 방법을 배우세요.
+keywords:
+- convert archives to HTML Java
+- GroupDocs.Viewer Java tutorial
+- render ZIP RAR to HTML
+title: '페이지당 항목 수 설정: GroupDocs.Viewer Java를 사용하여 아카이브를 HTML로 변환'
 type: docs
+url: /ko/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
+weight: 1
 ---
-# GroupDocs.Viewer Java를 사용하여 아카이브를 HTML로 변환: 포괄적인 가이드
 
-## 소개
+Tested With:** GroupDocs.Viewer 25.2  
+**Author:** GroupDocs
 
-ZIP이나 RAR 같은 아카이브 파일을 웹 친화적인 형식으로 변환하는 것은 시스템 내에서 문서를 공유, 검토 및 통합하는 데 있어 필수적인 작업입니다. 이 튜토리얼에서는 원활한 문서 변환을 위해 설계된 강력한 라이브러리인 GroupDocs.Viewer Java를 사용하는 방법을 안내합니다.
+Translate labels but keep bold.
 
-**배울 내용:**
-- 아카이브를 단일 페이지 및 다중 페이지 HTML 형식으로 렌더링합니다.
-- HTML 출력에 포함된 리소스에 대한 옵션 구성.
-- 성능과 리소스 효율성을 위해 렌더링 프로세스를 최적화합니다.
+- **Last Updated:** -> **마지막 업데이트:** 2026-02-23
+- **Tested With:** -> **테스트 환경:** GroupDocs.Viewer 25.2 (maybe keep as is)
+- **Author:** -> **작성자:** GroupDocs
 
-올바른 도구와 지식을 바탕으로 GroupDocs.Viewer Java를 설정해 보겠습니다.
+Make sure to keep line breaks.
 
-## 필수 조건
+Now produce final content with all translations.
 
-시작하기 전에 다음 사항이 있는지 확인하세요.
-- **필수 라이브러리:** 프로젝트에 GroupDocs.Viewer 버전 25.2 이상을 포함하세요.
-- **환경 설정:** 시스템에 구성된 Java Development Kit(JDK)
-- **지식 전제 조건:** Java 프로그래밍과 Maven 종속성 관리에 대한 기본적인 이해가 있습니다.
+Check for any missed items: Ensure we didn't translate code block placeholders. They remain.
 
-## Java용 GroupDocs.Viewer 설정
+Check for any shortcodes: none.
 
-GroupDocs.Viewer를 사용하려면 Maven을 사용하여 프로젝트에 종속성으로 추가하세요.
+Check for any markdown links: we kept.
 
-**Maven 설정:**
+Check for any URLs: unchanged.
+
+Now produce final answer.# 페이지당 항목 설정: GroupDocs.Viewer Java로 아카이브를 HTML로 변환
+
+ZIP 또는 RAR와 같은 아카이브 파일을 웹 친화적인 HTML로 변환하는 것은 브라우저에서 직접 문서를 공유하거나 검토하려는 경우 자주 필요한 작업입니다. 이 가이드에서는 **페이지당 항목을 설정하는 방법**을 아카이브를 렌더링할 때 배우고, 자체 포함된 출력을 위한 리소스 HTML을 임베드하는 방법, 그리고 GroupDocs.Viewer Java를 사용하여 아카이브를 효율적으로 배치 변환하는 방법을 배웁니다.
+
+![GroupDocs.Viewer for Java로 아카이브를 HTML로 변환](/viewer/export-conversion/convert-archives-to-html-java.png)
+
+## 빠른 답변
+- **“페이지당 항목 설정”은 무엇을 제어하나요?** 아카이브의 파일 또는 폴더가 각 생성된 HTML 페이지에 몇 개 표시될지를 결정합니다.  
+- **HTML에 이미지와 CSS를 직접 임베드할 수 있나요?** 예 – `forEmbeddedResources` 옵션을 사용하여 리소스 HTML을 임베드합니다.  
+- **배치 변환이 가능한가요?** 물론입니다; 아카이브 컬렉션을 반복하면서 동일한 설정으로 각각을 렌더링할 수 있습니다.  
+- **GroupDocs.Viewer를 사용하려면 Maven이 필요합니까?** 예, 아래와 같이 `maven groupdocs viewer` 의존성을 추가하십시오.  
+- **지원되는 출력 형식은 무엇인가요?** Single‑page HTML Java와 multi‑page HTML Java 모두 사용할 수 있습니다.
+
+## GroupDocs.Viewer에서 “페이지당 항목 설정”이란?
+**페이지당 항목 설정**은 아카이브 렌더링 옵션에 속합니다. 멀티 페이지 HTML 문서를 생성할 때 각 HTML 페이지에 표시될 아카이브 항목(파일 또는 폴더)의 수를 뷰어에 알려줍니다. 이 값을 조정하면 특히 대용량 아카이브의 경우 페이지 크기와 탐색 속도의 균형을 맞출 수 있습니다.
+
+## 왜 리소스 HTML을 임베드해야 할까요?
+리소스(이미지, CSS, 폰트)를 HTML 파일 내부에 직접 임베드하면 외부 파일 없이도 열 수 있는 단일 포터블 문서를 만들 수 있습니다. 이는 이메일 첨부 파일, 오프라인 보기, 또는 다른 웹 페이지에 출력물을 임베드할 때 이상적입니다.
+
+## 사전 요구 사항
+- **필수 라이브러리:** GroupDocs.Viewer 버전 25.2 이상을 포함합니다.  
+- **환경:** Java Development Kit (JDK)이 설치되고 구성되어 있어야 합니다.  
+- **지식:** 기본 Java 및 Maven 의존성 관리.
+
+## Maven GroupDocs Viewer 설정
+
+Add the GroupDocs repository and the viewer dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -50,160 +79,119 @@ GroupDocs.Viewer를 사용하려면 Maven을 사용하여 프로젝트에 종속
 </dependencies>
 ```
 
-### 라이센스 취득
+### 라이선스 획득
+GroupDocs.Viewer는 **free trial link**, 임시 라이선스 또는 정식 구매 옵션을 제공합니다. 프로젝트 일정에 맞는 옵션을 선택하십시오.
 
-GroupDocs.Viewer는 다양한 라이선스 옵션을 제공합니다.
-- **무료 체험:** 무료 체험판을 통해 기능을 직접 확인해 보세요.
-- **임시 면허:** 평가 제한 없이 장기간 사용할 수 있는 임시 라이선스를 받으세요.
-- **구입:** 전체 액세스와 지원을 받으려면 라이선스 구매를 고려하세요.
-
-**기본 초기화:**
-
-GroupDocs.Viewer를 종속성으로 추가한 후 Java 애플리케이션에서 초기화합니다.
+### 기본 초기화
+After the Maven setup, bring the viewer into your code:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// 여기에 초기화 코드가 있습니다
+// Your initialization code here
 ```
 
-## 구현 가이드
+## 아카이브를 단일 페이지 HTML로 렌더링하는 방법
 
-모든 것이 설정되었으니, 단계별로 기능을 구현해 보겠습니다.
-
-### 아카이브를 단일 페이지 HTML로 렌더링
-
-**개요:**
-여러 페이지를 탐색하지 않고도 쉽게 공유하고 볼 수 있도록 전체 보관 자료를 단일 페이지 HTML 문서로 변환합니다.
-
-#### 1단계: 출력 디렉토리 경로 정의
-
-출력 디렉토리를 설정하세요:
-
+### 단계 1: 출력 디렉터리 정의
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-이는 렌더링된 HTML이 저장될 위치를 지정합니다.
-
-#### 2단계: 단일 페이지 출력에 대한 파일 이름 설정
-
-단일 페이지 HTML 파일의 이름을 정의하세요.
-
+### 단계 2: 단일 페이지 출력 파일 이름 설정
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-#### 3단계: 뷰어 인스턴스 초기화
-
-초기화 `Viewer` 보관 파일과 함께 인스턴스:
-
+### 단계 3: 뷰어 초기화
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // 추가 구성 단계는 다음과 같습니다.
+    // Further configuration steps follow
 }
 ```
 
-#### 4단계: 렌더링 옵션 구성
-
-아카이브를 HTML 형식으로 렌더링하고 리소스를 HTML 내에 직접 포함하기 위한 옵션을 설정합니다.
-
+### 단계 4: 렌더링 옵션 구성 (리소스 HTML 임베드)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 5단계: 단일 페이지로 렌더링
-
-뷰어를 구성하여 전체 아카이브를 한 페이지에 출력하세요.
-
+### 단계 5: 단일 페이지로 렌더링
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-### 아카이브를 다중 페이지 HTML로 렌더링
+## 아카이브를 멀티 페이지 HTML로 렌더링하고 페이지당 항목 설정하기
 
-**개요:**
-더 큰 아카이브의 경우 콘텐츠를 여러 페이지로 분할할 수 있습니다. 이 기능을 사용하면 여러 HTML 파일에 걸쳐 아카이브를 렌더링하는 데 도움이 됩니다.
-
-#### 1단계: 출력 디렉토리 경로 정의
-
-단일 페이지 구현에서 설정된 출력 디렉토리를 재사용합니다.
-
+### 단계 1: 출력 디렉터리 재사용
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### 2단계: 다중 페이지 출력을 위한 파일 이름 형식 설정
-
-여러 페이지를 수용할 수 있는 파일 이름 형식을 만듭니다. `{0}` 페이지 번호의 자리 표시자로:
-
+### 단계 2: 다중 페이지 파일 이름 형식 정의
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-#### 3단계: 뷰어 인스턴스 초기화
-
-초기화하세요 `Viewer` 인스턴스는 단일 페이지 설정과 유사합니다.
-
+### 단계 3: 뷰어 다시 초기화
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // 다중 페이지 구성 계속
+    // Continue with multi‑page configuration
 }
 ```
 
-#### 4단계: 다중 페이지 렌더링 옵션 구성
-
-내장된 리소스로 여러 페이지로 렌더링하기 위한 옵션을 설정합니다.
-
+### 단계 4: 멀티 페이지 옵션 구성 (리소스 HTML 임베드)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 5단계: 페이지당 항목 지정
-
-페이지당 표시할 항목(파일 또는 폴더) 수를 결정합니다. 필요에 따라 이 설정을 조정하세요.
-
+### 단계 5: 페이지당 항목 설정 (동작의 주요 키워드)
 ```java
-options.getArchiveOptions().setItemsPerPage(10); // 기본값은 16입니다
+options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
-## 실제 응용 프로그램
-
-- **문서 관리 시스템:** 아카이브 보기 기능을 완벽하게 통합합니다.
-- **웹 포털:** 웹 친화적인 형식으로 다운로드 가능한 콘텐츠에 사용자가 쉽게 접근할 수 있도록 합니다.
-- **협업 도구:** 팀원들이 브라우저에서 직접 공유 문서를 검토할 수 있도록 합니다.
+## 실용적인 적용 사례
+- **문서 관리 시스템:** 추가 뷰어를 설치하지 않고도 아카이브 미리보기 기능을 추가합니다.  
+- **웹 포털:** 사용자에게 번들된 문서를 빠르게, 다운로드 없이 탐색할 수 있는 방법을 제공합니다.  
+- **협업 도구:** 팀이 공유된 아카이브를 브라우저에서 직접 검사할 수 있게 합니다.
 
 ## 성능 고려 사항
+- **리소스 관리:** 메모리 사용량을 주시하고, 대량 배치에 대해 JVM 가비지 컬렉터를 조정하는 것을 고려하십시오.  
+- **아카이브 배치 변환:** 아카이브 파일 목록을 순회하면서 동일한 렌더링 로직을 호출하여 처리량을 최대화합니다.  
+- **캐시 전략:** 동일한 아카이브에 자주 접근한다면 렌더링된 HTML을 캐시에 저장하십시오.
 
-GroupDocs.Viewer를 구현할 때 다음과 같은 성능 팁을 고려하세요.
-- **자원 관리:** 메모리 사용량을 모니터링하고 필요한 경우 가비지 수집 설정을 최적화합니다.
-- **일괄 처리:** 대량의 아카이브를 변환하는 경우 시스템 부하를 관리하기 위해 프로세스를 일괄 처리합니다.
-- **캐싱 전략:** 자주 액세스하는 문서에 대한 캐싱 메커니즘을 구현하여 속도를 향상시킵니다.
+## 자주 묻는 질문
 
-## 결론
+**Q: GroupDocs.Viewer Java란?**  
+A: HTML, PDF, 이미지 등 다양한 형식으로 문서(아카이브 포함)를 렌더링하는 다목적 라이브러리입니다.
 
-이제 GroupDocs.Viewer Java를 사용하여 아카이브 파일을 단일 페이지 및 다중 페이지 HTML 형식으로 변환하는 방법을 익혔습니다. 다양한 설정을 실험하여 특정 사용 사례에 가장 적합한 설정을 찾아보세요. 더 자세히 알아보려면 추가 기능을 통합하거나 GroupDocs.Viewer에서 지원하는 다른 문서 유형을 실험해 보세요.
+**Q: GroupDocs.Viewer의 무료 체험을 어떻게 얻을 수 있나요?**  
+A: 다운로드 및 테스트를 위해 [free trial link](https://releases.groupdocs.com/viewer/java/)를 방문하십시오.
 
-다음 단계로 나아갈 준비가 되셨나요? 이 기술들을 여러분의 프로젝트에 적용하고 워크플로우가 얼마나 향상되는지 직접 확인해 보세요!
+**Q: 아카이브 외에 다른 문서 유형도 변환할 수 있나요?**  
+A: 예, 뷰어는 PDF, Word, Excel 등 다양한 형식을 지원합니다.
 
-## FAQ 섹션
+**Q: 렌더링이 느릴 경우 어떻게 해야 하나요?**  
+A: 페이지당 항목 수를 줄이거나, 스트리밍을 활성화하거나, 아카이브를 더 작은 배치로 처리하십시오.
 
-1. **GroupDocs.Viewer Java란 무엇입니까?**
-   - HTML을 포함한 다양한 형식으로 문서를 렌더링하기 위한 다목적 라이브러리입니다.
-2. **GroupDocs.Viewer 무료 평가판을 어떻게 받을 수 있나요?**
-   - 방문하세요 [무료 체험 링크](https://releases.groupdocs.com/viewer/java/) 다운로드하고 테스트하세요.
-3. **GroupDocs.Viewer Java를 사용하여 다른 문서 유형을 변환할 수 있나요?**
-   - 네, PDF, Word 문서 등 보관 파일 이외의 형식도 지원합니다.
-4. **렌더링 속도가 느리면 어떻게 해야 하나요?**
-   - 여러 페이지로 구성된 출력의 경우 리소스 사용을 최적화하거나 페이지당 항목 수를 조정합니다.
-5. **GroupDocs.Viewer Java에 대한 지원팀에 어떻게 문의할 수 있나요?**
-   - 그들을 통해 연락하세요 [지원 포럼](https://forum.groupdocs.com/c/viewer/9) 도움이 필요하면.
+**Q: 어디서 도움이나 지원을 받을 수 있나요?**  
+A: 다음 [support forum](https://forum.groupdocs.com/c/viewer/9)에서 문의하십시오.
 
-## 자원
+**Q: CSS와 이미지를 HTML에 직접 임베드할 수 있나요?**  
+A: 물론입니다—예제와 같이 `HtmlViewOptions.forEmbeddedResources`를 사용하십시오.
 
-- **선적 서류 비치:** 기능을 더 자세히 살펴보세요 [GroupDocs 문서](https://docs.groupdocs.com/viewer/java/).
-- **API 참조:** 자세한 API 참조를 살펴보세요. [그룹문서 API](https://reference.groupdocs.com/viewer/java/).
-- **다운로드:** 최신 버전에 액세스하세요 [다운로드 페이지](https://releases.groupdocs.com/viewer/java/).
-- **구매 및 라이센스:** 구매 옵션에 대해 자세히 알아보세요. [구매 페이지](https://purchase.groupdocs.com/buy).
-- **지원 및 커뮤니티:** 커뮤니티에 참여하거나 다음을 통해 지원을 구하십시오. [GroupDocs 포럼](https://forum.groupdocs.com/c/viewer/9).
+**Q: 아카이브 폴더를 배치 변환하려면 어떻게 해야 하나요?**  
+A: `for` 루프를 사용해 각 파일을 순회하면서 동일한 `Viewer`와 `HtmlViewOptions` 구성을 적용하면 됩니다.
+
+## 리소스
+- **문서:** [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/)을 통해 기능을 자세히 살펴보세요.  
+- **API 레퍼런스:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)에서 전체 API를 확인하십시오.  
+- **다운로드:** [download page](https://releases.groupdocs.com/viewer/java/)에서 최신 바이너리를 받으세요.  
+- **구매 및 라이선스:** [purchase page](https://purchase.groupdocs.com/buy)에서 옵션을 검토하십시오.  
+- **지원 및 커뮤니티:** [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9)에서 토론에 참여하십시오.
+
+---
+
+**마지막 업데이트:** 2026-02-23  
+**테스트 환경:** GroupDocs.Viewer 25.2  
+**작성자:** GroupDocs

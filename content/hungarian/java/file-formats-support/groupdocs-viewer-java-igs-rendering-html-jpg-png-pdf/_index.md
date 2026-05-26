@@ -1,46 +1,64 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan konvertálhat IGS-fájlokat különböző formátumokba a GroupDocs.Viewer for Java segítségével. Kövesse ezt a lépésről lépésre szóló útmutatót 3D modellek HTML, JPG, PNG vagy PDF formátumban történő rendereléséhez."
-"title": "GroupDocs.Viewer Java elsajátítása&#58; IGS fájlok konvertálása HTML, JPG, PNG és PDF formátumba"
-"url": "/hu/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/"
-"weight": 1
+date: '2026-02-23'
+description: Ismerje meg, hogyan konvertálhat IGS fájlokat PDF, HTML, JPG és PNG formátumba
+  a GroupDocs.Viewer for Java segítségével. Kövesse ezt a lépésről‑lépésre útmutatót,
+  amely kész‑kész kódpéldákat tartalmaz.
+keywords:
+- GroupDocs.Viewer Java
+- Convert IGS Files
+- Render IGS Documents
+title: IGS konvertálása PDF, HTML, JPG és PNG formátumokra a GroupDocs.Viewer Java
+  segítségével
 type: docs
+url: /hu/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/
+weight: 1
 ---
-# GroupDocs.Viewer Java elsajátítása: IGS fájlok konvertálása több formátumba
 
-## Bevezetés
+ Updated:** 2026-02-23 (keep date) => "**Last Updated:** 2026-02-23" maybe translate "Last Updated" to "Legutóbb frissítve". But keep label? Should translate. So "**Last Updated:**" => "**Legutóbb frissítve:**". Keep date.
 
-Összetett IGS-fájlokat szeretne könnyen hozzáférhető formátumokba, például HTML, JPG, PNG vagy PDF formátumba konvertálni Java használatával? Ez az átfogó útmutató segít elsajátítani a GroupDocs.Viewer for Java könyvtár használatát. Akár tapasztalt fejlesztő, akár most kezd, ez az oktatóanyag segít az IGS-dokumentumok erőfeszítés nélküli renderelésében.
+**Tested With:** => "**Tesztelve ezzel:**"
 
-**Amit tanulni fogsz:**
-- A GroupDocs.Viewer beállítása és konfigurálása Java nyelven.
-- Lépésről lépésre útmutató az IGS fájlok HTML, JPG, PNG és PDF formátumba történő rendereléséhez.
-- Főbb konfigurációs lehetőségek és hibaelhárítási tippek.
-- Ezen konverziók gyakorlati alkalmazásai valós helyzetekben.
+**Author:** => "**Szerző:**"
 
-Kezdjük az előfeltételek átnézésével!
+Now produce final markdown with all translations.
+
+Check we kept all shortcodes: none besides CODE_BLOCK placeholders.
+
+We have no other shortcodes.
+
+Make sure code block placeholders remain unchanged.
+
+Now produce final answer.# IGS konvertálása PDF-re, HTML-re, JPG-re és PNG-re a GroupDocs.Viewer Java segítségével
+
+Ha **IGS konvertálásra PDF-re** (vagy HTML-re, JPG-re, PNG-re) van szükséged közvetlenül egy Java alkalmazásból, jó helyen jársz. Ebben az útmutatóban mindent végigvezetünk, amit csak szükséges – a könyvtár beállításától a 3‑D modell megjelenítéséig a projektedhez illő formátumban. Megmutatjuk, miért a GroupDocs.Viewer egy megbízható választás a gyors, stabil konverziókhoz, és gyakorlati kódot kapsz, amelyet beilleszthetsz a saját megoldásodba.
+
+![IGS fájlok konvertálása HTML-re, JPG-re, PNG-re és PDF-re a GroupDocs.Viewer for Java segítségével](/viewer/file-formats-support/convert-igs-files-to-html-jpg-png-and-pdf-java.png)
+
+## Gyors válaszok
+- **Konvertálhatok IGS-t PDF-re Java-val?** Igen, a GroupDocs.Viewer `PdfViewOptions` használatával.  
+- **Mely kimeneti formátumok támogatottak?** HTML, JPG, PNG és PDF.  
+- **Szükségem van licencre a termeléshez?** Kereskedelmi licenc szükséges; ingyenes próba elérhető teszteléshez.  
+- **Milyen Java verzió szükséges?** JDK 8 vagy újabb.  
+- **Csak Maven a módja a könyvtár hozzáadásának?** Nem, használhatod a Gradle-t vagy manuális JAR beillesztést is.
+
+## Mi az a „IGS konvertálása PDF-re”?
+Az IGS (egy semleges fájlformátum 3‑D CAD adatokhoz) PDF-re konvertálása azt jelenti, hogy egy összetett 3‑D modellt statikus, széles körben megtekinthető dokumentummá alakítunk. Ez hasznos a tervek olyan érintettekkel való megosztásához, akiknek nincs CAD eszközük.
+
+## Miért használjuk a GroupDocs.Viewer-t IGS konverziókhoz?
+- **Zero‑code CAD renderelés** – a könyvtár végzi a nehéz munkát az IGS formátum feldolgozásában.  
+- **Több kimeneti lehetőség** – egy API hívás képes előállítani HTML, JPG, PNG vagy PDF formátumot.  
+- **Cross‑platform** – minden, Java-t támogató operációs rendszeren működik.  
+- **Teljesítmény‑központú** – gyors renderelés még nagy összeszerelések esetén is.
 
 ## Előfeltételek
+- **GroupDocs.Viewer for Java** ≥ 25.2  
+- **JDK 8+** telepítve és konfigurálva az IDE-dben (IntelliJ IDEA, Eclipse, NetBeans, stb.)  
+- Alapvető Maven ismeretek (opcionális, de ajánlott)
 
-A bemutató hatékony követéséhez győződjön meg arról, hogy rendelkezik a következőkkel:
+## A GroupDocs.Viewer for Java beállítása
 
-### Szükséges könyvtárak és függőségek
-- **GroupDocs.Viewer Java-hoz**: A 25.2-es vagy újabb verzió ajánlott.
-- **Java fejlesztőkészlet (JDK)**Győződjön meg arról, hogy a JDK 8 vagy újabb verziója telepítve van a rendszerén.
-
-### Környezeti beállítási követelmények
-- Egy megfelelő integrált fejlesztői környezet (IDE), mint például az IntelliJ IDEA, az Eclipse vagy a NetBeans.
-- A Java programozási alapfogalmak és fájl I/O műveletek ismerete.
-
-### Ismereti előfeltételek
-A Maven ismerete előnyös, de nem kötelező. Lépésről lépésre mindent bemutatunk!
-
-## GroupDocs.Viewer beállítása Java-hoz
-
-Az IGS-fájlok renderelésének megkezdéséhez először állítsa be a GroupDocs.Viewer könyvtárat a projektben.
-
-**Maven beállítás**
-Adja hozzá a következő konfigurációt a `pom.xml` fájl:
+### Maven függőség
+Add the GroupDocs repository and the Viewer dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -59,13 +77,14 @@ Adja hozzá a következő konfigurációt a `pom.xml` fájl:
 </dependencies>
 ```
 
-### Licencbeszerzés
-A GroupDocs.Viewer ingyenes próbaverziót, ideiglenes tesztelési licenceket és teljes hozzáférést biztosító vásárlási lehetőségeket kínál:
-- **Ingyenes próbaverzió**: Hozzáférés az alapvető funkciókhoz korlátozott használattal.
-- **Ideiglenes engedély**Értékelje a könyvtárat rövid ideig korlátozások nélkül.
-- **Vásárlás**: Vásároljon licencet hosszú távú használatra.
+### Licenc beszerzése
+A GroupDocs.Viewer kínálja:
+- **Free trial** – korlátozott használat, gyors tesztekhez ideális.  
+- **Temporary license** – teljes funkciókészlet rövid értékelési időszakra.  
+- **Commercial license** – korlátlan termelési használat.
 
-beállítás után inicializálja a GroupDocs.Viewer fájlt a Java alkalmazásában az alábbiak szerint:
+### Alapvető Viewer inicializálás
+Az alábbi kódrészlet bemutatja, hogyan hozhatsz létre egy `Viewer` példányt, amely az IGS fájlodra mutat:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -73,159 +92,150 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.igs")) {
-            // Ide kerül a konfigurációs és renderelési logika.
+            // Configuration and rendering logic goes here.
         }
     }
 }
 ```
 
-## Megvalósítási útmutató
+## IGS renderelése HTML-re
 
-Most pedig bontsuk le az IGS-fájlok különböző formátumokba konvertálásának folyamatát a GroupDocs.Viewer for Java használatával.
+### Hogyan konvertáljunk IGS-t HTML-re?
+A HTML kimenet interaktív, böngészőbarát nézetet biztosít a 3‑D modellről.
 
-### IGS renderelése HTML-be
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.HtmlViewOptions;
+import java.nio.file.Path;
+import static java.nio.file.Paths.get;
 
-**Áttekintés:**
-IGS fájlt interaktív HTML oldallá alakíthat beágyazott erőforrásokkal. Ez a formátum kiválóan alkalmas webes alkalmazásokhoz, ahol a felhasználóknak közvetlenül a böngészőjükben kell megtekinteniük a 3D modelleket.
+public class RenderIgsToHtml {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.html");
 
-#### Lépésről lépésre történő megvalósítás:
-1. **Kimeneti könyvtár és fájlútvonal beállítása:**
-   Adja meg azt a könyvtárat, ahová a renderelt fájlok mentésre kerülnek, valamint adja meg a kimeneti fájl nevét.
-
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.HtmlViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToHtml {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.html");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Paraméterek megértése:**
-   - `HtmlViewOptions.forEmbeddedResources()` meghatározza, hogy az erőforrásokat (például a képeket) be kell ágyazni a HTML-fájlba, így az egy önálló dokumentum lesz.
+**Key point:** `HtmlViewOptions.forEmbeddedResources()` beágyazza az összes szükséges erőforrást (CSS, képek) közvetlenül a HTML fájlba, így hordozhatóvá válik.
 
-3. **Hibaelhárítási tippek:**
-   - Győződjön meg arról, hogy a kimeneti könyvtár elérési útja helyes.
-   - Ellenőrizze a fájl jogosultságait a megadott könyvtárba való íráshoz.
+## IGS renderelése JPG-re
 
-### IGS renderelése JPG-vé
+### Hogyan konvertáljunk IGS-t JPG-re?
+A JPG képek tökéletesek miniatűrök vagy gyors előnézetek számára.
 
-**Áttekintés:**
-IGS-fájljait kiváló minőségű JPG képekké alakíthatja, amelyek 3D modellek miniatűr képeiként vagy előnézeteiként használhatók.
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.JpgViewOptions;
+import java.nio.file.Path;
+import static java.nio.file.Paths.get;
 
-#### Lépésről lépésre történő megvalósítás:
-1. **Kimeneti könyvtár és fájlútvonal beállítása:**
-   Hasonló beállítás, mint a HTML konvertálásnál, de JPG-specifikus beállításokkal.
+public class RenderIgsToJpg {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.jpg");
 
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.JpgViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToJpg {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.jpg");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Főbb konfigurációk:**
-   - `JpgViewOptions` lehetővé teszi a kimeneti kép felbontásának és minőségének meghatározását.
+A `JpgViewOptions` segítségével finomhangolhatod a felbontást és a tömörítési minőséget.
 
-3. **Hibaelhárítási tippek:**
-   - Ellenőrizd, hogy az IGS fájlodra helyesen van-e hivatkozva.
-   - Módosítsa a JPG beállításokat az optimális minőség érdekében az igényei szerint.
+## IGS renderelése PNG-re
 
-### IGS renderelése PNG-vé
+### Hogyan konvertáljunk IGS-t PNG-re?
+A PNG támogatja az átlátszóságot, ami hasznos a modell különböző háttérképekkel való átfedéséhez.
 
-**Áttekintés:**
-Átlátszó vagy nem átlátszó képeket generálhat IGS-fájljaiból PNG formátumban, ami ideális a részletes vizualizációkhoz.
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.PngViewOptions;
+import java.nio file.Path;
+import static java.nio.file.Paths.get;
 
-#### Lépésről lépésre történő megvalósítás:
-1. **Kimeneti könyvtár és fájlútvonal beállítása:**
+public class RenderIgsToPng {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.png");
 
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.PngViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToPng {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.png");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Konfigurációs beállítások:**
-   - `PngViewOptions` használható a képminőség és az átlátszóság megadására.
+Kísérletezz a `PngViewOptions` beállításaival, hogy megtaláld a legjobb egyensúlyt a fájlméret és a vizuális hűség között.
 
-3. **Hibaelhárítási tippek:**
-   - Győződjön meg arról, hogy az IGS fájl elérési útja helyesen van beállítva.
-   - A legjobb eredmény elérése érdekében kísérletezzen különböző PNG-beállításokkal.
+## IGS renderelése PDF-re
 
-### IGS renderelése PDF-be
+### Hogyan konvertáljunk IGS-t PDF-re?
+A PDF a leggyakoribb formátum a részletes tervezési dokumentáció megosztásához. Ez a szakasz közvetlenül a fő kulcsszóra, a **convert IGS to PDF**-re fókuszál.
 
-**Áttekintés:**
-Az IGS dokumentumokat univerzálisan hozzáférhető PDF fájlokká alakíthatja, amelyek tökéletesek a részletes 3D modellek szabványos formátumban történő megosztásához.
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.PdfViewOptions;
+import java.nio.file.Path;
+import static java.nio.file.Paths.get;
 
-#### Lépésről lépésre történő megvalósítás:
-1. **Kimeneti könyvtár és fájlútvonal beállítása:**
+public class RenderIgsToPdf {
+    public static void run() {
+        Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
+        Path pageFilePathFormat = outputDirectory.resolve("IGS_result.pdf");
 
-    ```java
-    import com.groupdocs.viewer.Viewer;
-    import com.groupdocs.viewer.options.PdfViewOptions;
-    import java.nio.file.Path;
-    import static java.nio.file.Paths.get;
-
-    public class RenderIgsToPdf {
-        public static void run() {
-            Path outputDirectory = get("YOUR_OUTPUT_DIRECTORY");
-            Path pageFilePathFormat = outputDirectory.resolve("IGS_result.pdf");
-
-            try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
-                PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-                viewer.view(options);
-            }
+        try (Viewer viewer = new Viewer(get("YOUR_DOCUMENT_DIRECTORY/SAMPLE_IGS"))) {
+            PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+            viewer.view(options);
         }
     }
-    ```
+}
+```
 
-2. **Főbb jellemzők:**
-   - `PdfViewOptions` Lehetővé teszi a PDF-beállítások, például az elrendezés és a minőség testreszabását.
-
-3. **Hibaelhárítási tippek:**
-   - Ellenőrizze, hogy a kimeneti könyvtár írható-e.
-   - Ellenőrizze az IGS fájlformátum hibáit.
+A `PdfViewOptions` lehetővé teszi az oldalelrendezés, a képek minősége és a betűk beágyazásának beállítását.
 
 ## Gyakorlati alkalmazások
+- **Webportálok** – ágyazz be HTML‑renderelt modelleket közvetlenül a termékkonfigurátorokba.  
+- **Marketing anyagok** – generálj nagy felbontású JPG/PNG képeket brosúrákhoz.  
+- **Műszaki dokumentáció** – helyezz el PDF rendereléseket CAD modellekről a felhasználói kézikönyvekben.  
+- **Minőségbiztosítás** – automatizáld a miniatűrök generálását nagy mennyiségű IGS fájl esetén.
 
-Az IGS fájlok különböző formátumokba történő renderelése számos lehetőséget nyit meg:
-1. **Webintegráció**HTML-ben renderelt 3D modellek közvetlen beágyazása webes alkalmazásokba.
-2. **Dokumentummegosztás**Részletes vizualizációk megosztása PDF formátumban vagy képelőnézetben (JPG/PNG).
-3. **Termékvizualizáció**Használjon kiváló minőségű képeket a termékkatalógusokhoz és marketinganyagokhoz.
+## Gyakori problémák és megoldások
 
-Ez az útmutató felvértezi Önt a GroupDocs.Viewer for Java hatékony használatához, az IGS-fájlok különféle formátumokba alakításához.
+| Issue | Solution |
+|-------|----------|
+| **Kimeneti mappa nem található** | Ellenőrizd a `Path outputDirectory`-nek átadott útvonalat, és győződj meg arról, hogy a Java folyamatnak írási jogosultsága van. |
+| **Üres oldalak a PDF-ben** | Győződj meg arról, hogy az IGS fájl nem sérült; először próbáld meg megnyitni egy CAD nézőben. |
+| **Lassú renderelés nagy összeszerelések esetén** | Növeld a JVM heap méretét (`-Xmx2g` vagy nagyobb) és szükség esetén fontold meg az oldalankénti renderelést a `viewer.getPageCount()` használatával. |
+| **Hiányzó betűk a PDF-ben** | Használd a `PdfViewOptions`-t a szükséges betűk beágyazásához, vagy telepítsd a hiányzó betűket a szerveren. |
+
+## Gyakran Ismételt Kérdések
+
+**Q: Konvertálhatok több IGS fájlt egyetlen futtatás során?**  
+A: Igen. Iterálj egy fájlútvonalak listáján, és hívj meg minden egyeshez a megfelelő `view` metódust.
+
+**Q: Lehet testre szabni a PDF oldalméretet?**  
+A: Természetesen. A `PdfViewOptions` biztosítja a `setPageSize(PageSize.A4)` és hasonló metódusokat.
+
+**Q: Szükségem van külön licencre minden kimeneti formátumhoz?**  
+A: Nem. Egyetlen GroupDocs.Viewer licenc lefedi az összes támogatott formátumot.
+
+**Q: Mekkora lehet egy IGS fájl, mielőtt a teljesítmény romlik?**  
+A: A könyvtár több száz megabájt méretű fájlokat is kezel, de nagyon nagy modellek esetén több JVM memóriát kell kiosztani.
+
+**Q: Renderelhetek csak egy adott nézetet vagy orientációt?**  
+A: A GroupDocs.Viewer az alapértelmezett nézetet rendereli. Egyedi orientációkhoz előfeldolgozást kell végezni az IGS fájlon egy CAD eszközzel a konverzió előtt.
+
+---
+
+**Legutóbb frissítve:** 2026-02-23  
+**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs

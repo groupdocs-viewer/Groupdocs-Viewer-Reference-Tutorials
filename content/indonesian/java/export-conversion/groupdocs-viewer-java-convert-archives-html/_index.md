@@ -1,36 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara mengonversi arsip ZIP, RAR ke HTML satu halaman dan multihalaman menggunakan GroupDocs.Viewer Java. Sederhanakan proses konversi dokumen Anda."
-"title": "Konversi Arsip ke HTML dengan GroupDocs.Viewer Java&#58; Panduan Lengkap"
-"url": "/id/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
-"weight": 1
+date: '2026-02-23'
+description: Pelajari cara mengatur jumlah item per halaman, menyematkan sumber daya
+  HTML, dan mengonversi arsip secara batch menjadi HTML satu halaman atau multi‑halaman
+  menggunakan GroupDocs.Viewer Java.
+keywords:
+- convert archives to HTML Java
+- GroupDocs.Viewer Java tutorial
+- render ZIP RAR to HTML
+title: 'Atur Item per Halaman: Konversi Arsip ke HTML dengan GroupDocs.Viewer Java'
 type: docs
+url: /id/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
+weight: 1
 ---
-# Konversi Arsip ke HTML dengan GroupDocs.Viewer Java: Panduan Lengkap
 
-## Perkenalan
+# Atur Item per Halaman: Konversi Arsip ke HTML dengan GroupDocs.Viewer Java
 
-Mengonversi file arsip seperti ZIP atau RAR ke dalam format yang ramah web merupakan persyaratan umum untuk berbagi, meninjau, dan mengintegrasikan dokumen dalam sistem. Tutorial ini akan memandu Anda menggunakan GroupDocs.Viewer Java—pustaka canggih yang dirancang untuk konversi dokumen yang lancar.
+Mengonversi file arsip seperti ZIP atau RAR menjadi HTML yang ramah web adalah kebutuhan yang sering muncul ketika Anda ingin berbagi atau meninjau dokumen langsung di peramban. Dalam panduan ini Anda akan mempelajari **cara mengatur item per halaman** saat merender arsip, cara menyematkan sumber daya HTML untuk output yang berdiri sendiri, dan cara mengonversi arsip secara batch dengan efisien menggunakan GroupDocs.Viewer Java.
 
-**Apa yang Akan Anda Pelajari:**
-- Merender arsip ke dalam format HTML satu halaman dan multihalaman.
-- Mengonfigurasi opsi untuk sumber daya yang tertanam dalam keluaran HTML Anda.
-- Mengoptimalkan proses rendering untuk kinerja dan efisiensi sumber daya.
+![Konversi Arsip ke HTML dengan GroupDocs.Viewer untuk Java](/viewer/export-conversion/convert-archives-to-html-java.png)
 
-Mari kita siapkan GroupDocs.Viewer Java dengan alat dan pengetahuan yang tepat untuk memulai.
+## Jawaban Cepat
+- **Apa yang dikontrol oleh “set items per page”?** Ini menentukan berapa banyak file atau folder dari arsip yang muncul pada setiap halaman HTML yang dihasilkan.  
+- **Apakah saya dapat menyematkan gambar dan CSS langsung di HTML?** Ya – gunakan opsi `forEmbeddedResources` untuk menyematkan sumber daya HTML.  
+- **Apakah konversi batch memungkinkan?** Tentu saja; Anda dapat melakukan loop pada kumpulan arsip dan merender masing‑masing dengan pengaturan yang sama.  
+- **Apakah saya memerlukan Maven untuk menggunakan GroupDocs.Viewer?** Ya, tambahkan dependensi `maven groupdocs viewer` seperti yang ditunjukkan di bawah.  
+- **Format output apa yang didukung?** HTML Java satu‑halaman dan HTML Java multi‑halaman keduanya tersedia.
+
+## Apa itu “set items per page” di GroupDocs.Viewer?
+Pengaturan **set items per page** termasuk dalam opsi rendering arsip. Pengaturan ini memberi tahu viewer berapa banyak entri arsip (file atau folder) yang harus ditampilkan pada setiap halaman HTML ketika Anda menghasilkan dokumen HTML multi‑halaman. Menyesuaikan nilai ini membantu Anda menyeimbangkan ukuran halaman dan kecepatan navigasi, terutama untuk arsip yang besar.
+
+## Mengapa menyematkan sumber daya HTML?
+Menyematkan sumber daya (gambar, CSS, font) langsung di dalam file HTML menghasilkan satu dokumen portabel yang dapat dibuka tanpa file eksternal. Ini ideal untuk lampiran email, peninjauan offline, atau menyematkan output ke halaman web lain.
 
 ## Prasyarat
 
-Pastikan Anda memiliki hal berikut sebelum memulai:
-- **Pustaka yang dibutuhkan:** Sertakan GroupDocs.Viewer versi 25.2 atau yang lebih baru dalam proyek Anda.
-- **Pengaturan Lingkungan:** Java Development Kit (JDK) yang dikonfigurasi pada sistem Anda.
-- **Prasyarat Pengetahuan:** Pemahaman dasar tentang pemrograman Java dan manajemen ketergantungan Maven.
+- **Perpustakaan yang Diperlukan:** Sertakan GroupDocs.Viewer versi 25.2 atau yang lebih baru.  
+- **Lingkungan:** Java Development Kit (JDK) terpasang dan terkonfigurasi.  
+- **Pengetahuan:** Dasar Java dan manajemen dependensi Maven.  
 
-## Menyiapkan GroupDocs.Viewer untuk Java
+## Pengaturan Maven GroupDocs Viewer
 
-Untuk menggunakan GroupDocs.Viewer, tambahkan sebagai dependensi dalam proyek Anda menggunakan Maven:
-
-**Pengaturan Maven:**
+Tambahkan repositori GroupDocs dan dependensi viewer ke `pom.xml` Anda:
 
 ```xml
 <repositories>
@@ -51,159 +61,121 @@ Untuk menggunakan GroupDocs.Viewer, tambahkan sebagai dependensi dalam proyek An
 ```
 
 ### Akuisisi Lisensi
+GroupDocs.Viewer menawarkan **tautan percobaan gratis**, lisensi sementara, atau opsi pembelian penuh. Pilih yang sesuai dengan jadwal proyek Anda.
 
-GroupDocs.Viewer menawarkan berbagai pilihan lisensi:
-- **Uji Coba Gratis:** Mulailah dengan uji coba gratis untuk menjelajahi kemampuannya.
-- **Lisensi Sementara:** Dapatkan lisensi sementara untuk penggunaan lanjutan tanpa batasan evaluasi.
-- **Pembelian:** Pertimbangkan untuk membeli lisensi untuk akses dan dukungan penuh.
-
-**Inisialisasi Dasar:**
-
-Setelah menambahkan GroupDocs.Viewer sebagai dependensi, inisialisasikan di aplikasi Java Anda:
+### Inisialisasi Dasar
+Setelah pengaturan Maven, panggil viewer ke dalam kode Anda:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Kode inisialisasi Anda di sini
+// Your initialization code here
 ```
 
-## Panduan Implementasi
+## Cara Merender Arsip ke HTML Satu‑Halaman
 
-Setelah semuanya siap, mari terapkan fiturnya langkah demi langkah.
-
-### Merender Arsip ke HTML Satu Halaman
-
-**Ringkasan:**
-Ubah seluruh arsip menjadi dokumen HTML satu halaman agar mudah dibagikan dan dilihat tanpa harus menavigasi melalui banyak halaman.
-
-#### Langkah 1: Tentukan Jalur Direktori Output
-
-Siapkan direktori keluaran Anda:
-
+### Langkah 1: Tentukan Direktori Output
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Ini menentukan di mana hasil HTML akan disimpan.
-
-#### Langkah 2: Tetapkan Nama File untuk Output Satu Halaman
-
-Tentukan nama file HTML satu halaman Anda:
-
+### Langkah 2: Atur Nama File untuk Output Satu‑Halaman
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-#### Langkah 3: Inisialisasi Instansi Penampil
-
-Inisialisasi a `Viewer` contoh dengan file arsip Anda:
-
+### Langkah 3: Inisialisasi Viewer
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // Langkah konfigurasi selanjutnya adalah sebagai berikut
+    // Further configuration steps follow
 }
 ```
 
-#### Langkah 4: Konfigurasikan Opsi Rendering
-
-Tetapkan opsi untuk merender arsip ke dalam format HTML, menanamkan sumber daya langsung di dalam HTML:
-
+### Langkah 4: Konfigurasikan Opsi Rendering (sematkan sumber daya HTML)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Langkah 5: Render sebagai Satu Halaman
-
-Konfigurasikan penampil Anda untuk menampilkan seluruh arsip pada satu halaman:
-
+### Langkah 5: Render sebagai Satu Halaman
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-### Merender Arsip ke HTML Multi-Halaman
+## Cara Merender Arsip ke HTML Multi‑Halaman dan Atur Item per Halaman
 
-**Ringkasan:**
-Untuk arsip yang lebih besar, bagi konten menjadi beberapa halaman. Fitur ini memudahkan penyajian arsip di beberapa berkas HTML.
-
-#### Langkah 1: Tentukan Jalur Direktori Output
-
-Gunakan kembali pengaturan direktori keluaran dari implementasi satu halaman:
-
+### Langkah 1: Gunakan Kembali Direktori Output
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### Langkah 2: Atur Format Nama File untuk Output Multi-Halaman
-
-Buat format nama file untuk mengakomodasi beberapa halaman, menggunakan `{0}` sebagai tempat penampung nomor halaman:
-
+### Langkah 2: Tentukan Format Nama File untuk Beberapa Halaman
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-#### Langkah 3: Inisialisasi Instansi Penampil
-
-Inisialisasi Anda `Viewer` contohnya mirip dengan pengaturan satu halaman:
-
+### Langkah 3: Inisialisasi Viewer Lagi
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // Lanjutkan dengan konfigurasi multi-halaman
+    // Continue with multi‑page configuration
 }
 ```
 
-#### Langkah 4: Konfigurasikan Opsi Rendering Multi-Halaman
-
-Siapkan opsi untuk merender ke beberapa halaman dengan sumber daya tertanam:
-
+### Langkah 4: Konfigurasikan Opsi Multi‑Halaman (sematkan sumber daya HTML)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Langkah 5: Tentukan Item Per Halaman
-
-Tentukan berapa banyak item (file atau folder) yang akan ditampilkan per halaman. Sesuaikan pengaturan ini berdasarkan kebutuhan Anda:
-
+### Langkah 5: Atur Item per Halaman (kata kunci utama dalam aksi)
 ```java
-options.getArchiveOptions().setItemsPerPage(10); // Defaultnya adalah 16
+options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
 ## Aplikasi Praktis
 
-- **Sistem Manajemen Dokumen:** Integrasikan kemampuan melihat arsip secara mulus.
-- **Portal Web:** Memberikan pengguna akses mudah ke konten yang dapat diunduh dalam format yang ramah web.
-- **Alat Kolaborasi:** Memungkinkan anggota tim meninjau dokumen bersama langsung dalam browser mereka.
+- **Sistem Manajemen Dokumen:** Tambahkan fungsi pratinjau arsip tanpa menginstal viewer tambahan.  
+- **Portal Web:** Tawarkan pengguna cara cepat tanpa unduhan untuk menjelajahi dokumen yang dikemas.  
+- **Alat Kolaborasi:** Biarkan tim memeriksa arsip yang dibagikan langsung di peramban.  
 
 ## Pertimbangan Kinerja
 
-Saat mengimplementasikan GroupDocs.Viewer, pertimbangkan kiat kinerja berikut:
-- **Manajemen Sumber Daya:** Pantau penggunaan memori dan optimalkan pengaturan pengumpulan sampah jika perlu.
-- **Pemrosesan Batch:** Jika mengonversi arsip dalam jumlah besar, gabungkan proses tersebut untuk mengelola beban sistem.
-- **Strategi Caching:** Terapkan mekanisme caching untuk dokumen yang sering diakses untuk meningkatkan kecepatan.
+- **Manajemen Sumber Daya:** Pantau penggunaan memori; pertimbangkan penyesuaian garbage‑collector JVM untuk batch besar.  
+- **Konversi Batch Arsip:** Loop melalui daftar file arsip dan panggil logika rendering yang sama untuk memaksimalkan throughput.  
+- **Strategi Caching:** Simpan HTML yang dirender dalam cache jika arsip yang sama sering diakses.  
 
-## Kesimpulan
+## Pertanyaan yang Sering Diajukan
 
-Anda kini telah menguasai cara mengonversi berkas arsip ke format HTML satu halaman dan multihalaman menggunakan GroupDocs.Viewer Java. Bereksperimenlah dengan berbagai pengaturan untuk menemukan yang paling sesuai untuk kasus penggunaan spesifik Anda. Untuk eksplorasi lebih lanjut, pertimbangkan untuk mengintegrasikan fitur tambahan atau bereksperimen dengan jenis dokumen lain yang didukung oleh GroupDocs.Viewer.
+**Q: Apa itu GroupDocs.Viewer Java?**  
+A: Sebuah perpustakaan serbaguna untuk merender dokumen—termasuk arsip—ke dalam format seperti HTML, PDF, dan gambar.
 
-Siap untuk melangkah ke tahap berikutnya? Terapkan teknik-teknik ini dalam proyek Anda dan lihat bagaimana teknik-teknik ini meningkatkan alur kerja Anda!
+**Q: Bagaimana saya dapat memperoleh percobaan gratis GroupDocs.Viewer?**  
+A: Kunjungi [tautan percobaan gratis](https://releases.groupdocs.com/viewer/java/) untuk mengunduh dan menguji.
 
-## Bagian FAQ
+**Q: Bisakah saya mengonversi tipe dokumen lain selain arsip?**  
+A: Ya, viewer mendukung PDF, Word, Excel, dan banyak format lainnya.
 
-1. **Apa itu GroupDocs.Viewer Java?**
-   - Pustaka serbaguna untuk menerjemahkan dokumen ke berbagai format, termasuk HTML.
-2. **Bagaimana saya bisa mendapatkan uji coba gratis GroupDocs.Viewer?**
-   - Kunjungi [tautan uji coba gratis](https://releases.groupdocs.com/viewer/java/) untuk mengunduh dan menguji.
-3. **Bisakah saya mengonversi tipe dokumen lain dengan GroupDocs.Viewer Java?**
-   - Ya, ia mendukung format selain arsip, seperti PDF dan dokumen Word.
-4. **Apa yang harus saya lakukan jika rendering saya lambat?**
-   - Optimalkan penggunaan sumber daya atau sesuaikan jumlah item per halaman untuk keluaran multi-halaman.
-5. **Bagaimana cara menghubungi dukungan untuk GroupDocs.Viewer Java?**
-   - Jangkau melalui mereka [forum dukungan](https://forum.groupdocs.com/c/viewer/9) untuk bantuan.
+**Q: Apa yang harus saya lakukan jika rendering lambat?**  
+A: Kurangi jumlah item per halaman, aktifkan streaming, atau proses arsip dalam batch yang lebih kecil.
 
-## Sumber daya
+**Q: Di mana saya dapat mendapatkan bantuan atau dukungan?**  
+A: Hubungi melalui [forum dukungan](https://forum.groupdocs.com/c/viewer/9).
 
-- **Dokumentasi:** Pelajari lebih dalam fungsionalitas dengan [Dokumentasi GroupDocs](https://docs.groupdocs.com/viewer/java/).
-- **Referensi API:** Jelajahi referensi API terperinci di [API GroupDocs](https://reference.groupdocs.com/viewer/java/).
-- **Unduh:** Akses versi terbaru dari [halaman unduhan](https://releases.groupdocs.com/viewer/java/).
-- **Pembelian dan Lisensi:** Pelajari lebih lanjut tentang opsi pembelian di [halaman pembelian](https://purchase.groupdocs.com/buy).
-- **Dukungan dan Komunitas:** Berinteraksi dengan komunitas atau mencari dukungan melalui [Forum GroupDocs](https://forum.groupdocs.com/c/viewer/9).
+**Q: Apakah memungkinkan menyematkan CSS dan gambar langsung di HTML?**  
+A: Tentu saja—gunakan `HtmlViewOptions.forEmbeddedResources` seperti yang ditunjukkan dalam contoh.
+
+**Q: Bagaimana cara mengonversi batch folder arsip?**  
+A: Iterasi setiap file dengan loop `for`, menerapkan konfigurasi `Viewer` dan `HtmlViewOptions` yang sama untuk setiap iterasi.
+
+## Sumber Daya
+
+- **Dokumentasi:** Selami lebih dalam fungsionalitas dengan [dokumentasi GroupDocs](https://docs.groupdocs.com/viewer/java/).  
+- **Referensi API:** Jelajahi API lengkap di [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
+- **Unduhan:** Dapatkan binary terbaru dari [halaman unduhan](https://releases.groupdocs.com/viewer/java/).  
+- **Pembelian dan Lisensi:** Tinjau opsi pada [halaman pembelian](https://purchase.groupdocs.com/buy).  
+- **Dukungan dan Komunitas:** Bergabung dalam diskusi di [forum GroupDocs](https://forum.groupdocs.com/c/viewer/9).
+
+---
+
+**Terakhir Diperbarui:** 2026-02-23  
+**Diuji Dengan:** GroupDocs.Viewer 25.2  
+**Penulis:** GroupDocs

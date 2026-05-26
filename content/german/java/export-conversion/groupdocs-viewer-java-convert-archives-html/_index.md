@@ -1,36 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Erfahren Sie, wie Sie ZIP- und RAR-Archive mit GroupDocs.Viewer Java in ein- und mehrseitiges HTML konvertieren. Optimieren Sie Ihren Dokumentkonvertierungsprozess."
-"title": "Konvertieren Sie Archive mit GroupDocs.Viewer Java in HTML – Ein umfassender Leitfaden"
-"url": "/de/java/export-conversion/groupdocs-viewer-java-convert-archives-html/"
-"weight": 1
+date: '2026-02-23'
+description: Erfahren Sie, wie Sie die Elemente pro Seite festlegen, HTML‑Ressourcen
+  einbetten und Archive stapelweise in ein‑ oder mehrseitiges HTML mit GroupDocs.Viewer
+  Java konvertieren.
+keywords:
+- convert archives to HTML Java
+- GroupDocs.Viewer Java tutorial
+- render ZIP RAR to HTML
+title: 'Elemente pro Seite festlegen: Archive mit GroupDocs.Viewer Java in HTML konvertieren'
 type: docs
+url: /de/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
+weight: 1
 ---
-# Konvertieren Sie Archive mit GroupDocs.Viewer Java in HTML: Ein umfassender Leitfaden
 
-## Einführung
+# Elemente pro Seite festlegen: Archive mit GroupDocs.Viewer Java in HTML konvertieren
 
-Die Konvertierung von Archivdateien wie ZIP oder RAR in webfreundliche Formate ist eine häufige Voraussetzung für die Freigabe, Überprüfung und Integration von Dokumenten in Systemen. Dieses Tutorial führt Sie durch die Verwendung von GroupDocs.Viewer Java – einer leistungsstarken Bibliothek für die nahtlose Dokumentkonvertierung.
+Das Konvertieren von Archivdateien wie ZIP oder RAR in web‑freundliches HTML ist ein häufiger Bedarf, wenn Sie Dokumente direkt im Browser teilen oder prüfen möchten. In diesem Leitfaden lernen Sie **wie man Elemente pro Seite festlegt** beim Rendern von Archiven, wie man Ressourcen‑HTML für eine eigenständige Ausgabe einbettet und wie man Archive effizient stapelweise konvertiert mit GroupDocs.Viewer Java.
 
-**Was Sie lernen werden:**
-- Rendern von Archiven in einseitige und mehrseitige HTML-Formate.
-- Konfigurieren von Optionen für eingebettete Ressourcen in Ihrer HTML-Ausgabe.
-- Optimierung des Rendering-Prozesses hinsichtlich Leistung und Ressourceneffizienz.
+![Archive mit GroupDocs.Viewer für Java in HTML konvertieren](/viewer/export-conversion/convert-archives-to-html-java.png)
 
-Lassen Sie uns zunächst GroupDocs.Viewer Java mit den richtigen Tools und Kenntnissen einrichten.
+## Schnellantworten
+- **Was steuert “set items per page”?** Es bestimmt, wie viele Dateien oder Ordner aus einem Archiv auf jeder erzeugten HTML‑Seite angezeigt werden.  
+- **Kann ich Bilder und CSS direkt in das HTML einbetten?** Ja – verwenden Sie die Option `forEmbeddedResources`, um Ressourcen‑HTML einzubetten.  
+- **Ist eine Stapelkonvertierung möglich?** Absolut; Sie können über eine Sammlung von Archiven iterieren und jedes mit denselben Einstellungen rendern.  
+- **Benötige ich Maven, um GroupDocs.Viewer zu verwenden?** Ja, fügen Sie die `maven groupdocs viewer`‑Abhängigkeit wie unten gezeigt hinzu.  
+- **Welche Ausgabeformate werden unterstützt?** Single‑Page HTML Java und Multi‑Page HTML Java sind beide verfügbar.
+
+## Was bedeutet “set items per page” in GroupDocs.Viewer?
+Die **set items per page**‑Einstellung gehört zu den Archiv‑Renderoptionen. Sie gibt dem Viewer an, wie viele Archiveinträge (Dateien oder Ordner) auf jeder HTML‑Seite angezeigt werden sollen, wenn Sie ein mehrseitiges HTML‑Dokument erzeugen. Das Anpassen dieses Werts hilft, die Seitengröße und die Navigationsgeschwindigkeit auszubalancieren, insbesondere bei großen Archiven.
+
+## Warum Ressourcen‑HTML einbetten?
+Das Einbetten von Ressourcen (Bilder, CSS, Schriftarten) direkt in die HTML‑Datei erzeugt ein einziges, portables Dokument, das ohne externe Dateien geöffnet werden kann. Das ist ideal für E‑Mail‑Anhänge, Offline‑Betrachtung oder das Einbetten der Ausgabe in andere Webseiten.
 
 ## Voraussetzungen
 
-Stellen Sie sicher, dass Sie vor dem Start über Folgendes verfügen:
-- **Erforderliche Bibliotheken:** Fügen Sie GroupDocs.Viewer Version 25.2 oder höher in Ihr Projekt ein.
-- **Umgebungs-Setup:** Ein konfiguriertes Java Development Kit (JDK) auf Ihrem System.
-- **Erforderliche Kenntnisse:** Grundlegende Kenntnisse der Java-Programmierung und des Maven-Abhängigkeitsmanagements.
+- **Erforderliche Bibliotheken:** GroupDocs.Viewer Version 25.2 oder höher einbinden.  
+- **Umgebung:** Java Development Kit (JDK) installiert und konfiguriert.  
+- **Kenntnisse:** Grundlegendes Java und Maven‑Abhängigkeitsverwaltung.  
 
-## Einrichten von GroupDocs.Viewer für Java
+## Maven GroupDocs Viewer Einrichtung
 
-Um GroupDocs.Viewer zu verwenden, fügen Sie es mit Maven als Abhängigkeit in Ihr Projekt ein:
-
-**Maven-Setup:**
+Fügen Sie das GroupDocs‑Repository und die Viewer‑Abhängigkeit zu Ihrer `pom.xml` hinzu:
 
 ```xml
 <repositories>
@@ -50,160 +60,122 @@ Um GroupDocs.Viewer zu verwenden, fügen Sie es mit Maven als Abhängigkeit in I
 </dependencies>
 ```
 
-### Lizenzerwerb
+### Lizenzbeschaffung
+GroupDocs.Viewer bietet einen **Free‑Trial‑Link**, eine temporäre Lizenz oder eine Vollkauf‑Option. Wählen Sie das passende Angebot für Ihren Projektzeitplan.
 
-GroupDocs.Viewer bietet verschiedene Lizenzierungsoptionen:
-- **Kostenlose Testversion:** Beginnen Sie mit einer kostenlosen Testversion, um die Funktionen kennenzulernen.
-- **Temporäre Lizenz:** Erwerben Sie eine temporäre Lizenz zur erweiterten Nutzung ohne Evaluierungsbeschränkungen.
-- **Kaufen:** Erwägen Sie den Kauf einer Lizenz für vollständigen Zugriff und Support.
-
-**Grundlegende Initialisierung:**
-
-Nachdem Sie GroupDocs.Viewer als Abhängigkeit hinzugefügt haben, initialisieren Sie es in Ihrer Java-Anwendung:
+### Grundlegende Initialisierung
+Nach der Maven‑Einrichtung bringen Sie den Viewer in Ihren Code:
 
 ```java
 import com.groupdocs.viewer.Viewer;
-// Ihr Initialisierungscode hier
+// Your initialization code here
 ```
 
-## Implementierungshandbuch
+## Wie man Archive in Single‑Page HTML rendert
 
-Nachdem alles eingerichtet ist, implementieren wir die Funktionen Schritt für Schritt.
-
-### Rendern von Archiven in einseitiges HTML
-
-**Überblick:**
-Konvertieren Sie ein gesamtes Archiv in ein einseitiges HTML-Dokument, um es einfach freizugeben und anzuzeigen, ohne durch mehrere Seiten navigieren zu müssen.
-
-#### Schritt 1: Definieren Sie den Ausgabeverzeichnispfad
-
-Richten Sie Ihr Ausgabeverzeichnis ein:
-
+### Schritt 1: Ausgabeverzeichnis festlegen
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Dies gibt an, wo das gerenderte HTML gespeichert wird.
-
-#### Schritt 2: Dateinamen für Einzelseitenausgabe festlegen
-
-Definieren Sie den Namen Ihrer einseitigen HTML-Datei:
-
+### Schritt 2: Dateinamen für Single‑Page‑Ausgabe festlegen
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result.html");
 ```
 
-#### Schritt 3: Viewer-Instanz initialisieren
-
-Initialisieren Sie ein `Viewer` Instanz mit Ihrer Archivdatei:
-
+### Schritt 3: Viewer initialisieren
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // Weitere Konfigurationsschritte folgen
+    // Further configuration steps follow
 }
 ```
 
-#### Schritt 4: Rendering-Optionen konfigurieren
-
-Legen Sie Optionen zum Rendern des Archivs im HTML-Format fest und betten Sie Ressourcen direkt in das HTML ein:
-
+### Schritt 4: Render‑Optionen konfigurieren (Ressourcen‑HTML einbetten)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Schritt 5: Als einzelne Seite rendern
-
-Konfigurieren Sie Ihren Viewer so, dass das gesamte Archiv auf einer Seite ausgegeben wird:
-
+### Schritt 5: Als einzelne Seite rendern
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-### Rendern von Archiven in mehrseitiges HTML
+## Wie man Archive in Multi‑Page HTML rendert und Elemente pro Seite festlegt
 
-**Überblick:**
-Bei größeren Archiven können Sie den Inhalt auf mehrere Seiten aufteilen. Diese Funktion erleichtert die Darstellung eines Archivs über mehrere HTML-Dateien hinweg.
-
-#### Schritt 1: Definieren Sie den Ausgabeverzeichnispfad
-
-Verwenden Sie das Ausgabeverzeichnis-Setup aus der Einzelseitenimplementierung erneut:
-
+### Schritt 1: Ausgabeverzeichnis wiederverwenden
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-#### Schritt 2: Dateinamenformat für mehrseitige Ausgabe festlegen
-
-Erstellen Sie ein Dateinamenformat für mehrere Seiten, indem Sie `{0}` als Platzhalter für Seitenzahlen:
-
+### Schritt 2: Dateinamenformat für mehrere Seiten definieren
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-#### Schritt 3: Viewer-Instanz initialisieren
-
-Initialisieren Sie Ihre `Viewer` Instanz ähnlich wie beim Einzelseiten-Setup:
-
+### Schritt 3: Viewer erneut initialisieren
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
-    // Weiter mit der mehrseitigen Konfiguration
+    // Continue with multi‑page configuration
 }
 ```
 
-#### Schritt 4: Konfigurieren Sie die Optionen für das mehrseitige Rendering
-
-Richten Sie Optionen für die Darstellung auf mehreren Seiten mit eingebetteten Ressourcen ein:
-
+### Schritt 4: Multi‑Page‑Optionen konfigurieren (Ressourcen‑HTML einbetten)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Schritt 5: Elemente pro Seite angeben
-
-Legen Sie fest, wie viele Elemente (Dateien oder Ordner) pro Seite angezeigt werden sollen. Passen Sie diese Einstellung Ihren Anforderungen entsprechend an:
-
+### Schritt 5: Elemente pro Seite festlegen (primäres Schlüsselwort in Aktion)
 ```java
-options.getArchiveOptions().setItemsPerPage(10); // Der Standardwert ist 16
+options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
-## Praktische Anwendungen
+## Praktische Anwendungsfälle
 
-- **Dokumentenmanagementsysteme:** Nahtlose Integration von Archivanzeigefunktionen.
-- **Webportale:** Bieten Sie Benutzern einfachen Zugriff auf herunterladbare Inhalte in einem webfreundlichen Format.
-- **Tools für die Zusammenarbeit:** Ermöglichen Sie Teammitgliedern, freigegebene Dokumente direkt in ihrem Browser zu überprüfen.
+- **Document Management Systems:** Archiv‑Vorschaufunktion hinzufügen, ohne zusätzliche Viewer zu installieren.  
+- **Web‑Portale:** Nutzern eine schnelle, download‑freie Möglichkeit bieten, gebündelte Dokumente zu erkunden.  
+- **Collaboration Tools:** Teams erlauben, geteilte Archive direkt im Browser zu prüfen.
 
-## Überlegungen zur Leistung
+## Leistungsüberlegungen
 
-Beachten Sie bei der Implementierung von GroupDocs.Viewer die folgenden Leistungstipps:
-- **Ressourcenmanagement:** Überwachen Sie die Speichernutzung und optimieren Sie bei Bedarf die Einstellungen für die Garbage Collection.
-- **Stapelverarbeitung:** Wenn Sie eine große Anzahl von Archiven konvertieren, führen Sie den Vorgang stapelweise aus, um die Systemlast zu verwalten.
-- **Caching-Strategie:** Implementieren Sie Caching-Mechanismen für häufig aufgerufene Dokumente, um die Geschwindigkeit zu erhöhen.
+- **Ressourcenverwaltung:** Speicherverbrauch im Auge behalten; für große Stapel die JVM‑Garbage‑Collector‑Einstellungen anpassen.  
+- **Batch‑Convert Archives:** Durchlaufen Sie eine Liste von Archivdateien und rufen Sie dieselbe Render‑Logik auf, um den Durchsatz zu maximieren.  
+- **Caching‑Strategie:** Rendered HTML in einem Cache speichern, wenn dasselbe Archiv häufig aufgerufen wird.
 
-## Abschluss
+## Häufig gestellte Fragen
 
-Sie beherrschen nun die Konvertierung von Archivdateien in einseitige und mehrseitige HTML-Formate mit GroupDocs.Viewer Java. Experimentieren Sie mit verschiedenen Einstellungen, um die optimale Lösung für Ihren Anwendungsfall zu finden. Für weitere Informationen können Sie zusätzliche Funktionen integrieren oder mit anderen von GroupDocs.Viewer unterstützten Dokumenttypen experimentieren.
+**F: Was ist GroupDocs.Viewer Java?**  
+A: Eine vielseitige Bibliothek zum Rendern von Dokumenten — einschließlich Archiven — in Formate wie HTML, PDF und Bilder.
 
-Bereit für den nächsten Schritt? Implementieren Sie diese Techniken in Ihren Projekten und sehen Sie, wie sie Ihren Workflow verbessern!
+**F: Wie kann ich eine kostenlose Testversion von GroupDocs.Viewer erhalten?**  
+A: Besuchen Sie den [free trial link](https://releases.groupdocs.com/viewer/java/), um herunterzuladen und zu testen.
 
-## FAQ-Bereich
+**F: Kann ich andere Dokumenttypen außer Archiven konvertieren?**  
+A: Ja, der Viewer unterstützt PDFs, Word, Excel und viele weitere Formate.
 
-1. **Was ist GroupDocs.Viewer Java?**
-   - Eine vielseitige Bibliothek zum Rendern von Dokumenten in verschiedene Formate, einschließlich HTML.
-2. **Wie kann ich eine kostenlose Testversion von GroupDocs.Viewer erhalten?**
-   - Besuchen Sie die [Link zur kostenlosen Testversion](https://releases.groupdocs.com/viewer/java/) zum Herunterladen und Testen.
-3. **Kann ich mit GroupDocs.Viewer Java andere Dokumenttypen konvertieren?**
-   - Ja, es unterstützt Formate jenseits von Archiven, wie etwa PDFs und Word-Dokumente.
-4. **Was soll ich tun, wenn mein Rendering langsam ist?**
-   - Optimieren Sie die Ressourcennutzung oder passen Sie die Anzahl der Elemente pro Seite für mehrseitige Ausgaben an.
-5. **Wie kann ich den Support für GroupDocs.Viewer Java kontaktieren?**
-   - Erreichen Sie durch ihre [Support-Forum](https://forum.groupdocs.com/c/viewer/9) um Hilfe.
+**F: Was soll ich tun, wenn das Rendern langsam ist?**  
+A: Reduzieren Sie die Anzahl der Elemente pro Seite, aktivieren Sie Streaming oder verarbeiten Sie Archive in kleineren Stapeln.
+
+**F: Wo finde ich Hilfe oder Support?**  
+A: Wenden Sie sich im [support forum](https://forum.groupdocs.com/c/viewer/9) an.
+
+**F: Ist es möglich, CSS und Bilder direkt in das HTML einzubetten?**  
+A: Absolut — verwenden Sie `HtmlViewOptions.forEmbeddedResources` wie in den Beispielen gezeigt.
+
+**F: Wie konvertiere ich einen Ordner voller Archive stapelweise?**  
+A: Iterieren Sie über jede Datei mit einer `for`‑Schleife und wenden Sie dieselbe `Viewer`‑ und `HtmlViewOptions`‑Konfiguration für jede Iteration an.
 
 ## Ressourcen
 
-- **Dokumentation:** Tauchen Sie tiefer in die Funktionalität ein mit dem [GroupDocs-Dokumentation](https://docs.groupdocs.com/viewer/java/).
-- **API-Referenz:** Detaillierte API-Referenzen finden Sie unter [GroupDocs API](https://reference.groupdocs.com/viewer/java/).
-- **Herunterladen:** Zugriff auf die neueste Version über die [Download-Seite](https://releases.groupdocs.com/viewer/java/).
-- **Kauf und Lizenzierung:** Erfahren Sie mehr über die Kaufoptionen auf ihrer [Kaufseite](https://purchase.groupdocs.com/buy).
-- **Support und Community:** Engagieren Sie sich in der Community oder suchen Sie Unterstützung durch [GroupDocs-Forum](https://forum.groupdocs.com/c/viewer/9).
+- **Documentation:** Vertiefen Sie sich in die Funktionalität mit der [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API Reference:** Erkunden Sie die vollständige API unter [GroupDocs API](https://reference.groupdocs.com/viewer/java/).  
+- **Download:** Laden Sie die neuesten Binärdateien von der [download page](https://releases.groupdocs.com/viewer/java/).  
+- **Purchase and Licensing:** Prüfen Sie die Optionen auf der [purchase page](https://purchase.groupdocs.com/buy).  
+- **Support and Community:** Nehmen Sie an Diskussionen im [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) teil.
+
+---
+
+**Zuletzt aktualisiert:** 2026-02-23  
+**Getestet mit:** GroupDocs.Viewer 25.2  
+**Autor:** GroupDocs

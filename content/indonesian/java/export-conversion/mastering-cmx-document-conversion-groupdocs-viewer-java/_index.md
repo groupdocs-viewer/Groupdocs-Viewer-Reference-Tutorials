@@ -1,36 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara mengonversi dokumen CMX menjadi HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk Java. Panduan ini menyediakan petunjuk langkah demi langkah dan kiat pengoptimalan kinerja."
-"title": "Konversi Dokumen CMX yang Efisien Menggunakan GroupDocs.Viewer untuk Java; Panduan Lengkap"
-"url": "/id/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-02-23'
+description: Pelajari cara mengonversi dokumen CMX menjadi HTML, JPG, PNG, dan PDF
+  menggunakan GroupDocs Viewer Java – panduan langkah demi langkah tentang cara mengonversi
+  CMX secara efisien.
+keywords:
+- CMX Document Conversion
+- GroupDocs Viewer Java
+- Document Format Conversion
+title: 'GroupDocs Viewer Java: Panduan Konversi Dokumen CMX yang Efisien'
 type: docs
+url: /id/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/
+weight: 1
 ---
-# Konversi Dokumen CMX yang Efisien Menggunakan GroupDocs.Viewer untuk Java: Panduan Lengkap
 
-## Perkenalan
+ 2026-02-23" -> translate "Terakhir Diperbarui:" maybe keep English? Should translate: "**Terakhir Diperbarui:** 2026-02-23"
 
-Dalam lanskap digital saat ini, mengonversi format dokumen secara efisien sangat penting bagi bisnis dan individu. Mengonversi dokumen Multi-Ekstensi Kompleks (CMX) ke format yang dapat diakses secara universal seperti HTML, JPG, PNG, atau PDF dapat menjadi tantangan. Masukkan **GroupDocs.Viewer untuk Java**alat canggih yang menyederhanakan proses ini dengan mudah. Tutorial ini akan memandu Anda merender file CMX ke dalam berbagai format menggunakan GroupDocs.Viewer Java.
+"**Tested With:** GroupDocs Viewer Java 25.2" -> translate "**Diuji Dengan:** GroupDocs Viewer Java 25.2"
 
-### Apa yang Akan Anda Pelajari:
-- Menyiapkan dan menggunakan GroupDocs.Viewer untuk Java
-- Mengonversi dokumen CMX ke HTML, JPG, PNG, dan PDF
-- Aplikasi praktis dari konversi ini
-- Tips pengoptimalan kinerja
+"**Author:** GroupDocs" -> translate "**Penulis:** GroupDocs"
 
-Mari kita mulai! Sebelum memulai, pastikan Anda telah memenuhi prasyarat yang diperlukan.
+Then "---" line.
+
+We must ensure all markdown formatting preserved.
+
+Check for any shortcodes: none besides placeholders.
+
+Make sure to keep code block placeholders unchanged.
+
+Now produce final translated markdown content.# Panduan Konversi Dokumen CMX yang Efisien dengan GroupDocs Viewer Java
+
+Mengonversi file **CMX** ke format yang dapat dibaca secara universal seperti HTML, JPG, PNG, atau PDF dapat terasa seperti teka‑teki—terutama ketika Anda membutuhkan solusi yang andal dan dapat diprogram. **GroupDocs Viewer Java** menghilangkan gesekan tersebut dengan menawarkan API sederhana yang menangani pekerjaan berat untuk Anda. Dalam tutorial ini, kami akan menjelaskan **cara mengonversi dokumen CMX** menggunakan GroupDocs Viewer Java, mengeksplorasi kasus penggunaan praktis, dan berbagi tips kinerja yang dapat Anda terapkan segera.
+
+![Konversi Dokumen CMX di Java dengan GroupDocs.Viewer untuk Java](/viewer/export-conversion/cmx-document-conversion-java.png)
+
+## Jawaban Cepat
+- **Perpustakaan apa yang menangani konversi CMX?** GroupDocs Viewer Java  
+- **Format output yang didukung?** HTML, JPG, PNG, PDF  
+- **Versi Java minimum?** JDK 8 atau lebih tinggi  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis cukup untuk pengujian; lisensi berbayar diperlukan untuk produksi  
+- **Bisakah saya memproses file secara batch?** Ya—bungkus logika satu‑file dalam loop untuk konversi massal  
+
+## Apa itu GroupDocs Viewer Java?
+GroupDocs Viewer Java adalah komponen sisi‑server yang merender lebih dari 100 tipe dokumen—termasuk CMX—ke dalam format yang ramah web. Komponen ini mengabstraksi parsing file, rendering, dan penanganan sumber daya, memungkinkan Anda fokus pada logika bisnis alih‑alih pemrosesan file tingkat rendah.
+
+## Mengapa menggunakan GroupDocs Viewer Java untuk konversi CMX?
+- **Rendering tanpa ketergantungan** – tidak memerlukan alat CMX native.  
+- **Fidelity tinggi** – mempertahankan tata letak, font, dan gambar.  
+- **Skalabel** – cocok untuk permintaan satu file maupun pekerjaan batch berskala besar.  
 
 ## Prasyarat
+- **Java Development Kit (JDK)** 8 atau yang lebih baru.  
+- **Maven** untuk manajemen dependensi.  
+- Pemahaman dasar tentang pemrograman Java.  
 
-Untuk mengikuti tutorial ini, Anda memerlukan:
-
-- **Kit Pengembangan Java (JDK)**: Versi 8 atau lebih tinggi.
-- **Pakar**: Untuk mengelola dependensi.
-- **Pengetahuan Dasar Java**:Keakraban dengan konsep pemrograman Java akan bermanfaat.
-
-### Pustaka dan Ketergantungan yang Diperlukan
-
-Pastikan Anda telah memasang Maven untuk mengelola dependensi proyek Anda. Anda juga memerlukan pustaka GroupDocs.Viewer, yang dapat disertakan melalui Maven:
+### Perpustakaan dan Dependensi yang Diperlukan
+Tambahkan repositori GroupDocs dan dependensi Viewer ke `pom.xml` Anda:
 
 ```xml
 <repositories>
@@ -49,158 +73,177 @@ Pastikan Anda telah memasang Maven untuk mengelola dependensi proyek Anda. Anda 
 </dependencies>
 ```
 
-### Pengaturan Lingkungan
+### Penyiapan Lingkungan
+1. **Lisensi** – mulai dengan percobaan gratis atau minta kunci sementara.  
+2. **IDE** – impor proyek Maven ke IntelliJ IDEA, Eclipse, atau editor pilihan Anda.  
 
-- **Akuisisi Lisensi**Anda dapat memulai dengan uji coba gratis atau meminta lisensi sementara untuk menjelajahi kemampuan lengkap GroupDocs.Viewer.
-- **Inisialisasi Dasar**: Unduh dan atur proyek Anda dalam IDE seperti IntelliJ IDEA atau Eclipse. Pastikan Maven dikonfigurasi untuk manajemen dependensi.
+## Menyiapkan GroupDocs Viewer Java
 
-## Menyiapkan GroupDocs.Viewer untuk Java
+### Instalasi via Maven
+Potongan kode di atas secara otomatis mengambil binari Viewer terbaru, sehingga Anda siap menulis kode setelah menjalankan `mvn clean install` sederhana.
 
-### Instalasi melalui Maven
+### Langkah-langkah Akuisisi Lisensi
+1. **Percobaan Gratis** – dapatkan kunci sementara dari [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+2. **Lisensi Sementara** – minta satu [di sini](https://purchase.groupdocs.com/temporary-license/).  
+3. **Pembelian Penuh** – beli lisensi produksi melalui [tautan ini](https://purchase.groupdocs.com/buy).  
 
-Untuk memulai, tambahkan repositori dan dependensi di atas ke `pom.xml` berkas. Pengaturan ini memungkinkan Maven untuk mengambil pustaka GroupDocs yang diperlukan secara otomatis.
-
-### Langkah-langkah Memperoleh Lisensi
-
-1. **Uji Coba Gratis**: Mengunjungi [Uji Coba Gratis GroupDocs](https://releases.groupdocs.com/viewer/java/) untuk lisensi sementara.
-2. **Lisensi Sementara**: Dapatkan lisensi sementara gratis dari [Di Sini](https://purchase.groupdocs.com/temporary-license/).
-3. **Pembelian**:Untuk akses penuh, beli lisensi melalui [tautan ini](https://purchase.groupdocs.com/buy).
-
-Setelah Anda memperoleh lisensi, terapkan pada aplikasi Anda untuk membuka semua fitur.
+Terapkan lisensi dalam kode Java Anda sebelum panggilan rendering apa pun (lihat dokumentasi GroupDocs untuk API yang tepat).
 
 ## Panduan Implementasi
 
-### Merender CMX ke HTML
+Di bawah ini Anda akan menemukan kode langkah‑demi‑langkah untuk setiap format output. Pola tiga blok (inisialisasi viewer → set lokasi output → konfigurasi opsi) tetap konsisten, memudahkan adaptasi untuk pekerjaan batch.
 
-**Ringkasan**Ubah dokumen CMX menjadi HTML dengan sumber daya tertanam untuk integrasi web yang mulus.
+### Cara Mengonversi CMX ke HTML (how to convert cmx)
 
-#### Tangga:
-1. **Inisialisasi Penampil**: Muat dokumen CMX Anda.
-   ```java
-   Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
-   ```
-2. **Tetapkan Direktori Output**: Tentukan di mana file keluaran akan disimpan.
-   ```java
-   Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result_{0}.html");
-   ```
-3. **Konfigurasikan Opsi**: Menggunakan `HtmlViewOptions` untuk dirender dengan sumber daya tertanam.
-   ```java
-   try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
-       HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(outputDirectory);
-       viewer.view(options); // Render CMX ke HTML
-   }
-   ```
+**Langkah 1 – Inisialisasi Viewer**
 
-**Penjelasan**:Kode ini menginisialisasi `Viewer` objek dengan jalur dokumen Anda, mengonfigurasi pengaturan keluaran menggunakan `HtmlViewOptions`, dan merender dokumen.
+```java
+Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
+```
 
-### Merender CMX ke JPG
+**Langkah 2 – Tentukan lokasi output HTML**
 
-**Ringkasan**: Ubah dokumen CMX menjadi gambar JPG berkualitas tinggi agar mudah dibagikan dan dilihat.
+```java
+Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result_{0}.html");
+```
 
-#### Tangga:
-1. **Inisialisasi Penampil**: Muat dokumen CMX.
-   ```java
-   Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
-   ```
-2. **Tetapkan Direktori Output**: Menentukan jalur keluaran untuk file JPG.
-   ```java
-   Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result_{0}.jpg");
-   ```
-3. **Konfigurasikan Opsi**: Menggunakan `JpgViewOptions` untuk ditampilkan sebagai gambar.
-   ```java
-   try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
-       JpgViewOptions options = new JpgViewOptions(outputDirectory);
-       viewer.view(options); // Render CMX ke JPG
-   }
-   ```
+**Langkah 3 – Render dengan sumber daya tersemat**
 
-**Penjelasan**: : Itu `JpgViewOptions` Kelas digunakan di sini untuk menentukan format keluaran dan direktori, mengubah setiap halaman dokumen CMX menjadi file JPG terpisah.
+```java
+try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(outputDirectory);
+    viewer.view(options); // Render CMX to HTML
+}
+```
 
-### Merender CMX ke PNG
+*Mengapa ini penting:* HTML dengan sumber daya tersemat memungkinkan Anda menempatkan hasil langsung ke halaman web tanpa file tambahan.
 
-**Ringkasan**: Ubah dokumen CMX ke gambar PNG untuk rendering grafis berkualitas tinggi.
+### Cara Mengonversi CMX ke JPG (how to convert cmx)
 
-#### Tangga:
-1. **Inisialisasi Penampil**: Muat dokumen CMX Anda.
-   ```java
-   Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
-   ```
-2. **Tetapkan Direktori Output**Tentukan direktori untuk keluaran PNG.
-   ```java
-   Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result_{0}.png");
-   ```
-3. **Konfigurasikan Opsi**: Menggunakan `PngViewOptions` untuk konversi gambar.
-   ```java
-   try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
-       PngViewOptions options = new PngViewOptions(outputDirectory);
-       viewer.view(options); // Render CMX ke PNG
-   }
-   ```
+**Langkah 1 – Inisialisasi Viewer**
 
-**Penjelasan**: Mirip dengan JPG, `PngViewOptions` memungkinkan Anda mengonversi setiap halaman menjadi berkas PNG, dengan tetap menjaga kualitas resolusi tinggi.
+```java
+Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
+```
 
-### Merender CMX ke PDF
+**Langkah 2 – Tentukan lokasi output JPG**
 
-**Ringkasan**: Mengubah dokumen CMX menjadi berkas PDF untuk berbagi dan pencetakan dokumen universal.
+```java
+Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result_{0}.jpg");
+```
 
-#### Tangga:
-1. **Inisialisasi Penampil**: Muat dokumen CMX.
-   ```java
-   Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
-   ```
-2. **Tetapkan Direktori Output**Tentukan tempat menyimpan berkas PDF.
-   ```java
-   Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result.pdf");
-   ```
-3. **Konfigurasikan Opsi**: Menggunakan `PdfViewOptions` untuk konversi PDF.
-   ```java
-   try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
-       PdfViewOptions options = new PdfViewOptions(outputDirectory);
-       viewer.view(options); // Render CMX ke PDF
-   }
-   ```
+**Langkah 3 – Render setiap halaman sebagai gambar JPG**
 
-**Penjelasan**: Pengaturan ini mengubah seluruh dokumen CMX menjadi satu berkas PDF, mempertahankan tata letak dan pemformatan.
+```java
+try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
+    JpgViewOptions options = new JpgViewOptions(outputDirectory);
+    viewer.view(options); // Render CMX to JPG
+}
+```
+
+*Tip pro:* Sesuaikan `JpgViewOptions` untuk mengontrol kualitas gambar dan DPI agar cetakan lebih tajam.
+
+### Cara Mengonversi CMX ke PNG (how to convert cmx)
+
+**Langkah 1 – Inisialisasi Viewer**
+
+```java
+Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
+```
+
+**Langkah 2 – Tentukan lokasi output PNG**
+
+```java
+Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result_{0}.png");
+```
+
+**Langkah 3 – Render setiap halaman sebagai gambar PNG**
+
+```java
+try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
+    PngViewOptions options = new PngViewOptions(outputDirectory);
+    viewer.view(options); // Render CMX to PNG
+}
+```
+
+*Mengapa memilih PNG?* Kompresi lossless mempertahankan grafik vektor dan transparansi.
+
+### Cara Mengonversi CMX ke PDF (how to convert cmx)
+
+**Langkah 1 – Inisialisasi Viewer**
+
+```java
+Path YOUR_DOCUMENT_DIRECTORY = Path.of("path/to/your/cmxdocument.cmx");
+```
+
+**Langkah 2 – Tentukan lokasi output PDF**
+
+```java
+Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY", "RenderingCmx").resolveSibling("cmx_result.pdf");
+```
+
+**Langkah 3 – Render seluruh dokumen sebagai satu PDF**
+
+```java
+try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
+    PdfViewOptions options = new PdfViewOptions(outputDirectory);
+    viewer.view(options); // Render CMX to PDF
+}
+```
+
+*Kasus penggunaan:* PDF ideal untuk pengarsipan atau mengirim ke pemangku kepentingan yang membutuhkan file yang dapat dicetak dan dapat dicari.
 
 ## Aplikasi Praktis
 
-1. **Pengarsipan Dokumen**Mengonversi dan menyimpan dokumen dalam format yang dapat diakses secara universal untuk pengarsipan jangka panjang.
-2. **Integrasi Web**: Gunakan rendering HTML untuk menampilkan dokumen langsung pada platform web.
-3. **File Siap Cetak**: Menghasilkan gambar berkualitas tinggi (JPG/PNG) atau PDF untuk keperluan pencetakan.
-4. **Kolaborasi**: Berbagi file yang dikonversi dengan pemangku kepentingan yang mungkin tidak memiliki perangkat lunak yang kompatibel dengan CMX.
-5. **Alur Kerja Otomatisasi**:Integrasikan konversi dokumen ke dalam alur kerja otomatis untuk efisiensi.
+- **Arsip Dokumen:** Simpan file CMX sebagai PDF/HTML untuk preservasi jangka panjang.  
+- **Integrasi Web:** Sematkan output HTML langsung ke portal atau intranet.  
+- **Aset Siap Cetak:** Hasilkan JPG/PNG resolusi tinggi untuk materi pemasaran atau manual teknis.  
+- **Kolaborasi:** Bagikan file yang telah dikonversi dengan mitra yang tidak memiliki viewer CMX.  
+- **Otomasi:** Sambungkan kode konversi ke pipeline CI atau pekerjaan batch untuk pemrosesan harian.  
 
 ## Pertimbangan Kinerja
 
-- **Mengoptimalkan Penggunaan Sumber Daya**: Pantau penggunaan memori dan kelola sumber daya secara efisien saat menangani dokumen besar.
-- **Pemrosesan Batch**: Memproses dokumen secara batch untuk mengurangi waktu pemuatan dan meningkatkan kinerja.
-- **Praktik Terbaik**Ikuti praktik terbaik manajemen memori Java, seperti menghindari kebocoran memori dengan menutup sumber daya dengan benar.
+- **Manajemen Sumber Daya:** Selalu gunakan pola try‑with‑resources (seperti yang ditunjukkan) untuk menutup `Viewer` dan membebaskan memori native.  
+- **Pemrosesan Batch:** Loop melalui daftar path file dan gunakan kembali satu instance `Viewer` bila memungkinkan untuk mengurangi overhead.  
+- **Penyesuaian Memori:** Untuk file CMX besar, tingkatkan heap JVM (`-Xmx`) dan pertimbangkan memproses halaman secara bertahap.  
+
+## Masalah Umum dan Solusinya
+
+| Gejala | Penyebab Kemungkinan | Solusi |
+|---------|----------------------|--------|
+| Kesalahan out‑of‑memory | File CMX sangat besar, heap default terlalu rendah | Tingkatkan heap JVM (`-Xmx2g` atau lebih tinggi) dan proses halaman secara individual |
+| Font hilang dalam output | Font tidak disertakan dalam viewer | Instal font yang hilang di mesin host atau sematkan melalui `FontSettings` khusus |
+| Halaman kosong pada PNG/JPG | Direktori output tidak dapat ditulis | Verifikasi izin menulis untuk `YOUR_OUTPUT_DIRECTORY` |
+
+## Pertanyaan yang Sering Diajukan
+
+**T: Bisakah saya mengonversi beberapa file CMX sekaligus?**  
+J: Ya—bungkus logika konversi satu file dalam loop atau gunakan parallel streams Java untuk pemrosesan bersamaan.
+
+**T: Apakah lisensi wajib untuk penggunaan produksi?**  
+J: Lisensi GroupDocs Viewer Java yang valid diperlukan untuk produksi; percobaan gratis cukup untuk evaluasi.
+
+**T: Bisakah saya menyesuaikan resolusi atau rentang halaman?**  
+J: Tentu. `JpgViewOptions` dan `PngViewOptions` menyediakan metode seperti `setResolution()` dan `setPageNumbers()`.
+
+**T: Apakah GroupDocs Viewer Java mendukung format lain selain CMX?**  
+J: Ya—PDF, DOCX, XLSX, PPTX, dan lebih dari 100 format tambahan didukung secara bawaan.
+
+**T: Bagaimana cara menangani file CMX yang dilindungi kata sandi?**  
+J: Berikan kata sandi ke konstruktor `Viewer`: `new Viewer(filePath, password)`.
 
 ## Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara mengonversi dokumen CMX ke dalam format HTML, JPG, PNG, dan PDF menggunakan GroupDocs.Viewer untuk Java. Keterampilan ini dapat meningkatkan kemampuan penanganan dokumen Anda secara signifikan dalam berbagai aplikasi.
+Anda kini memiliki panduan lengkap dan siap produksi tentang **cara mengonversi dokumen CMX** ke HTML, JPG, PNG, dan PDF menggunakan **GroupDocs Viewer Java**. Dengan mengikuti potongan kode langkah‑demi‑langkah dan menerapkan tips kinerja, Anda dapat mengintegrasikan konversi dokumen yang andal ke dalam aplikasi Java apa pun—baik itu utilitas satu kali atau layanan batch berkapasitas tinggi.
 
-### Langkah Berikutnya
-- Bereksperimenlah dengan berbagai pilihan konfigurasi yang disediakan oleh GroupDocs.Viewer.
-- Jelajahi [Dokumentasi GroupDocs](https://docs.groupdocs.com/viewer/java/) untuk fitur yang lebih canggih.
+### Langkah Selanjutnya
+- Bereksperimenlah dengan `HtmlViewOptions` untuk menyesuaikan CSS atau menyematkan font.  
+- Selami lebih dalam dokumentasi [GroupDocs](https://docs.groupdocs.com/viewer/java/) untuk skenario lanjutan seperti watermark atau OCR.  
 
-## Kesimpulan
+---
 
-Panduan lengkap ini menunjukkan cara mengonversi dokumen CMX ke format HTML, JPG, PNG, dan PDF secara efisien menggunakan GroupDocs.Viewer untuk Java, yang akan menyempurnakan alur kerja pengelolaan dokumen Anda. Dengan mengikuti petunjuk langkah demi langkah dan kiat pengoptimalan, Anda dapat mengintegrasikan kemampuan konversi yang canggih ke dalam aplikasi Java Anda dengan lancar, menghemat waktu, dan memastikan keluaran yang mudah diakses dan berkualitas tinggi.
+**Terakhir Diperbarui:** 2026-02-23  
+**Diuji Dengan:** GroupDocs Viewer Java 25.2  
+**Penulis:** GroupDocs  
 
-### Tanya Jawab Umum
-
-1. **Bisakah saya mengonversi beberapa file CMX secara bersamaan menggunakan GroupDocs.Viewer untuk Java?**  
-Ya, terapkan pemrosesan batch untuk mengonversi beberapa file CMX secara efisien dalam aplikasi Java Anda.
-
-2. **Apakah diperlukan lisensi untuk menggunakan GroupDocs.Viewer dalam produksi?**  
-Ya, lisensi yang valid diperlukan untuk fitur lengkap; uji coba gratis tersedia untuk tujuan pengujian.
-
-3. **Dapatkah saya menyesuaikan format dan pengaturan keluaran?**  
-Tentu saja, Anda dapat menyesuaikan opsi seperti resolusi, rentang halaman, dan sumber daya tertanam melalui ViewOptions yang berbeda.
-
-4. **Apakah GroupDocs.Viewer mendukung format dokumen lain selain CMX?**  
-Ya, ia mendukung banyak format termasuk PDF, DOCX, XLSX, dan banyak lagi, untuk dilihat dan dikonversi.
-
-5. **Apakah mungkin untuk mengonversi dokumen CMX secara terprogram dengan Java?**  
-Ya, tutorial ini menyediakan potongan kode Java untuk mengotomatiskan konversi CMX dalam aplikasi Java Anda.
+---
