@@ -1,19 +1,48 @@
 ---
 categories:
 - Java Development
-date: '2026-02-08'
-description: Apprenez à convertir des fichiers DOCX en HTML en Java avec GroupDocs.Viewer.
-  Comprend la conversion de documents en PDF en Java, la conversion PDF en streaming
-  et des conseils pour la conversion par lots en Java.
-keywords: java document conversion library, convert documents to pdf java, groupdocs
-  viewer java tutorial, document export java api, java library convert files
-lastmod: '2026-02-08'
+date: '2026-05-26'
+description: Apprenez à convertir DOCX en HTML en Java avec GroupDocs.Viewer. Comprend
+  la conversion de documents en pdf java, la conversion pdf en streaming, et le guide
+  de conversion par lots java.
+keywords:
+- docx to html java
+- convert word to html
+- export docx as html
+- stream pdf conversion
+- documents to pdf java
+- java batch conversion
+lastmod: '2026-05-26'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-26'
+  description: Learn how to convert DOCX to HTML in Java using GroupDocs.Viewer. Includes
+    documents to pdf java, streaming pdf conversion, and batch conversion java guidance.
+  headline: docx to html java – Complete GroupDocs.Viewer Conversion Tutorial Collection
+  type: TechArticle
+- questions:
+  - answer: Yes, the API supports in‑memory conversion, allowing you to stream the
+      HTML directly to the client.
+    question: Can I convert DOCX to HTML without writing any temporary files?
+  - answer: When converting many documents in a loop, reuse a single `Viewer` instance
+      and enable streaming to keep memory usage low.
+    question: How does batch conversion java affect performance?
+  - answer: Absolutely – the library provides `stream pdf conversion`, which writes
+      the PDF directly to an output stream without loading the whole file into memory.
+    question: Is it possible to convert documents to PDF while streaming the output?
+  - answer: Use the paging options to process one page at a time and combine streaming
+      with a fixed buffer to avoid out‑of‑memory errors.
+    question: What if I need to convert a large PDF to images?
+  - answer: Yes, you can pass the password when loading the document, and the conversion
+      will proceed securely.
+    question: Does GroupDocs.Viewer support password‑protected files?
+  type: FAQPage
 tags:
 - document-conversion
 - java-api
 - pdf-conversion
 - file-processing
-title: docx vers html java – Collection complète de tutoriels de conversion GroupDocs.Viewer
+title: docx to html java – Collection complète de tutoriels de conversion GroupDocs.Viewer
 type: docs
 url: /fr/java/export-conversion/
 weight: 15
@@ -21,135 +50,122 @@ weight: 15
 
 # docx to html java – Collection complète de tutoriels GroupDocs.Viewer
 
-Vous avez des difficultés avec la conversion de documents dans vos applications Java ? Vous n'êtes pas seul. Que vous ayez besoin de **docx to html java** pour l'affichage web, de transformer des PDF en images pour des vignettes, ou de gérer le traitement par lots de formats de fichiers mixtes, la conversion de documents peut rapidement devenir un goulot d'étranglement de développement.
+Si vous avez besoin de **docx to html java** rapidement et de manière fiable, vous êtes au bon endroit. Convertir un fichier DOCX en HTML vous permet d’afficher des documents Word directement dans un navigateur sans installer Microsoft Office. GroupDocs.Viewer pour Java fournit une API unique et haute performance qui préserve les polices, les images, les tableaux et même les objets incorporés, de sorte que la sortie HTML ressemble exactement au fichier original.
 
-C'est là que GroupDocs.Viewer pour Java brille. Cette bibliothèque complète prend en charge plus de 170 formats de fichiers, maintient l'intégrité du formatage et offre des performances de niveau entreprise. Notre collection de tutoriels vous guide à travers tout, des conversions de base aux stratégies d'implémentation avancées, vous aidant à créer des solutions de traitement de documents robustes et évolutives.
+Dans ce guide, nous parcourrons les bases, vous montrerons un exemple de conversion étape par étape, puis vous orienterons vers des dizaines de tutoriels plus approfondis couvrant tout, du traitement par lots à la conversion PDF en streaming.
 
 ![Document Export and Conversion Tutorials with GroupDocs.Viewer for Java](/viewer/export-conversion/imag-java.png)
 
-## Quick Answers
-- **Quelle est la façon la plus rapide de convertir DOCX en HTML en Java ?** Utilisez `HtmlViewOptions` de GroupDocs.Viewer avec le pipeline de conversion par défaut.  
-- **Puis-je convertir plusieurs documents en une seule requête ?** Oui—la conversion par lots java est prise en charge via une boucle sur les instances `Viewer` ou en utilisant la collection `ExportOptions`.  
-- **La conversion PDF en streaming est‑elle possible ?** Absolument ; l'API propose la conversion PDF en streaming pour éviter de charger le fichier complet en mémoire.  
-- **Ai‑je besoin d’une licence pour la production ?** Une licence commerciale est requise pour une utilisation en production ; un essai gratuit est disponible pour l'évaluation.  
-- **Quels formats sont couverts en plus de DOCX ?** Plus de 170 formats, y compris les PDF, les images, les fichiers CAD et les archives d'e‑mail.
+## Réponses rapides
+- **Quelle est la façon la plus rapide de convertir DOCX en HTML en Java ?** Utilisez `HtmlViewOptions` de GroupDocs.Viewer avec le pipeline par défaut – un appel en deux lignes qui diffuse le résultat.  
+- **Puis-je convertir plusieurs documents en une seule requête ?** Oui—`java batch conversion` est pris en charge en bouclant sur les instances `Viewer` ou en utilisant la collection `ExportOptions`.  
+- **La conversion PDF en streaming est‑elle possible ?** Absolument ; l’API propose `stream pdf conversion` pour éviter de charger le fichier complet en mémoire.  
+- **Ai‑je besoin d’une licence pour la production ?** Une licence commerciale est requise pour une utilisation en production ; un essai gratuit est disponible pour l’évaluation.  
+- **Quels formats sont pris en charge en plus de DOCX ?** Plus de 170 formats, y compris les PDF, les images, les fichiers CAD et les archives de courriels.
 
-## Qu'est-ce que docx to html java ?
-Convertir un fichier DOCX en HTML avec Java vous permet d'afficher le contenu d'un document Word directement dans les navigateurs sans nécessiter Microsoft Office. GroupDocs.Viewer se charge du travail lourd—préservant les styles, les images, les tableaux et les objets intégrés—de sorte que le HTML résultant ressemble exactement au document original.
+## Qu’est‑ce que docx to html java ?
+`docx to html java` est le processus de conversion d’un document Microsoft Word (.docx) en balisage HTML à l’aide de code Java. Cela permet un aperçu web fluide, une lecture hors ligne ou une intégration dans des systèmes de gestion de contenu sans dépendre des installations Office. En générant du HTML standard, vous pouvez intégrer le contenu dans n’importe quelle page web, appliquer du CSS personnalisé et garantir la compatibilité entre navigateurs.
 
 ## Pourquoi utiliser GroupDocs.Viewer pour docx to html java ?
-- **API unifiée** – Une base de code cohérente fonctionne pour tous les formats pris en charge.  
-- **Haute fidélité** – Les polices, les mises en page et les images sont conservées, éliminant les conversions « messy » que vous avez pu voir avec d'autres outils.  
-- **Orienté performance** – Diffusez de gros fichiers, mettez en cache les résultats et exécutez les conversions en parallèle sans consommation excessive de mémoire.  
-- **Prêt pour l'entreprise** – Les fonctionnalités de sécurité, les options de licence et la gestion robuste des erreurs le rendent adapté aux environnements de production.
+GroupDocs.Viewer fournit une **API unifiée** qui fonctionne avec tous les formats pris en charge, un **rendu haute fidélité** qui conserve la mise en page intacte, et un **streaming orienté performance** qui gère les gros fichiers avec une faible consommation de mémoire. La bibliothèque prend en charge **plus de 170 formats d’entrée et de sortie** et peut traiter des documents de plusieurs centaines de pages sans charger le fichier complet en RAM.
 
-## Défis courants de conversion de documents (et comment ces tutoriels les résolvent)
+## Prérequis
+- Java 8 ou supérieur installé sur votre machine de développement.  
+- Maven 3.5+ (ou Gradle) pour la gestion des dépendances.  
+- Une licence valide de GroupDocs.Viewer pour Java (l’essai fonctionne pour le développement).  
 
-**Challenge**: *Je dois convertir des documents Word en HTML, mais le formatage se casse et les images disparaissent.*  
-**Solution**: Nos tutoriels DOCX to HTML vous montrent comment intégrer les ressources et maintenir l'intégrité du formatage.
+## Comment convertir DOCX en HTML en Java – Étape par étape
 
-**Challenge**: *La conversion de gros fichiers PDF consomme la mémoire du serveur et provoque des dépassements de temps.*  
-**Solution**: Apprenez les techniques de conversion en streaming économes en mémoire et les stratégies d'optimisation des performances.
+Chargez votre fichier DOCX, configurez les options de sortie HTML et diffusez le résultat au client. Le modèle est le même pour chaque format, ainsi une fois que vous maîtrisez ce flux, vous pouvez le réutiliser pour `convert word to html`, `export docx as html`, ou même `documents to pdf java`.
 
-**Challenge**: *Je dois gérer différents formats de fichiers, mais chacun semble nécessiter un code différent.*  
-**Solution**: Découvrez des modèles de conversion unifiés qui fonctionnent pour tous les formats pris en charge.
+### Réponse directe
+Instanciez un `Viewer` avec le fichier DOCX, créez `HtmlViewOptions`, puis appelez `viewer.view(documentStream, options, outputStream)`. Ce pipeline en trois étapes convertit le document en mémoire et écrit le HTML directement dans un `OutputStream`, éliminant les fichiers temporaires.
 
-**Challenge**: *Les fichiers convertis diffèrent des originaux – les polices sont incorrectes, les mises en page sont cassées.*  
-**Solution**: Maîtrisez les options de configuration spécifiques aux formats pour préserver la fidélité du document.
+### Étape 1 – Ajouter la dépendance Maven
+Ajoutez l’artifact GroupDocs.Viewer à votre `pom.xml`. La bibliothèque récupère toutes les dépendances transitives requises.
 
-## Complete Tutorial Collection
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>23.12</version>
+</dependency>
+```
 
-### Essential Document Conversions
+### Étape 2 – Charger le document DOCX
+Créez une instance `Viewer` et chargez le fichier DOCX depuis le système de fichiers, un tableau d’octets ou tout `InputStream`. La classe `Viewer` est le point d’entrée pour toutes les opérations de conversion.
 
-### [Convert Archives to HTML with GroupDocs.Viewer Java: A Comprehensive Guide](./groupdocs-viewer-java-convert-archives-html/)
-**Parfait pour** : les développeurs construisant des systèmes de gestion de fichiers ou des visionneuses de documents  
-Extraire et convertir les archives ZIP, RAR en format HTML interrogeable. Apprenez les stratégies de conversion page unique vs. multi‑pages, gérez les archives imbriquées et implémentez la fonctionnalité d'aperçu pour les fichiers compressés. Inclut la gestion des erreurs pour les archives corrompues et l'optimisation de la mémoire pour les gros fichiers ZIP.
+```java
+try (Viewer viewer = new Viewer("sample.docx")) {
+    // Conversion logic goes here
+}
+```
 
-### [Convert DOCX to HTML Using GroupDocs.Viewer for Java: A Step-by-Step Guide](./convert-docx-to-html-groupdocs-viewer-java/)
-**Parfait pour** : les développeurs web convertissant des documents Word pour affichage en ligne  
-Transformez les documents Word en HTML propre et réactif tout en préservant le formatage. Ce tutoriel couvre la gestion des polices, l'optimisation des images et la génération de CSS pour un rendu cohérent sur tous les navigateurs. Apprenez à gérer des documents complexes avec tableaux, graphiques et objets intégrés.
+### Étape 3 – Configurer les options de sortie HTML
+`HtmlViewOptions` vous permet de contrôler la génération de CSS, l’incorporation des ressources et la gestion des pages. Pour un fichier HTML autonome, activez l’incorporation des ressources.
 
-### [Convert DOCX to HTML with Embedded Resources Using GroupDocs.Viewer for Java](./render-docx-html-embedded-resources-groupdocs-java/)
-**Parfait pour** : créer des documents HTML autonomes pour la visualisation hors ligne  
-Maîtrisez l'art d'intégrer toutes les ressources du document (images, polices, styles) directement dans la sortie HTML. Idéal pour les pièces jointes d'e‑mail, la documentation hors ligne ou la distribution de contenu où le chargement de ressources externes n’est pas fiable.
+```java
+HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources();
+options.setPageMargins(10);
+```
 
-### [Convert DOCX to JPG in Java Using GroupDocs.Viewer: A Comprehensive Guide](./convert-docx-jpg-groupdocs-viewer-java/)
-**Parfait pour** : la génération de vignettes de documents et les flux de travail basés sur les images  
-Générez des images JPEG de haute qualité à partir de documents Word avec des réglages de résolution et de qualité personnalisables. Apprenez la sélection de pages, le traitement par lots et l'application de filigranes pour les systèmes d'aperçu de documents et les plateformes de gestion de contenu.
+### Étape 4 – Effectuer la conversion
+Diffusez le HTML directement vers un `OutputStream`. Cela évite la création de fichiers intermédiaires et fonctionne parfaitement pour les services web.
 
-### Specialized Format Conversions
+```java
+try (FileOutputStream out = new FileOutputStream("sample.html")) {
+    viewer.view(options, out);
+}
+```
 
-### [Convert Documents to PDF in Java Using GroupDocs.Viewer: A Comprehensive Guide](./convert-documents-pdf-java-groupdocs-viewer/)
-**Parfait pour** : l'archivage de documents, les systèmes de reporting et la sortie prête à l'impression  
-Transformez tout format de document pris en charge en PDF de qualité professionnelle. Couvre les paramètres de sécurité, la préservation des métadonnées et l'optimisation pour différents cas d'utilisation (visualisation web, impression, archivage). Essentiel pour les flux de travail de conformité et de standardisation des documents.
+### Étape 5 – Nettoyer les ressources
+`Viewer` implémente `AutoCloseable`, ainsi l’utilisation d’un bloc try‑with‑resources garantit que toutes les ressources natives sont libérées, évitant les fuites de mémoire dans les applications de longue durée.
 
-### [Convert NSF Files to HTML, JPG, PNG, and PDF using GroupDocs.Viewer for Java](./convert-nsf-files-groupdocs-viewer-java/)
-**Parfait pour** : la migration de systèmes de messagerie legacy et le traitement des données Lotus Notes  
-Manipulez les fichiers IBM Lotus Notes NSF avec des techniques de conversion spécialisées. Apprenez à extraire les fils de discussion, à préserver les pièces jointes et à convertir les bases de données Lotus Notes en formats modernes pour la migration ou l'archivage.
+## Cas d’utilisation courants
+- **Portails web** qui doivent prévisualiser instantanément les documents Word téléchargés.  
+- **Systèmes de messagerie** qui intègrent des aperçus de documents dans le corps du message.  
+- **Flux de travail de gestion de contenu** qui stockent des versions HTML pour l’indexation par les moteurs de recherche.  
 
-### [Convert ODF to HTML, JPG, PNG, PDF Using GroupDocs.Viewer for Java](./convert-odf-documents-groupdocs-viewer-java/)
-**Parfait pour** : le traitement de documents multiplateforme et les flux de travail OpenDocument  
-Traitez les fichiers OpenDocument (ODT, ODS, ODP) avec des optimisations spécifiques au format. Gérez les formules complexes de feuilles de calcul, les animations de présentations et les styles de documents Writer lors de la conversion pour assurer la compatibilité entre différentes suites bureautiques.
+## Problèmes courants et solutions
+| Problème | Pourquoi cela se produit | Solution |
+|----------|--------------------------|----------|
+| Les images disparaissent dans le HTML | Ressources non incorporées | Utilisez `HtmlViewOptions.forEmbeddedResources()` ou définissez un dossier de ressources personnalisé. |
+| Les gros fichiers DOCX provoquent `OutOfMemoryError` | La conversion en mémoire charge le fichier complet | Passez en mode streaming avec `viewer.view(documentStream, options, outputStream)` et activez `setUseMemoryCache(true)`. |
+| Les polices s’affichent incorrectement | Mappage de police manquant | Fournissez un `FontMapper` personnalisé ou installez les polices requises sur le serveur. |
 
-### [Convert PST/OST to HTML, JPG, PNG, PDF Using GroupDocs.Viewer for Java | Export & Conversion Guide](./convert-pst-ost-groupdocs-viewer-java/)
-**Parfait pour** : l'archivage d'e‑mail, l'e‑discovery et la migration de données Outlook  
-Extrayez et convertissez les fichiers de données Outlook avec une préservation complète des fils de discussion. Apprenez la gestion de la structure des dossiers, le traitement des pièces jointes et l'extraction des métadonnées pour la conformité légale et les projets de migration de données.
+## Questions fréquentes
 
-### Advanced and Technical Conversions
+**Q : Puis‑je convertir DOCX en HTML sans créer de fichiers temporaires ?**  
+R : Oui, l’API prend en charge la conversion en mémoire, vous permettant de diffuser le HTML directement au client.
 
-### [Convert TXT Files to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer for Java](./groupdocs-viewer-java-txt-conversion-guide/)
-**Parfait pour** : le traitement des fichiers journaux, la documentation de code et l'amélioration du texte brut  
-Transformez les fichiers texte simples en documents formatés et présentables. Couvre la coloration syntaxique pour les fichiers de code, le style personnalisé pour les journaux et le formatage automatisé pour une meilleure lisibilité.
+**Q : Comment la conversion par lots java affecte‑t‑elle les performances ?**  
+R : Lors de la conversion de nombreux documents dans une boucle, réutilisez une seule instance `Viewer` et activez le streaming pour maintenir une faible utilisation de la mémoire.
 
-### [Efficient CMX Document Conversion Using GroupDocs.Viewer for Java: A Comprehensive Guide](./mastering-cmx-document-conversion-groupdocs-viewer-java/)
-**Parfait pour** : le traitement des fichiers CAD et les flux de travail de documents techniques  
-Manipulez les fichiers CorelDRAW CMX en préservant les graphiques vectoriels. Apprenez la gestion des calques, le traitement des profils de couleur et l'optimisation de la résolution pour les dessins techniques et les fichiers de conception graphique.
+**Q : Est‑il possible de convertir des documents en PDF tout en diffusant la sortie ?**  
+R : Absolument – la bibliothèque fournit `stream pdf conversion`, qui écrit le PDF directement dans un flux de sortie sans charger le fichier complet en mémoire.
 
-### [How to Convert Documents to PDF Using GroupDocs.Viewer for Java: A Complete Guide](./convert-documents-pdf-groupdocs-viewer-java/)
-**Parfait pour** : la standardisation universelle des documents et les flux de travail PDF  
-Guide complet de conversion PDF couvrant des options avancées telles que les signets, les annotations et les signatures numériques. Inclut des stratégies de traitement par lots et l'optimisation de la qualité pour différents cas d'utilisation du PDF.
+**Q : Que faire si je dois convertir un gros PDF en images ?**  
+R : Utilisez les options de pagination pour traiter une page à la fois et combinez le streaming avec un tampon fixe afin d’éviter les erreurs de mémoire insuffisante.
 
-### [How to Convert WMZ/WMF Documents Using GroupDocs Viewer for Java: A Comprehensive Guide](./convert-wmz-wmf-groupdocs-viewer-java/)
-**Parfait pour** : le traitement des métafichiers Windows et la conversion de graphiques legacy  
-Traitez les métafichiers Windows compressés et non compressés en préservant les graphiques vectoriels. Essentiel pour gérer les applications Windows legacy et maintenir la qualité graphique lors de projets de modernisation.
+**Q : GroupDocs.Viewer prend‑il en charge les fichiers protégés par mot de passe ?**  
+R : Oui, vous pouvez fournir le mot de passe lors du chargement du document, et la conversion s’effectuera en toute sécurité.
 
-### [Mastering OBJ to HTML/JPG/PNG/PDF Conversion in Java Using GroupDocs.Viewer](./master-obj-conversion-java-html-jpg-png-pdf/)
-**Parfait pour** : la documentation de modèles 3D et l'intégration de fichiers CAD  
-Convertissez les fichiers d'objets 3D pour l'affichage web et la documentation. Apprenez la gestion des matériaux, l'optimisation de l'éclairage et la configuration des angles de vue pour une présentation efficace des modèles 3D en formats 2D.
-
-## Premiers pas : votre première conversion en 5 minutes
-
-1. **Installation** – Ajoutez GroupDocs.Viewer à vos dépendances Maven.  
-2. **Configuration de la licence** – Configurez votre licence (un essai est disponible pour l'évaluation).  
-3. **Modèle de base** – La plupart des conversions suivent le même modèle simple : charger → configurer → convertir.  
-4. **Gestion des ressources** – Disposez toujours correctement des instances Viewer pour éviter les fuites de mémoire.
-
-Chaque tutoriel s'appuie sur ces fondamentaux tout en plongeant profondément dans les optimisations spécifiques aux formats et les stratégies d'implémentation du monde réel.
-
-## Conseils d'optimisation des performances
-
-- **Gestion de la mémoire** – Utilisez la conversion en streaming pour les gros fichiers afin d'éviter l'épuisement de la mémoire. Nos tutoriels vous montrent quand et comment implémenter le streaming versus le traitement en mémoire.  
-- **Stratégies de mise en cache** – Mettez en œuvre une mise en cache intelligente pour éviter de reconvertir les documents inchangés. Apprenez les modèles d'invalidation du cache et les techniques d'optimisation du stockage.  
-- **Traitement concurrent** – Gérez efficacement plusieurs requêtes de conversion avec une gestion appropriée des threads et du pool de ressources.  
-- **Optimisations spécifiques aux formats** – Chaque type de fichier a des caractéristiques uniques. Nos guides révèlent les ajustements de performance qui font la plus grande différence pour chaque format.
-
-## Considérations d'entreprise
-
-- **Scalabilité** – Apprenez les modèles de déploiement qui évoluent des installations monserveur aux clusters de traitement distribués.  
-- **Sécurité** – Comprenez la sécurité de la manipulation des documents, la gestion des fichiers temporaires et les stratégies de protection des données pour les documents sensibles.  
-- **Surveillance** – Mettez en œuvre la journalisation et la surveillance pour suivre les performances de conversion, les taux d'erreur et l'utilisation des ressources en environnements de production.  
-- **Licences** – Naviguez parmi les options de licence GroupDocs et les considérations de déploiement pour différents besoins organisationnels.
-
-## Ce que vous maîtriserez
-
-- **Modèles de conversion universels** – Modèles de code qui fonctionnent pour tous les formats pris en charge.  
-- **Gestion des erreurs** – Gestion robuste des erreurs pour le traitement de documents en production.  
-- **Optimisation des performances** – Techniques de conversion économes en mémoire pour les applications à grande échelle.  
-- **Préservation du format** – Maintien de la fidélité du document à travers différents formats de sortie.  
-- **Stratégies d'intégration** – Incorporer sans couture la conversion de documents dans les applications Java existantes.
+## Liens vers les tutoriels
+- [Convertir les archives en HTML avec GroupDocs.Viewer Java : Guide complet](./groupdocs-viewer-java-convert-archives-html/)  
+- [Convertir DOCX en HTML avec GroupDocs.Viewer pour Java : Guide étape par étape](./convert-docx-to-html-groupdocs-viewer-java/)  
+- [Convertir DOCX en HTML avec ressources incorporées en utilisant GroupDocs.Viewer pour Java](./render-docx-html-embedded-resources-groupdocs-java/)  
+- [Convertir DOCX en JPG en Java avec GroupDocs.Viewer : Guide complet](./convert-docx-jpg-groupdocs-viewer-java/)  
+- [Convertir des documents en PDF en Java avec GroupDocs.Viewer : Guide complet](./convert-documents-pdf-java-groupdocs-viewer/)  
+- [Convertir les fichiers NSF en HTML, JPG, PNG et PDF avec GroupDocs.Viewer pour Java](./convert-nsf-files-groupdocs-viewer-java/)  
+- [Convertir ODF en HTML, JPG, PNG, PDF avec GroupDocs.Viewer pour Java](./convert-odf-documents-groupdocs-viewer-java/)  
+- [Convertir PST/OST en HTML, JPG, PNG, PDF avec GroupDocs.Viewer pour Java | Guide d’exportation et de conversion](./convert-pst-ost-groupdocs-viewer-java/)  
+- [Convertir les fichiers TXT en HTML, JPG, PNG et PDF avec GroupDocs.Viewer pour Java](./groupdocs-viewer-java-txt-conversion-guide/)  
+- [Conversion efficace de documents CMX avec GroupDocs.Viewer pour Java : Guide complet](./mastering-cmx-document-conversion-groupdocs-viewer-java/)  
+- [Comment convertir des documents en PDF avec GroupDocs.Viewer pour Java : Guide complet](./convert-documents-pdf-groupdocs-viewer-java/)  
+- [Comment convertir les documents WMZ/WMF avec GroupDocs Viewer pour Java : Guide complet](./convert-wmz-wmf-groupdocs-viewer-java/)  
+- [Maîtriser la conversion OBJ en HTML/JPG/PNG/PDF en Java avec GroupDocs.Viewer](./master-obj-conversion-java-html-jpg-png-pdf/)  
 
 ## Ressources supplémentaires
-
 - [Documentation GroupDocs.Viewer pour Java](https://docs.groupdocs.com/viewer/java/)
 - [Référence API GroupDocs.Viewer pour Java](https://reference.groupdocs.com/viewer/java/)
 - [Télécharger GroupDocs.Viewer pour Java](https://releases.groupdocs.com/viewer/java/)
@@ -157,23 +173,13 @@ Chaque tutoriel s'appuie sur ces fondamentaux tout en plongeant profondément da
 - [Support gratuit](https://forum.groupdocs.com/)
 - [Licence temporaire](https://purchase.groupdocs.com/temporary-license/)
 
-## Questions fréquentes
+---
 
-**Q : Puis‑je convertir DOCX en HTML sans écrire de fichiers temporaires ?**  
-R : Oui, l'API prend en charge la conversion en mémoire, vous permettant de diffuser le HTML directement au client.
-
-**Q : Comment la conversion par lots java affecte‑t‑elle les performances ?**  
-R : Lors de la conversion de nombreux documents dans une boucle, réutilisez une seule instance `Viewer` et activez le streaming pour maintenir une faible consommation de mémoire.
-
-**Q : Est‑il possible de convertir des documents en PDF tout en diffusant la sortie ?**  
-R : Absolument – la bibliothèque fournit la conversion PDF en streaming, qui écrit le PDF directement dans un flux de sortie sans charger le fichier complet en mémoire.
-
-**Q : Que faire si je dois convertir un gros PDF en images ?**  
-R : Utilisez les options de pagination pour traiter une page à la fois et combinez le streaming avec un tampon fixe pour éviter les erreurs de dépassement de mémoire.
-
-**Q : GroupDocs.Viewer prend‑il en charge les fichiers protégés par mot de passe ?**  
-R : Oui, vous pouvez fournir le mot de passe lors du chargement du document, et la conversion s'effectuera de manière sécurisée.
-
-**Dernière mise à jour :** 2026-02-08  
+**Dernière mise à jour :** 2026-05-26  
 **Testé avec :** GroupDocs.Viewer 23.12 pour Java  
 **Auteur :** GroupDocs
+
+## Tutoriels associés
+- [Comment convertir DOCX en HTML avec GroupDocs.Viewer pour Java : Guide étape par étape](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Convertir DOCX en HTML avec ressources externes en utilisant GroupDocs.Viewer pour Java](/viewer/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/)
+- [Convertir DOCX en HTML avec ressources incorporées en utilisant GroupDocs.Viewer pour Java](/viewer/java/export-conversion/render-docx-html-embedded-resources-groupdocs-java/)
