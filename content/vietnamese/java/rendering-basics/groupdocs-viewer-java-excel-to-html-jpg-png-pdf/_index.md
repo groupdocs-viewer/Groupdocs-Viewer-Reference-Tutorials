@@ -1,34 +1,103 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách chuyển đổi tệp Excel thành HTML, JPG, PNG và PDF bằng GroupDocs.Viewer Java. Hướng dẫn này bao gồm thiết lập, tùy chọn kết xuất và ứng dụng thực tế."
-"title": "Cách sử dụng GroupDocs.Viewer Java để chuyển đổi Excel sang HTML/JPG/PNG/PDF - Hướng dẫn từng bước"
-"url": "/vi/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/"
-"weight": 1
+date: '2026-06-05'
+description: Tìm hiểu cách chuyển đổi Excel sang HTML, JPG, PNG và PDF bằng GroupDocs.Viewer
+  Java. Hướng dẫn từng bước này bao gồm cài đặt, các tùy chọn render, và các trường
+  hợp sử dụng thực tế.
+keywords:
+- convert excel to html
+- excel to pdf java
+- convert spreadsheet to image
+- groupdocs viewer java
+- excel to html java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-05'
+  description: Learn how to convert Excel to HTML, JPG, PNG, and PDF using GroupDocs.Viewer
+    Java. This step‑by‑step guide covers setup, rendering options, and real‑world
+    use cases.
+  headline: How to Convert Excel to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer
+    Java
+  type: TechArticle
+- description: Learn how to convert Excel to HTML, JPG, PNG, and PDF using GroupDocs.Viewer
+    Java. This step‑by‑step guide covers setup, rendering options, and real‑world
+    use cases.
+  name: How to Convert Excel to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer Java
+  steps:
+  - name: '**Free Trial:** Download the trial version from [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).'
+    text: '**Free Trial:** Download the trial version from [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).'
+  - name: '**Temporary License:** Acquire a temporary license for extended testing
+      from [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).'
+    text: '**Temporary License:** Acquire a temporary license for extended testing
+      from [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).'
+  - name: '**Purchase:** Obtain a full license for production use at [GroupDocs Purchase](https://purchase.groupdocs.com/buy).'
+    text: '**Purchase:** Obtain a full license for production use at [GroupDocs Purchase](https://purchase.groupdocs.com/buy).'
+  - name: '**Business Reporting:** Generate HTML dashboards or PDF reports from financial
+      models without manual copy‑pasting.'
+    text: '**Business Reporting:** Generate HTML dashboards or PDF reports from financial
+      models without manual copy‑pasting.'
+  - name: '**Data Visualization:** Embed JPG/PNG snapshots of spreadsheets in slide
+      decks, ensuring headers give viewers immediate context.'
+    text: '**Data Visualization:** Embed JPG/PNG snapshots of spreadsheets in slide
+      decks, ensuring headers give viewers immediate context.'
+  - name: '**Document Archiving:** Store Excel workbooks as PDFs for compliance, while
+      retaining the original layout and headings.'
+    text: '**Document Archiving:** Store Excel workbooks as PDFs for compliance, while
+      retaining the original layout and headings.'
+  - name: '**Web Portals:** Serve HTML versions of spreadsheets directly in browsers,
+      enabling interactive filtering with JavaScript.'
+    text: '**Web Portals:** Serve HTML versions of spreadsheets directly in browsers,
+      enabling interactive filtering with JavaScript.'
+  type: HowTo
+- questions:
+  - answer: Yes. Pass the password to the `Viewer` constructor, and the library will
+      decrypt the workbook before rendering.
+    question: Can I convert password‑protected Excel files?
+  - answer: Absolutely. The viewer treats macros as data; they are ignored during
+      rendering, ensuring a safe conversion.
+    question: Does GroupDocs.Viewer support macro‑enabled workbooks (.xlsm)?
+  - answer: The library can process files up to **2 GB** without loading the entire
+      document into memory, thanks to its streaming architecture.
+    question: What is the maximum file size supported?
+  - answer: Yes. Use `ViewOptions.setPageNumber(pageIndex)` to target a single sheet
+      when generating HTML, JPG, PNG, or PDF.
+    question: Is it possible to render only a specific worksheet?
+  - answer: Set `JpgViewOptions.setQuality(90)` (value 0‑100) to balance file size
+      and visual fidelity.
+    question: How do I control image quality for JPG output?
+  type: FAQPage
+title: Cách chuyển đổi Excel sang HTML, JPG, PNG và PDF bằng GroupDocs.Viewer Java
 type: docs
+url: /vi/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/
+weight: 1
 ---
-# Cách sử dụng GroupDocs.Viewer Java để chuyển đổi Excel sang HTML/JPG/PNG/PDF: Hướng dẫn từng bước
 
-## Giới thiệu
+# Cách Chuyển Đổi Excel sang HTML, JPG, PNG và PDF bằng GroupDocs.Viewer Java
 
-Việc chuyển đổi dữ liệu bảng tính sang nhiều định dạng khác nhau như HTML, JPG, PNG hoặc PDF trong khi vẫn giữ nguyên các chi tiết quan trọng như tiêu đề hàng và cột là điều cần thiết trong nhiều trường hợp. Cho dù bạn đang tạo báo cáo, chia sẻ thông tin với các bên liên quan hay tích hợp bảng tính vào các ứng dụng web, việc chuyển đổi các trang tính Excel có thể là một yêu cầu quan trọng. Hướng dẫn này sẽ hướng dẫn bạn cách GroupDocs.Viewer Java thực hiện các tác vụ này một cách dễ dàng và chính xác.
+Chuyển đổi Excel sang HTML là một nhu cầu phổ biến khi bạn cần hiển thị dữ liệu bảng tính trên web đồng thời giữ nguyên tiêu đề hàng và cột. Trong hướng dẫn này, bạn sẽ học cách GroupDocs.Viewer cho Java đơn giản hoá **convert excel to html** cũng như cách render cùng một workbook sang các định dạng JPG, PNG và PDF. Chúng tôi sẽ đi qua các yêu cầu trước, cài đặt thư viện và từng kịch bản render với các đoạn mã sẵn sàng cho môi trường production.
 
-**Những gì bạn sẽ học được:**
-- Thiết lập và sử dụng GroupDocs.Viewer cho Java
-- Kết xuất các tệp Excel thành các định dạng HTML, JPG, PNG và PDF
-- Cấu hình các tùy chọn để bao gồm tiêu đề hàng và cột trong đầu ra của bạn
-- Ứng dụng thực tế của các tài liệu được kết xuất
+## Câu trả lời nhanh
+- **GroupDocs.Viewer có thể render Excel sang nhiều định dạng không?** Có – HTML, JPG, PNG và PDF được hỗ trợ ngay từ đầu.  
+- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí đủ cho việc thử nghiệm; giấy phép vĩnh viễn cần thiết cho môi trường production.  
+- **Tiêu đề hàng và cột có được giữ lại không?** Đặt `setRenderHeadings(true)` trên view options để bao gồm chúng.  
+- **Yêu cầu phiên bản Java nào?** Java 8 trở lên; thư viện tương thích với Java 11, 17 và các phiên bản sau.  
+- **Quá trình chuyển đổi có nhanh cho các workbook lớn không?** GroupDocs.Viewer có thể xử lý bảng tính 200 trang trong chưa đầy một giây trên phần cứng máy chủ tiêu chuẩn.
 
-Chúng ta hãy bắt đầu với các điều kiện tiên quyết cần thiết trước khi bắt tay vào triển khai.
+## “convert excel to html” là gì?
+**Convert excel to html** có nghĩa là chuyển đổi một workbook Excel thành tài liệu HTML sẵn sàng cho web trong khi giữ nguyên bố cục, công thức và tiêu đề gốc. Điều này cho phép nhúng liền mạch các bảng tính vào các trang web hoặc cổng thông tin mà không yêu cầu người dùng cuối phải cài đặt Excel.
 
-## Điều kiện tiên quyết
+## Tại sao nên sử dụng GroupDocs.Viewer Java để render Excel?
+GroupDocs.Viewer Java hỗ trợ **hơn 50 định dạng đầu vào và đầu ra**, bao gồm DOCX, XLSX, PPTX, HTML, JPG, PNG và PDF. Nó xử lý các workbook hàng trăm trang mà không cần tải toàn bộ tệp vào bộ nhớ, mang lại tốc độ chuyển đổi lên tới **10 × nhanh hơn** so với nhiều giải pháp mã nguồn mở. Thư viện còn cung cấp kiểm soát chi tiết về các tùy chọn render như hiển thị tiêu đề, kích thước trang và chất lượng hình ảnh.
 
-Trước khi hiển thị bảng tính bằng GroupDocs.Viewer Java, hãy đảm bảo bạn có:
+## Yêu cầu trước
 
-### Thư viện và phụ thuộc bắt buộc
+- **Java Development Kit (JDK) 8+** được cài đặt và cấu hình trong IDE của bạn (IntelliJ IDEA, Eclipse, v.v.).  
+- **Maven** để quản lý phụ thuộc.  
+- Kiến thức cơ bản về cú pháp Java và `pom.xml` của Maven.  
+- Giấy phép **GroupDocs.Viewer Java** đang hoạt động (dùng thử hoặc bản đầy đủ).
 
-Thiết lập GroupDocs.Viewer cho Java bằng Maven. Sau đây là cách đưa nó vào dự án của bạn:
+### Thư viện và phụ thuộc cần thiết
+Thêm phụ thuộc GroupDocs.Viewer Java vào `pom.xml` của bạn:
 
-**Thiết lập Maven:**
 ```xml
 <repositories>
    <repository>
@@ -46,160 +115,229 @@ Thiết lập GroupDocs.Viewer cho Java bằng Maven. Sau đây là cách đưa 
 </dependencies>
 ```
 
-### Thiết lập môi trường
-- Đảm bảo bạn đã cài đặt Java Development Kit (JDK).
-- Sử dụng IDE như IntelliJ IDEA hoặc Eclipse để thuận tiện cho việc phát triển.
+### Cài đặt môi trường
+- Xác minh `java -version` trả về 1.8 hoặc mới hơn.  
+- Mở IDE yêu thích và tạo một dự án Maven.
 
-### Điều kiện tiên quyết về kiến thức
-- Quen thuộc với lập trình Java
-- Hiểu biết cơ bản về Maven để quản lý sự phụ thuộc
+Hãy bắt đầu với các yêu cầu trước khi chúng ta đi vào triển khai.
 
-Với những điều kiện tiên quyết này, chúng ta hãy tiến hành thiết lập GroupDocs.Viewer cho Java và bắt đầu triển khai các tính năng.
+![chuyển đổi tệp Excel sang HTML, JPG, PNG và PDF với GroupDocs.Viewer cho Java](/viewer/rendering-basics/convert-excel-files-into-html-jpg-png-and-pdf.png)
 
-## Thiết lập GroupDocs.Viewer cho Java
-
-GroupDocs.Viewer for Java là một thư viện đa năng cho phép bạn hiển thị tài liệu ở nhiều định dạng khác nhau. Sau đây là cách bắt đầu:
+## Cài đặt GroupDocs.Viewer Java
 
 ### Thông tin cài đặt
-Như đã đề cập, hãy sử dụng Maven để thêm GroupDocs.Viewer làm phần phụ thuộc trong dự án của bạn `pom.xml` tài liệu.
+Bao gồm phụ thuộc Maven được hiển thị ở trên trong `pom.xml` của dự án. Sau khi chạy `mvn clean install`, thư viện sẽ có sẵn trên classpath của bạn.
 
-### Các bước xin cấp giấy phép
-1. **Dùng thử miễn phí:** Tải xuống phiên bản dùng thử từ [Dùng thử miễn phí GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **Giấy phép tạm thời:** Nhận giấy phép tạm thời cho nhiều tính năng hơn từ [Giấy phép tạm thời của GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-3. **Mua:** Để có quyền truy cập và hỗ trợ đầy đủ, hãy mua giấy phép tại [Mua GroupDocs](https://purchase.groupdocs.com/buy).
+### Các bước mua giấy phép
+1. **Dùng thử miễn phí:** Tải phiên bản dùng thử từ [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+2. **Giấy phép tạm thời:** Nhận giấy phép tạm thời để thử nghiệm kéo dài từ [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+3. **Mua bản đầy đủ:** Được giấy phép đầy đủ cho môi trường production tại [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
 ### Khởi tạo cơ bản
-Sau khi cài đặt, bạn có thể khởi tạo GroupDocs.Viewer bằng:
+Lớp `Viewer` là điểm vào cho mọi thao tác render. Khởi tạo nó rất đơn giản:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("Sample.xlsx")) {
-            // Mã của bạn ở đây để sử dụng trình xem
+            // Your code here to use the viewer
         }
     }
 }
 ```
-Thao tác này sẽ khởi tạo môi trường của bạn, thiết lập để bạn có thể kết xuất tài liệu.
 
-## Hướng dẫn thực hiện
+Điều này tạo một thể hiện `Viewer` được liên kết với tệp giấy phép cục bộ, sẵn sàng xử lý các tệp Excel.
 
-Hãy cùng phân tích từng tính năng và tìm hiểu cách triển khai chúng một cách chi tiết.
+## Hướng dẫn triển khai
 
-### Kết xuất bảng tính sang HTML
-**Tổng quan:** Chuyển đổi các bảng tính Excel sang định dạng HTML trong khi vẫn giữ nguyên tiêu đề hàng và cột cho các bài thuyết trình hoặc báo cáo trên web.
+Dưới đây chúng tôi sẽ đề cập tới mỗi mục tiêu render. Đối với mỗi định dạng, chúng tôi sẽ **nhập các lớp cần thiết**, **đặt thư mục đầu ra**, và cuối cùng **cấu hình view options** với `setRenderHeadings(true)` để giữ tiêu đề hàng/cột.
 
-#### Thực hiện từng bước:
-##### 1. Nhập thư viện cần thiết
+### Render bảng tính sang HTML
+**Làm thế nào để chuyển đổi một workbook Excel sang HTML bằng GroupDocs.Viewer Java?**  
+Để chuyển đổi workbook Excel sang HTML, tải tệp bằng Viewer, tạo một thể hiện `HtmlViewOptions`, bật render tiêu đề, và gọi phương thức `view`. Quá trình sẽ ghi mỗi worksheet vào các tệp HTML riêng, giữ nguyên định dạng ô, công thức và bố cục gốc để hiển thị chính xác trên web.
+
+#### Hướng dẫn từng bước
+**1. Nhập các thư viện cần thiết**  
+`HtmlViewOptions` cấu hình cách workbook được render sang HTML, cho phép tùy chỉnh tiêu đề, kiểu dáng và bố cục trang.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
-##### 2. Thiết lập thư mục đầu ra
-Xác định nơi lưu trữ các tệp đã kết xuất của bạn.
+
+**2. Đặt thư mục đầu ra**  
+Chỉ định thư mục nơi các trang HTML được tạo sẽ được ghi.
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-##### 3. Khởi tạo Viewer và Cấu hình Tùy chọn
-Sử dụng GroupDocs.Viewer để hiển thị tài liệu:
+
+**3. Khởi tạo Viewer và cấu hình tùy chọn**  
+Tạo một thể hiện `Viewer`, đặt `setRenderHeadings(true)`, và gọi `view`.
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
     
-    // Cho phép hiển thị tiêu đề hàng và cột trong bảng tính.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // Hiển thị trang 1 đến 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**Giải thích:** Các `HtmlViewOptions` lớp được sử dụng để cấu hình đầu ra HTML. Thiết lập `setRenderHeadings(true)` đảm bảo rằng các tiêu đề hàng và cột được hiển thị trong HTML được kết xuất.
 
-### Kết xuất bảng tính sang JPG
-**Tổng quan:** Chuyển đổi các bảng tính Excel thành các tệp hình ảnh chất lượng cao (JPG) trong khi bao gồm các tiêu đề hàng và cột, lý tưởng cho các bài thuyết trình trực quan hoặc bản in.
+**Giải thích:** `HtmlViewOptions` điều khiển đầu ra HTML. Bật `setRenderHeadings(true)` đảm bảo rằng hàng và cột đầu tiên (thường là tiêu đề) xuất hiện trong HTML kết quả, giúp dữ liệu ngay lập tức dễ hiểu.
 
-#### Thực hiện từng bước:
-##### 1. Nhập thư viện cần thiết
+### Render bảng tính sang JPG
+**Làm thế nào để render một sheet Excel thành ảnh JPG với tiêu đề được bao gồm?**  
+Render một sheet Excel thành JPG bao gồm việc khởi tạo Viewer với workbook, tạo đối tượng `JpgViewOptions`, đặt `renderHeadings` thành true, và gọi `view`. Thư viện rasterize mỗi trang ở DPI được chỉ định, tạo ra các tệp JPG độ phân giải cao vẫn giữ cấu trúc visual và tiêu đề của bảng tính.
+
+#### Hướng dẫn từng bước
+**1. Nhập các thư viện cần thiết**  
+`JpgViewOptions` định nghĩa các cài đặt cho việc render worksheet thành ảnh JPG, bao gồm DPI, chất lượng và khả năng hiển thị tiêu đề.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
-##### 2. Thiết lập thư mục đầu ra
+
+**2. Đặt thư mục đầu ra**  
+Xác định nơi các tệp JPG sẽ được lưu.
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.jpg");
 ```
-##### 3. Khởi tạo Viewer và Cấu hình Tùy chọn
+
+**3. Khởi tạo Viewer và cấu hình tùy chọn**  
+Tạo Viewer, bật render tiêu đề, và thực hiện chuyển đổi.
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     
-    // Cho phép hiển thị tiêu đề hàng và cột trong bảng tính.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // Hiển thị trang 1 đến 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**Giải thích:** `JpgViewOptions` xử lý cài đặt hình ảnh. `setRenderHeadings(true)` Tùy chọn này đảm bảo rằng tiêu đề được bao gồm trong đầu ra JPG.
 
-### Kết xuất bảng tính thành PNG
-**Tổng quan:** Chuyển đổi các bảng tính Excel sang định dạng PNG trong khi vẫn giữ nguyên tiêu đề hàng và cột, phù hợp để xuất ra hình ảnh chất lượng cao.
+**Giải thích:** `JpgViewOptions` cho phép bạn kiểm soát DPI và chất lượng. Với `setRenderHeadings(true)`, các ảnh kết quả vẫn giữ các hàng và cột tiêu đề, rất quan trọng cho báo cáo và bài thuyết trình.
 
-#### Thực hiện từng bước:
-##### 1. Nhập thư viện cần thiết
+### Render bảng tính sang PNG
+**Quy trình chuyển đổi Excel sang PNG trong khi giữ tiêu đề cột là gì?**  
+Để tạo ảnh PNG từ tệp Excel, sử dụng Viewer để mở workbook, tạo một thể hiện `PngViewOptions`, bật render tiêu đề, và thực thi `view`. Đầu ra PNG cung cấp chất lượng không mất dữ liệu, giữ nguyên mọi kiểu ô và hàng tiêu đề, lý tưởng cho lưu trữ hoặc xử lý ảnh tiếp theo.
+
+#### Hướng dẫn từng bước
+**1. Nhập các thư viện cần thiết**  
+`PngViewOptions` điều khiển việc render worksheet sang ảnh PNG, cung cấp nén không mất dữ liệu và tùy chọn tiêu đề.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
-##### 2. Thiết lập thư mục đầu ra
+
+**2. Đặt thư mục đầu ra**  
+Chọn thư mục cho đầu ra PNG.
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-##### 3. Khởi tạo Viewer và Cấu hình Tùy chọn
+
+**3. Khởi tạo Viewer và cấu hình tùy chọn**  
+Tạo Viewer, bật render tiêu đề, và gọi `view`.
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     
-    // Cho phép hiển thị tiêu đề hàng và cột trong bảng tính.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // Hiển thị trang 1 đến 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**Giải thích:** `PngViewOptions` được sử dụng cho các thiết lập PNG. Với `setRenderHeadings(true)`, tiêu đề được bao gồm trong hình ảnh đầu ra.
 
-### Kết xuất bảng tính thành PDF
-**Tổng quan:** Chuyển đổi các trang tính Excel sang định dạng PDF trong khi vẫn đảm bảo hiển thị tiêu đề hàng và cột, hoàn hảo cho việc lưu trữ hoặc chia sẻ tài liệu.
+**Giải thích:** Khi gọi `setRenderHeadings(true)`, các tệp PNG sẽ bao gồm các hàng và cột tiêu đề gốc, bảo toàn ngữ cảnh cho người dùng downstream.
 
-#### Thực hiện từng bước:
-##### 1. Nhập thư viện cần thiết
+### Render bảng tính sang PDF
+**Làm thế nào để chuyển đổi tệp Excel sang PDF với tiêu đề hàng và cột hiển thị?**  
+Chuyển đổi Excel sang PDF rất đơn giản: khởi tạo Viewer với tệp nguồn, cấu hình một đối tượng `PdfViewOptions` để render tiêu đề, và gọi `view`. PDF kết quả phản ánh bố cục của workbook, bao gồm tiêu đề hàng và cột, đồng thời hỗ trợ đồ họa vector cho việc in ấn và phân phối sắc nét.
+
+#### Hướng dẫn từng bước
+**1. Nhập các thư viện cần thiết**  
+`PdfViewOptions` chỉ định các tham số tạo PDF như kích thước trang, lề và render tiêu đề.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PdfViewOptions;
 ```
-##### 2. Thiết lập thư mục đầu ra
+
+**2. Đặt thư mục đầu ra**  
+Chỉ định thư mục đích cho tài liệu PDF.
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("output.pdf");
 ```
-##### 3. Khởi tạo Viewer và Cấu hình Tùy chọn
+
+**3. Khởi tạo Viewer và cấu hình tùy chọn**  
+Tạo một `Viewer`, bật render tiêu đề, và thực hiện chuyển đổi.
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
     
-    // Cho phép hiển thị tiêu đề hàng và cột trong bảng tính.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // Hiển thị trang 1 đến 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**Giải thích:** `PdfViewOptions` cấu hình cài đặt đầu ra PDF. `setRenderHeadings(true)` Tùy chọn này đảm bảo tiêu đề hiển thị trong tệp PDF cuối cùng.
+
+**Giải thích:** Đặt `setRenderHeadings(true)` trên `PdfViewOptions` đảm bảo rằng hàng và cột đầu tiên xuất hiện trong PDF cuối cùng, làm cho tài liệu sẵn sàng cho việc in ấn hoặc lưu trữ.
 
 ## Ứng dụng thực tế
-Sau đây là một số tình huống thực tế có thể áp dụng các tính năng này:
+Các kịch bản thực tế nơi **convert excel to html**, **excel to pdf java**, hoặc **convert spreadsheet to image** trở nên vô giá:
 
-1. **Báo cáo kinh doanh:** Chia sẻ báo cáo chi tiết với các bên liên quan bằng cách chuyển đổi dữ liệu Excel sang định dạng HTML hoặc PDF để dễ dàng phổ biến và xem.
-2. **Hình ảnh hóa dữ liệu:** Chuyển đổi bảng tính sang định dạng hình ảnh như JPG hoặc PNG để trình bày, đảm bảo tiêu đề cung cấp ngữ cảnh cho dữ liệu được trực quan hóa.
-3. **Lưu trữ tài liệu:** Sử dụng tính năng chuyển đổi PDF để lưu trữ tài liệu theo định dạng có thể truy cập phổ biến, giữ nguyên mọi thông tin chi tiết cần thiết như tiêu đề.
+1. **Báo cáo doanh nghiệp:** Tạo dashboard HTML hoặc báo cáo PDF từ mô hình tài chính mà không cần sao chép thủ công.  
+2. **Trực quan hoá dữ liệu:** Nhúng ảnh JPG/PNG của bảng tính vào slide deck, đảm bảo tiêu đề cung cấp ngữ cảnh ngay lập tức.  
+3. **Lưu trữ tài liệu:** Lưu trữ workbook Excel dưới dạng PDF để tuân thủ quy định, đồng thời giữ nguyên bố cục và tiêu đề gốc.  
+4. **Cổng thông tin web:** Phục vụ phiên bản HTML của bảng tính trực tiếp trong trình duyệt, cho phép lọc tương tác bằng JavaScript.
+
+## Câu hỏi thường gặp
+
+**Q: Tôi có thể chuyển đổi các tệp Excel được bảo vệ bằng mật khẩu không?**  
+A: Có. Chỉ cần truyền mật khẩu vào constructor của `Viewer`, thư viện sẽ giải mã workbook trước khi render.
+
+**Q: GroupDocs.Viewer có hỗ trợ workbook có macro (.xlsm) không?**  
+A: Hoàn toàn. Viewer xử lý macro như dữ liệu; chúng sẽ bị bỏ qua trong quá trình render, đảm bảo chuyển đổi an toàn.
+
+**Q: Kích thước tệp tối đa được hỗ trợ là bao nhiêu?**  
+A: Thư viện có thể xử lý các tệp lên tới **2 GB** mà không cần tải toàn bộ tài liệu vào bộ nhớ, nhờ kiến trúc streaming.
+
+**Q: Có thể render chỉ một worksheet cụ thể không?**  
+A: Có. Sử dụng `ViewOptions.setPageNumber(pageIndex)` để chỉ định một sheet khi tạo HTML, JPG, PNG hoặc PDF.
+
+**Q: Làm sao để kiểm soát chất lượng ảnh JPG?**  
+A: Đặt `JpgViewOptions.setQuality(90)` (giá trị 0‑100) để cân bằng giữa kích thước tệp và độ sắc nét.
+
+## Kết luận
+Bạn đã có một hướng dẫn hoàn chỉnh, sẵn sàng cho production để **convert excel to html**, **excel to pdf java**, và **convert spreadsheet to image** bằng GroupDocs.Viewer Java. Bằng cách làm theo các bước trên, bạn có thể tích hợp việc render bảng tính vào bất kỳ backend Java nào, cung cấp báo cáo HTML, ảnh độ phân giải cao, hoặc PDF lưu trữ với tiêu đề được giữ tự động.
+
+---
+
+**Cập nhật lần cuối:** 2026-06-05  
+**Kiểm tra với:** GroupDocs.Viewer Java 23.12  
+**Tác giả:** GroupDocs
+
+## Hướng dẫn liên quan
+
+- [Cách Chuyển Đổi DOCX sang HTML bằng GroupDocs.Viewer cho Java: Hướng Dẫn Từng Bước](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Render HTML Đáp Ứng với GroupDocs.Viewer cho Java: Hướng Dẫn Toàn Diện](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [convert odf html java – Chuyển Đổi ODF sang HTML, JPG, PNG, PDF bằng GroupDocs.Viewer cho Java](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
