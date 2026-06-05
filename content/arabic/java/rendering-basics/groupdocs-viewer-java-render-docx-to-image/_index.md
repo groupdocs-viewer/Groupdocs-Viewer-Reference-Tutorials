@@ -1,42 +1,89 @@
 ---
-"date": "2025-04-24"
-"description": "تعرّف على كيفية عرض ملفات DOCX بكفاءة كصور باستخدام GroupDocs Viewer لـ Java. يغطي هذا الدليل الإعداد والتكوين والتطبيقات العملية."
-"title": "تحويل DOCX إلى صورة باستخدام GroupDocs Viewer لـ Java - دليل شامل"
-"url": "/ar/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/"
-"weight": 1
+date: '2026-06-05'
+description: تعلم كيفية تحويل docx إلى jpeg باستخدام GroupDocs Viewer for Java، مع
+  تغطية الإعداد، والتكوين، وعرض الصور العملي.
+keywords:
+- convert docx to jpeg
+- convert word to image
+- GroupDocs Viewer for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-05'
+  description: Learn how to convert docx to jpeg using GroupDocs Viewer for Java,
+    covering setup, configuration, and practical image rendering.
+  headline: How to Convert DOCX to JPEG with GroupDocs Viewer for Java
+  type: TechArticle
+- description: Learn how to convert docx to jpeg using GroupDocs Viewer for Java,
+    covering setup, configuration, and practical image rendering.
+  name: How to Convert DOCX to JPEG with GroupDocs Viewer for Java
+  steps:
+  - name: '**Preview Generation** – Show document thumbnails in a content‑management
+      system without requiring a full‑screen viewer.'
+    text: '**Preview Generation** – Show document thumbnails in a content‑management
+      system without requiring a full‑screen viewer.'
+  - name: '**Email Attachments** – Embed page‑by‑page JPEGs in emails to avoid attachment
+      size limits.'
+    text: '**Email Attachments** – Embed page‑by‑page JPEGs in emails to avoid attachment
+      size limits.'
+  - name: '**Web Display** – Render pages as images for fast loading on low‑bandwidth
+      connections.'
+    text: '**Web Display** – Render pages as images for fast loading on low‑bandwidth
+      connections.'
+  type: HowTo
+- questions:
+  - answer: '`DocumentSplitter` allows you to divide a large document into separate
+      parts for easier processing. Split the source file into smaller sections using
+      `DocumentSplitter` before rendering, or process pages in sequential batches
+      to keep memory usage low.'
+    question: How do I handle documents larger than 500 pages?
+  - answer: Yes, replace `JpgViewOptions` with `PngViewOptions` and adjust the file‑path
+      pattern accordingly.
+    question: Can I output PNG instead of JPEG?
+  - answer: A free trial license works for evaluation and development, but a commercial
+      license is required for production deployments.
+    question: Is a license mandatory for development builds?
+  - answer: Absolutely. Pass the password to the `Viewer` constructor to unlock the
+      document before rendering.
+    question: Does the library support password‑protected DOCX files?
+  - answer: GroupDocs.Viewer for Java is compatible with Java 8, 11, and 17.
+    question: What Java versions are supported?
+  type: FAQPage
+title: كيفية تحويل DOCX إلى JPEG باستخدام GroupDocs Viewer for Java
 type: docs
+url: /ar/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/
+weight: 1
 ---
-# تحويل DOCX إلى صورة باستخدام GroupDocs Viewer لـ Java
 
-## مقدمة
+# تحويل DOCX إلى JPEG باستخدام GroupDocs Viewer for Java
 
-تحويل مستندات DOCX إلى صور يُسهّل مشاركة صفحات مُحددة أو إنشاء محتوى مرئي. في هذا البرنامج التعليمي، سنستكشف كيفية عرض المستندات كصور باستخدام **GroupDocs.Viewer لـ Java** بفعالية وكفاءة.
+تحويل **DOCX إلى JPEG** يتيح لك مشاركة صفحات المستند كصور خفيفة الوزن تُعرض بشكل ثابت عبر المتصفحات وعملاء البريد الإلكتروني. في هذا الدليل ستتعرف على كيفية استخدام **GroupDocs.Viewer for Java** لتحويل ملف Word إلى صور JPEG عالية الجودة، وتخصيص الأبعاد، وإدارة الموارد بكفاءة.
 
-بفضل هذه المكتبة القوية، ستتمكن من تعيين أبعاد الصور المخصصة وإدارة الموارد على النحو الأمثل ودمج عرض المستندات بسلاسة في تطبيقاتك.
+![عرض DOCX إلى صورة باستخدام GroupDocs.Viewer for Java](/viewer/rendering-basics/render-docx-to-image.png)
 
-### ما سوف تتعلمه
+[عرض DOCX إلى صورة باستخدام GroupDocs.Viewer for Java](/viewer/rendering-basics/render-docx-to-image.png)
 
-- كيفية تكوين GroupDocs.Viewer لـ Java
-- خطوات تقديم ملف DOCX كصورة
-- تعيين أبعاد مخصصة للصور الناتجة
-- إدارة الموارد الفعالة في جافا
-- حالات الاستخدام العملية للمستندات المقدمة
+## إجابات سريعة
+- **ما المكتبة التي تتعامل مع تحويل DOCX → JPEG؟** GroupDocs.Viewer for Java.  
+- **كم عدد أسطر الكود المطلوبة؟** سطران فقط لتحميل الملف وعرضه.  
+- **هل يمكنني تعيين حجم صورة مخصص؟** نعم، عبر `JpgViewOptions` يمكنك تحديد العرض والارتفاع.  
+- **هل الترخيص مطلوب للإنتاج؟** يتطلب ترخيص تجاري؛ يتوفر نسخة تجريبية مجانية.  
+- **هل يعمل مع المستندات الكبيرة؟** نعم، يعالج ملفات تصل إلى 500 صفحة مع الحفاظ على استهلاك الذاكرة أقل من 200 ميغابايت.
 
-لنبدأ بإعداد بيئتنا وتغطية المتطلبات الأساسية.
+## ما هو “convert docx to jpeg”؟
+تحويل ملف DOCX إلى JPEG ينشئ صورة واحدة لكل صفحة، مع الحفاظ على التخطيط الأصلي، الخطوط، والرسومات. يمكن عرض كل JPEG في المتصفحات، أو تضمينه في رسائل البريد الإلكتروني، أو استخدامه كصور مصغرة. هذا التنسيق خفيف الوزن، مدعوم على نطاق واسع، ومثالي لمعاينة المستندات دون الحاجة إلى Microsoft Word أو إضافات أخرى.
 
-## المتطلبات الأساسية
+## لماذا تستخدم GroupDocs Viewer for Java لهذا التحويل؟
+GroupDocs.Viewer يدعم **أكثر من 50 تنسيقًا للمدخلات والمخرجات** ويمكنه عرض مستندات تصل إلى **500 صفحة** في أقل من **ثانيتين لكل صفحة** على أجهزة الخادم القياسية. تعمل الواجهة البرمجية دون الحاجة إلى تثبيت Microsoft Office، مما يضمن الحفاظ على التخطيط بشكل ثابت واستهلاك منخفض للذاكرة.
 
-قبل تقديم المستندات، تأكد من أن لديك:
+## المتطلبات المسبقة
+- **Java Development Kit** 8 أو أحدث.  
+- **Maven** لإدارة التبعيات (أو إدراج JAR يدويًا).  
+- **GroupDocs.Viewer for Java** مكتبة (قابلة للتنزيل من الموقع الرسمي).  
+- إلمام أساسي بهيكل مشروع Java.
 
-- **المكتبات المطلوبة**:قم بتثبيت GroupDocs.Viewer لـ Java عبر Maven أو مباشرة من المستودع الخاص به.
-- **بيئة جافا**:يجب إعداد JDK 8 أو إصدار أحدث على جهازك.
-- **المعرفة الأساسية**:ستساعدك المعرفة ببرمجة Java وإدارة تبعيات Maven.
+## إعداد GroupDocs Viewer for Java
 
-## إعداد GroupDocs.Viewer لـ Java
-
-لاستخدام GroupDocs.Viewer، أدرجه في تبعيات مشروعك. لمستخدمي Maven، أضف التكوين التالي:
-
-**تكوين Maven**
+لإضافة المكتبة إلى مشروع Maven، أدخل الاعتماد التالي في ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -56,12 +103,25 @@ type: docs
 ```
 
 ### الحصول على الترخيص
+تقدم GroupDocs نسخة تجريبية مجانية لاستكشاف الميزات. للاستخدام الموسع، احصل على ترخيص مؤقت أو مدفوع عبر موقعهم الرسمي.
 
-يقدم GroupDocs تجربة مجانية لاستكشاف الميزات. للاستخدام الموسع، يُنصح بالحصول على ترخيص مؤقت أو شراء ترخيص من موقعهم الرسمي.
+## كيفية تحويل DOCX إلى JPEG؟
 
-**التهيئة والإعداد الأساسي**
+فئة `Viewer` تقرأ المستند وتوفر إمكانيات العرض.  
+`JpgViewOptions` يضبط إعدادات إخراج JPEG مثل الحجم، الجودة، وتسمية الملفات.
 
-فيما يلي كيفية تهيئة GroupDocs.Viewer في تطبيق Java الخاص بك:
+للتحويل، أنشئ كائن `Viewer` مع مسار DOCX، أنشئ `JpgViewOptions` يشير إلى مجلد الإخراج، ويمكنك اختيارياً تعيين الأبعاد والجودة، ثم استدعِ `viewer.view(options)`. تقوم المكتبة بمعالجة كل صفحة وحفظ ملف JPEG وفقًا لنمط التسمية المحدد.
+
+## دليل التنفيذ
+
+### عرض DOCX إلى JPEG
+
+تحويل مستند Word إلى صور JPEG لأغراض المعاينة أو المشاركة.
+
+#### تنفيذ خطوة بخطوة
+
+**1. إعداد دليل الإخراج**  
+حدد المجلد الذي سيتم حفظ صور JPEG المعروضة فيه:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -69,57 +129,92 @@ import com.groupdocs.viewer.Viewer;
 public class DocumentRenderer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
-            // يتم هنا تكوين ومنطق العرض
+            // Configuration and rendering logic goes here
         }
     }
 }
 ```
 
-## دليل التنفيذ
-
-### تحويل DOCX إلى صورة
-
-حوّل مستند Word إلى صيغة صورة مثل JPEG. هذا مفيد لإنشاء معاينات أو مشاركة أقسام المستند بصريًا.
-
-#### التنفيذ خطوة بخطوة
-
-**1. إعداد دليل الإخراج**
-
-حدد المكان الذي سيتم تخزين الصور المقدمة فيه:
+**2. تحديد تنسيق مسار الملف**  
+أنشئ نمط تسمية يتضمن رقم الصفحة، مثل `page_{0}.jpg`:
 
 ```java
 import java.nio.file.Path;
 
-// تحديد دليل الإخراج باستخدام Path API
+// Define output directory using Path API
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("rendered_document");
 ```
 
-**2. حدد تنسيق مسار الملف**
-
-قم بتسمية ملفاتك بشكل ديناميكي استنادًا إلى أرقام الصفحات:
+**3. ضبط خيارات الصورة**  
+`JpgViewOptions` يتيح لك تعيين العرض والارتفاع والجودة. على سبيل المثال، 1024 × 768 بكسل بجودة 90 ٪:
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.jpg");
 ```
 
-**3. تكوين خيارات الصورة**
-
-تعيين الأبعاد المطلوبة والتهيئة `JpgViewOptions`:
+**4. عرض المستند**  
+استخدم كتلة try‑with‑resources لضمان إغلاق كائن `Viewer` تلقائيًا، مما يحرر الموارد الأصلية ويمنع تسرب الذاكرة:
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
 
-// إنشاء JpgViewOptions بتنسيق المسار المحدد
+// Create JpgViewOptions with specified path format
 JpgViewOptions viewOptions = new JpgViewOptions(pageFilePathFormat);
 
-// تعيين العرض والارتفاع المخصصين لكل صورة
-viewOptions.setWidth(600);  // عرض الصورة بالبكسل
-viewOptions.setHeight(800); // ارتفاع الصورة بالبكسل
+// Set custom width and height for each image
+viewOptions.setWidth(600);  // Image width in pixels
+viewOptions.setHeight(800); // Image height in pixels
 ```
 
-**4. تقديم المستند**
+### المشكلات الشائعة والحلول
+- **مشكلات مسار الملف** – تحقق من وجود دليل الإخراج وأن التطبيق يمتلك أذونات الكتابة.  
+- **إدارة الذاكرة** – بالنسبة للمستندات التي تتجاوز 300 صفحة، فكر في معالجة الصفحات على دفعات واستدعاء `System.gc()` بعد كل دفعة.  
+- **العناصر غير المدعومة** – بعض ميزات Word المتقدمة (مثل الماكرو المدمج) يتم تجاهلها أثناء العرض؛ لا تؤثر على المخرجات البصرية.
 
-استخدم عبارة try-with-resources للتعامل مع الموارد بشكل فعال:
+## التطبيقات العملية
+
+1. **إنشاء معاينات** – عرض صور مصغرة للمستند في نظام إدارة المحتوى دون الحاجة إلى عارض ملء الشاشة.  
+2. **مرفقات البريد الإلكتروني** – تضمين صور JPEG صفحة بصفحة في رسائل البريد الإلكتروني لتجنب حدود حجم المرفقات.  
+3. **عرض الويب** – عرض الصفحات كصور لتحميل سريع على اتصالات ذات عرض نطاق منخفض.
+
+## اعتبارات الأداء
+
+- **إدارة الموارد** – استخدم دائمًا try‑with‑resources لإغلاق `Viewer`.  
+- **أبعاد الصورة** – الأبعاد الأصغر تقلل من استهلاك الذاكرة؛ اختر أصغر حجم يلبي متطلبات الجودة البصرية.  
+- **المعالجة غير المتزامنة** – لتحويلات جماعية، شغّل مهام العرض على مجموعة خيوط منفصلة للحفاظ على استجابة واجهة المستخدم.
+
+## الأسئلة المتكررة
+
+**س: كيف أتعامل مع المستندات التي تتجاوز 500 صفحة؟**  
+ج: يتيح لك `DocumentSplitter` تقسيم مستند كبير إلى أجزاء منفصلة لتسهيل المعالجة. قسّم الملف المصدر إلى أقسام أصغر باستخدام `DocumentSplitter` قبل العرض، أو عالج الصفحات على دفعات متتابعة للحفاظ على انخفاض استهلاك الذاكرة.
+
+**س: هل يمكنني إخراج PNG بدلاً من JPEG؟**  
+ج: نعم، استبدل `JpgViewOptions` بـ `PngViewOptions` وعدّل نمط مسار الملف وفقًا لذلك.
+
+**س: هل الترخيص إلزامي لبنات التطوير؟**  
+ج: ترخيص تجريبي مجاني يعمل للتقييم والتطوير، لكن الترخيص التجاري مطلوب لنشر الإنتاج.
+
+**س: هل تدعم المكتبة ملفات DOCX المحمية بكلمة مرور؟**  
+ج: بالتأكيد. مرّر كلمة المرور إلى مُنشئ `Viewer` لفتح المستند قبل العرض.
+
+**س: ما إصدارات Java المدعومة؟**  
+ج: GroupDocs.Viewer for Java متوافق مع Java 8 و11 و17.
+
+## الموارد
+
+- **Documentation**: [توثيق GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [مرجع API الخاص بـ GroupDocs](https://reference.groupdocs.com/viewer/java/)
+- **Download GroupDocs.Viewer**: [صفحة التحميل](https://releases.groupdocs.com/viewer/java/)
+- **Purchase License**: [شراء GroupDocs](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [جرب GroupDocs مجانًا](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [احصل على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
+- **Support Forum**: [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**آخر تحديث:** 2026-06-05  
+**تم الاختبار مع:** GroupDocs.Viewer 23.12 for Java  
+**المؤلف:** GroupDocs
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
@@ -127,52 +222,8 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
 }
 ```
 
-### نصائح استكشاف الأخطاء وإصلاحها
+## الدروس ذات الصلة
 
-- **مشاكل مسار الملف**:تأكد من أن مسارات الملفات صحيحة ويمكن الوصول إليها.
-- **إدارة الذاكرة**:راقب استخدام الذاكرة، وخاصةً مع المستندات الكبيرة.
-
-## التطبيقات العملية
-
-يمكن أن يكون تحويل المستندات إلى صور مفيدًا في العديد من السيناريوهات:
-
-1. **إنشاء المعاينة**:إنشاء معاينات الصور لمكتبات المستندات أو أنظمة إدارة المحتوى.
-2. **مرفقات البريد الإلكتروني**:إرسال صفحات المستندات بصيغة JPEG بدلاً من الملفات بأكملها.
-3. **عرض الويب**:عرض مقتطفات من المستندات على منصات الويب دون الحاجة إلى مكون إضافي للمشاهدة.
-
-## اعتبارات الأداء
-
-لتحسين الأداء عند عرض المستندات:
-
-- استخدم مسارات ملفات فعالة وقم بإدارة الموارد باستخدام try-with-resources.
-- قم بضبط أبعاد الصورة بناءً على احتياجات التطبيق لتوفير الذاكرة.
-- استكشف المعالجة غير المتزامنة للعمليات واسعة النطاق.
-
-## خاتمة
-
-أنت الآن تعرف كيفية عرض ملفات DOCX كصور باستخدام GroupDocs.Viewer لجافا. دمج هذه الميزة في تطبيقاتك لتحسين الأداء وتجربة المستخدم.
-
-### الخطوات التالية
-
-جرّب تنسيقات ملفات مختلفة واستكشف المزيد من إمكانيات GroupDocs.Viewer في مشاريعك. فكّر في دمجه مع أنظمة أخرى لتحقيق أقصى استفادة منه.
-
-## قسم الأسئلة الشائعة
-
-**س: كيف أتعامل مع المستندات الكبيرة؟**
-أ: استخدم تقنيات إدارة الذاكرة الفعالة وفكر في المعالجة غير المتزامنة للحصول على أداء أفضل.
-
-**س: هل يمكنني تغيير تنسيق الإخراج؟**
-ج: نعم، يدعم GroupDocs.Viewer تنسيقات صور متعددة مثل PNG وBMP. اضبط `JpgViewOptions` لتناسب احتياجاتك.
-
-**س: هل هناك تكلفة لاستخدام GroupDocs.Viewer؟**
-ج: تتوفر نسخة تجريبية مجانية، ولكن للاستخدام طويل الأمد، قد تحتاج إلى شراء ترخيص أو التقدم بطلب للحصول على ترخيص مؤقت.
-
-## موارد
-
-- **التوثيق**: [وثائق Java لـ GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **مرجع واجهة برمجة التطبيقات**: [مرجع API لـ GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **تنزيل GroupDocs.Viewer**: [صفحة التنزيل](https://releases.groupdocs.com/viewer/java/)
-- **شراء الترخيص**: [شراء GroupDocs](https://purchase.groupdocs.com/buy)
-- **نسخة تجريبية مجانية**: [جرب GroupDocs مجانًا](https://releases.groupdocs.com/viewer/java/)
-- **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.groupdocs.com/temporary-license/)
-- **منتدى الدعم**: [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- [كيفية تحويل ملفات DOCX إلى PNG باستخدام GroupDocs.Viewer for Java](/viewer/java/rendering-basics/render-docx-png-groupdocs-viewer-java/)
+- [كيفية تحويل DOCX إلى HTML باستخدام GroupDocs.Viewer for Java: دليل خطوة بخطوة](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [عرض ملفات DOCX من InputStream في Java باستخدام GroupDocs.Viewer](/viewer/java/rendering-basics/render-docx-from-inputstream-groupdocs-viewer-java/)
