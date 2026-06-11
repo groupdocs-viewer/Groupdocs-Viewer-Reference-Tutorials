@@ -1,40 +1,59 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการระบุประเภทไฟล์ตามนามสกุล ประเภทสื่อ และสตรีมด้วย GroupDocs.Viewer สำหรับ Java เพิ่มประสิทธิภาพการทำงานของแอปพลิเคชันของคุณได้อย่างง่ายดาย"
-"title": "การเรียนรู้การตรวจจับประเภทไฟล์ใน Java โดยใช้ GroupDocs.Viewer"
-"url": "/th/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-03-05'
+description: เรียนรู้วิธีตรวจจับประเภทไฟล์ใน Java ด้วย GroupDocs.Viewer – กำหนดประเภทไฟล์จากส่วนขยาย,
+  ประเภท MIME หรือสตรีม
+keywords:
+- file type detection Java
+- GroupDocs Viewer Java
+- Java MIME type identification
+title: วิธีตรวจจับประเภทไฟล์ใน Java ด้วย GroupDocs.Viewer
 type: docs
+url: /th/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/
+weight: 1
 ---
-# การเรียนรู้การตรวจจับประเภทไฟล์ใน Java โดยใช้ GroupDocs.Viewer
 
-ค้นพบพลังของ **โปรแกรมดูเอกสารกลุ่ม** เพื่อระบุประเภทไฟล์จากนามสกุล ประเภทของสื่อ และสตรีมได้อย่างราบรื่น ไลบรารีที่มีประสิทธิภาพนี้ช่วยลดความซับซ้อนของกระบวนการพัฒนาและเพิ่มความสามารถของแอปพลิเคชัน
+# ตรวจจับประเภทไฟล์ Java ด้วย GroupDocs.Viewer
 
-## การแนะนำ
+ในแอปพลิเคชัน Java สมัยใหม่ การสามารถ **detect file type java** อย่างรวดเร็วและแม่นยำเป็นสิ่งสำคัญ—ไม่ว่าจะเป็นการตรวจสอบการอัปโหลด การกำหนดเส้นทางเอกสาร หรือการแสดงตัวอย่าง GroupDocs.Viewer ทำให้งานนี้ง่ายดายโดยให้ตัวช่วยในตัวที่ทำงานกับส่วนขยายไฟล์, ประเภท MIME (สื่อ) และสตรีมอินพุตดิบ
 
-ในภูมิทัศน์ดิจิทัลของปัจจุบัน การจัดการรูปแบบไฟล์ที่หลากหลายอย่างมีประสิทธิภาพถือเป็นสิ่งสำคัญสำหรับแอปพลิเคชันใดๆ การระบุประเภทไฟล์โดยอิงจากนามสกุลไฟล์หรือเนื้อหาอาจเป็นเรื่องท้าทาย **โปรแกรมดูเอกสารกลุ่ม** นำเสนอโซลูชันที่สวยงามสำหรับปัญหานี้ ช่วยให้นักพัฒนาสามารถระบุประเภทไฟล์ได้อย่างง่ายดายและแม่นยำ
+![การตรวจจับประเภทไฟล์ด้วย GroupDocs.Viewer สำหรับ Java](/viewer/file-formats-support/file-type-detection-java.png)
 
-บทช่วยสอนนี้จะแนะนำคุณเกี่ยวกับการใช้ความสามารถของ GroupDocs.Viewer เพื่อระบุประเภทไฟล์จากนามสกุล ประเภทสื่อ และสตรีม เมื่ออ่านบทความนี้จบ คุณจะเข้าใจอย่างครอบคลุมเกี่ยวกับการผสานรวมคุณลักษณะเหล่านี้เข้ากับแอปพลิเคชัน Java ของคุณ
+## บทนำ
 
-**สิ่งที่คุณจะได้เรียนรู้:**
-- การกำหนดประเภทไฟล์โดยอิงจากนามสกุลไฟล์
-- การระบุประเภทไฟล์โดยใช้ประเภทสื่อ (ประเภท MIME)
-- การตรวจจับประเภทไฟล์โดยการอ่านจากสตรีมอินพุต
-- แนวทางปฏิบัติที่ดีที่สุดและข้อควรพิจารณาด้านประสิทธิภาพ
+การจัดการรูปแบบเอกสารที่หลากหลายอาจรู้สึกเหมือนการเล่นจานบนมือ การพึ่งพาเพียงส่วนขยายไฟล์เท่านั้นมีความเสี่ยง ในขณะที่การแยกวิเคราะห์สตรีมด้วยตนเองมีโอกาสเกิดข้อผิดพลาด **GroupDocs.Viewer** ให้ API ที่เชื่อถือได้และประสิทธิภาพสูงที่ทำให้คุณ **detect file type java** ได้ในสามวิธีที่เข้าใจง่าย:
 
-ก่อนที่จะดำเนินการ เรามาตรวจสอบให้แน่ใจว่าคุณมีเครื่องมือและความรู้ที่จำเป็น
+- จากส่วนขยายไฟล์ (`.docx`, `.pdf`, …)  
+- จากสตริง MIME/media‑type (`application/pdf`, `image/png`, …)  
+- โดยตรงจาก `InputStream` เมื่อแหล่งที่มาคือการอัปโหลดเว็บหรือคลาวด์บล็อบ  
+
+เมื่อจบคู่มือนี้ คุณจะรู้วิธีผสานการตรวจสอบเหล่านี้เข้าสู่โครงการ Java ของคุณอย่างแม่นยำ ปฏิบัติตามแนวปฏิบัติที่ดีที่สุด และหลีกเลี่ยงข้อผิดพลาดทั่วไป
+
+## คำตอบอย่างรวดเร็ว
+- **What does “detect file type java” mean?** หมายถึงการระบุรูปแบบเอกสาร (PDF, DOCX ฯลฯ) อย่างโปรแกรมโดยใช้โค้ด Java  
+- **Which method is fastest?** การตรวจสอบส่วนขยายไฟล์เป็นวิธีที่เร็วที่สุด; การตรวจจับจากสตรีมช้ากว่านิดหน่อยแต่เชื่อถือได้ที่สุดเมื่อส่วนขยายหายไปหรือไม่น่าเชื่อถือ  
+- **Do I need a license?** ใช่, จำเป็นต้องมีไลเซนส์ทดลองหรือเชิงพาณิชย์จาก GroupDocs สำหรับการใช้งานในสภาพแวดล้อมการผลิต  
+- **Can I use this with Spring Boot uploads?** แน่นอน—เพียงส่ง `InputStream` ของ `MultipartFile` ที่อัปโหลดไปยัง `FileType.fromStream()`  
+- **Is MIME‑type detection accurate?** GroupDocs ทำการแมปสตริง MIME มาตรฐานกับประเภทไฟล์ ครอบคลุมรูปแบบที่พบบ่อยที่สุด  
+
+## Detect File Type Java คืออะไร?
+Detect file type Java คือกระบวนการที่โปรแกรมกำหนดรูปแบบเอกสารภายในแอปพลิเคชัน Java. GroupDocs.Viewer มีตัวช่วยสถิติเช่น `FileType.fromExtension()`, `FileType.fromMediaType()`, และ `FileType.fromStream()` ที่คืนค่าอ็อบเจ็กต์ `FileType` ซึ่งบรรจุชื่อรูปแบบ, ส่วนขยายเริ่มต้น, และประเภท MIME
+
+## ทำไมต้องใช้ GroupDocs.Viewer สำหรับการตรวจจับประเภทไฟล์?
+- **Zero external dependencies** – ไลบรารีรวมลายเซ็นของรูปแบบทั้งหมดไว้ในตัว  
+- **High accuracy** – ตรวจสอบส่วนหัวไฟล์เมื่อใช้สตรีม ลดความเสี่ยงจากการปลอมแปลง  
+- **Performance‑optimized** – การเรียกที่เบา ไม่ต้องทำการแยกวิเคราะห์เอกสารเต็มรูปแบบ  
+- **Unified API** – คลาส `FileType` เดียวทำงานกับทั้งสามวิธีการตรวจจับ ทำให้โค้ดของคุณง่ายขึ้น  
 
 ## ข้อกำหนดเบื้องต้น
 
-หากต้องการปฏิบัติตามบทช่วยสอนนี้อย่างมีประสิทธิผล ต้องแน่ใจว่าคุณมี:
+- Java 8 หรือสูงกว่า  
+- Maven สำหรับการจัดการ dependencies  
+- IDE เช่น IntelliJ IDEA หรือ Eclipse  
+- ไลเซนส์ GroupDocs.Viewer (ทดลองฟรีพร้อมใช้งานจาก [GroupDocs](https://purchase.groupdocs.com/buy))
 
-- ความคุ้นเคยเบื้องต้นกับการเขียนโปรแกรม Java
-- Maven ติดตั้งบนระบบของคุณเพื่อการจัดการการอ้างอิง
-- IDE เช่น IntelliJ IDEA หรือ Eclipse สำหรับการพัฒนาโค้ด
+### ไลบรารีและ dependencies ที่จำเป็น
 
-### ไลบรารีและการอ้างอิงที่จำเป็น
-
-เพิ่ม GroupDocs.Viewer เป็นส่วนที่ต้องมีในโปรเจ็กต์ของคุณ ตั้งค่าโดยใช้ Maven ด้วยการกำหนดค่าต่อไปนี้:
+เพิ่ม GroupDocs.Viewer ไปยังโครงการ Maven ของคุณ:
 
 ```xml
 <repositories>
@@ -53,129 +72,134 @@ type: docs
 </dependencies>
 ```
 
-### การตั้งค่าสภาพแวดล้อม
-
-ตรวจสอบให้แน่ใจว่าสภาพแวดล้อมการพัฒนาของคุณพร้อมสำหรับการใช้ GroupDocs.Viewer คุณสามารถรับใบอนุญาตทดลองใช้งานฟรีหรือซื้อได้จาก [เอกสารกลุ่ม](https://purchase.groupdocs.com/buy). ปฏิบัติตามคำแนะนำบนเว็บไซต์ของพวกเขาเพื่อรับใบอนุญาต
-
 ## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 
-หากต้องการเริ่มใช้ GroupDocs.Viewer ในโปรเจ็กต์ของคุณ ให้รวมเข้ากับ Maven ดังที่แสดงด้านบน นี่คือรายการสรุปโดยย่อของการตั้งค่าและการเริ่มต้นไลบรารี:
+1. **Add the repository and dependency** (ตามที่แสดงด้านบน) ไปยัง `pom.xml` ของคุณ.  
+2. **Obtain a license** จาก [GroupDocs](https://purchase.groupdocs.com/buy) และทำตามคู่มือการให้ไลเซนส์.  
+3. **Initialize the Viewer** ในโค้ดของคุณ:
 
-1. **เพิ่มที่เก็บข้อมูลและการอ้างอิง**: รวมที่เก็บข้อมูลและรายการการอ้างอิงที่จำเป็นในของคุณ `pom-xml`.
-2. **การขอใบอนุญาต**: เยี่ยม [เอกสารกลุ่ม](https://purchase.groupdocs.com/buy) หากต้องการทดลองใช้งานฟรีหรือซื้อใบอนุญาต โปรดปฏิบัติตามแนวทางการสมัครใบอนุญาต
-3. **เริ่มต้น GroupDocs.Viewer**-
-   ```java
-   import com.groupdocs.viewer.Viewer;
-   
-   Viewer viewer = new Viewer("path/to/your/document");
-   // ดำเนินการกับโปรแกรมดู...
-   ```
+```java
+import com.groupdocs.viewer.Viewer;
+
+Viewer viewer = new Viewer("path/to/your/document");
+// Perform operations with the viewer...
+```
 
 ## คู่มือการใช้งาน
 
-ตอนนี้เรามาดูการใช้ GroupDocs.Viewer ในการกำหนดประเภทไฟล์กัน
+ด้านล่างเป็นตัวอย่างขั้นตอนต่อขั้นตอนที่แสดงเทคนิคการตรวจจับแต่ละแบบ คุณสามารถคัดลอกโค้ดไปใส่ในโครงการของคุณได้โดยตรง; พร้อมใช้งาน
 
-### กำหนดประเภทไฟล์จากนามสกุล
+### ตรวจสอบประเภทไฟล์จากส่วนขยาย *(file type from extension)*
 
-ฟีเจอร์นี้ช่วยให้คุณระบุประเภทไฟล์โดยอิงจากนามสกุลไฟล์ ซึ่งมีประโยชน์ในการจัดการไฟล์ที่ผู้ใช้อัปโหลดโดยที่ไม่ทราบประเภทเนื้อหาทันที
+การตรวจสอบประเภทไฟล์จากส่วนขยายเป็นวิธีที่เหมาะสำหรับการตรวจสอบอย่างรวดเร็วระหว่าง **java upload file validation**.
 
-#### ภาพรวม
-ใช้ `FileType.fromExtension()` วิธีการตรวจสอบประเภทไฟล์จากนามสกุลไฟล์เช่น `.docx` หรือ `-pdf`.
+```java
+import com.groupdocs.viewer.FileType;
 
-#### ขั้นตอนการดำเนินการ
-1. **กำหนดนามสกุลไฟล์**-
-   ```java
-   import com.groupdocs.viewer.FileType;
-   
-   public class FileTypeFromExtension {
-       public static void main(String[] args) {
-           String extension = ".docx"; // ระบุนามสกุลไฟล์
-           
-           // กำหนดประเภทไฟล์จากนามสกุลที่กำหนด
-           FileType fileType = FileType.fromExtension(extension);
-           
-           System.out.println("File Type: " + fileType.getName());
-       }
-   }
-   ```
-2. **คำอธิบาย**-
-   - `FileType.fromExtension(String extension)`:วิธีนี้ใช้สตริงที่แสดงนามสกุลไฟล์และส่งกลับ `FileType` วัตถุ.
-   - การ `getName()` วิธีการบน `FileType` วัตถุให้ชื่อที่มนุษย์สามารถอ่านได้ของประเภทไฟล์ที่กำหนด
+public class FileTypeFromExtension {
+    public static void main(String[] args) {
+        String extension = ".docx"; // Specify the file extension
+        
+        // Determine the file type from the given extension
+        FileType fileType = FileType.fromExtension(extension);
+        
+        System.out.println("File Type: " + fileType.getName());
+    }
+}
+```
 
-### กำหนดประเภทไฟล์จากประเภทสื่อ
+**Explanation**  
+- `FileType.fromExtension(String)` ค้นหาส่วนขยายในแผนที่ภายในของ GroupDocs.  
+- `getName()` คืนค่าชื่อรูปแบบที่มนุษย์อ่านได้ (เช่น “Word Document”).  
 
-การระบุประเภทไฟล์โดยใช้ประเภทสื่อ (ประเภท MIME) เป็นประโยชน์เมื่อต้องจัดการกับแอปพลิเคชันบนเว็บที่ต้องระบุไฟล์ด้วยประเภท MIME
+### ตรวจสอบประเภทไฟล์จาก Media‑Type *(identify mime type java)*
 
-#### ภาพรวม
-ใช้ `FileType.fromMediaType()` วิธีการในการกำหนดประเภทไฟล์โดยอิงตามสตริงประเภทสื่อที่กำหนดให้ เช่น `application/pdf`-
+เมื่อแอปพลิเคชันของคุณได้รับ MIME type จาก HTTP header คุณสามารถแปลงเป็นรูปแบบที่ชัดเจนได้
 
-#### ขั้นตอนการดำเนินการ
-1. **กำหนดประเภทสื่อ**-
-   ```java
-   public class FileTypeFromMediaType {
-       public static void main(String[] args) {
-           String mediaType = "application/pdf"; // ระบุชนิด MIME
-           
-           // กำหนดประเภทไฟล์จากประเภทสื่อที่กำหนด
-           FileType fileType = FileType.fromMediaType(mediaType);
-           
-           System.out.println("File Type: " + fileType.getName());
-       }
-   }
-   ```
-2. **คำอธิบาย**-
-   - `FileType.fromMediaType(String mediaType)`:วิธีการนี้ยอมรับสตริงประเภท MIME และส่งคืนค่าที่สอดคล้องกัน `FileType` วัตถุ.
-   - ผลลัพธ์นี้จะให้ข้อมูลเชิงลึกเกี่ยวกับรูปแบบไฟล์ซึ่งมีประโยชน์สำหรับการประมวลผลหรือการแสดงเนื้อหา
+```java
+public class FileTypeFromMediaType {
+    public static void main(String[] args) {
+        String mediaType = "application/pdf"; // Specify the MIME type
+        
+        // Determine the file type from the given media-type
+        FileType fileType = FileType.fromMediaType(mediaType);
+        
+        System.out.println("File Type: " + fileType.getName());
+    }
+}
+```
 
-### กำหนดประเภทไฟล์จากสตรีม
+- `FileType.fromMediaType(String)` แมปสตริง MIME มาตรฐานเป็น `FileType`.  
+- วิธีนี้เหมาะอย่างยิ่งสำหรับสถานการณ์ **identify mime type java** เช่น REST API ที่เปิดเผย `Content-Type`.  
 
-สำหรับสถานการณ์ที่คุณจำเป็นต้องระบุประเภทไฟล์โดยการอ่านโดยตรงจากสตรีมอินพุต (เช่น ไฟล์ที่อัปโหลดผ่านแบบฟอร์มเว็บ) GroupDocs.Viewer นำเสนอโซลูชั่นที่ตรงไปตรงมา
+### ตรวจสอบประเภทไฟล์จากสตรีม *(file type best practices)*
 
-#### ภาพรวม
-การ `FileType.fromStream()` วิธีการนี้ช่วยให้คุณสามารถกำหนดประเภทไฟล์ได้โดยการตรวจสอบเนื้อหาของ InputStream
+เพื่อการตรวจสอบที่ปลอดภัยที่สุด—โดยเฉพาะไฟล์ที่ผู้ใช้อัปโหลด—คุณสามารถตรวจสอบส่วนหัวไบนารีของไฟล์ได้
 
-#### ขั้นตอนการดำเนินการ
-1. **เปิด InputStream**-
-   ```java
-   import com.groupdocs.viewer.FileType;
-   import java.io.FileInputStream;
-   import java.io.IOException;
-   import java.io.InputStream;
-   
-   public class FileTypeFromStream {
-       public static void main(String[] args) throws IOException {
-           String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // เส้นทางไปยังเอกสาร
-           
-           try (InputStream inputStream = new FileInputStream(filePath)) {
-               // กำหนดประเภทไฟล์จากสตรีมอินพุต
-               FileType fileType = FileType.fromStream(inputStream);
-               
-               System.out.println("File Type: " + fileType.getName());
-           }
-       }
-   }
-   ```
-2. **คำอธิบาย**-
-   - `FileType.fromStream(InputStream inputStream)`วิธีการนี้จะอ่านเนื้อหาของ InputStream เพื่อระบุประเภทไฟล์
-   - มีประโยชน์อย่างยิ่งสำหรับการประมวลผลไฟล์โดยไม่ต้องพึ่งนามสกุลไฟล์หรือประเภท MIME
+```java
+import com.groupdocs.viewer.FileType;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class FileTypeFromStream {
+    public static void main(String[] args) throws IOException {
+        String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX"; // Path to the document
+        
+        try (InputStream inputStream = new FileInputStream(filePath)) {
+            // Determine the file type from the input stream
+            FileType fileType = FileType.fromStream(inputStream);
+            
+            System.out.println("File Type: " + fileType.getName());
+        }
+    }
+}
+```
+
+- `FileType.fromStream(InputStream)` อ่านไม่กี่ไบต์แรก (ลายเซ็นไฟล์) เพื่อสรุปรูปแบบ, ข้ามส่วนขยายที่อาจทำให้เข้าใจผิด.  
+- การใช้บล็อก *try‑with‑resources* ทำให้สตรีมปิดโดยอัตโนมัติ สอดคล้องกับ **file type best practices** สำหรับการจัดการทรัพยากร.  
 
 ## การประยุกต์ใช้งานจริง
 
-ความเข้าใจในการกำหนดประเภทไฟล์สามารถนำไปใช้ในสถานการณ์จริงต่างๆ ได้ดังนี้:
-1. **การอัพโหลดไฟล์แอปพลิเคชันเว็บ**:จัดหมวดหมู่และประมวลผลไฟล์ที่อัพโหลดโดยอัตโนมัติตามประเภทที่กำหนด
-2. **ระบบจัดการเนื้อหา (CMS)**:ให้แน่ใจว่าเอกสารถูกแสดงผลอย่างถูกต้องโดยระบุรูปแบบก่อนดำเนินการประมวลผล
-3. **เครื่องมือย้ายข้อมูล**:ตรวจสอบความถูกต้องและแปลงข้อมูลในระหว่างงานการโยกย้ายโดยการจดจำประเภทไฟล์จากสตรีมหรือส่วนขยาย
+| สถานการณ์ | วิธีการตรวจจับที่ใช้ | เหตุผลที่สำคัญ |
+|----------|---------------------|----------------|
+| **การอัปโหลดแบบฟอร์มเว็บ** | Stream detection (`fromStream`) | ป้องกันส่วนขยายปลอมและปกป้องเซิร์ฟเวอร์ |
+| **REST API ที่รับ `Content-Type`** | Media‑type detection (`fromMediaType`) | ใช้ประโยชน์จาก header ที่ลูกค้าให้มาแล้ว |
+| **การประมวลผลไฟล์เป็นชุดบนดิสก์** | Extension detection (`fromExtension`) | วิธีที่เร็วที่สุดเมื่อไฟล์เชื่อถือได้ |
+| **การตรวจสอบไฟล์ก่อนจัดเก็บใน CMS** | Combination of stream + extension | รับประกันทั้งความเร็วและความปลอดภัย |
 
-## การพิจารณาประสิทธิภาพ
+## การพิจารณาด้านประสิทธิภาพ & แนวปฏิบัติที่ดีที่สุดสำหรับประเภทไฟล์
 
-เมื่อทำการรวม GroupDocs.Viewer เพื่อกำหนดประเภทไฟล์ โปรดพิจารณาเคล็ดลับประสิทธิภาพการทำงานต่อไปนี้:
-- **เพิ่มประสิทธิภาพการใช้ทรัพยากร**:ใช้ try-with-resources เพื่อจัดการ InputStreams อย่างมีประสิทธิภาพและป้องกันการรั่วไหลของหน่วยความจำ
-- **การจัดการหน่วยความจำ Java**:ให้แน่ใจว่าแอปพลิเคชันของคุณจัดการไฟล์ขนาดใหญ่ได้อย่างเหมาะสม โดยอาจประมวลผลเป็นส่วนๆ หากจำเป็น
+- **Use `try‑with‑resources`** เพื่อปิดสตรีมโดยอัตโนมัติและหลีกเลี่ยงการรั่วไหลของหน่วยความจำ.  
+- **Cache results** หากคุณตรวจสอบไฟล์เดียวกันหลายครั้ง (เช่น ระหว่างการนำเข้าจำนวนมาก).  
+- **Avoid loading entire files into memory**; `FileType.fromStream` อ่านเฉพาะไบต์ส่วนหัว.  
+- **Log detected types** เพื่อเป็นบันทึกตรวจสอบ, โดยเฉพาะเมื่อจัดการกับการอัปโหลดในสภาพแวดล้อมที่ต้องปฏิบัติตามกฎระเบียบ.  
 
-## บทสรุป
+## ข้อผิดพลาดทั่วไป & การแก้ไขปัญหา
 
-ตอนนี้คุณได้เชี่ยวชาญศิลปะในการกำหนดประเภทไฟล์โดยใช้ GroupDocs.Viewer สำหรับ Java แล้ว โดยใช้ประโยชน์จากส่วนขยาย ประเภทสื่อ และสตรีม คุณสามารถเพิ่มความยืดหยุ่นและความทนทานของแอปพลิเคชันของคุณได้ 
+- **Missing extension** – หากคุณมีเพียงสตรีม, ให้ใช้ `fromStream`; วิธีส่วนขยายจะคืนค่า `null`.  
+- **Unsupported MIME type** – GroupDocs ครอบคลุมประเภทที่พบบ่อยที่สุด; สำหรับรูปแบบที่หายากอาจต้องสร้างการแมปแบบกำหนดเอง.  
+- **License not applied** – การเรียกจะโยน `LicenseException`. ตรวจสอบให้แน่ใจว่าไฟล์ไลเซนส์โหลดก่อนการดำเนินการใด ๆ ของ Viewer.  
 
-**ขั้นตอนต่อไป:**
-- ทดลองใช้ไฟล์ประเภทต่างๆ เพื่อดูว่า GroupDocs.Viewer จัดการไฟล์เหล่านั้นอย่างไร
-- สำรวจคุณลักษณะอื่นๆ ของ GroupDocs.Viewer เพื่อขยายความสามารถในโครงการของคุณ
+## คำถามที่พบบ่อย
+
+**Q: Can I combine extension and stream checks?**  
+A: ใช่—ให้เรียก `fromExtension` ก่อนเพื่อความเร็ว, จากนั้นถ้าผลลัพธ์เป็น `null` หรือสงสัยให้ใช้ `fromStream` เป็นสำรอง.  
+
+**Q: Does GroupDocs.Viewer support detecting image formats?**  
+A: แน่นอน. รูปแบบเช่น PNG, JPEG, และ BMP รวมอยู่ในรีจิสทรี `FileType`.  
+
+**Q: How does this help with java upload file validation?**  
+A: ด้วยการตรวจจับรูปแบบที่แท้จริง, คุณสามารถปฏิเสธไฟล์ที่ไม่ตรงกันหรืออาจเป็นอันตรายก่อนที่ไฟล์จะถึงชั้นเก็บข้อมูลของคุณ.  
+
+**Q: Is there a performance impact when processing large files?**  
+A: วิธีการตรวจจับอ่านเพียงไม่กี่ไบต์ส่วนหัวเท่านั้น, ดังนั้นผลกระทบจึงน้อยมากแม้กับไฟล์หลายกิกะไบต์.  
+
+**Q: Do I need to close the `Viewer` instance after detection?**  
+A: อ็อบเจ็กต์ `Viewer` มีน้ำหนักเบา; อย่างไรก็ตาม ควรปิดสตรีมใด ๆ ที่คุณเปิดเสมอ.  
+
+---
+
+**อัปเดตล่าสุด:** 2026-03-05  
+**ทดสอบกับ:** GroupDocs.Viewer 25.2 for Java  
+**ผู้เขียน:** GroupDocs

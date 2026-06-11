@@ -1,7 +1,7 @@
 ---
-title: "Reduce PDF Size Java – Optimize JPG Quality with GroupDocs"
-description: "Learn how to reduce PDF size Java by adjusting JPG quality with GroupDocs.Viewer, a simple way to compress PDF images and balance file size with visual fidelity."
-date: "2026-01-02"
+title: "How to compress pdf in Java – Optimize JPG Quality"
+description: "Learn how to compress pdf in Java by adjusting JPG quality with GroupDocs.Viewer – a simple method for java pdf compression, balancing file size and visual fidelity."
+date: "2026-03-05"
 weight: 1
 url: "/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/"
 keywords:
@@ -11,9 +11,9 @@ keywords:
 type: docs
 ---
 
-# Reduce PDF Size Java – Optimize JPG Quality with GroupDocs
+# How to compress pdf in Java – Optimize JPG Quality
 
-Balancing file size and visual fidelity is a common challenge when working with PDFs. In this tutorial you’ll discover how to **reduce PDF size Java** by adjusting the JPG image quality inside PDF documents using GroupDocs.Viewer for Java. We'll walk through the setup, code implementation, and practical tips so you can confidently compress PDF images without sacrificing readability.
+Balancing file size and visual fidelity is a common challenge when working with PDFs. In this tutorial you’ll discover **how to compress pdf** by adjusting the JPG image quality inside PDF documents using GroupDocs.Viewer for Java. We'll walk through the setup, code implementation, and practical tips so you can confidently compress PDF images without sacrificing readability.
 
 ![Optimize JPG Quality in PDFs with GroupDocs.Viewer for Java](/viewer/advanced-rendering/optimize-jpg-quality-in-pdfs.png)
 
@@ -23,6 +23,9 @@ Balancing file size and visual fidelity is a common challenge when working with 
 - **Can I also convert PPTX to PDF in the same flow?** Yes—simply point the `Viewer` at a `.pptx` source and the same options apply.  
 - **What quality level is typical for web publishing?** A value around **50‑70** gives a good balance for most web scenarios.  
 - **Do I need a license for this feature?** A free trial works for evaluation; a permanent license is required for production use.
+
+## How to compress pdf in Java – Overview
+Reducing PDF size in Java involves optimizing the resources inside a PDF—most notably images—so the final file occupies less storage and loads faster. By lowering JPG quality, you effectively **compress PDF images**, which often constitute the bulk of a document’s size.
 
 ## What is “reduce PDF size Java”?
 Reducing PDF size in Java involves optimizing the resources inside a PDF—most notably images—so the final file occupies less storage and loads faster. By lowering JPG quality, you effectively **compress PDF images**, which often constitute the bulk of a document’s size.
@@ -129,7 +132,7 @@ Execute `FeatureAdjustQualityOfJpgImages.run()`. The generated `output.pdf` will
 - **Optimal Quality Settings:** Use higher quality (80‑100) for print‑ready PDFs; for web previews, 30‑50 often suffices.  
 
 ## Conclusion
-You now know how to **reduce PDF size Java** by adjusting JPG image quality with GroupDocs.Viewer. Experiment with different quality levels, integrate the code into your existing pipelines, and enjoy faster, lighter PDFs.
+You now know **how to compress pdf** by adjusting JPG image quality with GroupDocs.Viewer. Experiment with different quality levels, integrate the code into your existing pipelines, and enjoy faster, lighter PDFs.
 
 ### Next Steps
 - Test various quality settings to find the sweet spot for your use case.  
@@ -171,10 +174,6 @@ You now know how to **reduce PDF size Java** by adjusting JPG image quality with
 
 ---
 
-**Last Updated:** 2026-01-02  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
-
 **Resources**  
 - [Documentation](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
@@ -185,3 +184,7 @@ You now know how to **reduce PDF size Java** by adjusting JPG image quality with
 - [Support Forum](https://forum.groupdocs.com/c/viewer/9)  
 
 ---
+
+**Last Updated:** 2026-03-05  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
