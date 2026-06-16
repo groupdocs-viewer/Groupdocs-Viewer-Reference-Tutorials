@@ -1,44 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan jeleníthet meg rejtett sorokat és oszlopokat Java-táblázatokban a GroupDocs.Viewer segítségével a zökkenőmentes HTML-konverzió érdekében. Biztosítsa az adatok teljes láthatóságát ezzel a haladó renderelési útmutatóval."
-"title": "Rejtett sorok és oszlopok renderelése Java táblázatokban a GroupDocs.Viewer használatával"
-"url": "/hu/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-03-27'
+description: Tanulja meg, hogyan konvertálja az Excelt HTML-re, és hogyan jelenítse
+  meg a rejtett sorokat és oszlopokat Java táblázatokban a GroupDocs.Viewer segítségével
+  a zökkenőmentes HTML-konvertálás érdekében. Biztosítsa a teljes adatláthatóságot
+  ezzel a fejlett megjelenítési útmutatóval.
+keywords:
+- convert excel to html
+- xlsx to html java
+- display hidden spreadsheet data
+- GroupDocs Viewer Java
+title: Hogyan konvertáljuk az Excelt HTML-re, és jelenítsük meg a rejtett sorokat
+  és oszlopokat Java-ban a GroupDocs.Viewer segítségével
 type: docs
+url: /hu/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# Rejtett sorok és oszlopok renderelése Java táblázatokban a GroupDocs.Viewer használatával
 
-## Bevezetés
+# Excel konvertálása HTML-re és rejtett sorok és oszlopok megjelenítése Java táblázatokban a GroupDocs.Viewer segítségével
 
-Nehezen jelenítheted meg a rejtett sorokat és oszlopokat egy táblázatban, amikor Java segítségével HTML-be konvertálod? Nem vagy egyedül! Sok fejlesztő szembesül ezzel a kihívással, miközben megpróbálja megőrizni az adatvizualizáció integritását a különböző formátumokban. Ez az oktatóanyag bemutatja, hogyan jelenítheted meg hatékonyan a rejtett sorokat és oszlopokat a táblázatokban a GroupDocs.Viewer for Java segítségével, biztosítva, hogy a konvertálás során ne vesszenek el fontos információk.
+Küzdesz a **Excel konvertálása HTML-re** és a rejtett sorok és oszlopok megjelenítésével egy táblázatban, amikor Java-val konvertálod HTML-re? Nem vagy egyedül! Sok fejlesztő szembesül ezzel a kihívással, miközben a különböző formátumok közötti adatmegjelenítés integritását próbálja megőrizni. Ez az útmutató végigvezet, hogyan jelenítsd meg hatékonyan a rejtett sorokat és oszlopokat a táblázatokban a GroupDocs.Viewer for Java használatával, biztosítva, hogy a konverzió során ne vesszen el semmilyen fontos információ.
 
-Ebben a cikkben a következőket fogjuk tárgyalni:
-- GroupDocs.Viewer konfigurálása rejtett táblázatelemek megjelenítéséhez
-- Környezet beállítása Maven függőségekkel
-- A funkció lépésről lépésre történő megvalósítása
-- Valós alkalmazások és teljesítménybeli szempontok
+![Render Hidden Rows & Columns with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Mielőtt belevágnánk, győződjünk meg róla, hogy alapvető ismeretekkel rendelkezünk a Java programozásról, és némi jártassággal rendelkezünk a Maven függőségkezelésben. Kezdjük a környezetünk beállításával.
+## Gyors válaszok
+- **Át tudja-e konvertálni a GroupDocs.Viewer az Excelt HTML-re?** Igen, beépített támogatást nyújt az XLSX fájlok HTML-re konvertálásához.  
+- **A rejtett sorok és oszlopok láthatóak lesznek a HTML kimenetben?** Ha engedélyezed a megfelelő beállításokat, a rejtett adatok úgy jelennek meg, mint a látható cellák.  
+- **Mely Maven artefakt szükséges?** `com.groupdocs:groupdocs-viewer` (legújabb verzió ajánlott).  
+- **Szükségem van licencre a termeléshez?** Állandó licenc szükséges a termeléshez; egy ingyenes próba vagy ideiglenes licenc elérhető értékeléshez.  
+- **Ez a megközelítés kompatibilis a Java 8 és újabb verziókkal?** Teljesen – működik JDK 8+ verziókkal.
 
-## Előfeltételek
+## Mi az a „Excel konvertálása HTML-re”?
+Az Excel HTML-re konvertálása azt jelenti, hogy egy `.xlsx` munkafüzetet web‑kész HTML oldalak sorozatává alakítunk, miközben megőrzük az eredeti elrendezést, stílusokat és adatokat. Ez lehetővé teszi, hogy a táblázatokat közvetlenül a böngészőkben jelenítsük meg Microsoft Office nélkül.
+
+## Miért jelenítsük meg a rejtett táblázati adatokat?
+- **Financial reporting** teljes audit nyomvonalat igényel, beleértve a bemutatási célokra rejtett sorokat/oszlopokat.  
+- **Data analysis** eszközöknek a teljes adatkészletre van szükségük a pontos számításokhoz.  
+- **Educational resources** minden cellát láthatóvá igényel a képletek és adatstruktúrák oktatásához.
+
+## Előkövetelmények
 
 ### Szükséges könyvtárak és függőségek
-funkció megvalósításához győződjön meg róla, hogy a GroupDocs.Viewer for Java függvénykönyvtárat függőségként tartalmazza a projektben. Ez a függvénykönyvtár elengedhetetlen a dokumentumok különböző formátumokba, például HTML, PDF és képfájlokba történő rendereléséhez.
+A funkció megvalósításához győződj meg róla, hogy a GroupDocs.Viewer for Java-t függőségként felveszed a projektedbe. Ez a könyvtár elengedhetetlen a dokumentumok különböző formátumokba, például HTML, PDF és képfájlok, történő rendereléséhez.
 
-### Környezeti beállítási követelmények
-A folytatás előtt győződjön meg arról, hogy a következő beállításokkal rendelkezik:
-- **Java fejlesztőkészlet (JDK)**8-as vagy újabb verzió
-- **Integrált fejlesztői környezet (IDE)**Például az IntelliJ IDEA vagy az Eclipse
-- **Szakértő**Projektfüggőségek kezelésére
+### Környezet beállítási követelmények
+- **Java Development Kit (JDK)**: 8 vagy újabb verzió  
+- **Integrated Development Environment (IDE)**: Például IntelliJ IDEA vagy Eclipse  
+- **Maven**: A projekt függőségek kezeléséhez  
 
-### Ismereti előfeltételek
-Alapvető Java programozási ismeretek szükségesek. Ezenkívül a Maven ismerete előnyös lesz a projekt beállításához.
+### Tudás előkövetelmények
+Alapvető Java programozási ismeretek szükségesek. Emellett a Maven ismerete hasznos lesz a projekt beállításához.
 
-## GroupDocs.Viewer beállítása Java-hoz
-A GroupDocs.Viewer Java-alkalmazásban való használatának megkezdéséhez Maven-en keresztül kell beállítania. Így teheti meg:
+## A GroupDocs.Viewer for Java beállítása
+A GroupDocs.Viewer használatának megkezdéséhez a Java alkalmazásodban Maven-en keresztül kell beállítanod. Így teheted:
 
-**Szakértő**
-Adja hozzá a következő konfigurációt a `pom.xml` fájl:
+**Maven**  
+Add the following configuration to your `pom.xml` file:
 ```xml
 <repositories>
    <repository>
@@ -56,33 +72,30 @@ Adja hozzá a következő konfigurációt a `pom.xml` fájl:
 </dependencies>
 ```
 
-### Licencbeszerzés lépései
-A GroupDocs.Viewer használatához vegye figyelembe a következő lehetőségeket:
-- **Ingyenes próbaverzió**: Töltsön le egy próbaverziót a funkciók kipróbálásához.
-- **Ideiglenes engedély**: Igényeljen ideiglenes licencet a teljes funkciók eléréséhez, értékelési korlátozások nélkül.
-- **Vásárlás**Szerezzen be állandó licencet termelési célú felhasználásra.
+### Licenc beszerzési lépések
+- **Free Trial**: Tölts le egy próba verziót a funkciók kiértékeléséhez.  
+- **Temporary License**: Kérj ideiglenes licencet a teljes funkciókhoz korlátozások nélkül.  
+- **Purchase**: Szerezz be egy állandó licencet a termeléshez.  
 
-A Maven beállítása és a licenc beszerzése után elkezdheti a GroupDocs.Viewer inicializálását. Így teheti meg:
+A Maven beállítása és a licenc beszerzése után elkezdheted inicializálni a GroupDocs.Viewer-t. Így teheted:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
     public static void main(String[] args) {
-        // Inicializálja a megjelenítőt a licencfájljával, ha van ilyen.
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // A kódod itt...
+            // Your code here...
         }
     }
 }
 ```
 
-## Megvalósítási útmutató
+## Excel konvertálása HTML-re rejtett adatokkal
+Ez a szakasz végigvezet a pontos lépéseken, amelyek szükségesek a **Excel konvertálása HTML-re**, miközben biztosítja, hogy a rejtett sorok és oszlopok megjelenjenek.
 
-### Rejtett sorok és oszlopok megjelenítése táblázatokban
-Ez a funkció lehetővé teszi a táblázat rejtett sorainak és oszlopainak megjelenítését HTML formátumba konvertáláskor. Nézzük meg a megvalósítás lépéseit.
-
-#### 1. lépés: Kimeneti könyvtár elérési útjának meghatározása
-Kezd azzal, hogy meghatározzuk, hol lesznek tárolva a renderelt fájlok:
+### 1. lépés: Kimeneti könyvtár útvonalának meghatározása
+Kezdd azzal, hogy meghatározod, hová kerülnek a renderelt fájlok:
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +103,100 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### 2. lépés: A HTMLViewOptions konfigurálása
-Ezután állítsa be a `HtmlViewOptions` erőforrások közvetlen beágyazása a létrehozott HTML fájlokba:
+### 2. lépés: HTMLViewOptions konfigurálása
+Ezután állítsd be a `HtmlViewOptions`-t, hogy a forrásokat közvetlenül a generált HTML fájlokba ágyazza be:
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Hozzon létre egy fájlelérési út formátumot az egyes oldalak megjelenítéséhez.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 3. lépés: Rejtett oszlopok és sorok megjelenítésének engedélyezése
-Konfigurálja a `SpreadsheetOptions` rejtett elemek megjelenítéséhez:
+### 3. lépés: Rejtett oszlopok és sorok renderelésének engedélyezése
+Konfiguráld a `SpreadsheetOptions`-t a rejtett elemek rendereléséhez:
 ```java
-// Rejtett oszlopok és sorok megjelenítésének engedélyezése.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### 4. lépés: A néző inicializálása dokumentummal
-Végül inicializálja a GroupDocs.Viewer fájlt a dokumentum elérési útjával, és jelenítse meg a tartalmat:
+### 4. lépés: Viewer inicializálása dokumentummal és renderelés
+Végül inicializáld a GroupDocs.Viewer-t a dokumentum útvonalával, és rendereld a tartalmat:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Rendereld a dokumentumot HTML-ként a megadott nézetbeállításokkal.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Hibaelhárítási tippek**: Győződjön meg arról, hogy az elérési utak helyesen vannak beállítva, és a függőségek megfelelően szerepelnek a `pom.xml`.
+**Troubleshooting Tips**: Győződj meg róla, hogy az útvonalak helyesen vannak beállítva, és a függőségek megfelelően szerepelnek a `pom.xml`-ben.
 
 ## Gyakorlati alkalmazások
-Íme néhány gyakorlati alkalmazás erről a funkcióról:
-1. **Pénzügyi jelentéstétel**A megfelelőség érdekében gondoskodjon arról, hogy minden adat, beleértve a rejtett pénzügyi mutatókat is, látható legyen az átalakítás során.
-2. **Adatelemzés**: Az adathalmazok integritásának megőrzése az összes sor és oszlop megjelenítésével a jelentésekben vagy prezentációkban.
-3. **Oktatási eszközök**: Teljes táblázattartalom használata oktatási célokra rejtett információk elvesztése nélkül.
+1. **Financial Reporting**: Biztosítsd, hogy minden adat, beleértve a rejtett pénzügyi mutatókat is, látható legyen a konverzió során a megfelelés érdekében.  
+2. **Data Analysis**: Tartsd meg az adatkészletek integritását az összes sor és oszlop megjelenítésével jelentésekben vagy prezentációkban.  
+3. **Educational Tools**: Használd a teljes táblázat tartalmat oktatási célokra anélkül, hogy a rejtett információk elvesznének.
 
-## Teljesítménybeli szempontok
-A teljesítmény optimalizálása a GroupDocs.Viewer használatakor:
-- Figyelje a memóriahasználatot, különösen nagy dokumentumok esetén.
-- Optimalizálja a fájlelérési utakat és a tárolási helyeket az I/O műveletek csökkentése érdekében.
-- Rendszeresen frissítse a könyvtárat az új teljesítménybeli fejlesztések és hibajavítások kihasználása érdekében.
+## Teljesítmény szempontok
+- Figyeld a memóriahasználatot, különösen nagy dokumentumok esetén.  
+- Optimalizáld a fájl útvonalakat és tárolási helyeket az I/O műveletek csökkentése érdekében.  
+- Rendszeresen frissítsd a könyvtárat az új teljesítményjavulások és hibajavítások kihasználásához.
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultad, hogyan konfigurálhatod a GroupDocs.Viewer for Java programot a táblázatok rejtett sorainak és oszlopainak megjelenítéséhez. A következő lépések követésével biztosíthatod az adatok átfogó láthatóságát a különböző formátumokban. Következő lépésként kísérletezz különböző dokumentumtípusokkal, és fedezd fel a GroupDocs.Viewer által kínált további funkciókat.
+Ebben az útmutatóban megtanultad, hogyan **konvertálj Excel-t HTML-re**, és hogyan konfiguráld a GroupDocs.Viewer for Java-t a rejtett sorok és oszlopok megjelenítéséhez a táblázatokban. A lépések követésével biztosíthatod a teljes adatláthatóságot a különböző formátumok között. Következő lépésként kísérletezz különböző dokumentumtípusokkal, és fedezd fel a GroupDocs.Viewer további funkcióit.
 
-Készen állsz a mélyebb elmélyülésre? Próbáld ki ezt a funkciót a projektjeidben, és nézd meg, hogyan javítja az alkalmazásod funkcionalitását!
+Készen állsz mélyebbre merülni? Próbáld ki ezt a funkciót a projektjeidben, és nézd meg, hogyan javítja alkalmazásod funkcionalitását!
 
-## GYIK szekció
+## Gyakran Ismételt Kérdések
 
-**1. kérdés: Ingyenesen használhatom a GroupDocs.Viewer programot?**
-V1: Igen, letölthet egy próbaverziót a hivatalos weboldalról a funkciók felfedezéséhez. A korlátozások nélküli teljes hozzáféréshez érdemes lehet ideiglenes vagy állandó licencet vásárolni.
+**Q1: Használhatom ingyenesen a GroupDocs.Viewer-t?**  
+A1: Igen, letölthetsz egy próba verziót a hivatalos oldalról a funkciók kipróbálásához. A korlátok nélküli teljes hozzáféréshez fontold meg egy ideiglenes vagy állandó licenc beszerzését.
 
-**2. kérdés: Milyen fájlformátumokat támogat a GroupDocs.Viewer?**
-A2: Több mint 50 különböző dokumentumformátumot támogat, beleértve a PDF-et, a Wordöt, az Excelt és a képeket.
+**Q2: Milyen fájlformátumokat támogat a GroupDocs.Viewer?**  
+A2: Több mint 50 különböző dokumentumformátumot támogat, beleértve a PDF, Word, Excel és képek formátumait.
 
-**3. kérdés: Hogyan kezelhetek nagyméretű dokumentumokat a GroupDocs.Viewer segítségével?**
-A3: Optimalizálja a memóriakezelést a Java-beállítások módosításával és a nagy fájlok szükség szerinti kisebb részekre bontásával.
+**Q3: Hogyan kezeljem a nagy dokumentumokat a GroupDocs.Viewer-rel?**  
+A3: Optimalizáld a memória kezelést a Java beállítások módosításával és a nagy fájlok kisebb részekre bontásával, ha szükséges.
 
-**4. kérdés: Lehetséges a HTML kimeneti formátum testreszabása?**
-V4: Igen, különféle beállításokat konfigurálhat a következővel: `HtmlViewOptions` a renderelt dokumentumok megjelenésének testreszabásához.
+**Q4: Lehetséges testre szabni a HTML kimeneti formátumot?**  
+A4: Igen, a `HtmlViewOptions` használatával különféle beállításokat konfigurálhatsz a renderelt dokumentumok megjelenésének testreszabásához.
 
-**5. kérdés: Mi a legjobb módja a GroupDocs.Viewerrel kapcsolatos problémák elhárításának?**
-5. válasz: A megoldásokért tekintse meg a hivatalos dokumentációt és fórumokat. Győződjön meg arról, hogy az összes függőség megfelelően van konfigurálva a projekt beállításaiban.
+**Q5: Mi a legjobb módja a GroupDocs.Viewer problémáinak hibaelhárítására?**  
+A5: Ellenőrizd a hivatalos dokumentációt és fórumokat a megoldásokért. Győződj meg róla, hogy minden függőség helyesen van konfigurálva a projekt beállításaiban.
 
-## Erőforrás
-- **Dokumentáció**: [GroupDocs Viewer dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API-referencia**: [GroupDocs API-referencia](https://reference.groupdocs.com/viewer/java/)
-- **Letöltés**: [GroupDocs.Viewer beszerzése](https://releases.groupdocs.com/viewer/java/)
-- **Vásárlás**: [Licenc vásárlása](https://purchase.groupdocs.com/buy)
-- **Ingyenes próbaverzió**: [Próbálja ki az ingyenes verziót](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes engedély**: [Ideiglenes engedély igénylése](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatás**: [GroupDocs Fórum](https://forum.groupdocs.com/c/viewer/9)
+## Gyakran Ismételt Kérdések
 
-Ezzel az átfogó útmutatóval mostantól hatékonyan kezelheted a rejtett táblázatelemeket Java-alkalmazásaidban a GroupDocs.Viewer segítségével. Jó kódolást!
+**Q: A `setRenderHiddenColumns(true)` engedélyezése befolyásolja a teljesítményt?**  
+A: A rejtett oszlopok renderelése kis extra terhet jelent, de a hatás minimális a tipikus munkafüzeteknél. Nagyon nagy lapok esetén figyeld a memóriahasználatot.
+
+**Q: Átkonvertálhatom az XLSX fájlt egyetlen HTML oldalra több oldal helyett?**  
+A: Igen, beállíthatsz egy egyedi `HtmlViewOptions` fájlnevet a `{0}` helyőrző nélkül, hogy egyetlen HTML fájlt generálj.
+
+**Q: Hogyan jelenítsem meg a rejtett táblázati adatokat csak bizonyos munkalapokon?**  
+A: Használd a `viewOptions.getSpreadsheetOptions().setWorksheetIndexes(...)` metódust, hogy a kívánt munkalapokra célozz, mielőtt engedélyezed a rejtett renderelést.
+
+**Q: Van mód a eszköztár vagy a navigáció elrejtésére a konverzió után?**  
+A: A GroupDocs.Viewer által generált HTML kimenet statikus; ha testre szabod a sablont, manuálisan eltávolíthatod a navigációs elemeket.
+
+**Q: Melyik GroupDocs.Viewer verzió szükséges a rejtett sor/oszlop rendereléséhez?**  
+A: A funkció a 22.0 verziótól érhető el; javasoljuk a legújabb stabil kiadás használatát.
+
+## Források
+- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [Get GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [Buy a License](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [Try Free Version](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-03-27  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
