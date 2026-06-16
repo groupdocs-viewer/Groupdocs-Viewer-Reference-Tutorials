@@ -1,42 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a extraer diseños y capas de archivos CAD mediante programación con GroupDocs.Viewer para Java. Ideal para proyectos de ingeniería que requieren una gestión precisa de datos de diseño."
-"title": "Recuperar diseños y capas CAD en Java con GroupDocs.Viewer"
-"url": "/es/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-06'
+description: Aprende cómo obtener diseños CAD en Java usando GroupDocs.Viewer para
+  Java, extrayendo diseños y capas de archivos CAD para una gestión precisa de datos
+  de diseño.
+keywords:
+- retrieve cad layouts java
+- groupdocs viewer java
+- cad layers extraction
+title: Obtener diseños CAD en Java con GroupDocs.Viewer
 type: docs
+url: /es/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# Cómo recuperar diseños y capas CAD mediante GroupDocs.Viewer para Java
 
-En el mundo de la ingeniería y el diseño, los archivos de Diseño Asistido por Computadora (CAD) son herramientas indispensables que almacenan grandes cantidades de información detallada sobre los diseños. Estos archivos pueden ser complejos y contener múltiples diseños y capas que requieren una gestión y recuperación precisas para una ejecución eficaz del proyecto. Si busca extraer detalles específicos de dibujos CAD mediante programación en Java, GroupDocs.Viewer para Java es la solución ideal. Este tutorial le guiará en el proceso de recuperación de todos los diseños y capas de un dibujo CAD con GroupDocs.Viewer.
+# Recuperar diseños CAD Java con GroupDocs.Viewer
 
-**Lo que aprenderás:**
-- Cómo configurar GroupDocs.Viewer para Java.
-- Recupere información de dibujos CAD, incluidos diseños y capas.
-- Aplicaciones prácticas de esta característica en escenarios del mundo real.
-- Consideraciones de rendimiento al trabajar con archivos CAD grandes.
+En los proyectos de ingeniería modernos, **recuperar diseños CAD Java** es esencial para automatizar el análisis de diseño, el control de versiones y los flujos de trabajo basados en datos. Los archivos CAD a menudo contienen múltiples diseños y capas que describen diferentes vistas de un producto. Poder extraer esta información de forma programática le permite crear herramientas que auditen dibujos, generen informes o integren diseños en sistemas más grandes. En este tutorial, aprenderá a usar GroupDocs.Viewer para Java para extraer cada diseño y capa de un dibujo CAD de forma rápida y fiable.
 
-Antes de sumergirnos en la implementación, cubramos algunos requisitos previos que necesitas para comenzar.
+![Recuperar diseños y capas CAD con GroupDocs.Viewer para Java](/viewer/file-formats-support/retrieve-cad-layouts-and-layers-java.png)
 
-## Prerrequisitos
+## Respuestas rápidas
+- **¿Qué significa “recuperar diseños CAD Java”?** Significa acceder programáticamente a los metadatos de diseño y capa de los archivos CAD desde una aplicación Java.  
+- **¿Qué biblioteca maneja esto?** GroupDocs.Viewer para Java proporciona una API simple para obtener información de diseños y capas.  
+- **¿Necesito una licencia?** Hay una prueba gratuita disponible; se requiere una licencia comercial para uso en producción.  
+- **¿Puedo procesar archivos DWG grandes?** Sí—use `try‑with‑resources` y procesamiento por lotes para mantener bajo el uso de memoria.  
+- **¿Se requiere Maven?** Maven es la forma recomendada de agregar GroupDocs.Viewer a su proyecto, pero también puede usar Gradle o JARs manuales.
 
-Para seguir este tutorial, asegúrese de tener:
+## Qué es “recuperar diseños CAD Java”?
+Recuperar diseños CAD Java se refiere a extraer los componentes estructurales —diseños (espacios de papel) y capas (grupos de visibilidad)— de formatos CAD como DWG o DXF usando código Java. Esta información es crucial para tareas como revisiones automáticas de dibujos, canalizaciones de renderizado personalizadas o la migración de datos de diseño a otras plataformas.
 
-1. **Kit de desarrollo de Java (JDK):** Asegúrese de que JDK 8 o posterior esté instalado en su máquina.
-2. **Entorno de desarrollo integrado (IDE):** Cualquier IDE de Java como IntelliJ IDEA, Eclipse o NetBeans funcionará bien.
-3. **Biblioteca GroupDocs.Viewer para Java:** Usaremos la última versión, que puedes incluir a través de Maven.
+## ¿Por qué usar GroupDocs.Viewer para Java?
+GroupDocs.Viewer abstrae la complejidad del análisis de archivos CAD, ofreciendo una API de alto nivel que funciona con muchas versiones de CAD sin necesitar bibliotecas nativas de AutoCAD. Proporciona:
+
+- **Compatibilidad entre formatos** (DWG, DXF, DGN, etc.)  
+- **Procesamiento rápido y eficiente en memoria** – ideal para aplicaciones del lado del servidor  
+- **Integración sencilla con Maven** – mantiene las dependencias ordenadas  
+- **Opciones de licenciamiento robustas** – licencias de prueba, temporales o completas para producción  
+
+## Requisitos previos
+Antes de comenzar, asegúrese de tener:
+
+1. **Java Development Kit (JDK) 8+** instalado.  
+2. **Un IDE** (IntelliJ IDEA, Eclipse, NetBeans, etc.).  
+3. **GroupDocs.Viewer para Java** – añadido vía Maven (ver más abajo).  
 
 ### Configuración del entorno
-
-Asegúrese de tener un servidor local o remoto listo para ejecutar sus aplicaciones Java. También debería estar familiarizado con el uso de Maven, ya que simplifica la gestión de dependencias en proyectos Java.
+Necesitará una máquina (local o remota) capaz de ejecutar aplicaciones Java y acceder al sistema de archivos donde se encuentran sus archivos CAD.
 
 ## Configuración de GroupDocs.Viewer para Java
 
-Para integrar GroupDocs.Viewer en su proyecto Java, utilice Maven para facilitar la instalación y las actualizaciones. Así es como puede configurarlo:
-
 ### Configuración de Maven
-
-Agregue el siguiente repositorio y dependencia a su `pom.xml` archivo:
+Agregue el repositorio y la dependencia a su `pom.xml`. Este es el único cambio que necesita hacer en el archivo de compilación de su proyecto.
 
 ```xml
 <repositories>
@@ -55,27 +69,19 @@ Agregue el siguiente repositorio y dependencia a su `pom.xml` archivo:
 </dependencies>
 ```
 
-### Adquisición de licencias
+### Obtención de licencia
+GroupDocs.Viewer ofrece una prueba gratuita, una licencia temporal para evaluación a corto plazo y una licencia completa para producción.
 
-GroupDocs.Viewer ofrece una prueba gratuita que le permite probar sus capacidades antes de comprar o adquirir una licencia temporal para una evaluación extendida.
-
-1. **Prueba gratuita:** Descargue la última versión desde [Descargas de GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **Licencia temporal:** Solicitar una licencia temporal en el [Página de compra de GroupDocs](https://purchase.groupdocs.com/temporary-license/) para explorar funciones avanzadas.
-3. **Compra:** Para uso en producción, compre una licencia a través de [Tienda GroupDocs](https://purchase.groupdocs.com/buy).
-
-Después de configurar su entorno y dependencias, puede comenzar a implementar la función.
+1. **Prueba gratuita:** Download the latest version from [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
+2. **Licencia temporal:** Apply for a temporary license on the [GroupDocs Purchase Page](https://purchase.groupdocs.com/temporary-license/) to explore advanced features.  
+3. **Compra:** For long‑term use, buy a license through the [GroupDocs Store](https://purchase.groupdocs.com/buy).
 
 ## Guía de implementación
 
-En esta sección, explicaremos cómo recuperar diseños y capas CAD mediante GroupDocs.Viewer en Java. Cubriremos cada paso necesario para una implementación exitosa.
+A continuación se muestra una guía paso a paso que indica exactamente cómo **recuperar diseños CAD Java** usando GroupDocs.Viewer.
 
-### Descripción general de las funciones
-
-Esta funcionalidad permite a los desarrolladores acceder mediante programación a la información de diseño y capas de los archivos CAD, lo que puede ser crucial para aplicaciones que requieren análisis detallados del dibujo o modificaciones basadas en la estructura del diseño.
-
-#### Paso 1: Inicializar GroupDocs.Viewer
-
-Crear una instancia de `Viewer` Al proporcionarle la ruta a su archivo CAD, este objeto servirá como puerta de enlace para acceder a diversas funciones de GroupDocs.Viewer.
+### Paso 1: Inicializar el Viewer
+Cree una instancia de `Viewer` apuntando a su archivo CAD. El bloque `try‑with‑resources` garantiza que el visor se cierre correctamente, liberando memoria.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,13 +90,12 @@ import java.io.File;
 String documentPath = new File("YOUR_DOCUMENT_DIRECTORY", "SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS").getAbsolutePath();
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // Aquí se realizarán más operaciones.
+    // Further operations will be performed here.
 }
 ```
 
-#### Paso 2: Recuperar información de la vista CAD
-
-Utilice el `getViewInfo` método para obtener detalles sobre diseños y capas. Esta información se encapsula en un `CadViewInfo` objeto.
+### Paso 2: Obtener información de vista
+Utilice `getViewInfo` con `ViewInfoOptions.forHtmlView()` para obtener un objeto `CadViewInfo` que contiene colecciones de diseños y capas.
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -99,65 +104,72 @@ import com.groupdocs.viewer.results.CadViewInfo;
 CadViewInfo info = (CadViewInfo) viewer.getViewInfo(ViewInfoOptions.forHtmlView());
 ```
 
-#### Paso 3: Extraer diseños y capas
-
-Itere sobre los diseños y capas recuperados del archivo CAD. Estas iteraciones pueden ayudarle a comprender la estructura de su diseño o a realizar operaciones adicionales como filtrar o modificar.
+### Paso 3: Extraer diseños y capas
+Itere a través de las colecciones `layouts` y `layers`. Puede registrarlas, almacenarlas en una base de datos o enviarlas a procesos posteriores.
 
 ```java
-// Iterar sobre cada diseño en el archivo CAD
+// Iterate over each layout in the CAD file
 for (Layout layout : info.getLayouts()) {
-    // Procesar cada diseño según sea necesario
+    // Process each layout as needed
 }
 
-// Iterar sobre cada capa en el archivo CAD
+// Iterate over each layer in the CAD file
 for (Layer layer : info.getLayers()) {
-    // Procesa cada capa según sea necesario
+    // Process each layer as needed
 }
 ```
 
-### Consejos para la solución de problemas
-
-- **Excepción de archivo no encontrado:** Asegúrese de que la ruta de su documento esté configurada correctamente y sea accesible.
-- **Problemas de compatibilidad de versiones:** Verifique que esté utilizando una versión compatible de GroupDocs.Viewer con su configuración de Java.
+### Errores comunes y cómo evitarlos
+- **Archivo no encontrado:** Verifique nuevamente la ruta que pasa a `Viewer`. Use rutas absolutas o verifique el directorio de trabajo.  
+- **Incompatibilidad de versión:** Asegúrese de que la versión de GroupDocs.Viewer coincida con su JDK (la serie 25.x funciona con JDK 8‑17).  
+- **Fugas de memoria:** Siempre use el patrón `try‑with‑resources` mostrado arriba; libera automáticamente los recursos nativos.
 
 ## Aplicaciones prácticas
+Recuperar diseños CAD Java abre la puerta a muchos escenarios del mundo real:
 
-Comprender cómo recuperar diseños y capas mediante programación puede resultar beneficioso en varios escenarios:
-
-1. **Revisiones de diseño automatizadas:** Extraiga y analice automáticamente datos de diseño para realizar controles de calidad.
-2. **Conversión de diseño:** Convierta archivos CAD a diferentes formatos conservando su integridad estructural.
-3. **Herramientas de gestión de capas:** Desarrollar herramientas que ayuden a los ingenieros a gestionar y modificar diseños CAD de forma más eficiente.
+| Caso de uso | Beneficio |
+|------------|-----------|
+| **Revisión de diseño automatizada** | Extraiga los nombres de los diseños para generar listas de verificación de cumplimiento. |
+| **Conversión por lotes** | Preservar la visibilidad de capas al convertir DWG a PDF o SVG. |
+| **Informes personalizados** | Extraiga los metadatos de capas a Excel o CSV para auditorías. |
+| **Colaboración basada en la nube** | Sincronice la información de diseños y capas con un sistema de gestión documental. |
 
 ## Consideraciones de rendimiento
+Al trabajar con archivos CAD grandes, tenga en cuenta estos consejos:
 
-Trabajar con archivos CAD grandes puede consumir muchos recursos, así que tenga en cuenta estos consejos para optimizar el rendimiento:
-
-- **Gestión de la memoria:** Utilice try-with-resources para `Viewer` instancias para garantizar el cierre adecuado y la liberación de la memoria.
-- **Iteración eficiente:** Si es posible, procese los diseños y las capas en lotes para reducir los gastos generales.
-- **Utilización de recursos:** Supervise el uso de CPU y memoria de su aplicación, especialmente cuando trabaje con archivos CAD grandes o complejos.
+- **Gestión de memoria:** El objeto `Viewer` mantiene recursos nativos; siempre ciérrelo rápidamente.  
+- **Procesamiento por lotes:** Si necesita procesar miles de dibujos, considere una cola productor‑consumidor para limitar las instancias concurrentes de `Viewer`.  
+- **Monitoreo:** Utilice herramientas de perfilado de Java (p. ej., VisualVM) para observar el uso de heap durante la extracción.
 
 ## Conclusión
-
-Recuperar diseños y capas de dibujos CAD con GroupDocs.Viewer para Java puede mejorar significativamente la gestión programática de datos de diseño. Este tutorial le ha proporcionado los conocimientos necesarios para implementar esta función eficazmente en sus proyectos. Para una exploración más profunda, considere explorar otras funciones de GroupDocs.Viewer o integrarlo con herramientas adicionales para crear soluciones integrales.
+Ahora tiene un método completo y listo para producción para **recuperar diseños CAD Java** usando GroupDocs.Viewer. Esta capacidad puede simplificar drásticamente la automatización de diseño, mejorar la consistencia de datos y reducir el esfuerzo manual en los flujos de trabajo de ingeniería.
 
 ### Próximos pasos
+- Intente extraer metadatos CAD adicionales como dimensiones o definiciones de bloques.  
+- Combine esta extracción con GroupDocs.Conversion para generar imágenes de vista previa de cada diseño.  
+- Explore la integración con almacenamiento en la nube (AWS S3, Azure Blob) para obtener archivos CAD bajo demanda.
 
-- Experimente con diferentes formatos de archivos CAD compatibles con GroupDocs.Viewer.
-- Descubra cómo convertir y mostrar estos archivos utilizando las capacidades de renderizado de GroupDocs.Viewer.
+## Preguntas frecuentes
 
-## Sección de preguntas frecuentes
+**Q: ¿Cuáles son los componentes principales de un dibujo CAD que puedo recuperar?**  
+A: Puede extraer diseños, capas, dimensiones y otra información estructural de los dibujos CAD.
 
-**P1: ¿Cuáles son los componentes principales de un dibujo CAD que puedo recuperar?**
-A1: Puede extraer diseños, capas, dimensiones y otra información estructural de dibujos CAD.
+**Q: ¿Puede GroupDocs.Viewer manejar todos los tipos de archivos CAD?**  
+A: Sí, admite varios formatos como DWG, DXF, DGN, etc., pero siempre verifique la compatibilidad con el tipo de archivo específico con el que está trabajando.
 
-**P2: ¿GroupDocs.Viewer puede gestionar todo tipo de archivos CAD?**
-A2: Sí, admite varios formatos como DWG, DXF, DGN, etc., pero siempre verifique la compatibilidad con el tipo de archivo específico con el que está trabajando.
+**Q: ¿Cómo puedo asegurar que mi aplicación maneje archivos CAD grandes de manera eficiente?**  
+A: Optimice el uso de memoria cerrando los recursos rápidamente y considere procesar los datos en fragmentos más pequeños si es posible.
 
-**P3: ¿Cómo puedo garantizar que mi aplicación gestione archivos CAD grandes de manera eficiente?**
-A3: Optimice el uso de la memoria cerrando recursos rápidamente y considere procesar datos en fragmentos más pequeños si es posible.
+**Q: ¿Existe una forma de filtrar capas durante la extracción?**  
+A: Aunque no se proporciona filtrado directo, puede implementar lógica personalizada después de la extracción para gestionar las capas según sea necesario.
 
-**P4: ¿Hay alguna forma de filtrar capas durante la extracción?**
-A4: Si bien no se proporciona filtrado directo, puedes implementar lógica personalizada después de la extracción para administrar las capas según sea necesario.
+**Q: ¿Puede integrarse GroupDocs.Viewer con soluciones de almacenamiento en la nube?**  
+A: Sí, puede funcionar sin problemas con varios servicios en la nube para almacenar y acceder a archivos CAD.
 
-**Q5: ¿Se puede integrar GroupDocs.Viewer con soluciones de almacenamiento en la nube?**
-A5: Sí, puede funcionar sin problemas con varios servicios en la nube para almacenar y acceder a archivos CAD.
+---
+
+**Última actualización:** 2026-04-06  
+**Probado con:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  
+
+---

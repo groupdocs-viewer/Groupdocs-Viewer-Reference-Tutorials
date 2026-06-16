@@ -1,42 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Apprenez à extraire par programmation des mises en page et des calques de fichiers CAO grâce à GroupDocs.Viewer pour Java. Idéal pour les projets d'ingénierie nécessitant une gestion précise des données de conception."
-"title": "Récupérer des mises en page et des calques CAO en Java avec GroupDocs.Viewer"
-"url": "/fr/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-06'
+description: Apprenez comment récupérer les mises en page CAD en Java à l’aide de
+  GroupDocs.Viewer pour Java, en extrayant les mises en page et les calques des fichiers
+  CAD pour une gestion précise des données de conception.
+keywords:
+- retrieve cad layouts java
+- groupdocs viewer java
+- cad layers extraction
+title: Récupérer les mises en page CAD en Java avec GroupDocs.Viewer
 type: docs
+url: /fr/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# Comment récupérer des mises en page et des calques CAO à l'aide de GroupDocs.Viewer pour Java
 
-Dans le monde de l'ingénierie et de la conception, les fichiers de Conception Assistée par Ordinateur (CAO) sont des outils indispensables qui stockent de vastes quantités d'informations détaillées sur les conceptions. Ces fichiers peuvent être complexes et contenir de multiples mises en page et calques qui nécessitent une gestion et une récupération précises pour une exécution efficace du projet. Si vous souhaitez extraire des détails spécifiques de dessins CAO par programmation en Java, GroupDocs.Viewer pour Java est la solution idéale. Ce tutoriel vous guidera dans le processus de récupération de toutes les mises en page et calques d'un dessin CAO avec GroupDocs.Viewer.
+# Récupérer les mises en page CAD Java avec GroupDocs.Viewer
 
-**Ce que vous apprendrez :**
-- Comment configurer GroupDocs.Viewer pour Java.
-- Récupérez les informations de dessin CAO, y compris les mises en page et les calques.
-- Applications pratiques de cette fonctionnalité dans des scénarios réels.
-- Considérations relatives aux performances lors du travail avec des fichiers CAO volumineux.
+Dans les projets d'ingénierie modernes, **retrieving CAD layouts Java** est essentiel pour automatiser l'analyse de conception, le contrôle de version et les flux de travail basés sur les données. Les fichiers CAD contiennent souvent plusieurs mises en page et calques qui décrivent différentes vues d’un produit. Pouvoir extraire ces informations de manière programmatique vous permet de créer des outils qui auditent les dessins, génèrent des rapports ou intègrent les conceptions dans des systèmes plus vastes. Dans ce tutoriel, vous apprendrez à utiliser GroupDocs.Viewer pour Java afin d’extraire chaque mise en page et chaque calque d’un dessin CAD rapidement et de manière fiable.
 
-Avant de plonger dans la mise en œuvre, examinons quelques prérequis dont vous avez besoin pour commencer.
+![Récupérer les mises en page et les calques CAD avec GroupDocs.Viewer pour Java](/viewer/file-formats-support/retrieve-cad-layouts-and-layers-java.png)
+
+## Réponses rapides
+- **What does “retrieve CAD layouts Java” mean?** Cela signifie accéder de manière programmatique aux métadonnées de mise en page et de calque des fichiers CAD depuis une application Java.  
+- **Which library handles this?** GroupDocs.Viewer pour Java fournit une API simple pour récupérer les informations de mise en page et de calque.  
+- **Do I need a license?** Un essai gratuit est disponible ; une licence commerciale est requise pour une utilisation en production.  
+- **Can I process large DWG files?** Oui — utilisez try‑with‑resources et le traitement par lots pour limiter la consommation de mémoire.  
+- **Is Maven required?** Maven est la méthode recommandée pour ajouter GroupDocs.Viewer à votre projet, mais vous pouvez également utiliser Gradle ou des JARs manuels.
+
+## Qu’est‑ce que “retrieve CAD layouts Java” ?
+Récupérer les mises en page CAD Java désigne l’extraction des composants structurels — les mises en page (paper spaces) et les calques (groupes de visibilité) — des formats CAD tels que DWG ou DXF à l’aide de code Java. Ces informations sont cruciales pour des tâches comme les revues automatiques de dessins, les pipelines de rendu personnalisés ou la migration de données de conception vers d’autres plateformes.
+
+## Pourquoi utiliser GroupDocs.Viewer pour Java ?
+GroupDocs.Viewer abstrait la complexité de l’analyse des fichiers CAD, offrant une API de haut niveau qui fonctionne sur de nombreuses versions CAD sans nécessiter les bibliothèques natives d’AutoCAD. Il offre :
+
+- **Prise en charge multi‑format** (DWG, DXF, DGN, etc.)  
+- **Traitement rapide et efficace en mémoire** – idéal pour les applications côté serveur  
+- **Intégration Maven simple** – maintenez vos dépendances propres  
+- **Options de licence robustes** – essai, licence temporaire ou licence complète pour la production  
 
 ## Prérequis
+Avant de commencer, assurez‑vous d’avoir :
 
-Pour suivre ce tutoriel, assurez-vous d'avoir :
+1. **Java Development Kit (JDK) 8+** installé.  
+2. **Un IDE** (IntelliJ IDEA, Eclipse, NetBeans, etc.).  
+3. **GroupDocs.Viewer pour Java** – ajouté via Maven (voir ci‑dessous).  
 
-1. **Kit de développement Java (JDK) :** Assurez-vous que JDK 8 ou une version ultérieure est installé sur votre machine.
-2. **Environnement de développement intégré (IDE) :** N'importe quel IDE Java comme IntelliJ IDEA, Eclipse ou NetBeans fonctionnera correctement.
-3. **Bibliothèque GroupDocs.Viewer pour Java :** Nous utiliserons la dernière version, que vous pouvez inclure via Maven.
+### Configuration de l’environnement
+Vous aurez besoin d’une machine (locale ou distante) capable d’exécuter des applications Java et d’accéder au système de fichiers où résident vos fichiers CAD.
 
-### Configuration de l'environnement
-
-Assurez-vous de disposer d'un serveur local ou distant prêt à exécuter vos applications Java. Vous devez également maîtriser Maven, car il simplifie la gestion des dépendances dans les projets Java.
-
-## Configuration de GroupDocs.Viewer pour Java
-
-Pour intégrer GroupDocs.Viewer à votre projet Java, utilisez Maven pour une installation et des mises à jour faciles. Voici comment le configurer :
+## Configurer GroupDocs.Viewer pour Java
 
 ### Configuration Maven
-
-Ajoutez le référentiel et la dépendance suivants à votre `pom.xml` déposer:
+Ajoutez le dépôt et la dépendance à votre `pom.xml`. C’est le seul changement à apporter à votre fichier de construction.
 
 ```xml
 <repositories>
@@ -56,26 +70,18 @@ Ajoutez le référentiel et la dépendance suivants à votre `pom.xml` déposer:
 ```
 
 ### Acquisition de licence
+GroupDocs.Viewer propose un essai gratuit, une licence temporaire pour une évaluation à court terme, et une licence complète pour la production.
 
-GroupDocs.Viewer propose un essai gratuit, vous permettant de tester ses capacités avant d'acheter ou d'acquérir une licence temporaire pour une évaluation prolongée.
+1. **Essai gratuit :** Téléchargez la dernière version depuis [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
+2. **Licence temporaire :** Demandez une licence temporaire sur la [Page d’achat GroupDocs](https://purchase.groupdocs.com/temporary-license/) pour explorer les fonctionnalités avancées.  
+3. **Achat :** Pour une utilisation à long terme, achetez une licence via le [Store GroupDocs](https://purchase.groupdocs.com/buy).
 
-1. **Essai gratuit :** Téléchargez la dernière version depuis [Téléchargements GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **Licence temporaire :** Demandez un permis temporaire sur le [Page d'achat de GroupDocs](https://purchase.groupdocs.com/temporary-license/) pour explorer les fonctionnalités avancées.
-3. **Achat:** Pour une utilisation en production, achetez une licence via [Boutique GroupDocs](https://purchase.groupdocs.com/buy).
+## Guide d’implémentation
 
-Après avoir configuré votre environnement et vos dépendances, vous pouvez commencer à implémenter la fonctionnalité.
+Voici un guide pas à pas qui montre exactement comment **retrieving CAD layouts Java** avec GroupDocs.Viewer.
 
-## Guide de mise en œuvre
-
-Dans cette section, nous expliquerons comment récupérer des mises en page et des calques CAO à l'aide de GroupDocs.Viewer en Java. Nous aborderons chaque étape nécessaire à une implémentation réussie.
-
-### Aperçu des fonctionnalités
-
-Cette fonctionnalité permet aux développeurs d'accéder par programmation aux informations de mise en page et de calque à partir de fichiers CAO, ce qui peut être crucial pour les applications nécessitant une analyse de dessin détaillée ou des modifications basées sur la structure de conception.
-
-#### Étape 1 : Initialiser GroupDocs.Viewer
-
-Créer une instance de `Viewer` en lui fournissant le chemin d'accès à votre fichier CAO. Cet objet servira de passerelle pour accéder aux différentes fonctionnalités de GroupDocs.Viewer.
+### Étape 1 : Initialiser le Viewer
+Créez une instance `Viewer` en la pointant vers votre fichier CAD. Le bloc `try‑with‑resources` garantit que le viewer est correctement fermé, libérant ainsi la mémoire.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,13 +90,12 @@ import java.io.File;
 String documentPath = new File("YOUR_DOCUMENT_DIRECTORY", "SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS").getAbsolutePath();
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // D'autres opérations seront réalisées ici.
+    // Further operations will be performed here.
 }
 ```
 
-#### Étape 2 : Récupérer les informations de la vue CAO
-
-Utilisez le `getViewInfo` méthode permettant de récupérer des informations sur les mises en page et les calques. Ces informations sont encapsulées dans un `CadViewInfo` objet.
+### Étape 2 : Obtenir les informations de vue
+Utilisez `getViewInfo` avec `ViewInfoOptions.forHtmlView()` pour obtenir un objet `CadViewInfo` contenant les collections de mises en page et de calques.
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -99,65 +104,72 @@ import com.groupdocs.viewer.results.CadViewInfo;
 CadViewInfo info = (CadViewInfo) viewer.getViewInfo(ViewInfoOptions.forHtmlView());
 ```
 
-#### Étape 3 : Extraire les mises en page et les calques
-
-Parcourez les dispositions et les calques récupérés du fichier CAO. Ces itérations peuvent vous aider à comprendre la structure de votre conception ou à effectuer d'autres opérations, comme le filtrage ou la modification.
+### Étape 3 : Extraire les mises en page et les calques
+Parcourez les collections `layouts` et `layers`. Vous pouvez les consigner, les stocker dans une base de données ou les transmettre à des processus en aval.
 
 ```java
-// Itérer sur chaque disposition dans le fichier CAO
+// Iterate over each layout in the CAD file
 for (Layout layout : info.getLayouts()) {
-    // Traitez chaque mise en page selon vos besoins
+    // Process each layout as needed
 }
 
-// Itérer sur chaque couche du fichier CAO
+// Iterate over each layer in the CAD file
 for (Layer layer : info.getLayers()) {
-    // Traitez chaque couche selon vos besoins
+    // Process each layer as needed
 }
 ```
 
-### Conseils de dépannage
-
-- **Exception de fichier non trouvé :** Assurez-vous que le chemin de votre document est correctement défini et accessible.
-- **Problèmes de compatibilité des versions :** Vérifiez que vous utilisez une version compatible de GroupDocs.Viewer avec votre configuration Java.
+### Pièges courants & Comment les éviter
+- **Fichier non trouvé :** Vérifiez le chemin que vous passez à `Viewer`. Utilisez des chemins absolus ou confirmez le répertoire de travail.  
+- **Incompatibilité de version :** Assurez‑vous que la version de GroupDocs.Viewer correspond à votre JDK (la série 25.x fonctionne avec JDK 8‑17).  
+- **Fuites de mémoire :** Utilisez toujours le modèle `try‑with‑resources` présenté ci‑dessus ; il libère automatiquement les ressources natives.
 
 ## Applications pratiques
+Récupérer les mises en page CAD Java ouvre la porte à de nombreux scénarios réels :
 
-Comprendre comment récupérer des mises en page et des calques par programmation peut être bénéfique dans divers scénarios :
+| Cas d’utilisation | Avantage |
+|-------------------|----------|
+| **Revue de conception automatisée** | Extraire les noms de mise en page pour générer des listes de contrôle de conformité. |
+| **Conversion par lots** | Conserver la visibilité des calques lors de la conversion DWG vers PDF ou SVG. |
+| **Rapports personnalisés** | Exporter les métadonnées de calques vers Excel ou CSV pour des pistes d’audit. |
+| **Collaboration cloud‑based** | Synchroniser les informations de mise en page et de calque avec un système de gestion documentaire. |
 
-1. **Examens de conception automatisés :** Extrayez et analysez automatiquement les données de mise en page pour les contrôles de qualité.
-2. **Conversion de conception :** Convertissez les fichiers CAO en différents formats tout en préservant leur intégrité structurelle.
-3. **Outils de gestion des couches :** Développer des outils qui aident les ingénieurs à gérer et à modifier les conceptions CAO plus efficacement.
+## Considérations de performance
+Lorsque vous traitez de gros fichiers CAD, gardez ces conseils à l’esprit :
 
-## Considérations relatives aux performances
-
-Travailler avec des fichiers CAO volumineux peut nécessiter beaucoup de ressources. Tenez donc compte de ces conseils pour optimiser les performances :
-
-- **Gestion de la mémoire :** Utilisez try-with-resources pour `Viewer` instances pour assurer une fermeture et une libération de mémoire appropriées.
-- **Itération efficace :** Traitez les mises en page et les calques par lots si possible pour réduire les frais généraux.
-- **Utilisation des ressources :** Surveillez l'utilisation du processeur et de la mémoire de votre application, en particulier lorsque vous traitez des fichiers CAO volumineux ou complexes.
+- **Gestion de la mémoire :** L’objet `Viewer` détient des ressources natives ; fermez‑le toujours rapidement.  
+- **Traitement par lots :** Si vous devez traiter des milliers de dessins, envisagez une file producteur‑consommateur pour limiter le nombre d’instances `Viewer` concurrentes.  
+- **Surveillance :** Utilisez des outils de profilage Java (par ex. VisualVM) pour observer l’utilisation du tas pendant l’extraction.
 
 ## Conclusion
-
-La récupération de mises en page et de calques à partir de dessins CAO avec GroupDocs.Viewer pour Java peut considérablement améliorer la gestion des données de conception par programmation. Ce tutoriel vous a fourni les connaissances nécessaires pour implémenter efficacement cette fonctionnalité dans vos projets. Pour approfondir vos connaissances, explorez d'autres fonctionnalités de GroupDocs.Viewer ou intégrez-le à d'autres outils pour créer des solutions complètes.
+Vous disposez maintenant d’une méthode complète et prête pour la production afin de **retrieving CAD layouts Java** avec GroupDocs.Viewer. Cette capacité peut considérablement rationaliser l’automatisation de la conception, améliorer la cohérence des données et réduire les efforts manuels dans les pipelines d’ingénierie.
 
 ### Prochaines étapes
+- Essayez d’extraire des métadonnées CAD supplémentaires telles que les dimensions ou les définitions de blocs.  
+- Combinez cette extraction avec GroupDocs.Conversion pour générer des images d’aperçu de chaque mise en page.  
+- Explorez l’intégration avec le stockage cloud (AWS S3, Azure Blob) pour récupérer les fichiers CAD à la demande.
 
-- Expérimentez avec différents formats de fichiers CAO pris en charge par GroupDocs.Viewer.
-- Découvrez comment convertir et afficher ces fichiers à l’aide des capacités de rendu de GroupDocs.Viewer.
+## Foire aux questions
 
-## Section FAQ
+**Q : Quels sont les principaux composants d’un dessin CAD que je peux récupérer ?**  
+R : Vous pouvez extraire les mises en page, les calques, les dimensions et d’autres informations structurelles des dessins CAD.
 
-**Q1 : Quels sont les principaux composants d’un dessin CAO que je peux récupérer ?**
-A1 : Vous pouvez extraire des dispositions, des calques, des dimensions et d’autres informations structurelles à partir de dessins CAO.
+**Q : GroupDocs.Viewer peut‑il gérer tous les types de fichiers CAD ?**  
+R : Oui, il prend en charge divers formats comme DWG, DXF, DGN, etc., mais vérifiez toujours la compatibilité avec le type de fichier spécifique que vous utilisez.
 
-**Q2 : GroupDocs.Viewer peut-il gérer tous les types de fichiers CAO ?**
-A2 : Oui, il prend en charge divers formats tels que DWG, DXF, DGN, etc., mais vérifiez toujours la compatibilité avec le type de fichier spécifique avec lequel vous travaillez.
+**Q : Comment garantir que mon application gère efficacement les gros fichiers CAD ?**  
+R : Optimisez l’utilisation de la mémoire en fermant rapidement les ressources et envisagez de traiter les données par petits lots si possible.
 
-**Q3 : Comment puis-je garantir que mon application gère efficacement les fichiers CAO volumineux ?**
-A3 : Optimisez l’utilisation de la mémoire en fermant rapidement les ressources et envisagez de traiter les données en blocs plus petits si possible.
+**Q : Existe‑t‑il un moyen de filtrer les calques lors de l’extraction ?**  
+R : Bien que le filtrage direct ne soit pas fourni, vous pouvez implémenter une logique personnalisée après l’extraction pour gérer les calques selon vos besoins.
 
-**Q4 : Existe-t-il un moyen de filtrer les calques pendant l’extraction ?**
-A4 : Bien que le filtrage direct ne soit pas fourni, vous pouvez implémenter une logique personnalisée après l'extraction pour gérer les couches selon vos besoins.
+**Q : GroupDocs.Viewer peut‑il être intégré à des solutions de stockage cloud ?**  
+R : Oui, il fonctionne de manière transparente avec divers services cloud pour le stockage et l’accès aux fichiers CAD.
 
-**Q5 : GroupDocs.Viewer peut-il être intégré à des solutions de stockage cloud ?**
-A5 : Oui, il peut fonctionner de manière transparente avec divers services cloud pour stocker et accéder aux fichiers CAO.
+---
+
+**Dernière mise à jour :** 2026-04-06  
+**Testé avec :** GroupDocs.Viewer 25.2 pour Java  
+**Auteur :** GroupDocs  
+
+---
