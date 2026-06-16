@@ -1,36 +1,51 @@
 ---
-"date": "2025-04-24"
-"description": "Erfahren Sie, wie Sie Lizenzen für GroupDocs.Viewer in Java mithilfe lokaler Dateien und URLs einrichten. Stellen Sie die Einhaltung der Lizenzanforderungen einfach sicher."
-"title": "So legen Sie Lizenzen in GroupDocs.Viewer fest – Anleitung zur Einrichtung von Java-Dateien und URLs"
-"url": "/de/java/getting-started/groupdocs-viewer-java-license-setup/"
-"weight": 1
+date: '2026-03-08'
+description: Erfahren Sie, wie Sie eine temporäre Lizenz erhalten, GroupDocs.Viewer
+  für Java mit lokalen Dateien oder URLs einrichten und die Verfügbarkeit des Lizenzpfads
+  überprüfen.
+keywords:
+- GroupDocs.Viewer Java license
+- setting license in Java
+- HTTP URL-based licenses
+title: Wie man eine temporäre Lizenz erhält und Lizenzen in GroupDocs.Viewer Java
+  setzt
 type: docs
+url: /de/java/getting-started/groupdocs-viewer-java-license-setup/
+weight: 1
 ---
-# So legen Sie Lizenzen in GroupDocs.Viewer Java fest: Anleitung zur Datei- und URL-Einrichtung
 
-## Einführung
-Die effiziente Verwaltung von Lizenzen ist entscheidend bei der Integration von Drittanbieterbibliotheken wie **GroupDocs.Viewer für Java** in Ihre Anwendungen integrieren. Dieser Leitfaden befasst sich mit einer häufigen Herausforderung für Entwickler: der nahtlosen Einrichtung und Verwaltung von Lizenzen, unabhängig davon, ob diese lokal gespeichert oder über URLs abgerufen werden. Durch das Verständnis dieser Szenarien können Sie sicherstellen, dass Ihre Anwendung die Lizenzanforderungen erfüllt und gleichzeitig ihre Leistung beibehält.
+# So erhalten Sie eine temporäre Lizenz und setzen Lizenzen in GroupDocs.Viewer Java
 
-### Was Sie lernen werden
-- So legen Sie eine Lizenz für GroupDocs.Viewer aus einer lokalen Datei fest.
-- Effektive Handhabung von HTTP-URL-basierten Lizenzen.
-- Überprüfen der Verfügbarkeit von Lizenzpfaden und Implementieren von Fallback-Mechanismen.
-- Best Practices für die Integration von GroupDocs.Viewer in Ihre Java-Anwendungen.
+Die effiziente Verwaltung von Lizenzen ist entscheidend, wenn Sie Drittanbieter-Bibliotheken wie **GroupDocs.Viewer for Java** in Ihre Anwendungen integrieren. Dieser Leitfaden zeigt Ihnen **wie Sie eine temporäre Lizenz erhalten**, sie aus einer lokalen Datei oder einer HTTP‑URL setzen und überprüfen, dass der Lizenzpfad korrekt ist. Am Ende dieses Tutorials haben Sie ein zuverlässiges, produktionsbereites Lizenzierungs-Setup, das Ihre Anwendung konform und performant hält.
 
-Lassen Sie uns einen Blick auf die erforderlichen Voraussetzungen werfen, bevor wir mit der Implementierung beginnen.
+![File and URL Setup with GroupDocs.Viewer for Java](/viewer/getting-started/file-and-url-setup-png.png)
+
+## Schnelle Antworten
+- **Wie erhalte ich eine temporäre Lizenz?** Fordern Sie eine über die GroupDocs Temporary‑License‑Seite an und laden Sie die *.lic*-Datei herunter.  
+- **Kann ich die Lizenz von einer URL laden?** Ja – geben Sie einfach `License.setLicense` eine HTTP‑Adresse, die eine gültige Lizenzdatei zurückgibt.  
+- **Was passiert, wenn der Lizenzpfad fehlt?** Implementieren Sie eine Prüfung, um Anweisungen anzuzeigen und zu verhindern, dass der Viewer startet.  
+- **Muss ich die Anwendung nach dem Ändern der Lizenz neu starten?** Nein, `License.setLicense` kann zur Laufzeit aufgerufen werden.  
+- **Welche Java‑Version wird benötigt?** JDK 8 oder höher wird empfohlen.
+
+## Was ist eine temporäre Lizenz?
+Eine **temporäre Lizenz** ist ein zeitlich begrenzter Schlüssel, der von GroupDocs ausgestellt wird und Ihnen ermöglicht, das Produkt zu evaluieren, ohne eine vollständige Lizenz zu kaufen. Sie verhält sich genau wie eine permanente Lizenz, solange sie gültig ist, und erlaubt Ihnen, alle Funktionen in einer realen Umgebung zu testen.
+
+## Warum eine temporäre Lizenz erhalten?
+- **Schnelle Evaluierung:** Erhalten Sie sofort die volle Funktionalität für Proof‑of‑Concept‑Projekte.  
+- **Keine finanzielle Verpflichtung:** Testen Sie, bevor Sie kaufen.  
+- **Einfache Integration:** Funktioniert mit denselben API‑Aufrufen wie eine permanente Lizenz.
 
 ## Voraussetzungen
-Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes eingerichtet haben:
-1. **Java Development Kit (JDK):** Es wird Version 8 oder höher empfohlen.
-2. **Integrierte Entwicklungsumgebung (IDE):** Jede IDE, die Java unterstützt, wie etwa IntelliJ IDEA oder Eclipse, funktioniert einwandfrei.
-3. **GroupDocs.Viewer für Java-Bibliothek:** Stellen Sie sicher, dass Sie die Bibliothek heruntergeladen und in Ihrem Projekt konfiguriert haben.
-4. **Grundlegende Java-Kenntnisse:** Um den Anweisungen folgen zu können, sind Kenntnisse der Java-Syntax und -Konzepte erforderlich.
+1. **Java Development Kit (JDK):** Version 8 oder höher.  
+2. **IDE:** IntelliJ IDEA, Eclipse oder jede Java‑kompatible IDE.  
+3. **GroupDocs.Viewer for Java Bibliothek:** Dem Projekt hinzugefügt (siehe Maven‑Setup unten).  
+4. **Grundlegende Java‑Kenntnisse:** Vertrautheit mit Klassen, Imports und Ausnahmebehandlung.
 
-## Einrichten von GroupDocs.Viewer für Java
-Um GroupDocs.Viewer zu verwenden, binden Sie es mit Maven in Ihr Projekt ein. So geht's:
+## Einrichtung von GroupDocs.Viewer für Java
+Um zu beginnen, binden Sie die Bibliothek in Ihr Maven‑Projekt ein.
 
-### Maven-Konfiguration
-Fügen Sie die folgende Konfiguration zu Ihrem `pom.xml` Datei:
+### Maven‑Konfiguration
+Add the following configuration to your `pom.xml` file:
 ```xml
 <repositories>
    <repository>
@@ -48,159 +63,165 @@ Fügen Sie die folgende Konfiguration zu Ihrem `pom.xml` Datei:
 </dependencies>
 ```
 
-### Erwerb einer Lizenz
-Um GroupDocs.Viewer zu verwenden, erwerben Sie eine Lizenz:
-- **Kostenlose Testversion:** Herunterladen von der [GroupDocs-Site](https://releases.groupdocs.com/viewer/java/).
-- **Temporäre Lizenz:** Fordern Sie eines an unter [Seite mit temporärer Lizenz](https://purchase.groupdocs.com/temporary-license/).
-- **Kaufen:** Für eine dauerhafte Lösung sollten Sie den Kauf einer Lizenz von [GroupDocs-Kaufseite](https://purchase.groupdocs.com/buy).
+### Lizenz erwerben
+To use GroupDocs.Viewer, obtain a license:
+- **Kostenlose Testversion:** Download von der [GroupDocs-Website](https://releases.groupdocs.com/viewer/java/).  
+- **Temporäre Lizenz:** Fordern Sie eine an der [Temporary‑License‑Seite](https://purchase.groupdocs.com/temporary-license/).  
+- **Kauf:** Für eine permanente Lösung sollten Sie den Kauf einer Lizenz über die [GroupDocs‑Kaufseite](https://purchase.groupdocs.com/buy) in Betracht ziehen.
 
 ### Grundlegende Initialisierung
-Sobald die Einrichtung abgeschlossen ist, initialisieren Sie GroupDocs.Viewer in Ihrer Java-Anwendung:
+Once the library is added, you can initialize the viewer:
 ```java
 import com.groupdocs.viewer.License;
 
 public class InitializeViewer {
     public static void main(String[] args) {
         License license = new License();
-        // Legen Sie hier den Pfad zu Ihrer Lizenzdatei oder URL fest
+        // Set the path to your license file or URL here
         license.setLicense("YOUR_LICENSE_PATH");
         System.out.println("GroupDocs.Viewer initialized successfully.");
     }
 }
 ```
 
-## Implementierungshandbuch
-Sehen wir uns nun an, wie verschiedene Funktionen zur Lizenzverwaltung in Java implementiert werden.
+## Wie man eine temporäre Lizenz erhält und sie aus einer Datei setzt
+### Überblick
+Das Setzen einer Lizenz aus einer lokalen Datei ist der einfachste Ansatz und funktioniert sogar, wenn die Anwendung offline läuft.
 
-### Festlegen einer Lizenz aus einer Datei
-Diese Funktion demonstriert das Einrichten einer Lizenz mithilfe eines Dateipfads. Dies ist nützlich, wenn Ihre Anwendung lokalen Zugriff auf die Lizenzdatei hat.
+### Implementierungsschritte
+1. **Lizenzpfad definieren** – verweisen Sie auf die *.lic*-Datei, die Sie nach Anforderung einer temporären Lizenz erhalten haben:
+```java
+final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
+```
+2. **Lizenz anwenden** – verwenden Sie die `License`‑Klasse, um sie zu laden:
+```java
+import com.groupdocs.viewer.License;
 
-#### Überblick
-Durch das Festlegen einer Lizenz über eine Datei wird sichergestellt, dass Ihre Anwendung ihren Lizenzstatus überprüfen kann, ohne auf Netzwerkverbindungen angewiesen zu sein, und dass sie dadurch widerstandsfähiger gegenüber Verbindungsproblemen wird.
+public class SetLicenseFromFile {
+    public static void run() {
+        if (licensePath != null && !licensePath.startsWith("http")) {
+            License license = new License();
+            license.setLicense(licensePath);
+            System.out.println("License set successfully.");
+        } else {
+            // Handle cases where the path is not valid
+            System.err.println(
+                "We do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**Tipps:**  
+- Stellen Sie sicher, dass der Dateipfad absolut oder relativ zum Arbeitsverzeichnis ist.  
+- Vergewissern Sie sich, dass die Datei Lese‑Berechtigungen für den Benutzer hat, der die JVM ausführt.
 
-#### Implementierungsschritte
-1. **Definieren Sie den Lizenzpfad:**
-   Geben Sie den Pfad zu Ihrer Lizenzdatei an:
-   ```java
-   final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
-   ```
-2. **Legen Sie die Lizenz fest:**
-   Verwenden Sie die `License` Klasse zum Anwenden der Lizenz:
-   ```java
-   import com.groupdocs.viewer.License;
+## Wie man eine Lizenz‑URL verarbeitet
+### Überblick
+Eine URL‑basierte Lizenz ist praktisch für Cloud‑Deployments, bei denen die Lizenzdatei in einem sicheren Speicher‑Bucket liegt.
 
-   public class SetLicenseFromFile {
-       public static void run() {
-           if (licensePath != null && !licensePath.startsWith("http")) {
-               License license = new License();
-               license.setLicense(licensePath);
-               System.out.println("License set successfully.");
-           } else {
-               // Behandeln Sie Fälle, in denen der Pfad ungültig ist
-               System.err.println(
-                   "We do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
-           }
-       }
-   }
-   ```
-3. **Tipps zur Fehlerbehebung:**
-   - Stellen Sie sicher, dass der Dateipfad korrekt und zugänglich ist.
-   - Stellen Sie sicher, dass die Lizenzdatei nicht beschädigt ist.
+### Implementierungsschritte
+1. **Lizenz‑URL definieren** – ersetzen Sie den Platzhalter durch Ihren tatsächlichen Endpunkt:
+```java
+final String licensePath = "http://example.com/license.lic";
+```
+2. **URL‑Verwendung erkennen und protokollieren** – das untenstehende Beispiel benachrichtigt Sie einfach, dass eine URL angegeben wurde:
+```java
+public class HandleLicenseURL {
+    public static void run() {
+        if (licensePath != null && licensePath.startsWith("http")) {
+            System.err.println("License path was not provided, license URL is found instead!");
+        }
+    }
+}
+```
+**Tipps:**  
+- In der Produktion würden Sie die Datei herunterladen (z. B. mit `java.net.HttpURLConnection`) und dann `license.setLicense(stream)` aufrufen.  
+- Fügen Sie Wiederholungs‑Logik und Timeout‑Behandlung hinzu, um mit vorübergehenden Netzwerkproblemen umzugehen.
 
-### Handhabung der Lizenz-URL
-Diese Funktion demonstriert den Umgang mit über HTTP-URLs bereitgestellten Lizenzen. Sie ist in Umgebungen nützlich, in denen der lokale Speicherplatz begrenzt ist, oder für dynamische Lizenzaktualisierungen.
+## Wie man die Lizenzverfügbarkeit prüft (Lizenzpfad verifizieren)
+### Überblick
+Bevor Sie versuchen, eine Lizenz zu laden, ist es gute Praxis, die **Lizenzverfügbarkeit zu prüfen**, damit Sie Entwickler oder Benutzer anleiten können, bei Bedarf eine temporäre Lizenz zu erhalten.
 
-#### Überblick
-Durch die Handhabung einer Lizenz-URL kann Ihre Anwendung ihre Lizenzierung dynamisch aktualisieren, ohne Code erneut bereitzustellen – ideal für Cloud-basierte Anwendungen.
-
-#### Implementierungsschritte
-1. **Definieren Sie den Lizenzpfad:**
-   Geben Sie an, ob Ihr Pfad eine HTTP-URL ist:
-   ```java
-   final String licensePath = "http://example.com/license.lic";
-   ```
-2. **Überprüfen und Bearbeiten der URL:**
-   Implementieren Sie eine Logik, um URLs anders als Dateipfade zu behandeln:
-   ```java
-   public class HandleLicenseURL {
-       public static void run() {
-           if (licensePath != null && licensePath.startsWith("http")) {
-               System.err.println("License path was not provided, license URL is found instead!");
-           }
-       }
-   }
-   ```
-3. **Tipps zur Fehlerbehebung:**
-   - Stellen Sie sicher, dass die URL zugänglich ist und eine gültige Lizenzdatei zurückgibt.
-   - Behandeln Sie Netzwerkfehler ordnungsgemäß.
-
-### Verfügbarkeit des Lizenzpfads prüfen
-Diese Funktion stellt sicher, dass Ihre Anwendung Fälle verarbeiten kann, in denen kein Lizenzpfad angegeben ist, und fordert Benutzer bei Bedarf auf, einen zu erwerben.
-
-#### Überblick
-Durch die Überprüfung der Verfügbarkeit eines Lizenzpfads können Sie die Einhaltung der Vorschriften gewährleisten, indem Sie Entwickler benachrichtigen, wenn eine Lizenz eingerichtet oder aktualisiert werden muss.
-
-#### Implementierungsschritte
-1. **Definieren Sie den Lizenzpfad:**
-   Beginnen Sie mit einem Nullwert, um eine fehlende Lizenz zu simulieren:
-   ```java
-   final String licensePath = null;
-   ```
-2. **Verfügbarkeitsprüfung durchführen:**
-   Geben Sie Feedback, wenn kein Pfad verfügbar ist:
-   ```java
-   public class CheckLicensePathAvailability {
-       public static void run() {
-           if (licensePath == null) {
-               System.out.println(
-                   "\nWe do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
-           }
-       }
-   }
-   ```
-3. **Tipps zur Fehlerbehebung:**
-   - Stellen Sie sicher, dass die Anwendung klare Anweisungen zum Erwerb einer Lizenz enthält.
-   - Überprüfen Sie die Netzwerkkonnektivität, wenn Sie Lizenzen von URLs abrufen.
+### Implementierungsschritte
+1. **Fehlenden Lizenzpfad simulieren**:
+```java
+final String licensePath = null;
+```
+2. **Klare Anweisungen bereitstellen, wenn der Pfad fehlt**:
+```java
+public class CheckLicensePathAvailability {
+    public static void run() {
+        if (licensePath == null) {
+            System.out.println(
+                "\nWe do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**Tipps:**  
+- Protokollieren Sie diese Meldung beim Start, damit das Betriebsteam weiß, dass eine Lizenz fehlt.  
+- Erwägen Sie, die Anwendung zu beenden oder Viewer‑Funktionen zu deaktivieren, bis eine gültige Lizenz bereitgestellt wird.
 
 ## Praktische Anwendungen
-Wenn Sie wissen, wie Sie GroupDocs.Viewer-Lizenzen effektiv verwalten, eröffnen sich Ihnen mehrere praktische Anwendungsmöglichkeiten:
-1. **Dokumentenmanagementsysteme:** Integrieren Sie nahtlos Dokumentanzeigefunktionen mit robusten Lizenzprüfungen.
-2. **Cloud-basierte Lösungen:** Aktualisieren und validieren Sie Lizenzen dynamisch in einer Cloud-Umgebung mithilfe von URL-basierten Lizenzen.
-3. **Unternehmenssoftware:** Stellen Sie die Konformität sicher, indem Sie die Lizenzverfügbarkeit überprüfen, bevor Sie Funktionen bereitstellen, die von GroupDocs.Viewer abhängig sind.
+Das Verständnis, **wie man eine temporäre Lizenz erhält**, sie aus einer Datei oder URL setzt und die **Verfügbarkeit des Lizenzpfads** prüft, eröffnet mehrere reale Szenarien:
+1. **Document Management Systeme** – betten Sie einen Viewer ein, der bei jedem Start automatisch seine Lizenz validiert.  
+2. **Cloud‑SaaS‑Plattformen** – speichern Sie die Lizenz in einem geschützten Blob‑Speicher und laden Sie sie per URL für Updates ohne Ausfallzeit.  
+3. **Enterprise‑Deployments** – verwenden Sie eine temporäre Lizenz während Pilotphasen, bevor Sie eine großflächige Lizenz erwerben.
 
-## Überlegungen zur Leistung
-So optimieren Sie die Leistung Ihrer Anwendung bei Verwendung von GroupDocs.Viewer:
-- **Ressourcennutzung optimieren:** Überwachen Sie die Speichernutzung, um Speicherlecks zu vermeiden, insbesondere bei der Verarbeitung großer Dokumente.
-- **Java-Speicherverwaltung:** Nutzen Sie die Best Practices von Java für eine effiziente Ressourcenverwaltung.
+## Leistungsüberlegungen
+- **Ressourcennutzung:** Laden Sie die Lizenz einmal beim Anwendungsstart; wiederholte Aufrufe verursachen unnötige I/O.  
+- **Speicherverwaltung:** Das `License`‑Objekt hält nur minimalen Zustand, schließen Sie jedoch immer Streams, wenn Sie die Lizenz manuell herunterladen.
 
-## Abschluss 
-Zusammenfassend lässt sich sagen, dass die ordnungsgemäße Verwaltung von Lizenzen in GroupDocs.Viewer für Java nahtlose Funktionalität und Compliance gewährleistet. Ob Sie Lizenzen über lokale Dateien oder URLs einrichten, deren Verfügbarkeit prüfen oder Fallback-Mechanismen implementieren – jeder Schritt erhöht die Robustheit Ihrer Anwendung. Die ordnungsgemäße Lizenzintegration verhindert nicht nur Störungen, sondern optimiert auch die Leistung und Anpassungsfähigkeit in verschiedenen Einsatzumgebungen.
+## Fazit
+Wenn Sie die obigen Schritte befolgen, können Sie **eine temporäre Lizenz erhalten**, GroupDocs.Viewer für Java entweder mit einer lokalen Datei oder einer HTTP‑URL konfigurieren und **die Lizenzverfügbarkeit prüfen**, um Ihre Anwendung konform zu halten. Diese solide Lizenzierungsgrundlage verhindert Laufzeitfehler und gibt Ihnen die Flexibilität, mit Zuversicht zwischen Entwicklungs-, Test‑ und Produktionsumgebungen zu wechseln.
 
+### FAQ
 
-### Häufig gestellte Fragen
+1. **Wie setze ich eine lokale Lizenzdatei in GroupDocs.Viewer Java?**  
 
-1. **Wie lege ich eine lokale Lizenzdatei in GroupDocs.Viewer Java fest?**  
-
-Verwenden `license.setLicense("path/to/license.lic")` mit dem richtigen Dateipfad, um eine lokale Lizenz anzuwenden.
+   Verwenden Sie `license.setLicense("path/to/license.lic")` mit dem korrekten Dateipfad, um eine lokale Lizenz anzuwenden.
 
 2. **Kann ich eine Lizenz direkt von einer URL laden?**  
 
-Ja, aber stellen Sie sicher, dass Ihr Code den URL-Zugriff verarbeitet, möglicherweise die Lizenz zur Laufzeit herunterlädt oder Netzwerkprobleme verwaltet.
+   Ja, stellen Sie jedoch sicher, dass Ihr Code den URL‑Zugriff behandelt, ggf. die Lizenz zur Laufzeit herunterlädt oder Netzwerkprobleme verwaltet.
 
-3. **Was soll ich tun, wenn der Lizenzpfad ungültig ist oder fehlt?**  
+3. **Was soll ich tun, wenn der Lizenzpfad ungültig oder fehlt?**  
 
-Implementieren Sie Prüfungen auf Null- oder ungültige Pfade und stellen Sie Anleitungen oder Fallback-Eingabeaufforderungen zum Erhalt einer gültigen Lizenz bereit.
+   Implementieren Sie Prüfungen auf null oder ungültige Pfade und geben Sie Anweisungen oder Fallback‑Hinweise, um eine gültige Lizenz zu erhalten.
 
 4. **Ist es möglich, dynamisch zwischen Lizenzdatei und URL zu wechseln?**  
 
-Auf jeden Fall, indem Sie eine bedingte Logik hinzufügen, um beide Szenarien basierend auf Ihren Umgebungs- oder Laufzeitparametern zu behandeln.
+   Absolut, indem Sie bedingte Logik hinzufügen, die beide Szenarien basierend auf Ihrer Umgebung oder Laufzeitparametern behandelt.
 
-5. **Was sind Best Practices für das Lizenzmanagement in der Produktion?**  
+5. **Was sind bewährte Methoden für das Lizenzmanagement in der Produktion?**  
 
-Speichern Sie Lizenzen sicher, überprüfen Sie regelmäßig ihre Gültigkeit und implementieren Sie eine Fehlerbehandlung für Lizenzprobleme, um einen unterbrechungsfreien Service zu gewährleisten.
+   Lizenzen sicher speichern, ihre Gültigkeit regelmäßig überprüfen und Fehlerbehandlung für Lizenzprobleme implementieren, um einen ununterbrochenen Service zu gewährleisten.
+
+## Häufig gestellte Fragen
+
+**F: Wie lange dauert eine temporäre Lizenz?**  
+A: In der Regel 30 Tage, danach können Sie eine Verlängerung anfordern oder auf eine permanente Lizenz upgraden.
+
+**F: Benötige ich eine Internetverbindung, um eine dateibasierte Lizenz zu verwenden?**  
+A: Nein. Eine lokale *.lic*-Datei funktioniert vollständig offline, sobald sie geladen ist.
+
+**F: Kann ich die Lizenzdatei zur zusätzlichen Sicherheit verschlüsseln?**  
+A: Die Lizenzdatei ist bereits von GroupDocs signiert; zusätzliche Verschlüsselung ist optional, aber nicht erforderlich.
+
+**F: Was passiert, wenn die Lizenz abläuft, während die Anwendung läuft?**  
+A: Viewer‑Operationen werfen Lizenzierungs‑Ausnahmen; es wird empfohlen, das Ablaufdatum beim Start zu prüfen.
+
+**F: Ist es sicher, die Lizenz‑URL im Quellcode‑Repository zu speichern?**  
+A: Vermeiden Sie das Committen sensibler URLs; verwenden Sie stattdessen Umgebungsvariablen oder sichere Konfigurationsspeicher.
+
+---
+
+**Zuletzt aktualisiert:** 2026-03-08  
+**Getestet mit:** GroupDocs.Viewer 25.2 für Java  
+**Autor:** GroupDocs

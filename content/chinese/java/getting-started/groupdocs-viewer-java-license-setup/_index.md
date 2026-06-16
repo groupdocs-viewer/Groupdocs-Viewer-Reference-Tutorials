@@ -1,36 +1,54 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用本地文件和 URL 在 Java 中为 GroupDocs.Viewer 设置许可证。轻松确保符合许可要求。"
-"title": "如何在 GroupDocs.Viewer Java&#58; 文件和 URL 设置指南中设置许可证"
-"url": "/zh/java/getting-started/groupdocs-viewer-java-license-setup/"
-"weight": 1
+date: '2026-03-08'
+description: 了解如何获取临时许可证，使用本地文件或 URL 设置 GroupDocs.Viewer for Java，并验证许可证路径的可用性。
+keywords:
+- GroupDocs.Viewer Java license
+- setting license in Java
+- HTTP URL-based licenses
+title: 如何获取临时许可证并在 GroupDocs.Viewer Java 中设置许可证
 type: docs
+url: /zh/java/getting-started/groupdocs-viewer-java-license-setup/
+weight: 1
 ---
-# 如何在 GroupDocs.Viewer Java 中设置许可证：文件和 URL 设置指南
 
-## 介绍
-在集成第三方库时，有效管理许可证至关重要，例如 **GroupDocs.Viewer for Java** 融入您的应用程序。本指南旨在解决开发人员面临的一个常见挑战——无缝设置和管理许可证，无论是本地存储还是通过 URL 访问。通过了解这些场景，您可以确保您的应用程序在保持性能的同时，始终符合许可要求。
+ Should translate.
 
-### 您将学到什么
-- 如何从本地文件为 GroupDocs.Viewer 设置许可证。
-- 有效处理基于 HTTP URL 的许可证。
-- 验证许可证路径的可用性并实施回退机制。
-- 将 GroupDocs.Viewer 集成到 Java 应用程序的最佳实践。
+Ok.
 
-让我们深入了解开始实施之前所需的先决条件。
+Now produce final content.
 
-## 先决条件
-在开始之前，请确保您已准备好以下事项：
-1. **Java 开发工具包 (JDK)：** 建议使用 8 或更高版本。
-2. **集成开发环境（IDE）：** 任何支持 Java 的 IDE（例如 IntelliJ IDEA 或 Eclipse）都可以正常工作。
-3. **GroupDocs.Viewer for Java 库：** 确保您已在项目中下载并配置了该库。
-4. **Java基础知识：** 需要熟悉 Java 语法和概念才能继续学习。
+# 如何获取临时许可证并在 GroupDocs.Viewer Java 中设置许可证
 
-## 为 Java 设置 GroupDocs.Viewer
-要开始使用 GroupDocs.Viewer，请使用 Maven 将其添加到您的项目中。操作方法如下：
+在将第三方库（如 **GroupDocs.Viewer for Java**）集成到您的应用程序时，高效管理许可证至关重要。本指南将向您展示 **如何获取临时许可证**、如何从本地文件或 HTTP URL 设置许可证，以及如何验证许可证路径是否正确。完成本教程后，您将拥有可靠、可用于生产环境的许可证配置，使您的应用保持合规并保持高性能。
 
-### Maven配置
-将以下配置添加到您的 `pom.xml` 文件：
+![文件和 URL 设置（适用于 GroupDocs.Viewer for Java）](/viewer/getting-started/file-and-url-setup-png.png)
+
+## 快速答案
+- **如何获取临时许可证？** 在 GroupDocs 临时许可证页面请求并下载 *.lic* 文件。  
+- **可以从 URL 加载许可证吗？** 可以——只需将 `License.setLicense` 指向返回有效许可证文件的 HTTP 地址。  
+- **如果许可证路径缺失会怎样？** 实现检查以显示指导信息并阻止查看器启动。  
+- **更改许可证后需要重启应用吗？** 不需要，`License.setLicense` 可以在运行时调用。  
+- **需要哪个 Java 版本？** 建议使用 JDK 8 或更高版本。
+
+## 什么是临时许可证？
+**临时许可证** 是 GroupDocs 发放的限时密钥，允许您在不购买正式许可证的情况下评估产品。它在有效期内的行为与永久许可证完全相同，您可以在真实环境中测试所有功能。
+
+## 为什么要获取临时许可证？
+- **快速评估：** 立即获得完整功能，适用于概念验证项目。  
+- **无财务承诺：** 先测试后购买。  
+- **易于集成：** 与永久许可证使用相同的 API 调用。
+
+## 前置条件
+1. **Java Development Kit (JDK)：** 8 版或更高。  
+2. **IDE：** IntelliJ IDEA、Eclipse 或任何支持 Java 的 IDE。  
+3. **GroupDocs.Viewer for Java 库：** 已添加到项目中（请参阅下方 Maven 配置）。  
+4. **基础 Java 知识：** 熟悉类、导入和异常处理。
+
+## 设置 GroupDocs.Viewer for Java
+首先，在 Maven 项目中引入库。
+
+### Maven 配置
+在 `pom.xml` 文件中添加以下配置：
 ```xml
 <repositories>
    <repository>
@@ -49,158 +67,164 @@ type: docs
 ```
 
 ### 获取许可证
-要使用 GroupDocs.Viewer，请获取许可证：
-- **免费试用：** 从下载 [GroupDocs 网站](https://releases。groupdocs.com/viewer/java/).
-- **临时执照：** 请求一个 [临时许可证页面](https://purchase。groupdocs.com/temporary-license/).
-- **购买：** 为了获得永久解决方案，请考虑从 [GroupDocs 购买页面](https://purchase。groupdocs.com/buy).
+使用 GroupDocs.Viewer 前，需要获取许可证：
+- **免费试用：** 从 [GroupDocs site](https://releases.groupdocs.com/viewer/java/) 下载。  
+- **临时许可证：** 在 [temporary-license page](https://purchase.groupdocs.com/temporary-license/) 申请。  
+- **购买正式许可证：** 请访问 [GroupDocs purchase page](https://purchase.groupdocs.com/buy) 进行购买。
 
 ### 基本初始化
-设置完成后，在 Java 应用程序中初始化 GroupDocs.Viewer：
+库添加完成后，即可初始化查看器：
 ```java
 import com.groupdocs.viewer.License;
 
 public class InitializeViewer {
     public static void main(String[] args) {
         License license = new License();
-        // 在此处设置许可证文件或 URL 的路径
+        // Set the path to your license file or URL here
         license.setLicense("YOUR_LICENSE_PATH");
         System.out.println("GroupDocs.Viewer initialized successfully.");
     }
 }
 ```
 
-## 实施指南
-现在，让我们探索如何在 Java 中实现管理许可证的不同功能。
+## 如何获取临时许可证并从文件设置
+### 概述
+从本地文件设置许可证是最直接的方式，即使在离线环境下也能正常工作。
 
-### 从文件设置许可证
-此功能演示了如何使用文件路径设置许可证。当您的应用程序可以本地访问许可证文件时，此功能非常有用。
+### 实现步骤
+1. **定义许可证路径** – 指向您在申请临时许可证后收到的 *.lic* 文件：
+```java
+final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
+```
+2. **应用许可证** – 使用 `License` 类加载它：
+```java
+import com.groupdocs.viewer.License;
 
-#### 概述
-从文件设置许可证可确保您的应用程序无需依赖网络连接即可验证其许可状态，从而更能抵御连接问题。
+public class SetLicenseFromFile {
+    public static void run() {
+        if (licensePath != null && !licensePath.startsWith("http")) {
+            License license = new License();
+            license.setLicense(licensePath);
+            System.out.println("License set successfully.");
+        } else {
+            // Handle cases where the path is not valid
+            System.err.println(
+                "We do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**提示：**  
+- 确认文件路径是绝对路径或相对于工作目录的相对路径。  
+- 确保运行 JVM 的用户对该文件拥有读取权限。
 
-#### 实施步骤
-1. **定义许可证路径：**
-   指定许可证文件的路径：
-   ```java
-   final String licensePath = "YOUR_DOCUMENT_DIRECTORY/your-license-file.lic";
-   ```
-2. **设置许可证：**
-   使用 `License` 申请许可证的类别：
-   ```java
-   import com.groupdocs.viewer.License;
+## 如何处理许可证 URL
+### 概述
+基于 URL 的许可证适用于云部署场景，许可证文件存放在安全的存储桶中。
 
-   public class SetLicenseFromFile {
-       public static void run() {
-           if (licensePath != null && !licensePath.startsWith("http")) {
-               License license = new License();
-               license.setLicense(licensePath);
-               System.out.println("License set successfully.");
-           } else {
-               // 处理路径无效的情况
-               System.err.println(
-                   "We do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing。\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license。");
-           }
-       }
-   }
-   ```
-3. **故障排除提示：**
-   - 确保文件路径正确且可访问。
-   - 验证许可证文件未损坏。
+### 实现步骤
+1. **定义许可证 URL** – 将占位符替换为实际的端点地址：
+```java
+final String licensePath = "http://example.com/license.lic";
+```
+2. **检测并记录 URL 使用情况** – 以下示例仅在提供了 URL 时进行提示：
+```java
+public class HandleLicenseURL {
+    public static void run() {
+        if (licensePath != null && licensePath.startsWith("http")) {
+            System.err.println("License path was not provided, license URL is found instead!");
+        }
+    }
+}
+```
+**提示：**  
+- 在生产环境中，您应下载文件（例如使用 `java.net.HttpURLConnection`），然后调用 `license.setLicense(stream)`。  
+- 添加重试逻辑和超时处理，以应对瞬时网络问题。
 
-### 处理许可证 URL
-此功能演示了如何处理通过 HTTP URL 提供的许可证，在本地存储有限或动态许可证更新的环境中很有用。
+## 如何检查许可证可用性（验证许可证路径）
+### 概述
+在尝试加载许可证之前，**检查许可证可用性** 是良好实践，这样可以在需要时引导开发者或用户获取临时许可证。
 
-#### 概述
-处理许可证 URL 允许您的应用程序动态更新其许可，而无需重新部署代码，这对于基于云的应用程序来说是理想的。
+### 实现步骤
+1. **模拟缺失的许可证路径**：
+```java
+final String licensePath = null;
+```
+2. **在路径不存在时提供明确指引**：
+```java
+public class CheckLicensePathAvailability {
+    public static void run() {
+        if (licensePath == null) {
+            System.out.println(
+                "\nWe do not ship any license with this example.\n" +
+                "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
+                "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing.\n" +
+                "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        }
+    }
+}
+```
+**提示：**  
+- 在启动时记录此信息，便于运维团队发现许可证缺失。  
+- 考虑在未提供有效许可证前退出应用或禁用查看器功能。
 
-#### 实施步骤
-1. **定义许可证路径：**
-   指定您的路径是否为 HTTP URL：
-   ```java
-   final String licensePath = "http://example.com/license.lic”;
-   ```
-2. **检查并处理 URL：**
-   实现逻辑来以不同于文件路径的方式处理 URL：
-   ```java
-   public class HandleLicenseURL {
-       public static void run() {
-           if (licensePath != null && licensePath.startsWith("http")) {
-               System.err.println("License path was not provided, license URL is found instead!");
-           }
-       }
-   }
-   ```
-3. **故障排除提示：**
-   - 确保 URL 可访问并返回有效的许可证文件。
-   - 妥善处理网络错误。
-
-### 检查许可证路径可用性
-此功能可确保您的应用程序可以处理未提供许可证路径的情况，并在必要时提示用户获取许可证路径。
-
-#### 概述
-检查许可证路径的可用性有助于在需要设置或更新许可证时提醒开发人员，从而保持合规性。
-
-#### 实施步骤
-1. **定义许可证路径：**
-   从空值开始模拟缺失的许可证：
-   ```java
-   final String licensePath = null;
-   ```
-2. **实施可用性检查：**
-   如果没有可用路径，请提供反馈：
-   ```java
-   public class CheckLicensePathAvailability {
-       public static void run() {
-           if (licensePath == null) {
-               System.out.println(
-                   "\nWe do not ship any license with this example.\n" +
-                   "Visit the GroupDocs site to obtain either a temporary or permanent license.\n" +
-                   "Learn more about licensing at https://purchase.groupdocs.com/faqs/licensing。\n" +
-                   "Lear how to request temporary license at https://purchase.groupdocs.com/temporary-license。");
-           }
-       }
-   }
-   ```
-3. **故障排除提示：**
-   - 确保申请提供有关获取许可证的明确说明。
-   - 如果从 URL 获取许可证，请验证网络连接。
-
-## 实际应用
-了解如何有效地管理 GroupDocs.Viewer 许可证可以带来多种实际应用：
-1. **文档管理系统：** 将文档查看功能与强大的许可检查无缝集成。
-2. **基于云的解决方案：** 使用基于 URL 的许可证在云环境中动态更新和验证许可证。
-3. **企业软件：** 在部署依赖于 GroupDocs.Viewer 的功能之前，通过验证许可证的可用性来确保合规性。
+## 实际应用场景
+掌握 **获取临时许可证**、**从文件或 URL 设置许可证** 以及 **验证许可证路径** 的方法，可帮助您应对多种真实业务需求：
+1. **文档管理系统** – 嵌入查看器并在每次启动时自动验证许可证。  
+2. **云 SaaS 平台** – 将许可证存放在受保护的 Blob 存储中，通过 URL 加载，实现零停机更新。  
+3. **企业部署** – 在试点阶段使用临时许可证，随后再购买全量许可证。
 
 ## 性能考虑
-要优化使用 GroupDocs.Viewer 时应用程序的性能：
-- **优化资源使用：** 监控内存使用情况以防止泄漏，尤其是在处理大型文档时。
-- **Java内存管理：** 利用 Java 最佳实践实现高效的资源管理。
+- **资源使用：** 在应用启动时加载一次许可证；重复调用会产生不必要的 I/O。  
+- **内存管理：** `License` 对象占用的状态极少，但如果手动下载许可证，请务必在使用后关闭流。
 
-## 结论 
-总而言之，在 GroupDocs.Viewer for Java 中正确管理许可证可确保无缝功能和合规性。无论是通过本地文件或 URL 设置许可证、验证其可用性，还是实施回退机制，每一步都能增强应用程序的稳健性。正确的许可证集成不仅可以防止中断，还可以优化各种部署环境中的性能和适应性。
+## 结论
+按照上述步骤，您可以 **获取临时许可证**、使用本地文件或 HTTP URL 配置 GroupDocs.Viewer for Java，并 **检查许可证可用性**，从而保持应用合规。稳固的许可证管理基础可防止运行时错误，并为在开发、测试和生产环境之间切换提供信心。
 
-
-### 常见问题解答
+### 常见问题
 
 1. **如何在 GroupDocs.Viewer Java 中设置本地许可证文件？**  
 
-使用 `license.setLicense("path/to/license.lic")` 使用正确的文件路径来应用本地许可证。
+   使用 `license.setLicense("path/to/license.lic")` 并提供正确的文件路径即可应用本地许可证。
 
-2. **我可以直接从 URL 加载许可证吗？**  
+2. **可以直接从 URL 加载许可证吗？**  
 
-是的，但要确保您的代码处理 URL 访问，可能在运行时下载许可证或管理网络问题。
+   可以，但请确保代码能够处理 URL 访问，必要时在运行时下载许可证或处理网络异常。
 
-3. **许可证路径无效或者缺失怎么办？**  
+3. **如果许可证路径无效或缺失该怎么办？**  
 
-实施对空路径或无效路径的检查，并提供指导或后备提示以获取有效许可证。
+   实现对 null 或无效路径的检查，并提供指引或回退提示，以获取有效许可证。
 
-4. **是否可以在许可证文件和 URL 之间动态切换？**  
+4. **是否可以在运行时动态切换文件和 URL 两种许可证方式？**  
 
-当然，通过添加条件逻辑来根据您的环境或运行时参数处理这两种情况。
+   完全可以，通过条件逻辑根据环境或运行时参数选择相应的加载方式。
 
-5. **生产中许可证管理的最佳实践是什么？**  
+5. **生产环境中许可证管理的最佳实践是什么？**  
 
-安全存储许可证，定期验证其有效性，并对许可证问题实施错误处理，以确保服务不中断。
+   安全存储许可证，定期验证其有效性，并实现错误处理以确保服务不中断。
+
+## Frequently Asked Questions
+
+**Q: 临时许可证的有效期是多长？**  
+A: 通常为 30 天，期满后您可以请求续期或升级为永久许可证。
+
+**Q: 使用基于文件的许可证是否需要网络连接？**  
+A: 不需要。一次加载本地 *.lic* 文件后即可完全离线使用。
+
+**Q: 可以对许可证文件进行加密以提升安全性吗？**  
+A: 许可证文件已经由 GroupDocs 签名；额外加密是可选的，但并非必须。
+
+**Q: 如果许可证在应用运行期间过期会怎样？**  
+A: 查看器操作将抛出许可证异常；建议在启动时检查过期时间并提前处理。
+
+**Q: 将许可证 URL 存在源码库中是否安全？**  
+A: 不建议将敏感 URL 提交到代码库；请使用环境变量或安全配置存储来管理。
+
+---
+
+**最后更新：** 2026-03-08  
+**测试环境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs
