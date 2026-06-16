@@ -1,40 +1,39 @@
 ---
-date: '2026-01-15'
-description: Leer hoe u Word‑wijzigingen met bijhouden kunt weergeven en revisies
-  van Word‑documenten kunt bekijken in Word‑bestanden met GroupDocs.Viewer voor Java.
-  Volg deze stapsgewijze handleiding voor ontwikkelaars.
+date: '2026-03-29'
+description: Leer hoe je HTML genereert uit DOCX en de door Word bijgehouden wijzigingen
+  rendert met GroupDocs Viewer voor Java – een stapsgewijze handleiding over het renderen
+  van wijzigingen en het bekijken van revisies.
 keywords:
 - render tracked changes Word docs GroupDocs Viewer Java
 - GroupDocs Viewer Java setup
 - Java document rendering
-title: Renderen van wijzigingen bijhouden in Word‑documenten met GroupDocs.Viewer
-  voor Java
+title: HTML genereren uit DOCX & Tracked Changes weergeven (Java)
 type: docs
 url: /nl/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Render word tracked changes in Word-documenten met GroupDocs.Viewer voor Java
+# Genereer HTML vanuit DOCX & Render Bijgehouden Wijzigingen (Java)
 
-Als u **render word tracked changes** in uw Java‑applicatie moet weergeven, bent u hier aan het juiste adres. In deze gids laten we u zien hoe u elke revisie, invoeging en verwijdering die in een Word‑bestand voorkomt, kunt weergeven en omzetten naar nette, doorzoekbare HTML. Of u nu een document‑reviewportaal, een juridisch‑casemanagementsysteem of een andere oplossing bouwt die **view word document revisions** moet kunnen, deze tutorial leidt u door het volledige proces — van omgeving configuratie tot uiteindelijke rendering.
+Als je **HTML vanuit DOCX genereren** moet doen terwijl je ook elke tracked revision weergeeft, ben je op de juiste plek. In deze tutorial lopen we stap voor stap door hoe je **render word tracked changes** kunt uitvoeren, een Word‑document omzetten naar schone, navigeerbare HTML, en geven we je de tools om document‑review portals, juridische case‑management systemen, of elke app die **view word document revisions** moet bekijken te bouwen. Je ziet de volledige end‑to‑end flow — van Maven‑configuratie tot de uiteindelijke HTML‑bestanden — zodat je dit binnen enkele minuten in je Java‑project kunt opnemen.
 
-![Render Tracked Changes in Word Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
+![Render Bijgehouden Wijzigingen in Word-documenten met GroupDocs.Viewer voor Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
-## Snelle antwoorden
-- **What does “render word tracked changes” mean?** Het zet de revisiemarkeringen van een Word‑bestand om in een visuele HTML‑representatie.  
-- **Which library handles this?** GroupDocs.Viewer for Java.  
-- **Do I need a license?** Een gratis proefversie werkt voor evaluatie; een volledige licentie verwijdert alle beperkingen.  
-- **What Java version is required?** Java 8 of nieuwer.  
-- **Can I disable tracked‑changes rendering?** Ja — stel `setRenderTrackedChanges(false)` in de weergave‑opties in.
+## Snelle Antwoorden
+- **Wat betekent “render word tracked changes”?** Het converteert de revisiemarkering van een Word‑bestand naar een visuele HTML‑representatie.  
+- **Welke bibliotheek handelt dit af?** GroupDocs.Viewer for Java.  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een volledige licentie verwijdert alle beperkingen.  
+- **Welke Java‑versie is vereist?** Java 8 of nieuwer.  
+- **Kan ik het renderen van tracked‑changes uitschakelen?** Ja—stel `setRenderTrackedChanges(false)` in de weergave‑opties in.
 
 ## Wat is “render word tracked changes”?
-Render word tracked changes betekent dat de revisie‑gegevens die in een `.docx`‑bestand zijn opgeslagen (invoegingen, verwijderingen, opmerkingen, enz.) worden genomen en worden omgezet naar een weergave‑formaat — meestal HTML — waarin die wijzigingen visueel worden gemarkeerd. Hierdoor kunnen eindgebruikers precies zien wat er is aangepast zonder Microsoft Word te openen.
+Renderen van word tracked changes betekent dat de revisie‑gegevens die in een `.docx`‑bestand zijn opgeslagen (invoegingen, verwijderingen, opmerkingen, enz.) worden genomen en omgezet naar een weergave‑formaat — meestal HTML — waarin die wijzigingen visueel worden gemarkeerd. Dit stelt eindgebruikers in staat precies te zien wat er is aangepast zonder Microsoft Word te openen.
 
 ## Waarom GroupDocs.Viewer gebruiken om word document revisions te bekijken?
-GroupDocs.Viewer voor Java abstraheert de low‑level OpenXML‑afhandeling en biedt één enkele API‑aanroep om HTML, PDF of afbeeldingen te genereren. Het ondersteunt ook **view word document revisions** direct, waarbij styling, ingesloten bronnen en wijzigingsbijhouden behouden blijven.
+GroupDocs.Viewer for Java abstraheert de low‑level OpenXML‑afhandeling en biedt je één API‑aanroep om HTML, PDF of afbeeldingen te genereren. Het ondersteunt ook **view word document revisions** direct, waarbij styling, ingesloten bronnen en wijzigingsbijhouden behouden blijven.
 
 ## Vereisten
-- **GroupDocs.Viewer for Java** bibliotheek versie 25.2 of hoger.  
+- **GroupDocs.Viewer for Java** bibliotheek versie 25.2 of later.  
 - Maven voor afhankelijkheidsbeheer.  
 - Basis Java‑ontwikkelomgeving (IDE, JDK 8+).  
 
@@ -60,31 +59,31 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Licentie‑acquisitie
-Begin met een gratis proefversie of vraag een tijdelijke evaluatielicentie aan. Wanneer u klaar bent voor productie, koop een volledige licentie om alle functies te ontgrendelen.
+### Licentie‑verwerving
+Begin met een gratis proefversie of vraag een tijdelijke evaluatielicentie aan. Wanneer je klaar bent voor productie, koop een volledige licentie om alle functies te ontgrendelen.
 
 ### Basisinitialisatie
-Importeer de benodigde klassen in uw Java‑code en bereid bestands‑paden voor invoer en uitvoer voor.
+Importeer de benodigde klassen in je Java‑code en bereid bestands‑paden voor invoer en uitvoer voor.
 
-## Hoe render word tracked changes in Word‑documenten
+## Hoe HTML te genereren vanuit DOCX en tracked changes te renderen
 
-Hieronder vindt u een stapsgewijze walkthrough die exact de code bevat die u nodig heeft. De code‑blokken blijven ongewijzigd vanuit de originele tutorial.
+Hieronder vind je een stapsgewijze walkthrough die exact de code weergeeft die je nodig hebt. De code‑blokken blijven ongewijzigd vanuit de originele tutorial.
 
-### Stap 1: Definieer het uitvoermap‑pad
+### Stap 1: Definieer het Uitvoer‑directory‑pad
 Maak een map aan waarin de gerenderde HTML‑pagina's worden opgeslagen.
 
 ```java
 Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
-### Stap 2: Specificeer het formaat voor het opslaan van elke pagina
+### Stap 2: Specificeer het Formaat voor het Opslaan van Elke Pagina
 Stel een naamgevingspatroon in voor elk gegenereerd HTML‑bestand.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-### Stap 3: Configureer weergave‑opties
+### Stap 3: Configureer View‑opties
 Schakel ingesloten bronnen in en zet het renderen van tracked‑changes aan.
 
 ```java
@@ -92,7 +91,7 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
-### Stap 4: Maak een Viewer‑instantie en render
+### Stap 4: Maak een Viewer‑instantie en Render
 Laad het Word‑document dat tracked changes bevat en genereer de HTML‑output.
 
 ```java
@@ -101,48 +100,52 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-## Veelvoorkomende problemen en oplossingen
-- **Incorrect file paths** – Controleer dubbel dat `YOUR_OUTPUT_DIRECTORY` en `YOUR_DOCUMENT_DIRECTORY` naar bestaande mappen wijzen.  
-- **Unsupported document format** – Zorg ervoor dat het bestand een `.docx` of `.doc` is die door GroupDocs.Viewer wordt ondersteund.  
-- **Missing license** – Zonder een geldige licentie kan de bibliotheek de renderingsmogelijkheden beperken.
+## Hoe wijzigingen in Word‑documenten te renderen – veelvoorkomende valkuilen
+- **Onjuiste bestands‑paden** – Controleer dubbel dat `YOUR_OUTPUT_DIRECTORY` en `YOUR_DOCUMENT_DIRECTORY` naar bestaande mappen wijzen.  
+- **Niet‑ondersteund documentformaat** – Zorg ervoor dat het bestand een `.docx` of `.doc` is die GroupDocs.Viewer ondersteunt.  
+- **Ontbrekende licentie** – Zonder een geldige licentie kan de bibliotheek de render‑mogelijkheden beperken.
 
-## Praktische toepassingen
+## Praktische Toepassingen
 1. **Document Review Systems** – Toon beoordelaars precies wat er is toegevoegd of verwijderd.  
 2. **Legal Case Management** – Markeer wijzigingen in contracten of pleidooien.  
 3. **Academic Collaboration** – Visualiseer bijdragen van meerdere auteurs.
 
-## Prestatie‑overwegingen
+## Prestatieoverwegingen
 - Verwerk een beperkt aantal documenten gelijktijdig om het geheugenverbruik laag te houden.  
-- Gebruik efficiënte mapstructuren om I/O‑overhead te verminderen.  
+- Gebruik efficiënte directory‑structuren om I/O‑overhead te verminderen.  
 - Houd de bibliotheek up‑to‑date; nieuwere releases bevatten prestatie‑optimalisaties.
 
 ## Conclusie
-U heeft nu een volledige, productie‑klare methode om **render word tracked changes** en **view word document revisions** te gebruiken met GroupDocs.Viewer voor Java. Integreer deze stappen in uw applicatie en u biedt gebruikers een krachtige, interactieve document‑reviewervaring.
+Je hebt nu een volledige, productie‑klare methode om **HTML vanuit DOCX genereren** en **render word tracked changes** te gebruiken met GroupDocs.Viewer for Java. Integreer deze stappen in je applicatie, en je biedt gebruikers een krachtige, interactieve document‑review ervaring.
 
-## FAQ‑sectie
+## Veelgestelde Vragen
 
-1. **What is the minimum Java version required?**  
-   Java 8 of later wordt over het algemeen aanbevolen voor compatibiliteit met moderne bibliotheken zoals GroupDocs.Viewer.  
-2. **Can I render documents without tracked changes?**  
-   Ja, schakel eenvoudig `setRenderTrackedChanges(true)` uit in uw configuratie‑opties.  
-3. **How do I handle large documents efficiently?**  
-   Overweeg grote bestanden op te splitsen in kleinere secties of paginatie‑technieken te gebruiken om het resource‑gebruik effectief te beheren.  
-4. **What are the licensing options for GroupDocs.Viewer?**  
-   U kunt beginnen met een gratis proefversie, kiezen voor een tijdelijke evaluatielicentie, of een volledige licentie aanschaffen op basis van uw projectbehoeften.  
-5. **Is there support available if I encounter issues?**  
-   Ja, u kunt ondersteuning krijgen via het GroupDocs‑forum en de officiële documentatie‑bronnen.
+**Q: Wat is de minimum vereiste Java‑versie?**  
+A: Java 8 of later wordt over het algemeen aanbevolen voor compatibiliteit met moderne bibliotheken zoals GroupDocs.Viewer.
 
-## Resources
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download](https://releases.groupdocs.com/viewer/java/)
-- [Purchase](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/viewer/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support](https://forum.groupdocs.com/c/viewer/9)
+**Q: Kan ik documenten renderen zonder tracked changes?**  
+A: Ja, schakel eenvoudig `setRenderTrackedChanges(true)` uit in je configuratie‑opties.
+
+**Q: Hoe ga ik efficiënt om met grote documenten?**  
+A: Overweeg grote bestanden op te splitsen in kleinere secties of paginatie‑technieken te gebruiken om het resource‑gebruik effectief te beheren.
+
+**Q: Wat zijn de licentie‑opties voor GroupDocs.Viewer?**  
+A: Je kunt beginnen met een gratis proefversie, kiezen voor een tijdelijke evaluatielicentie, of een volledige licentie aanschaffen op basis van je projectbehoeften.
+
+**Q: Is er ondersteuning beschikbaar als ik problemen ondervind?**  
+A: Ja, je kunt ondersteuning krijgen via het GroupDocs‑forum en officiële documentatie‑bronnen.
 
 ---
 
-**Laatst bijgewerkt:** 2026-01-15  
+**Laatst bijgewerkt:** 2026-03-29  
 **Getest met:** GroupDocs.Viewer for Java 25.2  
-**Auteur:** GroupDocs
+**Auteur:** GroupDocs  
+
+## Bronnen
+- [Documentatie](https://docs.groupdocs.com/viewer/java/)
+- [API‑referentie](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Aankoop](https://purchase.groupdocs.com/buy)
+- [Gratis proefversie](https://releases.groupdocs.com/viewer/java/)
+- [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/)
+- [Ondersteuning](https://forum.groupdocs.com/c/viewer/9)
