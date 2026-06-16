@@ -1,47 +1,48 @@
 ---
-date: '2025-12-21'
-description: Tìm hiểu cách tắt tính năng nhóm trong PDF bằng GroupDocs.Viewer cho
-  Java, sử dụng java html từ các tùy chọn render PDF để đảm bảo biểu diễn văn bản
-  chính xác.
+date: '2026-03-22'
+description: Tìm hiểu cách tạo HTML từ PDF và tắt tính năng nhóm ký tự bằng GroupDocs
+  Viewer cho Java để hiển thị văn bản một cách chính xác.
 keywords:
 - disable character grouping PDFs
 - GroupDocs Viewer Java configuration
 - precise text representation in PDFs
-title: Cách vô hiệu hóa việc nhóm trong PDF bằng GroupDocs.Viewer cho Java
+title: Tạo HTML từ PDF & Vô hiệu hoá nhóm – GroupDocs Java
 type: docs
 url: /vi/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/
 weight: 1
 ---
 
-# Cách Vô Hiệu Hóa Nhóm Ký Tự trong PDF bằng GroupDocs.Viewer cho Java
+# Tạo HTML từ PDF và Vô hiệu hoá Nhóm ký tự với GroupDocs Viewer cho Java
 
-Khi bạn cần **cách vô hiệu hoá nhóm** trong quá trình render PDF, đặc biệt với các script phức tạp hoặc ngôn ngữ cổ đại, việc đặt ký tự một cách chính xác trở nên thiết yếu. Tính năng *Character Grouping* mặc định có thể hợp nhất các ký tự sai cách, gây hiểu sai nội dung. Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn từng bước cách vô hiệu hoá nhóm bằng GroupDocs.Viewer cho Java, để mỗi glyph luôn ở đúng vị trí của nó.
+Trong nhiều dự án, bạn cần **tạo HTML từ PDF** đồng thời giữ nguyên vị trí của từng glyph. Điều này đặc biệt quan trọng với các script phức tạp, ngôn ngữ cổ đại hoặc tài liệu pháp lý, nơi một ký tự sai vị trí có thể làm thay đổi ý nghĩa. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình đầy đủ để render PDF sang HTML bằng GroupDocs Viewer cho Java và chỉ cho bạn **cách vô hiệu hoá nhóm ký tự** để mỗi ký tự được xử lý như một phần tử độc lập.
 
-![Kỹ Thuật Render Chính Xác với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
+![Kỹ thuật render chính xác với GroupDocs.Viewer cho Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
 
-## Câu Trả Lời Nhanh
-- **Tính năng “vô hiệu hoá nhóm” làm gì?** Nó buộc trình render xử lý mỗi ký tự như một phần tử độc lập, giữ nguyên bố cục chính xác.  
-- **Tùy chọn API nào kiểm soát tính năng này?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
-- **Tôi có cần giấy phép không?** Bản dùng thử hoạt động cho việc kiểm tra, nhưng cần giấy phép đầy đủ cho môi trường sản xuất.  
-- **Tôi có thể tạo HTML Java từ PDF đồng thời không?** Có — sử dụng `HtmlViewOptions` để tạo đầu ra HTML trong khi vô hiệu hoá nhóm.  
+## Câu trả lời nhanh
+- **“Vô hiệu hoá nhóm ký tự” làm gì?** Nó buộc trình render xem mỗi ký tự như một phần tử độc lập, bảo toàn bố cục chính xác.  
+- **Tùy chọn API nào điều khiển điều này?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
+- **Tôi có cần giấy phép không?** Bản dùng thử hoạt động cho việc thử nghiệm, nhưng cần giấy phép đầy đủ cho môi trường sản xuất.  
+- **Có thể tạo HTML từ PDF đồng thời không?** Có — sử dụng `HtmlViewOptions` để tạo đầu ra HTML trong khi vô hiệu hoá nhóm ký tự.  
 - **Tính năng này có giới hạn chỉ với PDF không?** Chủ yếu dành cho PDF, nhưng viewer hỗ trợ nhiều định dạng khác.
 
-## Giới Thiệu
+## Giới thiệu
 
-Khi làm việc với tài liệu PDF, độ chính xác trong việc render là rất quan trọng — đặc biệt khi xử lý các cấu trúc văn bản phức tạp như chữ tượng hình hoặc các ngôn ngữ yêu cầu biểu diễn ký tự chính xác. Tính năng "Character Grouping" thường gây ra vấn đề bằng cách nhóm các ký tự không đúng, dẫn đến việc hiểu sai nội dung tài liệu. Điều này có thể đặc biệt gây phiền toái cho người dùng cần sao chép chính xác bố cục văn bản của tài liệu.
+Khi làm việc với tài liệu PDF, độ chính xác trong việc render là rất quan trọng — đặc biệt khi xử lý các cấu trúc văn bản phức tạp như chữ tượng hình hoặc các ngôn ngữ yêu cầu biểu diễn ký tự chính xác. Tính năng “Character Grouping” thường gây ra vấn đề bằng cách nhóm các ký tự không đúng, dẫn đến việc hiểu sai nội dung tài liệu. Điều này có thể gây khó khăn đặc biệt cho người dùng cần sao chép chính xác bố cục văn bản của tài liệu.
 
-### Yêu Cầu Trước
+### Yêu cầu trước
 
 Trước khi bắt đầu triển khai mã, hãy đảm bảo bạn đáp ứng các yêu cầu sau:
-- **Thư viện & Phụ Thuộc**: Bạn cần GroupDocs.Viewer cho Java phiên bản 25.2 trở lên.  
-- **Cài Đặt Môi Trường**: Đảm bảo đã cài Java Development Kit (JDK) và IDE của bạn được cấu hình để làm việc với các dự án Maven.  
-- **Kiến Thức Cần Có**: Hiểu biết cơ bản về lập trình Java, đặc biệt là xử lý đường dẫn tệp và sử dụng các thư viện bên ngoài.
+- **Thư viện & Phụ thuộc**: Cần có GroupDocs.Viewer cho Java phiên bản 25.2 trở lên.  
+- **Cài đặt môi trường**: Đảm bảo đã cài Java Development Kit (JDK) và IDE của bạn được cấu hình để làm việc với dự án Maven.  
+- **Kiến thức nền**: Hiểu cơ bản về lập trình Java, đặc biệt là xử lý đường dẫn tệp và sử dụng các thư viện bên ngoài.
 
-## Cách Vô Hiệu Hóa Nhóm trong Render PDF
+## Cách tạo HTML từ PDF với GroupDocs Viewer
 
-### Cài Đặt GroupDocs.Viewer cho Java
+Việc tạo HTML từ PDF là một quy trình hai bước: cấu hình viewer, sau đó render tài liệu. Điều quan trọng là tắt tính năng nhóm ký tự trước khi render để đầu ra HTML phản ánh chính xác bố cục PDF ký tự‑theo‑ký tự.
 
-#### Cài Đặt qua Maven
+### Cài đặt GroupDocs.Viewer cho Java
+
+#### Cài đặt qua Maven
 
 Đầu tiên, tích hợp thư viện cần thiết vào dự án của bạn. Thêm cấu hình sau vào file `pom.xml` của bạn:
 
@@ -62,15 +63,16 @@ Trước khi bắt đầu triển khai mã, hãy đảm bảo bạn đáp ứng 
 </dependencies>
 ```
 
-#### Mua Giấy Phép
+#### Mua giấy phép
 
-- **Bản Dùng Thử Miễn Phí**: Bắt đầu với bản dùng thử để kiểm tra các tính năng.  
-- **Giấy Phép Tạm Thời**: Yêu cầu giấy phép tạm thời nếu bạn cần thêm thời gian.  
-- **Mua Giấy Phép**: Đối với các dự án dài hạn, nên mua giấy phép.
+Để sử dụng đầy đủ GroupDocs.Viewer, hãy cân nhắc mua giấy phép:
+- **Bản dùng thử miễn phí**: Bắt đầu với bản dùng thử để kiểm tra các tính năng.  
+- **Giấy phép tạm thời**: Yêu cầu giấy phép tạm thời nếu bạn cần thời gian thêm.  
+- **Mua bản quyền**: Đối với các dự án dài hạn, nên mua giấy phép.
 
-#### Khởi Tạo và Cấu Hình Cơ Bản
+#### Khởi tạo và cấu hình cơ bản
 
-Bắt đầu bằng việc thiết lập môi trường dự án của bạn:
+Dưới đây là một đoạn mã sẵn sàng chạy, thể hiện quy trình hoàn chỉnh — từ việc thiết lập thư mục đầu ra đến việc render PDF thành HTML trong khi vô hiệu hoá nhóm ký tự:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -89,43 +91,45 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-### Hướng Dẫn Triển Khai
+### Hướng dẫn triển khai
 
-#### Tính Năng: Vô Hiệu Hóa Nhóm Ký Tự
+#### Tính năng: Vô hiệu hoá Nhóm ký tự
 
-##### Bước 1: Xác Định Thư Mục Đầu Ra
+Sau đây chúng tôi sẽ phân tích từng dòng trong ví dụ để bạn hiểu **tại sao** chúng ta làm như vậy và **cách** chúng góp phần tạo HTML từ PDF mà không bị gộp ký tự không mong muốn.
+
+##### Bước 1: Xác định thư mục đầu ra  
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 ```
 
-**Tại sao?** Điều này đảm bảo đầu ra của bạn được tổ chức và dễ truy cập.
+**Tại sao?** Điều này đảm bảo các tệp HTML đã render được lưu trong một thư mục riêng, giúp bạn dễ dàng tìm và quản lý chúng sau này.
 
-##### Bước 2: Cấu Hình Định Dạng Đường Dẫn Tệp
+##### Bước 2: Cấu hình định dạng đường dẫn tệp  
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Tại sao?** Nó giúp tổ chức có hệ thống các trang của tài liệu PDF.
+**Tại sao?** Sử dụng placeholder (`{0}`) cho phép viewer tạo một tệp HTML riêng cho mỗi trang PDF, giữ cho đầu ra được tổ chức gọn gàng.
 
-##### Bước 3: Khởi Tạo HTML View Options
+##### Bước 3: Khởi tạo HTML View Options  
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**Tại sao?** Các tài nguyên nhúng đảm bảo mọi tài sản cần thiết được bao gồm trong file HTML của mỗi trang.
+**Tại sao?** Các tài nguyên nhúng (hình ảnh, phông chữ, CSS) được gói trực tiếp vào mỗi trang HTML, rất phù hợp cho các viewer dựa trên web hoặc nền tảng e‑learning.
 
-##### Bước 4: Vô Hiệu Hóa Nhóm Ký Tự
+##### Bước 4: Vô hiệu hoá Nhóm ký tự  
 
 ```java
 viewOptions.getPdfOptions().setDisableCharsGrouping(true);
 ```
 
-**Tại sao?** Điều này đảm bảo các ký tự được render riêng lẻ, giữ nguyên bố cục và ý nghĩa dự định.
+**Tại sao?** Đây là dòng quan trọng nói với engine render **không** hợp nhất các ký tự liền kề, đảm bảo HTML sinh ra phản ánh chính xác vị trí glyph từ PDF nguồn.
 
-##### Bước 5: Render Tài Liệu
+##### Bước 5: Render tài liệu  
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
@@ -133,65 +137,59 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-**Tại sao?** Điều này đảm bảo mọi tài nguyên được đóng đúng cách, ngăn ngừa rò rỉ bộ nhớ.
+**Tại sao?** Đặt `Viewer` trong khối try‑with‑resources đảm bảo tất cả tài nguyên gốc được giải phóng tự động, ngăn ngừa rò rỉ bộ nhớ trong các ứng dụng chạy lâu.
 
-### Tạo HTML Java từ PDF mà Không Nhóm
+### Tạo HTML Java từ PDF mà không nhóm ký tự
 
-Lớp `HtmlViewOptions` cho phép bạn tạo **java html from pdf** trong khi giữ mỗi ký tự riêng biệt. Điều này đặc biệt hữu ích khi bạn cần nhúng các trang đã render vào một cổng thông tin web hoặc nền tảng e‑learning, nơi vị trí chính xác của glyph rất quan trọng.
+Lớp `HtmlViewOptions` cho phép bạn **tạo html từ pdf** trong khi giữ mỗi ký tự riêng biệt. Điều này rất hữu ích khi bạn cần nhúng các trang đã render vào cổng thông tin web hoặc nền tảng e‑learning, nơi vị trí glyph chính xác là yếu tố quan trọng.
 
-### Mẹo Khắc Phục Sự Cố
+### Các vấn đề thường gặp và giải pháp
 
-- Đảm bảo đường dẫn tài liệu của bạn đúng để tránh `FileNotFoundException`.  
-- Kiểm tra thư mục đầu ra có quyền ghi không.  
-- Kiểm tra lại rằng bạn đang sử dụng phiên bản tương thích của GroupDocs.Viewer cho Java.
+- **FileNotFoundException** – Kiểm tra lại đường dẫn bạn truyền vào `new Viewer(...)`. Sử dụng đường dẫn tuyệt đối hoặc `Path.of(...)` để rõ ràng hơn.  
+- **Quyền ghi** – Đảm bảo thư mục đầu ra có quyền ghi cho tiến trình Java; trên Linux bạn có thể cần điều chỉnh quyền thư mục (`chmod 775`).  
+- **Phiên bản không khớp** – Tùy chọn `setDisableCharsGrouping` chỉ có từ phiên bản 25.2 trở lên. Xác nhận `pom.xml` của bạn đã chỉ định đúng phiên bản.
 
-## Ứng Dụng Thực Tế
+### Ứng dụng thực tiễn
 
-1. **Bảo Tồn Ngôn Ngữ**: Lý tưởng để render tài liệu bằng các ngôn ngữ như tiếng Trung, Nhật, hoặc các ký tự cổ đại nơi độ chính xác ký tự quan trọng.  
-2. **Tài Liệu Pháp Lý và Tài Chính**: Đảm bảo độ chính xác trong các tài liệu yêu cầu biểu diễn văn bản chính xác để tuân thủ.  
-3. **Tài Nguyên Giáo Dục**: Hoàn hảo cho sách giáo khoa và bài báo học thuật có chứa các sơ đồ hoặc chú thích phức tạp.
+1. **Bảo tồn ngôn ngữ** – Lý tưởng cho việc render tài liệu bằng tiếng Trung, Nhật, Ả Rập hoặc các script cổ, nơi khoảng cách ký tự mang ý nghĩa.  
+2. **Tài liệu pháp lý & tài chính** – Đảm bảo sao chép chính xác văn bản cho các giấy tờ có yêu cầu tuân thủ nghiêm ngặt.  
+3. **Tài nguyên giáo dục** – Hoàn hảo cho sách giáo khoa có biểu đồ phức tạp, chú thích, hoặc nội dung đa ngôn ngữ.
 
-## Các Yếu Tố Về Hiệu Suất
+### Cân nhắc về hiệu năng
 
-- **Tối Ưu Hóa Sử Dụng Tài Nguyên**: Đảm bảo máy chủ của bạn có đủ tài nguyên để xử lý các tệp PDF lớn.  
-- **Quản Lý Bộ Nhớ Java**: Sử dụng cấu trúc dữ liệu hiệu quả và các thực hành thu gom rác để quản lý bộ nhớ hiệu quả.  
-- **Xử Lý Hàng Loạt**: Khi render nhiều tài liệu, xử lý chúng theo lô để cải thiện thông lượng.
+- **Tối ưu sử dụng tài nguyên** – PDF lớn có thể tiêu tốn nhiều bộ nhớ. Xem xét xử lý theo lô và giải phóng các instance `Viewer` kịp thời.  
+- **Quản lý bộ nhớ Java** – Điều chỉnh heap JVM (`-Xmx2g` hoặc cao hơn) nếu dự kiến xử lý PDF hàng trăm trang.  
+- **Render song song** – Đối với chuyển đổi hàng loạt, tạo các luồng riêng biệt mỗi luồng có một instance `Viewer` để tận dụng đa lõi CPU.
 
-## Kết Luận
+## Câu hỏi thường gặp
 
-Bạn đã nắm vững **cách vô hiệu hoá nhóm** trong quá trình render PDF với GroupDocs.Viewer cho Java. Khả năng này rất quan trọng đối với các ứng dụng yêu cầu biểu diễn văn bản chính xác. Để khám phá thêm, hãy thử tích hợp tính năng này với các hệ thống quản lý tài liệu khác hoặc thử nghiệm các tùy chọn render bổ sung.
+**Hỏi:** *Tại sao tôi lại cần vô hiệu hoá nhóm ký tự?*  
+**Đáp:** Vô hiệu hoá nhóm ký tự ngăn trình render hợp nhất các ký tự thuộc các glyph riêng biệt, điều này rất quan trọng đối với các script mà khoảng cách và thứ tự ký tự truyền tải ý nghĩa.
 
-Các bước tiếp theo bao gồm khám phá các tính năng nâng cao hơn của GroupDocs.Viewer và tối ưu hiệu suất cho các triển khai quy mô lớn.
+**Hỏi:** *Cài đặt `setDisableCharsGrouping` chỉ áp dụng cho đầu ra HTML phải không?*  
+**Đáp:** Không, nó ảnh hưởng tới engine render PDF nền tảng, vì vậy bất kỳ định dạng đầu ra nào (HTML, PNG, JPEG, v.v.) đều sẽ phản ánh thay đổi này.
 
-## Câu Hỏi Thường Gặp
+**Hỏi:** *Tôi có thể kết hợp cài đặt này với phông chữ tùy chỉnh không?*  
+**Đáp:** Có — tải phông chữ tùy chỉnh trước khi khởi tạo `Viewer`, và quy tắc nhóm ký tự vẫn sẽ được áp dụng.
 
-**Q:** *Tại sao tôi lại cần vô hiệu hoá nhóm ký tự?*  
-**A:** Vô hiệu hoá nhóm ngăn trình render hợp nhất các ký tự thuộc các glyph riêng biệt, điều này rất cần thiết cho các script mà khoảng cách và thứ tự ký tự truyền tải ý nghĩa.
+**Hỏi:** *Vô hiệu hoá nhóm ký tự có ảnh hưởng tới hiệu năng không?*  
+**Đáp:** Có chút ảnh hưởng vì engine xử lý từng ký tự riêng lẻ, nhưng tác động là tối thiểu đối với hầu hết các tài liệu.
 
-**Q:** *Cài đặt `setDisableCharsGrouping` chỉ áp dụng cho đầu ra HTML phải không?*  
-**A:** Không, nó ảnh hưởng đến engine render PDF nền tảng, vì vậy bất kỳ định dạng đầu ra nào (HTML, PNG, v.v.) cũng sẽ phản ánh thay đổi này.
+**Hỏi:** *Có cách bật/tắt nhóm ký tự theo từng trang không?*  
+**Đáp:** Hiện tại tùy chọn này là toàn cục cho mỗi instance `PdfOptions`; nếu cần hành vi hỗn hợp, bạn phải tạo các instance `Viewer` riêng cho các trang khác nhau.
 
-**Q:** *Tôi có thể kết hợp cài đặt này với phông chữ tùy chỉnh không?*  
-**A:** Có — chỉ cần tải phông chữ tùy chỉnh của bạn trước khi khởi tạo `Viewer`, và quy tắc nhóm vẫn sẽ được áp dụng.
+## Tài nguyên
 
-**Q:** *Vô hiệu hoá nhóm có ảnh hưởng đến hiệu suất không?*  
-**A:** Hơi ảnh hưởng, vì engine phải xử lý từng ký tự một cách riêng lẻ, nhưng tác động này là tối thiểu đối với hầu hết các tài liệu.
-
-**Q:** *Có cách nào bật/tắt nhóm theo từng trang không?*  
-**A:** Hiện tại tùy chọn này là toàn cục cho mỗi instance của `PdfOptions`; bạn sẽ cần tạo các instance `Viewer` riêng cho các trang khác nhau nếu muốn thay đổi.
-
-## Tài Nguyên
-
-- [Tài liệu GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- [Tham chiếu API](https://reference.groupdocs.com/viewer/java/)
-- [Tải xuống GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Mua Giấy Phép](https://purchase.groupdocs.com/buy)
-- [Phiên bản Dùng Thử Miễn Phí](https://releases.groupdocs.com/viewer/java/)
-- [Đăng ký Giấy Phép Tạm Thời](https://purchase.groupdocs.com/temporary-license/)
-- [Diễn đàn Hỗ trợ GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
+- [Purchase License](https://purchase.groupdocs.com/buy)
+- [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
+- [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Last Updated:** 2025-12-21  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+**Cập nhật lần cuối:** 2026-03-22  
+**Kiểm thử với:** GroupDocs.Viewer 25.2 cho Java  
+**Tác giả:** GroupDocs
