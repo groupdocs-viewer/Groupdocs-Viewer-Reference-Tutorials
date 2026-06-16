@@ -1,59 +1,59 @@
 ---
-date: '2026-01-05'
-description: Dowiedz się, jak zmienić nazwy pól e‑mail, przekonwertować e‑mail na
-  HTML oraz dostosować nagłówki e‑mail przy użyciu GroupDocs.Viewer dla Javy.
+date: '2026-03-24'
+description: Dowiedz się, jak konwertować e‑mail na HTML i zmieniać nazwy pól e‑mail
+  przy użyciu GroupDocs Viewer for Java. Ten przewodnik pokazuje renderowanie e‑maila
+  jako HTML z niestandardowymi nagłówkami.
 keywords:
 - rename email fields Java
 - render emails HTML GroupDocs Viewer
 - customize email metadata Java
-title: Jak zmienić nazwy pól e‑mail podczas renderowania wiadomości e‑mail do HTML
-  przy użyciu GroupDocs.Viewer Java
+title: Konwertuj e‑mail na HTML i zmień nazwy pól – GroupDocs Viewer Java
 type: docs
 url: /pl/java/advanced-rendering/rename-email-fields-html-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Jak zmienić nazwy pól e‑mail podczas renderowania e‑maili do HTML przy użyciu GroupDocs.Viewer Java
+# Konwertuj e‑mail na HTML i zmień nazwy pól – GroupDocs Viewer Java
 
-Zastanawiasz się **jak zmienić nazwy pól e‑mail** podczas konwertowania e‑maila do HTML? W tym przewodniku przeprowadzimy Cię krok po kroku przez proces zmiany nazw pól e‑mail, **konwersji e‑maila do HTML** oraz **dostosowywania nagłówków e‑mail** przy użyciu GroupDocs.Viewer for Java. Po zakończeniu będziesz mieć czystą reprezentację HTML z wybranymi nazwami nagłówków, co ułatwi odczyt i integrację wyniku z Twoimi aplikacjami.
+Jeśli potrzebujesz **konwertować e‑mail na HTML** i nadać nagłówkom e‑maila niestandardowy wygląd, jesteś we właściwym miejscu. W tym samouczku przeprowadzimy Cię krok po kroku przez proces zmiany nazw pól e‑maila, **konwersji e‑maila na HTML** oraz dostosowywania nagłówków e‑maila przy użyciu GroupDocs.Viewer dla Javy. Po zakończeniu będziesz mieć czystą reprezentację HTML z nazwami nagłówków, które preferujesz, co ułatwi odczyt i integrację z Twoimi aplikacjami.
 
-![Zmienianie nazw pól e‑mail przy konwertowaniu e‑maili do HTML przy użyciu GroupDocs.Viewer dla Java](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
+![Zmienianie nazw pól e‑maili podczas konwertowania e‑maili na HTML przy użyciu GroupDocs.Viewer dla Javy](/viewer/advanced-rendering/rename-email-fields-when-converting-emails-to-html-java.png)
 
-### Co się nauczysz
-- Jak używać GroupDocs.Viewer for Java do **konwersji e‑maila do HTML**.  
-- Techniki **zmiany nazw pól e‑mail**, takich jak „From”, „To”, „Sent” i „Subject”.  
-- Najlepsze praktyki konfigurowania Maven i licencjonowania.  
-- Przykłady rzeczywistych scenariuszy, w których **dostosowywanie nagłówków e‑mail** przynosi wartość.
+### Czego się nauczysz
+- Jak używać GroupDocs.Viewer dla Javy do **konwertowania e‑maila na HTML**.  
+- Techniki **zmiany nazw pól e‑maila** takich jak „From”, „To”, „Sent” i „Subject”.  
+- Najlepsze praktyki konfiguracji Maven i licencjonowania.  
+- Przykłady z życia, w których **dostosowywanie nagłówków e‑maila** przynosi wartość.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „jak zmienić nazwy pól e‑mail”?** Odnosi się do mapowania domyślnych nazw nagłówków e‑mail na własne etykiety podczas renderowania.  
-- **Która biblioteka obsługuje konwersję?** GroupDocs.Viewer for Java (v25.2+).  
-- **Czy potrzebna jest licencja?** Wersja próbna działa w celach oceny; pełna licencja jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę zmienić dowolną nazwę nagłówka?** Tak, każdy standardowy nagłówek e‑mail może być przemapowany za pomocą `fieldTextMap`.  
-- **Czy wynik to HTML czy zasoby osadzone?** Możesz wybrać zasoby osadzone, aby uzyskać pojedynczy, samodzielny plik.
+- **Co oznacza „konwertować e‑mail na HTML”?** Oznacza to renderowanie pliku e‑mail (MSG/EML) jako dokumentu HTML gotowego do wyświetlenia w przeglądarce.  
+- **Która biblioteka obsługuje konwersję?** GroupDocs.Viewer dla Javy (v25.2+).  
+- **Czy potrzebna jest licencja?** Wersja próbna działa w celach ewaluacyjnych; pełna licencja jest wymagana w środowisku produkcyjnym.  
+- **Czy mogę zmienić dowolną nazwę nagłówka?** Tak, każdy standardowy nagłówek e‑maila może być przemapowany za pomocą `fieldTextMap`.  
+- **Czy wynikowy plik to HTML czy zasoby osadzone?** Możesz wybrać zasoby osadzone, aby uzyskać pojedynczy, samodzielny plik.
 
-## Co oznacza „jak zmienić nazwy pól e‑mail” w kontekście GroupDocs.Viewer?
-Zmiana nazw pól e‑mail polega na zastąpieniu domyślnych etykiet (np. „From”) własnym tekstem (np. „Nadawca”) podczas renderowania e‑maila do HTML. Jest to przydatne, aby dopasować wynik do terminologii korporacyjnej lub poprawić czytelność dla użytkownika końcowego.
+## Co oznacza „konwertować e‑mail na HTML” w kontekście GroupDocs.Viewer?
+Konwersja e‑maila na HTML polega na wzięciu surowego pliku e‑mail i wygenerowaniu strony HTML, która wyświetla treść wiadomości wraz z jej metadanymi. Gdy dodatkowo **zmieniasz nazwy pól e‑maila**, domyślne etykiety (np. „From”) są zastępowane własnym tekstem (np. „Nadawca”), co pomaga dopasować terminologię korporacyjną lub poprawić spójność interfejsu użytkownika.
 
-## Dlaczego konwertować e‑mail do HTML i dostosowywać nagłówki e‑mail?
-- **Spójna identyfikacja marki:** Dopasuj język organizacji we wszystkich komunikacjach.  
+## Dlaczego konwertować e‑mail na HTML i zmieniać nazwy pól e‑maila?
+- **Spójna identyfikacja wizualna:** Dostosuj wyjście do języka używanego w Twojej organizacji.  
 - **Lepsza wyszukiwalność:** Niestandardowe nagłówki mogą być skuteczniej indeksowane w systemach archiwizacji.  
 - **Lepsza integracja UI:** Dostosuj fragment HTML, aby płynnie wpasował się w portale internetowe lub pulpity wsparcia.
 
-## Wymagania wstępne
+## Prerequisites
 
 ### Wymagane biblioteki, wersje i zależności
-- **GroupDocs.Viewer for Java** – wersja 25.2 lub nowsza.  
+- **GroupDocs.Viewer dla Javy** – wersja 25.2 lub nowsza.  
 - **Java Development Kit (JDK)** – wersja 8+.
 
 ### Wymagania dotyczące konfiguracji środowiska
 - **Maven** do zarządzania zależnościami.  
 - IDE, takie jak IntelliJ IDEA, Eclipse lub VS Code.
 
-### Wymagania wiedzy
-Podstawowa znajomość Javy i Mavenu ułatwi szybkie podążanie za instrukcjami.
+### Wymagania wstępne wiedzy
+Podstawowa znajomość Javy i Mavenu ułatwi szybkie podążanie za instrukcją.
 
-## Konfiguracja GroupDocs.Viewer for Java
+## Konfiguracja GroupDocs.Viewer dla Javy
 
 ### Konfiguracja Maven
 ```xml
@@ -74,9 +74,9 @@ Podstawowa znajomość Javy i Mavenu ułatwi szybkie podążanie za instrukcjami
 ```
 
 ### Kroki uzyskania licencji
-- **Bezpłatna wersja próbna:** Pobierz wersję próbną z [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
-- **Licencja tymczasowa:** Uzyskaj tymczasową licencję, aby przetestować pełne funkcje bez ograniczeń, pod adresem [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
-- **Zakup:** Aby kontynuować korzystanie, rozważ zakup licencji poprzez [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
+- **Free Trial:** Pobierz wersję próbną z [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License:** Uzyskaj tymczasową licencję, aby przetestować pełne funkcje bez ograniczeń, pod adresem [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase:** W celu dalszego użytkowania rozważ zakup licencji przez [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
 ### Podstawowa inicjalizacja i konfiguracja
 ```java
@@ -92,25 +92,23 @@ public class ViewerSetup {
 ```
 Dostosuj ścieżkę pliku, aby wskazywała na Twój plik `.msg`.
 
-## Przewodnik implementacji
+## Jak konwertować e‑mail na HTML i zmieniać nazwy pól – krok po kroku
 
-### Zmiana nazw pól e‑mail – krok po kroku
-
-#### 1. Ustaw ścieżkę katalogu wyjściowego
+### 1. Ustaw ścieżkę katalogu wyjściowego
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-*Zastąp `"YOUR_OUTPUT_DIRECTORY"` folderem, w którym chcesz zapisywać pliki HTML.*
+*Zastąp `"YOUR_OUTPUT_DIRECTORY"` folderem, w którym mają być zapisywane pliki HTML.*
 
-#### 2. Zdefiniuj format ścieżki pliku strony
+### 2. Zdefiniuj format ścieżki pliku strony
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 *`{0}` zostanie zastąpione numerem strony podczas renderowania.*
 
-#### 3. Utwórz mapowanie pól e‑mail na nowe nazwy
+### 3. Utwórz mapowanie pól e‑maila na nowe nazwy
 ```java
 import com.groupdocs.viewer.options.Field;
 import java.util.HashMap;
@@ -124,39 +122,39 @@ fieldTextMap.put(Field.SUBJECT, "Topic");
 ```
 *Tutaj zmieniamy domyślne etykiety na własne.*
 
-#### 4. Skonfiguruj opcje widoku HTML
+### 4. Skonfiguruj opcje widoku HTML
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.getEmailOptions().setFieldTextMap(fieldTextMap);
 ```
-*`forEmbeddedResources` osadza CSS/JS w HTML, natomiast `setFieldTextMap` stosuje niestandardowe nazwy nagłówków.*
+*`forEmbeddedResources` osadza CSS/JS wewnątrz HTML, natomiast `setFieldTextMap` stosuje niestandardowe nazwy nagłówków.*
 
-#### 5. Renderuj e‑mail do HTML
+### 5. Renderuj e‑mail do HTML
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG")) {
     viewer.view(viewOptions);
 }
 ```
-*Zastąp `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` rzeczywistą ścieżką do pliku MSG.*
+*Zastąp `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG"` rzeczywistą ścieżką do swojego pliku MSG.*
 
 #### Wskazówki rozwiązywania problemów
-- Sprawdź, czy katalog wyjściowy jest zapisywalny.  
-- Upewnij się, że plik MSG istnieje i ścieżka jest prawidłowa.  
-- Używaj tej samej wersji GroupDocs.Viewer (25.2), co zadeklarowano w Maven.
+- Upewnij się, że katalog wyjściowy jest zapisywalny.  
+- Sprawdź, czy plik wejściowy MSG istnieje i czy ścieżka jest prawidłowa.  
+- Użyj tej samej wersji GroupDocs.Viewer (25.2), która została zadeklarowana w Mavenie.
 
 ## Praktyczne zastosowania
-1. **Niestandardowe raporty e‑mail:** Dopasuj nagłówki e‑mail do terminologii korporacyjnej, aby uzyskać czytelniejsze raporty.  
-2. **Systemy archiwizacji e‑mail:** Popraw wyszukiwalność, stosując ustandaryzowane nazwy nagłówków.  
-3. **Platformy wsparcia klienta:** Prezentuj zgłoszenia z spersonalizowanymi etykietami nagłówków dla lepszych doświadczeń agentów.
+1. **Raporty e‑mailowe na zamówienie:** Dostosuj nagłówki e‑maili do terminologii korporacyjnej, aby uzyskać czytelniejsze raporty.  
+2. **Systemy archiwizacji e‑maili:** Popraw wyszukiwalność, używając ustandaryzowanych nazw nagłówków.  
+3. **Platformy wsparcia klienta:** Prezentuj zgłoszenia z spersonalizowanymi etykietami nagłówków, co zwiększa komfort pracy agentów.
 
-## Względy wydajnościowe
-- Zwalniaj obiekty `Viewer` przy użyciu try‑with‑resources, aby szybko zwolnić pamięć.  
-- Profiluj duże partie i rozważ przetwarzanie e‑maili równolegle przy użyciu strumieni, jeśli to konieczne.
+## Wskazówki dotyczące wydajności
+- Zwalniaj obiekty `Viewer` przy pomocy try‑with‑resources, aby szybko zwolnić pamięć.  
+- Profiluj duże partie i rozważ przetwarzanie e‑maili równolegle przy użyciu strumieni, jeśli zajdzie taka potrzeba.
 
 ## Podsumowanie
-Teraz wiesz **jak zmienić nazwy pól e‑mail** podczas **konwersji e‑maila do HTML** oraz **dostosowywania nagłówków e‑mail** przy użyciu GroupDocs.Viewer for Java. Ta technika daje pełną kontrolę nad prezentacją metadanych e‑mail w wynikach HTML.
+Teraz wiesz, **jak konwertować e‑mail na HTML** oraz **zmieniać nazwy pól e‑maila** i **dostosowywać nagłówki e‑maila** przy użyciu GroupDocs.Viewer dla Javy. Ta technika daje pełną kontrolę nad prezentacją metadanych e‑maila w wyjściu HTML.
 
 ### Kolejne kroki
 - Eksperymentuj z dodatkowymi mapowaniami pól (np. CC, BCC).  
@@ -166,7 +164,7 @@ Teraz wiesz **jak zmienić nazwy pól e‑mail** podczas **konwersji e‑maila d
 ## Najczęściej zadawane pytania
 
 **P: Czy to podejście działa z innymi formatami e‑mail, takimi jak EML?**  
-O: Tak, GroupDocs.Viewer obsługuje zarówno pliki MSG, jak i EML; ta sama logika mapowania pól obowiązuje.
+O: Tak, GroupDocs.Viewer obsługuje zarówno pliki MSG, jak i EML; ta sama logika mapowania pól ma zastosowanie.
 
 **P: Czy mogę wygenerować HTML bez osadzonych zasobów?**  
 O: Możesz użyć `HtmlViewOptions.forExternalResources(...)`, jeśli wolisz oddzielne pliki CSS/JS.
@@ -178,15 +176,15 @@ O: Kod został przetestowany z GroupDocs.Viewer **25.2**.
 O: Styl można zastosować za pomocą CSS po renderowaniu lub wstrzyknąć własny CSS przy użyciu `HtmlViewOptions.getResourcesPath()`.
 
 **P: Jak programowo uzyskać ścieżkę wygenerowanego pliku HTML?**  
-O: Ścieżka pliku podąża za wzorcem określonym w `pageFilePathFormat`; możesz ją skonstruować przy pomocy `String.format` z numerem strony.
+O: Ścieżka pliku podąża za wzorcem określonym w `pageFilePathFormat`; możesz ją zbudować przy pomocy `String.format` i numeru strony.
 
 ## Zasoby
-- **Dokumentacja:** Kompleksowe przewodniki dostępne pod adresem [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
-- **Referencja API:** Szczegółowe informacje o API znajdziesz na [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
-- **Pobierz GroupDocs.Viewer:** Najnowszą wersję uzyskaj ze [Downloads Page](https://releases.groupdocs.com/viewer/java/).
+- **Documentation:** Kompleksowe przewodniki dostępne pod adresem [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/).  
+- **API Reference:** Szczegółowe informacje o API znajdziesz na [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).  
+- **Download GroupDocs.Viewer:** Najnowszą wersję pobierz ze [Downloads Page](https://releases.groupdocs.com/viewer/java/).
 
 ---
 
-**Ostatnia aktualizacja:** 2026-01-05  
+**Ostatnia aktualizacja:** 2026-03-24  
 **Testowano z:** GroupDocs.Viewer 25.2  
 **Autor:** GroupDocs
