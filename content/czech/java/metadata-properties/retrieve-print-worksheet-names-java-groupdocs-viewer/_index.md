@@ -1,34 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak efektivně extrahovat názvy pracovních listů z tabulek pomocí nástroje GroupDocs.Viewer pro Javu. Ideální pro vylepšení vašich pracovních postupů automatizace dokumentů."
-"title": "Extrakce a zobrazení názvů pracovních listů v Javě pomocí rozhraní GroupDocs.Viewer API"
-"url": "/cs/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-25'
+description: Naučte se, jak v Javě extrahovat názvy listů a získávat názvy listů v
+  Excelu pomocí GroupDocs.Viewer pro Javu – ideální pro automatizaci pracovních toků
+  dokumentů.
+keywords:
+- extract worksheet names java
+- retrieve excel sheet names
+- list spreadsheet worksheets
+- java extract xlsx sheets
+title: Extrahovat názvy listů v Javě s GroupDocs.Viewer API
 type: docs
+url: /cs/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/
+weight: 1
 ---
-# Extrakce a zobrazení názvů pracovních listů v Javě pomocí rozhraní GroupDocs.Viewer API
 
-## Zavedení
+# Extrahování názvů listů v Javě pomocí GroupDocs.Viewer API
 
-Správa více listů v rámci souborů tabulkového procesoru může být náročná, zejména při práci s velkými datovými sadami nebo automatizaci generování sestav. Rozhraní GroupDocs.Viewer for Java API tento úkol zjednodušuje tím, že umožňuje programově načítat názvy listů, čímž šetří čas a vylepšuje automatizované pracovní postupy. Tento tutoriál vás provede procesem použití GroupDocs.Viewer for Java k extrakci a zobrazení názvů listů z tabulkového dokumentu.
+Správa více listů v tabulkových souborech může být náročná, zejména při práci s velkými datovými sadami nebo automatizaci generování zpráv. V tomto tutoriálu se naučíte **jak extrahovat názvy listů v Javě** pomocí GroupDocs.Viewer pro Java API, spolehlivý způsob, jak zefektivnit vaše pracovní postupy automatizace dokumentů.
+
+![Extrahování a zobrazení názvů listů pomocí GroupDocs.Viewer pro Java](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
 
 **Klíčové poznatky:**
-- Nastavení prostředí pomocí GroupDocs.Viewer
-- Inicializace prohlížeče a konfigurace možností
-- Techniky pro efektivní vyhledávání a iterování v pracovních listech
+- Nastavení prostředí s GroupDocs.Viewer
+- Inicializace Vieweru a konfigurace možností
+- Techniky pro efektivní získávání a iteraci přes listy
 - Nejlepší postupy pro optimalizaci výkonu
 
-## Předpoklady
+## Rychlé odpovědi
+- **Co dělá „extract worksheet names java“?**  
+  Programově načte tabulku a vrátí název každého listu.
+- **Která knihovna je vyžadována?**  
+  GroupDocs.Viewer for Java (verze 25.2 nebo novější).
+- **Potřebuji licenci?**  
+  Bezplatná zkušební verze funguje pro testování; pro produkci je vyžadována placená licence.
+- **Mohu vypsat listy tabulky bez jejich vykreslení?**  
+  Ano – použijte `ViewInfoOptions` s HTML zobrazením pro získání pouze metadat listu.
+- **Je tento přístup vhodný pro velké soubory Excel?**  
+  Ano, pokud je kombinován se správnou správou paměti a dávkovým zpracováním.
 
-Abyste mohli postupovat podle tohoto tutoriálu, ujistěte se, že máte:
+## Co je „extract worksheet names java“?
+Metoda využívá schopnosti GroupDocs.Viewer pro extrakci metadat k načtení struktury sešitu a vrácení zobrazovaného názvu každého listu. To je ideální pro scénáře, kdy potřebujete ověřit přítomnost listu, generovat dynamická menu nebo řídit následné zpracování, aniž byste načítali celý soubor do paměti.
 
-- **Knihovny a závislosti:** Nainstalujte si GroupDocs.Viewer verze 25.2 nebo novější.
-- **Nastavení prostředí:** Použijte vývojové prostředí v Javě, jako je IntelliJ IDEA nebo Eclipse.
-- **Znalostní báze:** Základní znalost Javy a znalost Mavenu pro správu závislostí je nezbytná.
+## Proč získávat názvy listů Excelu pomocí GroupDocs.Viewer?
+- **Připraveno pro automatizaci:** Funguje v headless prostředích (servery, CI pipeline).  
+- **Zaměřeno na výkon:** Načítá se pouze metadata, čímž se vyhýbá těžkému vykreslování.  
+- **Podpora napříč formáty:** Zpracovává XLS, XLSX, ODS a další typy tabulek jednotně.
 
-## Nastavení GroupDocs.Viewer pro Javu
+## Požadavky
 
-GroupDocs.Viewer je dostupný přes Maven, takže jej snadno začleníte do svých projektů. Přidejte do svého `pom.xml` soubor:
+- **Knihovny a závislosti:** Nainstalujte GroupDocs.Viewer verze 25.2 nebo novější.  
+- **Nastavení prostředí:** Použijte Java IDE jako IntelliJ IDEA nebo Eclipse.  
+- **Základní znalosti:** Základní znalost Javy a Maven pro správu závislostí.
+
+## Nastavení GroupDocs.Viewer pro Java
+
+GroupDocs.Viewer je dostupný přes Maven, což usnadňuje jeho zahrnutí do vašich projektů. Přidejte následující konfiguraci do souboru `pom.xml`:
 
 ```xml
 <repositories>
@@ -49,40 +75,38 @@ GroupDocs.Viewer je dostupný přes Maven, takže jej snadno začleníte do svý
 
 ### Získání licence
 
-GroupDocs nabízí různé možnosti licencování, včetně bezplatné zkušební verze a dočasných licencí pro účely hodnocení. Pro plný přístup zvažte zakoupení licence prostřednictvím jejich oficiálních stránek.
+GroupDocs nabízí různé licenční možnosti, včetně bezplatné zkušební verze a dočasných licencí pro evaluační účely. Pro plný přístup zvažte zakoupení licence prostřednictvím jejich oficiálního webu.
 
-## Průvodce implementací
+## Jak získat názvy listů Excel (vypsat listy tabulky)
 
-### Funkce: Extrakce názvů pracovních listů
+Níže je krok‑za‑krokem průvodce, který vás provede extrakcí názvů listů. Kód zůstává nezměněn oproti původnímu příkladu, což zajišťuje, že funguje tak, jak je.
 
-Tato funkce ukazuje, jak extrahovat názvy pracovních listů z tabulky pomocí GroupDocs.Viewer.
+### Krok 1: Inicializace Vieweru
 
-#### Krok 1: Inicializace prohlížeče
-
-Začněte inicializací `Viewer` s cestou k dokumentu:
+Začněte inicializací `Viewer` s cestou k vašemu dokumentu:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/three_sheets.xlsx")) {
-    // Inicializační kód zde...
+    // Initialization code here...
 }
 ```
 
-Tento blok nastaví prohlížeč pro práci se zadaným souborem a zajistí správnou správu zdrojů pomocí funkce try-with-resources.
+Tento blok nastaví Viewer pro práci se zadaným souborem a zajišťuje správnou správu prostředků pomocí try‑with‑resources.
 
-#### Krok 2: Konfigurace ViewInfoOptions
+### Krok 2: Konfigurace ViewInfoOptions
 
-Soubor `ViewInfoOptions` pro načtení informací o zobrazení HTML:
+Nastavte `ViewInfoOptions` pro získání informací o HTML zobrazení:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setSpreadsheetOptions(SpreadsheetOptions.forOnePagePerSheet());
 ```
 
-Tato konfigurace zajišťuje, že každý list je vykreslen samostatně, což usnadňuje iteraci nad jednotlivými listy.
+Tato konfigurace zajišťuje, že každý list je vykreslen samostatně, což usnadňuje iteraci přes jednotlivé listy.
 
-#### Krok 3: Načtení a zobrazení názvů pracovních listů
+### Krok 3: Získání a zobrazení názvů listů
 
-Získejte `ViewInfo` objekt pro získání podrobností o stránkách dokumentu (pracovních listech):
+Získejte objekt `ViewInfo`, který poskytuje podrobnosti o stránkách dokumentu (listech):
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
@@ -92,53 +116,71 @@ for (Page page : viewInfo.getPages()) {
 }
 ```
 
-Tato smyčka iteruje každým listem a vypisuje jeho index a název.
+Tato smyčka iteruje přes každý list, vypisuje jeho index a název. Je to jádro operace **java extract xlsx sheets**.
 
 ### Tipy pro řešení problémů
-
-- **Zajistěte přesnost cesty k souboru:** Dvakrát zkontrolujte cestu k dokumentu, abyste se vyhnuli chybám typu „soubor nebyl nalezen“.
-- **Kompatibilita verzí:** Používejte kompatibilní verze knihovny GroupDocs.Viewer s vaším prostředím Java.
+- **Zkontrolujte přesnost cesty k souboru:** Dvakrát ověřte cestu k dokumentu, aby nedocházelo k chybám typu soubor nenalezen.  
+- **Kompatibilita verzí:** Používejte kompatibilní verze knihovny GroupDocs.Viewer s vaším Java prostředím.
 
 ## Praktické aplikace
 
-1. **Automatizované hlášení:** Extrahovat názvy listů pro dynamické generování sestav.
-2. **Ověření dat:** Programově ověřte přítomnost požadovaných pracovních listů v datových sadách.
+1. **Automatizované reportování:** Extrahujte názvy listů pro dynamické generování zpráv.  
+2. **Validace dat:** Programově ověřte přítomnost požadovaných listů v datových sadách.  
 3. **Integrace:** Vylepšete řešení pro správu dokumentů integrací s dalšími systémy.
 
 ## Úvahy o výkonu
 
-- **Optimalizace využití zdrojů:** Efektivně spravujte paměť při práci s velkými soubory pomocí nástrojů pro sběr odpadků a profilování v Javě.
-- **Dávkové zpracování:** Zpracovávejte dokumenty dávkově, abyste zkrátili dobu načítání a zlepšili propustnost.
+- **Optimalizace využití zdrojů:** Efektivně spravujte paměť při práci s velkými soubory pomocí garbage collection a profilovacích nástrojů v Javě.  
+- **Dávkové zpracování:** Zpracovávejte dokumenty ve skupinách, aby se snížila doba načítání a zvýšila propustnost.
 
 ## Závěr
 
-Dodržováním této příručky jste se naučili, jak efektivně extrahovat názvy pracovních listů pomocí nástroje GroupDocs.Viewer pro Javu. Tato dovednost může výrazně vylepšit vaše pracovní postupy správy dat. Prozkoumejte další funkce rozhraní API nahlédnutím do [Dokumentace GroupDocs](https://docs.groupdocs.com/viewer/java/).
+Po absolvování tohoto průvodce jste se naučili **jak extrahovat názvy listů v Javě** pomocí GroupDocs.Viewer pro Java. Tato dovednost může výrazně zlepšit vaše pracovní postupy správy dat. Prozkoumejte další funkce API v [dokumentaci GroupDocs](https://docs.groupdocs.com/viewer/java/).
 
-Jste připraveni jít o krok dál? Experimentujte s různými možnostmi a integrujte tuto funkcionalitu do větších systémů!
+Připraveni posunout to dál? Experimentujte s různými možnostmi a integrujte tuto funkci do větších systémů!
 
-## Sekce Často kladených otázek
+## Často kladené otázky
 
-1. **Co je GroupDocs.Viewer pro Javu?**
-   - Jedná se o API, které umožňuje prohlížení, převod a tisk dokumentů v aplikacích Java.
-
-2. **Jak efektivně zpracovávám velké soubory?**
-   - Používejte techniky správy paměti a dávkové zpracování pro optimalizaci výkonu.
-
-3. **Mohu si přizpůsobit výstupní formát pracovních listů?**
+1. **Co je GroupDocs.Viewer pro Java?**  
+   - Jedná se o API, které umožňuje prohlížení, konverzi a tisk dokumentů v Java aplikacích.
+2. **Jak efektivně zpracovat velké soubory?**  
+   - Používejte techniky správy paměti a zpracovávejte je ve dávkách pro optimalizaci výkonu.
+3. **Mohu přizpůsobit výstupní formát listů?**  
    - Ano, GroupDocs.Viewer podporuje různé formáty jako HTML, PDF atd.
+4. **Co když chybí název listu?**  
+   - Implementujte ošetření chyb pro elegantní zvládnutí takových situací.
+5. **Kde najdu další zdroje o GroupDocs.Viewer?**  
+   - Navštivte [dokumentaci GroupDocs](https://docs.groupdocs.com/viewer/java/) a jejich fóra podpory pro další pomoc.
 
-4. **Co když chybí název listu?**
-   - Implementujte ošetření chyb pro elegantní zvládání takových scénářů.
+## Často kladené otázky
 
-5. **Kde najdu další zdroje informací o GroupDocs.Viewer?**
-   - Navštivte [Dokumentace GroupDocs](https://docs.groupdocs.com/viewer/java/) a jejich fóra podpory, kde vám poskytnou další pomoc.
+**Q: Mohu použít tento kód v komerční aplikaci?**  
+A: Ano, pokud máte platnou licenci GroupDocs. Bezplatná zkušební verze je k dispozici pro evaluaci.
+
+**Q: Funguje to s Excel soubory chráněnými heslem?**  
+A: Chráněné soubory můžete otevřít zadáním hesla při vytváření instance `Viewer`.
+
+**Q: Jaké formáty souborů jsou podporovány pro extrakci listů?**  
+A: XLS, XLSX, ODS a další formáty tabulek podporované GroupDocs.Viewer.
+
+**Q: Jak mohu zlepšit výkon při zpracování mnoha sešitů?**  
+A: Kombinujte vzor try‑with‑resources s dávkovým zpracováním a omezte `ViewInfoOptions` na získávání pouze metadat.
+
+**Q: Existuje způsob, jak získat jen první několik názvů listů?**  
+A: Ano, můžete ukončit smyčku po požadovaném počtu nebo použít funkce stránkování v novějších verzích API.
 
 ## Zdroje
 
-- **Dokumentace:** [Dokumentace k prohlížeči GroupDocs v Javě](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API:** [Referenční příručka k rozhraní GroupDocs API](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout:** [Soubory ke stažení GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licence k zakoupení:** [Koupit licenci GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze:** [Bezplatná zkušební verze GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence:** [Žádost o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- **Fórum podpory:** [Podpora GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentace:** [GroupDocs Viewer Java dokumentace](https://docs.groupdocs.com/viewer/java/)
+- **Reference API GroupDocs:** [Reference API GroupDocs](https://reference.groupdocs.com/viewer/java/)
+- **Stáhnout:** [GroupDocs Ke stažení](https://releases.groupdocs.com/viewer/java/)
+- **Koupit licenci GroupDocs:** [Koupit licenci GroupDocs](https://purchase.groupdocs.com/buy)
+- **Bezplatná zkušební verze GroupDocs:** [Bezplatná zkušební verze GroupDocs](https://releases.groupdocs.com/viewer/java/)
+- **Požádat o dočasnou licenci:** [Požádat o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
+- **Fórum podpory GroupDocs:** [Fórum podpory GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Poslední aktualizace:** 2026-04-25  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs

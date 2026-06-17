@@ -1,34 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a extraer nombres de hojas de cálculo de forma eficiente con GroupDocs.Viewer para Java. Ideal para optimizar sus flujos de trabajo de automatización de documentos."
-"title": "Extraer y mostrar nombres de hojas de trabajo en Java mediante la API GroupDocs.Viewer"
-"url": "/es/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-25'
+description: Aprende cómo extraer nombres de hojas de cálculo en Java y recuperar
+  los nombres de las hojas de Excel usando GroupDocs.Viewer para Java, perfecto para
+  automatizar flujos de trabajo de documentos.
+keywords:
+- extract worksheet names java
+- retrieve excel sheet names
+- list spreadsheet worksheets
+- java extract xlsx sheets
+title: Extraer nombres de hojas de cálculo en Java con la API de GroupDocs.Viewer
 type: docs
+url: /es/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/
+weight: 1
 ---
-# Extraer y mostrar nombres de hojas de trabajo en Java mediante la API GroupDocs.Viewer
 
-## Introducción
+# Extraer nombres de hojas de cálculo Java con la API GroupDocs.Viewer
 
-Gestionar varias hojas de cálculo dentro de archivos de hoja de cálculo puede ser complicado, especialmente al gestionar grandes conjuntos de datos o automatizar la generación de informes. La API de GroupDocs.Viewer para Java simplifica esta tarea al permitirle recuperar nombres de hojas de cálculo mediante programación, ahorrando tiempo y optimizando los flujos de trabajo de automatización. Este tutorial le guiará a través del proceso de uso de GroupDocs.Viewer para Java para extraer y mostrar nombres de hojas de cálculo desde un documento de hoja de cálculo.
+Gestionar múltiples hojas de cálculo dentro de archivos de hojas de cálculo puede ser un desafío, especialmente al manejar grandes conjuntos de datos o automatizar la generación de informes. En este tutorial aprenderá **cómo extraer nombres de hojas de cálculo java** usando la API GroupDocs.Viewer para Java, una forma confiable de optimizar sus flujos de trabajo de automatización de documentos.
 
-**Conclusiones clave:**
-- Configuración de su entorno con GroupDocs.Viewer
-- Inicializando el Visor y configurando opciones
-- Técnicas para recuperar e iterar a través de hojas de trabajo de manera eficiente
+![Extraer y mostrar nombres de hojas de cálculo con GroupDocs.Viewer para Java](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
+
+**Puntos clave:**
+- Configurar su entorno con GroupDocs.Viewer
+- Inicializar el Viewer y configurar opciones
+- Técnicas para recuperar e iterar a través de las hojas de cálculo de manera eficiente
 - Mejores prácticas para optimizar el rendimiento
 
-## Prerrequisitos
+## Respuestas rápidas
+- **¿Qué hace “extract worksheet names java”?**  
+  Lee programáticamente una hoja de cálculo y devuelve el nombre de cada hoja.
+- **¿Qué biblioteca se requiere?**  
+  GroupDocs.Viewer for Java (versión 25.2 o posterior).
+- **¿Necesito una licencia?**  
+  Una prueba gratuita funciona para pruebas; se requiere una licencia paga para producción.
+- **¿Puedo listar las hojas de cálculo sin renderizarlas?**  
+  Sí – use `ViewInfoOptions` con vista HTML para obtener solo los metadatos de la hoja.
+- **¿Es este enfoque adecuado para archivos Excel grandes?**  
+  Sí, cuando se combina con una gestión adecuada de la memoria y procesamiento por lotes.
 
-Para seguir este tutorial, asegúrese de tener:
+## Qué es “extract worksheet names java”?
+El método aprovecha las capacidades de extracción de metadatos de GroupDocs.Viewer para leer la estructura del libro de trabajo y devolver el nombre visible de cada hoja de cálculo. Esto es ideal para escenarios donde necesita validar la presencia de hojas, generar menús dinámicos o impulsar el procesamiento posterior sin cargar todo el archivo en memoria.
 
-- **Bibliotecas y dependencias:** Instale GroupDocs.Viewer versión 25.2 o posterior.
-- **Configuración del entorno:** Utilice un entorno de desarrollo Java como IntelliJ IDEA o Eclipse.
-- **Base de conocimientos:** Es esencial tener conocimientos básicos de Java y estar familiarizado con Maven para la gestión de dependencias.
+## ¿Por qué recuperar nombres de hojas de Excel con GroupDocs.Viewer?
+- **Listo para automatización:** Funciona en entornos sin interfaz (servidores, pipelines CI).  
+- **Enfocado en rendimiento:** Solo se obtienen metadatos, evitando renderizado pesado.  
+- **Soporte multiplataforma:** Maneja XLS, XLSX, ODS y otros tipos de hojas de cálculo de forma uniforme.
+
+## Requisitos previos
+
+- **Bibliotecas y dependencias:** Instale GroupDocs.Viewer versión 25.2 o posterior.  
+- **Configuración del entorno:** Use un IDE Java como IntelliJ IDEA o Eclipse.  
+- **Base de conocimientos:** Competencia básica en Java y Maven para la gestión de dependencias.
 
 ## Configuración de GroupDocs.Viewer para Java
 
-GroupDocs.Viewer está disponible a través de Maven, lo que facilita su inclusión en sus proyectos. Agregue la siguiente configuración a su `pom.xml` archivo:
+GroupDocs.Viewer está disponible a través de Maven, lo que facilita su inclusión en sus proyectos. Añada la siguiente configuración a su archivo `pom.xml`:
 
 ```xml
 <repositories>
@@ -47,42 +73,36 @@ GroupDocs.Viewer está disponible a través de Maven, lo que facilita su inclusi
 </dependencies>
 ```
 
-### Adquisición de licencias
+### Obtención de licencia
 
-GroupDocs ofrece varias opciones de licencia, incluyendo una prueba gratuita y licencias temporales para fines de evaluación. Para obtener acceso completo, considere comprar una licencia a través de su sitio web oficial.
+GroupDocs ofrece varias opciones de licencia, incluyendo una prueba gratuita y licencias temporales para propósitos de evaluación. Para acceso completo, considere comprar una licencia a través de su sitio oficial.
 
-## Guía de implementación
+## Cómo recuperar nombres de hojas de Excel (listar hojas de cálculo)
 
-### Función: Extracción de nombres de hojas de trabajo
+A continuación se muestra una guía paso a paso que le lleva a través de la extracción de nombres de hojas de cálculo. El código permanece sin cambios respecto al ejemplo original, garantizando que se ejecute tal cual.
 
-Esta función demuestra cómo extraer nombres de hojas de trabajo de una hoja de cálculo utilizando GroupDocs.Viewer.
+### Paso 1: Inicializar el Viewer
 
-#### Paso 1: Inicializar el visor
-
-Comience por inicializar `Viewer` con la ruta de su documento:
+Comience inicializando `Viewer` con la ruta de su documento:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/three_sheets.xlsx")) {
-    // Código de inicialización aquí...
+    // Initialization code here...
 }
 ```
 
-Este bloque configura el Visor para trabajar con un archivo específico, garantizando una gestión adecuada de los recursos mediante try-with-resources.
+### Paso 2: Configurar ViewInfoOptions
 
-#### Paso 2: Configurar ViewInfoOptions
-
-Colocar `ViewInfoOptions` Para recuperar información de la vista HTML:
+Establezca `ViewInfoOptions` para la recuperación de información de vista HTML:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setSpreadsheetOptions(SpreadsheetOptions.forOnePagePerSheet());
 ```
 
-Esta configuración garantiza que cada hoja de trabajo se procese por separado, lo que facilita la iteración en hojas individuales.
+### Paso 3: Recuperar y mostrar nombres de hojas de cálculo
 
-#### Paso 3: Recuperar y mostrar los nombres de las hojas de trabajo
-
-Obtener el `ViewInfo` objeto para obtener detalles sobre las páginas del documento (hojas de trabajo):
+Obtenga el objeto `ViewInfo` para obtener detalles sobre las páginas del documento (hojas de cálculo):
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
@@ -92,53 +112,71 @@ for (Page page : viewInfo.getPages()) {
 }
 ```
 
-Este bucle itera a través de cada hoja de trabajo, imprimiendo su índice y nombre.
+Este bucle itera a través de cada hoja de cálculo, imprimiendo su índice y nombre. Es el núcleo de la operación **java extract xlsx sheets**.
 
-### Consejos para la solución de problemas
-
-- **Asegúrese de la precisión de la ruta del archivo:** Verifique nuevamente la ruta de su documento para evitar errores de archivo no encontrado.
-- **Compatibilidad de versiones:** Utilice versiones de la biblioteca GroupDocs.Viewer compatibles con su entorno Java.
+### Consejos de solución de problemas
+- **Asegúrese de la precisión de la ruta del archivo:** Verifique dos veces la ruta de su documento para evitar errores de archivo no encontrado.  
+- **Compatibilidad de versiones:** Use versiones compatibles de la biblioteca GroupDocs.Viewer con su entorno Java.
 
 ## Aplicaciones prácticas
 
-1. **Informes automatizados:** Extraer nombres de hojas para la generación de informes dinámicos.
-2. **Validación de datos:** Verificar programáticamente la presencia de las hojas de trabajo requeridas en los conjuntos de datos.
-3. **Integración:** Mejore las soluciones de gestión de documentos integrándolas con otros sistemas.
+1. **Informes automatizados:** Extraiga nombres de hojas para la generación dinámica de informes.  
+2. **Validación de datos:** Verifique programáticamente la presencia de hojas de cálculo requeridas en los conjuntos de datos.  
+3. **Integración:** Mejore las soluciones de gestión documental integrándolas con otros sistemas.
 
 ## Consideraciones de rendimiento
 
-- **Optimizar el uso de recursos:** Administre la memoria de manera eficiente al manejar archivos grandes utilizando las herramientas de recolección de basura y creación de perfiles de Java.
+- **Optimizar el uso de recursos:** Administre la memoria de manera eficiente al manejar archivos grandes usando la recolección de basura y herramientas de perfilado de Java.  
 - **Procesamiento por lotes:** Procese documentos en lotes para reducir los tiempos de carga y mejorar el rendimiento.
 
 ## Conclusión
 
-Siguiendo esta guía, ha aprendido a usar GroupDocs.Viewer para Java para extraer eficazmente los nombres de las hojas de cálculo. Esta habilidad puede mejorar significativamente sus flujos de trabajo de gestión de datos. Explore más funciones de la API consultando... [Documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/).
+Al seguir esta guía, ha aprendido **cómo extraer nombres de hojas de cálculo java** usando GroupDocs.Viewer para Java. Esta habilidad puede mejorar significativamente sus flujos de trabajo de gestión de datos. Explore más funciones de la API consultando la [documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/).
 
-¿Listo para ir un paso más allá? ¡Experimenta con diferentes opciones e integra esta funcionalidad en sistemas más grandes!
+¿Listo para dar el siguiente paso? ¡Experimente con diferentes opciones e integre esta funcionalidad en sistemas más grandes!
 
 ## Sección de preguntas frecuentes
 
-1. **¿Qué es GroupDocs.Viewer para Java?**
+1. **¿Qué es GroupDocs.Viewer para Java?**  
    - Es una API que permite ver, convertir e imprimir documentos dentro de aplicaciones Java.
+2. **¿Cómo manejo archivos grandes de manera eficiente?**  
+   - Use técnicas de gestión de memoria y procese en lotes para optimizar el rendimiento.
+3. **¿Puedo personalizar el formato de salida de las hojas de cálculo?**  
+   - Sí, GroupDocs.Viewer soporta varios formatos como HTML, PDF, etc.
+4. **¿Qué pasa si falta el nombre de una hoja de cálculo?**  
+   - Implemente manejo de errores para gestionar tales escenarios de forma adecuada.
+5. **¿Dónde puedo encontrar más recursos sobre GroupDocs.Viewer?**  
+   - Visite la [documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/) y sus foros de soporte para obtener ayuda adicional.
 
-2. **¿Cómo puedo manejar archivos grandes de manera eficiente?**
-   - Utilice técnicas de gestión de memoria y procese en lotes para optimizar el rendimiento.
+## Preguntas frecuentes
 
-3. **¿Puedo personalizar el formato de salida de las hojas de trabajo?**
-   - Sí, GroupDocs.Viewer admite varios formatos como HTML, PDF, etc.
+**P: ¿Puedo usar este código en una aplicación comercial?**  
+R: Sí, siempre que tenga una licencia válida de GroupDocs. Una prueba gratuita está disponible para evaluación.
 
-4. **¿Qué pasa si falta el nombre de una hoja de cálculo?**
-   - Implemente el manejo de errores para gestionar dichos escenarios con elegancia.
+**P: ¿Esto funciona con archivos Excel protegidos con contraseña?**  
+R: Puede abrir archivos protegidos proporcionando la contraseña al crear la instancia de `Viewer`.
 
-5. **¿Dónde puedo encontrar más recursos sobre GroupDocs.Viewer?**
-   - Visita el [Documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/) y sus foros de soporte para obtener ayuda adicional.
+**P: ¿Qué formatos de archivo son compatibles para la extracción de hojas?**  
+R: XLS, XLSX, ODS y otros formatos de hoja de cálculo compatibles con GroupDocs.Viewer.
+
+**P: ¿Cómo puedo mejorar el rendimiento al procesar muchos libros de trabajo?**  
+R: Combine el patrón try‑with‑resources con procesamiento por lotes y limite `ViewInfoOptions` a la recuperación solo de metadatos.
+
+**P: ¿Hay una forma de obtener solo los primeros nombres de hoja?**  
+R: Sí, puede salir del bucle después del recuento deseado o usar funciones de paginación en versiones más recientes de la API.
 
 ## Recursos
 
-- **Documentación:** [Documentación de Java de GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Referencia API:** [Referencia de la API de GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Descargar:** [Descargas de GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licencia de compra:** [Comprar licencia de GroupDocs](https://purchase.groupdocs.com/buy)
+- **Documentación:** [Documentación de GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)
+- **Referencia de API:** [Referencia de API de GroupDocs](https://reference.groupdocs.com/viewer/java/)
+- **Descargas:** [Descargas de GroupDocs](https://releases.groupdocs.com/viewer/java/)
+- **Comprar licencia:** [Comprar licencia de GroupDocs](https://purchase.groupdocs.com/buy)
 - **Prueba gratuita:** [Prueba gratuita de GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licencia temporal:** [Solicitar Licencia Temporal](https://purchase.groupdocs.com/temporary-license/)
-- **Foro de soporte:** [Soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Licencia temporal:** [Solicitar licencia temporal](https://purchase.groupdocs.com/temporary-license/)
+- **Foro de soporte:** [Foro de soporte de GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Última actualización:** 2026-04-25  
+**Probado con:** GroupDocs.Viewer 25.2 para Java  
+**Autor:** GroupDocs
