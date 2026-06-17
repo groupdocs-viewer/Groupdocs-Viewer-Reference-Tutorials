@@ -1,47 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan használhatja a GroupDocs.Viewer for Java eszközt oldalszámok és szövegsorok kinyerésére dokumentumokból. Ez az útmutató a beállítást, a megvalósítást és a gyakorlati alkalmazásokat ismerteti."
-"title": "Dokumentumelemzés megvalósítása a GroupDocs.Viewer for Java segítségével; Oldalmetaadatok és szövegsorok kinyerése"
-"url": "/hu/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-13'
+description: Tanulja meg, hogyan lehet szöveget kinyerni a docx fájlokból a GroupDocs.Viewer
+  for Java segítségével, beleértve az oldal metaadatait és a szövegsorok kinyerését.
+  A beállítás, a kód és a valós példák is szerepelnek.
+keywords:
+- extract text from docx
+- GroupDocs Viewer Java
+- document metadata extraction
+title: Szöveg kinyerése docx fájlból a GroupDocs.Viewer for Java használatával
 type: docs
+url: /hu/java/metadata-properties/implement-document-analysis-groupdocs-viewer-java/
+weight: 1
 ---
-# Dokumentumelemzés implementálása GroupDocs.Viewer segítségével Java-ban: Oldalmetaadatok és szövegsorok kinyerése
 
-## Bevezetés
+# DOCX szöveg kinyerése a GroupDocs.Viewer for Java segítségével
 
-Programozottan szeretné elemezni a dokumentumokat? Akár adatok kinyeréséről, akár a tartalom elrendezésének megértéséről van szó, ez kihívást jelenthet. **GroupDocs.Viewer Java-hoz** Leegyszerűsíti ezt azáltal, hogy hatékony funkciókat kínál az oldal metaadatainak és szövegsorainak hatékony kinyeréséhez. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Viewer beállításán és használatán Java-alkalmazásokban.
+Programozottan szeretne **extract text from docx** fájlokból szöveget kinyerni? Akár oldalszámokat kell kinyernie, minden szövegsort rögzíteni, vagy kereshető indexeket építeni, a manuális megközelítés időigényes és hibára hajlamos. **GroupDocs.Viewer for Java** egyszerűsíti a folyamatot, magas teljesítményű API-kat biztosítva, amelyek beolvassák a dokumentum szerkezetét és tiszta szöveges adatot adnak vissza.
 
-### Amit tanulni fogsz
+Ebben az útmutatóban megtanulja, hogyan állítsa be a GroupDocs.Viewer‑t, hogyan nyerje ki az oldalmétaadatokat, és hogyan vonja ki a DOCX fájl minden szövegsorát. A végére egy kész megoldást kap, amelyet bármely Java‑alapú háttérrendszerbe integrálhat.
 
-- GroupDocs.Viewer beállítása Java-hoz
-- Oldalszámok kinyerése dokumentumokból
-- Szövegsorok lekérése a dokumentumoldalakról
-- Gyakorlati használati esetek és integrációs tippek
+![Dokumentumelemzés a GroupDocs.Viewer for Java segítségével](/viewer/metadata-properties/document-analysis.png)
 
-A végére olyan robusztus megoldásokat fogsz tudni létrehozni, amelyek hatékonyan feldolgozzák és elemzik a dokumentumok tartalmát.
+## Gyors válaszok
+- **Mi a “extract text from docx” jelentése?** Azt jelenti, hogy programozottan olvas egy DOCX fájlt, és soronként visszanyeri a tiszta szöveges tartalmat.  
+- **Melyik könyvtár kezeli ezt?** A GroupDocs.Viewer for Java biztosítja a `Viewer` osztályt és a kapcsolódó API‑kat.  
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez működik; a termeléshez fizetett licenc szükséges.  
+- **Milyen Java verzió szükséges?** Bármely JDK 8 + verzió, amely kompatibilis a Maven‑nel.  
+- **Feldolgozhatok nagy kötegelt fájlokat?** Igen – a `Viewer` példányok újrafelhasználásával és az oldalak stream‑ben történő kezelésével.
 
-Kezdjük a kezdéshez szükséges előfeltételekkel.
+## Mi a “extract text from docx”?
+A DOCX fájlból történő szövegkivonás azt jelenti, hogy a dokumentum belső XML struktúráját olvassa, és a formázás nélküli ember által olvasható szöveget adja vissza. Ez hasznos indexeléshez, kereséshez, vagy a tartalom downstream analitikai csővezetékekbe való továbbításához.
 
-## Előfeltételek
+## Miért használja a GroupDocs.Viewer for Java‑t?
+- **Pontosság:** Kezeli a komplex elrendezéseket, táblázatokat és többoszlopos dokumentumokat.  
+- **Sebesség:** Optimalizált renderelő motor, amely nagy fájlok esetén is gyorsan működik.  
+- **Keresztformátumú támogatás:** Ugyanaz az API működik PDF, PPTX, XLSX és további formátumok esetén, így újrahasználhatja a kódot.  
+- **Nincsenek külső függőségek:** Tiszta Java, nincs szükség natív könyvtárakra.
 
-A GroupDocs.Viewer funkcióinak Java nyelven történő implementálása előtt győződjön meg arról, hogy rendelkezik a következőkkel:
+## Előkövetelmények
+- Java Development Kit (JDK) 8 vagy újabb.  
+- Maven telepítve a függőségkezeléshez.  
+- Egy DOCX fájl, amelyet elemezni szeretne (helyezze egy ismert mappába).  
 
-### Szükséges könyvtárak és verziók
-- **GroupDocs.Viewer Java-hoz** (25.2-es vagy újabb verzió)
-- Maven beállítása a fejlesztői környezetben a függőségek kezeléséhez
+## A GroupDocs.Viewer for Java beállítása
 
-### Környezeti beállítási követelmények
-- Telepített kompatibilis Java fejlesztői készlet (JDK).
-- Ismerkedés a Java programozási alapfogalmakkal.
-
-### Ismereti előfeltételek
-- A Maven és a függőségkezelés alapjai Java projektekben.
-- Előnyt jelent a Java nyelven végzett fájl I/O műveletekben szerzett tapasztalat.
-
-## GroupDocs.Viewer beállítása Java-hoz
-
-Kezdésként add hozzá a szükséges függőségeket a projektedhez. Ha Mavent használsz, add hozzá a következő konfigurációt a `pom.xml`:
+Adja hozzá a GroupDocs tárolót és a függőséget a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -61,135 +64,118 @@ Kezdésként add hozzá a szükséges függőségeket a projektedhez. Ha Mavent 
 </dependencies>
 ```
 
-### Licencbeszerzés lépései
-
-- **Ingyenes próbaverzió:** Töltsön le egy ingyenes próbaverziót a [GroupDocs letöltési oldal](https://releases.groupdocs.com/viewer/java/).
-- **Ideiglenes engedély:** Szerezzen be ideiglenes engedélyt hosszabbított tesztelésre a [ideiglenes licencoldal](https://purchase.groupdocs.com/temporary-license/).
-- **Vásárlás:** A teljes hozzáférés és támogatás érdekében érdemes lehet licencet vásárolni a következő címen: [GroupDocs vásárlási portál](https://purchase.groupdocs.com/buy).
+### Licenc beszerzési lépések
+- **Free Trial:** Töltse le az ingyenes próbaverziót a [GroupDocs downloads page](https://releases.groupdocs.com/viewer/java/) oldalról.  
+- **Temporary License:** Szerezzen be egy ideiglenes licencet a kiterjesztett teszteléshez a [temporary license page](https://purchase.groupdocs.com/temporary-license/) oldalon.  
+- **Purchase:** A teljes hozzáférés és támogatás érdekében fontolja meg a licenc megvásárlását a [GroupDocs purchase portal](https://purchase.groupdocs.com/buy) oldalon.
 
 ### Alapvető inicializálás
+1. Importálja a szükséges osztályokat.  
+2. Hozzon létre egy `Viewer` példányt, amely az Ön DOCX fájljára mutat.  
+3. `ViewInfoOptions.forPngView(true)` használatával kérjen oldal‑szintű információkat (metaadatok és szövegsorok).
 
-A GroupDocs.Viewer inicializálása Java alkalmazásban:
-1. Importálja a szükséges osztályokat.
-2. Hozz létre egy `Viewer` objektum a dokumentum elérési útjával.
-3. Használat `ViewInfoOptions.forPngView(true)` a PNG renderelés megadásához.
+## Hogyan nyerjünk ki szöveget a docx‑ből – Lépésről‑lépésre útmutató
 
-## Megvalósítási útmutató
+### 1. Oldal metaadatok kinyerése
+Az oldal metaadatai, például az oldalszám, elengedhetetlen, ha navigációs struktúrákat kell építeni vagy konkrét szakaszokra hivatkozni.
 
-A megvalósítást két fő funkcióra bontjuk: oldal metaadatok és szövegsorok kinyerése dokumentumokból.
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
+    ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
+    ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
+```
 
-### Oldal metaadatainak kinyerése
+```java
+    for (Page page : viewInfo.getPages()) {
+        int pageNumber = page.getNumber();
+        System.out.println("Page: " + pageNumber); // Outputs the page number
+    }
+}
+```
 
-Ez a funkció lehetővé teszi metaadatok, például oldalszámok lekérését, amelyek felbecsülhetetlen értékűek lehetnek indexelési vagy navigációs célokra.
+- `ViewInfoOptions.forPngView(true)`: Az API‑t arra utasítja, hogy gyűjtse az oldal információkat a PNG renderelés előkészítése közben.  
+- `viewInfo.getPages()`: Egy gyűjteményt ad vissza, ahol minden `Page` objektum tartalmazza a számát és egyéb metaadatait.  
 
-#### Áttekintés
-- **Cél:** Egy dokumentum minden egyes oldalának végignézése és a számának kinyerése.
-  
-#### Megvalósítási lépések
+**Pro tip:** A `Viewer`-t egy try‑with‑resources blokkban szabadítsa fel, hogy a natív erőforrások automatikusan felszabaduljanak.
 
-1. **Megjelenítő inicializálása:"
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-       ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
-       ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
-   ```
-2. **Oldalakon átívelő iteráció:**
-   ```java
-   for (Page page : viewInfo.getPages()) {
-       int pageNumber = page.getNumber();
-       System.out.println("Page: " + pageNumber); // Kiírja az oldalszámot
-   }
-   ```
-3. **Paraméterek és módszerek magyarázata:**
-   - `ViewInfoOptions.forPngView(true)`: Beállítja, hogy az oldal adatait PNG formátumban kérje le a rendereléshez.
-   - `getPage()`: Lekéri a metaadatokat tartalmazó oldalak listáját.
+### 2. Szövegsorok kinyerése az oldalakról
+Miután már azonosítani tudja az egyes oldalakat, vonjuk ki a tényleges szövegsorokat.
 
-#### Hibaelhárítási tippek
-- Győződjön meg arról, hogy a dokumentum elérési útja helyes.
-- Győződjön meg arról, hogy a GroupDocs.Viewer függőségi verziója megegyezik a beállításával.
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
+    ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
+    ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
+```
 
-### Szövegsorok kinyerése oldalakról
+```java
+    for (Page page : viewInfo.getPages()) {
+        System.out.println("Page: " + page.getNumber());
+        System.out.println("Text lines:");
+        
+        for (Line line : page.getLines()) {
+            String lineText = line.getValue();
+            System.out.print(lineText + "\t");
+        }
+    }
+}
+```
 
-Szövegsorok kinyerése a tartalom szerkezetének elemzéséhez és oldalankénti konkrét információk gyűjtéséhez.
+- `page.getLines()`: Egy `Line` objektumok listáját adja vissza, ahol minden egyes objektum egyetlen szövegsort képvisel, ahogy az az oldalon megjelenik.  
+- A belső ciklus kiírja minden sort, tabulátorokkal elválasztva a jobb olvashatóság érdekében.
 
-#### Áttekintés
-- **Cél:** A dokumentum oldalain található szöveg minden sorának kinyerése és kinyomtatása.
-  
-#### Megvalósítási lépések
-
-1. **Megtekintő beállítása:"
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-       ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(true);
-       ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
-   ```
-2. **Sorok lekérése és nyomtatása:**
-   ```java
-   for (Page page : viewInfo.getPages()) {
-       System.out.println("Page: " + page.getNumber());
-       System.out.println("Text lines:");
-       
-       for (Line line : page.getLines()) {
-           String lineText = line.getValue();
-           System.out.print(lineText + "\t");
-       }
-   }
-   ```
-3. **Főbb konfigurációk és módszerek:**
-   - `getLines()`Szövegsorokat kér le egy adott oldalról.
-   - A ciklus végigmegy minden soron, és kinyomtatja azok tartalmát.
-
-#### Hibaelhárítási tippek
-- Ellenőrizze, hogy a GroupDocs.Viewer támogatja-e a dokumentumformátumot.
-- Ellenőrizze a fájlhozzáféréssel vagy -engedélyekkel kapcsolatos esetleges kivételeket.
+### Gyakori problémák és megoldások
+| Tünet | Valószínű ok | Megoldás |
+|---------|--------------|-----|
+| `null` page numbers | A dokumentum nem lett megfelelően betöltve | Ellenőrizze a fájl útvonalát, és győződjön meg róla, hogy a fájl létezik. |
+| No text lines returned | Nem támogatott fájlformátum | Ellenőrizze, hogy a DOCX verzió támogatott-e; szükség esetén frissítse a GroupDocs‑t. |
+| `OutOfMemoryError` on large files | A Viewer túl sok oldalt tart a memóriában | Dolgoztassa fel az oldalakat kisebb kötegekben, vagy használja újra ugyanazt a `Viewer` példányt. |
 
 ## Gyakorlati alkalmazások
+1. **Search Engine Indexing:** Tárolja az oldalszámokat a kinyert szöveg mellett, hogy pontos részletlekérdezést tegyen lehetővé.  
+2. **Legal Document Review:** Vonjon ki minden sort az automatikus záradék-észleléshez vagy a redakciós munkafolyamatokhoz.  
+3. **Content Migration:** Hozza át a régi DOCX tartalmat egy CMS‑be, miközben megőrzi a struktúrát.  
+4. **Reporting Dashboards:** Összegyezze a kulcsfontosságú szakaszokat a címsorok és felsorolások kinyerésével.  
 
-Íme néhány valós alkalmazás, ahol ezek a funkciók hasznosak lehetnek:
-1. **Dokumentumindexelés:** Automatizálja az indexelési folyamatokat az oldalszámok és szövegsorok lekérésével, megkönnyítve a gyors keresést.
-2. **Tartalomelemző eszközök:** Olyan eszközöket fejleszteni, amelyek elemzik a tartalom szerkezetét és formázását.
-3. **Keresőmotorokkal való integráció:** Bővítse a dokumentumkeresési lehetőségeket az alkalmazásain belül.
-4. **Adatok kinyerése jelentésekhez:** Dokumentumokból kinyerhet meghatározott adatpontokat jelentések vagy összefoglalók készítéséhez.
-5. **Jogi dokumentumok feldolgozása:** Használja a szövegkinyerést a jogi dokumentumok felülvizsgálatának automatizálásához.
-
-## Teljesítménybeli szempontok
-
-A GroupDocs.Viewer használatakor az optimális teljesítmény érdekében vegye figyelembe az alábbi tippeket:
-- **Erőforrás-gazdálkodás:** A memória hatékony felhasználásának biztosítása érdekében szabaduljon meg a `Viewer` tárgyakat megfelelően.
-- **Kötegelt feldolgozás:** Nagy mennyiségű dokumentum esetén kötegelt formában dolgozza fel azokat.
-- **Konfiguráció finomhangolása:** Módosítsa a renderelési beállításokat az igényei szerint a terhelés csökkentése érdekében.
+## Teljesítmény szempontok
+- **Dispose Properly:** Mindig zárja be a `Viewer`‑t (használjon try‑with‑resources blokkot).  
+- **Batch Processing:** Sok dokumentum kezelésekor használja újra egyetlen `Viewer` példányt szálanként a terhelés csökkentése érdekében.  
+- **Render Options:** Ha csak szövegre van szüksége, kihagyhatja a PNG renderelést a `ViewInfoOptions.forTextView()` használatával (itt nem látható), így csökkentve a feldolgozási időt.
 
 ## Következtetés
-
-Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a GroupDocs.Viewer programot Java-ban, és hogyan kinyerheti az oldalak metaadatait és szövegsorait a dokumentumokból. Ezek a funkciók jelentősen javíthatják a dokumentumfeldolgozási munkafolyamatokat az automatizált adatkinyerés és -elemzés lehetővé tételével.
+Most már tudja, hogyan **extract text from docx** fájlokból nyerhet szöveget a GroupDocs.Viewer for Java segítségével, hogyan szerezheti meg az oldalszámokat, és hogyan iterálhat minden szövegsoron. Ezek az építőelemek lehetővé teszik, hogy gyors, megbízható és könnyen karbantartható dokumentum‑feldolgozó csővezetékeket hozzon létre.
 
 ### Következő lépések
+- Kísérletezzen más formátumokkal (PDF, PPTX) ugyanazzal az API‑val.  
+- Kombinálja a kinyert szöveget egy teljes szöveges keresőmotorral, például az Elasticsearch‑szel.  
+- Fedezze fel a renderelt képek stílusbeállításait, ha vizuális előnézetekre is szüksége van.
 
-A megértés elmélyítéséhez:
-- Fedezze fel a GroupDocs.Viewer további funkcióit.
-- Kísérletezzen különböző dokumentumformátumokkal.
-- Integrálja ezeket a funkciókat nagyobb alkalmazásokba.
+## Gyakran Ismételt Kérdések
 
-**Cselekvésre való felhívás:** Próbálja meg alkalmazni ezeket a megoldásokat a projektjeiben még ma!
+**Q: Milyen fájlformátumokat támogat a GroupDocs.Viewer?**  
+A: Széles körű formátumokat támogat, beleértve a DOCX, PDF, XLSX, PPTX és még sok más.
 
-## GYIK szekció
+**Q: Testreszabhatom a kimeneti formátumot a sorok kinyerésekor?**  
+A: Igen, a `ViewInfoOptions` konfigurálásával (például `forTextView()` a tiszta szöveghez).
 
-1. **Milyen fájlformátumokat támogat a GroupDocs.Viewer?**
-   - Széles skáláját támogatja, beleértve a DOCX-et, PDF-et, XLSX-et és egyebeket.
-2. **Testreszabhatom a kimeneti formátumot a sorok kinyerésekor?**
-   - Igen, konfigurálással `ViewInfoOptions`.
-3. **Van-e korlátozás a feldolgozható oldalak számára?**
-   - Bár nincs szigorú korlát, a teljesítmény nagyméretű dokumentumok esetén változhat.
-4. **Hogyan kezelhetem a kivételeket a GroupDocs.Viewerben?**
-   - Használj try-catch blokkokat a Viewer kódod körül a hibák szabályos kezeléséhez.
-5. **Integrálható ez az eszköz más Java keretrendszerekkel?**
-   - Abszolút! Integrálható a Spring, a Hibernate és más programokba.
+**Q: Van korlát a feldolgozható oldalak számában?**  
+A: Nincs szigorú korlát, de nagyon nagy dokumentumok esetén a memóriahatékonyság érdekében kötegelt feldolgozásra lehet szükség.
 
-## Erőforrás
+**Q: Hogyan kezeljem a kivételeket a GroupDocs.Viewer‑ben?**  
+A: A Viewer kódját try‑catch blokkokba helyezze, és kezelje a `ViewerException`‑t vagy általános `IOException`‑t a szükség szerint.
 
+**Q: Integrálható ez az eszköz más Java keretrendszerekkel?**  
+A: Természetesen! Zökkenőmentesen működik a Spring, Hibernate, Jakarta EE és más keretrendszerekkel.
+
+## Források
 - [GroupDocs dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- [API-referencia](https://reference.groupdocs.com/viewer/java/)
+- [API referencia](https://reference.groupdocs.com/viewer/java/)
 - [GroupDocs.Viewer letöltése](https://releases.groupdocs.com/viewer/java/)
 - [Licenc vásárlása](https://purchase.groupdocs.com/buy)
-- [Ingyenes próbaverzió letöltése](https://releases.groupdocs.com/viewer/java/)
-- [Ideiglenes engedélykérelem](https://purchase.groupdocs.com/temporary-license)
+- [Ingyenes próba letöltése](https://releases.groupdocs.com/viewer/java/)
+- [Ideiglenes licenc kérése](https://purchase.groupdocs.com/temporary-license)
+
+---
+
+**Utoljára frissítve:** 2026-04-13  
+**Tesztelve ezzel:** GroupDocs.Viewer for Java 25.2  
+**Szerző:** GroupDocs

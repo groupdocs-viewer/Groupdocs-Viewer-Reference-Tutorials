@@ -1,33 +1,50 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用 GroupDocs.Viewer for Java 提取 PDF 元數據，例如頁數、文件類型和權限。請按照本逐步指南操作，增強應用程式的文件處理能力。"
-"title": "使用 Java 中的 GroupDocs.Viewer 檢索 PDF 元資料和屬性－逐步指南"
-"url": "/zh-hant/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
-"weight": 1
+date: '2026-04-13'
+description: 了解如何使用 GroupDocs.Viewer for Java 提取 PDF 頁數及其他 PDF 元資料（如文件類型和權限）。請依循此逐步指南，提升您的應用程式文件處理能力。
+keywords:
+- extract pdf page count
+- read pdf document type
+- retrieve pdf metadata java
+title: 透過 GroupDocs.Viewer Java 提取 PDF 頁數與元資料
 type: docs
+url: /zh-hant/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/
+weight: 1
 ---
-# 使用 Java 中的 GroupDocs.Viewer 擷取 PDF 元資料和屬性
 
-歡迎閱讀這份全面的指南，了解如何使用 Java 中的 GroupDocs.Viewer 函式庫從 PDF 文件中擷取視圖資訊。如果您希望以程式設計方式從 PDF 文件中提取頁數、文件類型和權限等詳細信息，那麼您來對地方了。
+# 透過 GroupDocs.Viewer Java 取得 PDF 頁數與中繼資料
 
-## 您將學到什麼
-- 了解 GroupDocs.Viewer for Java 如何實作文件檢視功能。
-- 設定您的環境以使用帶有 Java 的 GroupDocs.Viewer。
-- 從 PDF 文件中檢索並列印視圖資訊。
-- 探索實際應用和效能考量。
+歡迎閱讀本完整指南，說明如何使用 GroupDocs.Viewer 程式庫在 Java 中 **extract pdf page count** 以及其他檢視資訊。若您需要以程式方式讀取 PDF 的文件類型、取得其權限，或僅僅計算頁數，您來對地方了。
 
-在深入實施之前，讓我們確保您已做好一切準備。
+![Retrieve PDF Metadata and Properties with GroupDocs.Viewer for Java](/viewer/metadata-properties/retrievepdf-metadata-and-properties-java.png)
 
-### 先決條件
-首先，請確保您已具備：
-- **庫和依賴項**：您需要 GroupDocs.Viewer for Java。請確保您的專案已將其作為依賴項包含在內。
-- **環境設定**：安裝了Java的開發環境（建議使用Java 8或更高版本）。
-- **知識庫**：熟悉 Java 程式設計並對 Maven 有基本的了解將會很有幫助。
+## 快速解答
+- **我可以取得什麼？** PDF page count, document type, and printing permissions.  
+- **使用哪個程式庫？** GroupDocs.Viewer for Java (version 25.2).  
+- **需要授權嗎？** A free trial works for testing; a commercial license is required for production.  
+- **支援的 Java 版本？** Java 8 or higher.  
+- **程式碼行數多少？** Less than 20 lines to get full view info.
 
-## 為 Java 設定 GroupDocs.Viewer
+## 您將學習到
+- 了解 GroupDocs.Viewer for Java 如何提供文件檢視功能。  
+- 設定環境以在 Java 中使用 GroupDocs.Viewer。  
+- 從 PDF 檔案取得並列印檢視資訊，包括 **extract pdf page count**。  
+- 探索實務應用與效能考量。
 
-### Maven配置
-若要使用 Maven 將 GroupDocs.Viewer 包含在 Java 專案中，請將以下內容新增至您的 `pom.xml`：
+## 為何要提取 pdf 頁數與其他中繼資料？
+了解頁數、文件類型與權限可協助您：
+1. **在內容管理系統中顯示簡潔摘要**。  
+2. **透過檢查是否允許列印來加強安全性**。  
+3. **僅載入必要頁面以最佳化資源使用**。
+
+## 前置條件
+- **函式庫與相依性**: GroupDocs.Viewer for Java (added via Maven).  
+- **環境**: Java 8 或更新版本已安裝於開發機器上。  
+- **知識基礎**: 基本的 Java 程式設計與 Maven 使用經驗。
+
+## 設定 GroupDocs.Viewer for Java
+
+### Maven 設定
+將儲存庫與相依性加入您的 `pom.xml`：
 
 ```xml
 <repositories>
@@ -46,82 +63,81 @@ type: docs
 </dependencies>
 ```
 
-### 許可證獲取
-您可以先免費試用，或購買臨時授權來探索 GroupDocs.Viewer 的全部功能。如需長期使用，建議購買授權。
+### 取得授權
+您可以先使用免費試用版，或取得臨時授權以探索 GroupDocs.Viewer 的完整功能。長期使用時，建議購買正式授權。
 
-## 實施指南
-在本節中，我們將指導您使用 GroupDocs.Viewer 從 PDF 中擷取視圖資訊。
+## 如何在 Java 中使用 GroupDocs.Viewer 提取 pdf 頁數
 
-### 檢索視圖資訊
-
-#### 概述
-此功能可讓您提取 PDF 文件的詳細元數據，例如頁數以及是否允許列印。這對於需要顯示或處理 PDF 元資料的應用程式尤其有用。
-
-#### 逐步實施
-##### 步驟 1：設定 ViewInfoOptions
+### 步驟 1：設定 `ViewInfoOptions`
 ```java
-// 為 HTML 視圖建立 ViewInfoOptions，這對於檢索視圖資訊是必要的
+// Create ViewInfoOptions for HTML view, which is necessary for retrieving view info
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ```
-*為什麼*： `ViewInfoOptions` 指定如何檢索文件資訊。使用 `forHtmlView()` 準備檢視器以提取與呈現為 HTML 相關的資料。
+*Why*: `ViewInfoOptions` 告訴 Viewer 您需要哪種表示方式。使用 `forHtmlView()` 會讓引擎返回對 HTML 呈現有用的中繼資料，包括頁數。
 
-##### 第 2 步：初始化檢視器
+### 步驟 2：初始化 `Viewer`
 ```java
 try (Viewer viewer = new Viewer(pdfFilePath)) {
-    // 檢索和處理步驟將在這裡完成
+    // Retrieval and processing steps will be done here
 }
 ```
-*為什麼*： 這 `Viewer` 物件使用您的 PDF 文件路徑進行初始化。它被封裝在 try-with-resources 語句中，以確保操作完成後資源被釋放。
+*Why*: `Viewer` 物件會綁定至您的 PDF 檔案路徑。將其放入 try‑with‑resources 區塊可確保原生資源自動釋放。
 
-##### 步驟 3：檢索視圖資訊
+### 步驟 3：取得檢視資訊（中繼資料）
 ```java
-// 使用指定的選項從文件中檢索視圖信息
+// Retrieve view information from the document using the specified options
 PdfViewInfo viewInfo = (PdfViewInfo) viewer.getViewInfo(viewInfoOptions);
 
-// 輸出檢索到的視圖訊息
+// Output the retrieved view information
 System.out.println("Document type is: " + viewInfo.getFileType());
 System.out.println("Pages count: " + viewInfo.getPages().size());
 System.out.println("Printing allowed: " + viewInfo.isPrintingAllowed());
 ```
-*為什麼*：此程式碼片段檢索並列印有關 PDF 的重要元數據，幫助您了解其結構和權限。
+*Why*: 此程式碼片段一次呼叫即可提取 **read pdf document type**、**extract pdf page count** 與 **get pdf permissions java**。`PdfViewInfo` 物件保存了後續處理所需的全部資料。
 
-### 故障排除提示
-- 確保您的 PDF 路徑正確，以避免文件未找到異常。
-- 檢查 GroupDocs.Viewer 和 Java 之間是否有任何版本相容性問題。
+### 常見陷阱與提示
+- **檔案路徑不正確** → throws `FileNotFoundException`. Double‑check the absolute or relative path.  
+- **版本不匹配** → ensure the Maven version (`25.2`) matches the runtime library.  
+- **大型 PDF** → consider streaming or processing pages in batches to keep memory usage low.
 
-## 實際應用
-GroupDocs.Viewer 可以整合到各種系統中：
-1. **內容管理系統**：自動從上傳的文檔中提取元資料。
-2. **文件管理系統**：實現在授予完全存取權限之前預覽 PDF 文件等功能。
-3. **Web 應用程式**：在使用者儀表板上動態顯示文件資訊。
+## 實務應用
+GroupDocs.Viewer 可整合至各種系統：
+1. **內容管理系統** – 自動從上傳的 PDF 提取中繼資料以進行索引。  
+2. **文件管理工作流程** – 根據 `isPrintingAllowed` 標誌決定是否允許列印。  
+3. **Web 儀表板** – 在不載入整個檔案的情況下顯示頁數與文件類型的即時預覽。
 
-## 性能考慮
-- 為了優化性能，使用 `ViewInfoOptions` 謹慎地避免不必要的資料擷取。
-- 監控記憶體使用情況並透過適當的異常處理有效地管理資源。
+## 效能考量
+- 僅在需要中繼資料時使用 `ViewInfoOptions`；若已快取資訊，請避免對每個請求都呼叫 `getViewInfo`。  
+- 監控記憶體使用，特別是大型 PDF，並及時關閉 `Viewer`（try‑with‑resources 區塊會自動處理）。
 
 ## 結論
-現在您已經學習如何使用 Java 中的 GroupDocs.Viewer 從 PDF 擷取視圖資訊。您可以進一步探索該庫的更多功能，或將其整合到您的專案中。
+您現在已了解如何使用 GroupDocs.Viewer for Java **extract pdf page count**、讀取文件類型以及取得權限。隨時可嘗試其他 `ViewInfoOptions`（例如 `forImageView`）以符合不同的呈現情境。
 
 ### 後續步驟
-考慮深入了解 GroupDocs.Viewer 提供的其他文件處理功能，例如將文件呈現為不同的格式。
+- 探索使用 `viewer.view` 將頁面渲染為影像或 HTML。  
+- 將中繼資料提取與資料庫結合，建立可搜尋的文件目錄。
 
-## 常見問題部分
-**Q：如何開始免費試用？**
-答：參觀 [GroupDocs 的免費試用頁面](https://releases.groupdocs.com/viewer/java/) 有關獲取免費許可證的說明。
+## 常見問答
+**Q: 如何開始免費試用？**  
+A: 請前往 [GroupDocs' Free Trial page](https://releases.groupdocs.com/viewer/java/) 了解取得免費授權的說明。
 
-**Q：GroupDocs.Viewer 可以在雲端應用程式中使用嗎？**
-答：是的，該庫支援各種環境，並可整合到基於雲端的解決方案中。
+**Q: GroupDocs.Viewer 能在雲端應用程式中使用嗎？**  
+A: 是的，該程式庫支援多種環境，且可整合至雲端解決方案。
 
-**Q：如果我遇到 PDF 渲染錯誤怎麼辦？**
-答：檢查您的文件的兼容性或更新到最新版本的 GroupDocs.Viewer 以獲得增強支援。
+**Q: 若 PDF 呈現發生錯誤該怎麼辦？**  
+A: 請檢查文件相容性，或升級至最新版本的 GroupDocs.Viewer 以獲得更佳支援。
 
 ## 資源
-- **文件**： [GroupDocs 檢視器 Java 文檔](https://docs.groupdocs.com/viewer/java/)
-- **API 參考**： [GroupDocs 檢視器 API 參考](https://reference.groupdocs.com/viewer/java/)
-- **下載**： [GroupDocs Viewer下載頁面](https://releases.groupdocs.com/viewer/java/)
-- **購買**： [購買 GroupDocs 許可證](https://purchase.groupdocs.com/buy)
-- **免費試用**： [開始免費試用](https://releases.groupdocs.com/viewer/java/)
-- **臨時執照**： [獲得臨時許可證](https://purchase.groupdocs.com/temporary-license/)
-- **支援**： [GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9)
+- **文件**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **API 參考**: [GroupDocs Viewer API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **下載**: [GroupDocs Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **購買**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **免費試用**: [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **臨時授權**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **支援**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-歡迎隨意瀏覽這些資源，如果您還有其他問題或需要協助，歡迎在論壇上留言。祝您程式愉快！
+---
+
+**最後更新：** 2026-04-13  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs

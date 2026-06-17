@@ -1,33 +1,53 @@
 ---
-"date": "2025-04-24"
-"description": "Erfahren Sie, wie Sie PDF-Metadaten wie Seitenanzahl, Dokumenttyp und Berechtigungen mit GroupDocs.Viewer für Java extrahieren. Folgen Sie dieser Schritt-für-Schritt-Anleitung, um die Dokumentverarbeitungsfunktionen Ihrer Anwendung zu verbessern."
-"title": "Abrufen von PDF-Metadaten und -Eigenschaften mit GroupDocs.Viewer in Java – Eine Schritt-für-Schritt-Anleitung"
-"url": "/de/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/"
-"weight": 1
+date: '2026-04-13'
+description: Lernen Sie, wie Sie die Seitenzahl von PDFs und andere PDF‑Metadaten
+  wie Dokumenttyp und Berechtigungen mit GroupDocs.Viewer für Java extrahieren. Folgen
+  Sie dieser Schritt‑für‑Schritt‑Anleitung, um die Dokumentenverarbeitungsfähigkeiten
+  Ihrer Anwendung zu verbessern.
+keywords:
+- extract pdf page count
+- read pdf document type
+- retrieve pdf metadata java
+title: PDF‑Seitenanzahl und Metadaten mit GroupDocs.Viewer Java extrahieren
 type: docs
+url: /de/java/metadata-properties/retrieve-pdf-view-info-groupdocs-java/
+weight: 1
 ---
-# Abrufen von PDF-Metadaten und -Eigenschaften mit GroupDocs.Viewer in Java
 
-Willkommen zu dieser umfassenden Anleitung zum Abrufen von Ansichtsinformationen aus einem PDF-Dokument mit der GroupDocs.Viewer-Bibliothek in Java. Wenn Sie Details wie Seitenanzahl, Dokumenttyp und Berechtigungen programmgesteuert aus PDF-Dateien extrahieren möchten, sind Sie hier richtig.
+# PDF-Seitenzahl und Metadaten extrahieren mit GroupDocs.Viewer Java
+
+Willkommen zu diesem umfassenden Leitfaden zum **extract pdf page count** und anderen Anzeiginformationen aus einem PDF-Dokument mithilfe der GroupDocs.Viewer-Bibliothek in Java. Wenn Sie programmgesteuert den Dokumenttyp eines PDFs auslesen, seine Berechtigungen erhalten oder einfach seine Seiten zählen möchten, sind Sie hier genau richtig.
+
+![PDF-Metadaten und -Eigenschaften mit GroupDocs.Viewer für Java abrufen](/viewer/metadata-properties/retrievepdf-metadata-and-properties-java.png)
+
+## Schnelle Antworten
+- **Was kann ich abrufen?** PDF page count, document type, and printing permissions.  
+- **Welche Bibliothek?** GroupDocs.Viewer for Java (version 25.2).  
+- **Brauche ich eine Lizenz?** A free trial works for testing; a commercial license is required for production.  
+- **Unterstützte Java-Version?** Java 8 or higher.  
+- **Wie viele Codezeilen?** Less than 20 lines to get full view info.
 
 ## Was Sie lernen werden
-- Verstehen Sie, wie GroupDocs.Viewer für Java die Dokumentanzeigefunktion ermöglicht.
-- Richten Sie Ihre Umgebung für die Verwendung von GroupDocs.Viewer mit Java ein.
-- Rufen Sie Ansichtsinformationen aus einer PDF-Datei ab und drucken Sie sie.
-- Erkunden Sie praktische Anwendungen und Leistungsaspekte.
+- Verstehen, wie GroupDocs.Viewer für Java die Dokumentanzeigefunktionalität ermöglicht.  
+- Richten Sie Ihre Umgebung ein, um GroupDocs.Viewer mit Java zu verwenden.  
+- Abrufen und Ausgeben von Anzeiginformationen aus einer PDF-Datei, einschließlich **extract pdf page count**.  
+- Praktische Anwendungen und Leistungsüberlegungen erkunden.
 
-Bevor wir uns in die Implementierung stürzen, stellen wir sicher, dass Sie alles bereit haben, um mitmachen zu können.
+## Warum PDF-Seitenzahl und andere Metadaten extrahieren?
+Das Wissen um die Seitenzahl, den Dokumenttyp und die Berechtigungen hilft Ihnen:
+1. **Knappe Zusammenfassungen** in Content‑Management‑Systemen anzuzeigen.  
+2. **Sicherheit durchsetzen**, indem geprüft wird, ob das Drucken vor dem Rendern erlaubt ist.  
+3. **Ressourcennutzung optimieren**, indem nur erforderliche Seiten geladen werden.
 
-### Voraussetzungen
-Stellen Sie zunächst sicher, dass Sie über Folgendes verfügen:
-- **Bibliotheken und Abhängigkeiten**: Sie benötigen GroupDocs.Viewer für Java. Stellen Sie sicher, dass Ihr Projekt es als Abhängigkeit enthält.
-- **Umgebungs-Setup**: Eine Entwicklungsumgebung mit installiertem Java (Java 8 oder höher wird empfohlen).
-- **Wissensdatenbank**: Kenntnisse in der Java-Programmierung und Grundkenntnisse in Maven sind von Vorteil.
+## Voraussetzungen
+- **Bibliotheken & Abhängigkeiten**: GroupDocs.Viewer for Java (über Maven hinzugefügt).  
+- **Umgebung**: Java 8 oder neuer, auf Ihrem Entwicklungsrechner installiert.  
+- **Wissensbasis**: Grundkenntnisse in Java-Programmierung und Maven.
 
-## Einrichten von GroupDocs.Viewer für Java
+## Einrichtung von GroupDocs.Viewer für Java
 
 ### Maven-Konfiguration
-Um GroupDocs.Viewer in Ihr Java-Projekt mit Maven einzubinden, fügen Sie Folgendes zu Ihrem `pom.xml`:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -46,82 +66,81 @@ Um GroupDocs.Viewer in Ihr Java-Projekt mit Maven einzubinden, fügen Sie Folgen
 </dependencies>
 ```
 
-### Lizenzerwerb
-Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben, um alle Funktionen von GroupDocs.Viewer zu nutzen. Für eine langfristige Nutzung wird der Kauf einer Lizenz empfohlen.
+### Lizenzbeschaffung
+Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben, um die vollen Funktionen von GroupDocs.Viewer zu erkunden. Für den langfristigen Einsatz wird der Kauf einer Lizenz empfohlen.
 
-## Implementierungshandbuch
-In diesem Abschnitt führen wir Sie durch das Abrufen von Ansichtsinformationen aus einer PDF-Datei mithilfe von GroupDocs.Viewer.
+## Wie man PDF-Seitenzahl mit GroupDocs.Viewer in Java extrahiert
 
-### Abrufen von Ansichtsinformationen
-
-#### Überblick
-Mit dieser Funktion können Sie detaillierte Metadaten zu Ihrem PDF-Dokument extrahieren, z. B. die Seitenanzahl und ob der Druckvorgang zulässig ist. Dies ist besonders nützlich für Anwendungen, die PDF-Metadaten anzeigen oder verarbeiten müssen.
-
-#### Schrittweise Implementierung
-##### Schritt 1: Konfigurieren Sie ViewInfoOptions
+### Schritt 1: `ViewInfoOptions` konfigurieren
 ```java
-// Erstellen Sie ViewInfoOptions für die HTML-Ansicht, die zum Abrufen von Ansichtsinformationen erforderlich ist
+// Create ViewInfoOptions for HTML view, which is necessary for retrieving view info
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ```
-*Warum*: `ViewInfoOptions` gibt an, wie Sie die Dokumentinformationen abrufen möchten. Mit `forHtmlView()` bereitet den Viewer darauf vor, für die Darstellung als HTML relevante Daten zu extrahieren.
+*Warum*: `ViewInfoOptions` teilt dem Viewer mit, welche Darstellung Sie benötigen. Die Verwendung von `forHtmlView()` bereitet die Engine darauf vor, Metadaten zurückzugeben, die für das HTML‑Rendering nützlich sind, einschließlich der Seitenzahl.
 
-##### Schritt 2: Viewer initialisieren
+### Schritt 2: `Viewer` initialisieren
 ```java
 try (Viewer viewer = new Viewer(pdfFilePath)) {
-    // Hier werden die Abruf- und Verarbeitungsschritte durchgeführt
+    // Retrieval and processing steps will be done here
 }
 ```
-*Warum*: Der `Viewer` Das Objekt wird mit Ihrem PDF-Dateipfad initialisiert. Es ist in eine Try-with-Resources-Anweisung eingebettet, um sicherzustellen, dass die Ressourcen nach Abschluss des Vorgangs freigegeben werden.
+*Warum*: Das `Viewer`‑Objekt ist an den Pfad Ihrer PDF‑Datei gebunden. Das Einbetten in einen try‑with‑resources‑Block stellt sicher, dass native Ressourcen automatisch freigegeben werden.
 
-##### Schritt 3: Ansichtsinformationen abrufen
+### Schritt 3: Anzeiginformationen (Metadaten) abrufen
 ```java
-// Rufen Sie mit den angegebenen Optionen Ansichtsinformationen aus dem Dokument ab
+// Retrieve view information from the document using the specified options
 PdfViewInfo viewInfo = (PdfViewInfo) viewer.getViewInfo(viewInfoOptions);
 
-// Ausgabe der abgerufenen Ansichtsinformationen
+// Output the retrieved view information
 System.out.println("Document type is: " + viewInfo.getFileType());
 System.out.println("Pages count: " + viewInfo.getPages().size());
 System.out.println("Printing allowed: " + viewInfo.isPrintingAllowed());
 ```
-*Warum*Dieser Codeausschnitt ruft wichtige Metadaten zur PDF-Datei ab und druckt sie aus, sodass Sie deren Struktur und Berechtigungen besser verstehen.
+*Warum*: Dieser Codeausschnitt extrahiert **read pdf document type**, **extract pdf page count** und **get pdf permissions java** in einem einzigen Aufruf. Das `PdfViewInfo`‑Objekt enthält alle Daten, die Sie für die weitere Verarbeitung benötigen.
 
-### Tipps zur Fehlerbehebung
-- Stellen Sie sicher, dass Ihr PDF-Pfad korrekt ist, um Ausnahmen vom Typ „Datei nicht gefunden“ zu vermeiden.
-- Überprüfen Sie, ob es Probleme mit der Versionskompatibilität zwischen GroupDocs.Viewer und Java gibt.
+### Häufige Stolperfallen & Tipps
+- **Falscher Dateipfad** → wirft `FileNotFoundException`. Überprüfen Sie den absoluten oder relativen Pfad.  
+- **Versionskonflikt** → stellen Sie sicher, dass die Maven‑Version (`25.2`) mit der Laufzeitbibliothek übereinstimmt.  
+- **Große PDFs** → erwägen Sie Streaming oder die Verarbeitung von Seiten in Batches, um den Speicherverbrauch gering zu halten.
 
 ## Praktische Anwendungen
 GroupDocs.Viewer kann in verschiedene Systeme integriert werden:
-1. **Content-Management-Systeme**: Metadaten automatisch aus hochgeladenen Dokumenten extrahieren.
-2. **Dokumentenmanagementsysteme**: Implementieren Sie Funktionen wie die Vorschau von PDF-Dateien, bevor der vollständige Zugriff gewährt wird.
-3. **Webanwendungen**: Dokumentinformationen dynamisch auf Benutzer-Dashboards anzeigen.
+1. **Content Management Systeme** – Metadaten automatisch aus hochgeladenen PDFs für die Indexierung extrahieren.  
+2. **Dokumenten‑Management‑Workflows** – entscheiden, ob das Drucken basierend auf dem `isPrintingAllowed`‑Flag erlaubt ist.  
+3. **Web‑Dashboards** – eine Live‑Vorschau der Seitenzahl und des Dokumenttyps anzeigen, ohne die gesamte Datei zu laden.
 
-## Überlegungen zur Leistung
-- Um die Leistung zu optimieren, verwenden Sie `ViewInfoOptions` umsichtig, um unnötige Datenextraktion zu vermeiden.
-- Überwachen Sie die Speichernutzung und verwalten Sie Ressourcen effektiv mit der richtigen Ausnahmebehandlung.
+## Leistungsüberlegungen
+- Verwenden Sie `ViewInfoOptions` nur, wenn Sie Metadaten benötigen; vermeiden Sie das Aufrufen von `getViewInfo` für jede Anfrage, wenn die Informationen bereits im Cache sind.  
+- Überwachen Sie den Speicherverbrauch, insbesondere bei großen PDFs, und schließen Sie den `Viewer` umgehend (der try‑with‑resources‑Block übernimmt dies).
 
-## Abschluss
-Sie haben nun gelernt, wie Sie mit GroupDocs.Viewer in Java Ansichtsinformationen aus PDF-Dateien abrufen. Experimentieren Sie weiter, indem Sie weitere Funktionen der Bibliothek erkunden oder sie in Ihre Projekte integrieren.
+## Fazit
+Sie wissen jetzt, wie Sie **extract pdf page count**, den Dokumenttyp auslesen und Berechtigungen mit GroupDocs.Viewer für Java erhalten. Experimentieren Sie gern mit anderen `ViewInfoOptions` (z. B. `forImageView`), um verschiedene Rendering‑Szenarien zu unterstützen.
 
 ### Nächste Schritte
-Erwägen Sie, tiefer in die anderen Dokumentverarbeitungsfunktionen von GroupDocs.Viewer einzutauchen, beispielsweise in die Darstellung von Dokumenten in verschiedenen Formaten.
+- Erkunden Sie das Rendern von Seiten zu Bildern oder HTML mit `viewer.view`.  
+- Kombinieren Sie die Metadatenextraktion mit einer Datenbank, um durchsuchbare Dokumentkataloge zu erstellen.
 
 ## FAQ-Bereich
-**F: Wie beginne ich mit einer kostenlosen Testversion?**
-A: Besuchen [Kostenlose Testseite von GroupDocs](https://releases.groupdocs.com/viewer/java/) Anweisungen zum Erhalt Ihrer kostenlosen Lizenz.
+**Q: Wie starte ich mit einer kostenlosen Testversion?**  
+A: Besuchen Sie die [Free Trial‑Seite von GroupDocs](https://releases.groupdocs.com/viewer/java/) für Anweisungen zum Erhalt Ihrer kostenlosen Lizenz.
 
-**F: Kann GroupDocs.Viewer in Cloud-Anwendungen verwendet werden?**
-A: Ja, die Bibliothek unterstützt verschiedene Umgebungen und kann in Cloud-basierte Lösungen integriert werden.
+**Q: Kann GroupDocs.Viewer in Cloud‑Anwendungen verwendet werden?**  
+A: Ja, die Bibliothek unterstützt verschiedene Umgebungen und kann in cloud‑basierten Lösungen integriert werden.
 
-**F: Was passiert, wenn beim PDF-Rendering ein Fehler auftritt?**
-A: Überprüfen Sie die Kompatibilität Ihres Dokuments oder aktualisieren Sie auf die neueste Version von GroupDocs.Viewer für erweiterte Unterstützung.
+**Q: Was tun, wenn ein Fehler beim PDF‑Rendering auftritt?**  
+A: Prüfen Sie die Kompatibilität Ihres Dokuments oder aktualisieren Sie auf die neueste Version von GroupDocs.Viewer für verbesserten Support.
 
 ## Ressourcen
-- **Dokumentation**: [GroupDocs Viewer Java-Dokumente](https://docs.groupdocs.com/viewer/java/)
-- **API-Referenz**: [GroupDocs Viewer API-Referenz](https://reference.groupdocs.com/viewer/java/)
-- **Herunterladen**: [GroupDocs Viewer-Downloadseite](https://releases.groupdocs.com/viewer/java/)
-- **Kaufen**: [GroupDocs-Lizenz kaufen](https://purchase.groupdocs.com/buy)
-- **Kostenlose Testversion**: [Starten Sie Ihre kostenlose Testversion](https://releases.groupdocs.com/viewer/java/)
-- **Temporäre Lizenz**: [Holen Sie sich eine temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/)
-- **Unterstützung**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentation**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **API‑Referenz**: [GroupDocs Viewer API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download**: [GroupDocs Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Kauf**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Kostenlose Testversion**: [Start Your Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporäre Lizenz**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Erkunden Sie diese Ressourcen und nutzen Sie das Forum, wenn Sie weitere Fragen haben oder Hilfe benötigen. Viel Spaß beim Programmieren!
+---
+
+**Zuletzt aktualisiert:** 2026-04-13  
+**Getestet mit:** GroupDocs.Viewer 25.2 für Java  
+**Autor:** GroupDocs
