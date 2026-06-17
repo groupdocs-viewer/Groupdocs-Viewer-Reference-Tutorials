@@ -1,35 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a dividir de manera eficiente dibujos CAD grandes en mosaicos utilizando GroupDocs.Viewer para Java, mejorando el rendimiento y la facilidad de administración en sus aplicaciones."
-"title": "Divida dibujos CAD en mosaicos con GroupDocs.Viewer Java para una representación eficiente"
-"url": "/es/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Aprende cómo dividir los dibujos CAD en mosaicos usando GroupDocs Viewer
+  para Java, mejorando el rendimiento de renderizado y simplificando el manejo de
+  archivos grandes.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Cómo dividir dibujos CAD en mosaicos con GroupDocs Viewer
 type: docs
+url: /es/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# Dividir dibujos CAD en mosaicos con GroupDocs.Viewer Java
 
-## Introducción
-¿Tiene dificultades para gestionar y renderizar dibujos CAD grandes de forma eficiente en su aplicación Java? Esta guía le mostrará cómo usar GroupDocs.Viewer para Java para dividir estos dibujos en mosaicos manejables. Al dividir el dibujo en secciones más pequeñas, puede mejorar significativamente el rendimiento y la facilidad de manejo.
+# Cómo dividir dibujos CAD en mosaicos con GroupDocs Viewer
 
-**Lo que aprenderás:**
-- Configuración de GroupDocs.Viewer para Java.
-- Un proceso paso a paso para dividir dibujos CAD en mosaicos.
-- Configuraciones clave y técnicas de optimización.
-- Aplicaciones prácticas y posibilidades de integración.
+Si te preguntas **cómo dividir CAD** en archivos más pequeños y manejables, has llegado al lugar correcto. En este tutorial recorreremos los pasos exactos necesarios para dividir grandes dibujos CAD en mosaicos usando **GroupDocs Viewer for Java**. Al final tendrás una solución lista para usar que mejora la velocidad de renderizado, reduce el consumo de memoria y facilita la visualización de los dibujos en aplicaciones web o móviles.
 
-Comencemos por garantizar que su entorno esté listo con los requisitos previos necesarios.
+![Dividir dibujos CAD con GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
 
-## Prerrequisitos
-Antes de comenzar, asegúrese de tener:
+## Respuestas rápidas
+- **¿Qué logra “dividir CAD”?** Divide un dibujo masivo en imágenes más pequeñas (mosaicos) que se cargan más rápido y consumen menos memoria.  
+- **¿Qué formato se usa para los mosaicos?** Se generan archivos PNG por defecto, pero se admiten otros formatos mediante las opciones de Viewer.  
+- **¿Necesito una licencia?** Una prueba gratuita funciona para desarrollo; se requiere una licencia de pago para producción.  
+- **¿Puedo cambiar el tamaño del mosaico?** Sí – ajusta los cálculos de `tileWidth` y `tileHeight` según tus necesidades.  
+- **¿Es este enfoque thread‑safe?** Renderizar cada mosaico en su propia instancia de `Viewer` con try‑with‑resources es seguro para la ejecución concurrente.
 
-- **Bibliotecas**:GroupDocs.Viewer para Java (versión 25.2 o posterior).
-- **Configuración del entorno**:Un kit de desarrollo de Java (JDK) funcional y un entorno de desarrollo integrado como IntelliJ IDEA o Eclipse.
-- **Requisitos previos de conocimiento**:Comprensión básica de la programación Java y familiaridad con la herramienta de compilación Maven.
+## Qué es “dividir CAD”?
+Dividir CAD se refiere a separar un único dibujo CAD, a menudo enorme, en múltiples secciones rectangulares (mosaicos). Cada mosaico se renderiza de forma independiente, lo que permite cargar solo las partes que el usuario realmente necesita, perfecto para mapas web, portales de documentos y visores móviles.
+
+## Por qué usar GroupDocs Viewer for Java?
+GroupDocs Viewer ofrece soporte listo para usar de más de 100 formatos de archivo, incluidos DWG, DXF y DWF. Su API de mosaicos le permite especificar coordenadas exactas, de modo que pueda renderizar exactamente el área que le interesa sin procesar todo el archivo primero. Esto ahorra ciclos de CPU, reduce el ancho de banda y brinda una experiencia de usuario más fluida.
+
+## Requisitos previos
+- **Bibliotecas**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: Cualquier Java Development Kit reciente (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse u otro IDE compatible con Java.  
+- **Herramienta de compilación**: Maven (otras herramientas de compilación funcionan siempre que se añada la dependencia).  
 
 ## Configuración de GroupDocs.Viewer para Java
-Para usar GroupDocs.Viewer, agréguelo como dependencia a su proyecto. Si usa Maven:
+Agrega el repositorio de GroupDocs y la dependencia a tu `pom.xml`:
 
-**Configuración de Maven:**
 ```xml
 <repositories>
    <repository>
@@ -47,44 +58,43 @@ Para usar GroupDocs.Viewer, agréguelo como dependencia a su proyecto. Si usa Ma
 </dependencies>
 ```
 
-### Adquisición de licencias
-GroupDocs.Viewer ofrece una licencia de prueba gratuita para explorar todas sus capacidades:
-- **Prueba gratuita**: Visita [Prueba gratuita de GroupDocs](https://releases.groupdocs.com/viewer/java/) para descargar y probar la biblioteca.
-- **Licencia temporal**:Solicite una licencia temporal en [Página de licencia temporal](https://purchase.groupdocs.com/temporary-license/).
-- **Compra**:Comprar una licencia completa en su [Página de compra](https://purchase.groupdocs.com/buy).
+### Obtención de licencia
+GroupDocs Viewer ofrece una licencia de prueba gratuita para evaluación:
 
-### Inicialización y configuración básicas
-Para inicializar GroupDocs.Viewer en su aplicación Java:
+- **Prueba gratuita**: Visita [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) para descargar la biblioteca.  
+- **Licencia temporal**: Solicítala en [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Licencia completa**: Compra una licencia de producción en la [Purchase Page](https://purchase.groupdocs.com/buy).
+
+### Inicialización básica
+Crea una instancia simple de `Viewer` para verificar que la biblioteca se cargue correctamente:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Su código de renderizado va aquí.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Con la configuración completa, procedamos a implementar la función.
 
-## Guía de implementación
+## Guía paso a paso para dividir dibujos CAD en mosaicos
 
-### Dividir el dibujo en mosaicos
-Esta sección muestra cómo dividir un dibujo CAD en mosaicos más pequeños para una gestión y renderización más eficientes. Cada mosaico tendrá un cuarto del tamaño original.
+### Paso 1: Definir el directorio de salida
+Almacenaremos cada mosaico como un archivo PNG separado. Usar un método de utilidad mantiene la lógica de rutas limpia y reutilizable.
 
-#### Paso 1: Definir la ruta del directorio de salida
-Comience por definir dónde se guardarán sus imágenes renderizadas:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Esta configuración utiliza un método de utilidad para obtener la ruta, lo que garantiza la reutilización y la claridad.
 
-#### Paso 2: Configurar las opciones de visualización
-Configurar opciones para renderizar cada sección por separado:
+### Paso 2: Configurar opciones de vista
+Establece el formato de renderizado a PNG y indica al visor que no precargue cada página (lo que ahorra memoria).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +102,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Este fragmento de código configura la representación en formato PNG sin procesar todas las páginas a la vez.
 
-#### Paso 3: Calcular las dimensiones de las baldosas
-Determinar las dimensiones de cada mosaico:
+### Paso 3: Calcular dimensiones del mosaico
+Primero obtenemos el ancho y alto originales del dibujo, luego lo dividimos en cuatro cuadrantes iguales.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +114,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Cada pieza representa una cuarta parte del tamaño total.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +126,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Paso 4: Renderizar y guardar mosaicos
-Añade cada mosaico calculado a las opciones de renderizado y renderiza:
+### Paso 4: Renderizar y guardar los mosaicos
+Añade los mosaicos calculados a las opciones de renderizado y permite que el `Viewer` genere los archivos PNG.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,45 +136,38 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-Este paso final renderiza el documento basándose en los mosaicos especificados y guarda cada uno como un archivo PNG separado.
 
-### Consejos para la solución de problemas
-- Asegúrese de que la ruta de compilación de su proyecto incluya archivos JAR de GroupDocs.Viewer.
-- Verifique que su aplicación pueda escribir en el directorio de salida.
-- Verifique si hay excepciones en la representación para diagnosticar problemas con archivos de dibujo específicos.
+### Consejos de solución de problemas
+- **Ruta de compilación** – Asegúrate de que los archivos JAR de GroupDocs estén en el classpath.  
+- **Permisos** – La carpeta de salida debe ser escribible por el proceso Java.  
+- **Excepciones** – Si ves `ViewerException`, verifica que el archivo DWG no esté corrupto y que la licencia correcta esté aplicada.
 
-## Aplicaciones prácticas
-Dividir dibujos CAD en mosaicos puede resultar beneficioso en:
-1. **Mapeo web**:Cargue de manera eficiente grandes planos arquitectónicos en mapas web sin sobrecargar los recursos del servidor.
-2. **Sistemas de gestión de documentos**:Gestión más sencilla y acceso más rápido a secciones específicas de dibujos grandes.
-3. **Aplicaciones móviles**:Mejorar el rendimiento al renderizar solo las partes necesarias de un dibujo en función de la interacción del usuario.
+## Casos de uso comunes para dividir mosaicos CAD
+1. **Mapeo web** – Carga solo la porción visible de un plano de planta mientras el usuario hace pan/zoom.  
+2. **Gestión de documentos** – Almacena cada mosaico por separado para generar vistas previas más rápidas.  
+3. **Visualización móvil** – Reduce el ancho de banda descargando solo los mosaicos necesarios para la pantalla actual.
 
 ## Consideraciones de rendimiento
-Para optimizar el rendimiento de su aplicación:
-- Utilice mosaicos estratégicamente para equilibrar entre el detalle y el tiempo de procesamiento.
-- Supervise el uso de la memoria, especialmente cuando trabaje con dibujos muy grandes.
-- Utilice las mejores prácticas en Java para una gestión de memoria eficiente, como el uso de try-with-resources para la limpieza automática de recursos.
+- **Tamaño del mosaico** – Mosaicos más grandes significan menos archivos pero renderizado más lento; encuentra un equilibrio según las necesidades de tu UI.  
+- **Monitoreo de memoria** – Usa herramientas de perfilado de Java (p. ej., VisualVM) para observar el uso del heap al procesar dibujos muy grandes.  
+- **Limpieza de recursos** – El patrón try‑with‑resources mostrado arriba libera automáticamente los recursos nativos.
 
-## Conclusión
-Ya aprendió a dividir dibujos CAD en mosaicos con GroupDocs.Viewer para Java. Este enfoque no solo mejora el rendimiento de renderizado, sino que también optimiza la usabilidad de su aplicación al trabajar con archivos de documentos grandes.
+## Preguntas frecuentes
 
-**Próximos pasos:**
-- Experimente con diferentes tamaños de mosaicos según casos de uso específicos.
-- Explore otras funciones que ofrece GroupDocs.Viewer para mejorar aún más sus capacidades de procesamiento de documentos.
+**P: ¿Puedo dividir otros tipos de archivo (PDF, imágenes) en mosaicos usando el mismo enfoque?**  
+R: Sí. GroupDocs Viewer admite muchos formatos; solo necesitas usar la clase de opciones correspondiente (p. ej., `PdfViewOptions`).
 
-¿Listo para implementar esta solución en tu proyecto? ¡Pruébala y descubre las mejoras!
+**P: ¿Cómo cambio la calidad de la imagen de salida?**  
+R: Ajusta `viewOptions.setResolution(int dpi)` o configura los ajustes de compresión en el objeto `PngOptions`.
 
-## Sección de preguntas frecuentes
-1. **¿Cuáles son algunos errores comunes al utilizar GroupDocs.Viewer Java?**
-   - Los problemas comunes incluyen rutas de archivos incorrectas, permisos insuficientes en los directorios de salida o dependencias faltantes.
-2. **¿Puedo dividir otros tipos de documentos en mosaicos con este método?**
-   - Si bien el ejemplo se centra en dibujos CAD, se pueden aplicar principios similares a otros formatos de documentos compatibles con GroupDocs.Viewer.
-3. **¿Cómo puedo manejar archivos más grandes de manera eficiente?**
-   - Considere utilizar procesamiento multiproceso o asincrónico en Java para administrar la representación de archivos grandes.
-4. **¿Existe soporte para personalizar la calidad de la imagen de salida?**
-   - Sí, puede ajustar la configuración de PNGViewOptions para cambiar la resolución y la calidad de las imágenes renderizadas.
-5. **¿Qué debo hacer si mi aplicación se queda sin memoria durante la renderización?**
-   - Optimice el tamaño de sus mosaicos y considere aumentar el tamaño del montón de Java con opciones de VM como `-Xmx` para tener más memoria disponible.
+**P: Mi aplicación se queda sin memoria en archivos DWG muy grandes—¿qué puedo hacer?**  
+R: Reduce las dimensiones del mosaico, aumenta el heap de la JVM (`-Xmx`), o renderiza los mosaicos secuencialmente en instancias separadas de `Viewer`.
+
+**P: ¿Es posible renderizar mosaicos de forma asíncrona?**  
+R: Absolutamente. Envuelve cada llamada de renderizado de mosaico en un `CompletableFuture` o usa un servicio de ejecución para paralelizar la carga de trabajo.
+
+**P: ¿Necesito una licencia separada para cada mosaico?**  
+R: No. Una única licencia válida de GroupDocs Viewer cubre todas las operaciones de renderizado dentro de tu aplicación.
 
 ## Recursos
 - [Documentación](https://docs.groupdocs.com/viewer/java/)
@@ -174,4 +178,8 @@ Ya aprendió a dividir dibujos CAD en mosaicos con GroupDocs.Viewer para Java. E
 - [Licencia temporal](https://purchase.groupdocs.com/temporary-license/)
 - [Foro de soporte](https://forum.groupdocs.com/c/viewer/9)
 
-Siguiendo esta guía, estará bien preparado para implementar una representación eficiente de documentos en sus aplicaciones Java con GroupDocs.Viewer. ¡Que disfrute programando!
+---
+
+**Última actualización:** 2026-04-01  
+**Probado con:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs

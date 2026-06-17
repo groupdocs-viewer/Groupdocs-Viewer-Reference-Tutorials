@@ -1,35 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Découvrez comment diviser efficacement de grands dessins CAO en tuiles à l'aide de GroupDocs.Viewer pour Java, améliorant ainsi les performances et la facilité de gestion de vos applications."
-"title": "Divisez les dessins CAO en mosaïques à l'aide de GroupDocs.Viewer Java pour un rendu efficace"
-"url": "/fr/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Apprenez à diviser les dessins CAO en tuiles à l'aide de GroupDocs Viewer
+  pour Java, améliorant les performances de rendu et simplifiant la gestion des gros
+  fichiers.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Comment diviser les dessins CAO en tuiles avec GroupDocs Viewer
 type: docs
+url: /fr/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# Diviser les dessins CAO en tuiles avec GroupDocs.Viewer Java
 
-## Introduction
-Vous avez du mal à gérer et à restituer efficacement de grands dessins CAO dans votre application Java ? Ce guide vous explique comment utiliser GroupDocs.Viewer pour Java pour diviser ces dessins en tuiles faciles à gérer. En divisant le dessin en sections plus petites, vous pouvez considérablement améliorer les performances et la simplicité d'utilisation.
+# Comment diviser les dessins CAD en tuiles avec GroupDocs Viewer
 
-**Ce que vous apprendrez :**
-- Configuration et configuration de GroupDocs.Viewer pour Java.
-- Un processus étape par étape pour diviser les dessins CAO en tuiles.
-- Configurations clés et techniques d'optimisation.
-- Applications pratiques et possibilités d'intégration.
+Si vous vous demandez **comment diviser les fichiers CAD** en morceaux plus petits et plus faciles à gérer, vous êtes au bon endroit. Dans ce tutoriel, nous passerons en revue les étapes exactes nécessaires pour diviser de grands dessins CAD en tuiles en utilisant **GroupDocs Viewer for Java**. À la fin, vous disposerez d’une solution prête à l’emploi qui améliore la vitesse de rendu, réduit la consommation de mémoire et facilite l’affichage des dessins dans des applications web ou mobiles.
 
-Commençons par nous assurer que votre environnement est prêt avec les prérequis nécessaires.
+![Split CAD Drawings with GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
+
+## Réponses rapides
+- **Quel est l'objectif du « splitting CAD » ?** Il divise un dessin massif en images plus petites (tuiles) qui se chargent plus rapidement et consomment moins de mémoire.  
+- **Quel format est utilisé pour les tuiles ?** Les fichiers PNG sont générés par défaut, mais d’autres formats sont pris en charge via les options du Viewer.  
+- **Ai-je besoin d’une licence ?** Un essai gratuit fonctionne pour le développement ; une licence payante est requise pour la production.  
+- **Puis-je modifier la taille des tuiles ?** Oui – ajustez les calculs `tileWidth` et `tileHeight` selon vos besoins.  
+- **Cette approche est‑elle thread‑safe ?** Le rendu de chaque tuile dans sa propre instance `Viewer` avec try‑with‑resources est sûr pour une exécution concurrente.
+
+## Qu’est‑ce que le « splitting CAD » ?
+Le splitting CAD consiste à diviser un seul dessin CAD, souvent très volumineux, en plusieurs sections rectangulaires (tuiles). Chaque tuile est rendue indépendamment, ce qui vous permet de charger uniquement les parties dont l'utilisateur a réellement besoin — idéal pour les cartes web, les portails de documents et les visionneuses mobiles.
+
+## Pourquoi utiliser GroupDocs Viewer pour Java ?
+GroupDocs Viewer offre un support prêt à l’emploi pour plus de 100 formats de fichiers, y compris DWG, DXF et DWF. Son API de tuiles vous permet de spécifier des coordonnées exactes, afin de rendre précisément la zone qui vous intéresse sans devoir traiter le fichier complet au préalable. Cela économise des cycles CPU, réduit la bande passante et offre une expérience utilisateur plus fluide.
 
 ## Prérequis
-Avant de commencer, assurez-vous d’avoir :
-
-- **Bibliothèques**: GroupDocs.Viewer pour Java (version 25.2 ou ultérieure).
-- **Configuration de l'environnement**:Un kit de développement Java (JDK) fonctionnel et un environnement de développement intégré comme IntelliJ IDEA ou Eclipse.
-- **Prérequis en matière de connaissances**:Compréhension de base de la programmation Java et familiarité avec l'outil de construction Maven.
+- **Bibliothèques** : GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK** : Tout JDK récent (Java 8+).  
+- **IDE** : IntelliJ IDEA, Eclipse ou tout autre IDE compatible Java.  
+- **Outil de construction** : Maven (d’autres outils de construction fonctionnent tant que la dépendance est ajoutée).  
 
 ## Configuration de GroupDocs.Viewer pour Java
-Pour utiliser GroupDocs.Viewer, ajoutez-le comme dépendance à votre projet. Si vous utilisez Maven :
+Ajoutez le dépôt GroupDocs et la dépendance à votre `pom.xml` :
 
-**Configuration Maven :**
 ```xml
 <repositories>
    <repository>
@@ -48,43 +59,42 @@ Pour utiliser GroupDocs.Viewer, ajoutez-le comme dépendance à votre projet. Si
 ```
 
 ### Acquisition de licence
-GroupDocs.Viewer propose une licence d'essai gratuite pour explorer toutes ses fonctionnalités :
-- **Essai gratuit**: Visite [Essai gratuit de GroupDocs](https://releases.groupdocs.com/viewer/java/) pour télécharger et tester la bibliothèque.
-- **Permis temporaire**:Demandez un permis temporaire à [Page de licence temporaire](https://purchase.groupdocs.com/temporary-license/).
-- **Achat**: Achetez une licence complète sur leur [Page d'achat](https://purchase.groupdocs.com/buy).
+GroupDocs Viewer propose une licence d’essai gratuite pour l’évaluation :
 
-### Initialisation et configuration de base
-Pour initialiser GroupDocs.Viewer dans votre application Java :
+- **Essai gratuit** : Visitez [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) pour télécharger la bibliothèque.  
+- **Licence temporaire** : Faites la demande sur [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Licence complète** : Achetez une licence de production sur la [Purchase Page](https://purchase.groupdocs.com/buy).
+
+### Initialisation de base
+Créez une instance simple de `Viewer` pour vérifier que la bibliothèque se charge correctement :
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Votre code de rendu va ici.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Une fois la configuration terminée, passons à l’implémentation de la fonctionnalité.
 
-## Guide de mise en œuvre
+## Guide étape par étape pour diviser les dessins CAD en tuiles
 
-### Diviser le dessin en tuiles
-Cette section montre comment diviser un dessin CAO en tuiles plus petites pour une gestion et un rendu plus efficaces. Chaque tuile aura une taille réduite d'un quart de sa taille d'origine.
+### Étape 1 : Définir le répertoire de sortie
+Nous enregistrerons chaque tuile en tant que fichier PNG distinct. L’utilisation d’une méthode utilitaire garde la logique de chemin propre et réutilisable.
 
-#### Étape 1 : Définir le chemin du répertoire de sortie
-Commencez par définir où vos images rendues seront enregistrées :
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Cette configuration utilise une méthode utilitaire pour obtenir le chemin, garantissant ainsi la réutilisabilité et la clarté.
 
-#### Étape 2 : Configurer les options d’affichage
-Configurer les options pour le rendu de chaque section séparément :
+### Étape 2 : Configurer les options d’affichage
+Définissez le format de rendu sur PNG et indiquez au viewer de ne pas précharger chaque page (ce qui économise de la mémoire).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +102,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Cet extrait de code configure le rendu au format PNG sans traiter toutes les pages à la fois.
 
-#### Étape 3 : Calculer les dimensions des carreaux
-Déterminer les dimensions de chaque tuile :
+### Étape 3 : Calculer les dimensions des tuiles
+Tout d’abord, nous obtenons la largeur et la hauteur originales du dessin, puis nous le divisons en quatre quadrants égaux.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +114,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Chaque tuile représente un quart de la taille totale.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +126,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Étape 4 : Rendre et enregistrer les tuiles
-Ajoutez chaque tuile calculée aux options de rendu et effectuez le rendu :
+### Étape 4 : Rendre et enregistrer les tuiles
+Ajoutez les tuiles calculées aux options de rendu et laissez le `Viewer` générer les fichiers PNG.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +136,52 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-Cette dernière étape rend le document en fonction des tuiles spécifiées, en enregistrant chacune d'elles sous forme de fichier PNG distinct.
 
 ### Conseils de dépannage
-- Assurez-vous que le chemin de génération de votre projet inclut les fichiers JAR GroupDocs.Viewer.
-- Vérifiez que le répertoire de sortie est accessible en écriture par votre application.
-- Recherchez d’éventuelles exceptions dans le rendu pour diagnostiquer les problèmes avec des fichiers de dessin spécifiques.
+- **Chemin de construction** – Assurez‑vous que les fichiers JAR de GroupDocs sont sur le classpath.  
+- **Permissions** – Le dossier de sortie doit être accessible en écriture par le processus Java.  
+- **Exceptions** – Si vous voyez `ViewerException`, vérifiez que le fichier DWG n’est pas corrompu et que la licence correcte est appliquée.
 
-## Applications pratiques
-La division des dessins CAO en tuiles peut être bénéfique dans :
-1. **Cartographie Web**: Chargement efficace de grands plans architecturaux sur des cartes Web sans surcharger les ressources du serveur.
-2. **Systèmes de gestion de documents**:Gestion plus facile et accès plus rapide à des sections spécifiques de grands dessins.
-3. **Applications mobiles**: Amélioration des performances en rendant uniquement les parties nécessaires d'un dessin en fonction de l'interaction de l'utilisateur.
+## Cas d’utilisation courants pour le découpage des tuiles CAD
+1. **Cartographie web** – Charger uniquement la partie visible d’un plan d’étage lorsque l'utilisateur se déplace ou zoome.  
+2. **Gestion de documents** – Stocker chaque tuile séparément pour une génération d’aperçu plus rapide.  
+3. **Visualisation mobile** – Réduire la bande passante en téléchargeant uniquement les tuiles nécessaires à l’écran actuel.
 
-## Considérations relatives aux performances
-Pour optimiser les performances de votre application :
-- Utilisez les tuiles de manière stratégique pour équilibrer les détails et le temps de traitement.
-- Surveillez l’utilisation de la mémoire, en particulier lorsque vous traitez de très grands dessins.
-- Utilisez les meilleures pratiques en Java pour une gestion efficace de la mémoire, comme l’utilisation de try-with-resources pour le nettoyage automatique des ressources.
+## Considérations de performance
+- **Taille des tuiles** – Des tuiles plus grandes signifient moins de fichiers mais un rendu plus lent ; trouvez un compromis selon les besoins de votre interface.  
+- **Surveillance de la mémoire** – Utilisez les outils de profilage Java (par ex., VisualVM) pour observer l’utilisation du tas lors du traitement de très grands dessins.  
+- **Nettoyage des ressources** – Le modèle try‑with‑resources présenté ci‑dessus libère automatiquement les ressources natives.
 
-## Conclusion
-Vous avez maintenant appris à diviser des dessins CAO en mosaïques à l'aide de GroupDocs.Viewer pour Java. Cette approche améliore non seulement les performances de rendu, mais aussi la convivialité de votre application pour le traitement de documents volumineux.
+## Questions fréquemment posées
 
-**Prochaines étapes :**
-- Expérimentez avec différentes tailles de tuiles en fonction de cas d’utilisation spécifiques.
-- Découvrez d’autres fonctionnalités offertes par GroupDocs.Viewer pour améliorer davantage vos capacités de traitement de documents.
+**Q : Puis‑je diviser d’autres types de fichiers (PDF, images) en tuiles en utilisant la même approche ?**  
+R : Oui. GroupDocs Viewer prend en charge de nombreux formats ; il suffit d’utiliser la classe d’options correspondante (par ex., `PdfViewOptions`).
 
-Prêt à implémenter cette solution dans votre projet ? Essayez-la et constatez les améliorations par vous-même !
+**Q : Comment modifier la qualité de l’image de sortie ?**  
+R : Ajustez `viewOptions.setResolution(int dpi)` ou définissez les paramètres de compression sur l’objet `PngOptions`.
 
-## Section FAQ
-1. **Quelles sont les erreurs courantes lors de l’utilisation de GroupDocs.Viewer Java ?**
-   - Les problèmes courants incluent des chemins de fichiers incorrects, des autorisations insuffisantes sur les répertoires de sortie ou des dépendances manquantes.
-2. **Puis-je diviser d’autres types de documents en tuiles avec cette méthode ?**
-   - Bien que l’exemple se concentre sur les dessins CAO, des principes similaires peuvent être appliqués à d’autres formats de documents pris en charge par GroupDocs.Viewer.
-3. **Comment gérer efficacement des fichiers volumineux ?**
-   - Envisagez d’utiliser le multithreading ou le traitement asynchrone en Java pour gérer le rendu de fichiers volumineux.
-4. **Existe-t-il un support pour personnaliser la qualité de l'image de sortie ?**
-   - Oui, vous pouvez ajuster les paramètres PNGViewOptions pour modifier la résolution et la qualité des images rendues.
-5. **Que dois-je faire si mon application manque de mémoire pendant le rendu ?**
-   - Optimisez la taille de vos tuiles et envisagez d'augmenter la taille du tas de Java avec des options de VM telles que `-Xmx` pour plus de mémoire disponible.
+**Q : Mon application manque de mémoire sur des fichiers DWG très volumineux—que puis‑je faire ?**  
+R : Réduisez les dimensions des tuiles, augmentez le tas JVM (`-Xmx`), ou rendez les tuiles séquentiellement dans des instances `Viewer` séparées.
+
+**Q : Est‑il possible de rendre les tuiles de façon asynchrone ?**  
+R : Absolument. Enveloppez chaque appel de rendu de tuile dans un `CompletableFuture` ou utilisez un service d’exécution pour paralléliser la charge de travail.
+
+**Q : Ai‑je besoin d’une licence distincte pour chaque tuile ?**  
+R : Non. Une seule licence valide de GroupDocs Viewer couvre toutes les opérations de rendu au sein de votre application.
 
 ## Ressources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [Référence de l'API](https://reference.groupdocs.com/viewer/java/)
+- [Référence API](https://reference.groupdocs.com/viewer/java/)
 - [Télécharger GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
 - [Acheter une licence](https://purchase.groupdocs.com/buy)
 - [Essai gratuit](https://releases.groupdocs.com/viewer/java/)
-- [Permis temporaire](https://purchase.groupdocs.com/temporary-license/)
-- [Forum d'assistance](https://forum.groupdocs.com/c/viewer/9)
+- [Licence temporaire](https://purchase.groupdocs.com/temporary-license/)
+- [Forum d’assistance](https://forum.groupdocs.com/c/viewer/9)
 
-En suivant ce guide, vous serez parfaitement équipé pour implémenter un rendu de documents efficace dans vos applications Java grâce à GroupDocs.Viewer. Bon codage !
+---
+
+**Dernière mise à jour :** 2026-04-01  
+**Testé avec :** GroupDocs.Viewer 25.2 for Java  
+**Auteur :** GroupDocs  
+
+---

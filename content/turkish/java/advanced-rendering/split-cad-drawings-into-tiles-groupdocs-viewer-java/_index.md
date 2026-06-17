@@ -1,35 +1,45 @@
 ---
-"date": "2025-04-24"
-"description": "Java için GroupDocs.Viewer'ı kullanarak büyük CAD çizimlerini parçalara nasıl verimli bir şekilde böleceğinizi öğrenin, böylece uygulamalarınızda performansı ve yönetim kolaylığını artırın."
-"title": "Verimli İşleme için GroupDocs.Viewer Java'yı Kullanarak CAD Çizimlerini Döşemelere Bölme"
-"url": "/tr/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: GroupDocs Viewer for Java kullanarak CAD çizimlerini parçalara bölmeyi
+  öğrenin, render performansını artırın ve büyük dosya işlemlerini basitleştirin.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: GroupDocs Viewer ile CAD Çizimlerini Parçalara Bölme
 type: docs
+url: /tr/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer Java ile CAD Çizimlerini Döşemelere Bölme
 
-## giriiş
-Java uygulamanızda büyük CAD çizimlerini yönetmek ve verimli bir şekilde işlemek için mi mücadele ediyorsunuz? Bu kılavuz, bu çizimleri yönetilebilir döşemelere bölmek için GroupDocs.Viewer for Java'nın nasıl kullanılacağını gösterecektir. Çizimi daha küçük bölümlere bölerek performansı ve kullanım kolaylığını önemli ölçüde artırabilirsiniz.
+# CAD Çizimlerini GroupDocs Viewer ile Parçalara Ayırma
 
-**Ne Öğreneceksiniz:**
-- Java için GroupDocs.Viewer'ı kurma ve yapılandırma.
-- CAD çizimlerini parçalara bölmenin adım adım süreci.
-- Anahtar yapılandırmaları ve optimizasyon teknikleri.
-- Pratik uygulamalar ve entegrasyon olanakları.
+Eğer **how to split CAD** dosyalarını daha küçük, daha yönetilebilir parçalara ayırmayı merak ediyorsanız, doğru yerdesiniz. Bu öğreticide, **GroupDocs Viewer for Java** kullanarak büyük CAD çizimlerini parçalara (tiles) ayırmak için gereken adımları adım adım göstereceğiz. Sonunda, render hızını artıran, bellek tüketimini azaltan ve çizimleri web veya mobil uygulamalarda görüntülemeyi kolaylaştıran hazır bir çözüm elde edeceksiniz.
 
-Öncelikle ortamınızın gerekli ön koşullara sahip olacak şekilde hazır olduğundan emin olalım.
+![GroupDocs.Viewer for Java ile CAD Çizimlerini Bölme](/viewer/advanced-rendering/split-cad-drawings-java.png)
 
-## Ön koşullar
-Başlamadan önce şunlara sahip olduğunuzdan emin olun:
+## Hızlı Yanıtlar
+- **“splitting CAD” ne sağlar?** Büyük bir çizimi daha hızlı yüklenen ve daha az bellek tüketen daha küçük görüntülere (tiles) böler.  
+- **Hangi format parçalar için kullanılır?** Varsayılan olarak PNG dosyaları üretilir, ancak diğer formatlar Viewer seçenekleriyle desteklenir.  
+- **Bir lisansa ihtiyacım var mı?** Geliştirme için ücretsiz deneme çalışır; üretim için ücretli lisans gereklidir.  
+- **Parça boyutunu değiştirebilir miyim?** Evet – ihtiyacınıza göre `tileWidth` ve `tileHeight` hesaplamalarını ayarlayın.  
+- **Bu yaklaşım çoklu iş parçacığı güvenli mi?** Her bir parçayı kendi `Viewer` örneğinde try‑with‑resources ile render etmek, eşzamanlı yürütme için güvenlidir.
 
-- **Kütüphaneler**: Java için GroupDocs.Viewer (sürüm 25.2 veya üzeri).
-- **Çevre Kurulumu**: Çalışan bir Java Geliştirme Kiti (JDK) ve IntelliJ IDEA veya Eclipse gibi entegre bir geliştirme ortamı.
-- **Bilgi Önkoşulları**Java programlama konusunda temel bilgi ve Maven derleme aracına aşinalık.
+## “how to split CAD” nedir?
+Splitting CAD, tek bir, genellikle çok büyük bir CAD çizimini birden fazla dikdörtgen bölüme (tiles) ayırmak anlamına gelir. Her bir parça bağımsız olarak render edilir, bu da kullanıcıya gerçekten ihtiyaç duyduğu bölümleri yüklemenizi sağlar—web haritaları, belge portalları ve mobil görüntüleyiciler için mükemmeldir.
 
-## Java için GroupDocs.Viewer Kurulumu
-GroupDocs.Viewer'ı kullanmak için, onu projenize bir bağımlılık olarak ekleyin. Maven kullanıyorsanız:
+## Neden GroupDocs Viewer for Java Kullanmalı?
+GroupDocs Viewer, DWG, DXF ve DWF dahil olmak üzere 100'den fazla dosya formatı için kutudan çıktığı gibi destek sağlar. Tile API'si, tam koordinatları belirtmenize olanak tanır, böylece tüm dosyayı işlemeye gerek kalmadan sadece ilgilendiğiniz alanı render edebilirsiniz. Bu, CPU döngülerini tasarruf eder, bant genişliğini azaltır ve daha akıcı bir kullanıcı deneyimi sunar.
 
-**Maven Yapılandırması:**
+## Önkoşullar
+- **Libraries**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: Herhangi bir güncel Java Development Kit (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse veya başka bir Java‑uyumlu IDE.  
+- **Build Tool**: Maven (bağımlılık eklendiği sürece diğer yapı araçları da çalışır).  
+
+## GroupDocs.Viewer for Java Kurulumu
+GroupDocs deposunu ve bağımlılığı `pom.xml` dosyanıza ekleyin:
+
 ```xml
 <repositories>
    <repository>
@@ -47,44 +57,43 @@ GroupDocs.Viewer'ı kullanmak için, onu projenize bir bağımlılık olarak ekl
 </dependencies>
 ```
 
-### Lisans Edinimi
-GroupDocs.Viewer'ın tüm yeteneklerini keşfetmeniz için ücretsiz deneme lisansı sunulmaktadır:
-- **Ücretsiz Deneme**: Ziyaret etmek [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/) Kütüphaneyi indirip test etmek için.
-- **Geçici Lisans**Geçici lisans için başvuruda bulunun [Geçici Lisans Sayfası](https://purchase.groupdocs.com/temporary-license/).
-- **Satın almak**: Onların tam lisansını satın alın [Satın Alma Sayfası](https://purchase.groupdocs.com/buy).
+### Lisans Alımı
+GroupDocs.Viewer değerlendirme için ücretsiz bir deneme lisansı sunar:
 
-### Temel Başlatma ve Kurulum
-Java uygulamanızda GroupDocs.Viewer'ı başlatmak için:
+- **Ücretsiz Deneme**: Kütüphaneyi indirmek için [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) adresini ziyaret edin.  
+- **Geçici Lisans**: [Temporary License Page](https://purchase.groupdocs.com/temporary-license/) üzerinden başvurun.  
+- **Tam Lisans**: [Purchase Page](https://purchase.groupdocs.com/buy) üzerinden bir üretim lisansı satın alın.
+
+### Temel Başlatma
+Kütüphanenin doğru yüklendiğini doğrulamak için basit bir `Viewer` örneği oluşturun:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Oluşturma kodunuz buraya gelecek.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Kurulum tamamlandıktan sonra özelliği uygulamaya geçelim.
 
-## Uygulama Kılavuzu
+## CAD Çizimlerini Parçalara Ayırmak İçin Adım Adım Kılavuz
 
-### Çizimi Parçalara Böl
-Bu bölüm, daha verimli işleme ve işleme için bir CAD çiziminin daha küçük parçalara nasıl bölüneceğini gösterir. Her parça orijinal boyutunun dörtte biri olacaktır.
+### Adım 1: Çıktı Dizini Tanımlama
+Her bir parçayı ayrı bir PNG dosyası olarak saklayacağız. Bir yardımcı yöntem kullanmak, yol mantığını temiz ve yeniden kullanılabilir tutar.
 
-#### Adım 1: Çıktı Dizin Yolunu Tanımlayın
-Öncelikle render edilmiş görsellerinizin nereye kaydedileceğini tanımlayarak başlayın:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Bu kurulum, yeniden kullanılabilirliği ve netliği garanti altına alarak yolu elde etmek için bir yardımcı yöntem kullanır.
 
-#### Adım 2: Görünüm Seçeneklerini Yapılandırın
-Her bölümü ayrı ayrı işlemek için seçenekleri ayarlayın:
+### Adım 2: Görünüm Seçeneklerini Yapılandırma
+Render formatını PNG olarak ayarlayın ve görüntüleyiciye her sayfayı önceden yüklememesini söyleyin (bu bellek tasarrufu sağlar).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +101,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Bu kod parçacığı, tüm sayfaları aynı anda işlemeden PNG formatına dönüştürmeyi yapılandırır.
 
-#### Adım 3: Fayans Boyutlarını Hesaplayın
-Her bir fayansın boyutlarını belirleyin:
+### Adım 3: Parça Boyutlarını Hesaplama
+İlk olarak çizimin orijinal genişlik ve yüksekliğini alıyoruz, ardından dört eşit bölgeye ayırıyoruz.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +113,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Her bir karo toplam büyüklüğün dörtte biri kadardır.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +125,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Adım 4: Döşemeleri Oluşturun ve Kaydedin
-Hesaplanan her bir kutucuğu oluşturma seçeneklerine ekleyin ve oluşturun:
+### Adım 4: Parçaları Render Et ve Kaydet
+Hesaplanan parçaları render seçeneklerine ekleyin ve `Viewer`'ın PNG dosyalarını oluşturmasına izin verin.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +135,52 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-Bu son adım, belirtilen döşemelere göre belgeyi işler ve her birini ayrı bir PNG dosyası olarak kaydeder.
 
 ### Sorun Giderme İpuçları
-- Projenizin derleme yolunun GroupDocs.Viewer JAR dosyalarını içerdiğinden emin olun.
-- Çıktı dizininin uygulamanız tarafından yazılabilir olduğunu doğrulayın.
-- Belirli çizim dosyalarındaki sorunları teşhis etmek için işlemede herhangi bir istisna olup olmadığını kontrol edin.
+- **Build path** – GroupDocs JAR dosyalarının sınıf yolunda (classpath) olduğundan emin olun.  
+- **Permissions** – Çıktı klasörünün Java işlemi tarafından yazılabilir olması gerekir.  
+- **Exceptions** – `ViewerException` görürseniz, DWG dosyasının bozuk olmadığını ve doğru lisansın uygulandığını iki kez kontrol edin.
 
-## Pratik Uygulamalar
-CAD çizimlerini parçalara bölmek şu durumlarda faydalı olabilir:
-1. **Web Haritalama**: Sunucu kaynaklarını aşırı yüklemeden büyük mimari planları web haritalarına verimli bir şekilde yükleme.
-2. **Belge Yönetim Sistemleri**: Büyük çizimlerin belirli bölümlerine daha kolay yönetim ve daha hızlı erişim.
-3. **Mobil Uygulamalar**:Kullanıcı etkileşimine bağlı olarak çizimin yalnızca gerekli kısımlarının oluşturulmasıyla performansın artırılması.
+## CAD Parçalarını Bölmenin Yaygın Kullanım Senaryoları
+1. **Web Mapping** – Kullanıcı kaydırma/zoom yaptıkça sadece kat planının görünen kısmını yükleyin.  
+2. **Document Management** – Daha hızlı ön izleme oluşturmak için her parçayı ayrı ayrı saklayın.  
+3. **Mobile Viewing** – Mevcut ekran için gereken parçaları indirerek bant genişliğini azaltın.
 
-## Performans Hususları
-Uygulamanızın performansını optimize etmek için:
-- Detay ve işlem süresi arasında denge sağlamak için döşemeleri stratejik olarak kullanın.
-- Özellikle çok büyük çizimlerle uğraşırken bellek kullanımını izleyin.
-- Otomatik kaynak temizliği için try-with-resources'ı kullanmak gibi, verimli bellek yönetimi için Java'daki en iyi uygulamaları kullanın.
+## Performans Düşünceleri
+- **Tile Size** – Daha büyük parçalar daha az dosya demektir ancak daha yavaş render olur; UI ihtiyaçlarınıza göre bir denge bulun.  
+- **Memory Monitoring** – Çok büyük çizimleri işlerken yığın kullanımını izlemek için Java’nın profil araçlarını (ör. VisualVM) kullanın.  
+- **Resource Cleanup** – Yukarıda gösterilen try‑with‑resources deseni, yerel kaynakları otomatik olarak serbest bırakır.
 
-## Çözüm
-Artık CAD çizimlerini GroupDocs.Viewer for Java kullanarak parçalara nasıl böleceğinizi öğrendiniz. Bu yaklaşım yalnızca işleme performansını iyileştirmekle kalmaz, aynı zamanda büyük belge dosyalarıyla uğraşırken uygulamanızın kullanılabilirliğini de artırır.
+## Sıkça Sorulan Sorular
 
-**Sonraki Adımlar:**
-- Belirli kullanım durumlarına göre farklı fayans boyutlarıyla denemeler yapın.
-- Belge işleme yeteneklerinizi daha da geliştirmek için GroupDocs.Viewer'ın sunduğu diğer özellikleri keşfedin.
+**Q: Aynı yaklaşımı kullanarak diğer dosya türlerini (PDF, görüntüler) parçalara ayırabilir miyim?**  
+A: Evet. GroupDocs Viewer birçok formatı destekler; sadece ilgili seçenek sınıfını (ör. `PdfViewOptions`) kullanmanız yeterlidir.
 
-Bu çözümü projenize uygulamaya hazır mısınız? Deneyin ve iyileştirmeleri kendiniz görün!
+**Q: Çıktı görüntü kalitesini nasıl değiştiririm?**  
+A: `viewOptions.setResolution(int dpi)` ayarlayarak veya `PngOptions` nesnesinde sıkıştırma ayarlarını belirleyerek.
 
-## SSS Bölümü
-1. **GroupDocs.Viewer Java'yı kullanırken karşılaşılan yaygın hatalar nelerdir?**
-   - Yaygın sorunlar arasında yanlış dosya yolları, çıktı dizinlerinde yetersiz izinler veya eksik bağımlılıklar yer alır.
-2. **Bu yöntemle diğer türdeki belgeleri de parçalara bölebilir miyim?**
-   - Örnek CAD çizimlerine odaklanmış olsa da, benzer ilkeler GroupDocs.Viewer tarafından desteklenen diğer belge biçimlerine de uygulanabilir.
-3. **Daha büyük dosyaları nasıl daha verimli şekilde yönetebilirim?**
-   - Büyük dosya işlemeyi yönetmek için Java'da çoklu iş parçacığı veya eşzamansız işlemeyi kullanmayı düşünün.
-4. **Çıktı görüntü kalitesini özelleştirme desteği var mı?**
-   - Evet, PNGViewOptions ayarlarını düzenleyerek oluşturulan görsellerin çözünürlüğünü ve kalitesini değiştirebilirsiniz.
-5. **Uygulamamın render sırasında belleği dolarsa ne yapmalıyım?**
-   - Döşeme boyutlarınızı optimize edin ve Java'nın yığın boyutunu VM seçenekleriyle artırmayı düşünün `-Xmx` daha fazla kullanılabilir bellek için.
+**Q: Uygulamam çok büyük DWG dosyalarında bellek yetersizliği yaşıyor—ne yapabilirim?**  
+A: Parça boyutlarını küçültün, JVM yığın boyutunu (`-Xmx`) artırın veya parçaları ayrı `Viewer` örneklerinde sıralı olarak render edin.
+
+**Q: Parçaları eşzamanlı olarak render etmek mümkün mü?**  
+A: Kesinlikle. Her bir parça render çağrısını bir `CompletableFuture` içine alabilir veya iş yükünü paralelleştirmek için bir executor servisi kullanabilirsiniz.
+
+**Q: Her parça için ayrı bir lisansa ihtiyacım var mı?**  
+A: Hayır. Tek bir geçerli GroupDocs Viewer lisansı, uygulamanızdaki tüm render işlemlerini kapsar.
 
 ## Kaynaklar
-- [Belgeleme](https://docs.groupdocs.com/viewer/java/)
+- [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)
 - [API Referansı](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer'ı indirin](https://releases.groupdocs.com/viewer/java/)
-- [Lisans Satın Alın](https://purchase.groupdocs.com/buy)
+- [GroupDocs.Viewer İndir](https://releases.groupdocs.com/viewer/java/)
+- [Lisans Satın Al](https://purchase.groupdocs.com/buy)
 - [Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
 - [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/)
 - [Destek Forumu](https://forum.groupdocs.com/c/viewer/9)
 
-Bu kılavuzu takip ederek, GroupDocs.Viewer'ı kullanarak Java uygulamalarınızda verimli belge oluşturmayı uygulamak için iyi bir donanıma sahip olursunuz. İyi kodlamalar!
+---
+
+**Son Güncelleme:** 2026-04-01  
+**Test Edilen:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs  
+
+---
