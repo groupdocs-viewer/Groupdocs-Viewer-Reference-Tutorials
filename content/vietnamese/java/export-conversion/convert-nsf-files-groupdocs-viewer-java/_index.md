@@ -1,13 +1,55 @@
 ---
-date: '2026-02-13'
-description: Tìm hiểu cách chuyển đổi tệp nsf sang pdf và các định dạng khác (HTML,
-  JPG, PNG) bằng GroupDocs.Viewer cho Java. Hướng dẫn chi tiết này chỉ cách chuyển
-  đổi tệp nsf một cách hiệu quả.
+date: '2026-05-26'
+description: Tìm hiểu cách chuyển đổi NSF sang PDF và các định dạng khác (HTML, JPG,
+  PNG) bằng cách sử dụng GroupDocs.Viewer cho Java. Hướng dẫn chi tiết từng bước kèm
+  các mẹo thực hành tốt nhất.
 keywords:
-- GroupDocs.Viewer Java
-- NSF Document Conversion
-- Convert NSF Files
-title: Chuyển đổi NSF sang PDF, HTML, JPG, PNG bằng GroupDocs.Viewer cho Java
+- convert nsf to pdf
+- how to convert nsf
+- java convert lotus notes
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-26'
+  description: Learn how to convert nsf to pdf and other formats (HTML, JPG, PNG)
+    using GroupDocs.Viewer for Java. Step‑by‑step guide with best‑practice tips.
+  headline: convert nsf to pdf with GroupDocs.Viewer for Java
+  type: TechArticle
+- description: Learn how to convert nsf to pdf and other formats (HTML, JPG, PNG)
+    using GroupDocs.Viewer for Java. Step‑by‑step guide with best‑practice tips.
+  name: convert nsf to pdf with GroupDocs.Viewer for Java
+  steps:
+  - name: '**Web‑Based Document Sharing:** Convert NSF to HTML for instant in‑browser
+      viewing without installing Notes.'
+    text: '**Web‑Based Document Sharing:** Convert NSF to HTML for instant in‑browser
+      viewing without installing Notes.'
+  - name: '**Image Archiving:** Store page‑by‑page JPG/PNG snapshots for thumbnail
+      galleries or OCR pipelines.'
+    text: '**Image Archiving:** Store page‑by‑page JPG/PNG snapshots for thumbnail
+      galleries or OCR pipelines.'
+  - name: '**Universal Access:** Use PDF conversion to provide a single, secure file
+      that can be opened on any device, meeting compliance requirements.'
+    text: '**Universal Access:** Use PDF conversion to provide a single, secure file
+      that can be opened on any device, meeting compliance requirements.'
+  type: HowTo
+- questions:
+  - answer: '`PdfViewOptions` preserves most annotations automatically; just render
+      the document with these options and the resulting PDF mirrors the original layout.'
+    question: How do I convert an NSF file to PDF without losing annotations?
+  - answer: Yes. Provide credentials through `LoadOptions` before creating the `Viewer`
+      instance.
+    question: Can I convert password‑protected NSF files?
+  - answer: JDK 11 or newer offers improved garbage collection and concurrency, which
+      speeds up batch conversions.
+    question: What Java version gives the best performance?
+  - answer: Configure `JpgViewOptions.setResolution(int dpi)` or `PngViewOptions.setResolution(int
+      dpi)` before calling `viewer.view(options)`.
+    question: Is it possible to set a custom DPI for JPG/PNG output?
+  - answer: Yes. Use the `Stream` overload of the view options to write the result
+      straight to `HttpServletResponse.getOutputStream()`.
+    question: Does GroupDocs.Viewer support streaming the output directly to an HTTP
+      response?
+  type: FAQPage
+title: Chuyển đổi NSF sang PDF với GroupDocs.Viewer cho Java
 type: docs
 url: /vi/java/export-conversion/convert-nsf-files-groupdocs-viewer-java/
 weight: 1
@@ -15,49 +57,39 @@ weight: 1
 
 # Chuyển Đổi Tệp NSF Sang Nhiều Định Dạng Sử Dụng GroupDocs.Viewer cho Java
 
-Việc chuyển đổi tài liệu NSF sang các định dạng khác nhau như HTML, JPG, PNG hoặc PDF bằng Java trở nên đơn giản với GroupDocs.Viewer cho Java. **Hướng dẫn này sẽ chỉ cho bạn cách chuyển đổi nsf sang pdf** và các định dạng hữu ích khác, hướng dẫn từng bước thiết lập, triển khai và các mẹo thực tiễn.
+Trong hướng dẫn toàn diện này, bạn sẽ học **cách chuyển đổi nsf sang pdf** và cũng hiển thị các tệp NSF thành HTML, JPG và PNG bằng GroupDocs.Viewer cho Java. Cho dù bạn cần lưu trữ cơ sở dữ liệu Lotus Notes, hiển thị chúng trong trình duyệt, hoặc tạo các bản xem trước hình ảnh, bài hướng dẫn này sẽ đưa bạn qua mọi bước — từ cài đặt môi trường đến chi tiết mức độ mã — để bạn có thể thực hiện chuyển đổi trong vài phút.
 
-![Convert NSF Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-nsf-files-to-html-jpg-png-pdf-java.png)
+![Chuyển Đổi Tệp NSF Sang HTML, JPG, PNG, và PDF với GroupDocs.Viewer cho Java](/viewer/export-conversion/convert-nsf-files-to-html-jpg-png-pdf-java.png)
+[Chuyển Đổi Tệp NSF Sang HTML, JPG, PNG, và PDF với GroupDocs.Viewer cho Java](/viewer/export-conversion/convert-nsf-files-to-html-jpg-png-pdf-java.png)
 
-## Câu Hỏi Nhanh
-- **Mục đích sử dụng chính là gì?** Kết xuất các tệp NSF sang PDF, HTML, JPG hoặc PNG cho web, lưu trữ hoặc chia sẻ.  
+## Câu Trả Lời Nhanh
+
+- **Mục đích sử dụng chính là gì?** Hiển thị các tệp NSF thành PDF, HTML, JPG hoặc PNG cho web, lưu trữ hoặc chia sẻ.  
 - **Thư viện nào thực hiện việc chuyển đổi?** GroupDocs.Viewer cho Java.  
-- **Có cần giấy phép không?** Có bản dùng thử miễn phí; cần giấy phép đầy đủ cho môi trường sản xuất.  
-- **Yêu cầu phiên bản Java nào?** JDK 8 hoặc mới hơn.  
-- **Có thể xử lý hàng loạt nhiều tệp NSF không?** Có – chỉ cần đặt logic kết xuất trong vòng lặp và quản lý tài nguyên bằng try‑with‑resources.
+- **Tôi có cần giấy phép không?** Có bản dùng thử miễn phí; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
+- **Phiên bản Java yêu cầu là gì?** JDK 8 trở lên.  
+- **Tôi có thể xử lý hàng loạt nhiều tệp NSF không?** Có – bao bọc logic hiển thị trong vòng lặp và quản lý tài nguyên bằng try‑with‑resources.
 
 ## “convert nsf to pdf” là gì?
 
-Chuyển đổi tệp NSF (cơ sở dữ liệu Lotus Notes) sang PDF tạo ra một tài liệu tĩnh, được hỗ trợ rộng rãi và có thể mở trên bất kỳ thiết bị nào mà không cần client Notes gốc. Việc chuyển đổi này hữu ích cho việc lưu trữ, tuân thủ pháp lý và phân phối dễ dàng.
+Việc chuyển đổi một tệp NSF (cơ sở dữ liệu Lotus Notes) sang PDF tạo ra một tài liệu tĩnh, có thể đọc được trên mọi nền tảng, giữ nguyên bố cục, phông chữ và đồ họa gốc mà không cần client Notes. Định dạng này lý tưởng cho việc lưu trữ pháp lý, phân phối an toàn và lưu trữ lâu dài vì các tệp PDF có thể mở trên bất kỳ hệ điều hành hoặc thiết bị nào.
 
 ## Tại sao nên chuyển đổi NSF sang PDF và các định dạng khác?
 
-- **Truy cập toàn cầu:** PDF, HTML, JPG và PNG có thể đọc được trên hầu hết mọi nền tảng.  
-- **Bảo toàn bố cục:** PDF giữ nguyên bố cục trang, phông chữ và đồ họa gốc.  
-- **Tích hợp web:** HTML cho phép xem nhanh trong trình duyệt mà không cần plugin bổ sung.  
-- **Trích xuất hình ảnh:** JPG/PNG là lựa chọn hoàn hảo cho ảnh thu nhỏ, bản xem trước hoặc nhúng vào các ứng dụng khác.
+Việc chuyển đổi các tệp NSF thành PDF, HTML, JPG hoặc PNG mở ra khả năng truy cập toàn cầu, giữ nguyên độ trung thực hình ảnh và cho phép tích hợp liền mạch với các ứng dụng web và di động hiện đại. PDF giữ nguyên bố cục trang, HTML cung cấp khả năng xem ngay trong trình duyệt, và JPG/PNG cung cấp các ảnh chụp độ phân giải cao cho hình thu nhỏ hoặc nhúng.
 
-## Điều Kiện Tiên Quyết
+## Yêu Cầu Trước
 
-Trước khi triển khai GroupDocs.Viewer cho Java, hãy chắc chắn rằng bạn đã chuẩn bị các yếu tố sau:
-
-1. **Thư viện và phụ thuộc:**  
-   - Maven (để quản lý phụ thuộc)  
-   - JDK 8 hoặc mới hơn đã được cài đặt trên hệ thống của bạn.  
-
-2. **Cài đặt môi trường:**  
-   - Kiến thức cơ bản về lập trình Java  
-   - Quen thuộc với Maven để thiết lập dự án  
-
-3. **Kiến thức nền tảng:**  
-   - Xử lý tệp trong Java cơ bản  
-   - Các khái niệm về chuyển đổi tài liệu  
+- **Bộ Công Cụ Phát Triển Java (JDK) 8+** – JDK 11 hoặc mới hơn được khuyến nghị để cải thiện hiệu suất thu gom rác.  
+- **Maven** – để quản lý phụ thuộc.  
+- **GroupDocs.Viewer cho Java** – phiên bản dùng thử hoặc có giấy phép.  
+- Kiến thức cơ bản về I/O tệp Java và cấu trúc dự án Maven.
 
 ## Cài Đặt GroupDocs.Viewer cho Java
 
 ### Cấu Hình Maven
 
-Thêm GroupDocs.Viewer vào dự án Java của bạn bằng cách chèn cấu hình sau vào tệp `pom.xml`:
+Thêm phụ thuộc GroupDocs.Viewer vào `pom.xml` của bạn. Điều này sẽ kéo về tất cả các tệp nhị phân và thư viện phụ thuộc cần thiết.
 
 ```xml
 <repositories>
@@ -79,15 +111,15 @@ Thêm GroupDocs.Viewer vào dự án Java của bạn bằng cách chèn cấu h
 
 ### Nhận Giấy Phép
 
-Để sử dụng GroupDocs.Viewer, bạn có thể:
+Để mở khóa đầy đủ chức năng bạn có thể:
 
-- **Bản dùng thử:** Truy cập các chức năng cơ bản để đánh giá công cụ.  
-- **Giấy phép tạm thời:** Nhận giấy phép tạm thời để sử dụng đầy đủ tính năng.  
-- **Mua bản quyền:** Xem xét mua giấy phép cho môi trường sản xuất.
+- **Dùng Thử Miễn Phí:** Đánh giá các tính năng cốt lõi mà không cần khóa giấy phép.  
+- **Giấy Phép Tạm Thời:** Yêu cầu một khóa có thời hạn để thử nghiệm.  
+- **Mua Đầy Đủ:** Nhận giấy phép sản xuất để sử dụng không giới hạn.
 
 ### Khởi Tạo Cơ Bản
 
-Khởi tạo GroupDocs.Viewer như sau:
+`Viewer` là lớp cốt lõi chịu trách nhiệm hiển thị tài liệu sang định dạng đầu ra mong muốn. Khởi tạo nó với giấy phép và đường dẫn tệp trong một khối try‑with‑resources để đảm bảo giải phóng tài nguyên đúng cách.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -103,17 +135,33 @@ public class InitializeViewer {
 
 ## Cách Chuyển Đổi NSF sang PDF
 
-Các phần dưới đây minh họa cách kết xuất tệp NSF sang HTML, JPG, PNG, **và PDF**. Ví dụ PDF đáp ứng trực tiếp từ khóa chính “convert nsf to pdf”.
+Để chuyển đổi một tài liệu NSF sang PDF, trước tiên tạo một thể hiện `Viewer` trỏ tới tệp nguồn. Sau đó cấu hình `PdfViewOptions` để xác định các đặc tính đầu ra như kích thước trang, mức nén và việc nhúng phông chữ. Cuối cùng, gọi `viewer.view(pdfOptions)` để hiển thị toàn bộ tài liệu thành một tệp PDF duy nhất sẵn sàng cho việc phân phối.
 
-### Kết Xuất NSF sang HTML
+`PdfViewOptions` chỉ định các cài đặt đặc thù cho PDF như kích thước trang và mức nén.
 
-#### Tổng Quan
-Chuyển đổi tài liệu NSF sang định dạng HTML, nhúng tài nguyên trong HTML để dễ dàng xem trên web.
+```java
+Path pageFilePathFormat = outputDirectory.resolve("NSF_result.pdf");
+```
+```java
+import com.groupdocs.viewer.options.PdfViewOptions;
 
-#### Hướng Dẫn Từng Bước
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);  // Convert to PDF.
+}
+```
 
-**1. Thiết Lập Thư Mục Đầu Ra và Đường Dẫn Tệp**  
-Xác định nơi lưu các tệp HTML đầu ra.
+## Hiển Thị NSF thành HTML
+
+### Tổng Quan
+
+Chuyển đổi các tài liệu NSF thành các trang HTML tự chứa, nhúng hình ảnh và CSS để hiển thị chính xác trên màn hình.
+
+### Hướng Dẫn Từng Bước
+
+#### 1. Thiết Lập Thư Mục Đầu Ra và Đường Dẫn Tệp
+
+Xác định thư mục nơi các tệp HTML sẽ được lưu.
 
 ```java
 import java.nio.file.Path;
@@ -123,8 +171,9 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("NSF_result.html");
 ```
 
-**2. Cấu Hình Tùy Chọn Tải**  
-Tùy chỉnh quá trình tải với các tùy chọn cụ thể như thời gian chờ tải tài nguyên.
+#### 2. Cấu Hình Load Options
+
+`LoadOptions` cho phép bạn tinh chỉnh việc tải tài nguyên, chẳng hạn đặt thời gian chờ cho các tài nguyên bên ngoài.
 
 ```java
 import com.groupdocs.viewer.options.LoadOptions;
@@ -133,8 +182,9 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);  // Set timeout for loading resources.
 ```
 
-**3. Khởi Tạo Viewer và Kết Xuất**  
-Sử dụng lớp Viewer để kết xuất tài liệu sang định dạng HTML.
+#### 3. Khởi Tạo Viewer và Hiển Thị
+
+`Viewer` xử lý tệp NSF và ghi các tệp HTML vào thư mục đích.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -146,20 +196,23 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOption
 }
 ```
 
-### Kết Xuất NSF sang JPG
+## Hiển Thị NSF thành JPG
 
-#### Tổng Quan
-Chuyển đổi tài liệu NSF sang ảnh JPG chất lượng cao để chia sẻ hoặc tích hợp vào các hệ thống dựa trên hình ảnh.
+### Tổng Quan
 
-**1. Xác Định Đường Dẫn Đầu Ra**  
-Thiết lập định dạng đường dẫn tệp để lưu các ảnh JPG đã kết xuất.
+Tạo các hình ảnh JPG chất lượng cao từ mỗi trang của tài liệu NSF, hữu ích cho việc xem trước hoặc nhúng vào quy trình làm việc tập trung vào hình ảnh.
+
+#### 1. Xác Định Đường Dẫn Đầu Ra
+
+Chỉ định mẫu đặt tên như `output_page_{0}.jpg` trong đó `{0}` là số trang.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("NSF_result_{0}.jpg");
 ```
 
-**2. Cấu Hình và Kết Xuất**  
-Cài đặt viewer và kết xuất tài liệu dưới dạng ảnh JPEG.
+#### 2. Cấu Hình và Hiển Thị
+
+`JpgViewOptions` định nghĩa các cài đặt cho đầu ra hình ảnh JPEG, bao gồm độ phân giải và chất lượng. Tạo `JpgViewOptions`, đặt DPI mong muốn, và gọi `viewer.view(options)`.
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
@@ -170,18 +223,23 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOption
 }
 ```
 
-### Kết Xuất NSF sang PNG
+## Hiển Thị NSF thành PNG
 
-#### Tổng Quan
-Kết xuất tài liệu sang định dạng PNG, nổi tiếng với khả năng nén không mất dữ liệu và độ phân giải cao.
+### Tổng Quan
 
-**1. Đặt Đường Dẫn Đầu Ra**
+Tạo các hình ảnh PNG không mất dữ liệu, giữ lại mọi chi tiết của các trang NSF gốc.
+
+#### 1. Đặt Đường Dẫn Đầu Ra
+
+Sử dụng mẫu như `nsf_page_{0}.png` để phân trang tự động.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("NSF_result_{0}.png");
 ```
 
-**2. Kết Xuất Tài Liệu**
+#### 2. Hiển Thị Tài Liệu
+
+`PngViewOptions` cấu hình các tham số đầu ra PNG như độ phân giải và độ sâu màu. Cấu hình `PngViewOptions` (ví dụ, đặt `setResolution(300)`) và hiển thị.
 
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
@@ -192,80 +250,64 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOption
 }
 ```
 
-### Kết Xuất NSF sang PDF
+## Ứng Dụng Thực Tế
 
-#### Tổng Quan
-Chuyển đổi tài liệu NSF sang định dạng PDF, tiêu chuẩn tài liệu được chấp nhận rộng rãi.
+1. **Chia Sẻ Tài Liệu Trên Web:** Chuyển NSF sang HTML để xem ngay trong trình duyệt mà không cần cài đặt Notes.  
+2. **Lưu Trữ Hình Ảnh:** Lưu các ảnh chụp JPG/PNG từng trang cho bộ sưu tập hình thu nhỏ hoặc quy trình OCR.  
+3. **Truy Cập Toàn Cầu:** Sử dụng chuyển đổi PDF để cung cấp một tệp duy nhất, an toàn, có thể mở trên bất kỳ thiết bị nào, đáp ứng yêu cầu tuân thủ.
 
-**1. Xác Định Đường Dẫn Đầu Ra**
+## Các Yếu Tố Hiệu Suất
 
-```java
-Path pageFilePathFormat = outputDirectory.resolve("NSF_result.pdf");
-```
+- **Tải Tài Nguyên:** Điều chỉnh `setResourceLoadingTimeout` dựa trên độ trễ mạng để tránh treo.  
+- **Quản Lý Bộ Nhớ:** Sử dụng try‑with‑resources cho các thể hiện `Viewer`; điều này tự động giải phóng tài nguyên gốc.  
+- **Xử Lý Hàng Loạt:** Đối với các lô lớn, xử lý tệp tuần tự hoặc bằng các luồng song song, giám sát việc sử dụng heap để không vượt quá giới hạn bộ nhớ của JVM.
 
-**2. Kết Xuất dưới dạng PDF**
+## Phần Câu Hỏi Thường Gặp
 
-```java
-import com.groupdocs.viewer.options.PdfViewOptions;
+**Định dạng tốt nhất để chuyển đổi tài liệu NSF là gì?**  
+- Nó phụ thuộc vào mục đích sử dụng: HTML cho các cổng web, PDF cho việc phân phối toàn cầu, JPG/PNG cho quy trình làm việc dựa trên hình ảnh.
 
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_NSF", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-    viewer.view(options);  // Convert to PDF.
-}
-```
+**Làm thế nào để xử lý các tệp NSF lớn một cách hiệu quả?**  
+- Tinh chỉnh `LoadOptions` (ví dụ, tăng `setResourceLoadingTimeout`), xử lý tệp theo các lô nhỏ hơn, và tái sử dụng một thể hiện `Viewer` duy nhất khi có thể.
 
-## Ứng Dụng Thực Tiễn
+**Tôi có thể tùy chỉnh chất lượng đầu ra trong các định dạng hình ảnh không?**  
+- Có. Đặt DPI, mức nén và độ sâu màu qua `JpgViewOptions` hoặc `PngViewOptions` trước khi hiển thị.
 
-1. **Chia sẻ tài liệu trên web:** Kết xuất tệp NSF sang HTML để dễ dàng chia sẻ trên các nền tảng web.  
-2. **Lưu trữ hình ảnh:** Lưu các ảnh chất lượng cao của tài liệu ở định dạng JPG hoặc PNG.  
-3. **Truy cập tài liệu toàn cầu:** Sử dụng chuyển đổi PDF để đảm bảo khả năng tương thích tài liệu trên mọi thiết bị.  
+**Nếu quá trình chuyển đổi thất bại, tôi nên làm gì?**  
+- Kiểm tra lại đường dẫn tệp, đảm bảo tệp NSF không bị hỏng, và tham khảo log của GroupDocs.Viewer để biết mã lỗi chi tiết. Cập nhật lên phiên bản thư viện mới nhất thường giải quyết các vấn đề tương thích.
 
-## Các Yếu Tố Ảnh Hưởng Đến Hiệu Suất
+**Có hỗ trợ chuyển đổi hàng loạt không?**  
+- Chắc chắn. Bao bọc logic hiển thị trong một vòng lặp `for` hoặc Java Stream để tự động xử lý nhiều tệp NSF.
 
-- **Tối ưu tải tài nguyên:** Điều chỉnh `setResourceLoadingTimeout` dựa trên khả năng của hệ thống.  
-- **Quản lý bộ nhớ:** Đảm bảo sử dụng bộ nhớ hiệu quả bằng cách quản lý đúng các thể hiện Viewer với try‑with‑resources.  
-- **Xử lý hàng loạt:** Đối với các chuyển đổi quy mô lớn, cân nhắc xử lý tài liệu theo lô để kiểm soát việc sử dụng tài nguyên.  
+## Câu Hỏi Thường Gặp
 
-## Phần Hỏi Đáp
+**Q: Làm thế nào để chuyển đổi tệp NSF sang PDF mà không mất chú thích?**  
+A: `PdfViewOptions` tự động giữ lại hầu hết các chú thích; chỉ cần hiển thị tài liệu với các tùy chọn này và PDF kết quả sẽ phản ánh bố cục gốc.
 
-1. **Định dạng nào là tốt nhất để chuyển đổi tài liệu NSF?**  
-   - Tùy thuộc vào nhu cầu của bạn: HTML cho việc xem trên web, PDF cho truy cập toàn cầu, JPG/PNG cho hình ảnh.  
+**Q: Tôi có thể chuyển đổi các tệp NSF được bảo vệ bằng mật khẩu không?**  
+A: Có. Cung cấp thông tin đăng nhập qua `LoadOptions` trước khi tạo thể hiện `Viewer`.
 
-2. **Làm sao xử lý các tệp NSF lớn một cách hiệu quả?**  
-   - Xem xét tối ưu các tùy chọn tải và xử lý theo lô.  
+**Q: Phiên bản Java nào cho hiệu suất tốt nhất?**  
+A: JDK 11 hoặc mới hơn cung cấp bộ thu gom rác và khả năng đồng thời cải thiện, giúp tăng tốc chuyển đổi hàng loạt.
 
-3. **Có thể tùy chỉnh chất lượng đầu ra trong các định dạng hình ảnh không?**  
-   - Có, bạn có thể điều chỉnh các tham số như độ phân giải khi thiết lập `JpgViewOptions` hoặc `PngViewOptions`.  
+**Q: Có thể đặt DPI tùy chỉnh cho đầu ra JPG/PNG không?**  
+A: Cấu hình `JpgViewOptions.setResolution(int dpi)` hoặc `PngViewOptions.setResolution(int dpi)` trước khi gọi `viewer.view(options)`.
 
-4. **Nếu quá trình chuyển đổi thất bại, tôi nên làm gì?**  
-   - Kiểm tra lại đường dẫn tệp, đảm bảo cấu hình Viewer đúng, và tham khảo tài liệu GroupDocs để khắc phục.  
-
-5. **Có cách nào tự động hoá các chuyển đổi này trong quy trình batch không?**  
-   - Chắc chắn! Việc lặp qua nhiều tài liệu trong một vòng lặp sẽ tự động hoá quá trình một cách hiệu quả.  
-
-## Các Câu Hỏi Thường Gặp
-
-**Hỏi: Làm sao chuyển đổi tệp NSF sang PDF mà không mất chú thích?**  
-Đáp: GroupDocs.Viewer giữ lại hầu hết các chú thích trong bước `PdfViewOptions`, đảm bảo PDF cuối cùng phản ánh đúng bố cục gốc.
-
-**Hỏi: Có thể chuyển đổi các tệp NSF được bảo vệ bằng mật khẩu không?**  
-Đáp: Có. Cung cấp thông tin xác thực thích hợp qua `LoadOptions` trước khi khởi tạo Viewer.
-
-**Hỏi: Phiên bản Java nào được khuyến nghị để đạt hiệu suất tốt nhất?**  
-Đáp: JDK 11 hoặc mới hơn cung cấp cải tiến về garbage‑collection và xử lý đồng thời, rất có lợi cho việc chuyển đổi hàng loạt.
-
-**Hỏi: Có thể đặt DPI tùy chỉnh cho đầu ra JPG/PNG không?**  
-Đáp: Bạn có thể điều chỉnh DPI bằng cách cấu hình `JpgViewOptions` hoặc `PngViewOptions` trước khi gọi `viewer.view(options)`.
-
-**Hỏi: GroupDocs.Viewer có hỗ trợ stream kết quả trực tiếp tới phản hồi web không?**  
-Đáp: Có. Thay vì ghi ra đường dẫn tệp, bạn có thể sử dụng các overload `Stream` của các tùy chọn view để gửi kết quả trực tiếp tới phản hồi HTTP.
+**Q: GroupDocs.Viewer có hỗ trợ truyền luồng đầu ra trực tiếp tới phản hồi HTTP không?**  
+A: Có. Sử dụng phiên bản overload `Stream` của các tùy chọn hiển thị để ghi kết quả trực tiếp vào `HttpServletResponse.getOutputStream()`.
 
 ## Kết Luận
 
-Hướng dẫn này đã trình bày cách **convert nsf to pdf** và các định dạng khác bằng GroupDocs.Viewer cho Java. Khi thực hiện các bước trên, bạn có thể tích hợp khả năng chuyển đổi tài liệu một cách liền mạch vào ứng dụng của mình. Hãy khám phá thêm các tính năng của GroupDocs.Viewer và cân nhắc tích hợp chúng vào dự án để nâng cao khả năng xử lý tài liệu.
+Bạn đã có một lộ trình đầy đủ tính năng để **chuyển đổi nsf sang pdf** và hiển thị các tệp NSF thành HTML, JPG và PNG bằng GroupDocs.Viewer cho Java. Bằng cách thực hiện các bước trên, bạn có thể tích hợp chuyển đổi tài liệu mạnh mẽ vào bất kỳ ứng dụng Java nào, tự động hoá các công việc hàng loạt và cung cấp nội dung ở định dạng phù hợp nhất với nhu cầu của người dùng. Khám phá các tính năng bổ sung của Viewer như đánh dấu bản quyền, phông chữ tùy chỉnh và xử lý đa trang để làm phong phú hơn giải pháp của bạn.
 
 ---
 
-**Cập nhật lần cuối:** 2026-02-13  
-**Đã kiểm tra với:** GroupDocs.Viewer 25.2  
-**Tác giả:** GroupDocs
+**Cập Nhật Cuối Cùng:** 2026-05-26  
+**Đã Kiểm Tra Với:** GroupDocs.Viewer 25.2  
+**Tác Giả:** GroupDocs
+
+## Hướng Dẫn Liên Quan
+
+- [groupdocs viewer java: Chuyển Đổi Tài Liệu sang PDF – Hướng Dẫn Toàn Diện](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
+- [convert odf html java – Chuyển Đổi ODF sang HTML, JPG, PNG, PDF Sử Dụng GroupDocs.Viewer cho Java](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
+- [Chuyển Đổi PST sang HTML, JPG, PNG, PDF Sử Dụng GroupDocs.Viewer cho Java](/viewer/java/export-conversion/convert-pst-ost-groupdocs-viewer-java/)
