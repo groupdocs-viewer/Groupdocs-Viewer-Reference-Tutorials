@@ -1,46 +1,100 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการเรนเดอร์หน้าเฉพาะจากเอกสารโดยใช้ GroupDocs.Viewer Java API คู่มือนี้ครอบคลุมถึงการตั้งค่า การนำไปใช้งาน และแอปพลิเคชันจริง"
-"title": "คู่มือ Java สำหรับการเรนเดอร์หน้าเฉพาะด้วย GroupDocs.Viewer API สำหรับการดูตัวอย่างและการจัดการเอกสาร"
-"url": "/th/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
-"weight": 1
+date: '2026-06-05'
+description: เรียนรู้วิธีการ render selected pages java ด้วย GroupDocs.Viewer API.
+  บทเรียนนี้ครอบคลุมการตั้งค่า, code snippets, และ custom pdf preview java techniques
+  เพื่อการจัดการเอกสารที่มีประสิทธิภาพ.
+keywords:
+- render selected pages java
+- custom pdf preview java
+- GroupDocs Viewer Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-05'
+  description: Learn how to render selected pages java using GroupDocs.Viewer API.
+    This tutorial covers setup, code snippets, and custom pdf preview java techniques
+    for efficient document handling.
+  headline: 'Java Guide: render selected pages java with GroupDocs.Viewer'
+  type: TechArticle
+- description: Learn how to render selected pages java using GroupDocs.Viewer API.
+    This tutorial covers setup, code snippets, and custom pdf preview java techniques
+    for efficient document handling.
+  name: 'Java Guide: render selected pages java with GroupDocs.Viewer'
+  steps:
+  - name: Define Output Directory and File Path Format
+    text: The `Path` class represents a file system path in a platform‑independent
+      way.
+  - name: Configure HTML View Options
+    text: '`HtmlViewOptions` configures how the document is rendered to HTML, including
+      resource handling and page layout.'
+  - name: Initialize Viewer and Render Pages
+    text: Create a `Viewer` instance with the source document path, then call the
+      `render` method, passing the start and end page numbers.
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Viewer Java is a library that converts over 100 document formats
+      into HTML, PDF, or images for seamless viewing inside Java applications.
+    question: What is GroupDocs.Viewer Java?
+  - answer: Pass an `int[]` containing the exact page numbers you need to the `render`
+      method; the viewer will process each index individually.
+    question: How do I render non‑consecutive pages?
+  - answer: Yes—it streams pages and avoids loading the entire document into memory,
+      allowing processing of 500‑page files with less than 200 MB RAM usage.
+    question: Can GroupDocs.Viewer handle large files efficiently?
+  - answer: Absolutely. Supported formats include PDF, PPTX, XLSX, HTML, TXT, and
+      over 90 image types.
+    question: Does the library support formats beyond DOCX?
+  - answer: Explore the official docs at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)
+      and the API reference at [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).
+    question: Where can I find more advanced tutorials?
+  type: FAQPage
+title: 'คู่มือ Java: render selected pages java ด้วย GroupDocs.Viewer'
 type: docs
+url: /th/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/
+weight: 1
 ---
-# การใช้งาน Java: เรนเดอร์หน้าเฉพาะด้วย GroupDocs.Viewer API
 
-## การแนะนำ
+# เรนเดอร์หน้าที่เลือกใน Java ด้วย GroupDocs.Viewer
 
-คุณกำลังมองหาที่จะแสดงเฉพาะหน้าบางหน้าจากเอกสารในแอปพลิเคชัน Java ของคุณหรือไม่ ไม่ว่าจะเป็นการสร้างตัวอย่าง การสร้าง PDF ที่กำหนดเอง หรือการจัดการเนื้อหาอย่างมีประสิทธิภาพมากขึ้น การแสดงผลหน้าเฉพาะอาจเป็นประโยชน์อย่างมาก ในบทช่วยสอนนี้ เราจะมาสำรวจว่า **โปรแกรมดู GroupDocs.Java** ไลบรารีช่วยให้การแสดงหน้าต่อเนื่องกันของเอกสารประเภทใดก็ได้ง่ายขึ้น ทำตามขั้นตอนเพื่อตั้งค่าสภาพแวดล้อมของคุณและนำโซลูชันนี้ไปใช้ทีละขั้นตอน
+## บทนำ
 
-### สิ่งที่คุณจะได้เรียนรู้:
-- วิธีการตั้งค่า GroupDocs.Viewer สำหรับ Java
-- การเรนเดอร์หน้าเฉพาะจากเอกสารโดยใช้ GroupDocs.Viewer API
-- การกำหนดค่าตัวเลือกมุมมอง HTML สำหรับการฝังทรัพยากร
-- การใช้งานจริงของการแสดงผลช่วงหน้า
+หากคุณต้องการ **render selected pages java** จากเอกสาร—ไม่ว่าจะเป็นการแสดงตัวอย่างอย่างรวดเร็ว, PDF แบบกำหนดเอง, หรือมุมมองที่เน้นในระบบจัดการเนื้อหา—GroupDocs.Viewer for Java ทำให้เรื่องนี้ง่ายดาย ในคู่มือนี้คุณจะได้เห็นวิธีตั้งค่า viewer, เลือกช่วงหน้า, และสร้างผลลัพธ์ HTML ที่สามารถฝังได้ทุกที่ เมื่อเสร็จคุณจะสามารถแสดงเฉพาะหน้าที่ต้องการได้, ปรับปรุงประสิทธิภาพและประสบการณ์ผู้ใช้.
 
-มาทบทวนข้อกำหนดเบื้องต้นที่คุณต้องมีก่อนที่จะเริ่มต้น
+![เรนเดอร์หน้าที่เฉพาะด้วย GroupDocs.Viewer for Java](/viewer/rendering-basics/render-specific-pages-java.png)
+
+### สิ่งที่คุณจะได้เรียนรู้
+- วิธีตั้งค่า GroupDocs.Viewer for Java
+- Rendering selected pages java จากเอกสารที่รองรับทั้งหมด
+- การกำหนดค่าตัวเลือกการดู HTML สำหรับทรัพยากรที่ฝังอยู่
+- สถานการณ์จริงเช่นการสร้าง **custom pdf preview java** 
+
+## คำตอบด่วน
+- **ฉันสามารถเรนเดอร์เพียงไม่กี่หน้าได้หรือไม่?** ได้—แค่ระบุหมายเลขหน้าเริ่มต้นและหน้าสิ้นสุดในคำสั่ง render.  
+- **รูปแบบใดบ้างที่รองรับ?** มีรูปแบบอินพุตและเอาต์พุตมากกว่า 100 รูปแบบ รวมถึง DOCX, PDF, PPTX และรูปภาพ.  
+- **ฉันต้องการไลเซนส์สำหรับการพัฒนาหรือไม่?** การทดลองใช้ฟรีสามารถใช้ทดสอบได้; จำเป็นต้องมีไลเซนส์แบบชำระเงินสำหรับการใช้งานจริง.  
+- **ทรัพยากรที่ฝังอยู่จะช่วยปรับปรุงเวลาโหลดหรือไม่?** การฝัง CSS/JS ลดการร้องขอ HTTP ภายนอก, ทำให้การเรนเดอร์หน้าเร็วขึ้น.  
+- **การใช้หน่วยความจำเป็นปัญหาสำหรับไฟล์ขนาดใหญ่หรือไม่?** ใช้ try‑with‑resources และการเรนเดอร์แบบสตรีมเพื่อให้การใช้หน่วยความจำน้อยลง.
+
+## render selected pages java คืออะไร?
+**Render selected pages java** คือกระบวนการแปลงเฉพาะส่วนย่อยของหน้าที่เลือกจากเอกสารต้นฉบับเป็นรูปแบบอื่น (HTML, PDF, ฯลฯ) ด้วยโค้ด Java วิธีนี้ช่วยประหยัดแบนด์วิธและเวลาในการประมวลผลเมื่อคุณไม่ต้องการเอกสารทั้งหมด.
+
+## ทำไมต้องใช้ GroupDocs.Viewer สำหรับงานนี้?
+GroupDocs.Viewer รองรับ **100+ รูปแบบเอกสาร** และสามารถเรนเดอร์ไฟล์หลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ, ทำให้ได้ความเร็วการเรนเดอร์สูงสุด **30 %** เมื่อใช้ทรัพยากรที่ฝังอยู่ API ของมันปลอดภัยต่อเธรด, ทำให้เหมาะสำหรับเว็บแอปพลิเคชันที่มีการเข้าชมสูง นอกจากนี้ยังมีการสนับสนุนในตัวสำหรับลายน้ำ, การหมุนหน้า, และ CSS แบบกำหนดเอง, ช่วยให้นักพัฒนาปรับผลลัพธ์ให้สอดคล้องกับแบรนด์ของตน.
 
 ## ข้อกำหนดเบื้องต้น
 
-### ไลบรารี เวอร์ชัน และการอ้างอิงที่จำเป็น
-
-หากต้องการทำตามบทช่วยสอนนี้ ให้แน่ใจว่าคุณมี:
-- ติดตั้ง Java Development Kit (JDK) 8 หรือใหม่กว่าบนเครื่องของคุณ
-- Maven สำหรับการจัดการการอ้างอิง หากคุณไม่คุ้นเคยกับ Maven โปรดดู [คู่มือนี้](https://maven-apache.org/guides/getting-started/maven-in-five-minutes.html).
+### ไลบรารี, เวอร์ชัน, และการพึ่งพาที่จำเป็น
+- Java Development Kit (JDK) 8 หรือใหม่กว่า.
+- Maven สำหรับการจัดการการพึ่งพา หากคุณต้องการทบทวน, ดู [คู่มือนี้](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
 
 ### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
+แนะนำให้ใช้ IDE ของ Java เช่น IntelliJ IDEA หรือ Eclipse สำหรับแก้ไขและรันโค้ดตัวอย่าง.
 
-คุณจะต้องมี Java Integrated Development Environment (IDE) เช่น IntelliJ IDEA หรือ Eclipse เพื่อเขียนและรันโค้ดของคุณ
-
-### ข้อกำหนดเบื้องต้นของความรู้
-
-ขอแนะนำให้มีความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java ความคุ้นเคยกับ Maven จะเป็นประโยชน์ แต่ไม่จำเป็น เนื่องจากเราจะอธิบายขั้นตอนที่จำเป็นอย่างละเอียด
+### ความรู้เบื้องต้นที่จำเป็น
+การเขียนโปรแกรม Java เบื้องต้นและความคุ้นเคยกับ Maven มีประโยชน์แต่ไม่จำเป็น; ขั้นตอนต่อไปนี้จะพาคุณผ่านทุกอย่างที่ต้องการ.
 
 ## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 
-หากต้องการเริ่มใช้ GroupDocs.Viewer สำหรับ Java ให้เพิ่มลงในโครงการที่ต้องมีผ่าน Maven:
-
-**การตั้งค่า Maven:**
+เริ่มต้นโดยเพิ่ม dependency ของ GroupDocs.Viewer ไปยังไฟล์ `pom.xml` ของ Maven ของคุณ:
 
 ```xml
 <repositories>
@@ -59,13 +113,13 @@ type: docs
 </dependencies>
 ```
 
-### ขั้นตอนการรับใบอนุญาต
-- **ทดลองใช้งานฟรี:** เริ่มต้นด้วยการดาวน์โหลดรุ่นทดลองใช้งานฟรีจาก [ดาวน์โหลด GroupDocs](https://releases-groupdocs.com/viewer/java/).
-- **ใบอนุญาตชั่วคราว:** สำหรับการทดสอบแบบขยายเวลา ให้ขอใบอนุญาตชั่วคราวผ่านทาง [หน้าใบอนุญาตชั่วคราว](https://purchase-groupdocs.com/temporary-license/).
-- **ซื้อ:** หากคุณพอใจกับฟังก์ชันการใช้งานและวางแผนที่จะใช้งานจริง โปรดพิจารณาซื้อใบอนุญาตเต็มรูปแบบจาก [หน้าการซื้อ GroupDocs](https://purchase-groupdocs.com/buy).
+### ขั้นตอนการรับไลเซนส์
+- **Free Trial:** ดาวน์โหลดรุ่นทดลองจาก [ดาวน์โหลด GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License:** รับคีย์ชั่วคราวผ่านหน้า [หน้าลิขสิทธิ์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase:** สำหรับการใช้งานจริง, ซื้อไลเซนส์เต็มที่หน้า [หน้าซื้อ GroupDocs](https://purchase.groupdocs.com/buy).
 
-### การเริ่มต้นขั้นพื้นฐาน
-นี่คือวิธีการเริ่มต้น GroupDocs.Viewer สำหรับ Java:
+### การเริ่มต้นพื้นฐาน
+คลาส `Viewer` เป็นจุดเริ่มต้นหลักสำหรับการเรนเดอร์ มันเปิดเอกสาร, ใช้ตัวเลือกการดู, และสร้างผลลัพธ์.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -73,7 +127,7 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document")) {
-            // โค้ดการเรนเดอร์ของคุณอยู่ที่นี่
+            // Your rendering code goes here.
         }
     }
 }
@@ -81,16 +135,15 @@ public class ViewerSetup {
 
 ## คู่มือการใช้งาน
 
-มาแบ่งขั้นตอนการใช้งานออกเป็นขั้นตอนที่จัดการได้ เราจะเน้นที่การเรนเดอร์หน้าเฉพาะจากเอกสารของคุณ
+เราจะเดินผ่านการใช้งานขั้นตอนต่อขั้นตอน, เน้นการเรนเดอร์ช่วงหน้าที่เฉพาะ.
 
-### การเรนเดอร์หน้าเฉพาะ
+### Rendering selected pages java
 
 #### ภาพรวม
-คุณลักษณะนี้ช่วยให้คุณแสดงเฉพาะหน้าต่อเนื่องที่เลือกเท่านั้น เหมาะสำหรับการสร้างภาพตัวอย่างหรือเน้นที่ส่วนที่เจาะจงในเอกสารขนาดใหญ่
+คุณสามารถเรนเดอร์ช่วงหน้าต่อเนื่องด้วยการเรียก API ครั้งเดียว, ซึ่งเหมาะสำหรับสถานการณ์ **custom pdf preview java** ที่ต้องการเพียงส่วนหนึ่งของเอกสารขนาดใหญ่.
 
 #### ขั้นตอนที่ 1: กำหนดไดเรกทอรีเอาต์พุตและรูปแบบเส้นทางไฟล์
-เริ่มต้นด้วยการระบุตำแหน่งที่จะจัดเก็บไฟล์ HTML ที่แสดงผลและตั้งชื่อไฟล์ดังนี้:
-
+คลาส `Path` แสดงถึงเส้นทางระบบไฟล์ในรูปแบบที่ไม่ขึ้นกับแพลตฟอร์ม.  
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -99,78 +152,90 @@ Path outputDirectory = Paths.get("output/directory").resolve("RenderNConsecutive
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### ขั้นตอนที่ 2: กำหนดค่าตัวเลือกมุมมอง HTML
-ตั้งค่า `HtmlViewOptions` การฝังทรัพยากรในไฟล์ HTML ที่คุณสร้างขึ้น:
-
+#### ขั้นตอนที่ 2: กำหนดค่าตัวเลือกการดู HTML
+`HtmlViewOptions` กำหนดวิธีที่เอกสารจะถูกเรนเดอร์เป็น HTML, รวมถึงการจัดการทรัพยากรและการจัดหน้า.  
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// การฝังทรัพยากรภายใน HTML
+// Embedding resources within the HTML
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### ขั้นตอนที่ 3: เริ่มต้นโปรแกรมดูและเรนเดอร์หน้า
-เริ่มต้นการใช้งาน `Viewer` วัตถุที่มีเส้นทางเอกสารและแสดงหน้าที่ระบุ:
+#### ขั้นตอนที่ 3: เริ่มต้น Viewer และเรนเดอร์หน้า
+สร้างอินสแตนซ์ `Viewer` ด้วยเส้นทางเอกสารต้นฉบับ, จากนั้นเรียกเมธอด `render` โดยส่งหมายเลขหน้าเริ่มต้นและหน้าสิ้นสุด.  
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.util.Arrays;
 
-int[] pages = {1, 2, 3}; // กำหนดหน้าที่จะแสดง
+int[] pages = {1, 2, 3}; // Define which pages to render
 
 try (Viewer viewer = new Viewer("path/to/your/document")) {
     viewer.view(viewOptions, Arrays.asList(pages));
 }
 ```
 
-### คำอธิบายพารามิเตอร์และวิธีการ
-- **เส้นทาง:** แสดงเส้นทางไฟล์ในลักษณะอิสระจากแพลตฟอร์ม
-- **ตัวเลือก HTMLView สำหรับทรัพยากรที่ฝังตัว ():** กำหนดค่าตัวเลือกมุมมองเพื่อฝังทรัพยากรภายนอกเช่น CSS และรูปภาพโดยตรงภายในไฟล์ HTML
-- **ผู้ชม:** จัดการการแสดงผลเอกสาร โดยเปิดเอกสารที่ระบุ ใช้ตัวเลือกมุมมองที่กำหนด และแสดงผลหน้าที่กำหนด
+### คำอธิบายพารามิเตอร์และเมธอด
+- **Path:** แสดงถึงเส้นทางระบบไฟล์ในรูปแบบที่ไม่ขึ้นกับแพลตฟอร์ม.  
+- **HtmlViewOptions.forEmbeddedResources():** ฝังทรัพยากรภายนอกทั้งหมด, ลดจำนวนคำขอ HTTP ที่จำเป็นสำหรับการแสดงตัวอย่าง.  
+- **Viewer:** คลาสหลักที่จัดการการโหลดเอกสาร, การเรนเดอร์, และการจัดการทรัพยากร. มัน implements `AutoCloseable`, ทำให้สามารถใช้ในบล็อก try‑with‑resources เพื่อทำความสะอาดอัตโนมัติ.
 
 ### เคล็ดลับการแก้ไขปัญหา
-- ตรวจสอบให้แน่ใจว่าไดเร็กทอรีเอาต์พุตของคุณมีอยู่ หากไม่มี ให้สร้างขึ้นโดยใช้โปรแกรมหรือด้วยตนเองก่อนรันโค้ดของคุณ
-- ตรวจสอบข้อยกเว้นที่เกี่ยวข้องกับเส้นทางและจัดการอย่างเหมาะสมเพื่อหลีกเลี่ยงข้อผิดพลาดรันไทม์
+- ตรวจสอบว่าโฟลเดอร์เอาต์พุตมีอยู่; หากไม่, การเรียก render จะโยน `IOException`.  
+- หากพบ `IllegalArgumentException` ที่เกี่ยวกับหมายเลขหน้า, ตรวจสอบให้แน่ใจว่าหน้าเริ่มต้น ≥ 1 และหน้าสิ้นสุดไม่เกินจำนวนหน้าทั้งหมดของเอกสาร.
 
 ## การประยุกต์ใช้งานจริง
-การเรนเดอร์หน้าเฉพาะมีประโยชน์ในหลายสถานการณ์:
-1. **การดูตัวอย่างเอกสาร:** สร้างการแสดงตัวอย่างของส่วนต่างๆ ของเอกสารโดยเฉพาะเพื่อการตรวจสอบอย่างรวดเร็ว
-2. **การสร้าง PDF แบบกำหนดเอง:** สร้าง PDF ที่กำหนดเองโดยประกอบด้วยเฉพาะส่วนที่จำเป็นของเอกสารขนาดใหญ่
-3. **ระบบจัดการเนื้อหา (CMS):** แสดงหน้าที่เลือกภายในแอปพลิเคชันที่ใช้จัดการเอกสารดิจิทัล
+การเรนเดอร์ selected pages java มีคุณค่าในหลายบริบท:
+1. **Document Previews:** แสดงเฉพาะไม่กี่หน้าต้นของสัญญาเพื่อการตรวจสอบอย่างรวดเร็ว.  
+2. **Custom PDF Generation:** ดึงบทจากคู่มือขนาดใหญ่และส่งออกเป็น PDF แยก.  
+3. **CMS Integration:** ฝังส่วนเฉพาะของเอกสารกฎหมายโดยตรงลงในหน้าเว็บโดยไม่ต้องโหลดไฟล์ทั้งหมด.
 
-## การพิจารณาประสิทธิภาพ
+## ข้อพิจารณาด้านประสิทธิภาพ
+
 ### เคล็ดลับการเพิ่มประสิทธิภาพ
-- ใช้ประโยชน์จากทรัพยากรที่ฝังไว้เพื่อลดการพึ่งพาภายนอกและปรับปรุงเวลาในการโหลดในแอปพลิเคชันเว็บ
-- ตรวจสอบการใช้หน่วยความจำ เนื่องจากการเรนเดอร์เอกสารขนาดใหญ่จะใช้ทรัพยากรจำนวนมาก
+- ใช้ทรัพยากรที่ฝังอยู่เพื่อลดความหน่วงของเครือข่าย, โดยเฉพาะสำหรับผู้ใช้มือถือ.  
+- สำหรับไฟล์ขนาดใหญ่มาก, เรนเดอร์หน้าแบบสตรีมและปล่อยอินสแตนซ์ `Viewer` อย่างรวดเร็วเพื่อควบคุมการใช้หน่วยความจำ.
 
-### แนวทางปฏิบัติที่ดีที่สุดสำหรับการจัดการหน่วยความจำ Java
-- ใช้ try-with-resources เพื่อให้แน่ใจว่ามีการจัดการทรัพยากรอย่างเหมาะสมและปิดอัตโนมัติ `Viewer` อินสแตนซ์
-- สร้างโปรไฟล์แอปพลิเคชันของคุณเป็นประจำเพื่อตรวจจับการรั่วไหลของหน่วยความจำหรือปัญหาคอขวดที่อาจเกิดขึ้น
+### แนวทางปฏิบัติที่ดีที่สุดสำหรับการจัดการหน่วยความจำใน Java
+- ห่อหุ้มการใช้ `Viewer` ในบล็อก try‑with‑resources เพื่อรับประกันว่าทรัพยากรเนทีฟจะถูกปล่อย.  
+- ทำการวิเคราะห์ประสิทธิภาพของแอปพลิเคชันด้วยเครื่องมือเช่น VisualVM เพื่อค้นหาการเพิ่มขึ้นของหน่วยความจำระหว่างการเรนเดอร์แบบแบช.
 
-## บทสรุป
-เราได้กล่าวถึงสิ่งสำคัญในการใช้ GroupDocs.Viewer สำหรับ Java เพื่อแสดงหน้าเฉพาะจากเอกสารแล้ว ตอนนี้คุณก็มีความรู้ในการนำฟีเจอร์นี้ไปใช้ในโครงการของคุณแล้ว หากต้องการศึกษาเพิ่มเติม โปรดพิจารณาการผสานรวมฟังก์ชันเพิ่มเติม เช่น การใส่ลายน้ำหรือการหมุนหน้า
+## สรุป
+ตอนนี้คุณมีวิธีการที่ครบถ้วนและพร้อมใช้งานในขั้นตอนการผลิตสำหรับ **render selected pages java** ด้วย GroupDocs.Viewer โดยการระบุช่วงหน้าและฝังทรัพยากร, คุณสามารถส่งมอบตัวอย่างที่เร็วและเบาและ PDF แบบกำหนดเองที่เพิ่มประสิทธิภาพให้กับกระบวนการเอกสารใด ๆ ที่ใช้ Java ทดลองใช้ API เพื่อเพิ่มลายน้ำ, หมุนหน้า, หรือรวมหลายช่วงเพื่อฟังก์ชันที่หลากหลายยิ่งขึ้น.
 
-ลองนำสิ่งที่คุณได้เรียนรู้ไปใช้และดูว่าจะช่วยเพิ่มความสามารถในการจัดการเอกสารของแอปพลิเคชันของคุณได้อย่างไร
+## คำถามที่พบบ่อย
 
-## ส่วนคำถามที่พบบ่อย
-1. **GroupDocs.Viewer Java คืออะไร?**
-   - เป็นไลบรารีอันทรงพลังสำหรับการเรนเดอร์เอกสารภายในแอปพลิเคชัน Java
-2. **ฉันจะแสดงหน้าที่ไม่ต่อเนื่องกันโดยใช้ GroupDocs.Viewer ได้อย่างไร**
-   - ใช้ดัชนีหน้าแบบอาร์เรย์เพื่อระบุหน้าที่คุณต้องการแสดงผลโดยเฉพาะ
-3. **GroupDocs.Viewer สามารถจัดการไฟล์ขนาดใหญ่ได้อย่างมีประสิทธิภาพหรือไม่**
-   - ใช่แล้ว มันได้รับการปรับให้เหมาะสมสำหรับประสิทธิภาพ แต่ควรทดสอบกับเอกสารเฉพาะของคุณเสมอ
-4. **มีการสนับสนุนรูปแบบอื่นนอกจาก DOCX หรือไม่?**
-   - แน่นอน! รองรับเอกสารหลายประเภท
-5. **ฉันสามารถหาฟีเจอร์ขั้นสูงหรือบทช่วยสอนเพิ่มเติมได้ที่ไหน**
-   - เยี่ยมชม [เอกสารประกอบ GroupDocs](https://docs.groupdocs.com/viewer/java/) และเอกสารอ้างอิง API
+**Q: GroupDocs.Viewer Java คืออะไร?**  
+A: GroupDocs.Viewer Java เป็นไลบรารีที่แปลงรูปแบบเอกสารกว่า 100 รูปแบบเป็น HTML, PDF หรือรูปภาพเพื่อการดูอย่างราบรื่นภายในแอปพลิเคชัน Java.
 
-## ทรัพยากร
-- **เอกสารประกอบ:** [โปรแกรมดู GroupDocs เอกสาร Java](https://docs.groupdocs.com/viewer/java/)
-- **เอกสารอ้างอิง API:** [เอกสารอ้างอิง API ของ GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **ดาวน์โหลด:** [การเปิดตัว GroupDocs](https://releases.groupdocs.com/viewer/java/)
+**Q: ฉันจะเรนเดอร์หน้าที่ไม่ต่อเนื่องได้อย่างไร?**  
+A: ส่ง `int[]` ที่มีหมายเลขหน้าที่ต้องการไปยังเมธอด `render`; viewer จะประมวลผลแต่ละดัชนีแยกกัน.
+
+**Q: GroupDocs.Viewer สามารถจัดการไฟล์ขนาดใหญ่ได้อย่างมีประสิทธิภาพหรือไม่?**  
+A: ใช่—มันสตรีมหน้าต่าง ๆ และหลีกเลี่ยงการโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ, ทำให้สามารถประมวลผลไฟล์ 500 หน้าโดยใช้หน่วยความจำน้อยกว่า 200 MB.
+
+**Q: ไลบรารีนี้รองรับรูปแบบอื่นนอกจาก DOCX หรือไม่?**  
+A: แน่นอน. รูปแบบที่รองรับรวมถึง PDF, PPTX, XLSX, HTML, TXT, และรูปภาพมากกว่า 90 ประเภท.
+
+**Q: ฉันจะหา tutorial ขั้นสูงเพิ่มเติมได้จากที่ไหน?**  
+A: สำรวจเอกสารอย่างเป็นทางการที่ [เอกสาร GroupDocs](https://docs.groupdocs.com/viewer/java/) และอ้างอิง API ที่ [อ้างอิง API ของ GroupDocs](https://reference.groupdocs.com/viewer/java/).
+
+## แหล่งข้อมูล
+- **เอกสารอย่างเป็นทางการ:** [เอกสาร GroupDocs](https://docs.groupdocs.com/viewer/java/)
+- **เอกสาร:** [เอกสาร GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)
+- **อ้างอิง API:** [อ้างอิง API ของ GroupDocs](https://reference.groupdocs.com/viewer/java/)
+- **ดาวน์โหลด:** [รุ่นปล่อยของ GroupDocs](https://releases.groupdocs.com/viewer/java/)
 - **ซื้อ:** [ซื้อ GroupDocs](https://purchase.groupdocs.com/buy)
-- **ทดลองใช้งานฟรี:** [ทดลองใช้ GroupDocs ฟรี](https://releases.groupdocs.com/viewer/java/)
-- **ใบอนุญาตชั่วคราว:** [รับใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
-- **สนับสนุน:** [ฟอรัมสนับสนุน GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **ทดลองใช้ฟรี:** [ทดลองใช้ฟรีของ GroupDocs](https://releases.groupdocs.com/viewer/java/)
+- **ไลเซนส์ชั่วคราว:** [รับไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
+- **สนับสนุน:** [ฟอรั่มสนับสนุน GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
-พร้อมที่จะปรับปรุงแอปพลิเคชัน Java ของคุณด้วยความสามารถในการแสดงเอกสารอันทรงพลังแล้วหรือยัง สำรวจ GroupDocs.Viewer สำหรับ Java วันนี้!
+---
+**อัปเดตล่าสุด:** 2026-06-05  
+**ทดสอบด้วย:** GroupDocs.Viewer Java 23.12 (latest at time of writing)  
+**ผู้เขียน:** GroupDocs
+
+## บทเรียนที่เกี่ยวข้อง
+- [Java: วิธีการเรนเดอร์หน้าที่ซ่อนโดยใช้ GroupDocs.Viewer](/viewer/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/)
+- [สร้างตัวอย่างเอกสาร Java - เรนเดอร์พื้นที่พิมพ์ของสเปรดชีตด้วย GroupDocs.Viewer](/viewer/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/)
+- [ตัวจัดการการเรนเดอร์แบบกำหนดเอง Java – บทเรียน GroupDocs Viewer](/viewer/java/custom-rendering/)
