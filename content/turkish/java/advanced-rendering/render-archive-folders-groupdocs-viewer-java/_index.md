@@ -1,48 +1,51 @@
 ---
-date: '2026-01-10'
-description: Java'da GroupDocs.Viewer ile zip klasörlerini nasıl render edeceğinizi
-  bu kapsamlı adım adım rehberde öğrenin.
+date: '2026-03-14'
+description: GroupDocs.Viewer for Java kullanarak zip'i HTML'ye dönüştürmeyi ve uygulamalarınızda
+  belirli zip klasörlerini görüntülemeyi öğrenin.
 keywords:
 - render archive folders
 - GroupDocs.Viewer for Java
 - rendering specific folders in archives
-title: Java'da GroupDocs.Viewer ile zip klasörlerini nasıl render ederiz
+title: Zip'i HTML'ye dönüştürme ve Java'da GroupDocs.Viewer ile zip klasörlerini görüntüleme
 type: docs
 url: /tr/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Java'da GroupDocs.Viewer ile zip klasörlerini nasıl render ederiz
+# Zip'i HTML'ye dönüştürme ve Java'da GroupDocs.Viewer ile zip klasörlerini render etme
 
-Arşiv dosyaları (ZIP gibi) içinde belirli klasörleri Java uygulamalarınızda verimli bir şekilde render etmek mi istiyorsunuz? Bu öğreticide **zip klasörlerini nasıl render ederiz** konusunu GroupDocs.Viewer for Java kullanarak adım adım inceleyecek, proje kurulumundan gerçek dünya kullanım senaryolarına kadar her şeyi ele alacağız.
+Java uygulamalarınızda ZIP gibi arşiv dosyalarının içinde belirli klasörleri **convert zip to HTML** yöntemiyle verimli bir şekilde render etmek mi istiyorsunuz? Bu öğreticide, GroupDocs.Viewer for Java kullanarak zip klasörlerini nasıl render edeceğinizi, proje kurulumundan gerçek dünya kullanım senaryolarına kadar adım adım inceleyeceğiz. Bu yaklaşımın zaman kazandırdığını, I/O yükünü azalttığını ve uygulamanızı güvenli tuttuğunu göreceksiniz.
 
-![Java için GroupDocs.Viewer ile Arşiv Klasörlerini Render Etme](/viewer/advanced-rendering/rendering-archive-folders-java.png)
+![Rendering Archive Folders with GroupDocs.Viewer for Java](/viewer/advanced-rendering/rendering-archive-folders-java.png)
 
-## Hızlı Yanıtlar
-- **“render zip” ne anlama geliyor?** Bir ZIP arşivinin içeriğini (veya içindeki belirli bir klasörü) HTML veya resim gibi görüntülenebilir formatlara dönüştürmek anlamına gelir.  
-- **Bu işlemi hangi kütüphane yapıyor?** GroupDocs.Viewer for Java, yerleşik arşiv renderleme yetenekleri sunar.  
-- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme sürümü çalışır; üretim ortamı için tam lisans gereklidir.  
+## Quick Answers
+- **“convert zip to HTML” ne anlama geliyor?** Bir ZIP arşivinin içeriğini (veya içindeki belirli bir klasörü) web‑dostu HTML sayfalarına dönüştürmek anlamına gelir.  
+- **Hangi kütüphane bunu sağlıyor?** GroupDocs.Viewer for Java, yerleşik arşiv render yeteneklerine sahiptir.  
+- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme sürümü çalışır; üretim için tam lisans gereklidir.  
 - **Sadece bir klasörü render edebilir miyim?** Evet – tek bir dizini hedeflemek için `ArchiveOptions.setFolder("YourFolder")` kullanın.  
-- **Gerekli Java sürümü nedir?** Java 8 veya üzeri.
+- **Hangi Java sürümü gerekiyor?** Java 8 veya üzeri.
 
-## GroupDocs.Viewer ile “zip nasıl render edilir” nedir?
-GroupDocs.Viewer, sıkıştırılmış arşivler dahil olmak üzere çok çeşitli belge türlerini web‑dostu formatlara dönüştüren bir Java kütüphanesidir. Bir ZIP dosyasının yalnızca bir bölümünü (örneğin, içinde resimler veya PDF'ler bulunan bir klasör) göstermeniz gerektiğinde, viewer bu klasörü izole edip tüm arşivi çıkarmadan render etmenizi sağlar.
+## How to convert zip to HTML with GroupDocs.Viewer
+GroupDocs.Viewer, arşiv içeriğini çıkartma ve dönüştürme karmaşıklığını soyutlar. Dosyaları manuel olarak unzip etmek yerine, izleyiciye seçtiğiniz klasör için **convert zip to HTML** komutunu doğrudan verebilir, böylece iş akışı basitleşir ve geçici dosyalar minimuma indirilir.
 
-## Zip klasörlerini render etmek için GroupDocs.Viewer neden kullanılmalı?
-- **Hız:** Arşivden doğrudan render eder, maliyetli tam‑çıkartma adımlarını ortadan kaldırır.  
-- **Güvenlik:** İsterseniz ara dosyaları diske yazmanıza gerek kalmaz.  
-- **Esneklik:** Çıktı HTML, PNG veya PDF olabilir; çoğu web veya masaüstü senaryosuna uyar.  
-- **Ölçeklenebilirlik:** Doğru yapılandırıldığında büyük arşivleri minimum bellek ayak iziyle işler.
+## What is “how to render zip” with GroupDocs.Viewer?
+GroupDocs.Viewer, sıkıştırılmış arşivler dahil olmak üzere çok çeşitli belge türlerini web‑dostu formatlara dönüştüren bir Java kütüphanesidir. Bir ZIP dosyasının yalnızca bir bölümünü (örneğin, içinde resimler veya PDF'ler bulunan bir klasör) göstermeniz gerektiğinde, izleyici tüm arşivi çıkartmadan o klasörü izole edip render etmenizi sağlar.
 
-## Önkoşullar
-- **Java Development Kit (JDK)** 8 veya daha yeni bir sürüm.  
+## Why use GroupDocs.Viewer for rendering zip folders?
+- **Speed:** Tam çıkartma adımlarını atlayarak doğrudan arşivden render eder.  
+- **Security:** İsterseniz ara dosyaları diske yazmanıza gerek kalmaz.  
+- **Flexibility:** Çıktı HTML, PNG veya PDF olabilir; çoğu web veya masaüstü senaryosuna uyar.  
+- **Scalability:** Doğru yapılandırıldığında büyük arşivleri düşük bellek ayak iziyle işler.
+
+## Prerequisites
+- **Java Development Kit (JDK)** 8 veya daha yenisi.  
 - **Maven** bağımlılık yönetimi için.  
 - Java programlama temellerine temel bir aşinalık.
 
-## GroupDocs.Viewer for Java Kurulumu
+## Setting Up GroupDocs.Viewer for Java
 
-### Maven Yapılandırması
-`pom.xml` dosyanıza GroupDocs deposunu ve bağımlılığını ekleyin:
+### Maven Configuration
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,11 +65,11 @@ GroupDocs.Viewer, sıkıştırılmış arşivler dahil olmak üzere çok çeşit
 </dependencies>
 ```
 
-### Lisans Edinme
-GroupDocs.Viewer'ın tam potansiyelini açmak için bir [ücretsiz deneme](https://releases.groupdocs.com/viewer/java/) alabilir veya [geçici lisans sayfası](https://purchase.groupdocs.com/temporary-license/) üzerinden geçici bir lisans temin edebilirsiniz. Uzun vadeli projeler için tam lisans satın almanız önerilir.
+### License Acquisition
+GroupDocs.Viewer'ın tam potansiyelini açmak için bir [free trial](https://releases.groupdocs.com/viewer/java/) alabilir veya [temporary license page](https://purchase.groupdocs.com/temporary-license/) üzerinden geçici lisans temin edebilirsiniz. Uzun vadeli projeler için tam lisans satın almayı düşünün.
 
-### Temel Başlatma
-Maven kurulumu tamamlandıktan sonra viewer'ı ZIP dosyanızın yolu ile başlatın:
+### Basic Initialization
+Maven kurulumu tamamlandıktan sonra izleyiciyi ZIP dosyanızın yolu ile başlatın:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -76,12 +79,11 @@ try (Viewer viewer = new Viewer("path/to/archive.zip")) {
 }
 ```
 
-## Uygulama Kılavuzu
+## How to extract folder from zip using GroupDocs.Viewer
+Arşiv içinde yalnızca belirli bir dizine ihtiyacınız olduğunda, izleyiciye işlenecek klasörü tam olarak belirtebilirsiniz. Bu **extract folder from zip** işlemi bellek içinde gerçekleşir, böylece manuel çıkartmanın getirdiği yükten kaçınılır.
 
-### Zip klasörlerini render etme – Adım‑Adım
-
-#### Çıktı Yolu Tanımlama
-Render edilen HTML dosyalarının kaydedileceği dizini belirten bir yardımcı metod oluşturun:
+### Define Output Path
+Render edilen HTML dosyalarının kaydedileceği dizini belirten yardımcı bir yöntem oluşturun:
 
 ```java
 import java.nio.file.Path;
@@ -92,8 +94,8 @@ public static Path definePath() {
 }
 ```
 
-#### Belirli Klasörü Render Etme
-Viewer'ı arşiv içindeki belirli bir klasöre yönlendirin ve HTML çıktısı üretin:
+### Render Specific Folder
+İzleyiciyi arşiv içindeki belirli bir klasöre yönlendirin ve HTML çıktısı üretin:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -112,12 +114,12 @@ public static void renderArchiveFolder() {
 }
 ```
 
-**Ana parametrelerin açıklaması**
-- `pageFilePathFormat`: Her render edilen HTML sayfasının adlandırma desenini kontrol eder.  
-- `viewOptions.getArchiveOptions().setFolder(...)`: Viewer'ı ZIP arşivi içinde yalnızca belirtilen klasörü render edecek şekilde yönlendirir.
+**Key parameters explained**
+- `pageFilePathFormat`: Her render edilen HTML sayfası için adlandırma desenini kontrol eder.  
+- `viewOptions.getArchiveOptions().setFolder(...)`: İzleyiciyi ZIP arşivindeki yalnızca belirtilen klasörü render edecek şekilde yönlendirir.
 
-#### Çıktı Dizinine Özel Yol Tanımlama
-Farklı bir çıktı konumuna ihtiyacınız varsa, `definePath` metodunu istediğiniz gibi ayarlayın:
+### Custom Path Definition for Output Directory
+Farklı bir çıktı konumuna ihtiyacınız varsa, `definePath` metodunu sadece ayarlamanız yeterlidir:
 
 ```java
 public static Path definePath() {
@@ -125,40 +127,40 @@ public static Path definePath() {
 }
 ```
 
-## Pratik Uygulamalar
-1. **Belge Yönetim Sistemleri** – Büyük bir arşivin yalnızca ilgili kısmını gösterin, tüm içeriği ortaya çıkarmayın.  
-2. **Dijital Kütüphaneler** – e‑kitapların veya araştırma koleksiyonlarının seçili bölümlerini doğrudan tarayıcıda akış olarak sunun.  
-3. **Hukuki İnceleme Platformları** – Devasa zip paketleri içindeki belirli dava klasörlerine odaklanarak zaman ve depolama tasarrufu sağlayın.
+## Practical Applications
+1. **Document Management Systems** – Büyük bir arşivin sadece ilgili kısmını göstererek her şeyi ortaya çıkarmaktan kaçının.  
+2. **Digital Libraries** – e‑kitapların veya araştırma koleksiyonlarının seçili bölümlerini doğrudan tarayıcıda akış olarak sunun.  
+3. **Legal Review Platforms** – Devasa zip paketleri içindeki belirli dava klasörlerine odaklanarak zaman ve depolama tasarrufu sağlayın.
 
-## Performans Düşünceleri
-- **Bellek Yönetimi:** Çok büyük ZIP dosyaları için JVM heap boyutunu artırmayı veya klasörleri daha küçük partiler halinde işlemeyi düşünün.  
-- **I/O Verimliliği:** Render edilen dosyaları hızlı bir SSD'ye veya ağ üzerinden bağlanmış bir sürücüye yazarak gecikmeyi azaltın.  
-- **Render Ayarları:** `HtmlViewOptions` içinde görüntü kalitesini veya HTML küçültme ayarlarını değiştirerek hız ve görsel kalite arasında denge kurun.
+## Performance Considerations
+- **Memory Management:** Çok büyük ZIP dosyaları için JVM heap boyutunu artırmayı veya klasörleri daha küçük partiler halinde işlemeyi düşünün.  
+- **I/O Efficiency:** Render edilen dosyaları gecikmeyi azaltmak için hızlı bir SSD'ye veya ağ üzerinden bağlanmış bir sürücüye yazın.  
+- **Rendering Options:** `HtmlViewOptions` içinde görüntü kalitesini veya HTML küçültme ayarlarını değiştirerek hız ve görsel kalite arasında denge kurun.
 
-## Sonuç
-Artık GroupDocs.Viewer kullanarak Java’da **zip klasörlerini nasıl render ederiz** konusunda bilgi sahibisiniz—Maven kurulumu, arşiv içinde tek bir klasörü hedefleme ve performans konularını ele alma adımlarını öğrendiniz. Bu adımları uygulamanıza entegre ederek arşivlenmiş içeriğe hızlı, güvenli ve kullanıcı‑dostu erişim sağlayabilirsiniz.
+## Conclusion
+Artık **convert zip to HTML** ve Java'da GroupDocs.Viewer kullanarak zip klasörlerini render etme konusunda bilgi sahibisiniz – Maven kurulumu, arşiv içinde tek bir klasörü hedefleme ve performans konularını ele alma adımlarını öğrendiniz. Bu adımları uygulamalarınıza entegre ederek arşivlenmiş içeriğe hızlı, güvenli ve kullanıcı‑dostu erişim sağlayabilirsiniz.
 
-### Sonraki Adımlar
-PDF dönüşümü, filigran ekleme veya çok‑sayfalı render gibi ek GroupDocs.Viewer özelliklerini keşfederek belge işleme hattınızı daha da zenginleştirin.
+### Next Steps
+PDF dönüşümü, watermark ekleme veya çok sayfalı render gibi ek GroupDocs.Viewer özelliklerini keşfederek belge işleme hattınızı daha da zenginleştirin.
 
-## SSS Bölümü
+## Frequently Asked Questions
 
-1. **GroupDocs.Viewer for Java nedir?**  
-   Geliştiricilerin belgeleri—arşivler dahil—doğrudan Java uygulamaları içinde render etmelerini sağlayan bir kütüphane.
+**Q: GroupDocs.Viewer for Java nedir?**  
+A: Geliştiricilerin belgeleri—arşivler dahil—doğrudan Java uygulamaları içinde render etmelerini sağlayan bir kütüphanedir.
 
-2. **GroupDocs.Viewer'ı Maven ile nasıl kurarım?**  
-   Maven Yapılandırması bölümünde gösterildiği gibi `pom.xml` dosyanıza depo ve bağımlılık eklemeleri yapın.
+**Q: GroupDocs.Viewer'ı Maven ile nasıl kurarım?**  
+A: Maven Configuration bölümünde gösterildiği gibi `pom.xml` dosyanıza depo ve bağımlılık yapılandırmalarını ekleyin.
 
-3. **GroupDocs.Viewer'ı ücretsiz kullanabilir miyim?**  
-   Ücretsiz deneme sürümü mevcuttur; üretim ortamları için lisanslı bir sürüm gereklidir.
+**Q: GroupDocs.Viewer'ı ücretsiz kullanabilir miyim?**  
+A: Ücretsiz deneme sürümü mevcuttur, ancak üretim ortamları için lisanslı bir sürüm gereklidir.
 
-4. **Arşivleri render ederken sık karşılaşılan sorunlar nelerdir?**  
-   Klasör adının tam olarak (büyük/küçük harf duyarlı) eşleştiğinden ve arşivin şifreli olmadığından emin olun; şifreli ise kimlik bilgilerini sağlamalısınız.
+**Q: Arşivleri render ederken sık karşılaşılan sorunlar nelerdir?**  
+A: Klasör adının tam olarak (büyük/küçük harf duyarlı) eşleştiğinden ve arşivin şifre korumalı olmadığından emin olun; şifreli ise kimlik bilgilerini sağlamalısınız.
 
-5. **Destek nereden alınabilir?**  
-   Topluluk yardımı için [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) adresini ziyaret edin veya resmi dokümantasyona başvurun.
+**Q: Gerektiğinde nereden destek alabilirim?**  
+A: Topluluk desteği için [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) adresini ziyaret edin veya resmi dokümantasyona bakın.
 
-## Kaynaklar
+## Resources
 - [Documentation](https://docs.groupdocs.com/viewer/java/)
 - [API Reference](https://reference.groupdocs.com/viewer/java/)
 - [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
@@ -169,6 +171,6 @@ PDF dönüşümü, filigran ekleme veya çok‑sayfalı render gibi ek GroupDocs
 
 ---
 
-**Son Güncelleme:** 2026-01-10  
-**Test Edilen Sürüm:** GroupDocs.Viewer 25.2 for Java  
-**Yazar:** GroupDocs
+**Last Updated:** 2026-03-14  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
