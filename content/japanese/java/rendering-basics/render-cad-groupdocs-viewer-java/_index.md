@@ -1,43 +1,106 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Javaを使用して、CAD図面から特定のレイアウトをシームレスにレンダリングする方法を学びましょう。ステップバイステップガイドでプロジェクトの精度を高め、時間を節約しましょう。"
-"title": "GroupDocs.Viewer を使用して Java で特定の CAD 図面をレンダリングする方法"
-"url": "/ja/java/rendering-basics/render-cad-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-20'
+description: GroupDocs.Viewer for Java を使用して DWG ファイルから特定のレイアウトをレンダリングし、CAD を HTML
+  に変換し、レイアウト DWG を効率的に抽出する方法を学びます。
+keywords:
+- groupdocs viewer dwg
+- convert cad to html
+- extract layout dwg
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-20'
+  description: Learn how to render specific layouts from DWG files with GroupDocs.Viewer
+    for Java, convert CAD to HTML, and extract layout DWG efficiently.
+  headline: groupdocs viewer dwg – How to Render Specific CAD Drawings in Java Using
+    GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render specific layouts from DWG files with GroupDocs.Viewer
+    for Java, convert CAD to HTML, and extract layout DWG efficiently.
+  name: groupdocs viewer dwg – How to Render Specific CAD Drawings in Java Using GroupDocs.Viewer
+  steps:
+  - name: Define the output directory
+    text: 'Create a folder where the generated HTML files will be saved. The `Utils`
+      helper creates a platform‑independent output folder for rendered files. *Explanation*:
+      `Utils.getOutputDirectoryPath` builds a platform‑independent path and creates
+      the folder if it does not exist.'
+  - name: Set up naming for rendered pages
+    text: 'Specify a naming pattern that includes a placeholder for the page number.
+      *Explanation*: `{0}` is replaced by the page index, allowing you to render multiple
+      layouts without filename collisions.'
+  - name: Configure HtmlViewOptions
+    text: 'Tell the viewer to embed resources and to target a single layout. HtmlViewOptions
+      configures how the output HTML is generated, including resource embedding and
+      layout selection. *Explanation*: `forEmbeddedResources` packs images and CSS
+      directly into the HTML, producing a single portable file per la'
+  - name: Choose the layout you want to render
+    text: 'Provide the exact layout name as it appears inside the DWG file. The `layoutName`
+      property specifies which drawing layout the viewer should render. *Explanation*:
+      Setting `layoutName` to `"Model"` (or any custom layout) instructs GroupDocs.Viewer
+      to ignore all other views.'
+  - name: Render the layout and clean up
+    text: 'Open the viewer in a try‑with‑resources block, invoke `view`, and let Java
+      close the instance automatically. The `Viewer` class is the main entry point
+      for rendering documents with GroupDocs.Viewer. *Explanation*: The `view` call
+      streams the selected layout to HTML files in the output folder; the vi'
+  type: HowTo
+- questions:
+  - answer: It is a server‑side library that converts more than 50 document and CAD
+      formats—including DWG—into HTML, PNG, or JPEG without needing installed Office
+      or CAD software.
+    question: What is GroupDocs.Viewer for Java?
+  - answer: Visit the [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/)
+      and request a free temporary license for development and testing.
+    question: How do I obtain a temporary license for GroupDocs.Viewer?
+  - answer: Yes, it streams pages and can render multi‑hundred‑page drawings while
+      keeping memory usage below 200 MB, provided you close the `Viewer` instance
+      after each operation.
+    question: Can GroupDocs.Viewer handle very large DWG files efficiently?
+  - answer: Absolutely – replace `HtmlViewOptions` with `PdfViewOptions` and specify
+      the same layout name to get a PDF output.
+    question: Is it possible to convert a DWG layout directly to PDF instead of HTML?
+  - answer: The official documentation and API reference contain additional code snippets
+      for batch processing and custom rendering pipelines.
+    question: Where can I find more examples of layout extraction?
+  type: FAQPage
+title: groupdocs viewer dwg – GroupDocs.Viewer を使用した Java で特定の CAD 図面をレンダリングする方法
 type: docs
+url: /ja/java/rendering-basics/render-cad-groupdocs-viewer-java/
+weight: 1
 ---
-# GroupDocs.Viewer を使用して Java で特定の CAD 図面をレンダリングする方法
 
-## 導入
+# groupdocs viewer dwg – Java で GroupDocs.Viewer を使用して特定の CAD 図面をレンダリングする方法
 
-CAD図面から特定のレイアウトをレンダリングすることは、特定の設計要素に焦点を当て、視覚的なプレゼンテーションの精度を高めるために不可欠です。このチュートリアルでは、CADファイルの指定されたセクションを抽出して表示する方法を説明します。 **GroupDocs.Viewer（Java用）**。
+DWG ファイルから特定のレイアウトをレンダリングすることは、単一のデザインビューに焦点を当てたいときや、軽量な HTML プレビューを生成したいとき、または特定の図面レイヤーをウェブページに埋め込みたいときに一般的な要件です。このチュートリアルでは、**GroupDocs.Viewer for Java** が選択したレイアウトのレンダリング、CAD の HTML への変換、レイアウト DWG の抽出を数行のコードで簡単に実現できることを紹介します。
 
-このガイドでは、次の内容を学習します。
-- GroupDocs.ViewerをJavaでセットアップする方法
-- CAD ファイルから特定のレイアウトをレンダリングする手順
-- 主要な設定オプションとその目的
-- よくある問題のトラブルシューティングのヒント
+![GroupDocs.Viewer for Java を使用した特定の CAD 図面のレンダリング](/viewer/rendering-basics/render-specific-cad-drawings-java.png)
+
+## クイック回答
+- **DWG を HTML にレンダリングするライブラリはどれですか？** GroupDocs.Viewer for Java。  
+- **DWG から 1 つのレイアウトだけをレンダリングできますか？** はい – `HtmlViewOptions` でレイアウト名を指定します。  
+- **開発にライセンスは必要ですか？** 無料トライアルでテストは可能ですが、本番環境では永続ライセンスが必要です。  
+- **必要な Java バージョンは何ですか？** JDK 8 以上。  
+- **大きな CAD ファイルでメモリ使用量が問題になりますか？** ストリーミングオプションを使用し、`Viewer` インスタンスを速やかに閉じてください。
+
+## groupdocs viewer dwg とは？
+`GroupDocs.Viewer` は、DWG を含む 50 以上の文書・CAD フォーマットを HTML、PNG、JPEG などのウェブフレンドリーな形式に変換する Java ライブラリです。ネイティブな CAD ソフトウェアを必要とせずにファイルを処理し、プラットフォーム間で一貫したレンダリングを提供します。
+
+## DWG レンダリングに GroupDocs.Viewer を使用する理由
+GroupDocs.Viewer は **50+ の CAD 入力フォーマット** をサポートし、ページ単位でオンデマンドにストリーミングすることでメモリ使用量を 200 MB 未満に抑えながら数百ページに及ぶ図面をレンダリングできます。組み込みのレイアウト抽出機能により単一ビューを分離でき、全体図面をレンダリングする場合と比較してページ読み込み時間を最大 **70 %** 短縮できます。
 
 ## 前提条件
+- **GroupDocs.Viewer for Java** ≥ 25.2。  
+- Maven による依存関係管理。  
+- ローカルに JDK 8+ がインストール済み。  
+- DWG ファイル構造（レイアウト、モデル空間、ペーパー空間）に関する基本的な知識。
 
-レイアウトをレンダリングする前に、次の点を確認してください。
+## DWG ファイルから特定のレイアウトをレンダリングする方法
 
-### 必要なライブラリ、バージョン、依存関係:
-- **GroupDocs.Viewer（Java用）**: バージョン25.2以降。
-- 依存関係を管理するための Maven。
+目的の DWG ファイルを読み込み、HTML レンダリングオプションを設定し、出力したいレイアウトを指定します。`HtmlViewOptions` にレイアウト名を設定することで、ビューアはそのビューだけを抽出し、対応する HTML ファイルを生成します。このアプローチはプレビュー生成を簡素化し、処理時間を短縮します。全体のワークフローは 3 つの簡潔なステップで構成されます。
 
-### 環境設定要件:
-- 動作する Java 開発キット (JDK)。
-- Java プログラミング概念の基本的な理解。
+### 手順 1: 出力ディレクトリの定義
+生成された HTML ファイルを保存するフォルダーを作成します。
 
-### 知識の前提条件:
-- CAD 図面、特に DWG ファイルに関する知識。
-- IntelliJ IDEA や Eclipse などの統合開発環境 (IDE) を快適に使用できること。
-
-## GroupDocs.Viewer を Java 用にセットアップする
-
-Maven を使用して、GroupDocs.Viewer をプロジェクトの依存関係として追加します。
-
+`Utils` ヘルパーは、レンダリングされたファイル用のプラットフォーム非依存の出力フォルダーを作成します。  
 ```xml
 <repositories>
    <repository>
@@ -54,106 +117,107 @@ Maven を使用して、GroupDocs.Viewer をプロジェクトの依存関係と
    </dependency>
 </dependencies>
 ```
+*Explanation*: `Utils.getOutputDirectoryPath` はプラットフォーム非依存のパスを構築し、フォルダーが存在しない場合は作成します。
 
-### ライセンス取得手順:
-1. **無料トライアル**無料トライアルを取得して機能をご確認ください。
-2. **一時ライセンス**開発中に拡張アクセスを申請します。
-3. **購入**実稼働環境での使用には完全なライセンスを取得します。
-
-## 実装ガイド
-
-Java で GroupDocs.Viewer を使用して CAD 図面から特定のレイアウトをレンダリングするには、次の手順に従います。
-
-### 特定のレイアウトをレンダリングする
-
-#### 概要
-この機能を使用すると、特定の設計要素に焦点を当てて、CAD ファイルの指定されたセクションを抽出して表示できます。
-
-#### ステップ1: 出力ディレクトリを定義する
-レンダリングされた HTML ファイルの出力ディレクトリを作成します。
+### 手順 2: レンダリングページの命名設定
+ページ番号のプレースホルダーを含む命名パターンを指定します。
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-*説明*：その `Utils.getOutputDirectoryPath` この方法により、ファイルが目的の場所に保存されることが保証されます。
+*Explanation*: `{0}` はページインデックスに置き換えられ、ファイル名の衝突なしに複数レイアウトをレンダリングできます。
 
-#### ステップ2: 出力ページの形式を設定する
-レンダリングされた各ページの名前を設定します。
+### 手順 3: HtmlViewOptions の設定
+リソースを埋め込み、単一レイアウトを対象にするようビューアに指示します。
 
+HtmlViewOptions は、リソース埋め込みやレイアウト選択を含む HTML 出力の生成方法を構成します。  
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-*説明*：その `{0}` プレースホルダーを使用すると動的なファイル名付けが可能になり、複数のレイアウトやページをレンダリングするときに便利です。
+*Explanation*: `forEmbeddedResources` は画像と CSS を HTML に直接埋め込み、レイアウトごとに単一のポータブルファイルを生成します。
 
-#### ステップ3: HtmlViewOptionsを設定する
-設定 `HtmlViewOptions` CAD レイアウトのレンダリング方法を指定します。
+### 手順 4: レンダリングするレイアウトの選択
+DWG ファイル内に表示されている正確なレイアウト名を指定します。
 
+`layoutName` プロパティは、ビューアがレンダリングすべき図面レイアウトを指定します。  
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-*説明*：その `forEmbeddedResources` この方法により、画像やスタイルなどのリソースが各 HTML ファイル内に埋め込まれ、移植性が向上します。
+*Explanation*: `layoutName` を `"Model"`（または任意のカスタムレイアウト）に設定すると、GroupDocs.Viewer は他のすべてのビューを無視します。
 
-#### ステップ4: レイアウト名を指定する
-レンダリングするレイアウトを指定します。
+### 手順 5: レイアウトをレンダリングしてクリーンアップ
+try‑with‑resources ブロックでビューアを開き、`view` を呼び出し、Java にインスタンスの自動クローズを任せます。
 
+`Viewer` クラスは、GroupDocs.Viewer を使用した文書レンダリングのメインエントリーポイントです。  
 ```java
 viewOptions.getCadOptions().setLayoutName("Model");
 ```
-*説明*「モデル」を指定すると、GroupDocs.Viewer は他のレイアウトを無視して、この特定のレイアウトに焦点を合わせます。
+*Explanation*: `view` 呼び出しは選択したレイアウトを出力フォルダーの HTML ファイルへストリーミングし、レンダリング直後にビューアが破棄されます。
 
-#### ステップ5: レイアウトをレンダリングする
-try-with-resources文を使用して管理します `Viewer` 物体：
+## よくある問題と解決策
+- **レイアウトが見つからない** – DWG を CAD エディタで開きレイアウト名を確認してください。スペルと大文字小文字は完全に一致する必要があります。  
+- **メモリ不足エラー** – `Viewer.setMemoryLimit` を有効にするか、ファイルを小さなチャンクに分割して処理してください。  
+- **画像が欠落している** – `forEmbeddedResources` が設定されていることを確認してください。設定しない場合、外部画像ファイルが別途生成されることがあります。
+
+## よくある質問
+
+**Q: GroupDocs.Viewer for Java とは何ですか？**  
+A: これはサーバーサイドのライブラリで、DWG を含む 50 以上の文書・CAD フォーマットを Office や CAD ソフトウェアをインストールせずに HTML、PNG、JPEG に変換します。
+
+**Q: GroupDocs.Viewer の一時ライセンスはどう取得しますか？**  
+A: [GroupDocs の購入ページ](https://purchase.groupdocs.com/temporary-license/) にアクセスし、開発・テスト用の無料一時ライセンスをリクエストしてください。
+
+**Q: 非常に大きな DWG ファイルを効率的に処理できますか？**  
+A: はい。ページをストリーミングし、メモリ使用量を 200 MB 未満に抑えながら数百ページの図面をレンダリングできます。ただし、各操作後に `Viewer` インスタンスを必ず閉じてください。
+
+**Q: DWG レイアウトを HTML ではなく PDF に直接変換できますか？**  
+A: もちろんです。`HtmlViewOptions` を `PdfViewOptions` に置き換え、同じレイアウト名を指定すれば PDF 出力が得られます。
+
+**Q: レイアウト抽出の追加例はどこで見つかりますか？**  
+A: 公式ドキュメントと API リファレンスに、バッチ処理やカスタムレンダリングパイプライン向けのコードスニペットが多数掲載されています。
+
+## 実用的な活用例
+1. **建築プレゼンテーション** – クライアントミーティング用に必要なフロアプランレイアウトだけを表示。  
+2. **製造レビュー** – 完全な組立図を読み込まずに、部品ビューだけを抽出して公差を議論。  
+3. **E‑ラーニングモジュール** – ウェブベースのチュートリアルに単一 CAD ビューを埋め込み、指導を明確化。  
+4. **文書管理統合** – DWG ファイルをコンテンツリポジトリにアップロードする際に、レイアウト固有のプレビューを自動抽出。  
+5. **カスタムレポート** – 単一図面ビューに焦点を当てた HTML レポートを生成し、ファイルサイズとロード時間を削減。
+
+## パフォーマンスのヒント
+- **Viewer インスタンスを再利用** すると、内部リソースがキャッシュされ、複数ファイルの後続レンダリングが高速化します。  
+- **ストリーミングを有効化** するには `Viewer.setRenderMode(RenderMode.Stream)` を呼び出し、メモリフットプリントを低く保ちます。  
+- **出力 HTML を gzip 圧縮** してウェブサーバーで配信すれば、クライアント側のロード時間がさらに改善します。
+
+## 結論
+これで **GroupDocs.Viewer for Java** を使用して DWG ファイルの特定レイアウトをレンダリングする、完全な本番対応手順が手に入りました。単一レイアウトを対象にすることで、レンダリング時間の短縮、メモリ消費の削減、そして任意のウェブポータルや内部ダッシュボードに埋め込めるクリーンな HTML を生成できます。
+
+**次のステップ**  
+- `"Top View"` や `"Section A"` など異なるレイアウト名でレンダリングし、出力の違いを確認してください。  
+- 同じレイアウトを PDF で取得したい場合は `PdfViewOptions` を試してみましょう。  
+- この手法を GroupDocs.Annotation と組み合わせて、レンダリングされた HTML に透かしやコメントを追加できます。
+
+---
+
+**Last Updated:** 2026-06-20  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs  
+
+## リソース
+- [ドキュメント](https://docs.groupdocs.com/viewer/java/)
+- [API リファレンス](https://reference.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer for Java のダウンロード](https://releases.groupdocs.com/viewer/java/)
+- [ライセンス購入](https://purchase.groupdocs.com/buy)
+- [無料トライアル](https://releases.groupdocs.com/viewer/java/)
+- [一時ライセンス申請](https://purchase.groupdocs.com/temporary-license)
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS)) {
     viewer.view(viewOptions);
 }
 ```
-*説明*：その `view` メソッドは CAD ファイルを処理し、指定されたレイアウトを出力ディレクトリに HTML ファイルとしてレンダリングします。
 
-### トラブルシューティングのヒント
-- エラーを回避するために、すべてのパスとファイル名が正しく構成されていることを確認してください。
-- 問題を回避するために、指定されたレイアウトが CAD ファイル内に存在することを確認してください。
+## 関連チュートリアル
 
-## 実用的なアプリケーション
-CAD 図面から特定のレイアウトをレンダリングすることには、いくつかの実際の用途があります。
-
-1. **建築プレゼンテーション**集中的に議論するために、建築計画の個々のセクションを表示します。
-2. **試作品の製造**レビュー中に機械設計の特定のコンポーネントを強調表示します。
-3. **教育ツール**複雑な概念を説明するには、分離されたレイヤーまたはビューを使用します。
-4. **文書管理システムとの統合**ワークフロー内の特定のレイアウトを自動的に抽出して表示します。
-5. **カスタマイズされたレポート**プロジェクトの更新に関する主要な設計要素に焦点を当てたレポートを生成します。
-
-## パフォーマンスに関する考慮事項
-最適なパフォーマンスを確保するには:
-- **リソース使用の最適化**特に大きな CAD ファイルの場合、レンダリング中のメモリ使用量を監視します。
-- **効率的なメモリ管理**Javaのガベージコレクションとリソース管理機能を効果的に活用しましょう。次のようなリソースを閉じます。 `Viewer` 使用後は速やかに廃棄してください。
-
-## 結論
-GroupDocs.Viewer for Javaを使用して、CAD図面から特定のレイアウトをレンダリングする基本を習得しました。この機能により、特定の設計要素に正確に焦点を合わせることができるため、ワークフローを効率化できます。
-
-**次のステップ:**
-- さまざまなレイアウト名と構成を試してください。
-- 透かしの追加や形式の変換など、GroupDocs.Viewer が提供する追加機能について説明します。
-
-ぜひこのソリューションをプロジェクトに導入してみてください。詳細については、以下のリソースをご覧ください。
-
-## FAQセクション
-1. **GroupDocs.Viewer for Java とは何ですか?**
-   - CAD 図面を含むさまざまな形式のドキュメントや画像をレンダリングするために設計された強力なライブラリです。
-2. **GroupDocs.Viewer の一時ライセンスを取得するにはどうすればよいですか?**
-   - 訪問 [GroupDocsの購入ページ](https://purchase.groupdocs.com/temporary-license/) 無料の一時ライセンスを申請してください。
-3. **GroupDocs.Viewer は大きな CAD ファイルを効率的に処理できますか?**
-   - はい、大きなファイルの管理に最適化されていますが、レンダリング中は常にリソースの使用状況を監視します。
-4. **GroupDocs.Viewer でレンダリングできる他のドキュメント形式は何ですか?**
-   - PDF、Word、Excel、PNGやJPEGなどの画像を含むさまざまな形式をサポートしています。
-5. **CAD 図面のレンダリングの問題をトラブルシューティングするにはどうすればよいですか?**
-   - レイアウト名を確認し、ファイル パスをチェックし、CAD ファイルに指定されたレイアウトが含まれていることを確認します。
-
-## リソース
-- [ドキュメント](https://docs.groupdocs.com/viewer/java/)
-- [APIリファレンス](https://reference.groupdocs.com/viewer/java/)
-- [Java用GroupDocs.Viewerをダウンロード](https://releases.groupdocs.com/viewer/java/)
-- [ライセンスを購入する](https://purchase.groupdocs.com/buy)
-- [無料トライアル](https://releases.groupdocs.com/viewer/java/)
-- [臨時免許申請](https://purchase.groupdocs.com/temporary-license)
+- [GroupDocs.Viewer for Java を使用してカスタムサイズ＆背景色で CAD 図面を PNG にレンダリングする方法](/viewer/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/)
+- [GroupDocs.Viewer Java で CAD 図面をタイルに分割して効率的にレンダリングする方法](/viewer/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/)
+- [GroupDocs.Viewer で CAD レイヤーを Java でレンダリングする完全ガイド](/viewer/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/)

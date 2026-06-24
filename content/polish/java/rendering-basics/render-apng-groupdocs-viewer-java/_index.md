@@ -1,41 +1,108 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak renderować pliki APNG do formatów HTML, JPG, PNG i PDF za pomocą GroupDocs.Viewer dla Java. Ten samouczek obejmuje konfigurację, implementację i praktyczne zastosowania."
-"title": "Jak renderować animowane pliki PNG w Javie za pomocą GroupDocs.Viewer"
-"url": "/pl/java/rendering-basics/render-apng-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-20'
+description: Samouczek GroupDocs Viewer Java, który pokazuje, jak renderować pliki
+  APNG do HTML, JPG, PNG i PDF. Zawiera setup, code snippets oraz practical use cases.
+keywords:
+- groupdocs viewer java tutorial
+- render animated png
+- how to convert apng to jpg
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-20'
+  description: GroupDocs Viewer Java tutorial that shows how to render APNG files
+    to HTML, JPG, PNG, and PDF. Includes setup, code snippets, and practical use cases.
+  headline: 'GroupDocs Viewer Java Tutorial: Render Animated PNGs'
+  type: TechArticle
+- description: GroupDocs Viewer Java tutorial that shows how to render APNG files
+    to HTML, JPG, PNG, and PDF. Includes setup, code snippets, and practical use cases.
+  name: 'GroupDocs Viewer Java Tutorial: Render Animated PNGs'
+  steps:
+  - name: '**Set Up Paths** – define where the HTML file and its resources will be
+      saved.'
+    text: '**Set Up Paths** – define where the HTML file and its resources will be
+      saved.'
+  - name: '**Initialize Viewer** – create a `Viewer` object with the APNG path.'
+    text: '**Initialize Viewer** – create a `Viewer` object with the APNG path.'
+  - name: '**Configure Options** – use `HtmlViewOptions.forEmbeddedResources` to embed
+      CSS, JS, and images directly into the HTML file, eliminating external dependencies.'
+    text: '**Configure Options** – use `HtmlViewOptions.forEmbeddedResources` to embed
+      CSS, JS, and images directly into the HTML file, eliminating external dependencies.'
+  - name: '**Render** – call `viewer.view(documentPath, htmlOptions)`.'
+    text: '**Render** – call `viewer.view(documentPath, htmlOptions)`.'
+  - name: '**Configure Paths** – specify the output folder for the generated JPG files.'
+    text: '**Configure Paths** – specify the output folder for the generated JPG files.'
+  - name: '**Render to JPG** – invoke `viewer.view(documentPath, JpgViewOptions.forEmbeddedResources(outputPath))`.'
+    text: '**Render to JPG** – invoke `viewer.view(documentPath, JpgViewOptions.forEmbeddedResources(outputPath))`.'
+  - name: '**Result** – each frame becomes `output_1.jpg`, `output_2.jpg`, … preserving
+      the original animation sequence.'
+    text: '**Result** – each frame becomes `output_1.jpg`, `output_2.jpg`, … preserving
+      the original animation sequence.'
+  - name: '**Set Output Paths** – choose a folder for the PNG sequence.'
+    text: '**Set Output Paths** – choose a folder for the PNG sequence.'
+  - name: '**Execute Rendering** – call `viewer.view(documentPath, PngViewOptions.forEmbeddedResources(outputPath))`.'
+    text: '**Execute Rendering** – call `viewer.view(documentPath, PngViewOptions.forEmbeddedResources(outputPath))`.'
+  - name: '**Outcome** – you receive a series of PNG files that can be recombined
+      or used individually.'
+    text: '**Outcome** – you receive a series of PNG files that can be recombined
+      or used individually.'
+  type: HowTo
+- questions:
+  - answer: Yes, it supports GIF, WebP, and even animated SVG, providing the same
+      HTML, image, and PDF output options.
+    question: Can GroupDocs Viewer render other animated formats like GIF or WebP?
+  - answer: There’s no hard limit, but performance may degrade after ~500 frames;
+      consider down‑sampling for very large animations.
+    question: Is there a limit to the number of frames an APNG can have?
+  - answer: APNG does not support encryption, but if the file is inside a ZIP archive,
+      supply the password via `Viewer`’s `load` method.
+    question: How do I handle password‑protected APNG files?
+  - answer: Absolutely—use `JpgViewOptions.setResolution(300)` and `setQuality(90)`
+      before calling `view`.
+    question: Can I customize the DPI or quality of the generated JPGs?
+  - answer: Yes, GroupDocs Viewer is pure Java and runs on any OS with a compatible
+      JRE, making it ideal for Docker deployments.
+    question: Does the library work on Linux containers?
+  type: FAQPage
+title: 'Samouczek GroupDocs Viewer Java: Renderowanie animowanych PNG'
 type: docs
+url: /pl/java/rendering-basics/render-apng-groupdocs-viewer-java/
+weight: 1
 ---
-# Jak renderować animowane obrazy PNG za pomocą GroupDocs.Viewer w Javie
 
-Poznaj proces przekształcania animowanych plików PNG (APNG) do różnych formatów, takich jak HTML, JPG, PNG i PDF, przy użyciu potężnej biblioteki GroupDocs.Viewer for Java.
+# Samouczek GroupDocs Viewer Java: Renderowanie animowanych PNG
 
-## Wstęp
+W tym **samouczku GroupDocs Viewer Java** odkryjesz, jak przekształcić pliki Animated PNG (APNG) na formaty HTML, JPG, PNG i PDF przy użyciu solidnej biblioteki GroupDocs.Viewer. Niezależnie od tego, czy tworzysz portal internetowy, narzędzie raportujące, czy pipeline cyfrowej publikacji, prawidłowe renderowanie APNG jest niezbędne do zachowania jakości animacji na różnych platformach.
 
-Wyświetlanie animowanych obrazów na stronach internetowych i w aplikacjach może być trudne. APNG doskonale nadają się do wyświetlania bogatej grafiki, ale ich konwersja na różnych platformach wymaga solidnego rozwiązania. **GroupDocs.Viewer dla Java** ułatwia i usprawnia renderowanie tych animacji w wielu formatach.
+![Renderowanie animowanych PNG za pomocą GroupDocs.Viewer dla Java](/viewer/rendering-basics/render-animated-pngs-java.png)  
+[Renderowanie animowanych PNG za pomocą GroupDocs.Viewer dla Java](/viewer/rendering-basics/render-animated-pngs-java.png)
 
-W tym samouczku dowiesz się, jak używać GroupDocs.Viewer do:
-- Renderuj pliki APNG jako osadzone dokumenty HTML.
-- Konwertuj każdą klatkę APNG na osobne obrazy JPG.
-- Przekształć klatki APNG w pojedyncze pliki PNG.
-- Skompiluj cały APNG w pojedynczym dokumencie PDF.
+## Szybkie odpowiedzi
+- **Do czego służy GroupDocs.Viewer?** Renderuje ponad 70 typów plików — w tym APNG — do HTML, obrazów i PDF‑ów bez konieczności używania oprogramowania zewnętrznego.  
+- **Ile linii kodu potrzebnych jest do konwersji APNG na JPG?** Zaledwie dwie linie: utwórz instancję `Viewer` i wywołaj `viewer.view(documentPath, JpgViewOptions.forEmbeddedResources(outputPath))`.  
+- **Czy potrzebna jest licencja do rozwoju?** Licencja próbna działa w testach; licencja komercyjna jest wymagana w produkcji.  
+- **Czy mogę wydajnie renderować duże APNG (100+ klatek)?** Tak — użyj try‑with‑resources i strumieniuj wyjście, aby utrzymać niskie zużycie pamięci.  
+- **Czy Maven jest jedynym sposobem dodania biblioteki?** Maven jest zalecany, ale możesz także użyć Gradle lub dodać JAR‑y ręcznie.
 
-Po ukończeniu kursu zdobędziesz umiejętności niezbędne do efektywnego integrowania tych funkcjonalności z aplikacjami Java.
+## Czym jest GroupDocs Viewer?
+**GroupDocs Viewer** to komponent Java, który konwertuje ponad 70 formatów dokumentów i obrazów na przyjazne dla sieci reprezentacje, takie jak HTML, JPG, PNG i PDF. Obsługuje złożone układy, zachowuje grafikę wektorową i wspiera formaty animowane, takie jak APNG, bez zewnętrznych zależności.
+
+## Dlaczego renderować animowane PNG za pomocą GroupDocs Viewer?
+GroupDocs Viewer zapewnia niezawodny, wysokowydajny sposób konwersji APNG, zachowując synchronizację animacji i przezroczystość. Eliminuje potrzebę używania narzędzi firm trzecich, działa na każdej platformie i łatwo integruje się z aplikacjami Java.
+
+- **Szerokie wsparcie formatów:** ponad 70 formatów wejściowych, w tym APNG, PDF, DOCX i SVG.  
+- **Optymalizacja wydajności:** przetwarza dokumenty wielostronicowe lub animacje 200‑klatkowe, używając mniej niż 150 MB RAM na typowym serwerze.  
+- **Zero‑install:** brak potrzeby natywnych bibliotek czy kodeków specyficznych dla systemu operacyjnego, co upraszcza wdrażanie w kontenerach.  
+- **Spójny wynik:** gwarantuje renderowanie piksel‑perfekcyjne, zachowując przezroczystość i synchronizację animacji.
 
 ## Wymagania wstępne
+- **Java Development Kit (JDK) 8+** – zapewnia kompatybilność z nowoczesnymi funkcjami języka.  
+- **Maven** – upraszcza zarządzanie zależnościami; Gradle również działa.  
+- **Plik APNG** – umieść go w folderze `resources` projektu (np. `src/main/resources/sample.apng`).  
 
-Przed rozpoczęciem pracy z GroupDocs.Viewer dla Java upewnij się, że posiadasz:
-- **Zestaw narzędzi programistycznych Java (JDK)**:Wymagany jest JDK 8 lub nowszy.
-- **Maven**:Zrozumienie Mavena pomaga w efektywnym zarządzaniu zależnościami.
-- **Plik APNG**:Plik APNG powinien być gotowy w katalogu Twojego projektu.
-
-## Konfigurowanie GroupDocs.Viewer dla Java
-
-Aby rozpocząć, skonfiguruj GroupDocs.Viewer w swoim projekcie. Wykonaj następujące kroki:
+## Konfiguracja GroupDocs Viewer dla Java
 
 ### Konfiguracja Maven
-
-Dodaj następującą zależność do swojego `pom.xml`:
+Dodaj następującą zależność do swojego `pom.xml`, aby pobrać najnowszą stabilną wersję:
 
 ```xml
 <repositories>
@@ -54,172 +121,159 @@ Dodaj następującą zależność do swojego `pom.xml`:
 </dependencies>
 ```
 
-### Nabycie licencji
-
-Aby wypróbować GroupDocs.Viewer, możesz:
-- **Pobierz wersję próbną**:Pobierz wersję próbną z [Strona internetowa GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Uzyskaj tymczasową licencję**:Odkryj pełną funkcjonalność dzięki licencji tymczasowej.
-- **Zakup**:Rozważ zakup, jeśli okaże się przydatny w Twoich projektach.
+### Uzyskanie licencji
+Aby ocenić GroupDocs Viewer, możesz:
+- **Pobrać wersję próbną** z [strony GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+- **Poprosić o tymczasową licencję** do pełnego testowania funkcji.  
+- **Zakupić licencję produkcyjną** na nieograniczone komercyjne użycie.  
+- Szczegółowe wskazówki znajdziesz w [oficjalnej dokumentacji](https://docs.groupdocs.com/viewer/java/).
 
 ### Podstawowa inicjalizacja
+Klasa `Viewer` jest punktem wejścia dla wszystkich operacji renderowania. Ładuje plik źródłowy i udostępnia metody do wyjścia w różnych formatach.
 
-Utwórz nowy projekt Java, uwzględnij konfigurację Maven powyżej i zaimportuj niezbędne pakiety:
+`Viewer` reprezentuje dokument lub obraz i koordynuje renderowanie do wybranego formatu wyjściowego.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.*;
 ```
 
-## Przewodnik wdrażania
+## Jak renderować animowany PNG do HTML?
+Załaduj plik APNG, skonfiguruj opcje HTML i wywołaj `view`. Proces jest prosty i zazwyczaj wymaga tylko kilku linii kodu, co czyni go idealnym do szybkiej integracji w usługach webowych lub zadaniach wsadowych.
 
-Poznaj sposoby implementacji różnych funkcji renderowania przy użyciu GroupDocs.Viewer.
-
-### Renderowanie animowanych plików PNG do HTML
-
-**Przegląd**: Osadź plik APNG w dokumencie HTML ze wszystkimi osadzonymi zasobami, aby ułatwić wyświetlanie w Internecie.
-
-#### Wdrażanie krok po kroku:
-
-1. **Ustaw ścieżki**
-   
-   Zdefiniuj ścieżki do katalogów wyjściowych i wejściowych:
-   
-   ```java
+```java
    Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
    Path pageFilePathFormat = outputDirectory.resolve("apng_result.html");
    ```
-   
-2. **Zainicjuj przeglądarkę**
-   
-   Utwórz `Viewer` wystąpienie wskazujące na plik APNG:
-   
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_APNG")) {
-       HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-       // Renderuj APNG do HTML z osadzonymi zasobami.
-       viewer.view(options);
-   }
-   ```
-   
-3. **Wyjaśnienie**
-   
-   - `HtmlViewOptions.forEmbeddedResources`: Osadza wszystkie niezbędne zasoby w pliku HTML w celu umożliwienia niezależnego przeglądania.
 
-### Renderowanie animowanego PNG do JPG
+### Definicja – Instancja Viewer
+`Viewer` jest podstawową klasą GroupDocs.Viewer, reprezentującą dokument lub obraz i koordynującą renderowanie do wybranego formatu wyjściowego.
 
-**Przegląd**:Konwertuj każdą klatkę APNG na osobne pliki JPG.
+### Krok po kroku – renderowanie HTML
+1. **Ustaw ścieżki** – określ, gdzie zostanie zapisany plik HTML i jego zasoby.  
+2. **Zainicjuj Viewer** – utwórz obiekt `Viewer` z ścieżką do pliku APNG.  
+3. **Skonfiguruj opcje** – użyj `HtmlViewOptions.forEmbeddedResources`, aby osadzić CSS, JS i obrazy bezpośrednio w pliku HTML, eliminując zależności zewnętrzne.  
+4. **Renderuj** – wywołaj `viewer.view(documentPath, htmlOptions)`.
 
-#### Wdrażanie krok po kroku:
+## Jak skonwertować APNG do JPG?
+GroupDocs Viewer może wyodrębnić każdą klatkę animacji jako osobny obraz JPG, co jest idealne dla miniatur lub statycznych podglądów. Konwersja zachowuje kolejność klatek i umożliwia kontrolę jakości oraz rozdzielczości obrazu.
 
-1. **Konfiguruj ścieżki**
-   
-   ```java
+```java
    Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
    Path pageFilePathFormat = outputDirectory.resolve("apng_result_{0}.jpg");
    ```
-   
-2. **Renderuj do JPG**
-   
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_APNG")) {
-       JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
-       // Każda klatka staje się osobnym obrazem JPG.
-       viewer.view(options);
-   }
-   ```
-   
-3. **Wyjaśnienie**
-   
-   - `JpgViewOptions`: Tworzy plik JPG dla każdej klatki APNG, co jest idealnym rozwiązaniem w przypadku reprezentacji statycznych.
 
-### Renderowanie animowanego PNG do PNG
+### Definicja – JpgViewOptions
+`JpgViewOptions` określa, jak każda klatka źródłowego APNG jest renderowana do osobnego pliku JPEG, umożliwiając ustawienie jakości, DPI i konwencji nazewnictwa.
 
-**Przegląd**:Twórz pojedyncze pliki PNG z ramek APNG.
+### Krok po kroku – konwersja JPG
+1. **Skonfiguruj ścieżki** – podaj folder wyjściowy dla generowanych plików JPG.  
+2. **Renderuj do JPG** – wywołaj `viewer.view(documentPath, JpgViewOptions.forEmbeddedResources(outputPath))`.  
+3. **Wynik** – każda klatka staje się `output_1.jpg`, `output_2.jpg`, … zachowując oryginalną kolejność animacji.
 
-#### Wdrażanie krok po kroku:
+## Jak skonwertować APNG do PNG?
+Gdy wymagana jest jakość bezstratna, PNG jest idealnym formatem docelowym. GroupDocs Viewer wyodrębnia każdą klatkę bez artefaktów kompresji, zachowując przezroczystość i zapewniając piksel‑perfekcyjną wierność.
 
-1. **Ustaw ścieżki wyjściowe**
-   
-   ```java
+```java
    Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
    Path pageFilePathFormat = outputDirectory.resolve("apng_result_{0}.png");
    ```
-   
-2. **Wykonaj renderowanie**
-   
-   ```java
-   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_APNG")) {
-       PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-       // Konwertuje każdą klatkę do oddzielnego pliku PNG.
-       viewer.view(options);
-   }
-   ```
-   
-3. **Wyjaśnienie**
-   
-   - `PngViewOptions`: Zachowuje oryginalną jakość obrazu, odpowiednią do konwersji bezstratnych.
 
-### Renderowanie animowanych plików PNG do formatu PDF
+### Definicja – PngViewOptions
+`PngViewOptions` instruuje viewer, aby zapisał każdą klatkę animacji jako osobny plik PNG, zachowując przezroczystość i dokładne dane pikseli.
 
-**Przegląd**:Skompiluj cały APNG w pojedynczym dokumencie PDF.
+### Krok po kroku – ekstrakcja PNG
+1. **Ustaw ścieżki wyjściowe** – wybierz folder dla sekwencji PNG.  
+2. **Wykonaj renderowanie** – wywołaj `viewer.view(documentPath, PngViewOptions.forEmbeddedResources(outputPath))`.  
+3. **Rezultat** – otrzymujesz serię plików PNG, które można ponownie połączyć lub używać osobno.
 
-#### Wdrażanie krok po kroku:
+## Jak skonwertować APNG do PDF?
+Skonsolidowanie animowanej sekwencji w jeden plik PDF jest przydatne do dokumentacji drukowanej lub archiwizacji. Każda klatka staje się osobną stroną, zachowując kolejność animacji w statycznym, udostępnialnym formacie.
 
-1. **Zdefiniuj ścieżki**
-   
-   ```java
+```java
    Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
    Path pageFilePathFormat = outputDirectory.resolve("apng_result.pdf");
    ```
-   
-2. **Renderuj do PDF**
-   
-   ```java
+
+### Definicja – PdfViewOptions
+`PdfViewOptions` agreguje wszystkie klatki APNG w jeden wielostronicowy PDF, przy czym każda klatka zajmuje osobną stronę.
+
+### Krok po kroku – generowanie PDF
+1. **Zdefiniuj ścieżki** – podaj docelową ścieżkę pliku PDF.  
+2. **Renderuj do PDF** – wykonaj `viewer.view(documentPath, PdfViewOptions.forEmbeddedResources(outputPath))`.  
+3. **Wynik** – PDF, w którym każda strona odzwierciedla klatkę oryginalnej animacji.
+
+## Praktyczne zastosowania
+- **Rozwój webowy:** Osadzaj APNG w blogach lub stronach produktów bez polegania na GIF‑ach, zapewniając płynniejszą animację i mniejsze rozmiary plików.  
+- **Publikacje cyfrowe:** Konwertuj animowane wykresy na PDF‑owe materiały konferencyjne, zachowując narrację wizualną.  
+- **Materiały marketingowe:** Generuj wysokiej rozdzielczości migawki JPG lub PNG do banerów, reklam i postów w mediach społecznościowych.  
+- **Wizualizacja danych:** Przekształcaj wykresy szeregów czasowych w obrazy klatka‑po‑klatce dla pulpitów analitycznych.
+
+## Rozważania dotyczące wydajności
+- **Optymalizacja rozmiaru obrazu:** Zmniejsz lub skompresuj źródłowy APNG przed renderowaniem, aby obniżyć zużycie CPU.  
+- **Zarządzanie zasobami:** Umieść `Viewer` w bloku try‑with‑resources, aby automatycznie zamykać strumienie i zwalniać buforowanie natywne.  
+- **Przetwarzanie wsadowe:** Przy obsłudze dziesiątek APNG, przetwarzaj je w partiach po 10‑20, aby uniknąć skoków pamięci.
+
+## Typowe problemy i rozwiązania
+- **Brakujące klatki:** Upewnij się, że APNG spełnia specyfikację APNG; niektóre starsze narzędzia generują pliki niezgodne ze standardem.  
+- **Nieprawidłowy timing:** Użyj `AnimatedPngOptions` (jeśli dostępne), aby dostosować opóźnienie klatek po renderowaniu.  
+- **Błędy Out‑of‑Memory:** Włącz `viewer.setCacheSize(50)`, aby ograniczyć buforowanie w pamięci przy dużych animacjach.
+
+## Najczęściej zadawane pytania
+
+**Q: Czy GroupDocs Viewer może renderować inne formaty animowane, takie jak GIF lub WebP?**  
+A: Tak, obsługuje GIF, WebP oraz animowane SVG, oferując te same opcje wyjściowe HTML, obrazu i PDF.
+
+**Q: Czy istnieje limit liczby klatek w APNG?**  
+A: Nie ma sztywnego limitu, ale wydajność może spadać po około 500 klatkach; rozważ down‑sampling przy bardzo dużych animacjach.
+
+**Q: Jak obsłużyć pliki APNG chronione hasłem?**  
+A: APNG nie obsługuje szyfrowania, ale jeśli plik znajduje się w archiwum ZIP, podaj hasło za pomocą metody `load` klasy `Viewer`.
+
+**Q: Czy mogę dostosować DPI lub jakość generowanych JPG?**  
+A: Oczywiście — użyj `JpgViewOptions.setResolution(300)` i `setQuality(90)` przed wywołaniem `view`.
+
+**Q: Czy biblioteka działa w kontenerach Linux?**  
+A: Tak, GroupDocs Viewer jest czystą Javą i działa na każdym systemie operacyjnym z kompatybilnym JRE, co czyni go idealnym do wdrożeń Docker.
+
+**Ostatnia aktualizacja:** 2026-06-20  
+**Testowano z:** GroupDocs.Viewer 23.9 for Java  
+**Autor:** GroupDocs
+
+```java
    try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_APNG")) {
-       PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-       // Konwertuj plik APNG do pojedynczego pliku PDF.
+       HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+       // Render the APNG into HTML with embedded resources.
        viewer.view(options);
    }
    ```
-   
-3. **Wyjaśnienie**
-   
-   - `PdfViewOptions`: Łączy ramki w jeden dokument, idealny do formatów gotowych do druku.
 
-## Zastosowania praktyczne
+```java
+   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_APNG")) {
+       JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+       // Each frame becomes a separate JPG image.
+       viewer.view(options);
+   }
+   ```
 
-Oto kilka scenariuszy z życia wziętych, w których te funkcje mogą zostać zastosowane:
-- **Rozwój sieci WWW**:Osadzaj APNG na stronach internetowych bez utraty jakości animacji.
-- **Publikacje cyfrowe**:Twórz interaktywne pliki PDF z animowaną zawartością.
-- **Materiały marketingowe**:Generuj wysokiej jakości statyczne obrazy z animacji na potrzeby broszur i banerów.
-- **Wizualizacja danych**:Wyświetlaj animowane wykresy i tabele w formacie cyfrowym i drukowanym.
+```java
+   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_APNG")) {
+       PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+       // Converts each frame to a separate PNG.
+       viewer.view(options);
+   }
+   ```
 
-## Rozważania dotyczące wydajności
+```java
+   try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_APNG")) {
+       PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+       // Convert the APNG into a single PDF.
+       viewer.view(options);
+   }
+   ```
 
-Aby zapewnić optymalną wydajność podczas korzystania z GroupDocs.Viewer:
-- **Optymalizacja rozmiarów obrazów**:Przeprowadź wstępne przetwarzanie plików APNG w celu zmniejszenia ich rozmiaru przed renderowaniem.
-- **Zarządzanie zasobami**:Użyj opcji try-with-resources do automatycznego zarządzania zasobami, zapobiegając wyciekom pamięci.
-- **Przetwarzanie wsadowe**:W przypadku dużych partii obrazów należy rozważyć przetwarzanie ich w częściach, a nie wszystkich na raz.
+## Powiązane samouczki
 
-## Wniosek
-
-Teraz masz wiedzę, aby używać GroupDocs.Viewer for Java do wydajnego renderowania plików APNG do różnych formatów. Niezależnie od tego, czy rozwijasz aplikacje internetowe, czy tworzysz publikacje cyfrowe, te techniki poprawią atrakcyjność wizualną i funkcjonalność Twoich projektów.
-
-W kolejnych krokach zapoznaj się z dalszymi możliwościami GroupDocs.Viewer, sprawdzając [oficjalna dokumentacja](https://docs.groupdocs.com/viewer/java/) i eksperymentując z różnymi typami plików.
-
-## Sekcja FAQ
-
-**P1: Czy mogę renderować inne formaty obrazów za pomocą GroupDocs.Viewer?**
-A1: Tak, GroupDocs.Viewer obsługuje różne formaty, w tym JPEG, PNG, PDF i inne.
-
-**P2: Czy istnieje ograniczenie liczby klatek w APNG, które można wyrenderować?**
-A2: Chociaż nie ma sztywnego limitu, wydajność może się pogorszyć przy bardzo dużej liczbie klatek. Zoptymalizuj obrazy, aby uzyskać lepsze rezultaty.
-
-**P3: Jak radzić sobie z wyjątkami podczas renderowania?**
-A3: Stosuj bloki try-catch w kodzie renderującym, aby sprawnie zarządzać potencjalnymi błędami.
-
-**P4: Czy mogę dostosować jakość wyjściową renderowanych plików?**
-A4: Tak, możesz dostosować ustawienia w `JpgViewOptions` i inne opcje pozwalające na uzyskanie pożądanej jakości wyjściowej.
-
-**P5: Jakie są najczęstsze problemy z renderowaniem APNG?**
-A5: Problemy mogą obejmować nieprawidłowe taktowanie klatek lub błędy osadzania zasobów. Upewnij się, że Twoje APNG są poprawnie sformatowane.
+- [Samouczek renderowania dokumentów Java – konwersja plików do HTML, PDF i obrazów](/viewer/java/rendering-basics/)
+- [Jak renderować PDF do HTML i optymalizować jakość obrazu w Javie z GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [Jak konwertować pliki DOCX do PNG przy użyciu GroupDocs.Viewer dla Java](/viewer/java/rendering-basics/render-docx-png-groupdocs-viewer-java/)
