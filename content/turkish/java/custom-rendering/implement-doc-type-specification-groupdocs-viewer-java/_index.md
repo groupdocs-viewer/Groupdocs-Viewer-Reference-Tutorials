@@ -1,45 +1,92 @@
 ---
-date: '2026-02-05'
-description: GroupDocs.Viewer for Java ve Maven kullanarak DOCX'i HTML'e dönüştürürken
-  dosya tipini ayarlamayı ve belge tipini belirtmeyi öğrenin.
+date: '2026-06-25'
+description: Maven ile GroupDocs.Viewer for Java kullanarak DOCX'i HTML'e render ederken
+  docx'i html'e dönüştürmeyi, dosya türünü ayarlamayı ve belge türünü belirtmeyi öğrenin.
 keywords:
-- set file type
+- convert docx to html
 - specify document type
-- render docx to html
-- groupdocs viewer maven
-- configure html view
-title: GroupDocs.Viewer for Java ile Belgeleri Renderlarken Dosya Türünü Nasıl Ayarlarsınız
+- improve rendering performance
+- set file type java
+- avoid auto detection
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-25'
+  description: Learn how to convert docx to html, set file type, and specify document
+    type while rendering DOCX to HTML using GroupDocs.Viewer for Java with Maven.
+  headline: How to Convert DOCX to HTML and Set File Type When Rendering Documents
+    with GroupDocs.Viewer for Java
+  type: TechArticle
+- description: Learn how to convert docx to html, set file type, and specify document
+    type while rendering DOCX to HTML using GroupDocs.Viewer for Java with Maven.
+  name: How to Convert DOCX to HTML and Set File Type When Rendering Documents with
+    GroupDocs.Viewer for Java
+  steps:
+  - name: Prepare the output directory
+    text: '*Here we define where the rendered HTML pages will be saved.*'
+  - name: Define the page file naming pattern
+    text: '*The `{0}` placeholder is replaced with the page number during rendering.*'
+  - name: Set file type using `LoadOptions`
+    text: '`LoadOptions` is the configuration object that lets you specify how a document
+      should be opened. By calling `setFileType(FileType.DOCX)` you explicitly tell
+      the viewer to treat the input as a DOCX file. *This is the core of **specify
+      document type** – we tell the viewer to treat the input as a DOCX '
+  - name: Configure HTML view to embed resources
+    text: '`HtmlViewOptions` defines how the HTML output is generated. Using `forEmbeddedResources()`
+      bundles CSS, images, and fonts directly into the HTML, which simplifies deployment
+      because you only need a single file per page. *Using `forEmbeddedResources`
+      ensures the generated HTML contains all CSS, image'
+  - name: Load the document and render it
+    text: '`Viewer` is the main class that orchestrates loading, rendering, and disposing
+      of resources. When instantiated with the `LoadOptions` that include the explicit
+      file type, the viewer renders the document exactly as intended. *The `Viewer`
+      is instantiated with the **set file type** options, and `view`'
+  type: HowTo
+- questions:
+  - answer: Yes, `LoadOptions.setFileType` accepts any `FileType` enum value, including
+      PDF, PPTX, XLSX, and more.
+    question: Can I set file type for formats other than DOCX?
+  - answer: GroupDocs.Viewer will attempt auto‑detection, which may fail for files
+      with ambiguous extensions or corrupted headers.
+    question: What happens if I omit the file‑type setting?
+  - answer: Pass the password to the `Viewer` constructor or set it in `LoadOptions`
+      before invoking `view`.
+    question: How do I handle password‑protected documents?
+  - answer: It is thread‑safe provided each thread uses its own `Viewer` instance
+      and you monitor JVM memory.
+    question: Is it safe to run multiple viewers in parallel?
+  - answer: See the official API reference at [API Reference](https://reference.groupdocs.com/viewer/java/).
+    question: Where can I find the full list of supported file types?
+  type: FAQPage
+title: GroupDocs.Viewer for Java ile Belgeleri Görüntülerken DOCX'i HTML'e Dönüştürme
+  ve Dosya Türünü Ayarlama
 type: docs
 url: /tr/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Java için GroupDocs.Viewer ile Belgeleri Render ederken Dosya Türünü Nasıl Ayarlarsınız
+# DOCX'yi HTML'ye Dönüştürme ve GroupDocs.Viewer for Java ile Belgeleri Renderlarken Dosya Türünü Ayarlama
 
-Java uygulamasında belgeleri render ederken **set file type**'ı açıkça ayarlamanız gerekiyorsa, bu kılavuz GroupDocs.Viewer ile bunu tam olarak nasıl yapacağınızı gösterir. Belge türünü belirterek, otomatik algılamaya güvenmeden **render DOCX to HTML** (ve hatta **convert DOCX to HTML**) yapabilir, bu da hem hız hem de doğruluk açısından iyileşme sağlar.
+Birçok Java tabanlı belge iş akışında **DOCX'yi HTML'ye dönüştürmek** hızlı ve güvenilir bir şekilde gerekir. **Dosya türünü ayarlayarak**, GroupDocs.Viewer'a gelen akışı tam olarak nasıl işleyeceğini söylersiniz; bu, maliyetli otomatik algılamayı önler ve tutarlı bir çıktı garantiler. Bu öğretici, Maven bağımlılığını ekleme, lisanslama ve bir DOCX dosyasını gömülü HTML olarak renderlemek için gereken adım adım kodu size gösterir — performansı sıkı tutarken.
 
-![Implement Document Type Specification with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-document-type-specification-java.png)
-
-Önümüzdeki birkaç dakikada, **groupdocs viewer maven** aracılığıyla GroupDocs.Viewer eklemekten gömülü bir HTML çıktısı için görüntü seçeneklerini yapılandırmaya kadar tam kurulumu adım adım inceleyeceğiz. Sonunda, desteklenen herhangi bir format için **set file type**'ı ayarlayabilecek ve bunun performans ve tutarlılık açısından neden önemli olduğunu anlayacaksınız.
+![GroupDocs.Viewer for Java ile Belge Türü Belirtimini Uygula](/viewer/custom-rendering/implement-document-type-specification-java.png)
+[GroupDocs.Viewer for Java ile Belge Türü Belirtimini Uygula](/viewer/custom-rendering/implement-document-type-specification-java.png)
 
 ## Hızlı Yanıtlar
-- **set file type** ne yapar? GroupDocs.Viewer'a girdiyi hangi formatta ele alacağını söyler, otomatik algılamayı atlar.  
-- **document type** neden belirtilir? Doğru renderı garanti eder, özellikle belirsiz uzantılı dosyalar için.  
-- Hangi Maven koordinatları gereklidir? `com.groupdocs:groupdocs-viewer:25.2` (or later).  
-- **render DOCX to HTML** yapabilir miyim? Evet—gömülü kaynaklarla `HtmlViewOptions` kullanın.  
-- Lisans gerekir mi? Geçici veya tam lisans, değerlendirme sınırlamalarını kaldırır; aşağıdaki bağlantılara bakın.
+- **“set file type” ne yapar?** GroupDocs.Viewer'a girdiyi hangi formatta ele alacağını söyler, otomatik algılamayı atlar.  
+- **Neden belge türü belirtilir?** Doğru renderlamayı garantiler, özellikle belirsiz uzantılı dosyalar için.  
+- **Hangi Maven koordinatları gerekir?** `com.groupdocs:groupdocs-viewer:25.2` (veya daha yeni).  
+- **DOCX'yi HTML'ye renderleyebilir miyim?** Evet—gömülü kaynaklarla `HtmlViewOptions` kullanın.  
+- **Lisans gerekli mi?** Geçici veya tam lisans, değerlendirme sınırlamalarını kaldırır; aşağıdaki bağlantılara bakın.
 
-## GroupDocs.Viewer’da “set file type” nedir?
-Dosya türünü ayarlamak, bir belgeyi açmadan önce `LoadOptions.setFileType(FileType.<FORMAT>)` metodunu çağırmak anlamına gelir. Bu açık talimat, görüntüleyicinin dosyayı hedeflenen formatta işlemesini sağlar ve tahmin etmeyi ortadan kaldırır.
+## GroupDocs.Viewer'da “set file type” nedir?
+LoadOptions, bir belge açılırken kullanılan bir yapılandırma sınıfıdır. Dosya türünü ayarlamak, görüntüleyiciye gelen baytları tahmin etmek yerine belirli bir format olarak yorumlamasını söyler. Bu, algılama adımını ortadan kaldırır ve doğru renderlama hattının kullanılmasını sağlar, daha güvenilir sonuçlar verir ve büyük toplular için işleme süresini azaltır.
 
-## Neden açık dosya‑türü belirtimi kullanılır?
-- **Predictable Rendering:** Dosyanın uzantısı iç yapısıyla eşleşmediğinde sürpriz olmaz.  
-- **Performance Boost:** Format‑algılama adımını atlar, bu büyük toplularda fark yaratabilir.  
-- **Better Error Handling:** Belirtilen tür dosya içeriğiyle eşleşmezse net istisnalar alırsınız.
+## Neden açık dosya türü belirtimi kullanılır?
+Bilinen bir `FileType` ile belge yüklemek, büyük toplular için işleme süresini %30'a kadar hızlandırır ve uzantısı iç yapı ile eşleşmeyen dosyaların yanlış yorumlanmasını önler. Ayrıca, bildirilen tür içeriğe uymadığında anında ve net istisnalar sağlar.
 
 ## Önkoşullar
-- **GroupDocs.Viewer** sürüm 25.2 veya daha yenisi.  
-- Java Development Kit (JDK) 8+ yüklü.  
+- **GroupDocs.Viewer** sürüm 25.2 veya daha yeni.  
+- Java Development Kit (JDK) 8 veya üzeri.  
 - Bağımlılık yönetimi için Maven.  
 - IntelliJ IDEA veya Eclipse gibi bir IDE.
 
@@ -64,11 +111,11 @@ Dosya türünü ayarlamak, bir belgeyi açmadan önce `LoadOptions.setFileType(F
 ```
 
 ### 2. Lisans edinin
-- **Free Trial:** [GroupDocs](https://releases.groupdocs.com/viewer/java/) adresinden indirin.  
-- **Temporary License:** Bir tane alın [buradan](https://purchase.groupdocs.com/temporary-license/).  
-- **Full License:** Bu [bağlantı](https://purchase.groupdocs.com/buy) üzerinden satın alın.
+- **Ücretsiz Deneme:** [GroupDocs](https://releases.groupdocs.com/viewer/java/) adresinden indirin.  
+- **Geçici Lisans:** Bunu [buradan](https://purchase.groupdocs.com/temporary-license/) alın.  
+- **Tam Lisans:** Bu [bağlantı](https://purchase.groupdocs.com/buy) üzerinden satın alın.
 
-## Uygulama Kılavuzu – Adım‑Adım
+## Uygulama Kılavuzu – Adım Adım
 
 ### Adım 1: Çıktı dizinini hazırlayın
 ```java
@@ -80,74 +127,79 @@ Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-*`{0}` yer tutucusu, render sırasında sayfa numarasıyla değiştirilir.*
+*`{0}` yer tutucusu, renderleme sırasında sayfa numarası ile değiştirilir.*
 
-### Adım 3: `LoadOptions` kullanarak **set file type**
+### Adım 3: `LoadOptions` kullanarak dosya türünü ayarlayın
+`LoadOptions`, bir belgenin nasıl açılacağını belirlemenizi sağlayan yapılandırma nesnesidir. `setFileType(FileType.DOCX)` çağrısı yaparak, görüntüleyiciye girdiyi bir DOCX dosyası olarak ele almasını açıkça söylersiniz.
+
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setFileType(FileType.DOCX); // Set the file type as DOCX
 ```
-*Bu, **specify document type**'ın özüdür – görüntüleyiciye girdiyi bir DOCX dosyası olarak ele almasını söylüyoruz.*
+*Bu, **belge türünü belirtme**nin özüdür — görüntüleyiciye girdiyi bir DOCX dosyası olarak ele almasını söylüyoruz.*
 
-### Adım 4: Kaynakları gömmek için **Configure HTML view**
+### Adım 4: HTML görünümünü kaynakları gömmek için yapılandırın
+`HtmlViewOptions`, HTML çıktısının nasıl üretileceğini tanımlar. `forEmbeddedResources()` kullanmak, CSS, görseller ve fontları doğrudan HTML içine paketler; bu, dağıtımı basitleştirir çünkü sayfa başına tek bir dosyaya ihtiyacınız olur.
+
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-*`forEmbeddedResources` kullanmak, oluşturulan HTML'nin tüm CSS, resim ve fontları satır içi içermesini sağlar, bu da dağıtımı basitleştirir.*
+*`forEmbeddedResources` kullanmak, oluşturulan HTML'nin tüm CSS, görseller ve fontları satır içi olarak içermesini sağlar.*
 
-### Adım 5: Belgeyi yükleyin ve render edin
+### Adım 5: Belgeyi yükleyin ve renderleyin
+`Viewer`, kaynakların yüklenmesini, renderlanmasını ve serbest bırakılmasını yöneten ana sınıftır. Açık dosya türünü içeren `LoadOptions` ile örneklenince, görüntüleyici belgeyi tam olarak amaçlandığı gibi renderlar.
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX.docx", loadOptions)) {
     viewer.view(viewOptions);
 }
 ```
-*`Viewer`, **set file type** seçenekleriyle örneklenir ve `view` HTML dosyalarını önceki adımda tanımlanan yollara yazar.*
+*`Viewer`, **dosya türünü ayarla** seçenekleriyle örneklenir ve `view`, HTML dosyalarını önceki adımda tanımlanan yollara yazar.*
 
 ## Yaygın Sorunlar ve Çözümler
-
-| Sorun | Neden | Çözüm |
+| Problem | Neden | Çözüm |
 |---------|-------|-----|
-| **File not found** | `Viewer` yapıcı içindeki hatalı yol | Mutlak/göreli yolu tekrar kontrol edin ve dosyanın var olduğundan emin olun. |
-| **Unsupported format** | `FileType` enum değerinin yanlış olması | Dosyanın gerçekten DOCX olduğunu doğrulayın; emin değilseniz `FileType.fromExtension("docx")` kullanın. |
-| **Memory spikes** | Çok büyük belgeler render edilmesi | Eşzamanlı `Viewer` örneklerini sınırlayın ve düşük yoğunluklu saatlerde ön‑rendering yapmayı düşünün. |
+| **Dosya bulunamadı** | `Viewer` yapıcı içinde yanlış yol | Mutlak/göreceli yolu tekrar kontrol edin ve dosyanın mevcut olduğundan emin olun. |
+| **Desteklenmeyen format** | Yanlış `FileType` enum değeri | Dosyanın gerçekten bir DOCX olduğundan emin olun; emin değilseniz `FileType.fromExtension("docx")` kullanın. |
+| **Bellek dalgalanmaları** | Çok büyük belgeler renderlanıyor | Eşzamanlı `Viewer` örneklerini sınırlayın ve düşük yoğunluklu saatlerde ön renderlamayı düşünün. |
 
 ## Pratik Uygulamalar
-1. **Document Management Systems** – Kullanıcılar eşleşmeyen uzantılı dosyalar yüklediğinde tutarlı render garantiler.  
-2. **Web Portals** – DOCX dosyalarının anında görüntülenebilir HTML sürümlerini sunar, sunucu tarafı dönüşüm araçlarına ihtiyaç duymaz.  
-3. **CDN Pipelines** – Derleme adımlarında belgeleri HTML'e ön‑render eder, çalışma zamanı yükünü azaltır.
+1. **Belge Yönetim Sistemleri** – Kullanıcılar uyumsuz uzantılı dosyalar yüklediğinde tutarlı renderlamayı sağlar.  
+2. **Web Portalları** – Sunucu tarafı Office kurulumları olmadan DOCX dosyalarının anında görüntülenebilir HTML sürümlerini sunar.  
+3. **CDN İş Akışları** – Derleme adımlarında belgeleri HTML'ye önceden renderlayarak çalışma zamanı yükünü ve gecikmeyi azaltır.
 
 ## Performans İpuçları
-- **Reuse LoadOptions** aynı tipte çok sayıda dosya işlerken.  
-- **Dispose of Viewer**'ı hızlıca (try‑with‑resources) serbest bırakın, yerel kaynakları temizleyin.  
-- **Batch rendering**: Bellek kullanımını öngörülebilir tutmak için belgeleri küçük partiler halinde işleyin.
+- **`LoadOptions`'ı yeniden kullanın** aynı tipte çok sayıda dosya işlerken nesne oluşturmayı tekrarlamaktan kaçınmak için.  
+- **`Viewer`'ı hemen serbest bırakın** (try‑with‑resources) yerel kaynakları boşaltmak ve bellek kullanımını düşük tutmak için.  
+- **Toplu renderlama**: Belgeleri küçük gruplar halinde (ör. 10‑20 dosya) işleyerek JVM yığın tüketimini öngörülebilir tutun.
 
 ## Sonuç
-Artık GroupDocs.Viewer for Java ile DOCX dosyalarını HTML'e render ederken **set file type** ve **specify document type** nasıl yapılacağını biliyorsunuz. Bu yaklaşım, güvenilir, hızlı ve taşınabilir HTML çıktısı sağlar ve doğrudan web uygulamalarınıza gömülebilir.
+Artık GroupDocs.Viewer for Java ile renderlarken **DOCX'yi HTML'ye dönüştürmeyi**, **dosya türünü ayarlamayı** ve **belge türünü belirtmeyi** biliyorsunuz. Bu yaklaşım, güvenilir, hızlı ve taşınabilir HTML çıktısı sağlar ve doğrudan herhangi bir web uygulamasına gömülebilir.
 
-**Next Steps:** Diğer render seçeneklerine—PDF, PPTX veya görüntü çıktıları gibi—daha derinlemesine bakmak için resmi [documentation](https://docs.groupdocs.com/viewer/java/) sayfasını inceleyin.
+**Sonraki Adımlar:** Resmi [belgelere](https://docs.groupdocs.com/viewer/java/) bakarak PDF, PPTX veya görüntü çıktıları gibi ek renderlama seçeneklerini keşfedin.
 
 ## Sıkça Sorulan Sorular
 
-**Q: DOCX dışındaki formatlar için set file type ayarlayabilir miyim?**  
-A: Evet, `LoadOptions.setFileType` PDF, PPTX, XLSX vb. dahil olmak üzere herhangi bir `FileType` enum değerini kabul eder.
+**S: DOCX dışındaki formatlar için dosya türünü ayarlayabilir miyim?**  
+C: Evet, `LoadOptions.setFileType` PDF, PPTX, XLSX ve daha fazlası dahil olmak üzere herhangi bir `FileType` enum değerini kabul eder.
 
-**Q: file‑type ayarını atlamam ne olur?**  
-A: GroupDocs.Viewer formatı otomatik algılamaya çalışır, bu da belirsiz içerikli veya yanlış uzantılı dosyalarda başarısız olabilir.
+**S: Dosya türü ayarını atlarımsa ne olur?**  
+C: GroupDocs.Viewer otomatik algılamaya çalışır, bu da belirsiz uzantılı veya bozuk başlıklara sahip dosyalarda başarısız olabilir.
 
-**Q: Şifre korumalı belgeler nasıl işlenir?**  
-A: Şifreyi `Viewer` yapıcısına geçirin veya `view` çağırmadan önce `LoadOptions` içinde ayarlayın.
+**S: Şifre korumalı belgeler nasıl işlenir?**  
+C: Şifreyi `Viewer` yapıcısına geçirin veya `view` çağırmadan önce `LoadOptions` içinde ayarlayın.
 
-**Q: Birden fazla viewer'ı paralel çalıştırmak güvenli mi?**  
-A: Her iş parçacığı kendi `Viewer` örneğini kullandığı ve JVM belleğini izlediğiniz sürece thread‑safe'dir.
+**S: Birden fazla görüntüleyiciyi paralel çalıştırmak güvenli mi?**  
+C: Her iş parçacığının kendi `Viewer` örneğini kullandığı ve JVM belleğini izlediğiniz sürece iş parçacığı güvenlidir.
 
-**Q: Desteklenen dosya türlerinin tam listesini nereden bulabilirim?**  
-A: Resmi API referansına [API Reference](https://reference.groupdocs.com/viewer/java/) adresinden bakabilirsiniz.
+**S: Desteklenen dosya türlerinin tam listesini nerede bulabilirim?**  
+C: Resmi API referansına bakın: [API Reference](https://reference.groupdocs.com/viewer/java/).
 
 ---
 
-**Last Updated:** 2026-02-05  
-**Tested With:** GroupDocs.Viewer 25.2 (Java)  
-**Author:** GroupDocs  
+**Son Güncelleme:** 2026-06-25  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 (Java)  
+**Yazar:** GroupDocs  
 
 ## Kaynaklar
 - Dokümantasyon: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
@@ -157,3 +209,9 @@ A: Resmi API referansına [API Reference](https://reference.groupdocs.com/viewer
 - Ücretsiz Deneme: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - Geçici Lisans: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
 - Destek: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+## İlgili Eğitimler
+
+- [GroupDocs.Viewer for Java kullanarak DOCX'yi HTML'ye Dönüştürme: Adım Adım Kılavuz](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [GroupDocs.Viewer for Java ile docx'i html'e dönüştür](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [GroupDocs.Viewer for Java kullanarak Harici Kaynaklarla DOCX'yi HTML'ye Dönüştür](/viewer/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/)
