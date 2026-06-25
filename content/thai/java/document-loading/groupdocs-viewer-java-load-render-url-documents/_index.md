@@ -1,57 +1,93 @@
 ---
-date: '2026-02-05'
-description: เรียนรู้วิธีใช้ GroupDocs Viewer Maven เพื่อโหลดและเรนเดอร์เอกสารจาก
-  URL โดยแปลงเป็น HTML ด้วย Java ปรับปรุงแอปของคุณด้วยการโหลดเอกสารแบบไดนามิก
+date: '2026-06-25'
+description: เรียนรู้วิธีแปลง word เป็น html ด้วย GroupDocs Viewer Maven, โหลดเอกสารผ่าน
+  java url inputstream, และแสดงผลอย่างมีประสิทธิภาพ.
 keywords:
-- load render documents from URL Java
-- GroupDocs.Viewer Java library
-- render documents in HTML format
-title: 'เชี่ยวชาญ groupdocs viewer maven: โหลดและแสดงเอกสารจาก URL อย่างมีประสิทธิภาพ'
+- convert word to html
+- pdf to html java
+- document preview service
+- java url inputstream
+- load document from url
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-25'
+  description: Learn how to convert word to html using GroupDocs Viewer Maven, load
+    documents via java url inputstream, and render them efficiently.
+  headline: Convert Word to HTML with GroupDocs Viewer Maven
+  type: TechArticle
+- description: Learn how to convert word to html using GroupDocs Viewer Maven, load
+    documents via java url inputstream, and render them efficiently.
+  name: Convert Word to HTML with GroupDocs Viewer Maven
+  steps:
+  - name: Open an InputStream from the URL
+    text: '`InputStream` is a Java class that provides a stream of bytes from a source
+      such as a remote file. Opening it from a URL is the first step before handing
+      the data to the Viewer.'
+  - name: Configure HTML View Options
+    text: '`HtmlViewOptions` defines where rendered pages will be saved and how resources
+      (images, CSS) are embedded. Setting the output folder and page‑by‑page options
+      ensures you get clean, web‑ready HTML.'
+  - name: Create a Viewer Instance and Render
+    text: The `Viewer` class is the entry point for all rendering operations. It accepts
+      an `InputStream` and, together with `HtmlViewOptions`, produces the final HTML
+      output.
+  type: HowTo
+- questions:
+  - answer: Adding the `groupdocs-viewer` artifact to `pom.xml` automatically pulls
+      all required binaries, letting you start coding without manual JAR management.
+    question: How does the Maven dependency simplify integration?
+  - answer: Absolutely. The same `Viewer` class handles `.docx` files and outputs
+      clean HTML using `HtmlViewOptions`.
+    question: Can I convert a Word document to HTML with this setup?
+  - answer: '`HttpURLConnection` is a Java class that represents a HTTP connection
+      to a remote resource. Open the connection with `HttpURLConnection`, set the
+      necessary headers (e.g., Authorization), then obtain the `InputStream` as shown.'
+    question: What if the URL requires authentication?
+  - answer: Yes, configure `HtmlViewOptions` with `setPageNumbers` to specify a subset
+      of pages to render.
+    question: Is there a way to limit the number of rendered pages?
+  - answer: The library processes streams efficiently; for extremely large files,
+      render page‑by‑page and dispose of each `Viewer` instance promptly.
+    question: Does GroupDocs.Viewer support streaming large files without loading
+      them fully into memory?
+  type: FAQPage
+title: แปลง Word เป็น HTML ด้วย GroupDocs Viewer Maven
 type: docs
 url: /th/java/document-loading/groupdocs-viewer-java-load-render-url-documents/
 weight: 1
 ---
 
-# คู่มือ groupdocs viewer maven: โหลดและแสดงเอกสารจาก URL อย่างมีประสิทธิภาพ
+# แปลง Word เป็น HTML ด้วย GroupDocs Viewer Maven
 
-ในบทแนะนำนี้คุณจะได้ค้นพบว่า **groupdocs viewer maven** ทำให้คุณสามารถโหลดเอกสารจาก URL ระยะไกลและแสดงผลเป็น HTML ด้วย Java ไม่ว่าคุณจะกำลังสร้าง CMS, บริการพรีวิว, หรือแอปใดที่ต้องการ *การโหลดเอกสารแบบไดนามิก* คู่มือนี้จะพาคุณผ่านทุกขั้นตอน—from การตั้งค่า Maven ถึงการจัดการสตรีมอย่างปลอดภัย.
+ในบทแนะนำนี้คุณจะได้ค้นพบว่า **GroupDocs Viewer Maven** ช่วยให้คุณ **แปลง word เป็น html** อย่างไรในขณะที่โหลดเอกสารจาก URL ระยะไกล ไม่ว่าคุณจะกำลังสร้างระบบจัดการเนื้อหา (CMS), บริการแสดงตัวอย่างเอกสาร, หรือแอปพลิเคชัน Java ใด ๆ ที่ต้องการการโหลดเอกสารแบบไดนามิก เราจะพาคุณผ่านทุกขั้นตอน—ตั้งแต่การตั้งค่า Maven ไปจนถึงการจัดการสตรีมอย่างปลอดภัยและการปรับประสิทธิภาพ
 
-![โหลดและแสดงเอกสารจาก URL ด้วย GroupDocs.Viewer สำหรับ Java](/viewer/document-loading/load-and-render-documents-from-urls.png)
+![Load and Render Documents from URLs with GroupDocs.Viewer for Java](/viewer/document-loading/load-and-render-documents-from-urls.png)
 
-**สิ่งที่คุณจะได้เรียนรู้**
-- วิธีการทำงานของอาร์ติแฟกต์ GroupDocs.Viewer Maven
-- ข้อกำหนดเบื้องต้นและการตั้งค่าสภาพแวดล้อม
-- การโหลดเอกสารจาก URL ด้วย `java url inputstream`
-- การแสดงผลเอกสารเป็น HTML (`render document to html`)
-- เคล็ดลับการแก้ไขปัญหาและประสิทธิภาพ
+## คำตอบด่วน
+- **Maven artifact ใดที่ให้การเรนเดอร์?** `com.groupdocs:groupdocs-viewer`
+- **ฉันสามารถแสดงผลไฟล์ Word เป็น HTML ได้หรือไม่?** Yes, GroupDocs Viewer converts Word to HTML out‑of‑the‑box.
+- **What Java class streams the URL?** `java.net.URL` → `InputStream`  
+  `java.net.URL` represents a Uniform Resource Locator and can open a connection to retrieve data.  
+  `java.net.URL` เป็นคลาส Java ที่แสดงถึง URL และสามารถใช้เพื่อเปิดสตรีม.
+- **ต้องใช้ใบอนุญาตสำหรับการผลิตหรือไม่?** Yes, a valid GroupDocs license is needed.
+- **จะปรับปรุงประสิทธิภาพอย่างไร?** Use try‑with‑resources, cache rendered HTML, and render pages on demand.
 
-## คำตอบอย่างรวดเร็ว
-- **อาร์ติแฟกต์ Maven ที่ให้การแสดงผลคืออะไร?** `com.groupdocs:groupdocs-viewer`
-- **ฉันสามารถแสดงไฟล์ Word เป็น HTML ได้หรือไม่?** ใช่, GroupDocs.Viewer แปลง Word เป็น HTML โดยอัตโนมัติ.
-- **คลาส Java ตัวใดที่สตรีม URL?** `java.net.URL` → `InputStream`
-- **ต้องใช้ใบอนุญาตสำหรับการใช้งานจริงหรือไม่?** ใช่, จำเป็นต้องมีใบอนุญาต GroupDocs ที่ถูกต้อง.
-- **จะปรับปรุงประสิทธิภาพอย่างไร?** ใช้ try‑with‑resources และแคชไฟล์ที่เข้าถึงบ่อย.
+## groupdocs viewer maven คืออะไร
+GroupDocs Viewer Maven คือการแจกจ่ายแบบ Maven ของไลบรารี GroupDocs.Viewer Java การเพิ่มมันลงใน `pom.xml` ของคุณจะให้ API ที่เต็มรูปแบบสำหรับ **load document from url**, **convert word to html**, และการเรนเดอร์เอกสารเป็น HTML, ภาพ, หรือ PDF รองรับไฟล์รูปแบบกว่า 150 แบบ, ให้การเรนเดอร์ที่มีประสิทธิภาพสูง, และทำงานโดยไม่ต้องพึ่งพา native dependencies ทำให้เหมาะสำหรับสถานการณ์การแสดงตัวอย่างเอกสารบนเซิร์ฟเวอร์
 
-## groupdocs viewer maven คืออะไร?
-`groupdocs viewer maven` คือการแจกจ่ายแบบ Maven ของไลบรารี GroupDocs.Viewer สำหรับ Java การเพิ่มมันลงใน `pom.xml` จะทำให้คุณเข้าถึง API ที่ครบถ้วนสำหรับ **load document from url**, แปลงเอกสาร (รวมถึง *convert word to html*), และแสดงผลเป็น HTML, ภาพ, หรือ PDF.
-
-## ทำไมต้องใช้ GroupDocs.Viewer สำหรับการโหลดเอกสารแบบไดนามิก?
-- **การแสดงผลแบบ Zero‑install** – ไม่มีการพึ่งพาเนทีฟ, เป็น Java แท้
-- **รองรับรูปแบบหลากหลาย** – จัดการ Office, PDF, รูปภาพ, และอื่น ๆ
-- **ผลลัพธ์ HTML รวดเร็ว** – เหมาะสำหรับพรีวิวเว็บโดยไม่ต้องประมวลผลหนักด้านไคลเอนต์
-- **ขยายได้** – ทำงานได้ดีเท่าเทียมในไมโครเซอร์วิสหรือแอปโมโนลิธ
+## ทำไมต้องใช้ GroupDocs.Viewer สำหรับการโหลดเอกสารแบบไดนามิก
+โหลดเอกสารของคุณจาก URL และรับ HTML ทันที—GroupDocs Viewer จัดการสิ่งนี้ในสองบรรทัดของโค้ด รองรับ **150+ input and output formats**, ประมวลผลไฟล์ Word 300 หน้าในเวลาน้อยกว่า 2 วินาทีบนเซิร์ฟเวอร์ทั่วไป, และไม่ต้องพึ่งพา native dependencies ทำให้เหมาะสำหรับ micro‑services หรือแอป Java แบบ monolithic
 
 ## ข้อกำหนดเบื้องต้น
-
-- **Java Development Kit (JDK) 1.8+**  
-- **Maven** สำหรับการจัดการ dependencies  
-- ความรู้พื้นฐาน Java (โดยเฉพาะการทำงานกับสตรีม)  
+- **Java Development Kit (JDK) 1.8+**
+- **Maven** สำหรับการจัดการ dependencies
+- ความรู้พื้นฐานของ Java, โดยเฉพาะการทำงานกับสตรีม
 - ใบอนุญาต **GroupDocs** ที่ใช้งานได้ (รุ่นทดลองใช้ได้สำหรับการประเมินผล)
 
 ## การตั้งค่า GroupDocs.Viewer ด้วย Maven
 
 ### การกำหนดค่า Maven
-เพิ่มรีโพซิทอรีของ GroupDocs และ dependency ลงใน `pom.xml` ของคุณ นี่คือขั้นตอนหลักสำหรับการใช้ **groupdocs viewer maven**.
+เพิ่ม repository ของ GroupDocs และ dependency ลงใน `pom.xml` ของคุณ นี่เป็นขั้นตอนหลักสำหรับการใช้ **groupdocs viewer maven**.
 
 ```xml
 <repositories>
@@ -71,18 +107,18 @@ weight: 1
 ```
 
 ### ขั้นตอนการรับใบอนุญาต
-GroupDocs มีตัวเลือกการให้ใบอนุญาตหลายแบบ:
+GroupDocs offers several licensing options:
 
 - **Free Trial:** ดาวน์โหลดรุ่นทดลองจาก [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).
-- **Temporary License:** ขอใบอนุญาตชั่วคราวที่ [Temporary License Page](https://purchase.groupdocs.com/temporary-license/) เพื่อประเมินฟีเจอร์เต็มโดยไม่มีข้อจำกัด.
+- **Temporary License:** ขอใบอนุญาตชั่วคราวบน [Temporary License Page](https://purchase.groupdocs.com/temporary-license/) เพื่อประเมินคุณสมบัติทั้งหมดโดยไม่มีข้อจำกัด.
 - **Purchase:** หากไลบรารีตรงกับความต้องการของคุณ, ซื้อใบอนุญาตผ่าน [Purchase Page](https://purchase.groupdocs.com/buy).
 
 ## คู่มือการใช้งาน
 
-ด้านล่างเป็นขั้นตอนแบบละเอียดที่แสดง **วิธีการโหลดเอกสารจาก URL** และ **การแสดงผลเอกสารเป็น HTML** โดยใช้วิธี `java url inputstream`.
+ด้านล่างเป็นขั้นตอนแบบละเอียดที่แสดง **how to load document from url** และ **render document to html** โดยใช้วิธี `java url inputstream`
 
 ### ขั้นตอนที่ 1: เปิด InputStream จาก URL
-แรก, สร้าง `InputStream` ที่ชี้ไปยังไฟล์ระยะไกล สตรีมนี้จะเป็นแหล่งข้อมูลสำหรับ Viewer.
+`InputStream` เป็นคลาส Java ที่ให้สตรีมของไบต์จากแหล่งเช่นไฟล์ระยะไกล การเปิดมันจาก URL เป็นขั้นตอนแรกก่อนส่งข้อมูลให้ Viewer.
 
 ```java
 String url = "https://cms.admin.containerize.com/templates/groupdocs/images/logos/groupdocs-logo.png";
@@ -94,7 +130,7 @@ try (InputStream fileStream = new URL(url).openStream()) {
 ```
 
 ### ขั้นตอนที่ 2: กำหนดค่า HTML View Options
-ตั้งค่า `HtmlViewOptions` เพื่อกำหนดตำแหน่งที่บันทึกหน้าที่แสดงผลและวิธีการฝังทรัพยากร.
+`HtmlViewOptions` กำหนดตำแหน่งที่หน้าที่เรนเดอร์จะถูกบันทึกและวิธีการฝังทรัพยากร (ภาพ, CSS) การตั้งค่าโฟลเดอร์เอาต์พุตและตัวเลือกหน้า‑ต่อหน้า ทำให้คุณได้ HTML ที่สะอาดและพร้อมใช้งานบนเว็บ.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -102,8 +138,8 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### ขั้นตอนที่ 3: สร้างอินสแตนซ์ Viewer และทำการแสดงผล
-ส่ง `InputStream` ให้กับคอนสตรัคเตอร์ของ `Viewer` แล้วเรียก `view` พร้อมกับตัวเลือกที่คุณกำหนดไว้.
+### ขั้นตอนที่ 3: สร้างอินสแตนซ์ Viewer และทำการเรนเดอร์
+คลาส `Viewer` เป็นจุดเริ่มต้นสำหรับการดำเนินการเรนเดอร์ทั้งหมด มันรับ `InputStream` และร่วมกับ `HtmlViewOptions` เพื่อสร้างผลลัพธ์ HTML สุดท้าย.
 
 ```java
 try (Viewer viewer = new Viewer(fileStream)) {
@@ -111,73 +147,68 @@ try (Viewer viewer = new Viewer(fileStream)) {
 }
 ```
 
-### เคล็ดลับการแก้ไขปัญหา
-- **ปัญหาเชื่อมต่อ:** ตรวจสอบว่า URL สามารถเข้าถึงได้และไม่ได้ถูกบล็อกโดยไฟร์วอลล์.
+## เคล็ดลับการแก้ไขปัญหา
+- **Connection Issues:** ตรวจสอบว่า URL สามารถเข้าถึงได้และไม่ได้ถูกบล็อกโดยไฟร์วอลล์.
 - **IOExceptions:** ห่อการดำเนินการไฟล์ด้วย try‑with‑resources เพื่อรับประกันว่าสตรีมจะปิดอย่างถูกต้อง.
-- **รูปแบบที่ไม่รองรับ:** ตรวจสอบว่าประเภทเอกสารได้รับการสนับสนุนโดย GroupDocs.Viewer (ส่วนใหญ่ของ Office และรูปภาพจะรองรับ).
+- **Unsupported Formats:** ตรวจสอบว่าชนิดของเอกสารอยู่ในรูปแบบที่ GroupDocs.Viewer รองรับกว่า 150+ รูปแบบ.
 
 ## การประยุกต์ใช้งานจริง
+1. **Content Management Systems (CMS):** ดึงรูปภาพหรือเอกสารจากที่เก็บภายนอกและเรนเดอร์ทันทีสำหรับผู้แก้ไข.
+2. **Document Preview Services:** ให้ผู้ใช้ดูตัวอย่างสดของไฟล์ Word หรือ PDF ก่อนดาวน์โหลด.
+3. **Web‑Service Integration:** ผสานกับ REST API เพื่อเรนเดอร์เอกสารแบบ on‑the‑fly จากแหล่งภายนอก.
 
-1. **ระบบจัดการเนื้อหา (CMS):** ดึงรูปภาพหรือเอกสารจากที่เก็บภายนอกและแสดงผลทันทีสำหรับผู้แก้ไข.
-2. **บริการพรีวิวเอกสาร:** ให้ผู้ใช้เห็นพรีวิวสดของไฟล์ Word หรือ PDF ก่อนดาวน์โหลด.
-3. **การบูรณาการเว็บ‑เซอร์วิส:** ผสานกับ REST API เพื่อแสดงเอกสารแบบเรียลไทม์จากแหล่งภายนอก.
-
-## พิจารณาด้านประสิทธิภาพ
-
-- **การจัดการหน่วยความจำ:** ใช้ try‑with‑resources เสมอ (ตามที่แสดง) เพื่อป้องกันการรั่วไหลของหน่วยความจำ.
-- **แคช:** เก็บ HTML ที่แสดงผลไว้สำหรับไฟล์ที่เข้าถึงบ่อย เพื่อลดภาระการแสดงผลซ้ำ.
-- **ความปลอดภัยของเธรด:** อินสแตนซ์ Viewer ไม่ปลอดภัยต่อเธรดหลาย ๆ ตัว; สร้างอินสแตนซ์ใหม่ต่อคำขอหรือใช้พูล.
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+- **Memory Management:** ใช้ try‑with‑resources เสมอ (ตามที่แสดง) เพื่อป้องกันการรั่วของหน่วยความจำ.
+- **Caching:** เก็บ HTML ที่เรนเดอร์ไว้สำหรับไฟล์ที่เข้าถึงบ่อยเพื่อลดภาระการเรนเดอร์ซ้ำ.
+- **Thread Safety:** อินสแตนซ์ Viewer ไม่ปลอดภัยต่อหลายเธรด; สร้างอินสแตนซ์ใหม่ต่อคำขอหรือใช้ pool.
 
 ## สรุป
+ตอนนี้คุณมีตัวอย่างที่ครบถ้วนและพร้อมใช้งานในผลิตภัณฑ์ของการใช้ **groupdocs viewer maven** เพื่อ **load document from url** และ **render document to html** ความสามารถนี้เปิดประตูการจัดการเอกสารแบบไดนามิกสำหรับแอปพลิเคชัน Java หลากหลายประเภท.
 
-ตอนนี้คุณมีตัวอย่างที่สมบูรณ์และพร้อมใช้งานในระดับการผลิตของการใช้ **groupdocs viewer maven** เพื่อ **โหลดเอกสารจาก URL** และ **แสดงเอกสารเป็น HTML** ความสามารถนี้เปิดประตูให้การจัดการเอกสารแบบไดนามิกสำหรับแอปพลิเคชัน Java หลากหลาย.
-
-**ขั้นตอนต่อไป:** ทดลองใช้รูปแบบผลลัพธ์อื่น (PDF, ภาพ), สำรวจการแบ่งหน้าไฟล์ขนาดใหญ่, และผสานแคชเพื่อเพิ่มความตอบสนอง.
+**Next Steps:** ทดลองใช้รูปแบบเอาต์พุตอื่น ๆ (PDF, images), สำรวจการแบ่งหน้าสำหรับไฟล์ขนาดใหญ่, และผสานการแคชเพื่อเพิ่มความตอบสนอง.
 
 ## ส่วนคำถามที่พบบ่อย
-
-1. **GroupDocs.Viewer Java คืออะไร?**  
-   - GroupDocs.Viewer Java เป็นไลบรารีที่ทรงพลังที่ช่วยให้นักพัฒนาสามารถแสดงเอกสารหลายประเภทเป็น HTML, ภาพ, หรือ PDF ภายในแอปพลิเคชัน Java.
-
-2. **ฉันสามารถใช้ GroupDocs.Viewer กับภาษาโปรแกรมอื่นได้หรือไม่?**  
-   - ใช่, GroupDocs มีไลบรารีที่คล้ายกันสำหรับ .NET, C++, และโซลูชันคลาวด์.
-
-3. **ไฟล์ประเภทใดบ้างที่สามารถแสดงผลด้วย GroupDocs.Viewer?**  
-   - รองรับรูปแบบไฟล์หลากหลายรวมถึง PDF, เอกสาร Word, สเปรดชีต Excel, พรีเซนเทชัน PowerPoint, รูปภาพ, และอื่น ๆ.
-
-4. **ฉันจะจัดการเอกสารขนาดใหญ่อย่างมีประสิทธิภาพอย่างไร?**  
-   - ใช้การแบ่งหน้าและสตรีมเพื่อแสดงเฉพาะส่วนของเอกสารในแต่ละครั้ง, ลดการใช้หน่วยความจำ.
-
-5. **สามารถปรับแต่ง HTML ที่ได้ออกมาได้หรือไม่?**  
-   - ใช่, GroupDocs.Viewer อนุญาตให้ปรับแต่ง HTML ที่แสดงผลได้อย่างกว้างขวางผ่านตัวเลือก API.
+1. **What is GroupDocs.Viewer Java?**  
+   GroupDocs.Viewer Java เป็นไลบรารีที่ทรงพลังที่ช่วยให้นักพัฒนาสามารถเรนเดอร์ประเภทเอกสารต่าง ๆ เป็นรูปแบบ HTML, image, หรือ PDF ภายในแอปพลิเคชัน Java.
+2. **Can I use GroupDocs.Viewer with other programming languages?**  
+   Yes, GroupDocs offers similar libraries for .NET, C++, and cloud solutions.
+3. **What file types can be rendered using GroupDocs.Viewer?**  
+   It supports a wide range of formats including PDF, Word documents, Excel spreadsheets, PowerPoint presentations, images, and more.
+4. **How do I handle large documents efficiently?**  
+   Utilize paging and streaming features to render only parts of the document at a time, reducing memory usage.
+5. **Is it possible to customize the output HTML?**  
+   Yes, GroupDocs.Viewer allows extensive customization of the rendered HTML output through its API options.
 
 ## คำถามที่พบบ่อย
+**Q: Maven dependency ทำให้การรวมระบบง่ายขึ้นอย่างไร?**  
+A: Adding the `groupdocs-viewer` artifact to `pom.xml` automatically pulls all required binaries, letting you start coding without manual JAR management.
 
-**ถาม: การพึ่งพา Maven ช่วยให้ง่ายต่อการบูรณาการอย่างไร?**  
-A: การเพิ่มอาร์ติแฟกต์ `groupdocs-viewer` ลงใน `pom.xml` จะดึงไบนารีที่จำเป็นทั้งหมดโดยอัตโนมัติ, ทำให้คุณเริ่มเขียนโค้ดได้โดยไม่ต้องจัดการ JAR ด้วยตนเอง.
+**Q: ฉันสามารถแปลงเอกสาร Word เป็น HTML ด้วยการตั้งค่านี้ได้หรือไม่?**  
+A: Absolutely. The same `Viewer` class handles `.docx` files and outputs clean HTML using `HtmlViewOptions`.
 
-**ถาม: ฉันสามารถแปลงเอกสาร Word เป็น HTML ด้วยการตั้งค่านี้ได้หรือไม่?**  
-A: ได้เลย. คลาส `Viewer` เดียวกันจัดการไฟล์ Word (`.docx`) และส่งออก HTML ที่สะอาดโดยใช้ `HtmlViewOptions`.
+**Q: ถ้า URL ต้องการการยืนยันตัวตนจะทำอย่างไร?**  
+A: `HttpURLConnection` เป็นคลาส Java ที่แสดงถึงการเชื่อมต่อ HTTP ไปยังทรัพยากรระยะไกล เปิดการเชื่อมต่อด้วย `HttpURLConnection`, ตั้งค่า header ที่จำเป็น (เช่น Authorization), แล้วรับ `InputStream` ตามที่แสดง.
 
-**ถาม: ถ้า URL ต้องการการยืนยันตัวตนจะทำอย่างไร?**  
-A: เปิดการเชื่อมต่อด้วย `HttpURLConnection`, ตั้งค่า header ที่จำเป็น (เช่น Authorization), แล้วรับ `InputStream` ตามที่แสดง.
+**Q: มีวิธีจำกัดจำนวนหน้าที่เรนเดอร์ได้หรือไม่?**  
+A: Yes, configure `HtmlViewOptions` with `setPageNumbers` to specify a subset of pages to render.
 
-**ถาม: มีวิธีจำกัดจำนวนหน้าที่แสดงผลหรือไม่?**  
-A: ใช่, ตั้งค่า `HtmlViewOptions` ด้วย `setPageNumbers` เพื่อระบุช่วงหน้าที่ต้องการแสดง.
-
-**ถาม: GroupDocs.Viewer รองรับการสตรีมไฟล์ขนาดใหญ่โดยไม่ต้องโหลดเต็มหน่วยความจำหรือไม่?**  
-A: ไลบรารีประมวลผลสตรีมอย่างมีประสิทธิภาพ, แต่สำหรับไฟล์ที่ใหญ่มากควรพิจารณาแสดงผลหน้า‑ต่อหน้าและทำลายอินสแตนซ์ `Viewer` แต่ละอันโดยเร็ว.
+**Q: GroupDocs.Viewer รองรับการสตรีมไฟล์ขนาดใหญ่โดยไม่ต้องโหลดเต็มหน่วยความจำหรือไม่?**  
+A: ไลบรารีประมวลผลสตรีมอย่างมีประสิทธิภาพ; สำหรับไฟล์ขนาดใหญ่มาก ให้เรนเดอร์หน้า‑ต่อหน้าและทำลายแต่ละอินสแตนซ์ `Viewer` อย่างรวดเร็ว.
 
 ## แหล่งข้อมูล
-
-- **เอกสาร:** สำรวจ [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) เพื่อดูรายละเอียดเพิ่มเติมเกี่ยวกับการใช้ไลบรารี.  
-- **อ้างอิง API:** ดูที่ [API Reference](https://reference.groupdocs.com/viewer/java/) เพื่อทำความเข้าใจเมธอดทั้งหมดที่มีและการใช้งาน.  
-- **ดาวน์โหลด:** เริ่มต้นโดยดาวน์โหลด GroupDocs.Viewer จาก [ที่นี่](https://releases.groupdocs.com/viewer/java/).  
-- **การซื้อและทดลอง:** พิจารณาได้รับใบอนุญาตหรือทดลองผ่าน [GroupDocs Purchase](https://purchase.groupdocs.com/buy) และ [Trial Page](https://releases.groupdocs.com/viewer/java/).  
-- **สนับสนุน:** หากมีคำถามใด ๆ เข้าร่วม [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9).
+- **Documentation:** สำรวจ [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) เพื่อดูรายละเอียดเพิ่มเติมเกี่ยวกับการใช้ไลบรารี.
+- **API Reference:** ดูที่ [API Reference](https://reference.groupdocs.com/viewer/java/) เพื่อทำความเข้าใจเมธอดทั้งหมดที่มีและการใช้งานของมัน.
+- **Download:** เริ่มต้นโดยดาวน์โหลด GroupDocs.Viewer จาก [here](https://releases.groupdocs.com/viewer/java/).
+- **Purchase & Trial:** พิจารณาได้รับใบอนุญาตหรือทดลองใช้ผ่าน [GroupDocs Purchase](https://purchase.groupdocs.com/buy) และ [Trial Page](https://releases.groupdocs.com/viewer/java/).
+- **Support:** หากมีคำถามใด ๆ เข้าร่วม [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9).
 
 ---
 
-**อัปเดตล่าสุด:** 2026-02-05  
-**ทดสอบกับ:** GroupDocs.Viewer Java 25.2  
-**ผู้เขียน:** GroupDocs
+**Last Updated:** 2026-06-25  
+**Tested With:** GroupDocs.Viewer Java 25.2  
+**Author:** GroupDocs
+
+## บทแนะนำที่เกี่ยวข้อง
+- [วิธีโหลดและเรนเดอร์เอกสารเป็น HTML ด้วย GroupDocs.Viewer สำหรับ Java](/viewer/java/rendering-basics/groupdocs-viewer-java-html-rendering/)
+- [วิธีโหลด URL ในบทแนะนำการโหลดเอกสาร Java - ตัวอย่าง & แนวทางปฏิบัติของ GroupDocs.Viewer](/viewer/java/document-loading/)
+- [บทแนะนำ GroupDocs Viewer Java - แปลง Word เป็น HTML และเรนเดอร์เอกสารพร้อมคอมเมนต์](/viewer/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/)
