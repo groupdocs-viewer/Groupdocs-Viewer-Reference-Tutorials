@@ -1,35 +1,69 @@
 ---
-"date": "2025-04-24"
-"description": "تعرف على كيفية عرض ملفات PDF بدقة بحجم الصفحة الأصلي باستخدام GroupDocs.Viewer لـ Java، مما يضمن سلامة المستندات عبر الأنظمة الأساسية."
-"title": "عرض ملفات PDF بالحجم الأصلي باستخدام GroupDocs.Viewer لـ Java - دليل شامل"
-"url": "/ar/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-25'
+description: تعلم كيفية تحويل PDF إلى PNG في Java باستخدام GroupDocs Viewer، مع الحفاظ
+  على حجم الصفحة الأصلي وتجنب مشاكل العرض الشائعة.
+keywords:
+- convert pdf to png
+- groupdocs viewer java
+- pdf to image conversion
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-25'
+  description: Learn how to convert PDF to PNG in Java using GroupDocs Viewer, preserving
+    the original page size and avoiding common rendering issues.
+  headline: Convert PDF to PNG with GroupDocs Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Register `Viewer` as a Spring bean, inject it where needed, and let Spring
+      manage its lifecycle for thread‑safe reuse.
+    question: How do I integrate GroupDocs.Viewer with Spring Boot?
+  - answer: Yes – GroupDocs.Viewer also supports JPEG, SVG, and PDF‑to‑HTML conversions.
+    question: Can I render PDFs to formats other than PNG?
+  - answer: Inspect the stack trace for missing file paths or licensing issues, and
+      verify that the PDF is not corrupted.
+    question: What should I do if the rendering process fails with an exception?
+  - answer: Technically no, but very large files may require increased JVM memory
+      and benefit from splitting into smaller sections.
+    question: Is there a size limit for PDFs that can be rendered?
+  - answer: Absolutely – simply pass the password to the `Viewer` constructor or via
+      the `LoadOptions` object.
+    question: Does GroupDocs.Viewer handle password‑protected PDFs?
+  type: FAQPage
+title: تحويل PDF إلى PNG باستخدام GroupDocs Viewer for Java
 type: docs
+url: /ar/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/
+weight: 1
 ---
-# كيفية عرض ملفات PDF بحجم الصفحة الأصلي باستخدام GroupDocs.Viewer لـ Java
 
-يُعدّ عرض ملف PDF مع الحفاظ على حجم الصفحة الأصلي أمرًا أساسيًا لعرض دقيق على مختلف المنصات والأجهزة. سيرشدك هذا الدليل الشامل إلى كيفية تطبيق هذه الميزة باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer لـ Java. باتباع هذه الخطوات، ستضمن بقاء ملفات PDF الخاصة بك دقيقة أثناء العرض.
+# تحويل PDF إلى PNG باستخدام GroupDocs Viewer للغة Java
 
-## ما سوف تتعلمه
-- لماذا يعد الحفاظ على حجم الصفحة الأصلية في عرض PDF أمرًا مهمًا.
-- إعداد وتكوين GroupDocs.Viewer لـ Java.
-- دليل مفصل خطوة بخطوة لعرض ملفات PDF بأبعادها الأصلية.
-- التطبيقات العملية وإمكانيات التكامل.
-- تقنيات لتحسين الأداء أثناء هذه المهمة.
+في هذا الدليل الشامل ستكتشف **كيفية تحويل PDF إلى PNG** في Java مع الحفاظ على كل صفحة بأبعادها الأصلية الدقيقة. الحفاظ على حجم الصفحة الأصلي أمر حاسم للملفات القانونية، والمواد التسويقية المتسقة مع العلامة التجارية، والرسوم التقنية حيث أي تغيير في الحجم سيؤثر على القياسات. سنستعرض تثبيت GroupDocs.Viewer، وتكوين خيارات العرض، وحل المشكلات الشائعة حتى تتمكن من إنتاج صور PNG بدقة بكسل مثالية في كل مرة.
 
-دعونا نراجع المتطلبات الأساسية التي تحتاجها قبل البدء!
+![عرض ملفات PDF بالحجم الأصلي باستخدام GroupDocs.Viewer للغة Java](/viewer/custom-rendering/render-pdfs-in-original-size.png)
 
-### المتطلبات الأساسية
-للمتابعة، تأكد من أن لديك:
-- **مجموعة تطوير Java (JDK):** يجب تثبيت JDK 8 أو أعلى على جهازك.
-- **GroupDocs.Viewer لـ Java:** دمج هذه المكتبة باستخدام Maven.
-- **بيئة التطوير المتكاملة:** استخدم بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse.
+## الإجابات السريعة
+- **ما المكتبة التي يمكنها تحويل PDF إلى PNG في Java؟** توفر GroupDocs.Viewer للغة Java واجهة برمجة تطبيقات بسيطة لـ `convert pdf to png`.  
+- **كيف يمكنني الحفاظ على حجم الصفحة الأصلي؟** استدعِ `setRenderOriginalPageSize(true)` على كائن `PdfOptions`.  
+- **هل أحتاج إلى ترخيص للاستخدام الإنتاجي؟** نعم – يلزم وجود ترخيص GroupDocs دائم أو مؤقت للاستخدام غير التجريبي.  
+- **هل يمكنني عرض ملفات PDF المحمية بكلمة مرور؟** بالتأكيد؛ قدم كلمة المرور عند إنشاء كائن `Viewer`.  
+- **ما نسخة Java المطلوبة؟** JDK 8 أو أعلى مدعومة بالكامل.
 
-### إعداد GroupDocs.Viewer لـ Java
+## ما هو “render PDF in original size”؟
+يعني عرض PDF بالحجم الأصلي تصدير كل صفحة بأبعادها الدقيقة دون أي تحجيم. عند عرض PDF، يمكن للمشاهد إما تحجيم الصفحات لتناسب تنسيقًا مستهدفًا أو الحفاظ على الأبعاد الدقيقة المحددة في الملف الأصلي. يعني العرض بالحجم الأصلي أن كل صفحة تُصدَّر بدقة بكسل، وهو أمر حاسم للوثائق القانونية، والمواد الأرشيفية، وأي سيناريو لا يمكن فيه التضحية بدقة التخطيط.
 
-للبدء، قم بإعداد GroupDocs.Viewer لجافا في بيئة التطوير لديك. هذه العملية سهلة إذا كنت تستخدم أداة بناء مثل Maven:
+## لماذا الحفاظ على حجم صفحة PDF؟
+يضمن الحفاظ على حجم صفحة PDF الأصلي بقاء التخطيط البصري، والقياسات الدقيقة، وعناصر التصميم دون تغيير بعد التحويل، وهو أمر ضروري للامتثال القانوني، واتساق العلامة التجارية، والدقة التقنية في الرسوم أو النماذج. كما يمنع القص غير المقصود أو تشويه الرسومات، مما يضمن ظهور التوقيعات والعلامات المائية بالضبط كما هو مقصود على جميع المنصات.
 
-**تكوين Maven**
+## المتطلبات المسبقة
+- **Java Development Kit (JDK):** الإصدار 8 أو أحدث.  
+- **GroupDocs.Viewer للغة Java:** أضف المكتبة عبر Maven (انظر أدناه).  
+- **IDE:** IntelliJ IDEA، Eclipse، أو أي محرر متوافق مع Java.  
+
+## إعداد GroupDocs.Viewer للغة Java
+
+### تكوين Maven
+أضف مستودع GroupDocs الرسمي واعتماد Viewer إلى ملف `pom.xml` الخاص بك. *(لا تقم بتعديل كتلة الشيفرة – يجب أن تبقى كما هي.)*
+
 ```xml
 <repositories>
    <repository>
@@ -48,18 +82,12 @@ type: docs
 ```
 
 #### الحصول على الترخيص
-توفر GroupDocs خيارات ترخيص مختلفة:
-- **نسخة تجريبية مجانية:** ابدأ بإصدار تجريبي مجاني لاستكشاف الميزات.
-- **رخصة مؤقتة:** احصل على ترخيص مؤقت للوصول الكامل دون قيود.
-- **شراء:** فكر في الشراء إذا كان مشروعك يتطلب الاستخدام على المدى الطويل.
+تقدم GroupDocs ثلاث خيارات للترخيص: **Free Trial** (صفحات غير محدودة، مدة محدودة)، **Temporary License** (جميع الميزات لمدة تصل إلى 30 يومًا)، و**Permanent Purchase** (استخدام إنتاج غير مقيد). اختر الخيار الذي يتناسب مع جدول مشروعك.
 
-### دليل التنفيذ
+## دليل التنفيذ
 
-الآن، لنركز على تنفيذ عرض PDF مع الحفاظ على حجم الصفحة الأصلي. سنرشدك خلال كل خطوة بالتفصيل.
-
-#### تهيئة GroupDocs.Viewer
-**ملخص:**
-ابدأ بإعداد `Viewer` مثال لمستندك المصدر.
+### الخطوة 1: تهيئة GroupDocs.Viewer
+`Viewer` هو الفئة الأساسية في GroupDocs.Viewer التي تقوم بتحميل المستند وتوفر إمكانيات العرض. أنشئ كائن `Viewer` وقم بتكوين `PngViewOptions`. يحدد `PngViewOptions` الإعدادات لعرض الصفحات كصور PNG. الاستدعاء الحاسم `viewOptions.getPdfOptions().setRenderOriginalPageSize(true);` يخبر المحرك بـ **تعيين حجم الصفحة الأصلي**.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -69,80 +97,86 @@ import java.nio.file.Path;
 
 public class RenderOriginalPageSize {
     public static void main(String[] args) {
-        // تحديد مسار دليل الإخراج للصفحات المقدمة
+        // Define output directory path for rendered pages
         Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
         
-        // تنسيق مسارات ملف الصفحة الناتج
+        // Format for the output page file paths
         String pageFilePathFormat = "page_{0}.png";
         Path pageFilePath = outputDirectory.resolve(pageFilePathFormat);
         
-        // قم بتهيئة PngViewOptions بتنسيق المسار
+        // Initialize PngViewOptions with the path format
         PngViewOptions viewOptions = new PngViewOptions(pageFilePath.toString());
         
-        // تعيين خيار لعرض حجم الصفحة الأصلية لمستندات PDF
+        // Set option to render original page size for PDF documents
         viewOptions.getPdfOptions().setRenderOriginalPageSize(true);
         
-        // إنشاء مثيل عارض لمستند PDF المصدر
+        // Create a Viewer instance for the source PDF document
         try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-            // عرض ملف PDF باستخدام الخيارات المحددة
+            // Render the PDF using the specified options
             viewer.view(viewOptions);
         }
     }
 }
 ```
 
-**توضيح:**
-- **تكوين المسار:** قم بتحديد المكان الذي سيتم تخزين الصور المقدمة فيه.
-- **خيارات عرض PNG:** حدد أننا نريد إخراج PNG وقم بتكوين تنسيق المسار لكل صفحة.
-- **حجم الصفحة الأصلية:** يضمن هذا الإعداد الحاسم عدم تغيير حجم الصفحات، مع الحفاظ على أبعادها الأصلية.
+**شرح السطور الرئيسية**  
+- **Path Configuration:** يحدد مكان حفظ كل صورة PNG مُعالجة.  
+- **PngViewOptions:** يختار PNG كصيغة إخراج (سيناريو *pdf to png java* الكلاسيكي).  
+- **Render Original Page Size:** يضمن عدم حدوث أي تحجيم، مع الحفاظ على الأبعاد الدقيقة لكل صفحة PDF.
 
-#### نصائح استكشاف الأخطاء وإصلاحها
-إذا واجهت مشاكل:
-- تأكد من المسارات في `outputDirectory` و `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"` هي صحيحة.
-- تأكد من تكوين GroupDocs.Viewer بشكل صحيح في أداة البناء الخاصة بك.
+### الخطوة 2: تشغيل والتحقق
+حمّل ملف PDF الخاص بك، استدعِ روتين العرض، ثم افحص ملفات PNG التي تم إنشاؤها. يجب أن تتطابق الصور مع أبعاد صفحات PDF الأصلية بكسل مقابل بكسل. إذا ظهرت الصور مشوهة، تحقق مرة أخرى من وجود `setRenderOriginalPageSize(true)` وأنك تستخدم أحدث نسخة من GroupDocs.Viewer.
 
-### التطبيقات العملية
-يمكن أن يكون عرض ملفات PDF بحجم الصفحة الأصلي مفيدًا في سيناريوهات مختلفة، بما في ذلك:
-1. **الأرشيف الرقمي:** الحفاظ على سلامة الوثائق التاريخية لأغراض الأرشفة.
-2. **إدارة الوثائق القانونية:** تأكد من أن المستندات القانونية تحافظ على تخطيطها عند عرضها رقميًا.
-3. **مشاركة المواد التعليمية:** مشاركة الكتب المدرسية أو المواد التعليمية دون تغيير بنية المحتوى.
-4. **أنظمة معالجة الفواتير:** الحفاظ على الاتساق والقابلية للقراءة في أنظمة معالجة الفواتير الآلية.
+## استكشاف الأخطاء وإصلاحها & المشكلات الشائعة
+- **مسارات الملفات غير الصحيحة:** تأكد من أن كلًا من `outputDirectory` ومسار PDF المصدر هما مساران مطلقان أو نسبيان بشكل صحيح بالنسبة لمشروعك.  
+- **الترخيص مفقود:** بدون ترخيص صالح، قد يعود العرض إلى وضع تجريبي يحد من عدد الصفحات.  
+- **أخطاء نفاد الذاكرة في ملفات PDF الكبيرة:** قم بزيادة مساحة heap للـ JVM (`-Xmx2g` أو أعلى) أو فعّل التحميل الكسول للصفحات.  
+- **ملفات PDF المشفرة:** قدم كلمة المرور عند إنشاء كائن `Viewer` لتجنب أخطاء *pdf rendering troubleshooting*.
 
-### اعتبارات الأداء
-يعد تحسين أداء عرض PDF أمرًا بالغ الأهمية، وخاصةً بالنسبة للمستندات الكبيرة:
-- **إدارة الذاكرة:** تخصيص ذاكرة كافية للتعامل مع الملفات الكبيرة بكفاءة.
-- **التحميل الكسول:** قم بتحميل الصفحات أو الأقسام الضرورية فقط عند التعامل مع مستندات واسعة النطاق.
-- **آليات التخزين المؤقت:** قم بتنفيذ التخزين المؤقت لملفات PDF التي يتم الوصول إليها بشكل متكرر لتقليل وقت المعالجة.
+## حالات الاستخدام العملية
+1. **الأرشيفات الرقمية:** الحفاظ على المسحات التاريخية دون أي تشويه.  
+2. **بوابات الوثائق القانونية:** تقديم ملفات PDF جاهزة للمحكمة وتظهر بالضبط كما تم تقديمها.  
+3. **منصات التعلم الإلكتروني:** تحويل الكتب الدراسية إلى صيغة صورة مع الحفاظ على التخطيط.  
+4. **أتمتة الفواتير:** ضمان بقاء بنود الفاتورة والإجماليات قابلة للقراءة بعد التحويل.
 
-### خاتمة
-باتباع هذا الدليل، ستتعلم كيفية استخدام GroupDocs.Viewer لجافا لعرض ملفات PDF مع الحفاظ على حجم صفحاتها الأصلي. هذه المهارة قيّمة للغاية في الحفاظ على سلامة المستندات في مختلف التطبيقات.
+## نصائح الأداء
+- **Memory Management:** تخصيص مساحة heap كافية للوثائق الكبيرة.  
+- **Lazy Loading:** عرض الصفحات التي تحتاجها فقط بدلاً من الملف بالكامل عندما يكون ذلك ممكنًا.  
+- **Caching:** تخزين PNGs المعروضة للـ PDFs التي يتم الوصول إليها بشكل متكرر لتجنب المعالجة المتكررة.
 
-كخطوة تالية، فكر في استكشاف الميزات الإضافية لـ GroupDocs.Viewer، مثل العلامات المائية وقدرات التحويل.
+## الأسئلة المتكررة
 
-### قسم الأسئلة الشائعة
-**1. كيف يمكنني دمج GroupDocs.Viewer مع أطر عمل أخرى مثل Spring؟**
-   - بإمكانك استخدام حقن التبعية لإدارة مثيلات العارض ضمن سياق تطبيقك.
+**س: كيف يمكنني دمج GroupDocs.Viewer مع Spring Boot؟**  
+ج: سجّل `Viewer` كـ Spring bean، وقم بحقنه حيثما يلزم، ودع Spring يدير دورة حياته لإعادة الاستخدام بأمان عبر الخيوط.
 
-**2. هل يمكنني تقديم ملفات PDF بتنسيقات أخرى غير PNG؟**
-   - نعم، يدعم GroupDocs.Viewer تنسيقات إخراج متعددة بما في ذلك JPEG وSVG.
+**س: هل يمكنني عرض PDFs إلى صيغ غير PNG؟**  
+ج: نعم – يدعم GroupDocs.Viewer أيضًا JPEG، SVG، وتحويل PDF إلى HTML.
 
-**3. ماذا يجب أن أفعل إذا فشلت عملية العرض؟**
-   - تحقق من سجلات الأخطاء بحثًا عن رسائل محددة وتأكد من تحديد المسارات بشكل صحيح.
+**س: ماذا أفعل إذا فشل عملية العرض مع استثناء؟**  
+ج: افحص تتبع الأخطاء (stack trace) للبحث عن مسارات ملفات مفقودة أو مشاكل ترخيص، وتأكد من أن ملف PDF غير تالف.
 
-**4. هل هناك حد لحجم ملفات PDF التي يمكن تقديمها؟**
-   - قد يتدهور الأداء مع الملفات الكبيرة جدًا، لذا فكر في تقسيمها إلى أقسام قابلة للإدارة.
+**س: هل هناك حد لحجم PDFs التي يمكن عرضها؟**  
+ج: تقنيًا لا يوجد حد، لكن الملفات الكبيرة جدًا قد تحتاج إلى زيادة ذاكرة JVM وتستفيد من تقسيمها إلى أقسام أصغر.
 
-**5. هل يمكنني تقديم ملفات PDF المشفرة مباشرة؟**
-   - يدعم GroupDocs.Viewer عرض المستندات المحمية إذا قدمت بيانات الاعتماد اللازمة.
+**س: هل يتعامل GroupDocs.Viewer مع PDFs المحمية بكلمة مرور؟**  
+ج: بالتأكيد – ما عليك سوى تمرير كلمة المرور إلى مُنشئ `Viewer` أو عبر كائن `LoadOptions`.
 
-### موارد
-لمزيد من القراءة والموارد:
-- **التوثيق:** [عارض GroupDocs لمستندات Java](https://docs.groupdocs.com/viewer/java/)
-- **مرجع واجهة برمجة التطبيقات:** [مرجع API GroupDocs لـ Java](https://reference.groupdocs.com/viewer/java/)
-- **تنزيل GroupDocs.Viewer:** [التنزيلات الرسمية](https://releases.groupdocs.com/viewer/java/)
-- **الشراء والترخيص:** [شراء منتجات GroupDocs](https://purchase.groupdocs.com/buy)
-- **نسخة تجريبية مجانية:** [النسخة التجريبية المجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **رخصة مؤقتة:** [احصل على رخصة مؤقتة](https://purchase.groupdocs.com/temporary-license/)
-- **منتدى الدعم:** [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+## الموارد
+- **الوثائق:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **مرجع API:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)  
+- **تحميل GroupDocs.Viewer:** [Official Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **الشراء والترخيص:** [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)  
+- **التجربة المجانية:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **ترخيص مؤقت:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **منتدى الدعم:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-نأمل أن يساعدك هذا الدليل في تنفيذ عرض PDF بحجم الصفحة الأصلي باستخدام GroupDocs.Viewer لجافا. برمجة ممتعة!
+---
+
+**آخر تحديث:** 2026-06-25  
+**تم الاختبار مع:** GroupDocs.Viewer 25.2 للغة Java  
+**المؤلف:** GroupDocs  
+
+## دروس ذات صلة
+
+- [كيفية عرض PDF إلى HTML وتحسين جودة الصورة في Java باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [كيفية عرض رسومات CAD كـ PNG بحجم مخصص ولون خلفية باستخدام GroupDocs.Viewer للغة Java](/viewer/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/)

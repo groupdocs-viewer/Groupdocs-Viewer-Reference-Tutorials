@@ -1,35 +1,70 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan jelenítheti meg pontosan a PDF-fájlokat az eredeti oldalméretükben a GroupDocs.Viewer for Java segítségével, biztosítva a dokumentumok integritását a platformok közötti különbségek nélkül."
-"title": "PDF-ek renderelése eredeti méretben a GroupDocs.Viewer for Java használatával – Átfogó útmutató"
-"url": "/hu/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-25'
+description: Ismerje meg, hogyan konvertálhatja a PDF-et PNG-re Java-ban a GroupDocs
+  Viewer használatával, megőrizve az eredeti oldalméretet és elkerülve a gyakori megjelenítési
+  problémákat.
+keywords:
+- convert pdf to png
+- groupdocs viewer java
+- pdf to image conversion
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-25'
+  description: Learn how to convert PDF to PNG in Java using GroupDocs Viewer, preserving
+    the original page size and avoiding common rendering issues.
+  headline: Convert PDF to PNG with GroupDocs Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Register `Viewer` as a Spring bean, inject it where needed, and let Spring
+      manage its lifecycle for thread‑safe reuse.
+    question: How do I integrate GroupDocs.Viewer with Spring Boot?
+  - answer: Yes – GroupDocs.Viewer also supports JPEG, SVG, and PDF‑to‑HTML conversions.
+    question: Can I render PDFs to formats other than PNG?
+  - answer: Inspect the stack trace for missing file paths or licensing issues, and
+      verify that the PDF is not corrupted.
+    question: What should I do if the rendering process fails with an exception?
+  - answer: Technically no, but very large files may require increased JVM memory
+      and benefit from splitting into smaller sections.
+    question: Is there a size limit for PDFs that can be rendered?
+  - answer: Absolutely – simply pass the password to the `Viewer` constructor or via
+      the `LoadOptions` object.
+    question: Does GroupDocs.Viewer handle password‑protected PDFs?
+  type: FAQPage
+title: PDF konvertálása PNG-re a GroupDocs Viewer for Java segítségével
 type: docs
+url: /hu/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/
+weight: 1
 ---
-# PDF-ek renderelése eredeti oldalméretükben a GroupDocs.Viewer for Java használatával
 
-A PDF renderelésekor az eredeti oldalméret megőrzése elengedhetetlen a pontos megjelenítéshez különböző platformokon és eszközökön. Ez az átfogó útmutató végigvezeti Önt a funkció megvalósításán a GroupDocs.Viewer for Java API használatával. A következő lépések követésével biztosíthatja, hogy PDF-jei megőrizzék eredeti képhűségüket a renderelés során.
+# PDF konvertálása PNG-re a GroupDocs Viewer for Java segítségével
 
-## Amit tanulni fogsz
-- Miért fontos az eredeti oldalméret megőrzése a PDF renderelésekor?
-- A GroupDocs.Viewer beállítása és konfigurálása Java-ban.
-- Részletes, lépésről lépésre útmutató a PDF-ek eredeti méretekben történő rendereléséhez.
-- Gyakorlati alkalmazások és integrációs lehetőségek.
-- Technikák a teljesítmény optimalizálására ebben a feladatban.
+Ebben az átfogó útmutatóban megtudhatja, **hogyan konvertálja a PDF-et PNG-re** Java-ban, miközben minden oldal megtartja pontos eredeti méretét. Az eredeti oldalméret megőrzése elengedhetetlen jogi beadványokhoz, márka‑konzisztens marketing anyagokhoz és technikai diagramokhoz, ahol bármilyen méretezés felborítaná a mérési adatokat. Lépésről‑lépésre bemutatjuk a GroupDocs.Viewer telepítését, a renderelési beállítások konfigurálását, valamint a gyakori hibák elhárítását, hogy minden alkalommal pixel‑pontos PNG képeket kapjon.
 
-Nézzük át a szükséges előfeltételeket, mielőtt belevágnánk!
+![PDF-ek renderelése eredeti méretben a GroupDocs.Viewer for Java segítségével](/viewer/custom-rendering/render-pdfs-in-original-size.png)
 
-### Előfeltételek
-A folytatáshoz győződjön meg arról, hogy rendelkezik a következőkkel:
-- **Java fejlesztőkészlet (JDK):** A JDK 8-as vagy újabb verziójának telepítve kell lennie a gépeden.
-- **GroupDocs.Viewer Java-hoz:** Integráld ezt a könyvtárat Maven használatával.
-- **IDE:** Használjon integrált fejlesztői környezetet, például IntelliJ IDEA-t vagy Eclipse-t.
+## Gyors válaszok
+- **Melyik könyvtár konvertálja a PDF-et PNG-re Java-ban?** A GroupDocs.Viewer for Java egyszerű API‑t biztosít a `convert pdf to png` művelethez.  
+- **Hogyan őrizhetem meg az eredeti oldalméretet?** Hívja meg a `setRenderOriginalPageSize(true)` metódust a `PdfOptions` objektumon.  
+- **Szükség van licencre a termeléshez?** Igen – állandó vagy ideiglenes GroupDocs licenc szükséges a nem‑próbaverzióhoz.  
+- **Renderelhetek jelszóval védett PDF-eket?** Természetesen; adja meg a jelszót a `Viewer` példány létrehozásakor.  
+- **Milyen Java verzió szükséges?** A JDK 8 vagy újabb teljes mértékben támogatott.
 
-### GroupDocs.Viewer beállítása Java-hoz
+## Mi az a „PDF renderelése eredeti méretben”?
+A PDF eredeti méretben történő renderelése azt jelenti, hogy minden oldalt a pontos méreteivel exportálunk, skálázás nélkül. Amikor egy PDF-et renderel, a megjelenítő vagy a célformátumhoz méretezi az oldalakat, vagy megtartja a forrásfájlban definiált pontos méreteket. Az eredeti méretben történő renderelés pixel‑pontos exportot eredményez, ami jogi dokumentumok, archivált anyagok és minden olyan eset esetén kritikus, ahol a layout hűsége nem sérülhet.
 
-Kezdéshez állítsd be a GroupDocs.Viewer for Java-t a fejlesztői környezetedben. Ez a folyamat egyszerű, ha egy Mavenhez hasonló build eszközt használsz:
+## Miért kell megőrizni a PDF oldal méretét?
+Az eredeti PDF oldalméret megőrzése biztosítja, hogy a vizuális elrendezés, a pontos méretek és a tervezési elemek a konverzió után is változatlanok maradjanak, ami elengedhetetlen a jogi megfelelés, a márka konzisztenciája és a diagramok vagy űrlapok technikai pontossága szempontjából. Emellett megakadályozza a grafika nem kívánt levágását vagy torzulását, garantálva, hogy az aláírások és vízjelek pontosan úgy jelenjenek meg, ahogy a forrásban szerepelnek, minden platformon.
 
-**Maven konfiguráció**
+## Előkövetelmények
+- **Java Development Kit (JDK):** 8-as vagy újabb verzió.  
+- **GroupDocs.Viewer for Java:** A könyvtár hozzáadása Maven‑en keresztül (lásd alább).  
+- **IDE:** IntelliJ IDEA, Eclipse vagy bármely Java‑kompatibilis szerkesztő.  
+
+## A GroupDocs.Viewer for Java beállítása
+
+### Maven konfiguráció
+Adja hozzá a hivatalos GroupDocs tárolót és a Viewer függőséget a `pom.xml` fájlhoz. *(Ne módosítsa a kódrészletet – pontosan úgy kell maradnia, ahogy látható.)*
+
 ```xml
 <repositories>
    <repository>
@@ -47,19 +82,13 @@ Kezdéshez állítsd be a GroupDocs.Viewer for Java-t a fejlesztői környezeted
 </dependencies>
 ```
 
-#### Licencbeszerzés
-A GroupDocs különféle licencelési lehetőségeket kínál:
-- **Ingyenes próbaverzió:** Kezdje egy ingyenes próbaverzióval a funkciók felfedezését.
-- **Ideiglenes engedély:** Szerezzen be egy ideiglenes licencet a korlátozások nélküli teljes hozzáféréshez.
-- **Vásárlás:** Fontolja meg a vásárlást, ha a projekt hosszú távú használatot igényel.
+#### Licenc beszerzése
+A GroupDocs három licencelési lehetőséget kínál: **Ingyenes próba** (korlátlan oldalak, korlátozott idő), **Ideiglenes licenc** (teljes funkciók legfeljebb 30 napig), és **Állandó vásárlás** (korlátlan termelési használat). Válassza ki a projekt idővonalához leginkább illeszkedő opciót.
 
-### Megvalósítási útmutató
+## Implementációs útmutató
 
-Most pedig összpontosítsunk a PDF-renderelés megvalósítására az eredeti oldalméret megőrzése mellett. Részletesen végigvezetjük Önt minden lépésen.
-
-#### GroupDocs.Viewer inicializálása
-**Áttekintés:**
-Kezdje egy beállítással `Viewer` példány a forrásdokumentumhoz.
+### 1. lépés: A GroupDocs.Viewer inicializálása
+A `Viewer` a GroupDocs.Viewer központi osztálya, amely betölti a dokumentumot és renderelési képességeket biztosít. Hozzon létre egy `Viewer` példányt, és konfigurálja a `PngViewOptions`‑t. A `PngViewOptions` határozza meg a PNG képek renderelésének beállításait. A kulcsfontosságú hívás `viewOptions.getPdfOptions().setRenderOriginalPageSize(true);` azt mondja a motornak, hogy **állítsa be az eredeti oldalméretet**.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -69,80 +98,88 @@ import java.nio.file.Path;
 
 public class RenderOriginalPageSize {
     public static void main(String[] args) {
-        // Kimeneti könyvtár elérési útjának meghatározása a renderelt oldalakhoz
+        // Define output directory path for rendered pages
         Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
         
-        // A kimeneti oldalfájl elérési útjának formátuma
+        // Format for the output page file paths
         String pageFilePathFormat = "page_{0}.png";
         Path pageFilePath = outputDirectory.resolve(pageFilePathFormat);
         
-        // A PngViewOptions inicializálása az elérési út formátumával
+        // Initialize PngViewOptions with the path format
         PngViewOptions viewOptions = new PngViewOptions(pageFilePath.toString());
         
-        // PDF dokumentumok eredeti oldalméretének megjelenítési opciójának beállítása
+        // Set option to render original page size for PDF documents
         viewOptions.getPdfOptions().setRenderOriginalPageSize(true);
         
-        // Hozzon létre egy megjelenítő példányt a forrás PDF dokumentumhoz
+        // Create a Viewer instance for the source PDF document
         try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-            // PDF renderelése a megadott beállításokkal
+            // Render the PDF using the specified options
             viewer.view(viewOptions);
         }
     }
 }
 ```
 
-**Magyarázat:**
-- **Útvonal konfigurációja:** Határozza meg, hogy a renderelt képek hol legyenek tárolva.
-- **PngNézetBeállítások:** Adja meg, hogy PNG kimenetet szeretne, és konfigurálja az egyes oldalak elérési útjának formázását.
-- **Eredeti oldalméret renderelése:** Ez a kulcsfontosságú beállítás biztosítja, hogy az oldalak ne legyenek átméretezve, és megőrizzék eredeti méreteiket.
+**A kulcsfontosságú sorok magyarázata**  
+- **Útvonal konfiguráció:** Meghatározza, hogy a renderelt PNG fájlok hová legyenek mentve.  
+- **PngViewOptions:** A PNG-t választja kimeneti formátumként (a klasszikus *pdf to png java* szcenárió).  
+- **Render Original Page Size:** Garantálja, hogy ne történjen skálázás, megőrizve minden PDF oldal pontos méretét.
 
-#### Hibaelhárítási tippek
-Ha problémákba ütközik:
-- Biztosítsa az útvonalakat `outputDirectory` és `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"` helyesek.
-- Ellenőrizd, hogy a GroupDocs.Viewer megfelelően van-e konfigurálva a build eszközödben.
+### 2. lépés: Futtatás és ellenőrzés
+Töltse be a PDF-et, indítsa el a renderelési folyamatot, majd ellenőrizze a létrehozott PNG fájlokat. A képeknek pixel‑ról‑pixelre egyezniük kell az eredeti PDF oldalméretekkel. Ha a képek nyúltak, ellenőrizze, hogy a `setRenderOriginalPageSize(true)` jelen van-e, és hogy a legújabb GroupDocs.Viewer verziót használja-e.
 
-### Gyakorlati alkalmazások
-A PDF-ek eredeti oldalméretben történő megjelenítése számos esetben előnyös lehet, beleértve a következőket:
-1. **Digitális archívum:** Őrizze meg a történelmi dokumentumok integritását archiválási célokra.
-2. **Jogi dokumentumkezelés:** Gondoskodjon arról, hogy a jogi dokumentumok digitális megtekintéskor is megőrizzék eredeti elrendezésüket.
-3. **Oktatási anyagok megosztása:** Tankönyvek vagy oktatóanyagok megosztása a tartalom szerkezetének megváltoztatása nélkül.
-4. **Számlafeldolgozó rendszerek:** Az automatizált számlafeldolgozó rendszerekben a következetesség és az olvashatóság fenntartása.
+## Hibaelhárítás és gyakori buktatók
+- **Helytelen fájlútvonalak:** Győződjön meg arról, hogy az `outputDirectory` és a forrás‑PDF útvonalak abszolútak vagy helyesen relatívak a projekthez képest.  
+- **Hiányzó licenc:** Érvényes licenc nélkül a renderelés próba‑módra válthat, amely korlátozza az oldalszámot.  
+- **Memóriahiány nagy PDF-ek esetén:** Növelje a JVM heap‑et (`-Xmx2g` vagy nagyobb), vagy engedélyezze az oldalak lusta betöltését.  
+- **Titkosított PDF-ek:** Adja meg a jelszót a `Viewer` példány létrehozásakor, hogy elkerülje a *pdf rendering troubleshooting* hibákat.
 
-### Teljesítménybeli szempontok
-A PDF-renderelés teljesítményének optimalizálása kulcsfontosságú, különösen nagy dokumentumok esetén:
-- **Memóriakezelés:** Foglaljon le elegendő memóriát a nagy fájlok hatékony kezeléséhez.
-- **Lusta betöltés:** Terjedelmes dokumentumok kezelésekor csak a szükséges oldalakat vagy szakaszokat töltse be.
-- **Gyorsítótárazási mechanizmusok:** A gyakran használt PDF-ek gyorsítótárazásának megvalósítása a feldolgozási idő csökkentése érdekében.
+## Gyakorlati felhasználási esetek
+1. **Digitális archívumok:** Történelmi szkennelések torzulás nélküli megőrzése.  
+2. **Jogi dokumentum portálok:** Bírósági szintű PDF-ek biztosítása, amelyek pontosan úgy jelennek meg, ahogy benyújtották őket.  
+3. **E‑learning platformok:** Tankönyvek konvertálása képfájlokká a layout megőrzésével.  
+4. **Számlázási automatizálás:** Biztosítja, hogy a sorok és összegzések olvashatóak maradjanak a konverzió után.
 
-### Következtetés
-Az útmutató követésével megtanulta, hogyan használhatja a GroupDocs.Viewer for Java programot PDF-ek renderelésére az eredeti oldalméret megőrzése mellett. Ez a készség felbecsülhetetlen értékű a dokumentumok integritásának megőrzésében a különböző alkalmazások között.
+## Teljesítmény tippek
+- **Memóriakezelés:** Biztosítson elegendő heap‑memóriát nagy dokumentumokhoz.  
+- **Lusta betöltés:** Renderelje csak a szükséges oldalakat, ne az egész fájlt, ha lehetséges.  
+- **Gyorsítótárazás:** Tárolja a renderelt PNG‑ket gyakran elérhető PDF-ekhez, hogy elkerülje az ismételt feldolgozást.
 
-Következő lépésként érdemes lehet megfontolni a GroupDocs.Viewer további funkcióinak, például a vízjelezés és a konvertálási képességek felfedezését.
+## Gyakran ismételt kérdések
 
-### GYIK szekció
-**1. Hogyan integrálhatom a GroupDocs.Viewer-t más keretrendszerekkel, például a Spring-bel?**
-   - A Viewer példányok alkalmazáskontextuson belüli kezeléséhez függőség-befecskendezést használhat.
+**K: Hogyan integráljam a GroupDocs.Viewer‑t a Spring Boot‑tal?**  
+V: Regisztrálja a `Viewer`‑t Spring bean‑ként, injektálja ahol szükséges, és hagyja, hogy a Spring kezelje az élettartamát a szál‑biztos újrahasználathoz.
 
-**2. Renderelhetek PDF fájlokat a PNG-től eltérő formátumban?**
-   - Igen, a GroupDocs.Viewer több kimeneti formátumot támogat, beleértve a JPEG és az SVG formátumokat.
+**K: Renderelhetek PDF-eket más formátumokba, mint a PNG?**  
+V: Igen – a GroupDocs.Viewer támogatja a JPEG, SVG és PDF‑to‑HTML konverziókat is.
 
-**3. Mit tegyek, ha a renderelési folyamat sikertelen?**
-   - Ellenőrizze a hibanaplókat az adott üzenetekhez, és győződjön meg arról, hogy az elérési utak helyesen vannak megadva.
+**K: Mit tegyek, ha a renderelési folyamat kivétellel meghiúsul?**  
+V: Vizsgálja meg a stack trace‑t hiányzó fájlútvonalak vagy licencproblémák miatt, és ellenőrizze, hogy a PDF nem sérült-e.
 
-**4. Van-e korlátozás a megjeleníthető PDF fájlok méretére vonatkozóan?**
-   - A teljesítmény nagyon nagy fájlok esetén romolhat, ezért érdemes lehet azokat kezelhető részekre osztani.
+**K: Van méretkorlát a renderelhető PDF-ekre?**  
+V: Technikai korlát nincs, de nagyon nagy fájlok esetén növelni kell a JVM memóriáját, és érdemes kisebb szegmensekre bontani őket.
 
-**5. Közvetlenül megjeleníthetem a titkosított PDF-eket?**
-   - A GroupDocs.Viewer támogatja a védett dokumentumok renderelését, ha megadja a szükséges hitelesítő adatokat.
+**K: Kezeli a GroupDocs.Viewer a jelszóval védett PDF-eket?**  
+V: Teljesen – egyszerűen adja át a jelszót a `Viewer` konstruktorának vagy a `LoadOptions` objektumnak.
 
-### Erőforrás
-További olvasmányokért és forrásokért:
-- **Dokumentáció:** [GroupDocs Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API-hivatkozás:** [GroupDocs API referencia Java-hoz](https://reference.groupdocs.com/viewer/java/)
-- **GroupDocs.Viewer letöltése:** [Hivatalos letöltések](https://releases.groupdocs.com/viewer/java/)
-- **Vásárlás és licencelés:** [GroupDocs termékek vásárlása](https://purchase.groupdocs.com/buy)
-- **Ingyenes próbaverzió:** [GroupDocs ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes engedély:** [Ideiglenes engedély beszerzése](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatási fórum:** [GroupDocs támogatási fórum](https://forum.groupdocs.com/c/viewer/9)
+## Források
+- **Dokumentáció:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **API referencia:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)  
+- **GroupDocs.Viewer letöltése:** [Official Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Vásárlás és licenc:** [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)  
+- **Ingyenes próba:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Ideiglenes licenc:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Támogatási fórum:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Reméljük, hogy ez az útmutató segít a PDF-renderelés eredeti oldalmérettel történő megvalósításában a GroupDocs.Viewer for Java használatával. Jó kódolást!
+---
+
+**Utolsó frissítés:** 2026-06-25  
+**Tesztelve a következővel:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs  
+
+---
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan rendereljünk PDF-et HTML‑re és optimalizáljuk a képminőséget Java‑ban a GroupDocs.Viewer segítségével](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)  
+- [Hogyan rendereljünk CAD rajzokat PNG‑ként egyedi mérettel és háttérszínnel a GroupDocs.Viewer for Java használatával](/viewer/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/)

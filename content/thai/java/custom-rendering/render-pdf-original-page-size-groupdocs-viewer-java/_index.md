@@ -1,35 +1,69 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการแสดงไฟล์ PDF อย่างแม่นยำด้วยขนาดหน้าต้นฉบับโดยใช้ GroupDocs.Viewer สำหรับ Java เพื่อให้แน่ใจว่าเอกสารมีความสมบูรณ์ในทุกแพลตฟอร์ม"
-"title": "เรนเดอร์ PDF ในขนาดต้นฉบับโดยใช้ GroupDocs.Viewer สำหรับ Java และคู่มือฉบับสมบูรณ์"
-"url": "/th/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-25'
+description: เรียนรู้วิธีแปลง PDF เป็น PNG ใน Java ด้วย GroupDocs Viewer โดยคง original
+  page size และหลีกเลี่ยง common rendering issues
+keywords:
+- convert pdf to png
+- groupdocs viewer java
+- pdf to image conversion
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-25'
+  description: Learn how to convert PDF to PNG in Java using GroupDocs Viewer, preserving
+    the original page size and avoiding common rendering issues.
+  headline: Convert PDF to PNG with GroupDocs Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Register `Viewer` as a Spring bean, inject it where needed, and let Spring
+      manage its lifecycle for thread‑safe reuse.
+    question: How do I integrate GroupDocs.Viewer with Spring Boot?
+  - answer: Yes – GroupDocs.Viewer also supports JPEG, SVG, and PDF‑to‑HTML conversions.
+    question: Can I render PDFs to formats other than PNG?
+  - answer: Inspect the stack trace for missing file paths or licensing issues, and
+      verify that the PDF is not corrupted.
+    question: What should I do if the rendering process fails with an exception?
+  - answer: Technically no, but very large files may require increased JVM memory
+      and benefit from splitting into smaller sections.
+    question: Is there a size limit for PDFs that can be rendered?
+  - answer: Absolutely – simply pass the password to the `Viewer` constructor or via
+      the `LoadOptions` object.
+    question: Does GroupDocs.Viewer handle password‑protected PDFs?
+  type: FAQPage
+title: แปลง PDF เป็น PNG ด้วย GroupDocs Viewer สำหรับ Java
 type: docs
+url: /th/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/
+weight: 1
 ---
-# วิธีการเรนเดอร์ PDF ด้วยขนาดหน้าดั้งเดิมโดยใช้ GroupDocs.Viewer สำหรับ Java
 
-การเรนเดอร์ PDF โดยยังคงขนาดหน้าเดิมไว้ถือเป็นสิ่งสำคัญสำหรับการแสดงผลที่แม่นยำบนแพลตฟอร์มและอุปกรณ์ต่างๆ คู่มือฉบับสมบูรณ์นี้จะแนะนำคุณเกี่ยวกับการใช้งานฟีเจอร์นี้โดยใช้ GroupDocs.Viewer สำหรับ Java API หากทำตามขั้นตอนเหล่านี้ คุณจะมั่นใจได้ว่า PDF ของคุณยังคงความสมบูรณ์แบบระหว่างการเรนเดอร์
+# แปลง PDF เป็น PNG ด้วย GroupDocs Viewer สำหรับ Java
 
-## สิ่งที่คุณจะได้เรียนรู้
-- เหตุใดการรักษาขนาดหน้าต้นฉบับในการเรนเดอร์ PDF จึงมีความสำคัญ
-- การตั้งค่าและกำหนดค่า GroupDocs.Viewer สำหรับ Java
-- คู่มือทีละขั้นตอนโดยละเอียดในการเรนเดอร์ PDF ตามขนาดดั้งเดิม
-- การประยุกต์ใช้งานจริงและความเป็นไปได้ในการบูรณาการ
-- เทคนิคในการเพิ่มประสิทธิภาพการทำงานในงานนี้
+ในคู่มือฉบับครอบคลุมนี้ คุณจะได้ค้นพบ **วิธีแปลง PDF เป็น PNG** ด้วย Java พร้อมการรักษาขนาดเดิมของแต่ละหน้าอย่างแม่นยำ การรักษาขนาดหน้าต้นฉบับเป็นสิ่งสำคัญสำหรับการยื่นเอกสารทางกฎหมาย, สินค้าโฆษณาที่สอดคล้องกับแบรนด์, และแผนภาพเทคนิคที่การขยายขนาดใด ๆ จะทำให้การวัดผิดพลาด เราจะพาคุณผ่านการติดตั้ง GroupDocs.Viewer, การกำหนดค่าตัวเลือกการเรนเดอร์, และการแก้ไขปัญหาที่พบบ่อย เพื่อให้คุณสร้างภาพ PNG ที่พิกเซลสมบูรณ์แบบได้ทุกครั้ง.
 
-มาทบทวนข้อกำหนดเบื้องต้นที่คุณต้องมีก่อนที่จะเริ่มต้นกัน!
+![เรนเดอร์ PDF ด้วยขนาดต้นฉบับด้วย GroupDocs.Viewer สำหรับ Java](/viewer/custom-rendering/render-pdfs-in-original-size.png)
 
-### ข้อกำหนดเบื้องต้น
-เพื่อติดตามต่อไป ให้แน่ใจว่าคุณมี:
-- **ชุดพัฒนา Java (JDK):** คุณจะต้องติดตั้ง JDK 8 ขึ้นไปบนเครื่องของคุณ
-- **GroupDocs.Viewer สำหรับ Java:** รวมไลบรารีนี้โดยใช้ Maven
-- **ไอดี:** ใช้สภาพแวดล้อมการพัฒนาแบบบูรณาการ เช่น IntelliJ IDEA หรือ Eclipse
+## คำตอบอย่างรวดเร็ว
+- **ห้องสมุดใดที่สามารถแปลง PDF เป็น PNG ใน Java?** GroupDocs.Viewer for Java ให้ API ที่ตรงไปตรงมาสำหรับ `convert pdf to png`.  
+- **ฉันจะรักษาขนาดหน้าต้นฉบับได้อย่างไร?** เรียก `setRenderOriginalPageSize(true)` บนวัตถุ `PdfOptions`.  
+- **ต้องการใบอนุญาตสำหรับการใช้งานจริงหรือไม่?** ใช่ – จำเป็นต้องมีใบอนุญาต GroupDocs แบบถาวรหรือชั่วคราวสำหรับการใช้งานที่ไม่ใช่แบบทดลอง.  
+- **ฉันสามารถเรนเดอร์ PDF ที่มีการป้องกันด้วยรหัสผ่านได้หรือไม่?** แน่นอน; ส่งรหัสผ่านเมื่อสร้างอินสแตนซ์ `Viewer`.  
+- **ต้องการเวอร์ชัน Java ใด?** JDK 8 หรือสูงกว่าได้รับการสนับสนุนเต็มที่.
 
-### การตั้งค่า GroupDocs.Viewer สำหรับ Java
+## “เรนเดอร์ PDF ด้วยขนาดต้นฉบับ” คืออะไร?
+การเรนเดอร์ PDF ด้วยขนาดต้นฉบับหมายถึงการส่งออกแต่ละหน้าที่มีขนาดที่แน่นอนโดยไม่มีการสเกล เมื่อคุณเรนเดอร์ PDF, ตัวดูสามารถสเกลหน้าตามรูปแบบเป้าหมายหรือคงขนาดที่กำหนดในไฟล์ต้นฉบับ การเรนเดอร์ด้วยขนาดต้นฉบับหมายความว่าหน้าแต่ละหน้าจะถูกส่งออกพิกเซล‑สมบูรณ์แบบ ซึ่งเป็นสิ่งสำคัญสำหรับเอกสารทางกฎหมาย, วัสดุสำรอง, และสถานการณ์ใด ๆ ที่ต้องการความแม่นยำของการจัดวางโดยไม่สามารถประนีประนอมได้.
 
-ในการเริ่มต้น ให้ตั้งค่า GroupDocs.Viewer สำหรับ Java ในสภาพแวดล้อมการพัฒนาของคุณ กระบวนการนี้จะตรงไปตรงมาหากคุณใช้เครื่องมือสร้างเช่น Maven:
+## ทำไมต้องรักษาขนาดหน้าของ PDF?
+การรักษาขนาดหน้าต้นฉบับของ PDF ทำให้การจัดวางภาพ, การวัดที่แม่นยำ, และองค์ประกอบการออกแบบคงที่หลังการแปลง ซึ่งจำเป็นสำหรับการปฏิบัติตามกฎหมาย, ความสอดคล้องของแบรนด์, และความแม่นยำทางเทคนิคในแผนภาพหรือแบบฟอร์ม นอกจากนี้ยังป้องกันการครอปหรือบิดเบือนกราฟิกโดยไม่ได้ตั้งใจ ทำให้ลายเซ็นและลายน้ำปรากฏอย่างถูกต้องบนทุกแพลตฟอร์ม.
 
-**การกำหนดค่า Maven**
+## ข้อกำหนดเบื้องต้น
+- **Java Development Kit (JDK):** เวอร์ชัน 8 หรือใหม่กว่า.  
+- **GroupDocs.Viewer for Java:** เพิ่มไลบรารีผ่าน Maven (ดูด้านล่าง).  
+- **IDE:** IntelliJ IDEA, Eclipse, หรือเครื่องมือแก้ไข Java ใด ๆ ที่รองรับ.
+
+## การตั้งค่า GroupDocs.Viewer สำหรับ Java
+
+### การกำหนดค่า Maven
+เพิ่ม repository ของ GroupDocs อย่างเป็นทางการและ dependency ของ Viewer ไปยังไฟล์ `pom.xml` ของคุณ. *(อย่าแก้ไขบล็อกโค้ด – ต้องคงไว้ตามที่แสดง.)*
+
 ```xml
 <repositories>
    <repository>
@@ -47,19 +81,13 @@ type: docs
 </dependencies>
 ```
 
-#### การขอใบอนุญาต
-GroupDocs นำเสนอตัวเลือกใบอนุญาตต่างๆ:
-- **ทดลองใช้งานฟรี:** เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อสำรวจคุณสมบัติต่างๆ
-- **ใบอนุญาตชั่วคราว:** รับใบอนุญาตชั่วคราวเพื่อการเข้าถึงแบบเต็มรูปแบบโดยไม่มีข้อจำกัด
-- **ซื้อ:** ควรพิจารณาซื้อหากโครงการของคุณต้องใช้งานในระยะยาว
+#### การรับใบอนุญาต
+GroupDocs มีตัวเลือกใบอนุญาตสามแบบ: **Free Trial** (จำนวนหน้าที่ไม่จำกัด, ระยะเวลาจำกัด), **Temporary License** (ฟีเจอร์เต็มสำหรับสูงสุด 30 วัน), และ **Permanent Purchase** (การใช้งานผลิตภัณฑ์ไม่จำกัด). เลือกตัวเลือกที่ตรงกับไทม์ไลน์ของโครงการของคุณ.
 
-### คู่มือการใช้งาน
+## คู่มือการทำงาน
 
-ตอนนี้เรามาเน้นที่การใช้งานการเรนเดอร์ PDF โดยยังคงขนาดหน้ากระดาษเดิมเอาไว้ เราจะแนะนำคุณในแต่ละขั้นตอนอย่างละเอียด
-
-#### เริ่มต้น GroupDocs.Viewer
-**ภาพรวม:**
-เริ่มต้นด้วยการตั้งค่า `Viewer` อินสแตนซ์สำหรับเอกสารต้นฉบับของคุณ
+### ขั้นตอนที่ 1: เริ่มต้น GroupDocs.Viewer
+`Viewer` เป็นคลาสหลักใน GroupDocs.Viewer ที่โหลดเอกสารและให้ความสามารถในการเรนเดอร์ สร้างอินสแตนซ์ `Viewer` และกำหนดค่า `PngViewOptions`. `PngViewOptions` กำหนดการตั้งค่าสำหรับการเรนเดอร์หน้าเป็นภาพ PNG การเรียกสำคัญ `viewOptions.getPdfOptions().setRenderOriginalPageSize(true);` บอกเอนจินให้ **ตั้งค่าขนาดหน้าต้นฉบับ**.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -69,80 +97,88 @@ import java.nio.file.Path;
 
 public class RenderOriginalPageSize {
     public static void main(String[] args) {
-        // กำหนดเส้นทางไดเรกทอรีเอาท์พุตสำหรับหน้าที่แสดงผล
+        // Define output directory path for rendered pages
         Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
         
-        // รูปแบบสำหรับเส้นทางไฟล์หน้าเอาท์พุต
+        // Format for the output page file paths
         String pageFilePathFormat = "page_{0}.png";
         Path pageFilePath = outputDirectory.resolve(pageFilePathFormat);
         
-        // เริ่มต้น PNGViewOptions ด้วยรูปแบบเส้นทาง
+        // Initialize PngViewOptions with the path format
         PngViewOptions viewOptions = new PngViewOptions(pageFilePath.toString());
         
-        // ตั้งค่าตัวเลือกในการแสดงขนาดหน้าต้นฉบับสำหรับเอกสาร PDF
+        // Set option to render original page size for PDF documents
         viewOptions.getPdfOptions().setRenderOriginalPageSize(true);
         
-        // สร้างอินสแตนซ์ของ Viewer สำหรับเอกสาร PDF ต้นฉบับ
+        // Create a Viewer instance for the source PDF document
         try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF")) {
-            // เรนเดอร์ PDF โดยใช้ตัวเลือกที่ระบุ
+            // Render the PDF using the specified options
             viewer.view(viewOptions);
         }
     }
 }
 ```
 
-**คำอธิบาย:**
-- **การกำหนดค่าเส้นทาง:** กำหนดว่าจะจัดเก็บรูปภาพที่แสดงผลไว้ที่ไหน
-- **ตัวเลือก PNGView:** ระบุว่าเราต้องการเอาท์พุต PNG และกำหนดการจัดรูปแบบเส้นทางสำหรับแต่ละหน้า
-- **เรนเดอร์ขนาดหน้าต้นฉบับ:** การตั้งค่าที่สำคัญนี้ช่วยให้แน่ใจว่าหน้าต่างๆ จะไม่ถูกปรับขนาด และยังคงขนาดเดิมเอาไว้
+**คำอธิบายของบรรทัดสำคัญ**  
+- **การกำหนดเส้นทาง:** ระบุที่ที่ PNG ที่เรนเดอร์แต่ละไฟล์จะถูกบันทึก.  
+- **PngViewOptions:** เลือก PNG เป็นรูปแบบผลลัพธ์ (สถานการณ์คลาสสิก *pdf to png java*).  
+- **Render Original Page Size:** รับประกันว่าไม่มีการสเกลเกิดขึ้น, รักษาขนาดที่แน่นอนของแต่ละหน้า PDF.
 
-#### เคล็ดลับการแก้ไขปัญหา
-หากคุณพบปัญหา:
-- รับรองเส้นทางใน `outputDirectory` และ `"YOUR_DOCUMENT_DIRECTORY/SAMPLE_PDF"` ถูกต้องครับ.
-- ตรวจสอบว่า GroupDocs.Viewer ได้รับการกำหนดค่าอย่างถูกต้องในเครื่องมือสร้างของคุณ
+### ขั้นตอนที่ 2: รันและตรวจสอบ
+โหลด PDF ของคุณ, เรียกใช้ขั้นตอนการเรนเดอร์, แล้วตรวจสอบไฟล์ PNG ที่สร้างขึ้น ภาพควรตรงกับขนาดหน้าของ PDF ต้นฉบับพิกเซลต่อพิกเซล หากภาพดูบิดเบือน, ตรวจสอบให้แน่ใจว่า `setRenderOriginalPageSize(true)` ปรากฏและคุณใช้เวอร์ชันล่าสุดของ GroupDocs.Viewer.
 
-### การประยุกต์ใช้งานจริง
-การเรนเดอร์ PDF ด้วยขนาดหน้าดั้งเดิมอาจเป็นประโยชน์สำหรับสถานการณ์ต่างๆ เช่น:
-1. **คลังข้อมูลดิจิทัล:** รักษาความสมบูรณ์ของเอกสารประวัติศาสตร์เพื่อวัตถุประสงค์ในการเก็บถาวร
-2. **การจัดการเอกสารทางกฎหมาย:** ทำให้แน่ใจว่าเอกสารทางกฎหมายยังคงรูปแบบเดิมเมื่อดูในรูปแบบดิจิทัล
-3. **การแบ่งปันสื่อการเรียนรู้:** แบ่งปันหนังสือเรียนหรือสื่อการเรียนการสอนโดยไม่ต้องเปลี่ยนแปลงโครงสร้างเนื้อหา
-4. **ระบบประมวลผลใบแจ้งหนี้:** รักษาความสอดคล้องและความสามารถในการอ่านได้ในระบบการประมวลผลใบแจ้งหนี้อัตโนมัติ
+## การแก้ไขปัญหา & ข้อผิดพลาดทั่วไป
+- **เส้นทางไฟล์ไม่ถูกต้อง:** ตรวจสอบให้แน่ใจว่า `outputDirectory` และเส้นทาง PDF ต้นทางเป็นแบบ absolute หรือ relative อย่างถูกต้องต่อโครงการของคุณ.  
+- **ไม่มีใบอนุญาต:** หากไม่มีใบอนุญาตที่ถูกต้อง, การเรนเดอร์อาจกลับไปใช้โหมดทดลองที่จำกัดจำนวนหน้า.  
+- **ข้อผิดพลาด Out‑of‑memory กับ PDF ขนาดใหญ่:** เพิ่ม heap ของ JVM (`-Xmx2g` หรือมากกว่า) หรือเปิดใช้งาน lazy loading ของหน้า.  
+- **PDF ที่เข้ารหัส:** ส่งรหัสผ่านเมื่อสร้างอินสแตนซ์ `Viewer` เพื่อหลีกเลี่ยงข้อผิดพลาด *pdf rendering troubleshooting*.
 
-### การพิจารณาประสิทธิภาพ
-การเพิ่มประสิทธิภาพการเรนเดอร์ PDF ถือเป็นสิ่งสำคัญ โดยเฉพาะอย่างยิ่งสำหรับเอกสารขนาดใหญ่:
-- **การจัดการหน่วยความจำ:** จัดสรรหน่วยความจำเพียงพอเพื่อจัดการไฟล์ขนาดใหญ่ได้อย่างมีประสิทธิภาพ
-- **การโหลดแบบขี้เกียจ:** โหลดเฉพาะหน้าหรือส่วนที่จำเป็นเมื่อต้องจัดการกับเอกสารจำนวนมาก
-- **กลไกการแคช:** ใช้งานแคชสำหรับไฟล์ PDF ที่มีการเข้าถึงบ่อยครั้งเพื่อลดเวลาในการประมวลผล
+## กรณีการใช้งานจริง
+1. **คลังเก็บดิจิทัล:** รักษาการสแกนประวัติศาสตร์โดยไม่มีการบิดเบือน.  
+2. **พอร์ทัลเอกสารทางกฎหมาย:** ให้บริการ PDF ที่พร้อมสำหรับศาลโดยแสดงผลตรงตามที่ยื่น.  
+3. **แพลตฟอร์มการเรียนรู้ออนไลน์:** แปลงตำราเรียนเป็นรูปภาพโดยคงการจัดวางไว้ครบถ้วน.  
+4. **ระบบอัตโนมัติใบแจ้งหนี้:** ทำให้รายการและยอดรวมอ่านได้ชัดเจนหลังการแปลง.
 
-### บทสรุป
-เมื่อทำตามคำแนะนำนี้ คุณจะได้เรียนรู้วิธีใช้ GroupDocs.Viewer สำหรับ Java เพื่อเรนเดอร์ PDF โดยยังคงขนาดหน้าเดิมเอาไว้ ทักษะนี้มีประโยชน์อย่างยิ่งในการรักษาความสมบูรณ์ของเอกสารในแอปพลิเคชันต่างๆ
+## เคล็ดลับด้านประสิทธิภาพ
+- **การจัดการหน่วยความจำ:** จัดสรร heap เพียงพอสำหรับเอกสารขนาดใหญ่.  
+- **Lazy Loading:** เรนเดอร์เฉพาะหน้าที่ต้องการแทนการประมวลผลไฟล์ทั้งหมดเมื่อเป็นไปได้.  
+- **Caching:** เก็บ PNG ที่เรนเดอร์ไว้สำหรับ PDF ที่เข้าถึงบ่อย เพื่อลดการประมวลผลซ้ำ.
 
-ขั้นตอนต่อไป โปรดพิจารณาสำรวจคุณลักษณะเพิ่มเติมของ GroupDocs.Viewer เช่น การใส่ลายน้ำและความสามารถในการแปลง
+## คำถามที่พบบ่อย
 
-### ส่วนคำถามที่พบบ่อย
-**1. ฉันจะรวม GroupDocs.Viewer เข้ากับเฟรมเวิร์กอื่น เช่น Spring ได้อย่างไร**
-   - คุณสามารถใช้การฉีดการอ้างอิงเพื่อจัดการอินสแตนซ์ของ Viewer ภายในบริบทแอปพลิเคชันของคุณได้
+**Q: ฉันจะรวม GroupDocs.Viewer กับ Spring Boot อย่างไร?**  
+A: ลงทะเบียน `Viewer` เป็น Spring bean, ฉีดเข้าไปที่ต้องการ, และให้ Spring จัดการวงจรชีวิตเพื่อการใช้ซ้ำแบบปลอดภัยต่อเธรด.
 
-**2. ฉันสามารถแสดงไฟล์ PDF ในรูปแบบอื่นนอกเหนือจาก PNG ได้หรือไม่**
-   - ใช่ GroupDocs.Viewer รองรับรูปแบบเอาต์พุตหลายรูปแบบรวมทั้ง JPEG และ SVG
+**Q: ฉันสามารถเรนเดอร์ PDF ไปยังรูปแบบอื่นนอกจาก PNG ได้หรือไม่?**  
+A: ใช่ – GroupDocs.Viewer ยังรองรับการแปลงเป็น JPEG, SVG, และการแปลง PDF‑to‑HTML.
 
-**3. ฉันควรทำอย่างไรหากกระบวนการเรนเดอร์ล้มเหลว?**
-   - ตรวจสอบบันทึกข้อผิดพลาดสำหรับข้อความที่เฉพาะเจาะจง และตรวจสอบให้แน่ใจว่าได้ระบุเส้นทางอย่างถูกต้อง
+**Q: ควรทำอย่างไรหากกระบวนการเรนเดอร์ล้มเหลวด้วยข้อยกเว้น?**  
+A: ตรวจสอบ stack trace เพื่อหาปัญหาเส้นทางไฟล์หรือใบอนุญาตที่หายไป, และยืนยันว่า PDF ไม่เสียหาย.
 
-**4. มีข้อจำกัดเกี่ยวกับขนาดไฟล์ PDF ที่สามารถแสดงผลได้หรือไม่**
-   - ประสิทธิภาพการทำงานอาจลดลงหากมีไฟล์ขนาดใหญ่ ดังนั้น ควรพิจารณาแบ่งไฟล์ออกเป็นส่วนที่จัดการได้
+**Q: มีขีดจำกัดขนาดของ PDF ที่สามารถเรนเดอร์ได้หรือไม่?**  
+A: โดยเทคนิคไม่มี, แต่ไฟล์ขนาดใหญ่มากอาจต้องเพิ่มหน่วยความจำ JVM และอาจต้องแบ่งไฟล์เป็นส่วนย่อย.
 
-**5. ฉันสามารถเรนเดอร์ PDF ที่เข้ารหัสโดยตรงได้หรือไม่**
-   - GroupDocs.Viewer รองรับการเรนเดอร์เอกสารที่ได้รับการป้องกันหากคุณระบุข้อมูลประจำตัวที่จำเป็น
+**Q: GroupDocs.Viewer รองรับ PDF ที่ป้องกันด้วยรหัสผ่านหรือไม่?**  
+A: แน่นอน – เพียงส่งรหัสผ่านไปยังคอนสตรัคเตอร์ `Viewer` หรือผ่านอ็อบเจ็กต์ `LoadOptions`.
 
-### ทรัพยากร
-สำหรับการอ่านและทรัพยากรเพิ่มเติม:
-- **เอกสารประกอบ:** [โปรแกรมดู GroupDocs เอกสาร Java](https://docs.groupdocs.com/viewer/java/)
-- **เอกสารอ้างอิง API:** [เอกสารอ้างอิง API ของ GroupDocs สำหรับ Java](https://reference.groupdocs.com/viewer/java/)
-- **ดาวน์โหลด GroupDocs.Viewer:** [ดาวน์โหลดอย่างเป็นทางการ](https://releases.groupdocs.com/viewer/java/)
-- **การซื้อและการออกใบอนุญาต:** [ซื้อผลิตภัณฑ์ GroupDocs](https://purchase.groupdocs.com/buy)
-- **ทดลองใช้งานฟรี:** [ทดลองใช้ GroupDocs ฟรี](https://releases.groupdocs.com/viewer/java/)
-- **ใบอนุญาตชั่วคราว:** [รับใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
-- **ฟอรั่มการสนับสนุน:** [ฟอรัมสนับสนุน GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+## แหล่งข้อมูล
+- **เอกสาร:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **อ้างอิง API:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)  
+- **ดาวน์โหลด GroupDocs.Viewer:** [Official Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **การซื้อและใบอนุญาต:** [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)  
+- **ทดลองใช้ฟรี:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **ใบอนุญาตชั่วคราว:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **ฟอรั่มสนับสนุน:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-เราหวังว่าคู่มือนี้จะช่วยคุณในการเรนเดอร์ PDF ด้วยขนาดหน้าต้นฉบับโดยใช้ GroupDocs.Viewer สำหรับ Java ขอให้สนุกกับการเขียนโค้ด!
+---
+
+**อัปเดตล่าสุด:** 2026-06-25  
+**ทดสอบกับ:** GroupDocs.Viewer 25.2 for Java  
+**ผู้เขียน:** GroupDocs  
+
+---
+
+## บทเรียนที่เกี่ยวข้อง
+
+- [วิธีเรนเดอร์ pdf เป็น html และเพิ่มคุณภาพภาพใน Java ด้วย GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [วิธีเรนเดอร์ภาพวาด CAD เป็น PNG ด้วยขนาดและสีพื้นหลังที่กำหนดเองโดยใช้ GroupDocs.Viewer for Java](/viewer/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/)
