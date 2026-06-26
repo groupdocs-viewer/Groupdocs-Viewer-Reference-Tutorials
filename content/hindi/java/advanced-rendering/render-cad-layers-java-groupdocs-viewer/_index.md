@@ -1,52 +1,55 @@
 ---
-date: '2026-01-08'
-description: GroupDocs.Viewer का उपयोग करके Java में CAD लेयर्स को रेंडर करना सीखें।
+date: '2026-03-16'
+description: GroupDocs.Viewer का उपयोग करके जावा में CAD लेयर्स को रेंडर करना सीखें।
   यह गाइड सेटअप, कॉन्फ़िगरेशन और उन्नत डिज़ाइन विज़ुअलाइज़ेशन के लिए व्यावहारिक अनुप्रयोगों
   को कवर करता है।
 keywords:
 - Render CAD Layers in Java
 - GroupDocs.Viewer for Java
 - CAD Layer Rendering
-title: GroupDocs.Viewer के साथ जावा में CAD लेयर्स रेंडर करें – एक पूर्ण गाइड
+title: GroupDocs.Viewer के साथ जावा में CAD लेयर्स रेंडर करना – एक पूर्ण गाइड
 type: docs
 url: /hi/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/
 weight: 1
 ---
 
-# GroupDocs.Viewer के साथ CAD लेयर्स Java रेंडर करें
+# Render CAD Layers Java with GroupDocs.Viewer
 
-यदि आपको जटिल ड्रॉइंग्स को स्पष्ट रूप से देखने के लिए **render CAD layers Java** की आवश्यकता है, तो आप सही जगह पर आए हैं। इस ट्यूटोरियल में हम सब कुछ कवर करेंगे—GroupDocs.Viewer को इंस्टॉल करने से लेकर उन लेयर्स को चुनने तक जिन्हें आप प्रदर्शित करना चाहते हैं। अंत तक, आप अपने Java एप्लिकेशन में लेयर‑स्पेसिफिक रेंडरिंग को आत्मविश्वास के साथ इंटीग्रेट कर पाएँगे।
+यदि आपको जटिल ड्रॉइंग्स को स्पष्ट रूप से देखने के लिए **render CAD layers Java** की आवश्यकता है, तो आप सही जगह पर आए हैं। इस ट्यूटोरियल में हम सब कुछ कवर करेंगे—GroupDocs.Viewer को इंस्टॉल करने से लेकर उन लेयर्स को चुनने तक जिन्हें आप प्रदर्शित करना चाहते हैं। अंत तक, आप अपने Java एप्लिकेशन्स में लेयर‑स्पेसिफिक रेंडरिंग को आत्मविश्वास के साथ इंटीग्रेट कर पाएँगे।
 
-![GroupDocs.Viewer for Java के साथ विशिष्ट CAD लेयर्स रेंडर करें](/viewer/advanced-rendering/render-specific-cad-layers-java.png)
+![Render Specific CAD Layers with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-specific-cad-layers-java.png)
 
-**आप क्या सीखेंगे**
-- Java प्रोजेक्ट में GroupDocs.Viewer सेटअप करना  
-- **render CAD layers Java** के लिए सटीक चरण  
-- कॉन्फ़िगरेशन विकल्प जो आपको सूक्ष्म नियंत्रण देते हैं  
+**What You’ll Learn**
+- Java प्रोजेक्ट में GroupDocs.Viewer को सेट अप करना  
+- Specific CAD layers Java को रेंडर करने के सटीक चरण  
+- ऐसी कॉन्फ़िगरेशन विकल्प जो आपको फाइन‑ग्रेन कंट्रोल देते हैं  
 - वास्तविक दुनिया के परिदृश्य जहाँ लेयर रेंडरिंग मूल्य जोड़ती है  
 
-## त्वरित उत्तर
-- **Java में CAD रेंडरिंग को कौन सी लाइब्रेरी संभालती है?** GroupDocs.Viewer for Java.  
-- **क्या मैं व्यक्तिगत लेयर्स को रेंडर करने के लिए चुन सकता हूँ?** हाँ—`viewOptions.getCadOptions().setLayers(...)` का उपयोग करें।  
-- **प्रोडक्शन के लिए लाइसेंस आवश्यक है?** प्रोडक्शन उपयोग के लिए वैध GroupDocs.Viewer लाइसेंस आवश्यक है।  
-- **कौन सा Java संस्करण समर्थित है?** JDK 8 या उससे ऊपर।  
-- **क्या Maven ही एकमात्र तरीका है डिपेंडेंसी जोड़ने का?** Maven की सिफारिश की जाती है, लेकिन आप Gradle या मैनुअल JAR इंक्लूज़न भी उपयोग कर सकते हैं।
+## Quick Answers
+- **What library handles CAD rendering in Java?** GroupDocs.Viewer for Java.  
+- **Can I choose individual layers to render?** Yes—use `viewOptions.getCadOptions().setLayers(...)`.  
+- **Do I need a license for production?** A valid GroupDocs.Viewer license is required for production use.  
+- **Which Java version is supported?** JDK 8 or higher.  
+- **Is Maven the only way to add the dependency?** Maven is recommended, but you can also use Gradle or manual JAR inclusion.
 
-## पूर्वापेक्षाएँ
-### आवश्यक लाइब्रेरीज़ और डिपेंडेंसीज़
+## Why render CAD layers Java?
+सिर्फ उन लेयर्स को रेंडर करना जिनकी आपको आवश्यकता है, विज़ुअल क्लटर को कम करता है, पेज लोड को तेज़ बनाता है, और स्टेकहोल्डर्स को डिज़ाइन के सबसे प्रासंगिक भागों पर फोकस करने देता है। चाहे आप क्लाइंट‑फेसिंग प्रेज़ेंटेशन तैयार कर रहे हों या ऑटोमेटेड क्वालिटी‑चेक चला रहे हों, **render CAD layers Java** आपको यह सटीक नियंत्रण देता है कि क्या प्रदर्शित हो।
+
+## Prerequisites
+### Required Libraries and Dependencies
 सुनिश्चित करें कि आपके पास Java Development Kit (JDK) इंस्टॉल है और Maven डिपेंडेंसी मैनेजमेंट के लिए तैयार है।
 
-### पर्यावरण सेटअप आवश्यकताएँ
+### Environment Setup Requirements
 - JDK 8+  
 - IntelliJ IDEA, Eclipse, या कोई अन्य Java IDE  
 - Maven कमांड्स के लिए टर्मिनल या कमांड प्रॉम्प्ट  
 
-### ज्ञान पूर्वापेक्षाएँ
-बुनियादी Java और Maven का ज्ञान मददगार होगा, लेकिन आपको यहाँ सभी CAD‑स्पेसिफिक विवरण मिलेंगे।
+### Knowledge Prerequisites
+बेसिक Java और Maven ज्ञान मददगार होगा, लेकिन आपको यहाँ सभी CAD‑स्पेसिफिक विवरण मिलेंगे।
 
-## GroupDocs.Viewer को Java के लिए सेटअप करना
-### Maven के माध्यम से इंस्टॉल करना
-अपने `pom.xml` में GroupDocs रिपॉजिटरी और Viewer डिपेंडेंसी जोड़ें:
+## Setting Up GroupDocs.Viewer for Java
+### Installing via Maven
+`pom.xml` में GroupDocs रिपॉजिटरी और Viewer डिपेंडेंसी जोड़ें:
 
 ```xml
 <repositories>
@@ -65,11 +68,11 @@ weight: 1
 </dependencies>
 ```
 
-### लाइसेंस प्राप्त करना
-GroupDocs.Viewer एक फ्री ट्रायल, मूल्यांकन के लिए टेम्पररी लाइसेंस, और प्रोडक्शन के लिए फुल‑पर्चेज लाइसेंस प्रदान करता है।
+### Acquiring a License
+GroupDocs.Viewer एक फ्री ट्रायल, इवैल्यूएशन के लिए टेम्पररी लाइसेंस, और प्रोडक्शन के लिए फुल‑पर्चेज लाइसेंस प्रदान करता है।
 
-### बुनियादी इनिशियलाइज़ेशन और सेटअप
-यह एक न्यूनतम उदाहरण है जो DWG फ़ाइल खोलता है और उसे HTML में रेंडर करता है:
+### Basic Initialization and Setup
+यहाँ एक न्यूनतम उदाहरण है जो DWG फ़ाइल खोलता है और उसे HTML में रेंडर करता है:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -83,11 +86,11 @@ try (Viewer viewer = new Viewer("path/to/your/file.dwg")) {
 }
 ```
 
-## कैसे render CAD layers Java
-नीचे चरण‑बद्ध गाइड है जो आपको आउटपुट में बिल्कुल वही लेयर्स चुनने देता है जिन्हें आप दिखाना चाहते हैं।
+## How to render CAD layers Java
+नीचे चरण‑दर‑चरण गाइड है जो आपको आउटपुट में बिल्कुल वही लेयर्स चुनने देता है जिन्हें आप दिखाना चाहते हैं।
 
-### चरण 1: आउटपुट पाथ्स निर्धारित करें
-एक फ़ोल्डर बनाएं जहाँ रेंडर किए गए पेज सेव होंगे:
+### Step 1: Define Output Paths
+रेंडर की गई पेज़ को सेव करने के लिए एक फ़ोल्डर बनाएँ:
 
 ```java
 import java.nio.file.Path;
@@ -99,8 +102,8 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY").resolve("RenderLayers");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-### चरण 2: HTML व्यू ऑप्शन्स कॉन्फ़िगर करें
-व्यूअर को वह कस्टम फ़ाइल‑नाम पैटर्न उपयोग करने को कहें जो आपने अभी बनाया है:
+### Step 2: Configure HTML View Options
+व्यूअर को वह कस्टम फ़ाइल‑नाम पैटर्न उपयोग करने के लिए बताएँ जो आपने अभी बनाया है:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -108,8 +111,8 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### चरण 3: रेंडर करने के लिए लेयर्स निर्दिष्ट करें
-उन लेयर्स के नाम जोड़ें जिन्हें आप प्रदर्शित करना चाहते हैं। `CacheableFactory` `Layer` ऑब्जेक्ट्स बनाता है जिन्हें व्यूअर समझता है:
+### Step 3: Specify Layers to Render
+उन लेयर्स के नाम जोड़ें जिन्हें आप डिस्प्ले करना चाहते हैं। `CacheableFactory` `Layer` ऑब्जेक्ट्स बनाता है जिन्हें व्यूअर समझता है:
 
 ```java
 import java.util.ArrayList;
@@ -122,7 +125,7 @@ layers.add(CacheableFactory.getInstance().newLayer("QUADRANT"));
 viewOptions.getCadOptions().setLayers(layers);
 ```
 
-### चरण 4: डॉक्यूमेंट रेंडर करें
+### Step 4: Render the Document
 अंत में, CAD फ़ाइल खोलें और केवल चयनित लेयर्स को रेंडर करें:
 
 ```java
@@ -133,61 +136,62 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DWG_WITH_LAYOUTS
 }
 ```
 
-## ट्रबलशूटिंग टिप्स
-- **फ़ाइल नहीं मिली** – `Viewer` को पास किए गए एब्सोल्यूट या रिलेटिव पाथ को दोबारा जांचें।  
-- **लेयर नाम समस्याएँ** – लेयर नाम केस‑सेंसिटिव होते हैं; उन्हें अपने CAD सॉफ़्टवेयर में सत्यापित करें।  
-- **मेमोरी एरर** – बहुत बड़े ड्रॉइंग्स के लिए कैशिंग सक्षम करने या JVM हीप साइज बढ़ाने पर विचार करें।
+## Common Issues and Solutions
+- **File Not Found** – `Viewer` को पास किए गए एब्सोल्यूट या रिलेटिव पाथ को दोबारा चेक करें।  
+- **Layer Name Issues** – लेयर नाम केस‑सेन्सिटिव होते हैं; उन्हें अपने CAD सॉफ़्टवेयर में वेरिफ़ाई करें।  
+- **Memory Errors** – बहुत बड़े ड्रॉइंग्स के लिए कैशिंग एनेबल करने या JVM हीप साइज बढ़ाने पर विचार करें।  
+- **Unexpected Blank Pages** – सुनिश्चित करें कि चयनित लेयर्स पर कम से कम एक विज़िबल ऑब्जेक्ट मौजूद हो; नहीं तो रेंडरर पेज को स्किप कर सकता है।
 
-## व्यावहारिक अनुप्रयोग
-विशिष्ट CAD लेयर्स Java को कई परिदृश्यों में उपयोगी है:
+## Practical Applications
+Specific CAD layers Java को रेंडर करना कई परिदृश्यों में उपयोगी है:
 
-1. **इंजीनियरिंग रिव्यूज़** – दृश्य अव्यवस्था के बिना एकल सबसिस्टम पर फोकस करें।  
-2. **आर्किटेक्चरल प्रेजेंटेशन** – क्लाइंट्स के लिए संरचनात्मक या मैकेनिकल कंपोनेंट्स को हाइलाइट करें।  
-3. **क्वालिटी एश्योरेंस** – अनुपालन सत्यापित करने के लिए महत्वपूर्ण फीचर्स को अलग करें।  
-4. **BIM इंटीग्रेशन** – समृद्ध डॉक्यूमेंटेशन के लिए लेयर‑स्पेसिफिक व्यूज़ को BIM टूल्स में फीड करें।
+1. **Engineering Reviews** – बिना विज़ुअल क्लटर के एक सिंगल सबसिस्टम पर फोकस करें।  
+2. **Architectural Presentations** – क्लाइंट्स के लिए स्ट्रक्चरल या मैकेनिकल कंपोनेंट्स को हाइलाइट करें।  
+3. **Quality Assurance** – महत्वपूर्ण फीचर्स को अलग करके कंप्लायंस वेरिफ़ाई करें।  
+4. **BIM Integration** – लेयर‑स्पेसिफिक व्यूज़ को BIM टूल्स में फीड करें ताकि डॉक्यूमेंटेशन रिच हो सके।
 
-## प्रदर्शन संबंधी विचार
-### प्रदर्शन अनुकूलन
+## Performance Considerations
+### Optimizing Performance
 - समान फ़ाइल को बार‑बार प्रोसेस करने से बचने के लिए GroupDocs कैशिंग का उपयोग करें।  
 - यदि स्लोडाउन महसूस हो तो एक बार में रेंडर की जाने वाली लेयर्स की संख्या सीमित रखें।
 
-### संसाधन उपयोग दिशानिर्देश
-- जटिल ड्रॉइंग्स के लिए हीप उपयोग मॉनिटर करें; आवश्यकतानुसार `-Xmx` समायोजित करें।  
-- नवीनतम गार्बेज‑कलेक्शन सुधारों का लाभ उठाने के लिए अपना JVM अपडेट रखें।
+### Resource Usage Guidelines
+- कॉम्प्लेक्स ड्रॉइंग्स के लिए हीप उपयोग मॉनिटर करें; `-Xmx` को आवश्यकतानुसार एडजस्ट करें।  
+- नवीनतम गार्बेज‑कलेक्शन सुधारों का लाभ उठाने के लिए अपना JVM अप‑टू‑डेट रखें।
 
-## निष्कर्ष
-अब आपके पास GroupDocs.Viewer के साथ **render CAD layers Java** करने की एक पूर्ण, प्रोडक्शन‑रेडी विधि है। यह क्षमता इंजीनियरिंग और आर्किटेक्चर टीमों के बीच रिव्यूज़, प्रेजेंटेशन, और इंटीग्रेशन वर्कफ़्लो को सरल बनाती है।
+## Conclusion
+अब आपके पास GroupDocs.Viewer के साथ **render CAD layers Java** करने का एक पूर्ण, प्रोडक्शन‑रेडी मेथड है। यह क्षमता इंजीनियरिंग और आर्किटेक्चर टीमों के बीच रिव्यूज़, प्रेज़ेंटेशन, और इंटीग्रेशन वर्कफ़्लो को सरल बनाती है।
 
-**अगले कदम**  
-अतिरिक्त Viewer फीचर्स—जैसे PDF या PNG में रेंडर करना, DWG लेआउट्स को हैंडल करना, या कस्टम स्टाइल्स लागू करना—की खोज करें ताकि अपने डॉक्यूमेंट पाइपलाइन को और अधिक सशक्त बना सकें।
+**Next Steps**  
+अतिरिक्त Viewer फीचर्स—जैसे PDF या PNG में रेंडरिंग, DWG लेआउट्स को हैंडल करना, या कस्टम स्टाइल्स लागू करना—एक्सप्लोर करें ताकि अपने डॉक्यूमेंट पाइपलाइन को और बेहतर बना सकें।
 
-## अक्सर पूछे जाने वाले प्रश्न
-**प्रश्न: GroupDocs.Viewer क्या है?**  
-उत्तर: यह एक Java लाइब्रेरी है जो 100 से अधिक डॉक्यूमेंट फ़ॉर्मैट्स, जिसमें CAD फ़ाइलें भी शामिल हैं, को देखने, कनवर्ट करने और रेंडर करने में सक्षम बनाती है।
+## Frequently Asked Questions
+**Q: What is GroupDocs.Viewer?**  
+A: It’s a Java library that enables viewing, converting, and rendering of over 100 document formats, including CAD files.
 
-**प्रश्न: क्या मैं DWG के अलावा अन्य फ़ाइल प्रकारों की लेयर्स रेंडर कर सकता हूँ?**  
-उत्तर: हाँ, Viewer DXF, DGN और अन्य CAD फ़ॉर्मैट्स को सपोर्ट करता है, हालांकि लेयर‑सेलेक्शन API विशेष रूप से CAD डॉक्यूमेंट्स के लिए है।
+**Q: Can I render layers from other file types besides DWG?**  
+A: Yes, the Viewer supports DXF, DGN, and other CAD formats, though the layer‑selection API is specific to CAD documents.
 
-**प्रश्न: रेंडरिंग के दौरान त्रुटियों को कैसे संभालूँ?**  
-उत्तर: व्यूअर कॉल्स को try‑catch ब्लॉक्स में रैप करें और `ViewerException` विवरण को लॉग करके समस्या का निदान करें।
+**Q: How should I handle errors during rendering?**  
+A: Wrap viewer calls in try‑catch blocks and log `ViewerException` details to diagnose issues.
 
-**प्रश्न: क्या GroupDocs.Viewer बड़े‑पैमाने पर एंटरप्राइज़ डिप्लॉयमेंट्स के लिए उपयुक्त है?**  
-उत्तर: बिल्कुल। इसे हाई‑थ्रूपुट वातावरण के लिए डिज़ाइन किया गया है और यह सर्वर‑साइड कैशिंग, मल्टी‑थ्रेडिंग, और एंटरप्राइज़ लाइसेंसिंग विकल्प प्रदान करता है।
+**Q: Is GroupDocs.Viewer suitable for large‑scale, enterprise deployments?**  
+A: Absolutely. It’s designed for high‑throughput environments and offers server‑side caching, multi‑threading, and licensing options for enterprises.
 
-**प्रश्न: और अधिक इंटीग्रेशन उदाहरण कहाँ मिलेंगे?**  
-उत्तर: आधिकारिक डॉक्यूमेंटेशन और API रेफ़रेंस में वेब, डेस्कटॉप, और क्लाउड परिदृश्यों के लिए विस्तृत सैंपल्स उपलब्ध हैं।
+**Q: Where can I find more integration examples?**  
+A: The official documentation and API reference contain extensive samples for web, desktop, and cloud scenarios.
 
-## संसाधन
-- [दस्तावेज़ीकरण](https://docs.groupdocs.com/viewer/java/)  
-- [API रेफ़रेंस](https://reference.groupdocs.com/viewer/java/)  
-- [डाउनलोड](https://releases.groupdocs.com/viewer/java/)  
-- [खरीदें](https://purchase.groupdocs.com/buy)  
-- [फ़्री ट्रायल](https://releases.groupdocs.com/viewer/java/)  
-- [टेम्पररी लाइसेंस](https://purchase.groupdocs.com/temporary-license/)  
-- [सपोर्ट फ़ोरम](https://forum.groupdocs.com/c/viewer/9)
+## Resources
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://releases.groupdocs.com/viewer/java/)
+- [Purchase](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**अंतिम अपडेट:** 2026-01-08  
-**टेस्टेड विथ:** GroupDocs.Viewer 25.2 for Java  
-**लेखक:** GroupDocs
+**Last Updated:** 2026-03-16  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs

@@ -1,15 +1,15 @@
 ---
-date: '2026-01-10'
+date: '2026-03-16'
 description: Pelajari cara mengonversi Word menjadi gambar dengan lapisan teks di
   Java menggunakan GroupDocs.Viewer, mengekstrak overlay teks untuk gambar dokumen
   yang dapat dicari dan berkejelasan tinggi.
 keywords:
 - convert word to image
 - extract text overlay
-- render pdf with text
-- improve document image clarity
-- configure view options
-- generate searchable images
+- improve document clarity
+- groupdocs viewer java
+- convert pdf to image
+- how to render word
 title: Konversi Word ke Gambar dengan Lapisan Teks di Java
 type: docs
 url: /id/java/advanced-rendering/render-documents-to-images-with-text-layer-java/
@@ -18,14 +18,14 @@ weight: 1
 
 # Mengonversi Word ke Gambar dengan Lapisan Teks di Java Menggunakan GroupDocs.Viewer
 
-Apakah Anda perlu **mengonversi Word ke gambar** sambil mempertahankan teks yang dapat dipilih dan dapat dicari? Merender DOCX menjadi gambar sering kali kehilangan teks yang mendasarinya, membuat pencarian dan salin‑tempel tidak mungkin. Dalam tutorial ini kami akan menunjukkan cara merender dokumen Word ke gambar PNG **dengan lapisan teks yang ditumpangkan** menggunakan GroupDocs.Viewer untuk Java. Pendekatan ini tidak hanya **meningkatkan kejelasan gambar dokumen** tetapi juga **menghasilkan gambar yang dapat dicari** yang berfungsi sempurna di portal web dan solusi CMS.
+Apakah Anda perlu **mengonversi Word ke gambar** sambil menjaga teks dapat dipilih dan dapat dicari? Merender DOCX menjadi gambar sering kali kehilangan teks yang mendasarinya, membuat pencarian dan menyalin‑tempel menjadi tidak mungkin. Dalam tutorial ini kami akan memandu Anda melalui langkah‑langkah tepat untuk merender dokumen Word ke gambar PNG **dengan lapisan teks yang ditumpangkan** menggunakan GroupDocs.Viewer untuk Java. Pendekatan ini tidak hanya **meningkatkan kejernihan gambar dokumen** tetapi juga **menghasilkan gambar yang dapat dicari** yang berfungsi sempurna di portal web, solusi CMS, dan sistem apa pun yang mengandalkan ekstraksi teks tanpa OCR.
 
 ![Render Documents as Images with Text Layer with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-as-images-with-text-layer-java.png)
 
 ## Jawaban Cepat
-- **Apa arti “convert Word to image”?** Ini membuat gambar raster (PNG) untuk setiap halaman sambil mempertahankan teks asli dalam lapisan tersembunyi.  
-- **Mengapa menambahkan lapisan teks?** Lapisan tumpang tindih membuat gambar dapat dicari dan dapat dipilih, meningkatkan aksesibilitas dan SEO.  
-- **Perpustakaan mana yang menangani ini?** GroupDocs.Viewer untuk Java menyediakan dukungan bawaan untuk ekstraksi teks dan perenderan gambar.  
+- **Apa arti “convert Word to image”?** Itu membuat gambar raster (PNG) untuk setiap halaman sambil mempertahankan teks asli dalam lapisan tersembunyi.  
+- **Mengapa menambahkan lapisan teks?** Lapisan tumpang‑tindih membuat gambar dapat dicari dan dapat dipilih, meningkatkan aksesibilitas dan SEO.  
+- **Pustaka mana yang menangani ini?** GroupDocs.Viewer untuk Java menyediakan dukungan bawaan untuk ekstraksi teks dan perenderan gambar.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengembangan; lisensi berbayar diperlukan untuk produksi.  
 - **Bisakah saya menggunakan kode yang sama untuk PDF?** Ya – opsi tampilan yang sama berlaku untuk PDF, DOCX, dan banyak format lainnya.
 
@@ -36,7 +36,8 @@ Mengonversi file Word ke gambar biasanya menghasilkan bitmap yang hanya berisi p
 - **Output PNG berkualitas tinggi** yang mempertahankan tata letak asli.  
 - **Extract text overlay** secara otomatis, sehingga Anda mendapatkan gambar yang dapat dicari tanpa pemrosesan tambahan.  
 - **API sederhana** – beberapa baris kode Java menangani seluruh alur kerja.  
-- **Dukungan format luas** – pendekatan yang sama bekerja untuk PDF, PPTX, dan lainnya.
+- **Dukungan format luas** – pendekatan yang sama bekerja untuk PDF, PPTX, dan lainnya.  
+- **Kejernihan dokumen yang ditingkatkan** berkat mesin rendering lossless.
 
 ## Prasyarat
 - Java Development Kit (JDK) terpasang dan dikonfigurasi.  
@@ -79,10 +80,10 @@ Pertama, beri tahu viewer di mana menyimpan file PNG yang dihasilkan. Kode di ba
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-> **Tip Pro:** Gunakan `Files.createDirectories(outputDirectory);` jika Anda ingin folder dibuat secara otomatis.
+> **Pro tip:** Gunakan `Files.createDirectories(outputDirectory);` jika Anda ingin folder dibuat secara otomatis.
 
-### Langkah 2: Konfigurasi Opsi Tampilan (Configure View Options)
-Selanjutnya, atur opsi perenderan. Dengan menggunakan `PngViewOptions` dan mengaktifkan `setExtractText(true)`, Anda memberi tahu GroupDocs.Viewer untuk **extract text overlay** dan menyematkannya ke setiap gambar.
+### Langkah 2: Konfigurasikan Opsi Tampilan (Configure View Options)
+Selanjutnya, atur opsi perenderan. Dengan menggunakan `PngViewOptions` dan mengaktifkan `setExtractText(true)`, Anda memberi tahu GroupDocs.Viewer untuk **extract text overlay** dan menyematkannya ke dalam setiap gambar.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
@@ -91,7 +92,7 @@ viewOptions.setExtractText(true);  // Enable extracting text over the image
 ```
 
 ### Langkah 3: Render Dokumen (Convert Word to Image)
-Akhirnya, buka DOCX sumber dan panggil `viewer.view(viewOptions)`. Blok `try‑with‑resources` menjamin bahwa instance `Viewer` ditutup dengan benar.
+Terakhir, buka DOCX sumber dan panggil `viewer.view(viewOptions)`. Blok `try‑with‑resources` menjamin bahwa instance `Viewer` ditutup dengan benar.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
@@ -101,37 +102,45 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
 
 Saat kode selesai, setiap halaman dokumen Word muncul sebagai PNG resolusi tinggi dengan lapisan teks tak terlihat, siap untuk pengindeksan dan pencarian.
 
-## Tips Pemecahan Masalah
+## Mengapa Ini Penting
+Menyematkan lapisan teks yang dapat dicari berarti Anda dapat menyajikan pratinjau gambar ringan **dan** mempertahankan kemampuan pencarian teks penuh. Ini sangat berharga untuk:
+
+1. **Portal web** yang membutuhkan pratinjau thumbnail cepat tanpa mengorbankan SEO.  
+2. **Sistem Manajemen Konten** yang menyimpan snapshot arsip tetapi tetap memerlukan pengindeksan teks.  
+3. **Pengarsipan dokumen** di mana biaya penyimpanan menjadi pertimbangan tetapi ketertemuan tetap tinggi.
+
+## Masalah Umum dan Solusinya
 - **File Not Found:** Periksa kembali jalur ke `SAMPLE_DOCX`. Gunakan jalur absolut untuk kepastian.  
 - **Permission Issues:** Pastikan proses Java dapat menulis ke `YOUR_OUTPUT_DIRECTORY`.  
-- **Version Mismatch:** Verifikasi bahwa versi di `pom.xml` cocok dengan perpustakaan yang Anda unduh.
+- **Version Mismatch:** Verifikasi bahwa versi di `pom.xml` cocok dengan perpustakaan yang Anda unduh.  
+- **Missing Text Layer:** Pastikan `viewOptions.setExtractText(true)` sudah diatur dan folder output dapat ditulisi.
 
 ## Aplikasi Praktis
-1. **Web Portals:** Tampilkan pratinjau dokumen yang dapat dicari pengguna tanpa mengunduh file asli.  
-2. **Content Management Systems:** Simpan snapshot gambar yang dapat dicari untuk keperluan arsip.  
-3. **Document Archiving:** Simpan versi gambar ringan sambil tetap memungkinkan pencarian teks penuh.
+1. **Portal Web:** Tampilkan pratinjau dokumen yang dapat dicari tanpa harus mengunduh file asli.  
+2. **Sistem Manajemen Konten:** Simpan snapshot gambar yang dapat dicari untuk tujuan arsip.  
+3. **Pengarsipan Dokumen:** Simpan versi gambar ringan sambil tetap memungkinkan pencarian teks penuh.
 
 ## Pertimbangan Kinerja
-- Buang objek `Viewer` segera (seperti yang ditunjukkan dengan `try‑with‑resources`).  
+- Buang objek `Viewer` sesegera mungkin (seperti pada contoh `try‑with‑resources`).  
 - Pilih PNG untuk kualitas; beralih ke JPEG jika bandwidth menjadi masalah.  
-- Cache halaman yang dirender ketika dokumen yang sama diminta berulang kali.
+- Cache halaman yang sudah dirender ketika dokumen yang sama diminta berulang kali.
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Bagaimana cara menangani dokumen besar?**  
-A: Render halaman secara bertahap dan lepaskan setiap instance `Viewer` setelah memproses satu batch untuk menjaga penggunaan memori tetap rendah.
+**T: Bagaimana cara menangani dokumen besar?**  
+J: Render halaman secara bertahap dan lepaskan setiap instance `Viewer` setelah memproses satu batch untuk menjaga penggunaan memori tetap rendah.
 
-**Q: Bisakah saya merender PDF dengan pendekatan yang sama?**  
-A: Ya, GroupDocs.Viewer mendukung PDF dan flag `setExtractText(true)` yang sama akan menghasilkan gambar PDF yang dapat dicari.
+**T: Bisakah saya merender PDF dengan pendekatan yang sama?**  
+J: Ya, GroupDocs.Viewer mendukung PDF dan flag `setExtractText(true)` yang sama akan menghasilkan gambar PDF yang dapat dicari.
 
-**Q: Bagaimana jika lapisan teks tidak terlihat pada output?**  
-A: Pastikan `viewOptions.setExtractText(true)` sudah diatur dan folder output memiliki izin menulis.
+**T: Bagaimana jika lapisan teks tidak terlihat pada output?**  
+J: Pastikan `viewOptions.setExtractText(true)` sudah diatur dan folder output memiliki izin menulis.
 
-**Q: Apakah format gambar lain didukung?**  
-A: Selain PNG, Anda dapat menggunakan `JpgViewOptions` atau `BmpViewOptions` dengan mengganti kelas opsi tampilan.
+**T: Apakah format gambar lain didukung?**  
+J: Selain PNG, Anda dapat menggunakan `JpgViewOptions` atau `BmpViewOptions` dengan mengganti kelas opsi tampilan.
 
-**Q: Di mana saya dapat menemukan dokumentasi API yang lebih detail?**  
-A: Dokumen resmi menyediakan contoh lengkap dan detail konfigurasi.
+**T: Di mana saya dapat menemukan dokumentasi API yang lebih detail?**  
+J: Dokumen resmi menyediakan contoh lengkap dan detail konfigurasi.
 
 ## Sumber Daya
 - **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
@@ -144,6 +153,6 @@ A: Dokumen resmi menyediakan contoh lengkap dan detail konfigurasi.
 
 ---
 
-**Terakhir Diperbarui:** 2026-01-10  
-**Diuji Dengan:** GroupDocs.Viewer 25.2 untuk Java  
-**Penulis:** GroupDocs
+**Last Updated:** 2026-03-16  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
