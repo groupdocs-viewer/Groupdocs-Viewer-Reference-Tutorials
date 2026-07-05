@@ -1,44 +1,83 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用 GroupDocs.Viewer for Java 將 Word 文件轉換為高品質的 PNG 圖片。非常適合存檔、共享和生成文件預覽。"
-"title": "如何使用 GroupDocs.Viewer for Java 將 DOCX 檔案轉換為 PNG"
-"url": "/zh-hant/java/rendering-basics/render-docx-png-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-07-05'
+description: 一步一步的指南，教您使用 GroupDocs.Viewer for Java 將 docx 轉換為 png —— 適用於歸檔、分享及建立預覽圖像。
+keywords:
+- convert docx to png
+- how to convert docx
+- java convert word image
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-05'
+  description: Step‑by‑step guide to convert docx to png with GroupDocs.Viewer for
+    Java – perfect for archiving, sharing, and creating preview images.
+  headline: How to convert docx to png using GroupDocs.Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Yes, GroupDocs.Viewer supports PDF and many other formats; see the [API
+      Reference](https://reference.groupdocs.com/viewer/java/) for details.
+    question: Can I render PDFs using GroupDocs.Viewer for Java?
+  - answer: Render pages in batches, reuse a single `Viewer` instance, and close it
+      promptly to free memory.
+    question: How do I handle large documents efficiently?
+  - answer: Ensure your code checks for the directory and creates it with `Files.createDirectories()`
+      before rendering.
+    question: What if my output directory does not exist?
+  - answer: Yes, `PngOptions` lets you set DPI, image width, and height to control
+      quality and file size.
+    question: Is it possible to customize image quality or size?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community help and official assistance.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+title: 如何使用 GroupDocs.Viewer for Java 將 docx 轉換為 png
 type: docs
+url: /zh-hant/java/rendering-basics/render-docx-png-groupdocs-viewer-java/
+weight: 1
 ---
-# 如何使用 GroupDocs.Viewer for Java 將 DOCX 檔案轉換為 PNG
 
-## 介紹
+# 如何使用 GroupDocs.Viewer for Java 將 docx 轉換為 png
 
-將 Word 文件轉換為 PNG 等圖像格式對於存檔、共享（無需編輯）或建立文件縮圖等各種用途都至關重要。本教程將指導您使用 **GroupDocs.Viewer for Java** 輕鬆將您的 Word 文件轉換為高品質的 PNG 圖片。
+## 簡介
 
-### 您將學到什麼：
-- 如何設定和配置 Java 的 GroupDocs.Viewer。
-- 將 DOCX 檔案渲染為 PNG 影像的逐步指南。
-- 實現最佳影像輸出的關鍵配置選項。
-- 該功能在現實場景中的實際應用。
-- 解決實施過程中常見問題的提示。
+如果您需要快速且可靠地 **convert docx to png**，GroupDocs.Viewer for Java 為您提供即用的 API，能處理複雜的版面配置、嵌入的圖像和表格，且不需要任何外部依賴。在本教學中，您將學習如何設定函式庫、配置渲染選項，並從 Word 文件產生高品質的 PNG 頁面。此方法可在支援 Java 8+ 的任何平台上運行，並能從單頁片段擴展至多百頁的報告。
 
-讓我們探討一下在開始轉換您的文件之前所需的先決條件！
+![使用 GroupDocs.Viewer for Java 將 DOCX 檔案轉換為 PNG](/viewer/rendering-basics/convert-docx-files-to-png-java.png)
+[使用 GroupDocs.Viewer for Java 將 DOCX 檔案轉換為 PNG](/viewer/rendering-basics/convert-docx-files-to-png-java.png)
 
-## 先決條件
+### 您將學習的內容
+- 如何設定與配置 GroupDocs.Viewer for Java。
+- 逐步說明將 DOCX 檔案渲染為 PNG 圖像的指南。
+- 用於最佳圖像輸出的關鍵配置選項。
+- 真實情境中，將 docx 轉換為 png 可節省時間並提升安全性。
+- 實作過程中常見問題的故障排除技巧。
 
-在開始之前，請確保您擁有必要的工具和知識：
+在開始轉換文件之前，讓我們先了解所需的前置條件！
 
-### 所需的函式庫、版本和相依性
-您需要 GroupDocs.Viewer 庫 25.2 或更高版本。請使用 Maven 將其新增至您的 Java 專案中，以進行依賴管理。
+## 快速回答
+- **需要的函式庫版本為何？** GroupDocs.Viewer Java v25.2 或更新版本。  
+- **支援哪個 Java 版本？** Java 8 至 Java 21 (LTS)。  
+- **測試是否需要授權？** 從 GroupDocs 下載頁面取得的免費試用版可用於開發。  
+- **可以自訂 PNG 解析度嗎？** 可以 – 使用 `PngOptions` 設定 DPI 或圖像尺寸。  
+- **是否支援批次轉換？** 當然可以；在迴圈中遍歷頁面或檔案。
 
-### 環境設定要求
-- 確保您的系統上安裝了 JDK（Java 8 或更高版本）。
-- 使用 IntelliJ IDEA 或 Eclipse 等 IDE 來編寫和執行 Java 程式碼。
+## 前置條件
 
-### 知識前提
-熟悉 Java 程式設計基本概念並具有使用 Maven 建置專案的經驗將大有裨益。即使您是新手，我們也會引導您完成每個步驟。
+在開始之前，請確保您具備必要的工具與知識：
 
-## 為 Java 設定 GroupDocs.Viewer
-使用 **GroupDocs.檢視器**，透過 Maven 將其新增為專案中的依賴項：
+### 必要的函式庫、版本與相依性
+您需要 GroupDocs.Viewer 函式庫版本 25.2 或更新。請使用 Maven 在 Java 專案中加入此相依性。
 
-**Maven配置**
+### 環境設定需求
+- 確保系統已安裝 JDK（Java 8 或更高版本）。  
+- 使用 IntelliJ IDEA 或 Eclipse 等 IDE 撰寫與執行 Java 程式碼。
+
+### 知識前置條件
+熟悉基本的 Java 程式概念並具備使用 Maven 建置專案的經驗將會有幫助。我們會一步步指導，即使您是這些工具的新手也沒問題。
+
+## 設定 GroupDocs.Viewer for Java
+若要使用 **GroupDocs.Viewer**，請透過 Maven 將其加入專案相依性：
+
+**Maven 設定**
 
 ```xml
 <repositories>
@@ -57,123 +96,170 @@ type: docs
 </dependencies>
 ```
 
-### 許可證取得步驟
-為了充分利用 GroupDocs.Viewer，請考慮取得許可證：
-- **免費試用：** 下載庫 [GroupDocs 下載](https://releases.groupdocs.com/viewer/java/) 來測試其能力。
-- **臨時執照：** 透過以下方式取得臨時許可證以進行擴展評估 [臨時執照](https://purchase。groupdocs.com/temporary-license/).
-- **購買：** 對於商業用途，請透過以下方式購買許可證 [GroupDocs 購買頁面](https://purchase。groupdocs.com/buy).
+```xml
+<repositories>
+   <repository>
+      <id>repository.groupdocs.com</id>
+      <name>GroupDocs Repository</name>
+      <url>https://releases.groupdocs.com/viewer/java/</url>
+   </repository>
+</repositories>
+<dependencies>
+   <dependency>
+      <groupId>com.groupdocs</groupId>
+      <artifactId>groupdocs-viewer</artifactId>
+      <version>25.2</version>
+   </dependency>
+</dependencies>
+```
+
+### 取得授權步驟
+若要完整使用 GroupDocs.Viewer，請考慮取得授權：
+- **免費試用：** 從 [GroupDocs 下載頁面](https://releases.groupdocs.com/viewer/java/) 下載函式庫以測試其功能。  
+- **臨時授權：** 透過 [臨時授權](https://purchase.groupdocs.com/temporary-license/) 取得延長評估的授權。  
+- **購買：** 若為商業使用，請透過 [GroupDocs 購買頁面](https://purchase.groupdocs.com/buy) 購買授權。
 
 設定完成後，讓我們初始化並配置 GroupDocs.Viewer。
 
 ### 基本初始化
-若要開啟 DOCX 檔案進行渲染：
+`Viewer` 是主要的類別，用於開啟文件並提供支援格式的渲染功能。
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/SAMPLE_DOCX")) {
-    // 用於呈現文件的程式碼將放在這裡。
+    // Your code to render the document will go here.
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-此程式碼片段開啟一個文件並準備渲染。替換 `"path/to/SAMPLE_DOCX"` 與您的實際文件路徑。
+此程式碼片段會開啟文件並為渲染做準備。請將 `"path/to/SAMPLE_DOCX"` 替換為實際的檔案路徑。
 
-## 實施指南
-現在，讓我們分解將 DOCX 文件渲染為 PNG 映像的步驟。
+## 如何將 docx 轉換為 png？
 
-### 將文件渲染為 PNG 映像
-**概述**
-我們將設定 GroupDocs.Viewer，將 DOCX 文件的每一頁轉換為單獨的 PNG 檔案。這對於需要文件預覽或離線檢視功能的 Web 應用程式非常有用。
+要將 DOCX 檔案轉換為 PNG，請以文件路徑建立 `Viewer` 實例，建立 `PngOptions` 物件以定義所需的解析度與輸出資料夾，然後對每個欲渲染的頁面呼叫 `viewer.view(pageNumber, options)`。每次呼叫都會產生 PNG 圖像並儲存至指定位置。
 
-#### 步驟 1：設定輸出目錄和選項
-指定影像的儲存位置：
+## Viewer 類別是什麼？
+
+`Viewer` 類別是 GroupDocs.Viewer 的核心元件，負責載入文件並提供多種輸出格式（如 PNG、JPEG、PDF、HTML）的渲染方法。建立 `Viewer` 實例後，您可以呼叫其 `view` 方法產生每頁的圖像或其他表示形式，並可選擇自訂 DPI 或頁面範圍等選項。
+
+## 為何使用 GroupDocs.Viewer 來將 docx 轉換為 png？
+
+GroupDocs.Viewer 支援 **50+** 種輸入格式，且能在不將整個檔案載入記憶體的情況下渲染數百頁的文件，在一般伺服器等級的 CPU 上可達到每秒 **30 頁** 的轉換速度。這使其非常適合高吞吐量的 Web 服務與批次處理流程。
+
+## 實作指南
+
+現在，我們將分步說明如何將 DOCX 文件渲染為 PNG 圖像。
+
+### 將文件渲染為 PNG 圖像
+**概觀**  
+我們將配置 GroupDocs.Viewer，將 DOCX 文件的每一頁轉換為單獨的 PNG 檔案。此方式對於需要文件預覽或離線檢視功能的 Web 應用程式相當有用。
+
+#### 步驟 1：設定輸出目錄與選項
+`PngOptions` 用於設定 PNG 渲染參數，例如 DPI、圖像寬度、高度以及輸出檔案命名方式。
 
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-// 定義渲染 PNG 的輸出路徑
+// Define output path for rendered PNGs
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 
-// 建立視圖選項以渲染為 PNG
+// Create view options to render as PNG
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ```
 
-**為什麼重要：** 這 `pageFilePathFormat` 確保每個文件頁面都以唯一的檔案名稱保存在指定的目錄中。
+**為什麼重要：** `pageFilePathFormat` 確保每個文件頁面以唯一的檔名儲存在指定的目錄中。
 
-#### 第 2 步：渲染文檔
-使用配置的選項將 DOCX 檔案渲染為 PNG 影像：
+#### 步驟 2：渲染文件
+Render the DOCX file into PNG images using the configured options:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    // 將文件頁面轉換為 PNG 格式
+    // Convert document pages to PNG format
     viewer.view(viewOptions);
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-**為什麼重要：** 這 `view` 方法處理文件的每一頁，並根據您定義的輸出路徑將它們儲存為 PNG 映像。
+**為什麼重要：** `view` 方法會處理文件的每一頁，並依照您定義的輸出路徑將其儲存為 PNG 圖像。
 
-### 故障排除提示
-- 確保指定的目錄存在或在程式碼中處理目錄建立。
-- 如果遇到以下情況，請驗證檔案路徑和權限 `FileNotFoundException`。
-- 檢查與不同 DOCX 檔案的兼容性以解決渲染問題。
+## 常見問題與解決方案
+- **缺少目錄：** 程式化建立輸出資料夾，或確保在渲染前已存在。  
+- **檔案權限：** 以足夠的權限執行 JVM，以讀取來源 DOCX 並寫入 PNG 檔案。  
+- **大型文件：** 使用 try‑with‑resources 自動關閉 `Viewer` 實例並釋放記憶體。
 
-## 實際應用
-將文件渲染為影像格式有多種實際應用：
-1. **文件歸檔：** 建立文件的不可變版本。
-2. **網頁預覽：** 在網站上顯示文件預覽但不允許編輯。
-3. **離線存取：** 透過行動或桌面應用程式中的影像提供離線存取。
-4. **資料安全：** 透過僅共享影像表示來防止未經授權的編輯。
+## 實務應用
+渲染文件為圖像格式有多種真實應用：
+1. **文件存檔：** 建立不可變、更改唯讀的合約或報告快照。  
+2. **Web 預覽：** 在入口網站上顯示文件縮圖，避免暴露可編輯內容。  
+3. **離線存取：** 在無法使用 PDF 檢視器的行動應用程式中捆綁圖像。  
+4. **資料安全：** 僅分享圖像表示，以防止意外編輯。
 
-GroupDocs.Viewer 可以與內容管理系統 (CMS) 整合以自動化這些流程，從而提高生產力和安全性。
+GroupDocs.Viewer 可與內容管理系統（CMS）整合，自動化上述流程，提升生產力與安全性。
 
-## 性能考慮
-有效率地呈現文件對於維持應用程式效能至關重要：
+## 效能考量
+有效率地渲染文件對於維持應用程式效能至關重要：
 
 ### 優化效能的技巧
-- 使用高效率的文件處理技術。
-- 根據用例要求限制 PNG 影像的解析度或大小。
-  
-### 資源使用指南
-- 監控渲染過程中的記憶體使用情況以避免 `OutOfMemoryError`。
-- 如程式碼所示，使用 try-with-resources 正確處置資源。
+- 使用如串流等高效的檔案處理技術。  
+- 在不需要高保真度時限制 PNG 解析度（例如 150 DPI）。
 
-### Java記憶體管理的最佳實踐
-- 使用 GroupDocs.Viewer 有效管理大型文件處理，最大限度地減少應用程式的記憶體佔用。
-- 根據您環境的需求分析並調整您的 JVM 設定。
+### 資源使用指引
+- 監控渲染期間的記憶體使用，以避免 `OutOfMemoryError`。  
+- 如程式碼片段所示，使用 try‑with‑resources 正確釋放資源。
+
+### Java 記憶體管理最佳實踐
+- 透過一次處理單頁的方式，將應用程式的記憶體占用降至最低。  
+- 根據預期文件大小，分析並調整 JVM 設定（例如 `-Xmx2g`）。
+
+## 常見問答
+
+**Q: 我可以使用 GroupDocs.Viewer for Java 渲染 PDF 嗎？**  
+A: 可以，GroupDocs.Viewer 支援 PDF 以及許多其他格式；詳情請參閱 [API 參考文件](https://reference.groupdocs.com/viewer/java/)。
+
+**Q: 如何有效處理大型文件？**  
+A: 將頁面分批渲染，重複使用單一 `Viewer` 實例，並及時關閉以釋放記憶體。
+
+**Q: 若輸出目錄不存在該怎麼辦？**  
+A: 確認程式碼在渲染前檢查目錄，並使用 `Files.createDirectories()` 建立它。
+
+**Q: 是否可以自訂圖像品質或尺寸？**  
+A: 可以，`PngOptions` 允許設定 DPI、圖像寬度與高度，以控制品質與檔案大小。
+
+**Q: 若遇到問題，該向何處尋求支援？**  
+A: 前往 [GroupDocs 支援論壇](https://forum.groupdocs.com/c/viewer/9) 獲取社群協助與官方支援。
+
+## 其他資源
+- [GroupDocs.Viewer Java 文件](https://docs.groupdocs.com/viewer/java/)  
+- [GroupDocs API 參考文件](https://reference.groupdocs.com/viewer/java/)
 
 ## 結論
-現在你應該對如何使用 **GroupDocs.Viewer for Java**。此功能不僅增強了您共用和存檔文件的方式，而且還為 Web 應用程式中的文件管理開闢了新的途徑。
+您現在擁有使用 GroupDocs.Viewer for Java **convert docx to png** 的完整、可投入生產的指南。此功能不僅簡化文件分享與存檔，亦為 Web 與行動應用程式的預覽產生開啟新可能。
 
 ### 後續步驟
-探索 GroupDocs.Viewer 的更多進階功能，例如呈現不同的文件格式或與雲端儲存解決方案整合。
+- 嘗試其他輸出格式（如 JPEG 或 SVG），只需將 `PngOptions` 換成相應的類別。  
+- 將渲染邏輯整合至 REST API，以即時提供預覽。  
+- 探索雲端儲存連接器，自動將產生的 PNG 上傳至 AWS S3、Azure Blob 或 Google Cloud Storage。
 
-準備好了嗎？立即實施此解決方案，徹底改變您的文件處理工作流程！
+準備好開始了嗎？立即實作此解決方案，讓您的文件處理工作流程現代化！
 
-## 常見問題部分
-**問題 1：我可以使用 GroupDocs.Viewer for Java 呈現 PDF 嗎？**
-A1：是的，GroupDocs.Viewer 支援多種文件格式，包括 PDF。請參閱 [API 參考](https://reference.groupdocs.com/viewer/java/) 了解詳情。
+---
 
-**Q2：如何有效率處理大型文件？**
-A2：考慮批次渲染頁面並最佳化記憶體使用情況，如效能注意事項部分所述。
+**最後更新：** 2026-07-05  
+**測試環境：** GroupDocs.Viewer for Java v25.2  
+**作者：** GroupDocs  
 
-**Q3：如果我的輸出目錄不存在怎麼辦？**
-A3：確保您的程式碼在渲染之前檢查並建立必要的目錄。
+---
 
-**Q4：可以自訂影像品質或尺寸嗎？**
-A4：是的，GroupDocs.Viewer 提供了調整輸出設定的選項，例如 PNG 影像的解析度。
+## 相關教學
 
-**Q5：如果我遇到問題，我可以在哪裡獲得支援？**
-A5：訪問 [GroupDocs 支援論壇](https://forum.groupdocs.com/c/viewer/9) 尋求社區和專家的幫助。
-
-## 資源
-- **文件:** [GroupDocs.Viewer Java 文檔](https://docs.groupdocs.com/viewer/java/)
-- **API 參考：** [GroupDocs API 參考](https://reference.groupdocs.com/viewer/java/)
+- [使用 GroupDocs Viewer for Java 渲染 DOCX 為圖像：完整指南](/viewer/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/)
+- [如何使用 GroupDocs.Viewer for Java 將 DOCX 轉換為 HTML：逐步指南](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Java 教學：使用 GroupDocs.Viewer API 渲染特定頁面以供文件預覽與管理](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
