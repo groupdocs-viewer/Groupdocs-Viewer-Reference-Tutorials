@@ -1,47 +1,54 @@
 ---
-"date": "2025-04-24"
-"description": "GroupDocs.Viewer for Java kullanarak PDF sayfalarını sorunsuz bir şekilde nasıl yeniden sıralayacağınızı öğrenin. Bu kılavuz, kurulum, uygulama ve performans optimizasyonunu kapsar."
-"title": "Java için GroupDocs.Viewer ile Verimli PDF Sayfa Yeniden Sıralama&#58; Kapsamlı Bir Kılavuz"
-"url": "/tr/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/"
-"weight": 1
+date: '2026-03-22'
+description: GroupDocs.Viewer for Java kullanarak PDF sayfa sırasını sorunsuz bir
+  şekilde nasıl değiştireceğinizi öğrenin. Bu kılavuz kurulum, uygulama ve performans
+  optimizasyonunu kapsar.
+keywords:
+- PDF page reordering
+- GroupDocs.Viewer Java
+- Java PDF rendering
+title: GroupDocs.Viewer for Java ile PDF sayfa sırasını değiştirin – Kılavuz
 type: docs
+url: /tr/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/
+weight: 1
 ---
-# Java için GroupDocs.Viewer ile Verimli PDF Sayfa Yeniden Sıralama
 
-## giriiş
+# PDF sayfa sırasını GroupDocs.Viewer for Java ile değiştirin
 
-Belgeleri PDF'lere dönüştürürken sayfaların sırasını yönetmek zor olabilir. İster sunum slaytlarını yeniden düzenliyor olun, ister bir rapordaki bölümleri hizalıyor olun, doğru sayfa sırasını korumak çok önemlidir. **Java için GroupDocs.Viewer**PDF oluşturma sırasında sayfaları zahmetsizce yeniden sıralayabilir, belgelerinizin her zaman tasarlandığı gibi sunulmasını sağlayabilirsiniz.
+Belgeleri PDF'ye dönüştürürken sayfaları yeniden sıralamak baş ağrısı olabilir, özellikle belirli bir akışa uymak için **change pdf page sequence** değiştirmeniz gerektiğinde—örneğin bir sunumdaki slaytları takas etmek ya da bir rapordaki bölümleri taşımak gibi. **GroupDocs.Viewer for Java** ile PDF oluşturma sırasında sayfaların tam sırasını kontrol edebilirsiniz, böylece çıktınız her zaman istediğiniz gibi görünür.
 
-Bu kapsamlı eğitim, bir PDF belgesindeki sayfaları yeniden düzenlemek için GroupDocs.Viewer'ı kullanmanıza rehberlik edecektir. Şunları nasıl yapacağınızı öğreneceksiniz:
-- GroupDocs.Viewer'ı Java için kurun ve yapılandırın
-- Belgeleri PDF'lere dönüştürürken sayfa yeniden sıralamasını uygulayın
-- Büyük ölçekli uygulamalar için performansı optimize edin
+![PDF Page Reordering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/pdf-page-reordering-java.png)
 
-Bu kılavuzun sonunda, PDF içeriğini güvenle düzenleme konusunda sağlam bir anlayışa sahip olacaksınız. Önce ön koşullara bir göz atalım.
+## Hızlı Yanıtlar
+- **What does “change pdf page sequence” mean?** Bu, PDF sayfalarının orijinal belge sırasına göre değil, özel bir sırada render edilmesini ifade eder.  
+- **Which library supports this out‑of‑the‑box?** GroupDocs.Viewer for Java, yerleşik sayfa‑yeniden sıralama yetenekleri sunar.  
+- **Do I need a license?** Değerlendirme için ücretsiz deneme çalışır; kalıcı bir lisans tüm sınırlamaları kaldırır.  
+- **Can I reorder pages from any source format?** Evet—DOCX, PPTX, XLSX ve daha birçok format desteklenir.  
+- **Is it suitable for large documents?** Uygun bellek yönetimiyle özellik yüzlerce sayfaya ölçeklenebilir.
 
-## Ön koşullar
+## PDF sayfa sırasını değiştirmek ne anlama geliyor?
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+PDF sayfa sırasını değiştirmek, render motoruna sayfaları kaynak dosyada göründüklerinden farklı bir sırada çıkarmasını söylemek anlamına gelir. Bu, bir belgenin mantıksal akışı fiziksel düzeninden farklı olduğunda faydalıdır.
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
-- **Java için GroupDocs.Viewer**:Projenizde 25.2 veya üzeri bir sürümün bulunduğundan emin olun.
-- **Java Geliştirme Kiti (JDK)**: Sürüm 8 veya üzeri önerilir.
+## Sayfaları yeniden sıralamak için GroupDocs.Viewer for Java neden kullanılmalı?
 
-### Çevre Kurulum Gereksinimleri
-- IntelliJ IDEA, Eclipse veya NetBeans gibi modern bir Entegre Geliştirme Ortamı (IDE)
-- Java programlama kavramlarının ve Maven derleme aracının temel anlayışı
+- **No extra PDF libraries needed** – Görüntüleyici, render ve sıralamayı tek adımda yönetir.  
+- **High fidelity** – Görsel öğeler yeniden sıralamadan sonra da aynı kalır.  
+- **Performance‑focused** – Büyük toplu işlemler için sunucu tarafı işlemeye göre optimize edilmiştir.  
+- **Cross‑format support** – 100'den fazla dosya türüyle çalışır, böylece Word, Excel, PowerPoint vb. dosyalardan sayfaları yeniden sıralayabilirsiniz.
 
-### Bilgi Önkoşulları
-- Java dosya işleme ve G/Ç işlemlerine aşinalık
-- Bağımlılık yönetimi için Maven proje yapısının anlaşılması
+## Önkoşullar
 
-## Java için GroupDocs.Viewer Kurulumu
+- **GroupDocs.Viewer for Java** (version 25.2 or newer)  
+- **JDK 8+**  
+- IntelliJ IDEA, Eclipse veya NetBeans gibi bir IDE  
+- Temel Maven bilgisi  
 
-GroupDocs.Viewer'ı Java projelerinizde kullanmaya başlamak için ortamınızı doğru şekilde yapılandırmanız gerekir. Başlamak için yapmanız gerekenler şunlardır:
+## GroupDocs.Viewer for Java Kurulumu
 
 ### Maven Kurulumu
 
-Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` dosya:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,24 +67,21 @@ Aşağıdaki yapılandırmayı şuraya ekleyin: `pom.xml` dosya:
 </dependencies>
 ```
 
-### Lisans Edinimi
+### Lisans Alımı
 
-GroupDocs.Viewer'ı kullanmak için:
-- **Ücretsiz Deneme**: Özellikleri keşfetmek için deneme sürümünü indirin.
-- **Geçici Lisans**: Sınırlama olmaksızın genişletilmiş değerlendirme için edinin.
-- **Satın almak**:İhtiyaçlarınıza göre abonelik planlarından birini seçin.
+To unlock full functionality you’ll need a license:
 
-Ortamınızı ayarladıktan sonra, söz konusu özelliği uygulamaya geçelim.
+- **Free Trial** – kredi kartı gerektirmeden tüm özellikleri keşfedin.  
+- **Temporary License** – kısa vadeli testler için idealdir.  
+- **Purchase** – üretim ihtiyaçlarınıza uygun bir abonelik seçin.
 
-## Uygulama Kılavuzu
+## GroupDocs.Viewer ile pdf sayfa sırasını nasıl değiştirirsiniz
 
-### PDF'lerde Sayfaları Yeniden Sıralama
+Aşağıda, orijinal kodu değiştirmeden adım adım bir rehber bulunmaktadır.
 
-PDF oluşturma sırasında sayfaları yeniden sıralamak GroupDocs.Viewer'ın güçlü bir yeteneğidir. Bunu nasıl uygulayabileceğiniz aşağıda açıklanmıştır:
+### Adım 1: Viewer'ı başlatın ve çıktı seçeneklerini tanımlayın
 
-#### Adım 1: Görüntüleyiciyi ve Seçenekleri Başlatın
-
-Bir tane oluşturarak başlayın `Viewer` nesne, belge yolunu belirterek. Çıktı seçeneklerini kullanarak tanımlayın `PdfViewOptions`.
+First, create a `Viewer` instance and set up `PdfViewOptions` with the desired output path.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -94,81 +98,84 @@ public class ReorderPagesFeature {
         PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### Adım 2: Sayfa Sırasını Tanımlayın
+### Adım 2: Özel sayfa sırasını belirtin
 
-Kullanın `view` sayfaların sırasını belirtmek için yöntem. Bu örnekte, sayfa 2'yi ve ardından sayfa 1'i oluşturuyoruz.
+Use the `view` method and pass the page numbers in the order you want them rendered. In this example we render page 2 first, then page 1.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    // Sayfaları yeniden sırala: önce 2. sayfayı, sonra 1. sayfayı oluştur
+    // Reorder pages: render page 2 first, then page 1
     viewer.view(viewOptions, 2, 1);
 }
 ```
 
-#### Açıklama
+**Ne oluyor?**  
+- `PdfViewOptions` görüntüleyiciye bir PDF dosyası üretmesini söyler.  
+- `viewer.view(viewOptions, 2, 1)` motoru sayfa 2'yi sayfa 1'den önce çıkarmaya yönlendirir, böylece etkili bir şekilde **changing the pdf page sequence**.
 
-- **`PdfViewOptions`**PDF oluşturma işlemi için çıktı ayarlarını yapılandırır.
-- **`viewer.view(viewOptions, 2, 1)`**: Sayfaların önce 2. sayfa, sonra 1. sayfa sırasına göre işlenmesi gerektiğini belirtir.
+### Adım 3: Çalıştırın ve doğrulayın
 
-### Sorun Giderme İpuçları
+`main` metodunu çalıştırın. Tamamlandıktan sonra `output.pdf` dosyasını açın ve sayfaların yeni sırada göründüğünü göreceksiniz.
 
-- Belge yolunuzun doğru ve erişilebilir olduğundan emin olun.
-- Çıktı dosyalarını belirtilen dizine yazmak için gerekli izinlere sahip olup olmadığınızı kontrol edin.
-- GroupDocs.Viewer kütüphane sürümünün proje kurulumunuzla uyumlu olduğunu doğrulayın.
+## Yaygın tuzaklar ve sorun giderme
 
-## Pratik Uygulamalar
+- **Incorrect file path** – `YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX`'in mevcut bir dosyaya işaret ettiğini iki kez kontrol edin.  
+- **Write permissions** – Uygulamanın `YOUR_OUTPUT_DIRECTORY` içinde dosya oluşturma iznine sahip olduğundan emin olun.  
+- **Version mismatch** – Burada kullanılan API, GroupDocs.Viewer 25.2 veya üzeri gerektirir; eski sürümler `view(..., int...)` aşırı yüklemesini içermez.  
+- **Large documents** – Yerel kaynakları hızlıca serbest bırakmak için `Viewer`'ı bir try‑with‑resources bloğunda kapatın (gösterildiği gibi).
 
-GroupDocs.Viewer'ın sayfa yeniden sıralama özelliği çeşitli senaryolarda uygulanabilir:
+## Pratik kullanım senaryoları
 
-1. **Eğitim Materyalleri**: Ders notlarını veya slaytları daha mantıksal bir akış için yeniden düzenleyin.
-2. **İş Raporları**: Bölümleri, önemli bulguları etkili bir şekilde vurgulayacak şekilde ayarlayın.
-3. **Yasal Belgeler**: Maddeleri veya makaleleri yasal gerekliliklere göre hizalayın.
+| Senaryo | Sıralamanın nasıl yardımcı olduğu |
+|----------|----------------------|
+| **Training decks** | Orijinal PowerPoint'i düzenlemeden slaytları değiştirin. |
+| **Legal contracts** | Maddeleri, yargı bölgesine özgü sıralama kurallarına uymak için taşıyın. |
+| **Annual reports** | Ayrı kaynak dosyalardan oluşturduktan sonra yönetici özetini ön tarafa yerleştirin. |
 
-Bu uygulamalar GroupDocs.Viewer'ın çok yönlülüğünü ve belge yönetim sistemleriyle entegrasyon potansiyelini göstermektedir.
+## Performans ipuçları
 
-## Performans Hususları
+- **Reuse Viewer instances** bir toplu işlemde çok sayıda belge işlenirken JVM yükünü azaltmak için Viewer örneklerini yeniden kullanın.  
+- **Stream output** PDF'yi diske yazmadan HTTP üzerinden göndermeniz gerekiyorsa doğrudan bir `ByteArrayOutputStream`'e akıtın.  
+- **Profile memory** VisualVM gibi araçlarla JVM yığın boyutunun büyük dosyalar için uygun şekilde ayarlandığından emin olun.
 
-Büyük belgelerle çalışırken performansı optimize etmek çok önemlidir:
-- Java'da kaynakları düzgün bir şekilde kapatmak gibi etkili bellek yönetimi uygulamalarını kullanın.
-- G/Ç işlemlerini azaltmak için dosya işlemeyi optimize edin.
-- Darboğazları belirlemek ve işlem hızını artırmak için uygulamanızın profilini çıkarın.
+## Sonuç
 
-En iyi uygulamaları takip ederek, kapsamlı belge setleriyle bile sorunsuz bir çalışma sağlayabilirsiniz.
-
-## Çözüm
-
-Bu eğitimde, Java için GroupDocs.Viewer kullanarak bir PDF'deki sayfaların nasıl yeniden sıralanacağını inceledik. Kütüphaneyi kurmayı, sayfa yeniden sıralamayı uygulamayı ve bunu gerçek dünya senaryolarında uygulamayı öğrendiniz. Daha fazla araştırma için, belge işleme yeteneklerini geliştirmek için GroupDocs.Viewer'ı diğer Java kütüphaneleri veya uygulamalarıyla entegre etmeyi düşünün.
-
-Yeni becerilerinizi uygulamaya koymaya hazır mısınız? Neler başarabileceğinizi görmek için farklı belgeler ve yapılandırmalarla denemeler yapmaya başlayın!
+Artık GroupDocs.Viewer for Java ile **change pdf page sequence** nasıl yapılacağını biliyorsunuz. Viewer'ı kurarak, `PdfViewOptions` tanımlayarak ve istediğiniz sayfa numaralarını geçirerek nihai PDF düzeni üzerinde tam kontrol elde edersiniz. Farklı sıralamalarla deney yapın, bu tekniği diğer Viewer özellikleriyle birleştirin ve belge‑işleme hatlarınıza entegre ederek maksimum esneklik sağlayın.
 
 ## SSS Bölümü
 
-**1. GroupDocs.Viewer için geçici lisans nasıl eklerim?**
+**1. GroupDocs.Viewer için geçici bir lisansı nasıl eklerim?**
 
-Geçici bir lisansı şuradan alabilirsiniz: [GroupDocs web sitesi](https://purchase.groupdocs.com/temporary-license/) Değerlendirme sınırlamalarını kaldırmak için.
+Değerlendirme sınırlamalarını kaldırmak için [GroupDocs web sitesinden](https://purchase.groupdocs.com/temporary-license/) geçici bir lisans alabilirsiniz.
 
-**2. GroupDocs.Viewer sayfaları yeniden sıralamak için hangi dosya biçimlerini destekler?**
+**2. GroupDocs.Viewer, sayfa yeniden sıralama için hangi dosya formatlarını destekliyor?**
 
-DOCX, XLSX, PPTX ve daha fazlası dahil olmak üzere çok sayıda formatı destekler. Tam listeyi şu adreste kontrol edin: [API referansı](https://reference.groupdocs.com/viewer/java/).
+DOCX, XLSX, PPTX ve daha fazlası dahil olmak üzere birçok formatı destekler. Tam listeyi [API referansında](https://reference.groupdocs.com/viewer/java/) kontrol edin.
 
-**3. Diğer belge türlerinden dönüştürme yapmadan PDF sayfalarını yeniden sıralayabilir miyim?**
+**3. PDF sayfalarını diğer belge türlerinden dönüştürmeden yeniden sıralayabilir miyim?**
 
-Evet, GroupDocs.Viewer mevcut PDF'lerin doğrudan düzenlenmesine olanak tanır.
+Evet, GroupDocs.Viewer mevcut PDF'leri doğrudan manipüle etmenize izin verir.
 
-**4. GroupDocs.Viewer'ı Maven ile kurarken sık karşılaşılan hatalar nelerdir?**
+**4. Maven ile GroupDocs.Viewer kurarken yaygın hatalar nelerdir?**
 
-Sizin emin olun `pom.xml` doğru depo ve bağımlılık yapılandırmalarını içerir.
+`pom.xml` dosyanızın doğru depo ve bağımlılık yapılandırmalarını içerdiğinden emin olun.
 
 **5. Büyük PDF dosyalarını yeniden sıralarken performansı nasıl artırabilirim?**
 
-Java bellek yönetimini optimize edin, dosya işlemlerini en aza indirin ve verimli kodlama uygulamalarını kullanın.
+Java bellek yönetimini optimize edin, dosya işlemlerini en aza indirin ve verimli kodlama uygulamaları kullanın.
 
 ## Kaynaklar
 
-- **Belgeleme**: [GroupDocs Görüntüleyici Belgeleri](https://docs.groupdocs.com/viewer/java/)
-- **API Referansı**: [GroupDocs API Başvurusu](https://reference.groupdocs.com/viewer/java/)
-- **GroupDocs.Viewer'ı indirin**: [Bültenler Sayfası](https://releases.groupdocs.com/viewer/java/)
-- **Lisans Satın Al**: [GroupDocs Viewer'ı satın al](https://purchase.groupdocs.com/buy)
-- **Ücretsiz Deneme**: [GroupDocs Ücretsiz Deneme](https://releases.groupdocs.com/viewer/java/)
-- **Geçici Lisans**: [Geçici Lisans Talebi](https://purchase.groupdocs.com/temporary-license/)
-- **Destek Forumu**: [GroupDocs Desteği](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download GroupDocs.Viewer**: [Releases Page](https://releases.groupdocs.com/viewer/java/)
+- **Purchase License**: [Buy GroupDocs Viewer](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support Forum**: [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Son Güncelleme:** 2026-03-22  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs

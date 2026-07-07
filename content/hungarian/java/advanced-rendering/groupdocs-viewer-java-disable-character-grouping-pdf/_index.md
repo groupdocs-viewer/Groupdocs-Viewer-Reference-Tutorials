@@ -1,47 +1,51 @@
 ---
-date: '2025-12-21'
-description: Ismerje meg, hogyan lehet letiltani a csoportosítást a PDF-ekben a GroupDocs.Viewer
-  for Java segítségével, a PDF renderelési beállításokból származó Java HTML használatával
-  a pontos szövegábrázolás érdekében.
+date: '2026-03-22'
+description: Tanulja meg, hogyan generálhat HTML-t PDF‑ből, és hogyan tilthatja le
+  a karaktercsoportosítást a GroupDocs Viewer for Java használatával a pontos szövegábrázolás
+  érdekében.
 keywords:
 - disable character grouping PDFs
 - GroupDocs Viewer Java configuration
 - precise text representation in PDFs
-title: Hogyan tiltsuk le a csoportosítást PDF-ekben a GroupDocs.Viewer for Java segítségével
+title: HTML generálása PDF‑ből és a csoportosítás letiltása – GroupDocs Java
 type: docs
 url: /hu/java/advanced-rendering/groupdocs-viewer-java-disable-character-grouping-pdf/
 weight: 1
 ---
 
-# Hogyan tiltsuk le a csoportosítást PDF-ekben a GroupDocs.Viewer for Java segítségével
+# HTML generálása PDF-ből és a csoportosítás letiltása a GroupDocs Viewer for Java segítségével
 
-Amikor **a csoportosítás letiltásának módjára** van szükség a PDF-ek renderelése során, különösen összetett írásrendszerek vagy ősi nyelvek esetén, a pontos karakterelhelyezés elengedhetetlen. Az alapértelmezett *Character Grouping* funkció helytelenül egyesítheti a karaktereket, ami a tartalom félreértelmezéséhez vezet. Ebben az útmutatóban lépésről‑lépésre megmutatjuk, hogyan tiltható le a csoportosítás a GroupDocs.Viewer for Java használatával, hogy minden glif pontosan a helyén maradjon.
+Sok projektben szükség van **HTML generálására PDF-ből**, miközben minden glif pontosan ott marad, ahol lennie kell. Ez különösen igaz összetett írásrendszerekre, ősi nyelvekre vagy jogi dokumentumokra, ahol egyetlen rosszul elhelyezett karakter is megváltoztathatja a jelentést. Ebben az útmutatóban végigvezetünk a PDF-ek HTML-re történő renderelésének teljes folyamatán a GroupDocs Viewer for Java segítségével, és megmutatjuk, **hogyan lehet letiltani a csoportosítást**, hogy minden karakter önálló elemként legyen kezelve.
 
-![Pontos renderelési technikák a GroupDocs.Viewer for Java-val](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
+![Precise Rendering Techniques with GroupDocs.Viewer for Java](/viewer/advanced-rendering/precise-rendering-techniques-java.png)
 
 ## Gyors válaszok
-- **Mi a “disable grouping” funkció?** A renderelőt arra kényszeríti, hogy minden karaktert önálló elemként kezeljen, megőrizve a pontos elrendezést.  
-- **Melyik API beállítás szabályozza ezt?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
-- **Szükségem van licencre?** A próba verzió tesztelésre működik, de a termeléshez teljes licenc szükséges.  
-- **Generálhatok Java HTML-t PDF-ből egyszerre?** Igen – használja a `HtmlViewOptions` osztályt HTML kimenet létrehozásához a csoportosítás letiltása mellett.  
-- **Ez a funkció csak PDF-ekre korlátozódik?** Elsősorban PDF-ekre vonatkozik, de a viewer sok más formátumot is támogat.
+- **Mi a “disable grouping” funkció?** A renderelő arra kényszeríti a karaktereket, hogy önálló elemek legyenek, megőrizve a pontos elrendezést.  
+- **Melyik API opció szabályozza ezt?** `viewOptions.getPdfOptions().setDisableCharsGrouping(true)`.  
+- **Szükségem van licencre?** A próbaverzió tesztelésre működik, de a termeléshez teljes licenc szükséges.  
+- **Generálhatok HTML-t PDF-ből egyszerre?** Igen – használja a `HtmlViewOptions`-t HTML kimenet létrehozásához a csoportosítás letiltása mellett.  
+- **Ez a funkció csak PDF-ekre korlátozódik?** Elsősorban PDF-ekre vonatkozik, de a megjelenítő sok más formátumot is támogat.
 
 ## Bevezetés
 
-PDF dokumentumokkal dolgozva a renderelés pontossága kulcsfontosságú – különösen összetett szövegszerkezetek, például hieroglifák vagy olyan nyelvek esetén, amelyek pontos karakterábrázolást igényelnek. A „Character Grouping” funkció gyakran problémákat okoz, mivel helytelenül csoportosítja a karaktereket, ami a dokumentum tartalmának félreértelmezéséhez vezet. Ez különösen problémás lehet azok számára, akiknek a dokumentumok szövegelrendezésének pontos másolására van szükségük.
+PDF-dokumentumokkal dolgozva a renderelés pontossága kritikus – különösen összetett szövegszerkezetek, például hieroglifák vagy olyan nyelvek esetén, amelyek pontos karakterábrázolást igényelnek. A „Character Grouping” funkció gyakran problémákat okoz, mivel a karaktereket helytelenül csoportosítja, ami a dokumentum tartalmának félreértelmezéséhez vezet. Ez különösen problémás lehet azok számára, akiknek a dokumentumok szövegelrendezésének pontos másolására van szükségük.
 
 ### Előfeltételek
+
+Mielőtt a kódmegvalósításba merülnél, győződj meg arról, hogy megfelelsz a következő követelményeknek:
 - **Könyvtárak és függőségek**: Szüksége lesz a GroupDocs.Viewer for Java 25.2 vagy újabb verziójára.  
-- **Környezet beállítása**: Győződjön meg róla, hogy telepítve van egy Java Development Kit (JDK), és az IDE-je Maven projektekhez van konfigurálva.  
-- **Tudás előfeltételek**: Alapvető Java programozási ismeretek, különösen a fájlutak kezelése és külső könyvtárak használata.  
+- **Környezet beállítása**: Győződjön meg róla, hogy telepítve van a Java Development Kit (JDK), és az IDE-je Maven projektekhez van konfigurálva.  
+- **Tudás előfeltételek**: Alapvető Java programozási ismeretek, különösen a fájlutak kezelése és külső könyvtárak használata.
 
-## Hogyan tiltsuk le a csoportosítást PDF renderelésnél
+## Hogyan generáljunk HTML-t PDF-ből a GroupDocs Viewer segítségével
 
-### A GroupDocs.Viewer for Java beállítása
+A PDF-ből HTML generálása kétlépéses folyamat: először konfiguráljuk a megjelenítőt, majd rendereljük a dokumentumot. A kulcs, hogy a renderelés előtt letiltsuk a karaktercsoportosítást, így a HTML kimenet karakterről karakterre tükrözi az eredeti PDF elrendezését.
+
+### GroupDocs.Viewer for Java beállítása
 
 #### Telepítés Maven segítségével
 
-Először integrálja a szükséges könyvtárat a projektbe. Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
+Először integráld a szükséges könyvtárat a projektedbe. Add hozzá a következő konfigurációt a `pom.xml` fájlodhoz:
 
 ```xml
 <repositories>
@@ -60,15 +64,16 @@ Először integrálja a szükséges könyvtárat a projektbe. Adja hozzá a köv
 </dependencies>
 ```
 
-#### Licenc beszerzése
+#### Licenc megszerzése
 
-- **Ingyenes próba**: Kezdje az ingyenes próbaverzióval a funkciók teszteléséhez.  
+A GroupDocs.Viewer teljes körű használatához fontold meg a licenc beszerzését:
+- **Ingyenes próbaverzió**: Kezdje az ingyenes próbaverzióval a funkciók teszteléséhez.  
 - **Ideiglenes licenc**: Kérjen ideiglenes licencet, ha több időre van szüksége.  
 - **Vásárlás**: Hosszú távú projektekhez ajánlott licencet vásárolni.
 
-#### Alap inicializálás és beállítás
+#### Alapvető inicializálás és beállítás
 
-Kezdje a projekt környezet beállításával:
+Az alábbi kódrészlet egy kész‑a‑futtatásra példa, amely bemutatja a teljes munkafolyamatot – a kimeneti mappa beállításától a PDF HTML‑re rendereléséig a karaktercsoportosítás letiltásával:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,39 +96,41 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 
 #### Funkció: Karaktercsoportosítás letiltása
 
-##### 1. lépés: Kimeneti könyvtár meghatározása
+Az alábbiakban részletezzük a példakód minden sorát, hogy megértsd **miért** használjuk, és **hogyan** járul hozzá a PDF‑ből HTML generálásához a nemkívánatos karakterösszevonás nélkül.
+
+##### 1. lépés: Kimeneti könyvtár meghatározása  
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("DisableCharactersGrouping");
 ```
 
-**Miért?** Ez biztosítja, hogy a kimenet rendezett és könnyen hozzáférhető legyen.
+**Miért?** Ez biztosítja, hogy a renderelt HTML‑fájlok egy dedikált mappában legyenek tárolva, így később könnyen megtalálhatók és kezelhetők.
 
-##### 2. lépés: Fájlútvonal formátum beállítása
+##### 2. lépés: Fájlútvonal formátum beállítása  
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-**Miért?** Segít a PDF dokumentum oldalainak rendszerezett elrendezésében.
+**Miért?** A helyőrző (`{0}`) használatával a megjelenítő külön HTML‑fájlt hoz létre minden PDF‑oldalhoz, ami segít az output rendezetté tételében.
 
-##### 3. lépés: HTML nézet beállításainak inicializálása
+##### 3. lépés: HTML nézet opciók inicializálása  
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-**Miért?** A beágyazott erőforrások biztosítják, hogy minden szükséges eszköz benne legyen az egyes oldalak HTML fájljában.
+**Miért?** A beágyazott erőforrások (képek, betűkészletek, CSS) közvetlenül minden HTML‑oldallal együtt kerülnek csomagolásra, ami ideális web‑alapú megjelenítők vagy e‑learning platformok számára.
 
-##### 4. lépés: Karaktercsoportosítás letiltása
+##### 4. lépés: Karaktercsoportosítás letiltása  
 
 ```java
 viewOptions.getPdfOptions().setDisableCharsGrouping(true);
 ```
 
-**Miért?** Ez biztosítja, hogy a karakterek egyenként legyenek renderelve, megőrizve a szándékolt elrendezést és jelentést.
+**Miért?** Ez a kulcsfontosságú sor, amely azt mondja a renderelő motornak, **ne** egyesítse az egymás melletti karaktereket, ezáltal garantálva, hogy a generált HTML pontosan tükrözze a forrás‑PDF glif‑elhelyezését.
 
-##### 5. lépés: Dokumentum renderelése
+##### 5. lépés: Dokumentum renderelése  
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
@@ -131,52 +138,46 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/HIEROGLYPHS_PDF")) {
 }
 ```
 
-**Miért?** Ez biztosítja, hogy minden erőforrás megfelelően le legyen zárva, megelőzve a memória szivárgásokat.
+**Miért?** A `Viewer` try‑with‑resources blokkba helyezése biztosítja, hogy minden natív erőforrás automatikusan felszabaduljon, elkerülve a memória‑szivárgásokat hosszú futású alkalmazásokban.
 
-### Java HTML generálása PDF-ből csoportosítás nélkül
+### Java HTML generálása PDF‑ből csoportosítás nélkül
 
-A `HtmlViewOptions` osztály lehetővé teszi, hogy **java html-t pdf-ből** állítson elő, miközben minden karakter külön marad. Ez különösen hasznos, ha a renderelt oldalakat egy webportálba vagy e‑learning platformba kell beágyazni, ahol a pontos glif elhelyezés fontos.
+A `HtmlViewOptions` osztály lehetővé teszi, hogy **HTML‑t generálj PDF‑ből**, miközben minden karakter külön marad. Ez különösen hasznos, ha a renderelt oldalakat egy webportálba vagy e‑learning platformba szeretnéd beágyazni, ahol a pontos glif‑elhelyezés lényeges.
 
-### Hibaelhárítási tippek
+### Gyakori problémák és megoldások
 
-- Győződjön meg róla, hogy a dokumentum útvonala helyes, hogy elkerülje a `FileNotFoundException` hibát.  
-- Ellenőrizze, hogy a kimeneti könyvtár írási jogosultsággal rendelkezik.  
-- Ellenőrizze, hogy a GroupDocs.Viewer for Java kompatibilis verzióját használja.  
+- **FileNotFoundException** – Ellenőrizd újra a `new Viewer(...)`‑nek átadott útvonalat. Használj abszolút útvonalakat vagy `Path.of(...)`‑t a tisztaság kedvéért.  
+- **Írási jogosultságok** – Győződj meg róla, hogy a kimeneti könyvtár írható a Java folyamat számára; Linuxon esetleg módosítanod kell a mappa jogosultságait (`chmod 775`).  
+- **Verzióeltérés** – A `setDisableCharsGrouping` opció a 25.2‑es verziótól érhető el. Ellenőrizd, hogy a `pom.xml` a megfelelő verziót tükrözi‑e.
 
-## Gyakorlati alkalmazások
+### Gyakorlati alkalmazások
 
-1. **Nyelvi megőrzés**: Ideális dokumentumok rendereléséhez olyan nyelvekben, mint a kínai, japán vagy ősi írásrendszerek, ahol a karakterprecizitás fontos.  
-2. **Jogi és pénzügyi dokumentumok**: Biztosítja a pontosságot olyan dokumentumokban, amelyek a megfeleléshez pontos szövegábrázolást igényelnek.  
-3. **Oktatási anyagok**: Tökéletes tankönyvekhez és tudományos cikkekhez, amelyek összetett diagramokat vagy megjegyzéseket tartalmaznak.  
+1. **Nyelvi megőrzés** – Ideális dokumentumok rendereléséhez kínai, japán, arab vagy ősi írásrendszerekben, ahol a karakterek közti távolság jelentést hordoz.  
+2. **Jogi és pénzügyi dokumentumok** – Biztosítja a pontos szövegmásolást a szigorú megfelelőségi követelményű papírok esetén.  
+3. **Oktatási anyagok** – Tökéletes tankönyvekhez, amelyek összetett diagramokat, annotációkat vagy többnyelvű tartalmat tartalmaznak.
 
-## Teljesítménybeli megfontolások
+### Teljesítménybeli megfontolások
 
-- **Erőforrás-használat optimalizálása**: Győződjön meg róla, hogy a szervere megfelelő erőforrásokkal rendelkezik a nagy PDF fájlok kezeléséhez.  
-- **Java memória kezelése**: Használjon hatékony adatstruktúrákat és szemétgyűjtési gyakorlatokat a memória hatékony kezeléséhez.  
-- **Kötegelt feldolgozás**: Több dokumentum renderelésekor dolgozza fel őket kötegekben a teljesítmény növelése érdekében.  
+- **Erőforrás-használat optimalizálása** – Nagy PDF‑ek jelentős memóriát fogyaszthatnak. Fontold meg az oldalak kötegelt feldolgozását és a `Viewer` példányok gyors eldobását.  
+- **Java memória kezelése** – Állítsd be a JVM heap‑et (`-Xmx2g` vagy nagyobb), ha több száz oldalas PDF‑ek feldolgozását tervezed.  
+- **Párhuzamos renderelés** – Tömeges konverziók esetén indíts külön szálakat, mindegyik saját `Viewer` példánnyal, hogy kihasználd a többmagos CPU‑kat.
 
-## Következtetés
+## Gyakran ismételt kérdések
 
-Most már elsajátította, **hogyan tiltsa le a csoportosítást** PDF renderelés közben a GroupDocs.Viewer for Java-val. Ez a képesség kulcsfontosságú azokban az alkalmazásokban, amelyek pontos szövegábrázolást igényelnek. A további felfedezéshez próbálja meg integrálni ezt a funkciót más dokumentumkezelő rendszerekkel, vagy kísérletezzen további renderelési beállításokkal.
+**K:** *Miért lenne egyáltalán szükség a karaktercsoportosítás letiltására?*  
+**V:** A csoportosítás letiltása megakadályozza, hogy a renderelő összevonja a különálló glifekhez tartozó karaktereket, ami elengedhetetlen olyan írásrendszerek esetén, ahol a távolság és a sorrend jelentést közvetít.
 
-A következő lépések közé tartozik a GroupDocs.Viewer fejlettebb funkcióinak felfedezése és a teljesítmény finomhangolása nagy léptékű telepítésekhez.
+**K:** *A `setDisableCharsGrouping` beállítás csak HTML kimenetre vonatkozik?*  
+**V:** Nem, a beállítás a PDF renderelő motor alapszintjén hat, így bármely kimeneti formátum (HTML, PNG, JPEG stb.) tükrözi a változást.
 
-## Gyakran Ismételt Kérdések
+**K:** *Össze lehet-e kombinálni ezt a beállítást egyedi betűkészletekkel?*  
+**V:** Igen – töltsd be a saját betűkészleteidet a `Viewer` inicializálása előtt, a csoportosítási szabály továbbra is érvényes lesz.
 
-**Q:** *Miért lenne szükség a karaktercsoportosítás letiltására?*  
-**A:** A csoportosítás letiltása megakadályozza, hogy a renderer egyesítse a különálló glifekhez tartozó karaktereket, ami elengedhetetlen azokban az írásrendszerekben, ahol a távolság és a sorrend jelentést hordoz.
+**K:** *A csoportosítás letiltása befolyásolja a teljesítményt?*  
+**V:** Enyhe mértékben, mivel a motor minden karaktert egyenként dolgoz fel, de a hatás a legtöbb dokumentumnál minimális.
 
-**Q:** *A `setDisableCharsGrouping` beállítás csak HTML kimenetre vonatkozik?*  
-**A:** Nem, a PDF renderelő motor alacsony szintjén hat, így bármely kimeneti formátum (HTML, PNG stb.) tükrözi a változást.
-
-**Q:** *Kombinálhatom ezt a beállítást egyedi betűtípusokkal?*  
-**A:** Igen – egyszerűen töltse be az egyedi betűtípusokat a `Viewer` inicializálása előtt, és a csoportosítási szabály továbbra is érvényes lesz.
-
-**Q:** *A csoportosítás letiltása befolyásolja a teljesítményt?*  
-**A:** Enyhén, mivel a motor minden karaktert egyenként dolgoz fel, de a hatás a legtöbb dokumentumnál minimális.
-
-**Q:** *Van mód a csoportosítás oldalankénti kapcsolására?*  
-**A:** Jelenleg a beállítás globális a `PdfOptions` példányonként; külön `Viewer` példányokat kell létrehozni a különböző oldalakhoz.
+**K:** *Van lehetőség a csoportosítás oldalankénti be‑ vagy kikapcsolására?*  
+**V:** Jelenleg a beállítás globális a `PdfOptions` példányra vonatkozóan; ha kevert viselkedésre van szükség, külön `Viewer` példányokat kell használni a különböző oldalakhoz.
 
 ## Források
 
@@ -184,12 +185,12 @@ A következő lépések közé tartozik a GroupDocs.Viewer fejlettebb funkcióin
 - [API referencia](https://reference.groupdocs.com/viewer/java/)
 - [GroupDocs Viewer letöltése](https://releases.groupdocs.com/viewer/java/)
 - [Licenc vásárlása](https://purchase.groupdocs.com/buy)
-- [Ingyenes próba verzió](https://releases.groupdocs.com/viewer/java/)
+- [Ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/)
 - [Ideiglenes licenc kérelmezése](https://purchase.groupdocs.com/temporary-license/)
 - [GroupDocs támogatási fórum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Utoljára frissítve:** 2025-12-21  
-**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
+**Utolsó frissítés:** 2026-03-22  
+**Tesztelt verzió:** GroupDocs.Viewer 25.2 for Java  
 **Szerző:** GroupDocs

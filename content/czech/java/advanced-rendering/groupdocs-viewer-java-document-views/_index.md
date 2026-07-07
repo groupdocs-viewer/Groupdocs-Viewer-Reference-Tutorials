@@ -1,69 +1,68 @@
 ---
-date: '2025-12-26'
-description: Naučte se, jak pomocí GroupDocs.Viewer pro Java extrahovat metadata dokumentu,
-  což je ideální pro správu dokumentů v Javě, náhled velkých dokumentů a získávání
-  počtu stránek v Javě.
+date: '2026-03-22'
+description: Naučte se, jak použít GroupDocs Viewer Java k extrahování metadat dokumentu,
+  získání počtu stránek a povolení náhledu dokumentu ve vašich Java aplikacích.
 keywords:
 - GroupDocs.Viewer for Java
 - retrieve document view information
 - Java document management
-title: 'Extrahujte metadata dokumentu pomocí GroupDocs.Viewer pro Javu - Získejte informace
-  a poznatky o zobrazení dokumentu'
+title: groupdocs viewer java – Extrahovat metadata dokumentu a zobrazit informace
 type: docs
 url: /cs/java/advanced-rendering/groupdocs-viewer-java-document-views/
 weight: 1
 ---
 
-# Ovládněte GroupDocs.Viewer pro Java: Získání informací o zobrazení dokumentu a poznatků
+# Master GroupDocs.Viewer for Java: Mistrovský průvodce GroupDocs.Viewer pro Java: Získání informací o zobrazení dokumentu a postřehů
 
 ## Úvod
 
-Využijte výkonné funkce GroupDocs.Viewer pro Java k **extrahování metadat dokumentu** a získejte podrobné poznatky o každém zobrazení ve vašich aplikacích. Tento tutoriál vás provede nastavením knihovny, získáním informací o zobrazení a aplikací dat v reálných scénářích, jako je náhled dokumentu v Javě, správa velkých dokumentů a tvorba robustních řešení pro správu dokumentů v Javě.
+Využijte výkonné funkce **groupdocs viewer java** k **extrahování metadat dokumentu** a získejte podrobné postřehy o každém zobrazení ve vašich aplikacích. Tento tutoriál vás provede nastavením knihovny, získáním informací o zobrazení a aplikací dat na reálné scénáře, jako je **document preview java**, správa velkých dokumentů a tvorba robustních **document management java** řešení.
 
-![Retrieve Document View Information and Insights with GroupDocs.Viewer for Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
+![Získání informací o zobrazení dokumentu a postřehů pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/retrieve-document-view-information-and-insights-java.png)
 
 **Co se naučíte:**
 - Nastavení GroupDocs.Viewer pro Java.
 - Získání a použití informací o zobrazení dokumentu k **extrahování metadat dokumentu**.
-- Nejlepší postupy pro integraci do vašich aplikací, včetně toho, jak **získat počet stránek v Javě** a vytvořit lehké náhledy.
+- Nejlepší postupy pro integraci do vašich aplikací, včetně toho, jak **get page count java** a vytvořit lehké náhledy.
 
 Před zahájením se ujistěte, že splňujete předpoklady.
 
 ## Rychlé odpovědi
-- **Co znamená „extrahování metadat dokumentu“?** Získání strukturálních detailů (počet stránek, možnosti zobrazení, formátově specifických dat) bez vykreslení celého obsahu.  
+- **Co znamená “extract document metadata”?** Získání strukturovaných detailů (počet stránek, možnosti zobrazení, formátově specifických dat) bez renderování celého obsahu.  
 - **Která metoda poskytuje informace o zobrazení?** `viewer.getViewInfo(viewInfoOptions)`.  
-- **Mohu náhled dokumentu provést bez úplného vykreslení?** Ano, pomocí metadat o zobrazení můžete vytvořit rychlou funkci **document preview Java**.  
+- **Mohu náhled dokumentu vytvořit bez úplného renderování?** Ano, pomocí metadat o zobrazení můžete vytvořit rychlou funkci **document preview java**.  
 - **Je to vhodné pro velké soubory?** Rozhodně – extrahování metadat používá minimální paměť, což vám pomáhá **manage large documents** efektivně.  
-- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkci je vyžadována komerční licence.
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkční použití je vyžadována komerční licence.
 
-## Co je „extrahování metadat dokumentu“?
-Extrahování metadat dokumentu znamená vytažení popisných informací – jako je počet stránek, dostupné typy zobrazení a nastavení specifická pro formát – přímo z hlavičky souboru. Tato lehká operace je ideální pro tvorbu rychlých náhledů, indexování nebo analytiku bez zátěže úplného vykreslení.
+## Co je groupdocs viewer java?
+Extrahování metadat dokumentu znamená získání popisných informací – jako je počet stránek, dostupné typy zobrazení a nastavení specifická pro formát – přímo z hlavičky souboru. Tato nenáročná operace je ideální pro tvorbu rychlých náhledů, indexování nebo analytiku bez zatížení úplným renderováním.
 
-## Proč extrahovat metadata dokumentu pomocí GroupDocs.Viewer pro Java?
-- **Výkon:** Získání metadat je rychlé a paměťově úsporné, což je perfektní pro scénáře **manage large documents**.  
-- **Flexibilita:** Podporuje širokou škálu formátů (PDF, DOCX, XLSX atd.), což zapadá do jakéhokoli **document management java** stacku.  
-- **Škálovatelnost:** Umožňuje vám **get page count java** okamžitě, což je užitečné pro ovládací prvky stránkování a indikátory postupu.  
-- **Bezpečnost:** Není nutné vykreslovat citlivý obsah na serveru, pokud to uživatel výslovně nepožaduje.
+## Proč použít groupdocs viewer java pro extrahování metadat?
+- **Výkon:** Získání metadat je rychlé a paměťově úsporné, ideální pro scénáře **manage large documents**.  
+- **Flexibilita:** Podporuje širokou škálu formátů (PDF, DOCX, XLSX, atd.), což vyhovuje jakémukoli stacku **document management java**.  
+- **Škálovatelnost:** Umožňuje okamžitě **get page count java**, což je užitečné pro ovládací prvky stránkování a indikátory postupu.  
+- **Bezpečnost:** Není nutné renderovat citlivý obsah na serveru, pokud jej uživatel výslovně nepožaduje.
 
 ## Předpoklady
+
 Abyste mohli sledovat tento tutoriál, ujistěte se, že máte:
 
 ### Požadované knihovny, verze a závislosti
 - **GroupDocs.Viewer pro Java:** Vyžadována verze 25.2 nebo novější.
-- **Java Development Kit (JDK):** Potřebujete Java 8 nebo vyšší.
+- **Java Development Kit (JDK):** Potřebujete Java 8 nebo vyšší.
 
 ### Požadavky na nastavení prostředí
 - IDE jako IntelliJ IDEA, Eclipse nebo NetBeans.
-- Maven nainstalovaný ve vašem počítači pro správu závislostí.
+- Maven nainstalovaný na vašem počítači pro správu závislostí.
 
 ### Předpoklady znalostí
-- Základní pochopení programování v Javě.
+- Základní znalost programování v Javě.
 - Zkušenost s používáním Maven pro správu závislostí.
 
 ## Nastavení GroupDocs.Viewer pro Java
 Pro začátek zahrňte knihovnu GroupDocs.Viewer do svého projektu pomocí Maven:
 
-**Maven Configuration**
+**Konfigurace Maven**
 
 ```xml
 <repositories>
@@ -83,20 +82,20 @@ Pro začátek zahrňte knihovnu GroupDocs.Viewer do svého projektu pomocí Mave
 ```
 
 ### Kroky pro získání licence
-- **Free Trial:** Stáhněte si bezplatnou zkušební verzi z webu GroupDocs a prozkoumejte funkce.  
+- **Free Trial:** Stáhněte si bezplatnou zkušební verzi z webu GroupDocs a vyzkoušejte funkce.  
 - **Temporary License:** Získejte dočasnou licenci pro rozšířený testovací přístup.  
-- **Purchase:** Kupte si komerční licenci pro plné, neomezené používání.
+- **Purchase:** Zakupte komerční licenci pro plné, neomezené používání.
 
-Po nastavení Maven projektu s potřebnými závislostmi přejděte k implementaci funkce.
+Po nastavení vašeho Maven projektu s potřebnými závislostmi pokračujte implementací funkce.
 
 ## Průvodce implementací
 ### Získání informací o zobrazení dokumentu
-Získejte komplexní podrobnosti specifické pro zobrazení, jako jsou počty stránek a dostupné možnosti zobrazení, z vašeho dokumentu pomocí GroupDocs.Viewer pro Java.
+Získejte komplexní podrobnosti specifické pro zobrazení, jako jsou počty stránek a dostupné možnosti zobrazení, z vašeho dokumentu pomocí **groupdocs viewer java**.
 
 #### Přehled
-Cílem je **extrahovat metadata dokumentu** – konkrétně informace o zobrazení, které vám řeknou, kolik stránek existuje a které formáty vykreslování jsou podporovány.
+Cílem je **extrahovat metadata dokumentu** – konkrétně informace o zobrazení, které říkají, kolik stránek existuje a které formáty renderování jsou podporovány.
 
-#### Krok‑za‑krokem implementace
+#### Krok za krokem implementace
 **1. Inicializace Vieweru**  
 Nastavte třídu `Viewer` s cestou k vašemu dokumentu:
 
@@ -125,14 +124,14 @@ public class FeatureGetViewInfo {
 
 **2. Porozumění parametrům a metodám**  
 - **`ViewInfoOptions.forHtmlView()`** – Konfiguruje požadavek na získání HTML‑specifických metadat.  
-- **`viewer.getViewInfo(viewInfoOptions)`** – Vrací objekt `ViewInfo`, který zahrnuje **page count**, podporované typy zobrazení a další metadata užitečná pro implementace **document preview java**.
+- **`viewer.getViewInfo(viewInfoOptions)`** – Vrací objekt `ViewInfo`, který obsahuje **page count**, podporované typy zobrazení a další metadata užitečná pro implementace **document preview java**.
 
 #### Klíčové konfigurační možnosti
 - Přepněte na PDF metadata pomocí `ViewInfoOptions.forPdfView()`.  
-- Použijte `ViewInfoOptions.forImageView()`, když potřebujete miniatury založené na obrázcích.
+- Použijte `ViewInfoOptions.forImageView()`, když potřebujete náhledy založené na obrázcích.
 
 ### Jak získat informace o zobrazení (sekundární klíčové slovo)
-Pokud potřebujete **how to get view info** pro jiné formáty, jednoduše nahraďte volání `forHtmlView()` odpovídající tovární metodou (`forPdfView()`, `forImageView()` atd.).
+Pokud potřebujete **how to get view info** pro jiné formáty, jednoduše nahraďte volání `forHtmlView()` příslušnou tovární metodou (`forPdfView()`, `forImageView()`, atd.).
 
 ### Tipy pro řešení problémů
 - Ověřte cestu k dokumentu, aby nedošlo k chybě *file not found*.  
@@ -141,39 +140,39 @@ Pokud potřebujete **how to get view info** pro jiné formáty, jednoduše nahra
 ## Praktické aplikace
 Implementace této funkce může být užitečná v různých scénářích:
 
-1. **Systémy správy dokumentů:** Automaticky generujte metadata pro uložené dokumenty, což umožňuje efektivní **document management java** workflow.  
-2. **Funkce náhledu:** Nabídněte lehký **document preview java** bez vykreslení celého souboru, čímž šetříte šířku pásma a výpočetní čas.  
-3. **Analytika a reportování:** Shromažďujte poznatky jako **get page count java** pro tvorbu statistik využití a plánování úložiště.
+1. **Systémy pro správu dokumentů:** Automaticky generovat metadata pro uložené dokumenty, což umožňuje efektivní workflow **document management java**.  
+2. **Funkce náhledu:** Nabídnout lehký **document preview java** bez renderování celého souboru, čímž šetříte šířku pásma a čas zpracování.  
+3. **Analytika a reportování:** Shromažďovat postřehy jako **get page count java** pro tvorbu statistik využití a plánování úložiště.
 
 ## Úvahy o výkonu
-Pro zajištění optimálního výkonu s GroupDocs.Viewer:
+Pro zajištění optimálního výkonu s **groupdocs viewer java**:
 
-- **Okamžitě uvolňujte instance Vieweru** (pomocí try‑with‑resources), aby se uvolnily nativní zdroje.  
-- **Dávkové zpracování velkých souborů** tím, že budete extrahovat metadata jen podle potřeby, což vám pomůže **manage large documents** efektivněji.
+- **Okamžitě uvolňujte instance Viewer** (pomocí try‑with‑resources), aby se uvolnily nativní zdroje.  
+- **Dávkové zpracování velkých souborů** extrahováním metadat pouze podle potřeby, což vám pomáhá **manage large documents** efektivněji.
 
 ## Závěr
-Ovládli jste, jak **extrahovat metadata dokumentu** a získat informace o zobrazení z dokumentů pomocí GroupDocs.Viewer pro Java. Tato schopnost je neocenitelná pro aplikace, které potřebují podrobné **document insights**, rychlé náhledy nebo efektivní workflow řízené metadaty.
+Nyní ovládáte, jak **extrahovat metadata dokumentu** a získat informace o zobrazení z dokumentů pomocí **groupdocs viewer java**. Tato schopnost je neocenitelná pro aplikace, které potřebují podrobné postřehy o dokumentech, rychlé náhledy nebo efektivní workflow řízené metadaty.
 
 ### Další kroky
-- Prozkoumejte další možnosti vykreslování (PDF, obrázky, text).  
-- Integrajte bezpečnostní nastavení pro kontrolu, kdo může zobrazit která metadata.  
-- Kombinujte extrahování metadat s indexovacími službami pro výkonné vyhledávací možnosti.
+- Prozkoumejte další možnosti renderování (PDF, obrázky, text).  
+- Integrujte bezpečnostní nastavení pro kontrolu, kdo může zobrazit která metadata.  
+- Kombinujte extrahování metadat se službami indexování pro výkonné vyhledávací možnosti.
 
-## Sekce FAQ
-**Q1: ​​Jaký je účel funkce `ViewInfoOptions` v nástroji GroupDocs.Viewer pro Javu?**
-A1: Určuje, jak chcete načíst informace o zobrazení, například zobrazení HTML nebo PDF, což vám umožňuje efektivně **extrahovat metadata dokumentu**.
+## Často kladené otázky
+**Q1: Jaký je účel `ViewInfoOptions` v GroupDocs.Viewer pro Java?**  
+A1: Určuje, jak chcete získat informace o zobrazení, například HTML nebo PDF zobrazení, což vám umožňuje efektivně **extrahovat metadata dokumentu**.
 
-**Q2: Mohu používat GroupDocs.Viewer pro Javu s jinými formáty souborů než PDF?**
-A1: Ano, podporuje širokou škálu formátů včetně Wordu, Excelu, PowerPointu a obrazových souborů, takže je ideální pro **projekty správy dokumentů v Javě**.
+**Q2: Mohu použít GroupDocs.Viewer pro Java s jinými formáty souborů než PDF?**  
+A2: Ano, podporuje širokou škálu formátů včetně Word, Excel, PowerPoint a obrázkových souborů, což ho činí ideálním pro projekty **document management java**.
 
-**Q3: Jak mohu v GroupDocs.Viewer zpracovávat velké dokumenty?**
-A3: Efektivně spravujte zdroje okamžitým uzavřením instancí `Viewer` a extrahováním pouze metadat, pokud je to možné, což vám pomůže **spravovat velké dokumenty**.
+**Q3: Jak zacházet s velkými dokumenty v GroupDocs.Viewer?**  
+A3: Efektivně spravujte zdroje tím, že rychle uzavřete instance `Viewer` a extrahujete pouze metadata, pokud je to možné, což vám pomáhá **manage large documents**.
 
-**Q4: Jsou s používáním GroupDocs.Viewer pro Javu spojeny nějaké náklady?**
+**Q4: Je s používáním GroupDocs.Viewer pro Java spojený nějaký náklad?**  
 A4: K dispozici je bezplatná zkušební verze. Pro produkční použití je vyžadována komerční licence.
 
-**Otázka 5: Jaká jsou některá běžná úskalí při implementaci této funkce?**
-A5: Nesprávné cesty k souborům a chybějící závislosti Mavenu jsou častými problémy. Vždy ověřte umístění dokumentu a ujistěte se, že je artefakt `groupdocs-viewer` správně přidán.
+**Q5: Jaké jsou běžné úskalí při implementaci této funkce?**  
+A5: Nesprávné cesty k souborům a chybějící Maven závislosti jsou časté problémy. Vždy ověřte umístění dokumentu a ujistěte se, že artefakt `groupdocs-viewer` je správně přidán.
 
 ## Zdroje
 - **Documentation:** [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
@@ -184,8 +183,6 @@ A5: Nesprávné cesty k souborům a chybějící závislosti Mavenu jsou častý
 - **Temporary License:** [Obtain Temporary License](https://purchase.groupdocs.com/temporary-license/)
 - **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
----
-
-**Last Updated:** 2025-12-26  
-**Tested With:** GroupDocs.Viewer for Java 25.2  
-**Author:** GroupDocs
+**Poslední aktualizace:** 2026-03-22  
+**Testováno s:** GroupDocs.Viewer pro Java 25.2  
+**Autor:** GroupDocs
