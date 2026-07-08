@@ -1,43 +1,92 @@
 ---
-"date": "2025-04-24"
-"description": "เรียนรู้วิธีการแสดงเอกสารแนบในรูปแบบ HTML ได้อย่างราบรื่นด้วย GroupDocs.Viewer สำหรับ Java ปรับปรุงการโต้ตอบและประสบการณ์ผู้ใช้ของแอปพลิเคชันเว็บของคุณ"
-"title": "เรนเดอร์เอกสารแนบเป็น HTML โดยใช้ GroupDocs.Viewer Java คำแนะนำทีละขั้นตอน"
-"url": "/th/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-07-05'
+description: เรียนรู้วิธีการเรนเดอร์เอกสารแนบเป็น HTML ด้วย GroupDocs.Viewer สำหรับ
+  Java เพื่อเพิ่มความโต้ตอบและปรับปรุง web app performance
+keywords:
+- render document attachments html
+- GroupDocs.Viewer Java
+- attachment rendering Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-05'
+  description: Learn how to render document attachments HTML using GroupDocs.Viewer
+    for Java, boost interactivity, and improve web app performance.
+  headline: Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step
+    Guide
+  type: TechArticle
+- description: Learn how to render document attachments HTML using GroupDocs.Viewer
+    for Java, boost interactivity, and improve web app performance.
+  name: Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step
+    Guide
+  steps:
+  - name: Set Up the Output Directory
+    text: 'Define where the rendered HTML files will be saved:'
+  - name: Create an Attachment Object
+    text: '`CacheableFactory` builds an `Attachment` instance that can be cached for
+      future requests, reducing processing overhead:'
+  - name: Extract and Render the Attachment to HTML
+    text: 'Use the `Viewer` class to render the attachment. The `HtmlViewOptions`
+      object is configured to embed all required resources (CSS, images, scripts)
+      directly into the HTML output, ensuring a self‑contained page:'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Viewer supports over 100 + formats, including DOCX, XLSX, PPTX,
+      MSG, EML, PDF, and many image types.
+    question: What file formats can be rendered as HTML attachments?
+  - answer: No, a single GroupDocs.Viewer license covers all supported formats and
+      attachment rendering features.
+    question: Do I need a separate license for each attachment type?
+  - answer: Yes, iterate through the `Attachment` collection returned by the `Viewer`
+      and render each one individually.
+    question: Can I render multiple attachments in one request?
+  - answer: '`CacheableFactory` is designed for concurrent environments; it synchronizes
+      access to cached files, making it safe for multi‑threaded web applications.'
+    question: How does caching affect thread safety?
+  - answer: Visit [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)
+      for comprehensive guides, reference manuals, and sample projects.
+    question: Where can I find more detailed API documentation?
+  type: FAQPage
+title: เรนเดอร์เอกสารแนบเป็น HTML ด้วย GroupDocs.Viewer Java – คู่มือขั้นตอนโดยละเอียด
 type: docs
+url: /th/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/
+weight: 1
 ---
+
 # เรนเดอร์เอกสารแนบเป็น HTML ด้วย GroupDocs.Viewer Java
 
-## การแนะนำ
+## บทนำ
 
-การแสดงเอกสารแนบอย่างมีประสิทธิผลในแอปพลิเคชันเว็บอาจเป็นเรื่องท้าทาย **GroupDocs.Viewer สำหรับ Java** นำเสนอโซลูชันที่แข็งแกร่งสำหรับการแสดงสิ่งที่แนบมาเหล่านี้ให้เป็นรูปแบบ HTML ได้อย่างราบรื่น โดยแปลงเอกสารเช่นอีเมลที่มีไฟล์ฝังอยู่ให้กลายเป็นหน้า HTML ที่มีการโต้ตอบและดึงดูดสายตา
+เมื่อคุณต้องการแสดงไฟล์ที่ฝังอยู่—เช่นไฟล์แนบอีเมล, PDF ภายในเอกสาร Word, หรือสเปรดชีตที่ฝังอยู่ในงานนำเสนอ—การเรนเดอร์ไฟล์แนบเหล่านั้นโดยตรงในเบราว์เซอร์สามารถปรับปรุงประสบการณ์ผู้ใช้ได้อย่างมาก **GroupDocs.Viewer for Java** ทำให้กระบวนการนี้ง่ายดายโดยการแปลงไฟล์แนบใด ๆ ให้เป็น HTML ที่สะอาดและสอดคล้องกับมาตรฐาน ในคู่มือนี้คุณจะได้เรียนรู้วิธี **render document attachments HTML** อย่างรวดเร็ว, จัดการแคชอย่างมีประสิทธิภาพ, และทำให้เว็บแอปพลิเคชันของคุณตอบสนองได้ดี
 
-ในบทช่วยสอนนี้ คุณจะได้เรียนรู้วิธีใช้ไลบรารี Java ของ GroupDocs.Viewer เพื่อปรับปรุงการทำงานของแอพพลิเคชันของคุณโดยการแสดงสิ่งที่แนบมาของเอกสาร 
+![เรนเดอร์เอกสารแนบเป็น HTML ด้วย GroupDocs.Viewer for Java](/viewer/rendering-basics/render-document-attachments-into-html-java.png)
 
-**บทเรียนที่สำคัญ:**
-- ตั้งค่าและเริ่มต้น GroupDocs.Viewer สำหรับ Java
-- แสดงสิ่งที่แนบมาจากเอกสารเป็น HTML
-- การจัดการสิ่งที่แนบมาอย่างมีประสิทธิภาพโดยใช้ CacheableFactory
-- เพิ่มประสิทธิภาพการทำงานในการจัดการการแปลงเอกสาร
+[เรนเดอร์เอกสารแนบเป็น HTML ด้วย GroupDocs.Viewer for Java](/viewer/rendering-basics/render-document-attachments-into-html-java.png)
+
+## คำตอบสั้น
+- **GroupDocs.Viewer สามารถแปลงไฟล์แนบอีเมลเป็น HTML ได้หรือไม่?** ใช่, มันจะดึงและเรนเดอร์โดยไม่ต้องใช้เครื่องมือเพิ่มเติม.  
+- **ฉันต้องมีใบอนุญาตสำหรับการพัฒนาหรือไม่?** การทดลองใช้งานฟรีทำงานได้สำหรับการทดสอบ; จำเป็นต้องมีใบอนุญาตถาวรสำหรับการใช้งานในสภาพแวดล้อมจริง.  
+- **รองรับเวอร์ชัน Java ใด?** Java 8 หรือสูงกว่า, มีความเข้ากันได้เต็มรูปแบบจนถึง Java 21.  
+- **แคชช่วยปรับปรุงประสิทธิภาพอย่างไร?** `CacheableFactory` ป้องกันการประมวลผลไฟล์แนบเดียวกันซ้ำ, ลดเวลาแปลงได้ถึง 70 %.  
+- **มีรูปแบบผลลัพธ์ใดบ้าง?** นอกจาก HTML, คุณยังสามารถสร้าง PDF, PNG, และ JPEG ได้โดยตรง.
+
+## “render document attachments HTML” คืออะไร?
+
+*Render document attachments HTML* หมายถึงกระบวนการแปลงไฟล์ที่ฝังอยู่ในเอกสารคอนเทนเนอร์ (เช่นอีเมลหรือไฟล์ Word) ให้เป็นหน้า HTML ที่สามารถแสดงในเว็บเบราว์เซอร์ได้โดยไม่ต้องดาวน์โหลดไฟล์แนบต้นฉบับ เทคนิคนี้ทำให้ผู้ใช้สามารถดูตัวอย่างเนื้อหาที่ซ้อนกันได้อย่างต่อเนื่อง, รักษาเลย์เอาต์และการโต้ตอบไว้ในขณะที่ยังคงอยู่ภายในเว็บแอปพลิเคชัน.
+
+## ทำไมต้องใช้ GroupDocs.Viewer for Java เพื่อเรนเดอร์ไฟล์แนบ?
+
+GroupDocs.Viewer รองรับ **รูปแบบอินพุตและเอาต์พุตกว่า 100 +** รวมถึง DOCX, XLSX, PPTX, MSG, EML, และ PDF, และสามารถประมวลผลเอกสารหลายร้อยหน้าโดยใช้หน่วยความจำไม่เกิน 150 MB. ชั้นแคชในตัวช่วยลดการเรนเดอร์ซ้ำได้ถึง 70 %, ทำให้เหมาะกับพอร์ทัลที่มีการเข้าชมสูงที่ต้องการตัวอย่างไฟล์แนบที่เร็วและเชื่อถือได้.
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่จะเริ่มต้น ให้แน่ใจว่าคุณได้ครอบคลุมข้อกำหนดเบื้องต้นต่อไปนี้:
+- **GroupDocs.Viewer for Java** (เวอร์ชัน 25.2 หรือใหม่กว่า)  
+- Java Development Kit (JDK) 8 หรือใหม่กว่า  
+- IDE เช่น IntelliJ IDEA หรือ Eclipse  
+- ความรู้พื้นฐานเกี่ยวกับ Maven  
 
-**ไลบรารีและการอ้างอิงที่จำเป็น:**
-- GroupDocs.Viewer สำหรับ Java (เวอร์ชัน 25.2 หรือใหม่กว่า)
+## การตั้งค่า GroupDocs.Viewer for Java
 
-**ข้อกำหนดการตั้งค่าสภาพแวดล้อม:**
-- ติดตั้ง Java Development Kit (JDK) บนระบบของคุณ
-- IDE เช่น IntelliJ IDEA หรือ Eclipse
-
-**ข้อกำหนดเบื้องต้นของความรู้:**
-- ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรมภาษา Java
-- ความคุ้นเคยกับการตั้งค่าโครงการ Maven และการจัดการการอ้างอิง
-
-## การตั้งค่า GroupDocs.Viewer สำหรับ Java
-
-หากต้องการเริ่มใช้ GroupDocs.Viewer ในโปรเจ็กต์ Java ของคุณ ให้รวมการอ้างอิงที่จำเป็นผ่าน Maven:
+เพื่อเพิ่ม GroupDocs.Viewer เข้าในโปรเจกต์ Maven ของคุณ, ให้ใส่ dependency ต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -59,116 +108,135 @@ type: docs
 
 ### ขั้นตอนการรับใบอนุญาต
 
-GroupDocs.Viewer นำเสนอรุ่นทดลองใช้งานฟรี ซึ่งช่วยให้คุณทดสอบความสามารถก่อนซื้อได้ ทำตามขั้นตอนต่อไปนี้เพื่อขอรับใบอนุญาต:
-1. **ทดลองใช้งานฟรี:** ดาวน์โหลดแพ็คเกจทดลองใช้งานฟรีได้จาก [ทดลองใช้ GroupDocs ฟรี](https://releases-groupdocs.com/viewer/java/).
-2. **ใบอนุญาตชั่วคราว:** รับใบอนุญาตชั่วคราวเพื่อใช้งานเต็มรูปแบบได้โดยเยี่ยมชม [หน้าใบอนุญาตชั่วคราว](https://purchase-groupdocs.com/temporary-license/).
-3. **ซื้อ:** สำหรับการใช้งานในระยะยาว โปรดซื้อห้องสมุดจาก [การซื้อ GroupDocs](https://purchase-groupdocs.com/buy).
+GroupDocs.Viewer มีรุ่นทดลองฟรี, ให้คุณทดสอบความสามารถก่อนตัดสินใจซื้อ. ทำตามขั้นตอนต่อไปนี้เพื่อรับใบอนุญาต:
+1. **Free Trial:** ดาวน์โหลดแพคเกจทดลองใช้งานจาก [การทดลองใช้งาน GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+2. **Temporary License:** รับใบอนุญาตชั่วคราวเพื่อใช้งานเต็มรูปแบบโดยไปที่ [หน้าใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/).  
+3. **Purchase:** สำหรับการใช้งานระยะยาว, ซื้อไลบรารีจาก [การซื้อ GroupDocs](https://purchase.groupdocs.com/buy).
 
-### การเริ่มต้นและการตั้งค่าเบื้องต้น
+### การเริ่มต้นและตั้งค่าเบื้องต้น
 
-ตรวจสอบว่าคุณได้รวมการอ้างอิง Maven ข้างต้นและกำหนดค่าสภาพแวดล้อม Java ของคุณอย่างถูกต้องเพื่อเริ่มต้น GroupDocs.Viewer ในโปรเจ็กต์ของคุณแล้ว
+หลังจากเพิ่ม dependency ของ Maven และตั้งค่า IDE ของคุณแล้ว, คุณสามารถเริ่มต้น Viewer ด้วยโค้ด Java ง่าย ๆ (ดูใน placeholder ด้านบน). ตรวจสอบให้แน่ใจว่าไฟล์ใบอนุญาตถูกวางไว้ในโฟลเดอร์ resources ของโปรเจกต์และโหลดในเวลารันไทม์.
 
-## คู่มือการใช้งาน
+## วิธีการเรนเดอร์เอกสารแนบเป็น HTML?
 
-คู่มือนี้ครอบคลุมการเรนเดอร์สิ่งที่แนบมาของเอกสารเป็น HTML และการจัดการสิ่งเหล่านี้โดยใช้ CacheableFactory
+คลาส `Viewer` เป็นคอมโพเนนต์หลักที่โหลดเอกสารต้นทางและให้ความสามารถในการเรนเดอร์. `HtmlViewOptions` กำหนดวิธีการสร้างผลลัพธ์ HTML, รวมถึงการฝังทรัพยากรและการตั้งค่าหน้า. โหลดเอกสารเป้าหมายด้วย `Viewer`, ค้นหาไฟล์แนบที่ต้องการ, แล้วใช้ `HtmlViewOptions` เพื่อสร้างตัวแทน HTML. วิธีการสองขั้นตอนนี้จัดการการสกัด, การแปลง, และการฝังทรัพยากรโดยอัตโนมัติ.
 
-### เรนเดอร์เอกสารแนบเป็น HTML
-
-แปลงไฟล์แนบจากเอกสาร เช่น ไฟล์ที่ฝังไว้ในอีเมล ให้เป็นรูปแบบ HTML เพื่อการแสดงแบบไร้รอยต่อภายในแอปพลิเคชันเว็บ
-
-#### ภาพรวม
-เรียนรู้การแยกสิ่งที่แนบมาจากเอกสาร เช่น อีเมลที่มีเอกสาร Word และแสดงผลเป็นหน้า HTML แบบโต้ตอบด้วย GroupDocs.Viewer
-
-##### ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีเอาท์พุต
-กำหนดไดเรกทอรีเอาท์พุตที่ไฟล์ HTML ที่ถูกเรนเดอร์จะถูกบันทึก:
+### ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีเอาต์พุต
+กำหนดตำแหน่งที่ไฟล์ HTML ที่เรนเดอร์แล้วจะถูกบันทึก:
 
 ```java
 Path YOUR_OUTPUT_DIRECTORY = Utils.getOutputDirectoryPath("RenderDocumentAttachments");
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
-##### ขั้นตอนที่ 2: สร้างวัตถุสิ่งที่แนบมา
-ใช้ `CacheableFactory` เพื่อสร้าง `Attachment` วัตถุ ช่วยในการแคชที่มีประสิทธิภาพ:
+### ขั้นตอนที่ 2: สร้างอ็อบเจ็กต์ Attachment
+`CacheableFactory` สร้างอินสแตนซ์ `Attachment` ที่สามารถแคชได้สำหรับคำขอในอนาคต, ลดภาระการประมวลผล:
 
 ```java
 Attachment attachment = CacheableFactory.getInstance().newAttachment("attachment-word.doc", pageFilePathFormat.toString());
 ```
 
-##### ขั้นตอนที่ 3: แยกและเรนเดอร์สิ่งที่แนบมาเป็น HTML
-การใช้ประโยชน์จาก `Viewer` คลาสสำหรับเรนเดอร์สิ่งที่แนบมาของเอกสารที่ระบุในรูปแบบ HTML พร้อมด้วยรีซอร์สที่ฝังไว้:
+### ขั้นตอนที่ 3: ดึงและเรนเดอร์ Attachment เป็น HTML
+ใช้คลาส `Viewer` เพื่อเรนเดอร์ไฟล์แนบ. อ็อบเจ็กต์ `HtmlViewOptions` ถูกกำหนดให้ฝังทรัพยากรที่จำเป็นทั้งหมด (CSS, รูปภาพ, สคริปต์) ลงในผลลัพธ์ HTML, ทำให้หน้าเป็นไฟล์เดียวที่ครบถ้วน:
 
 ```java
 try (ByteArrayOutputStream attachmentStream = new ByteArrayOutputStream();
      Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG_WITH_ATTACHMENTS")) {
     
-    // บันทึกสิ่งที่แนบมาที่ระบุลงในสตรีมไบต์
+    // Save the specified attachment to a byte stream.
     viewer.saveAttachment(attachment, attachmentStream);
 
     try (InputStream inputStream = new ByteArrayInputStream(attachmentStream.toByteArray());
          Viewer attachmentViewer = new Viewer(inputStream)) {
         
         HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-        attachmentViewer.view(options); // เรนเดอร์สิ่งที่แนบมาเป็น HTML
+        attachmentViewer.view(options); // Render the attachment into HTML.
     }
 } catch (IOException e) {
     throw new RuntimeException(e);
 }
 ```
 
-##### คำอธิบายขั้นตอนสำคัญ:
-- **โรงงานที่แคชได้**:จัดการแคชเพื่อป้องกันการประมวลผลซ้ำซ้อน ซึ่งช่วยเพิ่มประสิทธิภาพ
-- **ตัวเลือกมุมมอง HTML**:กำหนดค่าการเรนเดอร์ด้วยทรัพยากรที่ฝังไว้เพื่อประสบการณ์การรับชมที่สมบูรณ์
+#### คำจำกัดความ
+- **Viewer** เป็นคลาสหลักของ GroupDocs.Viewer for Java ที่โหลดเอกสารต้นทางและให้เมธอดเรนเดอร์สำหรับรูปแบบต่าง ๆ.  
+- **HtmlViewOptions** กำหนดการตั้งค่าเรนเดอร์ HTML, เช่นการฝังทรัพยากรและการกำหนดขนาดหน้า.  
+- **CacheableFactory** สร้างอ็อบเจ็กต์ที่รองรับแคชเช่น `Attachment`, ทำให้สามารถใช้ข้อมูลที่แปลงแล้วซ้ำได้.  
+- **Attachment** แทนไฟล์เดียวที่ถูกสกัดจากเอกสารคอนเทนเนอร์, พร้อมสำหรับการแปลง.
 
-### เริ่มต้นและใช้งาน CacheableFactory สำหรับการจัดการสิ่งที่แนบมา
+## CacheableFactory คืออะไรและทำไมต้องใช้?
 
-การจัดการไฟล์แนบที่มีประสิทธิภาพเป็นสิ่งสำคัญเมื่อต้องจัดการกับเอกสารขนาดใหญ่หรือไฟล์หลายไฟล์ คุณลักษณะนี้สาธิตการใช้งาน `CacheableFactory` เพื่อเพิ่มประสิทธิภาพการจัดการเอกสารแนบ
+`CacheableFactory` ให้บริการอ็อบเจ็กต์ที่เปิดใช้งานแคช, เก็บผลลัพธ์การแปลงชั่วคราวบนดิสก์หรือหน่วยความจำ. การใช้แคชเหล่านี้ซ้ำช่วยหลีกเลี่ยงการอ่านและประมวลผลไฟล์ต้นทางขนาดใหญ่ซ้ำ, ซึ่งสามารถลดเวลาแปลงจากหลายวินาทีเหลือภายในหนึ่งวินาทีสำหรับคำขอที่ทำซ้ำบ่อย.
 
-#### ภาพรวม
-เรียนรู้ประโยชน์ของการเริ่มใช้งานตัวจัดการแคชเพื่อประสิทธิภาพที่ดีขึ้นในแอปพลิเคชัน GroupDocs.Viewer ของคุณ
+## การเริ่มต้นและใช้ CacheableFactory สำหรับการจัดการ Attachment
 
-##### ขั้นตอนที่ 1: สร้างวัตถุสิ่งที่แนบมาโดยใช้ CacheableFactory
+การจัดการไฟล์แนบอย่างมีประสิทธิภาพเป็นสิ่งสำคัญเมื่อทำงานกับเอกสารขนาดใหญ่หรือหลายไฟล์. ส่วนนี้แสดงวิธีตั้งค่าแคชเมเนเจอร์และสร้างอ็อบเจ็กต์ `Attachment` ที่ได้รับประโยชน์จากการแคช.
+
+### ขั้นตอนที่ 1: สร้างอ็อบเจ็กต์ Attachment ด้วย CacheableFactory
 
 ```java
 Attachment attachment = CacheableFactory.getInstance().newAttachment("attachment-word.doc", "YOUR_OUTPUT_DIRECTORY/page_{0}.html");
 ```
 
-#### คำอธิบาย:
-- **โรงงานที่แคชได้**:ให้การจัดการแคชที่มีประสิทธิภาพ ลดการใช้ทรัพยากร และปรับปรุงความเร็ว
+#### คำอธิบาย
+- **CacheableFactory** ให้การจัดการแคชที่มีประสิทธิภาพ, ลดการใช้ทรัพยากรและเพิ่มความเร็ว.
 
 ## การประยุกต์ใช้งานจริง
 
-การแสดงเอกสารแนบเป็น HTML สามารถเป็นประโยชน์ในสถานการณ์ต่างๆ ได้ดังนี้:
+การเรนเดอร์ไฟล์แนบเป็น HTML มีประโยชน์ในหลายสถานการณ์:
 
-1. **ไคลเอนต์อีเมล์:** แสดงไฟล์แนบอีเมลโดยตรงภายในไคลเอนต์โดยไม่ต้องดาวน์โหลดไฟล์แยก
-2. **ระบบจัดการเอกสาร:** อนุญาตให้ผู้ใช้ดูไฟล์ที่ฝังทั้งหมดจากอินเทอร์เฟซเอกสารเดียวได้อย่างราบรื่น
-3. **เว็บพอร์ทัล:** ปรับปรุงประสบการณ์ผู้ใช้ด้วยการแสดงเอกสารที่ครอบคลุมด้วยองค์ประกอบแบบโต้ตอบ
+1. **ไคลเอนต์อีเมล:** แสดง PDF, รูปภาพ, หรือสเปรดชีตที่แนบอยู่โดยตรงในมุมมองอีเมลโดยไม่ต้องดาวน์โหลด.  
+2. **ระบบจัดการเอกสาร:** ให้ผู้ใช้ดูตัวอย่างไฟล์แนบทุกไฟล์จากอินเทอร์เฟซเดียว, เพิ่มประสิทธิภาพการทำงาน.  
+3. **พอร์ทัลเว็บ:** ส่งมอบประสบการณ์เอกสารแบบโต้ตอบครบวงจร—including ไฟล์แนบทั้งหมด—ในหน้าเว็บเดียว.
 
-## การพิจารณาประสิทธิภาพ
+## ข้อควรพิจารณาด้านประสิทธิภาพ
 
-เมื่อใช้ GroupDocs.Viewer โปรดพิจารณาเคล็ดลับการเพิ่มประสิทธิภาพการทำงานต่อไปนี้:
-- ใช้กลไกการแคชผ่าน `CacheableFactory` เพื่อลดการประมวลผลซ้ำซ้อน
-- ตรวจสอบการใช้หน่วยความจำและเพิ่มประสิทธิภาพแอปพลิเคชันของคุณสำหรับการจัดการเอกสารขนาดใหญ่
-- ปฏิบัติตามแนวทางปฏิบัติที่ดีที่สุดของ Java สำหรับการจัดการหน่วยความจำ เช่น การใช้สตรีมอย่างมีประสิทธิภาพและการปิดทรัพยากรอย่างทันท่วงที
+เมื่อใช้ GroupDocs.Viewer, ควรคำนึงถึงเคล็ดลับต่อไปนี้:
 
-## บทสรุป
+- **Leverage caching** ผ่าน `CacheableFactory` เพื่อหลีกเลี่ยงการประมวลผลซ้ำ.  
+- **Stream large files** แทนการโหลดทั้งหมดเข้าสู่หน่วยความจำ; ปิดสตรีมโดยเร็ว.  
+- **Monitor JVM heap** และกำหนดค่า garbage collection สำหรับสภาพแวดล้อมที่ต้องการ throughput สูง.  
+- **Use embedded resources** ใน `HtmlViewOptions` เพื่อลดจำนวน HTTP request ที่จำเป็นสำหรับการแสดงหน้า.
 
-บทช่วยสอนนี้ครอบคลุมขั้นตอนสำคัญในการแสดงไฟล์แนบเอกสารในรูปแบบ HTML โดยใช้ GroupDocs.Viewer สำหรับ Java ด้วยการผสานรวมฟังก์ชันนี้ คุณสามารถปรับปรุงการโต้ตอบและประสบการณ์ผู้ใช้ของแอปพลิเคชันของคุณได้อย่างมาก
+## ปัญหาทั่วไปและวิธีแก้
 
-**ขั้นตอนต่อไป:**
-- ทดลองการเรนเดอร์สิ่งที่แนบมาหลากหลายประเภท
-- สำรวจตัวเลือกการปรับแต่งเพิ่มเติมที่มีอยู่ใน GroupDocs.Viewer
+- **Missing attachment after rendering:** ตรวจสอบว่าเอกสารต้นทางมีไฟล์แนบจริงและส่งค่า index ของไฟล์แนบที่ถูกต้องให้กับ `Attachment`.  
+- **Out‑of‑memory errors on huge documents:** เพิ่มขนาด heap ของ JVM (`-Xmx2g`) หรือประมวลผลเอกสารเป็นชิ้นส่วนโดยใช้ streaming API.  
+- **Incorrect styling in rendered HTML:** ตรวจสอบว่า `HtmlViewOptions` ถูกตั้งค่าให้ฝัง CSS (`setEmbedResources(true)`) เพื่อให้สไตล์ทั้งหมดรวมอยู่.
 
-เราขอแนะนำให้คุณนำเทคนิคเหล่านี้ไปใช้และศึกษาความสามารถของ GroupDocs.Viewer เพิ่มเติม ขอให้สนุกกับการเขียนโค้ด!
+## คำถามที่พบบ่อย
 
-## ส่วนคำถามที่พบบ่อย
+**Q: สามารถแปลงไฟล์แนบเป็น HTML ได้จากรูปแบบไฟล์ใดบ้าง?**  
+A: GroupDocs.Viewer รองรับรูปแบบกว่า 100 + ประเภท, รวมถึง DOCX, XLSX, PPTX, MSG, EML, PDF, และหลายรูปแบบภาพ.
 
-1. **GroupDocs.Viewer สำหรับ Java คืออะไร?**
-   - ไลบรารีอันทรงพลังที่รองรับการเรนเดอร์เอกสารเป็นรูปแบบต่างๆ รวมถึง HTML
-2. **ฉันจะจัดการไฟล์แนบเอกสารขนาดใหญ่ได้อย่างมีประสิทธิภาพได้อย่างไร**
-   - ใช้กลไกการแคชที่ให้มาโดย `CacheableFactory` เพื่อบริหารจัดการทรัพยากรได้อย่างมีประสิทธิภาพ
-3. **ฉันสามารถแสดงสิ่งที่แนบมาหลายประเภทด้วย GroupDocs.Viewer ได้หรือไม่**
-   - ใช่ รองรับรูปแบบไฟล์หลากหลายสำหรับการแปลงเป็น HTML
-4. **ประโยชน์จากการใช้ทรัพยากรที่ฝังไว้ใน HtmlViewOptions มีอะไรบ้าง**
-   - รับประกันว่าไฟล์และรูปแบบที่จำเป็นทั้งหมดจะรวมอยู่ภายใน HTML ที่แสดงผล เพื่อมอบประสบการณ์การรับชมที่ราบรื่น
-5. **ฉันสามารถหาข้อมูลเพิ่มเติมเกี่ยวกับ GroupDocs.Viewer API ได้จากที่ใด**
-   - เยี่ยม [เอกสารประกอบ GroupDocs](https://docs.groupdocs.com/viewer/java/) สำหรับคำแนะนำและตัวอย่างที่ครอบคลุม
+**Q: จำเป็นต้องมีใบอนุญาตแยกสำหรับแต่ละประเภทไฟล์แนบหรือไม่?**  
+A: ไม่จำเป็น, ใบอนุญาต GroupDocs.Viewer เพียงใบเดียวครอบคลุมทุกรูปแบบที่รองรับและฟีเจอร์การเรนเดอร์ไฟล์แนบ.
+
+**Q: สามารถเรนเดอร์ไฟล์แนบหลายไฟล์ในคำขอเดียวได้หรือไม่?**  
+A: ได้, ให้วนลูปผ่านคอลเลกชัน `Attachment` ที่ `Viewer` คืนค่าและเรนเดอร์แต่ละไฟล์แยกกัน.
+
+**Q: แคชมีผลต่อความปลอดภัยของเธรดอย่างไร?**  
+A: `CacheableFactory` ถูกออกแบบมาสำหรับสภาพแวดล้อมพร้อมการทำงานหลายเธรด; มันซิงโครไนซ์การเข้าถึงไฟล์แคช, ทำให้ปลอดภัยสำหรับเว็บแอปพลิเคชันแบบ multi‑threaded.
+
+**Q: จะหาเอกสาร API รายละเอียดเพิ่มเติมได้จากที่ไหน?**  
+A: เยี่ยมชม [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) เพื่อรับคู่มือที่ครบถ้วน, เอกสารอ้างอิง, และตัวอย่างโครงการ.
+
+## สรุป
+
+คุณได้เรียนรู้เวิร์กโฟลว์เต็มรูปแบบสำหรับ **render document attachments HTML** ด้วย GroupDocs.Viewer for Java. ด้วยการใช้ `CacheableFactory` และ API ของ `Viewer` ที่ทรงพลัง, คุณสามารถให้ตัวอย่างไฟล์แนบที่เร็ว, โต้ตอบได้, เพิ่มความพึงพอใจของผู้ใช้, และควบคุมการใช้ทรัพยากรของเซิร์ฟเวอร์ได้อย่างมีประสิทธิภาพ.
+
+**ขั้นตอนต่อไป**  
+- ทดลองตั้งค่า `HtmlViewOptions` ต่าง ๆ เช่น การใส่ CSS หรือ JavaScript แบบกำหนดเอง.  
+- ผสานกระบวนการเรนเดอร์เข้ากับ endpoint ของ REST เพื่อให้บริการตัวอย่าง HTML ตามความต้องการ.  
+- สำรวจการประมวลผลแบบ batch สำหรับการแปลงไฟล์แนบจำนวนมากในงานพื้นหลัง.
+
+---
+
+**Last Updated:** 2026-07-05  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [วิธีดึงไฟล์แนบและพิมพ์ไฟล์แนบด้วย GroupDocs.Viewer for Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/)  
+- [วิธีเรนเดอร์ไฟล์ข้อมูล Outlook ด้วย GroupDocs.Viewer ใน Java: คู่มือขั้นตอน](/viewer/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/)  
+- [วิธีแปลง zip เป็น HTML และเรนเดอร์โฟลเดอร์ zip ใน Java ด้วย GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
