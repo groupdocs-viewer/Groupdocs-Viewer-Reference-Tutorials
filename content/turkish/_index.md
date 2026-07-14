@@ -1,151 +1,178 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-02-15
-description: GroupDocs Viewer öğreticisini keşfedin; .NET ve Java'da 170'den fazla
-  formatta renderleme, önbellekleme, filigran ekleme ve belge renderleme.
+date: 2026-07-14
+description: GroupDocs Viewer öğreticisini keşfedin; .NET ve Java’da 170+ formatta
+  render etme, önbellekleme, watermark ekleme ve belge render etme işlemleri için.
 is_root: true
-linktitle: GroupDocs Viewer Tutorials
-title: GroupDocs Viewer öğreticisi – Belgeleri işleyin ve görüntüleyin
+keywords:
+- groupdocs viewer tutorial
+- document rendering
+- file format support
+lastmod: 2026-07-14
+linktitle: GroupDocs Viewer Öğreticileri
+og_description: GroupDocs Viewer öğreticisi, .NET ve Java’da 170+ formatta belgeleri
+  render, cache ve watermark yaparak, web, masaüstü ve mobil uygulamalar için yüksek
+  doğrulukta görüntüleme sağlar.
+og_image_alt: 'Guide: Render and display documents with GroupDocs Viewer in .NET and
+  Java'
+og_title: GroupDocs Viewer öğreticisi – Belgeleri render et ve görüntüle
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-14'
+  description: Explore the GroupDocs Viewer tutorial for rendering, caching, watermarks,
+    and document rendering across 170+ formats in .NET and Java.
+  headline: GroupDocs Viewer tutorial – Render & display documents
+  type: TechArticle
+- questions:
+  - answer: No external software is required; the API handles all rendering internally.
+    question: Do I need to install any additional software to use GroupDocs Viewer?
+  - answer: Yes, you can pass the password when loading the document through the API.
+    question: Can I render password‑protected documents?
+  - answer: Caching stores rendered pages or images, reducing processing time for
+      subsequent requests.
+    question: How does caching improve performance?
+  - answer: Absolutely—dedicated tutorials show how to overlay text or image watermarks
+      during rendering.
+    question: Is it possible to add watermarks to rendered pages?
+  - answer: Over 170 formats, including PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG, and
+      many image types.
+    question: Which file formats are supported out of the box?
+  type: FAQPage
+tags:
+- groupdocs viewer
+- document rendering
+- .net
+- java
+- file formats
+title: GroupDocs Viewer öğreticisi – Belgeleri render et ve görüntüle
 type: docs
 url: /tr/
 weight: 11
 ---
 
- to "Test Edilen Versiyon"? but keep bold. So translate "Tested With:" to "Test Edilen:"? Let's translate.
+# GroupDocs Viewer öğreticisi – Belgeleri oluşturma ve görüntüleme
 
-**Tested With:** -> "**Test Edilen:**". Keep rest.
-
-**Author:** -> "**Yazar:**"
-
-Now produce final markdown with translations.
-
-Check for any code blocks: none.
-
-Check for images: none.
-
-Check for shortcodes: we kept them unchanged but inner text translated.
-
-Check for markdown links: we translated link text.
-
-Check for headings: we translated.
-
-Now produce final content.# GroupDocs Viewer öğreticisi – Belgeleri render et ve görüntüle
-
-GroupDocs Viewer tutorial hub'ına hoş geldiniz. Bu öğreticide .NET ve Java için GroupDocs Viewer API'lerimizi ustalaşmanıza yardımcı olacak kapsamlı bir kılavuz koleksiyonu bulacaksınız. İster bir web uygulaması, ister bir masaüstü çözümü, ister bir mobil deneyim geliştirin, GroupDocs Viewer PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, görüntüler ve daha fazlası dahil olmak üzere çok çeşitli belge formatlarını sorunsuz bir şekilde render etmenizi ve görüntülemenizi sağlar.
+Welcome to the **GroupDocs Viewer tutorial** hub. In this tutorial you’ll find a comprehensive collection of guides that help you master our powerful document viewer APIs for .NET and Java. Whether you’re building a web app, a desktop solution, or a mobile experience, GroupDocs Viewer enables you to seamlessly render and display a wide variety of document formats, including PDF, Microsoft Office (Word, Excel, PowerPoint), CAD, images, and more.
 
 ## Hızlı Yanıtlar
-- **GroupDocs Viewer öğreticisi nedir?** .NET ve Java için GroupDocs Viewer kullanarak 170'den fazla dosya formatını render etme, dönüştürme ve görüntüleme konusunda adım adım bir kılavuz.  
+- **GroupDocs Viewer tutorial nedir?** .NET ve Java için GroupDocs Viewer kullanarak 170'ten fazla dosya formatını oluşturmak, dönüştürmek ve görüntülemek için adım adım bir kılavuz.  
 - **Hangi platformlar destekleniyor?** .NET (Framework, Core, .NET 5/6) ve Java (8+).  
-- **PDF ve görüntüleri render edebilir miyim?** Evet – çıktıyı HTML, JPEG, PNG ve PDF olarak alabilirsiniz.  
+- **PDF ve görüntüleri oluşturabilir miyim?** Evet – HTML, JPEG, PNG ve PDF olarak çıktı alabilirsiniz.  
 - **Önbellekleme mevcut mu?** Kesinlikle; özel öğreticiler önbellekleme ve kaynak yönetimini kapsar.  
-- **Lisans gereklimi?** Ücretsiz deneme mevcuttur; üretim kullanımı için ticari lisans gereklidir.
+- **Lisans gerekli mi?** Ücretsiz bir deneme mevcuttur; üretim kullanımı için ticari bir lisans gereklidir.
 
-## GroupDocs Viewer öğreticisi nedir?
-GroupDocs Viewer öğreticisi, uygulamalarınızda belge görüntülemeyi yükleme, render etme ve özelleştirme konularını gösteren seçilmiş örnekler setidir. Temel yüklemeden su işareti ekleme, CAD düzeni render etme ve performans optimizasyonu gibi ileri senaryolara kadar her şeyi kapsar.
+## GroupDocs Viewer tutorial nedir?
+GroupDocs Viewer tutorial, .NET ve Java için GroupDocs Viewer API'sını kullanarak uygulamalarınızda belge görüntülemeyi yükleme, oluşturma ve özelleştirme yollarını gösteren adım adım kılavuzların derlenmiş bir koleksiyonudur. Somut kod parçacıkları, yapılandırma ipuçları ve en iyi uygulama önerileri sunar, böylece hızlı bir şekilde başlayabilirsiniz.
 
-## Neden belge renderi için GroupDocs Viewer kullanmalısınız?
-- **Geniş format desteği:** Karmaşık CAD ve ofis belgeleri dahil olmak üzere 170'den fazla dosya türü.  
-- **Yüksek doğrulukta render:** HTML, görüntüler veya PDF'de doğru görsel temsil.  
+## Neden belge oluşturma için GroupDocs Viewer kullanmalısınız?
+Belge oluşturma için GroupDocs Viewer'ı kullanmalısınız çünkü 170'ten fazla dosya formatını destekler, piksel mükemmel görsel doğruluk sağlar ve dış yazılım gerektirmeden .NET ve Java üzerinde çalışır; bu da web, masaüstü ve mobil uygulamalar için idealdir.
+
+- **Geniş format desteği:** Karmaşık CAD ve ofis belgeleri dahil olmak üzere 170'ten fazla dosya türü.  
+- **Yüksek doğruluklu oluşturma:** HTML, görüntüler veya PDF'de doğru görsel temsil.  
 - **Çapraz platform esnekliği:** .NET ve Java ortamlarında sorunsuz çalışır.  
-- **Genişletilebilir mimari:** Render pipeline'larını özelleştirin, su işaretleri ekleyin veya minimum çabayla önbellekleme entegre edin.  
+- **Genişletilebilir mimari:** Oluşturma boru hatlarını özelleştirin, filigran ekleyin veya minimum çaba ile önbellekleme entegre edin.  
 
 {{% alert color="primary" %}}
-.NET uygulamalarınızı yüksek doğrulukta belge görüntüleme yetenekleriyle güçlendirin. GroupDocs.Viewer for .NET öğreticilerimiz, güçlü bir belge görüntüleyiciyi entegre etmek için bilmeniz gereken her şeyi sunar. 170'den fazla belge formatını HTML, JPEG, PNG ve PDF olarak render etmeyi öğrenin. CAD çizimlerinde belirli düzenleri render etme, belge eklerini işleme ve performansı optimize etme gibi ileri konuları keşfedin. C#, ASP.NET ve diğer .NET çerçevelerinde sağlam ve profesyonel belge görüntüleme deneyimleri oluşturmaya başlayın.
+.NET uygulamalarınızı yüksek doğruluklu belge görüntüleme yetenekleriyle güçlendirin. GroupDocs.Viewer for .NET öğreticilerimiz, güçlü bir belge görüntüleyiciyi entegre etmek için bilmeniz gereken her şeyi sunar. 170'ten fazla belge formatını HTML, JPEG, PNG ve PDF'ye nasıl oluşturacağınızı öğrenin. CAD çizimlerinde belirli düzenleri oluşturma, belge eklerini işleme ve performansı optimize etme gibi ileri konuları keşfedin. C#, ASP.NET ve diğer .NET çerçevelerinde sağlam ve profesyonel belge görüntüleme deneyimleri oluşturmaya başlayın.
 {{% /alert %}}
 
-### GroupDocs Viewer ile .NET'te nasıl başlanır
-Detaylı kılavuzlara dalmadan önce, aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+### GroupDocs Viewer ile .NET'te Nasıl Başlanır
+.NET'te GroupDocs Viewer ile başlamak için `GroupDocs.Viewer` NuGet paketini kurun, geçerli bir lisans ekleyin ve projenizde namespace'i referans alın. `Viewer` sınıfı, bir belgeyi yükleyen ve oluşturma yöntemleri sağlayan temel bileşendir. Ardından Viewer sınıfını örnekleyebilir ve belgeleri HTML, görüntüler veya PDF'ye oluşturmaya başlayabilirsiniz.  
+
+Detaylı kılavuzlara dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
 - .NET 5/6 veya .NET Framework 4.6+ yüklü  
 - Geçerli bir GroupDocs Viewer lisansı (veya ücretsiz deneme)  
-- Projenize eklenmiş NuGet paketi `GroupDocs.Viewer`  
+- `GroupDocs.Viewer` NuGet paketi projenize eklenmiş  
 
 Ortamı kurduktan sonra, aşağıdaki öğreticileri keşfederek somut kod örneklerini ve en iyi uygulama önerilerini görebilirsiniz.
 
-İşte bazı faydalı .NET kaynaklarına bağlantılar:
+Bunlar bazı faydalı .NET kaynaklarına bağlantılardır: 
 
 - [Belgeleri Yükleme](./net/loading-documents/)
 - [Gelişmiş Yükleme Seçenekleri](./net/advanced-loading/)
 - [Gelişmiş Kullanım (Önbellekleme)](./net/advanced-usage-caching/)
-- [Render Seçenekleri](./net/rendering-options/)
-- [Arşiv Dosyalarını Render Etme](./net/rendering-archive-files/)
-- [CAD Çizimlerini Render Etme](./net/rendering-cad-drawings/)
-- [Başlangıç](./net/getting-started/)
-- [E-posta Mesajlarını Render Etme](./net/rendering-email-messages/)
-- [Görüntü Render Etme](./net/image-rendering/)
-- [Belgeleri PDF'ye Render Etme](./net/rendering-documents-pdf/)
-- [Belgeleri Görüntülere Render Etme](./net/rendering-documents-images/)
-- [Belgeleri HTML'ye Render Etme](./net/rendering-documents-html/)
+- [Oluşturma Seçenekleri](./net/rendering-options/)
+- [Arşiv Dosyalarını Oluşturma](./net/rendering-archive-files/)
+- [CAD Çizimlerini Oluşturma](./net/rendering-cad-drawings/)
+- [Başlarken](./net/getting-started/)
+- [E-posta Mesajlarını Oluşturma](./net/rendering-email-messages/)
+- [Görüntü Oluşturma](./net/image-rendering/)
+- [Belgeleri PDF'ye Oluşturma](./net/rendering-documents-pdf/)
+- [Belgeleri Görüntülere Oluşturma](./net/rendering-documents-images/)
+- [Belgeleri HTML'ye Oluşturma](./net/rendering-documents-html/)
 - [Belge Eklerini İşleme](./net/processing-document-attachments/)
-- [Metin Dosyalarını Render Etme](./net/rendering-text-files/)
-- [Visio Belgelerini Render Etme](./net/rendering-visio-documents/)
-- [Web Belgelerini Render Etme](./net/rendering-web-documents/)
-- [Kelime İşleme Belgelerini Render Etme](./net/rendering-word-processing-documents/)
-- [Elektronik Tablo Render Seçenekleri](./net/spreadsheet-rendering-options/)
-- [PDF Render Seçenekleri](./net/pdf-rendering-options/)
-- [Outlook Veri Dosyalarını Render Etme (PST, OST)](./net/rendering-outlook-data-files/)
-- [Microsoft Project Belgelerini Render Etme](./net/rendering-ms-project-documents/)
+- [Metin Dosyalarını Oluşturma](./net/rendering-text-files/)
+- [Visio Belgelerini Oluşturma](./net/rendering-visio-documents/)
+- [Web Belgelerini Oluşturma](./net/rendering-web-documents/)
+- [Kelime İşleme Belgelerini Oluşturma](./net/rendering-word-processing-documents/)
+- [Elektronik Tablo Oluşturma Seçenekleri](./net/spreadsheet-rendering-options/)
+- [PDF Oluşturma Seçenekleri](./net/pdf-rendering-options/)
+- [Outlook Veri Dosyalarını Oluşturma (PST, OST)](./net/rendering-outlook-data-files/)
+- [Microsoft Project Belgelerini Oluşturma](./net/rendering-ms-project-documents/)
 - [Belge Yükleme](./net/document-loading/)
-- [Render Temelleri](./net/rendering-basics/)
-- [Gelişmiş Render](./net/advanced-rendering/)
+- [Oluşturma Temelleri](./net/rendering-basics/)
+- [Gelişmiş Oluşturma](./net/advanced-rendering/)
 - [Performans Optimizasyonu](./net/performance-optimization/)
-- [Güvenlik & İzinler](./net/security-permissions/)
-- [Su İşaretleri & Açıklamalar](./net/watermarks-annotations/)
-- [Dosya Formatı Desteği](./net/file-formats-support/)
-- [Bulut & Uzaktan Belge Render Etme](./net/cloud-remote-document-rendering/)
-- [Önbellekleme & Kaynak Yönetimi](./net/caching-resource-management/)
-- [Meta Veri & Özellikler](./net/metadata-properties/)
-- [Dışa Aktarım & Dönüştürme](./net/export-conversion/)
-- [Özel Render](./net/custom-rendering/)
+- [Güvenlik ve İzinler](./net/security-permissions/)
+- [Filigranlar ve Açıklamalar](./net/watermarks-annotations/)
+- [Dosya Formatları Desteği](./net/file-formats-support/)
+- [Bulut ve Uzaktan Belge Oluşturma](./net/cloud-remote-document-rendering/)
+- [Önbellekleme ve Kaynak Yönetimi](./net/caching-resource-management/)
+- [Meta Veri ve Özellikler](./net/metadata-properties/)
+- [Dışa Aktarım ve Dönüştürme](./net/export-conversion/)
+- [Özel Oluşturma](./net/custom-rendering/)
 
 {{% alert color="primary" %}}
-GroupDocs.Viewer for Java ile Java uygulamalarınıza çok yönlü ve verimli bir belge görüntüleyici entegre edin. Öğreticilerimiz, ortamınızı kurmaktan gelişmiş render özelliklerini uygulamaya kadar her adımda size rehberlik edecek. Çoklu‑düzen CAD dosyaları ve şifre korumalı arşivler gibi karmaşık belgeler dahil olmak üzere çok sayıda dosya formatını görüntülemeyi öğrenin. Belgeleri HTML5, görüntüler ve PDF olarak render etmek için örneklerimizi izleyin; böylece çapraz platform belge görüntüleme kolaylaşır.
+GroupDocs.Viewer for Java ile Java uygulamalarınıza çok yönlü ve verimli bir belge görüntüleyici entegre edin. Öğreticilerimiz, ortamınızı kurmaktan gelişmiş oluşturma özelliklerini uygulamaya kadar her adımda size rehberlik edecek. Çoklu düzen CAD dosyaları ve şifre korumalı arşivler gibi karmaşık belgeler dahil olmak üzere çok sayıda dosya formatını görüntülemeyi öğrenin. Belgeleri HTML5, görüntüler ve PDF'ye oluşturmak için örneklerimizi izleyin, böylece çapraz platform belge görüntüleme kolaylaşır.
 {{% /alert %}}
 
-### GroupDocs Viewer ile Java'da nasıl başlanır
+### GroupDocs Viewer ile Java'da Nasıl Başlanır
+Java'da GroupDocs Viewer ile başlamak için GroupDocs Viewer Maven (veya Gradle) bağımlılığını ekleyin, geçerli bir lisans dosyasını yapılandırın ve gerekli sınıfları içe aktarın. `Viewer` sınıfı, bir belgeyi açan ve istenen formata dönüştüren temel API'dir. Ardından birkaç satır kodla bir Viewer örneği oluşturabilir ve belgeleri HTML, görüntüler veya PDF'ye oluşturabilirsiniz.  
+
 Java geliştiricileri için önkoşullar benzer:
 
-- JDK 8 veya üzeri yüklü  
+- JDK 8 veya daha üstü yüklü  
 - Maven veya Gradle yapı sistemi yapılandırılmış  
-- Projenize eklenmiş GroupDocs Viewer for Java bağımlılığı  
+- GroupDocs Viewer for Java bağımlılığı projenize eklenmiş  
 
-Kurulumu tamamladıktan sonra, aşağıdaki Java‑özel öğreticileri keşfedin.
+Kurulumdan sonra, aşağıdaki Java'ya özgü öğreticileri keşfedin.
 
-İşte bazı faydalı Java kaynaklarına bağlantılar:
+Bunlar bazı faydalı Java kaynaklarına bağlantılardır: 
 
-- [Başlangıç](./java/getting-started/)
+- [Başlarken](./java/getting-started/)
 - [Belge Yükleme](./java/document-loading/)
-- [Render Temelleri](./java/rendering-basics/)
-- [Gelişmiş Render](./java/advanced-rendering/)
+- [Oluşturma Temelleri](./java/rendering-basics/)
+- [Gelişmiş Oluşturma](./java/advanced-rendering/)
 - [Performans Optimizasyonu](./java/performance-optimization/)
-- [Güvenlik & İzinler](./java/security-permissions/)
-- [Su İşaretleri & Açıklamalar](./java/watermarks-annotations/)
-- [Dosya Formatı Desteği](./java/file-formats-support/)
-- [Bulut & Uzaktan Belge Render Etme](./java/cloud-remote-document-rendering/)
-- [Önbellekleme & Kaynak Yönetimi](./java/caching-resource-management/)
-- [Meta Veri & Özellikler](./java/metadata-properties/)
-- [Dışa Aktarım & Dönüştürme](./java/export-conversion/)
-- [Özel Render](./java/custom-rendering/)
+- [Güvenlik ve İzinler](./java/security-permissions/)
+- [Filigranlar ve Açıklamalar](./java/watermarks-annotations/)
+- [Dosya Formatları Desteği](./java/file-formats-support/)
+- [Bulut ve Uzaktan Belge Oluşturma](./java/cloud-remote-document-rendering/)
+- [Önbellekleme ve Kaynak Yönetimi](./java/caching-resource-management/)
+- [Meta Veri ve Özellikler](./java/metadata-properties/)
+- [Dışa Aktarım ve Dönüştürme](./java/export-conversion/)
+- [Özel Oluşturma](./java/custom-rendering/)
 
 ## Sıkça Sorulan Sorular
 
 **S: GroupDocs Viewer'ı kullanmak için ek bir yazılım kurmam gerekiyor mu?**  
-C: Harici bir yazılım gerekmez; API tüm render işlemlerini dahili olarak yönetir.
+C: Harici bir yazılım gerekmez; API tüm oluşturmayı dahili olarak yönetir.
 
-**S: Şifre korumalı belgeleri render edebilir miyim?**  
+**S: Şifre korumalı belgeleri oluşturabilir miyim?**  
 C: Evet, API üzerinden belgeyi yüklerken şifreyi geçebilirsiniz.
 
 **S: Önbellekleme performansı nasıl artırır?**  
-C: Önbellekleme, render edilmiş sayfaları veya görüntüleri saklayarak sonraki isteklerde işleme süresini azaltır.
+C: Önbellekleme, oluşturulan sayfaları veya görüntüleri saklar, sonraki isteklerde işleme süresini azaltır.
 
-**S: Render edilen sayfalara su işareti eklemek mümkün mü?**  
-C: Kesinlikle—özel öğreticiler, render sırasında metin veya görüntü su işaretleri eklemeyi gösterir.
+**S: Oluşturulan sayfalara filigran eklemek mümkün mü?**  
+C: Kesinlikle—özel öğreticiler, oluşturma sırasında metin veya görüntü filigranı eklemeyi gösterir.
 
-**S: Hangi dosya formatları kutudan çıktığı gibi destekleniyor?**  
-C: PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG ve birçok görüntü türü dahil olmak üzere 170'den fazla format.
+**S: Hangi dosya formatları kutudan çıkar çıkmaz destekleniyor?**  
+C: PDF, DOCX, XLSX, PPTX, DWG, DWF, SVG ve birçok görüntü türü dahil olmak üzere 170'ten fazla format.
 
 ---
 
-**Last Updated:** 2026-02-15  
-**Test Edilen:** GroupDocs.Viewer 23.11 for .NET & Java  
+**Son Güncelleme:** 2026-07-14  
+**Test Edilen Versiyon:** GroupDocs.Viewer 23.11 for .NET & Java  
 **Yazar:** GroupDocs
