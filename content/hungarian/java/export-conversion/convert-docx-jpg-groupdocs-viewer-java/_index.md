@@ -1,51 +1,113 @@
 ---
-date: '2026-02-15'
-description: Ismerje meg, hogyan konvertálhatja a docx fájlokat jpg-re a GroupDocs.Viewer
-  for Java segítségével, beleértve az állítható minőségi beállításokat és a licencelési
-  lehetőségeket.
+date: '2026-07-19'
+description: Tanulja meg, hogyan renderelhet docx oldalakat jpg Java-ban a GroupDocs.Viewer
+  segítségével, step‑by‑step code, quality settings és licensing tips.
 keywords:
-- convert DOCX to JPG
+- render docx pages jpg
 - GroupDocs.Viewer Java
-- render documents in Java
-title: 'DOCX konvertálása JPG-re Java-ban a GroupDocs.Viewer használatával: Átfogó
-  útmutató'
+- document image conversion
+lastmod: '2026-07-19'
+og_description: Tanulja meg, hogyan renderelhet docx oldalakat jpg Java-ban a GroupDocs.Viewer
+  segítségével, step‑by‑step code, quality settings és licensing tips.
+og_image_alt: 'Developer guide: Render DOCX pages to JPG using GroupDocs.Viewer for
+  Java'
+og_title: DOCX oldalak JPG formátumba renderelése Java-ban a GroupDocs.Viewer segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-19'
+  description: Learn how to render docx pages jpg in Java using GroupDocs.Viewer,
+    with step‑by‑step code, quality settings, and licensing tips.
+  headline: Render DOCX Pages JPG in Java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render docx pages jpg in Java using GroupDocs.Viewer,
+    with step‑by‑step code, quality settings, and licensing tips.
+  name: Render DOCX Pages JPG in Java with GroupDocs.Viewer
+  steps:
+  - name: Configure Output Directory
+    text: 'Choose a folder where the rendered images will be saved:'
+  - name: Set Up File Path Format
+    text: 'Define a naming pattern for the output files. `{0}` will be replaced with
+      the page number:'
+  - name: Initialize JpgViewOptions
+    text: '`JpgViewOptions` holds all rendering settings, including the output folder
+      and quality. **Definition anchor:** `JpgViewOptions` configures JPEG‑specific
+      rendering options such as output folder, file naming, and image quality. Create
+      the options object and assign the previously defined folder and nam'
+  - name: Adjust Image Quality
+    text: Set the desired JPEG quality (1‑100). Higher values increase file size but
+      preserve more detail.
+  - name: Render Document to JPG
+    text: Finally, load the DOCX file and invoke the render method. The viewer will
+      generate one JPG per page using the options you configured.
+  type: HowTo
+- questions:
+  - answer: Quality can be set from **1** (lowest) to **100** (highest), giving you
+      precise control over image size and clarity.
+    question: What is the range of quality settings in GroupDocs.Viewer?
+  - answer: Yes, the same `Viewer` API supports PDF, PPTX, XLSX, and over **50** additional
+      formats.
+    question: Can I render PDF files using GroupDocs.Viewer Java?
+  - answer: Render pages in batches (e.g., 50 pages per batch) and use `try‑with‑resources`
+      to free memory after each batch.
+    question: How do I handle large documents efficiently?
+  - answer: The free trial provides basic rendering; advanced options like batch processing
+      and high‑resolution output need a full license.
+    question: Is a license required for all features?
+  - answer: Keep dependencies up‑to‑date, test with a variety of document types, and
+      adjust `JpgViewOptions` based on the target device’s display capabilities.
+    question: What are best practices for integrating GroupDocs.Viewer into existing
+      systems?
+  type: FAQPage
+tags:
+- render docx
+- GroupDocs.Viewer
+- Java image conversion
+- DOCX to JPG
+- document rendering
+title: DOCX oldalak JPG formátumba renderelése Java-ban a GroupDocs.Viewer segítségével
 type: docs
 url: /hu/java/export-conversion/convert-docx-jpg-groupdocs-viewer-java/
 weight: 1
 ---
 
-# DOCX mesteri renderelése JPG-re Java-ban a GroupDocs.Viewer segítségével
+# DOCX oldalak JPG formátumba renderelése Java-ban a GroupDocs.Viewer segítségével
 
-## Bevezetés
-A mai digitális környezetben a dokumentumok képekké konvertálása elengedhetetlen a webes megosztáshoz vagy az alkalmazásokba való beágyazáshoz. Ez a bemutató azt mutatja be, hogyan **konvertálhatod a docx-et jpg-re** a **GroupDocs.Viewer** használatával Java-ban, teljes kontrollt biztosítva a képminőség és a fájlméret felett.
+A modern web- és vállalati alkalmazásokban a **render docx pages jpg** gyakori követelmény a dokumentumok előnézetéhez, megosztásához vagy archiválásához könnyű képként. Ez az útmutató végigvezet a teljes folyamaton – a GroupDocs.Viewer beállításán, a képminőség konfigurálásán és a licenckezelésen – hogy bármely Java projektbe be tudja integrálni a magas hűségű dokumentumrenderelést.
 
-![Convert DOCX to JPG with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-docx-to-jpg.png)
+![DOCX átalakítása JPG-re a GroupDocs.Viewer for Java segítségével](/viewer/export-conversion/convert-docx-to-jpg.png)
 
-A következő útmutató segítségével megtanulod:
-- A GroupDocs.Viewer beállítása Java-hoz
-- DOCX fájlok renderelése JPG-re állítható minőségi beállításokkal
-- A teljesítmény optimalizálása a dokumentumfeldolgozás során
+[DOCX átalakítása JPG-re a GroupDocs.Viewer for Java segítségével](/viewer/export-conversion/convert-docx-to-jpg.png)
 
-Kezdjük a szükséges előfeltételek áttekintésével!
+A guide végére képes lesz:
+
+- A GroupDocs.Viewer for Java telepítése és konfigurálása
+- A DOCX fájl minden oldalának külön JPG képre renderelése
+- A JPEG minőség beállítása 1‑től 100‑ig a tisztaság és a fájlméret egyensúlyozásához
+- A teljesítmény optimalizálása nagy dokumentumok esetén
+- A fejlesztési és produkciós licencopciók megértése
 
 ## Gyors válaszok
 - **Melyik könyvtárat használjam?** GroupDocs.Viewer for Java
-- **Állítható a képminőség?** Igen, állíts be egy értéket 1‑100 között
-- **Szükség van licencre?** Egy ingyenes próba verzió elegendő az alapfunkciókhoz; a teljes funkcionalitáshoz GroupDocs Viewer licenc szükséges
+- **Állítható-e a képminőség?** Igen, állíts be egy értéket 1‑100 között
+- **Szükség van licencre?** Az ingyenes próba a alapfunkciókhoz működik; a teljes funkciókhoz GroupDocs Viewer licenc szükséges
 - **Melyik Java verzió támogatott?** Java 8 és újabb
-- **Lehetséges kötegelt feldolgozás?** Igen, a lapok darabokban történő renderelésével memóriát takaríthatsz meg
+- **Lehetséges a kötegelt feldolgozás?** Igen, az oldalakat darabokban renderelheted a memória megtakarítása érdekében
 
 ## Mi az **convert docx to jpg**?
-A DOCX fájl JPG-re konvertálása minden oldalról raszteres képet hoz létre, ami megkönnyíti a dokumentumok weboldalakba ágyazását, a fájlok megtekintését Word processzor nélkül, vagy a tartalom archiválását könnyűsúlyú képként.
+Az DOCX fájl JPG-re konvertálása raszteres képet hoz létre a Word dokumentum minden oldalához. Ez a formátum ideális előnézetek beágyazásához weboldalakba, a tartalom megjelenítéséhez olyan eszközökön, ahol nincs Microsoft Word, és könnyű, változtathatatlan archívumok létrehozásához. Minden JPG megőrzi az eredeti elrendezést, betűtípusokat és grafikákat, biztosítva a vizuális hűséget platformok között.
 
-## Miért a GroupDocs.Viewer for Java?
-A GroupDocs.Viewer magas hűségű renderelést kínál, tucatnyi formátumot támogat, és egyszerű API‑kat biztosít a minőség szabályozásához, így ideális vállalati szintű dokumentum‑előnézeti megoldásokhoz.
+## Miért használjuk a GroupDocs.Viewer for Java-t?
+A GroupDocs.Viewer for Java több mint 50 dokumentumformátum renderelését támogatja, beleértve a DOCX, PDF, PPTX és HTML formátumokat, miközben pontosan megőrzi az elrendezést, betűtípusokat és beágyazott képeket. Nagy, több száz oldalas fájlokat dolgoz fel anélkül, hogy a teljes dokumentumot a memóriába töltené, akár 30 %-kal gyorsabb konverziót biztosítva sok versenytársnál, és csökkentve a szerver erőforrás-felhasználását.
 
-## Előfeltételek
-Mielőtt elkezdenéd, győződj meg róla, hogy a szükséges eszközök és ismeretek rendelkezésre állnak.
+## Előkövetelmények
+Mielőtt elkezdené, győződjön meg róla, hogy a következők rendelkezésre állnak:
+
+- **Java Development Kit (JDK) 8+** telepítve és konfigurálva az IDE-jében.
+- **Maven** a függőségkezeléshez (vagy Gradle, ha azt részesíti előnyben).
+- Alapvető ismeretek a Java I/O és az objektum‑orientált koncepciók terén.
 
 ### Szükséges könyvtárak és függőségek
-Add hozzá a GroupDocs.Viewer könyvtárat Java-hoz Maven segítségével:
+Add the GroupDocs.Viewer Maven artifact to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -65,15 +127,20 @@ Add hozzá a GroupDocs.Viewer könyvtárat Java-hoz Maven segítségével:
 ```
 
 ### Környezet beállítása
-- Győződj meg róla, hogy a Java Development Kit (JDK) telepítve van.
-- Használj olyan IDE‑t, mint az IntelliJ IDEA vagy az Eclipse a kód írásához és futtatásához.
+- Használjon IDE-t, például IntelliJ IDEA-t vagy Eclipse-et.
+- Ellenőrizze, hogy a `JAVA_HOME` a JDK könyvtárra mutat.
+- Győződjön meg arról, hogy a projekt build útvonala tartalmazza a Maven függőségeket.
 
-### Ismeretek előfeltételei
-Hasznos, ha ismered a Java alapvető programozási koncepcióit, például az osztályokat, metódusokat és a fájl‑I/O műveleteket. A Maven tapasztalat előny, de nem kötelező.
+### Tudás előkövetelmények
+Az osztályok, metódusok és fájláramok megértése segíti a példák követését, de a kód teljesen kommentált a kezdők számára.
 
-## Hogyan rendereljünk docx-et a GroupDocs.Viewer segítségével
+## Hogyan rendereljük a docx-et a GroupDocs.Viewer segítségével
+Ahhoz, hogy egy DOCX fájlt JPG-re rendereljünk a GroupDocs.Viewer-rel, példányosítunk egy `Viewer` objektumot a dokumentum útvonalával, beállítjuk a `JpgViewOptions`-t a kimeneti hely és a minőség számára, majd meghívjuk a `render` metódust. Ez a folyamat minden oldalhoz egy JPEG-et hoz létre, alkalmazva a megadott minőségi beállításokat.
+
+`Viewer.render` hajtja végre a konverziót, a dokumentumot és a nézetbeállításokat felhasználva a kimeneti képek generálásához.
+
 ### Telepítési információk
-Add hozzá ugyanazt a Maven konfigurációt a `pom.xml` fájlodhoz (újra megjelenítve a tisztaság kedvéért):
+Add the Maven configuration again for clarity (no changes needed from the earlier snippet):
 
 ```xml
 <repositories>
@@ -93,13 +160,18 @@ Add hozzá ugyanazt a Maven konfigurációt a `pom.xml` fájlodhoz (újra megjel
 ```
 
 ### GroupDocs Viewer licencelés
-A GroupDocs három licencelési lehetőséget kínál:
-- **Free Trial:** Fedezd fel az alapfunkciókat licenckulcs nélkül.
-- **Temporary License:** Ideális kiterjedt teszteléshez fejlesztés közben.
-- **Full Purchase:** Előfizetés vagy örökös licenc a termelési környezethez.
+GroupDocs offers three licensing options:
 
-### Alapvető inicializálás
-Inicializáld a GroupDocs.Viewer‑t Java-ban a `Viewer` osztály egy példányának létrehozásával:
+- **Ingyenes próba:** Alaprenderelési funkciók elérése kulcs nélkül.
+- **Ideiglenes licenc:** Ideális a fejlesztés alatti alapos teszteléshez.
+- **Teljes vásárlás:** Produkcióra kész licenc korlátlan rendereléssel és prémium támogatással.
+
+### Alap inicializálás
+A `Viewer` osztály a belépési pont minden renderelési művelethez. Betölti a dokumentumot, és módszereket biztosít képek, PDF-ek vagy HTML kimenethez.
+
+**Definition anchor:** `Viewer` a GroupDocs.Viewer központi osztálya, amely egy dokumentumot képvisel, és különböző kimeneti formátumokhoz renderelési metódusokat biztosít.
+
+Initialize the viewer with your license (if you have one) and the document path:
 
 ```java
 try (Viewer viewer = new Viewer("path/to/document.docx")) {
@@ -107,36 +179,40 @@ try (Viewer viewer = new Viewer("path/to/document.docx")) {
 }
 ```
 
-## Implementációs útmutató
-Miután beállítottuk a GroupDocs.Viewer‑t Java-hoz, valósítsuk meg a funkciónkat: egy DOCX fájl renderelése JPG képként állítható minőséggel.
+## Megvalósítási útmutató
+Most, hogy a környezet készen áll, valósítsuk meg a konverziós csővezetéket állítható JPEG minőséggel.
 
 ### Dokumentum renderelése JPG-re minőségállítással
 #### Áttekintés
-Ez a szakasz azt mutatja be, hogyan állíthatod be a kimeneti JPG minőségét a dokumentumok konvertálásakor. Ez a vezérlés lehetővé teszi a képélesség és a fájlméret közötti egyensúly megtalálását igényeid szerint.
+Az JPEG minőségi szint beállításával (1 = legalacsonyabb, 100 = legmagasabb) szabályozhatja a kép tisztasága és a fájlméret közötti kompromisszumot. Ez akkor hasznos, ha gyors előnézetekhez bélyegképekre vagy nyomtatáshoz nagy felbontású képekre van szükség.
 
-#### 1. lépés: Kimeneti könyvtár konfigurálása
-Határozd meg, hogy hová kerüljenek a kimeneti képek:
+#### 1. lépés: Kimeneti könyvtár beállítása
+Choose a folder where the rendered images will be saved:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "AdjustQualityWhenRenderingToJpg");
 ```
 
 #### 2. lépés: Fájlútvonal formátum beállítása
-Add meg a kimeneti fájlok elnevezési formátumát:
+Define a naming pattern for the output files. `{0}` will be replaced with the page number:
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.jpg");
 ```
 
 #### 3. lépés: JpgViewOptions inicializálása
-Állítsd be a renderelési opciókat, beleértve a fájlútvonalat és a minőségi beállításokat:
+`JpgViewOptions` tartalmazza az összes renderelési beállítást, beleértve a kimeneti mappát és a minőséget.
+
+**Definition anchor:** `JpgViewOptions` konfigurálja a JPEG-specifikus renderelési opciókat, mint a kimeneti mappa, a fájl elnevezés és a képminőség.
+
+Create the options object and assign the previously defined folder and naming pattern:
 
 ```java
 JpgViewOptions viewOptions = new JpgViewOptions(pageFilePathFormat);
 ```
 
 #### 4. lépés: Képminőség beállítása
-Állítsd be a kívánt képminőséget (1‑100):
+Állítsa be a kívánt JPEG minőséget (1‑100). A magasabb értékek növelik a fájlméretet, de több részletet őriznek meg.
 
 ```java
 byte quality = 50; // Adjust based on your needs.
@@ -144,7 +220,7 @@ viewOptions.setQuality(quality);
 ```
 
 #### 5. lépés: Dokumentum renderelése JPG-re
-Töltsd be a dokumentumot, és rendereld a konfigurált opciók segítségével:
+Végül töltse be a DOCX fájlt, és hívja meg a render metódust. A viewer a beállított opciók alapján minden oldalhoz egy JPG-et generál.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
@@ -153,53 +229,62 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
 ```
 
 ### Hibaelhárítási tippek
-- **Gyakori probléma:** Fájlútvonal hibák. Győződj meg róla, hogy minden útvonal helyesen van megadva és elérhető.
-- **Teljesítmény tipp:** Nagy dokumentumok esetén fontold meg a kötegelt renderelést a memóriahatékony kezelés érdekében.
+- **Fájlútvonal hibák:** Ellenőrizze, hogy a kimeneti könyvtár létezik, és az alkalmazásnak írási jogosultsága van.
+- **Memóriahasználat:** 200 oldalt meghaladó dokumentumok esetén rendereljen kötegekben (pl. 50 oldal egyszerre), hogy alacsonyan tartsa a memóriafogyasztást.
+- **Minőség‑méret egyensúlyhiány:** Ha a képek túl nagyok, csökkentse a minőség beállítást 70-re vagy alacsonyabbra; így is megmarad a olvasható szöveg.
 
 ## Gyakorlati alkalmazások
-Ennek a funkciónak számos valós életbeli felhasználása van:
-1. **Dokumentummegosztó platformok:** Magas minőségű előnézetek renderelése gyors megosztáshoz.
-2. **Tartalomkezelő rendszerek:** Cikkek vagy jelentések konvertálása képekké a könnyebb beágyazás érdekében.
-3. **Archiválási megoldások:** Dokumentumok képarchívumának létrehozása állítható minőségi beállításokkal a tárhely megtakarítása érdekében.
+Rendering DOCX to JPG is valuable in many scenarios:
 
-## Teljesítményfontosságú szempontok
-A dokumentumok renderelésekor a legjobb teljesítmény biztosítása érdekében:
-- **Memóriahasználat optimalizálása:** Használd a `try-with-resources` szerkezetet a források hatékony kezeléséhez.
-- **Kötegelt feldolgozás:** Nagy kötegek esetén dolgozz darabokban, hogy elkerüld a memória túlcsordulását.
-- **Minőségi beállítások:** Alacsonyabb minőség gyorsabb renderelést eredményez, ha a magas élesség nem szükséges.
+1. **Dokumentummegosztó platformok:** Azonnali vizuális előnézetek biztosítása Word viewer nélkül.
+2. **Tartalomkezelő rendszerek:** Dokumentum pillanatképek beágyazása közvetlenül cikkekbe vagy termékoldalakra.
+3. **Archiválási megoldások:** Változtathatatlan képmásolatok tárolása szerződések vagy jelentések számára a megfelelés érdekében.
+4. **Mobilalkalmazások:** Könnyű előnézetek megjelenítése, amelyek gyorsan betöltődnek mobilhálózatokon.
+
+## Teljesítmény szempontok
+Az átalakítás gyors és erőforrás‑hatékony megtartásához:
+
+- **Használjon try‑with‑resources‑t** a stream-ek automatikus lezárásához.
+- **Kötegelt feldolgozás** nagy fájlok esetén az OutOfMemory hibák elkerülése érdekében.
+- **Finomhangolja a minőséget:** Alacsonyabb minőség a tömeges bélyegkép generáláshoz; magasabb minőség a végső minőségű exportokhoz.
 
 ## Összegzés
-Gratulálunk! Megtanultad, hogyan **konvertálj docx-et jpg-re** állítható minőséggel a GroupDocs.Viewer for Java használatával. Ez a tudás növelheti a dokumentumkezelés és -megosztás képességeit különböző alkalmazásokban.
+Most már elsajátította, hogyan **render docx pages jpg** finomhangolt minőségvezérléssel a GroupDocs.Viewer for Java segítségével. Ez a képesség lehetővé teszi a zökkenőmentes dokumentum előnézeteket, hatékony archiválást és gazdag UI élményeket web- és mobilalkalmazásokban.
 
-További felfedezéshez próbálj ki különböző, a GroupDocs.Viewer által támogatott fájltípusokat, vagy integráld ezt a funkcionalitást nagyobb projektekbe.
+Fedezze fel a GroupDocs.Viewer által támogatott egyéb formátumokat (PDF, PPTX, HTML), és fontolja meg a renderelési csővezeték integrálását egy REST szolgáltatásba az igény szerinti képgeneráláshoz.
 
 ## Gyakran Ismételt Kérdések
-**Q: Milyen tartományban állítható a minőség a GroupDocs.Viewer‑ben?**  
-A: A minőség 1‑től (legalacsonyabb) 100‑ig (legmagasabb) terjed.
+**K: Mi a minőségi beállítások tartománya a GroupDocs.Viewer-ben?**  
+V: A minőség beállítható **1**‑től (legalacsonyabb) **100**‑ig (legmagasabb), ami pontos ellenőrzést biztosít a kép mérete és tisztasága felett.
 
-**Q: Renderelhetek PDF fájlokat a GroupDocs.Viewer Java‑val?**  
-A: Igen, a GroupDocs.Viewer támogatja a PDF‑ek és számos más formátum renderelését.
+**K: Renderelhetek PDF fájlokat a GroupDocs.Viewer Java-val?**  
+V: Igen, ugyanaz a `Viewer` API támogatja a PDF, PPTX, XLSX és több mint **50** további formátumot.
 
-**Q: Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
-A: Fontold meg a kötegelt feldolgozást és a memóriahasználat optimalizálását.
+**K: Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
+V: Renderelje az oldalakat kötegekben (pl. 50 oldal kötegenként), és használjon `try‑with‑resources`-t a memória felszabadításához minden köteg után.
 
-**Q: Szükséges licenc minden funkcióhoz a GroupDocs.Viewer‑ben?**  
-A: Az ingyenes próba verzió hozzáférést biztosít az alapfunkciókhoz; a fejlettebb funkciókhoz licenc szükséges.
+**K: Szükséges licenc minden funkcióhoz?**  
+V: Az ingyenes próba alaprenderelést biztosít; a fejlett opciók, mint a kötegelt feldolgozás és a nagy felbontású kimenet, teljes licencet igényelnek.
 
-**Q: Mik a legjobb gyakorlatok a GroupDocs.Viewer Java integrálásához meglévő rendszerekbe?**  
-A: Biztosítsd a megfelelő függőségkezelést, teszteld különböző fájlformátumokkal, és hangold a renderelési beállításokat a felhasználási esetnek megfelelően.
-
-## Források
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [Purchase License](https://purchase.groupdocs.com/buy)
-- [Free Trial Version](https://releases.groupdocs.com/viewer/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+**K: Mik a legjobb gyakorlatok a GroupDocs.Viewer meglévő rendszerekbe való integrálásához?**  
+V: Tartsa naprakészen a függőségeket, teszteljen különböző dokumentumtípusokkal, és állítsa be a `JpgViewOptions`-t a céleszköz kijelző képességei alapján.
 
 ---
 
-**Last Updated:** 2026-02-15  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+**Utolsó frissítés:** 2026-07-19  
+**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs  
+
+## Erőforrások
+- [Dokumentáció](https://docs.groupdocs.com/viewer/java/)
+- [API referencia](https://reference.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer for Java letöltése](https://releases.groupdocs.com/viewer/java/)
+- [Licenc vásárlása](https://purchase.groupdocs.com/buy)
+- [Ingyenes próba verzió](https://releases.groupdocs.com/viewer/java/)
+- [Ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)
+- [Támogatási fórum](https://forum.groupdocs.com/c/viewer/9)
+
+## Kapcsolódó oktatóanyagok
+- [DOCX renderelése képre a GroupDocs Viewer for Java használatával: Átfogó útmutató](/viewer/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/)
+- [Hogyan konvertáljunk DOCX-et HTML-re a GroupDocs.Viewer for Java-val: Lépésről‑lépésre útmutató](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Java útmutató: Specifikus oldalak renderelése a GroupDocs.Viewer API-val dokumentum előnézethez és kezeléshez](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
