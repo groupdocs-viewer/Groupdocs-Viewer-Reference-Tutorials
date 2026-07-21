@@ -1,44 +1,59 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak vykreslit skryté řádky a sloupce v tabulkách Java pomocí GroupDocs.Viewer pro bezproblémovou konverzi HTML. Zajistěte si úplnou viditelnost dat s tímto pokročilým průvodcem vykreslováním."
-"title": "Vykreslení skrytých řádků a sloupců v tabulkách Java pomocí GroupDocs.Viewer"
-"url": "/cs/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-03-27'
+description: Naučte se, jak převést Excel do HTML a vykreslit skryté řádky a sloupce
+  v Java tabulkách pomocí GroupDocs.Viewer pro bezproblémový převod do HTML. Zajistěte
+  úplnou viditelnost dat s tímto pokročilým průvodcem renderováním.
+keywords:
+- convert excel to html
+- xlsx to html java
+- display hidden spreadsheet data
+- GroupDocs Viewer Java
+title: Jak převést Excel do HTML a vykreslit skryté řádky a sloupce v Javě pomocí
+  GroupDocs.Viewer
 type: docs
+url: /cs/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/
+weight: 1
 ---
-# Vykreslení skrytých řádků a sloupců v tabulkách Java pomocí GroupDocs.Viewer
 
-## Zavedení
+# Převod Excelu do HTML a vykreslení skrytých řádků a sloupců v tabulkách Java pomocí GroupDocs.Viewer
 
-Máte potíže s vizualizací skrytých řádků a sloupců v tabulce při jejím převodu do HTML pomocí Javy? Nejste sami! Mnoho vývojářů se s touto výzvou potýká při snaze zachovat integritu vizualizace dat v různých formátech. Tento tutoriál vás provede tím, jak efektivně vykreslit skryté řádky a sloupce v tabulkách pomocí GroupDocs.Viewer pro Javu a zajistit, aby se během převodu neztratily žádné důležité informace.
+Máte potíže s **převodem Excelu do HTML** a vizualizací skrytých řádků a sloupců v tabulce při převodu do HTML pomocí Javy? Nejste sami! Mnoho vývojářů čelí této výzvě při snaze zachovat integritu vizualizace dat napříč různými formáty. Tento tutoriál vás provede tím, jak efektivně vykreslit skryté řádky a sloupce v tabulkách pomocí GroupDocs.Viewer pro Java, aby během převodu nebyly ztraceny žádné důležité informace.
 
-V tomto článku se budeme zabývat:
-- Konfigurace GroupDocs.Viewer pro vykreslování skrytých prvků tabulky
-- Nastavení prostředí se závislostmi Mavenu
-- Postupná implementace funkce
-- Reálné aplikace a aspekty výkonu
+![Vykreslení skrytých řádků a sloupců pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/render-hidden-rows-and-columns-java.png)
 
-Než se do toho pustíme, ujistěte se, že máte základní znalosti programování v Javě a alespoň trochu seznámení se správou závislostí v Mavenu. Začněme nastavením našeho prostředí.
+## Rychlé odpovědi
+- **Může GroupDocs.Viewer převést Excel do HTML?** Ano, poskytuje okamžitou podporu pro převod souborů XLSX do HTML.
+- **Budou skryté řádky a sloupce viditelné ve výstupu HTML?** Když povolíte správné možnosti, skrytá data jsou vykreslena stejně jako viditelné buňky.
+- **Jaký Maven artefakt je vyžadován?** `com.groupdocs:groupdocs-viewer` (doporučena nejnovější verze).
+- **Potřebuji licenci pro produkční použití?** Pro produkci je vyžadována trvalá licence; pro hodnocení je k dispozici bezplatná zkušební verze nebo dočasná licence.
+- **Je tento přístup kompatibilní s Java 8 a novějšími?** Rozhodně – funguje s JDK 8+.
+
+## Co je „převod Excelu do HTML“?
+Převod Excelu do HTML znamená transformaci sešitu `.xlsx` na sadu webových HTML stránek při zachování původního rozvržení, stylů a dat. To vám umožní zobrazit tabulky přímo v prohlížečích bez nutnosti Microsoft Office.
+
+## Proč vykreslovat skrytá data v tabulce?
+- **Finanční výkaznictví** vyžaduje kompletní auditní stopy, včetně řádků/sloupců skrytých pro prezentační účely.
+- **Nástroje pro analýzu dat** potřebují kompletní datovou sadu pro přesné výpočty.
+- **Vzdělávací materiály** vyžadují, aby každá buňka byla viditelná pro výuku vzorců a datových struktur.
 
 ## Předpoklady
 
 ### Požadované knihovny a závislosti
-Chcete-li tuto funkci implementovat, nezapomeňte do projektu zahrnout GroupDocs.Viewer pro Javu jako závislost. Tato knihovna je nezbytná pro vykreslování dokumentů do různých formátů, jako je HTML, PDF a obrazové soubory.
+Pro implementaci této funkce se ujistěte, že do svého projektu zahrnete GroupDocs.Viewer pro Java jako závislost. Tato knihovna je nezbytná pro vykreslování dokumentů do různých formátů, jako jsou HTML, PDF a soubory obrázků.
 
 ### Požadavky na nastavení prostředí
-Než budete pokračovat, ujistěte se, že máte následující nastavení:
-- **Vývojová sada pro Javu (JDK)**Verze 8 nebo novější
-- **Integrované vývojové prostředí (IDE)**Například IntelliJ IDEA nebo Eclipse
-- **Znalec**Pro správu závislostí projektu
+- **Java Development Kit (JDK)**: Verze 8 nebo novější  
+- **Integrované vývojové prostředí (IDE)**: Například IntelliJ IDEA nebo Eclipse  
+- **Maven**: Pro správu závislostí projektu  
 
 ### Předpoklady znalostí
-Základní znalost programování v Javě je nezbytná. Znalost Mavenu bude navíc přínosem pro nastavení vašeho projektu.
+Je nutné základní porozumění programování v Javě. Dále bude užitečná znalost Maven pro nastavení projektu.
 
-## Nastavení GroupDocs.Viewer pro Javu
-Chcete-li začít používat GroupDocs.Viewer ve vaší aplikaci Java, budete jej muset nastavit pomocí Mavenu. Zde je postup:
+## Nastavení GroupDocs.Viewer pro Java
+Pro zahájení používání GroupDocs.Viewer ve vaší Java aplikaci jej musíte nastavit pomocí Maven. Zde je postup:
 
-**Znalec**
-Přidejte následující konfiguraci do svého `pom.xml` soubor:
+**Maven**  
+Přidejte následující konfiguraci do souboru `pom.xml`:
 ```xml
 <repositories>
    <repository>
@@ -57,32 +72,29 @@ Přidejte následující konfiguraci do svého `pom.xml` soubor:
 ```
 
 ### Kroky získání licence
-Chcete-li použít GroupDocs.Viewer, zvažte následující možnosti:
-- **Bezplatná zkušební verze**: Stáhněte si zkušební verzi pro otestování funkcí.
-- **Dočasná licence**Požádejte o dočasnou licenci pro přístup k plným funkcím bez omezení zkušební verze.
-- **Nákup**Získejte trvalou licenci pro produkční použití.
+- **Bezplatná zkušební verze**: Stáhněte si zkušební verzi pro vyzkoušení funkcí.  
+- **Dočasná licence**: Požádejte o dočasnou licenci pro plný přístup k funkcím bez omezení hodnocení.  
+- **Nákup**: Získejte trvalou licenci pro produkční použití.  
 
-Po nastavení Mavenu a získání licence můžete začít inicializovat GroupDocs.Viewer. Postupujte takto:
+Po nastavení Maven a získání licence můžete začít inicializovat GroupDocs.Viewer. Zde je postup:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerInitialization {
     public static void main(String[] args) {
-        // Inicializujte prohlížeč licenčním souborem, pokud je k dispozici.
+        // Initialize the viewer with your license file if available.
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // Váš kód zde...
+            // Your code here...
         }
     }
 }
 ```
 
-## Průvodce implementací
+## Jak převést Excel do HTML se skrytými daty
+Tato sekce vás provede přesnými kroky potřebnými k **převodu Excelu do HTML**, přičemž zajistí, že skryté řádky a sloupce budou zobrazeny.
 
-### Vykreslení skrytých řádků a sloupců v tabulkách
-Tato funkce umožňuje vykreslit skryté řádky a sloupce tabulky při jejím převodu do formátu HTML. Pojďme si rozebrat kroky implementace.
-
-#### Krok 1: Definování cesty k výstupnímu adresáři
-Začněte definováním místa, kde budou vaše vykreslené soubory uloženy:
+### Krok 1: Definujte cestu výstupního adresáře
+Začněte definováním, kde budou uloženy vykreslené soubory:
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -90,81 +102,102 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderHiddenRowsAndColumns");
 ```
 
-#### Krok 2: Konfigurace HTMLViewOptions
-Dále nastavte `HtmlViewOptions` vložit zdroje přímo do vygenerovaných HTML souborů:
+### Krok 2: Nakonfigurujte HTMLViewOptions
+Dále nastavte `HtmlViewOptions`, aby vložil zdroje přímo do vygenerovaných HTML souborů:
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Vytvořte formát cesty k souboru pro vykreslování každé stránky.
+// Create a file path format for rendering each page.
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### Krok 3: Povolení vykreslování skrytých sloupců a řádků
+### Krok 3: Povolit vykreslování skrytých sloupců a řádků
 Nakonfigurujte `SpreadsheetOptions` pro vykreslení skrytých prvků:
 ```java
-// Povolit vykreslování skrytých sloupců a řádků.
+// Enable rendering of hidden columns and rows.
 viewOptions.getSpreadsheetOptions().setRenderHiddenColumns(true);
 viewOptions.getSpreadsheetOptions().setRenderHiddenRows(true);
 ```
 
-#### Krok 4: Inicializace prohlížeče s dokumentem
-Nakonec inicializujte GroupDocs.Viewer cestou k dokumentu a vykreslete obsah:
+### Krok 4: Inicializujte Viewer s dokumentem a vykreslete
+Nakonec inicializujte GroupDocs.Viewer s cestou k vašemu dokumentu a vykreslete obsah:
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_XLSX_WITH_HIDDEN_ROW_AND_COLUMN")) {
-    // Vykreslete dokument do HTML s použitím zadaných možností zobrazení.
+    // Render the document to HTML using the specified view options.
     viewer.view(viewOptions);
 } catch (Exception e) {
     System.out.println("Error rendering document: " + e.getMessage());
 }
 ```
 
-**Tipy pro řešení problémů**Ujistěte se, že jsou cesty správně nastaveny a závislosti jsou správně zahrnuty ve vašem `pom.xml`.
+**Tipy pro řešení problémů**: Ujistěte se, že cesty jsou nastaveny správně a závislosti jsou řádně zahrnuty ve vašem `pom.xml`.
 
 ## Praktické aplikace
-Zde je několik praktických aplikací této funkce:
-1. **Finanční výkaznictví**: Zajistěte, aby všechna data, včetně skrytých finančních metrik, byla během převodu viditelná z důvodu shody s předpisy.
-2. **Analýza dat**Zachovávejte integritu datových sad zobrazením všech řádků a sloupců v sestavách nebo prezentacích.
-3. **Vzdělávací nástroje**Používejte kompletní obsah tabulky pro výukové účely bez ztráty skrytých informací.
+Zde jsou některé praktické aplikace této funkce:
+1. **Finanční výkaznictví**: Zajistěte, aby všechna data, včetně skrytých finančních ukazatelů, byla během převodu viditelná pro soulad s předpisy.  
+2. **Analýza dat**: Udržujte integritu datových sad zobrazením všech řádků a sloupců v reportech nebo prezentacích.  
+3. **Vzdělávací nástroje**: Použijte kompletní obsah tabulky pro výukové účely bez ztráty skrytých informací.  
 
 ## Úvahy o výkonu
-Optimalizace výkonu při používání GroupDocs.Viewer:
-- Sledujte využití paměti, zejména u velkých dokumentů.
-- Optimalizujte cesty k souborům a úložiště pro snížení počtu operací I/O.
-- Pravidelně aktualizujte knihovnu, abyste mohli využívat nová vylepšení výkonu a opravy chyb.
+Pro optimalizaci výkonu při používání GroupDocs.Viewer:
+- Sledujte využití paměti, zejména u velkých dokumentů.  
+- Optimalizujte cesty k souborům a umístění úložiště pro snížení I/O operací.  
+- Pravidelně aktualizujte knihovnu, abyste využili nových vylepšení výkonu a oprav chyb.  
 
 ## Závěr
-V tomto tutoriálu jste se naučili, jak nakonfigurovat GroupDocs.Viewer pro Javu tak, aby vykresloval skryté řádky a sloupce v tabulkách. Dodržením těchto kroků si zajistíte komplexní viditelnost dat napříč formáty. V dalším kroku experimentujte s různými typy dokumentů a prozkoumejte další funkce, které GroupDocs.Viewer nabízí.
+V tomto tutoriálu jste se naučili, jak **převést Excel do HTML** a nakonfigurovat GroupDocs.Viewer pro Java tak, aby vykresloval skryté řádky a sloupce v tabulkách. Dodržením těchto kroků můžete zajistit komplexní viditelnost dat napříč formáty. Dalším krokem je experimentovat s různými typy dokumentů a prozkoumat další funkce nabízené GroupDocs.Viewer.
 
-Jste připraveni ponořit se hlouběji? Zkuste implementovat tuto funkci do svých projektů a uvidíte, jak to vylepší funkčnost vaší aplikace!
+Jste připraveni jít hlouběji? Vyzkoušejte implementaci této funkce ve svých projektech a uvidíte, jak zlepší funkčnost vaší aplikace!
 
-## Sekce Často kladených otázek
+## Sekce FAQ
 
-**Q1: Mohu používat GroupDocs.Viewer zdarma?**
-A1: Ano, zkušební verzi si můžete stáhnout z oficiálních stránek a prozkoumat funkce. Pro plný přístup bez omezení zvažte pořízení dočasné nebo trvalé licence.
+**Q1: Mohu používat GroupDocs.Viewer zdarma?**  
+A1: Ano, můžete si stáhnout zkušební verzi z oficiálního webu a prozkoumat funkce. Pro plný přístup bez omezení zvažte získání dočasné nebo trvalé licence.
 
-**Q2: Jaké formáty souborů podporuje GroupDocs.Viewer?**
-A2: Podporuje více než 50 různých formátů dokumentů včetně PDF, Wordu, Excelu a obrázků.
+**Q2: Jaké souborové formáty GroupDocs.Viewer podporuje?**  
+A2: Podporuje více než 50 různých formátů dokumentů, včetně PDF, Word, Excel a obrázků.
 
-**Q3: Jak mohu pomocí GroupDocs.Viewer zpracovat velké dokumenty?**
-A3: Optimalizujte správu paměti úpravou nastavení Javy a v případě potřeby rozdělením velkých souborů na menší části.
+**Q3: Jak mohu pracovat s velkými dokumenty pomocí GroupDocs.Viewer?**  
+A3: Optimalizujte správu paměti úpravou nastavení Javy a v případě potřeby rozdělte velké soubory na menší části.
 
-**Q4: Je možné přizpůsobit výstupní formát HTML?**
-A4: Ano, můžete nakonfigurovat různé možnosti pomocí `HtmlViewOptions` pro přizpůsobení vzhledu vykreslených dokumentů.
+**Q4: Je možné přizpůsobit formát výstupu HTML?**  
+A4: Ano, můžete pomocí `HtmlViewOptions` nakonfigurovat různé možnosti a přizpůsobit vzhled vašich vykreslených dokumentů.
 
-**Q5: Jaký je nejlepší způsob řešení problémů s GroupDocs.Viewer?**
-A5: Projděte si oficiální dokumentaci a fóra, kde naleznete řešení. Ujistěte se, že všechny závislosti jsou v nastavení projektu správně nakonfigurovány.
+**Q5: Jaký je nejlepší způsob řešení problémů s GroupDocs.Viewer?**  
+A5: Zkontrolujte oficiální dokumentaci a fóra pro řešení. Ujistěte se, že všechny závislosti jsou ve vašem nastavení projektu správně nakonfigurovány.
+
+## Často kladené otázky
+
+**Q: Ovlivňuje povolení `setRenderHiddenColumns(true)` výkon?**  
+A: Vykreslování skrytých sloupců přidává malé zatížení, ale dopad je minimální pro typické sešity. U velmi velkých listů sledujte využití paměti.
+
+**Q: Mohu převést soubor XLSX na jedinou HTML stránku místo více stránek?**  
+A: Ano, můžete nastavit vlastní název souboru v `HtmlViewOptions` bez zástupného `{0}`, aby se vygeneroval jediný HTML soubor.
+
+**Q: Jak zobrazit skrytá data tabulky pouze pro konkrétní listy?**  
+A: Použijte `viewOptions.getSpreadsheetOptions().setWorksheetIndexes(...)` k cílení na konkrétní listy před povolením vykreslování skrytých.
+
+**Q: Existuje způsob, jak po převodu skrýt panel nástrojů nebo navigaci?**  
+A: Výstup HTML generovaný GroupDocs.Viewer je statický; můžete ručně odstranit jakékoli navigační prvky, pokud upravujete šablonu.
+
+**Q: Jaká verze GroupDocs.Viewer je vyžadována pro vykreslování skrytých řádků/sloupců?**  
+A: Funkce je k dispozici od verze 22.0; doporučujeme používat nejnovější stabilní verzi.
 
 ## Zdroje
-- **Dokumentace**: [Dokumentace prohlížeče GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API**: [Referenční příručka k rozhraní GroupDocs API](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout**: [Získejte GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Nákup**: [Koupit licenci](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Vyzkoušejte bezplatnou verzi](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Žádost o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentace**: [Dokumentace GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
+- **Reference API**: [Reference API GroupDocs](https://reference.groupdocs.com/viewer/java/)
+- **Stáhnout**: [Získat GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Koupit**: [Koupit licenci](https://purchase.groupdocs.com/buy)
+- **Bezplatná zkušební verze**: [Vyzkoušet bezplatnou verzi](https://releases.groupdocs.com/viewer/java/)
+- **Dočasná licence**: [Požádat o dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
+- **Podpora**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-S tímto komplexním průvodcem jste nyní vybaveni k efektivní práci se skrytými prvky tabulky ve vašich aplikacích Java pomocí GroupDocs.Viewer. Přejeme vám příjemné programování!
+---
+
+**Poslední aktualizace:** 2026-03-27  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
