@@ -1,48 +1,113 @@
 ---
-date: '2026-02-21'
-description: GroupDocs Viewer Maven を使用して、Java で txt ファイルを html、jpg、png、pdf に変換する方法を学びます。txt
-  から pdf への変換手順と、マルチページ html の手順が含まれています。
+date: '2026-07-24'
+description: GroupDocs Viewer Maven for Java を使用して txt を html、jpg、png、pdf に変換する方法を学びます。マルチページ
+  HTML、バッチ変換、txt の pdf へのエクスポート手順を含みます。
 keywords:
-- GroupDocs.Viewer for Java
-- convert TXT to HTML
-- render TXT as JPG/PNG
-title: 'groupdocs viewer maven: TXT を HTML、JPG、PNG、PDF に変換'
+- convert txt to html
+- plain text to pdf
+- export txt to pdf
+- batch convert txt
+- generate html from txt
+lastmod: '2026-07-24'
+og_description: GroupDocs Viewer Maven for Java を使用して txt を html、jpg、png、pdf に変換します。マルチページ
+  HTML、バッチ変換、高品質画像出力に対応しています。
+og_image_alt: 'Guide: Convert TXT files to HTML, JPG, PNG, PDF using GroupDocs Viewer
+  for Java'
+og_title: GroupDocs ViewerでTXTをHTML、JPG、PNG、PDFに変換
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-24'
+  description: Learn how to convert txt to html, jpg, png, and pdf using GroupDocs
+    Viewer Maven for Java. Includes steps for multi-page HTML, batch conversion, and
+    export txt to pdf.
+  headline: Convert TXT to HTML, JPG, PNG, PDF with GroupDocs Viewer
+  type: TechArticle
+- description: Learn how to convert txt to html, jpg, png, and pdf using GroupDocs
+    Viewer Maven for Java. Includes steps for multi-page HTML, batch conversion, and
+    export txt to pdf.
+  name: Convert TXT to HTML, JPG, PNG, PDF with GroupDocs Viewer
+  steps:
+  - name: Add the Maven dependency shown above.
+    text: Add the Maven dependency shown above.
+  - name: Ensure your JDK and IDE are correctly configured.
+    text: Ensure your JDK and IDE are correctly configured.
+  - name: '**Document Management Systems:** Automate conversion of legacy TXT docs
+      into HTML for intranet portals.'
+    text: '**Document Management Systems:** Automate conversion of legacy TXT docs
+      into HTML for intranet portals.'
+  - name: '**Publishing Platforms:** Turn author‑submitted TXT manuscripts into HTML
+      for seamless CMS integration.'
+    text: '**Publishing Platforms:** Turn author‑submitted TXT manuscripts into HTML
+      for seamless CMS integration.'
+  - name: '**Archiving Solutions:** Preserve old text files as PDF or PNG for long‑term
+      storage and compliance.'
+    text: '**Archiving Solutions:** Preserve old text files as PDF or PNG for long‑term
+      storage and compliance.'
+  - name: '**Cloud Storage Integration:** Convert on‑the‑fly and store the rendered
+      files in AWS S3, Azure Blob, or Google Cloud.'
+    text: '**Cloud Storage Integration:** Convert on‑the‑fly and store the rendered
+      files in AWS S3, Azure Blob, or Google Cloud.'
+  type: HowTo
+- questions:
+  - answer: Yes. The library streams the source file, but you may want to increase
+      the JVM heap size for very large documents.
+    question: Can I convert large TXT files (hundreds of MB) with GroupDocs.Viewer?
+  - answer: No. The Viewer package includes all required image processing libraries
+      out‑of‑the‑box.
+    question: Do I need additional dependencies to generate JPG or PNG?
+  - answer: Absolutely. Use `PdfViewOptions.setPageSize(PageSize.A4)` or any other
+      `PageSize` before rendering.
+    question: Is it possible to customize the PDF page size?
+  - answer: TXT files do not support passwords. If the file is encrypted, decrypt
+      it first before passing it to the Viewer.
+    question: How do I handle password‑protected TXT files?
+  - answer: Yes. Include the JDK, copy your `pom.xml` with the GroupDocs dependency,
+      and run the Java application inside the container.
+    question: Can I run this conversion in a Docker container?
+  type: FAQPage
+tags:
+- convert txt
+- GroupDocs Viewer
+- Java document conversion
+- txt to html
+title: GroupDocs ViewerでTXTをHTML、JPG、PNG、PDFに変換
 type: docs
 url: /ja/java/export-conversion/groupdocs-viewer-java-txt-conversion-guide/
 weight: 1
 ---
 
-# groupdocs viewer maven: TXT ファイルを HTML、JPG、PNG、PDF に変換する（GroupDocs.Viewer for Java 使用）
+# GroupDocs Viewer を使用して TXT を HTML、JPG、PNG、PDF に変換
 
-モダンな Java アプリケーションでは、**groupdocs viewer maven** を使用すると、プレーンテキスト（TXT）ドキュメントを Web 用の HTML、高解像度画像、またはポータブル PDF に簡単に変換できます。ドキュメントポータル、アーカイブサービス、プレビュー機能の構築など、GroupDocs.Viewer を使った TXT ファイルの変換は時間を節約し、カスタムパーサーの必要性を排除します。このガイドでは、設定手順をすべて解説し、**convert txt files java** を HTML（単一ページ・マルチページ）、JPG、PNG、PDF に変換する方法を示します。
+モダンな Java アプリケーションでは、**convert txt to html** は柔軟なドキュメントプレビュー パイプラインへの最初のステップに過ぎません。GroupDocs Viewer Maven を使えば、プレーンテキスト ファイルをすぐに Web 対応の HTML、鮮明な JPG/PNG 画像、または汎用的に閲覧可能な PDF に変換できます。ドキュメント ポータル、アーカイブ サービス、SaaS 製品向けのプレビュー機能を構築する場合でも、本ガイドは完全なセットアップ手順を示し、**convert txt files java** をすべての一般的な出力形式に変換する方法を解説します。
 
 ![Convert TXT Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-txt-files-to-html-jpg-png-and-pdf-java.png)
 
-## Quick Answers
-- **Which Maven artifact do I need?** `com.groupdocs:groupdocs-viewer` (see Maven snippet below).  
+## クイック回答
+- **Which Maven artifact do I need?** `com.groupdocs:groupdocs-viewer` (see the Maven snippet below).  
 - **Can I render multi‑page HTML?** Yes – use `HtmlViewOptions.forEmbeddedResources` without the single‑page flag.  
 - **Is a license required for production?** A trial works for evaluation; a permanent license is needed for commercial use.  
 - **What Java version is supported?** Java 8 or newer (Java 11+ recommended).  
 - **Do I need additional libraries for image output?** No, the Viewer library includes JPG and PNG support out‑of‑the‑box.
 
-## What is groupdocs viewer maven?
-**groupdocs viewer maven** は、GroupDocs.Viewer for Java ライブラリの Maven 配布版です。Microsoft Office やサードパーティツールを必要とせず、プレーンテキストを含む 100 以上のドキュメント形式を HTML、画像、または PDF にレンダリングするシンプルな API を提供します。
+## GroupDocs Viewer Maven とは？
+**GroupDocs Viewer Maven** は、GroupDocs.Viewer for Java ライブラリの Maven ベース配布です。単一の使いやすい API を提供し、プレーンテキストを含む 100 以上のドキュメント形式を HTML、画像、または PDF にレンダリングします。Microsoft Office やサードパーティのコンバータは不要で、ドキュメントレンダリングの複雑さを抽象化し、開発者がビジネスロジックに集中できるようにします。
 
-## Why convert txt files java?
-- **Cross‑platform preview** – HTML と画像はブラウザやモバイルアプリで表示可能です。  
-- **Standardized archiving** – PDF は書式を保持し、あらゆる環境で閲覧できます。  
-- **Automation friendly** – バッチジョブ、クラウドサービス、CI パイプラインに変換処理を組み込めます。  
+## なぜ txt ファイルを Java で変換するのか？
+TXT ファイルをリッチな形式に変換すると、Web インターフェイスとのシームレスな統合が可能になり、スタイリングが統一され、アーカイブ標準にも対応できるため、コンテンツがよりアクセスしやすく、プロフェッショナルになります。また、構造化された出力を提供することで、検索インデックス作成やコンテンツ分析といった下流処理も簡素化されます。
 
-## Prerequisites
+- **クロスプラットフォーム プレビュー** – HTML と画像はブラウザやモバイルアプリで即座に表示可能。  
+- **標準化されたアーカイブ** – PDF は書式を保持し、あらゆる環境で閲覧可能。  
+- **自動化に最適** – CI パイプライン、クラウドファンクション、スケジュールジョブで txt ファイルをバッチ変換。  
 
-- **GroupDocs.Viewer for Java** バージョン 25.2 以降（Maven で配布）。  
+## 前提条件
+- **GroupDocs.Viewer for Java** バージョン 25.2 以降（Maven 経由で提供）。  
 - JDK 8 +（Java 11 + 推奨）。  
-- IntelliJ IDEA、Eclipse、NetBeans などの IDE。  
+- IntelliJ IDEA、Eclipse、または NetBeans などの IDE。  
 - 基本的な Java と Maven の知識。  
 
-## Setting Up GroupDocs.Viewer for Java
+## GroupDocs.Viewer for Java の設定
 
-Add the repository and dependency to your `pom.xml`:
+`pom.xml` にリポジトリと依存関係を追加します：
 
 ```xml
 <repositories>
@@ -61,31 +126,33 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### License Acquisition Steps
-- Start with a **free trial** or obtain a **temporary license** to explore the full capabilities.  
-- For production, purchase a license through the official [purchase page](https://purchase.groupdocs.com/buy).  
+### ライセンス取得手順
+- **無料トライアル** から始めるか、**一時ライセンス** を取得してフル機能を試す。  
+- 本番環境では、公式の [purchase page](https://purchase.groupdocs.com/buy) からライセンスを購入。  
 
-### Basic Initialization and Setup
-1. Add the Maven dependency shown above.  
-2. Ensure your JDK and IDE are correctly configured.  
+### 基本的な初期化と設定
+1. 上記の Maven 依存関係を追加。  
+2. JDK と IDE が正しく設定されていることを確認。  
 
-Now let’s dive into the concrete conversion scenarios.
+**定義アンカー:** `Viewer` は GroupDocs.Viewer のコアクラスで、ソース ドキュメントを読み込み、選択した出力形式にレンダリングします。  
 
-## Implementation Guide
+さあ、具体的な変換シナリオに入りましょう。
 
-### Feature 1: Render TXT to Multi‑page HTML *(multi page html java)*
+## 実装ガイド
 
-#### Overview
-This example converts a TXT document into a **multi‑page HTML** file, preserving line breaks across separate web pages.
+### 機能 1: TXT をマルチページ HTML にレンダリング *(multi page html java)*
+**直接回答:** `HtmlViewOptions.forEmbeddedResources` を使用し、`viewer.view(documentPath, options)` を呼び出すと、元テキストの一部ごとに HTML ページが生成され、CSS と画像が自動的に埋め込まれます。
 
-**Import Required Libraries**
+**定義アンカー:** `HtmlViewOptions` は Viewer が HTML にレンダリングする際の設定を行い、ページ分割、リソース埋め込み、CSS 処理などを制御します。  
+
+**必要なライブラリのインポート**
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**Set Up Paths and Viewer**
+**パスと Viewer の設定**
 
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -100,21 +167,21 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
 }
 ```
 
-*Explanation:* `HtmlViewOptions.forEmbeddedResources` bundles CSS, fonts, and images directly into the HTML output, making it portable.
+*説明:* `HtmlViewOptions.forEmbeddedResources` は CSS、フォント、画像を HTML 出力に直接バンドルし、ポータブルにします。
 
-### Feature 2: Render TXT to Single‑page HTML *(convert txt to html java)*
+### 機能 2: TXT をシングルページ HTML にレンダリング *(convert txt to html java)*
+**直接回答:** `HtmlViewOptions.forEmbeddedResources().setRenderToSinglePage(true)` を呼び出してから `viewer.view` を実行すると、すべての TXT コンテンツが 1 つの HTML ファイルにまとめられ、クイックプレビューに最適です。
 
-#### Overview
-Condense the entire text file into a single HTML page—perfect for quick previews.
+**定義アンカー:** `setRenderToSinglePage(true)` は Viewer に生成されたすべてのページを単一の HTML ドキュメントに統合させます。  
 
-**Import Required Libraries**
+**必要なライブラリのインポート**
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
 
-**Set Up Paths and Viewer**
+**パスと Viewer の設定**
 
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -132,21 +199,21 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_2_TXT")) {
 }
 ```
 
-*Explanation:* `setRenderToSinglePage(true)` merges all pages into one HTML file.
+*説明:* `setRenderToSinglePage(true)` により、すべてのページが 1 つの HTML ファイルに結合されます。
 
-### Feature 3: Render TXT to JPG
+### 機能 3: TXT を JPG にレンダリング
+**直接回答:** `JpgViewOptions` インスタンスを作成し、必要に応じて DPI を設定してから `viewer.view` に渡すと、ソース TXT の各ページに対して JPEG 画像が出力されます。
 
-#### Overview
-Convert a TXT file into a high‑quality JPEG image, useful for sharing on platforms that only accept images.
+**定義アンカー:** `JpgViewOptions` は解像度、品質、JPEG 変換用の出力フォルダーなど、画像固有のレンダリング設定を定義します。  
 
-**Import Required Libraries**
+**必要なライブラリのインポート**
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
 
-**Set Up Paths and Viewer**
+**パスと Viewer の設定**
 
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -161,21 +228,21 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
 }
 ```
 
-*Explanation:* `JpgViewOptions` lets you control image quality, DPI, and output path.
+*説明:* `JjpgViewOptions` で画像品質、DPI、出力パスを制御できます。
 
-### Feature 4: Render TXT to PNG
+### 機能 4: TXT を PNG にレンダリング
+**直接回答:** `PngViewOptions` に希望の DPI（例: 300）を設定し、`viewer.view` を呼び出すと、ページごとにロスレス PNG 画像が生成され、テキストの正確なビジュアルレイアウトが保持されます。
 
-#### Overview
-Generate lossless PNG images from text files—ideal when you need crisp, scalable graphics.
+**定義アンカー:** `PngViewOptions` はドキュメントを PNG 画像としてレンダリングするための設定を提供し、ロスレス圧縮とカスタム解像度をサポートします。  
 
-**Import Required Libraries**
+**必要なライブラリのインポート**
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
 
-**Set Up Paths and Viewer**
+**パスと Viewer の設定**
 
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -190,21 +257,21 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
 }
 ```
 
-*Explanation:* PNG provides lossless compression, preserving the exact appearance of the original text.
+*説明:* PNG はロスレス圧縮を提供し、元テキストの外観を正確に保持します。
 
-### Feature 5: Render TXT to PDF *(txt to pdf java / convert txt to pdf java)*
+### 機能 5: TXT を PDF にレンダリング *(txt to pdf java / convert txt to pdf java)*
+**直接回答:** `PdfViewOptions` をインスタンス化し、必要に応じてページサイズ（例: A4）を設定してから `viewer.view` を呼び出すと、ライブラリが自動的にページ分割、フォント埋め込み、リソース埋め込みを行い、高忠実度の PDF が生成されます。
 
-#### Overview
-Create a PDF file from a TXT document—great for archiving, printing, or sending to clients.
+**定義アンカー:** `PdfViewOptions` はページサイズ、余白、フォント埋め込みなど、PDF 固有のレンダリング側面を制御します。  
 
-**Import Required Libraries**
+**必要なライブラリのインポート**
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PdfViewOptions;
 ```
 
-**Set Up Paths and Viewer**
+**パスと Viewer の設定**
 
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -219,43 +286,48 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT")) {
 }
 ```
 
-*Explanation:* `PdfViewOptions` handles page layout, fonts, and resource embedding automatically.
+*説明:* `PdfViewOptions` はページレイアウト、フォント、リソース埋め込みを自動的に処理します。
 
-## Practical Applications
+## 実用的な活用例
+1. **ドキュメント管理システム:** 旧式の TXT を HTML に自動変換し、イントラネット ポータルで表示。  
+2. **出版プラットフォーム:** 作者が提出した TXT 原稿を HTML に変換し、CMS とシームレスに統合。  
+3. **アーカイブソリューション:** 古いテキスト ファイルを PDF または PNG に保存し、長期保存とコンプライアンスを確保。  
+4. **クラウドストレージ統合:** 変換をオンザフライで実行し、AWS S3、Azure Blob、Google Cloud に保存。  
 
-1. **Document Management Systems:** Automate conversion of legacy TXT docs into HTML for intranet portals.  
-2. **Publishing Platforms:** Turn author‑submitted TXT manuscripts into HTML for seamless CMS integration.  
-3. **Archiving Solutions:** Preserve old text files as PDF or PNG for long‑term storage.  
-4. **Cloud Storage Integration:** Convert on‑the‑fly and store the rendered files in AWS S3, Azure Blob, or Google Cloud.
+## よくある問題と解決策
 
-## Common Issues and Solutions
-
-| Issue | Cause | Fix |
+| 問題 | 原因 | 対策 |
 |-------|-------|-----|
-| **Output is blank** | Incorrect file path or missing read permissions. | Verify `YOUR_DOCUMENT_DIRECTORY` points to the actual TXT file and that the process has read rights. |
-| **Images are low quality** | Default DPI is low. | Use `JpgViewOptions.setResolution(int dpi)` or `PngViewOptions.setResolution(int dpi)` to increase DPI (e.g., 300). |
-| **HTML contains broken links** | Resources not embedded. | Use `HtmlViewOptions.forEmbeddedResources` or provide a custom resource folder. |
-| **License exception** | No valid license set. | Load your license file with `License license = new License(); license.setLicense("path/to/license.file");` before creating the `Viewer`. |
+| **出力が空白になる** | ファイルパスが間違っている、または読み取り権限がない。 | `YOUR_DOCUMENT_DIRECTORY` が実際の TXT ファイルを指し、プロセスに読み取り権限があることを確認。 |
+| **画像が低品質になる** | デフォルト DPI が低い。 | `JpgViewOptions.setResolution(int dpi)` または `PngViewOptions.setResolution(int dpi)` で DPI を上げる（例: 300）。 |
+| **HTML に壊れたリンクがある** | リソースが埋め込まれていない。 | `HtmlViewOptions.forEmbeddedResources` を使用するか、カスタムリソースフォルダーを指定。 |
+| **ライセンス例外が発生** | 有効なライセンスが設定されていない。 | `License license = new License(); license.setLicense("path/to/license.file");` を Viewer 作成前に実行。 |
 
-## Frequently Asked Questions
+## よくある質問
 
-**Q: Can I convert large TXT files (hundreds of MB) with GroupDocs.Viewer?**  
-A: Yes. The library streams the source file, but you may want to increase the JVM heap size for very large documents.
+**Q: 大容量の TXT ファイル（数百 MB）を GroupDocs.Viewer で変換できますか？**  
+A: はい。ライブラリはソースファイルをストリーミングしますが、非常に大きなドキュメントの場合は JVM ヒープサイズを増やすことを検討してください。
 
-**Q: Do I need additional dependencies to generate JPG or PNG?**  
-A: No. The Viewer package includes all required image processing libraries.
+**Q: JPG や PNG を生成するために追加の依存関係は必要ですか？**  
+A: いいえ。Viewer パッケージに必要な画像処理ライブラリはすべて同梱されています。
 
-**Q: Is it possible to customize the PDF page size?**  
-A: Absolutely. Use `PdfViewOptions.setPageSize(PageSize.A4)` or any other `PageSize` before rendering.
+**Q: PDF のページサイズはカスタマイズできますか？**  
+A: もちろんです。`PdfViewOptions.setPageSize(PageSize.A4)` など、任意の `PageSize` を設定してからレンダリングしてください。
 
-**Q: How do I handle password‑protected TXT files?**  
-A: TXT files do not support passwords. If the file is encrypted, decrypt it first before passing it to the Viewer.
+**Q: パスワードで保護された TXT ファイルはどう扱いますか？**  
+A: TXT ファイル自体はパスワードをサポートしません。暗号化されている場合は、Viewer に渡す前に復号してください。
 
-**Q: Can I run this conversion in a Docker container?**  
-A: Yes. Just include the JDK, copy your `pom.xml` with the GroupDocs dependency, and run the Java application inside the container.
+**Q: この変換を Docker コンテナ内で実行できますか？**  
+A: はい。JDK を含め、`pom.xml` に GroupDocs の依存関係をコピーし、コンテナ内で Java アプリケーションを実行すれば動作します。
 
 ---
 
-**Last Updated:** 2026-02-21  
+**Last Updated:** 2026-07-24  
 **Tested With:** GroupDocs.Viewer 25.2 for Java  
 **Author:** GroupDocs
+
+## 関連チュートリアル
+
+- [groupdocs viewer java: Convert Documents to PDF – Complete Guide](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
+- [convert odf html java – Convert ODF to HTML, JPG, PNG, PDF Using GroupDocs.Viewer for Java](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
+- [How to Convert DOCX to HTML Using GroupDocs.Viewer for Java: A Step‑By‑Step Guide](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
