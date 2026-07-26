@@ -1,52 +1,53 @@
 ---
-date: '2026-01-15'
-description: Tanulja meg, hogyan használja a GroupDocs Viewert, hogy HTML-t generáljon
-  a projekt dokumentumaiból meghatározott időintervallumokban. Ez az útmutató a beállítást,
-  a kódot és a valós felhasználási eseteket tárgyalja.
+date: '2026-03-29'
+description: Tanulja meg, hogyan hozhat létre HTML‑nézetet MPP fájlokhoz a GroupDocs
+  Viewer Java használatával, időintervallumok szerint renderelve a projektdokumentumokat
+  lépésről‑lépésre kóddal.
 keywords:
 - render project documents
 - time intervals Java
 - GroupDocs Viewer API
-title: Hogyan használjuk a GroupDocs Viewer-t a projekt dokumentumok időintervallumok
-  szerinti megjelenítéséhez Java-ban
+title: HTML nézet létrehozása MPP-hez a GroupDocs Viewer (Java) segítségével
 type: docs
 url: /hu/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Hogyan használjuk a GroupDocs Viewert a projekt dokumentumok időintervallumok szerinti megjelenítéséhez Java-ban
+# Hogyan használjuk a GroupDocs Viewer-t a projekt dokumentumok időintervallumok szerinti megjelenítéséhez Java-ban
 
-Ha **hogyan használjuk a GroupDocs‑ot** a projekt ütemtervek egy meghatározott időablakban történő megjelenítéséhez, jó helyen jársz. Ebben az útmutatóban végigvezetünk a teljes folyamaton – a Maven beállítástól a projekt dokumentumok HTML‑re konvertálásig –, hogy pontos idővonal nézeteket ágyazhass be közvetlenül az alkalmazásaidba.
+Ebben az oktatóanyagban megtanulja, hogyan **create html view mpp** a GroupDocs Viewer for Java segítségével, amely lehetővé teszi, hogy csak a Microsoft Project fájl egy adott időintervallumba eső részeit jelenítse meg. Végigvezetjük a Maven beállításon, a kódkonfiguráción és valós példákon, hogy pontos idővonal nézeteket ágyazhass be közvetlenül az alkalmazásaidba.
 
 ![Render Project Documents by Time Intervals with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-project-documents-by-time-intervals-java.png)
 
 ## Gyors válaszok
-- **Mit csinál a funkció?** Csak a Microsoft Project fájl azon részét jeleníti meg, amely egy kezdő és befejező dátum között van.  
-- **Milyen kimeneti formátumot használ?** HTML beágyazott erőforrásokkal, ami tökéletes a webes integrációhoz.  
-- **Szükségem van licencre?** Egy ingyenes próbaalkalmazás elegendő az értékeléshez; a teljes licenc a termeléshez kötelező.  
-- **Futtatás közben módosíthatom a dátumtartományt?** Igen – állítsd be a `setStartDate` és `setEndDate` értékeket a renderelési beállításokban.  
-- **Minden Java verzióban támogatott?** Java 8+ verziókkal működik, amennyiben a GroupDocs.Viewer 25.2 vagy újabb verzióját használod.
+- **Mi a funkció?** Csak a Microsoft Project fájl azon részét jeleníti meg, amely egy kezdő és befejező dátum között van.  
+- **Milyen kimeneti formátumot használ?** HTML beágyazott erőforrásokkal, tökéletes a webes integrációhoz.  
+- **Szükségem van licencre?** Az ingyenes próba verzió értékelésre használható; a teljes licenc a termeléshez kötelező.  
+- **Módosíthatom a dátumtartományt futásidőben?** Igen—állítsa be a `setStartDate` és `setEndDate` értékeket a renderelési beállításokban.  
+- **Támogatott minden Java verzióban?** Java 8+ verziókkal működik, amennyiben a GroupDocs.Viewer 25.2 vagy újabb verzióját használja.
 
-## Mit jelent a „Hogyan használjuk a GroupDocs‑ot” ebben a kontextusban?
-A GroupDocs Viewer egy Java könyvtár, amely több mint 100 fájlformátumot alakít át web‑barát megjelenítésekké. Amikor **hogyan használjuk a GroupDocs‑ot** projektfájlokhoz, lehetőséget kapsz az ütemtervi adatok kinyerésére, megjelenítésére és megosztására anélkül, hogy a kliensoldalon Microsoft Project‑re lenne szükség.
+## Hogyan hozhatunk létre html view mpp-t a projekt dokumentumokhoz
+A GroupDocs Viewer képes a Microsoft Project fájlokat (`.mpp`, `.mpt`) HTML oldalakká konvertálni. A kezdő és befejező dátumok beállításával a renderelési beállításokban korlátozhatja a kimenetet a kívánt időszakra, ami csökkenti a fájlméretet és felgyorsítja az oldalbetöltéseket.
+
+## Mit jelent a „How to Use GroupDocs” ebben a kontextusban?
+A GroupDocs Viewer egy Java könyvtár, amely több mint 100 fájlformátumot konvertál web‑barát ábrázolásokká. Amikor **how to use GroupDocs**-t használ projektfájlokhoz, lehetőséget kap a menetrendi adatok kinyerésére, megjelenítésére és megosztására anélkül, hogy a kliens oldalon Microsoft Project-re lenne szükség.
 
 ## Miért jelenítsük meg a projekt dokumentumokat időintervallumok szerint?
-- **Fókuszált elemzés:** Csak azt a fázist jeleníti meg, amelyik érdekel (pl. 2024. Q3).  
-- **Teljesítmény:** A kisebb HTML kimenet gyorsabb oldalbetöltést eredményez.  
-- **Integráció:** Ágyazd be az idővonal nézeteket irányítópultokba, jelentési portálokba vagy egyedi projektmenedzsment eszközökbe.  
+- **Fókuszált elemzés:** Csak azt a fázist jelenítse meg, amely érdekel (pl. 2024. Q3).  
+- **Teljesítmény:** A kisebb HTML kimenet gyorsabb oldalbetöltést jelent.  
+- **Integráció:** Ágyazzon be idővonal nézeteket irányítópultokba, jelentési portálokba vagy egyedi PM eszközökbe.  
 
-## Előfeltételek
-
-- **GroupDocs.Viewer for Java** 25.2 vagy újabb verzió.  
+## Előkövetelmények
+- **GroupDocs.Viewer for Java** verzió 25.2 vagy újabb.  
 - Java Development Kit (JDK) 8 vagy újabb.  
-- IntelliJ IDEA vagy Eclipse típusú IDE.  
+- IntelliJ IDEA vagy Eclipse fejlesztőkörnyezet.  
 - Alapvető Maven ismeretek.  
 
-## A GroupDocs.Viewer beállítása Java-hoz
+## A GroupDocs.Viewer for Java beállítása
 
 ### Maven függőség
 
-Add the repository and dependency to your `pom.xml`:
+Adja hozzá a tárolót és a függőséget a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -67,13 +68,13 @@ Add the repository and dependency to your `pom.xml`:
 
 ### Licenc beszerzési lépések
 
-1. **Ingyenes próba** – Tölts le egy próbaverziót a [GroupDocs letöltési oldaláról](https://releases.groupdocs.com/viewer/java/).  
-2. **Ideiglenes licenc** – Szerezz ideiglenes licencet a kiterjesztett teszteléshez ezen a [linken](https://purchase.groupdocs.com/temporary-license/).  
-3. **Vásárlás** – Korlátlan termelési használathoz vásárolj licencet a [GroupDocs vásárlási oldalon](https://purchase.groupdocs.com/buy).
+1. **Ingyenes próba** – Töltse le a próbaverziót a [GroupDocs letöltési oldaláról](https://releases.groupdocs.com/viewer/java/).  
+2. **Ideiglenes licenc** – Szerezzen ideiglenes licencet a kiterjesztett teszteléshez ezen a [linken](https://purchase.groupdocs.com/temporary-license/).  
+3. **Vásárlás** – Korlátlan termelési használathoz vásároljon licencet a [GroupDocs vásárlási oldalon](https://purchase.groupdocs.com/buy).
 
 ### Alapvető Viewer inicializálás
 
-Az alábbi kódrészlet bemutatja, hogyan hozhatsz létre egy `Viewer` példányt, amely egy Microsoft Project fájlra (`.mpp`) mutat:
+Az alábbi kódrészlet bemutatja, hogyan hozhat létre egy `Viewer` példányt, amely egy Microsoft Project fájlra (`.mpp`) mutat:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,7 +92,7 @@ public class ViewerSetup {
 
 ### 1. A kimeneti könyvtár meghatározása
 
-Hozz létre egy mappát, ahová a generált HTML oldalak mentésre kerülnek:
+Hozzon létre egy mappát, ahová a generált HTML oldalak mentésre kerülnek:
 
 ```java
 import java.nio.file.Path;
@@ -110,7 +111,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
 }
 ```
 
-*Miért?* A dokumentum betöltése előkészíti a belső elemzőt, és hozzáférhetővé teszi a projektre specifikus metaadatokat.
+*Miért?* A dokumentum betöltése előkészíti a belső elemzőt, és hozzáférhetővé teszi a projektspecifikus metaadatokat.
 
 ### 3. Nézetinformációk lekérése projektfájlokhoz
 
@@ -122,9 +123,9 @@ ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 ProjectManagementViewInfo viewInfo = (ProjectManagementViewInfo) viewer.getViewInfo(viewInfoOptions);
 ```
 
-*Miért?* A `ProjectManagementViewInfo` megadja a ütemterv kezdő‑ és befejező dátumait, amelyeket később a renderelés hatókörének korlátozásához használhatsz.
+*Miért?* A `ProjectManagementViewInfo` megadja a menetrend kezdő és befejező dátumait, amelyeket később a renderelési tartomány korlátozásához használ.
 
-### 4. HTML renderelési beállítások konfigurálása (HTML generálása a projektből)
+### 4. HTML renderelési beállítások konfigurálása (HTML generálása a projekttől)
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -134,7 +135,7 @@ viewOptions.getProjectManagementOptions().setStartDate(viewInfo.getStartDate());
 viewOptions.getProjectManagementOptions().setEndDate(viewInfo.getEndDate());
 ```
 
-*Miért?* A `StartDate` és `EndDate` beállítása azt mondja a GroupDocs‑nak, hogy **HTML-t generáljon a projekt** adataiból csak az adott időablakon belül.
+*Miért?* A `StartDate` és `EndDate` beállítása azt mondja a GroupDocs-nak, hogy csak az adott időablakon belül **generate html view mpp** adatot hozzon létre.
 
 ### 5. A renderelési folyamat végrehajtása
 
@@ -142,51 +143,48 @@ viewOptions.getProjectManagementOptions().setEndDate(viewInfo.getEndDate());
 viewer.view(viewOptions);
 ```
 
-*Miért?* Ez a hívás egy sor önálló HTML oldalt hoz létre, amelyek a projekt ütemtervének kiválasztott időszakát ábrázolják.
+*Miért?* Ez a hívás egy sor önálló HTML oldalt hoz létre, amely a projektmenetrend kiválasztott időszakát ábrázolja.
 
 ## Gyakori hibák és hibaelhárítás
-
-- **Helytelen fájlútvonalak** – Ellenőrizd, hogy a forrás `.mpp` fájl és a kimeneti könyvtár is létezik.  
-- **Nem támogatott fájltípus** – Győződj meg arról, hogy a dokumentum támogatott projektformátum (pl. `.mpp`, `.mpt`).  
-- **Licenc hibák** – A próba licenc korlátozhatja a renderelést; a korlátlan használathoz válts teljes licencre.
+- **Helytelen fájlútvonalak** – Ellenőrizze, hogy a forrás `.mpp` fájl és a kimeneti könyvtár létezik.  
+- **Nem támogatott fájltípus** – Győződjön meg róla, hogy a dokumentum támogatott Project formátum (pl. `.mpp`, `.mpt`).  
+- **Licenc hibák** – A próbaverzió licenc korlátozhatja a renderelést; váltson teljes licencre a korlátlan használathoz.  
 
 ## Gyakorlati alkalmazások
-
-1. **Projekt idővonal elemzés** – Mutasd a résztvevőknek csak a jelenlegi fázist.  
-2. **Automatizált jelentés** – Készíts időhöz kötött HTML jelentéseket heti állapotfrissítésekhez.  
-3. **Integráció irányítópultokkal** – Ágyazd be a renderelt oldalakat BI eszközökbe vagy egyedi portálokba.  
-4. **Archiválás** – Tárold a projekt ütemtervének web‑barát pillanatképét későbbi hivatkozásként.  
+1. **Projekt idővonal elemzés** – Mutassa a résztvevőknek csak az aktuális fázist.  
+2. **Automatizált jelentéskészítés** – Generáljon időkorlátos HTML jelentéseket heti állapotfrissítésekhez.  
+3. **Integráció irányítópultokkal** – Ágyazza be a renderelt oldalakat BI eszközökbe vagy egyedi portálokba.  
+4. **Archiválás** – Tároljon egy web‑barát pillanatképet a projekt menetrendjéről későbbi hivatkozásként.  
 
 ## Teljesítmény tippek
-
-- Használd a *beágyazott erőforrások* opciót, hogy minden HTML oldal önálló legyen, csökkentve a HTTP kérések számát.  
-- Nagyon nagy projektek esetén fontold meg a kisebb dátumtartományokban történő renderelést a memóriahasználat alacsonyan tartása érdekében.  
-- Töröld a temporális fájlokat a kiszolgálás után, hogy elkerüld a lemez túlterhelését.  
+- Használja a *beágyazott erőforrások* opciót, hogy minden HTML oldal önálló legyen, csökkentve a HTTP kérések számát.  
+- Nagyon nagy projektek esetén fontolja meg a kisebb dátumdarabokban történő renderelést a memóriahasználat alacsonyan tartása érdekében.  
+- Tisztítsa meg az ideiglenes fájlokat a kiszolgálás után, hogy elkerülje a lemez túlterhelését.  
 
 ## Következtetés
 
-Most már tudod, **hogyan használjuk a GroupDocs‑ot** a Viewer segítségével, hogy projekt dokumentumokat jelenítsünk meg egy meghatározott időintervallumban, és **HTML-t generáljunk a projekt** adataiból Java‑ban. Ez a képesség egyszerűsíti az idővonalak megjelenítését, javítja a jelentéskészítés hatékonyságát, és zökkenőmentesen integrálódik a modern webalkalmazásokba.
+Most már tudja, hogyan **use GroupDocs** Viewer segítségével renderelhet projekt dokumentumokat egy adott időintervallumban, és hogyan **generate HTML from project** adatokat Java-ban. Ez a képesség egyszerűsíti az idővonal vizualizációkat, javítja a jelentéskészítés hatékonyságát, és zökkenőmentesen integrálódik a modern webalkalmazásokba.
 
 ### Következő lépések
-- Fedezd fel a Viewer további funkcióit, például a vízjelezést, jelszóvédelmet vagy egyedi CSS stílusok használatát.  
-- Kombináld ezt a renderelési folyamatot egy REST API‑val, hogy igény szerint szolgálj ki idővonal nézeteket.  
+- Fedezze fel a Viewer további funkcióit, például vízjel, jelszóvédelem vagy egyedi CSS stílus.  
+- Kombinálja ezt a renderelési folyamatot egy REST API-val, hogy igény szerint szolgáltassa az idővonal nézeteket.  
 
 ## Gyakran Ismételt Kérdések
 
-**Q: Milyen fájlformátumokat támogat a GroupDocs.Viewer?**  
-A: A GroupDocs.Viewer számos formátumot támogat, többek között a Microsoft Project (MPP), PDF, Word, Excel, PowerPoint és még sok más.
+**K: Milyen fájlformátumokat támogat a GroupDocs.Viewer?**  
+A: A GroupDocs.Viewer széles körű formátumot támogat, többek között Microsoft Project (MPP), PDF, Word, Excel, PowerPoint és még sok más.
 
-**Q: Hogyan kezdjek hozzá a GroupDocs.Viewer ingyenes próbaverziójával?**  
-A: A próbaverziót letöltheted [innen](https://releases.groupdocs.com/viewer/java/).
+**K: Hogyan kezdhetem el a GroupDocs.Viewer ingyenes próbaverzióját?**  
+A: A próbaverziót letöltheti [innen](https://releases.groupdocs.com/viewer/java/).
 
-**Q: Renderelhetek dokumentumokat erőforrások beágyazása nélkül?**  
-A: Igen, választhatod a másik HTML nézet opciót, amely külső erőforrásokra hivatkozik a beágyazás helyett.
+**K: Renderelhetek dokumentumokat erőforrások beágyazása nélkül?**  
+A: Igen, választhat egy másik HTML nézet opciót, amely külső erőforrásokra hivatkozik a beágyazás helyett.
 
-**Q: Mi a teendő, ha a dokumentum túl nagy a rendereléshez?**  
-A: Fontold meg a dokumentum kisebb szakaszokra bontását vagy csak a szükséges dátumtartomány renderelését, ahogyan fent bemutattuk.
+**K: Mi van, ha a dokumentum túl nagy a rendereléshez?**  
+A: Fontolja meg a dokumentum kisebb szakaszokra bontását vagy csak a szükséges dátumtartomány renderelését, ahogyan fent bemutattuk.
 
-**Q: Hogyan kezeljem a renderelési hibákat?**  
-A: Ellenőrizd a konfigurációs beállításokat, győződj meg a licenc érvényességéről, és tekintsd meg a GroupDocs dokumentációt a részletes hibakódokért.
+**K: Hogyan kezeljem a renderelési hibákat?**  
+A: Ellenőrizze az összes konfigurációs beállítást, győződjön meg róla, hogy érvényes licencet használ, és tekintse meg a GroupDocs dokumentációt a részletes hibakódokért.
 
 ## Források
 - **Dokumentáció**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
@@ -199,6 +197,8 @@ A: Ellenőrizd a konfigurációs beállításokat, győződj meg a licenc érvé
 
 ---
 
-**Utoljára frissítve:** 2026-01-15  
-**Tesztelve:** GroupDocs.Viewer 25.2 for Java  
-**Szerző:** GroupDocs
+**Last Updated:** 2026-03-29  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+---

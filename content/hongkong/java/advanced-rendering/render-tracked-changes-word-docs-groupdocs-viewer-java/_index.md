@@ -1,44 +1,44 @@
 ---
-date: '2026-01-15'
-description: 學習如何使用 GroupDocs.Viewer for Java 呈現 Word 追蹤變更並檢視 Word 檔案中的修訂。請參考此開發人員逐步指南。
+date: '2026-03-29'
+description: 學習如何從 DOCX 產生 HTML，並使用 GroupDocs Viewer for Java 呈現 Word 追蹤變更——一步一步的指南，教您如何呈現變更與檢視修訂。
 keywords:
 - render tracked changes Word docs GroupDocs Viewer Java
 - GroupDocs Viewer Java setup
 - Java document rendering
-title: 使用 GroupDocs.Viewer for Java 渲染 Word 文件中的追蹤變更
+title: 從 DOCX 產生 HTML 並渲染追蹤變更 (Java)
 type: docs
 url: /zh-hant/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
 weight: 1
 ---
 
-# 在 Word 文件中呈現 Word 追蹤變更，使用 GroupDocs.Viewer for Java
+# 從 DOCX 產生 HTML 並呈現追蹤變更 (Java)
 
-如果您需要在 Java 應用程式中 **render word tracked changes**，您來對地方了。在本指南中，我們將示範如何顯示 Word 檔案中出現的每個修訂、插入與刪除，並將其轉換為乾淨、可瀏覽的 HTML。無論您是構建文件審閱門戶、法律案件管理系統，或任何必須 **view word document revisions** 的解決方案，本教學將帶您完整走過從環境設定到最終呈現的每一步。
+如果您需要 **從 DOCX 產生 HTML** 並同時顯示每個追蹤的修訂，您已來對地方。在本教學中，我們將說明如何呈現 Word 追蹤變更，將 Word 文件轉換為乾淨、可導覽的 HTML，並提供工具讓您建立文件審閱入口、法律案件管理系統，或任何必須 **檢視 Word 文件修訂** 的應用程式。您將看到完整的端對端流程——從 Maven 設定到最終的 HTML 檔案——讓您能在幾分鐘內將此功能加入 Java 專案。
 
-![Render Tracked Changes in Word Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
+![使用 GroupDocs.Viewer for Java 在 Word 文件中呈現追蹤變更](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
 ## 快速解答
-- **What does “render word tracked changes” mean?** 它將 Word 檔案的修訂標記轉換為可視化的 HTML 表示。  
-- **Which library handles this?** GroupDocs.Viewer for Java.  
-- **Do I need a license?** 免費試用可用於評估；完整授權可移除所有限制。  
-- **What Java version is required?** 需要 Java 8 或更新版本。  
-- **Can I disable tracked‑changes rendering?** 可以——在檢視選項中設定 `setRenderTrackedChanges(false)`。
+- **「render word tracked changes」是什麼意思？** 它將 Word 檔案的修訂標記轉換為可視化的 HTML 表示。  
+- **哪個函式庫負責此功能？** GroupDocs.Viewer for Java。  
+- **我需要授權嗎？** 免費試用可用於評估；完整授權會移除所有限制。  
+- **需要哪個 Java 版本？** Java 8 或更新版本。  
+- **我可以停用追蹤變更的呈現嗎？** 可以——在檢視選項中設定 `setRenderTrackedChanges(false)`。
 
-## 什麼是 “render word tracked changes”？
-呈現 word tracked changes 意味著取得 `.docx` 檔案內部儲存的修訂資料（插入、刪除、評論等），並產生可檢視的格式——通常為 HTML——在該格式中以視覺方式突顯變更。這讓最終使用者無需開啟 Microsoft Word 即可清楚看到哪些內容被修改。
+## 「render word tracked changes」是什麼？
+呈現 word 追蹤變更是指取得儲存在 `.docx` 檔案中的修訂資料（插入、刪除、評論等），並產生可檢視的格式——通常為 HTML——在其中以視覺方式突顯這些變更。這讓最終使用者能在不開啟 Microsoft Word 的情況下，精確看到哪些內容被修改。
 
-## 為什麼使用 GroupDocs.Viewer 來檢視 word document revisions？
+## 為什麼使用 GroupDocs.Viewer 來檢視 Word 文件修訂？
 GroupDocs.Viewer for Java 抽象化了低階的 OpenXML 處理，讓您只需一次 API 呼叫即可產生 HTML、PDF 或影像。它亦內建支援 **view word document revisions**，保留樣式、嵌入資源與變更追蹤。
 
 ## 前置條件
 - **GroupDocs.Viewer for Java** 函式庫版本 25.2 或更新版本。  
-- 用於相依管理的 Maven。  
-- 基本的 Java 開發環境（IDE、JDK 8 以上）。  
+- Maven 用於相依性管理。  
+- 基本的 Java 開發環境（IDE、JDK 8+）。
 
 ## 設定 GroupDocs.Viewer for Java
 
 ### Maven 設定
-將 GroupDocs 儲存庫與相依項目加入您的 `pom.xml`：
+將 GroupDocs 套件庫與相依性加入您的 `pom.xml`：
 
 ```xml
 <repositories>
@@ -61,11 +61,11 @@ GroupDocs.Viewer for Java 抽象化了低階的 OpenXML 處理，讓您只需一
 先使用免費試用或申請臨時評估授權。當您準備好投入正式環境時，購買完整授權以解鎖全部功能。
 
 ### 基本初始化
-在 Java 程式碼中匯所需類別，並為輸入與輸出檔案路徑做好準備。
+在您的 Java 程式碼中匯入所需類別，並為輸入與輸出檔案路徑做好準備。
 
-## 如何在 Word 文件中呈現 word tracked changes
+## 如何從 DOCX 產生 HTML 並呈現追蹤變更
 
-以下是一個逐步說明，與您實際需要的程式碼完全相同。程式碼區塊將保持原樣未更動。
+以下是一個逐步說明，與您需要的完整程式碼相符。程式碼區塊保持原樣未變更。
 
 ### 步驟 1：定義輸出目錄路徑
 建立一個資料夾，用於儲存產生的 HTML 頁面。
@@ -98,48 +98,52 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-## 常見問題與解決方案
-- **Incorrect file paths** – 請再次確認 `YOUR_OUTPUT_DIRECTORY` 與 `YOUR_DOCUMENT_DIRECTORY` 指向已存在的資料夾。  
-- **Unsupported document format** – 確認檔案為 GroupDocs.Viewer 支援的 `.docx` 或 `.doc` 格式。  
-- **Missing license** – 若未取得有效授權，函式庫可能會限制呈現功能。
+## 如何在 Word 文件中呈現變更 – 常見陷阱
+- **檔案路徑不正確** – 請再次確認 `YOUR_OUTPUT_DIRECTORY` 與 `YOUR_DOCUMENT_DIRECTORY` 指向已存在的資料夾。  
+- **不支援的文件格式** – 確認檔案為 GroupDocs.Viewer 支援的 `.docx` 或 `.doc`。  
+- **缺少授權** – 若未取得有效授權，函式庫可能會限制呈現功能。
 
 ## 實務應用
-1. **Document Review Systems** – 向審閱者清楚展示哪些內容被新增或刪除。  
-2. **Legal Case Management** – 在合約或訴訟文件中突顯修改之處。  
-3. **Academic Collaboration** – 可視化多位作者的貢獻。
+1. **文件審閱系統** – 向審閱者精確顯示新增或刪除的內容。  
+2. **法律案件管理** – 突顯合約或訴訟文件中的修訂。  
+3. **學術協作** – 以視覺方式呈現多位作者的貢獻。
 
 ## 效能考量
 - 同時處理的文件數量應受限，以降低記憶體使用量。  
-- 使用高效的目錄結構以減少 I/O 開銷。  
+- 使用有效率的目錄結構以減少 I/O 開銷。  
 - 保持函式庫為最新版本；較新版本包含效能最佳化。
 
 ## 結論
-您現在已擁有完整、可投入生產環境的方式，使用 GroupDocs.Viewer for Java **render word tracked changes** 與 **view word document revisions**。將這些步驟整合至您的應用程式，即可為使用者提供強大且互動的文件審閱體驗。
+您現在擁有一套完整、可投入生產環境的方式，使用 GroupDocs.Viewer for Java **從 DOCX 產生 HTML** 並 **呈現 word 追蹤變更**。將這些步驟整合到您的應用程式中，即可為使用者提供強大且互動的文件審閱體驗。
 
 ## 常見問答
 
-1. **What is the minimum Java version required?**  
-   Java 8 或更新版本通常建議用於與像 GroupDocs.Viewer 這類現代函式庫相容。  
-2. **Can I render documents without tracked changes?**  
-   可以，只需在設定選項中將 `setRenderTrackedChanges(true)` 停用即可。  
-3. **How do I handle large documents efficiently?**  
-   可考慮將大型檔案切分為較小的區段，或使用分頁技術以有效管理資源使用。  
-4. **What are the licensing options for GroupDocs.Viewer?**  
-   您可以先使用免費試用、申請臨時評估授權，或根據專案需求購買完整授權。  
-5. **Is there support available if I encounter issues?**  
-   有，您可透過 GroupDocs 論壇與官方文件資源取得支援。
+**Q: 所需的最低 Java 版本是什麼？**  
+A: Java 8 或更新版本通常建議用於與像 GroupDocs.Viewer 這類現代函式庫相容。
+
+**Q: 我可以在不呈現追蹤變更的情況下渲染文件嗎？**  
+A: 可以，只需在設定選項中停用 `setRenderTrackedChanges(true)`。
+
+**Q: 如何有效處理大型文件？**  
+A: 可考慮將大型檔案拆分為較小的區段，或使用分頁技術以有效管理資源使用。
+
+**Q: GroupDocs.Viewer 的授權選項有哪些？**  
+A: 您可以先使用免費試用、選擇臨時評估授權，或根據專案需求購買完整授權。
+
+**Q: 若遇到問題是否有支援可用？**  
+A: 有，您可透過 GroupDocs 論壇與官方文件資源取得支援。
+
+---
+
+**最後更新：** 2026-03-29  
+**測試環境：** GroupDocs.Viewer for Java 25.2  
+**作者：** GroupDocs  
 
 ## 資源
 - [文件說明文件](https://docs.groupdocs.com/viewer/java/)
-- [API 參考文件](https://reference.groupdocs.com/viewer/java/)
+- [API 參考](https://reference.groupdocs.com/viewer/java/)
 - [下載](https://releases.groupdocs.com/viewer/java/)
 - [購買](https://purchase.groupdocs.com/buy)
 - [免費試用](https://releases.groupdocs.com/viewer/java/)
 - [臨時授權](https://purchase.groupdocs.com/temporary-license/)
 - [支援](https://forum.groupdocs.com/c/viewer/9)
-
----
-
-**最後更新：** 2026-01-15  
-**測試環境：** GroupDocs.Viewer for Java 25.2  
-**作者：** GroupDocs

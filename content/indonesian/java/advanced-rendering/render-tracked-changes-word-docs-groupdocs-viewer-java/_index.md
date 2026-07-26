@@ -1,40 +1,39 @@
 ---
-date: '2026-01-15'
-description: Pelajari cara merender perubahan yang dilacak di Word dan melihat revisi
-  dokumen Word dalam file Word menggunakan GroupDocs.Viewer untuk Java. Ikuti panduan
-  langkah demi langkah ini untuk pengembang.
+date: '2026-03-29'
+description: Pelajari cara menghasilkan HTML dari DOCX dan menampilkan perubahan yang
+  dilacak di Word menggunakan GroupDocs Viewer untuk Java – panduan langkah demi langkah
+  tentang cara menampilkan perubahan dan melihat revisi.
 keywords:
 - render tracked changes Word docs GroupDocs Viewer Java
 - GroupDocs Viewer Java setup
 - Java document rendering
-title: Render perubahan yang dilacak di Dokumen Word dengan GroupDocs.Viewer untuk
-  Java
+title: Buat HTML dari DOCX & Tampilkan Perubahan yang Dilacak (Java)
 type: docs
 url: /id/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Render perubahan terlacak Word dalam Dokumen Word dengan GroupDocs.Viewer untuk Java
+# Hasilkan HTML dari DOCX & Render Perubahan Terlacak (Java)
 
-Jika Anda perlu **render word tracked changes** di dalam aplikasi Java Anda, Anda berada di tempat yang tepat. Dalam panduan ini kami akan menunjukkan cara menampilkan setiap revisi, penyisipan, dan penghapusan yang muncul dalam file Word, mengubahnya menjadi HTML yang bersih dan dapat dinavigasi. Baik Anda sedang membangun portal tinjauan dokumen, sistem manajemen kasus hukum, atau solusi apa pun yang harus **view word document revisions**, tutorial ini akan memandu Anda melalui seluruh proses—dari penyiapan lingkungan hingga rendering akhir.
+Jika Anda perlu **menghasilkan HTML dari DOCX** sambil juga menampilkan setiap revisi yang dilacak, Anda berada di tempat yang tepat. Dalam tutorial ini kami akan menjelaskan cara merender perubahan teracak Word, mengubah dokumen Word menjadi HTML yang bersih dan dapat dinavigasi, serta memberi Anda alat untuk membangun portal tinjauan dokumen, sistem manajemen kasus hukum, atau aplikasi apa pun yang harus **melihat revisi dokumen Word**. Anda akan melihat alur lengkap dari awal hingga akhir—dari pengaturan Maven hingga file HTML akhir—sehingga Anda dapat memasukkannya ke dalam proyek Java Anda dalam hitungan menit.
 
-![Render Tracked Changes in Word Documents with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
+![Render Perubahan Terlacak dalam Dokumen Word dengan GroupDocs.Viewer untuk Java](/viewer/advanced-rendering/render-tracked-changes-in-word-documents-java.png)
 
 ## Jawaban Cepat
 - **Apa arti “render word tracked changes”?** Itu mengonversi markup revisi file Word menjadi representasi HTML visual.  
 - **Perpustakaan mana yang menangani ini?** GroupDocs.Viewer untuk Java.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi penuh menghapus semua batasan.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi penuh menghilangkan semua batasan.  
 - **Versi Java apa yang diperlukan?** Java 8 atau yang lebih baru.  
-- **Bisakah saya menonaktifkan rendering perubahan terlacak?** Ya—setel `setRenderTrackedChanges(false)` di opsi tampilan.
+- **Bisakah saya menonaktifkan rendering perubahan teracak?** Ya—atur `setRenderTrackedChanges(false)` dalam opsi tampilan.
 
 ## Apa itu “render word tracked changes”?
-Rendering word tracked changes berarti mengambil data revisi yang disimpan di dalam file `.docx` (penyisipan, penghapusan, komentar, dll.) dan menghasilkan format yang dapat dilihat—biasanya HTML—di mana perubahan tersebut ditandai secara visual. Hal ini memungkinkan pengguna akhir melihat tepat apa yang diubah tanpa harus membuka Microsoft Word.
+Merender perubahan teracak Word berarti mengambil data revisi yang disimpan di dalam file `.docx` (penyisipan, penghapusan, komentar, dll.) dan menghasilkan format yang dapat dilihat—biasanya HTML—di mana perubahan tersebut ditandai secara visual. Hal ini memungkinkan pengguna akhir melihat tepat apa yang diubah tanpa membuka Microsoft Word.
 
-## Mengapa menggunakan GroupDocs.Viewer untuk view word document revisions?
-GroupDocs.Viewer untuk Java menyederhanakan penanganan OpenXML tingkat rendah dan memberikan satu panggilan API untuk menghasilkan HTML, PDF, atau gambar. Ia juga mendukung **view word document revisions** secara langsung, mempertahankan gaya, sumber daya tersemat, dan pelacakan perubahan.
+## Mengapa menggunakan GroupDocs.Viewer untuk melihat revisi dokumen Word?
+GroupDocs.Viewer untuk Java menyederhanakan penanganan OpenXML tingkat rendah dan memberi Anda satu panggilan API untuk menghasilkan HTML, PDF, atau gambar. Ia juga mendukung **melihat revisi dokumen Word** secara langsung, mempertahankan gaya, sumber daya tersemat, dan pelacakan perubahan.
 
 ## Prasyarat
-- Perpustakaan **GroupDocs.Viewer untuk Java** versi 25.2 atau lebih baru.  
+- **GroupDocs.Viewer untuk Java** versi perpustakaan 25.2 atau lebih baru.  
 - Maven untuk manajemen dependensi.  
 - Lingkungan pengembangan Java dasar (IDE, JDK 8+).  
 
@@ -61,14 +60,14 @@ Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Anda:
 ```
 
 ### Akuisisi Lisensi
-Mulailah dengan percobaan gratis atau minta lisensi evaluasi sementara. Saat Anda siap untuk produksi, beli lisensi penuh untuk membuka semua fitur.
+Mulailah dengan percobaan gratis atau minta lisensi evaluasi sementara. Ketika Anda siap untuk produksi, beli lisensi penuh untuk membuka semua fitur.
 
 ### Inisialisasi Dasar
 Impor kelas yang diperlukan dalam kode Java Anda dan siapkan jalur file untuk input dan output.
 
-## Cara render word tracked changes dalam Dokumen Word
+## Cara menghasilkan HTML dari DOCX dan merender perubahan teracak
 
-Berikut adalah langkah‑demi‑langkah yang mencerminkan kode persis yang Anda perlukan. Blok kode dipertahankan tanpa perubahan dari tutorial asli.
+Berikut adalah panduan langkah demi langkah yang mencerminkan kode persis yang Anda butuhkan. Blok kode dipertahankan tidak berubah dari tutorial asli.
 
 ### Langkah 1: Tentukan Jalur Direktori Output
 Buat folder tempat halaman HTML yang dirender akan disimpan.
@@ -78,14 +77,14 @@ Path outputDirectory = YOUR_OUTPUT_DIRECTORY.resolve("RenderTrackedChanges");
 ```
 
 ### Langkah 2: Tentukan Format untuk Menyimpan Setiap Halaman
-Setel pola penamaan untuk setiap file HTML yang dihasilkan.
+Tetapkan pola penamaan untuk setiap file HTML yang dihasilkan.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
 ### Langkah 3: Konfigurasikan Opsi Tampilan
-Aktifkan sumber daya tersemat dan nyalakan rendering perubahan terlacak.
+Aktifkan sumber daya tersemat dan aktifkan rendering perubahan teracak.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
@@ -93,7 +92,7 @@ viewOptions.getWordProcessingOptions().setRenderTrackedChanges(true);
 ```
 
 ### Langkah 4: Buat Instance Viewer dan Render
-Muat dokumen Word yang berisi perubahan terlacak dan hasilkan output HTML.
+Muat dokumen Word yang berisi perubahan teracak dan hasilkan output HTML.
 
 ```java
 try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WITH_TRACKED_CHANGES"))) {
@@ -101,48 +100,53 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SAMPLE_DOCX_WIT
 }
 ```
 
-## Masalah Umum dan Solusinya
+## Cara merender perubahan dalam dokumen Word – jebakan umum
+
 - **Jalur file tidak tepat** – Periksa kembali bahwa `YOUR_OUTPUT_DIRECTORY` dan `YOUR_DOCUMENT_DIRECTORY` mengarah ke folder yang ada.  
-- **Format dokumen tidak didukung** – Pastikan file tersebut berformat `.docx` atau `.doc` yang didukung oleh GroupDocs.Viewer.  
-- **Lisensi belum ada** – Tanpa lisensi yang valid, perpustakaan mungkin membatasi kemampuan rendering.
+- **Format dokumen tidak didukung** – Pastikan file tersebut adalah `.docx` atau `.doc` yang didukung oleh GroupDocs.Viewer.  
+- **Lisensi hilang** – Tanpa lisensi yang valid, perpustakaan mungkin membatasi kemampuan rendering.
 
 ## Aplikasi Praktis
-1. **Sistem Tinjauan Dokumen** – Tampilkan kepada peninjau apa yang ditambahkan atau dihapus.  
-2. **Manajemen Kasus Hukum** – Sorot perubahan dalam kontrak atau dokumen pengadilan.  
+1. **Sistem Tinjauan Dokumen** – Tampilkan kepada peninjau tepat apa yang ditambahkan atau dihapus.  
+2. **Manajemen Kasus Hukum** – Sorot perubahan dalam kontrak atau gugatan.  
 3. **Kolaborasi Akademik** – Visualisasikan kontribusi dari banyak penulis.
 
 ## Pertimbangan Kinerja
 - Proses sejumlah dokumen terbatas secara bersamaan untuk menjaga penggunaan memori tetap rendah.  
 - Gunakan struktur direktori yang efisien untuk mengurangi beban I/O.  
-- Pertahankan perpustakaan tetap terbaru; rilis terbaru biasanya menyertakan optimasi kinerja.
+- Jaga perpustakaan tetap terbaru; rilis yang lebih baru mengandung optimasi kinerja.
 
 ## Kesimpulan
-Anda kini memiliki metode lengkap dan siap produksi untuk **render word tracked changes** dan **view word document revisions** menggunakan GroupDocs.Viewer untuk Java. Integrasikan langkah‑langkah ini ke dalam aplikasi Anda, dan Anda akan memberikan pengguna pengalaman tinjauan dokumen yang kuat dan interaktif.
+Anda kini memiliki metode lengkap yang siap produksi untuk **menghasilkan HTML dari DOCX** dan **merender perubahan teracak Word** menggunakan GroupDocs.Viewer untuk Java. Integrasikan langkah‑langkah ini ke dalam aplikasi Anda, dan Anda akan memberikan pengguna pengalaman tinjauan dokumen yang kuat dan interaktif.
 
-## Bagian FAQ
+## Pertanyaan yang Sering Diajukan
 
-1. **Apa versi minimum Java yang diperlukan?**  
-   Java 8 atau yang lebih baru umumnya direkomendasikan untuk kompatibilitas dengan perpustakaan modern seperti GroupDocs.Viewer.  
-2. **Bisakah saya merender dokumen tanpa perubahan terlacak?**  
-   Ya, cukup nonaktifkan `setRenderTrackedChanges(true)` di opsi konfigurasi Anda.  
-3. **Bagaimana cara menangani dokumen besar secara efisien?**  
-   Pertimbangkan memecah file besar menjadi bagian‑bagian lebih kecil atau gunakan teknik paginasi untuk mengelola penggunaan sumber daya secara efektif.  
-4. **Apa opsi lisensi untuk GroupDocs.Viewer?**  
-   Anda dapat memulai dengan percobaan gratis, memilih lisensi evaluasi sementara, atau membeli lisensi penuh sesuai kebutuhan proyek Anda.  
-5. **Apakah ada dukungan tersedia jika saya mengalami masalah?**  
-   Ya, Anda dapat mengakses dukungan melalui forum GroupDocs dan sumber daya dokumentasi resmi.
+**Q: Apa versi Java minimum yang diperlukan?**  
+A: Java 8 atau yang lebih baru umumnya direkomendasikan untuk kompatibilitas dengan perpustakaan modern seperti GroupDocs.Viewer.
 
-## Sumber Daya
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download](https://releases.groupdocs.com/viewer/java/)
-- [Purchase](https://purchase.groupdocs.com/buy)
-- [Free Trial](https://releases.groupdocs.com/viewer/java/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- [Support](https://forum.groupdocs.com/c/viewer/9)
+**Q: Bisakah saya merender dokumen tanpa perubahan teracak?**  
+A: Ya, cukup nonaktifkan `setRenderTrackedChanges(true)` dalam opsi konfigurasi Anda.
+
+**Q: Bagaimana cara menangani dokumen besar secara efisien?**  
+A: Pertimbangkan memecah file besar menjadi bagian‑bagian yang lebih kecil atau menggunakan teknik paginasi untuk mengelola penggunaan sumber daya secara efektif.
+
+**Q: Apa saja opsi lisensi untuk GroupDocs.Viewer?**  
+A: Anda dapat memulai dengan percobaan gratis, memilih lisensi evaluasi sementara, atau membeli lisensi penuh sesuai kebutuhan proyek Anda.
+
+**Q: Apakah ada dukungan tersedia jika saya mengalami masalah?**  
+A: Ya, Anda dapat mengakses dukungan melalui forum GroupDocs dan sumber dokumentasi resmi.
 
 ---
 
-**Terakhir Diperbarui:** 2026-01-15  
+**Terakhir Diperbarui:** 2026-03-29  
 **Diuji Dengan:** GroupDocs.Viewer untuk Java 25.2  
-**Penulis:** GroupDocs
+**Penulis:** GroupDocs  
+
+## Sumber Daya
+- [Dokumentasi](https://docs.groupdocs.com/viewer/java/)
+- [Referensi API](https://reference.groupdocs.com/viewer/java/)
+- [Unduh](https://releases.groupdocs.com/viewer/java/)
+- [Beli](https://purchase.groupdocs.com/buy)
+- [Percobaan Gratis](https://releases.groupdocs.com/viewer/java/)
+- [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
+- [Dukungan](https://forum.groupdocs.com/c/viewer/9)
