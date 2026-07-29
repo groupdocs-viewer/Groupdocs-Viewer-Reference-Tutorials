@@ -1,45 +1,94 @@
 ---
-date: '2026-02-23'
-description: تعلم كيفية تحويل مستندات CMX إلى HTML و JPG و PNG و PDF باستخدام GroupDocs
-  Viewer Java – دليل خطوة بخطوة حول كيفية تحويل CMX بكفاءة.
+date: '2026-07-29'
+description: تعلم كيفية إجراء تحويل مستندات CMX باستخدام Java وGroupDocs Viewer. دليل
+  خطوة بخطوة لتحويل CMX إلى HTML وJPG وPNG وPDF بكفاءة.
 keywords:
-- CMX Document Conversion
-- GroupDocs Viewer Java
-- Document Format Conversion
-title: 'GroupDocs Viewer Java: دليل تحويل مستندات CMX بكفاءة'
+- cmx document conversion java
+- groupdocs viewer java
+- java document conversion
+lastmod: '2026-07-29'
+og_description: تحويل مستندات CMX باستخدام Java مع GroupDocs Viewer. تحويل ملفات CMX
+  إلى HTML وJPG وPNG وPDF بسرعة. اتبع هذا الدرس الكامل للحصول على كود جاهز للإنتاج.
+og_image_alt: 'Developer guide: Convert CMX to HTML, JPG, PNG, PDF using GroupDocs
+  Viewer for Java'
+og_title: تحويل مستندات CMX باستخدام Java – دليل GroupDocs Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-29'
+  description: Learn how to perform CMX document conversion Java using GroupDocs Viewer.
+    Step‑by‑step guide to convert CMX to HTML, JPG, PNG, and PDF efficiently.
+  headline: CMX Document Conversion Java – GroupDocs Viewer Guide
+  type: TechArticle
+- description: Learn how to perform CMX document conversion Java using GroupDocs Viewer.
+    Step‑by‑step guide to convert CMX to HTML, JPG, PNG, and PDF efficiently.
+  name: CMX Document Conversion Java – GroupDocs Viewer Guide
+  steps:
+  - name: '**License** – start with a free trial or request a temporary key.'
+    text: '**License** – start with a free trial or request a temporary key.'
+  - name: '**IDE** – import the Maven project into IntelliJ IDEA, Eclipse, or your
+      preferred editor.'
+    text: '**IDE** – import the Maven project into IntelliJ IDEA, Eclipse, or your
+      preferred editor.'
+  - name: '**Free Trial** – grab a temporary key from [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).'
+    text: '**Free Trial** – grab a temporary key from [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).'
+  - name: '**Temporary License** – request one [here](https://purchase.groupdocs.com/temporary-license/).'
+    text: '**Temporary License** – request one [here](https://purchase.groupdocs.com/temporary-license/).'
+  - name: '**Full Purchase** – buy a production license via [this link](https://purchase.groupdocs.com/buy).'
+    text: '**Full Purchase** – buy a production license via [this link](https://purchase.groupdocs.com/buy).'
+  type: HowTo
+- questions:
+  - answer: Yes—wrap the single‑file conversion logic in a loop or use Java’s parallel
+      streams for concurrent processing.
+    question: Can I convert multiple CMX files at once?
+  - answer: A valid GroupDocs Viewer Java license is required for production; a free
+      trial is sufficient for evaluation.
+    question: Is a license mandatory for production use?
+  - answer: Absolutely. `JpgViewOptions` and `PngViewOptions` expose methods like
+      `setResolution()` and `setPageNumbers()`.
+    question: Can I customize resolution or page range?
+  - answer: Yes—PDF, DOCX, XLSX, PPTX, and over 100 additional formats are supported
+      out of the box.
+    question: Does GroupDocs Viewer Java support other formats besides CMX?
+  - answer: 'Pass the password to the `Viewer` constructor: `new Viewer(filePath,
+      password)`.'
+    question: How do I handle password‑protected CMX files?
+  type: FAQPage
+tags:
+- cmx conversion
+- groupdocs viewer
+- java document processing
+title: تحويل مستندات CMX باستخدام Java – دليل GroupDocs Viewer
 type: docs
 url: /ar/java/export-conversion/mastering-cmx-document-conversion-groupdocs-viewer-java/
 weight: 1
 ---
 
-# GroupDocs Viewer Java: دليل تحويل مستندات CMX الفعال
+# تحويل مستندات CMX Java – دليل GroupDocs Viewer
 
-تحويل ملفات **CMX** إلى صيغ قابلة للقراءة عالميًا مثل HTML وJPG وPNG أو PDF قد يبدو كأحجية — خاصةً عندما تحتاج إلى حل موثوق برمجيًا. **GroupDocs Viewer Java** يزيل هذه العقبة من خلال تقديم API بسيطة تتولى عنك الأعمال الثقيلة. في هذا الدرس، سنستعرض **كيفية تحويل مستندات CMX** باستخدام GroupDocs Viewer Java، ونستكشف حالات الاستخدام العملية، ونشارك نصائح الأداء التي يمكنك تطبيقها فورًا.
+تحويل ملفات **CMX** إلى صيغ قابلة للقراءة عالميًا مثل HTML، JPG، PNG، أو PDF قد يبدو كلغز—خاصة عندما تحتاج إلى حل موثوق برمجيًا. **GroupDocs Viewer Java** يزيل هذه العقبة من خلال تقديم API بسيط يتولى عنك الأعمال الثقيلة. في هذا الدرس ستتعلم **cmx document conversion java** خطوة بخطوة، وتطلع على حالات استخدام واقعية، وتحصل على نصائح أداء يمكنك تطبيقها فورًا.
 
-![CMX Document Conversion in Java with GroupDocs.Viewer for Java](/viewer/export-conversion/cmx-document-conversion-java.png)
+![تحويل مستندات CMX في Java باستخدام GroupDocs.Viewer for Java](/viewer/export-conversion/cmx-document-conversion-java.png)
 
 ## إجابات سريعة
 - **ما المكتبة التي تتعامل مع تحويل CMX؟** GroupDocs Viewer Java  
-- **ما الصيغ المدعومة للإخراج؟** HTML, JPG, PNG, PDF  
+- **ما صيغ الإخراج المدعومة؟** HTML, JPG, PNG, PDF  
 - **ما الحد الأدنى لإصدار Java؟** JDK 8 أو أعلى  
 - **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للاختبار؛ الترخيص المدفوع مطلوب للإنتاج  
-- **هل يمكنني معالجة الملفات دفعةً؟** نعم — غلف منطق الملف الفردي داخل حلقة للمعالجة الجماعية  
+- **هل يمكنني معالجة الملفات دفعةً؟** نعم—قم بلف منطق الملف الفردي داخل حلقة للمعالجة الجماعية  
 
 ## ما هو GroupDocs Viewer Java؟
-GroupDocs Viewer Java هو مكوّن جانب الخادم يقوم بتحويل أكثر من 100 نوع من المستندات — بما في ذلك CMX — إلى صيغ صديقة للويب. إنه يُجرد عملية تحليل الملفات، وعرضها، وإدارة الموارد، مما يتيح لك التركيز على منطق الأعمال بدلاً من معالجة الملفات على مستوى منخفض.
+GroupDocs Viewer Java هو مكوّن جانب الخادم يقوم بتحويل أكثر من 100 نوع من المستندات—بما في ذلك CMX—إلى صيغ صديقة للويب. إنه ي抽象 عملية تحليل الملفات، العرض، وإدارة الموارد، مما يتيح لك التركيز على منطق الأعمال بدلاً من معالجة الملفات على مستوى منخفض.
 
-## لماذا تستخدم GroupDocs Viewer Java لتحويل CMX؟
-- **العرض بدون تبعيات** – لا حاجة لأدوات CMX الأصلية.  
-- **دقة عالية** – يحافظ على التخطيط، الخطوط، والصور.  
-- **قابلية التوسع** – مناسب لكل من طلبات الملف الفردي والوظائف الجماعية واسعة النطاق.  
+## لماذا نستخدم GroupDocs Viewer Java لتحويل CMX؟
+GroupDocs Viewer Java يدعم **أكثر من 50 صيغة إخراج** ويمكنه معالجة **مستندات مئات الصفحات** دون تحميل الملف بالكامل إلى الذاكرة. يقدم عرضًا عالي الدقة، بدون تبعيات خارجية، ويتوسع من طلبات ملف واحد إلى وظائف دفعة عالية الإنتاجية.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK)** 8 أو أحدث.  
+- **مجموعة تطوير جافا (JDK)** 8 أو أحدث.  
 - **Maven** لإدارة التبعيات.  
 - إلمام أساسي ببرمجة Java.  
 
 ### المكتبات والتبعيات المطلوبة
-أضف مستودع GroupDocs واعتماد Viewer إلى ملف `pom.xml` الخاص بك:
+أضف مستودع GroupDocs وتبعيات Viewer إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -60,25 +109,30 @@ GroupDocs Viewer Java هو مكوّن جانب الخادم يقوم بتحوي�
 
 ### إعداد البيئة
 1. **الترخيص** – ابدأ بنسخة تجريبية مجانية أو اطلب مفتاحًا مؤقتًا.  
-2. **IDE** – استورد مشروع Maven إلى IntelliJ IDEA أو Eclipse أو أي محرر تفضله.  
+2. **IDE** – استورد مشروع Maven إلى IntelliJ IDEA، Eclipse، أو أي محرر تفضله.  
 
 ## إعداد GroupDocs Viewer Java
 
 ### التثبيت عبر Maven
-المقتطف أعلاه يجلب أحدث ملفات Viewer الثنائية تلقائيًا، لذا أنت جاهز للبرمجة بعد تنفيذ أمر بسيط `mvn clean install`.
+المقتطف أعلاه يجلب أحدث ملفات Viewer الثنائية تلقائيًا، لذا ستكون جاهزًا للبرمجة بعد تنفيذ أمر بسيط `mvn clean install`.
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية** – احصل على مفتاح مؤقت من [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+1. **الإصدار التجريبي** – احصل على مفتاح مؤقت من [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
 2. **ترخيص مؤقت** – اطلب واحدًا [هنا](https://purchase.groupdocs.com/temporary-license/).  
 3. **شراء كامل** – اشترِ ترخيص إنتاج عبر [هذا الرابط](https://purchase.groupdocs.com/buy).  
 
-قم بتطبيق الترخيص في كود Java الخاص بك قبل أي استدعاءات للعرض (انظر وثائق GroupDocs للحصول على API الدقيقة).
+طبق الترخيص في كود Java قبل أي استدعاءات للعرض (انظر وثائق GroupDocs للحصول على API الدقيقة).
 
 ## دليل التنفيذ
 
-أدناه ستجد كود خطوة بخطوة لكل صيغة إخراج. نمط الثلاث كتل (تهيئة المشاهد → تحديد مسار الإخراج → تكوين الخيارات) يبقى ثابتًا، مما يجعل من السهل تكييفه للوظائف الجماعية.
+فئة `Viewer` هي المكوّن الأساسي الذي يحمل المستند ويوفر طرق العرض. أدناه ستجد كودًا خطوة بخطوة لكل صيغة إخراج. نمط الكتل الثلاث (تهيئة المشاهد → تحديد مسار الإخراج → تكوين الخيارات) يبقى ثابتًا، مما يسهل تكييفه للوظائف الدفعية.
 
-### كيفية تحويل CMX إلى HTML (how to convert cmx)
+### كيفية تحويل مستند CMX إلى HTML باستخدام Java
+
+فئة `Viewer` هي المكوّن الأساسي الذي يحمل المستند ويوفر طرق العرض.  
+`HtmlViewOptions` يضبط إخراج HTML، مثل تضمين الموارد وتحديد نطاق الصفحات.
+
+حمّل ملف CMX باستخدام `new Viewer("sample.cmx")` واستدعِ `viewer.view(htmlOptions)` – هذا الاستدعاء الواحد يُظهر المستند بالكامل إلى HTML مع موارد مدمجة، محافظًا على التخطيط، الخطوط، والصور. هذا النهج يعمل مع أي ملف CMX ولا يتطلب مكتبات إضافية.
 
 **الخطوة 1 – تهيئة المشاهد**
 
@@ -101,9 +155,13 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
 }
 ```
 
-*لماذا هذا مهم:* HTML مع الموارد المدمجة يتيح لك وضع النتيجة مباشرةً في صفحة ويب دون ملفات إضافية.
+*لماذا هذا مهم:* HTML مع موارد مدمجة يتيح لك وضع النتيجة مباشرةً في صفحة ويب دون ملفات إضافية.
 
-### كيفية تحويل CMX إلى JPG (how to convert cmx)
+### كيفية تحويل مستند CMX إلى JPG باستخدام Java
+
+`JpgViewOptions` يحدد إعدادات إخراج JPG، بما في ذلك الدقة والجودة.
+
+أنشئ كائن `JpgViewOptions`، حدد مجلد الإخراج، واستدعِ `viewer.view(options)` – كل صفحة من ملف CMX تتحول إلى صورة JPG عالية الدقة. اضبط DPI والجودة لتلبية متطلبات الطباعة أو الشاشة.
 
 **الخطوة 1 – تهيئة المشاهد**
 
@@ -126,9 +184,13 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
 }
 ```
 
-*نصيحة احترافية:* اضبط `JpgViewOptions` للتحكم في جودة الصورة وDPI للحصول على طباعة أوضح.
+*نصيحة محترف:* اضبط `JpgViewOptions` للتحكم في جودة الصورة وDPI للحصول على طبعات أكثر وضوحًا.
 
-### كيفية تحويل CMX إلى PNG (how to convert cmx)
+### كيفية تحويل مستند CMX إلى PNG باستخدام Java
+
+`PngViewOptions` يضبط إخراج PNG غير المضغوط، محافظًا على الرسومات المتجهة والشفافية.
+
+استخدم `PngViewOptions` لإنشاء ملفات PNG غير مضغوطة؛ كل صفحة تُحفظ كملف PNG منفصل، محافظًا على الرسومات المتجهة والشفافية. هذا التنسيق مثالي عندما تحتاج إلى دقة بكسلية مثالية للصور المصغرة في الواجهة أو الوثائق.
 
 **الخطوة 1 – تهيئة المشاهد**
 
@@ -151,9 +213,13 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
 }
 ```
 
-*لماذا تختار PNG؟* الضغط بدون فقدان يحافظ على الرسومات المتجهية والشفافية.
+*لماذا تختار PNG؟* الضغط غير الضائع يحافظ على الرسومات المتجهة والشفافية.
 
-### كيفية تحويل CMX إلى PDF (how to convert cmx)
+### كيفية تحويل مستند CMX إلى PDF باستخدام Java
+
+`PdfViewOptions` يحدد إعدادات إخراج PDF، مما يتيح لك إنشاء ملف PDF قابل للبحث ومفرد.
+
+أنشئ `PdfViewOptions`، حدد ملف الإخراج، واستدعِ `viewer.view(pdfOptions)` – الـ API يجمع ملف PDF واحد قابل للبحث يعكس تخطيط CMX الأصلي، مع خطوط مدمجة.
 
 **الخطوة 1 – تهيئة المشاهد**
 
@@ -176,52 +242,63 @@ try (Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY)) {
 }
 ```
 
-*حالة الاستخدام:* PDF مثالي للأرشفة أو الإرسال إلى أصحاب المصلحة الذين يحتاجون إلى ملف قابل للطباعة والبحث.
+*حالة الاستخدام:* PDF مثالي للأرشفة أو الإرسال إلى أصحاب المصلحة الذين يحتاجون ملفًا قابلًا للطباعة والبحث.
 
-## التطبيقات العملية
+## تطبيقات عملية
+
 - **أرشفة المستندات:** احفظ ملفات CMX كـ PDF/HTML للحفظ طويل الأمد.  
-- **تكامل الويب:** دمج مخرجات HTML مباشرةً في البوابات أو الإنترانت.  
-- **أصول جاهزة للطباعة:** توليد JPG/PNG عالية الدقة للتسويق أو الكتيبات التقنية.  
-- **التعاون:** مشاركة الملفات المحوّلة مع شركاء لا يمتلكون عارضات CMX.  
-- **الأتمتة:** ربط كود التحويل بأنابيب CI أو وظائف دفعة للمعالجة اليومية.  
+- **دمج الويب:** أدخل إخراج HTML مباشرةً في البوابات أو الإنترانت.  
+- **أصول جاهزة للطباعة:** أنشئ صور JPG/PNG عالية الدقة للتسويق أو الكتيبات التقنية.  
+- **التعاون:** شارك الملفات المحوّلة مع شركاء لا يملكون عارض CMX.  
+- **الأتمتة:** اربط كود التحويل بأنابيب CI أو وظائف دفعية للمعالجة اليومية.
 
 ## اعتبارات الأداء
+
 - **إدارة الموارد:** استخدم دائمًا نمط try‑with‑resources (كما هو موضح) لإغلاق `Viewer` وتحرير الذاكرة الأصلية.  
-- **المعالجة الدفعية:** كرّر عبر قائمة مسارات الملفات وأعد استخدام نسخة واحدة من `Viewer` عندما يكون ذلك ممكنًا لتقليل الحمل.  
-- **ضبط الذاكرة:** بالنسبة لملفات CMX الكبيرة، زد حجم heap الخاص بـ JVM (`-Xmx`) وفكّر في معالجة الصفحات على دفعات.  
+- **المعالجة الدفعية:** كرر عبر قائمة مسارات الملفات وأعد استخدام كائن `Viewer` واحد عندما يكون ذلك ممكنًا لتقليل الحمل.  
+- **ضبط الذاكرة:** بالنسبة لملفات CMX الكبيرة، زد حجم كومة JVM (`-Xmx`) وفكّر في معالجة الصفحات على دفعات.
 
 ## المشكلات الشائعة والحلول
+
 | العَرَض | السبب المحتمل | الحل |
 |---------|--------------|-----|
-| خطأ نفاد الذاكرة | ملف CMX كبير جدًا، حجم heap الافتراضي منخفض | زيادة حجم heap للـ JVM (`-Xmx2g` أو أعلى) ومعالجة الصفحات بشكل فردي |
-| خطوط مفقودة في الإخراج | الخط غير مدمج مع المشاهد | ثبت الخط المفقود على الجهاز المضيف أو دمجه عبر `FontSettings` مخصص |
-| صفحات فارغة في PNG/JPG | دليل الإخراج غير قابل للكتابة | تحقق من أذونات الكتابة للمجلد `YOUR_OUTPUT_DIRECTORY` |
+| خطأ نفاد الذاكرة | ملف CMX كبير جدًا، حجم الكومة الافتراضي منخفض | زد حجم كومة JVM (`-Xmx2g` أو أعلى) وعالج الصفحات بشكل فردي |
+| فقدان الخطوط في الإخراج | الخط غير مدمج مع المشاهد | ثبّت الخط المفقود على الجهاز أو دمجه عبر `FontSettings` مخصص |
+| صفحات فارغة في PNG/JPG | دليل الإخراج غير قابل للكتابة | تحقق من صلاحيات الكتابة للمسار `YOUR_OUTPUT_DIRECTORY` |
 
 ## الأسئلة المتكررة
+
 **س: هل يمكنني تحويل عدة ملفات CMX مرة واحدة؟**  
-ج: نعم — غلف منطق التحويل للملف الواحد داخل حلقة أو استخدم تدفقات Java المتوازية للمعالجة المتزامنة.
+ج: نعم—قم بلف منطق التحويل الفردي داخل حلقة أو استخدم تدفقات Java المتوازية للمعالجة المتزامنة.
 
 **س: هل الترخيص إلزامي للاستخدام في الإنتاج؟**  
-ج: ترخيص GroupDocs Viewer Java صالح مطلوب للإنتاج؛ النسخة التجريبية مجانية كافية للتقييم.
+ج: الترخيص الساري لـ GroupDocs Viewer Java مطلوب للإنتاج؛ النسخة التجريبية تكفي للتقييم.
 
 **س: هل يمكنني تخصيص الدقة أو نطاق الصفحات؟**  
-ج: بالتأكيد. `JpgViewOptions` و `PngViewOptions` يقدمان طرقًا مثل `setResolution()` و `setPageNumbers()`.
+ج: بالطبع. `JpgViewOptions` و`PngViewOptions` يقدمان طرقًا مثل `setResolution()` و`setPageNumbers()`.
 
 **س: هل يدعم GroupDocs Viewer Java صيغًا أخرى غير CMX؟**  
-ج: نعم — PDF، DOCX، XLSX، PPTX، وأكثر من 100 صيغة إضافية مدعومة مباشرةً.
+ج: نعم—PDF, DOCX, XLSX, PPTX، وأكثر من 100 صيغة أخرى مدعومة مباشرة.
 
 **س: كيف أتعامل مع ملفات CMX المحمية بكلمة مرور؟**  
 ج: مرّر كلمة المرور إلى مُنشئ `Viewer`: `new Viewer(filePath, password)`.
 
 ## الخلاصة
-أصبح لديك الآن دليل كامل وجاهز للإنتاج حول **كيفية تحويل مستندات CMX** إلى HTML وJPG وPNG وPDF باستخدام **GroupDocs Viewer Java**. باتباع مقتطفات الخطوة بخطوة وتطبيق نصائح الأداء، يمكنك دمج تحويل المستندات الموثوق به في أي تطبيق Java — سواء كان أداة لمرة واحدة أو خدمة دفعة عالية الإنتاجية.
+
+أصبح لديك الآن دليل كامل وجاهز للإنتاج حول **cmx document conversion java** إلى HTML، JPG، PNG، وPDF باستخدام **GroupDocs Viewer Java**. باتباع المقاطع البرمجية خطوة بخطوة وتطبيق نصائح الأداء، يمكنك دمج تحويل المستندات الموثوق به في أي تطبيق Java—سواء كان أداة لمرة واحدة أو خدمة دفعية عالية الإنتاجية.
 
 ### الخطوات التالية
-- جرّب `HtmlViewOptions` لتخصيص CSS أو دمج الخطوط.  
-- تعمّق أكثر في [وثائق GroupDocs](https://docs.groupdocs.com/viewer/java/) للحصول على سيناريوهات متقدمة مثل العلامات المائية أو OCR.  
+- جرّب `HtmlViewOptions` لتخصيص CSS أو تضمين الخطوط.  
+- تعمق في [وثائق GroupDocs](https://docs.groupdocs.com/viewer/java/) للحصول على سيناريوهات متقدمة مثل إضافة علامة مائية أو OCR.  
 
 ---
 
-**آخر تحديث:** 2026-02-23  
+**آخر تحديث:** 2026-07-29  
 **تم الاختبار مع:** GroupDocs Viewer Java 25.2  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [تحويل IGS إلى PDF, HTML, JPG & PNG باستخدام GroupDocs.Viewer Java](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)
+- [تحويل cdr إلى html, jpg, png, pdf باستخدام GroupDocs.Viewer Java](/viewer/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/)
+- [تحويل odf إلى html, jpg, png, pdf باستخدام GroupDocs.Viewer for Java](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
