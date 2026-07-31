@@ -1,35 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Erfahren Sie, wie Sie mit GroupDocs.Viewer für Java große CAD-Zeichnungen effizient in Kacheln aufteilen und so die Leistung und die einfache Verwaltung Ihrer Anwendungen verbessern."
-"title": "CAD-Zeichnungen mit GroupDocs.Viewer Java in Kacheln aufteilen, um effizientes Rendering zu ermöglichen"
-"url": "/de/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Erfahren Sie, wie Sie CAD‑Zeichnungen mit GroupDocs Viewer für Java in
+  Kacheln aufteilen, um die Rendering‑Leistung zu steigern und die Handhabung großer
+  Dateien zu vereinfachen.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Wie man CAD‑Zeichnungen mit GroupDocs Viewer in Kacheln aufteilt
 type: docs
+url: /de/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# CAD-Zeichnungen mit GroupDocs.Viewer Java in Kacheln aufteilen
 
-## Einführung
-Haben Sie Schwierigkeiten, große CAD-Zeichnungen in Ihrer Java-Anwendung effizient zu verwalten und darzustellen? Diese Anleitung zeigt Ihnen, wie Sie mit GroupDocs.Viewer für Java diese Zeichnungen in übersichtliche Kacheln aufteilen. Durch die Aufteilung der Zeichnung in kleinere Abschnitte verbessern Sie die Leistung und Benutzerfreundlichkeit deutlich.
+# Wie man CAD-Zeichnungen in Kacheln aufteilt mit GroupDocs Viewer
 
-**Was Sie lernen werden:**
-- Einrichten und Konfigurieren von GroupDocs.Viewer für Java.
-- Ein schrittweiser Prozess zum Aufteilen von CAD-Zeichnungen in Kacheln.
-- Wichtige Konfigurationen und Optimierungstechniken.
-- Praktische Anwendungen und Integrationsmöglichkeiten.
+Wenn Sie sich fragen **wie man CAD**-Dateien in kleinere, handlichere Stücke aufteilt, sind Sie hier genau richtig. In diesem Tutorial gehen wir die genauen Schritte durch, die nötig sind, um große CAD‑Zeichnungen in Kacheln zu splitten, und zwar mit **GroupDocs Viewer for Java**. Am Ende haben Sie eine sofort einsetzbare Lösung, die die Rendering‑Geschwindigkeit verbessert, den Speicherverbrauch reduziert und das Anzeigen von Zeichnungen in Web‑ oder Mobile‑Anwendungen erleichtert.
 
-Stellen wir zunächst sicher, dass Ihre Umgebung über die erforderlichen Voraussetzungen verfügt.
+![Split CAD Drawings with GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
+
+## Schnelle Antworten
+- **Was bewirkt das „Splitting CAD“?** Es zerlegt eine riesige Zeichnung in kleinere Bilder (Kacheln), die schneller laden und weniger Speicher verbrauchen.  
+- **Welches Format wird für die Kacheln verwendet?** Standardmäßig werden PNG‑Dateien erzeugt, aber andere Formate werden über Viewer‑Optionen unterstützt.  
+- **Benötige ich eine Lizenz?** Eine kostenlose Testlizenz funktioniert für die Entwicklung; für die Produktion ist eine kostenpflichtige Lizenz erforderlich.  
+- **Kann ich die Kachelgröße ändern?** Ja – passen Sie die Berechnungen von `tileWidth` und `tileHeight` an Ihre Bedürfnisse an.  
+- **Ist dieser Ansatz thread‑sicher?** Das Rendern jeder Kachel in einer eigenen `Viewer`‑Instanz mit try‑with‑resources ist für parallele Ausführungen sicher.
+
+## Was bedeutet „how to split CAD“?
+Das Aufteilen von CAD bezeichnet das Zerlegen einer einzelnen, oft sehr großen CAD‑Zeichnung in mehrere rechteckige Abschnitte (Kacheln). Jede Kachel wird unabhängig gerendert, sodass Sie nur die Teile laden können, die ein Benutzer tatsächlich benötigt – ideal für Web‑Karten, Dokumentenportale und mobile Viewer.
+
+## Warum GroupDocs Viewer für Java verwenden?
+GroupDocs Viewer bietet sofortige Unterstützung für über 100 Dateiformate, darunter DWG, DXF und DWF. Seine Kachel‑API ermöglicht es, genaue Koordinaten anzugeben, sodass Sie exakt den Bereich rendern können, der Sie interessiert, ohne die gesamte Datei vorher zu verarbeiten. Das spart CPU‑Zyklen, reduziert den Bandbreitenverbrauch und sorgt für ein flüssigeres Benutzererlebnis.
 
 ## Voraussetzungen
-Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
+- **Libraries**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: Any recent Java Development Kit (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse oder eine andere Java‑kompatible IDE.  
+- **Build Tool**: Maven (andere Build‑Tools funktionieren, solange die Abhängigkeit hinzugefügt wird).  
 
-- **Bibliotheken**: GroupDocs.Viewer für Java (Version 25.2 oder höher).
-- **Umgebungs-Setup**: Ein funktionierendes Java Development Kit (JDK) und eine integrierte Entwicklungsumgebung wie IntelliJ IDEA oder Eclipse.
-- **Voraussetzungen**Grundlegende Kenntnisse der Java-Programmierung und Vertrautheit mit dem Build-Tool Maven.
+## Einrichtung von GroupDocs.Viewer für Java
+Fügen Sie das GroupDocs‑Repository und die Abhängigkeit zu Ihrer `pom.xml` hinzu:
 
-## Einrichten von GroupDocs.Viewer für Java
-Um GroupDocs.Viewer zu verwenden, fügen Sie es als Abhängigkeit zu Ihrem Projekt hinzu. Wenn Sie Maven verwenden:
-
-**Maven-Konfiguration:**
 ```xml
 <repositories>
    <repository>
@@ -47,44 +58,43 @@ Um GroupDocs.Viewer zu verwenden, fügen Sie es als Abhängigkeit zu Ihrem Proje
 </dependencies>
 ```
 
-### Lizenzerwerb
-GroupDocs.Viewer bietet eine kostenlose Testlizenz, um alle Funktionen zu erkunden:
-- **Kostenlose Testversion**: Besuchen [Kostenlose Testversion von GroupDocs](https://releases.groupdocs.com/viewer/java/) um die Bibliothek herunterzuladen und zu testen.
-- **Temporäre Lizenz**Beantragen Sie eine vorläufige Lizenz bei [Seite „Temporäre Lizenz“](https://purchase.groupdocs.com/temporary-license/).
-- **Kaufen**: Erwerben Sie eine Volllizenz auf ihrem [Kaufseite](https://purchase.groupdocs.com/buy).
+### Lizenzbeschaffung
+GroupDocs Viewer bietet eine kostenlose Testlizenz zur Evaluierung:
 
-### Grundlegende Initialisierung und Einrichtung
-So initialisieren Sie GroupDocs.Viewer in Ihrer Java-Anwendung:
+- **Kostenlose Testversion**: Besuchen Sie [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/), um die Bibliothek herunterzuladen.  
+- **Temporäre Lizenz**: Beantragen Sie sie auf der [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Vollständige Lizenz**: Kaufen Sie eine Produktionslizenz auf der [Purchase Page](https://purchase.groupdocs.com/buy).
+
+### Grundlegende Initialisierung
+Erstellen Sie eine einfache `Viewer`‑Instanz, um zu überprüfen, ob die Bibliothek korrekt geladen wird:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Ihr Rendering-Code kommt hierhin.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Nachdem die Einrichtung abgeschlossen ist, können wir mit der Implementierung der Funktion fortfahren.
 
-## Implementierungshandbuch
+## Schritt‑für‑Schritt‑Anleitung zum Aufteilen von CAD‑Zeichnungen in Kacheln
 
-### Zeichnung in Kacheln aufteilen
-Dieser Abschnitt zeigt, wie Sie eine CAD-Zeichnung in kleinere Kacheln aufteilen, um die Bearbeitung und Darstellung zu optimieren. Jede Kachel hat ein Viertel der Originalgröße.
+### Schritt 1: Definieren des Ausgabeverzeichnisses
+Wir speichern jede Kachel als separate PNG‑Datei. Eine Hilfsmethode hält die Pfadlogik sauber und wiederverwendbar.
 
-#### Schritt 1: Definieren Sie den Ausgabeverzeichnispfad
-Definieren Sie zunächst, wo Ihre gerenderten Bilder gespeichert werden:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Dieses Setup verwendet eine Hilfsmethode zum Abrufen des Pfads und stellt so Wiederverwendbarkeit und Klarheit sicher.
 
-#### Schritt 2: Anzeigeoptionen konfigurieren
-Richten Sie Optionen zum separaten Rendern jedes Abschnitts ein:
+### Schritt 2: Konfigurieren der Ansichtoptionen
+Setzen Sie das Render‑Format auf PNG und verhindern Sie, dass der Viewer jede Seite vorab lädt (spart Speicher).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +102,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Dieser Codeausschnitt konfiguriert das Rendering im PNG-Format, ohne alle Seiten gleichzeitig zu verarbeiten.
 
-#### Schritt 3: Fliesenmaße berechnen
-Bestimmen Sie die Abmessungen für jede Kachel:
+### Schritt 3: Berechnen der Kachelabmessungen
+Zuerst ermitteln wir die ursprüngliche Breite und Höhe der Zeichnung und teilen sie dann in vier gleich große Quadranten auf.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +114,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Jede Kachel hat ein Viertel der Gesamtgröße.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +126,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Schritt 4: Kacheln rendern und speichern
-Fügen Sie jede berechnete Kachel den Rendering-Optionen hinzu und rendern Sie:
+### Schritt 4: Rendern und Speichern der Kacheln
+Fügen Sie die berechneten Kacheln zu den Render‑Optionen hinzu und lassen Sie den `Viewer` die PNG‑Dateien erzeugen.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +136,52 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-In diesem letzten Schritt wird das Dokument basierend auf den angegebenen Kacheln gerendert und jede als separate PNG-Datei gespeichert.
 
 ### Tipps zur Fehlerbehebung
-- Stellen Sie sicher, dass der Build-Pfad Ihres Projekts GroupDocs.Viewer-JAR-Dateien enthält.
-- Stellen Sie sicher, dass Ihre Anwendung in das Ausgabeverzeichnis schreiben kann.
-- Suchen Sie nach Ausnahmen beim Rendern, um Probleme mit bestimmten Zeichnungsdateien zu diagnostizieren.
+- **Build‑Pfad** – Stellen Sie sicher, dass die GroupDocs‑JAR‑Dateien im Klassenpfad liegen.  
+- **Berechtigungen** – Der Ausgabordner muss vom Java‑Prozess beschreibbar sein.  
+- **Ausnahmen** – Wenn Sie `ViewerException` sehen, prüfen Sie, ob die DWG‑Datei beschädigt ist und ob die korrekte Lizenz angewendet wurde.
 
-## Praktische Anwendungen
-Das Aufteilen von CAD-Zeichnungen in Kacheln kann in folgenden Fällen von Vorteil sein:
-1. **Webmapping**: Effizientes Laden großer Architekturpläne auf Webkarten ohne Überlastung der Serverressourcen.
-2. **Dokumentenmanagementsysteme**: Einfachere Verwaltung und schnellerer Zugriff auf bestimmte Abschnitte großer Zeichnungen.
-3. **Mobile Apps**: Verbesserung der Leistung durch Rendern nur der notwendigen Teile einer Zeichnung basierend auf der Benutzerinteraktion.
+## Häufige Anwendungsfälle für das Aufteilen von CAD‑Kacheln
+1. **Web‑Mapping** – Laden Sie nur den sichtbaren Teil eines Grundrisses, wenn der Benutzer schwenkt/zoomt.  
+2. **Dokumentenmanagement** – Speichern Sie jede Kachel separat für schnellere Vorschauregeneration.  
+3. **Mobile Ansicht** – Reduzieren Sie die Bandbreite, indem Sie nur die für den aktuellen Bildschirm benötigten Kacheln herunterladen.
 
-## Überlegungen zur Leistung
-So optimieren Sie die Leistung Ihrer Anwendung:
-- Verwenden Sie Kacheln strategisch, um ein Gleichgewicht zwischen Detailgenauigkeit und Verarbeitungszeit zu erzielen.
-- Überwachen Sie die Speichernutzung, insbesondere beim Umgang mit sehr großen Zeichnungen.
-- Setzen Sie bewährte Methoden in Java für eine effiziente Speicherverwaltung ein, beispielsweise die Verwendung von Try-with-Resources zur automatischen Ressourcenbereinigung.
+## Leistungsüberlegungen
+- **Kachelgröße** – Größere Kacheln bedeuten weniger Dateien, aber langsameres Rendering; finden Sie ein Gleichgewicht basierend auf den UI‑Anforderungen.  
+- **Speicherüberwachung** – Nutzen Sie Java‑Profiling‑Tools (z. B. VisualVM), um den Heap‑Verbrauch bei der Verarbeitung sehr großer Zeichnungen zu beobachten.  
+- **Ressourcen‑Aufräumen** – Das oben gezeigte try‑with‑resources‑Muster gibt native Ressourcen automatisch frei.
 
-## Abschluss
-Sie haben nun gelernt, wie Sie CAD-Zeichnungen mit GroupDocs.Viewer für Java in Kacheln aufteilen. Dieser Ansatz verbessert nicht nur die Rendering-Leistung, sondern verbessert auch die Benutzerfreundlichkeit Ihrer Anwendung bei der Verarbeitung großer Dokumentdateien.
+## Häufig gestellte Fragen
 
-**Nächste Schritte:**
-- Experimentieren Sie je nach Anwendungsfall mit unterschiedlichen Kachelgrößen.
-- Entdecken Sie weitere Funktionen von GroupDocs.Viewer, um Ihre Dokumentverarbeitungsmöglichkeiten weiter zu verbessern.
+**Q: Kann ich andere Dateitypen (PDF, Bilder) mit demselben Ansatz in Kacheln aufteilen?**  
+A: Ja. GroupDocs Viewer unterstützt viele Formate; Sie müssen lediglich die entsprechende Options‑Klasse verwenden (z. B. `PdfViewOptions`).
 
-Sind Sie bereit, diese Lösung in Ihrem Projekt zu implementieren? Probieren Sie sie aus und überzeugen Sie sich selbst von den Verbesserungen!
+**Q: Wie ändere ich die Bildqualität der Ausgabe?**  
+A: Passen Sie `viewOptions.setResolution(int dpi)` an oder setzen Sie Kompressionseinstellungen im `PngOptions`‑Objekt.
 
-## FAQ-Bereich
-1. **Welche häufigen Fehler treten bei der Verwendung von GroupDocs.Viewer Java auf?**
-   - Häufige Probleme sind falsche Dateipfade, unzureichende Berechtigungen für Ausgabeverzeichnisse oder fehlende Abhängigkeiten.
-2. **Kann ich mit dieser Methode andere Dokumenttypen in Kacheln aufteilen?**
-   - Während sich das Beispiel auf CAD-Zeichnungen konzentriert, können ähnliche Prinzipien auf andere von GroupDocs.Viewer unterstützte Dokumentformate angewendet werden.
-3. **Wie gehe ich effizient mit größeren Dateien um?**
-   - Erwägen Sie die Verwendung von Multithreading oder asynchroner Verarbeitung in Java, um das Rendern großer Dateien zu verwalten.
-4. **Gibt es Unterstützung für die Anpassung der Ausgabebildqualität?**
-   - Ja, Sie können die PNGViewOptions-Einstellungen anpassen, um die Auflösung und Qualität der gerenderten Bilder zu ändern.
-5. **Was soll ich tun, wenn meiner Anwendung während des Renderns der Speicher ausgeht?**
-   - Optimieren Sie Ihre Kachelgrößen und ziehen Sie in Erwägung, die Heap-Größe von Java mit VM-Optionen wie `-Xmx` für mehr verfügbaren Speicher.
+**Q: Meine Anwendung läuft bei sehr großen DWG‑Dateien out of memory – was kann ich tun?**  
+A: Reduzieren Sie die Kachelabmessungen, erhöhen Sie den JVM‑Heap (`-Xmx`) oder rendern Sie Kacheln sequenziell in separaten `Viewer`‑Instanzen.
+
+**Q: Ist es möglich, Kacheln asynchron zu rendern?**  
+A: Absolut. Verpacken Sie jeden Render‑Aufruf in ein `CompletableFuture` oder nutzen Sie einen Executor‑Service, um die Arbeit zu parallelisieren.
+
+**Q: Benötige ich für jede Kachel eine separate Lizenz?**  
+A: Nein. Eine einzige gültige GroupDocs Viewer‑Lizenz deckt alle Rendering‑Operationen innerhalb Ihrer Anwendung ab.
 
 ## Ressourcen
-- [Dokumentation](https://docs.groupdocs.com/viewer/java/)
-- [API-Referenz](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer herunterladen](https://releases.groupdocs.com/viewer/java/)
-- [Erwerben Sie eine Lizenz](https://purchase.groupdocs.com/buy)
-- [Kostenlose Testversion](https://releases.groupdocs.com/viewer/java/)
-- [Temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/)
-- [Support-Forum](https://forum.groupdocs.com/c/viewer/9)
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- [Purchase a License](https://purchase.groupdocs.com/buy)
+- [Free Trial](https://releases.groupdocs.com/viewer/java/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Mit dieser Anleitung sind Sie bestens gerüstet, um mit GroupDocs.Viewer effizientes Dokument-Rendering in Ihren Java-Anwendungen zu implementieren. Viel Spaß beim Programmieren!
+---
+
+**Last Updated:** 2026-04-01  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
+---

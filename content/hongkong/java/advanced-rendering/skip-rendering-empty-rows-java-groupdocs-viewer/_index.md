@@ -1,34 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "了解如何使用 GroupDocs.Viewer for Java 有效地跳過渲染空電子表格行，從而提高應用程式效能並減少資源使用。"
-"title": "使用 GroupDocs.Viewer 跳過 Java 中的空行渲染－效能指南"
-"url": "/zh-hant/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-01'
+description: 學習如何使用 GroupDocs.Viewer 將 Excel 轉換為 HTML（Java），同時跳過空白列，以提升效能並減少資源使用。
+keywords:
+- excel to html java
+- how to skip rows
+- render spreadsheet to html
+title: excel 轉 html java：使用 GroupDocs.Viewer 跳過渲染空白列
 type: docs
+url: /zh-hant/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/
+weight: 1
 ---
-# 使用 GroupDocs.Viewer 跳過 Java 中的空白行渲染
-## 介紹
-將電子表格轉換為 HTML 時渲染不必要的空白行會使輸出變得混亂，並消耗額外的資源。這對於注重效能的開發者來說是一個很大的問題。使用「GroupDocs.Viewer Java」程式庫，您可以有效地跳過渲染這些空白行，從而提高應用程式的速度和清晰度。
-在本教程中，我們將探討如何使用 GroupDocs.Viewer for Java 實作此功能。在本指南結束時，您將學習：
-- 如何使用 Maven 為 Java 設定 GroupDocs.Viewer。
-- 配置 HTML 視圖選項以跳過空白行的步驟。
-- 優化效能和記憶體使用情況的最佳實踐。
-讓我們深入設定您的環境並開始轉換您的電子表格渲染過程！
-## 先決條件
-在開始之前，請確保您已準備好以下事項：
-### 所需的庫和依賴項
-- **GroupDocs.Viewer for Java**：版本 25.2 或更高版本。
-- **Maven** 安裝在您的系統上。
-### 環境設定要求
-- Java 開發工具包 (JDK) 8 或更高版本。
-- 整合開發環境 (IDE)，如 IntelliJ IDEA、Eclipse 或 NetBeans。
+
+# excel to html java：使用 GroupDocs.Viewer 跳過渲染空白列
+
+在將試算表轉換為 HTML 時，渲染不必要的空白列會使輸出變得雜亂並浪費資源。如果您希望高效地 **excel to html java**，跳過這些空白列是必備的優化。本指南將向您展示如何使用 GroupDocs.Viewer for Java 完成此操作，讓您的應用程式運行更快且產生更乾淨的 HTML。
+
+![使用 GroupDocs.Viewer for Java 跳過渲染空白列](/viewer/advanced-rendering/skip-rendering-empty-rows-java.png)
+
+## 快速解答
+- **什麼是 “excel to html java”？** 將 Excel 工作簿轉換為使用 Java 程式碼的 HTML 標記。  
+- **如何跳過空白列？** 在試算表選項上設定 `setSkipEmptyRows(true)`。  
+- **哪個函式庫支援此功能？** GroupDocs.Viewer for Java (v25.2+)。  
+- **我需要授權嗎？** 免費試用可用於測試；正式環境需購買完整授權。  
+- **這會提升效能嗎？** 會——列數減少意味著 HTML 較少、渲染更快，且記憶體使用更低。
+
+## 什麼是 excel to html java？
+“excel to html java” 指的是使用 Java 程式碼將 Excel（.xlsx、.xls）檔案程式化轉換為 HTML 文件的過程。這讓您能直接在網頁中嵌入試算表資料，無需使用者安裝 Excel。
+
+## 為什麼在將試算表渲染為 HTML 時要跳過空白列？
+跳過空白列可減少產生的 HTML 數量，從而帶來以下好處：
+- 更快的頁面載入時間。
+- 較低的頻寬消耗。
+- 更乾淨的視覺輸出，聚焦於實際資料。
+- 批次轉換時減輕伺服器記憶體壓力。
+
+## 前置條件
+在開始之前，請確保已具備以下條件：
+
+### 必要的函式庫與相依性
+- **GroupDocs.Viewer for Java**：版本 25.2 或更新。  
+- **Maven** 已安裝於您的系統上。
+
+### 環境設定需求
+- Java Development Kit (JDK) 8 或以上。  
+- 如 IntelliJ IDEA、Eclipse 或 NetBeans 等 IDE。
+
 ### 知識前提
-- 對 Java 程式設計和 Maven 專案有基本的了解。
-- 熟悉在 Java 應用程式中處理電子表格和 HTML 文件。
-## 為 Java 設定 GroupDocs.Viewer
-要在 Java 應用程式中開始使用 GroupDocs.Viewer，您需要在 Maven 專案中對其進行配置。具體方法如下：
-### Maven配置
-將以下配置新增至您的 `pom.xml` 文件以包含 GroupDocs.Viewer 作為相依性：
+- 基本的 Java 與 Maven 專案知識。  
+- 熟悉在 Java 中處理試算表與 HTML。
+
+## 設定 GroupDocs.Viewer for Java
+要在 Java 應用程式中使用 GroupDocs.Viewer，您需要在 Maven 專案中進行設定。
+
+### Maven 設定
+在您的 `pom.xml` 檔案中加入以下設定，以將 GroupDocs.Viewer 作為相依性加入：
+
 ```xml
 <repositories>
     <repository>
@@ -46,94 +72,135 @@ type: docs
     </dependency>
 </dependencies>
 ```
-### 許可證獲取
-GroupDocs 提供免費試用、臨時評估許可證以及完全存取權限的購買選項：
-- **免費試用**：下載自 [這裡](https://releases。groupdocs.com/viewer/java/).
-- **臨時執照**：取得臨時執照 [這裡](https://purchase.groupdocs.com/temporary-license/) 不受限制地測試全部功能。
-- **購買**：如需長期使用，請透過以下方式購買許可證 [此連結](https://purchase。groupdocs.com/buy).
+
+### 取得授權
+GroupDocs 提供免費試用、暫時授權供評估，以及完整授權的購買方案：
+- **免費試用**：從 [此處](https://releases.groupdocs.com/viewer/java/) 下載。  
+- **暫時授權**：在 [此處](https://purchase.groupdocs.com/temporary-license/) 取得暫時授權，以測試完整功能且無限制。  
+- **購買**：長期使用請透過 [此連結](https://purchase.groupdocs.com/buy) 購買授權。
+
 ### 基本初始化
-配置 Maven 並取得授權（如有必要）後，請在 Java 應用程式中初始化 GroupDocs.Viewer。以下是一個簡單的範例：
+當 Maven 設定完成且取得授權（如需），即可在 Java 應用程式中初始化 GroupDocs.Viewer：
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.nio.file.Path;
 
 public class ViewerSetup {
     public static void main(String[] args) {
-        // 使用文件路徑初始化檢視器
+        // Initialize viewer with the path to your document
         try (Viewer viewer = new Viewer("path/to/your/document.xlsx")) {
-            // 您的渲染邏輯將會放在這裡
+            // Your rendering logic will go here
         }
     }
 }
 ```
-## 實施指南
-### 跳過電子表格中空行的渲染
-現在，讓我們實現核心功能：將電子表格轉換為 HTML 格式時跳過空白行。
-#### 概述
-此功能可確保僅渲染非空白行，從而簡化輸出並減少資源佔用。在處理可能存在許多空白行的大型資料集時，此功能尤其有用。
-##### 步驟 1：定義輸出目錄
-首先指定儲存呈現的 HTML 檔案的目錄：
+
+## 如何在渲染試算表為 HTML 時跳過列
+現在讓我們深入核心步驟，說明在執行 **excel to html java** 轉換時，如何 **跳過列**。
+
+### 步驟 1：定義輸出目錄
+指定產生的 HTML 檔案儲存位置：
+
 ```java
 import java.nio.file.Paths;
 
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "page_{0}.html");
 ```
-代替 `"YOUR_OUTPUT_DIRECTORY"` 使用您想要的儲存輸出的路徑。
-##### 第 2 步：設定 HtmlViewOptions
-設定 `HtmlViewOptions` 處理嵌入式資源，如圖像和樣式表：
+
+將 `"YOUR_OUTPUT_DIRECTORY"` 替換為您想用於輸出的資料夾路徑。
+
+### 步驟 2：設定 HtmlViewOptions
+設定 `HtmlViewOptions`，將資源（圖片、樣式）直接嵌入 HTML 中：
+
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 HtmlViewOptions viewInfoOptions = HtmlViewOptions.forEmbeddedResources(outputDirectory);
 ```
-##### 步驟 3：跳過電子表格中的空白行
-配置檢視器以在渲染期間跳過空白行：
+
+### 步驟 3：在試算表中跳過空白列
+告訴 GroupDocs.Viewer 忽略沒有資料的列：
+
 ```java
 viewInfoOptions.getSpreadsheetOptions().setSkipEmptyRows(true);
 ```
-此行配置 GroupDocs.Viewer 忽略任何不包含資料的行。
-##### 步驟 4：渲染文檔
-最後，使用配置的選項呈現您的文件：
+
+這一行程式碼即實作了在 **render spreadsheet to html** 工作流程中 **跳過列** 的邏輯。
+
+### 步驟 4：渲染文件
+最後，使用已設定的選項渲染試算表：
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/Sample_XLSX_With_Empty_Row.xlsx")) {
     viewer.view(viewInfoOptions);
 }
 ```
-代替 `"YOUR_DOCUMENT_DIRECTORY"` 以及電子表格檔案的路徑。
-### 故障排除提示
-- **空輸出**：確保輸入文件包含非空白行。如果完全為空，則不會產生 HTML。
-- **資源路徑問題**：驗證 `outputDirectory` 已正確設定並可供您的應用程式存取。
-## 實際應用
-跳過空行渲染可以應用於各種場景：
-1. **數據報告**：從大型資料集產生報表時，請確保僅顯示有意義的資料可提高可讀性。
-2. **儀表板集成**：使用此功能可以用簡潔的資料視圖填滿儀表板，從而提高效能。
-3. **文件轉換服務**：為客戶提供乾淨的 HTML 版本的電子表格，其中不包含不必要的行。
-## 性能考慮
+
+將 `"YOUR_DOCUMENT_DIRECTORY"` 替換為您想要轉換的 Excel 檔案路徑。
+
+## 常見問題與解決方案
+- **空輸出**：確認來源工作簿實際包含非空白列。完全空白的工作表將不會產生 HTML。  
+- **資源路徑錯誤**：確保 `outputDirectory` 指向可寫入的位置，且應用程式具備檔案系統權限。  
+- **記憶體消耗**：對於非常大的工作簿，請考慮分批處理或增加 JVM 堆積大小。
+
+## 實務應用
+在以下情境中跳過空白列特別有用：
+1. **資料報告** – 從龐大資料集產生簡潔的 HTML 報告。  
+2. **儀表板整合** – 僅填入重要的列至網頁儀表板，保持載入時間低。  
+3. **文件轉換服務** – 提供客戶試算表的乾淨 HTML 版本，避免多餘的標記。
+
+## 效能考量
 ### 優化資源使用
-- **記憶體管理**：確保您的 Java 環境配置為最佳記憶體使用，尤其是在處理大檔案時。
-- **批次處理**：批次處理文檔，有效管理資源配置。
+- **記憶體管理**：根據處理的試算表大小調整 JVM（`-Xmx` 參數）。  
+- **批次處理**：在迴圈中轉換多個檔案，於每次迭代後釋放資源。
+
 ### 最佳實踐
-- 定期更新 GroupDocs.Viewer 以受益於效能改進和新功能。
-- 監控應用程式日誌以查找渲染過程中的任何異常，以便快速解決潛在問題。
+- 保持 GroupDocs.Viewer 為最新版本，以獲得效能提升。  
+- 監控日誌，留意不支援功能或格式錯誤的儲存格警告。
+
 ## 結論
-透過本指南，您學習如何在使用 GroupDocs.Viewer for Java 轉換電子表格時有效地跳過空白行渲染。此功能不僅簡化了輸出流程，還提升了應用程式的整體效能。
-為了進一步探索，請考慮整合 GroupDocs.Viewer 的其他功能，例如浮水印或 PDF 轉換，以在您的專案中建立全面的文件處理解決方案。
-## 常見問題部分
-1. **我可以將此功能用於其他文件格式嗎？**
-   - 是的，雖然本指南重點介紹電子表格，但 GroupDocs.Viewer 支援各種格式，包括 Word 文件和簡報。
-2. **如果我的電子表格包含隱藏行怎麼辦？**
-   - 此功能僅跳過渲染空的可見行。除非另有特殊處理，否則隱藏行將被視為文件結構的一部分。
-3. **跳過空白行如何影響檔案大小？**
-   - 跳過這些行會減少輸出 HTML 檔案的大小，從而可以加快載入時間並減少頻寬使用。
-4. **GroupDocs.Viewer 適合企業應用程式嗎？**
-   - 當然！它功能強大，完全可以滿足企業級文件處理任務的需求。
-5. **我可以自訂渲染文件的外觀嗎？**
-   - 是的，GroupDocs.Viewer 提供了許多選項來在渲染過程中自訂樣式和佈局。
+透過本教學，您現在了解如何在轉換過程中有效地 **excel to html java** 並 **跳過列**。這不僅讓產生的 HTML 更乾淨，亦提升任何基於 Java 的文件處理流程的效能。
+
+接下來，您可探索 GroupDocs.Viewer 的其他功能，例如浮水印、PDF 轉換或自訂 CSS 樣式，以進一步符合您的需求。
+
+## 常見問答
+1. **我可以將此功能用於其他檔案格式嗎？**  
+   - 可以，雖然本指南聚焦於試算表，GroupDocs.Viewer 亦支援 Word 文件、PowerPoint 簡報等。
+
+2. **如果我的試算表包含隱藏列該怎麼辦？**  
+   - 隱藏列仍視為文件結構的一部份。若要排除，需先取消隱藏或在渲染前以程式方式過濾。
+
+3. **跳過空白列如何影響檔案大小？**  
+   - 移除空白列會減少 HTML 檔案大小，從而加快頁面載入並降低頻寬使用。
+
+4. **GroupDocs.Viewer 適合企業應用嗎？**  
+   - 絕對適合。它專為企業環境中的高吞吐量、可擴充文件處理而設計。
+
+5. **我可以自訂渲染文件的外觀嗎？**  
+   - 可以，您能套用自訂 CSS、注入 JavaScript，或修改 GroupDocs.Viewer 提供的 HTML 範本。
+
+**其他問答**
+**Q: 此方法能用於受密碼保護的 Excel 檔案嗎？**  
+A: 可以。使用接受 `LoadOptions` 物件的重載，將適當的密碼傳入 `Viewer` 進行初始化。
+
+**Q: 我能只渲染特定工作表而非整個工作簿嗎？**  
+A: 使用 `viewInfoOptions.getSpreadsheetOptions().setPageNumbers(...)` 以指定特定工作表或範圍。
+
+**Q: 跳過空白列會影響 HTML 中的公式或參照嗎？**  
+A: 不會。底層資料保持不變，僅在視覺呈現上省略空白列。
+
 ## 資源
-- [文件](https://docs.groupdocs.com/viewer/java/)
-- [API 參考](https://reference.groupdocs.com/viewer/java/)
+- [文件說明](https://docs.groupdocs.com/viewer/java/)
+- [API 參考文件](https://reference.groupdocs.com/viewer/java/)
 - [下載 GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [購買許可證](https://purchase.groupdocs.com/buy)
+- [購買授權](https://purchase.groupdocs.com/buy)
 - [免費試用](https://releases.groupdocs.com/viewer/java/)
-- [臨時執照](https://purchase.groupdocs.com/temporary-license/)
+- [暫時授權](https://purchase.groupdocs.com/temporary-license/)
 - [支援論壇](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**最後更新：** 2026-04-01  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs

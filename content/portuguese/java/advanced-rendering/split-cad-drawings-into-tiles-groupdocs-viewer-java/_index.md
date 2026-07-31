@@ -1,35 +1,46 @@
 ---
-"date": "2025-04-24"
-"description": "Aprenda a dividir com eficiência grandes desenhos CAD em blocos usando o GroupDocs.Viewer para Java, melhorando o desempenho e facilitando o gerenciamento de seus aplicativos."
-"title": "Divida desenhos CAD em blocos usando GroupDocs.Viewer Java para renderização eficiente"
-"url": "/pt/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-01'
+description: Aprenda a dividir desenhos CAD em blocos usando o GroupDocs Viewer para
+  Java, aumentando o desempenho de renderização e simplificando o manuseio de arquivos
+  grandes.
+keywords:
+- how to split cad
+- GroupDocs Viewer Java
+- CAD tiling
+title: Como dividir desenhos CAD em blocos com o GroupDocs Viewer
 type: docs
+url: /pt/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/
+weight: 1
 ---
-# Dividir desenhos CAD em blocos com GroupDocs.Viewer Java
 
-## Introdução
-Com dificuldades para gerenciar e renderizar grandes desenhos CAD com eficiência em seu aplicativo Java? Este guia demonstrará como usar o GroupDocs.Viewer para Java para dividir esses desenhos em blocos gerenciáveis. Ao dividir o desenho em seções menores, você pode melhorar significativamente o desempenho e a facilidade de manuseio.
+# Como dividir desenhos CAD em blocos com o GroupDocs Viewer
 
-**O que você aprenderá:**
-- Configurando e configurando o GroupDocs.Viewer para Java.
-- Um processo passo a passo para dividir desenhos CAD em blocos.
-- Principais configurações e técnicas de otimização.
-- Aplicações práticas e possibilidades de integração.
+Se você está se perguntando **como dividir CAD** em arquivos menores e mais manejáveis, você está no lugar certo. Neste tutorial, vamos percorrer os passos exatos necessários para dividir grandes desenhos CAD em blocos usando **GroupDocs Viewer for Java**. Ao final, você terá uma solução pronta‑para‑usar que melhora a velocidade de renderização, reduz o consumo de memória e facilita a exibição dos desenhos em aplicações web ou móveis.
 
-Vamos começar garantindo que seu ambiente esteja pronto com os pré-requisitos necessários.
+![Split CAD Drawings with GroupDocs.Viewer for Java](/viewer/advanced-rendering/split-cad-drawings-java.png)
 
-## Pré-requisitos
-Antes de começar, certifique-se de ter:
+## Respostas Rápidas
+- **O que “dividir CAD” realiza?** Ele divide um desenho massivo em imagens menores (blocos) que carregam mais rápido e consomem menos memória.  
+- **Qual formato é usado para os blocos?** Arquivos PNG são gerados por padrão, mas outros formatos são suportados via opções do Viewer.  
+- **Preciso de uma licença?** Um teste gratuito funciona para desenvolvimento; uma licença paga é necessária para produção.  
+- **Posso mudar o tamanho do bloco?** Sim – ajuste os cálculos `tileWidth` e `tileHeight` conforme suas necessidades.  
+- **Esta abordagem é thread‑safe?** Renderizar cada bloco em sua própria instância `Viewer` com try‑with‑resources é seguro para execução concorrente.
 
-- **Bibliotecas**: GroupDocs.Viewer para Java (versão 25.2 ou posterior).
-- **Configuração do ambiente**: Um Java Development Kit (JDK) funcional e um ambiente de desenvolvimento integrado como IntelliJ IDEA ou Eclipse.
-- **Pré-requisitos de conhecimento**Noções básicas de programação Java e familiaridade com a ferramenta de construção Maven.
+## O que é “dividir CAD”?
+Dividir CAD refere-se a dividir um único desenho CAD, frequentemente enorme, em múltiplas seções retangulares (blocos). Cada bloco é renderizado independentemente, permitindo que você carregue apenas as partes que o usuário realmente precisa — perfeito para mapas web, portais de documentos e visualizadores móveis.
+
+## Por que usar o GroupDocs Viewer para Java?
+O GroupDocs Viewer oferece suporte pronto‑para‑uso a mais de 100 formatos de arquivo, incluindo DWG, DXF e DWF. Sua API de blocos permite especificar coordenadas exatas, para que você possa renderizar exatamente a área de interesse sem processar todo o arquivo primeiro. Isso economiza ciclos de CPU, reduz a largura de banda e oferece uma experiência de usuário mais fluida.
+
+## Pré‑requisitos
+- **Bibliotecas**: GroupDocs.Viewer for Java ≥ 25.2.  
+- **JDK**: Qualquer JDK recente (Java 8+).  
+- **IDE**: IntelliJ IDEA, Eclipse ou outra IDE compatível com Java.  
+- **Ferramenta de Build**: Maven (outras ferramentas de build funcionam desde que a dependência seja adicionada).  
 
 ## Configurando o GroupDocs.Viewer para Java
-Para usar o GroupDocs.Viewer, adicione-o como uma dependência no seu projeto. Se estiver usando Maven:
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
-**Configuração do Maven:**
 ```xml
 <repositories>
    <repository>
@@ -48,43 +59,42 @@ Para usar o GroupDocs.Viewer, adicione-o como uma dependência no seu projeto. S
 ```
 
 ### Aquisição de Licença
-O GroupDocs.Viewer oferece uma licença de teste gratuita para explorar todos os seus recursos:
-- **Teste grátis**: Visita [Teste gratuito do GroupDocs](https://releases.groupdocs.com/viewer/java/) para baixar e testar a biblioteca.
-- **Licença Temporária**Solicite uma licença temporária em [Página de Licença Temporária](https://purchase.groupdocs.com/temporary-license/).
-- **Comprar**: Compre uma licença completa em seu [Página de compra](https://purchase.groupdocs.com/buy).
+GroupDocs.Viewer offers a free trial license for evaluation:
 
-### Inicialização e configuração básicas
-Para inicializar o GroupDocs.Viewer em seu aplicativo Java:
+- **Teste Gratuito**: Visite [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) para baixar a biblioteca.  
+- **Licença Temporária**: Solicite em [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Licença Completa**: Compre uma licença de produção na [Purchase Page](https://purchase.groupdocs.com/buy).
+
+### Inicialização Básica
+Create a simple `Viewer` instance to verify that the library loads correctly:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
-            // Seu código de renderização vai aqui.
+            // Your rendering code goes here.
         }
     }
 }
 ```
-Com a configuração concluída, vamos prosseguir com a implementação do recurso.
 
-## Guia de Implementação
+## Guia Passo a Passo para Dividir Desenhos CAD em Blocos
 
-### Dividir desenho em blocos
-Esta seção demonstra como dividir um desenho CAD em blocos menores para um processamento e renderização mais eficientes. Cada bloco terá um quarto do tamanho original.
+### Etapa 1: Definir o Diretório de Saída
+We’ll store each tile as a separate PNG file. Using a utility method keeps the path logic clean and reusable.
 
-#### Etapa 1: definir o caminho do diretório de saída
-Comece definindo onde suas imagens renderizadas serão salvas:
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = Utils.getOutputDirectoryPath("SplitDrawingIntoTiles");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-Esta configuração usa um método utilitário para obter o caminho, garantindo reutilização e clareza.
 
-#### Etapa 2: Configurar opções de exibição
-Configure opções para renderizar cada seção separadamente:
+### Etapa 2: Configurar Opções de Visualização
+Set the rendering format to PNG and tell the viewer not to preload every page (which saves memory).
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -92,10 +102,10 @@ import com.groupdocs.viewer.options.ViewInfoOptions;
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forPngView(false);
 ```
-Este trecho de código configura a renderização para o formato PNG sem processar todas as páginas de uma só vez.
 
-#### Etapa 3: Calcular as dimensões dos ladrilhos
-Determine as dimensões de cada peça:
+### Etapa 3: Calcular Dimensões dos Blocos
+First we obtain the drawing’s original width and height, then split it into four equal quadrants.
+
 ```java
 import com.groupdocs.viewer.results.ViewInfo;
 import com.groupdocs.viewer.options.Tile;
@@ -104,7 +114,7 @@ ViewInfo viewInfo = new Viewer("path/to/your/drawing.dwg").getViewer().getViewIn
 int width = viewInfo.getPages().get(0).getWidth();
 int height = viewInfo.getPages().get(0).getHeight();
 
-// Cada peça tem um quarto do tamanho total.
+// Each tile is a quarter of the total size.
 int tileWidth = width / 2;
 int tileHeight = height / 2;
 
@@ -116,8 +126,9 @@ Tile[] tiles = {
 };
 ```
 
-#### Etapa 4: renderizar e salvar blocos
-Adicione cada bloco calculado às opções de renderização e renderize:
+### Etapa 4: Renderizar e Salvar os Blocos
+Add the calculated tiles to the rendering options and let the `Viewer` generate the PNG files.
+
 ```java
 viewOptions.getCadOptions().getTiles().addAll(java.util.Arrays.asList(tiles));
 
@@ -125,53 +136,50 @@ try (Viewer viewer = new Viewer("path/to/your/drawing.dwg")) {
     viewer.view(viewOptions);
 }
 ```
-Esta etapa final renderiza o documento com base nos blocos especificados, salvando cada um como um arquivo PNG separado.
 
-### Dicas para solução de problemas
-- Certifique-se de que o caminho de construção do seu projeto inclua arquivos JAR do GroupDocs.Viewer.
-- Verifique se o diretório de saída pode ser gravado pelo seu aplicativo.
-- Verifique se há exceções na renderização para diagnosticar problemas com arquivos de desenho específicos.
+### Dicas de Solução de Problemas
+- **Caminho de compilação** – Certifique-se de que os arquivos JAR do GroupDocs estejam no classpath.  
+- **Permissões** – A pasta de saída deve ser gravável pelo processo Java.  
+- **Exceções** – Se você vir `ViewerException`, verifique se o arquivo DWG não está corrompido e se a licença correta foi aplicada.
 
-## Aplicações práticas
-Dividir desenhos CAD em blocos pode ser benéfico em:
-1. **Mapeamento da Web**: Carregamento eficiente de grandes plantas arquitetônicas em mapas da web sem sobrecarregar os recursos do servidor.
-2. **Sistemas de Gestão de Documentos**: Gerenciamento mais fácil e acesso mais rápido a seções específicas de desenhos grandes.
-3. **Aplicativos móveis**: Melhorando o desempenho renderizando apenas as partes necessárias de um desenho com base na interação do usuário.
+## Casos de Uso Comuns para Dividir Blocos CAD
+1. **Mapeamento Web** – Carregue apenas a parte visível de um plano de piso conforme o usuário navega/zooma.  
+2. **Gerenciamento de Documentos** – Armazene cada bloco separadamente para geração de pré‑visualizações mais rápidas.  
+3. **Visualização Móvel** – Reduza a largura de banda baixando apenas os blocos necessários para a tela atual.
 
-## Considerações de desempenho
-Para otimizar o desempenho do seu aplicativo:
-- Use peças estrategicamente para equilibrar detalhes e tempo de processamento.
-- Monitore o uso de memória, especialmente ao lidar com desenhos muito grandes.
-- Empregue as melhores práticas em Java para gerenciamento eficiente de memória, como usar try-with-resources para limpeza automática de recursos.
+## Considerações de Desempenho
+- **Tamanho do Bloco** – Blocos maiores significam menos arquivos, mas renderização mais lenta; encontre um equilíbrio com base nas necessidades da sua UI.  
+- **Monitoramento de Memória** – Use as ferramentas de profiling do Java (por exemplo, VisualVM) para observar o uso de heap ao processar desenhos muito grandes.  
+- **Limpeza de Recursos** – O padrão try‑with‑resources mostrado acima libera automaticamente recursos nativos.
 
-## Conclusão
-Agora você aprendeu a dividir desenhos CAD em blocos usando o GroupDocs.Viewer para Java. Essa abordagem não só melhora o desempenho da renderização, como também aprimora a usabilidade do seu aplicativo ao lidar com arquivos de documentos grandes.
+## Perguntas Frequentes
 
-**Próximos passos:**
-- Experimente diferentes tamanhos de blocos com base em casos de uso específicos.
-- Explore outros recursos oferecidos pelo GroupDocs.Viewer para aprimorar ainda mais seus recursos de processamento de documentos.
+**Q: Posso dividir outros tipos de arquivo (PDF, imagens) em blocos usando a mesma abordagem?**  
+A: Sim. O GroupDocs Viewer suporta muitos formatos; você só precisa usar a classe de opções correspondente (por exemplo, `PdfViewOptions`).
 
-Pronto para implementar esta solução no seu projeto? Experimente e veja as melhorias por si mesmo!
+**Q: Como altero a qualidade da imagem de saída?**  
+A: Ajuste `viewOptions.setResolution(int dpi)` ou configure as opções de compressão no objeto `PngOptions`.
 
-## Seção de perguntas frequentes
-1. **Quais são alguns erros comuns ao usar o GroupDocs.Viewer Java?**
-   - Problemas comuns incluem caminhos de arquivo incorretos, permissões insuficientes em diretórios de saída ou dependências ausentes.
-2. **Posso dividir outros tipos de documentos em blocos com esse método?**
-   - Embora o exemplo se concentre em desenhos CAD, princípios semelhantes podem ser aplicados a outros formatos de documentos suportados pelo GroupDocs.Viewer.
-3. **Como lidar com arquivos maiores de forma eficiente?**
-   - Considere usar multithreading ou processamento assíncrono em Java para gerenciar a renderização de arquivos grandes.
-4. **Há suporte para personalizar a qualidade da imagem de saída?**
-   - Sim, você pode ajustar as configurações do PNGViewOptions para alterar a resolução e a qualidade das imagens renderizadas.
-5. **O que devo fazer se meu aplicativo ficar sem memória durante a renderização?**
-   - Otimize os tamanhos dos seus blocos e considere aumentar o tamanho do heap do Java com opções de VM como `-Xmx` para mais memória disponível.
+**Q: Minha aplicação fica sem memória em arquivos DWG muito grandes — o que posso fazer?**  
+A: Reduza as dimensões dos blocos, aumente o heap da JVM (`-Xmx`) ou renderize os blocos sequencialmente em instâncias `Viewer` separadas.
+
+**Q: É possível renderizar blocos de forma assíncrona?**  
+A: Absolutamente. Envolva cada chamada de renderização de bloco em um `CompletableFuture` ou use um serviço executor para paralelizar a carga de trabalho.
+
+**Q: Preciso de uma licença separada para cada bloco?**  
+A: Não. Uma única licença válida do GroupDocs Viewer cobre todas as operações de renderização dentro da sua aplicação.
 
 ## Recursos
 - [Documentação](https://docs.groupdocs.com/viewer/java/)
-- [Referência de API](https://reference.groupdocs.com/viewer/java/)
-- [Baixar GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Comprar uma licença](https://purchase.groupdocs.com/buy)
-- [Teste grátis](https://releases.groupdocs.com/viewer/java/)
+- [Referência da API](https://reference.groupdocs.com/viewer/java/)
+- [Download GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- [Comprar uma Licença](https://purchase.groupdocs.com/buy)
+- [Teste Gratuito](https://releases.groupdocs.com/viewer/java/)
 - [Licença Temporária](https://purchase.groupdocs.com/temporary-license/)
 - [Fórum de Suporte](https://forum.groupdocs.com/c/viewer/9)
 
-Seguindo este guia, você estará bem equipado para implementar a renderização eficiente de documentos em seus aplicativos Java usando o GroupDocs.Viewer. Boa programação!
+---
+
+**Última Atualização:** 2026-04-01  
+**Testado com:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
