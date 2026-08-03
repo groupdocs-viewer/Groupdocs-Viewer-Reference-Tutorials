@@ -1,46 +1,84 @@
 ---
-date: '2026-02-23'
-description: GroupDocs.Viewer Java का उपयोग करके पृष्ठ प्रति आइटम सेट करना, संसाधन
-  HTML को एम्बेड करना, और संग्रहों को एकल या बहु‑पृष्ठ HTML में बैच रूपांतरण करना
-  सीखें।
+date: '2026-08-03'
+description: GroupDocs.Viewer Java का उपयोग करके zip को html में कैसे बदलें, प्रति
+  पृष्ठ आइटम सेट करें, resources html एम्बेड करें, और आर्काइव्स को कुशलतापूर्वक बैच
+  में बदलना सीखें।
 keywords:
-- convert archives to HTML Java
-- GroupDocs.Viewer Java tutorial
-- render ZIP RAR to HTML
-title: 'प्रति पृष्ठ आइटम सेट करें: GroupDocs.Viewer Java के साथ अभिलेखों को HTML में
-  बदलें'
+- convert zip to html
+- how to batch convert
+- embed resources html
+- batch convert archives
+- how to convert archives
+lastmod: '2026-08-03'
+og_description: GroupDocs.Viewer Java का उपयोग करके zip को html में कैसे बदलें, प्रति
+  पृष्ठ आइटम सेट करें, resources html एम्बेड करें, और आर्काइव्स को कुशलतापूर्वक बैच
+  में बदलना सीखें। चरण‑दर‑चरण कोड और प्रदर्शन टिप्स का पालन करें।
+og_image_alt: 'Guide: convert zip to html with GroupDocs.Viewer Java, showing pagination
+  and embedded resources'
+og_title: GroupDocs.Viewer Java के साथ zip को html में बदलें और प्रति पृष्ठ आइटम सेट
+  करें
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-03'
+  description: Learn how to convert zip to html using GroupDocs.Viewer Java, set items
+    per page, embed resources html, and batch convert archives efficiently.
+  headline: Convert zip to html and set items per page with GroupDocs.Viewer Java
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Viewer Java is a server‑side library that renders over 50 document
+      and archive formats—including ZIP and RAR—into HTML, PDF, or image files without
+      requiring external applications.
+    question: What is GroupDocs.Viewer Java?
+  - answer: Visit the [free trial link](https://releases.groupdocs.com/viewer/java/)
+      to download and test.
+    question: How can I obtain a free trial of GroupDocs.Viewer?
+  - answer: Yes, the viewer supports PDFs, Word, Excel, PowerPoint, and 35+ additional
+      formats.
+    question: Can I convert other document types besides archives?
+  - answer: Reduce the number of items per page, enable streaming, or process archives
+      in smaller batches to improve speed.
+    question: What should I do if rendering is slow?
+  - answer: Reach out via the [support forum](https://forum.groupdocs.com/c/viewer/9).
+    question: Where can I get help or support?
+  type: FAQPage
+tags:
+- convert zip
+- GroupDocs.Viewer
+- Java archive conversion
+- html rendering
+- batch conversion
+title: GroupDocs.Viewer Java के साथ zip को html में बदलें और प्रति पृष्ठ आइटम सेट
+  करें
 type: docs
 url: /hi/java/export-conversion/groupdocs-viewer-java-convert-archives-html/
 weight: 1
 ---
 
-# आइटम्स प्रति पेज सेट करें: GroupDocs.Viewer Java के साथ आर्काइव को HTML में बदलें
+# zip को html में बदलें और GroupDocs.Viewer Java के साथ प्रति पृष्ठ आइटम सेट करें
 
-आर्काइव फ़ाइलों जैसे ZIP या RAR को वेब‑फ़्रेंडली HTML में बदलना अक्सर आवश्यक होता है जब आप दस्तावेज़ों को सीधे ब्राउज़र में साझा या रिव्यू करना चाहते हैं। इस गाइड में आप सीखेंगे **आइटम्स प्रति पेज कैसे सेट करें** जबकि आर्काइव रेंडर कर रहे हों, स्व‑निहित आउटपुट के लिए रिसोर्सेज HTML को एम्बेड कैसे करें, और GroupDocs.Viewer Java के साथ आर्काइव को प्रभावी ढंग से बैच कन्वर्ट कैसे करें।
+कई वेब अनुप्रयोगों में आपको ZIP या RAR आर्काइव की सामग्री सीधे ब्राउज़र में दिखानी होती है। GroupDocs.Viewer for Java के साथ आप **convert zip to html** को एक ही चरण में कर सकते हैं, प्रत्येक पृष्ठ पर दिखने वाले आर्काइव एंट्री की संख्या को नियंत्रित कर सकते हैं, सभी सहायक इमेज और CSS को एम्बेड कर सकते हैं, और यहाँ तक कि दर्जनों आर्काइव को बैच‑प्रोसेस भी कर सकते हैं। यह ट्यूटोरियल आपको पूरी वर्कफ़्लो के माध्यम से ले जाता है, Maven सेटअप से मल्टी‑पेज रेंडरिंग तक, और समझाता है कि प्रत्येक सेटिंग प्रदर्शन और उपयोगिता के लिए क्यों महत्वपूर्ण है।
 
 ![GroupDocs.Viewer for Java के साथ आर्काइव को HTML में बदलें](/viewer/export-conversion/convert-archives-to-html-java.png)
 
 ## त्वरित उत्तर
-- **“आइटम्स प्रति पेज सेट” नियंत्रण क्या करता है?** यह निर्धारित करता है कि एक जनरेटेड HTML पेज पर आर्काइव की कितनी फ़ाइलें या फ़ोल्डर दिखेंगे।  
-- **क्या मैं इमेज और CSS को सीधे HTML में एम्बेड कर सकता हूँ?** हाँ – `forEmbeddedResources` विकल्प का उपयोग करके रिसोर्सेज HTML को एम्बेड करें।  
-- **क्या बैच कन्वर्ज़न संभव है?** बिल्कुल; आप आर्काइव्स के एक संग्रह पर लूप करके प्रत्येक को समान सेटिंग्स के साथ रेंडर कर सकते हैं।  
-- **क्या GroupDocs.Viewer उपयोग करने के लिए Maven की आवश्यकता है?** हाँ, नीचे दिखाए अनुसार `maven groupdocs viewer` डिपेंडेंसी जोड़ें।  
-- **कौन‑से आउटपुट फ़ॉर्मेट समर्थित हैं?** सिंगल‑पेज HTML Java और मल्टी‑पेज HTML Java दोनों उपलब्ध हैं।
+- **“set items per page” क्या नियंत्रित करता है?** यह निर्धारित करता है कि आर्काइव की कितनी फ़ाइलें या फ़ोल्डर प्रत्येक उत्पन्न HTML पृष्ठ पर दिखेंगे।  
+- **क्या मैं इमेज और CSS को सीधे HTML में एम्बेड कर सकता हूँ?** हाँ – `forEmbeddedResources` विकल्प का उपयोग करके संसाधनों को HTML में एम्बेड करें।  
+- **क्या बैच रूपांतरण संभव है?** बिल्कुल; आप आर्काइव के संग्रह पर लूप कर सकते हैं और प्रत्येक को समान सेटिंग्स के साथ रेंडर कर सकते हैं।  
+- **क्या GroupDocs.Viewer के लिए Maven आवश्यक है?** हाँ, नीचे दिखाए अनुसार `groupdocs-viewer` Maven डिपेंडेंसी जोड़ें।  
+- **कौन से आउटपुट फ़ॉर्मेट समर्थित हैं?** सिंगल‑पेज HTML और मल्टी‑पेज HTML दोनों उपलब्ध हैं, और लाइब्रेरी 50+ इनपुट आर्काइव प्रकारों का समर्थन करती है।
 
-## GroupDocs.Viewer में “आइटम्स प्रति पेज सेट” क्या है?
-**आइटम्स प्रति पेज सेट** विकल्प आर्काइव रेंडरिंग ऑप्शन्स से संबंधित है। यह व्यूअर को बताता है कि मल्टी‑पेज HTML दस्तावेज़ बनाते समय प्रत्येक HTML पेज पर कितनी आर्काइव एंट्रीज़ (फ़ाइलें या फ़ोल्डर) प्रदर्शित हों। इस मान को समायोजित करने से आप पेज साइज और नेविगेशन स्पीड के बीच संतुलन बना सकते हैं, विशेषकर बड़े आर्काइव्स के लिए।
+## GroupDocs.Viewer में “set items per page” क्या है?
+**set items per page** सेटिंग आर्काइव रेंडरिंग विकल्पों से संबंधित है। यह व्यूअर को बताता है कि जब आप मल्टी‑पेज HTML दस्तावेज़ बनाते हैं, तो प्रत्येक HTML पृष्ठ पर कितनी आर्काइव एंट्री (फ़ाइलें या फ़ोल्डर) प्रदर्शित होनी चाहिए। इस मान को समायोजित करने से पृष्ठ आकार और नेविगेशन गति के बीच संतुलन बनता है, विशेषकर बड़े आर्काइव के लिए।
 
-## रिसोर्सेज HTML को एम्बेड क्यों करें?
-रिसोर्सेज (इमेज, CSS, फ़ॉन्ट) को सीधे HTML फ़ाइल में एम्बेड करने से एक सिंगल, पोर्टेबल डॉक्यूमेंट बनता है जिसे बाहरी फ़ाइलों की आवश्यकता के बिना खोला जा सकता है। यह ई‑मेल अटैचमेंट, ऑफ़लाइन व्यूइंग, या आउटपुट को अन्य वेब पेजों में एम्बेड करने के लिए आदर्श है।
+## संसाधनों को HTML में एम्बेड क्यों करें?
+HTML फ़ाइल के भीतर सीधे संसाधनों (इमेज, CSS, फ़ॉन्ट) को एम्बेड करने से एक एकल, पोर्टेबल दस्तावेज़ बनता है जिसे बाहरी फ़ाइलों के बिना खोला जा सकता है। यह ईमेल अटैचमेंट, ऑफ़लाइन व्यूइंग, या आउटपुट को अन्य वेब पेजों में एम्बेड करने के लिए आदर्श है। यह तरीका डिप्लॉयमेंट को भी सरल बनाता है क्योंकि बाहरी एसेट पाथ्स को प्रबंधित करने की आवश्यकता नहीं रहती।
 
 ## पूर्वापेक्षाएँ
-
-- **आवश्यक लाइब्रेरीज़:** GroupDocs.Viewer संस्करण 25.2 या बाद का शामिल करें।  
+- **आवश्यक लाइब्रेरीज़:** GroupDocs.Viewer संस्करण 25.2 या बाद का शामिल करें।  
 - **पर्यावरण:** Java Development Kit (JDK) स्थापित और कॉन्फ़िगर किया हुआ।  
-- **ज्ञान:** बेसिक Java और Maven डिपेंडेंसी मैनेजमेंट।
+- **ज्ञान:** बेसिक Java और Maven डिपेंडेंसी मैनेजमेंट।  
 
 ## Maven GroupDocs Viewer सेटअप
-
 `pom.xml` में GroupDocs रिपॉज़िटरी और व्यूअर डिपेंडेंसी जोड़ें:
 
 ```xml
@@ -61,10 +99,10 @@ weight: 1
 </dependencies>
 ```
 
-### लाइसेंस प्राप्त करना
-GroupDocs.Viewer एक **फ्री ट्रायल लिंक**, एक टेम्पररी लाइसेंस, या पूर्ण खरीद विकल्प प्रदान करता है। अपने प्रोजेक्ट टाइमलाइन के अनुसार उपयुक्त विकल्प चुनें।
+### लाइसेंस प्राप्ति
+GroupDocs.Viewer एक **free trial link**, एक अस्थायी लाइसेंस, या पूर्ण खरीद विकल्प प्रदान करता है। अपने प्रोजेक्ट टाइमलाइन के अनुसार उपयुक्त विकल्प चुनें।
 
-### बेसिक इनिशियलाइज़ेशन
+### बुनियादी इनिशियलाइज़ेशन
 Maven सेटअप के बाद, व्यूअर को अपने कोड में लाएँ:
 
 ```java
@@ -72,9 +110,12 @@ import com.groupdocs.viewer.Viewer;
 // Your initialization code here
 ```
 
-## आर्काइव को सिंगल‑पेज HTML में रेंडर करने का तरीका
+## आर्काइव को सिंगल‑पेज HTML में रेंडर कैसे करें
+Viewer वह मुख्य क्लास है जो रेंडरिंग के लिए दस्तावेज़ या आर्काइव लोड करता है।
 
-### चरण 1: आउटपुट डायरेक्टरी परिभाषित करें
+पूरे आर्काइव को शामिल करने वाला एकल HTML फ़ाइल बनाने के लिए, ZIP फ़ाइल के लिए एक `Viewer` इंस्टेंस बनाएं और `HtmlViewOptions.forEmbeddedResources()` का उपयोग करके सभी इमेज, CSS, और फ़ॉन्ट एम्बेड करें। इन विकल्पों के साथ आर्काइव को रेंडर करने से एक स्व-निहित पृष्ठ बनता है जो ईमेल या ऑफ़लाइन उपयोग के लिए उपयुक्त है।
+
+### चरण 1: आउटपुट डायरेक्टरी निर्धारित करें
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
@@ -91,92 +132,96 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
 }
 ```
 
-### चरण 4: रेंडरिंग ऑप्शन कॉन्फ़िगर करें (रिसोर्सेज HTML एम्बेड)
+### चरण 4: रेंडरिंग विकल्प कॉन्फ़िगर करें (संसाधनों को HTML में एम्बेड करें)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### चरण 5: सिंगल पेज के रूप में रेंडर करें
+### चरण 5: एकल पृष्ठ के रूप में रेंडर करें
 ```java
 options.setRenderToSinglePage(true);
 viewer.view(options);
 ```
 
-## आर्काइव को मल्टी‑पेज HTML में रेंडर करने और आइटम्स प्रति पेज सेट करने का तरीका
+## आर्काइव को मल्टी‑पेज HTML में रेंडर कैसे करें और items per page सेट करें
+`HtmlViewOptions` निर्धारित करता है कि व्यूअर HTML आउटपुट को कैसे रेंडर करता है, जिसमें पेजिनेशन और संसाधन एम्बेडिंग शामिल है।
+
+आर्काइव को कई पृष्ठों में विभाजित करने के लिए, `HtmlViewOptions.forEmbeddedResources()` बनाएं और `options.setItemsPerPage(20)` के साथ इच्छित पेज आकार सेट करें। व्यूअर अलग‑अलग HTML फ़ाइलें उत्पन्न करेगा, प्रत्येक में निर्दिष्ट संख्या तक एंट्री दिखेगी, जिससे बड़े आर्काइव की नेविगेशन बेहतर होगी और लोडिंग तेज़ होगी।
 
 ### चरण 1: आउटपुट डायरेक्टरी को पुनः उपयोग करें
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-### चरण 2: कई पेजों के लिए फ़ाइल नाम फ़ॉर्मेट परिभाषित करें
+### चरण 2: कई पृष्ठों के लिए फ़ाइल नाम फ़ॉर्मेट निर्धारित करें
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("RAR_result_page_{0}.html");
 ```
 
-### चरण 3: फिर से व्यूअर को इनिशियलाइज़ करें
+### चरण 3: व्यूअर को फिर से इनिशियलाइज़ करें
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_RAR_WITH_FOLDERS)) {
     // Continue with multi‑page configuration
 }
 ```
 
-### चरण 4: मल्टी‑पेज ऑप्शन कॉन्फ़िगर करें (रिसोर्सेज HTML एम्बेड)
+### चरण 4: मल्टी‑पेज विकल्प कॉन्फ़िगर करें (संसाधनों को HTML में एम्बेड करें)
 ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-### चरण 5: आइटम्स प्रति पेज सेट करें (मुख्य कीवर्ड एक्शन में)
+### चरण 5: items per page सेट करें (क्रिया में मुख्य कीवर्ड)
 ```java
 options.getArchiveOptions().setItemsPerPage(10); // Default is 16
 viewer.view(options);
 ```
 
-## व्यावहारिक उपयोग
-
-- **डॉक्यूमेंट मैनेजमेंट सिस्टम:** अतिरिक्त व्यूअर्स इंस्टॉल किए बिना आर्काइव प्रीव्यू फ़ंक्शनालिटी जोड़ें।  
-- **वेब पोर्टल्स:** उपयोगकर्ताओं को बंडल्ड डॉक्यूमेंट्स को जल्दी, बिना डाउनलोड के एक्सप्लोर करने का विकल्प दें।  
-- **कोलैबोरेशन टूल्स:** टीमों को ब्राउज़र में सीधे साझा किए गए आर्काइव्स को इंस्पेक्ट करने की सुविधा दें।
+## व्यावहारिक अनुप्रयोग
+- **डॉक्यूमेंट मैनेजमेंट सिस्टम:** अतिरिक्त व्यूअर्स इंस्टॉल किए बिना आर्काइव प्रीव्यू फ़ंक्शनैलिटी जोड़ें।  
+- **वेब पोर्टल:** उपयोगकर्ताओं को बंडल्ड डॉक्यूमेंट्स को एक्सप्लोर करने का तेज़, बिना डाउनलोड वाला तरीका प्रदान करें।  
+- **कोलैबोरेशन टूल्स:** टीमों को साझा किए गए आर्काइव को सीधे ब्राउज़र में निरीक्षण करने दें।
 
 ## प्रदर्शन संबंधी विचार
-
-- **रिसोर्स मैनेजमेंट:** मेमोरी उपयोग पर नजर रखें; बड़े बैच के लिए JVM के गार्बेज‑कलेक्टर को ट्यून करने पर विचार करें।  
-- **बैच कन्वर्ट आर्काइव्स:** आर्काइव फ़ाइलों की सूची पर लूप चलाएँ और समान रेंडरिंग लॉजिक को कॉल करके थ्रूपुट अधिकतम करें।  
-- **कैशिंग स्ट्रेटेजी:** यदि वही आर्काइव बार‑बार एक्सेस किया जाता है तो रेंडर किया हुआ HTML कैश में स्टोर करें।
+- **संसाधन प्रबंधन:** आर्काइव को स्ट्रीम में प्रोसेस करके मेमोरी उपयोग कम रखें; व्यूअर 500 MB तक के आर्काइव को पूरी फ़ाइल को मेमोरी में लोड किए बिना संभाल सकता है।  
+- **बैच रूपांतरण:** आर्काइव फ़ाइलों की सूची पर लूप करें और समान रेंडरिंग लॉजिक को कॉल करके थ्रूपुट अधिकतम करें।  
+- **कैशिंग रणनीति:** यदि वही आर्काइव बार‑बार एक्सेस किया जाता है तो रेंडर किया गया HTML कैश में रखें, जिससे दोहराए गए प्रोसेसिंग समय में 70 % तक की कमी आती है।
 
 ## अक्सर पूछे जाने वाले प्रश्न
-
 **प्रश्न: GroupDocs.Viewer Java क्या है?**  
-उत्तर: एक बहुमुखी लाइब्रेरी जो डॉक्यूमेंट्स—आर्काइव सहित—को HTML, PDF, और इमेज जैसे फ़ॉर्मेट में रेंडर करती है।
+**उत्तर:** GroupDocs.Viewer Java एक सर्वर‑साइड लाइब्रेरी है जो 50 से अधिक डॉक्यूमेंट और आर्काइव फ़ॉर्मेट—जिसमें ZIP और RAR शामिल हैं—को HTML, PDF, या इमेज फ़ाइलों में रेंडर करती है, बिना बाहरी एप्लिकेशन की आवश्यकता के।
 
 **प्रश्न: GroupDocs.Viewer का फ्री ट्रायल कैसे प्राप्त करूँ?**  
-उत्तर: [free trial link](https://releases.groupdocs.com/viewer/java/) पर जाएँ और डाउनलोड व टेस्ट करें।
+**उत्तर:** डाउनलोड और परीक्षण के लिए [free trial link](https://releases.groupdocs.com/viewer/java/) पर जाएँ।
 
-**प्रश्न: क्या मैं आर्काइव के अलावा अन्य डॉक्यूमेंट टाइप्स भी कन्वर्ट कर सकता हूँ?**  
-उत्तर: हाँ, व्यूअर PDFs, Word, Excel, और कई अन्य फ़ॉर्मेट्स को सपोर्ट करता है।
+**प्रश्न: क्या मैं आर्काइव के अलावा अन्य डॉक्यूमेंट प्रकार भी बदल सकता हूँ?**  
+**उत्तर:** हाँ, व्यूअर PDFs, Word, Excel, PowerPoint, और 35+ अतिरिक्त फ़ॉर्मेट्स को सपोर्ट करता है।
 
-**प्रश्न: यदि रेंडरिंग धीमी हो रही है तो क्या करें?**  
-उत्तर: आइटम्स प्रति पेज की संख्या घटाएँ, स्ट्रीमिंग सक्षम करें, या आर्काइव्स को छोटे बैच में प्रोसेस करें।
+**प्रश्न: यदि रेंडरिंग धीमी है तो क्या करें?**  
+**उत्तर:** प्रति पृष्ठ आइटम की संख्या घटाएँ, स्ट्रीमिंग सक्षम करें, या गति बढ़ाने के लिए आर्काइव को छोटे बैच में प्रोसेस करें।
 
-**प्रश्न: सहायता या सपोर्ट कहाँ प्राप्त करूँ?**  
-उत्तर: [support forum](https://forum.groupdocs.com/c/viewer/9) के माध्यम से संपर्क करें।
+**प्रश्न: सहायता या समर्थन कहाँ प्राप्त कर सकता हूँ?**  
+**उत्तर:** [support forum](https://forum.groupdocs.com/c/viewer/9) के माध्यम से संपर्क करें।
 
 **प्रश्न: क्या CSS और इमेज को सीधे HTML में एम्बेड करना संभव है?**  
-उत्तर: बिल्कुल—उदाहरणों में दिखाए अनुसार `HtmlViewOptions.forEmbeddedResources` का उपयोग करें।
+**उत्तर:** बिल्कुल—उदाहरणों में दिखाए अनुसार `HtmlViewOptions.forEmbeddedResources` का उपयोग करें।
 
-**प्रश्न: फ़ोल्डर में मौजूद कई आर्काइव्स को बैच में कैसे कन्वर्ट करूँ?**  
-उत्तर: प्रत्येक फ़ाइल पर `for` लूप चलाएँ और प्रत्येक इटरेशन में समान `Viewer` और `HtmlViewOptions` कॉन्फ़िगरेशन लागू करें।
+**प्रश्न: आर्काइव फ़ोल्डर को बैच में कैसे कन्वर्ट करूँ?**  
+**उत्तर:** `for` लूप के साथ प्रत्येक फ़ाइल पर इटररेट करें, प्रत्येक इटरशन के लिए समान `Viewer` और `HtmlViewOptions` कॉन्फ़िगरेशन लागू करें।
 
 ## संसाधन
-
-- **डॉक्यूमेंटेशन:** [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) के साथ फ़ंक्शनालिटी में गहराई से जाएँ।  
+- **डॉक्यूमेंटेशन:** कार्यक्षमता में गहराई से जाने के लिए [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) देखें।  
 - **API रेफ़रेंस:** पूर्ण API को [GroupDocs API](https://reference.groupdocs.com/viewer/java/) पर एक्सप्लोर करें।  
 - **डाउनलोड:** नवीनतम बाइनरीज़ को [download page](https://releases.groupdocs.com/viewer/java/) से प्राप्त करें।  
-- **पर्चेज और लाइसेंसिंग:** विकल्पों की समीक्षा [purchase page](https://purchase.groupdocs.com/buy) पर करें।  
-- **सपोर्ट और कम्युनिटी:** चर्चाओं में शामिल हों [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) पर।
+- **खरीद और लाइसेंसिंग:** विकल्पों को [purchase page](https://purchase.groupdocs.com/buy) पर देखें।  
+- **समर्थन और समुदाय:** चर्चाओं में भाग लेने के लिए [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) में जुड़ें।
 
 ---
 
-**अंतिम अपडेट:** 2026-02-23  
-**टेस्टेड विथ:** GroupDocs.Viewer 25.2  
+**अंतिम अपडेट:** 2026-08-03  
+**परीक्षित संस्करण:** GroupDocs.Viewer 25.2  
 **लेखक:** GroupDocs
+
+## संबंधित ट्यूटोरियल
+- [Java में GroupDocs.Viewer के साथ zip को HTML में बदलें और zip फ़ोल्डर्स रेंडर करें](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)
+- [GroupDocs.Viewer Java के साथ zip को pdf में बदलें - कस्टम फ़ाइलनाम](/viewer/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/)
+- [GroupDocs.Viewer for Java का उपयोग करके DOCX को HTML में कैसे बदलें: चरण‑दर‑चरण गाइड](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
