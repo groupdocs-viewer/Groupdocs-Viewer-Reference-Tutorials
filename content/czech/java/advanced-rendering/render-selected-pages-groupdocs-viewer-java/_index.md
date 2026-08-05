@@ -1,56 +1,56 @@
 ---
-date: '2026-01-15'
-description: Naučte se, jak vykreslovat stránky a generovat HTML z dokumentu pomocí
-  GroupDocs.Viewer pro Javu. Tento průvodce pokrývá nastavení, konfiguraci a praktickou
-  integraci.
+date: '2026-04-04'
+description: Naučte se, jak pomocí GroupDocs.Viewer převádět DOCX do HTML v Javě,
+  vykreslovat PDF stránky v Javě a generovat HTML z dokumentů. Tento průvodce pokrývá
+  nastavení, konfiguraci a praktickou integraci.
 keywords:
-- render selected pages GroupDocs.Viewer Java
-- GroupDocs Viewer for Java setup
-- render HTML with embedded resources
-title: Jak renderovat stránky pomocí GroupDocs.Viewer pro Javu
+- convert docx to html java
+- render pdf pages java
+- generate html from document java
+title: Převod DOCX na HTML v Javě – Stránky s GroupDocs.Viewer
 type: docs
 url: /cs/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Jak renderovat stránky pomocí GroupDocs.Viewer for Java
+# Převod DOCX na HTML Java – Stránky s GroupDocs.Viewer
 
-Zobrazení pouze určitých částí dokumentu ve vaší webové aplikaci může být náročné. V tomto tutoriálu se dozvíte **jak efektivně renderovat stránky**, převodem na samostatné HTML soubory, které lze vložit přímo do uživatelského rozhraní. Ať už potřebujete zobrazit úryvek smlouvy nebo jedinou kapitolu učebnice, níže uvedené kroky vás provedou kompletním procesem pomocí GroupDocs.Viewer for Java.
-
-Jste připraveni vylepšit svou aplikaci? Začněme tím, že si ověříme, že je vaše nastavení správné.
+Pokud potřebujete **convert DOCX to HTML Java** a zobrazovat pouze relevantní části dokumentu, tento tutoriál je pro vás. Provedeme vás vykreslením vybraných stránek, vložením všech zdrojů a dodáním lehkého HTML, které můžete přímo vložit do svého webového UI. Ať už budujete portál pro revizi smluv, e‑learning modul nebo dashboard pro reportování, níže uvedené kroky vám poskytnou rychlý a spolehlivý způsob, jak převést DOCX (nebo PDF, PPT atd.) na připravené HTML k zobrazení.
 
 ## Rychlé odpovědi
 - **Co znamená „render pages“?** Převod vybraných stránek dokumentu do zobrazitelného formátu, například HTML.  
 - **Jaký formát je generován?** HTML s vloženými zdroji (obrázky, CSS, fonty).  
-- **Potřebuji licenci?** Zkušební verze funguje pro hodnocení; pro produkční nasazení je vyžadována plná licence.  
-- **Mohu vybrat nesouvislé stránky?** Ano – můžete zadat libovolná čísla stránek, která potřebujete.  
-- **Je doporučeno cachování?** Rozhodně, cachování vygenerovaného HTML snižuje dobu načítání často navštěvovaných stránek.
+- **Potřebuji licenci?** Zkušební verze funguje pro hodnocení; plná licence je vyžadována pro produkci.  
+- **Mohu zvolit nesouvislé stránky?** Ano – můžete zadat libovolná čísla stránek, která potřebujete.  
+- **Doporučuje se cachování?** Rozhodně, cachování vykresleného HTML snižuje dobu načítání často navštěvovaných stránek.  
 
-![Render Selected Pages of a Document with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
+![Vykreslení vybraných stránek dokumentu pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/render-selected-pages-of-a-document-java.png)
 
 ### Co se naučíte
 - Nastavení GroupDocs.Viewer ve vašem Java prostředí  
-- Renderování konkrétních stránek dokumentu pomocí Viewer API  
+- Vykreslování konkrétních stránek dokumentu pomocí Viewer API  
 - Konfigurace možností HTML zobrazení pro optimální výstup  
-- Praktické příklady použití a integrační scénáře  
+- Praktické příklady použití a scénáře integrace  
 
-## Co je renderování vybraných stránek?
-Renderování vybraných stránek znamená extrahování pouze těch stránek, které určíte, ze zdrojového dokumentu (DOCX, PDF, PPT atd.) a jejich převod do formátu, který lze zobrazit ve webovém prohlížeči. Tento přístup snižuje šířku pásma, urychluje načítání stránky a zlepšuje uživatelský zážitek tím, že zobrazí jen relevantní obsah.
+## Co je vykreslování vybraných stránek?
+Vykreslování vybraných stránek znamená extrahovat pouze stránky, které určíte, ze zdrojového dokumentu (DOCX, PDF, PPT atd.) a převést je do formátu, který lze zobrazit ve webovém prohlížeči. Tento přístup snižuje šířku pásma, urychluje načítání stránky a zlepšuje uživatelský zážitek tím, že zobrazuje jen relevantní obsah.
 
-## Proč generovat HTML z dokumentu?
-Generování HTML z dokumentu vám poskytne lehkou, platformově nezávislou reprezentaci, která funguje napříč prohlížeči bez potřeby externích prohlížečů nebo pluginů. Vkládání zdrojů přímo do HTML souboru (obrázky, fonty, CSS) zjednodušuje nasazení a eliminuje problémy s cross‑origin.
+## Proč převádět DOCX na HTML Java?
+Generování HTML z DOCX vám poskytuje lehkou, platformně nezávislou reprezentaci, která funguje napříč prohlížeči bez potřeby externích prohlížečů nebo pluginů. Vložení zdrojů přímo do HTML souboru (obrázky, fonty, CSS) zjednodušuje nasazení a eliminuje problémy s cross‑origin, což je ideální pro moderní webové aplikace.
 
-## Předpoklady
+## Požadavky
+
 Ujistěte se, že vaše vývojové prostředí splňuje následující požadavky:
 
-1. **Požadované knihovny** – Do projektu zahrňte GroupDocs.Viewer for Java (verze 25.2 nebo novější).  
+1. **Požadované knihovny** – Přidejte GroupDocs.Viewer pro Java (verze 25.2 nebo novější) do svého projektu.  
 2. **Prostředí** – JDK 8 nebo vyšší; IDE jako IntelliJ IDEA nebo Eclipse.  
-3. **Znalosti** – Základní programování v Javě a správa závislostí pomocí Maven.  
+3. **Znalosti** – Základní programování v Javě a správa závislostí pomocí Maven.
 
 ## Nastavení GroupDocs.Viewer pro Java
 
 ### Instalace pomocí Maven
-Add the repository and dependency to your `pom.xml`:
+
+Přidejte repozitář a závislost do svého `pom.xml`:
 
 ```xml
 <repositories>
@@ -70,9 +70,9 @@ Add the repository and dependency to your `pom.xml`:
 ```
 
 ### Získání licence
-- **Bezplatná zkušební verze** – Prozkoumejte všechny funkce zdarma.  
-- **Dočasná licence** – Prodlouží testování po uplynutí zkušební doby.  
-- **Plná licence** – Vyžadována pro produkční nasazení.
+- **Free Trial** – Prozkoumejte všechny funkce bez nákladů.  
+- **Temporary License** – Prodloužte testování po uplynutí zkušební doby.  
+- **Full Purchase** – Vyžadováno pro produkční nasazení.
 
 #### Základní inicializace a nastavení
 
@@ -88,11 +88,9 @@ public class DocumentViewer {
 }
 ```
 
-## Průvodce implementací
+## Jak převést DOCX na HTML Java s vybranými stránkami
 
-### Renderování konkrétních stránek jako HTML s vloženými zdroji
-
-#### Step 1: Configure Output Path
+### Krok 1: Nastavení výstupní cesty
 
 ```java
 import java.nio.file.Path;
@@ -102,10 +100,10 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **Vysvětlení**: `outputDirectory` je místo, kam budou uloženy vygenerované HTML soubory.  
-- **Pojmenování**: `page_{0}.html` vytvoří samostatný soubor pro každou renderovanou stránku.
+- **Vysvětlení**: `outputDirectory` je místo, kde budou uloženy vygenerované HTML soubory.  
+- **Pojmenování**: `page_{0}.html` vytvoří samostatný soubor pro každou vykreslenou stránku.
 
-#### Step 2: Set Up HTML View Options
+### Krok 2: Nastavení možností HTML zobrazení
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -113,9 +111,9 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-- **Vysvětlení**: `forEmbeddedResources()` zahrne obrázky, CSS a fonty přímo do každého HTML souboru, čímž odstraní externí závislosti.
+- **Vysvětlení**: `forEmbeddedResources()` zabalí obrázky, CSS a fonty přímo do každého HTML souboru, čímž odstraní externí závislosti.
 
-#### Step 3: Render the Desired Pages
+### Krok 3: Vykreslení požadovaných stránek
 
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
@@ -123,52 +121,50 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-- **Vysvětlení**: Metoda `view()` přijímá `HtmlViewOptions` a seznam čísel stránek. V tomto příkladu jsou renderovány pouze první a třetí stránka.
-
-### Tipy pro řešení problémů
-- Ověřte, že výstupní adresář existuje a aplikace má oprávnění k zápisu.  
-- Ujistěte se, že cesta k dokumentu je správná a soubor není poškozený.  
-- Pokud narazíte na chyby licence, potvrďte, že platný licenční soubor je umístěn vedle vaší aplikace.
+- **Vysvětlení**: Metoda `view()` přijímá `HtmlViewOptions` a seznam čísel stránek. V tomto příkladu jsou vykresleny pouze první a třetí stránka.
 
 ## Praktické aplikace
-Renderování vybraných stránek je užitečné v mnoha situacích:
 
-1. **Právní dokumenty** – Zobrazte pouze relevantní klauzule smlouvy.  
-2. **Vzdělávací platformy** – Umožněte studentům náhled konkrétních kapitol bez stažení celé učebnice.  
-3. **Obchodní zprávy** – Poskytněte zúčastněným stranám stručné souhrny zobrazením klíčových částí zprávy.
+Vykreslování vybraných stránek je užitečné v mnoha scénářích:
+
+1. **Legal Documents** – Zobrazte pouze relevantní klauzule smlouvy.  
+2. **Educational Platforms** – Umožněte studentům náhled konkrétních kapitol bez stažení celého učebnice.  
+3. **Business Reports** – Poskytněte stakeholderům stručné souhrny zobrazením klíčových částí reportu.
 
 ## Úvahy o výkonu
-- **Správa paměti** – Používejte try‑with‑resources (jak je ukázáno) k rychlému uvolnění zdrojů Vieweru.  
-- **Cachování** – Ukládejte vygenerované HTML do cache (např. Redis nebo v paměti) pro často přistupované stránky.  
-- **Minimalizace zdrojů** – Vložené zdroje mírně zvětší velikost souboru; zvažte kompresi HTML výstupu, pokud je šířka pásma problém.
 
-## Common Issues and Solutions
+- **Memory Management** – Používejte try‑with‑resources (jak je ukázáno) k rychlému uvolnění zdrojů Vieweru.  
+- **Caching** – Ukládejte vykreslené HTML do cache (např. Redis nebo paměť) pro často přistupované stránky.  
+- **Resource Minimization** – Vložené zdroje mírně zvětší velikost souboru; zvažte kompresi výstupního HTML, pokud je šířka pásma kritická.
+
+## Časté problémy a řešení
 | Problém | Řešení |
 |-------|----------|
 | **Soubor nenalezen** | Zkontrolujte absolutní/relativní cestu a ujistěte se, že soubor existuje. |
-| **Nedostatek paměti u velkých dokumentů** | Renderujte jen potřebné stránky, nebo zvyšte velikost haldy JVM (`-Xmx`). |
-| **Chybějící obrázky v HTML** | Ověřte, že je použito `forEmbeddedResources`; jinak jsou obrázky uloženy samostatně. |
-| **Chyba licence** | Umístěte platný soubor `GroupDocs.Viewer.lic` do kořenového adresáře aplikace nebo programově specifikujte jeho cestu. |
+| **Nedostatek paměti pro velké dokumenty** | Vykreslete pouze potřebné stránky nebo zvětšete velikost haldy JVM (`-Xmx`). |
+| **Chybějící obrázky v HTML** | Ověřte, že je použito `forEmbeddedResources`; jinak jsou obrázky uloženy odděleně. |
+| **Chyba licence** | Umístěte platný soubor `GroupDocs.Viewer.lic` do kořenového adresáře aplikace nebo zadejte jeho cestu programově. |
 
 ## Často kladené otázky
 
-1. **Co je GroupDocs.Viewer for Java?**  
-   Knihovna, která umožňuje renderování více než 90 formátů dokumentů (PDF, DOCX, PPT atd.) přímo v Java aplikacích.
+**Q: Co je GroupDocs.Viewer pro Java?**  
+A: Knihovna, která umožňuje vykreslování více než 90 formátů dokumentů (PDF, DOCX, PPT atd.) přímo v Java aplikacích.
 
-2. **Mohu renderovat PDF stránky pomocí této metody?**  
-   Ano – Viewer API podporuje PDF spolu s mnoha dalšími formáty.
+**Q: Mohu pomocí této metody vykreslovat PDF stránky?**  
+A: Ano – Viewer API podporuje PDF i mnoho dalších formátů.
 
-3. **Jak efektivně pracovat s velkými dokumenty?**  
-   Renderujte jen stránky, které potřebujete, a využívejte cachování, aby se předešlo opakovanému zpracování.
+**Q: Jak efektivně zacházet s velkými dokumenty?**  
+A: Vykreslete pouze stránky, které potřebujete, a využijte cachování, aby se zamezilo opakovanému zpracování.
 
-4. **Jaký je přínos vkládání zdrojů do HTML souborů?**  
-   Vytvoří to jeden samostatný soubor pro každou stránku, což zjednodušuje nasazení a eliminuje načítání externích zdrojů.
+**Q: Jaký je přínos vkládání zdrojů do HTML souborů?**  
+A: Vytvoří se jeden samostatný soubor na stránku, což usnadňuje nasazení a eliminuje načítání externích aktiv.
 
-5. **Kde najdu další informace o GroupDocs.Viewer for Java?**  
-   - **Dokumentace**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
-   - **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
+**Q: Kde najdu více informací o GroupDocs.Viewer pro Java?**  
+A: - **Dokumentace**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+   - **Průvodce API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
 
 ## Zdroje
+
 - **Dokumentace**: [GroupDocs.Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
 - **API Reference**: [API Reference Guide](https://reference.groupdocs.com/viewer/java/)  
 - **Stáhnout**: [GroupDocs.Viewer Download Page](https://releases.groupdocs.com/viewer/java/)  
@@ -179,6 +175,6 @@ Renderování vybraných stránek je užitečné v mnoha situacích:
 
 ---
 
-**Poslední aktualizace:** 2026-01-15  
+**Poslední aktualizace:** 2026-04-04  
 **Testováno s:** GroupDocs.Viewer 25.2  
 **Autor:** GroupDocs

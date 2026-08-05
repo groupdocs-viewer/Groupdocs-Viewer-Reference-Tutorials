@@ -1,55 +1,53 @@
 ---
-date: '2026-01-18'
-description: Tanulja meg, hogyan lehet elforgatni a PDF oldalakat a GroupDocs.Viewer
-  for Java segítségével. Ez a lépésről‑lépésre útmutató a Maven beállítását, az oldalforgatást
-  (beleértve a PDF 90 fokos elforgatását) és a hibakeresést tárgyalja.
+date: '2026-04-04'
+description: Tanulja meg, hogyan lehet elforgatni a konkrét PDF oldalakat a GroupDocs.Viewer
+  for Java segítségével. Ez a lépésről‑lépésre útmutató lefedi a Maven beállítást,
+  a PDF 90 fokos elforgatását és a hibakeresést.
 keywords:
-- rotate PDF pages Java
-- GroupDocs.Viewer setup Java
-- programmatically rotate PDF Java
-title: PDF oldalak forgatása a GroupDocs.Viewer Java használatával – Átfogó útmutató
+- rotate specific pdf pages
+- rotate pdf 90 degrees
+- pdf to html java
+- rotate multiple pdf pages
+title: Hogyan forgassuk el a konkrét PDF oldalakat a GroupDocs.Viewer for Java segítségével
 type: docs
 url: /hu/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Hogyan forgassuk el a PDF oldalak a GroupDocs.Viewer segítségével Java-ban
+# Hogyan forgassuk el a specifikus PDF oldalakat a GroupDocs.Viewer for Java segítségével
 
-Egy PDF egyes oldalainak elforgatása elengedhetetlen lehet a dokumentumok igazításához vagy a bemutató diák beállításához. **Ebben az útmutatóban megtanulja, hogyan kell programozottan elforgatni a pdf** oldalakat a GroupDocs.Viewer segítségével, legyen szó 90 fokos elforgatásról, egy egész szakasz megfordításáról vagy több oldal egyetlen hívásban történő kezeléséről.
+A PDF-ben található specifikus oldalak forgatása elengedhetetlen lehet a dokumentumok igazításához, a beolvasott képek javításához vagy a prezentációs diák finomhangolásához. **Ebben az útmutatóban megtanulja, hogyan forgathatja el programozottan a specifikus PDF oldalakat a GroupDocs.Viewer segítségével**, akár 90 fokos pdf forgatásra van szükség, egy egész szakasz megfordítására, vagy több oldal egyetlen hívásban történő kezelésére.
 
-![Specifikus PDF oldalak elforgatása a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
+![Specifikus PDF oldalak forgatása a GroupDocs.Viewer for Java segítségével](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
 
-**Mit fog megtanulni:**
+**Mit fog megtanulni**
 - A GroupDocs.Viewer beállítása a Java projektben (beleértve a Maven GroupDocs Viewer konfigurációt)
-- PDF oldalak programozott elforgatása (pdf 90 fokos, 180 fokos elforgatása stb.)
-- Kulcsfontosságú beállítások a legoptimálisabb használathoz
+- Specifikus PDF oldalak programozott forgatása (pdf 90 fokos, 180 fokos stb. forgatása)
+- Kulcsfontosságú beállítások az optimális használathoz
 - Gyakori problémák hibaelhárítása a megvalósítás során
 
 ## Gyors válaszok
-- **Melyik könyvtár tud PDF oldalakat elforgatni Java-ban?** GroupDocs.Viewer for Java.
-- **Elforgathatok egyetlen oldalt 90 fokkal?** Igen, használja a `rotatePage(pageNumber, Rotation.ON_90_DEGREE)` függvényt.
-- **Szükségem van licencre a fejlesztéshez?** Ideiglenes licenc elérhető ingyenes próbaidőszakra.
-- **Kell Maven?** A Maven a javasolt módja a GroupDocs függőségek kezelésének.
-- **Hogyan renderelhetem az elforgatott oldalakat?** Használja a `HtmlViewOptions`-t és hívja a `viewer.view(...)`-t.
+- **Milyen könyvtár forgathat PDF oldalakat Java-ban?** GroupDocs.Viewer for Java.  
+- **Forgathatok egyetlen oldalt 90 fokkal?** Igen, használja a `rotatePage(pageNumber, Rotation.ON_90_DEGREE)`-t.  
+- **Szükségem van licencre fejlesztéshez?** Egy ideiglenes licenc elérhető ingyenes próba verzióhoz.  
+- **Kell a Maven?** A Maven a javasolt módja a GroupDocs függőségek kezelésének.  
+- **Hogyan jelenítem meg a forgatott oldalakat?** Használja a `HtmlViewOptions`-t és hívja a `viewer.view(...)`-t.
 
 ## Előfeltételek
 
 ### Szükséges könyvtárak és függőségek
-
-- Java Development Kit (JDK) 8 vagy újabb verziója telepítve a gépén.
-- Integrált fejlesztőkörnyezet (IDE), például IntelliJ IDEA vagy Eclipse.
-- Maven a projekt függőségek kezeléséhez.
+- Java Development Kit (JDK) 8 vagy újabb.  
+- Egy IDE, például IntelliJ IDEA vagy Eclipse.  
+- Maven a függőségkezeléshez.
 
 ### Környezet beállítási követelmények
-
-1. **Maven konfiguráció**: Adja hozzá a GroupDocs.Viewer-t a Maven projektjéhez a szükséges tárolók és függőségek `pom.xml`-ben való megadásával.
-2. **Licenc beszerzése**: Szerezzen be egy ideiglenes licencet a GroupDocs-tól, amely lehetővé teszi az összes funkció korlátok nélküli kipróbálását fejlesztés közben. Látogassa meg a [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) oldalt vagy kérjen ideiglenes licencet a [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/) oldalon.
+1. **Maven konfiguráció** – adja hozzá a GroupDocs.Viewer-t a `pom.xml`-hez.  
+2. **Licenc beszerzése** – szerezzen be egy ideiglenes licencet a GroupDocs-tól. Látogassa meg a [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) oldalt, vagy kérjen ideiglenes licencet a [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/) oldalon.
 
 ## A GroupDocs.Viewer beállítása Java-hoz
 
-A GroupDocs.Viewer Maven használatával történő integrálásához a Java projektjébe, frissítse a `pom.xml`-t:
+A GroupDocs.Viewer Maven használatával történő integrálásához a Java projektbe, frissítse a `pom.xml`-t:
 
-**Maven konfiguráció**
 ```xml
 <repositories>
    <repository>
@@ -68,9 +66,6 @@ A GroupDocs.Viewer Maven használatával történő integrálásához a Java pro
 ```
 
 ### Alapvető inicializálás és beállítás
-
-Inicializálja a GroupDocs.Viewer-t a dokumentumkönyvtár és a kimeneti útvonalak megadásával:
-
 ```java
 Path YOUR_DOCUMENT_DIRECTORY = Path.of("YOUR_DOCUMENT_DIRECTORY");
 Path YOUR_OUTPUT_DIRECTORY = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -81,16 +76,11 @@ Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-## Implementációs útmutató
+## Hogyan forgassuk el a specifikus PDF oldalakat a GroupDocs.Viewer segítségével
+### Áttekintés
+A specifikus PDF oldalak forgatása finomhangolt vezérlést biztosít a dokumentum prezentációja felett anélkül, hogy módosítaná az eredeti fájlt.
 
-### PDF oldalak specifikus elforgatása a GroupDocs.Viewer segítségével
-
-**Áttekintés:** Specifikus PDF oldalak elforgatása a jobb dokumentumprezentáció érdekében.
-
-#### 1. lépés: Oldalforgatás beállítása
-
-Az első oldalt 90 fokkal, a másodikat 180 fokkal forgassa el a `HtmlViewOptions` használatával:
-
+### 1. lépés: Az oldal forgatásának konfigurálása
 ```java
 // Rotate the first page by 90 degrees clockwise.
 viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
@@ -99,10 +89,7 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 viewOptions.rotatePage(2, Rotation.ON_180_DEGREE);
 ```
 
-#### 2. lépés: Viewer inicializálása és renderelés
-
-Hozzon létre egy `Viewer` példányt a dokumentummal, és renderelje a megadott oldalakat:
-
+### 2. lépés: A Viewer inicializálása és renderelése
 ```java
 Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SampleDocument.pdf"));
 
@@ -113,79 +100,77 @@ viewer.view(viewOptions, 1, 2);
 viewer.close();
 ```
 
-### Paraméterek és konfiguráció
+#### Paraméterek és konfiguráció
+- **Rotation** – `rotatePage(pageNumber, Rotation.*)`, ahol a forgatási lehetőségek `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.  
+- **HtmlViewOptions** – Kezeli a PDF‑HTML konverziót, miközben megőrzi a elrendezést és a beágyazott erőforrásokat.  
+- **pdf to html java** – Az osztály ugyanazon API része, és biztosítja a hű vizuális ábrázolást.
 
-- **Rotation**: Használja a `rotatePage`-t oldal számokkal és forgatási szögekkel. Elérhető forgatások: `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.
-- **HtmlViewOptions**: A PDF oldalak HTML-re konvertálását konfigurálja, biztosítva a beágyazott erőforrások szerepeltetését.
-- **pdf to html java**: A `HtmlViewOptions` osztály kezeli a PDF‑HTML konverziót a layout megőrzése mellett.
+## Miért forgassuk el a specifikus PDF oldalakat?
+- **Dokumentum igazítás** – A beolvasott szerződések vagy számlák helyes orientációja.  
+- **Prezentáció finomhangolás** – A PDF-be exportált diák beállítása.  
+- **Archiválási konzisztencia** – Az oldalak orientációjának szabványosítása tömeges digitalizálás során.
 
-#### Hibaelhárítási tippek (troubleshoot pdf rotation)
-
-- Ellenőrizze a dokumentum és a kimeneti könyvtárak elérési útjait.
-- Ellenőrizze a hiányzó függőségeket vagy a helytelen könyvtárverziókat.
-- Győződjön meg róla, hogy a licenc megfelelően van alkalmazva, ha a próbaidőszak alatt funkciókorlátozások lépnek fel.
-- Ha **memória** csúcsokkal találkozik, fontolja meg az oldalak kisebb **batch**-ekben történő renderelését (több pdf oldal fokozatos elforgatása).
+## Gyakori problémák és megoldások (pdf forgatás hibaelhárítása)
+- **Helytelen útvonalak** – Ellenőrizze, hogy a `YOUR_DOCUMENT_DIRECTORY` és a `YOUR_OUTPUT_DIRECTORY` létezik és elérhető.  
+- **Hiányzó függőségek** – Győződjön meg arról, hogy a Maven koordináták megegyeznek a legújabb GroupDocs.Viewer verzióval.  
+- **Licenckorlátozások** – Alkalmazza helyesen az ideiglenes licencet; ellenkező esetben egyes funkciók letiltottak lehetnek.  
+- **Memória csúcsok** – Rendereljen nagy PDF-eket kisebb adagokban vagy növelje a JVM heap méretét.
 
 ## Gyakorlati alkalmazások
 
 ### Valós példák
-1. **Dokumentum igazítás** – Forgassa el a beolvasott **dokumentumokat** a **helyes** digitális **orientáció** érdekében.
-2. **Prezentáció beállítások** – Módosítsa a **prezentáció** diák **PDF-ben** **megosztás** előtt.
-3. **Archiválási munkafolyamatok** – Automatikusan állítsa be a történelmi dokumentumok orientációját a digitalizálás során.
+1. **Dokumentum igazítás** – A beolvasott dokumentumok forgatása a helyes digitális orientáció érdekében.  
+2. **Prezentáció módosítások** – A prezentációs diák módosítása PDF-ben a megosztás előtt.  
+3. **Archiválási munkafolyamatok** – A történelmi dokumentumok orientációjának automatikus beállítása a digitalizálás során.
 
 ### Integrációs lehetőségek
-
-Integrálja a GroupDocs.Viewer-t Java‑alapú dokumentumkezelő rendszerekkel, tartalomplatformokkal vagy egyedi vállalati megoldásokkal, amelyek dinamikus megjelenítési képességeket igényelnek.
+Kombinálja a GroupDocs.Viewer-t Java‑alapú tartalomkezelő rendszerekkel, vállalati portálokkal vagy egyedi API-kkal, amelyek valós időben történő PDF megtekintést igényelnek.
 
 ## Teljesítmény szempontok
-
-- **Erőforrás-kezelés**: Zárja le a `Viewer` példányt az erőforrások felszabadításához.
-- **Java memória kezelés**: Figyelje a memóriahasználatot nagy dokumentumok renderelésekor, és használjon hatékony adatstruktúrákat.
-- **Legjobb gyakorlatok**: Használjon gyorsítótárat a gyakran elérhető dokumentumok vagy oldalak esetén.
+- **Erőforrás-kezelés** – Mindig zárja le a `Viewer` példányt a fájlkezelők és a memória felszabadításához.  
+- **Java memória kezelés** – Figyelje a heap használatát nagy PDF-ek feldolgozásakor; fontolja meg az oldalak streamelését a teljes fájl betöltése helyett.  
+- **Legjobb gyakorlatok** – Gyorsítótárazza a renderelt HTML-t a gyakran elérhető dokumentumok esetén a feldolgozási idő csökkentése érdekében.
 
 ## Következtetés
+Ez az útmutató bemutatta, **hogyan forgassuk el a specifikus pdf oldalakat a GroupDocs.Viewer Java használatával**, a Maven beállítástól a forgatott oldalak rendereléséig és a gyakori buktatók kezeléséig. Kísérletezzen további funkciókkal, például vízjelezéssel, formátum konverzióval vagy kötegelt feldolgozással, hogy tovább bővítse a dokumentum munkafolyamatát.
 
-Ez a bemutató lefedte, **hogyan kell elforgatni a pdf** oldalakat a GroupDocs.Viewer Java használatával, a környezet beállításától a gyakorlati alkalmazásokig. Kísérletezzen további funkciókkal, például vízjel hozzáadásával vagy a dokumentumok különböző formátumokra konvertálásával.
+**Következő lépések:** Merüljön el a GroupDocs.Viewer további képességeiben, például PDF-ek PNG-re konvertálásában, vízjelek hozzáadásában vagy felhő tárolók integrálásában.
 
-**Következő lépések:** Fedezze fel a GroupDocs.Viewer további funkcióit a dokumentumfeldolgozási képességek bővítéséhez.
-
-## GyIK szekció
-
-### Gyakori kérdések
-1. **Forgatási problémák hibaelhárítása**: Ellenőrizze, hogy az oldal számok és a forgatási paraméterek helyesek.
-2. **Nagy PDF fájlok kezelése**: Hatékonyan dolgozzon nagy dokumentumokkal megfelelő erőforrás-kezeléssel.
-3. **Licencelési követelmények**: Használjon ideiglenes licencet fejlesztéshez; vásároljon teljes licencet a termeléshez.
-4. **Több oldal elforgatása**: Hívja meg a `rotatePage`-t többször különböző oldal számokkal és szögekkel.
-5. **Integráció Java könyvtárakkal**: Zökkenőmentesen integrálja a GroupDocs.Viewer-t nagyobb alkalmazásokba vagy keretrendszerekbe.
+## GyIK szakasz
+- **Forgatási problémák hibaelhárítása** – Ellenőrizze, hogy az oldalszámok és a forgatási paraméterek helyesek.  
+- **Nagy PDF fájlok kezelése** – Dolgozza fel az oldalakat kötegekben, és figyelje a memóriahasználatot.  
+- **Licencelési követelmények** – Használjon ideiglenes licencet fejlesztéshez; vásároljon teljes licencet a termeléshez.  
+- **Több oldal forgatása** – Hívja meg többször a `rotatePage`-t különböző oldalszámokkal és szögekkel.  
+- **Integráció Java könyvtárakkal** – A GroupDocs.Viewer zökkenőmentesen működik a Spring Boot, Jakarta EE és más Java keretrendszerekkel.
 
 ## Gyakran Ismételt Kérdések
 
-**K: Elforgathatom egy PDF összes oldalát egyszerre?**  
-A: Igen. Iteráljon a oldal számokon és hívja meg a `rotatePage(page, Rotation.ON_90_DEGREE)`-t minden oldalra.
+**K: Forgathatok egy PDF összes oldalát egyszerre?**  
+V: Igen. Iteráljon végig az oldalszámokon, és hívja meg a `rotatePage(page, Rotation.ON_90_DEGREE)`-t minden oldalra.
 
-**K: A forgatás hatással van az eredeti PDF fájlra?**  
-A: Nem. A forgatás csak a renderelési folyamat során kerül alkalmazásra; a forrás PDF változatlan marad.
+**K: A forgatás befolyásolja az eredeti PDF fájlt?**  
+V: Nem. A forgatás csak a renderelési folyamat során kerül alkalmazásra; a forrás PDF változatlan marad.
 
 **K: Mi van, ha egy PDF jelszóval védett?**  
-A: Adja meg a jelszót a `Viewer` példány létrehozásakor: `new Viewer(path, password)`.
+V: Adja meg a jelszót a `Viewer` példány létrehozásakor: `new Viewer(path, password)`.
 
 **K: Hogyan hibakeressem a “null pointer” hibát az HtmlViewOptions beállításakor?**  
-A: Győződjön meg róla, hogy a kimeneti könyvtár létezik, és a `pageFilePathFormat` helyesen feloldódik.
+V: Győződjön meg arról, hogy a kimeneti könyvtár létezik, és a `pageFilePathFormat` helyesen feloldódik.
 
-**K: Van mód az oldalak elforgatására más formátumokba (pl. PNG) konvertáláskor?**  
-A: Használja ugyanazt a `rotatePage` konfigurációt a megfelelő nézetbeállításokkal a célformátumhoz.
+**K: Van mód az oldalak forgatására más formátumokba konvertáláskor (pl. PNG)?**  
+V: Igen. Használja ugyanazt a `rotatePage` konfigurációt a megfelelő nézetbeállításokkal a célformátumhoz.
 
-## Erőforrások
-- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)
-- **Purchase**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)
-- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+## Források
+- **Dokumentáció**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API referencia**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Letöltés**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Vásárlás**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)  
+- **Ingyenes próba**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Ideiglenes licenc**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Támogatás**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Utoljára frissítve:** 2026-01-18  
-**Tesztelve:** GroupDocs.Viewer 25.2 for Java  
+**Utoljára frissítve:** 2026-04-04  
+**Tesztelve a következővel:** GroupDocs.Viewer 25.2 for Java  
 **Szerző:** GroupDocs

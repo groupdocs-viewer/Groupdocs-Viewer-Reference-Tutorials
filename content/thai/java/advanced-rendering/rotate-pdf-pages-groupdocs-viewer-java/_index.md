@@ -1,53 +1,52 @@
 ---
-date: '2026-01-18'
-description: เรียนรู้วิธีการหมุนหน้าต่าง PDF ด้วย GroupDocs.Viewer สำหรับ Java บทแนะนำขั้นตอนนี้ครอบคลุมการตั้งค่า
-  Maven การหมุนหน้า (รวมถึงการหมุน PDF 90 องศา) และการแก้ไขปัญหา
+date: '2026-04-04'
+description: เรียนรู้วิธีการหมุนหน้าที่เฉพาะของ PDF ด้วย GroupDocs.Viewer สำหรับ Java
+  คู่มือขั้นตอนต่อขั้นตอนนี้ครอบคลุมการตั้งค่า Maven, การหมุน PDF 90 องศา, และการแก้ไขปัญหา.
 keywords:
-- rotate PDF pages Java
-- GroupDocs.Viewer setup Java
-- programmatically rotate PDF Java
-title: วิธีหมุนหน้ากระดาษ PDF ด้วย GroupDocs.Viewer ใน Java – คู่มือฉบับสมบูรณ์
+- rotate specific pdf pages
+- rotate pdf 90 degrees
+- pdf to html java
+- rotate multiple pdf pages
+title: วิธีหมุนหน้ากระดาษ PDF เฉพาะหน้าโดยใช้ GroupDocs.Viewer สำหรับ Java
 type: docs
 url: /th/java/advanced-rendering/rotate-pdf-pages-groupdocs-viewer-java/
 weight: 1
 ---
 
-# วิธีการหมุนหน้ากระดาษ PDF ด้วย GroupDocs.Viewer ใน Java
+# วิธีหมุนหน้า PDF เฉพาะด้วย GroupDocs.Viewer สำหรับ Java
 
-การหมุนหน้ากระดาษเฉพาะใน PDF สามารถเป็นสิ่งสำคัญสำหรับการจัดแนวเอกสารหรือปรับสไลด์การนำเสนอ **ในคู่มือนี้คุณจะได้เรียนรู้วิธีการหมุน pdf** หน้าโดยใช้โปรแกรมกับ GroupDocs.Viewer ไม่ว่าคุณจะต้องการหมุน pdf 90 องศา, พลิกส่วนทั้งหมด, หรือจัดการหลายหน้าในหนึ่งคำสั่ง
+การหมุนหน้าเฉพาะใน PDF สามารถเป็นสิ่งสำคัญสำหรับการจัดแนวเอกสาร, การแก้ไขภาพสแกน, หรือการปรับสไลด์การนำเสนอ **ในคู่มือนี้คุณจะได้เรียนรู้วิธีการหมุนหน้า pdf เฉพาะโดยใช้โปรแกรมกับ GroupDocs.Viewer** ไม่ว่าคุณจะต้องการหมุน pdf 90 องศา, พลิกส่วนทั้งหมด, หรือจัดการหลายหน้าในหนึ่งการเรียก
 
-![หมุนหน้ากระดาษ PDF เฉพาะด้วย GroupDocs.Viewer สำหรับ Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
+![หมุนหน้า PDF เฉพาะด้วย GroupDocs.Viewer สำหรับ Java](/viewer/advanced-rendering/rotate-specific-pdf-pages-java.png)
 
-**สิ่งที่คุณจะได้เรียนรู้:**
+**สิ่งที่คุณจะได้เรียนรู้**
 - การตั้งค่า GroupDocs.Viewer ในโครงการ Java ของคุณ (รวมถึงการกำหนดค่า Maven GroupDocs Viewer)
-- การหมุนหน้ากระดาษ PDF เฉพาะโดยใช้โปรแกรม (หมุน pdf 90 องศา, 180 องศา, ฯลฯ)
-- การกำหนดค่าหลักสำหรับการใช้งานที่เหมาะสม
-- การแก้ไขปัญหาที่พบบ่อยระหว่างการนำไปใช้
+- การหมุนหน้า PDF เฉพาะโดยใช้โปรแกรม (หมุน pdf 90 องศา, 180 องศา, ฯลฯ)
+- การกำหนดค่าที่สำคัญสำหรับการใช้งานที่เหมาะสม
+- การแก้ไขปัญหาทั่วไประหว่างการนำไปใช้
 
 ## คำตอบอย่างรวดเร็ว
-- **ไลบรารีใดที่สามารถหมุนหน้ากระดาษ PDF ใน Java?** GroupDocs.Viewer for Java.  
-- **ฉันสามารถหมุนหน้าเดียว 90 องศาได้หรือไม่?** ใช่, ใช้ `rotatePage(pageNumber, Rotation.ON_90_DEGREE)`.  
-- **ฉันต้องการไลเซนส์สำหรับการพัฒนาหรือไม่?** มีไลเซนส์ชั่วคราวให้ใช้สำหรับการทดลองฟรี.  
-- **ต้องใช้ Maven หรือไม่?** Maven เป็นวิธีที่แนะนำในการจัดการ dependencies ของ GroupDocs.  
-- **ฉันจะเรนเดอร์หน้าที่หมุนแล้วอย่างไร?** ใช้ `HtmlViewOptions` และเรียก `viewer.view(...)`.
+- **ไลบรารีใดที่สามารถหมุนหน้า PDF ใน Java ได้?** GroupDocs.Viewer for Java.  
+- **ฉันสามารถหมุนหน้าเดียว 90 องศาได้หรือไม่?** Yes, use `rotatePage(pageNumber, Rotation.ON_90_DEGREE)`.  
+- **ฉันต้องการใบอนุญาตสำหรับการพัฒนาหรือไม่?** ใบอนุญาตชั่วคราวพร้อมให้ใช้ทดลองฟรี.  
+- **จำเป็นต้องใช้ Maven หรือไม่?** Maven เป็นวิธีที่แนะนำในการจัดการ dependencies ของ GroupDocs.  
+- **ฉันจะเรนเดอร์หน้าที่หมุนแล้วอย่างไร?** Use `HtmlViewOptions` and call `viewer.view(...)`.
 
 ## ข้อกำหนดเบื้องต้น
 
-### ไลบรารีและ dependencies ที่จำเป็น
-เพื่อเริ่มต้น, ตรวจสอบว่าคุณมี:
-- Java Development Kit (JDK) รุ่น 8 หรือใหม่กว่า ติดตั้งบนเครื่องของคุณ
-- Integrated Development Environment (IDE) เช่น IntelliJ IDEA หรือ Eclipse
-- Maven สำหรับจัดการ dependencies ของโครงการ
+### ไลบรารีและการพึ่งพาที่จำเป็น
+- Java Development Kit (JDK) 8 หรือใหม่กว่า.  
+- IDE เช่น IntelliJ IDEA หรือ Eclipse.  
+- Maven สำหรับการจัดการ dependencies.
 
 ### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-1. **การกำหนดค่า Maven**: เพิ่ม GroupDocs.Viewer ไปยังโครงการ Maven ของคุณโดยใส่ repositories และ dependencies ที่จำเป็นในไฟล์ `pom.xml` ของคุณ.  
-2. **การขอรับไลเซนส์**: รับไลเซนส์ชั่วคราวจาก GroupDocs เพื่อให้คุณสามารถสำรวจคุณสมบัติทั้งหมดโดยไม่มีข้อจำกัดในระหว่างการพัฒนา เยี่ยมชม [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) หรือสมัครขอไลเซนส์ชั่วคราวที่ [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).
+1. **Maven Configuration** – เพิ่ม GroupDocs.Viewer ไปยัง `pom.xml` ของคุณ.  
+2. **License Acquisition** – รับใบอนุญาตชั่วคราวจาก GroupDocs. เยี่ยมชม [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) หรือสมัครใบอนุญาตชั่วคราวที่ [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).
 
 ## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 
-เพื่อรวม GroupDocs.Viewer เข้าในโครงการ Java ของคุณโดยใช้ Maven, อัปเดตไฟล์ `pom.xml` ของคุณ:
+เพื่อรวม GroupDocs.Viewer เข้าในโครงการ Java ของคุณโดยใช้ Maven, อัปเดต `pom.xml` ของคุณ:
 
-**การกำหนดค่า Maven**  
 ```xml
 <repositories>
    <repository>
@@ -65,9 +64,7 @@ weight: 1
 </dependencies>
 ```
 
-### การเริ่มต้นและตั้งค่าเบื้องต้น
-
-เริ่มต้น GroupDocs.Viewer โดยระบุไดเรกทอรีเอกสารและเส้นทางเอาต์พุตของคุณ:  
+### การเริ่มต้นและการตั้งค่าพื้นฐาน
 ```java
 Path YOUR_DOCUMENT_DIRECTORY = Path.of("YOUR_DOCUMENT_DIRECTORY");
 Path YOUR_OUTPUT_DIRECTORY = Path.of("YOUR_OUTPUT_DIRECTORY");
@@ -78,15 +75,11 @@ Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-## คู่มือการนำไปใช้
+## วิธีหมุนหน้า PDF เฉพาะด้วย GroupDocs.Viewer
+### ภาพรวม
+การหมุนหน้า PDF เฉพาะให้คุณควบคุมการนำเสนอเอกสารอย่างละเอียดโดยไม่ต้องเปลี่ยนแปลงไฟล์ต้นฉบับ.
 
-### การหมุนหน้าที่เฉพาะด้วย GroupDocs.Viewer
-
-**ภาพรวม:** หมุนหน้ากระดาษ PDF เฉพาะเพื่อการนำเสนอเอกสารที่ดียิ่งขึ้น.
-
-#### ขั้นตอนที่ 1: กำหนดค่าการหมุนหน้า
-
-หมุนหน้าที่หนึ่ง 90 องศาและหน้าที่สอง 180 องศาโดยใช้ `HtmlViewOptions`:  
+### ขั้นตอน 1: กำหนดค่าการหมุนหน้า
 ```java
 // Rotate the first page by 90 degrees clockwise.
 viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
@@ -95,9 +88,7 @@ viewOptions.rotatePage(1, Rotation.ON_90_DEGREE);
 viewOptions.rotatePage(2, Rotation.ON_180_DEGREE);
 ```
 
-#### ขั้นตอนที่ 2: เริ่มต้น Viewer และเรนเดอร์
-
-สร้างอินสแตนซ์ `Viewer` ด้วยเอกสารของคุณและเรนเดอร์หน้าที่ระบุ:  
+### ขั้นตอน 2: เริ่มต้น Viewer และเรนเดอร์
 ```java
 Viewer viewer = new Viewer(YOUR_DOCUMENT_DIRECTORY.resolve("SampleDocument.pdf"));
 
@@ -108,75 +99,78 @@ viewer.view(viewOptions, 1, 2);
 viewer.close();
 ```
 
-### พารามิเตอร์และการกำหนดค่า
-- **Rotation**: ใช้ `rotatePage` พร้อมหมายเลขหน้าและมุมการหมุน. การหมุนที่มีให้ใช้: `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.  
-- **HtmlViewOptions**: กำหนดค่าการแปลงหน้ากระดาษ PDF เป็น HTML, เพื่อให้แน่ใจว่า resources ที่ฝังอยู่ถูกรวม.  
-- **pdf to html java**: คลาส `HtmlViewOptions` จัดการการแปลง PDF‑to‑HTML พร้อมคงรูปแบบ.
+#### พารามิเตอร์และการกำหนดค่า
+- **Rotation** – `rotatePage(pageNumber, Rotation.*)` โดยตัวเลือกการหมุนคือ `ON_90_DEGREE`, `ON_180_DEGREE`, `ON_270_DEGREE`.  
+- **HtmlViewOptions** – จัดการการแปลง PDF‑to‑HTML พร้อมรักษาเลย์เอาต์และทรัพยากรที่ฝังอยู่.  
+- **pdf to html java** – คลาสนี้เป็นส่วนหนึ่งของ API เดียวกันและรับประกันการแสดงผลที่ตรงตามภาพจริง.
 
-#### เคล็ดลับการแก้ไขปัญหา (troubleshoot pdf rotation)
-- ตรวจสอบเส้นทางไปยังเอกสารและไดเรกทอรีเอาต์พุตของคุณ.  
-- ตรวจสอบว่ามี dependencies ที่หายไปหรือเวอร์ชันไลบรารีที่ไม่ถูกต้องหรือไม่.  
-- ตรวจสอบว่าไลเซนส์ถูกนำไปใช้อย่างถูกต้องหากมีการจำกัดฟีเจอร์ในช่วงทดลอง.  
-- หากคุณพบการใช้หน่วยความจำสูง, พิจารณาเรนเดอร์หน้าในชุดย่อย (หมุนหลายหน้ากระดาษ pdf อย่างค่อยเป็นค่อยไป).
+## ทำไมต้องหมุนหน้า PDF เฉพาะ?
+- **Document Alignment** – ปรับทิศทางที่ถูกต้องของสัญญาหรือใบแจ้งหนี้ที่สแกน.  
+- **Presentation Tweaks** – ปรับสไลด์ที่ส่งออกเป็น PDF.  
+- **Archival Consistency** – ทำให้การจัดหน้าเป็นมาตรฐานระหว่างการดิจิไทซ์เป็นจำนวนมาก.
+
+## ปัญหาทั่วไปและวิธีแก้ (troubleshoot pdf rotation)
+
+- **Incorrect Paths** – ตรวจสอบว่า `YOUR_DOCUMENT_DIRECTORY` และ `YOUR_OUTPUT_DIRECTORY` มีอยู่และเข้าถึงได้.  
+- **Missing Dependencies** – ตรวจสอบให้แน่ใจว่า Maven coordinates ตรงกับเวอร์ชันล่าสุดของ GroupDocs.Viewer.  
+- **License Restrictions** – ใช้ใบอนุญาตชั่วคราวอย่างถูกต้อง; หากไม่เช่นนั้นบางฟีเจอร์อาจถูกปิดใช้งาน.  
+- **Memory Spikes** – เรนเดอร์ PDF ขนาดใหญ่เป็นชุดย่อยหรือเพิ่มขนาด heap ของ JVM.
 
 ## การประยุกต์ใช้งานจริง
 
 ### กรณีการใช้งานจริง
-1. **Document Alignment** – หมุนเอกสารสแกนเพื่อให้มีการจัดแนวดิจิทัลที่ถูกต้อง.  
-2. **Presentation Adjustments** – ปรับสไลด์การนำเสนอใน PDF ก่อนแชร์.  
+1. **Document Alignment** – หมุนเอกสารที่สแกนเพื่อให้ทิศทางดิจิทัลถูกต้อง.  
+2. **Presentation Adjustments** – แก้ไขสไลด์การนำเสนอใน PDF ก่อนแชร์.  
 3. **Archival Workflows** – ปรับทิศทางของเอกสารประวัติศาสตร์โดยอัตโนมัติระหว่างการดิจิไทซ์.
 
 ### ความเป็นไปได้ในการบูรณาการ
-รวม GroupDocs.Viewer กับระบบจัดการเอกสารที่ใช้ Java, แพลตฟอร์มเนื้อหา, หรือโซลูชันองค์กรแบบกำหนดเองที่ต้องการความสามารถในการดูแบบไดนามิก.
+รวม GroupDocs.Viewer กับระบบจัดการเนื้อหาแบบ Java, พอร์ทัลองค์กร, หรือ API ที่กำหนดเองที่ต้องการการดู PDF แบบเรียลไทม์.
 
-## การพิจารณาด้านประสิทธิภาพ
-- **Resource Management**: ปิดอินสแตนซ์ `Viewer` เพื่อปล่อยทรัพยากร.  
-- **Java Memory Management**: ตรวจสอบการใช้หน่วยความจำเมื่อเรนเดอร์เอกสารขนาดใหญ่และใช้โครงสร้างข้อมูลที่มีประสิทธิภาพ.  
-- **Best Practices**: ใช้ caching สำหรับเอกสารหรือหน้าที่เข้าถึงบ่อย.
+## พิจารณาด้านประสิทธิภาพ
+- **Resource Management** – ปิดอินสแตนซ์ `Viewer` เสมอเพื่อปล่อยไฟล์แฮนด์เลอร์และหน่วยความจำ.  
+- **Java Memory Management** – ตรวจสอบการใช้ heap เมื่อประมวลผล PDF ขนาดใหญ่; พิจารณาการสตรีมหน้าแทนการโหลดไฟล์ทั้งหมด.  
+- **Best Practices** – แคช HTML ที่เรนเดอร์สำหรับเอกสารที่เข้าถึงบ่อยเพื่อ ลดเวลาในการประมวลผล.
 
 ## สรุป
+บทเรียนนี้ครอบคลุม **วิธีการหมุนหน้า pdf เฉพาะโดยใช้ GroupDocs.Viewer ใน Java** ตั้งแต่การตั้งค่า Maven ไปจนถึงการเรนเดอร์หน้าที่หมุนและการจัดการกับปัญหาทั่วไป ทดลองใช้ฟีเจอร์เพิ่มเติมเช่นการใส่น้ำลายน้ำ, การแปลงรูปแบบ, หรือการประมวลผลเป็นชุดเพื่อขยายการทำงานของเอกสารของคุณ.
 
-บทแนะนำนี้ครอบคลุม **วิธีการหมุน pdf** หน้าโดยใช้ GroupDocs.Viewer ใน Java, ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการประยุกต์ใช้งานจริง. ทดลองฟังก์ชันเพิ่มเติมเช่นการใส่ลายน้ำหรือการแปลงเอกสารเป็นรูปแบบอื่น.
-
-**ขั้นตอนต่อไป:** สำรวจคุณสมบัติเพิ่มเติมของ GroupDocs.Viewer เพื่อเพิ่มศักยภาพการประมวลผลเอกสารของคุณ.
+**ขั้นตอนต่อไป:** สำรวจความสามารถอื่นของ GroupDocs.Viewer เช่นการแปลง PDF เป็น PNG, การเพิ่มลายน้ำ, หรือการบูรณาการกับผู้ให้บริการคลาวด์สตอเรจ.
 
 ## ส่วนคำถามที่พบบ่อย
-
-### คำถามทั่วไป
-1. **Troubleshooting Rotation Issues**: ตรวจสอบหมายเลขหน้าและพารามิเตอร์การหมุนว่าถูกต้องหรือไม่.  
-2. **Handling Large PDF Files**: ประมวลผลเอกสารขนาดใหญ่อย่างมีประสิทธิภาพด้วยการจัดการทรัพยากรที่เหมาะสม.  
-3. **Licensing Requirements**: ใช้ไลเซนส์ชั่วคราวสำหรับการพัฒนา; ซื้อไลเซนส์เต็มสำหรับการผลิต.  
-4. **Rotating Multiple Pages**: เรียก `rotatePage` หลายครั้งพร้อมหมายเลขหน้าและมุมที่ต่างกัน.  
-5. **Integration with Java Libraries**: บูรณาการ GroupDocs.Viewer อย่างราบรื่นในแอปพลิเคชันหรือเฟรมเวิร์กที่ใหญ่ขึ้น.
+- **Troubleshooting Rotation Issues** – ตรวจสอบหมายเลขหน้าและพารามิเตอร์การหมุนว่าถูกต้อง.  
+- **Handling Large PDF Files** – ประมวลผลหน้าเป็นชุดและตรวจสอบการใช้หน่วยความจำ.  
+- **Licensing Requirements** – ใช้ใบอนุญาตชั่วคราวสำหรับการพัฒนา; ซื้อใบอนุญาตเต็มสำหรับการผลิต.  
+- **Rotating Multiple Pages** – เรียก `rotatePage` ซ้ำหลายครั้งพร้อมหมายเลขหน้าและมุมที่ต่างกัน.  
+- **Integration with Java Libraries** – GroupDocs.Viewer ทำงานร่วมกับ Spring Boot, Jakarta EE, และเฟรมเวิร์ก Java อื่น ๆ อย่างราบรื่น.
 
 ## คำถามที่พบบ่อย
 
 **Q: ฉันสามารถหมุนทุกหน้าของ PDF พร้อมกันได้หรือไม่?**  
-A: ได้. วนลูปผ่านหมายเลขหน้าและเรียก `rotatePage(page, Rotation.ON_90_DEGREE)` สำหรับแต่ละหน้า.
+A: ใช่. วนลูปผ่านหมายเลขหน้าและเรียก `rotatePage(page, Rotation.ON_90_DEGREE)` สำหรับแต่ละหน้า.
 
-**Q: การหมุนมีผลต่อไฟล์ PDF ต้นฉบับหรือไม่?**  
-A: ไม่. การหมุนจะถูกนำไปใช้เฉพาะในกระบวนการเรนเดอร์; PDF ต้นฉบับยังคงไม่เปลี่ยนแปลง.
+**Q: การหมุนส่งผลต่อไฟล์ PDF ต้นฉบับหรือไม่?**  
+A: ไม่. การหมุนจะถูกนำไปใช้เฉพาะระหว่างกระบวนการเรนเดอร์; PDF ต้นฉบับจะไม่ถูกเปลี่ยนแปลง.
 
-**Q: ถ้า PDF ถูกป้องกันด้วยรหัสผ่านจะทำอย่างไร?**  
-A: ให้รหัสผ่านเมื่อสร้างอินสแตนซ์ `Viewer`: `new Viewer(path, password)`.
+**Q: ถ้า PDF มีการป้องกันด้วยรหัสผ่านจะทำอย่างไร?**  
+A: ให้ใส่รหัสผ่านเมื่อสร้างอินสแตนซ์ `Viewer`: `new Viewer(path, password)`.
 
-**Q: ฉันจะดีบักข้อผิดพลาด “null pointer” เมื่อกำหนดค่า HtmlViewOptions อย่างไร?**  
-A: ตรวจสอบว่าไดเรกทอรีเอาต์พุตมีอยู่และ `pageFilePathFormat` แก้ไขได้อย่างถูกต้อง.
+**Q: จะดีบักข้อผิดพลาด “null pointer” เมื่อกำหนดค่า HtmlViewOptions อย่างไร?**  
+A: ตรวจสอบให้แน่ใจว่าไดเรกทอรีเอาต์พุตมีอยู่และว่า `pageFilePathFormat` แก้ไขได้อย่างถูกต้อง.
 
 **Q: มีวิธีหมุนหน้าเมื่อแปลงเป็นรูปแบบอื่น (เช่น PNG) หรือไม่?**  
-A: ใช้การกำหนดค่า `rotatePage` เดียวกันพร้อมตัวเลือกการดูที่เหมาะสมสำหรับรูปแบบเป้าหมาย.
+A: มี. ใช้การกำหนดค่า `rotatePage` เดียวกันพร้อมตัวเลือกการมองที่เหมาะสมสำหรับรูปแบบเป้าหมาย.
 
 ## แหล่งข้อมูล
-- **Documentation**: [เอกสาร GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **API Reference**: [อ้างอิง API ของ GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [หน้าดาวน์โหลด GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Purchase**: [ตัวเลือกการซื้อ GroupDocs](https://purchase.groupdocs.com/buy)
-- **Free Trial**: [ทดลองใช้ GroupDocs ฟรี](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License**: [ขอไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [ฟอรั่มสนับสนุน GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs Viewer Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Download**: [GroupDocs Download Page](https://releases.groupdocs.com/viewer/java/)  
+- **Purchase**: [GroupDocs Purchase Options](https://purchase.groupdocs.com/buy)  
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Temporary License**: [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**อัปเดตล่าสุด:** 2026-01-18  
-**ทดสอบด้วย:** GroupDocs.Viewer 25.2 for Java  
+**อัปเดตล่าสุด:** 2026-04-04  
+**ทดสอบกับ:** GroupDocs.Viewer 25.2 for Java  
 **ผู้เขียน:** GroupDocs
