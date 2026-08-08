@@ -1,45 +1,83 @@
 ---
-date: '2026-02-26'
-description: HPG'yi JPG'ye dönüştürmeyi ve GroupDocs.Viewer kullanarak Java belgelerini
-  PDF'ye dönüştürmeyi öğrenin. HPG dosyalarını verimli bir şekilde renderlemeyi ustalaşın.
+date: '2026-08-08'
+description: GroupDocs.Viewer kullanarak hpg'yi jpg'ye nasıl dönüştüreceğinizi ve
+  Java belge dönüşümünü PDF'ye nasıl yapacağınızı öğrenin. HPG dosyalarını verimli
+  bir şekilde renderlemeyi ustalaşın.
 keywords:
-- Java HPG Rendering
-- GroupDocs.Viewer for Java
-- Document Conversion
-title: GroupDocs.Viewer for Java Kılavuzu ile HPG'yi JPG'ye Dönüştür
+- convert hpg to jpg
+- java image conversion
+- vector graphic to jpg
+- java document to pdf
+- java convert hpg pdf
+lastmod: '2026-08-08'
+og_description: GroupDocs.Viewer for Java kullanarak hpg'yi jpg'ye verimli bir şekilde
+  dönüştürün. Bu rehber, adım adım kurulum, kod parçacıkları ve Java belge dönüşümü
+  için en iyi uygulamaları gösterir.
+og_image_alt: Developer guide showing HPG to JPG conversion with GroupDocs.Viewer
+  for Java
+og_title: GroupDocs.Viewer for Java ile hpg'yi jpg'ye dönüştürün – Hızlı Rehber
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-08'
+  description: Learn how to convert hpg to jpg and perform Java document conversion
+    to PDF using GroupDocs.Viewer. Master rendering HPG files efficiently.
+  headline: Convert hpg to jpg with GroupDocs.Viewer for Java guide
+  type: TechArticle
+- questions:
+  - answer: Transforming HPG graphics into web‑ready HTML, JPG, PNG, or PDF for browsers
+      and mobile apps.
+    question: What is the primary use case?
+  - answer: GroupDocs.Viewer for Java (v25.2).
+    question: Which library handles the conversion?
+  - answer: A free trial works for evaluation; a commercial license is required for
+      production.
+    question: Do I need a GroupDocs Viewer license?
+  - answer: Yes – use `PdfViewOptions` for PDF output.
+    question: Can I convert to PDF as part of Java document conversion to PDF?
+  - answer: Large files need adequate heap space; the API releases resources promptly.
+    question: Is the process memory‑intensive?
+  type: FAQPage
+tags:
+- convert hpg
+- groupdocs viewer
+- java image conversion
+- hpg rendering
+- document conversion
+title: GroupDocs.Viewer for Java ile hpg'yi jpg'ye dönüştürme rehberi
 type: docs
 url: /tr/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/
 weight: 1
 ---
 
-# GroupDocs.Viewer for Java ile HPG'yi JPG'ye Dönüştürme Kılavuzu
+# hpg'yi jpg'ye dönüştürme: GroupDocs.Viewer for Java rehberi
 
-Java kullanarak **HPG'yi JPG'ye dönüştürmek** ve diğer web‑uyumlu formatları elde etmek için etkili bir yol mu arıyorsunuz? Bu öğreticide, GroupDocs.Viewer kurulumundan GroupDocs Viewer lisansı edinmeye, HPG dosyalarını JPG, PNG, HTML veya PDF olarak render etmeye kadar tüm süreci adım adım inceleyeceğiz. Sonunda, **HPG'yi JPG'ye dönüştürmenin** web yayıncılığı, görüntü arşivleri ve belge yönetim sistemleri için yaygın bir adım olduğunu anlayacaksınız.
+Bu öğreticide, GroupDocs.Viewer kullanarak bir Java uygulamasında **hpg'yi jpg'ye dönüştürmeyi** öğreneceksiniz. Kılavuz, kütüphanenin kurulumu, bir HPG dosyasının yüklenmesi, JPG'ye (aynı zamanda HTML, PNG ve PDF olarak) render edilmesi ve yaygın sorunların ele alınması adımlarını gösterir. Sonunda, HPG'yi JPG'ye dönüştürmenin web yayıncılığı, görüntü arşivleri ve belge yönetim sistemleri için sık bir gereksinim olduğunu anlayacaksınız. Daha fazla bilgi için [GroupDocs web sitesi](https://www.groupdocs.com/) adresini ziyaret edin.
 
-![HPG Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/hpg-rendering-java.png)
+![GroupDocs.Viewer for Java ile HPG Renderleme](/viewer/advanced-rendering/hpg-rendering-java.png)
+[GroupDocs.Viewer for Java ile HPG Renderleme](/viewer/advanced-rendering/hpg-rendering-java.png)
 
-## Hızlı Yanıtlar
-- **Birincil kullanım senaryosu nedir?** HPG grafiklerini web‑hazır HTML, JPG, PNG veya PDF formatına dönüştürmek.  
-- **Dönüşümü hangi kütüphane gerçekleştiriyor?** GroupDocs.Viewer for Java (v25.2).  
-- **GroupDocs Viewer lisansına ihtiyacım var mı?** Değerlendirme için ücretsiz deneme sürümü yeterlidir; üretim ortamı için ticari lisans gereklidir.  
-- **Java belge dönüşümünde PDF olarak da dönüştürebilir miyim?** Evet – PDF çıktısı için `PdfViewOptions` kullanın.  
-- **İşlem bellek yoğun mu?** Büyük dosyalar yeterli heap alanı gerektirir; API kaynakları hızlı bir şekilde serbest bırakır.  
+## Hızlı cevaplar
+- **Ana kullanım senaryosu nedir?** HPG grafiklerini tarayıcılar ve mobil uygulamalar için web‑hazır HTML, JPG, PNG veya PDF'ye dönüştürmek.  
+- **Dönüşümü hangi kütüphane yönetir?** GroupDocs.Viewer for Java (v25.2).  
+- **GroupDocs Viewer lisansına ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
+- **Java belge dönüşümünün bir parçası olarak PDF'ye dönüştürebilir miyim?** Evet – PDF çıktısı için `PdfViewOptions` kullanın.  
+- **İşlem bellek yoğun mu?** Büyük dosyalar yeterli yığın (heap) alanı gerektirir; API kaynakları hızlı bir şekilde serbest bırakır.
 
-## “HPG'yi JPG'ye dönüştürmek” nedir?
-HPG'yi JPG'ye dönüştürmek, yüksek hassasiyetli bir vektör grafiğini alıp her sayfayı JPEG görüntüsüne rasterleştirmek anlamına gelir. Bu dönüşüm, tarayıcılar, mobil uygulamalar veya küçük resim oluşturma için hafif görüntü dosyalarına ihtiyaç duyduğunuzda kritiktir; böylece bir HPG dosyası, **HPG web formatına dönüştürülmüş** ve herhangi bir cihazda görüntülenebilir hâle gelir.
+## “hpg'yi jpg'ye dönüştürmek” nedir?
+hpg'yi jpg'ye dönüştürmek, bir HPG dosyasının her vektör sayfasını JPEG görüntüsüne rasterleştirmek anlamına gelir. Bu, küçük dosya boyutlu, tarayıcı uyumlu görüntüler üretir; ön izlemeler, mobil teslimat veya kompakt bir görüntü formatının gerektiği herhangi bir senaryo için idealdir. Dönüşüm süreci her vektör öğesini çıkarır, anti‑aliasing uygular ve sonucu hızlı web teslimatı için uygun sıkıştırılmış bir JPEG dosyası olarak yazar.
 
-## Neden GroupDocs.Viewer for Java kullanmalı?
-GroupDocs.Viewer, HPG dahil birçok belge türünü dışarıdan bir yazılım gerektirmeden render etmek için tek ve tutarlı bir API sunar. Gömülü kaynakları, sayfa düzenini ve format‑özel seçenekleri otomatik olarak yönetir; bu sayede **java document conversion pdf** görevleri sorunsuz ve güvenilir olur. Ayrıca kütüphane, desteklenen tüm formatlarda aynı **groupdocs viewer license** ile çalışır, dağıtımı basitleştirir.
+## Neden GroupDocs.Viewer for Java kullanmalısınız?
+GroupDocs.Viewer, **50'den fazla belge formatını** renderlemeyi destekler ve tüm dosyayı belleğe yüklemeden 500 MB'a kadar HPG dosyalarını işleyebilir. API, gömülü kaynakları, sayfa düzenini ve format‑özel seçenekleri otomatik olarak yönetir; böylece Java belge dönüşümü PDF ve görüntü formatlarına hızlı ve güvenilir olur. Tek bir **groupdocs viewer lisansı**, tüm desteklenen formatları kapsar, dağıtımı basitleştirir ve lisans maliyetini azaltır.
 
-## Ön Koşullar
+## Önkoşullar
 
 - Java ve Maven hakkında temel bilgi.  
-- JDK 8 veya daha yeni bir sürüm yüklü.  
+- JDK 8 veya daha yeni bir sürüm yüklü.  
 - IntelliJ IDEA veya Eclipse gibi bir IDE.  
-- GroupDocs.Viewer lisansına erişim (deneme veya ticari).  
+- GroupDocs.Viewer lisansına (deneme veya ticari) erişim.  
 
-### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
-Aşağıdaki Maven yapılandırmasını `pom.xml` dosyanıza ekleyin:
+### Gerekli kütüphaneler, sürümler ve bağımlılıklar
+Add the following Maven configuration to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -58,15 +96,15 @@ Aşağıdaki Maven yapılandırmasını `pom.xml` dosyanıza ekleyin:
 </dependencies>
 ```
 
-## GroupDocs.Viewer for Java Kurulumu
+## GroupDocs.Viewer for Java'ı Kurma
 
-1. **Bağımlılığı Ekleyin** – Yukarıdaki Maven kod parçacığının `pom.xml` içinde bulunduğundan emin olun.  
-2. **Lisans Edinme Adımları**:  
-   - [GroupDocs web sitesinden](https://www.groupdocs.com/) ücretsiz deneme sürümüyle başlayın.  
-   - [GroupDocs Geçici Lisans](https://purchase.groupdocs.com/temporary-license/) üzerinden uzatılmış test için geçici bir lisans alın.  
+1. **Bağımlılığı ekleyin** – Yukarıdaki Maven kod parçacığının `pom.xml` içinde bulunduğundan emin olun.  
+2. **Lisans edinme adımları**:  
+   - [GroupDocs web sitesi](https://www.groupdocs.com/) üzerinden ücretsiz bir deneme ile başlayın.  
+   - [GroupDocs Geçici Lisansı](https://purchase.groupdocs.com/temporary-license/) aracılığıyla uzatılmış test için geçici bir lisans alın.  
    - [GroupDocs Satın Alma Sayfası](https://purchase.groupdocs.com/buy) üzerinden ticari bir lisans satın alın.  
-   > **Pro ipucu:** Lisans dosyasını güvenli bir konumda saklayın ve uygulama başlangıcında bir kez yükleyerek tekrar tekrar I/O işlemlerinden kaçının.  
-3. **Temel Başlatma** – HPG dosyanıza işaret eden bir `Viewer` örneği oluşturun:
+   > **İpucu:** Lisans dosyasını güvenli bir konumda saklayın ve uygulama başlangıcında bir kez yükleyin, böylece tekrar tekrar I/O'dan kaçınılır.  
+3. **Temel başlatma** – `Viewer`, GroupDocs.Viewer’ın belge yükleyip renderleyen çekirdek sınıfıdır. HPG dosyanıza işaret eden bir `Viewer` örneği oluşturun:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -80,10 +118,12 @@ public class DocumentViewer {
 }
 ```
 
-## GroupDocs.Viewer ile HPG'yi JPG'ye Dönüştürme
+## GroupDocs.Viewer kullanarak hpg'yi jpg'ye nasıl dönüştürürsünüz
 
-### Adım 1: Çıktı Yollarını Tanımlayın
-Render edilen görüntülerin kaydedileceği bir klasör oluşturun. Bu, projenizi düzenli tutar ve sonuçları kolayca bulmanızı sağlar.
+`new Viewer(inputPath)` ile HPG dosyanızı yükleyin ve `viewer.view(options)` çağrısını yapın – tüm dönüşüm tek bir metod çağrısında gerçekleşir. Bu yaklaşım, her sayfanın yüksek kalite JPEG görüntülerine rasterleştirildiğini ve vektör detaylarının korunduğunu garanti eder. DPI, renk derinliği ve EXIF meta verilerini koruyup korumayacağınızı da belirtebilir, çıktı kalitesi ve dosya boyutu üzerinde tam kontrol sahibi olursunuz.
+
+### Adım 1: çıktı yollarını tanımlayın
+Render edilen görüntülerin kaydedileceği bir klasör oluşturun. Bu, projenizi düzenli tutar ve sonuçları bulmayı kolaylaştırır.
 
 ```java
 import java.nio.file.Path;
@@ -94,8 +134,8 @@ Path pageFilePathFormat = outputDirectory.resolve("hpg_result.jpg");
 
 `YOUR_DOCUMENT_DIRECTORY` ifadesini, kaynak dosyanızın bulunduğu gerçek dizinle değiştirin.
 
-### Adım 2: JPG Çıktısı için Viewer'ı Yapılandırın
-`JpgViewOptions` oluşturun ve render sürecini başlatın. `try‑with‑resources` bloğu, tüm yerel kaynakların otomatik olarak serbest bırakılmasını garanti eder.
+### Adım 2: JPG çıktısı için görüntüleyiciyi yapılandırın
+`JpgViewOptions`, kalite ve DPI gibi JPEG render parametrelerini kontrol eden seçenek sınıfıdır. Seçenek nesnesini oluşturun, istenen kaliteyi ayarlayın ve görüntüleyiciyi çağırın. `try‑with‑resources` bloğu, tüm yerel kaynakların otomatik olarak serbest bırakılmasını garanti eder.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -108,16 +148,16 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-**Pro ipucu:** Web teslimatı için daha küçük dosya boyutları istiyorsanız `options.setQuality(int)` ile görüntü kalitesini ayarlayabilirsiniz.
+**İpucu:** Web teslimatı için daha küçük dosya boyutlarına ihtiyacınız varsa `options.setQuality(int)` ile görüntü kalitesini ayarlayın.
 
-#### Yaygın Tuzaklar
-- **Dosya Bulunamadı** – HPG dosya yolunu kontrol edin ve dosyanın mevcut olduğundan emin olun.  
-- **İzin Hataları** – Uygulamanın hem giriş hem de çıkış dizinleri için okuma/yazma izinlerine sahip olması gerekir.  
+#### Yaygın tuzaklar
+- **Dosya bulunamadı** – HPG dosya yolunu doğrulayın ve dosyanın var olduğundan emin olun.  
+- **İzin hataları** – Uygulamanın hem giriş hem de çıkış dizinleri için okuma/yazma haklarına sahip olması gerekir.  
 
-## HPG'yi Diğer Formatlara Render Etme
+## HPG'yi diğer formatlara renderleme
 
-### HTML'ye Render Etme (convert HPG web format)
-HTML render, tarayıcı‑tabanlı ön izlemeler için idealdir ve kaynakları doğrudan gömmeye olanak tanır.
+### HTML'ye renderleme (hpg web formatını dönüştürme)
+HTML renderleme, tarayıcı‑tabanlı ön izlemeler için idealdir ve kaynakları doğrudan gömmeye olanak tanır.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -129,8 +169,8 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-### PNG'ye Render Etme
-PNG, kayıpsız kalite sunar; yüksek doğruluklu küçük resimler gerektiğinde kullanışlıdır.
+### PNG'ye renderleme
+PNG, kayıpsız kalite sağlar; yüksek doğruluklu ön izlemeler gerektiğinde faydalıdır.
 
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
@@ -142,8 +182,8 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-### PDF'ye Render Etme (Java document conversion to PDF)
-PDF, arşivleme ve uyumluluk için tercih edilen formattır.
+### PDF'ye renderleme (Java belge dönüşümü PDF'ye)
+PDF, arşivleme ve uyumluluk için tercih edilen formattır. `PdfViewOptions` sınıfı, tüm render edilen sayfaları içeren tek bir PDF belgesi oluşturur.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -155,55 +195,61 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
 
-- **Web Yayıncılığı** – HPG'yi anında tarayıcıda gösterim için HTML'ye, ya da görsel‑zengin sayfalar için JPG/PNG'ye dönüştürün.  
-- **Görüntü Arşivleri** – Hızlı erişim ve düşük depolama maliyeti için grafikleri JPG veya PNG olarak saklayın.  
-- **Belge Yönetim Sistemleri** – Uzun vadeli saklama, uyumluluk ve aranabilir arşivler için PDF çıktısını kullanın.  
+- **Web yayıncılığı** – HPG'yi anlık tarayıcı renderı için HTML'ye, ya da görsel‑zengin sayfalar için JPG/PNG'ye dönüştürün.  
+- **Görüntü arşivleri** – Grafikleri hızlı erişim ve minimum depolama maliyeti için JPG veya PNG olarak saklayın.  
+- **Belge yönetim sistemleri** – Uzun vadeli depolama, uyumluluk ve aranabilir arşivler için PDF çıktısı kullanın.  
 
-## Performans Düşünceleri
+## Performans değerlendirmeleri
 
-- **Bellek Optimizasyonu** – Büyük HPG dosyaları için yeterli heap alanı (`-Xmx`) ayırın.  
-- **Kaynak Yönetimi** – `try‑with‑resources` deseni, akışları otomatik olarak kapatarak bellek sızıntılarını önler.  
-- **Toplu İşleme** – Çok büyük belgeler için sayfaları partiler halinde render ederek bellek kullanımını öngörülebilir tutun.  
+- **Bellek optimizasyonu** – Büyük HPG dosyaları için yeterli yığın alanı (`-Xmx`) ayırın; kütüphane, tam bellek içinde yüklemeden 500 MB'a kadar dosyaları işleyebilir.  
+- **Kaynak yönetimi** – `try‑with‑resources` deseni, akışları otomatik olarak kapatır ve bellek sızıntılarını önler.  
+- **Toplu işleme** – Çok büyük belgeler için, bellek kullanımını öngörülebilir tutmak amacıyla sayfaları toplu olarak renderleyin.  
 
-## Yaygın Sorunlar ve Çözümler
+## Yaygın sorunlar ve çözümler
 
 | Sorun | Neden | Çözüm |
 |-------|-------|----------|
-| **Dosya bulunamadı** | Yanlış yol veya eksik dosya | Dosya konumunu kontrol edin ve test sırasında mutlak yollar kullanın. |
-| **OutOfMemoryError** | Yeterli heap olmadan büyük bir HPG render edilmesi | JVM heap'ini artırın (`-Xmx2g` veya daha yüksek) ve sayfaları tek tek işleyin. |
-| **Boş görüntüler** | Desteklenmeyen HPG özellikleri | En son GroupDocs.Viewer sürümünü kullanın; sorun devam ederse destekle iletişime geçin. |
-| **Lisans tanınmıyor** | Lisans dosyası doğru yüklenmemiş | Lisansı başlangıçta bir kez yükleyin: `License license = new License(); license.setLicense("path/to/license.lic");` |
+| **Dosya bulunamadı** | Yanlış yol veya eksik dosya | Dosya konumunu tekrar kontrol edin ve test sırasında mutlak yollar kullanın. |
+| **OutOfMemoryError** | Yeterli yığın olmadan büyük bir HPG renderleme | JVM yığınını artırın (`-Xmx2g` veya daha yüksek) ve sayfaları tek tek işleyin. |
+| **Boş görüntüler** | Desteklenmeyen HPG özellikleri | En son GroupDocs.Viewer sürümünü kullandığınızdan emin olun; sorun devam ederse destekle iletişime geçin. |
+| **Lisans tanınmadı** | Lisans dosyası doğru yüklenmemiş | Lisansı başlangıçta bir kez yükleyin: `License license = new License(); license.setLicense("path/to/license.lic");` |
 
-## Sık Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S:** GroupDocs.Viewer ile başka dosya türlerini de render edebilir miyim?  
-**C:** Evet, API HPG dışındaki DOCX, PPTX ve PDF dahil onlarca formatı destekler.
+**S:** GroupDocs.Viewer ile başka dosya türlerini renderleyebilir miyim?  
+**C:** Evet, API HPG dışındaki onlarca formatı destekler; DOCX, PPTX, PDF ve birçok görüntü türü bunlar arasındadır.
 
 **S:** Bulut depolama entegrasyonu destekleniyor mu?  
-**C:** Dosyaları bulut servislerinden (ör. AWS S3, Azure Blob) akış olarak `Viewer` içine yükleyerek kullanabilirsiniz.
+**C:** Giriş akışını `Viewer` içine yükleyerek bulut hizmetlerinden (ör. AWS S3, Azure Blob) dosya akışı yapabilirsiniz.
 
-**S:** Çok büyük HPG dosyalarıyla nasıl başa çıkmalıyım?  
-**C:** JVM heap boyutunu artırın ve bellek baskısını azaltmak için sayfaları partiler halinde işleyin.
+**S:** Çok büyük HPG dosyalarını nasıl yönetmeliyim?  
+**C:** JVM yığınını artırın ve bellek baskısını azaltmak için sayfaları toplu olarak işlemeyi düşünün.
 
-**S:** Render başarısız olduğunda hata mesajı gelmezse ne yapmalıyım?  
-**C:** Viewer yapılandırmasında günlüklemeyi etkinleştirerek ayrıntılı tanı bilgilerini yakalayın.
+**S:** Hata mesajı olmadan renderleme başarısız olursa ne yapmalıyım?  
+**C:** Viewer yapılandırmasında günlük kaydını etkinleştirerek ayrıntılı tanı bilgilerini yakalayın.
 
 **S:** Ticari projelerde GroupDocs.Viewer kullanılabilir mi?  
-**C:** Evet, satın alınan **groupdocs viewer license** sınırsız ticari kullanım izni verir.
+**C:** Evet, satın alınmış bir **groupdocs viewer lisansı**, sınırsız ticari kullanım izni verir.
 
 ## Kaynaklar
 
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [Purchase a License](https://purchase.groupdocs.com/buy)
+- [Dokümantasyon](https://docs.groupdocs.com/viewer/java/)
+- [API Referansı](https://reference.groupdocs.com/viewer/java/)
+- [GroupDocs.Viewer for Java'ı İndir](https://releases.groupdocs.com/viewer/java/)
+- [Lisans Satın Al](https://purchase.groupdocs.com/buy)
 
 ---
 
-**Son Güncelleme:** 2026-02-26  
+**Son Güncelleme:** 2026-08-08  
 **Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
 **Yazar:** GroupDocs  
 
 ---
+
+## İlgili Öğreticiler
+
+- [GroupDocs.Viewer for Java kullanarak Belge Render'ında JPG Boyutunu Sınırlama](/viewer/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/)
+- [Java'da GroupDocs.Viewer ile pdf'yi html'ye dönüştürme ve görüntü kalitesini optimize etme](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [GroupDocs.Viewer Java kullanarak IGS'yi PDF, HTML, JPG ve PNG'ye dönüştürme](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)

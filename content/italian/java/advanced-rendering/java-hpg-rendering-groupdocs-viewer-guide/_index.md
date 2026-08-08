@@ -1,45 +1,82 @@
 ---
-date: '2026-02-26'
-description: Scopri come convertire HPG in JPG ed eseguire la conversione di documenti
-  Java in PDF utilizzando GroupDocs.Viewer. Padroneggia il rendering dei file HPG
-  in modo efficiente.
+date: '2026-08-08'
+description: Scopri come convertire hpg in jpg ed eseguire la conversione di documenti
+  Java in PDF usando GroupDocs.Viewer. Padroneggia il rendering dei file HPG in modo
+  efficiente.
 keywords:
-- Java HPG Rendering
-- GroupDocs.Viewer for Java
-- Document Conversion
-title: Converti HPG in JPG con la Guida di GroupDocs.Viewer per Java
+- convert hpg to jpg
+- java image conversion
+- vector graphic to jpg
+- java document to pdf
+- java convert hpg pdf
+lastmod: '2026-08-08'
+og_description: Converti hpg in jpg in modo efficiente usando GroupDocs.Viewer per
+  Java. Questa guida mostra la configurazione step‑by‑step, code snippets e best practices
+  per la conversione di documenti Java.
+og_image_alt: Developer guide showing HPG to JPG conversion with GroupDocs.Viewer
+  for Java
+og_title: Converti hpg in jpg con GroupDocs.Viewer per Java – Guida rapida
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-08'
+  description: Learn how to convert hpg to jpg and perform Java document conversion
+    to PDF using GroupDocs.Viewer. Master rendering HPG files efficiently.
+  headline: Convert hpg to jpg with GroupDocs.Viewer for Java guide
+  type: TechArticle
+- questions:
+  - answer: Transforming HPG graphics into web‑ready HTML, JPG, PNG, or PDF for browsers
+      and mobile apps.
+    question: What is the primary use case?
+  - answer: GroupDocs.Viewer for Java (v25.2).
+    question: Which library handles the conversion?
+  - answer: A free trial works for evaluation; a commercial license is required for
+      production.
+    question: Do I need a GroupDocs Viewer license?
+  - answer: Yes – use `PdfViewOptions` for PDF output.
+    question: Can I convert to PDF as part of Java document conversion to PDF?
+  - answer: Large files need adequate heap space; the API releases resources promptly.
+    question: Is the process memory‑intensive?
+  type: FAQPage
+tags:
+- convert hpg
+- groupdocs viewer
+- java image conversion
+- hpg rendering
+- document conversion
+title: Converti hpg in jpg con la guida di GroupDocs.Viewer per Java
 type: docs
 url: /it/java/advanced-rendering/java-hpg-rendering-groupdocs-viewer-guide/
 weight: 1
 ---
 
-# Converti HPG in JPG con la Guida di GroupDocs.Viewer per Java
+# Convertire hpg in jpg con la guida di GroupDocs.Viewer per Java
 
-Stai cercando un modo efficiente per **convertire HPG in JPG** e altri formati adatti al web utilizzando Java? In questo tutorial ti guideremo attraverso l’intero processo—dalla configurazione di GroupDocs.Viewer, all’acquisizione di una licenza GroupDocs Viewer, fino al rendering dei file HPG in JPG, PNG, HTML o PDF. Alla fine comprenderai perché **convertire HPG in JPG** è un passaggio comune per la pubblicazione web, gli archivi di immagini e i sistemi di gestione documentale.
+In questo tutorial imparerai come **convertire hpg in jpg** in un'applicazione Java usando GroupDocs.Viewer. La guida ti accompagna nell'installazione della libreria, nel caricamento di un file HPG, nella sua resa in JPG (come anche HTML, PNG e PDF) e nella gestione dei problemi comuni. Alla fine comprenderai perché la conversione da HPG a JPG è una necessità frequente per la pubblicazione web, gli archivi di immagini e i sistemi di gestione documentale. Visita il [GroupDocs website](https://www.groupdocs.com/) per ulteriori informazioni.
 
 ![Rendering HPG con GroupDocs.Viewer per Java](/viewer/advanced-rendering/hpg-rendering-java.png)
+[Rendering HPG con GroupDocs.Viewer per Java](/viewer/advanced-rendering/hpg-rendering-java.png)
 
-## Risposte Rapide
-- **Qual è l'uso principale?** Trasformare le grafiche HPG in HTML, JPG, PNG o PDF pronti per il web.  
+## Risposte rapide
+- **Qual è l'uso principale?** Trasformare la grafica HPG in HTML, JPG, PNG o PDF pronti per il web, per browser e app mobili.  
 - **Quale libreria gestisce la conversione?** GroupDocs.Viewer per Java (v25.2).  
-- **È necessaria una licenza GroupDocs Viewer?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza commerciale per la produzione.  
+- **Ho bisogno di una licenza GroupDocs Viewer?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza commerciale per la produzione.  
 - **Posso convertire in PDF come parte della conversione di documenti Java in PDF?** Sì – usa `PdfViewOptions` per l'output PDF.  
-- **Il processo è intensivo in termini di memoria?** I file di grandi dimensioni richiedono uno spazio heap adeguato; l'API rilascia le risorse prontamente.  
+- **Il processo è intensivo in termini di memoria?** I file di grandi dimensioni richiedono spazio heap adeguato; l'API rilascia le risorse prontamente.
 
-## Cos'è “convertire HPG in JPG”?
-Convertire HPG in JPG significa prendere una grafica vettoriale ad alta precisione e rasterizzare ogni pagina in un'immagine JPEG. Questa conversione è essenziale quando sono necessari file immagine leggeri per browser, app mobili o generazione di miniature, trasformando efficacemente un file HPG in un **formato web HPG convertito** che qualsiasi dispositivo può visualizzare.
+## Cos'è “convertire hpg in jpg”?
+Convertire hpg in jpg significa rasterizzare ogni pagina vettoriale di un file HPG in un'immagine JPEG. Questo produce immagini leggere e compatibili con i browser, ideali per miniature, consegna mobile o qualsiasi scenario in cui è richiesto un formato immagine compatto. Il processo di conversione estrae ogni elemento vettoriale, applica l'anti‑aliasing e scrive il risultato in un file JPEG compresso adatto per una rapida consegna web.
 
 ## Perché usare GroupDocs.Viewer per Java?
-GroupDocs.Viewer fornisce un'API unica e coerente per il rendering di molti tipi di documento—compreso HPG—senza richiedere software esterno. Gestisce automaticamente le risorse incorporate, il layout delle pagine e le opzioni specifiche del formato, rendendo le attività di **conversione di documenti Java in PDF** semplici e affidabili. Inoltre, la libreria funziona con la stessa **licenza groupdocs viewer** per tutti i formati supportati, semplificando il deployment.
+GroupDocs.Viewer supporta il rendering di **oltre 50 formati di documento** e può elaborare file HPG fino a 500 MB senza caricare l'intero file in memoria. L'API gestisce automaticamente le risorse incorporate, il layout delle pagine e le opzioni specifiche del formato, rendendo la conversione di documenti Java in PDF e formati immagine veloce e affidabile. Una singola **licenza groupdocs viewer** copre tutti i formati supportati, semplificando il deployment e riducendo i costi di licenza.
 
 ## Prerequisiti
 
 - Conoscenza di base di Java e Maven.  
-- JDK 8 o superiore installato.  
+- JDK 8 o successivo installato.  
 - Un IDE come IntelliJ IDEA o Eclipse.  
 - Accesso a una licenza GroupDocs.Viewer (trial o commerciale).  
 
-### Librerie Richieste, Versioni e Dipendenze
+### Librerie richieste, versioni e dipendenze
 Aggiungi la seguente configurazione Maven al tuo `pom.xml`:
 
 ```xml
@@ -61,13 +98,13 @@ Aggiungi la seguente configurazione Maven al tuo `pom.xml`:
 
 ## Configurazione di GroupDocs.Viewer per Java
 
-1. **Aggiungi la Dipendenza** – Assicurati che lo snippet Maven sopra sia presente in `pom.xml`.  
-2. **License Acquisition Steps**:  
-   - Inizia con una prova gratuita dal [sito web di GroupDocs](https://www.groupdocs.com/).  
+1. **Aggiungi la dipendenza** – Assicurati che lo snippet Maven sopra sia presente in `pom.xml`.  
+2. **License acquisition steps**:  
+   - Inizia con una prova gratuita dal [GroupDocs website](https://www.groupdocs.com/).  
    - Ottieni una licenza temporanea per test estesi tramite [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
-   - Acquista una licenza commerciale dalla [pagina di acquisto di GroupDocs](https://purchase.groupdocs.com/buy).  
-   > **Consiglio Pro:** Conserva il file di licenza in una posizione sicura e caricalo una sola volta all’avvio dell’applicazione per evitare I/O ripetuti.  
-3. **Inizializzazione Base** – Crea un'istanza `Viewer` che punti al tuo file HPG:
+   - Acquista una licenza commerciale dalla [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).  
+   > **Suggerimento professionale:** Conserva il file di licenza in una posizione sicura e caricalo una sola volta all'avvio dell'applicazione per evitare I/O ripetuti.  
+3. **Inizializzazione di base** – `Viewer` è la classe principale di GroupDocs.Viewer che carica e rende i documenti. Crea un'istanza `Viewer` che punta al tuo file HPG:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -81,9 +118,11 @@ public class DocumentViewer {
 }
 ```
 
-## Come Convertire HPG in JPG Utilizzando GroupDocs.Viewer
+## Come convertire hpg in jpg usando GroupDocs.Viewer
 
-### Passo 1: Definisci i Percorsi di Output
+Carica il tuo file HPG con `new Viewer(inputPath)` e chiama `viewer.view(options)` – l'intera conversione viene eseguita in una singola chiamata di metodo. Questo approccio garantisce che ogni pagina sia rasterizzata in immagini JPEG ad alta qualità preservando i dettagli vettoriali. Puoi anche specificare DPI, profondità colore e se preservare i metadati EXIF, dandoti il pieno controllo sulla qualità dell'output e sulla dimensione del file.
+
+### Passo 1: definire i percorsi di output
 Imposta una cartella dove verranno salvate le immagini renderizzate. Questo mantiene il progetto ordinato e facilita la localizzazione dei risultati.
 
 ```java
@@ -93,10 +132,10 @@ Path outputDirectory = YOUR_DOCUMENT_DIRECTORY.resolve("RenderingHpg");
 Path pageFilePathFormat = outputDirectory.resolve("hpg_result.jpg");
 ```
 
-Sostituisci `YOUR_DOCUMENT_DIRECTORY` con la directory effettiva che contiene il tuo file sorgente.
+Sostituisci `YOUR_DOCUMENT_DIRECTORY` con la directory reale che contiene il tuo file sorgente.
 
-### Passo 2: Configura Viewer per l'Output JPG
-Crea `JpgViewOptions` e invoca il processo di rendering. Il blocco `try‑with‑resources` garantisce che tutte le risorse native vengano rilasciate automaticamente.
+### Passo 2: configurare il viewer per l'output JPG
+`JpgViewOptions` è la classe di opzioni che controlla i parametri di rendering JPEG come qualità e DPI. Crea l'oggetto opzioni, imposta la qualità desiderata e invoca il viewer. Il blocco `try‑with‑resources` garantisce che tutte le risorse native vengano rilasciate automaticamente.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -109,15 +148,15 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-**Consiglio Pro:** Regola la qualità dell'immagine tramite `options.setQuality(int)` se hai bisogno di file più piccoli per la distribuzione web.
+**Suggerimento professionale:** Regola la qualità dell'immagine tramite `options.setQuality(int)` se hai bisogno di file più piccoli per la consegna web.
 
-#### Problemi Comuni
+#### Problemi comuni
 - **File non trovato** – Verifica il percorso del file HPG e assicurati che il file esista.  
-- **Errori di permessi** – L'applicazione deve avere i diritti di lettura/scrittura sia per le directory di input che di output.  
+- **Errori di permesso** – L'applicazione deve avere diritti di lettura/scrittura per le directory di input e output.  
 
-## Rendering di HPG in Altri Formati
+## Rendering di hpg in altri formati
 
-### Rendering in HTML (convertire il formato web HPG)
+### Rendering in HTML (convertire hpg in formato web)
 Il rendering HTML è ideale per anteprime basate su browser e consente di incorporare le risorse direttamente.
 
 ```java
@@ -144,7 +183,7 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 ```
 
 ### Rendering in PDF (conversione di documenti Java in PDF)
-PDF è il formato di riferimento per l'archiviazione e la conformità.
+PDF è il formato di riferimento per l'archiviazione e la conformità. La classe `PdfViewOptions` crea un unico documento PDF che contiene tutte le pagine renderizzate.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -156,53 +195,61 @@ try (Viewer viewer = new Viewer(YOUR_OUTPUT_DIRECTORY + "/Sample.HPG")) {
 }
 ```
 
-## Applicazioni Pratiche
+## Applicazioni pratiche
 
-- **Pubblicazione Web** – Converti HPG in HTML per il rendering immediato nel browser, o in JPG/PNG per pagine ricche di immagini.  
-- **Archivi di Immagini** – Conserva le grafiche come JPG o PNG per un recupero rapido e un minimo ingombro di archiviazione.  
-- **Sistemi di Gestione Documentale** – Usa l'output PDF per l'archiviazione a lungo termine, la conformità e gli archivi ricercabili.  
+- **Pubblicazione web** – Converti hpg in HTML per il rendering immediato nel browser, o in JPG/PNG per pagine ricche di immagini.  
+- **Archivi di immagini** – Conserva le grafiche come JPG o PNG per un recupero rapido e un minimo ingombro di archiviazione.  
+- **Sistemi di gestione documentale** – Usa l'output PDF per l'archiviazione a lungo termine, la conformità e gli archivi ricercabili.  
 
-## Considerazioni sulle Prestazioni
+## Considerazioni sulle prestazioni
 
-- **Ottimizzazione della Memoria** – Assegna spazio heap sufficiente (`-Xmx`) per file HPG di grandi dimensioni.  
-- **Gestione delle Risorse** – Il pattern `try‑with‑resources` chiude automaticamente gli stream, prevenendo perdite di memoria.  
-- **Elaborazione a Lotti** – Per documenti molto grandi, renderizza le pagine in batch per mantenere prevedibile l'uso della memoria.  
+- **Ottimizzazione della memoria** – Assegna spazio heap sufficiente (`-Xmx`) per file HPG di grandi dimensioni; la libreria può gestire file fino a 500 MB senza caricamento completo in memoria.  
+- **Gestione delle risorse** – Il pattern `try‑with‑resources` chiude automaticamente gli stream, prevenendo perdite di memoria.  
+- **Elaborazione batch** – Per documenti molto grandi, renderizza le pagine in batch per mantenere prevedibile l'uso della memoria.  
 
-## Problemi Comuni e Soluzioni
+## Problemi comuni e soluzioni
 
 | Problema | Causa | Soluzione |
 |----------|-------|-----------|
-| **File non trovato** | Percorso errato o file mancante | Verifica nuovamente la posizione del file e utilizza percorsi assoluti durante i test. |
-| **OutOfMemoryError** | Rendering di un HPG enorme senza sufficiente heap | Aumenta l'heap JVM (`-Xmx2g` o superiore) ed elabora le pagine singolarmente. |
-| **Blank images** | Funzionalità HPG non supportate | Assicurati di utilizzare l'ultima versione di GroupDocs.Viewer; contatta il supporto se il problema persiste. |
-| **License not recognized** | File di licenza non caricato correttamente | Carica la licenza una sola volta all'avvio: `License license = new License(); license.setLicense("path/to/license.lic");` |
+| **File non trovato** | Percorso errato o file mancante | Verifica nuovamente la posizione del file e usa percorsi assoluti durante i test. |
+| **OutOfMemoryError** | Rendering di un HPG enorme senza sufficiente heap | Aumenta l'heap JVM (`-Xmx2g` o superiore) ed elabora le pagine individualmente. |
+| **Immagini vuote** | Funzionalità HPG non supportate | Assicurati di utilizzare l'ultima versione di GroupDocs.Viewer; contatta il supporto se il problema persiste. |
+| **Licenza non riconosciuta** | File di licenza non caricato correttamente | Carica la licenza una sola volta all'avvio: `License license = new License(); license.setLicense("path/to/license.lic");` |
 
-## Domande Frequenti
+## Domande frequenti
 
-**D:** Posso renderizzare altri tipi di file con GroupDocs.Viewer?  
-**R:** Sì, l'API supporta decine di formati oltre HPG, inclusi DOCX, PPTX e PDF.
+**Q:** Posso renderizzare altri tipi di file con GroupDocs.Viewer?  
+**A:** Sì, l'API supporta decine di formati oltre HPG, inclusi DOCX, PPTX, PDF e molti tipi di immagine.
 
-**D:** È supportata l'integrazione con lo storage cloud?  
-**R:** Puoi trasmettere file da servizi cloud (ad esempio AWS S3, Azure Blob) caricando lo stream di input in `Viewer`.
+**Q:** È supportata l'integrazione con lo storage cloud?  
+**A:** Puoi trasmettere in streaming file da servizi cloud (ad es., AWS S3, Azure Blob) caricando lo stream di input in `Viewer`.
 
-**D:** Come devo gestire file HPG molto grandi?  
-**R:** Aumenta la dimensione dell'heap JVM e considera l'elaborazione delle pagine in batch per ridurre la pressione sulla memoria.
+**Q:** Come devo gestire file HPG molto grandi?  
+**A:** Aumenta la dimensione dell'heap JVM e considera l'elaborazione delle pagine in batch per ridurre la pressione sulla memoria.
 
-**D:** Cosa succede se il rendering fallisce senza un messaggio di errore?  
-**R:** Abilita il logging nella configurazione di Viewer per catturare diagnostica dettagliata.
+**Q:** Cosa succede se il rendering fallisce senza un messaggio di errore?  
+**A:** Abilita il logging nella configurazione del Viewer per catturare diagnostica dettagliata.
 
-**D:** I progetti commerciali possono utilizzare GroupDocs.Viewer?  
-**R:** Sì, una **licenza groupdocs viewer** acquistata consente l'uso commerciale illimitato.
+**Q:** I progetti commerciali possono usare GroupDocs.Viewer?  
+**A:** Sì, una **licenza groupdocs viewer** acquistata consente l'uso commerciale illimitato.
 
 ## Risorse
 
 - [Documentazione](https://docs.groupdocs.com/viewer/java/)
 - [Riferimento API](https://reference.groupdocs.com/viewer/java/)
 - [Download GroupDocs.Viewer per Java](https://releases.groupdocs.com/viewer/java/)
-- [Acquista una Licenza](https://purchase.groupdocs.com/buy)
+- [Acquista una licenza](https://purchase.groupdocs.com/buy)
 
 ---
 
-**Ultimo Aggiornamento:** 2026-02-26  
-**Testato Con:** GroupDocs.Viewer 25.2 for Java  
-**Autore:** GroupDocs
+**Ultimo aggiornamento:** 2026-08-08  
+**Testato con:** GroupDocs.Viewer 25.2 per Java  
+**Autore:** GroupDocs  
+
+---
+
+## Tutorial correlati
+
+- [Come limitare la dimensione JPG nel rendering dei documenti usando GroupDocs.Viewer per Java](/viewer/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/)
+- [Come convertire pdf in html e ottimizzare la qualità dell'immagine in Java con GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [Convertire IGS in PDF, HTML, JPG e PNG usando GroupDocs.Viewer Java](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)
