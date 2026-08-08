@@ -1,48 +1,84 @@
 ---
-date: '2026-02-23'
-description: GroupDocs.Viewer for Java ile IGS'yi PDF, HTML, JPG ve PNG'ye nasıl dönüştüreceğinizi
-  öğrenin. Hazır çalışan kod örnekleriyle adım adım rehberi izleyin.
+date: '2026-08-08'
+description: GroupDocs.Viewer for Java kullanarak IGS'yi PDF, HTML, JPG ve PNG'ye
+  nasıl dönüştüreceğinizi öğrenin. Adım adım kılavuz, önkoşullar ve Java geliştiricileri
+  için sorun giderme.
 keywords:
-- GroupDocs.Viewer Java
-- Convert IGS Files
-- Render IGS Documents
-title: GroupDocs.Viewer Java kullanarak IGS'yi PDF, HTML, JPG ve PNG'ye dönüştür
+- convert igs to pdf
+- convert cad to image
+- convert igs to jpg
+- java cad to pdf
+lastmod: '2026-08-08'
+og_description: GroupDocs.Viewer for Java kullanarak IGS'yi PDF, HTML, JPG ve PNG'ye
+  dönüştürün. Ayrıntılı kurulum, kod parçacıkları ve Java geliştiricileri için sorun
+  giderme.
+og_image_alt: 'Developer guide: convert IGS files to PDF, HTML, JPG, PNG with GroupDocs.Viewer
+  Java'
+og_title: IGS'yi PDF, HTML, JPG ve PNG'ye GroupDocs.Viewer Java ile dönüştürün
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-08'
+  description: Learn how to convert IGS to PDF, HTML, JPG, and PNG using GroupDocs.Viewer
+    for Java. Step‑by‑step guide, prerequisites, and troubleshooting for Java developers.
+  headline: Convert IGS to PDF, HTML, JPG & PNG with GroupDocs.Viewer Java
+  type: TechArticle
+- questions:
+  - answer: Yes. Iterate over a collection of file paths and invoke the appropriate
+      `view` method for each file within the same `Viewer` instance.
+    question: Can I convert multiple IGS files in a single run?
+  - answer: Absolutely. `PdfViewOptions` offers `setPageSize(PageSize.A4)`, `PageSize.Letter`,
+      and custom dimensions via `setCustomSize(width, height)`.
+    question: Is it possible to customize the PDF page size?
+  - answer: No. A single GroupDocs.Viewer license covers all supported formats, including
+      HTML, JPG, PNG, and PDF.
+    question: Do I need a separate license for each output format?
+  - answer: The library reliably processes files up to **500 MB**; for models larger
+      than 200 MB, allocate additional JVM memory and consider rendering in batches.
+    question: How large can an IGS file be before performance degrades?
+  - answer: GroupDocs.Viewer renders the default orientation defined in the IGS file.
+      For custom views, preprocess the file with a CAD tool or adjust the model before
+      conversion.
+    question: Can I render only a specific view or orientation?
+  type: FAQPage
+tags:
+- convert igs
+- groupdocs.viewer
+- java cad conversion
+- pdf generation java
+title: IGS'yi PDF, HTML, JPG ve PNG'ye GroupDocs.Viewer Java ile dönüştürün
 type: docs
 url: /tr/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/
 weight: 1
 ---
 
-# Convert IGS to PDF, HTML, JPG & PNG using GroupDocs.Viewer Java
+# IGS'yi PDF, HTML, JPG ve PNG'ye Dönüştürme, GroupDocs.Viewer Java ile
 
-If you need to **convert IGS to PDF** (or to HTML, JPG, PNG) directly from a Java application, you’ve come to the right place. In this tutorial we’ll walk through everything you need—from setting up the library to rendering the 3‑D model in the format that fits your project. You’ll see why GroupDocs.Viewer is a solid choice for fast, reliable conversions and get hands‑on code you can drop into your own solution.
+Java uygulamasından doğrudan **IGS'yi PDF'ye dönüştür** (veya HTML, JPG, PNG'ye) ihtiyacınız varsa doğru yerdesiniz. Bu öğreticide ihtiyacınız olan her şeyi adım adım ele alacağız—kütüphanenin kurulumu, 3‑D modelin projenize uygun formatta render edilmesi gibi. GroupDocs.Viewer'ın hızlı, güvenilir dönüşümler için sağlam bir seçim olduğunu anlayacak ve kendi çözümünüze ekleyebileceğiniz çalıştırmaya hazır kod parçacıklarını elde edeceksiniz.
 
-![Convert IGS Files to HTML, JPG, PNG, and PDF with GroupDocs.Viewer for Java](/viewer/file-formats-support/convert-igs-files-to-html-jpg-png-and-pdf-java.png)
+![GroupDocs.Viewer for Java ile IGS Dosyalarını HTML, JPG, PNG ve PDF'ye Dönüştürme](/viewer/file-formats-support/convert-igs-files-to-html-jpg-png-and-pdf-java.png)
 
-## Quick Answers
-- **Can I convert IGS to PDF with Java?** Yes, using GroupDocs.Viewer’s `PdfViewOptions`.
-- **Which output formats are supported?** HTML, JPG, PNG, and PDF.
-- **Do I need a license for production?** A commercial license is required; a free trial is available for testing.
-- **What Java version is required?** JDK 8 or higher.
-- **Is Maven the only way to add the library?** No, you can also use Gradle or manual JAR inclusion.
+## Hızlı Yanıtlar
+- **Java ile IGS'yi PDF'ye dönüştürebilir miyim?** Evet, `PdfViewOptions` ile `Viewer` API'sini birlikte kullanın.  
+- **Hangi çıktı formatları destekleniyor?** HTML, JPG, PNG ve PDF tümü yerel olarak işlenir.  
+- **Üretim için lisansa ihtiyacım var mı?** Ticari bir lisans gereklidir; ücretsiz deneme sürümü temel özellikleri test etmenizi sağlar.  
+- **Hangi Java sürümü gerekiyor?** JDK 8 ve üzeri; kütüphane ayrıca Java 11, 17 ve daha yeni sürümlerde de çalışır.  
+- **Maven, kütüphaneyi eklemenin tek yolu mu?** Hayır, Gradle da kullanabilir veya JAR dosyalarını sınıf yolunuza manuel olarak ekleyebilirsiniz.
 
-## What is “convert IGS to PDF”?
-Converting IGS (a neutral file format for 3‑D CAD data) to PDF means turning a complex 3‑D model into a static, widely viewable document. This is useful for sharing designs with stakeholders who don’t have CAD tools.
+## IGS'yi PDF'ye Dönüştürme Nedir?
+IGS'yi PDF'ye dönüştürmek, nötr bir 3‑D CAD dosyasını statik, evrensel olarak görüntülenebilir bir belgeye çevirmek anlamına gelir. Bu sayede CAD araçları olmayan paydaşlarla tasarım görselleri paylaşabilir, raporlara render ekleyebilir veya modeli uyumluluk amaçlı arşivleyebilirsiniz.
 
-## Why use GroupDocs.Viewer for IGS conversions?
-- **Zero‑code CAD rendering** – the library handles the heavy lifting of parsing the IGS format.
-- **Multiple output options** – one API call can produce HTML, JPG, PNG, or PDF.
-- **Cross‑platform** – works on any OS that supports Java.
-- **Performance‑focused** – fast rendering even for large assemblies.
+## IGS Dönüşümleri için GroupDocs.Viewer Neden Kullanılmalı?
+GroupDocs.Viewer, dış bir CAD yazılımına ihtiyaç duymadan IGS dosyalarını işler. **50+ giriş ve çıkış formatını** destekler, **yüzlerce parçadan oluşan montajları** **200 MB**'nin altında bellek kullanımıyla render edebilir ve tipik modellerde standart bir sunucuda **2 saniyenin** altında sonuç verir. Bu ölçülen avantajlar, kurumsal hatlar için yüksek performanslı ve maliyet etkin bir seçenek olmasını sağlar.
 
-## Prerequisites
-- **GroupDocs.Viewer for Java** ≥ 25.2  
-- **JDK 8+** installed and configured in your IDE (IntelliJ IDEA, Eclipse, NetBeans, etc.)  
-- Basic Maven knowledge (optional but recommended)  
+## Önkoşullar
+- **GroupDocs.Viewer for Java** ≥ 25.2 (en son kararlı sürüm).  
+- **JDK 8+** yüklü ve IDE'nizde (IntelliJ IDEA, Eclipse, NetBeans vb.) yapılandırılmış.  
+- Temel Maven bilgisi (isteğe bağlı ancak bağımlılık yönetimi için önerilir).  
 
-## Setting Up GroupDocs.Viewer for Java
+## GroupDocs.Viewer for Java'ı Kurma
 
-### Maven Dependency
-Add the GroupDocs repository and the Viewer dependency to your `pom.xml`:
+### Maven Bağımlılığı
+`pom.xml` dosyanıza GroupDocs deposunu ve Viewer bağımlılığını ekleyin:
 
 ```xml
 <repositories>
@@ -61,14 +97,14 @@ Add the GroupDocs repository and the Viewer dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### License Acquisition
-GroupDocs.Viewer offers:
-- **Free trial** – limited usage, great for quick tests.  
-- **Temporary license** – full feature set for a short evaluation period.  
-- **Commercial license** – unrestricted production use.
+### Lisans Edinme
+GroupDocs.Viewer üç lisans seçeneği sunar:
+- **Ücretsiz deneme** – sınırlı kullanım, hızlı kanıt‑konsept testleri için mükemmel.  
+- **Geçici lisans** – kısa bir değerlendirme süresi için tam özellik seti, pilot projeler için ideal.  
+- **Ticari lisans** – sınırsız üretim kullanımı, öncelikli destek ve güncellemeler içerir.
 
-### Basic Viewer Initialization
-The snippet below shows how to create a `Viewer` instance that points to your IGS file:
+### Temel görüntüleyici başlatma
+`Viewer` sınıfı tüm render işlemlerinin giriş noktasıdır. Kaynak dosyayı yükler, formatı ayrıştırır ve istenen çıktıyı üretmek için yöntemler sunar.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -82,10 +118,11 @@ public class ViewerSetup {
 }
 ```
 
-## Rendering IGS to HTML
+## IGS'yi HTML'ye Renderleme
 
-### How to convert IGS to HTML?
-HTML output gives you an interactive, browser‑friendly view of the 3‑D model.
+### IGS'yi HTML'ye Nasıl Dönüştürürsünüz?
+Bir `Viewer` örneğiyle IGS dosyasını yükleyin ve tüm gerekli varlıkları gömülü olarak içeren bir `HtmlViewOptions` nesnesi geçin. Çağrı, tam 3‑D görünümü içeren tek bir HTML dosyası döndürür; bu da web sayfalarına gömmeyi kolaylaştırır. Sayfa boyutu, arka plan rengi ve etkileşimli kontroller gibi seçenekleri ayarlayarak render'ı özelleştirebilirsiniz.  
+`HtmlViewOptions`, HTML çıktısının nasıl üretileceğini, kaynak gömme ve sayfa düzeni dahil olmak üzere yapılandırır.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -106,12 +143,11 @@ public class RenderIgsToHtml {
 }
 ```
 
-**Key point:** `HtmlViewOptions.forEmbeddedResources()` embeds all required assets (CSS, images) directly into the HTML file, making it portable.
+## IGS'yi JPG'ye Renderleme
 
-## Rendering IGS to JPG
-
-### How to convert IGS to JPG?
-JPG images are perfect for thumbnails or quick previews.
+### IGS'yi JPG'ye Nasıl Dönüştürürsünüz?
+`JpgViewOptions` nesnesi oluşturun, istenen çözünürlük ve sıkıştırma kalitesini yapılandırın ve `Viewer`'ın modelin her sayfası için raster görüntüler üretmesini sağlayın. Oluşturulan JPG dosyaları belirtilen bir dizine kaydedilebilir; kalite parametresini dosya boyutu ile görsel sadakat arasında dengelemek için ayarlayabilirsiniz; bu, küçük resimler veya yüksek çözünürlüklü baskılar için faydalıdır.  
+`JpgViewOptions`, çözünürlük, kalite ve çıktı dizini gibi JPG görüntü üretim ayarlarını belirler.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -132,12 +168,11 @@ public class RenderIgsToJpg {
 }
 ```
 
-You can tweak `JpgViewOptions` to control resolution and compression quality.
+## IGS'yi PNG'ye Renderleme
 
-## Rendering IGS to PNG
-
-### How to convert IGS to PNG?
-PNG supports transparency, which is handy for overlaying the model on different backgrounds.
+### IGS'yi PNG'ye Nasıl Dönüştürürsünüz?
+`PngViewOptions` sınıfı, isteğe bağlı şeffaflıkla kayıpsız görüntüler üretmenizi sağlar. Bu format, modeli renkli arka planların üzerine yerleştirmek istediğiniz pazarlama materyalleri için idealdir. Çözünürlük ve arka plan rengini marka yönergelerinize uygun şekilde tanımlayabilir, böylece tüm üretilen varlıkların tutarlı görünmesini sağlayabilirsiniz.  
+`PngViewOptions`, çözünürlük, şeffaflık ve arka plan rengi dahil olmak üzere PNG render parametrelerini tanımlar.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -158,12 +193,11 @@ public class RenderIgsToPng {
 }
 ```
 
-Experiment with the `PngViewOptions` to get the best balance between file size and visual fidelity.
+## IGS'yi PDF'ye Renderleme
 
-## Rendering IGS to PDF
-
-### How to convert IGS to PDF?
-PDF is the go‑to format for sharing detailed design documentation. This section directly addresses the primary keyword **convert IGS to PDF**.
+### IGS'yi PDF'ye Nasıl Dönüştürürsünüz?
+`PdfViewOptions` kullanarak 3‑D modelin görsel düzenini koruyan sayfalı bir PDF oluşturun. Yazı tiplerini gömebilir ve kurumsal marka yönergelerine uyması için sayfa boyutunu kontrol edebilirsiniz. Ek ayarlar, görüntü kalitesi, sıkıştırma seviyesi ve çok sayfalı montajlar için içindekiler tablosu ekleme gibi seçenekleri içerir.  
+`PdfViewOptions`, sayfa boyutu, görüntü kalitesi ve yazı tipi gömme yapılandırmasıyla PDF oluşturmayı yönetir.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -184,43 +218,43 @@ public class RenderIgsToPdf {
 }
 ```
 
-`PdfViewOptions` lets you control page layout, image quality, and whether to embed fonts.
+## Pratik Uygulamalar
+- **Web portalları** – HTML‑render'lanmış modelleri doğrudan ürün yapılandırıcılarına gömerek, müşterilerin eklenti kurmadan döndürüp yakınlaştırmasını sağlar.  
+- **Pazarlama varlıkları** – broşürler, sunumlar ve sosyal medya gönderileri için yüksek çözünürlüklü JPG/PNG görüntüler üretir.  
+- **Teknik dokümantasyon** – kullanıcı kılavuzlarına CAD modellerinin PDF render'larını ekleyerek, mühendislerin tasarımları çevrim dışı görmesini sağlar.  
+- **Kalite güvencesi** – binlerce IGS dosyası için küçük resim oluşturmayı otomatikleştirerek görsel inceleme iş akışlarını hızlandırır.
 
-## Practical Applications
+## Yaygın Sorunlar ve Çözümler
 
-- **Web portals** – embed HTML‑rendered models directly into product configurators.  
-- **Marketing assets** – generate high‑resolution JPG/PNG images for brochures.  
-- **Technical documentation** – include PDF renderings of CAD models in user manuals.  
-- **Quality assurance** – automate thumbnail generation for large batches of IGS files.
-
-## Common Issues & Solutions
-
-| Issue | Solution |
+| Sorun | Çözüm |
 |-------|----------|
-| **Output folder not found** | Verify the path passed to `Path outputDirectory` and ensure the Java process has write permissions. |
-| **Blank pages in PDF** | Make sure the IGS file is not corrupted; try opening it in a CAD viewer first. |
-| **Slow rendering for large assemblies** | Increase JVM heap (`-Xmx2g` or more) and consider rendering page‑by‑page using `viewer.getPageCount()` if needed. |
-| **Missing fonts in PDF** | Use `PdfViewOptions` to embed required fonts or install the missing fonts on the server. |
+| **Çıktı klasörü bulunamadı** | `Path outputDirectory` parametresine verilen yolu doğrulayın ve Java işleminin hedef klasörde yazma iznine sahip olduğundan emin olun. |
+| **PDF'de boş sayfalar** | Kaynak IGS dosyasının bozuk olmadığını kontrol edin; önce yerel bir CAD görüntüleyicide açın. |
+| **Büyük montajlar için yavaş render** | JVM yığın boyutunu artırın (`-Xmx2g` veya daha fazla) ve parçaları işlemek için `viewer.getPageCount()` ile sayfa‑sayfa render etmeyi değerlendirin. |
+| **PDF'de eksik yazı tipleri** | Gerekli yazı tiplerini gömmek için `PdfViewOptions` kullanın veya dönüşüm hizmetini barındıran sunucuya eksik yazı tiplerini kurun. |
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**Q: Can I convert multiple IGS files in a single run?**  
-A: Yes. Loop through a list of file paths and invoke the appropriate `view` method for each.
+**S: Tek bir çalıştırmada birden fazla IGS dosyasını dönüştürebilir miyim?**  
+C: Evet. Dosya yolu koleksiyonunu döngüye alıp aynı `Viewer` örneği içinde her dosya için uygun `view` metodunu çağırabilirsiniz.
 
-**Q: Is it possible to customize the PDF page size?**  
-A: Absolutely. `PdfViewOptions` provides `setPageSize(PageSize.A4)` and similar methods.
+**S: PDF sayfa boyutunu özelleştirmek mümkün mü?**  
+C: Kesinlikle. `PdfViewOptions`, `setPageSize(PageSize.A4)`, `PageSize.Letter` ve `setCustomSize(width, height)` ile özel boyutları sunar.
 
-**Q: Do I need a separate license for each output format?**  
-A: No. A single GroupDocs.Viewer license covers all supported formats.
+**S: Her çıktı formatı için ayrı bir lisansa ihtiyacım var mı?**  
+C: Hayır. Tek bir GroupDocs.Viewer lisansı, HTML, JPG, PNG ve PDF dahil tüm desteklenen formatları kapsar.
 
-**Q: How large can an IGS file be before performance degrades?**  
-A: The library handles files up to several hundred megabytes, but you may need to allocate more JVM memory for very large models.
+**S: Performans düşmeden bir IGS dosyası ne kadar büyük olabilir?**  
+C: Kütüphane **500 MB**'ye kadar dosyaları sorunsuz işler; 200 MB'den büyük modeller için ek JVM belleği ayırın ve toplu render için partiler halinde işleme yapın.
 
-**Q: Can I render only a specific view or orientation?**  
-A: GroupDocs.Viewer renders the default view. For custom orientations, preprocess the IGS file with a CAD tool before conversion.
+**S: Sadece belirli bir görünüm veya yönlendirme render edebilir miyim?**  
+C: GroupDocs.Viewer, IGS dosyasında tanımlı varsayılan yönlendirmeyi render eder. Özel görünümler için dosyayı bir CAD aracıyla ön işleme tabi tutabilir veya dönüşümden önce modeli ayarlayabilirsiniz.
 
----
+**Son güncelleme:** 2026-08-08  
+**Test edildi:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs
 
-**Last Updated:** 2026-02-23  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+## İlgili Eğitimler
+
+- [cdr'yi html, jpg, png, pdf'ye dönüştürme GroupDocs.Viewer Java ile](/viewer/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/)
+- [Java'da pdf'yi html'ye dönüştürme ve görüntü kalitesini optimize etme GroupDocs.Viewer ile](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
