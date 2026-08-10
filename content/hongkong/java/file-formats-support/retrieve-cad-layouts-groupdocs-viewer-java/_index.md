@@ -1,42 +1,52 @@
 ---
-"date": "2025-04-24"
-"description": "學習如何使用 GroupDocs.Viewer for Java 以程式設計方式從 CAD 檔案中提取佈局和圖層。非常適合需要精確設計資料管理的工程項目。"
-"title": "使用 GroupDocs.Viewer 在 Java 中擷取 CAD 佈局和圖層"
-"url": "/zh-hant/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-06'
+description: 學習如何使用 GroupDocs.Viewer for Java 取得 CAD 版面，從 CAD 檔案中提取版面與圖層，以實現精確的設計資料管理。
+keywords:
+- retrieve cad layouts java
+- groupdocs viewer java
+- cad layers extraction
+title: 使用 GroupDocs.Viewer 在 Java 中檢索 CAD 版面
 type: docs
+url: /zh-hant/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# 如何使用 GroupDocs.Viewer for Java 擷取 CAD 佈局和圖層
 
-在工程和設計領域，電腦輔助設計 (CAD) 檔案是不可或缺的工具，用於儲存大量與設計相關的詳細資訊。這些文件可能非常複雜，包含多個佈局和圖層，需要精確的管理和檢索才能有效地執行專案。如果您希望使用 Java 以程式設計方式從 CAD 圖紙中提取特定細節，那麼 GroupDocs.Viewer for Java 是您的首選解決方案。本教學將指導您使用 GroupDocs.Viewer 從 CAD 圖紙中檢索所有佈局和圖層。
+# 使用 GroupDocs.Viewer 於 Java 取得 CAD 版面
 
-**您將學到什麼：**
-- 如何為 Java 設定 GroupDocs.Viewer。
-- 檢索 CAD 繪圖訊息，包括佈局和圖層。
-- 該功能在現實場景中的實際應用。
-- 處理大型 CAD 檔案時的效能考量。
+在現代工程專案中，**retrieving CAD layouts Java** 是自動化設計分析、版本控制與資料驅動工作流程的關鍵。CAD 檔案通常包含多個版面與圖層，用以描述產品的不同視圖。能以程式方式取得這些資訊，即可建立審核圖紙、產生報告或將設計整合至更大型系統的工具。在本教學中，您將學習如何使用 GroupDocs.Viewer for Java 快速且可靠地從 CAD 圖面中提取所有版面與圖層。
 
-在深入實施之前，讓我們先介紹一下開始所需的一些先決條件。
+![使用 GroupDocs.Viewer for Java 取得 CAD 版面與圖層](/viewer/file-formats-support/retrieve-cad-layouts-and-layers-java.png)
 
-## 先決條件
+## 快速解答
+- **「retrieve CAD layouts Java」是什麼意思？** 它指的是從 Java 應用程式以程式方式存取 CAD 檔案的版面與圖層中繼資料。  
+- **哪個函式庫負責此功能？** GroupDocs.Viewer for Java 提供簡易的 API 以取得版面與圖層資訊。  
+- **我需要授權嗎？** 可使用免費試用版；商業授權則是正式環境的必要條件。  
+- **可以處理大型 DWG 檔案嗎？** 可以 — 使用 try‑with‑resources 以及批次處理以降低記憶體使用量。  
+- **需要使用 Maven 嗎？** Maven 是建議的加入 GroupDocs.Viewer 至專案的方式，但亦可使用 Gradle 或手動 JAR。
 
-要繼續本教程，請確保您已具備：
+## 什麼是「retrieve CAD layouts Java」？
+Retrieving CAD layouts Java 指的是使用 Java 程式碼從 CAD 格式（如 DWG 或 DXF）中擷取結構元件——版面（紙張空間）與圖層（可見性群組）。此資訊對於自動化圖紙審查、客製化渲染流程或將設計資料遷移至其他平台等工作至關重要。
 
-1. **Java 開發工具包 (JDK)：** 確保您的機器上安裝了 JDK 8 或更高版本。
-2. **整合開發環境（IDE）：** 任何 Java IDE（例如 IntelliJ IDEA、Eclipse 或 NetBeans）都可以正常運作。
-3. **GroupDocs.Viewer for Java 函式庫：** 我們將使用最新版本，您可以透過 Maven 包含它。
+## 為什麼要使用 GroupDocs.Viewer for Java？
+GroupDocs.Viewer 抽象化 CAD 檔案解析的複雜性，提供可跨多種 CAD 版本使用的高階 API，且不需原生 AutoCAD 函式庫。它提供以下功能：
+
+- **跨格式支援**（DWG、DXF、DGN 等）  
+- **快速且記憶體效率高的處理** – 適用於伺服器端應用程式  
+- **簡易的 Maven 整合** – 讓相依性保持整潔  
+- **彈性的授權選項** – 試用、臨時或完整正式授權  
+
+## 前置條件
+1. **Java Development Kit (JDK) 8+** 已安裝。  
+2. **IDE**（IntelliJ IDEA、Eclipse、NetBeans 等）。  
+3. **GroupDocs.Viewer for Java** – 透過 Maven 加入（見下文）。
 
 ### 環境設定
+您需要一台（本機或遠端）能執行 Java 應用程式且可存取 CAD 檔案所在檔案系統的機器。
 
-確保您已準備好本機或遠端伺服器來執行 Java 應用程式。您還應該熟悉使用 Maven，因為它可以簡化 Java 專案中的依賴項管理。
+## 設定 GroupDocs.Viewer for Java
 
-## 為 Java 設定 GroupDocs.Viewer
-
-若要將 GroupDocs.Viewer 整合到您的 Java 專案中，請使用 Maven 輕鬆安裝和更新。設定方法如下：
-
-### Maven配置
-
-將以下儲存庫和依賴項新增至您的 `pom.xml` 文件：
+### Maven 設定
+將儲存庫與相依性加入您的 `pom.xml`。這是您對專案建置檔唯一需要的變更。
 
 ```xml
 <repositories>
@@ -55,27 +65,19 @@ type: docs
 </dependencies>
 ```
 
-### 許可證獲取
+### 取得授權
+GroupDocs.Viewer 提供免費試用、短期評估的臨時授權，以及正式環境的完整授權。
 
-GroupDocs.Viewer 提供免費試用，讓您在購買或取得臨時授權以進行擴展評估之前測試其功能。
+1. **免費試用：** 從 [GroupDocs 下載](https://releases.groupdocs.com/viewer/java/) 下載最新版本。  
+2. **臨時授權：** 前往 [GroupDocs 購買頁面](https://purchase.groupdocs.com/temporary-license/) 申請臨時授權，以探索進階功能。  
+3. **購買：** 若需長期使用，請透過 [GroupDocs 商店](https://purchase.groupdocs.com/buy) 購買授權。
 
-1. **免費試用：** 從下載最新版本 [GroupDocs 下載](https://releases。groupdocs.com/viewer/java/).
-2. **臨時執照：** 申請臨時駕照 [GroupDocs 購買頁面](https://purchase.groupdocs.com/temporary-license/) 探索進階功能。
-3. **購買：** 對於生產用途，透過以下方式購買許可證 [GroupDocs 商店](https://purchase。groupdocs.com/buy).
+## 實作指南
 
-設定好環境和依賴項後，您就可以開始實現該功能。
+以下為逐步說明，展示如何使用 GroupDocs.Viewer **retrieve CAD layouts Java**。
 
-## 實施指南
-
-在本節中，我們將詳細介紹如何使用 Java 中的 GroupDocs.Viewer 來擷取 CAD 佈局和圖層。我們將介紹成功實現所需的每個步驟。
-
-### 功能概述
-
-此功能允許開發人員以程式設計方式存取 CAD 檔案中的佈局和層信息，這對於需要詳細繪圖分析或基於設計結構進行修改的應用程式至關重要。
-
-#### 步驟 1：初始化 GroupDocs.Viewer
-
-建立一個實例 `Viewer` 透過提供您的 CAD 檔案的路徑。此物件將作為存取 GroupDocs.Viewer 提供的各種功能的網關。
+### 步驟 1：初始化 Viewer
+透過指向 CAD 檔案來建立 `Viewer` 實例。`try‑with‑resources` 區塊可確保 Viewer 正確關閉，釋放記憶體。
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,13 +86,12 @@ import java.io.File;
 String documentPath = new File("YOUR_DOCUMENT_DIRECTORY", "SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS").getAbsolutePath();
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // 進一步的操作將在這裡進行。
+    // Further operations will be performed here.
 }
 ```
 
-#### 步驟 2：檢索 CAD 視圖訊息
-
-利用 `getViewInfo` 方法可取得有關佈局和圖層的詳細資訊。此資訊封裝在 `CadViewInfo` 目的。
+### 步驟 2：取得檢視資訊
+使用 `getViewInfo` 搭配 `ViewInfoOptions.forHtmlView()` 取得包含版面與圖層集合的 `CadViewInfo` 物件。
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -99,65 +100,69 @@ import com.groupdocs.viewer.results.CadViewInfo;
 CadViewInfo info = (CadViewInfo) viewer.getViewInfo(ViewInfoOptions.forHtmlView());
 ```
 
-#### 步驟 3：擷取佈局和圖層
-
-對從 CAD 檔案中檢索到的佈局和圖層進行迭代。這些迭代可以幫助您了解設計結構或執行進一步的操作，例如篩選或修改。
+### 步驟 3：擷取版面與圖層
+遍歷 `layouts` 與 `layers` 集合。您可以將其記錄、存入資料庫，或傳遞給後續流程。
 
 ```java
-// 迭代 CAD 檔案中的每個佈局
+// Iterate over each layout in the CAD file
 for (Layout layout : info.getLayouts()) {
-    // 根據需要處理每個佈局
+    // Process each layout as needed
 }
 
-// 迭代 CAD 檔案中的每一層
+// Iterate over each layer in the CAD file
 for (Layer layer : info.getLayers()) {
-    // 根據需要處理每一層
+    // Process each layer as needed
 }
 ```
 
-### 故障排除提示
+### 常見陷阱與避免方式
+- **檔案未找到：** 再次確認傳遞給 `Viewer` 的路徑。使用絕對路徑或驗證工作目錄。  
+- **版本不匹配：** 確認 GroupDocs.Viewer 版本與您的 JDK 相符（25.x 系列支援 JDK 8‑17）。  
+- **記憶體洩漏：** 永遠使用上方示範的 `try‑with‑resources` 模式；它會自動釋放原生資源。
 
-- **文件未找到異常：** 確保您的文件路徑設定正確且可存取。
-- **版本相容性問題：** 驗證您正在使用的 GroupDocs.Viewer 版本是否與您的 Java 設定相容。
+## 實務應用
 
-## 實際應用
+| 使用情境 | 效益 |
+|----------|------|
+| **自動化設計審查** | 提取版面名稱以產生合規檢查清單。 |
+| **批次轉換** | 在將 DWG 轉換為 PDF 或 SVG 時保留圖層可見性。 |
+| **自訂報告** | 將圖層中繼資料匯入 Excel 或 CSV，以作稽核追蹤。 |
+| **雲端協作** | 將版面與圖層資訊同步至文件管理系統。 |
 
-了解如何以程式設計方式檢索佈局和圖層在各種情況下都會有所幫助：
+## 效能考量
+處理大型 CAD 檔案時，請留意以下建議：
 
-1. **自動化設計評審：** 自動提取和分析佈局資料以進行品質檢查。
-2. **設計轉換：** 將 CAD 檔案轉換為不同的格式，同時保留其結構完整性。
-3. **圖層管理工具：** 開發可協助工程師更有效率地管理和修改 CAD 設計的工具。
-
-## 性能考慮
-
-處理大型 CAD 檔案可能會佔用大量資源，因此請考慮以下技巧來優化效能：
-
-- **記憶體管理：** 使用 try-with-resources `Viewer` 實例以確保正確關閉和記憶體釋放。
-- **高效迭代：** 如果可能的話，分批處理佈局和圖層以減少開銷。
-- **資源利用率：** 監控應用程式的 CPU 和記憶體使用情況，尤其是在處理大型或複雜的 CAD 檔案時。
+- **記憶體管理：** `Viewer` 物件佔用原生資源；務必及時關閉。  
+- **批次處理：** 若需處理數千張圖紙，請考慮使用生產者‑消費者佇列，以限制同時的 `Viewer` 實例數量。  
+- **監控：** 使用 Java 效能分析工具（如 VisualVM）監測抽取過程中的堆積使用情況。  
 
 ## 結論
-
-使用 GroupDocs.Viewer for Java 從 CAD 圖紙中擷取佈局和圖層可以顯著增強您以程式設計方式處理設計資料的方式。本教學將幫助您掌握在專案中有效實現此功能的知識。如需進一步探索，您可以考慮深入研究 GroupDocs.Viewer 的其他功能，或將其與其他工具集成，以建立全面的解決方案。
+您現在已掌握使用 GroupDocs.Viewer 進行 **retrieving CAD layouts Java** 的完整、可投入生產的方法。此功能可大幅簡化設計自動化、提升資料一致性，並減少工程流程中的人工工作量。
 
 ### 後續步驟
+- 嘗試擷取其他 CAD 中繼資料，例如尺寸或區塊定義。  
+- 將此抽取與 GroupDocs.Conversion 結合，以產生每個版面的預覽影像。  
+- 探索雲端儲存整合（AWS S3、Azure Blob），即時取得 CAD 檔案。
 
-- 試驗 GroupDocs.Viewer 支援的不同 CAD 檔案格式。
-- 探索如何使用 GroupDocs.Viewer 的渲染功能轉換和顯示這些檔案。
+## 常見問題
 
-## 常見問題部分
+**Q: 我可以取得 CAD 圖面的哪些主要元件？**  
+A: 您可以從 CAD 圖面中擷取版面、圖層、尺寸以及其他結構資訊。
 
-**問題 1：我可以檢索 CAD 圖紙的主要組成部分有哪些？**
-A1：您可以從 CAD 圖紙中提取佈局、圖層、尺寸和其他結構資訊。
+**Q: GroupDocs.Viewer 能處理所有類型的 CAD 檔案嗎？**  
+A: 能，它支援多種格式，如 DWG、DXF、DGN 等，但仍需確認與您使用的特定檔案類型的相容性。
 
-**Q2：GroupDocs.Viewer 能處理所有類型的 CAD 檔案嗎？**
-A2：是的，它支援各種格式，例如 DWG、DXF、DGN 等，但始終要驗證與您正在處理的特定檔案類型的相容性。
+**Q: 如何確保我的應用程式有效處理大型 CAD 檔案？**  
+A: 透過即時關閉資源來最佳化記憶體使用，並在可能的情況下將資料分成較小的區塊處理。
 
-**問題 3：如何確保我的應用程式能夠有效處理大型 CAD 檔案？**
-A3：透過及時關閉資源來優化記憶體使用情況，並考慮以較小的區塊處理資料（如果可能）。
+**Q: 抽取時能過濾圖層嗎？**  
+A: 雖然未提供直接過濾功能，但您可在抽取後實作自訂邏輯，以依需求管理圖層。
 
-**Q4：擷取過程中有沒有辦法過濾圖層？**
-A4：雖然不提供直接過濾，但您可以根據需要在提取後實現自訂邏輯來管理層。
+**Q: GroupDocs.Viewer 能與雲端儲存解決方案整合嗎？**  
+A: 能，它可無縫結合各種雲端服務，用於儲存與存取 CAD 檔案。
 
-**Q5：GroupDocs.Viewer 可以與雲端儲存解決方案整合嗎？**
-A5：是的，它可以與各種雲端服務無縫協作，用於儲存和存取 CAD 檔案。
+---
+
+**最後更新：** 2026-04-06  
+**測試環境：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs

@@ -1,42 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Pelajari cara mengekstrak tata letak dan lapisan dari file CAD secara terprogram menggunakan GroupDocs.Viewer untuk Java. Ideal untuk proyek teknik yang membutuhkan manajemen data desain yang tepat."
-"title": "Ambil Tata Letak dan Lapisan CAD di Java dengan GroupDocs.Viewer"
-"url": "/id/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-06'
+description: Pelajari cara mengambil tata letak CAD di Java menggunakan GroupDocs.Viewer
+  untuk Java, mengekstrak tata letak dan lapisan dari file CAD untuk manajemen data
+  desain yang akurat.
+keywords:
+- retrieve cad layouts java
+- groupdocs viewer java
+- cad layers extraction
+title: Mengambil Layout CAD di Java dengan GroupDocs.Viewer
 type: docs
+url: /id/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# Cara Mengambil Tata Letak dan Lapisan CAD menggunakan GroupDocs.Viewer untuk Java
 
-Dalam dunia teknik dan desain, file Computer-Aided Design (CAD) merupakan alat yang sangat diperlukan yang menyimpan sejumlah besar informasi terperinci tentang desain. File-file ini dapat bersifat kompleks, berisi beberapa tata letak dan lapisan yang memerlukan manajemen dan pengambilan yang tepat untuk pelaksanaan proyek yang efektif. Jika Anda ingin mengekstrak detail tertentu dari gambar CAD secara terprogram di Java, GroupDocs.Viewer untuk Java adalah solusi yang tepat untuk Anda. Tutorial ini akan memandu Anda melalui proses pengambilan semua tata letak dan lapisan dari gambar CAD menggunakan GroupDocs.Viewer.
+# Mengambil Layout CAD Java dengan GroupDocs.Viewer
 
-**Apa yang Akan Anda Pelajari:**
-- Cara mengatur GroupDocs.Viewer untuk Java.
-- Ambil informasi gambar CAD termasuk tata letak dan lapisan.
-- Aplikasi praktis fitur ini dalam skenario dunia nyata.
-- Pertimbangan kinerja saat bekerja dengan file CAD berukuran besar.
+Pada proyek rekayasa modern, **retrieving CAD layouts Java** sangat penting untuk mengotomatisasi analisis desain, kontrol versi, dan alur kerja berbasis data. File CAD sering berisi banyak layout dan layer yang menggambarkan tampilan berbeda dari sebuah produk. Kemampuan untuk mengambil informasi ini secara programatik memungkinkan Anda membangun alat yang mengaudit gambar, menghasilkan laporan, atau mengintegrasikan desain ke dalam sistem yang lebih besar. Dalam tutorial ini, Anda akan belajar cara menggunakan GroupDocs.Viewer untuk Java untuk mengekstrak setiap layout dan layer dari gambar CAD dengan cepat dan andal.
 
-Sebelum terjun ke implementasi, mari kita bahas beberapa prasyarat yang Anda perlukan untuk memulai.
+![Retrieve CAD Layouts and Layers with GroupDocs.Viewer for Java](/viewer/file-formats-support/retrieve-cad-layouts-and-layers-java.png)
+
+## Jawaban Cepat
+- **Apa arti “retrieve CAD layouts Java”?** Artinya mengakses metadata layout dan layer dari file CAD secara programatik melalui aplikasi Java.  
+- **Library mana yang menangani ini?** GroupDocs.Viewer for Java menyediakan API sederhana untuk mengambil informasi layout dan layer.  
+- **Apakah saya memerlukan lisensi?** Tersedia percobaan gratis; lisensi komersial diperlukan untuk penggunaan produksi.  
+- **Bisakah saya memproses file DWG besar?** Ya—gunakan try‑with‑resources dan pemrosesan batch untuk menjaga penggunaan memori tetap rendah.  
+- **Apakah Maven diperlukan?** Maven adalah cara yang direkomendasikan untuk menambahkan GroupDocs.Viewer ke proyek Anda, tetapi Anda juga dapat menggunakan Gradle atau JAR manual.
+
+## Apa itu “retrieve CAD layouts Java”?
+Retrieving CAD layouts Java mengacu pada mengekstrak komponen struktural—layout (ruang kertas) dan layer (grup visibilitas)—dari format CAD seperti DWG atau DXF menggunakan kode Java. Informasi ini penting untuk tugas seperti peninjauan gambar otomatis, pipeline rendering khusus, atau migrasi data desain ke platform lain.
+
+## Mengapa menggunakan GroupDocs.Viewer untuk Java?
+GroupDocs.Viewer menyederhanakan kompleksitas parsing file CAD, menawarkan API tingkat tinggi yang bekerja pada banyak versi CAD tanpa memerlukan pustaka native AutoCAD. Ini menyediakan:
+
+- **Cross‑format support** (DWG, DXF, DGN, dll.)  
+- **Fast, memory‑efficient processing** – ideal untuk aplikasi sisi server  
+- **Simple Maven integration** – menjaga dependensi tetap rapi  
+- **Robust licensing options** – lisensi percobaan, sementara, atau lisensi produksi penuh  
 
 ## Prasyarat
+Sebelum Anda memulai, pastikan Anda memiliki:
 
-Untuk mengikuti tutorial ini, pastikan Anda memiliki:
+1. **Java Development Kit (JDK) 8+** terpasang.  
+2. **IDE** (IntelliJ IDEA, Eclipse, NetBeans, dll.).  
+3. **GroupDocs.Viewer untuk Java** – ditambahkan melalui Maven (lihat di bawah).  
 
-1. **Kit Pengembangan Java (JDK):** Pastikan JDK 8 atau yang lebih baru terinstal di komputer Anda.
-2. **Lingkungan Pengembangan Terpadu (IDE):** IDE Java apa pun seperti IntelliJ IDEA, Eclipse, atau NetBeans akan berfungsi dengan baik.
-3. **GroupDocs.Viewer untuk Pustaka Java:** Kami akan menggunakan versi terbaru, yang dapat Anda sertakan melalui Maven.
-
-### Pengaturan Lingkungan
-
-Pastikan Anda memiliki server lokal atau jarak jauh yang siap menjalankan aplikasi Java Anda. Anda juga harus terbiasa menggunakan Maven karena menyederhanakan manajemen ketergantungan dalam proyek Java.
+### Penyiapan Lingkungan
+Anda memerlukan mesin (lokal atau remote) yang dapat menjalankan aplikasi Java dan mengakses sistem file tempat file CAD Anda berada.
 
 ## Menyiapkan GroupDocs.Viewer untuk Java
 
-Untuk mengintegrasikan GroupDocs.Viewer ke dalam proyek Java Anda, gunakan Maven untuk memudahkan instalasi dan pembaruan. Berikut cara mengaturnya:
-
 ### Konfigurasi Maven
-
-Tambahkan repositori dan dependensi berikut ke `pom.xml` mengajukan:
+Tambahkan repository dan dependensi ke `pom.xml` Anda. Ini satu-satunya perubahan yang perlu Anda lakukan pada file build proyek Anda.
 
 ```xml
 <repositories>
@@ -56,26 +70,18 @@ Tambahkan repositori dan dependensi berikut ke `pom.xml` mengajukan:
 ```
 
 ### Akuisisi Lisensi
+GroupDocs.Viewer menawarkan percobaan gratis, lisensi sementara untuk evaluasi jangka pendek, dan lisensi penuh untuk produksi.
 
-GroupDocs.Viewer menawarkan uji coba gratis, yang memungkinkan Anda menguji kemampuannya sebelum membeli atau memperoleh lisensi sementara untuk evaluasi lanjutan.
-
-1. **Uji Coba Gratis:** Unduh versi terbaru dari [Unduhan GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **Lisensi Sementara:** Ajukan permohonan lisensi sementara pada [Halaman Pembelian GroupDocs](https://purchase.groupdocs.com/temporary-license/) untuk menjelajahi fitur-fitur lanjutan.
-3. **Pembelian:** Untuk penggunaan produksi, beli lisensi melalui [Toko GroupDocs](https://purchase.groupdocs.com/buy).
-
-Setelah menyiapkan lingkungan dan dependensi, Anda dapat mulai mengimplementasikan fitur tersebut.
+1. **Free Trial:** Unduh versi terbaru dari [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/).  
+2. **Temporary License:** Ajukan lisensi sementara di [GroupDocs Purchase Page](https://purchase.groupdocs.com/temporary-license/) untuk menjelajahi fitur lanjutan.  
+3. **Purchase:** Untuk penggunaan jangka panjang, beli lisensi melalui [GroupDocs Store](https://purchase.groupdocs.com/buy).
 
 ## Panduan Implementasi
 
-Di bagian ini, kami akan menguraikan cara mengambil tata letak dan lapisan CAD menggunakan GroupDocs.Viewer di Java. Kami akan membahas setiap langkah yang diperlukan untuk implementasi yang berhasil.
+Berikut adalah panduan langkah demi langkah yang menunjukkan secara tepat cara **retrieve CAD layouts Java** menggunakan GroupDocs.Viewer.
 
-### Ikhtisar Fitur
-
-Fungsionalitas ini memungkinkan pengembang untuk mengakses informasi tata letak dan lapisan secara terprogram dari file CAD, yang dapat menjadi krusial untuk aplikasi yang memerlukan analisis gambar terperinci atau modifikasi berdasarkan struktur desain.
-
-#### Langkah 1: Inisialisasi GroupDocs.Viewer
-
-Buat contoh dari `Viewer` dengan menyediakan jalur ke berkas CAD Anda. Objek ini akan berfungsi sebagai gerbang untuk mengakses berbagai fitur yang disediakan oleh GroupDocs.Viewer.
+### Langkah 1: Inisialisasi Viewer
+Buat instance `Viewer` dengan menunjuk ke file CAD Anda. Blok `try‑with‑resources` menjamin bahwa viewer ditutup dengan benar, membebaskan memori.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,13 +90,12 @@ import java.io.File;
 String documentPath = new File("YOUR_DOCUMENT_DIRECTORY", "SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS").getAbsolutePath();
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // Operasi selanjutnya akan dilakukan di sini.
+    // Further operations will be performed here.
 }
 ```
 
-#### Langkah 2: Ambil Informasi Tampilan CAD
-
-Memanfaatkan `getViewInfo` metode untuk mengambil detail tentang tata letak dan lapisan. Informasi ini dienkapsulasi dalam `CadViewInfo` obyek.
+### Langkah 2: Dapatkan Informasi Tampilan
+Gunakan `getViewInfo` dengan `ViewInfoOptions.forHtmlView()` untuk memperoleh objek `CadViewInfo` yang berisi koleksi layout dan layer.
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -99,65 +104,72 @@ import com.groupdocs.viewer.results.CadViewInfo;
 CadViewInfo info = (CadViewInfo) viewer.getViewInfo(ViewInfoOptions.forHtmlView());
 ```
 
-#### Langkah 3: Ekstrak Tata Letak dan Lapisan
-
-Ulangi tata letak dan lapisan yang diambil dari berkas CAD. Iterasi ini dapat membantu Anda memahami struktur desain atau melakukan operasi lebih lanjut seperti pemfilteran atau modifikasi.
+### Langkah 3: Ekstrak Layout dan Layer
+Iterasi melalui koleksi `layouts` dan `layers`. Anda dapat mencatatnya, menyimpannya di basis data, atau mengirimnya ke proses hilir.
 
 ```java
-// Ulangi setiap tata letak dalam file CAD
+// Iterate over each layout in the CAD file
 for (Layout layout : info.getLayouts()) {
-    // Memproses setiap tata letak sesuai kebutuhan
+    // Process each layout as needed
 }
 
-// Ulangi setiap lapisan dalam file CAD
+// Iterate over each layer in the CAD file
 for (Layer layer : info.getLayers()) {
-    // Proses setiap lapisan sesuai kebutuhan
+    // Process each layer as needed
 }
 ```
 
-### Tips Pemecahan Masalah
-
-- **Pengecualian File Tidak Ditemukan:** Pastikan jalur dokumen Anda diatur dengan benar dan dapat diakses.
-- **Masalah Kompatibilitas Versi:** Verifikasi bahwa Anda menggunakan versi GroupDocs.Viewer yang kompatibel dengan pengaturan Java Anda.
+### Kesalahan Umum & Cara Menghindarinya
+- **File Not Found:** Periksa kembali jalur yang Anda berikan ke `Viewer`. Gunakan jalur absolut atau verifikasi direktori kerja.  
+- **Version Mismatch:** Pastikan versi GroupDocs.Viewer cocok dengan JDK Anda (seri 25.x bekerja dengan JDK 8‑17).  
+- **Memory Leaks:** Selalu gunakan pola `try‑with‑resources` seperti yang ditunjukkan di atas; secara otomatis melepaskan sumber daya native.
 
 ## Aplikasi Praktis
+Retrieving CAD layouts Java membuka pintu ke banyak skenario dunia nyata:
 
-Memahami cara mengambil tata letak dan lapisan secara terprogram dapat bermanfaat dalam berbagai skenario:
-
-1. **Ulasan Desain Otomatis:** Ekstrak dan analisis data tata letak secara otomatis untuk pemeriksaan kualitas.
-2. **Konversi Desain:** Mengonversi file CAD ke dalam format berbeda sambil mempertahankan integritas strukturalnya.
-3. **Alat Manajemen Lapisan:** Mengembangkan alat yang membantu insinyur mengelola dan memodifikasi desain CAD secara lebih efisien.
+| Use Case | Benefit |
+|----------|---------|
+| **Peninjauan Desain Otomatis** | Ekstrak nama layout untuk membuat daftar periksa kepatuhan. |
+| **Konversi Batch** | Pertahankan visibilitas layer saat mengonversi DWG ke PDF atau SVG. |
+| **Pelaporan Kustom** | Ambil metadata layer ke Excel atau CSV untuk jejak audit. |
+| **Kolaborasi Berbasis Cloud** | Sinkronkan info layout dan layer dengan sistem manajemen dokumen. |
 
 ## Pertimbangan Kinerja
+Saat menangani file CAD besar, perhatikan tips berikut:
 
-Bekerja dengan file CAD berukuran besar dapat menghabiskan banyak sumber daya, jadi pertimbangkan kiat-kiat berikut untuk mengoptimalkan kinerja:
-
-- **Manajemen Memori:** Gunakan coba-dengan-sumber-daya untuk `Viewer` contoh untuk memastikan penutupan dan pelepasan memori yang tepat.
-- **Iterasi yang Efisien:** Tata letak proses dan lapisan secara berkelompok jika memungkinkan untuk mengurangi biaya overhead.
-- **Pemanfaatan Sumber Daya:** Pantau penggunaan CPU dan memori aplikasi Anda, terutama saat menangani file CAD yang besar atau rumit.
+- **Memory Management:** Objek `Viewer` menyimpan sumber daya native; selalu tutup dengan cepat.  
+- **Batch Processing:** Jika Anda perlu memproses ribuan gambar, pertimbangkan antrian produsen‑konsumen untuk membatasi instance `Viewer` yang berjalan bersamaan.  
+- **Monitoring:** Gunakan alat profiling Java (mis., VisualVM) untuk memantau penggunaan heap selama ekstraksi.
 
 ## Kesimpulan
+Anda kini memiliki metode lengkap dan siap produksi untuk **retrieving CAD layouts Java** menggunakan GroupDocs.Viewer. Kemampuan ini dapat secara dramatis menyederhanakan otomatisasi desain, meningkatkan konsistensi data, dan mengurangi upaya manual dalam pipeline rekayasa.
 
-Mengambil tata letak dan lapisan dari gambar CAD menggunakan GroupDocs.Viewer untuk Java dapat meningkatkan cara Anda menangani data desain secara terprogram secara signifikan. Tutorial ini telah membekali Anda dengan pengetahuan untuk mengimplementasikan fitur ini secara efektif dalam proyek Anda. Untuk eksplorasi lebih lanjut, pertimbangkan untuk mendalami fitur lain dari GroupDocs.Viewer atau mengintegrasikannya dengan alat tambahan untuk menciptakan solusi yang komprehensif.
+### Langkah Selanjutnya
+- Coba ekstrak metadata CAD tambahan seperti dimensi atau definisi blok.  
+- Gabungkan ekstraksi ini dengan GroupDocs.Conversion untuk menghasilkan gambar pratinjau setiap layout.  
+- Jelajahi integrasi penyimpanan cloud (AWS S3, Azure Blob) untuk mengambil file CAD sesuai permintaan.
 
-### Langkah Berikutnya
+## Pertanyaan yang Sering Diajukan
 
-- Bereksperimen dengan berbagai format file CAD yang didukung oleh GroupDocs.Viewer.
-- Jelajahi cara mengonversi dan menampilkan file-file ini menggunakan kemampuan rendering GroupDocs.Viewer.
+**Q: Apa komponen utama dari gambar CAD yang dapat saya ambil?**  
+A: Anda dapat mengekstrak layout, layer, dimensi, dan informasi struktural lainnya dari gambar CAD.
 
-## Bagian FAQ
+**Q: Bisakah GroupDocs.Viewer menangani semua jenis file CAD?**  
+A: Ya, ia mendukung berbagai format seperti DWG, DXF, DGN, dll., tetapi selalu verifikasi kompatibilitas dengan tipe file spesifik yang Anda gunakan.
 
-**Q1: Apa saja komponen utama gambar CAD yang dapat saya ambil?**
-A1: Anda dapat mengekstrak tata letak, lapisan, dimensi, dan informasi struktural lainnya dari gambar CAD.
+**Q: Bagaimana saya memastikan aplikasi saya menangani file CAD besar secara efisien?**  
+A: Optimalkan penggunaan memori dengan menutup sumber daya segera dan pertimbangkan memproses data dalam potongan lebih kecil jika memungkinkan.
 
-**Q2: Dapatkah GroupDocs.Viewer menangani semua jenis berkas CAD?**
-A2: Ya, ia mendukung berbagai format seperti DWG, DXF, DGN, dll., tetapi selalu verifikasi kompatibilitas dengan jenis file spesifik yang sedang Anda gunakan.
+**Q: Apakah ada cara untuk memfilter layer selama ekstraksi?**  
+A: Meskipun penyaringan langsung tidak disediakan, Anda dapat menerapkan logika khusus setelah ekstraksi untuk mengelola layer sesuai kebutuhan.
 
-**Q3: Bagaimana cara memastikan aplikasi saya menangani berkas CAD besar secara efisien?**
-A3: Optimalkan penggunaan memori dengan segera menutup sumber daya dan pertimbangkan untuk memproses data dalam potongan yang lebih kecil jika memungkinkan.
+**Q: Bisakah GroupDocs.Viewer diintegrasikan dengan solusi penyimpanan cloud?**  
+A: Ya, ia dapat bekerja mulus dengan berbagai layanan cloud untuk menyimpan dan mengakses file CAD.
 
-**Q4: Apakah ada cara untuk memfilter lapisan selama ekstraksi?**
-A4: Meskipun penyaringan langsung tidak disediakan, Anda dapat menerapkan logika khusus pasca-ekstraksi untuk mengelola lapisan sesuai kebutuhan.
+---
 
-**Q5: Dapatkah GroupDocs.Viewer diintegrasikan dengan solusi penyimpanan cloud?**
-A5: Ya, dapat bekerja lancar dengan berbagai layanan cloud untuk menyimpan dan mengakses file CAD.
+**Terakhir Diperbarui:** 2026-04-06  
+**Diuji Dengan:** GroupDocs.Viewer 25.2 for Java  
+**Penulis:** GroupDocs  
+
+---

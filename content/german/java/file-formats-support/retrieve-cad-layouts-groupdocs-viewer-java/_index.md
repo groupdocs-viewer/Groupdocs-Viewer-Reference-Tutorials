@@ -1,42 +1,56 @@
 ---
-"date": "2025-04-24"
-"description": "Erfahren Sie, wie Sie mit GroupDocs.Viewer für Java programmgesteuert Layouts und Ebenen aus CAD-Dateien extrahieren. Ideal für Ingenieurprojekte, die eine präzise Konstruktionsdatenverwaltung erfordern."
-"title": "Abrufen von CAD-Layouts und -Ebenen in Java mit GroupDocs.Viewer"
-"url": "/de/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-04-06'
+description: Erfahren Sie, wie Sie CAD‑Layouts in Java mit GroupDocs.Viewer für Java
+  abrufen, Layouts und Ebenen aus CAD‑Dateien extrahieren und so eine präzise Verwaltung
+  von Design‑Daten ermöglichen.
+keywords:
+- retrieve cad layouts java
+- groupdocs viewer java
+- cad layers extraction
+title: CAD-Layouts mit Java und GroupDocs.Viewer abrufen
 type: docs
+url: /de/java/file-formats-support/retrieve-cad-layouts-groupdocs-viewer-java/
+weight: 1
 ---
-# So rufen Sie CAD-Layouts und -Ebenen mit GroupDocs.Viewer für Java ab
 
-In der Welt des Ingenieurwesens und Designs sind CAD-Dateien (Computer-Aided Design) unverzichtbare Werkzeuge, die große Mengen detaillierter Informationen zu Designs speichern. Diese Dateien können komplex sein und mehrere Layouts und Ebenen enthalten, die für eine effektive Projektabwicklung präzise verwaltet und abgerufen werden müssen. Wenn Sie bestimmte Details aus CAD-Zeichnungen programmatisch in Java extrahieren möchten, ist GroupDocs.Viewer für Java die ideale Lösung. Dieses Tutorial führt Sie durch den Prozess des Abrufens aller Layouts und Ebenen aus einer CAD-Zeichnung mit GroupDocs.Viewer.
+# CAD-Layouts in Java mit GroupDocs.Viewer abrufen
 
-**Was Sie lernen werden:**
-- So richten Sie GroupDocs.Viewer für Java ein.
-- Rufen Sie CAD-Zeichnungsinformationen einschließlich Layouts und Ebenen ab.
-- Praktische Anwendungen dieser Funktion in realen Szenarien.
-- Leistungsüberlegungen beim Arbeiten mit großen CAD-Dateien.
+In modernen Ingenieurprojekten ist **retrieving CAD layouts Java** wesentlich, um die Designanalyse, Versionskontrolle und datengetriebene Workflows zu automatisieren. CAD-Dateien enthalten oft mehrere Layouts und Ebenen, die verschiedene Ansichten eines Produkts beschreiben. Wenn Sie diese Informationen programmatisch abrufen können, lassen sich Werkzeuge erstellen, die Zeichnungen prüfen, Berichte erzeugen oder Designs in größere Systeme integrieren. In diesem Tutorial lernen Sie, wie Sie GroupDocs.Viewer für Java verwenden, um jedes Layout und jede Ebene einer CAD-Zeichnung schnell und zuverlässig zu extrahieren.
 
-Bevor wir uns in die Implementierung stürzen, wollen wir einige Voraussetzungen besprechen, die Sie für den Einstieg benötigen.
+![CAD-Layouts und Ebenen mit GroupDocs.Viewer für Java abrufen](/viewer/file-formats-support/retrieve-cad-layouts-and-layers-java.png)
+
+## Schnelle Antworten
+- **Was bedeutet “retrieve CAD layouts Java”?** Es bedeutet, programmgesteuert auf die Layout- und Ebenen-Metadaten von CAD-Dateien aus einer Java-Anwendung zuzugreifen.  
+- **Welche Bibliothek übernimmt das?** GroupDocs.Viewer for Java bietet eine einfache API zum Abrufen von Layout- und Ebeneninformationen.  
+- **Benötige ich eine Lizenz?** Eine kostenlose Testversion ist verfügbar; für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.  
+- **Kann ich große DWG-Dateien verarbeiten?** Ja – verwenden Sie try‑with‑resources und Batch-Verarbeitung, um den Speicherverbrauch gering zu halten.  
+- **Ist Maven erforderlich?** Maven ist der empfohlene Weg, GroupDocs.Viewer zu Ihrem Projekt hinzuzufügen, aber Sie können auch Gradle oder manuelle JARs verwenden.
+
+## Was ist “retrieve CAD layouts Java”?
+Retrieving CAD layouts Java bezieht sich auf das Extrahieren der strukturellen Komponenten – Layouts (Papierbereiche) und Ebenen (Sichtbarkeitsgruppen) – aus CAD-Formaten wie DWG oder DXF mittels Java-Code. Diese Informationen sind entscheidend für Aufgaben wie automatisierte Zeichenprüfungen, benutzerdefinierte Rendering-Pipelines oder die Migration von Designdaten zu anderen Plattformen.
+
+## Warum GroupDocs.Viewer für Java verwenden?
+GroupDocs.Viewer abstrahiert die Komplexität der CAD-Datei-Analyse und bietet eine High‑Level‑API, die über viele CAD-Versionen hinweg funktioniert, ohne native AutoCAD-Bibliotheken zu benötigen. Es liefert:
+
+- **Cross‑format support** (DWG, DXF, DGN, etc.)  
+- **Fast, memory‑efficient processing** – ideal für serverseitige Anwendungen  
+- **Simple Maven integration** – hält Abhängigkeiten übersichtlich  
+- **Robust licensing options** – Testversion, temporäre oder vollständige Produktionslizenzen  
 
 ## Voraussetzungen
+Stellen Sie vor dem Start sicher, dass Sie Folgendes haben:
 
-Um diesem Tutorial folgen zu können, stellen Sie sicher, dass Sie über Folgendes verfügen:
+1. **Java Development Kit (JDK) 8+** installiert.  
+2. **Eine IDE** (IntelliJ IDEA, Eclipse, NetBeans usw.).  
+3. **GroupDocs.Viewer for Java** – über Maven hinzugefügt (siehe unten).  
 
-1. **Java Development Kit (JDK):** Stellen Sie sicher, dass JDK 8 oder höher auf Ihrem Computer installiert ist.
-2. **Integrierte Entwicklungsumgebung (IDE):** Jede Java-IDE wie IntelliJ IDEA, Eclipse oder NetBeans funktioniert einwandfrei.
-3. **GroupDocs.Viewer für Java-Bibliothek:** Wir verwenden die neuste Version, die Sie über Maven einbinden können.
+### Umgebung einrichten
+Sie benötigen eine Maschine (lokal oder remote), die Java-Anwendungen ausführen kann und Zugriff auf das Dateisystem hat, in dem Ihre CAD-Dateien gespeichert sind.
 
-### Umgebungs-Setup
-
-Stellen Sie sicher, dass Sie einen lokalen oder Remote-Server für die Ausführung Ihrer Java-Anwendungen haben. Sie sollten außerdem mit der Verwendung von Maven vertraut sein, da es die Abhängigkeitsverwaltung in Java-Projekten vereinfacht.
-
-## Einrichten von GroupDocs.Viewer für Java
-
-Um GroupDocs.Viewer in Ihr Java-Projekt zu integrieren, verwenden Sie Maven für eine einfache Installation und Aktualisierung. So richten Sie es ein:
+## GroupDocs.Viewer für Java einrichten
 
 ### Maven-Konfiguration
-
-Fügen Sie das folgende Repository und die Abhängigkeit zu Ihrem `pom.xml` Datei:
+Fügen Sie das Repository und die Abhängigkeit zu Ihrer `pom.xml` hinzu. Dies ist die einzige Änderung, die Sie an der Build‑Datei Ihres Projekts vornehmen müssen.
 
 ```xml
 <repositories>
@@ -55,27 +69,19 @@ Fügen Sie das folgende Repository und die Abhängigkeit zu Ihrem `pom.xml` Date
 </dependencies>
 ```
 
-### Lizenzerwerb
+### Lizenzbeschaffung
+GroupDocs.Viewer bietet eine kostenlose Testversion, eine temporäre Lizenz für kurzfristige Evaluierung und eine Voll‑Lizenz für die Produktion.
 
-GroupDocs.Viewer bietet eine kostenlose Testversion, mit der Sie die Funktionen testen können, bevor Sie eine Kauf- oder temporäre Lizenz zur erweiterten Evaluierung erwerben.
+1. **Free Trial:** Laden Sie die neueste Version von [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) herunter.  
+2. **Temporary License:** Beantragen Sie eine temporäre Lizenz auf der [GroupDocs Purchase Page](https://purchase.groupdocs.com/temporary-license/), um erweiterte Funktionen zu erkunden.  
+3. **Purchase:** Für den langfristigen Einsatz kaufen Sie eine Lizenz über den [GroupDocs Store](https://purchase.groupdocs.com/buy).
 
-1. **Kostenlose Testversion:** Laden Sie die neueste Version herunter von [GroupDocs-Downloads](https://releases.groupdocs.com/viewer/java/).
-2. **Temporäre Lizenz:** Beantragen Sie eine vorläufige Lizenz auf der [GroupDocs-Kaufseite](https://purchase.groupdocs.com/temporary-license/) um erweiterte Funktionen zu erkunden.
-3. **Kaufen:** Für den produktiven Einsatz erwerben Sie eine Lizenz über [GroupDocs Store](https://purchase.groupdocs.com/buy).
+## Implementierungs‑Leitfaden
 
-Nachdem Sie Ihre Umgebung und Abhängigkeiten eingerichtet haben, können Sie mit der Implementierung der Funktion beginnen.
+Im Folgenden finden Sie eine Schritt‑für‑Schritt‑Anleitung, die genau zeigt, wie Sie **retrieve CAD layouts Java** mit GroupDocs.Viewer verwenden.
 
-## Implementierungshandbuch
-
-In diesem Abschnitt erläutern wir, wie Sie CAD-Layouts und -Layer mit GroupDocs.Viewer in Java abrufen. Wir behandeln jeden Schritt, der für eine erfolgreiche Implementierung erforderlich ist.
-
-### Funktionsübersicht
-
-Diese Funktionalität ermöglicht Entwicklern den programmgesteuerten Zugriff auf Layout- und Layer-Informationen aus CAD-Dateien. Dies kann für Anwendungen von entscheidender Bedeutung sein, die eine detaillierte Zeichnungsanalyse oder Änderungen auf Grundlage der Designstruktur erfordern.
-
-#### Schritt 1: GroupDocs.Viewer initialisieren
-
-Erstellen Sie eine Instanz von `Viewer` Geben Sie den Pfad zu Ihrer CAD-Datei an. Dieses Objekt dient als Gateway für den Zugriff auf verschiedene Funktionen von GroupDocs.Viewer.
+### Schritt 1: Viewer initialisieren
+Erstellen Sie eine `Viewer`‑Instanz, indem Sie sie auf Ihre CAD‑Datei verweisen. Der `try‑with‑resources`‑Block stellt sicher, dass der Viewer ordnungsgemäß geschlossen wird und Speicher freigibt.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -84,13 +90,12 @@ import java.io.File;
 String documentPath = new File("YOUR_DOCUMENT_DIRECTORY", "SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS").getAbsolutePath();
 
 try (Viewer viewer = new Viewer(documentPath)) {
-    // Hier werden die weiteren Operationen durchgeführt.
+    // Further operations will be performed here.
 }
 ```
 
-#### Schritt 2: CAD-Ansichtsinformationen abrufen
-
-Nutzen Sie die `getViewInfo` Methode zum Abrufen von Details zu Layouts und Ebenen. Diese Informationen sind in einem `CadViewInfo` Objekt.
+### Schritt 2: Ansichtsinformationen abrufen
+Verwenden Sie `getViewInfo` mit `ViewInfoOptions.forHtmlView()`, um ein `CadViewInfo`‑Objekt zu erhalten, das Layout‑ und Ebenensammlungen enthält.
 
 ```java
 import com.groupdocs.viewer.options.ViewInfoOptions;
@@ -99,65 +104,72 @@ import com.groupdocs.viewer.results.CadViewInfo;
 CadViewInfo info = (CadViewInfo) viewer.getViewInfo(ViewInfoOptions.forHtmlView());
 ```
 
-#### Schritt 3: Layouts und Ebenen extrahieren
-
-Iterieren Sie über die aus der CAD-Datei abgerufenen Layouts und Ebenen. Diese Iterationen können Ihnen helfen, die Struktur Ihres Entwurfs zu verstehen oder weitere Vorgänge wie Filtern oder Ändern durchzuführen.
+### Schritt 3: Layouts und Ebenen extrahieren
+Iterieren Sie über die Sammlungen `layouts` und `layers`. Sie können sie protokollieren, in einer Datenbank speichern oder an nachgelagerte Prozesse weitergeben.
 
 ```java
-// Iterieren Sie über jedes Layout in der CAD-Datei
+// Iterate over each layout in the CAD file
 for (Layout layout : info.getLayouts()) {
-    // Verarbeiten Sie jedes Layout nach Bedarf
+    // Process each layout as needed
 }
 
-// Iterieren Sie über jede Ebene in der CAD-Datei
+// Iterate over each layer in the CAD file
 for (Layer layer : info.getLayers()) {
-    // Verarbeiten Sie jede Schicht nach Bedarf
+    // Process each layer as needed
 }
 ```
 
-### Tipps zur Fehlerbehebung
-
-- **Ausnahme „Datei nicht gefunden“:** Stellen Sie sicher, dass Ihr Dokumentpfad richtig eingestellt und zugänglich ist.
-- **Probleme mit der Versionskompatibilität:** Stellen Sie sicher, dass Sie mit Ihrem Java-Setup eine kompatible Version von GroupDocs.Viewer verwenden.
+### Häufige Fallstricke & wie man sie vermeidet
+- **File Not Found:** Überprüfen Sie den Pfad, den Sie an `Viewer` übergeben, doppelt. Verwenden Sie absolute Pfade oder prüfen Sie das Arbeitsverzeichnis.  
+- **Version Mismatch:** Stellen Sie sicher, dass die GroupDocs.Viewer‑Version zu Ihrem JDK passt (die 25.x‑Serie funktioniert mit JDK 8‑17).  
+- **Memory Leaks:** Verwenden Sie stets das oben gezeigte `try‑with‑resources`‑Muster; es gibt native Ressourcen automatisch frei.
 
 ## Praktische Anwendungen
+Retrieving CAD layouts Java eröffnet viele praxisnahe Szenarien:
 
-Zu wissen, wie Layouts und Ebenen programmgesteuert abgerufen werden, kann in verschiedenen Szenarien hilfreich sein:
+| Anwendungsfall | Nutzen |
+|----------------|--------|
+| **Automatisierte Design‑Überprüfung** | Extrahieren Sie Layout‑Namen, um Prüflisten für die Konformität zu erstellen. |
+| **Stapelkonvertierung** | Bewahren Sie die Ebenen‑Sichtbarkeit beim Konvertieren von DWG zu PDF oder SVG. |
+| **Benutzerdefinierte Berichterstellung** | Ziehen Sie Ebenen‑Metadaten in Excel oder CSV für Prüfpfade. |
+| **Cloud‑basierte Zusammenarbeit** | Synchronisieren Sie Layout‑ und Ebenen‑Informationen mit einem Dokumenten‑Management‑System. |
 
-1. **Automatisierte Designprüfungen:** Extrahieren und analysieren Sie Layoutdaten automatisch für Qualitätsprüfungen.
-2. **Designkonvertierung:** Konvertieren Sie CAD-Dateien in verschiedene Formate und bewahren Sie dabei ihre strukturelle Integrität.
-3. **Tools zur Ebenenverwaltung:** Entwickeln Sie Tools, mit denen Ingenieure CAD-Designs effizienter verwalten und ändern können.
+## Leistungsüberlegungen
+Bei der Arbeit mit großen CAD‑Dateien beachten Sie diese Tipps:
 
-## Überlegungen zur Leistung
+- **Memory Management:** Das `Viewer`‑Objekt hält native Ressourcen; schließen Sie es immer umgehend.  
+- **Batch Processing:** Wenn Sie Tausende von Zeichnungen verarbeiten müssen, erwägen Sie eine Producer‑Consumer‑Warteschlange, um gleichzeitige `Viewer`‑Instanzen zu begrenzen.  
+- **Monitoring:** Verwenden Sie Java‑Profiling‑Tools (z. B. VisualVM), um die Heap‑Nutzung während der Extraktion zu beobachten.
 
-Das Arbeiten mit großen CAD-Dateien kann ressourcenintensiv sein. Beachten Sie daher diese Tipps zur Leistungsoptimierung:
-
-- **Speicherverwaltung:** Verwenden Sie try-with-resources für `Viewer` Instanzen, um ein ordnungsgemäßes Schließen und Freigeben des Speichers sicherzustellen.
-- **Effiziente Iteration:** Verarbeiten Sie Layouts und Ebenen nach Möglichkeit stapelweise, um den Aufwand zu reduzieren.
-- **Ressourcennutzung:** Überwachen Sie die CPU- und Speicherauslastung Ihrer Anwendung, insbesondere beim Umgang mit großen oder komplexen CAD-Dateien.
-
-## Abschluss
-
-Das Abrufen von Layouts und Ebenen aus CAD-Zeichnungen mit GroupDocs.Viewer für Java kann die programmgesteuerte Verarbeitung von Konstruktionsdaten erheblich verbessern. Dieses Tutorial vermittelt Ihnen das Wissen, diese Funktion effektiv in Ihren Projekten zu implementieren. Für weitere Informationen können Sie weitere Funktionen von GroupDocs.Viewer erkunden oder es mit zusätzlichen Tools integrieren, um umfassende Lösungen zu erstellen.
+## Fazit
+Sie haben nun eine vollständige, produktionsreife Methode zum **retrieving CAD layouts Java** mit GroupDocs.Viewer. Diese Fähigkeit kann die Design‑Automatisierung erheblich vereinfachen, die Datenkonsistenz verbessern und den manuellen Aufwand in Engineering‑Pipelines reduzieren.
 
 ### Nächste Schritte
+- Versuchen Sie, zusätzliche CAD‑Metadaten wie Maße oder Blockdefinitionen zu extrahieren.  
+- Kombinieren Sie diese Extraktion mit GroupDocs.Conversion, um Vorschaubilder jedes Layouts zu erzeugen.  
+- Erkunden Sie die Integration von Cloud‑Speicher (AWS S3, Azure Blob), um CAD‑Dateien bei Bedarf abzurufen.
 
-- Experimentieren Sie mit verschiedenen CAD-Dateiformaten, die von GroupDocs.Viewer unterstützt werden.
-- Informieren Sie sich, wie Sie diese Dateien mit den Rendering-Funktionen von GroupDocs.Viewer konvertieren und anzeigen.
+## Häufig gestellte Fragen
 
-## FAQ-Bereich
+**Q: Was sind die Hauptkomponenten einer CAD‑Zeichnung, die ich abrufen kann?**  
+A: Sie können Layouts, Ebenen, Maße und andere strukturelle Informationen aus CAD‑Zeichnungen extrahieren.
 
-**F1: Welche Hauptkomponenten einer CAD-Zeichnung kann ich abrufen?**
-A1: Sie können Layouts, Ebenen, Abmessungen und andere Strukturinformationen aus CAD-Zeichnungen extrahieren.
+**Q: Kann GroupDocs.Viewer alle Arten von CAD‑Dateien verarbeiten?**  
+A: Ja, es unterstützt verschiedene Formate wie DWG, DXF, DGN usw., aber prüfen Sie stets die Kompatibilität mit dem jeweiligen Dateityp, mit dem Sie arbeiten.
 
-**F2: Kann GroupDocs.Viewer alle Arten von CAD-Dateien verarbeiten?**
-A2: Ja, es unterstützt verschiedene Formate wie DWG, DXF, DGN usw., überprüfen Sie jedoch immer die Kompatibilität mit dem spezifischen Dateityp, mit dem Sie arbeiten.
+**Q: Wie stelle ich sicher, dass meine Anwendung große CAD‑Dateien effizient verarbeitet?**  
+A: Optimieren Sie die Speichernutzung, indem Sie Ressourcen umgehend schließen, und erwägen Sie, Daten nach Möglichkeit in kleineren Portionen zu verarbeiten.
 
-**F3: Wie stelle ich sicher, dass meine Anwendung große CAD-Dateien effizient verarbeitet?**
-A3: Optimieren Sie die Speichernutzung, indem Sie Ressourcen umgehend schließen und die Datenverarbeitung nach Möglichkeit in kleineren Blöcken durchführen.
+**Q: Gibt es eine Möglichkeit, Ebenen während der Extraktion zu filtern?**  
+A: Obwohl ein direktes Filtern nicht bereitgestellt wird, können Sie nach der Extraktion benutzerdefinierte Logik implementieren, um Ebenen nach Bedarf zu verwalten.
 
-**F4: Gibt es eine Möglichkeit, Ebenen während der Extraktion zu filtern?**
-A4: Obwohl keine direkte Filterung möglich ist, können Sie nach der Extraktion eine benutzerdefinierte Logik implementieren, um die Ebenen nach Bedarf zu verwalten.
+**Q: Kann GroupDocs.Viewer in Cloud‑Speicher‑Lösungen integriert werden?**  
+A: Ja, es lässt sich nahtlos mit verschiedenen Cloud‑Diensten zum Speichern und Zugreifen auf CAD‑Dateien verbinden.
 
-**F5: Kann GroupDocs.Viewer in Cloud-Speicherlösungen integriert werden?**
-A5: Ja, es kann nahtlos mit verschiedenen Cloud-Diensten zum Speichern und Zugreifen auf CAD-Dateien zusammenarbeiten.
+---
+
+**Zuletzt aktualisiert:** 2026-04-06  
+**Getestet mit:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  
+
+---
