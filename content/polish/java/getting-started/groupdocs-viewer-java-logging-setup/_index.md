@@ -1,43 +1,61 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak skonfigurować rejestrowanie za pomocą GroupDocs.Viewer dla Java, obejmujące rejestrowanie w konsoli i w plikach, aby usprawnić proces renderowania dokumentów."
-"title": "Konfigurowanie rejestrowania w GroupDocs.Viewer dla konsoli Java i przewodnika rejestrowania plików"
-"url": "/pl/java/getting-started/groupdocs-viewer-java-logging-setup/"
-"weight": 1
+date: '2026-04-10'
+description: Dowiedz się, jak skonfigurować logowanie w GroupDocs.Viewer dla Javy,
+  w tym jak dodać logger konsolowy i logger plikowy, aby uzyskać lepsze renderowanie
+  dokumentów.
+keywords:
+- how to configure logging
+- add console logger
+- add file logger
+- java logging best practices
+- html view options
+title: Jak skonfigurować logowanie w GroupDocs.Viewer dla Javy
 type: docs
+url: /pl/java/getting-started/groupdocs-viewer-java-logging-setup/
+weight: 1
 ---
-# Konfigurowanie rejestrowania w GroupDocs.Viewer dla Java
 
-## Wstęp
-Ulepsz proces renderowania dokumentów w aplikacjach Java, korzystając z **GroupDocs.Viewer dla Java**. Ten samouczek przeprowadzi Cię przez konfigurację rejestrowania do konsoli lub pliku, zapewniając kluczowe informacje na temat działania renderowania dokumentu.
+# Jak skonfigurować logowanie w GroupDocs.Viewer dla Javy
+
+W tym samouczku dowiesz się **jak skonfigurować logowanie** w GroupDocs.Viewer dla Javy, co zapewnia wgląd w czasie rzeczywistym w pipeline renderowania dokumentów i pomaga szybko rozwiązywać problemy.
+
+## Szybkie odpowiedzi
+- **Co zapewnia logowanie?** Informacje zwrotne w czasie rzeczywistym o operacjach renderowania i szczegóły błędów.  
+- **Który logger wypisuje na konsolę?** `ConsoleLogger` (dodaj logger konsoli).  
+- **Który logger zapisuje do pliku?** `FileLogger` (dodaj logger pliku).  
+- **Czy potrzebna jest licencja, aby włączyć logowanie?** Nie, logowanie działa zarówno w wersji próbnej, jak i licencjonowanej.  
+- **Czy mogę dostosować format logu?** Tak, poprzez rozszerzenie klas loggera.
+
+## Wprowadzenie
+Ulepsz proces renderowania dokumentów w aplikacjach Java przy użyciu **GroupDocs.Viewer for Java**. Ten przewodnik przeprowadzi Cię przez konfigurowanie logowania zarówno na konsolę, jak i do pliku, dostarczając kluczowych informacji o tym, jak działa renderowanie dokumentów.
+
+![Console and File Logging with GroupDocs.Viewer for Java](/viewer/getting-started/console-and-file-logging-java.png)
 
 **Kluczowe punkty nauki:**
-- Skonfiguruj rejestrowanie w GroupDocs.Viewer dla Java.
-- Wdrożenie systemów rejestrowania danych zarówno konsolowych, jak i plikowych.
-- Renderuj dokumenty do formatu HTML z osadzonymi zasobami przy użyciu GroupDocs.Viewer.
-
-Zanim rozpoczniemy konfigurację środowiska, sprawdźmy wymagania wstępne.
+- Skonfiguruj logowanie w GroupDocs.Viewer dla Javy.  
+- Zaimplementuj zarówno systemy logowania konsolowego, jak i opartego na pliku.  
+- Renderuj dokumenty do HTML z osadzonymi zasobami przy użyciu GroupDocs.Viewer.
 
 ## Wymagania wstępne
-Upewnij się, że masz:
-1. **Wymagane biblioteki:**
-   - Biblioteka GroupDocs.Viewer for Java (wersja 25.2 lub nowsza).
+Ensure you have:
+1. **Wymagane biblioteki:**  
+   - Biblioteka GroupDocs.Viewer for Java (wersja 25.2 lub nowsza).  
 
-2. **Wymagania dotyczące konfiguracji środowiska:**
-   - Pakiet Java Development Kit (JDK) zainstalowany w systemie.
-   - Zintegrowane środowisko programistyczne (IDE), takie jak IntelliJ IDEA lub Eclipse.
+2. **Wymagania dotyczące środowiska:**  
+   - Zainstalowany Java Development Kit (JDK) w systemie.  
+   - Zintegrowane środowisko programistyczne (IDE) takie jak IntelliJ IDEA lub Eclipse.  
 
-3. **Wymagania wstępne dotyczące wiedzy:**
-   - Podstawowa znajomość programowania w Javie.
-   - Znajomość Maven do zarządzania zależnościami.
+3. **Wymagania wiedzy:**  
+   - Podstawowa znajomość programowania w Javie.  
+   - Znajomość Maven do zarządzania zależnościami.  
 
-Po spełnieniu tych wymagań wstępnych możesz skonfigurować GroupDocs.Viewer dla Java!
+Mając te wymagania spełnione, jesteś gotowy, aby skonfigurować GroupDocs.Viewer dla Javy!
 
-## Konfigurowanie GroupDocs.Viewer dla Java
-Aby użyć GroupDocs.Viewer, dodaj go jako zależność w swoim projekcie za pomocą Maven. Oto jak to zrobić:
+## Konfiguracja GroupDocs.Viewer dla Javy
+Aby używać GroupDocs.Viewer, dodaj go jako zależność w swoim projekcie przy użyciu Maven. Oto jak:
 
 ### Konfiguracja Maven
-Dodaj następującą konfigurację w swoim `pom.xml` plik:
+Dodaj następującą konfigurację w pliku `pom.xml`:
 ```xml
 <repositories>
     <repository>
@@ -55,43 +73,44 @@ Dodaj następującą konfigurację w swoim `pom.xml` plik:
 </dependencies>
 ```
 
-### Nabycie licencji
-- **Bezpłatna wersja próbna:** Pobierz bezpłatną wersję próbną z [Wydania GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Licencja tymczasowa:** Uzyskaj tymczasową licencję, aby usunąć ograniczenia oceny w [Licencja tymczasowa GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Zakup:** Aby uzyskać pełny dostęp, rozważ zakup licencji na stronie [Zakup GroupDocs](https://purchase.groupdocs.com/buy).
+### Uzyskanie licencji
+- **Bezpłatna wersja próbna:** Pobierz wersję próbną z [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/).  
+- **Licencja tymczasowa:** Uzyskaj tymczasową licencję, aby usunąć ograniczenia wersji próbnej, pod adresem [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Zakup:** Aby uzyskać pełny dostęp, rozważ zakup licencji pod adresem [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
 ### Podstawowa inicjalizacja
-Zainicjuj GroupDocs.Viewer przy użyciu następującego wzorca:
+Zainicjalizuj GroupDocs.Viewer przy użyciu następującego wzorca:
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// Zainicjuj przy użyciu przykładowego pliku PDF i ustawień
+// Initialize with sample PDF file and settings
 try (Viewer viewer = new Viewer("path/to/your/document.pdf")) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources("output_directory/page_{0}.html");
     viewer.view(options);
 }
 ```
 
-Ta konfiguracja stanowi podstawę do bardziej złożonych konfiguracji rejestrowania.
+Ta konfiguracja stanowi podstawę dla bardziej złożonych ustawień logowania.
 
-## Przewodnik wdrażania
-Poznaj sposób implementacji rejestrowania w konsoli i plikach za pomocą GroupDocs.Viewer.
+## Jak skonfigurować logowanie
+Poznaj, jak **dodać logger konsoli** i **dodać logger pliku** w GroupDocs.Viewer.
 
 ### Funkcja 1: Logowanie do konsoli
 #### Przegląd
-Zalogowanie się do konsoli zapewnia natychmiastowy dostęp do informacji zwrotnych w terminalu, co jest przydatne podczas fazy tworzenia lub debugowania.
+Logowanie do konsoli zapewnia natychmiastową informację zwrotną w terminalu, przydatną podczas fazy rozwoju lub debugowania.
 
-#### Kroki:
-##### Krok 1: Importuj wymagane klasy
+#### Kroki
+##### Krok 1: Import wymaganych klas
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.ViewerSettings;
 import com.groupdocs.viewer.logging.ConsoleLogger;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
-##### Krok 2: Skonfiguruj konfigurację rejestrowania
-Używać `ConsoleLogger` aby kierować logi do konsoli.
+
+##### Krok 2: Skonfiguruj ustawienia logowania
+Użyj `ConsoleLogger`, aby kierować logi na konsolę.
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.pdf", 
     new ViewerSettings(new ConsoleLogger()))) {
@@ -99,27 +118,28 @@ try (Viewer viewer = new Viewer("path/to/your/document.pdf",
     viewer.view(options);
 }
 ```
-##### Wyjaśnienie
-- **ConsoleLogger:** Ta klasa kieruje logi do konsoli, zapewniając podgląd operacji w czasie rzeczywistym.
-- **HtmlViewOptions.forEmbeddedResources:** Generuje kod HTML z osadzonymi zasobami dla każdej strony.
+**Wyjaśnienie**  
+- **ConsoleLogger:** Ta klasa kieruje logi na konsolę, zapewniając widok operacji w czasie rzeczywistym.  
+- **HtmlViewOptions.forEmbeddedResources:** Generuje HTML z osadzonymi zasobami dla każdej strony, przykład efektywnego użycia **opcji widoku HTML**.
 
-#### Porady dotyczące rozwiązywania problemów
-Upewnij się, że ścieżka dokumentu jest poprawna i dostępna. Sprawdź, czy instrukcje rejestrowania są odpowiednio skonfigurowane w ustawieniach konsoli.
+#### Wskazówki rozwiązywania problemów
+Upewnij się, że ścieżka do dokumentu jest poprawna i dostępna. Zweryfikuj, czy instrukcje logowania są odpowiednio skonfigurowane w ustawieniach konsoli.
 
-### Funkcja 2: Rejestrowanie do pliku
+### Funkcja 2: Logowanie do pliku
 #### Przegląd
-Zapisywanie danych w pliku pozwala na zachowanie trwałego zapisu operacji, co przydaje się podczas audytów i analiz post mortem.
+Logowanie do pliku pomaga utrzymać trwały zapis operacji, przydatny do audytu lub analizy po zdarzeniu.
 
-#### Kroki:
-##### Krok 1: Importuj wymagane klasy
+#### Kroki
+##### Krok 1: Import wymaganych klas
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.ViewerSettings;
 import com.groupdocs.viewer.logging.FileLogger;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
-##### Krok 2: Skonfiguruj konfigurację rejestrowania opartego na plikach
-Używać `FileLogger` zapisywanie dzienników do określonego pliku.
+
+##### Krok 2: Skonfiguruj logowanie oparte na pliku
+Użyj `FileLogger`, aby zapisywać logi do określonego pliku.
 ```java
 try (Viewer viewer = new Viewer("path/to/your/document.pdf", 
     new ViewerSettings(new FileLogger("output.log")))) {
@@ -127,43 +147,37 @@ try (Viewer viewer = new Viewer("path/to/your/document.pdf",
     viewer.view(options);
 }
 ```
-##### Wyjaśnienie
-- **Rejestrator plików:** Ta klasa kieruje logi do pliku o nazwie `output.log`.
-- **Ustawienia przeglądarki z FileLogger:** Konfiguruje GroupDocs.Viewer w celu rejestrowania działań w określonym pliku dziennika.
+**Wyjaśnienie**  
+- **FileLogger:** Ta klasa kieruje logi do pliku o nazwie `output.log`.  
+- **ViewerSettings z FileLogger:** Konfiguruje GroupDocs.Viewer do **przechwytywania logów widoku** w określonym pliku logów.
 
-#### Porady dotyczące rozwiązywania problemów
-Upewnij się, że katalog dla pliku wyjściowego jest zapisywalny. Sprawdź uprawnienia pliku, jeśli rejestrowanie się nie powiedzie.
+#### Wskazówki rozwiązywania problemów
+Upewnij się, że katalog dla pliku wyjściowego jest zapisywalny. Sprawdź uprawnienia do pliku, jeśli logowanie nie działa.
 
-## Zastosowania praktyczne
-GroupDocs.Viewer może usprawnić zarządzanie dokumentami i możliwości renderowania:
-1. **Portale internetowe:** Generuj dokumenty na bieżąco dla użytkowników sieci, bez konieczności bezpośredniego pobierania.
-2. **Systemy korporacyjne:** Zintegruj z narzędziami CRM w celu wyświetlania kontraktów i umów.
-3. **Panele wewnętrzne:** Zapewnij dostępną widoczność raportów i prezentacji w intranecie.
+## Praktyczne zastosowania
+GroupDocs.Viewer może zwiększyć możliwości zarządzania dokumentami i renderowania:
+1. **Portale internetowe:** Renderuj dokumenty w locie dla użytkowników sieci bez bezpośredniego pobierania.  
+2. **Systemy korporacyjne:** Integruj z narzędziami CRM, aby wyświetlać kontrakty lub umowy.  
+3. **Wewnętrzne pulpity:** Udostępniaj dostępne widoki raportów i prezentacji w intranetach.
 
-## Rozważania dotyczące wydajności
-Podczas korzystania z GroupDocs.Viewer w Javie należy wziąć pod uwagę następujące kwestie:
-- **Optymalizacja wykorzystania zasobów:** Monitoruj zużycie pamięci podczas renderowania dużych dokumentów.
-- **Najlepsze praktyki zarządzania pamięcią w Javie:** Wykorzystaj opcję try-with-resources do automatycznego zarządzania zasobami.
-- **Strojenie wydajności:** Dostosuj szczegółowość rejestrowania, aby zrównoważyć poziom szczegółowości i wpływ na wydajność.
+## Rozważania dotyczące wydajności i najlepsze praktyki logowania w Javie
+Podczas używania GroupDocs.Viewer w Javie, pamiętaj o następujących kwestiach:
+- **Optymalizacja użycia zasobów:** Monitoruj zużycie pamięci przy renderowaniu dużych dokumentów.  
+- **Zarządzanie pamięcią w Javie:** Używaj try‑with‑resources do automatycznego czyszczenia zasobów.  
+- **Głośność logowania:** Dostosuj poziomy loggera (np. INFO, DEBUG), aby zrównoważyć szczegółowość z wpływem na wydajność — istotna część **najlepszych praktyk logowania w Javie**.  
 
-## Wniosek
-Nauczyłeś się, jak skonfigurować GroupDocs.Viewer Java, aby rejestrować działania renderowania dokumentów w konsoli lub pliku. Ta możliwość jest nieoceniona w debugowaniu, monitorowaniu i audytowaniu aplikacji. Poznaj dalsze konfiguracje i zintegruj GroupDocs.Viewer z innymi systemami, aby zwiększyć jego użyteczność w swoich projektach.
+## Zakończenie
+Nauczyłeś się **jak skonfigurować logowanie** w GroupDocs.Viewer dla Javy, niezależnie od tego, czy potrzebujesz szybkiego podglądu w konsoli, czy trwałego zapisu w pliku. Ta możliwość jest nieoceniona przy debugowaniu, monitorowaniu i audycie aplikacji. Eksploruj dalsze konfiguracje, eksperymentuj z własnymi loggerami i integruj GroupDocs.Viewer z innymi systemami, aby zwiększyć ich niezawodność.
 
-Gotowy, aby przenieść swoje umiejętności implementacyjne na wyższy poziom? Spróbuj skonfigurować rejestrowanie w różnych środowiskach i zobacz, jak zwiększa to solidność Twojej aplikacji!
-
-## Sekcja FAQ
-1. **Jaki jest najlepszy sposób obsługi dużych dokumentów za pomocą GroupDocs.Viewer Java?**
-   - Stosuj efektywne praktyki zarządzania pamięcią i rozważ renderowanie konkretnych stron zamiast całych dokumentów.
-2. **Czy mogę zapisywać dodatkowe informacje poza danymi wyjściowymi z konsoli i plików?**
-   - Tak, można rozszerzyć funkcjonalność rejestrowania poprzez implementację niestandardowych klas rejestratorów, które integrują się z innymi systemami, takimi jak bazy danych lub narzędzia monitorujące.
-3. **Jak mogę mieć pewność, że moje dzienniki są bezpieczne?**
-   - Przechowuj pliki dziennika w bezpiecznych katalogach i wdróż odpowiednie środki kontroli dostępu, aby zapobiec nieautoryzowanemu dostępowi.
-4. **Czy można zmienić format dziennika korzystając z FileLoggera?**
-   - Tak, dostosuj swoje zachowanie rejestrowania, rozszerzając `FileLogger` klasy i nadpisując jej metody w razie potrzeby.
-5. **Czy GroupDocs.Viewer może renderować dokumenty w formacie innym niż PDF?**
-   - Oczywiście! GroupDocs.Viewer obsługuje wiele formatów dokumentów, w tym Word, Excel, PowerPoint i inne.
+Gotowy, aby podnieść swoje umiejętności implementacji na wyższy poziom? Spróbuj skonfigurować logowanie w różnych środowiskach i obserwuj, jak zwiększa to niezawodność Twojej aplikacji!
 
 ## Zasoby
-- [Dokumentacja](https://docs.groupdocs.com/viewer/java/)
-- [Odniesienie do API](https://reference.groupdocs.com/viewer/java/)
-- [Pobierać](https://downloads.groupdocs.com/viewer/java/)
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [API Reference](https://reference.groupdocs.com/viewer/java/)
+- [Download](https://downloads.groupdocs.com/viewer/java/)
+
+---
+
+**Ostatnia aktualizacja:** 2026-04-10  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
