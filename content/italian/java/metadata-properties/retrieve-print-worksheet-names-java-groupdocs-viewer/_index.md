@@ -1,34 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Scopri come estrarre in modo efficiente i nomi dei fogli di lavoro dai fogli di calcolo utilizzando GroupDocs.Viewer per Java. Perfetto per migliorare i flussi di lavoro di automazione dei documenti."
-"title": "Estrarre e visualizzare i nomi dei fogli di lavoro in Java utilizzando l'API GroupDocs.Viewer"
-"url": "/it/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-25'
+description: Scopri come estrarre i nomi dei fogli di lavoro in Java e recuperare
+  i nomi dei fogli Excel utilizzando GroupDocs.Viewer per Java, perfetto per automatizzare
+  i flussi di lavoro dei documenti.
+keywords:
+- extract worksheet names java
+- retrieve excel sheet names
+- list spreadsheet worksheets
+- java extract xlsx sheets
+title: Estrai i nomi dei fogli di lavoro in Java con l'API GroupDocs.Viewer
 type: docs
+url: /it/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/
+weight: 1
 ---
-# Estrarre e visualizzare i nomi dei fogli di lavoro in Java utilizzando l'API GroupDocs.Viewer
 
-## Introduzione
+# Estrai i nomi dei fogli di lavoro Java con l'API GroupDocs.Viewer
 
-Gestire più fogli di lavoro all'interno di file di fogli di calcolo può essere complicato, soprattutto quando si gestiscono set di dati di grandi dimensioni o si automatizza la generazione di report. L'API GroupDocs.Viewer per Java semplifica questa attività consentendo di recuperare programmaticamente i nomi dei fogli di lavoro, risparmiando tempo e migliorando i flussi di lavoro automatizzati. Questo tutorial vi guiderà attraverso l'utilizzo di GroupDocs.Viewer per Java per estrarre e visualizzare i nomi dei fogli di lavoro da un documento di foglio di calcolo.
+Gestire più fogli di lavoro all'interno di file di fogli di calcolo può essere impegnativo, soprattutto quando si gestiscono grandi set di dati o si automatizza la generazione di report. In questo tutorial imparerai **come estrarre i nomi dei fogli di lavoro java** utilizzando l'API GroupDocs.Viewer per Java, un modo affidabile per semplificare i flussi di lavoro di automazione dei documenti.
+
+![Estrai e visualizza i nomi dei fogli di lavoro con GroupDocs.Viewer per Java](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
 
 **Punti chiave:**
-- Configurazione dell'ambiente con GroupDocs.Viewer
-- Inizializzazione del Viewer e configurazione delle opzioni
-- Tecniche per recuperare e scorrere i fogli di lavoro in modo efficiente
-- Le migliori pratiche per ottimizzare le prestazioni
+- Configurare l'ambiente con GroupDocs.Viewer
+- Inizializzare il Viewer e configurare le opzioni
+- Tecniche per recuperare e iterare i fogli di lavoro in modo efficiente
+- Best practice per ottimizzare le prestazioni
+
+## Risposte rapide
+- **Cosa fa “extract worksheet names java”?**  
+  Legge programmaticamente un foglio di calcolo e restituisce il nome di ogni foglio.
+- **Quale libreria è necessaria?**  
+  GroupDocs.Viewer per Java (versione 25.2 o successive).
+- **È necessaria una licenza?**  
+  Una prova gratuita è sufficiente per i test; è necessaria una licenza a pagamento per la produzione.
+- **Posso elencare i fogli di calcolo senza renderizzarli?**  
+  Sì – usa `ViewInfoOptions` con visualizzazione HTML per ottenere solo i metadati dei fogli.
+- **Questo approccio è adatto a file Excel di grandi dimensioni?**  
+  Sì, quando combinato con una corretta gestione della memoria e l'elaborazione batch.
+
+## Cos'è “extract worksheet names java”?
+Il metodo sfrutta le capacità di estrazione dei metadati di GroupDocs.Viewer per leggere la struttura della cartella di lavoro e restituire il nome visualizzato di ogni foglio. È ideale per scenari in cui è necessario convalidare la presenza dei fogli, generare menu dinamici o guidare l'elaborazione successiva senza caricare l'intero file in memoria.
+
+## Perché recuperare i nomi dei fogli Excel con GroupDocs.Viewer?
+- **Pronto per l'automazione:** Funziona in ambienti headless (server, pipeline CI).  
+- **Focalizzato sulle prestazioni:** Vengono recuperati solo i metadati, evitando il rendering pesante.  
+- **Supporto cross‑format:** Gestisce XLS, XLSX, ODS e altri tipi di fogli di calcolo in modo uniforme.
 
 ## Prerequisiti
 
-Per seguire questo tutorial, assicurati di avere:
+- **Librerie e dipendenze:** Installa GroupDocs.Viewer versione 25.2 o successiva.  
+- **Configurazione dell'ambiente:** Usa un IDE Java come IntelliJ IDEA o Eclipse.  
+- **Base di conoscenza:** Conoscenza di base di Java e Maven per la gestione delle dipendenze.
 
-- **Librerie e dipendenze:** Installa GroupDocs.Viewer versione 25.2 o successiva.
-- **Configurazione dell'ambiente:** Utilizzare un ambiente di sviluppo Java come IntelliJ IDEA o Eclipse.
-- **Base di conoscenza:** È essenziale una conoscenza di base di Java e la familiarità con Maven per la gestione delle dipendenze.
+## Configurare GroupDocs.Viewer per Java
 
-## Impostazione di GroupDocs.Viewer per Java
-
-GroupDocs.Viewer è disponibile tramite Maven, rendendolo facile da includere nei tuoi progetti. Aggiungi la seguente configurazione al tuo `pom.xml` file:
+GroupDocs.Viewer è disponibile tramite Maven, rendendo semplice includerlo nei tuoi progetti. Aggiungi la seguente configurazione al tuo file `pom.xml`:
 
 ```xml
 <repositories>
@@ -49,40 +75,38 @@ GroupDocs.Viewer è disponibile tramite Maven, rendendolo facile da includere ne
 
 ### Acquisizione della licenza
 
-GroupDocs offre diverse opzioni di licenza, tra cui una prova gratuita e licenze temporanee a scopo di valutazione. Per l'accesso completo, si consiglia di acquistare una licenza tramite il sito ufficiale.
+GroupDocs offre varie opzioni di licenza, inclusa una prova gratuita e licenze temporanee per scopi di valutazione. Per l'accesso completo, considera l'acquisto di una licenza tramite il loro sito ufficiale.
 
-## Guida all'implementazione
+## Come recuperare i nomi dei fogli Excel (elencare i fogli di calcolo)
 
-### Funzionalità: estrazione dei nomi dei fogli di lavoro
+Di seguito trovi una guida passo‑passo che ti mostra come estrarre i nomi dei fogli. Il codice rimane invariato rispetto all'esempio originale, garantendo che funzioni così com'è.
 
-Questa funzionalità illustra come estrarre i nomi dei fogli di lavoro da un foglio di calcolo utilizzando GroupDocs.Viewer.
+### Passo 1: Inizializzare il Viewer
 
-#### Passaggio 1: inizializzare il visualizzatore
-
-Iniziare con l'inizializzazione `Viewer` con il percorso del documento:
+Inizia inizializzando `Viewer` con il percorso del tuo documento:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/three_sheets.xlsx")) {
-    // Codice di inizializzazione qui...
+    // Initialization code here...
 }
 ```
 
-Questo blocco imposta il Viewer in modo che funzioni con un file specificato, garantendo una corretta gestione delle risorse mediante try-with-resources.
+Questo blocco imposta il Viewer per lavorare con un file specificato, garantendo una corretta gestione delle risorse tramite try‑with‑resources.
 
-#### Passaggio 2: configurare ViewInfoOptions
+### Passo 2: Configurare ViewInfoOptions
 
-Impostato `ViewInfoOptions` per il recupero delle informazioni di visualizzazione HTML:
+Imposta `ViewInfoOptions` per il recupero delle informazioni di visualizzazione HTML:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setSpreadsheetOptions(SpreadsheetOptions.forOnePagePerSheet());
 ```
 
-Questa configurazione garantisce che ogni foglio di lavoro venga renderizzato separatamente, facilitando l'iterazione sui singoli fogli.
+Questa configurazione assicura che ogni foglio venga renderizzato separatamente, facilitando l'iterazione sui singoli fogli.
 
-#### Passaggio 3: recuperare e visualizzare i nomi dei fogli di lavoro
+### Passo 3: Recuperare e visualizzare i nomi dei fogli di lavoro
 
-Ottieni il `ViewInfo` oggetto per ottenere dettagli sulle pagine del documento (fogli di lavoro):
+Ottieni l'oggetto `ViewInfo` per ottenere i dettagli delle pagine del documento (fogli di lavoro):
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
@@ -92,53 +116,70 @@ for (Page page : viewInfo.getPages()) {
 }
 ```
 
-Questo ciclo scorre ogni foglio di lavoro, stampandone l'indice e il nome.
+Questo ciclo itera attraverso ogni foglio, stampando il suo indice e nome. È il cuore dell'operazione **java extract xlsx sheets**.
 
 ### Suggerimenti per la risoluzione dei problemi
 
-- **Garantire l'accuratezza del percorso del file:** Controlla attentamente il percorso del documento per evitare errori di tipo "file non trovato".
-- **Compatibilità della versione:** Utilizza versioni della libreria GroupDocs.Viewer compatibili con il tuo ambiente Java.
+- **Assicurati dell'accuratezza del percorso file:** Controlla due volte il percorso del documento per evitare errori di file non trovato.  
+- **Compatibilità della versione:** Usa versioni compatibili della libreria GroupDocs.Viewer con il tuo ambiente Java.  
 
 ## Applicazioni pratiche
 
-1. **Reporting automatico:** Estrarre i nomi dei fogli per la generazione di report dinamici.
-2. **Validazione dei dati:** Verificare a livello di programmazione la presenza dei fogli di lavoro richiesti nei set di dati.
-3. **Integrazione:** Migliora le soluzioni di gestione dei documenti integrandole con altri sistemi.
+1. **Report automatizzati:** Estrarre i nomi dei fogli per la generazione dinamica di report.  
+2. **Validazione dei dati:** Verificare programmaticamente la presenza dei fogli richiesti nei dataset.  
+3. **Integrazione:** Migliorare le soluzioni di gestione documentale integrandole con altri sistemi.
 
 ## Considerazioni sulle prestazioni
 
-- **Ottimizzare l'utilizzo delle risorse:** Gestisci la memoria in modo efficiente quando hai a che fare con file di grandi dimensioni utilizzando gli strumenti di garbage collection e di profiling di Java.
-- **Elaborazione batch:** Elaborare i documenti in batch per ridurre i tempi di caricamento e migliorare la produttività.
+- **Ottimizzare l'uso delle risorse:** Gestire la memoria in modo efficiente quando si trattano file di grandi dimensioni usando la garbage collection di Java e gli strumenti di profiling.  
+- **Elaborazione batch:** Processare i documenti in batch per ridurre i tempi di caricamento e migliorare il throughput.
 
 ## Conclusione
 
-Seguendo questa guida, hai imparato a utilizzare GroupDocs.Viewer per Java per estrarre efficacemente i nomi dei fogli di lavoro. Questa competenza può migliorare significativamente i tuoi flussi di lavoro di gestione dei dati. Esplora ulteriori funzionalità dell'API consultando [Documentazione di GroupDocs](https://docs.groupdocs.com/viewer/java/).
+Seguendo questa guida, hai imparato **come estrarre i nomi dei fogli di lavoro java** usando GroupDocs.Viewer per Java. Questa competenza può migliorare notevolmente i tuoi flussi di lavoro di gestione dei dati. Esplora ulteriori funzionalità dell'API consultando la [documentazione di GroupDocs](https://docs.groupdocs.com/viewer/java/).
 
-Pronti a fare un ulteriore passo avanti? Sperimentate diverse opzioni e integrate questa funzionalità in sistemi più ampi!
+Pronto a fare un passo avanti? Sperimenta con diverse opzioni e integra questa funzionalità in sistemi più ampi!
 
 ## Sezione FAQ
 
-1. **Che cos'è GroupDocs.Viewer per Java?**
-   - È un'API che consente di visualizzare, convertire e stampare documenti all'interno delle applicazioni Java.
+1. **Cos'è GroupDocs.Viewer per Java?**  
+   - È un'API che consente di visualizzare, convertire e stampare documenti all'interno di applicazioni Java.  
+2. **Come gestisco file di grandi dimensioni in modo efficiente?**  
+   - Usa tecniche di gestione della memoria e processa i file in batch per ottimizzare le prestazioni.  
+3. **Posso personalizzare il formato di output dei fogli di lavoro?**  
+   - Sì, GroupDocs.Viewer supporta vari formati come HTML, PDF, ecc.  
+4. **Cosa succede se manca il nome di un foglio di lavoro?**  
+   - Implementa una gestione degli errori per gestire tali scenari in modo corretto.  
+5. **Dove posso trovare più risorse su GroupDocs.Viewer?**  
+   - Visita la [documentazione di GroupDocs](https://docs.groupdocs.com/viewer/java/) e i loro forum di supporto per ulteriori informazioni.
 
-2. **Come posso gestire in modo efficiente i file di grandi dimensioni?**
-   - Utilizzare tecniche di gestione della memoria ed elaborare in batch per ottimizzare le prestazioni.
+## Domande frequenti
 
-3. **Posso personalizzare il formato di output dei fogli di lavoro?**
-   - Sì, GroupDocs.Viewer supporta vari formati come HTML, PDF, ecc.
+**Q: Posso usare questo codice in un'applicazione commerciale?**  
+A: Sì, a condizione di possedere una licenza GroupDocs valida. È disponibile una prova gratuita per la valutazione.
 
-4. **Cosa succede se manca il nome di un foglio di lavoro?**
-   - Implementare la gestione degli errori per gestire tali scenari in modo efficiente.
+**Q: Funziona con file Excel protetti da password?**  
+A: È possibile aprire file protetti fornendo la password al momento della creazione dell'istanza `Viewer`.
 
-5. **Dove posso trovare altre risorse su GroupDocs.Viewer?**
-   - Visita il [Documentazione di GroupDocs](https://docs.groupdocs.com/viewer/java/) e i loro forum di supporto per ulteriore assistenza.
+**Q: Quali formati di file sono supportati per l'estrazione dei fogli?**  
+A: XLS, XLSX, ODS e altri formati di fogli di calcolo supportati da GroupDocs.Viewer.
+
+**Q: Come posso migliorare le prestazioni quando elaboro molti workbook?**  
+A: Combina il pattern try‑with‑resources con l'elaborazione batch e limita `ViewInfoOptions` al recupero solo dei metadati.
+
+**Q: Esiste un modo per recuperare solo i primi nomi di foglio?**  
+A: Sì, puoi interrompere il ciclo dopo il conteggio desiderato o utilizzare le funzionalità di paginazione nelle versioni più recenti dell'API.
 
 ## Risorse
 
-- **Documentazione:** [Documentazione Java di GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **Riferimento API:** [Riferimento API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Scaricamento:** [Download di GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Acquista licenza:** [Acquista la licenza GroupDocs](https://purchase.groupdocs.com/buy)
-- **Prova gratuita:** [Prova gratuita di GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licenza temporanea:** [Richiedi licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
-- **Forum di supporto:** [Supporto GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentazione:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Riferimento API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
+- **Acquista licenza:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Prova gratuita:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Licenza temporanea:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Forum di supporto:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+**Ultimo aggiornamento:** 2026-04-25  
+**Testato con:** GroupDocs.Viewer 25.2 for Java  
+**Autore:** GroupDocs

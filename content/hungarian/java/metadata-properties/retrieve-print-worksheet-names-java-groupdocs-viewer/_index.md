@@ -1,34 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan kinyerheti hatékonyan a munkalapneveket táblázatokból a GroupDocs.Viewer for Java segítségével. Tökéletes a dokumentumautomatizálási munkafolyamatok fejlesztéséhez."
-"title": "Munkalapnevek kinyerése és megjelenítése Java-ban a GroupDocs.Viewer API használatával"
-"url": "/hu/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-25'
+description: Tanulja meg, hogyan lehet Java-val kinyerni a munkalapok neveit, és hogyan
+  lehet a GroupDocs.Viewer for Java segítségével lekérni az Excel munkalapok neveit
+  – tökéletes megoldás a dokumentumfolyamatok automatizálásához.
+keywords:
+- extract worksheet names java
+- retrieve excel sheet names
+- list spreadsheet worksheets
+- java extract xlsx sheets
+title: Munkalapnevek kinyerése Java-val a GroupDocs.Viewer API használatával
 type: docs
+url: /hu/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/
+weight: 1
 ---
-# Munkalapnevek kinyerése és megjelenítése Java-ban a GroupDocs.Viewer API használatával
 
-## Bevezetés
+# Munkalapnevek kinyerése Java-val a GroupDocs.Viewer API segítségével
 
-Több munkalap kezelése táblázatfájlokon belül kihívást jelenthet, különösen nagy adathalmazok vagy automatizált jelentéskészítés esetén. A GroupDocs.Viewer for Java API leegyszerűsíti ezt a feladatot azáltal, hogy lehetővé teszi a munkalapnevek programozott lekérését, ami időt takarít meg és javítja az automatizálási munkafolyamatokat. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Viewer for Java használatának folyamatán a munkalapnevek táblázatdokumentumból történő kinyeréséhez és megjelenítéséhez.
+A táblázatfájlokban több munkalap kezelése kihívást jelenthet, különösen nagy adathalmazok kezelése vagy jelentéskészítés automatizálása esetén. Ebben az útmutatóban megtanulja, hogyan **how to extract worksheet names java** használva a GroupDocs.Viewer for Java API-t, amely megbízható módja a dokumentumautomatizálási munkafolyamatok egyszerűsítésének.
+
+![Munkalapnevek kinyerése és megjelenítése a GroupDocs.Viewer for Java-val](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
 
 **Főbb tanulságok:**
-- Környezet beállítása a GroupDocs.Viewer segítségével
+- A környezet beállítása a GroupDocs.Viewer-rel
 - A Viewer inicializálása és a beállítások konfigurálása
-- Technikák a munkalapok hatékony visszakeresésére és iterálására
-- A teljesítmény optimalizálásának legjobb gyakorlatai
+- Hatékony módszerek a munkalapok lekérésére és bejárására
+- Legjobb gyakorlatok a teljesítmény optimalizálásához
+
+## Gyors válaszok
+- **Mit csinál a “extract worksheet names java”?**  
+  Programozott módon beolvassa a táblázatot, és visszaadja minden munkalap nevét.  
+- **Melyik könyvtár szükséges?**  
+  GroupDocs.Viewer for Java (version 25.2 or later).  
+- **Szükségem van licencre?**  
+  A ingyenes próba a teszteléshez működik; a termeléshez fizetett licenc szükséges.  
+- **Listázhatok táblázat munkalapokat anélkül, hogy renderelném őket?**  
+  Igen – használja a `ViewInfoOptions`-t HTML nézettel, hogy csak a lap metaadatait kapja meg.  
+- **Ez a megközelítés alkalmas nagy Excel fájlokra?**  
+  Igen, ha megfelelő memória kezeléssel és kötegelt feldolgozással kombinálják.  
+
+## Mi a “extract worksheet names java”?
+A módszer a GroupDocs.Viewer metaadat-kinyerési képességeit használja a munkafüzet szerkezetének olvasására és minden munkalap megjelenített nevének visszaadására. Ideális olyan esetekben, amikor ellenőrizni kell a lapok jelenlétét, dinamikus menüket kell generálni, vagy a további feldolgozást kell irányítani anélkül, hogy az egész fájlt a memóriába töltené.
+
+## Miért kell excel munkalap neveket lekérni a GroupDocs.Viewer-rel?
+- **Automation‑ready:** Fej nélküli környezetekben (szerverek, CI pipeline-ok) működik.  
+- **Performance‑focused:** Csak a metaadatok kerülnek lekérésre, elkerülve a nehéz renderelést.  
+- **Cross‑format support:** Kezeli az XLS, XLSX, ODS és más táblázat típusokat egységesen.  
 
 ## Előfeltételek
 
-A bemutató követéséhez győződjön meg arról, hogy rendelkezik a következőkkel:
+- **Libraries & Dependencies:** Telepítse a GroupDocs.Viewer 25.2 vagy újabb verziót.  
+- **Environment Setup:** Használjon Java IDE-t, például IntelliJ IDEA vagy Eclipse.  
+- **Knowledge Base:** Alapvető Java ismeretek és Maven a függőségek kezeléséhez.  
 
-- **Könyvtárak és függőségek:** Telepítse a GroupDocs.Viewer 25.2-es vagy újabb verzióját.
-- **Környezet beállítása:** Használjon Java fejlesztői környezetet, például IntelliJ IDEA-t vagy Eclipse-t.
-- **Tudásbázis:** függőségek kezeléséhez elengedhetetlen a Java alapvető ismerete és a Maven ismerete.
+## A GroupDocs.Viewer beállítása Java-hoz
 
-## GroupDocs.Viewer beállítása Java-hoz
-
-A GroupDocs.Viewer elérhető Mavenen keresztül, így könnyen beilleszthető a projektekbe. Adja hozzá a következő konfigurációt a `pom.xml` fájl:
+A GroupDocs.Viewer Maven-en keresztül érhető el, így könnyen beilleszthető a projektekbe. Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -47,42 +73,36 @@ A GroupDocs.Viewer elérhető Mavenen keresztül, így könnyen beilleszthető a
 </dependencies>
 ```
 
-### Licencbeszerzés
+### Licenc beszerzése
 
-A GroupDocs különféle licencelési lehetőségeket kínál, beleértve az ingyenes próbaverziót és az ideiglenes licenceket kiértékelési célokra. A teljes hozzáféréshez érdemes megfontolni a licenc megvásárlását a hivatalos weboldalukon keresztül.
+A GroupDocs különféle licencelési lehetőségeket kínál, beleértve az ingyenes próbaverziót és az ideiglenes licenceket értékelési célokra. A teljes hozzáféréshez fontolja meg a licenc megvásárlását a hivatalos weboldalukon.
 
-## Megvalósítási útmutató
+## Hogyan kell lekérni az excel munkalap neveket (listázni a táblázat munkalapokat)
 
-### Funkció: Munkalapnevek kinyerése
+Az alábbi lépésről‑lépésre útmutató végigvezet a munkalapnevek kinyerésén. A kód változatlan marad az eredeti példából, biztosítva, hogy úgy fusson, ahogy van.
 
-Ez a funkció bemutatja, hogyan lehet munkalapneveket kinyerni egy táblázatból a GroupDocs.Viewer használatával.
+### 1. lépés: A Viewer inicializálása
 
-#### 1. lépés: A megjelenítő inicializálása
-
-Kezdje az inicializálással `Viewer` a dokumentum elérési útjával:
+Kezdje a `Viewer` inicializálásával a dokumentum útvonalával:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/three_sheets.xlsx")) {
-    // Inicializáló kód itt...
+    // Initialization code here...
 }
 ```
 
-Ez a blokk beállítja a Viewer programot egy megadott fájllal való munkára, biztosítva a megfelelő erőforrás-kezelést a try-with-resources használatával.
+### 2. lépés: ViewInfoOptions konfigurálása
 
-#### 2. lépés: A ViewInfoOptions konfigurálása
-
-Készlet `ViewInfoOptions` HTML nézetű információk lekéréséhez:
+Állítsa be a `ViewInfoOptions`-t HTML nézet információk lekéréséhez:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setSpreadsheetOptions(SpreadsheetOptions.forOnePagePerSheet());
 ```
 
-Ez a konfiguráció biztosítja, hogy minden munkalap külön jelenjen meg, megkönnyítve az egyes munkalapok közötti iterációt.
+### 3. lépés: Munkalapnevek lekérése és megjelenítése
 
-#### 3. lépés: Munkalapnevek lekérése és megjelenítése
-
-Szerezd meg a `ViewInfo` objektum a dokumentumoldalak (munkalapok) részleteinek lekéréséhez:
+Szerezze meg a `ViewInfo` objektumot a dokumentum oldalainak (munkalapok) részleteinek lekéréséhez:
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
@@ -92,53 +112,70 @@ for (Page page : viewInfo.getPages()) {
 }
 ```
 
-Ez a ciklus végigmegy az egyes munkalapokon, kinyomtatva azok indexét és nevét.
+Ez a ciklus minden munkalapon végigiterál, kiírva annak indexét és nevét. Ez a **java extract xlsx sheets** művelet középpontja.
 
 ### Hibaelhárítási tippek
 
-- **Fájlútvonal pontosságának biztosítása:** Ellenőrizze duplán a dokumentum elérési útját, hogy elkerülje a „fájl nem található” hibákat.
-- **Verzió kompatibilitás:** Használjon kompatibilis GroupDocs.Viewer könyvtárverziókat a Java környezetével.
+- **Ensure File Path Accuracy:** Ellenőrizze a dokumentum útvonalát, hogy elkerülje a fájl‑nem‑található hibákat.  
+- **Version Compatibility:** Használjon kompatibilis GroupDocs.Viewer könyvtárverziókat a Java környezetével.  
 
 ## Gyakorlati alkalmazások
 
-1. **Automatizált jelentéskészítés:** Munkalapnevek kinyerése dinamikus jelentéskészítéshez.
-2. **Adatellenőrzés:** Programozottan ellenőrizze a szükséges munkalapok meglétét az adathalmazokban.
-3. **Integráció:** Fejleszd a dokumentumkezelési megoldásaidat más rendszerekkel való integráció révén.
+1. **Automated Reporting:** Kinyeri a lapneveket a dinamikus jelentéskészítéshez.  
+2. **Data Validation:** Programozott módon ellenőrzi a szükséges munkalapok jelenlétét az adatkészletekben.  
+3. **Integration:** Javítja a dokumentumkezelő megoldásokat más rendszerekkel való integrálással.  
 
-## Teljesítménybeli szempontok
+## Teljesítményfontosságú szempontok
 
-- **Erőforrás-felhasználás optimalizálása:** Java szemétgyűjtő és profilkészítő eszközeivel hatékonyan kezelheti a memóriát nagy fájlok kezelésekor.
-- **Kötegelt feldolgozás:** A dokumentumok kötegelt feldolgozása a betöltési idők csökkentése és az átviteli sebesség javítása érdekében.
+- **Optimize Resource Usage:** Kezelje hatékonyan a memóriát nagy fájlok feldolgozásakor a Java szemétgyűjtő és profilozó eszközeivel.  
+- **Batch Processing:** Fájlok kötegelt feldolgozása a betöltési idő csökkentése és a teljesítmény növelése érdekében.  
 
 ## Következtetés
 
-Az útmutató követésével megtanulta, hogyan használhatja a GroupDocs.Viewer for Java programot a munkalapnevek hatékony kinyerésére. Ez a készség jelentősen javíthatja az adatkezelési munkafolyamatokat. Fedezze fel az API további funkcióit a következő oldalon található információk alapján: [GroupDocs dokumentáció](https://docs.groupdocs.com/viewer/java/).
+Ezzel az útmutatóval megtanulta, hogyan **how to extract worksheet names java** a GroupDocs.Viewer for Java használatával. Ez a képesség jelentősen javíthatja az adatkezelési munkafolyamatokat. Fedezze fel az API további funkcióit a [GroupDocs dokumentáció](https://docs.groupdocs.com/viewer/java/) megtekintésével.
 
-Készen állsz egy lépéssel továbbmenni? Kísérletezz különböző lehetőségekkel, és integráld ezt a funkciót nagyobb rendszerekbe!
+Készen áll egy lépéssel továbbmenni? Kísérletezzen különböző beállításokkal, és integrálja ezt a funkciót nagyobb rendszerekbe!
 
-## GYIK szekció
+## GyIK szekció
 
-1. **Mi az a GroupDocs.Viewer Java-hoz?**
-   - Ez egy API, amely lehetővé teszi dokumentumok megtekintését, konvertálását és nyomtatását Java alkalmazásokon belül.
+1. **Mi a GroupDocs.Viewer for Java?**  
+   - Ez egy API, amely lehetővé teszi a dokumentumok megtekintését, konvertálását és nyomtatását Java alkalmazásokban.  
+2. **Hogyan kezeljem hatékonyan a nagy fájlokat?**  
+   - Használjon memória-kezelési technikákat és dolgozzon kötegelt módon a teljesítmény optimalizálása érdekében.  
+3. **Testreszabhatom a munkalapok kimeneti formátumát?**  
+   - Igen, a GroupDocs.Viewer különféle formátumokat támogat, például HTML, PDF stb.  
+4. **Mi van, ha egy munkalap neve hiányzik?**  
+   - Valósítsa meg a hibakezelést, hogy ilyen eseteket elegánsan kezeljen.  
+5. **Hol találok további forrásokat a GroupDocs.Viewer-hez?**  
+   - Látogassa meg a [GroupDocs dokumentációt](https://docs.groupdocs.com/viewer/java/) és a támogatási fórumokat további segítségért.  
 
-2. **Hogyan kezeljem hatékonyan a nagy fájlokat?**
-   - Használjon memóriakezelési technikákat, és dolgozzon fel kötegekben a teljesítmény optimalizálása érdekében.
+## Gyakran Ismételt Kérdések
 
-3. **Testreszabhatom a munkalapok kimeneti formátumát?**
-   - Igen, a GroupDocs.Viewer különféle formátumokat támogat, például HTML-t, PDF-et stb.
+**Q: Használhatom ezt a kódot kereskedelmi alkalmazásban?**  
+A: Igen, amennyiben érvényes GroupDocs licencet rendelkezik. Egy ingyenes próba elérhető értékeléshez.  
 
-4. **Mi van, ha hiányzik egy munkalap neve?**
-   - Hibakezelés implementálása az ilyen forgatókönyvek szabályos kezeléséhez.
+**Q: Működik ez jelszóval védett Excel fájlokkal?**  
+A: A védett fájlok megnyithatók a jelszó megadásával a `Viewer` példány létrehozásakor.  
 
-5. **Hol találok további forrásokat a GroupDocs.Viewer oldalon?**
-   - Látogassa meg a [GroupDocs dokumentáció](https://docs.groupdocs.com/viewer/java/) és a támogatói fórumaikon további segítségért.
+**Q: Mely fájlformátumok támogatottak a munkalap kinyeréséhez?**  
+A: Az XLS, XLSX, ODS és a GroupDocs.Viewer által támogatott egyéb táblázat formátumok.  
 
-## Erőforrás
+**Q: Hogyan javíthatom a teljesítményt sok munkafüzet feldolgozása közben?**  
+A: Kombinálja a try‑with‑resources mintát a kötegelt feldolgozással, és korlátozza a `ViewInfoOptions`-t csak metaadat‑lekérésre.  
 
-- **Dokumentáció:** [GroupDocs Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API-hivatkozás:** [GroupDocs API-referencia](https://reference.groupdocs.com/viewer/java/)
-- **Letöltés:** [GroupDocs letöltések](https://releases.groupdocs.com/viewer/java/)
-- **Licenc vásárlása:** [GroupDocs licenc vásárlása](https://purchase.groupdocs.com/buy)
-- **Ingyenes próbaverzió:** [GroupDocs ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes engedély:** [Ideiglenes engedély igénylése](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatási fórum:** [GroupDocs-támogatás](https://forum.groupdocs.com/c/viewer/9)
+**Q: Van mód csak az első néhány lap nevét lekérni?**  
+A: Igen, a ciklusból kiléphet a kívánt szám után, vagy használhatja az újabb API verziók lapozási funkcióit.  
+
+## Források
+
+- **Dokumentáció:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **API Referencia:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Letöltés:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Licenc vásárlása:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Ingyenes próba:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Ideiglenes licenc:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Támogatási fórum:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)  
+
+**Utolsó frissítés:** 2026-04-25  
+**Tesztelve:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs

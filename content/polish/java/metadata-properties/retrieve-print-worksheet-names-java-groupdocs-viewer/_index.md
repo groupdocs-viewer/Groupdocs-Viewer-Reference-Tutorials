@@ -1,34 +1,60 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak wydajnie wyodrębniać nazwy arkuszy kalkulacyjnych z arkuszy kalkulacyjnych za pomocą GroupDocs.Viewer dla Java. Idealne do ulepszania przepływów pracy automatyzacji dokumentów."
-"title": "Wyodrębnij i wyświetl nazwy arkuszy kalkulacyjnych w Javie za pomocą interfejsu API GroupDocs.Viewer"
-"url": "/pl/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/"
-"weight": 1
+date: '2026-04-25'
+description: Dowiedz się, jak wyodrębnić nazwy arkuszy w języku Java i pobrać nazwy
+  arkuszy Excel przy użyciu GroupDocs.Viewer dla Javy, idealne do automatyzacji przepływów
+  dokumentów.
+keywords:
+- extract worksheet names java
+- retrieve excel sheet names
+- list spreadsheet worksheets
+- java extract xlsx sheets
+title: Wyodrębnianie nazw arkuszy w Javie z użyciem GroupDocs.Viewer API
 type: docs
+url: /pl/java/metadata-properties/retrieve-print-worksheet-names-java-groupdocs-viewer/
+weight: 1
 ---
-# Wyodrębnij i wyświetl nazwy arkuszy kalkulacyjnych w Javie za pomocą interfejsu API GroupDocs.Viewer
 
-## Wstęp
+# Wyodrębnianie nazw arkuszy w Javie przy użyciu GroupDocs.Viewer API
 
-Zarządzanie wieloma arkuszami kalkulacyjnymi w plikach arkuszy kalkulacyjnych może być trudne, szczególnie podczas obsługi dużych zestawów danych lub automatyzacji generowania raportów. API GroupDocs.Viewer for Java upraszcza to zadanie, umożliwiając programowe pobieranie nazw arkuszy, oszczędzając czas i usprawniając przepływy pracy automatyzacji. Ten samouczek przeprowadzi Cię przez proces używania GroupDocs.Viewer for Java do wyodrębniania i wyświetlania nazw arkuszy z dokumentu arkusza kalkulacyjnego.
+Zarządzanie wieloma arkuszami w plikach arkuszy kalkulacyjnych może być trudne, szczególnie przy obsłudze dużych zestawów danych lub automatyzacji generowania raportów. W tym samouczku dowiesz się **jak wyodrębnić nazwy arkuszy w Javie** przy użyciu GroupDocs.Viewer for Java API, niezawodnego sposobu na usprawnienie przepływów automatyzacji dokumentów.
 
-**Najważniejsze wnioski:**
-- Konfigurowanie środowiska z GroupDocs.Viewer
-- Inicjalizacja przeglądarki i konfigurowanie opcji
-- Techniki umożliwiające efektywne wyszukiwanie i iterowanie arkuszy kalkulacyjnych
+![Wyodrębnianie i wyświetlanie nazw arkuszy przy użyciu GroupDocs.Viewer dla Javy](/viewer/metadata-properties/extract-and-display-worksheet-names-java.png)
+
+**Kluczowe wnioski:**
+- Konfiguracja środowiska z GroupDocs.Viewer
+- Inicjalizacja Viewer i konfigurowanie opcji
+- Techniki pobierania i iteracji po arkuszach w sposób efektywny
 - Najlepsze praktyki optymalizacji wydajności
+
+## Szybkie odpowiedzi
+- **Co robi „extract worksheet names java”?**  
+  Programowo odczytuje arkusz kalkulacyjny i zwraca nazwę każdego arkusza.
+- **Jakiej biblioteki wymaga?**  
+  GroupDocs.Viewer for Java (version 25.2 or later).
+- **Czy potrzebna jest licencja?**  
+  Darmowa wersja próbna działa do testów; płatna licencja jest wymagana w środowisku produkcyjnym.
+- **Czy mogę wyświetlić listę arkuszy kalkulacyjnych bez ich renderowania?**  
+  Tak – użyj `ViewInfoOptions` z widokiem HTML, aby uzyskać tylko metadane arkuszy.
+- **Czy to podejście jest odpowiednie dla dużych plików Excel?**  
+  Tak, gdy jest połączone z odpowiednim zarządzaniem pamięcią i przetwarzaniem wsadowym.
+
+## Czym jest „extract worksheet names java”?
+Metoda wykorzystuje możliwości wyodrębniania metadanych GroupDocs.Viewer do odczytu struktury skoroszytu i zwrócenia wyświetlanej nazwy każdego arkusza. Jest to idealne w scenariuszach, w których trzeba zweryfikować obecność arkuszy, generować dynamiczne menu lub prowadzić dalsze przetwarzanie bez ładowania całego pliku do pamięci.
+
+## Dlaczego pobierać nazwy arkuszy Excel przy użyciu GroupDocs.Viewer?
+- **Gotowe do automatyzacji:** Działa w środowiskach bez interfejsu graficznego (serwery, pipeline CI).  
+- **Skoncentrowane na wydajności:** Pobierane są tylko metadane, co unika kosztownego renderowania.  
+- **Obsługa wielu formatów:** Obsługuje XLS, XLSX, ODS i inne typy arkuszy kalkulacyjnych w jednolity sposób.
 
 ## Wymagania wstępne
 
-Aby skorzystać z tego samouczka, upewnij się, że posiadasz:
+- **Biblioteki i zależności:** Install GroupDocs.Viewer version 25.2 or later.  
+- **Konfiguracja środowiska:** Use a Java IDE such as IntelliJ IDEA or Eclipse.  
+- **Podstawowa wiedza:** Basic Java proficiency and Maven for dependency management.
 
-- **Biblioteki i zależności:** Zainstaluj GroupDocs.Viewer w wersji 25.2 lub nowszej.
-- **Konfiguracja środowiska:** Użyj środowiska programistycznego Java, takiego jak IntelliJ IDEA lub Eclipse.
-- **Baza wiedzy:** Niezbędna jest podstawowa znajomość języka Java i narzędzia Maven do zarządzania zależnościami.
+## Konfiguracja GroupDocs.Viewer dla Javy
 
-## Konfigurowanie GroupDocs.Viewer dla Java
-
-GroupDocs.Viewer jest dostępny przez Maven, co ułatwia uwzględnienie go w projektach. Dodaj następującą konfigurację do swojego `pom.xml` plik:
+GroupDocs.Viewer jest dostępny przez Maven, co ułatwia jego dodanie do projektów. Dodaj następującą konfigurację do pliku `pom.xml`:
 
 ```xml
 <repositories>
@@ -47,42 +73,40 @@ GroupDocs.Viewer jest dostępny przez Maven, co ułatwia uwzględnienie go w pro
 </dependencies>
 ```
 
-### Nabycie licencji
+### Pozyskanie licencji
 
-GroupDocs oferuje różne opcje licencjonowania, w tym bezpłatną wersję próbną i tymczasowe licencje do celów ewaluacyjnych. Aby uzyskać pełny dostęp, rozważ zakup licencji za pośrednictwem ich oficjalnej strony.
+GroupDocs oferuje różne opcje licencjonowania, w tym darmową wersję próbną i tymczasowe licencje do celów ewaluacyjnych. Aby uzyskać pełny dostęp, rozważ zakup licencji na ich oficjalnej stronie.
 
-## Przewodnik wdrażania
+## Jak pobrać nazwy arkuszy Excel (lista arkuszy kalkulacyjnych)
 
-### Funkcja: Wyodrębnianie nazw arkuszy kalkulacyjnych
+Poniżej znajduje się przewodnik krok po kroku, który prowadzi przez wyodrębnianie nazw arkuszy. Kod pozostaje niezmieniony w stosunku do oryginalnego przykładu, zapewniając jego bezpośrednie uruchomienie.
 
-Ta funkcja pokazuje, jak wyodrębnić nazwy arkuszy roboczych z arkusza kalkulacyjnego za pomocą GroupDocs.Viewer.
+### Krok 1: Inicjalizacja Viewer
 
-#### Krok 1: Zainicjuj przeglądarkę
-
-Zacznij od zainicjowania `Viewer` ze ścieżką do Twojego dokumentu:
+Rozpocznij od zainicjowania `Viewer` ze ścieżką do dokumentu:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/three_sheets.xlsx")) {
-    // Tutaj kod inicjalizacji...
+    // Initialization code here...
 }
 ```
 
-Ten blok konfiguruje przeglądarkę do pracy z określonym plikiem, zapewniając właściwe zarządzanie zasobami przy użyciu metody try-with-resources.
+Ten blok konfiguruje Viewer do pracy z określonym plikiem, zapewniając prawidłowe zarządzanie zasobami przy użyciu try‑with‑resources.
 
-#### Krok 2: Skonfiguruj ViewInfoOptions
+### Krok 2: Konfiguracja ViewInfoOptions
 
-Ustawić `ViewInfoOptions` celu pobrania informacji w formacie HTML:
+Ustaw `ViewInfoOptions` w celu pobrania informacji o widoku HTML:
 
 ```java
 ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
 viewInfoOptions.setSpreadsheetOptions(SpreadsheetOptions.forOnePagePerSheet());
 ```
 
-Taka konfiguracja zapewnia, że każdy arkusz kalkulacyjny jest renderowany osobno, co ułatwia iterację na poszczególnych arkuszach.
+Ta konfiguracja zapewnia, że każdy arkusz jest renderowany osobno, co ułatwia iterację po poszczególnych arkuszach.
 
-#### Krok 3: Pobierz i wyświetl nazwy arkuszy kalkulacyjnych
+### Krok 3: Pobranie i wyświetlenie nazw arkuszy
 
-Uzyskaj `ViewInfo` obiekt umożliwiający uzyskanie szczegółów na temat stron dokumentu (arkuszów kalkulacyjnych):
+Uzyskaj obiekt `ViewInfo`, aby otrzymać szczegóły dotyczące stron dokumentu (arkuszy):
 
 ```java
 ViewInfo viewInfo = viewer.getViewInfo(viewInfoOptions);
@@ -92,53 +116,76 @@ for (Page page : viewInfo.getPages()) {
 }
 ```
 
-Pętla ta iteruje po każdym arkuszu, wyświetlając jego indeks i nazwę.
+Ta pętla iteruje po każdym arkuszu, wypisując jego indeks i nazwę. To jest sedno operacji **java extract xlsx sheets**.
 
-### Porady dotyczące rozwiązywania problemów
+### Wskazówki rozwiązywania problemów
 
-- **Zapewnij dokładność ścieżki pliku:** Sprawdź dokładnie ścieżkę dokumentu, aby uniknąć błędów informujących o braku pliku.
-- **Zgodność wersji:** Użyj wersji biblioteki GroupDocs.Viewer zgodnych ze środowiskiem Java.
+- **Upewnij się co do poprawności ścieżki pliku:** Double‑check your document path to avoid file‑not‑found errors.  
+- **Kompatybilność wersji:** Use compatible GroupDocs.Viewer library versions with your Java environment.  
 
-## Zastosowania praktyczne
+## Praktyczne zastosowania
 
-1. **Automatyczne raportowanie:** Wyodrębnij nazwy arkuszy w celu dynamicznego generowania raportów.
-2. **Walidacja danych:** Programowo weryfikuj obecność wymaganych arkuszy kalkulacyjnych w zestawach danych.
-3. **Integracja:** Udoskonalaj rozwiązania w zakresie zarządzania dokumentacją poprzez integrację z innymi systemami.
+1. **Zautomatyzowane raportowanie:** Extract sheet names for dynamic report generation.  
+2. **Walidacja danych:** Programmatically verify the presence of required worksheets in datasets.  
+3. **Integracja:** Enhance document management solutions by integrating with other systems.
 
 ## Rozważania dotyczące wydajności
 
-- **Optymalizacja wykorzystania zasobów:** Zarządzaj pamięcią efektywnie podczas obsługi dużych plików, korzystając z narzędzi Java do profilowania i zbierania śmieci.
-- **Przetwarzanie wsadowe:** Przetwarzaj dokumenty w partiach, aby skrócić czas ładowania i zwiększyć przepustowość.
+- **Optymalizacja wykorzystania zasobów:** Manage memory efficiently when handling large files using Java’s garbage collection and profiling tools.  
+- **Przetwarzanie wsadowe:** Process documents in batches to reduce load times and improve throughput.
 
-## Wniosek
+## Podsumowanie
 
-Dzięki temu przewodnikowi nauczyłeś się, jak używać GroupDocs.Viewer dla Java, aby skutecznie wyodrębniać nazwy arkuszy kalkulacyjnych. Ta umiejętność może znacznie usprawnić przepływy pracy związane z zarządzaniem danymi. Poznaj dalsze funkcje interfejsu API, konsultując się z [Dokumentacja GroupDocs](https://docs.groupdocs.com/viewer/java/).
+Postępując zgodnie z tym przewodnikiem, nauczyłeś się **jak wyodrębnić nazwy arkuszy w Javie** przy użyciu GroupDocs.Viewer for Java. Ta umiejętność może znacząco usprawnić Twoje przepływy zarządzania danymi. Poznaj dalsze funkcje API, przeglądając [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/).
 
-Gotowy pójść o krok dalej? Eksperymentuj z różnymi opcjami i integruj tę funkcjonalność z większymi systemami!
+Gotowy, aby zrobić kolejny krok? Eksperymentuj z różnymi opcjami i zintegrować tę funkcjonalność z większymi systemami!
 
 ## Sekcja FAQ
 
-1. **Czym jest GroupDocs.Viewer dla Java?**
-   - Jest to API umożliwiające przeglądanie, konwertowanie i drukowanie dokumentów w aplikacjach Java.
+1. **Czym jest GroupDocs.Viewer dla Javy?**  
+   - To API umożliwiające przeglądanie, konwertowanie i drukowanie dokumentów w aplikacjach Java.
 
-2. **Jak wydajnie obsługiwać duże pliki?**
-   - Aby zoptymalizować wydajność, stosuj techniki zarządzania pamięcią i przetwarzaj dane w partiach.
+2. **Jak efektywnie obsługiwać duże pliki?**  
+   - Używaj technik zarządzania pamięcią i przetwarzaj w partiach, aby zoptymalizować wydajność.
 
-3. **Czy mogę dostosować format wyjściowy arkuszy kalkulacyjnych?**
+3. **Czy mogę dostosować format wyjściowy arkuszy?**  
    - Tak, GroupDocs.Viewer obsługuje różne formaty, takie jak HTML, PDF itp.
 
-4. **Co zrobić, jeśli brakuje nazwy arkusza kalkulacyjnego?**
-   - Wdrożenie obsługi błędów pozwoli na sprawne zarządzanie takimi scenariuszami.
+4. **Co zrobić, gdy nazwa arkusza jest brakująca?**  
+   - Zaimplementuj obsługę błędów, aby radzić sobie z takimi sytuacjami.
 
-5. **Gdzie mogę znaleźć więcej materiałów na temat GroupDocs.Viewer?**
-   - Odwiedź [Dokumentacja GroupDocs](https://docs.groupdocs.com/viewer/java/) oraz na ich forach wsparcia, aby uzyskać dodatkową pomoc.
+5. **Gdzie mogę znaleźć więcej zasobów na temat GroupDocs.Viewer?**  
+   - Odwiedź [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) oraz ich forum wsparcia, aby uzyskać dodatkową pomoc.
+
+## Często zadawane pytania
+
+**Q: Czy mogę używać tego kodu w aplikacji komercyjnej?**  
+A: Tak, pod warunkiem posiadania ważnej licencji GroupDocs. Dostępna jest darmowa wersja próbna do oceny.
+
+**Q: Czy to działa z plikami Excel chronionymi hasłem?**  
+A: Możesz otworzyć chronione pliki, podając hasło przy tworzeniu instancji `Viewer`.
+
+**Q: Jakie formaty plików są obsługiwane przy wyodrębnianiu arkuszy?**  
+A: XLS, XLSX, ODS i inne formaty arkuszy kalkulacyjnych obsługiwane przez GroupDocs.Viewer.
+
+**Q: Jak mogę poprawić wydajność przy przetwarzaniu wielu skoroszytów?**  
+A: Połącz wzorzec try‑with‑resources z przetwarzaniem wsadowym i ogranicz `ViewInfoOptions` do pobierania wyłącznie metadanych.
+
+**Q: Czy istnieje sposób na pobranie tylko kilku pierwszych nazw arkuszy?**  
+A: Tak, możesz przerwać pętlę po uzyskaniu żądanej liczby lub użyć funkcji paginacji w nowszych wersjach API.
 
 ## Zasoby
 
-- **Dokumentacja:** [Dokumentacja programu GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)
-- **Dokumentacja API:** [Odwołanie do API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Pobierać:** [Pliki do pobrania GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Kup licencję:** [Kup licencję GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezpłatna wersja próbna:** [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licencja tymczasowa:** [Poproś o licencję tymczasową](https://purchase.groupdocs.com/temporary-license/)
-- **Forum wsparcia:** [Wsparcie GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentacja:** [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Referencja API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Pobierz:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)
+- **Zakup licencji:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Darmowa wersja próbna:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Licencja tymczasowa:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Forum wsparcia:** [GroupDocs Support](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ostatnia aktualizacja:** 2026-04-25  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
