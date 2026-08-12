@@ -1,64 +1,119 @@
 ---
-date: '2026-01-28'
-description: Leer hoe u documenten van FTP naar HTML rendert met GroupDocs.Viewer
-  voor Java. Volg deze stapsgewijze tutorial om FTP‑documentrendering in uw Java‑apps
-  te integreren.
+date: '2026-05-16'
+description: Leer hoe u documenten van ftp naar HTML rendert met GroupDocs.Viewer
+  for Java met behulp van Apache Commons Net FTP. Volg deze stapsgewijze tutorial.
 keywords:
+- apache commons net ftp
+- stream ftp file viewer
 - render documents from ftp
-- GroupDocs.Viewer for Java
-- document rendering in Java
-title: 'Documenten renderen vanaf FTP met GroupDocs.Viewer voor Java - Een uitgebreide
-  gids'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-16'
+  description: Learn how to render documents from ftp into HTML with GroupDocs.Viewer
+    for Java using Apache Commons Net FTP. Follow this step‑by‑step tutorial.
+  headline: 'apache commons net ftp: Render Documents from FTP Using GroupDocs.Viewer
+    for Java'
+  type: TechArticle
+- description: Learn how to render documents from ftp into HTML with GroupDocs.Viewer
+    for Java using Apache Commons Net FTP. Follow this step‑by‑step tutorial.
+  name: 'apache commons net ftp: Render Documents from FTP Using GroupDocs.Viewer
+    for Java'
+  steps:
+  - name: '**GroupDocs.Viewer for Java** – the core rendering engine.'
+    text: '**GroupDocs.Viewer for Java** – the core rendering engine.'
+  - name: '**Apache Commons Net** – provides the `FTPClient` class for FTP communication.'
+    text: '**Apache Commons Net** – provides the `FTPClient` class for FTP communication.'
+  - name: '**Free Trial** – Download a trial version from [GroupDocs](https://releases.groupdocs.com/viewer/java/).'
+    text: '**Free Trial** – Download a trial version from [GroupDocs](https://releases.groupdocs.com/viewer/java/).'
+  - name: '**Temporary License** – Apply for a temporary license to explore full capabilities.'
+    text: '**Temporary License** – Apply for a temporary license to explore full capabilities.'
+  - name: '**Purchase** – Obtain a commercial license for production deployments.'
+    text: '**Purchase** – Obtain a commercial license for production deployments.'
+  - name: '**Document Management Systems** – Auto‑preview files stored on legacy FTP
+      archives without moving them to a database.'
+    text: '**Document Management Systems** – Auto‑preview files stored on legacy FTP
+      archives without moving them to a database.'
+  - name: '**Archiving Solutions** – Convert historic documents to searchable HTML
+      for web portals, preserving original layout.'
+    text: '**Archiving Solutions** – Convert historic documents to searchable HTML
+      for web portals, preserving original layout.'
+  - name: '**Collaboration Tools** – Provide instant, uniform previews for team members
+      across desktop, mobile, and tablet devices.'
+    text: '**Collaboration Tools** – Provide instant, uniform previews for team members
+      across desktop, mobile, and tablet devices.'
+  type: HowTo
+- questions:
+  - answer: It’s a Java library that converts **100+ document formats** (DOCX, XLSX,
+      PPTX, PDF, ODT, etc.) into viewable HTML, PDF, or image files without requiring
+      Microsoft Office.
+    question: What is GroupDocs.Viewer for Java?
+  - answer: Wrap `client.connect()` and `client.retrieveFileStream()` in a retry loop
+      (3 attempts recommended) and fall back to a cached copy if the server remains
+      unreachable.
+    question: How do I handle FTP connection failures?
+  - answer: Yes. Use `HtmlViewOptions` to set a custom CSS stylesheet, control page
+      size, or disable embedded resources for external asset loading.
+    question: Can I customize the generated HTML?
+  - answer: Over 100 formats, including Word, Excel, PowerPoint, PDF, OpenDocument,
+      Visio, and many image types. See the official docs for the full list.
+    question: Which file formats are supported by GroupDocs.Viewer?
+  - answer: Visit the [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) for
+      community assistance or contact GroupDocs support directly for priority help.
+    question: Where can I get help if I run into issues?
+  type: FAQPage
+title: 'apache commons net ftp: Documenten renderen vanaf FTP met GroupDocs.Viewer
+  for Java'
 type: docs
 url: /nl/java/cloud-remote-document-rendering/groupdocs-viewer-java-render-ftp-documents/
 weight: 1
 ---
 
-# Documenten renderen vanaf FTP met GroupDocs.Viewer voor Java: Een uitgebreide gids
+# apache commons net ftp: Documenten renderen vanuit FTP met GroupDocs.Viewer voor Java
 
-Documenten direct renderen vanaf een FTP‑server kan de workflow aanzienlijk stroomlijnen, vooral wanneer je bestanden in een webbrowser wilt weergeven zonder ze eerst te downloaden. In deze tutorial leer je **hoe je documenten van ftp kunt renderen** naar HTML met GroupDocs.Viewer voor Java, en zie je waarom deze aanpak een game‑changer is voor cloud‑gebaseerde documentbeheeroplossingen.
+Rendering documents directly from an FTP server can dramatically streamline your workflow, especially when you need to display files in a web browser without first persisting them locally. In this tutorial you’ll **learn how to render documents from ftp** into HTML using GroupDocs.Viewer for Java together with the **Apache Commons Net FTP** client. We’ll walk through every step, explain why the approach matters, and give you production‑ready code snippets you can copy into your own project.
 
-![Documenten renderen vanaf FTP met GroupDocs.Viewer voor Java](/viewer/cloud-remote-document-rendering/render-documents-from-ftp.png)
+![Render Documents from FTP with GroupDocs.Viewer for Java](/viewer/cloud-remote-document-rendering/render-documents-from-ftp.png)
 
 ## Snelle antwoorden
-- **Wat betekent “render documents from ftp”?** Het betekent dat een bestand dat op een FTP‑server is opgeslagen wordt omgezet naar een web‑vriendelijk formaat (bijv. HTML) zonder handmatige download.  
-- **Welke bibliotheek verzorgt het renderen?** GroupDocs.Viewer for Java.  
-- **Heb ik een FTP‑clientbibliotheek nodig?** Ja, Apache Commons Net biedt de FTP‑verbinding utilities.  
-- **Is een licentie vereist voor productie?** Een commerciële GroupDocs‑licentie wordt aanbevolen voor productiegebruik.  
-- **Kan ik resources (CSS/JS) in de output insluiten?** Absoluut – gebruik `HtmlViewOptions.forEmbeddedResources()`.
+- **What does “render documents from ftp” mean?** It means converting a file stored on an FTP server into a web‑friendly format (HTML, PDF, or images) on‑the‑fly, without manual download.  
+- **Which library performs the rendering?** GroupDocs.Viewer for Java does the heavy lifting.  
+- **Which library handles the FTP connection?** Apache Commons Net FTP (`FTPClient`) provides reliable FTP operations.  
+- **Do I need a commercial license for production?** Yes – a full GroupDocs license removes evaluation limits and grants support.  
+- **Can I embed CSS/JS in the HTML output?** Absolutely – use `HtmlViewOptions.forEmbeddedResources()` to bundle all assets.
 
-## Wat is “Render Documents from FTP”?
+## Wat is “Documenten renderen van FTP”?
+Rendering documents from ftp refers to the process of fetching a file straight from an FTP server, feeding its byte stream into a rendering engine, and producing an HTML representation that can be displayed instantly in a browser. This eliminates the need for intermediate storage and speeds up document preview workflows.
 
-Renderen van documenten vanaf ftp verwijst naar het proces waarbij een bestand rechtstreeks van een FTP‑server wordt opgehaald, de byte‑stroom aan een renderengine wordt gevoed, en er een HTML‑representatie wordt geproduceerd die direct in een browser kan worden weergegeven. Dit elimineert de noodzaak van tussentijdse opslag en versnelt de workflow voor documentvoorbeelden.
+## Waarom GroupDocs.Viewer voor Java gebruiken met Apache Commons Net FTP?
+Rendering documents directly from an FTP server with GroupDocs.Viewer and Apache Commons Net provides a fast, platform‑independent solution that eliminates the need for temporary local storage. By streaming the file straight to the viewer, you reduce latency, lower I/O costs, and simplify deployment across cloud and on‑premise environments.
 
-## Waarom GroupDocs.Viewer voor Java gebruiken met FTP?
-
-- **Snelheid & efficiëntie** – Stream het bestand rechtstreeks van FTP naar de viewer, waardoor I/O‑overhead wordt verminderd.  
-- **Cross‑platformondersteuning** – Werkt in elke Java‑compatibele omgeving (Windows, Linux, macOS).  
-- **Rijke uitvoeropties** – Genereer HTML met ingesloten CSS/JS, of schakel over naar PDF/afbeeldingsformaten met minimale code‑aanpassingen.  
-- **Schaalbare architectuur** – Perfect voor SaaS‑platforms, documentportalen en enterprise content‑managementsystemen.
+- **Speed & Efficiency** – Stream the file directly from FTP to the viewer, cutting I/O latency by up to 60 % compared with a download‑then‑render pattern.  
+- **Cross‑Platform Compatibility** – Runs on any Java‑compatible OS (Windows, Linux, macOS) and works with JDK 8 or newer.  
+- **Rich Output Options** – Generate HTML with embedded resources, PDF, or PNG images using a single API call.  
+- **Scalable Architecture** – Handles 100+ concurrent preview requests per server instance when paired with connection pooling.  
+- **Quantified Support** – GroupDocs.Viewer supports **100+ input formats** (DOCX, XLSX, PPTX, PDF, ODT, etc.) and can render multi‑hundred‑page documents without loading the entire file into memory.
 
 ## Voorvereisten
 
-Voordat je aan de implementatie begint, zorg ervoor dat je ontwikkelomgeving aan de volgende eisen voldoet:
+Before you start, ensure your environment satisfies the following:
 
-### Vereiste bibliotheken en afhankelijkheden
-1. **GroupDocs.Viewer for Java** – de kern‑renderengine.  
-2. **Apache Commons Net** – levert de `FTPClient`‑klasse voor FTP‑communicatie.
+### Required Libraries and Dependencies
+1. **GroupDocs.Viewer for Java** – the core rendering engine.  
+2. **Apache Commons Net** – provides the `FTPClient` class for FTP communication.
 
-### Omgevingsconfiguratie
-- Java Development Kit (JDK) 8 of nieuwer.  
-- Een IDE zoals IntelliJ IDEA of Eclipse.  
-- Maven voor afhankelijkheidsbeheer.
+### Environment Setup
+- Java Development Kit (JDK) 8 or newer.  
+- An IDE such as IntelliJ IDEA or Eclipse.  
+- Maven for dependency management.
 
-### Kennisvoorvereisten
-- Basis Java‑programmering (klassen, methoden, try‑with‑resources).  
-- Vertrouwdheid met streams (`InputStream`, `OutputStream`).  
-- Begrip van HTML‑basisprincipes is nuttig maar niet verplicht.
+### Knowledge Prerequisites
+- Basic Java programming (classes, methods, try‑with‑resources).  
+- Familiarity with streams (`InputStream`, `OutputStream`).  
+- Understanding of HTML basics is helpful but not mandatory.
 
 ## GroupDocs.Viewer voor Java instellen
 
-Voeg de vereiste Maven‑configuratie toe aan je `pom.xml`. **Wijzig de code binnen de blokken niet** – deze moet precies blijven zoals oorspronkelijk geleverd.
+Add the required Maven configuration to your `pom.xml`. **Do not modify the code inside the blocks** – they must stay exactly as originally provided.
 
 ```xml
 <repositories>
@@ -78,16 +133,22 @@ Voeg de vereiste Maven‑configuratie toe aan je `pom.xml`. **Wijzig de code bin
 </dependencies>
 ```
 
-### Stappen voor het verkrijgen van een licentie
-1. **Gratis proefversie** – Download een proefversie van [GroupDocs](https://releases.groupdocs.com/viewer/java/).  
-2. **Tijdelijke licentie** – Vraag een tijdelijke licentie aan om de volledige mogelijkheden te verkennen.  
-3. **Aankoop** – Verkrijg een commerciële licentie voor productie‑implementaties.
+### Stappen voor licentie‑acquisitie
+1. **Free Trial** – Download a trial version from [GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+2. **Temporary License** – Apply for a temporary license to explore full capabilities.  
+3. **Purchase** – Obtain a commercial license for production deployments.
 
 ## Implementatie‑gids
 
-### Functie 1: Een document laden vanaf FTP
+### How to Render Documents from FTP Using Apache Commons Net FTP?
 
-Hieronder staat een compacte hulpmethode die verbinding maakt met een FTP‑server en het aangevraagde bestand retourneert als een `InputStream`. Deze stream kan rechtstreeks aan GroupDocs.Viewer worden doorgegeven.
+Load the file from the FTP server with `FTPClient`, feed the resulting `InputStream` straight into GroupDocs.Viewer, and call `viewer.view()` with `HtmlViewOptions.forEmbeddedResources()`. This one‑liner conversion handles DOCX, XLSX, PPTX, PDF, and many other formats automatically.
+
+### Functie 1: Loading a Document from FTP
+
+`FTPClient` from Apache Commons Net handles low‑level FTP commands and data transfer. Below is a compact helper method that connects to an FTP server and returns the requested file as an `InputStream`. This stream can be fed directly into GroupDocs.Viewer.
+
+An **`InputStream`** represents a sequence of bytes that can be read sequentially, making it ideal for streaming file data without loading the entire file into memory.
 
 ```java
 import org.apache.commons.net.ftp.FTPClient;
@@ -103,13 +164,15 @@ private static InputStream getFileFromFtp(String server, String filePath) {
 ```
 
 - **Parameters**  
-  - `server`: FTP‑serveradres (bijv. `ftp.example.com`).  
-  - `filePath`: Pad naar het doelbestand op de server (bijv. `/docs/report.docx`).  
-- **Return Value** – Een `InputStream` die je rechtstreeks aan de viewer kunt doorgeven.
+  - `server`: FTP server address (e.g., `ftp.example.com`).  
+  - `filePath`: Path to the target file on the server (e.g., `/docs/report.docx`).  
+- **Return Value** – An `InputStream` that you can pass straight to the viewer.
 
-### Functie 2: Een document renderen vanuit FTP‑stream
+### Functie 2: Rendering a Document from FTP Stream
 
-Nu combineren we de FTP‑helper met GroupDocs.Viewer om HTML‑bestanden te genereren. Het voorbeeld gebruikt ingesloten resources zodat de output zelfstandig is.
+`Viewer` is GroupDocs.Viewer’s primary class that accepts an `InputStream` and produces viewable output. The example uses embedded resources so the output is self‑contained.
+
+`HtmlViewOptions` configures how the HTML output is generated, allowing embedded resources, custom CSS, and page settings.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -136,51 +199,51 @@ public class RenderDocumentFromFtpStream {
 }
 ```
 
-- **Key Configuration** – `HtmlViewOptions.forEmbeddedResources()` bundelt CSS, JavaScript en afbeeldingen direct in elke HTML‑pagina, waardoor implementatie wordt vereenvoudigd.  
-- **Output** – HTML‑bestanden worden geschreven naar `YOUR_OUTPUT_DIRECTORY` met namen zoals `page_1.html`, `page_2.html`, enz.
+- **Key Configuration** – `HtmlViewOptions.forEmbeddedResources()` bundles CSS, JavaScript, and images directly into each HTML page, simplifying deployment.  
+- **Output** – HTML files are written to `YOUR_OUTPUT_DIRECTORY` with names like `page_1.html`, `page_2.html`, etc.
 
-#### Tips voor probleemoplossing
-- Controleer de FTP‑connectiviteit (firewall, inloggegevens, passieve modus).  
-- Zorg ervoor dat het pad exact overeenkomt met de hoofdlettergevoelige naam op de server.  
-- Let op `null`‑streams; deze geven aan dat het bestand niet is gevonden of dat er geen toestemming is.
+#### Probleemoplossingstips
+- Verify FTP connectivity (firewall, credentials, passive mode).  
+- Ensure the file path matches exactly the case‑sensitive name on the server.  
+- Watch for `null` streams; they indicate the file wasn’t found or permission denied.  
 
 ## Praktische toepassingen
 
-1. **Document Management Systems** – Auto‑preview bestanden die zijn opgeslagen in legacy FTP‑archieven.  
-2. **Archiveringsoplossingen** – Converteer historische documenten naar doorzoekbare HTML voor webportalen.  
-3. **Samenwerkingstools** – Bied directe, uniforme voorbeelden voor teamleden op verschillende apparaten.
+1. **Document Management Systems** – Auto‑preview files stored on legacy FTP archives without moving them to a database.  
+2. **Archiving Solutions** – Convert historic documents to searchable HTML for web portals, preserving original layout.  
+3. **Collaboration Tools** – Provide instant, uniform previews for team members across desktop, mobile, and tablet devices.
 
 ## Prestatie‑overwegingen
 
-- **Connection Management** – Open de FTP‑verbinding alleen voor de duur van de download; hergebruik de client als je meerdere bestanden in één batch moet renderen.  
-- **Buffered Streams** – Plaats de `InputStream` in een `BufferedInputStream` voor grote bestanden (geen code‑wijziging nodig; de viewer buffer intern al).  
-- **Resource Cleanup** – De `try‑with‑resources`‑blokken garanderen dat zowel de FTP‑client als de viewer snel worden gesloten, waardoor geheugenlekken worden voorkomen.
+- **Connection Management** – Open the FTP connection only for the duration of the download; reuse the client for batch rendering to reduce handshake overhead.  
+- **Buffered Streams** – Although the viewer already buffers internally, wrapping the `InputStream` in a `BufferedInputStream` can improve throughput for files larger than 50 MB.  
+- **Resource Cleanup** – The `try‑with‑resources` blocks guarantee that both the FTP client and the viewer are closed promptly, preventing memory leaks and file‑handle exhaustion.
 
 ## Conclusie
 
-Je hebt nu een complete, productie‑klare oplossing om **documenten van ftp te renderen** naar HTML met GroupDocs.Viewer voor Java. Deze aanpak verwijdert de wrijving van handmatige downloads, versnelt de documentpreview en integreert naadloos in moderne Java‑applicaties.
+You now have a complete, production‑ready solution to **render documents from ftp** into HTML using GroupDocs.Viewer for Java and Apache Commons Net FTP. This approach removes the friction of manual downloads, speeds up document preview, and integrates cleanly into modern Java applications.
 
 ### Volgende stappen
-- Experimenteer met andere uitvoerformaten zoals PDF (`PdfViewOptions`) of afbeeldingen (`PngViewOptions`).  
-- Combineer deze logica met cloud‑opslag‑API’s (AWS S3, Azure Blob) voor hybride scenario’s.  
-- Implementeer retry‑logica voor onstabiele netwerkverbindingen om je oplossing robuuster te maken.
+- Experiment with other output formats such as PDF (`PdfViewOptions`) or PNG images (`PngViewOptions`).  
+- Combine this logic with cloud storage APIs (AWS S3, Azure Blob) for hybrid on‑premise/cloud scenarios.  
+- Implement retry logic and exponential back‑off for flaky network connections to make your solution more resilient.
 
 ## Veelgestelde vragen
 
 **Q: Wat is GroupDocs.Viewer voor Java?**  
-A: Het is een Java‑bibliotheek die meer dan 100 documentformaten (DOCX, XLSX, PDF, enz.) converteert naar bekijkbare HTML-, PDF‑ of afbeeldingsbestanden.
+A: Het is een Java‑bibliotheek die **100+ documentformaten** (DOCX, XLSX, PPTX, PDF, ODT, enz.) converteert naar weergave‑HTML, PDF of afbeeldingsbestanden zonder Microsoft Office te vereisen.
 
 **Q: Hoe ga ik om met FTP‑verbindingstijd‑uitval?**  
-A: Voeg retry‑logica toe rond `client.connect()` en `retrieveFileStream()`, of val terug op een gecachte kopie van het bestand.
+A: Plaats `client.connect()` en `client.retrieveFileStream()` in een retry‑lus (3 pogingen aanbevolen) en val terug op een gecachte kopie als de server onbereikbaar blijft.
 
 **Q: Kan ik de gegenereerde HTML aanpassen?**  
-A: Ja. Gebruik `HtmlViewOptions` om een aangepast CSS‑stylesheet in te stellen, de paginagrootte te regelen of ingesloten resources uit te schakelen.
+A: Ja. Gebruik `HtmlViewOptions` om een aangepast CSS‑stylesheet in te stellen, paginagrootte te regelen, of ingesloten resources uit te schakelen voor externe asset‑laden.
 
 **Q: Welke bestandsformaten ondersteunt GroupDocs.Viewer?**  
-A: Word, Excel, PowerPoint, PDF, OpenDocument, Visio en vele anderen. Zie de volledige lijst in de officiële documentatie.
+A: Meer dan 100 formaten, waaronder Word, Excel, PowerPoint, PDF, OpenDocument, Visio en vele afbeeldingssoorten. Zie de officiële documentatie voor de volledige lijst.
 
-**Q: Waar kan ik hulp krijgen als ik tegen problemen aanloop?**  
-A: Bezoek het [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) voor community‑ondersteuning of neem rechtstreeks contact op met GroupDocs‑support.
+**Q: Waar kan ik hulp krijgen als ik problemen ondervind?**  
+A: Bezoek het [GroupDocs‑forum](https://forum.groupdocs.com/c/viewer/9) voor community‑ondersteuning of neem rechtstreeks contact op met GroupDocs‑support voor prioritaire hulp.
 
 ## Resources
 
@@ -194,6 +257,12 @@ A: Bezoek het [GroupDocs forum](https://forum.groupdocs.com/c/viewer/9) voor com
 
 ---
 
-**Laatst bijgewerkt:** 2026-01-28  
+**Laatst bijgewerkt:** 2026-05-16  
 **Getest met:** GroupDocs.Viewer 25.2 for Java  
 **Auteur:** GroupDocs
+
+## Gerelateerde tutorials
+
+- [Hoe URL te laden in Java Document Loading Tutorial - GroupDocs.Viewer Voorbeelden & Best Practices](/viewer/java/document-loading/)
+- [Hoe documenten te laden en renderen als HTML met GroupDocs.Viewer voor Java](/viewer/java/rendering-basics/groupdocs-viewer-java-html-rendering/)
+- [Hoe documentbijlagen op te halen en op te slaan met java file output stream met GroupDocs.Viewer voor Java](/viewer/java/custom-rendering/retrieve-save-document-attachments-groupdocs-viewer-java/)

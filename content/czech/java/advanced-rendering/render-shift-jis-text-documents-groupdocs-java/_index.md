@@ -1,49 +1,73 @@
 ---
-date: '2026-01-15'
-description: Podrobný návod krok za krokem, jak vykreslovat textové dokumenty kódované
-  v shift_jis pomocí GroupDocs.Viewer pro Javu. Obsahuje nastavení, ukázky kódu a
-  praktické tipy.
+date: '2026-05-16'
+description: Podrobný návod krok za krokem k vykreslení textových dokumentů kódovaných
+  Shift_JIS pomocí GroupDocs.Viewer pro Java, zahrnující nastavení Maven, konfiguraci
+  charset a praktické tipy.
 keywords:
-- render text documents Shift_JIS
-- GroupDocs Viewer Java setup
-- Shift_JIS encoding in Java
-title: Jak renderovat shift_jis pomocí GroupDocs.Viewer pro Java
+- render shift_jis text java
+- groupdocs viewer java setup
+- shift_jis encoding java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-16'
+  description: Step‑by‑step guide to render Shift_JIS encoded text documents using
+    GroupDocs.Viewer for Java, covering Maven setup, charset configuration, and real‑world
+    tips.
+  headline: Render Shift_JIS Text in Java with GroupDocs.Viewer
+  type: TechArticle
+- questions:
+  - answer: Set the appropriate `FileType` in `LoadOptions` (e.g., `FileType.CSV`)
+      while keeping the charset as `shift_jis`.
+    question: What if my document is not a `.txt` file but still uses Shift_JIS?
+  - answer: Yes, loop over file paths and create a new `Viewer` instance for each,
+      reusing the same `HtmlViewOptions` if the output folder is shared.
+    question: Can I render multiple files in a batch?
+  - answer: No hard limit, but very large files (> 500 MB) may require more heap memory;
+      consider processing page‑by‑page.
+    question: Is there a limit to the size of a Shift_JIS document?
+  - answer: Verify the source file’s encoding with a tool like `iconv` and ensure
+      `Charset.forName("shift_jis")` matches exactly.
+    question: How do I troubleshoot garbled characters?
+  - answer: Absolutely—encodings such as `EUC-JP`, `GB18030`, and `Big5` are supported
+      via the same `setCharset` method.
+    question: Does GroupDocs.Viewer support other Asian encodings?
+  type: FAQPage
+title: Vykreslení textu Shift_JIS v Javě pomocí GroupDocs.Viewer
 type: docs
 url: /cs/java/advanced-rendering/render-shift-jis-text-documents-groupdocs-java/
 weight: 1
 ---
 
-# Jak renderovat shift_jis pomocí GroupDocs.Viewer pro Java
+# Vykreslení textu Shift_JIS v Javě pomocí GroupDocs.Viewer
 
-Pokud potřebujete **renderovat shift_jis** textové soubory v Java aplikaci, jste na správném místě. V tomto tutoriálu projdeme vše, co potřebujete – od nastavení Maven až po vykreslení dokumentu jako HTML – abyste mohli ve svých projektech správně zobrazovat obsah kódovaný v japonštině.
+Pokud potřebujete **render shift_jis text java** soubory v Java aplikaci, jste na správném místě. V tomto tutoriálu vás provedeme vším, co potřebujete—od nastavení Maven až po vykreslení dokumentu jako HTML—abychom vám umožnili správně zobrazit japonsky kódovaný obsah ve vašich projektech. Uvidíte, proč je důležité správně zacházet s kódováním znaků, jak nakonfigurovat GroupDocs.Viewer a praktické tipy, jak se vyhnout běžným úskalím.
 
-![Render Text Documents in Shift_JIS with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java.png)
+![Vykreslení textových dokumentů v Shift_JIS pomocí GroupDocs.Viewer pro Java](/viewer/advanced-rendering/render-text-documents-in-shift-jis-java.png)
 
 ## Rychlé odpovědi
-- **Jaká knihovna je vyžadována?** GroupDocs.Viewer pro Java (v25.2+).  
-- **Jaký charset je třeba zadat?** `shift_jis`.  
-- **Mohu renderovat i jiné formáty?** Ano, Viewer podporuje PDF, DOCX, HTML a mnoho dalších.  
-- **Potřebuji licenci pro produkci?** Platná licence GroupDocs je vyžadována pro ne‑zkušební použití.  
-- **Jaká verze Javy je podporována?** JDK 8 nebo novější.
+- **Jaká knihovna je vyžadována?** GroupDocs.Viewer for Java (v25.2+).  
+- **Jaké kódování znaků je třeba specifikovat?** `shift_jis`.  
+- **Mohu vykreslovat i jiné formáty?** Yes, the Viewer supports PDF, DOCX, HTML, and many more.  
+- **Potřebuji licenci pro produkční použití?** A valid GroupDocs license is required for non‑trial use.  
+- **Jaká verze Javy je podporována?** JDK 8 or newer.
 
-## Co je Shift_JIS a proč jej renderovat?
+## Co je Shift_JIS a proč jej vykreslovat?
 
-Shift_JIS je starší kódování široce používané pro japonský text. Renderování dokumentů kódovaných ve Shift_JIS zajišťuje, že znaky se zobrazí správně, čímž se vyhnete zkreslenému výstupu, který může narušit uživatelský zážitek v obchodních zprávách, lokalizovaném webovém obsahu a datových analytických pipelinech.
+Shift_JIS je starší japonské kódování znaků, které mapuje bajty na kana, kanji a ASCII symboly. Správné vykreslení Shift_JIS textu zabraňuje poškozeným znakům a zajišťuje, že obchodní zprávy, lokalizované webové stránky a logy analýzy dat si zachovají svůj zamýšlený význam. Použití správného kódování znaků eliminuje problém s „???“ nebo mojibake, který se často objevuje, když se pro starší soubory předpokládá Unicode.
 
-## Jak renderovat shift_jis textové dokumenty
+## Jak vykreslit Shift_JIS text v Javě?
 
-Níže najdete kompletní, spustitelný příklad, který ukazuje **jak renderovat shift_jis** soubory do HTML pomocí GroupDocs.Viewer. Postupujte podle jednotlivých kroků a během několika minut budete mít funkční řešení.
+Načtěte svůj Shift_JIS‑kódovaný soubor pomocí `new File("sample_shift_jis.txt")`, nakonfigurujte `LoadOptions` tak, aby používal kódování `shift_jis`, a zavolejte `viewer.view()` s `HtmlViewOptions`. Tento postup načte soubor, interpretuje bajty pomocí zadaného kódování a vytvoří HTML výstup, který lze vložit do jakéhokoli webového rozhraní. Proces funguje pro jakýkoli prostý textový dokument, bez ohledu na velikost, a vyžaduje jen několik řádků kódu. `viewer.view()` spustí proces vykreslování a vrátí vygenerované HTML stránky.
 
 ### Požadavky
-
 - Java Development Kit 8 nebo novější  
-- Maven (nebo jiný build nástroj)  
-- Knihovna GroupDocs.Viewer pro Java (v25.2+)  
+- Maven (nebo jiný nástroj pro sestavení)  
+- GroupDocs.Viewer for Java knihovna (v25.2+)  
 - Textový soubor kódovaný v Shift_JIS (např. `sample_shift_jis.txt`)
 
 ### Nastavení GroupDocs.Viewer pro Java
 
-Přidejte Maven repozitář a závislost GroupDocs do svého `pom.xml`:
+Přidejte Maven repozitář GroupDocs a závislost do vašeho `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,13 +86,13 @@ Přidejte Maven repozitář a závislost GroupDocs do svého `pom.xml`:
 </dependencies>
 ```
 
-**Tip k licenci:** Začněte s bezplatnou zkušební verzí, abyste prozkoumali funkce, a poté si pořiďte dočasnou licenci nebo plnou licenci na webu GroupDocs.
+**Tip k licenci:** Začněte s bezplatnou zkušební verzí, abyste prozkoumali funkce, poté požádejte o dočasnou licenci nebo zakupte plnou licenci na webu GroupDocs.
 
 ### Průvodce implementací
 
-#### 1. Definujte cestu k vstupnímu souboru
+#### 1. Definujte cestu vstupního souboru
 
-Zadejte umístění textového souboru kódovaného ve Shift_JIS, který chcete renderovat:
+`File` třída ukazuje na Shift_JIS‑kódovaný textový soubor, který chcete vykreslit:
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/SAMPLE_TXT_SHIFT_JS_ENCODED";
@@ -83,9 +107,11 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-#### 3. Nakonfigurujte LoadOptions s charsetem Shift_JIS
+#### 3. Nakonfigurujte LoadOptions s kódováním Shift_JIS
 
-Řekněte Vieweru, jaký charset má použít při čtení souboru:
+`LoadOptions` říká Vieweru, jaké kódování má použít při čtení souboru.  
+
+**Definiční kotva:** `LoadOptions` je konfigurační objekt GroupDocs.Viewer, který řídí, jak je zdrojový dokument otevřen, včetně kódování, hesla a nastavení rozsahu stránek.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -95,15 +121,17 @@ loadOptions.setCharset(Charset.forName("shift_jis"));
 
 #### 4. Připravte HtmlViewOptions pro vložené zdroje
 
-Nastavte HTML renderování tak, aby obrázky, CSS a skripty byly vloženy přímo do výstupních souborů:
+`HtmlViewOptions` vám umožňuje vložit obrázky, CSS a skripty přímo do HTML výstupu, čímž vznikne jeden samostatný soubor na stránku.
+
+**Definiční kotva:** `HtmlViewOptions` představuje nastavení vykreslování pro HTML výstup, jako je vkládání zdrojů, velikost stránky a nastavení okrajů.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 5. Načtěte a renderujte dokument
+#### 5. Načtěte a vykreslete dokument
 
-Nakonec renderujte textový soubor do HTML. Blok `try‑with‑resources` zajišťuje, že instance `Viewer` bude řádně uzavřena:
+Nakonec vykreslete textový soubor do HTML. `Viewer` je hlavní třída GroupDocs, která načítá dokument a provádí vykreslení. `try‑with‑resources` blok zajišťuje, že instance `Viewer` je správně uzavřena:
 
 ```java
 try (Viewer viewer = new Viewer(filePath, loadOptions)) {
@@ -111,61 +139,65 @@ try (Viewer viewer = new Viewer(filePath, loadOptions)) {
 }
 ```
 
-**Profesionální tip:** Pokud narazíte na `UnsupportedEncodingException`, zkontrolujte, že soubor skutečně používá Shift_JIS a že JVM podporuje tento charset.
+### Konfigurace výstupního adresáře pro vykreslování (znovupoužitelný úryvek)
 
-### Konfigurace výstupního adresáře pro renderování (znovupoužitelný úryvek)
-
-Pokud potřebujete konfiguraci výstupního adresáře použít jinde, mějte tento úryvek po ruce:
+Pokud potřebujete konfiguraci výstupního adresáře znovu použít jinde, mějte tento úryvek po ruce:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-### Praktické aplikace
+## Praktické aplikace
 
-- **Obchodní zprávy:** Převádějte japonské zprávy do web‑připraveného HTML pro intranety.  
-- **Lokalizované weby:** Poskytujte přesný japonský obsah bez nutnosti konverze na straně klienta.  
-- **Data Mining:** Předzpracovávejte Shift_JIS logy před jejich nasazením do analytických pipelinech.
+- **Obchodní zprávy:** Převést japonsky psané zprávy do web‑připraveného HTML pro intranety.  
+- **Lokalizované webové stránky:** Poskytnout přesný japonský obsah bez konverze na straně klienta.  
+- **Data Mining:** Předzpracovat Shift_JIS logy před jejich vložením do analytických pipeline.  
 
-### Úvahy o výkonu
+## Úvahy o výkonu
 
-- Omezte počet souběžných renderovacích vláken, aby nedošlo k nadměrné spotřebě paměti.  
-- Promptně uvolňujte objekty `Viewer` (jak je ukázáno v `try‑with‑resources`).  
-- Pro velmi velké soubory používejte streaming API, aby byl paměťový otisk co nejmenší.
+- Omezte souběžné vlákna vykreslování, aby nedošlo k nadměrné spotřebě paměti.  
+- Okamžitě uvolněte objekty `Viewer` (jak je ukázáno pomocí `try‑with‑resources`).  
+- Používejte streamingové API pro velmi velké soubory, aby byl paměťový otisk nízký.  
 
 ## Často kladené otázky
 
-**Q: Co když můj dokument není `.txt`, ale stále používá Shift_JIS?**  
-A: Nastavte odpovídající `FileType` v `LoadOptions` (např. `FileType.CSV`) a zachovejte charset `shift_jis`.
+**Q: Co když můj dokument není soubor `.txt`, ale stále používá Shift_JIS?**  
+A: Nastavte odpovídající `FileType` v `LoadOptions` (např. `FileType.CSV`) a zachovejte kódování `shift_jis`.
 
-**Q: Můžu renderovat více souborů najednou?**  
-A: Ano, projděte seznam cest k souborům a pro každý vytvořte novou instanci `Viewer`, přičemž můžete znovu použít stejný `HtmlViewOptions`, pokud je výstupní složka sdílena.
+**Q: Mohu vykreslovat více souborů najednou?**  
+A: Ano, projděte cesty k souborům ve smyčce a pro každý vytvořte novou instanci `Viewer`, přičemž můžete znovu použít stejný `HtmlViewOptions`, pokud je výstupní složka sdílena.
 
 **Q: Existuje limit velikosti Shift_JIS dokumentu?**  
-A: Žádný pevný limit, ale velmi velké soubory mohou vyžadovat více paměti; zvažte zpracování po stránkách.
+A: Neexistuje pevný limit, ale velmi velké soubory (> 500 MB) mohou vyžadovat více paměti heap; zvažte zpracování po stránkách.
 
-**Q: Jak řešit zkreslené znaky?**  
+**Q: Jak řešit poškozené znaky?**  
 A: Ověřte kódování zdrojového souboru pomocí nástroje jako `iconv` a ujistěte se, že `Charset.forName("shift_jis")` přesně odpovídá.
 
-**Q: Podporuje GroupDocs.Viewer i jiné asijské kódování?**  
-A: Rozhodně – kódování jako `EUC-JP`, `GB18030` a `Big5` jsou podporována stejnou metodou `setCharset`.
+**Q: Podporuje GroupDocs.Viewer další asijské kódování?**  
+A: Ano—kódování jako `EUC-JP`, `GB18030` a `Big5` jsou podporována stejnou metodou `setCharset`.
 
 ## Závěr
 
-Nyní víte **jak renderovat shift_jis** textové dokumenty pomocí GroupDocs.Viewer pro Java. Dodržením výše uvedených kroků můžete do libovolného Java‑based systému integrovat spolehlivé renderování japonského jazyka, ať už jde o webový portál, reportingovou službu nebo datovou pipeline.
+Nyní víte **jak vykreslit shift_jis text java** dokumenty pomocí GroupDocs.Viewer pro Java. Dodržením výše uvedených kroků můžete integrovat spolehlivé vykreslování japonského jazyka do jakéhokoli systému založeného na Javě, ať už jde o webový portál, reportingovou službu nebo datové zpracovatelské potrubí. Kombinace správné konfigurace kódování znaků a vkládání HTML vám poskytne čistý, prohledávatelný výstup bez potíží s ruční konverzí.
 
 **Zdroje**  
-- [Documentation](https://docs.groupdocs.com/viewer/java/)  
+- [Dokumentace](https://docs.groupdocs.com/viewer/java/)  
 - [API Reference](https://reference.groupdocs.com/viewer/java/)  
-- [Download](https://releases.groupdocs.com/viewer/java/)  
-- [Purchase](https://purchase.groupdocs.com/buy)  
-- [Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- [Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- [Stáhnout](https://releases.groupdocs.com/viewer/java/)  
+- [Koupit](https://purchase.groupdocs.com/buy)  
+- [Bezplatná zkušební verze](https://releases.groupdocs.com/viewer/java/)  
+- [Dočasná licence](https://purchase.groupdocs.com/temporary-license/)  
+- [Fórum podpory](https://forum.groupdocs.com/c/viewer/9)  
 
 ---
 
-**Poslední aktualizace:** 2026-01-15  
-**Testováno s:** GroupDocs.Viewer pro Java 25.2  
-**Autor:** GroupDocs  
+**Poslední aktualizace:** 2026-05-16  
+**Testováno s:** GroupDocs.Viewer for Java 25.2  
+**Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Jak nastavit licence v GroupDocs.Viewer Java: Průvodce nastavením souboru a URL](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
+- [Responsivní HTML vykreslování s GroupDocs.Viewer pro Java: Kompletní průvodce](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [Jak přidat vlastní font HTML v Javě s GroupDocs.Viewer: Krok za krokem průvodce](/viewer/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/)
