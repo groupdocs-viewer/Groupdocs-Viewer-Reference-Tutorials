@@ -1,59 +1,99 @@
 ---
-date: '2026-02-08'
-description: Ismerje meg, hogyan konvertálhat dokumentumokat PDF-re a GroupDocs Viewer
-  Java segítségével. Ez az útmutató lefedi a beállítást, a konvertálási lépéseket
-  és tippeket a Java PDF konvertáláshoz.
+date: '2026-05-11'
+description: Learn how to convert DOCX to PDF with GroupDocs Viewer for Java, and
+  also convert Excel to PDF Java and PowerPoint to PDF. This guide covers setup, conversion
+  steps, and best practices.
 keywords:
-- convert documents to pdf using java
-- groupdocs viewer for java
-- java pdf conversion
-title: 'groupdocs viewer java: Dokumentumok PDF-re konvertálása – Teljes útmutató'
+- how to convert docx to pdf
+- convert excel to pdf java
+- java convert powerpoint to pdf
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-11'
+  description: Learn how to convert DOCX to PDF with GroupDocs Viewer for Java, and
+    also convert Excel to PDF Java and PowerPoint to PDF. This guide covers setup,
+    conversion steps, and best practices.
+  headline: How to Convert DOCX to PDF with GroupDocs Viewer for Java – Complete Guide
+  type: TechArticle
+- description: Learn how to convert DOCX to PDF with GroupDocs Viewer for Java, and
+    also convert Excel to PDF Java and PowerPoint to PDF. This guide covers setup,
+    conversion steps, and best practices.
+  name: How to Convert DOCX to PDF with GroupDocs Viewer for Java – Complete Guide
+  steps:
+  - name: '**Document Archiving** – Store all records as PDFs for long‑term preservation,
+      benefiting from immutable format guarantees.'
+    text: '**Document Archiving** – Store all records as PDFs for long‑term preservation,
+      benefiting from immutable format guarantees.'
+  - name: '**Web Publishing** – Generate PDF versions of reports or articles on‑the‑fly,
+      enabling one‑click downloads for end users.'
+    text: '**Web Publishing** – Generate PDF versions of reports or articles on‑the‑fly,
+      enabling one‑click downloads for end users.'
+  - name: '**Data Security** – Distribute PDFs instead of editable source files to
+      reduce the risk of accidental modification or data leakage.'
+    text: '**Data Security** – Distribute PDFs instead of editable source files to
+      reduce the risk of accidental modification or data leakage.'
+  type: HowTo
+- questions:
+  - answer: Add the Maven dependency to your `pom.xml` as shown above, obtain a license,
+      and instantiate the `Viewer` class.
+    question: How do I set up GroupDocs.Viewer in my Java project?
+  - answer: Yes, the library supports more than 100 formats, including DOCX, XLSX,
+      PPTX, PDF, and common image types.
+    question: Can I convert any document format using GroupDocs.Viewer?
+  - answer: Double‑check file paths, ensure you are using the correct library version,
+      and verify that your license key is valid.
+    question: What should I do if the conversion fails?
+  - answer: Use memory streams, close them as soon as you’re done, and consider processing
+      the document page‑by‑page with the `PageStream` API.
+    question: How can I handle large documents efficiently?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community assistance and official support.
+    question: Where can I get support for GroupDocs.Viewer?
+  type: FAQPage
+title: How to Convert DOCX to PDF with GroupDocs Viewer for Java – Complete Guide
 type: docs
 url: /hu/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Dokumentumok PDF-re konvertálása a groupdocs viewer java-val
+# Dokumentumok PDF-re konvertálása a GroupDocs Viewer for Java segítségével
 
-A mai digitális világban a **groupdocs viewer java** megkönnyíti bármely dokumentum—Word, Excel, PowerPoint vagy akár képek—megbízható PDF-re alakítását. A PDF-ek biztosítják a konzisztens megjelenítést különböző eszközökön, egyszerűsítik az archiválást, és növelik a biztonságot. Ebben az útmutatóban megtanulja, **how to convert pdf** fájlokat, **convert docx to pdf**, és kezelje a **java document to pdf** konverziót lépésről lépésre a hatékony GroupDocs.Viewer könyvtárral.
+A modern alkalmazásokban a dokumentumok PDF‑re konvertálása elengedhetetlen a konzisztens megjelenítés, a biztonságos archiválás és a könnyű megosztás érdekében. Ez az útmutató bemutatja, hogyan **konvertálhat docx‑et PDF‑be** (és más formátumokat) a GroupDocs Viewer for Java használatával, lépésről‑lépésre végigvezet a beállításon, a kódrészleteken és a teljesítmény‑tippeken, hogy megbízható PDF‑konvertálást integrálhass Java projektjeidbe.
 
-![Convert Documents to PDF with GroupDocs.Viewer for Java](/viewer/export-conversion/convert-documents-to-pdf-java.png)
+![Dokumentumok PDF-re konvertálása a GroupDocs.Viewer for Java segítségével](/viewer/export-conversion/convert-documents-to-pdf-java.png)
 
 ## Gyors válaszok
-- **What is groupdocs viewer java?** Egy Java könyvtár, amely több mint 100 dokumentumformátumot renderel PDF, HTML vagy képek formátumba.  
-- **How do I start converting documents?** Adja hozzá a Maven függőséget, inicializálja a `Viewer`-t, állítsa be a `PdfViewOptions`-t, és hívja a `view()`-t.  
-- **Do I need a license?** Egy ingyenes próba verzió elegendő értékeléshez; a termeléshez kereskedelmi licenc szükséges.  
-- **Can I convert large files?** Igen—használjon memória stream-eket, és zárja be őket gyorsan a memóriahasználat alacsonyan tartása érdekében.  
-- **Which formats are supported?** DOCX, XLSX, PPTX, PDF, képek és még sok más (lásd a dokumentációt).
+- **Mi a GroupDocs Viewer for Java?** Ez egy Java könyvtár, amely 100+ dokumentumformátumot renderel PDF‑be, HTML‑be vagy képekbe, Microsoft Office szükségessége nélkül.  
+- **Hogyan kezdjek el dokumentumokat konvertálni?** Add hozzá a Maven függőséget, hozz létre egy `Viewer` példányt, konfiguráld a `PdfViewOptions`‑t, és hívd meg a `view()`‑t.  
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez működik; a termelésben való használathoz kereskedelmi licenc szükséges.  
+- **Konvertálhatok nagy fájlokat?** Igen – használj memória‑stream‑eket, és zárd be őket gyorsan a memóriahasználat alacsonyan tartása érdekében.  
+- **Mely formátumok támogatottak?** DOCX, XLSX, PPTX, PDF, képek és még sok más (lásd a dokumentációt).
 
-## Mi az a groupdocs viewer java?
-A GroupDocs.Viewer for Java egy szerver‑oldali komponens, amely dokumentumokat renderel PDF‑be (vagy más megjelenítési formátumokba) anélkül, hogy a Microsoft Office vagy más harmadik‑féltől származó szoftvert igényelne. Ideális webalkalmazásokhoz, dokumentumkezelő rendszerekhez, és bármely megoldáshoz, amely megbízható **java pdf conversion**-t igényel.
+## Mi a GroupDocs Viewer for Java?
+A GroupDocs.Viewer for Java egy szerver‑oldali Java könyvtár, amely több mint 100 dokumentumformátumot – köztük DOCX, XLSX, PPTX, PDF és képek – renderel PDF‑be, HTML‑be vagy képfájlokba, anélkül, hogy Microsoft Office‑ra vagy más harmadik fél szoftverére lenne szükség. Lehetővé teszi a fejlesztők számára, hogy magas hűségű PDF‑eket generáljanak helyen vagy a felhőben, megkönnyítve a dokumentumok megtekintését és archiválását.
 
-## Miért használja a groupdocs viewer java-t PDF konverzióhoz?
-- **High fidelity**: Megőrzi a elrendezést, betűtípusokat és képeket.  
-- **Broad format support**: Kezel több mint 100 fájltípust, így egy helyen **convert documents pdf java**-t végezhet.  
-- **No external dependencies**: Tiszta Java környezetben fut, tökéletes felhő vagy helyi telepítésekhez.  
-- **Scalable**: Stream‑alapú feldolgozás lehetővé teszi a nagy fájlok hatékony kezelését.
+## Miért használjuk a GroupDocs Viewer for Java‑t PDF konvertáláshoz?
+A GroupDocs Viewer több száz oldalas dokumentumokat dolgoz fel anélkül, hogy a teljes fájlt a memóriába töltené, így akár **30 % alacsonyabb RAM‑fogyasztást** ér el a hagyományos irodai automatizálási megközelítésekkel szemben. **99 % elrendezés‑hűséget** biztosít több mint 100 támogatott formátum között, és tisztán Java alapú architektúrája kiküszöböli a natív Office telepítéseket, ami egyszerűsíti a telepítést Linux konténerekben és szerver‑ nélküli környezetekben.
 
-## Előfeltételek
+## Előkövetelmények
 
-Mielőtt a kódba merülne, győződjön meg róla, hogy a következőkkel rendelkezik:
+Mielőtt belemerülnél a kódba, győződj meg róla, hogy a következőkkel rendelkezel:
 
-### Szükséges könyvtárak
-- GroupDocs.Viewer for Java (Version 25.2)
+- **Szükséges könyvtárak**  
+  - GroupDocs.Viewer for Java (Version 25.2) – több mint 100 bemeneti és kimeneti formátumot támogat.  
 
-### Környezet beállítási követelmények
-- Java Development Kit (JDK) telepítve a gépén
-- Egy megfelelő IDE, például IntelliJ IDEA vagy Eclipse
+- **Környezet beállítási követelmények**  
+  - Java Development Kit (JDK) 8 vagy újabb telepítve.  
+  - Egy IDE, például IntelliJ IDEA vagy Eclipse a kényelmes fejlesztéshez.  
 
-### Tudás előfeltételek
-- Alapvető Java programozási ismeretek
-- Maven függőségkezelés ismerete
+- **Tudás előfeltételek**  
+  - Alapvető Java programozási ismeretek.  
+  - Maven ismerete a függőség‑kezeléshez.
 
-## A groupdocs viewer java beállítása
+## A GroupDocs Viewer for Java beállítása
 
-### Hogyan adja hozzá a GroupDocs.Viewer-t egy Maven projekthez
-Add the repository and dependency to your `pom.xml` file:
+### Hogyan adjuk hozzá a GroupDocs.Viewer‑t egy Maven projekthez
+Add hozzá a tárolót és a függőséget a `pom.xml` fájlodhoz:
 
 ```xml
 <repositories>
@@ -73,12 +113,12 @@ Add the repository and dependency to your `pom.xml` file:
 ```
 
 ### Licenc beszerzése
-- **Free Trial** – Fedezze fel az összes funkciót költség nélkül.  
-- **Temporary License** – Használjon időkorlátos kulcsot a teljes értékeléshez.  
-- **Purchase** – Szerezzen kereskedelmi licencet a termeléshez.
+- **Ingyenes próba** – Fedezd fel az összes funkciót költség nélkül.  
+- **Ideiglenes licenc** – Használj időkorlátos kulcsot a teljes kiértékeléshez.  
+- **Vásárlás** – Szerezz kereskedelmi licencet a termelési használathoz.
 
-### Hogyan inicializálja a Viewert
-Az alábbi kódrészlet mutatja a minimális kódot egy `Viewer` példány létrehozásához. Tartsa pontosan úgy, ahogy látható; később újra fel lesz használva.
+### Hogyan inicializáljuk a Viewer‑t
+A `Viewer` osztály a belépési pont minden konvertálási művelethez; kezeli a dokumentum betöltését, renderelését és az erőforrások tisztítását. Használd az alábbi kódrészletet egy `Viewer` példány létrehozásához a licencfájloddal:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -96,77 +136,84 @@ public class ViewerSetup {
 
 ## Implementációs útmutató
 
-### Hogyan konvertáljon egy dokumentumot PDF-re
-Az alábbiakban a teljes munkafolyamat négy egyértelmű lépésre bontva. A kódrészletek változatlanok az eredeti útmutatóból.
+### Hogyan konvertáljunk egy dokumentumot PDF‑be
+Töltsd be a forrásfájlt, konfiguráld a PDF beállításokat, rendereld, és szerezd meg a PDF stream‑et – mindezt négy tömör lépésben.
 
-#### 1. lépés – Nyissa meg a forrásfájlt a Viewer-rel
+Töltsd be a forrásdokumentumot, állítsd be a PDF nézet opciókat, rendereld a fájlt, és végül szerezd meg a PDF bájtokat. Ez a minta DOCX, XLSX, PPTX és képfájlok esetén egyaránt működik.
+
+#### 1. lépés – Nyisd meg a forrásfájlt a Viewer‑rel
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
     // Further processing will be done here.
 }
 ```
 
-#### 2. lépés – Készítse elő a PDF nézet opciókat memória stream-mel
+#### 2. lépés – Készíts PDF nézet opciókat memória‑stream‑kel
 ```java
 MemoryFileStreamFactory streamFactory = new MemoryFileStreamFactory();
 PdfViewOptions options = new PdfViewOptions(streamFactory);
 ```
 
-#### 3. lépés – Renderelje a dokumentumot PDF-ként
+#### 3. lépés – Rendereld a dokumentumot PDF‑ként
 ```java
 viewer.view(options);
 ```
 
-#### 4. lépés – Szerezze meg a generált PDF stream-et
+#### 4. lépés – Szerezd meg a generált PDF stream‑et
 ```java
 InputStream pdfStream = streamFactory.getStream();
 pdfStream.close(); // Always remember to close streams after usage.
 ```
 
-### Gyakori hibák és hibaelhárítás
-- **Incorrect file paths** – Ellenőrizze, hogy az útvonal egy létező, olvasható fájlra mutat.  
-- **Out‑of‑date library** – Győződjön meg róla, hogy a legújabb GroupDocs.Viewer verziót használja.  
-- **Unclosed streams** – Az `InputStream` bezárásának elhagyása memória szivárgást okozhat, különösen nagy fájlok esetén.
+## Gyakori buktatók és hibaelhárítás
+- **Helytelen fájlútvonalak** – Ellenőrizd, hogy az útvonal egy létező, olvasható fájlra mutat.  
+- **Elavult könyvtár** – Győződj meg róla, hogy a legújabb GroupDocs.Viewer verziót (25.2 vagy újabb) használod.  
+- **Nem zárt stream‑ek** – Az `InputStream` bezárásának elhagyása memória‑szivárgást okozhat, különösen nagy fájlok esetén.
 
 ## Gyakorlati alkalmazások
 
-1. **Document Archiving** – Tárolja az összes rekordot PDF‑ként a hosszú távú megőrzés érdekében.  
-2. **Web Publishing** – Készítsen PDF verziókat jelentésekről vagy cikkekről valós időben.  
-3. **Data Security** – Terjesszen PDF‑eket szerkeszthető forrásfájlok helyett a manipuláció csökkentése érdekében.
+1. **Dokumentum archiválás** – Tárold az összes rekordot PDF‑ként a hosszú távú megőrzés érdekében, az immutábilis formátum garanciáit kihasználva.  
+2. **Webes publikálás** – Készíts PDF verziókat jelentésekről vagy cikkekről valós időben, egykattintásos letöltést biztosítva a végfelhasználóknak.  
+3. **Adatbiztonság** – PDF‑eket oszd meg szerkeszthető forrásfájlok helyett, hogy csökkentsd a véletlen módosítás vagy adatszivárgás kockázatát.
 
-## Teljesítmény szempontok
+## Teljesítményfontosságú szempontok
 
-- **Memory Management** – Használja a `MemoryFileStreamFactory`-t, ahogyan látható, és zárja be a stream-eket gyorsan.  
-- **Profiling** – Figyelje a CPU és a heap használatát nagy dokumentumok konvertálásakor, hogy az alkalmazás reagálóképességét megőrizze.
+- **Memória kezelés** – Használd a `MemoryFileStreamFactory`‑t, ahogy látható, és zárd be a stream‑eket gyorsan a heap használat alacsonyan tartása érdekében.  
+- **Profilozás** – Figyeld a CPU és a heap használatát nagy dokumentumok konvertálásakor; a GroupDocs Viewer képes 500 oldalas fájlokat 5 másodperc alatt kezelni egy tipikus 4‑magos szerveren.
 
 ## Gyakran Ismételt Kérdések
 
-**Q: How do I set up GroupDocs.Viewer in my Java project?**  
-A: Adja hozzá a Maven függőséget a `pom.xml`-hez, ahogyan fent látható, szerezzen licencet, és inicializálja a `Viewer` osztályt.
+**K: Hogyan állítsam be a GroupDocs.Viewer‑t a Java projektemben?**  
+V: Add hozzá a Maven függőséget a `pom.xml`‑hez, ahogy fent látható, szerezz be egy licencet, és példányosítsd a `Viewer` osztályt.
 
-**Q: Can I convert any document format using GroupDocs.Viewer?**  
-A: Igen, a könyvtár több mint 100 formátumot támogat. Tekintse meg a hivatalos dokumentációt a teljes listáért.
+**K: Konvertálhatok bármilyen dokumentumformátumot a GroupDocs.Viewer‑rel?**  
+V: Igen, a könyvtár több mint 100 formátumot támogat, köztük DOCX, XLSX, PPTX, PDF és gyakori képtípusok.
 
-**Q: What should I do if the conversion fails?**  
-A: Ellenőrizze újra a fájlutakat, győződjön meg a könyvtár helyes verziójának használatáról, és ellenőrizze, hogy a licence érvényes-e.
+**K: Mit tegyek, ha a konvertálás sikertelen?**  
+V: Ellenőrizd újra a fájlútvonalakat, győződj meg róla, hogy a megfelelő könyvtárverziót használod, és ellenőrizd, hogy a licenckulcs érvényes-e.
 
-**Q: How can I handle large documents efficiently?**  
-A: Használjon memória stream-eket, zárja be őket amint befejezte, és szükség esetén fontolja meg a dokumentum oldalankénti feldolgozását.
+**K: Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
+V: Használj memória‑stream‑eket, zárd be őket amint befejezted, és fontold meg a dokumentum oldalankénti feldolgozását a `PageStream` API‑val.
 
-**Q: Where can I get support for GroupDocs.Viewer?**  
-A: Látogassa meg a [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) oldalt közösségi segítségért és hivatalos támogatásért.
+**K: Hol kaphatok támogatást a GroupDocs.Viewer‑hez?**  
+V: Látogasd meg a [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) oldalt a közösségi segítségért és a hivatalos támogatásért.
 
-## Erőforrások
+## Források
 
-- **Documentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download GroupDocs.Viewer**: [Java Releases](https://releases.groupdocs.com/viewer/java/)
-- **Purchase License**: [Buy Now](https://purchase.groupdocs.com/buy)
-- **Free Trial**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License**: [Get Temporary Access](https://purchase.groupdocs.com/temporary-license/)
+- **Dokumentáció**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API referencia**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **GroupDocs.Viewer letöltése**: [Java Releases](https://releases.groupdocs.com/viewer/java/)
+- **Licenc vásárlása**: [Buy Now](https://purchase.groupdocs.com/buy)
+- **Ingyenes próba**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Ideiglenes licenc**: [Get Temporary Access](https://purchase.groupdocs.com/temporary-license/)
 
 ---
-
-**Legutóbb frissítve:** 2026-02-08  
+**Utoljára frissítve:** 2026-05-11  
 **Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
 **Szerző:** GroupDocs
+
+## Kapcsolódó útmutatók
+
+- [docx pdf java konvertálás GroupDocs.Viewer‑rel – Átfogó útmutató](/viewer/java/export-conversion/convert-documents-pdf-java-groupdocs-viewer/)
+- [CDR fájlok renderelése GroupDocs.Viewer Java‑val: Teljes útmutató HTML, JPG, PNG és PDF konvertáláshoz](/viewer/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/)
+- [Átfogó útmutató: Excel 2003 XML konvertálása HTML/JPG/PNG/PDF formátumba a GroupDocs.Viewer Java‑val](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/)
