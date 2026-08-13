@@ -1,112 +1,453 @@
 ---
 categories:
 - Java Development
-date: '2026-01-28'
-description: เรียนรู้วิธีแปลงไฟล์ Word เป็น HTML และแสดงเอกสารพร้อมคอมเมนต์โดยใช้
-  GroupDocs Viewer สำหรับ Java คู่มือขั้นตอนโดยละเอียด การแก้ไขปัญหา และแนวปฏิบัติที่ดีที่สุด
-keywords: GroupDocs Viewer Java tutorial, Java document rendering with comments, HTML
-  document viewer Java, GroupDocs Java integration, Java document conversion HTML
-lastmod: '2026-01-28'
-linktitle: GroupDocs Viewer Java Tutorial
+date: '2026-05-21'
+description: เรียนรู้วิธีแปลง Word เป็น HTML และแสดงเอกสารพร้อม Comments ด้วย GroupDocs
+  Viewer for Java. คู่มือแบบขั้นตอนต่อขั้นตอน, การแก้ไขปัญหา, และแนวปฏิบัติที่ดีที่สุด.
+keywords:
+- convert word to html
+- increase jvm heap
+- groupdocs viewer java
+- how to render comments
+- render document comments
+lastmod: '2026-05-21'
+linktitle: บทเรียน GroupDocs Viewer Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-21'
+  description: Learn how to convert Word to HTML and render documents with comments
+    using GroupDocs Viewer for Java. Step‑by‑step guide, troubleshooting, and best
+    practices.
+  headline: GroupDocs Viewer Java Tutorial - Convert Word to HTML and Render Documents
+    with Comments
+  type: TechArticle
+- description: Learn how to convert Word to HTML and render documents with comments
+    using GroupDocs Viewer for Java. Step‑by‑step guide, troubleshooting, and best
+    practices.
+  name: GroupDocs Viewer Java Tutorial - Convert Word to HTML and Render Documents
+    with Comments
+  steps:
+  - name: Verify Java Installation
+    text: 'Open a terminal and run: You should see a version string beginning with
+      `1.8` or higher. If not, download the latest JDK from the official Oracle or
+      OpenJDK website.'
+  - name: Check Maven Installation
+    text: 'Run: Maven should report its version and the Java version it uses. Install
+      Maven from the Apache website if the command is not recognised.'
+  - name: Create a New Maven Project
+    text: 'Generate a skeleton project with: Navigate into the newly created `viewer-demo`
+      folder and you’re ready to add GroupDocs Viewer.'
+  - name: Set Up Your File Paths
+    text: 'Organise your input and output locations early to avoid path‑related errors:
+      **Why This Approach:** - Uses modern Java NIO.2 `Path` API, which is more reliable
+      than `java.io.File`. - Descriptive variable names make debugging easier. - The
+      `{0}` placeholder in the output pattern is automatically repl'
+  - name: Configure HTML Rendering Options
+    text: 'This is where the magic happens. We tell GroupDocs exactly how we want
+      the document rendered: `HtmlViewOptions` configures how the document is rendered
+      to HTML, including resource handling and comment rendering. **Key Configuration
+      Details:** - `forEmbeddedResources()` embeds CSS, images, and fonts '
+  - name: Execute the Rendering
+    text: 'Now we bring everything together: `Viewer` is the primary class used to
+      load a document and perform rendering operations. The `view` call reads the
+      Word file, extracts comments, generates HTML pages, and writes them to `output/html`.
+      Each page is saved as `page_1.html`, `page_2.html`, etc.'
+  type: HowTo
+- questions:
+  - answer: Yes—simply omit the `setRenderComments(true)` call or set it to `false`.
+    question: Can I render documents without comments?
+  - answer: Most major formats—including DOC/DOCX, XLS/XLSX, PPT/PPTX, PDF, and many
+      more. See the [official documentation](https://docs.groupdocs.com/viewer/java/)
+      for the full list.
+    question: What file formats support comment rendering?
+  - answer: Absolutely. Use `HtmlViewOptions.setEmbedResources(false)` to generate
+      external CSS files, then add your own stylesheet after rendering.
+    question: Can I customize the HTML output styling?
+  - answer: 'Provide a `LoadOptions` instance with the password:'
+    question: How do I handle password‑protected documents?
+  - answer: 'Yes—use the overloaded `view` method that accepts a `PageNumber` collection:'
+    question: Is it possible to render only specific pages?
+  type: FAQPage
 tags:
 - groupdocs-viewer
 - java-tutorial
 - document-rendering
 - html-conversion
-title: 'บทแนะนำ GroupDocs Viewer สำหรับ Java - แปลง Word เป็น HTML และแสดงเอกสารพร้อมความคิดเห็น'
+title: บทเรียน GroupDocs Viewer Java - แปลง Word เป็น HTML และแสดงเอกสารพร้อม Comments
 type: docs
 url: /th/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/
 weight: 1
 ---
 
-# การสอน GroupDocs Viewer สำหรับ Java: แปลง Word เป็น HTML และแสดงเอกสารพร้อมคอมเมนต์
+# คู่มือ GroupDocs Viewer สำหรับ Java: แปลง Word เป็น HTML และแสดงเอกสารพร้อมความคิดเห็น
 
 ## บทนำ
 
-เคยลองแปลงเอกสาร Word เป็น HTML แล้วพบว่าคอมเมนต์และหมายเหตุสำคัญทั้งหมดหายไปหรือไม่? คุณไม่ได้เป็นคนเดียวที่เจอปัญหานี้ นักพัฒนา Java จำนวนมากประสบปัญหาในการรักษารูปแบบเอกสารและเนื้อหาที่ฝังอยู่ระหว่างกระบวนการแปลง
+หากคุณต้องการ **แปลง Word เป็น HTML** พร้อมเก็บบันทึกของผู้ตรวจสอบ ทุกความคิดเห็น หรือคำอธิบายไว้ คุณมาถูกที่แล้ว นักพัฒนา Java จำนวนมากเจออุปสรรคเมื่อการแปลงเอกสารลบข้อมูลข้อเสนอแนะที่ฝังอยู่ในไฟล์ต้นฉบับ บทเรียนนี้จะสอนคุณใช้ GroupDocs Viewer สำหรับ Java เพื่อ **แปลง Word เป็น HTML** และแสดงประเภทเอกสารหลากหลาย—Word, Excel, PowerPoint, PDF และอื่น ๆ—โดยไม่สูญเสียข้อมูลความคิดเห็นใด ๆ
 
-การสอน GroupDocs Viewer สำหรับ Java อย่างครอบคลุมนี้จะแก้ปัญหาเหล่านั้นโดยตรง คุณจะได้เรียนรู้วิธี **แปลง Word เป็น HTML** พร้อมกับการแสดงเอกสาร (Word, Excel, PowerPoint และอื่น ๆ) เป็น HTML ที่สะอาดพร้อมคอมเมนต์, หมายเหตุ และข้อเสนอแนะทุกอย่างครบถ้วน
+คุณจะได้พบว่าทำไม GroupDocs Viewer จึงเป็นตัวเลือกพร้อมใช้งานในการผลิต วิธีตั้งค่าสภาพแวดล้อม โค้ดที่จำเป็นต้องใช้ และเคล็ดลับที่พิสูจน์แล้วว่าจะทำให้ประสิทธิภาพรวดเร็วแม้กับไฟล์ขนาดใหญ่
 
-ไม่ว่าคุณจะกำลังสร้างระบบจัดการเอกสาร, สร้างแพลตฟอร์มรีวิวแบบร่วมมือ, หรือเพียงต้องการแสดงเอกสารที่มีหมายเหตุบนเว็บ คู่มือนี้ครอบคลุมทุกอย่างที่คุณต้องการ
+![แสดงเอกสารพร้อมความคิดเห็นด้วย GroupDocs.Viewer สำหรับ Java](/viewer/advanced-rendering/render-documents-with-comments.png)
 
-![แสดงเอกสารพร้อมคอมเมนต์ด้วย GroupDocs.Viewer สำหรับ Java](/viewer/advanced-rendering/render-documents-with-comments.png)
+[แสดงเอกสารพร้อมความคิดเห็นด้วย GroupDocs.Viewer สำหรับ Java](/viewer/advanced-rendering/render-documents-with-comments.png)
 
-**สิ่งที่คุณจะเชี่ยวชาญในบทเรียนนี้:**
-- การตั้งค่าและกำหนดค่า GroupDocs Viewer อย่างครบถ้วน
-- ขั้นตอน‑ต่อ‑ขั้นตอน **แปลง Word เป็น HTML** พร้อมคอมเมนต์ที่คงอยู่
-- วิธีแก้ปัญหาที่พบบ่อยและข้อควรระวัง
+**สิ่งที่คุณจะเรียนรู้ในบทเรียนนี้:**
+- การตั้งค่าและกำหนดค่าของ GroupDocs Viewer อย่างครบถ้วน
+- ขั้นตอน‑ต่อ​ขั้นตอน **แปลง Word เป็น HTML** พร้อมคอมเมนต์ที่คงไว้
+- วิธีแก้ปัญหาทั่วไปและข้อควรระวังที่ควรหลีกเลี่ยง
 - รูปแบบการใช้งานจริงและแนวปฏิบัติที่ดีที่สุด
 - เทคนิคการเพิ่มประสิทธิภาพสำหรับการใช้งานในสภาพแวดล้อมการผลิต
 
-## คำตอบสั้น ๆ
-- **GroupDocs Viewer สามารถแปลง Word เป็น HTML ได้หรือไม่?** ใช่ เพียงเปิดใช้งานการเรนเดอร์ HTML และการสนับสนุนคอมเมนต์  
-- **คอมเมนต์จะอยู่ในผลลัพธ์ HTML หรือไม่?** แน่นอน—`setRenderComments(true)` จะคงคอมเมนต์ไว้  
-- **ต้องใช้ Java เวอร์ชันใด?** JDK 8 หรือสูงกว่า  
-- **ต้องมีลิขสิทธิ์สำหรับการใช้งานในผลิตภัณฑ์หรือไม่?** ลิขสิทธิ์เต็มจะลบลายน้ำและเปิดใช้งานฟีเจอร์ทั้งหมด  
-- **จะเพิ่มความเร็วการเรนเดอร์ได้อย่างไร?** เรนเดอร์เฉพาะหน้าที่ต้องการ, ใช้ทรัพยากรภายนอก, และเพิ่มขนาด heap ของ JVM  
+## คำตอบสั้น
+- **Can GroupDocs Viewer convert Word to HTML?** ใช่—เปิดใช้งานการเรนเดอร์ HTML และการสนับสนุนคอมเมนต์ด้วยบรรทัดโค้ดเดียว  
+- **Do comments stay in the HTML output?** แน่นอน—`setRenderComments(true)` จะคงคอมเมนต์และคำอธิบายทั้งหมดไว้  
+- **What Java version is required?** JDK 8 หรือสูงกว่า  
+- **Is a license needed for production?** ใบอนุญาตเต็มจะลบลายน้ำและเปิดใช้งานคุณสมบัติทั้งหมด  
+- **How to improve rendering speed?** เรนเดอร์เฉพาะหน้าที่ต้องการ ใช้ทรัพยากรภายนอก และเพิ่มขนาด heap ของ JVM  
+
+## “แปลง word เป็น html” พร้อมคอมเมนต์คืออะไร?
+*“Convert Word to HTML”* หมายถึงการแปลงไฟล์ Microsoft Word *.docx* ให้เป็นเอกสาร HTML ที่พร้อมใช้งานบนเว็บโดยคงรูปแบบต้นฉบับ การจัดสไตล์ และคอมเมนต์ที่ฝังอยู่ กระบวนการนี้ทำให้เบราว์เซอร์แสดงเอกสารได้ตามที่ผู้เขียนตั้งใจ พร้อมกับข้อเสนอแนะจากผู้ตรวจสอบ
 
 ## ทำไมต้องเลือก GroupDocs Viewer สำหรับ Java?
 
-ก่อนที่เราจะลงมือเขียนโค้ด มาทำความเข้าใจว่าทำไม GroupDocs Viewer ถึงโดดเด่นสำหรับการเรนเดอร์เอกสารใน Java:
+ก่อนที่เราจะลงลึกในโค้ด มาดูเหตุผลที่ GroupDocs Viewer เป็นไลบรารีที่ต้องใช้สำหรับการเรนเดอร์เอกสารบน Java:
 
-**ข้อได้เปรียบหลัก:**
-- รองรับไฟล์กว่า 170+ รูปแบบโดยไม่ต้องตั้งค่าเพิ่มเติม
-- ไม่ต้องใช้ Microsoft Office หรือซอฟต์แวร์ของบุคคลที่สามอื่น ๆ
-- รักษารูปแบบต้นฉบับและองค์ประกอบที่ฝังอยู่
-- เอนจินเรนเดอร์ที่เบาและรวดเร็ว
-- เอกสารอธิบายที่ดีและชุมชนสนับสนุนที่แข็งแกร่ง
+- **170+ supported formats** – ไลบรารีรองรับทุกอย่างตั้งแต่ DOCX ถึงไฟล์ CAD ให้คุณมี dependency เพียงหนึ่งเดียวสำหรับการแปลงทั้งหมด  
+- **No third‑party Office installation** – ทำงานบนทุก OS โดยไม่ต้องติดตั้ง Microsoft Office, LibreOffice หรือ runtime หนักอื่น ๆ  
+- **Preserves formatting and annotations** – คอมเมนต์, หมายเหตุเชิงล่าง, และการติดตามการเปลี่ยนแปลงจะคงอยู่หลังการแปลง  
+- **Fast, lightweight engine** – เอกสารทั่วไป 100 หน้าเรนเดอร์ภายในต่ำกว่า 2 วินาทีบนเซิร์ฟเวอร์ 4‑core มาตรฐาน  
+- **Robust documentation and active community** – มีตัวอย่าง, ฟอรั่ม, และการสนับสนุนที่รวดเร็วเมื่อคุณเจอปัญหา  
 
-**เมื่อใดที่ควรใช้วิธีนี้:**
-- สร้างตัวดูเอกสารบนเว็บ
-- พัฒนาแพลตฟอร์มรีวิวแบบร่วมมือ
-- สร้างพอร์ทัลจัดการเอกสาร
-- แปลงเอกสารเก่าสำหรับการแสดงบนเว็บ
-- พัฒนาแพลตฟอร์มการศึกษาโดยมีเนื้อหาที่มีหมายเหตุ
+### เมื่อควรใช้วิธีนี้
+- สร้างตัวดูเอกสารบนเว็บที่ต้องแสดงบันทึกของผู้ตรวจสอบ  
+- พัฒนาแพลตฟอร์มการตรวจสอบร่วมที่ต้องการให้ข้อเสนอแนะมองเห็นได้  
+- แปลงสัญญาเก่าสำหรับการแสดงออนไลน์ในพอร์ทัลกฎหมาย  
+- พัฒนาโซลูชัน e‑learning ที่ฝังคอมเมนต์ของผู้สอนในเนื้อหาเรียน  
 
 ## ข้อกำหนดเบื้องต้นและการตั้งค่าสภาพแวดล้อม
 
-### สิ่งที่คุณต้องมี
-
-ก่อนเริ่มการสอน GroupDocs Viewer สำหรับ Java นี้ ให้ตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
-
-**ข้อกำหนดพื้นฐาน:**
-- Java Development Kit (JDK) 8 หรือสูงกว่า
-- Maven 3.6+ สำหรับการจัดการ dependencies
-- IDE ที่คุณชื่นชอบ (IntelliJ IDEA, Eclipse หรือ VS Code)
-- ความเข้าใจพื้นฐานเกี่ยวกับ Java และ Maven
-
-**เพิ่มเติมแต่เป็นประโยชน์:**
-- ตัวอย่างเอกสารที่มีคอมเมนต์ (ไฟล์ Word, Excel, PowerPoint)
-- ความรู้พื้นฐานเกี่ยวกับ HTML และการพัฒนาเว็บ
-- ความเข้าใจการทำงานกับไฟล์ I/O ใน Java
+### สิ่งที่คุณต้องการ
+- **Java Development Kit (JDK) 8+** – runtime ที่ใช้ในแอปพลิเคชันของคุณ  
+- **Maven 3.6+** – สำหรับจัดการ dependencies และสร้างโปรเจค  
+- **IDE ที่คุณเลือก** – IntelliJ IDEA, Eclipse หรือ VS Code  
+- **เอกสารตัวอย่างที่มีคอมเมนต์** – ไฟล์ DOCX, XLSX, PPTX ที่มีบันทึกของผู้ตรวจสอบ  
 
 ### การตั้งค่าสภาพแวดล้อมการพัฒนา
 
-**ขั้นตอนที่ 1: ตรวจสอบการติดตั้ง Java**  
+#### ขั้นตอนที่ 1: ตรวจสอบการติดตั้ง Java
+เปิดเทอร์มินัลและรัน:
+
+```
+java -version
+```
+
+คุณควรเห็นสตริงเวอร์ชันที่ขึ้นต้นด้วย `1.8` หรือสูงกว่า หากไม่เห็น ให้ดาวน์โหลด JDK ล่าสุดจากเว็บไซต์ของ Oracle หรือ OpenJDK อย่างเป็นทางการ
+
+#### ขั้นตอนที่ 2: ตรวจสอบการติดตั้ง Maven
+รัน:
+
+```
+mvn -v
+```
+
+Maven ควรแสดงเวอร์ชันและเวอร์ชัน Java ที่ใช้ หากคำสั่งไม่ถูกจำกัด ให้ติดตั้ง Maven จากเว็บไซต์ Apache
+
+#### ขั้นตอนที่ 3: สร้างโปรเจค Maven ใหม่
+สร้างโครงสร้างโปรเจคพื้นฐานด้วย:
+
+```
+mvn archetype:generate -DgroupId=com.example.viewer -DartifactId=viewer-demo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+
+เข้าไปในโฟลเดอร์ `viewer-demo` ที่สร้างขึ้นใหม่ แล้วคุณก็พร้อมเพิ่ม GroupDocs Viewer
+
+## การตั้งค่า GroupDocs.Viewer สำหรับ Java
+
+### การเพิ่ม Dependency
+ขั้นตอนแรกของทุกบทเรียน GroupDocs Viewer Java คือการนำไลบรารีเข้ามาในโปรเจค เพิ่มการกำหนดต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
+**Pro Tip:** ตรวจสอบเสมอที่ [GroupDocs releases page](https://releases.groupdocs.com/viewer/java/) เพื่อดูเวอร์ชันล่าสุด ไลบรารีได้รับการอัปเดตอย่างต่อเนื่องพร้อมการแก้บั๊ก
+
+### ทำความเข้าใจตัวเลือกการให้ลิขสิทธิ์
+GroupDocs มีลิขสิทธิ์ที่ยืดหยุ่นตามความต้องการของโครงการ:
+
+- **Free Trial (Perfect for Learning):** การประเมิน 30 วันพร้อมเข้าถึงฟีเจอร์ทั้งหมดและลายน้ำสำหรับการประเมิน  
+- **Temporary License (For Development):** การประเมินต่อเนื่องโดยไม่มีลายน้ำ; เหมาะสำหรับโครงการ proof‑of‑concept ขอที่ [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/)  
+- **Full License (Production Ready):** ไม่มีข้อจำกัดหรือลายน้ำ, ใช้เชิงพาณิชย์ได้เต็มที่ สามารถซื้อได้ที่ [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)  
+
+### รูปแบบการเริ่มต้นพื้นฐาน
+นี่คือรูปแบบพื้นฐานที่คุณจะใช้ตลอดบทเรียน:
+
+```java
+try (Viewer viewer = new Viewer("input.docx")) {
+    // Rendering options will be set later
+}
+```
+
+**Why This Pattern Works:**  
+- **Automatic resource management** ป้องกันการรั่วไหลของหน่วยความจำ  
+- **Exception handling** จับข้อผิดพลาดทั่วไปในการเข้าถึงไฟล์  
+- **Clean, readable code** ที่ง่ายต่อการบำรุงรักษาในโครงการขนาดใหญ่  
+
+## การดำเนินการหลัก: การแสดงเอกสารพร้อมคอมเมนต์
+
+### ทำความเข้าใจกระบวนการ
+เมื่อคุณเรนเดอร์เอกสารด้วย GroupDocs Viewer ไลบรารีจะทำสี่ขั้นตอนสำคัญ:
+
+1. **Document Analysis** – วิเคราะห์ไฟล์อินพุตและสร้างการแสดงผลภายใน  
+2. **Comment Extraction** – ค้นหาคอมเมนต์, หมายเหตุเชิงล่าง, และคำอธิบายทั้งหมด  
+3. **HTML Generation** – สร้าง HTML ที่สะอาดและเป็นมาตรฐานซึ่งสะท้อนเลย์เอาต์ต้นฉบับ  
+4. **Resource Handling** – รวมรูปภาพ, CSS, และฟอนต์ไว้ในไฟล์เดียวหรือแยกเป็นไฟล์ภายนอก  
+
+### การดำเนินการแบบขั้นตอน
+
+#### ขั้นตอนที่ 1: ตั้งค่าเส้นทางไฟล์ของคุณ
+จัดระเบียบตำแหน่งอินพุตและเอาต์พุตตั้งแต่แรกเพื่อหลีกเลี่ยงข้อผิดพลาดเกี่ยวกับพาธ:
+
+```java
+Path inputPath = Paths.get("documents/sample-with-comments.docx");
+Path outputDir = Paths.get("output/html");
+Files.createDirectories(outputDir);
+```
+
+**Why This Approach:**  
+- ใช้ Java NIO.2 `Path` API ที่เชื่อถือได้กว่า `java.io.File`  
+- ชื่อแปรที่อธิบายทำให้ดีบักง่ายขึ้น  
+- ตัวแปร `{0}` ในรูปแบบเอาต์พุตจะถูกแทนที่ด้วยหมายเลขหน้าโดยอัตโนมัติ  
+
+#### ขั้นตอนที่ 2: กำหนดค่า HTML Rendering Options
+นี่คือจุดที่เกิด “เวทมนตร์” เราบอก GroupDocs ว่าเราต้องการให้เอกสารแสดงผลอย่างไร:
+
+`HtmlViewOptions` กำหนดวิธีการเรนเดอร์เอกสารเป็น HTML รวมถึงการจัดการทรัพยากรและการเรนเดอร์คอมเมนต์
+
+```java
+HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(outputDir);
+viewOptions.setRenderComments(true);   // Preserve every comment
+viewOptions.setPageNumberPrefix("page_");
+```
+
+**Key Configuration Details:**  
+- `forEmbeddedResources()` ฝัง CSS, รูปภาพ, และฟอนต์ลงใน HTML ทำให้ไฟล์เอาต์พุตพกพาได้ง่าย  
+- `setRenderComments(true)` เป็นบรรทัดเดียวที่ทำให้ **แปลง word เป็น html** คงบันทึกของผู้ตรวจสอบทั้งหมดไว้  
+- `forExternalResources()` เป็นทางเลือกที่ให้คุณเก็บทรัพยากรแยกต่างหาก หากต้องการไฟล์ HTML ที่บางลง  
+
+#### ขั้นตอนที่ 3: ดำเนินการเรนเดอร์
+ตอนนี้เรานำทุกอย่างมารวมกัน:
+
+`Viewer` เป็นคลาสหลักที่ใช้โหลดเอกสารและทำการเรนเดอร์
+
+```java
+try (Viewer viewer = new Viewer(inputPath.toFile())) {
+    viewer.view(viewOptions);
+}
+```
+
+เมธอด `view` จะอ่านไฟล์ Word, ดึงคอมเมนต์, สร้างหน้า HTML, และเขียนผลลัพธ์ไปที่ `output/html` แต่ละหน้าจะบันทึกเป็น `page_1.html`, `page_2.html` เป็นต้น  
+
+### ตัวอย่างการทำงานเต็มรูปแบบ
+การรวมส่วนต่าง ๆ เข้าด้วยกันให้คลาสเดียวที่สามารถรันได้ ซึ่งจะแปลงไฟล์ Word เป็น HTML พร้อมคอมเมนต์ (ซอร์สโค้ดเต็มอยู่ใน GitHub อย่างเป็นทางการ)
+
+## การกำหนดค่าขั้นสูงและตัวเลือก
+
+### การตั้งค่าไดเรกทอรีเอาต์พุตแบบไดนามิก
+สำหรับแอปพลิเคชันขนาดใหญ่ คุณอาจต้องการสร้างไดเรกทอรีเอาต์พุตตาม ID ผู้ใช้หรือ timestamp:
+
+```java
+String userId = "12345";
+Path dynamicOutput = Paths.get("output", userId, LocalDate.now().toString());
+Files.createDirectories(dynamicOutput);
+HtmlViewOptions dynamicOptions = HtmlViewOptions.forEmbeddedResources(dynamicOutput);
+```
+
+### ปัญหาทั่วไปและการแก้ไขปัญหา
+
+#### ปัญหา 1: ข้อผิดพลาด “File Not Found”
+ตรวจสอบให้แน่ใจว่าเส้นทางอินพุตเป็นแบบ absolute หรือ relative ต่อ working directory และตรวจสอบสิทธิ์ไฟล์ การใช้ `Path` ช่วยหลีกเลี่ยงข้อผิดพลาดจากการต่อสตริง
+
+#### ปัญหา 2: คอมเมนต์ไม่ปรากฏในผลลัพธ์
+ตรวจสอบว่าได้เรียก `setRenderComments(true)` **ก่อน** `viewer.view()` อีกทั้งตรวจสอบว่าไฟล์ต้นฉบับมีคอมเมนต์จริง ๆ โดยใช้ `viewer.getDocumentInfo().getComments()`
+
+#### ปัญหา 3: ข้อผิดพลาด Out of Memory กับเอกสารขนาดใหญ่
+GroupDocs Viewer สตรีมข้อมูล แต่ไฟล์ที่ใหญ่มาก (> 500 หน้า) อาจทำให้ heap ของ JVM แรงเกิน ควรเพิ่มขนาด heap ด้วย `-Xmx4g` หรือเรนเดอร์เฉพาะหน้าที่ต้องการ
+
+#### ปัญหา 4: ประสิทธิภาพการเรนเดอร์ช้า
+เรนเดอร์ช่วงหน้าที่ต้องการโดยใช้ `viewer.view(pageRange, viewOptions)` การใช้ทรัพยากรภายนอก (`forExternalResources()`) ยังช่วยลดขนาด HTML ทำให้เบราว์เซอร์โหลดเร็วขึ้น
+
+## รูปแบบการใช้งานจริง
+
+### แพทเทิร์น 1: การผสานรวมกับเว็บแอปพลิเคชัน
+ผสานตรรกะการเรนเดอร์เข้าไปในคอนโทรลเลอร์ Spring Boot เพื่อให้บริการ HTML ตามคำขอ:
+
+```java
+@RestController
+@RequestMapping("/api/view")
+public class DocumentController {
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Resource> renderDocument(@PathVariable String id) throws IOException {
+        Path docPath = Paths.get("documents", id + ".docx");
+        Path outDir = Files.createTempDirectory("viewer");
+        HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(outDir);
+        options.setRenderComments(true);
+        try (Viewer viewer = new Viewer(docPath.toFile())) {
+            viewer.view(options);
+        }
+        // Return the first HTML page as a Resource
+        Path firstPage = outDir.resolve("page_1.html");
+        Resource resource = new UrlResource(firstPage.toUri());
+        return ResponseEntity.ok()
+                .contentType(MediaType.TEXT_HTML)
+                .body(resource);
+    }
+}
+```
+
+### แพทเทิร์น 2: การประมวลผลหลายเอกสารเป็นชุด
+เมื่อคุณต้องแปลงโฟลเดอร์เต็มของไฟล์ Word ให้วนลูปผ่านไดเรกทอรีและใช้ `HtmlViewOptions` ตัวเดียวกันเพื่อหลีกเลี่ยงการสร้างอ็อบเจ็กต์ซ้ำ ๆ
+
+## การเพิ่มประสิทธิภาพและแนวปฏิบัติที่ดีที่สุด
+
+### เคล็ดลับการจัดการหน่วยความจำ
+- **Always use try‑with‑resources** สำหรับอ็อบเจ็กต์ `Viewer`  
+- **Process large documents in batches** แทนการโหลดทั้งหมดเข้าหน่วยความจำพร้อมกัน  
+- **Monitor JVM heap usage** ด้วยเครื่องมือเช่น VisualVM และปรับ `-Xmx` ตามต้องการ  
+- **Implement proper caching** สำหรับเอกสารที่เข้าถึงบ่อย เพื่อลดการเรนเดอร์ซ้ำ  
+
+### แนวทางการใช้ทรัพยากร
+
+**สำหรับแอปพลิเคชันขนาดเล็ก (< 100 เอกสาร/วัน):**
+```java
+HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(Paths.get("output"));
+options.setRenderComments(true);
+```
+
+**สำหรับแอปพลิเคชันปริมาณสูง (1000+ เอกสาร/วัน):**
+```java
+HtmlViewOptions options = HtmlViewOptions.forExternalResources(Paths.get("output"));
+options.setRenderComments(true);
+options.setCacheEnabled(true);
+```
+
+### กลยุทธ์การแคช
+เก็บ HTML ที่เรนเดอร์ไว้ในแคชแบบกระจาย (เช่น Redis) โดยใช้ hash ของเอกสารเป็นคีย์ เมื่อมีคำขอเข้ามาให้ตรวจสอบแคชก่อน หากพบให้ส่ง HTML ที่แคชไว้ทันทีโดยไม่ต้องผ่านเครื่องยนต์เรนเดอร์
+
+## เมื่อควรใช้ GroupDocs Viewer เทียบกับทางเลือกอื่น
+
+### GroupDocs Viewer เหมาะสำหรับ
+- **Document Management Systems** – ต้องการแสดงไฟล์หลายประเภทพร้อมคอมเมนต์  
+- **Collaborative Review Platforms** – คอมเมนต์ต้องมองเห็นได้โดยผู้เข้าร่วมทุกคน  
+- **Educational Tools** – คอมเมนต์ของผู้สอนปรากฏพร้อมสไลด์การบรรยาย  
+- **Legal Applications** – สัญญาที่มีคอมเมนต์ของทนายต้องการการเรนเดอร์ที่แม่นยำ  
+
+### พิจารณาทางเลือกอื่นเมื่อ
+- **Simple PDF Display** – ตัวแสดง PDF ของเบราว์เซอร์อาจเพียงพอ  
+- **Basic Image Conversion** – `ImageIO` หรือไลบรารีคล้าย ๆ จะเบากว่า  
+- **Pure Text Extraction** – Apache POI หรือ iText อาจเหมาะกว่า  
+
+## คำถามที่พบบ่อย
+
+**Q: Can I render documents without comments?**  
+A: ใช่—เพียงแค่ไม่เรียก `setRenderComments(true)` หรือกำหนดเป็น `false`
+
+**Q: What file formats support comment rendering?**  
+A: ส่วนใหญ่รูปแบบหลัก ๆ รวมถึง DOC/DOCX, XLS/XLSX, PPT/PPTX, PDF และอื่น ๆ ดูที่ [เอกสารอย่างเป็นทางการ](https://docs.groupdocs.com/viewer/java/) สำหรับรายการเต็ม
+
+**Q: Can I customize the HTML output styling?**  
+A: แน่นอน ใช้ `HtmlViewOptions.setEmbedResources(false)` เพื่อสร้างไฟล์ CSS แยกจากนั้นเพิ่มสไตล์ชีตของคุณหลังการเรนเดอร์
+
+**Q: How do I handle password‑protected documents?**  
+A: ให้สร้างอินสแตนซ์ `LoadOptions` พร้อมรหัสผ่าน:
+
+`LoadOptions` ช่วยกำหนดพารามิเตอร์การโหลดเอกสาร เช่น รหัสผ่าน
+
+```java
+LoadOptions loadOptions = new LoadOptions("myPassword");
+try (Viewer viewer = new Viewer(inputPath.toFile(), loadOptions)) {
+    viewer.view(viewOptions);
+}
+```
+
+**Q: Is it possible to render only specific pages?**  
+A: ใช่—ใช้เมธอด `view` ที่รับคอลเลกชัน `PageNumber`:
+
+`PageNumber` แทนหมายเลขหน้าที่ต้องการเรนเดอร์เป็นส่วนย่อย
+
+```java
+viewer.view(new int[]{1, 3, 5}, viewOptions);
+```
+
+**Q: Why is rendering slow for large documents?**  
+A: ไฟล์ขนาดใหญ่ต้องใช้เวลาประมวลผลมากขึ้น ปรับความเร็วโดยเรนเดอร์เฉพาะหน้าที่ต้องการ ใช้ทรัพยากรภายนอก เพิ่ม heap ของ JVM และเปิดใช้งานการประมวลผลแบบอะซิงโครนัส
+
+**Q: How can I monitor rendering progress?**  
+A: แม้ GroupDocs Viewer จะไม่มีคอลแบ็กในตัว คุณสามารถวัดเวลาโดยใช้ `System.nanoTime()` ก่อนและหลัง `viewer.view()` เพื่อบันทึกระยะเวลา
+
+**Q: What happens if the source document is corrupted?**  
+A: ไลบรารีจะโยน `ViewerException` ให้ห่อเมธอดด้วย `try‑catch` และบันทึกข้อผิดพลาดเพื่อให้ระบบทำงานต่อได้อย่างราบรื่น
+
+**Q: Can I use GroupDocs Viewer in a commercial application?**  
+A: ใช่ แต่ต้องมีใบอนุญาตเชิงพาณิชย์ ลำใบนทดลองมีลายน้ำที่ต้องลบออกสำหรับการใช้งานในสภาพแวดล้อมการผลิต
+
+**Q: Are there any usage limits?**  
+A: ไลบรารีเองไม่มีข้อจำกัด อย่างไรก็ตาม สัญญาใบอนุญาตของคุณอาจกำหนดขีดจำกัดการใช้งาน ตรวจสอบสัญญาของคุณสำหรับรายละเอียด
+
+**Q: Can I redistribute applications that include GroupDocs Viewer?**  
+A: คุณสามารถแจกจ่ายแอปพลิเคชันของคุณเองได้ แต่ห้ามแจกจ่ายไบนารีของ GroupDocs เอง ตรวจสอบเงื่อนไขใบอนุญาตเพื่อความสอดคล้อง
+
+## ขั้นตอนต่อไปและหัวข้อขั้นสูง
+
+คุณมีพื้นฐานที่มั่นคงสำหรับ **แปลง word เป็น html** พร้อมคอมเมนต์แล้ว ต่อไปนี้คือแนวทางเพื่อเพิ่มพูนความเชี่ยวชาญของคุณ:
+
+1. **Watermarking** – เพิ่มลายน้ำแบบกำหนดเองลงในหน้าที่เรนเดอร์เพื่อการสร้างแบรนด์หรือความลับ  
+2. **Metadata Extraction** – ดึงข้อมูลผู้เขียน, วันที่สร้าง, และจำนวนหน้า ผ่าน `viewer.getDocumentInfo()`  
+3. **Custom Viewers** – สร้างตัวดูเฉพาะสำหรับ PDF, สเปรดชีต, หรือพรีเซนเทชันที่ซ่อนหรือไฮไลท์คอมเมนต์ต่างกัน  
+4. **Cloud Storage Integration** – เรนเดอร์ไฟล์โดยตรงจาก AWS S3, Azure Blob, หรือ Google Drive โดยไม่ต้องดาวน์โหลดลงเครื่อง
+
+### เส้นทางการเรียนแนะนำ
+1. **Experiment with Different File Types** – ลองไฟล์ Excel, PowerPoint, และ PDF เพื่อดูว่าคอมเมนต์ถูกจัดการอย่างไรในแต่ละรูปแบบ  
+2. **Build a Simple Web Viewer** – สร้างหน้า HTML ขั้นต่ำที่โหลด HTML ที่สร้างขึ้นผ่าน `<iframe>` หรือ AJAX  
+3. **Explore the GroupDocs Ecosystem** – ศึกษา GroupDocs Annotation, Comparison, และ Signature สำหรับเวิร์กโฟลว์เอกสารครบวงจร  
+4. **Join the Community** – มีส่วนร่วมใน [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9) เพื่อรับเคล็ดลับ, ตัวอย่างโครงการ, และการสนับสนุน  
+
+### การขอความช่วยเหลือและสนับสนุน
+
+**Official Resources**
+- [เอกสาร GroupDocs.Viewer](https://docs.groupdocs.com/viewer/java/)  
+- [อ้างอิง API](https://apireference.groupdocs.com/viewer/java)  
+- [ฟอรั่มสนับสนุน](https://forum.groupdocs.com/c/viewer/9)  
+- [ตัวอย่างบน GitHub](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-Java)  
+
+**Community Resources**
+- Stack Overflow (tag: `groupdocs-viewer`)  
+- ชุมชนโปรแกรมมิ่งบน Reddit  
+- เซิร์ฟเวอร์ Discord ของนักพัฒนา Java  
+
+---
+
+**Last Updated:** 2026-05-21  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs  
+
 ```bash
 java -version
 javac -version
 ```
 
-**ขั้นตอนที่ 2: ตรวจสอบการติดตั้ง Maven**  
 ```bash
 mvn -version
 ```
 
-หากคุณยังไม่มีอย่างใดอย่างหนึ่ง ให้ดาวน์โหลดจากเว็บไซต์ทางการและทำตามคำแนะนำการติดตั้ง
-
-**ขั้นตอนที่ 3: สร้างโครงการ Maven ใหม่**  
 ```bash
 mvn archetype:generate -DgroupId=com.example.documentviewer -DartifactId=groupdocs-viewer-demo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
-
-ตอนนี้คุณพร้อมที่จะเพิ่ม GroupDocs Viewer ลงในโครงการของคุณแล้ว!
-
-## การตั้งค่า GroupDocs.Viewer สำหรับ Java
-
-### การเพิ่ม Dependency
-
-ขั้นตอนแรกของการสอน GroupDocs Viewer สำหรับ Java ใด ๆ คือการนำไลบรารีเข้ามาในโครงการของคุณ เพิ่มการกำหนดค่านี้ในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -125,31 +466,6 @@ mvn archetype:generate -DgroupId=com.example.documentviewer -DartifactId=groupdo
 </dependencies>
 ```
 
-**เคล็ดลับ:** ตรวจสอบที่ [หน้าปล่อยของ GroupDocs](https://releases.groupdocs.com/viewer/java/) เสมอเพื่อดูเวอร์ชันล่าสุด ไลบรารีได้รับการอัปเดตอย่างต่อเนื่องพร้อมการแก้บั๊ก
-
-### ทำความเข้าใจตัวเลือกลิขสิทธิ์
-
-GroupDocs มีลิขสิทธิ์ที่ยืดหยุ่นตามความต้องการของโครงการต่าง ๆ:
-
-**ทดลองใช้ฟรี (เหมาะสำหรับการเรียนรู้):**
-- ระยะเวลาประเมินผล 30 วัน
-- เข้าถึงฟีเจอร์เต็มพร้อมลายน้ำการประเมิน
-- เหมาะสำหรับทำตามบทเรียนนี้และทดสอบแนวคิด
-
-**ลิขสิทธิ์ชั่วคราว (สำหรับการพัฒนา):**
-- ขยายระยะเวลาประเมินโดยไม่มีลายน้ำ
-- เหมาะสำหรับโครงการ proof‑of‑concept
-- ขอรับได้ที่ [หน้าใบอนุญาตชั่วคราวของ GroupDocs](https://purchase.groupdocs.com/temporary-license/)
-
-**ลิขสิทธิ์เต็ม (พร้อมใช้งานในผลิตภัณฑ์):**
-- ไม่มีข้อจำกัดหรือลายน้ำ
-- ใช้เชิงพาณิชย์ได้
-- ซื้อได้ที่ [หน้าแหล่งซื้อของ GroupDocs](https://purchase.groupdocs.com/buy)
-
-### รูปแบบการเริ่มต้นพื้นฐาน
-
-นี่คือรูปแบบพื้นฐานที่คุณจะใช้ตลอดบทเรียน:
-
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -163,31 +479,6 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-**ทำไมรูปแบบนี้ถึงได้ผล:**
-- การจัดการทรัพยากรอัตโนมัติป้องกันการรั่วไหลของหน่วยความจำ
-- การจัดการข้อยกเว้นช่วยจับปัญหาการเข้าถึงไฟล์ทั่วไป
-- โค้ดสะอาด อ่านง่ายและบำรุงรักษาได้ง่าย
-
-## การทำงานหลัก: เรนเดอร์เอกสารพร้อมคอมเมนต์
-
-ตอนนี้มาถึงส่วนสำคัญ! เราจะเดินผ่านขั้นตอนการเรนเดอร์เอกสารโดยคอมเมนต์ทั้งหมดยังคงอยู่
-
-### ทำความเข้าใจกระบวนการ
-
-เมื่อคุณเรนเดอร์เอกสารด้วย GroupDocs Viewer จะเกิดขั้นตอนต่อไปนี้:
-
-1. **การวิเคราะห์เอกสาร:** ไลบรารีอ่านและแยกวิเคราะห์ไฟล์อินพุตของคุณ  
-2. **การสกัดคอมเมนต์:** คอมเมนต์และหมายเหตุถูกระบุและคงไว้  
-3. **การสร้าง HTML:** สร้าง HTML ที่เป็นมาตรฐาน (นี่คือขั้นตอน **แปลง Word เป็น HTML**)  
-4. **การจัดการทรัพยากร:** จัดการรูปภาพ, สไตล์, และแอสเซ็ตอื่น ๆ  
-5. **การสร้างผลลัพธ์:** เขียนไฟล์ HTML สุดท้ายไปยังไดเรกทอรีที่คุณระบุ  
-
-### การดำเนินการแบบขั้นตอน‑ต่อ‑ขั้นตอน
-
-**ขั้นตอนที่ 1: ตั้งค่าเส้นทางไฟล์ของคุณ**  
-
-ก่อนอื่นให้จัดระเบียบตำแหน่งไฟล์ของคุณ การทำเช่นนี้อาจดูพื้นฐาน แต่การจัดการเส้นทางที่ดีช่วยป้องกันปัญหา 90 % ของกรณีทั่วไป:
-
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -196,15 +487,6 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("rendered-documents");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-
-**ทำไมวิธีนี้ถึงดี:**  
-- ใช้ API `Path` ของ Java NIO.2 ที่ทันสมัย (เชื่อถือได้กว่าคลาส `File` เก่า)  
-- ชื่อที่อธิบายชัดเจนทำให้ดีบักง่ายขึ้น  
-- ตัวแปร `{0}` จะถูกแทนที่ด้วยหมายเลขหน้าอัตโนมัติ  
-
-**ขั้นตอนที่ 2: กำหนดค่า HTML Rendering Options**  
-
-นี่คือจุดที่เวทมนตร์เกิดขึ้น เราจะบอก GroupDocs ว่าต้องการให้เรนเดอร์เอกสารอย่างไร:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -215,15 +497,6 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 // The crucial setting – enable comment rendering!
 viewOptions.setRenderComments(true);
 ```
-
-**รายละเอียดการกำหนดค่าหลัก:**  
-- `forEmbeddedResources()`: รวม CSS, รูปภาพ, และฟอนต์ทั้งหมดไว้ใน HTML (สะดวกสำหรับการพกพา)  
-- `setRenderComments(true)`: คงคอมเมนต์และหมายเหตุทุกอย่าง (หัวใจของ **แปลง Word เป็น HTML** พร้อมคอมเมนต์)  
-- ตัวเลือกอื่น: `forExternalResources()` หากต้องการไฟล์ทรัพยากรแยกต่างหาก  
-
-**ขั้นตอนที่ 3: ดำเนินการเรนเดอร์**  
-
-รวมทุกอย่างเข้าด้วยกัน:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -245,10 +518,6 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
     e.printStackTrace();
 }
 ```
-
-### ตัวอย่างทำงานเต็มรูปแบบ
-
-นี่คือคลาสเดียวที่พร้อมรันทั้งหมด:
 
 ```java
 package com.example.documentviewer;
@@ -292,12 +561,6 @@ public class DocumentRenderer {
 }
 ```
 
-## การกำหนดค่าขั้นสูงและตัวเลือกเพิ่มเติม
-
-### การตั้งค่าไดเรกทอรีผลลัพธ์แบบไดนามิก
-
-สำหรับแอปพลิเคชันขนาดใหญ่ คุณอาจต้องการการจัดการเส้นทางที่ซับซ้อนขึ้น:
-
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -325,9 +588,6 @@ public class PathManager {
 }
 ```
 
-### ปัญหาที่พบบ่อยและการแก้ไข
-
-#### ปัญหา 1: ข้อผิดพลาด “File Not Found”  
 ```java
 // Always check if file exists before processing
 Path inputPath = Paths.get("your-document.docx");
@@ -341,7 +601,6 @@ if (!inputPath.toFile().canRead()) {
 }
 ```
 
-#### ปัญหา 2: คอมเมนต์ไม่ปรากฏในผลลัพธ์  
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 // This line is crucial – don't forget it!
@@ -351,7 +610,6 @@ viewOptions.setRenderComments(true);
 System.out.println("Comments enabled: " + viewOptions.isRenderComments());
 ```
 
-#### ปัญหา 3: ข้อผิดพลาด Out of Memory กับเอกสารขนาดใหญ่  
 ```java
 // Increase JVM heap size when running
 // java -Xmx2g -Xms1g YourApplication
@@ -364,7 +622,6 @@ viewOptions.setRenderComments(true);
 viewer.view(viewOptions, 1, 2, 3); // Renders only pages 1, 2, and 3
 ```
 
-#### ปัญหา 4: ประสิทธิภาพการเรนเดอร์ช้า  
 ```java
 // Use external resources for faster processing of multiple pages
 HtmlViewOptions viewOptions = HtmlViewOptions.forExternalResources(
@@ -376,12 +633,6 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forExternalResources(
 // Enable caching if processing the same document multiple times
 // (Note: Implement caching at application level)
 ```
-
-## รูปแบบการใช้งานจริง
-
-### รูปแบบที่ 1: การผสานกับเว็บแอปพลิเคชัน
-
-ตัวอย่างการรวมเข้ากับคอนโทรลเลอร์ Spring Boot:
 
 ```java
 @RestController
@@ -413,8 +664,6 @@ public class DocumentController {
 }
 ```
 
-### รูปแบบที่ 2: การประมวลผลแบบแบตช์หลายไฟล์
-
 ```java
 public class BatchDocumentProcessor {
     
@@ -442,21 +691,6 @@ public class BatchDocumentProcessor {
 }
 ```
 
-## การเพิ่มประสิทธิภาพและแนวปฏิบัติที่ดีที่สุด
-
-### เคล็ดลับการจัดการหน่วยความจำ
-
-เมื่อใช้ GroupDocs Viewer ในการผลิต การจัดการหน่วยความจำอย่างมีประสิทธิภาพเป็นสิ่งสำคัญ:
-
-**แนวปฏิบัติที่ดีที่สุด**  
-1. **ใช้ try‑with‑resources เสมอ** เพื่อทำความสะอาดอัตโนมัติ  
-2. **ประมวลผลเอกสารขนาดใหญ่เป็นชุด** แทนการทำทั้งหมดพร้อมกัน  
-3. **ตรวจสอบการใช้ heap ของ JVM** และปรับตามความจำเป็น  
-4. **ใช้แคชอย่างเหมาะสม** สำหรับเอกสารที่เข้าถึงบ่อย  
-
-### แนวทางการใช้ทรัพยากร
-
-**สำหรับแอปพลิเคชันขนาดเล็ก (< 100 เอกสาร/วัน):**  
 ```java
 // Simple approach works fine
 try (Viewer viewer = new Viewer(documentPath)) {
@@ -464,7 +698,6 @@ try (Viewer viewer = new Viewer(documentPath)) {
 }
 ```
 
-**สำหรับแอปพลิเคชันขนาดสูง (1000+ เอกสาร/วัน):**  
 ```java
 public class DocumentRenderingService {
     private final ExecutorService executorService = 
@@ -482,8 +715,6 @@ public class DocumentRenderingService {
     }
 }
 ```
-
-### กลยุทธ์การแคช
 
 ```java
 public class CachedDocumentRenderer {
@@ -506,34 +737,6 @@ public class CachedDocumentRenderer {
 }
 ```
 
-## เมื่อใดควรใช้ GroupDocs Viewer vs ทางเลือกอื่น
-
-### GroupDocs Viewer เหมาะสำหรับ
-- **ระบบจัดการเอกสาร:** ต้องการแสดงไฟล์หลายประเภทพร้อมคอมเมนต์  
-- **แพลตฟอร์มร่วมมือ:** คอมเมนต์และฟีดแบ็กต้องมองเห็นได้ชัดเจน  
-- **เครื่องมือการศึกษา:** คำอธิบายของผู้สอนต้องแสดงต่อผู้เรียน  
-- **แอปพลิเคชันด้านกฎหมาย:** การตรวจสอบสัญญาพร้อมคอมเมนต์ของทนาย  
-
-### พิจารณาทางเลือกเมื่อ
-- **ต้องการแสดง PDF อย่างง่าย:** ตัวดู PDF ของเบราว์เซอร์อาจเพียงพอ  
-- **ต้องการแปลงเป็นรูปภาพพื้นฐาน:** `ImageIO` หรือไลบรารีคล้ายกันอาจเบากว่า  
-- **ต้องการสกัดข้อความเท่านั้น:** Apache POI หรือ iText อาจเหมาะกว่า  
-
-## ส่วนคำถามที่พบบ่อย (FAQ) ขยาย
-
-### คำถามด้านการใช้งานเทคนิค
-
-**ถาม:** ฉันสามารถเรนเดอร์เอกสารโดยไม่แสดงคอมเมนต์ได้หรือไม่?  
-**ตอบ:** ทำได้! เพียงละ `setRenderComments(true)` หรือกำหนดเป็น `false`
-
-**ถาม:** ฟอร์แมตไฟล์ใดบ้างที่รองรับการเรนเดอร์คอมเมนต์?  
-**ตอบ:** ส่วนใหญ่ฟอร์แมตหลัก ได้แก่ DOC/DOCX, XLS/XLSX, PPT/PPTX, PDF และอื่น ๆ อีกหลายรูปแบบ ดูที่ [เอกสารอย่างเป็นทางการ](https://docs.groupdocs.com/viewer/java/) เพื่อรายการเต็ม
-
-**ถาม:** ฉันสามารถปรับแต่งสไตล์ของผลลัพธ์ HTML ได้หรือไม่?  
-**ตอบ:** ได้! ใช้ `HtmlViewOptions.setEmbedResources(false)` เพื่อทำงานกับไฟล์สไตล์ชีตภายนอก หรือแทรก CSS ของคุณเองหลังการเรนเดอร์
-
-**ถาม:** จะจัดการกับเอกสารที่มีรหัสผ่านอย่างไร?  
-**ตอบ:** ใช้คลาส `LoadOptions` ดังนี้:  
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setPassword("your-password");
@@ -542,23 +745,10 @@ try (Viewer viewer = new Viewer("protected-doc.docx", loadOptions)) {
 }
 ```
 
-**ถาม:** สามารถเรนเดอร์เฉพาะหน้าที่ต้องการได้หรือไม่?  
-**ตอบ:** ทำได้! ใช้เมธอด `view()` ที่มีพารามิเตอร์ระบุหน้า:  
 ```java
 viewer.view(viewOptions, 1, 3, 5); // Renders only pages 1, 3, and 5
 ```
 
-### การแก้ไขปัญหาและประสิทธิภาพ
-
-**ถาม:** ทำไมการเรนเดอร์จึงช้าเมื่อเอกสารใหญ่?  
-**ตอบ:** ไฟล์ขนาดใหญ่ต้องใช้เวลาประมวลผลมากขึ้น พิจารณา:  
-- เรนเดอร์เฉพาะหน้าที่ต้องการแทนการเรนเดอร์ทั้งหมด  
-- ใช้ทรัพยากรภายนอกแทนการฝังทั้งหมด  
-- เพิ่มขนาด heap ของ JVM  
-- ใช้การประมวลผลแบบอะซิงโครนัส  
-
-**ถาม:** จะตรวจสอบความคืบหน้าการเรนเดอร์ได้อย่างไร?  
-**ตอบ:** GroupDocs Viewer ไม่มีคอลแบ็กในตัว แต่คุณสามารถจับเวลาการทำงานได้:  
 ```java
 System.out.println("Starting render for: " + documentName);
 long startTime = System.currentTimeMillis();
@@ -567,8 +757,6 @@ long endTime = System.currentTimeMillis();
 System.out.println("Rendering completed in: " + (endTime - startTime) + "ms");
 ```
 
-**ถาม:** ถ้าเอกสารต้นฉบับเสียหายจะเกิดอะไรขึ้น?  
-**ตอบ:** GroupDocs Viewer จะโยนข้อยกเว้น ควรมีการจัดการข้อผิดพลาดที่แข็งแรงเสมอ:  
 ```java
 try (Viewer viewer = new Viewer(documentPath)) {
     viewer.view(viewOptions);
@@ -579,66 +767,8 @@ try (Viewer viewer = new Viewer(documentPath)) {
 }
 ```
 
-### คำถามด้านธุรกิจและลิขสิทธิ์
+## บทเรียนที่เกี่ยวข้อง
 
-**ถาม:** สามารถใช้ GroupDocs Viewer ในแอปพลิเคชันเชิงพาณิชย์ได้หรือไม่?  
-**ตอบ:** ได้ แต่ต้องมีลิขสิทธิ์เชิงพาณิชย์ ลิขสิทธิ์ทดลองมีลายน้ำที่ต้องลบออกสำหรับการผลิต  
-
-**ถาม:** มีข้อจำกัดการใช้งานหรือไม่?  
-**ตอบ:** ไลบรารีเองไม่มีข้อจำกัด แต่ข้อตกลงลิขสิทธิ์ของคุณอาจมีเงื่อนไขเฉพาะ ตรวจสอบรายละเอียดในสัญญา  
-
-**ถาม:** สามารถแจกจ่ายแอปพลิเคชันที่รวม GroupDocs Viewer ได้หรือไม่?  
-**ตอบ:** โดยทั่วไปคุณสามารถแจกจ่ายแอปของคุณได้ แต่ห้ามแจกจ่ายไลบรารี GroupDocs เอง ตรวจสอบเงื่อนไขลิขสิทธิ์ของคุณ  
-
-## ขั้นตอนต่อไปและหัวข้อขั้นสูง
-
-ยินดีด้วย! ตอนนี้คุณมีพื้นฐานที่มั่นคงในการใช้ GroupDocs Viewer สำหรับ Java ต่อไปนี้คือหัวข้อที่คุณอาจอยากสำรวจต่อ:
-
-### ฟีเจอร์ขั้นสูงที่ควรลอง
-1. **การใส่ลายน้ำ:** เพิ่มลายน้ำกำหนดเองลงในเอกสารที่เรนเดอร์  
-2. **การสกัดข้อมูลเอกสาร:** ดึงเมตาดาต้า, จำนวนหน้า, รายละเอียดไฟล์ ฯลฯ  
-3. **ตัวดูแบบกำหนดเอง:** สร้างตัวดูเฉพาะสำหรับประเภทเอกสารที่ต้องการ  
-4. **การผสานกับคลาวด์สตอเรจ:** เรนเดอร์โดยตรงจาก AWS S3, Google Drive ฯลฯ  
-
-### เส้นทางการเรียนที่แนะนำ
-1. **ฝึกกับไฟล์ประเภทต่าง ๆ:** ทดลองกับ Excel, PowerPoint, PDF  
-2. **สร้างเว็บตัวดูง่าย:** ทำ UI พื้นฐานที่แสดง HTML ที่เรนเดอร์  
-3. **สำรวจระบบนิเวศของ GroupDocs:** ดูผลิตภัณฑ์อื่นของ GroupDocs สำหรับการจัดการเอกสารครบวงจร  
-4. **เข้าร่วมชุมชน:** มีส่วนร่วมใน [ฟอรั่ม GroupDocs](https://forum.groupdocs.com/c/viewer/9) เพื่อรับเคล็ดลับและการสนับสนุน  
-
-### การขอความช่วยเหลือและสนับสนุน
-
-**แหล่งข้อมูลอย่างเป็นทางการ**
-- [เอกสาร GroupDocs.Viewer สำหรับ Java](https://docs.groupdocs.com/viewer/java/)  
-- [API Reference](https://apireference.groupdocs.com/viewer/java)  
-- [ฟอรั่มสนับสนุน](https://forum.groupdocs.com/c/viewer/9)  
-- [ตัวอย่างบน GitHub](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-Java)
-
-**แหล่งข้อมูลชุมชน**
-- Stack Overflow (แท็ก `groupdocs-viewer`)  
-- ชุมชน Reddit ด้านการเขียนโปรแกรม  
-- ฟอรั่มและเซิร์ฟเวอร์ Discord ของนักพัฒนา Java  
-
-## สรุป
-
-คุณได้ทำความเข้าใจพื้นฐานการ **แปลง Word เป็น HTML** พร้อมคอมเมนต์โดยใช้ GroupDocs Viewer สำหรับ Java ตั้งแต่การตั้งค่าเบื้องต้น การกำหนดค่า ไปจนถึงการแก้ไขปัญหาและการปรับประสิทธิภาพ คุณพร้อมแล้วที่จะนำการเรนเดอร์เอกสารที่แข็งแรงไปใช้ในแอปพลิเคชันจริง
-
-**ประเด็นสำคัญที่ควรจำ**
-- GroupDocs Viewer ทำให้การเรนเดอร์เอกสารที่ซับซ้อนเป็นเรื่องง่าย  
-- การคงคอมเมนต์ต้องเพิ่มบรรทัด `setRenderComments(true)` เพียงบรรทัดเดียว  
-- การจัดการข้อยกเว้นและทรัพยากรเป็นสิ่งจำเป็นสำหรับการผลิต  
-- ไลบรารีสามารถขยายจากยูทิลิตี้ง่าย ๆ ไปสู่โซลูชันระดับองค์กร  
-
-**รายการงานต่อไปของคุณ**
-1. **รันตัวอย่าง** ด้วยเอกสารของคุณเอง  
-2. **สร้างโครงการเล็ก** ที่แสดง HTML ที่เรนเดอร์บนหน้าเว็บ  
-3. **ลึกลงไป** ในตัวเลือกการปรับแต่ง เช่น การใส่ลายน้ำและการสกัดเมตาดาต้า  
-4. **แบ่งปันประสบการณ์** ของคุณกับชุมชนเพื่อช่วยเหลือผู้อื่น  
-
-เริ่มสร้างประสบการณ์การดูเอกสารที่ยอดเยี่ยมวันนี้ และจำไว้ว่า ชุมชน GroupDocs พร้อมให้ความช่วยเหลือเสมอเมื่อคุณต้องการ!
-
----
-
-**Last Updated:** 2026-01-28  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+- [Render word tracked changes in Word Documents with GroupDocs.Viewer for Java](/viewer/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/)
+- [Responsive HTML Rendering with GroupDocs.Viewer for Java: A Comprehensive Guide](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [How to Load and Render Documents as HTML using GroupDocs.Viewer for Java](/viewer/java/rendering-basics/groupdocs-viewer-java-html-rendering/)

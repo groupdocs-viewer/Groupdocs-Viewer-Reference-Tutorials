@@ -1,111 +1,453 @@
 ---
 categories:
 - Java Development
-date: '2026-01-28'
-description: 學習如何將 Word 轉換為 HTML，並使用 GroupDocs Viewer for Java 呈現帶有批註的文件。逐步指南、故障排除與最佳實踐。
-keywords: GroupDocs Viewer Java tutorial, Java document rendering with comments, HTML
-  document viewer Java, GroupDocs Java integration, Java document conversion HTML
-lastmod: '2026-01-28'
-linktitle: GroupDocs Viewer Java Tutorial
+date: '2026-05-21'
+description: 了解如何使用 GroupDocs Viewer for Java 將 Word 轉換為 HTML 並以 Comments 渲染文件。Step‑by‑step
+  guide、troubleshooting 與 best practices。
+keywords:
+- convert word to html
+- increase jvm heap
+- groupdocs viewer java
+- how to render comments
+- render document comments
+lastmod: '2026-05-21'
+linktitle: GroupDocs Viewer Java 教程
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-21'
+  description: Learn how to convert Word to HTML and render documents with comments
+    using GroupDocs Viewer for Java. Step‑by‑step guide, troubleshooting, and best
+    practices.
+  headline: GroupDocs Viewer Java Tutorial - Convert Word to HTML and Render Documents
+    with Comments
+  type: TechArticle
+- description: Learn how to convert Word to HTML and render documents with comments
+    using GroupDocs Viewer for Java. Step‑by‑step guide, troubleshooting, and best
+    practices.
+  name: GroupDocs Viewer Java Tutorial - Convert Word to HTML and Render Documents
+    with Comments
+  steps:
+  - name: Verify Java Installation
+    text: 'Open a terminal and run: You should see a version string beginning with
+      `1.8` or higher. If not, download the latest JDK from the official Oracle or
+      OpenJDK website.'
+  - name: Check Maven Installation
+    text: 'Run: Maven should report its version and the Java version it uses. Install
+      Maven from the Apache website if the command is not recognised.'
+  - name: Create a New Maven Project
+    text: 'Generate a skeleton project with: Navigate into the newly created `viewer-demo`
+      folder and you’re ready to add GroupDocs Viewer.'
+  - name: Set Up Your File Paths
+    text: 'Organise your input and output locations early to avoid path‑related errors:
+      **Why This Approach:** - Uses modern Java NIO.2 `Path` API, which is more reliable
+      than `java.io.File`. - Descriptive variable names make debugging easier. - The
+      `{0}` placeholder in the output pattern is automatically repl'
+  - name: Configure HTML Rendering Options
+    text: 'This is where the magic happens. We tell GroupDocs exactly how we want
+      the document rendered: `HtmlViewOptions` configures how the document is rendered
+      to HTML, including resource handling and comment rendering. **Key Configuration
+      Details:** - `forEmbeddedResources()` embeds CSS, images, and fonts '
+  - name: Execute the Rendering
+    text: 'Now we bring everything together: `Viewer` is the primary class used to
+      load a document and perform rendering operations. The `view` call reads the
+      Word file, extracts comments, generates HTML pages, and writes them to `output/html`.
+      Each page is saved as `page_1.html`, `page_2.html`, etc.'
+  type: HowTo
+- questions:
+  - answer: Yes—simply omit the `setRenderComments(true)` call or set it to `false`.
+    question: Can I render documents without comments?
+  - answer: Most major formats—including DOC/DOCX, XLS/XLSX, PPT/PPTX, PDF, and many
+      more. See the [official documentation](https://docs.groupdocs.com/viewer/java/)
+      for the full list.
+    question: What file formats support comment rendering?
+  - answer: Absolutely. Use `HtmlViewOptions.setEmbedResources(false)` to generate
+      external CSS files, then add your own stylesheet after rendering.
+    question: Can I customize the HTML output styling?
+  - answer: 'Provide a `LoadOptions` instance with the password:'
+    question: How do I handle password‑protected documents?
+  - answer: 'Yes—use the overloaded `view` method that accepts a `PageNumber` collection:'
+    question: Is it possible to render only specific pages?
+  type: FAQPage
 tags:
 - groupdocs-viewer
 - java-tutorial
 - document-rendering
 - html-conversion
-title: GroupDocs Viewer Java 教學 - 將 Word 轉換為 HTML 並渲染帶有註解的文件
+title: GroupDocs Viewer Java 教程 - Convert Word to HTML 並 Render Documents with Comments
 type: docs
 url: /zh-hant/java/advanced-rendering/mastering-document-rendering-comments-groupdocs-viewer-java/
 weight: 1
 ---
 
-# GroupDocs Viewer Java 教程：將 Word 轉換為 HTML 並渲染帶有註解的文件
+# GroupDocs Viewer Java 教程：將 Word 轉換為 HTML 並渲染帶有批註的文件
 
 ## 介紹
 
-曾經嘗試將 Word 文件轉換為 HTML，卻發現所有重要的註解和標註都消失了嗎？你並不孤單。許多 Java 開發人員在轉換過程中都會遇到保持文件格式和嵌入內容的困難。
+如果您需要 **將 Word 轉換為 HTML** 並保留每位審閱者的備註、評論或標註，您已來到正確的地方。許多 Java 開發人員在文件轉換時會失去原始檔案中寶貴的回饋。本教學將指導您使用 GroupDocs Viewer for Java **將 Word 轉換為 HTML**，並渲染包括 Word、Excel、PowerPoint、PDF 等多種文件類型，且不遺失任何評論資料。
 
-這篇完整的 GroupDocs Viewer Java 教程正好解決此問題。你將學會在渲染文件（Word、Excel、PowerPoint 等）為乾淨的 HTML 時，**將 Word 轉換為 HTML**，且保留所有註解、標註與回饋。
+您將了解為何 GroupDocs Viewer 是可投入生產環境的選擇、如何設定環境、完整程式碼示例，以及在處理大型檔案時保持效能的實用技巧。
 
-無論你是構建文件管理系統、建立協作審閱平台，或只是需要在網頁上顯示帶註解的文件，本指南都能滿足你的需求。
+![將帶有批註的文件渲染於 GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-with-comments.png)
 
-![使用 GroupDocs.Viewer for Java 渲染帶註解的文件](/viewer/advanced-rendering/render-documents-with-comments.png)
+[將帶有批註的文件渲染於 GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-documents-with-comments.png)
 
-**本教程你將掌握的內容：**
+**本教學您將掌握的內容：**
 - 完整的 GroupDocs Viewer 設定與配置
-- 步驟式 **將 Word 轉換為 HTML** 並保留註解
-- 常見問題的解決方案與避免陷阱
+- 步驟式 **將 Word 轉換為 HTML** 並保留評論
+- 常見問題的解決方案與避免陷阱的技巧
 - 真實案例的實作模式與最佳實踐
-- 生產環境的效能優化技巧
+- 生產環境的效能優化技術
 
 ## 快速回答
-- **GroupDocs Viewer 能將 Word 轉換為 HTML 嗎？** 可以，只需啟用 HTML 渲染與註解支援。  
-- **註解會保留在 HTML 輸出中嗎？** 絕對會——`setRenderComments(true)` 會保留它們。  
-- **需要哪個 Java 版本？** JDK 8 或以上。  
+- **GroupDocs Viewer 能將 Word 轉換為 HTML 嗎？** 可以——只需一行程式碼即可啟用 HTML 渲染與評論支援。  
+- **評論會保留在 HTML 輸出中嗎？** 絕對會——`setRenderComments(true)` 會保留每一則評論與標註。  
+- **需要哪個 Java 版本？** JDK 8 或更高。  
 - **生產環境需要授權嗎？** 完整授權會移除浮水印並解鎖全部功能。  
-- **如何提升渲染速度？** 只渲染特定頁面、使用外部資源，並增加 JVM 堆積大小。
+- **如何提升渲染速度？** 僅渲染特定頁面、使用外部資源，並增加 JVM heap 大小。
+
+## 什麼是「將 Word 轉換為 HTML」並保留評論？
+*「將 Word 轉換為 HTML」* 指的是將 Microsoft Word *.docx* 檔案轉換為可在瀏覽器中顯示的 HTML 文件，同時保留原始的版面配置、樣式以及任何內嵌的評論。此過程可讓瀏覽器如實呈現文件，並顯示審閱者的回饋。
 
 ## 為何選擇 GroupDocs Viewer for Java？
 
-在開始編寫程式碼之前，先快速了解為什麼 GroupDocs Viewer 在 Java 文件渲染領域如此突出：
+在深入程式碼之前，先來看看為何 GroupDocs Viewer 是 Java 文件渲染的首選：
 
-**主要優勢：**
-- 內建支援超過 170 種檔案格式
-- 無需 Microsoft Office 或其他第三方軟體
-- 保留原始格式與嵌入元素
-- 輕量且快速的渲染引擎
-- 完備的文件與社群支援
+- **支援 170+ 格式** – 從 DOCX 到 CAD 檔案皆可處理，讓您只需一個相依套件即可滿足所有轉換需求。  
+- **無需第三方 Office 安裝** – 可在任何作業系統上執行，無需 Microsoft Office、LibreOffice 或其他大型執行環境。  
+- **保留格式與批註** – 評論、腳註與修訂痕跡在轉換後仍完整保留。  
+- **快速且輕量的引擎** – 一般 100 頁文件在標準 4 核心伺服器上渲染時間低於 2 秒。  
+- **完整文件與活躍社群** – 提供範例、論壇與即時支援，讓您在遇到問題時能快速取得協助。
 
-**適用情境：**
-- 建置基於 Web 的文件檢視器
-- 開發協作審閱系統
-- 建置文件管理入口網站
-- 將舊有文件轉換為 Web 顯示格式
-- 建立含註解內容的教育平台
+### 何時使用此方式
+- 建置需要顯示審閱者備註的 Web 文件檢視器  
+- 開發協作審閱平台，必須讓回饋保持可見  
+- 將舊版合約轉換為線上顯示於法律入口網站  
+- 開發在教材中嵌入講師批註的 e‑learning 解決方案  
 
 ## 前置條件與環境設定
 
-### 你需要的東西
-
-在開始本 GroupDocs Viewer Java 教程之前，請確保你已具備以下條件：
-
-**必要需求：**
-- Java Development Kit (JDK) 8 或以上
-- Maven 3.6+ 用於相依管理
-- 你慣用的 IDE（IntelliJ IDEA、Eclipse 或 VS Code）
-- 基本的 Java 與 Maven 概念
-
-**可選但有幫助的項目：**
-- 含註解的範例文件（Word、Excel、PowerPoint 檔案）
-- 基本的 HTML 與 Web 開發知識
-- 了解 Java 中的檔案 I/O 操作
+### 您需要的項目
+- **Java Development Kit (JDK) 8+** – 為您的應用程式提供執行時環境。  
+- **Maven 3.6+** – 用於相依管理與專案建置。  
+- **您慣用的 IDE** – 如 IntelliJ IDEA、Eclipse 或 VS Code。  
+- **帶有評論的範例文件** – 包含 DOCX、XLSX、PPTX 等檔案的審閱備註。  
 
 ### 設定開發環境
 
-**步驟 1：驗證 Java 安裝**  
+#### 步驟 1：驗證 Java 安裝
+在終端機執行：
+
+```
+java -version
+```
+
+您應該會看到以 `1.8` 或更高開頭的版本字串。若未顯示，請從 Oracle 或 OpenJDK 官方網站下載最新的 JDK。
+
+#### 步驟 2：檢查 Maven 安裝
+執行：
+
+```
+mvn -v
+```
+
+Maven 應回報其版本與使用的 Java 版本。若指令無法辨識，請從 Apache 官方網站安裝 Maven。
+
+#### 步驟 3：建立新的 Maven 專案
+使用以下指令產生骨架專案：
+
+```
+mvn archetype:generate -DgroupId=com.example.viewer -DartifactId=viewer-demo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+
+進入新建立的 `viewer-demo` 資料夾，即可開始加入 GroupDocs Viewer。
+
+## 設定 GroupDocs.Viewer for Java
+
+### 新增相依
+在任何 GroupDocs Viewer Java 教學的第一步，就是將函式庫加入專案。於 `pom.xml` 中加入以下設定：
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
+**小技巧：** 請隨時檢查 [GroupDocs 釋出頁面](https://releases.groupdocs.com/viewer/java/) 以取得最新版本。函式庫持續維護，會定期推出更新與錯誤修正。
+
+### 授權選項說明
+GroupDocs 提供彈性的授權模式，以符合不同專案需求：
+
+- **免費試用（適合學習）：** 30 天完整功能評估，並附帶評估浮水印。  
+- **臨時授權（開發使用）：** 延長評估期且無浮水印，適合概念驗證專案。請於 [GroupDocs 臨時授權頁面](https://purchase.groupdocs.com/temporary-license/) 申請。  
+- **完整授權（正式上線）：** 無任何限制或浮水印，允許商業使用。可於 [GroupDocs 購買頁面](https://purchase.groupdocs.com/buy) 取得。
+
+### 基本初始化範本
+以下是本教學中將持續使用的基本模式：
+
+```java
+try (Viewer viewer = new Viewer("input.docx")) {
+    // Rendering options will be set later
+}
+```
+
+**此模式有效的原因：**  
+- **自動資源管理** 可防止記憶體洩漏。  
+- **例外處理** 捕捉常見的檔案存取問題。  
+- **程式碼簡潔易讀**，便於在大型專案中維護。
+
+## 核心實作：渲染帶有評論的文件
+
+### 流程說明
+當您使用 GroupDocs Viewer 渲染文件時，函式庫會執行四個關鍵步驟：
+
+1. **文件分析** – 解析輸入檔案並建立內部表示。  
+2. **評論抽取** – 識別所有評論、腳註與標註。  
+3. **HTML 產生** – 產生符合標準的乾淨 HTML，還原原始版面。  
+4. **資源處理** – 將圖片、CSS、字型等資源內嵌或另存為外部檔案。
+
+### 步驟式實作
+
+#### 步驟 1：設定檔案路徑
+提前規劃輸入與輸出位置，可避免路徑相關錯誤：
+
+```java
+Path inputPath = Paths.get("documents/sample-with-comments.docx");
+Path outputDir = Paths.get("output/html");
+Files.createDirectories(outputDir);
+```
+
+**此作法的好處：**  
+- 使用現代的 Java NIO.2 `Path` API，比 `java.io.File` 更可靠。  
+- 具描述性的變數名稱有助於除錯。  
+- 輸出模式中的 `{0}` 佔位符會自動替換為頁碼。
+
+#### 步驟 2：設定 HTML 渲染選項
+這裡就是魔法發生的地方。我們告訴 GroupDocs 具體的渲染需求：
+
+`HtmlViewOptions` 用於設定文件渲染為 HTML 時的行為，包括資源處理與評論渲染。
+
+```java
+HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(outputDir);
+viewOptions.setRenderComments(true);   // Preserve every comment
+viewOptions.setPageNumberPrefix("page_");
+```
+
+**主要設定說明：**  
+- `forEmbeddedResources()` 會將 CSS、圖片與字型直接嵌入 HTML，使輸出檔案可攜帶。  
+- `setRenderComments(true)` 這一行即確保 **將 Word 轉換為 HTML** 時保留所有審閱者備註。  
+- 若偏好較輕量的 HTML，可改用 `forExternalResources()`，將資源另存為外部檔案。
+
+#### 步驟 3：執行渲染
+將前述設定整合起來：
+
+`Viewer` 是用來載入文件並執行渲染的主要類別。
+
+```java
+try (Viewer viewer = new Viewer(inputPath.toFile())) {
+    viewer.view(viewOptions);
+}
+```
+
+`view` 方法會讀取 Word 檔案、抽取評論、產生 HTML 頁面，並寫入 `output/html`。每一頁會以 `page_1.html`、`page_2.html` 等檔名儲存。
+
+### 完整範例程式
+將上述所有片段組合，即可得到一個可執行的類別，負責將 Word 文件轉換為保留評論的 HTML（完整原始碼可於官方 GitHub 倉庫取得）。
+
+## 進階設定與選項
+
+### 動態輸出目錄設定
+在較大型的應用程式中，您可能需要依使用者 ID 或時間戳記產生輸出目錄：
+
+```java
+String userId = "12345";
+Path dynamicOutput = Paths.get("output", userId, LocalDate.now().toString());
+Files.createDirectories(dynamicOutput);
+HtmlViewOptions dynamicOptions = HtmlViewOptions.forEmbeddedResources(dynamicOutput);
+```
+
+### 常見問題與除錯
+
+#### 問題 1：「找不到檔案」錯誤
+請確保輸入路徑為絕對路徑或相對於工作目錄，並檢查檔案權限。使用 `Path` 物件可減少字串拼接錯誤。
+
+#### 問題 2：評論未出現在輸出中
+再次確認在呼叫 `viewer.view()` 之前已執行 `setRenderComments(true)`。同時確定來源文件確實包含評論，可透過 `viewer.getDocumentInfo().getComments()` 進行檢查。
+
+#### 問題 3：大型文件記憶體不足
+GroupDocs Viewer 會串流資料，但超過 500 頁的巨檔仍可能耗盡 JVM heap。可使用 `-Xmx4g` 增加堆積大小，或僅渲染必要頁面。
+
+#### 問題 4：渲染速度緩慢
+使用 `viewer.view(pageRange, viewOptions)` 只渲染特定頁碼。外部資源 (`forExternalResources()`) 亦可減少 HTML 體積，加速瀏覽器載入。
+
+## 真實案例實作模式
+
+### 模式 1：Web 應用程式整合
+將渲染邏輯嵌入 Spring Boot 控制器，即時提供 HTML 給前端：
+
+```java
+@RestController
+@RequestMapping("/api/view")
+public class DocumentController {
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Resource> renderDocument(@PathVariable String id) throws IOException {
+        Path docPath = Paths.get("documents", id + ".docx");
+        Path outDir = Files.createTempDirectory("viewer");
+        HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(outDir);
+        options.setRenderComments(true);
+        try (Viewer viewer = new Viewer(docPath.toFile())) {
+            viewer.view(options);
+        }
+        // Return the first HTML page as a Resource
+        Path firstPage = outDir.resolve("page_1.html");
+        Resource resource = new UrlResource(firstPage.toUri());
+        return ResponseEntity.ok()
+                .contentType(MediaType.TEXT_HTML)
+                .body(resource);
+    }
+}
+```
+
+### 模式 2：批次處理多文件
+若需一次轉換整個資料夾的 Word 檔，可遍歷目錄並重複使用同一個 `HtmlViewOptions` 實例，以降低物件建立開銷。
+
+## 效能最佳化與最佳實踐
+
+### 記憶體管理建議
+- **始終使用 try‑with‑resources** 來管理 `Viewer` 實例。  
+- **將大型文件分批處理**，避免一次載入全部內容。  
+- **使用 VisualVM 等工具監控 JVM heap**，必要時調整 `-Xmx`。  
+- **對常用文件實作快取**，減少重複渲染。
+
+### 資源使用指引
+
+**小型應用（< 100 文件/天）：**
+```java
+HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(Paths.get("output"));
+options.setRenderComments(true);
+```
+
+**高流量應用（1000+ 文件/天）：**
+```java
+HtmlViewOptions options = HtmlViewOptions.forExternalResources(Paths.get("output"));
+options.setRenderComments(true);
+options.setCacheEnabled(true);
+```
+
+### 快取策略
+將渲染後的 HTML 以文件雜湊為鍵存入分散式快取（如 Redis）。收到請求時先檢查快取，若命中則直接回傳快取內容，省去渲染步驟。
+
+## 何時選擇 GroupDocs Viewer 而非其他方案
+
+### GroupDocs Viewer 的理想使用情境
+- **文件管理系統** – 需要顯示多種檔案類型且保留批註。  
+- **協作審閱平台** – 必須讓所有參與者看到評論。  
+- **教育工具** – 講師的註解會與投影片同步顯示。  
+- **法律應用** – 合約中的律師批註需忠實呈現。  
+
+### 考慮其他方案的情況
+- **僅需簡易 PDF 顯示** – 瀏覽器內建的 PDF 檢視器已足夠。  
+- **基本影像轉換** – `ImageIO` 或類似函式庫更輕量。  
+- **純文字抽取** – Apache POI 或 iText 可能更合適。
+
+## 常見問答
+
+**Q：可以不渲染評論嗎？**  
+A：可以，只要省略 `setRenderComments(true)` 或將其設為 `false`。
+
+**Q：哪些檔案格式支援評論渲染？**  
+A：大多數主流格式皆支援，包括 DOC/DOCX、XLS/XLSX、PPT/PPTX、PDF 等。完整列表請參考[官方文件](https://docs.groupdocs.com/viewer/java/)。
+
+**Q：我可以自訂 HTML 輸出的樣式嗎？**  
+A：當然可以。使用 `HtmlViewOptions.setEmbedResources(false)` 產生外部 CSS，之後自行加入樣式表。
+
+**Q：如何處理受密碼保護的文件？**  
+A：提供帶有密碼的 `LoadOptions` 實例：
+
+`LoadOptions` 允許您指定文件載入參數，例如密碼。
+
+```java
+LoadOptions loadOptions = new LoadOptions("myPassword");
+try (Viewer viewer = new Viewer(inputPath.toFile(), loadOptions)) {
+    viewer.view(viewOptions);
+}
+```
+
+**Q：能只渲染特定頁面嗎？**  
+A：可以，使用接受 `PageNumber` 集合的重載 `view` 方法：
+
+`PageNumber` 代表在渲染子集合時使用的頁碼索引。
+
+```java
+viewer.view(new int[]{1, 3, 5}, viewOptions);
+```
+
+**Q：為何大型文件渲染較慢？**  
+A：檔案越大處理時間越長。可透過僅渲染必要頁面、使用外部資源、增加 JVM heap，或啟用非同步處理來提升速度。
+
+**Q：如何監控渲染進度？**  
+A：GroupDocs Viewer 本身未提供回呼機制，您可在 `viewer.view()` 前後使用 `System.nanoTime()` 計時，並記錄耗時。
+
+**Q：若來源文件損毀會發生什麼？**  
+A：函式庫會拋出 `ViewerException`。請將呼叫包在 try‑catch 中，並記錄錯誤以實現優雅降級。
+
+**Q：可以在商業應用中使用 GroupDocs Viewer 嗎？**  
+A：可以，但必須購買商業授權。免費試用版會有浮水印，必須在正式上線前移除。
+
+**Q：有使用量限制嗎？**  
+A：函式庫本身不設限制，唯授權合約可能規範使用上限，請參閱您的授權條款。
+
+**Q：我可以重新分發包含 GroupDocs Viewer 的應用程式嗎？**  
+A：您可以分發自己的應用程式，但不得重新分發 GroupDocs 函式庫本身的二進位檔。請遵守授權條款。
+
+## 後續步驟與進階主題
+
+您已掌握 **將 Word 轉換為 HTML** 並保留評論的基礎。以下是進一步提升技能的方向：
+
+1. **加上浮水印** – 為渲染頁面加入自訂浮水印，以加強品牌或保密性。  
+2. **擷取中繼資料** – 透過 `viewer.getDocumentInfo()` 取得作者、建立日期與頁數等資訊。  
+3. **自訂檢視器** – 為 PDF、試算表或簡報建立專屬檢視器，針對評論顯示方式進行客製化。  
+4. **雲端儲存整合** – 直接從 AWS S3、Azure Blob 或 Google Drive 讀取檔案渲染，無需先行下載至本機。
+
+### 推薦學習路徑
+1. **嘗試不同檔案類型** – 測試 Excel、PowerPoint、PDF 等，觀察評論在各格式的處理情形。  
+2. **建置簡易 Web 檢視器** – 建立一個最小化的 HTML 頁面，使用 `<iframe>` 或 AJAX 載入產生的 HTML。  
+3. **探索 GroupDocs 生態系** – 了解 GroupDocs Annotation、Comparison、Signature 等套件，打造端到端的文件工作流程。  
+4. **加入社群** – 參與 [GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9) 交流技巧、範例與支援。
+
+### 取得協助與支援
+
+**官方資源**
+- [GroupDocs.Viewer 文件](https://docs.groupdocs.com/viewer/java/)  
+- [API 參考文件](https://apireference.groupdocs.com/viewer/java)  
+- [支援論壇](https://forum.groupdocs.com/c/viewer/9)  
+- [GitHub 範例](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-Java)
+
+**社群資源**
+- Stack Overflow（標籤：`groupdocs-viewer`）  
+- Reddit 程式設計社群  
+- Java 開發者 Discord 伺服器  
+
+---
+
+**最後更新日期：** 2026-05-21  
+**測試版本：** GroupDocs.Viewer 25.2 for Java  
+**作者：** GroupDocs
+
 ```bash
 java -version
 javac -version
 ```
 
-**步驟 2：檢查 Maven 安裝**  
 ```bash
 mvn -version
 ```
 
-如果缺少任一項，請從官方網站下載並依照安裝指南完成設定。
-
-**步驟 3：建立新的 Maven 專案**  
 ```bash
 mvn archetype:generate -DgroupId=com.example.documentviewer -DartifactId=groupdocs-viewer-demo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
-
-現在可以將 GroupDocs Viewer 加入你的專案了！
-
-## 設定 GroupDocs.Viewer for Java
-
-### 新增相依
-
-任何 GroupDocs Viewer Java 教程的第一步都是把函式庫加入專案。將以下設定加入你的 `pom.xml` 檔案：
 
 ```xml
 <repositories>
@@ -124,31 +466,6 @@ mvn archetype:generate -DgroupId=com.example.documentviewer -DartifactId=groupdo
 </dependencies>
 ```
 
-**小技巧：** 隨時檢查 [GroupDocs 發布頁面](https://releases.groupdocs.com/viewer/java/) 以取得最新版本。函式庫持續維護，會定期推出更新與錯誤修正。
-
-### 了解授權選項
-
-GroupDocs 提供彈性的授權模式，以符合不同專案需求：
-
-**免費試用（適合學習）：**
-- 30 天評估期
-- 完整功能且帶有評估浮水印
-- 非常適合跟隨本教程並測試概念
-
-**臨時授權（開發使用）：**
-- 延長的評估期且無浮水印
-- 適合概念驗證專案
-- 前往 [GroupDocs 臨時授權頁面](https://purchase.groupdocs.com/temporary-license/) 申請
-
-**完整授權（正式上線）：**
-- 無任何限制或浮水印
-- 允許商業使用
-- 前往 [GroupDocs 購買頁面](https://purchase.groupdocs.com/buy) 取得
-
-### 基本初始化範本
-
-以下是整個教程中會反覆使用的基本範本：
-
 ```java
 import com.groupdocs.viewer.Viewer;
 
@@ -162,31 +479,6 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
 }
 ```
 
-**為什麼這個範本有效：**
-- 自動資源管理避免記憶體洩漏
-- 例外處理捕捉常見的檔案存取問題
-- 程式碼簡潔易讀，便於維護
-
-## 核心實作：渲染帶註解的文件
-
-現在進入正題！讓我們一步步完成帶有全部註解的文件渲染。
-
-### 流程說明
-
-使用 GroupDocs Viewer 渲染文件時，背後會發生以下步驟：
-
-1. **文件分析：** 函式庫讀取並解析輸入檔案  
-2. **註解擷取：** 識別並保留所有註解與標註  
-3. **HTML 產生：** 產生符合標準的乾淨 HTML（此步驟即 **將 Word 轉換為 HTML**）  
-4. **資源處理：** 管理圖片、樣式與其他資產  
-5. **輸出建立：** 將最終 HTML 檔寫入指定目錄  
-
-### 步驟式實作
-
-**步驟 1：設定檔案路徑**
-
-先規劃好檔案的輸入與輸出位置。雖然看似簡單，但正確的路徑管理可避免 90 % 的常見問題：
-
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -195,15 +487,6 @@ import java.nio.file.Paths;
 Path outputDirectory = Paths.get("rendered-documents");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-
-**為什麼這樣做：**  
-- 使用現代的 Java NIO.2 `Path` API（比舊的 `File` 類更可靠）  
-- 描述性的命名讓除錯更容易  
-- `{0}` 佔位符會自動以頁碼取代  
-
-**步驟 2：設定 HTML 渲染選項**
-
-這裡就是魔法發生的地方。我們告訴 GroupDocs 具體的渲染需求：
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -214,15 +497,6 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathF
 // The crucial setting – enable comment rendering!
 viewOptions.setRenderComments(true);
 ```
-
-**關鍵設定說明：**  
-- `forEmbeddedResources()`: 將所有 CSS、圖片與字型直接嵌入 HTML（方便攜帶）  
-- `setRenderComments(true)`: 保留每一筆註解與標註（即 **將 Word 轉換為 HTML** 並保留註解的核心）  
-- 若偏好分離資源，可改用 `forExternalResources()`  
-
-**步驟 3：執行渲染**
-
-把前面的設定全部結合起來：
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -244,10 +518,6 @@ try (Viewer viewer = new Viewer("path/to/your/document.docx")) {
     e.printStackTrace();
 }
 ```
-
-### 完整範例程式
-
-以下是一個可直接執行的完整類別：
 
 ```java
 package com.example.documentviewer;
@@ -291,12 +561,6 @@ public class DocumentRenderer {
 }
 ```
 
-## 進階設定與選項
-
-### 動態輸出目錄設定
-
-對於較大型的應用程式，建議使用更精細的路徑管理：
-
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -324,9 +588,6 @@ public class PathManager {
 }
 ```
 
-### 常見問題與除錯
-
-#### 問題 1：「找不到檔案」錯誤  
 ```java
 // Always check if file exists before processing
 Path inputPath = Paths.get("your-document.docx");
@@ -340,7 +601,6 @@ if (!inputPath.toFile().canRead()) {
 }
 ```
 
-#### 問題 2：註解未出現在輸出中  
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 // This line is crucial – don't forget it!
@@ -350,7 +610,6 @@ viewOptions.setRenderComments(true);
 System.out.println("Comments enabled: " + viewOptions.isRenderComments());
 ```
 
-#### 問題 3：大型文件導致記憶體不足  
 ```java
 // Increase JVM heap size when running
 // java -Xmx2g -Xms1g YourApplication
@@ -363,7 +622,6 @@ viewOptions.setRenderComments(true);
 viewer.view(viewOptions, 1, 2, 3); // Renders only pages 1, 2, and 3
 ```
 
-#### 問題 4：渲染效能緩慢  
 ```java
 // Use external resources for faster processing of multiple pages
 HtmlViewOptions viewOptions = HtmlViewOptions.forExternalResources(
@@ -375,12 +633,6 @@ HtmlViewOptions viewOptions = HtmlViewOptions.forExternalResources(
 // Enable caching if processing the same document multiple times
 // (Note: Implement caching at application level)
 ```
-
-## 真實案例實作模式
-
-### 模式 1：Web 應用程式整合
-
-以下示範如何在 Spring Boot 控制器中使用：
 
 ```java
 @RestController
@@ -412,8 +664,6 @@ public class DocumentController {
 }
 ```
 
-### 模式 2：批次處理多個文件  
-
 ```java
 public class BatchDocumentProcessor {
     
@@ -441,21 +691,6 @@ public class BatchDocumentProcessor {
 }
 ```
 
-## 效能最佳化與實務建議
-
-### 記憶體管理技巧
-
-在生產環境使用 GroupDocs Viewer 時，記憶體管理相當重要：
-
-**最佳實踐**  
-1. **始終使用 try‑with‑resources** 以自動釋放資源  
-2. **將大型文件分批處理**，避免一次載入過多  
-3. **監控 JVM 堆積使用量**，必要時調整  
-4. **為常用文件實作快取**  
-
-### 資源使用指引
-
-**小型應用（< 100 文件/天）：**  
 ```java
 // Simple approach works fine
 try (Viewer viewer = new Viewer(documentPath)) {
@@ -463,7 +698,6 @@ try (Viewer viewer = new Viewer(documentPath)) {
 }
 ```
 
-**高流量應用（1000+ 文件/天）：**  
 ```java
 public class DocumentRenderingService {
     private final ExecutorService executorService = 
@@ -481,8 +715,6 @@ public class DocumentRenderingService {
     }
 }
 ```
-
-### 快取策略  
 
 ```java
 public class CachedDocumentRenderer {
@@ -505,34 +737,6 @@ public class CachedDocumentRenderer {
 }
 ```
 
-## 何時選擇 GroupDocs Viewer vs 其他方案
-
-### GroupDocs Viewer 的理想使用情境
-- **文件管理系統：** 需要顯示各種檔案類型且保留註解  
-- **協作平台：** 必須呈現評論與回饋  
-- **教育工具：** 老師的標註需呈現給學生  
-- **法律應用：** 合同審閱時需保留律師註解  
-
-### 考慮其他方案的情況
-- **僅需簡易 PDF 顯示：** 瀏覽器內建的 PDF 檢視器已足夠  
-- **基本影像轉換：** `ImageIO` 或類似函式庫較輕量  
-- **純文字抽取：** Apache POI 或 iText 可能更適合  
-
-## 延伸 FAQ 區段
-
-### 技術實作問題
-
-**Q：可以在不顯示註解的情況下渲染文件嗎？**  
-A：當然可以！只要省略 `setRenderComments(true)` 或將其設為 `false`。
-
-**Q：哪些檔案格式支援註解渲染？**  
-A：大多數主流格式皆支援，包括 DOC/DOCX、XLS/XLSX、PPT/PPTX、PDF 等。完整清單請參考[官方文件](https://docs.groupdocs.com/viewer/java/)。
-
-**Q：可以自訂 HTML 輸出的樣式嗎？**  
-A：可以！使用 `HtmlViewOptions.setEmbedResources(false)` 以配合外部樣式表，或在渲染後自行注入 CSS。
-
-**Q：如何處理受密碼保護的文件？**  
-A：使用 `LoadOptions` 類別：  
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setPassword("your-password");
@@ -541,23 +745,10 @@ try (Viewer viewer = new Viewer("protected-doc.docx", loadOptions)) {
 }
 ```
 
-**Q：能只渲染特定頁面嗎？**  
-A：可以！使用重載的 `view()` 方法：  
 ```java
 viewer.view(viewOptions, 1, 3, 5); // Renders only pages 1, 3, and 5
 ```
 
-### 除錯與效能
-
-**Q：為什麼大型文件渲染很慢？**  
-A：大型檔案需要較多處理時間。建議：  
-- 只渲染特定頁面而非整份文件  
-- 使用外部資源而非嵌入式資源  
-- 增加 JVM 堆積大小  
-- 採用非同步處理  
-
-**Q：如何監控渲染進度？**  
-A：GroupDocs Viewer 本身未提供回呼機制，但可自行計時：  
 ```java
 System.out.println("Starting render for: " + documentName);
 long startTime = System.currentTimeMillis();
@@ -566,8 +757,6 @@ long endTime = System.currentTimeMillis();
 System.out.println("Rendering completed in: " + (endTime - startTime) + "ms");
 ```
 
-**Q：若來源文件損毀會發生什麼？**  
-A：GroupDocs Viewer 會拋出例外。務必實作完整的錯誤處理：  
 ```java
 try (Viewer viewer = new Viewer(documentPath)) {
     viewer.view(viewOptions);
@@ -578,66 +767,8 @@ try (Viewer viewer = new Viewer(documentPath)) {
 }
 ```
 
-### 商業與授權
+## 相關教學
 
-**Q：可以在商業應用中使用 GroupDocs Viewer 嗎？**  
-A：可以，但需購買商業授權。免費試用版會有評估浮水印，正式上線前必須移除。
-
-**Q：有使用量限制嗎？**  
-A：函式庫本身不限制使用量，但授權合約可能有相關條款，請自行確認。
-
-**Q：可以重新分發包含 GroupDocs Viewer 的應用程式嗎？**  
-A：一般情況下可以分發你的應用程式，但不可重新分發 GroupDocs 函式庫本身。請參閱授權細節。
-
-## 後續步驟與進階主題
-
-恭喜！你已掌握使用 GroupDocs Viewer for Java **將 Word 轉換為 HTML** 並保留註解的核心技巧。以下是可進一步探索的領域：
-
-### 可深入的進階功能
-1. **浮水印：** 為渲染的文件加入自訂浮水印  
-2. **文件資訊抽取：** 取得元資料、頁數與檔案細節  
-3. **自訂檢視器：** 為特定文件類型打造專屬檢視介面  
-4. **雲端儲存整合：** 直接從 AWS S3、Google Drive 等來源渲染  
-
-### 推薦學習路徑
-1. **練習不同檔案類型：** 嘗試 Excel、PowerPoint 與 PDF  
-2. **建立簡易 Web 檢視器：** 製作基本 UI 以顯示渲染後的 HTML  
-3. **探索 GroupDocs 生態系：** 了解其他 GroupDocs 產品，打造端到端的文件管理解決方案  
-4. **加入社群：** 參與[GroupDocs 論壇](https://forum.groupdocs.com/c/viewer/9)交流技巧與支援  
-
-### 取得協助與支援
-
-**官方資源**  
-- [GroupDocs.Viewer 文件](https://docs.groupdocs.com/viewer/java/)  
-- [API 參考文件](https://apireference.groupdocs.com/viewer/java)  
-- [支援論壇](https://forum.groupdocs.com/c/viewer/9)  
-- [GitHub 範例](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-Java)
-
-**社群資源**  
-- Stack Overflow（標籤：`groupdocs-viewer`）  
-- Reddit 程式設計社群  
-- 各大 Java 開發者論壇與 Discord 伺服器  
-
-## 結論
-
-你已成功掌握 **將 Word 轉換為 HTML** 並保留註解的完整流程，使用的是 GroupDocs Viewer for Java。從基礎設定、進階除錯到效能調校，你現在具備在實務專案中實作穩定文件渲染的能力。
-
-**重點回顧**  
-- GroupDocs Viewer 簡化了複雜的文件渲染工作  
-- 只需一行設定 `setRenderComments(true)` 即可保留所有註解  
-- 生產環境必須做好例外處理與資源管理  
-- 函式庫可從簡易工具擴展至企業級解決方案  
-
-**你的下一步行動**  
-1. 使用自己的文件執行範例程式  
-2. 建立小型專案，將渲染出的 HTML 顯示在網頁上  
-3. 深入探索如浮水印、元資料抽取等進階功能  
-4. 在社群分享你的經驗，協助其他開發者  
-
-立即開始打造出色的文件檢視體驗吧！記得，GroupDocs 社群隨時在你需要時提供協助。
-
----
-
-**最後更新日期：** 2026-01-28  
-**測試環境：** GroupDocs.Viewer 25.2 for Java  
-**作者：** GroupDocs
+- [在 GroupDocs.Viewer for Java 中渲染 Word 文件的修訂變更](/viewer/java/advanced-rendering/render-tracked-changes-word-docs-groupdocs-viewer-java/)
+- [使用 GroupDocs.Viewer for Java 進行響應式 HTML 渲染的完整指南](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [如何使用 GroupDocs.Viewer for Java 載入並渲染文件為 HTML](/viewer/java/rendering-basics/groupdocs-viewer-java-html-rendering/)

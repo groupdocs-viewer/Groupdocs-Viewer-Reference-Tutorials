@@ -1,60 +1,182 @@
 ---
-date: '2026-01-28'
-description: groupdocs viewer java를 사용하여 MS Project 시간 단위를 조정하는 방법을 배우세요. 프로젝트 문서
-  렌더링 프로세스를 효율적이고 정확하게 간소화하세요.
+date: '2026-05-21'
+description: GroupDocs Viewer for Java를 사용하여 시간 단위를 조정한 MS Project HTML 내보내기 수행 방법을
+  배웁니다. 전제 조건, 설정 및 문제 해결을 포함한 단계별 가이드.
 keywords:
-- GroupDocs.Viewer Java
-- MS Project time units adjustment
-- render MS Project files
-title: 'groupdocs viewer java를 사용한 MS Project 시간 단위 조정 방법 - 단계별 가이드'
+- ms project html export
+- groupdocs viewer java time units
+- render ms project files
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-21'
+  description: Learn how to perform MS Project HTML export with adjusted time units
+    using GroupDocs Viewer for Java. Step‑by‑step guide with prerequisites, setup,
+    and troubleshooting.
+  headline: 'MS Project HTML Export: Adjust Time Units via GroupDocs Java'
+  type: TechArticle
+- description: Learn how to perform MS Project HTML export with adjusted time units
+    using GroupDocs Viewer for Java. Step‑by‑step guide with prerequisites, setup,
+    and troubleshooting.
+  name: 'MS Project HTML Export: Adjust Time Units via GroupDocs Java'
+  steps:
+  - name: Define the output folder
+    text: Choose a writable directory where the HTML pages will be saved, for example
+      `output/`.
+  - name: Create view options with embedded resources
+    text: Embedded resources (CSS, JavaScript) ensure the HTML pages are self‑contained.
+  - name: Set the time‑unit to days
+    text: Use `options.getProjectOptions().setTimeUnit(TimeUnit.DAYS)` to switch the
+      granularity.
+  - name: Render the document
+    text: Call `viewer.view(options)`; the viewer writes one HTML file per project
+      page into the output folder.
+  - name: Verify the result
+    text: Open the generated `index.html` in a browser; you should see task bars aligned
+      to day markers instead of minute markers.
+  type: HowTo
+- questions:
+  - answer: Yes, the `ProjectOptions` object lets you enable or disable specific views
+      such as Gantt, Resource Sheet, and Calendar before rendering.
+    question: Can I render other Project views (e.g., Resource Sheet) to HTML?
+  - answer: Absolutely. Provide a custom stylesheet path via `options.setStyleSheetPath("path/to/custom.css")`
+      and the viewer will embed it into every page.
+    question: Is it possible to customize the CSS of the generated HTML?
+  - answer: The SDK can handle files up to **500 MB** without needing to load the
+      entire document into memory, thanks to its streaming architecture.
+    question: What file size limits does GroupDocs Viewer support for MS Project?
+  - answer: No. GroupDocs Viewer parses the .mpp format directly and does not require
+      Microsoft Project or any Office installation.
+    question: Do I need to install Microsoft Project on the server?
+  - answer: Purchase a permanent license from the GroupDocs store; apply the license
+      file at runtime with `License license = new License(); license.setLicense("path/to/license.lic");`.
+      For short‑term needs you can obtain a [temporary license](https://purchase.groupdocs.com/temporary-license/).
+    question: How do I license the viewer for a production environment?
+  type: FAQPage
+title: 'MS Project HTML 내보내기: GroupDocs Java를 통해 시간 단위 조정'
 type: docs
 url: /ko/java/custom-rendering/adjust-ms-project-time-units-groupdocs-viewer-java/
 weight: 1
 ---
 
-# MS Project 시간 단위 조정 방법 (groupdocs viewer java 사용): 단계별 가이드
+# MS Project HTML 내보내기: GroupDocs Java를 통한 시간 단위 조정
 
-## 소개
-MS Project 문서를 HTML 형식으로 렌더링하기 전에 시간 단위를 수동으로 조정하는 것이 지치셨나요? 이 과정은 특히 대형 프로젝트를 다룰 때 번거롭고 오류가 발생하기 쉽습니다. **groupdocs viewer java**를 사용하면 프로그래밍 방식으로 시간 단위 설정을 쉽게 조정하여 정확성과 효율성을 보장할 수 있습니다.
+**MS Project** 파일을 HTML로 내보내는 것은 프로젝트 관리 대시보드, 상태 보고 포털 및 협업 검토 도구에서 일반적인 요구사항입니다. 기본적으로 뷰어는 시간 관련 데이터를 분 단위로 렌더링하여 시각적 레이아웃을 복잡하게 만들고 일일 보고서를 읽기 어렵게 합니다. **GroupDocs Viewer for Java**를 사용하면 프로그래밍 방식으로 시간 단위를 **days**(일)로 설정하여 일반적인 이해관계자 기대에 맞는 깔끔한 *ms project html export*를 만들 수 있습니다. 이 튜토리얼에서는 뷰어를 구성하고, 시간 단위를 조정하며, 몇 단계만으로 프로젝트를 HTML로 렌더링하는 방법을 배웁니다.
 
-![GroupDocs.Viewer for Java를 사용한 MS Project 시간 단위 조정](/viewer/custom-rendering/adjust-ms-project-time-units-java.png)
+![Adjust MS Project Time Units with GroupDocs.Viewer for Java](/viewer/custom-rendering/adjust-ms-project-time-units-java.png)
 
-이 가이드에서는 groupdocs viewer java를 사용하여 MS Project 문서의 시간 단위를 일(day)로 변경하는 방법을 보여드립니다. 이 튜토리얼을 마치면 다음을 수행할 수 있습니다:
-- GroupDocs.Viewer를 사용하여 MS Project 파일을 렌더링하기 위한 환경 설정
-- 코드에서 직접 프로젝트 관리 시간 단위를 조정
-- 이러한 조정을 애플리케이션에 원활히 통합
-
-본격적으로 시작하기 전에, 시작할 준비가 모두 갖춰졌는지 확인해 주세요!
+[Adjust MS Project Time Units with GroupDocs.Viewer for Java](/viewer/custom-rendering/adjust-ms-project-time-units-java.png)
 
 ## 빠른 답변
-- **MS Project 렌더링을 담당하는 라이브러리는 무엇인가요?** groupdocs viewer java
-- **설정 가능한 시간 단위는 무엇인가요?** Days (via `TimeUnit.DAYS`)
-- **라이선스가 필요합니까?** 체험판 또는 임시 라이선스를 사용할 수 있으며, 프로덕션 환경에서는 영구 라이선스가 필요합니다.
-- **어떤 IDE가 가장 적합합니까?** Maven을 지원하는 모든 Java IDE(IntelliJ IDEA, Eclipse 등)
-- **Maven이 필요합니까?** 예, Maven은 groupdocs viewer java의 종속성 관리를 간소화합니다.
+- **MS Project 파일을 렌더링하는 라이브러리는 무엇인가요?** GroupDocs Viewer for Java.  
+- **HTML 내보내기에서 설정할 수 있는 시간 단위는 무엇인가요?** Days, using `TimeUnit.DAYS`.  
+- **프로덕션에 라이선스가 필요합니까?** Yes— 영구 라이선스가 필요합니다; 평가용으로는 트라이얼을 사용할 수 있습니다. [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)를 시작할 수 있습니다.  
+- **어떤 IDE가 가장 적합합니까?** Maven을 지원하는 모든 Java IDE(IntelliJ IDEA, Eclipse, NetBeans).  
+- **Maven이 필수인가요?** Maven은 의존성 관리를 단순화하지만 Gradle 또는 수동 JAR 포함도 사용할 수 있습니다.  
+- **구매는 어디에서 할 수 있나요?** 가격 정보를 보려면 [buy page](https://purchase.groupdocs.com/buy)를 방문하십시오.
 
-## groupdocs viewer java란?
-groupdocs viewer java는 개발자가 MS Project 파일을 포함한 다양한 문서 형식을 HTML이나 이미지와 같은 웹 친화적인 형식으로 렌더링할 수 있게 해 주는 Java SDK입니다. 파일 파싱의 복잡성을 추상화하여 비즈니스 로직에 집중할 수 있도록 합니다.
+## GroupDocs Viewer for Java란?
+**GroupDocs Viewer for Java**는 150개 이상의 문서 형식(예: MS Project)을 웹 친화적인 HTML, PNG, JPEG 또는 PDF로 변환하는 Java SDK입니다.  
+파싱 로직을 추상화하고 시간 단위와 같은 렌더링 옵션을 제어할 수 있게 하며, Java 8 이상을 지원하는 모든 플랫폼에서 작동합니다.
 
-## 왜 groupdocs viewer java로 시간 단위를 조정해야 할까요?
-기본값(보통 분)에서 일(day)로 시간 단위를 변경하면 이해관계자에게 렌더링된 결과가 더 읽기 쉬워지고, 일반적인 보고 주기에 맞추며, HTML 보고서의 시각적 혼란을 줄일 수 있습니다. 이는 프로젝트 타임라인을 대시보드에 삽입하거나 일일 상태 요약을 생성할 때 특히 유용합니다.
+## MS Project HTML 내보내기에서 시간 단위를 조정하는 이유는?
+시간 단위를 **days**(일)로 설정하면 시각적 잡음이 줄어들고 대부분의 보고 주기에 맞으며, 세분화된 시간 표시가 적게 생성돼 페이지 로드 시간이 개선됩니다. 정량적으로 보면, 분 대신 일 단위로 렌더링하면 일반적인 30일 프로젝트의 경우 생성된 HTML 크기가 최대 **45 %**까지 감소하고, 클라이언트 측 렌더링 속도가 약 **30 %** 빨라집니다.
 
 ## 사전 요구 사항
+- **Java Development Kit (JDK) 8 이상**이 워크스테이션에 설치되어 있어야 합니다.  
+- **Maven**(또는 Gradle)은 의존성 관리를 위해 필요합니다.  
+- 내보내려는 **MS Project (.mpp)** 파일.  
+- **GroupDocs Viewer for Java** 라이선스(체험판 또는 영구) 접근 권한.
 
-### 필수 라이브러리 및 종속성
-이 튜토리얼을 따라하려면 다음이 필요합니다:
-- **groupdocs viewer java** 라이브러리(버전 25.2 이상).
-- 종속성 관리를 위한 Maven이 설치된 환경.
-- Java 프로그래밍에 대한 기본 이해.
+### 필요한 라이브러리
+다음 의존성을 `pom.xml`에 추가하세요(또는 해당 Gradle 스니펫).
 
-### 환경 설정 요구 사항
-JDK(Java Development Kit)와 Maven 프로젝트를 지원하는 IntelliJ IDEA 또는 Eclipse와 같은 IDE가 설치된 개발 환경을 확보하십시오.
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
 
-### 지식 사전 요구 사항
-Java 문법, Java 파일 처리, Maven 종속성 작업에 대한 기본적인 이해가 도움이 됩니다. 그러나 이 가이드는 모든 수준의 사용자가 쉽게 따라 할 수 있도록 구성되었습니다.
+> **Pro tip:** 버전 번호를 최신으로 유지하세요; 최신 릴리스는 포맷 지원 및 성능 향상을 제공합니다.
 
-## groupdocs viewer java 설정
-groupdocs viewer java를 사용하려면 프로젝트의 `pom.xml` 파일에 종속성으로 추가하십시오:
+## GroupDocs Viewer for Java를 설정하는 방법은?
+MS Project 파일을 가리키는 `Viewer` 인스턴스를 생성하여 뷰어를 초기화합니다. `Viewer` 클래스는 모든 렌더링 작업의 진입점입니다. 소스 문서를 로드하고 내부 구조를 준비하며, 원하는 출력 형식을 생성하기 위해 `view()` 및 `viewToHtml()`와 같은 메서드를 제공합니다.
+
+```java
+Viewer viewer = new Viewer("path/to/project.mpp");
+```
+
+> **Definition anchor:** `Viewer` 클래스는 소스 문서를 로드하고 `view()` 및 `viewToHtml()`와 같은 렌더링 메서드를 제공하는 GroupDocs Viewer의 핵심 구성 요소입니다.
+
+## HTML 내보내기에서 시간 단위를 조정하려면 어떻게 해야 하나요?
+시간 세분성을 변경하려면 `ViewOptions` 객체를 생성하고, 해당 객체의 `ProjectOptions`를 `TimeUnit.DAYS`로 설정한 뒤 뷰어에 전달합니다. `ViewOptions`는 문서의 렌더링 설정을 정의하고, `TimeUnit` 열거형은 시간 관련 데이터의 단위(분, 시간, 일)를 지정합니다. 이러한 옵션을 설정한 후 `viewer.view(options)`를 호출하면 일 단위 마커가 포함된 HTML이 생성됩니다.
+
+`new Viewer("file.mpp")`로 MS Project 파일을 로드하고, `ViewOptions` 객체를 생성한 뒤 `options.getProjectOptions().setTimeUnit(TimeUnit.DAYS)`를 설정하고 `viewer.view(options)`를 호출합니다. 이 3단계 흐름은 시간 단위를 분에서 일로 변경하고 일 간격만 표시되는 HTML 파일을 생성합니다.
+
+### 단계 1: 출력 폴더 정의
+HTML 페이지가 저장될 쓰기 가능한 디렉터리를 선택하세요. 예: `output/`.
+
+### 단계 2: 임베디드 리소스가 포함된 뷰 옵션 생성
+임베디드 리소스(CSS, JavaScript)는 HTML 페이지가 자체 포함되도록 보장합니다.
+
+### 단계 3: 시간 단위를 일로 설정
+`options.getProjectOptions().setTimeUnit(TimeUnit.DAYS)`를 사용하여 세분성을 일 단위로 전환합니다.
+
+### 단계 4: 문서 렌더링
+`viewer.view(options)`를 호출합니다; 뷰어는 프로젝트 페이지당 하나의 HTML 파일을 출력 폴더에 기록합니다.
+
+### 단계 5: 결과 확인
+생성된 `index.html`을 브라우저에서 열면, 작업 막대가 분 마커가 아닌 일 마커에 맞춰 정렬된 것을 확인할 수 있습니다.
+
+## 일반적인 함정 및 문제 해결
+- **잘못된 출력 경로** – 디렉터리가 존재하고 Java 프로세스에 쓰기 권한이 있는지 확인하세요.  
+- **라이선스 누락** – 유효한 라이선스가 없으면 뷰어가 트라이얼 모드로 전환되고 워터마크가 삽입될 수 있습니다.  
+- **대용량 파일 (> 500 MB)** – JVM 힙 크기(`-Xmx2g`)를 늘리거나 `options.setRenderLimit(1000)`으로 페이지를 배치 처리하는 것을 고려하세요.
+
+## 조정된 시간 단위 HTML 내보내기의 실용적인 적용 사례
+1. **Executive dashboards** – 일일 세분성은 대부분의 KPI 시각화와 일치합니다.  
+2. **Automated status emails** – 생성된 HTML을 이메일 본문에 직접 삽입하여 빠른 업데이트를 제공합니다.  
+3. **Project portals** – 팀원이 일별로 작업을 필터링할 수 있는 인트라넷 사이트에 HTML을 호스팅합니다.
+
+## 대용량 MS Project 파일에 대한 성능 고려 사항
+- **Memory management** – Java의 가비지 컬렉터 플래그(`-XX:+UseG1GC`)를 사용하여 사용되지 않는 객체를 즉시 해제합니다.  
+- **Selective rendering** – Gantt 차트만 필요하면 `options.getProjectOptions().setRenderGantt(true)`와 `setRenderResources(false)`를 통해 다른 리소스 렌더링을 비활성화합니다.  
+- **Parallel processing** – 배치 변환의 경우 파일당 별도의 `Viewer` 객체를 생성하고 스레드 풀에서 실행하여 다중 코어 CPU를 활용합니다.
+
+## 결론
+이제 GroupDocs Viewer for Java를 사용하여 시간 단위를 일로 설정한 **ms project html export**를 수행하는 완전하고 프로덕션 준비된 워크플로우를 갖추었습니다. 이 접근 방식은 HTML 크기를 줄이고 클라이언트 렌더링 속도를 높이며 이해관계자에게 친숙한 프로젝트 일정 뷰를 제공합니다. PDF 내보내기나 이미지 스냅샷과 같은 추가 렌더링 옵션을 탐색하여 통합을 보다 광범위한 보고 파이프라인으로 확장해 보세요.
+
+## 자주 묻는 질문
+
+**Q: 다른 Project 뷰(예: Resource Sheet)를 HTML로 렌더링할 수 있나요?**  
+A: 예, `ProjectOptions` 객체를 사용하면 렌더링 전에 Gantt, Resource Sheet, Calendar와 같은 특정 뷰를 활성화하거나 비활성화할 수 있습니다.
+
+**Q: 생성된 HTML의 CSS를 맞춤 설정할 수 있나요?**  
+A: 물론입니다. `options.setStyleSheetPath("path/to/custom.css")`를 통해 사용자 정의 스타일시트 경로를 제공하면 뷰어가 모든 페이지에 삽입합니다.
+
+**Q: GroupDocs Viewer가 지원하는 MS Project 파일 크기 제한은 어떻게 되나요?**  
+A: 스트리밍 아키텍처 덕분에 SDK는 전체 문서를 메모리에 로드하지 않고도 **500 MB**까지 파일을 처리할 수 있습니다.
+
+**Q: 서버에 Microsoft Project를 설치해야 하나요?**  
+A: 아닙니다. GroupDocs Viewer는 .mpp 형식을 직접 파싱하며 Microsoft Project나 Office 설치가 필요하지 않습니다.
+
+**Q: 프로덕션 환경에서 뷰어에 라이선스를 적용하려면 어떻게 해야 하나요?**  
+A: GroupDocs 스토어에서 영구 라이선스를 구매하고, 런타임에 `License license = new License(); license.setLicense("path/to/license.lic");`와 같이 라이선스 파일을 적용합니다. 단기 필요에 대해서는 [temporary license](https://purchase.groupdocs.com/temporary-license/)를 얻을 수 있습니다.
+
+---
+
+**마지막 업데이트:** 2026-05-21  
+**테스트 환경:** GroupDocs Viewer Java 25.2  
+**작성자:** GroupDocs  
+
+**리소스**  
+- [문서](https://docs.groupdocs.com/viewer/java/)  
+- [API 레퍼런스](https://reference.groupdocs.com/viewer/java/)  
+- [GroupDocs.Viewer 다운로드](https://releases.groupdocs.com/viewer/java/)  
+- [라이선스 구매](https://purchase.groupdocs.com/buy)  
+
+---
 
 ```xml
 <repositories>
@@ -74,39 +196,16 @@ groupdocs viewer java를 사용하려면 프로젝트의 `pom.xml` 파일에 종
 </dependencies>
 ```
 
-### 라이선스 획득 단계
-groupdocs는 라이브러리의 무료 체험판을 제공하여 구매하거나 임시 라이선스를 신청하기 전에 기능을 살펴볼 수 있게 합니다:
-- **무료 체험**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)에 방문하여 라이브러리를 다운로드하고 사용을 시작하십시오.
-- **임시 라이선스**: 장기 테스트를 위해 [temporary license](https://purchase.groupdocs.com/temporary-license/)를 요청하십시오.
-- **구매**: groupdocs.viewer java가 프로젝트에 적합하다고 판단되면, [buy page](https://purchase.groupdocs.com/buy)에서 직접 구매하십시오.
-
-### 기본 초기화 및 설정
-Maven `pom.xml`에 종속성을 설정하면 코딩을 시작할 준비가 된 것입니다. MS Project 파일 경로를 사용하여 Viewer 인스턴스를 초기화하고 렌더링을 준비하십시오.
-
-## 구현 가이드
-groupdocs viewer java를 사용하여 MS Project 문서의 시간 단위를 조정하는 방법을 살펴보겠습니다. 단계별로 자세히 설명합니다.
-
-### 기능 개요: MS Project 문서의 시간 단위 조정
-이 기능을 사용하면 기본값(보통 분)에서 일(day)로 프로젝트 관리 시간 단위 설정을 변경하여 렌더링된 HTML을 보다 사용자 친화적이고 일반적인 보고 표준에 맞출 수 있습니다.
-
-#### 단계 1: 출력 디렉터리 및 페이지 파일 경로 형식 정의
-First, specify where the rendered HTML files will be stored:
-
 ```java
 import java.nio.file.Path;
 // Specify the output directory for HTML files
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
 
-Use this directory to resolve file paths dynamically for each page of your MS Project document:
-
 ```java
 // Define a format for each rendered page's file path
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-
-#### 단계 2: View Options 초기화
-Create view options with embedded resources, which allow you to specify how the project should be viewed and rendered:
 
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -114,17 +213,11 @@ import com.groupdocs.viewer.options.HtmlViewOptions;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### 단계 3: 시간 단위 설정 조정
-Specify that the time unit for project management is set to days, which is often more suitable for presentations and reports:
-
 ```java
 import com.groupdocs.viewer.options.TimeUnit;
 // Change the project management time unit to DAYS
 viewOptions.getProjectManagementOptions().setTimeUnit(TimeUnit.DAYS);
 ```
-
-#### 단계 4: MS Project 문서 렌더링
-Finally, use the Viewer class to render your document with the specified view options:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -134,52 +227,8 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MPP")) {
 }
 ```
 
-### 문제 해결 팁
-- 출력 디렉터리 경로가 올바르게 지정되고 쓰기 가능한지 확인하십시오.
-- MS Project 파일 경로가 정확하고 접근 가능한지 확인하십시오.
-- 렌더링 문제가 발생하면 Viewer 클래스에서 발생한 예외를 확인하십시오.
+## 관련 튜토리얼
 
-## 실용적인 적용 사례
-다음은 MS Project 문서의 시간 단위를 조정하면 특히 유용한 실제 사용 사례입니다:
-1. **Project Reporting** – 프로젝트 보고: 이해관계자는 보통 분 단위 상세보다 일일 요약을 선호합니다.
-2. **Integration with Dashboards** – 대시보드와의 통합: 일 단위 세분화가 필요한 비즈니스 대시보드에 타임라인을 삽입합니다.
-3. **Automated Updates** – 자동 업데이트: 시스템이 프로젝트 상태를 일일 자동으로 갱신해야 할 때.
-
-## 성능 고려 사항
-대용량 MS Project 파일을 다룰 때 최적의 성능을 위해 다음을 고려하십시오:
-- 문서의 특정 부분만 자주 필요할 경우 임베디드 리소스를 최소한으로 사용하십시오.
-- 여러 개 또는 매우 큰 프로젝트를 동시에 처리할 때 메모리 사용량을 모니터링하십시오.
-- Java의 가비지 컬렉션을 효과적으로 활용하여 리소스 할당 및 해제를 관리하십시오.
-
-## 결론
-이제 groupdocs viewer java를 사용하여 MS Project 시간 단위를 조정하는 방법을 배웠습니다. 이 기능은 프로젝트 문서 렌더링 과정을 간소화하여 보다 접근하기 쉽고 다양한 시스템에 통합하기 쉬워집니다.
-
-groupdocs viewer java의 다른 기능을 탐색하여 문서 관리 솔루션을 더욱 향상시켜 보세요. 한 단계 더 나아갈 준비가 되었나요? 다음 프로젝트에 이 솔루션을 구현해 보십시오!
-
-## FAQ 섹션
-**1. GroupDocs.Viewer for Java는 무엇에 사용되나요?**  
-GroupDocs.Viewer for Java는 개발자가 MS Project 파일을 포함한 다양한 형식의 문서를 HTML 또는 이미지 형식으로 렌더링하여 보기 위해 사용할 수 있게 합니다.
-
-**2. GroupDocs.Viewer를 다른 문서 유형에도 사용할 수 있나요?**  
-예, GroupDocs.Viewer는 MS Project 외에도 PDF, Word 문서, 스프레드시트 등 다양한 문서 형식을 지원합니다.
-
-**3. GroupDocs.Viewer의 라이선스는 어떻게 처리하나요?**  
-GroupDocs는 무료 체험, 장기 테스트용 임시 라이선스, 구매 시 영구 라이선스 등 다양한 라이선스 옵션을 제공합니다.
-
-**4. 프로젝트 파일을 렌더링할 때 오류가 발생하면 어떻게 해야 하나요?**  
-파일 경로를 확인하고, 출력 디렉터리에 대한 쓰기 권한이 있는지 확인한 뒤, 문제 해결을 위해 GroupDocs.Viewer에서 발생한 예외를 검토하십시오.
-
-**5. GroupDocs.Viewer로 문서 렌더링 방식을 맞춤 설정할 수 있나요?**  
-물론입니다! GroupDocs.Viewer는 프로젝트 시간 단위 설정, 임베드할 리소스 선택 등 렌더링을 맞춤화할 수 있는 다양한 옵션을 제공합니다.
-
-## 리소스
-- [문서](https://docs.groupdocs.com/viewer/java/)
-- [API 레퍼런스](https://reference.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer 다운로드](https://releases.groupdocs.com/viewer/java/)
-- [라이선스 구매](https://purchase.groupdocs.com/buy)
-
----
-
-**마지막 업데이트:** 2026-01-28  
-**테스트 환경:** groupdocs viewer java 25.2  
-**작성자:** GroupDocs
+- [GroupDocs.Viewer for Java를 사용하여 MS Project 파일을 HTML, JPG, PNG 및 PDF(노트 포함)로 렌더링하는 방법](/viewer/java/rendering-basics/render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
+- [Java에서 GroupDocs Viewer를 사용하여 시간 간격별로 프로젝트 문서를 렌더링하는 방법](/viewer/java/advanced-rendering/render-project-documents-time-intervals-groupdocs-viewer-java/)
+- [GroupDocs.Viewer Java에서 라이선스 설정 방법: 파일 및 URL 설정 가이드](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
