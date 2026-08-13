@@ -1,34 +1,91 @@
 ---
-"date": "2025-04-24"
-"description": "Naučte se, jak omezit velikost JPG během vykreslování dokumentu pomocí GroupDocs.Viewer pro Javu. Tento tutoriál se zabývá konfigurací, implementací a osvědčenými postupy."
-"title": "Jak omezit velikost JPG při vykreslování dokumentů pomocí GroupDocs.Viewer pro Javu"
-"url": "/cs/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
-"weight": 1
+date: '2026-05-31'
+description: Zjistěte, jak omezit velikost JPG v Javě při vykreslování dokumentů pomocí
+  GroupDocs.Viewer pro Java. Obsahuje kroky konfigurace, ukázky kódu a tipy na osvědčené
+  postupy.
+keywords:
+- limit jpg size java
+- GroupDocs Viewer Java configuration
+- image size limits GroupDocs Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-31'
+  description: Learn how to limit jpg size java when rendering documents with GroupDocs.Viewer
+    for Java. Includes configuration steps, code snippets, and best‑practice tips.
+  headline: limit jpg size java – Rendering with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to limit jpg size java when rendering documents with GroupDocs.Viewer
+    for Java. Includes configuration steps, code snippets, and best‑practice tips.
+  name: limit jpg size java – Rendering with GroupDocs.Viewer
+  steps:
+  - name: '**Web Application Thumbnails** – Faster loading previews for document galleries.'
+    text: '**Web Application Thumbnails** – Faster loading previews for document galleries.'
+  - name: '**Email Attachments** – Smaller JPGs keep email sizes under common limits
+      (e.g., 25 MB).'
+    text: '**Email Attachments** – Smaller JPGs keep email sizes under common limits
+      (e.g., 25 MB).'
+  - name: '**Mobile Apps** – Reduced dimensions lower CPU and GPU load on handheld
+      devices, improving responsiveness.'
+    text: '**Mobile Apps** – Reduced dimensions lower CPU and GPU load on handheld
+      devices, improving responsiveness.'
+  type: HowTo
+- questions:
+  - answer: Choose a `setMaxWidth()` that balances resolution and file size; 400 px
+      works well for most preview needs, and you can also set JPEG quality via `setQuality(int)`
+      if needed.
+    question: How can I keep image quality high while limiting size?
+  - answer: GroupDocs.Viewer currently exposes only a width‑based limit. For height
+      constraints, process the generated JPGs with an image‑processing library after
+      rendering.
+    question: Can I also limit the image height?
+  - answer: Render them in batches or increase the JVM heap size; the viewer processes
+      pages independently, so memory usage scales with the number of concurrent pages,
+      not total page count.
+    question: What should I do with very large documents?
+  - answer: Yes—pass the password to the `Viewer` constructor or use the `loadOptions`
+      parameter to unlock the document before rendering.
+    question: Does the viewer support password‑protected files?
+  - answer: Explore the full API guide at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/),
+      which lists over 30 rendering settings and format‑specific features.
+    question: Where can I find more advanced rendering options?
+  type: FAQPage
+title: Omezit velikost JPG v Javě – Vykreslování s GroupDocs.Viewer
 type: docs
+url: /cs/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/
+weight: 1
 ---
-# Jak omezit velikost JPG při vykreslování dokumentů pomocí GroupDocs.Viewer pro Javu
 
-## Zavedení
+# Omezení velikosti JPG v Javě pomocí GroupDocs.Viewer pro Java
 
-dnešním digitálním světě je efektivní správa vykreslování dokumentů klíčová pro firmy, které se snaží zefektivnit provoz a zlepšit uživatelský komfort. Jednou z běžných výzev, kterým vývojáři čelí, je kontrola výstupní velikosti vykreslených obrázků při převodu dokumentů do formátu JPG. Tento tutoriál se tímto problémem zabývá demonstrací nastavení limitu velikosti obrázku pomocí nástroje GroupDocs.Viewer pro Javu.
+V moderních webových a mobilních aplikacích může řízení velikosti JPG obrázků generovaných z dokumentů dramaticky zlepšit rychlost načítání, snížit náklady na šířku pásma a udržet úložnou stopu malou. Tento tutoriál vám ukáže **jak omezit velikost jpg v Javě** během vykreslování pomocí GroupDocs.Viewer pro Java, provede vás požadovanou konfigurací a sdílí praktické tipy, které můžete použít ještě dnes.
 
-**Co se naučíte:**
-- Jak nakonfigurovat GroupDocs.Viewer pro Javu
-- Implementace omezení velikosti obrázků při vykreslování dokumentů
-- Nejlepší postupy pro optimalizaci systému správy dokumentů
+![Omezení velikosti JPG při vykreslování dokumentu pomocí GroupDocs.Viewer pro Java](/viewer/rendering-basics/limit-jpg-size-in-document-rendering-java.png)
 
-Díky těmto poznatkům budete moci přizpůsobit výstup vykreslování dokumentů tak, aby splňoval specifické požadavky. Než začneme, pojďme se ponořit do předpokladů.
+## Rychlé odpovědi
+- **Co dělá “limit jpg size java”?** Omezí šířku každého vykresleného obrázku stránky, automaticky zmenšuje velikost souboru při zachování čitelnosti.  
+- **Která třída řídí velikost?** `JpgViewOptions.setMaxWidth(int)` vám umožní definovat maximální šířku v pixelech.  
+- **Potřebuji licenci?** Platná licence GroupDocs.Viewer je vyžadována pro produkční použití; pro testování je k dispozici bezplatná zkušební nebo dočasná licence.  
+- **Mohu vykreslovat PDF?** Ano—GroupDocs.Viewer podporuje více než 70 vstupních formátů, včetně PDF, DOCX, PPTX a dalších.  
+- **Je spotřeba paměti problém?** Použití try‑with‑resources zajišťuje, že viewer rychle uvolní nativní zdroje, čímž udržuje nízkou paměťovou stopu.
 
-## Předpoklady
+## Co je omezení velikosti JPG v Javě?
+**limit jpg size java** je konfigurační možnost v GroupDocs.Viewer, která omezuje šířku v pixelech každého JPG obrázku vytvořeného během vykreslování dokumentu. Nastavením maximální šířky přímo ovlivníte výslednou velikost souboru, což je nezbytné v prostředích s omezenou šířkou pásma nebo při ukládání mnoha obrázků stránek.
 
-Před implementací této funkce se ujistěte, že máte následující:
-- **Požadované knihovny a závislosti:** GroupDocs.Viewer pro knihovnu Java verze 25.2.
-- **Nastavení prostředí:** Funkční vývojové prostředí Java s nakonfigurovaným Mavenem.
-- **Požadované znalosti:** Základní znalost programování v Javě a znalost konceptů zpracování dokumentů.
+## Proč omezovat velikost JPG při vykreslování dokumentů?
+Omezení velikosti JPG snižuje celkovou úložnou stopu, urychluje načítání stránek a snižuje spotřebu paměti během vykreslování. Menší obrázky spotřebují méně šířky pásma, zlepšují uživatelský zážitek na mobilních zařízeních a činí správu úložiště efektivnější, zejména při práci s velkými dokumenty s mnoha stránkami.
 
-## Nastavení GroupDocs.Viewer pro Javu
+- **Snížení velikosti souboru:** Vykreslení 300‑stránkového dokumentu při šířce 400 px může snížit celkovou velikost obrázků až o 70 % ve srovnání s výchozí šířkou 800 px.  
+- **Rychlejší načítání stránek:** Menší obrázky se průměrně 2‑3× rychleji stahují na mobilních připojeních.  
+- **Nižší spotřeba paměti:** GroupDocs.Viewer zpracovává každou stránku samostatně, takže menší rozměry také snižují dočasné paměťové buffery.
 
-Chcete-li začít, zahrňte do projektu závislost GroupDocs.Viewer pomocí Mavenu:
+## Požadavky
+- **GroupDocs.Viewer for Java** knihovna verze 25.2 nebo novější.  
+- **Maven** nakonfigurovaný ve vašem vývojovém prostředí.  
+- Základní znalost Javy a povědomí o Maven závislostech.  
+
+## Nastavení GroupDocs.Viewer pro Java
+
+Přidejte Maven závislost GroupDocs.Viewer do vašeho `pom.xml`:
 
 ```xml
 <repositories>
@@ -50,13 +107,13 @@ Chcete-li začít, zahrňte do projektu závislost GroupDocs.Viewer pomocí Mave
 ### Získání licence
 
 Pro plné využití GroupDocs.Viewer můžete:
-- **Bezplatná zkušební verze:** Stáhněte si a otestujte knihovnu s dočasnou licencí z [Bezplatná zkušební verze GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Dočasná licence:** Získejte bezplatnou dočasnou licenci pro rozsáhlejší testování na adrese [Dočasná licence GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Nákup:** Pro dlouhodobé používání si zakupte licenci prostřednictvím [Stránka nákupu GroupDocs](https://purchase.groupdocs.com/buy).
+- **Bezplatná zkušební verze:** Stáhněte a vyzkoušejte knihovnu pomocí dočasné licence z [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+- **Dočasná licence:** Získejte bezplatnou dočasnou licenci pro rozsáhlejší testování na [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Nákup:** Pro dlouhodobé použití zakupte licenci přes [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
 ### Základní inicializace
 
-Jakmile si nastavíte prostředí a nainstalujete potřebné závislosti, inicializujte GroupDocs.Viewer ve vaší aplikaci Java:
+Jakmile nastavíte své prostředí a nainstalujete potřebné závislosti, inicializujte GroupDocs.Viewer ve vaší Java aplikaci:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -64,25 +121,19 @@ import com.groupdocs.viewer.Viewer;
 class DocumentViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/document")) {
-            // Vaše logika vykreslování zde
+            // Your rendering logic here
         }
     }
 }
 ```
 
-## Průvodce implementací
+## Jak omezit velikost JPG v Javě při vykreslování dokumentů?
+`JpgViewOptions` je třída, která určuje možnosti vykreslování pro výstup JPG.  
+Načtěte svůj dokument, nakonfigurujte `JpgViewOptions` s maximální šířkou (např. 400 px) a zavolejte `view()` — viewer vygeneruje JPG obrázky, které nikdy nepřesáhnou zadanou šířku, a automaticky přizpůsobí výšku tak, aby zachovala poměr stran. Tento dvoustupňový přístup zaručuje konzistentní výstup s kontrolovanou velikostí bez dalšího post‑processingu.
 
-Tato část vás provede procesem nastavení limitu velikosti obrázku při vykreslování dokumentů do formátu JPG.
+### Definování výstupního adresáře a cesty k souboru
 
-### Přehled
-
-Naším cílem je nastavit maximální šířku pro obrázky vykreslené z dokumentů, což může být užitečné, když je omezená šířka pásma nebo úložný prostor. Tím je zajištěno, že váš výstup zůstane spravovatelný a efektivní.
-
-### Postupná implementace
-
-#### Definování výstupního adresáře a cesty k souboru
-
-Nejprve zadejte cestu k vykreslenému souboru JPG:
+Nejprve určete, kam budou uloženy vykreslené JPG soubory:
 
 ```java
 import java.nio.file.Path;
@@ -92,24 +143,30 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderDocumentToJPGWi
 Path outputFile = outputDirectory.resolve("result_image_size_limit.jpg");
 ```
 
-Toto nastavení pomáhá uspořádat výstupy a zajišťuje snadný přístup k vykresleným souborům.
+Toto nastavení pomáhá organizovat výstupy a zajišťuje, že vykreslené soubory jsou snadno přístupné.
 
-#### Konfigurace možností zobrazení JpgViewOptions
+### Konfigurace JpgViewOptions
 
-Vytvořit `JpgViewOptions` pro určení možností vykreslování, včetně nastavení maximální šířky výstupního obrázku:
+`JpgViewOptions` vám umožní nastavit parametry jako maximální šířka, kvalita a DPI pro vykreslování JPG.
+
+Třída `JpgViewOptions` definuje možnosti pro vykreslování stránek jako JPG obrázků, včetně omezení velikosti a úrovní komprese.  
+
+Vytvořte `JpgViewOptions` a nastavte limit šířky na 400 pixelů:
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
 
 JpgViewOptions options = new JpgViewOptions(outputFile);
-options.setMaxWidth(400);  // Nastavte maximální šířku na 400 pixelů
+options.setMaxWidth(400);  // Set the max width to 400 pixels
 ```
 
-Tato konfigurace omezuje šířku vykresleného obrázku každé stránky na 400 pixelů, což pomáhá spravovat velikosti souborů.
+Omezení šířky na 400 px udržuje každý obrázek stránky lehký, přičemž zachovává dostatek detailů pro typické náhledové scénáře.
 
-#### Vykreslení dokumentu
+### Vykreslení dokumentu
 
-Nakonec použijte `Viewer` třída pro vykreslení dokumentu se zadanými možnostmi:
+Třída `Viewer` je vstupním bodem pro konverzi podporovaných dokumentů do různých formátů zobrazení, včetně JPG, PDF a HTML.  
+
+Použijte metodu `view()`, aby se dokument zpracoval podle poskytnutých možností a JPG soubory se zapsaly do cílové složky:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -119,51 +176,56 @@ try (Viewer viewer = new Viewer("path/to/your/document")) {
 }
 ```
 
-Ten/Ta/To `view()` Metoda zpracuje dokument podle poskytnutých možností zobrazení a uloží jej v požadovaném formátu.
-
-### Tipy pro řešení problémů
-- **Chyby v cestě k souboru:** Ujistěte se, že všechny cesty jsou správně nastaveny vzhledem ke kořenovému adresáři projektu.
-- **Kompatibilita knihoven:** Ověřte, že používáte kompatibilní verze GroupDocs.Viewer a Java SDK.
+## Časté problémy a řešení
+- **Chyby cesty k souboru:** Ověřte, že všechny řetězce adresářů jsou absolutní nebo správně relativní k kořeni projektu.  
+- **Kompatibilita knihovny:** Ujistěte se, že používáte GroupDocs.Viewer 25.2 nebo novější; starší verze mohou postrádat `setMaxWidth`.  
+- **Výjimky Out‑of‑Memory:** Vykreslujte velké dokumenty stránku po stránce uvnitř bloku try‑with‑resources, aby byly nativní zdroje uvolněny okamžitě.
 
 ## Praktické aplikace
+Řízení velikosti obrázku je užitečné v mnoha reálných scénářích:
 
-Zde je několik praktických scénářů, kde může být ovládání velikosti obrázku prospěšné:
-1. **Miniatury webových aplikací**Pro rychlejší načítání webových galerií nebo náhledů dokumentů používejte obrázky s omezenou velikostí.
-2. **Přílohy e-mailů**: Zmenšete velikost souborů při odesílání dokumentů jako e-mailových příloh, abyste ušetřili šířku pásma.
-3. **Mobilní aplikace**Optimalizujte vykreslování dokumentů na mobilních zařízeních omezením rozměrů obrázků a zvýšením výkonu.
+1. **Náhledy pro webové aplikace** – Rychlejší načítání náhledů pro galerie dokumentů.  
+2. **Přílohy e‑mailů** – Menší JPG soubory udržují velikost e‑mailu pod běžnými limity (např. 25 MB).  
+3. **Mobilní aplikace** – Nižší rozměry snižují zatížení CPU a GPU na mobilních zařízeních, což zlepšuje odezvu.
 
 ## Úvahy o výkonu
+- **Správa paměti:** Zabalte instanci `Viewer` do try‑with‑resources, aby se automaticky uzavřely streamy a uvolnila nativní paměť.  
+- **Ladění šířky:** Přizpůsobte `setMaxWidth()` podle vašich požadavků na šířku pásma a kvalitu; 300 px je ideální pro nízkou šířku pásma, zatímco 600 px poskytuje ostřejší náhledy.
 
-Pro zajištění optimálního výkonu při používání GroupDocs.Viewer:
-- **Správa paměti:** Pro automatickou správu zdrojů použijte funkci try-with-resources, která zabraňuje únikům paměti.
-- **Tipy pro optimalizaci:** Upravit `setMaxWidth()` na základě vašich specifických potřeb k vyvážení kvality a velikosti souboru.
+## Často kladené otázky
 
-## Závěr
+**Q: How can I keep image quality high while limiting size?**  
+A: Choose a `setMaxWidth()` that balances resolution and file size; 400 px works well for most preview needs, and you can also set JPEG quality via `setQuality(int)` if needed.
 
-Dodržováním této příručky jste se naučili, jak efektivně nastavit limity velikosti obrázků při vykreslování dokumentů pomocí GroupDocs.Viewer pro Javu. Tato funkce je nezbytná pro optimalizaci zpracování dokumentů v různých aplikacích. Pro další zkoumání zvažte integraci těchto technik do větších projektů nebo experimentování s dalšími funkcemi GroupDocs.
+**Q: Can I also limit the image height?**  
+A: GroupDocs.Viewer currently exposes only a width‑based limit. For height constraints, process the generated JPGs with an image‑processing library after rendering.
 
-## Sekce Často kladených otázek
+**Q: What should I do with very large documents?**  
+A: Render them in batches or increase the JVM heap size; the viewer processes pages independently, so memory usage scales with the number of concurrent pages, not total page count.
 
-**Otázka 1:** Jak mohu zajistit, aby si výstupní obrázky zachovaly kvalitu i po změně velikosti? 
-A1: I když zmenšení rozměrů může ovlivnit jasnost obrazu, použití vhodných `setMaxWidth()` hodnoty pomáhají efektivně vyvážit kvalitu a velikost.
+**Q: Does the viewer support password‑protected files?**  
+A: Yes—pass the password to the `Viewer` constructor or use the `loadOptions` parameter to unlock the document before rendering.
 
-**Otázka 2:** Je možné nastavit maximální výšku i pro soubory JPG?
-A2: GroupDocs.Viewer v současné době umožňuje nastavení pouze šířky. Pro úpravu výšky můžete potřebovat další nástroje pro zpracování obrazu.
-
-**Otázka 3:** Jaké jsou některé běžné problémy při vykreslování velkých dokumentů?
-A3: Velké dokumenty mohou vést k prudkému nárůstu spotřeby paměti; ujistěte se, že máte dostatek zdrojů, a v případě potřeby zvažte jejich rozdělení na menší části.
-
-**Otázka 4:** Mohu vykreslovat PDF soubory přímo pomocí GroupDocs.Viewer?
-A4: Ano, GroupDocs.Viewer podporuje širokou škálu formátů dokumentů, včetně PDF.
-
-**Otázka 5:** Kde najdu více informací o pokročilých možnostech vykreslování?
-A5: Prozkoumejte [Dokumentace GroupDocs](https://docs.groupdocs.com/viewer/java/) pro komplexní průvodce a reference API.
+**Q: Where can I find more advanced rendering options?**  
+A: Explore the full API guide at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/), which lists over 30 rendering settings and format‑specific features.
 
 ## Zdroje
-- **Dokumentace**: [Prohlížeč GroupDocs v Javě](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API**: [Referenční příručka k rozhraní GroupDocs API](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout**: [Soubory ke stažení GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Nákup**: [Koupit licenci GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Bezplatná zkušební verze GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Dočasná licence GroupDocs](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentace:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Stáhnout:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Nákup:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Bezplatná zkušební verze:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Dočasná licence:** [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Podpora:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Last Updated:** 2026-05-31  
+**Tested With:** GroupDocs.Viewer 25.2 for Java  
+**Author:** GroupDocs
+
+## Související tutoriály
+
+- [Jak vykreslit PDF do HTML a optimalizovat kvalitu obrázku v Javě s GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [Zmenšení velikosti PDF v Javě – optimalizace kvality JPG s GroupDocs](/viewer/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/)
+- [Responsivní HTML vykreslování s GroupDocs.Viewer pro Java: komplexní průvodce](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

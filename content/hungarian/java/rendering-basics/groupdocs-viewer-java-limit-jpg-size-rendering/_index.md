@@ -1,34 +1,91 @@
 ---
-"date": "2025-04-24"
-"description": "Ismerje meg, hogyan korlátozhatja a JPG méretét dokumentumrenderelésekor a GroupDocs.Viewer for Java segítségével. Ez az oktatóanyag a konfigurációt, a megvalósítást és a bevált gyakorlatokat ismerteti."
-"title": "JPG méretének korlátozása dokumentumrendereléshez a GroupDocs.Viewer for Java használatával"
-"url": "/hu/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
-"weight": 1
+date: '2026-05-31'
+description: Ismerje meg, hogyan korlátozhatja a JPG méretet Java-ban a dokumentumok
+  megjelenítésekor a GroupDocs.Viewer for Java segítségével. Tartalmaz konfigurációs
+  lépéseket, kódrészleteket és a legjobb gyakorlatokra vonatkozó tippeket.
+keywords:
+- limit jpg size java
+- GroupDocs Viewer Java configuration
+- image size limits GroupDocs Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-31'
+  description: Learn how to limit jpg size java when rendering documents with GroupDocs.Viewer
+    for Java. Includes configuration steps, code snippets, and best‑practice tips.
+  headline: limit jpg size java – Rendering with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to limit jpg size java when rendering documents with GroupDocs.Viewer
+    for Java. Includes configuration steps, code snippets, and best‑practice tips.
+  name: limit jpg size java – Rendering with GroupDocs.Viewer
+  steps:
+  - name: '**Web Application Thumbnails** – Faster loading previews for document galleries.'
+    text: '**Web Application Thumbnails** – Faster loading previews for document galleries.'
+  - name: '**Email Attachments** – Smaller JPGs keep email sizes under common limits
+      (e.g., 25 MB).'
+    text: '**Email Attachments** – Smaller JPGs keep email sizes under common limits
+      (e.g., 25 MB).'
+  - name: '**Mobile Apps** – Reduced dimensions lower CPU and GPU load on handheld
+      devices, improving responsiveness.'
+    text: '**Mobile Apps** – Reduced dimensions lower CPU and GPU load on handheld
+      devices, improving responsiveness.'
+  type: HowTo
+- questions:
+  - answer: Choose a `setMaxWidth()` that balances resolution and file size; 400 px
+      works well for most preview needs, and you can also set JPEG quality via `setQuality(int)`
+      if needed.
+    question: How can I keep image quality high while limiting size?
+  - answer: GroupDocs.Viewer currently exposes only a width‑based limit. For height
+      constraints, process the generated JPGs with an image‑processing library after
+      rendering.
+    question: Can I also limit the image height?
+  - answer: Render them in batches or increase the JVM heap size; the viewer processes
+      pages independently, so memory usage scales with the number of concurrent pages,
+      not total page count.
+    question: What should I do with very large documents?
+  - answer: Yes—pass the password to the `Viewer` constructor or use the `loadOptions`
+      parameter to unlock the document before rendering.
+    question: Does the viewer support password‑protected files?
+  - answer: Explore the full API guide at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/),
+      which lists over 30 rendering settings and format‑specific features.
+    question: Where can I find more advanced rendering options?
+  type: FAQPage
+title: JPG méret korlátozása Java-ban – Megjelenítés a GroupDocs.Viewer-rel
 type: docs
+url: /hu/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/
+weight: 1
 ---
-# JPG méretének korlátozása dokumentumrendereléshez a GroupDocs.Viewer for Java használatával
 
-## Bevezetés
+# JPG méret korlátozása Java-ban a GroupDocs.Viewer for Java segítségével
 
-mai digitális világban a dokumentumok renderelésének hatékony kezelése kulcsfontosságú a működés korszerűsítésére és a felhasználói élmény javítására törekvő vállalkozások számára. A fejlesztők egyik gyakori kihívása a renderelt képek kimeneti méretének szabályozása a dokumentumok JPG formátumba konvertálásakor. Ez az oktatóanyag ezt a problémát kezeli azáltal, hogy bemutatja, hogyan állíthat be képméret-korlátot a GroupDocs.Viewer for Java használatával.
+A modern web- és mobilalkalmazásokban a dokumentumokból generált JPG képek méretének szabályozása drámaian javíthatja a betöltési időket, csökkentheti a sávszélesség költségeit, és kicsinyítheti a tárolási lábnyomot. Ez az útmutató bemutatja, hogyan **korlátozhatja a jpg méretet Java-ban** a renderelés során a GroupDocs.Viewer for Java használatával, végigvezeti a szükséges konfiguráción, és gyakorlati tippeket oszt meg, amelyeket még ma alkalmazhat.
 
-**Amit tanulni fogsz:**
-- A GroupDocs.Viewer konfigurálása Java-hoz
-- Képméret-korlátozások megvalósítása a dokumentum renderelésében
-- A dokumentumkezelő rendszer optimalizálásának legjobb gyakorlatai
+![Limit JPG Size in Document Rendering with GroupDocs.Viewer for Java](/viewer/rendering-basics/limit-jpg-size-in-document-rendering-java.png)
 
-Ezekkel az információkkal a dokumentumrenderelések kimenetét a konkrét követelményekhez igazíthatja. Mielőtt belekezdenénk, nézzük meg az előfeltételeket.
+## Gyors válaszok
+- **Mi a “limit jpg size java” funkció?** A minden egyes renderelt oldal kép szélességét korlátozza, automatikusan csökkentve a fájlméretet, miközben megőrzi az olvashatóságot.  
+- **Melyik osztály szabályozza a méretet?** A `JpgViewOptions.setMaxWidth(int)` lehetővé teszi a maximális pixel szélesség meghatározását.  
+- **Szükségem van licencre?** Érvényes GroupDocs.Viewer licenc szükséges a termeléshez; ingyenes próba vagy ideiglenes licenc elérhető teszteléshez.  
+- **Renderelhetek PDF-eket?** Igen – a GroupDocs.Viewer több mint 70 bemeneti formátumot támogat, beleértve a PDF, DOCX, PPTX és egyebeket.  
+- **Aggódom a memóriahasználat miatt?** A try‑with‑resources használata biztosítja, hogy a viewer gyorsan felszabadítsa a natív erőforrásokat, így alacsony a memória lábnyoma.
+
+## Mi az a limit jpg size java?
+**limit jpg size java** egy konfigurációs beállítás a GroupDocs.Viewer-ben, amely korlátozza a dokumentum renderelése során előállított JPG képek pixel szélességét. Maximális szélesség beállításával közvetlenül befolyásolhatja a végső fájlméretet, ami elengedhetetlen a sávszélesség‑korlátozott környezetekben vagy sok oldal kép tárolásakor.
+
+## Miért korlátozzuk a JPG méretet dokumentumok renderelésekor?
+A JPG méret korlátozása csökkenti a teljes fájl lábnyomát, felgyorsítja az oldalbetöltést, és csökkenti a memóriafogyasztást a renderelés során. A kisebb képek kevesebb sávszélességet igényelnek, javítják a felhasználói élményt mobil eszközökön, és hatékonyabbá teszik a tároláskezelést, különösen nagy, sok oldalas dokumentumok esetén.
+
+- **Fájlméret csökkentés:** Egy 300 oldalas dokumentum 400 px szélességű renderelése akár 70 %-kal is csökkentheti a teljes képméretet az alapértelmezett 800 px szélességhez képest.  
+- **Gyorsabb oldalbetöltés:** A kisebb képek átlagosan 2‑3‑szor gyorsabban töltődnek le mobilkapcsolatokon.  
+- **Alacsonyabb memóriahasználat:** A GroupDocs.Viewer minden oldalt önállóan dolgoz fel, így a kisebb méretek csökkentik az ideiglenes memória puffereket is.
 
 ## Előfeltételek
+- **GroupDocs.Viewer for Java** könyvtár verzió 25.2 vagy újabb.  
+- **Maven** beállítva a fejlesztői környezetben.  
+- Alapvető Java ismeretek és Maven függőségek ismerete.  
 
-A funkció alkalmazása előtt győződjön meg arról, hogy rendelkezik a következőkkel:
-- **Szükséges könyvtárak és függőségek:** GroupDocs.Viewer Java könyvtár 25.2-es verziójához.
-- **Környezet beállítása:** Egy működő Java fejlesztői környezet Maven konfigurálásával.
-- **Tudáskövetelmények:** Alapvető Java programozási ismeretek és a dokumentumfeldolgozási koncepciók ismerete.
+## A GroupDocs.Viewer for Java beállítása
 
-## GroupDocs.Viewer beállítása Java-hoz
-
-Első lépésként add hozzá a GroupDocs.Viewer függőséget a projektedhez Maven használatával:
+Add the GroupDocs.Viewer Maven dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -47,16 +104,15 @@ Első lépésként add hozzá a GroupDocs.Viewer függőséget a projektedhez Ma
 </dependencies>
 ```
 
-### Licencbeszerzés
+### Licenc beszerzése
 
-A GroupDocs.Viewer teljes kihasználásához a következőket teheti:
-- **Ingyenes próbaverzió:** Töltse le és tesztelje a könyvtárat egy ideiglenes licenccel a következő címről: [GroupDocs ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/).
-- **Ideiglenes engedély:** Szerezzen be egy ingyenes ideiglenes engedélyt a szélesebb körű teszteléshez a következő címen: [GroupDocs ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/).
-- **Vásárlás:** Hosszú távú használathoz vásároljon licencet a [GroupDocs vásárlási oldal](https://purchase.groupdocs.com/buy).
+- **Ingyenes próba:** Töltse le és tesztelje a könyvtárat ideiglenes licenccel a [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/) oldalról.  
+- **Ideiglenes licenc:** Szerezzen ingyenes ideiglenes licencet a részletesebb teszteléshez a [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/) oldalon.  
+- **Vásárlás:** Hosszú távú használathoz vásároljon licencet a [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) oldalon.
 
-### Alapvető inicializálás
+### Alap inicializálás
 
-Miután beállította a környezetét és telepítette a szükséges függőségeket, inicializálja a GroupDocs.Viewer fájlt a Java alkalmazásában:
+Once you've set up your environment and installed the necessary dependencies, initialize GroupDocs.Viewer in your Java application:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -64,25 +120,19 @@ import com.groupdocs.viewer.Viewer;
 class DocumentViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/document")) {
-            // A renderelési logikád itt van
+            // Your rendering logic here
         }
     }
 }
 ```
 
-## Megvalósítási útmutató
+## Hogyan korlátozzuk a jpg méretet Java-ban dokumentumok renderelésekor?
+`JpgViewOptions` is a class that specifies rendering options for JPG output.  
+Load your document, configure `JpgViewOptions` with a maximum width (e.g., 400 px), and call `view()`—the viewer will generate JPG images that never exceed the specified width, automatically scaling height to maintain aspect ratio. This two‑step approach guarantees consistent, size‑controlled output without extra post‑processing.
 
-Ez a szakasz végigvezeti a képméret-korlát beállításának folyamatán, amikor dokumentumokat JPG formátumba renderel.
+### Kimeneti könyvtár és fájlútvonal meghatározása
 
-### Áttekintés
-
-Célunk, hogy maximális szélességet állítsunk be a dokumentumokból renderelt képekhez, ami akkor lehet hasznos, ha korlátozott a sávszélesség vagy a tárhely. Ez biztosítja, hogy a kimenet kezelhető és hatékony maradjon.
-
-### Lépésről lépésre történő megvalósítás
-
-#### Kimeneti könyvtár és fájlútvonal meghatározása
-
-Először is, add meg a renderelt JPG fájl elérési útját:
+First, specify where the rendered JPG files will be saved:
 
 ```java
 import java.nio.file.Path;
@@ -92,24 +142,30 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderDocumentToJPGWi
 Path outputFile = outputDirectory.resolve("result_image_size_limit.jpg");
 ```
 
-Ez a beállítás segít a kimenetek rendszerezésében, és biztosítja, hogy a renderelt fájlok könnyen hozzáférhetők legyenek.
+This setup helps organize your outputs and ensures that the rendered files are easily accessible.
 
-#### JpgViewOptions konfigurálása
+### JpgViewOptions konfigurálása
 
-Teremt `JpgViewOptions` a renderelési beállítások megadásához, beleértve a kimeneti kép maximális szélességének beállítását is:
+`JpgViewOptions` allows you to set parameters such as maximum width, quality, and DPI for JPG rendering.
+
+The `JpgViewOptions` class defines options for rendering pages as JPG images, including size constraints and compression levels.  
+
+Create `JpgViewOptions` and set a width limit of 400 pixels:
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
 
 JpgViewOptions options = new JpgViewOptions(outputFile);
-options.setMaxWidth(400);  // Állítsd be a maximális szélességet 400 pixelre
+options.setMaxWidth(400);  // Set the max width to 400 pixels
 ```
 
-Ez a konfiguráció az egyes oldalak renderelt képének szélességét 400 képpontra korlátozza, ami segít a fájlméretek kezelésében.
+Limiting the width to 400 px keeps each page image lightweight while preserving enough detail for typical preview scenarios.
 
-#### A dokumentum renderelése
+### Dokumentum renderelése
 
-Végül használd a `Viewer` osztály a dokumentum megjelenítéséhez a megadott opciókkal:
+The `Viewer` class is the entry point for converting supported documents into various view formats, including JPG, PDF, and HTML.  
+
+Use the `view()` method to process the document according to the provided options and write the JPG files to the target folder:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -119,51 +175,56 @@ try (Viewer viewer = new Viewer("path/to/your/document")) {
 }
 ```
 
-A `view()` metódus a megadott nézetbeállításoknak megfelelően feldolgozza a dokumentumot, és a kívánt formátumban menti el.
-
-### Hibaelhárítási tippek
-- **Fájlútvonal-hibák:** Győződjön meg arról, hogy az összes elérési út helyesen van beállítva a projekt gyökeréhez képest.
-- **Könyvtár kompatibilitás:** Ellenőrizze, hogy a GroupDocs.Viewer és a Java SDK kompatibilis verzióit használja-e.
+## Gyakori problémák és megoldások
+- **Fájlútvonal hibák:** Ellenőrizze, hogy minden könyvtár karakterlánc abszolút vagy helyesen relatív a projekt gyökérkönyvtárához.  
+- **Könyvtár kompatibilitás:** Győződjön meg róla, hogy a GroupDocs.Viewer 25.2 vagy újabb verziót használja; a régebbi verziók esetleg nem tartalmazzák a `setMaxWidth` metódust.  
+- **Out‑of‑Memory kivételek:** Rendereljen nagy dokumentumokat oldalanként egy try‑with‑resources blokkban, hogy a natív erőforrások gyorsan felszabaduljanak.
 
 ## Gyakorlati alkalmazások
+Controlling image size is useful in many real‑world scenarios:
 
-Íme néhány gyakorlati eset, amikor a képméret szabályozása előnyös lehet:
-1. **Webalkalmazás-bélyegképek**: Használjon méretkorlátozott képeket a webes galériákban vagy a dokumentumok előnézeteiben a gyorsabb betöltési idő érdekében.
-2. **E-mail mellékletek**: Csökkentse a fájlméretet dokumentumok e-mail mellékletként történő küldésekor a sávszélesség megtakarítása érdekében.
-3. **Mobilalkalmazások**Optimalizálja a dokumentumok megjelenítését mobileszközökön a képméretek korlátozásával, ezáltal javítva a teljesítményt.
+1. **Webalkalmazás bélyegképek** – Gyorsabb betöltésű előnézetek a dokumentumgalériákhoz.  
+2. **E‑mail mellékletek** – Kisebb JPG-k segítenek az e‑mail méretét a szokásos korlátok (pl. 25 MB) alatt tartani.  
+3. **Mobilalkalmazások** – A csökkent méretek alacsonyabb CPU és GPU terhelést eredményeznek a kézi eszközökön, javítva a válaszkészséget.
 
-## Teljesítménybeli szempontok
+## Teljesítmény szempontok
+- **Memória kezelés:** A `Viewer` példányt egy try‑with‑resources utasításba ágyazza, hogy automatikusan bezárja a stream-eket és felszabadítsa a natív memóriát.  
+- **Szélesség beállítása:** Állítsa be a `setMaxWidth()` értékét a sávszélesség és minőségi igények alapján; 300 px ideális alacsony sávszélességhez, míg 600 px élesebb előnézetet biztosít.
 
-A GroupDocs.Viewer használata közben az optimális teljesítmény biztosítása érdekében:
-- **Memóriakezelés:** Használd a try-with-resources függvényt az automatikus erőforrás-kezeléshez, megakadályozva a memóriaszivárgásokat.
-- **Optimalizálási tippek:** Beállítás `setMaxWidth()` az Ön egyedi igényei alapján, hogy egyensúlyt teremtsen a minőség és a fájlméret között.
+## Gyakran feltett kérdések
 
-## Következtetés
+**Q: How can I keep image quality high while limiting size?**  
+A: Choose a `setMaxWidth()` that balances resolution and file size; 400 px works well for most preview needs, and you can also set JPEG quality via `setQuality(int)` if needed.
 
-Az útmutató követésével megtanulta, hogyan állíthat be hatékonyan képméret-korlátokat dokumentumok renderelésekor a GroupDocs.Viewer for Java segítségével. Ez a képesség elengedhetetlen a dokumentumkezelés optimalizálásához különböző alkalmazásokban. További kutatás céljából érdemes lehet ezeket a technikákat nagyobb projektekbe integrálni, vagy más GroupDocs-funkciókkal kísérletezni.
+**Q: Can I also limit the image height?**  
+A: GroupDocs.Viewer currently exposes only a width‑based limit. For height constraints, process the generated JPGs with an image‑processing library after rendering.
 
-## GYIK szekció
+**Q: What should I do with very large documents?**  
+A: Render them in batches or increase the JVM heap size; the viewer processes pages independently, so memory usage scales with the number of concurrent pages, not total page count.
 
-**1. kérdés:** Hogyan biztosíthatom, hogy a kimeneti képek minősége átméretezés után is megmaradjon? 
-V1: Bár a méretek csökkentése befolyásolhatja a kép tisztaságát, a megfelelő `setMaxWidth()` Az értékek hatékonyan egyensúlyozzák a minőséget és a méretet.
+**Q: Does the viewer support password‑protected files?**  
+A: Yes—pass the password to the `Viewer` constructor or use the `loadOptions` parameter to unlock the document before rendering.
 
-**2. kérdés:** JPG fájloknál is be lehet állítani a maximális magasságot?
-2. válasz: Jelenleg a GroupDocs.Viewer csak a szélességkorlát beállítását teszi lehetővé. A magasság beállításához további képfeldolgozó eszközökre lehet szükség.
+**Q: Where can I find more advanced rendering options?**  
+A: Explore the full API guide at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/), which lists over 30 rendering settings and format‑specific features.
 
-**3. kérdés:** Milyen gyakori problémák merülhetnek fel nagyméretű dokumentumok renderelésekor?
-A3: A nagyméretű dokumentumok memória-fogyasztási csúcsokat okozhatnak; győződjön meg arról, hogy elegendő erőforrással rendelkezik, és szükség esetén fontolja meg a dokumentumok kisebb részekre bontását.
+## Erőforrások
+- **Dokumentáció:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **API referencia:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Letöltés:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Vásárlás:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Ingyenes próba:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Ideiglenes licenc:** [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Támogatás:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
-**4. negyedév:** Renderelhetek PDF fájlokat közvetlenül a GroupDocs.Viewer segítségével?
-V4: Igen, a GroupDocs.Viewer számos dokumentumformátumot támogat, beleértve a PDF fájlokat is.
+---
 
-**5. kérdés:** Hol találok további információt a speciális renderelési beállításokról?
-A5: Fedezd fel a [GroupDocs dokumentáció](https://docs.groupdocs.com/viewer/java/) átfogó útmutatókért és API-referenciákért.
+**Utolsó frissítés:** 2026-05-31  
+**Tesztelve ezzel:** GroupDocs.Viewer 25.2 for Java  
+**Szerző:** GroupDocs
 
-## Erőforrás
-- **Dokumentáció**: [GroupDocs Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API-referencia**: [GroupDocs API-referencia](https://reference.groupdocs.com/viewer/java/)
-- **Letöltés**: [GroupDocs letöltések](https://releases.groupdocs.com/viewer/java/)
-- **Vásárlás**: [GroupDocs licenc vásárlása](https://purchase.groupdocs.com/buy)
-- **Ingyenes próbaverzió**: [GroupDocs ingyenes próbaverzió](https://releases.groupdocs.com/viewer/java/)
-- **Ideiglenes engedély**: [GroupDocs ideiglenes licenc](https://purchase.groupdocs.com/temporary-license/)
-- **Támogatás**: [GroupDocs Fórum](https://forum.groupdocs.com/c/viewer/9)
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan rendereljünk PDF-et HTML-re és optimalizáljuk a képminőséget Java-ban a GroupDocs.Viewer segítségével](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [PDF méret csökkentése Java – JPG minőség optimalizálása a GroupDocs segítségével](/viewer/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/)
+- [Reszponzív HTML renderelés a GroupDocs.Viewer for Java használatával: Átfogó útmutató](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)

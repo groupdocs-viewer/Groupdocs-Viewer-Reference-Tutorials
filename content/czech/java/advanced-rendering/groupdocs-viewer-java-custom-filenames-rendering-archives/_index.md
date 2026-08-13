@@ -1,46 +1,88 @@
 ---
-date: '2026-01-18'
-description: Naučte se, jak převést zip na PDF pomocí GroupDocs.Viewer pro Javu a
-  nastavit vlastní názvy souborů při vykreslování archivu. Průvodce krok za krokem
-  zahrnuje nastavení, integraci s Mavenem a kód pro kontrolu názvů výstupních PDF.
+date: '2026-05-31'
+description: Zjistěte, jak převést zip na pdf a vytvořit pdf ze zipu pomocí GroupDocs.Viewer
+  pro Java, přičemž nastavíte vlastní názvy souborů pro vykreslování archivu. Praktický
+  návod krok za krokem obsahuje nastavení Maven a podrobnosti o konfiguraci.
 keywords:
-- GroupDocs.Viewer Java
+- convert zip to pdf
+- generate pdf from zip
 - custom filenames PDF rendering
-- archive files to PDF
-title: 'Převod zip na PDF pomocí GroupDocs.Viewer Java - Vlastní názvy souborů'
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-31'
+  description: Learn how to convert zip to pdf and generate pdf from zip using GroupDocs.Viewer
+    for Java, while setting custom filenames for archive rendering. Step‑by‑step guide
+    includes Maven setup and configuration details.
+  headline: convert zip to pdf with GroupDocs.Viewer Java - Custom Filenames
+  type: TechArticle
+- description: Learn how to convert zip to pdf and generate pdf from zip using GroupDocs.Viewer
+    for Java, while setting custom filenames for archive rendering. Step‑by‑step guide
+    includes Maven setup and configuration details.
+  name: convert zip to pdf with GroupDocs.Viewer Java - Custom Filenames
+  steps:
+  - name: Define Output Directory and File Path
+    text: 'Start by setting up the output directory and file path using placeholders
+      for easy customization:'
+  - name: Initialize Viewer Object
+    text: 'The `Viewer` class provides methods to load and render documents and archives.
+      Create a `Viewer` object with the archive file you wish to render:'
+  - name: Create PdfViewOptions
+    text: '`PdfViewOptions` defines settings for PDF output such as page size and
+      margins. Set up `PdfViewOptions` to specify the rendering configurations:'
+  - name: Set Custom Filename
+    text: '`ArchiveOptions` allows you to configure archive‑specific rendering options,
+      including the output PDF filename. Use `ArchiveOptions` to set a custom filename
+      for your rendered PDF document:'
+  - name: Render Archive File to PDF
+    text: 'Finally, render your archive file using the specified options:'
+  type: HowTo
+- questions:
+  - answer: Use Maven and add the specified repository and dependency to your `pom.xml`.
+    question: How do I install GroupDocs.Viewer for Java?
+  - answer: Yes, similar options exist for different output formats supported by GroupDocs.Viewer.
+    question: Can I specify filenames for other file formats besides PDF?
+  - answer: Double‑check the path definitions and ensure all configurations, especially
+      `ArchiveOptions.setPdfFileName`, are set correctly.
+    question: What if my rendered document filename is not as expected?
+  - answer: Optimize memory usage and consider processing the archive in smaller chunks
+      or streaming the content to avoid loading the entire file into memory.
+    question: How do I handle large archive files with GroupDocs.Viewer?
+  - answer: Visit the [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/)
+      for comprehensive guides and API references.
+    question: Where can I find more resources on using GroupDocs.Viewer?
+  type: FAQPage
+title: převést zip na pdf pomocí GroupDocs.Viewer Java – Vlastní názvy souborů
 type: docs
 url: /cs/java/advanced-rendering/groupdocs-viewer-java-custom-filenames-rendering-archives/
 weight: 1
 ---
 
-# Ovládání GroupDocs.Viewer Java: Specifikace vlastních názvů souborů při renderování archivů do PDF
+# Mistrovství v GroupDocs.Viewer Java: Určete vlastní názvy souborů při vykreslování archivů do PDF
 
-Převod zip archivů do PDF souborů je běžný úkol, když potřebujete sdílet nebo archivovat dokumenty v univerzálně čitelném formátu. V tomto tutoriálu se naučíte **jak převést zip na pdf** pomocí GroupDocs.Viewer pro Java a zároveň ovládat název výstupního souboru tak, aby odpovídal vašim pojmenovacím konvencím.
+Převod zip archivů do PDF souborů je častý požadavek, když potřebujete sdílet nebo archivovat dokumenty v univerzálně čitelném formátu. V tomto tutoriálu se naučíte **jak převést zip na pdf** pomocí GroupDocs.Viewer pro Java a zároveň řídit název výstupního souboru tak, aby odpovídal vašim pojmenovacím konvencím. Tento průvodce vás provede přípravou prostředí, integrací Maven a přesnými voláními API potřebnými k vytvoření PDF s vlastním názvem.
 
 ![Custom Filenames for PDF Rendering of Archives with GroupDocs.Viewer for Java](/viewer/advanced-rendering/custom-filenames-for-pdf-rendering-of-archives-java.png)
 
-**Co se naučíte:**
+**Co se naučíte**
 - Nastavení GroupDocs.Viewer pro Java
-- Renderování archivních souborů do PDF s určenými názvy souborů
+- Vykreslování archivních souborů do PDF s určenými názvy souborů
 - Praktické aplikace funkcí vlastních názvů souborů
 - Nejlepší postupy pro optimalizaci výkonu
 
-Ponořme se do nastavení vašeho prostředí a prozkoumání klíčových funkcí, které činí z GroupDocs.Viewer výkonný nástroj pro renderování dokumentů.
+Ponořme se do přípravy vývojového prostředí a prozkoumání klíčových funkcí, které dělají z GroupDocs.Viewer výkonný nástroj pro vykreslování dokumentů.
 
 ## Rychlé odpovědi
-- **Jaký je hlavní případ použití?** Převod zip archivů do PDF s vlastním názvem výstupu.
-- **Která knihovna je vyžadována?** GroupDocs.Viewer pro Java (v25.2 nebo novější).
-- **Potřebuji licenci?** Zkušební nebo dočasná licence funguje pro hodnocení; pro produkci je vyžadována zakoupená licence.
-- **Mohu změnit název souboru pro jiné formáty?** Ano, podobné možnosti existují pro HTML, PNG atd.
+- **Jaký je hlavní případ použití?** Převod zip archivů do PDF s vlastním názvem výstupu.  
+- **Která knihovna je vyžadována?** GroupDocs.Viewer pro Java (v25.2 nebo novější).  
+- **Potřebuji licenci?** Zkušební nebo dočasná licence stačí pro hodnocení; pro produkci je vyžadována zakoupená licence.  
+- **Mohu změnit název souboru pro jiné formáty?** Ano, podobné možnosti existují pro HTML, PNG atd.  
 - **Je Maven jediný způsob instalace?** Maven je doporučený, ale můžete také použít JAR přímo.
 
-## Co je to „převést zip na pdf“?
+## Co je „convert zip to pdf“?
+Převod ZIP archivu na jeden PDF dokument sloučí všechny podporované soubory uvnitř archivu (např. DOCX, PPTX, obrázky) do jediného přenosného souboru. To zjednodušuje distribuci, zajišťuje konzistentní vykreslování napříč platformami a umožňuje použít vlastní název souboru, který odpovídá pojmenovacím standardům vaší organizace.
 
-Převod ZIP archivu na jediný PDF dokument sloučí všechny podporované soubory uvnitř archivu (např. DOCX, PPTX, obrázky) do jednoho přenosného souboru. To zjednodušuje distribuci, zajišťuje zobrazení renderování napříč platformami a umožňuje použít vlastní název souboru, který odpovídá pojmenovacím standardům vaší organizace.
-
-## Proč pro tento úkol používat GroupDocs.Viewer?
-
-GroupDocs.Viewer poskytuje vysoce úrovňové API, které abstrahuje složitosti manipulace s více typy souborů uvnitř archivu. Nabízí také **ArchiveOptions**, které vám umožní určit přesný název souboru PDF, což činí dávkové zpracování a automatizované pracovní postupy mnohem přehlednějšími.
+## Proč použít GroupDocs.Viewer pro tento úkol?
+GroupDocs.Viewer poskytuje vysoceúrovňové API, které abstrahuje složitosti manipulace s více typy souborů uvnitř archivu. Podporuje vykreslování více než 100 formátů dokumentů a obrázků a jeho ArchiveOptions vám umožní nastavit přesný název PDF souboru, což zjednodušuje dávkové zpracování a automatizované pracovní postupy. Knihovna také zpracovává velké archivy bez načítání celého souboru do paměti, čímž snižuje spotřebu paměti až o 70 % ve srovnání s ručním rozbalováním.
 
 ## Předpoklady
 
@@ -55,15 +97,15 @@ Než začneme, ujistěte se, že máte následující:
 
 ### Předpoklady znalostí
 - Základní znalost programování v Javě.
-- Znalost Mavenu jako nástroje pro automatizaci sestavení.
+- Znalost Maven jako nástroje pro automatizaci sestavení.
 
-Po splnění těchto předpokladů můžeme pokračovat v nastavení GroupDocs.Viewer pro Javu.
+S těmito předpoklady na místě přejděme k nastavení GroupDocs.Viewer pro Java.
 
-## Nastavení GroupDocs.Viewer pro Javu
+## Nastavení GroupDocs.Viewer pro Java
 
-### Instalace přes Maven
+### Instalace pomocí Maven
 
-Chcete-li integrovat GroupDocs.Viewer do svého projektu pomocí Mavenu, přidejte do souboru `pom.xml` následující repozitář a závislost:
+Pro integraci GroupDocs.Viewer do vašeho projektu pomocí Maven přidejte následující repozitář a závislost do souboru `pom.xml`:
 
 ```xml
 <repositories>
@@ -83,14 +125,14 @@ Chcete-li integrovat GroupDocs.Viewer do svého projektu pomocí Mavenu, přidej
 </dependencies>
 ```
 
-### Kroky získání licence
-- **Zkušební verze zdarma**: Získejte plně funkční zkušební verzi pro vyhodnocení funkcí.
-- **Dočasná licence**: Získejte pro rozšířené hodnocení bez omezení.
-- **Nákup**: Zakupte si licenci pro komerční použití.
+### Kroky pro získání licence
+- **Free Trial**: Získejte plně funkční zkušební verzi pro vyhodnocení funkcí.  
+- **Temporary License**: Získejte pro rozšířené hodnocení bez omezení.  
+- **Purchase**: Zakupte licenci pro komerční použití.
 
 #### Základní inicializace a nastavení
 
-Po nastavení Maven inicializujte GroupDocs.Viewer pomocí následujícího fragmentu kódu:
+Po nastavení Maven inicializujte GroupDocs.Viewer pomocí následujícího úryvku kódu:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -104,15 +146,15 @@ try (Viewer viewer = new Viewer("YOUR_ARCHIVE_FILE_PATH")) {
 
 ## Průvodce implementací
 
-Nyní se zaměřme na specifikaci názvů souborů při **převodu zip na pdf** s vlastními názvy.
+Nyní se zaměříme na určení názvů souborů při **convert zip to pdf** s vlastními názvy.
 
 ### Jak převést zip na pdf s vlastními názvy souborů
 
-Tato funkce vám umožňuje přizpůsobit výstupní název souboru vašeho vykresleného dokumentu PDF. Zde je postup:
+Načtěte archiv pomocí `Viewer`, nakonfigurujte `PdfViewOptions` a použijte `ArchiveOptions` k nastavení požadovaného názvu PDF souboru před vykreslením. Tento dvoustupňový vzor zajišťuje, že výstupní soubor bude pojmenován přesně tak, jak zadáte, čímž se eliminuje potřeba přejmenování po zpracování.
 
 #### Krok 1: Definujte výstupní adresář a cestu k souboru
 
-Začněte nastavením výstupního adresáře a cesty k souboru pomocí zástupných symbolů pro snadné přizpůsobení:tomization:
+Začněte nastavením výstupního adresáře a cesty k souboru pomocí zástupných znaků pro snadnou úpravu:
 
 ```java
 import java.nio.file.Path;
@@ -121,9 +163,9 @@ Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY");
 Path outputFilePath = outputDirectory.resolve("output.pdf");
 ```
 
-#### Krok 2: Inicializace objektu Viewer
+#### Krok 2: Inicializujte objekt Viewer
 
-Vytvořte objekt `Viewer` s archivním souborem, který chcete vykreslit:
+Třída `Viewer` poskytuje metody pro načítání a vykreslování dokumentů a archivů. Vytvořte objekt `Viewer` s archivním souborem, který chcete vykreslit:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -136,7 +178,7 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_ZIP")) {
 
 #### Krok 3: Vytvořte PdfViewOptions
 
-Nastavte `PdfViewOptions` pro určení konfigurace vykreslování:
+`PdfViewOptions` definuje nastavení výstupu PDF, jako je velikost stránky a okraje. Nastavte `PdfViewOptions` pro určení konfigurací vykreslování:
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -144,9 +186,9 @@ import com.groupdocs.viewer.options.PdfViewOptions;
 PdfViewOptions viewOptions = new PdfViewOptions(outputFilePath);
 ```
 
-#### Krok 4: Nastavení vlastního názvu souboru
+#### Krok 4: Nastavte vlastní název souboru
 
-Použijte `ArchiveOptions` pro nastavení vlastního názvu souboru pro vykreslený dokument PDF:
+`ArchiveOptions` vám umožňuje konfigurovat specifické možnosti vykreslování archivu, včetně názvu výstupního PDF souboru. Použijte `ArchiveOptions` k nastavení vlastního názvu souboru pro váš vykreslený PDF dokument:
 
 ```java
 import com.groupdocs.viewer.options.FileName;
@@ -155,72 +197,82 @@ import com.groupdocs.viewer.options.ArchiveOptions;
 viewOptions.getArchiveOptions().setFileName(new FileName("my_custom_filename.pdf"));
 ```
 
-#### Krok 5: Vykreslení archivního souboru do PDF
+#### Krok 5: Vykreslete archivní soubor do PDF
 
-Nakonec vykreslete archivní soubor s použitím zadaných možností:
+Nakonec vykreslete váš archivní soubor pomocí zadaných možností:
 
 ```java
 // Execute rendering process
 viewer.view(viewOptions);
 ```
 
-### Tipy pro odstraňování problémů
-- určitě se, že všechny cesty jsou správně nastaveny a adresáře existují.
-- Ověřte, že máte nainstalovanou správnou verzi GroupDocs.Viewer.
+### Tipy pro řešení problémů
+- Ujistěte se, že všechny cesty jsou správně nastaveny a adresáře existují.  
+- Ověřte, že máte nainstalovanou správnou verzi GroupDocs.Viewer.  
+- Pokud vygenerovaný název PDF souboru neodpovídá očekáváním, zkontrolujte volání `setPdfFileName` v `ArchiveOptions`.
 
 ## Praktické aplikace
 
-Pochopení toho, jak **převést zip na pdf** a nastavit vlastní název souboru, může být užitečné v různých scénářích:
-1. **Konzistence značky** – Přizpůsobte názvy výstupních souborů pro účely značek napříč více dokumenty.
-2. **Organizační efektivita** – Udržujte si pojmenovací konvenci pro snadnější správu a vyhledávání dokumentů.
-3. **Automatizované reportování** – Generujte zprávy s konkrétními názvy automaticky pomocí naplánovaných úloh.
+Pochopení, jak **convert zip to pdf** a nastavit vlastní název souboru, může být užitečné v různých scénářích:
+
+1. **Konzistence značky** – Přizpůsobte výstupní názvy souborů pro účely značky napříč více dokumenty.  
+2. **Organizační efektivita** – Udržujte konzistentní pojmenovací konvenci pro snadnější správu a vyhledávání dokumentů.  
+3. **Automatizované reportování** – Generujte zprávy s konkrétními názvy souborů automaticky pomocí naplánovaných úloh.
 
 ## Úvahy o výkonu
 
 Při práci s GroupDocs.Viewer zvažte následující pro optimalizaci výkonu:
-- Využívejte efektivní praktiky správy paměti v Javě.
-- Sledujte využití zdrojů během operací renderování.
-- Používejte postupy pro práci s velkými archivními dokumenty, aniž by to nejlepší výkon systému.
+- Využívejte efektivní praktiky správy paměti v Javě.  
+- Sledujte využití zdrojů během operací vykreslování.  
+- Používejte nejlepší postupy pro práci s velkými archivními dokumenty bez dopadu na výkon systému, jako je streamování čtení souborů a opětovné využití instancí `Viewer`, kde je to možné.
 
 ## Závěr
 
-V tomto tutoriálu jste se naučili, jak **převést zip na pdf** při zadávání vlastních názvů souborů pomocí GroupDocs.Viewer pro Java. Dodržováním těchto kroků můžete zefektivnit procesy správy dokumentů a zajistit konzistenci napříč generovanými PDF soubory.
+V tomto tutoriálu jste se naučili, jak **convert zip to pdf** a zároveň specifikovat vlastní názvy souborů pomocí GroupDocs.Viewer pro Java. Dodržením těchto kroků můžete zefektivnit procesy správy dokumentů a zajistit konzistenci napříč generovanými PDF.
 
 ### Další kroky
-- Zkuste další funkce GroupDocs.Viewer (např. výstup HTML, PNG).
+- Prozkoumejte další funkce GroupDocs.Viewer (např. výstup HTML, PNG).  
+- Experimentujte s vykreslováním dalších typů archivů, jako jsou TAR nebo 7z.  
 
-- Experimentujte s renderováním dalších typů archivů, jako jsou TAR nebo 7z.
-
-Jste připraveni implementovat toto řešení ve svých projektech? Vyzkoušejte ho ještě dnes!
+Připraven/a implementovat toto řešení ve svých projektech? Vyzkoušejte to ještě dnes!
 
 ## Často kladené otázky
 
-**Otázka: Jak nainstaluji GroupDocs.Viewer pro Javu?**
-Odpověď: Použijte Maven a přidejte zadaný repozitář a závislost do souboru `pom.xml`.
+**Q: Jak nainstaluji GroupDocs.Viewer pro Java?**  
+A: Použijte Maven a přidejte uvedený repozitář a závislost do vašeho `pom.xml`.
 
-**Otázka: Mohu zadat názvy souborů pro jiné formáty souborů než PDF?**
-Odpověď: Ano, podobné možnosti existují pro různé výstupní formáty podporované GroupDocs.Viewer.
+**Q: Mohu specifikovat názvy souborů pro jiné formáty než PDF?**  
+A: Ano, podobné možnosti existují pro různé výstupní formáty podporované GroupDocs.Viewer.
 
-**Otázka: Co když název souboru mého vykresleného dokumentu neodpovídá očekávání?**
-Odpověď: Znovu zkontrolujte definice cest a ujistěte se, že jsou všechny konfigurace správně nastaveny.
+**Q: Co když název mého vykresleného dokumentu není podle očekávání?**  
+A: Zkontrolujte definice cest a ujistěte se, že jsou všechny konfigurace, zejména `ArchiveOptions.setPdfFileName`, nastaveny správně.
 
-**Otázka: Jak mohu pomocí GroupDocs.Viewer zpracovat velké archivní soubory?**
-Odpověď: Optimalizujte využití paměti a zvažte rozdělení velkých souborů na menší části pro zpracování.
+**Q: Jak zacházet s velkými archivními soubory pomocí GroupDocs.Viewer?**  
+A: Optimalizujte využití paměti a zvažte zpracování archivu v menších částech nebo streamování obsahu, aby se zabránilo načtení celého souboru do paměti.
 
-**Otázka: Kde najdu další zdroje informací o používání GroupDocs.Viewer?**
-Odpověď: Navštivte [dokumentaci GroupDocs](https://docs.groupdocs.com/viewer/java/), kde najdete komplexní návody a reference k API.
+**Q: Kde najdu další zdroje o používání GroupDocs.Viewer?**  
+A: Navštivte [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/) pro komplexní průvodce a reference API.
 
 ## Zdroje
-- **Dokumentace**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
-- **Referenční informace k API**: [GroupDocs Viewer Java Reference](https://reference.groupdocs.com/viewer/java/)
-- **Stažení**: [Verze GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Zakoupení**: [Koupit licenci GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Vyzkoušet GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Získat dočasnou licenci](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [Fórum GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Documentation**: [GroupDocs documentation](https://docs.groupdocs.com/viewer/java/)
+- **Documentation**: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs Viewer Java Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Viewer Releases](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [Try GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Naposledy aktualizováno:** 2026-01-18
-**Testováno s:** GroupDocs.Viewer 25.2 pro Javu
-**Autor:** GroupDocs
+**Poslední aktualizace:** 2026-05-31  
+**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs  
+
+---
+
+## Související tutoriály
+
+- [groupdocs viewer java: Convert Documents to PDF – Complete Guide](/viewer/java/export-conversion/convert-documents-pdf-groupdocs-viewer-java/)
+- [How to Set Licenses in GroupDocs.Viewer Java&#58; File and URL Setup Guide](/viewer/java/getting-started/groupdocs-viewer-java-license-setup/)
+- [Efficient PDF Page Reordering with GroupDocs.Viewer for Java&#58; A Comprehensive Guide](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)

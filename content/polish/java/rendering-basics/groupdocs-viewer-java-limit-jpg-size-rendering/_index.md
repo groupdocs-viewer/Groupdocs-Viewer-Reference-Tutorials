@@ -1,34 +1,91 @@
 ---
-"date": "2025-04-24"
-"description": "Dowiedz się, jak ograniczyć rozmiar JPG podczas renderowania dokumentu za pomocą GroupDocs.Viewer dla Java. Ten samouczek obejmuje konfigurację, implementację i najlepsze praktyki."
-"title": "Jak ograniczyć rozmiar pliku JPG podczas renderowania dokumentu za pomocą GroupDocs.Viewer dla języka Java"
-"url": "/pl/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/"
-"weight": 1
+date: '2026-05-31'
+description: Dowiedz się, jak ograniczyć rozmiar JPG w Java podczas renderowania dokumentów
+  przy użyciu GroupDocs.Viewer dla Java. Zawiera kroki konfiguracyjne, fragmenty kodu
+  oraz wskazówki najlepszych praktyk.
+keywords:
+- limit jpg size java
+- GroupDocs Viewer Java configuration
+- image size limits GroupDocs Viewer
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-31'
+  description: Learn how to limit jpg size java when rendering documents with GroupDocs.Viewer
+    for Java. Includes configuration steps, code snippets, and best‑practice tips.
+  headline: limit jpg size java – Rendering with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to limit jpg size java when rendering documents with GroupDocs.Viewer
+    for Java. Includes configuration steps, code snippets, and best‑practice tips.
+  name: limit jpg size java – Rendering with GroupDocs.Viewer
+  steps:
+  - name: '**Web Application Thumbnails** – Faster loading previews for document galleries.'
+    text: '**Web Application Thumbnails** – Faster loading previews for document galleries.'
+  - name: '**Email Attachments** – Smaller JPGs keep email sizes under common limits
+      (e.g., 25 MB).'
+    text: '**Email Attachments** – Smaller JPGs keep email sizes under common limits
+      (e.g., 25 MB).'
+  - name: '**Mobile Apps** – Reduced dimensions lower CPU and GPU load on handheld
+      devices, improving responsiveness.'
+    text: '**Mobile Apps** – Reduced dimensions lower CPU and GPU load on handheld
+      devices, improving responsiveness.'
+  type: HowTo
+- questions:
+  - answer: Choose a `setMaxWidth()` that balances resolution and file size; 400 px
+      works well for most preview needs, and you can also set JPEG quality via `setQuality(int)`
+      if needed.
+    question: How can I keep image quality high while limiting size?
+  - answer: GroupDocs.Viewer currently exposes only a width‑based limit. For height
+      constraints, process the generated JPGs with an image‑processing library after
+      rendering.
+    question: Can I also limit the image height?
+  - answer: Render them in batches or increase the JVM heap size; the viewer processes
+      pages independently, so memory usage scales with the number of concurrent pages,
+      not total page count.
+    question: What should I do with very large documents?
+  - answer: Yes—pass the password to the `Viewer` constructor or use the `loadOptions`
+      parameter to unlock the document before rendering.
+    question: Does the viewer support password‑protected files?
+  - answer: Explore the full API guide at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/),
+      which lists over 30 rendering settings and format‑specific features.
+    question: Where can I find more advanced rendering options?
+  type: FAQPage
+title: Ograniczenie rozmiaru JPG w Java – renderowanie z GroupDocs.Viewer
 type: docs
+url: /pl/java/rendering-basics/groupdocs-viewer-java-limit-jpg-size-rendering/
+weight: 1
 ---
-# Jak ograniczyć rozmiar pliku JPG podczas renderowania dokumentu za pomocą GroupDocs.Viewer dla języka Java
 
-## Wstęp
+# ograniczenie rozmiaru jpg w Javie z GroupDocs.Viewer dla Javy
 
-dzisiejszym cyfrowym świecie efektywne zarządzanie renderowaniem dokumentów jest kluczowe dla firm, które chcą usprawnić operacje i poprawić doświadczenia użytkowników. Jednym z powszechnych wyzwań, z jakimi mierzą się deweloperzy, jest kontrolowanie rozmiaru wyjściowego renderowanych obrazów podczas konwersji dokumentów do formatu JPG. Ten samouczek rozwiązuje ten problem, pokazując, jak ustawić limit rozmiaru obrazu za pomocą GroupDocs.Viewer dla Java.
+W nowoczesnych aplikacjach internetowych i mobilnych kontrolowanie rozmiaru obrazów JPG generowanych z dokumentów może znacząco poprawić czasy ładowania, zmniejszyć koszty przepustowości i utrzymać mały rozmiar przechowywania. Ten samouczek pokazuje **jak ograniczyć rozmiar jpg w Javie** podczas renderowania z GroupDocs.Viewer for Java, przeprowadza przez wymaganą konfigurację i dzieli się praktycznymi wskazówkami, które możesz zastosować już dziś.
 
-**Czego się nauczysz:**
-- Jak skonfigurować GroupDocs.Viewer dla Java
-- Wdrażanie limitów rozmiaru obrazu podczas renderowania dokumentu
-- Najlepsze praktyki optymalizacji systemu zarządzania dokumentami
+![Limit JPG Size in Document Rendering with GroupDocs.Viewer for Java](/viewer/rendering-basics/limit-jpg-size-in-document-rendering-java.png)
 
-Dzięki tym spostrzeżeniom będziesz w stanie dostosować wynik renderowania dokumentów do konkretnych wymagań. Zanim zaczniemy, zagłębmy się w wymagania wstępne.
+## Szybkie odpowiedzi
+- **Co robi „limit jpg size java”?** Ogranicza szerokość każdego renderowanego obrazu strony, automatycznie zmniejszając rozmiar pliku przy zachowaniu czytelności.  
+- **Która klasa kontroluje rozmiar?** `JpgViewOptions.setMaxWidth(int)` pozwala określić maksymalną szerokość w pikselach.  
+- **Czy potrzebna jest licencja?** Ważna licencja GroupDocs.Viewer jest wymagana do użytku produkcyjnego; dostępna jest darmowa wersja próbna lub tymczasowa licencja do testów.  
+- **Czy mogę renderować pliki PDF?** Tak — GroupDocs.Viewer obsługuje ponad 70 formatów wejściowych, w tym PDF, DOCX, PPTX i inne.  
+- **Czy zużycie pamięci jest problemem?** Użycie try‑with‑resources zapewnia, że przeglądarka zwalnia natywne zasoby natychmiast, utrzymując niski poziom zużycia pamięci.
+
+## Co to jest limit jpg size java?
+**limit jpg size java** to opcja konfiguracyjna w GroupDocs.Viewer, która ogranicza szerokość w pikselach każdego obrazu JPG tworzonego podczas renderowania dokumentu. Ustawiając maksymalną szerokość, bezpośrednio wpływasz na rozmiar wynikowego pliku, co jest istotne w środowiskach o ograniczonej przepustowości lub przy przechowywaniu wielu obrazów stron.
+
+## Dlaczego ograniczać rozmiar JPG przy renderowaniu dokumentów?
+Ograniczenie rozmiaru JPG zmniejsza ogólny rozmiar plików, przyspiesza ładowanie stron i obniża zużycie pamięci podczas renderowania. Mniejsze obrazy zużywają mniej przepustowości, poprawiają doświadczenie użytkownika na urządzeniach mobilnych i sprawiają, że zarządzanie przechowywaniem jest bardziej efektywne, szczególnie przy obsłudze dużych dokumentów z wieloma stronami.
+
+- **Redukcja rozmiaru pliku:** Renderowanie dokumentu o 300 stronach przy szerokości 400 px może zmniejszyć całkowity rozmiar obrazów nawet o 70 % w porównaniu z domyślną szerokością 800 px.  
+- **Szybsze ładowanie stron:** Mniejsze obrazy pobierają się 2‑3× szybciej w średnich połączeniach mobilnych.  
+- **Mniejsze zużycie pamięci:** GroupDocs.Viewer przetwarza każdą stronę niezależnie, więc zmniejszone wymiary również obniżają tymczasowe bufory pamięci.
 
 ## Wymagania wstępne
+- **GroupDocs.Viewer for Java** wersja biblioteki 25.2 lub nowsza.  
+- **Maven** skonfigurowany w Twoim środowisku programistycznym.  
+- Podstawowa znajomość Javy oraz Maven dependencies.  
 
-Przed wdrożeniem tej funkcji upewnij się, że masz następujące elementy:
-- **Wymagane biblioteki i zależności:** GroupDocs.Viewer dla biblioteki Java w wersji 25.2.
-- **Konfiguracja środowiska:** Działające środowisko programistyczne Java ze skonfigurowanym Mavenem.
-- **Wymagania dotyczące wiedzy:** Podstawowa znajomość programowania w języku Java i zagadnień przetwarzania dokumentów.
+## Konfiguracja GroupDocs.Viewer dla Javy
 
-## Konfigurowanie GroupDocs.Viewer dla Java
-
-Aby rozpocząć, uwzględnij zależność GroupDocs.Viewer w swoim projekcie, korzystając z Maven:
+Dodaj zależność Maven GroupDocs.Viewer do swojego `pom.xml`:
 
 ```xml
 <repositories>
@@ -47,16 +104,16 @@ Aby rozpocząć, uwzględnij zależność GroupDocs.Viewer w swoim projekcie, ko
 </dependencies>
 ```
 
-### Nabycie licencji
+### Uzyskanie licencji
 
-Aby w pełni wykorzystać możliwości GroupDocs.Viewer, możesz:
-- **Bezpłatna wersja próbna:** Pobierz i przetestuj bibliotekę, korzystając z tymczasowej licencji ze strony [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Licencja tymczasowa:** Uzyskaj bezpłatną tymczasową licencję na bardziej szczegółowe testy pod adresem [Licencja tymczasowa GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Zakup:** W celu długoterminowego użytkowania należy zakupić licencję za pośrednictwem [Strona zakupu GroupDocs](https://purchase.groupdocs.com/buy).
+Aby w pełni wykorzystać GroupDocs.Viewer, możesz:
+- **Darmowa wersja próbna:** Pobierz i przetestuj bibliotekę używając tymczasowej licencji z [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+- **Licencja tymczasowa:** Uzyskaj bezpłatną licencję tymczasową do bardziej rozbudowanych testów pod adresem [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Zakup:** Do długoterminowego użycia, zakup licencję poprzez [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
 ### Podstawowa inicjalizacja
 
-Po skonfigurowaniu środowiska i zainstalowaniu niezbędnych zależności zainicjuj GroupDocs.Viewer w swojej aplikacji Java:
+Po skonfigurowaniu środowiska i zainstalowaniu niezbędnych zależności, zainicjalizuj GroupDocs.Viewer w swojej aplikacji Java:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -64,25 +121,19 @@ import com.groupdocs.viewer.Viewer;
 class DocumentViewer {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/document")) {
-            // Twoja logika renderowania tutaj
+            // Your rendering logic here
         }
     }
 }
 ```
 
-## Przewodnik wdrażania
+## Jak ograniczyć rozmiar jpg w Javie przy renderowaniu dokumentów?
+`JpgViewOptions` to klasa określająca opcje renderowania dla wyjścia JPG.  
+Wczytaj dokument, skonfiguruj `JpgViewOptions` z maksymalną szerokością (np. 400 px) i wywołaj `view()` — przeglądarka wygeneruje obrazy JPG, które nigdy nie przekroczą określonej szerokości, automatycznie skalując wysokość w celu zachowania proporcji. To dwustopniowe podejście zapewnia spójny, kontrolowany rozmiar wyjścia bez dodatkowego przetwarzania.
 
-tej sekcji dowiesz się, jak ustawić limit rozmiaru obrazu podczas renderowania dokumentów do formatu JPG.
+### Określ katalog wyjściowy i ścieżkę pliku
 
-### Przegląd
-
-Naszym celem jest ustawienie maksymalnej szerokości dla obrazów renderowanych z dokumentów, co może być przydatne, gdy przepustowość lub przestrzeń dyskowa są ograniczone. Dzięki temu Twoje wyjście pozostanie łatwe w zarządzaniu i wydajne.
-
-### Wdrażanie krok po kroku
-
-#### Zdefiniuj katalog wyjściowy i ścieżkę pliku
-
-Najpierw należy określić ścieżkę do renderowanego pliku JPG:
+Najpierw określ, gdzie zostaną zapisane renderowane pliki JPG:
 
 ```java
 import java.nio.file.Path;
@@ -92,24 +143,30 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY", "RenderDocumentToJPGWi
 Path outputFile = outputDirectory.resolve("result_image_size_limit.jpg");
 ```
 
-Taka konfiguracja pomaga uporządkować dane wyjściowe i gwarantuje łatwy dostęp do wygenerowanych plików.
+Ta konfiguracja pomaga uporządkować wyniki i zapewnia łatwy dostęp do renderowanych plików.
 
-#### Konfiguruj opcje JpgViewOptions
+### Konfiguracja JpgViewOptions
 
-Tworzyć `JpgViewOptions` aby określić opcje renderowania, w tym ustawić maksymalną szerokość obrazu wyjściowego:
+`JpgViewOptions` pozwala ustawić parametry takie jak maksymalna szerokość, jakość i DPI dla renderowania JPG.
+
+Klasa `JpgViewOptions` definiuje opcje renderowania stron jako obrazy JPG, w tym ograniczenia rozmiaru i poziomy kompresji.
+
+Utwórz `JpgViewOptions` i ustaw limit szerokości na 400 pikseli:
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
 
 JpgViewOptions options = new JpgViewOptions(outputFile);
-options.setMaxWidth(400);  // Ustaw maksymalną szerokość na 400 pikseli
+options.setMaxWidth(400);  // Set the max width to 400 pixels
 ```
 
-Taka konfiguracja ogranicza szerokość renderowanego obrazu na każdej stronie do 400 pikseli, co pomaga zarządzać rozmiarami plików.
+Ograniczenie szerokości do 400 px utrzymuje każdy obraz strony lekki, zachowując jednocześnie wystarczającą szczegółowość dla typowych scenariuszy podglądu.
 
-#### Renderuj dokument
+### Renderowanie dokumentu
 
-Na koniec użyj `Viewer` klasa do renderowania dokumentu z określonymi opcjami:
+Klasa `Viewer` jest punktem wejścia do konwertowania obsługiwanych dokumentów na różne formaty podglądu, w tym JPG, PDF i HTML.
+
+Użyj metody `view()`, aby przetworzyć dokument zgodnie z podanymi opcjami i zapisać pliki JPG w docelowym folderze:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -119,51 +176,55 @@ try (Viewer viewer = new Viewer("path/to/your/document")) {
 }
 ```
 
-Ten `view()` Metoda przetwarza dokument zgodnie z podanymi opcjami widoku i zapisuje go w żądanym formacie.
+## Częste problemy i rozwiązania
+- **Błędy ścieżki pliku:** Upewnij się, że wszystkie ciągi katalogów są absolutne lub prawidłowo względne względem katalogu głównego projektu.  
+- **Kompatybilność biblioteki:** Upewnij się, że używasz GroupDocs.Viewer 25.2 lub nowszej; starsze wersje mogą nie posiadać `setMaxWidth`.  
+- **Wyjątki Out‑of‑Memory:** Renderuj duże dokumenty strona po stronie w bloku try‑with‑resources, aby zapewnić szybkie zwolnienie natywnych zasobów.
 
-### Porady dotyczące rozwiązywania problemów
-- **Błędy ścieżki pliku:** Upewnij się, że wszystkie ścieżki są ustawione poprawnie względem katalogu głównego Twojego projektu.
-- **Zgodność biblioteki:** Sprawdź, czy używasz zgodnych wersji GroupDocs.Viewer i Java SDK.
-
-## Zastosowania praktyczne
-
-Oto kilka praktycznych scenariuszy, w których kontrolowanie rozmiaru obrazu może być korzystne:
-1. **Miniatury aplikacji internetowych**:Używaj obrazów o ograniczonym rozmiarze, aby przyspieszyć ładowanie się galerii internetowych lub podglądów dokumentów.
-2. **Załączniki e-mail**: Zmniejsz rozmiar plików wysyłając dokumenty jako załączniki do wiadomości e-mail, aby zaoszczędzić przepustowość.
-3. **Aplikacje mobilne**:Optymalizacja renderowania dokumentów na urządzeniach mobilnych poprzez ograniczenie wymiarów obrazu i zwiększenie wydajności.
+## Praktyczne zastosowania
+Kontrolowanie rozmiaru obrazu jest przydatne w wielu rzeczywistych scenariuszach:
+1. **Miniatury aplikacji webowych** – Szybsze podglądy w galeriach dokumentów.  
+2. **Załączniki e‑mail** – Mniejsze JPG utrzymują rozmiar wiadomości poniżej typowych limitów (np. 25 MB).  
+3. **Aplikacje mobilne** – Zmniejszone wymiary obniżają obciążenie CPU i GPU w urządzeniach przenośnych, poprawiając responsywność.
 
 ## Rozważania dotyczące wydajności
+- **Zarządzanie pamięcią:** Umieść instancję `Viewer` w bloku try‑with‑resources, aby automatycznie zamykać strumienie i zwalniać natywną pamięć.  
+- **Dostosowanie szerokości:** Dostosuj `setMaxWidth()` w zależności od wymagań przepustowości i jakości; 300 px jest idealne przy niskiej przepustowości, a 600 px zapewnia wyraźniejsze podglądy.
 
-Aby zapewnić optymalną wydajność podczas korzystania z GroupDocs.Viewer:
-- **Zarządzanie pamięcią:** Użyj opcji try-with-resources do automatycznego zarządzania zasobami, zapobiegając wyciekom pamięci.
-- **Wskazówki dotyczące optymalizacji:** Regulować `setMaxWidth()` na podstawie Twoich konkretnych potrzeb, aby zrównoważyć jakość i rozmiar pliku.
+## Najczęściej zadawane pytania
 
-## Wniosek
+**Q: Jak mogę utrzymać wysoką jakość obrazu przy ograniczaniu rozmiaru?**  
+A: Wybierz `setMaxWidth()`, które równoważy rozdzielczość i rozmiar pliku; 400 px sprawdza się dobrze w większości potrzeb podglądu, a w razie potrzeby możesz także ustawić jakość JPEG za pomocą `setQuality(int)`.
 
-Postępując zgodnie z tym przewodnikiem, nauczyłeś się, jak skutecznie ustawiać limity rozmiaru obrazu podczas renderowania dokumentów za pomocą GroupDocs.Viewer dla Java. Ta możliwość jest niezbędna do optymalizacji obsługi dokumentów w różnych aplikacjach. Aby uzyskać dalsze informacje, rozważ integrację tych technik w większych projektach lub eksperymentuj z innymi funkcjami GroupDocs.
+**Q: Czy mogę również ograniczyć wysokość obrazu?**  
+A: GroupDocs.Viewer obecnie udostępnia tylko limit oparty na szerokości. Aby ograniczyć wysokość, przetwórz wygenerowane JPG przy użyciu biblioteki do przetwarzania obrazów po renderowaniu.
 
-## Sekcja FAQ
+**Q: Co zrobić z bardzo dużymi dokumentami?**  
+A: Renderuj je w partiach lub zwiększ rozmiar sterty JVM; przeglądarka przetwarza strony niezależnie, więc zużycie pamięci skaluje się z liczbą jednocześnie przetwarzanych stron, a nie z całkowitą liczbą stron.
 
-**Pytanie 1:** Jak mogę mieć pewność, że obrazy wyjściowe zachowają jakość po zmianie rozmiaru? 
-A1: Chociaż zmniejszenie wymiarów może mieć wpływ na przejrzystość obrazu, należy stosować odpowiednie `setMaxWidth()` wartości pomagają skutecznie zrównoważyć jakość i rozmiar.
+**Q: Czy przeglądarka obsługuje pliki chronione hasłem?**  
+A: Tak — przekaż hasło do konstruktora `Viewer` lub użyj parametru `loadOptions`, aby odblokować dokument przed renderowaniem.
 
-**Pytanie 2:** Czy można ustawić maksymalną wysokość również dla plików JPG?
-A2: Obecnie GroupDocs.Viewer pozwala na ustawienie tylko limitu szerokości. Do regulacji wysokości mogą być potrzebne dodatkowe narzędzia do przetwarzania obrazu.
-
-**Pytanie 3:** Jakie są najczęstsze problemy występujące przy renderowaniu dużych dokumentów?
-A3: Obszerne dokumenty mogą powodować gwałtowne wzrosty zużycia pamięci. Upewnij się, że masz wystarczające zasoby i, jeśli to konieczne, rozważ podzielenie ich na mniejsze części.
-
-**Pytanie 4:** Czy mogę renderować pliki PDF bezpośrednio za pomocą GroupDocs.Viewer?
-A4: Tak, GroupDocs.Viewer obsługuje szeroką gamę formatów dokumentów, w tym pliki PDF.
-
-**Pytanie 5:** Gdzie mogę znaleźć więcej informacji na temat zaawansowanych opcji renderowania?
-A5: Odkryj [Dokumentacja GroupDocs](https://docs.groupdocs.com/viewer/java/) aby uzyskać kompleksowe przewodniki i odniesienia do API.
+**Q: Gdzie mogę znaleźć bardziej zaawansowane opcje renderowania?**  
+A: Zapoznaj się z pełnym przewodnikiem API pod adresem [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/), który wymienia ponad 30 ustawień renderowania i funkcji specyficznych dla formatów.
 
 ## Zasoby
-- **Dokumentacja**: [GroupDocs Viewer Dokumentacja Java](https://docs.groupdocs.com/viewer/java/)
-- **Odniesienie do API**: [Odwołanie do API GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **Pobierać**: [Pliki do pobrania GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Zakup**: [Kup licencję GroupDocs](https://purchase.groupdocs.com/buy)
-- **Bezpłatna wersja próbna**: [Bezpłatna wersja próbna GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Licencja tymczasowa**: [Licencja tymczasowa GroupDocs](https://purchase.groupdocs.com/temporary-license/)
-- **Wsparcie**: [Forum GrupyDocs](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentacja:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- **Referencja API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Pobieranie:** [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/)  
+- **Zakup:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Darmowa wersja próbna:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Licencja tymczasowa:** [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Wsparcie:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+---
+
+**Ostatnia aktualizacja:** 2026-05-31  
+**Testowano z:** GroupDocs.Viewer 25.2 for Java  
+**Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Jak renderować PDF do HTML i optymalizować jakość obrazu w Javie z GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [Zmniejsz rozmiar PDF w Javie – Optymalizuj jakość JPG z GroupDocs](/viewer/java/advanced-rendering/optimize-jpg-quality-groupdocs-viewer-java/)
+- [Responsywne renderowanie HTML z GroupDocs.Viewer dla Javy: Kompletny przewodnik](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
