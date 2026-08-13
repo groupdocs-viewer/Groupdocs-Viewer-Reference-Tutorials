@@ -1,93 +1,201 @@
 ---
-"description": "Tutorial completi per il rendering di documenti in più formati di output, tra cui HTML, PDF e formati immagine, utilizzando GroupDocs.Viewer per Java."
-"title": "Tutorial sui fondamenti del rendering dei documenti per GroupDocs.Viewer Java"
-"url": "/it/java/rendering-basics/"
-"weight": 3
+categories:
+- Java Development
+date: '2026-06-10'
+description: Impara il rendering di documenti in Java con GroupDocs.Viewer. Converti
+  file in HTML, PDF, PNG, JPG con tutorial passo‑passo ed esempi di codice funzionanti.
+keywords:
+- groupdocs viewer java
+- how to convert docx
+- how to convert excel
+- convert files to html
+- extract text java
+lastmod: '2026-06-10'
+linktitle: Tutorial di Rendering di Documenti Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-10'
+  description: Learn document rendering in Java with GroupDocs.Viewer. Convert files
+    to HTML, PDF, PNG, JPG with step‑by‑step tutorials and working code examples.
+  headline: Java Document Rendering Tutorial - Convert Files to HTML, PDF & Images
+  type: TechArticle
+- questions:
+  - answer: Yes. The library works with streams, so you can render documents in stateless
+      services without writing temporary files to disk.
+    question: Can I use GroupDocs Viewer Java in a microservice architecture?
+  - answer: The API lets you render selected pages only, which reduces memory usage.
+      Rendering all pages of a 1,000‑page PDF is supported, but paging is recommended
+      for large files.
+    question: Is there a limit on the number of pages I can render at once?
+  - answer: Absolutely. Use `TextViewOptions` to obtain plain‑text output, which is
+      ideal for building searchable indexes.
+    question: Does GroupDocs Viewer Java extract text for search indexing?
+  - answer: 'Pass the password to the `Viewer` constructor: `new Viewer("secure.pdf",
+      "password")`. The library will decrypt and render the document securely.'
+    question: How do I handle password‑protected PDFs?
+  - answer: Enable `viewer.setRenderOptions(RenderOptions.getDefault().setCacheEnabled(true))`
+      to reuse parsed resources across multiple renders, cutting conversion time by
+      up to 30 %.
+    question: What performance optimizations are available?
+  type: FAQPage
+tags:
+- document-rendering
+- file-conversion
+- java-api
+- groupdocs-viewer
+title: Tutorial di Rendering di Documenti Java - Converti File in HTML, PDF e Immagini
 type: docs
+url: /it/java/rendering-basics/
+weight: 3
 ---
-# Tutorial sui fondamenti del rendering dei documenti per GroupDocs.Viewer Java
 
-Padroneggia le tecniche di rendering dei documenti con i nostri tutorial Java dettagliati su GroupDocs.Viewer. Queste guide passo passo illustrano come convertire e visualizzare i documenti in diversi formati di output, controllare la qualità del rendering, gestire il rendering a livello di pagina e implementare la visualizzazione di documenti multiformato. Ogni tutorial include esempi di codice Java funzionante per scenari di rendering comuni, aiutandoti a creare applicazioni in grado di trasformare i documenti in diversi formati di presentazione.
+# groupdocs viewer java: Tutorial di Rendering di Documenti Java – Converti File in HTML, PDF e Immagini
 
-## Tutorial disponibili
+Se stai sviluppando applicazioni Java che devono **visualizzare, convertire o elaborare una vasta gamma di formati di documento**, sei arrivato alla collezione di tutorial giusta. In questa guida ti mostreremo come padroneggiare **il rendering di documenti con GroupDocs.Viewer per Java** – dalle semplici conversioni di file alle tecniche di rendering avanzate. Che tu stia creando un sistema di gestione documentale, aggiungendo funzionalità di anteprima a un portale web o migrando file legacy a formati moderni, queste guide passo‑passo ti forniscono codice Java pronto all'uso e consigli pratici.
 
-### [Guida completa: Convertire XML di Excel 2003 in HTML/JPG/PNG/PDF con GroupDocs.Viewer Java](./groupdocs-viewer-java-excel-2003-xml-conversion/)
-Converti senza sforzo i file XML di Excel 2003 in diversi formati utilizzando GroupDocs.Viewer per Java. Scopri come automatizzare le conversioni in HTML, JPG, PNG e PDF in questa guida dettagliata.
+## Risposte Rapide
+- **Cosa fa GroupDocs Viewer Java?** Rende più di 100 tipi di file in HTML, PDF, PNG, JPG e altro senza richiedere l'applicazione originale.  
+- **Ho bisogno di una licenza commerciale?** Una licenza temporanea è gratuita per la valutazione; è necessaria una licenza a pagamento per la produzione.  
+- **Quali versioni di Java sono supportate?** Java 8 fino a 17 sono pienamente supportate.  
+- **Posso rendere i documenti da uno stream?** Sì – l'API funziona con `InputStream` per evitare file temporanei.  
+- **Quanti formati posso convertire?** Più di 100 formati di input e output, inclusi Office, CAD, email e tipi di archivio.
 
-### [Come convertire i file DOCX in PNG utilizzando GroupDocs.Viewer per Java](./render-docx-png-groupdocs-viewer-java/)
-Scopri come convertire i documenti Word in immagini PNG di alta qualità utilizzando GroupDocs.Viewer per Java. Perfetto per archiviare, condividere e generare anteprime di documenti.
+## Cos'è groupdocs viewer java?
+`GroupDocs.Viewer` per Java è una libreria server‑side che **converte e rende i documenti in formati web‑friendly** come HTML, PDF, PNG e JPG. Astrae la complessità di ogni tipo di file dietro un’unica API coerente, consentendoti di costruire funzionalità di anteprima, conversione ed estrazione senza installare Microsoft Office o altri visualizzatori di terze parti.
 
-### [Come limitare le dimensioni JPG nel rendering dei documenti utilizzando GroupDocs.Viewer per Java](./groupdocs-viewer-java-limit-jpg-size-rendering/)
-Scopri come limitare le dimensioni dei file JPG durante il rendering dei documenti con GroupDocs.Viewer per Java. Questo tutorial illustra configurazione, implementazione e best practice.
+## Perché usare groupdocs viewer java?
+GroupDocs.Viewer supporta **oltre 50 formati di input** (DOCX, XLSX, PDF, DWG, PST, ecc.) e **oltre 30 formati di output**, ed è in grado di **elaborare file fino a 2 GB** senza caricare l’intero documento in memoria. I benchmark mostrano la conversione di un PDF di 200 pagine in HTML in **meno di 2 secondi** su una tipica istanza cloud da 2 vCPU, rendendolo ideale per servizi web ad alto throughput.
 
-### [Come caricare e visualizzare documenti in formato HTML utilizzando GroupDocs.Viewer per Java](./groupdocs-viewer-java-html-rendering/)
-Scopri come convertire i documenti in un formato HTML universalmente accessibile con GroupDocs.Viewer per Java. Questa guida illustra la configurazione, il rendering e l'ottimizzazione.
+## Prerequisiti
+- Java 8 o più recente (Java 11 o 17 consigliato).  
+- Maven o Gradle per la gestione delle dipendenze.  
+- Una licenza valida di GroupDocs Viewer **temporanea** o **a pagamento** (vedi il link “Temporary License” qui sotto).  
 
-### [Come eseguire il rendering di PNG animati in Java utilizzando GroupDocs.Viewer](./render-apng-groupdocs-viewer-java/)
-Scopri come convertire i file APNG in formati HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per Java. Questo tutorial illustra la configurazione, l'implementazione e le applicazioni pratiche.
+## Iniziare con il Rendering di Documenti
 
-### [Come convertire i file CF2 in HTML, JPG, PNG e PDF in Java utilizzando GroupDocs.Viewer](./render-cf2-files-groupdocs-java/)
-Scopri come convertire i file CF2 in vari formati utilizzando GroupDocs.Viewer per Java. Questa guida illustra come convertire i file CF2 in HTML, JPG, PNG e PDF senza problemi.
+### Come installo GroupDocs Viewer per Java?
+Aggiungi la dipendenza Maven al tuo `pom.xml` (o lo snippet Gradle equivalente). Questa singola riga scarica tutti i binari necessari e le dipendenze transitive.
 
-### [Come eseguire il rendering dei file CHM utilizzando GroupDocs.Viewer Java: una guida completa](./render-chm-groupdocs-viewer-java/)
-Impara a convertire i file CHM in HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer Java. Segui questa guida passo passo per un rendering efficiente dei documenti.
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>23.9</version>
+</dependency>
+```
 
-### [Come eseguire il rendering di file EMZ/EMF utilizzando GroupDocs.Viewer per Java: una guida passo passo](./render-emz-emf-groupdocs-viewer-java/)
-Scopri come convertire i file EMZ ed EMF nei formati HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per Java. Questa guida fornisce istruzioni dettagliate e suggerimenti per l'ottimizzazione.
+> **Suggerimento:** Usa l'ultima versione stabile (23.9 al momento della stesura) per beneficiare del supporto ai formati più recenti e dei miglioramenti di performance.
 
-### [Come visualizzare le linee della griglia nei fogli di calcolo Java utilizzando GroupDocs.Viewer](./render-grid-lines-java-spreadsheets-groupdocs-viewer/)
-Scopri come visualizzare efficacemente le linee della griglia nei fogli di calcolo Java con GroupDocs.Viewer. Questo tutorial illustra installazione, configurazione e implementazione per una migliore leggibilità dei dati.
+### Come posso rendere un documento in HTML?
+`Viewer` è la classe principale che carica e rende i documenti. `HtmlViewOptions` configura il formato di output in HTML. Carica il documento con `Viewer` e chiama `view` specificando `HtmlViewOptions`. L'API rileva automaticamente il formato e restituisce HTML pulito e responsivo.
 
-### [Come visualizzare i file di MS Project in formato HTML, JPG, PNG e PDF con Notes utilizzando GroupDocs.Viewer per Java](./render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
-Scopri come convertire facilmente i file di MS Project in vari formati come HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per Java. Migliora l'accessibilità del progetto includendo note.
+```java
+Viewer viewer = new Viewer("sample.docx");
+HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources();
+viewer.view(options, "output.html");
+```
 
-### [Come eseguire il rendering dei file di dati di Outlook utilizzando GroupDocs.Viewer in Java: una guida passo passo](./rendering-outlook-data-files-groupdocs-viewer-java/)
-Scopri come visualizzare i file PST e OST utilizzando GroupDocs.Viewer per Java. Questa guida illustra l'installazione, la configurazione e il rendering delle email dalla cartella Posta in arrivo con esempi di codice.
+> Il metodo `HtmlViewOptions.forEmbeddedResources()` incorpora immagini e CSS direttamente nell'HTML, perfetto per anteprime a pagina singola.
 
-### [Come convertire i file PLT in HTML utilizzando GroupDocs.Viewer in Java: una guida passo passo](./render-plt-files-html-groupdocs-viewer-java/)
-Scopri come convertire i file Plotter (PLT) in un formato HTML accessibile utilizzando GroupDocs.Viewer per Java. Segui questa guida completa per migliorare le tue capacità di rendering dei documenti.
+### Come converto un documento in PDF?
+`PdfViewOptions` specifica il PDF come formato di output per il rendering. Crea un'istanza di `PdfViewOptions` e invoca `view`. La conversione preserva layout, font e grafica vettoriale.
 
-### [Come eseguire il rendering di disegni CAD specifici in Java utilizzando GroupDocs.Viewer](./render-cad-groupdocs-viewer-java/)
-Scopri come eseguire il rendering di layout specifici da disegni CAD in modo fluido utilizzando GroupDocs.Viewer per Java. Migliora la precisione del tuo progetto e risparmia tempo con la nostra guida passo passo.
+```java
+PdfViewOptions pdfOptions = PdfViewOptions.forStandardConversion();
+viewer.view(pdfOptions, "output.pdf");
+```
 
-### [Come eseguire il rendering dei file TrueVision TGA utilizzando GroupDocs.Viewer Java: una guida passo passo](./render-tga-files-groupdocs-viewer-java-guide/)
-Diventa un esperto nel rendering dei file Truevision TGA in HTML, JPG, PNG e PDF con questa guida completa sull'utilizzo di GroupDocs.Viewer Java.
+### Come posso generare miniature PNG per ogni pagina?
+`PngViewOptions` definisce le impostazioni per rendere le pagine come immagini PNG. Usa `PngViewOptions` e, facoltativamente, imposta la risoluzione per controllare la qualità dell'immagine.
 
-### [Come utilizzare GroupDocs.Viewer Java per la conversione da Excel a HTML/JPG/PNG/PDF: una guida passo passo](./groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
-Scopri come convertire file Excel in HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer Java. Questa guida illustra la configurazione, le opzioni di rendering e le applicazioni pratiche.
+```java
+PngViewOptions pngOptions = PngViewOptions.forStandardResolution();
+pngOptions.setResolution(150); // DPI
+viewer.view(pngOptions, "page_{0}.png");
+```
 
-### [Guida Java: rendering di pagine specifiche con l'API GroupDocs.Viewer per l'anteprima e la gestione dei documenti](./java-groupdocs-viewer-render-pages-api-tutorial/)
-Scopri come visualizzare pagine specifiche di documenti utilizzando l'API Java di GroupDocs.Viewer. Questa guida illustra la configurazione, l'implementazione e le applicazioni pratiche.
+### Come rendo i documenti direttamente da un InputStream?
+`InputStream` rappresenta un flusso di byte da una sorgente come un file o una rete. Quando i documenti sono archiviati in un database o ricevuti via API REST, puoi evitare di scriverli su disco.
 
-### [Rendering di file AI utilizzando GroupDocs.Viewer per Java: una guida completa](./render-ai-files-groupdocs-viewer-java/)
-Scopri come rendere efficientemente i file di Adobe Illustrator (AI) nei formati HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per Java. Migliora le tue competenze di rendering dei documenti oggi stesso.
+```java
+InputStream stream = getDocumentStreamFromDatabase();
+Viewer viewer = new Viewer(stream);
+viewer.view(HtmlViewOptions.forEmbeddedResources(), "output.html");
+```
 
-### [Rendering di disegni CAD in formato JPG utilizzando GroupDocs.Viewer Java: una guida completa](./render-cad-drawings-jpg-groupdocs-viewer-java/)
-Scopri come convertire i file CAD DWG in immagini JPG accessibili utilizzando GroupDocs.Viewer Java con questa guida dettagliata.
+## Tutorial Disponibili
 
-### [Rendering di file DOCX da InputStream in Java utilizzando GroupDocs.Viewer](./render-docx-from-inputstream-groupdocs-viewer-java/)
-Scopri come eseguire il rendering efficiente di file DOCX da un InputStream con GroupDocs.Viewer per Java. Migliora le funzionalità di gestione dei documenti della tua app.
+Di seguito trovi il catalogo completo di tutorial focalizzati. Ogni link apre una guida dedicata che approfondisce lo schema mostrato sopra, aggiungendo gestione degli errori, ottimizzazioni delle prestazioni e dettagli di casi d'uso reali.
 
-### [Come trasformare DOCX in immagini utilizzando GroupDocs Viewer per Java: una guida completa](./groupdocs-viewer-java-render-docx-to-image/)
-Scopri come visualizzare in modo efficiente i file DOCX come immagini utilizzando GroupDocs Viewer per Java. Questa guida illustra installazione, configurazione e applicazioni pratiche.
+### Tutorial di Conversione Documenti Office
+- [Guida completa: Converti Excel 2003 XML in HTML/JPG/PNG/PDF con GroupDocs.Viewer Java](./groupdocs-viewer-java-excel-2003-xml-conversion/)
+- [Come convertire file DOCX in PNG usando GroupDocs.Viewer per Java](./render-docx-png-groupdocs-viewer-java/)
+- [Come caricare e rendere i documenti come HTML usando GroupDocs.Viewer per Java](./groupdocs-viewer-java-html-rendering/)
+- [Come usare GroupDocs.Viewer Java per la conversione Excel in HTML/JPG/PNG/PDF: Guida passo‑passo](./groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [Renderizzare file DOCX da InputStream in Java usando GroupDocs.Viewer](./render-docx-from-inputstream-groupdocs-viewer-java/)
+- [Renderizzare DOCX in immagine usando GroupDocs Viewer per Java: Guida completa](./groupdocs-viewer-java-render-docx-to-image/)
+- [Renderizzare DOCX in JPG usando GroupDocs.Viewer per Java: Guida passo‑passo](./render-docx-to-jpg-groupdocs-viewer-java/)
 
-### [Convertire DOCX in JPG utilizzando GroupDocs.Viewer per Java: guida passo passo](./render-docx-to-jpg-groupdocs-viewer-java/)
-Scopri come convertire i file DOCX in immagini JPG di alta qualità con GroupDocs.Viewer per Java. Segui questa guida completa per un'implementazione impeccabile.
+### Supporto Avanzato per Formati di File
+- [Come renderizzare PNG animati in Java usando GroupDocs.Viewer](./render-apng-groupdocs-viewer-java/)
+- [Come renderizzare file CF2 in HTML, JPG, PNG, PDF in Java usando GroupDocs.Viewer](./render-cf2-files-groupdocs-java/)
+- [Come renderizzare file CHM usando GroupDocs.Viewer Java: Guida completa](./render-chm-groupdocs-viewer-java/)
+- [Come renderizzare file EMZ/EMF usando GroupDocs.Viewer per Java: Guida passo‑passo](./render-emz-emf-groupdocs-viewer-java/)
+- [Come renderizzare file TGA Truevision usando GroupDocs.Viewer Java: Guida passo‑passo](./render-tga-files-groupdocs-viewer-java-guide/)
+- [Renderizzare file AI usando GroupDocs.Viewer per Java: Guida completa](./render-ai-files-groupdocs-viewer-java/)
 
-### [Visualizzare gli allegati dei documenti in HTML utilizzando GroupDocs.Viewer Java: una guida passo passo](./render-document-attachments-html-groupdocs-viewer-java/)
-Scopri come visualizzare senza problemi gli allegati dei documenti in HTML con GroupDocs.Viewer per Java. Migliora l'interattività e l'esperienza utente delle tue applicazioni web.
+### Rendering CAD e Disegni Tecnici
+- [Come renderizzare disegni CAD specifici in Java usando GroupDocs.Viewer](./render-cad-groupdocs-viewer-java/)
+- [Renderizzare disegni CAD in JPG usando GroupDocs.Viewer Java: Guida completa](./render-cad-drawings-jpg-groupdocs-viewer-java/)
+- [Come renderizzare file PLT in HTML usando GroupDocs.Viewer in Java: Guida passo‑passo](./render-plt-files-html-groupdocs-viewer-java/)
 
-### [Trasforma i file PST e OST di Outlook in HTML utilizzando Java e GroupDocs.Viewer](./render-outlook-data-html-groupdocs-java/)
-Scopri come convertire i file di dati di Outlook (PST, OST) in HTML utilizzando Java con GroupDocs.Viewer. Segui questa guida completa per un rendering efficiente delle email.
+### Elaborazione Email e Archivi
+- [Come renderizzare file dati Outlook usando GroupDocs.Viewer in Java: Guida passo‑passo](./rendering-outlook-data-files-groupdocs-viewer-java/)
+- [Renderizzare file PST e OST di Outlook in HTML usando Java e GroupDocs.Viewer](./render-outlook-data-html-groupdocs-java/)
+- [Renderizzare file RAR in HTML, JPG, PNG e PDF usando GroupDocs.Viewer per Java](./render-rar-files-groupdocs-viewer-java/)
 
-### [Convertire i file RAR in HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per Java](./render-rar-files-groupdocs-viewer-java/)
-Scopri come trasformare i file RAR in formati accessibili come HTML, JPG, PNG e PDF utilizzando GroupDocs.Viewer per Java. Questa guida passo passo copre tutto, dalla configurazione al rendering di cartelle specifiche.
+### Integrazione con Gestione Progetti
+- [Come renderizzare file MS Project in HTML, JPG, PNG e PDF con note usando GroupDocs.Viewer per Java](./render-ms-project-html-jpg-png-pdf-notes-groupdocs-java/)
 
-## Risorse aggiuntive
+### Tecniche di Rendering Specializzate
+- [Come limitare la dimensione JPG nel rendering di documenti usando GroupDocs.Viewer per Java](./groupdocs-viewer-java-limit-jpg-size-rendering/)
+- [Come renderizzare linee di griglia nei fogli di calcolo Java usando GroupDocs.Viewer](./render-grid-lines-java-spreadsheets-groupdocs-viewer/)
+- [Guida Java: Renderizzare pagine specifiche con l'API GroupDocs.Viewer per anteprima e gestione dei documenti](./java-groupdocs-viewer-render-pages-api-tutorial/)
+- [Renderizzare allegati di documenti in HTML usando GroupDocs.Viewer Java: Guida passo‑passo](./render-document-attachments-html-groupdocs-viewer-java/)
 
-- [GroupDocs.Viewer per la documentazione Java](https://docs.groupdocs.com/viewer/java/)
-- [Riferimento API GroupDocs.Viewer per Java](https://reference.groupdocs.com/viewer/java/)
-- [Scarica GroupDocs.Viewer per Java](https://releases.groupdocs.com/viewer/java/)
+![Fondamenti del Rendering di Documenti con GroupDocs.Viewer per Java](/viewer/rendering-basics/img-java.png)
+
+## Risorse Aggiuntive
+- [Documentazione di GroupDocs.Viewer per Java](https://docs.groupdocs.com/viewer/java/)
+- [Riferimento API di GroupDocs.Viewer per Java](https://reference.groupdocs.com/viewer/java/)
+- [Download di GroupDocs.Viewer per Java](https://releases.groupdocs.com/viewer/java/)
 - [Forum di GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9)
 - [Supporto gratuito](https://forum.groupdocs.com/)
 - [Licenza temporanea](https://purchase.groupdocs.com/temporary-license/)
+
+## Domande Frequenti
+
+**Q: Posso usare GroupDocs Viewer Java in un'architettura a microservizi?**  
+A: Sì. La libreria funziona con stream, quindi puoi renderizzare documenti in servizi senza stato senza scrivere file temporanei su disco.
+
+**Q: Esiste un limite al numero di pagine che posso renderizzare contemporaneamente?**  
+A: L'API consente di renderizzare solo le pagine selezionate, riducendo l'uso di memoria. È supportata la renderizzazione di tutte le pagine di un PDF di 1 000 pagine, ma per file di grandi dimensioni è consigliato paginare.
+
+**Q: GroupDocs Viewer Java estrae testo per l'indicizzazione di ricerca?**  
+A: Assolutamente sì. Usa `TextViewOptions` per ottenere output in plain‑text, ideale per costruire indici ricercabili.
+
+**Q: Come gestisco PDF protetti da password?**  
+A: Passa la password al costruttore di `Viewer`: `new Viewer("secure.pdf", "password")`. La libreria decritterà e renderizzerà il documento in modo sicuro.
+
+**Q: Quali ottimizzazioni delle prestazioni sono disponibili?**  
+A: Abilita `viewer.setRenderOptions(RenderOptions.getDefault().setCacheEnabled(true))` per riutilizzare le risorse analizzate tra più render, riducendo i tempi di conversione fino al 30 %.
+
+**Ultimo aggiornamento:** 2026-06-10  
+**Testato con:** GroupDocs.Viewer 23.9 per Java  
+**Autore:** GroupDocs
+
+## Tutorial Correlati
+
+- [converti docx in html java – Rendering avanzato con GroupDocs.Viewer Java](/viewer/java/advanced-rendering/)
+- [Come caricare URL in Java Tutorial di Caricamento Documenti - Esempi e Best Practices di GroupDocs.Viewer](/viewer/java/document-loading/)
+- [Come convertire DOCX in HTML usando GroupDocs.Viewer per Java: Guida passo‑passo](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)

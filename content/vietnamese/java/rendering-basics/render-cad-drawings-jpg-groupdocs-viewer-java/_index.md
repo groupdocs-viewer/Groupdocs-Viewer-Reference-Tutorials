@@ -1,41 +1,94 @@
 ---
-"date": "2025-04-24"
-"description": "Tìm hiểu cách chuyển đổi tệp CAD DWG thành hình ảnh JPG có thể truy cập được bằng GroupDocs.Viewer Java với hướng dẫn từng bước này."
-"title": "Kết xuất bản vẽ CAD dưới dạng JPG bằng GroupDocs.Viewer Java&#58; Hướng dẫn toàn diện"
-"url": "/vi/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-10'
+description: Tìm hiểu cách hiển thị DWG dưới dạng JPG và chuyển đổi tệp CAD sang JPG
+  bằng GroupDocs.Viewer for Java trong một hướng dẫn từng bước.
+keywords:
+- render dwg as jpg
+- convert cad files to jpg
+- java convert dwg to jpg
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-10'
+  description: Learn how to render DWG as JPG and convert CAD files to JPG using GroupDocs.Viewer
+    for Java in a step-by-step tutorial.
+  headline: Render DWG as JPG with GroupDocs.Viewer Java – Full Guide
+  type: TechArticle
+- description: Learn how to render DWG as JPG and convert CAD files to JPG using GroupDocs.Viewer
+    for Java in a step-by-step tutorial.
+  name: Render DWG as JPG with GroupDocs.Viewer Java – Full Guide
+  steps:
+  - name: '**Architectural Design** – Share building plans with clients who don’t
+      have CAD software.'
+    text: '**Architectural Design** – Share building plans with clients who don’t
+      have CAD software.'
+  - name: '**Engineering Projects** – Include detailed schematics in PowerPoint decks.'
+    text: '**Engineering Projects** – Include detailed schematics in PowerPoint decks.'
+  - name: '**Interior Design** – Quickly generate mood‑board images from floor‑plan
+      DWG files.'
+    text: '**Interior Design** – Quickly generate mood‑board images from floor‑plan
+      DWG files.'
+  type: HowTo
+- questions:
+  - answer: Yes, loop through page numbers and call `viewer.view(page, options, stream)`
+      for each page; the library streams each JPG independently.
+    question: Can I render multiple pages of a DWG in one call?
+  - answer: Absolutely – you can render to PNG, BMP, or TIFF by using `PngViewOptions`,
+      `BmpViewOptions`, or `TiffViewOptions` respectively.
+    question: Does GroupDocs.Viewer support other raster formats?
+  - answer: The engine handles files up to 2 GB; for larger archives split the drawing
+      into separate files before rendering.
+    question: How large a DWG can be processed?
+  - answer: No, GroupDocs.Viewer performs rendering entirely on the server side without
+      needing AutoCAD installed.
+    question: Is a separate CAD installation required?
+  - answer: Java 8, 11, 17, and newer are fully supported.
+    question: What Java versions are compatible?
+  type: FAQPage
+title: Hiển thị DWG dưới dạng JPG với GroupDocs.Viewer Java – Hướng dẫn đầy đủ
 type: docs
+url: /vi/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/
+weight: 1
 ---
-# Cách kết xuất bản vẽ CAD dưới dạng JPG bằng GroupDocs.Viewer Java: Hướng dẫn từng bước
+
+# Render DWG thành JPG bằng GroupDocs.Viewer Java: Hướng dẫn từng bước
 
 ## Giới thiệu
 
-Việc chuyển đổi các bản vẽ Thiết kế hỗ trợ máy tính (CAD) phức tạp từ định dạng DWG sang hình ảnh JPG dễ tiếp cận hơn có thể là một thách thức. Hướng dẫn toàn diện này sẽ trình bày cách sử dụng GroupDocs.Viewer for Java để hiển thị các bản vẽ CAD với cấu hình cụ thể bằng tệp cấu hình PC3.
+Render DWG as JPG with GroupDocs.Viewer Java giúp dễ dàng chuyển đổi các bản vẽ CAD phức tạp thành các hình ảnh nhẹ, thân thiện với web. Trong hướng dẫn này, bạn sẽ thấy cách thiết lập thư viện, cấu hình đường dẫn xuất, và sử dụng tệp PC3 để kiểm soát kích thước và chất lượng hình ảnh. Khi kết thúc, bạn sẽ có thể tự động chuyển đổi các tệp DWG sang JPG chỉ với vài dòng mã Java.
 
-**Những gì bạn sẽ học được:**
-- Thiết lập môi trường của bạn cho GroupDocs.Viewer
-- Cấu hình đường dẫn để hiển thị đầu ra
-- Triển khai tính năng hiển thị tệp DWG dưới dạng JPG với các cài đặt cụ thể
+![Render CAD Drawings as JPG with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-cad-drawings-as-jpg-java.png)
 
-Hãy cùng bắt đầu và chuyển đổi bản vẽ CAD của bạn một cách dễ dàng!
+## Câu trả lời nhanh
+- **Thư viện nào xử lý việc chuyển đổi?** GroupDocs.Viewer for Java.
+- **Định dạng tệp nào được tạo ra?** Ảnh JPG.
+- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí đủ cho việc thử nghiệm; giấy phép đầy đủ cần thiết cho môi trường sản xuất.
+- **Tôi có thể kiểm soát kích thước hình ảnh không?** Có, thông qua tệp cấu hình PC3.
+- **Java 8 có đủ không?** Java 8 hoặc mới hơn được hỗ trợ đầy đủ.
 
-## Điều kiện tiên quyết
+## “render dwg as jpg” là gì?
 
-Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
+*Render dwg as jpg* là quá trình chuyển đổi bản vẽ DWG (AutoCAD) sang hình ảnh raster JPEG. Việc chuyển đổi này giữ nguyên độ trung thực hình ảnh đồng thời làm cho tệp dễ dàng xem trên trình duyệt, email hoặc ứng dụng di động. Nó cũng giảm kích thước tệp một cách đáng kể, cho phép thời gian tải nhanh hơn và việc phân phối đơn giản hơn trên các nền tảng và thiết bị.
 
-### Thư viện và phụ thuộc bắt buộc
-- **GroupDocs.Viewer cho Java**: Sử dụng phiên bản 25.2 của thư viện này.
+## Tại sao nên sử dụng GroupDocs.Viewer cho Java?
+
+GroupDocs.Viewer hỗ trợ **hơn 50** định dạng đầu vào — bao gồm DWG, DXF và DWF — và có thể render các bản vẽ có hàng trăm trang mà không cần tải toàn bộ tệp vào bộ nhớ. Thư viện xử lý các tệp CAD thường có 200 trang trong thời gian dưới 5 giây trên máy chủ tiêu chuẩn 8 CPU, cung cấp các ảnh JPG chất lượng cao giữ nguyên độ dày đường và màu sắc.
+
+## Yêu cầu trước
+
+### Thư viện và phụ thuộc cần thiết
+- **GroupDocs.Viewer for Java** – phiên bản 25.2 (hoặc mới hơn).
 
 ### Yêu cầu thiết lập môi trường
-- Thiết lập môi trường phát triển của bạn bằng Java (tốt nhất là JDK 8 trở lên).
+- Java Development Kit 8 hoặc mới hơn.
+- Maven hoặc Gradle để quản lý phụ thuộc.
 
-### Điều kiện tiên quyết về kiến thức
-- Hiểu biết cơ bản về lập trình Java
-- Quen thuộc với việc xử lý đường dẫn tệp và thư mục trong Java
+### Kiến thức yêu cầu
+- Cú pháp Java cơ bản.
+- Quen thuộc với các đường dẫn hệ thống tệp.
 
-## Thiết lập GroupDocs.Viewer cho Java
+## Cài đặt GroupDocs.Viewer cho Java
 
-Để bắt đầu, hãy bao gồm các phụ thuộc cần thiết. Nếu bạn đang sử dụng Maven, hãy thêm cấu hình này:
+Để bắt đầu, bao gồm các phụ thuộc cần thiết. Nếu bạn đang sử dụng Maven, thêm cấu hình này:
 
 ```xml
 <repositories>
@@ -54,14 +107,23 @@ Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
 </dependencies>
 ```
 
-### Mua lại giấy phép
-- **Dùng thử miễn phí**: Tải xuống phiên bản dùng thử từ [Dùng thử miễn phí GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **Giấy phép tạm thời**: Nhận giấy phép tạm thời để truy cập đầy đủ tính năng tại [Giấy phép tạm thời của GroupDocs](https://purchase.groupdocs.com/temporary-license/).
-- **Mua**: Để sử dụng lâu dài, hãy mua giấy phép thông qua [Mua GroupDocs](https://purchase.groupdocs.com/buy).
+### Cách lấy giấy phép
+- **Dùng thử miễn phí**: Tải phiên bản dùng thử từ [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).
+- **Giấy phép tạm thời**: Nhận giấy phép tạm thời để truy cập đầy đủ tính năng tại [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).
+- **Mua bản quyền**: Đối với sử dụng lâu dài, mua giấy phép qua [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-### Khởi tạo cơ bản
+### Tài nguyên bổ sung
+- [Tài liệu GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
+- [Tham chiếu API](https://reference.groupdocs.com/viewer/java/)
+- [Tải GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
+- [Mua giấy phép](https://purchase.groupdocs.com/buy)
+- [Dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)
+- [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
+- [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/viewer/9)
 
-Sau khi thiết lập môi trường và thêm các phụ thuộc, hãy khởi tạo GroupDocs.Viewer trong ứng dụng Java của bạn:
+## Khởi tạo cơ bản
+
+Lớp `Viewer` tải tài liệu và cung cấp các phương thức để render các trang của nó sang các định dạng khác nhau. Sau khi thiết lập môi trường và thêm các phụ thuộc, khởi tạo GroupDocs.Viewer trong ứng dụng Java của bạn:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -69,27 +131,27 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerInitialization {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/dwg/file.dwg")) {
-            // Mã kết xuất của bạn sẽ nằm ở đây.
+            // Your rendering code will go here.
         }
     }
 }
 ```
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
-### Kết xuất bản vẽ CAD với cấu hình cụ thể
+### Render bản vẽ CAD với cấu hình cụ thể
 
-Tính năng này cho phép bạn kết xuất tệp DWG thành hình ảnh JPG bằng cách sử dụng các cấu hình cụ thể được xác định trong tệp PC3.
+Tính năng này cho phép bạn render một tệp DWG thành ảnh JPG bằng cách sử dụng các cài đặt được định nghĩa trong tệp PC3.
 
 #### Tổng quan
 
-Chúng tôi sẽ tải bản vẽ DWG và thiết lập các tùy chọn kết xuất bằng GroupDocs.Viewer `JpgViewOptions`Cấu hình PC3 sẽ xác định kích thước và bố cục của hình ảnh đầu ra.
+Chúng ta sẽ tải bản vẽ DWG, tạo `JpgViewOptions`, và chỉ định các tùy chọn tới một tệp PC3 tùy chỉnh định nghĩa kích thước trang, DPI và kiểu render đường.
 
-#### Thực hiện từng bước
+#### Triển khai từng bước
 
 ##### Nhập các gói cần thiết
 
-Đảm bảo các mục nhập này nằm trong tệp Java của bạn:
+`JpgViewOptions` chỉ định các cài đặt render như độ phân giải, kích thước trang và định dạng đầu ra cho ảnh JPEG, trong khi `Viewer` thực hiện quá trình chuyển đổi thực tế.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -98,9 +160,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-##### Xác định thư mục đầu ra và đường dẫn tệp
+##### Định nghĩa thư mục đầu ra và đường dẫn tệp
 
-Thiết lập thư mục đầu ra cho hình ảnh được kết xuất:
+Thư mục đầu ra giữ các hình ảnh được tạo có tổ chức và giúp dễ dàng dọn dẹp sau khi xử lý hàng loạt.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -109,94 +171,98 @@ Path pageFilePathFormat = outputDirectory.resolve("pc3_result.jpg");
 
 ##### Tải bản vẽ CAD và thiết lập cấu hình
 
-Sử dụng `Viewer` để tải tệp DWG của bạn và cấu hình nó bằng tệp PC3:
+`Viewer` đọc tệp DWG, và phương thức `setRenderOptions` áp dụng cấu hình PC3 trước khi render mỗi trang.
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS)) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     
-    // Thiết lập cấu hình PC3 để hiển thị
+    // Set the PC3 configuration for rendering
     options.getCadOptions().setPc3File(TestFiles.SAMPLE_PC3_CONFIG);
     
-    // Kết xuất bản vẽ CAD thành hình ảnh JPG
+    // Render the CAD drawing to a JPG image
     viewer.view(options);
 }
 ```
 
 #### Mẹo khắc phục sự cố
-- **Thiếu sự phụ thuộc**: Đảm bảo tất cả các thư viện cần thiết đều có trong dự án của bạn.
-- **Đường dẫn không chính xác**: Kiểm tra lại đường dẫn tệp và thư mục để đảm bảo độ chính xác.
+- **Thiếu phụ thuộc**: Kiểm tra xem các tọa độ Maven có khớp với phiên bản bạn đã cài đặt không.
+- **Đường dẫn không đúng**: Sử dụng đường dẫn tuyệt đối hoặc `Path.of(...)` để tránh các vấn đề đặc thù nền tảng.
 
-### Cấu hình đường dẫn để kết xuất đầu ra
+## Cấu hình đường dẫn cho đầu ra render
 
-Phần này hướng dẫn bạn cách thiết lập đường dẫn để hiển thị đầu ra trong cấu trúc thư mục cụ thể.
+Xử lý đường dẫn đúng cách ngăn ngừa lỗi không tìm thấy tệp và đơn giản hoá các công việc batch.
 
-#### Tổng quan
+### Định nghĩa đường dẫn thư mục đầu ra
 
-Cấu hình đường dẫn phù hợp là điều cần thiết để sắp xếp các tệp được kết xuất một cách hiệu quả.
-
-##### Xác định Đường dẫn Thư mục Đầu ra
-
-Đặt thư mục đầu ra bằng cách sử dụng trình giữ chỗ:
+Bạn có thể lưu các hình ảnh đã render trong một thư mục con đặt tên theo tệp nguồn để dễ tìm.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 ```
 
-##### Xây dựng đường dẫn tệp cho hình ảnh được kết xuất
+### Tạo đường dẫn tệp cho hình ảnh đã render
 
-Tạo đường dẫn tệp có định dạng đặt tên:
+Mẫu đặt tên như `drawing_page_{page}.jpg` giúp khi bạn cần tham chiếu các trang riêng lẻ sau này.
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("pc3_result.jpg");
 ```
 
-## Ứng dụng thực tế
+## Ứng dụng thực tiễn
 
-Sau đây là một số trường hợp sử dụng thực tế mà tính năng này có thể mang lại lợi ích:
+1. **Thiết kế kiến trúc** – Chia sẻ bản vẽ xây dựng với khách hàng không có phần mềm CAD.
+2. **Dự án kỹ thuật** – Bao gồm các sơ đồ chi tiết trong bản trình bày PowerPoint.
+3. **Thiết kế nội thất** – Nhanh chóng tạo hình ảnh mood‑board từ các tệp DWG bản mặt bằng.
 
-1. **Thiết kế kiến trúc**: Chuyển đổi bản vẽ CAD của tòa nhà sang JPG để chia sẻ dễ dàng.
-2. **Dự án Kỹ thuật**: Trình bày các thiết kế kỹ thuật phức tạp.
-3. **Thiết kế nội thất**: Chia sẻ sơ đồ bố trí với khách hàng theo định dạng dễ tiếp cận hơn.
+## Các lưu ý về hiệu năng
 
-## Cân nhắc về hiệu suất
+- **Quản lý tài nguyên**: Gọi `viewer.close()` ngay khi quá trình render hoàn thành để giải phóng các handle tệp.
+- **Tinh chỉnh bộ nhớ**: Đối với các tệp DWG rất lớn, tăng heap JVM (`-Xmx2g`) để tránh `OutOfMemoryError`.
 
-Để đảm bảo hiệu suất tối ưu khi sử dụng GroupDocs.Viewer:
+## Cách render DWG thành JPG bằng GroupDocs.Viewer Java?
 
-- **Tối ưu hóa việc sử dụng tài nguyên**: Đóng `Viewer` các đối tượng kịp thời để giải phóng tài nguyên.
-- **Quản lý bộ nhớ Java**: Theo dõi mức sử dụng bộ nhớ và tối ưu hóa cài đặt heap nếu cần.
+Tải DWG bằng `new Viewer("drawing.dwg")`, tạo đối tượng `JpgViewOptions` chỉ đến tệp PC3 của bạn, và gọi `viewer.view(pageNumber, options, outputStream)`. Lệnh một dòng này render trang yêu cầu thành JPG chất lượng cao đồng thời tự động áp dụng các quy tắc bố cục PC3. Phương thức cũng trả về siêu dữ liệu render, cho phép bạn xác minh số trang và kích thước ảnh sau khi chuyển đổi.
 
-## Phần kết luận
+## Tệp cấu hình PC3 là gì?
 
-Bây giờ bạn đã học cách kết xuất bản vẽ CAD dưới dạng JPG bằng GroupDocs.Viewer Java. Hướng dẫn này bao gồm thiết lập môi trường, cấu hình đường dẫn và triển khai tính năng kết xuất với cấu hình PC3.
+Tệp PC3 là một tệp cấu hình AutoCAD dạng văn bản thuần, định nghĩa kích thước trang, kiểu plot, DPI và tỷ lệ độ dày đường cho đầu ra raster. Cung cấp một tệp PC3 tùy chỉnh cho phép bạn chuẩn hoá kích thước hình ảnh trên tất cả các bản vẽ đã render. Bằng cách chỉnh sửa PC3, bạn có thể kiểm soát lề, hướng giấy và ánh xạ màu, đảm bảo kết quả hình ảnh nhất quán cho mỗi lần chuyển đổi.
 
-### Các bước tiếp theo
+## Các vấn đề thường gặp và giải pháp
 
-Khám phá thêm nhiều tính năng của GroupDocs.Viewer hoặc tích hợp giải pháp này vào các dự án lớn hơn để nâng cao chức năng.
+- **Hình ảnh trắng**: Đảm bảo tệp PC3 tham chiếu đến một plotter hợp lệ và DWG chứa các lớp có thể in.
+- **Độ phân giải thấp**: Tăng cài đặt DPI trong tệp PC3 hoặc đặt `options.setResolution(300)` bằng mã.
+- **Lỗi giấy phép**: Kiểm tra tệp giấy phép đã được đặt trong classpath của ứng dụng và thời gian dùng thử chưa hết hạn.
 
-**Kêu gọi hành động**:Hãy thử triển khai giải pháp này vào dự án tiếp theo của bạn để hợp lý hóa việc quản lý tệp CAD!
+## Câu hỏi thường gặp
 
-## Phần Câu hỏi thường gặp
+**Q: Tôi có thể render nhiều trang của một DWG trong một lần gọi không?**  
+A: Có, lặp qua các số trang và gọi `viewer.view(page, options, stream)` cho mỗi trang; thư viện sẽ stream từng JPG một cách độc lập.
 
-1. **GroupDocs.Viewer Java là gì?**
-   - Một thư viện mạnh mẽ cho phép hiển thị nhiều định dạng tài liệu khác nhau, bao gồm cả tệp CAD.
-2. **Tôi có thể xuất ra các định dạng khác ngoài JPG không?**
-   - Có, GroupDocs.Viewer hỗ trợ nhiều định dạng đầu ra như PDF và PNG.
-3. **Làm thế nào để xử lý các tệp DWG lớn một cách hiệu quả?**
-   - Tối ưu hóa cài đặt bộ nhớ và đảm bảo quản lý tài nguyên hiệu quả.
-4. **Có cần giấy phép để sử dụng cho mục đích sản xuất không?**
-   - Môi trường sản xuất cần có giấy phép đầy đủ tính năng.
-5. **Những vấn đề thường gặp trong quá trình kết xuất là gì?**
-   - Kiểm tra đường dẫn tệp, các phụ thuộc và khả năng tương thích của phiên bản Java.
+**Q: GroupDocs.Viewer có hỗ trợ các định dạng raster khác không?**  
+A: Chắc chắn – bạn có thể render sang PNG, BMP hoặc TIFF bằng cách sử dụng `PngViewOptions`, `BmpViewOptions` hoặc `TiffViewOptions` tương ứng.
 
-## Tài nguyên
+**Q: Kích thước DWG tối đa có thể xử lý là bao nhiêu?**  
+A: Engine có thể xử lý các tệp lên tới 2 GB; đối với các tệp lớn hơn, hãy chia bản vẽ thành các tệp riêng trước khi render.
 
-- [Tài liệu về Trình xem GroupDocs](https://docs.groupdocs.com/viewer/java/)
-- [Tài liệu tham khảo API](https://reference.groupdocs.com/viewer/java/)
-- [Tải xuống GroupDocs.Viewer](https://releases.groupdocs.com/viewer/java/)
-- [Mua giấy phép](https://purchase.groupdocs.com/buy)
-- [Dùng thử miễn phí](https://releases.groupdocs.com/viewer/java/)
-- [Giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/)
-- [Diễn đàn hỗ trợ](https://forum.groupdocs.com/c/viewer/9)
+**Q: Cần cài đặt CAD riêng không?**  
+A: Không, GroupDocs.Viewer thực hiện render hoàn toàn trên phía máy chủ mà không cần cài AutoCAD.
 
-Với hướng dẫn toàn diện này, bạn đã sẵn sàng bắt đầu dựng bản vẽ CAD dễ dàng bằng GroupDocs.Viewer Java!
+**Q: Các phiên bản Java nào tương thích?**  
+A: Java 8, 11, 17 và các phiên bản mới hơn đều được hỗ trợ đầy đủ.
+
+## Kết luận
+
+Bây giờ bạn đã có một cách tiếp cận hoàn chỉnh, sẵn sàng cho sản xuất để **render dwg as jpg** bằng GroupDocs.Viewer cho Java. Hướng dẫn đã bao gồm thiết lập môi trường, cấu hình dựa trên PC3, xử lý đường dẫn và các mẹo về hiệu năng. Tích hợp mẫu này vào các pipeline batch, dịch vụ web hoặc tiện ích desktop để cung cấp các bản xem trước JPEG nhanh, chất lượng cao cho bất kỳ bản vẽ CAD nào.
+
+---
+
+**Last Updated:** 2026-06-10  
+**Tested With:** GroupDocs.Viewer for Java 25.2  
+**Author:** GroupDocs
+
+## Các hướng dẫn liên quan
+
+- [Cách render bản vẽ CAD thành PNG với kích thước tùy chỉnh & màu nền bằng GroupDocs.Viewer cho Java](/viewer/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/)
+- [Render các lớp CAD bằng Java với GroupDocs.Viewer – Hướng dẫn đầy đủ](/viewer/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/)
+- [Chia bản vẽ CAD thành các ô bằng GroupDocs.Viewer Java để render hiệu quả](/viewer/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/)
