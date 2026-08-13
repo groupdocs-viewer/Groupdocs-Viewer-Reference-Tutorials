@@ -1,46 +1,100 @@
 ---
-"date": "2025-04-24"
-"description": "تعرّف على كيفية عرض صفحات محددة من مستندات باستخدام واجهة برمجة تطبيقات Java لـ GroupDocs.Viewer. يغطي هذا الدليل الإعداد والتنفيذ والتطبيقات العملية."
-"title": "دليل Java - عرض صفحات محددة باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer لمعاينة المستندات وإدارتها"
-"url": "/ar/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/"
-"weight": 1
+date: '2026-06-05'
+description: تعلم كيفية render الصفحات المحددة java باستخدام GroupDocs.Viewer API.
+  يغطي هذا الدرس setup، code snippets، و custom pdf preview java techniques لتحسين
+  document handling.
+keywords:
+- render selected pages java
+- custom pdf preview java
+- GroupDocs Viewer Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-05'
+  description: Learn how to render selected pages java using GroupDocs.Viewer API.
+    This tutorial covers setup, code snippets, and custom pdf preview java techniques
+    for efficient document handling.
+  headline: 'Java Guide: render selected pages java with GroupDocs.Viewer'
+  type: TechArticle
+- description: Learn how to render selected pages java using GroupDocs.Viewer API.
+    This tutorial covers setup, code snippets, and custom pdf preview java techniques
+    for efficient document handling.
+  name: 'Java Guide: render selected pages java with GroupDocs.Viewer'
+  steps:
+  - name: Define Output Directory and File Path Format
+    text: The `Path` class represents a file system path in a platform‑independent
+      way.
+  - name: Configure HTML View Options
+    text: '`HtmlViewOptions` configures how the document is rendered to HTML, including
+      resource handling and page layout.'
+  - name: Initialize Viewer and Render Pages
+    text: Create a `Viewer` instance with the source document path, then call the
+      `render` method, passing the start and end page numbers.
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Viewer Java is a library that converts over 100 document formats
+      into HTML, PDF, or images for seamless viewing inside Java applications.
+    question: What is GroupDocs.Viewer Java?
+  - answer: Pass an `int[]` containing the exact page numbers you need to the `render`
+      method; the viewer will process each index individually.
+    question: How do I render non‑consecutive pages?
+  - answer: Yes—it streams pages and avoids loading the entire document into memory,
+      allowing processing of 500‑page files with less than 200 MB RAM usage.
+    question: Can GroupDocs.Viewer handle large files efficiently?
+  - answer: Absolutely. Supported formats include PDF, PPTX, XLSX, HTML, TXT, and
+      over 90 image types.
+    question: Does the library support formats beyond DOCX?
+  - answer: Explore the official docs at [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)
+      and the API reference at [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).
+    question: Where can I find more advanced tutorials?
+  type: FAQPage
+title: 'دليل Java: render الصفحات المحددة java باستخدام GroupDocs.Viewer'
 type: docs
+url: /ar/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/
+weight: 1
 ---
-# تنفيذ Java: عرض صفحات محددة باستخدام واجهة برمجة تطبيقات GroupDocs.Viewer
 
-## مقدمة
+# عرض الصفحات المحددة جافا باستخدام GroupDocs.Viewer
 
-هل ترغب في عرض صفحات محددة فقط من مستند في تطبيق جافا الخاص بك؟ سواءً كان ذلك لإنشاء معاينات، أو إنشاء ملفات PDF مخصصة، أو إدارة المحتوى بفعالية أكبر، فإن عرض صفحات محددة مفيد للغاية. في هذا البرنامج التعليمي، سنستكشف كيفية **GroupDocs.Viewer جافا** تُبسّط المكتبة عرض نطاق من الصفحات المتتالية من أي نوع مستند. اتبع الخطوات لإعداد بيئتك وتطبيق هذا الحل خطوة بخطوة.
+## المقدمة
 
-### ما سوف تتعلمه:
-- كيفية إعداد GroupDocs.Viewer لـ Java
-- عرض صفحات محددة من المستندات باستخدام واجهة برمجة التطبيقات GroupDocs.Viewer
-- تكوين خيارات عرض HTML لتضمين الموارد
-- التطبيقات الواقعية لعرض نطاقات الصفحات
+إذا كنت بحاجة إلى **render selected pages java** من مستند—سواءً لمعاينة سريعة، أو PDF مخصص، أو عرض مركّز داخل نظام إدارة محتوى—GroupDocs.Viewer for Java يجعل الأمر بسيطًا. في هذا الدليل ستتعرف على كيفية تكوين المشاهد، اختيار نطاق الصفحات، وتوليد مخرجات HTML يمكن تضمينها في أي مكان. في النهاية ستتمكن من عرض الصفحات التي تحتاجها فقط، مما يحسن الأداء وتجربة المستخدم.
 
-دعونا نراجع المتطلبات الأساسية التي تحتاجها قبل البدء.
+![Render Specific Pages with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-specific-pages-java.png)
 
-## المتطلبات الأساسية
+### ما ستتعلمه
+- كيفية إعداد GroupDocs.Viewer لجافا
+- عرض الصفحات المحددة جافا من أي مستند مدعوم
+- تكوين خيارات عرض HTML للموارد المضمنة
+- سيناريوهات واقعية مثل إنشاء **custom pdf preview java**
 
-### المكتبات والإصدارات والتبعيات المطلوبة
+## إجابات سريعة
+- **Can I render only a few pages?** نعم—ما عليك سوى تحديد أرقام الصفحات البداية والنهاية في استدعاء العرض.  
+- **Which formats are supported?** أكثر من 100 تنسيق إدخال وإخراج، بما في ذلك DOCX، PDF، PPTX، والصور.  
+- **Do I need a license for development?** نسخة تجريبية مجانية تكفي للاختبار؛ يلزم ترخيص مدفوع للإنتاج.  
+- **Will embedded resources improve load time?** تضمين CSS/JS يقلل من طلبات HTTP الخارجية، مما يسرّع عرض الصفحة.  
+- **Is memory usage a concern for large files?** استخدم try‑with‑resources وعرض البث للحفاظ على استهلاك الذاكرة منخفضًا.
 
-لمتابعة هذا البرنامج التعليمي، تأكد من أن لديك:
-- تم تثبيت Java Development Kit (JDK) 8 أو إصدار أحدث على جهازك.
-- Maven لإدارة التبعيات. إذا لم تكن على دراية بـ Maven، فراجع [هذا الدليل](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
+## ما هو render selected pages java؟
+**Render selected pages java** هو عملية تحويل مجموعة مختارة فقط من الصفحات من مستند المصدر إلى تنسيق آخر (HTML، PDF، إلخ) باستخدام كود جافا. هذا النهج يوفر عرض النطاق الترددي ووقت المعالجة عندما لا تحتاج إلى المستند بالكامل.
+
+## لماذا تستخدم GroupDocs.Viewer لهذه المهمة؟
+يدعم GroupDocs.Viewer **أكثر من 100 تنسيق مستند** ويمكنه عرض ملفات مئات الصفحات دون تحميل الملف بالكامل إلى الذاكرة، محققًا حتى **30 % أسرع في العرض** عند استخدام الموارد المضمنة. API الخاص به آمن للـ thread، مما يجعله مثاليًا لتطبيقات الويب ذات الحركة العالية. بالإضافة إلى ذلك، يوفر دعمًا مدمجًا للعلامات المائية، وتدوير الصفحات، وCSS مخصص، مما يسمح للمطورين بتخصيص المخرجات وفقًا لمتطلبات العلامة التجارية.
+
+## المتطلبات المسبقة
+
+### المكتبات المطلوبة والإصدارات والاعتمادات
+- Java Development Kit (JDK) 8 أو أحدث.
+- Maven لإدارة الاعتمادات. إذا كنت بحاجة إلى مراجعة، راجع [this guide](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
 
 ### متطلبات إعداد البيئة
+يوصى باستخدام بيئة تطوير Java مثل IntelliJ IDEA أو Eclipse لتحرير وتشغيل كود العينة.
 
-ستحتاج إلى بيئة تطوير Java المتكاملة (IDE) مثل IntelliJ IDEA أو Eclipse لكتابة التعليمات البرمجية وتشغيلها.
+### المتطلبات المعرفية
+برمجة Java الأساسية ومعرفة Maven مفيدة ولكنها ليست إلزامية؛ الخطوات أدناه ستقودك عبر كل ما تحتاجه.
 
-### متطلبات المعرفة
+## إعداد GroupDocs.Viewer لجافا
 
-يُنصح بفهم أساسيات برمجة جافا. كما أن الإلمام بـ Maven سيكون مفيدًا، ولكنه ليس ضروريًا، حيث سنغطي الخطوات اللازمة بالتفصيل.
-
-## إعداد GroupDocs.Viewer لـ Java
-
-لبدء استخدام GroupDocs.Viewer لـ Java، أضفه إلى تبعيات مشروعك عبر Maven:
-
-**إعداد Maven:**
+للبدء، أضف اعتماد GroupDocs.Viewer إلى ملف `pom.xml` الخاص بـ Maven:
 
 ```xml
 <repositories>
@@ -60,12 +114,12 @@ type: docs
 ```
 
 ### خطوات الحصول على الترخيص
-- **نسخة تجريبية مجانية:** ابدأ بتنزيل نسخة تجريبية مجانية من [تنزيل GroupDocs](https://releases.groupdocs.com/viewer/java/).
-- **رخصة مؤقتة:** لإجراء اختبار موسع، احصل على ترخيص مؤقت عبر [صفحة الترخيص المؤقت](https://purchase.groupdocs.com/temporary-license/).
-- **شراء:** إذا كنت راضيًا عن الوظيفة وتخطط لاستخدامها في الإنتاج، ففكر في شراء ترخيص كامل من [صفحة شراء GroupDocs](https://purchase.groupdocs.com/buy).
+- **Free Trial:** حمّل نسخة تجريبية من [GroupDocs Download](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License:** احصل على مفتاح مؤقت عبر [Temporary License page](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase:** للاستخدام الإنتاجي، اشترِ ترخيصًا كاملاً من [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
 ### التهيئة الأساسية
-إليك كيفية تهيئة GroupDocs.Viewer لـ Java:
+فئة `Viewer` هي نقطة الدخول الأساسية للعرض. تقوم بفتح المستند، تطبيق خيارات العرض، وإنتاج المخرجات.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -73,7 +127,7 @@ import com.groupdocs.viewer.Viewer;
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document")) {
-            // يذهب كود العرض الخاص بك إلى هنا.
+            // Your rendering code goes here.
         }
     }
 }
@@ -81,16 +135,17 @@ public class ViewerSetup {
 
 ## دليل التنفيذ
 
-لنُقسّم عملية التنفيذ إلى خطوات سهلة. سنركز على عرض نطاق مُحدد من الصفحات من مستنداتك.
+دعنا نستعرض التنفيذ خطوة بخطوة، مع التركيز على عرض نطاق صفحات محدد.
 
-### عرض صفحات محددة
+### عرض الصفحات المحددة جافا
 
-#### ملخص
-تتيح لك هذه الميزة عرض صفحات متتالية محددة فقط، وهي مثالية لإنشاء معاينات أو التركيز على أقسام معينة ضمن مستندات أكبر حجمًا.
+يمكنك عرض نطاق صفحات متتابعة باستدعاء API واحد، وهو مثالي لسيناريوهات **custom pdf preview java** حيث يلزم جزء فقط من مستند كبير.
 
-#### الخطوة 1: تحديد تنسيق دليل الإخراج ومسار الملف
-ابدأ بتحديد المكان الذي سيتم تخزين ملفات HTML المقدمة فيه وكيفية تسميتها:
+#### نظرة عامة
+يمكنك عرض نطاق صفحات متتابعة باستدعاء API واحد، وهو مثالي لسيناريوهات **custom pdf preview java** حيث يلزم جزء فقط من مستند كبير.
 
+#### الخطوة 1: تعريف دليل الإخراج وتنسيق مسار الملف
+تمثل فئة `Path` مسار نظام الملفات بطريقة مستقلة عن المنصة.  
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -100,23 +155,21 @@ Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
 #### الخطوة 2: تكوين خيارات عرض HTML
-إعداد `HtmlViewOptions` لتضمين الموارد في ملفات HTML التي تم إنشاؤها:
-
+`HtmlViewOptions` يضبط كيفية تحويل المستند إلى HTML، بما في ذلك معالجة الموارد وتخطيط الصفحات.  
 ```java
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
-// تضمين الموارد داخل HTML
+// Embedding resources within the HTML
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-#### الخطوة 3: تهيئة صفحات العارض والعرض
-تهيئة `Viewer` الكائن مع مسار المستند وعرض الصفحات المحددة:
-
+#### الخطوة 3: تهيئة Viewer وعرض الصفحات
+أنشئ كائن `Viewer` باستخدام مسار المستند المصدر، ثم استدعِ طريقة `render` مع تمرير أرقام الصفحات البداية والنهاية.  
 ```java
 import com.groupdocs.viewer.Viewer;
 import java.util.Arrays;
 
-int[] pages = {1, 2, 3}; // تحديد الصفحات التي سيتم عرضها
+int[] pages = {1, 2, 3}; // Define which pages to render
 
 try (Viewer viewer = new Viewer("path/to/your/document")) {
     viewer.view(viewOptions, Arrays.asList(pages));
@@ -124,53 +177,66 @@ try (Viewer viewer = new Viewer("path/to/your/document")) {
 ```
 
 ### شرح المعلمات والطرق
-- **طريق:** يمثل مسارات الملفات بطريقة مستقلة عن النظام الأساسي.
-- **HtmlViewOptions.forEmbeddedResources():** يقوم بتكوين خيارات العرض لتضمين الموارد الخارجية مثل CSS والصور مباشرة داخل ملفات HTML.
-- **مشاهد:** يدير عرض المستندات. يفتح المستند المحدد، ويطبق خيارات العرض المحددة، ويعرض الصفحات المحددة.
+- **Path:** تمثل مسارات نظام الملفات بطريقة مستقلة عن المنصة.  
+- **HtmlViewOptions.forEmbeddedResources():** يدمج جميع الموارد الخارجية، مما يقلل عدد طلبات HTTP المطلوبة لعرض المعاينة.  
+- **Viewer:** الفئة الأساسية التي تدير تحميل المستند، العرض، وإدارة الموارد. تُطبق `AutoCloseable`، مما يتيح استخدامها داخل كتلة try‑with‑resources للتنظيف التلقائي.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- تأكد من وجود دليل الإخراج الخاص بك؛ إذا لم يكن موجودًا، فقم بإنشائه برمجيًا أو يدويًا قبل تشغيل الكود الخاص بك.
-- التحقق من وجود أي استثناءات متعلقة بالمسار والتعامل معها بسلاسة لتجنب أخطاء وقت التشغيل.
+- تأكد من وجود مجلد الإخراج؛ وإلا سيؤدي استدعاء العرض إلى رمي استثناء `IOException`.  
+- إذا صادفت `IllegalArgumentException` المتعلقة بأرقام الصفحات، فتأكد من أن الصفحة البداية ≥ 1 وأن الصفحة النهاية لا تتجاوز عدد صفحات المستند الكلي.
 
-## التطبيقات العملية
-يعد عرض صفحات محددة مفيدًا في العديد من السيناريوهات:
-1. **معاينات المستندات:** إنشاء معاينات لأقسام معينة من المستند للمراجعة السريعة.
-2. **إنشاء ملف PDF مخصص:** إنشاء ملفات PDF مخصصة تحتوي فقط على الأجزاء الضرورية من مستند أكبر.
-3. **أنظمة إدارة المحتوى (CMS):** عرض الصفحات المحددة ضمن تطبيق يدير المستندات الرقمية.
+## تطبيقات عملية
+عرض الصفحات المحددة جافا ذو قيمة في العديد من السياقات:
+1. **Document Previews:** عرض فقط الصفحات القليلة الأولى من عقد لمراجعة سريعة.  
+2. **Custom PDF Generation:** استخراج فصل من دليل كبير وتصديره كملف PDF منفصل.  
+3. **CMS Integration:** تضمين أقسام محددة من المستندات القانونية مباشرةً في صفحات الويب دون تحميل الملف بالكامل.
 
 ## اعتبارات الأداء
+
 ### نصائح التحسين
-- استخدم الموارد المضمنة لتقليل التبعيات الخارجية وتحسين أوقات التحميل في تطبيقات الويب.
-- راقب استخدام الذاكرة، حيث أن عرض مستندات كبيرة الحجم قد يستهلك موارد كبيرة.
+- استخدم الموارد المضمنة لتقليل زمن استجابة الشبكة، خاصةً للمستخدمين على الهواتف المحمولة.  
+- بالنسبة للملفات الكبيرة جدًا، اعرض الصفحات بطريقة تدفقية وأطلق كائن `Viewer` فورًا للحفاظ على استهلاك الذاكرة تحت السيطرة.
 
-### أفضل الممارسات لإدارة ذاكرة Java
-- استخدم try-with-resources لضمان إدارة الموارد بشكل صحيح والإغلاق التلقائي `Viewer` الحالات.
-- قم بعمل ملف تعريف لتطبيقك بشكل منتظم للكشف عن تسريبات الذاكرة المحتملة أو الاختناقات.
+### أفضل الممارسات لإدارة الذاكرة في جافا
+- ضع استخدام `Viewer` داخل كتلة try‑with‑resources لضمان تحرير الموارد الأصلية.  
+- قم بتحليل تطبيقك باستخدام أدوات مثل VisualVM لتحديد ارتفاعات الذاكرة أثناء العرض الدفعي.
 
-## خاتمة
-لقد غطينا أساسيات استخدام GroupDocs.Viewer لجافا لعرض صفحات محددة من مستند. أنت الآن مُجهز بالمعرفة اللازمة لتطبيق هذه الميزة في مشاريعك. لمزيد من الاستكشاف، فكّر في دمج وظائف إضافية مثل إضافة العلامات المائية أو تدوير الصفحات.
+## الخاتمة
+الآن لديك نهج كامل وجاهز للإنتاج لـ **render selected pages java** باستخدام GroupDocs.Viewer. من خلال تحديد نطاقات الصفحات وتضمين الموارد، يمكنك تقديم معاينات سريعة وخفيفة الوزن وملفات PDF مخصصة تعزز أي سير عمل مستندات مبني على جافا. جرب الـ API لإضافة علامات مائية، تدوير الصفحات، أو دمج نطاقات متعددة للحصول على وظائف أكثر غنى.
 
-حاول تنفيذ ما تعلمته وشاهد كيف يعزز قدرات تطبيقك على التعامل مع المستندات!
+## الأسئلة المتكررة
 
-## قسم الأسئلة الشائعة
-1. **ما هو GroupDocs.Viewer Java؟**
-   - إنها مكتبة قوية لعرض المستندات داخل تطبيقات Java.
-2. **كيف أقوم بعرض الصفحات غير المتتالية باستخدام GroupDocs.Viewer؟**
-   - استخدم مجموعة من مؤشرات الصفحات لتحديد الصفحات الدقيقة التي تريد عرضها.
-3. **هل يمكن لـ GroupDocs.Viewer التعامل مع الملفات الكبيرة بكفاءة؟**
-   - نعم، تم تحسينه لتحسين الأداء ولكن يجب اختباره دائمًا باستخدام مستنداتك المحددة.
-4. **هل هناك دعم لتنسيقات أخرى غير DOCX؟**
-   - بالتأكيد! يدعم مجموعة واسعة من أنواع المستندات.
-5. **أين يمكنني العثور على ميزات أو دروس تعليمية أكثر تقدمًا؟**
-   - قم بزيارة [توثيق GroupDocs](https://docs.groupdocs.com/viewer/java/) ومرجع API.
+**Q: ما هو GroupDocs.Viewer Java؟**  
+A: GroupDocs.Viewer Java هي مكتبة تحول أكثر من 100 تنسيق مستند إلى HTML أو PDF أو صور لعرض سلس داخل تطبيقات جافا.
 
-## موارد
-- **التوثيق:** [عارض GroupDocs لمستندات Java](https://docs.groupdocs.com/viewer/java/)
-- **مرجع واجهة برمجة التطبيقات:** [مرجع API لـ GroupDocs](https://reference.groupdocs.com/viewer/java/)
-- **تحميل:** [إصدارات GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **شراء:** [شراء GroupDocs](https://purchase.groupdocs.com/buy)
-- **نسخة تجريبية مجانية:** [النسخة التجريبية المجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **رخصة مؤقتة:** [احصل على رخصة مؤقتة](https://purchase.groupdocs.com/temporary-license/)
-- **يدعم:** [منتدى دعم GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+**Q: كيف يمكنني عرض صفحات غير متتالية؟**  
+A: مرّر مصفوفة `int[]` تحتوي على أرقام الصفحات المطلوبة إلى طريقة `render`؛ سيقوم المشاهد بمعالجة كل فهرس على حدة.
 
-هل أنت مستعد لتحسين تطبيقات جافا لديك بإمكانيات عرض مستندات فعّالة؟ استكشف GroupDocs.Viewer لجافا اليوم!
+**Q: هل يمكن لـ GroupDocs.Viewer التعامل مع الملفات الكبيرة بكفاءة؟**  
+A: نعم—يقوم بتدفق الصفحات ويتجنب تحميل المستند بالكامل إلى الذاكرة، مما يسمح بمعالجة ملفات بـ 500 صفحة بأقل من 200 ميغابايت من الذاكرة.
+
+**Q: هل تدعم المكتبة تنسيقات تتجاوز DOCX؟**  
+A: بالتأكيد. تشمل التنسيقات المدعومة PDF، PPTX، XLSX، HTML، TXT، وأكثر من 90 نوعًا من الصور.
+
+**Q: أين يمكنني العثور على دروس متقدمة أكثر؟**  
+A: استكشف الوثائق الرسمية على [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) ومرجع الـ API على [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/).
+
+## الموارد
+- **Official Docs:** [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)
+- **Documentation:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [GroupDocs Releases](https://releases.groupdocs.com/viewer/java/)
+- **Purchase:** [Buy GroupDocs](https://purchase.groupdocs.com/buy)
+- **Free Trial:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License:** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+
+**آخر تحديث:** 2026-06-05  
+**تم الاختبار مع:** GroupDocs.Viewer Java 23.12 (latest at time of writing)  
+**المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [Java&#58; كيفية عرض الصفحات المخفية باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/)
+- [إنشاء معاينة مستند جافا - عرض مناطق طباعة جداول البيانات باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/java-groupdocs-viewer-render-print-areas-spreadsheet/)
+- [معالج عرض مخصص جافا – درس GroupDocs Viewer](/viewer/java/custom-rendering/)

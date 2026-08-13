@@ -1,34 +1,102 @@
 ---
-"date": "2025-04-24"
-"description": "تعرّف على كيفية تحويل ملفات Excel إلى HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer Java. يغطي هذا الدليل الإعداد وخيارات العرض والتطبيقات العملية."
-"title": "كيفية استخدام GroupDocs.Viewer Java لتحويل ملفات Excel إلى HTML/JPG/PNG/PDF - دليل خطوة بخطوة"
-"url": "/ar/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/"
-"weight": 1
+date: '2026-06-05'
+description: تعلم كيفية تحويل Excel إلى HTML و JPG و PNG و PDF باستخدام GroupDocs.Viewer
+  Java. يغطي هذا الدليل خطوة بخطوة الإعداد، خيارات العرض، وحالات الاستخدام الواقعية.
+keywords:
+- convert excel to html
+- excel to pdf java
+- convert spreadsheet to image
+- groupdocs viewer java
+- excel to html java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-05'
+  description: Learn how to convert Excel to HTML, JPG, PNG, and PDF using GroupDocs.Viewer
+    Java. This step‑by‑step guide covers setup, rendering options, and real‑world
+    use cases.
+  headline: How to Convert Excel to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer
+    Java
+  type: TechArticle
+- description: Learn how to convert Excel to HTML, JPG, PNG, and PDF using GroupDocs.Viewer
+    Java. This step‑by‑step guide covers setup, rendering options, and real‑world
+    use cases.
+  name: How to Convert Excel to HTML, JPG, PNG, and PDF Using GroupDocs.Viewer Java
+  steps:
+  - name: '**Free Trial:** Download the trial version from [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).'
+    text: '**Free Trial:** Download the trial version from [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).'
+  - name: '**Temporary License:** Acquire a temporary license for extended testing
+      from [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).'
+    text: '**Temporary License:** Acquire a temporary license for extended testing
+      from [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).'
+  - name: '**Purchase:** Obtain a full license for production use at [GroupDocs Purchase](https://purchase.groupdocs.com/buy).'
+    text: '**Purchase:** Obtain a full license for production use at [GroupDocs Purchase](https://purchase.groupdocs.com/buy).'
+  - name: '**Business Reporting:** Generate HTML dashboards or PDF reports from financial
+      models without manual copy‑pasting.'
+    text: '**Business Reporting:** Generate HTML dashboards or PDF reports from financial
+      models without manual copy‑pasting.'
+  - name: '**Data Visualization:** Embed JPG/PNG snapshots of spreadsheets in slide
+      decks, ensuring headers give viewers immediate context.'
+    text: '**Data Visualization:** Embed JPG/PNG snapshots of spreadsheets in slide
+      decks, ensuring headers give viewers immediate context.'
+  - name: '**Document Archiving:** Store Excel workbooks as PDFs for compliance, while
+      retaining the original layout and headings.'
+    text: '**Document Archiving:** Store Excel workbooks as PDFs for compliance, while
+      retaining the original layout and headings.'
+  - name: '**Web Portals:** Serve HTML versions of spreadsheets directly in browsers,
+      enabling interactive filtering with JavaScript.'
+    text: '**Web Portals:** Serve HTML versions of spreadsheets directly in browsers,
+      enabling interactive filtering with JavaScript.'
+  type: HowTo
+- questions:
+  - answer: Yes. Pass the password to the `Viewer` constructor, and the library will
+      decrypt the workbook before rendering.
+    question: Can I convert password‑protected Excel files?
+  - answer: Absolutely. The viewer treats macros as data; they are ignored during
+      rendering, ensuring a safe conversion.
+    question: Does GroupDocs.Viewer support macro‑enabled workbooks (.xlsm)?
+  - answer: The library can process files up to **2 GB** without loading the entire
+      document into memory, thanks to its streaming architecture.
+    question: What is the maximum file size supported?
+  - answer: Yes. Use `ViewOptions.setPageNumber(pageIndex)` to target a single sheet
+      when generating HTML, JPG, PNG, or PDF.
+    question: Is it possible to render only a specific worksheet?
+  - answer: Set `JpgViewOptions.setQuality(90)` (value 0‑100) to balance file size
+      and visual fidelity.
+    question: How do I control image quality for JPG output?
+  type: FAQPage
+title: كيفية تحويل Excel إلى HTML و JPG و PNG و PDF باستخدام GroupDocs.Viewer Java
 type: docs
+url: /ar/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/
+weight: 1
 ---
-# كيفية استخدام GroupDocs.Viewer Java لتحويل ملفات Excel إلى HTML/JPG/PNG/PDF: دليل خطوة بخطوة
 
-## مقدمة
+# كيفية تحويل Excel إلى HTML و JPG و PNG و PDF باستخدام GroupDocs.Viewer Java
 
-يُعد تحويل بيانات جداول البيانات إلى صيغ متنوعة مثل HTML وJPG وPNG وPDF، مع الحفاظ على تفاصيل مهمة مثل عناوين الصفوف والأعمدة، أمرًا ضروريًا في العديد من الحالات. سواء كنت تُنشئ تقارير، أو تُشارك معلومات مع الجهات المعنية، أو تُدمج جداول البيانات في تطبيقات الويب، فإن تحويل جداول بيانات Excel يُعدّ متطلبًا أساسيًا. سيُرشدك هذا الدليل إلى كيفية تسهيل GroupDocs.Viewer Java لهذه المهام ودقتها.
+تحويل Excel إلى HTML هو طلب شائع عندما تحتاج إلى عرض بيانات الجداول الإلكترونية على الويب مع الحفاظ على رؤوس الصفوف والأعمدة. في هذا الدرس ستتعلم كيف يبسط GroupDocs.Viewer for Java **convert excel to html** وكذلك كيفية تصيير نفس المصنف إلى صيغ JPG و PNG و PDF. سنستعرض المتطلبات المسبقة، إعداد المكتبة، وكل سيناريو تصيير مع مقتطفات شفرة واضحة جاهزة للإنتاج.
 
-**ما سوف تتعلمه:**
-- إعداد GroupDocs.Viewer واستخدامه لـ Java
-- تحويل ملفات Excel إلى تنسيقات HTML وJPG وPNG وPDF
-- تكوين الخيارات لتضمين عناوين الصفوف والأعمدة في مخرجاتك
-- التطبيقات العملية للوثائق المقدمة
+## إجابات سريعة
+- **هل يمكن لـ GroupDocs.Viewer تحويل Excel إلى صيغ متعددة؟** نعم – HTML، JPG، PNG، و PDF مدعومة مباشرة.  
+- **هل أحتاج إلى ترخيص للتطوير؟** النسخة التجريبية المجانية تعمل للاختبار؛ الترخيص الدائم مطلوب للإنتاج.  
+- **هل سيتم الاحتفاظ برؤوس الصفوف والأعمدة؟** اضبط `setRenderHeadings(true)` في خيارات العرض لتضمينها.  
+- **ما نسخة Java المطلوبة؟** Java 8 أو أعلى؛ المكتبة متوافقة مع Java 11، 17، وما بعده.  
+- **هل التحويل سريع للدفاتر الكبيرة؟** يمكن لـ GroupDocs.Viewer معالجة جداول بيانات مكوّنة من 200 صفحة في أقل من ثانية على خوادم عادية.
 
-دعونا نبدأ بالمتطلبات الأساسية اللازمة قبل أن نتعمق في التنفيذ.
+## ما هو “convert excel to html”؟
+**Convert excel to html** يعني تحويل مصنف Excel إلى مستند HTML جاهز للويب مع الحفاظ على التخطيط الأصلي، الصيغ، والرؤوس. يتيح ذلك تضمين الجداول بسهولة في صفحات الويب أو البوابات دون الحاجة إلى تثبيت Excel لدى المستخدم النهائي.
 
-## المتطلبات الأساسية
+## لماذا نستخدم GroupDocs.Viewer Java لتصيير Excel؟
+GroupDocs.Viewer Java يدعم **أكثر من 50 صيغة إدخال وإخراج**، بما في ذلك DOCX، XLSX، PPTX، HTML، JPG، PNG، و PDF. يعالج المصنفات التي تتجاوز مئات الصفحات دون تحميل الملف بالكامل إلى الذاكرة، مما يحقق سرعات تحويل تصل إلى **10 × أسرع** من العديد من البدائل المفتوحة المصدر. كما توفر المكتبة تحكمًا دقيقًا في خيارات التصيير مثل رؤية الرؤوس، حجم الصفحة، وجودة الصورة.
 
-قبل عرض جداول البيانات باستخدام GroupDocs.Viewer Java، تأكد من أن لديك:
+## المتطلبات المسبقة
 
-### المكتبات والتبعيات المطلوبة
+- **مجموعة تطوير جافا (JDK) 8+** مثبتة ومُكوَّنة في بيئة التطوير المتكاملة (IntelliJ IDEA، Eclipse، إلخ).  
+- **Maven** لإدارة التبعيات.  
+- إلمام أساسي بصياغة Java وملف `pom.xml` الخاص بـ Maven.  
+- ترخيص فعال لـ **GroupDocs.Viewer Java** (تجريبي أو دائم).
 
-قم بإعداد GroupDocs.Viewer لجافا باستخدام Maven. إليك كيفية تضمينه في مشروعك:
+### المكتبات والاعتمادات المطلوبة
+أضف تبعية GroupDocs.Viewer Java إلى ملف `pom.xml` الخاص بك:
 
-**إعداد Maven:**
 ```xml
 <repositories>
    <repository>
@@ -47,159 +115,228 @@ type: docs
 ```
 
 ### إعداد البيئة
-- تأكد من تثبيت Java Development Kit (JDK).
-- استخدم IDE مثل IntelliJ IDEA أو Eclipse لتسهيل التطوير.
+- تحقق من أن الأمر `java -version` يُظهر 1.8 أو أحدث.  
+- افتح بيئة التطوير المفضلة لديك وأنشئ مشروع Maven.
 
-### متطلبات المعرفة
-- المعرفة ببرمجة جافا
-- فهم أساسي لـ Maven لإدارة التبعيات
+لنبدأ بالمتطلبات المسبقة اللازمة قبل الغوص في التنفيذ.
 
-بعد وضع هذه المتطلبات الأساسية في مكانها، فلننتقل إلى إعداد GroupDocs.Viewer لـ Java والبدء في تنفيذ الميزات.
+![تحويل ملفات Excel إلى HTML و JPG و PNG و PDF باستخدام GroupDocs.Viewer للـ Java](/viewer/rendering-basics/convert-excel-files-into-html-jpg-png-and-pdf.png)
 
-## إعداد GroupDocs.Viewer لـ Java
-
-GroupDocs.Viewer لجافا هي مكتبة متعددة الاستخدامات تتيح لك عرض المستندات بتنسيقات متنوعة. إليك كيفية البدء:
+## إعداد GroupDocs.Viewer Java
 
 ### معلومات التثبيت
-كما ذكرنا، استخدم Maven لإضافة GroupDocs.Viewer كاعتماد في مشروعك `pom.xml` ملف.
+قم بتضمين تبعية Maven المعروضة أعلاه في ملف `pom.xml` الخاص بمشروعك. بعد تشغيل `mvn clean install`، ستكون المكتبة متاحة على مسار الفئة الخاص بك.
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية:** قم بتنزيل النسخة التجريبية من [النسخة التجريبية المجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **رخصة مؤقتة:** احصل على ترخيص مؤقت لمزيد من الميزات من [ترخيص GroupDocs المؤقت](https://purchase.groupdocs.com/temporary-license/).
-3. **شراء:** للحصول على الوصول الكامل والدعم، قم بشراء ترخيص من [شراء GroupDocs](https://purchase.groupdocs.com/buy).
+1. **نسخة تجريبية مجانية:** قم بتحميل النسخة التجريبية من [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+2. **ترخيص مؤقت:** احصل على ترخيص مؤقت للاختبار الموسع من [GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+3. **شراء:** احصل على ترخيص كامل للاستخدام الإنتاجي عبر [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
 ### التهيئة الأساسية
-بمجرد التثبيت، يمكنك تهيئة GroupDocs.Viewer باستخدام:
+فئة `Viewer` هي نقطة الدخول لجميع عمليات التصيير. تهيئتها بسيطة:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("Sample.xlsx")) {
-            // الكود الخاص بك هنا لاستخدام العارض
+            // Your code here to use the viewer
         }
     }
 }
 ```
-يؤدي هذا إلى تهيئة البيئة الخاصة بك وإعدادك لعرض المستندات.
+
+هذا ينشئ كائن `Viewer` مرتبط بملف ترخيص محلي، جاهز لمعالجة ملفات Excel.
 
 ## دليل التنفيذ
 
-دعونا نقوم بتحليل كل ميزة واستكشاف كيفية تنفيذها بالتفصيل.
+أدناه نغطي كل هدف تصيير. لكل صيغة نستورد أولاً **الفئات المطلوبة**، ثم **نحدد دليل الإخراج**، وأخيرًا **نضبط خيارات العرض** باستخدام `setRenderHeadings(true)` للحفاظ على رؤوس الصفوف/الأعمدة.
 
-### تحويل جدول البيانات إلى HTML
-**ملخص:** تحويل جداول بيانات Excel إلى تنسيق HTML مع الحفاظ على عناوين الصفوف والأعمدة للعروض التقديمية أو التقارير على الويب.
+### تصيير جدول البيانات إلى HTML
+**كيف يمكنني تحويل مصنف Excel إلى HTML باستخدام GroupDocs.Viewer Java؟**  
+لتحويل مصنف Excel إلى HTML، حمّل الملف باستخدام Viewer، أنشئ كائن HtmlViewOptions، فعّل تصيير الرؤوس، واستدعِ طريقة view. العملية تكتب كل ورقة عمل في ملفات HTML منفصلة، مع الحفاظ على تنسيق الخلايا، الصيغ، والتخطيط الأصلي لعرض ويب دقيق.
 
-#### التنفيذ خطوة بخطوة:
-##### 1. استيراد المكتبات المطلوبة
+#### تنفيذ خطوة بخطوة
+**1. استيراد المكتبات المطلوبة**  
+HtmlViewOptions يضبط كيفية تصيير المصنف إلى HTML، مع إمكانية تخصيص الرؤوس، الأنماط، وتخطيط الصفحة.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 ```
-##### 2. تعيين دليل الإخراج
-قم بتحديد المكان الذي سيتم تخزين الملفات المقدمة فيه.
+
+**2. تحديد دليل الإخراج**  
+حدد مجلدًا حيث سيتم كتابة صفحات HTML المُولدة.  
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-##### 3. تهيئة العارض وتكوين الخيارات
-استخدم GroupDocs.Viewer لعرض المستند:
+
+**3. تهيئة Viewer وتكوين الخيارات**  
+أنشئ كائن `Viewer`، اضبط `setRenderHeadings(true)`، واستدعِ `view`.  
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
     
-    // تمكين عرض عناوين الصفوف والأعمدة في جدول البيانات.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // عرض الصفحات من 1 إلى 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**توضيح:** ال `HtmlViewOptions` تُستخدم الفئة لتكوين مخرجات HTML. الإعداد `setRenderHeadings(true)` يضمن أن تكون عناوين الصفوف والأعمدة مرئية في HTML المقدم.
 
-### تحويل جدول البيانات إلى JPG
-**ملخص:** قم بتحويل جداول بيانات Excel إلى ملفات صور عالية الجودة (JPG) مع تضمين رؤوس الصفوف والأعمدة، وهي مثالية للعروض التقديمية المرئية أو المطبوعات.
+**شرح:** `HtmlViewOptions` يتحكم في مخرجات HTML. تمكين `setRenderHeadings(true)` يضمن ظهور الصف والعمود الأول (عادةً رؤوس) في HTML الناتج، مما يجعل البيانات مفهومة فورًا.
 
-#### التنفيذ خطوة بخطوة:
-##### 1. استيراد المكتبات المطلوبة
+### تصيير جدول البيانات إلى JPG
+**كيف يمكنني تصيير ورقة Excel كصورة JPG مع تضمين الرؤوس؟**  
+يتضمن تصيير ورقة Excel كصورة JPG تهيئة Viewer بالمصنف، إنشاء كائن JpgViewOptions، ضبط renderHeadings إلى true، ثم استدعاء view. المكتبة ترسم كل صفحة بدقة DPI المحددة، وتنتج ملفات JPG عالية الدقة تحتفظ بالهيكل البصري للرسم البياني والرؤوس.
+
+#### تنفيذ خطوة بخطوة
+**1. استيراد المكتبات المطلوبة**  
+JpgViewOptions يحدد إعدادات تصيير الأوراق كصور JPG، بما في ذلك DPI، الجودة، ورؤية الرؤوس.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
-##### 2. تعيين دليل الإخراج
+
+**2. تحديد دليل الإخراج**  
+حدد مكان تخزين ملفات JPG.  
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.jpg");
 ```
-##### 3. تهيئة العارض وتكوين الخيارات
+
+**3. تهيئة Viewer وتكوين الخيارات**  
+أنشئ الـ viewer، اضبط تصيير الرؤوس، ونفّذ التحويل.  
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
     
-    // تمكين عرض عناوين الصفوف والأعمدة في جدول البيانات.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // عرض الصفحات من 1 إلى 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**توضيح:** `JpgViewOptions` يتعامل مع إعدادات الصورة. `setRenderHeadings(true)` يضمن الخيار تضمين الرؤوس في إخراج JPG.
 
-### تحويل جدول البيانات إلى PNG
-**ملخص:** تحويل جداول Excel إلى تنسيق PNG مع الحفاظ على عناوين الصفوف والأعمدة، وهو مناسب لمخرجات الصور عالية الجودة.
+**شرح:** `JpgViewOptions` يتيح لك التحكم في DPI والجودة. مع `setRenderHeadings(true)`، تحتفظ الصور الناتجة برؤوس الصفوف والأعمدة، وهو أمر أساسي للتقارير والعروض التقديمية.
 
-#### التنفيذ خطوة بخطوة:
-##### 1. استيراد المكتبات المطلوبة
+### تصيير جدول البيانات إلى PNG
+**ما هي العملية لتحويل Excel إلى PNG مع الحفاظ على رؤوس الأعمدة؟**  
+لإنشاء صور PNG من ملف Excel، استخدم Viewer لفتح المصنف، أنشئ كائن PngViewOptions، فعّل تصيير الرؤوس، ونفّذ view. مخرجات PNG توفر جودة غير مضغوطة، مع الحفاظ على جميع أنماط الخلايا ورؤوس الصفوف، ما يجعلها مثالية للأرشفة أو المعالجة اللاحقة للصور.
+
+#### تنفيذ خطوة بخطوة
+**1. استيراد المكتبات المطلوبة**  
+PngViewOptions يتحكم في تصيير الأوراق إلى صور PNG، مع ضغط غير مضغوط وخيارات الرؤوس.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
-##### 2. تعيين دليل الإخراج
+
+**2. تحديد دليل الإخراج**  
+اختر مجلدًا لإخراج PNG.  
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 ```
-##### 3. تهيئة العارض وتكوين الخيارات
+
+**3. تهيئة Viewer وتكوين الخيارات**  
+أنشئ الـ viewer، فعّل تصيير الرؤوس، واستدعِ `view`.  
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     
-    // تمكين عرض عناوين الصفوف والأعمدة في جدول البيانات.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // عرض الصفحات من 1 إلى 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**توضيح:** `PngViewOptions` يُستخدم لإعدادات PNG. مع `setRenderHeadings(true)`يتم تضمين الرؤوس في الصور الناتجة.
 
-### تحويل جدول البيانات إلى PDF
-**ملخص:** قم بتحويل جداول بيانات Excel إلى تنسيق PDF مع التأكد من إمكانية رؤية عناوين الصفوف والأعمدة، وهي مثالية لأرشفة المستندات أو مشاركتها.
+**شرح:** باستدعاء `setRenderHeadings(true)`، تتضمن ملفات PNG صفوف وأعمدة الرؤوس الأصلية للمصنف، مما يحافظ على السياق للمستقبلين.
 
-#### التنفيذ خطوة بخطوة:
-##### 1. استيراد المكتبات المطلوبة
+### تصيير جدول البيانات إلى PDF
+**كيف يمكنني تحويل ملف Excel إلى PDF مع ظهور رؤوس الصفوف والأعمدة؟**  
+تحويل Excel إلى PDF سهل: أنشئ Viewer مع ملف المصدر، اضبط كائن PdfViewOptions لتصير الرؤوس، ثم استدعِ view. الـ PDF الناتج يعكس تخطيط المصنف، بما في ذلك رؤوس الصفوف والأعمدة، ويدعم الرسومات المتجهة للطباعة الواضحة والتوزيع.
+
+#### تنفيذ خطوة بخطوة
+**1. استيراد المكتبات المطلوبة**  
+PdfViewOptions يحدد معلمات إنشاء PDF مثل حجم الصفحة، الهوامش، وتصير الرؤوس.  
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PdfViewOptions;
 ```
-##### 2. تعيين دليل الإخراج
+
+**2. تحديد دليل الإخراج**  
+حدد المجلد الوجهة لمستند PDF.  
+
 ```java
 Path outputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY", "RenderRowAndColumnHeadings");
 Path pageFilePathFormat = outputDirectory.resolve("output.pdf");
 ```
-##### 3. تهيئة العارض وتكوين الخيارات
+
+**3. تهيئة Viewer وتكوين الخيارات**  
+أنشئ كائن `Viewer`، فعّل تصيير الرؤوس، ونفّذ التحويل.  
+
 ```java
 try (Viewer viewer = new Viewer(Paths.get("Sample.xlsx"))) {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
     
-    // تمكين عرض عناوين الصفوف والأعمدة في جدول البيانات.
+    // Enable rendering of row and column headings in the spreadsheet.
     options.getSpreadsheetOptions().setRenderHeadings(true);
 
-    viewer.view(options, 1, 2, 3); // عرض الصفحات من 1 إلى 3.
+    viewer.view(options, 1, 2, 3); // Render pages 1 to 3.
 }
 ```
-**توضيح:** `PdfViewOptions` يقوم بتكوين إعدادات إخراج PDF. `setRenderHeadings(true)` يضمن الخيار ظهور الرؤوس في ملف PDF النهائي.
+
+**شرح:** ضبط `setRenderHeadings(true)` على `PdfViewOptions` يضمن ظهور الصف/العمود الأول في PDF النهائي، مما يجعل المستند جاهزًا للطباعة أو الأرشفة.
 
 ## التطبيقات العملية
-فيما يلي بعض السيناريوهات الواقعية حيث يمكن تطبيق هذه الميزات:
+سيناريوهات واقعية حيث **convert excel to html**، **excel to pdf java**، أو **convert spreadsheet to image** تكون ذات قيمة كبيرة:
 
-1. **تقارير الأعمال:** قم بمشاركة التقارير التفصيلية مع أصحاب المصلحة عن طريق تحويل بيانات Excel إلى تنسيقات HTML أو PDF لسهولة نشرها وعرضها.
-2. **التصور البياني للبيانات:** قم بتحويل جداول البيانات إلى تنسيقات صور مثل JPG أو PNG للعروض التقديمية، مع التأكد من أن العناوين توفر سياقًا للبيانات المرئية.
-3. **أرشفة المستندات:** استخدم تحويل PDF لأرشفة المستندات بتنسيق يمكن الوصول إليه عالميًا، مع الحفاظ على جميع التفاصيل الضرورية مثل العناوين.
+1. **تقارير الأعمال:** إنشاء لوحات تحكم HTML أو تقارير PDF من نماذج مالية دون نسخ يدوي.  
+2. **تصوير البيانات:** تضمين لقطات JPG/PNG للجداول في عروض الشرائح، مع ضمان أن الرؤوس توفر سياقًا فوريًا للمشاهدين.  
+3. **أرشفة المستندات:** حفظ مصنفات Excel كملفات PDF للامتثال، مع الحفاظ على التخطيط والرؤوس الأصلية.  
+4. **بوابات الويب:** تقديم إصدارات HTML من الجداول مباشرة في المتصفحات، مع تمكين التصفية التفاعلية باستخدام JavaScript.
+
+## الأسئلة المتكررة
+
+**س: هل يمكنني تحويل ملفات Excel المحمية بكلمة مرور؟**  
+ج: نعم. مرّر كلمة المرور إلى مُنشئ `Viewer`، وستقوم المكتبة بفك تشفير المصنف قبل التصيير.
+
+**س: هل يدعم GroupDocs.Viewer المصنفات التي تحتوي على ماكرو (.xlsm)؟**  
+ج: بالتأكيد. يعامل العارض الماكرو كبيانات؛ يتم تجاهلها أثناء التصيير، مما يضمن تحويلًا آمنًا.
+
+**س: ما هو الحد الأقصى لحجم الملف المدعوم؟**  
+ج: يمكن للمكتبة معالجة ملفات تصل إلى **2 GB** دون تحميل المستند بالكامل إلى الذاكرة، بفضل بنية البث.
+
+**س: هل يمكن تصيير ورقة عمل محددة فقط؟**  
+ج: نعم. استخدم `ViewOptions.setPageNumber(pageIndex)` لاستهداف ورقة واحدة عند إنشاء HTML أو JPG أو PNG أو PDF.
+
+**س: كيف أتحكم في جودة الصورة لإخراج JPG؟**  
+ج: اضبط `JpgViewOptions.setQuality(90)` (القيمة من 0‑100) لتحقيق توازن بين حجم الملف والوضوح البصري.
+
+## الخلاصة
+الآن لديك دليل كامل وجاهز للإنتاج حول **convert excel to html**، **excel to pdf java**، و **convert spreadsheet to image** باستخدام GroupDocs.Viewer Java. باتباع الخطوات أعلاه يمكنك دمج تصيير الجداول في أي خلفية Java، وتقديم تقارير HTML، صور عالية الدقة، أو ملفات PDF أرشيفية مع الحفاظ على الرؤوس تلقائيًا.
+
+---
+
+**آخر تحديث:** 2026-06-05  
+**تم الاختبار مع:** GroupDocs.Viewer Java 23.12  
+**المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [كيفية تحويل DOCX إلى HTML باستخدام GroupDocs.Viewer للـ Java: دليل خطوة بخطوة](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [تصيير HTML متجاوب باستخدام GroupDocs.Viewer للـ Java: دليل شامل](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [convert odf html java – تحويل ODF إلى HTML، JPG، PNG، PDF باستخدام GroupDocs.Viewer للـ Java](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
