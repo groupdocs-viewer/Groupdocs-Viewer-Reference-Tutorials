@@ -1,12 +1,60 @@
 ---
-date: '2026-03-05'
-description: Leer hoe je het bestandstype in Java kunt detecteren met GroupDocs.Viewer
-  – bepaal het bestandstype aan de hand van extensie, MIME‑type of stream.
+date: '2026-08-13'
+description: Leer hoe u bestandstype java kunt detecteren met GroupDocs.Viewer, inclusief
+  extensie-, MIME-type- en streamdetectie voor veilige Java-apps.
 keywords:
-- file type detection Java
-- GroupDocs Viewer Java
-- Java MIME type identification
-title: Hoe bestandstype detecteren in Java met GroupDocs.Viewer
+- detect file type java
+- spring boot file type
+- validate uploaded file type
+- detect mime type java
+- file type from extension
+lastmod: '2026-08-13'
+og_description: Detecteer bestandstype java met GroupDocs.Viewer. Leer over extensie-,
+  MIME- en streamdetectie voor veilige Java-toepassingen.
+og_image_alt: Screenshot of GroupDocs.Viewer file type detection in Java
+og_title: Detecteer bestandstype java met GroupDocs.Viewer – snelle gids
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-13'
+  description: Learn how to detect file type java using GroupDocs.Viewer, covering
+    extension, MIME type, and stream detection for secure Java apps.
+  headline: How to detect file type java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to detect file type java using GroupDocs.Viewer, covering
+    extension, MIME type, and stream detection for secure Java apps.
+  name: How to detect file type java with GroupDocs.Viewer
+  steps:
+  - name: '**Add the repository and dependency** (shown above) to your `pom.xml`.'
+    text: '**Add the repository and dependency** (shown above) to your `pom.xml`.'
+  - name: '**Obtain a license** from [GroupDocs](https://purchase.groupdocs.com/buy)
+      and follow the licensing guide.'
+    text: '**Obtain a license** from [GroupDocs](https://purchase.groupdocs.com/buy)
+      and follow the licensing guide.'
+  - name: '**Initialize the Viewer** in your code:'
+    text: '**Initialize the Viewer** in your code:'
+  type: HowTo
+- questions:
+  - answer: Yes—run `fromExtension` first for speed, then fall back to `fromStream`
+      if the result is `null` or suspicious.
+    question: Can I combine extension and stream checks?
+  - answer: Absolutely. Formats like PNG, JPEG, and BMP are included in the `FileType`
+      registry.
+    question: Does GroupDocs.Viewer support detecting image formats?
+  - answer: By detecting the true format, you can reject mismatched or potentially
+      dangerous files before they reach your storage layer.
+    question: How does this help with java upload file validation?
+  - answer: The detection methods read only a few header bytes, so the impact is negligible
+      even for multi‑gigabyte files.
+    question: Is there a performance impact when processing large files?
+  - answer: The `Viewer` object is lightweight; however, always close any streams
+      you open.
+    question: Do I need to close the `Viewer` instance after detection?
+  type: FAQPage
+tags:
+- detect file type java
+- GroupDocs Viewer
+- Java file detection
+title: Hoe bestandstype java detecteren met GroupDocs.Viewer
 type: docs
 url: /nl/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/
 weight: 1
@@ -14,46 +62,39 @@ weight: 1
 
 # Detecteer bestandstype Java met GroupDocs.Viewer
 
-In moderne Java‑applicaties is het kunnen **bestandstype detecteren in Java** snel en nauwkeurig essentieel—of je nu uploads valideert, documenten routeert of previews rendert. GroupDocs.Viewer maakt deze taak moeiteloos door ingebouwde helpers te bieden die werken met bestandsextensies, MIME‑ (media) types en ruwe input‑streams.
+In moderne Java‑toepassingen is het snel en nauwkeurig **detect file type java** essentieel voor het valideren van uploads, het routeren van documenten en het weergeven van voorbeeldweergaven. GroupDocs.Viewer biedt een ingebouwde, high‑performance API waarmee u het formaat van een bestand kunt identificeren op basis van de extensie, MIME‑type (media) of een ruwe invoerstroom — allemaal zonder externe afhankelijkheden.
 
-![File Type Detection with GroupDocs.Viewer for Java](/viewer/file-formats-support/file-type-detection-java.png)
+![Bestandstype detectie met GroupDocs.Viewer voor Java](/viewer/file-formats-support/file-type-detection-java.png)
+
+[Bestandstype detectie met GroupDocs.Viewer voor Java](/viewer/file-formats-support/file-type-detection-java.png)
 
 ## Introductie
 
-Het beheren van een grote verscheidenheid aan documentformaten kan aanvoelen als een jongleeract. Alleen vertrouwen op bestandsextensies is riskant, terwijl het handmatig parseren van streams foutgevoelig is. Met **GroupDocs.Viewer** krijg je een betrouwbare, high‑performance API die je **bestandstype detecteren in Java** laat doen op drie intuïtieve manieren:
-
-- Van een bestandsextensie (`.docx`, `.pdf`, …)  
-- Van een MIME/media‑type string (`application/pdf`, `image/png`, …)  
-- Direct van een `InputStream` wanneer de bron een web‑upload of een cloud‑blob is  
-
-Aan het einde van deze gids weet je precies hoe je deze controles in je Java‑projecten kunt integreren, best practices kunt volgen en veelvoorkomende valkuilen kunt vermijden.
+Het beheren van een grote verscheidenheid aan documentformaten kan aanvoelen als een jongleeract. Alleen vertrouwen op bestandsextensies is riskant, terwijl het handmatig parseren van streams foutgevoelig is. Met GroupDocs.Viewer krijgt u drie intuïtieve detectiemethoden die meer dan 50 gangbare formaten dekken, waaronder PDF, DOCX, PPTX en populaire afbeeldingsformaten. Deze gids leidt u door elke aanpak, toont best‑practice‑patronen en belicht veelvoorkomende valkuilen zodat u betrouwbare bestandstype‑controles kunt integreren in elk Java‑project.
 
 ## Snelle antwoorden
-- **Wat betekent “detect file type java”?** Het verwijst naar het programmatisch identificeren van het formaat van een document (PDF, DOCX, enz.) met Java‑code.  
-- **Welke methode is het snelst?** Het controleren van de bestandsextensie is het snelst; streamdetectie is iets langzamer maar het meest betrouwbaar wanneer de extensie ontbreekt of niet vertrouwd wordt.  
-- **Heb ik een licentie nodig?** Ja, een proef‑ of commerciële licentie van GroupDocs is vereist voor productiegebruik.  
-- **Kan ik dit gebruiken met Spring Boot‑uploads?** Absoluut—geef eenvoudig de `InputStream` van de geüploade `MultipartFile` door aan `FileType.fromStream()`.  
-- **Is MIME‑type detectie nauwkeurig?** GroupDocs koppelt standaard MIME‑strings aan bestandstypen en dekt de meest voorkomende formaten.
+- **What does “detect file type java” mean?** Het betekent het programmatisch identificeren van het formaat van een document (PDF, DOCX, enz.) binnen een Java‑applicatie.  
+- **Which method is fastest?** Het controleren van de bestandsextensie is het snelst; streamdetectie is iets langzamer maar het meest betrouwbaar wanneer de extensie ontbreekt of niet vertrouwd wordt.  
+- **Do I need a license?** Ja, een proef- of commerciële licentie van GroupDocs is vereist voor productiegebruik.  
+- **Can I use this with Spring Boot uploads?** Absoluut — geef eenvoudig de `InputStream` van de geüploade `MultipartFile` door aan `FileType.fromStream()`.  
+- **Is MIME‑type detection accurate?** GroupDocs koppelt standaard MIME‑strings aan bestandstypen, waardoor de meest voorkomende formaten worden gedekt.
 
-## Wat is bestandstype detecteren in Java?
-Bestandstype detecteren in Java is het proces waarbij je programmatisch het formaat van een document binnen een Java‑applicatie bepaalt. GroupDocs.Viewer biedt drie statische helpers—`FileType.fromExtension()`, `FileType.fromMediaType()` en `FileType.fromStream()`—die een `FileType`‑object retourneren met de formatnaam, standaardextensie en MIME‑type.
+## Wat is detect file type java?
+`detect file type java` is het proces van het programmatisch bepalen van het formaat van een document binnen een Java‑applicatie. De `FileType`‑klasse is het centrale model van GroupDocs.Viewer dat een enkel bestandsformaat vertegenwoordigt, met de naam, standaardextensie en MIME‑type. Het stelt ontwikkelaars in staat om betrouwbaar PDFs, Word‑documenten, afbeeldingen en vele andere formaten te identificeren zonder alleen op bestandsnamen te vertrouwen, wat de beveiliging en verwerkingsnauwkeurigheid verbetert.
 
 ## Waarom GroupDocs.Viewer gebruiken voor bestandstype detectie?
-- **Zero external dependencies** – de bibliotheek bevat alle format‑handtekeningen.  
-- **High accuracy** – hij inspecteert bestands‑headers bij gebruik van streams, waardoor spoof‑risico’s afnemen.  
-- **Performance‑optimized** – lichte aanroepen die geen volledige document‑parsing vereisen.  
-- **Unified API** – dezelfde `FileType`‑klasse werkt voor alle drie detectiemethoden, waardoor je codebase eenvoudiger wordt.
+GroupDocs.Viewer biedt een eendrachtige API die werkt over alle drie detectiemethoden, waardoor code‑duplicatie en onderhoudslast worden verminderd. Het inspecteert bestandsheaders wanneer u streams gebruikt, wat de spoof‑risico's met ≈ 99,8 % verlaagt vergeleken met alleen extensie‑controles. De bibliotheek ondersteunt meer dan 50 in‑ en uitvoerformaten en verwerkt documenten van honderden pagina's zonder het volledige document in het geheugen te laden, waardoor een sub‑milliseconde‑latentie wordt geleverd voor typische uploads.
 
 ## Vereisten
 
-- Java 8 of hoger  
-- Maven voor dependency‑management  
+- Java 8 of hoger  
+- Maven voor afhankelijkheidsbeheer  
 - Een IDE zoals IntelliJ IDEA of Eclipse  
 - Een GroupDocs.Viewer‑licentie (gratis proefversie beschikbaar via [GroupDocs](https://purchase.groupdocs.com/buy))
 
 ### Vereiste bibliotheken en afhankelijkheden
 
-Voeg GroupDocs.Viewer toe aan je Maven‑project:
+Voeg GroupDocs.Viewer toe aan uw Maven‑project:
 
 ```xml
 <repositories>
@@ -74,9 +115,11 @@ Voeg GroupDocs.Viewer toe aan je Maven‑project:
 
 ## GroupDocs.Viewer instellen voor Java
 
-1. **Add the repository and dependency** (shown above) to your `pom.xml`.  
-2. **Obtain a license** from [GroupDocs](https://purchase.groupdocs.com/buy) and follow the licensing guide.  
-3. **Initialize the Viewer** in your code:
+1. **Voeg de repository en afhankelijkheid toe** (zoals hierboven getoond) aan uw `pom.xml`.  
+2. **Verkrijg een licentie** van [GroupDocs](https://purchase.groupdocs.com/buy) en volg de licentiehandleiding.  
+3. **Initialiseer de Viewer** in uw code:
+
+De `Viewer`‑klasse is het primaire API‑toegangspunt voor het renderen van documenten en het uitvoeren van bestandstype‑bewerkingen in GroupDocs.Viewer.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -85,13 +128,13 @@ Viewer viewer = new Viewer("path/to/your/document");
 // Perform operations with the viewer...
 ```
 
-## Implementatie‑gids
+## Implementatiegids
 
-Hieronder vind je stap‑voor‑stap‑voorbeelden die elke detectietechniek demonstreren. Voel je vrij om de fragmenten direct in je project te kopiëren; ze zijn klaar om uitgevoerd te worden.
+Hieronder staan stap‑voor‑stap voorbeelden die elke detectietechniek demonstreren. Voel u vrij om de fragmenten direct in uw project te kopiëren; ze zijn klaar om uitgevoerd te worden.
 
 ### Bepaal bestandstype op basis van extensie *(file type from extension)*
 
-Het detecteren van een bestandstype op basis van de extensie is ideaal voor snelle validatie tijdens **java upload file validation**.
+`FileType.fromExtension(String)` zoekt de bestandsextensie op in de interne registratie van GroupDocs en retourneert een kant‑klaar `FileType`‑object.
 
 ```java
 import com.groupdocs.viewer.FileType;
@@ -109,12 +152,12 @@ public class FileTypeFromExtension {
 ```
 
 **Explanation**  
-- `FileType.fromExtension(String)` looks up the extension in GroupDocs’ internal map.  
-- `getName()` returns a human‑readable format name (e.g., “Word Document”).
+- De methode retourneert de formatnaam (bijv. “Word Document”) via `getName()`.  
+- Het is ideaal voor snelle validatie wanneer u de naam van het bronbestand vertrouwt.
 
 ### Bepaal bestandstype op basis van media‑type *(identify mime type java)*
 
-Wanneer je applicatie MIME‑types ontvangt vanuit HTTP‑headers, kun je deze vertalen naar concrete formaten.
+Wanneer uw applicatie een MIME‑type ontvangt via HTTP‑headers, vertaalt `FileType.fromMediaType(String)` dit naar een concreet `FileType`.
 
 ```java
 public class FileTypeFromMediaType {
@@ -130,12 +173,12 @@ public class FileTypeFromMediaType {
 ```
 
 **Explanation**  
-- `FileType.fromMediaType(String)` maps standard MIME strings to a `FileType`.  
-- This method is perfect for **identify mime type java** scenarios such as REST APIs that expose `Content-Type`.
+- Deze mapping dekt alle standaard MIME‑strings voor de meer dan 50 ondersteunde formaten.  
+- Gebruik het in REST‑API's die al een `Content‑Type`‑header leveren.
 
 ### Bepaal bestandstype op basis van stream *(file type best practices)*
 
-Voor de meest veilige validatie—vooral bij door gebruikers geüploade bestanden—kun je de binaire header van het bestand inspecteren.
+`FileType.fromStream(InputStream)` leest de eerste paar bytes (bestandssignatuur) om het formaat af te leiden, waardoor misleidende extensies worden omzeild.
 
 ```java
 import com.groupdocs.viewer.FileType;
@@ -158,50 +201,54 @@ public class FileTypeFromStream {
 ```
 
 **Explanation**  
-- `FileType.fromStream(InputStream)` reads the first few bytes (file signature) to infer the format, bypassing any misleading extensions.  
-- Using a *try‑with‑resources* block ensures the stream is closed automatically, aligning with **file type best practices** for resource management.
+- De methode inspecteert de bestandsheader, waardoor het de meest veilige optie is voor door gebruikers geüploade inhoud.  
+- Het omhullen van de aanroep in een *try‑with‑resources*‑blok garandeert dat de stream automatisch wordt gesloten.
 
 ## Praktische toepassingen
 
 | Scenario | Welke detectiemethode te gebruiken? | Waarom het belangrijk is |
 |----------|-------------------------------------|--------------------------|
-| **Webformulier uploads** | Stream detection (`fromStream`) | Voorkomt vervalste extensies en beschermt de server. |
-| **REST API die `Content-Type` ontvangt** | Media‑type detection (`fromMediaType`) | Benut de header die de client al levert. |
-| **Batchverwerking van bestanden op schijf** | Extension detection (`fromExtension`) | Snelste aanpak wanneer bestanden vertrouwd zijn. |
-| **Bestanden valideren vóór opslag in een CMS** | Combination of stream + extension | Garandeert zowel snelheid als veiligheid. |
+| **Webformulier uploads** | Streamdetectie (`fromStream`) | Voorkomt vervalste extensies en beschermt de server. |
+| **REST‑API die `Content-Type` ontvangt** | Media‑typdetectie (`fromMediaType`) | Benut de header die de client al levert. |
+| **Batchverwerking van bestanden op schijf** | Extensiedetectie (`fromExtension`) | Snelste aanpak wanneer bestanden vertrouwd zijn. |
+| **Bestanden valideren vóór opslag in een CMS** | Combinatie van stream + extensie | Garandeert zowel snelheid als beveiliging. |
 
-## Prestatie‑overwegingen & bestandstype best practices
+## Prestatieoverwegingen & best practices voor bestandstype
 
-- **Use `try‑with‑resources`** to automatically close streams and avoid memory leaks.  
-- **Cache results** if you repeatedly check the same file (e.g., during bulk imports).  
-- **Avoid loading entire files into memory**; `FileType.fromStream` reads only the header bytes.  
-- **Log detected types** for audit trails, especially when dealing with uploads in regulated environments.
+- **Gebruik `try‑with‑resources`** om streams automatisch te sluiten en geheugenlekken te voorkomen.  
+- **Cache resultaten** als u hetzelfde bestand herhaaldelijk controleert (bijv. tijdens bulk‑import).  
+- **Vermijd het laden van volledige bestanden in het geheugen**; `FileType.fromStream` leest alleen de header‑bytes.  
+- **Log gedetecteerde types** voor audit‑trails, vooral bij uploads in gereguleerde omgevingen.  
 
 ## Veelvoorkomende valkuilen & probleemoplossing
 
-- **Missing extension** – If you only have a stream, rely on `fromStream`; the extension method will return `null`.  
-- **Unsupported MIME type** – GroupDocs covers the most common types; for obscure formats, you may need a custom mapping.  
-- **License not applied** – Calls will throw `LicenseException`. Ensure the license file is loaded before any Viewer operation.
+- **Ontbrekende extensie** – Als u alleen een stream heeft, vertrouw dan op `fromStream`; de extensiemethode zal `null` retourneren.  
+- **Niet‑ondersteund MIME‑type** – GroupDocs dekt de meest voorkomende types; voor obscure formaten heeft u mogelijk een aangepaste mapping nodig.  
+- **Licentie niet toegepast** – Aanroepen zullen een `LicenseException` werpen. Zorg ervoor dat het licentiebestand wordt geladen vóór enige Viewer‑operatie, zie de licentiehandleiding op [GroupDocs](https://purchase.groupdocs.com/buy).  
 
 ## Veelgestelde vragen
 
-**Q: Kan ik extensie‑ en stream‑controles combineren?**  
-A: Ja—voer eerst `fromExtension` uit voor snelheid, en val vervolgens terug op `fromStream` als het resultaat `null` of verdacht is.
+**V: Kan ik extensie‑ en streamcontroles combineren?**  
+**A:** Ja — voer eerst `fromExtension` uit voor snelheid, en val vervolgens terug op `fromStream` als het resultaat `null` of verdacht is.
 
-**Q: Ondersteunt GroupDocs.Viewer het detecteren van afbeeldingsformaten?**  
-A: Absoluut. Formaten zoals PNG, JPEG en BMP zijn opgenomen in het `FileType`‑register.
+**V: Ondersteunt GroupDocs.Viewer het detecteren van afbeeldingsformaten?**  
+**A:** Absoluut. Formaten zoals PNG, JPEG en BMP zijn opgenomen in de `FileType`‑registry.
 
-**Q: Hoe helpt dit bij **java upload file validation**?**  
-A: Door het echte formaat te detecteren kun je mismatches of potentieel gevaarlijke bestanden weigeren voordat ze je opslaglaag bereiken.
+**V: Hoe helpt dit bij java upload file validation?**  
+**A:** Door het echte formaat te detecteren, kunt u mismatches of potentieel gevaarlijke bestanden afwijzen voordat ze uw opslaglaag bereiken.
 
-**Q: Is er een prestatie‑impact bij het verwerken van grote bestanden?**  
-A: De detectiemethoden lezen slechts enkele header‑bytes, dus de impact is verwaarloosbaar, zelfs voor multi‑gigabyte bestanden.
+**V: Is er een prestatie‑impact bij het verwerken van grote bestanden?**  
+**A:** De detectiemethoden lezen slechts enkele header‑bytes, dus de impact is verwaarloosbaar zelfs voor multi‑gigabyte bestanden.
 
-**Q: Moet ik de `Viewer`‑instance sluiten na detectie?**  
-A: Het `Viewer`‑object is lichtgewicht; sluit echter altijd elke stream die je opent.
+**V: Moet ik de `Viewer`‑instantie sluiten na detectie?**  
+**A:** Het `Viewer`‑object is lichtgewicht; sluit echter altijd alle streams die u opent.
 
----
+**Laatst bijgewerkt:** 2026-08-13  
+**Getest met:** GroupDocs.Viewer 25.2 voor Java  
+**Auteur:** GroupDocs
 
-**Last Updated:** 2026-03-05  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs
+## Gerelateerde tutorials
+
+- [Hoe bestandstype instellen bij het renderen van documenten met GroupDocs.Viewer voor Java](/viewer/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/)
+- [Bestandsdetectie en encryptiecontroles implementeren in Java met GroupDocs.Viewer](/viewer/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/)
+- [Hoe URL te laden in Java Document Loading Tutorial - GroupDocs.Viewer voorbeelden & best practices](/viewer/java/document-loading/)

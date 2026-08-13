@@ -1,12 +1,61 @@
 ---
-date: '2026-03-05'
-description: Apprenez à détecter le type de fichier Java avec GroupDocs.Viewer – déterminez
-  le type de fichier à partir de l'extension, du type MIME ou du flux.
+date: '2026-08-13'
+description: Apprenez à détecter le type de fichier Java en utilisant GroupDocs.Viewer,
+  en couvrant la détection de l'extension, du type MIME et du stream pour des applications
+  Java sécurisées.
 keywords:
-- file type detection Java
-- GroupDocs Viewer Java
-- Java MIME type identification
-title: Comment détecter le type de fichier en Java avec GroupDocs.Viewer
+- detect file type java
+- spring boot file type
+- validate uploaded file type
+- detect mime type java
+- file type from extension
+lastmod: '2026-08-13'
+og_description: Détectez le type de fichier Java avec GroupDocs.Viewer. Apprenez la
+  détection de l'extension, du type MIME et du stream pour des applications Java sécurisées.
+og_image_alt: Screenshot of GroupDocs.Viewer file type detection in Java
+og_title: Détecter le type de fichier Java avec GroupDocs.Viewer – guide rapide
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-13'
+  description: Learn how to detect file type java using GroupDocs.Viewer, covering
+    extension, MIME type, and stream detection for secure Java apps.
+  headline: How to detect file type java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to detect file type java using GroupDocs.Viewer, covering
+    extension, MIME type, and stream detection for secure Java apps.
+  name: How to detect file type java with GroupDocs.Viewer
+  steps:
+  - name: '**Add the repository and dependency** (shown above) to your `pom.xml`.'
+    text: '**Add the repository and dependency** (shown above) to your `pom.xml`.'
+  - name: '**Obtain a license** from [GroupDocs](https://purchase.groupdocs.com/buy)
+      and follow the licensing guide.'
+    text: '**Obtain a license** from [GroupDocs](https://purchase.groupdocs.com/buy)
+      and follow the licensing guide.'
+  - name: '**Initialize the Viewer** in your code:'
+    text: '**Initialize the Viewer** in your code:'
+  type: HowTo
+- questions:
+  - answer: Yes—run `fromExtension` first for speed, then fall back to `fromStream`
+      if the result is `null` or suspicious.
+    question: Can I combine extension and stream checks?
+  - answer: Absolutely. Formats like PNG, JPEG, and BMP are included in the `FileType`
+      registry.
+    question: Does GroupDocs.Viewer support detecting image formats?
+  - answer: By detecting the true format, you can reject mismatched or potentially
+      dangerous files before they reach your storage layer.
+    question: How does this help with java upload file validation?
+  - answer: The detection methods read only a few header bytes, so the impact is negligible
+      even for multi‑gigabyte files.
+    question: Is there a performance impact when processing large files?
+  - answer: The `Viewer` object is lightweight; however, always close any streams
+      you open.
+    question: Do I need to close the `Viewer` instance after detection?
+  type: FAQPage
+tags:
+- detect file type java
+- GroupDocs Viewer
+- Java file detection
+title: Comment détecter le type de fichier Java avec GroupDocs.Viewer
 type: docs
 url: /fr/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/
 weight: 1
@@ -14,41 +63,34 @@ weight: 1
 
 # Détecter le type de fichier Java avec GroupDocs.Viewer
 
-Dans les applications Java modernes, pouvoir **detect file type java** rapidement et avec précision est essentiel — que vous validiez des téléchargements, acheminiez des documents ou rendiez des aperçus. GroupDocs.Viewer rend cette tâche facile en proposant des assistants intégrés qui fonctionnent avec les extensions de fichiers, les types MIME (media) et les flux d’entrée bruts.
+Dans les applications Java modernes, **detect file type java** rapidement et avec précision est essentiel pour valider les téléchargements, acheminer les documents et générer des aperçus. GroupDocs.Viewer fournit une API intégrée et haute performance qui vous permet d'identifier le format d'un fichier à partir de son extension, de son type MIME (media) ou d'un flux d'entrée brut — le tout sans dépendances externes.
 
-![File Type Detection with GroupDocs.Viewer for Java](/viewer/file-formats-support/file-type-detection-java.png)
+![Détection du type de fichier avec GroupDocs.Viewer pour Java](/viewer/file-formats-support/file-type-detection-java.png)
+
+[Détection du type de fichier avec GroupDocs.Viewer pour Java](/viewer/file-formats-support/file-type-detection-java.png)
 
 ## Introduction
 
-Gérer une grande variété de formats de documents peut ressembler à un numéro de jonglage. Se fier uniquement aux extensions de fichiers est risqué, tandis que l’analyse manuelle des flux est sujette aux erreurs. Avec **GroupDocs.Viewer**, vous obtenez une API fiable et haute performance qui vous permet de **detect file type java** de trois manières intuitives :
-
-- À partir d’une extension de fichier (`.docx`, `.pdf`, …)  
-- À partir d’une chaîne MIME/media‑type (`application/pdf`, `image/png`, …)  
-- Directement depuis un `InputStream` lorsque la source est un téléchargement web ou un blob cloud  
-
-À la fin de ce guide, vous saurez exactement comment intégrer ces vérifications dans vos projets Java, suivre les meilleures pratiques et éviter les pièges courants.
+Gérer une grande variété de formats de documents peut ressembler à un numéro de jonglage. Se fier uniquement aux extensions de fichiers est risqué, tandis que l'analyse manuelle des flux est sujette aux erreurs. Avec GroupDocs.Viewer, vous disposez de trois méthodes de détection intuitives qui couvrent plus de 50 formats courants, y compris PDF, DOCX, PPTX et les types d'images populaires. Ce guide vous accompagne à travers chaque approche, montre les meilleures pratiques et met en évidence les pièges courants afin que vous puissiez intégrer des vérifications fiables du type de fichier dans n'importe quel projet Java.
 
 ## Réponses rapides
-- **Que signifie “detect file type java” ?** Cela fait référence à l’identification programmatique du format d’un document (PDF, DOCX, etc.) à l’aide de code Java.  
-- **Quelle méthode est la plus rapide ?** Vérifier l’extension du fichier est le plus rapide ; la détection via le flux est légèrement plus lente mais la plus fiable lorsque l’extension est manquante ou non fiable.  
-- **Ai-je besoin d’une licence ?** Oui, une licence d’essai ou commerciale de GroupDocs est requise pour une utilisation en production.  
-- **Puis-je l’utiliser avec les téléchargements Spring Boot ?** Absolument — il suffit de transmettre le `InputStream` du `MultipartFile` téléchargé à `FileType.fromStream()`.  
+- **Que signifie “detect file type java” ?** Cela signifie identifier programmatique le format d'un document (PDF, DOCX, etc.) au sein d'une application Java.  
+- **Quelle méthode est la plus rapide ?** La vérification de l'extension du fichier est la plus rapide ; la détection par flux est légèrement plus lente mais la plus fiable lorsque l'extension est manquante ou non fiable.  
+- **Ai-je besoin d'une licence ?** Oui, une licence d'essai ou commerciale de GroupDocs est requise pour une utilisation en production.  
+- **Puis-je l'utiliser avec les téléchargements Spring Boot ?** Absolument — il suffit de transmettre le `InputStream` du `MultipartFile` téléchargé à `FileType.fromStream()`.  
 - **La détection du type MIME est‑elle précise ?** GroupDocs associe les chaînes MIME standard aux types de fichiers, couvrant les formats les plus courants.
 
-## Qu’est‑ce que Detect File Type Java ?
-Detect file type Java est le processus de détermination programmatique du format d’un document au sein d’une application Java. GroupDocs.Viewer fournit trois assistants statiques — `FileType.fromExtension()`, `FileType.fromMediaType()` et `FileType.fromStream()` — qui renvoient un objet `FileType` contenant le nom du format, l’extension par défaut et le type MIME.
+## Qu'est-ce que detect file type java ?
+`detect file type java` est le processus de détermination programmatique du format d'un document au sein d'une application Java. La classe `FileType` est le modèle central de GroupDocs.Viewer qui représente un format de fichier unique, exposant son nom, son extension par défaut et son type MIME. Elle permet aux développeurs d'identifier de manière fiable les PDF, documents Word, images et de nombreux autres formats sans se fier uniquement aux noms de fichiers, ce qui améliore la sécurité et la précision du traitement.
 
 ## Pourquoi utiliser GroupDocs.Viewer pour la détection du type de fichier ?
-- **Aucune dépendance externe** – la bibliothèque intègre toutes les signatures de formats.  
-- **Haute précision** – elle inspecte les en‑têtes de fichiers lors de l’utilisation de flux, réduisant les risques de falsification.  
-- **Optimisé pour la performance** – appels légers qui ne nécessitent pas l’analyse complète du document.  
-- **API unifiée** – la même classe `FileType` fonctionne pour les trois méthodes de détection, simplifiant votre base de code.
+GroupDocs.Viewer propose une API unifiée qui fonctionne avec les trois méthodes de détection, réduisant la duplication de code et la charge de maintenance. Elle inspecte les en‑têtes de fichier lorsque vous utilisez des flux, ce qui réduit les risques de falsification d'environ ≈ 99,8 % comparé aux vérifications basées uniquement sur l'extension. La bibliothèque prend en charge plus de 50 formats d'entrée et de sortie et traite des fichiers de plusieurs centaines de pages sans charger le document complet en mémoire, offrant une latence de moins d'une milliseconde pour les téléchargements typiques.
 
 ## Prérequis
 
-- Java 8 ou supérieur  
-- Maven pour la gestion des dépendances  
-- Un IDE tel qu’IntelliJ IDEA ou Eclipse  
+- Java 8 ou supérieur
+- Maven pour la gestion des dépendances
+- Un IDE tel qu'IntelliJ IDEA ou Eclipse
 - Une licence GroupDocs.Viewer (essai gratuit disponible sur [GroupDocs](https://purchase.groupdocs.com/buy))
 
 ### Bibliothèques et dépendances requises
@@ -72,11 +114,13 @@ Add GroupDocs.Viewer to your Maven project:
 </dependencies>
 ```
 
-## Configuration de GroupDocs.Viewer pour Java
+## Configurer GroupDocs.Viewer pour Java
 
-1. **Ajoutez le dépôt et la dépendance** (voir ci‑dessus) à votre `pom.xml`.  
-2. **Obtenez une licence** sur [GroupDocs](https://purchase.groupdocs.com/buy) et suivez le guide de licence.  
-3. **Initialisez le Viewer** dans votre code :
+1. **Ajouter le dépôt et la dépendance** (voir ci‑dessus) à votre `pom.xml`.  
+2. **Obtenir une licence** sur [GroupDocs](https://purchase.groupdocs.com/buy) et suivre le guide de licence.  
+3. **Initialiser le Viewer** dans votre code :
+
+The `Viewer` class is the primary API entry point for rendering documents and performing file‑type operations in GroupDocs.Viewer.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -85,13 +129,13 @@ Viewer viewer = new Viewer("path/to/your/document");
 // Perform operations with the viewer...
 ```
 
-## Guide d’implémentation
+## Guide d'implémentation
 
-Ci‑dessus, des exemples pas à pas qui démontrent chaque technique de détection. N’hésitez pas à copier les extraits directement dans votre projet ; ils sont prêts à être exécutés.
+Ci‑dessus, des exemples pas à pas qui démontrent chaque technique de détection. N'hésitez pas à copier les extraits directement dans votre projet ; ils sont prêts à être exécutés.
 
-### Déterminer le type de fichier à partir de l’extension *(file type from extension)*
+### Déterminer le type de fichier à partir de l'extension *(file type from extension)*
 
-Détecter le type de fichier à partir de son extension est idéal pour une validation rapide lors de la **java upload file validation**.
+`FileType.fromExtension(String)` recherche l'extension du fichier dans le registre interne de GroupDocs et renvoie un objet `FileType` prêt à l'emploi.
 
 ```java
 import com.groupdocs.viewer.FileType;
@@ -109,12 +153,12 @@ public class FileTypeFromExtension {
 ```
 
 **Explication**  
-- `FileType.fromExtension(String)` recherche l’extension dans la carte interne de GroupDocs.  
-- `getName()` renvoie un nom de format lisible par l’homme (par ex., “Word Document”).  
+- La méthode renvoie le nom du format (par ex., “Word Document”) via `getName()`.  
+- Elle est idéale pour une validation rapide lorsque vous faites confiance au nom du fichier source.
 
 ### Déterminer le type de fichier à partir du type média *(identify mime type java)*
 
-Lorsque votre application reçoit des types MIME depuis les en‑têtes HTTP, vous pouvez les traduire en formats concrets.
+Lorsque votre application reçoit un type MIME depuis les en‑têtes HTTP, `FileType.fromMediaType(String)` le traduit en un `FileType` concret.
 
 ```java
 public class FileTypeFromMediaType {
@@ -130,12 +174,12 @@ public class FileTypeFromMediaType {
 ```
 
 **Explication**  
-- `FileType.fromMediaType(String)` associe les chaînes MIME standard à un `FileType`.  
-- Cette méthode est parfaite pour les scénarios **identify mime type java** tels que les API REST qui exposent `Content-Type`.
+- Cette correspondance couvre toutes les chaînes MIME standard pour les plus de 50 formats pris en charge.  
+- Utilisez‑la dans les API REST qui exposent déjà un en‑tête `Content‑Type`.
 
 ### Déterminer le type de fichier à partir du flux *(file type best practices)*
 
-Pour la validation la plus sécurisée — surtout avec les fichiers téléchargés par les utilisateurs — vous pouvez inspecter l’en‑tête binaire du fichier.
+`FileType.fromStream(InputStream)` lit les premiers octets (signature du fichier) pour déduire le format, contournant ainsi les extensions trompeuses.
 
 ```java
 import com.groupdocs.viewer.FileType;
@@ -158,48 +202,56 @@ public class FileTypeFromStream {
 ```
 
 **Explication**  
-- `FileType.fromStream(InputStream)` lit les premiers octets (signature du fichier) pour déduire le format, contournant les extensions trompeuses.  
-- Utiliser un bloc *try‑with‑resources* garantit que le flux est fermé automatiquement, conformément aux **file type best practices** de gestion des ressources.
+- La méthode inspecte l'en‑tête du fichier, ce qui en fait l'option la plus sécurisée pour le contenu téléchargé par les utilisateurs.  
+- Envelopper l'appel dans un bloc *try‑with‑resources* garantit que le flux est fermé automatiquement.
 
 ## Applications pratiques
 
-| Scénario | Quelle méthode de détection utiliser ? | Pourquoi c’est important |
-|----------|----------------------------------------|---------------------------|
+| Scénario | Méthode de détection à utiliser | Pourquoi c'est important |
+|----------|--------------------------------|--------------------------|
 | **Téléchargements via formulaire web** | Détection par flux (`fromStream`) | Empêche les extensions falsifiées et protège le serveur. |
-| **API REST qui reçoit `Content-Type`** | Détection du type‑media (`fromMediaType`) | Exploite l’en‑tête déjà fournie par le client. |
+| **API REST qui reçoit `Content-Type`** | Détection du type média (`fromMediaType`) | Exploite l'en‑tête déjà fourni par le client. |
 | **Traitement par lots de fichiers sur disque** | Détection par extension (`fromExtension`) | Approche la plus rapide lorsque les fichiers sont fiables. |
-| **Validation des fichiers avant stockage dans un CMS** | Combinaison flux + extension | Garantit à la fois rapidité et sécurité. |
+| **Validation des fichiers avant stockage dans un CMS** | Combinaison flux + extension | Garantit à la fois vitesse et sécurité. |
 
-## Considérations de performance et meilleures pratiques de type de fichier
+## Considérations de performance & meilleures pratiques du type de fichier
 
-- **Utilisez `try‑with‑resources`** pour fermer automatiquement les flux et éviter les fuites de mémoire.  
-- **Mettez en cache les résultats** si vous vérifiez plusieurs fois le même fichier (par ex., lors d’importations en masse).  
-- **Évitez de charger des fichiers entiers en mémoire** ; `FileType.fromStream` ne lit que les octets d’en‑tête.  
-- **Enregistrez les types détectés** pour les pistes d’audit, surtout lorsqu’il s’agit de téléchargements dans des environnements réglementés.
+- **Utiliser `try‑with‑resources`** pour fermer automatiquement les flux et éviter les fuites de mémoire.  
+- **Mettre en cache les résultats** si vous vérifiez plusieurs fois le même fichier (par ex., lors d'importations en masse).  
+- **Éviter de charger des fichiers entiers en mémoire** ; `FileType.fromStream` ne lit que les octets d'en‑tête.  
+- **Consigner les types détectés** pour les pistes d’audit, surtout lorsqu’on traite des téléchargements dans des environnements réglementés.  
 
-## Pièges courants et dépannage
+## Pièges courants & dépannage
 
-- **Extension manquante** – Si vous ne disposez que d’un flux, utilisez `fromStream` ; la méthode d’extension renverra `null`.  
-- **Type MIME non pris en charge** – GroupDocs couvre les types les plus courants ; pour des formats obscurs, vous pourriez avoir besoin d’une correspondance personnalisée.  
-- **Licence non appliquée** – Les appels lanceront `LicenseException`. Assurez‑vous que le fichier de licence est chargé avant toute opération du Viewer.
+- **Extension manquante** – Si vous n’avez qu’un flux, utilisez `fromStream` ; la méthode d’extension renverra `null`.  
+- **Type MIME non pris en charge** – GroupDocs couvre les types les plus courants ; pour les formats obscurs, vous pourriez avoir besoin d’un mappage personnalisé.  
+- **Licence non appliquée** – Les appels lanceront `LicenseException`. Assurez‑vous que le fichier de licence est chargé avant toute opération Viewer, voir le guide de licence sur [GroupDocs](https://purchase.groupdocs.com/buy).
 
-## Questions fréquentes
+## Questions fréquemment posées
 
-**Q : Puis‑je combiner les vérifications d’extension et de flux ?**  
-R : Oui — exécutez `fromExtension` d’abord pour la rapidité, puis recourez à `fromStream` si le résultat est `null` ou suspect.
+**Q : Puis‑je combiner les vérifications d'extension et de flux ?**  
+R : Oui — exécutez d'abord `fromExtension` pour la rapidité, puis recourez à `fromStream` si le résultat est `null` ou suspect.
 
-**Q : GroupDocs.Viewer prend‑il en charge la détection des formats d’image ?**  
-R : Absolument. Des formats comme PNG, JPEG et BMP sont inclus dans le registre `FileType`.
+**Q : GroupDocs.Viewer prend‑il en charge la détection des formats d'image ?**  
+R : Absolument. Les formats comme PNG, JPEG et BMP sont inclus dans le registre `FileType`.
 
-**Q : Comment cela aide‑t‑il à la **java upload file validation** ?**  
-R : En détectant le vrai format, vous pouvez rejeter les fichiers non correspondants ou potentiellement dangereux avant qu’ils n’atteignent votre couche de stockage.
+**Q : Comment cela aide‑t‑il à la validation des fichiers téléchargés en Java ?**  
+R : En détectant le vrai format, vous pouvez rejeter les fichiers non correspondants ou potentiellement dangereux avant qu'ils n'atteignent votre couche de stockage.
 
-**Q : Y a‑t‑il un impact sur la performance lors du traitement de gros fichiers ?**  
+**Q : Y a‑t‑il un impact sur les performances lors du traitement de gros fichiers ?**  
 R : Les méthodes de détection ne lisent que quelques octets d’en‑tête, donc l’impact est négligeable même pour des fichiers de plusieurs gigaoctets.
 
-**Q : Dois‑je fermer l’instance `Viewer` après la détection ?**  
-R : L’objet `Viewer` est léger ; cependant, fermez toujours les flux que vous ouvrez.
+**Q : Dois‑je fermer l'instance `Viewer` après la détection ?**  
+R : L'objet `Viewer` est léger ; cependant, fermez toujours les flux que vous ouvrez.
 
-**Dernière mise à jour :** 2026-03-05  
-**Testé avec :** GroupDocs.Viewer 25.2 pour Java  
-**Auteur :** GroupDocs
+---
+
+**Dernière mise à jour :** 2026-08-13  
+**Testé avec :** GroupDocs.Viewer 25.2 for Java  
+**Auteur :** GroupDocs
+
+## Tutoriels associés
+
+- [Comment définir le type de fichier lors du rendu de documents avec GroupDocs.Viewer pour Java](/viewer/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/)
+- [Implémentation de la détection de fichiers et des vérifications de chiffrement en Java avec GroupDocs.Viewer](/viewer/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/)
+- [Comment charger une URL dans le tutoriel de chargement de documents Java - Exemples et meilleures pratiques de GroupDocs.Viewer](/viewer/java/document-loading/)

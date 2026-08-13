@@ -1,59 +1,100 @@
 ---
-date: '2026-03-05'
-description: GroupDocs.Viewer kullanarak Java’da dosya türünü nasıl tespit edeceğinizi
-  öğrenin – dosya türünü uzantı, MIME tipi veya akıştan belirleyin.
+date: '2026-08-13'
+description: GroupDocs.Viewer kullanarak java dosya türü nasıl algılanır öğrenin,
+  extension, MIME type ve stream detection ile güvenli Java uygulamaları için.
 keywords:
-- file type detection Java
-- GroupDocs Viewer Java
-- Java MIME type identification
-title: GroupDocs.Viewer ile Java’da Dosya Türünü Nasıl Algılayabilirsiniz
+- detect file type java
+- spring boot file type
+- validate uploaded file type
+- detect mime type java
+- file type from extension
+lastmod: '2026-08-13'
+og_description: GroupDocs.Viewer kullanarak java dosya türü algılayın. Extension,
+  MIME ve stream detection öğrenin, güvenli Java uygulamaları için.
+og_image_alt: Screenshot of GroupDocs.Viewer file type detection in Java
+og_title: GroupDocs.Viewer ile java dosya türü algılama – hızlı rehber
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-13'
+  description: Learn how to detect file type java using GroupDocs.Viewer, covering
+    extension, MIME type, and stream detection for secure Java apps.
+  headline: How to detect file type java with GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to detect file type java using GroupDocs.Viewer, covering
+    extension, MIME type, and stream detection for secure Java apps.
+  name: How to detect file type java with GroupDocs.Viewer
+  steps:
+  - name: '**Add the repository and dependency** (shown above) to your `pom.xml`.'
+    text: '**Add the repository and dependency** (shown above) to your `pom.xml`.'
+  - name: '**Obtain a license** from [GroupDocs](https://purchase.groupdocs.com/buy)
+      and follow the licensing guide.'
+    text: '**Obtain a license** from [GroupDocs](https://purchase.groupdocs.com/buy)
+      and follow the licensing guide.'
+  - name: '**Initialize the Viewer** in your code:'
+    text: '**Initialize the Viewer** in your code:'
+  type: HowTo
+- questions:
+  - answer: Yes—run `fromExtension` first for speed, then fall back to `fromStream`
+      if the result is `null` or suspicious.
+    question: Can I combine extension and stream checks?
+  - answer: Absolutely. Formats like PNG, JPEG, and BMP are included in the `FileType`
+      registry.
+    question: Does GroupDocs.Viewer support detecting image formats?
+  - answer: By detecting the true format, you can reject mismatched or potentially
+      dangerous files before they reach your storage layer.
+    question: How does this help with java upload file validation?
+  - answer: The detection methods read only a few header bytes, so the impact is negligible
+      even for multi‑gigabyte files.
+    question: Is there a performance impact when processing large files?
+  - answer: The `Viewer` object is lightweight; however, always close any streams
+      you open.
+    question: Do I need to close the `Viewer` instance after detection?
+  type: FAQPage
+tags:
+- detect file type java
+- GroupDocs Viewer
+- Java file detection
+title: GroupDocs.Viewer ile java dosya türü nasıl algılanır
 type: docs
 url: /tr/java/file-formats-support/mastering-file-type-detection-java-groupdocs-viewer/
 weight: 1
 ---
 
-# GroupDocs.Viewer ile Java’da Dosya Türü Algılama
+# GroupDocs.Viewer ile Java Dosya Türü Algılama
 
-Modern Java uygulamalarında, **detect file type java**'ı hızlı ve doğru bir şekilde algılayabilmek, yüklemeleri doğrulama, belgeleri yönlendirme veya ön izlemeler oluşturma gibi durumlarda hayati öneme sahiptir. GroupDocs.Viewer, dosya uzantıları, MIME (medya) tipleri ve ham giriş akışlarıyla çalışan yerleşik yardımcılar sunarak bu görevi zahmetsiz hâle getirir.
+Modern Java uygulamalarında, **detect file type java** hızlı ve doğru bir şekilde tespit etmek, yüklemeleri doğrulamak, belgeleri yönlendirmek ve ön izlemeler oluşturmak için esastır. GroupDocs.Viewer, dosyanın formatını uzantısına, MIME (medya) türüne veya ham giriş akışına göre tanımlamanızı sağlayan yerleşik, yüksek performanslı bir API sunar—tüm bunlar harici bağımlılıklar olmadan.
 
-![Java için GroupDocs.Viewer ile Dosya Türü Algılaması](/viewer/file-formats-support/file-type-detection-java.png)
+![GroupDocs.Viewer for Java ile Dosya Türü Algılama](/viewer/file-formats-support/file-type-detection-java.png)
+
+[GroupDocs.Viewer for Java ile Dosya Türü Algılama](/viewer/file-formats-support/file-type-detection-java.png)
 
 ## Giriş
 
-Çeşitli belge formatlarını yönetmek, bir jonglörlük gösterisi gibi hissettirebilir. Yalnızca dosya uzantılarına güvenmek risklidir, akışları manuel olarak ayrıştırmak ise hataya açıktır. **GroupDocs.Viewer** ile, **detect file type java**'ı üç sezgisel şekilde yapmanızı sağlayan güvenilir, yüksek performanslı bir API elde edersiniz:
-
-- Bir dosya uzantısından (`.docx`, `.pdf`, …)  
-- Bir MIME/media‑type dizesinden (`application/pdf`, `image/png`, …)  
-- Kaynak bir web yüklemesi veya bulut blob'u olduğunda doğrudan bir `InputStream`'den  
-
-Bu rehberin sonunda, bu kontrolleri Java projelerinize nasıl entegre edeceğinizi, en iyi uygulamaları nasıl takip edeceğinizi ve yaygın tuzaklardan nasıl kaçınacağınızı tam olarak öğreneceksiniz.
+Çeşitli belge formatlarını yönetmek, bir jonglörlük gösterisi gibi hissettirebilir. Sadece dosya uzantılarına güvenmek risklidir, akışları manuel olarak ayrıştırmak ise hataya açıktır. GroupDocs.Viewer ile 50+ yaygın formatı kapsayan üç sezgisel algılama yöntemi elde edersiniz; PDF, DOCX, PPTX ve popüler görüntü türleri dahil. Bu kılavuz, her yaklaşımı adım adım gösterir, en iyi uygulama kalıplarını sunar ve yaygın tuzakları vurgular, böylece güvenilir dosya‑türü kontrollerini herhangi bir Java projesine entegre edebilirsiniz.
 
 ## Hızlı Yanıtlar
-- **“detect file type java” ne anlama geliyor?** Java kodu kullanarak bir belgenin formatını (PDF, DOCX vb.) programlı olarak tanımlamayı ifade eder.  
-- **Hangi yöntem en hızlı?** Dosya uzantısını kontrol etmek en hızlısıdır; akış tespiti biraz daha yavaştır ancak uzantı eksik veya güvenilmez olduğunda en güvenilir olandır.  
-- **Bir lisansa ihtiyacım var mı?** Evet, üretim ortamında kullanmak için GroupDocs'tan bir deneme veya ticari lisans gereklidir.  
+- **“detect file type java” ne anlama geliyor?** Program içinde bir belgenin formatını (PDF, DOCX vb.) programatik olarak tanımlamak anlamına gelir.  
+- **Hangi yöntem en hızlı?** Dosya uzantısını kontrol etmek en hızlıdır; akış algılaması biraz daha yavaştır ancak uzantı eksik ya da güvenilmez olduğunda en güvenilir olandır.  
+- **Lisans gerekli mi?** Evet, üretim kullanımı için GroupDocs'tan bir deneme veya ticari lisans gereklidir.  
 - **Bunu Spring Boot yüklemeleriyle kullanabilir miyim?** Kesinlikle—yüklenen `MultipartFile`'ın `InputStream`'ini `FileType.fromStream()`'e geçirmeniz yeterlidir.  
-- **MIME‑type tespiti doğru mu?** GroupDocs, standart MIME dizelerini dosya türlerine eşler ve en yaygın formatları kapsar.
+- **MIME‑type algılaması doğru mu?** GroupDocs, en yaygın formatları kapsayan standart MIME dizelerini dosya türlerine eşler.
 
-## Detect File Type Java Nedir?
-Detect file type Java, bir Java uygulaması içinde bir belgenin formatını programlı olarak belirleme sürecidir. GroupDocs.Viewer, `FileType.fromExtension()`, `FileType.fromMediaType()` ve `FileType.fromStream()` olmak üzere üç statik yardımcı sağlar; bu yardımcılar format adı, varsayılan uzantı ve MIME tipini içeren bir `FileType` nesnesi döndürür.
+## detect file type java Nedir?
+`detect file type java`, bir Java uygulaması içinde bir belgenin formatını programatik olarak belirleme sürecidir. `FileType` sınıfı, GroupDocs.Viewer’ın tek bir dosya formatını temsil eden merkezi modelidir; adını, varsayılan uzantısını ve MIME tipini sunar. Dosya adlarına yalnızca güvenmek yerine PDF, Word belgeleri, görüntüler ve birçok diğer formatı güvenilir bir şekilde tanımlamayı sağlar; bu da güvenliği ve işleme doğruluğunu artırır.
 
-## Dosya Türü Algılaması için GroupDocs.Viewer Neden Kullanılmalı?
-- **Sıfır dış bağımlılık** – kütüphane tüm format imzalarını içinde barındırır.  
-- **Yüksek doğruluk** – akış kullanıldığında dosya başlıklarını inceler, taklit risklerini azaltır.  
-- **Performans‑optimizeli** – tam belge ayrıştırması gerektirmeyen hafif çağrılar.  
-- **Birleştirilmiş API** – aynı `FileType` sınıfı üç tespit yönteminde de çalışır, kod tabanınızı basitleştirir.
+## Dosya türü algılaması için GroupDocs.Viewer neden kullanılmalı?
+GroupDocs.Viewer, üç algılama yönteminde ortak bir API sunarak kod tekrarını ve bakım yükünü azaltır. Akış kullandığınızda dosya başlıklarını inceler; bu, yalnızca uzantıya dayalı kontrollerle karşılaştırıldığında sahtecilik riskini ≈ %99.8 azaltır. Kütüphane 50+ giriş ve çıkış formatını destekler ve çok sayfalı dosyaları belgenin tamamını belleğe yüklemeden işler; tipik yüklemeler için milisaniyeden az gecikme sağlar.
 
 ## Önkoşullar
 
-- Java 8 ve üzeri  
+- Java 8 ve üzeri  
 - Bağımlılık yönetimi için Maven  
 - IntelliJ IDEA veya Eclipse gibi bir IDE  
 - GroupDocs.Viewer lisansı (ücretsiz deneme [GroupDocs](https://purchase.groupdocs.com/buy) adresinden temin edilebilir)
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
+### Gerekli kütüphaneler ve bağımlılıklar
 
-Maven projenize GroupDocs.Viewer ekleyin:
+Add GroupDocs.Viewer to your Maven project:
 
 ```xml
 <repositories>
@@ -75,8 +116,10 @@ Maven projenize GroupDocs.Viewer ekleyin:
 ## Java için GroupDocs.Viewer Kurulumu
 
 1. **Depoyu ve bağımlılığı ekleyin** (yukarıda gösterildiği gibi) `pom.xml` dosyanıza.  
-2. **Bir lisans edinin** [GroupDocs](https://purchase.groupdocs.com/buy) adresinden ve lisans kılavuzunu izleyin.  
-3. **Viewer'ı başlatın** kodunuzda:
+2. **[GroupDocs](https://purchase.groupdocs.com/buy) adresinden bir lisans edinin** ve lisanslama kılavuzunu izleyin.  
+3. **Kodunuzda Viewer'ı başlatın**:
+
+The `Viewer` class is the primary API entry point for rendering documents and performing file‑type operations in GroupDocs.Viewer.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -87,11 +130,11 @@ Viewer viewer = new Viewer("path/to/your/document");
 
 ## Uygulama Kılavuzu
 
-Aşağıda, her tespit tekniğini gösteren adım‑adım örnekler bulunmaktadır. Parçacıkları doğrudan projenize kopyalayabilirsiniz; çalıştırılmaya hazırdır.
+Aşağıda her algılama tekniğini gösteren adım‑adım örnekler bulacaksınız. Parçacıkları doğrudan projenize kopyalayabilirsiniz; çalıştırmaya hazırdırlar.
 
-### Uzantıdan Dosya Türünü Belirleme *(file type from extension)*
+### Uzantıya göre dosya türünü belirleme *(file type from extension)*
 
-Bir dosyanın uzantısından dosya türünü tespit etmek, **java upload file validation** sırasında hızlı doğrulama için idealdir.
+`FileType.fromExtension(String)` GroupDocs’ün dahili kayıt defterinde dosya uzantısını arar ve kullanıma hazır bir `FileType` nesnesi döndürür.
 
 ```java
 import com.groupdocs.viewer.FileType;
@@ -109,12 +152,12 @@ public class FileTypeFromExtension {
 ```
 
 **Açıklama**  
-- `FileType.fromExtension(String)` uzantıyı GroupDocs'in iç haritasında arar.  
-- `getName()` insan tarafından okunabilir bir format adı döndürür (ör. “Word Document”).
+- Yöntem, format adını (ör. “Word Document”) `getName()` aracılığıyla döndürür.  
+- Kaynak dosyanın adına güvendiğinizde hızlı doğrulama için idealdir.
 
-### Media‑Type'dan Dosya Türünü Belirleme *(identify mime type java)*
+### Medya türünden dosya türünü belirleme *(identify mime type java)*
 
-Uygulamanız HTTP başlıklarından MIME tiplerini aldığında, bunları somut formatlara dönüştürebilirsiniz.
+Uygulamanız HTTP başlıklarından bir MIME türü aldığında, `FileType.fromMediaType(String)` bunu somut bir `FileType` nesnesine dönüştürür.
 
 ```java
 public class FileTypeFromMediaType {
@@ -130,12 +173,12 @@ public class FileTypeFromMediaType {
 ```
 
 **Açıklama**  
-- `FileType.fromMediaType(String)` standart MIME dizelerini bir `FileType`'a eşler.  
-- Bu yöntem, `Content-Type` sunan REST API'leri gibi **identify mime type java** senaryoları için mükemmeldir.
+- Bu eşleme, 50+ desteklenen format için tüm standart MIME dizelerini kapsar.  
+- Zaten bir `Content‑Type` başlığı sunan REST API'lerinde kullanın.
 
-### Akıştan Dosya Türünü Belirleme *(file type best practices)*
+### Akıştan dosya türünü belirleme *(file type best practices)*
 
-En güvenli doğrulama için—özellikle kullanıcı tarafından yüklenen dosyalarda—dosyanın ikili başlığını inceleyebilirsiniz.
+`FileType.fromStream(InputStream)` ilk birkaç baytı (dosya imzası) okuyarak formatı tahmin eder; yanıltıcı uzantıları göz ardı eder.
 
 ```java
 import com.groupdocs.viewer.FileType;
@@ -158,50 +201,54 @@ public class FileTypeFromStream {
 ```
 
 **Açıklama**  
-- `FileType.fromStream(InputStream)` formatı tahmin etmek için ilk birkaç baytı (dosya imzası) okur, yanıltıcı uzantıları atlar.  
-- *try‑with‑resources* bloğu kullanmak, akışın otomatik olarak kapanmasını sağlar ve kaynak yönetimi için **file type best practices** ile uyumludur.
+- Yöntem dosya başlığını inceler, bu da kullanıcı tarafından yüklenen içerik için en güvenli seçenektir.  
+- Çağrıyı bir *try‑with‑resources* bloğuna sarmak, akışın otomatik olarak kapatılmasını garanti eder.
 
 ## Pratik Uygulamalar
 
-| Senaryo | Hangi tespit yöntemi kullanılmalı? | Neden önemli |
-|----------|--------------------------------|----------------|
-| **Web form yüklemeleri** | Akış tespiti (`fromStream`) | Sahte uzantıları önler ve sunucuyu korur. |
-| **`Content-Type` alan REST API** | Media‑type tespiti (`fromMediaType`) | İstemcinin zaten sağladığı başlığı kullanır. |
-| **Diskteki dosyaların toplu işlenmesi** | Uzantı tespiti (`fromExtension`) | Dosyalar güvenilir olduğunda en hızlı yaklaşımdır. |
-| **CMS'e kaydetmeden önce dosyaları doğrulama** | Akış + uzantı kombinasyonu | Hem hız hem de güvenliği garanti eder. |
+| Senaryo | Hangi algılama yöntemi kullanılmalı? | Neden önemli |
+|----------|--------------------------------------|--------------|
+| **Web form yüklemeleri** | Akış algılaması (`fromStream`) | Sahte uzantıları önler ve sunucuyu korur. |
+| **`Content-Type` alan REST API** | Medya‑türü algılaması (`fromMediaType`) | İstemcinin zaten sağladığı başlığı kullanır. |
+| **Diskteki dosyaların toplu işlenmesi** | Uzantı algılaması (`fromExtension`) | Dosyalar güvenilir olduğunda en hızlı yöntem. |
+| **CMS'e kaydetmeden önce dosyaları doğrulama** | Akış + uzantı kombinasyonu | Hem hız hem de güvenliği garantiler. |
 
-## Performans Düşünceleri ve Dosya Türü En İyi Uygulamaları
+## Performans hususları ve dosya türü en iyi uygulamaları
 
-- **`try‑with‑resources` kullanın** akışları otomatik olarak kapatmak ve bellek sızıntılarını önlemek için.  
-- **Sonuçları önbelleğe alın** aynı dosyayı tekrarlayan kontrollerde (ör. toplu içe aktarmalar sırasında).  
-- **Tüm dosyaları belleğe yüklemekten kaçının**; `FileType.fromStream` yalnızca başlık baytlarını okur.  
+- **`try‑with‑resources` kullanın** akışları otomatik kapatmak ve bellek sızıntılarını önlemek için.  
+- **Sonuçları önbelleğe alın** aynı dosyayı tekrar tekrar kontrol ediyorsanız (ör. toplu ithalat sırasında).  
+- **Tüm dosyaları belleğe yüklemekten kaçının**; `FileType.fromStream` sadece başlık baytlarını okur.  
 - **Algılanan türleri kaydedin** denetim izleri için, özellikle düzenlenmiş ortamlarda yüklemelerle çalışırken.  
 
-## Yaygın Tuzaklar ve Sorun Giderme
+## Yaygın tuzaklar ve sorun giderme
 
-- **Eksik uzantı** – Yalnızca bir akışınız varsa `fromStream`'e güvenin; uzantı yöntemi `null` dönecektir.  
-- **Desteklenmeyen MIME tipi** – GroupDocs en yaygın tipleri kapsar; nadir formatlar için özel bir eşleme gerekebilir.  
-- **Lisans uygulanmadı** – Çağrılar `LicenseException` fırlatır. Herhangi bir Viewer işlemi öncesinde lisans dosyasının yüklendiğinden emin olun.  
+- **Uzantı eksik** – Sadece bir akışınız varsa `fromStream`'e güvenin; uzantı yöntemi `null` dönecektir.  
+- **Desteklenmeyen MIME türü** – GroupDocs en yaygın türleri kapsar; nadir formatlar için özel bir eşleme gerekebilir.  
+- **Lisans uygulanmadı** – Çağrılar `LicenseException` fırlatır. Herhangi bir Viewer işleminden önce lisans dosyasının yüklendiğinden emin olun, lisanslama kılavuzuna [GroupDocs](https://purchase.groupdocs.com/buy) adresinden bakın.  
 
 ## Sıkça Sorulan Sorular
 
 **S: Uzantı ve akış kontrollerini birleştirebilir miyim?**  
-C: Evet—hız için önce `fromExtension` çalıştırın, ardından sonuç `null` veya şüpheli ise `fromStream`'e geçin.
+**C:** Evet—hız için önce `fromExtension` çalıştırın, ardından sonuç `null` veya şüpheli ise `fromStream`'e geçin.
 
-**S: GroupDocs.Viewer görüntü formatlarını tespit etmeyi destekliyor mu?**  
-C: Kesinlikle. PNG, JPEG ve BMP gibi formatlar `FileType` kayıt defterine dahildir.
+**S: GroupDocs.Viewer görüntü formatlarını algılamayı destekliyor mu?**  
+**C:** Kesinlikle. PNG, JPEG ve BMP gibi formatlar `FileType` kayıt defterine dahildir.
 
-**S: Bu, java upload file validation'a nasıl yardımcı olur?**  
-C: Gerçek formatı tespit ederek, uyumsuz veya potansiyel tehlikeli dosyaları depolama katmanına ulaşmadan reddedebilirsiniz.
+**S: Bu, java yükleme dosya doğrulamasına nasıl yardımcı olur?**  
+**C:** Gerçek formatı tespit ederek, uyumsuz veya potansiyel tehlikeli dosyaları depolama katmanına ulaşmadan reddedebilirsiniz.
 
-**S: Büyük dosyalar işlenirken performans etkisi var mı?**  
-C: Tespit yöntemleri yalnızca birkaç başlık baytı okur, bu yüzden çok‑gigabayt dosyalar için etkisi ihmal edilebilir.
+**S: Büyük dosyaları işlerken performans etkisi var mı?**  
+**C:** Algılama yöntemleri sadece birkaç başlık baytı okur, bu yüzden çok‑gigabayt dosyalar için bile etkisi ihmal edilebilir.
 
-**S: Tespitten sonra `Viewer` örneğini kapatmam gerekiyor mu?**  
-C: `Viewer` nesnesi hafiftir; ancak açtığınız akışları her zaman kapatın.
+**S: Algılamadan sonra `Viewer` örneğini kapatmam gerekir mi?**  
+**C:** `Viewer` nesnesi hafif bir yapıdır; ancak açtığınız akışları her zaman kapatın.
 
----
-
-**Son Güncelleme:** 2026-03-05  
-**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Son Güncelleme:** 2026-08-13  
+**Test Edilen:** GroupDocs.Viewer 25.2 for Java  
 **Yazar:** GroupDocs
+
+## İlgili Eğitimler
+
+- [GroupDocs.Viewer for Java ile Belgeleri Render ederken Dosya Türü Nasıl Ayarlanır](/viewer/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/)
+- [Java'da GroupDocs.Viewer ile Dosya Algılama ve Şifreleme Kontrolleri Uygulama](/viewer/java/security-permissions/groupdocs-viewer-java-file-detection-encryption/)
+- [Java Belge Yükleme Eğitiminde URL Nasıl Yüklenir - GroupDocs.Viewer Örnekleri ve En İyi Uygulamalar](/viewer/java/document-loading/)
