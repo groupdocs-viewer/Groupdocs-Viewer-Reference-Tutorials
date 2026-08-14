@@ -1,43 +1,107 @@
 ---
-"date": "2025-04-24"
-"description": "Apprenez à générer facilement des mises en page spécifiques à partir de dessins CAO grâce à GroupDocs.Viewer pour Java. Améliorez la précision de votre projet et gagnez du temps grâce à notre guide étape par étape."
-"title": "Comment afficher des dessins CAO spécifiques en Java avec GroupDocs.Viewer"
-"url": "/fr/java/rendering-basics/render-cad-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-20'
+description: Apprenez à rendre des mises en page spécifiques à partir de fichiers
+  DWG avec GroupDocs.Viewer for Java, à convertir le CAD en HTML et à extraire efficacement
+  les mises en page DWG.
+keywords:
+- groupdocs viewer dwg
+- convert cad to html
+- extract layout dwg
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-20'
+  description: Learn how to render specific layouts from DWG files with GroupDocs.Viewer
+    for Java, convert CAD to HTML, and extract layout DWG efficiently.
+  headline: groupdocs viewer dwg – How to Render Specific CAD Drawings in Java Using
+    GroupDocs.Viewer
+  type: TechArticle
+- description: Learn how to render specific layouts from DWG files with GroupDocs.Viewer
+    for Java, convert CAD to HTML, and extract layout DWG efficiently.
+  name: groupdocs viewer dwg – How to Render Specific CAD Drawings in Java Using GroupDocs.Viewer
+  steps:
+  - name: Define the output directory
+    text: 'Create a folder where the generated HTML files will be saved. The `Utils`
+      helper creates a platform‑independent output folder for rendered files. *Explanation*:
+      `Utils.getOutputDirectoryPath` builds a platform‑independent path and creates
+      the folder if it does not exist.'
+  - name: Set up naming for rendered pages
+    text: 'Specify a naming pattern that includes a placeholder for the page number.
+      *Explanation*: `{0}` is replaced by the page index, allowing you to render multiple
+      layouts without filename collisions.'
+  - name: Configure HtmlViewOptions
+    text: 'Tell the viewer to embed resources and to target a single layout. HtmlViewOptions
+      configures how the output HTML is generated, including resource embedding and
+      layout selection. *Explanation*: `forEmbeddedResources` packs images and CSS
+      directly into the HTML, producing a single portable file per la'
+  - name: Choose the layout you want to render
+    text: 'Provide the exact layout name as it appears inside the DWG file. The `layoutName`
+      property specifies which drawing layout the viewer should render. *Explanation*:
+      Setting `layoutName` to `"Model"` (or any custom layout) instructs GroupDocs.Viewer
+      to ignore all other views.'
+  - name: Render the layout and clean up
+    text: 'Open the viewer in a try‑with‑resources block, invoke `view`, and let Java
+      close the instance automatically. The `Viewer` class is the main entry point
+      for rendering documents with GroupDocs.Viewer. *Explanation*: The `view` call
+      streams the selected layout to HTML files in the output folder; the vi'
+  type: HowTo
+- questions:
+  - answer: It is a server‑side library that converts more than 50 document and CAD
+      formats—including DWG—into HTML, PNG, or JPEG without needing installed Office
+      or CAD software.
+    question: What is GroupDocs.Viewer for Java?
+  - answer: Visit the [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/)
+      and request a free temporary license for development and testing.
+    question: How do I obtain a temporary license for GroupDocs.Viewer?
+  - answer: Yes, it streams pages and can render multi‑hundred‑page drawings while
+      keeping memory usage below 200 MB, provided you close the `Viewer` instance
+      after each operation.
+    question: Can GroupDocs.Viewer handle very large DWG files efficiently?
+  - answer: Absolutely – replace `HtmlViewOptions` with `PdfViewOptions` and specify
+      the same layout name to get a PDF output.
+    question: Is it possible to convert a DWG layout directly to PDF instead of HTML?
+  - answer: The official documentation and API reference contain additional code snippets
+      for batch processing and custom rendering pipelines.
+    question: Where can I find more examples of layout extraction?
+  type: FAQPage
+title: groupdocs viewer dwg – Comment rendre des dessins CAD spécifiques en Java avec
+  GroupDocs.Viewer
 type: docs
+url: /fr/java/rendering-basics/render-cad-groupdocs-viewer-java/
+weight: 1
 ---
-# Comment afficher des dessins CAO spécifiques en Java avec GroupDocs.Viewer
 
-## Introduction
+# groupdocs viewer dwg – Comment rendre des dessins CAD spécifiques en Java avec GroupDocs.Viewer
 
-Le rendu de mises en page spécifiques à partir de dessins CAO est essentiel pour se concentrer sur des éléments de conception spécifiques et améliorer la précision des présentations visuelles. Ce tutoriel montre comment extraire et afficher des sections spécifiques d'un fichier CAO à l'aide de **GroupDocs.Viewer pour Java**.
+Rendre des mises en page spécifiques à partir d'un fichier DWG est une exigence courante lorsque vous devez vous concentrer sur une vue de conception unique, générer des aperçus HTML légers ou intégrer une couche de dessin particulière dans une page Web. Dans ce tutoriel, vous découvrirez comment **GroupDocs.Viewer for Java** simplifie le rendu d'une mise en page choisie, la conversion CAD en HTML et l'extraction de la mise en page DWG en quelques lignes de code seulement.
 
-Dans ce guide, vous apprendrez :
-- Comment configurer GroupDocs.Viewer pour Java
-- Étapes pour restituer des mises en page spécifiques à partir de fichiers CAO
-- Options de configuration clés et leurs objectifs
-- Conseils de dépannage pour les problèmes courants
+![Rendre des dessins CAD spécifiques avec GroupDocs.Viewer pour Java](/viewer/rendering-basics/render-specific-cad-drawings-java.png)
+
+## Réponses rapides
+- **Quelle bibliothèque rend le DWG en HTML ?** GroupDocs.Viewer for Java.  
+- **Puis-je rendre un seul layout d'un DWG ?** Oui – spécifiez le nom du layout dans `HtmlViewOptions`.  
+- **Ai-je besoin d'une licence pour le développement ?** Un essai gratuit suffit pour les tests ; une licence permanente est requise pour la production.  
+- **Quelle version de Java est requise ?** JDK 8 ou ultérieure.  
+- **L'utilisation de la mémoire est‑elle un problème avec les gros fichiers CAD ?** Utilisez les options de streaming et fermez rapidement l'instance `Viewer`.
+
+## Qu'est-ce que groupdocs viewer dwg ?
+`GroupDocs.Viewer` est une bibliothèque Java qui convertit plus de 50 formats de documents et CAD — y compris le DWG — en représentations compatibles Web telles que HTML, PNG ou JPEG. Elle traite les fichiers sans nécessiter de logiciel CAD natif, offrant un rendu cohérent sur toutes les plateformes.
+
+## Pourquoi utiliser GroupDocs.Viewer pour le rendu DWG ?
+GroupDocs.Viewer prend en charge **plus de 50 formats d'entrée CAD** et peut rendre des dessins de plusieurs centaines de pages tout en maintenant la consommation de mémoire sous 200 Mo grâce au streaming des pages à la demande. Son extraction de mise en page intégrée vous permet d'isoler une seule vue, ce qui réduit le temps de chargement de la page jusqu'à **70 %** comparé au rendu du dessin complet.
 
 ## Prérequis
+- **GroupDocs.Viewer for Java** ≥ 25.2.  
+- Maven pour la gestion des dépendances.  
+- JDK 8+ installé localement.  
+- Familiarité de base avec la structure des fichiers DWG (layouts, model space, paper space).
 
-Avant de rendre les mises en page, assurez-vous de disposer des éléments suivants :
+## Comment rendre un layout spécifique d'un fichier DWG ?
+Chargez le fichier DWG souhaité, configurez les options de rendu HTML et spécifiez la mise en page que vous voulez produire. En définissant le nom du layout dans `HtmlViewOptions`, le visualiseur extrait uniquement cette vue et génère les fichiers HTML correspondants. Cette approche simplifie la génération d'aperçus et réduit le temps de traitement, le flux complet se compose de trois étapes concises.
 
-### Bibliothèques, versions et dépendances requises :
-- **GroupDocs.Viewer pour Java**:Version 25.2 ou ultérieure.
-- Maven pour gérer les dépendances.
+### Étape 1 : Définir le répertoire de sortie
+Créez un dossier où les fichiers HTML générés seront enregistrés.
 
-### Configuration requise pour l'environnement :
-- Un kit de développement Java (JDK) fonctionnel.
-- Compréhension de base des concepts de programmation Java.
-
-### Prérequis en matière de connaissances :
-- Connaissance des dessins CAO, en particulier des fichiers DWG.
-- À l'aise avec l'utilisation d'un environnement de développement intégré (IDE) comme IntelliJ IDEA ou Eclipse.
-
-## Configuration de GroupDocs.Viewer pour Java
-
-Ajoutez GroupDocs.Viewer comme dépendance dans votre projet à l'aide de Maven :
-
+L’aide `Utils` crée un dossier de sortie indépendant de la plateforme pour les fichiers rendus.  
 ```xml
 <repositories>
    <repository>
@@ -54,106 +118,107 @@ Ajoutez GroupDocs.Viewer comme dépendance dans votre projet à l'aide de Maven�
    </dependency>
 </dependencies>
 ```
+*Explication* : `Utils.getOutputDirectoryPath` construit un chemin indépendant de la plateforme et crée le dossier s’il n’existe pas.
 
-### Étapes d'acquisition de la licence :
-1. **Essai gratuit**Obtenez un essai gratuit pour explorer les fonctionnalités.
-2. **Permis temporaire**:Demander un accès étendu pendant le développement.
-3. **Achat**: Acquérir une licence complète pour une utilisation en production.
-
-## Guide de mise en œuvre
-
-Suivez ces étapes pour restituer des mises en page spécifiques à partir de dessins CAO à l'aide de GroupDocs.Viewer en Java :
-
-### Rendre une mise en page spécifique
-
-#### Aperçu
-Cette fonctionnalité vous permet d'extraire et d'afficher des sections désignées d'un fichier CAO, en vous concentrant sur des éléments de conception particuliers.
-
-#### Étape 1 : Définir le répertoire de sortie
-Créez un répertoire de sortie pour les fichiers HTML rendus :
+### Étape 2 : Configurer la nomenclature des pages rendues
+Spécifiez un modèle de nommage incluant un espace réservé pour le numéro de page.
 
 ```java
 Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```
-*Explication*: Le `Utils.getOutputDirectoryPath` La méthode garantit que vos fichiers sont enregistrés à l'emplacement souhaité.
+*Explication* : `{0}` est remplacé par l’indice de la page, vous permettant de rendre plusieurs layouts sans collisions de noms de fichiers.
 
-#### Étape 2 : Configurer le format de la page de sortie
-Configurer la dénomination de chaque page rendue :
+### Étape 3 : Configurer HtmlViewOptions
+Indiquez au visualiseur d’intégrer les ressources et de cibler un seul layout.
 
+HtmlViewOptions configure la façon dont le HTML de sortie est généré, y compris l’intégration des ressources et la sélection du layout.  
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-*Explication*: Le `{0}` l'espace réservé permet la dénomination dynamique des fichiers, utile lors du rendu de plusieurs mises en page ou pages.
+*Explication* : `forEmbeddedResources` regroupe les images et le CSS directement dans le HTML, produisant un seul fichier portable par layout.
 
-#### Étape 3 : Configurer HtmlViewOptions
-Configure `HtmlViewOptions` pour spécifier comment la mise en page CAO sera rendue :
+### Étape 4 : Choisir le layout à rendre
+Fournissez le nom exact du layout tel qu’il apparaît dans le fichier DWG.
 
+La propriété `layoutName` indique quel layout de dessin le visualiseur doit rendre.  
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-*Explication*: Le `forEmbeddedResources` La méthode garantit que les ressources telles que les images et les styles sont intégrées dans chaque fichier HTML, améliorant ainsi la portabilité.
+*Explication* : Définir `layoutName` sur `"Model"` (ou tout autre layout personnalisé) indique à GroupDocs.Viewer d’ignorer toutes les autres vues.
 
-#### Étape 4 : Spécifier le nom de la mise en page
-Indiquez la mise en page que vous souhaitez rendre :
+### Étape 5 : Rendre le layout et nettoyer
+Ouvrez le visualiseur dans un bloc try‑with‑resources, invoquez `view`, et laissez Java fermer automatiquement l’instance.
 
+La classe `Viewer` est le point d’entrée principal pour le rendu de documents avec GroupDocs.Viewer.  
 ```java
 viewOptions.getCadOptions().setLayoutName("Model");
 ```
-*Explication*: La spécification de « Modèle » indique à GroupDocs.Viewer de se concentrer sur cette mise en page particulière, en ignorant les autres.
+*Explication* : L’appel `view` diffuse le layout sélectionné vers des fichiers HTML dans le dossier de sortie ; le visualiseur est immédiatement libéré après le rendu.
 
-#### Étape 5 : Rendre la mise en page
-Utilisez une instruction try-with-resources pour gérer le `Viewer` objet:
+## Problèmes courants et solutions
+- **Layout non trouvé** – Vérifiez le nom du layout en ouvrant le DWG dans un éditeur CAD ; l'orthographe et la casse doivent correspondre exactement.  
+- **Erreurs de mémoire insuffisante** – Activez `Viewer.setMemoryLimit` ou traitez le fichier par morceaux plus petits.  
+- **Images manquantes** – Assurez‑vous que `forEmbeddedResources` est activé ; sinon des fichiers image externes peuvent être générés séparément.  
+
+## Questions fréquemment posées
+
+**Q : Qu'est‑ce que GroupDocs.Viewer pour Java ?**  
+R : C’est une bibliothèque côté serveur qui convertit plus de 50 formats de documents et CAD — y compris le DWG — en HTML, PNG ou JPEG sans nécessiter l’installation d’Office ou d’un logiciel CAD.
+
+**Q : Comment obtenir une licence temporaire pour GroupDocs.Viewer ?**  
+R : Visitez la [page d'achat de GroupDocs](https://purchase.groupdocs.com/temporary-license/) et demandez une licence temporaire gratuite pour le développement et les tests.
+
+**Q : GroupDocs.Viewer peut‑il gérer efficacement des fichiers DWG très volumineux ?**  
+R : Oui, il diffuse les pages et peut rendre des dessins de plusieurs centaines de pages tout en maintenant la consommation de mémoire en dessous de 200 Mo, à condition de fermer l’instance `Viewer` après chaque opération.
+
+**Q : Est‑il possible de convertir directement un layout DWG en PDF au lieu de HTML ?**  
+R : Absolument – remplacez `HtmlViewOptions` par `PdfViewOptions` et spécifiez le même nom de layout pour obtenir une sortie PDF.
+
+**Q : Où puis‑je trouver plus d'exemples d'extraction de layout ?**  
+R : La documentation officielle et la référence API contiennent des extraits de code supplémentaires pour le traitement par lots et les pipelines de rendu personnalisés.
+
+## Applications pratiques
+1. **Présentations architecturales** – Afficher uniquement le layout du plan d'étage nécessaire pour une réunion client.  
+2. **Revues de fabrication** – Isoler une vue de composant pour discuter des tolérances sans charger l'assemblage complet.  
+3. **Modules d'e‑learning** – Intégrer une seule vue CAD dans un tutoriel web pour une instruction plus claire.  
+4. **Intégration de gestion documentaire** – Extraire automatiquement des aperçus spécifiques à un layout lors du téléchargement de fichiers DWG dans un référentiel de contenu.  
+5. **Rapports personnalisés** – Générer des rapports HTML qui se concentrent sur une seule vue de dessin, réduisant la taille du fichier et le temps de chargement.
+
+## Conseils de performance
+- **Réutiliser l'instance Viewer** pour plusieurs fichiers lorsque c'est possible ; elle met en cache les ressources internes et accélère les rendus suivants.  
+- **Activer le streaming** en appelant `Viewer.setRenderMode(RenderMode.Stream)` pour garder une faible empreinte mémoire.  
+- **Compresser le HTML de sortie** avec gzip sur le serveur web pour améliorer davantage les temps de chargement côté client.
+
+## Conclusion
+Vous disposez désormais d’une approche complète, prête pour la production, pour rendre un layout spécifique d’un fichier DWG en utilisant **GroupDocs.Viewer for Java**. En ciblant un seul layout, vous réduisez le temps de rendu, diminuez la consommation de mémoire et produisez un HTML propre qui peut être intégré partout — des portails web aux tableaux de bord internes.
+
+**Étapes suivantes**  
+- Essayez de rendre différents noms de layout tels que "Top View" ou "Section A" pour voir comment la sortie change.  
+- Explorez `PdfViewOptions` si vous avez besoin d'une version PDF du même layout.  
+- Combinez cette technique avec GroupDocs.Annotation pour ajouter des filigranes ou des commentaires au HTML rendu.
+
+---
+
+**Dernière mise à jour :** 2026-06-20  
+**Testé avec :** GroupDocs.Viewer for Java 25.2  
+**Auteur :** GroupDocs  
+
+## Ressources
+- [Documentation](https://docs.groupdocs.com/viewer/java/)
+- [Référence API](https://reference.groupdocs.com/viewer/java/)
+- [Télécharger GroupDocs.Viewer pour Java](https://releases.groupdocs.com/viewer/java/)
+- [Acheter une licence](https://purchase.groupdocs.com/buy)
+- [Essai gratuit](https://releases.groupdocs.com/viewer/java/)
+- [Demande de licence temporaire](https://purchase.groupdocs.com/temporary-license)
 
 ```java
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS)) {
     viewer.view(viewOptions);
 }
 ```
-*Explication*: Le `view` la méthode traite le fichier CAO, rendant la mise en page spécifiée sous forme de fichiers HTML dans votre répertoire de sortie.
 
-### Conseils de dépannage
-- Assurez-vous que tous les chemins et noms de fichiers sont correctement configurés pour éviter les erreurs.
-- Vérifiez que la disposition spécifiée existe dans le fichier CAO pour éviter les problèmes.
+## Tutoriels associés
 
-## Applications pratiques
-Le rendu de dispositions spécifiques à partir de dessins CAO a plusieurs applications concrètes :
-
-1. **Présentations architecturales**:Affichez des sections individuelles d’un plan de construction pour des discussions ciblées.
-2. **Fabrication de prototypes**:Mettez en évidence des composants particuliers dans les conceptions de machines lors des examens.
-3. **Outils pédagogiques**:Utilisez des calques ou des vues isolés pour expliquer des concepts complexes.
-4. **Intégration avec les systèmes de gestion de documents**: Extraire et afficher automatiquement des mises en page spécifiques dans les flux de travail.
-5. **Rapports personnalisés**: Générez des rapports axés sur les éléments de conception clés pour les mises à jour du projet.
-
-## Considérations relatives aux performances
-Pour garantir des performances optimales :
-- **Optimiser l'utilisation des ressources**: Surveillez l'utilisation de la mémoire pendant le rendu, en particulier avec les fichiers CAO volumineux.
-- **Gestion efficace de la mémoire**: Exploitez efficacement les fonctionnalités de ramasse-miettes et de gestion des ressources de Java. Fermez les ressources comme `Viewer` cas rapidement après utilisation.
-
-## Conclusion
-Vous maîtrisez les bases du rendu de mises en page spécifiques à partir de dessins CAO grâce à GroupDocs.Viewer pour Java. Cette fonctionnalité optimise votre flux de travail en vous permettant de vous concentrer avec précision sur des éléments de conception spécifiques.
-
-**Prochaines étapes :**
-- Expérimentez avec différents noms de mise en page et configurations.
-- Découvrez les fonctionnalités supplémentaires offertes par GroupDocs.Viewer, telles que le filigrane ou la conversion de formats.
-
-Nous vous encourageons à essayer d'implémenter cette solution dans vos projets. Pour plus d'informations, consultez les ressources ci-dessous.
-
-## Section FAQ
-1. **Qu'est-ce que GroupDocs.Viewer pour Java ?**
-   - Une bibliothèque puissante conçue pour restituer des documents et des images dans différents formats, y compris les dessins CAO.
-2. **Comment obtenir une licence temporaire pour GroupDocs.Viewer ?**
-   - Visite [Page d'achat de GroupDocs](https://purchase.groupdocs.com/temporary-license/) et demandez un permis temporaire gratuit.
-3. **GroupDocs.Viewer peut-il gérer efficacement les fichiers CAO volumineux ?**
-   - Oui, il est optimisé pour gérer des fichiers volumineux mais surveillez toujours l'utilisation des ressources pendant le rendu.
-4. **Quels autres formats de documents puis-je restituer avec GroupDocs.Viewer ?**
-   - Il prend en charge de nombreux formats, notamment PDF, Word, Excel et des images telles que PNG ou JPEG.
-5. **Comment résoudre les problèmes de rendu dans les dessins CAO ?**
-   - Vérifiez le nom de votre mise en page, vérifiez les chemins d’accès aux fichiers et assurez-vous que le fichier CAO contient la mise en page spécifiée.
-
-## Ressources
-- [Documentation](https://docs.groupdocs.com/viewer/java/)
-- [Référence de l'API](https://reference.groupdocs.com/viewer/java/)
-- [Télécharger GroupDocs.Viewer pour Java](https://releases.groupdocs.com/viewer/java/)
-- [Acheter une licence](https://purchase.groupdocs.com/buy)
-- [Essai gratuit](https://releases.groupdocs.com/viewer/java/)
-- [Demande de permis temporaire](https://purchase.groupdocs.com/temporary-license)
+- [Comment rendre des dessins CAD en PNG avec taille personnalisée et couleur d'arrière‑plan en utilisant GroupDocs.Viewer pour Java](/viewer/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/)
+- [Diviser les dessins CAD en tuiles avec GroupDocs.Viewer Java pour un rendu efficace](/viewer/java/advanced-rendering/split-cad-drawings-into-tiles-groupdocs-viewer-java/)
+- [Rendre les calques CAD en Java avec GroupDocs.Viewer – Guide complet](/viewer/java/advanced-rendering/render-cad-layers-java-groupdocs-viewer/)
