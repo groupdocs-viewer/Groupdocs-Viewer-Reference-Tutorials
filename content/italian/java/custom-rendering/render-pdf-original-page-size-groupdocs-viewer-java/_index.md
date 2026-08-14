@@ -1,49 +1,68 @@
 ---
-date: '2026-01-31'
-description: Impara a renderizzare PDF in PNG in Java preservando le dimensioni originali
-  della pagina con GroupDocs.Viewer. Include suggerimenti e risoluzione dei problemi
-  per PDF‑to‑PNG in Java.
+date: '2026-06-25'
+description: Scopri come convertire PDF in PNG in Java usando GroupDocs Viewer, mantenendo
+  le dimensioni originali della pagina ed evitando i comuni problemi di rendering.
 keywords:
-- Render PDF Original Size
-- GroupDocs Viewer Java API
-- PDF Rendering with Java
-title: Come visualizzare PDF nella dimensione originale usando GroupDocs.Viewer per
-  Java – Guida completa
+- convert pdf to png
+- groupdocs viewer java
+- pdf to image conversion
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-25'
+  description: Learn how to convert PDF to PNG in Java using GroupDocs Viewer, preserving
+    the original page size and avoiding common rendering issues.
+  headline: Convert PDF to PNG with GroupDocs Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Register `Viewer` as a Spring bean, inject it where needed, and let Spring
+      manage its lifecycle for thread‑safe reuse.
+    question: How do I integrate GroupDocs.Viewer with Spring Boot?
+  - answer: Yes – GroupDocs.Viewer also supports JPEG, SVG, and PDF‑to‑HTML conversions.
+    question: Can I render PDFs to formats other than PNG?
+  - answer: Inspect the stack trace for missing file paths or licensing issues, and
+      verify that the PDF is not corrupted.
+    question: What should I do if the rendering process fails with an exception?
+  - answer: Technically no, but very large files may require increased JVM memory
+      and benefit from splitting into smaller sections.
+    question: Is there a size limit for PDFs that can be rendered?
+  - answer: Absolutely – simply pass the password to the `Viewer` constructor or via
+      the `LoadOptions` object.
+    question: Does GroupDocs.Viewer handle password‑protected PDFs?
+  type: FAQPage
+title: Converti PDF in PNG con GroupDocs Viewer per Java
 type: docs
 url: /it/java/custom-rendering/render-pdf-original-page-size-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Come rendere PDF nella dimensione originale usando GroupDocs.Viewer per Java
+# Converti PDF in PNG con GroupDocs Viewer per Java
 
-Renderizzare un PDF **how to render pdf** mantenendo le sue dimensioni es una visualizzazione accurata su qualsiasi dispositivo. In questa guida scoprirai perché preservare la dimensione originale della pagina è importante, e i passaggi esatti per convertire un PDF in PNG java senza alcuna scalatura. Alla fine sarai in grado di renderizzare PDF nella loro dimensione originale in modo affidabile ed evitare le comuni difficoltà di troubleshooting del rendering PDF.
+In questa guida completa scoprirai **come convertire PDF in PNG** in Java mantenendo ogni pagina alle sue esatte dimensioni originali. Preservare le dimensioni originali della pagina è fondamentale per pratiche legali, risorse di marketing coerenti con il brand e diagrammi tecnici dove qualsiasi ridimensionamento comprometterebbe le misurazioni. Ti guideremo attraverso l'installazione di GroupDocs.Viewer, la configurazione delle opzioni di rendering e la risoluzione dei problemi più comuni così potrai produrre immagini PNG pixel‑perfect ogni volta.
 
-![Render PDFs in Original Size with GroupDocs.Viewer for Java](/viewer/custom-rendering/render-pdfs-in-original-size.png)
+![Render PDF nelle dimensioni originali con GroupDocs.Viewer per Java](/viewer/custom-rendering/render-pdfs-in-original-size.png)
 
-## Risposte rapide
-- **Quale libreria può convertire PDF in PNG in Java?** GroupDocs.Viewer per Java fornisce una semplice API per la conversione pdf to png java.  
-- **Come mantengo la dimensione originale della pagina?getto `PdfOptions`.  
+## Risposte Rapide
+- **Quale libreria può convertire PDF in PNG in Java?** GroupDocs.Viewer per Java fornisce un'API semplice per `convert pdf to png`.  
+- **Come mantengo le dimensioni originali della pagina?** Chiama `setRenderOriginalPageSize(true)` sull'oggetto `PdfOptions`.  
 - **È necessaria una licenza per la produzione?** Sì – è richiesta una licenza GroupDocs permanente o temporanea per l'uso non‑trial.  
-- **Posso renderizzare PDF protetti da password?** Sì, basta fornire la password quando si crea l'istanza `Viewer`.  
-- **Quale versione di Java è richiesta?** JDK 8 o superiore è supportato.
+- **Posso renderizzare PDF protetti da password?** Assolutamente; fornisci la password quando crei l'istanza `Viewer`.  
+- **Quale versione di Java è richiesta?** JDK 8 o superiore è pienamente supportata.
 
-## Cos'è “renderizzare PDF nella dimensione originale”?
-Quando renderizzi un PDF, il visualizzatore può scalare le pagine per adattarle a un formato di destinazione oppure mantenere le dimensioni esatte definite nel file sorgente. Renderizzare nella dimensione originale significa che ogni pagina viene esportata pixel‑perfect, il che è fondamentale per documenti legali, materiale d'archiv cui la fedeltà del layout non può essere compromessa.
+## Cos'è “renderizzare PDF nelle dimensioni originali”?
+Renderizzare un PDF nelle dimensioni originali significa esportare ogni pagina alle sue esatte dimensioni senza alcun ridimensionamento. Quando renderizzi un PDF, il visualizzatore può scalare le pagine per adattarle a un formato di destinazione oppure mantenere le dimensioni esatte definite nel file sorgente. Renderizzare nelle dimensioni originali significa che ogni pagina viene esportata pixel‑perfect, il che è cruciale per documenti legali, materiale d'archivio e qualsiasi scenario in cui la fedeltà del layout non può essere compromessa.
 
-## Perché preservare la dimensione della pagina PDF?
-- **Conformità legale:** I tribunali spesso richiedono che i documenti appaiano esattamente come originariamente depositati.  
-- **Coerenza del brand:** Le.  
-- **Precisione tecnica:** Misurazioni, diagrammi e moduli rimangono utilizzabili dopo la conversione.  
+## Perché preservare le dimensioni della pagina PDF?
+Preservare le dimensioni originali della pagina PDF garantisce che il layout visivo, le misurazioni precise e gli elementi di design rimangano invariati dopo la conversione, il che è essenziale per la conformità legale, la coerenza del brand e l'accuratezza tecnica in diagrammi o moduli. Previene inoltre ritagli o distorsioni indesiderate della grafica, assicurando che firme e filigrane appaiano esattamente come previsto su tutte le piattaforme.
 
 ## Prerequisiti
-- **Java Development Kit (JDK):** Versione 8 o successiva.  
-- **GroupDocs.Viewer per Java:** Aggiungi la libreria tramite Maven (vedi sotto).  
+- **Java Development Kit (JDK):** Versione 8 o più recente.  
+- **GroupDocs.Viewer per Java:** Aggiungi la libreria via Maven (vedi sotto).  
 - **IDE:** IntelliJ IDEA, Eclipse o qualsiasi editor compatibile con Java.  
 
 ## Configurazione di GroupDocs.Viewer per Java
 
 ### Configurazione Maven
-Aggiungi il repository ufficiale GroupDocs e la dipendenza Viewer al tuo `pom.xml`. *(Non modificare il blocco di codice – deve rimanere esattamente come mostrato.)*
+Aggiungi il repository ufficiale di GroupDocs e la dipendenza Viewer al tuo `pom.xml`. *(Non modificare il blocco di codice – deve rimanere esattamente come mostrato.)*
 
 ```xml
 <repositories>
@@ -62,15 +81,13 @@ Aggiungi il repository ufficiale GroupDocs e la dipendenza Viewer al tuo `pom.xm
 </dependencies>
 ```
 
-#### Acquisizione della licenza
-GroupDocs offre diverse opzioni diionalità senza un limite di tempo sul conteggio delle pagine.  
-- **Licenza temporaneaazione.  
-- **Acquisto permanente:** Ideale per implementazioni in produzione.  
+#### Acquisizione Licenza
+GroupDocs offre tre opzioni di licenza: **Free Trial** (pagine illimitate, tempo limitato), **Temporary License** (tutte le funzionalità per fino a 30 giorni) e **Permanent Purchase** (uso in produzione senza restrizioni). Scegli l'opzione che corrisponde alla tempistica del tuo progetto.
 
-## Guida all'implementazione
+## Guida all'Implementazione
 
 ### Passo 1: Inizializzare GroupDocs.Viewer
-Crea un'istanza `Viewer` e configura `PngViewOptions` per generare file PNG. La chiamata cruciale `viewOptions.getPdfOptions().setRenderOriginalPageSize(true);` indica al motore di **impostare la dimensione originale della pagina**.
+`Viewer` è la classe principale in GroupDocs.Viewer che carica un documento e fornisce capacità di rendering. Crea un'istanza `Viewer` e configura `PngViewOptions`. `PngViewOptions` definisce le impostazioni per renderizzare le pagine come immagini PNG. La chiamata cruciale `viewOptions.getPdfOptions().setRenderOriginalPageSize(true);` indica al motore di **impostare le dimensioni originali della pagina**.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -103,49 +120,63 @@ public class RenderOriginalPageSize {
 ```
 
 **Spiegazione delle linee chiave**  
-- **Configurazione del percorso:** Determina dove verrà salvato ogni PNG renderizzato.  
+- **Configurazione del Percorso:** Determina dove verrà salvato ogni PNG renderizzato.  
 - **PngViewOptions:** Sceglie PNG come formato di output (lo scenario classico *pdf to png java*).  
-- **Render Original Page Size:** Garantisce che non avvenga alcuna scalatura, preservando le dimensioni esatte di ogni paginao 2: Eseguire e verificare
-Esegui il metodo `main`. Al termine, apri i file PNG generati; dovrebbero corrispondere alle dimensioni originali della pagina PDF pixel‑per‑pixel. Se le immagini appaiono distorte, verifica che `setRenderOriginalPageSize(true)` sia presente e che tu stia usando l'uzione dei problemi e ostacoli comuni
+- **Render Original Page Size:** Garantisce che non avvenga alcun ridimensionamento, preservando le dimensioni esatte di ogni pagina PDF.
+
+### Passo 2: Eseguire e Verificare
+Carica il tuo PDF, invoca la routine di rendering e poi ispeziona i file PNG generati. Le immagini dovrebbero corrispondere alle dimensioni originali della pagina PDF pixel‑per‑pixel. Se le immagini appaiono allungate, verifica nuovamente che `setRenderOriginalPageSize(true)` sia presente e che tu stia usando l'ultima versione di GroupDocs.Viewer.
+
+## Risoluzione dei Problemi & Errori Comuni
 - **Percorsi file errati:** Assicurati che sia `outputDirectory` sia il percorso del PDF sorgente siano assoluti o correttamente relativi al tuo progetto.  
-- **Licenza mancante:** Senza una licenza valida, il rendering potrebbe tornare a una modalità trial che limita il conteggio delle pagine.  
-- **Errori di out‑of‑memory su PDF di grandi dimensioni:** Aumenta l'heap JVM (`-Xmx2g` o superiore) o abilita il caricamento lazy delle pagine.  
-- **PDF criptati:** Fornisci la password quando costruisci l'istanza `Viewer` per evitare errori di *pdf rendering troubleshooting*.  
+- **Licenza mancante:** Senza una licenza valida, il rendering potrebbe tornare a una modalità trial che limita il numero di pagine.  
+- **Errori di out‑of‑memory su PDF grandi:** Aumenta l'heap JVM (`-Xmx2g` o superiore) o abilita il caricamento lazy delle pagine.  
+- **PDF criptati:** Fornisci la password quando costruisci l'istanza `Viewer` per evitare errori di *pdf rendering troubleshooting*.
 
-## Casi d'uso pratici
-1. ** di documenti legali:** Offrire PDF pronti per il tribunale che si visualizzano esattamente come depositati.  
-3. **Piattaforme di e‑learning:** Convertire i libri di testo in formato immagine mantenendo intatto il layout.  
-4. **Automazione delle fatture:** Garantire che.  
+## Casi d'Uso Pratici
+1. **Archivi Digitali:** Conserva scansioni storiche senza alcuna distorsione.  
+2. **Portali di Documenti Legali:** Offri PDF pronti per il tribunale che si visualizzano esattamente come depositati.  
+3. **Piattaforme E‑Learning:** Converti i libri di testo in formato immagine mantenendo intatto il layout.  
+4. **Automazione Fatture:** Assicura che le voci di linea e i totali rimangano leggibili dopo la conversione.
 
-## Sug **Gestione della memoria:** Assegna spazio heap sufficiente per documenti di grandi dimensioni quando possibile.  
-- **Caching:** Memorizza i PNG renderizzati per PDF frequentemente accessi per evitare elaborazioni ripetute.  
+## Suggerimenti sulle Prestazioni
+- **Gestione della Memoria:** Assegna spazio heap sufficiente per documenti di grandi dimensioni.  
+- **Caricamento Lazy:** Renderizza solo le pagine necessarie anziché l'intero file quando possibile.  
+- **Caching:** Memorizza i PNG renderizzati per PDF frequentemente accessi per evitare elaborazioni ripetute.
 
-## Domande frequenti
-**Q: Come integrazione GroupDocs.Viewer con Spring Boot?**  
-A: Registra `Viewer` come bean e iniett di Spring.  
+## Domande Frequenti
+
+**Q: Come integro GroupDocs.Viewer con Spring Boot?**  
+A: Registra `Viewer` come bean Spring, iniettalo dove necessario e lascia che Spring gestisca il suo ciclo di vita per un riutilizzo thread‑safe.
 
 **Q: Posso renderizzare PDF in formati diversi da PNG?**  
-A: Sì, GroupDocs.Viewer supporta anche conversioni in JPEG, SVG e PDF‑to‑HTML.  
+A: Sì – GroupDocs.Viewer supporta anche JPEG, SVG e conversioni PDF‑to‑HTML.
 
 **Q: Cosa devo fare se il processo di rendering fallisce con un'eccezione?**  
-A: Controlla lo stack trace per percorsi file mancanti o problemi di licenza, e verifica che il PDF non sia corrotto.  
+A: Ispeziona lo stack trace per percorsi file mancanti o problemi di licenza, e verifica che il PDF non sia corrotto.
 
-**Q: Esiste un limite di dimensione per i PDF che possono essere renderizzati?**iedere più memoria JVM e potrebbero beneficiare della suddivisione in sezioni più piccole.  
+**Q: Esiste un limite di dimensione per i PDF che possono essere renderizzati?**  
+A: Tecnica­mente no, ma file molto grandi potrebbero richiedere più memoria JVM e trarre beneficio dallo splitting in sezioni più piccole.
 
-**Q: GroupDocs.Viewer gestisce PDF Assolutamente – basta passare la password al costruttore `Viewer` o tramite l'oggetto `LoadOptions`.  
+**Q: GroupDocs.Viewer gestisce PDF protetti da password?**  
+A: Assolutamente – basta passare la password al costruttore `Viewer` o tramite l'oggetto `LoadOptions`.
 
 ## Risorse
-- **Documentazione:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
-- **Riferimento API:** [GroupDocs API Reference for Java](https://reference.groupdocs.com/viewer/java/)  
-- **Download GroupDocs.Viewer:** [Official Downloads](https://releases.groupdocs.com/viewer/java/)  
-- **Acquisto e licenze:** [Buy GroupDocs Products](https://purchase.groupdocs.com/buy)  
-- **Prova gratuita:** [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)  
-- **Licenza temporanea:** [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-- **Forum di supporto:** [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Documentazione:** [Documentazione GroupDocs Viewer Java](https://docs.groupdocs.com/viewer/java/)  
+- **Riferimento API:** [Riferimento API GroupDocs per Java](https://reference.groupdocs.com/viewer/java/)  
+- **Download GroupDocs.Viewer:** [Download Ufficiali](https://releases.groupdocs.com/viewer/java/)  
+- **Acquisto e Licenze:** [Acquista Prodotti GroupDocs](https://purchase.groupdocs.com/buy)  
+- **Prova Gratuita:** [Prova Gratuita GroupDocs](https://releases.groupdocs.com/viewer/java/)  
+- **Licenza Temporanea:** [Ottieni Licenza Temporanea](https://purchase.groupdocs.com/temporary-license/)  
+- **Forum di Supporto:** [Forum di Supporto GroupDocs](https://forum.groupdocs.com/c/viewer/9)
 
 ---
 
-**Ultimo aggiornamento:** 2026-01-31  
-**Testato con:** GroupDocs.Viewer Autore:** GroupDocs  
+**Ultimo Aggiornamento:** 2026-06-25  
+**Testato Con:** GroupDocs.Viewer 25.2 for Java  
+**Autore:** GroupDocs  
 
----
+## Tutorial Correlati
+
+- [Come renderizzare PDF in HTML e ottimizzare la qualità dell'immagine in Java con GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [Come renderizzare disegni CAD come PNG con dimensioni personalizzate e colore di sfondo usando GroupDocs.Viewer per Java](/viewer/java/advanced-rendering/render-cad-drawings-custom-png-groupdocs-java/)

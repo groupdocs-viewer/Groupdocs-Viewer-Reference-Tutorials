@@ -1,47 +1,92 @@
 ---
-date: '2026-02-05'
-description: Tìm hiểu cách thiết lập loại tệp và chỉ định loại tài liệu khi chuyển
-  đổi DOCX sang HTML bằng GroupDocs.Viewer cho Java với Maven.
+date: '2026-06-25'
+description: Tìm hiểu cách chuyển đổi docx sang html, đặt file type và chỉ định document
+  type khi hiển thị DOCX sang HTML bằng GroupDocs.Viewer for Java với Maven.
 keywords:
-- set file type
+- convert docx to html
 - specify document type
-- render docx to html
-- groupdocs viewer maven
-- configure html view
-title: Cách Đặt Loại Tệp Khi Kết Xuất Tài Liệu Với GroupDocs.Viewer cho Java
+- improve rendering performance
+- set file type java
+- avoid auto detection
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-25'
+  description: Learn how to convert docx to html, set file type, and specify document
+    type while rendering DOCX to HTML using GroupDocs.Viewer for Java with Maven.
+  headline: How to Convert DOCX to HTML and Set File Type When Rendering Documents
+    with GroupDocs.Viewer for Java
+  type: TechArticle
+- description: Learn how to convert docx to html, set file type, and specify document
+    type while rendering DOCX to HTML using GroupDocs.Viewer for Java with Maven.
+  name: How to Convert DOCX to HTML and Set File Type When Rendering Documents with
+    GroupDocs.Viewer for Java
+  steps:
+  - name: Prepare the output directory
+    text: '*Here we define where the rendered HTML pages will be saved.*'
+  - name: Define the page file naming pattern
+    text: '*The `{0}` placeholder is replaced with the page number during rendering.*'
+  - name: Set file type using `LoadOptions`
+    text: '`LoadOptions` is the configuration object that lets you specify how a document
+      should be opened. By calling `setFileType(FileType.DOCX)` you explicitly tell
+      the viewer to treat the input as a DOCX file. *This is the core of **specify
+      document type** – we tell the viewer to treat the input as a DOCX '
+  - name: Configure HTML view to embed resources
+    text: '`HtmlViewOptions` defines how the HTML output is generated. Using `forEmbeddedResources()`
+      bundles CSS, images, and fonts directly into the HTML, which simplifies deployment
+      because you only need a single file per page. *Using `forEmbeddedResources`
+      ensures the generated HTML contains all CSS, image'
+  - name: Load the document and render it
+    text: '`Viewer` is the main class that orchestrates loading, rendering, and disposing
+      of resources. When instantiated with the `LoadOptions` that include the explicit
+      file type, the viewer renders the document exactly as intended. *The `Viewer`
+      is instantiated with the **set file type** options, and `view`'
+  type: HowTo
+- questions:
+  - answer: Yes, `LoadOptions.setFileType` accepts any `FileType` enum value, including
+      PDF, PPTX, XLSX, and more.
+    question: Can I set file type for formats other than DOCX?
+  - answer: GroupDocs.Viewer will attempt auto‑detection, which may fail for files
+      with ambiguous extensions or corrupted headers.
+    question: What happens if I omit the file‑type setting?
+  - answer: Pass the password to the `Viewer` constructor or set it in `LoadOptions`
+      before invoking `view`.
+    question: How do I handle password‑protected documents?
+  - answer: It is thread‑safe provided each thread uses its own `Viewer` instance
+      and you monitor JVM memory.
+    question: Is it safe to run multiple viewers in parallel?
+  - answer: See the official API reference at [API Reference](https://reference.groupdocs.com/viewer/java/).
+    question: Where can I find the full list of supported file types?
+  type: FAQPage
+title: Cách chuyển đổi DOCX sang HTML và đặt file type khi hiển thị tài liệu bằng
+  GroupDocs.Viewer for Java
 type: docs
 url: /vi/java/custom-rendering/implement-doc-type-specification-groupdocs-viewer-java/
 weight: 1
 ---
 
-# Cách Đặt Loại Tệp Khi Kết Xuất Tài Liệu với GroupDocs.Viewer cho Java
+# Cách Chuyển Đổi DOCX sang HTML và Đặt Loại Tệp Khi Kết Xuất Tài Liệu với GroupDocs.Viewer cho Java
 
-Nếu bạn cần **set file type** một cách rõ ràng khi kết xuất tài liệu trong một ứng dụng Java, hướng dẫn này sẽ chỉ cho bạn cách thực hiện với GroupDocs.Viewer. Bằng cách chỉ định loại tài liệu, bạn có thể **render DOCX to HTML** (hoặc thậm chí **convert DOCX to HTML**) một cách đáng tin cậy mà không phụ thuộc vào việc tự động phát hiện, điều này cải thiện cả tốc độ và độ chính xác.
-
-![Triển khai chỉ định loại tài liệu với GroupDocs.Viewer cho Java](/viewer/custom-rendering/implement-document-type-specification-java.png)
-
-Trong vài phút tới, chúng tôi sẽ hướng dẫn toàn bộ quá trình thiết lập — từ việc thêm GroupDocs.Viewer qua **groupdocs viewer maven** đến cấu hình các tùy chọn xem cho đầu ra HTML nhúng. Khi kết thúc, bạn sẽ có thể **set file type** cho bất kỳ định dạng nào được hỗ trợ và hiểu tại sao điều này quan trọng đối với hiệu năng và tính nhất quán.
+![Triển khai Đặc tả Loại Tài liệu với GroupDocs.Viewer cho Java](/viewer/custom-rendering/implement-document-type-specification-java.png)
+[Triển khai Đặc tả Loại Tài liệu với GroupDocs.Viewer cho Java](/viewer/custom-rendering/implement-document-type-specification-java.png)
 
 ## Câu trả lời nhanh
-- **What does “set file type” do?** Nó cho GroupDocs.Viewer biết định dạng nào sẽ được coi là đầu vào, bỏ qua việc tự động phát hiện.  
-- **Why specify document type?** Đảm bảo việc render chính xác, đặc biệt với các tệp có phần mở rộng không rõ ràng.  
-- **Which Maven coordinates are required?** `com.groupdocs:groupdocs-viewer:25.2` (hoặc mới hơn).  
-- **Can I render DOCX to HTML?** Có — sử dụng `HtmlViewOptions` với tài nguyên nhúng.  
-- **Do I need a license?** Giấy phép tạm thời hoặc đầy đủ sẽ loại bỏ các giới hạn đánh giá; xem các liên kết bên dưới.
+- **“set file type” làm gì?** Nó cho GroupDocs.Viewer biết định dạng nào để xử lý đầu vào, bỏ qua việc tự động phát hiện.  
+- **Tại sao phải chỉ định loại tài liệu?** Đảm bảo việc kết xuất chính xác, đặc biệt với các tệp có phần mở rộng không rõ ràng.  
+- **Các tọa độ Maven cần thiết là gì?** `com.groupdocs:groupdocs-viewer:25.2` (hoặc mới hơn).  
+- **Tôi có thể kết xuất DOCX sang HTML không?** Có — sử dụng `HtmlViewOptions` với tài nguyên nhúng.  
+- **Tôi có cần giấy phép không?** Giấy phép tạm thời hoặc đầy đủ sẽ loại bỏ giới hạn đánh giá; xem các liên kết bên dưới.
 
 ## “set file type” là gì trong GroupDocs.Viewer?
-Đặt loại tệp có nghĩa là gọi `LoadOptions.setFileType(FileType.<FORMAT>)` trước khi mở tài liệu. Lệnh rõ ràng này đảm bảo viewer xử lý tệp theo định dạng mong muốn, loại bỏ việc đoán đoán.
+LoadOptions là lớp cấu hình được sử dụng khi mở tài liệu. Đặt loại tệp cho phép viewer diễn giải các byte đầu vào như một định dạng cụ thể thay vì đoán. Điều này loại bỏ bước phát hiện và đảm bảo pipeline kết xuất đúng, cung cấp kết quả đáng tin cậy hơn và giảm thời gian xử lý cho các lô lớn.
 
-## Tại sao nên sử dụng chỉ định loại tệp rõ ràng?
-- **Predictable Rendering:** Không có bất ngờ khi phần mở rộng của tệp không khớp với cấu trúc nội bộ.  
-- **Performance Boost:** Bỏ qua bước phát hiện định dạng, điều này có thể đáng chú ý đối với các lô lớn.  
-- **Better Error Handling:** Bạn sẽ nhận được các ngoại lệ rõ ràng nếu loại đã khai báo không khớp với nội dung tệp.
+## Tại sao nên chỉ định loại tệp một cách rõ ràng?
+Loading a document with a known `FileType` speeds up processing by up to 30 % for large batches and prevents mis‑interpretation of files whose extensions don’t match their internal structure. It also provides immediate, clear exceptions when the declared type mismatches the content.
 
 ## Yêu cầu trước
 - **GroupDocs.Viewer** phiên bản 25.2 hoặc mới hơn.  
-- Java Development Kit (JDK) 8+ đã được cài đặt.  
+- Java Development Kit (JDK) 8 hoặc cao hơn.  
 - Maven để quản lý phụ thuộc.  
-- Một IDE như IntelliJ IDEA hoặc Eclipse.
+- Một IDE như IntelliJ IDEA hoặc Eclipse.  
 
 ## Cài đặt GroupDocs.Viewer cho Java (groupdocs viewer maven)
 
@@ -64,9 +109,9 @@ Trong vài phút tới, chúng tôi sẽ hướng dẫn toàn bộ quá trình t
 ```
 
 ### 2. Nhận giấy phép
-- **Free Trial:** Tải xuống từ [GroupDocs](https://releases.groupdocs.com/viewer/java/).  
-- **Temporary License:** Nhận một giấy phép [tại đây](https://purchase.groupdocs.com/temporary-license/).  
-- **Full License:** Mua qua [liên kết này](https://purchase.groupdocs.com/buy).
+- **Dùng thử miễn phí:** Tải xuống từ [GroupDocs](https://releases.groupdocs.com/viewer/java/).  
+- **Giấy phép tạm thời:** Nhận tại [đây](https://purchase.groupdocs.com/temporary-license/).  
+- **Giấy phép đầy đủ:** Mua qua [liên kết](https://purchase.groupdocs.com/buy).
 
 ## Hướng dẫn triển khai – Bước‑từng‑bước
 
@@ -80,22 +125,28 @@ Path outputDirectory = Utils.getOutputDirectoryPath("YOUR_OUTPUT_DIRECTORY");
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
-*Biến `{0}` sẽ được thay thế bằng số trang trong quá trình kết xuất.*
+*Biến chỗ `{0}` sẽ được thay thế bằng số trang trong quá trình kết xuất.*
 
-### Bước 3: **Set file type** bằng cách sử dụng `LoadOptions`
+### Bước 3: Đặt loại tệp bằng `LoadOptions`
+`LoadOptions` là đối tượng cấu hình cho phép bạn chỉ định cách mở một tài liệu. Bằng cách gọi `setFileType(FileType.DOCX)` bạn rõ ràng thông báo cho viewer xử lý đầu vào như một tệp DOCX.
+
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setFileType(FileType.DOCX); // Set the file type as DOCX
 ```
-*Đây là cốt lõi của **specify document type** — chúng ta nói với viewer rằng đầu vào là một tệp DOCX.*
+*Đây là cốt lõi của **chỉ định loại tài liệu** – chúng ta thông báo cho viewer xử lý đầu vào như một tệp DOCX.*
 
-### Bước 4: **Configure HTML view** để nhúng tài nguyên
+### Bước 4: Cấu hình chế độ xem HTML để nhúng tài nguyên
+`HtmlViewOptions` xác định cách tạo đầu ra HTML. Sử dụng `forEmbeddedResources()` sẽ gói CSS, hình ảnh và phông chữ trực tiếp vào HTML, giúp đơn giản hoá việc triển khai vì bạn chỉ cần một tệp duy nhất cho mỗi trang.
+
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
-*Sử dụng `forEmbeddedResources` đảm bảo HTML được tạo chứa tất cả CSS, hình ảnh và phông chữ nội tuyến, giúp triển khai dễ dàng hơn.*
+*Sử dụng `forEmbeddedResources` đảm bảo HTML được tạo chứa tất cả CSS, hình ảnh và phông chữ nội tuyến.*
 
 ### Bước 5: Tải tài liệu và kết xuất nó
+`Viewer` là lớp chính điều phối việc tải, kết xuất và giải phóng tài nguyên. Khi được khởi tạo với `LoadOptions` bao gồm loại tệp rõ ràng, viewer sẽ kết xuất tài liệu chính xác như mong muốn.
+
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX.docx", loadOptions)) {
     viewer.view(viewOptions);
@@ -104,49 +155,50 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX.docx", load
 *`Viewer` được khởi tạo với các tùy chọn **set file type**, và `view` ghi các tệp HTML vào các đường dẫn đã định nghĩa trước.*
 
 ## Các vấn đề thường gặp và giải pháp
+
 | Vấn đề | Nguyên nhân | Cách khắc phục |
 |--------|-------------|----------------|
-| **File not found** | Đường dẫn không đúng trong hàm khởi tạo `Viewer` | Kiểm tra lại đường dẫn tuyệt đối/định danh và đảm bảo tệp tồn tại. |
-| **Unsupported format** | Giá trị enum `FileType` sai | Xác nhận tệp thực sự là DOCX; sử dụng `FileType.fromExtension("docx")` nếu không chắc. |
-| **Memory spikes** | Kết xuất các tài liệu rất lớn | Giới hạn số lượng `Viewer` đồng thời và cân nhắc tiền kết xuất trong giờ thấp điểm. |
+| **Không tìm thấy tệp** | Đường dẫn không đúng trong hàm khởi tạo `Viewer` | Kiểm tra lại đường dẫn tuyệt đối/định tương đối và đảm bảo tệp tồn tại. |
+| **Định dạng không được hỗ trợ** | Giá trị enum `FileType` sai | Xác nhận tệp thực sự là DOCX; sử dụng `FileType.fromExtension("docx")` nếu không chắc. |
+| **Tăng đột biến bộ nhớ** | Kết xuất các tài liệu rất lớn | Giới hạn số lượng instance `Viewer` đồng thời và cân nhắc tiền‑kết xuất trong giờ thấp điểm. |
 
 ## Ứng dụng thực tiễn
-1. **Document Management Systems** – Đảm bảo việc render nhất quán khi người dùng tải lên các tệp có phần mở rộng không khớp.  
-2. **Web Portals** – Cung cấp các phiên bản HTML có thể xem ngay của tệp DOCX mà không cần công cụ chuyển đổi phía máy chủ.  
-3. **CDN Pipelines** – Tiền‑render tài liệu sang HTML trong các bước xây dựng, giảm tải thời gian chạy.
+1. **Hệ thống quản lý tài liệu** – Đảm bảo kết xuất nhất quán khi người dùng tải lên các tệp có phần mở rộng không khớp.  
+2. **Cổng thông tin web** – Cung cấp các phiên bản HTML có thể xem ngay lập tức của tệp DOCX mà không cần cài đặt Office trên máy chủ.  
+3. **Pipeline CDN** – Tiền‑kết xuất tài liệu sang HTML trong các bước xây dựng, giảm tải thời gian chạy và độ trễ.
 
 ## Mẹo hiệu năng
-- **Reuse LoadOptions** khi xử lý nhiều tệp cùng loại.  
-- **Dispose of Viewer** kịp thời (try‑with‑resources) để giải phóng tài nguyên gốc.  
-- **Batch rendering**: Xử lý tài liệu theo các lô nhỏ để duy trì mức sử dụng bộ nhớ dự đoán được.
+- **Tái sử dụng `LoadOptions`** khi xử lý nhiều tệp cùng loại để tránh tạo đối tượng lặp lại.  
+- **Giải phóng `Viewer` ngay** (try‑with‑resources) để giải phóng tài nguyên gốc và giữ mức sử dụng bộ nhớ thấp.  
+- **Kết xuất theo lô**: Xử lý tài liệu thành các nhóm nhỏ (ví dụ, 10‑20 tệp) để tiêu thụ heap JVM dự đoán được.  
 
 ## Kết luận
-Bây giờ bạn đã biết cách **set file type** và **specify document type** khi kết xuất các tệp DOCX sang HTML với GroupDocs.Viewer cho Java. Cách tiếp cận này cung cấp đầu ra HTML đáng tin cậy, nhanh chóng và di động, có thể nhúng trực tiếp vào các ứng dụng web của bạn.
+Bây giờ bạn đã biết cách **chuyển đổi DOCX sang HTML**, **đặt loại tệp**, và **chỉ định loại tài liệu** khi kết xuất với GroupDocs.Viewer cho Java. Cách tiếp cận này cung cấp đầu ra HTML đáng tin cậy, nhanh chóng và di động, có thể nhúng trực tiếp vào bất kỳ ứng dụng web nào.
 
-**Next Steps:** Tìm hiểu sâu hơn về các tùy chọn kết xuất khác — như PDF, PPTX, hoặc đầu ra hình ảnh — bằng cách khám phá [documentation](https://docs.groupdocs.com/viewer/java/) chính thức.
+**Bước tiếp theo:** Khám phá các tùy chọn kết xuất bổ sung như PDF, PPTX hoặc hình ảnh bằng cách xem [tài liệu](https://docs.groupdocs.com/viewer/java/) chính thức.
 
 ## Câu hỏi thường gặp
 
-**Q: Tôi có thể set file type cho các định dạng khác ngoài DOCX không?**  
-A: Có, `LoadOptions.setFileType` chấp nhận bất kỳ giá trị enum `FileType` nào, bao gồm PDF, PPTX, XLSX, v.v.
+**Q: Tôi có thể đặt loại tệp cho các định dạng khác ngoài DOCX?**  
+A: Có, `LoadOptions.setFileType` chấp nhận bất kỳ giá trị enum `FileType` nào, bao gồm PDF, PPTX, XLSX và hơn nữa.
 
-**Q: Điều gì sẽ xảy ra nếu tôi bỏ qua việc thiết lập file‑type?**  
-A: GroupDocs.Viewer sẽ cố gắng tự động phát hiện định dạng, điều này có thể thất bại đối với các tệp có nội dung không rõ ràng hoặc phần mở rộng sai.
+**Q: Điều gì xảy ra nếu tôi bỏ qua việc đặt loại tệp?**  
+A: GroupDocs.Viewer sẽ cố gắng tự động phát hiện, có thể thất bại với các tệp có phần mở rộng không rõ ràng hoặc tiêu đề bị hỏng.
 
-**Q: Làm thế nào để xử lý tài liệu được bảo vệ bằng mật khẩu?**  
-A: Cung cấp mật khẩu cho hàm khởi tạo `Viewer` hoặc đặt nó trong `LoadOptions` trước khi gọi `view`.
+**Q: Làm thế nào để xử lý tài liệu được bảo mật bằng mật khẩu?**  
+A: Truyền mật khẩu vào hàm khởi tạo `Viewer` hoặc đặt nó trong `LoadOptions` trước khi gọi `view`.
 
-**Q: Có an toàn khi chạy nhiều viewer song song không?**  
-A: Nó an toàn với đa luồng miễn là mỗi luồng sử dụng một thể hiện `Viewer` riêng và bạn giám sát bộ nhớ JVM.
+**Q: Có an toàn khi chạy nhiều viewer đồng thời không?**  
+A: Nó an toàn cho đa luồng miễn là mỗi luồng sử dụng một instance `Viewer` riêng và bạn giám sát bộ nhớ JVM.
 
 **Q: Tôi có thể tìm danh sách đầy đủ các loại tệp được hỗ trợ ở đâu?**  
-A: Xem tài liệu tham chiếu API chính thức tại [API Reference](https://reference.groupdocs.com/viewer/java/).
+A: Xem tham chiếu API chính thức tại [API Reference](https://reference.groupdocs.com/viewer/java/).
 
 ---
 
-**Cập nhật lần cuối:** 2026-02-05  
-**Đã kiểm tra với:** GroupDocs.Viewer 25.2 (Java)  
-**Tác giả:** GroupDocs  
+**Last Updated:** 2026-06-25  
+**Tested With:** GroupDocs.Viewer 25.2 (Java)  
+**Author:** GroupDocs  
 
 ## Tài nguyên
 - Tài liệu: [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
@@ -156,3 +208,9 @@ A: Xem tài liệu tham chiếu API chính thức tại [API Reference](https://
 - Dùng thử miễn phí: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
 - Giấy phép tạm thời: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
 - Hỗ trợ: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+## Hướng dẫn liên quan
+
+- [Cách Chuyển Đổi DOCX sang HTML Sử Dụng GroupDocs.Viewer cho Java: Hướng Dẫn Bước‑Bước](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Chuyển đổi docx sang html bằng GroupDocs.Viewer cho Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-responsive-html-rendering/)
+- [Chuyển DOCX sang HTML với Tài Nguyên Ngoài Sử Dụng GroupDocs.Viewer cho Java](/viewer/java/advanced-rendering/render-docx-html-external-resources-groupdocs-java/)
