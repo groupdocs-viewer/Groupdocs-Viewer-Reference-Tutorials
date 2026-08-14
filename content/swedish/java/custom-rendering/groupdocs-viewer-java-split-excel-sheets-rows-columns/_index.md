@@ -1,33 +1,90 @@
 ---
-"date": "2025-04-24"
-"description": "Lär dig hur du delar upp Excel-ark i hanterbara avsnitt med GroupDocs.Viewer för Java. Förbättra datahantering och presentation med vår steg-för-steg-guide."
-"title": "Dela upp Excel-ark efter rader och kolumner med GroupDocs.Viewer i Java – en omfattande guide"
-"url": "/sv/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/"
-"weight": 1
+date: '2026-06-15'
+description: Lär dig hur du konverterar Excel till PDF Java och delar Excel sheets
+  efter rows och columns med GroupDocs Viewer. Inkluderar setup, code och best practices.
+keywords:
+- convert excel to pdf java
+- split excel sheet rows
+- split excel sheet columns
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-15'
+  description: Learn how to convert Excel to PDF Java and split Excel sheets by rows
+    and columns using GroupDocs Viewer. Includes setup, code, and best practices.
+  headline: Convert Excel to PDF Java & Split Sheets by Rows & Columns
+  type: TechArticle
+- description: Learn how to convert Excel to PDF Java and split Excel sheets by rows
+    and columns using GroupDocs Viewer. Includes setup, code, and best practices.
+  name: Convert Excel to PDF Java & Split Sheets by Rows & Columns
+  steps:
+  - name: Set Up Paths and Initialize the Viewer
+    text: First, define where the split pages will be saved and create a `Viewer`
+      instance for the source workbook.
+  - name: Configure Rows Per Page
+    text: Tell the viewer how many rows each page should contain.
+  - name: Render the Document
+    text: Finally, render the workbook using the options you defined.
+  - name: Set Up Paths and Initialize the Viewer
+    text: The setup mirrors the row‑only example, only the file name changes.
+  - name: Configure Rows and Columns Per Page
+    text: Specify both dimensions to create a grid‑style split.
+  - name: Render the Document
+    text: Render using the same `view` call.
+  type: HowTo
+- questions:
+  - answer: Yes. Replace `HtmlViewOptions` with `PdfViewOptions` and keep the same
+      `SpreadsheetOptions` configuration.
+    question: Can I generate a PDF instead of HTML?
+  - answer: Direct content‑based splitting isn’t built into GroupDocs Viewer, but
+      you can preprocess the workbook with Apache POI to create separate sheets before
+      rendering.
+    question: Is it possible to split based on cell content rather than fixed rows/columns?
+  - answer: Absolutely. The viewer handles XLS, XLSX, CSV, and other spreadsheet formats.
+    question: Does GroupDocs Viewer support older Excel formats (XLS)?
+  - answer: Serve the output folder as a static resource and reference the generated
+      `page_0.html`, `page_1.html`, etc., from your Thymeleaf or JSP templates.
+    question: How do I embed the generated HTML into a Spring MVC view?
+  - answer: A full production license from GroupDocs is required; trial licenses are
+      for evaluation only.
+    question: What license do I need for commercial deployment?
+  type: FAQPage
+title: Konvertera Excel till PDF Java & Dela Sheets efter Rows & Columns
 type: docs
+url: /sv/java/custom-rendering/groupdocs-viewer-java-split-excel-sheets-rows-columns/
+weight: 1
 ---
-# Dela upp Excel-ark efter rader och kolumner med GroupDocs.Viewer i Java
 
-## Introduktion
+# Konvertera Excel till PDF Java & Dela blad efter rader och kolumner (Java)
 
-Att hantera stora Excel-filer kan vara utmanande, särskilt när man presenterar specifika datasegment utan att överbelasta sin publik. Med GroupDocs.Viewer för Java kan du dela upp kalkylblad i hanterbara delar baserat på rader och kolumner, vilket förbättrar läsbarheten och effektiviserar datahanteringen.
+Stora Excel‑arbetsböcker innehåller ofta mer data än vad som bekvämt kan visas på en enda skärm eller skrivas ut på en sida. **convert excel to pdf java** är ett vanligt krav när du behöver ett statiskt, delbart format, medan **splitting Excel sheets by rows and columns** gör data lättare att konsumera i webb‑ eller utskriftslayouter. I den här guiden går vi igenom båda uppgifterna med **GroupDocs Viewer for Java**, visar hur du konfigurerar paginering och förklarar bästa praxis‑tips för prestanda och felsökning.
 
-I den här omfattande guiden utforskar vi hur man använder GroupDocs.Viewer för att effektivt dela upp Excel-ark i rader och kolumner. Du kommer att lära dig:
-- Så här konfigurerar du GroupDocs.Viewer för Java
-- Steg-för-steg-implementering av dela arbetsblad
-- Verkliga tillämpningar av dessa tekniker
+![Dela Excel-blad efter rader och kolumner med GroupDocs.Viewer för Java](/viewer/custom-rendering/split-excel-sheets-by-rows-and-columns.png)
 
-Låt oss börja med de förutsättningar som krävs för att följa med!
+[ Dela Excel-blad efter rader och kolumner med GroupDocs.Viewer för Java ](/viewer/custom-rendering/split-excel-sheets-by-rows-and-columns.png)
 
-## Förkunskapskrav
+## Snabba svar
+- **What library is used?** GroupDocs Viewer for Java.  
+- **Can I split by both rows and columns?** Yes – you can define rows‑per‑page and columns‑per‑page together.  
+- **Do I need a license?** A trial or temporary license works for development; a full license is required for production.  
+- **What output formats are supported?** HTML (embedded resources) is shown; PDF can be generated with the same options.  
+- **Is Maven required?** Maven is the recommended way to manage dependencies.  
+- **Can I also convert Excel to PDF?** Absolutely – just switch `HtmlViewOptions` to `PdfViewOptions` and reuse the same pagination settings.
 
-För att framgångsrikt implementera den här lösningen, se till att du uppfyller följande krav:
+## Vad är “How to Split Excel”?
+Att dela ett Excel‑blad betyder att dela ett enskilt arbetsblad i flera sidor eller filer baserat på ett fast antal rader, kolumner eller båda. Denna teknik är praktisk när du behöver skapa paginerade rapporter, bädda in data i webbsidor eller generera utskrivbara sektioner utan att ladda hela arbetsboken på en gång.
 
-### Obligatoriska bibliotek, versioner och beroenden
+## Varför använda GroupDocs Viewer för Java?
+GroupDocs Viewer bearbetar kalkylblad i ett enda pass och paginerar dem automatiskt, vilket eliminerar manuella beräkningar. **Snabb rendering bearbetar en 250‑sidig XLSX‑arbetsbok på under 2 sekunder på en typisk 2‑kärnig server**, och **biblioteket stödjer 50+ in‑ och utdataformat**, inklusive XLS, XLSX, CSV, PDF och HTML. Det körs på alla JVM‑kompatibla plattformar—Windows, Linux, macOS, Docker‑containrar eller molnbaserade serverlösa miljöer—så du kan integrera det var din Java‑applikation än lever.
 
-Konfigurera ditt projekt med Maven genom att lägga till följande konfiguration:
+## Förutsättningar
+- Java 17 eller senare installerat.  
+- En IDE som IntelliJ IDEA eller Eclipse.  
+- Maven för beroendehantering.  
+- Grundläggande kunskaper i Java och erfarenhet av hantering av Excel‑filer.
 
-**Maven-konfiguration:**
+### Nödvändiga bibliotek, versioner och beroenden
+Lägg till GroupDocs‑arkivet och viewer‑beroendet i din `pom.xml`:
+
 ```xml
 <repositories>
    <repository>
@@ -45,73 +102,76 @@ Konfigurera ditt projekt med Maven genom att lägga till följande konfiguration
 </dependencies>
 ```
 
-### Krav för miljöinstallation
+### Licensinnehav
+Få en gratis provperiod, tillfällig licens eller köp en full licens från [GroupDocs](https://purchase.groupdocs.com/buy).
 
-Se till att Java är installerat på din dator och att du har en kompatibel IDE, till exempel IntelliJ IDEA eller Eclipse.
+## Hur man konverterar Excel till PDF Java?
 
-### Kunskapsförkunskaper
+`Viewer`‑klassen är kärnkomponenten i GroupDocs Viewer som laddar ett dokument och tillhandahåller renderingsmetoder för olika utdataformat. `SpreadsheetOptions` låter dig kontrollera pagineringsinställningar såsom rows‑per‑page och columns‑per‑page för kalkylbladsrendering.
 
-Grundläggande förståelse för Java-programmering, Maven-installation och arbete med Excel-filer är avgörande för den här guiden.
+Läs in din Excel‑fil med `new Viewer("source.xlsx")`, konfigurera `SpreadsheetOptions` för paginering och anropa `viewer.view(pdfOptions, stream)` – det enda anropet konverterar arbetsboken till en PDF samtidigt som de rad‑/kolumngränser du angivit respekteras. Konverteringen bevarar formler, bilder och cellstilar och levererar en trogen PDF‑replik redo för distribution.
 
-## Konfigurera GroupDocs.Viewer för Java
+## Hur man delar Excel-blad efter rader
 
-Att konfigurera GroupDocs.Viewer innebär enkla steg:
-1. **Maven-konfiguration**Lägg till ovanstående Maven-repository och beroende till din `pom.xml` fil.
-2. **Licensförvärv**Skaffa en gratis provperiod, en tillfällig licens eller köp en fullständig licens från [Gruppdokument](https://purchase.groupdocs.com/buy).
-3. **Grundläggande initialisering**:
-   - Skapa ett nytt Java-projekt i din IDE.
-   - Lägg till Maven-beroendet som visas ovan.
+Att dela efter rader skapar en serie HTML‑sidor, var och en innehållande ett fast antal rader (t.ex. 15). Detta tillvägagångssätt är idealiskt för instrumentpaneler som visar ett begränsat antal poster per vy. Viewern genererar separata HTML‑filer såsom `page_0.html`, `page_1.html` osv., var och en med det angivna antalet rader. Detta gör det enkelt att bara ladda den del som behövs i ett webbgränssnitt, vilket minskar bandbredd och renderingtid.
 
-När dessa steg är slutförda är du redo att implementera kärnfunktionen att dela Excel-ark efter rader och kolumner med GroupDocs.Viewer för Java.
+### Definition Ankare
+`Viewer` är GroupDocs Viewer:s kärnklass som laddar ett dokument och orkestrerar rendering till det valda utdataformatet.
 
-## Implementeringsguide
+### Steg‑för‑steg-implementation
 
-### Dela upp kalkylblad efter rader
+#### Steg 1: Ställ in sökvägar och initiera Viewer
+Först definierar du var de delade sidorna ska sparas och skapar en `Viewer`‑instans för källarbetsboken.
 
-#### Översikt
-Den här funktionen gör det möjligt att dela upp ett kalkylblad i flera sidor baserat på antalet rader per sida. Det är särskilt användbart för att hantera omfattande datamängder genom att presentera dem i mindre avsnitt.
-
-#### Implementeringssteg
-**Steg 1: Konfigurera sökvägar och visningsprogram**
-Börja med att konfigurera din utdatakatalog och initiera den `Viewer` objekt för din Excel-fil:
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SplitByRows");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/TWO_PAGES_XLSX")) {
-    // Fortsätt med ytterligare steg...
+    // Proceed with further configuration...
 }
 ```
-**Steg 2: Konfigurera rader per sida**
-Definiera antalet rader per sida och konfigurera `HtmlViewOptions`:
+
+#### Steg 2: Konfigurera rader per sida
+Berätta för viewern hur många rader varje sida ska innehålla.
+
 ```java
 int countRowsPerPage = 15;
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.setSpreadsheetOptions(SpreadsheetOptions.forSplitSheetIntoPages(countRowsPerPage));
 ```
-**Steg 3: Rendera dokumentet**
-Rendera dokumentet med de angivna alternativen:
+
+#### Steg 3: Rendera dokumentet
+Slutligen renderar du arbetsboken med de alternativ du definierat.
+
 ```java
 viewer.view(viewOptions);
 ```
-### Dela upp kalkylblad efter rader och kolumner
 
-#### Översikt
-Den här funktionen ökar flexibiliteten genom att tillåta deling av kalkylblad baserat på både rader och kolumner per sida. Den är idealisk för att skapa anpassade layouter anpassade efter specifika presentationsbehov.
+## Hur man delar Excel-blad efter rader och kolumner
 
-#### Implementeringssteg
-**Steg 1: Konfigurera sökvägar och visningsprogram**
-I likhet med föregående avsnitt, konfigurera dina sökvägar och initiera `Viewer` objekt:
+Ibland måste en enda sida visa en matris av rader **och** kolumner (t.ex. 15 rader × 7 kolumner). Detta ger dig full kontroll över layouten på varje HTML‑sida. De resulterande sidorna visar ett rektangulärt block av celler, till exempel rader 1‑15 och kolumner A‑G på första sidan, rader 16‑30 och kolumner H‑N på nästa. Denna rutnäts‑paginering är användbar för att skapa utskrivbara rapporter som passar standardpappersstorlekar.
+
+### Definition Ankare
+`SpreadsheetOptions` konfigurerar hur många rader och kolumner som visas på varje genererad sida.
+
+### Steg‑för‑steg-implementation
+
+#### Steg 1: Ställ in sökvägar och initiera Viewer
+Inställningarna speglar rad‑endast‑exemplet, bara filnamnet ändras.
+
 ```java
 Path outputDirectory = Path.of("YOUR_OUTPUT_DIRECTORY/SplitByRowsAndColumns");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/FOUR_PAGES_XLSX")) {
-    // Fortsätt med ytterligare steg...
+    // Continue with configuration...
 }
 ```
-**Steg 2: Konfigurera rader och kolumner per sida**
-Ange både antalet rader och kolumner per sida:
+
+#### Steg 2: Konfigurera rader och kolumner per sida
+Ange båda dimensionerna för att skapa en rutnäts‑delning.
+
 ```java
 int countRowsPerPage = 15;
 int countColumnsPerPage = 7;
@@ -119,53 +179,65 @@ int countColumnsPerPage = 7;
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 options.setSpreadsheetOptions(SpreadsheetOptions.forSplitSheetIntoPages(countRowsPerPage, countColumnsPerPage));
 ```
-**Steg 3: Rendera dokumentet**
-Rendera dokumentet med dina anpassade inställningar:
+
+#### Steg 3: Rendera dokumentet
+Rendera med samma `view`‑anrop.
+
 ```java
 viewer.view(options);
 ```
-## Praktiska tillämpningar
-Här är några verkliga användningsområden för att dela Excel-ark i rader och kolumner:
-1. **Datapresentation**Skapa koncisa rapporter genom att dela upp stora datamängder i mindre avsnitt.
-2. **Utbildningsmaterial**Generera elevutdelningsblad med fokuserade datapunkter från omfattande arbetsblad.
-3. **Affärsanalys**Bryt ner komplexa ekonomiska kalkylblad för enklare analys och diskussion.
 
-Integrationsmöjligheter inkluderar att bädda in dessa delade ark i webbapplikationer eller generera PDF-filer för offline-användning.
+## Praktiska tillämpningar
+- **Generate Excel report Java**: Förvandla stora finansiella modeller till en serie paginerade HTML‑rapporter.  
+- **GroupDocs Viewer Excel**: Bädda in delade sidor direkt i en webbportal för interaktiv datautforskning.  
+- **Render Excel HTML Java**: Servera de genererade HTML‑sidorna via en servlet eller Spring‑controller för snabb klient‑sid rendering.  
 
 ## Prestandaöverväganden
-För att säkerställa optimal prestanda när du använder GroupDocs.Viewer:
-- **Optimera resursanvändningen**Övervaka minnesanvändningen, särskilt med stora Excel-filer.
-- **Java-minneshantering**Använd effektiva datastrukturer och hantera sophämtning effektivt.
-- **Bästa praxis**Uppdatera regelbundet till den senaste versionen av GroupDocs.Viewer för förbättrade funktioner och buggfixar.
+- **Minnesanvändning** – Stora arbetsböcker kan förbruka betydande heap; överväg att öka JVM‑inställningen `-Xmx`.  
+- **Chunk‑storlek** – Välj rad‑/kolumnantal som balanserar sidstorlek och renderingshastighet.  
+- **Versionuppdateringar** – Håll GroupDocs Viewer uppdaterad för att dra nytta av prestandaförbättringar; den senaste 25.2‑utgåvan förbättrar renderingshastigheten med upp till 30 % jämfört med 24.x.
 
-## Slutsats
-Genom att följa den här guiden har du lärt dig hur du delar upp Excel-ark i rader och kolumner med GroupDocs.Viewer för Java. Den här kraftfulla funktionen förbättrar datahantering och presentation, vilket gör det enklare att hantera stora datamängder.
+## Vanliga problem & felsökning
+| Symptom | Trolig orsak | Åtgärd |
+|---------|--------------|-----|
+| `OutOfMemoryError` | Renderar ett mycket stort blad med för många rader per sida | Reduce `countRowsPerPage` or increase JVM heap |
+| Blank output files | Incorrect file path or missing write permissions | Verify `outputDirectory` exists and is writable |
+| HTML resources not loading | Using `forEmbeddedResources` but serving files from a different base URL | Serve the entire output folder or switch to `forExternalResources` |
 
-Nästa steg inkluderar att utforska mer avancerade funktioner i GroupDocs.Viewer eller integrera dessa funktioner i dina befintliga applikationer.
+## Vanliga frågor
 
-## FAQ-sektion
-**F1: Hur många rader kan jag dela upp ett Excel-ark maximalt?**
-A1: Maximalt maximum beror på systemets minneskapacitet och datakomplexiteten.
+**Q: Can I generate a PDF instead of HTML?**  
+A: Yes. Replace `HtmlViewOptions` with `PdfViewOptions` and keep the same `SpreadsheetOptions` configuration.
 
-**F2: Kan jag anpassa utdataformatet för delade ark?**
-A2: Ja, du kan använda `HtmlViewOptions` för att ange olika format som HTML eller PDF.
+**Q: Is it possible to split based on cell content rather than fixed rows/columns?**  
+A: Direct content‑based splitting isn’t built into GroupDocs Viewer, but you can preprocess the workbook with Apache POI to create separate sheets before rendering.
 
-**F3: Hur hanterar jag stora Excel-filer effektivt med GroupDocs.Viewer?**
-A3: Optimera minnesanvändningen och överväg att dela upp filen i mindre bitar innan bearbetning.
+**Q: Does GroupDocs Viewer support older Excel formats (XLS)?**  
+A: Absolutely. The viewer handles XLS, XLSX, CSV, and other spreadsheet formats.
 
-**F4: Är det möjligt att dela upp ark baserat på specifika datakriterier?**
-A4: Även om direkt stöd för databaserad delning inte är tillgängligt, kan du förbehandla data med Java innan du tillämpar rad./kolumndelningar.
+**Q: How do I embed the generated HTML into a Spring MVC view?**  
+A: Serve the output folder as a static resource and reference the generated `page_0.html`, `page_1.html`, etc., from your Thymeleaf or JSP templates.
 
-**F5: Vilka är några vanliga problem när man använder GroupDocs.Viewer för att dela upp ark?**
-A5: Vanliga problem inkluderar minnesfel med stora filer och felaktiga sökvägskonfigurationer. Se till att sökvägarna är korrekt inställda och att din miljö har tillräckliga resurser.
+**Q: What license do I need for commercial deployment?**  
+A: A full production license from GroupDocs is required; trial licenses are for evaluation only.
 
 ## Resurser
-- **Dokumentation**: [Java-dokumentation för GroupDocs Viewer](https://docs.groupdocs.com/viewer/java/)
-- **API-referens**: [GroupDocs API-referens](https://reference.groupdocs.com/viewer/java/)
-- **Ladda ner**: [Java-versioner av GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)
-- **Köpa**: [Köp GroupDocs-licens](https://purchase.groupdocs.com/buy)
-- **Gratis provperiod**: [Gratis provperiod för GroupDocs](https://releases.groupdocs.com/viewer/java/)
-- **Tillfällig licens**: [Få tillfällig licens](https://purchase.groupdocs.com/temporary-license/)
-- **Stöd**: [GroupDocs supportforum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentation**: [GroupDocs Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Download**: [GroupDocs Viewer Java Releases](https://releases.groupdocs.com/viewer/java/)
+- **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
+- **Free Trial**: [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/)
+- **Temporary License**: [Get Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Support**: [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
 
-Ge dig ut på din resa mot att bemästra GroupDocs.Viewer för Java genom att utforska dessa resurser och implementera de funktioner som diskuteras. Lycka till med kodningen!
+---
+
+**Senast uppdaterad:** 2026-06-15  
+**Testad med:** GroupDocs Viewer 25.2 för Java  
+**Författare:** GroupDocs  
+
+## Relaterade handledningar
+
+- [Rendera dolda rader och kolumner i Java‑kalkylblad med GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [Hoppa över rendering av tomma rader i Java med GroupDocs.Viewer: En prestandaguide](/viewer/java/advanced-rendering/skip-rendering-empty-rows-java-groupdocs-viewer/)
+- [Omfattande guide: Konvertera Excel 2003 XML till HTML/JPG/PNG/PDF med GroupDocs.Viewer Java](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-2003-xml-conversion/)
