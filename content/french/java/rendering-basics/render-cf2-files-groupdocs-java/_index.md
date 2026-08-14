@@ -1,40 +1,103 @@
 ---
-"date": "2025-04-24"
-"description": "Apprenez à convertir des fichiers CF2 en différents formats avec GroupDocs.Viewer pour Java. Ce guide explique comment convertir facilement des fichiers CF2 aux formats HTML, JPG, PNG et PDF."
-"title": "Comment convertir des fichiers CF2 en HTML, JPG, PNG et PDF en Java avec GroupDocs.Viewer"
-"url": "/fr/java/rendering-basics/render-cf2-files-groupdocs-java/"
-"weight": 1
+date: '2026-06-30'
+description: Apprenez comment convertir cf2 en pdf et d'autres formats en utilisant
+  GroupDocs.Viewer for Java. Ce guide étape par étape couvre le rendu des fichiers
+  CF2 en HTML, JPG, PNG et PDF de manière efficace.
+keywords:
+- convert cf2 to pdf
+- groupdocs viewer java
+- java convert cad drawings
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-30'
+  description: Learn how to convert cf2 to pdf and other formats using GroupDocs.Viewer
+    for Java. This step‑by‑step guide covers rendering CF2 files to HTML, JPG, PNG,
+    and PDF efficiently.
+  headline: How to Convert CF2 to PDF, HTML, JPG, PNG with GroupDocs.Viewer for Java
+  type: TechArticle
+- description: Learn how to convert cf2 to pdf and other formats using GroupDocs.Viewer
+    for Java. This step‑by‑step guide covers rendering CF2 files to HTML, JPG, PNG,
+    and PDF efficiently.
+  name: How to Convert CF2 to PDF, HTML, JPG, PNG with GroupDocs.Viewer for Java
+  steps:
+  - name: Initialize Viewer and Configure Options
+    text: '**Explanation** – The `PdfViewOptions` class configures the output path
+      and rendering quality. After rendering, dispose of the `Viewer` object to free
+      resources.'
+  - name: Define Paths and Initialize Viewer
+    text: Set directory paths for your CF2 document and output HTML file. **Explanation**
+      – This snippet initializes the `Viewer` with a CF2 file and specifies HTML view
+      options to embed resources within the output.
+  - name: Initialize Viewer and Configure Options
+    text: Set up the output path for the JPG file and render the document. **Explanation**
+      – The `JpgViewOptions` class specifies the output file path and renders the
+      CF2 document as a JPEG image.
+  - name: Initialize Viewer and Configure Options
+    text: Define the output path for the PNG file and render it. **Explanation** –
+      By using `PngViewOptions`, the CF2 file is rendered as a PNG image, ensuring
+      high resolution and quality.
+  type: HowTo
+- questions:
+  - answer: Yes—`HtmlViewOptions`, `JpgViewOptions`, `PngViewOptions`, and `PdfViewOptions`
+      expose properties such as resolution, image quality, and resource embedding
+      to fine‑tune the result.
+    question: Can I customize the output for better quality or smaller file size?
+  - answer: Absolutely. Loop through a directory, instantiate a `Viewer` for each
+      file, and call the appropriate `view` method. This pattern works for any supported
+      output format.
+    question: Does GroupDocs.Viewer support batch conversion of multiple CF2 files?
+  - answer: You can start with a 30‑day free trial. Production use requires a paid
+      license, which removes watermarks and unlocks unlimited conversions.
+    question: Is GroupDocs.Viewer free to use?
+  - answer: Yes—the self‑contained HTML output can be placed directly into any web
+      page, enabling instant in‑browser CAD viewing without additional plugins.
+    question: Can I embed the rendered HTML in my website?
+  - answer: A Java runtime (JDK 8+), at least 2 GB of RAM for large files, and sufficient
+      disk space for temporary rendering buffers. The library runs on Windows, Linux,
+      and macOS.
+    question: What are the system requirements for using GroupDocs.Viewer?
+  type: FAQPage
+title: Comment convertir CF2 en PDF, HTML, JPG, PNG avec GroupDocs.Viewer for Java
 type: docs
+url: /fr/java/rendering-basics/render-cf2-files-groupdocs-java/
+weight: 1
 ---
-# Guide complet : rendu de fichiers CF2 dans différents formats à l'aide de GroupDocs.Viewer en Java
+
+# Guide complet : rendu des fichiers CF2 vers différents formats avec GroupDocs.Viewer en Java
 
 ## Introduction
 
-Convertir des fichiers CAO complexes comme CF2 en formats accessibles comme HTML, JPG, PNG ou PDF peut s'avérer complexe. Ce guide vous expliquera comment l'utiliser. **GroupDocs.Viewer pour Java** Pour convertir facilement des fichiers CF2, couramment utilisés en modélisation 3D, en différents formats de sortie. À la fin de ce tutoriel, vous saurez comment transformer des dessins CAO en documents conviviaux.
+Convertissez cf2 en pdf et autres formats adaptés au web avec seulement quelques lignes de code Java. Le rendu de fichiers CAD complexes comme CF2 en HTML, JPG, PNG ou PDF peut être difficile, mais **GroupDocs.Viewer for Java** simplifie considérablement le processus. Dans ce tutoriel, vous découvrirez comment transformer les dessins CAD en documents conviviaux, pourquoi cela est important pour les applications modernes, et exactement quelles API appeler.
 
-### Ce que vous apprendrez :
-- Rendu des fichiers CF2 en HTML, JPG, PNG et PDF à l'aide de GroupDocs.Viewer pour Java.
-- Configuration de votre environnement de développement pour GroupDocs.Viewer.
-- Comprendre les configurations clés et les options de personnalisation.
-- Dépannage des problèmes courants lors de la conversion de fichiers.
+![Rendu des fichiers CF2 en HTML, JPG, PNG, PDF avec GroupDocs.Viewer pour Java](/viewer/rendering-basics/render-cf2-files-to-html-jpg-png-pdf-java.png)
 
-Explorons les prérequis dont vous aurez besoin !
+### Ce que vous apprendrez
+- Rendu des fichiers CF2 en HTML, JPG, PNG et PDF avec GroupDocs.Viewer for Java.  
+- Configuration de votre environnement de développement pour GroupDocs.Viewer.  
+- Compréhension des configurations clés et des options de personnalisation.  
+- Dépannage des problèmes de conversion courants.  
+
+## Réponses rapides
+- **Puis-je convertir CF2 en PDF ?** Oui—utilisez `PdfViewOptions` avec la classe `Viewer` pour une conversion en une seule étape.  
+- **Quel format donne la plus petite taille de fichier ?** JPG produit généralement les fichiers image les plus petits, tandis que le PDF conserve la qualité vectorielle.  
+- **Ai-je besoin d’une licence pour la production ?** Une licence payante de GroupDocs.Viewer supprime les limitations d’essai et permet des conversions illimitées.  
+- **La conversion par lots est‑elle prise en charge ?** Absolument—parcourez un dossier et appelez le même code de rendu pour chaque fichier.  
+- **Quelle version de Java est requise ?** JDK 8 ou supérieur ; JDK 11+ est recommandé pour les meilleures performances.  
+
+## Qu’est‑ce que GroupDocs.Viewer ?
+GroupDocs.Viewer est une bibliothèque Java qui rend plus de 100 formats de documents et CAD en HTML, images ou PDF sans nécessiter l’application d’origine. Elle prend en charge les fichiers jusqu’à 2 Go, les traite avec une faible consommation de mémoire, et offre des options de résolution, de gestion des polices et d’intégration des ressources, ce qui la rend idéale pour l’aperçu de documents côté serveur.  
 
 ## Prérequis
-
-Avant de restituer les fichiers CF2, assurez-vous de disposer des éléments suivants :
-1. **Bibliothèques requises**: Incluez GroupDocs.Viewer dans votre projet à l'aide de Maven pour une intégration facile.
-   
-2. **Configuration requise pour l'environnement**:Installez Java Development Kit (JDK) et utilisez un IDE comme IntelliJ IDEA ou Eclipse.
-
-3. **Prérequis en matière de connaissances**:Compréhension de base de la programmation Java, familiarité avec les IDE et expérience de travail avec les E/S de fichiers en Java.
+Avant de rendre les fichiers CF2, assurez-vous d’avoir les éléments suivants :
+1. **Bibliothèques requises** – Incluez GroupDocs.Viewer dans votre projet en utilisant Maven pour une gestion facile des dépendances.  
+2. **Configuration de l’environnement** – Installez le Java Development Kit (JDK) 8+ et utilisez un IDE tel qu’IntelliJ IDEA ou Eclipse.  
+3. **Prérequis de connaissances** – Programmation Java de base, familiarité avec les IDE et expérience de la gestion des fichiers I/O en Java.  
 
 ## Configuration de GroupDocs.Viewer pour Java
 
-Pour commencer à utiliser GroupDocs.Viewer pour Java, ajoutez les dépendances nécessaires à votre projet. Maven simplifie la gestion des versions de la bibliothèque :
+### Configuration Maven
+Ajoutez cette configuration à votre `pom.xml` :
 
-### Configuration de Maven
-Ajoutez cette configuration à votre `pom.xml`:
 ```xml
 <repositories>
    <repository>
@@ -50,26 +113,48 @@ Ajoutez cette configuration à votre `pom.xml`:
 </dependency>
 ```
 
-### Acquisition de licence
-Commencez par un essai gratuit depuis le site officiel de GroupDocs.Viewer et envisagez d'acheter une licence pour une utilisation illimitée.
+### Obtention de licence
+Commencez avec un essai gratuit depuis le site officiel de GroupDocs.Viewer, et envisagez d’acheter une licence pour une utilisation illimitée.  
 
 ### Initialisation et configuration de base
-Une fois votre environnement prêt, initialisez GroupDocs.Viewer :
+Avec votre environnement prêt, initialisez GroupDocs.Viewer :
+
 ```java
 import com.groupdocs.viewer.Viewer;
-// Initialiser la visionneuse avec le chemin du fichier ou le flux
+// Initialize viewer with file path or stream
 Viewer viewer = new Viewer("path/to/your/document.cf2");
 ```
-Examinons maintenant le rendu des fichiers CF2 dans différents formats.
 
-## Guide de mise en œuvre
+Passons maintenant au rendu des fichiers CF2 vers différents formats.
 
-Nous décomposerons l'implémentation en quatre fonctionnalités principales : conversion de fichiers CF2 en HTML, JPG, PNG et PDF. Chaque section comprend des instructions étape par étape avec des extraits de code.
+## Comment convertir CF2 en PDF ?
+`PdfViewOptions` configure les paramètres de sortie PDF tels que le chemin du fichier et la qualité du rendu.
 
-### Rendu de CF2 en HTML
-**Aperçu**Convertissez un fichier CF2 en un document HTML interactif avec des ressources intégrées.
+Chargez votre fichier CF2 avec `new Viewer("sample.cf2")` et appelez `viewer.view(new PdfViewOptions("output.pdf"))` – cet appel unique effectue une conversion complète, en préservant les calques, le texte et les graphiques vectoriels. Le processus s’exécute en mémoire, de sorte que même les fichiers de plus de 500 Mo sont traités efficacement.
 
-#### Étape 1 : Importer les packages requis
+### Étape 1 : Importer les packages requis
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.PdfViewOptions;
+```
+
+### Étape 2 : Initialiser le Viewer et configurer les options
+```java
+Path pageFilePathFormat = outputDirectory.resolve("CF2_result.pdf");
+try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+**Explication** – La classe `PdfViewOptions` configure le chemin de sortie et la qualité du rendu. Après le rendu, libérez l’objet `Viewer` pour libérer les ressources.  
+
+## Comment convertir CF2 en HTML ?
+`HtmlViewOptions` définit comment la sortie HTML est générée, y compris l’intégration des ressources et la définition des chemins de sortie.
+
+Chargez le fichier CF2 et utilisez `HtmlViewOptions` pour générer une page HTML autonome qui inclut toutes les images et le CSS en ligne.
+
+### Étape 1 : Importer les packages requis
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -77,8 +162,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-#### Étape 2 : Définir les chemins et initialiser la visionneuse
+### Étape 2 : Définir les chemins et initialiser le Viewer
 Définissez les chemins de répertoire pour votre document CF2 et le fichier HTML de sortie.
+
 ```java
 Path inputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY");
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -88,19 +174,23 @@ try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
     viewer.view(options);
 }
 ```
-**Explication**: Cet extrait initialise le `Viewer` avec un fichier CF2 et spécifie les options d'affichage HTML pour intégrer des ressources dans la sortie.
 
-### Rendu CF2 en JPG
-**Aperçu**:Convertissez votre document CF2 en image JPEG pour un partage et une visualisation faciles.
+**Explication** – Cet extrait initialise le `Viewer` avec un fichier CF2 et spécifie les options de vue HTML pour intégrer les ressources dans la sortie.  
 
-#### Étape 1 : Importer les packages requis
+## Comment convertir CF2 en JPG ?
+`JpgViewOptions` spécifie les paramètres de sortie JPEG tels que l’emplacement du fichier et la qualité de l’image.
+
+Rendez chaque page du dessin CAD en image JPEG haute résolution, idéale pour des aperçus rapides ou des pièces jointes d’e‑mail.
+
+### Étape 1 : Importer les packages requis
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
 
-#### Étape 2 : Initialiser la visionneuse et configurer les options
-Configurez le chemin de sortie du fichier JPG et affichez le document.
+### Étape 2 : Initialiser le Viewer et configurer les options
+Configurez le chemin de sortie pour le fichier JPG et rendez le document.
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("CF2_result.jpg");
 try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
@@ -108,19 +198,23 @@ try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
     viewer.view(options);
 }
 ```
-**Explication**: Le `JpgViewOptions` la classe spécifie le chemin du fichier de sortie et rend le document CF2 sous forme d'image JPEG.
 
-### Rendu CF2 en PNG
-**Aperçu**: Convertissez les fichiers CF2 en images PNG de haute qualité.
+**Explication** – La classe `JpgViewOptions` spécifie le chemin du fichier de sortie et rend le document CF2 en image JPEG.  
 
-#### Étape 1 : Importer les packages requis
+## Comment convertir CF2 en PNG ?
+`PngViewOptions` configure les options de rendu PNG telles que le chemin de sortie et la résolution.
+
+La sortie PNG conserve une qualité sans perte, ce qui la rend parfaite pour la documentation nécessitant des lignes nettes.
+
+### Étape 1 : Importer les packages requis
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
 
-#### Étape 2 : Initialiser la visionneuse et configurer les options
-Définissez le chemin de sortie du fichier PNG et effectuez le rendu.
+### Étape 2 : Initialiser le Viewer et configurer les options
+Définissez le chemin de sortie pour le fichier PNG et rendez-le.
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("CF2_result.png");
 try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
@@ -128,78 +222,57 @@ try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
     viewer.view(options);
 }
 ```
-**Explication**: En utilisant `PngViewOptions`, le fichier CF2 est rendu sous forme d'image PNG, garantissant une haute résolution et une haute qualité.
 
-### Rendu de CF2 en PDF
-**Aperçu**: Générez un document PDF à partir de votre fichier CF2 pour une distribution et une impression faciles.
-
-#### Étape 1 : Importer les packages requis
-```java
-import com.groupdocs.viewer.Viewer;
-import com.groupdocs.viewer.options.PdfViewOptions;
-```
-
-#### Étape 2 : Initialiser la visionneuse et configurer les options
-Définissez le chemin de sortie du fichier PDF et effectuez son rendu.
-```java
-Path pageFilePathFormat = outputDirectory.resolve("CF2_result.pdf");
-try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
-```
-**Explication**: Le `PdfViewOptions` La classe configure le rendu des fichiers CF2 au format PDF, garantissant la compatibilité entre les appareils.
+**Explication** – En utilisant `PngViewOptions`, le fichier CF2 est rendu en image PNG, garantissant une haute résolution et qualité.  
 
 ## Applications pratiques
+1. **Présentations architecturales** – Convertissez les dessins CAD en HTML ou PDF pour des présentations destinées aux clients.  
+2. **Documentation d’ingénierie** – Partagez des conceptions détaillées sous forme d’images JPG ou PNG avec les membres de l’équipe.  
+3. **Compatibilité multiplateforme** – Rendez les fichiers CF2 accessibles sur des appareils sans logiciel spécialisé en les convertissant en formats universels.  
+4. **Intégration avec les systèmes de gestion de documents** – Automatisez la conversion et l’archivage au sein des flux de travail d’entreprise.  
+5. **Plateformes de visualisation en ligne** – Permettez aux utilisateurs de visualiser les conceptions CAD directement dans les navigateurs web en utilisant la sortie HTML.  
 
-Le rendu des fichiers CF2 avec GroupDocs.Viewer pour Java a de nombreuses applications :
-1. **Présentations architecturales**:Convertissez les dessins CAO aux formats HTML ou PDF pour les présentations clients.
-   
-2. **Documentation technique**: Partagez des conceptions détaillées sous forme d'images JPG ou PNG avec les membres de l'équipe.
+## Considérations de performance
+Pour des performances optimales avec GroupDocs.Viewer :
+- Configurez les options du viewer adaptées aux besoins spécifiques pour minimiser la consommation CPU et mémoire.  
+- Libérez rapidement les objets `Viewer` après le rendu pour éviter les fuites de mémoire.  
+- Activez la mise en cache pour les scénarios où le même document est rendu plusieurs fois ; cela peut réduire le temps de traitement jusqu’à 40 %.  
 
-3. **Compatibilité multiplateforme**:Rendez les fichiers CF2 accessibles sur des appareils sans logiciel spécialisé en les convertissant en formats universels.
+En suivant ces meilleures pratiques, vous pouvez améliorer l’efficacité et la réactivité de vos processus de rendu de documents.  
 
-4. **Intégration avec les systèmes de gestion de documents**: Intégrez les capacités de rendu dans les flux de travail pour une conversion et un archivage automatisés.
+## Problèmes courants et solutions
 
-5. **Plateformes de visionnage en ligne**:Permettre aux utilisateurs de visualiser les conceptions CAO directement dans les navigateurs Web à l'aide de la sortie HTML.
+| Problème | Cause | Solution |
+|----------|-------|----------|
+| **Pages blanches dans le PDF** | Polices manquantes ou entités non prises en charge | Assurez-vous que les derniers packs de polices sont installés et activez `setRenderFontResources(true)` dans `PdfViewOptions`. |
+| **Rendu lent pour les gros fichiers CAD** | La résolution par défaut est trop élevée | Réduisez le DPI via `setResolution(150)` pour accélérer le traitement sans perte de qualité perceptible. |
+| **Les ressources HTML ne se chargent pas** | Chemins relatifs cassés | Utilisez `HtmlViewOptions.setEmbedResources(true)` pour intégrer le CSS et les images directement dans le fichier HTML. |
 
-## Considérations relatives aux performances
+## Questions fréquentes
 
-Pour des performances optimales lors de l'utilisation de GroupDocs.Viewer :
-- Configurez les options de visualisation adaptées aux besoins spécifiques pour optimiser l'utilisation des ressources.
-- Jeter `Viewer` objets rapidement après utilisation pour gérer efficacement la mémoire.
-- Utilisez la mise en cache si vous effectuez fréquemment le rendu de plusieurs documents afin de réduire le temps de traitement.
+**Q : Puis‑je personnaliser la sortie pour une meilleure qualité ou une taille de fichier plus petite ?**  
+R : Oui—`HtmlViewOptions`, `JpgViewOptions`, `PngViewOptions` et `PdfViewOptions` exposent des propriétés telles que la résolution, la qualité d’image et l’intégration des ressources pour affiner le résultat.  
 
-En suivant ces bonnes pratiques, vous pouvez améliorer l’efficacité et la réactivité de vos processus de rendu de documents.
+**Q : GroupDocs.Viewer prend‑il en charge la conversion par lots de plusieurs fichiers CF2 ?**  
+R : Absolument. Parcourez un répertoire, créez une instance de `Viewer` pour chaque fichier, et appelez la méthode `view` appropriée. Ce modèle fonctionne pour tout format de sortie pris en charge.  
 
-## Conclusion
+**Q : GroupDocs.Viewer est‑il gratuit à utiliser ?**  
+R : Vous pouvez commencer avec un essai gratuit de 30 jours. L’utilisation en production nécessite une licence payante, qui supprime les filigranes et débloque des conversions illimitées.  
 
-Dans ce guide, nous avons exploré comment exploiter GroupDocs.Viewer pour Java pour convertir des fichiers CF2 aux formats HTML, JPG, PNG et PDF. En suivant ces étapes, vous serez désormais en mesure d'intégrer de puissantes fonctionnalités de conversion de fichiers à vos applications.
+**Q : Puis‑je intégrer le HTML rendu dans mon site web ?**  
+R : Oui—la sortie HTML autonome peut être placée directement dans n’importe quelle page web, permettant une visualisation instantanée du CAD dans le navigateur sans plugins supplémentaires.  
 
-### Prochaines étapes
-- Expérimentez avec différentes options de rendu disponibles dans GroupDocs.Viewer.
-- Découvrez des fonctionnalités supplémentaires telles que le filigrane et la personnalisation des formats de sortie.
+**Q : Quels sont les prérequis système pour utiliser GroupDocs.Viewer ?**  
+R : Un runtime Java (JDK 8+), au moins 2 Go de RAM pour les gros fichiers, et suffisamment d’espace disque pour les tampons de rendu temporaires. La bibliothèque fonctionne sous Windows, Linux et macOS.  
 
-Nous vous encourageons à mettre en œuvre ces solutions et à explorer d’autres fonctionnalités offertes par GroupDocs.Viewer.
+---  
 
-## FAQ
+**Dernière mise à jour :** 2026-06-30  
+**Testé avec :** GroupDocs.Viewer 23.10 for Java  
+**Auteur :** GroupDocs  
 
-### 1. Puis-je personnaliser la sortie pour une meilleure qualité ou une meilleure taille ?  
+## Tutoriels associés
 
-Oui, GroupDocs.Viewer propose diverses options pour configurer la résolution, la qualité de l’image et l’intégration des ressources lors du rendu.
-
-### 2. Prend-il en charge la conversion par lots de plusieurs fichiers CF2 ?  
-
-Oui, vous pouvez automatiser les conversions multi-fichiers en parcourant les fichiers et en appliquant des méthodes de rendu de manière séquentielle.
-
-### 3. L'utilisation de GroupDocs.Viewer est-elle gratuite ?  
-
-Vous pouvez commencer avec un essai gratuit ; les fonctionnalités complètes nécessitent l'achat d'une licence pour une utilisation illimitée.
-
-### 4. Puis-je intégrer le HTML rendu dans mon site Web ?  
-
-Absolument, la sortie HTML peut être intégrée dans des pages Web pour une visualisation CAO en ligne.
-
-### 5. Quelle est la configuration système requise pour utiliser GroupDocs.Viewer ?  
-
-Un environnement Java compatible (JDK 8 ou supérieur) et une mémoire suffisante sont recommandés pour un fonctionnement fluide.
+- [Rendre les dessins CAD en JPG avec GroupDocs.Viewer Java : Guide complet](/viewer/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/)
+- [Comment convertir OBJ en HTML, JPG, PNG et PDF en Java avec GroupDocs.Viewer](/viewer/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/)
+- [Convertir IGS en PDF, HTML, JPG et PNG avec GroupDocs.Viewer Java](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)

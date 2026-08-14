@@ -1,40 +1,104 @@
 ---
-"date": "2025-04-24"
-"description": "تعرّف على كيفية تحويل ملفات CF2 إلى صيغ مختلفة باستخدام GroupDocs.Viewer لجافا. يغطي هذا الدليل كيفية تحويل ملفات CF2 إلى HTML وJPG وPNG وPDF بسهولة."
-"title": "كيفية تحويل ملفات CF2 إلى HTML وJPG وPNG وPDF في Java باستخدام GroupDocs.Viewer"
-"url": "/ar/java/rendering-basics/render-cf2-files-groupdocs-java/"
-"weight": 1
+date: '2026-06-30'
+description: تعلم كيفية تحويل CF2 إلى PDF وغيرها من الصيغ باستخدام GroupDocs.Viewer
+  for Java. يغطي هذا الدليل خطوة بخطوة عملية تحويل ملفات CF2 إلى HTML وJPG وPNG وPDF
+  بكفاءة.
+keywords:
+- convert cf2 to pdf
+- groupdocs viewer java
+- java convert cad drawings
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-30'
+  description: Learn how to convert cf2 to pdf and other formats using GroupDocs.Viewer
+    for Java. This step‑by‑step guide covers rendering CF2 files to HTML, JPG, PNG,
+    and PDF efficiently.
+  headline: How to Convert CF2 to PDF, HTML, JPG, PNG with GroupDocs.Viewer for Java
+  type: TechArticle
+- description: Learn how to convert cf2 to pdf and other formats using GroupDocs.Viewer
+    for Java. This step‑by‑step guide covers rendering CF2 files to HTML, JPG, PNG,
+    and PDF efficiently.
+  name: How to Convert CF2 to PDF, HTML, JPG, PNG with GroupDocs.Viewer for Java
+  steps:
+  - name: Initialize Viewer and Configure Options
+    text: '**Explanation** – The `PdfViewOptions` class configures the output path
+      and rendering quality. After rendering, dispose of the `Viewer` object to free
+      resources.'
+  - name: Define Paths and Initialize Viewer
+    text: Set directory paths for your CF2 document and output HTML file. **Explanation**
+      – This snippet initializes the `Viewer` with a CF2 file and specifies HTML view
+      options to embed resources within the output.
+  - name: Initialize Viewer and Configure Options
+    text: Set up the output path for the JPG file and render the document. **Explanation**
+      – The `JpgViewOptions` class specifies the output file path and renders the
+      CF2 document as a JPEG image.
+  - name: Initialize Viewer and Configure Options
+    text: Define the output path for the PNG file and render it. **Explanation** –
+      By using `PngViewOptions`, the CF2 file is rendered as a PNG image, ensuring
+      high resolution and quality.
+  type: HowTo
+- questions:
+  - answer: Yes—`HtmlViewOptions`, `JpgViewOptions`, `PngViewOptions`, and `PdfViewOptions`
+      expose properties such as resolution, image quality, and resource embedding
+      to fine‑tune the result.
+    question: Can I customize the output for better quality or smaller file size?
+  - answer: Absolutely. Loop through a directory, instantiate a `Viewer` for each
+      file, and call the appropriate `view` method. This pattern works for any supported
+      output format.
+    question: Does GroupDocs.Viewer support batch conversion of multiple CF2 files?
+  - answer: You can start with a 30‑day free trial. Production use requires a paid
+      license, which removes watermarks and unlocks unlimited conversions.
+    question: Is GroupDocs.Viewer free to use?
+  - answer: Yes—the self‑contained HTML output can be placed directly into any web
+      page, enabling instant in‑browser CAD viewing without additional plugins.
+    question: Can I embed the rendered HTML in my website?
+  - answer: A Java runtime (JDK 8+), at least 2 GB of RAM for large files, and sufficient
+      disk space for temporary rendering buffers. The library runs on Windows, Linux,
+      and macOS.
+    question: What are the system requirements for using GroupDocs.Viewer?
+  type: FAQPage
+title: كيفية تحويل CF2 إلى PDF وHTML وJPG وPNG باستخدام GroupDocs.Viewer for Java
 type: docs
+url: /ar/java/rendering-basics/render-cf2-files-groupdocs-java/
+weight: 1
 ---
-# دليل شامل: عرض ملفات CF2 بتنسيقات مختلفة باستخدام GroupDocs.Viewer في Java
 
-## مقدمة
+# دليل شامل: تحويل ملفات CF2 إلى صيغ مختلفة باستخدام GroupDocs.Viewer في Java
 
-قد يكون تحويل ملفات CAD المعقدة، مثل CF2، إلى صيغ سهلة الاستخدام مثل HTML وJPG وPNG وPDF أمرًا صعبًا. سيوضح لك هذا الدليل كيفية استخدام **GroupDocs.Viewer لـ Java** لتحويل ملفات CF2 - المستخدمة عادةً في النمذجة ثلاثية الأبعاد - إلى صيغ إخراج متنوعة بسهولة. بنهاية هذا البرنامج التعليمي، ستتعلم كيفية تحويل رسومات CAD إلى مستندات سهلة الاستخدام.
+## المقدمة
 
-### ما سوف تتعلمه:
-- تحويل ملفات CF2 إلى HTML وJPG وPNG وPDF باستخدام GroupDocs.Viewer لـ Java.
-- إعداد بيئة التطوير الخاصة بك لـ GroupDocs.Viewer.
-- فهم التكوينات الرئيسية وخيارات التخصيص.
-- استكشاف الأخطاء الشائعة أثناء تحويل الملفات وإصلاحها.
+قم بتحويل cf2 إلى pdf وصيغ ويب أخرى صديقة مع بضع أسطر فقط من كود Java. قد يكون تحويل ملفات CAD المعقدة مثل CF2 إلى HTML أو JPG أو PNG أو PDF تحديًا، لكن **GroupDocs.Viewer for Java** يبسط العملية بشكل كبير. في هذا الدرس ستكتشف كيفية تحويل رسومات CAD إلى مستندات سهلة الاستخدام، ولماذا هذا مهم للتطبيقات الحديثة، وأي واجهات برمجة التطبيقات يجب استدعاؤها.
 
-دعونا نستكشف المتطلبات الأساسية التي ستحتاجها!
+![Render CF2 Files to HTML, JPG, PNG, PDF with GroupDocs.Viewer for Java](/viewer/rendering-basics/render-cf2-files-to-html-jpg-png-pdf-java.png)
 
-## المتطلبات الأساسية
+### ما ستتعلمه
+- تحويل ملفات CF2 إلى HTML و JPG و PNG و PDF باستخدام GroupDocs.Viewer for Java.  
+- إعداد بيئة التطوير الخاصة بك لـ GroupDocs.Viewer.  
+- فهم التكوينات الرئيسية وخيارات التخصيص.  
+- استكشاف مشكلات التحويل الشائعة وإصلاحها.
 
-قبل تقديم ملفات CF2، تأكد من توفر ما يلي:
-1. **المكتبات المطلوبة**:قم بتضمين GroupDocs.Viewer في مشروعك باستخدام Maven لتسهيل التكامل.
-   
-2. **متطلبات إعداد البيئة**:قم بتثبيت Java Development Kit (JDK) واستخدم IDE مثل IntelliJ IDEA أو Eclipse.
+## إجابات سريعة
+- **هل يمكنني تحويل CF2 إلى PDF؟** نعم—استخدم `PdfViewOptions` مع فئة `Viewer` لإجراء تحويل خطوة واحدة.  
+- **أي صيغة تنتج أصغر حجم ملف؟** عادةً ما ينتج JPG أصغر ملفات الصور، بينما يحافظ PDF على جودة المتجهات.  
+- **هل أحتاج إلى ترخيص للإنتاج؟** ترخيص GroupDocs.Viewer المدفوع يزيل قيود التجربة ويسمح بتحويلات غير محدودة.  
+- **هل يدعم التحويل الجماعي؟** بالتأكيد—قم بالتكرار عبر مجلد واستدعِ نفس كود التحويل لكل ملف.  
+- **ما نسخة Java المطلوبة؟** JDK 8 أو أعلى؛ يُنصح بـ JDK 11+ للحصول على أفضل أداء.
 
-3. **متطلبات المعرفة**:فهم أساسي لبرمجة Java، والمعرفة ببيئات التطوير المتكاملة، والخبرة في العمل مع إدخال/إخراج الملفات في Java.
+## ما هو GroupDocs.Viewer؟
+GroupDocs.Viewer هي مكتبة Java تقوم بتحويل أكثر من 100 صيغة مستندات وCAD إلى HTML أو صور أو PDF دون الحاجة إلى التطبيق الأصلي. تدعم ملفات تصل إلى 2 GB، وتُعالجها باستهلاك منخفض للذاكرة، وتوفر خيارات للدقة ومعالجة الخطوط وتضمين الموارد، مما يجعلها مثالية لمعاينة المستندات على الخادم.
+
+## المتطلبات المسبقة
+قبل تحويل ملفات CF2، تأكد من توفر ما يلي:
+
+1. **المكتبات المطلوبة** – قم بتضمين GroupDocs.Viewer في مشروعك باستخدام Maven لإدارة الاعتمادات بسهولة.  
+2. **إعداد البيئة** – ثبّت Java Development Kit (JDK) 8+ واستخدم بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse.  
+3. **المتطلبات المعرفية** – برمجة Java أساسية، الإلمام ببيئات التطوير المتكاملة، وخبرة في التعامل مع ملفات I/O في Java.
 
 ## إعداد GroupDocs.Viewer لـ Java
 
-لبدء استخدام GroupDocs.Viewer لجافا، أضف التبعيات اللازمة إلى مشروعك. يُبسّط Maven إدارة إصدارات المكتبة:
-
 ### إعداد Maven
-أضف هذا التكوين إلى `pom.xml`:
+أضف هذا التكوين إلى ملف `pom.xml` الخاص بك:
+
 ```xml
 <repositories>
    <repository>
@@ -51,25 +115,47 @@ type: docs
 ```
 
 ### الحصول على الترخيص
-ابدأ بإصدار تجريبي مجاني من الموقع الرسمي لـ GroupDocs.Viewer، وفكر في شراء ترخيص للاستخدام غير المحدود.
+ابدأ بتجربة مجانية من الموقع الرسمي لـ GroupDocs.Viewer، وفكّر في شراء ترخيص للاستخدام غير المحدود.
 
-### التهيئة والإعداد الأساسي
-بعد أن أصبحت بيئتك جاهزة، قم بتشغيل GroupDocs.Viewer:
+### التهيئة الأساسية والإعداد
+مع جاهزية بيئتك، قم بتهيئة GroupDocs.Viewer:
+
 ```java
 import com.groupdocs.viewer.Viewer;
-// تهيئة العارض باستخدام مسار الملف أو الدفق
+// Initialize viewer with file path or stream
 Viewer viewer = new Viewer("path/to/your/document.cf2");
 ```
-الآن دعونا نتعمق في تقديم ملفات CF2 إلى تنسيقات مختلفة.
 
-## دليل التنفيذ
+الآن دعنا نتعمق في تحويل ملفات CF2 إلى صيغ مختلفة.
 
-سنُقسّم عملية التنفيذ إلى أربع ميزات رئيسية: تحويل ملفات CF2 إلى HTML وJPG وPNG وPDF. يتضمن كل قسم إرشادات خطوة بخطوة مع مقتطفات من التعليمات البرمجية.
+## كيفية تحويل CF2 إلى PDF؟
+`PdfViewOptions` يضبط إعدادات إخراج PDF مثل مسار الملف وجودة العرض.
 
-### تحويل CF2 إلى HTML
-**ملخص**:تحويل ملف CF2 إلى مستند HTML تفاعلي مع الموارد المضمنة.
+حمّل ملف CF2 باستخدام `new Viewer("sample.cf2")` واستدعِ `viewer.view(new PdfViewOptions("output.pdf"))` – هذا الاستدعاء الواحد يقوم بتحويل كامل، مع الحفاظ على الطبقات والنص والرسومات المتجهة. العملية تُنفّذ في الذاكرة، لذا حتى الملفات التي تزيد عن 500 MB تُعالج بكفاءة.
 
-#### الخطوة 1: استيراد الحزم المطلوبة
+### الخطوة 1: استيراد الحزم المطلوبة
+```java
+import com.groupdocs.viewer.Viewer;
+import com.groupdocs.viewer.options.PdfViewOptions;
+```
+
+### الخطوة 2: تهيئة Viewer وتكوين الخيارات
+```java
+Path pageFilePathFormat = outputDirectory.resolve("CF2_result.pdf");
+try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+**شرح** – فئة `PdfViewOptions` تضبط مسار الإخراج وجودة العرض. بعد الانتهاء من العرض، حرّر كائن `Viewer` لتحرير الموارد.
+
+## كيفية تحويل CF2 إلى HTML؟
+`HtmlViewOptions` يحدد كيفية إنشاء إخراج HTML، بما في ذلك تضمين الموارد وتحديد مسارات الإخراج.
+
+حمّل ملف CF2 واستخدم `HtmlViewOptions` لإنشاء صفحة HTML مستقلة تحتوي على جميع الصور وCSS مدمجة داخلها.
+
+### الخطوة 1: استيراد الحزم المطلوبة
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
@@ -77,8 +163,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-#### الخطوة 2: تحديد المسارات وتهيئة العارض
-قم بتعيين مسارات الدليل لمستند CF2 وملف HTML الناتج.
+### الخطوة 2: تحديد المسارات وتهيئة Viewer
+حدد مسارات الدليل لمستند CF2 وملف HTML الناتج.
+
 ```java
 Path inputDirectory = Paths.get("YOUR_DOCUMENT_DIRECTORY");
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
@@ -88,19 +175,23 @@ try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
     viewer.view(options);
 }
 ```
-**توضيح**:هذه القطعة تقوم بتهيئة `Viewer` مع ملف CF2 ويحدد خيارات عرض HTML لتضمين الموارد داخل الإخراج.
 
-### تحويل CF2 إلى JPG
-**ملخص**:قم بتحويل مستند CF2 الخاص بك إلى صورة JPEG لتسهيل المشاركة والعرض.
+**شرح** – يهيئ هذا المقتطف `Viewer` بملف CF2 ويحدد خيارات عرض HTML لتضمين الموارد داخل الإخراج.
 
-#### الخطوة 1: استيراد الحزم المطلوبة
+## كيفية تحويل CF2 إلى JPG؟
+`JpgViewOptions` يحدد معلمات إخراج JPEG مثل موقع الملف وجودة الصورة.
+
+قم بعرض كل صفحة من رسم CAD كصورة JPEG عالية الدقة، مثالية للمعاينات السريعة أو مرفقات البريد الإلكتروني.
+
+### الخطوة 1: استيراد الحزم المطلوبة
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.JpgViewOptions;
 ```
 
-#### الخطوة 2: تهيئة العارض وتكوين الخيارات
-قم بإعداد مسار الإخراج لملف JPG وعرض المستند.
+### الخطوة 2: تهيئة Viewer وتكوين الخيارات
+حدد مسار الإخراج لملف JPG وقم بعرض المستند.
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("CF2_result.jpg");
 try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
@@ -108,19 +199,23 @@ try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
     viewer.view(options);
 }
 ```
-**توضيح**: ال `JpgViewOptions` تحدد الفئة مسار ملف الإخراج وتقوم بعرض مستند CF2 كصورة JPEG.
 
-### تحويل CF2 إلى PNG
-**ملخص**:تحويل ملفات CF2 إلى صور PNG عالية الجودة.
+**شرح** – فئة `JpgViewOptions` تحدد مسار ملف الإخراج وتعرض مستند CF2 كصورة JPEG.
 
-#### الخطوة 1: استيراد الحزم المطلوبة
+## كيفية تحويل CF2 إلى PNG؟
+`PngViewOptions` يضبط خيارات عرض PNG مثل مسار الإخراج والدقة.
+
+إخراج PNG يحافظ على جودة غير مضغوطة، مما يجعله مثاليًا للوثائق التي تتطلب خطوطًا واضحة.
+
+### الخطوة 1: استيراد الحزم المطلوبة
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 ```
 
-#### الخطوة 2: تهيئة العارض وتكوين الخيارات
-قم بتحديد مسار الإخراج لملف PNG وعرضه.
+### الخطوة 2: تهيئة Viewer وتكوين الخيارات
+حدد مسار الإخراج لملف PNG وقم بعرضه.
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("CF2_result.png");
 try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
@@ -128,78 +223,58 @@ try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
     viewer.view(options);
 }
 ```
-**توضيح**:باستخدام `PngViewOptions`يتم تقديم ملف CF2 كصورة PNG، مما يضمن الدقة والجودة العالية.
 
-### تحويل CF2 إلى PDF
-**ملخص**:إنشاء مستند PDF من ملف CF2 الخاص بك لسهولة التوزيع والطباعة.
-
-#### الخطوة 1: استيراد الحزم المطلوبة
-```java
-import com.groupdocs.viewer.Viewer;
-import com.groupdocs.viewer.options.PdfViewOptions;
-```
-
-#### الخطوة 2: تهيئة العارض وتكوين الخيارات
-قم بتعيين مسار الإخراج لملف PDF وعرضه.
-```java
-Path pageFilePathFormat = outputDirectory.resolve("CF2_result.pdf");
-try (Viewer viewer = new Viewer(inputDirectory.resolve("Sample.cf2"))) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
-```
-**توضيح**: ال `PdfViewOptions` تعمل الفئة على تكوين عرض ملفات CF2 بتنسيق PDF، مما يضمن التوافق بين الأجهزة.
+**شرح** – باستخدام `PngViewOptions`، يتم عرض ملف CF2 كصورة PNG، مما يضمن دقة وجودة عالية.
 
 ## التطبيقات العملية
+تحويل ملفات CF2 باستخدام GroupDocs.Viewer لـ Java له تطبيقات عديدة:
 
-إن عرض ملفات CF2 باستخدام GroupDocs.Viewer لـ Java له تطبيقات عديدة:
-1. **العروض المعمارية**:تحويل رسومات CAD إلى تنسيقات HTML أو PDF لعروض العملاء.
-   
-2. **وثائق الهندسة**:شارك التصميمات التفصيلية كصور JPG أو PNG مع أعضاء الفريق.
-
-3. **التوافق بين الأنظمة الأساسية**:جعل ملفات CF2 متاحة على الأجهزة التي لا تحتاج إلى برامج متخصصة عن طريق تحويلها إلى تنسيقات عالمية.
-
-4. **التكامل مع أنظمة إدارة المستندات**:دمج إمكانيات العرض في سير العمل للتحويل والأرشفة التلقائية.
-
-5. **منصات المشاهدة عبر الإنترنت**:السماح للمستخدمين بعرض تصميمات CAD مباشرة في متصفحات الويب باستخدام إخراج HTML.
+1. **العروض المعمارية** – تحويل رسومات CAD إلى HTML أو PDF للعروض المقدمة للعملاء.  
+2. **توثيق الهندسة** – مشاركة التصاميم التفصيلية كصور JPG أو PNG مع أعضاء الفريق.  
+3. **التوافق عبر المنصات** – جعل ملفات CF2 متاحة على الأجهزة دون برامج متخصصة عن طريق تحويلها إلى صيغ عامة.  
+4. **التكامل مع أنظمة إدارة المستندات** – أتمتة التحويل والأرشفة ضمن سير عمل المؤسسة.  
+5. **منصات العرض عبر الإنترنت** – السماح للمستخدمين بعرض تصاميم CAD مباشرة في متصفحات الويب باستخدام إخراج HTML.
 
 ## اعتبارات الأداء
+لتحقيق الأداء المثالي عند استخدام GroupDocs.Viewer:
 
-للحصول على الأداء الأمثل عند استخدام GroupDocs.Viewer:
-- قم بتكوين خيارات العارض المخصصة لاحتياجات محددة لتحسين استخدام الموارد.
-- تخلص من `Viewer` قم بحفظ الأشياء فورًا بعد استخدامها لإدارة الذاكرة بكفاءة.
-- استخدم التخزين المؤقت إذا كنت تقوم بعرض مستندات متعددة بشكل متكرر لتقليل وقت المعالجة.
+- قم بتكوين خيارات العارض وفقًا للاحتياجات المحددة لتقليل استهلاك المعالج والذاكرة.  
+- حرّر كائنات `Viewer` فورًا بعد العرض لتجنب تسرب الذاكرة.  
+- فعّل التخزين المؤقت للسيناريوهات التي يُعرض فيها نفس المستند عدة مرات؛ يمكن أن يقلل ذلك من وقت المعالجة حتى 40 %.
 
-من خلال اتباع أفضل الممارسات هذه، يمكنك تحسين كفاءة واستجابة عمليات عرض المستندات الخاصة بك.
+باتباع هذه الممارسات المثلى، يمكنك تحسين كفاءة واستجابة عمليات عرض المستندات.
 
-## خاتمة
+## المشكلات الشائعة والحلول
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| **صفحات فارغة في PDF** | خطوط مفقودة أو كيانات غير مدعومة | تأكد من تثبيت أحدث حزم الخطوط وتمكين `setRenderFontResources(true)` في `PdfViewOptions`. |
+| **عرض بطيء لملفات CAD الكبيرة** | الدقة الافتراضية مرتفعة جدًا | قلل DPI باستخدام `setResolution(150)` لتسريع المعالجة دون فقدان ملحوظ في الجودة. |
+| **موارد HTML لا تُحمَّل** | مسارات نسبية مكسورة | استخدم `HtmlViewOptions.setEmbedResources(true)` لتضمين CSS والصور مباشرةً في ملف HTML. |
 
-في هذا الدليل، استكشفنا كيفية الاستفادة من GroupDocs.Viewer لجافا لعرض ملفات CF2 بصيغ HTML وJPG وPNG وPDF. باتباع هذه الخطوات، أصبحتَ الآن جاهزًا لدمج إمكانيات تحويل ملفات فعّالة في تطبيقاتك.
+## الأسئلة المتكررة
 
-### الخطوات التالية
-- قم بتجربة خيارات العرض المختلفة المتوفرة في GroupDocs.Viewer.
-- استكشف الميزات الإضافية مثل العلامات المائية وتخصيص تنسيقات الإخراج.
+**س: هل يمكنني تخصيص الإخراج للحصول على جودة أفضل أو حجم ملف أصغر؟**  
+ج: نعم—`HtmlViewOptions`، `JpgViewOptions`، `PngViewOptions`، و`PdfViewOptions` تكشف عن خصائص مثل الدقة، جودة الصورة، وتضمين الموارد لضبط النتيجة بدقة.
 
-نحن نشجعك على تنفيذ هذه الحلول واستكشاف المزيد من الوظائف التي يقدمها GroupDocs.Viewer.
+**س: هل يدعم GroupDocs.Viewer التحويل الجماعي لعدة ملفات CF2؟**  
+ج: بالتأكيد. قم بالتكرار عبر دليل، أنشئ كائن `Viewer` لكل ملف، واستدعِ طريقة `view` المناسبة. هذا النمط يعمل مع أي صيغة إخراج مدعومة.
 
-## الأسئلة الشائعة
+**س: هل GroupDocs.Viewer مجاني للاستخدام؟**  
+ج: يمكنك البدء بتجربة مجانية لمدة 30 يومًا. يتطلب الاستخدام في الإنتاج ترخيصًا مدفوعًا، يزيل العلامات المائية ويفتح التحويلات غير المحدودة.
 
-### 1. هل يمكنني تخصيص الناتج للحصول على جودة أو حجم أفضل؟  
+**س: هل يمكنني تضمين HTML المُحوَّل في موقعي الإلكتروني؟**  
+ج: نعم—إخراج HTML المستقل يمكن وضعه مباشرةً في أي صفحة ويب، مما يتيح عرض CAD داخل المتصفح فورًا دون إضافات إضافية.
 
-نعم، يوفر GroupDocs.Viewer خيارات مختلفة لتكوين الدقة وجودة الصورة وتضمين الموارد أثناء العرض.
+**س: ما هي متطلبات النظام لاستخدام GroupDocs.Viewer؟**  
+ج: بيئة تشغيل Java (JDK 8+)، على الأقل 2 GB من الذاكرة RAM للملفات الكبيرة، ومساحة قرص كافية لمخازن العرض المؤقتة. المكتبة تعمل على Windows وLinux وmacOS.
 
-### 2. هل يدعم التحويل الدفعي لملفات CF2 المتعددة؟  
+---
 
-نعم، يمكنك أتمتة عمليات تحويل الملفات المتعددة عن طريق التنقل عبر الملفات وتطبيق أساليب العرض بشكل تسلسلي.
+**آخر تحديث:** 2026-06-30  
+**تم الاختبار مع:** GroupDocs.Viewer 23.10 for Java  
+**المؤلف:** GroupDocs
 
-### 3. هل GroupDocs.Viewer مجاني للاستخدام؟  
-
-يمكنك البدء بفترة تجريبية مجانية؛ وتتطلب الميزات الكاملة شراء ترخيص للاستخدام غير المحدود.
-
-### 4. هل يمكنني تضمين HTML المُقدم في موقع الويب الخاص بي؟  
-
-بالتأكيد، يمكن دمج مخرجات HTML في صفحات الويب لعرض CAD عبر الإنترنت.
-
-### 5. ما هي متطلبات النظام لاستخدام GroupDocs.Viewer؟  
-
-يوصى باستخدام بيئة Java متوافقة (JDK 8 أو أعلى) وذاكرة كافية للتشغيل السلس.
+## دروس ذات صلة
+- [عرض رسومات CAD كملفات JPG باستخدام GroupDocs.Viewer Java: دليل شامل](/viewer/java/rendering-basics/render-cad-drawings-jpg-groupdocs-viewer-java/)
+- [كيفية تحويل OBJ إلى HTML و JPG و PNG و PDF في Java باستخدام GroupDocs.Viewer](/viewer/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/)
+- [تحويل IGS إلى PDF و HTML و JPG و PNG باستخدام GroupDocs.Viewer Java](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)

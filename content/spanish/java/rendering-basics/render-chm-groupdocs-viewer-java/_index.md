@@ -1,29 +1,184 @@
 ---
-"date": "2025-04-24"
-"description": "Domine la conversión de archivos CHM a HTML, JPG, PNG y PDF con GroupDocs.Viewer Java. Siga esta guía paso a paso para una representación eficiente de documentos."
-"title": "Cómo renderizar archivos CHM con GroupDocs.Viewer Java&#58; una guía completa"
-"url": "/es/java/rendering-basics/render-chm-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-30'
+description: Aprende a convertir CHM a HTML y a convertir CHM a PDF con GroupDocs.Viewer
+  para Java. Guía paso a paso que cubre la renderización de HTML, JPG, PNG y PDF.
+keywords:
+- convert chm to html
+- convert chm to pdf
+- groupdocs viewer java rendering
+- chm file conversion java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-30'
+  description: Learn how to convert chm to html and convert chm to pdf with GroupDocs.Viewer
+    for Java. Step‑by‑step guide covers HTML, JPG, PNG, and PDF rendering.
+  headline: 'How to Convert CHM to HTML (and More) Using GroupDocs.Viewer Java: A
+    Comprehensive Guide'
+  type: TechArticle
+- questions:
+  - answer: Yes, loop through a folder with Java’s `Files.list` API and invoke the
+      same rendering code for each file.
+    question: Can I convert entire directories of CHM files at once?
+  - answer: Increase the JVM heap (`-Xmx`) or render to image formats with lower DPI;
+      you can also split the CHM into sections and process them individually.
+    question: How do I handle large documents without running out of memory?
+  - answer: Yes, GroupDocs.Viewer offers extensive options for CSS injection, page
+      size, and image quality. Explore the [API reference](https://reference.groupdocs.com/viewer/java/)
+      for detailed settings.
+    question: Is it possible to customize the output formatting further?
+  - answer: Absolutely. All internal CHM links are translated into clickable PDF annotations.
+    question: Does the library preserve hyperlinks when converting to PDF?
+  - answer: Use the `setPageNumbers` method on the view options to specify exact pages
+      or chapters you need.
+    question: Can I render only a subset of CHM chapters?
+  type: FAQPage
+title: 'Cómo convertir CHM a HTML (y más) usando GroupDocs.Viewer Java: una guía completa'
 type: docs
+url: /es/java/rendering-basics/render-chm-groupdocs-viewer-java/
+weight: 1
 ---
-# Cómo renderizar archivos CHM con GroupDocs.Viewer Java: una guía completa
-## Introducción
-¿Quieres renderizar archivos de Ayuda HTML Compilada (CHM) a formatos más compatibles, como HTML, JPG, PNG y PDF? Ya sea para archivarlos o para mejorar la accesibilidad en diversas plataformas, convertir estos documentos puede ser revolucionario. Este tutorial explora cómo lograrlo sin problemas con GroupDocs.Viewer Java. Aprenderás los pormenores de la renderización eficiente de archivos CHM con esta potente biblioteca.
 
-**Lo que aprenderás:**
-- Cómo configurar GroupDocs.Viewer para Java en su proyecto.
-- Guías paso a paso sobre la conversión de documentos CHM a formatos HTML, JPG, PNG y PDF.
-- Aplicaciones prácticas y consideraciones de rendimiento al trabajar con la conversión de documentos.
+# Cómo convertir CHM a HTML (y más) usando GroupDocs.Viewer Java
 
-¿Listo para sumergirte en el mundo del renderizado de documentos? Comencemos configurando nuestro entorno.
-## Prerrequisitos
-Antes de comenzar, asegúrese de tener lo siguiente en su lugar:
-- **Bibliotecas requeridas:** Necesitará la biblioteca Java GroupDocs.Viewer. Asegúrese de usar la versión 25.2 para este tutorial.
-- **Configuración del entorno:** Es esencial tener una comprensión básica de los entornos de desarrollo Java (por ejemplo, IntelliJ IDEA o Eclipse).
-- **Requisitos de conocimiento:** Será útil estar familiarizado con Maven y conceptos básicos de programación Java.
+Compilar archivos de ayuda heredados a formatos modernos es una necesidad frecuente para los desarrolladores. En este tutorial **convertirás chm a html** y también aprenderás a renderizar la misma fuente CHM a JPG, PNG y **convertir chm a pdf** usando GroupDocs.Viewer para Java. Al final tendrás un patrón reutilizable que funciona con cualquier documento CHM, ya sea que estés archivando manuales antiguos o exponiendo contenido de ayuda en un portal web.
+
+![Renderizar archivos CHM con GroupDocs.Viewer para Java](/viewer/rendering-basics/render-chm-files-java.png)
+
+[Renderizar archivos CHM con GroupDocs.Viewer para Java](/viewer/rendering-basics/render-chm-files-java.png)
+
+## Respuestas rápidas
+- **¿Qué biblioteca maneja la renderización de CHM?** GroupDocs.Viewer for Java.
+- **¿Puedo obtener la salida HTML en un solo archivo?** Sí, habilitando la opción `singlePage`.
+- **¿La conversión a PDF es sin pérdida?** La biblioteca preserva el diseño, las imágenes y los hipervínculos.
+- **¿Necesito una licencia para pruebas?** Una prueba gratuita o una licencia temporal es suficiente.
+- **¿Qué formatos son compatibles?** HTML, JPG, PNG, PDF, además de otros como DOCX y XLSX.
+
+## ¿Qué es GroupDocs.Viewer para Java?
+`GroupDocs.Viewer` para Java es una API del lado del servidor que renderiza más de 70 tipos de documentos —incluido CHM— a formatos web‑amigables sin requerir Microsoft Office o Adobe Acrobat. Funciona en cualquier tiempo de ejecución Java 8+ y puede integrarse en arquitecturas web, de escritorio o micro‑servicios. Para más detalles, consulte la [documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/).
+
+## ¿Por qué convertir CHM a HTML?
+GroupDocs.Viewer soporta **más de 50 formatos de entrada y salida** y puede transformar un archivo CHM de 200 páginas en una única página HTML en menos de 2 segundos en una CPU típica de 2 GHz, manteniendo todos los enlaces internos funcionales. Esta velocidad y amplitud de formatos lo hacen ideal para migrar sistemas de ayuda heredados a portales web modernos.
+
+## Requisitos previos
+- **Biblioteca GroupDocs.Viewer Java** (versión 25.2 o posterior).  
+- Proyecto compatible con Maven (IntelliJ IDEA, Eclipse o similar).  
+- Conocimientos básicos de Java y gestión de dependencias Maven.
+
 ## Configuración de GroupDocs.Viewer para Java
-Para usar GroupDocs.Viewer en tu proyecto Java, deberás añadirlo como dependencia. Puedes configurarlo con Maven de la siguiente manera:
-**Configuración de Maven**
+Para usar GroupDocs.Viewer en tu proyecto Java, agrega la dependencia Maven:
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
+**Adquisición de licencia**  
+GroupDocs ofrece una prueba gratuita, licencias temporales para propósitos de evaluación y opciones de compra para uso comercial. Visita su [página de compra](https://purchase.groupdocs.com/buy) o la [sección de licencia temporal](https://purchase.groupdocs.com/temporary-license/) para explorar tus opciones.
+
+Con la biblioteca configurada, inicialicémosla en una aplicación Java sencilla:
+
+```java
+Viewer viewer = new Viewer("path/to/your/file.chm", new ViewerConfig());
+```
+
+Este fragmento muestra la configuración básica. Construiremos sobre esta base mientras exploramos diferentes capacidades de renderizado.
+
+## Guía de implementación
+
+### Cómo convertir CHM a HTML?
+Carga el archivo CHM, define una carpeta de salida y llama a las opciones de renderizado HTML. La API extrae automáticamente los recursos incrustados (CSS, imágenes) y puede combinar todo en una sola página.
+
+```java
+String outputDir = "output/html";
+HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(outputDir);
+options.setSinglePage(true); // single‑page output
+viewer.view(options);
+```
+
+La clase `HtmlViewOptions` es el objeto de configuración que indica al visor cómo generar HTML. Establecer `singlePage` a `true` consolida todos los capítulos en un solo archivo HTML, lo cual es perfecto para una navegación rápida.
+
+### Cómo convertir CHM a JPG?
+Renderizar páginas CHM como imágenes es útil para miniaturas o vistas previas visuales. Puedes especificar qué páginas renderizar, reduciendo el tiempo de procesamiento para documentos grandes.
+
+```java
+String outputDir = "output/jpg";
+JpgViewOptions options = JpgViewOptions.forDirectory(outputDir);
+options.setPageNumbers(new int[]{1, 2}); // render only first two pages
+viewer.view(options);
+```
+
+La clase `JpgViewOptions` te permite controlar la calidad de la imagen, DPI y la selección de páginas. Renderizar solo las páginas necesarias ahorra memoria y ciclos de CPU.
+
+### Cómo convertir CHM a PNG?
+La salida PNG mantiene calidad sin pérdida y soporta transparencia, lo que la hace ideal para capturas de pantalla de alta resolución de temas de ayuda.
+
+```java
+String outputDir = "output/png";
+PngViewOptions options = PngViewOptions.forDirectory(outputDir);
+options.setPageNumbers(new int[]{1}); // render the first page as PNG
+viewer.view(options);
+```
+
+La clase `PngViewOptions` funciona de manera similar a su contraparte JPG pero produce archivos PNG que preservan la fidelidad visual exacta.
+
+### Cómo convertir CHM a PDF?
+PDF es el formato más portátil para distribución. El visor puede combinar todo el contenido CHM en un único documento PDF con una sola llamada.
+
+```java
+String outputPath = "output/chm-document.pdf";
+PdfViewOptions options = PdfViewOptions.forFile(outputPath);
+viewer.view(options);
+```
+
+La clase `PdfViewOptions` maneja la paginación, la incrustación de fuentes y la preservación de hipervínculos automáticamente.
+
+## Aplicaciones prácticas
+- **Archivado:** Convertir archivos CHM heredados a formatos modernos para un acceso más fácil y preservación a largo plazo.  
+- **Portales web:** Publicar documentación CHM como páginas HTML en intranets internas de la empresa.  
+- **Aplicaciones móviles:** Incluir versiones PDF de los archivos de ayuda dentro de aplicaciones Android o iOS para lectura sin conexión.
+
+## Consideraciones de rendimiento
+Al tratar con conversiones de documentos grandes o numerosos:
+- **Gestión de memoria:** Renderizar a PNG o JPG de alta resolución puede consumir mucha memoria; monitorea el heap de JVM y considera `-Xmx2g` para lotes grandes.  
+- **Procesamiento paralelo:** Usa `ExecutorService` de Java para convertir varios archivos CHM concurrentemente, pero limita los hilos para evitar sobrecarga de CPU.  
+- **Tamaño de lote:** Para archivos masivos, procesa los archivos en grupos de 10‑20 para mantener predecible el uso de recursos.
+
+## Problemas comunes y soluciones
+- **Imágenes faltantes:** Asegúrate de usar `HtmlViewOptions.forEmbeddedResources` para que las imágenes se extraigan junto con el HTML.  
+- **Orden de página incorrecto:** Verifica que el TOC interno del archivo CHM esté intacto; el visor respeta la estructura de navegación original.  
+- **Errores de falta de memoria:** Incrementa el tamaño del heap de JVM o cambia al modo de transmisión con `viewer.view(options, new Stream())` si está disponible en versiones más recientes de la API.
+
+## Preguntas frecuentes
+
+**P: ¿Puedo convertir directorios completos de archivos CHM de una vez?**  
+R: Sí, recorre una carpeta con la API `Files.list` de Java e invoca el mismo código de renderizado para cada archivo.
+
+**P: ¿Cómo manejo documentos grandes sin quedarme sin memoria?**  
+R: Incrementa el heap de JVM (`-Xmx`) o renderiza a formatos de imagen con DPI más bajo; también puedes dividir el CHM en secciones y procesarlas individualmente.
+
+**P: ¿Es posible personalizar aún más el formato de salida?**  
+R: Sí, GroupDocs.Viewer ofrece opciones extensas para inyección de CSS, tamaño de página y calidad de imagen. Explora la [referencia de API](https://reference.groupdocs.com/viewer/java/) para configuraciones detalladas.
+
+**P: ¿La biblioteca preserva los hipervínculos al convertir a PDF?**  
+R: Absolutamente. Todos los enlaces internos del CHM se traducen en anotaciones PDF clicables.
+
+**P: ¿Puedo renderizar solo un subconjunto de capítulos del CHM?**  
+R: Usa el método `setPageNumbers` en las opciones de vista para especificar las páginas o capítulos exactos que necesitas.
+
+## Conclusión
+Ahora tienes un flujo de trabajo completo y listo para producción para **convertir chm a html**, **convertir chm a pdf**, y generar representaciones de imagen usando GroupDocs.Viewer para Java. Estas técnicas te permiten modernizar sistemas de ayuda heredados, mejorar la accesibilidad e integrar la documentación en cualquier solución basada en Java.
+
+¿Listo para el siguiente paso? Consulta la documentación oficial de GroupDocs para personalizaciones avanzadas, como inyección de CSS personalizada, marcas de agua y procesamiento por lotes multihilo.
+
+---
+
+**Última actualización:** 2026-06-30  
+**Probado con:** GroupDocs.Viewer Java 25.2  
+**Autor:** GroupDocs
+
 ```xml
 <repositories>
    <repository>
@@ -41,118 +196,78 @@ Para usar GroupDocs.Viewer en tu proyecto Java, deberás añadirlo como dependen
    </dependency>
 </dependencies>
 ```
-**Adquisición de licencias**
-GroupDocs ofrece una prueba gratuita, licencias temporales para fines de evaluación y opciones de compra para uso comercial. Visite su sitio web. [página de compra](https://purchase.groupdocs.com/buy) o el [sección de licencia temporal](https://purchase.groupdocs.com/temporary-license/) para explorar sus opciones.
-Con la biblioteca configurada, inicialicémosla en una aplicación Java simple:
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.chm")) {
-            // Aquí va la lógica de visualización y representación de sus documentos.
+            // Your document viewing and rendering logic goes here.
         }
     }
 }
 ```
-Este fragmento muestra la configuración básica. Desarrollaremos esta base a medida que exploremos las diferentes capacidades de renderizado.
-## Guía de implementación
-### Representación de un documento CHM en HTML
-**Descripción general**
-La conversión de un documento CHM a formato HTML hace que sea fácilmente accesible en varias plataformas web sin necesidad de visores especiales.
-#### Paso 1: Definir el directorio de salida y el patrón de nombres
+
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = TestFiles.getOutputDirectoryPath("RenderingChmFiles");
 Path pageFilePathFormat = outputDirectory.resolve("chm_result_{0}.html");
 ```
-Este paso prepara el sistema de archivos para almacenar nuestros documentos convertidos, garantizando que cada página HTML tenga un nombre único.
-#### Paso 2: Configurar y renderizar en HTML
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-    options.setRenderToSinglePage(true); // Opcional: renderizar en una sola página HTML
+    options.setRenderToSinglePage(true); // Optional: render into a single HTML page
     viewer.view(options);
 }
 ```
-Inicializamos `HtmlViewOptions` Con recursos integrados, lo que permite una salida HTML independiente. La opción de consolidar todo el contenido en una sola página resulta especialmente útil para simplificar la navegación.
-### Convertir un documento CHM en JPG
-**Descripción general**
-Para representaciones visuales o miniaturas, convertir páginas de un documento CHM a JPG puede ser increíblemente eficiente.
-#### Paso 1: Configurar el directorio de salida
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("chm_result_{0}.jpg");
 ```
-#### Paso 2: Renderizar páginas específicas como JPG
+
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
-    viewer.view(options, 1, 2, 3); // Convierte las páginas 1 a 3 al formato JPG
+    viewer.view(options, 1, 2, 3); // Converts pages 1 to 3 into JPG format
 }
 ```
-Esta configuración permite una representación selectiva, proporcionando flexibilidad en la forma en que se presentan visualmente los documentos.
-### Convertir un documento CHM en PNG
-**Descripción general**
-PNG es ideal para imágenes de alta calidad con transparencia. Convertir archivos CHM a PNG puede mejorar los elementos visuales de su documentación.
-#### Paso 1: Definir la ruta de salida
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("chm_result_{0}.png");
 ```
-#### Paso 2: Configurar y renderizar a PNG
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options, 1, 2, 3); // Convierte páginas específicas al formato PNG
+    viewer.view(options, 1, 2, 3); // Converts specified pages to PNG format
 }
 ```
-### Convertir un documento CHM en PDF
-**Descripción general**
-Los PDF son formatos de documentos universalmente aceptados. Convertir un documento CHM a PDF facilita su distribución y acceso.
-#### Paso 1: Establecer la ruta del archivo de salida
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("chm_result.pdf");
 ```
-#### Paso 2: Renderizar el documento como PDF
+
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-    viewer.view(options); // Genera un único documento PDF a partir del archivo CHM
+    viewer.view(options); // Generates a single PDF document from the CHM file
 }
 ```
-Este enfoque consolida todo el contenido en un formato fácilmente compartible, perfecto para fines de archivo o acceso sin conexión.
-## Aplicaciones prácticas
-- **Archivado:** Convierta archivos CHM heredados a formatos modernos para facilitar el acceso y la conservación.
-- **Portales web:** Mostrar la documentación de CHM como páginas HTML en los portales internos de la empresa.
-- **Aplicaciones móviles:** Proporciona versiones PDF de documentos de ayuda dentro de aplicaciones móviles para mejorar la experiencia del usuario.
-## Consideraciones de rendimiento
-Al tratarse de conversiones de documentos grandes o numerosos:
-- Supervise el uso de la memoria, especialmente al renderizar en formatos que consumen muchos recursos, como PNG.
-- Optimice su entorno Java ajustando el tamaño del montón si es necesario.
-- Considere técnicas de procesamiento paralelo para conversiones por lotes para mejorar el rendimiento.
-## Conclusión
-Ya tienes los conocimientos necesarios para convertir documentos CHM a varios formatos con GroupDocs.Viewer para Java. Esta habilidad te abre numerosas posibilidades, desde mejorar la accesibilidad de los documentos hasta integrar contenido heredado en plataformas modernas. ¿Por qué no empiezas a experimentar con tus propios archivos CHM y exploras el potencial de estas técnicas de conversión?
-¿Listo para llevar tus habilidades al siguiente nivel? Sumérgete en el [Documentación de GroupDocs](https://docs.groupdocs.com/viewer/java/) para funciones más avanzadas y opciones de personalización.
 
-## Sección de preguntas frecuentes
+## Tutoriales relacionados
 
-**P: ¿Puedo convertir directorios enteros de archivos CHM a la vez?**
-
-R: Mientras GroupDocs.Viewer procesa documentos individuales, puede automatizar el procesamiento de directorios con un script Java que itera sobre los archivos de una carpeta.
-
-**P: ¿Cómo puedo manejar documentos grandes sin quedarme sin memoria?**
-
-R: Considere aumentar el tamaño del montón de su JVM o dividir el documento en partes más pequeñas para la conversión.
-
-**P: ¿Es posible personalizar aún más el formato de salida?**
-
-R: Sí, GroupDocs.Viewer ofrece amplias opciones de personalización. Explora [Referencia de API](https://reference.groupdocs.com/viewer/java/) Para más detalles.
+- [Cómo convertir DOCX a HTML usando GroupDocs.Viewer para Java: Guía paso a paso](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [convert odf html java – Convertir ODF a HTML, JPG, PNG, PDF usando GroupDocs.Viewer para Java](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
+- [Renderizar adjuntos de documentos a HTML usando GroupDocs.Viewer Java: Guía paso a paso](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)

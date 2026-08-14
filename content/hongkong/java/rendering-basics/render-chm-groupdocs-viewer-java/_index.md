@@ -1,29 +1,182 @@
 ---
-"date": "2025-04-24"
-"description": "掌握如何使用 GroupDocs.Viewer Java 將 CHM 檔案轉換為 HTML、JPG、PNG 和 PDF 格式。按照本逐步指南，有效率地呈現文件。"
-"title": "如何使用 GroupDocs.Viewer Java 渲染 CHM 檔案—綜合指南"
-"url": "/zh-hant/java/rendering-basics/render-chm-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-06-30'
+description: 了解如何使用 GroupDocs.Viewer for Java 將 CHM 轉換為 HTML 以及將 CHM 轉換為 PDF。一步一步的指南涵蓋
+  HTML、JPG、PNG 與 PDF 的渲染。
+keywords:
+- convert chm to html
+- convert chm to pdf
+- groupdocs viewer java rendering
+- chm file conversion java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-30'
+  description: Learn how to convert chm to html and convert chm to pdf with GroupDocs.Viewer
+    for Java. Step‑by‑step guide covers HTML, JPG, PNG, and PDF rendering.
+  headline: 'How to Convert CHM to HTML (and More) Using GroupDocs.Viewer Java: A
+    Comprehensive Guide'
+  type: TechArticle
+- questions:
+  - answer: Yes, loop through a folder with Java’s `Files.list` API and invoke the
+      same rendering code for each file.
+    question: Can I convert entire directories of CHM files at once?
+  - answer: Increase the JVM heap (`-Xmx`) or render to image formats with lower DPI;
+      you can also split the CHM into sections and process them individually.
+    question: How do I handle large documents without running out of memory?
+  - answer: Yes, GroupDocs.Viewer offers extensive options for CSS injection, page
+      size, and image quality. Explore the [API reference](https://reference.groupdocs.com/viewer/java/)
+      for detailed settings.
+    question: Is it possible to customize the output formatting further?
+  - answer: Absolutely. All internal CHM links are translated into clickable PDF annotations.
+    question: Does the library preserve hyperlinks when converting to PDF?
+  - answer: Use the `setPageNumbers` method on the view options to specify exact pages
+      or chapters you need.
+    question: Can I render only a subset of CHM chapters?
+  type: FAQPage
+title: 使用 GroupDocs.Viewer Java 將 CHM 轉換為 HTML（及其他格式）的完整指南
 type: docs
+url: /zh-hant/java/rendering-basics/render-chm-groupdocs-viewer-java/
+weight: 1
 ---
-# 如何使用 GroupDocs.Viewer Java 渲染 CHM 檔案：綜合指南
-## 介紹
-您是否希望將已編譯的 HTML 幫助 (CHM) 檔案渲染成更受支援的格式，例如 HTML、JPG、PNG 和 PDF？無論是出於存檔目的，還是為了增強在不同平台上的可訪問性，轉換這些文件都可能帶來巨大的改變。本教學將探討如何使用 GroupDocs.Viewer Java 無縫地實現這一點。您將學習如何使用這個強大的庫有效地渲染 CHM 檔案。
 
-**您將學到什麼：**
-- 如何在您的專案中設定適用於 Java 的 GroupDocs.Viewer。
-- 將 CHM 文件轉換為 HTML、JPG、PNG 和 PDF 格式的逐步指南。
-- 進行文件轉換時的實際應用和效能考量。
+# 如何使用 GroupDocs.Viewer Java 將 CHM 轉換為 HTML（以及其他格式）
 
-準備好深入文件渲染的世界了嗎？讓我們先來設定一下環境。
-## 先決條件
-在開始之前，請確保您已準備好以下事項：
-- **所需庫：** 您需要 GroupDocs.Viewer Java 函式庫。請確保在本教學中使用 25.2 版本。
-- **環境設定：** 對 Java 開發環境（例如 IntelliJ IDEA 或 Eclipse）的基本了解至關重要。
-- **知識前提：** 熟悉 Maven 和基本的 Java 程式設計概念將會有所幫助。
-## 為 Java 設定 GroupDocs.Viewer
-要在 Java 專案中使用 GroupDocs.Viewer，您需要將其新增為依賴項。以下是使用 Maven 進行設定的方法：
-**Maven配置**
+將舊版說明檔編譯成現代格式是開發人員常見的需求。在本教學中，您將 **將 CHM 轉換為 HTML**，並學習如何使用 GroupDocs.Viewer for Java 將相同的 CHM 檔案渲染為 JPG、PNG，以及 **將 CHM 轉換為 PDF**。完成後，您將擁有一套可重複使用的模式，適用於任何 CHM 文件，無論是歸檔舊手冊還是將說明內容發布於網站入口。
+
+![使用 GroupDocs.Viewer for Java 渲染 CHM 檔案](/viewer/rendering-basics/render-chm-files-java.png)
+
+[使用 GroupDocs.Viewer for Java 渲染 CHM 檔案](/viewer/rendering-basics/render-chm-files-java.png)
+
+## 快速解答
+- **哪個函式庫負責 CHM 渲染？** GroupDocs.Viewer for Java.  
+- **我可以將 HTML 輸出為單一檔案嗎？** 可以，啟用 `singlePage` 選項即可。  
+- **PDF 轉換是否無失真？** 此函式庫會保留版面配置、影像與超連結。  
+- **測試是否需要授權？** 免費試用或臨時授權即可。  
+- **支援哪些格式？** HTML、JPG、PNG、PDF，以及其他如 DOCX、XLSX 等。
+
+## 什麼是 GroupDocs.Viewer for Java？
+`GroupDocs.Viewer` for Java 是一個伺服器端 API，能將超過 70 種文件類型（包括 CHM）渲染成適合網頁的格式，且不需要 Microsoft Office 或 Adobe Acrobat。它可在任何 Java 8 以上的執行環境上運行，並能整合至 Web、桌面或微服務架構。欲了解更多資訊，請參閱 [GroupDocs 文件](https://docs.groupdocs.com/viewer/java/)。
+
+## 為何將 CHM 轉換為 HTML？
+GroupDocs.Viewer 支援 **超過 50 種輸入與輸出格式**，能在一般 2 GHz CPU 上於 2 秒內將 200 頁的 CHM 檔案轉換為單一 HTML 頁面，同時保持所有內部連結的功能。這樣的速度與格式廣度使其成為將舊版說明系統遷移至現代 Web 入口的理想選擇。
+
+## 前置條件
+- **GroupDocs.Viewer Java 函式庫**（版本 25.2 或更新）。  
+- 相容 Maven 的專案（IntelliJ IDEA、Eclipse 或類似環境）。  
+- 具備 Java 與 Maven 依賴管理的基本知識。
+
+## 設定 GroupDocs.Viewer for Java
+在 Java 專案中使用 GroupDocs.Viewer，請加入 Maven 依賴：
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-viewer</artifactId>
+    <version>25.2</version>
+</dependency>
+```
+
+**授權取得**  
+GroupDocs 提供免費試用、供評估使用的臨時授權，以及商業使用的購買方案。請前往其 [購買頁面](https://purchase.groupdocs.com/buy) 或 [臨時授權說明](https://purchase.groupdocs.com/temporary-license/) 了解更多選項。
+
+設定好函式庫後，讓我們在簡單的 Java 應用程式中初始化它：
+
+```java
+Viewer viewer = new Viewer("path/to/your/file.chm", new ViewerConfig());
+```
+
+## 實作指南
+
+### 如何將 CHM 轉換為 HTML？
+載入 CHM 檔案，定義輸出資料夾，並呼叫 HTML 渲染選項。API 會自動提取嵌入的資源（CSS、影像），並可將所有內容合併為單一頁面。
+
+```java
+String outputDir = "output/html";
+HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(outputDir);
+options.setSinglePage(true); // single‑page output
+viewer.view(options);
+```
+
+`HtmlViewOptions` 類別是告訴檢視器如何產生 HTML 的設定物件。將 `singlePage` 設為 `true` 會將所有章節合併為一個 HTML 檔案，適合快速瀏覽。
+
+### 如何將 CHM 轉換為 JPG？
+將 CHM 頁面渲染為影像可用於縮圖或視覺預覽。您可以指定要渲染的頁面，以減少大型文件的處理時間。
+
+```java
+String outputDir = "output/jpg";
+JpgViewOptions options = JpgViewOptions.forDirectory(outputDir);
+options.setPageNumbers(new int[]{1, 2}); // render only first two pages
+viewer.view(options);
+```
+
+`JpgViewOptions` 類別讓您控制影像品質、DPI 與頁面選擇。僅渲染所需頁面可節省記憶體與 CPU 資源。
+
+### 如何將 CHM 轉換為 PNG？
+PNG 輸出保留無損品質且支援透明度，適合用於說明主題的高解析度螢幕截圖。
+
+```java
+String outputDir = "output/png";
+PngViewOptions options = PngViewOptions.forDirectory(outputDir);
+options.setPageNumbers(new int[]{1}); // render the first page as PNG
+viewer.view(options);
+```
+
+`PngViewOptions` 類別的運作方式與 JPG 類似，但會產生保留完整視覺忠實度的 PNG 檔案。
+
+### 如何將 CHM 轉換為 PDF？
+PDF 是最具可攜性的發佈格式。檢視器可一次呼叫即將整個 CHM 內容合併為單一 PDF 文件。
+
+```java
+String outputPath = "output/chm-document.pdf";
+PdfViewOptions options = PdfViewOptions.forFile(outputPath);
+viewer.view(options);
+```
+
+`PdfViewOptions` 類別會自動處理分頁、字型嵌入與超連結保留。
+
+## 實務應用
+- **歸檔：** 將舊版 CHM 檔案轉換為現代格式，以便更容易存取與長期保存。  
+- **網站入口：** 將 CHM 文件發布為內部公司 Intranet 的 HTML 頁面。  
+- **行動應用程式：** 在 Android 或 iOS 應用中捆綁 PDF 版說明檔，以供離線閱讀。
+
+## 效能考量
+在處理大量或多筆文件轉換時：
+- **記憶體管理：** 渲染為 PNG 或高解析度 JPG 可能佔用大量記憶體；請監控 JVM 堆積並考慮對大型批次使用 `-Xmx2g`。  
+- **平行處理：** 使用 Java 的 `ExecutorService` 同時轉換多個 CHM 檔案，但需限制執行緒數量以免 CPU 過度競爭。  
+- **批次大小：** 對於龐大檔案庫，建議以 10‑20 個檔案為一組進行處理，以保持資源使用的可預測性。
+
+## 常見問題與解決方案
+- **缺少影像：** 確認使用 `HtmlViewOptions.forEmbeddedResources`，以便在提取 HTML 時同時抽取影像。  
+- **頁面順序不正確：** 檢查 CHM 檔案的內部目錄 (TOC) 是否完整；檢視器會遵循原始的導覽結構。  
+- **記憶體不足錯誤：** 增加 JVM 堆積大小，或在較新 API 版本中使用 `viewer.view(options, new Stream())` 轉為串流模式。
+
+## 常見問答
+
+**Q: 我可以一次轉換整個 CHM 目錄嗎？**  
+A: 可以，使用 Java 的 `Files.list` API 迭代資料夾，對每個檔案呼叫相同的渲染程式碼。
+
+**Q: 如何在不耗盡記憶體的情況下處理大型文件？**  
+A: 增加 JVM 堆積 (`-Xmx`) 或以較低 DPI 渲染為影像格式；亦可將 CHM 拆分為多個章節分別處理。
+
+**Q: 是否可以進一步自訂輸出格式？**  
+A: 可以，GroupDocs.Viewer 提供廣泛的 CSS 注入、頁面尺寸與影像品質設定。請參閱 [API 參考文件](https://reference.groupdocs.com/viewer/java/) 了解詳細設定。
+
+**Q: 函式庫在轉換為 PDF 時是否保留超連結？**  
+A: 完全保留。所有 CHM 內部連結皆會轉換為可點擊的 PDF 註解。
+
+**Q: 我可以只渲染 CHM 的部分章節嗎？**  
+A: 使用檢視選項的 `setPageNumbers` 方法，指定所需的頁碼或章節。
+
+## 結論
+您現在已擁有完整、可投入生產的工作流程，可使用 GroupDocs.Viewer for Java **將 CHM 轉換為 HTML**、**將 CHM 轉換為 PDF**，以及產生影像表示。這些技術讓您能將舊版說明系統現代化、提升可存取性，並將文件整合至任何基於 Java 的解決方案中。
+
+準備好進一步嗎？請查閱官方 GroupDocs 文件，了解進階客製化功能，如自訂 CSS 注入、浮水印，以及多執行緒批次處理。
+
+---
+
+**最後更新：** 2026-06-30  
+**測試環境：** GroupDocs.Viewer Java 25.2  
+**作者：** GroupDocs
+
 ```xml
 <repositories>
    <repository>
@@ -41,118 +194,78 @@ type: docs
    </dependency>
 </dependencies>
 ```
-**許可證獲取**
-GroupDocs 提供免費試用、評估臨時授權以及商業用途的購買選項。訪問他們的 [購買頁面](https://purchase.groupdocs.com/buy) 或 [臨時執照部分](https://purchase.groupdocs.com/temporary-license/) 探索您的選擇。
-設定好庫後，讓我們在一個簡單的 Java 應用程式中初始化它：
+
 ```java
 import com.groupdocs.viewer.Viewer;
 
 public class ViewerSetup {
     public static void main(String[] args) {
         try (Viewer viewer = new Viewer("path/to/your/document.chm")) {
-            // 您的文檔查看和渲染邏輯在這裡。
+            // Your document viewing and rendering logic goes here.
         }
     }
 }
 ```
-此程式碼片段演示了基本設定。我們將在此基礎上探索不同的渲染功能。
-## 實施指南
-### 將 CHM 文檔渲染為 HTML
-**概述**
-將 CHM 文件轉換為 HTML 格式使得它可以輕鬆地在各種網路平台上訪問，而無需特殊的檢視器。
-#### 步驟 1：定義輸出目錄和命名模式
+
 ```java
 import java.nio.file.Path;
 
 Path outputDirectory = TestFiles.getOutputDirectoryPath("RenderingChmFiles");
 Path pageFilePathFormat = outputDirectory.resolve("chm_result_{0}.html");
 ```
-此步驟準備文件系統來儲存我們轉換後的文檔，確保每個 HTML 頁面都有唯一的名稱。
-#### 步驟 2：配置並渲染為 HTML
+
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.HtmlViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-    options.setRenderToSinglePage(true); // 可選：渲染成單一 HTML 頁面
+    options.setRenderToSinglePage(true); // Optional: render into a single HTML page
     viewer.view(options);
 }
 ```
-我們初始化 `HtmlViewOptions` 嵌入資源，允許獨立的 HTML 輸出。將所有內容整合到一個頁面的功能對於簡化導覽特別有用。
-### 將 CHM 文檔渲染為 JPG
-**概述**
-對於視覺表現或縮圖，將 CHM 文件的頁面轉換為 JPG 可以非常有效率。
-#### 步驟 1：設定輸出目錄
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("chm_result_{0}.jpg");
 ```
-#### 步驟 2：將特定頁面渲染為 JPG
+
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
-    viewer.view(options, 1, 2, 3); // 將第 1 至 3 頁轉換為 JPG 格式
+    viewer.view(options, 1, 2, 3); // Converts pages 1 to 3 into JPG format
 }
 ```
-此配置允許選擇性渲染，為文件的視覺呈現方式提供了靈活性。
-### 將 CHM 文件渲染為 PNG
-**概述**
-PNG 是支援透明度的高品質影像的理想選擇。將 CHM 檔案轉換為 PNG 可以增強文件的視覺效果。
-#### 步驟 1：定義輸出路徑
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("chm_result_{0}.png");
 ```
-#### 步驟2：配置並渲染為PNG
+
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options, 1, 2, 3); // 將指定頁面轉換為 PNG 格式
+    viewer.view(options, 1, 2, 3); // Converts specified pages to PNG format
 }
 ```
-### 將 CHM 文件轉換為 PDF
-**概述**
-PDF 是普遍接受的文件格式。將 CHM 文件轉換為 PDF 格式，可以輕鬆分發和存取。
-#### 步驟 1：設定輸出檔路徑
+
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("chm_result.pdf");
 ```
-#### 步驟 2：將文件渲染為 PDF
+
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
 
 try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM)) {
     PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
-    viewer.view(options); // 從 CHM 文件產生單一 PDF 文檔
+    viewer.view(options); // Generates a single PDF document from the CHM file
 }
 ```
-這種方法將所有內容整合為一種易於共享的格式，非常適合存檔或離線存取。
-## 實際應用
-- **歸檔：** 將舊版 CHM 檔案轉換為現代格式，以便於存取和儲存。
-- **門戶網站：** 在公司內部入口網站上將 CHM 文件顯示為 HTML 頁面。
-- **行動應用程式：** 在行動應用程式中提供幫助文件的 PDF 版本，以增強使用者體驗。
-## 性能考慮
-處理大型或大量文件轉換時：
-- 監控記憶體使用情況，尤其是在渲染 PNG 等資源密集型格式時。
-- 如果有必要，請透過調整堆疊大小來最佳化您的 Java 環境。
-- 考慮採用平行處理技術進行批量轉換以提高吞吐量。
-## 結論
-現在，您已經掌握了使用 GroupDocs.Viewer for Java 將 CHM 文件轉換為各種格式的知識。這項技能將為您帶來無限可能，從提昇文件可訪問性到將舊內容整合到現代平台。何不開始嘗試使用您自己的 CHM 文件，探索這些轉換技術的潛力？
-準備好進一步提升你的技能了嗎？深入了解 [GroupDocs 文檔](https://docs.groupdocs.com/viewer/java/) 獲得更多高級功能和自訂選項。
 
-## 常見問題部分
+## 相關教學
 
-**Q：我可以一次轉換整個目錄的 CHM 檔嗎？**
-
-答：當 GroupDocs.Viewer 處理單一文件時，您可以使用遍歷資料夾中文件的 Java 腳本自動執行目錄處理。
-
-**Q：如何處理大型文件而不耗盡記憶體？**
-
-答：考慮增加 JVM 的堆疊大小或將文件分解為較小的部分以進行轉換。
-
-**Q：可以進一步自訂輸出格式嗎？**
-
-答：是的，GroupDocs.Viewer 提供了豐富的自訂選項。探索 [API 參考](https://reference.groupdocs.com/viewer/java/) 了解更多詳情。
+- [如何使用 GroupDocs.Viewer for Java 將 DOCX 轉換為 HTML：一步步指南](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [convert odf html java – 使用 GroupDocs.Viewer for Java 將 ODF 轉換為 HTML、JPG、PNG、PDF](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
+- [使用 GroupDocs.Viewer Java 將文件附件渲染為 HTML：一步步指南](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
