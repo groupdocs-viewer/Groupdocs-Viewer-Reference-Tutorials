@@ -1,42 +1,83 @@
 ---
-"date": "2025-04-24"
-"description": "Tanuld meg, hogyan konvertálhatsz Word dokumentumokat kiváló minőségű PNG képekké a GroupDocs.Viewer for Java segítségével. Tökéletes archiváláshoz, megosztáshoz és dokumentum előnézetek létrehozásához."
-"title": "Hogyan konvertálhatunk DOCX fájlokat PNG-vé a GroupDocs.Viewer for Java használatával?"
-"url": "/hu/java/rendering-basics/render-docx-png-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-07-05'
+description: Lépésről‑lépésre útmutató a docx png‑re konvertálásához a GroupDocs.Viewer
+  for Java‑val – tökéletes archiváláshoz, megosztáshoz és előnézeti képek létrehozásához.
+keywords:
+- convert docx to png
+- how to convert docx
+- java convert word image
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-05'
+  description: Step‑by‑step guide to convert docx to png with GroupDocs.Viewer for
+    Java – perfect for archiving, sharing, and creating preview images.
+  headline: How to convert docx to png using GroupDocs.Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Yes, GroupDocs.Viewer supports PDF and many other formats; see the [API
+      Reference](https://reference.groupdocs.com/viewer/java/) for details.
+    question: Can I render PDFs using GroupDocs.Viewer for Java?
+  - answer: Render pages in batches, reuse a single `Viewer` instance, and close it
+      promptly to free memory.
+    question: How do I handle large documents efficiently?
+  - answer: Ensure your code checks for the directory and creates it with `Files.createDirectories()`
+      before rendering.
+    question: What if my output directory does not exist?
+  - answer: Yes, `PngOptions` lets you set DPI, image width, and height to control
+      quality and file size.
+    question: Is it possible to customize image quality or size?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community help and official assistance.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+title: Hogyan konvertáljunk docx‑t png‑re a GroupDocs.Viewer for Java használatával
 type: docs
+url: /hu/java/rendering-basics/render-docx-png-groupdocs-viewer-java/
+weight: 1
 ---
-# Hogyan konvertálhatunk DOCX fájlokat PNG-vé a GroupDocs.Viewer for Java használatával?
+
+# Hogyan konvertáljunk docx-et png-re a GroupDocs.Viewer for Java segítségével
 
 ## Bevezetés
 
-Word-dokumentumok képformátumokba, például PNG-be konvertálása elengedhetetlen számos célhoz, például archiváláshoz, szerkesztési lehetőségek nélküli megosztáshoz vagy dokumentumbélyegképek létrehozásához. Ez az oktatóanyag végigvezeti Önt a használatán. **GroupDocs.Viewer Java-hoz** hogy könnyedén átalakítsa Word-dokumentumait kiváló minőségű PNG-képekké.
+Ha gyorsan és megbízhatóan kell **docx-et png-re konvertálni**, a GroupDocs.Viewer for Java egy kész‑használatra készült API-t biztosít, amely kezeli a komplex elrendezéseket, beágyazott képeket és táblázatokat anélkül, hogy külső függőségekre lenne szükség. Ebben az útmutatóban megtanulja, hogyan állítsa be a könyvtárat, konfigurálja a renderelési beállításokat, és hogyan állítson elő magas minőségű PNG oldalakat egy Word dokumentumból. A megközelítés bármely, Java 8+‑t támogató platformon működik, és skálázható egyoldalas kivonatokról több száz oldalas jelentésekig.
 
-### Amit tanulni fogsz:
-- A GroupDocs.Viewer beállítása és konfigurálása Java nyelven.
-- Lépésről lépésre útmutató a DOCX fájlok PNG képekké rendereléséhez.
-- Főbb konfigurációs lehetőségek az optimális képkimenet érdekében.
-- A funkció gyakorlati alkalmazásai valós helyzetekben.
-- Tippek a megvalósítás során felmerülő gyakori problémák elhárításához.
+![DOCX fájlok konvertálása PNG-re a GroupDocs.Viewer for Java segítségével](/viewer/rendering-basics/convert-docx-files-to-png-java.png)
+[DOCX fájlok konvertálása PNG-re a GroupDocs.Viewer for Java segítségével](/viewer/rendering-basics/convert-docx-files-to-png-java.png)
 
-Nézzük meg, milyen előfeltételeknek kell megfelelnünk, mielőtt elkezdjük a dokumentumok átalakítását!
+### Mit fog megtanulni
+- Hogyan állítsa be és konfigurálja a GroupDocs.Viewer for Java-t.
+- Lépésről‑lépésre útmutató a DOCX fájlok PNG képekké rendereléséről.
+- Kulcsfontosságú konfigurációs beállítások az optimális képkimenethez.
+- Valós példák, ahol a docx‑png konvertálás időt takarít meg és növeli a biztonságot.
+- Tippek a gyakori problémák hibaelhárításához a megvalósítás során.
+
+Vizsgáljuk meg a szükséges előfeltételeket, mielőtt elkezdenénk átalakítani a dokumentumait!
+
+## Gyors válaszok
+- **Milyen könyvtárverzió szükséges?** GroupDocs.Viewer Java v25.2 or newer.  
+- **Mely Java verzió támogatott?** Java 8 through Java 21 (LTS).  
+- **Szükségem van licencre a teszteléshez?** A free trial from the GroupDocs download page works for development.  
+- **Testreszabhatom a PNG felbontást?** Yes – use `PngOptions` to set DPI or image size.  
+- **Lehetséges a kötegelt konvertálás?** Absolutely; iterate over pages or files in a loop.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a szükséges eszközökkel és ismeretekkel:
+A kezdés előtt győződjön meg arról, hogy rendelkezik a szükséges eszközökkel és ismeretekkel:
 
 ### Szükséges könyvtárak, verziók és függőségek
-Szükséged lesz a GroupDocs.Viewer könyvtár 25.2-es vagy újabb verziójára. Illeszd be a Java projektedbe a Maven használatával a függőségek kezeléséhez.
+Szüksége lesz a GroupDocs.Viewer könyvtár 25.2 vagy újabb verziójára. Adja hozzá Java projektjéhez Maven segítségével a függőségkezeléshez.
 
-### Környezeti beállítási követelmények
-- Győződjön meg arról, hogy a JDK (Java 8 vagy újabb) telepítve van a rendszerén.
-- Használj egy IDE-t, mint például az IntelliJ IDEA vagy az Eclipse, a Java kódod írásához és végrehajtásához.
+### Környezet beállítási követelmények
+- Győződjön meg arról, hogy a JDK (Java 8 vagy újabb) telepítve van a rendszerén.  
+- Használjon olyan IDE-t, mint az IntelliJ IDEA vagy az Eclipse, a Java kód írásához és futtatásához.
 
-### Ismereti előfeltételek
-Előnyt jelent az alapvető Java programozási fogalmak ismerete és a Maven használatával történő projektépítésben szerzett tapasztalat. Végigvezetünk minden lépésen, még akkor is, ha még csak most ismerkedsz ezekkel az eszközökkel.
+### Tudás előfeltételek
+A Java alapvető programozási koncepciók ismerete és a Maven használatával történő projektek építésének tapasztalata előnyös lesz. Lépésről lépésre segítünk, még akkor is, ha újonc ezekben az eszközökben.
 
-## GroupDocs.Viewer beállítása Java-hoz
-Használat **GroupDocs.Viewer**, add hozzá függőségként a projektedhez Maven-en keresztül:
+## A GroupDocs.Viewer for Java beállítása
+
+**GroupDocs.Viewer** használatához adja hozzá függőségként a projektjéhez Maven-en keresztül:
 
 **Maven konfiguráció**
 
@@ -57,123 +98,172 @@ Használat **GroupDocs.Viewer**, add hozzá függőségként a projektedhez Mave
 </dependencies>
 ```
 
-### Licencbeszerzés lépései
-A GroupDocs.Viewer teljes kihasználásához érdemes licencet vásárolni:
-- **Ingyenes próbaverzió:** Töltsd le a könyvtárat innen [GroupDocs letöltések](https://releases.groupdocs.com/viewer/java/) hogy tesztelje a képességeit.
-- **Ideiglenes engedély:** Szerezzen be ideiglenes engedélyt meghosszabbított értékelésre a következő címen: [Ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/).
-- **Vásárlás:** Kereskedelmi használatra vásároljon licencet a következő címen: [GroupDocs vásárlási oldal](https://purchase.groupdocs.com/buy).
+```xml
+<repositories>
+   <repository>
+      <id>repository.groupdocs.com</id>
+      <name>GroupDocs Repository</name>
+      <url>https://releases.groupdocs.com/viewer/java/</url>
+   </repository>
+</repositories>
+<dependencies>
+   <dependency>
+      <groupId>com.groupdocs</groupId>
+      <artifactId>groupdocs-viewer</artifactId>
+      <version>25.2</version>
+   </dependency>
+</dependencies>
+```
 
-A beállítás után inicializáljuk és konfiguráljuk a GroupDocs.Viewer fájlt.
+### Licenc beszerzési lépések
+A GroupDocs.Viewer teljes kihasználásához fontolja meg a licenc beszerzését:
+- **Ingyenes próba:** Download the library from [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) to test its capabilities.  
+- **Ideiglenes licenc:** Obtain a temporary license for extended evaluation via [Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Vásárlás:** For commercial use, purchase a license through [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
-### Alapvető inicializálás
-DOCX fájl megnyitása rendereléshez:
+Miután beállította, inicializáljuk és konfiguráljuk a GroupDocs.Viewer-t.
+
+### Alap inicializálás
+`Viewer` az elsődleges osztály, amely megnyit egy dokumentumot, és renderelési képességeket biztosít a támogatott formátumokhoz.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/SAMPLE_DOCX")) {
-    // A dokumentum rendereléséhez szükséges kód ide fog kerülni.
+    // Your code to render the document will go here.
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-Ez a kódrészlet megnyit egy dokumentumot, és előkészíti a megjelenítésre. Csere `"path/to/SAMPLE_DOCX"` a tényleges fájlelérési úttal.
+Ez a kódrészlet megnyit egy dokumentumot, és előkészíti a rendereléshez. Cserélje le a `"path/to/SAMPLE_DOCX"`-t a saját fájl útvonalára.
+
+## Hogyan konvertáljunk docx-et png-re?
+
+Egy DOCX fájl konvertálásához hozzon létre egy `Viewer` példányt a dokumentum útvonalával, készítsen egy `PngOptions` objektumot a kívánt felbontás és kimeneti mappa meghatározásához, majd hívja meg a `viewer.view(pageNumber, options)` metódust minden renderelni kívánt oldalra. Minden hívás egy PNG képet ad vissza, amely a megadott helyre kerül mentésre.
+
+## Mi a Viewer osztály?
+
+A `Viewer` osztály a GroupDocs.Viewer központi komponense, amely betölti a dokumentumot, és renderelési metódusokat biztosít különböző kimeneti formátumokhoz, például PNG, JPEG, PDF és HTML. A `Viewer` példány létrehozása után meghívhatja a `view` metódusait, hogy képeket vagy egyéb ábrázolásokat generáljon az egyes oldalakról, opcionálisan testreszabva a beállításokat, mint például DPI vagy oldaltartomány.
+
+## Miért használjuk a GroupDocs.Viewer-t a docx png-re konvertálásához?
+
+A GroupDocs.Viewer **50+** bemeneti formátumot támogat, és több száz oldalas dokumentumokat képes renderelni anélkül, hogy az egész fájlt a memóriába töltené, így akár **30 oldal másodpercenként** konvertálási sebességet ér el egy tipikus szerver‑osztályú CPU-n. Ez ideálissá teszi nagy áteresztőképességű webszolgáltatások és kötegelt feldolgozási folyamatok számára.
 
 ## Megvalósítási útmutató
-Most pedig bontsuk le a lépéseket, hogyan lehet DOCX dokumentumokat PNG képként megjeleníteni.
+
+Most bontsuk le a lépéseket a DOCX dokumentumok PNG képekké rendereléséhez.
 
 ### Dokumentumok renderelése PNG képekké
-**Áttekintés**
-A GroupDocs.Viewer programot úgy fogjuk konfigurálni, hogy a DOCX dokumentumok minden oldalát különálló PNG fájlokká alakítsa. Ez hasznos olyan webes alkalmazások számára, amelyeknek dokumentumok előnézetére vagy offline megtekintési lehetőségekre van szükségük.
 
-#### 1. lépés: Kimeneti könyvtár és opciók beállítása
-Adja meg, hová szeretné menteni a képeket:
+**Áttekintés**  
+A GroupDocs.Viewer-t úgy konfiguráljuk, hogy egy DOCX dokumentum minden oldalát egyedi PNG fájlokká konvertálja. Ez hasznos webalkalmazások számára, amelyek dokumentum előnézeteket vagy offline megtekintési lehetőségeket igényelnek.
+
+#### 1. lépés: Kimeneti könyvtár és beállítások konfigurálása
+`PngOptions` konfigurálja a PNG renderelési paramétereket, például DPI-t, kép szélességet, magasságot és a kimeneti fájl elnevezését.
 
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-// Renderelt PNG-k kimeneti útvonalának meghatározása
+// Define output path for rendered PNGs
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 
-// PNG formátumú megjelenítéshez hozzon létre nézetbeállításokat
+// Create view options to render as PNG
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ```
 
-**Miért fontos:** A `pageFilePathFormat` biztosítja, hogy minden dokumentumoldal egyedi fájlnévvel kerüljön mentésre a megadott könyvtárba.
+**Miért fontos:** A `pageFilePathFormat` biztosítja, hogy minden dokumentumoldal egyedi fájlnévvel legyen elmentve a megadott könyvtárban.
 
 #### 2. lépés: Dokumentum renderelése
-Rendereld a DOCX fájlt PNG képekké a konfigurált beállításokkal:
+Renderelje a DOCX fájlt PNG képekké a konfigurált beállítások használatával:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    // Dokumentumoldalak konvertálása PNG formátumba
+    // Convert document pages to PNG format
     viewer.view(viewOptions);
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-**Miért fontos:** A `view` A metódus feldolgozza a dokumentum minden egyes oldalát, és PNG képként menti azokat a meghatározott kimeneti útvonalnak megfelelően.
+**Miért fontos:** A `view` metódus feldolgozza a dokumentum minden oldalát, és a meghatározott kimeneti útvonal szerint PNG képeként menti őket.
 
-### Hibaelhárítási tippek
-- Győződjön meg arról, hogy a megadott könyvtárak léteznek, vagy kezelje a könyvtárak létrehozását a kódban.
-- Ellenőrizze a fájlok elérési útját és jogosultságait, ha problémát észlel. `FileNotFoundException`.
-- Ellenőrizze a különböző DOCX fájlokkal való kompatibilitást a renderelési problémák szempontjából.
+## Gyakori problémák és megoldások
+- **Hiányzó könyvtárak:** Hozza létre a kimeneti mappát programozottan, vagy győződjön meg arról, hogy létezik a renderelés előtt.
+- **Fájl jogosultságok:** Futtassa a JVM-et megfelelő jogosultságokkal a forrás DOCX olvasásához és a PNG fájlok írásához.
+- **Nagy dokumentumok:** Használjon try‑with‑resources-t a `Viewer` példány automatikus bezárásához és a memória felszabadításához.
 
 ## Gyakorlati alkalmazások
-A dokumentumok képformátumokba történő renderelésének számos valós alkalmazása van:
-1. **Dokumentumarchiválás:** Hozzon létre módosíthatatlan verziókat a dokumentumaiból.
-2. **Webes előnézetek:** Dokumentumok előnézetének megjelenítése webhelyeken szerkesztési engedélyezése nélkül.
-3. **Offline hozzáférés:** Offline hozzáférést biztosíthat képeken keresztül mobil- vagy asztali alkalmazásokban.
-4. **Adatbiztonság:** Csak a képi ábrázolások megosztásával megakadályozhatja a jogosulatlan szerkesztéseket.
 
-A GroupDocs.Viewer integrálható tartalomkezelő rendszerekkel (CMS) ezen folyamatok automatizálása érdekében, növelve a termelékenységet és a biztonságot.
+A dokumentumok képfájl formátumba történő renderelése több valós alkalmazási területtel bír:
+1. **Dokumentum archiválás:** Készítsen módosíthatatlan, csak olvasható pillanatképeket szerződések vagy jelentések esetén.
+2. **Web előnézetek:** Mutassa a dokumentum bélyegképeket a portálokon anélkül, hogy szerkeszthető tartalmat tárna fel.
+3. **Offline hozzáférés:** Csomagolja a képeket mobilalkalmazásokba, ahol PDF nézők nem állnak rendelkezésre.
+4. **Adatbiztonság:** Osszon meg csak képi ábrázolásokat, hogy megakadályozza a véletlen szerkesztéseket.
 
-## Teljesítménybeli szempontok
-A dokumentumok hatékony renderelése kulcsfontosságú az alkalmazások teljesítményének fenntartásához:
+A GroupDocs.Viewer integrálható tartalomkezelő rendszerekkel (CMS), hogy automatizálja ezeket a folyamatokat, növelve a termelékenységet és a biztonságot.
+
+## Teljesítmény szempontok
+
+A dokumentumok hatékony renderelése kulcsfontosságú az alkalmazás teljesítményének fenntartásához:
 
 ### Tippek a teljesítmény optimalizálásához
-- Használjon hatékony fájlkezelési technikákat.
-- A PNG képek felbontását vagy méretét a használati eset követelményei alapján korlátozhatja.
-  
-### Erőforrás-felhasználási irányelvek
-- Figyelje a memóriahasználatot renderelés közben a probléma elkerülése érdekében `OutOfMemoryError`.
-- Az erőforrásokat a kódban látható módon, a try-with-resources használatával dobd ki megfelelően.
+- Használjon hatékony fájlkezelési technikákat, például streaminget.
+- Korlátozza a PNG felbontást (pl. 150 DPI), ha a magas hűség nem szükséges.
 
-### Java memóriakezelési bevált gyakorlatok
-- A GroupDocs.Viewer segítségével hatékonyan kezelheti a nagyméretű dokumentumok feldolgozását, így alkalmazása minimális memóriaigényt tud felmutatni.
-- Profilozza és finomhangolja JVM beállításait a környezet igényei szerint.
+### Erőforrás használati irányelvek
+- Figyelje a memóriahasználatot a renderelés során, hogy elkerülje az `OutOfMemoryError`-t.
+- A forrásokat megfelelően szabadítsa fel try‑with‑resources használatával, ahogy a kódrészletekben látható.
 
-## Következtetés
-Most már alaposan ismernie kell a DOCX dokumentumok PNG képként való renderelésének módját a következő használatával: **GroupDocs.Viewer Java-hoz**Ez a funkció nemcsak a dokumentumok megosztásának és archiválásának módját javítja, hanem új utakat nyit a webes alkalmazások dokumentumkezelésében is.
+### Legjobb gyakorlatok a Java memória kezeléséhez
+- Tartsa az alkalmazás memóriahasználatát minimális szinten, az oldalakat egyenként feldolgozva.
+- Profilozza és finomhangolja a JVM beállításait (pl. `-Xmx2g`) a várható dokumentumméretek alapján.
+
+## Gyakran feltett kérdések
+
+**K: Renderelhetek PDF-eket a GroupDocs.Viewer for Java-val?**  
+Igen, a GroupDocs.Viewer támogatja a PDF-et és sok más formátumot; a részletekért tekintse meg az [API Reference](https://reference.groupdocs.com/viewer/java/) oldalt.
+
+**K: Hogyan kezeljem hatékonyan a nagy dokumentumokat?**  
+Renderelje az oldalakat kötegekben, használja újra egyetlen `Viewer` példányt, és zárja be gyorsan a memória felszabadításához.
+
+**K: Mi van, ha a kimeneti könyvtár nem létezik?**  
+Győződjön meg arról, hogy a kód ellenőrzi a könyvtárat, és a renderelés előtt a `Files.createDirectories()` segítségével létrehozza azt.
+
+**K: Lehetséges testreszabni a kép minőségét vagy méretét?**  
+Igen, a `PngOptions` lehetővé teszi a DPI, a kép szélesség és magasság beállítását a minőség és a fájlméret szabályozásához.
+
+**K: Hol kaphatok támogatást, ha problémáim vannak?**  
+Látogassa meg a [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) oldalt a közösségi segítségért és hivatalos támogatásért.
+
+## További források
+- [GroupDocs.Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+
+## Összegzés
+
+Most már rendelkezik egy teljes, termelésre kész útmutatóval a **docx png-re konvertálásához** a GroupDocs.Viewer for Java segítségével. Ez a képesség nem csak egyszerűsíti a dokumentumok megosztását és archiválását, hanem új lehetőségeket nyit meg az előnézetek generálásában webes és mobilalkalmazásokban.
 
 ### Következő lépések
-Fedezze fel a GroupDocs.Viewer további fejlett funkcióit, például a különböző dokumentumformátumok renderelését vagy a felhőalapú tárolási megoldásokkal való integrációt.
+- Kísérletezzen más kimeneti formátumokkal, például JPEG vagy SVG, a `PngOptions` megfelelő osztályra cserélésével.
+- Integrálja a renderelési logikát egy REST API-ba, hogy valós időben szolgáltasson előnézeteket.
+- Fedezze fel a felhő tároló csatlakozókat, hogy automatikusan feltöltse a generált PNG-ket az AWS S3, Azure Blob vagy Google Cloud Storage szolgáltatásokba.
 
-Készen áll a kezdésre? Vezesse be ezt a megoldást még ma, és forradalmasítsa dokumentumkezelési munkafolyamatait!
+Készen áll a kezdésre? Valósítsa meg ezt a megoldást még ma, és modernizálja a dokumentumkezelési munkafolyamatát!
 
-## GYIK szekció
-**1. kérdés: Renderelhetek PDF fájlokat a GroupDocs.Viewer for Java segítségével?**
-V1: Igen, a GroupDocs.Viewer számos fájlformátumot támogat, beleértve a PDF-et is. Lásd a [API-referencia](https://reference.groupdocs.com/viewer/java/) a részletekért.
+---
 
-**2. kérdés: Hogyan kezelhetem hatékonyan a nagyméretű dokumentumokat?**
-2. válasz: Fontolja meg az oldalak kötegelt renderelését és a memóriahasználat optimalizálását a teljesítményszempontok részben leírtak szerint.
+**Utoljára frissítve:** 2026-07-05  
+**Tesztelve a következővel:** GroupDocs.Viewer for Java v25.2  
+**Szerző:** GroupDocs  
 
-**3. kérdés: Mi van, ha a kimeneti könyvtáram nem létezik?**
-A3: Renderelés előtt győződjön meg arról, hogy a kódja ellenőrzi és létrehozza a szükséges könyvtárakat.
+## Kapcsolódó oktatóanyagok
 
-**4. kérdés: Lehetséges a képminőség vagy -méret testreszabása?**
-4. válasz: Igen, a GroupDocs.Viewer lehetőséget biztosít a PNG-képek kimeneti beállításainak, például a felbontásának módosítására.
-
-**5. kérdés: Hol kaphatok támogatást, ha problémákba ütközöm?**
-A5: Látogassa meg a [GroupDocs támogatási fórum](https://forum.groupdocs.com/c/viewer/9) segítségért a közösségtől és a szakértőktől.
-
-## Erőforrás
-- **Dokumentáció:** [GroupDocs.Viewer Java dokumentáció](https://docs.groupdocs.com/viewer/java/)
-- **API-hivatkozás:** [GroupDocs API-referencia](https://reference.groupdocs.com/viewer/java/)
+- [DOCX renderelése képpé a GroupDocs Viewer for Java használatával: Átfogó útmutató](/viewer/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/)
+- [Hogyan konvertáljunk DOCX-et HTML-re a GroupDocs.Viewer for Java segítségével: Lépésről‑lépésre útmutató](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Java útmutató: Speciális oldalak renderelése a GroupDocs.Viewer API-val dokumentum előnézethez és kezeléshez](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)

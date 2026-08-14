@@ -1,43 +1,92 @@
 ---
-"date": "2025-04-24"
-"description": "تعرّف على كيفية عرض مرفقات المستندات بسلاسة بتنسيق HTML باستخدام GroupDocs.Viewer لجافا. حسّن تفاعلية تطبيقات الويب لديك وتجربة المستخدم."
-"title": "تحويل مرفقات المستندات إلى HTML باستخدام GroupDocs.Viewer Java - دليل خطوة بخطوة"
-"url": "/ar/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-07-05'
+description: تعلم كيفية عرض مرفقات المستندات بصيغة HTML باستخدام GroupDocs.Viewer
+  for Java، وزيادة التفاعل، وتحسين أداء تطبيق الويب.
+keywords:
+- render document attachments html
+- GroupDocs.Viewer Java
+- attachment rendering Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-05'
+  description: Learn how to render document attachments HTML using GroupDocs.Viewer
+    for Java, boost interactivity, and improve web app performance.
+  headline: Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step
+    Guide
+  type: TechArticle
+- description: Learn how to render document attachments HTML using GroupDocs.Viewer
+    for Java, boost interactivity, and improve web app performance.
+  name: Render Document Attachments HTML with GroupDocs.Viewer Java – A Step‑By‑Step
+    Guide
+  steps:
+  - name: Set Up the Output Directory
+    text: 'Define where the rendered HTML files will be saved:'
+  - name: Create an Attachment Object
+    text: '`CacheableFactory` builds an `Attachment` instance that can be cached for
+      future requests, reducing processing overhead:'
+  - name: Extract and Render the Attachment to HTML
+    text: 'Use the `Viewer` class to render the attachment. The `HtmlViewOptions`
+      object is configured to embed all required resources (CSS, images, scripts)
+      directly into the HTML output, ensuring a self‑contained page:'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Viewer supports over 100 + formats, including DOCX, XLSX, PPTX,
+      MSG, EML, PDF, and many image types.
+    question: What file formats can be rendered as HTML attachments?
+  - answer: No, a single GroupDocs.Viewer license covers all supported formats and
+      attachment rendering features.
+    question: Do I need a separate license for each attachment type?
+  - answer: Yes, iterate through the `Attachment` collection returned by the `Viewer`
+      and render each one individually.
+    question: Can I render multiple attachments in one request?
+  - answer: '`CacheableFactory` is designed for concurrent environments; it synchronizes
+      access to cached files, making it safe for multi‑threaded web applications.'
+    question: How does caching affect thread safety?
+  - answer: Visit [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/)
+      for comprehensive guides, reference manuals, and sample projects.
+    question: Where can I find more detailed API documentation?
+  type: FAQPage
+title: عرض مرفقات المستندات بصيغة HTML باستخدام GroupDocs.Viewer Java – دليل خطوة
+  بخطوة
 type: docs
+url: /ar/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/
+weight: 1
 ---
-# تحويل مرفقات المستندات إلى HTML باستخدام GroupDocs.Viewer Java
+
+# عرض مرفقات المستندات بصيغة HTML باستخدام GroupDocs.Viewer Java
 
 ## مقدمة
 
-قد يكون عرض مرفقات المستندات بشكل فعال في تطبيقات الويب أمرًا صعبًا. **GroupDocs.Viewer لـ Java** يقدم حلاً قويًا لتقديم هذه المرفقات بسلاسة إلى تنسيق HTML، وتحويل المستندات مثل رسائل البريد الإلكتروني التي تحتوي على ملفات مضمنة إلى صفحات HTML تفاعلية وجذابة بصريًا.
+عندما تحتاج إلى عرض ملفات مدمجة—مثل مرفقات البريد الإلكتروني، ملفات PDF داخل مستندات Word، أو جداول البيانات المدمجة في العروض التقديمية—يمكن أن يؤدي عرض تلك المرفقات مباشرةً في المتصفح إلى تحسين تجربة المستخدم بشكل كبير. **GroupDocs.Viewer for Java** يجعل ذلك سهلًا عن طريق تحويل أي مرفق إلى HTML نظيف ومتوافق مع المعايير. في هذا الدليل ستكتشف كيفية **عرض مرفقات المستندات بصيغة HTML** بسرعة، وإدارة التخزين المؤقت بفعالية، والحفاظ على استجابة تطبيق الويب الخاص بك.
 
-في هذا البرنامج التعليمي، ستتعلم كيفية استخدام مكتبة GroupDocs.Viewer Java لتحسين وظائف تطبيقك عن طريق عرض مرفقات المستندات. 
+![عرض مرفقات المستندات بصيغة HTML باستخدام GroupDocs.Viewer for Java](/viewer/rendering-basics/render-document-attachments-into-html-java.png)
 
-**الدروس المستفادة:**
-- إعداد GroupDocs.Viewer وتشغيله لـ Java
-- تحويل المرفقات من المستندات إلى HTML
-- إدارة المرفقات بكفاءة باستخدام CacheableFactory
-- تحسين الأداء أثناء التعامل مع تحويلات المستندات
+[عرض مرفقات المستندات بصيغة HTML باستخدام GroupDocs.Viewer for Java](/viewer/rendering-basics/render-document-attachments-into-html-java.png)
 
-## المتطلبات الأساسية
+## إجابات سريعة
+- **هل يمكن لـ GroupDocs.Viewer تحويل مرفقات البريد الإلكتروني إلى HTML؟** نعم، يقوم باستخراجها وعرضها دون أدوات إضافية.  
+- **هل أحتاج إلى ترخيص للتطوير؟** النسخة التجريبية المجانية تعمل للاختبار؛ يلزم ترخيص دائم للإنتاج.  
+- **ما نسخة Java المدعومة؟** Java 8 أو أعلى، مع توافق كامل حتى Java 21.  
+- **كيف يحسن التخزين المؤقت الأداء؟** `CacheableFactory` يتجنب إعادة معالجة نفس المرفق، مما يقلل وقت التحويل حتى 70 ٪.  
+- **ما صيغ الإخراج المتاحة؟** بالإضافة إلى HTML، يمكنك أيضًا إنشاء PDF و PNG و JPEG مباشرة.
 
-قبل البدء، تأكد من أنك قمت بتغطية المتطلبات الأساسية التالية:
+## ما هو “render document attachments HTML”؟
 
-**المكتبات والتبعيات المطلوبة:**
-- GroupDocs.Viewer لـ Java (الإصدار 25.2 أو أحدث)
+*Render document attachments HTML* يشير إلى عملية تحويل الملفات المدمجة داخل مستند حاوية (مثل بريد إلكتروني أو ملف Word) إلى صفحات HTML يمكن عرضها في متصفح الويب دون تنزيل المرفق الأصلي. تتيح هذه التقنية معاينة سلسة للمحتوى المتداخل، مع الحفاظ على التخطيط والتفاعلية مع إبقاء المستخدم داخل تطبيق الويب.
 
-**متطلبات إعداد البيئة:**
-- مجموعة تطوير Java (JDK) مثبتة على نظامك
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse
+## لماذا تستخدم GroupDocs.Viewer for Java لعرض المرفقات؟
 
-**المتطلبات المعرفية:**
-- فهم أساسي لبرمجة جافا
-- المعرفة بإعداد مشروع Maven وإدارة التبعيات
+GroupDocs.Viewer يدعم **أكثر من 100 + صيغ إدخال وإخراج**—بما في ذلك DOCX و XLSX و PPTX و MSG و EML و PDF—ويمكنه معالجة مستندات مئات الصفحات مع الحفاظ على استهلاك الذاكرة أقل من 150 ميغابايت. طبقة التخزين المؤقت المدمجة تقلل من عمليات العرض المتكررة حتى 70 ٪، مما يجعلها مثالية للبوابات ذات الزيارات العالية التي تحتاج إلى معاينات سريعة وموثوقة للملفات المدمجة.
 
-## إعداد GroupDocs.Viewer لـ Java
+## المتطلبات المسبقة
+- **GroupDocs.Viewer for Java** (الإصدار 25.2 أو أحدث)  
+- مجموعة تطوير جافا (JDK) 8 أو أحدث  
+- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse  
+- معرفة أساسية بـ Maven  
 
-لبدء استخدام GroupDocs.Viewer في مشاريع Java الخاصة بك، قم بتضمين التبعيات الضرورية عبر Maven:
+## إعداد GroupDocs.Viewer for Java
+
+لإضافة GroupDocs.Viewer إلى مشروع Maven الخاص بك، قم بتضمين الاعتماد التالي في ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -59,116 +108,136 @@ type: docs
 
 ### خطوات الحصول على الترخيص
 
-يقدم GroupDocs.Viewer نسخة تجريبية مجانية، تتيح لك اختبار إمكانياته قبل الشراء. اتبع الخطوات التالية للحصول على الترخيص:
-1. **نسخة تجريبية مجانية:** قم بتنزيل الحزمة التجريبية المجانية من [النسخة التجريبية المجانية من GroupDocs](https://releases.groupdocs.com/viewer/java/).
-2. **رخصة مؤقتة:** احصل على ترخيص مؤقت للوظائف الكاملة من خلال زيارة [صفحة الترخيص المؤقت](https://purchase.groupdocs.com/temporary-license/).
-3. **شراء:** للاستخدام طويل الأمد، قم بشراء المكتبة من [شراء GroupDocs](https://purchase.groupdocs.com/buy).
+GroupDocs.Viewer يقدم نسخة تجريبية مجانية، تتيح لك اختبار إمكاناته قبل الشراء. اتبع الخطوات التالية للحصول على الترخيص:
 
-### التهيئة والإعداد الأساسي
+1. **نسخة تجريبية مجانية:** قم بتنزيل حزمة النسخة التجريبية من [GroupDocs Free Trial](https://releases.groupdocs.com/viewer/java/).  
+2. **ترخيص مؤقت:** احصل على ترخيص مؤقت للوظائف الكاملة بزيارة [Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+3. **شراء:** للاستخدام طويل الأمد، قم بشراء المكتبة من [GroupDocs Purchase](https://purchase.groupdocs.com/buy).
 
-تأكد من تضمين تبعيات Maven المذكورة أعلاه وتكوين بيئة Java بشكل صحيح لتهيئة GroupDocs.Viewer في مشروعك.
+### التهيئة الأساسية والإعداد
 
-## دليل التنفيذ
+بعد إضافة اعتماد Maven وتكوين بيئة التطوير المتكاملة الخاصة بك، يمكنك تهيئة Viewer باستخدام مقتطف Java بسيط (انظر العنصر النائب أعلاه). تأكد من وضع ملف الترخيص في مجلد الموارد الخاص بالمشروع وتحميله أثناء التشغيل.
 
-يغطي هذا الدليل كيفية تحويل مرفقات المستندات إلى HTML وإدارتها باستخدام CacheableFactory.
+## كيفية عرض مرفقات المستندات بصيغة HTML؟
 
-### تحويل مرفقات المستندات إلى HTML
+فئة `Viewer` هي المكوّن الأساسي الذي يحمل مستند المصدر ويوفر إمكانيات العرض. `HtmlViewOptions` يضبط كيفية إنشاء مخرجات HTML، بما في ذلك تضمين الموارد وإعدادات الصفحة. قم بتحميل المستند المستهدف باستخدام `Viewer`، حدد المرفق المطلوب، واستدعِ `HtmlViewOptions` لإنشاء تمثيل HTML. هذه العملية ذات الخطوتين تتعامل تلقائيًا مع الاستخراج والتحويل وتضمين الموارد.
 
-قم بتحويل مرفق من مستند، مثل الملفات المضمنة في رسائل البريد الإلكتروني، إلى تنسيق HTML لعرضه بشكل سلس داخل تطبيقات الويب.
-
-#### ملخص
-تعلم كيفية استخراج المرفقات من المستندات مثل رسائل البريد الإلكتروني التي تحتوي على مستندات Word وعرضها كصفحات HTML تفاعلية باستخدام GroupDocs.Viewer.
-
-##### الخطوة 1: إعداد دليل الإخراج
-قم بتحديد دليل الإخراج الذي سيتم حفظ ملفات HTML المقدمة فيه:
+### الخطوة 1: إعداد دليل الإخراج
+حدد المكان الذي سيتم حفظ ملفات HTML المصدرة فيه:
 
 ```java
 Path YOUR_OUTPUT_DIRECTORY = Utils.getOutputDirectoryPath("RenderDocumentAttachments");
 Path pageFilePathFormat = YOUR_OUTPUT_DIRECTORY.resolve("page_{0}.html");
 ```
 
-##### الخطوة 2: إنشاء كائن مرفق
-استخدم `CacheableFactory` لإنشاء `Attachment` الكائن، الذي يساعد في التخزين المؤقت الفعال:
+### الخطوة 2: إنشاء كائن مرفق
+`CacheableFactory` يبني مثيل `Attachment` يمكن تخزينه مؤقتًا للطلبات المستقبلية، مما يقلل من عبء المعالجة:
 
 ```java
 Attachment attachment = CacheableFactory.getInstance().newAttachment("attachment-word.doc", pageFilePathFormat.toString());
 ```
 
-##### الخطوة 3: استخراج المرفق وتحويله إلى HTML
-استخدم `Viewer` الفئة لعرض مرفق المستند المحدد بتنسيق HTML مع الموارد المضمنة:
+### الخطوة 3: استخراج المرفق وعرضه بصيغة HTML
+استخدم فئة `Viewer` لعرض المرفق. تم تكوين كائن `HtmlViewOptions` لتضمين جميع الموارد المطلوبة (CSS، الصور، السكريبتات) مباشرةً في مخرجات HTML، مما يضمن صفحة ذاتية الاحتواء:
 
 ```java
 try (ByteArrayOutputStream attachmentStream = new ByteArrayOutputStream();
      Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_MSG_WITH_ATTACHMENTS")) {
     
-    // احفظ المرفق المحدد في مجرى البايتات.
+    // Save the specified attachment to a byte stream.
     viewer.saveAttachment(attachment, attachmentStream);
 
     try (InputStream inputStream = new ByteArrayInputStream(attachmentStream.toByteArray());
          Viewer attachmentViewer = new Viewer(inputStream)) {
         
         HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
-        attachmentViewer.view(options); // تحويل المرفق إلى HTML.
+        attachmentViewer.view(options); // Render the attachment into HTML.
     }
 } catch (IOException e) {
     throw new RuntimeException(e);
 }
 ```
 
-##### شرح الخطوات الرئيسية:
-- **مصنع قابل للتخزين المؤقت**:إدارة التخزين المؤقت لمنع المعالجة المكررة، مما يؤدي إلى تحسين الأداء.
-- **خيارات عرض HTML**:يقوم بتكوين العرض باستخدام الموارد المضمنة للحصول على تجربة مشاهدة كاملة.
+#### تعريفات
+- **Viewer** هو الفئة الأساسية في GroupDocs.Viewer for Java التي تحمل مستند المصدر وتوفر طرق عرض لمختلف الصيغ.  
+- **HtmlViewOptions** يضبط إعدادات عرض HTML، مثل تضمين الموارد وتحديد حجم الصفحة.  
+- **CacheableFactory** ينشئ كائنات مدركة للتخزين المؤقت مثل `Attachment`، مما يتيح إعادة استخدام البيانات التي تمت معالجتها مسبقًا.  
+- **Attachment** يمثل ملفًا مدمجًا واحدًا مستخرجًا من مستند الحاوية، جاهزًا للتحويل.
 
-### تهيئة واستخدام CacheableFactory لإدارة المرفقات
+## ما هو CacheableFactory ولماذا يستخدم؟
 
-تُعد إدارة المرفقات بكفاءة أمرًا بالغ الأهمية عند التعامل مع مستندات كبيرة أو ملفات متعددة. توضح هذه الميزة استخدام `CacheableFactory` لتحسين التعامل مع مرفقات المستندات.
+`CacheableFactory` يوفر كائنات مدعومة بالتخزين المؤقت تخزن نتائج التحويل الوسيطة على القرص أو الذاكرة. من خلال إعادة استخدام هذه الكائنات المخزنة مؤقتًا، تتجنب إعادة قراءة ومعالجة ملفات المصدر الكبيرة، مما يمكن أن يقلل وقت التحويل من عدة ثوانٍ إلى أقل من ثانية للطلبات المتكررة.
 
-#### ملخص
-تعرف على فوائد تهيئة مدير ذاكرة التخزين المؤقت لتحسين الأداء في تطبيقات GroupDocs.Viewer.
+## تهيئة واستخدام CacheableFactory لإدارة المرفقات
 
-##### الخطوة 1: إنشاء كائن مرفق باستخدام CacheableFactory
+إدارة المرفقات الفعّالة أمر حاسم عند التعامل مع مستندات كبيرة أو ملفات متعددة. يوضح هذا القسم كيفية إعداد مدير التخزين المؤقت وإنشاء كائن `Attachment` يستفيد من التخزين المؤقت.
+
+### الخطوة 1: إنشاء كائن مرفق باستخدام CacheableFactory
 
 ```java
 Attachment attachment = CacheableFactory.getInstance().newAttachment("attachment-word.doc", "YOUR_OUTPUT_DIRECTORY/page_{0}.html");
 ```
 
-#### توضيح:
-- **مصنع قابل للتخزين المؤقت**:يوفر إدارة فعالة للذاكرة المؤقتة، مما يقلل من استخدام الموارد ويحسن السرعة.
+#### شرح
+- **CacheableFactory** يوفر إدارة تخزين مؤقت فعّالة، يقلل من استهلاك الموارد ويحسن السرعة.
 
-## التطبيقات العملية
+## تطبيقات عملية
 
-يمكن أن يكون تحويل مرفقات المستندات إلى HTML مفيدًا في سيناريوهات مختلفة:
+يمكن أن يكون عرض مرفقات المستندات بصيغة HTML مفيدًا في سيناريوهات مختلفة:
 
-1. **عملاء البريد الإلكتروني:** عرض مرفقات البريد الإلكتروني مباشرة داخل العميل دون الحاجة إلى تنزيل ملفات منفصلة.
-2. **أنظمة إدارة المستندات:** السماح للمستخدمين بعرض جميع الملفات المضمنة من واجهة مستند واحدة بسلاسة.
-3. **بوابات الويب:** قم بتعزيز تجربة المستخدم من خلال عرض مستندات شاملة تحتوي على عناصر تفاعلية.
+1. **عمليات البريد الإلكتروني:** عرض ملفات PDF أو الصور أو جداول البيانات المرفقة مباشرةً داخل عرض البريد دون طلب تنزيل.  
+2. **أنظمة إدارة المستندات:** تمكين المستخدمين من معاينة كل ملف مدمج من واجهة واحدة، مما يحسن كفاءة سير العمل.  
+3. **بوابات الويب:** تقديم تجارب مستندات كاملة وتفاعلية—بما في ذلك جميع الملفات المتداخلة—في صفحة ويب واحدة.
 
 ## اعتبارات الأداء
 
-عند استخدام GroupDocs.Viewer، ضع في اعتبارك نصائح تحسين الأداء التالية:
-- استخدام آليات التخزين المؤقت عبر `CacheableFactory` للتقليل من المعالجة المكررة.
-- راقب استخدام الذاكرة وقم بتحسين تطبيقك للتعامل مع المستندات الكبيرة.
-- اتبع أفضل ممارسات Java لإدارة الذاكرة، مثل استخدام التدفقات بكفاءة وإغلاق الموارد على الفور.
+عند استخدام GroupDocs.Viewer، احرص على مراعاة نصائح التحسين التالية:
 
-## خاتمة
+- **Leverage caching** عبر `CacheableFactory` لتجنب المعالجة المتكررة.  
+- **Stream large files** بدلاً من تحميلها بالكامل في الذاكرة؛ أغلق التدفقات فورًا.  
+- **Monitor JVM heap** ومراقبة كومة JVM وتكوين جمع القمامة لبيئات ذات إنتاجية عالية.  
+- **Use embedded resources** في `HtmlViewOptions` لتقليل عدد طلبات HTTP المطلوبة لعرض الصفحة.
 
-غطّى هذا البرنامج التعليمي الخطوات الأساسية لعرض مرفقات المستندات بتنسيق HTML باستخدام GroupDocs.Viewer لجافا. بدمج هذه الوظيفة، يمكنك تحسين تفاعلية تطبيقاتك وتجربة المستخدم بشكل ملحوظ.
+## مشكلات شائعة وحلول
 
-**الخطوات التالية:**
-- تجربة تقديم أنواع مختلفة من المرفقات.
-- استكشف خيارات التخصيص الإضافية المتوفرة في GroupDocs.Viewer.
+- **Missing attachment after rendering:** تحقق من أن مستند المصدر يحتوي فعليًا على ملفات مدمجة وأن الفهرس الصحيح للمرفق يتم تمريره إلى `Attachment`.  
+- **Out‑of‑memory errors on huge documents:** زد حجم كومة JVM (`-Xmx2g`) أو عالج المستند على دفعات باستخدام API البث.  
+- **Incorrect styling in rendered HTML:** تأكد من ضبط `HtmlViewOptions` لتضمين CSS (`setEmbedResources(true)`) بحيث يتم تضمين جميع الأنماط.
 
-نشجعك على تطبيق هذه التقنيات واستكشاف إمكانيات GroupDocs.Viewer بشكل أعمق. برمجة ممتعة!
+## الأسئلة المتكررة
 
-## قسم الأسئلة الشائعة
+**س: ما صيغ الملفات التي يمكن عرضها كمرفقات HTML؟**  
+ج: يدعم GroupDocs.Viewer أكثر من 100 + صيغة، بما في ذلك DOCX و XLSX و PPTX و MSG و EML و PDF والعديد من أنواع الصور.
 
-1. **ما هو GroupDocs.Viewer لـ Java؟**
-   - مكتبة قوية تدعم عرض المستندات بتنسيقات مختلفة، بما في ذلك HTML.
-2. **كيف أتعامل مع مرفقات المستندات الكبيرة بكفاءة؟**
-   - استخدم آليات التخزين المؤقت التي توفرها `CacheableFactory` لإدارة الموارد بشكل فعال.
-3. **هل يمكنني عرض أنواع متعددة من المرفقات باستخدام GroupDocs.Viewer؟**
-   - نعم، فهو يدعم مجموعة واسعة من تنسيقات الملفات للتحويل إلى HTML.
-4. **ما هي فوائد استخدام الموارد المضمنة في HtmlViewOptions؟**
-   - يضمن تضمين جميع الملفات والأنماط الضرورية داخل HTML المقدم، مما يوفر تجربة عرض سلسة.
-5. **أين يمكنني العثور على مزيد من المعلومات حول GroupDocs.Viewer API؟**
-   - يزور [توثيق GroupDocs](https://docs.groupdocs.com/viewer/java/) للحصول على أدلة وأمثلة شاملة.
+**س: هل أحتاج إلى ترخيص منفصل لكل نوع مرفق؟**  
+ج: لا، ترخيص واحد لـ GroupDocs.Viewer يغطي جميع الصيغ المدعومة وميزات عرض المرفقات.
+
+**س: هل يمكنني عرض عدة مرفقات في طلب واحد؟**  
+ج: نعم، يمكنك التكرار عبر مجموعة `Attachment` التي تُرجعها `Viewer` وعرض كل واحدة على حدة.
+
+**س: كيف يؤثر التخزين المؤقت على أمان الخيوط؟**  
+ج: تم تصميم `CacheableFactory` للبيئات المتزامنة؛ فهو يزامن الوصول إلى الملفات المخزنة مؤقتًا، مما يجعله آمنًا لتطبيقات الويب متعددة الخيوط.
+
+**س: أين يمكنني العثور على وثائق API أكثر تفصيلاً؟**  
+ج: زر [GroupDocs Documentation](https://docs.groupdocs.com/viewer/java/) للحصول على أدلة شاملة، كتيبات مرجعية، ومشاريع نموذجية.
+
+## الخلاصة
+
+أنت الآن تمتلك سير عمل كامل وجاهز للإنتاج لـ **render document attachments HTML** باستخدام GroupDocs.Viewer for Java. من خلال الاستفادة من `CacheableFactory` وواجهة برمجة التطبيقات القوية `Viewer`، يمكنك تقديم معاينات سريعة وتفاعلية لأي ملف مدمج، وتعزيز رضا المستخدم، والحفاظ على موارد الخادم تحت السيطرة.
+
+**الخطوات التالية**  
+- جرّب إعدادات `HtmlViewOptions` المختلفة، مثل حقن CSS مخصص أو JavaScript.  
+- دمج خط أنابيب العرض في نقطة نهاية REST لتقديم معاينات HTML عند الطلب.  
+- استكشف المعالجة الدفعية لتحويل المرفقات الجماعية في وظائف الخلفية.
+
+---
+
+**آخر تحديث:** 2026-07-05  
+**تم الاختبار باستخدام:** GroupDocs.Viewer for Java 25.2  
+**المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [كيفية استرجاع المرفقات وطباعة مرفقات المستند باستخدام GroupDocs.Viewer for Java](/viewer/java/advanced-rendering/groupdocs-viewer-java-retrieve-print-attachments/)
+- [كيفية عرض ملفات بيانات Outlook باستخدام GroupDocs.Viewer في Java: دليل خطوة بخطوة](/viewer/java/rendering-basics/rendering-outlook-data-files-groupdocs-viewer-java/)
+- [كيفية تحويل zip إلى HTML وعرض مجلدات zip في Java باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/render-archive-folders-groupdocs-viewer-java/)

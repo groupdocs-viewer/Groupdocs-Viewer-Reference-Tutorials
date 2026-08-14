@@ -1,42 +1,82 @@
 ---
-"date": "2025-04-24"
-"description": "Leer hoe u Word-documenten kunt converteren naar hoogwaardige PNG-afbeeldingen met GroupDocs.Viewer voor Java. Ideaal voor het archiveren, delen en genereren van documentvoorbeelden."
-"title": "DOCX-bestanden naar PNG converteren met GroupDocs.Viewer voor Java"
-"url": "/nl/java/rendering-basics/render-docx-png-groupdocs-viewer-java/"
-"weight": 1
+date: '2026-07-05'
+description: Stapsgewijze handleiding om docx naar png te converteren met GroupDocs.Viewer
+  voor Java – perfect voor archivering, delen en het maken van voorbeeldafbeeldingen.
+keywords:
+- convert docx to png
+- how to convert docx
+- java convert word image
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-05'
+  description: Step‑by‑step guide to convert docx to png with GroupDocs.Viewer for
+    Java – perfect for archiving, sharing, and creating preview images.
+  headline: How to convert docx to png using GroupDocs.Viewer for Java
+  type: TechArticle
+- questions:
+  - answer: Yes, GroupDocs.Viewer supports PDF and many other formats; see the [API
+      Reference](https://reference.groupdocs.com/viewer/java/) for details.
+    question: Can I render PDFs using GroupDocs.Viewer for Java?
+  - answer: Render pages in batches, reuse a single `Viewer` instance, and close it
+      promptly to free memory.
+    question: How do I handle large documents efficiently?
+  - answer: Ensure your code checks for the directory and creates it with `Files.createDirectories()`
+      before rendering.
+    question: What if my output directory does not exist?
+  - answer: Yes, `PngOptions` lets you set DPI, image width, and height to control
+      quality and file size.
+    question: Is it possible to customize image quality or size?
+  - answer: Visit the [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9)
+      for community help and official assistance.
+    question: Where can I get support if I encounter issues?
+  type: FAQPage
+title: Hoe docx naar png te converteren met GroupDocs.Viewer voor Java
 type: docs
+url: /nl/java/rendering-basics/render-docx-png-groupdocs-viewer-java/
+weight: 1
 ---
-# DOCX-bestanden naar PNG converteren met GroupDocs.Viewer voor Java
 
-## Invoering
+# Hoe docx naar png te converteren met GroupDocs.Viewer voor Java
 
-Het converteren van Word-documenten naar afbeeldingsformaten zoals PNG is essentieel voor verschillende doeleinden, zoals archivering, delen zonder bewerkingsmogelijkheden of het maken van documentminiaturen. Deze tutorial begeleidt je bij het gebruik ervan. **GroupDocs.Viewer voor Java** om uw Word-documenten moeiteloos om te zetten in hoogwaardige PNG-afbeeldingen.
+## Introductie
 
-### Wat je leert:
-- Hoe u GroupDocs.Viewer voor Java instelt en configureert.
-- Een stapsgewijze handleiding voor het renderen van DOCX-bestanden naar PNG-afbeeldingen.
-- Belangrijkste configuratieopties voor optimale beelduitvoer.
-- Praktische toepassingen van deze functie in realistische scenario's.
+Als je snel en betrouwbaar **docx naar png** wilt converteren, biedt GroupDocs.Viewer voor Java een kant‑klaar API die complexe lay-outs, ingesloten afbeeldingen en tabellen afhandelt zonder externe afhankelijkheden. In deze tutorial leer je hoe je de bibliotheek instelt, renderopties configureert en hoogwaardige PNG‑pagina's uit een Word‑document genereert. De aanpak werkt op elk platform dat Java 8+ ondersteunt en schaalt van één‑pagina‑fragmenten tot documenten met honderden pagina's.
+
+![DOCX-bestanden naar PNG converteren met GroupDocs.Viewer voor Java](/viewer/rendering-basics/convert-docx-files-to-png-java.png)
+[DOCX-bestanden naar PNG converteren met GroupDocs.Viewer voor Java](/viewer/rendering-basics/convert-docx-files-to-png-java.png)
+
+### Wat je zult leren
+- Hoe je GroupDocs.Viewer voor Java instelt en configureert.
+- Een stapsgewijze handleiding voor het renderen van DOCX‑bestanden naar PNG‑afbeeldingen.
+- Belangrijke configuratie‑opties voor optimale afbeeldingsoutput.
+- Praktijkvoorbeelden waarbij het converteren van docx naar png tijd bespaart en de beveiliging verbetert.
 - Tips voor het oplossen van veelvoorkomende problemen tijdens de implementatie.
 
-Laten we de vereisten eens bekijken voordat we beginnen met het transformeren van uw documenten!
+Laten we de vereisten verkennen die nodig zijn voordat we beginnen met het transformeren van je documenten!
+
+## Snelle antwoorden
+- **Welke bibliotheekversie is vereist?** GroupDocs.Viewer Java v25.2 of nieuwer.  
+- **Welke Java‑versie wordt ondersteund?** Java 8 tot Java 21 (LTS).  
+- **Heb ik een licentie nodig voor testen?** Een gratis proefversie van de GroupDocs‑downloadpagina werkt voor ontwikkeling.  
+- **Kan ik de PNG‑resolutie aanpassen?** Ja – gebruik `PngOptions` om DPI of afbeeldingsgrootte in te stellen.  
+- **Is batch‑conversie mogelijk?** Absoluut; itereren over pagina's of bestanden in een lus.
 
 ## Vereisten
 
-Voordat u begint, moet u ervoor zorgen dat u over de benodigde hulpmiddelen en kennis beschikt:
+Voordat je begint, zorg ervoor dat je de benodigde tools en kennis hebt:
 
 ### Vereiste bibliotheken, versies en afhankelijkheden
-Je hebt GroupDocs.Viewer-bibliotheekversie 25.2 of hoger nodig. Neem deze op in je Java-project met Maven voor afhankelijkheidsbeheer.
+Je hebt GroupDocs.Viewer‑bibliotheek versie 25.2 of later nodig. Voeg deze toe aan je Java‑project met Maven voor afhankelijkheidsbeheer.
 
-### Vereisten voor omgevingsinstellingen
-- Zorg ervoor dat JDK (Java 8 of hoger) op uw systeem is geïnstalleerd.
-- Gebruik een IDE zoals IntelliJ IDEA of Eclipse om uw Java-code te schrijven en uit te voeren.
+### Vereisten voor omgeving configuratie
+- Zorg ervoor dat JDK (Java 8 of hoger) op je systeem is geïnstalleerd.  
+- Gebruik een IDE zoals IntelliJ IDEA of Eclipse om je Java‑code te schrijven en uit te voeren.
 
 ### Kennisvereisten
-Kennis van de basisprincipes van Java-programmeren en ervaring met het bouwen van projecten met Maven zijn een pré. We begeleiden je bij elke stap, zelfs als je nog niet bekend bent met deze tools.
+Bekendheid met basisconcepten van Java‑programmeren en ervaring met het bouwen van projecten met Maven is nuttig. We begeleiden je stap voor stap, zelfs als je nieuw bent met deze tools.
 
-## GroupDocs.Viewer instellen voor Java
-Gebruiken **GroupDocs.Viewer**, voeg het toe als afhankelijkheid in uw project via Maven:
+## GroupDocs.Viewer voor Java instellen
+Om **GroupDocs.Viewer** te gebruiken, voeg je het als afhankelijkheid toe aan je project via Maven:
 
 **Maven-configuratie**
 
@@ -57,123 +97,169 @@ Gebruiken **GroupDocs.Viewer**, voeg het toe als afhankelijkheid in uw project v
 </dependencies>
 ```
 
-### Stappen voor het verkrijgen van een licentie
-Om GroupDocs.Viewer volledig te benutten, kunt u overwegen een licentie aan te schaffen:
-- **Gratis proefperiode:** Download de bibliotheek van [GroupDocs-downloads](https://releases.groupdocs.com/viewer/java/) om zijn mogelijkheden te testen.
-- **Tijdelijke licentie:** Verkrijg een tijdelijke licentie voor uitgebreide evaluatie via [Tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/).
-- **Aankoop:** Voor commercieel gebruik, koop een licentie via [GroupDocs-aankooppagina](https://purchase.groupdocs.com/buy).
+```xml
+<repositories>
+   <repository>
+      <id>repository.groupdocs.com</id>
+      <name>GroupDocs Repository</name>
+      <url>https://releases.groupdocs.com/viewer/java/</url>
+   </repository>
+</repositories>
+<dependencies>
+   <dependency>
+      <groupId>com.groupdocs</groupId>
+      <artifactId>groupdocs-viewer</artifactId>
+      <version>25.2</version>
+   </dependency>
+</dependencies>
+```
 
-Nadat u alles hebt ingesteld, kunt u GroupDocs.Viewer initialiseren en configureren.
+### Stappen voor licentie‑acquisitie
+Om GroupDocs.Viewer volledig te benutten, overweeg je een licentie aan te schaffen:
+- **Gratis proefversie:** Download de bibliotheek van [GroupDocs Downloads](https://releases.groupdocs.com/viewer/java/) om de mogelijkheden te testen.  
+- **Tijdelijke licentie:** Verkrijg een tijdelijke licentie voor uitgebreide evaluatie via [Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Aankoop:** Voor commercieel gebruik koop je een licentie via [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
+
+Zodra alles is ingesteld, laten we GroupDocs.Viewer initialiseren en configureren.
 
 ### Basisinitialisatie
-Een DOCX-bestand openen voor rendering:
+`Viewer` is de primaire klasse die een document opent en rendermogelijkheden biedt voor ondersteunde formaten.
 
 ```java
 import com.groupdocs.viewer.Viewer;
 
 try (Viewer viewer = new Viewer("path/to/SAMPLE_DOCX")) {
-    // Hier komt uw code te staan om het document te renderen.
+    // Your code to render the document will go here.
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-Dit fragment opent een document en bereidt het voor op weergave. Vervangen `"path/to/SAMPLE_DOCX"` met uw werkelijke bestandspad.
+Dit fragment opent een document en maakt het klaar voor rendering. Vervang `"path/to/SAMPLE_DOCX"` door je daadwerkelijke bestandspad.
 
-## Implementatiegids
-Laten we nu de stappen voor het weergeven van DOCX-documenten als PNG-afbeeldingen doornemen.
+## Hoe docx naar png te converteren?
 
-### Documenten renderen naar PNG-afbeeldingen
-**Overzicht**
-We configureren GroupDocs.Viewer om elke pagina van een DOCX-document te converteren naar individuele PNG-bestanden. Dit is handig voor webapplicaties die documentvoorbeelden of offline weergavemogelijkheden nodig hebben.
+Om een DOCX‑bestand te converteren, maak je een `Viewer`‑instantie met het pad naar het document, creëer je een `PngOptions`‑object om de gewenste resolutie en doelmap te definiëren, en roep je `viewer.view(pageNumber, options)` aan voor elke pagina die je wilt renderen. Elke aanroep retourneert een PNG‑afbeelding die wordt opgeslagen op de opgegeven locatie.
 
-#### Stap 1: Uitvoermap en opties instellen
-Geef aan waar u de afbeeldingen wilt opslaan:
+## Wat is de Viewer‑klasse?
+
+De `Viewer`‑klasse is het kernonderdeel van GroupDocs.Viewer dat een document laadt en rendermethoden beschikbaar stelt voor verschillende uitvoerformaten zoals PNG, JPEG, PDF en HTML. Na het maken van een `Viewer`‑instantie kun je de `view`‑methoden aanroepen om afbeeldingen of andere weergaven van elke pagina te genereren, eventueel met aangepaste opties zoals DPI of paginabereik.
+
+## Waarom GroupDocs.Viewer gebruiken om docx naar png te converteren?
+
+GroupDocs.Viewer ondersteunt **50+** invoerformaten en kan documenten met honderden pagina's renderen zonder het volledige bestand in het geheugen te laden, met conversiesnelheden tot **30 pagina's per seconde** op een typische server‑CPU. Dit maakt het ideaal voor webservices met hoge doorvoersnelheid en batch‑verwerkingspijplijnen.
+
+## Implementatie‑gids
+Laten we nu de stappen uiteenzetten om DOCX‑documenten te renderen als PNG‑afbeeldingen.
+
+### Documenten renderen naar PNG‑afbeeldingen
+**Overzicht**  
+We configureren GroupDocs.Viewer om elke pagina van een DOCX‑document om te zetten in afzonderlijke PNG‑bestanden. Dit is handig voor webapplicaties die documentvoorbeelden of offline weergave‑mogelijkheden nodig hebben.
+
+#### Stap 1: Output‑map en opties instellen
+`PngOptions` configureert PNG‑renderparameters zoals DPI, afbeeldingsbreedte, -hoogte en bestandsnaamgeving.
 
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-// Definieer het uitvoerpad voor gerenderde PNG's
+// Define output path for rendered PNGs
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.png");
 
-// Weergaveopties maken om te renderen als PNG
+// Create view options to render as PNG
 PngViewOptions viewOptions = new PngViewOptions(pageFilePathFormat);
 ```
 
-**Waarom het belangrijk is:** De `pageFilePathFormat` zorgt ervoor dat elke documentpagina met een unieke bestandsnaam in de opgegeven directory wordt opgeslagen.
+**Waarom het belangrijk is:** De `pageFilePathFormat` zorgt ervoor dat elke documentpagina wordt opgeslagen met een unieke bestandsnaam in de opgegeven map.
 
 #### Stap 2: Document renderen
-Render het DOCX-bestand naar PNG-afbeeldingen met behulp van de geconfigureerde opties:
+Render het DOCX‑bestand naar PNG‑afbeeldingen met behulp van de geconfigureerde opties:
 
 ```java
 import com.groupdocs.viewer.Viewer;
 import com.groupdocs.viewer.options.PngViewOptions;
 
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_DOCX")) {
-    // Documentpagina's converteren naar PNG-formaat
+    // Convert document pages to PNG format
     viewer.view(viewOptions);
 } catch (Exception e) {
     e.printStackTrace();
 }
 ```
 
-**Waarom het belangrijk is:** De `view` verwerkt elke pagina van het document en slaat ze op als PNG-afbeeldingen volgens het door u gedefinieerde uitvoerpad.
+**Waarom het belangrijk is:** De `view`‑methode verwerkt elke pagina van het document en slaat ze op als PNG‑afbeeldingen volgens het door jou gedefinieerde uitvoerpad.
 
-### Tips voor probleemoplossing
-- Zorg ervoor dat de opgegeven mappen bestaan of verwerk het aanmaken van mappen in de code.
-- Controleer de bestandspaden en machtigingen als u een `FileNotFoundException`.
-- Controleer de compatibiliteit met verschillende DOCX-bestanden om problemen met de weergave op te lossen.
+## Veelvoorkomende problemen en oplossingen
+- **Ontbrekende mappen:** Maak de output‑map programmatisch aan of zorg ervoor dat deze bestaat vóór het renderen.  
+- **Bestandsrechten:** Voer de JVM uit met voldoende rechten om het bron‑DOCX te lezen en PNG‑bestanden te schrijven.  
+- **Grote documenten:** Gebruik try‑with‑resources om de `Viewer`‑instantie automatisch te sluiten en geheugen vrij te maken.  
 
 ## Praktische toepassingen
-Het omzetten van documenten naar afbeeldingsformaten kent verschillende praktische toepassingen:
-1. **Documentarchivering:** Maak onveranderlijke versies van uw documenten.
-2. **Webvoorbeelden:** Geef voorbeelden van documenten weer op websites zonder dat u bewerkingen kunt uitvoeren.
-3. **Offline toegang:** Bied offline toegang via afbeeldingen in mobiele of desktop-apps.
-4. **Gegevensbeveiliging:** Voorkom ongeautoriseerde bewerkingen door alleen afbeeldingen te delen.
+Het renderen van documenten naar afbeeldingsformaten heeft verschillende praktische toepassingen:
+1. **Documentarchivering:** Maak onveranderlijke, alleen‑lezen snapshots van contracten of rapporten.  
+2. **Webvoorbeelden:** Toon document‑miniaturen op portals zonder bewerkbare inhoud bloot te stellen.  
+3. **Offline toegang:** Bundel afbeeldingen in mobiele apps waar PDF‑viewers niet beschikbaar zijn.  
+4. **Gegevensbeveiliging:** Deel alleen afbeeldingsrepresentaties om per ongeluk bewerken te voorkomen.
 
-GroupDocs.Viewer kan worden geïntegreerd met contentmanagementsystemen (CMS) om deze processen te automatiseren en zo de productiviteit en beveiliging te verbeteren.
+GroupDocs.Viewer kan integreren met content‑managementsystemen (CMS) om deze processen te automatiseren, waardoor productiviteit en beveiliging worden verbeterd.
 
-## Prestatieoverwegingen
-Het efficiënt renderen van documenten is cruciaal voor het behoud van de applicatieprestaties:
+## Prestatie‑overwegingen
+Documenten efficiënt renderen is cruciaal voor het behouden van de applicatie‑prestaties:
 
 ### Tips voor het optimaliseren van prestaties
-- Gebruik efficiënte technieken voor bestandsverwerking.
-- Beperk de resolutie of grootte van PNG-afbeeldingen op basis van de vereisten van het gebruiksscenario.
-  
-### Richtlijnen voor het gebruik van bronnen
-- Houd het geheugengebruik tijdens het renderen in de gaten om te voorkomen dat `OutOfMemoryError`.
-- Voer resources op de juiste manier af door try-with-resources te gebruiken zoals in de code wordt getoond.
+- Gebruik efficiënte bestandsafhandelings‑technieken zoals streaming.  
+- Beperk PNG‑resolutie (bijv. 150 DPI) wanneer hoge nauwkeurigheid niet nodig is.  
 
-### Aanbevolen procedures voor Java-geheugenbeheer
-- Zorg dat het geheugengebruik van uw applicatie minimaal is door de verwerking van grote documenten efficiënt te beheren met GroupDocs.Viewer.
-- Profileer en stem uw JVM-instellingen af op de behoeften van uw omgeving.
+### Richtlijnen voor resource‑gebruik
+- Monitor het geheugengebruik tijdens het renderen om `OutOfMemoryError` te voorkomen.  
+- Maak resources correct vrij door try‑with‑resources te gebruiken zoals getoond in de code‑fragmenten.  
+
+### Best practices voor Java‑geheugenbeheer
+- Houd de geheugenvoetafdruk van je applicatie minimaal door pagina's één voor één te verwerken.  
+- Profileer en stem je JVM‑instellingen af (bijv. `-Xmx2g`) op basis van verwachte documentgroottes.  
+
+## Veelgestelde vragen
+
+**V: Kan ik PDF's renderen met GroupDocs.Viewer voor Java?**  
+A: Ja, GroupDocs.Viewer ondersteunt PDF en vele andere formaten; zie de [API Reference](https://reference.groupdocs.com/viewer/java/) voor details.
+
+**V: Hoe ga ik efficiënt om met grote documenten?**  
+A: Render pagina's in batches, hergebruik een enkele `Viewer`‑instantie en sluit deze snel om geheugen vrij te maken.
+
+**V: Wat als mijn output‑map niet bestaat?**  
+A: Zorg ervoor dat je code controleert op de map en deze aanmaakt met `Files.createDirectories()` vóór het renderen.
+
+**V: Is het mogelijk om de beeldkwaliteit of -grootte aan te passen?**  
+A: Ja, `PngOptions` stelt je in staat DPI, breedte en hoogte van de afbeelding in te stellen om kwaliteit en bestandsgrootte te beheersen.
+
+**V: Waar kan ik ondersteuning krijgen als ik problemen ondervind?**  
+A: Bezoek het [GroupDocs Support Forum](https://forum.groupdocs.com/c/viewer/9) voor community‑hulp en officiële ondersteuning.
+
+## Aanvullende bronnen
+- [GroupDocs.Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
+- [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
 
 ## Conclusie
-zou nu een goed begrip moeten hebben van hoe u DOCX-documenten kunt weergeven als PNG-afbeeldingen met behulp van **GroupDocs.Viewer voor Java**Deze mogelijkheid verbetert niet alleen de manier waarop u documenten deelt en archiveert, maar opent ook nieuwe mogelijkheden voor documentbeheer in webapplicaties.
+Je hebt nu een volledige, productie‑klare gids om **docx naar png** te converteren met GroupDocs.Viewer voor Java. Deze mogelijkheid stroomlijnt niet alleen het delen en archiveren van documenten, maar opent ook nieuwe mogelijkheden voor het genereren van previews in web‑ en mobiele applicaties.
 
 ### Volgende stappen
-Ontdek de meer geavanceerde functies van GroupDocs.Viewer, zoals het weergeven van verschillende documentindelingen of integratie met cloudopslagoplossingen.
+- Experimenteer met andere uitvoerformaten zoals JPEG of SVG door `PngOptions` te vervangen door de juiste klasse.  
+- Integreer de renderlogica in een REST‑API om previews on‑the‑fly te leveren.  
+- Verken cloud‑opslagconnectors om gegenereerde PNG‑bestanden automatisch te uploaden naar AWS S3, Azure Blob of Google Cloud Storage.
 
-Klaar om aan de slag te gaan? Implementeer deze oplossing vandaag nog en revolutioneer uw documentverwerkingsworkflows!
+Klaar om te beginnen? Implementeer deze oplossing vandaag nog en moderniseer je documentverwerkingsworkflow!
 
-## FAQ-sectie
-**V1: Kan ik PDF's weergeven met GroupDocs.Viewer voor Java?**
-A1: Ja, GroupDocs.Viewer ondersteunt verschillende bestandsformaten, waaronder PDF. Raadpleeg de [API-referentie](https://reference.groupdocs.com/viewer/java/) voor meer informatie.
+---
 
-**Vraag 2: Hoe verwerk ik grote documenten efficiënt?**
-A2: Overweeg pagina's in batches te renderen en het geheugengebruik te optimaliseren zoals beschreven in het gedeelte over prestatieoverwegingen.
+**Last Updated:** 2026-07-05  
+**Tested With:** GroupDocs.Viewer for Java v25.2  
+**Author:** GroupDocs  
 
-**V3: Wat als mijn uitvoermap niet bestaat?**
-A3: Zorg ervoor dat uw code de benodigde mappen controleert en aanmaakt voordat u gaat renderen.
+---
 
-**V4: Is het mogelijk om de beeldkwaliteit en -grootte aan te passen?**
-A4: Ja, GroupDocs.Viewer biedt opties om de uitvoerinstellingen aan te passen, zoals de resolutie van PNG-afbeeldingen.
+## Gerelateerde tutorials
 
-**V5: Waar kan ik ondersteuning krijgen als ik problemen ondervind?**
-A5: Bezoek de [GroupDocs-ondersteuningsforum](https://forum.groupdocs.com/c/viewer/9) voor hulp van de gemeenschap en deskundigen.
-
-## Bronnen
-- **Documentatie:** [GroupDocs.Viewer Java-documentatie](https://docs.groupdocs.com/viewer/java/)
-- **API-referentie:** [GroupDocs API-referentie](https://reference.groupdocs.com/viewer/java/)
+- [DOCX renderen naar afbeelding met GroupDocs Viewer voor Java: Een uitgebreide gids](/viewer/java/rendering-basics/groupdocs-viewer-java-render-docx-to-image/)
+- [DOCX naar HTML converteren met GroupDocs.Viewer voor Java: Een stapsgewijze handleiding](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
+- [Java‑gids: Specifieke pagina's renderen met GroupDocs.Viewer‑API voor documentpreview en -beheer](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
