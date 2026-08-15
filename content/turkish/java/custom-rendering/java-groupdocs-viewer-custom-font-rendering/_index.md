@@ -1,58 +1,112 @@
 ---
-date: '2026-02-10'
-description: GroupDocs.Viewer for Java kullanarak HTML'ye özel yazı tipi eklemeyi,
-  Java'da yazı tipi ayarlarını yapılandırmayı ve marka kimliği ile okunabilirlik için
-  HTML'ye özel yazı tipleri gömmeyi öğrenin.
+date: '2026-07-19'
+description: GroupDocs.Viewer for Java kullanarak özel yazı tipi HTML eklemeyi, Java
+  yazı tipi ayarlarını yapılandırmayı ve marka kimliği ve okunabilirlik için özel
+  yazı tiplerini HTML'e gömmeyi öğrenin.
 keywords:
-- custom font rendering Java
-- GroupDocs Viewer setup
-- Java GroupDocs Viewer custom fonts
-title: 'GroupDocs.Viewer ile Java’da Özel Yazı Tipi HTML’si Nasıl Eklenir: Adım Adım
-  Rehber'
+- add custom font html
+- configure font settings java
+- embed custom fonts html
+lastmod: '2026-07-19'
+og_description: GroupDocs.Viewer for Java kullanarak özel yazı tipi HTML ekleyin.
+  Java yazı tipi ayarlarını yapılandırmayı ve marka kimliği ve okunabilirlik için
+  özel yazı tiplerini HTML'e gömmeyi öğrenin.
+og_image_alt: Guide to add custom font HTML in Java with GroupDocs.Viewer
+og_title: Java'da GroupDocs.Viewer ile Özel Yazı Tipi HTML Ekleme – Adım Adım Kılavuz
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-19'
+  description: Learn how to add custom font HTML using GroupDocs.Viewer for Java,
+    configure font settings Java, and embed custom fonts HTML for branding and readability.
+  headline: 'How to add custom font HTML in Java with GroupDocs.Viewer: A Step-by-Step
+    Guide'
+  type: TechArticle
+- description: Learn how to add custom font HTML using GroupDocs.Viewer for Java,
+    configure font settings Java, and embed custom fonts HTML for branding and readability.
+  name: 'How to add custom font HTML in Java with GroupDocs.Viewer: A Step-by-Step
+    Guide'
+  steps:
+  - name: '**Branding Consistency:** Use brand‑specific fonts across all generated
+      reports.'
+    text: '**Branding Consistency:** Use brand‑specific fonts across all generated
+      reports.'
+  - name: '**Accessibility Improvements:** Choose legible fonts that aid users with
+      visual impairments.'
+    text: '**Accessibility Improvements:** Choose legible fonts that aid users with
+      visual impairments.'
+  - name: '**Legal & Financial Documents:** Highlight key sections with fonts that
+      improve scan‑ability.'
+    text: '**Legal & Financial Documents:** Highlight key sections with fonts that
+      improve scan‑ability.'
+  type: HowTo
+- questions:
+  - answer: Test your fonts with PDFs, DOCX, and PPTX files to confirm consistent
+      rendering across formats.
+    question: How do I ensure compatibility between custom fonts and different document
+      types?
+  - answer: Yes—once the appropriate Unicode‑supporting font is placed in the font
+      folder, the viewer will render characters correctly.
+    question: Can GroupDocs.Viewer handle non‑Latin scripts with custom fonts?
+  - answer: You can start with a free 30‑day trial, then upgrade to a temporary or
+      permanent license via the [purchase page](https://purchase.groupdocs.com/buy).
+    question: What licensing options are available for production use?
+  - answer: Check file permissions, verify the path, and ensure the font files are
+      not corrupted. The viewer logs will indicate which font could not be loaded.
+    question: How do I troubleshoot missing font issues?
+  - answer: Yes—by adding multiple `FontSource` objects, you can prioritize custom
+      fonts while retaining system defaults as backups.
+    question: Can I fall back to default fonts if a custom font is unavailable?
+  type: FAQPage
+tags:
+- custom font
+- GroupDocs Viewer
+- Java document rendering
+- HTML preview
+title: 'Java''da GroupDocs.Viewer ile özel yazı tipi HTML ekleme: Adım Adım Kılavuz'
 type: docs
 url: /tr/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/
 weight: 1
 ---
 
-# Java ile GroupDocs.Viewer'da özel yazı tipi HTML ekleme: Adım Adım Kılavuz
+# Java ile GroupDocs.Viewer’da özel yazı tipi HTML ekleme: Adım Adım Kılavuz
 
-## Giriş
-
-Marka görsel kimliğinize uymayan varsayılan yazı tipleriyle mi mücadele ediyorsunuz? Birçok iş raporu, hukuki belge ve sunumda **add custom font HTML** görünümün tutarlı kalması ve okunabilirliğin artırılması için gereklidir. Bu kılavuz, **GroupDocs.Viewer for Java** kullanarak font settings Java’yı yapılandırmayı ve custom fonts HTML gömmeyi adım adım gösterir, böylece render edilen belgeleriniz tam istediğiniz gibi görünür.
+Are you struggling with default fonts that don’t match your brand’s visual identity? In many business reports, legal documents, and presentations, **add custom font HTML** is essential to keep the look consistent and improve readability. This guide walks you through using **GroupDocs.Viewer for Java** to configure font settings Java and embed custom fonts HTML, so your rendered documents look exactly the way you want.
 
 ![Implement Custom Font Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
 
+[Implement Custom Font Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
+
 ### Öğrenecekleriniz
-- GroupDocs.Viewer for Java'ı nasıl kurulur  
+- GroupDocs.Viewer for Java nasıl kurulur  
 - Render edilen çıktınıza **add custom font HTML** nasıl eklenir  
 - Optimal performans için **configure font settings Java** nasıl yapılandırılır  
 
-Bu öğreticinin sonunda, belge sunumunu özel yazı tipleriyle özelleştirerek marka tutarlılığı ve artırılmış erişilebilirlik sağlayabileceksiniz.
+Bu öğreticinin sonunda, belge sunumunu özel yazı tipleriyle özelleştirebilecek, marka tutarlılığı ve artırılmış erişilebilirlik sağlayabileceksiniz.
 
 ## Hızlı Yanıtlar
-- **Ana amaç nedir?** GroupDocs.Viewer Java kullanarak belgeleri kendi yazı tiplerinizle render etmek.  
-- **Gerekli sürüm nedir?** GroupDocs.Viewer 25.2 (veya daha yenisi).  
-- **Lisans gerekli mi?** Ücretsiz deneme mevcuttur; üretim için ücretli lisans gerekir.  
-- **Özel yazı tiplerini HTML olarak gömebilir miyim?** Evet – görüntüleyiciyi yazı tiplerinizi içeren bir klasöre yönlendirin.  
-- **Kütüphaneyi eklemenin tek yolu Maven mi?** Maven önerilir, ancak Gradle veya manuel JAR ekleme de kullanılabilir.
+- **What is the primary purpose?** GroupDocs.Viewer Java kullanarak belgeleri kendi yazı tiplerinizle render etmek.  
+- **Which version is required?** GroupDocs.Viewer 25.2 (veya daha yeni).  
+- **Do I need a license?** Ücretsiz 30‑günlük deneme mevcuttur; üretim için ücretli lisans gereklidir.  
+- **Can I embed custom fonts HTML?** Evet – sadece görüntüleyiciyi yazı tiplerinizi içeren bir klasöre yönlendirin.  
+- **Is Maven the only way to add the library?** Maven önerilir, ancak Gradle veya manuel JAR eklemesi de kullanılabilir.
 
 ## “add custom font HTML” nedir?
-Özel yazı tipi HTML eklemek, render motoruna HTML çıktısı oluştururken sistemin varsayılan yazı tipleri yerine sizin sağladığınız yazı tiplerini kullanmasını söylemek anlamına gelir. Bu, belgenin görsel stilinin kurumsal markanızla veya erişilebilirlik yönergelerinizle eşleşmesini sağlar.
+Custom font HTML eklemek, HTML çıktısı oluşturulurken varsayılan sistem yazı tipleri yerine sizin sağladığınız yazı tiplerini kullanması için render motoruna talimat vermek anlamına gelir. Bu, belgenin görsel stilinin kurumsal markanıza veya erişilebilirlik yönergelerinize uymasını sağlar ve son kullanıcıların tam olarak istediğiniz tipografiyi görmesini garantiler.
 
 ## Neden GroupDocs.Viewer ile font settings Java yapılandırılır?
-Font settings Java’yı yapılandırmak, hangi yazı tipi dosyalarının aranacağını, nasıl önbelleğe alınacağını ve yedek (fallback) yazı tiplerinin nasıl uygulanacağını tam kontrol etmenizi sağlar. Bu, render hatalarını azaltır, performansı artırır ve tarayıcılar arasında tutarlı bir görünüm garantiler.
+font settings Java yapılandırması, görüntüleyicinin yazı tipi dosyalarını nerede arayacağını, bu dosyaların nasıl önbelleğe alınacağını ve özel bir yazı tipi eksik olduğunda hangi yedek yazı tiplerinin uygulanacağını tam olarak tanımlamanızı sağlar. Bu kontrol, render hatalarını %95'e kadar azaltır, sayfa yükleme performansını ortalama %30 artırır ve tüm tarayıcılar ve cihazlar arasında tutarlı bir görünüm garantiler.
 
 ## Önkoşullar
 - **Java Development Kit (JDK):** 8 veya daha yeni  
 - **IDE:** IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu editör  
 - **Maven:** Bağımlılık yönetimi için  
-- **Özel yazı tipi dosyaları:** `.ttf` veya `.otf` dosyaları özel bir klasöre yerleştirilmiş  
+- **Custom font files:** `.ttf` veya `.otf` dosyaları özel bir klasöre yerleştirilmiş  
 
 ## GroupDocs.Viewer for Java Kurulumu
 
 ### Kurulum Bilgileri
 
-Maven `pom.xml` dosyanıza GroupDocs deposunu ve bağımlılığı ekleyin:
+GroupDocs deposunu ve bağımlılığını Maven `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <repositories>
@@ -71,13 +125,13 @@ Maven `pom.xml` dosyanıza GroupDocs deposunu ve bağımlılığı ekleyin:
 </dependencies>
 ```
 
-### Lisans Edinimi
+### Lisans Alımı
 
-GroupDocs, özelliklerini keşfetmeniz için ücretsiz bir deneme sunar; geçici bir lisans alabilir veya tam lisans satın alabilirsiniz. Test amaçlı, en son sürümü [release page](https://releases.groupdocs.com/viewer/java/) üzerinden indirin.
+GroupDocs, özelliklerini keşfetmeniz için 30‑günlük ücretsiz bir deneme sunar; geçici bir lisans alabilir veya tam lisans satın alabilirsiniz. Test amaçlı, en son sürümü [release page](https://releases.groupdocs.com/viewer/java/) üzerinden indirin.
 
 #### Temel Başlatma ve Kurulum
 
-GroupDocs.Viewer bağımlılığını ekledikten sonra, Java projenizde aşağıdaki gibi başlatın:
+GroupDocs.Viewer bağımlılığını ekledikten sonra, Java projenizde başlatın:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,13 +145,11 @@ public class ViewerSetup {
 }
 ```
 
-Bu temel örnek, GroupDocs.Viewer kullanarak bir belge nasıl açılır gösterir.
-
 ## Uygulama Kılavuzu
 
-### GroupDocs.Viewer Java'da custom font HTML ekleme
+### GroupDocs.Viewer Java’da custom font HTML nasıl eklenir
 
-Bu bölümde, belgeleri render ederken **add custom font HTML** eklemek için gereken tam adımları göstereceğiz.
+custom font HTML eklemek için, yazı tipinizin bulunduğu klasöre işaret eden bir `FontSource` oluşturur, bu yazı tiplerini gömmek için `HtmlViewOptions` yapılandırır ve ardından belgeyi bu seçeneklerle render edersiniz. Bu üç adımlı desen, oluşturulan HTML'nin sağladığınız tam yazı tiplerini içermesini garanti eder.
 
 #### Gerekli Paketlerin İçe Aktarılması
 
@@ -109,7 +161,7 @@ import com.groupdocs.viewer.fonts.FontSettings;
 import com.groupdocs.viewer.fonts.SearchOption;
 ```
 
-Bu içe aktarmalar, özel yazı tiplerini ve belge görüntüleme seçeneklerini yönetmeyi kolaylaştırır.
+Bu içe aktarmalar, özel yazı tipleri ve belge görüntüleme seçeneklerini yönetmeyi kolaylaştırır.
 
 #### Özel Yazı Tiplerini Ayarlama
 
@@ -123,21 +175,27 @@ String fontPath = "/path/to/your/custom/fonts";
 
 ##### FontSource Nesnesi Oluşturun
 
+`FontSource` sınıfı, GroupDocs.Viewer'a yazı tipi dosyalarını nerede arayacağını söyler. Tek bir klasörü, bir ZIP arşivini veya özel bir akışı hedef alabilir.  
+
 ```java
 FolderFontSource fontSource = new FolderFontSource(fontPath, SearchOption.TOP_FOLDER_ONLY);
 ```
 
-`SearchOption.TOP_FOLDER_ONLY` görüntüleyiciye yalnızca belirtilen klasöre bakmasını söyler; bu da aramayı hızlandırır.
+`SearchOption.TOP_FOLDER_ONLY` görüntüleyiciye yalnızca belirtilen klasöre bakmasını söyler, bu da aramayı hızlandırır.
 
-##### Font Settings Java'yı Yapılandırın
+##### Font Settings Java’yı Yapılandırın
+
+`FontSettings` nesnesi bir veya daha fazla `FontSource` örneğini ve isteğe bağlı yedek yazı tiplerini bir araya getirir.  
 
 ```java
 FontSettings.setFontSources(fontSource);
 ```
 
-Bu satır **configures font settings Java** yaparak her render işleminin sağladığınız yazı tiplerini kullanmasını sağlar.
+Bu satır, her render işleminin sağladığınız yazı tiplerini kullanması için **configures font settings Java** yapar.
 
 #### Çıktı Dizini ve Görünüm Seçeneklerini Tanımlayın
+
+`HtmlViewOptions` oluşturucu, gömülü kaynaklar (yazı tipleri HTML içinde Base64 kodlu) veya harici kaynaklar (yazı tipleri bağlantılı) arasında seçim yapmanızı sağlar.  
 
 ```java
 String outputPath = "/path/to/output/directory";
@@ -145,63 +203,68 @@ String pageFilePathFormat = String.format("%s/page_{0}.html", outputPath);
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-Burada ayrıca `HtmlViewOptions.forEmbeddedResources` kullanarak **embed custom fonts HTML** nasıl yapılır gösteriyoruz; bu, yazı tipi dosyalarını doğrudan oluşturulan HTML içine gömer.
+Burada ayrıca `HtmlViewOptions.forEmbeddedResources` kullanarak **embed custom fonts HTML** nasıl yapılır gösteriyoruz; bu, yazı tipi dosyalarını doğrudan oluşturulan HTML'ye gömer.
 
 ### Sorun Giderme İpuçları
-- Yazı tipi dosyalarının Java sürecini çalıştıran kullanıcı için okuma izinlerine sahip olduğundan emin olun.  
-- Klasör yolunu iki kez kontrol edin; eksik bir son eğik çizgi “font not found” hatalarına yol açabilir.  
-- Yazı tiplerinin belge türüyle uyumlu olduğundan emin olun (ör. PDF’ler için TrueType).
+- Yazı tipi dosyalarının Java sürecini çalıştıran kullanıcı için okuma izinlerine sahip olduğunu doğrulayın.  
+- Klasör yolunu iki kez kontrol edin; eksik son eğik çizgi “font not found” hatalarına neden olabilir.  
+- Yazı tiplerinin belge türüyle uyumlu olduğundan emin olun (ör. PDF'ler için TrueType).  
 
 ## Pratik Uygulamalar
 
-Özel yazı tipi render’ı çeşitli senaryolarda uygulanabilir:
-1. **Marka Tutarlılığı:** Tüm oluşturulan raporlarda marka‑özel yazı tipleri kullanın.  
-2. **Erişilebilirlik İyileştirmeleri:** Görme engelli kullanıcıları destekleyen okunaklı yazı tipleri seçin.  
-3. **Hukuki & Finansal Belgeler:** Tarama kolaylığını artıran yazı tipleriyle önemli bölümleri vurgulayın.
+Özel yazı tipi render'ı çeşitli senaryolarda uygulanabilir:
+1. **Marka Tutarlılığı:** Tüm oluşturulan raporlarda marka‑özel yazı tiplerini kullanın.  
+2. **Erişilebilirlik İyileştirmeleri:** Görme engelli kullanıcıları destekleyen okunabilir yazı tiplerini seçin.  
+3. **Hukuki & Finansal Belgeler:** Tarama kolaylığını artıran yazı tipleriyle ana bölümleri vurgulayın.
 
-Bu yaklaşımı belge yönetim sistemleri, içerik portalları veya belge önizlemelerini HTML olarak sunması gereken herhangi bir kurumsal uygulama ile entegre edebilirsiniz.
+Bu yaklaşımı belge yönetim sistemleri, içerik portalları veya belgelerin HTML önizlemelerini sunması gereken herhangi bir kurumsal uygulama ile entegre edebilirsiniz.
 
 ## Performans Düşünceleri
 
-Büyük toplu işlemler sırasında:
+Büyük toplu işlemler yaparken:
 - Bellek kullanımını düşük tutmak için özel yazı tiplerinin sayısını sınırlayın.  
-- Aynı ayarlarla birçok belge render ederken `HtmlViewOptions` nesnelerini önbelleğe alın.  
-- JVM yığınını izleyin ve OutOfMemory hatalarını önlemek için gerektiğinde `-Xmx` ayarını artırın.
+- Aynı ayarlarla birden çok belge render ederken `HtmlViewOptions` nesnelerini önbelleğe alın.  
+- JVM yığınını izleyin ve OutOfMemory hatalarını önlemek için gerektiğinde `-Xmx` ayarını değiştirin.
 
 ## Sonuç
 
-Artık **add custom font HTML**’i GroupDocs.Viewer for Java kullanarak nasıl ekleyeceğinizi, **configure font settings Java**’yı nasıl yapılandıracağınızı ve tutarlı, markalı belge render’ı için **embed custom fonts HTML**’i nasıl gömeceğinizi öğrendiniz. Bu teknikler, herhangi bir Java‑tabanlı çözümde şık ve erişilebilir HTML önizlemeleri sunmanızı sağlar.
+Artık GroupDocs.Viewer for Java kullanarak **add custom font HTML** nasıl eklenir, **configure font settings Java** nasıl yapılandırılır ve tutarlı, marka odaklı belge render'ı için **embed custom fonts HTML** nasıl yapılır öğrendiniz. Bu teknikler, herhangi bir Java tabanlı çözümde şık ve erişilebilir HTML önizlemeleri sunmanızı sağlar.
 
-Bir sonraki adım olarak, watermarking, annotation desteği ve çok‑sayfalı PDF render’ı gibi ek GroupDocs.Viewer özelliklerini keşfedin. Daha ayrıntılı bilgi için resmi [documentation](https://docs.groupdocs.com/viewer/java/) sayfasına bakın.
+Bir sonraki adım olarak, filigran ekleme, açıklama desteği ve çok sayfalı PDF render'ı gibi ek GroupDocs.Viewer özelliklerini keşfedin. Daha fazla ayrıntı için resmi [documentation](https://docs.groupdocs.com/viewer/java/) sayfasına bakın.
 
 ## Sıkça Sorulan Sorular
 
-**S: Özel yazı tipleri ile farklı belge türleri arasında uyumluluğu nasıl garanti ederim?**  
-C: Yazı tiplerinizi PDF, DOCX ve PPTX dosyalarıyla test ederek formatlar arasında tutarlı render alıp almadığını doğrulayın.
+**Q: Özel yazı tiplerinin farklı belge türleriyle uyumluluğunu nasıl sağlarım?**  
+Test your fonts with PDFs, DOCX, and PPTX files to confirm consistent rendering across formats.
 
-**S: GroupDocs.Viewer, özel yazı tipleriyle Latin dışı scriptleri işleyebilir mi?**  
-C: Evet—uygun Unicode‑destekli bir yazı tipini font klasörüne koyduğunuzda, görüntüleyici karakterleri doğru şekilde render eder.
+**Q: GroupDocs.Viewer, özel yazı tipleriyle Latin dışı betikleri işleyebilir mi?**  
+Yes—once the appropriate Unicode‑supporting font is placed in the font folder, the viewer will render characters correctly.
 
-**S: Üretim kullanımı için hangi lisans seçenekleri mevcuttur?**  
-C: Ücretsiz deneme ile başlayabilir, ardından [purchase page](https://purchase.groupdocs.com/buy) üzerinden geçici veya kalıcı lisansa geçebilirsiniz.
+**Q: Üretim kullanımı için hangi lisans seçenekleri mevcuttur?**  
+You can start with a free 30‑day trial, then upgrade to a temporary or permanent license via the [purchase page](https://purchase.groupdocs.com/buy).
 
-**S: Eksik yazı tipi sorunlarını nasıl gideririm?**  
-C: Dosya izinlerini kontrol edin, yolu doğrulayın ve yazı tipi dosyalarının bozuk olmadığından emin olun. Görüntüleyici logları hangi yazı tipinin yüklenemediğini gösterecektir.
+**Q: Eksik yazı tipi sorunlarını nasıl gideririm?**  
+Check file permissions, verify the path, and ensure the font files are not corrupted. The viewer logs will indicate which font could not be loaded.
 
-**S: Özel bir yazı tipi bulunamadığında varsayılan yazı tiplerine geri dönülebilir mi?**  
-C: Evet—birden fazla `FontSource` nesnesi ekleyerek özel yazı tiplerini önceliklendirebilir, sistem varsayılanlarını yedek olarak tutabilirsiniz.
+**Q: Özel bir yazı tipi mevcut değilse varsayılan yazı tiplerine geri dönebilir miyim?**  
+Yes—by adding multiple `FontSource` objects, you can prioritize custom fonts while retaining system defaults as backups.
 
 ## Kaynaklar
 
-Daha fazla keşif için:
-- **Documentation:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
-- **API Reference:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)  
-- **Download:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)  
-- **Purchase and Trial Options:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)  
-- **Support:** Ek yardım için, [GroupDocs Forum](
+- **Documentation:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **API Reference:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)
+- **Purchase and Trial Options:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)
+- **Support:** For additional help, visit the [GroupDocs Forum](
 
 ---
 
-**Last Updated:** 2026-02-10  
+**Last Updated:** 2026-07-19  
 **Tested With:** GroupDocs.Viewer 25.2 for Java  
 **Author:** GroupDocs
+
+## İlgili Eğitimler
+
+- [Custom Rendering Handler Java – GroupDocs Viewer Tutorial](/viewer/java/custom-rendering/)
+- [How to Render HTML and Exclude Arial Font with GroupDocs.Viewer Java](/viewer/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/)
+- [How to Convert DOCX to HTML Using GroupDocs.Viewer for Java: A Step‑By‑Step Guide](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)

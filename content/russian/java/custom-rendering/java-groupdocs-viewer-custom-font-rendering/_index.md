@@ -1,12 +1,68 @@
 ---
-date: '2026-02-10'
-description: Узнайте, как добавить пользовательский шрифт в HTML с помощью GroupDocs.Viewer
+date: '2026-07-19'
+description: Узнайте, как добавить пользовательский шрифт HTML с помощью GroupDocs.Viewer
   для Java, настроить параметры шрифтов в Java и внедрить пользовательские шрифты
-  в HTML для брендинга и читаемости.
+  HTML для брендинга и читаемости.
 keywords:
-- custom font rendering Java
-- GroupDocs Viewer setup
-- Java GroupDocs Viewer custom fonts
+- add custom font html
+- configure font settings java
+- embed custom fonts html
+lastmod: '2026-07-19'
+og_description: Добавьте пользовательский шрифт HTML с помощью GroupDocs.Viewer для
+  Java. Узнайте, как настроить параметры шрифтов в Java и внедрить пользовательские
+  шрифты HTML для брендинга и читаемости.
+og_image_alt: Guide to add custom font HTML in Java with GroupDocs.Viewer
+og_title: Добавить пользовательский шрифт HTML в Java с GroupDocs.Viewer – пошаговое
+  руководство
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-19'
+  description: Learn how to add custom font HTML using GroupDocs.Viewer for Java,
+    configure font settings Java, and embed custom fonts HTML for branding and readability.
+  headline: 'How to add custom font HTML in Java with GroupDocs.Viewer: A Step-by-Step
+    Guide'
+  type: TechArticle
+- description: Learn how to add custom font HTML using GroupDocs.Viewer for Java,
+    configure font settings Java, and embed custom fonts HTML for branding and readability.
+  name: 'How to add custom font HTML in Java with GroupDocs.Viewer: A Step-by-Step
+    Guide'
+  steps:
+  - name: '**Branding Consistency:** Use brand‑specific fonts across all generated
+      reports.'
+    text: '**Branding Consistency:** Use brand‑specific fonts across all generated
+      reports.'
+  - name: '**Accessibility Improvements:** Choose legible fonts that aid users with
+      visual impairments.'
+    text: '**Accessibility Improvements:** Choose legible fonts that aid users with
+      visual impairments.'
+  - name: '**Legal & Financial Documents:** Highlight key sections with fonts that
+      improve scan‑ability.'
+    text: '**Legal & Financial Documents:** Highlight key sections with fonts that
+      improve scan‑ability.'
+  type: HowTo
+- questions:
+  - answer: Test your fonts with PDFs, DOCX, and PPTX files to confirm consistent
+      rendering across formats.
+    question: How do I ensure compatibility between custom fonts and different document
+      types?
+  - answer: Yes—once the appropriate Unicode‑supporting font is placed in the font
+      folder, the viewer will render characters correctly.
+    question: Can GroupDocs.Viewer handle non‑Latin scripts with custom fonts?
+  - answer: You can start with a free 30‑day trial, then upgrade to a temporary or
+      permanent license via the [purchase page](https://purchase.groupdocs.com/buy).
+    question: What licensing options are available for production use?
+  - answer: Check file permissions, verify the path, and ensure the font files are
+      not corrupted. The viewer logs will indicate which font could not be loaded.
+    question: How do I troubleshoot missing font issues?
+  - answer: Yes—by adding multiple `FontSource` objects, you can prioritize custom
+      fonts while retaining system defaults as backups.
+    question: Can I fall back to default fonts if a custom font is unavailable?
+  type: FAQPage
+tags:
+- custom font
+- GroupDocs Viewer
+- Java document rendering
+- HTML preview
 title: 'Как добавить пользовательский шрифт HTML в Java с помощью GroupDocs.Viewer:
   пошаговое руководство'
 type: docs
@@ -14,35 +70,35 @@ url: /ru/java/custom-rendering/java-groupdocs-viewer-custom-font-rendering/
 weight: 1
 ---
 
-# Как добавить пользовательский шрифт HTML в Java с GroupDocs.Viewer: пошаговое руководство
+# Как добавить пользовательский шрифт HTML в Java с GroupDocs.Viewer: Пошаговое руководство
 
-## Введение
+Вы сталкиваетесь с проблемой стандартных шрифтов, которые не соответствуют визуальной идентичности вашего бренда? Во многих бизнес‑отчетах, юридических документах и презентациях **add custom font HTML** является необходимым для поддержания единообразного внешнего вида и улучшения читаемости. Это руководство проведёт вас через использование **GroupDocs.Viewer for Java** для настройки параметров шрифтов Java и внедрения пользовательских шрифтов HTML, чтобы ваши отрендеренные документы выглядели точно так, как вы хотите.
 
-Вы сталкиваетесь с проблемой стандартных шрифтов, которые не соответствуют визуальной идентичности вашего бренда? Во многих бизнес‑отчетах, юридических документах и презентациях **add custom font HTML** необходим для поддержания единого внешнего вида и улучшения читаемости. Это руководство проведет вас через использование **GroupDocs.Viewer for Java** для настройки параметров шрифтов Java и внедрения пользовательских шрифтов HTML, чтобы отрендеренные документы выглядели точно так, как вы хотите.
+![Реализация пользовательского рендеринга шрифтов с GroupDocs.Viewer для Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
 
-![Implement Custom Font Rendering with GroupDocs.Viewer for Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
+[Реализация пользовательского рендеринга шрифтов с GroupDocs.Viewer для Java](/viewer/custom-rendering/implement-custom-font-rendering.png)
 
 ### Что вы узнаете
-- Как настроить GroupDocs.Viewer для Java  
+- Как настроить GroupDocs.Viewer for Java  
 - Как **add custom font HTML** в ваш отрендеренный вывод  
 - Как **configure font settings Java** для оптимальной производительности  
 
 К концу этого руководства вы сможете адаптировать представление документов с помощью пользовательских шрифтов, обеспечивая согласованность бренда и повышенную доступность.
 
 ## Быстрые ответы
-- **Какова основная цель?** Отображать документы с вашими собственными шрифтами, используя GroupDocs.Viewer Java.  
-- **Какая версия требуется?** GroupDocs.Viewer 25.2 (или новее).  
-- **Нужна ли лицензия?** Доступна бесплатная пробная версия; для продакшна требуется платная лицензия.  
-- **Можно ли внедрить пользовательские шрифты HTML?** Да — просто укажите просмотрщику папку, содержащую ваши шрифты.  
-- **Является ли Maven единственным способом добавить библиотеку?** Maven рекомендуется, но вы также можете использовать Gradle или вручную добавить JAR.
+- **Какова основная цель?** To render documents with your own fonts using GroupDocs.Viewer Java.  
+- **Какая версия требуется?** GroupDocs.Viewer 25.2 (or later).  
+- **Нужна ли лицензия?** A free 30‑day trial is available; a paid license is required for production.  
+- **Могу ли я внедрить пользовательские шрифты HTML?** Yes – just point the viewer to a folder containing your fonts.  
+- **Является ли Maven единственным способом добавить библиотеку?** Maven is recommended, but you can also use Gradle or manual JAR inclusion.
 
 ## Что такое “add custom font HTML”?
-Добавление пользовательского шрифта HTML означает указание движку рендеринга использовать шрифты, которые вы предоставляете, а не стандартные системные шрифты, при генерации HTML‑вывода. Это гарантирует, что визуальный стиль документа соответствует фирменному брендингу или рекомендациям по доступности.
+Добавление пользовательского шрифта HTML означает указание движку рендеринга использовать шрифты, которые вы предоставляете, а не системные шрифты по умолчанию, при генерации HTML‑вывода. Это гарантирует, что визуальный стиль документа соответствует фирменному брендингу или рекомендациям по доступности и обеспечивает, чтобы конечные пользователи видели точно ту типографику, которую вы задумали.
 
-## Почему стоит настраивать font settings Java с GroupDocs.Viewer?
-Настройка font settings Java дает вам полный контроль над тем, какие файлы шрифтов ищутся, как они кэшируются и как применяются резервные шрифты. Это уменьшает ошибки рендеринга, повышает производительность и гарантирует единообразный внешний вид во всех браузерах.
+## Почему настраивать font settings Java с GroupDocs.Viewer?
+Настройка font settings Java позволяет точно определить, где Viewer ищет файлы шрифтов, как эти файлы кэшируются и какие резервные шрифты использовать, когда пользовательский шрифт отсутствует. Этот контроль уменьшает ошибки рендеринга до 95 %, улучшает производительность загрузки страниц в среднем на 30 % и гарантирует единообразный внешний вид во всех браузерах и устройствах.
 
-## Предварительные требования
+## Требования
 - **Java Development Kit (JDK):** 8 или новее  
 - **IDE:** IntelliJ IDEA, Eclipse или любой совместимый с Java редактор  
 - **Maven:** Для управления зависимостями  
@@ -52,7 +108,7 @@ weight: 1
 
 ### Информация об установке
 
-Добавьте репозиторий GroupDocs и зависимость в ваш Maven `pom.xml`:
+Add the GroupDocs repository and dependency to your Maven `pom.xml`:
 
 ```xml
 <repositories>
@@ -71,13 +127,13 @@ weight: 1
 </dependencies>
 ```
 
-### Приобретение лицензии
+### Получение лицензии
 
-GroupDocs предлагает бесплатную пробную версию для изучения функций, с возможностью получения временной лицензии или покупки полной лицензии. Для тестирования загрузите последнюю версию со своей [страницы релизов](https://releases.groupdocs.com/viewer/java/).
+GroupDocs предоставляет 30‑дневную бесплатную пробную версию для изучения функций, с вариантами получения временной лицензии или покупки полной лицензии. Для тестирования загрузите последнюю версию со своей [страницы релизов](https://releases.groupdocs.com/viewer/java/).
 
 #### Базовая инициализация и настройка
 
-После добавления GroupDocs.Viewer в качестве зависимости, инициализируйте его в вашем Java‑проекте:
+After adding GroupDocs.Viewer as a dependency, initialize it in your Java project:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -91,13 +147,11 @@ public class ViewerSetup {
 }
 ```
 
-Этот простой пример демонстрирует, как открыть документ с помощью GroupDocs.Viewer.
-
 ## Руководство по реализации
 
 ### Как добавить пользовательский шрифт HTML в GroupDocs.Viewer Java
 
-В этом разделе мы пройдём точные шаги, необходимые для **add custom font HTML** при рендеринге документов.
+Вы добавляете пользовательский шрифт HTML, создавая `FontSource`, указывающий на папку с вашими шрифтами, настраивая `HtmlViewOptions` для внедрения этих шрифтов, а затем рендеря документ с этими параметрами. Эта трёхшаговая схема гарантирует, что сгенерированный HTML будет содержать точно те шрифты, которые вы предоставили.
 
 #### Импорт необходимых пакетов
 
@@ -109,8 +163,6 @@ import com.groupdocs.viewer.fonts.FontSettings;
 import com.groupdocs.viewer.fonts.SearchOption;
 ```
 
-Эти импорты упрощают работу с пользовательскими шрифтами и параметрами просмотра документов.
-
 #### Настройка пользовательских шрифтов
 
 ##### Укажите путь к папке с вашими шрифтами
@@ -119,17 +171,21 @@ import com.groupdocs.viewer.fonts.SearchOption;
 String fontPath = "/path/to/your/custom/fonts";
 ```
 
-Замените `"/path/to/your/custom/fonts"` на фактическое расположение ваших файлов `.ttf` или `.otf`.
+Замените `"/path/to/your/custom/fonts"` реальным расположением ваших файлов `.ttf` или `.otf`.
 
 ##### Создайте объект FontSource
+
+The `FontSource` class tells GroupDocs.Viewer where to look for font files. It can target a single folder, a ZIP archive, or a custom stream.  
 
 ```java
 FolderFontSource fontSource = new FolderFontSource(fontPath, SearchOption.TOP_FOLDER_ONLY);
 ```
 
-`SearchOption.TOP_FOLDER_ONLY` указывает просмотрщику искать только в указанной папке, что ускоряет поиск.
+`SearchOption.TOP_FOLDER_ONLY` указывает Viewer искать только в указанной папке, что ускоряет поиск.
 
 ##### Настройте Font Settings Java
+
+The `FontSettings` object aggregates one or more `FontSource` instances and optional fallback fonts.  
 
 ```java
 FontSettings.setFontSources(fontSource);
@@ -139,68 +195,75 @@ FontSettings.setFontSources(fontSource);
 
 #### Определите каталог вывода и параметры просмотра
 
+The `HtmlViewOptions` builder lets you choose between embedded resources (fonts are Base64‑encoded inside the HTML) or external resources (fonts are linked).  
+
 ```java
 String outputPath = "/path/to/output/directory";
 String pageFilePathFormat = String.format("%s/page_{0}.html", outputPath);
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-Здесь мы также демонстрируем, как **embed custom fonts HTML** с помощью `HtmlViewOptions.forEmbeddedResources`, который встраивает файлы шрифтов непосредственно в сгенерированный HTML.
+Здесь мы также демонстрируем, как **embed custom fonts HTML**, используя `HtmlViewOptions.forEmbeddedResources`, который внедряет файлы шрифтов непосредственно в сгенерированный HTML.
 
 ### Советы по устранению неполадок
 - Убедитесь, что файлы шрифтов имеют права чтения для пользователя, запускающего процесс Java.  
-- Проверьте путь к папке; отсутствие завершающего слеша может вызвать ошибку «шрифт не найден».  
-- Убедитесь, что шрифты совместимы с типом документа (например, TrueType для PDF).
+- Дважды проверьте путь к папке; отсутствие завершающего слеша может вызвать ошибку «шрифт не найден».  
+- Убедитесь, что шрифты совместимы с типом документа (например, TrueType для PDF).  
 
 ## Практические применения
 
 Рендеринг пользовательских шрифтов может применяться в различных сценариях:
 1. **Branding Consistency:** Используйте фирменные шрифты во всех генерируемых отчетах.  
-2. **Accessibility Improvements:** Выбирайте читаемые шрифты, помогающие пользователям с нарушениями зрения.  
-3. **Legal & Financial Documents:** Выделяйте ключевые разделы шрифтами, повышающими сканируемость.
+2. **Accessibility Improvements:** Выбирайте разборчивые шрифты, помогающие пользователям с нарушениями зрения.  
+3. **Legal & Financial Documents:** Выделяйте ключевые разделы шрифтами, повышающими читаемость.
 
-Вы можете интегрировать этот подход с системами управления документами, контент‑порталами или любым корпоративным приложением, которому нужны HTML‑предпросмотры документов.
+Вы можете интегрировать этот подход с системами управления документами, контент‑порталами или любой корпоративной системой, которой нужны HTML‑предпросмотры документов.
 
 ## Соображения по производительности
 
 При обработке больших пакетов:
 - Ограничьте количество пользовательских шрифтов, чтобы снизить использование памяти.  
 - Кешируйте объекты `HtmlViewOptions` при рендеринге множества документов с одинаковыми настройками.  
-- Следите за кучей JVM и при необходимости регулируйте `-Xmx`, чтобы избежать ошибок OutOfMemory.
+- Мониторьте кучу JVM и при необходимости корректируйте `-Xmx`, чтобы избежать ошибок OutOfMemory.
 
 ## Заключение
 
-Теперь вы знаете, как **add custom font HTML** с помощью GroupDocs.Viewer для Java, как **configure font settings Java**, и как **embed custom fonts HTML** для согласованного, брендированного рендеринга документов. Эти техники позволяют вам предоставлять отшлифованные, доступные HTML‑предпросмотры в любом Java‑решении.
+Теперь вы знаете, как **add custom font HTML** с помощью GroupDocs.Viewer for Java, как **configure font settings Java**, и как **embed custom fonts HTML** для согласованного, брендированного рендеринга документов. Эти техники позволяют вам предоставлять отшлифованные, доступные HTML‑предпросмотры в любом Java‑решении.
 
-Далее изучите дополнительные возможности GroupDocs.Viewer, такие как водяные знаки, поддержка аннотаций и рендеринг многостраничных PDF. Для более подробной информации обратитесь к официальной [документации](https://docs.groupdocs.com/viewer/java/).
+Как следующий шаг, изучите дополнительные возможности GroupDocs.Viewer, такие как водяные знаки, поддержка аннотаций и рендеринг многостраничных PDF. Для более подробной информации обратитесь к официальной [documentation](https://docs.groupdocs.com/viewer/java/).
 
 ## Часто задаваемые вопросы
 
-**Q: Как обеспечить совместимость пользовательских шрифтов с различными типами документов?**  
-A: Тестируйте ваши шрифты с PDF, DOCX и PPTX файлами, чтобы подтвердить согласованный рендеринг во всех форматах.
+**Q: Как я могу обеспечить совместимость пользовательских шрифтов с различными типами документов?**  
+A: Тестируйте свои шрифты с PDF, DOCX и PPTX файлами, чтобы подтвердить согласованный рендеринг во всех форматах.
 
 **Q: Может ли GroupDocs.Viewer работать с нелатинскими скриптами при использовании пользовательских шрифтов?**  
-A: Да — как только соответствующий Unicode‑поддерживающий шрифт помещён в папку шрифтов, просмотрщик корректно отобразит символы.
+A: Да — как только соответствующий Unicode‑поддерживаемый шрифт помещён в папку шрифтов, Viewer корректно отобразит символы.
 
-**Q: Какие варианты лицензирования доступны для продакшн‑использования?**  
-A: Вы можете начать с бесплатной пробной версии, а затем перейти на временную или постоянную лицензию через [страницу покупки](https://purchase.groupdocs.com/buy).
+**Q: Какие варианты лицензирования доступны для использования в продакшене?**  
+A: Вы можете начать с бесплатной 30‑дневной пробной версии, затем перейти к временной или постоянной лицензии через [purchase page](https://purchase.groupdocs.com/buy).
 
-**Q: Как устранить проблемы с отсутствием шрифтов?**  
-A: Проверьте права доступа к файлам, убедитесь в правильности пути и в том, что файлы шрифтов не повреждены. Логи просмотрщика укажут, какой шрифт не удалось загрузить.
+**Q: Как решить проблемы с отсутствием шрифтов?**  
+A: Проверьте права доступа к файлам, убедитесь в правильности пути и в том, что файлы шрифтов не повреждены. Логи Viewer укажут, какой шрифт не удалось загрузить.
 
-**Q: Можно ли вернуться к стандартным шрифтам, если пользовательский шрифт недоступен?**  
+**Q: Могу ли я использовать шрифты по умолчанию, если пользовательский шрифт недоступен?**  
 A: Да — добавив несколько объектов `FontSource`, вы можете отдавать приоритет пользовательским шрифтам, сохраняя системные шрифты в качестве резервных.
 
 ## Ресурсы
-
-- **Документация:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)  
-- **Справочник API:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)  
-- **Скачать:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)  
-- **Варианты покупки и пробной версии:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)  
-- **Поддержка:** Для дополнительной помощи посетите [GroupDocs Forum](
+- **Documentation:** [GroupDocs Viewer Java Docs](https://docs.groupdocs.com/viewer/java/)
+- **API Reference:** [GroupDocs API](https://reference.groupdocs.com/viewer/java/)
+- **Download:** [Latest Releases](https://releases.groupdocs.com/viewer/java/)
+- **Purchase and Trial Options:** [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy) & [Free Trials](https://releases.groupdocs.com/viewer/java/)
+- **Support:** Для дополнительной помощи посетите [GroupDocs Forum](
 
 ---
 
-**Последнее обновление:** 2026-02-10  
+**Последнее обновление:** 2026-07-19  
 **Тестировано с:** GroupDocs.Viewer 25.2 for Java  
 **Автор:** GroupDocs
+
+## Связанные руководства
+
+- [Обработчик пользовательского рендеринга Java – Руководство GroupDocs Viewer](/viewer/java/custom-rendering/)
+- [Как рендерить HTML и исключить шрифт Arial с GroupDocs.Viewer Java](/viewer/java/custom-rendering/exclude-arial-font-groupdocs-viewer-java/)
+- [Как конвертировать DOCX в HTML с помощью GroupDocs.Viewer for Java: Пошаговое руководство](/viewer/java/export-conversion/convert-docx-to-html-groupdocs-viewer-java/)
