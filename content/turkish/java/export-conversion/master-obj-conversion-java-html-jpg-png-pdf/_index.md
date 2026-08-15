@@ -1,47 +1,157 @@
 ---
-date: '2026-02-21'
-description: Java'da OBJ dosyalarını HTML, JPG, PNG ve PDF'ye nasıl dönüştüreceğinizi
-  öğrenin. Bu adım adım rehber, OBJ'yi nasıl dönüştüreceğinizi, OBJ'yi nasıl render
-  edeceğinizi ve GroupDocs.Viewer ile Java'da 3D PDF'yi nasıl dönüştüreceğinizi gösterir.
+date: '2026-07-29'
+description: GroupDocs Viewer OBJ dönüşümü, Java kullanarak 3D OBJ dosyalarını HTML,
+  JPG, PNG ve PDF formatlarına dönüştürmenizi sağlar. Modelleri hızlı bir şekilde
+  render etmek ve çıktı kalitesini özelleştirmek için bu adım‑adım kılavuzu izleyin.
 keywords:
-- OBJ to HTML conversion in Java
-- GroupDocs.Viewer for Java
-- 3D model file conversion
-title: Java’da GroupDocs.Viewer Kullanarak OBJ’yi HTML, JPG, PNG ve PDF’ye Nasıl Dönüştürürsünüz
+- groupdocs viewer obj conversion
+- java obj to pdf
+- obj to html java
+lastmod: '2026-07-29'
+og_description: GroupDocs Viewer OBJ dönüşümü, Java kullanarak 3D OBJ dosyalarını
+  HTML, JPG, PNG ve PDF formatlarına dönüştürmenizi sağlar. Modelleri hızlı bir şekilde
+  render etmek ve çıktı kalitesini özelleştirmek için bu adım‑adım kılavuzu izleyin.
+og_image_alt: 'Developer guide: Convert OBJ to HTML, JPG, PNG, PDF in Java with GroupDocs
+  Viewer'
+og_title: GroupDocs Viewer OBJ Dönüşümü Java ile HTML, JPG, PNG, PDF
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-29'
+  description: GroupDocs Viewer OBJ conversion lets you transform 3D OBJ files into
+    HTML, JPG, PNG, and PDF formats using Java. Follow this step‑by‑step guide to
+    render models quickly and customize output quality.
+  headline: GroupDocs Viewer OBJ Conversion Java to HTML, JPG, PNG, PDF
+  type: TechArticle
+- description: GroupDocs Viewer OBJ conversion lets you transform 3D OBJ files into
+    HTML, JPG, PNG, and PDF formats using Java. Follow this step‑by‑step guide to
+    render models quickly and customize output quality.
+  name: GroupDocs Viewer OBJ Conversion Java to HTML, JPG, PNG, PDF
+  steps:
+  - name: Import the required classes (`Viewer`, view‑option classes, etc.).
+    text: Import the required classes (`Viewer`, view‑option classes, etc.).
+  - name: Create a `Viewer` instance pointing at your OBJ file.
+    text: Create a `Viewer` instance pointing at your OBJ file.
+  - name: Choose the appropriate view options (HTML, JPG, PNG, or PDF).
+    text: Choose the appropriate view options (HTML, JPG, PNG, or PDF).
+  - name: '**Set Up the Output Directory**'
+    text: '**Set Up the Output Directory**'
+  - name: '**Create Viewer Instance**'
+    text: '**Create Viewer Instance**'
+  - name: '**Configure HTML View Options**'
+    text: '**Configure HTML View Options**'
+  - name: '**Render the OBJ Document**'
+    text: '**Render the OBJ Document**'
+  - name: '**Set Up the Output Directory**'
+    text: '**Set Up the Output Directory**'
+  - name: '**Create Viewer Instance**'
+    text: '**Create Viewer Instance**'
+  - name: '**Configure JPG View Options**'
+    text: '**Configure JPG View Options**'
+  type: HowTo
+- questions:
+  - answer: It supports over 100 input and output formats, including HTML, JPG, PNG,
+      PDF, DOCX, and OBJ.
+    question: What formats does GroupDocs.Viewer for Java support?
+  - answer: Verify the OBJ file path, ensure all dependent MTL files are present,
+      and confirm that the Maven dependency version matches the library you installed.
+    question: How do I troubleshoot rendering issues with OBJ files?
+  - answer: Yes, but monitor JVM memory usage and consider increasing the heap size
+      (`-Xmx`) for very large models.
+    question: Can GroupDocs.Viewer handle large OBJ files efficiently?
+  - answer: Yes, you can adjust settings like image resolution and compression in
+      `JpgViewOptions` and `PngViewOptions`.
+    question: Is it possible to customize output quality when rendering images?
+  - answer: Acquire a temporary license [here](https://purchase.groupdocs.com/temporary-license/).
+    question: How do I obtain a temporary license?
+  type: FAQPage
+tags:
+- groupdocs viewer
+- obj conversion
+- java 3d rendering
+- html export
+- pdf generation
+title: GroupDocs Viewer OBJ Dönüşümü Java ile HTML, JPG, PNG, PDF
 type: docs
 url: /tr/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/
 weight: 1
 ---
 
-# OBJ'yi Java'da GroupDocs.Viewer Kullanarak HTML, JPG, PNG ve PDF'ye Dönüştürme
+# GroupDocs Viewer OBJ Dönüştürmesi HTML, JPG, PNG, PDF (Java)
 
-3D OBJ modellerini web‑dostu veya yazdırılabilir formatlara dönüştürmek, mimarlar, e‑ticaret platformları ve e‑öğrenme içerik oluşturucuları için yaygın bir gereksinimdir. Bu öğreticide **OBJ'yi nasıl dönüştüreceğinizi** GroupDocs.Viewer for Java kullanarak HTML, JPG, PNG ve PDF formatlarına hızlı ve güvenilir bir şekilde keşfedeceksiniz.
+Bu kapsamlı öğreticide **groupdocs viewer obj conversion** – 3D OBJ modelini web‑hazır HTML veya görüntü‑tabanlı formatlara (JPG, PNG) ve yazdırılabilir PDF'ye dönüştürme sürecini – GroupDocs.Viewer for Java kullanarak öğreneceksiniz. Mimari bir sergi, e‑ticaret ürün görüntüleyicisi veya e‑öğrenme materyali oluşturuyor olun, aşağıdaki adımlar sadece birkaç kod satırıyla yüksek kalite sonuçlar elde etmenizi gösterir.
 
-![OBJ to HTML/JPG/PNG/PDF Conversion in Java with GroupDocs.Viewer for Java](/viewer/export-conversion/obj-to-html-jpg-png-pdf-conversion-in-java.png)
+![Java'da GroupDocs.Viewer for Java ile OBJ'den HTML/JPG/PNG/PDF Dönüştürmesi](/viewer/export-conversion/obj-to-html-jpg-png-pdf-conversion-in-java.png)
+[Java'da GroupDocs.Viewer for Java ile OBJ'den HTML/JPG/PNG/PDF Dönüştürmesi](/viewer/export-conversion/obj-to-html-jpg-png-pdf-conversion-in-java.png)
 
 ## Hızlı Yanıtlar
 - **Ana kütüphane nedir?** GroupDocs.Viewer for Java (v25.2)  
 - **OBJ'yi hangi formatlara dışa aktarabilirim?** HTML, JPG, PNG ve PDF  
-- **Lisans gereklimi?** Geliştirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gereklidir  
+- **Lisans gereklimi?** Geliştirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gerekir  
 - **Maven destekleniyor mu?** Evet—GroupDocs deposunu ve bağımlılığı `pom.xml` dosyasına ekleyin  
 - **Görüntü kalitesini özelleştirebilir miyim?** Evet, `JpgViewOptions` ve `PngViewOptions` aracılığıyla  
 
 ## OBJ Dönüştürmesi Nedir ve Neden İhtiyacınız Var?
-OBJ, yaygın olarak kullanılan bir 3D geometri tanım dosya formatıdır. CAD ve modelleme araçları için güçlü olsa da, tarayıcılarda doğrudan görüntülenemez veya yazdırılabilir belgeler oluşturulamaz. OBJ'yi HTML'ye dönüştürmek size etkileşimli bir görüntüleyici sağlar, JPG/PNG statik anlık görüntüler sunar ve PDF evrensel olarak paylaşılabilir bir belge sunar. Bu, **OBJ'yi nasıl render edeceğinizi** tam olarak gösterir.
+OBJ dönüştürmesi, 3D OBJ modelini tarayıcıların veya belge görüntüleyicilerin gösterebileceği bir formata dönüştürür, etkileşimli veya yazdırılabilir temsiller sağlar. OBJ dosyaları CAD araçları için harikadır ancak web üzerinde doğrudan görüntülenemez; bunları HTML'ye dönüştürmek etkileşimli bir görüntüleyici sağlar, JPG/PNG statik anlık görüntüler sunar ve PDF evrensel olarak paylaşılabilir bir belge sunar.
 
-## Ön Koşullar
+## Önkoşullar
 
-- **GroupDocs.Viewer 25.2** (veya daha yeni) – dönüşümü sağlayan kütüphane.  
+Başlamadan önce şunlara sahip olduğunuzdan emin olun:
+
+- **GroupDocs.Viewer 25.2** (veya daha yenisi) – dönüştürmeyi sağlayan kütüphane.  
 - **Java 17+** ve **Maven** geliştirme makinenizde kurulu.  
 - Java programlaması ve Maven proje yapısı hakkında temel bilgi.  
 
-## GroupDocs.Viewer for Java'ı Kurma
+## GroupDocs.Viewer for Java Kurulumu
 
 ### Maven Kurulumu
 
-Aşağıda gösterildiği gibi `pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+Depoyu ve bağımlılığı `pom.xml` dosyanıza aşağıda gösterildiği gibi ekleyin:
 
 ```xml
+<repositories>
+    <repository>
+        <id>groupdocs-repo</id>
+        <url>https://releases.groupdocs.com/maven/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-viewer</artifactId>
+        <version>25.2</version>
+    </dependency>
+</dependencies>
+```
+
+### Lisans Edinimi
+
+- **Ücretsiz Deneme:** [GroupDocs web sitesinden](https://releases.groupdocs.com/viewer/java/) ücretsiz deneme indirin.  
+- **Geçici Lisans:** Uzun süreli test için geçici lisansı [buradan](https://purchase.groupdocs.com/temporary-license/) edinin.  
+- **Satın Alma:** Tam erişim için tam lisans satın almayı [bu bağlantı](https://purchase.groupdocs.com/buy) üzerinden düşünün.  
+
+### Temel Başlatma
+
+`Viewer` sınıfı, OBJ dosyaları dahil desteklenen belgeleri yükleyen ve render eden temel bileşendir. Render etmeye başlamak için şunları yapacaksınız:
+
+1. Gerekli sınıfları içe aktarın (`Viewer`, view‑option sınıfları vb.).  
+2. OBJ dosyanıza işaret eden bir `Viewer` örneği oluşturun.  
+3. Uygun view seçeneklerini (HTML, JPG, PNG veya PDF) seçin.  
+
+Bu temel, **OBJ'yi nasıl dönüştüreceğinizi** desteklenen herhangi bir formata dönüştürmenizi sağlar.
+
+## Java'da GroupDocs Viewer OBJ Dönüştürmesi Nasıl Yapılır?
+
+`new Viewer("model.obj")` ile OBJ dosyanızı yükleyin, istenen view seçeneklerini (ör. `HtmlViewOptions.forEmbeddedResources(outputPath)`) seçin ve `viewer.view(options)` metodunu çağırın. Kütüphane, ağ yapısı ayrıştırma, doku eşleme ve sayfa oluşturmayı otomatik olarak yönetir, sadece birkaç kod satırıyla kullanıma hazır HTML, görüntü veya PDF dosyaları üretir.
+
+### OBJ'yi HTML Olarak Render Etme
+
+`HtmlViewOptions` sınıfı, OBJ modelinin etkileşimli bir HTML sayfası olarak nasıl dışa aktarılacağını tanımlar; gömülü kaynaklar ve özel ayarlar sağlar.
+
+1. **Çıktı Dizinini Ayarlama**  
+   Belirttiğiniz klasörün mevcut ve yazılabilir olduğundan emin olun.  
+
+   ```xml
 <repositories>
    <repository>
       <id>repository.groupdocs.com</id>
@@ -58,191 +168,171 @@ Aşağıda gösterildiği gibi `pom.xml` dosyanıza depo ve bağımlılığı ek
 </dependencies>
 ```
 
-### Lisans Edinme
+2. **Viewer Örneği Oluşturma**  
+   `Viewer` sınıfı OBJ dosyasını yükler ve render için hazırlar.  
 
-- **Ücretsiz Deneme:** [GroupDocs web sitesinden](https://releases.groupdocs.com/viewer/java/) ücretsiz deneme indirin.  
-- **Geçici Lisans:** Uzun vadeli test için geçici lisansı [buradan](https://purchase.groupdocs.com/temporary-license/) edinin.  
-- **Satın Alma:** Tam erişim için tam lisans satın almayı [bu linkten](https://purchase.groupdocs.com/buy) değerlendirin.  
-
-### Temel Başlatma
-
-Render etmeye başlamak için şunları yapacaksınız:
-
-1. Gerekli sınıfları (`Viewer`, view‑option sınıfları vb.) içe aktarın.  
-2. OBJ dosyanıza işaret eden bir `Viewer` örneği oluşturun.  
-3. Uygun view seçeneklerini (HTML, JPG, PNG veya PDF) seçin.  
-
-Bu temel, **OBJ'yi nasıl dönüştüreceğinizi** desteklenen herhangi bir formata dönüştürmenizi sağlar.
-
-## Uygulama Kılavuzu
-
-Aşağıda her hedef format için adım adım kod parçacıklarını bulacaksınız. Kod blokları orijinal öğreticiden değiştirilmemiştir; uyumluluğu sağlamak için olduğu gibi tutulmuştur.
-
-### OBJ'yi HTML'ye Render Etme
-
-**OBJ'yi nasıl render edersiniz** etkileşimli bir HTML sayfası olarak.
-
-#### Adım‑Adım
-
-1. **Çıktı Dizinini Ayarlayın**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.html");
 ```
 
-2. **Viewer Örneği Oluşturun**
+3. **HTML View Seçeneklerini Yapılandırma**  
+   `HtmlViewOptions.forEmbeddedResources(outputPath)` tüm kaynakları (dokular, betikler) çıktı klasörüne gömer.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **HTML View Seçeneklerini Yapılandırın**
+4. **OBJ Belgesini Render Etme**  
+   HTML temsili oluşturmak için `viewer.view(htmlOptions)` metodunu çağırın.  
 
-```java
+   ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-4. **OBJ Belgesini Render Edin**
+### OBJ'yi JPG Olarak Render Etme
 
-```java
+`JpgViewOptions` sınıfı, JPEG çıktısı için çözünürlük, kalite ve arka plan rengini tanımlamanıza olanak verir.
+
+1. **Çıktı Dizinini Ayarlama**  
+
+   ```java
 viewer.view(options);
 ```
 
-### OBJ'yi JPG'ye Render Etme
+2. **Viewer Örneği Oluşturma**  
 
-**OBJ'yi nasıl render edersiniz** yüksek çözünürlüklü JPEG görüntülerine.
-
-#### Adım‑Adım
-
-1. **Çıktı Dizinini Ayarlayın**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.jpg");
 ```
 
-2. **Viewer Örneği Oluşturun**
+3. **JPG View Seçeneklerini Yapılandırma**  
+   `setResolution(int)` ve `setQuality(int)` ile görüntü boyutu ve sıkıştırmayı kontrol edin.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **JPG View Seçeneklerini Yapılandırın**
+4. **OBJ Belgesini Render Etme**  
 
-```java
+   ```java
 JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
 ```
 
-4. **OBJ Belgesini Render Edin**
+### OBJ'yi PNG Olarak Render Etme
 
-```java
+`PngViewOptions` sınıfı şeffaflık ve yüksek çözünürlüklü PNG üretimini destekler.
+
+1. **Çıktı Dizinini Ayarlama**  
+
+   ```java
 viewer.view(options);
 ```
 
-### OBJ'yi PNG'ye Render Etme
+2. **Viewer Örneği Oluşturma**  
 
-**OBJ'yi nasıl render edersiniz** PNG kullanarak şeffaflık desteğiyle.
-
-#### Adım‑Adım
-
-1. **Çıktı Dizinini Ayarlayın**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.png");
 ```
 
-2. **Viewer Örneği Oluşturun**
+3. **PNG View Seçeneklerini Yapılandırma**  
+   `setResolution(int)` DPI kontrolü için, `setTransparentBackground(true)` gerektiğinde şeffaf arka plan için kullanılır.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **PNG View Seçeneklerini Yapılandırın**
+4. **OBJ Belgesini Render Etme**  
 
-```java
+   ```java
 PngViewOptions options = new PngViewOptions(pageFilePathFormat);
 ```
 
-4. **OBJ Belgesini Render Edin**
+### OBJ'yi PDF Olarak Render Etme
 
-```java
+`PdfViewOptions` sınıfı, 3D modelin görsel bütünlüğünü koruyan yazdırılabilir bir PDF oluşturur.
+
+1. **Çıktı Dizinini Ayarlama**  
+
+   ```java
 viewer.view(options);
 ```
 
-### OBJ'yi PDF'ye Render Etme
+2. **Viewer Örneği Oluşturma**  
 
-**OBJ'yi nasıl render edersiniz** yazdırılabilir bir PDF belgesine (genellikle *java convert 3d pdf* olarak adlandırılır).
-
-#### Adım‑Adım
-
-1. **Çıktı Dizinini Ayarlayın**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.pdf");
 ```
 
-2. **Viewer Örneği Oluşturun**
+3. **PDF View Seçeneklerini Yapılandırma**  
+   Sayfa boyutu, kenar boşlukları ayarlayın ve isteğe bağlı olarak orijinal OBJ'yi ek olarak gömün.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **PDF View Seçeneklerini Yapılandırın**
+4. **OBJ Belgesini Render Etme**  
 
-```java
+   ```java
 PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
 ```
 
-4. **OBJ Belgesini Render Edin**
+## Pratik Uygulamalar
+
+| Senaryo | OBJ'yi Neden Dönüştürmeli? | Tercih Edilen Çıktı |
+|----------|----------------------------|----------------------|
+| **Mimari Görselleştirme** | Etkileşimli modelleri müşterilerle paylaşın | HTML veya PDF |
+| **Çevrimiçi Ürün Katalogları** | Web sayfalarında statik ön izlemeler gösterin | JPG / PNG |
+| **Eğitim Materyali** | 3D diyagramları e‑öğrenme modüllerine gömün | HTML veya PDF |
+| **Baskıya Hazır Dokümantasyon** | Yüksek kaliteli baskı sayfaları oluşturun | PDF |
+
+GroupDocs.Viewer, OBJ, PDF, DOCX ve daha fazlasını içeren **100'den fazla dosya formatını** destekler ve tüm dosyayı belleğe yüklemeden çok sayfalı belgeleri işleyebilir.
+
+## Performans Düşünceleri ve Yaygın Tuzaklar
+
+- **Bellek Yönetimi:** Büyük OBJ dosyaları önemli miktarda heap alanı tüketebilir. `Viewer`'ı hızlıca kapatmak için (gösterildiği gibi) her zaman try‑with‑resources desenini kullanın.  
+- **Kalite Ayarları:** JPG/PNG için çözünürlüğü `JpgViewOptions.setResolution(int)` veya `PngViewOptions.setResolution(int)` ile ayarlayabilirsiniz.  
+- **Dosya Yolları:** OBJ dosya yolunun mutlak olduğundan veya proje köküne göre doğru çözüldüğünden emin olun; aksi takdirde `FileNotFoundException` fırlatılır.  
+- **Lisans Hataları:** “License not found” istisnaları görürseniz, lisans dosyasının sınıf yolunda (classpath) bulunduğunu ve deneme dışı çalıştırmalarda üretim‑hazır bir lisans kullandığınızı iki kez kontrol edin.
+
+## Sık Sorulan Sorular
+
+**Q:** GroupDocs.Viewer for Java hangi formatları destekliyor?  
+**A:** HTML, JPG, PNG, PDF, DOCX ve OBJ dahil olmak üzere 100'den fazla giriş ve çıkış formatını destekler.
+
+**Q:** OBJ dosyalarıyla render sorunlarını nasıl gideririm?  
+**A:** OBJ dosya yolunu doğrulayın, tüm bağımlı MTL dosyalarının mevcut olduğundan emin olun ve Maven bağımlılık sürümünün kurduğunuz kütüphane ile eşleştiğini kontrol edin.
+
+**Q:** GroupDocs.Viewer büyük OBJ dosyalarını verimli bir şekilde işleyebilir mi?  
+**A:** Evet, ancak JVM bellek kullanımını izleyin ve çok büyük modeller için yığın boyutunu (`-Xmx`) artırmayı düşünün.
+
+**Q:** Görüntüleri render ederken çıktı kalitesini özelleştirmek mümkün mü?  
+**A:** Evet, `JpgViewOptions` ve `PngViewOptions` içinde görüntü çözünürlüğü ve sıkıştırma gibi ayarları değiştirebilirsiniz.
+
+**Q:** Geçici bir lisans nasıl elde ederim?  
+**A:** Geçici lisansı [buradan](https://purchase.groupdocs.com/temporary-license/) edinin.
+
+**Son Güncelleme:** 2026-07-29  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
+**Yazar:** GroupDocs  
 
 ```java
 viewer.view(options);
 ```
 
-## Pratik Uygulamalar
+## İlgili Öğreticiler
 
-| Senaryo | Neden OBJ Dönüştürülür? | Tercih Edilen Çıktı |
-|----------|--------------------------|----------------------|
-| **Mimari Görselleştirme** | İnteraktif modelleri müşterilerle paylaşın | HTML veya PDF |
-| **Çevrimiçi Ürün Katalogları** | Web sayfalarında statik ön izlemeler gösterin | JPG / PNG |
-| **Eğitim Materyali** | E‑öğrenme modüllerine 3D diyagramlar ekleyin | HTML veya PDF |
-| **Baskıya Hazır Dokümantasyon** | Yüksek kaliteli baskı sayfaları oluşturun | PDF |
-
-## Performans Düşünceleri ve Yaygın Tuzaklar
-
-- **Bellek Yönetimi:** Büyük OBJ dosyaları önemli miktarda yığın alanı tüketebilir. `Viewer`'ı hızlıca kapatmak için her zaman gösterildiği gibi try‑with‑resources desenini kullanın.  
-- **Kalite Ayarları:** JPG/PNG için çözünürlüğü `JpgViewOptions.setResolution(int)` veya `PngViewOptions.setResolution(int)` ile ayarlayabilirsiniz.  
-- **Dosya Yolları:** OBJ dosya yolunun mutlak olduğundan veya proje köküne göre doğru çözüldüğünden emin olun; aksi takdirde `FileNotFoundException` fırlatılır.  
-- **Lisans Hataları:** “License not found” istisnası görürseniz, lisans dosyasının sınıf yolunda (classpath) bulunduğunu ve deneme dışı çalıştırmalarda üretim‑hazır bir lisans kullandığınızı iki kez kontrol edin.  
-
-## Sıkça Sorulan Sorular
-
-**S: GroupDocs.Viewer for Java hangi formatları destekliyor?**  
-C: HTML, JPG, PNG, PDF ve daha birçok dosya türünü destekler.
-
-**S: OBJ dosyalarıyla render sorunlarını nasıl gideririm?**  
-C: OBJ dosya yolunu doğrulayın, tüm bağımlı MTL dosyalarının mevcut olduğundan emin olun ve Maven bağımlılık sürümünün kurduğunuz kütüphane ile eşleştiğini teyit edin.
-
-**S: GroupDocs.Viewer büyük OBJ dosyalarını verimli bir şekilde işleyebilir mi?**  
-C: Evet, ancak JVM bellek kullanımını izleyin ve çok büyük modeller için yığın boyutunu (`-Xmx`) artırmayı düşünün.
-
-**S: Görüntüleri render ederken çıktı kalitesini özelleştirmek mümkün mü?**  
-C: Evet, `JpgViewOptions` ve `PngViewOptions` içinde görüntü çözünürlüğü ve sıkıştırma gibi ayarları değiştirebilirsiniz.
-
-**S: Geçici bir lisans nasıl elde ederim?**  
-C: Geçici bir lisansı [buradan](https://purchase.groupdocs.com/temporary-license/) edinin.
-
-**Son Güncelleme:** 2026-02-21  
-**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
-**Yazar:** GroupDocs
+- [GroupDocs.Viewer Java kullanarak IGS'yi PDF, HTML, JPG ve PNG'ye Dönüştürme](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)
+- [convert odf html java – ODF'yi HTML, JPG, PNG, PDF'ye Dönüştürme (GroupDocs.Viewer for Java) ](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
+- [GroupDocs.Viewer Java ile Belge Eklerini HTML'ye Render Etme: Adım Adım Kılavuz](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)

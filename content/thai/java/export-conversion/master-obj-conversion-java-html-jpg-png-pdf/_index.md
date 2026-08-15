@@ -1,48 +1,157 @@
 ---
-date: '2026-02-21'
-description: เรียนรู้วิธีแปลงไฟล์ OBJ เป็น HTML, JPG, PNG และ PDF ด้วย Java คู่มือแบบขั้นตอนนี้แสดงวิธีแปลง
-  OBJ, เรนเดอร์ OBJ, และแปลง 3D PDF ด้วย Java โดยใช้ GroupDocs.Viewer.
+date: '2026-07-29'
+description: การแปลง OBJ ของ GroupDocs Viewer ช่วยให้คุณแปลงไฟล์ OBJ 3 มิติเป็นรูปแบบ
+  HTML, JPG, PNG และ PDF ด้วย Java. ทำตามคู่มือ step‑by‑step นี้เพื่อ render โมเดลอย่างรวดเร็วและ
+  customize output quality.
 keywords:
-- OBJ to HTML conversion in Java
-- GroupDocs.Viewer for Java
-- 3D model file conversion
-title: วิธีแปลง OBJ เป็น HTML, JPG, PNG และ PDF ใน Java ด้วย GroupDocs.Viewer
+- groupdocs viewer obj conversion
+- java obj to pdf
+- obj to html java
+lastmod: '2026-07-29'
+og_description: การแปลง OBJ ของ GroupDocs Viewer ช่วยให้คุณแปลงไฟล์ OBJ 3 มิติเป็นรูปแบบ
+  HTML, JPG, PNG และ PDF ด้วย Java. ทำตามคู่มือ step‑by‑step นี้เพื่อ render โมเดลอย่างรวดเร็วและ
+  customize output quality.
+og_image_alt: 'Developer guide: Convert OBJ to HTML, JPG, PNG, PDF in Java with GroupDocs
+  Viewer'
+og_title: GroupDocs Viewer การแปลง OBJ ด้วย Java ไปยัง HTML, JPG, PNG, PDF
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-29'
+  description: GroupDocs Viewer OBJ conversion lets you transform 3D OBJ files into
+    HTML, JPG, PNG, and PDF formats using Java. Follow this step‑by‑step guide to
+    render models quickly and customize output quality.
+  headline: GroupDocs Viewer OBJ Conversion Java to HTML, JPG, PNG, PDF
+  type: TechArticle
+- description: GroupDocs Viewer OBJ conversion lets you transform 3D OBJ files into
+    HTML, JPG, PNG, and PDF formats using Java. Follow this step‑by‑step guide to
+    render models quickly and customize output quality.
+  name: GroupDocs Viewer OBJ Conversion Java to HTML, JPG, PNG, PDF
+  steps:
+  - name: Import the required classes (`Viewer`, view‑option classes, etc.).
+    text: Import the required classes (`Viewer`, view‑option classes, etc.).
+  - name: Create a `Viewer` instance pointing at your OBJ file.
+    text: Create a `Viewer` instance pointing at your OBJ file.
+  - name: Choose the appropriate view options (HTML, JPG, PNG, or PDF).
+    text: Choose the appropriate view options (HTML, JPG, PNG, or PDF).
+  - name: '**Set Up the Output Directory**'
+    text: '**Set Up the Output Directory**'
+  - name: '**Create Viewer Instance**'
+    text: '**Create Viewer Instance**'
+  - name: '**Configure HTML View Options**'
+    text: '**Configure HTML View Options**'
+  - name: '**Render the OBJ Document**'
+    text: '**Render the OBJ Document**'
+  - name: '**Set Up the Output Directory**'
+    text: '**Set Up the Output Directory**'
+  - name: '**Create Viewer Instance**'
+    text: '**Create Viewer Instance**'
+  - name: '**Configure JPG View Options**'
+    text: '**Configure JPG View Options**'
+  type: HowTo
+- questions:
+  - answer: It supports over 100 input and output formats, including HTML, JPG, PNG,
+      PDF, DOCX, and OBJ.
+    question: What formats does GroupDocs.Viewer for Java support?
+  - answer: Verify the OBJ file path, ensure all dependent MTL files are present,
+      and confirm that the Maven dependency version matches the library you installed.
+    question: How do I troubleshoot rendering issues with OBJ files?
+  - answer: Yes, but monitor JVM memory usage and consider increasing the heap size
+      (`-Xmx`) for very large models.
+    question: Can GroupDocs.Viewer handle large OBJ files efficiently?
+  - answer: Yes, you can adjust settings like image resolution and compression in
+      `JpgViewOptions` and `PngViewOptions`.
+    question: Is it possible to customize output quality when rendering images?
+  - answer: Acquire a temporary license [here](https://purchase.groupdocs.com/temporary-license/).
+    question: How do I obtain a temporary license?
+  type: FAQPage
+tags:
+- groupdocs viewer
+- obj conversion
+- java 3d rendering
+- html export
+- pdf generation
+title: GroupDocs Viewer การแปลง OBJ ด้วย Java ไปยัง HTML, JPG, PNG, PDF
 type: docs
 url: /th/java/export-conversion/master-obj-conversion-java-html-jpg-png-pdf/
 weight: 1
 ---
 
-# วิธีแปลง OBJ เป็น HTML, JPG, PNG และ PDF ใน Java ด้วย GroupDocs.Viewer
+# การแปลง OBJ ของ GroupDocs Viewer เป็น HTML, JPG, PNG, PDF (Java)
 
-การแปลงโมเดล 3D OBJ ให้เป็นรูปแบบที่เหมาะกับเว็บหรือพิมพ์เป็นความต้องการทั่วไปสำหรับสถาปนิก, แพลตฟอร์มอีคอมเมิร์ซ, และผู้สร้างสื่อการเรียนรู้ออนไลน์ ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีแปลงไฟล์ OBJ** เป็น HTML, JPG, PNG และ PDF ด้วย GroupDocs.Viewer for Java—อย่างรวดเร็วและเชื่อถือได้
+ในบทแนะนำเชิงลึกนี้คุณจะได้เรียนรู้ **groupdocs viewer obj conversion** – กระบวนการแปลงโมเดล 3D OBJ ให้เป็น HTML ที่พร้อมใช้งานบนเว็บหรือรูปแบบภาพ (JPG, PNG) และ PDF ที่สามารถพิมพ์ได้ – โดยใช้ GroupDocs.Viewer สำหรับ Java ไม่ว่าคุณจะสร้างการแสดงผลสถาปัตยกรรม, ตัวชมสินค้าอีคอมเมิร์ซ, หรือสื่อการเรียนรู้ออนไลน์ ขั้นตอนต่อไปนี้จะแสดงวิธีทำให้ได้ผลลัพธ์คุณภาพสูงด้วยเพียงไม่กี่บรรทัดของโค้ด
 
-![การแปลง OBJ เป็น HTML/JPG/PNG/PDF ใน Java ด้วย GroupDocs.Viewer for Java](/viewer/export-conversion/obj-to-html-jpg-png-pdf-conversion-in-java.png)
+![OBJ to HTML/JPG/PNG/PDF Conversion in Java with GroupDocs.Viewer for Java](/viewer/export-conversion/obj-to-html-jpg-png-pdf-conversion-in-java.png)
+[OBJ to HTML/JPG/PNG/PDF Conversion in Java with GroupDocs.Viewer for Java](/viewer/export-conversion/obj-to-html-jpg-png-pdf-conversion-in-java.png)
 
-## คำตอบสั้น ๆ
-- **ไลบรารีหลักคืออะไร?** GroupDocs.Viewer for Java (v25.2)  
+## คำตอบอย่างรวดเร็ว
+- **อะไรคือไลบรารีหลัก?** GroupDocs.Viewer for Java (v25.2)  
 - **ฉันสามารถส่งออก OBJ ไปเป็นรูปแบบใดได้บ้าง?** HTML, JPG, PNG, และ PDF  
-- **ต้องมีลิขสิทธิ์หรือไม่?** ทดลองใช้ฟรีได้สำหรับการพัฒนา; ต้องมีลิขสิทธิ์ถาวรสำหรับการใช้งานจริง  
-- **รองรับ Maven หรือไม่?** ใช่—เพิ่มรีโพซิทอรีและ dependency ไปที่ `pom.xml`  
-- **สามารถปรับคุณภาพของภาพได้หรือไม่?** ใช่, ผ่าน `JpgViewOptions` และ `PngViewOptions`
+- **ฉันต้องการใบอนุญาตหรือไม่?** การทดลองใช้งานฟรีทำงานได้สำหรับการพัฒนา; จำเป็นต้องมีใบอนุญาตถาวรสำหรับการใช้งานในผลิตภัณฑ์จริง  
+- **Maven รองรับหรือไม่?** ใช่—เพิ่มรีโพซิทอรีและ dependency ไปที่ `pom.xml`  
+- **ฉันสามารถปรับคุณภาพของภาพได้หรือไม่?** ใช่, ผ่าน `JpgViewOptions` และ `PngViewOptions`
 
-## OBJ Conversion คืออะไรและทำไมคุณต้องการมัน?
-OBJ เป็นรูปแบบไฟล์กำหนดเรขาคณิต 3 มิติที่ใช้กันอย่างแพร่หลาย แม้ว่าจะทรงพลังสำหรับเครื่องมือ CAD และการสร้างโมเดล แต่ไม่สามารถดูได้โดยตรงในเบราว์เซอร์หรือเอกสารที่พิมพ์ได้ การแปลง OBJ เป็น HTML จะให้คุณผู้ชมแบบโต้ตอบ, ส่วน JPG/PNG จะให้ภาพนิ่ง, และ PDF จะให้เอกสารที่สามารถแชร์ได้ทั่วโลก นี่คือ **วิธีเรนเดอร์ OBJ** สำหรับช่องทางการส่งมอบที่หลากหลาย
+## การแปลง OBJ คืออะไรและทำไมคุณจึงต้องการมัน?
+การแปลง OBJ จะเปลี่ยนโมเดล 3D OBJ ให้เป็นรูปแบบที่เบราว์เซอร์หรือโปรแกรมดูเอกสารสามารถแสดงผลได้, ทำให้สามารถสร้างการแสดงผลแบบโต้ตอบหรือแบบพิมพ์ได้. ไฟล์ OBJ เหมาะกับเครื่องมือ CAD แต่ไม่สามารถดูได้โดยตรงบนเว็บ; การแปลงเป็น HTML จะให้ตัวชมแบบโต้ตอบ, ส่วน JPG/PNG ให้ภาพนิ่ง, และ PDF ให้เอกสารที่แชร์ได้ทั่วโลก.
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนเริ่ม, ตรวจสอบว่าคุณมี:
+ก่อนเริ่ม, โปรดตรวจสอบว่าคุณมี:
 
-- **GroupDocs.Viewer 25.2** (หรือใหม่กว่า) – ไลบรารีที่ทำหน้าที่แปลง  
-- **Java 17+** และ **Maven** ติดตั้งบนเครื่องพัฒนา  
-- ความคุ้นเคยพื้นฐานกับการเขียนโปรแกรม Java และโครงสร้างโปรเจกต์ Maven
+- **GroupDocs.Viewer 25.2** (หรือใหม่กว่า) – ไลบรารีที่ทำหน้าที่แปลง.  
+- **Java 17+** และ **Maven** ติดตั้งบนเครื่องพัฒนา.  
+- ความคุ้นเคยพื้นฐานกับการเขียนโปรแกรม Java และโครงสร้างโปรเจกต์ Maven.
 
-## การตั้งค่า GroupDocs.Viewer for Java
+## การตั้งค่า GroupDocs.Viewer สำหรับ Java
 
-### การติดตั้งผ่าน Maven
+### การติดตั้ง Maven
 
-เพิ่มรีโพซิทอรีและ dependency ไปที่ `pom.xml` ตามที่แสดงด้านล่าง:
+เพิ่มรีโพซิทอรีและ dependency ไปที่ `pom.xml` ของคุณตามที่แสดงด้านล่างอย่างแม่นยำ:
 
 ```xml
+<repositories>
+    <repository>
+        <id>groupdocs-repo</id>
+        <url>https://releases.groupdocs.com/maven/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-viewer</artifactId>
+        <version>25.2</version>
+    </dependency>
+</dependencies>
+```
+
+### การรับใบอนุญาต
+
+- **Free Trial:** ดาวน์โหลดการทดลองใช้งานฟรีจาก [GroupDocs website](https://releases.groupdocs.com/viewer/java/).  
+- **Temporary License:** สำหรับการทดสอบต่อเนื่อง, รับใบอนุญาตชั่วคราว [here](https://purchase.groupdocs.com/temporary-license/).  
+- **Purchase:** พิจารณาซื้อใบอนุญาตเต็มเพื่อเข้าถึงฟีเจอร์ทั้งหมดผ่าน [this link](https://purchase.groupdocs.com/buy).
+
+### การเริ่มต้นพื้นฐาน
+
+คลาส `Viewer` เป็นคอมโพเนนต์หลักที่โหลดและเรนเดอร์เอกสารที่รองรับ, รวมถึงไฟล์ OBJ. เพื่อเริ่มการเรนเดอร์, คุณจะ:
+
+1. นำเข้าคลาสที่จำเป็น (`Viewer`, คลาสตัวเลือกการดู, ฯลฯ).  
+2. สร้างอินสแตนซ์ `Viewer` ชี้ไปที่ไฟล์ OBJ ของคุณ.  
+3. เลือกตัวเลือกการดูที่เหมาะสม (HTML, JPG, PNG, หรือ PDF).  
+
+พื้นฐานนี้ทำให้คุณ **how to convert OBJ** ไปยังรูปแบบใดก็ได้ที่รองรับ.
+
+## วิธีทำการแปลง OBJ ด้วย GroupDocs Viewer ใน Java?
+
+โหลดไฟล์ OBJ ของคุณด้วย `new Viewer("model.obj")`, เลือกตัวเลือกการดูที่ต้องการ (เช่น `HtmlViewOptions.forEmbeddedResources(outputPath)`), แล้วเรียก `viewer.view(options)`. ไลบรารีจะจัดการการพาร์สเมช, การแมปเทกเจอร์, และการสร้างหน้าโดยอัตโนมัติ, ส่งมอบไฟล์ HTML, ภาพ, หรือ PDF ที่พร้อมใช้งานในไม่กี่บรรทัดของโค้ด.
+
+### การแสดงผล OBJ เป็น HTML
+
+คลาส `HtmlViewOptions` กำหนดวิธีการส่งออกโมเดล OBJ เป็นหน้า HTML แบบโต้ตอบ, รองรับการฝังทรัพยากรและการตั้งค่าที่กำหนดเอง.
+
+1. **ตั้งค่าไดเรกทอรีผลลัพธ์**  
+   ตรวจสอบให้แน่ใจว่าโฟลเดอร์ที่คุณระบุมีอยู่และสามารถเขียนได้.  
+
+   ```xml
 <repositories>
    <repository>
       <id>repository.groupdocs.com</id>
@@ -59,195 +168,176 @@ OBJ เป็นรูปแบบไฟล์กำหนดเรขาคณ�
 </dependencies>
 ```
 
-### การรับลิขสิทธิ์
+2. **สร้างอินสแตนซ์ Viewer**  
+   คลาส `Viewer` โหลดไฟล์ OBJ และเตรียมพร้อมสำหรับการเรนเดอร์.  
 
-- **ทดลองใช้ฟรี:** ดาวน์โหลดการทดลองใช้จาก [เว็บไซต์ GroupDocs](https://releases.groupdocs.com/viewer/java/)  
-- **ลิขสิทธิ์ชั่วคราว:** สำหรับการทดสอบระยะยาว, รับลิขสิทธิ์ชั่วคราว [ที่นี่](https://purchase.groupdocs.com/temporary-license/)  
-- **ซื้อ:** พิจารณาซื้อลิขสิทธิ์เต็มรูปแบบเพื่อเข้าถึงทั้งหมดผ่าน [ลิงก์นี้](https://purchase.groupdocs.com/buy)
-
-### การเริ่มต้นพื้นฐาน
-
-เพื่อเริ่มเรนเดอร์, คุณจะต้อง:
-
-1. นำเข้าคลาสที่จำเป็น (`Viewer`, คลาสตัวเลือกการดู, ฯลฯ)  
-2. สร้างอินสแตนซ์ `Viewer` ที่ชี้ไปยังไฟล์ OBJ ของคุณ  
-3. เลือกตัวเลือกการดูที่เหมาะสม (HTML, JPG, PNG หรือ PDF)  
-
-พื้นฐานนี้ทำให้คุณ **วิธีแปลง OBJ** ไปยังรูปแบบที่รองรับได้ทุกแบบ
-
-## คู่มือการทำงาน
-
-ด้านล่างนี้เป็นโค้ดตัวอย่างขั้นตอนต่อขั้นตอนสำหรับแต่ละรูปแบบเป้าหมาย โค้ดบล็อกจะคงไว้ตามต้นฉบับเพื่อความเข้ากันได้
-
-### การเรนเดอร์ OBJ เป็น HTML
-
-**วิธีเรนเดอร์ OBJ** เป็นหน้า HTML โต้ตอบ
-
-#### ขั้นตอนต่อขั้นตอน
-
-1. **ตั้งค่าโฟลเดอร์ผลลัพธ์**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.html");
 ```
 
-2. **สร้างอินสแตนซ์ Viewer**
+3. **กำหนดค่า HTML View Options**  
+   `HtmlViewOptions.forEmbeddedResources(outputPath)` จะฝังทรัพยากรทั้งหมด (เทกเจอร์, สคริปต์) ลงในโฟลเดอร์ผลลัพธ์.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **กำหนดค่า HTML View Options**
+4. **เรนเดอร์เอกสาร OBJ**  
+   เรียก `viewer.view(htmlOptions)` เพื่อสร้างการแสดงผล HTML.  
 
-```java
+   ```java
 HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 ```
 
-4. **เรนเดอร์เอกสาร OBJ**
+### การแสดงผล OBJ เป็น JPG
 
-```java
+คลาส `JpgViewOptions` ให้คุณกำหนดความละเอียด, คุณภาพ, และสีพื้นหลังสำหรับผลลัพธ์ JPEG.
+
+1. **ตั้งค่าไดเรกทอรีผลลัพธ์**  
+
+   ```java
 viewer.view(options);
 ```
 
-### การเรนเดอร์ OBJ เป็น JPG
+2. **สร้างอินสแตนซ์ Viewer**  
+   คลาส `Viewer` โหลดไฟล์ OBJ และเตรียมพร้อมสำหรับการเรนเดอร์.  
 
-**วิธีเรนเดอร์ OBJ** เป็นภาพ JPEG ความละเอียดสูง
-
-#### ขั้นตอนต่อขั้นตอน
-
-1. **ตั้งค่าโฟลเดอร์ผลลัพธ์**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.jpg");
 ```
 
-2. **สร้างอินสแตนซ์ Viewer**
+3. **กำหนดค่า JPG View Options**  
+   ปรับ `setResolution(int)` และ `setQuality(int)` เพื่อควบคุมขนาดภาพและการบีบอัด.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **กำหนดค่า JPG View Options**
+4. **เรนเดอร์เอกสาร OBJ**  
 
-```java
+   ```java
 JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
 ```
 
-4. **เรนเดอร์เอกสาร OBJ**
+### การแสดงผล OBJ เป็น PNG
 
-```java
+คลาส `PngViewOptions` รองรับความโปร่งใสและการสร้าง PNG ความละเอียดสูง.
+
+1. **ตั้งค่าไดเรกทอรีผลลัพธ์**  
+
+   ```java
 viewer.view(options);
 ```
 
-### การเรนเดอร์ OBJ เป็น PNG
+2. **สร้างอินสแตนซ์ Viewer**  
+   คลาส `Viewer` โหลดไฟล์ OBJ และเตรียมพร้อมสำหรับการเรนเดอร์.  
 
-**วิธีเรนเดอร์ OBJ** พร้อมการสนับสนุนความโปร่งใสโดยใช้ PNG
-
-#### ขั้นตอนต่อขั้นตอน
-
-1. **ตั้งค่าโฟลเดอร์ผลลัพธ์**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.png");
 ```
 
-2. **สร้างอินสแตนซ์ Viewer**
+3. **กำหนดค่า PNG View Options**  
+   ใช้ `setResolution(int)` สำหรับการควบคุม DPI และ `setTransparentBackground(true)` เมื่อจำเป็น.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **กำหนดค่า PNG View Options**
+4. **เรนเดอร์เอกสาร OBJ**  
 
-```java
+   ```java
 PngViewOptions options = new PngViewOptions(pageFilePathFormat);
 ```
 
-4. **เรนเดอร์เอกสาร OBJ**
+### การแสดงผล OBJ เป็น PDF
 
-```java
+คลาส `PdfViewOptions` สร้าง PDF ที่พิมพ์ได้และคงความละเอียดของโมเดล 3D ไว้.
+
+1. **ตั้งค่าไดเรกทอรีผลลัพธ์**  
+
+   ```java
 viewer.view(options);
 ```
 
-### การเรนเดอร์ OBJ เป็น PDF
+2. **สร้างอินสแตนซ์ Viewer**  
+   คลาส `Viewer` โหลดไฟล์ OBJ และเตรียมพร้อมสำหรับการเรนเดอร์.  
 
-**วิธีเรนเดอร์ OBJ** เป็นเอกสาร PDF ที่พิมพ์ได้ (มักเรียกว่า *java convert 3d pdf*)
-
-#### ขั้นตอนต่อขั้นตอน
-
-1. **ตั้งค่าโฟลเดอร์ผลลัพธ์**
-
-```java
+   ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("obj_result.pdf");
 ```
 
-2. **สร้างอินสแตนซ์ Viewer**
+3. **กำหนดค่า PDF View Options**  
+   ตั้งค่าขนาดหน้า, ระยะขอบ, และอาจฝังไฟล์ OBJ ดั้งเดิมเป็นไฟล์แนบ.  
 
-```java
+   ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_OBJ")) {
     // Code for rendering will go here
 }
 ```
 
-3. **กำหนดค่า PDF View Options**
+4. **เรนเดอร์เอกสาร OBJ**  
 
-```java
+   ```java
 PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
 ```
 
-4. **เรนเดอร์เอกสาร OBJ**
+## การประยุกต์ใช้งานจริง
+
+| สถานการณ์ | ทำไมต้องแปลง OBJ? | ผลลัพธ์ที่ต้องการ |
+|----------|------------------|------------------|
+| **การแสดงผลสถาปัตยกรรม** | แชร์โมเดลแบบโต้ตอบกับลูกค้า | HTML หรือ PDF |
+| **แคตาล็อกสินค้าออนไลน์** | แสดงภาพตัวอย่างแบบคงที่บนหน้าเว็บ | JPG / PNG |
+| **สื่อการศึกษา** | ฝังแผนภาพ 3 มิติในโมดูลการเรียนรู้ออนไลน์ | HTML หรือ PDF |
+| **เอกสารพร้อมพิมพ์** | สร้างแผ่นพิมพ์คุณภาพสูง | PDF |
+
+GroupDocs.Viewer รองรับ **over 100 file formats**, รวมถึง OBJ, PDF, DOCX, และอื่น ๆ, สามารถประมวลผลเอกสารหลายร้อยหน้าโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ.
+
+## การพิจารณาประสิทธิภาพและข้อผิดพลาดทั่วไป
+
+- **การจัดการหน่วยความจำ:** ไฟล์ OBJ ขนาดใหญ่สามารถใช้ heap มาก. ควรใช้รูปแบบ try‑with‑resources (ตามตัวอย่าง) เพื่อปิด `Viewer` อย่างรวดเร็ว.  
+- **การตั้งค่าคุณภาพ:** สำหรับ JPG/PNG, คุณสามารถปรับความละเอียดผ่าน `JpgViewOptions.setResolution(int)` หรือ `PngViewOptions.setResolution(int)`.  
+- **เส้นทางไฟล์:** ตรวจสอบให้แน่ใจว่าเส้นทางไฟล์ OBJ เป็นแบบ absolute หรืออ้างอิงอย่างถูกต้องจากโฟลเดอร์รากของโปรเจกต์; มิฉะนั้นจะเกิด `FileNotFoundException`.  
+- **ข้อผิดพลาดใบอนุญาต:** หากพบข้อยกเว้น “License not found”, ตรวจสอบว่าไฟล์ใบอนุญาตวางอยู่ใน classpath และใช้ใบอนุญาตที่พร้อมสำหรับการใช้งานจริง (ไม่ใช่ trial).
+
+## คำถามที่พบบ่อย
+
+**Q: ฟอร์แมตใดบ้างที่ GroupDocs.Viewer for Java รองรับ?**  
+A: รองรับฟอร์แมตเข้าและออกกว่า 100 ประเภท, รวมถึง HTML, JPG, PNG, PDF, DOCX, และ OBJ.
+
+**Q: ฉันจะแก้ไขปัญหาการเรนเดอร์ไฟล์ OBJ อย่างไร?**  
+A: ตรวจสอบเส้นทางไฟล์ OBJ, ให้แน่ใจว่าไฟล์ MTL ที่เกี่ยวข้องอยู่ครบ, และตรวจสอบว่าเวอร์ชัน dependency ของ Maven ตรงกับไลบรารีที่ติดตั้ง.
+
+**Q: GroupDocs.Viewer สามารถจัดการไฟล์ OBJ ขนาดใหญ่ได้อย่างมีประสิทธิภาพหรือไม่?**  
+A: ได้, แต่ควรตรวจสอบการใช้หน่วยความจำของ JVM และพิจารณาเพิ่มขนาด heap (`-Xmx`) สำหรับโมเดลที่ใหญ่มาก.
+
+**Q: สามารถปรับคุณภาพของผลลัพธ์ภาพได้หรือไม่เมื่อเรนเดอร์เป็นรูปภาพ?**  
+A: ได้, คุณสามารถปรับการตั้งค่าเช่น ความละเอียดและการบีบอัดใน `JpgViewOptions` และ `PngViewOptions`.
+
+**Q: ฉันจะได้รับใบอนุญาตชั่วคราวได้อย่างไร?**  
+A: รับใบอนุญาตชั่วคราวได้จาก [here](https://purchase.groupdocs.com/temporary-license/).
+
+---
+
+**อัปเดตล่าสุด:** 2026-07-29  
+**ทดสอบด้วย:** GroupDocs.Viewer 25.2 for Java  
+**ผู้เขียน:** GroupDocs  
 
 ```java
 viewer.view(options);
 ```
 
-## การประยุกต์ใช้ในทางปฏิบัติ
+## บทแนะนำที่เกี่ยวข้อง
 
-| สถานการณ์ | ทำไมต้องแปลง OBJ? | ผลลัพธ์ที่แนะนำ |
-|----------|-------------------|-----------------|
-| **การแสดงผลสถาปัตยกรรม** | แชร์โมเดลโต้ตอบกับลูกค้า | HTML หรือ PDF |
-| **แคตาล็อกสินค้าออนไลน์** | แสดงตัวอย่างแบบคงที่บนหน้าเว็บ | JPG / PNG |
-| **สื่อการศึกษา** | ฝังแผนภาพ 3D ในโมดูล e‑learning | HTML หรือ PDF |
-| **เอกสารพร้อมพิมพ์** | สร้างแผ่นพิมพ์คุณภาพสูง | PDF |
-
-## การพิจารณาประสิทธิภาพและข้อผิดพลาดทั่วไป
-
-- **การจัดการหน่วยความจำ:** ไฟล์ OBJ ขนาดใหญ่สามารถใช้ heap มาก ควรใช้รูปแบบ `try‑with‑resources` (ตามตัวอย่าง) เพื่อปิด `Viewer` อย่างรวดเร็ว  
-- **การตั้งค่าคุณภาพ:** สำหรับ JPG/PNG คุณสามารถปรับความละเอียดได้ผ่าน `JpgViewOptions.setResolution(int)` หรือ `PngViewOptions.setResolution(int)`  
-- **เส้นทางไฟล์:** ตรวจสอบให้แน่ใจว่าเส้นทางไฟล์ OBJ เป็นแบบ absolute หรืออ้างอิงอย่างถูกต้องสัมพันธ์กับโฟลเดอร์รากของโปรเจกต์; หากไม่เช่นนั้นจะเกิด `FileNotFoundException`  
-- **ข้อผิดพลาดลิขสิทธิ์:** หากพบข้อยกเว้น “License not found” ให้ตรวจสอบว่าไฟล์ลิขสิทธิ์อยู่ใน classpath และคุณใช้ลิขสิทธิ์ที่พร้อมใช้งานสำหรับการผลิตแล้ว
-
-## คำถามที่พบบ่อย
-
-**ถาม: GroupDocs.Viewer for Java รองรับรูปแบบไฟล์อะไรบ้าง?**  
-ตอบ: รองรับไฟล์หลายประเภท รวมถึง HTML, JPG, PNG, PDF และอื่น ๆ อีกมากมาย
-
-**ถาม: จะแก้ไขปัญหาเรนเดอร์ OBJ ไม่ได้อย่างไร?**  
-ตอบ: ตรวจสอบเส้นทางไฟล์ OBJ, ให้แน่ใจว่าไฟล์ MTL ที่เกี่ยวข้องอยู่ครบ, และตรวจสอบว่าเวอร์ชัน Maven dependency ตรงกับไลบรารีที่ติดตั้ง
-
-**ถาม: GroupDocs.Viewer สามารถจัดการไฟล์ OBJ ขนาดใหญ่ได้อย่างมีประสิทธิภาพหรือไม่?**  
-ตอบ: ใช่, แต่ควรเฝ้าดูการใช้หน่วยความจำของ JVM และพิจารณาเพิ่มขนาด heap (`-Xmx`) สำหรับโมเดลขนาดใหญ่มาก
-
-**ถาม: สามารถปรับคุณภาพของผลลัพธ์ภาพได้หรือไม่?**  
-ตอบ: ได้, คุณสามารถปรับการตั้งค่าความละเอียดและการบีบอัดใน `JpgViewOptions` และ `PngViewOptions`
-
-**ถาม: จะขอรับลิขสิทธิ์ชั่วคราวได้อย่างไร?**  
-ตอบ: รับลิขสิทธิ์ชั่วคราวได้ [ที่นี่](https://purchase.groupdocs.com/temporary-license/)
-
----
-
-**อัปเดตล่าสุด:** 2026-02-21  
-**ทดสอบกับ:** GroupDocs.Viewer 25.2 for Java  
-**ผู้เขียน:** GroupDocs  
-
----
+- [แปลง IGS เป็น PDF, HTML, JPG & PNG ด้วย GroupDocs.Viewer Java](/viewer/java/file-formats-support/groupdocs-viewer-java-igs-rendering-html-jpg-png-pdf/)
+- [convert odf html java – แปลง ODF เป็น HTML, JPG, PNG, PDF ด้วย GroupDocs.Viewer for Java](/viewer/java/export-conversion/convert-odf-documents-groupdocs-viewer-java/)
+- [Render Document Attachments into HTML Using GroupDocs.Viewer Java: A Step-by-Step Guide](/viewer/java/rendering-basics/render-document-attachments-html-groupdocs-viewer-java/)
