@@ -149,23 +149,6 @@ Laad het PST‑bestand met `new Viewer("source.pst")`, configureer `HtmlViewOpti
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Licentie‑acquisitie
 - **Gratis proefversie** – verken alle functies zonder kosten.  
 - **Tijdelijke licentie** – verleng de evaluatietijd indien nodig.  
@@ -226,8 +209,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Maak een `Viewer`‑object, geef het PST‑bestandspad door, en roep `view` aan met de `HtmlViewOptions`. De API doorloopt automatisch alle berichten in de PST en genereert een nette HTML‑hiërarchie.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST‑documenten renderen naar JPG
@@ -236,12 +221,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Maak een speciale map voor JPG‑snapshots; elke e‑mail wordt één of meer afbeeldingsbestanden afhankelijk van de lengte.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Stap 2: Load‑opties configureren
 Dezelfde `LoadOptions` die voor HTML werd gebruikt, kan hier opnieuw worden gebruikt, waardoor consistente wachtwoordafhandeling over formaten heen wordt gegarandeerd.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Stap 3: JPG‑viewopties definiëren
+`JpgViewOptions` regelt beeldresolutie, kwaliteit en uitvoermap voor JPEG‑conversie.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -250,20 +243,14 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Stap 3: JPG‑viewopties definiëren
-`JpgViewOptions` regelt beeldresolutie, kwaliteit en uitvoermap voor JPEG‑conversie.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### Stap 4: Viewer initialiseren en JPG renderen
 Gebruik `viewer.view(jpgOptions)` om hoogwaardige JPEG‑bestanden te genereren die klaar zijn voor web‑preview.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST‑documenten renderen naar PNG
@@ -272,26 +259,26 @@ loadOptions.setResourceLoadingTimeout(100);
 PNG‑output is nuttig wanneer u verliesvrije kwaliteit nodig heeft voor archivering of OCR‑verwerking.
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### Stap 2: Load‑opties configureren
 Geen extra instellingen zijn vereist naast de wachtwoord‑ en time‑out‑configuratie.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### Stap 3: PNG‑viewopties definiëren
 `PngViewOptions` stelt u in staat een transparante achtergrond en uitvoermap in te stellen voor verliesvrije PNG‑afbeeldingen.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### Stap 4: Viewer initialiseren en PNG renderen
@@ -299,7 +286,7 @@ Instantieer `viewer.view(pngOptions)` om PNG‑snapshots van elke e‑mail te pr
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -309,22 +296,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### Stap 1: Uitvoermap instellen
 Een enkel PDF‑bestand per PST vereenvoudigt juridische‑review‑workflows en vermindert opslag‑overhead.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Stap 2: Load‑opties configureren
 Bij conversie naar PDF wilt u mogelijk `setEmbedFonts(true)` inschakelen om visuele getrouwheid op elk apparaat te garanderen.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Stap 3: PDF‑viewopties definiëren
 `PdfViewOptions` laat u compressieniveau kiezen, lettertypen insluiten, en de uitvoernaam voor PDF‑conversie instellen.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Stap 4: Viewer initialiseren en PDF renderen
 Maak `PdfViewOptions`, kies eventueel een compressieniveau, en roep `viewer.view(pdfOptions)` aan. De API voegt alle e‑mails samen tot één doorzoekbaar PDF‑document.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Praktische toepassingen
 
