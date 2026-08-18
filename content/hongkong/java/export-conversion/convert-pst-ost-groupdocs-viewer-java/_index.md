@@ -145,23 +145,6 @@ GroupDocs.Viewer for Java 是一個伺服器端 API，能載入超過 100 種文
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### 取得授權
 - **Free trial** – 無償試用，探索所有功能。  
 - **Temporary license** – 如有需要，可延長評估時間。  
@@ -222,8 +205,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 建立 `Viewer` 物件，傳入 PST 檔案路徑，並使用 `HtmlViewOptions` 呼叫 `view`。API 會自動遍歷 PST 中的所有訊息，產生整齊的 HTML 結構。
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### 將 PST/OST 文件渲染為 JPG
@@ -232,12 +217,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 建立專用的資料夾以存放 JPG 快照；每封電子郵件會根據長度產生一或多個影像檔。
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### 步驟 2：設定載入選項
 可重複使用 HTML 所用的 `LoadOptions`，確保在不同格式間保持一致的密碼處理。
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### 步驟 3：定義 JPG 檢視選項
+`JpgViewOptions` 控制影像解析度、品質，以及 JPEG 轉換的輸出資料夾。
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -246,20 +239,14 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### 步驟 3：定義 JPG 檢視選項
-`JpgViewOptions` 控制影像解析度、品質，以及 JPEG 轉換的輸出資料夾。
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### 步驟 4：初始化 Viewer 並渲染 JPG
 使用 `viewer.view(jpgOptions)` 產生高品質的 JPEG 檔案，供網頁預覽使用。
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### 將 PST/OST 文件渲染為 PNG
@@ -268,26 +255,26 @@ loadOptions.setResourceLoadingTimeout(100);
 當需要無損品質以供存檔或 OCR 處理時，PNG 輸出相當有用。
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### 步驟 2：設定載入選項
 除密碼與逾時設定外，無需其他額外設定。
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### 步驟 3：定義 PNG 檢視選項
 `PngViewOptions` 允許您設定透明背景與無損 PNG 圖片的輸出資料夾。
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### 步驟 4：初始化 Viewer 並渲染 PNG
@@ -295,7 +282,7 @@ loadOptions.setResourceLoadingTimeout(100);
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -305,22 +292,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### 步驟 1：設定輸出目錄
 每個 PST 產生單一 PDF 檔，可簡化法律審查流程並降低儲存負擔。
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### 步驟 2：設定載入選項
 轉換為 PDF 時，您可能需要啟用 `setEmbedFonts(true)`，以確保在任何機器上皆能保持視覺一致性。
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### 步驟 3：定義 PDF 檢視選項
 `PdfViewOptions` 允許您選擇壓縮等級、嵌入字型，並設定 PDF 轉換的輸出檔名。
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### 步驟 4：初始化 Viewer 並渲染 PDF
 建立 `PdfViewOptions`，可選擇壓縮等級，然後呼叫 `viewer.view(pdfOptions)`。API 會將所有電子郵件合併為一個可搜尋的 PDF 文件。
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## 實務應用
 
