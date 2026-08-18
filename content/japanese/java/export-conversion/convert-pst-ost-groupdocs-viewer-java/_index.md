@@ -143,23 +143,6 @@ PST ファイルは `new Viewer("source.pst")` でロードし、`HtmlViewOption
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### ライセンス取得
 - **Free trial** – 料金なしで全機能を試せます。  
 - **Temporary license** – 必要に応じて評価期間を延長できます。  
@@ -217,8 +200,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 `Viewer` オブジェクトを作成し、PST ファイルパスを渡して `HtmlViewOptions` と共に `view` を呼び出します。API は PST 内のすべてのメッセージを自動的に走査し、整然とした HTML 階層を生成します。
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST ドキュメントを JPG にレンダリング
@@ -226,12 +211,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 JPG スナップショット用の専用フォルダーを作成します。各メールは長さに応じて 1 つまたは複数の画像ファイルになります。
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### ステップ 2: Load Options の設定
 HTML 用に使用した同じ `LoadOptions` をここでも再利用でき、形式間で一貫したパスワード処理が保証されます。
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### ステップ 3: JPG View Options の定義
+`JpgViewOptions` は画像解像度、品質、JPEG 変換の出力フォルダーを制御します。
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -240,25 +233,35 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### ステップ 3: JPG View Options の定義
-`JpgViewOptions` は画像解像度、品質、JPEG 変換の出力フォルダーを制御します。
+#### ステップ 4: Viewer の初期化と JPG のレンダリング
+`viewer.view(jpgOptions)` を使用して、ウェブプレビュー用の高品質 JPEG ファイルを生成します。
+
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+### PST/OST ドキュメントを PNG にレンダリング
+#### ステップ 1: 出力ディレクトリの設定
+PNG 出力は、アーカイブや OCR 処理のためにロスレス品質が必要な場合に有用です。
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
-#### ステップ 4: Viewer の初期化と JPG のレンダリング
-`viewer.view(jpgOptions)` を使用して、ウェブプレビュー用の高品質 JPEG ファイルを生成します。
+#### ステップ 2: Load Options の設定
+パスワードとタイムアウト設定以外に追加の設定は必要ありません。
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-### PST/OST ドキュメントを PNG にレンダリング
-#### ステップ 1: 出力ディレクトリの設定
-PNG 出力は、アーカイブや OCR 処理のためにロスレス品質が必要な場合に有用です。
+#### ステップ 3: PNG View Options の定義
+`PngViewOptions` では、透過背景とロスレス PNG 画像の出力フォルダーを設定できます。
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -267,28 +270,12 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### ステップ 2: Load Options の設定
-パスワードとタイムアウト設定以外に追加の設定は必要ありません。
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
-```
-
-#### ステップ 3: PNG View Options の定義
-`PngViewOptions` では、透過背景とロスレス PNG 画像の出力フォルダーを設定できます。
-
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
-```
-
 #### ステップ 4: Viewer の初期化と PNG のレンダリング
 `viewer.view(pngOptions)` をインスタンス化して、各メールの PNG スナップショットを生成します。
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -297,22 +284,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### ステップ 1: 出力ディレクトリの設定
 PST ごとに単一の PDF ファイルを作成すると、法務レビューのワークフローが簡素化され、ストレージ負荷が軽減されます。
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### ステップ 2: Load Options の設定
 PDF に変換する際は、任意のマシンで視覚的忠実度を保証するために `setEmbedFonts(true)` を有効にするとよいでしょう。
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### ステップ 3: PDF View Options の定義
 `PdfViewOptions` では、圧縮レベルの選択、フォントの埋め込み、PDF 変換の出力ファイル名を設定できます。
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### ステップ 4: Viewer の初期化と PDF のレンダリング
 `PdfViewOptions` を作成し、必要に応じて圧縮レベルを選択し、`viewer.view(pdfOptions)` を呼び出します。API はすべてのメールを 1 つの検索可能な PDF ドキュメントに統合します。
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## 実用的な活用例
 - **Email Archiving:** 大規模な PST アーカイブを検索可能な HTML または PDF に変換し、コンプライアンスに対応します。  
