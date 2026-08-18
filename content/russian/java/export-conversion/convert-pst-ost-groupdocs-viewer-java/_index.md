@@ -146,23 +146,6 @@ GroupDocs.Viewer для Java — это серверный API, который �
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Приобретение лицензии
 - **Бесплатная пробная версия** — изучите все функции без оплаты.  
 - **Временная лицензия** — при необходимости продлите период оценки.  
@@ -220,8 +203,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Создайте объект `Viewer`, передайте путь к файлу PST и вызовите `view` с `HtmlViewOptions`. API автоматически перебирает все сообщения внутри PST и генерирует аккуратную иерархию HTML.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Рендеринг документов PST/OST в JPG
@@ -229,12 +214,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Создайте отдельную папку для JPG‑снимков; каждое письмо будет преобразовано в один или несколько файлов изображений в зависимости от его длины.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Шаг 2: Настройка параметров загрузки
 Те же `LoadOptions`, что использовались для HTML, можно переиспользовать здесь, обеспечивая согласованную обработку пароля во всех форматах.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Шаг 3: Определение параметров JPG‑просмотра
+`JpgViewOptions` управляет разрешением изображения, качеством и папкой вывода для конвертации в JPEG.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -243,25 +236,35 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Шаг 3: Определение параметров JPG‑просмотра
-`JpgViewOptions` управляет разрешением изображения, качеством и папкой вывода для конвертации в JPEG.
+#### Шаг 4: Инициализация Viewer и рендеринг JPG
+Используйте `viewer.view(jpgOptions)`, чтобы создать JPEG‑файлы высокого качества, готовые для веб‑предпросмотра.
+
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+### Рендеринг документов PST/OST в PNG
+#### Шаг 1: Настройка каталога вывода
+Вывод в PNG полезен, когда требуется без потерь качество для архивирования или OCR‑обработки.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
-#### Шаг 4: Инициализация Viewer и рендеринг JPG
-Используйте `viewer.view(jpgOptions)`, чтобы создать JPEG‑файлы высокого качества, готовые для веб‑предпросмотра.
+#### Шаг 2: Настройка параметров загрузки
+Дополнительные настройки не требуются, кроме конфигурации пароля и тайм‑аута.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-### Рендеринг документов PST/OST в PNG
-#### Шаг 1: Настройка каталога вывода
-Вывод в PNG полезен, когда требуется без потерь качество для архивирования или OCR‑обработки.
+#### Шаг 3: Определение параметров PNG‑просмотра
+`PngViewOptions` позволяет задать прозрачный фон и папку вывода для без потерь PNG‑изображений.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -270,28 +273,12 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Шаг 2: Настройка параметров загрузки
-Дополнительные настройки не требуются, кроме конфигурации пароля и тайм‑аута.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
-```
-
-#### Шаг 3: Определение параметров PNG‑просмотра
-`PngViewOptions` позволяет задать прозрачный фон и папку вывода для без потерь PNG‑изображений.
-
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
-```
-
 #### Шаг 4: Инициализация Viewer и рендеринг PNG
 Создайте `viewer.view(pngOptions)`, чтобы получить PNG‑снимки каждого письма.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -300,22 +287,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### Шаг 1: Настройка каталога вывода
 Один PDF‑файл на PST упрощает процессы юридической проверки и уменьшает объем хранилища.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Шаг 2: Настройка параметров загрузки
 При конвертации в PDF вы можете включить `setEmbedFonts(true)`, чтобы обеспечить визуальную точность на любом устройстве.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Шаг 3: Определение параметров PDF‑просмотра
 `PdfViewOptions` позволяет выбрать уровень сжатия, встраивание шрифтов и задать имя выходного файла для конвертации в PDF.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Шаг 4: Инициализация Viewer и рендеринг PDF
 Создайте `PdfViewOptions`, при желании выберите уровень сжатия и вызовите `viewer.view(pdfOptions)`. API объединяет все письма в один поисковый PDF‑документ.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Практические применения
 - **Архивирование электронной почты:** Преобразуйте большие архивы PST в поисковые HTML или PDF для соответствия требованиям.  
