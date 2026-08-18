@@ -146,23 +146,6 @@ Läs in PST‑filen med `new Viewer("source.pst")`, konfigurera `HtmlViewOptions
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Licensanskaffning
 - **Free trial** – utforska alla funktioner utan kostnad.  
 - **Temporary license** – förläng utvärderingstiden vid behov.  
@@ -220,8 +203,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Skapa ett `Viewer`‑objekt, ange PST‑filens sökväg och anropa `view` med `HtmlViewOptions`. API‑et itererar automatiskt genom alla meddelanden i PST‑filen och genererar en strukturerad HTML‑hierarki.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Rendera PST/OST-dokument till JPG
@@ -229,12 +214,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Skapa en dedikerad mapp för JPG‑ögonblicksbilder; varje e‑post blir en eller flera bildfiler beroende på dess längd.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Steg 2: Konfigurera Load Options
 Samma `LoadOptions` som användes för HTML kan återanvändas här, vilket säkerställer konsekvent lösenordshantering över format.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Steg 3: Definiera JPG‑visningsalternativ
+`JpgViewOptions` styr bildupplösning, kvalitet och utdata‑mapp för JPEG‑konvertering.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -243,25 +236,35 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Steg 3: Definiera JPG‑visningsalternativ
-`JpgViewOptions` styr bildupplösning, kvalitet och utdata‑mapp för JPEG‑konvertering.
+#### Steg 4: Initiera Viewer och rendera JPG
+Använd `viewer.view(jpgOptions)` för att generera högkvalitativa JPEG‑filer redo för webb‑förhandsvisning.
+
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+### Rendera PST/OST-dokument till PNG
+#### Steg 1: Skapa utdata‑katalog
+PNG‑utdata är användbart när du behöver förlustfri kvalitet för arkivering eller OCR‑behandling.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
-#### Steg 4: Initiera Viewer och rendera JPG
-Använd `viewer.view(jpgOptions)` för att generera högkvalitativa JPEG‑filer redo för webb‑förhandsvisning.
+#### Steg 2: Konfigurera Load Options
+Inga ytterligare inställningar krävs utöver lösenord och timeout‑konfiguration.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-### Rendera PST/OST-dokument till PNG
-#### Steg 1: Skapa utdata‑katalog
-PNG‑utdata är användbart när du behöver förlustfri kvalitet för arkivering eller OCR‑behandling.
+#### Steg 3: Definiera PNG‑visningsalternativ
+`PngViewOptions` låter dig ange en transparent bakgrund och utdata‑mapp för förlustfria PNG‑bilder.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -270,28 +273,12 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Steg 2: Konfigurera Load Options
-Inga ytterligare inställningar krävs utöver lösenord och timeout‑konfiguration.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
-```
-
-#### Steg 3: Definiera PNG‑visningsalternativ
-`PngViewOptions` låter dig ange en transparent bakgrund och utdata‑mapp för förlustfria PNG‑bilder.
-
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
-```
-
 #### Steg 4: Initiera Viewer och rendera PNG
 Instansiera `viewer.view(pngOptions)` för att producera PNG‑ögonblicksbilder av varje e‑post.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -300,22 +287,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### Steg 1: Skapa utdata‑katalog
 En enda PDF‑fil per PST förenklar juridiska granskningsprocesser och minskar lagringskostnader.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Steg 2: Konfigurera Load Options
 När du konverterar till PDF kan du vilja aktivera `setEmbedFonts(true)` för att garantera visuell trohet på vilken maskin som helst.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Steg 3: Definiera PDF‑visningsalternativ
 `PdfViewOptions` låter dig välja komprimeringsnivå, bädda in teckensnitt och ange filnamn för PDF‑konvertering.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Steg 4: Initiera Viewer och rendera PDF
 Skapa `PdfViewOptions`, välj eventuellt en komprimeringsnivå och anropa `viewer.view(pdfOptions)`. API‑et sammanslår alla e‑postmeddelanden till ett sökbart PDF‑dokument.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Praktiska tillämpningar
 - **Email Archiving:** Omvandla stora PST‑arkiv till sökbar HTML eller PDF för efterlevnad.  
