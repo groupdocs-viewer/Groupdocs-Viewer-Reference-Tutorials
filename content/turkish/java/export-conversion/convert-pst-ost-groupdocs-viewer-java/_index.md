@@ -147,23 +147,6 @@ GroupDocs.Viewer for Java, dış yazılım gerektirmeden 100'den fazla belge ve 
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Lisans Edinme
 - **Ücretsiz deneme** – tüm özellikleri ücretsiz keşfedin.  
 - **Geçici lisans** – gerekirse değerlendirme süresini uzatın.  
@@ -221,8 +204,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Bir `Viewer` nesnesi oluşturun, PST dosya yolunu geçin ve `HtmlViewOptions` ile `view` metodunu çağırın. API, PST içindeki tüm mesajlar üzerinde otomatik olarak döner ve düzenli bir HTML hiyerarşisi üretir.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST Belgelerini JPG'ye Render Etme
@@ -230,12 +215,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 JPG anlık görüntüleri için özel bir klasör oluşturun; her e‑posta uzunluğuna bağlı olarak bir veya daha fazla görüntü dosyasına dönüşür.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Adım 2: Load Options'ı Yapılandırma
 HTML için kullanılan aynı `LoadOptions` burada da yeniden kullanılabilir, formatlar arasında tutarlı şifre yönetimi sağlar.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Adım 3: JPG View Options'ı Tanımlama
+`JpgViewOptions`, JPEG dönüşümü için görüntü çözünürlüğünü, kalitesini ve çıktı klasörünü kontrol eder.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -244,25 +237,35 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Adım 3: JPG View Options'ı Tanımlama
-`JpgViewOptions`, JPEG dönüşümü için görüntü çözünürlüğünü, kalitesini ve çıktı klasörünü kontrol eder.
+#### Adım 4: Viewer'ı Başlat ve JPG'yi Render Et
+Web önizlemesi için yüksek kalite JPEG dosyaları üretmek üzere `viewer.view(jpgOptions)` kullanın.
+
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+### PST/OST Belgelerini PNG'ye Render Etme
+#### Adım 1: Çıktı Dizini Oluşturma
+Arşivleme veya OCR işleme için kayıpsız kalite gerektiğinde PNG çıktısı faydalıdır.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
-#### Adım 4: Viewer'ı Başlat ve JPG'yi Render Et
-Web önizlemesi için yüksek kalite JPEG dosyaları üretmek üzere `viewer.view(jpgOptions)` kullanın.
+#### Adım 2: Load Options'ı Yapılandırma
+Şifre ve zaman aşımı yapılandırmasının ötesinde ek bir ayar gerekmez.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-### PST/OST Belgelerini PNG'ye Render Etme
-#### Adım 1: Çıktı Dizini Oluşturma
-Arşivleme veya OCR işleme için kayıpsız kalite gerektiğinde PNG çıktısı faydalıdır.
+#### Adım 3: PNG View Options'ı Tanımlama
+`PngViewOptions`, kayıpsız PNG görüntüleri için şeffaf arka plan ve çıktı klasörü ayarlamanıza olanak tanır.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -271,28 +274,12 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Adım 2: Load Options'ı Yapılandırma
-Şifre ve zaman aşımı yapılandırmasının ötesinde ek bir ayar gerekmez.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
-```
-
-#### Adım 3: PNG View Options'ı Tanımlama
-`PngViewOptions`, kayıpsız PNG görüntüleri için şeffaf arka plan ve çıktı klasörü ayarlamanıza olanak tanır.
-
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
-```
-
 #### Adım 4: Viewer'ı Başlat ve PNG'yi Render Et
 Her e‑posta için PNG anlık görüntüleri üretmek üzere `viewer.view(pngOptions)` örnekleyin.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -301,22 +288,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### Adım 1: Çıktı Dizini Oluşturma
 PST başına tek bir PDF dosyası, yasal inceleme iş akışlarını basitleştirir ve depolama yükünü azaltır.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Adım 2: Load Options'ı Yapılandırma
 PDF'ye dönüştürürken, herhangi bir makinede görsel tutarlılığı sağlamak için `setEmbedFonts(true)`'ı etkinleştirmek isteyebilirsiniz.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Adım 3: PDF View Options'ı Tanımlama
 `PdfViewOptions`, sıkıştırma seviyesini seçmenize, yazı tiplerini gömmesine ve PDF dönüşümü için çıktı dosya adını ayarlamanıza olanak tanır.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Adım 4: Viewer'ı Başlat ve PDF'yi Render Et
 `PdfViewOptions` oluşturun, isteğe bağlı olarak bir sıkıştırma seviyesi seçin ve `viewer.view(pdfOptions)`'ı çağırın. API, tüm e‑postaları tek bir aranabilir PDF belgesinde birleştirir.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Pratik Uygulamalar
 - **E‑posta Arşivleme:** Büyük PST arşivlerini uyumluluk için aranabilir HTML veya PDF'ye dönüştürün.  
