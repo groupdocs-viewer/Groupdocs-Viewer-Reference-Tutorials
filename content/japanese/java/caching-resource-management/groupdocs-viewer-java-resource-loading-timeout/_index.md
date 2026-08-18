@@ -312,8 +312,3 @@ GroupDocs.Viewer for Java で **set resource timeout java** を設定するこ�
 **最終更新日:** 2026-04-09  
 **テスト環境:** GroupDocs.Viewer 25.2 (Java)  
 **作者:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

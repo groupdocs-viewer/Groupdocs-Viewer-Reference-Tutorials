@@ -313,8 +313,3 @@ Askıya alınan belgelere veda etmeye hazır mısınız? Kullanıcılarınız ke
 **Son Güncelleme:** 2026-04-09  
 **Test Edilen Versiyon:** GroupDocs.Viewer 25.2 (Java)  
 **Yazar:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

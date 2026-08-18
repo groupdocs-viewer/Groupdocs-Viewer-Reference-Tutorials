@@ -308,8 +308,3 @@ try (Viewer viewer = new Viewer(documentPath, loadOptions)) {
 **Last Updated:** 2026-04-09  
 **Tested With:** GroupDocs.Viewer 25.2 (Java)  
 **Author:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

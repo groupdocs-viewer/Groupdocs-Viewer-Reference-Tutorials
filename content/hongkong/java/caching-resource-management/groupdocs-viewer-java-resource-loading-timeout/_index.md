@@ -308,8 +308,3 @@ A: 本教學針對本地端 Java 程式庫。Cloud API 有其自有的逾時機�
 **最後更新：** 2026-04-09  
 **測試環境：** GroupDocs.Viewer 25.2（Java）  
 **作者：** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

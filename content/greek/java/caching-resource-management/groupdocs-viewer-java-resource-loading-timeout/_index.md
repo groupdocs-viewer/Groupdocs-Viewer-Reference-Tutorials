@@ -312,8 +312,3 @@ A: Αυτό το σεμινάριο καλύπτει τη βιβλιοθήκη J
 **Τελευταία Ενημέρωση:** 2026-04-09  
 **Δοκιμή Με:** GroupDocs.Viewer 25.2 (Java)  
 **Συγγραφέας:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

@@ -309,8 +309,3 @@ Redo att säga adjö till hängande dokument? Dina användare kommer definitivt 
 **Senast uppdaterad:** 2026-04-09  
 **Testad med:** GroupDocs.Viewer 25.2 (Java)  
 **Författare:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

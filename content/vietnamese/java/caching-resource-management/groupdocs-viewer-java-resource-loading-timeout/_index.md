@@ -316,8 +316,3 @@ Sẵn sàng nói lời tạm biệt với các tài liệu treo? Người dùng 
 **Cập nhật lần cuối:** 2026-04-09  
 **Đã kiểm tra với:** GroupDocs.Viewer 25.2 (Java)  
 **Tác giả:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

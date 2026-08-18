@@ -313,8 +313,3 @@ Ready to say goodbye to hanging documents? Your users will definitely notice the
 **อัปเดตล่าสุด:** 2026-04-09  
 **ทดสอบด้วย:** GroupDocs.Viewer 25.2 (Java)  
 **ผู้เขียน:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}
