@@ -148,23 +148,6 @@ Muat file PST dengan `new Viewer("source.pst")`, konfigurasikan `HtmlViewOptions
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Perolehan Lisensi
 - **Free trial** – jelajahi semua fitur tanpa biaya.  
 - **Temporary license** – perpanjang waktu evaluasi jika diperlukan.  
@@ -229,8 +212,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Buat objek `Viewer`, berikan jalur file PST, dan panggil `view` dengan `HtmlViewOptions`. API secara otomatis mengiterasi semua pesan di dalam PST dan menghasilkan hierarki HTML yang rapi.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Merender Dokumen PST/OST ke JPG
@@ -240,13 +225,22 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Buat folder khusus untuk snapshot JPG; setiap email akan menjadi satu atau beberapa file gambar tergantung pada panjangnya.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Langkah 2: Konfigurasikan Load Options
 
 `LoadOptions` yang sama digunakan untuk HTML dapat digunakan kembali di sini, memastikan penanganan kata sandi yang konsisten di semua format.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Langkah 3: Tentukan JPG View Options
+
+`JpgViewOptions` mengontrol resolusi gambar, kualitas, dan folder output untuk konversi JPEG.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -255,22 +249,15 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Langkah 3: Tentukan JPG View Options
-
-`JpgViewOptions` mengontrol resolusi gambar, kualitas, dan folder output untuk konversi JPEG.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### Langkah 4: Inisialisasi Viewer dan Render JPG
 
 Gunakan `viewer.view(jpgOptions)` untuk menghasilkan file JPEG berkualitas tinggi siap untuk pratinjau web.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Merender Dokumen PST/OST ke PNG
@@ -280,10 +267,8 @@ loadOptions.setResourceLoadingTimeout(100);
 Output PNG berguna ketika Anda membutuhkan kualitas lossless untuk pengarsipan atau pemrosesan OCR.
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### Langkah 2: Konfigurasikan Load Options
@@ -291,8 +276,8 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Tidak ada pengaturan tambahan yang diperlukan selain konfigurasi kata sandi dan batas waktu.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### Langkah 3: Tentukan PNG View Options
@@ -300,8 +285,10 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
 `PngViewOptions` memungkinkan Anda mengatur latar belakang transparan dan folder output untuk gambar PNG lossless.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### Langkah 4: Inisialisasi Viewer dan Render PNG
@@ -310,7 +297,7 @@ Instansiasi `viewer.view(pngOptions)` untuk menghasilkan snapshot PNG dari setia
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -321,25 +308,41 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 
 Satu file PDF per PST menyederhanakan alur kerja peninjauan hukum dan mengurangi beban penyimpanan.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Langkah 2: Konfigurasikan Load Options
 
 Saat mengonversi ke PDF, Anda mungkin ingin mengaktifkan `setEmbedFonts(true)` untuk menjamin fidelitas visual pada mesin apa pun.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Langkah 3: Tentukan PDF View Options
 
 `PdfViewOptions` memungkinkan Anda memilih tingkat kompresi, menyematkan font, dan mengatur nama file output untuk konversi PDF.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Langkah 4: Inisialisasi Viewer dan Render PDF
 
 Buat `PdfViewOptions`, pilih tingkat kompresi secara opsional, dan panggil `viewer.view(pdfOptions)`. API menggabungkan semua email menjadi satu dokumen PDF yang dapat dicari.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Aplikasi Praktis
 - **Pengarsipan Email:** Ubah arsip PST besar menjadi HTML atau PDF yang dapat dicari untuk kepatuhan.  
