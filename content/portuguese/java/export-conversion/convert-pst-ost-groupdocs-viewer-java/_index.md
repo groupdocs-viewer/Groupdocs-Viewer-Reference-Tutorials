@@ -148,23 +148,6 @@ Carregue o arquivo PST com `new Viewer("source.pst")`, configure `HtmlViewOption
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Aquisição de Licença
 - **Teste gratuito** – explore todos os recursos sem custo.  
 - **Licença temporária** – estenda o período de avaliação se necessário.  
@@ -225,8 +208,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Crie um objeto `Viewer`, passe o caminho do arquivo PST e chame `view` com o `HtmlViewOptions`. A API itera automaticamente por todas as mensagens dentro do PST e gera uma hierarquia HTML organizada.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Renderizando documentos PST/OST para JPG
@@ -235,12 +220,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Crie uma pasta dedicada para snapshots JPG; cada e‑mail se tornará um ou mais arquivos de imagem dependendo do seu comprimento.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Etapa 2: Configurar Opções de Carregamento
 As mesmas `LoadOptions` usadas para HTML podem ser reutilizadas aqui, garantindo tratamento de senha consistente entre os formatos.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Etapa 3: Definir Opções de Visualização JPG
+`JpgViewOptions` controla a resolução da imagem, qualidade e pasta de saída para a conversão JPEG.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -249,20 +242,14 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Etapa 3: Definir Opções de Visualização JPG
-`JpgViewOptions` controla a resolução da imagem, qualidade e pasta de saída para a conversão JPEG.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### Etapa 4: Inicializar o Viewer e Renderizar JPG
 Use `viewer.view(jpgOptions)` para gerar arquivos JPEG de alta qualidade prontos para visualização web.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Renderizando documentos PST/OST para PNG
@@ -271,26 +258,26 @@ loadOptions.setResourceLoadingTimeout(100);
 A saída PNG é útil quando você precisa de qualidade sem perdas para arquivamento ou processamento OCR.
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### Etapa 2: Configurar Opções de Carregamento
 Nenhuma configuração adicional é necessária além da senha e do tempo limite.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### Etapa 3: Definir Opções de Visualização PNG
 `PngViewOptions` permite definir um fundo transparente e a pasta de saída para imagens PNG sem perdas.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### Etapa 4: Inicializar o Viewer e Renderizar PNG
@@ -298,7 +285,7 @@ Instancie `viewer.view(pngOptions)` para produzir snapshots PNG de cada e‑mail
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -308,22 +295,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### Etapa 1: Configurar o Diretório de Saída
 Um único arquivo PDF por PST simplifica fluxos de trabalho de revisão legal e reduz o uso de armazenamento.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Etapa 2: Configurar Opções de Carregamento
 Ao converter para PDF, você pode querer habilitar `setEmbedFonts(true)` para garantir fidelidade visual em qualquer máquina.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Etapa 3: Definir Opções de Visualização PDF
 `PdfViewOptions` permite escolher o nível de compressão, incorporar fontes e definir o nome do arquivo de saída para a conversão PDF.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Etapa 4: Inicializar o Viewer e Renderizar PDF
 Crie `PdfViewOptions`, opcionalmente escolha um nível de compressão e chame `viewer.view(pdfOptions)`. A API mescla todos os e‑mails em um único documento PDF pesquisável.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Aplicações Práticas
 
