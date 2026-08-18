@@ -148,23 +148,6 @@ Töltse be a PST fájlt a `new Viewer("source.pst")` segítségével, állítsa 
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Licenc beszerzése
 - **Free trial** – minden funkció kipróbálása költség nélkül.  
 - **Temporary license** – a kiértékelési idő meghosszabbítása szükség esetén.  
@@ -223,8 +206,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Hozzon létre egy `Viewer` objektumot, adja meg a PST fájl útvonalát, és hívja meg a `view` metódust a `HtmlViewOptions`‑szal. Az API automatikusan végigiterál a PST‑ben lévő összes üzeneten, és rendezett HTML hierarchiát generál.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST dokumentumok renderelése JPG-be
@@ -233,12 +218,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Hozzon létre egy dedikált mappát a JPG pillanatképeknek; minden e‑mail a hosszától függően egy vagy több képfájlt eredményez.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### 2. lépés: Load Options konfigurálása
 Az HTML‑hez használt `LoadOptions` ugyanúgy felhasználható itt is, biztosítva a jelszókezelés konzisztenciáját a formátumok között.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### 3. lépés: JPG View Options meghatározása
+A `JpgViewOptions` szabályozza a kép felbontását, minőségét és a JPEG konvertálás kimeneti mappáját.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -247,20 +240,14 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### 3. lépés: JPG View Options meghatározása
-A `JpgViewOptions` szabályozza a kép felbontását, minőségét és a JPEG konvertálás kimeneti mappáját.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### 4. lépés: Viewer inicializálása és JPG renderelése
 Használja a `viewer.view(jpgOptions)` metódust, hogy magas minőségű JPEG fájlokat generáljon, amelyek készen állnak a webes előnézetre.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST dokumentumok renderelése PNG-be
@@ -269,26 +256,26 @@ loadOptions.setResourceLoadingTimeout(100);
 A PNG kimenet hasznos, ha veszteségmentes minőségre van szükség archiváláshoz vagy OCR feldolgozáshoz.
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### 2. lépés: Load Options konfigurálása
 A jelszó és időkorlát beállításon kívül nincs szükség további beállításokra.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### 3. lépés: PNG View Options meghatározása
 A `PngViewOptions` lehetővé teszi átlátszó háttér és kimeneti mappa beállítását a veszteségmentes PNG képekhez.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### 4. lépés: Viewer inicializálása és PNG renderelése
@@ -296,7 +283,7 @@ Hozzon létre egy `viewer.view(pngOptions)` hívást, hogy PNG pillanatképeket 
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -306,22 +293,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### 1. lépés: Kimeneti könyvtár beállítása
 Egyetlen PDF fájl PST‑nként egyszerűsíti a jogi felülvizsgálati munkafolyamatokat és csökkenti a tárolási terhelést.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### 2. lépés: Load Options konfigurálása
 PDF‑re konvertáláskor érdemes engedélyezni a `setEmbedFonts(true)` beállítást, hogy bármely gépen garantálja a vizuális hűséget.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### 3. lépés: PDF View Options meghatározása
 A `PdfViewOptions` lehetővé teszi a tömörítési szint, a betűk beágyazása és a PDF konvertálás kimeneti fájlnevének beállítását.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### 4. lépés: Viewer inicializálása és PDF renderelése
 Hozzon létre `PdfViewOptions`‑t, opcionálisan válasszon tömörítési szintet, és hívja meg a `viewer.view(pdfOptions)` metódust. Az API az összes e‑mailt egy kereshető PDF dokumentummá egyesíti.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Gyakorlati alkalmazások
 - **Email Archiving:** Nagy PST archívumok kereshető HTML‑re vagy PDF‑re alakítása a megfelelőség érdekében.  
