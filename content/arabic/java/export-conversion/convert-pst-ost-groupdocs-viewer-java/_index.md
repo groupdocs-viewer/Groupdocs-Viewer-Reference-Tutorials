@@ -144,23 +144,6 @@ GroupDocs.Viewer للـ Java هو API من جانب الخادم يقوم بتح
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### الحصول على الترخيص
 - **نسخة تجريبية مجانية** – استكشف جميع الميزات دون تكلفة.  
 - **ترخيص مؤقت** – تمديد فترة التقييم إذا لزم الأمر.  
@@ -218,8 +201,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 أنشئ كائن `Viewer`، مرّر مسار ملف PST، واستدعِ `view` مع `HtmlViewOptions`. يقوم الـ API تلقائيًا بالتنقل عبر جميع الرسائل داخل PST ويولد هيكل HTML منظم.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### عرض مستندات PST/OST إلى JPG
@@ -227,12 +212,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 أنشئ مجلدًا مخصصًا لصور JPG؛ سيصبح كل بريد إلكتروني ملفًا أو أكثر من الصور حسب طوله.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### الخطوة 2: تكوين خيارات التحميل
 `LoadOptions` المستخدمة لـ HTML يمكن إعادة استخدامها هنا، لضمان معالجة كلمة المرور المتسقة عبر الصيغ.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### الخطوة 3: تعريف خيارات عرض JPG
+`JpgViewOptions` يتحكم في دقة الصورة، الجودة، ومجلد الإخراج لتحويل JPEG.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -241,25 +234,35 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### الخطوة 3: تعريف خيارات عرض JPG
-`JpgViewOptions` يتحكم في دقة الصورة، الجودة، ومجلد الإخراج لتحويل JPEG.
+#### الخطوة 4: تهيئة Viewer وعرض JPG
+استخدم `viewer.view(jpgOptions)` لإنشاء ملفات JPEG عالية الجودة جاهزة للمعاينة على الويب.
+
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+### عرض مستندات PST/OST إلى PNG
+#### الخطوة 1: إعداد دليل الإخراج
+إخراج PNG مفيد عندما تحتاج إلى جودة بدون فقدان للأرشفة أو معالجة OCR.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
-#### الخطوة 4: تهيئة Viewer وعرض JPG
-استخدم `viewer.view(jpgOptions)` لإنشاء ملفات JPEG عالية الجودة جاهزة للمعاينة على الويب.
+#### الخطوة 2: تكوين خيارات التحميل
+لا توجد إعدادات إضافية مطلوبة بخلاف تكوين كلمة المرور والمهلة.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-### عرض مستندات PST/OST إلى PNG
-#### الخطوة 1: إعداد دليل الإخراج
-إخراج PNG مفيد عندما تحتاج إلى جودة بدون فقدان للأرشفة أو معالجة OCR.
+#### الخطوة 3: تعريف خيارات عرض PNG
+`PngViewOptions` يتيح لك ضبط خلفية شفافة ومجلد إخراج لصور PNG بدون فقدان.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -268,28 +271,12 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### الخطوة 2: تكوين خيارات التحميل
-لا توجد إعدادات إضافية مطلوبة بخلاف تكوين كلمة المرور والمهلة.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
-```
-
-#### الخطوة 3: تعريف خيارات عرض PNG
-`PngViewOptions` يتيح لك ضبط خلفية شفافة ومجلد إخراج لصور PNG بدون فقدان.
-
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
-```
-
 #### الخطوة 4: تهيئة Viewer وعرض PNG
 أنشئ `viewer.view(pngOptions)` لإنتاج لقطات PNG لكل بريد إلكتروني.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -298,22 +285,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### الخطوة 1: إعداد دليل الإخراج
 ملف PDF واحد لكل PST يبسط سير عمل المراجعة القانونية ويقلل من عبء التخزين.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### الخطوة 2: تكوين خيارات التحميل
 عند التحويل إلى PDF، قد ترغب في تمكين `setEmbedFonts(true)` لضمان دقة العرض على أي جهاز.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### الخطوة 3: تعريف خيارات عرض PDF
 `PdfViewOptions` يتيح لك اختيار مستوى الضغط، تضمين الخطوط، وتحديد اسم ملف الإخراج لتحويل PDF.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### الخطوة 4: تهيئة Viewer وعرض PDF
 أنشئ `PdfViewOptions`، اختر مستوى ضغط إذا رغبت، واستدعِ `viewer.view(pdfOptions)`. يقوم الـ API بدمج جميع الرسائل في مستند PDF واحد قابل للبحث.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## التطبيقات العملية
 - **أرشفة البريد الإلكتروني:** تحويل أرشيفات PST الكبيرة إلى HTML أو PDF قابل للبحث للامتثال.  
