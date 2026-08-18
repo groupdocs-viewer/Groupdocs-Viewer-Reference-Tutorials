@@ -188,17 +188,3 @@ Verken extra aanpassingsopties in de officiële documentatie en API‑referentie
 **Auteur:** GroupDocs  
 
 ---
-
-## DOELKEYWORDS:
-
-**Primary Keyword (HIGHEST PRIORITY):**  
-how to render cad
-
-**Secondary Keywords (SUPPORTING):**  
-convert cad to html
-
-**Strategie voor sleutelwoordintegratie:**
-1. Hoofd‑sleutelwoord: Gebruik 3‑5 keer (titel, meta, eerste alinea, H2‑kop, body)  
-2. Secundaire sleutelwoorden: Gebruik 1‑2 keer elk (koppen, body‑tekst)  
-3. Alle sleutelwoorden moeten natuurlijk worden geïntegreerd – leesbaarheid heeft prioriteit boven het aantal.  
-4. Als een sleutelwoord niet natuurlijk past, gebruik dan een semantische variant of sla het over.
