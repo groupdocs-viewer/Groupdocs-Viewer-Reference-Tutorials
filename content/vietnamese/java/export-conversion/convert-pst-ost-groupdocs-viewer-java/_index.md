@@ -148,23 +148,6 @@ Tải tệp PST bằng `new Viewer("source.pst")`, cấu hình `HtmlViewOptions`
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Nhận giấy phép
 - **Dùng thử miễn phí** – khám phá tất cả tính năng mà không tốn phí.  
 - **Giấy phép tạm thời** – kéo dài thời gian đánh giá nếu cần.  
@@ -224,8 +207,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Tạo một đối tượng `Viewer`, truyền đường dẫn tệp PST, và gọi `view` với `HtmlViewOptions`. API sẽ tự động duyệt qua tất cả các tin nhắn trong PST và tạo ra một cấu trúc HTML gọn gàng.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Hiển thị tài liệu PST/OST thành JPG
@@ -234,12 +219,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Tạo một thư mục riêng cho các ảnh chụp JPG; mỗi email sẽ trở thành một hoặc nhiều tệp hình ảnh tùy thuộc vào độ dài của nó.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Bước 2: Cấu hình Load Options
 `LoadOptions` giống như đã dùng cho HTML có thể được tái sử dụng ở đây, đảm bảo việc xử lý mật khẩu nhất quán giữa các định dạng.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Bước 3: Định nghĩa JPG View Options
+`JpgViewOptions` kiểm soát độ phân giải ảnh, chất lượng và thư mục đầu ra cho chuyển đổi JPEG.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -248,20 +241,14 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Bước 3: Định nghĩa JPG View Options
-`JpgViewOptions` kiểm soát độ phân giải ảnh, chất lượng và thư mục đầu ra cho chuyển đổi JPEG.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### Bước 4: Khởi tạo Viewer và hiển thị JPG
 Sử dụng `viewer.view(jpgOptions)` để tạo các tệp JPEG chất lượng cao sẵn sàng cho việc xem trước trên web.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Hiển thị tài liệu PST/OST thành PNG
@@ -270,26 +257,26 @@ loadOptions.setResourceLoadingTimeout(100);
 Đầu ra PNG hữu ích khi bạn cần chất lượng không mất dữ liệu cho việc lưu trữ hoặc xử lý OCR.
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### Bước 2: Cấu hình Load Options
 Không cần cài đặt bổ sung nào ngoài cấu hình mật khẩu và thời gian chờ.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### Bước 3: Định nghĩa PNG View Options
 `PngViewOptions` cho phép bạn đặt nền trong suốt và thư mục đầu ra cho các ảnh PNG không mất dữ liệu.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### Bước 4: Khởi tạo Viewer và hiển thị PNG
@@ -297,7 +284,7 @@ Khởi tạo `viewer.view(pngOptions)` để tạo các ảnh chụp PNG của m
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -307,22 +294,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### Bước 1: Thiết lập thư mục đầu ra
 Một tệp PDF duy nhất cho mỗi PST đơn giản hoá quy trình xem xét pháp lý và giảm tải lưu trữ.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Bước 2: Cấu hình Load Options
 Khi chuyển đổi sang PDF, bạn có thể muốn bật `setEmbedFonts(true)` để đảm bảo độ trung thực hình ảnh trên bất kỳ máy nào.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Bước 3: Định nghĩa PDF View Options
 `PdfViewOptions` cho phép bạn chọn mức nén, nhúng phông chữ, và đặt tên tệp đầu ra cho việc chuyển đổi PDF.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Bước 4: Khởi tạo Viewer và hiển thị PDF
 Tạo `PdfViewOptions`, tùy chọn chọn mức nén, và gọi `viewer.view(pdfOptions)`. API sẽ hợp nhất tất cả email thành một tài liệu PDF có thể tìm kiếm.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Ứng dụng thực tế
 
