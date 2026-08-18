@@ -144,23 +144,6 @@ GroupDocs.Viewer for Java คือ API ฝั่งเซิร์ฟเวอ�
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### การรับใบอนุญาต
 - **ทดลองใช้ฟรี** – สำรวจฟีเจอร์ทั้งหมดโดยไม่มีค่าใช้จ่าย.  
 - **ใบอนุญาตชั่วคราว** – ขยายระยะเวลาการประเมินหากต้องการ.  
@@ -218,8 +201,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 สร้างอ็อบเจกต์ `Viewer`, ส่งพาธไฟล์ PST, และเรียก `view` พร้อมกับ `HtmlViewOptions`. API จะวนผ่านข้อความทั้งหมดใน PST และสร้างโครงสร้าง HTML ที่เป็นระเบียบโดยอัตโนมัติ.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### การแสดงผลเอกสาร PST/OST เป็น JPG
@@ -227,12 +212,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 สร้างโฟลเดอร์เฉพาะสำหรับสแนปชอต JPG; แต่ละอีเมลจะกลายเป็นหนึ่งหรือหลายไฟล์ภาพขึ้นอยู่กับความยาวของข้อความ.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### ขั้นตอนที่ 2: กำหนดค่า Load Options
 `LoadOptions` เดียวกันที่ใช้สำหรับ HTML สามารถนำมาใช้ซ้ำที่นี่ เพื่อให้การจัดการรหัสผ่านสอดคล้องกันในทุกรูปแบบ.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### ขั้นตอนที่ 3: กำหนด JPG View Options
+`JpgViewOptions` ควบคุมความละเอียดของภาพ, คุณภาพ, และโฟลเดอร์ผลลัพธ์สำหรับการแปลงเป็น JPEG.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -241,25 +234,35 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### ขั้นตอนที่ 3: กำหนด JPG View Options
-`JpgViewOptions` ควบคุมความละเอียดของภาพ, คุณภาพ, และโฟลเดอร์ผลลัพธ์สำหรับการแปลงเป็น JPEG.
+#### ขั้นตอนที่ 4: เริ่มต้น Viewer และเรนเดอร์ JPG
+ใช้ `viewer.view(jpgOptions)` เพื่อสร้างไฟล์ JPEG คุณภาพสูงพร้อมสำหรับการแสดงตัวอย่างบนเว็บ.
+
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
+
+### การแสดงผลเอกสาร PST/OST เป็น PNG
+#### ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีผลลัพธ์
+ผลลัพธ์ PNG มีประโยชน์เมื่อคุณต้องการคุณภาพแบบ lossless สำหรับการเก็บถาวรหรือการประมวลผล OCR.
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
-#### ขั้นตอนที่ 4: เริ่มต้น Viewer และเรนเดอร์ JPG
-ใช้ `viewer.view(jpgOptions)` เพื่อสร้างไฟล์ JPEG คุณภาพสูงพร้อมสำหรับการแสดงตัวอย่างบนเว็บ.
+#### ขั้นตอนที่ 2: กำหนดค่า Load Options
+ไม่ต้องการการตั้งค่าเพิ่มเติมนอกจากการกำหนดรหัสผ่านและ timeout.
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setResourceLoadingTimeout(100);
 ```
 
-### การแสดงผลเอกสาร PST/OST เป็น PNG
-#### ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีผลลัพธ์
-ผลลัพธ์ PNG มีประโยชน์เมื่อคุณต้องการคุณภาพแบบ lossless สำหรับการเก็บถาวรหรือการประมวลผล OCR.
+#### ขั้นตอนที่ 3: กำหนด PNG View Options
+`PngViewOptions` ให้คุณตั้งค่าพื้นหลังโปร่งแสงและโฟลเดอร์ผลลัพธ์สำหรับภาพ PNG lossless.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -268,28 +271,12 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### ขั้นตอนที่ 2: กำหนดค่า Load Options
-ไม่ต้องการการตั้งค่าเพิ่มเติมนอกจากการกำหนดรหัสผ่านและ timeout.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
-```
-
-#### ขั้นตอนที่ 3: กำหนด PNG View Options
-`PngViewOptions` ให้คุณตั้งค่าพื้นหลังโปร่งแสงและโฟลเดอร์ผลลัพธ์สำหรับภาพ PNG lossless.
-
-```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
-```
-
 #### ขั้นตอนที่ 4: เริ่มต้น Viewer และเรนเดอร์ PNG
 สร้างอินสแตนซ์ `viewer.view(pngOptions)` เพื่อผลิตสแนปชอต PNG ของแต่ละอีเมล.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -298,22 +285,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีผลลัพธ์
 ไฟล์ PDF เดียวต่อ PST ทำให้กระบวนการตรวจสอบทางกฎหมายง่ายขึ้นและลดภาระการจัดเก็บ.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### ขั้นตอนที่ 2: กำหนดค่า Load Options
 เมื่อแปลงเป็น PDF, คุณอาจต้องการเปิดใช้งาน `setEmbedFonts(true)` เพื่อรับประกันความแม่นยำของภาพบนเครื่องใดก็ได้.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### ขั้นตอนที่ 3: กำหนด PDF View Options
 `PdfViewOptions` ให้คุณเลือกระดับการบีบอัด, ฝังฟอนต์, และตั้งชื่อไฟล์ผลลัพธ์สำหรับการแปลงเป็น PDF.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### ขั้นตอนที่ 4: เริ่มต้น Viewer และเรนเดอร์ PDF
 สร้าง `PdfViewOptions`, เลือกระดับการบีบอัดตามต้องการ, แล้วเรียก `viewer.view(pdfOptions)`. API จะรวมอีเมลทั้งหมดเป็นเอกสาร PDF ที่สามารถค้นหาได้หนึ่งไฟล์.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## การประยุกต์ใช้งานจริง
 - **การเก็บถาวรอีเมล:** แปลงคลัง PST ขนาดใหญ่เป็น HTML หรือ PDF ที่สามารถค้นหาได้เพื่อการปฏิบัติตาม.  
