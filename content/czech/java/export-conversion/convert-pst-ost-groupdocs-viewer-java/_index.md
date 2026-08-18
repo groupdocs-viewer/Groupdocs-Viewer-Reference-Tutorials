@@ -148,23 +148,6 @@ Načtěte soubor PST pomocí `new Viewer("source.pst")`, nakonfigurujte `HtmlVie
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### Získání licence
 - **Bezplatná zkušební verze** – prozkoumejte všechny funkce bez poplatku.  
 - **Dočasná licence** – prodlužte dobu hodnocení podle potřeby.  
@@ -224,8 +207,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 Vytvořte objekt `Viewer`, předáte cestu k souboru PST a zavoláte `view` s `HtmlViewOptions`. API automaticky prochází všechny zprávy v PST a generuje přehlednou HTML hierarchii.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Vykreslování dokumentů PST/OST do JPG
@@ -234,12 +219,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 Vytvořte vyhrazenou složku pro JPG snímky; každý e‑mail se stane jedním nebo více obrazovými soubory v závislosti na jeho délce.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### Krok 2: Nakonfigurujte Load Options
 Stejné `LoadOptions`, které byly použity pro HTML, lze zde znovu použít, což zajišťuje konzistentní zpracování hesla napříč formáty.
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### Krok 3: Definujte JPG View Options
+`JpgViewOptions` řídí rozlišení obrazu, kvalitu a výstupní složku pro konverzi JPEG.
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -248,20 +241,14 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### Krok 3: Definujte JPG View Options
-`JpgViewOptions` řídí rozlišení obrazu, kvalitu a výstupní složku pro konverzi JPEG.
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### Krok 4: Inicializujte Viewer a vykreslete JPG
 Použijte `viewer.view(jpgOptions)` k vygenerování vysoce kvalitních JPEG souborů připravených pro webový náhled.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### Vykreslování dokumentů PST/OST do PNG
@@ -270,26 +257,26 @@ loadOptions.setResourceLoadingTimeout(100);
 Výstup PNG je užitečný, když potřebujete bezztrátovou kvalitu pro archivaci nebo OCR zpracování.
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### Krok 2: Nakonfigurujte Load Options
 Nejsou vyžadována žádná další nastavení kromě konfigurace hesla a časového limitu.
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### Krok 3: Definujte PNG View Options
 `PngViewOptions` vám umožňuje nastavit průhledné pozadí a výstupní složku pro bezztrátové PNG obrázky.
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### Krok 4: Inicializujte Viewer a vykreslete PNG
@@ -297,7 +284,7 @@ Instanci `viewer.view(pngOptions)` použijte k vytvoření PNG snímků každéh
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -307,22 +294,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### Krok 1: Nastavte výstupní adresář
 Jeden PDF soubor na PST zjednodušuje workflow právního přezkoumání a snižuje úložnou zátěž.
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### Krok 2: Nakonfigurujte Load Options
 Při konverzi do PDF můžete chtít povolit `setEmbedFonts(true)`, aby byla zajištěna vizuální věrnost na jakémkoli zařízení.
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### Krok 3: Definujte PDF View Options
 `PdfViewOptions` vám umožňuje zvolit úroveň komprese, vložit fonty a nastavit název výstupního souboru pro konverzi do PDF.
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### Krok 4: Inicializujte Viewer a vykreslete PDF
 Vytvořte `PdfViewOptions`, volitelně zvolte úroveň komprese a zavolejte `viewer.view(pdfOptions)`. API sloučí všechny e‑maily do jednoho prohledávatelného PDF dokumentu.
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## Praktické aplikace
 - **Archivace e‑mailů:** Převést velké PST archivy na prohledávatelné HTML nebo PDF pro soulad s předpisy.  
