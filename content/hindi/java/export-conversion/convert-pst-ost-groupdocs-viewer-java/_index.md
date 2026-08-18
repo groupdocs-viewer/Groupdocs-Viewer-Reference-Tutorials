@@ -146,23 +146,6 @@ GroupDocs.Viewer for Java एक सर्वर‑साइड API है ज�
 </dependencies>
 ```
 
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/viewer/java/</url>
-   </repository>
-</repositories>
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-viewer</artifactId>
-      <version>25.2</version>
-   </dependency>
-</dependencies>
-```
-
 ### लाइसेंस प्राप्ति
 - **Free trial** – बिना लागत के सभी फीचर एक्सप्लोर करें।  
 - **Temporary license** – आवश्यकता पड़ने पर मूल्यांकन समय बढ़ाएँ।  
@@ -221,8 +204,10 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 `Viewer` ऑब्जेक्ट बनाएं, PST फ़ाइल पाथ पास करें, और `HtmlViewOptions` के साथ `view` को कॉल करें। API स्वचालित रूप से PST के भीतर सभी संदेशों पर इटररेट करता है और एक व्यवस्थित HTML हायरार्की उत्पन्न करता है।
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    HtmlViewOptions options = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST दस्तावेज़ को JPG में रेंडर करना
@@ -231,12 +216,20 @@ Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 JPG स्नैपशॉट्स के लिए एक समर्पित फ़ोल्डर बनाएं; प्रत्येक ईमेल उसकी लंबाई के आधार पर एक या अधिक इमेज फ़ाइलों में बदल जाएगा।
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.jpg");
 ```
 
 #### चरण 2: लोड ऑप्शन्स कॉन्फ़िगर करें
 HTML के लिए उपयोग किए गए वही `LoadOptions` यहाँ पुन: उपयोग किए जा सकते हैं, जिससे फ़ॉर्मेट्स में पासवर्ड हैंडलिंग सुसंगत रहती है।
+
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
+
+#### चरण 3: JPG व्यू ऑप्शन्स निर्धारित करें
+`JpgViewOptions` इमेज रेज़ोल्यूशन, क्वालिटी, और JPEG कन्वर्ज़न के लिए आउटपुट फ़ोल्डर को नियंत्रित करता है।
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
@@ -245,20 +238,14 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 }
 ```
 
-#### चरण 3: JPG व्यू ऑप्शन्स निर्धारित करें
-`JpgViewOptions` इमेज रेज़ोल्यूशन, क्वालिटी, और JPEG कन्वर्ज़न के लिए आउटपुट फ़ोल्डर को नियंत्रित करता है।
-
-```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
-```
-
 #### चरण 4: व्यूअर को इनिशियलाइज़ करें और JPG रेंडर करें
 `viewer.view(jpgOptions)` का उपयोग करके वेब प्रीव्यू के लिए तैयार हाई‑क्वालिटी JPEG फ़ाइलें जनरेट करें।
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    JpgViewOptions options = new JpgViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 ### PST/OST दस्तावेज़ को PNG में रेंडर करना
@@ -267,26 +254,26 @@ loadOptions.setResourceLoadingTimeout(100);
 PNG आउटपुट तब उपयोगी होता है जब आपको आर्काइविंग या OCR प्रोसेसिंग के लिए लॉसलेस क्वालिटी चाहिए।
 
 ```java
-try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
-    viewer.view(options);
-}
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result_{0}.png");
 ```
 
 #### चरण 2: लोड ऑप्शन्स कॉन्फ़िगर करें
 पासवर्ड और टाइमआउट कॉन्फ़िगरेशन के अलावा कोई अतिरिक्त सेटिंग्स आवश्यक नहीं हैं।
 
 ```java
-Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
-Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
 ```
 
 #### चरण 3: PNG व्यू ऑप्शन्स निर्धारित करें
 `PngViewOptions` आपको ट्रांसपेरेंट बैकग्राउंड और लॉसलेस PNG इमेजेज के लिए आउटपुट फ़ोल्डर सेट करने देता है।
 
 ```java
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.setResourceLoadingTimeout(100);
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
 ```
 
 #### चरण 4: व्यूअर को इनिशियलाइज़ करें और PNG रेंडर करें
@@ -294,7 +281,7 @@ loadOptions.setResourceLoadingTimeout(100);
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
-    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     viewer.view(options);
 }
 ```
@@ -304,22 +291,38 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOption
 #### चरण 1: आउटपुट डायरेक्टरी सेट अप करें
 PST प्रति एकल PDF फ़ाइल कानूनी‑रिव्यू वर्कफ़्लो को सरल बनाती है और स्टोरेज ओवरहेड को कम करती है।
 
-CODE_BLOCK_PLACEHOLDER_14_END
+```java
+Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
+Path pageFilePathFormat = outputDirectory.resolve("PST_result.pdf");
+```
 
 #### चरण 2: लोड ऑप्शन्स कॉन्फ़िगर करें
 PDF में कन्वर्ट करते समय, आप `setEmbedFonts(true)` को एनेबल करना चाह सकते हैं ताकि किसी भी मशीन पर विज़ुअल फ़िडेलिटी सुनिश्चित हो।
 
-CODE_BLOCK_PLACEHOLDER_15_END
+```java
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.setResourceLoadingTimeout(100);
+```
 
 #### चरण 3: PDF व्यू ऑप्शन्स निर्धारित करें
 `PdfViewOptions` आपको कॉम्प्रेशन लेवल चुनने, फ़ॉन्ट एम्बेड करने, और PDF कन्वर्ज़न के लिए आउटपुट फ़ाइल नाम सेट करने देता है।
 
-CODE_BLOCK_PLACEHOLDER_16_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 #### चरण 4: व्यूअर को इनिशियलाइज़ करें और PDF रेंडर करें
 `PdfViewOptions` बनाएं, वैकल्पिक रूप से कॉम्प्रेशन लेवल चुनें, और `viewer.view(pdfOptions)` को कॉल करें। API सभी ईमेल को एक सर्चेबल PDF दस्तावेज़ में मर्ज कर देता है।
 
-CODE_BLOCK_PLACEHOLDER_17_END
+```java
+try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PST", loadOptions)) {
+    PdfViewOptions options = new PdfViewOptions(pageFilePathFormat);
+    viewer.view(options);
+}
+```
 
 ## व्यावहारिक उपयोग
 - **ईमेल आर्काइविंग:** बड़े PST आर्काइव को कंप्लायंस के लिए सर्चेबल HTML या PDF में बदलें।  
