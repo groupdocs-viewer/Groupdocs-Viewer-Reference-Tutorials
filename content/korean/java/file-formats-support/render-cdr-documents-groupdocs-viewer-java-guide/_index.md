@@ -1,51 +1,98 @@
 ---
-date: '2026-02-28'
-description: GroupDocs.Viewer for Java를 사용하여 CDR 파일을 HTML, JPG, PNG 및 PDF로 변환하는 방법을
-  배웁니다. 설정, 코드 예제 및 성능 팁이 포함됩니다.
+date: '2026-08-19'
+description: GroupDocs.Viewer for Java를 사용하여 cdr를 html, jpg, png, pdf로 변환하는 방법을 배웁니다.
+  setup, code examples, performance tips가 포함됩니다.
 keywords:
-- render CDR files
-- GroupDocs.Viewer Java
-- HTML conversion
-title: GroupDocs.Viewer Java를 사용하여 cdr을 html, jpg, png, pdf로 변환
+- convert cdr to html
+- convert cdr to pdf
+- convert cdr to jpg
+- convert cdr to png
+- java convert coreldraw
+lastmod: '2026-08-19'
+og_description: GroupDocs.Viewer for Java를 사용하여 cdr를 html, jpg, png, pdf로 변환하는 방법을
+  배웁니다. step‑by‑step guide with setup, code snippets, performance best practices.
+og_image_alt: Guide showing conversion of CorelDRAW CDR files to HTML, JPG, PNG, and
+  PDF using GroupDocs.Viewer for Java
+og_title: GroupDocs.Viewer Java를 사용하여 cdr를 html, jpg, png, pdf로 변환
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-19'
+  description: Learn how to convert cdr to html, as well as jpg, png, and pdf, using
+    GroupDocs.Viewer for Java. Includes setup, code examples, and performance tips.
+  headline: Convert cdr to html, jpg, png, pdf with GroupDocs.Viewer Java
+  type: TechArticle
+- description: Learn how to convert cdr to html, as well as jpg, png, and pdf, using
+    GroupDocs.Viewer for Java. Includes setup, code examples, and performance tips.
+  name: Convert cdr to html, jpg, png, pdf with GroupDocs.Viewer Java
+  steps:
+  - name: '**Libraries and dependencies** – GroupDocs.Viewer added to your Maven project.'
+    text: '**Libraries and dependencies** – GroupDocs.Viewer added to your Maven project.'
+  - name: '**Java Development Kit (JDK)** – version 8 or newer installed.'
+    text: '**Java Development Kit (JDK)** – version 8 or newer installed.'
+  - name: '**Basic Java knowledge** – to understand the code snippets.'
+    text: '**Basic Java knowledge** – to understand the code snippets.'
+  type: HowTo
+- questions:
+  - answer: Yes. Load the file with a `Viewer` instance that accepts a password parameter
+      (see the API docs).
+    question: Can I convert password‑protected CDR files?
+  - answer: No hard limit, but very large files may require more memory; consider
+      processing page‑by‑page.
+    question: Is there a limit on the number of pages that can be converted at once?
+  - answer: When using `HtmlViewOptions.forEmbeddedResources`, fonts are embedded
+      as Base64, ensuring consistent rendering across browsers.
+    question: Does the HTML output include embedded fonts?
+  - answer: '`JpgViewOptions` provides a `setQuality(int)` method where you can specify
+      a value from 1‑100.'
+    question: How do I control JPEG quality?
+  - answer: Absolutely—GroupDocs.Viewer is platform‑agnostic as long as the JDK is
+      installed.
+    question: Can I convert CDR files on a Linux server?
+  type: FAQPage
+tags:
+- convert cdr
+- groupdocs.viewer
+- java file conversion
+- coreldraw cdr
+- document rendering
+title: GroupDocs.Viewer Java를 사용하여 cdr를 html, jpg, png, pdf로 변환
 type: docs
 url: /ko/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/
 weight: 1
 ---
 
-# GroupDocs.Viewer Java로 CDR을 HTML, JPG, PNG, PDF로 변환
+# GroupDocs.Viewer Java를 사용하여 cdr을 html, jpg, png, pdf로 변환
 
-CDR을 **HTML**(또는 JPG, PNG, PDF) 로 빠르고 안정적으로 변환해야 한다면, 이 튜토리얼이 바로 정답입니다. 이 가이드에서는 GroupDocs.Viewer for Java를 설치하고 CorelDRAW(CDR) 파일을 웹 친화적인 HTML 페이지, 고품질 이미지, 그리고 범용 PDF로 렌더링하는 전체 과정을 단계별로 안내합니다. 마지막까지 따라 하면 몇 줄의 코드만으로 Java 애플리케이션에 변환 기능을 통합할 수 있습니다.
+빠르고 안정적으로 **convert cdr to html**(또는 JPG, PNG, PDF) 변환이 필요하다면, 올바른 튜토리얼을 찾으셨습니다. 이 가이드에서는 GroupDocs.Viewer for Java 설치부터 CorelDRAW(CDR) 파일을 웹 친화적인 HTML 페이지, 고품질 이미지, 그리고 범용 PDF로 렌더링하는 모든 과정을 단계별로 안내합니다. 마지막까지 따라오면 몇 줄의 코드만으로 Java 애플리케이션에 이러한 변환을 통합할 수 있게 됩니다.
 
 ![Render CDR Files with GroupDocs.Viewer for Java](/viewer/file-formats-support/render-cdr-files.png)
 
-## Quick Answers
-- **CDR을 HTML로 변환하는 라이브러리는?** GroupDocs.Viewer for Java.  
-- **CDR을 JPG, PNG, PDF 로도 변환할 수 있나요?** 네—같은 Viewer API에 다른 뷰 옵션을 지정하면 됩니다.  
-- **라이선스가 필요합니까?** 테스트용으로는 무료 체험판이나 임시 라이선스로 충분하지만, 운영 환경에서는 정식 라이선스가 필요합니다.  
-- **필요한 Java 버전은?** JDK 8 이상.  
-- **배치 변환을 지원하나요?** 물론입니다—같은 Viewer 인스턴스를 사용해 파일을 반복 처리하면 됩니다.
+[Render CDR Files with GroupDocs.Viewer for Java](/viewer/file-formats-support/render-cdr-files.png)
 
-## “convert CDR to HTML”이란?
-CDR을 HTML로 변환한다는 것은 CorelDRAW 벡터 파일을 표준 HTML 마크업으로 바꾸고, 필요에 따라 이미지와 스타일을 포함시켜 원본 디자인 소프트웨어 없이도 웹 브라우저에서 바로 볼 수 있게 하는 작업을 의미합니다.
+## 빠른 답변
+- **CDR을 HTML로 변환하는 라이브러리는 무엇인가요?** GroupDocs.Viewer for Java.  
+- **CDR을 JPG, PNG, PDF로도 변환할 수 있나요?** Yes—use the same Viewer API with different view options.  
+- **라이선스가 필요합니까?** A free trial or temporary license works for testing; a full license is required for production.  
+- **필요한 Java 버전은 무엇인가요?** JDK 8 or newer.  
+- **배치 변환이 지원되나요?** Absolutely—just loop over files with the same Viewer instance.
 
-## 왜 CDR을 HTML, JPG, PNG, PDF 로 변환해야 할까요?
-- **HTML** 은 웹 포털에 그래픽을 삽입하고 즉시 공유할 수 있게 해줍니다.  
-- **JPG** 와 **PNG** 는 갤러리, 썸네일, 이메일 첨부 파일 등에서 사용할 수 있는 래스터 이미지입니다.  
-- **PDF** 는 인쇄 가능하고 플랫폼에 구애받지 않는 버전으로, 아카이빙이나 문서 공유 시스템에 적합합니다.  
+## “convert cdr to html”이란 무엇인가요?
+Converting cdr to html means transforming a CorelDRAW vector file into standard HTML markup, optionally embedding images and styles so the design can be viewed directly in a web browser without needing the original design software. The process preserves the original layout, colors, and vector shapes by converting them into scalable SVG elements or raster images embedded in the HTML, enabling accurate visual representation across browsers while keeping file size low.
 
-네 가지 포맷을 모두 갖추면 대상에 맞는 파일을 제공해 성능을 최적화하고, 향후 확장성을 확보할 수 있습니다.
+## 왜 cdr을 html, jpg, png, 또는 pdf로 변환해야 하나요?
+You can render a single CDR source into four widely supported formats, each serving a distinct purpose: HTML for instant web preview, JPG/PNG for raster images, and PDF for printable, archivable documents. This flexibility lets you serve the optimal file type to any client, reduce storage duplication, and future‑proof your assets.
 
-## Prerequisites
+## 사전 요구 사항
 
-시작하기 전에 다음을 준비하세요:
+Before we start, make sure you have:
 
-1. **라이브러리 및 종속성** – Maven 프로젝트에 GroupDocs.Viewer를 추가합니다.  
-2. **Java Development Kit (JDK)** – 버전 8 이상 설치.  
+1. **라이브러리 및 종속성** – GroupDocs.Viewer를 Maven 프로젝트에 추가합니다.  
+2. **Java Development Kit (JDK)** – version 8 or newer installed.  
 3. **기본 Java 지식** – 코드 스니펫을 이해하기 위해 필요합니다.
 
-### Required Libraries, Versions, and Dependencies
+### 필요한 라이브러리, 버전 및 종속성
 
-다음 Maven 설정을 `pom.xml`에 추가하세요(원본 튜토리얼과 동일하게 유지).
+Add the following Maven configuration to your `pom.xml` (unchanged from the original tutorial):
 
 ```xml
 <repositories>
@@ -65,21 +112,23 @@ CDR을 HTML로 변환한다는 것은 CorelDRAW 벡터 파일을 표준 HTML 마
 </dependencies>
 ```
 
-### License Acquisition Steps
+### 라이선스 획득 단계
 
-GroupDocs.Viewer는 무료 체험판, 테스트용 임시 라이선스, 정식 구매 옵션을 제공합니다:
+GroupDocs.Viewer offers a free trial, temporary licenses for testing, or full‑purchase options:
 
-- **Free Trial** – [GroupDocs Release Page](https://releases.groupdocs.com/viewer/java/)에서 다운로드.  
-- **Temporary License** – [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/)에서 요청.  
-- **Purchase** – [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)에서 영구 라이선스 구매.
+- **무료 체험** – [GroupDocs Release Page](https://releases.groupdocs.com/viewer/java/)에서 다운로드하세요.  
+- **임시 라이선스** – [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/)에서 요청하세요.  
+- **구매** – [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy)에서 영구 라이선스를 얻으세요.
 
-## Setting Up GroupDocs.Viewer for Java
+## GroupDocs.Viewer for Java 설정
 
-### Installation with Maven
-위의 Maven 스니펫이 모든 필요한 JAR을 자동으로 가져옵니다. 파일을 저장한 뒤 `mvn clean install`을 실행하면 됩니다.
+Viewer is the core class that loads a document and provides rendering methods for all supported output formats.
 
-### License Initialization
-문서를 렌더링하기 전에 라이선스를 초기화하세요:
+### Maven을 사용한 설치
+The Maven snippet above will pull in all required JARs automatically. Just run `mvn clean install` after saving the file.
+
+### 라이선스 초기화
+`Viewer` is the core class that loads a document and provides rendering methods for all supported output formats. Initialize your license before rendering any documents:
 
 ```java
 import com.groupdocs.viewer.License;
@@ -88,16 +137,18 @@ License lic = new License();
 lic.setLicense("path/to/your/license/file.lic");
 ```
 
-## Implementation Guide
+## 구현 가이드
 
-아래에서는 각 출력 포맷별 단계별 예제를 제공합니다. 코드 블록은 원본 튜토리얼과 동일하며, 설명만 추가했습니다.
+Below you’ll find step‑by‑step examples for each output format. The code blocks are identical to the original tutorial; we only added explanatory text around them.
 
-### How to convert CDR to HTML with GroupDocs.Viewer
+### GroupDocs.Viewer를 사용하여 cdr을 html로 변환하는 방법
 
-#### Rendering CDR Document to HTML
-**Overview:** CDR 파일을 웹 친화적인 HTML로 변환해 손쉽게 공유합니다.
+Load a CDR file and call the HTML rendering API – that’s all you need to generate web‑ready markup. The process requires setting up file paths, creating an `HtmlViewOptions` instance, and invoking `viewer.view()`. This two‑step pattern works for any document size and preserves vector fidelity.
 
-**Step 1 – Set Up File Paths**
+#### CDR 문서를 HTML로 렌더링
+**개요:** CDR 파일을 웹 친화적인 HTML로 변환하여 쉽게 공유합니다.
+
+**Step 1 – 파일 경로 설정**
 
 ```java
 import java.nio.file.Path;
@@ -106,7 +157,9 @@ Path outputDirectory = TestFiles.getOutputDirectoryPath("RenderingCdr");
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result_{0}.html");
 ```
 
-**Step 2 – Initialize Viewer and Render**
+**Step 2 – Viewer 초기화 및 렌더링**
+
+HtmlViewOptions configures HTML rendering, allowing you to embed resources or save them separately. The following code renders each page to a separate HTML file while embedding images as Base64 strings.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -117,18 +170,22 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-### How to convert CDR to JPG with GroupDocs.Viewer
+### GroupDocs.Viewer를 사용하여 cdr을 jpg로 변환하는 방법
 
-#### Rendering CDR Document to JPG
-**Overview:** CDR 소스에서 고품질 JPEG 이미지를 생성합니다.
+You can produce high‑quality JPEG images from a CDR source in just two lines of code. First, configure `JpgViewOptions` with the desired quality, then call `viewer.view()`. This approach is ideal for thumbnails, email attachments, or any scenario where a compact raster image is needed.
 
-**Step 1 – Set Up File Paths**
+#### CDR 문서를 JPG로 렌더링
+**개요:** CDR 소스에서 고품질 JPEG 이미지를 생성합니다.
+
+**Step 1 – 파일 경로 설정**
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result_{0}.jpg");
 ```
 
-**Step 2 – Initialize Viewer and Render**
+**Step 2 – Viewer 초기화 및 렌더링**
+
+JpgViewOptions defines JPEG rendering settings, such as compression quality and output naming. The example below saves each page as a separate JPEG file.
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
@@ -139,18 +196,22 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-### How to convert CDR to PNG with GroupDocs.Viewer
+### GroupDocs.Viewer를 사용하여 cdr을 png로 변환하는 방법
 
-#### Rendering CDR Document to PNG
-**Overview:** 보관용 또는 디자인 작업에 적합한 무손실 PNG 이미지를 생성합니다.
+PNG output gives you lossless raster images, perfect for archival or further graphic processing. Use `PngViewOptions` to keep every pixel intact, then render the document page by page.
 
-**Step 1 – Set Up File Paths**
+#### CDR 문서를 PNG로 렌더링
+**개요:** 아카이브 또는 디자인 목적을 위한 무손실 PNG 이미지를 생성합니다.
+
+**Step 1 – 파일 경로 설정**
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result_{0}.png");
 ```
 
-**Step 2 – Initialize Viewer and Render**
+**Step 2 – Viewer 초기화 및 렌더링**
+
+PngViewOptions specifies PNG rendering parameters, including support for transparent backgrounds. The code creates a PNG per page automatically.
 
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
@@ -161,18 +222,22 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-### How to convert CDR to PDF with GroupDocs.Viewer
+### GroupDocs.Viewer를 사용하여 cdr을 pdf로 변환하는 방법
 
-#### Rendering CDR Document to PDF
-**Overview:** CDR 파일을 범용 PDF로 변환합니다.
+Turning a CDR file into PDF gives you a universally readable, print‑ready document. `PdfViewOptions` handles vector to raster conversion internally, preserving layout and fonts without requiring Adobe Illustrator.
 
-**Step 1 – Set Up File Paths**
+#### CDR 문서를 PDF로 렌더링
+**개요:** CDR 파일을 범용 PDF로 변환합니다.
+
+**Step 1 – 파일 경로 설정**
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result.pdf");
 ```
 
-**Step 2 – Initialize Viewer and Render**
+**Step 2 – Viewer 초기화 및 렌더링**
+
+PdfViewOptions controls PDF generation, enabling font embedding and page layout customization. The snippet creates a single PDF containing all pages.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -183,48 +248,61 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-## Practical Applications
+## 실용적인 적용 사례
 
-- **Web Portals:** HTML 변환을 활용해 CDR 디자인을 사이트에 직접 삽입합니다.  
-- **Image Galleries:** JPG/PNG 출력물을 사용해 빠르게 로드되는 이미지 갤러리를 구축합니다.  
-- **Document Sharing:** 인쇄 가능하고 읽기 전용인 PDF를 고객에게 제공합니다.  
-- **Archiving:** 여러 포맷을 저장해 향후 접근성을 보장합니다.  
-- **Cross‑Platform Integration:** 생성된 파일을 OCR, 분석 등 다른 서비스와 연계합니다.
+- **웹 포털:** HTML 변환을 사용하여 CDR 디자인을 사이트에 직접 삽입합니다.  
+- **이미지 갤러리:** 빠른 로딩 갤러리 또는 제품 카탈로그를 위해 JPG/PNG 출력을 배포합니다.  
+- **문서 공유:** 인쇄 가능한 읽기 전용 버전이 필요한 고객에게 PDF를 제공합니다.  
+- **아카이빙:** 소프트웨어 변경에 관계없이 향후 접근성을 보장하기 위해 여러 형식으로 저장합니다.  
+- **크로스 플랫폼 통합:** 생성된 파일을 OCR, 분석, 디지털 자산 관리 시스템 등 하위 서비스에 전달합니다.
 
-## Performance Considerations
+## 성능 고려 사항
 
-- **Dispose of Viewer instances** promptly (as shown with try‑with‑resources) to free memory.  
-- **Batch Processing:** Loop over a collection of CDR files using the same Viewer configuration to reduce overhead.  
-- **Resource Allocation:** Allocate sufficient CPU/RAM for large or complex CDR files; monitoring tools can help you fine‑tune.
+- **Viewer 인스턴스**를 즉시 해제(try‑with‑resources 사용 예시)하여 메모리를 확보합니다.  
+- **배치 처리:** 동일한 Viewer 구성으로 CDR 파일 컬렉션을 순회하여 오버헤드를 줄입니다.  
+- **Resource allocation:** GroupDocs.Viewer can render documents up to 500 pages without loading the entire file into memory, but very complex drawings may benefit from increased heap size. Monitor CPU and RAM usage during large‑scale conversions.
 
-## Conclusion
+## 일반적인 함정 및 문제 해결 팁
 
-우리는 GroupDocs.Viewer for Java를 사용해 **CDR을 HTML**, JPG, PNG, PDF 로 변환하는 방법을 모두 살펴보았습니다. 간결한 코드 스니펫과 모범 사례를 따라 하면 어떤 Java 기반 워크플로에도 손쉽게 이 변환 기능을 통합해 사용자에게 유연하고 고품질의 결과물을 제공할 수 있습니다.
+- **폰트 누락:** 출력이 다르게 보이면 서버에 필요한 폰트가 있는지 확인하거나 `PdfViewOptions`를 통해 임베드하세요.  
+- **대용량 파일:** 200 MB를 초과하는 CDR 파일은 페이지별로 처리하여 `OutOfMemoryError`를 방지하세요.  
+- **이미지 품질 오류:** JPEG이 과도하게 압축된 경우 `JpgViewOptions`의 `setQuality` 값을 조정하세요.  
+- **라이선스 오류:** 라이선스 파일 경로가 올바른지, 라이선스 버전이 Viewer 라이브러리 버전과 일치하는지 확인하세요.
 
-### Next Steps
-- 사용자 정의 페이지 크기나 워터마크와 같은 고급 렌더링 옵션을 실험해 보세요.  
-- 변환 파이프라인을 REST API와 결합해 온‑디맨드 파일 변환 서비스를 제공하세요.  
-- 커뮤니티에 참여하고 [GroupDocs Forum](https://forum.groupdocs.com/c/viewer)에서 질문해 보세요.
+## 결론
 
-## Frequently Asked Questions
+We’ve shown you how to **convert cdr to html**, as well as to JPG, PNG, and PDF, using GroupDocs.Viewer for Java. By following the concise code snippets and best‑practice tips, you can embed these conversions into any Java‑based workflow, delivering flexible, high‑quality outputs to your users.
 
-**Q: 비밀번호로 보호된 CDR 파일을 변환할 수 있나요?**  
-A: 네. 비밀번호 매개변수를 받는 `Viewer` 인스턴스로 파일을 로드하면 됩니다(API 문서 참고).
+### 다음 단계
+- 맞춤 페이지 크기나 워터마크와 같은 고급 렌더링 옵션을 실험해 보세요.  
+- 변환 파이프라인을 REST API와 결합하여 주문형 파일 변환을 제공하세요.  
+- 커뮤니티에 참여하고 [GroupDocs Forum](https://forum.groupdocs.com/c/viewer)에서 질문하세요.
 
-**Q: 한 번에 변환할 수 있는 페이지 수에 제한이 있나요?**  
-A: 명확한 제한은 없지만, 매우 큰 파일은 메모리를 많이 사용하므로 페이지별로 처리하는 것이 좋습니다.
+## 자주 묻는 질문
 
-**Q: HTML 출력에 폰트가 포함되나요?**  
-A: `HtmlViewOptions.forEmbeddedResources`를 사용하면 폰트가 Base64 형태로 포함되어 일관된 렌더링을 보장합니다.
+**Q: Can I convert password‑protected CDR files?**  
+A: Yes. Load the file with a `Viewer` instance that accepts a password parameter (see the API docs).
 
-**Q: JPEG 품질을 어떻게 제어하나요?**  
-A: `JpgViewOptions`의 `setQuality(int)` 메서드로 1‑100 사이 값을 지정하면 됩니다.
+**Q: Is there a limit on the number of pages that can be converted at once?**  
+A: No hard limit, but very large files may require more memory; consider processing page‑by‑page.
 
-**Q: Linux 서버에서도 CDR 파일을 변환할 수 있나요?**  
-A: 물론입니다—JDK만 설치되어 있으면 플랫폼에 구애받지 않고 GroupDocs.Viewer를 사용할 수 있습니다.
+**Q: Does the HTML output include embedded fonts?**  
+A: When using `HtmlViewOptions.forEmbeddedResources`, fonts are embedded as Base64, ensuring consistent rendering across browsers.
+
+**Q: How do I control JPEG quality?**  
+A: `JpgViewOptions` provides a `setQuality(int)` method where you can specify a value from 1‑100.
+
+**Q: Can I convert CDR files on a Linux server?**  
+A: Absolutely—GroupDocs.Viewer is platform‑agnostic as long as the JDK is installed.
 
 ---
 
-**Last Updated:** 2026-02-28  
+**Last Updated:** 2026-08-19  
 **Tested With:** GroupDocs.Viewer 25.2 for Java  
 **Author:** GroupDocs
+
+## 관련 튜토리얼
+
+- [GroupDocs.Viewer Java를 사용하여 Excel을 HTML, JPG, PNG, PDF로 변환하는 방법](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [GroupDocs.Viewer for Java를 사용하여 CF2를 PDF, HTML, JPG, PNG로 변환하는 방법](/viewer/java/rendering-basics/render-cf2-files-groupdocs-java/)
+- [GroupDocs.Viewer를 사용하여 Java에서 pdf를 html로 변환하고 이미지 품질을 최적화하는 방법](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)

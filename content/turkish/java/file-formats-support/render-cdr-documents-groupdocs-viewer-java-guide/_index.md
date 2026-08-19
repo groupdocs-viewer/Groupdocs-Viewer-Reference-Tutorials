@@ -1,52 +1,100 @@
 ---
-date: '2026-02-28'
-description: GroupDocs.Viewer for Java kullanarak CDR dosyalarını HTML, JPG, PNG ve
-  PDF'ye nasıl dönüştüreceğinizi öğrenin. Kurulum, kod örnekleri ve performans ipuçlarını
-  içerir.
+date: '2026-08-19'
+description: GroupDocs.Viewer for Java kullanarak cdr'yi html, ayrıca jpg, png ve
+  pdf'ye nasıl dönüştüreceğinizi öğrenin. Kurulum, kod örnekleri ve performans ipuçları
+  dahil.
 keywords:
-- render CDR files
-- GroupDocs.Viewer Java
-- HTML conversion
-title: GroupDocs.Viewer Java ile cdr'yi html, jpg, png, pdf'ye dönüştür
+- convert cdr to html
+- convert cdr to pdf
+- convert cdr to jpg
+- convert cdr to png
+- java convert coreldraw
+lastmod: '2026-08-19'
+og_description: GroupDocs.Viewer for Java kullanarak cdr'yi html, jpg, png ve pdf'ye
+  nasıl dönüştüreceğinizi öğrenin. Kurulum, kod parçacıkları ve performans en iyi
+  uygulamalarıyla adım adım rehber.
+og_image_alt: Guide showing conversion of CorelDRAW CDR files to HTML, JPG, PNG, and
+  PDF using GroupDocs.Viewer for Java
+og_title: GroupDocs.Viewer Java ile cdr'yi html, jpg, png ve pdf'ye dönüştürün
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-19'
+  description: Learn how to convert cdr to html, as well as jpg, png, and pdf, using
+    GroupDocs.Viewer for Java. Includes setup, code examples, and performance tips.
+  headline: Convert cdr to html, jpg, png, pdf with GroupDocs.Viewer Java
+  type: TechArticle
+- description: Learn how to convert cdr to html, as well as jpg, png, and pdf, using
+    GroupDocs.Viewer for Java. Includes setup, code examples, and performance tips.
+  name: Convert cdr to html, jpg, png, pdf with GroupDocs.Viewer Java
+  steps:
+  - name: '**Libraries and dependencies** – GroupDocs.Viewer added to your Maven project.'
+    text: '**Libraries and dependencies** – GroupDocs.Viewer added to your Maven project.'
+  - name: '**Java Development Kit (JDK)** – version 8 or newer installed.'
+    text: '**Java Development Kit (JDK)** – version 8 or newer installed.'
+  - name: '**Basic Java knowledge** – to understand the code snippets.'
+    text: '**Basic Java knowledge** – to understand the code snippets.'
+  type: HowTo
+- questions:
+  - answer: Yes. Load the file with a `Viewer` instance that accepts a password parameter
+      (see the API docs).
+    question: Can I convert password‑protected CDR files?
+  - answer: No hard limit, but very large files may require more memory; consider
+      processing page‑by‑page.
+    question: Is there a limit on the number of pages that can be converted at once?
+  - answer: When using `HtmlViewOptions.forEmbeddedResources`, fonts are embedded
+      as Base64, ensuring consistent rendering across browsers.
+    question: Does the HTML output include embedded fonts?
+  - answer: '`JpgViewOptions` provides a `setQuality(int)` method where you can specify
+      a value from 1‑100.'
+    question: How do I control JPEG quality?
+  - answer: Absolutely—GroupDocs.Viewer is platform‑agnostic as long as the JDK is
+      installed.
+    question: Can I convert CDR files on a Linux server?
+  type: FAQPage
+tags:
+- convert cdr
+- groupdocs.viewer
+- java file conversion
+- coreldraw cdr
+- document rendering
+title: GroupDocs.Viewer Java ile cdr'yi html, jpg, png ve pdf'ye dönüştürün
 type: docs
 url: /tr/java/file-formats-support/render-cdr-documents-groupdocs-viewer-java-guide/
 weight: 1
 ---
 
-# CDR'yi HTML, JPG, PNG, PDF'ye dönüştürme – GroupDocs.Viewer Java ile
+# GroupDocs.Viewer Java ile cdr'yi html, jpg, png, pdf'ye dönüştür
 
-Eğer **CDR'yi HTML'ye** (veya JPG, PNG ve PDF'ye) hızlı ve güvenilir bir şekilde dönüştürmeniz gerekiyorsa, doğru öğreticiye geldiniz. Bu rehberde, GroupDocs.Viewer for Java'nın kurulumundan CorelDRAW (CDR) dosyalarını web‑dostu HTML sayfalarına, yüksek‑kaliteli görüntülere ve evrensel olarak okunabilir PDF'lere render etmeye kadar ihtiyacınız olan her şeyi adım adım inceleyeceğiz. Sonunda, bu dönüşümleri sadece birkaç satır kodla herhangi bir Java uygulamasına entegre edebileceksiniz.
+If you need to **convert cdr to html** (or to JPG, PNG, and PDF) quickly and reliably, you’ve landed on the right tutorial. In this guide we’ll walk through everything you need—from installing GroupDocs.Viewer for Java to rendering CorelDRAW (CDR) files into web‑friendly HTML pages, high‑quality images, and universally readable PDFs. By the end, you’ll be able to integrate these conversions into any Java application with just a few lines of code.
 
-![GroupDocs.Viewer for Java ile CDR Dosyalarını Render Etme](/viewer/file-formats-support/render-cdr-files.png)
+![Render CDR Files with GroupDocs.Viewer for Java](/viewer/file-formats-support/render-cdr-files.png)
 
-## Hızlı Yanıtlar
+[GroupDocs.Viewer for Java ile CDR Dosyalarını Render Et](/viewer/file-formats-support/render-cdr-files.png)
+
+## Hızlı cevaplar
 - **CDR'yi HTML'ye dönüştüren kütüphane nedir?** GroupDocs.Viewer for Java.  
-- **CDR'yi JPG, PNG ve PDF'ye de dönüştürebilir miyim?** Evet—aynı Viewer API'si farklı görünüm seçenekleriyle.  
-- **Lisans gerekli mi?** Test için ücretsiz deneme veya geçici lisans yeterli; üretim için tam lisans gereklidir.  
-- **Hangi Java sürümü gereklidir?** JDK 8 veya daha yeni.  
+- **CDR'yi JPG, PNG ve PDF'ye de dönüştürebilir miyim?** Evet—farklı görünüm seçenekleriyle aynı Viewer API'sını kullanın.  
+- **Lisans gerekiyor mu?** Test için ücretsiz deneme veya geçici lisans çalışır; üretim için tam lisans gereklidir.  
+- **Hangi Java sürümü gerekiyor?** JDK 8 veya daha yeni.  
 - **Toplu dönüşüm destekleniyor mu?** Kesinlikle—aynı Viewer örneğiyle dosyalar üzerinde döngü yapın.
 
-## “CDR'yi HTML'ye dönüştürmek” nedir?
-CDR'yi HTML'ye dönüştürmek, bir CorelDRAW vektör dosyasını standart HTML işaretlemesine çevirerek, isteğe bağlı olarak görüntü ve stilleri gömmek anlamına gelir; böylece tasarım, orijinal tasarım yazılımına ihtiyaç duymadan doğrudan bir web tarayıcısında görüntülenebilir.
+## “convert cdr to html” nedir?
+Converting cdr to html means transforming a CorelDRAW vector file into standard HTML markup, optionally embedding images and styles so the design can be viewed directly in a web browser without needing the original design software. The process preserves the original layout, colors, and vector shapes by converting them into scalable SVG elements or raster images embedded in the HTML, enabling accurate visual representation across browsers while keeping file size low.
 
-## Neden CDR'yi HTML, JPG, PNG veya PDF'ye dönüştürmeliyiz?
-- **HTML** grafiklerinizi web portallarına yerleştirmenizi ve anında paylaşmanızı sağlar.  
-- **JPG** ve **PNG** galeri, küçük resim veya e‑posta ekleri için raster görüntüler sunar.  
-- **PDF** arşivleme veya belge‑paylaşım sistemleri için yazdırılabilir, platform‑bağımsız bir sürüm sağlar.  
-
-Dört formatın da elinizde olması, doğru dosya tipini doğru kitleye sunmanızı, performansı artırmanızı ve varlıklarınızı geleceğe hazır hale getirmenizi sağlar.
+## Neden cdr'yi html, jpg, png veya pdf'ye dönüştürülür?
+You can render a single CDR source into four widely supported formats, each serving a distinct purpose: HTML for instant web preview, JPG/PNG for raster images, and PDF for printable, archivable documents. This flexibility lets you serve the optimal file type to any client, reduce storage duplication, and future‑proof your assets.
 
 ## Önkoşullar
 
-Başlamadan önce şunların kurulu olduğundan emin olun:
+Before we start, make sure you have:
 
-1. **Kütüphaneler ve Bağımlılıklar** – Maven projenize GroupDocs.Viewer eklenmiş olmalı.  
-2. **Java Development Kit (JDK)** – 8 veya daha yeni bir sürüm yüklü.  
-3. **Temel Java bilgisi** – kod parçacıklarını anlayabilmek için.
+1. **Kütüphaneler ve bağımlılıklar** – GroupDocs.Viewer added to your Maven project.  
+2. **Java Development Kit (JDK)** – version 8 or newer installed.  
+3. **Temel Java bilgisi** – to understand the code snippets.
 
-### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
+### Gerekli kütüphaneler, sürümler ve bağımlılıklar
 
-`pom.xml` dosyanıza aşağıdaki Maven yapılandırmasını ekleyin (orijinal öğreticiden değiştirilmemiştir):
+Add the following Maven configuration to your `pom.xml` (unchanged from the original tutorial):
 
 ```xml
 <repositories>
@@ -66,21 +114,23 @@ Başlamadan önce şunların kurulu olduğundan emin olun:
 </dependencies>
 ```
 
-### Lisans Edinme Adımları
+### Lisans edinme adımları
 
-GroupDocs.Viewer ücretsiz deneme, test amaçlı geçici lisanslar veya tam satın alma seçenekleri sunar:
+GroupDocs.Viewer offers a free trial, temporary licenses for testing, or full‑purchase options:
 
-- **Ücretsiz Deneme** – [GroupDocs Yayın Sayfası](https://releases.groupdocs.com/viewer/java/) üzerinden indirin.  
-- **Geçici Lisans** – [GroupDocs Geçici Lisans Sayfası](https://purchase.groupdocs.com/temporary-license/) üzerinden talep edin.  
-- **Satın Alma** – [GroupDocs Satın Alma Sayfası](https://purchase.groupdocs.com/buy) üzerinden kalıcı lisans edinin.
+- **Ücretsiz deneme** – Download from the [GroupDocs Release Page](https://releases.groupdocs.com/viewer/java/).  
+- **Geçici lisans** – Request one at the [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license/).  
+- **Satın alma** – Obtain a permanent license via the [GroupDocs Purchase Page](https://purchase.groupdocs.com/buy).
 
 ## GroupDocs.Viewer for Java'ı Kurma
 
-### Maven ile Kurulum
-Yukarıdaki Maven kodu gerekli tüm JAR dosyalarını otomatik olarak çekecektir. Dosyayı kaydettikten sonra `mvn clean install` komutunu çalıştırın.
+Viewer is the core class that loads a document and provides rendering methods for all supported output formats.
 
-### Lisans Başlatma
-Herhangi bir belgeyi render etmeden önce lisansınızı başlatın:
+### Maven ile Kurulum
+The Maven snippet above will pull in all required JARs automatically. Just run `mvn clean install` after saving the file.
+
+### Lisans başlatma
+`Viewer` is the core class that loads a document and provides rendering methods for all supported output formats. Initialize your license before rendering any documents:
 
 ```java
 import com.groupdocs.viewer.License;
@@ -89,16 +139,18 @@ License lic = new License();
 lic.setLicense("path/to/your/license/file.lic");
 ```
 
-## Uygulama Kılavuzu
+## Uygulama rehberi
 
-Aşağıda her çıktı formatı için adım‑adım örnekler bulacaksınız. Kod blokları orijinal öğreticidekiyle aynı; sadece etraflarına açıklayıcı metin ekledik.
+Below you’ll find step‑by‑step examples for each output format. The code blocks are identical to the original tutorial; we only added explanatory text around them.
 
-### GroupDocs.Viewer ile CDR'yi HTML'ye Dönüştürme
+### GroupDocs.Viewer ile cdr'yi html'ye nasıl dönüştürürsünüz
 
-#### CDR Belgesini HTML Olarak Render Etme
-**Genel Bakış:** CDR dosyalarınızı kolay paylaşım için web‑dostu HTML'ye dönüştürün.
+Load a CDR file and call the HTML rendering API – that’s all you need to generate web‑ready markup. The process requires setting up file paths, creating an `HtmlViewOptions` instance, and invoking `viewer.view()`. This two‑step pattern works for any document size and preserves vector fidelity.
 
-**Adım 1 – Dosya Yollarını Ayarlama**
+#### CDR belgesini HTML'ye render etme
+**Overview:** Convert your CDR files into web‑friendly HTML for easy sharing.
+
+**Step 1 – set up file paths**
 
 ```java
 import java.nio.file.Path;
@@ -107,7 +159,9 @@ Path outputDirectory = TestFiles.getOutputDirectoryPath("RenderingCdr");
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result_{0}.html");
 ```
 
-**Adım 2 – Viewer'ı Başlat ve Render Et**
+**Step 2 – initialize viewer and render**
+
+HtmlViewOptions configures HTML rendering, allowing you to embed resources or save them separately. The following code renders each page to a separate HTML file while embedding images as Base64 strings.
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -118,18 +172,22 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-### GroupDocs.Viewer ile CDR'yi JPG'ye Dönüştürme
+### GroupDocs.Viewer ile cdr'yi jpg'ye nasıl dönüştürürsünüz
 
-#### CDR Belgesini JPG Olarak Render Etme
-**Genel Bakış:** CDR kaynağınızdan yüksek‑kaliteli JPEG görüntüler üretin.
+You can produce high‑quality JPEG images from a CDR source in just two lines of code. First, configure `JpgViewOptions` with the desired quality, then call `viewer.view()`. This approach is ideal for thumbnails, email attachments, or any scenario where a compact raster image is needed.
 
-**Adım 1 – Dosya Yollarını Ayarlama**
+#### CDR belgesini JPG'ye render etme
+**Overview:** Produce high‑quality JPEG images from your CDR source.
+
+**Step 1 – set up file paths**
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result_{0}.jpg");
 ```
 
-**Adım 2 – Viewer'ı Başlat ve Render Et**
+**Step 2 – initialize viewer and render**
+
+JpgViewOptions defines JPEG rendering settings, such as compression quality and output naming. The example below saves each page as a separate JPEG file.
 
 ```java
 import com.groupdocs.viewer.options.JpgViewOptions;
@@ -140,18 +198,22 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-### GroupDocs.Viewer ile CDR'yi PNG'ye Dönüştürme
+### GroupDocs.Viewer ile cdr'yi png'ye nasıl dönüştürürsünüz
 
-#### CDR Belgesini PNG Olarak Render Etme
-**Genel Bakış:** Arşivleme veya tasarım amaçları için kayıpsız PNG görüntüler oluşturun.
+PNG output gives you lossless raster images, perfect for archival or further graphic processing. Use `PngViewOptions` to keep every pixel intact, then render the document page by page.
 
-**Adım 1 – Dosya Yollarını Ayarlama**
+#### CDR belgesini PNG'ye render etme
+**Overview:** Generate lossless PNG images for archival or design purposes.
+
+**Step 1 – set up file paths**
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result_{0}.png");
 ```
 
-**Adım 2 – Viewer'ı Başlat ve Render Et**
+**Step 2 – initialize viewer and render**
+
+PngViewOptions specifies PNG rendering parameters, including support for transparent backgrounds. The code creates a PNG per page automatically.
 
 ```java
 import com.groupdocs.viewer.options.PngViewOptions;
@@ -162,18 +224,22 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-### GroupDocs.Viewer ile CDR'yi PDF'ye Dönüştürme
+### GroupDocs.Viewer ile cdr'yi pdf'ye nasıl dönüştürürsünüz
 
-#### CDR Belgesini PDF Olarak Render Etme
-**Genel Bakış:** CDR dosyalarınızı evrensel olarak okunabilir PDF'lere dönüştürün.
+Turning a CDR file into PDF gives you a universally readable, print‑ready document. `PdfViewOptions` handles vector to raster conversion internally, preserving layout and fonts without requiring Adobe Illustrator.
 
-**Adım 1 – Dosya Yollarını Ayarlama**
+#### CDR belgesini PDF'ye render etme
+**Overview:** Turn your CDR files into universally readable PDFs.
+
+**Step 1 – set up file paths**
 
 ```java
 Path pageFilePathFormat = outputDirectory.resolve("cdr_result.pdf");
 ```
 
-**Adım 2 – Viewer'ı Başlat ve Render Et**
+**Step 2 – initialize viewer and render**
+
+PdfViewOptions controls PDF generation, enabling font embedding and page layout customization. The snippet creates a single PDF containing all pages.
 
 ```java
 import com.groupdocs.viewer.options.PdfViewOptions;
@@ -184,48 +250,61 @@ try (Viewer viewer = new Viewer(TestFiles.SAMPLE_CDR)) {
 }
 ```
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
 
-- **Web Portalları:** HTML dönüşümünü kullanarak CDR tasarımlarını doğrudan sitenize gömün.  
-- **Görüntü Galerileri:** Hızlı yüklenen JPG/PNG çıktılarıyla galeri oluşturun.  
-- **Belge Paylaşımı:** Yazdırılabilir, yalnızca‑okunabilir bir sürüm için PDF sağlayın.  
-- **Arşivleme:** Gelecekteki erişilebilirliği garanti altına almak için birden çok formatta saklayın.  
-- **Çapraz‑Platform Entegrasyonu:** Oluşturulan dosyaları diğer hizmetlere (ör. OCR, analiz) besleyin.
+- **Web portalları:** HTML dönüşümünü kullanarak CDR tasarımlarını doğrudan sitenize gömün.  
+- **Görsel galeriler:** Hızlı yüklenen galeriler veya ürün katalogları için JPG/PNG çıktıları dağıtın.  
+- **Doküman paylaşımı:** Yazdırılabilir, sadece okunabilir bir sürüm ihtiyacı olan müşteriler için PDF sağlayın.  
+- **Arşivleme:** Yazılım değişikliklerinden bağımsız gelecekteki erişilebilirliği garanti etmek için birden fazla formatta saklayın.  
+- **Çapraz platform entegrasyonu:** Oluşturulan dosyaları OCR, analiz veya dijital varlık yönetim sistemleri gibi sonraki hizmetlere besleyin.
 
-## Performans Düşünceleri
+## Performans değerlendirmeleri
 
-- **Viewer örneklerini** mümkün olduğunca çabuk serbest bırakın (try‑with‑resources ile gösterildiği gibi) bellek tasarrufu için.  
-- **Toplu İşleme:** Aynı Viewer yapılandırmasını kullanarak bir dizi CDR dosyası üzerinde döngü yapın, böylece ek yükü azaltın.  
-- **Kaynak Tahsisi:** Büyük veya karmaşık CDR dosyaları için yeterli CPU/RAM ayırın; izleme araçlarıyla ince ayar yapabilirsiniz.
+- **Viewer örneklerini** hızlıca serbest bırakın (try‑with‑resources ile gösterildiği gibi) bellek boşaltmak için.  
+- **Toplu işleme:** Aynı Viewer yapılandırmasıyla bir CDR dosyaları koleksiyonu üzerinde döngü yaparak yükü azaltın.  
+- **Kaynak tahsisi:** GroupDocs.Viewer, tüm dosyayı belleğe yüklemeden 500 sayfaya kadar belge render edebilir, ancak çok karmaşık çizimler daha büyük heap boyutundan faydalanabilir. Büyük ölçekli dönüşümler sırasında CPU ve RAM kullanımını izleyin.
+
+## Yaygın tuzaklar ve sorun giderme ipuçları
+
+- **Eksik yazı tipleri:** Çıktı farklı görünüyorsa, gerekli yazı tiplerinin sunucuda mevcut olduğundan emin olun veya `PdfViewOptions` ile gömün.  
+- **Büyük dosyalar:** 200 MB'yi aşan CDR dosyaları için `OutOfMemoryError` önlemek amacıyla sayfa sayfa işlemeyi düşünün.  
+- **Yanlış görüntü kalitesi:** JPEG'ler çok sıkıştırılmış görünüyorsa `JpgViewOptions` içindeki `setQuality` değerini ayarlayın.  
+- **Lisans hataları:** Lisans dosyası yolunun doğru olduğundan ve lisans sürümünün Viewer kütüphane sürümünüzle eşleştiğinden emin olun.
 
 ## Sonuç
 
-**CDR'yi HTML**, ayrıca JPG, PNG ve PDF'ye nasıl dönüştüreceğinizi GroupDocs.Viewer for Java kullanarak gösterdik. Kısa kod parçacıkları ve en iyi uygulama ipuçlarını izleyerek bu dönüşümleri herhangi bir Java‑tabanlı iş akışına entegre edebilir, kullanıcılarınıza esnek ve yüksek‑kaliteli çıktılar sunabilirsiniz.
+We’ve shown you how to **convert cdr to html**, as well as to JPG, PNG, and PDF, using GroupDocs.Viewer for Java. By following the concise code snippets and best‑practice tips, you can embed these conversions into any Java‑based workflow, delivering flexible, high‑quality outputs to your users.
 
-### Sonraki Adımlar
-- Özel sayfa boyutları veya filigranlar gibi gelişmiş render seçeneklerini deneyin.  
-- Dönüştürme hattını bir REST API ile birleştirerek talep üzerine dosya dönüşümü sunun.  
-- Topluluğa katılın ve sorularınızı [GroupDocs Forum](https://forum.groupdocs.com/c/viewer) üzerinden sorun.
+### Sonraki adımlar
+- Özel sayfa boyutları veya filigranlar gibi gelişmiş render seçenekleriyle deney yapın.  
+- Dönüşüm hattını bir REST API ile birleştirerek isteğe bağlı dosya dönüşümü sunun.  
+- Topluluğa katılın ve [GroupDocs Forum](https://forum.groupdocs.com/c/viewer) adresinde sorular sorun.
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: Parola korumalı CDR dosyalarını dönüştürebilir miyim?**  
-**C:** Evet. Parola parametresi kabul eden bir `Viewer` örneğiyle dosyayı yükleyin (API dokümantasyonuna bakın).
+**Q: Şifre korumalı CDR dosyalarını dönüştürebilir miyim?**  
+A: Evet. Şifre parametresi kabul eden bir `Viewer` örneğiyle dosyayı yükleyin (API belgelerine bakın).
 
-**S: Aynı anda dönüştürülebilecek sayfa sayısında bir limit var mı?**  
-**C:** Katı bir limit yok, ancak çok büyük dosyalar daha fazla bellek gerektirebilir; sayfa‑sayfa işleme düşünün.
+**Q: Aynı anda dönüştürülebilecek sayfa sayısında bir limit var mı?**  
+A: Katı bir limit yok, ancak çok büyük dosyalar daha fazla bellek gerektirebilir; sayfa sayfa işlemeyi düşünün.
 
-**S: HTML çıktısı gömülü fontları içeriyor mu?**  
-**C:** `HtmlViewOptions.forEmbeddedResources` kullanıldığında fontlar Base64 olarak gömülür, tutarlı render sağlar.
+**Q: HTML çıktısı gömülü yazı tiplerini içeriyor mu?**  
+A: `HtmlViewOptions.forEmbeddedResources` kullanıldığında, yazı tipleri Base64 olarak gömülür ve tarayıcılar arasında tutarlı render sağlar.
 
-**S: JPEG kalitesini nasıl kontrol ederim?**  
-**C:** `JpgViewOptions` sınıfındaki `setQuality(int)` metodu ile 1‑100 arasında bir değer belirtebilirsiniz.
+**Q: JPEG kalitesini nasıl kontrol ederim?**  
+A: `JpgViewOptions` 1‑100 arasında bir değer belirtebileceğiniz `setQuality(int)` metodunu sunar.
 
-**S: CDR dosyalarını Linux sunucusunda dönüştürebilir miyim?**  
-**C:** Kesinlikle—GroupDocs.Viewer, JDK yüklü olduğu sürece platform bağımsızdır.
+**Q: Linux sunucusunda CDR dosyalarını dönüştürebilir miyim?**  
+A: Kesinlikle—JDK yüklü olduğu sürece GroupDocs.Viewer platform bağımsızdır.
 
 ---
 
-**Son Güncelleme:** 2026-02-28  
-**Test Edilen Sürüm:** GroupDocs.Viewer 25.2 for Java  
+**Son Güncelleme:** 2026-08-19  
+**Test Edilen Versiyon:** GroupDocs.Viewer 25.2 for Java  
 **Yazar:** GroupDocs
+
+## İlgili Eğitimler
+
+- [GroupDocs.Viewer Java ile Excel'i HTML, JPG, PNG ve PDF'ye Nasıl Dönüştürürsünüz](/viewer/java/rendering-basics/groupdocs-viewer-java-excel-to-html-jpg-png-pdf/)
+- [GroupDocs.Viewer for Java ile CF2'yi PDF, HTML, JPG, PNG'ye Nasıl Dönüştürürsünüz](/viewer/java/rendering-basics/render-cf2-files-groupdocs-java/)
+- [GroupDocs.Viewer ile Java'da pdf'yi html'ye dönüştürme ve görüntü kalitesini optimize etme](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
