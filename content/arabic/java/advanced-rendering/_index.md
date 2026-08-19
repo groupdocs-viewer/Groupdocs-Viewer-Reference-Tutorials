@@ -1,289 +1,286 @@
 ---
 categories:
 - Java Development
-date: '2026-03-05'
-description: تعلم كيفية تدوير صفحات PDF محددة وتحويل ملفات DOCX إلى HTML باستخدام
-  GroupDocs.Viewer Java. يتضمن نصائح لتصيير PDF، تخصيص جودة الصورة، وتحسين الأداء.
-keywords: rotate specific pdf pages, customize pdf image quality, convert docx html
-  java, render pdf images java, GroupDocs Viewer Java advanced rendering, Java document
-  rendering tutorials, PDF rendering Java GroupDocs, Java document viewer implementation,
-  GroupDocs Viewer Java configuration
-lastmod: '2026-03-05'
-linktitle: Advanced Rendering Tutorials
+date: '2026-08-19'
+description: تعلم كيفية تدوير صفحات PDF، تحويل DOCX إلى HTML Java، وتخصيص جودة صورة
+  PDF باستخدام GroupDocs.Viewer for Java. يتضمن تحسين الأداء ونصائح العرض.
+keywords:
+- how to rotate pdf
+- docx to html java
+- java document viewer
+- specific pdf page rotation
+- customize pdf image quality
+lastmod: '2026-08-19'
+linktitle: دروس العرض المتقدم
+og_description: تعلم كيفية تدوير صفحات PDF وتحويل DOCX إلى HTML Java باستخدام GroupDocs.Viewer
+  for Java. تحسين جودة الصورة والأداء في تطبيقات Java الخاصة بك.
+og_image_alt: Guide showing rotation of specific PDF pages using GroupDocs.Viewer
+  Java
+og_title: كيفية تدوير صفحات PDF باستخدام GroupDocs.Viewer Java – دليل متقدم
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-19'
+  description: Learn how to rotate pdf pages, convert docx to html java, and customize
+    pdf image quality using GroupDocs.Viewer for Java. Includes performance tuning
+    and rendering tips.
+  headline: How to rotate pdf pages with GroupDocs.Viewer Java – advanced rendering
+    guide
+  type: TechArticle
+- description: Learn how to rotate pdf pages, convert docx to html java, and customize
+    pdf image quality using GroupDocs.Viewer for Java. Includes performance tuning
+    and rendering tips.
+  name: How to rotate pdf pages with GroupDocs.Viewer Java – advanced rendering guide
+  steps:
+  - name: '**Initialize the Viewer** – supply your license and create the `Viewer`
+      object.'
+    text: '**Initialize the Viewer** – supply your license and create the `Viewer`
+      object.'
+  - name: '**Load the DOCX file** – provide a `File` or `InputStream`.'
+    text: '**Load the DOCX file** – provide a `File` or `InputStream`.'
+  - name: '**Configure rendering options** – enable external resource handling, set
+      image quality, and choose the output format.'
+    text: '**Configure rendering options** – enable external resource handling, set
+      image quality, and choose the output format.'
+  - name: '**Execute the conversion** – invoke `viewer.render` with `HtmlOptions`.'
+    text: '**Execute the conversion** – invoke `viewer.render` with `HtmlOptions`.'
+  - name: '**Process the result** – save HTML files and any extracted resources to
+      your desired location.'
+    text: '**Process the result** – save HTML files and any extracted resources to
+      your desired location.'
+  - name: '**Create a PdfOptions object** – this holds all PDF‑specific settings.'
+    text: '**Create a PdfOptions object** – this holds all PDF‑specific settings.'
+  - name: '**Specify the pages to rotate** – use `setPages(Arrays.asList(2, 5, 7))`
+      for pages 2, 5, 7.'
+    text: '**Specify the pages to rotate** – use `setPages(Arrays.asList(2, 5, 7))`
+      for pages 2, 5, 7.'
+  - name: '**Set the rotation angle** – `setRotationAngle(RotationAngle.ROTATE_90)`
+      rotates the selected pages 90°.'
+    text: '**Set the rotation angle** – `setRotationAngle(RotationAngle.ROTATE_90)`
+      rotates the selected pages 90°.'
+  - name: '**Render the document** – `viewer.render(pdfFile, pdfOptions)` writes the
+      rotated pages to the output folder.'
+    text: '**Render the document** – `viewer.render(pdfFile, pdfOptions)` writes the
+      rotated pages to the output folder.'
+  type: HowTo
+- questions:
+  - answer: Yes. Initialize the `Viewer` bean with your license, then call `viewer.render`
+      with `HtmlOptions` inside any service or controller.
+    question: Can I use GroupDocs.Viewer to convert DOCX to HTML in a Spring Boot
+      application?
+  - answer: Use `PdfOptions` to enable page‑by‑page rendering and configure `setCacheFolder`
+      to store intermediate results, reducing memory pressure.
+    question: How does the library handle large PDFs when rendering to images?
+  - answer: Absolutely. Set the `pages` collection in `RenderOptions` to the specific
+      page numbers you need.
+    question: Is it possible to render only selected pages of a document?
+  - answer: DOCX, PPTX, XLSX, PDF, and many others are supported. Use `HtmlOptions.setResourcesPath`
+      to control where images and CSS are saved.
+    question: What formats can be rendered to HTML with embedded resources?
+  - answer: Yes, but each `Viewer` instance should be used per thread or you should
+      implement proper synchronization to avoid race conditions.
+    question: Does GroupDocs.Viewer support multi‑threaded rendering?
+  type: FAQPage
 tags:
-- groupdocs-viewer
-- document-rendering
-- java-tutorials
-- pdf-processing
-title: تدوير صفحات PDF محددة باستخدام GroupDocs.Viewer Java
+- rotate pdf
+- GroupDocs Viewer
+- Java document rendering
+- pdf processing
+title: كيفية تدوير صفحات PDF باستخدام GroupDocs.Viewer Java – دليل العرض المتقدم
 type: docs
 url: /ar/java/advanced-rendering/
 weight: 4
 ---
 
-# تدوير صفحات PDF محددة باستخدام GroupDocs.Viewer Java – دليل العرض المتقدم
+# كيفية تدوير صفحات pdf باستخدام GroupDocs.Viewer Java – دليل التقديم المتقدم
 
-هل ترغب في تنفيذ عرض مستندات متطور في تطبيقات Java الخاصة بك؟ لقد وصلت إلى المكان الصحيح. في هذا الدليل سنوضح لك **كيفية تدوير صفحات PDF المحددة** مع تغطية مواضيع متقدمة مثل تحويل DOCX إلى HTML، تخصيص جودة صور PDF، وعرض صور PDF في Java. في النهاية، ستحصل على خريطة طريق واضحة لبناء عارضات مستندات سريعة، موثوقة، وغنية بالميزات تلبي احتياجات الأعمال الواقعية.
+في هذا الدليل الشامل ستكتشف **كيفية تدوير صفحات pdf** باستخدام GroupDocs.Viewer for Java بينما تتقن أيضًا المهام ذات الصلة مثل تحويل DOCX إلى HTML، تخصيص جودة صور PDF، وضبط أداء العرض بدقة. تستهدف الأمثلة خطوة بخطوة مطوري Java المتوسطين الذين يحتاجون إلى عارض مستندات موثوق وجاهز للإنتاج يمكنه التعامل مع ملفات كبيرة ومعقدة دون التضحية بالسرعة.
 
-![Advanced Document Rendering with GroupDocs.Viewer for Java](/viewer/advanced-rendering/img-java.png)
+![عرض مستندات متقدم باستخدام GroupDocs.Viewer for Java](/viewer/advanced-rendering/img-java.png)
 
 ## إجابات سريعة
 - **ما هو الاستخدام الأساسي؟** تحويل DOCX إلى HTML في Java مع معالجة الموارد الخارجية وتدوير صفحات PDF المحددة.  
-- **أي مكتبة تتولى التحويل؟** GroupDocs.Viewer for Java توفر واجهة برمجة تطبيقات بسيطة لـ **convert docx to html java** بكفاءة.  
-- **هل أحتاج إلى ترخيص؟** الترخيص المؤقت يكفي للتقييم؛ الترخيص الكامل مطلوب للإنتاج.  
-- **هل يمكنني عرض ملفات PDF باستخدام نفس الواجهة؟** نعم – المكتبة تدعم أيضًا سيناريوهات **render pdf images java**.  
-- **هل هناك تحسينات أداء مدمجة؟** تشمل الدروس التخزين المؤقت، عرض الصفحات الانتقائي، وتعديل جودة الصور.
+- **أي مكتبة تتعامل مع التحويل؟** GroupDocs.Viewer for Java يوفر واجهة برمجة تطبيقات بسيطة لـ **convert docx to html java** بكفاءة.  
+- **هل أحتاج إلى ترخيص؟** ترخيص مؤقت يعمل للتقييم؛ ترخيص كامل مطلوب للإنتاج.  
+- **هل يمكنني عرض ملفات PDF باستخدام نفس الواجهة البرمجية؟** نعم – المكتبة تدعم أيضًا سيناريوهات **render pdf images java**.  
+- **هل هناك تحسين أداء مدمج؟** تشمل الدروس التخزين المؤقت، العرض الانتقائي للصفحات، وتعديلات جودة الصورة.
 
-## لماذا يعتبر العرض المتقدم في GroupDocs.Viewer Java مهمًا
+## ما هو تدوير صفحات pdf المحددة؟
+يعني تدوير صفحات PDF المحددة تغيير اتجاه الصفحات المختارة فقط — على سبيل المثال، تحويل فاتورة مقلوبة إلى وضعية عمودية — دون إعادة معالجة المستند بالكامل. هذا يحافظ على انخفاض استهلاك وحدة المعالجة المركزية والذاكرة، وهو أمر أساسي للخدمات ذات الحركة العالية. يتم تنفيذ العملية أثناء العرض، لذا يبقى الملف الأصلي دون تغيير ويعكس الناتج فقط الاتجاه الجديد.
 
-تتطلب التطبيقات الحديثة أكثر من مجرد عرض مستندات أساسي. يتوقع المستخدمون عرض مستندات سريع، دقيق، وقابل للتخصيص يتعامل مع كل شيء من ملفات PDF البسيطة إلى رسومات CAD المعقدة. يقدم GroupDocs.Viewer for Java هذه القدرة، لكن إتقان ميزاته المتقدمة—مثل **rotate specific pdf pages**—يتطلب دليلًا مناسبًا.
+## لماذا تستخدم GroupDocs.Viewer Java للعرض المتقدم؟
+GroupDocs.Viewer يدعم **50+ input and output formats**، يمكنه عرض ملفات PDF متعددة المئات من الصفحات دون تحميل الملف بالكامل إلى الذاكرة، ويقدم تحكمًا على مستوى الصفحة مثل التدوير، معالجة الطبقات، والعرض الانتقائي. تجعل هذه القدرات الم quantified تجعلها خيارًا رئيسيًا لمعالجة المستندات على مستوى المؤسسات.
 
-تحل هذه الدروس تحديات المطورين الشائعة مثل التعامل مع مجموعات مستندات كبيرة بكفاءة، تخصيص مخرجات العرض لحالات استخدام محددة، وتحسين الأداء لبيئات الإنتاج. ستتعلم تقنيات لا يكتشفها الكثير من المطورين إلا بعد أشهر من التجربة والخطأ.
-
-## البدء مع العرض المتقدم
-
-قبل الغوص في الدروس المحددة، إليك ما تحتاج إلى معرفته:
-
-**المتطلبات المسبقة**: خبرة أساسية في تطوير Java ومعرفة بأساسيات GroupDocs.Viewer. إذا كنت جديدًا على GroupDocs.Viewer، ابدأ بالدروس الأساسية قبل الانتقال إلى هذه التقنيات المتقدمة.
-
-**حالات الاستخدام الشائعة**: هذه الدروس مثالية للمطورين الذين يعملون على أنظمة إدارة المستندات، مولدات التقارير، منصات التعاون، أو أي تطبيق يتطلب معالجة مستندات متطورة.
-
-**اعتبارات الأداء**: يمكن أن تكون تقنيات العرض المتقدم مستهلكة للموارد. كل درس يتضمن نصائح أداء وممارسات أفضل لمساعدتك على الحفاظ على سرعة التطبيق المثلى.
+## المتطلبات المسبقة
+- Java 17 أو أحدث مثبت على جهاز التطوير الخاص بك.  
+- نظام بناء Maven أو Gradle لإدارة التبعيات.  
+- ترخيص صالح لـ GroupDocs.Viewer for Java (الترخيص المؤقت يعمل للاختبار).  
+- إلمام أساسي بـ فئات `Viewer` و `PdfOptions` و `HtmlOptions`.
 
 ## كيفية تحويل docx إلى html java باستخدام GroupDocs.Viewer
+حمّل ملف DOCX الخاص بك وقم بعرضه إلى HTML في استدعاء واحد.  
+**الإجابة المباشرة:** استدعِ `viewer.render(inputFile, new HtmlOptions())` – تقوم الواجهة بقراءة DOCX، استخراج الصور/CSS، وكتابة مجلد HTML مستقل في عملية واحدة. يبسط هذا النهج التكامل ويقلل كمية شفرة القالب التي تحتاج إلى كتابتها.
 
-تحويل ملفات DOCX إلى HTML هو طلب شائع عندما تحتاج إلى محتوى جاهز للويب مع الحفاظ على التنسيق، الصور، والموارد الخارجية. يبسط GroupDocs.Viewer for Java هذه العملية باستدعاء API واحد، مما يتيح لك التركيز على التكامل بدلاً من التحليل منخفض المستوى.
+`Viewer` هو الفئة الأساسية التي تنسق جميع عمليات العرض. بعد إنشاء كائن `Viewer`، تمرّر المستند المصدر وكائن التكوين إلى طريقة `render`.
 
-عادةً ما تشمل الخطوات:
-
-1. **تهيئة Viewer** – قدم الترخيص الخاص بك وأنشئ كائن `Viewer`.  
-2. **تحميل ملف DOCX** – قدم كائن `File` أو `InputStream`.  
-3. **تكوين خيارات العرض** – فعّل معالجة الموارد الخارجية، اضبط جودة الصورة، واختر تنسيق الإخراج.  
+1. **تهيئة Viewer** – قدم ترخيصك وأنشئ كائن `Viewer`.  
+2. **تحميل ملف DOCX** – قدم `File` أو `InputStream`.  
+3. **تكوين خيارات العرض** – فعّل معالجة الموارد الخارجية، عيّن جودة الصورة، واختر تنسيق الإخراج.  
 4. **تنفيذ التحويل** – استدعِ `viewer.render` مع `HtmlOptions`.  
 5. **معالجة النتيجة** – احفظ ملفات HTML وأي موارد مستخرجة إلى الموقع المطلوب.
 
-يتم عرض هذه الخطوات في الرابط التعليمي الأول أدناه، والذي يوضح أيضًا كيفية إدارة الصور الخارجية وملفات CSS.
+يتم توضيح هذه الخطوات في الرابط التعليمي الأول أدناه، والذي يوضح أيضًا كيفية إدارة الصور الخارجية وملفات CSS.
 
 ## كيفية عرض pdf java باستخدام GroupDocs.Viewer
+اعرض ملفات PDF إلى صور، HTML، أو صيغ أخرى مع التحكم في مخرجات كل صفحة.  
+**الإجابة المباشرة:** استخدم `PdfOptions` مع `setPages` لتحديد الصفحات التي تحتاجها، ثم استدعِ `viewer.render(pdfFile, options)` – هذا يبث كل صفحة كصورة دون تحميل كامل PDF إلى الذاكرة.
 
-عرض ملفات PDF إلى صور، HTML، أو تنسيقات أخرى هو قدرة أساسية أخرى. تتيح المكتبة التحكم في العرض صفحةً بصفحة، معالجة الطبقات، وجودة الصورة. تشمل حالات الاستخدام إنشاء صور مصغرة، استخراج نص للفهرسة، أو إنشاء نسخ قابلة للطباعة.
+`PdfOptions` هو كائن التكوين الذي يتيح لك ضبط عرض PDF بدقة، بما في ذلك اختيار الصفحات، التدوير، وجودة الصورة.
 
 تشمل التقنيات الرئيسية التي يغطيها قائمة الدروس تعطيل تجميع الأحرف لاستخراج نص دقيق، العرض الطبقي للحفاظ على Z‑index، وإعادة ترتيب الصفحات لتدفقات مستند مخصصة.
 
-## كيفية تدوير صفحات PDF المحددة باستخدام GroupDocs.Viewer Java
+## كيفية تدوير صفحات pdf المحددة باستخدام GroupDocs.Viewer Java
+قم بتدوير الصفحات التي تختارها فقط، مع ترك البقية دون تغيير.  
+**الإجابة المباشرة:** أنشئ كائن `PdfOptions`، استدعِ `setPages(List<Integer>)` للصفحات المستهدفة، طبّق `setRotationAngle(RotationAngle.ROTATE_90)` (أو 180/270)، ثم اعرض باستخدام `viewer.render`. هذا يحدث الصفحات المختارة في تمريرة واحدة ويتجنب إعادة عرض المستند بالكامل.
 
-أحيانًا تحتاج إلى تدوير صفحات معينة فقط في PDF—مثل فاتورة ممسوحة ضوئيًا مقلوبة أو مخطط يحتاج إلى وضعية أفقية. يجعل GroupDocs.Viewer Java ذلك بسيطًا:
+`PdfOptions` هو فئة الخيارات التي تتحكم في تفاصيل عرض PDF مثل نطاق الصفحات، التدوير، وجودة الصورة. من خلال تكوينه لكل صفحة تحافظ على تقليل وقت المعالجة إلى الحد الأدنى.
 
-* أنشئ كائن `PdfOptions`.  
-* استخدم `setPages` لتحديد أرقام الصفحات التي تريد تدويرها.  
-* طبّق `setRotationAngle` (90°، 180°، أو 270°) لتلك الصفحات فقط.  
-* استدعِ `viewer.render` مع الخيارات المكوّنة.
-
-هذا النهج يتجنب إعادة عرض المستند بالكامل ويحافظ على زمن المعالجة منخفضًا—مثالي للتطبيقات التي تتطلب أداءً عاليًا.
+خطوات التنفيذ النموذجية:
+1. **إنشاء كائن PdfOptions** – يحتوي على جميع إعدادات PDF الخاصة.  
+2. **تحديد الصفحات للتدوير** – استخدم `setPages(Arrays.asList(2, 5, 7))` للصفحات 2، 5، 7.  
+3. **تعيين زاوية التدوير** – `setRotationAngle(RotationAngle.ROTATE_90)` يدور الصفحات المختارة 90°.  
+4. **عرض المستند** – `viewer.render(pdfFile, pdfOptions)` يكتب الصفحات المدورة إلى مجلد الإخراج.
 
 ## فئات الدروس
 
-### عرض وتحسين PDF
-إتقان تحديات العرض الخاصة بـ PDF، من معالجة ملفات كبيرة بكفاءة إلى تخصيص جودة الإخراج وإدارة التخطيطات المعقدة.
+### عرض PDF وتحسينه
+إتقان تحديات عرض PDF الخاصة، من معالجة الملفات الكبيرة بكفاءة إلى تخصيص جودة الإخراج وإدارة التخطيطات المعقدة.
 
-### [Convert DOCX to HTML with External Resources Using GroupDocs.Viewer for Java](./render-docx-html-external-resources-groupdocs-java/)
-تعلم كيفية تحويل مستندات DOCX إلى تنسيق HTML باستخدام GroupDocs.Viewer for Java، بما في ذلك معالجة الموارد الخارجية مثل الصور وملفات الأنماط.
-
-### [Disable Character Grouping in PDFs with GroupDocs.Viewer for Java: Precise Rendering Techniques](./groupdocs-viewer-java-disable-character-grouping-pdf/)
-تعلم كيفية تعطيل تجميع الأحرف في عرض PDF باستخدام GroupDocs.Viewer for Java، لضمان تمثيل نص دقيق للخطوط المعقدة.
-
-### [Efficient PDF Layered Rendering in Java Using GroupDocs.Viewer](./pdf-layered-rendering-java-groupdocs-viewer/)
-إتقان العرض الطبقي لملفات PDF باستخدام GroupDocs.Viewer for Java للحفاظ على التسلسل الهرمي البصري وZ‑Index. تعلم الإعداد، التنفيذ، وأفضل الممارسات.
-
-### [Efficient PDF Page Reordering with GroupDocs.Viewer for Java: A Comprehensive Guide](./master-pdf-page-reorder-groupdocs-java/)
-تعلم كيفية إعادة ترتيب صفحات PDF بسلاسة باستخدام GroupDocs.Viewer for Java. يغطي هذا الدليل الإعداد، التنفيذ، وتحسين الأداء.
-
-### [Java PDF Rendering with GroupDocs.Viewer: Implementing Page Breaks in Spreadsheets](./java-pdf-rendering-groupdocs-viewer-page-breaks/)
-تعلم كيفية عرض جداول البيانات كملفات PDF مع فواصل صفحات باستخدام GroupDocs.Viewer for Java. يغطي هذا الدرس خيارات التكوين وتطبيقات عملية.
-
-### [Optimize JPG Quality in PDFs Using GroupDocs.Viewer for Java](./optimize-jpg-quality-groupdocs-viewer-java/)
-تعلم كيفية ضبط جودة صور JPG داخل مستندات PDF باستخدام GroupDocs.Viewer for Java.وازن بين حجم الملف والوضوح البصري بسهولة.
-
-### [Optimize PDF Image Quality in Java Using GroupDocs.Viewer](./adjust-image-quality-groupdocs-viewer-java/)
-تعلم كيفية تعديل جودة الصور في ملفات PDF باستخدام GroupDocs.Viewer for Java، لتحقيق توازن فعال بين الوضوح وحجم الملف.
-
-### [Rotate Specific PDF Pages Using GroupDocs.Viewer in Java: A Comprehensive Guide](./rotate-pdf-pages-groupdocs-viewer-java/)
-تعلم كيفية تدوير صفحات محددة داخل مستند PDF باستخدام GroupDocs.Viewer for Java. يغطي هذا الدليل الإعداد، التنفيذ، وتطبيقات عملية.
+- [تحويل DOCX إلى HTML مع الموارد الخارجية باستخدام GroupDocs.Viewer for Java](./render-docx-html-external-resources-groupdocs-java/)
+- [تعطيل تجميع الأحرف في ملفات PDF باستخدام GroupDocs.Viewer for Java: تقنيات عرض دقيقة](./groupdocs-viewer-java-disable-character-grouping-pdf/)
+- [عرض طبقي فعال لملفات PDF في Java باستخدام GroupDocs.Viewer](./pdf-layered-rendering-java-groupdocs-viewer/)
+- [إعادة ترتيب صفحات PDF بفعالية باستخدام GroupDocs.Viewer for Java: دليل شامل](./master-pdf-page-reorder-groupdocs-java/)
+- [عرض PDF في Java باستخدام GroupDocs.Viewer: تنفيذ فواصل الصفحات في جداول البيانات](./java-pdf-rendering-groupdocs-viewer-page-breaks/)
+- [تحسين جودة JPG في ملفات PDF باستخدام GroupDocs.Viewer for Java](./optimize-jpg-quality-groupdocs-viewer-java/)
+- [تحسين جودة صورة PDF في Java باستخدام GroupDocs.Viewer](./adjust-image-quality-groupdocs-viewer-java/)
+- [تدوير صفحات PDF المحددة باستخدام GroupDocs.Viewer في Java: دليل شامل](./rotate-pdf-pages-groupdocs-viewer-java/)
 
 ### مستندات Office وجداول البيانات
-معالجة مستندات Microsoft Office مع تنسيقات متقدمة، تكوينات مخصصة، وخيارات عرض متخصصة.
-
-### [How to Adjust Text Overflow in Excel Spreadsheets with GroupDocs.Viewer for Java](./groupdocs-viewer-java-adjust-text-overflow-spreadsheets/)
-تعلم كيفية إدارة تجاوز النص في جداول Excel باستخدام GroupDocs.Viewer for Java. يقدم هذا الدليل إرشادات خطوة بخطوة وأفضل الممارسات.
-
-### [Java Spreadsheet Print Areas Rendering with GroupDocs.Viewer for Java: A Comprehensive Guide](./java-groupdocs-viewer-render-print-areas-spreadsheet/)
-تعلم كيفية عرض مناطق الطباعة فقط في جداول البيانات باستخدام GroupDocs.Viewer في Java. مثالي للمطورين الباحثين عن حلول معاينة مستندات فعّالة.
-
-### [Render Hidden Rows & Columns in Java Spreadsheets Using GroupDocs.Viewer](./render-hidden-rows-columns-java-groupdocs-viewer/)
-تعلم كيفية عرض الصفوف والأعمدة المخفية في جداول البيانات باستخدام GroupDocs.Viewer لتحويل HTML سلس. احرص على رؤية جميع البيانات مع هذا الدليل المتقدم.
-
-### [Skip Rendering Empty Rows in Java Using GroupDocs.Viewer: A Performance Guide](./skip-rendering-empty-rows-java-groupdocs-viewer/)
-تعلم كيفية تخطي عرض الصفوف الفارغة في جداول البيانات بكفاءة باستخدام GroupDocs.Viewer for Java، مما يعزز أداء التطبيق ويقلل استهلاك الموارد.
-
-### [How to Render Tracked Changes in Word Documents Using GroupDocs.Viewer for Java: A Comprehensive Guide](./render-tracked-changes-word-docs-groupdocs-viewer-java/)
-تعلم كيفية عرض التغييرات المتتبعة في مستندات Word باستخدام GroupDocs.Viewer for Java من خلال هذا الدليل خطوة بخطوة. مثالي للمطورين الذين يدمجون أنظمة إدارة المستندات.
+مستندات Office وجداول البيانات
+- [كيفية تعديل تجاوز النص في جداول Excel باستخدام GroupDocs.Viewer for Java](./groupdocs-viewer-java-adjust-text-overflow-spreadsheets/)
+- [عرض مناطق الطباعة في جداول البيانات Java باستخدام GroupDocs.Viewer for Java: دليل شامل](./java-groupdocs-viewer-render-print-areas-spreadsheet/)
+- [عرض الصفوف والأعمدة المخفية في جداول البيانات Java باستخدام GroupDocs.Viewer](./render-hidden-rows-columns-java-groupdocs-viewer/)
+- [تخطي عرض الصفوف الفارغة في Java باستخدام GroupDocs.Viewer: دليل الأداء](./skip-rendering-empty-rows-java-groupdocs-viewer/)
+- [كيفية عرض التغييرات المتتبعة في مستندات Word باستخدام GroupDocs.Viewer for Java: دليل شامل](./render-tracked-changes-word-docs-groupdocs-viewer-java/)
 
 ### معالجة رسومات CAD
-العمل مع ملفات CAD المعقدة، معالجة تخطيطات متعددة، وتطبيق خيارات عرض مخصصة للرسومات التقنية.
-
-### [How to Render CAD Drawings as PNG with Custom Size & Background Color Using GroupDocs.Viewer for Java](./render-cad-drawings-custom-png-groupdocs-java/)
-تعلم كيفية تحويل رسومات CAD إلى صور PNG عالية الجودة باستخدام أبعاد مخصصة ولون خلفية مع GroupDocs.Viewer for Java.
-
-### [Render All CAD Layouts Efficiently Using GroupDocs.Viewer for Java](./render-cad-drawings-layouts-groupdocs-viewer-java/)
-تعلم كيفية عرض جميع التخطيطات من رسومات CAD باستخدام GroupDocs.Viewer for Java. يغطي هذا الدليل الإعداد، التكوين، والتنفيذ العملي.
-
-### [Render Specific CAD Layers in Java Using GroupDocs.Viewer: A Comprehensive Guide](./render-cad-layers-java-groupdocs-viewer/)
-تعلم كيفية عرض طبقات CAD محددة في Java باستخدام GroupDocs.Viewer. يغطي الدليل الإعداد، التكوين، وتطبيقات عملية لتعزيز تصور التصميم.
-
-### [Split CAD Drawings into Tiles Using GroupDocs.Viewer Java for Efficient Rendering](./split-cad-drawings-into-tiles-groupdocs-viewer-java/)
-تعلم كيفية تقسيم رسومات CAD الكبيرة إلى بلاطات باستخدام GroupDocs.Viewer for Java، مما يحسن الأداء وسهولة الإدارة في تطبيقاتك.
+معالجة رسومات CAD
+- [كيفية عرض رسومات CAD كملف PNG بحجم مخصص ولون خلفية باستخدام GroupDocs.Viewer for Java](./render-cad-drawings-custom-png-groupdocs-java/)
+- [عرض جميع تخطيطات CAD بفعالية باستخدام GroupDocs.Viewer for Java](./render-cad-drawings-layouts-groupdocs-viewer-java/)
+- [عرض طبقات CAD المحددة في Java باستخدام GroupDocs.Viewer: دليل شامل](./render-cad-layers-java-groupdocs-viewer/)
+- [تقسيم رسومات CAD إلى بلاطات باستخدام GroupDocs.Viewer Java للعرض الفعال](./split-cad-drawings-into-tiles-groupdocs-viewer-java/)
 
 ### مستندات البريد الإلكتروني والاتصالات
-معالجة ملفات البريد الإلكتروني، إدارة المرفقات، وتخصيص عرض البيانات الوصفية لتطبيقات التواصل.
-
-### [How to Rename Email Fields When Converting Emails to HTML Using GroupDocs.Viewer Java](./rename-email-fields-html-groupdocs-viewer-java/)
-تعلم كيفية تخصيص بيانات البريد الإلكتروني بإعادة تسمية حقول مثل "From"، "To"، و"Subject" عند تحويل الرسائل إلى HTML باستخدام GroupDocs.Viewer for Java.
-
-### [Render Emails with Custom DateTime in Java using GroupDocs.Viewer](./render-emails-custom-datetime-groupdocs-viewer-java/)
-تعلم كيفية عرض رسائل البريد الإلكتروني بتنسيقات تاريخ‑وقت مخصصة وإعدادات المنطقة الزمنية باستخدام GroupDocs.Viewer for Java. مثالي لأرشفة البريد، أنظمة الدعم، وأكثر.
-
-### [Limit Outlook Item Rendering in Java using GroupDocs.Viewer: A Comprehensive Guide](./groupdocs-viewer-java-limit-outlook-rendering/)
-تعلم كيفية تحسين عرض ملفات PST/OST الكبيرة باستخدام GroupDocs.Viewer for Java عبر تقييد عدد العناصر، مما يحسن الأداء والكفاءة.
-
-### [Master Outlook Data Rendering and Filtering with GroupDocs.Viewer for Java](./render-filter-outlook-data-groupdocs-java/)
-تعلم كيفية عرض وتصفية ملفات بيانات Outlook بفعالية باستخدام GroupDocs.Viewer for Java. سهل مهام إدارة البريد الإلكتروني الخاصة بك.
+مستندات البريد الإلكتروني والاتصالات
+- [كيفية إعادة تسمية حقول البريد الإلكتروني عند تحويل الرسائل إلى HTML باستخدام GroupDocs.Viewer Java](./rename-email-fields-html-groupdocs-viewer-java/)
+- [عرض رسائل البريد الإلكتروني مع تاريخ ووقت مخصص في Java باستخدام GroupDocs.Viewer](./render-emails-custom-datetime-groupdocs-viewer-java/)
+- [تحديد عرض عناصر Outlook في Java باستخدام GroupDocs.Viewer: دليل شامل](./groupdocs-viewer-java-limit-outlook-rendering/)
+- [إتقان عرض وتصفية بيانات Outlook باستخدام GroupDocs.Viewer for Java](./render-filter-outlook-data-groupdocs-java/)
 
 ### العروض التقديمية والوسائط البصرية
-معالجة ملفات PowerPoint، إدارة ملاحظات الشرائح، ومعالجة العروض البصرية بخيارات عرض متقدمة.
-
-### [How to Render FODP Documents with GroupDocs.Viewer for Java: A Complete Guide](./render-fodp-groupdocs-viewer-java/)
-تعلم كيفية عرض مستندات Formatted Open Document Pages (FODP) باستخدام GroupDocs.Viewer for Java. حوّل المستندات إلى HTML، JPG، PNG، وPDF بسهولة.
-
-### [How to Render Presentations with Notes Using GroupDocs.Viewer for Java: A Comprehensive Guide](./groupdocs-viewer-java-presentation-notes-rendering/)
-تعلم كيفية عرض العروض التقديمية مع الملاحظات في Java باستخدام GroupDocs.Viewer. يغطي هذا الدليل الإعداد، التنفيذ، ونصائح تحسين الأداء.
-
-### [Java: How to Render Hidden Pages Using GroupDocs.Viewer](./java-render-hidden-pages-groupdocs-viewer/)
-إتقان عرض الشرائح المخفية في تطبيقات Java باستخدام GroupDocs.Viewer. تعلم الإعداد، التكوين، والتكامل لعرض مستند شامل.
+العروض التقديمية والوسائط البصرية
+- [كيفية عرض مستندات FODP باستخدام GroupDocs.Viewer for Java: دليل كامل](./render-fodp-groupdocs-viewer-java/)
+- [كيفية عرض العروض التقديمية مع الملاحظات باستخدام GroupDocs.Viewer for Java: دليل شامل](./groupdocs-viewer-java-presentation-notes-rendering/)
+- [Java: كيفية عرض الصفحات المخفية باستخدام GroupDocs.Viewer](./java-render-hidden-pages-groupdocs-viewer/)
 
 ### الأرشفة وإدارة الملفات
-معالجة الملفات المضغوطة، إدارة هياكل المجلدات المحددة، وإدارة مجموعات الأرشيف الكبيرة بكفاءة.
-
-### [Rendering Archive Folders in Java Using GroupDocs.Viewer: A Step-by-Step Guide](./render-archive-folders-groupdocs-viewer-java/)
-تعلم كيفية عرض مجلدات محددة داخل ملفات الأرشيف باستخدام GroupDocs.Viewer for Java من خلال هذا الدليل الشامل.
-
-### [Mastering GroupDocs.Viewer Java: Custom Filenames for PDF Rendering of Archives](./groupdocs-viewer-java-custom-filenames-rendering-archives/)
-تعلم كيفية تحديد أسماء ملفات مخصصة عند تحويل ملفات الأرشيف إلى PDF باستخدام GroupDocs.Viewer for Java. سهل إدارة مستنداتك مع هذا الدرس المتقدم.
+الأرشفة وإدارة الملفات
+- [عرض مجلدات الأرشيف في Java باستخدام GroupDocs.Viewer: دليل خطوة بخطوة](./render-archive-folders-groupdocs-viewer-java/)
+- [إتقان GroupDocs.Viewer Java: أسماء ملفات مخصصة لعرض PDF للأرشيفات](./groupdocs-viewer-java-custom-filenames-rendering-archives/)
 
 ### إدارة المستندات والبيانات الوصفية
-استخراج معلومات المستند، إدارة المرفقات، وتنفيذ سير عمل معالجة مستندات متقدم.
+إدارة المستندات والبيانات الوصفية
+- [كيفية عرض المستندات مع التعليقات في Java باستخدام GroupDocs.Viewer](./mastering-document-rendering-comments-groupdocs-viewer-java/)
+- [كيفية عرض الصفحات المحددة من مستند باستخدام GroupDocs.Viewer for Java](./render-selected-pages-groupdocs-viewer-java/)
+- [إتقان GroupDocs.Viewer for Java: استرجاع معلومات عرض المستند والرؤى](./groupdocs-viewer-java-document-views/)
+- [إتقان GroupDocs.Viewer for Java: استرجاع وطباعة مرفقات المستند](./groupdocs-viewer-java-retrieve-print-attachments/)
 
-### [How to Render Documents with Comments in Java Using GroupDocs.Viewer](./mastering-document-rendering-comments-groupdocs-viewer-java/)
-تعلم كيفية عرض المستندات بما في ذلك التعليقات إلى HTML باستخدام GroupDocs.Viewer for Java. حسّن مشاريع إدارة المستندات والتكامل الخاصة بك.
-
-### [How to Render Selected Pages of a Document Using GroupDocs.Viewer for Java](./render-selected-pages-groupdocs-viewer-java/)
-تعلم كيفية عرض صفحات محددة من المستندات باستخدام GroupDocs.Viewer for Java. يغطي هذا الدليل الإعداد، التكوين، والتكامل العملي.
-
-### [Master GroupDocs.Viewer for Java: Retrieve Document View Information and Insights](./groupdocs-viewer-java-document-views/)
-تعلم كيفية استخدام GroupDocs.Viewer for Java لاستخراج معلومات عرض المستند التفصيلية. مثالي لتعزيز قدرات إدارة المستندات في تطبيقك.
-
-### [Master GroupDocs.Viewer for Java: Retrieve and Print Document Attachments](./groupdocs-viewer-java-retrieve-print-attachments/)
-تعلم كيفية استخراج وطباعة مرفقات المستندات باستخدام GroupDocs.Viewer for Java. اتبع هذا الدليل خطوة بخطوة لتعزيز تطبيقات Java الخاصة بك.
-
-### تقنيات عرض متخصصة
-سيناريوهات متقدمة تشمل تنسيق مخصص، أنواع ملفات متخصصة، واستراتيجيات تحسين الأداء.
-
-### [Java HPG Rendering Using GroupDocs.Viewer: A Complete Guide](./java-hpg-rendering-groupdocs-viewer-guide/)
-إتقان عرض ملفات HPG في Java باستخدام GroupDocs.Viewer. تعلم تحويل ملفات HPG إلى HTML، JPG، PNG، وPDF بكفاءة.
-
-### [Render Text Documents in Shift_JIS using GroupDocs.Viewer for Java](./render-shift-jis-text-documents-groupdocs-java/)
-تعلم كيفية تحميل وعرض مستندات نصية مشفرة بـ Shift_JIS باستخدام GroupDocs.Viewer for Java. يغطي هذا الدليل التكوين، تفاصيل الترميز، وتطبيقات عملية.
-
-### [Render Documents as Images with Text Layer in Java Using GroupDocs.Viewer](./render-documents-to-images-with-text-layer-java/)
-تعلم كيفية عرض المستندات كصور مع طبقة نص في Java باستخدام GroupDocs.Viewer لتحسين وضوح النص وإمكانية البحث.
-
-### [Render Project Documents by Time Intervals Using GroupDocs.Viewer for Java](./render-project-documents-time-intervals-groupdocs-viewer-java/)
-تعلم كيفية عرض مستندات المشروع ضمن فترات زمنية محددة باستخدام API الخاص بـ GroupDocs.Viewer في Java. حسّن إدارة المستندات وتصور الجداول الزمنية.
-
-### [Responsive HTML Rendering with GroupDocs.Viewer for Java: A Comprehensive Guide](./groupdocs-viewer-java-responsive-html-rendering/)
-إتقان عرض HTML المتجاوب باستخدام GroupDocs.Viewer في مشاريع Java الخاصة بك. تعلم الإعداد، التنفيذ، ونصائح التحسين لتعزيز إمكانية الوصول إلى المستندات عبر الأجهزة.
-
-### [Rotate the First Page of a Document Using GroupDocs.Viewer for Java (Advanced Guide)](./rotate-first-page-document-groupdocs-viewer-java/)
+### تقنيات العرض المتخصصة
+تقنيات العرض المتخصصة
+- [عرض Java HPG باستخدام GroupDocs.Viewer: دليل كامل](./java-hpg-rendering-groupdocs-viewer-guide/)
+- [عرض مستندات النص في Shift_JIS باستخدام GroupDocs.Viewer for Java](./render-shift-jis-text-documents-groupdocs-java/)
+- [عرض المستندات كصور مع طبقة نص في Java باستخدام GroupDocs.Viewer](./render-documents-to-images-with-text-layer-java/)
+- [عرض مستندات المشروع حسب الفترات الزمنية باستخدام GroupDocs.Viewer for Java](./render-project-documents-time-intervals-groupdocs-viewer-java/)
+- [عرض HTML متجاوب باستخدام GroupDocs.Viewer for Java: دليل شامل](./groupdocs-viewer-java-responsive-html-rendering/)
+- [تدوير الصفحة الأولى من مستند باستخدام GroupDocs.Viewer for Java (دليل متقدم)](./rotate-first-page-document-groupdocs-viewer-java/)
 
 ## تحديات التنفيذ الشائعة
 
 ### تحسين الأداء
-يمكن أن تبطئ المستندات الكبيرة تطبيقك بشكل ملحوظ. المفتاح هو تنفيذ استراتيجيات تخزين مؤقت ذكية واستخدام تقنيات العرض الانتقائي. تتضمن العديد من دروسنا نصائح أداء محددة – احرص على إيلاء اهتمام خاص للدروس المتعلقة بالعرض القائم على البلاطات والعرض الانتقائي للصفحات.
+يمكن أن تبطئ المستندات الكبيرة تطبيقك بشكل كبير. المفتاح هو تنفيذ استراتيجيات التخزين المؤقت الذكية واستخدام تقنيات العرض الانتقائي. تتضمن العديد من دروسنا نصائح أداء محددة – احرص على إيلاء اهتمام خاص لأدلة العرض القائم على البلاطات والعرض الانتقائي للصفحات.
 
 ### إدارة الذاكرة
-يمكن أن يكون عرض المستندات مستهلكًا للذاكرة، خاصةً مع ملفات كبيرة أو عدة مستخدمين متزامنين. احرص دائمًا على تنفيذ نمط التخلص المناسب وفكر في أساليب البث للملفات الكبيرة.
+يمكن أن يكون عرض المستندات مستهلكًا للذاكرة، خاصةً مع الملفات الكبيرة أو عدة مستخدمين متزامنين. احرص دائمًا على تنفيذ أنماط التخلص المناسبة وفكر في أساليب البث للجموع الكبيرة من المستندات.
 
-### مشكلات خاصة بالصيغة
-لكل نوع مستند تحدياته الفريدة. قد تحتوي ملفات PDF على طبقات معقدة، وتتطلب ملفات CAD معالجة طبقات محددة، وتحتاج جداول البيانات إلى إدارة دقيقة لتجاوز النص. يعالج كل درس الاعتبارات الخاصة بكل صيغة.
+### مشكلات خاصة بالتنسيق
+أنواع المستندات المختلفة تواجه تحديات فريدة. قد تحتوي ملفات PDF على طبقات معقدة، تتطلب ملفات CAD معالجة طبقة محددة، وتحتاج جداول البيانات إلى إدارة دقيقة لتجاوز النص. كل درس يعالج اعتبارات خاصة بالتنسيق.
 
 ### اعتبارات التكامل
-عند دمج GroupDocs.Viewer في الأنظمة القائمة، ضع في اعتبارك نماذج الخيوط، أنماط معالجة الأخطاء، وإدارة التكوين. تُظهر الدروس المتقدمة نماذج تكامل جاهزة للإنتاج.
+عند دمج GroupDocs.Viewer في الأنظمة القائمة، ضع في اعتبارك نماذج الخيوط، أنماط معالجة الأخطاء، وإدارة التكوين. تُظهر الدروس المتقدمة أنماط تكامل جاهزة للإنتاج.
 
 ## أفضل الممارسات للعرض المتقدم
+- **ابدأ ببساطة** – ابدأ بمتطلبات العرض الأساسية ثم أضف الميزات المتقدمة تدريجيًا. يساعدك هذا النهج على فهم الآليات الأساسية قبل معالجة السيناريوهات المعقدة.  
+- **اختبر ببيانات حقيقية** – اختبر دائمًا تطبيقات العرض الخاصة بك باستخدام مستندات فعلية من بيئتك المستهدفة. غالبًا ما لا تكشف الملفات العينية عن مشكلات الأداء الواقعية أو الحالات الحدية.  
+- **راقب استهلاك الموارد** – يمكن لتقنيات العرض المتقدمة أن تستهلك موارد نظامية كبيرة. نفّذ مراقبة لتتبع استهلاك الذاكرة، وقت المعالجة، وتأثير النظام.  
+- **خطط للتوسع** – ضع في اعتبارك كيف سيؤدي حل العرض الخاص بك تحت الحمل. تعمل العديد من التقنيات المتقدمة جيدًا للمستندات الفردية ولكن قد تحتاج إلى تحسين للمستخدمين المتزامنين أو أحجام المستندات الكبيرة.  
+- **معالجة الأخطاء** – نفّذ معالجة أخطاء قوية للملفات غير المدعومة، الملفات التالفة، وقيود الموارد. تتضمن الدروس أنماط معالجة الأخطاء التي يمكنك تكييفها لاحتياجاتك الخاصة.
 
-**ابدأ ببساطة**: ابدأ بمتطلبات العرض الأساسية ثم أضف الميزات المتقدمة تدريجيًا. يساعدك هذا النهج على فهم الآليات الأساسية قبل التعامل مع السيناريوهات المعقدة.
-
-**اختبر ببيانات حقيقية**: اختبر دائمًا تنفيذات العرض باستخدام مستندات فعلية من بيئتك المستهدفة. غالبًا ما لا تكشف الملفات النموذجية عن مشاكل الأداء أو الحالات الحدية في العالم الحقيقي.
-
-**راقب استهلاك الموارد**: يمكن لتقنيات العرض المتقدم أن تستهلك موارد نظامية كبيرة. نفّذ مراقبة لتتبع استخدام الذاكرة، زمن المعالجة، وتأثير النظام.
-
-**خطط للتوسع**: فكر في كيفية أداء حل العرض تحت الحمل. تعمل العديد من التقنيات المتقدمة جيدًا مع المستندات الفردية ولكن قد تحتاج إلى تحسينات للمستخدمين المتزامنين أو أحجام المستندات الكبيرة.
-
-**معالجة الأخطاء**: نفّذ معالجة أخطاء قوية للأنواع غير المدعومة، الملفات التالفة، وقيود الموارد. تتضمن الدروس أنماط معالجة أخطاء يمكنك تعديلها لتناسب احتياجاتك الخاصة.
-
-## متى تستخدم تقنيات العرض المتقدم
+## متى تستخدم تقنيات العرض المتقدمة
+تقنيات العرض المتقدمة مثالية عندما تحتاج إلى تحكم دقيق في مخرجات المستند، مثل تدوير الصفحات، تعديل جودة الصورة، أو عرض أقسام محددة فقط. تساعد على تلبية متطلبات الأداء، الامتثال، وتجربة المستخدم مع الحفاظ على استهلاك الموارد قابل للتنبؤ به في بيئات الإنتاج اليوم.
 
 - **أنظمة إدارة المستندات** – التحكم الدقيق في مظهر المستند أمر حاسم للتعاون والامتثال.  
-- **المعالجة الآلية** – تتطلب سيناريوهات المعالجة الدفعية مخرجات ثابتة ومتوقعة عبر أنواع مستندات متعددة.  
-- **العارضات المخصصة** – غالبًا ما تحتاج التطبيقات المتخصصة إلى سلوكيات عرض غير متوفرة في العارضات القياسية.  
-- **التطبيقات ذات الأداء الحرج** – البيئات ذات الحجم الكبير حيث تؤثر سرعة العرض مباشرة على تجربة المستخدم.  
+- **المعالجة الآلية** – تتطلب سيناريوهات المعالجة الدفعية مخرجات ثابتة ومتوقعة عبر العديد من أنواع المستندات.  
+- **العارضات المخصصة** – غالبًا ما تتطلب التطبيقات المتخصصة سلوكيات عرض غير متوفرة في العارضات القياسية.  
+- **التطبيقات الحساسة للأداء** – بيئات عالية الحجم حيث يؤثر سرعة العرض مباشرة على تجربة المستخدم.  
 - **متطلبات الامتثال** – تحتاج الصناعات المنظمة إلى عرض دقيق وكامل لتلبية معايير التدقيق.
 
 ## الخطوات التالية
+هل أنت مستعد لتنفيذ عرض GroupDocs.Viewer Java المتقدم في تطبيقاتك؟ ابدأ بالدرس الذي يتطابق مع احتياجاتك الفورية، ثم وسّع معرفتك بالتقنيات ذات الصلة. كل دليل يبني على المفاهيم الأساسية، بحيث تطور فهمًا شاملاً لنظام العرض بأكمله.
 
-هل أنت مستعد لتطبيق عرض GroupDocs.Viewer Java المتقدم في تطبيقاتك؟ ابدأ بالدروس التي تتطابق مع احتياجاتك الفورية، ثم وسّع معرفتك بالتقنيات ذات الصلة. كل درس يبني على المفاهيم الأساسية، لذا ستطور فهمًا شاملاً لنظام العرض بأكمله.
+تذكر أن العرض المتقدم غالبًا ما يكون حول حل مشكلات أعمال محددة بدلاً من استخدام ميزات معقدة لمجرد وجودها. ركّز على الدروس التي تعالج مباشرة متطلبات تطبيقك، ولا تتردد في دمج تقنيات من عدة أدلة لإنشاء حلول مخصصة.
 
-تذكر أن العرض المتقدم غالبًا ما يكون حلًا لمشكلات أعمال محددة بدلاً من استخدام ميزات معقدة لمجرد وجودها. ركّز على الدروس التي تعالج مباشرة متطلبات تطبيقك، ولا تتردد في دمج تقنيات من أدلة متعددة لإنشاء حلول مخصصة.
-
-للحصول على دعم مستمر ورؤى المجتمع، زر منتدى GroupDocs.Viewer حيث يشارك المطورون ذوو الخبرة تجاربهم في التنفيذ الفعلي ونصائح استكشاف الأخطاء وإصلاحها.
+للحصول على دعم مستمر ورؤى المجتمع، زر منتدى GroupDocs.Viewer حيث يشارك المطورون ذوو الخبرة تجارب تنفيذ واقعية ونصائح حل المشكلات.
 
 ## موارد إضافية
-
-- [GroupDocs.Viewer for Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer for Java API Reference](https://reference.groupdocs.com/viewer/java/)
-- [Download GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
-- [GroupDocs.Viewer Forum](https://forum.groupdocs.com/c/viewer/9)
-- [Free Support](https://forum.groupdocs.com/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [توثيق GroupDocs.Viewer for Java](https://docs.groupdocs.com/viewer/java/)
+- [مرجع API لـ GroupDocs.Viewer for Java](https://reference.groupdocs.com/viewer/java/)
+- [تحميل GroupDocs.Viewer for Java](https://releases.groupdocs.com/viewer/java/)
+- [منتدى GroupDocs.Viewer](https://forum.groupdocs.com/c/viewer/9)
+- [دعم مجاني](https://forum.groupdocs.com/)
+- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
 
 ## الأسئلة المتكررة
-
 **س: هل يمكنني استخدام GroupDocs.Viewer لتحويل DOCX إلى HTML في تطبيق Spring Boot؟**  
-ج: نعم. قم بتهيئة bean الخاص بـ `Viewer` مع الترخيص، ثم استدعِ `viewer.render` مع `HtmlOptions` داخل أي خدمة أو متحكم.
+ج: نعم. قم بتهيئة bean `Viewer` باستخدام الترخيص الخاص بك، ثم استدعِ `viewer.render` مع `HtmlOptions` داخل أي خدمة أو متحكم.
 
 **س: كيف يتعامل المكتبة مع ملفات PDF الكبيرة عند العرض إلى صور؟**  
 ج: استخدم `PdfOptions` لتمكين العرض صفحةً بصفحة وتكوين `setCacheFolder` لتخزين النتائج الوسيطة، مما يقلل من ضغط الذاكرة.
 
-**س: هل يمكن عرض صفحات محددة فقط من المستند؟**  
-ج: بالتأكيد. عيّن مجموعة `pages` في `RenderOptions` إلى أرقام الصفحات التي تحتاجها.
+**س: هل من الممكن عرض صفحات محددة فقط من مستند؟**  
+ج: بالتأكيد. عيّن مجموعة `pages` في `RenderOptions` إلى أرقام الصفحات المحددة التي تحتاجها.
 
 **س: ما الصيغ التي يمكن عرضها إلى HTML مع موارد مدمجة؟**  
-ج: تدعم DOCX، PPTX، XLSX، PDF، والعديد غيرها. استخدم `HtmlOptions.setResourcesPath` لتحديد مكان حفظ الصور وCSS.
+ج: يتم دعم DOCX، PPTX، XLSX، PDF، والعديد غيرها. استخدم `HtmlOptions.setResourcesPath` للتحكم في مكان حفظ الصور وCSS.
 
 **س: هل يدعم GroupDocs.Viewer العرض متعدد الخيوط؟**  
-ج: نعم، لكن يجب استخدام كل كائن `Viewer` في خيط منفصل أو تنفيذ تزامن مناسب لتجنب حالات السباق.
+ج: نعم، ولكن يجب استخدام كل مثيل `Viewer` لكل خيط أو تنفيذ مزامنة مناسبة لتجنب ظروف السباق.
 
 ---
 
-**آخر تحديث:** 2026-03-05  
+**آخر تحديث:** 2026-08-19  
 **تم الاختبار مع:** GroupDocs.Viewer for Java 23.11  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+- [كيفية تحويل pdf إلى html وتحسين جودة الصورة في Java باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/adjust-image-quality-groupdocs-viewer-java/)
+- [تحويل DOCX إلى HTML Java – صفحات مع GroupDocs.Viewer](/viewer/java/advanced-rendering/render-selected-pages-groupdocs-viewer-java/)
+- [تغيير تسلسل صفحات PDF باستخدام GroupDocs.Viewer for Java – دليل](/viewer/java/advanced-rendering/master-pdf-page-reorder-groupdocs-java/)
