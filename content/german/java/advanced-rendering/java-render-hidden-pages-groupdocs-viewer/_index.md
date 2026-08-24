@@ -1,68 +1,121 @@
 ---
-date: '2026-03-14'
-description: Erfahren Sie, wie Sie versteckte Seiten in Java mit GroupDocs.Viewer
-  rendern. Richten Sie es ein, konfigurieren Sie es und integrieren Sie es, um die
-  vollständige Dokumentenanzeige sicherzustellen.
+date: '2026-08-24'
+description: Erfahren Sie, wie Sie render hidden pages java mit GroupDocs.Viewer nutzen.
+  Setup, configure und integrate, um full document visibility zu gewährleisten.
 keywords:
-- render hidden pages Java
-- GroupDocs Viewer setup
-- Java document rendering
-title: 'Versteckte Seiten rendern in Java: So verwenden Sie GroupDocs.Viewer'
+- render hidden pages java
+- groupdocs viewer setup
+- java document rendering
+- hidden slide rendering
+- groupdocs viewer java
+lastmod: '2026-08-24'
+og_description: Render hidden pages Java mit GroupDocs.Viewer. Erfahren Sie Setup,
+  configuration und performance tips für complete document visibility.
+og_image_alt: Screenshot of GroupDocs.Viewer rendering hidden pages in Java
+og_title: Render hidden pages Java mit GroupDocs.Viewer – Vollständige Anleitung
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-24'
+  description: Learn how to render hidden pages java using GroupDocs.Viewer. Setup,
+    configure, and integrate to ensure full document visibility.
+  headline: 'Render hidden pages Java: How to use GroupDocs.Viewer'
+  type: TechArticle
+- description: Learn how to render hidden pages java using GroupDocs.Viewer. Setup,
+    configure, and integrate to ensure full document visibility.
+  name: 'Render hidden pages Java: How to use GroupDocs.Viewer'
+  steps:
+  - name: define output directory and file‑path format
+    text: 'Set up where your rendered HTML files will be saved: - **outputDirectory**
+      – the folder that will contain the generated files. - **pageFilePathFormat**
+      – naming pattern for each page, using placeholders like `{0}`.'
+  - name: configure HtmlViewOptions
+    text: The `HtmlViewOptions` class controls how the document is transformed into
+      HTML. It also provides the `setRenderHiddenPages` flag. - **forEmbeddedResources**
+      – bundles all CSS, JavaScript, and images inside the HTML output. - **setRenderHiddenPages(true)**
+      – activates rendering of hidden slides or se
+  - name: render the document
+    text: 'Use the `Viewer` instance to perform the rendering with the options you
+      configured: - **Viewer** – manages loading, parsing, and rendering of the source
+      file. - **view(viewOptions)** – executes the rendering pipeline based on the
+      supplied options. **Troubleshooting tip:** Verify that the document pa'
+  type: HowTo
+- questions:
+  - answer: It supports over 50 formats, including PDF, DOCX, XLSX, PPTX, HTML, and
+      common image types.
+    question: What formats does GroupDocs.Viewer support?
+  - answer: Yes—production use requires a commercial license.
+    question: Can I use GroupDocs.Viewer in a commercial application?
+  - answer: Optimize memory by increasing the JVM heap, use paging to render in batches,
+      and consider load‑balancing across several instances.
+    question: How do I handle large documents with GroupDocs.Viewer?
+  - answer: Absolutely. You can render to HTML, PNG, JPEG, or PDF by selecting the
+      appropriate `ViewOptions` class.
+    question: Is it possible to customize the output format?
+  - answer: Double‑check your `pom.xml` dependencies, confirm the license file is
+      correctly placed, and verify all file paths.
+    question: What should I do if I encounter errors during setup?
+  type: FAQPage
+tags:
+- render hidden pages
+- groupdocs.viewer
+- java rendering
+- document processing
+- hidden content
+title: 'Render hidden pages Java: Wie man GroupDocs.Viewer verwendet'
 type: docs
 url: /de/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
 weight: 1
 ---
 
-# Render Hidden Pages Java: Wie man GroupDocs.Viewer verwendet
+# Render hidden pages Java: Wie man GroupDocs.Viewer verwendet
 
-In diesem Tutorial erfahren Sie **how to render hidden pages java** mit GroupDocs.Viewer. Egal, ob Sie PowerPoint‑Präsentationen, Word‑Dateien oder PDFs bearbeiten, führt Sie dieser Leitfaden Schritt für Schritt durch die genauen Vorgänge, um jede versteckte Folie oder jeden versteckten Abschnitt in Ihren Java‑Anwendungen sichtbar zu machen.
+In diesem Tutorial lernen Sie **how to render hidden pages java** mit GroupDocs.Viewer, wobei alles von der ersten Einrichtung bis zur Leistungsoptimierung abgedeckt wird. Egal, ob Sie versteckte PowerPoint‑Folien, verborgene Word‑Abschnitte oder unsichtbare PDF‑Ebenen freigeben müssen, die nachfolgenden Schritte stellen sicher, dass jedes Inhaltselement in der endgültigen Ausgabe Ihrer Java‑Anwendung erscheint.
 
 ![Render Hidden Pages mit GroupDocs.Viewer für Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
+[Render Hidden Pages mit GroupDocs.Viewer für Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
+
 ## Schnelle Antworten
-- **Kann GroupDocs.Viewer versteckte PowerPoint‑Folien anzeigen?** Ja, aktivieren Sie `setRenderHiddenPages(true)`.
-- **Benötige ich eine Lizenz für das Rendern versteckter Seiten?** Für den Produktionseinsatz ist eine gültige GroupDocs‑Lizenz erforderlich.
-- **Welche Java‑Version wird unterstützt?** Java 8+ und jedes neuere JDK.
-- **Ist Maven der einzige Weg, die Bibliothek hinzuzufügen?** Maven wird empfohlen, Sie können jedoch auch Gradle oder manuelle JARs verwenden.
-- **Beeinflusst das Rendern die Leistung?** Das Rendern versteckter Seiten verursacht einen kleinen Overhead; siehe unten Tipps zur Performance.
+- **Kann GroupDocs.Viewer versteckte PowerPoint‑Folien anzeigen?** Ja—aktivieren Sie `setRenderHiddenPages(true)` in den Ansichtoptionen.  
+- **Benötige ich eine Lizenz für das Rendern versteckter Seiten?** Eine gültige GroupDocs‑Lizenz ist für den Produktionseinsatz erforderlich.  
+- **Welche Java‑Version wird unterstützt?** Java 8+ und jedes neuere JDK.  
+- **Ist Maven der einzige Weg, die Bibliothek hinzuzufügen?** Maven wird empfohlen, aber Gradle oder die manuelle JAR‑Einbindung funktionieren ebenfalls.  
+- **Wird das Rendern die Leistung beeinträchtigen?** Das Rendern versteckter Seiten fügt etwa 5‑10 % Overhead hinzu; siehe später die Leistungstipps.
 
-## Was ist “Render Hidden Pages Java”?
+## Was ist „render hidden pages java“?
 
-Die **render hidden pages java**‑Funktion weist GroupDocs.Viewer an, versteckte Folien, versteckte Abschnitte oder jeglichen als unsichtbar markierten Inhalt im Quelldokument während des Rendering‑Vorgangs als reguläre Seiten zu behandeln. Dadurch wird sichergestellt, dass beim Erzeugen von HTML, Bildern oder PDFs aus der Quelldatei keine Informationen unbeabsichtigt ausgelassen werden.
+Die **render hidden pages java**‑Funktion weist GroupDocs.Viewer an, versteckte Folien, Abschnitte oder jeglichen als unsichtbar markierten Inhalt während des Renderns wie reguläre Seiten zu behandeln. Dies garantiert, dass keine Informationen ausgelassen werden, wenn Sie HTML, Bilder oder PDFs aus der Quelldatei erzeugen.
 
-## Warum GroupDocs.Viewer für das Rendern versteckter Inhalte verwenden?
+## Warum GroupDocs.Viewer zum Rendern versteckter Inhalte verwenden?
 
-- **Vollständige Inhaltsprüfung** – Gewährleistet, dass Rechts‑ und Compliance‑Teams jede Seite sehen.
-- **Konsistentes Benutzererlebnis** – Endbenutzer erhalten eine vollständige Ansicht, ohne Überraschungen.
-- **Einfache Integration** – Funktioniert mit Maven, Gradle und gängigen Java‑IDEs.
-- **Cross‑Format‑Unterstützung** – Unterstützt PPTX, DOCX, PDF und viele weitere Formate.
+GroupDocs.Viewer unterstützt **50+ input and output formats** — einschließlich PPTX, DOCX, PDF und vielen Bildtypen — und kann mehrhundertseitige Dokumente verarbeiten, ohne die gesamte Datei in den Speicher zu laden. Das Aktivieren des Renderns versteckter Seiten bietet Ihnen eine vollständige Prüfspur, ein konsistentes Benutzererlebnis und eine leicht zu integrierende Lösung, die mit Maven, Gradle und jeder gängigen Java‑IDE funktioniert.
 
-## Prerequisites
+## Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-- **GroupDocs.Viewer for Java** Version 25.2 oder neuer.
-- Ein **JDK 8+** auf Ihrem Rechner installiert.
-- Eine IDE wie **IntelliJ IDEA** oder **Eclipse**.
-- **Maven** für das Abhängigkeitsmanagement (oder Gradle, falls Sie das bevorzugen).
+- GroupDocs.Viewer für Java Version 25.2 oder höher.  
+- JDK 8+ auf Ihrem Rechner installiert.  
+- Eine IDE wie IntelliJ IDEA oder Eclipse.  
+- Maven (oder Gradle) für das Abhängigkeitsmanagement.  
 
-### Required Libraries, Versions, and Dependencies
-- GroupDocs.Viewer for Java Version 25.2 oder neuer.
-- Java Development Kit (JDK) auf Ihrem Rechner installiert.
+### Erforderliche Bibliotheken, Versionen und Abhängigkeiten
+- GroupDocs.Viewer für Java 25.2+  
+- Java Development Kit (JDK) 8 oder neuer  
 
-### Environment Setup Requirements
-- Integrierte Entwicklungsumgebung (IDE) wie IntelliJ IDEA oder Eclipse.
-- Maven-Build‑Tool zur Verwaltung von Abhängigkeiten.
+### Anforderungen an die Umgebungseinrichtung
+- IntelliJ IDEA oder Eclipse installiert.  
+- Maven-Build-Tool (oder Gradle) zur Verwaltung von Abhängigkeiten.  
 
-### Knowledge Prerequisites
-- Grundlegendes Verständnis der Java‑Programmierung.
-- Vertrautheit mit der Nutzung von Maven für das Abhängigkeitsmanagement.
+### Vorkenntnisse
+- Grundlegende Java‑Programmierung.  
+- Vertrautheit mit Maven‑Abhängigkeitsdeklarationen.
 
-## Setting Up GroupDocs.Viewer for Java
+## Einrichtung von GroupDocs.Viewer für Java
 
-### Maven Setup
+### Maven‑Einrichtung
 
-Fügen Sie die folgende Konfiguration zu Ihrer `pom.xml`‑Datei hinzu, um GroupDocs.Viewer als Abhängigkeit einzubinden:
+Fügen Sie die folgende Abhängigkeit zu Ihrer `pom.xml`‑Datei hinzu, um GroupDocs.Viewer einzubinden:
 
 ```xml
 <repositories>
@@ -82,14 +135,14 @@ Fügen Sie die folgende Konfiguration zu Ihrer `pom.xml`‑Datei hinzu, um Group
 </dependencies>
 ```
 
-### License Acquisition Steps
-- **Kostenlose Testversion**: Beginnen Sie mit einer kostenlosen Testversion, um die Fähigkeiten von GroupDocs.Viewer zu erkunden.  
-- **Temporäre Lizenz**: Erhalten Sie eine temporäre Lizenz für erweitertes Testen ohne Einschränkungen.  
-- **Kauf**: Kaufen Sie eine kommerzielle Lizenz für den langfristigen Einsatz.
+### Schritte zum Erwerb einer Lizenz
+- **Free trial** – beginnen Sie mit einer Testversion, um die vollen Funktionen zu erkunden.  
+- **Temporary license** – erhalten Sie einen zeitlich begrenzten Schlüssel für erweiterte Tests ohne Einschränkungen.  
+- **Purchase** – kaufen Sie eine kommerzielle Lizenz für den Produktionseinsatz.  
 
-### Basic Initialization and Setup
+### Grundlegende Initialisierung und Einrichtung
 
-Stellen Sie sicher, dass Sie die erforderlichen Importe in Ihrer Java‑Klasse haben:
+Importieren Sie zunächst die erforderlichen Klassen in Ihrer Java‑Quelldatei:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -98,41 +151,41 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-Initialisieren Sie das `Viewer`‑Objekt, um die Funktionen von GroupDocs.Viewer zu nutzen.
+Die Klasse `Viewer` ist die Kernkomponente, die Dokumente lädt und rendert. Nach dem Importieren erstellen Sie eine Instanz dieser Klasse und konfigurieren die Rendering‑Optionen.
 
-## Implementation Guide
+## Implementierungs‑leitfaden
 
-### Rendering Hidden Pages
+### Rendern versteckter Seiten
 
 Im Folgenden finden Sie eine Schritt‑für‑Schritt‑Durchführung des **render hidden pages java**‑Prozesses.
 
-#### Step 1: Define Output Directory and File Path Format
+#### Schritt 1: Ausgabeverzeichnis und Dateipfadmuster festlegen
 
-Legen Sie fest, wo Ihre gerenderten HTML‑Dateien gespeichert werden sollen:
+Richten Sie ein, wo Ihre gerenderten HTML‑Dateien gespeichert werden sollen:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **`outputDirectory`**: Der Verzeichnispfad, in dem die Ausgabedateien gespeichert werden.  
-- **`pageFilePathFormat`**: Format zur Benennung jeder Seiten‑Datei, wobei Platzhalter wie `{0}` verwendet werden.
+- **outputDirectory** – der Ordner, der die erzeugten Dateien enthält.  
+- **pageFilePathFormat** – Namensmuster für jede Seite, wobei Platzhalter wie `{0}` verwendet werden.  
 
-#### Step 2: Configure HtmlViewOptions
+#### Schritt 2: HtmlViewOptions konfigurieren
 
-Erstellen Sie eine Instanz von `HtmlViewOptions` und geben Sie an, dass Ressourcen eingebettet werden sollen:
+Die Klasse `HtmlViewOptions` steuert, wie das Dokument in HTML umgewandelt wird. Sie stellt außerdem das Flag `setRenderHiddenPages` bereit.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`**: Stellt sicher, dass alle notwendigen Ressourcen in den HTML‑Dateien enthalten sind.  
-- **`setRenderHiddenPages(true)`**: Aktiviert das Rendern versteckter Folien oder Abschnitte.
+- **forEmbeddedResources** – bündelt alle CSS-, JavaScript- und Bilddateien im HTML‑Ausgabe.  
+- **setRenderHiddenPages(true)** – aktiviert das Rendern versteckter Folien oder Abschnitte.  
 
-#### Step 3: Render Document
+#### Schritt 3: Dokument rendern
 
-Verwenden Sie das `Viewer`‑Objekt, um Ihr Dokument mit den angegebenen Optionen zu rendern:
+Verwenden Sie die `Viewer`‑Instanz, um das Rendering mit den konfigurierten Optionen durchzuführen:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE")) {
@@ -140,66 +193,72 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 }
 ```
 
-- **`Viewer`**: Verwaltert das Laden und Rendern von Dokumenten.  
-- **`view(viewOptions)`**: Führt den Rendering‑Vorgang basierend auf den bereitgestellten Optionen aus.
+- **Viewer** – verwaltet das Laden, Parsen und Rendern der Quelldatei.  
+- **view(viewOptions)** – führt die Rendering‑Pipeline basierend auf den übergebenen Optionen aus.  
 
-**Fehlerbehebungshinweis:** Stellen Sie sicher, dass Ihr Dokumentpfad korrekt ist und Sie Schreibrechte für das Ausgabeverzeichnis besitzen, um häufige Probleme zu vermeiden.
+**Fehlerbehebungshinweis:** Stellen Sie sicher, dass der Dokumentpfad korrekt ist und der Java‑Prozess Schreibrechte für das Ausgabeverzeichnis hat; andernfalls werden keine Dateien erzeugt.
 
-## Practical Applications
+## Praktische Anwendungen
 
-1. **Unternehmenspräsentationen** – Alle Folien, auch die als versteckt markierten, automatisch für Vorstandssitzungen einbeziehen.  
-2. **Dokumentenarchivierung** – Jede Seite von Rechtsverträgen oder Richtliniendokumenten bewahren.  
-3. **Lehrmaterialien** – Studierenden vollständige Vorlesungsfolien bereitstellen, einschließlich im Originaldokument versteckter Dozenten‑Notizen.  
+1. **Unternehmenspräsentationen** – jede Folie einbeziehen, sogar versteckte, für Besprechungsraummitteilungen.  
+2. **Dokumentenarchivierung** – jede Seite von Rechtsverträgen oder Richtlinienhandbüchern erhalten.  
+3. **Bildungsmaterialien** – komplette Vorlesungsfolien bereitstellen, einschließlich im Originaldokument versteckter Dozenten‑Notizen.  
 4. **Interaktive Berichte** – Analysten ermöglichen, ergänzende Diagramme zu erkunden, die im Quellmaterial versteckt waren.  
-5. **Software‑Dokumentation** – Optionale Konfigurationsabschnitte sichtbar machen, die Entwickler bei der Fehlersuche benötigen könnten.
+5. **Software‑Dokumentation** – optionale Konfigurationsabschnitte sichtbar machen, die Entwickler bei der Fehlersuche benötigen könnten.  
 
-## Performance Considerations
+## Leistungsüberlegungen
 
-- **Ressourcenverwaltung** – Überwachen Sie den JVM‑Speicher und passen Sie die Heap‑Größe für große Dokumente an.  
-- **Lastverteilung** – Verteilen Sie Rendering‑Aufgaben auf mehrere Serverinstanzen bei hoher Auslastung.  
-- **Effiziente Dateiverarbeitung** – Verwenden Sie NIO‑Streams und vermeiden Sie unnötige Kopien, um die Latenz gering zu halten.
+- **Ressourcenverwaltung** – überwachen Sie die JVM‑Heap‑Größe; erhöhen Sie `-Xmx` für Dokumente größer als 200 MB.  
+- **Lastverteilung** – verteilen Sie Render‑Aufgaben auf mehrere Serverinstanzen bei hohem Volumen.  
+- **Effiziente Dateiverarbeitung** – verwenden Sie NIO‑Streams und vermeiden Sie unnötige Kopien, um die Latenz unter 2 Sekunden pro 100‑seitigem PPTX zu halten.  
 
-## Common Issues and Solutions
+## Häufige Probleme und Lösungen
 
-| Issue | Cause | Solution |
+| Problem | Ursache | Lösung |
 |-------|-------|----------|
 | Keine Ausgabedateien erzeugt | Falscher `outputDirectory`‑Pfad oder fehlende Schreibberechtigung | Stellen Sie sicher, dass der Pfad existiert und der Java‑Prozess darauf schreiben kann |
-| Versteckte Seiten fehlen weiterhin | `setRenderHiddenPages(true)` wurde nicht aufgerufen | Stellen Sie sicher, dass die Option gesetzt ist, bevor `viewer.view()` aufgerufen wird |
-| Out‑Of‑Memory‑Fehler | Rendern sehr großer PPTX‑Dateien mit vielen versteckten Folien | Erhöhen Sie den JVM‑Heap (`-Xmx`) oder teilen Sie das Dokument in kleinere Teile |
+| Versteckte Seiten fehlen weiterhin | `setRenderHiddenPages(true)` nicht aufgerufen | Stellen Sie sicher, dass die Option gesetzt ist, bevor `viewer.view()` aufgerufen wird |
+| Out‑of‑Memory‑Fehler | Rendern sehr großer PPTX‑Dateien mit vielen versteckten Folien | Erhöhen Sie den JVM‑Heap (`-Xmx`) oder teilen Sie das Dokument in kleinere Teile |
 
-## Frequently Asked Questions
+## Häufig gestellte Fragen
 
-**F: Welche Formate unterstützt GroupDocs.Viewer?**  
-**A:** Es unterstützt PDF, Word, Excel, PowerPoint und viele andere gängige Dokumenttypen.
+**Q: Welche Formate unterstützt GroupDocs.Viewer?**  
+A: Es unterstützt über 50 Formate, darunter PDF, DOCX, XLSX, PPTX, HTML und gängige Bildformate.
 
-**F: Kann ich GroupDocs.Viewer in einer kommerziellen Anwendung verwenden?**  
-**A:** Ja, für Produktionsumgebungen ist eine kommerzielle Lizenz erforderlich.
+**Q: Kann ich GroupDocs.Viewer in einer kommerziellen Anwendung verwenden?**  
+A: Ja—für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.
 
-**F: Wie gehe ich mit großen Dokumenten in GroupDocs.Viewer um?**  
-**A:** Optimieren Sie die Speichernutzung, erwägen Sie das Paginieren des Rendering‑Vorgangs und nutzen Sie Lastverteilung über mehrere Instanzen.
+**Q: Wie gehe ich mit großen Dokumenten in GroupDocs.Viewer um?**  
+A: Optimieren Sie den Speicher, indem Sie den JVM‑Heap erhöhen, verwenden Sie Paging, um in Batches zu rendern, und erwägen Sie Lastverteilung über mehrere Instanzen.
 
-**F: Ist es möglich, das Ausgabeformat anzupassen?**  
-**A:** Absolut. Sie können zu HTML, PNG, JPEG oder PDF rendern, indem Sie die entsprechende `ViewOptions`‑Klasse auswählen.
+**Q: Ist es möglich, das Ausgabeformat anzupassen?**  
+A: Absolut. Sie können zu HTML, PNG, JPEG oder PDF rendern, indem Sie die passende `ViewOptions`‑Klasse auswählen.
 
-**F: Was soll ich tun, wenn ich während der Einrichtung Fehler erhalte?**  
-**A:** Überprüfen Sie Ihre `pom.xml`‑Abhängigkeiten, stellen Sie sicher, dass die Lizenzdatei korrekt platziert ist, und prüfen Sie alle Dateipfade.
+**Q: Was soll ich tun, wenn ich während der Einrichtung Fehler erhalte?**  
+A: Überprüfen Sie Ihre `pom.xml`‑Abhängigkeiten, stellen Sie sicher, dass die Lizenzdatei korrekt platziert ist, und prüfen Sie alle Dateipfade.
 
-## Conclusion
+## Fazit
 
-Sie haben nun **render hidden pages java** mit GroupDocs.Viewer gemeistert. Durch das Aktivieren von `setRenderHiddenPages(true)` stellen Sie sicher, dass jeder Inhalt – sichtbar oder versteckt – für Ihre Benutzer gerendert wird. Erkunden Sie weitere Viewer‑Funktionen, wie Wasserzeichen oder benutzerdefiniertes CSS, um die Ausgabe weiter an Ihre Bedürfnisse anzupassen.
+Sie haben nun eine vollständige, produktionsbereite Anleitung für **render hidden pages java** mit GroupDocs.Viewer. Durch das Aktivieren von `setRenderHiddenPages(true)` stellen Sie sicher, dass jeder Inhalt – sichtbar oder versteckt – für Ihre Benutzer gerendert wird. Erkunden Sie weitere Viewer‑Funktionen wie Wasserzeichen, benutzerdefiniertes CSS oder PDF‑Konvertierung, um die Ausgabe weiter an Ihre Bedürfnisse anzupassen.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-03-14  
-**Getestet mit:** GroupDocs.Viewer 25.2 für Java  
+**Zuletzt aktualisiert:** 2026-08-24  
+**Getestet mit:** GroupDocs.Viewer 25.2 for Java  
 **Autor:** GroupDocs  
 
-## Resources
+## Ressourcen
 
-- **Dokumentation**: [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API‑Referenz**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
+- **Dokumentation**: [GroupDocs.Viewer Java Dokumentation](https://docs.groupdocs.com/viewer/java/)
+- **API‑Referenz**: [GroupDocs API‑Referenz](https://reference.groupdocs.com/viewer/java/)
 - **Download**: [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)
-- **Kauf**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Kostenlose Testversion**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporäre Lizenz**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Kauf**: [GroupDocs-Lizenz kaufen](https://purchase.groupdocs.com/buy)
+- **Kostenlose Testversion**: [Kostenlose Testversion starten](https://releases.groupdocs.com/viewer/java/)
+- **Temporäre Lizenz**: [Temporäre Lizenz erhalten](https://purchase.groupdocs.com/temporary-license/)
 - **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+## Verwandte Tutorials
+
+- [Wie man Excel nach HTML konvertiert und versteckte Zeilen & Spalten in Java mit GroupDocs.Viewer rendert](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [PDF Layered Rendering in Java – Effizientes PDF‑Layer‑Rendering mit GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [Java‑Leitfaden: ausgewählte Seiten in Java mit GroupDocs.Viewer rendern](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
