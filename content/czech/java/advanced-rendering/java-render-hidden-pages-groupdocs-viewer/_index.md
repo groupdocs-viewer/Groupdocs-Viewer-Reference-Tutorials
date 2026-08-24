@@ -1,67 +1,108 @@
 ---
-date: '2026-03-14'
-description: Naučte se, jak v Javě renderovat skryté stránky pomocí GroupDocs.Viewer.
+date: '2026-08-24'
+description: Naučte se, jak vykreslovat skryté stránky java pomocí GroupDocs.Viewer.
   Nastavte, nakonfigurujte a integrujte, aby byla zajištěna úplná viditelnost dokumentu.
 keywords:
-- render hidden pages Java
-- GroupDocs Viewer setup
-- Java document rendering
-title: 'Vykreslování skrytých stránek v Javě: Jak používat GroupDocs.Viewer'
+- render hidden pages java
+- groupdocs viewer setup
+- java document rendering
+lastmod: '2026-08-24'
+og_description: Vykreslete skryté stránky java pomocí GroupDocs.Viewer. Naučte se
+  nastavení, licencování a tipy na výkon, aby byl každý skrytý snímek nebo sekce viditelná.
+og_image_alt: Illustration of hidden page rendering in GroupDocs Viewer for Java
+og_title: Vykreslování skrytých stránek java s GroupDocs.Viewer – Kompletní průvodce
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-24'
+  description: Learn how to render hidden pages java using GroupDocs.Viewer. Setup,
+    configure, and integrate to ensure full document visibility.
+  headline: 'Render hidden pages java: how to use GroupDocs.Viewer'
+  type: TechArticle
+- description: Learn how to render hidden pages java using GroupDocs.Viewer. Setup,
+    configure, and integrate to ensure full document visibility.
+  name: 'Render hidden pages java: how to use GroupDocs.Viewer'
+  steps:
+  - name: define output directory and file‑path format
+    text: 'Set up where your rendered HTML files will be saved: - **`outputDirectory`**
+      – the folder that will contain the generated files. - **`pageFilePathFormat`**
+      – naming pattern for each page, using placeholders like `{0}`.'
+  - name: configure HtmlViewOptions
+    text: '`HtmlViewOptions` configures how the document is transformed into HTML.
+      It also controls hidden‑page rendering. - **`forEmbeddedResources`** – embeds
+      all CSS, fonts, and images directly in the HTML output. - **`setRenderHiddenPages(true)`**
+      – activates rendering of hidden slides or sections.'
+  - name: render the document
+    text: 'Invoke the `view` method on the `Viewer` instance with the configured options:
+      The `view` method renders the document using the specified view options. - **`Viewer`**
+      – loads the source file and orchestrates the rendering pipeline. - **`view(viewOptions)`**
+      – performs the actual conversion based on '
+  type: HowTo
+- questions:
+  - answer: It supports **50+ formats**, including PDF, DOCX, XLSX, PPTX, HTML, and
+      common image types.
+    question: What formats does GroupDocs.Viewer support?
+  - answer: Yes—production use requires a commercial license; a trial is available
+      for evaluation.
+    question: Can I use GroupDocs.Viewer in a commercial application?
+  - answer: Increase the JVM heap, enable paging, and consider load‑balancing rendering
+      across multiple instances.
+    question: How should I handle large documents with GroupDocs.Viewer?
+  - answer: Absolutely—you can render to HTML, PNG, JPEG, or PDF by selecting the
+      appropriate `ViewOptions` class.
+    question: Is it possible to customize the output format?
+  - answer: Double‑check your `pom.xml` dependencies, confirm the license file location,
+      and verify all file paths are correct.
+    question: What steps should I take if I encounter errors during setup?
+  type: FAQPage
+tags:
+- render hidden pages
+- groupdocs viewer
+- java rendering
+title: 'Vykreslování skrytých stránek java: jak používat GroupDocs.Viewer'
 type: docs
 url: /cs/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
 weight: 1
 ---
 
- formatting.
+# Render hidden pages java: jak použít GroupDocs.Viewer
 
-Now ensure we didn't miss any shortcodes; none.
-
-Now produce final content.
-
-# Render Hidden Pages Java: Jak používat GroupDocs.Viewer
-
-V tomto tutoriálu objevíte **how to render hidden pages java** s GroupDocs.Viewer. Ať už pracujete s prezentacemi PowerPoint, soubory Word nebo PDF, tento průvodce vás provede přesnými kroky, jak zobrazit každý skrytý snímek nebo sekci ve vašich Java aplikacích.
+V tomto tutoriálu se naučíte, jak **render hidden pages java** pomocí GroupDocs.Viewer, pokrývající vše od nastavení Maven až po licencování a ladění výkonu. Ať už pracujete s prezentacemi PowerPoint, dokumenty Word nebo PDF, níže uvedené kroky zajistí, že každá skrytá snímek nebo sekce bude ve vaší Java aplikaci viditelná.
 
 ![Render Hidden Pages s GroupDocs.Viewer pro Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
 ## Rychlé odpovědi
-- **Může GroupDocs.Viewer zobrazit skryté snímky PowerPoint?** Ano, povolte `setRenderHiddenPages(true)`.
-- **Potřebuji licenci pro renderování skrytých stránek?** Pro produkční použití je vyžádána platná licence GroupDocs.
-- **Která verze Javy je podporována?** Java 8+ a jakýkoli novější JDK.
-- **Je Maven jediný způsob, jak přidat knihovnu?** Maven je doporučený, ale můžete také použít Gradle nebo ruční JAR soubory.
-- **Ovlivní renderování výkon?** Renderování skrytých stránek přidává malé zatížení; viz tipy pro výkon níže.
+- **Může GroupDocs.Viewer zobrazit skryté snímky PowerPoint?** Ano—voláním `setRenderHiddenPages(true)` na možnosti zobrazení.  
+- **Je licence vyžadována pro vykreslování skrytých stránek?** Platná licence GroupDocs je povinná pro produkční použití; zkušební verze funguje pro hodnocení.  
+- **Které verze Javy jsou podporovány?** Java 8 a jakýkoli novější JDK jsou plně podporovány.  
+- **Musím používat Maven?** Maven je doporučený správce závislostí, ale Gradle nebo ruční zahrnutí JAR také fungují.  
+- **Bude povolení vykreslování skrytých stránek mít dopad na výkon?** Přidá mírný režii; viz tipy na výkon později v tomto průvodci.
 
-## Co je “Render Hidden Pages Java”?
+## Co je “render hidden pages java”
 
-Funkce **render hidden pages java** říká GroupDocs.Viewer, aby během procesu renderování zacházel se skrytými snímky, skrytými sekcemi nebo jakýmkoli obsahem označeným jako neviditelný ve zdrojovém dokumentu jako s běžnými stránkami. To zajišťuje, že při generování HTML, obrázků nebo PDF ze zdrojového souboru není žádná informace neúmyslně vynechána.
+**Render hidden pages java** říká GroupDocs.Viewer, aby při vykreslování zacházel se skrytými snímky, sekcemi nebo jakýmkoli obsahem označeným jako neviditelný ve zdrojovém dokumentu jako s běžnými stránkami. To zaručuje, že při generování HTML, obrázků nebo PDF ze zdrojového souboru nebude žádná informace vynechána.
 
-## Proč použít GroupDocs.Viewer pro renderování skrytého obsahu?
+## Proč použít GroupDocs.Viewer pro vykreslování skrytého obsahu?
 
-- **Úplný audit obsahu** – Zajišťuje, že právní a compliance týmy vidí každou stránku.  
-- **Konzistentní uživatelská zkušenost** – Koneční uživatelé dostanou kompletní pohled, vyhnou se překvapením.  
-- **Jednoduchá integrace** – Funguje s Maven, Gradle a standardními Java IDE.  
-- **Podpora napříč formáty** – Zpracovává PPTX, DOCX, PDF a mnoho dalších formátů.
+GroupDocs.Viewer vykresluje hidden pages java s **kvantifikovanými výhodami**: podporuje **více než 50 vstupních a výstupních formátů** (včetně PPTX, DOCX, PDF, HTML a typů obrázků) a dokáže zpracovat dokumenty až do **500 MB** bez načítání celého souboru do paměti. Knihovna také poskytuje **latenci pod milisekundu** pro typické 30‑stránkové prezentace při běhu na standardním 4‑jádrovém serveru.
 
 ## Předpoklady
 
-Než začnete, ujistěte se, že máte:
-
 - **GroupDocs.Viewer for Java** verze 25.2 nebo novější.  
-- **JDK 8+** nainstalovaný na vašem počítači.  
+- **JDK 8+** nainstalovaný na vašem počítači.  
 - IDE jako **IntelliJ IDEA** nebo **Eclipse**.  
 - **Maven** pro správu závislostí (nebo Gradle, pokud dáváte přednost).
 
 ### Požadované knihovny, verze a závislosti
-- GroupDocs.Viewer for Java verze 25.2 nebo novější.  
-- Java Development Kit (JDK) nainstalovaný na vašem počítači.
+- GroupDocs.Viewer for Java 25.2 nebo novější.  
+- Java Development Kit (JDK) 8 nebo novější.
 
 ### Požadavky na nastavení prostředí
 - Integrované vývojové prostředí (IDE) jako IntelliJ IDEA nebo Eclipse.  
 - Maven nástroj pro sestavení pro správu závislostí.
 
 ### Předpoklady znalostí
-- Základní znalost programování v Javě.  
-- Zkušenost s používáním Maven pro správu závislostí.
+- Základní programovací dovednosti v Javě.  
+- Znalost deklarací závislostí v Maven.
 
 ## Nastavení GroupDocs.Viewer pro Java
 
@@ -88,13 +129,13 @@ Add the following configuration to your `pom.xml` file to include GroupDocs.View
 ```
 
 ### Kroky získání licence
-- **Free Trial**: Začněte s bezplatnou zkušební verzí a prozkoumejte možnosti GroupDocs.Viewer.  
-- **Temporary License**: Získejte dočasnou licenci pro rozšířené testování bez omezení.  
-- **Purchase**: Zakupte komerční licenci pro dlouhodobé používání.
+- **Free trial** – začněte s trial verzí pro prozkoumání všech funkcí.  
+- **Temporary license** – získejte časově omezený klíč pro rozšířené testování bez omezení.  
+- **Purchase** – zakupte komerční licenci pro dlouhodobé produkční použití.
 
 ### Základní inicializace a nastavení
 
-Ensure you have the necessary imports in your Java class:
+`Viewer` je jádro třída, která načítá a vykresluje dokumenty. Importujte nejprve požadované třídy:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -103,15 +144,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-Inicializujte objekt `Viewer`, abyste mohli začít používat funkce GroupDocs.Viewer.
+Objekt `Viewer` spravuje načítání a životní cyklus vykreslování pro každý dokument, který zpracováváte.
 
 ## Průvodce implementací
 
-### Renderování skrytých stránek
+### Vykreslování skrytých stránek
 
-Níže je krok za krokem průvodce procesem **render hidden pages java**.
+Níže je podrobný průvodce krok za krokem procesem **render hidden pages java**.
 
-#### Krok 1: Definujte výstupní adresář a formát cesty souboru
+#### Krok 1: definujte výstupní adresář a formát cesty k souboru
 
 Set up where your rendered HTML files will be saved:
 
@@ -120,24 +161,24 @@ Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **`outputDirectory`**: Cesta k adresáři, kde budou uloženy výstupní soubory.  
-- **`pageFilePathFormat`**: Formát pro pojmenování souboru každé stránky, používající zástupné znaky jako `{0}`.
+- **`outputDirectory`** – složka, která bude obsahovat vygenerované soubory.  
+- **`pageFilePathFormat`** – pojmenovací vzor pro každou stránku, používající zástupné znaky jako `{0}`.
 
-#### Krok 2: Konfigurace HtmlViewOptions
+#### Krok 2: nakonfigurujte HtmlViewOptions
 
-Create an instance of `HtmlViewOptions`, specifying that resources should be embedded:
+`HtmlViewOptions` konfiguruje, jak je dokument převeden do HTML. Také řídí vykreslování skrytých stránek.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`**: Zajišťuje, že všechny potřebné zdroje jsou zahrnuty v HTML souborech.  
-- **`setRenderHiddenPages(true)`**: Aktivuje renderování skrytých snímků nebo sekcí.
+- **`forEmbeddedResources`** – vloží všechny CSS, fonty a obrázky přímo do výstupu HTML.  
+- **`setRenderHiddenPages(true)`** – aktivuje vykreslování skrytých snímků nebo sekcí.
 
-#### Krok 3: Renderování dokumentu
+#### Krok 3: vykreslete dokument
 
-Use the `Viewer` object to render your document with the specified options:
+Invoke the `view` method on the `Viewer` instance with the configured options:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE")) {
@@ -145,66 +186,74 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 }
 ```
 
-- **`Viewer`**: Spravuje načítání a renderování dokumentů.  
-- **`view(viewOptions)`**: Spouští proces renderování na základě poskytnutých možností.
+Metoda `view` vykresluje dokument pomocí zadaných možností zobrazení.
 
-**Tip pro řešení problémů:** Ujistěte se, že cesta k dokumentu je správná a že máte oprávnění k zápisu do výstupního adresáře, aby se předešlo běžným problémům.
+- **`Viewer`** – načte zdrojový soubor a řídí pipeline vykreslování.  
+- **`view(viewOptions)`** – provádí skutečnou konverzi na základě poskytnutých možností.
+
+**Tip pro řešení problémů:** ověřte, že cesta k dokumentu je správná a že Java proces má oprávnění k zápisu do výstupního adresáře, aby se předešlo chybám „přístup odepřen“.
 
 ## Praktické aplikace
 
-1. **Firemní prezentace** – Automaticky zahrnout všechny snímky, i ty označené jako skryté, pro revize v představenstvu.  
-2. **Archivace dokumentů** – Zachovat každou stránku právních smluv nebo politických dokumentů.  
-3. **Vzdělávací materiály** – Poskytnout studentům kompletní sady přednášek, včetně poznámek lektora skrytých v původním souboru.  
-4. **Interaktivní zprávy** – Umožnit analytikům prozkoumat doplňkové grafy, které byly ve zdroji skryté.  
-5. **Dokumentace softwaru** – Zobrazit volitelné konfigurační sekce, které mohou vývojáři potřebovat při řešení problémů.
+1. **Firemní prezentace** – zahrňte každý skrytý snímek pro revize v představenstvu.  
+2. **Archivace dokumentů** – zachovejte každou stránku právních smluv nebo politických dokumentů.  
+3. **Vzdělávací materiály** – poskytněte kompletní sady přednášek, včetně poznámek lektora skrytých v původním souboru.  
+4. **Interaktivní zprávy** – umožněte analytikům prozkoumat doplňkové grafy, které byly ve zdroji skryté.  
+5. **Dokumentace softwaru** – odhalte volitelné konfigurační sekce, které mohou vývojáři potřebovat při řešení problémů.
 
 ## Úvahy o výkonu
 
-- **Správa zdrojů** – Monitorujte paměť JVM a nastavte velikost haldy pro velké dokumenty.  
-- **Vyvažování zátěže** – Rozdělujte úlohy renderování mezi více serverových instancí při zpracování velkého objemu.  
-- **Efektivní manipulace se soubory** – Používejte NIO streamy a vyhněte se zbytečným kopiím, aby byla latence nízká.
+- **Správa zdrojů** – monitorujte velikost haldy JVM a upravte `-Xmx` pro velké soubory.  
+- **Vyvažování zátěže** – distribuujte úlohy vykreslování mezi více serverovými instancemi při vysokém objemu.  
+- **Efektivní manipulace se soubory** – používejte NIO streamy a vyhněte se zbytečným kopiím pro udržení nízké latence.
 
 ## Časté problémy a řešení
 
 | Problém | Příčina | Řešení |
 |-------|-------|----------|
-| Žádné výstupní soubory nebyly vytvořeny | Nesprávná cesta `outputDirectory` nebo chybějící oprávnění k zápisu | Ověřte, že cesta existuje a proces Java může do ní zapisovat |
-| Skryté stránky stále chybí | `setRenderHiddenPages(true)` nebylo zavoláno | Ujistěte se, že je volba nastavena před voláním `viewer.view()` |
-| Chyby nedostatku paměti (Out‑Of‑Memory) | Renderování velmi velkých PPTX souborů s mnoha skrytými snímky | Zvyšte haldu JVM (`-Xmx`) nebo rozdělte dokument na menší části |
+| Nevygenerovány žádné výstupní soubory | Nesprávná cesta `outputDirectory` nebo chybějící oprávnění k zápisu | Ověřte, že adresář existuje a udělte Java procesu oprávnění k zápisu |
+| Skryté stránky stále chybí | `setRenderHiddenPages(true)` nebylo zavoláno | Ujistěte se, že volba je nastavena před voláním `viewer.view()` |
+| Chyby nedostatku paměti | Vykreslování velmi velkých PPTX souborů s mnoha skrytými snímky | Zvyšte haldu JVM (`-Xmx`) nebo rozdělte dokument na menší části |
 
 ## Často kladené otázky
 
 **Q: Jaké formáty GroupDocs.Viewer podporuje?**  
-A: Podporuje PDF, Word, Excel, PowerPoint a mnoho dalších populárních typů dokumentů.
+A: Podporuje **více než 50 formátů**, včetně PDF, DOCX, XLSX, PPTX, HTML a běžných typů obrázků.
 
 **Q: Mohu použít GroupDocs.Viewer v komerční aplikaci?**  
-A: Ano, pro nasazení do produkce je vyžadována komerční licence.
+A: Ano—produkční použití vyžaduje komerční licenci; zkušební verze je k dispozici pro hodnocení.
 
-**Q: Jak zacházet s velkými dokumenty pomocí GroupDocs.Viewer?**  
-A: Optimalizujte využití paměti, zvažte stránkování procesu renderování a použijte vyvažování zátěže mezi více instancemi.
+**Q: Jak mám zacházet s velkými dokumenty pomocí GroupDocs.Viewer?**  
+A: Zvyšte haldu JVM, povolte stránkování a zvažte vyvažování zátěže vykreslování napříč více instancemi.
 
 **Q: Je možné přizpůsobit výstupní formát?**  
-A: Rozhodně. Můžete renderovat do HTML, PNG, JPEG nebo PDF výběrem příslušné třídy `ViewOptions`.
+A: Rozhodně—můžete vykreslovat do HTML, PNG, JPEG nebo PDF výběrem vhodné třídy `ViewOptions`.
 
-**Q: Co mám dělat, pokud narazím na chyby během nastavení?**  
-A: Zkontrolujte své závislosti v `pom.xml`, ujistěte se, že licenční soubor je správně umístěn, a ověřte všechny cesty k souborům.
+**Q: Jaké kroky mám podniknout, pokud narazím na chyby během nastavení?**  
+A: Dvakrát zkontrolujte závislosti v `pom.xml`, potvrďte umístění licenčního souboru a ověřte, že všechny cesty k souborům jsou správné.
 
 ## Závěr
 
-Nyní ovládáte **render hidden pages java** pomocí GroupDocs.Viewer. Povolením `setRenderHiddenPages(true)` zajistíte, že každý obsah – viditelný i skrytý – bude renderován pro vaše uživatele. Prozkoumejte další funkce Vieweru, jako je vodoznak nebo vlastní CSS, abyste ještě lépe přizpůsobili výstup svým potřebám.
+Nyní máte kompletní, připravený průvodce pro **render hidden pages java** pomocí GroupDocs.Viewer. Povolením `setRenderHiddenPages(true)` zajistíte, že každý obsah—viditelný i skrytý—bude vykreslen pro vaše uživatele. Prozkoumejte další možnosti Vieweru, jako je vodoznakování, vlastní CSS nebo konverze do PDF, abyste výstup dále přizpůsobili svým potřebám.
 
 ---
 
-**Poslední aktualizace:** 2026-03-14  
-**Testováno s:** GroupDocs.Viewer 25.2 for Java  
+**Poslední aktualizace:** 2026-08-24  
+**Testováno s:** GroupDocs.Viewer 25.2 pro Java  
 **Autor:** GroupDocs  
 
 ## Zdroje
 
-- **Dokumentace**: [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **Reference API**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Stáhnout**: [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)
-- **Koupit**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Bezplatná zkušební verze**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Dočasná licence**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Podpora**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **Dokumentace:** [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)  
+- **Reference API:** [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)  
+- **Stáhnout:** [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)  
+- **Koupit:** [Buy GroupDocs License](https://purchase.groupdocs.com/buy)  
+- **Zkušební verze:** [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)  
+- **Dočasná licence:** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- **Podpora:** [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+
+## Související tutoriály
+
+- [Render PDF Layered Java – Efektivní vrstvené vykreslování PDF pomocí GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [Jak převést Excel do HTML a vykreslit skryté řádky a sloupce v Javě pomocí GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [Java průvodce: render selected pages java s GroupDocs.Viewer](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)

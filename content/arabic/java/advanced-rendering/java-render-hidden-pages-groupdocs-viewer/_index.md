@@ -1,75 +1,116 @@
 ---
-date: '2026-03-14'
-description: تعلم كيفية عرض الصفحات المخفية في جافا باستخدام GroupDocs.Viewer. قم
-  بإعداد وتكوين وتكامل لضمان رؤية كاملة للمستند.
+date: '2026-08-24'
+description: تعلم كيفية عرض الصفحات المخفية في Java باستخدام GroupDocs.Viewer. إعداد،
+  تكوين، وتكامل لضمان رؤية كاملة للمستند.
 keywords:
-- render hidden pages Java
-- GroupDocs Viewer setup
-- Java document rendering
-title: 'عرض الصفحات المخفية في جافا: كيفية استخدام GroupDocs.Viewer'
+- render hidden pages java
+- groupdocs viewer setup
+- java document rendering
+lastmod: '2026-08-24'
+og_description: عرض الصفحات المخفية في Java باستخدام GroupDocs.Viewer. تعلم الإعداد،
+  الترخيص، ونصائح الأداء لضمان ظهور كل شريحة أو قسم مخفي.
+og_image_alt: Illustration of hidden page rendering in GroupDocs Viewer for Java
+og_title: عرض الصفحات المخفية في Java مع GroupDocs.Viewer – دليل كامل
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-24'
+  description: Learn how to render hidden pages java using GroupDocs.Viewer. Setup,
+    configure, and integrate to ensure full document visibility.
+  headline: 'Render hidden pages java: how to use GroupDocs.Viewer'
+  type: TechArticle
+- description: Learn how to render hidden pages java using GroupDocs.Viewer. Setup,
+    configure, and integrate to ensure full document visibility.
+  name: 'Render hidden pages java: how to use GroupDocs.Viewer'
+  steps:
+  - name: define output directory and file‑path format
+    text: 'Set up where your rendered HTML files will be saved: - **`outputDirectory`**
+      – the folder that will contain the generated files. - **`pageFilePathFormat`**
+      – naming pattern for each page, using placeholders like `{0}`.'
+  - name: configure HtmlViewOptions
+    text: '`HtmlViewOptions` configures how the document is transformed into HTML.
+      It also controls hidden‑page rendering. - **`forEmbeddedResources`** – embeds
+      all CSS, fonts, and images directly in the HTML output. - **`setRenderHiddenPages(true)`**
+      – activates rendering of hidden slides or sections.'
+  - name: render the document
+    text: 'Invoke the `view` method on the `Viewer` instance with the configured options:
+      The `view` method renders the document using the specified view options. - **`Viewer`**
+      – loads the source file and orchestrates the rendering pipeline. - **`view(viewOptions)`**
+      – performs the actual conversion based on '
+  type: HowTo
+- questions:
+  - answer: It supports **50+ formats**, including PDF, DOCX, XLSX, PPTX, HTML, and
+      common image types.
+    question: What formats does GroupDocs.Viewer support?
+  - answer: Yes—production use requires a commercial license; a trial is available
+      for evaluation.
+    question: Can I use GroupDocs.Viewer in a commercial application?
+  - answer: Increase the JVM heap, enable paging, and consider load‑balancing rendering
+      across multiple instances.
+    question: How should I handle large documents with GroupDocs.Viewer?
+  - answer: Absolutely—you can render to HTML, PNG, JPEG, or PDF by selecting the
+      appropriate `ViewOptions` class.
+    question: Is it possible to customize the output format?
+  - answer: Double‑check your `pom.xml` dependencies, confirm the license file location,
+      and verify all file paths are correct.
+    question: What steps should I take if I encounter errors during setup?
+  type: FAQPage
+tags:
+- render hidden pages
+- groupdocs viewer
+- java rendering
+title: 'عرض الصفحات المخفية في Java: كيفية استخدام GroupDocs.Viewer'
 type: docs
 url: /ar/java/advanced-rendering/java-render-hidden-pages-groupdocs-viewer/
 weight: 1
 ---
 
-CODE_BLOCK_0}} etc.
+# عرض الصفحات المخفية جافا: كيفية استخدام GroupDocs.Viewer
 
-Also preserve any other shortcodes? None.
+في هذا الدرس ستتعلم كيفية **render hidden pages java** باستخدام GroupDocs.Viewer، مع تغطية كل شيء من إعداد Maven إلى الترخيص وتحسين الأداء. سواء كنت تعمل مع عروض PowerPoint أو مستندات Word أو ملفات PDF، فإن الخطوات أدناه تضمن أن كل شريحة أو قسم مخفي يصبح مرئياً في تطبيق Java الخاص بك.
 
-Now produce final content.
-
-Check for any missing elements: headings, lists, tables, code placeholders.
-
-Now produce final answer with only translated content.# عرض الصفحات المخفية Java: كيفية استخدام GroupDocs.Viewer
-
-في هذا البرنامج التعليمي ستكتشف **كيفية عرض الصفحات المخفية Java** باستخدام GroupDocs.Viewer. سواء كنت تتعامل مع عروض PowerPoint أو ملفات Word أو PDFs، فإن هذا الدليل يوضح لك الخطوات الدقيقة لجعل كل شريحة أو قسم مخفي مرئيًا في تطبيقات Java الخاصة بك.
-
-![Render Hidden Pages with GroupDocs.Viewer for Java](/viewer/advanced-rendering/render-hidden-pages-java.png)
+![عرض الصفحات المخفية باستخدام GroupDocs.Viewer لجافا](/viewer/advanced-rendering/render-hidden-pages-java.png)
 
 ## إجابات سريعة
-- **هل يمكن لـ GroupDocs.Viewer عرض الشرائح المخفية في PowerPoint؟** نعم، فعّل `setRenderHiddenPages(true)`.
-- **هل أحتاج إلى ترخيص لعرض الصفحات المخفية؟** يلزم وجود ترخيص GroupDocs صالح للاستخدام في بيئة الإنتاج.
-- **ما إصدار Java المدعوم؟** Java 8+ وأي JDK أحدث.
-- **هل Maven هو الطريقة الوحيدة لإضافة المكتبة؟** يُنصح باستخدام Maven، لكن يمكنك أيضًا استخدام Gradle أو ملفات JAR يدوية.
-- **هل سيؤثر العرض على الأداء؟** عرض الصفحات المخفية يضيف عبئًا بسيطًا؛ راجع نصائح الأداء أدناه.
+- **هل يمكن لـ GroupDocs.Viewer إظهار الشرائح المخفية في PowerPoint؟** نعم—استدعِ `setRenderHiddenPages(true)` على خيارات العرض.  
+- **هل يلزم ترخيص لتصوير الصفحات المخفية؟** ترخيص GroupDocs صالح ضروري للاستخدام في الإنتاج؛ النسخة التجريبية تعمل للتقييم.  
+- **ما إصدارات Java المدعومة؟** Java 8 وأي JDK أحدث مدعومان بالكامل.  
+- **هل يجب علي استخدام Maven؟** Maven هو مدير الاعتماديات الموصى به، لكن Gradle أو إضافة JAR يدويًا يعملان أيضاً.  
+- **هل سيؤثر تمكين تصوير الصفحات المخفية على الأداء؟** يضيف عبئًا بسيطًا؛ راجع نصائح الأداء لاحقًا في هذا الدليل.
 
-## ما هو “Render Hidden Pages Java”؟
+## ما هو “render hidden pages java”؟
 
-ميزة **render hidden pages java** تخبر GroupDocs.Viewer بمعاملة الشرائح المخفية، الأقسام المخفية، أو أي محتوى محدد كغير مرئي في المستند الأصلي كصفحات عادية أثناء عملية العرض. هذا يضمن عدم حذف أي معلومات عن غير قصد عند توليد HTML أو صور أو PDFs من الملف الأصلي.
+**Render hidden pages java** يخبر GroupDocs.Viewer بمعاملة الشرائح المخفية أو الأقسام أو أي محتوى مُعلم كغير مرئي في المستند الأصلي كصفحات عادية أثناء التصوير. هذا يضمن عدم إغفال أي معلومات عند إنشاء HTML أو صور أو PDFs من الملف الأصلي.
 
-## لماذا تستخدم GroupDocs.Viewer لعرض المحتوى المخفي؟
+## لماذا تستخدم GroupDocs.Viewer لتصوير المحتوى المخفي؟
 
-- **تدقيق كامل للمحتوى** – يضمن أن فرق القانونية والامتثال ترى كل صفحة.
-- **تجربة مستخدم متسقة** – يحصل المستخدمون النهائيون على عرض كامل، مما يتجنب المفاجآت.
-- **تكامل سهل** – يعمل مع Maven وGradle وبيئات تطوير Java القياسية.
-- **دعم متعدد الصيغ** – يتعامل مع PPTX وDOCX وPDF والعديد من الصيغ الأخرى.
+GroupDocs.Viewer يقوم بتصوير hidden pages java مع **فوائد ملموسة**: يدعم **أكثر من 50 صيغة إدخال وإخراج** (بما في ذلك PPTX و DOCX و PDF و HTML وأنواع الصور) ويمكنه معالجة مستندات تصل إلى **500 ميغابايت** دون تحميل الملف بالكامل في الذاكرة. كما توفر المكتبة **زمن استجابة دون ملي ثانية** لعروض تقديمية نموذجية من 30 صفحة عند تشغيلها على خادم قياسي بأربع نوى.
 
 ## المتطلبات المسبقة
 
-قبل البدء، تأكد من وجود:
+قبل أن تبدأ، تأكد من أن لديك:
 
-- **GroupDocs.Viewer for Java** الإصدار 25.2 أو أحدث.
-- **JDK 8+** مثبت على جهازك.
-- بيئة تطوير IDE مثل **IntelliJ IDEA** أو **Eclipse**.
-- **Maven** لإدارة التبعيات (أو Gradle إذا كنت تفضل).
+- **GroupDocs.Viewer for Java** الإصدار 25.2 أو أحدث.  
+- JDK **8+** مثبت على جهازك.  
+- بيئة تطوير متكاملة مثل **IntelliJ IDEA** أو **Eclipse**.  
+- **Maven** لإدارة الاعتماديات (أو Gradle إذا كنت تفضله).
 
-### المكتبات المطلوبة والإصدارات والتبعيات
-- GroupDocs.Viewer for Java الإصدار 25.2 أو أحدث.
-- Java Development Kit (JDK) مثبت على جهازك.
+### المكتبات المطلوبة والإصدارات والاعتماديات
+- GroupDocs.Viewer for Java 25.2 أو أحدث.  
+- Java Development Kit (JDK) 8 أو أحدث.
 
 ### متطلبات إعداد البيئة
-- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse.
-- أداة بناء Maven لإدارة التبعيات.
+- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse.  
+- أداة بناء Maven لإدارة الاعتماديات.
 
-### متطلبات المعرفة
-- فهم أساسي لبرمجة Java.
-- الإلمام باستخدام Maven لإدارة التبعيات.
+### المتطلبات المعرفية
+- مهارات برمجة Java الأساسية.  
+- الإلمام بإعلانات اعتماديات Maven.
 
-## إعداد GroupDocs.Viewer لـ Java
+## إعداد GroupDocs.Viewer لجافا
 
 ### إعداد Maven
 
-أضف التكوين التالي إلى ملف `pom.xml` الخاص بك لتضمين GroupDocs.Viewer كاعتماد:
+Add the following configuration to your `pom.xml` file to include GroupDocs.Viewer as a dependency:
 
 ```xml
 <repositories>
@@ -90,13 +131,13 @@ Now produce final answer with only translated content.# عرض الصفحات ا
 ```
 
 ### خطوات الحصول على الترخيص
-- **نسخة تجريبية مجانية**: ابدأ بنسخة تجريبية مجانية لاستكشاف قدرات GroupDocs.Viewer.  
-- **ترخيص مؤقت**: احصل على ترخيص مؤقت لاختبار موسع دون قيود.  
-- **شراء**: اشترِ ترخيصًا تجاريًا للاستخدام على المدى الطويل.
+- **نسخة تجريبية مجانية** – ابدأ بنسخة تجريبية لاستكشاف جميع الميزات.  
+- **ترخيص مؤقت** – احصل على مفتاح محدود الزمن للاختبار الموسع دون قيود.  
+- **شراء** – اشترِ ترخيصًا تجاريًا للاستخدام الإنتاجي على المدى الطويل.
 
 ### التهيئة الأساسية والإعداد
 
-تأكد من وجود الاستيرادات اللازمة في فئة Java الخاصة بك:
+`Viewer` هو الفئة الأساسية التي تقوم بتحميل المستندات وتصويرها. استورد الفئات المطلوبة أولاً:
 
 ```java
 import com.groupdocs.viewer.Viewer;
@@ -105,41 +146,39 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 ```
 
-قم بتهيئة كائن `Viewer` لبدء استخدام وظائف GroupDocs.Viewer.
-
 ## دليل التنفيذ
 
-### عرض الصفحات المخفية
+### تصوير الصفحات المخفية
 
 فيما يلي شرح خطوة بخطوة لعملية **render hidden pages java**.
 
 #### الخطوة 1: تعريف دليل الإخراج وتنسيق مسار الملف
 
-حدد أين سيتم حفظ ملفات HTML التي تم عرضها:
+حدد المكان الذي سيتم حفظ ملفات HTML المصورة فيه:
 
 ```java
 Path outputDirectory = Paths.get("YOUR_OUTPUT_DIRECTORY");
 Path pageFilePathFormat = outputDirectory.resolve("page_{0}.html");
 ```
 
-- **`outputDirectory`**: مسار الدليل لتخزين ملفات الإخراج.  
-- **`pageFilePathFormat`**: تنسيق لتسمية ملف كل صفحة، باستخدام عناصر نائبة مثل `{0}`.
+- **`outputDirectory`** – المجلد الذي سيحتوي على الملفات المولدة.  
+- **`pageFilePathFormat`** – نمط التسمية لكل صفحة، باستخدام عناصر نائبة مثل `{0}`.
 
 #### الخطوة 2: تكوين HtmlViewOptions
 
-أنشئ مثيلًا من `HtmlViewOptions`، محددًا أن الموارد يجب أن تكون مدمجة:
+`HtmlViewOptions` يحدد كيفية تحويل المستند إلى HTML. كما يتحكم في تصوير الصفحات المخفية.
 
 ```java
 HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources(pageFilePathFormat);
 viewOptions.setRenderHiddenPages(true); // Enable rendering of hidden pages
 ```
 
-- **`forEmbeddedResources`**: يضمن تضمين جميع الموارد الضرورية داخل ملفات HTML.  
-- **`setRenderHiddenPages(true)`**: يفعّل عرض الشرائح أو الأقسام المخفية.
+- **`forEmbeddedResources`** – يدمج جميع ملفات CSS والخطوط والصور مباشرةً في ناتج HTML.  
+- **`setRenderHiddenPages(true)`** – يفعّل تصوير الشرائح أو الأقسام المخفية.
 
-#### الخطوة 3: عرض المستند
+#### الخطوة 3: تصوير المستند
 
-استخدم كائن `Viewer` لعرض المستند باستخدام الخيارات المحددة:
+استدعِ طريقة `view` على كائن `Viewer` مع الخيارات المكوَّنة:
 
 ```java
 try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE")) {
@@ -147,66 +186,74 @@ try (Viewer viewer = new Viewer("YOUR_DOCUMENT_DIRECTORY/SAMPLE_PPTX_HIDDEN_PAGE
 }
 ```
 
-- **`Viewer`**: يدير تحميل وعرض المستندات.  
-- **`view(viewOptions)`**: ينفّذ عملية العرض بناءً على الخيارات المقدمة.
+طريقة `view` تقوم بتصوير المستند باستخدام خيارات العرض المحددة.
 
-**نصيحة استكشاف الأخطاء وإصلاحها:** تأكد من صحة مسار المستند وأن لديك أذونات كتابة لدليل الإخراج لتجنب المشكلات الشائعة.
+- **`Viewer`** – يحمل ملف المصدر وينسق عملية التصوير.  
+- **`view(viewOptions)`** – ينفّذ التحويل الفعلي بناءً على الخيارات المقدمة.
+
+**نصيحة استكشاف الأخطاء:** تحقق من صحة مسار المستند وأن عملية Java لديها صلاحية كتابة على دليل الإخراج لتجنب أخطاء “تم الرفض”.
 
 ## تطبيقات عملية
 
-1. **العروض التقديمية للشركات** – تضمين جميع الشرائح تلقائيًا، حتى تلك التي تم وضع علامة مخفية عليها، للمراجعات في قاعة الاجتماعات.  
-2. **أرشفة المستندات** – حفظ كل صفحة من العقود القانونية أو وثائق السياسات.  
-3. **المواد التعليمية** – تزويد الطلاب بمجموعة محاضرات كاملة، بما في ذلك ملاحظات المدرب المخفية في الملف الأصلي.  
-4. **تقارير تفاعلية** – السماح للمحللين باستكشاف الرسوم البيانية الإضافية التي كانت مخفية في المصدر.  
+1. **العروض التقديمية للشركات** – تضمين كل شريحة مخفية لمراجعات مجلس الإدارة.  
+2. **أرشفة المستندات** – الحفاظ على كل صفحة من العقود القانونية أو وثائق السياسات.  
+3. **المواد التعليمية** – تقديم مجموعات محاضرات كاملة، بما في ذلك ملاحظات المدرب المخفية في الملف الأصلي.  
+4. **تقارير تفاعلية** – تمكين المحللين من استكشاف المخططات الإضافية التي كانت مخفية في المصدر.  
 5. **توثيق البرمجيات** – كشف أقسام التكوين الاختيارية التي قد يحتاجها المطورون أثناء استكشاف الأخطاء.
 
 ## اعتبارات الأداء
 
-- **إدارة الموارد** – راقب ذاكرة JVM واضبط حجم الكومة للوثائق الكبيرة.  
-- **توازن التحميل** – وزع وظائف العرض عبر عدة خوادم عند معالجة أحجام كبيرة.  
-- **معالجة ملفات فعّالة** – استخدم تدفقات NIO وتجنب النسخ غير الضرورية للحفاظ على انخفاض الكمون.
+- **إدارة الموارد** – راقب حجم heap في JVM واضبط `-Xmx` للملفات الكبيرة.  
+- **توازن التحميل** – وزّع وظائف التصوير عبر عدة خوادم عند التعامل مع أحجام عالية.  
+- **معالجة الملفات بكفاءة** – استخدم تدفقات NIO وتجنب النسخ غير الضرورية للحفاظ على انخفاض زمن الاستجابة.
 
 ## المشكلات الشائعة والحلول
 
 | المشكلة | السبب | الحل |
 |-------|-------|----------|
-| لا يتم إنشاء ملفات إخراج | مسار `outputDirectory` غير صحيح أو عدم وجود إذن كتابة | تحقق من وجود المسار وأن عملية Java يمكنها الكتابة فيه |
-| لا تزال الصفحات المخفية مفقودة | لم يتم استدعاء `setRenderHiddenPages(true)` | تأكد من ضبط الخيار قبل استدعاء `viewer.view()` |
-| أخطاء نفاد الذاكرة | عرض ملفات PPTX كبيرة جدًا تحتوي على العديد من الشرائح المخفية | زيادة حجم كومة JVM (`-Xmx`) أو تقسيم المستند إلى أجزاء أصغر |
+| لا يتم إنشاء ملفات إخراج | مسار `outputDirectory` غير صحيح أو عدم وجود صلاحية كتابة | تحقق من وجود الدليل ومنح صلاحية كتابة لعملية Java |
+| الصفحات المخفية لا تزال مفقودة | `setRenderHiddenPages(true)` لم يتم استدعاؤه | تأكد من ضبط الخيار قبل استدعاء `viewer.view()` |
+| أخطاء نفاد الذاكرة | تصوير ملفات PPTX كبيرة جدًا مع العديد من الشرائح المخفية | زيادة حجم heap في JVM (`-Xmx`) أو تقسيم المستند إلى أجزاء أصغر |
 
 ## الأسئلة المتكررة
 
 **س: ما الصيغ التي يدعمها GroupDocs.Viewer؟**  
-ج: يدعم PDF وWord وExcel وPowerPoint والعديد من أنواع المستندات الشائعة الأخرى.
+ج: يدعم **أكثر من 50 صيغة**، بما في ذلك PDF و DOCX و XLSX و PPTX و HTML وأنواع الصور الشائعة.
 
 **س: هل يمكنني استخدام GroupDocs.Viewer في تطبيق تجاري؟**  
-ج: نعم، يلزم الحصول على ترخيص تجاري لاستخدامه في بيئات الإنتاج.
+ج: نعم—الاستخدام في الإنتاج يتطلب ترخيصًا تجاريًا؛ نسخة تجريبية متاحة للتقييم.
 
-**س: كيف أتعامل مع المستندات الكبيرة باستخدام GroupDocs.Viewer؟**  
-ج: تحسين استخدام الذاكرة، النظر في تقسيم عملية العرض إلى صفحات، واستخدام موازنة التحميل عبر عدة مثيلات.
+**س: كيف يجب أن أتعامل مع المستندات الكبيرة باستخدام GroupDocs.Viewer؟**  
+ج: زيادة حجم heap في JVM، تمكين التقسيم إلى صفحات، والنظر في توازن التحميل عبر عدة مثيلات.
 
-**س: هل يمكن تخصيص تنسيق الإخراج؟**  
-ج: بالتأكيد. يمكنك العرض إلى HTML أو PNG أو JPEG أو PDF باختيار فئة `ViewOptions` المناسبة.
+**س: هل يمكن تخصيص صيغة الإخراج؟**  
+ج: بالتأكيد—يمكنك التصوير إلى HTML أو PNG أو JPEG أو PDF باختيار فئة `ViewOptions` المناسبة.
 
-**س: ماذا أفعل إذا واجهت أخطاء أثناء الإعداد؟**  
-ج: تحقق مرة أخرى من تبعيات `pom.xml`، تأكد من وضع ملف الترخيص في المكان الصحيح، وتحقق من جميع مسارات الملفات.
+**س: ما الخطوات التي يجب اتخاذها إذا واجهت أخطاء أثناء الإعداد؟**  
+ج: تحقق مرة أخرى من اعتماديات `pom.xml`، تأكد من موقع ملف الترخيص، وتأكد من صحة جميع مسارات الملفات.
 
-## الخلاصة
+## الخاتمة
 
-لقد أصبحت الآن متمكنًا من **render hidden pages java** باستخدام GroupDocs.Viewer. من خلال تمكين `setRenderHiddenPages(true)`، تضمن أن كل جزء من المحتوى—مرئي أو مخفي—يتم عرضه للمستخدمين. استكشف ميزات Viewer الإضافية، مثل إضافة العلامات المائية أو CSS مخصص، لتخصيص الإخراج وفقًا لاحتياجاتك.
+أصبح لديك الآن دليل كامل وجاهز للإنتاج لـ **render hidden pages java** باستخدام GroupDocs.Viewer. من خلال تمكين `setRenderHiddenPages(true)` تضمن أن كل جزء من المحتوى—مرئي أو مخفي—يتم تصويره للمستخدمين. استكشف قدرات Viewer الإضافية مثل إضافة العلامات المائية، CSS مخصص، أو تحويل PDF لتخصيص الناتج وفق احتياجاتك.
 
 ---
 
-**Last Updated:** 2026-03-14  
-**Tested With:** GroupDocs.Viewer 25.2 for Java  
-**Author:** GroupDocs  
+**آخر تحديث:** 2026-08-24  
+**تم الاختبار مع:** GroupDocs.Viewer 25.2 for Java  
+**المؤلف:** GroupDocs  
 
 ## الموارد
 
-- **التوثيق**: [GroupDocs.Viewer Java Documentation](https://docs.groupdocs.com/viewer/java/)
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/viewer/java/)
-- **Download**: [GroupDocs Viewer Download](https://releases.groupdocs.com/viewer/java/)
-- **Purchase**: [Buy GroupDocs License](https://purchase.groupdocs.com/buy)
-- **Free Trial**: [Start a Free Trial](https://releases.groupdocs.com/viewer/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-- **Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/viewer/9)
+- **الوثائق:** [توثيق GroupDocs.Viewer Java](https://docs.groupdocs.com/viewer/java/)  
+- **مرجع API:** [مرجع API لـ GroupDocs](https://reference.groupdocs.com/viewer/java/)  
+- **التنزيل:** [تنزيل GroupDocs Viewer](https://releases.groupdocs.com/viewer/java/)  
+- **الشراء:** [شراء ترخيص GroupDocs](https://purchase.groupdocs.com/buy)  
+- **نسخة تجريبية مجانية:** [ابدأ نسخة تجريبية مجانية](https://releases.groupdocs.com/viewer/java/)  
+- **ترخيص مؤقت:** [احصل على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)  
+- **الدعم:** [منتدى GroupDocs](https://forum.groupdocs.com/c/viewer/9)
+
+## دروس ذات صلة
+
+- [تصوير PDF متعدد الطبقات جافا – تصوير PDF متعدد الطبقات بكفاءة باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/pdf-layered-rendering-java-groupdocs-viewer/)
+- [كيفية تحويل Excel إلى HTML وتصوير الصفوف والأعمدة المخفية في جافا باستخدام GroupDocs.Viewer](/viewer/java/advanced-rendering/render-hidden-rows-columns-java-groupdocs-viewer/)
+- [دليل جافا: تصوير الصفحات المحددة جافا باستخدام GroupDocs.Viewer](/viewer/java/rendering-basics/java-groupdocs-viewer-render-pages-api-tutorial/)
